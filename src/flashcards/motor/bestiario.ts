@@ -1,11 +1,19 @@
 /**
- * Adversários da Batalha. A regra geral (docs/flashcards/BATALHA.md):
- * é mais fácil morrer do que matar. Você causa 10, 20 ou 30 de dano por acerto
- * (fácil, moderada, difícil); o adversário multiplica o dano-base do erro
- * (2, 5 e 10, a tabela aprovada pelo Tales) pela própria força.
+ * Adversários da Batalha e o escalonamento por andar.
+ *
+ * Regra geral (docs/flashcards/BATALHA.md): é mais fácil morrer do que matar.
+ * Você causa 10, 20 ou 30 por acerto (fácil, moderada, difícil); o adversário
+ * multiplica o dano-base do erro (2, 5 e 10) pela própria força.
+ *
+ * A masmorra é feita de atos de 3 andares: dois confrontos (comum ou elite) e
+ * um chefe. Cada adversário tem nível (comum, elite, chefe) e faixa de andar:
+ * chefes avançados nunca aparecem no começo. A cada ato, vida e força crescem
+ * devagar e com teto; o dano de um golpe também tem teto em relação à vida
+ * máxima do herói (ver LIMITES), para não haver morte injusta de vida cheia.
  */
 
 export type Cenario = 'campo' | 'masmorra' | 'salao'
+export type Nivel = 'comum' | 'elite' | 'chefe'
 
 export interface FaseChefe {
   /** Entra quando a vida do chefe cai a esta fração da vida máxima. */
@@ -13,13 +21,20 @@ export interface FaseChefe {
   nome: string
   forca: number
   armadura: number
+  /** Barreira renovada ao entrar na fase (0 = nenhuma). */
+  barreira?: number
 }
 
 export interface Inimigo {
   id: string
   nome: string
   sprite: 'golem' | 'serpente' | 'guardiao'
+  /** Troca de paleta do sprite (personagens.ts). */
+  variante?: string
   cenario: Cenario
+  nivel: Nivel
+  /** Primeiro andar em que pode aparecer. */
+  andarMin: number
   vida: number
   /** Multiplica o dano-base do erro. */
   forca: number
@@ -27,49 +42,159 @@ export interface Inimigo {
   armadura: number
   /** Rodadas contra ele antes da Fúria (dano ×1,5). */
   paciencia: number
-  /** Dano extra por erro consecutivo (o veneno da serpente, a pressão do chefe). */
+  /** Dano extra por erro consecutivo (veneno, pressão). */
   porErroSeguido: number
+  /** Chance de golpe crítico (sorteada ANTES da pergunta e mostrada na intenção). */
+  critico: number
+  /** Escudo de energia que absorve o dano dos seus acertos antes da vida. */
+  barreira?: number
+  /** Recupera vida a cada rodada, até o total indicado no confronto. */
+  regenera?: { porRodada: number; total: number }
   chefe?: boolean
   fase2?: FaseChefe
-  /** Dificuldade mínima dos flashcards que ele joga. */
-  dificuldadeMinima: 1 | 2 | 3
-  /** Frase curta que aparece na apresentação. */
+  /** Área da ortopedia que inspira o adversário (só sabor; não muda as perguntas). */
+  especialidade: string
   lema: string
-  /** O que ele faz de diferente, em linguagem de jogo. */
   habilidade: string
 }
 
 export const BESTIARIO: Inimigo[] = [
+  // ---------- Comuns
   {
-    id: 'golem-de-gesso', nome: 'Golem de Gesso', sprite: 'golem', cenario: 'campo',
-    vida: 80, forca: 3, armadura: 0, paciencia: 10, porErroSeguido: 0, dificuldadeMinima: 1,
-    lema: 'Lento, duro e cheio de gesso.',
-    habilidade: 'Bate pouco, mas aguenta muito.',
+    id: 'golem-de-gesso', nome: 'Golem de Gesso', sprite: 'golem', cenario: 'campo', nivel: 'comum', andarMin: 1,
+    vida: 80, forca: 3, armadura: 0, paciencia: 10, porErroSeguido: 0, critico: 0.06, especialidade: 'trauma',
+    lema: 'Lento, duro e cheio de gesso.', habilidade: 'Bate pouco, mas aguenta muito.',
   },
   {
-    id: 'serpente-do-ciatico', nome: 'Serpente do Ciático', sprite: 'serpente', cenario: 'masmorra',
-    vida: 100, forca: 3.5, armadura: 0, paciencia: 10, porErroSeguido: 3, dificuldadeMinima: 1,
-    lema: 'Ela espera o primeiro erro.',
-    habilidade: 'Veneno: cada erro seguido causa +3 de dano.',
+    id: 'serpente-do-ciatico', nome: 'Serpente do Ciático', sprite: 'serpente', cenario: 'masmorra', nivel: 'comum', andarMin: 2,
+    vida: 100, forca: 3.5, armadura: 0, paciencia: 10, porErroSeguido: 3, critico: 0.08, especialidade: 'coluna',
+    lema: 'Ela espera o primeiro erro.', habilidade: 'Veneno: cada erro seguido causa +3 de dano.',
   },
   {
-    id: 'guardiao-do-acetabulo', nome: 'Guardião do Acetábulo', sprite: 'guardiao', cenario: 'salao',
-    vida: 190, forca: 4, armadura: 5, paciencia: 14, porErroSeguido: 2, dificuldadeMinima: 2, chefe: true,
+    id: 'elemental-do-calcio', nome: 'Elemental do Cálcio', sprite: 'golem', variante: 'cristal', cenario: 'masmorra', nivel: 'comum', andarMin: 4,
+    vida: 95, forca: 3.2, armadura: 4, paciencia: 11, porErroSeguido: 0, critico: 0.06, especialidade: 'osteometabolicas',
+    lema: 'Mineral puro, sem pressa.', habilidade: 'Armadura 4: cada acerto perde 4 de dano.',
+  },
+  {
+    id: 'vibora-do-mediano', nome: 'Víbora do Mediano', sprite: 'serpente', variante: 'eletrica', cenario: 'masmorra', nivel: 'comum', andarMin: 4,
+    vida: 105, forca: 3.4, armadura: 0, paciencia: 9, porErroSeguido: 2, critico: 0.14, especialidade: 'mao',
+    lema: 'O choque vem antes da dor.', habilidade: 'Críticos frequentes (avisados na intenção) e veneno +2.',
+  },
+  {
+    id: 'golem-de-cimento', nome: 'Golem de Cimento Ósseo', sprite: 'golem', variante: 'cimento', cenario: 'campo', nivel: 'comum', andarMin: 7,
+    vida: 130, forca: 3.6, armadura: 2, paciencia: 12, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 4, total: 32 }, especialidade: 'quadril',
+    lema: 'Endurece enquanto você hesita.', habilidade: 'Regenera 4 por rodada (até 32 no confronto).',
+  },
+  // ---------- Elites
+  {
+    id: 'cavaleiro-da-osteossintese', nome: 'Cavaleiro da Osteossíntese', sprite: 'guardiao', variante: 'prata', cenario: 'salao', nivel: 'elite', andarMin: 5,
+    vida: 150, forca: 3.8, armadura: 6, paciencia: 12, porErroSeguido: 1, critico: 0.1, especialidade: 'trauma',
+    lema: 'Placas, parafusos e paciência.', habilidade: 'Armadura 6. Use Ruptura ou acertos difíceis.',
+  },
+  {
+    id: 'colosso-da-tibia', nome: 'Colosso da Tíbia', sprite: 'golem', variante: 'rubro', cenario: 'campo', nivel: 'elite', andarMin: 5,
+    vida: 175, forca: 4.2, armadura: 1, paciencia: 11, porErroSeguido: 0, critico: 0.1, especialidade: 'joelho',
+    lema: 'A investida que racha o chão.', habilidade: 'Muita vida e golpes pesados.',
+  },
+  // ---------- Chefes
+  {
+    id: 'guardiao-do-acetabulo', nome: 'Guardião do Acetábulo', sprite: 'guardiao', cenario: 'salao', nivel: 'chefe', andarMin: 3,
+    vida: 190, forca: 4, armadura: 5, paciencia: 14, porErroSeguido: 2, critico: 0.12, chefe: true, especialidade: 'trauma',
     fase2: { abaixoDe: 0.5, nome: 'Teto rachado', forca: 5, armadura: 0 },
-    lema: 'Ninguém passa do teto sem conhecer as colunas.',
-    habilidade: 'Armadura 5. Com metade da vida, perde a armadura e bate mais forte.',
+    lema: 'Ninguém passa do teto sem conhecer as colunas.', habilidade: 'Armadura 5. Com metade da vida, perde a armadura e bate mais forte.',
+  },
+  {
+    id: 'senhor-do-anel-pelvico', nome: 'Senhor do Anel Pélvico', sprite: 'guardiao', variante: 'real', cenario: 'salao', nivel: 'chefe', andarMin: 6,
+    vida: 230, forca: 4.2, armadura: 3, paciencia: 14, porErroSeguido: 2, critico: 0.14, chefe: true, barreira: 30, especialidade: 'trauma',
+    fase2: { abaixoDe: 0.5, nome: 'Anel quebrado', forca: 5.2, armadura: 0, barreira: 25 },
+    lema: 'O anel se fecha sobre quem erra.', habilidade: 'Barreira de 30 que absorve seus acertos; renova (25) na segunda fase.',
+  },
+  {
+    id: 'tita-da-coluna', nome: 'Titã da Coluna', sprite: 'golem', variante: 'obsidiana', cenario: 'masmorra', nivel: 'chefe', andarMin: 9,
+    vida: 270, forca: 4.4, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, regenera: { porRodada: 5, total: 45 }, especialidade: 'coluna',
+    fase2: { abaixoDe: 0.4, nome: 'Vértebras em brasa', forca: 5.4, armadura: 2 },
+    lema: 'Cada vértebra, uma muralha.', habilidade: 'Regenera 5 por rodada (até 45) e endurece na segunda fase.',
   },
 ]
 
-/** O ciclo seguinte repete a masmorra com adversários 25% mais fortes. */
-export function inimigoDoAndar(andar: number): { inimigo: Inimigo; ciclo: number } {
-  const i = (andar - 1) % BESTIARIO.length
-  const ciclo = Math.floor((andar - 1) / BESTIARIO.length)
-  const base = BESTIARIO[i]
-  if (ciclo === 0) return { inimigo: base, ciclo }
-  const k = 1 + 0.25 * ciclo
+/** Parâmetros do escalonamento (ajustados pela simulação de fixtures/testar_flashcards.mjs). */
+export const ESCALA = {
+  /** Crescimento por ato (3 andares). */
+  vidaPorAto: 0.3,
+  forcaPorAto: 0.24,
+  /** Tetos dos multiplicadores (crescimento linear até aqui, nunca exponencial). */
+  vidaMax: 6,
+  forcaMax: 5,
+  /** A paciência (rodadas até a Fúria) encurta 1 por ato, até este mínimo. */
+  pacienciaMin: 6,
+  /** O crítico fica um pouco mais frequente por ato, até este teto. */
+  criticoPorAto: 0.01,
+  criticoMax: 0.25,
+  /** Elite no segundo andar do ato, a partir deste andar, com esta chance. */
+  eliteDesde: 5,
+  chanceElite: 0.5,
+}
+
+/**
+ * Teto do dano de UM golpe, em fração da vida máxima do herói. Um herói com
+ * pouca vida ainda morre no próximo erro; o que se evita é o escalonamento
+ * injusto (morrer de vida cheia num golpe só).
+ */
+export const LIMITES = { comum: 0.22, elite: 0.28, chefe: 0.35, critico: 0.45, multCritico: 1.6 }
+
+function hash(a: number, b: number) {
+  let h = (a ^ Math.imul(b + 0x9e3779b9, 0x85ebca6b)) >>> 0
+  h = Math.imul(h ^ (h >>> 13), 0xc2b2ae35) >>> 0
+  return ((h ^ (h >>> 16)) >>> 0) / 4294967296
+}
+
+/**
+ * Adversário do andar. Determinístico pela semente da partida: a mesma semente
+ * repete a mesma masmorra. `anterior` evita repetir o mesmo adversário em seguida.
+ */
+export function inimigoDoAndar(andar: number, semente = 0): { inimigo: Inimigo; ciclo: number } {
+  const ato = Math.floor((andar - 1) / 3), pos = (andar - 1) % 3
+  let base: Inimigo
+  if (pos === 2) {
+    const chefes = BESTIARIO.filter((i) => i.nivel === 'chefe' && i.andarMin <= andar)
+    // o chefe do ato segue a ordem de estreia; depois do último, alterna entre todos
+    const novo = chefes.find((c) => Math.floor((c.andarMin - 1) / 3) === ato)
+    base = novo ?? chefes[Math.floor(hash(semente, andar) * chefes.length)]
+  } else {
+    const elite = andar >= ESCALA.eliteDesde && pos === 1 && hash(semente, andar * 7 + 1) < ESCALA.chanceElite
+    const pool = BESTIARIO.filter((i) => i.nivel === (elite ? 'elite' : 'comum') && i.andarMin <= andar)
+    // o primeiro andar é sempre o Golem (apresentação do jogo)
+    if (andar === 1) base = BESTIARIO[0]
+    else if (andar === 2) base = BESTIARIO[1]
+    else {
+      const preferidos = pool.filter((i) => i.andarMin > andar - 6) // os novos da faixa aparecem mais
+      const lista = preferidos.length && hash(semente, andar * 13) < 0.6 ? preferidos : pool
+      base = lista[Math.floor(hash(semente, andar * 31 + 5) * lista.length)]
+    }
+  }
+  if (ato === 0) return { inimigo: base, ciclo: 0 }
+  const kv = Math.min(ESCALA.vidaMax, 1 + ESCALA.vidaPorAto * ato)
+  const kf = Math.min(ESCALA.forcaMax, 1 + ESCALA.forcaPorAto * ato)
   return {
-    ciclo,
-    inimigo: { ...base, vida: Math.round(base.vida * k), forca: +(base.forca * k).toFixed(2), fase2: base.fase2 && { ...base.fase2, forca: +(base.fase2.forca * k).toFixed(2) } },
+    ciclo: ato,
+    inimigo: {
+      ...base,
+      vida: Math.round(base.vida * kv),
+      forca: +(base.forca * kf).toFixed(2),
+      paciencia: Math.max(ESCALA.pacienciaMin, base.paciencia - ato),
+      critico: Math.min(ESCALA.criticoMax, base.critico + ESCALA.criticoPorAto * ato),
+      barreira: base.barreira && Math.round(base.barreira * kv),
+      regenera: base.regenera && { porRodada: base.regenera.porRodada, total: Math.round(base.regenera.total * kv) },
+      fase2: base.fase2 && { ...base.fase2, forca: +(base.fase2.forca * kf).toFixed(2), barreira: base.fase2.barreira && Math.round(base.fase2.barreira * kv) },
+    },
   }
 }
+
+/** Estágios do herói: a cada chefe vencido ele evolui (só nesta partida). */
+export const ESTAGIOS = [
+  { nome: 'Aprendiz da Ortopedia', vida: 0, ataque: 0, defesa: 0 },
+  { nome: 'Escudeiro Clínico', vida: 12, ataque: 2, defesa: 1 },
+  { nome: 'Cavaleiro da Ortopedia', vida: 24, ataque: 4, defesa: 2 },
+  { nome: 'Mestre da Reconstrução', vida: 36, ataque: 6, defesa: 3 },
+  { nome: 'Lenda do Torneio', vida: 50, ataque: 8, defesa: 4 },
+] as const

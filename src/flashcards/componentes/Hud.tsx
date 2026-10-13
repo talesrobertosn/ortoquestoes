@@ -8,9 +8,9 @@ import { Sprite } from './Sprite'
  * Parado alterna com "respira"; as outras aparecem quando o diretor de efeitos
  * põe `data-pose` no ator (veja `posar` na Arena).
  */
-const Quadros = memo(function Quadros({ quem, escala }: { quem: Personagem; escala: number }) {
+const Quadros = memo(function Quadros({ quem, escala, variante }: { quem: Personagem; escala: number; variante?: string }) {
   const refs = useRef<Record<string, HTMLCanvasElement | null>>({})
-  useEffect(() => { for (const pose of POSES) { const c = refs.current[pose]; if (c) pintarPersonagem(c, quem, pose) } }, [quem])
+  useEffect(() => { for (const pose of POSES) { const c = refs.current[pose]; if (c) pintarPersonagem(c, quem, pose, variante) } }, [quem, variante])
   const [w, h] = TAMANHO[quem]
   const [x, y] = caixaDoCorpo(quem)
   const estilo = { width: w * escala, height: h * escala }
@@ -26,6 +26,8 @@ interface AtorProps {
   escala: number
   classe?: string
   chefe?: boolean
+  /** Troca de paleta (variante do adversário ou estágio do herói). */
+  variante?: string
   children?: React.ReactNode
 }
 
@@ -34,13 +36,13 @@ interface AtorProps {
  * As animações (dano, ataque, bloqueio, derrota) entram por classes no
  * elemento `.fc-ator__corpo`; as poses, por `data-pose` no próprio ator.
  */
-export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, escala, classe, chefe, children }, ref) {
+export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, escala, classe, chefe, variante, children }, ref) {
   const [, , w, h] = caixaDoCorpo(quem)
   return (
     <div ref={ref} className={`fc-ator fc-ator--${quem}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={{ width: w * escala, height: h * escala }} aria-hidden="true">
       <span className="fc-ator__aura" />
       <span className="fc-ator__sombra" />
-      <div className="fc-ator__corpo"><Quadros quem={quem} escala={escala} /></div>
+      <div className="fc-ator__corpo"><Quadros quem={quem} escala={escala} variante={variante} /></div>
       {children}
     </div>
   )

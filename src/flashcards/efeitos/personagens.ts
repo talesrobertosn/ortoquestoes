@@ -289,6 +289,43 @@ const guardiao: Desenho = (g, pose) => {
 
 const DESENHOS: Record<Personagem, Desenho> = { heroi, golem, serpente, guardiao }
 
+/**
+ * Variantes por troca de paleta (técnica clássica de RPG): o mesmo desenho com
+ * outras rampas de material. Cada entrada troca a rampa inteira de um material
+ * (e o contorno dele) e, se preciso, cores fixas (olhos, fendas, brasas).
+ */
+type Rampa = [string, string, string, string]
+interface Variante { rampas?: Partial<Record<keyof typeof MAT, { rampa: Rampa; contorno?: string }>>; cores?: Record<string, string> }
+export const VARIANTES: Record<string, Variante> = {
+  // inimigos
+  cristal: { rampas: { gesso: { rampa: ['#e8fbff', '#a9e4f2', '#5fb2cc', '#2c6a86'], contorno: '#0e2a3a' }, pedra: { rampa: ['#9fd6e8', '#5ea6c4', '#35708e', '#1c4058'], contorno: '#0a1c28' } }, cores: { '#7fe6ff': '#ff9ff0', '#e8ffff': '#fff0fb', '#bff8ff': '#ffd0f6', '#4fc8e8': '#e070c8', '#9ff0ff': '#ffc0ee' } },
+  cimento: { rampas: { gesso: { rampa: ['#dcdcd6', '#aeaea6', '#7c7c76', '#4c4c48'], contorno: '#1c1c1a' }, pedra: { rampa: ['#9a9890', '#706e68', '#4c4a46', '#2e2d2a'], contorno: '#121210' }, musgo: { rampa: ['#c8c070', '#9a9244', '#6a6424', '#3c380e'] } }, cores: { '#7fe6ff': '#ffb35a', '#e8ffff': '#fff0c8', '#bff8ff': '#ffd890', '#4fc8e8': '#e07a28', '#9ff0ff': '#ffcc80' } },
+  rubro: { rampas: { gesso: { rampa: ['#f6c8a8', '#d68a64', '#a4553a', '#64301e'], contorno: '#2a0e06' }, pedra: { rampa: ['#c27056', '#94483a', '#642c24', '#3c1612'], contorno: '#1a0604' } }, cores: { '#7fe6ff': '#ffe46a', '#e8ffff': '#fffbe0', '#bff8ff': '#fff2a0', '#4fc8e8': '#ff9a2a', '#9ff0ff': '#fff0a0' } },
+  obsidiana: { rampas: { gesso: { rampa: ['#9a8ab8', '#6a5a8c', '#463a62', '#2a2240'], contorno: '#0c0816' }, pedra: { rampa: ['#5a4a74', '#3e3256', '#28203a', '#161022'], contorno: '#06040c' }, musgo: { rampa: ['#ff9a4a', '#e0602a', '#a03a14', '#601e08'] } }, cores: { '#7fe6ff': '#ff8a2a', '#e8ffff': '#fff0c0', '#bff8ff': '#ffc070', '#4fc8e8': '#e0501a', '#9ff0ff': '#ffb060' } },
+  eletrica: { rampas: { escama: { rampa: ['#c8f6ff', '#5ec8e8', '#2c86b0', '#144a6a'], contorno: '#061826' }, ventre: { rampa: ['#f6ffff', '#d0f0ff', '#90c8e0', '#4a7a94'] }, vermelho: { rampa: ['#fff07a', '#f2c42a', '#b08410', '#604404'] } }, cores: { '#ff5a3c': '#fff27a', '#5e3c0c': '#0e3a5a', '#a8781e': '#2c86b0', '#d0281c': '#ffe040' } },
+  prata: { rampas: { tabardo: { rampa: ['#6aa8f0', '#3a6ec8', '#22468a', '#122852'], contorno: '#060e22' }, ouro: { rampa: ['#ffffff', '#d8e2f0', '#9aa8c0', '#5a6680'], contorno: '#1a2030' } }, cores: { '#f2c45a': '#d8e2f0', '#fff1b0': '#ffffff', '#c28a2a': '#9aa8c0', '#ffb347': '#9fe0ff', '#ffd27a': '#c8f0ff', '#ff7a3a': '#5fc8ff', '#ff5a2a': '#3aa8ff', '#741610': '#22468a' } },
+  real: { rampas: { tabardo: { rampa: ['#c890f0', '#8a4ac8', '#5a2a8a', '#321452'], contorno: '#120622' }, aco2: { rampa: ['#fff6d8', '#e8c878', '#b08a3a', '#6a5018'], contorno: '#241a06' } }, cores: { '#741610': '#5a2a8a', '#ffb347': '#e080ff', '#ffd27a': '#f0b0ff', '#ff7a3a': '#c050ff', '#ff5a2a': '#a030f0' } },
+  // estágios do herói (o mesmo cavaleirinho, com equipamento melhor)
+  'heroi-2': { rampas: { azul: { rampa: ['#9fd0ff', '#4a90e0', '#2a5ea8', '#18366a'] } }, cores: { '#c28a2a': '#f2c45a', '#bfe0ff': '#ffffff' } },
+  'heroi-3': { rampas: { azul: { rampa: ['#a8e0ff', '#3a88e8', '#1e56b0', '#0e2e6a'] }, vermelho: { rampa: ['#ff8a6a', '#e04a2a', '#a02414', '#5a0e08'] }, aco: { rampa: ['#ffffff', '#cfdcf0', '#8a9cbc', '#4e5c7a'] } }, cores: { '#c28a2a': '#ffd76a', '#f4f8ff': '#ffffff', '#9fb0c8': '#bfe8ff' } },
+  'heroi-4': { rampas: { azul: { rampa: ['#c0a8ff', '#7a5ae0', '#4a32a8', '#28186a'] }, vermelho: { rampa: ['#ffe08a', '#f2b030', '#b07414', '#5e3c06'] }, aco: { rampa: ['#ffffff', '#e0e6f6', '#a2aed0', '#5e6888'] } }, cores: { '#c28a2a': '#fff1b0', '#9fb0c8': '#d8c0ff' } },
+  'heroi-5': { rampas: { azul: { rampa: ['#fff6c8', '#f2d06a', '#c8962a', '#7a5414'] }, vermelho: { rampa: ['#ffffff', '#f0e6ff', '#c0aef0', '#7a68b0'] }, aco: { rampa: ['#ffffff', '#fff6d8', '#e0c890', '#9a8050'] } }, cores: { '#c28a2a': '#ffffff', '#9fb0c8': '#fff6c0', '#f4f8ff': '#ffffff' } },
+}
+
+function tabelaDeTroca(nome?: string): Map<string, string> | undefined {
+  const v = nome ? VARIANTES[nome] : undefined
+  if (!v) return undefined
+  const t = new Map<string, string>()
+  for (const [k, nova] of Object.entries(v.rampas ?? {})) {
+    const orig = MAT[k as keyof typeof MAT]
+    if (!orig || !nova) continue
+    orig.rampa.forEach((c, i) => t.set(c, nova.rampa[i] ?? c))
+    if (nova.contorno) t.set(orig.contorno, nova.contorno)
+  }
+  for (const [a, b] of Object.entries(v.cores ?? {})) t.set(a, b)
+  return t
+}
+
 function montar(quem: Personagem, pose: Pose) {
   const [w, h] = TAMANHO[quem]
   const g = new Grade(w, h)
@@ -297,9 +334,9 @@ function montar(quem: Personagem, pose: Pose) {
   return g
 }
 
-/** Pinta uma pose do sprite, na resolução nativa. */
-export function pintarPersonagem(canvas: HTMLCanvasElement, quem: Personagem, pose: Pose = 'parado') {
-  montar(quem, pose).pintar(canvas)
+/** Pinta uma pose do sprite, na resolução nativa, com a variante de paleta (se houver). */
+export function pintarPersonagem(canvas: HTMLCanvasElement, quem: Personagem, pose: Pose = 'parado', variante?: string) {
+  montar(quem, pose).pintar(canvas, true, tabelaDeTroca(variante))
 }
 
 const caixas = new Map<Personagem, [number, number, number, number]>()

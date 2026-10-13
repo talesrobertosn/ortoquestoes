@@ -9,9 +9,9 @@ import { Palco, centro } from '../efeitos/palco'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
 import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
-import { BESTIARIO, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
-import { ENCAIXES, RECOMPENSAS, ehPoder, type Recompensa } from '../motor/poderes'
-import { COMBO_MINIMO, criarMotor, type Evento, type Partida } from '../motor/regras'
+import { ESTAGIOS, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
+import { ENCAIXES, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
+import { COMBO_MINIMO, criarMotor, type Evento, type MotivoCura, type Partida } from '../motor/regras'
 import { CHAVE_AJUSTES, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_RECORDES, CHAVE_REGISTROS, lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Recordes, type RegistroFlashcard } from '../progresso'
 import { Cartao } from './Cartao'
 import { Cenario, TampoMesa } from './Cenario'
@@ -34,6 +34,11 @@ export interface Ajustes {
 /** Som ligado por padrão (pedido do Tales em 12/10/2026); toca a partir do primeiro toque. */
 const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
 
+const ROTULO_CURA: Record<MotivoCura, string> = {
+  sequencia: 'SEQUÊNCIA', lendaria: 'LENDÁRIA', pocao: 'POÇÃO', selo: 'SELO', roubo: 'ROUBO DE ENERGIA', vital: 'POÇÃO VITAL',
+  insignia: 'INSÍGNIA', chefe: 'CHEFE VENCIDO', ritual: 'RITUAL', descanso: 'FOGUEIRA', coracao: 'CORAÇÃO', evolucao: 'EVOLUÇÃO',
+}
+
 /** Tamanho de cada reposição do baralho (a seleção roda de novo quando acaba). */
 const LOTE_DO_BARALHO = 40
 
@@ -52,7 +57,7 @@ function prepararMotor(cartas: Flashcard[]) {
 
 function partidaSalva(): Partida | null {
   const p = ler<Partida | null>(CHAVE_PARTIDA, null)
-  if (!p || p.versao !== 1 || p.fase === 'fim') return null
+  if (!p || p.versao !== 2 || p.fase === 'fim') return null
   try {
     if (p.atual) motor.carta(p.atual.id)
     p.derrubaram.forEach((id) => motor.carta(id))
@@ -155,7 +160,7 @@ function ArenaJogo() {
   const [vermelho, definirVermelho] = useState(0)
   const [eliminando, definirEliminando] = useState<number | null>(null)
   const [atacando, definirAtacando] = useState(false)
-  const [cenarioVisivel, definirCenarioVisivel] = useState(() => inimigoDoAndar(partida.andar).inimigo.cenario)
+  const [cenarioVisivel, definirCenarioVisivel] = useState(() => inimigoDoAndar(partida.andar, partida.sementeBase).inimigo.cenario)
   const [estudoPrimeiro, definirEstudoPrimeiro] = useState<string[]>([])
 
   const canvasPalco = useRef<HTMLCanvasElement>(null)
@@ -179,7 +184,7 @@ function ArenaJogo() {
     return () => { window.removeEventListener('pointerdown', primeiro, { capture: true }); window.removeEventListener('keydown', primeiro, { capture: true }) }
   }, [])
   useEffect(() => { tocarAmbiente(modo === 'estudo' ? 'biblioteca' : cenarioVisivel) }, [modo, cenarioVisivel])
-  const chefeEmCena = modo === 'batalha' && inimigoDoAndar(partida.andar).inimigo.chefe
+  const chefeEmCena = modo === 'batalha' && inimigoDoAndar(partida.andar, partida.sementeBase).inimigo.chefe
   useEffect(() => { tocarMusica(modo === 'estudo' ? 'biblioteca' : chefeEmCena ? 'chefe' : cenarioVisivel) }, [modo, cenarioVisivel, chefeEmCena])
   useEffect(() => () => { tocarAmbiente(null); tocarMusica(null) }, [])
 
@@ -196,7 +201,7 @@ function ArenaJogo() {
   useEffect(() => { if (palco.current) palco.current.reduzido = reduzido }, [reduzido])
 
   useEffect(() => {
-    const { inimigo, ciclo } = inimigoDoAndar(partida.andar)
+    const { inimigo, ciclo } = inimigoDoAndar(partida.andar, partida.sementeBase)
     if (partida.fase === 'pergunta' && partida.rodada === 0) definirApresentacao({ inimigo, ciclo, andar: partida.andar })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -242,7 +247,7 @@ function ArenaJogo() {
     definirTransicao(false)
     definirEliminando(null)
     definirAtacando(false)
-    definirCenarioVisivel(inimigoDoAndar(partidaRef.current.andar).inimigo.cenario)
+    definirCenarioVisivel(inimigoDoAndar(partidaRef.current.andar, partidaRef.current.sementeBase).inimigo.cenario)
     sincronizar(partidaRef.current)
   }, [sincronizar])
 
@@ -269,7 +274,7 @@ function ArenaJogo() {
     const P = palco.current
     definirAnimando(true)
     const combo = depois.sequencia
-    const quemInimigo = inimigoDoAndar(depois.andar).inimigo.sprite as Personagem
+    const quemInimigo = inimigoDoAndar(depois.andar, depois.sementeBase).inimigo.sprite as Personagem
     for (const ev of eventos) {
       if (g !== geracao.current) return
       switch (ev.tipo) {
@@ -315,7 +320,10 @@ function ArenaJogo() {
           if (ev.critico || ev.duplo) flutuar(refInimigo.current, `-${ev.valor}`, '#ffd34a', { grande: true, rotulo: ev.duplo ? 'GOLPE DUPLO' : 'CRÍTICO', x: 70, y: -10 })
           else flutuar(refInimigo.current, `-${ev.valor}`, '#ffe6a8', { y: -20, x: 50 })
           if (ev.absorvido > 0) flutuar(refInimigo.current, `armadura −${ev.absorvido}`, '#cfe2ff', { y: -70, x: -20 })
-          definirMostrado((m) => ({ ...m, vidaInimigo: Math.max(0, m.vidaInimigo - ev.valor) }))
+          if (ev.barreira > 0) { flutuar(refInimigo.current, `barreira −${ev.barreira}`, '#9fe0ff', { y: -100, x: 10 }); P?.onda(para, '#7fd8ff', 130, 10) }
+          if (ev.eco > 0) window.setTimeout(() => { if (g !== geracao.current) return; P?.corte(para, '#7fd8ff', 80); tocar('impacto-leve', 1, quemInimigo); flutuar(refInimigo.current, `+${ev.eco}`, '#9fe8ff', { y: 10, x: 90, rotulo: 'ECO' }) }, 220 * fator)
+          if (ev.especial) flutuar(refInimigo.current, 'MARCA DO MESTRE', '#ffe08a', { y: -130 })
+          definirMostrado((m) => ({ ...m, vidaInimigo: Math.max(0, m.vidaInimigo - (ev.valor - ev.barreira)) }))
           if (!(await esperar(300, g))) return
           break
         }
@@ -343,10 +351,12 @@ function ArenaJogo() {
           P?.clarao(para, '#ff3a20', 240, 0.8)
           P?.explosao(para, { cor: '#ff5a3c', cor2: '#ffb090', n: 26, forca: 300 })
           P?.fragmentos(para, ['#9fb0c8', '#f4f8ff', '#3f78c8'], 10, 260)
-          tocar('dano')
-          tremer(ev.valor >= 25 ? 1 : 0.6)
-          definirVermelho((v) => v + 1)
-          flutuar(refHeroi.current, `-${ev.valor}`, '#ff8a6a', { y: -70, grande: ev.valor >= 25, rotulo: ev.furia ? 'FÚRIA' : ev.veneno ? `VENENO +${ev.veneno}` : undefined })
+          tocar(ev.critico ? 'critico' : 'dano', 1, quemInimigo)
+          if (ev.veneno) tocar('veneno')
+          tremer(ev.critico || ev.valor >= 25 ? 1 : 0.6)
+          definirVermelho((v) => v + (ev.critico ? 2 : 1))
+          if (ev.critico) { P?.corte(para, '#ff3a20', 100); window.setTimeout(() => P?.corte(para, '#ffd0c0', 86, 0.6), 70 * fator) }
+          flutuar(refHeroi.current, `-${ev.valor}`, '#ff8a6a', { y: -70, grande: ev.critico || ev.valor >= 25, rotulo: ev.critico ? 'CRÍTICO' : ev.furia ? 'FÚRIA' : ev.veneno ? `VENENO +${ev.veneno}` : undefined })
           definirMostrado((m) => ({ ...m, vida: Math.max(0, m.vida - ev.valor) }))
           if (!(await esperar(260, g))) return
           break
@@ -384,9 +394,34 @@ function ArenaJogo() {
           P?.clarao(centro(refHeroi.current), '#5fdc7a', 200, 0.7, 0.6)
           animar(refHeroi.current, 'fc-anim-cura', 900)
           tocar('cura')
-          flutuar(refHeroi.current, `+${ev.valor}`, '#8ff0a0', { y: -50, x: 60, rotulo: ev.motivo === 'pocao' ? 'POÇÃO' : ev.motivo === 'lendaria' ? 'LENDÁRIA' : 'SEQUÊNCIA' })
+          flutuar(refHeroi.current, `+${ev.valor}`, '#8ff0a0', { y: -50, x: 60, rotulo: ROTULO_CURA[ev.motivo] })
           definirMostrado((m) => ({ ...m, vida: Math.min(depois.vidaMax, m.vida + ev.valor) }))
           if (!(await esperar(200, g))) return
+          break
+        }
+        case 'mitigado': {
+          const nome = ev.motivo === 'barreira' ? 'Barreira' : ev.motivo === 'foco' ? 'Foco' : 'Preceptor'
+          P?.onda(centro(refHeroi.current), '#9fd0ff', 100, 12)
+          tocar('escudo')
+          flutuar(refHeroi.current, `${nome} −${ev.valor}`, '#bfe0ff', { y: -110, x: 30 })
+          if (!(await esperar(160, g))) return
+          break
+        }
+        case 'regenera': {
+          P?.subir(centro(refInimigo.current), '#9fe8a0', 16, 60)
+          flutuar(refInimigo.current, `+${ev.valor}`, '#9fe8a0', { y: -40, x: -40, rotulo: 'REGENERA' })
+          definirMostrado((m) => ({ ...m, vidaInimigo: Math.min(depois.inimigo.vidaMax, m.vidaInimigo + ev.valor) }))
+          break
+        }
+        case 'evolucao': {
+          tocar('evolucao')
+          P?.subir(centro(refHeroi.current), '#ffe08a', 46, 90)
+          P?.clarao(centro(refHeroi.current), '#ffcf5a', 420, 1, 0.9)
+          P?.onda(centro(refHeroi.current), '#ffe08a', 180, 14)
+          animar(refHeroi.current, 'fc-anim-cura', 900)
+          definirFaixa({ texto: 'Evolução!', sub: `Agora você é ${ev.nome}: mais vida, ataque e defesa`, tom: 'ouro' })
+          if (!(await esperar(1500, g))) return
+          definirFaixa(null)
           break
         }
         case 'pocao': {
@@ -496,6 +531,10 @@ function ArenaJogo() {
       const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
       gravar(CHAVE_RECORDES, { ...rec, respostas: rec.respostas + 1, andarMaximo: Math.max(rec.andarMaximo, r.estado.andar), melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
     }
+    if (r.estado.fase === 'fim' && partidaRef.current.fase !== 'fim') {
+      const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
+      gravar(CHAVE_RECORDES, { ...rec, andarMaximo: Math.max(rec.andarMaximo, r.estado.andar), chefesDerrotados: rec.chefesDerrotados + r.estado.chefesDerrotados, melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
+    }
     partidaRef.current = r.estado
     definirPartida(r.estado)
     if (r.eventos.length) void encenar(r.eventos, r.estado)
@@ -525,6 +564,7 @@ function ArenaJogo() {
   }, [animando, aplicar, pular])
 
   const usarPista = useCallback(() => { if (!apresentacao) aplicar(motor.usarPista(partidaRef.current)) }, [aplicar, apresentacao])
+  const usarPoder = useCallback((tipo: TipoPoder) => { if (!apresentacao) aplicar(motor.usarPoder(partidaRef.current, tipo)) }, [aplicar, apresentacao])
 
   const escolherRecompensa = useCallback((r: Recompensa) => {
     if (animando) pular()
@@ -605,7 +645,7 @@ function ArenaJogo() {
       : { texto: partida.fase === 'recompensa' ? 'Poder' : 'Fim', sub: '', ativo: false, acao: () => {}, classe: '' }
   const mostrarRecompensas = partida.fase === 'recompensa' && !animando
   const mostrarFim = partida.fase === 'fim' && !animando
-  const ciclo = inimigoDoAndar(partida.andar).ciclo
+  const ciclo = inimigoDoAndar(partida.andar, partida.sementeBase).ciclo
 
   const classes = ['fc-arena', `fc-arena--${modo}`, `fc-arena--${faixaTela}`, `fc-arena--fase-${partida.fase}`, reduzido ? 'fc-arena--reduzida' : '', mostrado.vida <= 25 && modo === 'batalha' ? 'fc-arena--perigo' : ''].filter(Boolean).join(' ')
 
@@ -628,13 +668,13 @@ function ArenaJogo() {
               <>
                 <span className="fc-topo__titulo">Torneio de Flashcards</span>
                 <span className="fc-topo__progresso">
-                  <span className="fc-trilha" aria-label={`Andar ${partida.andar} de ${BESTIARIO.length}`}>
-                    {BESTIARIO.map((b, i) => {
-                      const n = ((partida.andar - 1) % BESTIARIO.length)
-                      return <i key={b.id} className={i < n ? 'feito' : i === n ? 'atual' : ''} title={b.nome} />
+                  <span className="fc-trilha" aria-label={`Andar ${((partida.andar - 1) % 3) + 1} de 3 do ato ${Math.floor((partida.andar - 1) / 3) + 1}`}>
+                    {[0, 1, 2].map((i) => {
+                      const n = (partida.andar - 1) % 3
+                      return <i key={i} className={(i < n ? 'feito' : i === n ? 'atual' : '') + (i === 2 ? ' chefe' : '')} title={i === 2 ? 'Chefe do ato' : 'Confronto'} />
                     })}
                   </span>
-                  <b>Andar {partida.andar}</b>{ciclo ? ` · ciclo ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts
+                  <b>Andar {partida.andar}</b>{ciclo ? ` · ato ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts
                 </span>
               </>
             ) : (
@@ -662,10 +702,11 @@ function ArenaJogo() {
           <div className="fc-batalha">
             {/* Adversário em cena, de pé sobre a arena */}
             <section className={`fc-inimigo${inimigo.chefe ? ' fc-inimigo--chefe' : ''}${fase2 ? ' fc-inimigo--fase2' : ''}${partida.inimigo.furia ? ' fc-inimigo--furia' : ''}`} aria-label={`Adversário: ${inimigo.nome}`}>
-              <Ator ref={refInimigo} quem={inimigo.sprite as Personagem} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')} />
+              <Ator ref={refInimigo} quem={inimigo.sprite as Personagem} variante={inimigo.variante} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (inimigo.nivel === 'elite' ? ' fc-ator--elite' : '') + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')} />
               <div className="fc-placa">
                 <div className="fc-placa__nome">
                   {inimigo.chefe && <em className="fc-selo fc-selo--chefe">Chefe</em>}
+                  {inimigo.nivel === 'elite' && <em className="fc-selo fc-selo--elite">Elite</em>}
                   <strong>{inimigo.nome}</strong>
                   {fase2 && <em className="fc-selo fc-selo--fase">{inimigo.fase2?.nome}</em>}
                 </div>
@@ -674,13 +715,16 @@ function ArenaJogo() {
                   <span className="fc-info fc-info--andar">Andar {partida.andar} · {partida.pontos} pts</span>
                   {partida.inimigo.furia ? <span className="fc-info fc-info--furia">Fúria · dano ×1,5</span> : <span className="fc-info" title="Rodadas até a Fúria">Fúria em {rodadasFuria}</span>}
                   {atributos.armadura > 0 && <span className="fc-info fc-info--armadura">Armadura {atributos.armadura}</span>}
+                  {partida.inimigo.barreira > 0 && <span className="fc-info fc-info--barreira" title="Absorve o dano dos seus acertos antes da vida">Barreira {partida.inimigo.barreira}</span>}
+                  {inimigo.regenera && partida.inimigo.regenerado < inimigo.regenera.total && <span className="fc-info fc-info--regenera" title={`Recupera ${inimigo.regenera.porRodada} por rodada, até ${inimigo.regenera.total} neste confronto`}>Regenera {inimigo.regenera.porRodada}</span>}
                   {inimigo.porErroSeguido > 0 && <span className="fc-info">{inimigo.chefe ? 'Pressão' : 'Veneno'} +{inimigo.porErroSeguido} por erro seguido</span>}
                 </div>
               </div>
               {partida.fase === 'pergunta' && (
-                <div className={`fc-intencao${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}`} title={intencao.bloqueado ? 'O escudo bloqueia o próximo golpe' : 'Intenção do adversário: o dano que você leva se errar'}>
+                <div className={`fc-intencao${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}${intencao.critico && !intencao.bloqueado ? ' fc-intencao--critico' : ''}`}
+                  title={intencao.bloqueado ? 'O escudo bloqueia o próximo golpe' : `Intenção do adversário: o dano exato que você leva se errar${intencao.critico ? ' (golpe crítico)' : ''}${intencao.protecoes.length ? `, já com ${intencao.protecoes.join(' e ')}` : ''}`}>
                   <span className="fc-intencao__gema">{intencao.bloqueado ? <Sprite nome="escudo" className="fc-sprite--icone" /> : <b>{intencao.dano}</b>}</span>
-                  <small>{intencao.bloqueado ? 'escudo pronto' : 'se errar'}</small>
+                  <small>{intencao.bloqueado ? 'escudo pronto' : intencao.critico ? 'crítico se errar' : 'se errar'}</small>
                 </div>
               )}
             </section>
@@ -713,7 +757,7 @@ function ArenaJogo() {
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
               <div className="fc-heroi">
-                <Ator ref={refHeroi} quem="heroi" escala={escalaHeroi} classe={'fc-ator--heroi' + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
+                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                 </Ator>
                 <div className="fc-heroi__dados">
@@ -727,10 +771,14 @@ function ArenaJogo() {
                   <div className="fc-encaixes" ref={refSlots} aria-label="Poderes equipados">
                     {Array.from({ length: ENCAIXES }, (_, i) => {
                       const e = partida.encaixes[i]
-                      const usavel = !!e && e.tipo === 'pista' && partida.fase === 'pergunta' && !partida.atual?.respondida && ordem.length - (partida.atual?.eliminadas.length ?? 0) > 2 && !apresentacao
-                      return <Encaixe key={i} tipo={e?.tipo} carga={e?.carga} extra={e?.tipo === 'pocao' ? partida.pocao : undefined} usavel={usavel} aoUsar={usarPista} />
+                      const pronto = !!e && !!RECOMPENSAS[e.tipo].ativo && partida.fase === 'pergunta' && !partida.atual?.respondida && !apresentacao
+                      const usavel = pronto && (e!.tipo === 'pista' ? ordem.length - (partida.atual?.eliminadas.length ?? 0) > 2 : partida.vida < partida.vidaMax)
+                      return <Encaixe key={i} tipo={e?.tipo} carga={e?.carga} extra={e?.tipo === 'pocao' ? partida.pocao : undefined} usavel={usavel} aoUsar={() => e && usarPoder(e.tipo)} />
                     })}
-                    {partida.reliquias.map((r) => <span key={r} className="fc-reliquia" title={`${RECOMPENSAS[r].nome}: ${RECOMPENSAS[r].texto}`} style={{ ['--cor' as string]: RECOMPENSAS[r].cor }}><Sprite nome={RECOMPENSAS[r].icone} className="fc-sprite--icone" /></span>)}
+                    {[...new Set(partida.reliquias)].map((r) => {
+                      const n = partida.reliquias.filter((x) => x === r).length
+                      return <span key={r} className="fc-reliquia" title={`${RECOMPENSAS[r].nome}${n > 1 ? ` ×${n}` : ''}: ${RECOMPENSAS[r].texto}`} style={{ ['--cor' as string]: RECOMPENSAS[r].cor }}><Sprite nome={RECOMPENSAS[r].icone} className="fc-sprite--icone" />{n > 1 && <b>{n}</b>}</span>
+                    })}
                   </div>
                 </div>
               </div>
@@ -803,7 +851,7 @@ function ArenaJogo() {
               <strong>{apresentacao.inimigo.nome}</strong>
               <em>{apresentacao.inimigo.lema}</em>
               <p>{apresentacao.inimigo.habilidade}</p>
-              <p className="fc-apresenta__numeros"><span>Vida {inimigoDoAndar(apresentacao.andar).inimigo.vida}</span><span>Força ×{inimigoDoAndar(apresentacao.andar).inimigo.forca}</span></p>
+              <p className="fc-apresenta__numeros"><span>Vida {inimigoDoAndar(apresentacao.andar, partida.sementeBase).inimigo.vida}</span><span>Força ×{inimigoDoAndar(apresentacao.andar, partida.sementeBase).inimigo.forca}</span></p>
               <small>Toque para começar</small>
             </div>
           </div>
@@ -857,8 +905,8 @@ function ArenaJogo() {
 }
 
 function Recompensas({ partida, aoEscolher, aoEncerrar }: { partida: Partida; aoEscolher: (r: Recompensa) => void; aoEncerrar: () => void }) {
-  const chefe = !!inimigoDoAndar(partida.andar).inimigo.chefe
-  const proximo = inimigoDoAndar(partida.andar + 1)
+  const chefe = !!inimigoDoAndar(partida.andar, partida.sementeBase).inimigo.chefe
+  const proximo = inimigoDoAndar(partida.andar + 1, partida.sementeBase)
   const cheios = partida.encaixes.length >= ENCAIXES
   return (
     <div className="fc-veu fc-veu--recompensa" role="dialog" aria-modal="true" aria-labelledby="fc-rec-titulo">
@@ -872,7 +920,7 @@ function Recompensas({ partida, aoEscolher, aoEncerrar }: { partida: Partida; ao
             const substitui = ehPoder(r) && !repetido && cheios ? RECOMPENSAS[partida.encaixes[0].tipo].nome : null
             return (
               <button key={r} type="button" className={`fc-recompensa fc-recompensa--${d.tipo}`} style={{ ['--cor' as string]: d.cor, ['--i' as string]: i }} onClick={() => aoEscolher(r)} onPointerEnter={() => tocar('hover')} autoFocus={i === 0}>
-                <span className="fc-recompensa__tipo">{d.tipo === 'reliquia' ? 'Relíquia' : 'Poder'}{d.rara ? ' rara' : ''}</span>
+                <span className="fc-recompensa__tipo">{d.tipo === 'reliquia' ? 'Relíquia' : d.tipo === 'evento' ? 'Evento' : 'Poder'}{d.raridade !== 'comum' ? ` · ${d.raridade}` : ''}</span>
                 <span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span>
                 <strong>{d.nome}</strong>
                 <span className="fc-recompensa__texto">{d.texto}</span>
@@ -892,13 +940,15 @@ function Fim({ partida, aoNova, aoRevisar, aoSair }: { partida: Partida; aoNova:
   const total = partida.acertos + partida.erros
   const venceu = partida.venceu
   const derrubaram = partida.derrubaram.map((id) => motor.carta(id))
-  const ultimo = BESTIARIO[(partida.andar - 1) % BESTIARIO.length]
+  const ultimo = inimigoDoAndar(partida.andar, partida.sementeBase).inimigo
+  const caiu = partida.vida <= 0
   return (
     <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-fim-titulo">
       <div className={`fc-janela fc-janela--larga${venceu ? ' fc-janela--chefe' : ''}`}>
-        <h2 id="fc-fim-titulo">{venceu ? 'Vitória no Torneio!' : `Você caiu no andar ${partida.andar}`}</h2>
-        <p className="fc-janela__sub">{venceu ? `Você venceu ${partida.chefesDerrotados} chefe${partida.chefesDerrotados > 1 ? 's' : ''}.` : `${ultimo.nome} levou a melhor desta vez.`}</p>
+        <h2 id="fc-fim-titulo">{caiu ? `Você caiu no andar ${partida.andar}` : `Partida encerrada no andar ${partida.andar}`}</h2>
+        <p className="fc-janela__sub">{caiu ? `${ultimo.nome} levou a melhor desta vez.` : 'Bom descanso, herói.'}{venceu ? ` Você venceu ${partida.chefesDerrotados} chefe${partida.chefesDerrotados > 1 ? 's' : ''} e chegou a ${ESTAGIOS[partida.estagio - 1].nome}.` : ''}</p>
         <dl className="fc-numeros">
+          <div><dt>Andar</dt><dd>{partida.andar}</dd></div>
           <div><dt>Pontos</dt><dd>{partida.pontos}</dd></div>
           <div><dt>Acertos</dt><dd>{partida.acertos}<small> de {total}</small></dd></div>
           <div><dt>Assistidos</dt><dd>{partida.assistidos}</dd></div>

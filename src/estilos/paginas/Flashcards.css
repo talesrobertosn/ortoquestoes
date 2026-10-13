@@ -148,6 +148,12 @@
 .fc-ator__sombra { position: absolute; left: 10%; right: 10%; bottom: -7px; height: 18px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0, 0, 0, .62), transparent); }
 .fc-ator__aura { position: absolute; inset: -18% -22% -6%; border-radius: 50%; pointer-events: none; opacity: 0; transition: opacity .4s; background: radial-gradient(closest-side, rgba(255, 220, 140, .35), transparent); }
 .fc-ator--chefe .fc-ator__aura { opacity: 1; animation: fc-aura 2.4s ease-in-out infinite; }
+.fc-ator--elite .fc-ator__aura { opacity: .9; background: radial-gradient(closest-side, rgba(190, 130, 255, .4), transparent); animation: fc-aura 2s ease-in-out infinite; }
+/* estágios do herói: do 3º em diante, uma aura discreta que cresce até a Lenda */
+.fc-ator--estagio-3 .fc-ator__aura { opacity: .55; background: radial-gradient(closest-side, rgba(120, 190, 255, .35), transparent); animation: fc-aura 3s ease-in-out infinite; }
+.fc-ator--estagio-4 .fc-ator__aura { opacity: .8; background: radial-gradient(closest-side, rgba(190, 150, 255, .45), transparent); animation: fc-aura 2.6s ease-in-out infinite; }
+.fc-ator--estagio-5 .fc-ator__aura { opacity: 1; background: radial-gradient(closest-side, rgba(255, 220, 120, .55), transparent); animation: fc-aura 2.2s ease-in-out infinite; }
+.fc-ator--estagio-5 .fc-ator__quadros { filter: drop-shadow(0 0 1px rgba(0, 0, 0, .6)) drop-shadow(0 0 6px rgba(255, 220, 120, .7)); }
 .fc-inimigo--fase2 .fc-ator__aura, .fc-inimigo--furia .fc-ator__aura { opacity: 1; background: radial-gradient(closest-side, rgba(255, 70, 40, .45), transparent); animation: fc-aura 1s ease-in-out infinite; }
 @keyframes fc-aura { 50% { transform: scale(1.08); opacity: .7; } }
 .fc-anim-atingido { animation: fc-atingido .62s linear; }
@@ -182,6 +188,9 @@
 .fc-info { font: 700 13.5px var(--fc-ui); padding: 3px 10px; border-radius: 8px; background: rgba(0, 0, 0, .5); box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .35); color: #f0e2c0; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .fc-info--furia { box-shadow: inset 0 0 0 1px #ff6a4a; color: #ffc8b0; }
 .fc-info--armadura { box-shadow: inset 0 0 0 1px #9cc6ff; color: #d6e8ff; }
+.fc-info--barreira { box-shadow: inset 0 0 0 1px #7fd8ff, 0 0 10px rgba(127, 216, 255, .35); color: #c8f0ff; }
+.fc-info--regenera { box-shadow: inset 0 0 0 1px #8fe0a0; color: #c8f8d0; }
+.fc-selo--elite { background: linear-gradient(#d8b0ff, #8a4ac8); color: #fff; }
 .fc-intencao { flex: none; display: grid; justify-items: center; gap: 8px; margin: 0 4px 10px auto; }
 .fc-intencao__gema { width: 62px; height: 62px; display: grid; place-items: center; border-radius: 14px; transform: rotate(45deg);
   background: radial-gradient(circle at 40% 30%, #ff9a7a, #b8321c 60%, #4a0e06); border: 2px solid #120a04; box-shadow: 0 0 0 2px var(--fc-ouro), 0 0 22px rgba(255, 80, 50, .55), 0 8px 16px rgba(0, 0, 0, .5); }
@@ -189,6 +198,9 @@
 .fc-intencao__gema b { font: 800 24px/1 var(--fc-ui); color: #fff; text-shadow: 0 2px 0 #000; font-variant-numeric: tabular-nums; }
 .fc-intencao small { font: 700 13px var(--fc-ui); color: #ffd6c6; text-shadow: 0 1px 0 #000, 0 0 6px #000; letter-spacing: .04em; }
 .fc-intencao--furia .fc-intencao__gema { animation: fc-pulsar .8s ease-in-out infinite; }
+/* golpe crítico avisado: a gema vira brasa e pulsa; o número é o dano exato */
+.fc-intencao--critico .fc-intencao__gema { background: radial-gradient(circle at 40% 30%, #fff0a0, #ff6a1a 45%, #8a1004); box-shadow: 0 0 0 2px #fff1b0, 0 0 0 4px #120a04, 0 0 30px rgba(255, 90, 30, .9); animation: fc-pulsar .55s ease-in-out infinite; }
+.fc-intencao--critico small { color: #ffb08a; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
 .fc-intencao--bloqueado .fc-intencao__gema { background: radial-gradient(circle at 40% 30%, #a8d8ff, #2f6fc0 60%, #0f2d5a); box-shadow: 0 0 0 2px var(--fc-ouro), 0 0 22px rgba(90, 160, 255, .6); }
 .fc-modal .fc-intencao--bloqueado .fc-sprite--icone { width: 26px; height: 26px; }
 
@@ -345,6 +357,8 @@
 .fc-encaixe b { position: absolute; right: -5px; bottom: -5px; min-width: 20px; height: 20px; border-radius: 10px; display: grid; place-items: center; font: 800 12px var(--fc-ui); background: #120a04; color: #fff3d6; box-shadow: 0 0 0 1.5px var(--fc-ouro); }
 .fc-encaixe--usavel { animation: fc-chamar 1.4s ease-in-out infinite; cursor: pointer; }
 .fc-reliquia { width: 30px; height: 30px; border-radius: 7px; display: grid; place-items: center; transform: rotate(45deg); background: radial-gradient(circle, color-mix(in srgb, var(--cor) 40%, #1a1020), #120a10); box-shadow: inset 0 0 0 1.5px var(--fc-ouro); }
+.fc-reliquia { position: relative; }
+.fc-reliquia b { position: absolute; right: -8px; bottom: -8px; transform: rotate(-45deg); min-width: 16px; height: 16px; border-radius: 8px; display: grid; place-items: center; font: 800 10px var(--fc-ui); color: #fff3d6; background: #120a04; box-shadow: 0 0 0 1px var(--fc-ouro); }
 .fc-modal .fc-reliquia .fc-sprite--icone { width: 18px; height: 18px; transform: rotate(-45deg); }
 
 /* ---------- Mão (alternativas) ---------- */

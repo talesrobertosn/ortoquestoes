@@ -148,7 +148,7 @@ export class Grade {
   }
 
   /** Converte para cores: rampa por material, pontilhado nas transições e contorno colorido. */
-  pintar(canvas: HTMLCanvasElement, contornoExterno = true) {
+  pintar(canvas: HTMLCanvasElement, contornoExterno = true, troca?: Map<string, string>) {
     canvas.width = this.w; canvas.height = this.h
     const ctx = canvas.getContext('2d')!
     const img = ctx.createImageData(this.w, this.h)
@@ -189,6 +189,7 @@ export class Grade {
     }
     cores.forEach((cor, i) => {
       if (!cor) return
+      if (troca) cor = troca.get(cor) ?? cor
       const n = parseInt(cor.slice(1), 16)
       img.data[i * 4] = n >> 16; img.data[i * 4 + 1] = (n >> 8) & 255; img.data[i * 4 + 2] = n & 255; img.data[i * 4 + 3] = 255
     })
@@ -214,4 +215,9 @@ export const MAT = {
   ferro: { rampa: ['#dfe3ea', '#9ea5b2', '#646b78', '#373c47'], contorno: '#12141a' },
   tabardo: { rampa: ['#e05a44', '#b02c1e', '#741610', '#420a08'], contorno: '#1e0404' },
   aco2: { rampa: ['#e4ecf6', '#98a8c0', '#5b6884', '#323a52'], contorno: '#10131e' },
+  verde: { rampa: ['#b8ffb0', '#5fdc7a', '#2a9a48', '#145a26'], contorno: '#06200c' },
+  roxo: { rampa: ['#e2c8ff', '#a878f0', '#6a40b8', '#3a1e70'], contorno: '#140628' },
+  ciano: { rampa: ['#d8ffff', '#7fe0ff', '#3aa0d0', '#1a5a80'], contorno: '#061e2e' },
+  chama: { rampa: ['#fff6b0', '#ffc24a', '#f0702a', '#a02a10'], contorno: '#3a0a04' },
+  papel: { rampa: ['#fff8e0', '#f0dca8', '#c8a872', '#8a6a3a'], contorno: '#3a2410' },
 } satisfies Record<string, Material>
