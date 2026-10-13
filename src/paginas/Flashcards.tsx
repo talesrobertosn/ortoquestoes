@@ -17,6 +17,7 @@ const Jogo = lazy(() => import('./FlashcardsJogo'))
  *   #/flashcards/ranking    leva ao ranking do site, aba Flashcards
  */
 export function Flashcards({ secao }: { secao?: string }) {
+  if (secao === 'torre') return <Redirecionar destino="/flashcards/entrada" />
   if (['cripta', 'masmorra', 'torre', 'biblioteca', 'estudo', 'entrada'].includes(secao ?? '')) return <Suspense fallback={null}><Jogo secao={secao!} /></Suspense>
   if (secao === 'ranking') return <Redirecionar destino="/ranking?aba=flashcards" />
   if (secao === 'desempenho') return <DesempenhoFlashcards />

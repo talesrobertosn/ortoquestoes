@@ -256,22 +256,26 @@ def recompensa():
 # ------------------------------------------------------------------ 9. Biblioteca
 
 def biblioteca():
-    T = Tema(70, 16)
-    prog = ['F', 'F', 'Dm', 'Dm', 'Bb', 'Bb', 'C', 'C', 'F', 'Am', 'Bb', 'C', 'Dm', 'Bb', 'Gm', 'C']
+    """Página ao Sol: melodia original, acústica e leve, para estudo sem combate."""
+    T = Tema(88, 24)
+    prog = ['G', 'C', 'G', 'D', 'Em', 'C', 'Am', 'D'] * 3
     for i, a in enumerate(prog):
         r, ter, qui = acorde(a, 3)
-        T.mix.add(piano(r - 12, 3.2, 0.45), T.s(i * 4), -0.1, 0.8)
-        for k, n in enumerate((qui - 12, r, ter, qui, r + 12, qui)):
-            T.mix.add(piano(n, 1.8, 0.28), T.s(i * 4 + 0.5 + k * 0.5), -0.1, 0.7)
-        if i % 2 == 0:
-            for n in (r, ter, qui):
-                T.mix.add(cordas(n + 12, T.s(8) * 0.97, vel=0.18, brilho=1600, ataque=1.0), T.s(i * 4), 0.35, 0.7)
-    tema = ('A5:1.5 G5:.5 F5:1 C5:1 | D5:2 C5:2 | D5:1.5 E5:.5 F5:1 A5:1 | G5:3 r:1 | '
-            'F5:1.5 E5:.5 D5:1 F5:1 | E5:1 D5:1 C5:2 | D5:1 E5:1 F5:1 A5:1 | G5:4')
-    T.melodia(piano, tema, 0, 0.1, 0.55, vel=0.5)
-    T.melodia(flauta, tema, 32, 0.1, 0.7, vel=0.5)
-    for i in (2, 6, 10, 14):
-        T.mix.add(sino(m('C6') if i % 4 == 2 else m('F6'), 3, 0.25), T.s(i * 4 + 3), 0.5, 0.5)
+        T.mix.add(piano(r - 12, T.s(2.8), 0.28), T.s(i * 4), -0.25, 0.55)
+        for k, n in enumerate((r, qui, ter + 12, qui, r + 12, ter + 12)):
+            T.mix.add(harpa(n, T.s(1.4), 0.30), T.s(i * 4 + k * 0.5), 0.3, 0.55)
+        if i >= 8:
+            for n in (r,ter,qui):
+                T.mix.add(cordas(n+12,T.s(3.9),vel=0.12,brilho=1200,ataque=0.8),T.s(i*4),-0.4,0.35)
+    melodia = ('B4:1 D5:.5 E5:.5 D5:1 G4:1 | E5:1.5 D5:.5 C5:1 G4:1 | '
+               'B4:.5 A4:.5 G4:1 D5:1 B4:1 | A4:1 F#4:1 G4:1 r:1 | '
+               'G4:1 B4:.5 D5:.5 E5:1 B4:1 | G4:1 E5:1 D5:.5 C5:.5 G4:1 | '
+               'A4:1 C5:1 B4:.5 A4:.5 G4:1 | F#4:1 A4:1 G4:1 r:1')
+    T.melodia(flauta,melodia,0,-0.1,0.50,vel=0.4)
+    T.melodia(piano,melodia,32,0.1,0.45,vel=0.35)
+    T.melodia(flauta,melodia,64,-0.15,0.55,vel=0.42)
+    for i in (1,5,9,13,17,21):
+        T.mix.add(sino(m('G5'),T.s(1),0.1),T.s(i*4+3),0.5,0.25)
     return T, True
 
 

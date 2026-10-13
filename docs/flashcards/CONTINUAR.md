@@ -1,5 +1,7 @@
 # Como continuar a Cripta (para qualquer agente: Claude Code, Codex ou outro)
 
+**Orientação mais recente:** [Jornada única](JORNADA-UNICA.md), 13/10/2026: ranking sem níveis, progressão por turma e histórico pessoal, entrada com Cripta/Biblioteca e cronograma dentro de Flashcards. As seções antigas abaixo são histórico quando conflitarem.
+
 Atualizado em 13/10/2026, 21h. Tudo o que foi feito está mesclado na base e publicado; não há PR aberto.
 
 ## Mensagem para colar no agente

@@ -75,3 +75,8 @@ post em rede social. **Nome (regra do Tales, 13/10/2026):** fora do jogo é semp
 Para continuar o jogo, leia primeiro [docs/flashcards/CONTINUAR.md](docs/flashcards/CONTINUAR.md):
 estado atual, próximos passos, restrições, como testar (Playwright em três tamanhos) e como publicar.
 O último resumo do trabalho está em [docs/flashcards/RESUMO-CHATGPT.md](docs/flashcards/RESUMO-CHATGPT.md).
+
+Diretriz de 13/10/2026: em mudanças visuais, enviar ocasionalmente capturas reais da interface
+(computador e/ou celular) durante o trabalho, identificando prévia ou versão publicada.
+Flashcards: a orientação mais recente de ranking único, progressão por acerto real da turma e
+histórico pessoal, entrada sem Torre e cronograma próprio está em [docs/flashcards/JORNADA-UNICA.md](docs/flashcards/JORNADA-UNICA.md).

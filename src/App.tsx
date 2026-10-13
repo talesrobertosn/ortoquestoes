@@ -1,4 +1,3 @@
-import { AtalhoFlashcards } from './componentes/AtalhoFlashcards'
 import { lazy, Suspense, useEffect, type ReactNode } from 'react'
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
@@ -184,7 +183,7 @@ export function App() {
       break
     case 'cronograma':
     case 'plano-de-estudo':
-      pagina = <div className="empilha-2"><PlanoEstudo /><AtalhoFlashcards tipo="cronograma" /></div>
+      pagina = <div className="empilha-2"><PlanoEstudo /></div>
       break
     case 'temas-que-mais-caem':
       pagina = <TemasQueMaisCaem />
