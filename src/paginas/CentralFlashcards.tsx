@@ -66,7 +66,11 @@ export function CentralFlashcards() {
   const registros = useMemo(() => ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}), [])
   const rec = useMemo(() => ({ ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }), [])
   const plano = useMemo(() => ler<PlanoFlashcards | null>(CHAVE_PLANO, null), [])
-  const [opiniao, definirOpiniao] = useState<OrigemOpiniao | null>(null)
+  // #/flashcards?opiniao=fim_sessao (fim da sessão de estudo ou da partida) já abre a janela
+  const [opiniao, definirOpiniao] = useState<OrigemOpiniao | null>(() => {
+    const o = new URLSearchParams(window.location.hash.split('?')[1] ?? '').get('opiniao')
+    return o === 'fim_sessao' || o === 'fim_partida' ? o : null
+  })
   const [convite, definirConvite] = useState(() => deveConvidar())
 
   const contagem = useMemo(() => {

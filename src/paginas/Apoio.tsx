@@ -1,3 +1,4 @@
+import { AtalhoFlashcards } from '../componentes/AtalhoFlashcards'
 import { MapaPerdido } from '../componentes/CenasPixel'
 import { usarConta } from '../conta/ContextoConta'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -402,6 +403,8 @@ export function DadosLocais() {
           <div><dt>Favoritas</dt><dd><a href={href('/favoritas')}>{exemplo ? 23 : favoritos.length}</a></dd></div>
         </dl>
       </section>
+
+      {!exemplo && <AtalhoFlashcards tipo="desempenho" />}
 
       <section className="dp-periodo" aria-label="Período do desempenho">
         <div className="dp-periodo__texto">

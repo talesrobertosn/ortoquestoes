@@ -1,14 +1,10 @@
-import '@fontsource/cinzel/latin-700.css'
-import '@fontsource/cinzel/latin-900.css'
-import '@fontsource/alegreya/latin-400.css'
-import '@fontsource/alegreya/latin-700.css'
-import '@fontsource/alegreya/latin-800.css'
-import '../estilos/paginas/Flashcards.css'
-import { Arena } from '../flashcards/componentes/Arena'
-import { Entrada } from '../flashcards/componentes/Entrada'
+import { lazy, Suspense, useEffect } from 'react'
 import { CentralFlashcards, CronogramaFlashcards, DesempenhoFlashcards } from './CentralFlashcards'
-import { useEffect } from 'react'
 import { navegar } from '../util/rotas'
+
+// O jogo (fontes, folhas de estilo e motor) só carrega quando a pessoa entra nele;
+// a central e as páginas de desempenho e cronograma abrem leves.
+const Jogo = lazy(() => import('./FlashcardsJogo'))
 
 /**
  * Flashcards (beta público, 13/10/2026):
@@ -21,11 +17,8 @@ import { navegar } from '../util/rotas'
  *   #/flashcards/ranking    leva ao ranking do site, aba Cripta
  */
 export function Flashcards({ secao }: { secao?: string }) {
-  if (secao === 'cripta' || secao === 'masmorra') return <Arena key="cripta" modo="masmorra" />
-  if (secao === 'torre') return <Arena key="torre" modo="torre" />
-  if (secao === 'biblioteca' || secao === 'estudo') return <Arena key="biblioteca" modo="masmorra" abrirEstudo />
+  if (['cripta', 'masmorra', 'torre', 'biblioteca', 'estudo', 'entrada'].includes(secao ?? '')) return <Suspense fallback={null}><Jogo secao={secao!} /></Suspense>
   if (secao === 'ranking') return <Redirecionar destino="/ranking?aba=cripta" />
-  if (secao === 'entrada') return <Entrada />
   if (secao === 'desempenho') return <DesempenhoFlashcards />
   if (secao === 'cronograma') return <CronogramaFlashcards />
   return <CentralFlashcards />

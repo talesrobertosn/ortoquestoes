@@ -6,7 +6,8 @@ import { indiceDoAcervo, todasAsCartas } from '../dados/acervo'
 import { tocar } from '../efeitos/sons'
 import { CHAVE_REGISTROS, type RegistroFlashcard } from '../progresso'
 import type { Flashcard } from '../tipos'
-import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, type LimiteFlashcard } from '../servidor'
+import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, sincronizarProgresso, type LimiteFlashcard } from '../servidor'
+import { contarSessaoTerminada } from '../opiniao'
 import { href } from '../../util/rotas'
 import { Cartao, familiasDe } from './Cartao'
 import { Sprite } from './Sprite'
@@ -246,6 +247,8 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
   }, [avaliar, virada, virar, responder, mostrarAlternativas, ordem])
 
   const total = feitos.errei + feitos.hesitei + feitos.sabia
+  // fim de sessão: conta para o convite de opinião do beta e manda o progresso para a conta
+  useEffect(() => { if (acabou && total) { contarSessaoTerminada(); void sincronizarProgresso() } }, [acabou, total])
   if (acabou) {
     return (
       <div className="fc-estudo fc-estudo--fim">
@@ -258,7 +261,10 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
             <div className="errei"><dt>Errei</dt><dd>{feitos.errei}</dd></div>
           </dl>
           <p className="fc-janela__nota">Os que você errou voltam hoje; os que hesitou, em 3 dias; os que sabia, em 10.</p>
-          <div className="fc-janela__botoes"><button type="button" className="fc-botao" onClick={aoTerminar} autoFocus>Voltar à biblioteca</button></div>
+          <div className="fc-janela__botoes">
+            <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_sessao')}>Enviar opinião</a>
+            <button type="button" className="fc-botao" onClick={aoTerminar} autoFocus>Voltar à biblioteca</button>
+          </div>
         </div>
       </div>
     )

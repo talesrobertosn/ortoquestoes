@@ -9,7 +9,7 @@
  */
 import { gravar, ler } from '../estado/armazenamento'
 import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
-import { chamarRpc } from '../servicos/supabase'
+import { chamarRpc, chamarRpcPublica } from '../servicos/supabase'
 import { CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, type Recordes, type RegistroFlashcard } from './progresso'
 
 /**
@@ -95,7 +95,10 @@ export interface LinhaRankingCripta { posicao: number; apelido: string; andar: n
 export async function lerRankingCripta(modo: 'masmorra' | 'torre', nivel: 'normal' | 'dificil'): Promise<LinhaRankingCripta[] | null> {
   if (!RANKING_NO_SERVIDOR) return null
   try {
-    const linhas = await chamarRpc<Array<{ posicao: number; apelido: string; andar: number; alcancado_em: string; eh_voce: boolean }>>('ranking_cripta', { p_modo: modo, p_nivel: nivel })
+    type Linha = { posicao: number; apelido: string; andar: number; alcancado_em: string; eh_voce: boolean }
+    const corpo = { p_modo: modo, p_nivel: nivel }
+    // com conta marca "você"; sem conta (ou sessão vencida) lê a lista pública
+    const linhas = await chamarRpc<Linha[]>('ranking_cripta', corpo).catch(() => chamarRpcPublica<Linha[]>('ranking_cripta', corpo))
     return linhas.map((l) => ({ posicao: Number(l.posicao), apelido: l.apelido, andar: Number(l.andar), alcancadoEm: String(l.alcancado_em), ehVoce: Boolean(l.eh_voce) }))
   } catch { return null }
 }

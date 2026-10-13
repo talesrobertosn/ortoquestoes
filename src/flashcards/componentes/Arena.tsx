@@ -15,6 +15,7 @@ import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
 import { registrarEstudo } from '../aprendizagem'
+import { contarSessaoTerminada } from '../opiniao'
 import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
@@ -766,6 +767,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         torreConcluida: (rec.torreConcluida ?? 0) + Number(r.estado.torreConcluida), atualizadoEm: Date.now(),
       })
       void sincronizarProgresso()
+      contarSessaoTerminada()
     }
     if (r.estado.idCorrida && r.estado.andar > partidaRef.current.andar) void registrarAndar(r.estado.idCorrida, r.estado.andar)
     partidaRef.current = r.estado
@@ -1387,6 +1389,7 @@ function Fim({ partida, aoNova, aoRevisar, aoSair, aoPatamar }: { partida: Parti
         )}
         <div className="fc-janela__botoes">
           {derrubaram.length > 0 && <button type="button" className="fc-botao fc-botao--secundario" onClick={aoRevisar}>Revisar no Estudo</button>}
+          <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_partida')}>Enviar opinião</a>
           <button type="button" className="fc-botao fc-botao--secundario" onClick={aoSair}>Sair</button>
           {patamar ? (
             <>

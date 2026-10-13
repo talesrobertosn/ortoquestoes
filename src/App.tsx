@@ -1,3 +1,4 @@
+import { AtalhoFlashcards } from './componentes/AtalhoFlashcards'
 import { lazy, Suspense, useEffect, type ReactNode } from 'react'
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
@@ -29,6 +30,7 @@ const CadernoErros = lazy(() => import('./paginas/CadernoErros').then(({ Caderno
 const Progresso = lazy(() => import('./paginas/Progresso').then(({ Progresso }) => ({ default: Progresso })))
 const Revisao = lazy(() => import('./paginas/Revisao').then(({ Revisao }) => ({ default: Revisao })))
 const Ranking = lazy(() => import('./paginas/Ranking').then(({ Ranking }) => ({ default: Ranking })))
+const RankingCripta = lazy(() => import('./paginas/RankingCripta').then(({ RankingCripta }) => ({ default: RankingCripta })))
 const Conquistas = lazy(() => import('./paginas/Ranking').then(({ Conquistas }) => ({ default: Conquistas })))
 const Termos = lazy(() => import('./paginas/Termos').then(({ Termos }) => ({ default: Termos })))
 const CondicoesAssinatura = lazy(() => import('./paginas/CondicoesAssinatura').then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
@@ -153,7 +155,7 @@ export function App() {
       pagina = <Revisao />
       break
     case 'ranking':
-      pagina = <Ranking />
+      pagina = rota.consulta.get('aba') === 'cripta' ? <RankingCripta /> : <Ranking />
       break
     case 'conquistas':
       pagina = <Conquistas escolher={rota.consulta?.get('escolher') === '1'} />
@@ -182,7 +184,7 @@ export function App() {
       break
     case 'cronograma':
     case 'plano-de-estudo':
-      pagina = <PlanoEstudo />
+      pagina = <div className="empilha-2"><PlanoEstudo /><AtalhoFlashcards tipo="cronograma" /></div>
       break
     case 'temas-que-mais-caem':
       pagina = <TemasQueMaisCaem />

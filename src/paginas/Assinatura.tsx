@@ -233,7 +233,7 @@ export function Assinatura() {
       </section>
 
       {/* Cripta do Residente (pronta; aparece com VITE_FLASHCARDS_VENDA=1, docs/flashcards/VENDAS.md). */}
-      {FLASHCARDS_NA_VENDA && <Suspense fallback={null}><CartaoCriptaVenda variante="venda" /></Suspense>}
+      {FLASHCARDS_NA_VENDA && <Suspense fallback={null}><CartaoCriptaVenda variante="venda" limites={limitesHabilitados} /></Suspense>}
 
       {/* 3. O cronograma na prática. */}
       <PreviaCronograma conta={Boolean(sessao)} assinante={comAcessoPago} />
@@ -256,6 +256,7 @@ export function Assinatura() {
             [`${ROTULO_SIMULADOS}, por engenharia reversa das provas`, true, true],
             ['Revisão espaçada, caderno de erros, desempenho e ranking', true, true],
             ['Questões por dia', limitesHabilitados ? `${LIMITE_GRATIS_ATUAL} a cada 24 horas` : 'Sem limite nesta fase', 'Sem limite'],
+            ...(FLASHCARDS_NA_VENDA ? [['Flashcards por dia (beta)', limitesHabilitados ? '10 a cada 24 horas' : 'Sem limite nesta fase', 'Sem limite'] as const] : []),
             ['Cronograma até a prova, com diagnóstico, alertas e reta final', false, true],
             ['Resumão: o que cai, em uma frase por assunto', false, true],
             ['Temas que mais caem, área por área', false, true],
