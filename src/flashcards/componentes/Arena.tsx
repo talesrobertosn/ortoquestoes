@@ -14,11 +14,12 @@ import { configurarSom, destravar, instalarDestrave, tocar, tocarAmbiente, tocar
 import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
+import { registrarEstudo } from '../aprendizagem'
 import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
   BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_NIVEL, CHAVE_RECORDES, CHAVE_REGISTROS,
-  lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Bestiario, type Recordes, type RegistroFlashcard,
+  RECORDES_VAZIOS, type Bestiario, type Recordes, type RegistroFlashcard,
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
 import { Cartao, familiasDe } from './Cartao'
@@ -753,12 +754,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     if (!r.eventos.length && r.estado === partidaRef.current) return
     const resposta = r.eventos.find((e): e is Extract<Evento, { tipo: 'resposta' }> => e.tipo === 'resposta')
     if (resposta) {
-      const registros = ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})
-      registros[resposta.id] = registrarResposta(registros[resposta.id], resposta.certo, resposta.assistida)
-      gravar(CHAVE_REGISTROS, registros)
-      gravar(CHAVE_HISTORICO, lembrarVisto(ler<string[]>(CHAVE_HISTORICO, []), resposta.id))
+      // resposta objetiva na Cripta: atualiza a revisão sem presumir confiança (registrarEstudo, aprendizagem.ts)
+      registrarEstudo({ chave: `cripta:${r.estado.sementeBase}:${r.estado.modo}:${r.estado.rodada}:${resposta.id}`, id: resposta.id, modo: 'cripta', objetiva: resposta.certo, assistida: resposta.assistida })
       const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
-      gravar(CHAVE_RECORDES, { ...rec, ...recordeDoAndar(rec, r.estado), respostas: rec.respostas + 1, melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
+      gravar(CHAVE_RECORDES, { ...rec, ...recordeDoAndar(rec, r.estado), melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
     }
     if (r.estado.fase === 'fim' && partidaRef.current.fase !== 'fim') {
       const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
