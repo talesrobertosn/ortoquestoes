@@ -5,6 +5,8 @@ import { indiceDoAcervo, todasAsCartas } from '../dados/acervo'
 import { tocar } from '../efeitos/sons'
 import { CHAVE_HISTORICO, CHAVE_RECORDES, CHAVE_REGISTROS, lembrarVisto, RECORDES_VAZIOS, type Recordes, type RegistroFlashcard } from '../progresso'
 import type { Flashcard } from '../tipos'
+import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, type LimiteFlashcard } from '../servidor'
+import { href } from '../../util/rotas'
 import { Cartao } from './Cartao'
 import { Sprite } from './Sprite'
 
@@ -155,7 +157,16 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
   const acabou = pos >= fila.length
   const carta = porId.get(fila[Math.min(pos, fila.length - 1)])!
 
-  const virar = useCallback(() => { if (!virada && !acabou) definirVirada(true) }, [virada, acabou])
+  const [bloqueio, definirBloqueio] = useState<LimiteFlashcard | null>(null)
+  // Ver o verso conta como um flashcard estudado: no plano grátis, o servidor decide (trava desligada por padrão).
+  const virar = useCallback(async () => {
+    if (virada || acabou) return
+    if (FLASHCARDS_NO_SERVIDOR) {
+      const r = await autorizarFlashcard(carta.id)
+      if (!r.permitido) { definirBloqueio(r); return }
+    }
+    definirVirada(true)
+  }, [virada, acabou, carta])
 
   const avaliar = useCallback((a: Avaliacao) => {
     if (!virada || acabou) return
@@ -216,6 +227,18 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
           <div className="errei"><dt>Errei</dt><dd>{feitos.errei}</dd></div>
         </dl>
       </aside>
+      {bloqueio && (
+        <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-limite-estudo">
+          <div className="fc-janela">
+            <h2 id="fc-limite-estudo">{bloqueio.falha ? 'Não deu para validar' : 'Limite grátis de hoje'}</h2>
+            <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.' : 'Você usou os 10 flashcards grátis destas 24 horas. Assinantes estudam sem limite.'}</p>
+            <div className="fc-janela__botoes">
+              <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirBloqueio(null)}>Fechar</button>
+              {!bloqueio.falha && <a className="fc-botao" href={href('/assinatura')}>Ver os planos</a>}
+            </div>
+          </div>
+        </div>
+      )}
       <div className="fc-estudo__mesa">
         <Cartao
           chave={pos}

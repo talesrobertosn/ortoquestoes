@@ -3,6 +3,7 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
 import { carregarAcervo } from '../dados/acervo'
+import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, sincronizarProgresso, type LimiteFlashcard } from '../servidor'
 import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro } from '../efeitos/palco'
@@ -107,7 +108,7 @@ export function Arena() {
   const [pronto, definirPronto] = useState(false)
   useEffect(() => {
     let vivo = true
-    void carregarAcervo().then((cartas) => { if (!vivo) return; prepararMotor(cartas); definirPronto(true) })
+    void Promise.all([carregarAcervo(), sincronizarProgresso()]).then(([cartas]) => { if (!vivo) return; prepararMotor(cartas); definirPronto(true) })
     return () => { vivo = false }
   }, [])
   if (!pronto) {
@@ -156,6 +157,9 @@ function ArenaJogo() {
   const [ampliada, definirAmpliada] = useState<{ src: string; legenda: string } | null>(null)
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
   const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
+  const [bloqueio, definirBloqueio] = useState<LimiteFlashcard | null>(null)
+  const validando = useRef(false)
+  const chaves = useRef(new Map<number, string>())
   const [confirmarSaida, definirConfirmarSaida] = useState(false)
   const [transicao, definirTransicao] = useState(false)
   const [vermelho, definirVermelho] = useState(0)
@@ -535,6 +539,7 @@ function ArenaJogo() {
     if (r.estado.fase === 'fim' && partidaRef.current.fase !== 'fim') {
       const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
       gravar(CHAVE_RECORDES, { ...rec, andarMaximo: Math.max(rec.andarMaximo, r.estado.andar), chefesDerrotados: rec.chefesDerrotados + r.estado.chefesDerrotados, melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
+      void sincronizarProgresso()
     }
     partidaRef.current = r.estado
     definirPartida(r.estado)
@@ -542,9 +547,19 @@ function ArenaJogo() {
     else sincronizar(r.estado)
   }, [encenar, sincronizar])
 
-  const responder = useCallback((posicao: number) => {
+  const responder = useCallback(async (posicao: number) => {
     const p = partidaRef.current
-    if (p.fase !== 'pergunta' || apresentacao) return
+    if (p.fase !== 'pergunta' || apresentacao || validando.current) return
+    // Plano grátis: o servidor decide se este flashcard ainda cabe nas 24 h (trava desligada por padrão).
+    if (FLASHCARDS_NO_SERVIDOR && p.atual) {
+      validando.current = true
+      const chave = chaves.current.get(p.rodada) ?? crypto.randomUUID()
+      chaves.current.set(p.rodada, chave)
+      const r = await autorizarFlashcard(p.atual.id, chave)
+      validando.current = false
+      if (!r.permitido) { definirBloqueio(r); return }
+      if (partidaRef.current !== p) return
+    }
     definirMostrado((m) => ({ ...m, marcadas: { escolha: posicao, certa: -1 } }))
     mostradoRef.current = { ...mostradoRef.current, marcadas: { escolha: posicao, certa: -1 } }
     aplicar(motor.responder(p, posicao))
@@ -866,6 +881,19 @@ function ArenaJogo() {
         {mostrarFim && modo === 'batalha' && <Fim partida={partida} aoNova={novaPartida} aoRevisar={revisarNoEstudo} aoSair={fechar} />}
 
         {ampliada && <Visualizador src={ampliada.src} legenda={ampliada.legenda} aoFechar={() => definirAmpliada(null)} />}
+
+        {bloqueio && (
+          <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-limite-titulo">
+            <div className="fc-janela">
+              <h2 id="fc-limite-titulo">{bloqueio.falha ? 'Não deu para validar' : 'Limite grátis de hoje'}</h2>
+              <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.' : `Você usou os 10 flashcards grátis destas 24 horas${bloqueio.liberaEm ? `; libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`}</p>
+              <div className="fc-janela__botoes">
+                <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirBloqueio(null)}>{bloqueio.falha ? 'Tentar de novo' : 'Agora não'}</button>
+                {!bloqueio.falha && <a className="fc-botao" href={href('/assinatura')}>Ver os planos</a>}
+              </div>
+            </div>
+          </div>
+        )}
 
         {painel && <Painel tipo={painel} partida={partida} intencao={intencao} aoFechar={() => definirPainel(null)} />}
 
