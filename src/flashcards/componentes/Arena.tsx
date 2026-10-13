@@ -15,6 +15,7 @@ import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
 import { registrarEstudo } from '../aprendizagem'
+import { sairDoJogo } from '../fundo'
 import { contarSessaoTerminada } from '../opiniao'
 import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
@@ -168,7 +169,7 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
   }, [])
   if (!pronto) {
     return (
-      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={() => navegar('/flashcards/entrada')}>
+      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={sairDoJogo}>
         <div className="fc-arena fc-carregando" role="status">
           <Cenario cena="campo" reduzido />
           <div className="fc-carregando__caixa">
@@ -856,7 +857,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     definirModo('estudo')
   }, [])
 
-  const fechar = useCallback(() => { tocar('fechar'); navegar('/flashcards/entrada') }, [])
+  const fechar = useCallback(() => { tocar('fechar'); sairDoJogo() }, [])
   const pedirFechar = useCallback(() => {
     const p = partidaRef.current
     if (p.fase === 'fim' || (p.rodada === 0 && modo === 'batalha')) fechar()
@@ -962,6 +963,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             )}
           </div>
           <div className="fc-topo__acoes">
+            <button type="button" className="fc-topo-botao" onClick={() => { tocar('selecao'); navegar('/flashcards/entrada') }} aria-label="Menu do Torneio (a partida fica salva)" title="Menu do Torneio">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" /></svg>
+              <span className="fc-topo-botao__texto">Menu</span>
+            </button>
             <button type="button" className="fc-topo-botao" onClick={() => { destravar(); definirAjustes({ som: !ajustes.som }) }} aria-pressed={ajustes.som} aria-label={ajustes.som ? 'Desligar o som' : 'Ligar o som'} title={ajustes.som ? 'Som ligado' : 'Som desligado'}>
               {ajustes.som ? (
                 <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" /><path d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" /></svg>
@@ -1181,10 +1186,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         {confirmarSaida && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-sair-titulo">
             <div className="fc-janela">
-              <h2 id="fc-sair-titulo">Sair do Torneio?</h2>
+              <h2 id="fc-sair-titulo">Voltar ao site?</h2>
               <p className="fc-janela__sub">Sua partida fica salva neste aparelho e continua de onde parou quando você voltar.</p>
               <div className="fc-janela__botoes">
-                <button type="button" className="fc-botao fc-botao--secundario" onClick={fechar}>Sair</button>
+                <button type="button" className="fc-botao fc-botao--secundario" onClick={fechar}>Voltar ao site</button>
                 <button type="button" className="fc-botao" onClick={() => definirConfirmarSaida(false)} autoFocus>Continuar jogando</button>
               </div>
             </div>
@@ -1390,7 +1395,8 @@ function Fim({ partida, aoNova, aoRevisar, aoSair, aoPatamar }: { partida: Parti
         <div className="fc-janela__botoes">
           {derrubaram.length > 0 && <button type="button" className="fc-botao fc-botao--secundario" onClick={aoRevisar}>Revisar no Estudo</button>}
           <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_partida')}>Enviar opinião</a>
-          <button type="button" className="fc-botao fc-botao--secundario" onClick={aoSair}>Sair</button>
+          <button type="button" className="fc-botao fc-botao--secundario" onClick={() => navegar('/flashcards/entrada')}>Menu</button>
+          <button type="button" className="fc-botao fc-botao--secundario" onClick={aoSair}>Voltar ao site</button>
           {patamar ? (
             <>
               <button type="button" className="fc-botao fc-botao--secundario" onClick={aoNova}>Recomeçar do térreo</button>

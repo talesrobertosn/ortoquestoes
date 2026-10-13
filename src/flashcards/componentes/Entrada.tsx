@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { FLASHCARDS_RANKING } from '../../config'
 import { href, navegar } from '../../util/rotas'
+import { sairDoJogo } from '../fundo'
 import { configurarSom, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
@@ -66,7 +67,7 @@ export function Entrada() {
   }
 
   return (
-    <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); navegar('/flashcards') }}>
+    <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); sairDoJogo() }}>
       <div className="fc-arena fc-entrada">
         <Cenario cena="covil" reduzido={false} clima="noite" />
         <div className="fc-entrada__miolo">

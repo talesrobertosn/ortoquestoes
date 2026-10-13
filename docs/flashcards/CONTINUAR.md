@@ -76,6 +76,9 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
   temática do jogo foi para `#/flashcards/entrada`; `cripta`, `torre` e `biblioteca` continuam iguais.
   `#/flashcards/desempenho` e `#/flashcards/cronograma` são páginas do site. `#/flashcards/ranking`
   leva a `#/ranking?aba=cripta`. Só as rotas do jogo exigem conta (`PAGINAS_DO_SITE_FLASHCARDS` em `App.tsx`).
+- **Pop-up (pedido do Tales).** As rotas do jogo abrem por cima da última página do site
+  (`src/flashcards/fundo.ts` + `paginaDaRota` em `App.tsx`). No computador o site fica translúcido
+  atrás; X, Esc, clique fora e "Voltar ao site" voltam para ela; o botão "Menu" leva à entrada.
 - **Nome (regra do Tales).** Fora do jogo é sempre "Flashcards" ou "Torneio de Flashcards" (menu,
   capa, central, ranking, planos, títulos de aba). "Cripta" só dentro do jogo. O ranking do site é
   `#/ranking?aba=flashcards` (`aba=cripta` continua funcionando por link antigo).

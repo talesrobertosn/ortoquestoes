@@ -1258,8 +1258,11 @@
 .fc-intencao__gema, .fc-vida--baixa .fc-vida__trilho i, .fc-gema::after, .fc-encaixe--usavel::after, .fc-carta--epica .fc-carta__gema::after, .fc-carta--lendaria .fc-carta__gema::after, .fc-principal.pronto::after, .fc-principal.seguir::after { will-change: auto !important; }
 .fc-cena__nevoa { display: none; }
 .fc-arena--perigo .fc-cena__nevoa { display: block; }
-/* com o jogo aberto, o site por trás não precisa ser desenhado */
-body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-modal-aberto header.cabecalho, body.fc-modal-aberto footer { visibility: hidden; }
+/* no celular o jogo cobre a tela: o site por trás não precisa ser desenhado; no computador ele fica visível, translúcido */
+@media (max-width: 899px), (max-height: 559px) {
+  body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-modal-aberto header.cabecalho, body.fc-modal-aberto footer { visibility: hidden; }
+}
+body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 @media (max-width: 640px) { .fc-modal-veu { background: transparent !important; } .fc-modal { background-color: #07050a; } }
 .fc-cena span.fc-cena__nevoa { display: none; }
 .fc-arena--perigo .fc-cena span.fc-cena__nevoa { display: block; }
@@ -1848,4 +1851,10 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
    translate/scale separados para somar com as animações de transform do corpo. */
 @media (max-width: 520px) and (orientation: portrait) {
   .fc-arena--celular .fc-ator--dragao .fc-ator__corpo { translate: 40px 0; scale: .8; }
+}
+
+/* Computador: o pop-up do jogo deixa o site translúcido atrás (pedido do Tales, 13/10/2026). */
+@media (min-width: 900px) and (min-height: 560px) {
+  .fc-modal-veu { background: radial-gradient(ellipse at 50% 45%, rgba(14, 10, 18, .34), rgba(4, 3, 6, .58)); backdrop-filter: blur(2.5px) saturate(.9); -webkit-backdrop-filter: blur(2.5px) saturate(.9); cursor: pointer; }
+  .fc-modal { width: min(80vw, 1440px); height: min(84dvh, 960px); cursor: auto; }
 }
