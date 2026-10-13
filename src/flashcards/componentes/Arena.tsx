@@ -1,3 +1,4 @@
+import { atacar, estiloDe, type Impacto } from '../efeitos/ataques'
 import { TABULEIRO } from '../efeitos/tabuleiros'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
@@ -446,6 +447,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           animar(arte(refInimigo), 'fc-anim-ataca', 440)
           posar(refInimigo, 'golpe', 620)
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
+          let impacto: Impacto = { cor: '#ff5a3c', cor2: '#ffb090', material: [], garras: true }
           if (ev.carregado) {
             // o Sopro do dragão: a tela escurece e o fogo-fátuo atravessa a arena
             definirFaixa({ texto: ev.carregado, sub: 'Golpe carregado', tom: 'vermelho' })
@@ -456,16 +458,16 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             definirFaixa(null)
           } else {
             tocar('golpe-inimigo', 1, quemInimigo)
-            for (let k = 1; k < ev.rajada; k++) { void P?.projetil(de, para, { cor: '#ff7a3c', nucleo: '#ffd0c0', tam: 10, duracao: 0.26, curva: -0.4 + k * 0.3, rastro: 2 }); if (!(await esperar(110, g))) return }
-            if (P) await P.projetil(de, para, { cor: '#ff5a3c', nucleo: '#ffd0c0', tam: 15, duracao: 0.34, curva: -0.25, rastro: 4 })
+            // cada arquétipo ataca do seu jeito (efeitos/ataques.ts)
+            if (P) impacto = await atacar(P, estiloDe(adv.sprite, adv.variante), de, para, ev.rajada)
           }
           if (g !== geracao.current) return
           animar(arte(refHeroi), 'fc-anim-atingido', 640)
           posar(refHeroi, 'dano', 560)
-          P?.garras(para)
-          P?.clarao(para, '#ff3a20', 240, 0.8)
-          P?.explosao(para, { cor: '#ff5a3c', cor2: '#ffb090', n: 26, forca: 300 })
-          P?.fragmentos(para, ['#9fb0c8', '#f4f8ff', '#3f78c8'], 10, 260)
+          if (impacto.garras) P?.garras(para)
+          P?.clarao(para, impacto.cor, 240, 0.8)
+          P?.explosao(para, { cor: impacto.cor, cor2: impacto.cor2, n: 22, forca: 300 })
+          P?.fragmentos(para, ['#9fb0c8', '#f4f8ff', '#3f78c8'], 8, 260)
           tocar(ev.critico ? 'critico' : 'dano', 1, quemInimigo)
           if (ev.veneno) tocar('veneno')
           tremer(ev.critico || ev.valor >= 25 ? 1 : 0.6)
