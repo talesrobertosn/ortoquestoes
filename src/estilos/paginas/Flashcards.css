@@ -805,17 +805,6 @@
 .fc-carregando__baralho i:nth-child(3) { animation-delay: .36s; }
 @keyframes fc-embaralhar { 0%, 100% { transform: none; } 30% { transform: translateX(-26px) rotate(-12deg); } 60% { transform: translateX(26px) rotate(12deg); } }
 
-/* Celular deitado: o Torneio é desenhado para a tela em pé */
-.fc-girar { display: none; }
-@media (pointer: coarse) and (orientation: landscape) and (max-height: 500px) {
-  .fc-girar { position: absolute; inset: 0; z-index: 80; display: grid; place-content: center; justify-items: center; gap: 10px; text-align: center; padding: 24px;
-    background: radial-gradient(ellipse at 50% 40%, rgba(60, 40, 20, .92), rgba(8, 6, 10, .97)); color: #fff3d6; }
-  .fc-girar strong { font: 900 24px var(--fc-titulo); letter-spacing: .06em; color: var(--fc-ouro); }
-  .fc-girar small { font: 500 15px var(--fc-ui); color: #e9dcc0; }
-  .fc-fechar { z-index: 90; }
-  .fc-girar__celular { width: 44px; height: 76px; border-radius: 9px; border: 3px solid var(--fc-ouro); box-shadow: 0 0 20px rgba(233, 185, 85, .5); animation: fc-girar 2s ease-in-out infinite; }
-}
-@keyframes fc-girar { 0%, 20% { transform: rotate(90deg); } 60%, 100% { transform: rotate(0); } }
 
 /* ============================================================ Menos movimento */
 .fc-arena--reduzida *, .fc-arena--reduzida *::before, .fc-arena--reduzida *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
@@ -1677,3 +1666,101 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   .fc-estudo__painel .fc-interruptor { margin-left: auto; }
   .fc-mao--estudo { gap: 8px; }
 }
+
+/* ============================================================
+   Celular deitado (13/10/2026): antes havia só um aviso "Gire o celular".
+   Agora a tela baixa e larga tem layout próprio em três colunas:
+     esquerda  adversário em cima, você embaixo
+     centro    a mesa com o flashcard (ocupa a altura toda)
+     direita   as alternativas em coluna e o botão Atacar
+   No Estudo, o painel fica à esquerda e as alternativas ou os botões de
+   avaliação à direita. Interface mais leve: topo fino, sem títulos.
+   ============================================================ */
+@media (orientation: landscape) and (max-height: 520px) and (min-width: 560px) {
+  .fc-modal-veu { padding: 0 !important; }
+  .fc-modal { width: 100vw; height: 100dvh; max-height: none; min-height: 0; border-radius: 0; box-shadow: none; }
+  .fc-modal__canto { display: none; }
+  .fc-fechar { top: 6px; right: calc(env(safe-area-inset-right, 0px) + 8px); width: 38px; height: 38px; }
+  .fc-arena { padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+  .fc-topo { min-height: 0; padding: 5px 56px 5px 10px; gap: 10px; }
+  .fc-abas { padding: 3px; }
+  .fc-abas button { min-height: 32px; padding: 4px 12px; font-size: 13.5px !important; }
+  .fc-modal .fc-abas .fc-sprite--icone { display: none; }
+  .fc-topo__titulo { display: none; }
+  .fc-topo__progresso { font-size: 13px; }
+  .fc-topo-botao { min-height: 34px; min-width: 34px; padding: 4px 8px; }
+  .fc-topo-botao__texto { display: none; }
+
+  /* Batalha em três colunas */
+  .fc-batalha { grid-template-columns: minmax(0, .95fr) minmax(0, 1.45fr) minmax(0, 1.05fr); grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-areas: "inimigo mesa mao" "heroi mesa mao" "heroi mesa acao"; gap: 6px 10px; padding: 2px 10px 8px; }
+  .fc-jogador { display: contents; }
+  .fc-inimigo { grid-area: inimigo; flex-wrap: wrap; align-items: center; gap: 4px 8px; padding: 0; }
+  .fc-inimigo { justify-content: space-between; }
+  .fc-inimigo .fc-placa { order: 3; flex: 1 1 100%; min-width: 0; padding: 6px 9px; gap: 4px; margin: 0; }
+  .fc-placa__nome strong { font-size: 14px; }
+  .fc-placa__info { flex-wrap: nowrap; overflow: hidden; gap: 4px; }
+  .fc-placa__info .fc-info:not(.fc-info--furia):not(.fc-info--andar) { display: none; }
+  .fc-info { font-size: 11.5px; padding: 1px 7px; white-space: nowrap; }
+  .fc-intencao { margin: 0; gap: 3px; }
+  .fc-intencao__gema { width: 38px; height: 38px; border-radius: 10px; }
+  .fc-intencao__gema b { font-size: 16px; }
+  .fc-intencao small { font-size: 10.5px; }
+  .fc-ator--inimigo { margin: 0; }
+  .fc-mesa { grid-area: mesa; margin: 0; border-radius: 14px; }
+  .fc-mesa__tampo, .fc-mesa::after { border-radius: 14px; }
+  .fc-mesa__palco { padding: 8px 10px; }
+  .fc-pilha { display: none; }
+  .fc-carta__cabeca { padding: 6px 10px; gap: 8px; }
+  .fc-carta__titulo strong { font-size: 12.5px; }
+  .fc-carta__titulo small { font-size: 11px; }
+  .fc-carta__miolo { padding: 8px 12px; gap: 8px; }
+  .fc-carta__pergunta { font-size: 15.5px; line-height: 1.3; }
+  .fc-carta__resposta { font-size: 17px; }
+  .fc-carta__explicacao { font-size: 14px; line-height: 1.35; }
+  .fc-carta__pe { padding: 5px 10px 6px; font-size: 11.5px; }
+  .fc-heroi { grid-area: heroi; align-self: end; gap: 6px; flex-wrap: nowrap; }
+  .fc-heroi__dados { width: auto; flex: 1; min-width: 0; padding: 6px 8px; gap: 4px; margin: 0; }
+  .fc-heroi__nome { font-size: 13px; }
+  .fc-combo span { display: none; }
+  .fc-encaixe { width: 30px; height: 30px; }
+  .fc-modal .fc-encaixe .fc-sprite--icone { width: 18px; height: 18px; }
+  .fc-reliquia { display: none; }
+  .fc-mao { grid-area: mao; grid-template-columns: minmax(0, 1fr); align-content: center; gap: 7px; padding: 4px 4px 2px 12px; }
+  .fc-alternativa { min-height: 44px; padding: 4px 10px 4px 5px; gap: 7px; }
+  .fc-alternativa > i { width: 28px; height: 28px; font-size: 13px; }
+  .fc-alternativa > i::after { inset: 7px; }
+  .fc-alternativa > span { font-size: 13.5px; line-height: 1.18; }
+  .fc-alternativa--longa > span { font-size: 12.5px; }
+  .fc-alternativa--muito-longa > span { font-size: 11.5px; }
+  .fc-alternativa--curta > span { font-size: 20px; }
+  .fc-acao { grid-area: acao; margin: 0; gap: 2px; }
+  .fc-principal { min-height: 48px; min-width: 0; width: 100%; padding: 6px 12px !important; }
+  .fc-principal span { font-size: 16px; }
+  .fc-dica { display: none; }
+
+  /* Estudo: painel à esquerda, flashcard no centro, respostas à direita */
+  .fc-estudo { grid-template-columns: minmax(150px, 180px) minmax(0, 1fr) minmax(0, 300px); grid-template-rows: minmax(0, 1fr); gap: 8px 12px; padding: 4px 10px 8px; }
+  .fc-estudo__painel { padding: 10px; gap: 8px; align-self: stretch; align-content: start; }
+  .fc-estudo__contagem b { font-size: 24px; }
+  .fc-estudo__placar div { padding: 3px 8px; font-size: 12.5px; }
+  .fc-estudo__titulo { font-size: 13px; }
+  .fc-estudo__mesa { grid-column: 2; grid-row: 1; }
+  .fc-estudo__botoes, .fc-estudo__respondidas + .fc-estudo__botoes { grid-column: 3; grid-row: 1; flex-direction: column; flex-wrap: nowrap; align-items: stretch; justify-content: center; gap: 8px; }
+  .fc-estudo__respondidas { display: none; }
+  .fc-estudo:has(.fc-estudo__respondidas) { grid-template-rows: minmax(0, 1fr); }
+  .fc-mao--estudo { width: 100%; padding: 0; }
+  .fc-botao-aval { min-width: 0; min-height: 50px; padding: 5px 12px 5px 6px !important; }
+  .fc-botao-aval > i { width: 28px; height: 28px; font-size: 13px; }
+  .fc-botao-aval strong { font-size: 16px !important; }
+  .fc-botao-aval small { font-size: 11.5px !important; }
+  .fc-estudo__veredito { font-size: 12.5px; }
+  .fc-principal--largo { min-width: 0; }
+  .fc-biblioteca { padding: 4px 12px 12px; gap: 10px; }
+  .fc-biblioteca__cabeca { padding: 10px 12px; }
+  .fc-categoria { padding: 9px 12px; }
+  .fc-categoria__icone { width: 44px; height: 44px; }
+}
+
+/* título do flashcard: hifeniza em vez de partir a palavra no meio ("ACROMIOCLAVIC ULAR") */
+.fc-carta__titulo strong { overflow-wrap: normal; word-break: normal; hyphens: auto; -webkit-hyphens: auto; }
