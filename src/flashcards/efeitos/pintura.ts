@@ -464,10 +464,27 @@ export function pintarMesa(canvas: HTMLCanvasElement, cenario: Cenario) {
 }
 
 /** Ambiente HD-2D: bokeh suave, poeira na luz, brasas ou vaga-lumes. Baixa frequência. */
+/** Sprite de poeira (miolo forte) ou de bokeh (disco suave), pintado uma vez por cor. */
+const particulas = new Map<string, HTMLCanvasElement>()
+function particula(cor: string, bokeh: boolean) {
+  const chave = cor + (bokeh ? 'b' : 'p')
+  let b = particulas.get(chave)
+  if (!b) {
+    b = document.createElement('canvas'); b.width = b.height = 48
+    const c = b.getContext('2d')!
+    const g = c.createRadialGradient(24, 24, 0, 24, 24, 24)
+    g.addColorStop(0, `rgba(${cor},1)`); g.addColorStop(bokeh ? 0.8 : 0.4, `rgba(${cor},${bokeh ? 0.8 : 0.3})`); g.addColorStop(1, `rgba(${cor},0)`)
+    c.fillStyle = g; c.fillRect(0, 0, 48, 48)
+    particulas.set(chave, b)
+  }
+  return b
+}
+
 export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena) {
   const c = canvas.getContext('2d')
   if (!c) return () => {}
-  const dpr = Math.min(window.devicePixelRatio || 1, 1.5)
+  // poeira e bokeh são luz difusa: no celular, 1 pixel do canvas por pixel CSS basta
+  const dpr = matchMedia('(pointer: coarse)').matches ? 1 : Math.min(window.devicePixelRatio || 1, 1.5)
   const ajustar = () => { canvas.width = Math.round(canvas.clientWidth * dpr); canvas.height = Math.round(canvas.clientHeight * dpr) }
   ajustar()
   const n = cena === 'masmorra' ? 34 : cena === 'biblioteca' ? 30 : 32
@@ -499,9 +516,9 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena) {
       const cor = cena === 'masmorra' ? (p.i % 3 ? '255,130,50' : '255,200,110') : cena === 'campo' ? (p.i % 4 === 0 ? '210,255,150' : '255,240,200') : '255,215,150'
       const r = p.bokeh ? (14 + p.v * 22) * dpr : (1.6 + p.v * 1.6) * dpr
       const a = p.bokeh ? 0.12 * brilho : 0.75 * brilho
-      const g = c.createRadialGradient(p.x * w, p.y * h, 0, p.x * w, p.y * h, r)
-      g.addColorStop(0, `rgba(${cor},${a})`); g.addColorStop(p.bokeh ? 0.8 : 0.4, `rgba(${cor},${a * (p.bokeh ? 0.8 : 0.3)})`); g.addColorStop(1, `rgba(${cor},0)`)
-      c.fillStyle = g; c.fillRect(p.x * w - r, p.y * h - r, r * 2, r * 2)
+      c.globalAlpha = a
+      c.drawImage(particula(cor, p.bokeh), p.x * w - r, p.y * h - r, r * 2, r * 2)
+      c.globalAlpha = 1
     }
     c.globalCompositeOperation = 'source-over'
   }

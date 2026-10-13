@@ -4,7 +4,7 @@ import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
 import { Palco, centro } from '../efeitos/palco'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
-import { configurarSom, destravar, tocar, tocarAmbiente } from '../efeitos/sons'
+import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
 import { BESTIARIO, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
 import { ENCAIXES, RECOMPENSAS, ehPoder, type Recompensa } from '../motor/poderes'
@@ -20,15 +20,16 @@ import { ModalJogo } from './ModalJogo'
 import { Sprite } from './Sprite'
 
 export interface Ajustes {
-  versao: 2
+  versao: 3
   som: boolean
   volEfeitos: number
   volAmbiente: number
+  volMusica: number
   efeitos: 'completos' | 'reduzidos'
   velocidade: 'normal' | 'rapida'
 }
 /** Som ligado por padrão (pedido do Tales em 12/10/2026); toca a partir do primeiro toque. */
-const AJUSTES_PADRAO: Ajustes = { versao: 2, som: true, volEfeitos: 0.7, volAmbiente: 0.35, efeitos: 'completos', velocidade: 'normal' }
+const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
 
 const motor = criarMotor(BARALHO_DEMO)
 
@@ -79,8 +80,9 @@ export function Arena() {
   const [ajustes, definirAjustesBruto] = useState<Ajustes>(() => {
     const salvos = ler<Partial<Ajustes>>(CHAVE_AJUSTES, {})
     const reduzSistema = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
-    // Ajustes da versão anterior (som desligado por padrão) não valem mais.
-    const validos = salvos.versao === 2 ? salvos : {}
+    // Ajustes da versão 1 (som desligado por padrão) não valem mais; a 2 ganha o volume da música.
+    const versao = salvos.versao as number | undefined
+    const validos = versao === 3 ? salvos : versao === 2 ? { ...salvos, versao: 3 as const } : {}
     return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...validos }
   })
   const definirAjustes = (a: Partial<Ajustes>) => definirAjustesBruto((v) => { const n = { ...v, ...a }; gravar(CHAVE_AJUSTES, n); return n })
@@ -122,7 +124,7 @@ export function Arena() {
   const idFlutuante = useRef(0)
 
   /* ---------- Som ---------- */
-  useEffect(() => { configurarSom({ ligado: ajustes.som, efeitos: ajustes.volEfeitos, ambiente: ajustes.volAmbiente }) }, [ajustes.som, ajustes.volEfeitos, ajustes.volAmbiente])
+  useEffect(() => { configurarSom({ ligado: ajustes.som, efeitos: ajustes.volEfeitos, ambiente: ajustes.volAmbiente, musica: ajustes.volMusica }) }, [ajustes.som, ajustes.volEfeitos, ajustes.volAmbiente, ajustes.volMusica])
   useEffect(() => {
     let feito = false
     const primeiro = () => { if (feito) return; feito = true; destravar(); tocar('abrir') }
@@ -131,7 +133,9 @@ export function Arena() {
     return () => { window.removeEventListener('pointerdown', primeiro, { capture: true }); window.removeEventListener('keydown', primeiro, { capture: true }) }
   }, [])
   useEffect(() => { tocarAmbiente(modo === 'estudo' ? 'biblioteca' : cenarioVisivel) }, [modo, cenarioVisivel])
-  useEffect(() => () => tocarAmbiente(null), [])
+  const chefeEmCena = modo === 'batalha' && inimigoDoAndar(partida.andar).inimigo.chefe
+  useEffect(() => { tocarMusica(modo === 'estudo' ? 'biblioteca' : chefeEmCena ? 'chefe' : cenarioVisivel) }, [modo, cenarioVisivel, chefeEmCena])
+  useEffect(() => () => { tocarAmbiente(null); tocarMusica(null) }, [])
 
   useEffect(() => { partidaRef.current = partida; gravar(CHAVE_PARTIDA, partida) }, [partida])
 
@@ -260,7 +264,7 @@ export function Arena() {
           P?.explosao(para, { cor, cor2: '#fff3c0', n: forte ? 40 : 22, forca: forte ? 380 : 260 })
           P?.onda(para, cor, forte ? 170 : 110)
           if (ev.critico || ev.duplo) { P?.corte(para, cor, 96); window.setTimeout(() => P?.corte(para, '#ffffff', 84, 0.6), 70 * fator) }
-          tocar(ev.critico || ev.duplo ? 'critico' : forte ? 'impacto-forte' : medio ? 'impacto-medio' : 'impacto-leve')
+          tocar(ev.critico || ev.duplo ? 'critico' : forte ? 'impacto-forte' : medio ? 'impacto-medio' : 'impacto-leve', 1, quemInimigo)
           tremer(forte ? 1 : medio ? 0.55 : 0.3)
           if (ev.critico || ev.duplo) flutuar(refInimigo.current, `-${ev.valor}`, '#ffd34a', { grande: true, rotulo: ev.duplo ? 'GOLPE DUPLO' : 'CRÍTICO', x: 70, y: -10 })
           else flutuar(refInimigo.current, `-${ev.valor}`, '#ffe6a8', { y: -20, x: 50 })
@@ -278,13 +282,13 @@ export function Arena() {
           // preparação: o adversário carrega o golpe
           animar(arte(refInimigo), 'fc-anim-prepara', 440)
           posar(refInimigo, 'preparo', 520)
-          tocar('preparo-inimigo')
+          tocar('preparo-inimigo', 1, quemInimigo)
           P?.carga(centro(refInimigo.current), '#ff5a3c', 18, 80)
           if (!(await esperar(400, g))) return
           animar(arte(refInimigo), 'fc-anim-ataca', 440)
           posar(refInimigo, 'golpe', 620)
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
-          tocar('golpe-inimigo')
+          tocar('golpe-inimigo', 1, quemInimigo)
           if (P) await P.projetil(de, para, { cor: '#ff5a3c', nucleo: '#ffd0c0', tam: 15, duracao: 0.34, curva: -0.25, rastro: 4 })
           if (g !== geracao.current) return
           animar(arte(refHeroi), 'fc-anim-atingido', 640)
@@ -306,7 +310,7 @@ export function Arena() {
           posar(refInimigo, 'golpe', 600)
           if (!(await esperar(180, g))) return
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
-          tocar('golpe-inimigo')
+          tocar('golpe-inimigo', 1, quemInimigo)
           if (P) await P.projetil(de, para, { cor: '#ff5a3c', nucleo: '#ffd0c0', tam: 14, duracao: 0.32, curva: -0.25 })
           if (g !== geracao.current) return
           animar(refHeroi.current, 'fc-anim-bloqueio', 640)
@@ -365,7 +369,7 @@ export function Arena() {
           if (caixa) { P?.dissolver(caixa, PALETA_PERSONAGEM[quemInimigo]); P?.fragmentos(centro(refInimigo.current), PALETA_PERSONAGEM[quemInimigo], 40, 520) }
           P?.clarao(centro(refInimigo.current), '#ffe08a', 500, 1, 0.8)
           definirMostrado((m) => ({ ...m, inimigoCaiu: true }))
-          tocar(ev.chefe ? 'vitoria-chefe' : 'derrota-inimigo')
+          tocar(ev.chefe ? 'vitoria-chefe' : 'derrota-inimigo', 1, quemInimigo)
           tremer(ev.chefe ? 1 : 0.6)
           if (ev.chefe) {
             P?.confete({ x: window.innerWidth / 2, y: window.innerHeight * 0.45 }, 160)
@@ -780,6 +784,7 @@ export function Arena() {
                 <legend>Som</legend>
                 <label className="fc-ajuste"><input id="fc-som" type="checkbox" checked={ajustes.som} onChange={(e) => { destravar(); definirAjustes({ som: e.target.checked }); if (e.target.checked) window.setTimeout(() => tocar('poder'), 50) }} /><span>Som ligado</span></label>
                 <label className="fc-ajuste fc-ajuste--volume"><span>Efeitos</span><input id="fc-vol-efeitos" type="range" min={0} max={1} step={0.05} value={ajustes.volEfeitos} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volEfeitos: +e.target.value })} onPointerUp={() => tocar('impacto-medio')} /></label>
+                <label className="fc-ajuste fc-ajuste--volume"><span>Música</span><input id="fc-vol-musica" type="range" min={0} max={1} step={0.05} value={ajustes.volMusica} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volMusica: +e.target.value })} /></label>
                 <label className="fc-ajuste fc-ajuste--volume"><span>Ambiente</span><input id="fc-vol-ambiente" type="range" min={0} max={1} step={0.05} value={ajustes.volAmbiente} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volAmbiente: +e.target.value })} /></label>
               </fieldset>
               <fieldset className="fc-grupo">

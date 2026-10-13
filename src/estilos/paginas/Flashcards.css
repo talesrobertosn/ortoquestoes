@@ -459,7 +459,9 @@
 .fc-ajuste input[type="checkbox"] { width: 22px; height: 22px; accent-color: var(--fc-ouro); }
 .fc-ajuste--volume span { min-width: 80px; }
 .fc-ajuste--volume input { flex: 1; accent-color: var(--fc-ouro); }
-.fc-veu--imagem { background: rgba(3, 2, 4, .9); }
+.fc-veu--imagem { background: rgba(3, 2, 4, .97) !important; }
+/* com a imagem aberta, o X do modal sai de cena: fica só o X do visualizador */
+.fc-modal:has(.fc-veu--imagem) .fc-fechar { visibility: hidden; }
 .fc-veu--imagem { padding: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .fc-ampliada { position: relative; margin: 0; width: min(1100px, 100%); height: 100%; display: grid; grid-template-rows: minmax(0, 1fr) auto auto auto; gap: 10px; justify-items: center; }
 .fc-ampliada__area { position: relative; width: 100%; height: 100%; min-height: 0; overflow: hidden; border-radius: 12px; background: #050304; box-shadow: 0 0 0 2px var(--fc-ouro), 0 24px 60px rgba(0, 0, 0, .75); touch-action: none; cursor: zoom-in; display: block; }
@@ -691,6 +693,16 @@
   .fc-carta__pergunta { font-size: 18px; }
   .fc-alternativa { min-height: 54px; }
   .fc-principal { min-height: 52px; }
+}
+
+/* Telas de toque: sem desfoque de fundo nos painéis (a cena anima por trás e
+   o navegador teria de refazer o desfoque a cada quadro); fundo mais opaco no lugar */
+@media (pointer: coarse) {
+  .fc-estudo__painel { backdrop-filter: none; }
+  .fc-placa, .fc-heroi__dados { backdrop-filter: none; -webkit-backdrop-filter: none; background: linear-gradient(rgba(18, 12, 20, .93), rgba(18, 12, 20, .86)); }
+  .fc-heroi__dados { background: linear-gradient(rgba(14, 18, 30, .93), rgba(14, 18, 30, .86)); }
+  .fc-veu { backdrop-filter: none; background: rgba(5, 3, 6, .88); }
+  .fc-arena { contain: layout paint; }
 }
 
 /* Celular deitado: o Torneio é desenhado para a tela em pé */
