@@ -99,3 +99,22 @@ Métricas depois (mesmo roteiro): celular com CPU ÷4 mantém 60 quadros/s; o pi
 quadro no golpe do herói caiu de 433 para 117 ms e, no golpe do adversário, de
 333 para 167 ms. O computador segue em 20 quadros/s neste ambiente sem GPU
 (thread principal ocupada 14%).
+
+## Segunda rodada (13/10/2026)
+
+Os pontos pendentes da primeira rodada, menos a expansão para os outros
+inimigos (espera aprovação do padrão).
+
+| Componente | O que mudou | Arquivos |
+|---|---|---|
+| Herói | Olhos azuis com brilho, sobrancelhas, cabelo emoldurando o rosto; o resto igual | `scripts/sprites/heroi.py` |
+| Golem | Gesso mais claro, trincas luminosas mais largas (contraste no celular) | `scripts/sprites/golem.py` |
+| Dragão de Ossos | Membrana com borda rasgada, nervuras e dobras pintadas | `scripts/sprites/dragao.py` |
+| Mesa (tipo A) | Tábuas no Salão e no Arquivo; facetas de cristal no Laboratório | `src/flashcards/efeitos/pintura.ts` |
+| Alternativas | Respostas de até 4 caracteres (tipos de Aitken, números) em destaque grande | `Arena.tsx`, `Flashcards.css` |
+| Recompensas | Fita dentro da carta (antes era cortada), cantoneiras por raridade, título numa linha no celular | `Arena.tsx`, `Flashcards.css` |
+| Painéis | Moldura forjada em SVG: bronze (adversário), ouro (chefe), aço (herói) | `src/estilos/ui/painel-*.svg`, `Flashcards.css` |
+
+Defeitos antigos corrigidos de passagem: barra de vida e sequência saindo do
+painel do herói no celular; mandíbula do Dragão sobre o selo de Chefe; parte
+de baixo da plataforma suspensa sobre o painel do herói.
