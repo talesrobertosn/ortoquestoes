@@ -15,6 +15,8 @@
  * O navegador só deixa tocar depois do primeiro toque ou tecla: `destravar()`.
  */
 
+import { recurso } from '../../config'
+
 export type Som =
   | 'hover' | 'selecao' | 'giro' | 'compra' | 'confirmar' | 'abrir' | 'fechar' | 'transicao'
   | 'carga' | 'disparo' | 'impacto-leve' | 'impacto-medio' | 'impacto-forte' | 'critico'
@@ -47,7 +49,7 @@ let ligado = true
 let volEfeitos = 0.8, volAmbiente = 0.35, volMusica = 0.45
 let ambienteAtual: { nome: Ambiente; parar: () => void } | null = null
 let ambientePedido: Ambiente | null = null
-let musicaAtual: { nome: Musica; parar: () => void } | null = null
+let musicaAtual: { nome: Musica; parar: () => void; procedural?: boolean } | null = null
 let musicaPedida: Musica | null = null
 
 /** Ganho geral das vozes: as receitas foram afinadas baixas, a saída compensa. */
@@ -103,6 +105,7 @@ export function destravar() {
 }
 function retomar() {
   if (!ctx || ctx.state !== 'running') return
+  preCarregarTrilha()
   if (ambientePedido && ambienteAtual?.nome !== ambientePedido) tocarAmbiente(ambientePedido)
   if (musicaPedida && musicaAtual?.nome !== musicaPedida) tocarMusica(musicaPedida)
 }
@@ -211,6 +214,8 @@ function fanfarra(tonica: number, bpm: number, melodia: Array<[number, number, n
 
 export function tocar(som: Som, forca = 1, t?: Timbre) {
   if (!ligado || !ctx || ctx.state !== 'running') return
+  const faixa = ARQUIVO_JINGLE[som]
+  if (faixa && tocarJingle(faixa)) return
   const timbre = familiaSom(t)
   switch (som) {
     case 'hover': nota(varia(1800, 0.1), 0, 0.05, 'sine', 0.03, undefined, false); break
@@ -439,6 +444,66 @@ const RITMOS: Record<NonNullable<Tema['melodia']>, Array<Array<[number, number]>
 
 const hz = (midi: number) => 440 * Math.pow(2, (midi - 69) / 12)
 
+/* ------------------------------------------------------------ Trilha em arquivos
+   Faixas orquestrais renderizadas offline (scripts/musica/), em public/flashcards/musica/.
+   Enquanto o arquivo não chega, toca o tema procedural; quando chega, troca com fade. */
+
+const ARQUIVO_MUSICA: Partial<Record<Musica, string>> = {
+  entrada: 'cripta', chefe: 'chefe', elite: 'elite', dragao: 'dragao', torre: 'torre', biblioteca: 'biblioteca', arquivo: 'biblioteca',
+  campo: 'batalha', masmorra: 'batalha', salao: 'batalha', covil: 'batalha', forja: 'batalha', coliseu: 'batalha', jardim: 'batalha',
+  laboratorio: 'batalha', caverna: 'batalha', templo: 'batalha', passarela: 'batalha', catacumba: 'batalha', treino: 'batalha',
+}
+const ARQUIVO_JINGLE: Partial<Record<Som, string>> = { 'jingle-vitoria': 'vitoria', 'jingle-chefe': 'vitoria', 'jingle-topo': 'vitoria', 'jingle-derrota': 'derrota', 'jingle-tesouro': 'recompensa', 'jingle-patamar': 'recompensa' }
+const buffers = new Map<string, AudioBuffer>()
+const carregando = new Map<string, Promise<AudioBuffer | null>>()
+
+function carregarFaixa(nome: string): Promise<AudioBuffer | null> {
+  const ja = buffers.get(nome)
+  if (ja) return Promise.resolve(ja)
+  let p = carregando.get(nome)
+  if (!p && ctx) {
+    const c = ctx
+    p = fetch(recurso(`flashcards/musica/${nome}.mp3`))
+      .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(String(r.status)))))
+      .then((b) => c.decodeAudioData(b))
+      .then((buf) => { buffers.set(nome, buf); return buf })
+      .catch(() => null)
+    carregando.set(nome, p)
+  }
+  return p ?? Promise.resolve(null)
+}
+
+/** Pré-carrega as faixas curtas e a da batalha (chamado no primeiro toque). */
+export function preCarregarTrilha() {
+  for (const n of ['batalha', 'vitoria', 'recompensa', 'derrota']) void carregarFaixa(n)
+}
+
+function tocarFaixa(nome: Musica, buf: AudioBuffer) {
+  const c = ctx!
+  const sai = c.createGain(); sai.gain.setValueAtTime(0.0001, c.currentTime); sai.gain.exponentialRampToValueAtTime(1, c.currentTime + 1.6); sai.connect(musica)
+  const src = c.createBufferSource(); src.buffer = buf; src.loop = true
+  src.connect(sai); src.start()
+  musicaAtual = {
+    nome,
+    parar: () => {
+      sai.gain.cancelScheduledValues(c.currentTime)
+      sai.gain.setTargetAtTime(0.0001, c.currentTime, 0.35)
+      window.setTimeout(() => { try { src.stop() } catch { /* já parou */ } sai.disconnect() }, 2200)
+    },
+  }
+}
+
+/** Fanfarra em arquivo, se já carregada: a música do cenário abaixa enquanto ela toca. */
+function tocarJingle(nome: string): boolean {
+  const buf = buffers.get(nome)
+  if (!buf || !ctx) return false
+  const g = ctx.createGain(); g.gain.value = 1.15; g.connect(saida)
+  const src = ctx.createBufferSource(); src.buffer = buf; src.connect(g); src.start()
+  src.onended = () => g.disconnect()
+  abaixarMusica(0.12, Math.min(buf.duration, 7) * 1000)
+  return true
+}
+
 /** Toca o tema em laço com um agendador de antecipação (estável mesmo com a aba ocupada). */
 export function tocarMusica(nome: Musica | null) {
   musicaPedida = nome
@@ -447,6 +512,16 @@ export function tocarMusica(nome: Musica | null) {
   musicaAtual?.parar()
   musicaAtual = null
   if (!nome) return
+  const arquivo = ARQUIVO_MUSICA[nome]
+  if (arquivo) {
+    const buf = buffers.get(arquivo)
+    if (buf) { tocarFaixa(nome, buf); return }
+    void carregarFaixa(arquivo).then((b) => {
+      if (!b || musicaPedida !== nome || musicaAtual?.nome !== nome || !musicaAtual.procedural) return
+      musicaAtual.parar(); musicaAtual = null
+      tocarFaixa(nome, b)
+    })
+  }
   const tema = TEMAS[nome]
   const c = ctx
   const sai = c.createGain(); sai.gain.setValueAtTime(0.0001, c.currentTime); sai.gain.exponentialRampToValueAtTime(1, c.currentTime + 2.5); sai.connect(musica)
@@ -547,6 +622,7 @@ export function tocarMusica(nome: Musica | null) {
   agendar()
   musicaAtual = {
     nome,
+    procedural: true,
     parar: () => {
       vivo = false
       window.clearInterval(relogio)
