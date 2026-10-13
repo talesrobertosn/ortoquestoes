@@ -112,3 +112,8 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
   - enfeites em pixel art podem (velas, bandeiras, brasões, ícones de poder), mas **sem desenho de anatomia**: osso, músculo, nervo ou vaso, nem caveira;
 - **Limite do plano grátis:** 10 flashcards por dia, contados no servidor; assinante sem limite. Não contornar a checagem de assinatura no cliente.
 - **Mudanças:** em branch e PR revisável, com os testes do repositório (`npm test`, `npx tsc --noEmit`, `npm run build`).
+
+## Criação de flashcards autorais
+
+- [CRONOGRAMA.md](CRONOGRAMA.md): o plano semanal, na ordem dos assuntos que mais caem (gerado por `scripts/flashcards/cronograma.py plano`).
+- [CRIACAO.md](CRIACAO.md): como escrever e aplicar um lote, e o que o validador barra.

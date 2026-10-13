@@ -7166,6 +7166,34 @@
    "fonte": "d6593ecd49ef"
   },
   {
+   "id": "fc-pediatria-0426-co1",
+   "questao": "pediatria-0426",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Doença de Legg-Calvé-Perthes",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na doença de Legg-Calvé-Perthes, os cistos metafisários indicam extensão da doença a qual estrutura, com risco de distúrbio do crescimento?",
+   "resposta": "fise",
+   "explicacao": "**À fise.** Daí o risco de parada do crescimento central, com colo curto (coxa breva), trocânter alto e discrepância de membros.",
+   "opcoes": [
+    "fise"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "40d104373932",
+   "origem": "autoral",
+   "trecho": "A sua presença sugere que a doença **atingiu a fise**, o que traz risco de **distúrbio do crescimento fisário**",
+   "criadoEm": "2026-10-13"
+  },
+  {
    "id": "fc-pediatria-0426-q",
    "questao": "pediatria-0426",
    "area": "Ortopedia pediátrica",
@@ -7192,6 +7220,37 @@
    "prova": "TARO",
    "ano": 2010,
    "fonte": "40d104373932"
+  },
+  {
+   "id": "fc-pediatria-0426-tb1",
+   "questao": "pediatria-0426",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Doença de Legg-Calvé-Perthes",
+   "subtemas": [
+    "Doença de Legg-Calvé-Perthes",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na doença de Legg-Calvé-Perthes, qual sinal de cabeça em risco (Catterall) é a rarefação em V na parte lateral da epífise e metáfise?",
+   "resposta": "Sinal de Gage",
+   "explicacao": "**Sinal de Gage.** É um dos sinais radiográficos de cabeça em risco descritos por Catterall, que indicam pior prognóstico.",
+   "opcoes": [
+    "Sinal de Gage",
+    "Calcificação lateral",
+    "Subluxação lateral",
+    "Horizontalização da fise"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "40d104373932",
+   "origem": "autoral",
+   "trecho": "**Sinal de Gage** | Rarefação em V na parte lateral da epífise e metáfise",
+   "criadoEm": "2026-10-13"
   },
   {
    "id": "fc-pediatria-0427-q",
@@ -7300,6 +7359,124 @@
    "prova": "TARO",
    "ano": 2010,
    "fonte": "ca64dea68231"
+  },
+  {
+   "id": "fc-pediatria-0431-co1",
+   "questao": "pediatria-0431",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na adolescência, o afinamento de qual estrutura deixa a fise mais vulnerável ao cisalhamento e contribui para a epifisiólise proximal do fêmur?",
+   "resposta": "anel de LaCroix",
+   "explicacao": "**Anel pericondral de LaCroix.** Faixa fibrosa contínua com o periósteo que envolve a fise; ao afinar na adolescência, a junção resiste menos ao cisalhamento.",
+   "opcoes": [
+    "Anel de LaCroix",
+    "Zona de Ranvier",
+    "Processos mamilares"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "af1a9ee0e518",
+   "origem": "autoral",
+   "trecho": "Na **adolescência**, o anel de LaCroix **afina**, e a fise fica mais vulnerável ao cisalhamento: é um dos fatores da **epifisiólise** proximal do fêmur.",
+   "criadoEm": "2026-10-13"
+  },
+  {
+   "id": "fc-pediatria-0431-pc1",
+   "questao": "pediatria-0431",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O anel pericondral de LaCroix dá estabilidade mecânica à periferia da fise. E o crescimento da fise em largura depende de qual estrutura?",
+   "resposta": "Zona de Ranvier",
+   "explicacao": "**Zona (sulco) de Ranvier:** células em cunha na borda da fise que fornecem condrócitos para o crescimento latitudinal. O **anel de LaCroix** é fibroso e dá suporte mecânico.",
+   "opcoes": [
+    "Zona de Ranvier",
+    "Anel pericondral de LaCroix",
+    "Processos mamilares"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "af1a9ee0e518",
+   "origem": "autoral",
+   "trecho": "O **crescimento periférico** (em largura) da fise é função da **zona de Ranvier**.",
+   "criadoEm": "2026-10-13"
+  },
+  {
+   "id": "fc-pediatria-0431-tb1",
+   "questao": "pediatria-0431",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual zona da fise é a mais fraca, onde ocorre a maioria das fraturas fisárias e o deslizamento da epifisiólise?",
+   "resposta": "Hipertrófica",
+   "explicacao": "**Zona hipertrófica.** Os condrócitos aumentam de volume e a matriz se calcifica: é o ponto mais fraco da placa de crescimento.",
+   "opcoes": [
+    "Germinativa",
+    "Proliferativa",
+    "Hipertrófica",
+    "Ossificação provisória"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "af1a9ee0e518",
+   "origem": "autoral",
+   "trecho": "**Hipertrófica** | Os condrócitos aumentam de volume, a matriz se calcifica: é a zona **mais fraca**, onde ocorre a maioria das fraturas fisárias e o deslizamento da epifisiólise",
+   "criadoEm": "2026-10-13"
+  },
+  {
+   "id": "fc-pediatria-0431-tb2",
+   "questao": "pediatria-0431",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em qual zona da fise os condrócitos se dividem e se empilham em colunas, produzindo o crescimento longitudinal?",
+   "resposta": "Proliferativa",
+   "explicacao": "**Zona proliferativa.** É a camada das colunas de condrócitos, responsável pelo crescimento em comprimento.",
+   "opcoes": [
+    "Germinativa",
+    "Proliferativa",
+    "Hipertrófica",
+    "Ossificação provisória"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "af1a9ee0e518",
+   "origem": "autoral",
+   "trecho": "**Proliferativa** | Os condrócitos se dividem e se empilham em **colunas**: é o crescimento longitudinal",
+   "criadoEm": "2026-10-13"
   },
   {
    "id": "fc-pediatria-0432-q",
@@ -9070,6 +9247,120 @@
    "prova": "TARO",
    "ano": 2024,
    "fonte": "caf4557e5c94"
+  },
+  {
+   "id": "fc-pediatria-0543-co1",
+   "questao": "pediatria-0543",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fise distal da tíbia fecha começando no centro e avançando para medial. Em qual parte ela termina de fechar?",
+   "resposta": "anterolateral",
+   "explicacao": "**Parte anterolateral.** O fechamento leva cerca de 18 meses; enquanto essa parte segue aberta, surgem as fraturas de transição (Tillaux e triplanar).",
+   "opcoes": [
+    "Anterolateral",
+    "Anteromedial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "e6c8cf16e94a",
+   "origem": "autoral",
+   "trecho": "o fechamento começa no **centro**, avança para **medial** e termina na parte **anterolateral**, ao longo de cerca de **18 meses**",
+   "criadoEm": "2026-10-13"
+  },
+  {
+   "id": "fc-pediatria-0543-co2",
+   "questao": "pediatria-0543",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do tornozelo na criança",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na fratura de Tillaux juvenil, qual ligamento fica tenso na rotação externa e arranca o canto anterolateral da epífise distal da tíbia?",
+   "resposta": "ligamento tibiofibular anteroinferior",
+   "explicacao": "**Ligamento tibiofibular anteroinferior**, do tubérculo de Chaput à fíbula: na rotação externa do pé, ele avulsiona o fragmento anterolateral, a última parte da fise a fechar.",
+   "opcoes": [
+    "ligamento tibiofibular anteroinferior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "e6c8cf16e94a",
+   "origem": "autoral",
+   "trecho": "o **ligamento tibiofibular anteroinferior** (que vai do tubérculo de Chaput, na tíbia, à fíbula) fica tenso e arranca o canto anterolateral da epífise",
+   "criadoEm": "2026-10-13"
+  },
+  {
+   "id": "fc-pediatria-0543-co3",
+   "questao": "pediatria-0543",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do tornozelo na criança",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na fratura de Tillaux, a partir de qual desvio articular se indica redução e fixação com parafuso epifisário?",
+   "resposta": "maior que 2 mm",
+   "explicacao": "**Desvio articular maior que 2 mm**, medido na tomografia: redução e parafuso epifisário paralelo à articulação, buscando congruência para evitar artrose.",
+   "opcoes": [
+    "maior que 2 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "e6c8cf16e94a",
+   "origem": "autoral",
+   "trecho": "Com **desvio articular maior que 2 mm**, faz-se a redução",
+   "criadoEm": "2026-10-13"
+  },
+  {
+   "id": "fc-pediatria-0543-pc1",
+   "questao": "pediatria-0543",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do tornozelo na criança",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Entre as fraturas de transição do tornozelo, qual acrescenta um traço coronal na metáfise posterior, somando três planos?",
+   "resposta": "Triplanar",
+   "explicacao": "**Triplanar:** três planos (sagital, axial e coronal). A **Tillaux** tem dois: sagital pela epífise e axial pela fise.",
+   "opcoes": [
+    "Triplanar",
+    "Tillaux"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "e6c8cf16e94a",
+   "origem": "autoral",
+   "trecho": "| Aspecto | Tillaux | Triplanar |\n|---|---|---|\n| Planos do traço | Dois (sagital pela epífise e axial pela fise) | Três (acrescenta o coronal na metáfise posterior) |",
+   "criadoEm": "2026-10-13"
   },
   {
    "id": "fc-pediatria-0543-q",

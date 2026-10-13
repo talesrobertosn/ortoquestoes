@@ -348,18 +348,24 @@ def ordem_de_producao(questoes: dict, niveis: dict[str, int]) -> list[str]:
 
 
 def publicar(cartas_por_area: dict[str, list[dict]]) -> None:
+    """Grava os arquivos das áreas: os flashcards da fábrica mais os autorais
+    (scripts/flashcards/autorais/), que a fábrica nunca altera."""
+    from autorais import ler_autorais
     SAIDA.mkdir(parents=True, exist_ok=True)
-    for area, cartas in cartas_por_area.items():
+    autorais = ler_autorais()
+    for area in sorted(set(cartas_por_area) | set(autorais)):
+        cartas = [f for f in cartas_por_area.get(area, []) if f.get("origem") != "autoral"] + autorais.get(area, [])
         cartas.sort(key=lambda f: f["id"])
         gravar_json(SAIDA / f"{area}.json", {"versao": VERSAO_FABRICA, "area": area, "flashcards": cartas})
 
 
-def ler_publicados() -> dict[str, list[dict]]:
+def ler_publicados(com_autorais: bool = False) -> dict[str, list[dict]]:
+    """Flashcards publicados. Por padrão, só os da fábrica (os autorais voltam na hora de publicar)."""
     pub: dict[str, list[dict]] = {}
     for arq in sorted(SAIDA.glob("*.json")):
         if arq.name == "indice.json":
             continue
-        pub[arq.stem] = ler_json(arq)["flashcards"]
+        pub[arq.stem] = [f for f in ler_json(arq)["flashcards"] if com_autorais or f.get("origem") != "autoral"]
     return pub
 
 
@@ -421,7 +427,8 @@ def cmd_gerar(args) -> int:
 
     if not pendentes:
         print("Nada pendente: o acervo está todo processado.")
-        reconstruir_indice(areas, pub, estado)
+        publicar(pub)
+        reconstruir_indice(areas, ler_publicados(com_autorais=True), estado)
         return 0
 
     lotes = [pendentes[i:i + args.lote] for i in range(0, len(pendentes), args.lote)]
@@ -469,18 +476,22 @@ def cmd_gerar(args) -> int:
         publicar(pub)
         gravar_json(ESTADO, estado)
         print(f"Lote {estado['lotes']}: {len(lote)} questões · {aprovados} publicados · {quarentena} em quarentena · {reprovados} sem flashcard")
-    indice = reconstruir_indice(areas, pub, estado)
+    indice = reconstruir_indice(areas, ler_publicados(com_autorais=True), estado)
     print(f"Publicados: {indice['total']} flashcards ({indice['batalha']} na Batalha, {indice['comImagem']} com imagem, {indice['quarentena']} em quarentena)")
     return 0
 
 
 def cmd_validar(_args) -> int:
-    _, questoes, _ = carregar_acervo()
-    pub = ler_publicados()
+    from autorais import validar_autoral
+    _, questoes, comentarios = carregar_acervo()
+    pub = ler_publicados(com_autorais=True)
     falhas = 0
     for cartas in pub.values():
         for f in cartas:
-            erros = validar(f, questoes.get(f["questao"]))
+            if f.get("origem") == "autoral":
+                erros = validar_autoral(f, questoes.get(f["questao"]), comentarios.get(f["questao"]))
+            else:
+                erros = validar(f, questoes.get(f["questao"]))
             if erros:
                 falhas += 1
                 print(f"{f['id']}: {'; '.join(erros)}")
@@ -491,7 +502,8 @@ def cmd_validar(_args) -> int:
 
 def cmd_indice(_args) -> int:
     areas, _, _ = carregar_acervo()
-    i = reconstruir_indice(areas, ler_publicados(), ler_json(ESTADO, {}))
+    publicar(ler_publicados())
+    i = reconstruir_indice(areas, ler_publicados(com_autorais=True), ler_json(ESTADO, {}))
     print(f"indice.json: {i['total']} flashcards em {len(i['areas'])} áreas")
     return 0
 
