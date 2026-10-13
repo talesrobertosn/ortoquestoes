@@ -16,6 +16,7 @@ import { COMBO_MINIMO, criarMotor, type Evento, type MotivoCura, type Partida } 
 import { CHAVE_AJUSTES, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_RECORDES, CHAVE_REGISTROS, lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Recordes, type RegistroFlashcard } from '../progresso'
 import { Cartao } from './Cartao'
 import { Cenario, TampoMesa } from './Cenario'
+import { climaDoAndar } from '../efeitos/pintura'
 import { Estudo } from './Estudo'
 import { Ator, BarraVida, Encaixe } from './Hud'
 import { Visualizador } from './Visualizador'
@@ -669,7 +670,7 @@ function ArenaJogo() {
   return (
     <ModalJogo titulo="Torneio de Flashcards" aoPedirFechar={pedirFechar}>
       <div className={classes} data-cenario={cenarioVisivel}>
-        <Cenario cena={modo === 'estudo' ? 'biblioteca' : cenarioVisivel} reduzido={reduzido} />
+        <Cenario cena={modo === 'estudo' ? 'biblioteca' : cenarioVisivel} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
 
         <header className="fc-topo">
           <div className="fc-abas" role="tablist" aria-label="Modo">
