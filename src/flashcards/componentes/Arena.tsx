@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
@@ -19,7 +19,8 @@ import {
   lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Bestiario, type Recordes, type RegistroFlashcard,
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, TituloChefe } from './Salas'
-import { Cartao } from './Cartao'
+import { Cartao, familiasDe } from './Cartao'
+import { ComChaves } from './Chaves'
 import { Cenario, TampoMesa } from './Cenario'
 import { climaDoAndar } from '../efeitos/pintura'
 import { Estudo } from './Estudo'
@@ -254,6 +255,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
 
   const carta = partida.atual ? motor.carta(partida.atual.id) : null
+  // família da carta da mesa: imagem, anatomia, revisão (errou da última vez) e duelo de chefe
+  const familiasCarta = useMemo(() => {
+    if (!carta) return []
+    const errou = ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})[carta.id]?.c === false
+    return familiasDe(carta, [...(errou ? ['revisao' as const] : []), ...(motor.inimigoAtual(partida).chefe ? ['chefe' as const] : [])])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [carta?.id, partida.andar])
   const inimigo = motor.inimigoAtual(partida)
   const intencao = motor.intencao(partida)
   const atributos = motor.atributos(partida)
@@ -981,6 +989,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     aoGirar={() => tocar('giro')}
                     reduzido={reduzido}
                     classe={(atacando ? 'fc-carta--ataca' : '') + (partida.atual.brilhante ? ' fc-carta--brilhante' : '')}
+                    familias={familiasCarta}
                   />
                 )}
               </div>
@@ -1044,7 +1053,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
 
               <div className="fc-acao">
                 <button type="button" className={`fc-principal ${botao.classe}`} disabled={!botao.ativo} onClick={() => { tocar('confirmar'); botao.acao() }}>
-                  <span>{botao.texto}</span>{botao.sub && <small>{botao.sub}</small>}
+                  <span className="fc-principal__runa" aria-hidden="true" />
+                  <Sprite nome={partida.fase === 'resposta' ? 'porta' : 'espada'} className="fc-sprite--icone fc-principal__icone" />
+                  <span className="fc-principal__texto"><span>{botao.texto}</span>{botao.sub && <small>{botao.sub}</small>}</span>
                 </button>
                 <p className="fc-dica" aria-live="polite">
                   {partida.fase === 'pergunta' && (pistas > 0 ? `Pista ×${pistas}: toque no pergaminho (P)` : selecionada === null ? 'Toque numa alternativa' : 'Toque de novo ou em Atacar')}
@@ -1213,7 +1224,7 @@ function Painel({ tipo, partida, intencao, aoFechar }: { tipo: 'heroi' | 'inimig
             </dl>
             <h3>Habilidades</h3>
             <ul className="fc-lista-efeitos">
-              <li><span><strong>Estilo</strong><small>{i.habilidade}</small></span></li>
+              <li><span><strong>Estilo</strong><small><ComChaves texto={i.habilidade} /></small></span></li>
               {i.porErroSeguido > 0 && <li><span><strong>{i.chefe ? 'Pressão' : 'Veneno'}</strong><small>+{i.porErroSeguido} de dano por erro seguido.</small></span></li>}
               {i.regenera && <li><span><strong>Regeneração</strong><small>Recupera {i.regenera.porRodada} por rodada, até {i.regenera.total} neste confronto (faltam {Math.max(0, i.regenera.total - partida.inimigo.regenerado)}).</small></span></li>}
               {i.rajada && i.rajada > 1 && <li><span><strong>Mordidas</strong><small>O golpe vem em {i.rajada} partes e passa pela Barreira reativa (o Escudo arcano ainda bloqueia).</small></span></li>}
@@ -1274,7 +1285,7 @@ function Recompensas({ partida, aoEscolher, aoEncerrar, rapido }: { partida: Par
                 <span className="fc-recompensa__fita">{d.requer ? 'Bênção em dupla' : d.patrono ? 'Bênção' : nomeTipo[d.tipo]} · {nomeRaridade[d.raridade]}</span>
                 <span className="fc-recompensa__pedestal"><span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span></span>
                 <strong>{d.nome}</strong>
-                <span className="fc-recompensa__texto">{d.texto}</span>
+                <span className="fc-recompensa__texto"><ComChaves texto={d.texto} /></span>
                 <small className="fc-recompensa__detalhe">{d.detalhe}</small>
                 {(d.patrono || d.requer) && <span className="fc-recompensa__patrono">{(d.requer ?? [d.patrono!]).map((x) => <em key={x} style={{ ['--cor' as string]: PATRONOS[x].cor }}><Sprite nome={PATRONOS[x].icone} className="fc-sprite--icone" />{PATRONOS[x].nome}</em>)}</span>}
                 {copias > 0 && <small className="fc-recompensa__aviso">Você já tem {d.tipo === 'reliquia' ? `${copias} cópia${copias > 1 ? 's' : ''}` : `${copias} carga${copias > 1 ? 's' : ''}`}</small>}

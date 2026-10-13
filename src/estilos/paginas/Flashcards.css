@@ -1073,3 +1073,150 @@
   .fc-bolsa--celular { display: inline-flex; }
   .fc-veu--portas, .fc-veu--sala { background: rgba(6, 4, 8, .96) !important; }
 }
+
+/* ============================================================ Acabamento premium (v4, 13/10/2026)
+ * Botões com metal em camadas (aro escuro, filete de ouro, face com bisel), brilho que corre no
+ * hover, estados claros (hover, pressionado, desligado, foco) e variantes por contexto.
+ * Cartas com gema de raridade, cantoneiras e fitas de família. Painéis com filete duplo.
+ */
+.fc-modal-veu {
+  --fc-metal-ouro: linear-gradient(#fff6cf 0%, #f6d27a 16%, #c8922e 48%, #e9b955 70%, #8a5a18 100%);
+  --fc-metal-bronze: linear-gradient(#e8c8a0 0%, #b07a48 30%, #6a4022 70%, #3a2010 100%);
+  --fc-metal-prata: linear-gradient(#ffffff 0%, #d8e2f0 25%, #8a98b0 60%, #4a5670 100%);
+  --fc-aro: 0 0 0 1.5px #0c0604, 0 0 0 3px #c8922e, 0 0 0 4px #fff1c2, 0 0 0 5.5px #0c0604;
+}
+
+/* ---- botão de ação (ouro) */
+.fc-botao { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: radial-gradient(ellipse at 50% -20%, rgba(255, 255, 255, .7), transparent 55%), var(--fc-metal-ouro);
+  box-shadow: var(--fc-aro), 0 6px 0 -1px #3a2408, 0 10px 18px rgba(0, 0, 0, .5), inset 0 -3px 0 rgba(90, 50, 10, .45), inset 0 2px 0 rgba(255, 255, 255, .6);
+  text-shadow: 0 1px 0 rgba(255, 245, 210, .6); transition: transform .14s, filter .14s, box-shadow .14s; }
+.fc-botao::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .55) 46%, transparent 62%) no-repeat; background-size: 250% 100%; background-position: 150% 0; transition: background-position .55s ease; }
+.fc-botao:not(:disabled):hover::before { background-position: -60% 0; }
+.fc-botao:not(:disabled):hover { filter: brightness(1.07) saturate(1.05); transform: translateY(-2px); }
+.fc-botao:not(:disabled):active { transform: translateY(3px); box-shadow: var(--fc-aro), 0 2px 0 -1px #3a2408, 0 4px 8px rgba(0, 0, 0, .5), inset 0 3px 6px rgba(90, 50, 10, .45); }
+.fc-botao:disabled { cursor: not-allowed; filter: grayscale(.85) brightness(.62); }
+.fc-botao:focus-visible { outline: 3px solid #fff1c2; outline-offset: 5px; }
+/* secundário: couro escuro com filigrana dourada */
+.fc-botao--secundario { color: #f6e6c2 !important; text-shadow: 0 1px 0 #000;
+  background: radial-gradient(ellipse at 50% -10%, rgba(255, 220, 160, .18), transparent 60%), linear-gradient(#4a3020, #24160c);
+  box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #8a6a3a, 0 0 0 4px rgba(255, 230, 180, .35), 0 0 0 5.5px #0c0604, 0 6px 0 -1px #0c0604, 0 10px 18px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .15); }
+.fc-botao--secundario:not(:disabled):hover { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #e9b955, 0 0 0 4px #fff1c2, 0 0 0 5.5px #0c0604, 0 0 18px rgba(233, 185, 85, .35), 0 10px 18px rgba(0, 0, 0, .5); }
+/* variantes de contexto */
+.fc-botao--arcano { color: #fff !important; text-shadow: 0 1px 0 #061226; background: radial-gradient(ellipse at 50% -20%, rgba(255, 255, 255, .55), transparent 55%), linear-gradient(#bfe6ff, #3a8ae0 40%, #1a4a9a 80%, #0e2a5a); }
+.fc-botao--epico { color: #fff !important; text-shadow: 0 1px 0 #1a0630; background: radial-gradient(ellipse at 50% -20%, rgba(255, 255, 255, .55), transparent 55%), linear-gradient(#ead4ff, #a070f0 40%, #6a3ab8 80%, #3a1a6a); }
+.fc-botao--perigo { color: #fff !important; text-shadow: 0 1px 0 #2a0404; background: radial-gradient(ellipse at 50% -20%, rgba(255, 255, 255, .5), transparent 55%), linear-gradient(#ffc0a8, #e0503a 40%, #a02414 80%, #5a0a06); }
+.fc-botao--lendario { background: radial-gradient(ellipse at 50% -20%, rgba(255, 255, 255, .7), transparent 55%), linear-gradient(100deg, #ffe08a, #ffb04a, #ff8ad0, #9fe8ff, #ffe08a); background-size: 100% 100%, 300% 100%; animation: fc-lendario-botao 4s linear infinite; }
+@keyframes fc-lendario-botao { to { background-position: 0 0, 300% 0; } }
+
+/* ---- botão pequeno (ações da carta) */
+.fc-botao-pequeno { position: relative; gap: 6px; color: #fff1c2 !important; font: 700 13.5px var(--fc-ui) !important;
+  background: linear-gradient(#5a3a22, #2e1c10); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 2.5px rgba(233, 185, 85, .6), 0 3px 0 #0c0604, inset 0 1px 0 rgba(255, 255, 255, .18); transition: transform .12s, box-shadow .12s; }
+.fc-botao-pequeno:hover { transform: translateY(-1px); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 2.5px #f2c45a, 0 0 12px rgba(242, 196, 90, .4), 0 4px 0 #0c0604; }
+.fc-botao-pequeno:active { transform: translateY(2px); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 2.5px #f2c45a, 0 1px 0 #0c0604; }
+
+/* ---- botão principal: selo de pedra com gema (Atacar / Seguir) */
+.fc-principal { display: inline-flex !important; align-items: center; gap: 10px; min-width: 176px; padding: 10px 22px 10px 14px !important; border-radius: 999px !important; overflow: hidden; isolation: isolate;
+  color: #d8d0c0 !important; background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, .14), transparent 60%), linear-gradient(#4a4450, #24202a) !important;
+  box-shadow: 0 0 0 2px #0c0604, 0 0 0 4px #6a6276, 0 0 0 5px rgba(255, 255, 255, .25), 0 0 0 7px #0c0604, 0 8px 0 -2px #0c0604, 0 14px 24px rgba(0, 0, 0, .55), inset 0 2px 0 rgba(255, 255, 255, .2), inset 0 -4px 8px rgba(0, 0, 0, .4) !important; }
+.fc-principal__texto { display: grid; justify-items: start; gap: 1px; }
+.fc-modal .fc-principal__icone { width: 34px; height: 34px; flex: none; filter: drop-shadow(0 2px 0 rgba(0, 0, 0, .5)); }
+.fc-principal:disabled .fc-principal__icone { filter: grayscale(1) brightness(.7); }
+.fc-principal__runa { position: absolute; inset: -40%; z-index: -1; opacity: 0; pointer-events: none; background: conic-gradient(from 0deg, transparent 0 20%, rgba(255, 255, 255, .45) 25%, transparent 30% 70%, rgba(255, 255, 255, .35) 75%, transparent 80%); animation: fc-runa 3.5s linear infinite; }
+@keyframes fc-runa { to { transform: rotate(360deg); } }
+.fc-principal.pronto, .fc-principal.seguir { color: #fff !important; }
+.fc-principal.pronto { background: radial-gradient(ellipse at 50% -10%, rgba(255, 255, 255, .55), transparent 55%), linear-gradient(#8af0a0, #2ea852 45%, #136a30 80%, #0a3a1a) !important; text-shadow: 0 2px 0 #062a10;
+  box-shadow: 0 0 0 2px #0c0604, 0 0 0 4px #f2c45a, 0 0 0 5px #fff1c2, 0 0 0 7px #0c0604, 0 8px 0 -2px #0c0604, 0 0 34px rgba(110, 240, 140, .6), 0 14px 24px rgba(0, 0, 0, .55), inset 0 2px 0 rgba(255, 255, 255, .45) !important; }
+.fc-principal.seguir { background: radial-gradient(ellipse at 50% -10%, rgba(255, 255, 255, .7), transparent 55%), var(--fc-metal-ouro) !important; color: #2a1606 !important; text-shadow: 0 1px 0 rgba(255, 245, 210, .6);
+  box-shadow: 0 0 0 2px #0c0604, 0 0 0 4px #fff1c2, 0 0 0 5px #c8922e, 0 0 0 7px #0c0604, 0 8px 0 -2px #0c0604, 0 0 34px rgba(255, 200, 90, .6), 0 14px 24px rgba(0, 0, 0, .55), inset 0 2px 0 rgba(255, 255, 255, .6) !important; }
+.fc-principal.pronto .fc-principal__runa, .fc-principal.seguir .fc-principal__runa { opacity: 1; }
+.fc-principal:not(:disabled):hover { transform: translateY(-3px) scale(1.02); }
+.fc-principal:not(:disabled):active { transform: translateY(3px) scale(.98); }
+.fc-principal:focus-visible { outline: 3px solid #fff1c2; outline-offset: 6px; }
+
+/* ---- topo: medalhões de metal (som, ajustes) e abas com gema */
+.fc-topo-botao { border-radius: 999px !important; background: radial-gradient(circle at 40% 25%, #5a4430, #24160c 72%) !important;
+  box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #8a6a3a, 0 0 0 4px rgba(255, 230, 180, .3), 0 0 0 5.5px #0c0604, 0 5px 10px rgba(0, 0, 0, .5), inset 0 2px 0 rgba(255, 255, 255, .18) !important; transition: transform .14s, box-shadow .14s !important; }
+.fc-topo-botao:hover { transform: translateY(-1px); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #e9b955, 0 0 0 4px #fff1c2, 0 0 0 5.5px #0c0604, 0 0 16px rgba(233, 185, 85, .45), 0 5px 10px rgba(0, 0, 0, .5) !important; }
+.fc-topo-botao[aria-pressed="false"] { color: #a89880 !important; }
+.fc-abas { padding: 5px !important; border-radius: 999px !important; background: linear-gradient(#1c120c, #0c0806) !important; box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #8a6a3a, 0 0 0 4px rgba(255, 230, 180, .25), 0 0 0 5.5px #0c0604, inset 0 2px 6px rgba(0, 0, 0, .6) !important; }
+.fc-abas button { border-radius: 999px !important; position: relative; transition: color .14s, background .14s; }
+.fc-abas button[aria-selected="true"] { background: radial-gradient(ellipse at 50% -10%, rgba(255, 255, 255, .7), transparent 55%), var(--fc-metal-ouro) !important; box-shadow: 0 0 0 1.5px #0c0604, 0 0 16px rgba(255, 200, 90, .45), inset 0 -2px 0 rgba(90, 50, 10, .4) !important; }
+.fc-abas button[aria-selected="true"]::after { content: ""; position: absolute; left: 50%; bottom: -7px; width: 8px; height: 8px; transform: translateX(-50%) rotate(45deg); background: #7fe0ff; box-shadow: 0 0 0 1.5px #0c0604, 0 0 8px #7fe0ff; }
+.fc-fechar { background: radial-gradient(circle at 40% 25%, #6a3a2a, #2a100a 72%) !important; }
+
+/* ---- painéis: filete duplo, cantos de metal e cabeça gravada */
+.fc-janela, .fc-sala__conteudo { position: relative; background: radial-gradient(ellipse at 50% 0%, rgba(255, 210, 140, .12), transparent 50%), linear-gradient(#2a1d24, #120b10) !important;
+  box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #8a6a3a, 0 0 0 4px rgba(255, 230, 180, .35), 0 0 0 6px #0c0604, 0 0 0 7px rgba(233, 185, 85, .35), 0 30px 60px rgba(0, 0, 0, .65) !important; }
+.fc-janela::before, .fc-sala__conteudo::before { content: ""; position: absolute; left: 50%; top: -9px; width: 16px; height: 16px; transform: translateX(-50%) rotate(45deg); background: radial-gradient(circle at 35% 35%, #fff6cf, #e9b955 50%, #6a4416); box-shadow: 0 0 0 2px #0c0604, 0 0 10px rgba(255, 200, 90, .6); }
+.fc-janela h2 { padding-bottom: 10px; background: linear-gradient(90deg, transparent, rgba(233, 185, 85, .55), transparent) bottom / 70% 1px no-repeat; }
+.fc-placa { background: radial-gradient(ellipse at 20% 0%, rgba(255, 200, 140, .12), transparent 55%), linear-gradient(rgba(34, 22, 26, .92), rgba(14, 9, 12, .94)) !important;
+  box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #6a5236, 0 0 0 4px rgba(255, 230, 180, .25), 0 0 0 5.5px #0c0604, 0 12px 24px rgba(0, 0, 0, .5) !important; }
+.fc-inimigo--chefe .fc-placa { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #c8922e, 0 0 0 4px #fff1c2, 0 0 0 5.5px #0c0604, 0 0 30px rgba(255, 120, 60, .35), 0 12px 24px rgba(0, 0, 0, .5) !important; }
+.fc-info { box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .35), 0 1px 0 rgba(0, 0, 0, .6); }
+.fc-heroi__dados { background: radial-gradient(ellipse at 20% 0%, rgba(120, 170, 255, .12), transparent 55%), linear-gradient(rgba(20, 22, 34, .92), rgba(10, 10, 16, .94)) !important;
+  box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #3a5a8a, 0 0 0 4px rgba(190, 220, 255, .25), 0 0 0 5.5px #0c0604, 0 12px 24px rgba(0, 0, 0, .5) !important; }
+.fc-encaixe { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px color-mix(in srgb, var(--cor, #8a6a3a) 70%, #000), 0 0 0 4px rgba(255, 255, 255, .2), 0 0 0 5.5px #0c0604 !important; }
+.fc-encaixe--usavel { animation: fc-encaixe-pronto 1.6s ease-in-out infinite; }
+@keyframes fc-encaixe-pronto { 50% { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px var(--cor), 0 0 0 4px #fff, 0 0 0 5.5px #0c0604, 0 0 18px var(--cor) !important; } }
+
+/* ---- alternativas: cartas de mão com moldura de metal e número em gema */
+.fc-alternativa { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #6a7aa0, 0 0 0 4px rgba(220, 230, 255, .35), 0 0 0 5.5px #0c0604, 0 10px 18px rgba(0, 0, 0, .5) !important; }
+.fc-alternativa > i { background: radial-gradient(circle at 35% 30%, #d8ecff, #3a7ad8 55%, #143470) !important; box-shadow: 0 0 0 2px #0c0604, 0 0 0 3px #fff1c2, 0 0 10px rgba(110, 170, 255, .6) !important; }
+.fc-slot-mao--sel .fc-alternativa { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #f2c45a, 0 0 0 4.5px #fff6d0, 0 0 0 6px #0c0604, 0 0 34px rgba(255, 210, 110, .7), 0 18px 28px rgba(0, 0, 0, .55) !important; }
+.fc-alternativa--certa { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #5fdc7a, 0 0 0 4.5px #e8ffe8, 0 0 0 6px #0c0604, 0 0 34px rgba(95, 220, 122, .8) !important; }
+.fc-alternativa--errada { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #e0503a, 0 0 0 4.5px #ffd0c0, 0 0 0 6px #0c0604, 0 0 30px rgba(224, 80, 58, .7) !important; animation: fc-tremor-carta .4s ease-in-out; }
+@keyframes fc-tremor-carta { 20% { transform: translateX(-6px) rotate(-2deg); } 40% { transform: translateX(5px) rotate(1.5deg); } 60% { transform: translateX(-3px); } }
+
+/* ---- flashcard: gema de raridade, cantoneiras e fitas de família */
+.fc-carta__borda { position: relative; }
+.fc-carta__gema { position: absolute; left: 50%; top: -11px; z-index: 4; width: 22px; height: 22px; transform: translateX(-50%) rotate(45deg); pointer-events: none;
+  background: radial-gradient(circle at 35% 30%, #fff, var(--b1) 30%, var(--b2) 65%, var(--b3)); box-shadow: 0 0 0 2px #0c0604, 0 0 0 3.5px var(--b1), 0 0 0 5px #0c0604, 0 0 16px var(--brilho); }
+.fc-carta--comum .fc-carta__gema { background: radial-gradient(circle at 35% 30%, #fff, #d8dde6 35%, #6b7380 75%, #3a404c); }
+.fc-carta__canto { position: absolute; z-index: 3; width: 22px; height: 22px; pointer-events: none; border: 3px solid var(--b1); filter: drop-shadow(0 0 2px #0c0604) drop-shadow(0 0 6px var(--brilho)); }
+.fc-carta__canto--1 { left: 3px; top: 3px; border-right: 0; border-bottom: 0; border-top-left-radius: 16px; }
+.fc-carta__canto--2 { right: 3px; top: 3px; border-left: 0; border-bottom: 0; border-top-right-radius: 16px; }
+.fc-carta__canto--3 { left: 3px; bottom: 3px; border-right: 0; border-top: 0; border-bottom-left-radius: 16px; }
+.fc-carta__canto--4 { right: 3px; bottom: 3px; border-left: 0; border-top: 0; border-bottom-right-radius: 16px; }
+.fc-carta--epica .fc-carta__gema, .fc-carta--lendaria .fc-carta__gema { animation: fc-gema 2.4s ease-in-out infinite; }
+@keyframes fc-gema { 50% { box-shadow: 0 0 0 2px #0c0604, 0 0 0 3.5px var(--b1), 0 0 0 5px #0c0604, 0 0 30px var(--brilho), 0 0 50px var(--brilho); } }
+.fc-carta--lendaria .fc-carta__borda { background: linear-gradient(150deg, #fff 0%, #fff1b0 8%, #e9b955 30%, #fff6d0 50%, #c08a24 72%, #6a4410 100%); }
+.fc-carta__fitas { position: absolute; z-index: 4; left: 18px; top: -12px; display: flex; gap: 6px; pointer-events: none; }
+.fc-fita { padding: 2px 10px; border-radius: 6px; font: 800 11px var(--fc-ui); font-style: normal; letter-spacing: .1em; text-transform: uppercase; color: #fff; text-shadow: 0 1px 0 rgba(0, 0, 0, .6); box-shadow: 0 0 0 1.5px #0c0604, 0 3px 6px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .35); }
+.fc-fita--imagem { background: linear-gradient(#6ad8d0, #1a7a8a); }
+.fc-fita--anatomia { background: linear-gradient(#ff9a8a, #a83a2a); }
+.fc-fita--revisao { background: linear-gradient(#c8a0ff, #6a3ab8); }
+.fc-fita--chefe { background: linear-gradient(#ffd27a, #c0501e); color: #2a0e04; text-shadow: 0 1px 0 rgba(255, 240, 200, .5); }
+.fc-carta--fam-imagem .fc-carta__cabeca { background: linear-gradient(#1e4a52, #0e262c); }
+.fc-carta--fam-anatomia .fc-carta__cabeca { background: linear-gradient(#5a2420, #2c100c); }
+.fc-carta--fam-revisao .fc-carta__cabeca { background: linear-gradient(#3e2a5a, #1e1430); }
+.fc-carta--fam-chefe .fc-carta__borda { box-shadow: 0 0 0 2px #120a04, 0 0 0 4px #ff7a3c, 0 0 0 5px #120a04, 0 0 40px rgba(255, 110, 50, .45), var(--fc-sombra-objeto) !important; }
+.fc-carta--fam-imagem .fc-carta__imagem { box-shadow: 0 0 0 2px #0c0604, 0 0 0 3px #3aa0a8, inset 0 0 20px rgba(0, 0, 0, .6); }
+.fc-carta--certo .fc-carta__borda { animation: fc-carta-certo .9s ease-out; }
+.fc-carta--errado .fc-carta__borda { animation: fc-carta-errado .9s ease-out; }
+@keyframes fc-carta-certo { 0% { box-shadow: 0 0 0 2px #120a04, 0 0 0 6px #5fdc7a, 0 0 60px rgba(95, 220, 122, .9); } }
+@keyframes fc-carta-errado { 0% { box-shadow: 0 0 0 2px #120a04, 0 0 0 6px #e0503a, 0 0 60px rgba(224, 80, 58, .9); } }
+
+/* ---- verso do baralho: brasão em relevo com filete de ouro */
+.fc-costas { background: radial-gradient(circle at 50% 50%, #e9b955 0 9%, #6a4416 10% 13%, transparent 14%), repeating-conic-gradient(from 45deg, #3a1a2a 0 25%, #2a1020 0 50%) 0 0 / 12px 12px, linear-gradient(#4a1a2a, #200810) !important;
+  box-shadow: inset 0 0 0 2px #e9b955, inset 0 0 0 4px #200810, inset 0 0 0 5px rgba(233, 185, 85, .5), 0 4px 10px rgba(0, 0, 0, .5) !important; }
+
+/* ---- palavras-chave com dica (Runeterra) */
+.fc-chave { position: relative; display: inline-flex; align-items: center; gap: 4px; padding: 0 6px; border-radius: 6px; font-weight: 800; color: #ffe08a; background: rgba(233, 185, 85, .14); box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .45); cursor: help; }
+.fc-chave__dica { position: absolute; left: 50%; bottom: calc(100% + 8px); z-index: 80; width: max-content; max-width: 260px; transform: translateX(-50%) translateY(4px); opacity: 0; pointer-events: none;
+  padding: 8px 10px; border-radius: 10px; font: 500 13.5px/1.4 var(--fc-texto); color: #f6e6c2; background: linear-gradient(#2a1d24, #120b10); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 2.5px #8a6a3a, 0 10px 20px rgba(0, 0, 0, .6); transition: opacity .15s, transform .15s; }
+.fc-chave:hover .fc-chave__dica, .fc-chave:focus-visible .fc-chave__dica { opacity: 1; transform: translateX(-50%); }
+
+@media (prefers-reduced-motion: reduce) { .fc-principal__runa, .fc-botao--lendario, .fc-carta__gema, .fc-encaixe--usavel { animation: none !important; } }
+@media (max-width: 640px) {
+  .fc-principal { min-width: 0; padding: 8px 16px 8px 10px !important; gap: 6px; }
+  .fc-modal .fc-principal__icone { width: 26px; height: 26px; }
+  .fc-carta__fitas { left: 12px; }
+  .fc-fita { font-size: 10px; padding: 1px 7px; }
+}
+@media (min-width: 641px) {
+  .fc-heroi__dados { width: clamp(250px, 21vw, 310px); }
+  .fc-heroi__nome { flex-wrap: nowrap; min-width: 0; }
+  .fc-heroi__nome .fc-combo { min-width: 0; overflow: hidden; }
+  .fc-heroi__dados .fc-vida b { min-width: 64px; font-size: 16px; }
+}
