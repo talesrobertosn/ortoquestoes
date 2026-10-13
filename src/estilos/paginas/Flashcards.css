@@ -696,7 +696,7 @@
   .fc-categoria__icone { width: 46px; height: 46px; }
   .fc-modal .fc-categoria__icone .fc-sprite { width: 32px; height: 32px; }
   .fc-estudo__mesa { grid-column: 1; grid-row: 2; }
-  .fc-estudo__botoes { grid-row: 3; gap: 8px; flex-wrap: nowrap; }
+  .fc-estudo__botoes { grid-row: 3; gap: 8px; flex-wrap: wrap; } /* o veredito ocupa a linha de cima; os três botões dividem a de baixo */
   .fc-botao-aval { min-width: 0; flex: 1; padding: 8px 6px; min-height: 60px; }
   .fc-botao-aval strong { font-size: 17px; }
   .fc-botao-aval small { font-size: 11px; }
@@ -1676,7 +1676,7 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
    No Estudo, o painel fica à esquerda e as alternativas ou os botões de
    avaliação à direita. Interface mais leve: topo fino, sem títulos.
    ============================================================ */
-@media (orientation: landscape) and (max-height: 520px) and (min-width: 560px) {
+@media (orientation: landscape) and (max-height: 520px) and (min-width: 480px) {
   .fc-modal-veu { padding: 0 !important; }
   .fc-modal { width: 100vw; height: 100dvh; max-height: none; min-height: 0; border-radius: 0; box-shadow: none; }
   .fc-modal__canto { display: none; }
@@ -1709,7 +1709,7 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   .fc-ator--inimigo { margin: 0; }
   .fc-mesa { grid-area: mesa; margin: 0; border-radius: 14px; }
   .fc-mesa__tampo, .fc-mesa::after { border-radius: 14px; }
-  .fc-mesa__palco { padding: 8px 10px; }
+  .fc-mesa__palco { padding: 8px 10px; grid-template-columns: minmax(0, 1fr); min-width: 0; }
   .fc-pilha { display: none; }
   .fc-carta__cabeca { padding: 6px 10px; gap: 8px; }
   .fc-carta__titulo strong { font-size: 12.5px; }
@@ -1740,12 +1740,18 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   .fc-dica { display: none; }
 
   /* Estudo: painel à esquerda, flashcard no centro, respostas à direita */
-  .fc-estudo { grid-template-columns: minmax(150px, 180px) minmax(0, 1fr) minmax(0, 300px); grid-template-rows: minmax(0, 1fr); gap: 8px 12px; padding: 4px 10px 8px; }
+  .fc-estudo { grid-template-columns: minmax(120px, min(180px, 22vw)) minmax(0, 1fr) minmax(160px, min(300px, 34vw)); grid-template-rows: minmax(0, 1fr); gap: 8px 12px; padding: 4px 10px 8px; }
   .fc-estudo__painel { padding: 10px; gap: 8px; align-self: stretch; align-content: start; }
   .fc-estudo__contagem b { font-size: 24px; }
   .fc-estudo__placar div { padding: 3px 8px; font-size: 12.5px; }
   .fc-estudo__titulo { font-size: 13px; }
-  .fc-estudo__mesa { grid-column: 2; grid-row: 1; }
+  .fc-estudo__mesa { grid-column: 2; grid-row: 1; grid-template-columns: minmax(0, 1fr); min-width: 0; }
+  /* de 480 a 640 px também valem as regras do celular em pé: o painel volta a ser coluna */
+  .fc-estudo__painel { display: grid; align-items: start; min-width: 0; }
+  .fc-estudo__titulo { display: block; }
+  .fc-estudo__placar { display: grid; }
+  .fc-estudo__barra { flex: none; }
+  .fc-estudo__painel .fc-interruptor { margin-left: 0; }
   .fc-estudo__botoes, .fc-estudo__respondidas + .fc-estudo__botoes { grid-column: 3; grid-row: 1; flex-direction: column; flex-wrap: nowrap; align-items: stretch; justify-content: center; gap: 8px; }
   .fc-estudo__respondidas { display: none; }
   .fc-estudo:has(.fc-estudo__respondidas) { grid-template-rows: minmax(0, 1fr); }
@@ -1760,6 +1766,13 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   .fc-biblioteca__cabeca { padding: 10px 12px; }
   .fc-categoria { padding: 9px 12px; }
   .fc-categoria__icone { width: 44px; height: 44px; }
+}
+
+/* celular deitado estreito (480 a 700 px, ex.: 568×320): painel do Estudo só com o essencial e sem selo de raridade sobre o título */
+@media (orientation: landscape) and (max-height: 520px) and (min-width: 480px) and (max-width: 700px) {
+  .fc-estudo__titulo, .fc-estudo__placar { display: none; }
+  .fc-estudo__painel { gap: 6px; padding: 8px; }
+  .fc-raridade { display: none; }
 }
 
 /* título do flashcard: hifeniza em vez de partir a palavra no meio ("ACROMIOCLAVIC ULAR") */

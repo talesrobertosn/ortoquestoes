@@ -81,8 +81,9 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
   useEffect(() => {
     const alvo = base.current
     if (!alvo) return
-    let espera = 0, ultimo = ''
+    let espera = 0, ultimo = '', vivo = true
     const pintar = () => {
+      if (!vivo) return
       const w = alvo.clientWidth, h = alvo.clientHeight
       const chave = `${w}x${h}`
       if (chave === ultimo || !w) return
@@ -92,7 +93,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
       // Floresta e Biblioteca: camadas pintadas offline (ver efeitos/cenariosPintados.ts)
       const nomePintado = CENAS_PINTADAS[cena]
       const pintado = nomePintado ? cenarioPintadoPronto(nomePintado) : null
-      if (nomePintado && pintado === undefined) carregarCenarioPintado(nomePintado).then((r) => { if (r) { ultimo = ''; pintar() } })
+      if (nomePintado && pintado === undefined) carregarCenarioPintado(nomePintado).then((r) => { if (r && vivo) { ultimo = ''; pintar() } })
       if (pintado) { planos.luz = novo(); pintarCamadas(planos, pintado, w, h) }
       else pintarCena(planos, cena)
       const q = Math.min(2, window.devicePixelRatio || 1)
@@ -135,7 +136,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
     pintar()
     const obs = new ResizeObserver(() => { window.clearTimeout(espera); espera = window.setTimeout(pintar, 140) })
     obs.observe(alvo)
-    return () => { obs.disconnect(); window.clearTimeout(espera) }
+    return () => { vivo = false; obs.disconnect(); window.clearTimeout(espera) }
   }, [cena, clima])
 
   useEffect(() => {

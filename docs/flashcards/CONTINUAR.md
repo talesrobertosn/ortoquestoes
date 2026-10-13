@@ -16,7 +16,7 @@ Atualizado em 13/10/2026, no fim das Etapas 1 a 8 da direção criativa.
 | Branch de trabalho | `claude/sharp-goodall-pl7kp7` |
 | Base (publica no GitHub Pages) | `claude/pdfs-questoes-tp64dr` |
 | Etapa 1 integrada | PR #219 |
-| Etapas 2 a 8 | PR #220 (se ainda estiver aberto: confira o CI e faça o merge) |
+| Etapas 2 a 8 | PR #220 (aberto; ver "Parou aqui" abaixo) |
 | Relatório da Etapa 1 | https://claude.ai/artifact/USHFDMekPZmT5ptqcsVd1y |
 | Relatório das Etapas 2 a 8 | https://claude.ai/artifact/FZJtaBEu91gh6qbxLs5T9M |
 | Passagem detalhada (o que foi feito e o que falta, etapa por etapa) | [PASSAGEM-ETAPA1.md](PASSAGEM-ETAPA1.md) |
@@ -49,6 +49,21 @@ Atualizado em 13/10/2026, no fim das Etapas 1 a 8 da direção criativa.
    - Com elas, as sinergias de relíquias.
 10. **Trilha:** floresta, masmorra, covil e sala.
 11. **Bestiário:** variantes em volume (golem, guardião, serpente, gosma) e a Gosma de Cimento modelada.
+12. **Revisão do PR #219** (Codex): o cenário pintado não repinta mais com a cena antiga quando se troca Batalha/Estudo antes de as camadas carregarem; o corte do celular deitado é o mesmo no CSS e no `usarFaixa` (paisagem, altura ≤ 520 px, largura ≥ 480 px), com o flashcard preso à coluna do meio e o painel do Estudo em coluna de 480 a 700 px.
+13. **Celular em pé, Estudo:** os botões Errei, Hesitei e Sabia ficavam espremidos ao lado do veredito; agora o veredito ocupa a linha de cima e os três botões dividem a de baixo.
+
+## Parou aqui (13/10/2026, fim da sessão)
+
+O último commit ("Correções da revisão…") já está no PR #220. Falta:
+
+1. **Conferir o teste novo** em `fixtures/testar_flashcards.mjs`, no bloco "Salas de evento". A parte de "reforçar respeita o máximo de cargas" pega a primeira recompensa que tem `maximo`, que pode não ser um poder.
+   - Troque por um poder de verdade: `m.PODERES.find((r) => m.RECOMPENSAS[r].maximo === 1)`, com `ouro: 60` no estado.
+   - Confirme que o teste falha sem a correção em `aplicarEfeitoSala` (`cargas` com `Math.min`).
+2. **Rodar os testes:** `npm test`, `npx tsc --noEmit`, `npm run build` e Playwright em 1400×860, 390×844, 844×390, 600×360 e 568×320.
+3. **Responder os comentários do Codex no PR #220** (cargas, cura da forja e peso das relíquias, já corrigidos) e resolver as conversas.
+   - No PR #219 (já mesclado) também há dois comentários, cenário antigo e corte do deitado, já corrigidos neste commit.
+4. **Ler as notificações novas do PR #220.** Com o CI ("verificar") verde, fazer o merge do PR #220 na base `claude/pdfs-questoes-tp64dr`.
+5. **Depois do merge,** recomeçar a branch: `git fetch origin claude/pdfs-questoes-tp64dr && git checkout -B claude/sharp-goodall-pl7kp7 origin/claude/pdfs-questoes-tp64dr && git push -f -u origin claude/sharp-goodall-pl7kp7`.
 
 ## Próximos passos sugeridos (em ordem)
 

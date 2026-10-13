@@ -341,6 +341,14 @@ try {
     assert.equal(depois.andar, base.andar + 1)
     const pobre = { ...na.estado, ouro: 10 }
     assert.equal(motor.escolherNaSala(pobre, temperar).estado, pobre)
+    // ferido, temperar dá exatamente +10 de vida (sem cura extra); reforçar respeita o máximo de cargas de cada poder
+    const ferido = motor.escolherNaSala({ ...na.estado, vida: 50 }, temperar).estado
+    assert.equal(ferido.vida, 60)
+    const reforcar = na.estado.sala.opcoes.findIndex((o) => o.efeitos.some((f) => f.tipo === 'cargas'))
+    const poder = m.PODERES.find((r) => m.RECOMPENSAS[r].maximo === 1) ?? m.PODERES[0]
+    const max = m.RECOMPENSAS[poder].maximo ?? 3
+    const reforcado = motor.escolherNaSala({ ...na.estado, ouro: 60, encaixes: [{ tipo: poder, carga: max }] }, reforcar).estado
+    assert.equal(reforcado.encaixes[0].carga, max, 'carga passou do máximo na sala')
     // a curandeira cura de graça; o baú paga moedas (com ou sem armadilha) e nunca derruba
     for (const tipo of ['curandeira', 'bau', 'secreta', 'evento']) {
       const q = { ...motor.novaPartida(62).estado, vida: 40, ouro: 50, fase: 'portas', portas: [{ tipo: 'sala', sala: tipo }] }

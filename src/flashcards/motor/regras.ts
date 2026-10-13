@@ -999,8 +999,14 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
   function reliquiaSorteada(p: Partida, s: number, minimas: string[]): [Recompensa | null, number] {
     const lista = RELIQUIAS.filter((r) => disponivel(p, r) && !RECOMPENSAS[r].requer && minimas.includes(RECOMPENSAS[r].raridade))
     if (!lista.length) return [null, s]
-    const [u, q] = sortear(s)
-    return [lista[Math.floor(u * lista.length)], q]
+    // mesmo sorteio ponderado das portas (raridade e talento da sorte): maior chave log(u)/peso vence
+    let melhor = lista[0], chave = -Infinity, q = s
+    for (const r of lista) {
+      const [u, prox] = sortear(q); q = prox
+      const k = Math.log(Math.max(u, 1e-12)) / peso(p, r)
+      if (k > chave) { chave = k; melhor = r }
+    }
+    return [melhor, q]
   }
 
   /** Monta a sala: opções com custo e efeito. Os textos falam com o residente, sem anatomia nos enfeites. */
@@ -1009,7 +1015,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const ato = Math.floor(p.andar / 3)
     if (tipo === 'ferreiro') {
       return [{ tipo, titulo: 'Forja do Mestre Ferreiro', icone: 'bigorna', fala: 'Placa torta não consolida. Deixa que eu acerto o teu equipamento.', opcoes: [
-        { rotulo: 'Temperar a armadura', detalhe: '+10 de vida máxima e cura 10.', icone: 'escudo', custoOuro: 40, efeitos: [{ tipo: 'vidaMax', valor: 10 }, { tipo: 'cura', fracao: 0.1 }] },
+        { rotulo: 'Temperar a armadura', detalhe: '+10 de vida máxima e cura 10.', icone: 'escudo', custoOuro: 40, efeitos: [{ tipo: 'vidaMax', valor: 10 }] },
         { rotulo: 'Reforçar os poderes', detalhe: '+1 carga em cada poder equipado.', icone: 'martelo', custoOuro: 35, precisaPoder: true, efeitos: [{ tipo: 'cargas', valor: 1 }] },
         { rotulo: 'Só olhar a forja', detalhe: 'Segue para o próximo andar.', icone: 'porta', efeitos: [] },
       ] }, s]
@@ -1069,7 +1075,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     if (f.tipo === 'ouro') return ganharOuro(e, f.valor, 'sala', eventos)
     if (f.tipo === 'cristais') return ganharCristais(e, f.valor, eventos)
     if (f.tipo === 'vidaMax') return { ...e, vidaMax: e.vidaMax + f.valor, vida: e.vida + f.valor }
-    if (f.tipo === 'cargas') return { ...e, encaixes: e.encaixes.map((x) => ({ ...x, carga: x.carga + f.valor })) }
+    if (f.tipo === 'cargas') return { ...e, encaixes: e.encaixes.map((x) => ({ ...x, carga: Math.min(RECOMPENSAS[x.tipo].maximo ?? 3, x.carga + f.valor) })) }
     if (f.tipo === 'perdeVida') return { ...e, vida: Math.max(1, e.vida - Math.round(e.vidaMax * f.fracao)) }
     return aplicarRecompensa(e, f.id, eventos)
   }

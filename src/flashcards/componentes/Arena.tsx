@@ -107,7 +107,12 @@ function patamarSalvo(): Partida | null {
 /** deitado: celular na horizontal (tela baixa e mais larga que alta), com layout próprio em três colunas. */
 type FaixaTela = 'celular' | 'deitado' | 'baixa' | 'larga'
 function usarFaixa(): FaixaTela {
-  const calcular = (): FaixaTela => (window.innerWidth <= 640 ? 'celular' : window.innerHeight <= 520 && window.innerWidth > window.innerHeight ? 'deitado' : window.innerHeight <= 820 ? 'baixa' : 'larga')
+  // mesmo corte do CSS "Celular deitado": (orientation: landscape) and (max-height: 520px) and (min-width: 480px)
+  const calcular = (): FaixaTela => {
+    const w = window.innerWidth, h = window.innerHeight
+    if (h <= 520 && w > h && w >= 480) return 'deitado'
+    return w <= 640 ? 'celular' : h <= 820 ? 'baixa' : 'larga'
+  }
   const [faixa, definir] = useState(calcular)
   useEffect(() => {
     const aoMudar = () => definir(calcular())
