@@ -147,16 +147,16 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "heroi-1": {
-  "largura": 96,
-  "altura": 96,
+  "largura": 112,
+  "altura": 120,
   "colunas": 6,
   "ancora": [
-   46,
-   90
+   54,
+   114
   ],
   "caixa": [
-   20,
-   6,
+   28,
+   30,
    50,
    87
   ],
@@ -194,18 +194,18 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "heroi-2": {
-  "largura": 96,
-  "altura": 96,
+  "largura": 112,
+  "altura": 120,
   "colunas": 6,
   "ancora": [
-   46,
-   90
+   54,
+   114
   ],
   "caixa": [
-   18,
-   6,
-   52,
-   87
+   25,
+   29,
+   54,
+   88
   ],
   "animacoes": {
    "parado": {
@@ -241,18 +241,18 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "heroi-3": {
-  "largura": 96,
-  "altura": 96,
+  "largura": 112,
+  "altura": 120,
   "colunas": 6,
   "ancora": [
-   46,
-   90
+   54,
+   114
   ],
   "caixa": [
-   18,
-   6,
-   52,
-   87
+   24,
+   27,
+   56,
+   91
   ],
   "animacoes": {
    "parado": {
@@ -288,18 +288,18 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "heroi-4": {
-  "largura": 96,
-  "altura": 96,
+  "largura": 112,
+  "altura": 120,
   "colunas": 6,
   "ancora": [
-   46,
-   90
+   54,
+   114
   ],
   "caixa": [
-   18,
-   6,
-   52,
-   87
+   22,
+   25,
+   59,
+   93
   ],
   "animacoes": {
    "parado": {
@@ -335,18 +335,18 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "heroi-5": {
-  "largura": 96,
-  "altura": 96,
+  "largura": 112,
+  "altura": 120,
   "colunas": 6,
   "ancora": [
-   46,
-   90
+   54,
+   114
   ],
   "caixa": [
-   18,
-   6,
-   53,
-   87
+   21,
+   24,
+   62,
+   94
   ],
   "animacoes": {
    "parado": {
@@ -382,18 +382,18 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "heroi-6": {
-  "largura": 96,
-  "altura": 96,
+  "largura": 112,
+  "altura": 120,
   "colunas": 6,
   "ancora": [
-   46,
-   90
+   54,
+   114
   ],
   "caixa": [
-   13,
-   5,
-   58,
-   88
+   19,
+   12,
+   65,
+   107
   ],
   "animacoes": {
    "parado": {

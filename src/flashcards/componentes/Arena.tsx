@@ -1026,7 +1026,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
               <div className="fc-heroi">
-                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi * (1 + 0.06 * (partida.estagio - 1))} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
+                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                   <button type="button" className="fc-ator__toque" aria-label="Ver o seu herói: atributos, poderes e relíquias" onClick={() => { tocar('selecao'); definirPainel('heroi') }} />
                 </Ator>
