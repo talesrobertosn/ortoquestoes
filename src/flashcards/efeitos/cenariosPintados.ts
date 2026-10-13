@@ -3,6 +3,7 @@
  *   campo       Floresta das Fises Antigas (`scripts/cenarios/floresta.py`), 1º lugar da Cripta
  *   biblioteca  Biblioteca Ancestral (`scripts/cenarios/biblioteca.py`), o modo Estudo
  *   covil       Covil do Dragão (`scripts/cenarios/covil.py`), chefe Dragão de Ossos
+ *   masmorra    Masmorra (`scripts/cenarios/masmorra.py`), 2º andar e o resto dos atos de masmorra
  *
  * Diferente das outras cenas, que são pintadas em código a cada tamanho, estas
  * são pintadas OFFLINE com `scripts/cenarios/pintor.py` (ruído, voronoi,
@@ -24,7 +25,7 @@ type Camada = (typeof CAMADAS)[number]
 export type ImagensCenario = Record<Formato, Record<Camada, HTMLImageElement>>
 
 /** Cena do jogo → nome do arquivo pintado. */
-export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil' }
+export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra' }
 
 const promessas = new Map<string, Promise<ImagensCenario | null>>()
 const prontas = new Map<string, ImagensCenario | null>()

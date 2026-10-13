@@ -1785,3 +1785,10 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   background: radial-gradient(closest-side, rgba(8, 5, 4, .38), rgba(8, 5, 4, .18) 60%, transparent); }
 /* celular: o flashcard fica acima do adversário (as garras do Dragão de Ossos cobriam o título) */
 @media (max-width: 640px) { .fc-batalha > .fc-mesa { z-index: 3; } .fc-batalha > .fc-inimigo { z-index: 2; } }
+/* flashcard com imagem em tela baixa: o botão "Ver imagem" fica preso à base do miolo (antes ficava abaixo da dobra) */
+.fc-carta__figura--apertada { position: sticky; bottom: -16px; z-index: 1; margin-bottom: -16px; padding: 8px 0 14px; background: linear-gradient(rgba(240, 226, 192, 0), #efdfba 26%); }
+@media (max-height: 820px) and (min-width: 641px) { .fc-carta__figura--apertada { bottom: -12px; margin-bottom: -12px; padding-bottom: 10px; } }
+.fc-carta__figura--apertada .fc-ver-imagem { min-height: 0; padding-block: 5px; }
+.fc-carta__figura--apertada .fc-ver-imagem img { width: 46px; height: 34px; }
+.fc-carta__figura--apertada .fc-ver-imagem small { display: none; }
+@media (max-height: 900px) and (min-width: 641px) { .fc-carta__miolo--com-imagem .fc-carta__pergunta { font-size: clamp(16px, .6vw + 9px, 19px); line-height: 1.3; } }
