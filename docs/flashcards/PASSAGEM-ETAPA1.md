@@ -44,36 +44,69 @@ Todos usam `chromium.launch({ executablePath: '/opt/pw-browsers/chromium' })`, s
 - **Assar:** `cd scripts/sprites && python3 assar.py heroi --estagio N` (N de 1 a 6), depois `python3 scripts/sprites/indice.py`.
 - **Capturas:** `node .capturas/heroi.mjs <pasta> <w> <h> <dpr>` mostra os 6 estágios no jogo.
 
-## Etapa 3: chefes, começando pelo Dragão de Ossos (em andamento)
-- **Primeira passada** em `scripts/sprites/dragao.py`. A versão anterior está no histórico do git.
-  - O crânio ficou 1,5 vez maior, via `cab_o.escalado(1.5)`, com um segundo par de chifres.
-  - Pescoço, coluna e cauda estão mais grossos.
-  - As costelas viraram arcos curvos que descem da coluna; antes eram toros vistos de perfil e sumiam.
-  - Caixa torácica maior, com núcleo de fogo-fátuo maior.
-  - Patas robustas (as da frente 25% mais grossas), garras grandes e fogo nas juntas.
-  - Asas maiores, com a membrana indo até perto das pontas dos dedos e a borda rasgada.
-- **Falta:**
-  - conferir no jogo, no andar 12 (Dragão de Ossos, cenário `covil`): `__torneio.ir(12, semente)`;
-  - checar se o quadro de 264×216 ainda cabe tudo (asas e cauda);
-  - ajustar `CRESCE.dragao` no Hud, se ficar grande demais;
-  - passar o mesmo tratamento ao Guardião.
-- Variantes `escarlate` e `ancestral` ainda usam o desenho antigo em código, porque não têm folha própria.
+## Etapa 3: chefes (concluída)
+- **Dragão de Ossos** (`scripts/sprites/dragao.py`):
+  - crânio 1,5× (`cab_o.escalado(1.5)`) com segundo par de chifres;
+  - pescoço, coluna e cauda grossos;
+  - costelas como arcos curvos;
+  - patas robustas com garras e fogo-fátuo nas juntas;
+  - asas maiores com membrana rasgada.
+  - No Hud, `CRESCE.dragao` passou de 1,2 para 1,5.
+- **Guardião do Acetábulo** (`guardiao.py`):
+  - tabardo vermelho com barra de ouro;
+  - rebites no peitoral;
+  - escudo-taça com anel e quatro runas gravados na superfície.
+- O topo da arena fica acima dos personagens (`.fc-arena > .fc-topo { z-index: 6 }`). No celular, o flashcard fica acima do adversário.
 
-## Etapas 4 a 8 (não começadas)
-4. **Interface mais leve.** A hierarquia é: pergunta, alternativas, personagens e estado.
-   - Proposta: reduzir a placa do adversário e os selos.
-   - Esconder "Fúria em N" atrás de um ícone.
-   - Topo mais fino.
-5. **Demais cenários pintados offline**, com o mesmo pintor (`scripts/cenarios/`). Veja "Como fazer um cenário novo" em `ARTE.md`.
-   - Ordem sugerida: Masmorra, Covil e Torre.
-6. **Gameplay e NPCs:**
-   - sinergias;
-   - ferreiro e curandeiro;
-   - baú;
-   - sala secreta;
-   - eventos.
-7. **Música e polimento.**
-8. **Bestiário:** qualidade antes de quantidade. Folhas assadas para os outros arquétipos.
+## Etapa 4: interface mais leve (concluída)
+- A placa do adversário mostra no máximo dois selos (fúria e golpe especial). O resto vai num botão `+N`, que abre o painel do adversário (`Arena.tsx`, bloco "Interface mais leve").
+- Encaixes vazios e pilhas ficam mais apagados, e o cenário escurece em volta do flashcard (`Flashcards.css`).
+- Flashcard com imagem em tela baixa: o botão "Ver imagem" fica preso à base do miolo, e a pergunta fica menor.
+
+## Etapa 5: cenários pintados (concluída para Floresta, Biblioteca, Covil e Masmorra)
+- `scripts/cenarios/covil.py` e `scripts/cenarios/masmorra.py`, ligados em `CENAS_PINTADAS`.
+- O clima do andar (chuva, noite) não entra nas cenas internas (`INTERNAS` em `Cenario.tsx`).
+- **Faltam:** Torre, Salão, Catacumba, Forja e os outros biomas. Siga "Como fazer um cenário novo" em `ARTE.md`.
+
+## Etapa 6: gameplay e NPCs (concluída)
+- **Motor** (`motor/regras.ts`): a fase `sala` é genérica, com `Sala`, `OpcaoSala` e `EfeitoSala`.
+  - Custos: moedas ou parte da vida (nunca derruba).
+  - Efeitos: cura, moedas, cristais, vida máxima, cargas, relíquia e poder.
+  - O azar do baú é sorteado pela semente.
+- **Portas:** no máximo uma sala por corredor, a partir do 2º andar. A secreta, com 5% de chance, só a partir do 3º.
+- **Salas:**
+  - Mestre Ferreiro;
+  - Irmã do Calo Ósseo (curandeira);
+  - Baú esquecido;
+  - Sala secreta;
+  - quatro encontros: fonte, residente perdido, pedra de amolar e prontuários.
+- **Sinergias** (`SINERGIAS`):
+  - Imobilização completa: gesso + placas, +1 Barreira;
+  - Plantão de estudos: lupa + livro, +1 pergaminho;
+  - Pronto-socorro: insígnia + coração, cura 6.
+  - Valem no início de cada adversário.
+- **Interface:** `SalaEvento` em `Salas.tsx`. Testes em `fixtures/testar_flashcards.mjs`. As partidas salvas antes migram com `sala: null`.
+
+## Etapa 7: música e polimento (concluída)
+- **Faixas novas** (`scripts/musica/temas.py`):
+  - floresta (cena campo e jardim);
+  - masmorra;
+  - covil;
+  - sala (loja, Preceptor e salas).
+- **Mapa** em `ARQUIVO_MUSICA` (`efeitos/sons.ts`). A floresta é pré-carregada.
+- **Conferência:** `python3 scripts/musica/conferir.py`. A emenda da `sala` (0,245) é a maior; se der clique audível, encurte a cauda da harpa no último compasso.
+
+## Etapa 8: bestiário (concluída nesta rodada)
+- **Variantes de material para as folhas assadas:** `python3 scripts/sprites/assar.py <arquétipo> --variante <v>` grava `<arquétipo>-<v>.png`, e o Hud usa a folha quando ela existe. Variantes:
+  - golem: cristal, cimento, rubro e obsidiana;
+  - guardião: prata e real;
+  - serpente: elétrica;
+  - gosma: ácida e rainha (com coroa).
+- **Gosma de Cimento** modelada em volume (`scripts/sprites/gosma.py`): massa com parafusos e bolhas, olhos acesos, escorridos, esticar e achatar.
+- **Faltam folhas para:**
+  - raptor, mímico, corvo, esqueleto, goblin, cavaleiro, escaravelho, aranha, morcego, mão, espectro, quimera, harpia e os outros arquétipos de `efeitos/bestas.ts`;
+  - as variantes escarlate e ancestral do dragão.
+  - A ordem sugerida é pelo andar de estreia (`andarMin` em `motor/bestiario.ts`).
 
 **Restrições** (valem para todas as etapas): veja a seção "Contexto completo do pedido", abaixo.
 

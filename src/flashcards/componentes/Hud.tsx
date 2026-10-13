@@ -28,11 +28,12 @@ function folhaDe(quem: Personagem, variante?: string) {
 /**
  * Sprite assado (scripts/sprites/: modelado em volume e convertido em pixel
  * art), quando existe para o personagem; senão, o desenho antigo em código.
- * O herói usa a folha do estágio; as variantes de cor dos adversários ainda
- * usam o desenho antigo até ganharem folha própria.
+ * O herói usa a folha do estágio; as variantes de cor dos adversários usam a
+ * folha <arquétipo>-<variante> quando ela existe (golem, guardião, serpente).
  */
 function assadoDe(quem: Personagem, variante?: string): { nome: string; meta: MetaAssada } | null {
-  const nome = quem === 'heroi' ? (variante ?? 'heroi-1') : variante ? '' : quem
+  // variantes de cor dos adversários (Etapa 8) têm folha própria, <arquétipo>-<variante>; sem ela, o desenho antigo
+  const nome = quem === 'heroi' ? (variante ?? 'heroi-1') : variante ? `${quem}-${variante}` : quem
   const meta = nome ? ASSADOS[nome] : undefined
   return meta ? { nome, meta } : null
 }

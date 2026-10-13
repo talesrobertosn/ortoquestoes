@@ -52,6 +52,194 @@ export const ASSADOS: Record<string, MetaAssada> = {
    }
   }
  },
+ "golem-cimento": {
+  "largura": 128,
+  "altura": 128,
+  "colunas": 6,
+  "ancora": [
+   62,
+   120
+  ],
+  "caixa": [
+   21,
+   36,
+   89,
+   86
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 80
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "golem-cristal": {
+  "largura": 128,
+  "altura": 128,
+  "colunas": 6,
+  "ancora": [
+   62,
+   120
+  ],
+  "caixa": [
+   21,
+   36,
+   89,
+   86
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 80
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "golem-obsidiana": {
+  "largura": 128,
+  "altura": 128,
+  "colunas": 6,
+  "ancora": [
+   62,
+   120
+  ],
+  "caixa": [
+   21,
+   36,
+   89,
+   86
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 80
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "golem-rubro": {
+  "largura": 128,
+  "altura": 128,
+  "colunas": 6,
+  "ancora": [
+   62,
+   120
+  ],
+  "caixa": [
+   21,
+   36,
+   89,
+   86
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 80
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
  "golem": {
   "largura": 128,
   "altura": 128,
@@ -91,6 +279,241 @@ export const ASSADOS: Record<string, MetaAssada> = {
     "linha": 4,
     "quadros": 5,
     "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "gosma-acida": {
+  "largura": 112,
+  "altura": 104,
+  "colunas": 6,
+  "ancora": [
+   54,
+   96
+  ],
+  "caixa": [
+   24,
+   52,
+   60,
+   50
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 220
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 100
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 75
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "gosma-rainha": {
+  "largura": 112,
+  "altura": 104,
+  "colunas": 6,
+  "ancora": [
+   54,
+   96
+  ],
+  "caixa": [
+   24,
+   45,
+   60,
+   57
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 220
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 100
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 75
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "gosma": {
+  "largura": 112,
+  "altura": 104,
+  "colunas": 6,
+  "ancora": [
+   54,
+   96
+  ],
+  "caixa": [
+   24,
+   52,
+   60,
+   50
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 220
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 100
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 75
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "guardiao-prata": {
+  "largura": 152,
+  "altura": 160,
+  "colunas": 6,
+  "ancora": [
+   72,
+   152
+  ],
+  "caixa": [
+   33,
+   35,
+   88,
+   124
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 80
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 150
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "guardiao-real": {
+  "largura": 152,
+  "altura": 160,
+  "colunas": 6,
+  "ancora": [
+   72,
+   152
+  ],
+  "caixa": [
+   33,
+   35,
+   88,
+   124
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 80
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 150
    },
    "vitoria": {
     "linha": 5,
@@ -405,6 +828,53 @@ export const ASSADOS: Record<string, MetaAssada> = {
     "linha": 1,
     "quadros": 3,
     "ms": 90
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "serpente-eletrica": {
+  "largura": 136,
+  "altura": 120,
+  "colunas": 6,
+  "ancora": [
+   60,
+   112
+  ],
+  "caixa": [
+   25,
+   51,
+   61,
+   69
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 200
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 100
    },
    "golpe": {
     "linha": 2,

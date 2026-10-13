@@ -155,3 +155,24 @@ def poses():
     a['derrota'] = [{'agacha': -14 * f, 'tronco': 0.5 * f, 'cabeca': 0.4 * f, 'perna_d': -1.3 * f, 'perna_e': 0.3 * f, 'ergue_d': 0.6 * f, 'maca': 1.2 + 0.4 * f, 'y': -2 * f} for f in (0.25, 0.5, 0.75, 0.95, 1.0)]
     a['vitoria'] = [{'ergue_d': suave(0.1, -2.9, f), 'dobra_d': suave(-0.5, -0.1, f), 'maca': suave(1.2, 0.0, f), 'cabeca': -0.15 * f, 'resp': 2 * f, 'brilho': f} for f in (0.4, 0.8, 1.0, 0.9)]
     return a
+
+
+# variantes do bestiário: Cavaleiro da Osteossíntese (prata, tabardo azul) e Senhor do Anel Pélvico (ouro, tabardo roxo)
+VARIANTES = {
+    'prata': lambda: {
+        'placa': Material(rampa('#c8d2e2', 7, escuro=0.2, claro=1.2), textura=tex_placa, brilho=0.9),
+        'placa_esc': Material(rampa('#8a96ae', 6, escuro=0.22, claro=1.2), textura=tex_placa, brilho=0.7),
+        'ouro': Material(rampa('#d8e2f0', 6, escuro=0.3, claro=1.15), brilho=1.0),
+        'capa': Material(rampa('#3a6ec8', 6, escuro=0.25, claro=1.2), textura=tex_capa),
+        'escudo': Material(rampa('#b8c4d8', 7, escuro=0.2, claro=1.2), textura=tex_placa, brilho=0.85),
+        'visor': Material([(20, 80, 160), (80, 180, 255), (210, 240, 255)], emissivo=True),
+    },
+    'real': lambda: {
+        'placa': Material(rampa('#d8b45a', 7, escuro=0.22, claro=1.25), textura=tex_placa, brilho=0.95),
+        'placa_esc': Material(rampa('#9a7a34', 6, escuro=0.22, claro=1.2), textura=tex_placa, brilho=0.75),
+        'ouro': Material(rampa('#fff0b0', 6, escuro=0.35, claro=1.15), brilho=1.0),
+        'capa': Material(rampa('#8a4ac8', 6, escuro=0.25, claro=1.2), textura=tex_capa),
+        'escudo': Material(rampa('#c8a04a', 7, escuro=0.2, claro=1.2), textura=tex_placa, brilho=0.9),
+        'visor': Material([(120, 30, 180), (200, 110, 255), (245, 220, 255)], emissivo=True),
+    },
+}
