@@ -480,6 +480,7 @@ function ArenaJogo() {
           if (!(await esperar(300, g))) return
           const caixa = refHeroi.current?.getBoundingClientRect()
           if (caixa) P?.dissolver(caixa, PALETA_PERSONAGEM.heroi)
+          posar(refInimigo, 'vitoria', 4000)
           definirMostrado((m) => ({ ...m, heroiCaiu: true }))
           tocar('derrota')
           definirFaixa({ texto: 'Você caiu', sub: 'Os flashcards que te derrubaram vão para a revisão', tom: 'vermelho' })

@@ -601,7 +601,7 @@
   .fc-alternativa { height: 98px; }
   /* respondida: a mão abaixa para o verso respirar */
   .fc-arena--fase-resposta .fc-mao { min-height: 76px; padding-top: 8px; }
-  .fc-arena--fase-resposta .fc-alternativa { height: 64px; }
+  .fc-arena--fase-resposta .fc-alternativa { height: auto; min-height: 64px; }
   .fc-arena--fase-resposta .fc-alternativa > span { font-size: 15px; padding-block: 6px; }
   .fc-principal { min-height: 58px; }
   .fc-intencao__gema { width: 54px; height: 54px; }
@@ -850,6 +850,7 @@
     background: radial-gradient(ellipse at 50% 40%, rgba(60, 40, 20, .92), rgba(8, 6, 10, .97)); color: #fff3d6; }
   .fc-girar strong { font: 900 24px var(--fc-titulo); letter-spacing: .06em; color: var(--fc-ouro); }
   .fc-girar small { font: 500 15px var(--fc-ui); color: #e9dcc0; }
+  .fc-fechar { z-index: 90; }
   .fc-girar__celular { width: 44px; height: 76px; border-radius: 9px; border: 3px solid var(--fc-ouro); box-shadow: 0 0 20px rgba(233, 185, 85, .5); animation: fc-girar 2s ease-in-out infinite; }
 }
 @keyframes fc-girar { 0%, 20% { transform: rotate(90deg); } 60%, 100% { transform: rotate(0); } }
