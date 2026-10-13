@@ -118,3 +118,38 @@ inimigos (espera aprovação do padrão).
 Defeitos antigos corrigidos de passagem: barra de vida e sequência saindo do
 painel do herói no celular; mandíbula do Dragão sobre o selo de Chefe; parte
 de baixo da plataforma suspensa sobre o painel do herói.
+
+## Etapa 1 da direção criativa (13/10/2026)
+
+Relatório visual com antes e depois na mesma resolução, estados das alternativas
+e os cenários pintados: artefato "Cripta: Etapa 1" (link no PR).
+
+| Componente | Natureza | O que mudou | Arquivos |
+|---|---|---|---|
+| Floresta das Fises Antigas (andar 1, cena `campo`) | Redesenho | Cena pintada offline: raízes em leque radial, pé dos troncos sem linha reta, musgo em listras, copa com cachos, horizonte irregular | `scripts/cenarios/floresta.py`, `public/flashcards/cenarios/` |
+| Tabuleiro da clareira | Redesenho | Anel de pedras com musgo, raízes e cogumelos | `efeitos/tabuleiros.ts` |
+| Partículas da floresta | Novo | Vaga-lumes, folhas caindo, borboletas | `efeitos/pintura.ts` |
+| Alternativas 1 a 4 | Redesenho | Pergaminho em moldura de bronze rebitada, medalhão cunhado, 8 estados; grade 2×2 no computador; nada de partir palavra | `Flashcards.css` (bloco "Alternativas forjadas") |
+| Biblioteca Ancestral (Estudo) | Redesenho | Cena pintada offline: estantes em perspectiva, janelão, tapete, candelabros | `scripts/cenarios/biblioteca.py` |
+| Estudo | Redesenho e novo | Alternativas antes de virar (com interruptor), placas Errei/Hesitei/Sabia, painéis e filtros forjados | `Estudo.tsx`, `Flashcards.css` (bloco "Estudo forjado") |
+| Celular deitado | Novo | Layout em três colunas no lugar do aviso "Gire o celular" | `Arena.tsx` (faixa `deitado`), `Flashcards.css` |
+
+Testes: `npm test`, `npx tsc --noEmit`, `npm run build` e Playwright em 1400×860,
+390×844 e 844×390, sem erro de console nem rolagem horizontal.
+
+Desempenho (mesmo roteiro, Chromium sem GPU; celular com CPU ÷4):
+
+| Situação | Antes | Depois |
+|---|---|---|
+| Computador, Batalha | 30 qps, p95 67 ms | 30 qps, p95 50 ms |
+| Computador, Estudo | 30 qps, p95 50 ms | 30 qps, p95 50 ms |
+| Celular, Batalha | 60 qps, p95 17 ms | 60 qps, p95 17 ms |
+| Celular, Estudo | 60 qps, pior 50 ms | 60 qps, pior 17 ms |
+| Memória JS (computador / celular) | 27 / 27 MB | 33 / 25 MB |
+
+Ainda fraco:
+- pontas das raízes parecidas entre si, e copa cortada no computador largo;
+- pedras da clareira grandes demais em 3×;
+- candelabros da biblioteca pequenos no retrato;
+- barra de vida do herói curta no celular deitado;
+- personagens ainda não mexidos (etapas 2 e 3).

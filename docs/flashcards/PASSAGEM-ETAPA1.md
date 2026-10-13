@@ -1,8 +1,32 @@
-# Passagem: Etapa 1 da direção criativa (em andamento, 13/10/2026)
+# Passagem: Etapa 1 da direção criativa (concluída em 13/10/2026)
 
 Pedido: "DIREÇÃO CRIATIVA E REFORMULAÇÃO ARTÍSTICA — CRIPTA DO RESIDENTE" (etapas 1 a 8).
 
-## Feito até aqui
+## Situação em 13/10/2026 (fim da Etapa 1)
+
+**Concluído** (PR para `claude/pdfs-questoes-tp64dr`, relatório "Cripta: Etapa 1" no PR):
+- **Floresta das Fises Antigas no jogo**, cena `campo`:
+  - raízes em leque, pé dos troncos sem linha reta;
+  - tabuleiro da clareira;
+  - vaga-lumes, folhas e borboletas.
+- **Alternativas 1 a 4 redesenhadas**, com 8 estados.
+- **Modo Estudo com o mesmo acabamento:**
+  - Biblioteca Ancestral pintada offline;
+  - alternativas antes de virar, com interruptor;
+  - placas Errei/Hesitei/Sabia;
+  - painéis forjados.
+- **Celular deitado** com layout próprio, sem o aviso "Gire o celular".
+
+**Capturas e medidas:** os roteiros ficam em `.capturas/` (fora do git). Para recriar:
+- `capturar.mjs`: Batalha, alternativas e Estudo nos três tamanhos;
+- `estados.mjs <pasta> <w> <h> <dpr>`: estados das alternativas;
+- `medir.mjs <porta>`: quadros por segundo.
+
+Todos usam `chromium.launch({ executablePath: '/opt/pw-browsers/chromium' })`, semente fixa em `Math.random` e `__torneio.ir(1, 3)`.
+
+**Próximo:** Etapa 2, o herói com progressão corporal real em 6 estágios (aprendiz até lenda adulta).
+
+## Histórico da Etapa 1
 - Auditoria rápida do andar 1 (cenário "campo"): pátio genérico de muros de tijolo; no celular
   deitado (844×390) a tela se sobrepõe (cartão sob o baralho, título sob o botão de som).
 - Novo pintor de cenários offline: `scripts/cenarios/pintor.py` (ruído, voronoi, rampas com

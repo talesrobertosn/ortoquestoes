@@ -71,6 +71,32 @@ O Salão do Dragão é o covil; a Torre dos Nervos é a torre.
 **Som** (`efeitos/sons.ts`): trilha e ambiente próprios por bioma, trilha de elite
 e famílias sonoras dos golpes (alado, osso, espectral, inseto, além das antigas).
 
+## Versão 6 (13/10/2026): cenários pintados offline
+
+Floresta das Fises Antigas (cena `campo`) e Biblioteca Ancestral (Estudo) são
+pintadas uma vez, fora do jogo, e salvas em camadas PNG pequenas.
+
+**Como fazer um cenário novo:**
+
+1. Crie `scripts/cenarios/<nome>.py` usando `scripts/cenarios/pintor.py`. Ele oferece:
+   - `Tela`, com `tingir`, que escolhe o degrau da rampa pela luz e pontilha só a transição;
+   - `velar`, para névoa e perspectiva;
+   - `fbm`, `ruido` e `voronoi`.
+2. O script precisa gerar 4 camadas por formato, sempre `<nome>-<formato>-<camada>.png`:
+   - camadas: `fundo`, `meio`, `frente` e `luz`;
+   - formatos: paisagem 520×330 e retrato 250×470.
+3. Gere: `python3 scripts/cenarios/<nome>.py` (por padrão grava em `public/flashcards/cenarios/`). Para prévia: `python3 scripts/cenarios/<nome>.py /tmp/pasta`.
+4. Ligue no jogo: acrescente a cena em `CENAS_PINTADAS` (`src/flashcards/efeitos/cenariosPintados.ts`).
+   - Cada camada é recortada no centro, em escala inteira (no mínimo 2×).
+   - A `luz` entra em screen e no bloom.
+   - Se a imagem não carregar, o jogo usa a cena antiga.
+
+**Regras de arte:**
+- valores: bordas escuras e frias, centro claro e quente, atrás do flashcard;
+- contorno de 1 px nos objetos;
+- nada de anatomia nos enfeites;
+- só pintura nossa, sem imagem baixada nem gerada por IA.
+
 ## Motor de pixel art
 
 `src/flashcards/efeitos/pixel.ts`: classe `Grade` desenha formas numa grade pequena com rampas de 4 tons por material (gesso, pedra, aço, ouro, couro, escama…), pontilhado Bayer só na faixa de transição, contorno seletivo (selout) e contorno interno pela ordem das formas. O canvas é ampliado com `image-rendering: pixelated` em escala inteira (2× ou 3×), então cada pixel do sprite é um bloco nítido, sem filtro "pixelizante".
@@ -83,7 +109,7 @@ Todos os gráficos são gerados por código (nenhuma imagem baixada, nenhuma ima
 |---|---|
 | Modal, HUD, flashcard em pergaminho, botões, tipografia (Cinzel + Alegreya) | Definitivo para a fatia vertical |
 | Herói e Golem (Campo) | Definitivos para a fatia vertical; podem ganhar mais quadros de animação |
-| Cena do Campo (Batalha) e Biblioteca (Estudo) | Definitivas para a fatia vertical |
+| Floresta das Fises (Campo, Batalha) e Biblioteca Ancestral (Estudo) | Pintadas offline (v6); definitivas para a fatia vertical |
 | Serpente, Guardião, Masmorra e Salão das velas | **Provisórios**: funcionam, mas ainda precisam de polimento (o muro do Salão tem hera demais e o mármore está carregado) |
 | Ícones de poderes e relíquias (`dados/sprites.ts`) | Provisórios (16×16, simples) |
 | Sons sintetizados (`efeitos/sons.ts`) | Provisórios bons; podem ser trocados por gravações próprias depois |
