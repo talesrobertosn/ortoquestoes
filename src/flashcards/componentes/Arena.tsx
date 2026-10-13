@@ -531,8 +531,8 @@ export function Arena() {
   const pistas = partida.encaixes.find((e) => e.tipo === 'pista')?.carga ?? 0
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
   // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
-  const escalaInimigo = inimigo.sprite === 'serpente' ? (faixaTela === 'larga' ? 3 : 2) : faixaTela === 'larga' ? 2 : 1.5
-  const escalaHeroi = faixaTela === 'celular' ? 2 : faixaTela === 'baixa' ? 2 : 3
+  const escalaInimigo = inimigo.sprite === 'serpente' ? (faixaTela === 'larga' ? 3 : faixaTela === 'celular' ? 1.5 : 2) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : 1.5
+  const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
     ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${selecionada + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
     : partida.fase === 'resposta'
@@ -542,7 +542,7 @@ export function Arena() {
   const mostrarFim = partida.fase === 'fim' && !animando
   const ciclo = inimigoDoAndar(partida.andar).ciclo
 
-  const classes = ['fc-arena', `fc-arena--${modo}`, `fc-arena--${faixaTela}`, reduzido ? 'fc-arena--reduzida' : '', mostrado.vida <= 25 && modo === 'batalha' ? 'fc-arena--perigo' : ''].filter(Boolean).join(' ')
+  const classes = ['fc-arena', `fc-arena--${modo}`, `fc-arena--${faixaTela}`, `fc-arena--fase-${partida.fase}`, reduzido ? 'fc-arena--reduzida' : '', mostrado.vida <= 25 && modo === 'batalha' ? 'fc-arena--perigo' : ''].filter(Boolean).join(' ')
 
   return (
     <ModalJogo titulo="Torneio de Flashcards" aoPedirFechar={pedirFechar}>
@@ -717,6 +717,11 @@ export function Arena() {
         </div>
         <div className="fc-borda-vermelha" key={'v-' + vermelho} data-ativo={vermelho > 0 ? 1 : 0} aria-hidden="true" />
         {transicao && <div className="fc-transicao" aria-hidden="true" />}
+        <div className="fc-girar" role="status">
+          <span className="fc-girar__celular" aria-hidden="true" />
+          <strong>Gire o celular</strong>
+          <small>O Torneio foi feito para a tela em pé.</small>
+        </div>
 
         {faixa && modo === 'batalha' && (
           <div className={`fc-faixa fc-faixa--${faixa.tom}`} role="status" onClick={pular}>

@@ -28,6 +28,51 @@ interface Props {
 }
 
 /**
+ * Figura da questão: ocupa o espaço que sobra no flashcard e aparece sempre
+ * inteira (encolhe para caber). Se sobrar pouco espaço, vira um botão com
+ * miniatura que abre a imagem grande.
+ */
+function Figura({ img, aoAmpliar }: { img: { src: string; legenda: string }; aoAmpliar: Props['aoAmpliar'] }) {
+  const ref = useRef<HTMLElement>(null)
+  const [apertada, definirApertada] = useState(false)
+  useEffect(() => {
+    const fig = ref.current
+    const carta = fig?.closest('.fc-carta')
+    const palco = carta?.parentElement
+    if (!fig || !carta || !palco) return
+    // mede o espaço do lugar onde o flashcard está (não o próprio flashcard,
+    // que encolhe junto com a imagem): sobra = altura do palco menos o resto do flashcard
+    const medir = () => {
+      const cabeca = carta.querySelector<HTMLElement>('.fc-carta__cabeca')?.offsetHeight ?? 0
+      const pergunta = (fig.previousElementSibling as HTMLElement | null)?.offsetHeight ?? 0
+      const pe = carta.querySelector<HTMLElement>('.fc-carta__pe')?.offsetHeight ?? 0
+      const sobra = palco.clientHeight - cabeca - pergunta - pe - 110
+      definirApertada(sobra < 120)
+    }
+    medir()
+    const obs = new ResizeObserver(medir)
+    obs.observe(palco)
+    return () => obs.disconnect()
+  }, [])
+  const abrir = (e: React.MouseEvent) => { e.stopPropagation(); aoAmpliar(img) }
+  return (
+    <figure ref={ref} className={'fc-carta__figura' + (apertada ? ' fc-carta__figura--apertada' : '')}>
+      <button type="button" className="fc-carta__imagem" onClick={abrir} aria-label="Abrir a imagem maior">
+        <img src={img.src} alt="Figura da questão de origem" loading="eager" />
+      </button>
+      <button type="button" className="fc-ver-imagem" onClick={abrir}>
+        <img src={img.src} alt="" aria-hidden="true" />
+        <span><strong>Ver imagem</strong><small>toque para abrir grande</small></span>
+      </button>
+      <figcaption>
+        <span>{img.legenda}</span>
+        <button type="button" className="fc-botao-pequeno fc-botao-pequeno--ouro" onClick={abrir}>Ampliar imagem</button>
+      </figcaption>
+    </figure>
+  )
+}
+
+/**
  * Flashcard físico: moldura por raridade, pergaminho, cabeçalho com brasão e
  * altura que acompanha o conteúdo. O giro acontece em duas metades: até 90°,
  * troca a face e volta de -90°; assim o verso ocupa a altura que precisa e o
@@ -84,7 +129,7 @@ export function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, r
 
           {frente ? (
             <div
-              className={'fc-carta__miolo' + (aoTocar ? ' fc-carta__miolo--tocavel' : '')}
+              className={'fc-carta__miolo' + (aoTocar ? ' fc-carta__miolo--tocavel' : '') + (img ? ' fc-carta__miolo--com-imagem' : '')}
               onClick={aoTocar}
               role={aoTocar ? 'button' : undefined}
               tabIndex={aoTocar ? 0 : undefined}
@@ -92,17 +137,7 @@ export function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, r
               onKeyDown={(e) => { if (aoTocar && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); aoTocar() } }}
             >
               <p className="fc-carta__pergunta"><Texto texto={carta.frente} /></p>
-              {img && (
-                <figure className="fc-carta__figura">
-                  <button type="button" className="fc-carta__imagem" onClick={(e) => { e.stopPropagation(); aoAmpliar(img) }} aria-label="Abrir a imagem maior">
-                    <img src={img.src} alt="Figura da questão de origem" loading="eager" />
-                  </button>
-                  <figcaption>
-                    <span>{img.legenda}</span>
-                    <button type="button" className="fc-botao-pequeno fc-botao-pequeno--ouro" onClick={(e) => { e.stopPropagation(); aoAmpliar(img) }}>Ampliar imagem</button>
-                  </figcaption>
-                </figure>
-              )}
+              {img && <Figura img={img} aoAmpliar={aoAmpliar} />}
             </div>
           ) : (
             <div className="fc-carta__miolo fc-carta__miolo--verso" aria-live="polite">
