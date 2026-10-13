@@ -460,9 +460,22 @@
 .fc-ajuste--volume span { min-width: 80px; }
 .fc-ajuste--volume input { flex: 1; accent-color: var(--fc-ouro); }
 .fc-veu--imagem { background: rgba(3, 2, 4, .9); }
-.fc-ampliada { margin: 0; display: grid; gap: 12px; justify-items: center; max-width: min(1000px, 100%); }
-.fc-ampliada img { max-width: 100%; max-height: 74dvh; border-radius: 10px; background: #fff; box-shadow: 0 0 0 3px var(--fc-ouro), 0 24px 60px rgba(0, 0, 0, .75); user-select: none; touch-action: pinch-zoom; }
-.fc-ampliada figcaption { font: 500 15px/1.4 var(--fc-texto); color: #f0e0c0; text-align: center; }
+.fc-veu--imagem { padding: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.fc-ampliada { position: relative; margin: 0; width: min(1100px, 100%); height: 100%; display: grid; grid-template-rows: minmax(0, 1fr) auto auto auto; gap: 10px; justify-items: center; }
+.fc-ampliada__area { position: relative; width: 100%; height: 100%; min-height: 0; overflow: hidden; border-radius: 12px; background: #050304; box-shadow: 0 0 0 2px var(--fc-ouro), 0 24px 60px rgba(0, 0, 0, .75); touch-action: none; cursor: zoom-in; display: block; }
+.fc-ampliada__area--zoom { cursor: grab; }
+.fc-ampliada__area img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; transition: transform .08s linear; will-change: transform; }
+.fc-ampliada__erro { color: #ffd0c0; font: 500 16px var(--fc-ui); padding: 20px; text-align: center; }
+.fc-ampliada__fechar { position: absolute; z-index: 2; top: 8px; right: 8px; width: 46px; height: 46px; border-radius: 50%; border: 0; cursor: pointer; font: 400 30px/1 var(--fc-ui) !important; display: grid; place-items: center; padding: 0; color: #fff3d6;
+  background: rgba(18, 12, 8, .9); box-shadow: 0 0 0 2px var(--fc-ouro), 0 6px 14px rgba(0, 0, 0, .5); }
+.fc-ampliada__controles { display: flex; align-items: center; gap: 8px; }
+.fc-ampliada__controles button { min-width: 46px; height: 42px; padding: 0 12px; border-radius: 11px; border: 0; cursor: pointer; font: 800 20px var(--fc-ui); color: #fff3d6; background: linear-gradient(#4a3020, #2a1a10); box-shadow: 0 0 0 2px #120a04, inset 0 0 0 1.5px rgba(233, 185, 85, .55); }
+.fc-ampliada__controles button:disabled { opacity: .45; cursor: default; }
+.fc-ampliada__controles .fc-ampliada__ajustar { font-size: 14px; }
+.fc-ampliada__controles span { min-width: 54px; text-align: center; font: 700 14px var(--fc-ui); color: #e9dcc0; font-variant-numeric: tabular-nums; }
+.fc-ampliada figcaption { font: 500 14.5px/1.4 var(--fc-texto); color: #f0e0c0; text-align: center; }
+.fc-ampliada__dica { font: 500 12px var(--fc-ui); color: var(--fc-nevoa); text-align: center; }
+@media (pointer: coarse) { .fc-ampliada__dica { display: none; } }
 
 /* Recompensas: três cartas distintas */
 .fc-recompensas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }

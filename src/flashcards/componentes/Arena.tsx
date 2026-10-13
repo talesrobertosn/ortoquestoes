@@ -14,6 +14,8 @@ import { Cartao } from './Cartao'
 import { Cenario, TampoMesa } from './Cenario'
 import { Estudo } from './Estudo'
 import { Ator, BarraVida, Encaixe } from './Hud'
+import { Visualizador } from './Visualizador'
+import { recurso } from '../../config'
 import { ModalJogo } from './ModalJogo'
 import { Sprite } from './Sprite'
 
@@ -193,6 +195,14 @@ export function Arena() {
     definirCenarioVisivel(inimigoDoAndar(partidaRef.current.andar).inimigo.cenario)
     sincronizar(partidaRef.current)
   }, [sincronizar])
+
+  // pré-carrega a figura do próximo flashcard do baralho, para ela já estar pronta
+  const proximoId = partida.baralho[0]
+  useEffect(() => {
+    if (!proximoId) return
+    const prox = motor.carta(proximoId)
+    if (prox?.imagem) { const im = new Image(); im.src = recurso('imagens/' + prox.imagem.arquivo) }
+  }, [proximoId, motor])
 
   const arte = (r: React.RefObject<HTMLDivElement | null>) => r.current?.querySelector('.fc-ator__corpo')
   /** Troca a pose do sprite (preparo, golpe, dano, vitória) por um tempo e volta a respirar. */
@@ -747,15 +757,7 @@ export function Arena() {
         {mostrarRecompensas && modo === 'batalha' && <Recompensas partida={partida} aoEscolher={escolherRecompensa} aoEncerrar={encerrar} />}
         {mostrarFim && modo === 'batalha' && <Fim partida={partida} aoNova={novaPartida} aoRevisar={revisarNoEstudo} aoSair={fechar} />}
 
-        {ampliada && (
-          <div className="fc-veu fc-veu--imagem" role="dialog" aria-modal="true" aria-label="Imagem ampliada" onClick={() => definirAmpliada(null)}>
-            <figure className="fc-ampliada" onClick={(e) => e.stopPropagation()}>
-              <img src={ampliada.src} alt="Figura da questão de origem, ampliada" />
-              <figcaption>{ampliada.legenda}</figcaption>
-              <button type="button" className="fc-botao" onClick={() => definirAmpliada(null)} autoFocus>Fechar imagem</button>
-            </figure>
-          </div>
-        )}
+        {ampliada && <Visualizador src={ampliada.src} legenda={ampliada.legenda} aoFechar={() => definirAmpliada(null)} />}
 
         {confirmarSaida && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-sair-titulo">
