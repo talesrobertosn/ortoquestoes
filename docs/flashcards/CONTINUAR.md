@@ -118,7 +118,7 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
 1. **Folhas em volume** para raptor, mímico e esqueleto, que estreiam cedo. Use o modelo de `scripts/sprites/gosma.py` e `python3 scripts/sprites/assar.py <nome>`.
 2. **Pintar Torre e Salão** com `scripts/cenarios/` (veja "Como fazer um cenário novo" em ARTE.md) e ligar em `CENAS_PINTADAS`.
 3. **Variantes escarlate e ancestral do Dragão**: acrescente `VARIANTES` em `scripts/sprites/dragao.py`.
-4. **Escudo do herói no estágio 6**: reduzir (`PROP[6]['escudo']` em `scripts/sprites/heroi.py`).
+4. ~~Escudo do herói no estágio 6~~: feito no beta (`escudo=0.96` e gota mais baixa no estágio 6).
 5. **Emenda da faixa "sala"**: revisar com `python3 scripts/musica/conferir.py`.
 
 ## Ainda não feito do pedido de direção criativa

@@ -35,7 +35,7 @@ PROP = {
     3: dict(perna=1.28, tronco=1.12, ombro=1.10, cab=0.91, braco=1.16, gr=1.07, escudo=1.08),
     4: dict(perna=1.46, tronco=1.20, ombro=1.17, cab=0.85, braco=1.26, gr=1.11, escudo=1.12),
     5: dict(perna=1.60, tronco=1.26, ombro=1.23, cab=0.80, braco=1.34, gr=1.14, escudo=1.15),
-    6: dict(perna=1.72, tronco=1.31, ombro=1.27, cab=0.76, braco=1.40, gr=1.16, escudo=1.17),
+    6: dict(perna=1.72, tronco=1.31, ombro=1.27, cab=0.76, braco=1.40, gr=1.16, escudo=0.96),
 }
 TEMPOS = {'parado': 240, 'preparo': 90, 'golpe': 70, 'dano': 90, 'derrota': 140, 'vitoria': 150}
 
@@ -199,7 +199,7 @@ def montar(t: dict) -> Cena:
         c.add('ouro', lambda p: sd_toro((p - V(0, 0, 0.2))[:, [0, 2, 1]], 7.3, 0.9), escudo, grupo=32)
         c.add('ouro', lambda p: sd_esfera(p - V(0, 0, 1.2), 2.2), escudo, grupo=33)
     else:  # gota (kite) com cruz; heráldico no 5; radiante no 6
-        alt = 11 if e < 5 else 12.5
+        alt = 11 if e < 5 else 12.5 if e == 5 else 11.5  # o radiante do 6 cobria o tronco inteiro
         def gota(p, alt=alt):
             q = p.copy()
             larg = 7.2 - np.clip(-(q[:, 1]) / alt, 0, 1) * 5.6

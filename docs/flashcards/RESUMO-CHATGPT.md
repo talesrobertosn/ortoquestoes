@@ -37,8 +37,8 @@ Projeto OrtoQuestões, repositório `talesrobertosn/ortoquestoes`. Roteiro execu
 ## Ainda não validado / planejado
 
 - Som no celular: corrigido no código, **falta o Tales testar num iPhone e num Android**.
-- Cauda do dragão fora da tela no celular, escudo grande do herói lendário e cortes em telas pequenas:
-  ficam para a rodada seguinte de refinamentos.
+- Feito depois do PR aberto: cauda do dragão inteira no celular em pé (quadro menor e deslocado para
+  dentro) e escudo do herói lendário reduzido. Cortes em outras telas pequenas: próxima rodada.
 - O cronograma de flashcards fica no aparelho (não sobe para a conta ainda).
 - Cadastro por e-mail ainda perde o destino de volta (o login com Google mantém).
 

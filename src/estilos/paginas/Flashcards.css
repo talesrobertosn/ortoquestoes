@@ -1842,3 +1842,10 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 }
 .fc-niveis__nota { display: none; grid-column: 1 / -1; margin: 0; font: 500 12.5px/1.35 var(--fc-ui); color: #cbbd9c; text-align: center; }
 @media (max-width: 700px) { .fc-niveis__nota { display: block; padding: 4px 10px; border-radius: 8px; color: #f0e2c4; background: rgba(14, 9, 7, .78); text-shadow: 0 1px 0 #000; } }
+
+/* Celular em pé: o quadro do dragão (264 px) era mais largo que a coluna e a cauda saía pela esquerda.
+   Um pouco menor e deslocado para dentro, sem mexer no tamanho da caixa (o layout não se move).
+   translate/scale separados para somar com as animações de transform do corpo. */
+@media (max-width: 520px) and (orientation: portrait) {
+  .fc-arena--celular .fc-ator--dragao .fc-ator__corpo { translate: 40px 0; scale: .8; }
+}
