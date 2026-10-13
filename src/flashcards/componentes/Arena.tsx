@@ -9,7 +9,7 @@ import { Palco, centro } from '../efeitos/palco'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
 import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
-import { ESTAGIOS, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
+import { ESTAGIOS, LIMITES, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
 import { ENCAIXES, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
 import { COMBO_MINIMO, criarMotor, type Evento, type MotivoCura, type Partida } from '../motor/regras'
 import { CHAVE_AJUSTES, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_RECORDES, CHAVE_REGISTROS, lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Recordes, type RegistroFlashcard } from '../progresso'
@@ -155,6 +155,7 @@ function ArenaJogo() {
   const [flutuantes, definirFlutuantes] = useState<Flutuante[]>([])
   const [ampliada, definirAmpliada] = useState<{ src: string; legenda: string } | null>(null)
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
+  const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
   const [confirmarSaida, definirConfirmarSaida] = useState(false)
   const [transicao, definirTransicao] = useState(false)
   const [vermelho, definirVermelho] = useState(0)
@@ -604,13 +605,14 @@ function ArenaJogo() {
         e.preventDefault()
         if (ampliada) definirAmpliada(null)
         else if (ajustesAbertos) definirAjustesAbertos(false)
+        else if (painel) definirPainel(null)
         else if (confirmarSaida) definirConfirmarSaida(false)
         else if (apresentacao) definirApresentacao(null)
         else if (animando) pular()
         else pedirFechar()
         return
       }
-      if (modo !== 'batalha' || ajustesAbertos || ampliada || confirmarSaida) return
+      if (modo !== 'batalha' || ajustesAbertos || ampliada || confirmarSaida || painel) return
       const p = partidaRef.current
       if (apresentacao && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); definirApresentacao(null); return }
       if (/^[1-4]$/.test(e.key) && p.fase === 'pergunta') { e.preventDefault(); escolherAlternativa(+e.key - 1, true); return }
@@ -622,7 +624,7 @@ function ArenaJogo() {
     }
     window.addEventListener('keydown', aoTeclar)
     return () => window.removeEventListener('keydown', aoTeclar)
-  }, [modo, ajustesAbertos, ampliada, confirmarSaida, apresentacao, animando, pular, pedirFechar, escolherAlternativa, usarPista, seguir, responder, selecionada])
+  }, [modo, ajustesAbertos, painel, ampliada, confirmarSaida, apresentacao, animando, pular, pedirFechar, escolherAlternativa, usarPista, seguir, responder, selecionada])
 
   useEffect(() => {
     if (!apresentacao) return
@@ -702,7 +704,9 @@ function ArenaJogo() {
           <div className="fc-batalha">
             {/* Adversário em cena, de pé sobre a arena */}
             <section className={`fc-inimigo${inimigo.chefe ? ' fc-inimigo--chefe' : ''}${fase2 ? ' fc-inimigo--fase2' : ''}${partida.inimigo.furia ? ' fc-inimigo--furia' : ''}`} aria-label={`Adversário: ${inimigo.nome}`}>
-              <Ator ref={refInimigo} quem={inimigo.sprite as Personagem} variante={inimigo.variante} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (inimigo.nivel === 'elite' ? ' fc-ator--elite' : '') + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')} />
+              <Ator ref={refInimigo} quem={inimigo.sprite as Personagem} variante={inimigo.variante} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (inimigo.nivel === 'elite' ? ' fc-ator--elite' : '') + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')}>
+                <button type="button" className="fc-ator__toque" aria-label={`Ver ${inimigo.nome}: atributos e habilidades`} onClick={() => { tocar('selecao'); definirPainel('inimigo') }} />
+              </Ator>
               <div className="fc-placa">
                 <div className="fc-placa__nome">
                   {inimigo.chefe && <em className="fc-selo fc-selo--chefe">Chefe</em>}
@@ -759,6 +763,7 @@ function ArenaJogo() {
               <div className="fc-heroi">
                 <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
+                  <button type="button" className="fc-ator__toque" aria-label="Ver o seu herói: atributos, poderes e relíquias" onClick={() => { tocar('selecao'); definirPainel('heroi') }} />
                 </Ator>
                 <div className="fc-heroi__dados">
                   <div className="fc-heroi__nome"><Sprite nome="coracao" className="fc-sprite--coracao" /><strong>Você</strong>
@@ -862,6 +867,8 @@ function ArenaJogo() {
 
         {ampliada && <Visualizador src={ampliada.src} legenda={ampliada.legenda} aoFechar={() => definirAmpliada(null)} />}
 
+        {painel && <Painel tipo={painel} partida={partida} intencao={intencao} aoFechar={() => definirPainel(null)} />}
+
         {confirmarSaida && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-sair-titulo">
             <div className="fc-janela">
@@ -901,6 +908,71 @@ function ArenaJogo() {
         )}
       </div>
     </ModalJogo>
+  )
+}
+
+/** Painel do herói ou do adversário: atributos, efeitos e histórico. Nunca mostra nada da resposta. */
+function Painel({ tipo, partida, intencao, aoFechar }: { tipo: 'heroi' | 'inimigo'; partida: Partida; intencao: ReturnType<typeof motor.intencao>; aoFechar: () => void }) {
+  const est = ESTAGIOS[partida.estagio - 1]
+  const i = inimigoDoAndar(partida.andar, partida.sementeBase).inimigo
+  const at = motor.atributos(partida)
+  const nivel = { comum: 'Comum', elite: 'Elite', chefe: 'Chefe' }[i.nivel]
+  return (
+    <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-painel-titulo" onClick={aoFechar}>
+      <div className="fc-janela fc-janela--larga fc-painel" onClick={(e) => e.stopPropagation()}>
+        {tipo === 'heroi' ? (
+          <>
+            <h2 id="fc-painel-titulo">{est.nome}</h2>
+            <p className="fc-janela__sub">Estágio {partida.estagio} de {ESTAGIOS.length} · evolui a cada chefe vencido</p>
+            <dl className="fc-numeros">
+              <div><dt>Vida</dt><dd>{partida.vida}<small>/{partida.vidaMax}</small></dd></div>
+              <div><dt>Ataque extra</dt><dd>+{est.ataque}</dd></div>
+              <div><dt>Defesa</dt><dd>−{est.defesa}<small> por golpe</small></dd></div>
+              <div><dt>Sequência</dt><dd>{partida.sequencia}<small> (melhor {partida.melhorSequencia})</small></dd></div>
+            </dl>
+            <p className="fc-janela__nota">Acerto fácil, moderado e difícil causam 10, 20 e 30. O difícil é o crítico. A partir de 3 seguidos, +5 por acerto.</p>
+            <h3>Poderes</h3>
+            {partida.encaixes.length ? <ul className="fc-lista-efeitos">{partida.encaixes.map((e) => <li key={e.tipo} style={{ ['--cor' as string]: RECOMPENSAS[e.tipo].cor }}><Sprite nome={RECOMPENSAS[e.tipo].icone} className="fc-sprite--icone" /><span><strong>{RECOMPENSAS[e.tipo].nome} ×{e.carga}</strong><small>{RECOMPENSAS[e.tipo].texto} {RECOMPENSAS[e.tipo].detalhe}</small></span></li>)}</ul> : <p className="fc-janela__nota">Nenhum poder equipado.</p>}
+            <h3>Relíquias</h3>
+            {partida.reliquias.length ? <ul className="fc-lista-efeitos">{[...new Set(partida.reliquias)].map((r) => <li key={r} style={{ ['--cor' as string]: RECOMPENSAS[r].cor }}><Sprite nome={RECOMPENSAS[r].icone} className="fc-sprite--icone" /><span><strong>{RECOMPENSAS[r].nome}{partida.reliquias.filter((x) => x === r).length > 1 ? ` ×${partida.reliquias.filter((x) => x === r).length}` : ''}</strong><small>{RECOMPENSAS[r].texto}</small></span></li>)}</ul> : <p className="fc-janela__nota">Nenhuma relíquia ainda.</p>}
+            <h3>Nesta partida</h3>
+            <dl className="fc-numeros">
+              <div><dt>Acertos</dt><dd>{partida.acertos}<small> de {partida.acertos + partida.erros}</small></dd></div>
+              <div><dt>Assistidos</dt><dd>{partida.assistidos}</dd></div>
+              <div><dt>Dano sofrido</dt><dd>{partida.danoSofrido}</dd></div>
+              <div><dt>Dano evitado</dt><dd>{partida.danoEvitado}</dd></div>
+              <div><dt>Cura</dt><dd>{partida.curaTotal}</dd></div>
+              <div><dt>Adversários</dt><dd>{partida.derrotados}</dd></div>
+            </dl>
+          </>
+        ) : (
+          <>
+            <h2 id="fc-painel-titulo">{i.nome}</h2>
+            <p className="fc-janela__sub"><em>{i.lema}</em> · {nivel} · andar {partida.andar}</p>
+            <dl className="fc-numeros">
+              <div><dt>Vida</dt><dd>{partida.inimigo.vida}<small>/{partida.inimigo.vidaMax}</small></dd></div>
+              <div><dt>Força</dt><dd>×{at.forca}</dd></div>
+              <div><dt>Armadura</dt><dd>{at.armadura}</dd></div>
+              {at.barreira > 0 && <div><dt>Barreira</dt><dd>{at.barreira}</dd></div>}
+              <div><dt>Crítico</dt><dd>{Math.round(i.critico * 100)}%</dd></div>
+              <div><dt>Fúria</dt><dd>{partida.inimigo.furia ? 'ativa' : `em ${Math.max(0, i.paciencia - partida.inimigo.rodadas)}`}</dd></div>
+            </dl>
+            <h3>Habilidades</h3>
+            <ul className="fc-lista-efeitos">
+              <li><span><strong>Estilo</strong><small>{i.habilidade}</small></span></li>
+              {i.porErroSeguido > 0 && <li><span><strong>{i.chefe ? 'Pressão' : 'Veneno'}</strong><small>+{i.porErroSeguido} de dano por erro seguido.</small></span></li>}
+              {i.regenera && <li><span><strong>Regeneração</strong><small>Recupera {i.regenera.porRodada} por rodada, até {i.regenera.total} neste confronto (faltam {Math.max(0, i.regenera.total - partida.inimigo.regenerado)}).</small></span></li>}
+              {i.fase2 && <li><span><strong>Segunda fase: {i.fase2.nome}</strong><small>Abaixo de {Math.round(i.fase2.abaixoDe * 100)}% da vida: força ×{i.fase2.forca}, armadura {i.fase2.armadura}{i.fase2.barreira ? `, nova barreira de ${i.fase2.barreira}` : ''}.</small></span></li>}
+              <li><span><strong>Fúria</strong><small>Depois de {i.paciencia} rodadas, todo golpe sai ×1,5.</small></span></li>
+              <li><span><strong>Teto do golpe</strong><small>Nunca passa de {Math.round(LIMITES[i.nivel] * 100)}% da sua vida máxima ({Math.round(LIMITES.critico * 100)}% no crítico).</small></span></li>
+            </ul>
+            <h3>Intenção agora</h3>
+            <p className="fc-janela__nota">{partida.fase === 'pergunta' ? (intencao.bloqueado ? 'O seu escudo bloqueia o próximo golpe.' : `Se você errar este flashcard: ${intencao.dano} de dano${intencao.critico ? ', golpe crítico' : ''}${intencao.protecoes.length ? `, já contando ${intencao.protecoes.join(' e ')}` : ''}.`) : 'Aguardando o próximo flashcard.'}</p>
+          </>
+        )}
+        <div className="fc-janela__botoes"><button type="button" className="fc-botao" onClick={aoFechar}>Fechar</button></div>
+      </div>
+    </div>
   )
 }
 

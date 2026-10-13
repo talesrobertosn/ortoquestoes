@@ -39,10 +39,10 @@ interface AtorProps {
 export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, escala, classe, chefe, variante, children }, ref) {
   const [, , w, h] = caixaDoCorpo(quem)
   return (
-    <div ref={ref} className={`fc-ator fc-ator--${quem}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={{ width: w * escala, height: h * escala }} aria-hidden="true">
-      <span className="fc-ator__aura" />
-      <span className="fc-ator__sombra" />
-      <div className="fc-ator__corpo"><Quadros quem={quem} escala={escala} variante={variante} /></div>
+    <div ref={ref} className={`fc-ator fc-ator--${quem}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={{ width: w * escala, height: h * escala }}>
+      <span className="fc-ator__aura" aria-hidden="true" />
+      <span className="fc-ator__sombra" aria-hidden="true" />
+      <div className="fc-ator__corpo" aria-hidden="true"><Quadros quem={quem} escala={escala} variante={variante} /></div>
       {children}
     </div>
   )
