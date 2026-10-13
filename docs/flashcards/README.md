@@ -32,6 +32,12 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
 
 ## Estado atual (atualize aqui)
 
+- **13/10/2026, direção criativa, Etapa 1** ([PASSAGEM-ETAPA1.md](PASSAGEM-ETAPA1.md), [AUDITORIA-ARTE.md](AUDITORIA-ARTE.md)):
+  - Floresta das Fises Antigas e Biblioteca Ancestral pintadas offline (veja [ARTE.md](ARTE.md));
+  - alternativas forjadas;
+  - modo Estudo com alternativas e o mesmo acabamento;
+  - layout próprio para o celular deitado.
+  - Próximo: Etapa 2 (herói em 6 estágios).
 - **13/10/2026, versão 3: Cripta do Residente** ([CRIPTA.md](CRIPTA.md)). Entrada própria, Torre do
   Título de 100 andares com patamares, portas no estilo do Hades, loja, Velho Preceptor, bênçãos de
   cinco patronos com duplas, raridades épica e lendária, flashcards brilhantes, Altar do Saber,

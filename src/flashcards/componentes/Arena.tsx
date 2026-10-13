@@ -104,9 +104,10 @@ function patamarSalvo(): Partida | null {
   try { if (p.atual) motor.carta(p.atual.id); return { ...p, semente: sementeNova() } } catch { return null }
 }
 
-type FaixaTela = 'celular' | 'baixa' | 'larga'
+/** deitado: celular na horizontal (tela baixa e mais larga que alta), com layout próprio em três colunas. */
+type FaixaTela = 'celular' | 'deitado' | 'baixa' | 'larga'
 function usarFaixa(): FaixaTela {
-  const calcular = (): FaixaTela => (window.innerWidth <= 640 ? 'celular' : window.innerHeight <= 820 ? 'baixa' : 'larga')
+  const calcular = (): FaixaTela => (window.innerWidth <= 640 ? 'celular' : window.innerHeight <= 520 && window.innerWidth > window.innerHeight ? 'deitado' : window.innerHeight <= 820 ? 'baixa' : 'larga')
   const [faixa, definir] = useState(calcular)
   useEffect(() => {
     const aoMudar = () => definir(calcular())
@@ -887,8 +888,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
   // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
   const pequeno = PEQUENOS.has(inimigo.sprite)
-  const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : 1.8) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : 1.5) * (inimigo.variante === 'rainha' ? 1.25 : 1)
-  const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'baixa' ? 2 : 3
+  const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : faixaTela === 'deitado' ? 1 : 1.8) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : faixaTela === 'deitado' ? 0.75 : 1.5) * (inimigo.variante === 'rainha' ? 1.25 : 1)
+  const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'deitado' ? 1.1 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
     ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${selecionada + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
     : partida.fase === 'resposta'
@@ -1009,7 +1010,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     chave={partida.rodada + '-' + partida.atual.id}
                     carta={carta}
                     virada={mostrado.revelada && partida.fase !== 'pergunta'}
-                    dicaFrente={faixaTela === 'celular' ? 'Escolha a resposta abaixo' : 'Escolha a resposta na sua mão · teclas 1 a 4'}
+                    dicaFrente={faixaTela === 'celular' ? 'Escolha a resposta abaixo' : faixaTela === 'deitado' ? 'Escolha a resposta ao lado' : 'Escolha a resposta na sua mão · teclas 1 a 4'}
                     aoAmpliar={ampliarImagem}
                     resultado={partida.fase !== 'pergunta' ? mostrado.resultado : null}
                     assistida={partida.atual.assistida}
@@ -1099,11 +1100,6 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         {lamina > 0 && <div className="fc-lamina" key={'l-' + lamina} aria-hidden="true"><i /></div>}
         <div className="fc-borda-vermelha" key={'v-' + vermelho} data-ativo={vermelho > 0 ? 1 : 0} aria-hidden="true" />
         {transicao && <div className="fc-transicao" aria-hidden="true" />}
-        <div className="fc-girar" role="status">
-          <span className="fc-girar__celular" aria-hidden="true" />
-          <strong>Gire o celular</strong>
-          <small>O Torneio foi feito para a tela em pé.</small>
-        </div>
 
         {faixa && modo === 'batalha' && (
           <div className={`fc-faixa fc-faixa--${faixa.tom}`} role="status" onClick={pular}>

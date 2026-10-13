@@ -91,6 +91,86 @@ function pintarChao(c: Ctx, W: number, H: number, cenario: Cenario) {
   }
 }
 
+/* ------------------------------------------------------------ clareira (Floresta das Fises) */
+
+const MUSGO = ['#14251a', '#1f3a22', '#2d5229', '#3f6a30', '#5a8a3c', '#7fae4c']
+const PEDRA_C = ['#151a16', '#2a312b', '#3d463c', '#535e50', '#6c7a66', '#8e9c84', '#b0bca2']
+const CASCA_C = ['#120c0a', '#24190f', '#3a2a1c', '#53402a', '#6e5838', '#8a744c']
+
+/** Círculo de pedras baixas com musgo, raízes que atravessam o anel e cogumelos que brilham. */
+function pintarClareira(c: Ctx, W: number, H: number) {
+  const cx = W / 2, cy = H / 2, rx = W * 0.47, ry = H * 0.44
+  // sombra fresca no miolo (a copa) e a luz que cai no centro
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+    const d = ((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2
+    // degraus de sombra lisos (sem pontilhado: no celular o xadrez ficava gritante)
+    if (d < 1.15) px(c, x, y, '#0c1a10', Math.round(4 * 0.22 * Math.max(0, 1.15 - d) ** 0.7 * 4) / 16)
+  }
+  // raízes: entram pelas laterais e passam por baixo do anel (pintadas antes das pedras)
+  const raiz = (x0: number, y0: number, ang: number, comp: number, w0: number, s: number) => {
+    let x = x0, y = y0, a = ang
+    const n = Math.ceil(comp)
+    for (let i = 0; i < n; i++) {
+      const t = i / n
+      a += (fbm(i / 14, s, 2, s) - 0.5) * 0.12
+      x += Math.cos(a); y += Math.sin(a) * 0.5
+      const r = w0 * (1 - t) ** 0.7 + 0.6
+      if (t > 0.55 && t < 0.66) continue // mergulha no musgo
+      for (let dy = -r; dy <= r; dy++) for (let dx = -r; dx <= r; dx++) {
+        const q = Math.hypot(dx, dy * 1.2) / r
+        if (q > 1) continue
+        const luz = 0.15 + 0.5 * Math.sqrt(1 - q * q) + (dy < 0 ? 0.2 : -0.05) + (bayer(x + dx, y + dy) - 0.5) * 0.2
+        const mus = dy < -r * 0.3 && fbm((x + dx) / 3, (y + dy) / 3, 2, s + 3) > 0.55
+        const tons = mus ? MUSGO : CASCA_C
+        px(c, x + dx, y + dy, tons[Math.max(0, Math.min(tons.length - 1, Math.floor(luz * tons.length)))])
+      }
+      if (r > 1.2 && i % 2 === 0) px(c, x, y + r + 1, '#06100a', 0.5)
+    }
+  }
+  raiz(-2, H * 0.3, 0.35, W * 0.24, 3.2, 3)
+  raiz(-2, H * 0.78, -0.25, W * 0.2, 2.6, 5)
+  raiz(W + 2, H * 0.36, Math.PI - 0.3, W * 0.22, 3, 7)
+  raiz(W + 2, H * 0.72, Math.PI + 0.2, W * 0.18, 2.4, 9)
+  // pedras do anel: tamanhos e intervalos irregulares, musgo no topo, contorno e sombra de contato
+  const passo = 0.13
+  let i = 0
+  for (let a = 0; a < Math.PI * 2; a += passo * (0.75 + ruido(i, 3, 71) * 0.6), i++) {
+    if (ruido(i, 1, 73) < 0.12) continue // falha no anel
+    const x0 = cx + Math.cos(a) * rx, y0 = cy + Math.sin(a) * ry
+    const perto = Math.sin(a) // > 0: metade da frente (mais perto da câmera, pedras maiores)
+    const lw = 4 + ruido(i, 5, 75) * 4 + perto * 1.5, lh = 2.6 + ruido(i, 7, 77) * 2.2 + perto * 0.8
+    // sombra de contato
+    for (let dx = -lw - 1; dx <= lw + 1; dx++) for (let dy = 0; dy <= 2; dy++) if (bayer(x0 + dx, y0 + lh + dy) < 0.5) px(c, x0 + dx, y0 + lh * 0.6 + dy, '#07100a', 0.5)
+    for (let dy = -lh - 1; dy <= lh + 1; dy++) for (let dx = -lw - 1; dx <= lw + 1; dx++) {
+      const q = Math.hypot(dx / lw, dy / lh) + (fbm((x0 + dx) / 2.5, (y0 + dy) / 2.5, 2, 79 + i) - 0.5) * 0.35
+      if (q > 1.12) continue
+      if (q > 1) { px(c, x0 + dx, y0 + dy, '#070b08'); continue }
+      const nz = Math.sqrt(Math.max(0, 1 - q * q))
+      const luz = 0.12 + 0.5 * nz + 0.28 * Math.max(0, -dx / lw - dy / lh) * 0.7 + (bayer(x0 + dx, y0 + dy) - 0.5) * 0.18
+      const topo = dy < -lh * 0.15 + (fbm((x0 + dx) / 2, 1, 2, 81 + i) - 0.5) * lh
+      const tons = topo && ruido(i, 9, 83) > 0.2 ? MUSGO : PEDRA_C
+      px(c, x0 + dx, y0 + dy, tons[Math.max(0, Math.min(tons.length - 1, Math.floor(luz * tons.length)))])
+    }
+  }
+  // tufos de capim e folhas secas em volta do anel
+  for (let k = 0; k < W * 1.2; k++) {
+    const a = ruido(k, 11, 85) * Math.PI * 2, d = 0.86 + ruido(k, 13, 87) * 0.32
+    const x = cx + Math.cos(a) * rx * d, y = cy + Math.sin(a) * ry * d
+    if (ruido(k, 15, 89) < 0.25) { px(c, x, y, ['#7a4a20', '#9a6428', '#c08a3a'][k % 3]); continue }
+    const alt = 1 + Math.floor(ruido(k, 17, 91) * 3)
+    for (let h = 0; h < alt; h++) px(c, x + (h === alt - 1 ? (k % 3) - 1 : 0), y - h, MUSGO[Math.min(5, 2 + h + (k % 2))])
+  }
+  // cogumelos que brilham de leve (dois grupos, perto das raízes)
+  for (const [fx, fy, s] of [[0.1, 0.38, 1], [0.9, 0.66, 2]] as const) {
+    for (let k = 0; k < 3; k++) {
+      const x = W * fx + (k - 1) * 2.5 + s, y = H * fy + (k % 2)
+      px(c, x, y, '#c8d2b8'); px(c, x, y - 1, '#8f9a86')
+      px(c, x - 1, y - 2, '#2c8f8a'); px(c, x, y - 2, '#5ccfc0'); px(c, x + 1, y - 2, '#2c8f8a'); px(c, x, y - 3, '#b8f6ea')
+      px(c, x, y - 2, '#b8f6ea', 0.4)
+    }
+  }
+}
+
 /* ------------------------------------------------------------ plataforma suspensa */
 
 interface EstiloPlataforma { topo: string[]; lado: string[]; junta: string; aro: string[]; brilho?: string[]; madeira?: boolean }
@@ -170,7 +250,8 @@ export function pintarTabuleiro(canvas: HTMLCanvasElement, cenario: Cenario) {
   canvas.width = W; canvas.height = H
   const c = canvas.getContext('2d')!
   c.clearRect(0, 0, W, H)
-  if (tipo === 'chao') pintarChao(c, W, H, cenario)
+  if (tipo === 'chao' && cenario === 'campo') pintarClareira(c, W, H)
+  else if (tipo === 'chao') pintarChao(c, W, H, cenario)
   // a plataforma desce além da mesa (o canvas é mais alto que ela: ver o CSS de data-tabuleiro)
   else pintarPlataforma(c, W, H, cenario, Math.round(H / 1.22))
 }
