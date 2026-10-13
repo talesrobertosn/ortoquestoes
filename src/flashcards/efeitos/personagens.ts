@@ -6,8 +6,9 @@
  * Fantasia original, sem anatomia humana médica.
  */
 import { Grade, MAT } from './pixel'
+import { DESENHOS_BESTAS, ORIGEM_BESTAS, PALETA_BESTAS, TAMANHO_BESTAS, type Besta } from './bestas'
 
-export type Personagem = 'golem' | 'serpente' | 'guardiao' | 'heroi' | 'dragao' | 'raptor' | 'gosma' | 'mimico' | 'sabio' | 'caixeira'
+export type Personagem = 'golem' | 'serpente' | 'guardiao' | 'heroi' | 'dragao' | 'raptor' | 'gosma' | 'mimico' | 'sabio' | 'caixeira' | Besta
 export type Pose = 'parado' | 'respira' | 'preparo' | 'golpe' | 'dano' | 'vitoria'
 export const POSES: Pose[] = ['parado', 'respira', 'preparo', 'golpe', 'dano', 'vitoria']
 
@@ -15,11 +16,13 @@ export const POSES: Pose[] = ['parado', 'respira', 'preparo', 'golpe', 'dano', '
 export const TAMANHO: Record<Personagem, [number, number]> = {
   heroi: [56, 52], golem: [104, 100], serpente: [84, 76], guardiao: [124, 128],
   dragao: [156, 132], raptor: [100, 88], gosma: [92, 80], mimico: [92, 84], sabio: [48, 60], caixeira: [52, 58],
+  ...TAMANHO_BESTAS,
 }
 /** Origem do desenho local dentro do canvas (o herói tem folga para capa, asas e coroa dos estágios). */
 const ORIGEM: Record<Personagem, [number, number]> = {
   heroi: [11, 10], golem: [12, 16], serpente: [16, 14], guardiao: [16, 26],
   dragao: [12, 16], raptor: [8, 12], gosma: [6, 12], mimico: [8, 12], sabio: [3, 3], caixeira: [3, 3],
+  ...ORIGEM_BESTAS,
 }
 
 /** Cores de fragmentos e partículas (dano e derrota). */
@@ -34,6 +37,7 @@ export const PALETA_PERSONAGEM: Record<Personagem, string[]> = {
   mimico: ['#c08a54', '#8f5f34', '#f2c45a', '#c43a24'],
   sabio: ['#a878f0', '#ffffff', '#7fe0ff'],
   caixeira: ['#5fdc7a', '#f2c45a', '#b98250'],
+  ...PALETA_BESTAS,
 }
 
 type P = [number, number]
@@ -754,7 +758,7 @@ const caixeira: Desenho = (g, pose) => {
   g.ponto(16, 20 + r, '#f5a08a'); g.ponto(26, 20 + r, '#f5a08a')
 }
 
-const DESENHOS: Record<Personagem, Desenho> = { heroi, golem, serpente, guardiao, dragao, raptor, gosma, mimico, sabio, caixeira }
+const DESENHOS: Record<Personagem, Desenho> = { heroi, golem, serpente, guardiao, dragao, raptor, gosma, mimico, sabio, caixeira, ...DESENHOS_BESTAS }
 
 
 /**

@@ -49,6 +49,8 @@ const ROTULO_CURA: Record<MotivoCura, string> = {
 }
 
 /** Onde cada modo guarda a partida em andamento. */
+/** Sprites desenhados menores que o Golem: ganham escala maior na arena e na apresentação. */
+const PEQUENOS = new Set<string>(['serpente', 'raptor', 'gosma', 'mimico', 'corvo', 'morcego', 'goblin', 'esqueleto', 'escaravelho', 'aranha', 'cavaleiro', 'espectro', 'harpia', 'mao'])
 const CHAVE_DO_MODO: Record<Modo, string> = { masmorra: CHAVE_PARTIDA, torre: CHAVE_PARTIDA_TORRE }
 const lerAltar = () => ({ ...ALTAR_VAZIO, ...ler<Partial<EstadoAltar>>(CHAVE_ALTAR, {}) }) as EstadoAltar
 /** Nome do jogo e dos modos (usado no topo e na Entrada). */
@@ -231,7 +233,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const chefeEmCena = modo === 'batalha' && adversarioEmCena.chefe
   const trilha = modo === 'estudo' ? 'biblioteca'
     : partida.fase === 'loja' ? 'loja' : partida.fase === 'sabio' ? 'sabio'
-    : chefeEmCena ? (adversarioEmCena.sprite === 'dragao' ? 'dragao' : 'chefe') : cenarioVisivel
+    : chefeEmCena ? (adversarioEmCena.sprite === 'dragao' ? 'dragao' : 'chefe')
+    : modo === 'batalha' && adversarioEmCena.nivel === 'elite' ? 'elite' : cenarioVisivel
   useEffect(() => { tocarMusica(trilha) }, [trilha])
   useEffect(() => () => { tocarAmbiente(null); tocarMusica(null) }, [])
 
@@ -304,7 +307,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
 
   // Só no desenvolvimento: os testes de tela leem o estado para escolher a alternativa certa ou errada.
-  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) } } })
+  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel } })
 
   const pular = useCallback(() => {
     geracao.current++
@@ -874,7 +877,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const pistas = partida.encaixes.find((e) => e.tipo === 'pista')?.carga ?? 0
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
   // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
-  const pequeno = inimigo.sprite === 'serpente' || inimigo.sprite === 'raptor' || inimigo.sprite === 'gosma' || inimigo.sprite === 'mimico'
+  const pequeno = PEQUENOS.has(inimigo.sprite)
   const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : 1.8) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : 1.5) * (inimigo.variante === 'rainha' ? 1.25 : 1)
   const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
@@ -1104,7 +1107,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           <div className={`fc-apresenta${apresentacao.inimigo.chefe ? ' fc-apresenta--chefe' : ''}`} role="dialog" aria-label={`Andar ${apresentacao.andar}: ${apresentacao.inimigo.nome}`} onClick={() => definirApresentacao(null)}>
             <div className="fc-apresenta__cartaz">
               <span className="fc-apresenta__andar">Andar {apresentacao.andar}{torre ? ' da Torre' : apresentacao.ciclo ? ` · ato ${apresentacao.ciclo + 1}` : ''}{apresentacao.inimigo.chefe ? ' · Chefe' : apresentacao.inimigo.nivel === 'elite' ? ' · Elite' : ''}</span>
-              <div className="fc-apresenta__palco"><Ator quem={apresentacao.inimigo.sprite as Personagem} variante={apresentacao.inimigo.variante} escala={(['serpente', 'raptor', 'gosma', 'mimico'].includes(apresentacao.inimigo.sprite) ? 1.4 : apresentacao.inimigo.sprite === 'dragao' ? 0.8 : 1) * (faixaTela === 'celular' ? 1.6 : 2.4)} chefe={apresentacao.inimigo.chefe} /></div>
+              <div className="fc-apresenta__palco"><Ator quem={apresentacao.inimigo.sprite as Personagem} variante={apresentacao.inimigo.variante} escala={(PEQUENOS.has(apresentacao.inimigo.sprite) ? 1.4 : apresentacao.inimigo.sprite === 'dragao' ? 0.8 : 1) * (faixaTela === 'celular' ? 1.6 : 2.4)} chefe={apresentacao.inimigo.chefe} /></div>
               <strong>{apresentacao.inimigo.nome}</strong>
               <em>{apresentacao.inimigo.lema}</em>
               <p>{apresentacao.inimigo.habilidade}</p>
