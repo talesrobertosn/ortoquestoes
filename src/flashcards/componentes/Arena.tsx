@@ -3,7 +3,7 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
 import { Palco, centro } from '../efeitos/palco'
-import { PALETA_PERSONAGEM, type Personagem } from '../efeitos/personagens'
+import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
 import { configurarSom, destravar, tocar, tocarAmbiente } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
 import { BESTIARIO, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
@@ -195,6 +195,14 @@ export function Arena() {
   }, [sincronizar])
 
   const arte = (r: React.RefObject<HTMLDivElement | null>) => r.current?.querySelector('.fc-ator__corpo')
+  /** Troca a pose do sprite (preparo, golpe, dano, vitória) por um tempo e volta a respirar. */
+  const posar = useCallback((r: React.RefObject<HTMLDivElement | null>, pose: Pose, ms: number) => {
+    const el = r.current
+    if (!el) return
+    el.dataset.pose = pose
+    window.clearTimeout(Number(el.dataset.poseTempo))
+    el.dataset.poseTempo = String(window.setTimeout(() => { delete el.dataset.pose }, ms * fator))
+  }, [fator])
 
   const encenar = useCallback(async (eventos: Evento[], depois: Partida) => {
     const g = ++geracao.current
@@ -236,6 +244,7 @@ export function Arena() {
           if (g !== geracao.current) return
           // 7-13: impacto
           animar(arte(refInimigo), forte ? 'fc-anim-atingido-forte' : 'fc-anim-atingido', 640)
+          posar(refInimigo, 'dano', 560)
           P?.clarao(para, cor, forte ? 380 : medio ? 280 : 200, forte ? 1 : 0.75)
           P?.fragmentos(para, PALETA_PERSONAGEM[quemInimigo], forte ? 30 : medio ? 20 : 12, forte ? 460 : 330)
           P?.explosao(para, { cor, cor2: '#fff3c0', n: forte ? 40 : 22, forca: forte ? 380 : 260 })
@@ -258,15 +267,18 @@ export function Arena() {
         case 'dano-heroi': {
           // preparação: o adversário carrega o golpe
           animar(arte(refInimigo), 'fc-anim-prepara', 440)
+          posar(refInimigo, 'preparo', 520)
           tocar('preparo-inimigo')
           P?.carga(centro(refInimigo.current), '#ff5a3c', 18, 80)
           if (!(await esperar(400, g))) return
           animar(arte(refInimigo), 'fc-anim-ataca', 440)
+          posar(refInimigo, 'golpe', 620)
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
           tocar('golpe-inimigo')
           if (P) await P.projetil(de, para, { cor: '#ff5a3c', nucleo: '#ffd0c0', tam: 15, duracao: 0.34, curva: -0.25, rastro: 4 })
           if (g !== geracao.current) return
           animar(arte(refHeroi), 'fc-anim-atingido', 640)
+          posar(refHeroi, 'dano', 560)
           P?.garras(para)
           P?.clarao(para, '#ff3a20', 240, 0.8)
           P?.explosao(para, { cor: '#ff5a3c', cor2: '#ffb090', n: 26, forca: 300 })
@@ -281,6 +293,7 @@ export function Arena() {
         }
         case 'escudo': {
           animar(arte(refInimigo), 'fc-anim-ataca', 440)
+          posar(refInimigo, 'golpe', 600)
           if (!(await esperar(180, g))) return
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
           tocar('golpe-inimigo')
@@ -517,7 +530,8 @@ export function Arena() {
   const ordem = partida.atual?.ordem ?? []
   const pistas = partida.encaixes.find((e) => e.tipo === 'pista')?.carga ?? 0
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
-  const escalaInimigo = faixaTela === 'larga' ? 3 : 2
+  // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
+  const escalaInimigo = inimigo.sprite === 'serpente' ? (faixaTela === 'larga' ? 3 : 2) : faixaTela === 'larga' ? 2 : 1.5
   const escalaHeroi = faixaTela === 'celular' ? 2 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
     ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${selecionada + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
@@ -715,7 +729,7 @@ export function Arena() {
           <div className={`fc-apresenta${apresentacao.inimigo.chefe ? ' fc-apresenta--chefe' : ''}`} role="dialog" aria-label={`Andar ${apresentacao.andar}: ${apresentacao.inimigo.nome}`} onClick={() => definirApresentacao(null)}>
             <div className="fc-apresenta__cartaz">
               <span className="fc-apresenta__andar">Andar {apresentacao.andar}{apresentacao.ciclo ? ` · Ciclo ${apresentacao.ciclo + 1}` : ''}{apresentacao.inimigo.chefe ? ' · Chefe' : ''}</span>
-              <div className="fc-apresenta__palco"><Ator quem={apresentacao.inimigo.sprite as Personagem} escala={faixaTela === 'celular' ? 3 : 4} chefe={apresentacao.inimigo.chefe} /></div>
+              <div className="fc-apresenta__palco"><Ator quem={apresentacao.inimigo.sprite as Personagem} escala={(apresentacao.inimigo.sprite === 'serpente' ? 1.5 : 1) * (faixaTela === 'celular' ? 2 : 3)} chefe={apresentacao.inimigo.chefe} /></div>
               <strong>{apresentacao.inimigo.nome}</strong>
               <em>{apresentacao.inimigo.lema}</em>
               <p>{apresentacao.inimigo.habilidade}</p>

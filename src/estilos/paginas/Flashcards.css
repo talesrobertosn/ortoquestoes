@@ -136,10 +136,13 @@
 /* ---------- Atores (sprites em cena) ---------- */
 .fc-ator { position: relative; flex: none; display: block; }
 .fc-ator__corpo { position: absolute; inset: 0; transform-origin: 50% 100%; }
-.fc-ator__quadros { position: absolute; left: 0; bottom: 0; display: block; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .6)) drop-shadow(2px 0 0 rgba(255, 236, 190, .22)); }
-.fc-ator__q { position: absolute; inset: 0; image-rendering: pixelated; image-rendering: crisp-edges; }
-.fc-ator__q--b { opacity: 0; animation: fc-respira-b 1.3s steps(1) infinite; }
-.fc-ator__q--a { animation: fc-respira-a 1.3s steps(1) infinite; }
+.fc-ator__quadros { position: absolute; display: block; pointer-events: none; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .6)) drop-shadow(2px 0 0 rgba(255, 236, 190, .22)); }
+.fc-ator__q { position: absolute; inset: 0; opacity: 0; image-rendering: pixelated; image-rendering: crisp-edges; }
+.fc-ator__q--respira { animation: fc-respira-b 1.3s steps(1) infinite; }
+.fc-ator__q--parado { opacity: 1; animation: fc-respira-a 1.3s steps(1) infinite; }
+.fc-ator[data-pose] .fc-ator__q--parado, .fc-ator[data-pose] .fc-ator__q--respira { animation: none; opacity: 0; }
+.fc-ator[data-pose="preparo"] .fc-ator__q--preparo, .fc-ator[data-pose="golpe"] .fc-ator__q--golpe,
+.fc-ator[data-pose="dano"] .fc-ator__q--dano, .fc-ator[data-pose="vitoria"] .fc-ator__q--vitoria { opacity: 1; }
 @keyframes fc-respira-a { 50% { opacity: 0; } }
 @keyframes fc-respira-b { 50% { opacity: 1; } }
 .fc-ator__sombra { position: absolute; left: 10%; right: 10%; bottom: -7px; height: 18px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0, 0, 0, .62), transparent); }
@@ -604,7 +607,8 @@
 
 /* ============================================================ Menos movimento */
 .fc-arena--reduzida *, .fc-arena--reduzida *::before, .fc-arena--reduzida *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-.fc-arena--reduzida .fc-ator__q--b { display: none; }
+.fc-arena--reduzida .fc-ator__q--respira { display: none; }
+.fc-arena--reduzida .fc-ator__q--parado { animation: none; }
 @media (prefers-reduced-motion: reduce) {
   .fc-modal, .fc-modal-veu { animation: none; }
 }

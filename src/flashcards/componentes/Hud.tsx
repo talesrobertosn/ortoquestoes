@@ -1,18 +1,22 @@
 import { forwardRef, memo, useEffect, useRef } from 'react'
-import { pintarPersonagem, TAMANHO, type Personagem } from '../efeitos/personagens'
+import { caixaDoCorpo, pintarPersonagem, POSES, TAMANHO, type Personagem } from '../efeitos/personagens'
 import { RECOMPENSAS, type TipoPoder } from '../motor/poderes'
 import { Sprite } from './Sprite'
 
-/** Sprite em pixel art com dois quadros de respiração (alternados no CSS). */
+/**
+ * Sprite em pixel art com todas as poses pintadas de antemão, uma por canvas.
+ * Parado alterna com "respira"; as outras aparecem quando o diretor de efeitos
+ * põe `data-pose` no ator (veja `posar` na Arena).
+ */
 const Quadros = memo(function Quadros({ quem, escala }: { quem: Personagem; escala: number }) {
-  const a = useRef<HTMLCanvasElement>(null), b = useRef<HTMLCanvasElement>(null)
-  useEffect(() => { if (a.current) pintarPersonagem(a.current, quem, 0); if (b.current) pintarPersonagem(b.current, quem, 1) }, [quem])
+  const refs = useRef<Record<string, HTMLCanvasElement | null>>({})
+  useEffect(() => { for (const pose of POSES) { const c = refs.current[pose]; if (c) pintarPersonagem(c, quem, pose) } }, [quem])
   const [w, h] = TAMANHO[quem]
+  const [x, y] = caixaDoCorpo(quem)
   const estilo = { width: w * escala, height: h * escala }
   return (
-    <span className="fc-ator__quadros" style={estilo}>
-      <canvas ref={a} className="fc-ator__q fc-ator__q--a" style={estilo} />
-      <canvas ref={b} className="fc-ator__q fc-ator__q--b" style={estilo} />
+    <span className="fc-ator__quadros" style={{ ...estilo, left: -x * escala, top: -y * escala }}>
+      {POSES.map((pose) => <canvas key={pose} ref={(c) => { refs.current[pose] = c }} className={`fc-ator__q fc-ator__q--${pose}`} style={estilo} />)}
     </span>
   )
 })
@@ -28,10 +32,10 @@ interface AtorProps {
 /**
  * Personagem em cena: sprite no chão, com sombra, luz de recorte e aura.
  * As animações (dano, ataque, bloqueio, derrota) entram por classes no
- * elemento `.fc-ator__corpo`.
+ * elemento `.fc-ator__corpo`; as poses, por `data-pose` no próprio ator.
  */
 export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, escala, classe, chefe, children }, ref) {
-  const [w, h] = TAMANHO[quem]
+  const [, , w, h] = caixaDoCorpo(quem)
   return (
     <div ref={ref} className={`fc-ator fc-ator--${quem}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={{ width: w * escala, height: h * escala }} aria-hidden="true">
       <span className="fc-ator__aura" />
