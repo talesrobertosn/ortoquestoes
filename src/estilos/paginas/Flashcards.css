@@ -1594,3 +1594,86 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 }
 @media (max-width: 380px) { .fc-alternativa > span { font-size: 14px; } .fc-alternativa--longa > span { font-size: 13px; } }
 @media (prefers-reduced-motion: reduce) { .fc-slot-mao--sel .fc-alternativa, .fc-slot-mao--sel .fc-alternativa::after { animation: none !important; } }
+
+/* ============================================================
+   Estudo forjado (13/10/2026): o modo Estudo ganha o mesmo acabamento da
+   Batalha. Painéis em couro escuro numa moldura de bronze rebitada; botões
+   de avaliação como placas de metal com medalhão (tecla 1, 2, 3); filtros
+   como fichas de metal; alternativas iguais às da Batalha.
+   ============================================================ */
+.fc-biblioteca__cabeca, .fc-estudo__painel, .fc-categoria, .fc-estudo__resumo {
+  --m0: #120804; --m1: #3e2410; --m2: #7a5026; --m3: #b8864a; --m4: #ecc890;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(255, 210, 150, .1), transparent 55%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .06 0 0 0 0 .03 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23f)'/%3E%3C/svg%3E"),
+    linear-gradient(rgba(42, 26, 16, .94), rgba(22, 13, 8, .95)) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 220, 170, .18), inset 0 0 22px rgba(0, 0, 0, .55),
+    0 0 0 1.5px var(--m0), 0 0 0 3px var(--m3), 0 0 0 4.5px var(--m2), 0 0 0 6px var(--m1), 0 0 0 7.5px var(--m0), 0 14px 26px rgba(0, 0, 0, .5) !important;
+  border-radius: 12px !important; }
+.fc-biblioteca__cabeca::before, .fc-estudo__painel::before, .fc-categoria::before { content: ""; position: absolute; inset: -5px; border-radius: 15px; pointer-events: none; z-index: 1;
+  background:
+    radial-gradient(circle at 35% 35%, var(--m4), var(--m2) 45%, var(--m0) 75%, transparent 80%) 0 0 / 10px 10px no-repeat,
+    radial-gradient(circle at 35% 35%, var(--m4), var(--m2) 45%, var(--m0) 75%, transparent 80%) 100% 0 / 10px 10px no-repeat,
+    radial-gradient(circle at 35% 35%, var(--m4), var(--m2) 45%, var(--m0) 75%, transparent 80%) 0 100% / 10px 10px no-repeat,
+    radial-gradient(circle at 35% 35%, var(--m4), var(--m2) 45%, var(--m0) 75%, transparent 80%) 100% 100% / 10px 10px no-repeat; }
+.fc-biblioteca__cabeca, .fc-estudo__painel { position: relative; }
+/* categoria: a cor do assunto vira um brilho no couro e o anel do medalhão */
+.fc-categoria { background:
+    radial-gradient(ellipse at 0% 50%, color-mix(in srgb, var(--cor) 26%, transparent), transparent 58%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .06 0 0 0 0 .03 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23f)'/%3E%3C/svg%3E"),
+    linear-gradient(rgba(42, 26, 16, .94), rgba(22, 13, 8, .95)) !important; }
+@media (hover: hover) { .fc-categoria:not(:disabled):hover { --m3: #e2a860; --m4: #fff0c4; transform: translateY(-3px);
+  box-shadow: inset 0 1px 0 rgba(255, 220, 170, .18), inset 0 0 22px rgba(0, 0, 0, .55), 0 0 0 1.5px var(--m0), 0 0 0 3px var(--m3), 0 0 0 4.5px var(--m2), 0 0 0 6px var(--m1), 0 0 0 7.5px var(--m0), 0 0 26px color-mix(in srgb, var(--cor) 45%, transparent), 0 16px 28px rgba(0, 0, 0, .5) !important; } }
+.fc-categoria__icone { background: radial-gradient(circle at 38% 30%, rgba(255, 255, 255, .25), transparent 40%), radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--cor) 38%, #2a1a1e) 0 60%, #120a0c 61%) !important;
+  box-shadow: 0 0 0 2px #120804, 0 0 0 4px var(--m3), 0 0 0 5px var(--m1), 0 0 0 6.5px #120804, 0 0 18px color-mix(in srgb, var(--cor) 45%, transparent) !important; }
+.fc-categoria__barra, .fc-estudo__barra { height: 9px; border-radius: 2px; background: #0c0604; box-shadow: 0 0 0 1px #120804, 0 0 0 2px var(--m2, #7a5026), inset 0 2px 3px rgba(0, 0, 0, .8); }
+.fc-categoria__barra i { background: repeating-linear-gradient(90deg, transparent 0 9px, rgba(0, 0, 0, .35) 9px 10px), linear-gradient(#a8f0b8, #2a9a48 60%, #146a2a); }
+.fc-estudo__barra i { background: repeating-linear-gradient(90deg, transparent 0 9px, rgba(0, 0, 0, .35) 9px 10px), linear-gradient(#fff1b8, #e3a83a 60%, #8a5a18); }
+/* filtros: fichas de metal; a ativa é uma placa de ouro */
+.fc-pilulas { background: #0c0604 !important; box-shadow: 0 0 0 1px #120804, 0 0 0 2.5px #5a3c1e, inset 0 2px 4px rgba(0, 0, 0, .8) !important; border-radius: 10px !important; }
+.fc-pilulas button { border-radius: 7px !important; }
+.fc-pilulas button[aria-pressed="true"] { background: radial-gradient(ellipse at 50% -10%, rgba(255, 255, 255, .7), transparent 55%), var(--fc-metal-ouro) !important; color: #2a1606 !important; box-shadow: 0 0 0 1.5px #1e1002, 0 0 12px rgba(255, 200, 90, .45) !important; text-shadow: 0 1px 0 rgba(255, 245, 210, .6); }
+/* botões de avaliação: placas de metal com medalhão e o nome em relevo */
+.fc-botao-aval { --m0: #1a0402; --m1: #6a140c; --m2: #b02a1c; --m3: #f0806a; --m4: #ffd8cc; --e1: #8a1a10;
+  position: relative; display: grid !important; grid-template-columns: auto auto; grid-template-rows: auto auto; align-items: center; justify-items: start; column-gap: 10px; row-gap: 0;
+  min-width: 176px; min-height: 64px; padding: 8px 20px 8px 10px !important; border-radius: 12px !important; text-align: left;
+  background: radial-gradient(ellipse at 50% -20%, rgba(255, 255, 255, .55), transparent 55%), linear-gradient(var(--m3), var(--m2) 55%, var(--m1)) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -3px 0 rgba(0, 0, 0, .3), 0 0 0 1.5px var(--m0), 0 0 0 3px var(--m4), 0 0 0 4.5px var(--m1), 0 0 0 6px var(--m0), 0 10px 18px rgba(0, 0, 0, .5) !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .45) !important; transition: transform var(--fc-rapido, .16s) cubic-bezier(.2, .8, .3, 1.3), filter .2s; }
+.fc-botao-aval > i { grid-row: span 2; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font: 900 16px/1 var(--fc-titulo); font-style: normal; color: #fff4d6;
+  background: radial-gradient(circle at 38% 30%, rgba(255, 255, 255, .5), transparent 34%), radial-gradient(circle, var(--e1) 0 54%, transparent 55%), radial-gradient(circle, var(--m4) 0 58%, var(--m1) 59% 62%, transparent 63%), repeating-conic-gradient(var(--m3) 0 8deg, var(--m1) 8deg 16deg);
+  box-shadow: 0 0 0 1.5px var(--m0), 0 2px 4px rgba(0, 0, 0, .5); }
+.fc-botao-aval strong { font: 900 19px/1.05 var(--fc-titulo) !important; letter-spacing: .06em; color: #fff8e6; }
+.fc-botao-aval small { font: 700 12px var(--fc-ui) !important; color: rgba(255, 245, 225, .88); opacity: 1 !important; }
+.fc-botao-aval--hesitei { --m0: #1e1002; --m1: #6a4410; --m2: #b07a1c; --m3: #f2c45a; --m4: #fff6c8; --e1: #7a4a10; }
+.fc-botao-aval--hesitei strong, .fc-botao-aval--hesitei small { color: #2a1606 !important; text-shadow: 0 1px 0 rgba(255, 245, 210, .5) !important; }
+.fc-botao-aval--sabia { --m0: #04170a; --m1: #145a2a; --m2: #2f9a4c; --m3: #6fdc8a; --m4: #e0ffe8; --e1: #1f7a3a; }
+.fc-botao-aval:hover { transform: translateY(-3px); filter: brightness(1.08); }
+.fc-botao-aval:active { transform: translateY(1px) scale(.98); }
+.fc-botao-aval--sugerido { animation: fc-alt-pulso 1.4s ease-in-out infinite; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -3px 0 rgba(0, 0, 0, .3), 0 0 0 1.5px var(--m0), 0 0 0 3px var(--m4), 0 0 0 4.5px var(--m1), 0 0 0 6px var(--m0), 0 0 0 9px #fff1b0, 0 0 26px var(--m3), 0 10px 18px rgba(0, 0, 0, .5) !important; }
+/* alternativas no Estudo: mesma mão da Batalha, mais larga */
+.fc-estudo__botoes--alternativas { flex-direction: column; align-items: center; gap: 8px; }
+.fc-mao--estudo { width: min(900px, 100%); padding: 6px 4px 2px; }
+.fc-estudo__so-virar { opacity: .9; }
+.fc-estudo__respondidas { grid-column: 1 / -1; grid-row: 2; justify-self: center; width: min(900px, 100%); }
+.fc-estudo__respondidas + .fc-estudo__botoes { grid-row: 3; }
+.fc-estudo__veredito { flex-basis: 100%; margin: 0; text-align: center; font: 800 15px var(--fc-ui); text-shadow: 0 1px 2px #000; }
+.fc-estudo__veredito--acertou { color: #a8f0b8; } .fc-estudo__veredito--errou { color: #ffb8a8; }
+.fc-estudo:has(.fc-estudo__respondidas) { grid-template-rows: minmax(0, 1fr) auto auto; }
+/* interruptor "Alternativas" do painel */
+.fc-interruptor { display: inline-flex; align-items: center; gap: 10px; justify-self: start; padding: 4px 2px; border: 0; background: none; color: #f0e2c0; font: 700 13.5px var(--fc-ui); cursor: pointer; }
+.fc-interruptor__trilho { position: relative; width: 40px; height: 22px; border-radius: 11px; background: #0c0604; box-shadow: 0 0 0 1.5px #120804, 0 0 0 3px #5a3c1e, inset 0 2px 4px rgba(0, 0, 0, .8); transition: background .2s; }
+.fc-interruptor__trilho i { position: absolute; left: 2px; top: 2px; width: 18px; height: 18px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fff, #b8864a 60%, #3e2410); box-shadow: 0 1px 2px rgba(0, 0, 0, .6); transition: transform .2s cubic-bezier(.2, .8, .3, 1.3); }
+.fc-interruptor[aria-checked="true"] .fc-interruptor__trilho { background: linear-gradient(#2f9a4c, #145a2a); }
+.fc-interruptor[aria-checked="true"] .fc-interruptor__trilho i { transform: translateX(18px); background: radial-gradient(circle at 35% 30%, #fff, #f2c45a 60%, #6a4410); }
+@media (max-width: 640px) {
+  .fc-botao-aval { min-width: 0; flex: 1 1 0; min-height: 58px; padding: 6px 8px 6px 6px !important; column-gap: 6px; }
+  .fc-botao-aval > i { width: 28px; height: 28px; font-size: 13px; }
+  .fc-botao-aval strong { font-size: 15px !important; }
+  .fc-botao-aval small { font-size: 10.5px !important; }
+  .fc-estudo__veredito { font-size: 13px; }
+  .fc-interruptor span:last-child { display: none; }
+  .fc-estudo__respondidas { display: none; }
+  .fc-estudo__painel .fc-interruptor { margin-left: auto; }
+  .fc-mao--estudo { gap: 8px; }
+}

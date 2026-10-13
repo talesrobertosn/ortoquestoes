@@ -1,9 +1,11 @@
 /**
- * Floresta das Fises Antigas: o cenário do primeiro lugar da Cripta (cena `campo`).
+ * Cenários pintados offline (direção criativa de 13/10/2026):
+ *   campo       Floresta das Fises Antigas (`scripts/cenarios/floresta.py`), 1º lugar da Cripta
+ *   biblioteca  Biblioteca Ancestral (`scripts/cenarios/biblioteca.py`), o modo Estudo
  *
- * Diferente das outras cenas, que são pintadas em código a cada tamanho, a
- * floresta é pintada OFFLINE por `scripts/cenarios/floresta.py` (ruído, voronoi,
- * rampas de cor com pontilhado e contorno) e salva em camadas PNG pequenas em
+ * Diferente das outras cenas, que são pintadas em código a cada tamanho, estas
+ * são pintadas OFFLINE com `scripts/cenarios/pintor.py` (ruído, voronoi,
+ * rampas de cor com pontilhado e contorno) e salvas em camadas PNG pequenas em
  * `public/flashcards/cenarios/`: fundo, meio, frente e luz, em paisagem
  * (520×330) e retrato (250×470).
  *
@@ -13,13 +15,18 @@
  * é somada por cima em modo screen e também alimenta o bloom.
  */
 import { recurso } from '../../config'
+import type { Cena } from './pintura'
 
 type Formato = 'paisagem' | 'retrato'
 const CAMADAS = ['fundo', 'meio', 'frente', 'luz'] as const
 type Camada = (typeof CAMADAS)[number]
-export type ImagensFloresta = Record<Formato, Record<Camada, HTMLImageElement>>
+export type ImagensCenario = Record<Formato, Record<Camada, HTMLImageElement>>
 
-let promessa: Promise<ImagensFloresta | null> | null = null
+/** Cena do jogo → nome do arquivo pintado. */
+export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca' }
+
+const promessas = new Map<string, Promise<ImagensCenario | null>>()
+const prontas = new Map<string, ImagensCenario | null>()
 
 function carregar(src: string) {
   return new Promise<HTMLImageElement>((ok, falha) => {
@@ -31,34 +38,35 @@ function carregar(src: string) {
   })
 }
 
-/** Carrega as 8 camadas uma vez só (cache do módulo). Devolve null se algo falhar: o jogo usa a cena antiga. */
-export function carregarFloresta(): Promise<ImagensFloresta | null> {
-  if (!promessa) {
+/** Carrega as 8 camadas de uma cena uma vez só (cache do módulo). Devolve null se algo falhar: o jogo usa a cena antiga. */
+export function carregarCenarioPintado(nome: string): Promise<ImagensCenario | null> {
+  let p = promessas.get(nome)
+  if (!p) {
     const formatos: Formato[] = ['paisagem', 'retrato']
-    promessa = Promise.all(formatos.flatMap((f) => CAMADAS.map((c) => carregar(recurso(`flashcards/cenarios/floresta-${f}-${c}.png`)))))
+    p = Promise.all(formatos.flatMap((f) => CAMADAS.map((c) => carregar(recurso(`flashcards/cenarios/${nome}-${f}-${c}.png`)))))
       .then((imgs) => {
-        const r = {} as ImagensFloresta
+        const r = {} as ImagensCenario
         formatos.forEach((f, i) => { r[f] = {} as Record<Camada, HTMLImageElement>; CAMADAS.forEach((c, j) => { r[f][c] = imgs[i * CAMADAS.length + j] }) })
         return r
       })
       .catch(() => null)
+      .then((r) => { prontas.set(nome, r); return r })
+    promessas.set(nome, p)
   }
-  return promessa
+  return p
 }
 
-/** Já carregou? (para pintar direto, sem esperar um quadro) */
-let pronta: ImagensFloresta | null = null
-carregarFloresta().then((r) => { pronta = r })
-export const florestaPronta = () => pronta
+/** Já carregou? (para pintar direto, sem esperar um quadro). undefined = ainda carregando. */
+export const cenarioPintadoPronto = (nome: string) => prontas.get(nome)
 
 /**
  * Preenche os planos da cena com as camadas recortadas no centro.
  * `w`×`h` é o tamanho em px CSS; a escala é o menor inteiro que cobre a tela
  * (nunca menor que 2, para o pixel continuar visível).
  */
-export function pintarFloresta(
+export function pintarCamadas(
   planos: { fundo: HTMLCanvasElement; meio: HTMLCanvasElement; frente: HTMLCanvasElement; brilho: HTMLCanvasElement; luz?: HTMLCanvasElement },
-  imgs: ImagensFloresta, w: number, h: number,
+  imgs: ImagensCenario, w: number, h: number,
 ) {
   const formato: Formato = h > w * 1.05 ? 'retrato' : 'paisagem'
   const conj = imgs[formato]

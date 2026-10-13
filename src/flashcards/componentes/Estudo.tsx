@@ -33,6 +33,7 @@ const dominado = (r?: RegistroFlashcard) => !!r && r.c === true && !revisarHoje(
 const pendente = (r?: RegistroFlashcard) => !!r && revisarHoje(r)
 
 const TAMANHOS = [10, 20, 30] as const
+const CHAVE_ALTERNATIVAS = 'flashcards:estudo-alternativas'
 const TIPOS = ['Na prova', 'Relâmpago', 'Imagem', 'Anatomia'] as const
 
 /**
@@ -157,6 +158,18 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
   const acabou = pos >= fila.length
   const carta = porId.get(fila[Math.min(pos, fila.length - 1)])!
 
+  // Alternativas no Estudo (13/10/2026): responder antes de virar, com correção na hora.
+  // Opcional (lembrado no aparelho); só aparece quando o flashcard tem alternativas boas.
+  const [comAlternativas, definirComAlternativas] = useState(() => ler<boolean>(CHAVE_ALTERNATIVAS, true))
+  const [escolha, definirEscolha] = useState<number | null>(null)
+  const ordem = useMemo(() => {
+    const idx = carta.opcoes.map((_, i) => i)
+    for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]] }
+    return idx
+  }, [carta])
+  const mostrarAlternativas = comAlternativas && carta.batalha !== false && carta.opcoes.length >= 2
+  const errouNaAlternativa = escolha !== null && ordem[escolha] !== carta.certa
+
   const [bloqueio, definirBloqueio] = useState<LimiteFlashcard | null>(null)
   // Ver o verso conta como um flashcard estudado: no plano grátis, o servidor decide (trava desligada por padrão).
   const virar = useCallback(async () => {
@@ -166,7 +179,16 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
       if (!r.permitido) { definirBloqueio(r); return }
     }
     definirVirada(true)
+    return true
   }, [virada, acabou, carta])
+
+  const responder = useCallback(async (pos: number) => {
+    if (virada || acabou || escolha !== null) return
+    const ok = await virar()
+    if (!ok) return
+    definirEscolha(pos)
+    tocar(ordem[pos] === carta.certa ? 'cura' : 'erro')
+  }, [virada, acabou, escolha, virar, ordem, carta])
 
   const avaliar = useCallback((a: Avaliacao) => {
     if (!virada || acabou) return
@@ -179,6 +201,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
     tocar(a === 'sabia' ? 'cura' : a === 'hesitei' ? 'confirmar' : 'erro')
     definirFeitos((f) => ({ ...f, [a]: f[a] + 1 }))
     definirVirada(false)
+    definirEscolha(null)
     definirPos((p) => p + 1)
   }, [carta, virada, acabou])
 
@@ -187,13 +210,14 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
       if (e.ctrlKey || e.metaKey || e.altKey) return
       const alvo = e.target as HTMLElement
       if (e.key === ' ' && alvo?.tagName !== 'BUTTON' && alvo?.tagName !== 'A') { e.preventDefault(); virar() }
+      if (!virada && mostrarAlternativas && /^[1-4]$/.test(e.key) && +e.key <= ordem.length) { responder(+e.key - 1); return }
       if (virada && e.key === '1') avaliar('errei')
       if (virada && e.key === '2') avaliar('hesitei')
       if (virada && e.key === '3') avaliar('sabia')
     }
     window.addEventListener('keydown', aoTeclar)
     return () => window.removeEventListener('keydown', aoTeclar)
-  }, [avaliar, virada, virar])
+  }, [avaliar, virada, virar, responder, mostrarAlternativas, ordem])
 
   const total = feitos.errei + feitos.hesitei + feitos.sabia
   if (acabou) {
@@ -226,6 +250,11 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
           <div className="hesitei"><dt>Hesitei</dt><dd>{feitos.hesitei}</dd></div>
           <div className="errei"><dt>Errei</dt><dd>{feitos.errei}</dd></div>
         </dl>
+        <button type="button" className="fc-interruptor" role="switch" aria-checked={comAlternativas}
+          onClick={() => { const v = !comAlternativas; definirComAlternativas(v); gravar(CHAVE_ALTERNATIVAS, v); tocar('selecao') }}>
+          <span className="fc-interruptor__trilho" aria-hidden="true"><i /></span>
+          <span>Alternativas</span>
+        </button>
       </aside>
       {bloqueio && (
         <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-limite-estudo">
@@ -252,12 +281,43 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
           familias={familiasDe(carta, ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})[carta.id]?.c === false ? ['revisao'] : [])}
         />
       </div>
-      <div className="fc-estudo__botoes">
+      {virada && escolha !== null && (
+        <div className="fc-mao fc-mao--estudo fc-mao--respondida fc-estudo__respondidas" aria-label="Sua resposta">
+          {ordem.map((opcao, pos) => (
+            <div key={pos} className="fc-slot-mao">
+              <button type="button" disabled className={`fc-alternativa${opcao === carta.certa ? ' fc-alternativa--certa' : pos === escolha ? ' fc-alternativa--errada' : ' fc-alternativa--apagada'}`}>
+                <i aria-hidden="true">{pos + 1}</i><span>{carta.opcoes[opcao]}</span>
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+      <div className={`fc-estudo__botoes${!virada && mostrarAlternativas ? ' fc-estudo__botoes--alternativas' : ''}`}>
         {virada ? (
           <>
-            <button type="button" className="fc-botao-aval fc-botao-aval--errei" onClick={() => avaliar('errei')}><strong>Errei</strong><small>volta hoje · 1</small></button>
-            <button type="button" className="fc-botao-aval fc-botao-aval--hesitei" onClick={() => avaliar('hesitei')}><strong>Hesitei</strong><small>volta em 3 dias · 2</small></button>
-            <button type="button" className="fc-botao-aval fc-botao-aval--sabia" onClick={() => avaliar('sabia')}><strong>Sabia</strong><small>volta em 10 dias · 3</small></button>
+            {escolha !== null && <p className={`fc-estudo__veredito fc-estudo__veredito--${errouNaAlternativa ? 'errou' : 'acertou'}`} role="status">{errouNaAlternativa ? 'Você errou na alternativa. Como foi de verdade?' : 'Acertou! Foi com segurança?'}</p>}
+            <button type="button" className={`fc-botao-aval fc-botao-aval--errei${errouNaAlternativa ? ' fc-botao-aval--sugerido' : ''}`} onClick={() => avaliar('errei')}><i aria-hidden="true">1</i><strong>Errei</strong><small>volta hoje</small></button>
+            <button type="button" className="fc-botao-aval fc-botao-aval--hesitei" onClick={() => avaliar('hesitei')}><i aria-hidden="true">2</i><strong>Hesitei</strong><small>volta em 3 dias</small></button>
+            <button type="button" className={`fc-botao-aval fc-botao-aval--sabia${escolha !== null && !errouNaAlternativa ? ' fc-botao-aval--sugerido' : ''}`} onClick={() => avaliar('sabia')}><i aria-hidden="true">3</i><strong>Sabia</strong><small>volta em 10 dias</small></button>
+          </>
+        ) : mostrarAlternativas ? (
+          <>
+            <div className="fc-mao fc-mao--estudo" role="group" aria-label="Alternativas">
+              {ordem.map((opcao, pos) => {
+                const texto = carta.opcoes[opcao]
+                return (
+                  <div key={pos + '-' + carta.id} className="fc-slot-mao">
+                    <button type="button" onClick={() => responder(pos)} onPointerEnter={() => tocar('hover')}
+                      className={`fc-alternativa${texto.trim().length <= 4 ? ' fc-alternativa--curta' : ''}${texto.length > 56 ? ' fc-alternativa--muito-longa' : texto.length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...texto.split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}`}
+                      aria-label={`Alternativa ${pos + 1}: ${texto}`}>
+                      <i aria-hidden="true">{pos + 1}</i>
+                      <span>{texto}</span>
+                    </button>
+                  </div>
+                )
+              })}
+            </div>
+            <button type="button" className="fc-botao-pequeno fc-estudo__so-virar" onClick={() => { tocar('confirmar'); virar() }}>Virar sem responder · espaço</button>
           </>
         ) : (
           <button type="button" className="fc-principal fc-principal--largo pronto" onClick={() => { tocar('confirmar'); virar() }}><span>Virar o flashcard</span><small>espaço</small></button>

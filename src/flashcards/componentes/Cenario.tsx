@@ -2,7 +2,7 @@ import { memo, useEffect, useRef } from 'react'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
 import { criarAmbiente, pintarCena, type Cena, type Clima } from '../efeitos/pintura'
 import { pintarTabuleiro } from '../efeitos/tabuleiros'
-import { carregarFloresta, florestaPronta, pintarFloresta } from '../efeitos/floresta'
+import { CENAS_PINTADAS, carregarCenarioPintado, cenarioPintadoPronto, pintarCamadas } from '../efeitos/cenariosPintados'
 
 /** Desfoque barato e compatível com todos os navegadores: reduz e amplia de novo, com suavização. */
 function desfocar(src: HTMLCanvasElement, fator: number): HTMLCanvasElement {
@@ -22,9 +22,9 @@ function desfocar(src: HTMLCanvasElement, fator: number): HTMLCanvasElement {
 
 /** Cores dos feixes de luz e intensidade, por cena e clima (antes era hue-rotate e mix-blend no CSS). */
 function feixes(c: CanvasRenderingContext2D, W: number, H: number, cena: Cena, clima: Clima) {
-  const cor = cena === 'masmorra' || cena === 'biblioteca' ? '170,200,255' : clima === 'entardecer' ? '255,196,150' : cena === 'covil' ? '255,170,110' : '255,236,200'
+  const cor = cena === 'biblioteca' ? '255,226,170' : cena === 'masmorra' ? '170,200,255' : clima === 'entardecer' ? '255,196,150' : cena === 'covil' ? '255,170,110' : '255,236,200'
   // a floresta já traz os próprios feixes de sol (camada luz): aqui só um reforço leve
-  const forca = clima === 'chuva' ? 0.08 : clima === 'noite' ? 0.2 : cena === 'masmorra' ? 0.3 : cena === 'biblioteca' ? 0.5 : cena === 'campo' ? 0.3 : 0.8
+  const forca = clima === 'chuva' ? 0.08 : clima === 'noite' ? 0.2 : cena === 'masmorra' ? 0.3 : cena === 'biblioteca' ? 0.15 : cena === 'campo' ? 0.3 : 0.8
   const t = document.createElement('canvas'); t.width = W; t.height = H
   const f = t.getContext('2d')!
   const ang = (cena === 'biblioteca' ? 170 : 118) * Math.PI / 180
@@ -85,10 +85,11 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima = 'dia' }: 
       ultimo = chave
       const novo = () => { const c = document.createElement('canvas'); Object.defineProperty(c, 'clientWidth', { value: w }); Object.defineProperty(c, 'clientHeight', { value: h }); return c }
       const planos: { fundo: HTMLCanvasElement; meio: HTMLCanvasElement; frente: HTMLCanvasElement; brilho: HTMLCanvasElement; luz?: HTMLCanvasElement } = { fundo: novo(), meio: novo(), frente: novo(), brilho: novo() }
-      // Floresta das Fises Antigas: camadas pintadas offline (ver efeitos/floresta.ts)
-      const floresta = cena === 'campo' ? florestaPronta() : null
-      if (cena === 'campo' && !floresta) carregarFloresta().then((r) => { if (r) { ultimo = ''; pintar() } })
-      if (floresta) { planos.luz = novo(); pintarFloresta(planos, floresta, w, h) }
+      // Floresta e Biblioteca: camadas pintadas offline (ver efeitos/cenariosPintados.ts)
+      const nomePintado = CENAS_PINTADAS[cena]
+      const pintado = nomePintado ? cenarioPintadoPronto(nomePintado) : null
+      if (nomePintado && pintado === undefined) carregarCenarioPintado(nomePintado).then((r) => { if (r) { ultimo = ''; pintar() } })
+      if (pintado) { planos.luz = novo(); pintarCamadas(planos, pintado, w, h) }
       else pintarCena(planos, cena)
       const q = Math.min(2, window.devicePixelRatio || 1)
       const W = Math.round(w * q), H = Math.round(h * q)
