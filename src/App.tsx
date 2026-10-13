@@ -1,7 +1,8 @@
-import { lazy, Suspense, useEffect, type ReactNode } from 'react'
+import { lembrarFundo, rotaDoFundo } from './flashcards/fundo'
+import { lazy, Suspense, useEffect, useRef, type ReactNode } from 'react'
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
-import { usarRota } from './util/rotas'
+import { rotaDe, usarRota, type Rota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
@@ -90,23 +91,9 @@ const TITULOS: Record<string, string> = {
 /** Central, desempenho e cronograma dos flashcards são páginas do site; o resto é o jogo em tela cheia. */
 const PAGINAS_DO_SITE_FLASHCARDS = [undefined, 'desempenho', 'cronograma']
 
-export function App() {
-  const rota = usarRota()
+/** A página de uma rota (o App desenha a do site e, por cima, a do jogo). */
+function paginaDaRota(rota: Rota): ReactNode {
   const [primeiro, segundo] = rota.segmentos
-  const { densidade, fonte } = usarLeitura()
-
-  useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [rota.caminho])
-  // Emblemas "Fila zerada": observa as respostas e marca o dia em que a revisão zerou.
-  useEffect(() => vigiarFilaZerada(), [])
-
-  useEffect(() => {
-    document.title =
-      TITULOS[rota.caminho] ??
-      (primeiro === 'questao' && segundo
-        ? `Questão ${segundo} | Orto Questões`
-        : `${SITE.nome}`)
-  }, [rota.caminho, primeiro, segundo])
-
   let pagina: ReactNode
   switch (primeiro) {
     case undefined:
@@ -210,20 +197,59 @@ export function App() {
   // Páginas que mostram questões: por enquanto, só com conta (ver config.ts).
   // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
   // públicas do Google levam; responder pede a conta ali mesmo.
-  const jogo = primeiro === 'flashcards' && !PAGINAS_DO_SITE_FLASHCARDS.includes(segundo)
-  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || jogo) {
+  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || ehJogo(rota)) {
     pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
   }
 
-  const estreita = ['sessao', 'questao'].includes(primeiro ?? '')
+  return pagina
+}
+
+/** Rotas do jogo dos flashcards: abrem como pop-up por cima do site. */
+function ehJogo(rota: Rota) {
+  return rota.segmentos[0] === 'flashcards' && !PAGINAS_DO_SITE_FLASHCARDS.includes(rota.segmentos[1])
+}
+
+export function App() {
+  const rota = usarRota()
+  const [primeiro, segundo] = rota.segmentos
+  const { densidade, fonte } = usarLeitura()
+
+  // Abrir ou fechar o pop-up do jogo não mexe na rolagem da página que fica atrás.
+  const jogoAntes = useRef(false)
+  useEffect(() => {
+    const agora = ehJogo(rota)
+    if (!agora && !jogoAntes.current) window.scrollTo({ top: 0, behavior: 'auto' })
+    jogoAntes.current = agora
+  }, [rota.caminho]) // eslint-disable-line react-hooks/exhaustive-deps
+  // Emblemas "Fila zerada": observa as respostas e marca o dia em que a revisão zerou.
+  useEffect(() => vigiarFilaZerada(), [])
+
+  useEffect(() => {
+    document.title =
+      TITULOS[rota.caminho] ??
+      (primeiro === 'questao' && segundo
+        ? `Questão ${segundo} | Orto Questões`
+        : `${SITE.nome}`)
+  }, [rota.caminho, primeiro, segundo])
+
+  const jogo = ehJogo(rota)
+  // fora do jogo, a página atual vira o fundo do pop-up; dentro dele, o fundo é a última página do site
+  const textoRota = rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')
+  if (!jogo) lembrarFundo(textoRota)
+  const fundo = jogo ? rotaDe(rotaDoFundo()) : rota
+  const pagina = paginaDaRota(ehJogo(fundo) ? rotaDe('/flashcards') : fundo)
+  const sobreposto = jogo ? paginaDaRota(rota) : null
+  const [primeiroFundo] = fundo.segmentos
+
+  const estreita = ['sessao', 'questao'].includes(primeiroFundo ?? '')
 
   return (
     <div className={`pagina pagina--${densidade}`} style={{ fontSize: `${fonte}%` }}>
       <a className="pular-para-conteudo" href="#conteudo-principal">
         Pular para o conteúdo
       </a>
-      <Cabecalho caminho={rota.caminho} />
-      {primeiro !== 'sessao' && !jogo && <AvisoSite />}
+      <Cabecalho caminho={fundo.caminho} />
+      {primeiroFundo !== 'sessao' && <AvisoSite />}
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           <ErroDePagina caminho={rota.caminho}>
@@ -233,9 +259,10 @@ export function App() {
           </ErroDePagina>
         </div>
       </main>
+      {sobreposto && <ErroDePagina caminho={rota.caminho}><Suspense fallback={null}>{sobreposto}</Suspense></ErroDePagina>}
       {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
-      {!['sessao', 'questao', 'admin'].includes(primeiro ?? '') && !jogo && <Rodape comInstagram={!primeiro || primeiro === 'projeto' || primeiro === 'sobre'} />}
+      {!['sessao', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={!primeiroFundo || primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
     </div>
