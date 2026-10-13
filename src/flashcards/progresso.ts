@@ -9,7 +9,7 @@
  * Por enquanto fica só neste aparelho (localStorage da conta); a sincronização
  * com o Supabase é uma etapa do roteiro.
  */
-import { proximoRegistro, type RegistroQuestao } from '../estado/revisao'
+import { INTERVALOS, proximoRegistro, type RegistroQuestao } from '../estado/revisao'
 
 export const CHAVE_REGISTROS = 'flashcards:registros'
 export const CHAVE_PARTIDA = 'flashcards:partida'
@@ -19,6 +19,11 @@ export type RegistroFlashcard = RegistroQuestao & { assistidos?: number }
 
 export function registrarResposta(anterior: RegistroFlashcard | undefined, certo: boolean, assistida: boolean, agora = Date.now()): RegistroFlashcard {
   const confianca = !certo ? 'chute' : assistida ? 'duvida' : 'seguro'
-  const novo = proximoRegistro(anterior, certo, agora, confianca)
+  let novo = proximoRegistro(anterior, certo, agora, confianca)
+  // Com a pista, a escada não passa do último degrau: o flashcard volta e nunca sai da fila por um acerto ajudado.
+  const degraus = INTERVALOS.duvida.length
+  if (certo && assistida && (novo.sequencia ?? 0) > degraus) {
+    novo = { ...novo, sequencia: degraus, proximaRevisao: agora + INTERVALOS.duvida[degraus - 1] * 86400000 }
+  }
   return { ...novo, assistidos: (anterior?.assistidos ?? 0) + Number(certo && assistida) }
 }
