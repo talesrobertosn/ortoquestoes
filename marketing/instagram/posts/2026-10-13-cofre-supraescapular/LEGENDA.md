@@ -1,4 +1,4 @@
-# Cofre e Mecânica fina: nervo supraescapular (feed e stories, 13/10)
+# Linhas do metrô e Mecânica fina: nervo supraescapular (feed e stories, 13/10)
 
 **Ordem de publicação** (sem figurinha nos stories):
 
@@ -9,10 +9,10 @@
 | Stories, resposta | story-03 (trajeto), story-04 (resposta) e story-05 (chamada) | no almoço ou das 18h às 19h |
 
 **Estilos aprovados:**
-- **Cofre de duas chaves** (feed): uma chave é o nervo e a outra é o local de compressão.
-- **Mecânica fina** (stories): seguir o trajeto do nervo e contar as passagens.
+- **Linhas do metrô** (feed, `feed.html`): o nervo vira uma linha e os pontos de compressão viram estações. A pegadinha, o nervo dorsal da escápula, é uma linha que não passa pelas incisuras. Último uso em 04/10. O Cofre ficou de fora a pedido do Tales, por ter sido usado recentemente; o Jornal também.
+- **Mecânica fina** (stories, `post.html`): seguir o trajeto do nervo e contar as passagens.
 
-Os dois foram usados pela última vez em 11/10, então o intervalo mínimo de 2 dias está respeitado. Cofre, mostradores e engrenagens são só decoração, sem desenho de anatomia. A imagem é a original da questão, sem setas novas.
+O mapa é um esquema com texto, sem desenho de anatomia; mostradores e engrenagens são só decoração. A imagem é a original da questão, sem setas novas.
 
 **Conferência:**
 - **Questão:** ombro-cotovelo-0019, TARO 2021, gabarito **A**: nervo supraescapular e incisura supraescapular. O mesmo enunciado aparece no acervo como mao-0032, com o mesmo gabarito.
@@ -24,7 +24,7 @@ Os dois foram usados pela última vez em 11/10, então o intervalo mínimo de 2 
 
 ## Legenda do feed
 
-Duas chaves, uma resposta. No TARO 2021, a seta aponta um nervo do ombro e a questão também pede o local mais frequente de compressão. Acertar só uma das metades não abre o cofre.
+Em qual estação o nervo trava? No TARO 2021, a seta aponta um nervo do ombro e a questão também pede o local mais frequente de compressão. Linha certa com estação errada não vale.
 
 Comente a sua letra antes de arrastar.
 

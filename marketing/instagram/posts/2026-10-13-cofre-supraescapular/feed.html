@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões · Linha do supraescapular</title>
+<!-- Feed (6 slides, 1080x1350) no visual Linhas do metrô: o nervo é a linha, os pontos de compressão são estações.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-13-cofre-supraescapular/feed.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root {
+  --papel: #F6F1E4; --tinta: #10201E; --cinza: #5B6866; --borda: #D9D1BD;
+  --verde: #14655E; --mao: #C9952F; --enare: #C8513C; --coluna: #2E64A8; --ouro: #F4CF7C;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--tinta); }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 64px 72px;
+  background:
+    linear-gradient(rgba(16,32,30,.035) 1px, transparent 1px) 0 0/54px 54px,
+    linear-gradient(90deg, rgba(16,32,30,.035) 1px, transparent 1px) 0 0/54px 54px,
+    var(--papel); }
+section.story { height: 1920px; padding: 110px 80px; }
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 52px; height: 52px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.placa { font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; padding: 10px 18px; border-radius: 10px; background: var(--tinta); color: var(--papel); }
+.cont { font: 700 24px Jakarta; color: var(--cinza); letter-spacing: .08em; }
+h1, h2 { font-family: Jakarta; letter-spacing: -.045em; line-height: 1; position: relative; z-index: 2; }
+h1 { font-size: 132px; font-weight: 800; }
+h2 { font-size: 76px; font-weight: 800; }
+h1 em, h2 em { font-style: normal; }
+.sub { font-size: 34px; line-height: 1.38; color: #2f3d3b; position: relative; z-index: 2; text-wrap: pretty; }
+.sub b { color: var(--tinta); }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 56px; display: flex; justify-content: space-between; align-items: center; font: 700 24px Jakarta; color: var(--cinza); z-index: 2; }
+.rodape .seta { display: flex; gap: 10px; align-items: center; color: var(--tinta); }
+.legenda-linha { display: inline-flex; align-items: center; gap: 14px; font: 800 26px Jakarta; letter-spacing: .02em; }
+.bolinha { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; color: #fff; font: 800 22px Jakarta; }
+
+/* Mapa (capa) */
+.mapa { position: absolute; inset: 0; z-index: 1; }
+.estacao-nome { font: 800 25px Jakarta; letter-spacing: -.01em; fill: var(--tinta); }
+.estacao-sub { font: 600 19px Inter; fill: var(--cinza); }
+
+/* Linha vertical com estações */
+.trilho { position: relative; margin-top: 46px; padding-left: 96px; }
+.trilho::before { content: ''; position: absolute; left: 31px; top: 18px; bottom: 18px; width: 18px; border-radius: 9px; background: var(--cor); }
+.est { position: relative; display: flex; align-items: baseline; gap: 18px; min-height: 92px; }
+.est::before { content: ''; position: absolute; left: -84px; top: 4px; width: 46px; height: 46px; border-radius: 50%; background: #fff; border: 9px solid var(--tinta); box-sizing: border-box; }
+.est strong { font: 800 46px Jakarta; letter-spacing: -.03em; }
+.est small { font-size: 26px; color: var(--cinza); }
+.est.mais::before { background: var(--papel); border-style: dashed; }
+.est.mais strong { color: var(--cinza); font-weight: 700; }
+.nota { margin-top: 22px; display: grid; gap: 16px; position: relative; z-index: 2; }
+.nota p { display: grid; grid-template-columns: 40px 1fr; gap: 16px; font-size: 29px; line-height: 1.38; color: #2f3d3b; }
+.nota p i { width: 40px; height: 40px; border-radius: 12px; background: var(--cor); display: grid; place-items: center; font: normal 800 22px Jakarta; color: #fff; margin-top: 2px; }
+.cartaz { border-radius: 30px; background: #fff; border: 2px solid var(--borda); box-shadow: 0 24px 60px rgba(16,32,30,.10); position: relative; z-index: 2; }
+
+/* Tela ilustrativa do Treinar */
+.tela { margin-top: 40px; padding: 34px; }
+.tela .pergunta { font: 800 30px Jakarta; } .tela .pergunta small { font: 500 24px Inter; color: var(--cinza); }
+.opcoes { margin-top: 22px; display: grid; gap: 14px; }
+.op { display: grid; grid-template-columns: 54px 1fr; gap: 18px; align-items: center; padding: 20px 24px; border-radius: 22px; border: 2px solid var(--borda); background: #fbfaf6; }
+.op .check { width: 54px; height: 54px; border-radius: 16px; border: 3px solid var(--borda); display: grid; place-items: center; }
+.op.on { border-color: var(--cor); background: color-mix(in srgb, var(--cor) 9%, #fff); }
+.op.on .check { background: var(--cor); border-color: var(--cor); }
+.op.on .check::after { content: ''; width: 22px; height: 12px; border-left: 5px solid #fff; border-bottom: 5px solid #fff; transform: rotate(-45deg) translate(2px,-3px); }
+.op strong { font: 800 32px Jakarta; letter-spacing: -.02em; display: block; } .op span { font-size: 23px; color: var(--cinza); }
+.ilustrativa { margin-top: 14px; font: 600 20px Inter; color: var(--cinza); text-align: right; }
+
+.cta { display: inline-flex; align-items: center; gap: 16px; margin-top: 30px; padding: 26px 38px; border-radius: 22px; background: var(--tinta); color: var(--papel); font: 800 38px Jakarta; letter-spacing: -.02em; position: relative; z-index: 2; }
+.cta b { color: var(--ouro); }
+.figurinha { margin-top: 40px; height: 250px; border: 4px dashed rgba(16,32,30,.25); border-radius: 36px; display: grid; place-items: center; font: 700 26px Jakarta; color: var(--cinza); position: relative; z-index: 2; }
+
+/* Capa: as linhas em destaque (legíveis na grade do perfil) */
+.linhas { position: relative; z-index: 2; margin-top: 44px; }
+.linha { position: relative; display: grid; grid-template-columns: 116px 1fr; align-items: center; column-gap: 34px; padding: 20px 0; }
+.linha::before { content: ''; position: absolute; left: 47px; top: 50%; height: 100%; width: 22px; background: var(--cor); z-index: -1; }
+.linha:last-child::before { display: none; }
+.linha .bolinha { width: 116px; height: 116px; font-size: 50px; border: 10px solid var(--tinta); background: var(--cor); }
+.linha strong { font: 800 112px Jakarta; letter-spacing: -.05em; line-height: .95; color: var(--tinta); }
+.linha strong em { font-style: normal; color: var(--cor); }
+.linha.base .bolinha { background: #fff; color: var(--verde); }
+.linha.base strong { font-size: 64px; color: #2f3d3b; letter-spacing: -.035em; }
+.kicker { position: relative; z-index: 2; margin-top: 70px; display: inline-flex; align-items: center; gap: 16px; font: 800 40px Jakarta; letter-spacing: .12em; text-transform: uppercase; color: var(--tinta); }
+.kicker::before { content: ''; width: 64px; height: 12px; border-radius: 6px; background: linear-gradient(90deg, var(--verde) 25%, var(--mao) 25% 50%, var(--enare) 50% 75%, var(--coluna) 75%); }
+.trilhos-base { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; }
+
+.foto{border-radius:26px;background:#fff;border:2px solid var(--borda);box-shadow:0 24px 60px rgba(16,32,30,.12);padding:16px;position:relative;z-index:2}
+.foto img{display:block;width:100%;height:100%;object-fit:contain}
+.fonte{font:600 19px Inter;color:var(--cinza);margin-top:10px;position:relative;z-index:2}
+.enunciado{font:600 31px/1.36 Inter;color:var(--tinta);margin-top:26px;position:relative;z-index:2}
+.alts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px;position:relative;z-index:2}
+.alt{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:center;padding:16px 18px;border-radius:20px;background:#fff;border:2px solid var(--borda);font:500 25px/1.3 Inter}
+.alt i{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font:normal 800 24px Jakarta;color:#fff;background:var(--tinta)}
+.alt.certa{border-color:var(--verde);background:color-mix(in srgb,var(--verde) 8%,#fff)}.alt.certa i{background:var(--verde)}
+.faixa{margin-top:24px;padding:22px 28px;border-radius:22px;background:var(--tinta);color:var(--papel);font:800 31px Jakarta;letter-spacing:-.02em;position:relative;z-index:2}
+.faixa b{color:var(--ouro)}
+.trilho{margin-top:34px}
+.est{min-height:0;padding-bottom:30px;flex-direction:column;gap:4px}
+.est strong{font-size:40px;line-height:1.05}.est small{font-size:25px;line-height:1.3}
+.trilho::before{top:22px;bottom:52px}
+.est.trava::before{background:var(--enare);border-color:var(--tinta);width:56px;height:56px;left:-89px;top:-2px}
+.est.trava strong{color:var(--enare)}
+.selo{display:inline-block;margin-top:8px;font:800 19px Jakarta;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--enare);padding:7px 13px;border-radius:9px}
+.selo.cinza{background:var(--cinza)}
+.est.fim::before{border-radius:12px}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px;position:relative;z-index:2}
+.card{border-radius:24px;background:#fff;border:2px solid var(--borda);padding:24px 26px}
+.card .num{font:800 20px Jakarta;letter-spacing:.12em;text-transform:uppercase}
+.card h3{font:800 33px/1.08 Jakarta;letter-spacing:-.03em;margin-top:10px}
+.card p{font-size:24px;line-height:1.38;color:#2f3d3b;margin-top:10px}
+.porque{display:grid;gap:12px;margin-top:24px;position:relative;z-index:2}
+.porque p{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;font-size:26px;line-height:1.35;color:#2f3d3b}
+.porque p i{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font:normal 800 24px Jakarta;color:#fff;background:var(--cinza)}
+.porque p b{color:var(--tinta)}
+.tela2{margin-top:34px;padding:30px 34px}
+.tela2 .rot{font:800 20px Jakarta;letter-spacing:.12em;text-transform:uppercase;color:var(--verde)}
+.tela2 h3{font:800 34px/1.12 Jakarta;letter-spacing:-.03em;margin-top:10px}
+.tela2 p{font-size:25px;line-height:1.42;color:#2f3d3b;margin-top:12px}
+.tela2 .bloco{margin-top:16px;padding:16px 20px;border-radius:18px;background:#f7f3e8;border:1.5px solid var(--borda)}
+.tela2 .bloco strong{font:800 18px Jakarta;letter-spacing:.1em;color:var(--mao)}
+.tela2 .bloco p{font-size:22px;margin-top:6px}
+
+#feed-03 .est{padding-bottom:44px}#feed-03 .est strong{font-size:46px}#feed-03 .est small{font-size:27px}#feed-03 .trilho{margin-top:46px}
+#feed-04 .est{padding-bottom:58px}#feed-04 .est strong{font-size:50px}#feed-04 .est small{font-size:28px}#feed-04 .nota p{font-size:31px}#feed-04 .trilho{margin-top:56px}
+#feed-05 .card h3{font-size:37px}#feed-05 .card p{font-size:27px}#feed-05 .card{padding:28px 30px}#feed-05 .porque{gap:18px;margin-top:32px}#feed-05 .porque p{font-size:29px}#feed-05 .faixa{margin-top:34px;padding:26px 30px}#feed-05 .duas{margin-top:38px}
+#feed-06 .tela2 p{font-size:27px}#feed-06 .tela2 .bloco p{font-size:24px}#feed-06 .tela2{padding:34px 38px}
+</style></head><body><svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg><style>.story .content{left:80px;right:80px}.story .top,.story .foot{left:80px;right:80px}.story h1{font-size:82px}.story .step{padding:22px 24px}.story .step h3{font-size:31px}.story .step p{font-size:28px;margin-top:10px}.story .steps{gap:17px}.story .opt{font-size:28px;padding:15px 20px}.story .source{font-size:16px}.story .watchinner{padding:18px}.story .comparison h3{font-size:31px}.story .comparison p{font-size:28px}.story .phone{height:735px}.story .screen p{font-size:18px}.story .screen h4{font-size:21px}.story .screen .mini{padding:12px;margin:13px 0}.story .screen .mini p{font-size:17px}.story .feature p{font-size:27px}.story .cta p{font-size:25px}#mao-03 .gap{font-size:28px;margin-top:20px}#mao-05 .step p{font-size:27px}#mao-05 .step{padding:20px 24px}#mao-05 .cream{padding:24px}#mao-06 .phone{transform:rotate(3deg);height:710px}#mao-06 .screen .mini{padding:10px;margin:10px 0}</style>
+<section id="feed-01" data-question="ombro-cotovelo-0019"><div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="placa">TARO 2021</span></div>
+<p class="kicker" style="margin-top:56px">Linha do ombro</p>
+<h1 style="font-size:112px;margin-top:26px">Em qual<br>estação o nervo<br><em style="color:var(--enare)">trava?</em></h1>
+<div class="foto" style="height:470px;margin-top:40px"><img src="../../../../public/imagens/ombro-cotovelo/ombro-cotovelo-0019-1.jpeg" alt="Imagem original da questão"></div>
+<p class="fonte">Imagem original da questão · TARO 2021</p>
+<svg class="trilhos-base" viewBox="0 0 1080 120" aria-hidden="true"><g fill="none" stroke-width="18" stroke-linecap="round"><path d="M -40 40 H 1120" stroke="#14655E"/><path d="M -40 78 H 1120" stroke="#C9952F"/></g></svg><div class="rodape" style="bottom:150px"><span>Mapa do nervo</span><span class="seta">arraste <b>→</b></span></div></section>
+<section id="feed-02" data-question="ombro-cotovelo-0019"><div class="topo"><span class="legenda-linha"><span class="bolinha" style="background:var(--tinta)">?</span> A questão</span><span class="cont">2/6</span></div>
+<h2 style="margin-top:40px;font-size:66px">Nervo e estação.<br><em style="color:var(--verde)">As duas precisam bater.</em></h2>
+<div class="foto" style="height:380px;margin-top:30px"><img src="../../../../public/imagens/ombro-cotovelo/ombro-cotovelo-0019-1.jpeg" alt="Imagem original da questão"></div>
+<p class="enunciado">Na imagem a seguir da anatomia do ombro, a estrutura indicada pela seta e o local mais frequente de compressão são o nervo</p>
+<div class="alts"><div class="alt"><i>A</i><span>supraescapular e a incisura supraescapular.</span></div><div class="alt"><i>B</i><span>supraescapular e a incisura espinoglenoidal.</span></div><div class="alt"><i>C</i><span>dorsal da escápula e a incisura supraescapular.</span></div><div class="alt"><i>D</i><span>dorsal da escápula e a incisura espinoglenoidal.</span></div></div>
+<div class="faixa">Comente a sua letra <b>antes de arrastar.</b></div>
+<div class="rodape"><span>Questão real · TARO 2021</span><span class="seta">arraste <b>→</b></span></div></section>
+<section id="feed-03" data-question="ombro-cotovelo-0019" style="--cor: var(--verde)"><div class="topo"><span class="legenda-linha"><span class="bolinha" style="background:var(--verde)">S</span> Linha Supraescapular</span><span class="cont">3/6</span></div>
+<h2 style="margin-top:40px;font-size:68px">O nervo da seta<br>segue <em style="color:var(--verde)">esta linha.</em></h2>
+<div class="trilho">
+<div class="est"><strong>Tronco superior</strong><small>do plexo braquial, raízes C5 e C6</small></div>
+<div class="est"><strong>Borda superior da escápula</strong><small>é aqui que a seta da imagem aponta</small></div>
+<div class="est trava"><strong>Incisura supraescapular</strong><small>passa por baixo do ligamento transverso superior</small><span class="selo">Ponto de compressão mais frequente</span></div>
+<div class="est"><strong>Ramo do supraespinal</strong><small>na fossa supraespinal</small></div>
+<div class="est"><strong>Incisura espinoglenoidal</strong><small>contorna a base da espinha</small><span class="selo cinza">Segundo ponto, menos comum</span></div>
+<div class="est fim"><strong>Infraespinal</strong><small>fim da linha</small></div>
+</div>
+<div class="rodape"><span>Do comentário da questão</span><span class="seta">arraste <b>→</b></span></div></section>
+<section id="feed-04" data-question="ombro-cotovelo-0019" style="--cor: var(--mao)"><div class="topo"><span class="legenda-linha"><span class="bolinha" style="background:var(--mao)">D</span> Linha Dorsal da escápula</span><span class="cont">4/6</span></div>
+<h2 style="margin-top:40px;font-size:68px">A linha que<br><em style="color:var(--mao)">não passa</em> pelas<br>incisuras.</h2>
+<div class="trilho" style="margin-top:40px">
+<div class="est"><strong>Raiz C5</strong></div>
+<div class="est"><strong>Escaleno médio</strong><small>atravessa o músculo</small></div>
+<div class="est"><strong>Borda medial da escápula</strong><small>desce por ela, longe das incisuras</small></div>
+<div class="est fim"><strong>Romboides e levantador da escápula</strong><small>fim da linha</small></div>
+</div>
+<div class="nota" style="--cor: var(--mao);margin-top:6px">
+<p><i>C</i><span>Acerta a estação, mas pega a linha errada: o dorsal da escápula não chega à incisura supraescapular.</span></p>
+<p><i>D</i><span>Linha errada e estação errada: nenhuma das duas peças encaixa.</span></p>
+</div>
+<div class="rodape"><span>Do comentário da questão</span><span class="seta">arraste <b>→</b></span></div></section>
+<section id="feed-05" data-question="ombro-cotovelo-0019"><div class="topo"><span class="placa" style="background:var(--verde)">Resposta A</span><span class="cont">5/6</span></div>
+<h2 style="margin-top:40px;font-size:64px">Supraescapular,<br><em style="color:var(--verde)">incisura supraescapular.</em></h2>
+<div class="duas">
+<div class="card" style="border-color:var(--enare)"><span class="num" style="color:var(--enare)">Estação mais comum</span><h3>Incisura supraescapular</h3><p>Pega o nervo antes de qualquer ramo motor: <b>supraespinal e infraespinal</b> fracos, dor posterolateral profunda.</p></div>
+<div class="card"><span class="num" style="color:var(--cinza)">Estação menos comum</span><h3>Incisura espinoglenoidal</h3><p>Já depois do ramo do supraespinal: <b>só o infraespinal</b>, muitas vezes sem dor. Causa típica: cisto paralabral.</p></div>
+</div>
+<div class="porque">
+<p><i>B</i><span><b>Linha certa, estação errada.</b> A espinoglenoidal existe, mas não é a mais frequente.</span></p>
+<p><i>C</i><span><b>Estação certa, linha errada.</b> O dorsal da escápula corre pela borda medial.</span></p>
+</div>
+<div class="faixa" style="font-size:29px">Para lembrar: “o exército passa por cima da ponte, <b>a marinha por baixo</b>”. A artéria supraescapular passa por cima do ligamento transverso; o nervo, por baixo.</div>
+<div class="rodape"><span>Questão real · TARO 2021</span><span class="seta">arraste <b>→</b></span></div></section>
+<section id="feed-06" data-question="ombro-cotovelo-0019"><div class="topo"><span class="legenda-linha"><span class="bolinha" style="background:var(--verde)">T</span> Próxima parada</span><span class="cont">6/6</span></div>
+<h2 style="margin-top:40px;font-size:72px">Cada questão,<br><em style="color:var(--verde)">com o mapa completo.</em></h2>
+<div class="cartaz tela2">
+<span class="rot">Comentário · TARO 2021 · Ombro</span>
+<h3>A · supraescapular e a incisura supraescapular.</h3>
+<p>O ponto de compressão mais comum é a passagem sob o ligamento transverso superior, antes dos ramos para o supraespinal e o infraespinal.</p>
+<div class="bloco"><strong>ALTERNATIVA B</strong><p>Espinoglenoidal é o ponto menos comum: atrofia isolada do infraespinal, quase sempre por cisto paralabral.</p></div>
+<div class="bloco"><strong>ALTERNATIVA C</strong><p>O dorsal da escápula corre pela borda medial e inerva romboides e levantador da escápula.</p></div>
+</div>
+<p class="ilustrativa">Tela ilustrativa com trechos adaptados do comentário desta questão.</p>
+<div class="cta">Questão grátis <b>todo dia.</b></div>
+<p class="sub" style="font-size:28px;margin-top:18px">Crie sua conta. O limite gratuito se renova diariamente.</p>
+<svg class="trilhos-base" viewBox="0 0 1080 120" aria-hidden="true"><g fill="none" stroke-width="18" stroke-linecap="round"><path d="M -40 40 H 1120" stroke="#14655E"/><path d="M -40 78 H 1120" stroke="#C9952F"/></g></svg><div class="rodape" style="bottom:150px"><span>ortoquestoes.com.br</span><span>Questões das provas oficiais, comentadas</span></div></section>
+</body></html>
