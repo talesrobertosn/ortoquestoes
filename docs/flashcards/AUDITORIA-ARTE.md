@@ -79,3 +79,23 @@ Leitura honesta:
   golpe: trava perceptível, a corrigir.
 - O carregamento (3–4 s) é do servidor de desenvolvimento; o do site
   publicado ainda não foi medido.
+
+## Primeira rodada de redesenho (13/10/2026)
+
+Relatório visual com antes e depois, notas de 0 a 5 e as faixas para ouvir:
+artefato "Revisão de Arte da Cripta" (link no PR).
+
+| Componente | O que mudou | Arquivos |
+|---|---|---|
+| Personagens | Motor em volume: modelo 3D por esqueleto, luz, sombra, oclusão, paleta e contorno; folhas com 6 animações | `scripts/sprites/`, `public/flashcards/sprites/`, `src/flashcards/efeitos/assados.ts`, `Hud.tsx` |
+| Herói | 6 estágios com equipamento diferente; estágio 1 fiel ao original aprovado | `scripts/sprites/heroi.py` |
+| Tabuleiros | Mesa física com espessura, chão integrado e plataforma suspensa, por bioma | `src/flashcards/efeitos/tabuleiros.ts` |
+| Controles | Placas forjadas em 9 partes e medalhões em SVG, estados por material | `src/estilos/ui/`, `Flashcards.css` |
+| Cartas | Cantoneiras por raridade, luz na moldura, faíscas e entrada da lendária | `Cartao.tsx`, `Flashcards.css` |
+| Golpes | Dez estilos de ataque por arquétipo | `src/flashcards/efeitos/ataques.ts` |
+| Trilha | Dez faixas orquestrais originais renderizadas em mp3 | `scripts/musica/`, `public/flashcards/musica/`, `sons.ts` |
+
+Métricas depois (mesmo roteiro): celular com CPU ÷4 mantém 60 quadros/s; o pior
+quadro no golpe do herói caiu de 433 para 117 ms e, no golpe do adversário, de
+333 para 167 ms. O computador segue em 20 quadros/s neste ambiente sem GPU
+(thread principal ocupada 14%).

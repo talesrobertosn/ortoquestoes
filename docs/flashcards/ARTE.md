@@ -31,6 +31,21 @@ Pedido do Tales em 13/10/2026: trocar a arte "vetorial" por **pixel art HD-2D**,
 - **Ícones novos (20×20):** ampulheta, cartas, alvo, nuvem, muralha, espadas, folha, fênix, moeda,
   bolsa, lanterna e porta.
 
+## Versão 5 (13/10/2026): personagens em volume e trilha em arquivos
+
+**Como fazer um personagem novo** (`scripts/sprites/`):
+
+1. Crie `scripts/sprites/<nome>.py` com `NOME`, `CAM` (tamanho do quadro e âncora dos pés), `TEMPOS`, `MATS` (materiais: rampa de cor, brilho, textura) e duas funções:
+   - `montar(pose)`: monta a cena com `Osso` (esqueleto) e formas (`sd_esfera`, `sd_elipsoide`, `sd_cone_redondo`, `sd_caixa`, `sd_toro`, `sd_arco`);
+   - `poses()`: devolve as animações `parado`, `preparo`, `golpe`, `dano`, `derrota` e `vitoria`, cada uma uma lista de poses.
+2. Prévia: `python3 scripts/sprites/assar.py <nome> --previa /tmp/x.png --escala 3`.
+3. Folha final: `python3 scripts/sprites/assar.py <nome>` e depois `python3 scripts/sprites/indice.py`.
+4. O jogo usa a folha automaticamente quando existe uma com o nome do sprite. Sem ela, usa o desenho antigo.
+
+Herói: `python3 scripts/sprites/assar.py heroi --estagio N` (de 1 a 6).
+
+**Trilha** (`scripts/musica/`): `temas.py` tem as partituras, `sintese.py` os instrumentos. `python3 scripts/musica/gerar.py [tema...]` grava os mp3 em `public/flashcards/musica/`, e `python3 scripts/musica/conferir.py` confere volume, picos e emendas. Não usamos nenhuma amostra de terceiros.
+
 ## Versão 4 (13/10/2026): bestiário e biomas
 
 **Arquétipos novos** (`src/flashcards/efeitos/bestas.ts`): corvo, morcego, aranha,
