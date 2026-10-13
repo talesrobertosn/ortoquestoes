@@ -1820,3 +1820,25 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 .fc-sala--secreta .fc-sala__emblema { box-shadow: 0 0 0 3px #120804, 0 0 0 7px #c9a0ff, 0 0 0 9px #3a1e70, 0 0 0 11px #120804, 0 0 60px rgba(200, 160, 255, .7); }
 @media (max-width: 640px) { .fc-sala__emblema { width: 84px; height: 84px; } .fc-modal .fc-sala__emblema .fc-sprite { width: 46px; height: 46px; } }
 @media (prefers-reduced-motion: reduce) { .fc-sala__emblema { animation: none; } }
+
+/* Dificuldade (fácil, normal, difícil): escolha na entrada e selo no topo da partida */
+.fc-niveis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; width: min(900px, 100%); margin-inline: auto; }
+.fc-nivel { --cor: #c9a14a; display: grid; gap: 3px; align-content: start; padding: 10px 14px; border: 0; border-radius: 12px; text-align: left; cursor: pointer; color: #e9dcc0;
+  background: linear-gradient(rgba(30, 20, 14, .9), rgba(14, 9, 7, .92)); box-shadow: 0 0 0 1.5px #0b0705, 0 0 0 3px color-mix(in srgb, var(--cor) 45%, #3a2a1c), 0 6px 14px rgba(0, 0, 0, .4);
+  transition: transform var(--fc-rapido), box-shadow var(--fc-rapido), filter var(--fc-rapido); }
+.fc-nivel strong { font: 900 16px/1.1 var(--fc-titulo); letter-spacing: .05em; color: color-mix(in srgb, var(--cor) 70%, #fff3d6); }
+.fc-nivel small { font: 500 12.5px/1.35 var(--fc-ui); color: #cbbd9c; }
+.fc-nivel--facil { --cor: #6fcf7f; } .fc-nivel--normal { --cor: #e3b04b; } .fc-nivel--dificil { --cor: #ff6a4a; }
+.fc-nivel:hover { transform: translateY(-2px); }
+.fc-nivel:active { transform: translateY(1px) scale(.98); }
+.fc-nivel--ativo { box-shadow: 0 0 0 1.5px #0b0705, 0 0 0 3px var(--cor), 0 0 0 4.5px #0b0705, 0 0 22px color-mix(in srgb, var(--cor) 45%, transparent), 0 6px 14px rgba(0, 0, 0, .4); }
+.fc-nivel:not(.fc-nivel--ativo) { filter: saturate(.7) brightness(.85); }
+.fc-nivel-selo { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font: 800 11px/1.5 var(--fc-ui); letter-spacing: .04em; vertical-align: middle; color: #140c06; }
+.fc-nivel-selo--facil { background: #8fe09a; } .fc-nivel-selo--normal { background: #f2c45a; } .fc-nivel-selo--dificil { background: #ff8a6a; }
+@media (max-width: 700px) {
+  .fc-niveis { gap: 6px; }
+  .fc-nivel { padding: 8px 9px; text-align: center; justify-items: center; }
+  .fc-nivel small { display: none; }
+}
+.fc-niveis__nota { display: none; grid-column: 1 / -1; margin: 0; font: 500 12.5px/1.35 var(--fc-ui); color: #cbbd9c; text-align: center; }
+@media (max-width: 700px) { .fc-niveis__nota { display: block; padding: 4px 10px; border-radius: 8px; color: #f0e2c4; background: rgba(14, 9, 7, .78); text-shadow: 0 1px 0 #000; } }

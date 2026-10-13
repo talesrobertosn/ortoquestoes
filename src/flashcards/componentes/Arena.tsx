@@ -14,10 +14,10 @@ import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../
 import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
-import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, type Evento, type MotivoCura, type Partida } from '../motor/regras'
+import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
-  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
+  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_NIVEL, CHAVE_RECORDES, CHAVE_REGISTROS,
   lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Bestiario, type Recordes, type RegistroFlashcard,
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
@@ -60,7 +60,14 @@ export const NOME_MODO: Record<Modo, string> = { masmorra: 'Cripta do Residente'
 
 /** Recorde do andar no formato do ranking: Cripta (andar mais fundo) e Torre (andar mais alto), separados. */
 function recordeDoAndar(rec: Recordes, p: Partida): Partial<Recordes> {
+  if (!NIVEIS[nivelDaPartida(p)].ranqueado) return {}
   return p.modo === 'torre' ? { torreMaximo: Math.max(rec.torreMaximo ?? 0, p.andar) } : { andarMaximo: Math.max(rec.andarMaximo, p.andar) }
+}
+
+/** Dificuldade escolhida na entrada (vale para as partidas novas). */
+export function nivelEscolhido(): NivelJogo {
+  const n = ler<string>(CHAVE_NIVEL, 'normal')
+  return n in NIVEIS ? (n as NivelJogo) : 'normal'
 }
 
 /** Tamanho de cada reposição do baralho (a seleção roda de novo quando acaba). */
@@ -71,10 +78,11 @@ let motor = criarMotor(BARALHO_DEMO)
 /** Motor com o acervo carregado e a seleção procedural ponderada (motor/selecao.ts). */
 function prepararMotor(cartas: Flashcard[]) {
   motor = criarMotor(cartas, {
-    repor: (excluir, semente) => montarBaralho(cartas, {
+    repor: (excluir, semente, nivel) => montarBaralho(cartas, {
       registros: ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}),
       recentes: ler<string[]>(CHAVE_HISTORICO, []),
       agora: Date.now(),
+      nivel,
     }, semente, LOTE_DO_BARALHO, excluir),
   })
 }
@@ -91,7 +99,8 @@ function partidaSalva(modo: Modo): Partida | null {
 
 /** Partida nova com a corrida aberta no servidor (só vale para o ranking quando ele estiver ligado). */
 function comCorrida(p: Partida): Partida {
-  if (!RANKING_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
+  // o Fácil não abre corrida: não conta para o ranking
+  if (!NIVEIS[nivelDaPartida(p)].ranqueado || !RANKING_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
   const idCorrida = crypto.randomUUID()
   void iniciarCorrida(idCorrida, p.modo)
   return { ...p, idCorrida }
@@ -186,7 +195,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const faixaTela = usarFaixa()
 
   const [modo, definirModo] = useState<'batalha' | 'estudo'>(abrirEstudo ? 'estudo' : 'batalha')
-  const [partida, definirPartida] = useState<Partida>(() => partidaSalva(modoJogo) ?? (modoJogo === 'torre' ? patamarSalvo() : null) ?? comCorrida(motor.novaPartida(sementeNova(), { modo: modoJogo, talentos: lerAltar().talentos }).estado))
+  const [partida, definirPartida] = useState<Partida>(() => partidaSalva(modoJogo) ?? (modoJogo === 'torre' ? patamarSalvo() : null) ?? comCorrida(motor.novaPartida(sementeNova(), { modo: modoJogo, talentos: lerAltar().talentos, nivel: nivelEscolhido() }).estado))
   const partidaRef = useRef(partida)
   const [mostrado, definirMostrado] = useState<Mostrado>(() => ({
     vida: partida.vida, vidaInimigo: partida.inimigo.vida, revelada: partida.fase !== 'pergunta', resultado: null, marcadas: null, inimigoCaiu: false, heroiCaiu: false,
@@ -821,7 +830,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
     gravar(CHAVE_RECORDES, { ...rec, partidas: rec.partidas + 1, atualizadoEm: Date.now() })
     if (partidaRef.current.modo === 'torre') gravar(CHAVE_PATAMAR, null)
-    const r0 = motor.novaPartida(sementeNova(), { modo: partidaRef.current.modo, talentos: lerAltar().talentos })
+    const r0 = motor.novaPartida(sementeNova(), { modo: partidaRef.current.modo, talentos: lerAltar().talentos, nivel: nivelEscolhido() })
     const r = { ...r0, estado: comCorrida(r0.estado) }
     definirMostrado({ vida: r.estado.vida, vidaInimigo: r.estado.inimigo.vida, revelada: false, resultado: null, marcadas: null, inimigoCaiu: false, heroiCaiu: false })
     aplicar(r)
@@ -936,7 +945,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                 {torre ? (
                   <span className="fc-topo__progresso">
                     <span className="fc-escalada" role="meter" aria-label={`Andar ${partida.andar} de ${TORRE.andares}`} aria-valuemin={1} aria-valuemax={TORRE.andares} aria-valuenow={partida.andar}><i style={{ width: `${partida.andar}%` }} /></span>
-                    <b>Andar {partida.andar}</b>/{TORRE.andares} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts <span className="fc-bolsa" title={`${partida.ouro} moedas para a Caixeira do Arsenal · ${cristaisAltar} cristais no Altar`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>{cansaco < 1 && <span className="fc-desgaste" title={`Desgaste: as curas rendem ${Math.round(cansaco * 100)}% neste trecho`}>cura {Math.round(cansaco * 100)}%</span>}
+                    <b>Andar {partida.andar}</b>/{TORRE.andares} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts <span className={`fc-nivel-selo fc-nivel-selo--${nivelDaPartida(partida)}`} title={NIVEIS[nivelDaPartida(partida)].resumo}>{NIVEIS[nivelDaPartida(partida)].nome}</span> <span className="fc-bolsa" title={`${partida.ouro} moedas para a Caixeira do Arsenal · ${cristaisAltar} cristais no Altar`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>{cansaco < 1 && <span className="fc-desgaste" title={`Desgaste: as curas rendem ${Math.round(cansaco * 100)}% neste trecho`}>cura {Math.round(cansaco * 100)}%</span>}
                   </span>
                 ) : (
                   <span className="fc-topo__progresso">
@@ -946,7 +955,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                         return <i key={i} className={(i < n ? 'feito' : i === n ? 'atual' : '') + (i === 2 ? ' chefe' : '')} title={i === 2 ? 'Chefe do ato' : 'Confronto'} />
                       })}
                     </span>
-                    <b>Andar {partida.andar}</b>{ciclo ? ` · ato ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts <span className="fc-bolsa" title={`${partida.ouro} moedas para a Caixeira do Arsenal · ${cristaisAltar} cristais no Altar`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>{cansaco < 1 && <span className="fc-desgaste" title={`Desgaste: as curas rendem ${Math.round(cansaco * 100)}% neste trecho`}>cura {Math.round(cansaco * 100)}%</span>}
+                    <b>Andar {partida.andar}</b>{ciclo ? ` · ato ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts <span className={`fc-nivel-selo fc-nivel-selo--${nivelDaPartida(partida)}`} title={NIVEIS[nivelDaPartida(partida)].resumo}>{NIVEIS[nivelDaPartida(partida)].nome}</span> <span className="fc-bolsa" title={`${partida.ouro} moedas para a Caixeira do Arsenal · ${cristaisAltar} cristais no Altar`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>{cansaco < 1 && <span className="fc-desgaste" title={`Desgaste: as curas rendem ${Math.round(cansaco * 100)}% neste trecho`}>cura {Math.round(cansaco * 100)}%</span>}
                   </span>
                 )}
               </>

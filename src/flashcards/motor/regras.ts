@@ -36,6 +36,22 @@ export const COMBO_MINIMO = 3
 export const BONUS_COMBO = 5
 export const CURA_SEQUENCIA = 5
 export const CURA_LENDARIA = 3
+/**
+ * Dificuldade da partida (escolhida antes de começar). Além do combate (vida do
+ * herói e dos adversários, dano recebido e pontos), muda o peso de cada
+ * dificuldade de flashcard no sorteio: o conteúdo é o mesmo, só a mistura
+ * muda. Só Normal e Difícil contam para o ranking e para os recordes.
+ */
+export type NivelJogo = 'facil' | 'normal' | 'dificil'
+export const NIVEIS: Record<NivelJogo, {
+  nome: string; resumo: string; vidaHeroi: number; vidaInimigo: number; danoRecebido: number; pontos: number; ranqueado: boolean; pesoFlashcard: Record<Dificuldade, number>
+}> = {
+  facil: { nome: 'Fácil', resumo: 'Mais vida, adversários mais fracos, mais flashcards fáceis. Não conta para o ranking.', vidaHeroi: 1.3, vidaInimigo: 0.8, danoRecebido: 0.65, pontos: 0.5, ranqueado: false, pesoFlashcard: { 1: 2.4, 2: 1, 3: 0.35 } },
+  normal: { nome: 'Normal', resumo: 'O equilíbrio da Cripta. Conta para o ranking.', vidaHeroi: 1, vidaInimigo: 1, danoRecebido: 1, pontos: 1, ranqueado: true, pesoFlashcard: { 1: 1, 2: 1, 3: 1 } },
+  dificil: { nome: 'Difícil', resumo: 'Menos vida, adversários mais duros, mais flashcards difíceis e pontos ×1,5. Conta para o ranking.', vidaHeroi: 0.85, vidaInimigo: 1.25, danoRecebido: 1.35, pontos: 1.5, ranqueado: true, pesoFlashcard: { 1: 0.4, 2: 1, 3: 2.2 } },
+}
+export const nivelDaPartida = (p: { nivel?: NivelJogo }): NivelJogo => (p.nivel && p.nivel in NIVEIS ? p.nivel : 'normal')
+
 /** Todo chefe vencido devolve esta fração da vida máxima. */
 export const CURA_CHEFE = 0.15
 export const XP_POR_NIVEL = { comum: 1, elite: 2, chefe: 4 } as const
@@ -212,6 +228,8 @@ export interface Partida {
   idCorrida?: string
   /** Herói escolhido (motor/herois.ts); sem ele, o Cavaleiro. */
   heroi?: string
+  /** Dificuldade escolhida no início; partidas antigas (sem o campo) são Normal. */
+  nivel?: NivelJogo
 }
 
 export type MotivoCura =
@@ -270,10 +288,10 @@ export interface OpcoesMotor {
    * ids, sem os que estão em `excluir`, e a próxima semente. Sem ela, o
    * descarte é reembaralhado.
    */
-  repor?: (excluir: ReadonlySet<string>, semente: number) => [string[], number]
+  repor?: (excluir: ReadonlySet<string>, semente: number, nivel: NivelJogo) => [string[], number]
 }
 
-export interface ConfigPartida { modo?: Modo; talentos?: Talentos; ids?: string[]; heroi?: string }
+export interface ConfigPartida { modo?: Modo; talentos?: Talentos; ids?: string[]; heroi?: string; nivel?: NivelJogo }
 
 /** É andar de chefe? (Cripta: o 3º de cada ato; Torre: a cada 10.) */
 /** Sinergias: pares de relíquias que, juntos, dão um bônus no início de cada adversário. */
@@ -330,7 +348,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     if (critico) dano *= LIMITES.multCritico
     if (carregado && i.carrega) dano *= i.carrega.mult
     const teto = p.vidaMax * (critico || carregado ? LIMITES.critico : LIMITES[i.nivel])
-    dano = Math.min(dano, teto)
+    dano = Math.min(dano, teto) * NIVEIS[nivelDaPartida(p)].danoRecebido
     const placas = p.reliquias.includes('placas') ? RECOMPENSAS.placas.v.fracao : 0
     const mestre = i.chefe && p.reliquias.includes('mestre') ? RECOMPENSAS.mestre.v.fracao : 0
     dano = dano * (1 - placas - mestre) - ESTAGIOS[p.estagio - 1].defesa
@@ -365,10 +383,11 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     return { dano: def.final, bruto: dano, veneno, furia: p.inimigo.furia, bloqueado: def.bloqueado, critico, carregado, rajada: i.rajada ?? 1, protecoes: def.passos.map((x) => x.motivo) }
   }
 
-  function prepararInimigo(andar: number, sementeBase: number, modo: Modo): EstadoInimigo {
+  function prepararInimigo(andar: number, sementeBase: number, modo: Modo, nivel: NivelJogo = 'normal'): EstadoInimigo {
     const { inimigo } = inimigoDoAndar(andar, sementeBase, modo)
+    const vida = Math.max(1, Math.round(inimigo.vida * NIVEIS[nivel].vidaInimigo))
     return {
-      id: inimigo.id, vida: inimigo.vida, vidaMax: inimigo.vida, rodadas: 0, fase: 1, errosSeguidos: 0, furia: false,
+      id: inimigo.id, vida, vidaMax: vida, rodadas: 0, fase: 1, errosSeguidos: 0, furia: false,
       barreira: inimigo.barreira ?? 0, armaduraPerdida: 0, regenerado: 0, preceptorUsado: false, ultimoCritico: false, brasas: 0, dividido: false,
     }
   }
@@ -385,7 +404,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     let descarte = p.descarte.slice()
     let semente = p.semente
     if (!baralho.length && opcoes.repor) {
-      ;[baralho, semente] = opcoes.repor(new Set([...descarte, ...p.baralho]), semente)
+      ;[baralho, semente] = opcoes.repor(new Set([...descarte, ...p.baralho]), semente, nivelDaPartida(p))
     }
     if (!baralho.length) {
       ;[descarte, semente] = embaralhar(descarte.filter((id) => porId.has(id)), semente)
@@ -417,22 +436,23 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const modo = cfg.modo ?? 'masmorra'
     const t = cfg.talentos ?? {}
     let baralho: string[], s: number
-    if (!cfg.ids && opcoes.repor) [baralho, s] = opcoes.repor(new Set(), semente)
+    const nivel: NivelJogo = cfg.nivel && cfg.nivel in NIVEIS ? cfg.nivel : 'normal'
+    if (!cfg.ids && opcoes.repor) [baralho, s] = opcoes.repor(new Set(), semente, nivel)
     else [baralho, s] = embaralhar(cfg.ids ?? cartas.map((c) => c.id), semente)
     const h = heroiPorId(cfg.heroi)
-    const vida = VIDA_INICIAL + 5 * Math.min(3, t.vida ?? 0) + h.vida
+    const vida = Math.round((VIDA_INICIAL + 5 * Math.min(3, t.vida ?? 0) + h.vida) * NIVEIS[nivel].vidaHeroi)
     let encaixes: Encaixe[] = []
     for (const k of h.poderes) encaixes = equipar(encaixes, k.tipo, k.cargas)[0]
     if (t.pista) encaixes = equipar(encaixes, 'pista', Math.min(2, t.pista))[0]
     if (t.segunda) encaixes = equipar(encaixes, 'imortal', 1)[0]
     const base: Partida = {
       versao: 3, modo, sementeBase: semente >>> 0, semente: s, rodada: 0, andar: 1, fase: 'pergunta', vida, vidaMax: vida,
-      estagio: 1, xp: 0, inimigo: prepararInimigo(1, semente >>> 0, modo), baralho, descarte: [], atual: null,
+      estagio: 1, xp: 0, inimigo: prepararInimigo(1, semente >>> 0, modo, nivel), baralho, descarte: [], atual: null,
       sequencia: 0, sequenciaLimpa: 0, melhorSequencia: 0, pontos: 0, acertos: 0, erros: 0, assistidos: 0,
       encaixes, reliquias: [...h.reliquias], imortalUsado: false, pocao: 0, recompensas: [], derrubaram: [],
       derrotados: 0, chefesDerrotados: 0, venceu: false, danoSofrido: 0, danoEvitado: 0, curaTotal: 0,
       ouro: 15 * Math.min(3, t.ouro ?? 0), cristais: 0, categoria: 'misto', patronoDaSala: null, portas: [], loja: [], sabio: [], sala: null,
-      ajudaUsada: false, renascerUsado: false, critGarantido: false, talentos: t, torreConcluida: false, vencidos: [], heroi: h.id,
+      ajudaUsada: false, renascerUsado: false, critGarantido: false, talentos: t, torreConcluida: false, vencidos: [], heroi: h.id, nivel,
     }
     const { inimigo, ciclo } = inimigoDoAndar(1, base.sementeBase, modo)
     const r = comprar(base)
@@ -583,7 +603,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
       const brasas = Math.min(RECOMPENSAS.brasa.v.maximo, e.inimigo.brasas + (rel('brasa') ? 1 : 0) + (rel('supernova') && raio > 0 ? 1 : 0))
       e = {
         ...e, semente, sequencia, sequenciaLimpa, melhorSequencia: Math.max(e.melhorSequencia, sequencia), critGarantido: false,
-        acertos: e.acertos + 1, assistidos: e.assistidos + Number(assistida), pontos: e.pontos + total + raio, encaixes,
+        acertos: e.acertos + 1, assistidos: e.assistidos + Number(assistida), pontos: e.pontos + Math.round((total + raio) * NIVEIS[nivelDaPartida(e)].pontos), encaixes,
         inimigo: {
           ...e.inimigo, vida: vidaInimigo, errosSeguidos: 0, barreira: e.inimigo.barreira - absorvidoBarreira, brasas,
           armaduraPerdida: e.inimigo.armaduraPerdida + (rupK >= 0 ? RECOMPENSAS.ruptura.v.reducao : 0),
@@ -905,7 +925,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
   function avancar(e: Partida, categoria: CategoriaPorta, patrono: Patrono | null, eventos: Evento[]): Resultado {
     const antes = inimigoAtual(e).cenario
     const andar = e.andar + 1
-    e = { ...e, andar, categoria, patronoDaSala: patrono, portas: [], loja: [], sabio: [], sala: null, inimigo: prepararInimigo(andar, e.sementeBase, e.modo) }
+    e = { ...e, andar, categoria, patronoDaSala: patrono, portas: [], loja: [], sabio: [], sala: null, inimigo: prepararInimigo(andar, e.sementeBase, e.modo, nivelDaPartida(e)) }
     const { inimigo, ciclo } = inimigoDoAndar(andar, e.sementeBase, e.modo)
     if (e.reliquias.includes('lupa')) e = { ...e, encaixes: equipar(e.encaixes, 'pista', RECOMPENSAS.lupa.v.cargas)[0] }
     if (e.reliquias.includes('baluarte')) e = { ...e, encaixes: equipar(e.encaixes, 'barreira', RECOMPENSAS.baluarte.v.cargas)[0] }
