@@ -480,7 +480,11 @@ function particula(cor: string, bokeh: boolean) {
   return b
 }
 
-export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena) {
+/** Clima do ato: o mesmo cenário em outra hora e tempo (dia, entardecer, noite com neblina, chuva). */
+export type Clima = 'dia' | 'entardecer' | 'noite' | 'chuva'
+export const climaDoAndar = (andar: number): Clima => (['dia', 'entardecer', 'noite', 'chuva'] as const)[Math.floor((andar - 1) / 3) % 4]
+
+export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena, clima: Clima = 'dia') {
   const c = canvas.getContext('2d')
   if (!c) return () => {}
   // poeira e bokeh são luz difusa: no celular, 1 pixel do canvas por pixel CSS basta
@@ -490,6 +494,9 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena) {
   const n = cena === 'masmorra' ? 34 : cena === 'biblioteca' ? 30 : 32
   const parts = Array.from({ length: n }, (_, i) => ({ x: Math.random(), y: Math.random(), v: 0.2 + Math.random() * 0.8, f: Math.random() * 6, i, bokeh: i % 5 === 0 }))
   const luzes = LUZES[cena]
+  // chuva: gotas finas em diagonal; noite: vaga-lumes esverdeados
+  const gotas = clima === 'chuva' ? Array.from({ length: 140 }, () => ({ x: Math.random(), y: Math.random(), v: 0.9 + Math.random() * 0.8, l: 0.02 + Math.random() * 0.025 })) : []
+  const vagalumes = clima === 'noite' && cena !== 'biblioteca' ? Array.from({ length: 18 }, (_, i) => ({ x: Math.random(), y: 0.35 + Math.random() * 0.6, f: Math.random() * 6, i })) : []
   let quadro = 0, ultimo = 0, t = 0
   const passo = (agora: number) => {
     quadro = requestAnimationFrame(passo)
@@ -520,7 +527,26 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena) {
       c.drawImage(particula(cor, p.bokeh), p.x * w - r, p.y * h - r, r * 2, r * 2)
       c.globalAlpha = 1
     }
+    for (const v of vagalumes) {
+      const x = (v.x + Math.sin(t * 0.4 + v.f) * 0.03) * w, y = (v.y + Math.cos(t * 0.5 + v.f * 2) * 0.03) * h
+      const a = 0.35 + 0.65 * Math.max(0, Math.sin(t * 2.2 + v.f * 3))
+      const r = 6 * dpr
+      c.globalAlpha = a
+      c.drawImage(particula('200,255,140', false), x - r, y - r, r * 2, r * 2)
+      c.globalAlpha = 1
+    }
     c.globalCompositeOperation = 'source-over'
+    if (gotas.length) {
+      c.strokeStyle = 'rgba(200, 222, 255, .55)'; c.lineWidth = Math.max(1, dpr)
+      c.beginPath()
+      for (const g of gotas) {
+        g.y += g.v * dt; g.x -= g.v * dt * 0.18
+        if (g.y > 1.05) { g.y = -0.05; g.x = Math.random() * 1.2 }
+        if (g.x < -0.05) g.x += 1.1
+        c.moveTo(g.x * w, g.y * h); c.lineTo((g.x + g.l * 0.18) * w, (g.y - g.l) * h)
+      }
+      c.stroke()
+    }
   }
   quadro = requestAnimationFrame(passo)
   window.addEventListener('resize', ajustar)

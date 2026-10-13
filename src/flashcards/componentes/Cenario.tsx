@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
-import { criarAmbiente, pintarCena, pintarMesa, type Cena } from '../efeitos/pintura'
+import { criarAmbiente, pintarCena, pintarMesa, type Cena, type Clima } from '../efeitos/pintura'
 
 /**
  * Diorama HD-2D: pixel art em planos e luz moderna por cima.
@@ -9,7 +9,7 @@ import { criarAmbiente, pintarCena, pintarMesa, type Cena } from '../efeitos/pin
  *  (bokeh e poeira) → frente desfocada → névoa e vinheta.
  * Repinta só quando o tamanho ou a cena mudam; paralaxe leve com o mouse.
  */
-export function Cenario({ cena, reduzido }: { cena: Cena; reduzido: boolean }) {
+export function Cenario({ cena, reduzido, clima = 'dia' }: { cena: Cena; reduzido: boolean; clima?: Clima }) {
   const fundo = useRef<HTMLCanvasElement>(null)
   const meio = useRef<HTMLCanvasElement>(null)
   const tilt = useRef<HTMLCanvasElement>(null)
@@ -38,8 +38,8 @@ export function Cenario({ cena, reduzido }: { cena: Cena; reduzido: boolean }) {
 
   useEffect(() => {
     if (reduzido || !ambiente.current) return
-    return criarAmbiente(ambiente.current, cena)
-  }, [cena, reduzido])
+    return criarAmbiente(ambiente.current, cena, clima)
+  }, [cena, reduzido, clima])
 
   useEffect(() => {
     if (reduzido || !matchMedia('(pointer: fine)').matches) return
@@ -56,7 +56,7 @@ export function Cenario({ cena, reduzido }: { cena: Cena; reduzido: boolean }) {
   }, [reduzido])
 
   return (
-    <div className={`fc-cena fc-cena--${cena}`} ref={raiz} aria-hidden="true">
+    <div className={`fc-cena fc-cena--${cena} fc-cena--clima-${clima}`} ref={raiz} aria-hidden="true">
       <canvas ref={fundo} className="fc-cena__fundo" />
       <canvas ref={meio} className="fc-cena__meio" />
       <canvas ref={tilt} className="fc-cena__tilt" />
@@ -65,6 +65,7 @@ export function Cenario({ cena, reduzido }: { cena: Cena; reduzido: boolean }) {
       <canvas ref={ambiente} className="fc-cena__ambiente" />
       <canvas ref={frente} className="fc-cena__frente" />
       <span className="fc-cena__nevoa" />
+      <span className="fc-cena__clima" />
     </div>
   )
 }
