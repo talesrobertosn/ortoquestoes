@@ -137,3 +137,35 @@
 .rkc-lista em { font-style: normal; font-weight: 700; }
 .rkc-voce { outline: 2px solid var(--verdete); }
 .rkc-regras { display: grid; gap: 0.35rem; margin: 0; padding-left: 1.2rem; color: var(--texto-2); }
+
+/* Jornada dos flashcards: cenário pixelado, luz quente e leitura editorial. */
+.cf-heroi { position: relative; isolation: isolate; overflow: hidden; min-height: 460px; padding: clamp(24px,5vw,64px); border: 1px solid #ac8953; border-radius: 24px; background:#152f29; box-shadow:0 20px 48px #142c2826; }
+.cf-heroi__arte { position:absolute; inset:0; border-radius:0; z-index:-2; }
+.cf-heroi__arte img { width:100%; height:100%; object-fit:cover; object-position:70% 52%; }
+.cf-heroi::after { content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#142b25f5 0%,#142b25dd 30%,#142b2520 80%),linear-gradient(0deg,#10231b99,transparent 65%); }
+.cf-heroi__texto { grid-column:1 / -1; max-width:540px; color:#f5efd9; gap:20px; }
+.cf-heroi__texto h1 { font:700 clamp(32px,4vw,54px)/1.13 'Cinzel',serif; letter-spacing:-.02em; color:#fff5d5;text-shadow:0 3px 12px #0005; }
+.cf-heroi__texto > p:not(.cf-selo):not(.cf-nota) { font:400 22px/1.45 'Alegreya',serif; color:#eee9d8;max-width:43ch; }
+.cf-heroi .cf-selo,.cf-heroi .cf-nota { color:#e0dbba; }
+.cf-heroi .cf-beta { background:#d5b067; color:#26392c; }
+.cf-heroi__botoes .botao--principal { background:#f8efd9; color:#234d3c; border-color:#f8efd9; }
+.cf-modos { gap:20px; }
+.cf-modo { border-color:#b5a58266; box-shadow:0 8px 24px #1434270b;transition:transform .2s; }
+.cf-modo:hover { transform:translateY(-3px); }
+.cf-modo strong { font:700 22px/1.2 'Cinzel',serif; }
+.cf-links { grid-template-columns:repeat(3,minmax(0,1fr)); }
+@media(max-width:640px){
+ .cf-heroi { min-height:590px; padding:28px 22px;align-items:end; }
+ .cf-heroi__arte img { object-position:64% top; }
+ .cf-heroi::after { background:linear-gradient(0deg,#132d26fa 0%,#132d26e8 48%,#132d2600 88%); }
+ .cf-heroi__texto { gap:16px; }
+ .cf-heroi__texto > p:not(.cf-selo):not(.cf-nota){font-size:20px;}
+ .cf-heroi__botoes { flex-direction:column; }
+ .cf-heroi__botoes .botao{justify-content:center;}
+ .cf-links {grid-template-columns:1fr;}
+}
+@media(prefers-reduced-motion:reduce){.cf-modo {transition:none;}.cf-modo:hover{transform:none;}}
+.cf .cf-heroi::after { display:block; }
+@media(max-width:640px){.cf-heroi__botoes{flex-wrap:nowrap;}.cf-heroi__botoes .botao{flex:0 0 auto;width:100%;min-height:48px;}}
+/* O estilo global esconde os pseudo-elementos dos heróis; este véu preserva o contraste. */
+.cf .cf-heroi::after { display:block!important; pointer-events:none; }

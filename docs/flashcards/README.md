@@ -1,5 +1,7 @@
 # Flashcards do Orto Questões: Torneio de Flashcards
 
+**Orientação mais recente:** [Jornada única](JORNADA-UNICA.md), 13/10/2026: ranking sem níveis, progressão por turma e histórico pessoal, entrada com Cripta/Biblioteca e cronograma dentro de Flashcards. As seções antigas abaixo são histórico quando conflitarem.
+
 Ponto de partida para quem for continuar este projeto: Claude, ChatGPT Codex ou outro agente.
 Leia este arquivo e depois os outros desta pasta, nesta ordem:
 

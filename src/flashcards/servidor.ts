@@ -125,7 +125,9 @@ export async function registrarAndar(corrida: string, andar: number) {
 export async function lerRanking(tipo: TipoRanking): Promise<LinhaRanking[] | null> {
   if (!RANKING_NO_SERVIDOR) return null
   try {
-    const linhas = await chamarRpc<Array<{ posicao: number; apelido: string; valor: number; eh_voce: boolean }>>('ranking_flashcards', { p_tipo: tipo })
+    type Linha = { posicao: number; apelido: string; valor: number; eh_voce: boolean }
+    const corpo = { p_tipo: tipo }
+    const linhas = await chamarRpc<Linha[]>('ranking_flashcards', corpo).catch(() => chamarRpcPublica<Linha[]>('ranking_flashcards', corpo))
     return linhas.map((l) => ({ posicao: Number(l.posicao), apelido: l.apelido, valor: Number(l.valor), ehVoce: Boolean(l.eh_voce) }))
   } catch { return null }
 }

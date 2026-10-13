@@ -85,3 +85,13 @@ Registro em ordem de data. Cada linha é uma decisão do Tales; não mude sem no
 5. **Ranking da Batalha** (Desafio do dia) junto da Arena dos Residentes ou separado?
 6. **Foco:** integrar o recurso de energia proposto em BATALHA.md?
 7. **Adversário com vida:** confirmar a troca dos 5 flashcards por andar (decidida por Claude com a liberdade dada).
+
+## 13/10/2026, jornada única (pedido direto ao Codex)
+
+- Retirar Fácil/Normal/Difícil da escolha de partida e unificar o ranking.
+- Sequência: maior acerto da turma, questões acertadas pelo usuário, questões erradas pelo usuário, mistura aleatória; variar dentro de cada grupo.
+- Entrada com Cripta e Biblioteca, sem Torre; Biblioteca identificada como treino de flashcards.
+- Melhorar central, entrada, Biblioteca e música, com atmosfera Stardew Valley/Octopath II e conteúdo autoral.
+- Cronograma de flashcards somente na área Flashcards, removendo o atalho do cronograma de questões.
+- Nas mudanças visuais, enviar ocasionalmente capturas reais de desktop e/ou celular durante o trabalho.
+- Implementação e critérios em [JORNADA-UNICA.md](JORNADA-UNICA.md). Esta orientação substitui a escolha de níveis e a divulgação da Torre descritas anteriormente.

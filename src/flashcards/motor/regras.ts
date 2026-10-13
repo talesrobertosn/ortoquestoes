@@ -288,7 +288,7 @@ export interface OpcoesMotor {
    * ids, sem os que estão em `excluir`, e a próxima semente. Sem ela, o
    * descarte é reembaralhado.
    */
-  repor?: (excluir: ReadonlySet<string>, semente: number, nivel: NivelJogo) => [string[], number]
+  repor?: (excluir: ReadonlySet<string>, semente: number, nivel: NivelJogo, rodada: number) => [string[], number]
 }
 
 export interface ConfigPartida { modo?: Modo; talentos?: Talentos; ids?: string[]; heroi?: string; nivel?: NivelJogo }
@@ -404,7 +404,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     let descarte = p.descarte.slice()
     let semente = p.semente
     if (!baralho.length && opcoes.repor) {
-      ;[baralho, semente] = opcoes.repor(new Set([...descarte, ...p.baralho]), semente, nivelDaPartida(p))
+      ;[baralho, semente] = opcoes.repor(new Set([...descarte, ...p.baralho]), semente, nivelDaPartida(p), p.rodada)
     }
     if (!baralho.length) {
       ;[descarte, semente] = embaralhar(descarte.filter((id) => porId.has(id)), semente)
@@ -437,7 +437,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const t = cfg.talentos ?? {}
     let baralho: string[], s: number
     const nivel: NivelJogo = cfg.nivel && cfg.nivel in NIVEIS ? cfg.nivel : 'normal'
-    if (!cfg.ids && opcoes.repor) [baralho, s] = opcoes.repor(new Set(), semente, nivel)
+    if (!cfg.ids && opcoes.repor) [baralho, s] = opcoes.repor(new Set(), semente, nivel, 0)
     else [baralho, s] = embaralhar(cfg.ids ?? cartas.map((c) => c.id), semente)
     const h = heroiPorId(cfg.heroi)
     const vida = Math.round((VIDA_INICIAL + 5 * Math.min(3, t.vida ?? 0) + h.vida) * NIVEIS[nivel].vidaHeroi)

@@ -1842,3 +1842,31 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 }
 .fc-niveis__nota { display: none; grid-column: 1 / -1; margin: 0; font: 500 12.5px/1.35 var(--fc-ui); color: #cbbd9c; text-align: center; }
 @media (max-width: 700px) { .fc-niveis__nota { display: block; padding: 4px 10px; border-radius: 8px; color: #f0e2c4; background: rgba(14, 9, 7, .78); text-shadow: 0 1px 0 #000; } }
+
+/* Entrada: bosque acolhedor, pergaminho claro e dois caminhos. */
+.fc-entrada__miolo { width:min(1040px,100%); margin:auto; padding:clamp(24px,4vw,52px) 22px; gap:22px; }
+.fc-entrada__cabeca h1 { font-size:clamp(32px,4.5vw,60px);letter-spacing:0;line-height:1.13;text-shadow:0 3px 16px #14281c; }
+.fc-entrada__cabeca h1 em { color:#e8cc8c; }
+.fc-entrada__selo { background:#faf1d8; color:#3b523c; border:1px solid #c2a673; padding:7px 15px;box-shadow:0 2px 6px #14281944; }
+.fc-entrada__cabeca p { font-size:clamp(18px,1.8vw,22px); max-width:570px; }
+.fc-entrada__palco { min-height:85px; gap:55px; }
+.fc-modos { grid-template-columns:repeat(2,minmax(0,1fr)); max-width:820px; }
+.fc-entrada .fc-modo { background:linear-gradient(135deg,#f8f0daef,#e6dbc3ed);border:2px solid #a88651;box-shadow:inset 0 0 0 3px #fff4d8,0 12px 28px #0c1e1744; border-radius:18px; color:#304a36;padding:22px; gap:12px; }
+.fc-entrada .fc-modo strong { font:700 clamp(20px,2vw,27px)/1.25 var(--fc-titulo); color:#314b37; text-shadow:none; }
+.fc-entrada .fc-modo small,.fc-entrada .fc-modo__dados { color:#52604b;font-size:17px;line-height:1.4; }
+.fc-entrada .fc-modo__acao { background:#315e47; color:#fff2cc; border:1px solid #264631; padding:10px 16px;border-radius:9px; }
+.fc-entrada .fc-extra { background:#213e32e8;border-color:#9e996d77; }
+.fc-biblioteca__cabeca { background:linear-gradient(135deg,#f3eddae8,#e0e8d4e8)!important;color:#304e38; padding:24px!important; }
+.fc-biblioteca__cabeca h2 {color:#304e38!important;font-size:clamp(25px,3vw,37px);text-shadow:none;}
+.fc-biblioteca__cabeca p,.fc-biblioteca__cabeca small {color:#58634e!important;}
+.fc-categoria { background:linear-gradient(140deg,#253e37f2,#192d28f2)!important;border-color:#b8a77788!important;border-radius:14px!important;box-shadow:0 6px 18px #061b1922;}
+.fc-categoria strong { color:#fff0ce; }
+.fc-categoria:hover { border-color:#e0c887!important; }
+@media(max-width:640px){
+ .fc-entrada__miolo { padding:25px 16px; gap:18px; }
+ .fc-modos { grid-template-columns:1fr; }
+ .fc-entrada .fc-modo {padding:18px;gap:8px;}
+ .fc-entrada__palco {display:none;}
+ .fc-entrada__extras {gap:8px;}
+ .fc-entrada .fc-extra {flex:1 1 130px;}
+}

@@ -1,3 +1,5 @@
+import '@fontsource/cinzel/latin-700.css'
+import '@fontsource/alegreya/latin-400.css'
 import { useEffect, useMemo, useState } from 'react'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { JanelaCentral } from '../componentes/JanelaCentral'
@@ -14,7 +16,6 @@ import {
   CATEGORIAS_OPINIAO, deveConvidar, dispensarConvite, enviarOpiniao, mensagemDeErro,
   type CategoriaOpiniao, type OrigemOpiniao,
 } from '../flashcards/opiniao'
-import { TORRE } from '../flashcards/motor/bestiario'
 import { CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, type RegistroFlashcard, type Recordes } from '../flashcards/progresso'
 import type { Flashcard } from '../flashcards/tipos'
 import '../estilos/paginas/CentralFlashcards.css'
@@ -94,11 +95,11 @@ export function CentralFlashcards() {
         </picture>
         <div className="cf-heroi__texto">
           <p className="cf-selo"><span className="cf-beta">Beta público</span> Flashcards</p>
-          <h1>Flashcards de Ortopedia e Traumatologia</h1>
+          <h1>Um novo jeito<br />de aprender.</h1>
           <p>Flashcards tirados das questões comentadas das provas reais, com revisão espaçada: o que você erra volta antes, o que você sabe espaça. Responda, veja o verso e acompanhe a sua evolução por assunto.</p>
           <div className="cf-heroi__botoes">
-            <a className="botao botao--ouro botao--grande" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={18} /> Abrir flashcards</a>
-            <a className="botao botao--principal" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Revisar sem o jogo</a>
+            <a className="botao botao--ouro botao--grande" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={18} /> Explorar o Torneio</a>
+            <a className="botao botao--principal" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Treinar na Biblioteca</a>
           </div>
           {LIMITES_HABILITADOS && <p className="cf-nota">Conta grátis: 10 flashcards a cada 24 horas. Assinante: sem limite.</p>}
         </div>
@@ -154,13 +155,12 @@ export function CentralFlashcards() {
         <h2 id="cf-modos-titulo" className="cf-titulo">Por onde seguir</h2>
         <div className="cf-modos">
           <CartaoModo arte="biblioteca" titulo="Revisar flashcards" texto="Estudo calmo, sem combate, por assunto ou pelas revisões do dia." destino="/flashcards/biblioteca" acao="Abrir a Biblioteca" />
-          <CartaoModo arte="cripta" titulo="Torneio de Flashcards" texto={`Os mesmos flashcards em forma de jogo: cada acerto é um golpe. Fácil, Normal ou Difícil.${rec.andarMaximo ? ` Seu recorde: andar ${rec.andarMaximo}.` : ''}`} destino="/flashcards/entrada" acao="Entrar no Torneio" />
+          <CartaoModo arte="cripta" titulo="Torneio de Flashcards" texto={`Os mesmos flashcards em forma de jogo: cada acerto é um golpe. Uma jornada que começa pelo que é mais familiar e avança para seus desafios.${rec.andarMaximo ? ` Seu recorde: andar ${rec.andarMaximo}.` : ''}`} destino="/flashcards/entrada" acao="Entrar no Torneio" />
           <CartaoModo arte="progresso" titulo="Meu desempenho" texto={`${contagem.estudados.toLocaleString('pt-BR')} flashcards únicos estudados neste aparelho e na sua conta.`} destino="/flashcards/desempenho" acao="Ver desempenho" />
         </div>
         <ul className="cf-links">
           <li><a href={href('/flashcards/cronograma')}><Icone nome="calendario" tamanho={18} /><span><strong>Meu cronograma</strong><small>{plano ? `Até ${formatarData(plano.data)}` : 'Data-alvo e ritmo diário'}</small></span></a></li>
-          <li><a href={href('/ranking?aba=flashcards')}><Icone nome="trofeu" tamanho={18} /><span><strong>Ranking dos flashcards</strong><small>Normal e Difícil, separados</small></span></a></li>
-          <li><a href={href('/flashcards/torre')}><Icone nome="rota" tamanho={18} /><span><strong>Torre do Título</strong><small>{TORRE.andares} andares · jogável em beta, ainda sem ranking{rec.torreMaximo ? ` · recorde ${rec.torreMaximo}` : ''}</small></span></a></li>
+          <li><a href={href('/ranking?aba=flashcards')}><Icone nome="trofeu" tamanho={18} /><span><strong>Ranking dos flashcards</strong><small>Uma jornada · um ranking</small></span></a></li>
           <li><button type="button" onClick={() => definirOpiniao('central')}><Icone nome="correio" tamanho={18} /><span><strong>Enviar opinião</strong><small>Som, visual, desempenho ou conteúdo</small></span></button></li>
         </ul>
       </section>

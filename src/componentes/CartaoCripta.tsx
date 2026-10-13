@@ -19,7 +19,7 @@ export function CartaoCripta({ variante = 'venda', limites = false }: { variante
         <ul className="cripta-cartao__lista">
           <li>Flashcards tirados das questões comentadas do acervo, por assunto</li>
           <li>{limites ? 'Conta grátis: 10 flashcards a cada 24 horas · Assinante: sem limite' : 'Abertos a todas as contas nesta fase'}</li>
-          <li>Desempenho, cronograma e ranking do Torneio (Normal e Difícil)</li>
+          <li>Desempenho, cronograma e ranking único do Torneio</li>
         </ul>
       </div>
       <a className="botao botao--ouro cripta-cartao__entrar" href={href('/flashcards')}>Conhecer os flashcards</a>
