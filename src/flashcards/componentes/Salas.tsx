@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { tocar } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
-import { andarDeChefe, CURA_LOJA, type ItemLoja, type OfertaSabio, type Partida, type Porta } from '../motor/regras'
+import { andarDeChefe, CURA_LOJA, type ItemLoja, type OfertaSabio, type OpcaoSala, type Partida, type Porta } from '../motor/regras'
 import { inimigoDoAndar } from '../motor/bestiario'
 import { PATRONOS, RECOMPENSAS } from '../motor/poderes'
 import { Ator } from './Hud'
@@ -22,10 +22,16 @@ const PORTA_INFO: Record<string, { nome: string; texto: string; icone: string; c
   loja: { nome: 'Caixeira do Arsenal', texto: 'Compre com suas moedas', icone: 'bolsa', cor: '#5fdc7a' },
   sabio: { nome: 'Velho Preceptor', texto: 'Um conselho de quem já passou por aqui', icone: 'lanterna', cor: '#a8d8ff' },
   chefe: { nome: 'Chefe', texto: 'O guardião deste andar', icone: 'coroa', cor: '#ff5a3c' },
+  ferreiro: { nome: 'Mestre Ferreiro', texto: 'Reforce o equipamento com moedas', icone: 'bigorna', cor: '#ff9a4a' },
+  curandeira: { nome: 'Irmã do Calo Ósseo', texto: 'Cura e uma lição de graça', icone: 'frasco', cor: '#ff8ab0' },
+  bau: { nome: 'Baú esquecido', texto: 'Tesouro... ou armadilha', icone: 'bolsa', cor: '#e8b85a' },
+  secreta: { nome: 'Parede rachada', texto: 'Uma sala que quase ninguém acha', icone: 'porta', cor: '#c9a0ff' },
+  evento: { nome: 'Encontro', texto: 'Algo aconteceu no caminho', icone: 'lanterna', cor: '#9ad8ff' },
 }
 
 function infoDaPorta(p: Porta) {
   if (p.tipo === 'loja' || p.tipo === 'sabio') return PORTA_INFO[p.tipo]
+  if (p.tipo === 'sala') return PORTA_INFO[p.sala]
   if (p.tipo === 'chefe') return PORTA_INFO.chefe
   if (p.recompensa === 'bencao' && p.patrono) {
     const pat = PATRONOS[p.patrono]
@@ -189,6 +195,52 @@ export function TituloChefe({ nome, lema, quem, variante }: { nome: string; lema
       <span className="fc-titulo-chefe__silhueta"><Ator quem={quem} variante={variante} escala={2} chefe /></span>
       <strong>{nome}</strong>
       <em>{lema}</em>
+    </div>
+  )
+}
+
+/**
+ * Sala de evento (Etapa 6): ferreiro, curandeira, baú, sala secreta ou um
+ * encontro no caminho. Mesmo desenho do Velho Preceptor; cada opção mostra o
+ * custo (moedas ou vida) e fica apagada quando não dá para pagar.
+ */
+export function SalaEvento({ partida, aoEscolher }: { partida: Partida; aoEscolher: (k: number) => void }) {
+  const sala = partida.sala
+  useEffect(() => { tocar(sala?.tipo === 'secreta' ? 'lendario' : sala?.tipo === 'ferreiro' ? 'compra-loja' : sala?.tipo === 'bau' ? 'moedas' : 'ajuda') }, [sala?.tipo])
+  useEffect(() => {
+    const aoTeclar = (e: KeyboardEvent) => { const k = Number(e.key); if (sala && k >= 1 && k <= sala.opcoes.length && pode(sala.opcoes[k - 1])) aoEscolher(k - 1) }
+    window.addEventListener('keydown', aoTeclar)
+    return () => window.removeEventListener('keydown', aoTeclar)
+  })
+  if (!sala) return null
+  const pode = (o: OpcaoSala) => (!o.custoOuro || partida.ouro >= o.custoOuro) && (!o.precisaPoder || partida.encaixes.length > 0)
+  const info = PORTA_INFO[sala.tipo]
+  return (
+    <div className="fc-veu fc-veu--sala" role="dialog" aria-modal="true" aria-labelledby="fc-sala-titulo">
+      <div className={`fc-sala fc-sala--evento fc-sala--${sala.tipo}`} style={{ ['--cor' as string]: info.cor }}>
+        <div className="fc-sala__npc fc-sala__npc--icone" aria-hidden="true"><span className="fc-sala__emblema"><Sprite nome={sala.icone} /></span></div>
+        <div className="fc-sala__conteudo">
+          <h2 id="fc-sala-titulo">{sala.titulo}</h2>
+          <Fala texto={sala.fala} />
+          <p className="fc-sala__ouro"><Sprite nome="moeda" className="fc-sprite--icone" /> <b>{partida.ouro}</b> moedas · <Sprite nome="coracao" className="fc-sprite--icone" /> <b>{partida.vida}</b>/{partida.vidaMax}</p>
+          <div className="fc-ofertas">
+            {sala.opcoes.map((o, k) => {
+              const ok = pode(o)
+              return (
+                <button key={k} type="button" className="fc-oferta" style={{ ['--cor' as string]: info.cor }} onClick={() => ok && aoEscolher(k)} disabled={!ok} autoFocus={k === 0}>
+                  <span className="fc-loja__icone"><Sprite nome={o.icone} /></span>
+                  <span>
+                    <strong>{o.rotulo}</strong>
+                    <small>{o.detalhe}{!ok && o.precisaPoder && !partida.encaixes.length ? ' (precisa de um poder equipado)' : ''}</small>
+                    {(o.custoOuro || o.custoVida) && <em className="fc-oferta__custo">{o.custoOuro ? <><Sprite nome="moeda" className="fc-sprite--icone" />{o.custoOuro}</> : `−${Math.round((o.custoVida ?? 0) * 100)}% de vida`}</em>}
+                  </span>
+                  <span className="fc-recompensa__tecla" aria-hidden="true">{k + 1}</span>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

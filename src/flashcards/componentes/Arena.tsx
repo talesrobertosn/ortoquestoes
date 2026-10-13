@@ -20,7 +20,7 @@ import {
   BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
   lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Bestiario, type Recordes, type RegistroFlashcard,
 } from '../progresso'
-import { AjudaDoPreceptor, Loja, Portas, Sabio, TituloChefe } from './Salas'
+import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
 import { Cartao, familiasDe } from './Cartao'
 import { ComChaves } from './Chaves'
 import { Cenario, TampoMesa } from './Cenario'
@@ -47,7 +47,7 @@ const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volEfeitos: 0.85, volAmb
 const ROTULO_CURA: Record<MotivoCura, string> = {
   sequencia: 'SEQUÊNCIA', lendaria: 'LENDÁRIA', pocao: 'POÇÃO', selo: 'SELO', roubo: 'ROUBO DE ENERGIA', vital: 'POÇÃO VITAL',
   insignia: 'INSÍGNIA', chefe: 'CHEFE VENCIDO', ritual: 'RITUAL', descanso: 'FOGUEIRA', coracao: 'CORAÇÃO', evolucao: 'EVOLUÇÃO',
-  seiva: 'CALO VIVO', colheita: 'REMODELAÇÃO', florescer: 'CONSOLIDAÇÃO', cauterio: 'CAUTÉRIO', sabio: 'PRECEPTOR', ajuda: 'PRECEPTOR', renascer: 'FÊNIX', loja: 'POÇÃO',
+  seiva: 'CALO VIVO', colheita: 'REMODELAÇÃO', florescer: 'CONSOLIDAÇÃO', cauterio: 'CAUTÉRIO', sabio: 'PRECEPTOR', ajuda: 'PRECEPTOR', renascer: 'FÊNIX', loja: 'POÇÃO', sala: 'DESCANSO',
 }
 
 /** Onde cada modo guarda a partida em andamento. */
@@ -235,7 +235,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const adversarioEmCena = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo
   const chefeEmCena = modo === 'batalha' && adversarioEmCena.chefe
   const trilha = modo === 'estudo' ? 'biblioteca'
-    : partida.fase === 'loja' ? 'loja' : partida.fase === 'sabio' ? 'sabio'
+    : partida.fase === 'loja' ? 'loja' : partida.fase === 'sabio' || partida.fase === 'sala' ? 'sabio'
     : chefeEmCena ? (adversarioEmCena.sprite === 'dragao' ? 'dragao' : 'chefe')
     : modo === 'batalha' && adversarioEmCena.nivel === 'elite' ? 'elite' : cenarioVisivel
   useEffect(() => { tocarMusica(trilha) }, [trilha])
@@ -721,7 +721,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           definirFaixa(null)
           break
         }
-        case 'portas': case 'loja': case 'sabio': case 'comprou':
+        case 'portas': case 'loja': case 'sabio': case 'comprou': case 'sala':
+          break
+        case 'sala-resultado':
+          if (ev.azar) { definirFaixa({ texto: 'Armadilha!', sub: ev.texto, tom: 'vermelho' }); tremer(0.6); if (!(await esperar(1600, g))) return; definirFaixa(null) }
           break
         case 'recompensas':
           break
@@ -803,6 +806,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const comprarNaLoja = useCallback((k: number) => aplicar(motor.comprarNaLoja(partidaRef.current, k)), [aplicar])
   const sairDaLoja = useCallback(() => aplicar(motor.sairDaLoja(partidaRef.current)), [aplicar])
   const aceitarSabio = useCallback((k: number) => { tocar('poder'); aplicar(motor.aceitarSabio(partidaRef.current, k)) }, [aplicar])
+  const escolherNaSala = useCallback((k: number) => { tocar('poder'); aplicar(motor.escolherNaSala(partidaRef.current, k)) }, [aplicar])
 
   const novaPartida = useCallback(() => {
     pular()
@@ -1137,6 +1141,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         {partida.fase === 'portas' && !animando && modo === 'batalha' && <Portas partida={partida} aoEntrar={entrarPorta} rapido={reduzido || ajustes.velocidade === 'rapida'} />}
         {partida.fase === 'loja' && !animando && modo === 'batalha' && <Loja partida={partida} aoComprar={comprarNaLoja} aoSair={sairDaLoja} />}
         {partida.fase === 'sabio' && !animando && modo === 'batalha' && <Sabio partida={partida} aoAceitar={aceitarSabio} />}
+        {partida.fase === 'sala' && !animando && modo === 'batalha' && <SalaEvento partida={partida} aoEscolher={escolherNaSala} />}
         {ajuda !== null && modo === 'batalha' && <AjudaDoPreceptor cura={ajuda} />}
         {tituloChefe && modo === 'batalha' && <TituloChefe nome={tituloChefe.nome} lema={tituloChefe.lema} quem={tituloChefe.sprite as Personagem} variante={tituloChefe.variante} />}
         {mostrarFim && modo === 'batalha' && <Fim partida={partida} aoNova={novaPartida} aoRevisar={revisarNoEstudo} aoSair={fechar} aoPatamar={voltarAoPatamar} />}

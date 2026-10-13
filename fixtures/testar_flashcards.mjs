@@ -100,6 +100,7 @@ try {
       return k >= 0 ? motor.comprarNaLoja(estado, k).estado : motor.sairDaLoja(estado).estado
     }
     if (estado.fase === 'sabio') return motor.aceitarSabio(estado, 0).estado
+    if (estado.fase === 'sala') return motor.escolherNaSala(estado, estado.sala.opcoes.length - 1).estado
     const k = estado.portas.findIndex((x) => x.tipo === 'combate' || x.tipo === 'chefe')
     return motor.entrar(estado, k >= 0 ? k : 0).estado
   }
@@ -219,7 +220,7 @@ try {
         continue
       }
       if (estado.fase === 'portas') { if (estado.venceu) return { andar: estado.andar, chefe: true }; estado = passarPortas(estado); continue }
-      if (estado.fase === 'loja' || estado.fase === 'sabio') { estado = passarPortas(estado); continue }
+      if (estado.fase === 'loja' || estado.fase === 'sabio' || estado.fase === 'sala') { estado = passarPortas(estado); continue }
       if (estado.fase === 'resposta') { estado = motor.seguir(estado).estado; continue }
       const c = motor.carta(estado.atual.id)
       const acerta = sorte() < taxa
@@ -250,7 +251,7 @@ try {
     for (let passo = 0; passo < 3000; passo++) {
       if (estado.fase === 'fim') break
       if (estado.fase === 'recompensa') { estado = motor.escolher(estado, estado.recompensas[0]).estado; continue }
-      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio') { estado = passarPortas(estado); continue }
+      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio' || estado.fase === 'sala') { estado = passarPortas(estado); continue }
       if (estado.fase === 'resposta') { estado = motor.seguir(estado).estado; continue }
       const c = motor.carta(estado.atual.id)
       const acerta = sorte() < taxa
@@ -296,7 +297,7 @@ try {
         tentativas++; estado = patamar; continue
       }
       if (estado.fase === 'recompensa') { estado = motor.escolher(estado, estado.recompensas[0]).estado; continue }
-      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio') {
+      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio' || estado.fase === 'sala') {
         const r = estado.fase === 'portas' ? motor.entrar(estado, Math.max(0, estado.portas.findIndex((x) => x.tipo !== 'loja'))) : { estado: passarPortas(estado), eventos: [] }
         if (r.eventos.some((e) => e.tipo === 'patamar')) patamar = r.estado
         estado = r.estado
@@ -326,6 +327,34 @@ try {
   assert.ok(tabelaTorre[0.6].maximo < tabelaTorre[0.8].maximo && tabelaTorre[0.8].maximo <= tabelaTorre[0.95].maximo, 'Torre: quem acerta mais sobe mais')
   assert.ok(tabelaTorre[0.7].topo < 0.05, 'Torre fácil demais para 70%')
   assert.ok(tabelaTorre[0.95].maximo > 50, 'Torre impossível para 95%')
+
+  // Salas de evento (Etapa 6): custo cobrado, efeito aplicado, andar avança; sem moedas a opção paga é recusada.
+  {
+    const base = { ...motor.novaPartida(61).estado, ouro: 60, fase: 'portas', portas: [{ tipo: 'sala', sala: 'ferreiro' }, { tipo: 'combate', recompensa: 'misto' }] }
+    const na = motor.entrar(base, 0)
+    assert.equal(na.estado.fase, 'sala')
+    assert.equal(na.estado.sala.tipo, 'ferreiro')
+    const temperar = na.estado.sala.opcoes.findIndex((o) => o.efeitos.some((f) => f.tipo === 'vidaMax'))
+    const depois = motor.escolherNaSala(na.estado, temperar).estado
+    assert.equal(depois.ouro, 20)
+    assert.equal(depois.vidaMax, base.vidaMax + 10)
+    assert.equal(depois.andar, base.andar + 1)
+    const pobre = { ...na.estado, ouro: 10 }
+    assert.equal(motor.escolherNaSala(pobre, temperar).estado, pobre)
+    // a curandeira cura de graça; o baú paga moedas (com ou sem armadilha) e nunca derruba
+    for (const tipo of ['curandeira', 'bau', 'secreta', 'evento']) {
+      const q = { ...motor.novaPartida(62).estado, vida: 40, ouro: 50, fase: 'portas', portas: [{ tipo: 'sala', sala: tipo }] }
+      const s1 = motor.entrar(q, 0).estado
+      assert.equal(s1.fase, 'sala', tipo)
+      assert.ok(s1.sala.opcoes.length >= 2, tipo)
+      const k = s1.sala.opcoes.findIndex((o) => (!o.precisaPoder || s1.encaixes.length) && (!o.custoOuro || s1.ouro >= o.custoOuro))
+      const fim = motor.escolherNaSala(s1, k).estado
+      assert.ok(fim.vida >= 1 && fim.andar === q.andar + 1, tipo)
+    }
+    // partidas salvas antes das salas continuam abrindo
+    const antiga = { ...motor.novaPartida(63).estado }; delete antiga.sala
+    assert.equal(m.migrarPartida(antiga).sala, null)
+  }
 
   console.log('Motor da Batalha: ok')
 } finally {

@@ -97,7 +97,7 @@ export interface EstadoInimigo {
   dividido: boolean
 }
 
-export type Fase = 'pergunta' | 'resposta' | 'recompensa' | 'portas' | 'loja' | 'sabio' | 'fim'
+export type Fase = 'pergunta' | 'resposta' | 'recompensa' | 'portas' | 'loja' | 'sabio' | 'sala' | 'fim'
 
 /** O que a porta promete para depois do próximo confronto (o ícone aparece na porta). */
 export type CategoriaPorta = 'misto' | 'poder' | 'reliquia' | 'bencao' | 'cura' | 'ouro'
@@ -106,6 +106,36 @@ export type Porta =
   | { tipo: 'chefe'; recompensa: CategoriaPorta }
   | { tipo: 'loja' }
   | { tipo: 'sabio' }
+  | { tipo: 'sala'; sala: TipoSala }
+
+/**
+ * Salas de evento (Etapa 6, 13/10/2026): ferreiro, curandeira, baú, sala
+ * secreta e encontros pelo caminho. Cada sala oferece opções com custo (moedas
+ * ou parte da vida) e efeitos; escolher uma leva ao próximo andar.
+ */
+export type TipoSala = 'ferreiro' | 'curandeira' | 'bau' | 'secreta' | 'evento'
+export type EfeitoSala =
+  | { tipo: 'cura'; fracao: number }
+  | { tipo: 'ouro'; valor: number }
+  | { tipo: 'cristais'; valor: number }
+  | { tipo: 'vidaMax'; valor: number }
+  | { tipo: 'cargas'; valor: number }
+  | { tipo: 'perdeVida'; fracao: number }
+  | { tipo: 'recompensa'; id: Recompensa }
+export interface OpcaoSala {
+  rotulo: string
+  detalhe: string
+  icone: string
+  custoOuro?: number
+  /** Fração da vida máxima paga para escolher (nunca derruba: fica com pelo menos 1). */
+  custoVida?: number
+  efeitos: EfeitoSala[]
+  /** Sorte: com esta chance, os efeitos de `azar` entram no lugar (o baú pode ter armadilha). */
+  azar?: { chance: number; efeitos: EfeitoSala[]; texto: string }
+  /** Precisa de pelo menos um poder equipado. */
+  precisaPoder?: boolean
+}
+export interface Sala { tipo: TipoSala; titulo: string; fala: string; icone: string; opcoes: OpcaoSala[] }
 
 export interface ItemLoja { item: Recompensa | 'cura'; preco: number; vendido: boolean }
 export type OfertaSabio =
@@ -166,6 +196,8 @@ export interface Partida {
   patronoDaSala: Patrono | null
   portas: Porta[]
   loja: ItemLoja[]
+  /** Sala de evento aberta (ferreiro, curandeira, baú, secreta ou encontro). */
+  sala: Sala | null
   sabio: OfertaSabio[]
   ajudaUsada: boolean
   renascerUsado: boolean
@@ -184,7 +216,7 @@ export interface Partida {
 
 export type MotivoCura =
   | 'sequencia' | 'lendaria' | 'pocao' | 'selo' | 'roubo' | 'vital' | 'insignia' | 'chefe' | 'ritual' | 'descanso' | 'coracao' | 'evolucao'
-  | 'seiva' | 'colheita' | 'florescer' | 'cauterio' | 'sabio' | 'ajuda' | 'renascer' | 'loja'
+  | 'seiva' | 'colheita' | 'florescer' | 'cauterio' | 'sabio' | 'ajuda' | 'renascer' | 'loja' | 'sala'
 
 export type Evento =
   | { tipo: 'novo-inimigo'; inimigo: Inimigo; ciclo: number; trocaCenario: boolean }
@@ -213,7 +245,9 @@ export type Evento =
   | { tipo: 'heroi-derrotado' }
   | { tipo: 'recompensas'; opcoes: Recompensa[]; aposChefe: boolean }
   | { tipo: 'equipou'; recompensa: Recompensa; substituiu: TipoPoder | null }
-  | { tipo: 'ouro'; valor: number; motivo: 'inimigo' | 'brilhante' | 'porta' | 'bolsa' | 'sabio' | 'compra' }
+  | { tipo: 'ouro'; valor: number; motivo: 'inimigo' | 'brilhante' | 'porta' | 'bolsa' | 'sabio' | 'compra' | 'sala' }
+  | { tipo: 'sala'; sala: Sala }
+  | { tipo: 'sala-resultado'; texto: string; azar: boolean }
   | { tipo: 'cristais'; valor: number }
   | { tipo: 'portas'; portas: Porta[] }
   | { tipo: 'loja'; itens: ItemLoja[] }
@@ -247,11 +281,11 @@ export const andarDeChefe = (andar: number, modo: Modo) => (modo === 'torre' ? a
 export function migrarPartida(p: unknown): Partida | null {
   const q = p as Partial<Partida> & { versao?: number }
   if (!q || typeof q !== 'object') return null
-  if (q.versao === 3) return q as Partida
+  if (q.versao === 3) return { ...(q as Partida), sala: (q as Partida).sala ?? null }
   if (q.versao !== 2) return null
   const v = q as unknown as Partida
   return {
-    ...v, versao: 3, modo: 'masmorra', ouro: 0, cristais: 0, categoria: 'misto', patronoDaSala: null, portas: [], loja: [], sabio: [],
+    ...v, versao: 3, modo: 'masmorra', ouro: 0, cristais: 0, categoria: 'misto', patronoDaSala: null, portas: [], loja: [], sabio: [], sala: null,
     ajudaUsada: false, renascerUsado: false, critGarantido: false, talentos: {}, torreConcluida: false, vencidos: [],
     inimigo: { ...v.inimigo, brasas: 0, dividido: false },
     atual: v.atual && { ...v.atual, carregado: false, brilhante: false },
@@ -389,7 +423,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
       sequencia: 0, sequenciaLimpa: 0, melhorSequencia: 0, pontos: 0, acertos: 0, erros: 0, assistidos: 0,
       encaixes, reliquias: [...h.reliquias], imortalUsado: false, pocao: 0, recompensas: [], derrubaram: [],
       derrotados: 0, chefesDerrotados: 0, venceu: false, danoSofrido: 0, danoEvitado: 0, curaTotal: 0,
-      ouro: 15 * Math.min(3, t.ouro ?? 0), cristais: 0, categoria: 'misto', patronoDaSala: null, portas: [], loja: [], sabio: [],
+      ouro: 15 * Math.min(3, t.ouro ?? 0), cristais: 0, categoria: 'misto', patronoDaSala: null, portas: [], loja: [], sabio: [], sala: null,
       ajudaUsada: false, renascerUsado: false, critGarantido: false, talentos: t, torreConcluida: false, vencidos: [], heroi: h.id,
     }
     const { inimigo, ciclo } = inimigoDoAndar(1, base.sementeBase, modo)
@@ -829,6 +863,12 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const portas: Porta[] = []
     if (rnd() < 0.22 && e.ouro >= 35) portas.push({ tipo: 'loja' })
     if (rnd() < 0.16) portas.push({ tipo: 'sabio' })
+    // salas de evento: no máximo uma por corredor, a partir do 2º andar (a secreta, rara, do 3º)
+    if (e.andar >= 1 && portas.length < n - 1) {
+      const u = rnd()
+      const sala: TipoSala | null = e.andar >= 3 && u < 0.05 ? 'secreta' : u < 0.15 ? 'evento' : u < 0.25 ? 'bau' : u < 0.34 ? 'curandeira' : u < 0.43 && e.ouro >= 35 ? 'ferreiro' : null
+      if (sala) portas.push({ tipo: 'sala', sala })
+    }
     const pesos: Array<[CategoriaPorta, number]> = [
       ['misto', 3], ['poder', 2], ['reliquia', 2], ['bencao', 2.4], ['cura', e.vida < e.vidaMax * 0.5 ? 3 : 1], ['ouro', 1.2],
     ]
@@ -850,14 +890,14 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
   function irParaPortas(e: Partida, eventos: Evento[]): Partida {
     const [portas, semente] = gerarPortas(e)
     eventos.push({ tipo: 'portas', portas })
-    return { ...e, semente, fase: 'portas', portas, recompensas: [], loja: [], sabio: [] }
+    return { ...e, semente, fase: 'portas', portas, recompensas: [], loja: [], sabio: [], sala: null }
   }
 
   /** Avança para o próximo andar: novo adversário, efeitos de início de confronto e o primeiro flashcard. */
   function avancar(e: Partida, categoria: CategoriaPorta, patrono: Patrono | null, eventos: Evento[]): Resultado {
     const antes = inimigoAtual(e).cenario
     const andar = e.andar + 1
-    e = { ...e, andar, categoria, patronoDaSala: patrono, portas: [], loja: [], sabio: [], inimigo: prepararInimigo(andar, e.sementeBase, e.modo) }
+    e = { ...e, andar, categoria, patronoDaSala: patrono, portas: [], loja: [], sabio: [], sala: null, inimigo: prepararInimigo(andar, e.sementeBase, e.modo) }
     const { inimigo, ciclo } = inimigoDoAndar(andar, e.sementeBase, e.modo)
     if (e.reliquias.includes('lupa')) e = { ...e, encaixes: equipar(e.encaixes, 'pista', RECOMPENSAS.lupa.v.cargas)[0] }
     if (e.reliquias.includes('baluarte')) e = { ...e, encaixes: equipar(e.encaixes, 'barreira', RECOMPENSAS.baluarte.v.cargas)[0] }
@@ -876,6 +916,11 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
       const [itens, semente] = montarLoja(p)
       eventos.push({ tipo: 'loja', itens })
       return { estado: { ...p, semente, fase: 'loja', loja: itens, portas: [] }, eventos }
+    }
+    if (porta.tipo === 'sala') {
+      const [sala, semente] = montarSala(p, porta.sala)
+      eventos.push({ tipo: 'sala', sala })
+      return { estado: { ...p, semente, fase: 'sala', sala, portas: [] }, eventos }
     }
     if (porta.tipo === 'sabio') {
       const [ofertas, semente] = ofertasDoSabio(p)
@@ -935,6 +980,105 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     return avancar(e, 'misto', null, eventos)
   }
 
+  /** Uma relíquia rara ou melhor, ainda disponível, sorteada pelo peso (para o baú e a sala secreta). */
+  function reliquiaSorteada(p: Partida, s: number, minimas: string[]): [Recompensa | null, number] {
+    const lista = RELIQUIAS.filter((r) => disponivel(p, r) && !RECOMPENSAS[r].requer && minimas.includes(RECOMPENSAS[r].raridade))
+    if (!lista.length) return [null, s]
+    const [u, q] = sortear(s)
+    return [lista[Math.floor(u * lista.length)], q]
+  }
+
+  /** Monta a sala: opções com custo e efeito. Os textos falam com o residente, sem anatomia nos enfeites. */
+  function montarSala(p: Partida, tipo: TipoSala): [Sala, number] {
+    let s = p.semente
+    const ato = Math.floor(p.andar / 3)
+    if (tipo === 'ferreiro') {
+      return [{ tipo, titulo: 'Forja do Mestre Ferreiro', icone: 'bigorna', fala: 'Placa torta não consolida. Deixa que eu acerto o teu equipamento.', opcoes: [
+        { rotulo: 'Temperar a armadura', detalhe: '+10 de vida máxima e cura 10.', icone: 'escudo', custoOuro: 40, efeitos: [{ tipo: 'vidaMax', valor: 10 }, { tipo: 'cura', fracao: 0.1 }] },
+        { rotulo: 'Reforçar os poderes', detalhe: '+1 carga em cada poder equipado.', icone: 'martelo', custoOuro: 35, precisaPoder: true, efeitos: [{ tipo: 'cargas', valor: 1 }] },
+        { rotulo: 'Só olhar a forja', detalhe: 'Segue para o próximo andar.', icone: 'porta', efeitos: [] },
+      ] }, s]
+    }
+    if (tipo === 'curandeira') {
+      return [{ tipo, titulo: 'Irmã do Calo Ósseo', icone: 'frasco', fala: 'Senta, colega. Ninguém passa de ato com a vida no vermelho.', opcoes: [
+        { rotulo: 'Curativo da casa', detalhe: 'Recupera 30% da vida máxima.', icone: 'coracao2', efeitos: [{ tipo: 'cura', fracao: 0.3 }] },
+        { rotulo: 'Tratamento completo', detalhe: 'Recupera 70% da vida máxima.', icone: 'pocao', custoOuro: 45, efeitos: [{ tipo: 'cura', fracao: 0.7 }] },
+        { rotulo: 'Aprender a técnica', detalhe: `+${8 + ato * 2} cristais de conhecimento.`, icone: 'livro', efeitos: [{ tipo: 'cristais', valor: 8 + ato * 2 }] },
+      ] }, s]
+    }
+    if (tipo === 'bau') {
+      const [rel, s2] = reliquiaSorteada(p, s, ['incomum', 'rara']); s = s2
+      const tesouro: EfeitoSala[] = [{ tipo: 'ouro', valor: 40 + ato * 8 }, ...(rel ? [{ tipo: 'recompensa', id: rel } as EfeitoSala] : [])]
+      return [{ tipo, titulo: 'Baú esquecido', icone: 'bolsa', fala: 'Um baú de instrumental, trancado há anos. Pode ter tesouro. Pode ter mola.', opcoes: [
+        { rotulo: 'Abrir o baú', detalhe: `Moedas${rel ? ' e uma relíquia' : ''}. Uma em cada quatro vezes, a mola fere (−12% da vida).`, icone: 'bolsa', efeitos: tesouro,
+          azar: { chance: 0.25, efeitos: [{ tipo: 'perdeVida', fracao: 0.12 }, { tipo: 'ouro', valor: 20 + ato * 4 }], texto: 'Era armadilha! A mola feriu, mas sobraram algumas moedas.' } },
+        { rotulo: 'Forçar com cuidado', detalhe: `Só as moedas, sem risco (${20 + ato * 4}).`, icone: 'moeda', efeitos: [{ tipo: 'ouro', valor: 20 + ato * 4 }] },
+        { rotulo: 'Deixar fechado', detalhe: 'Segue para o próximo andar.', icone: 'porta', efeitos: [] },
+      ] }, s]
+    }
+    if (tipo === 'secreta') {
+      const [a, s2] = reliquiaSorteada(p, s, ['epica', 'lendaria']); s = s2
+      const opcoes: OpcaoSala[] = []
+      if (a) opcoes.push({ rotulo: RECOMPENSAS[a].nome, detalhe: RECOMPENSAS[a].texto, icone: RECOMPENSAS[a].icone, efeitos: [{ tipo: 'recompensa', id: a }] })
+      opcoes.push({ rotulo: 'Cofre do arquivo', detalhe: `+${90 + ato * 10} moedas.`, icone: 'moeda', efeitos: [{ tipo: 'ouro', valor: 90 + ato * 10 }] })
+      opcoes.push({ rotulo: 'Biblioteca proibida', detalhe: `+${20 + ato * 3} cristais e cura 20%.`, icone: 'livro', efeitos: [{ tipo: 'cristais', valor: 20 + ato * 3 }, { tipo: 'cura', fracao: 0.2 }] })
+      return [{ tipo, titulo: 'Sala secreta', icone: 'porta', fala: 'Uma parede rachada cede. Quase ninguém chega aqui: escolha um tesouro.', opcoes }, s]
+    }
+    // encontros pelo caminho
+    const [u, s2] = sortear(s); s = s2
+    const encontros: Array<Omit<Sala, 'tipo' | 'icone'> & { icone: string }> = [
+      { titulo: 'Fonte de água clara', icone: 'frasco', fala: 'Uma fonte limpa no meio da pedra. Dá para beber ou guardar para depois.', opcoes: [
+        { rotulo: 'Beber agora', detalhe: 'Recupera 25% da vida máxima.', icone: 'coracao2', efeitos: [{ tipo: 'cura', fracao: 0.25 }] },
+        { rotulo: 'Encher o cantil', detalhe: 'Ganha uma Poção nos encaixes.', icone: 'pocao', efeitos: [{ tipo: 'recompensa', id: 'pocao' as Recompensa }] },
+      ] },
+      { titulo: 'Residente perdido', icone: 'lanterna', fala: 'Um R1 perdido pede ajuda para achar a saída. Em troca, conta o que caiu na prova dele.', opcoes: [
+        { rotulo: 'Guiar até a escada', detalhe: `Custa 10% da vida. +${16 + ato * 3} cristais.`, icone: 'livro', custoVida: 0.1, efeitos: [{ tipo: 'cristais', valor: 16 + ato * 3 }] },
+        { rotulo: 'Dar umas moedas', detalhe: `Custa 20 moedas. +${10 + ato * 2} cristais.`, icone: 'moeda', custoOuro: 20, efeitos: [{ tipo: 'cristais', valor: 10 + ato * 2 }] },
+        { rotulo: 'Seguir viagem', detalhe: 'Nada muda.', icone: 'porta', efeitos: [] },
+      ] },
+      { titulo: 'Pedra de amolar antiga', icone: 'martelo', fala: 'Uma pedra de amolar gasta, ainda boa. Afiar dói nos dedos.', opcoes: [
+        { rotulo: 'Afiar tudo', detalhe: 'Custa 15% da vida. +1 carga em cada poder.', icone: 'espada', custoVida: 0.15, precisaPoder: true, efeitos: [{ tipo: 'cargas', valor: 1 }] },
+        { rotulo: 'Levar a pedra', detalhe: 'Vende depois por moedas (+30).', icone: 'moeda', efeitos: [{ tipo: 'ouro', valor: 30 }] },
+      ] },
+      { titulo: 'Pilha de prontuários', icone: 'pergaminho', fala: 'Prontuários antigos espalhados no chão. Alguém estudou muito aqui.', opcoes: [
+        { rotulo: 'Estudar os casos', detalhe: `+${14 + ato * 3} cristais.`, icone: 'livro', efeitos: [{ tipo: 'cristais', valor: 14 + ato * 3 }] },
+        { rotulo: 'Vasculhar as gavetas', detalhe: `+${30 + ato * 5} moedas.`, icone: 'moeda', efeitos: [{ tipo: 'ouro', valor: 30 + ato * 5 }] },
+      ] },
+    ]
+    const ev = encontros[Math.floor(u * encontros.length)]
+    return [{ tipo, ...ev }, s]
+  }
+
+  function aplicarEfeitoSala(e: Partida, f: EfeitoSala, eventos: Evento[]): Partida {
+    if (f.tipo === 'cura') return curar(e, e.vidaMax * f.fracao, 'sala', eventos)
+    if (f.tipo === 'ouro') return ganharOuro(e, f.valor, 'sala', eventos)
+    if (f.tipo === 'cristais') return ganharCristais(e, f.valor, eventos)
+    if (f.tipo === 'vidaMax') return { ...e, vidaMax: e.vidaMax + f.valor, vida: e.vida + f.valor }
+    if (f.tipo === 'cargas') return { ...e, encaixes: e.encaixes.map((x) => ({ ...x, carga: x.carga + f.valor })) }
+    if (f.tipo === 'perdeVida') return { ...e, vida: Math.max(1, e.vida - Math.round(e.vidaMax * f.fracao)) }
+    return aplicarRecompensa(e, f.id, eventos)
+  }
+
+  /** Escolhe uma opção da sala (paga o custo, aplica os efeitos ou o azar) e segue para o próximo andar. */
+  function escolherNaSala(p: Partida, k: number): Resultado {
+    const sala = p.sala, o = sala?.opcoes[k]
+    if (p.fase !== 'sala' || !sala || !o) return nada(p)
+    if (o.custoOuro && p.ouro < o.custoOuro) return nada(p)
+    if (o.precisaPoder && !p.encaixes.length) return nada(p)
+    const eventos: Evento[] = []
+    let e: Partida = { ...p, sala: null }
+    if (o.custoOuro) e = { ...e, ouro: e.ouro - o.custoOuro }
+    if (o.custoVida) e = { ...e, vida: Math.max(1, e.vida - Math.round(e.vidaMax * o.custoVida)) }
+    let efeitos = o.efeitos, azar = false
+    if (o.azar) {
+      const [u, s] = sortear(e.semente); e = { ...e, semente: s }
+      if (u < o.azar.chance) { efeitos = o.azar.efeitos; azar = true; eventos.push({ tipo: 'sala-resultado', texto: o.azar.texto, azar: true }) }
+    }
+    for (const f of efeitos) e = aplicarEfeitoSala(e, f, eventos)
+    if (!azar && efeitos.length) eventos.push({ tipo: 'sala-resultado', texto: o.rotulo, azar: false })
+    return avancar(e, 'misto', null, eventos)
+  }
+
   /** Depois de ler o verso: próximo flashcard (ou nada, se a partida pede outra tela). */
   function seguir(p: Partida): Resultado {
     if (p.fase !== 'resposta') return nada(p)
@@ -948,7 +1092,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
   }
 
   return {
-    novaPartida, responder, encerrar, usarPista, usarPoder, escolher, entrar, comprarNaLoja, sairDaLoja, aceitarSabio, seguir,
+    novaPartida, responder, encerrar, usarPista, usarPoder, escolher, entrar, comprarNaLoja, sairDaLoja, aceitarSabio, escolherNaSala, seguir,
     intencao, atributos, inimigoAtual, carta,
   }
 }
