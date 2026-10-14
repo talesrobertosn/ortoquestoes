@@ -2073,3 +2073,73 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 /* sempre um pouco entreabertas: a luz de dentro escapa pela fresta e convida a escolher */
 .fc-portal__folha--e { transform: perspective(520px) rotateY(-9deg); }
 .fc-portal__folha--d { transform: perspective(520px) rotateY(9deg); }
+
+/* ============================================================ Golpes em pixel art (14/10/2026)
+   A lâmina de luz do crítico agora é a espada gigante em pixel art (canvas);
+   aqui fica só o véu que escurece a tela por um instante. */
+.fc-lamina i { display: none; }
+
+/* Terremoto: o crítico que bate no chão sacode a arena de verdade (vertical e horizontal). */
+.fc-terremoto { animation: fc-terremoto .72s linear; }
+@keyframes fc-terremoto {
+  8% { transform: translate(calc(var(--tremor, 1) * -9px), calc(var(--tremor, 1) * 7px)); }
+  16% { transform: translate(calc(var(--tremor, 1) * 8px), calc(var(--tremor, 1) * -6px)); }
+  26% { transform: translate(calc(var(--tremor, 1) * -7px), calc(var(--tremor, 1) * 5px)); }
+  38% { transform: translate(calc(var(--tremor, 1) * 6px), calc(var(--tremor, 1) * -4px)); }
+  52% { transform: translate(calc(var(--tremor, 1) * -4px), calc(var(--tremor, 1) * 3px)); }
+  68% { transform: translate(calc(var(--tremor, 1) * 3px), calc(var(--tremor, 1) * -2px)); }
+  84% { transform: translate(-1px, 1px); }
+}
+
+/* Investida do crítico: o adversário cresce, vem até o meio da tela e bate.
+   --ix/--iy (deslocamento até o ponto da batida) e --ie (escala) vêm da Arena. */
+.fc-ator--inimigo[class*="fc-investida--"] { z-index: 40; }
+.fc-investida--pisao { animation: fc-investida-pisao .82s cubic-bezier(.3, 0, .3, 1) both; }
+.fc-investida--salto { animation: fc-investida-salto .82s cubic-bezier(.3, 0, .3, 1) both; }
+.fc-investida--bote { animation: fc-investida-bote .82s cubic-bezier(.2, 0, .2, 1) both; }
+@keyframes fc-investida-pisao {
+  0% { transform: none; }
+  16% { transform: translate(calc(var(--ix) * -.05), 4px) scale(.94, 1.04); }
+  44% { transform: translate(calc(var(--ix) * .8), calc(var(--iy) - 70px)) scale(var(--ie)); }
+  54% { transform: translate(var(--ix), var(--iy)) scale(calc(var(--ie) * 1.08), calc(var(--ie) * .88)); }
+  64% { transform: translate(var(--ix), var(--iy)) scale(var(--ie)); }
+  78% { transform: translate(var(--ix), var(--iy)) scale(var(--ie)); }
+  100% { transform: none; }
+}
+@keyframes fc-investida-salto {
+  0% { transform: none; }
+  14% { transform: translateY(6px) scale(1.12, .84); }
+  42% { transform: translate(calc(var(--ix) * .7), calc(var(--iy) - 120px)) scale(calc(var(--ie) * .92), calc(var(--ie) * 1.1)); }
+  54% { transform: translate(var(--ix), var(--iy)) scale(calc(var(--ie) * 1.2), calc(var(--ie) * .78)); }
+  64% { transform: translate(var(--ix), var(--iy)) scale(var(--ie)); }
+  80% { transform: translate(var(--ix), var(--iy)) scale(var(--ie)); }
+  100% { transform: none; }
+}
+@keyframes fc-investida-bote {
+  0% { transform: none; }
+  18% { transform: translateX(calc(var(--ix) * -.08)) scale(.9, 1.06); }
+  36% { transform: translate(var(--ix), var(--iy)) scale(calc(var(--ie) * 1.1), calc(var(--ie) * .94)); }
+  70% { transform: translate(var(--ix), var(--iy)) scale(var(--ie)); }
+  100% { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fc-terremoto, .fc-investida--pisao, .fc-investida--salto, .fc-investida--bote { animation: none !important; }
+}
+
+/* ---------- Envenenado (superpoder das serpentes) ---------- */
+.fc-envenenado { position: absolute; left: 50%; top: -6px; width: 48px; height: 68px; margin-left: -24px; z-index: 3; pointer-events: none;
+  background-repeat: no-repeat; background-size: 384px 68px; image-rendering: pixelated; animation: fc-bolhas .88s steps(8) infinite; }
+@keyframes fc-bolhas { to { background-position: -384px 0; } }
+.fc-ator--envenenado .fc-ator__corpo { filter: drop-shadow(0 0 5px rgba(122, 224, 74, .55)); animation: fc-pulso-veneno 1.6s ease-in-out infinite; }
+@keyframes fc-pulso-veneno { 50% { filter: drop-shadow(0 0 9px rgba(122, 224, 74, .85)) saturate(1.15) hue-rotate(-12deg); } }
+.fc-anim-veneno { animation: fc-dano-veneno .6s ease-out; }
+@keyframes fc-dano-veneno { 0%, 100% { transform: none; } 25% { transform: translateX(-3px) scaleY(.96); filter: brightness(1.2) sepia(1) hue-rotate(50deg) saturate(3); } 60% { transform: translateX(2px); } }
+.fc-veneno-selo { display: flex; align-items: center; gap: 6px; margin-top: 3px; padding: 2px 8px 2px 6px; border-radius: 999px; width: max-content; max-width: 100%;
+  font: 600 11px/1.3 var(--fc-ui); color: #e6ffd0; background: linear-gradient(#24411c, #142a12); box-shadow: inset 0 0 0 1.5px #6fbf3e, 0 0 10px rgba(122, 224, 74, .35); }
+.fc-veneno-selo b { color: #b8ff8a; text-transform: uppercase; letter-spacing: .06em; font-size: 10px; }
+.fc-veneno-selo > span:not(.fc-veneno-selo__conta) { opacity: .85; white-space: nowrap; }
+.fc-veneno-selo__conta { display: inline-flex; gap: 2px; }
+.fc-veneno-selo__conta i { width: 7px; height: 7px; border-radius: 2px; background: #2c4a22; box-shadow: inset 0 0 0 1px #5a8a3a; }
+.fc-veneno-selo__conta i.feito { background: #b8ff8a; box-shadow: 0 0 6px #8af05a; }
+@media (max-width: 520px) { .fc-veneno-selo > span:not(.fc-veneno-selo__conta) { display: none; } }
+@media (prefers-reduced-motion: reduce) { .fc-envenenado, .fc-ator--envenenado .fc-ator__corpo { animation: none; } }

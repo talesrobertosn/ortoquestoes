@@ -65,6 +65,12 @@ export interface Inimigo {
   rouba?: boolean
   /** Uma vez, abaixo desta fração da vida, se divide e ganha barreira (fração da vida máxima). */
   divide?: { abaixoDe: number; barreira: number }
+  /**
+   * Superpoder do veneno: o golpe que acerta deixa o herói Envenenado. Envenenado,
+   * cada flashcard respondido tira este tanto de vida (nunca abaixo de 1), até
+   * você acertar VENENO.acertos flashcards seguidos (um erro recomeça a conta).
+   */
+  envenena?: number
   /** Moedas a mais quando cai (o Mímico guarda o tesouro). */
   ouroExtra?: number
   /** Só aparece num andar exato de um modo (o dragão do topo da Torre). */
@@ -84,8 +90,8 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'serpente-do-ciatico', nome: 'Serpente do Ciático', sprite: 'serpente', cenario: 'masmorra', nivel: 'comum', andarMin: 2,
-    vida: 100, forca: 3.5, armadura: 0, paciencia: 10, porErroSeguido: 3, critico: 0.08, especialidade: 'coluna',
-    lema: 'Ela espera o primeiro erro.', habilidade: 'Veneno: cada erro seguido causa +3 de dano.',
+    vida: 100, forca: 3.5, armadura: 0, paciencia: 10, porErroSeguido: 3, critico: 0.08, envenena: 2, especialidade: 'coluna',
+    lema: 'Ela espera o primeiro erro.', habilidade: 'Picada venenosa: envenena (−2 por flashcard até 5 acertos seguidos) e cada erro seguido causa +3.',
   },
   {
     id: 'elemental-do-calcio', nome: 'Elemental do Cálcio', sprite: 'golem', variante: 'cristal', cenario: 'masmorra', nivel: 'comum', andarMin: 4,
@@ -94,8 +100,8 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'vibora-do-mediano', nome: 'Víbora do Mediano', sprite: 'serpente', variante: 'eletrica', cenario: 'masmorra', nivel: 'comum', andarMin: 4,
-    vida: 105, forca: 3.4, armadura: 0, paciencia: 9, porErroSeguido: 2, critico: 0.14, especialidade: 'mao',
-    lema: 'O choque vem antes da dor.', habilidade: 'Críticos frequentes (avisados na intenção) e veneno +2.',
+    vida: 105, forca: 3.4, armadura: 0, paciencia: 9, porErroSeguido: 2, critico: 0.14, envenena: 2, especialidade: 'mao',
+    lema: 'O choque vem antes da dor.', habilidade: 'Críticos frequentes (avisados na intenção) e picada que envenena (−2 por flashcard até 5 acertos seguidos).',
   },
   {
     id: 'golem-de-cimento', nome: 'Golem de Cimento Ósseo', sprite: 'golem', variante: 'cimento', cenario: 'campo', nivel: 'comum', andarMin: 7,
@@ -144,8 +150,8 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'aranha-dos-ligamentos', nome: 'Aranha dos Ligamentos', sprite: 'aranha', cenario: 'caverna', nivel: 'comum', andarMin: 5,
-    vida: 95, forca: 3.3, armadura: 0, paciencia: 9, porErroSeguido: 3, critico: 0.1, rouba: true, especialidade: 'joelho',
-    lema: 'Tece a teia entre os seus erros.', habilidade: 'Veneno +3 por erro seguido e rouba 1 carga de poder.',
+    vida: 95, forca: 3.3, armadura: 0, paciencia: 9, porErroSeguido: 3, critico: 0.1, rouba: true, envenena: 2, especialidade: 'joelho',
+    lema: 'Tece a teia entre os seus erros.', habilidade: 'Picada que envenena, veneno +3 por erro seguido e rouba 1 carga de poder.',
   },
   {
     id: 'cavaleiro-da-tala', nome: 'Cavaleiro da Tala', sprite: 'cavaleiro', cenario: 'forja', nivel: 'comum', andarMin: 6,
@@ -263,9 +269,9 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'leviata-dos-tendoes', nome: 'Leviatã dos Tendões', sprite: 'leviata', cenario: 'templo', nivel: 'chefe', andarMin: 24,
-    vida: 340, forca: 4.5, armadura: 2, paciencia: 15, porErroSeguido: 3, critico: 0.14, chefe: true, rajada: 3, regenera: { porRodada: 5, total: 50 }, especialidade: 'mao',
+    vida: 340, forca: 4.5, armadura: 2, paciencia: 15, porErroSeguido: 3, critico: 0.14, chefe: true, rajada: 3, regenera: { porRodada: 5, total: 50 }, envenena: 3, especialidade: 'mao',
     fase2: { abaixoDe: 0.4, nome: 'Maré alta', forca: 5.5, armadura: 0 },
-    lema: 'Desliza na bainha e puxa para o fundo.', habilidade: 'Três Mordidas, regenera e Veneno +3.',
+    lema: 'Desliza na bainha e puxa para o fundo.', habilidade: 'Três Mordidas, regenera e envenena (−3 por flashcard até 5 acertos seguidos).',
   },
   {
     id: 'necromante-da-pseudoartrose', nome: 'Necromante da Pseudoartrose', sprite: 'espectro', variante: 'necromante', cenario: 'catacumba', nivel: 'chefe', andarMin: 27,
