@@ -105,8 +105,7 @@ function partidaSalva(modo: Modo): Partida | null {
 
 /**
  * Partida nova com a corrida aberta no servidor. A corrida é a "vida" da conta grátis
- * (uma por 24 h, no lugar dos 10 flashcards da Biblioteca; parte 19 do SQL) e vale para o
- * ranking quando ele estiver ligado.
+ * (uma por 24 h, parte 19 do SQL) e vale para o ranking quando ele estiver ligado.
  */
 function comCorrida(p: Partida): Partida {
   if (!FLASHCARDS_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
@@ -221,8 +220,6 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
   const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
   const [bloqueio, definirBloqueio] = useState<LimiteCripta | null>(null)
-  /** Conta grátis: a partida é a vida grátis destas 24 h (vem do servidor na primeira resposta). */
-  const [vidaGratis, definirVidaGratis] = useState(false)
   const [lamina, definirLamina] = useState(0)
   const [ajuda, definirAjuda] = useState<number | null>(null)
   const [tituloChefe, definirTituloChefe] = useState<Inimigo | null>(null)
@@ -933,7 +930,6 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
       const r = q.idCorrida ? await autorizarFlashcardCripta(q.atual!.id, chave, q.idCorrida, q.modo) : { permitido: true, ilimitado: true, restantes: null, liberaEm: '' }
       validando.current = false
       if (!r.permitido) { definirBloqueio(r); return }
-      definirVidaGratis(Boolean(r.cripta && !r.ilimitado))
       // sem a função nova no banco, o flashcard foi autorizado pelo limite antigo: liga à corrida à parte
       if (!r.cripta && q.idCorrida) void vincularFlashcard(chave, q.idCorrida)
       if (partidaRef.current !== q) return
@@ -1113,7 +1109,6 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                       })}
                     </span>
                     <b>Andar {partida.andar}</b>{ciclo ? ` · ato ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts <span className="fc-bolsa" title={`${partida.ouro} moedas para a Caixeira do Arsenal · ${cristaisAltar} cristais no Altar`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>{cansaco < 1 && <span className="fc-desgaste" title={`Desgaste: as curas rendem ${Math.round(cansaco * 100)}% neste trecho`}>cura {Math.round(cansaco * 100)}%</span>}
-                    {vidaGratis && <span className="fc-tentativa" title="Conta grátis: a cada 24 horas, uma vida na Cripta ou 10 flashcards na Biblioteca. Assinantes jogam sem limite.">Vida grátis de hoje</span>}
                   </span>
                 )}
               </>
@@ -1351,7 +1346,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             <div className="fc-janela">
               <h2 id="fc-limite-titulo">{bloqueio.falha ? 'Não deu para validar' : 'Limite grátis de hoje'}</h2>
               <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.'
-                : bloqueio.cripta ? `A cada 24 horas, a conta grátis joga uma vida na Cripta ou faz 10 flashcards na Biblioteca. ${bloqueio.motivo ?? ''}${bloqueio.liberaEm ? ` Libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}.` : ''} Assinantes jogam sem limite.`
+                : bloqueio.cripta ? `Sua jornada grátis na Cripta acabou por hoje${bloqueio.liberaEm ? `; volte depois das ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`
                 : `Você usou os 10 flashcards grátis destas 24 horas${bloqueio.liberaEm ? `; libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`}</p>
               <div className="fc-janela__botoes">
                 <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirBloqueio(null)}>{bloqueio.falha ? 'Tentar de novo' : 'Agora não'}</button>

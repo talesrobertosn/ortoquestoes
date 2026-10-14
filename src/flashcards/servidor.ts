@@ -44,9 +44,10 @@ export async function autorizarFlashcard(idFlashcard: string, chave = novaChave(
 export interface LimiteCripta extends LimiteFlashcard { cripta?: boolean }
 
 /**
- * Cripta (parte 19 do SQL, regra de 14/10/2026): a cada 24 horas, a conta grátis faz 10 flashcards
- * na Biblioteca OU joga uma vida (uma corrida) na Cripta. Morrer ou recomeçar abre outra corrida,
- * que só vale na janela seguinte. Assinante sem limite.
+ * Cripta (parte 19 do SQL, regra de 14/10/2026): a conta grátis joga uma vida (uma corrida) a cada
+ * 24 horas, sem limite de andares. Morrer ou recomeçar abre outra corrida, que só vale na janela
+ * seguinte. A Biblioteca segue à parte, com 10 por 24 h. Assinante sem limite. A regra não aparece
+ * escrita no site: a pessoa descobre jogando.
  * Enquanto a função não existir no banco (SQL ainda não colado), cai no limite antigo.
  */
 export async function autorizarFlashcardCripta(idFlashcard: string, chave: string, corrida: string, modo: 'masmorra' | 'torre'): Promise<LimiteCripta> {

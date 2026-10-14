@@ -18,7 +18,7 @@ export function CartaoCripta({ variante = 'venda', limites = false }: { variante
         <p>Responda, veja o verso e diga se errou, hesitou ou sabia: a próxima revisão se marca sozinha. Para quem gosta de jogo, os mesmos flashcards viram o <em>Torneio de Flashcards</em>.</p>
         <ul className="cripta-cartao__lista">
           <li>Flashcards tirados das questões comentadas do acervo, por assunto</li>
-          <li>{limites ? 'Conta grátis: 10 flashcards ou uma vida na Cripta a cada 24 horas · Assinante: sem limite' : 'Abertos a todas as contas nesta fase'}</li>
+          <li>{limites ? 'Assinante: sem limite' : 'Abertos a todas as contas nesta fase'}</li>
           <li>Desempenho, cronograma e ranking único do Torneio</li>
         </ul>
       </div>
