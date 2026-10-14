@@ -21,8 +21,8 @@
   --fc-titulo: 'Cinzel', 'Trajan Pro', Georgia, serif;
   --fc-texto: 'Alegreya', Georgia, 'Times New Roman', serif;
   --fc-ui: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --fc-rapido: 160ms;
-  --fc-medio: 280ms;
+  --fc-rapido: 200ms;
+  --fc-medio: 320ms;
   --fc-sombra-objeto: 0 18px 34px rgba(0, 0, 0, .55), 0 4px 10px rgba(0, 0, 0, .45);
   color-scheme: dark;
 }
@@ -133,7 +133,7 @@
 
 /* ============================================================ Batalha */
 .fc-batalha { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 6px; padding: 2px clamp(14px, 2vw, 28px) 14px; }
-.fc-treme { animation: fc-tremer .42s linear; }
+.fc-treme { animation: fc-tremer .46s ease-in-out; }
 @keyframes fc-tremer {
   15% { transform: translate(calc(var(--tremor, 1) * -8px), calc(var(--tremor, 1) * 2px)); }
   35% { transform: translate(calc(var(--tremor, 1) * 7px), calc(var(--tremor, 1) * -2px)); }
@@ -166,16 +166,18 @@
 .fc-ator--estagio-5 .fc-ator__quadros { filter: drop-shadow(0 0 1px rgba(0, 0, 0, .6)) drop-shadow(0 0 6px rgba(255, 220, 120, .7)); }
 .fc-inimigo--fase2 .fc-ator__aura, .fc-inimigo--furia .fc-ator__aura { opacity: 1; background: radial-gradient(closest-side, rgba(255, 70, 40, .45), transparent); animation: fc-aura 1s ease-in-out infinite; }
 @keyframes fc-aura { 50% { transform: scale(1.08); opacity: .7; } }
-.fc-anim-atingido { animation: fc-atingido .62s linear; }
-.fc-anim-atingido-forte { animation: fc-atingido-forte .62s linear; }
+/* ease-in-out em cada trecho: o tremor balança e amortece (o linear fazia zigue-zague de serra) */
+.fc-anim-atingido { animation: fc-atingido .66s ease-in-out; }
+.fc-anim-atingido-forte { animation: fc-atingido-forte .74s ease-in-out; }
 @keyframes fc-atingido { 0% { filter: brightness(4) saturate(0); } 18% { transform: translateX(-7px) rotate(-4deg); } 40% { transform: translateX(6px) rotate(3deg); filter: brightness(1.8); } 65% { transform: translateX(-3px); } 100% { filter: none; } }
 @keyframes fc-atingido-forte { 0% { filter: brightness(5) saturate(0); transform: scale(1.06, .92); } 15% { transform: translateX(-12px) rotate(-7deg) scale(.96, 1.04); } 35% { transform: translateX(10px) rotate(5deg); filter: brightness(2) hue-rotate(-20deg); } 60% { transform: translateX(-5px) rotate(-2deg); } 100% { filter: none; } }
-.fc-anim-prepara { animation: fc-prepara .44s ease-in both; }
+.fc-anim-prepara { animation: fc-prepara .44s cubic-bezier(.3, 0, .25, 1) both; }
 @keyframes fc-prepara { 100% { transform: scale(1.06, .94) translateY(4px); filter: drop-shadow(0 0 8px #ff5a3c) brightness(1.2); } }
-.fc-ator--inimigo .fc-anim-ataca { animation: fc-ataca-baixo .44s cubic-bezier(.3, 0, .4, 1); }
-@keyframes fc-ataca-baixo { 40% { transform: translateY(26px) scale(1.14); } 100% { transform: none; } }
-.fc-ator--heroi .fc-anim-ataca { animation: fc-ataca-cima .44s cubic-bezier(.3, 0, .4, 1); }
-@keyframes fc-ataca-cima { 40% { transform: translateY(-22px) scale(1.1); } 100% { transform: none; } }
+/* o bote parte da pose de preparo (sem estalo), avança, passa um pouco do ponto na volta e assenta */
+.fc-ator--inimigo .fc-anim-ataca { animation: fc-ataca-baixo .5s ease-in-out; }
+@keyframes fc-ataca-baixo { 0% { transform: scale(1.06, .94) translateY(4px); } 34% { transform: translateY(26px) scale(1.14); } 68% { transform: translateY(-3px) scale(.98, 1.02); } 100% { transform: none; } }
+.fc-ator--heroi .fc-anim-ataca { animation: fc-ataca-cima .5s ease-in-out; }
+@keyframes fc-ataca-cima { 34% { transform: translateY(-22px) scale(1.1); } 68% { transform: translateY(3px) scale(.99, 1.01); } 100% { transform: none; } }
 .fc-anim-bloqueio .fc-ator__corpo { animation: fc-bloqueio .5s ease-out; }
 @keyframes fc-bloqueio { 30% { filter: brightness(1.8) hue-rotate(160deg); transform: scale(.94); } }
 .fc-anim-cura .fc-ator__corpo { animation: fc-cura .9s ease-out; }
@@ -257,18 +259,26 @@
 .fc-carta {
   --b1: #d8dde6; --b2: #6b7380; --b3: #3a404c; --brilho: rgba(200, 210, 230, 0);
   position: relative; width: min(620px, 100%); max-height: 100%; display: flex; min-height: 0;
-  animation: fc-compra .5s cubic-bezier(.2, .8, .25, 1.1) both;
-  transition: transform var(--fc-medio) cubic-bezier(.2, .8, .3, 1.2), filter var(--fc-medio);
+  transition: transform 360ms cubic-bezier(.22, 1, .36, 1), translate 360ms cubic-bezier(.22, 1, .36, 1), scale 360ms cubic-bezier(.22, 1, .36, 1), filter 360ms ease-out;
 }
-@keyframes fc-compra { from { transform: translate(-36%, -10%) rotate(-10deg) scale(.6); opacity: 0; } }
+/* a chegada do baralho fica numa classe que o Cartao põe só no flashcard novo:
+   na base, trocar a classe do giro fazia o navegador repetir a chegada depois de cada virada */
+.fc-carta--chega { animation: fc-compra .56s cubic-bezier(.22, 1, .36, 1) both; }
+/* cópia do flashcard anterior a caminho do descarte (Cartao.tsx, descartar) */
+.fc-carta--descartada { animation: none !important; transition: none !important; }
+.fc-carta--descartada * { animation-play-state: paused !important; }
+/* o flashcard novo desliza do baralho e assenta, sem quique */
+@keyframes fc-compra { from { transform: translate(-22%, 5%) rotate(-7deg) scale(.82); opacity: 0; } 45% { opacity: 1; } }
 .fc-carta--rara { --b1: #c8e4ff; --b2: #3a78c8; --b3: #163a6a; --brilho: rgba(95, 168, 255, .45); }
 .fc-carta--epica { --b1: #e8d0ff; --b2: #7a48c0; --b3: #3a1a6a; --brilho: rgba(176, 124, 255, .5); }
 .fc-carta--lendaria { --b1: #fff3c0; --b2: #c08a24; --b3: #6a4410; --brilho: rgba(255, 207, 90, .6); }
 .fc-carta::before { content: ""; position: absolute; inset: -16px; border-radius: 34px; background: radial-gradient(closest-side, var(--brilho), transparent); filter: blur(14px); z-index: -1; pointer-events: none; }
-.fc-carta--sai { transform: rotateY(90deg) scale(.98); transition: transform 200ms ease-in; }
-.fc-carta--entra { animation: fc-entra-face 260ms ease-out both; }
-@keyframes fc-entra-face { from { transform: rotateY(-90deg) scale(.98); } }
-.fc-carta--ataca { transform: translateY(-12px) scale(1.02); filter: drop-shadow(0 0 18px var(--brilho)) brightness(1.08); }
+/* giro (tempos em Cartao.tsx): a metade que sai acelera como página que se solta; a que entra freia e assenta */
+.fc-carta--sai { transform: rotateY(90deg) scale(.96) translateY(-6px); transition: transform 230ms cubic-bezier(.55, 0, .8, .35); }
+.fc-carta--entra { animation: fc-entra-face 340ms cubic-bezier(.16, .84, .3, 1) both; }
+@keyframes fc-entra-face { from { transform: rotateY(-90deg) scale(.96) translateY(-6px); } }
+/* o flashcard se ergue no ataque por translate/scale, para não anular o giro (que usa transform) */
+.fc-carta--ataca { translate: 0 -12px; scale: 1.02; filter: drop-shadow(0 0 18px var(--brilho)) brightness(1.08); }
 .fc-carta__borda {
   flex: 1; min-width: 0; min-height: 0; display: flex; padding: 9px; border-radius: 22px;
   background: linear-gradient(150deg, #fff 0%, var(--b1) 10%, var(--b2) 45%, var(--b1) 70%, var(--b3) 100%);
@@ -1209,8 +1219,8 @@
 .fc-intencao__gema, .fc-vida--baixa .fc-vida__trilho i { will-change: opacity; }
 
 /* ---- desempenho: golpes, bloqueio, cura e queda sem filtro (só transform e opacidade) */
-@keyframes fc-atingido { 18% { transform: translateX(-7px) rotate(-4deg); } 40% { transform: translateX(6px) rotate(3deg); } 65% { transform: translateX(-3px) rotate(-1deg); } }
-@keyframes fc-atingido-forte { 0% { transform: scale(1.06, .92); } 15% { transform: translateX(-12px) rotate(-7deg) scale(.96, 1.04); } 35% { transform: translateX(10px) rotate(5deg); } 60% { transform: translateX(-5px) rotate(-2deg); } }
+@keyframes fc-atingido { 14% { transform: translateX(-7px) rotate(-4deg) scale(.98, 1.02); } 34% { transform: translateX(5px) rotate(2.5deg); } 54% { transform: translateX(-3px) rotate(-1.2deg); } 76% { transform: translateX(1px) rotate(.4deg); } }
+@keyframes fc-atingido-forte { 0% { transform: scale(1.06, .92); } 12% { transform: translateX(-12px) rotate(-7deg) scale(.96, 1.04); } 30% { transform: translateX(9px) rotate(4.5deg); } 50% { transform: translateX(-5px) rotate(-2.2deg); } 70% { transform: translateX(2.5px) rotate(1deg); } 86% { transform: translateX(-1px); } }
 @keyframes fc-prepara { 100% { transform: scale(1.06, .94) translateY(4px); } }
 @keyframes fc-bloqueio { 30% { transform: scale(.94); } }
 @keyframes fc-cura { 30% { transform: translateY(-4px) scale(1.03); } }
@@ -2080,7 +2090,7 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 .fc-lamina i { display: none; }
 
 /* Terremoto: o crítico que bate no chão sacode a arena de verdade (vertical e horizontal). */
-.fc-terremoto { animation: fc-terremoto .72s linear; }
+.fc-terremoto { animation: fc-terremoto .76s ease-in-out; }
 @keyframes fc-terremoto {
   8% { transform: translate(calc(var(--tremor, 1) * -9px), calc(var(--tremor, 1) * 7px)); }
   16% { transform: translate(calc(var(--tremor, 1) * 8px), calc(var(--tremor, 1) * -6px)); }
@@ -2302,4 +2312,41 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
   .fc-botao-pequeno:not(:active):hover { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 2.5px rgba(233, 185, 85, .6), 0 3px 0 #0c0604, inset 0 1px 0 rgba(255, 255, 255, .18); }
   .fc-botao--secundario:not(:disabled):not(:active):hover { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #8a6a3a, 0 0 0 4px rgba(255, 230, 180, .35), 0 0 0 5.5px #0c0604, 0 6px 0 -1px #0c0604, 0 10px 18px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .15); }
   .fc-fechar:not(:active):hover { transform: none; color: #fff1c2; box-shadow: 0 0 0 2px #b98a36, 0 0 0 3px #fff1c2, 0 6px 14px rgba(0, 0, 0, .6), inset 0 2px 0 rgba(255, 255, 255, .18); }
+}
+
+/* =====================================================================
+   Movimento suave (14/10/2026). Pedido do Tales: o flashcard "sambava" ao
+   virar e os movimentos estavam duros. O flashcard desliza até o lugar novo
+   (Cartao.tsx, useDeslizar); aqui ficam o topo fixo no celular e as entradas
+   em cascata dos botões e das alternativas. "Reduzir movimento" desliga tudo.
+   ===================================================================== */
+@media (max-width: 640px) {
+  /* o verso não troca as linhas do grid: antes o painel ganhava a linha elástica e despencava ~140 px */
+  .fc-estudo:has(.fc-estudo__respondidas) { grid-template-rows: auto minmax(0, 1fr) auto; }
+  /* o flashcard fica preso pelo topo: ao virar, só a borda de baixo anda */
+  .fc-estudo__mesa { place-items: start center; }
+  .fc-mesa__palco { align-items: start; }
+}
+
+@keyframes fc-surge { from { opacity: 0; transform: translateY(12px) scale(.97); } }
+/* alternativas, respostas e botões de avaliação entram subindo, um depois do outro */
+.fc-mao .fc-slot-mao, .fc-estudo__respondidas .fc-slot-mao { animation: fc-surge .42s cubic-bezier(.22, 1, .36, 1) backwards; animation-delay: calc(var(--i, 0) * 55ms); }
+.fc-mao .fc-slot-mao:nth-child(2) { --i: 1; } .fc-mao .fc-slot-mao:nth-child(3) { --i: 2; } .fc-mao .fc-slot-mao:nth-child(4) { --i: 3; }
+.fc-estudo__botoes > :not(.fc-mao) { animation: fc-surge .4s cubic-bezier(.22, 1, .36, 1) backwards; }
+.fc-estudo__botoes > :nth-child(2) { animation-delay: 50ms; } .fc-estudo__botoes > :nth-child(3) { animation-delay: 100ms; } .fc-estudo__botoes > :nth-child(4) { animation-delay: 150ms; }
+/* certa, errada e apagada mudam de cor sem estalo */
+.fc-alternativa { transition: transform .24s cubic-bezier(.22, 1, .36, 1), box-shadow .3s ease-out, filter .35s ease-out, opacity .35s ease-out; }
+
+/* botão principal: muda de estado (Escolha → Atacar → Seguir) com um respiro, não de estalo */
+.fc-modal .fc-principal { transition: transform .22s cubic-bezier(.22, 1, .36, 1), filter .22s ease-out !important; }
+.fc-modal .fc-principal.pronto { animation: fc-botao-acende .44s cubic-bezier(.22, 1, .36, 1) !important; }
+.fc-modal .fc-principal.seguir { animation: fc-botao-acende-ouro .44s cubic-bezier(.22, 1, .36, 1) !important; }
+.fc-modal .fc-principal:disabled { animation: fc-botao-apaga .3s ease-out !important; }
+@keyframes fc-botao-acende { 0% { transform: scale(.94); } 55% { transform: scale(1.04); } }
+@keyframes fc-botao-acende-ouro { 0% { transform: scale(.94); } 55% { transform: scale(1.04); } }
+@keyframes fc-botao-apaga { from { transform: scale(1.02); opacity: .7; } }
+.fc-modal .fc-principal > * { transition: opacity .2s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fc-mao .fc-slot-mao, .fc-estudo__respondidas .fc-slot-mao, .fc-estudo__botoes > *, .fc-modal .fc-principal { animation: none !important; }
 }

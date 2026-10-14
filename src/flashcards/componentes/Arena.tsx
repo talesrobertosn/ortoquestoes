@@ -28,6 +28,7 @@ import {
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
 import { Cartao, familiasDe } from './Cartao'
+import { useDeslizar } from '../efeitos/deslizar'
 import { ComChaves } from './Chaves'
 import { Cenario, TampoMesa } from './Cenario'
 import { climaDoAndar } from '../efeitos/pintura'
@@ -246,6 +247,11 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const refMao = useRef<HTMLDivElement>(null)
   const refSlots = useRef<HTMLDivElement>(null)
   const refMesa = useRef<HTMLElement>(null)
+  // no celular, a mão some quando o flashcard vira: o herói e o botão descem deslizando
+  const refBlocoHeroi = useRef<HTMLDivElement>(null)
+  const refBlocoAcao = useRef<HTMLDivElement>(null)
+  useDeslizar(refBlocoHeroi, reduzido)
+  useDeslizar(refBlocoAcao, reduzido)
   const geracao = useRef(0)
   const idFlutuante = useRef(0)
 
@@ -1062,6 +1068,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   /* ---------- Tela ---------- */
   const fase2 = partida.inimigo.fase === 2
   const ordem = partida.atual?.ordem ?? []
+  // um flashcard por compra: responder avança a rodada, mas o flashcard da mesa é o mesmo
+  // (antes ele "chegava do baralho" de novo bem na hora da resposta, e a mão também)
+  const chaveDaMesa = partida.atual ? `${partida.atual.respondida ? partida.rodada - 1 : partida.rodada}-${partida.atual.id}` : ''
   const pistas = partida.encaixes.find((e) => e.tipo === 'pista')?.carga ?? 0
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
   // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
@@ -1200,7 +1209,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
               <div className="fc-mesa__palco" ref={refCarta}>
                 {carta && partida.atual && (
                   <Cartao
-                    chave={partida.rodada + '-' + partida.atual.id}
+                    chave={chaveDaMesa}
                     carta={carta}
                     virada={mostrado.revelada && partida.fase !== 'pergunta'}
                     dicaFrente={faixaTela === 'celular' ? 'Escolha a resposta abaixo' : faixaTela === 'deitado' ? 'Escolha a resposta ao lado' : 'Escolha a resposta na sua mão · teclas 1 a 4'}
@@ -1218,7 +1227,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
 
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
-              <div className="fc-heroi">
+              <div className="fc-heroi" ref={refBlocoHeroi}>
                 <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '') + (partida.veneno ? ' fc-ator--envenenado' : '') + (partida.grudado ? ' fc-ator--grudado' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                   {partida.veneno && <span className="fc-envenenado" aria-hidden="true" style={{ backgroundImage: `url(${recurso('flashcards/vfx/bolhas.png')})` }} />}
@@ -1279,7 +1288,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                   const m = mostrado.marcadas
                   const estado = m && m.certa >= 0 ? (pos === m.certa ? 'certa' : pos === m.escolha ? 'errada' : 'apagada') : m && pos === m.escolha ? 'jogada' : ''
                   return (
-                    <div key={partida.rodada + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
+                    <div key={chaveDaMesa + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
                       <button
                         type="button"
                         className={`fc-alternativa${carta.opcoes[opcao].trim().length <= 4 ? ' fc-alternativa--curta' : ''}${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...carta.opcoes[opcao].split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
@@ -1297,7 +1306,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                 })}
               </div>
 
-              <div className="fc-acao">
+              <div className="fc-acao" ref={refBlocoAcao}>
                 <button type="button" className={`fc-principal ${botao.classe}`} disabled={!botao.ativo} onClick={() => { tocar('confirmar'); botao.acao() }}>
                   <span className="fc-principal__runa" aria-hidden="true" />
                   <Sprite nome={partida.fase === 'resposta' ? 'porta' : 'espada'} className="fc-sprite--icone fc-principal__icone" />
