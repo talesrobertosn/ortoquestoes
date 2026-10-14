@@ -2301,5 +2301,5 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
   /* o brilho dourado do hover também não fica preso: volta à sombra de repouso de cada botão */
   .fc-botao-pequeno:not(:active):hover { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 2.5px rgba(233, 185, 85, .6), 0 3px 0 #0c0604, inset 0 1px 0 rgba(255, 255, 255, .18); }
   .fc-botao--secundario:not(:disabled):not(:active):hover { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #8a6a3a, 0 0 0 4px rgba(255, 230, 180, .35), 0 0 0 5.5px #0c0604, 0 6px 0 -1px #0c0604, 0 10px 18px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .15); }
-  .fc-fechar:not(:active):hover { transform: none; }
+  .fc-fechar:not(:active):hover { transform: none; color: #fff1c2; box-shadow: 0 0 0 2px #b98a36, 0 0 0 3px #fff1c2, 0 6px 14px rgba(0, 0, 0, .6), inset 0 2px 0 rgba(255, 255, 255, .18); }
 }
