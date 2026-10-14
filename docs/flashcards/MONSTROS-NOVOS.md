@@ -75,7 +75,7 @@ O quadro típico é de 128×128, com a âncora nos pés.
 |---|---|---|---|
 | golem, serpente, guardião, dragão, gosma (e variantes) | ✅ assados | já definidos | — |
 | herói (6 estágios) | ✅ chibi | `cavaleiro_chibi.py` | — |
-| **goblin** (Goblin da Fratura) | ⬜ arte antiga | chibi carismático | refs. 3 e 5: porrete com cravos, orelhas, olhos semicerrados |
+| **goblin** (Goblin da Fratura) | ✅ chibi (14/10) | `goblin.py` | verde-limão, olhos semicerrados, faixa de gesso, tala no braço, porrete com parafusos de osso |
 | **esqueleto** (Esqueleto do Metacarpo) | ⬜ | sóbrio e terroso | ref. 5: escudo redondo de madeira e espada curta |
 | **ent** (Guardião da Fise, chefe) | ⬜ | brutamontes HD | refs. 5 e 2: toco com um olho só, galhos-garra, musgo |
 | raptor, corvo, morcego, aranha, escaravelho | ⬜ | detalhado | ref. 1 (manchas e carapaça); a aranha pode virar o "cogumelo-aranha" da ref. 4 |
@@ -121,7 +121,7 @@ Seguem o humor do bestiário:
 
 ## Ordem sugerida
 
-1. **Goblin**, chibi (ref. 3): estreia cedo e é o mais simples.
+1. ~~**Goblin**, chibi (ref. 3)~~: feito em `scripts/sprites/goblin.py`. Ele importa as ferramentas do `cavaleiro_chibi.py` e soma rampas próprias: é o modelo mais curto para os próximos chibis.
 2. **Esqueleto**, sóbrio (ref. 5).
 3. **Ent** (Guardião da Fise), o toco de um olho só (ref. 5).
 4. **Cogumelo da Necrose**, monstro novo do Jardim (refs. 4 e 5).

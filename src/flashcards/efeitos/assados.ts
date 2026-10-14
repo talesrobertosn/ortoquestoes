@@ -52,6 +52,53 @@ export const ASSADOS: Record<string, MetaAssada> = {
    }
   }
  },
+ "goblin": {
+  "largura": 136,
+  "altura": 108,
+  "colunas": 6,
+  "ancora": [
+   60,
+   101
+  ],
+  "caixa": [
+   20,
+   31,
+   77,
+   72
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 240
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
  "golem-cimento": {
   "largura": 128,
   "altura": 128,
