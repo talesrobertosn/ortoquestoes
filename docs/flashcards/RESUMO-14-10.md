@@ -31,8 +31,8 @@ Feito para o Tales e para qualquer agente que continue o trabalho, seja Claude, 
 **Acesso** (valem quando o paywall está ligado no servidor):
 - Assinante, cortesia e administrador não têm limite.
 - **Biblioteca:** a conta grátis tem 10 flashcards a cada 24 horas.
-- **Cripta:** a conta grátis tem 3 tentativas no total, e cada partida nova gasta uma. Depois disso a Cripta fica bloqueada para ela, mas a Biblioteca continua com os 10 por 24 horas.
-  - É preciso colar no Supabase a parte 19: `supabase/colar-no-painel/sql-202610140100-parte19.sql`.
+- **Cripta (regra nova de 14/10):** a conta grátis tem uma vida a cada 24 horas e vai até onde conseguir. Morrer ou recomeçar abre outra vida, que só vale quando a janela de 24 horas virar. A Biblioteca segue à parte, com 10 por 24 horas. A regra **não aparece escrita no site**: a pessoa descobre jogando (diretriz do Tales).
+  - É preciso colar no Supabase a parte 19: `supabase/colar-no-painel/sql-202610140900-parte19.sql` (substitui a versão das 3 tentativas).
   - Enquanto a parte 19 não for colada, a Cripta segue no limite antigo de 10 por 24 horas.
 
 **Opiniões:**

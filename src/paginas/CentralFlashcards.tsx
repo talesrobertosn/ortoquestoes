@@ -5,7 +5,6 @@ import { Icone, type NomeIcone } from '../componentes/Icone'
 import { JanelaCentral } from '../componentes/JanelaCentral'
 import { recurso } from '../config'
 import { gravar, ler } from '../estado/armazenamento'
-import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
 import { revisarHoje } from '../estado/revisao'
 import { href, navegar } from '../util/rotas'
 import {
@@ -102,7 +101,6 @@ export function CentralFlashcards() {
             <a className="botao botao--ouro botao--grande" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Treinar flashcards</a>
             <a className="botao botao--principal" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={18} /> Jogar a Cripta</a>
           </div>
-          {LIMITES_HABILITADOS && <p className="cf-nota">Conta grátis: 10 flashcards a cada 24 horas. Assinante: sem limite.</p>}
         </div>
       </section>
 
