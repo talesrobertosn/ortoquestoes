@@ -363,14 +363,13 @@ export function tocar(som: Som, forca = 1, t?: Timbre) {
       abaixarMusica(0.25, 1200)
       break
     case 'espada-gigante':
-      // a lâmina enorme corta o ar (varredura que sobe), canta o aço e bate com peso no fim
-      ruido(0, 0.36, 0.34, 420, 'bandpass', 5200, 1.1)
-      nota(varia(392, 0.02), 0, 0.36, 'sawtooth', 0.04, 1568)
-      ;[1760, 2637, 3520].forEach((f, i) => nota(varia(f, 0.02), 0.2 + i * 0.03, 0.9 - i * 0.15, 'triangle', 0.05))
-      ruido(0.34, 0.06, 0.5, 4200, 'highpass', undefined, 0.7, false)
-      nota(varia(58), 0.34, 0.7, 'sine', 0.55, 30); ruido(0.34, 0.5, 0.32, 900, 'lowpass', 140)
-      ;[1047, 1568, 2093].forEach((f, i) => nota(f, 0.4 + i * 0.05, 0.6, 'sine', 0.04))
-      abaixarMusica(0.2, 1100)
+      // a lâmina enorme corta o ar (varredura curta, porque a ponta chega ao alvo em uns 50 ms) e o aço canta;
+      // o baque fica com o som 'critico', que toca no instante do impacto visível
+      ruido(0, 0.16, 0.36, 700, 'bandpass', 6000, 1.1)
+      nota(varia(523, 0.02), 0, 0.14, 'sawtooth', 0.04, 2093)
+      ;[1760, 2637, 3520].forEach((f, i) => nota(varia(f, 0.02), 0.03 + i * 0.025, 0.9 - i * 0.15, 'triangle', 0.05))
+      ;[1047, 1568, 2093].forEach((f, i) => nota(f, 0.12 + i * 0.05, 0.6, 'sine', 0.035))
+      abaixarMusica(0.2, 1000)
       break
     case 'pedregulho':
       // o assobio da pedra caindo do alto, o baque que racha o chão e o cascalho
