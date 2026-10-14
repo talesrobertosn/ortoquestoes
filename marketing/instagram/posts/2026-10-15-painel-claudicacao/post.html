@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Painel de partidas: claudicação neurogênica</title>
+<!-- Feed de questão no painel de partidas (15/10/2026). Questão coluna-0006 (TARO 2020): enunciado,
+     alternativas e gabarito iguais aos do acervo; explicação a partir do comentário
+     (public/acervo/comentarios/coluna.json). Sem desenho de anatomia: só texto e plaquinhas. -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root {
+  --noite: #0c1013; --painel: #15191d; --moldura: #2a2f35; --placa-a: #2a2f36; --placa-b: #1d2126;
+  --letra: #f3efe4; --apagada: #8d949c; --ouro: #f4cf7c; --ouro2: #c9952f; --verde: #3ecf8e; --vermelho: #ff7a6b; --azul: #7fb8ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--letra); }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px;
+  background: radial-gradient(120% 60% at 50% 0%, #1b2329 0%, var(--noite) 60%), var(--noite); }
+section::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,0.018) 0 2px, transparent 2px 120px); pointer-events: none; }
+.marca { position: absolute; left: 64px; top: 56px; display: flex; align-items: center; gap: 14px; font-family: Jakarta; font-weight: 800; font-size: 30px; }
+.marca i { display: grid; gap: 5px; }
+.marca i b { display: block; width: 30px; height: 7px; border-radius: 3px; background: #5d666f; }
+.marca i b:nth-child(2) { background: var(--ouro); width: 38px; }
+.selo { position: absolute; right: 64px; top: 50px; padding: 10px 20px; border-radius: 999px; border: 2px solid var(--ouro); color: var(--ouro); font-family: Jakarta; font-weight: 800; font-size: 22px; letter-spacing: 0.12em; text-transform: uppercase; }
+.flap { display: flex; gap: 3px; }
+.flap i { position: relative; display: grid; place-items: center; width: 34px; height: 56px; border-radius: 5px; background: linear-gradient(180deg, var(--placa-a) 0 49%, #0b0d0f 49% 51%, var(--placa-b) 51%); box-shadow: 0 2px 0 #08090b; font-style: normal; font-weight: 800; font-size: 36px; line-height: 1; color: var(--letra); text-transform: uppercase; }
+.flap i::after { content: ''; position: absolute; left: 0; right: 0; top: 49%; height: 2%; background: rgba(0,0,0,0.6); }
+.flap.ouro i { color: var(--ouro); } .flap.verde i { color: var(--verde); } .flap.vermelho i { color: var(--vermelho); } .flap.azul i { color: var(--azul); } .flap.apagada i { color: #5b636b; }
+.flap.mini i { width: 24px; height: 38px; font-size: 24px; border-radius: 4px; }
+
+.voo { position: absolute; left: 64px; right: 64px; top: 220px; display: flex; justify-content: space-between; align-items: center; padding: 22px 26px; border-radius: 18px; background: linear-gradient(180deg, #1a1f24, var(--painel)); border: 3px solid var(--moldura); }
+.voo small { display: block; margin-bottom: 8px; font-size: 18px; font-weight: 700; letter-spacing: 0.18em; color: var(--apagada); text-transform: uppercase; }
+.enunciado { position: absolute; left: 64px; right: 64px; top: 420px; font-family: Jakarta; font-weight: 700; font-size: 50px; line-height: 1.22; letter-spacing: -0.012em; text-wrap: pretty; }
+.enunciado em { font-style: normal; color: var(--ouro); }
+.portoes { position: absolute; left: 64px; right: 64px; display: grid; gap: 16px; }
+.portao { display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; padding: 22px 24px; border-radius: 18px; background: linear-gradient(180deg, #1a1f24, var(--painel)); border: 3px solid var(--moldura); }
+.portao p { font-size: 34px; line-height: 1.25; font-weight: 600; }
+.portao small { display: block; margin-top: 6px; font-size: 24px; line-height: 1.35; font-weight: 500; color: #b6bdc4; }
+.portao.certo { border-color: var(--verde); background: linear-gradient(160deg, rgba(62,207,142,0.16), rgba(62,207,142,0.03)); }
+.portao.errado { opacity: 0.86; }
+.portao.errado p { color: #c8ced4; }
+.chamada { position: absolute; left: 64px; right: 64px; bottom: 200px; display: grid; gap: 14px; }
+.rotulo { font-weight: 800; font-size: 22px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ouro); }
+.chamada h2 { font-family: Jakarta; font-weight: 800; font-size: 66px; line-height: 1.04; letter-spacing: -0.025em; }
+.chamada h2 em { font-style: normal; color: var(--ouro); }
+.chamada p { font-size: 32px; line-height: 1.4; color: #c7cdd3; }
+.prova { position: absolute; left: 64px; right: 64px; top: 1190px; display: grid; gap: 16px; padding: 30px 32px; border-radius: 22px; border: 2px solid var(--ouro); background: linear-gradient(160deg, rgba(244,207,124,0.13), rgba(244,207,124,0.02)); }
+.prova p { font-size: 31px; line-height: 1.42; color: #e2e5e8; }
+.prova b { color: var(--ouro); }
+.site { position: absolute; left: 0; right: 0; bottom: 90px; text-align: center; font-family: Jakarta; font-weight: 800; font-size: 30px; color: var(--apagada); }
+
+.pagina { position: absolute; right: 64px; bottom: 50px; font-weight: 700; font-size: 22px; color: var(--apagada); letter-spacing: 0.1em; }
+.voo { top: 150px; }
+.titulo { font-family: Jakarta; font-weight: 800; letter-spacing: -0.025em; line-height: 1.02; text-wrap: balance; }
+.titulo em { font-style: normal; color: var(--ouro); }
+.capa .gancho { position: absolute; left: 64px; right: 64px; bottom: 130px; display: grid; gap: 22px; }
+.capa .gancho .titulo { font-size: 100px; }
+.capa .gancho p.sub { font-size: 34px; line-height: 1.4; color: #c7cdd3; }
+.grandao { position: absolute; left: 64px; right: 64px; top: 330px; display: grid; gap: 14px; }
+.grandao .linha { display: flex; justify-content: space-between; align-items: center; padding: 16px 22px; border-radius: 16px; background: linear-gradient(180deg, #1a1f24, var(--painel)); border: 3px solid var(--moldura); }
+.grandao .linha small { font-size: 18px; font-weight: 700; letter-spacing: 0.18em; color: var(--apagada); text-transform: uppercase; }
+.enunciado { top: 290px; font-size: 46px; }
+.portao p { font-size: 36px; }
+#feed-02-questao .portao { padding: 30px 26px; }
+#feed-02-questao .portoes { gap: 22px; }
+.comente { position: absolute; left: 64px; right: 64px; bottom: 110px; font-family: Jakarta; font-weight: 800; font-size: 46px; }
+.comente em { font-style: normal; color: var(--ouro); }
+.tabela { position: absolute; left: 64px; right: 64px; top: 330px; padding: 24px 22px; border-radius: 22px; background: linear-gradient(180deg, #1a1f24, var(--painel)); border: 3px solid var(--moldura); display: grid; gap: 4px; }
+.tabela .cab, .tabela .lin { display: grid; grid-template-columns: 230px 1fr 1fr; gap: 18px; align-items: center; padding: 16px 8px; }
+.tabela .cab { font-weight: 800; font-size: 22px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--apagada); padding-top: 4px; }
+.tabela .cab .n { color: var(--ouro); } .tabela .cab .v { color: var(--azul); }
+.tabela .lin { border-top: 1px solid rgba(255,255,255,0.07); font-size: 33px; padding-top: 26px; padding-bottom: 26px; line-height: 1.25; font-weight: 600; }
+.tabela .lin span:first-child { font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--apagada); }
+.tabela .lin .n { color: var(--letra); } .tabela .lin .v { color: #c8ced4; }
+.topo-texto { position: absolute; left: 64px; right: 64px; top: 150px; display: grid; gap: 12px; }
+.topo-texto .titulo { font-size: 62px; }
+.porque { position: absolute; left: 64px; right: 64px; top: 380px; display: grid; gap: 18px; }
+.porque li { list-style: none; display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; padding: 36px 28px; border-radius: 18px; background: rgba(255,255,255,0.04); border: 2px solid var(--moldura); font-size: 33px; line-height: 1.38; }
+.porque li b { color: var(--ouro); }
+.portoes.resp .portao { padding: 18px 22px; }
+.portoes.resp .portao p { font-size: 29px; }
+.portoes.resp .portao small { font-size: 21px; }
+.prova { top: 855px; bottom: auto; padding: 30px 30px; }
+.prova p { font-size: 32px; }
+.site { bottom: 50px; font-size: 24px; }
+</style>
+</head>
+<body>
+
+<section id="feed-01-capa" class="capa">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="selo">Questão do dia</div>
+  <div class="voo">
+    <div><small>Voo</small><span class="flap ouro" data-t="TARO 2020" data-n="9"></span></div>
+    <div><small>Destino</small><span class="flap" data-t="COLUNA" data-n="9"></span></div>
+  </div>
+  <div class="grandao">
+    <div class="linha"><small>Anda</small><span class="flap" data-t="? METROS" data-n="10"></span></div>
+    <div class="linha"><small>Dói</small><span class="flap ouro" data-t="PERNAS" data-n="10"></span></div>
+    <div class="linha"><small>Alívio</small><span class="flap azul" data-t="? ? ?" data-n="10"></span></div>
+  </div>
+  <div class="gancho">
+    <h1 class="titulo">Andou, doeu, parou. <em>E agora?</em></h1>
+    <p class="sub">A claudicação da estenose lombar tem duas pistas que a prova adora. Arraste e escolha o seu portão.</p>
+  </div>
+  <p class="pagina">1/5</p>
+</section>
+
+<section id="feed-02-questao">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="selo">TARO 2020</div>
+  <p class="enunciado" style="top: 160px">Na estenose do canal lombar, a claudicação neurogênica tem como característica o início da dor ao caminhar uma distância:</p>
+  <div class="portoes" style="top: 470px">
+    <div class="portao"><span class="flap ouro" data-t="A" data-n="1"></span><p>fixa e é aliviada ao sentar-se</p><span class="flap mini apagada" data-t="?" data-n="1"></span></div>
+    <div class="portao"><span class="flap ouro" data-t="B" data-n="1"></span><p>fixa e é aliviada ao ficar de pé</p><span class="flap mini apagada" data-t="?" data-n="1"></span></div>
+    <div class="portao"><span class="flap ouro" data-t="C" data-n="1"></span><p>variável e é aliviada ao ficar de pé</p><span class="flap mini apagada" data-t="?" data-n="1"></span></div>
+    <div class="portao"><span class="flap ouro" data-t="D" data-n="1"></span><p>variável e é aliviada ao sentar-se</p><span class="flap mini apagada" data-t="?" data-n="1"></span></div>
+  </div>
+  <p class="comente">Comente a sua letra <em>antes de arrastar.</em></p>
+  <p class="pagina">2/5</p>
+</section>
+
+<section id="feed-03-duas-linhas">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="topo-texto">
+    <p class="rotulo">Duas claudicações, dois painéis</p>
+    <h2 class="titulo">Não confunda a raiz <em>com a artéria.</em></h2>
+  </div>
+  <div class="tabela">
+    <div class="cab"><span></span><span class="n">Neurogênica</span><span class="v">Vascular</span></div>
+    <div class="lin"><span>Distância</span><span class="n"><span class="flap mini ouro" data-t="VARIÁVEL" data-n="8"></span></span><span class="v"><span class="flap mini azul" data-t="FIXA" data-n="8"></span></span></div>
+    <div class="lin"><span>Alívio</span><span class="n">sentar ou fletir o tronco</span><span class="v">parar, mesmo em pé</span></div>
+    <div class="lin"><span>Quem sofre</span><span class="n">a raiz nervosa</span><span class="v">o músculo, sem sangue</span></div>
+    <div class="lin"><span>Pistas</span><span class="n">anda melhor no carrinho de mercado; sobe ladeira melhor que desce; tolera a bicicleta</span><span class="v">pulsos do pé diminuídos; pele com alterações tróficas</span></div>
+  </div>
+  <p class="pagina">3/5</p>
+</section>
+
+<section id="feed-04-porque">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="topo-texto">
+    <p class="rotulo">Por que sentar alivia</p>
+    <h2 class="titulo">O canal muda de tamanho <em>com a postura.</em></h2>
+  </div>
+  <ul class="porque">
+    <li><span class="flap mini vermelho" data-t="EM PÉ" data-n="5"></span><span>Em <b>extensão</b> (em pé, ereto, descendo ladeira), o ligamento amarelo se dobra para dentro e o disco abaula: o canal <b>diminui</b>.</span></li>
+    <li><span class="flap mini verde" data-t="SENTA" data-n="5"></span><span>Na <b>flexão</b> (sentado, inclinado para a frente), acontece o contrário: o canal <b>alarga</b> e as raízes descomprimem.</span></li>
+    <li><span class="flap mini azul" data-t="FIXA" data-n="5"></span><span>Na vascular, a artéria entrega sempre o mesmo sangue: a dor vem <b>sempre na mesma distância</b> e passa ao parar.</span></li>
+  </ul>
+  <p class="pagina">4/5</p>
+</section>
+
+<section id="feed-05-resposta">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="voo">
+    <div><small>Embarque</small><span class="flap verde" data-t="PORTÃO D" data-n="8"></span></div>
+    <div><small>Situação</small><span class="flap verde" data-t="CONFIRMADO" data-n="10"></span></div>
+  </div>
+  <div class="portoes resp" style="top: 330px">
+    <div class="portao certo"><span class="flap verde" data-t="D" data-n="1"></span><p>variável e é aliviada ao sentar-se<small>Depende da postura; sentar flete a lombar e alarga o canal.</small></p><span class="flap mini verde" data-t="✓" data-n="1"></span></div>
+    <div class="portao errado"><span class="flap apagada" data-t="A" data-n="1"></span><p>fixa e é aliviada ao sentar-se<small>Mistura as duas: distância fixa é da vascular.</small></p><span class="flap mini vermelho" data-t="X" data-n="1"></span></div>
+    <div class="portao errado"><span class="flap apagada" data-t="B" data-n="1"></span><p>fixa e é aliviada ao ficar de pé<small>É a claudicação vascular.</small></p><span class="flap mini vermelho" data-t="X" data-n="1"></span></div>
+    <div class="portao errado"><span class="flap apagada" data-t="C" data-n="1"></span><p>variável e é aliviada ao ficar de pé<small>Em pé, a extensão fecha o canal e piora a compressão.</small></p><span class="flap mini vermelho" data-t="X" data-n="1"></span></div>
+  </div>
+  <div class="prova">
+    <p class="rotulo">Para a prova</p>
+    <p>Neurogênica: <b>distância variável</b>, alívio ao <b>sentar ou fletir</b>. Vascular: <b>distância fixa</b>, alívio ao <b>parar, mesmo em pé</b>.</p>
+  </div>
+  <p class="site">Comentário completo em ortoquestoes.com.br</p>
+  <p class="pagina">5/5</p>
+</section>
+
+<script>
+for (const el of document.querySelectorAll('.flap')) {
+  const t = (el.dataset.t || '').padEnd(+el.dataset.n || 0, ' ')
+  el.innerHTML = [...t].map((c) => `<i>${c === ' ' ? '&nbsp;' : c}</i>`).join('')
+}
+</script>
+</body>
+</html>
