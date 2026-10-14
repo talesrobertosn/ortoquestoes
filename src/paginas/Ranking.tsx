@@ -24,7 +24,7 @@ import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import { SeloServico } from '../componentes/ServicoRanking'
-import { Top3Epico } from '../componentes/Top3Epico'
+import { SalaoCampeoes } from '../componentes/SalaoCampeoes'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
@@ -114,17 +114,17 @@ function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Perio
   const terceiro = linhas[2]
   const faltam = eu && eu.posicao > 3 && terceiro ? Math.max(1, terceiro.total - eu.total + 1) : 0
   const chamada = eu && eu.posicao <= 3
-    ? <>Você está no Hall da Fama. Continue respondendo para não perder o lugar.</>
+    ? <>Você está no Salão dos Campeões. Continue respondendo para não perder o lugar.</>
     : faltam > 0 ? <>Você está em <b>#{eu!.posicao}</b>. Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para entrar no top 3.</>
       : undefined
-  return <Top3Epico
+  return <SalaoCampeoes
     titulo="Top 3"
     subtitulo={periodo === 'semana' ? 'Quem mais respondeu questões nos últimos 7 dias' : 'Quem mais respondeu questões no ranking geral'}
     chamada={chamada}
     lugares={linhas.slice(0, 3).map((linha) => ({
       posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
       total: linha.total.toLocaleString('pt-BR'), rotuloTotal: periodo === 'semana' ? 'na semana' : 'questões',
-      extra: <span className="t3__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>,
+      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>,
     }))} />
 }
 
