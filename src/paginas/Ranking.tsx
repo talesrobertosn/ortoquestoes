@@ -124,7 +124,7 @@ function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Perio
     lugares={linhas.slice(0, 3).map((linha) => ({
       posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
       total: linha.total.toLocaleString('pt-BR'), rotuloTotal: periodo === 'semana' ? 'na semana' : 'questões',
-      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>,
+      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={20} /><Fogueira dias={linha.sequencia ?? 0} tamanho={14} /><Movimento linha={linha} /></span>,
     }))} />
 }
 
