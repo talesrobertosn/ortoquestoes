@@ -68,7 +68,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 37. [x] Modo "Leitura tranquila": chuva calma de fundo de propósito, para quem gosta de estudar com chuva.
 38. [x] Música da Biblioteca que muda de camada com o humor (chuva abafa, glória abre um coral).
 39. [ ] Pequenos fantasmas leitores que passam ao fundo quando o estudo passa de 15 min (sem assustar).
-40. [ ] Estações do ano na Biblioteca conforme o mês (folhas no outono, neve em julho).
+40. [x] Estações do ano na Biblioteca conforme o mês (folhas no outono, neve em julho).
 
 ## D. Cenários (mais felizes, estilo Stardew Valley)
 
@@ -169,3 +169,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026, tutorial e medição:** 63 concluída com demonstração isolada; 70 tem benchmark local reproduzível, mas a meta em aparelho físico continua pendente. [Relatório](flashcards/TUTORIAL-DESEMPENHO-14-10.md).
 
 - **14/10/2026, música e clima:** 38, 75 e 82: chuva abafa a trilha, Glória recebe coral sincronizado sob demanda, Passeio ao Sol traz violão/flauta aos cenários abertos, e a emenda das salas é suavizada. [Relatório](flashcards/MUSICA-CLIMA-14-10.md).
+- **14/10/2026, estações:** 40: ornamentos nativos sazonais nas margens da Biblioteca; hemisfério sul, neve em julho e movimento reduzido. [Relatório](flashcards/ESTACOES-14-10.md).

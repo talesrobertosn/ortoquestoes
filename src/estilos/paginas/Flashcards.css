@@ -2523,3 +2523,19 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 .fc-tutorial .fc-tutorial__nota{font-size:14px;color:#cabb9f;}
 .fc-tutorial__pular{display:block;margin:20px 0 0;border:0;background:none;color:#dbc49a;text-decoration:underline;font:600 14px var(--fc-ui);cursor:pointer;min-height:36px;}
 @media(max-width:640px){.fc-tutorial p{font-size:16px;}.fc-tutorial__cartao{padding:16px;}.fc-tutorial__cartao strong{font-size:21px;}.fc-tutorial__opcoes{flex-direction:column;}}
+
+/* Estações: arte pequena nas margens, sempre atrás dos controles e da mesa. */
+.fc-estacao { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.fc-estacao img { position: absolute; image-rendering: pixelated; user-select: none; }
+.fc-estacao__ramo { width: 144px; height: 192px; bottom: 2%; opacity: .8; }
+.fc-estacao__ramo--esquerdo { left: 0; }
+.fc-estacao__ramo--direito { right: 0; transform: scaleX(-1); }
+.fc-estacao__particula { width: 16px; height: 16px; opacity: .65; animation: fc-estacao-cair 18s linear infinite; }
+.fc-estacao__particula--0 { left: 3%; top: 13%; animation-delay: -2s; }
+.fc-estacao__particula--1 { left: 8%; top: 38%; animation-delay: -11s; }
+.fc-estacao__particula--2 { right: 3%; top: 21%; animation-delay: -7s; }
+.fc-estacao__particula--3 { right: 8%; top: 55%; animation-delay: -15s; }
+@keyframes fc-estacao-cair { 0% { translate: 0 -100px; rotate: -15deg; opacity: 0; } 15%,80% { opacity: .65; } 100% { translate: 8px 360px; rotate: 90deg; opacity: 0; } }
+.fc-estacao--parada .fc-estacao__particula { animation: none; }
+@media (max-width: 600px), (max-height: 500px) { .fc-estacao__ramo { width: 96px; height: 128px; opacity: .65; } .fc-estacao__particula { width: 8px; height: 8px; } }
+@media (prefers-reduced-motion: reduce) { .fc-estacao__particula { animation: none; } }
