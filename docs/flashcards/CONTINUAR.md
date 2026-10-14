@@ -6,6 +6,10 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Estações — continuidade de 14/10/2026
+
+Música #258 publicada: merge `c173b491`, deploy `38651984359` concluído com sucesso. O bloco seguinte conclui a ideia 40, com ornamentos sazonais nas margens da Biblioteca; relatório em [ESTACOES-14-10.md](ESTACOES-14-10.md). Calendário do hemisfério sul, neve de fantasia em julho, partículas estáticas com movimento reduzido. Sem mudança em clima de acerto, revisão, áudio ou SQL. Conferir o PR e deploy próprios antes de afirmar publicação deste bloco.
+
 ## Música e clima — continuidade de 14/10/2026
 
 O reparo #257 foi mesclado e o deploy `38648064258` terminou com sucesso, restabelecendo a publicação após #256. O tutorial já integra o novo Menu e não tem condição de escolha de som.
