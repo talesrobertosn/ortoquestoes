@@ -1,6 +1,6 @@
 # Combate: ideias 16, 18, 23, 24 e 64
 
-14/10/2026. Bloco independente para revisão em PR draft, sem publicação.
+14/10/2026. Bloco independente no [PR draft #248](https://github.com/talesrobertosn/ortoquestoes/pull/248), sem publicação.
 
 - Numerais 5×7 autorais em SVG, contorno por pixels e quique; não carregam fontes. Movimento reduzido mantém os números legíveis, sem quique.
 - Quatro tiras de pedregulho: cristal, obsidiana, rubro e cimento. `vfx.py --novos` grava somente imagens ausentes e atualiza o índice sem regravar as tiras existentes. O crítico usa a tira correspondente à variante do golem.
