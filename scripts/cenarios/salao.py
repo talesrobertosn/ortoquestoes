@@ -6,7 +6,7 @@ colunas de capitel dourado, piso de mármore xadrez, um tapete vermelho com bord
 leva ao trono sobre degraus, estandartes pendurados e um grande vitral redondo no fundo, de onde
 descem feixes de luz colorida. Camadas:
   fundo   parede do fundo, vitral, trono no estrado, nervuras da abóbada
-  meio    piso xadrez, tapete, colunas com tochas, estandartes
+  meio    piso xadrez, tapete, colunas com tochas, estandartes com estrela
   frente  cortinas vermelhas com borlas nos cantos de cima e bases de coluna nas bordas
   luz     feixes do vitral, tochas, brilho do trono e do tapete
 
@@ -184,9 +184,10 @@ def pintar(W: int, H: int, saida: Path, nome: str):
         pano = (np.abs(x - bx) < lb) & (y > topo_b) & (y < topo_b + comp - np.abs(x - bx) * 0.9)
         m.tingir(pano, np.clip(0.55 + np.sin((x - bx) * 1.1) * 0.12 - 0.2 * (y - topo_b) / comp, 0, 0.999), TAPETE, 0.5)
         m.tingir(pano & (np.abs(np.abs(x - bx) - lb + 1) < 0.8), np.full((H, W), 0.7, F), OURO, 0.3)
-        osso = pano & (np.abs(y - (topo_b + comp * 0.4)) < lb * 0.18) & (np.abs(x - bx) < lb * 0.5)
-        osso |= pano & (np.hypot(np.abs(x - bx) - lb * 0.5, np.abs(y - (topo_b + comp * 0.4)) - lb * 0.16) < lb * 0.17)
-        m.tingir(osso, np.full((H, W), 0.85, F), MARMORE_C, 0.3)
+        # estrela de quatro pontas bordada (sem anatomia nos enfeites, regra de docs/flashcards/README.md)
+        ec_y = topo_b + comp * 0.4
+        estrela = pano & ((np.abs(x - bx) / (lb * 0.6) + np.abs(y - ec_y) / (lb * 0.9)) < 1) & ((np.abs(x - bx) < lb * 0.12) | (np.abs(y - ec_y) < lb * 0.12) | ((np.abs(x - bx) / (lb * 0.6) + np.abs(y - ec_y) / (lb * 0.9)) < 0.45))
+        m.tingir(estrela, np.full((H, W), 0.8, F), OURO, 0.3)
         m.tingir((np.abs(x - bx) < lb + 1.5) & (np.abs(y - topo_b) < 1.4), np.full((H, W), 0.5, F), OURO, 0.3)
     m.salvar(saida / f'{nome}-meio.png')
 

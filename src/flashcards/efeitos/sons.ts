@@ -25,7 +25,7 @@ export type Som =
   | 'combo' | 'derrota-inimigo' | 'vitoria-chefe' | 'derrota' | 'poder' | 'recompensa' | 'pista'
   | 'fase' | 'furia' | 'lendario' | 'imortal' | 'veneno' | 'evolucao' | 'acerto'
   | 'raio' | 'moedas' | 'queimadura' | 'divide' | 'roubo' | 'ajuda' | 'porta' | 'sino' | 'sopro' | 'renascer' | 'compra-loja'
-  | 'espada-gigante' | 'pedregulho' | 'mandibula'
+  | 'espada-gigante' | 'pedregulho' | 'mandibula' | 'carregado'
   | 'jingle-vitoria' | 'jingle-derrota' | 'jingle-tesouro' | 'jingle-patamar' | 'jingle-topo' | 'jingle-chefe'
 
 export type Ambiente = 'campo' | 'masmorra' | 'salao' | 'biblioteca' | 'covil' | 'torre'
@@ -355,6 +355,10 @@ export function tocar(som: Som, forca = 1, t?: Timbre) {
     case 'porta': ruido(0, 0.7, 0.2, 400, 'bandpass', 900, 6); nota(varia(110), 0, 0.6, 'sawtooth', 0.05, 160); nota(65, 0.45, 0.5, 'sine', 0.2, 40); ruido(0.45, 0.3, 0.25, 900, 'lowpass', 120); break
     case 'sino': [1568, 2093].forEach((f, i) => { nota(f, i * 0.12, 1.1, 'sine', 0.08); nota(f * 2.76, i * 0.12, 0.5, 'sine', 0.02) }); break
     case 'compra-loja': tocar('moedas'); [784, 1047].forEach((f, i) => nota(f, 0.15 + i * 0.08, 0.3, 'triangle', 0.08)); break
+    case 'carregado':
+      // golpe carregado de quem não cospe fogo (estocada, pistão, investida): só o rugido que cresce
+      ruido(0, 1, 0.5, 600, 'bandpass', 2400, 0.7); ruido(0, 1, 0.25, 140, 'lowpass', 90); nota(varia(48), 0, 1, 'sawtooth', 0.14, 70); abaixarMusica(0.25, 1200)
+      break
     case 'sopro':
       // rugido grave, a labareda que avança e o crepitar do fogo por cima
       ruido(0, 1, 0.5, 600, 'bandpass', 2400, 0.7); ruido(0, 1, 0.25, 140, 'lowpass', 90); nota(varia(48), 0, 1, 'sawtooth', 0.14, 70)
@@ -371,15 +375,18 @@ export function tocar(som: Som, forca = 1, t?: Timbre) {
       ;[1047, 1568, 2093].forEach((f, i) => nota(f, 0.12 + i * 0.05, 0.6, 'sine', 0.035))
       abaixarMusica(0.2, 1000)
       break
-    case 'pedregulho':
-      // o assobio da pedra caindo do alto, o baque que racha o chão e o cascalho
-      nota(varia(1500, 0.04), 0, 0.42, 'sine', 0.05, 320); ruido(0, 0.42, 0.12, 900, 'bandpass', 300, 3)
-      ruido(0.42, 0.07, 0.55, 3000, 'highpass', undefined, 0.7, false)
-      nota(varia(46), 0.42, 0.9, 'sine', 0.7, 26); nota(varia(92), 0.42, 0.4, 'square', 0.06, 40)
-      ruido(0.42, 0.9, 0.5, 1300, 'lowpass', 110)
-      for (let i = 0; i < 7; i++) ruido(0.5 + i * 0.06 + Math.random() * 0.05, 0.05, 0.13, varia(2600, 0.35), 'bandpass', undefined, 3, false)
+    case 'pedregulho': {
+      // o assobio da pedra caindo do alto, o baque que racha o chão e o cascalho; com movimento
+      // reduzido (forca 0) não há queda na tela: o baque vem na hora, sem o assobio
+      const q = forca > 0 ? 0.42 : 0
+      if (q) { nota(varia(1500, 0.04), 0, 0.42, 'sine', 0.05, 320); ruido(0, 0.42, 0.12, 900, 'bandpass', 300, 3) }
+      ruido(q, 0.07, 0.55, 3000, 'highpass', undefined, 0.7, false)
+      nota(varia(46), q, 0.9, 'sine', 0.7, 26); nota(varia(92), q, 0.4, 'square', 0.06, 40)
+      ruido(q, 0.9, 0.5, 1300, 'lowpass', 110)
+      for (let i = 0; i < 7; i++) ruido(q + 0.08 + i * 0.06 + Math.random() * 0.05, 0.05, 0.13, varia(2600, 0.35), 'bandpass', undefined, 3, false)
       abaixarMusica(0.2, 1300)
       break
+    }
     case 'mandibula':
       // a tampa range ao abrir, desce e fecha com estalo de dentes sobre a tela
       nota(varia(96), 0, 0.16, 'sawtooth', 0.06, 70); ruido(0, 0.16, 0.12, 700, 'bandpass', 400, 6)

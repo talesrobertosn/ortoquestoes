@@ -123,7 +123,7 @@ export async function atacar(P: Palco, estilo: Estilo, de: Ponto, para: Ponto, r
       case 'pedra': {
         if (crit && k === 0) {
           // o pedregulho musgoso cai do alto da tela em cima do herói
-          tocar('pedregulho')
+          tocar('pedregulho', P.reduzido ? 0 : 1)
           await P.voar('pedregulho', { x: alvo.x + 70, y: -120 }, alvo, { duracao: 0.42, curva: 0.05, escala: px * 1.6, orientar: false, giro: 7 })
           P.efeito('rachadura', chao, { escala: px * 1.4 })
           P.efeito('poeira', { x: chao.x - 50, y: chao.y }, { escala: px * 1.3, espelhar: true })

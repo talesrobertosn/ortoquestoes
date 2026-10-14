@@ -3,10 +3,10 @@
 
 Sala de pedra com teto de vigas: prateleiras cheias de frascos coloridos, uma bancada com alambique
 e balões borbulhando, um caldeirão verde ao fundo e um lustre de velas. O toque ortopédico: na
-parede, um negatoscópio aceso com a radiografia de um fêmur com placa, e um esqueleto de estudo
-pendurado num suporte. Luz verde-água das poções contra o amarelo das velas. Camadas:
+parede, um negatoscópio aceso com o molde de uma placa e seus parafusos (só o implante, sem
+desenho de anatomia, como pede docs/flashcards/README.md), e uma esfera armilar de latão. Luz verde-água das poções contra o amarelo das velas. Camadas:
   fundo   parede de pedra, janela redonda com noite, prateleiras e o negatoscópio
-  meio    piso de tábuas, bancada com vidraria, caldeirão, esqueleto de estudo
+  meio    piso de tábuas, bancada com vidraria, caldeirão, esfera armilar
   frente  vigas do teto, lustre, livros e frascos em primeiro plano
   luz     poções, caldeirão, negatoscópio, velas
 
@@ -26,8 +26,7 @@ PEDRA = rampa(['#16141a', '#221e24', '#2e2830', '#3c343a', '#4a4046', '#5a4e52',
 MADEIRA = rampa(['#1e120a', '#2e1c10', '#422a18', '#583a22', '#704c2e', '#8a603c'])
 VIGA = rampa(['#120a06', '#1e120a', '#2c1c10', '#3e2a18', '#523822'])
 VIDRO = ['#3ad8b0', '#e04a8a', '#f2c040', '#5a8af0', '#9a5ae0', '#7ae05a']
-OSSO_RX = rampa(['#0a1a2a', '#16304a', '#2a5478', '#5a8ab0', '#a8d0ec', '#e8f6ff'])
-OSSO = rampa(['#6a5e4c', '#968a72', '#c0b498', '#e2d8c0', '#f6f0e0'])
+LATAO = rampa(['#3a2408', '#6a4612', '#9a6a20', '#c8963a', '#eec064', '#fff0b0'])
 METAL = rampa(['#1a1a20', '#2e2e38', '#4a4a58', '#707080', '#a0a0b0', '#d0d0dc'])
 VERDE = rampa(['#0a3a2a', '#14604a', '#22906a', '#40c890', '#90f0c0', '#e0fff0'])
 
@@ -81,23 +80,23 @@ def pintar(W: int, H: int, saida: Path, nome: str):
                 f.cor((np.abs(x - cx_) < lr * 0.5) & (np.abs(y - (yp - alt - 3.5 * s)) < 1), '#704c2e')
                 if (i + k) % 3 == 0:
                     luzes.append((cx_, yp - alt * 0.3, 10 * s, cor, 0.35))
-    # negatoscópio com a radiografia de um fêmur com placa e parafusos
+    # negatoscópio com o molde de uma placa de osteossíntese e seus parafusos (só o implante)
     nx0 = W * (0.36 if not retrato else 0.3); nw, nh = 30 * s, 40 * s
     ny0 = H * 0.34
     caixa = ret(x, y, nx0, ny0, nx0 + nw, ny0 + nh)
     f.tingir(caixa, np.full((H, W), 0.4, F), METAL, 0.3)
     tela = ret(x, y, nx0 + 2 * s, ny0 + 2 * s, nx0 + nw - 2 * s, ny0 + nh - 2 * s)
     f.cor(tela, '#cfe6f4')
-    fx_ = nx0 + nw / 2 + np.sin((y - ny0) / nh * 2.2) * 2 * s
-    femur = tela & (np.abs(x - fx_) < 3.2 * s) & (y > ny0 + 8 * s)
-    cabeca = tela & (np.hypot(x - (nx0 + nw / 2 - 4 * s), y - (ny0 + 7 * s)) < 4.5 * s)
-    colo = tela & (np.abs((x - (nx0 + nw / 2 - 2 * s)) * 0.7 + (y - (ny0 + 9 * s)) * 0.7) < 2.4 * s) & (y < ny0 + 12 * s) & (y > ny0 + 5 * s)
-    f.tingir(femur | cabeca | colo, np.clip(0.55 + 0.25 * np.exp(-((x - fx_) / (2 * s)) ** 2), 0, 0.999), OSSO_RX, 0.3)
-    placa = tela & (np.abs(x - (fx_ + 3.6 * s)) < 1.1 * s) & (y > ny0 + 14 * s) & (y < ny0 + nh - 6 * s)
-    f.cor(placa, '#ffffff')
-    for k in range(4):
-        py_ = ny0 + 16 * s + k * 5 * s
-        f.cor(tela & (np.abs(y - py_) < 0.7) & (np.abs(x - fx_) < 4.5 * s), '#ffffff')
+    f.cor(tela & ((((x - nx0) % (5 * s)) < 0.6) | (((y - ny0) % (5 * s)) < 0.6)), '#a8c8dc')   # quadriculado do molde
+    px0 = nx0 + nw / 2
+    placa = tela & (np.abs(x - px0) < 2.4 * s) & (y > ny0 + 6 * s) & (y < ny0 + nh - 6 * s)
+    f.cor(placa, '#3a5470')
+    for k in range(5):
+        py_ = ny0 + 8.5 * s + k * 5.4 * s
+        f.cor(tela & (np.hypot(x - px0, y - py_) < 1.3 * s), '#cfe6f4')
+        rosca = tela & (np.abs(y - py_) < 0.8 * s) & (x > px0 + 3.5 * s) & (x < px0 + 11 * s)
+        f.cor(rosca, '#3a5470')
+        f.cor(rosca & (((x - px0) % (1.6 * s)) < 0.6), '#7a98b4')
     luzes.append((nx0 + nw / 2, ny0 + nh / 2, 26 * s, '#cfe6ff', 0.45))
     # a parede esquenta perto do lustre e esfria nos cantos
     f.velar(np.clip(0.28 * np.exp(-(((x - W / 2) / (W * 0.35)) ** 2 + ((y - H * 0.18) / (H * 0.45)) ** 2)), 0, 1) * (y < piso_y), '#c08850')
@@ -162,29 +161,16 @@ def pintar(W: int, H: int, saida: Path, nome: str):
         fogo = np.hypot((x - kc[0] - dx * s) / (3 * s), (y - (kc[1] + 13 * s)) / (4 * s)) < 1
         m.cor(fogo, '#ff8a1a')
     luzes.append((kc[0], kc[1] + 13 * s, 16 * s, '#ff8a40', 0.5))
-    # esqueleto de estudo num suporte (fantasia, simples)
+    # esfera armilar de latão num pé torneado
     ec = np.array([W * (0.9 if not retrato else 0.88), piso_y - 2 * s])
-    m.tingir(ret(x, y, ec[0] - 0.8 * s, ec[1] - 52 * s, ec[0] + 0.8 * s, ec[1] + 6 * s), np.full((H, W), 0.5, F), METAL, 0.2)
-    m.tingir(ret(x, y, ec[0] - 8 * s, ec[1] + 5 * s, ec[0] + 8 * s, ec[1] + 7 * s), np.full((H, W), 0.4, F), METAL, 0.2)
-    cr = np.hypot((x - ec[0]) / (4.5 * s), (y - (ec[1] - 44 * s)) / (5 * s)) < 1
-    m.tingir(cr, np.clip(0.75 - (x - ec[0]) / (12 * s), 0, 0.999), OSSO, 0.3)
-    for ox in (-1.6, 1.6):
-        m.cor(np.hypot(x - ec[0] - ox * s, y - (ec[1] - 44 * s)) < 1.2 * s, '#2a2018')
-    coluna = (np.abs(x - ec[0]) < 1.1 * s) & (y > ec[1] - 39 * s) & (y < ec[1] - 16 * s) & ((np.floor((y) / (2 * s)) % 2) == 0)
-    m.tingir(coluna, np.full((H, W), 0.7, F), OSSO, 0.2)
-    for k in range(4):
-        cy_ = ec[1] - 34 * s + k * 3.6 * s
-        costela = (np.abs(np.hypot((x - ec[0]) / (6 * s - k * 0.4 * s), (y - cy_ - 3 * s) / (4 * s)) - 1) < 0.18) & (y < cy_ + 3 * s)
-        m.tingir(costela, np.full((H, W), 0.7, F), OSSO, 0.2)
-    pel = np.hypot((x - ec[0]) / (5 * s), (y - (ec[1] - 15 * s)) / (2.6 * s)) < 1
-    m.tingir(pel, np.full((H, W), 0.7, F), OSSO, 0.2)
-    for lado in (-1, 1):
-        for (a, b) in (((ec[0] + lado * 3 * s, ec[1] - 14 * s), (ec[0] + lado * 3.6 * s, ec[1] - 2 * s)),
-                       ((ec[0] + lado * 5 * s, ec[1] - 36 * s), (ec[0] + lado * 8 * s, ec[1] - 22 * s))):
-            dxs, dys = b[0] - a[0], b[1] - a[1]; L2 = dxs * dxs + dys * dys
-            tt = np.clip(((x - a[0]) * dxs + (y - a[1]) * dys) / L2, 0, 1)
-            osso_l = np.hypot(x - (a[0] + tt * dxs), y - (a[1] + tt * dys)) < 1.1 * s
-            m.tingir(osso_l, np.full((H, W), 0.7, F), OSSO, 0.2)
+    m.tingir(ret(x, y, ec[0] - 1.2 * s, ec[1] - 30 * s, ec[0] + 1.2 * s, ec[1] + 4 * s), np.full((H, W), 0.5, F), LATAO, 0.2)
+    m.tingir(np.hypot((x - ec[0]) / (7 * s), (y - (ec[1] + 5 * s)) / (2 * s)) < 1, np.full((H, W), 0.45, F), LATAO, 0.2)
+    sc = np.array([ec[0], ec[1] - 40 * s]); R = 11 * s
+    for k, (rx, ry) in enumerate(((1.0, 1.0), (1.0, 0.32), (0.32, 1.0), (0.9, 0.55))):
+        anel = np.abs(np.hypot((x - sc[0]) / (R * rx), (y - sc[1]) / (R * ry)) - 1) < 0.09
+        m.tingir(anel, np.clip(0.6 - (x - sc[0]) / (3 * R) + 0.1 * k, 0, 0.999), LATAO, 0.3)
+    m.tingir(np.hypot(x - sc[0], y - sc[1]) < 2.6 * s, np.full((H, W), 0.8, F), LATAO, 0.2)
+    luzes.append((sc[0] - 3 * s, sc[1] - 3 * s, 10 * s, '#ffd27a', 0.25))
     m.salvar(saida / f'{nome}-meio.png')
 
     # ================================================================ frente

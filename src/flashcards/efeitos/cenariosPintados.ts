@@ -6,7 +6,7 @@
  *   covil       Covil do Dragão (`scripts/cenarios/covil.py`), chefe Dragão de Ossos
  *   masmorra    Masmorra (`scripts/cenarios/masmorra.py`), 2º andar e o resto dos atos de masmorra
  *   caverna     Caverna dos Cristais (`scripts/cenarios/caverna.py`): rocha em névoa azul, cristais, lago e a fenda de luz
- *   laboratorio Laboratório do Alquimista (`scripts/cenarios/laboratorio.py`): frascos, caldeirão e o negatoscópio com o fêmur
+ *   laboratorio Laboratório do Alquimista (`scripts/cenarios/laboratorio.py`): frascos, caldeirão e o negatoscópio com o molde da placa
  *   salao       Salão do Trono (`scripts/cenarios/salao.py`), onde moram os chefes: colunas, vitral e tapete vermelho
  *
  * Diferente das outras cenas, que são pintadas em código a cada tamanho, estas

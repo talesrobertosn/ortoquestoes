@@ -510,7 +510,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           const boca = caixaInimigo ? { x: caixaInimigo.left + caixaInimigo.width * 0.2, y: caixaInimigo.top + caixaInimigo.height * 0.32 } : undefined
           if (ev.carregado) {
             definirFaixa({ texto: ev.carregado, sub: 'Golpe carregado', tom: 'vermelho' })
-            tocar('sopro')
+            tocar(estilo === 'fogo' ? 'sopro' : 'carregado')
             if (estilo === 'fogo' && P) {
               // o Sopro do dragão: chamas em pixel art atravessam a arena
               await soprar(P, boca ?? { x: de.x - 40, y: de.y - 10 }, para, tomFogo(adv.variante), 0.75)
