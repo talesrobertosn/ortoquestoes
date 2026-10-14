@@ -62,6 +62,12 @@ export const CHANCE_BRILHANTE = 0.05
 /** O Velho Preceptor aparece para ajudar quando a vida cai abaixo disto (uma vez por partida, com sorte, depois do primeiro ato). */
 export const AJUDA = { abaixoDe: 0.25, chance: 0.5, cura: 0.2, desdeAndar: 4 }
 export const CURA_LOJA = { fracao: 0.3, preco: 30 }
+/**
+ * Envenenado (o superpoder das serpentes): cada flashcard respondido tira o
+ * dano do veneno (nunca abaixo de 1 de vida) até acertar `acertos` seguidos;
+ * um erro recomeça a conta. Novas picadas somam, até `acumula` vezes o dano.
+ */
+export const VENENO = { acertos: 5, acumula: 3 }
 
 /** Desgaste: a cada ato (Cripta) ou 10 andares (Torre), as curas rendem menos, até o piso. */
 export const DESGASTE = { porAto: 0.05, porDezAndares: 0.07, piso: 0.35 }
@@ -247,6 +253,8 @@ export interface Partida {
   nivel?: NivelJogo
   /** Rota de estudo ativa (Mapa do especialista ou Desvio de área). */
   rota?: RotaEstudo | null
+  /** Envenenado: dano por flashcard e acertos seguidos que faltam para passar. */
+  veneno?: { dano: number; faltam: number } | null
 }
 
 export type MotivoCura =
@@ -265,6 +273,9 @@ export type Evento =
   | { tipo: 'escudo'; restante: number }
   | { tipo: 'mitigado'; motivo: 'barreira' | 'foco' | 'preceptor'; valor: number }
   | { tipo: 'dano-heroi'; valor: number; veneno: number; furia: boolean; critico: boolean; rajada: number; carregado: string | null }
+  | { tipo: 'envenenado'; dano: number; faltam: number }
+  | { tipo: 'veneno'; valor: number; faltam: number }
+  | { tipo: 'veneno-curado' }
   | { tipo: 'imortal' }
   | { tipo: 'renascer'; vida: number }
   | { tipo: 'cura'; valor: number; motivo: MotivoCura }
@@ -768,6 +779,12 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
           }
         }
       }
+      // a picada envenena (ou reforça o veneno); errar, envenenado, recomeça a conta dos acertos
+      if (e.fase !== 'fim' && i.envenena && !def.bloqueado && def.final > 0) {
+        const dano = p.veneno ? Math.min(i.envenena * VENENO.acumula, p.veneno.dano + i.envenena) : i.envenena
+        e = { ...e, veneno: { dano, faltam: VENENO.acertos } }
+        eventos.push({ tipo: 'envenenado', dano, faltam: VENENO.acertos })
+      } else if (e.fase !== 'fim' && p.veneno) e = { ...e, veneno: { ...p.veneno, faltam: VENENO.acertos } }
       if (e.fase !== 'fim' && i.rouba && e.encaixes.length) {
         let u: number, semente = e.semente
         ;[u, semente] = sortear(semente)
@@ -786,6 +803,15 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
       eventos.push({ tipo: 'queimadura', valor: v, brasas: e.inimigo.brasas })
       if (e.reliquias.includes('cauterio')) e = curar(e, e.inimigo.brasas * RECOMPENSAS.cauterio.v.cura, 'cauterio', eventos)
       e = limiares(e, eventos)
+    }
+    // Envenenado: o veneno de antes desta resposta arde a cada flashcard; 5 acertos seguidos o curam.
+    if (p.veneno && e.fase === 'resposta') {
+      const valor = Math.min(p.veneno.dano, Math.max(0, e.vida - 1))
+      if (valor > 0) e = { ...e, vida: e.vida - valor, danoSofrido: e.danoSofrido + valor }
+      const faltam = certo ? p.veneno.faltam - 1 : (e.veneno?.faltam ?? VENENO.acertos)
+      eventos.push({ tipo: 'veneno', valor, faltam: Math.max(0, faltam) })
+      if (certo && faltam <= 0) { e = { ...e, veneno: null }; eventos.push({ tipo: 'veneno-curado' }) }
+      else if (certo) e = { ...e, veneno: { ...p.veneno, faltam } }
     }
     if (e.fase === 'resposta' && e.inimigo.vida <= 0) return { estado: derrotarInimigo(e, eventos), eventos }
     if (e.fase === 'resposta' && i.regenera && e.inimigo.vida > 0) {

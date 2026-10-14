@@ -438,6 +438,47 @@ try {
     assert.ok(['mapa', 'desvio'].every((t) => comAltar.encaixes.some((x) => x.tipo === t)))
   }
 
+  // Envenenado (superpoder das serpentes): a picada envenena; cada flashcard arde; 5 acertos seguidos curam; errar recomeça.
+  {
+    let achado = null
+    for (let a = 1; a < 40 && !achado; a++) for (let sm = 1; sm < 40; sm++) { if (m.inimigoDoAndar(a, sm, 'masmorra').inimigo.envenena) { achado = [a, sm]; break } }
+    assert.ok(achado, 'nenhuma serpente envenena')
+    const [andarV, sementeV] = achado
+    const iv = m.inimigoDoAndar(andarV, sementeV, 'masmorra').inimigo
+    let q = motor.novaPartida(sementeV).estado
+    q = { ...q, andar: andarV, sementeBase: sementeV, vida: 100, vidaMax: 100, encaixes: [], reliquias: [], inimigo: { ...q.inimigo, id: iv.id, vida: 5000, vidaMax: 5000, barreira: 0, fase: 1, rodadas: 0, errosSeguidos: 0, furia: false } }
+    q = { ...q, atual: { ...q.atual, criticoInimigo: false, carregado: false } }
+    const errada = (x) => x.atual.ordem.findIndex((o) => o !== motor.carta(x.atual.id).certa)
+    let r = motor.responder(q, errada(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'envenenado' && x.dano === iv.envenena && x.faltam === m.VENENO.acertos), 'a picada não envenenou')
+    assert.ok(!r.eventos.some((x) => x.tipo === 'veneno'), 'o veneno ardeu no mesmo flashcard da picada')
+    q = motor.seguir(r.estado).estado
+    // acertos seguidos: arde em cada um e passa no quinto
+    for (let k = 1; k <= m.VENENO.acertos; k++) {
+      q = { ...q, inimigo: { ...q.inimigo, vida: 5000 } }
+      const antes = q.vida
+      r = motor.responder(q, certaPos(q))
+      const tique = r.eventos.find((x) => x.tipo === 'veneno')
+      assert.ok(tique && tique.faltam === m.VENENO.acertos - k, 'contagem do veneno')
+      assert.ok(r.estado.vida <= antes - Math.min(iv.envenena, antes - 1) + 20, 'o veneno não ardeu')
+      if (k < m.VENENO.acertos) assert.ok(r.estado.veneno, 'curou cedo')
+      q = motor.seguir(r.estado).estado
+    }
+    assert.ok(r.eventos.some((x) => x.tipo === 'veneno-curado') && !r.estado.veneno, 'cinco acertos não curaram')
+    // o veneno nunca derruba: deixa 1 de vida
+    q = { ...q, vida: 1, veneno: { dano: 9, faltam: 3 }, inimigo: { ...q.inimigo, vida: 5000 } }
+    r = motor.responder(q, certaPos(q))
+    assert.ok(r.estado.vida >= 1, 'o veneno derrubou o herói')
+    q = { ...q, vida: 1, sequencia: 0, atual: { ...q.atual } }
+    const sem = motor.responder({ ...q, veneno: { dano: 9, faltam: 3 } }, errada(q))
+    if (sem.estado.fase !== 'fim') assert.ok(sem.estado.vida >= 1)
+    // errar envenenado recomeça a conta
+    q = { ...motor.seguir(r.estado).estado, vida: 100, veneno: { dano: 2, faltam: 2 } }
+    q = { ...q, andar: 1, sementeBase: 42, atual: { ...q.atual, criticoInimigo: false, carregado: false } }
+    r = motor.responder(q, errada(q))
+    if (!m.inimigoDoAndar(1, 42, 'masmorra').inimigo.envenena) assert.equal(r.estado.veneno.faltam, m.VENENO.acertos, 'o erro não recomeçou a conta')
+  }
+
   console.log('Motor da Batalha: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })

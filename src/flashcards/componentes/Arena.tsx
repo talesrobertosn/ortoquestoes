@@ -1,6 +1,6 @@
 import { Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
-import { atacar, estiloDe, type Impacto } from '../efeitos/ataques'
+import { INVESTIDA, atacar, estiloDe, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
 import { TABULEIRO } from '../efeitos/tabuleiros'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
@@ -10,7 +10,8 @@ import { carregarAcervo } from '../dados/acervo'
 import { autorizarFlashcardCripta, FLASHCARDS_NO_SERVIDOR, iniciarCorrida, RANKING_NO_SERVIDOR, registrarAndar, sincronizarProgresso, vincularFlashcard, type LimiteCripta } from '../servidor'
 import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
-import { Palco, centro } from '../efeitos/palco'
+import { Palco, centro, pixelVfx, precarregarVfx } from '../efeitos/palco'
+import { ClimaEstudo, type Humor } from './ClimaEstudo'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
 import { configurarSom, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
@@ -18,7 +19,7 @@ import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } fro
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
 import { registrarEstudo } from '../aprendizagem'
 import { contarSessaoTerminada } from '../opiniao'
-import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
+import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, VENENO, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
   BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
@@ -234,6 +235,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const [atacando, definirAtacando] = useState(false)
   const [cenarioVisivel, definirCenarioVisivel] = useState(() => inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo.cenario)
   const [estudoPrimeiro, definirEstudoPrimeiro] = useState<string[]>([])
+  const [humorEstudo, definirHumorEstudo] = useState<Humor | null>(null)
 
   const canvasPalco = useRef<HTMLCanvasElement>(null)
   const palco = useRef<Palco | null>(null)
@@ -268,6 +270,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     if (!canvasPalco.current) return
     const p = new Palco(canvasPalco.current)
     palco.current = p
+    precarregarVfx()
     const aoRedimensionar = () => p.redimensionar()
     window.addEventListener('resize', aoRedimensionar)
     return () => { window.removeEventListener('resize', aoRedimensionar); p.limpar() }
@@ -321,10 +324,31 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
 
   const tremer = useCallback((forca: number) => {
-    if (reduzido || !refMesa.current) return
-    refMesa.current.style.setProperty('--tremor', String(forca))
-    animar(refMesa.current.closest('.fc-batalha'), 'fc-treme', 420)
+    const b = refMesa.current?.closest<HTMLElement>('.fc-batalha')
+    if (reduzido || !b) return
+    // a força vai no próprio elemento que treme (antes ficava na mesa e nunca chegava à animação)
+    b.style.setProperty('--tremor', String(Math.min(1.6, forca)))
+    if (forca >= 1.2) animar(b, 'fc-terremoto', 720)
+    else animar(b, 'fc-treme', 420)
   }, [reduzido])
+
+  /**
+   * Investida do crítico: o adversário cresce, salta até o meio da tela e bate
+   * no chão (o terremoto vem no momento da batida). Resolve na batida.
+   */
+  const investir = useCallback(async (g: number, tipo: 'pisao' | 'bote' | 'salto') => {
+    const el = refInimigo.current, alvo = refHeroi.current
+    if (!el || !alvo || reduzido) return true
+    const a = el.getBoundingClientRect(), h = alvo.getBoundingClientRect()
+    const meioX = (h.left + h.width / 2 + window.innerWidth / 2) / 2
+    const ix = meioX - (a.left + a.width / 2)
+    const iy = Math.min(80, (h.top + h.height) - (a.top + a.height)) * 0.6
+    el.style.setProperty('--ix', `${ix}px`)
+    el.style.setProperty('--iy', `${iy}px`)
+    el.style.setProperty('--ie', String(Math.min(2, Math.max(1.4, 260 / Math.max(80, a.height)))))
+    animar(el, `fc-investida--${tipo}`, 820 * fator)
+    return esperar(tipo === 'bote' ? 300 : 440, g)
+  }, [reduzido, fator, esperar])
 
   const sincronizar = useCallback((p: Partida) => {
     definirMostrado((m) => ({ ...m, vida: p.vida, vidaInimigo: p.inimigo.vida, revelada: p.fase !== 'pergunta', heroiCaiu: p.vida <= 0, inimigoCaiu: p.inimigo.vida <= 0 && p.fase !== 'pergunta' }))
@@ -333,6 +357,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   // Só no desenvolvimento: os testes de tela leem o estado para escolher a alternativa certa ou errada.
   useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel,
     // capturas reproduzíveis: leva a partida a um andar e semente, com o adversário do jeito que o motor o prepara
+    quem: (andar: number, semente: number) => inimigoDoAndar(andar, semente, partidaRef.current.modo).inimigo.id,
     ir: (andar: number, semente: number) => {
       const p = partidaRef.current, { inimigo: i } = inimigoDoAndar(andar, semente, p.modo)
       const q = { ...p, andar, sementeBase: semente, inimigo: { ...p.inimigo, id: i.id, vida: i.vida, vidaMax: i.vida, barreira: i.barreira ?? 0, fase: 1 as const, rodadas: 0, errosSeguidos: 0, furia: false } }
@@ -421,25 +446,32 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           posar(refHeroi, 'golpe', 520)
           tocar('disparo', forte ? 1.2 : 1)
           window.setTimeout(() => { if (g === geracao.current) definirMostrado((m) => ({ ...m, revelada: true })) }, 240 * fator)
-          if (P) await P.projetil(topoCarta, para, { cor, nucleo: '#fff6d0', tam: 12 + Math.min(10, combo * 2) + (forte ? 6 : 0), duracao: forte ? 0.46 : 0.38, rastro: forte ? 6 : 3 })
+          // a lâmina de energia em pixel art (a cor conta a história: azul, ouro no combo, fogo no 5+, arcano no golpe duplo)
+          const tom = ev.duplo ? 'arcano' : ev.critico ? 'ouro' : combo >= 5 ? 'fogo' : combo >= COMBO_MINIMO ? 'ouro' : 'azul'
+          const px = pixelVfx()
+          if (P && (ev.critico || ev.duplo) && !reduzido) {
+            // crítico: a espada gigante atravessa a tela na diagonal e rasga o ar
+            animar(refMesa.current?.closest('.fc-batalha'), 'fc-pausa-impacto', 140)
+            if (!reduzido) definirLamina((n) => n + 1)
+            tocar('disparo', 1.3)
+            await P.espadaGigante(para, Math.atan2(Math.min(260, window.innerHeight * 0.3), Math.min(600, window.innerWidth * 0.5)))
+          } else if (P) await P.voar(`lamina-${tom}`, topoCarta, para, { duracao: forte ? 0.32 : 0.28, curva: 0.18, escala: px * (forte ? 1.5 : 1.2), brilho: cor, rastro: cor })
+          P?.efeito(`corte-${tom}`, para, { escala: px * (forte ? 1.5 : 1.1), espelhar: combo % 2 === 0 })
+          P?.efeito(`faisca-${tom}`, para, { escala: px * (forte ? 1.5 : 1.1), atraso: 0.04 })
+          if (ev.critico || ev.duplo) P?.efeito(`corte-${tom}`, para, { escala: px * 1.7, angulo: 1.2, atraso: 0.08, brilho: cor })
           definirAtacando(false)
           if (g !== geracao.current) return
           // 7-13: impacto
           animar(arte(refInimigo), forte ? 'fc-anim-atingido-forte' : 'fc-anim-atingido', 640)
           posar(refInimigo, 'dano', 560)
-          P?.clarao(para, cor, forte ? 380 : medio ? 280 : 200, forte ? 1 : 0.75)
-          P?.fragmentos(para, PALETA_PERSONAGEM[quemInimigo], forte ? 30 : medio ? 20 : 12, forte ? 460 : 330)
-          P?.explosao(para, { cor, cor2: '#fff3c0', n: forte ? 40 : 22, forca: forte ? 380 : 260 })
-          P?.onda(para, cor, forte ? 170 : 110)
+          P?.clarao(para, cor, forte ? 320 : medio ? 230 : 170, forte ? 0.8 : 0.55)
+          P?.fragmentos(para, PALETA_PERSONAGEM[quemInimigo], forte ? 22 : medio ? 14 : 8, forte ? 420 : 300)
+          P?.explosao(para, { cor, cor2: '#fff3c0', n: forte ? 18 : 10, forca: forte ? 340 : 240, formas: ['quadrado', 'brilho'] })
           // raios extras do Mestre do Raio: caem do alto sobre o adversário
           if (ev.raio > 0) window.setTimeout(() => { if (g !== geracao.current) return; P?.raio({ x: para.x + 30, y: Math.max(0, para.y - 260) }, para, '#9fe0ff', 3, 2); tocar('raio'); flutuar(refInimigo.current, `+${ev.raio}`, '#bfe8ff', { y: -40, x: -70, rotulo: 'RAIO' }) }, 140 * fator)
           if (ev.critico || ev.duplo) {
-            // pausa de impacto (hit-stop) e linhas de velocidade convergindo no alvo
-            animar(refMesa.current?.closest('.fc-batalha'), 'fc-pausa-impacto', 140)
-            if (ev.sorte || ev.duplo) P?.linhas(para, cor)
-            P?.corte(para, cor, 96); window.setTimeout(() => P?.corte(para, '#ffffff', 84, 0.6), 70 * fator)
-            // crítico: a tela escurece por um instante e uma lâmina de luz atravessa tudo
-            if (!reduzido) definirLamina((n) => n + 1)
+            // linhas de velocidade convergindo no alvo (a tela já escureceu e a espada passou)
+            P?.linhas(para, cor)
           }
           tocar(ev.critico || ev.duplo ? 'critico' : forte ? 'impacto-forte' : medio ? 'impacto-medio' : 'impacto-leve', 1, quemInimigo)
           tremer(forte ? 1 : medio ? 0.55 : 0.3)
@@ -470,31 +502,43 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           posar(refInimigo, 'golpe', 620)
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
           let impacto: Impacto = { cor: '#ff5a3c', cor2: '#ffb090', material: [], garras: true }
+          const estilo = estiloDe(adv.sprite, adv.variante)
+          // a boca do dragão fica no alto, à esquerda da figura (ele olha para o herói)
+          const caixaInimigo = refInimigo.current?.getBoundingClientRect()
+          const boca = caixaInimigo ? { x: caixaInimigo.left + caixaInimigo.width * 0.2, y: caixaInimigo.top + caixaInimigo.height * 0.32 } : undefined
           if (ev.carregado) {
-            // o Sopro do dragão: a tela escurece e o fogo-fátuo atravessa a arena
             definirFaixa({ texto: ev.carregado, sub: 'Golpe carregado', tom: 'vermelho' })
             tocar('sopro')
-            const fogo = adv.variante === 'escarlate' ? ['#ff9a3c', '#ffe08a'] : adv.variante === 'ancestral' ? ['#c070ff', '#f0c8ff'] : ['#7fe0ff', '#e8ffff']
-            P?.sopro({ x: de.x - 40, y: de.y }, para, fogo[0], fogo[1], 0.6)
-            if (!(await esperar(560, g))) return
+            if (estilo === 'fogo' && P) {
+              // o Sopro do dragão: chamas em pixel art atravessam a arena
+              await soprar(P, boca ?? { x: de.x - 40, y: de.y - 10 }, para, tomFogo(adv.variante), 0.75)
+              tremer(1)
+            } else {
+              if (INVESTIDA[estilo] && !(await investir(g, INVESTIDA[estilo]!))) return
+              if (P) impacto = await atacar(P, estilo, de, para, ev.rajada, { critico: true, variante: adv.variante, tremer })
+            }
+            if (!(await esperar(200, g))) return
             definirFaixa(null)
           } else {
             tocar('golpe-inimigo', 1, quemInimigo)
+            // crítico: o adversário vem até o meio da tela (investida) e solta o superpoder do arquétipo
+            if (ev.critico && INVESTIDA[estilo]) {
+              if (!(await investir(g, INVESTIDA[estilo]!))) return
+              tremer(INVESTIDA[estilo] === 'pisao' ? 1.4 : 1)
+            }
             // cada arquétipo ataca do seu jeito (efeitos/ataques.ts)
-            if (P) impacto = await atacar(P, estiloDe(adv.sprite, adv.variante), de, para, ev.rajada)
+            if (P) impacto = await atacar(P, estilo, de, para, ev.rajada, { critico: ev.critico, variante: adv.variante, tremer, boca })
           }
           if (g !== geracao.current) return
           animar(arte(refHeroi), 'fc-anim-atingido', 640)
           posar(refHeroi, 'dano', 560)
-          if (impacto.garras) P?.garras(para)
-          P?.clarao(para, impacto.cor, 240, 0.8)
-          P?.explosao(para, { cor: impacto.cor, cor2: impacto.cor2, n: 22, forca: 300 })
-          P?.fragmentos(para, ['#9fb0c8', '#f4f8ff', '#3f78c8'], 8, 260)
+          P?.clarao(para, impacto.cor, 200, 0.6)
+          P?.explosao(para, { cor: impacto.cor, cor2: impacto.cor2, n: 10, forca: 260, formas: ['quadrado', 'brilho'] })
+          P?.fragmentos(para, ['#9fb0c8', '#f4f8ff', '#3f78c8'], 6, 240)
           tocar(ev.critico ? 'critico' : 'dano', 1, quemInimigo)
           if (ev.veneno) tocar('veneno')
-          tremer(ev.critico || ev.valor >= 25 ? 1 : 0.6)
+          if (!ev.critico) tremer(ev.valor >= 25 ? 1 : 0.6)
           definirVermelho((v) => v + (ev.critico ? 2 : 1))
-          if (ev.critico) { P?.corte(para, '#ff3a20', 100); window.setTimeout(() => P?.corte(para, '#ffd0c0', 86, 0.6), 70 * fator) }
           flutuar(refHeroi.current, `-${ev.valor}`, '#ff8a6a', { y: -70, grande: ev.critico || !!ev.carregado || ev.valor >= 25, rotulo: ev.carregado ? 'SOPRO' : ev.critico ? 'CRÍTICO' : ev.rajada > 1 ? `${ev.rajada} MORDIDAS` : ev.furia ? 'FÚRIA' : ev.veneno ? `VENENO +${ev.veneno}` : undefined })
           definirMostrado((m) => ({ ...m, vida: Math.max(0, m.vida - ev.valor) }))
           if (!(await esperar(260, g))) return
@@ -669,6 +713,36 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         }
         case 'cristais': {
           ganharNoAltar(ev.valor)
+          break
+        }
+        case 'envenenado': {
+          // a picada deixa o herói Envenenado: nuvem tóxica, aviso e o selo com a conta dos acertos
+          const h = centro(refHeroi.current)
+          P?.efeito('nuvem-veneno', { x: h.x, y: h.y - 10 }, { escala: pixelVfx() })
+          tocar('veneno')
+          flutuar(refHeroi.current, ev.dano > 2 ? `VENENO ×${ev.dano}` : 'ENVENENADO', '#a8f070', { y: -110, x: 30, rotulo: `Acerte ${ev.faltam} seguidos` })
+          if (!(await esperar(260, g))) return
+          break
+        }
+        case 'veneno': {
+          if (ev.valor > 0) {
+            const h = centro(refHeroi.current)
+            for (let k = 0; k < 3; k++) P?.efeito('bolhas', { x: h.x + (k - 1) * 22, y: h.y - 10 }, { escala: pixelVfx(), atraso: k * 0.08, vida: 0.9, laco: true, some: 0.3 })
+            animar(arte(refHeroi), 'fc-anim-veneno', 600)
+            tocar('veneno')
+            flutuar(refHeroi.current, `-${ev.valor}`, '#a8f070', { y: -40, x: -50, rotulo: ev.faltam > 0 ? `VENENO · faltam ${ev.faltam}` : 'VENENO' })
+            definirMostrado((m) => ({ ...m, vida: Math.max(1, m.vida - ev.valor) }))
+            if (!(await esperar(200, g))) return
+          }
+          break
+        }
+        case 'veneno-curado': {
+          const h = centro(refHeroi.current)
+          P?.subir(h, '#b8ff8a', 26, 70)
+          for (let k = 0; k < 4; k++) P?.efeito('coracao', { x: h.x + (k - 1.5) * 26, y: h.y }, { escala: pixelVfx(), vy: -90 - k * 12, atraso: k * 0.07, vida: 1, laco: true, some: 0.4 })
+          tocar('cura')
+          flutuar(refHeroi.current, 'VENENO CURADO', '#c8ffa0', { y: -110, rotulo: '5 acertos seguidos' })
+          if (!(await esperar(260, g))) return
           break
         }
         case 'queimadura': {
@@ -955,6 +1029,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     <ModalJogo titulo={NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar}>
       <div className={classes} data-cenario={cenarioVisivel} data-modo={partida.modo}>
         <Cenario cena={modo === 'estudo' ? 'biblioteca' : cenarioVisivel} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
+        {modo === 'estudo' && humorEstudo && humorEstudo.tipo !== 'calmo' && <ClimaEstudo humor={humorEstudo} reduzido={reduzido} />}
 
         <header className="fc-topo">
           <div className="fc-abas" role="tablist" aria-label="Modo">
@@ -1001,7 +1076,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         </header>
 
         {modo === 'estudo' ? (
-          <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} />
+          <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} aoHumor={definirHumorEstudo} />
         ) : (
           <div className="fc-batalha">
             {/* Adversário em cena, de pé sobre a arena */}
@@ -1080,8 +1155,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
               <div className="fc-heroi">
-                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
+                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '') + (partida.veneno ? ' fc-ator--envenenado' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
+                  {partida.veneno && <span className="fc-envenenado" aria-hidden="true" style={{ backgroundImage: `url(${recurso('flashcards/vfx/bolhas.png')})` }} />}
                   <button type="button" className="fc-ator__toque" aria-label="Ver o seu herói: atributos, poderes e relíquias" onClick={() => { tocar('selecao'); definirPainel('heroi') }} />
                 </Ator>
                 <div className="fc-heroi__dados">
@@ -1095,6 +1171,14 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     </span>
                   </div>
                   <BarraVida atual={mostrado.vida} maximo={partida.vidaMax} tipo="heroi" rotulo="Sua vida" />
+                  {partida.veneno && (
+                    <div className="fc-veneno-selo" role="status" title={`Envenenado: cada flashcard tira ${partida.veneno.dano} de vida (nunca abaixo de 1). Acerte ${VENENO.acertos} seguidos para curar; um erro recomeça a conta.`}>
+                      <b>Envenenado</b><span>−{partida.veneno.dano} por flashcard</span>
+                      <span className="fc-veneno-selo__conta" aria-label={`Faltam ${partida.veneno.faltam} acertos seguidos`}>
+                        {Array.from({ length: VENENO.acertos }, (_, i) => <i key={i} className={i < VENENO.acertos - partida.veneno!.faltam ? 'feito' : ''} />)}
+                      </span>
+                    </div>
+                  )}
                   <div className="fc-encaixes" ref={refSlots} aria-label="Poderes equipados">
                     {Array.from({ length: ENCAIXES }, (_, i) => {
                       const e = partida.encaixes[i]

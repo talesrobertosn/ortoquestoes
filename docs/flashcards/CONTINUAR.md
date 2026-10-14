@@ -6,7 +6,34 @@
 
 Atualizado em 13/10/2026, 21h. Tudo o que foi feito está mesclado na base e publicado; não há PR aberto.
 
-## PAROU AQUI (14/10/2026): leia isto primeiro
+## PAROU AQUI (14/10/2026, madrugada): leia isto primeiro
+
+**Lista de ideias com checklist (o plano):** [../PLANO-DE-IDEIAS.md](../PLANO-DE-IDEIAS.md). Marque o que fizer.
+
+Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com PR para a base `claude/pdfs-questoes-tp64dr`. O PR #227 já foi mesclado.
+
+**Feito depois do #227:**
+- **Golpes em pixel art:**
+  - `scripts/sprites/vfx.py` gera `public/flashcards/vfx/*.png` e `src/flashcards/efeitos/vfxIndice.ts`.
+  - O `Palco` (`efeitos/palco.ts`) ganhou `efeito`, `voar`, `rasgo` e `espadaGigante`.
+  - O ataque de cada vilão (comum e crítico) está em `efeitos/ataques.ts`; a investida (CSS `fc-investida--*`) e o terremoto (`fc-terremoto`), na `Arena.tsx`.
+  - Para conferir: `python3 scripts/sprites/vfx.py` (gera e salva a prévia) e `node scripts/tmp-tela/golpes.mjs` (capturas; fica fora do git).
+- **Envenenado:**
+  - campo `envenena` no bestiário;
+  - `Partida.veneno`, `VENENO` e os eventos `envenenado`, `veneno` e `veneno-curado` em `regras.ts`;
+  - testes em `fixtures/testar_flashcards.mjs`;
+  - na tela: selo sob a vida, bolhas e brilho verde no herói.
+
+**Feito: humor da Biblioteca** (ideias 26 a 31 do plano; `componentes/ClimaEstudo.tsx`, ligado em `Estudo.tsx` e `Arena.tsx`):
+- chamas no nome com 3, 6 e 9 acertos seguidos;
+- glória com 20;
+- chuva com 3 erros seguidos e tempestade com 5;
+- névoa na hesitação;
+- arco-íris depois da chuva.
+
+**Próximo:** rankings temáticos (ideias 58 a 60). Depois: andar a céu aberto estilo Stardew (ideia 42).
+
+## Estado anterior (14/10/2026, antes do #227 ser mesclado)
 
 Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com o PR #227 aberto para a base `claude/pdfs-questoes-tp64dr`. O merge está autorizado pelo Tales quando o CI "verificar" ficar verde.
 

@@ -5,7 +5,50 @@
  * confete. Coordenadas em pixels da janela (getBoundingClientRect).
  */
 
+import { recurso } from '../../config'
+import { VFX } from './vfxIndice'
+
 type Ponto = { x: number; y: number }
+
+/**
+ * Efeito em pixel art (tiras assadas por scripts/sprites/vfx.py): toca os
+ * quadros uma vez (ou em laço enquanto voa), em escala inteira, sem suavizar.
+ */
+interface Fx {
+  nome: string; x: number; y: number; escala: number; angulo: number; espelhar: boolean
+  t: number; atraso: number; vida: number; laco: boolean; alfa: number
+  vx: number; vy: number; gravidade: number; giro: number; atrito: number
+  /** Viagem de A a B (projéteis): resolve na chegada. */
+  viagem?: { de: Ponto; para: Ponto; controle: Ponto; duracao: number; orientar: boolean; aoChegar: () => void; rastro?: string }
+  brilho?: string
+  /** Desliza de onde nasceu até `ate` em `em` segundos (aceleração, como uma mordida) e fica. */
+  ate?: { de: Ponto; para: Ponto; em: number; curva: 'entra' | 'sai' }
+  /** Some aos poucos nos últimos segundos. */
+  some: number
+}
+/** Rasgo da espada gigante: uma linha de pixels que cruza a tela e se fecha. */
+interface Rasgo { de: Ponto; para: Ponto; vida: number; total: number; px: number; cor: string; cor2: string; abre: number }
+
+const imagensVfx = new Map<string, HTMLImageElement>()
+function imagemVfx(nome: string) {
+  let im = imagensVfx.get(nome)
+  if (!im) {
+    im = new Image()
+    im.decoding = 'async'
+    im.src = recurso(`flashcards/vfx/${nome}.png`)
+    imagensVfx.set(nome, im)
+  }
+  return im
+}
+/** Baixa as tiras de antemão (na entrada da arena), para o primeiro golpe não piscar vazio. */
+export function precarregarVfx(nomes: string[] = Object.keys(VFX)) {
+  for (const n of nomes) if (VFX[n]) imagemVfx(n)
+}
+/** Tamanho do pixel do efeito na tela: 2 no celular, 3 no notebook, 4 em telas grandes. */
+export function pixelVfx() {
+  if (typeof window === 'undefined') return 3
+  return Math.max(2, Math.min(4, Math.round(Math.min(window.innerWidth, window.innerHeight * 1.3) / 300)))
+}
 
 interface Particula {
   x: number; y: number; vx: number; vy: number
@@ -62,6 +105,8 @@ export class Palco {
   private projeteis: Projetil[] = []
   private claroes: Clarao[] = []
   private raios: Raio[] = []
+  private fxs: Fx[] = []
+  private rasgos: Rasgo[] = []
   private quadro = 0
   private anterior = 0
   private dpr = 1
@@ -82,8 +127,9 @@ export class Palco {
 
   /** Para tudo e limpa a tela (pular animação, sair da partida). */
   limpar() {
-    this.particulas = []; this.ondas = []; this.cortes = []; this.claroes = []; this.raios = []
-    const chegadas = this.projeteis.map((p) => p.aoChegar)
+    this.particulas = []; this.ondas = []; this.cortes = []; this.claroes = []; this.raios = []; this.rasgos = []
+    const chegadas = [...this.projeteis.map((p) => p.aoChegar), ...this.fxs.flatMap((f) => (f.viagem ? [f.viagem.aoChegar] : []))]
+    this.fxs = []
     this.projeteis = []
     chegadas.forEach((f) => f())
     cancelAnimationFrame(this.quadro); this.quadro = 0
@@ -101,7 +147,7 @@ export class Palco {
       this.anterior = agora
       this.atualizar(dt)
       this.desenhar()
-      const vivos = this.particulas.length + this.ondas.length + this.cortes.length + this.projeteis.length + this.claroes.length + this.raios.length
+      const vivos = this.particulas.length + this.ondas.length + this.cortes.length + this.projeteis.length + this.claroes.length + this.raios.length + this.fxs.length + this.rasgos.length
       this.quadro = vivos ? requestAnimationFrame(passo) : 0
       if (!vivos) { this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height); this.canvas.style.visibility = 'hidden' }
     }
@@ -145,6 +191,35 @@ export class Palco {
     }
     this.projeteis = this.projeteis.filter((p) => p.t < 1)
     chegaram.forEach((p) => p.aoChegar())
+    for (const r of this.rasgos) r.vida -= dt
+    this.rasgos = this.rasgos.filter((r) => r.vida > 0)
+    const chegou: Array<() => void> = []
+    for (const f of this.fxs) {
+      if (f.atraso > 0) { f.atraso -= dt; continue }
+      f.t += dt
+      if (f.viagem) {
+        const v = f.viagem, u = Math.min(1, f.t / v.duracao)
+        const a = bezier(v.de, v.controle, v.para, u)
+        if (v.orientar) {
+          // indo para a esquerda, espelha em vez de virar de cabeça para baixo (a luz continua no alto)
+          const ang = Math.atan2(a.y - f.y, a.x - f.x)
+          if (a.x !== f.x || a.y !== f.y) { f.espelhar = Math.cos(ang) < 0; f.angulo = f.espelhar ? ang - Math.PI : ang }
+        } else f.angulo += f.giro * dt
+        f.x = a.x; f.y = a.y
+        if (v.rastro && Math.random() < 0.8) this.particulas.push({ x: f.x + (Math.random() - 0.5) * 8, y: f.y + (Math.random() - 0.5) * 8, vx: 0, vy: 0, vida: 0.28, total: 0.28, tam: f.escala * 1.5, cor: v.rastro, forma: 'quadrado', gravidade: 0, atrito: 1 })
+        if (u >= 1) { chegou.push(v.aoChegar); f.vida = 0 }
+      } else if (f.ate) {
+        const u = Math.min(1, f.t / f.ate.em), e = f.ate.curva === 'entra' ? u * u * u : 1 - Math.pow(1 - u, 3)
+        f.x = f.ate.de.x + (f.ate.para.x - f.ate.de.x) * e; f.y = f.ate.de.y + (f.ate.para.y - f.ate.de.y) * e
+      } else {
+        if (f.atrito < 1) { const k = Math.pow(f.atrito, dt * 60); f.vx *= k; f.vy *= k }
+        f.vy += f.gravidade * dt
+        f.x += f.vx * dt; f.y += f.vy * dt
+        f.angulo += f.giro * dt
+      }
+    }
+    this.fxs = this.fxs.filter((f) => f.atraso > 0 || f.t < f.vida)
+    chegou.forEach((f) => f())
   }
 
   private desenhar() {
@@ -243,6 +318,122 @@ export class Palco {
     }
     c.globalAlpha = 1
     c.globalCompositeOperation = 'source-over'
+    this.desenharPixel(c)
+  }
+
+  /** Camada de pixel art: rasgos e efeitos assados, nítidos, por cima da luz. */
+  private desenharPixel(c: CanvasRenderingContext2D) {
+    if (!this.fxs.length && !this.rasgos.length) return
+    c.imageSmoothingEnabled = false
+    for (const r of this.rasgos) {
+      const prog = 1 - r.vida / r.total
+      // a linha se desenha rápido (20% do tempo), engrossa e se fecha em pixels
+      const corre = Math.min(1, prog / 0.2)
+      const larg = Math.max(1, Math.round((prog < 0.35 ? 1 + r.abre * Math.sin(Math.min(1, prog / 0.35) * Math.PI) : 1 - (prog - 0.35) / 0.65 * 0.9) * r.px * 2))
+      const fx = r.de.x + (r.para.x - r.de.x) * corre, fy = r.de.y + (r.para.y - r.de.y) * corre
+      const L = Math.hypot(fx - r.de.x, fy - r.de.y), passos = Math.ceil(L / r.px)
+      c.globalAlpha = prog > 0.7 ? 1 - (prog - 0.7) / 0.3 : 1
+      for (let i = 0; i <= passos; i++) {
+        const t = i / Math.max(1, passos)
+        const x = Math.round((r.de.x + (fx - r.de.x) * t) / r.px) * r.px, y = Math.round((r.de.y + (fy - r.de.y) * t) / r.px) * r.px
+        c.fillStyle = r.cor2; c.fillRect(x - larg / 2 - r.px, y - larg / 2 - r.px, larg + r.px * 2, larg + r.px * 2)
+      }
+      for (let i = 0; i <= passos; i++) {
+        const t = i / Math.max(1, passos)
+        const x = Math.round((r.de.x + (fx - r.de.x) * t) / r.px) * r.px, y = Math.round((r.de.y + (fy - r.de.y) * t) / r.px) * r.px
+        c.fillStyle = r.cor; c.fillRect(x - larg / 2, y - larg / 2, larg, larg)
+      }
+    }
+    for (const f of this.fxs) {
+      if (f.atraso > 0) continue
+      const m = VFX[f.nome], im = imagemVfx(f.nome)
+      if (!m || !im.complete || !im.naturalWidth) continue
+      const k = f.laco ? Math.floor((f.t * 1000) / m.ms) % m.n : Math.min(m.n - 1, Math.floor((f.t / f.vida) * m.n))
+      const a = f.some > 0 && f.vida - f.t < f.some ? Math.max(0, (f.vida - f.t) / f.some) : 1
+      if (f.brilho) {
+        c.globalCompositeOperation = 'lighter'; c.globalAlpha = 0.35 * a * f.alfa
+        const r = Math.max(m.w, m.h) * f.escala * 0.9
+        c.drawImage(brilho(f.brilho, false), f.x - r, f.y - r, r * 2, r * 2)
+        c.globalCompositeOperation = 'source-over'
+      }
+      c.globalAlpha = a * f.alfa
+      c.save()
+      c.translate(Math.round(f.x), Math.round(f.y))
+      if (f.angulo) c.rotate(f.angulo)
+      if (f.espelhar) c.scale(-1, 1)
+      c.drawImage(im, k * m.w, 0, m.w, m.h, -m.ancora[0] * f.escala, -m.ancora[1] * f.escala, m.w * f.escala, m.h * f.escala)
+      c.restore()
+    }
+    c.globalAlpha = 1
+    c.imageSmoothingEnabled = true
+  }
+
+  /** Toca um efeito de pixel art uma vez, no ponto dado. */
+  efeito(nome: string, em: Ponto, o: { escala?: number; angulo?: number; espelhar?: boolean; atraso?: number; velocidade?: number; alfa?: number; brilho?: string; vx?: number; vy?: number; gravidade?: number; giro?: number; vida?: number; laco?: boolean; some?: number; atrito?: number; ate?: Ponto; em?: number; curva?: 'entra' | 'sai' } = {}) {
+    const m = VFX[nome]
+    if (this.reduzido || !m) return
+    this.fxs.push({
+      nome, x: em.x, y: em.y, escala: o.escala ?? pixelVfx(), angulo: o.angulo ?? 0, espelhar: !!o.espelhar,
+      t: 0, atraso: o.atraso ?? 0, vida: o.vida ?? (m.n * m.ms) / 1000 / (o.velocidade ?? 1), laco: o.laco ?? false, alfa: o.alfa ?? 1,
+      vx: o.vx ?? 0, vy: o.vy ?? 0, gravidade: o.gravidade ?? 0, giro: o.giro ?? 0, atrito: o.atrito ?? 1, brilho: o.brilho, some: o.some ?? 0,
+      ate: o.ate ? { de: { ...em }, para: o.ate, em: o.em ?? 0.2, curva: o.curva ?? 'sai' } : undefined,
+    })
+    this.animar()
+  }
+
+  /** Projétil em pixel art de A a B (gira para o rumo, ou roda no próprio eixo). Resolve na chegada. */
+  voar(nome: string, de: Ponto, para: Ponto, o: { duracao?: number; curva?: number; escala?: number; orientar?: boolean; giro?: number; rastro?: string; brilho?: string } = {}): Promise<void> {
+    return new Promise((resolver) => {
+      if (this.reduzido || !VFX[nome]) { resolver(); return }
+      const curva = o.curva ?? 0.2
+      const meio = { x: (de.x + para.x) / 2, y: (de.y + para.y) / 2 }
+      const dx = para.x - de.x, dy = para.y - de.y
+      const controle = { x: meio.x - dy * curva, y: meio.y + dx * curva - Math.abs(dx) * 0.1 }
+      const duracao = o.duracao ?? 0.36
+      this.fxs.push({
+        nome, x: de.x, y: de.y, escala: o.escala ?? pixelVfx(), angulo: Math.atan2(dy, dx), espelhar: false,
+        t: 0, atraso: 0, vida: duracao + 1, laco: true, alfa: 1, vx: 0, vy: 0, gravidade: 0, giro: o.giro ?? 0, atrito: 1, brilho: o.brilho, some: 0,
+        viagem: { de, para, controle, duracao, orientar: o.orientar ?? true, aoChegar: resolver, rastro: o.rastro },
+      })
+      this.animar()
+    })
+  }
+
+  /** Rasgo de pixels de A a B (a espada gigante do crítico). */
+  rasgo(de: Ponto, para: Ponto, cor = '#ffffff', cor2 = '#ffcf4a', duracao = 0.62, abre = 2.4) {
+    if (this.reduzido) return
+    this.rasgos.push({ de, para, vida: duracao, total: duracao, px: pixelVfx(), cor, cor2, abre })
+    this.animar()
+  }
+
+  /**
+   * A espada gigante do herói atravessa a tela na diagonal, passando pelo
+   * alvo, e deixa um rasgo de luz. Resolve quando a lâmina passa pelo alvo.
+   */
+  espadaGigante(alvo: Ponto, angulo = 0.42): Promise<void> {
+    return new Promise((resolver) => {
+      if (this.reduzido || !VFX.espada) { resolver(); return }
+      const W = window.innerWidth, H = window.innerHeight
+      const L = Math.hypot(W, H) * 0.75
+      const ux = Math.cos(angulo), uy = Math.sin(angulo)
+      const de = { x: alvo.x - ux * L, y: alvo.y - uy * L }, para = { x: alvo.x + ux * L * 0.9, y: alvo.y + uy * L * 0.9 }
+      const px = pixelVfx(), escala = Math.max(3, Math.round(px * 1.7))
+      const m = VFX.espada
+      // a ponta lidera: o sprite (âncora no pomo) anda até a ponta passar do fim
+      const duracao = 0.26
+      let resolvido = false
+      this.fxs.push({
+        nome: 'espada', x: de.x, y: de.y, escala, angulo, espelhar: false, t: 0, atraso: 0, vida: duracao + 0.12, laco: false, alfa: 1,
+        vx: (para.x - de.x) / duracao, vy: (para.y - de.y) / duracao, gravidade: 0, giro: 0, atrito: 1, brilho: '#fff1b0', some: 0.12,
+      })
+      // o rasgo segue a ponta
+      const ponta = m.w * escala
+      this.rasgo({ x: de.x + ux * ponta, y: de.y + uy * ponta }, { x: para.x + ux * ponta, y: para.y + uy * ponta }, '#ffffff', '#ffcf4a', 0.75, 2.6)
+      // a ponta passa pelo alvo quando o pomo está a um comprimento de lâmina antes dele
+      const t = Math.max(0, L - ponta) / (L * 1.9) * duracao * 1000
+      window.setTimeout(() => { if (!resolvido) { resolvido = true; resolver() } }, Math.max(40, t))
+      this.animar()
+    })
   }
 
   /** Esfera de energia com rastro, em arco, de um ponto a outro. Resolve na chegada. */

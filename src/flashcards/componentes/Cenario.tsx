@@ -24,7 +24,7 @@ function desfocar(src: HTMLCanvasElement, fator: number): HTMLCanvasElement {
 function feixes(c: CanvasRenderingContext2D, W: number, H: number, cena: Cena, clima: Clima) {
   const cor = cena === 'biblioteca' ? '255,226,170' : cena === 'masmorra' ? '170,200,255' : clima === 'entardecer' ? '255,196,150' : cena === 'covil' ? '255,170,110' : '255,236,200'
   // a floresta já traz os próprios feixes de sol (camada luz): aqui só um reforço leve
-  const forca = clima === 'chuva' ? 0.08 : clima === 'noite' ? 0.2 : cena === 'masmorra' ? 0.3 : cena === 'biblioteca' ? 0.15 : cena === 'campo' ? 0.3 : 0.8
+  const forca = clima === 'chuva' ? 0.08 : clima === 'noite' ? 0.2 : cena === 'masmorra' ? 0.3 : cena === 'biblioteca' ? 0.15 : cena === 'campo' || cena === 'jardim' ? 0.3 : 0.8
   const t = document.createElement('canvas'); t.width = W; t.height = H
   const f = t.getContext('2d')!
   const ang = (cena === 'biblioteca' ? 170 : 118) * Math.PI / 180
@@ -128,7 +128,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
       c.save(); c.globalCompositeOperation = 'screen'; c.globalAlpha = pintado ? 0.35 : 0.95; c.imageSmoothingEnabled = true
       c.drawImage(desfocar(planos.brilho, 4), 0, 0, W, H); c.restore()
       feixes(c, W, H, cena, clima)
-      climaENevoa(c, W, H, clima, cena === 'campo')
+      climaENevoa(c, W, H, clima, cena === 'campo' || cena === 'jardim')
       // frente desfocada e escurecida (mais perto da câmera)
       const fr = document.createElement('canvas'); fr.width = W; fr.height = H
       const f = fr.getContext('2d')!; f.imageSmoothingEnabled = true
