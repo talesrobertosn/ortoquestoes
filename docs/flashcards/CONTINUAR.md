@@ -31,10 +31,10 @@ Leia nesta ordem:
   - correção do topo no celular;
   - a escolha "entrar com ou sem som" agora é perguntada uma vez só por aparelho. Fica guardada em `flashcards:som-escolhido`, nas chaves globais de `estado/armazenamento.ts`.
 - **O Tales confirmou:** o som funciona no celular e a parte 19 do SQL já foi colada no Supabase.
-- **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). O goblin, o esqueleto, o ent (Guardião da Fise), o mímico e o Cogumelo da Necrose (monstro novo) já estão prontos (`scripts/sprites/goblin.py`, `esqueleto.py`, `ent.py`, `mimico.py` e `cogumelo.py`); siga pela aranha e pelo raptor. Depois, pela ordem do plano:
-  - sons próprios dos golpes novos (ideia 17);
-  - revisão dos botões (ideia 61);
-  - cenários pintados que faltam (ideia 51).
+- **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). O goblin, o esqueleto, o ent (Guardião da Fise), o mímico, a aranha e o Cogumelo da Necrose (monstro novo) já estão prontos (`scripts/sprites/goblin.py`, `esqueleto.py`, `ent.py`, `mimico.py`, `aranha.py` e `cogumelo.py`). **Os monstros estão em pausa por pedido do Tales** ("vamos continuar com mais monstrinhos futuramente"); só retome quando ele pedir. Depois, pela ordem do plano:
+  - ~~sons próprios dos golpes novos (ideia 17)~~: feitos;
+  - ~~revisão dos botões (ideia 61)~~: feita;
+  - cenários pintados que faltam (ideia 51): o Salão, a Caverna, o Laboratório e a Catacumba já foram pintados (`scripts/cenarios/salao.py`, `caverna.py`, `laboratorio.py` e `catacumba.py`); os próximos são templo, passarela, forja e coliseu. **Nenhum enfeite de cenário pode ter osso, caveira ou outra anatomia** (regra de `docs/flashcards/README.md`).
 
 ## Antes (14/10/2026, madrugada)
 

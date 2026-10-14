@@ -78,7 +78,8 @@ O quadro típico é de 128×128, com a âncora nos pés.
 | **goblin** (Goblin da Fratura) | ✅ chibi (14/10) | `goblin.py` | verde-limão, olhos semicerrados, faixa de gesso, tala no braço, porrete com parafusos de osso |
 | **esqueleto** (Esqueleto do Metacarpo) | ✅ sóbrio (14/10) | `esqueleto.py` | escudo redondo de madeira, espada curta enferrujada, placa com parafusos no fêmur, desaba num monte de ossos |
 | **ent** (Guardião da Fise, chefe) | ✅ brutamontes (14/10) | `ent.py` | toco quebrado de um olho só, a fise como faixa de seiva que brilha, galhos-garra, musgo, cogumelos e broto que floresce na vitória; tela maior de chefe (196×150) |
-| raptor, corvo, morcego, aranha, escaravelho | ⬜ | detalhado | ref. 1 (manchas e carapaça); a aranha pode virar o "cogumelo-aranha" da ref. 4 |
+| **aranha** (Aranha dos Ligamentos) | ✅ detalhado (14/10) | `aranha.py` | quitina roxa com manchas, oito patas de joelho alto, seis olhos, quelíceras que pingam veneno, o "X" dos cruzados no abdome e teia no golpe |
+| raptor, corvo, morcego, escaravelho | ⬜ | detalhado | ref. 1 (manchas e carapaça); a aranha pode virar o "cogumelo-aranha" da ref. 4 |
 | **mímico** (Mímico do Arsenal) | ✅ detalhado (14/10) | `mimico.py` | caixa de instrumentais de aço escovado com cantoneiras de latão e correias, dentes (alguns são bisturis), língua comprida, olhos acesos, pinça saindo da boca e moedas |
 | cavaleiro, rei, arconte, espectro, quimera, harpia, mão, leviatã | ⬜ | brutamontes HD (chefes) | ref. 2: massa, placas, faixas douradas |
 | **Cogumelo da Necrose** (novo, Jardim) | ✅ chibi (14/10) | `cogumelo.py` | chapéu vinho com pintas pálidas e um ossinho, olhos vermelhos bravos, pulinhos; envenena com esporos |
@@ -129,5 +130,7 @@ Seguem o humor do bestiário:
    - acrescentar o nome em `Besta` e um desenho de reserva simples em `efeitos/bestas.ts`, com `TAMANHO_BESTAS`, `ORIGEM_BESTAS` e `PALETA_BESTAS`, porque a escala da folha assada usa a altura do desenho antigo;
    - acrescentar o nome em `SpriteInimigo` e a entrada no `bestiario.ts`;
    - ligar `ESTILO` em `ataques.ts`, `FAMILIA_SOM` em `sons.ts` e `PEQUENOS` em `Arena.tsx`.
-5. ~~**Mímico**~~ (feito em `mimico.py`) e **aranha** (refs. 1 e 4).
+5. ~~**Mímico** e **aranha**~~: feitos em `mimico.py` e `aranha.py`.
+
+> **Pausa pedida pelo Tales (14/10/2026):** "depois da aranha já tá bom de monstros, vamos continuar com mais monstrinhos futuramente". Não comece um monstro novo sem ele pedir. Quando ele pedir, siga daqui.
 6. **Chefes humanoides** no estilo brutamontes (ref. 2).

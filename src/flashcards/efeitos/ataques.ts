@@ -19,6 +19,7 @@
  * é coreografada pela Arena, que conhece o DOM; aqui ficam só os efeitos.
  */
 import { pixelVfx, type Palco } from './palco'
+import { tocar } from './sons'
 
 type Ponto = { x: number; y: number }
 export type Estilo = 'pedra' | 'veneno' | 'pancada' | 'garra' | 'mergulho' | 'magia' | 'feixe' | 'olhar' | 'gosma' | 'fogo' | 'mimico'
@@ -122,6 +123,7 @@ export async function atacar(P: Palco, estilo: Estilo, de: Ponto, para: Ponto, r
       case 'pedra': {
         if (crit && k === 0) {
           // o pedregulho musgoso cai do alto da tela em cima do herói
+          tocar('pedregulho', P.reduzido ? 0 : 1)
           await P.voar('pedregulho', { x: alvo.x + 70, y: -120 }, alvo, { duracao: 0.42, curva: 0.05, escala: px * 1.6, orientar: false, giro: 7 })
           P.efeito('rachadura', chao, { escala: px * 1.4 })
           P.efeito('poeira', { x: chao.x - 50, y: chao.y }, { escala: px * 1.3, espelhar: true })
@@ -174,6 +176,7 @@ export async function atacar(P: Palco, estilo: Estilo, de: Ponto, para: Ponto, r
       case 'garra': {
         if (crit && k === 0 && estilo === 'mimico') {
           // a tampa do baú com dentes fecha na tela inteira
+          tocar('mandibula')
           const esc = Math.max(2, Math.round(px * 1.5)), larg = 64 * esc, n = Math.ceil(W / larg) + 1
           const H = window.innerHeight, meio = H / 2
           for (let j = 0; j < n; j++) {
@@ -253,6 +256,7 @@ export async function atacar(P: Palco, estilo: Estilo, de: Ponto, para: Ponto, r
       case 'fogo': {
         const tom = tomFogo(o.variante)
         if (crit && k === 0) {
+          tocar('sopro')
           await soprar(P, o.boca ?? { x: de.x - 40, y: de.y - 10 }, alvo, tom, 0.7)
           P.efeito(`faisca-${tom === 'fatuo' ? 'azul' : tom === 'ancestral' ? 'arcano' : 'fogo'}`, alvo, { escala: px * 1.5 })
           tremer(1.1)

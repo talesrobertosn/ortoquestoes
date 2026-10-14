@@ -37,7 +37,7 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 14. [x] Efeitos de cura em pixel art (corações subindo) também na Batalha, não só no veneno.
 15. [x] Golpe final: o vilão derrubado some num "puf" de fumaça em pixel art, com estrelas, maior no chefe.
 16. [ ] Número de dano em fonte pixel (bitmap própria), com quique e contorno.
-17. [ ] Som próprio para cada golpe novo: espada gigante, mandíbula, pedregulho e sopro.
+17. [x] Som próprio para cada golpe novo (14/10): `espada-gigante`, `mandibula`, `pedregulho` e o `sopro` com crepitar, em `efeitos/sons.ts`, tocados por `ataques.ts` e pela Arena.
 18. [ ] Variante do pedregulho por golem: cristal, obsidiana, rubro e cimento.
 
 ## B. Superpoderes dos vilões (mecânica)
@@ -82,7 +82,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 48. [ ] Jardim dos curandeiros: estufa de vidro com plantas medicinais.
 49. [ ] Ciclo de dia e noite no andar a céu aberto.
 50. [ ] Animais vivos nos cenários: pássaros, coelhos, peixes pulando no lago e vaga-lumes à noite.
-51. [ ] Cenários que faltam pintar: Torre, Salão, deserto dos ossos, pântano da necrose, observatório, fortaleza das placas e trono do dragão.
+51. [~] Cenários que faltam pintar: Torre, deserto dos ossos, pântano da necrose, observatório, fortaleza das placas e trono do dragão. O **Salão do Trono** ficou pronto em 14/10 (`scripts/cenarios/salao.py`): colunas de capitel dourado, vitral redondo com feixes coloridos, tapete vermelho até o trono, estandartes e cortinas. A **Caverna dos Cristais** também (`scripts/cenarios/caverna.py`): rocha em névoa azul, cristais violeta e ciano, lago subterrâneo, cogumelos luminosos e a fenda de luz. E o **Laboratório do Alquimista** (`scripts/cenarios/laboratorio.py`): prateleiras de frascos, caldeirão verde, alambique, esfera armilar de latão e o negatoscópio com o molde de uma placa e parafusos (só o implante, sem anatomia). E a **Catacumba das Velas** (`scripts/cenarios/catacumba.py`): portão de ferro com luz verde, sarcófagos de pedra, urnas, velas, teias e névoa, sem ossos nem caveiras. Ainda sem pintura no jogo: templo, passarela, forja, coliseu, treino, torre e arquivo.
 
 ## E. Vilões novos (o Tales manda o estilo antes)
 
@@ -101,7 +101,12 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 ## G. Botões, interface e experiência
 
-61. [ ] Revisão geral dos botões: estados de toque, foco, som, pressionado em pixel e tamanhos no celular.
+61. [x] Revisão geral dos botões (14/10), medida com Playwright em 390×844:
+    - **Área de toque:** os botões redondos do topo e as abas passaram a ter cerca de 44 px de área de toque, sem mudar o desenho.
+    - **Foco no teclado:** contorno de foco visível em todos os botões do topo, também fora da arena.
+    - **No toque:** o "flutuar" do hover não fica mais preso depois do dedo sair.
+    - **No iPhone:** o "afundar" do pressionado funciona.
+    - **Som:** os botões já tocavam o próprio som e não precisaram de mudança.
 62. [ ] Transições entre telas com "cortina de pixels".
 63. [ ] Tutorial de 30 segundos jogável na primeira entrada (o Preceptor explica).
 64. [ ] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.

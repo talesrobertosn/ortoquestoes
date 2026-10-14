@@ -450,11 +450,12 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           // a lâmina de energia em pixel art (a cor conta a história: azul, ouro no combo, fogo no 5+, arcano no golpe duplo)
           const tom = ev.duplo ? 'arcano' : ev.critico ? 'ouro' : combo >= 5 ? 'fogo' : combo >= COMBO_MINIMO || depois.estagio >= 4 ? 'ouro' : 'azul'
           const px = pixelVfx()
+          // o som da espada gigante toca mesmo com "Reduzir movimento" (só a animação fica de fora)
+          if (ev.critico || ev.duplo) tocar('espada-gigante')
           if (P && (ev.critico || ev.duplo) && !reduzido) {
             // crítico: a espada gigante atravessa a tela na diagonal e rasga o ar
             animar(refMesa.current?.closest('.fc-batalha'), 'fc-pausa-impacto', 140)
             if (!reduzido) definirLamina((n) => n + 1)
-            tocar('disparo', 1.3)
             await P.espadaGigante(para, Math.atan2(Math.min(260, window.innerHeight * 0.3), Math.min(600, window.innerWidth * 0.5)))
           } else if (P) await P.voar(`lamina-${tom}`, topoCarta, para, { duracao: forte ? 0.32 : 0.28, curva: 0.18, escala: px * (forte ? 1.5 : 1.2), brilho: cor, rastro: cor })
           P?.efeito(`corte-${tom}`, para, { escala: px * (forte ? 1.5 : 1.1), espelhar: combo % 2 === 0 })
@@ -509,7 +510,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           const boca = caixaInimigo ? { x: caixaInimigo.left + caixaInimigo.width * 0.2, y: caixaInimigo.top + caixaInimigo.height * 0.32 } : undefined
           if (ev.carregado) {
             definirFaixa({ texto: ev.carregado, sub: 'Golpe carregado', tom: 'vermelho' })
-            tocar('sopro')
+            tocar(estilo === 'fogo' ? 'sopro' : 'carregado')
             if (estilo === 'fogo' && P) {
               // o Sopro do dragão: chamas em pixel art atravessam a arena
               await soprar(P, boca ?? { x: de.x - 40, y: de.y - 10 }, para, tomFogo(adv.variante), 0.75)
