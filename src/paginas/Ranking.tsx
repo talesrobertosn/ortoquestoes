@@ -24,7 +24,6 @@ import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import { SeloServico } from '../componentes/ServicoRanking'
-import { PodioPixel } from '../componentes/PodioPixel'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
@@ -110,12 +109,31 @@ function iniciais(apelido: string): string {
   return ((partes[0]?.[0] ?? '') + (partes.length > 1 ? partes[partes.length - 1][0] : '')).toUpperCase() || '?'
 }
 
+const LUGARES_TOP3 = ['', '1º lugar', '2º lugar', '3º lugar']
+
+/** Top 3: pódio com nome, posição e total de cada um, sem precisar decifrar nada (refeito em 14/10/2026). */
 function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }) {
-  return <PodioPixel cena="festa" titulo="Salão dos campeões" lugares={linhas.slice(0, 3).map((linha) => ({
-    posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
-    valor: `${linha.total.toLocaleString('pt-BR')} ${periodo === 'semana' ? 'na semana' : 'questões'}`,
-    extra: <span className="pdx__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={28} /><Fogueira dias={linha.sequencia ?? 0} tamanho={18} /><Movimento linha={linha} /></span>,
-  }))} />
+  return <section className="rkt" aria-labelledby="rkt-titulo">
+    <header className="rkt__cabeca">
+      <Icone nome="trofeu" tamanho={20} />
+      <h2 id="rkt-titulo">Top 3 {periodo === 'semana' ? 'dos últimos 7 dias' : 'do ranking geral'}</h2>
+    </header>
+    <ol className="rkt__podio">
+      {linhas.slice(0, 3).map((linha) => (
+        <li key={linha.posicao} className={`rkt__lugar rkt__lugar--${linha.posicao}${linha.eh_voce ? ' rkt__lugar--voce' : ''}`}>
+          <div className="rkt__pessoa">
+            {linha.posicao === 1 && <span className="rkt__coroa" aria-hidden="true"><Icone nome="coroa" tamanho={26} /></span>}
+            <span className="rkt__avatar" aria-hidden="true">{iniciais(linha.apelido)}</span>
+            <strong className="rkt__nome">{linha.apelido}</strong>
+            {linha.eh_voce && <span className="rk-voce">você</span>}
+            <span className="rkt__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
+            <span className="rkt__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>
+          </div>
+          <div className="rkt__degrau"><span className="rkt__numero numerico" aria-hidden="true">{linha.posicao}</span><span className="rkt__rotulo">{LUGARES_TOP3[linha.posicao]}</span></div>
+        </li>
+      ))}
+    </ol>
+  </section>
 }
 
 /** A próxima meta, em questões, como uma missão de jogo. */

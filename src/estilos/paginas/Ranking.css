@@ -512,3 +512,40 @@
 .rkc-tocha { position: absolute; top: 50%; translate: 0 -50%; image-rendering: pixelated; }
 .rkc-tocha--esq { left: 0.6rem; } .rkc-tocha--dir { right: 0.6rem; }
 .rk--cripta .cf-cabeca > :not(.rkc-tocha) { position: relative; padding-inline: 1.4rem; }
+
+/* ============================================================ Top 3 do ranking das questões (refeito em 14/10/2026)
+   Pódio claro: título "Top 3", e em cada degrau a medalha com as iniciais, o nome inteiro,
+   o total e o número da posição gravado no degrau. Visual 2º, 1º, 3º; leitura 1º, 2º, 3º. */
+.rkt { --m: var(--ouro); --m-veu: var(--ouro-veu); margin-top: 0.5rem; padding: 1rem clamp(0.6rem, 3vw, 1.4rem) 0; border-radius: var(--raio-cartao);
+  background: radial-gradient(70% 90% at 50% 100%, var(--ouro-veu), transparent 70%), var(--superficie); border: var(--borda); box-shadow: var(--sombra-media); overflow: hidden; }
+.rkt__cabeca { display: flex; align-items: center; justify-content: center; gap: 0.45rem; color: var(--ouro-texto); }
+.rkt__cabeca h2 { margin: 0; font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(1.1rem, 4vw, 1.35rem); letter-spacing: 0.01em; color: var(--texto); }
+.rkt__podio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; gap: clamp(0.3rem, 1.6vw, 0.8rem); max-width: 40rem; margin: 0.9rem auto 0; padding: 0; list-style: none; }
+.rkt__lugar { display: grid; min-width: 0; }
+.rkt__lugar--1 { order: 2; }
+.rkt__lugar--2 { order: 1; --m: var(--prata); --m-veu: var(--prata-veu); }
+.rkt__lugar--3 { order: 3; --m: var(--bronze); --m-veu: var(--bronze-veu); }
+.rkt__pessoa { position: relative; display: grid; justify-items: center; align-content: end; gap: 0.25rem; padding: 0 0.15rem 0.6rem; text-align: center; }
+.rkt__coroa { color: var(--ouro); line-height: 0; margin-bottom: -0.2rem; }
+.rkt__avatar { position: relative; display: grid; place-items: center; width: clamp(3.4rem, 15vw, 4.4rem); aspect-ratio: 1; border-radius: 50%;
+  font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(1.05rem, 4.6vw, 1.4rem); color: var(--texto); background: var(--m-veu);
+  box-shadow: inset 0 0 0 4px var(--m), 0 0 0 3px var(--superficie); }
+.rkt__lugar--1 .rkt__avatar { width: clamp(4.2rem, 19vw, 5.4rem); font-size: clamp(1.3rem, 5.6vw, 1.75rem); box-shadow: inset 0 0 0 5px var(--m), 0 0 0 3px var(--superficie), 0 0 22px color-mix(in srgb, var(--ouro) 45%, transparent); }
+.rkt__nome { max-width: 100%; margin-top: 0.15rem; font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(0.92rem, 3.6vw, 1.12rem); line-height: 1.2; overflow-wrap: anywhere; color: var(--texto); }
+.rkt__lugar--1 .rkt__nome { font-size: clamp(1rem, 4.2vw, 1.3rem); }
+.rkt__total { font-size: clamp(0.74rem, 2.8vw, 0.85rem); color: var(--texto-2); line-height: 1.2; }
+.rkt__total b { display: block; font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 800; color: var(--texto); }
+.rkt__extra { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.2rem; min-height: 0; }
+.rkt__extra:empty { display: none; }
+.rkt .rk-movimento--parado { display: none; }
+.rkt__degrau { display: grid; justify-items: center; align-content: start; gap: 0.1rem; padding: 0.55rem 0.2rem 0.7rem; border-radius: 10px 10px 0 0;
+  background: linear-gradient(color-mix(in srgb, var(--m) 30%, var(--superficie)), color-mix(in srgb, var(--m) 14%, var(--superficie)));
+  box-shadow: inset 0 4px 0 var(--m); }
+.rkt__lugar--1 .rkt__degrau { min-height: 7rem; }
+.rkt__lugar--2 .rkt__degrau { min-height: 5rem; }
+.rkt__lugar--3 .rkt__degrau { min-height: 3.6rem; }
+.rkt__numero { font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(1.8rem, 8vw, 2.6rem); line-height: 1; color: var(--m); }
+.rkt__lugar--1 .rkt__numero { font-size: clamp(2.4rem, 11vw, 3.4rem); }
+.rkt__rotulo { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto); }
+.rkt__lugar--voce .rkt__avatar { box-shadow: inset 0 0 0 4px var(--m), 0 0 0 3px var(--superficie), 0 0 0 6px var(--acerto); }
+@media (max-width: 420px) { .rkt__extra { display: none; } .rkt__rotulo { font-size: 0.64rem; letter-spacing: 0.04em; } }
