@@ -52,6 +52,53 @@ export const ASSADOS: Record<string, MetaAssada> = {
    }
   }
  },
+ "ent": {
+  "largura": 196,
+  "altura": 150,
+  "colunas": 6,
+  "ancora": [
+   106,
+   142
+  ],
+  "caixa": [
+   32,
+   31,
+   149,
+   115
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 300
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 80
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 95
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 150
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 170
+   }
+  }
+ },
  "esqueleto": {
   "largura": 136,
   "altura": 108,
