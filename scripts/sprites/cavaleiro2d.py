@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""Herói do Orto Questões, refeito do zero em 14/10/2026 (pedido do Tales: "abandone o rosto
-redondo, infantilizado"; direção de arte: o conceito em docs/flashcards/conceitos/heroi-adulto-proposta.png).
+"""Herói do Orto Questões (e mascote do site), refeito do zero em 14/10/2026.
 
-Cavaleiro ADULTO em pixel art com recorte 2D (peças articuladas, como um boneco de papel):
-elmo aberto de aço com pluma azul, rosto de adulto, cachecol azul, peitoral e ombreiras de aço,
-cota de malha, tabardo azul com borda dourada, cinto e correia de couro, capa vermelha,
-escudo em gota azul com cruz dourada e espada longa. Olha para a direita (para o adversário).
+Pedido do Tales: abandonar o rosto redondo e infantil e seguir o conceito
+docs/flashcards/conceitos/heroi-adulto-proposta.png: cavaleiro adulto, heroico, de pernas longas e
+cabeça pequena, elmo aberto com pluma azul e frisos dourados, cachecol azul, ombreiras em lâminas,
+peitoral, cota de malha, tabardo azul com borda dourada, cintos de couro, capa vermelha, escudo
+azul com cruz dourada, espada longa, joelheiras, grevas e botas.
 
-Nada é copiado do conceito: tudo é desenhado aqui por polígonos, com luz de cima e da
-esquerda, metal com brilho especular, paletas com variação de matiz e contorno escuro.
+O conceito serve só de direção: as medidas foram tomadas dele (1 pixel aqui = ~10 do conceito) e
+tudo é desenhado aqui, peça por peça, por polígonos em ossos 2D, com luz de cima e da esquerda,
+metal com brilho especular, tecido em faixas de tom, contorno escuro e retoques pixel a pixel no
+rosto. Olha para a direita (para o adversário).
 
     python3 scripts/sprites/cavaleiro2d.py                 # grava heroi-1..6 em public/flashcards/sprites/
-    python3 scripts/sprites/cavaleiro2d.py --previa x.png  # prévia ampliada (estágios lado a lado, quadro parado)
+    python3 scripts/sprites/cavaleiro2d.py --previa x.png  # prévia ampliada (estágios × quadros)
     python3 scripts/sprites/cavaleiro2d.py --mascote       # mascote grande do site em public/mascote/
 """
 from __future__ import annotations
@@ -19,7 +21,7 @@ from __future__ import annotations
 import argparse
 import math
 import sys
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
@@ -32,8 +34,9 @@ from motor import gravar_folha  # noqa: E402
 RAIZ = AQUI.parents[1]
 DESTINO = RAIZ / 'public' / 'flashcards' / 'sprites'
 
-W, H = 120, 132          # quadro
-ANCORA = (56, 126)       # pés
+W, H = 136, 170          # quadro (folga em cima para a espada erguida)
+OX, OY = 4, 14           # deslocamento das medidas de repouso dentro do quadro
+ANCORA = (64 + OX, 150 + OY)
 SS = 4                   # superamostragem das máscaras
 
 # ------------------------------------------------------------------ paletas (escuro → claro)
@@ -45,30 +48,30 @@ def hx(c: str):
 
 
 PAL = {
-    'aco': ['#1b2030', '#323a4e', '#4f5a72', '#76829a', '#a3aec2', '#cfd6e2', '#f2f5fa'],
-    'ouro': ['#3a2206', '#6b420e', '#a06c1a', '#cf9b32', '#efc65e', '#fbe7a4'],
-    'azul': ['#0f1838', '#19295a', '#253f86', '#3354a6', '#4a6ec4', '#6f90da'],
-    'vermelho': ['#36080e', '#5c1118', '#871c20', '#b22c28', '#d44b36', '#ea7450'],
-    'couro': ['#25130a', '#422413', '#61381f', '#84502b', '#a66e3c', '#c38d55'],
-    'pele': ['#4e2a1a', '#7c4830', '#a76848', '#c98a62', '#e2ad84', '#f2cba4'],
-    'malha': ['#1c2029', '#343b4a', '#555e70', '#7c8698', '#a7b0c0'],
-    'madeira': ['#2a170a', '#4a2b14', '#6c411f', '#8f5b2c', '#ad7840'],
-    'pluma': ['#0c1c4a', '#163684', '#2052be', '#3876dc', '#64a0f0', '#a6cbf8'],
-    'cabelo': ['#1a0f08', '#331f11', '#4e321b', '#6a4626'],
-    'perola': ['#3e352d', '#6f655a', '#a0968a', '#c9c1b4', '#e6e0d4', '#faf7f0'],
-    'roxo': ['#1c0a34', '#30145a', '#4a2088', '#6532b0', '#8650d2', '#a878e8'],
+    'aco': ['#141821', '#252b38', '#394152', '#535d71', '#76829a', '#a1adc0', '#ced7e4', '#f6f9fc'],
+    'ouro': ['#3b2306', '#6d440f', '#a46e1c', '#d29d35', '#f0c862', '#fde9a8'],
+    'azul': ['#0d1431', '#172656', '#203a84', '#2c4fa8', '#4268c4', '#6a8cdc'],
+    'marinho': ['#0b1020', '#141d38', '#1e2c52', '#2a3d6c', '#3b5186'],
+    'vermelho': ['#2e070c', '#541018', '#801b20', '#a8292a', '#cc4434', '#e46a4a'],
+    'couro': ['#1d0f08', '#372010', '#56321b', '#784a28', '#9a6536', '#bb8550'],
+    'pele': ['#45231a', '#74412c', '#a06244', '#c4865e', '#ddaa80', '#f0cba2'],
+    'malha': ['#161920', '#2a303d', '#474f61', '#6c778b', '#98a3b6'],
+    'madeira': ['#28160a', '#472912', '#6a401e', '#8d5a2b', '#ab773f'],
+    'pluma': ['#0a1840', '#13307a', '#1d4cb4', '#3270d6', '#5e9aee', '#a2c8f8'],
+    'cabelo': ['#160d07', '#2c1a0e', '#452b17', '#5e3e22'],
+    'perola': ['#3a332d', '#625a50', '#8f877b', '#bab3a6', '#dcd7cc', '#f4f1ea', '#ffffff'],
     'lamina': ['#3d78c0', '#6aa8e6', '#a4d2f8', '#d8f0ff', '#ffffff'],
     'branco': ['#3c4252', '#6c7488', '#a2aabb', '#d0d6e2', '#f2f5fa'],
-    'escuro': ['#0c0a10', '#1a1620'],
+    'escuro': ['#0c0a10', '#1d1820'],
 }
 PAL = {k: [hx(c) for c in v] for k, v in PAL.items()}
-CONTORNO = {k: tuple(int(c * 0.45) for c in v[0]) for k, v in PAL.items()}
+CONTORNO = {k: tuple(int(c * 0.5) for c in v[0]) for k, v in PAL.items()}
+CONTORNO['pele'] = (40, 18, 14)
 
-LUZ = np.array([-0.55, -0.62, 0.56])
+LUZ = np.array([-0.5, -0.6, 0.62])
 LUZ = LUZ / np.linalg.norm(LUZ)
 MEIO = LUZ + np.array([0, 0, 1.0])
 MEIO = MEIO / np.linalg.norm(MEIO)
-BAYER = (np.array([[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]]) + 0.5) / 16
 
 
 def R(a):
@@ -76,30 +79,20 @@ def R(a):
     return np.array([[c, -s], [s, c]])
 
 
-@dataclass
-class Osso:
-    o: np.ndarray
-    a: float = 0.0
-
-    def p(self, x, y):
-        return self.o + R(self.a) @ np.array([x, y], float)
-
-    def filho(self, x, y, da=0.0):
-        return Osso(self.p(x, y), self.a + da)
-
-    def pts(self, lista):
-        return [tuple(self.p(x, y)) for x, y in lista]
+def ang_de(v):
+    """Ângulo de osso (0 = apontando para baixo) de um vetor."""
+    return math.atan2(-v[0], v[1])
 
 
 @dataclass
 class Peca:
-    poly: list            # pontos no mundo
+    poly: list            # pontos no mundo (já posados)
     mat: str
     z: float
-    luz: tuple            # ('cil', o, eixo, L, w0, w1) | ('esf', c, rx, ry) | ('plano', nx, ny, gradiente)
+    luz: tuple            # ('cil', o, ang, L, w0, w1) | ('esf', c, rx, ry) | ('plano', nx, ny, g) | ('lisa', i)
     metal: bool = False
     grupo: str = ''
-    detalhe: bool = False  # não desenha contorno interno nas peças de trás
+    detalhe: bool = False  # peça de enfeite: não provoca contorno nas de trás
     textura: str = ''
     emissivo: bool = False
 
@@ -108,23 +101,45 @@ def elipse(c, rx, ry, n=28, a0=0.0, a1=2 * math.pi):
     return [(c[0] + rx * math.cos(a0 + (a1 - a0) * i / n), c[1] + ry * math.sin(a0 + (a1 - a0) * i / n)) for i in range(n + 1)]
 
 
-def membro(o: Osso, L, w0, w1, mat, z, metal=False, grupo='', capa0=True, capa1=True):
-    """Segmento afinado com pontas arredondadas, ao longo de +y do osso."""
-    pts = []
-    n = 6
-    if capa0:
-        for i in range(n + 1):
-            t = math.pi + math.pi * i / n
-            pts.append((w0 / 2 * math.cos(t), w0 / 2 * math.sin(t) * 0.8))
-    else:
-        pts += [(-w0 / 2, 0), (w0 / 2, 0)]
-    if capa1:
-        for i in range(n + 1):
-            t = math.pi * i / n
-            pts.append((w1 / 2 * math.cos(t), L + w1 / 2 * math.sin(t) * 0.8))
-    else:
-        pts += [(w1 / 2, L), (-w1 / 2, L)]
-    return Peca(o.pts(pts), mat, z, ('cil', o.o.copy(), o.a, L, w0, w1), metal, grupo)
+# ------------------------------------------------------------------ esqueleto
+# Cada peça é desenhada nas medidas de repouso (em pixels do quadro, antes de OX/OY) e presa a um
+# osso. Ao posar, o osso leva a peça: p' = J' + R(θ' − θ)(p − J).
+
+
+class Osso:
+    def __init__(self, J, th, Jp=None, thp=None):
+        self.J = np.array(J, float)
+        self.th = th
+        self.Jp = self.J.copy() if Jp is None else np.array(Jp, float)
+        self.thp = th if thp is None else thp
+
+    def tf(self, p):
+        return self.Jp + R(self.thp - self.th) @ (np.array(p, float) - self.J)
+
+    def pts(self, lista):
+        return [tuple(self.tf(p)) for p in lista]
+
+    def luz(self, l):
+        if l[0] == 'cil':
+            _, o, a, L, w0, w1 = l
+            return ('cil', self.tf(o), a + self.thp - self.th, L, w0, w1)
+        if l[0] == 'esf':
+            _, c, rx, ry = l
+            return ('esf', self.tf(c), rx, ry)
+        return l
+
+
+def ik(Hq, A, L1, L2, joelho_repouso, Hr, Ar):
+    """Joelho de duas peças: quadril Hq, tornozelo A; dobra para o mesmo lado do repouso."""
+    d = A - Hq
+    n = np.linalg.norm(d)
+    n2 = min(max(n, 1e-3), L1 + L2 - 0.05)
+    ca = (L1 * L1 + n2 * n2 - L2 * L2) / (2 * L1 * n2)
+    a = math.acos(max(-1, min(1, ca)))
+    dr, kr = Ar - Hr, joelho_repouso - Hr
+    lado = 1 if (dr[0] * kr[1] - dr[1] * kr[0]) > 0 else -1
+    u = d / max(n, 1e-3)
+    return Hq + (R(-lado * a) @ u) * L1
 
 
 # ------------------------------------------------------------------ rasterização e luz
@@ -144,20 +159,22 @@ def normais(p: Peca):
     k = p.luz[0]
     if k == 'cil':
         _, o, ang, L, w0, w1 = p.luz
-        ax = np.array([-math.sin(ang), math.cos(ang)])  # +y local no mundo
-        d = np.array([math.cos(ang), math.sin(ang)])    # +x local no mundo
+        ax = np.array([-math.sin(ang), math.cos(ang)])
+        d = np.array([math.cos(ang), math.sin(ang)])
         rx, ry = XX - o[0], YY - o[1]
         t = np.clip((rx * ax[0] + ry * ax[1]) / max(L, 1e-3), 0, 1)
         w = (w0 + (w1 - w0) * t) / 2
-        u = np.clip((rx * d[0] + ry * d[1]) / np.maximum(w, 0.5), -0.98, 0.98)
+        u = np.clip((rx * d[0] + ry * d[1]) / np.maximum(w, 0.5), -0.97, 0.97)
         nz = np.sqrt(1 - u * u)
         return u * d[0], u * d[1], nz
     if k == 'esf':
         _, c, rx, ry = p.luz
         ex, ey = (XX - c[0]) / rx, (YY - c[1]) / ry
-        r2 = np.clip(ex * ex + ey * ey, 0, 0.96)
+        r2 = np.clip(ex * ex + ey * ey, 0, 0.95)
         return ex, ey, np.sqrt(1 - r2)
-    _, nx, ny, g = p.luz  # plano
+    if k == 'lisa':
+        return None
+    _, nx, ny, g = p.luz
     ys = np.array([y for _, y in p.poly])
     y0, y1 = ys.min(), ys.max()
     t = (YY - y0) / max(y1 - y0, 1)
@@ -166,31 +183,31 @@ def normais(p: Peca):
     return np.full_like(XX, nx), ny2, nz
 
 
-def tons(p: Peca, m):
-    nx, ny, nz = normais(p)
-    dif = nx * LUZ[0] + ny * LUZ[1] + nz * LUZ[2]
+def tons(p: Peca):
     pal = PAL[p.mat]
     n = len(pal)
+    N = normais(p)
+    if N is None:
+        return np.broadcast_to(np.array(pal[min(p.luz[1], n - 1)], np.uint8), (H, W, 3))
+    nx, ny, nz = N
+    dif = nx * LUZ[0] + ny * LUZ[1] + nz * LUZ[2]
     if p.emissivo:
-        s = 0.55 + 0.45 * np.clip(dif, 0, 1)
+        s = 0.5 + 0.5 * np.clip(dif, 0, 1)
     elif p.metal:
-        spec = np.clip(nx * MEIO[0] + ny * MEIO[1] + nz * MEIO[2], 0, 1) ** 14
-        s = 0.12 + 0.62 * np.clip(dif * 0.5 + 0.5, 0, 1) ** 1.4 + 0.75 * spec
-        # reflexo escuro do horizonte, típico de armadura polida
-        s -= 0.16 * np.exp(-((ny + 0.05) / 0.12) ** 2) * (nz > 0.5)
+        spec = np.clip(nx * MEIO[0] + ny * MEIO[1] + nz * MEIO[2], 0, 1) ** 18
+        s = 0.06 + 0.6 * np.clip(dif * 0.55 + 0.45, 0, 1) ** 1.7 + 0.7 * spec
+        s -= 0.13 * np.exp(-((ny + 0.1) / 0.13) ** 2) * (nz > 0.5)   # reflexo escuro do horizonte
+        s += 0.3 * np.clip(nx - 0.55, 0, 1)                            # luz de recorte à direita
     else:
-        s = 0.1 + 0.85 * np.clip(dif * 0.62 + 0.38, 0, 1)
+        s = 0.08 + 0.86 * np.clip(dif * 0.62 + 0.38, 0, 1)
     if p.textura == 'malha':
-        s += np.where(((XX.astype(int) + YY.astype(int)) % 2) == 0, 0.09, -0.09) - np.where(YY.astype(int) % 3 == 0, 0.06, 0)
-    elif p.textura == 'tecido':
-        s += np.where(XX.astype(int) % 3 == 0, -0.03, 0.0)
-    dith = 0.0 if p.metal else (BAYER[YY.astype(int) % 4, XX.astype(int) % 4] - 0.5) * 0.10
-    idx = np.clip(np.floor(np.clip(s + dith, 0, 0.999) * n), 0, n - 1).astype(int)
-    cor = np.array(pal)[idx]
-    return cor
+        xi, yi = XX.astype(int), YY.astype(int)
+        s = s + np.where((xi + yi) % 2 == 0, 0.1, -0.08) - np.where(yi % 2 == 0, 0.04, 0)
+    idx = np.clip(np.floor(np.clip(s, 0, 0.999) * n), 0, n - 1).astype(int)
+    return np.array(pal, np.uint8)[idx]
 
 
-def render(pecas: list[Peca]):
+def render(pecas: list[Peca], retoques=()):
     cor = np.zeros((H, W, 3), np.uint8)
     alfa = np.zeros((H, W), bool)
     zb = np.full((H, W), -1e9, np.float32)
@@ -201,29 +218,50 @@ def render(pecas: list[Peca]):
         m = mascara(p.poly)
         if not m.any():
             continue
-        c = tons(p, m)
+        c = tons(p)
         cor[m] = c[m]
         alfa |= m
         zb[m] = p.z
         mat[m] = p.mat
-        grp[m] = p.grupo or id(p)
+        grp[m] = p.grupo or str(id(p))
         det[m] = p.detalhe
-    saida = cor.copy()
-    # contorno interno escuro na borda da silhueta
+    # limpeza: pixel isolado de um tom (nenhum vizinho igual na mesma peça) vira o tom vizinho
     viz = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+    nova = cor.copy()
+    ys, xs = np.where(alfa & ~det)
+    for y, x in zip(ys, xs):
+        if y == 0 or x == 0 or y == H - 1 or x == W - 1:
+            continue
+        iguais, outros = 0, []
+        for dy, dx in viz:
+            yy, xx = y + dy, x + dx
+            if alfa[yy, xx] and grp[yy, xx] == grp[y, x]:
+                if (cor[yy, xx] == cor[y, x]).all():
+                    iguais += 1
+                else:
+                    outros.append(tuple(cor[yy, xx]))
+        if iguais == 0 and len(outros) >= 3:
+            nova[y, x] = max(set(outros), key=outros.count)
+    cor = nova
+    # retoques à mão (rosto etc.): (x, y, rgb, z) só onde nada mais à frente cobre
+    for x, y, c, z in retoques:
+        xi, yi = int(math.floor(x)), int(math.floor(y))
+        if 0 <= xi < W and 0 <= yi < H and alfa[yi, xi] and zb[yi, xi] <= z:
+            cor[yi, xi] = c
+    saida = cor.copy()
     borda = np.zeros_like(alfa)
     for dy, dx in viz:
         borda |= alfa & ~np.roll(np.roll(alfa, dy, 0), dx, 1)
-    # contorno entre peças: escurece a peça de trás junto da peça da frente
     sel = np.zeros_like(alfa)
     for dy, dx in viz:
         zn = np.roll(np.roll(zb, dy, 0), dx, 1)
         gn = np.roll(np.roll(grp, dy, 0), dx, 1)
         dn = np.roll(np.roll(det, dy, 0), dx, 1)
-        sel |= alfa & (zn > zb + 0.25) & (gn != grp) & ~dn
+        an = np.roll(np.roll(alfa, dy, 0), dx, 1)
+        sel |= alfa & an & (zn > zb + 0.25) & (gn != grp) & ~dn
     for y, x in zip(*np.where(sel & ~borda)):
         pal = PAL[mat[y, x]]
-        saida[y, x] = pal[max(0, min(1, len(pal) - 1))]
+        saida[y, x] = pal[0] if mat[y, x] not in ('aco', 'perola', 'pele') else pal[1]
     for y, x in zip(*np.where(borda)):
         saida[y, x] = CONTORNO[mat[y, x]]
     rgba = np.zeros((H, W, 4), np.uint8)
@@ -232,204 +270,390 @@ def render(pecas: list[Peca]):
     return rgba
 
 
-# ------------------------------------------------------------------ o cavaleiro
+# ------------------------------------------------------------------ estágios
 
 ESTAGIOS = {
-    # tam: escala do corpo (a lenda é um pouco maior); peitoral/ombreiras/grevas aparecem por estágio
-    1: dict(tam=0.93, peitoral=False, ombreira='couro', malha=False, grevas=False, capa=None, espada=31, escudo='madeira', cruz='branco', ouro=False, pluma=1),
-    2: dict(tam=0.95, peitoral=False, ombreira='couro', malha=True, grevas=False, capa=None, espada=34, escudo='aco', cruz='branco', ouro=False, pluma=1),
-    3: dict(tam=0.97, peitoral=True, ombreira='aco', malha=True, grevas=False, capa='vermelho', espada=37, escudo='aco', cruz='ouro', ouro=False, pluma=1),
-    4: dict(tam=1.00, peitoral=True, ombreira='aco', malha=True, grevas=True, capa='vermelho', espada=40, escudo='aco', cruz='ouro', ouro=False, pluma=1),
-    5: dict(tam=1.02, peitoral=True, ombreira='aco', malha=True, grevas=True, capa='vermelho', espada=43, escudo='ouro', cruz='ouro', ouro=True, pluma=2),
-    6: dict(tam=1.04, peitoral=True, ombreira='perola', malha=True, grevas=True, capa='roxo', espada=45, escudo='ouro', cruz='ouro', ouro=True, pluma=2, lenda=True),
+    1: dict(tam=0.94, armadura='aco', peitoral=False, ombreira='couro', malha=False, grevas=False, joelheira=False, capa=None,
+            espada=30, escudo='madeira', campo='azul', cruz='branco', ouro=False, pluma=0, elmo_ouro=False),
+    2: dict(tam=0.96, armadura='aco', peitoral=False, ombreira='couro', malha=True, grevas=False, joelheira=True, capa=None,
+            espada=34, escudo='aco', campo='azul', cruz='branco', ouro=False, pluma=1, elmo_ouro=False),
+    3: dict(tam=0.98, armadura='aco', peitoral=True, ombreira='aco', malha=True, grevas=False, joelheira=True, capa='vermelho',
+            espada=38, escudo='aco', campo='azul', cruz='ouro', ouro=False, pluma=1, elmo_ouro=True),
+    4: dict(tam=1.00, armadura='aco', peitoral=True, ombreira='aco', malha=True, grevas=True, joelheira=True, capa='vermelho',
+            espada=41, escudo='aco', campo='azul', cruz='ouro', ouro=False, pluma=2, elmo_ouro=True),
+    5: dict(tam=1.02, armadura='aco', peitoral=True, ombreira='aco', malha=True, grevas=True, joelheira=True, capa='vermelho',
+            espada=43, escudo='ouro', campo='azul', cruz='ouro', ouro=True, pluma=2, elmo_ouro=True),
+    6: dict(tam=1.04, armadura='perola', peitoral=True, ombreira='perola', malha=True, grevas=True, joelheira=True, capa='vermelho',
+            espada=44, escudo='ouro', campo='azul', cruz='ouro', ouro=True, pluma=3, elmo_ouro=True, lenda=True),
+}
+
+# medidas de repouso (pixels do quadro, antes de OX/OY), tiradas do conceito
+QUADRIL = (64.0, 86.0)
+OMBRO_E, COTOVELO_E, PUNHO_E = (50.5, 68.0), (45.8, 81.0), (44.2, 89.6)
+OMBRO_D, COTOVELO_D = (79.0, 68.0), (82.0, 81.0)
+PESCOCO = (64.5, 63.0)
+POMO = (45.6, 88.0)
+DIR_ESP = np.array([-22.5, 49.0]) / np.linalg.norm([-22.5, 49.0])
+PERNAS = {
+    'e': dict(q=(59.0, 88.0), j=(52.5, 118.5), t=(50.0, 140.0)),
+    'd': dict(q=(68.5, 88.0), j=(74.5, 118.5), t=(81.0, 140.0)),
 }
 
 
-def montar(e: int, t: dict) -> list[Peca]:
+def membro(o: Osso, A, B, w0, w1, mat, z, metal=False, grupo='', textura=''):
+    """Segmento afinado de A a B (repouso) com pontas arredondadas, preso ao osso o."""
+    A, B = np.array(A, float), np.array(B, float)
+    L = np.linalg.norm(B - A)
+    a = ang_de(B - A)
+    pts = []
+    n = 6
+    for i in range(n + 1):
+        t = math.pi + math.pi * i / n
+        pts.append((w0 / 2 * math.cos(t), w0 / 2 * math.sin(t) * 0.7))
+    for i in range(n + 1):
+        t = math.pi * i / n
+        pts.append((w1 / 2 * math.cos(t), L + w1 / 2 * math.sin(t) * 0.7))
+    mundo = [tuple(A + R(a) @ np.array(p)) for p in pts]
+    return Peca(o.pts(mundo), mat, z, o.luz(('cil', A, a, L, w0, w1)), metal, grupo, textura=textura)
+
+
+def montar(e: int, t: dict):
     E = ESTAGIOS[e]
     k = t.get
     P: list[Peca] = []
-    armadura = 'perola' if E.get('lenda') else 'aco'
-    # quadril
-    cx, cy = 56 + k('x', 0), 82 + k('agacha', 0) + k('resp', 0)
-    torso = Osso(np.array([cx, cy], float), k('tronco', 0))
+    RT: list = []
+    ar = E['armadura']
+    ouro = E['ouro']
 
-    # ---------------- capa (atrás de tudo)
+    def add(osso, poly, mat, z, luz, **kw):
+        P.append(Peca(osso.pts(poly), mat, z, osso.luz(luz), **kw))
+
+    def px(osso, x, y, mat, i, z):
+        q = osso.tf((x, y))
+        RT.append((q[0], q[1], PAL[mat][i], z))
+
+    # ---------------- ossos
+    Q = np.array(QUADRIL)
+    Qp = Q + np.array([k('x', 0), k('agacha', 0) + k('resp', 0)])
+    tronco = Osso(Q, 0.0, Qp, k('tronco', 0))
+    cab = Osso(PESCOCO, 0.0, tronco.tf(PESCOCO), k('tronco', 0) + k('cabeca', 0))
+
+    def braco(ombro, cot, chave, th_b_rep, th_a_rep):
+        Jo = tronco.tf(ombro)
+        thb = k(chave + '_b', th_b_rep + k('tronco', 0))
+        Lb = np.linalg.norm(np.array(cot) - np.array(ombro))
+        sup = Osso(ombro, th_b_rep, Jo, thb)
+        Jc = Jo + R(thb) @ np.array([0, Lb])
+        tha = k(chave + '_a', th_a_rep + (thb - th_b_rep))
+        ante = Osso(cot, th_a_rep, Jc, tha)
+        return sup, ante
+
+    thb_e = ang_de(np.array(COTOVELO_E) - OMBRO_E)
+    tha_e = ang_de(np.array(PUNHO_E) - COTOVELO_E)
+    sup_e, ante_e = braco(OMBRO_E, COTOVELO_E, 'be', thb_e, tha_e)
+    th_esp = ang_de(DIR_ESP)
+    mao_e = np.array(POMO) + DIR_ESP * 4.6
+    esp = Osso(mao_e, th_esp, ante_e.tf(mao_e), k('esp', th_esp + (ante_e.thp - ante_e.th)))
+    thb_d = ang_de(np.array(COTOVELO_D) - OMBRO_D)
+    sup_d, ante_d = braco(OMBRO_D, COTOVELO_D, 'bd', thb_d, 0.0)
+
+    pernas = {}
+    for lado, M in PERNAS.items():
+        q, j, tt = (np.array(M[c]) for c in 'qjt')
+        L1, L2 = np.linalg.norm(j - q), np.linalg.norm(tt - j)
+        qp = q + (Qp - Q)  # o quadril acompanha a bacia, não o giro do tronco
+        tp = tt + np.array(k('pe_' + lado, (0, 0)))
+        jp = ik(qp, tp, L1, L2, j, q, tt)
+        coxa = Osso(q, ang_de(j - q), qp, ang_de(jp - qp))
+        canela = Osso(j, ang_de(tt - j), jp, ang_de(tp - jp))
+        pe = Osso(tt, 0.0, tp, k('pe_ang_' + lado, 0.0))
+        pernas[lado] = (coxa, canela, pe)
+
+    # ---------------- capa (atrás de tudo, aparece à direita do escudo)
     if E['capa']:
         sw = k('capa', 0)
-        cap = torso.pts([(-10, -38), (8, -38), (13, -20), (15, 4), (18 + sw * 4, 30), (8 + sw * 3, 34), (-4 + sw * 2, 31), (-15 + sw * 3, 33), (-14, 8), (-13, -18)])
-        P.append(Peca(cap, E['capa'], 0.5, ('plano', 0.25, -0.2, 0.7), grupo='capa', textura='tecido'))
+        cm = E['capa']
+        add(tronco, [(70, 63), (80, 62.5), (86, 68), (90.5, 82), (93 + sw, 98), (95 + sw * 1.6, 114), (91 + sw * 1.5, 119),
+                     (86 + sw, 115), (81, 118), (76, 108), (72, 90)], cm, 0.5, ('plano', 0.35, -0.1, 0.8), grupo='capa')
+        add(tronco, [(88.6, 86), (90.6, 98), (91.6 + sw, 112), (90.4 + sw, 113), (89.2, 99)], cm, 0.55, ('lisa', 1), grupo='capa', detalhe=True)
 
-    # ---------------- braço da espada (o de trás, à esquerda da imagem)
-    omb_f = torso.filho(-12, -34, k('braco_f', 0.28) - torso.a)
-    P.append(membro(omb_f, 13, 7.0, 6.0, 'malha' if E['malha'] else 'azul', 1.0, grupo='braco_f'))
-    if E['peitoral']:
-        P.append(membro(omb_f.filho(0, 4), 7, 7.4, 6.6, armadura, 1.1, metal=True, grupo='braco_f'))
-    cot_f = omb_f.filho(0, 13, k('cotovelo_f', 0.18))
-    P.append(membro(cot_f, 11, 6.0, 5.4, armadura if E['grevas'] else 'couro', 1.2, metal=E['grevas'], grupo='braco_f'))
-    mao_f = cot_f.filho(0, 11.5, 0)
-    P.append(Peca(elipse(mao_f.o, 3.2, 3.0), 'couro', 1.6, ('esf', mao_f.o.copy(), 3.2, 3.0), grupo='mao_f'))
-    # espada: ângulo absoluto (0 = lâmina para baixo)
-    esp = Osso(mao_f.o.copy(), k('espada', 0.62))
-    Lb = E['espada']
-    lam = 'lamina' if E.get('lenda') else 'aco'
-    P.append(Peca(esp.pts([(-1.8, 5), (1.8, 5), (1.6, 5 + Lb - 5), (0, 5 + Lb), (-1.6, 5 + Lb - 5)]), lam, 0.8, ('plano', -0.35, -0.1, 0.4), metal=not E.get('lenda'), grupo='espada', emissivo=bool(E.get('lenda'))))
-    P.append(Peca(esp.pts([(-0.35, 6), (0.35, 6), (0.35, 4 + Lb - 6), (-0.35, 4 + Lb - 6)]), lam, 0.85, ('plano', -0.55, -0.4, 0.0), metal=not E.get('lenda'), grupo='espada', detalhe=True, emissivo=bool(E.get('lenda'))))
-    guarda = 'ouro' if e >= 3 else 'couro'
-    P.append(Peca(esp.pts([(-6, 2.6), (6, 2.6), (6.5, 4.4), (-6.5, 4.4)]), guarda, 1.7, ('cil', esp.p(-6, 3.5), esp.a - math.pi / 2, 12, 2.2, 2.2), metal=True, grupo='guarda'))
-    P.append(Peca(esp.pts([(-1.2, -4), (1.2, -4), (1.2, 2.6), (-1.2, 2.6)]), 'couro', 1.55, ('cil', esp.p(0, -4), esp.a, 6.6, 2.4, 2.4), grupo='punho'))
-    P.append(Peca(elipse(esp.p(0, -5.2), 1.9, 1.9, 12), guarda, 1.56, ('esf', esp.p(0, -5.2), 1.9, 1.9), metal=True, grupo='punho'))
-
-    # ---------------- pernas
-    def perna(lado, ang_coxa, ang_canela, z):
-        x0 = -5 if lado < 0 else 5
-        coxa = torso.filho(x0, -2, ang_coxa - torso.a)
-        nome = 'perna_f' if lado < 0 else 'perna_n'
-        P.append(membro(coxa, 20, 9.2, 7.6, 'azul', z, grupo=nome))
-        joe = coxa.filho(0, 20, ang_canela - ang_coxa)
+    # ---------------- pernas (a de trás, esquerda da imagem, primeiro)
+    for lado, z in (('e', 2.0), ('d', 2.3)):
+        coxa, canela, pe = pernas[lado]
+        M = PERNAS[lado]
+        q, j, tt = M['q'], M['j'], M['t']
+        g = 'perna_' + lado
+        fora = -1 if lado == 'e' else 1
+        # calça bufante azul-marinho
+        P.append(membro(coxa, q, j, 11.5, 8.6, 'marinho', z, grupo=g))
+        mid = (np.array(q) + np.array(j)) / 2
+        add(coxa, [(mid[0] + fora * 5.6, mid[1] - 3), (mid[0] + fora * 6.3, mid[1] + 3), (mid[0] + fora * 4.2, mid[1] + 6), (mid[0] + fora * 3.8, mid[1] - 2)],
+            'marinho', z + 0.01, ('plano', 0.4 * fora, 0.1, 0.4), grupo=g)
+        for dy in (-4, 2, 7):  # dobras da calça
+            add(coxa, [(mid[0] - 3, mid[1] + dy), (mid[0] + 2.5, mid[1] + dy + 1.6 * fora), (mid[0] + 2.5, mid[1] + dy + 1.6 * fora + 0.9), (mid[0] - 3, mid[1] + dy + 0.9)],
+                'marinho', z + 0.02, ('lisa', 1), grupo=g, detalhe=True)
+        # canela: bota de couro inteira, greva de aço na frente
+        P.append(membro(canela, j, tt, 8.4, 7.2, 'couro', z + 0.05, grupo=g + 'b'))
+        jj, ta = np.array(j), np.array(tt)
         if E['grevas']:
-            P.append(membro(joe, 18, 7.4, 6.4, armadura, z + 0.1, metal=True, grupo=nome))
+            dentro = np.array([-fora * 0.9, 0])
+            P.append(membro(canela, jj + dentro + (0, 2.5), ta + dentro + (0, -3.5), 7.4, 5.8, ar, z + 0.1, metal=True, grupo=g + 'g'))
+            a0, a1 = jj + dentro + (0.4, 4), ta + dentro + (0.2, -5)
+            add(canela, [tuple(a0 + (-0.5, 0)), tuple(a0 + (0.5, 0)), tuple(a1 + (0.5, 0)), tuple(a1 + (-0.5, 0))], ar, z + 0.12, ('lisa', 6 if lado == 'e' else 5), metal=True, grupo=g + 'g', detalhe=True)
+            if ouro:
+                add(canela, [tuple(jj + dentro + (-3.6, 2.6)), tuple(jj + dentro + (3.6, 2.6)), tuple(jj + dentro + (3.4, 3.8)), tuple(jj + dentro + (-3.4, 3.8))],
+                    'ouro', z + 0.13, ('plano', -0.2, -0.3, 0), metal=True, grupo=g + 'g', detalhe=True)
         else:
-            P.append(membro(joe, 18, 7.0, 6.6, 'couro', z + 0.1, grupo=nome))
-        if e >= 3:  # joelheira
-            P.append(Peca(elipse(joe.p(0, 0.5), 4.4, 3.8), armadura, z + 0.2, ('esf', joe.p(0, 0.5), 4.4, 3.8), metal=True, grupo=nome + 'j'))
-            if E['ouro']:
-                P.append(Peca(elipse(joe.p(0, 0.5), 1.4, 1.4, 10), 'ouro', z + 0.25, ('esf', joe.p(0, 0.5), 1.4, 1.4), metal=True, detalhe=True, grupo=nome + 'j'))
-        tor = joe.filho(0, 18, -ang_canela)
-        # pé: bota de couro com biqueira de aço (a ponta para a direita)
-        pe = [(-3.4, -3.5), (3.0, -3.5), (5.0, -1.8), (9.0, -0.2), (9.6, 2.6), (-4.0, 2.6)]
-        P.append(Peca(tor.pts(pe), armadura if E['grevas'] else 'couro', z + 0.15, ('plano', -0.2, -0.5, 0.6), metal=E['grevas'], grupo=nome + 'p'))
-        P.append(Peca(tor.pts([(-4.0, 1.4), (9.6, 1.4), (9.6, 3.0), (-4.0, 3.0)]), 'couro', z + 0.16, ('plano', 0, 0.3, 0), grupo=nome + 'p', detalhe=True))
-        if E['grevas']:  # cano da bota aparecendo acima da greva, como no conceito
-            P.append(membro(joe.filho(0, 9), 5, 7.8, 7.6, 'couro', z + 0.12, grupo=nome + 'b'))
-    perna(-1, k('coxa_f', 0.22), k('canela_f', 0.18), 2.0)
-    perna(+1, k('coxa_n', -0.2), k('canela_n', -0.12), 3.0)
+            for dy in (6, 12):
+                c0 = jj + (0, dy)
+                add(canela, [tuple(c0 + (-4, 0)), tuple(c0 + (4, 0.6)), tuple(c0 + (4, 1.4)), tuple(c0 + (-4, 0.8))], 'couro', z + 0.06, ('lisa', 1), grupo=g + 'b', detalhe=True)
+        # cano da bota dobrado
+        add(canela, [(tt[0] - 4.8, tt[1] - 4.2), (tt[0] + 4.8, tt[1] - 4.2), (tt[0] + 4.4, tt[1] + 0.6), (tt[0] - 4.4, tt[1] + 0.6)], 'couro', z + 0.14,
+            ('cil', (tt[0] - 4.8, tt[1] - 2), -math.pi / 2, 9.6, 4.8, 4.8), grupo=g + 'c')
+        # joelheira
+        if E['joelheira']:
+            jm = ar if e >= 3 else 'couro'
+            add(canela, elipse(j, 4.8, 4.2), jm, z + 0.2, ('esf', j, 4.8, 4.6), metal=jm != 'couro', grupo=g + 'j')
+            add(canela, [(j[0] + fora * 3.0, j[1] - 2.4), (j[0] + fora * 7.0, j[1] - 1.0), (j[0] + fora * 6.4, j[1] + 2.6), (j[0] + fora * 3.2, j[1] + 2.2)],
+                jm, z + 0.19, ('plano', 0.5 * fora, -0.1, 0.3), metal=jm != 'couro', grupo=g + 'j')
+            if e >= 3:
+                add(canela, elipse((j[0] + 0.3, j[1] - 0.2), 1.4, 1.3, 10), 'ouro', z + 0.22, ('esf', (j[0] + 0.3, j[1] - 0.2), 1.4, 1.3), metal=True, grupo=g + 'j', detalhe=True)
+                add(canela, [(j[0] - 4.4, j[1] + 2.6), (j[0] + 4.4, j[1] + 2.6), (j[0] + 3.4, j[1] + 4.0), (j[0] - 3.4, j[1] + 4.0)], 'ouro', z + 0.21,
+                    ('plano', 0, 0.3, 0.2), metal=True, grupo=g + 'j', detalhe=True)
+        # pé: sapato de couro com biqueira de aço em lâminas
+        if lado == 'e':
+            sola = [(39.0, 148.5), (40.5, 145.2), (44.5, 142.6), (49.5, 140.8), (54.6, 142.0), (55.8, 146.5), (55.2, 150.2), (39.6, 150.6)]
+            cobre = [(40.0, 147.6), (41.2, 144.8), (45.0, 142.4), (50.0, 141.0), (51.5, 144.0), (47.0, 146.6)]
+        else:
+            sola = [(77.8, 146.0), (79.0, 141.6), (83.6, 140.6), (87.0, 143.4), (90.4, 147.2), (90.8, 150.6), (78.4, 150.4)]
+            cobre = [(80.4, 142.2), (83.6, 141.0), (87.2, 143.6), (90.0, 147.2), (85.6, 147.6), (81.6, 145.6)]
+        add(pe, sola, 'couro', z + 0.15, ('plano', 0.0, -0.4, 0.9), grupo=g + 'p')
+        xs_ = [x for x, _ in sola]
+        add(pe, [(min(xs_), 149.0), (max(xs_), 149.0), (max(xs_), 150.8), (min(xs_), 150.8)], 'couro', z + 0.16, ('lisa', 0), grupo=g + 'p', detalhe=True)
+        if E['grevas']:
+            add(pe, cobre, ar, z + 0.17, ('plano', -0.3, -0.6, 0.7), metal=True, grupo=g + 'pa')
 
-    # ---------------- saia de malha e tronco
-    if E['malha']:
-        saia = torso.pts([(-10, -8), (10, -8), (13, 10), (8, 13), (0, 11), (-8, 13), (-13, 10)])
-        P.append(Peca(saia, 'malha', 3.6, ('plano', 0.0, 0.1, 0.5), grupo='saia', textura='malha'))
-    corpo = torso.pts([(-12, -37), (11, -37), (13, -28), (12, -16), (10, -6), (-9, -6), (-12, -16), (-13, -28)])
-    P.append(Peca(corpo, 'malha' if E['malha'] else 'azul', 4.0, ('esf', torso.p(-1, -22), 14, 18), grupo='corpo', textura='malha' if E['malha'] else 'tecido'))
-    # tabardo azul com borda dourada (frente), da cintura até o meio da coxa
-    tab_ext = torso.pts([(-8.5, -20), (9.5, -20), (10.5, -6), (11.0, 20), (6.5, 22), (1.5, 20), (-1.5, 22), (-6.5, 20), (-8.5, -6)])
-    tab_int = torso.pts([(-7.2, -19), (8.2, -19), (9.2, -6), (9.6, 18.6), (6.4, 20.4), (1.5, 18.6), (-1.5, 20.4), (-5.4, 18.6), (-7.2, -6)])
-    P.append(Peca(tab_ext, 'ouro', 4.5, ('plano', 0.05, 0.0, 0.5), metal=True, grupo='tabardo'))
-    P.append(Peca(tab_int, 'azul', 4.6, ('plano', 0.05, 0.0, 0.55), grupo='tabardo', detalhe=True, textura='tecido'))
-    # peitoral de aço
+    # ---------------- saia de malha, tabardo
+    sk = 'malha' if E['malha'] else 'azul'
+    add(tronco, [(55.0, 84), (73.8, 84), (76.4, 95), (77.2, 105), (71, 106.6), (64.5, 105.2), (58, 106.6), (51.6, 105), (52.6, 95)], sk, 3.0,
+        ('plano', 0.0, 0.1, 0.6), grupo='saia', textura='malha' if E['malha'] else '')
+    tab = [(58.4, 84), (70.2, 84), (71.0, 97), (72.0, 110.4), (64.6, 112.0), (57.2, 110.6), (57.8, 97)]
+    add(tronco, tab, 'ouro' if e >= 2 else 'couro', 3.4, ('plano', 0.0, 0.0, 0.4), metal=e >= 2, grupo='tabardo')
+    tab_i = [(59.6, 84), (69.0, 84), (69.8, 97), (70.6, 109.2), (64.6, 110.6), (58.6, 109.4), (59.0, 97)]
+    add(tronco, tab_i, 'azul', 3.5, ('cil', (59.2, 97), -math.pi / 2, 11, 30, 30), grupo='tabardo', detalhe=True)
+    for xs in (62.0, 67.2):  # pregas verticais
+        add(tronco, [(xs, 88), (xs + 0.9, 88), (xs + 1.2, 108.6), (xs + 0.3, 108.8)], 'azul', 3.52, ('lisa', 1), grupo='tabardo', detalhe=True)
+    if e >= 3:  # flor dourada perto da barra
+        for x, y in ((64, 105), (63, 106), (65, 106), (64, 106), (64, 107)):
+            px(tronco, x + 0.5, y + 0.5, 'ouro', 4 if (x, y) == (64, 105) else 3, 3.6)
+
+    # ---------------- tronco
+    add(tronco, [(52, 63), (76.5, 62.5), (77.5, 71), (75, 80), (73.6, 86), (55.2, 86), (53.6, 80), (51.4, 71)], sk, 4.0,
+        ('esf', (63, 72), 15, 16), grupo='corpo', textura='malha' if E['malha'] else '')
+    add(tronco, [(54.6, 64.5), (74.6, 64), (75.0, 74), (73.4, 85), (55.6, 85), (54.6, 74)], 'azul', 4.1, ('esf', (62, 70), 14, 16), grupo='tunica')
     if E['peitoral']:
-        pei = torso.pts([(-10.5, -36), (10.5, -36), (12, -27), (10.5, -18), (5, -14), (-5, -14), (-10.5, -18), (-12, -27)])
-        P.append(Peca(pei, armadura, 5.0, ('esf', torso.p(1.5, -27), 13, 12), metal=True, grupo='peitoral'))
-        if E['ouro']:
-            P.append(Peca(torso.pts([(-1, -35), (1, -35), (0.8, -16), (-0.8, -16)]), 'ouro', 5.1, ('plano', 0, -0.2, 0.3), metal=True, grupo='peitoral', detalhe=True))
-    # cinto e correia diagonal
-    P.append(Peca(torso.pts([(-10.5, -9), (11, -9), (11.4, -5), (-10.8, -5)]), 'couro', 5.4, ('cil', torso.p(-11, -7), torso.a - math.pi / 2, 22, 4, 4), grupo='cinto'))
-    P.append(Peca(torso.pts([(1, -9.6), (5, -9.6), (5, -4.4), (1, -4.4)]), 'ouro', 5.5, ('plano', -0.3, -0.3, 0.2), metal=True, grupo='fivela'))
-    P.append(Peca(torso.pts([(1.9, -8.4), (4.1, -8.4), (4.1, -5.6), (1.9, -5.6)]), 'couro', 5.55, ('plano', 0, 0, 0), grupo='fivela', detalhe=True))
-    P.append(Peca(torso.pts([(7.5, -37), (11, -35), (-6.5, -8.5), (-10, -10)]), 'couro', 5.3, ('plano', 0.1, -0.1, 0.3), grupo='correia'))
-    P.append(Peca(torso.pts([(1.2, -24), (4.4, -22.2), (3.0, -19.6), (-0.2, -21.4)]), 'ouro', 5.35, ('plano', -0.2, -0.2, 0.2), metal=True, grupo='correia', detalhe=True))
-    # cachecol azul em volta do pescoço, caindo no peito
-    cach = torso.pts([(-9, -40), (8, -41), (10, -36), (6, -31), (0, -29), (-6, -31), (-10, -35)])
-    P.append(Peca(cach, 'azul', 5.6, ('esf', torso.p(0, -36), 11, 6), grupo='cachecol', textura='tecido'))
+        pei = [(58.4, 65.0), (74.0, 64.4), (75.6, 71.5), (73.2, 79.2), (66.0, 82.2), (59.6, 79.8), (57.4, 72)]
+        add(tronco, pei, ar, 4.3, ('esf', (63.5, 69.5), 11.5, 11), metal=True, grupo='peitoral')
+        add(tronco, [(65.6, 65.4), (66.6, 65.2), (66.6, 81.2), (65.8, 81.4)], ar, 4.32, ('lisa', 5), metal=True, grupo='peitoral', detalhe=True)
+        add(tronco, [(66.6, 65.2), (67.4, 65.2), (67.4, 81.0), (66.6, 81.2)], ar, 4.32, ('lisa', 2), metal=True, grupo='peitoral', detalhe=True)
+        if ouro:
+            add(tronco, [(58.4, 65.0), (74.0, 64.4), (74.2, 65.6), (58.6, 66.2)], 'ouro', 4.34, ('plano', 0, -0.4, 0), metal=True, grupo='peitoral', detalhe=True)
+    # correia diagonal com fivela
+    add(tronco, [(54.6, 63.2), (57.6, 63.0), (74.6, 82.6), (71.8, 84.0)], 'couro', 4.4, ('plano', 0.1, -0.2, 0.4), grupo='correia')
+    add(tronco, [(59.6, 69.2), (62.8, 68.8), (63.6, 72.4), (60.4, 72.8)], 'ouro', 4.42, ('plano', -0.3, -0.4, 0.3), metal=True, grupo='correia', detalhe=True)
+    add(tronco, [(60.6, 70.0), (62.0, 69.8), (62.4, 71.6), (61.0, 71.8)], 'couro', 4.43, ('lisa', 0), grupo='correia', detalhe=True)
+    # cinto, fivela, bolsa
+    add(tronco, [(54.4, 82.6), (74.2, 82.4), (74.4, 86.4), (54.6, 86.6)], 'couro', 4.5, ('cil', (54.4, 84.5), -math.pi / 2, 20, 4, 4), grupo='cinto')
+    add(tronco, [(59.0, 82.2), (63.0, 82.2), (63.0, 87.0), (59.0, 87.0)], 'ouro', 4.52, ('plano', -0.3, -0.3, 0.3), metal=True, grupo='fivela')
+    add(tronco, [(60.2, 83.4), (61.8, 83.4), (61.8, 85.8), (60.2, 85.8)], 'couro', 4.53, ('lisa', 0), grupo='fivela', detalhe=True)
+    add(tronco, [(67.6, 86.0), (72.6, 85.8), (73.0, 92.0), (67.8, 92.4)], 'couro', 4.55, ('plano', 0.2, -0.2, 0.6), grupo='bolsa')
+    add(tronco, [(67.4, 85.6), (72.8, 85.4), (72.8, 88.4), (70.2, 89.4), (67.4, 88.4)], 'couro', 4.56, ('plano', -0.2, -0.6, 0.2), grupo='bolsa', detalhe=True)
+    add(tronco, [(69.6, 87.6), (70.8, 87.6), (70.8, 88.8), (69.6, 88.8)], 'ouro', 4.57, ('lisa', 4), grupo='bolsa', detalhe=True)
 
-    # ---------------- cabeça
-    pesc = torso.filho(0.5, -39, k('cabeca', 0))
-    cab = Osso(pesc.o.copy(), pesc.a)
-    P.append(Peca(cab.pts([(-2.5, 1), (3.5, 1), (3, -4), (-2, -4)]), 'pele', 5.5, ('cil', cab.p(-2.5, -1), cab.a - math.pi / 2, 6, 5, 5), grupo='pescoco'))
-    rosto = [(-3.2, -3.2), (2.0, -2.0), (5.2, -4.0), (6.6, -7.2), (7.2, -10.0), (6.6, -11.4), (7.0, -13.5), (-4.0, -14.0), (-4.6, -8.0)]
-    P.append(Peca(cab.pts(rosto), 'pele', 6.0, ('esf', cab.p(1.0, -8.5), 7.5, 7.5), grupo='rosto'))
-    # cabelo castanho na nuca
-    P.append(Peca(cab.pts([(-6.4, -14), (-2.4, -14), (-2.8, -6), (-5.6, -4.6), (-6.8, -9)]), 'cabelo', 6.05, ('esf', cab.p(-4.5, -10), 4, 6), grupo='cabelo'))
-    # olho, sobrancelha, nariz, boca (traços de adulto: olho estreito, sobrancelha reta)
-    P.append(Peca(cab.pts([(2.8, -9.4), (5.0, -9.4), (5.0, -8.3), (2.8, -8.3)]), 'escuro', 6.3, ('plano', 0, 0, 0), grupo='olho', detalhe=True))
-    P.append(Peca(cab.pts([(2.2, -11.4), (5.6, -11.0), (5.6, -10.1), (2.2, -10.3)]), 'cabelo', 6.3, ('plano', 0, -0.3, 0), grupo='sobrancelha', detalhe=True))
-    P.append(Peca(cab.pts([(6.6, -9.2), (8.0, -6.2), (6.4, -5.8)]), 'pele', 6.25, ('plano', -0.6, -0.2, 0.0), grupo='nariz', detalhe=True))
-    P.append(Peca(cab.pts([(3.2, -4.6), (5.6, -4.8), (5.6, -4.0), (3.2, -3.9)]), 'pele', 6.3, ('plano', 0.4, 0.8, 0), grupo='boca', detalhe=True))
-    # elmo aberto (chapel de aço): domo, aba, protetor da face, faixa e ornamento dourados
-    ar = armadura
-    domo = elipse(cab.p(0.6, -15.0), 8.4, 7.4, 30, math.pi, 2 * math.pi)
-    P.append(Peca(domo + [cab.p(9.2, -13.6), cab.p(-7.8, -13.6)], ar, 6.6, ('esf', cab.p(-0.5, -16.0), 9.0, 8.5), metal=True, grupo='elmo'))
-    P.append(Peca(cab.pts([(-9.6, -14.6), (9.8, -14.6), (10.8, -12.2), (-9.8, -12.2)]), ar, 6.7, ('cil', cab.p(-9.6, -13.4), cab.a - math.pi / 2, 20, 2.4, 2.4), metal=True, grupo='aba'))
-    P.append(Peca(cab.pts([(-7.4, -13), (-2.2, -13), (-1.6, -6.8), (-3.4, -3.6), (-7.0, -4.6)]), ar, 6.65, ('esf', cab.p(-4.4, -9), 4.5, 6.5), metal=True, grupo='guarda_face'))
-    P.append(Peca(cab.pts([(-4.6, -9.6), (-3.2, -9.6), (-3.2, -8.2), (-4.6, -8.2)]), 'ouro', 6.68, ('esf', cab.p(-3.9, -8.9), 1, 1), metal=True, grupo='guarda_face', detalhe=True))
-    P.append(Peca(cab.pts([(-8.6, -16.4), (9.2, -16.4), (9.6, -14.6), (-9.4, -14.6)]), 'ouro', 6.75, ('cil', cab.p(-8.6, -15.5), cab.a - math.pi / 2, 18, 1.8, 1.8), metal=True, grupo='faixa', detalhe=True))
-    P.append(Peca(cab.pts([(3.0, -16.6), (6.0, -21.4), (6.8, -16.6)]), 'ouro', 6.78, ('plano', -0.3, -0.4, 0.2), metal=True, grupo='faixa', detalhe=True))
-    P.append(Peca(cab.pts([(-0.6, -22.2), (1.4, -22.4), (1.0, -16.6), (-0.8, -16.6)]), 'ouro', 6.77, ('cil', cab.p(-0.6, -22.2), cab.a, 5.6, 2.0, 2.0), metal=True, grupo='faixa', detalhe=True))
-    # pluma azul: do topo do elmo para trás, ondulando
-    sw = k('pluma', 0)
-    base = cab.p(-0.5, -22.5)
-    pts_sup, pts_inf = [], []
-    for i in range(8):
-        f = i / 7
-        cxp = base[0] - 2 - 15 * f - sw * f * 2
-        cyp = base[1] - 4 * math.sin(f * math.pi * 0.9) + 7 * f * f + sw * f
-        r = (3.6 - 2.4 * f) * (1.15 if E['pluma'] == 2 else 1.0)
-        pts_sup.append((cxp, cyp - r))
-        pts_inf.append((cxp + 0.6, cyp + r * 0.8))
-    pl = [tuple(base + np.array([1.2, 0.5]))] + pts_sup + list(reversed(pts_inf))
-    P.append(Peca(pl, 'pluma', 6.4, ('plano', -0.1, -0.5, 0.9), grupo='pluma', textura='tecido'))
-    if E['pluma'] == 2:
-        pl2 = [(x + 1.5, y + 3.2) for x, y in pl]
-        P.append(Peca(pl2, 'branco', 6.35, ('plano', -0.1, -0.4, 0.8), grupo='pluma2'))
-
-    # ---------------- ombreiras
-    def ombreira(c, rx, ry, z, grupo):
-        mat = E['ombreira']
-        metal = mat != 'couro'
-        P.append(Peca(elipse(c, rx, ry, 24, math.pi * 0.92, 2.08 * math.pi), mat, z, ('esf', c, rx, ry * 1.2), metal=metal, grupo=grupo))
-        if metal:  # lâmina de baixo da ombreira em camadas
-            P.append(Peca(elipse(c + np.array([0, 3.2]), rx * 0.92, ry * 0.75, 20, math.pi * 0.95, 2.05 * math.pi), mat, z - 0.05, ('esf', c + np.array([0, 3.2]), rx, ry), metal=True, grupo=grupo + 'b'))
-            P.append(Peca(elipse(c + np.array([0.5, -1.5]), 1.3, 1.3, 10), 'ouro', z + 0.05, ('esf', c + np.array([0.5, -1.5]), 1.3, 1.3), metal=True, grupo=grupo, detalhe=True))
-    ombreira(torso.p(-12.5, -33.5), 6.4, 5.4, 5.7, 'omb_f')
-
-    # ---------------- braço do escudo (o da frente)
-    omb_n = torso.filho(11, -34, k('braco_n', 0.08) - torso.a)
-    P.append(membro(omb_n, 12.5, 7.2, 6.2, 'malha' if E['malha'] else 'azul', 7.0, grupo='braco_n'))
+    # ---------------- braço da espada (direita do cavaleiro, à esquerda da imagem)
+    zb = k('z_be', 4.8)
+    P.append(membro(sup_e, OMBRO_E, COTOVELO_E, 7.4, 6.4, sk, zb, grupo='braco_e', textura='malha' if E['malha'] else ''))
     if E['peitoral']:
-        P.append(membro(omb_n.filho(0, 4), 7, 7.6, 6.8, armadura, 7.05, metal=True, grupo='braco_n'))
-    cot_n = omb_n.filho(0, 12.5, k('cotovelo_n', -1.25))
-    P.append(membro(cot_n, 10.5, 6.4, 5.6, armadura if E['grevas'] else 'couro', 7.1, metal=E['grevas'], grupo='braco_n'))
-    if e >= 3:
-        P.append(Peca(elipse(cot_n.o, 3.6, 3.4), armadura, 7.15, ('esf', cot_n.o.copy(), 3.6, 3.4), metal=True, grupo='cotoveleira'))
-    ombreira(torso.p(12.0, -33.0), 7.2, 5.8, 7.2, 'omb_n')
-    # escudo em gota, na frente do antebraço
-    esc_o = cot_n.p(0, 7.5) + np.array([5.5, 6.0]) + np.array([k('escudo_x', 0), k('escudo_y', 0)])
-    esc = Osso(esc_o, k('escudo', -0.08))
-    s = {1: 0.82, 2: 0.88, 3: 0.92, 4: 0.96, 5: 1.0, 6: 1.0}[e]
-    forma = [(-11, -15), (-5, -17.4), (5, -17.4), (11, -15), (10.6, -1), (6.6, 10), (0, 20), (-6.6, 10), (-10.6, -1)]
-    forma = [(x * s, y * s) for x, y in forma]
+        P.append(membro(sup_e, (49.6, 71.5), (46.4, 79), 6.8, 6.0, ar, zb + 0.02, metal=True, grupo='braco_e'))
+    P.append(membro(ante_e, COTOVELO_E, PUNHO_E, 6.6, 5.6, ar if E['grevas'] else 'couro', zb + 0.04, metal=E['grevas'], grupo='ante_e'))
+    if e >= 2:
+        add(ante_e, elipse(COTOVELO_E, 3.6, 3.3), ar, zb + 0.06, ('esf', COTOVELO_E, 3.6, 3.4), metal=True, grupo='cot_e')
+        if e >= 3:
+            add(ante_e, elipse((COTOVELO_E[0] - 0.6, COTOVELO_E[1] - 0.4), 1.0, 1.0, 8), 'ouro', zb + 0.07, ('lisa', 4), grupo='cot_e', detalhe=True)
+    # espada
+    Lb = E['espada']
+    lam = 'lamina' if E.get('lenda') else ar
+    d = DIR_ESP
+    nrm = np.array([d[1], -d[0]])
+    base = np.array(POMO) + d * 12.4
+    ponta = base + d * Lb
+    w0, w1 = 1.8, 1.4
+    lamina = [base - nrm * w0, base + nrm * w0, ponta - d * 5 + nrm * w1, ponta, ponta - d * 5 - nrm * w1]
+    zs = k('espada_frente') if k('espada_frente') is not None else zb - 0.1
+    add(esp, [tuple(p) for p in lamina], lam, zs, ('cil', tuple(base), ang_de(d), Lb, 3.6, 2.8), metal=not E.get('lenda'), grupo='espada', emissivo=bool(E.get('lenda')))
+    sulco = [base + d * 1.5 - nrm * 0.45, base + d * 1.5 + nrm * 0.45, base + d * (Lb * 0.66) + nrm * 0.35, base + d * (Lb * 0.66) - nrm * 0.35]
+    add(esp, [tuple(p) for p in sulco], lam, zs + 0.01, ('lisa', 2 if E.get('lenda') else 1), grupo='espada', detalhe=True)
+    gm = 'ouro' if e >= 3 else ('aco' if e == 2 else 'couro')
+    g0 = np.array(POMO) + d * 11.4
+    guarda = [g0 - nrm * 6.4 + d * 1.4, g0 - nrm * 5.6 - d * 0.4, g0 + nrm * 5.6 - d * 0.4, g0 + nrm * 6.4 + d * 1.4, g0 + nrm * 5.0 + d * 1.6, g0 - nrm * 5.0 + d * 1.6]
+    zg = max(zb, zs) + 0.12
+    add(esp, [tuple(p) for p in guarda], gm, zg, ('cil', tuple(g0 - nrm * 6), ang_de(nrm), 12.8, 2.0, 2.0), metal=gm != 'couro', grupo='guarda')
+    punho = [np.array(POMO) + d * 1.4 - nrm * 1.1, np.array(POMO) + d * 1.4 + nrm * 1.1, g0 + nrm * 1.1, g0 - nrm * 1.1]
+    add(esp, [tuple(p) for p in punho], 'couro', zg - 0.02, ('cil', tuple(np.array(POMO) + d * 1.4), ang_de(d), 10, 2.2, 2.2), grupo='punho')
+    add(esp, elipse(POMO, 2.0, 2.0, 12), gm, zg - 0.01, ('esf', POMO, 2.0, 2.0), metal=gm != 'couro', grupo='pomo')
+    # mão (luva de couro) fechada no punho
+    mao = np.array(POMO) + d * 4.8
+    add(esp, elipse(mao, 3.0, 3.3), 'couro', zg + 0.03, ('esf', tuple(mao), 3.0, 3.3), grupo='mao_e')
+    add(esp, [tuple(mao + (-2.8, -0.8)), tuple(mao + (2.4, -1.4)), tuple(mao + (2.6, -0.6)), tuple(mao + (-2.8, 0.0))], 'couro', zg + 0.04, ('lisa', 1), grupo='mao_e', detalhe=True)
+    add(esp, [tuple(mao + (-2.9, 0.9)), tuple(mao + (2.5, 0.3)), tuple(mao + (2.6, 1.0)), tuple(mao + (-2.9, 1.6))], 'couro', zg + 0.04, ('lisa', 1), grupo='mao_e', detalhe=True)
+
+    # ---------------- cachecol, gorjal e cabeça
+    zc = 6.0
+    add(cab, [(60.2, 61.4), (68.8, 61.4), (68.6, 66.4), (60.4, 66.4)], ar, 5.0, ('cil', (60.2, 64), -math.pi / 2, 8.6, 5, 5), metal=True, grupo='gorjal')
+    cach = [(53.8, 62.0), (57.0, 59.6), (60.4, 61.6), (63.4, 64.8), (68.6, 65.0), (71.4, 61.4), (74.2, 62.4), (74.0, 66.4), (70.8, 70.0), (64.0, 71.4), (57.6, 70.4), (54.4, 67.2)]
+    add(tronco, cach, 'azul', 5.6, ('esf', (62.5, 64.5), 11, 7.5), grupo='cachecol')
+    for a0, a1 in (((57.5, 64.6), (63.2, 69.2)), ((65.6, 67.6), (70.6, 66.0)), ((55.6, 66.8), (58.8, 69.6))):
+        a0, a1 = np.array(a0), np.array(a1)
+        n_ = np.array([-(a1 - a0)[1], (a1 - a0)[0]])
+        n_ = n_ / np.linalg.norm(n_) * 0.5
+        add(tronco, [tuple(a0 - n_), tuple(a0 + n_), tuple(a1 + n_), tuple(a1 - n_)], 'azul', 5.62, ('lisa', 1), grupo='cachecol', detalhe=True)
+    add(tronco, [(53.6, 63.6), (56.4, 64.6), (56.6, 72.0), (54.8, 73.4), (53.0, 70.0)], 'azul', 5.58, ('plano', -0.3, 0.0, 0.6), grupo='cachecol')
+
+    # rosto (3/4 olhando para a direita): testa sob a aba, nariz, queixo firme
+    rosto = [(60.4, 54.6), (70.4, 54.6), (71.2, 56.6), (70.6, 58.2), (72.2, 60.6), (70.9, 61.3), (71.2, 62.3), (70.6, 63.8), (68.6, 65.2), (65.0, 65.0), (61.6, 63.0)]
+    add(cab, rosto, 'pele', zc, ('esf', (65.0, 58.8), 6.8, 7.4), grupo='rosto')
+    add(cab, [(60.6, 54.8), (63.2, 54.8), (62.6, 58.6), (61.0, 58.8)], 'cabelo', zc + 0.05, ('lisa', 2), grupo='cabelo', detalhe=True)
+    # protetores de face: o de perto (esquerda) e o de longe (filete à direita)
+    add(cab, [(70.0, 54.8), (72.6, 54.8), (73.0, 58.4), (72.2, 62.0), (71.0, 62.6)], ar, zc - 0.1, ('esf', (71.4, 57), 2.4, 5), metal=True, grupo='face_d')
+    add(cab, [(56.0, 54.4), (61.8, 54.6), (63.0, 58.6), (62.6, 62.4), (60.4, 65.0), (57.4, 64.2), (56.2, 60.0)], ar, zc + 0.1, ('esf', (59.6, 57.6), 4.6, 6.8), metal=True, grupo='face_e')
+    add(cab, [(57.0, 60.6), (62.6, 60.3), (62.6, 61.2), (57.0, 61.5)], ar, zc + 0.11, ('lisa', 2), grupo='face_e', detalhe=True)
+    if E['elmo_ouro']:
+        add(cab, [(56.0, 54.4), (61.8, 54.6), (62.0, 55.6), (56.2, 55.4)], 'ouro', zc + 0.12, ('plano', 0, -0.3, 0), metal=True, grupo='face_e', detalhe=True)
+    domo = elipse((64.0, 54.6), 8.0, 9.4, 32, math.pi, 2 * math.pi)
+    add(cab, domo, ar, zc + 0.2, ('esf', (62.6, 53.0), 8.6, 9.6), metal=True, grupo='elmo')
+    add(cab, [(55.0, 52.6), (72.6, 52.6), (74.0, 54.4), (73.4, 55.6), (55.2, 55.4)], ar, zc + 0.3, ('cil', (55, 54), -math.pi / 2, 19, 3.0, 3.0), metal=True, grupo='aba')
+    crista_m = 'ouro' if E['elmo_ouro'] else ar
+    add(cab, [(63.4, 45.6), (64.6, 45.4), (65.6, 52.4), (64.6, 52.4)], crista_m, zc + 0.31, ('lisa', 2), metal=True, grupo='elmo', detalhe=True)
+    if E['elmo_ouro']:
+        add(cab, [(55.0, 52.4), (72.6, 52.4), (73.4, 53.4), (55.0, 53.6)], 'ouro', zc + 0.32, ('cil', (55, 53), -math.pi / 2, 19, 1.4, 1.4), metal=True, grupo='aba', detalhe=True)
+        add(cab, [(66.2, 52.6), (67.6, 52.6), (68.0, 48.6), (67.0, 46.8), (66.0, 48.6)], 'ouro', zc + 0.33, ('plano', -0.3, -0.3, 0.3), metal=True, grupo='elmo', detalhe=True)
+        add(cab, elipse((59.4, 50.6), 1.7, 1.7, 12), 'ouro', zc + 0.33, ('esf', (59.4, 50.6), 1.7, 1.7), metal=True, grupo='elmo', detalhe=True)
+
+    # traços do rosto, pixel a pixel (coordenadas de repouso)
+    for x in range(61, 70):
+        px(cab, x + 0.5, 55.5, 'pele', 1, zc + 0.15)
+    for x in (62, 63, 66, 67):
+        px(cab, x + 0.5, 56.5, 'pele', 2, zc + 0.15)
+    for x, y, m, i in [
+        (63, 57, 'cabelo', 1), (64, 57, 'cabelo', 1), (65, 57, 'cabelo', 2),       # sobrancelha de perto
+        (64, 58, 'escuro', 0), (65, 58, 'escuro', 1), (63, 58, 'pele', 2),          # olho de perto
+        (68, 57, 'cabelo', 1), (69, 57, 'cabelo', 2),                               # sobrancelha de longe
+        (69, 58, 'escuro', 0),                                                      # olho de longe
+        (67, 58, 'pele', 4), (67, 59, 'pele', 4), (67, 60, 'pele', 5),              # dorso do nariz
+        (68, 60, 'pele', 2), (70, 61, 'pele', 1), (69, 61, 'pele', 2),              # sombra do nariz
+        (63, 60, 'pele', 4), (64, 61, 'pele', 4),                                   # maçã do rosto
+        (67, 62, 'pele', 1), (68, 62, 'pele', 1), (69, 62, 'pele', 2),              # boca
+        (68, 63, 'pele', 4),                                                        # lábio de baixo
+        (64, 63, 'pele', 2), (65, 64, 'pele', 2), (66, 64, 'pele', 2), (67, 64, 'pele', 3),  # linha do queixo
+    ]:
+        px(cab, x + 0.5, y + 0.5, m, i, zc + 0.15)
+
+    # pluma azul em penas, saindo do alto do elmo e caindo para trás
+    if E['pluma']:
+        sw = k('pluma', 0)
+        larg = {1: 0.75, 2: 1.0, 3: 1.12}[E['pluma']]
+        curva = [(64.4, 46.4), (63.6, 42.6), (61.2, 40.4), (57.6, 40.6), (54.4, 42.8), (52.2, 46.2), (51.2, 49.6)]
+        curva = [np.array(c) + np.array([-sw * 0.6 * i / 6, sw * 0.5 * (i / 6) ** 2]) for i, c in enumerate(curva)]
+        for camada, (dx, dy, esc) in enumerate(((0.6, 1.4, 0.85), (0, 0, 1.0))):
+            sup, inf = [], []
+            for i, c in enumerate(curva):
+                f = i / (len(curva) - 1)
+                tng = curva[min(i + 1, len(curva) - 1)] - curva[max(i - 1, 0)]
+                tng = tng / np.linalg.norm(tng)
+                nn = np.array([tng[1], -tng[0]])
+                r = (3.4 - 2.6 * f) * larg * esc
+                sup.append(c + nn * r + (dx, dy))
+                serra = 1.0 if i % 2 == 0 else 0.45     # pontas das penas na borda de baixo
+                inf.append(c - nn * r * serra * 1.1 + (dx, dy))
+            poly = [tuple(p) for p in sup] + [tuple(p) for p in reversed(inf)]
+            add(cab, poly, 'pluma', zc + 0.13 + 0.02 * camada, ('plano', -0.2, -0.5, 1.0), grupo='pluma' + str(camada), detalhe=camada == 1)
+        for i in range(1, 6):  # veios das penas
+            c = curva[i]
+            px(cab, c[0], c[1] - 0.6, 'pluma', 5 if i < 3 else 4, zc + 0.2)
+
+    # ---------------- ombreiras em lâminas
+    om = E['ombreira']
+    mtl = om != 'couro'
+
+    def ombreira(c, rx, ry, z, grupo, cravo):
+        c = np.array(c)
+        for i, (dy, fx, fy) in enumerate(((5.6, 0.86, 0.6), (3.0, 0.94, 0.7), (0.0, 1.0, 1.0))):
+            cc = c + np.array([(-0.4 if c[0] < 64 else 0.4) * (2 - i), dy])
+            add(tronco, elipse(cc, rx * fx, ry * fy, 24, math.pi * 0.95, 2.05 * math.pi) + [tuple(cc + (rx * fx, ry * fy * 0.25)), tuple(cc + (-rx * fx, ry * fy * 0.25))],
+                om, z + 0.01 * i, ('esf', tuple(cc), rx * fx, ry * fy * 1.3), metal=mtl, grupo=grupo + str(i))
+            if ouro and i == 0:
+                add(tronco, [tuple(cc + (-rx * fx, ry * fy * 0.1)), tuple(cc + (rx * fx, ry * fy * 0.1)), tuple(cc + (rx * fx, ry * fy * 0.25 + 0.9)), tuple(cc + (-rx * fx, ry * fy * 0.25 + 0.9))],
+                    'ouro', z + 0.005, ('plano', 0, 0.2, 0.2), metal=True, grupo=grupo + str(i), detalhe=True)
+        if mtl:
+            add(tronco, elipse(cravo, 1.5, 1.5, 12), 'ouro', z + 0.05, ('esf', cravo, 1.5, 1.5), metal=True, grupo=grupo, detalhe=True)
+
+    ombreira((52.4, 65.2), 4.9, 4.6, 5.5, 'omb_e', (55.4, 64.6))
+
+    # ---------------- braço do escudo e escudo (à direita da imagem, na frente)
+    P.append(membro(sup_d, OMBRO_D, COTOVELO_D, 7.4, 6.4, sk, 6.5, grupo='braco_d', textura='malha' if E['malha'] else ''))
+    if E['peitoral']:
+        P.append(membro(sup_d, (79.6, 71.5), (81.4, 79), 6.8, 6.0, ar, 6.52, metal=True, grupo='braco_d'))
+    ombreira((76.8, 64.0), 7.0, 5.6, 7.0, 'omb_d', (71.2, 64.6))
+
+    esc = Osso((81.0, 86.0), 0.0, ante_d.tf((81.0, 86.0)) + np.array([k('escudo_x', 0), k('escudo_y', 0)]), ante_d.thp - ante_d.th + k('escudo', 0))
+    s = {1: 0.84, 2: 0.9, 3: 0.94, 4: 1.0, 5: 1.0, 6: 1.02}[e]
+
+    def S(lista):
+        c = np.array([81.0, 86.0])
+        return [tuple(c + (np.array(p) - c) * s) for p in lista]
+
+    forma = [(70.4, 73.6), (80.0, 72.2), (90.2, 71.6), (91.4, 78.0), (90.6, 88.4), (88.0, 98.0), (84.6, 106.6), (78.2, 101.0), (73.2, 92.4), (70.6, 81.6)]
+    campo = [(72.0, 75.0), (80.2, 73.8), (88.8, 73.2), (89.8, 78.4), (89.0, 88.2), (86.6, 97.0), (84.4, 103.4), (79.2, 99.2), (74.6, 91.6), (72.2, 81.4)]
     aro = E['escudo']
-    P.append(Peca(esc.pts(forma), aro, 8.0, ('plano', -0.25, -0.15, 0.5), metal=aro != 'madeira', grupo='escudo'))
-    campo = [(x * 0.84, y * 0.86 - 0.4) for x, y in forma]
-    P.append(Peca(esc.pts(campo), 'azul', 8.1, ('esf', esc.p(-2, -6), 14, 22), grupo='escudo', detalhe=True))
+    add(esc, S(forma), aro, 7.5, ('cil', (70.4, 86), -math.pi / 2, 21, 30, 30), metal=aro != 'madeira', grupo='escudo')
+    add(esc, S(campo), E['campo'], 7.6, ('cil', (72.0, 86), -math.pi / 2, 18, 22, 22), grupo='escudo', detalhe=True)
     cz = E['cruz']
-    P.append(Peca(esc.pts([(-1.6 * s, -12.5 * s), (1.6 * s, -12.5 * s), (1.6 * s, 12.5 * s), (-1.6 * s, 12.5 * s)]), cz, 8.2, ('cil', esc.p(-1.6 * s, 0), esc.a - math.pi / 2, 3.2 * s, 30, 30), metal=cz != 'branco', grupo='cruz', detalhe=True))
-    P.append(Peca(esc.pts([(-7 * s, -6.2 * s), (7 * s, -6.2 * s), (7 * s, -3.0 * s), (-7 * s, -3.0 * s)]), cz, 8.2, ('cil', esc.p(-7 * s, -4.6 * s), esc.a - math.pi / 2, 14 * s, 3.2, 3.2), metal=cz != 'branco', grupo='cruz', detalhe=True))
-    if aro != 'madeira':  # rebites
-        for x, y in [(-9.4, -13.6), (9.4, -13.6), (-9.4, -2), (9.2, -2), (0, 17)]:
-            c = esc.p(x * s, y * s)
-            P.append(Peca(elipse(c, 0.9, 0.9, 8), 'ouro', 8.25, ('esf', c, 0.9, 0.9), metal=True, grupo='rebite', detalhe=True))
-    # mão por cima da borda do escudo (empunhadura)
-    mao_n = cot_n.p(0, 10.5)
-    P.append(Peca(elipse(mao_n, 3.0, 2.8), 'couro', 8.3, ('esf', mao_n, 3.0, 2.8), grupo='mao_n'))
+    vert = [(79.6, 75.6), (82.2, 75.4), (81.8, 77.6), (82.8, 96.6), (84.0, 99.6), (81.6, 99.8), (80.6, 96.8), (80.4, 77.6)]
+    hori = [(73.8, 82.6), (76.4, 82.2), (78.0, 82.0), (86.0, 81.2), (88.2, 80.4), (88.4, 82.8), (86.2, 83.6), (78.2, 84.4), (76.2, 84.8), (74.0, 84.8)]
+    add(esc, S(vert), cz, 7.7, ('cil', (80, 87), -math.pi / 2, 2.6, 40, 40), metal=cz != 'branco', grupo='cruz', detalhe=True)
+    add(esc, S(hori), cz, 7.7, ('plano', -0.1, -0.5, 0.6), metal=cz != 'branco', grupo='cruz', detalhe=True)
+    if aro != 'madeira':
+        for x, y in ((72.0, 74.4), (80.0, 72.9), (89.4, 72.6), (90.6, 80.0), (89.4, 91.0), (71.8, 82.0), (74.6, 93.2), (84.6, 105.0)):
+            c = S([(x, y)])[0]
+            add(esc, elipse(c, 0.8, 0.8, 8), 'ouro', 7.8, ('lisa', 4), metal=True, grupo='rebite', detalhe=True)
+    else:
+        for xx in (76.0, 81.0, 86.0):
+            add(esc, S([(xx, 73.5), (xx + 0.8, 73.4), (xx + 0.8, 100.0), (xx, 100.0)]), 'madeira', 7.55, ('lisa', 1), grupo='escudo', detalhe=True)
+    for x, y in ((76, 89), (77, 90), (86, 92), (75, 78), (87, 76)):  # marcas de uso
+        c = S([(x + 0.5, y + 0.5)])[0]
+        px(esc, c[0], c[1], E['campo'], 1, 7.65)
 
-    # escala do estágio, em volta dos pés
+    # ---------------- escala do estágio (em volta dos pés) e posição no quadro
     tam = E['tam']
-    if tam != 1.0:
-        ax, ay = ANCORA
-        for p in P:
-            p.poly = [(ax + (x - ax) * tam, ay + (y - ay) * tam) for x, y in p.poly]
-            if p.luz[0] == 'cil':
-                _, o, a, L, w0, w1 = p.luz
-                p.luz = ('cil', np.array([ax + (o[0] - ax) * tam, ay + (o[1] - ay) * tam]), a, L * tam, w0 * tam, w1 * tam)
-            elif p.luz[0] == 'esf':
-                _, c, rx, ry = p.luz
-                p.luz = ('esf', np.array([ax + (c[0] - ax) * tam, ay + (c[1] - ay) * tam]), rx * tam, ry * tam)
-    return P
+    ax, ay = 64.0, 150.0
+
+    def mv(x, y):
+        return (ax + (x - ax) * tam + OX, ay + (y - ay) * tam + OY)
+
+    for p in P:
+        p.poly = [mv(x, y) for x, y in p.poly]
+        if p.luz[0] == 'cil':
+            _, o, a, L, w0, w1 = p.luz
+            p.luz = ('cil', np.array(mv(*o)), a, L * tam, w0 * tam, w1 * tam)
+        elif p.luz[0] == 'esf':
+            _, c, rx, ry = p.luz
+            p.luz = ('esf', np.array(mv(*c)), rx * tam, ry * tam)
+    RT = [(*mv(x, y), c, z) for x, y, c, z in RT]
+    return P, RT
 
 
 def aura(rgba: np.ndarray) -> np.ndarray:
-    """Lenda: brilho dourado suave em volta da silhueta (sem auréola)."""
+    """Lenda: brilho dourado suave em volta da silhueta."""
     a = rgba[..., 3] > 0
     halo = np.zeros(a.shape, np.float32)
     for r in (1, 2, 3):
@@ -445,7 +669,7 @@ def aura(rgba: np.ndarray) -> np.ndarray:
     return out
 
 
-# ------------------------------------------------------------------ poses (menos movimento, bem desenhado)
+# ------------------------------------------------------------------ poses
 
 
 def suave(a, b, f):
@@ -456,21 +680,25 @@ def suave(a, b, f):
 
 def poses():
     a = {}
-    a['parado'] = [{'resp': r, 'pluma': p, 'capa': c} for r, p, c in ((0, 0, 0), (0, 0.5, 0.3), (1, 1.0, 0.5), (0, 0.5, 0.2))]
-    # preparo: ergue a espada por cima do ombro
-    a['preparo'] = [{'braco_f': suave(0.28, 2.5, f), 'cotovelo_f': suave(0.18, -0.4, f), 'espada': suave(0.62, 3.6, f), 'tronco': -0.06 * f, 'agacha': 1.5 * f, 'pluma': f} for f in (0.35, 0.7, 1.0)]
+    a['parado'] = [{'resp': r, 'pluma': p, 'capa': c} for r, p, c in ((0, 0, 0), (0.5, 0.5, 0.4), (1, 1.0, 0.8), (0.5, 0.5, 0.4))]
+    a['preparo'] = [{'be_b': suave(0.35, 2.55, f), 'be_a': suave(0.18, 3.3, f), 'esp': suave(0.43, 2.2, f), 'tronco': -0.07 * f, 'agacha': 2 * f, 'pluma': f, 'cabeca': 0.04 * f}
+                    for f in (0.35, 0.7, 1.0)]
     g = []
-    for f in (0.0, 0.35, 0.7, 1.0, 0.75, 0.4):
-        g.append({'braco_f': suave(2.5, -1.25, f), 'cotovelo_f': suave(-0.4, -0.15, f), 'espada': suave(3.6, -1.15, f), 'tronco': suave(-0.06, 0.12, f),
-                  'x': 4 * f, 'agacha': suave(1.5, 2.5, f), 'pluma': suave(1.0, -1.0, f), 'capa': -0.6 * f, 'coxa_n': suave(-0.2, -0.38, f), 'canela_n': suave(-0.12, 0.05, f)})
+    for f in (0.0, 0.3, 0.6, 1.0, 0.85, 0.6):
+        golpe = min(1.0, f / 0.6)
+        g.append({'be_b': suave(2.55, -1.2, golpe), 'be_a': suave(3.3, -1.45, golpe), 'esp': suave(2.2, -1.25, golpe), 'tronco': suave(-0.07, 0.14, golpe),
+                  'x': suave(0, 7, golpe), 'agacha': suave(2, 4.5, golpe), 'pluma': suave(1.0, -1.2, golpe), 'capa': suave(0, -2, golpe),
+                  'pe_d': (suave(0, 9, golpe), 0), 'z_be': 7.9 if golpe > 0.5 else 4.8, 'espada_frente': 7.85 if golpe > 0.5 else None})
     a['golpe'] = g
-    a['dano'] = [{'tronco': -0.14 * f, 'x': -3 * f, 'cabeca': -0.15 * f, 'braco_n': 0.08 - 0.3 * f, 'escudo_y': -3 * f, 'pluma': 1.2 * f, 'capa': 0.8 * f} for f in (1.0, 0.6, 0.25)]
+    a['dano'] = [{'tronco': -0.16 * f, 'x': -4 * f, 'cabeca': -0.12 * f, 'be_b': 0.35 + 0.35 * f, 'be_a': 0.18 + 0.5 * f, 'escudo': -0.12 * f, 'escudo_y': -2 * f,
+                  'pluma': 1.4 * f, 'capa': 1.4 * f} for f in (1.0, 0.6, 0.25)]
     d = []
     for f in (0.25, 0.5, 0.75, 0.95, 1.0):
-        d.append({'agacha': 13 * f, 'tronco': 0.32 * f, 'cabeca': 0.25 * f, 'coxa_n': suave(-0.2, -1.35, f), 'canela_n': suave(-0.12, 0.35, f),
-                  'coxa_f': suave(0.22, 0.65, f), 'canela_f': suave(0.18, 1.5, f), 'braco_f': suave(0.28, -0.25, f), 'espada': suave(0.62, -0.05, f), 'pluma': -f, 'capa': -0.3 * f, 'braco_n': 0.3 * f})
+        d.append({'agacha': 17 * f, 'x': -2 * f, 'tronco': 0.3 * f, 'cabeca': 0.28 * f, 'pe_d': (2 * f, 0), 'pe_e': (-2 * f, 0),
+                  'be_b': suave(0.35, -0.15, f), 'be_a': suave(0.18, -0.3, f), 'esp': suave(0.43, -0.12, f), 'pluma': -f, 'capa': -0.6 * f, 'escudo_y': 3 * f})
     a['derrota'] = d
-    a['vitoria'] = [{'braco_f': suave(0.28, 2.95, f), 'cotovelo_f': suave(0.18, 0.05, f), 'espada': suave(0.62, 3.14, f), 'tronco': -0.04 * f, 'pluma': 0.6 * f, 'capa': 0.5 * f, 'resp': -1 * f} for f in (0.4, 0.8, 1.0, 0.9)]
+    a['vitoria'] = [{'be_b': suave(0.35, 3.05, f), 'be_a': suave(0.18, 3.1, f), 'esp': suave(0.43, 3.18, f), 'tronco': -0.03 * f, 'cabeca': -0.06 * f,
+                     'pluma': 0.6 * f, 'capa': 0.9 * f, 'resp': -1 * f} for f in (0.4, 0.8, 1.0, 0.9)]
     return a
 
 
@@ -478,7 +706,8 @@ TEMPOS = {'parado': 260, 'preparo': 95, 'golpe': 70, 'dano': 90, 'derrota': 140,
 
 
 def quadro(e, pose):
-    q = render(montar(e, pose))
+    P, RT = montar(e, pose)
+    q = render(P, RT)
     return aura(q) if ESTAGIOS[e].get('lenda') else q
 
 
@@ -488,13 +717,15 @@ def principal() -> int:
     ap.add_argument('--anim', default='parado')
     ap.add_argument('--escala', type=int, default=4)
     ap.add_argument('--estagios', default='1,2,3,4,5,6')
+    ap.add_argument('--so', type=int, help='só este quadro da animação')
     ap.add_argument('--mascote', action='store_true')
     a = ap.parse_args()
     est = [int(x) for x in a.estagios.split(',')]
     if a.previa:
-        anims = poses()
-        lista = anims[a.anim]
-        img = Image.new('RGBA', (W * len(lista), H * len(est)), (58, 52, 46, 255))
+        lista = poses()[a.anim]
+        if a.so is not None:
+            lista = [lista[a.so]]
+        img = Image.new('RGBA', (W * len(lista), H * len(est)), (70, 64, 58, 255))
         for li, e in enumerate(est):
             for ci, pz in enumerate(lista):
                 img.alpha_composite(Image.fromarray(quadro(e, pz), 'RGBA'), (ci * W, li * H))
@@ -506,13 +737,12 @@ def principal() -> int:
         dest.mkdir(parents=True, exist_ok=True)
         for e in (4, 6):
             q = Image.fromarray(quadro(e, poses()['parado'][0]), 'RGBA')
-            caixa = q.getbbox()
-            q = q.crop(caixa)
+            q = q.crop(q.getbbox())
             q.resize((q.width * 6, q.height * 6), Image.NEAREST).save(dest / f'heroi-{e}.png', optimize=True)
         print('mascote em', dest)
         return 0
     for e in est:
-        quadros = {k: [quadro(e, p) for p in v] for k, v in poses().items()}
+        quadros = {nome: [quadro(e, p) for p in v] for nome, v in poses().items()}
         _, meta = gravar_folha(f'heroi-{e}', quadros, TEMPOS, DESTINO, ANCORA)
         print('gravado heroi-%d' % e, meta['caixa'])
     return 0

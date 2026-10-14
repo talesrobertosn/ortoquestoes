@@ -40,6 +40,21 @@ Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com o PR #227 aberto p
   - Repense a figura inteira a partir da silhueta do conceito: três quartos, pernas abertas, peito largo, ombreiras grandes em camadas e cabeça pequena em relação ao corpo.
   - Se os polígonos não chegarem lá, troque de método: desenhe à mão uma matriz de pixels por paleta, um quadro-chave grande (uns 96 px de altura do corpo), e derive dele poucas poses.
   - **Não mescle o PR #227 com o herói de agora**: ele ainda tem o herói SDF rejeitado.
+- **Rodada 2 (14/10, mais tarde):** `cavaleiro2d.py` foi reescrito do zero.
+  - **Base:** as medidas vêm do conceito, com 1 px para cerca de 10 px dele. O quadro tem 136×170, com âncora (68,164).
+  - **Como desenha:** peças presas a ossos 2D, IK nas pernas para agachar e dar passos, e retoques do rosto pixel a pixel.
+  - **Prévia:** `docs/flashcards/conceitos/cavaleiro2d-previa-2.png` (estágio 4, parado). As proporções de herói já funcionam: pernas longas, ombreiras grandes, escudo, tabardo e capa.
+  - **Falta corrigir:**
+    1. **Elmo achatado.** O domo está baixo e a faixa dourada muito grossa. Deixar o domo mais alto e redondo, com a aba fina.
+    2. **Protetores de face.** O da esquerda ficou escuro e ilegível.
+    3. **Rosto pequeno e borrado.** Retocar os pixels: olhos, nariz e queixo.
+    4. **Pluma.** Parece um gancho; deve ser um tufo de penas mais cheio.
+    5. **Lâmina da espada quase preta.** Usar o aço claro, com um fio de luz.
+    6. **Biqueiras dos pés brancas demais.** Escurecer o aço, deixando o brilho só na borda.
+    7. **Metal em geral.** A ombreira direita está estourada de branco e o peitoral escuro demais. Ajustar a fórmula do metal em `tons()`.
+    8. **Capa.** Aparece só como uma bandeira embaixo do escudo; deve sair do ombro.
+    9. **Animações.** Conferir com `--anim preparo|golpe|dano|derrota|vitoria`. As poses usam ângulos absolutos `be_b`, `be_a` e `esp`.
+  - **Para ver um quadro:** `--so 0 --estagios 4 --escala 6`.
 - **Próximos passos:**
   1. Iterar: `python3 scripts/sprites/cavaleiro2d.py --previa /tmp/x.png --estagios 4 --escala 5`. Depois ver todos os estágios (`--estagios 1,2,3,4,5,6`) e as animações (`--anim golpe|dano|derrota|vitoria|preparo`).
   2. Assar: `python3 scripts/sprites/cavaleiro2d.py`, depois `python3 scripts/sprites/indice.py`.
