@@ -109,7 +109,7 @@ export const BESTIARIO: Inimigo[] = [
     lema: 'Endurece enquanto você hesita.', habilidade: 'Regenera 4 por rodada (até 32 no confronto).',
   },
   {
-    id: 'gosma-de-cimento', nome: 'Gosma de Cimento', sprite: 'gosma', cenario: 'masmorra', nivel: 'comum', andarMin: 3,
+    id: 'gosma-de-cimento', nome: 'Gosma de Cimento', sprite: 'gosma', cenario: 'jardim', nivel: 'comum', andarMin: 3,
     vida: 90, forca: 3.1, armadura: 0, paciencia: 10, porErroSeguido: 0, critico: 0.05, divide: { abaixoDe: 0.5, barreira: 0.25 }, especialidade: 'quadril',
     lema: 'Ainda não endureceu. Ainda.', habilidade: 'Com metade da vida, se divide e ganha uma barreira de 25% da vida.',
   },
