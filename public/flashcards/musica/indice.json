@@ -3,84 +3,98 @@
   "arquivo": "vitoria.mp3",
   "laco": false,
   "duracao": 7.583,
-  "bpm": 112
+  "bpm": 112,
+  "arquivo_opus": "vitoria.ogg"
  },
  "recompensa": {
   "arquivo": "recompensa.mp3",
   "laco": false,
   "duracao": 7.14,
-  "bpm": 100
+  "bpm": 100,
+  "arquivo_opus": "recompensa.ogg"
  },
  "derrota": {
   "arquivo": "derrota.mp3",
   "laco": false,
   "duracao": 9.885,
-  "bpm": 56
+  "bpm": 56,
+  "arquivo_opus": "derrota.ogg"
  },
  "cripta": {
   "arquivo": "cripta.mp3",
   "laco": true,
   "duracao": 53.333,
-  "bpm": 72
+  "bpm": 72,
+  "arquivo_opus": "cripta.ogg"
  },
  "batalha": {
   "arquivo": "batalha.mp3",
   "laco": true,
   "duracao": 29.091,
-  "bpm": 132
+  "bpm": 132,
+  "arquivo_opus": "batalha.ogg"
  },
  "elite": {
   "arquivo": "elite.mp3",
   "laco": true,
   "duracao": 27.429,
-  "bpm": 140
+  "bpm": 140,
+  "arquivo_opus": "elite.ogg"
  },
  "chefe": {
   "arquivo": "chefe.mp3",
   "laco": true,
   "duracao": 26.667,
-  "bpm": 144
+  "bpm": 144,
+  "arquivo_opus": "chefe.ogg"
  },
  "dragao": {
   "arquivo": "dragao.mp3",
   "laco": true,
   "duracao": 25.6,
-  "bpm": 150
+  "bpm": 150,
+  "arquivo_opus": "dragao.ogg"
  },
  "biblioteca": {
   "arquivo": "biblioteca.mp3",
   "laco": true,
   "duracao": 65.455,
-  "bpm": 88
+  "bpm": 88,
+  "arquivo_opus": "biblioteca.ogg"
  },
  "torre": {
   "arquivo": "torre.mp3",
   "laco": true,
   "duracao": 33.103,
-  "bpm": 116
+  "bpm": 116,
+  "arquivo_opus": "torre.ogg"
  },
  "floresta": {
   "arquivo": "floresta.mp3",
   "laco": true,
   "duracao": 32.727,
-  "bpm": 88
+  "bpm": 88,
+  "arquivo_opus": "floresta.ogg"
  },
  "masmorra": {
   "arquivo": "masmorra.mp3",
   "laco": true,
   "duracao": 40.0,
-  "bpm": 96
+  "bpm": 96,
+  "arquivo_opus": "masmorra.ogg"
  },
  "covil": {
   "arquivo": "covil.mp3",
   "laco": true,
   "duracao": 35.556,
-  "bpm": 108
+  "bpm": 108,
+  "arquivo_opus": "covil.ogg"
  },
  "sala": {
   "arquivo": "sala.mp3",
   "laco": true,
   "duracao": 45.714,
-  "bpm": 84
+  "bpm": 84,
+  "arquivo_opus": "sala.ogg"
  }
 }

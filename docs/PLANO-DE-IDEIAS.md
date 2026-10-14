@@ -116,8 +116,8 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 66. [x] PNGs em paleta sem perda (`scripts/otimizar_png.py`).
 67. [x] Canvas de efeitos só ligado enquanto há efeito vivo; a pixel art usa uma camada própria.
-68. [ ] Carregar as tiras de efeito sob demanda por andar (hoje: todas na entrada, 196 KB).
-69. [ ] Música em OGG/Opus com fallback (hoje: MP3 a 112 kbps, 6 MB).
+68. [x] Carregar as tiras de efeito sob demanda por andar (hoje: todas na entrada, 196 KB).
+69. [x] Música em OGG/Opus com fallback (hoje: MP3 a 112 kbps, 6 MB).
 70. [ ] Medir FPS no celular durante o crítico (alvo: 50+).
 
 ## I. Mods e personalização
@@ -158,3 +158,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** O Tales confirmou o som no celular (ideia 78) e colou a parte 19 no Supabase (ideia 83). O #224 foi trazido para a base pelo #237 (ideia 84). O top 3 do ranking foi refeito com largura cheia e cartões legíveis (#235).
 
 - **14/10/2026:** Combate (16, 18, 23, 24 e 64), PR draft [#248](https://github.com/talesrobertosn/ortoquestoes/pull/248), a revisar. Numerais próprios, pedregulhos, hipnose apenas visual após o primeiro Olhar acertado e carga voando para o mímico. [Detalhes e testes](flashcards/COMBATE-14-10.md).
+- **14/10/2026:** Desempenho (68 e 69), PR draft [#249](https://github.com/talesrobertosn/ortoquestoes/pull/249), a revisar: tiras por adversário, música Opus com MP3 de reserva. [Testes e medidas](flashcards/DESEMPENHO-14-10.md).

@@ -257,6 +257,7 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
   separados, pela RPC `ranking_cripta` (SQL parte 18, já rodado pelo Tales). Torre sem ranking.
 - **Opinião.** `enviar_opiniao_flashcards` (SQL parte 18), na central, no fim da sessão de estudo e no
   fim da partida (`#/flashcards?opiniao=fim_sessao`), e um convite discreto depois de 3 sessões.
+- **Desempenho (14/10, em PR draft):** ideias 68 e 69 concluídas no PR draft #249: tiras por andar e Opus com fallback MP3. [DESEMPENHO-14-10.md](DESEMPENHO-14-10.md) traz medidas e comandos. Não publicado.
 - **Som no celular** (`efeitos/sons.ts`): destrave no `pointerup/touchend/click`, buffer mudo,
   `audioSession = playback`, retomada ao voltar para a aba e escolha "com som / sem som" na primeira
   entrada. **Ainda não confirmado num celular de verdade**: pedir ao Tales para testar.

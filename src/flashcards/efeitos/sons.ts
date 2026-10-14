@@ -1,3 +1,4 @@
+import { carregarAudioArquivo } from './audioArquivo'
 /**
  * Identidade sonora do Torneio, sintetizada na hora com Web Audio (nenhum
  * arquivo, nenhuma licença de terceiros, nenhuma trilha de outro jogo).
@@ -569,11 +570,9 @@ function carregarFaixa(nome: string): Promise<AudioBuffer | null> {
   let p = carregando.get(nome)
   if (!p && ctx) {
     const c = ctx
-    p = fetch(recurso(`flashcards/musica/${nome}.mp3`))
-      .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(String(r.status)))))
-      .then((b) => c.decodeAudioData(b))
-      .then((buf) => { buffers.set(nome, buf); return buf })
-      .catch(() => { carregando.delete(nome); falhaSom = 'carregamento'; return null })
+    const opus = !!document.createElement('audio').canPlayType('audio/ogg; codecs=opus')
+    p = carregarAudioArquivo(nome, { opus, url: arquivo => recurso(`flashcards/musica/${arquivo}`), decodificar: b => c.decodeAudioData(b) })
+      .then(buf => { if (buf) buffers.set(nome, buf); else { carregando.delete(nome); falhaSom = 'carregamento' }; return buf })
     carregando.set(nome, p)
   }
   return p ?? Promise.resolve(null)
