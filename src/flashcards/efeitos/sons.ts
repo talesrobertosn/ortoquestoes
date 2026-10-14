@@ -40,7 +40,7 @@ export type Timbre = string | undefined
 const FAMILIA_SOM: Record<string, string> = {
   corvo: 'alado', morcego: 'alado', harpia: 'alado', esqueleto: 'osso', espectro: 'espectral',
   cavaleiro: 'guardiao', rei: 'guardiao', arconte: 'guardiao', mao: 'serpente', leviata: 'serpente',
-  aranha: 'inseto', escaravelho: 'inseto', goblin: 'raptor', quimera: 'dragao', ent: 'golem',
+  aranha: 'inseto', escaravelho: 'inseto', goblin: 'raptor', quimera: 'dragao', ent: 'golem', cogumelo: 'gosma',
 }
 const familiaSom = (t: Timbre) => (t && FAMILIA_SOM[t]) || t
 

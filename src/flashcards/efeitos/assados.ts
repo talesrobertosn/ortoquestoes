@@ -5,6 +5,53 @@
 export interface AnimAssada { linha: number; quadros: number; ms: number }
 export interface MetaAssada { largura: number; altura: number; colunas: number; ancora: [number, number]; caixa: [number, number, number, number]; animacoes: Record<string, AnimAssada> }
 export const ASSADOS: Record<string, MetaAssada> = {
+ "cogumelo": {
+  "largura": 136,
+  "altura": 108,
+  "colunas": 6,
+  "ancora": [
+   60,
+   101
+  ],
+  "caixa": [
+   36,
+   52,
+   48,
+   51
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 170
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 140
+   }
+  }
+ },
  "dragao": {
   "largura": 264,
   "altura": 216,

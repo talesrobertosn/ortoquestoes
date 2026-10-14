@@ -18,7 +18,7 @@ export type Nivel = 'comum' | 'elite' | 'chefe'
 /** Masmorra (Cripta): sem fim, em atos de 3. Torre do Título: 100 andares, com patamares. */
 export type Modo = 'masmorra' | 'torre'
 export type SpriteInimigo = 'golem' | 'serpente' | 'guardiao' | 'dragao' | 'raptor' | 'gosma' | 'mimico'
-  | 'corvo' | 'morcego' | 'aranha' | 'escaravelho' | 'goblin' | 'esqueleto' | 'cavaleiro' | 'espectro' | 'quimera' | 'mao' | 'leviata' | 'rei' | 'arconte' | 'ent' | 'harpia'
+  | 'corvo' | 'morcego' | 'aranha' | 'escaravelho' | 'goblin' | 'esqueleto' | 'cavaleiro' | 'espectro' | 'quimera' | 'mao' | 'leviata' | 'rei' | 'arconte' | 'ent' | 'harpia' | 'cogumelo'
 
 export interface FaseChefe {
   /** Entra quando a vida do chefe cai a esta fração da vida máxima. */
@@ -157,6 +157,11 @@ export const BESTIARIO: Inimigo[] = [
     id: 'escaravelho-da-cartilagem', nome: 'Escaravelho da Cartilagem', sprite: 'escaravelho', cenario: 'jardim', nivel: 'comum', andarMin: 4,
     vida: 90, forca: 3.0, armadura: 5, paciencia: 11, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 3, total: 24 }, especialidade: 'joelho',
     lema: 'Lisa por fora, dura por dentro.', habilidade: 'Armadura 5 e regenera 3 por rodada.',
+  },
+  {
+    id: 'cogumelo-da-necrose', nome: 'Cogumelo da Necrose', sprite: 'cogumelo', cenario: 'jardim', nivel: 'comum', andarMin: 3,
+    vida: 78, forca: 3.0, armadura: 1, paciencia: 10, porErroSeguido: 0, critico: 0.08, envenena: 1, especialidade: 'quadril',
+    lema: 'Pulinho fofo, esporos nada fofos.', habilidade: 'Esporos: envenena (−1 por flashcard até 5 acertos seguidos).',
   },
   {
     id: 'aranha-dos-ligamentos', nome: 'Aranha dos Ligamentos', sprite: 'aranha', cenario: 'caverna', nivel: 'comum', andarMin: 5,

@@ -87,9 +87,9 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 ## E. Vilões novos (o Tales manda o estilo antes)
 
 52. [x] (T) Referências do Tales recebidas em 14/10 e descritas em [flashcards/MONSTROS-NOVOS.md](flashcards/MONSTROS-NOVOS.md), com o estilo de cada família e a receita.
-53. [ ] Folhas em volume para raptor, mímico e esqueleto, que hoje usam o sprite antigo.
+53. [ ] Folhas em volume para raptor e mímico, que hoje usam o sprite antigo. O esqueleto já tem arte nova (14/10), e o goblin e o ent também.
 54. [ ] Variantes escarlate e ancestral do Dragão (folha própria).
-55. [ ] Cogumelo saltitante (andar a céu aberto, fofo e inofensivo).
+55. [x] Cogumelo saltitante: o **Cogumelo da Necrose** (14/10) mora no Jardim, anda aos pulinhos e envenena com esporos (`scripts/sprites/cogumelo.py`).
 56. [ ] Slime de mel e abelhas (andar do jardim).
 57. [ ] Fantasma bibliotecário (chefe da Biblioteca secreta).
 

@@ -81,7 +81,8 @@ O quadro típico é de 128×128, com a âncora nos pés.
 | raptor, corvo, morcego, aranha, escaravelho | ⬜ | detalhado | ref. 1 (manchas e carapaça); a aranha pode virar o "cogumelo-aranha" da ref. 4 |
 | mímico | ⬜ | detalhado | baú com dentes e língua (já há a mandíbula em `vfx.py`) |
 | cavaleiro, rei, arconte, espectro, quimera, harpia, mão, leviatã | ⬜ | brutamontes HD (chefes) | ref. 2: massa, placas, faixas douradas |
-| **novos:** cogumelo saltitante, mandrágora, planta carnívora, abóbora, caranguejo, slime da espada | ⬜ ainda não existem | chibi (cogumelo, mandrágora, abóbora); detalhado (planta, caranguejo, slime) | refs. 1 e 4 |
+| **Cogumelo da Necrose** (novo, Jardim) | ✅ chibi (14/10) | `cogumelo.py` | chapéu vinho com pintas pálidas e um ossinho, olhos vermelhos bravos, pulinhos; envenena com esporos |
+| **novos:** mandrágora, planta carnívora, abóbora, caranguejo, slime da espada | ⬜ ainda não existem | chibi (cogumelo, mandrágora, abóbora); detalhado (planta, caranguejo, slime) | refs. 1 e 4 |
 
 ### Ideias de nome para os novos
 
@@ -124,6 +125,9 @@ Seguem o humor do bestiário:
 1. ~~**Goblin**, chibi (ref. 3)~~: feito em `scripts/sprites/goblin.py`. Ele importa as ferramentas do `cavaleiro_chibi.py` e soma rampas próprias: é o modelo mais curto para os próximos chibis.
 2. ~~**Esqueleto**, sóbrio (ref. 5)~~: feito em `scripts/sprites/esqueleto.py`, com o mesmo método do goblin.
 3. ~~**Ent** (Guardião da Fise)~~: feito em `scripts/sprites/ent.py`. Para chefes maiores, ele mostra como trocar `cc.W`, `cc.H`, `cc.XX`, `cc.YY` e `cc.DITHER` antes de desenhar.
-4. **Cogumelo da Necrose**, monstro novo do Jardim (refs. 4 e 5).
+4. ~~**Cogumelo da Necrose**, monstro novo do Jardim (refs. 4 e 5)~~: feito. Para um monstro **novo**, além do gerador, foi preciso:
+   - acrescentar o nome em `Besta` e um desenho de reserva simples em `efeitos/bestas.ts`, com `TAMANHO_BESTAS`, `ORIGEM_BESTAS` e `PALETA_BESTAS`, porque a escala da folha assada usa a altura do desenho antigo;
+   - acrescentar o nome em `SpriteInimigo` e a entrada no `bestiario.ts`;
+   - ligar `ESTILO` em `ataques.ts`, `FAMILIA_SOM` em `sons.ts` e `PEQUENOS` em `Arena.tsx`.
 5. **Mímico** e **aranha** (refs. 1 e 4).
 6. **Chefes humanoides** no estilo brutamontes (ref. 2).
