@@ -56,6 +56,7 @@ Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com PR para a base `cl
   - O `Palco` (`efeitos/palco.ts`) ganhou `efeito`, `voar`, `rasgo` e `espadaGigante`.
   - O ataque de cada vilão (comum e crítico) está em `efeitos/ataques.ts`; a investida (CSS `fc-investida--*`) e o terremoto (`fc-terremoto`), na `Arena.tsx`.
   - Para conferir: `python3 scripts/sprites/vfx.py` (gera e salva a prévia) e `node scripts/tmp-tela/golpes.mjs` (capturas; fica fora do git).
+- **Combate (14/10, em PR draft):** ideias 16, 18, 23, 24 e 64 concluídas no PR draft #248, sem merge. Hipnose após o primeiro Olhar que atinge o herói; mímico mantém roubo de carga. [COMBATE-14-10.md](COMBATE-14-10.md) traz testes, capturas e compatibilidade.
 - **Envenenado:**
   - campo `envenena` no bestiário;
   - `Partida.veneno`, `VENENO` e os eventos `envenenado`, `veneno` e `veneno-curado` em `regras.ts`;

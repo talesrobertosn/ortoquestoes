@@ -36,9 +36,9 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 13. [x] Efeito de bloqueio do escudo em pixel art (hoje ainda usa o projétil antigo).
 14. [x] Efeitos de cura em pixel art (corações subindo) também na Batalha, não só no veneno.
 15. [x] Golpe final: o vilão derrubado some num "puf" de fumaça em pixel art, com estrelas, maior no chefe.
-16. [ ] Número de dano em fonte pixel (bitmap própria), com quique e contorno.
+16. [x] Número de dano em fonte pixel (bitmap própria), com quique e contorno.
 17. [x] Som próprio para cada golpe novo (14/10): `espada-gigante`, `mandibula`, `pedregulho` e o `sopro` com crepitar, em `efeitos/sons.ts`, tocados por `ataques.ts` e pela Arena.
-18. [ ] Variante do pedregulho por golem: cristal, obsidiana, rubro e cimento.
+18. [x] Variante do pedregulho por golem: cristal, obsidiana, rubro e cimento.
 
 ## B. Superpoderes dos vilões (mecânica)
 
@@ -46,8 +46,8 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 20. [x] **Em chamas** (dragões): depois do Sopro, 3 flashcards com dano leve; um acerto difícil apaga o fogo (testes no motor).
 21. [x] **Grude** (gosmas): depois de acertar o herói, o próximo erro dói 50% a mais (aparece na intenção); um acerto desgruda.
 22. [x] **Tremor** (golem): o crítico tira 1 carga de um poder equipado (ele cai da mochila).
-23. [ ] **Hipnose** (basilisco): embaralha a ordem das alternativas uma vez (só visual, sem mudar o gabarito).
-24. [ ] **Roubo** (mímico): já rouba ouro; mostrar a moeda voando para dentro do baú.
+23. [x] **Hipnose** (basilisco): embaralha a ordem das alternativas uma vez (só visual, sem mudar o gabarito).
+24. [x] **Roubo** (mímico): mantém o roubo de carga de poder; energia voa do poder para o baú. Correção aprovada pelo Tales em 14/10: não rouba ouro.
 25. [x] Mostrar o superpoder na placa do vilão: Picada venenosa, Sopro que queima, Grude e Tremor, com explicação ao passar o mouse.
 
 ## C. Biblioteca (estudo passivo, mais divertido)
@@ -109,7 +109,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
     - **Som:** os botões já tocavam o próprio som e não precisaram de mudança.
 62. [ ] Transições entre telas com "cortina de pixels".
 63. [ ] Tutorial de 30 segundos jogável na primeira entrada (o Preceptor explica).
-64. [ ] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
+64. [x] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
 65. [ ] Acessibilidade: modo sem tremor, alto contraste e texto maior.
 
 ## H. Otimização
@@ -156,3 +156,5 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** Grude e Tremor (ideias 21 e 22), com testes no motor, mais as etiquetas de superpoder na placa do vilão (ideia 25).
 - **14/10/2026:** Gato da Biblioteca e velas da sessão (ideias 32 e 33), pintados em `vfx.py` (`gato-*` e `vela`).
 - **14/10/2026:** O Tales confirmou o som no celular (ideia 78) e colou a parte 19 no Supabase (ideia 83). O #224 foi trazido para a base pelo #237 (ideia 84). O top 3 do ranking foi refeito com largura cheia e cartões legíveis (#235).
+
+- **14/10/2026:** Combate (16, 18, 23, 24 e 64), PR draft [#248](https://github.com/talesrobertosn/ortoquestoes/pull/248), a revisar. Numerais próprios, pedregulhos, hipnose apenas visual após o primeiro Olhar acertado e carga voando para o mímico. [Detalhes e testes](flashcards/COMBATE-14-10.md).

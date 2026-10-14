@@ -2350,3 +2350,13 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .fc-mao .fc-slot-mao, .fc-estudo__respondidas .fc-slot-mao, .fc-estudo__botoes > *, .fc-modal .fc-principal { animation: none !important; }
 }
+/* Numerais próprios: contorno desenhado no bitmap e quique só quando há movimento. */
+.fc-flutua--numero svg { display:block; height:44px; width:auto; margin:auto; filter:drop-shadow(0 2px 0 #251b27); }
+.fc-flutua--numero { animation:fc-numero-quique 1.15s ease-out forwards; }
+.fc-flutua--numero.fc-flutua--grande svg { height:60px; }
+@keyframes fc-numero-quique { 0%{opacity:0;transform:translate(-50%,-25%) scale(.65)} 18%{opacity:1;transform:translate(-50%,-80%) scale(1.12)} 38%{transform:translate(-50%,-45%) scale(.98)} 58%{transform:translate(-50%,-66%)} 82%{opacity:1} 100%{opacity:0;transform:translate(-50%,-125%)} }
+.fc-intencao__simbolo { display:flex;justify-content:center;margin-top:3px; }
+.fc-intencao__simbolo canvas { width:22px;height:22px; }
+@media(max-width:640px){.fc-flutua--numero svg{height:34px}.fc-flutua--numero.fc-flutua--grande svg{height:46px}.fc-intencao__simbolo canvas{width:18px;height:18px}}
+@media(prefers-reduced-motion:reduce){.fc-flutua--numero{animation:none;opacity:1}}
+.fc-arena--reduzida .fc-flutua--numero { animation:none;opacity:1; }
