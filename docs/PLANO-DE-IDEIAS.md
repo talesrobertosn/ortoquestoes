@@ -127,7 +127,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 75. [ ] Trilha calma e alegre para os andares a céu aberto (violão e flauta).
 76. [ ] Transição suave entre músicas (crossfade).
 77. [ ] Ambiente de chuva e trovão para a Biblioteca.
-78. [ ] (T) Confirmar o som num celular real.
+78. [x] (T) Confirmar o som num celular real.
 
 ## K. Pendências antigas
 
@@ -135,8 +135,8 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 80. [ ] Contador da rota de estudo.
 81. [ ] Áreas do baralho de demonstração.
 82. [ ] Emenda da faixa "sala" da música.
-83. [ ] (T) Colar a parte 19 do SQL no Supabase.
-84. [ ] PR #224 (abrir o jogo por cima do site, botão Menu, correção da barra no celular): trazer para a base.
+83. [x] (T) Colar a parte 19 do SQL no Supabase.
+84. [x] PR #224 (abrir o jogo por cima do site, botão Menu, correção da barra no celular): trazer para a base.
 
 ---
 
@@ -150,3 +150,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** Em chamas (ideia 20). Os três dragões têm `queima`; em `regras.ts` ficam `QUEIMADURA`, `Partida.queimadura` e os eventos `chamuscado`, `arde` e `apagou`. Na tela: chamas no pé do herói e selo laranja.
 - **14/10/2026:** Grude e Tremor (ideias 21 e 22), com testes no motor, mais as etiquetas de superpoder na placa do vilão (ideia 25).
 - **14/10/2026:** Gato da Biblioteca e velas da sessão (ideias 32 e 33), pintados em `vfx.py` (`gato-*` e `vela`).
+- **14/10/2026:** O Tales confirmou o som no celular (ideia 78) e colou a parte 19 no Supabase (ideia 83). O #224 foi trazido para a base pelo #237 (ideia 84). O top 3 do ranking foi refeito com largura cheia e cartões legíveis (#235).
