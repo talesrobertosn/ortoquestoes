@@ -43,8 +43,8 @@ function feixes(c: CanvasRenderingContext2D, W: number, H: number, cena: Cena, c
   c.save(); c.globalCompositeOperation = 'screen'; c.globalAlpha = forca; c.drawImage(t, 0, 0); c.restore()
 }
 
-/** Luz do clima (multiplica a cena) e névoa com vinheta. */
-function climaENevoa(c: CanvasRenderingContext2D, W: number, H: number, clima: Clima) {
+/** Luz do clima (multiplica a cena) e névoa com vinheta. `aberta`: cena de céu aberto (floresta), vinheta mais leve. */
+function climaENevoa(c: CanvasRenderingContext2D, W: number, H: number, clima: Clima, aberta = false) {
   c.save()
   c.globalCompositeOperation = 'multiply'
   if (clima === 'entardecer') { const g = c.createLinearGradient(0, 0, 0, H); g.addColorStop(0, 'rgba(255,160,90,.9)'); g.addColorStop(0.6, 'rgba(220,110,120,.8)'); g.addColorStop(1, 'rgba(90,50,90,.85)'); c.fillStyle = g; c.fillRect(0, 0, W, H) }
@@ -53,10 +53,10 @@ function climaENevoa(c: CanvasRenderingContext2D, W: number, H: number, clima: C
   c.globalCompositeOperation = 'source-over'
   const n = c.createLinearGradient(0, 0, 0, H)
   if (clima === 'noite') { n.addColorStop(0.4, 'rgba(150,170,220,0)'); n.addColorStop(0.7, 'rgba(150,170,220,.22)'); n.addColorStop(1, 'rgba(150,170,220,.3)') }
-  else { n.addColorStop(0.46, 'rgba(200,214,236,0)'); n.addColorStop(0.76, 'rgba(200,214,236,.1)'); n.addColorStop(1, 'rgba(16,10,6,.45)') }
+  else { n.addColorStop(0.46, 'rgba(200,214,236,0)'); n.addColorStop(0.76, 'rgba(200,214,236,.1)'); n.addColorStop(1, `rgba(16,10,6,${aberta ? 0.18 : 0.45})`) }
   c.fillStyle = n; c.fillRect(0, 0, W, H)
   const v = c.createRadialGradient(W / 2, H * 0.46, Math.min(W, H) * 0.3, W / 2, H * 0.46, Math.hypot(W, H) * 0.6)
-  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.6)')
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, `rgba(0,0,0,${aberta ? 0.3 : 0.6})`)
   c.fillStyle = v; c.fillRect(0, 0, W, H)
   c.restore()
 }
@@ -128,7 +128,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
       c.save(); c.globalCompositeOperation = 'screen'; c.globalAlpha = pintado ? 0.35 : 0.95; c.imageSmoothingEnabled = true
       c.drawImage(desfocar(planos.brilho, 4), 0, 0, W, H); c.restore()
       feixes(c, W, H, cena, clima)
-      climaENevoa(c, W, H, clima)
+      climaENevoa(c, W, H, clima, cena === 'campo')
       // frente desfocada e escurecida (mais perto da câmera)
       const fr = document.createElement('canvas'); fr.width = W; fr.height = H
       const f = fr.getContext('2d')!; f.imageSmoothingEnabled = true
