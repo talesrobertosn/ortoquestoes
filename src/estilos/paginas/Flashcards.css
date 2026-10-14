@@ -1858,3 +1858,15 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
   .fc-modal-veu { background: radial-gradient(ellipse at 50% 45%, rgba(14, 10, 18, .34), rgba(4, 3, 6, .58)); backdrop-filter: blur(2.5px) saturate(.9); -webkit-backdrop-filter: blur(2.5px) saturate(.9); cursor: pointer; }
   .fc-modal { width: min(80vw, 1440px); height: min(84dvh, 960px); cursor: auto; }
 }
+/* Celular em pé: com o botão Menu são três botões redondos ao lado das abas; tudo um pouco menor para não sobrepor. */
+@media (max-width: 520px) and (orientation: portrait) {
+  .fc-modal .fc-abas button { padding: 4px 8px; font-size: 12.5px !important; letter-spacing: .02em; }
+  .fc-modal .fc-topo__acoes { gap: 4px; }
+  .fc-modal .fc-topo-botao { min-width: 36px; min-height: 36px; }
+}
+@media (max-width: 360px) and (orientation: portrait) { .fc-modal .fc-abas button { padding: 4px 6px; font-size: 11.5px !important; } }
+@media (max-width: 340px) and (orientation: portrait) {
+  .fc-modal .fc-abas button { padding: 3px 5px; font-size: 11px !important; }
+  .fc-modal .fc-topo-botao { min-width: 32px; min-height: 32px; }
+  .fc-modal .fc-topo__acoes .fc-topo-botao[title="Ajustes"] { display: none; } /* telas de 320 px: o volume continua no botão de som */
+}

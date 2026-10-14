@@ -124,6 +124,14 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
 4. ~~Escudo do herói no estágio 6~~: feito no beta (`escudo=0.96` e gota mais baixa no estágio 6).
 5. **Emenda da faixa "sala"**: revisar com `python3 scripts/musica/conferir.py`.
 
+## Ideias do Tales para depois (anotadas em 13/10/2026)
+
+- **Poderes de assunto** (ganhos como recompensa ou comprados na loja):
+  - **Afastar um assunto:** os próximos 5 ou 10 flashcards não vêm de uma área escolhida (ex.: "não sou bom em coluna").
+  - **Focar num assunto:** os próximos 10 flashcards vêm de uma área escolhida (ex.: mão, trauma).
+  - **Especiais:** focos mais estreitos, como só trauma pediátrico; a pessoa escolhe.
+  - Onde mexer: o sorteio em `motor/selecao.ts` (filtro por `areaId`/assunto com contador de cartas restantes no estado da partida), a loja e as recompensas em `motor/regras.ts` e `motor/poderes.ts`. Atenção ao ranking: decidir se esses poderes valem no Normal/Difícil ou só fora da disputa.
+
 ## Ainda não feito do pedido de direção criativa
 
 - **Cenários pintados:** faltam deserto dos ossos, pântano da necrose, observatório, jardim dos curandeiros, fortaleza das placas e trono do dragão.

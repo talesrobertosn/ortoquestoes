@@ -147,6 +147,11 @@ const PAGINAS: Record<string, string> = {
   '/indicar': 'Indique e ganhe', '/ligas': 'Liga da residência', '/admin': 'Painel do administrador', '/termos': 'Termos de uso',
   '/contato': 'Suporte e contato', '/sobre': 'O projeto', '/projeto': 'O projeto', '/progresso': 'Progresso dos comentários',
   '/emails': 'Preferências de e-mail',
+  // flashcards (beta público, 13/10/2026): o painel mostra em que parte a pessoa está
+  '/flashcards': 'Flashcards (central)', '/flashcards/desempenho': 'Flashcards: desempenho', '/flashcards/cronograma': 'Flashcards: cronograma',
+  '/flashcards/entrada': 'Torneio de Flashcards (menu do jogo)', '/flashcards/cripta': 'Torneio: batalha na Cripta',
+  '/flashcards/masmorra': 'Torneio: batalha na Cripta', '/flashcards/torre': 'Torneio: Torre do Título',
+  '/flashcards/biblioteca': 'Estudando flashcards (Biblioteca)', '/flashcards/estudo': 'Estudando flashcards (Biblioteca)',
 }
 /** "/sessao · 3 de 10" vira "Respondendo questões (3 de 10)". */
 export function rotuloPagina(pagina: string | null | undefined): string {
