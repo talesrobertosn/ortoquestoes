@@ -70,6 +70,8 @@ export const CURA_LOJA = { fracao: 0.3, preco: 30 }
 export const VENENO = { acertos: 5, acumula: 3 }
 /** Em chamas (o superpoder do Sopro): arde por N flashcards; um acerto difícil apaga. */
 export const QUEIMADURA = { flashcards: 3 }
+/** Grude (gosmas): multiplica o dano do próximo erro enquanto grudado. */
+export const GRUDE = { mult: 1.5 }
 
 /** Desgaste: a cada ato (Cripta) ou 10 andares (Torre), as curas rendem menos, até o piso. */
 export const DESGASTE = { porAto: 0.05, porDezAndares: 0.07, piso: 0.35 }
@@ -259,6 +261,8 @@ export interface Partida {
   veneno?: { dano: number; faltam: number } | null
   /** Em chamas: dano por flashcard e flashcards que faltam para o fogo apagar. */
   queimadura?: { dano: number; faltam: number } | null
+  /** Grudado pela gosma: o próximo erro dói mais. */
+  grudado?: boolean
 }
 
 export type MotivoCura =
@@ -283,6 +287,9 @@ export type Evento =
   | { tipo: 'chamuscado'; dano: number; faltam: number }
   | { tipo: 'arde'; valor: number; faltam: number }
   | { tipo: 'apagou'; motivo: 'tempo' | 'dificil' }
+  | { tipo: 'grudou' }
+  | { tipo: 'desgrudou' }
+  | { tipo: 'tremor'; poder: TipoPoder }
   | { tipo: 'imortal' }
   | { tipo: 'renascer'; vida: number }
   | { tipo: 'cura'; valor: number; motivo: MotivoCura }
@@ -380,7 +387,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const i = inimigoAtual(p)
     const { forca } = atributos(p)
     const veneno = i.porErroSeguido * p.inimigo.errosSeguidos
-    let dano = DANO_BASE[c.dificuldade] * forca * (p.inimigo.furia ? 1.5 : 1) + veneno
+    let dano = DANO_BASE[c.dificuldade] * forca * (p.inimigo.furia ? 1.5 : 1) * (p.grudado ? GRUDE.mult : 1) + veneno
     if (critico) dano *= LIMITES.multCritico
     if (carregado && i.carrega) dano *= i.carrega.mult
     const teto = p.vidaMax * (critico || carregado ? LIMITES.critico : LIMITES[i.nivel])
@@ -707,6 +714,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
           armaduraPerdida: e.inimigo.armaduraPerdida + (rupK >= 0 ? RECOMPENSAS.ruptura.v.reducao : 0),
         },
       }
+      if (e.grudado) { e = { ...e, grudado: false }; eventos.push({ tipo: 'desgrudou' }) }
       eventos.push({ tipo: 'dano-inimigo', valor: total + raio, critico, combo: sequencia, duplo: duploK >= 0, absorvido: Math.max(0, bruto - golpe), eco, barreira: absorvidoBarreira, especial, raio, sorte })
       if (sequencia >= COMBO_MINIMO) eventos.push({ tipo: 'combo', sequencia })
 
@@ -792,6 +800,20 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
         e = { ...e, veneno: { dano, faltam: VENENO.acertos } }
         eventos.push({ tipo: 'envenenado', dano, faltam: VENENO.acertos })
       } else if (e.fase !== 'fim' && p.veneno) e = { ...e, veneno: { ...p.veneno, faltam: VENENO.acertos } }
+      // a gosma gruda (o próximo erro dói mais); quem já estava grudado desgruda ao levar o golpe reforçado
+      if (e.fase !== 'fim' && !def.bloqueado && def.final > 0) {
+        if (i.gruda && !p.grudado) { e = { ...e, grudado: true }; eventos.push({ tipo: 'grudou' }) }
+        else if (p.grudado) e = { ...e, grudado: false }
+      }
+      // o tremor do golem: o crítico derruba 1 carga de um poder equipado
+      if (e.fase !== 'fim' && i.tremor && critico && !def.bloqueado && def.final > 0 && e.encaixes.length) {
+        let u: number, semente = e.semente
+        ;[u, semente] = sortear(semente)
+        const k = Math.floor(u * e.encaixes.length)
+        const poder = e.encaixes[k].tipo
+        e = { ...e, semente, encaixes: gastar(e.encaixes, k), pocao: poder === 'pocao' ? 0 : e.pocao }
+        eventos.push({ tipo: 'tremor', poder })
+      }
       // o Sopro do dragão deixa o herói em chamas (renova o fogo se já estava queimando)
       if (e.fase !== 'fim' && i.queima && carregado && !def.bloqueado && def.final > 0) {
         e = { ...e, queimadura: { dano: i.queima, faltam: QUEIMADURA.flashcards } }

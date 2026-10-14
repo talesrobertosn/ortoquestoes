@@ -807,6 +807,24 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           definirFaixa(null)
           break
         }
+        case 'grudou': {
+          const h = centro(refHeroi.current)
+          for (let k = 0; k < 3; k++) P?.efeito('respingo-gosma', { x: h.x + (k - 1) * 20, y: h.y + 14 }, { escala: pixelVfx(), atraso: k * 0.06 })
+          tocar('divide')
+          flutuar(refHeroi.current, 'GRUDADO', '#9ff0b8', { y: -110, x: 30, rotulo: 'o próximo erro dói +50%' })
+          if (!(await esperar(200, g))) return
+          break
+        }
+        case 'desgrudou': {
+          flutuar(refHeroi.current, 'DESGRUDOU', '#d8ffe8', { y: -100, x: -30 })
+          break
+        }
+        case 'tremor': {
+          tocar('roubo')
+          if (refSlots.current) { const c = centro(refSlots.current); P?.efeito('rachadura', c, { escala: pixelVfx() * 0.8 }); P?.efeito('poeira', c, { escala: pixelVfx() }) }
+          flutuar(refSlots.current, `${RECOMPENSAS[ev.poder].nome} −1`, '#e8d8b0', { y: -30, rotulo: 'TREMOR' })
+          break
+        }
         case 'roubou': {
           tocar('roubo')
           if (refSlots.current) P?.explosao(centro(refSlots.current), { cor: '#c8a0ff', n: 14, forca: 200 })
@@ -1133,6 +1151,11 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                   // (fúria e o golpe especial); o resto fica num "+N" que abre o painel do adversário.
                   const selos = [
                     partida.inimigo.furia ? <span key="furia" className="fc-info fc-info--furia">Fúria · dano ×1,5</span> : <span key="furia" className="fc-info" title="Rodadas até a Fúria">Fúria em {rodadasFuria}</span>,
+                    // o superpoder do adversário aparece logo depois da Fúria
+                    inimigo.envenena && <span key="envenena" className="fc-info fc-info--veneno" title={`A picada envenena: −${inimigo.envenena} por flashcard até ${VENENO.acertos} acertos seguidos`}>Picada venenosa</span>,
+                    inimigo.queima && <span key="queima" className="fc-info fc-info--furia" title={`O Sopro deixa você em chamas por ${QUEIMADURA.flashcards} flashcards; um acerto difícil apaga`}>Sopro que queima</span>,
+                    inimigo.gruda && <span key="gruda" className="fc-info fc-info--grude" title="Depois de acertar você, o próximo erro dói 50% a mais; um acerto desgruda">Grude</span>,
+                    inimigo.tremor && <span key="tremor" className="fc-info" title="O crítico derruba 1 carga de um poder equipado">Tremor</span>,
                     inimigo.carrega && <span key="carrega" className="fc-info fc-info--furia" title="Golpe carregado, avisado na intenção">{inimigo.carrega.nome} a cada {inimigo.carrega.aCada}</span>,
                     partida.inimigo.barreira > 0 && <span key="barreira" className="fc-info fc-info--barreira" title="Absorve o dano dos seus acertos antes da vida">Barreira {partida.inimigo.barreira}</span>,
                     partida.inimigo.brasas > 0 && <span key="brasas" className="fc-info fc-info--brasa">Brasas ×{partida.inimigo.brasas}</span>,
@@ -1191,7 +1214,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
               <div className="fc-heroi">
-                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '') + (partida.veneno ? ' fc-ator--envenenado' : '')}>
+                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '') + (partida.veneno ? ' fc-ator--envenenado' : '') + (partida.grudado ? ' fc-ator--grudado' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                   {partida.veneno && <span className="fc-envenenado" aria-hidden="true" style={{ backgroundImage: `url(${recurso('flashcards/vfx/bolhas.png')})` }} />}
                   {partida.queimadura && <span className="fc-em-chamas" aria-hidden="true">{[0, 1, 2].map((k) => <i key={k} style={{ backgroundImage: `url(${recurso('flashcards/vfx/chama-escarlate.png')})`, animationDelay: `${-k * 170}ms` }} />)}</span>}
@@ -1208,6 +1231,11 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     </span>
                   </div>
                   <BarraVida atual={mostrado.vida} maximo={partida.vidaMax} tipo="heroi" rotulo="Sua vida" />
+                  {partida.grudado && (
+                    <div className="fc-veneno-selo fc-veneno-selo--grude" role="status" title="Grudado pela gosma: o próximo erro dói 50% a mais. Um acerto desgruda.">
+                      <b>Grudado</b><span>próximo erro +50%</span>
+                    </div>
+                  )}
                   {partida.queimadura && (
                     <div className="fc-veneno-selo fc-veneno-selo--fogo" role="status" title={`Em chamas: cada flashcard tira ${partida.queimadura.dano} de vida (nunca abaixo de 1), por mais ${partida.queimadura.faltam}. Acertar um flashcard difícil apaga o fogo.`}>
                       <b>Em chamas</b><span>−{partida.queimadura.dano} por flashcard</span>

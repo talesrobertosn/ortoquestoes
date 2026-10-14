@@ -44,11 +44,11 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 
 19. [x] **Envenenado** (serpentes, aranha, leviatã): cada flashcard arde até o herói acertar 5 seguidos; um erro recomeça a conta; o veneno nunca derruba. Há testes no motor.
 20. [x] **Em chamas** (dragões): depois do Sopro, 3 flashcards com dano leve; um acerto difícil apaga o fogo (testes no motor).
-21. [ ] **Grude** (gosma): a próxima alternativa errada custa o dobro, até um acerto.
-22. [ ] **Tremor** (golem): o crítico tira 1 carga de um poder equipado (ele cai da mochila).
+21. [x] **Grude** (gosmas): depois de acertar o herói, o próximo erro dói 50% a mais (aparece na intenção); um acerto desgruda.
+22. [x] **Tremor** (golem): o crítico tira 1 carga de um poder equipado (ele cai da mochila).
 23. [ ] **Hipnose** (basilisco): embaralha a ordem das alternativas uma vez (só visual, sem mudar o gabarito).
 24. [ ] **Roubo** (mímico): já rouba ouro; mostrar a moeda voando para dentro do baú.
-25. [ ] Mostrar o superpoder na ficha do vilão com ícone e animação curta (bestiário e intenção).
+25. [x] Mostrar o superpoder na placa do vilão: Picada venenosa, Sopro que queima, Grude e Tremor, com explicação ao passar o mouse.
 
 ## C. Biblioteca (estudo passivo, mais divertido)
 
@@ -148,3 +148,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** Jardim Suspenso (ideia 42): andar a céu aberto dentro da cripta, com paredes em ruína, abóbada partida, cachoeira, lago com vitórias-régias e cerejeira. Fica em `scripts/cenarios/jardim.py` (cena `jardim`, também usada pela Gosma de Cimento e pelo Escaravelho). Os chefes do jardim continuam lá.
 - **14/10/2026:** PR #228 mesclado. Depois: escudo em pixel art (o golpe do vilão bate na bolha e ela se estilhaça), corações na cura, "puf" de vitória e lâmina de ouro a partir do estágio 4 (ideias 12 a 15).
 - **14/10/2026:** Em chamas (ideia 20). Os três dragões têm `queima`; em `regras.ts` ficam `QUEIMADURA`, `Partida.queimadura` e os eventos `chamuscado`, `arde` e `apagou`. Na tela: chamas no pé do herói e selo laranja.
+- **14/10/2026:** Grude e Tremor (ideias 21 e 22), com testes no motor, mais as etiquetas de superpoder na placa do vilão (ideia 25).

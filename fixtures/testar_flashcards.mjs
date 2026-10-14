@@ -514,6 +514,35 @@ try {
     }
   }
 
+  // Grude (gosmas) e Tremor (golens)
+  {
+    const acha = (f) => { for (let a = 1; a < 80; a++) for (let sm = 1; sm < 40; sm++) { const iv = m.inimigoDoAndar(a, sm, 'masmorra').inimigo; if (f(iv)) return [a, sm, iv] } return null }
+    const preparar = ([a, sm, iv], extra = {}) => {
+      let q = motor.novaPartida(sm).estado
+      q = { ...q, andar: a, sementeBase: sm, vida: 300, vidaMax: 300, reliquias: [], encaixes: [], ...extra, inimigo: { ...q.inimigo, id: iv.id, vida: 9000, vidaMax: 9000, barreira: 0, fase: 1, rodadas: 0, errosSeguidos: 0, furia: false } }
+      return { ...q, atual: { ...q.atual, criticoInimigo: false, carregado: false } }
+    }
+    const errada = (x) => x.atual.ordem.findIndex((o) => o !== motor.carta(x.atual.id).certa)
+    const g = acha((iv) => iv.gruda)
+    assert.ok(g, 'nenhuma gosma gruda')
+    let q = preparar(g)
+    let r = motor.responder(q, errada(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'grudou') && r.estado.grudado, 'não grudou')
+    q = motor.seguir(r.estado).estado
+    q = { ...q, atual: { ...q.atual, criticoInimigo: false, carregado: false } }
+    const semGrude = motor.intencao({ ...q, grudado: false }).bruto, comGrude = motor.intencao(q).bruto
+    assert.ok(comGrude > semGrude, 'o grude não aumentou o dano da intenção')
+    r = motor.responder(q, certaPos(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'desgrudou') && !r.estado.grudado, 'o acerto não desgrudou')
+    const t = acha((iv) => iv.tremor)
+    assert.ok(t, 'nenhum golem treme')
+    q = preparar(t, { encaixes: [{ tipo: 'escudo', carga: 0 }, { tipo: 'pista', carga: 2 }].slice(1) })
+    q = { ...q, atual: { ...q.atual, criticoInimigo: true } }
+    r = motor.responder(q, errada(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'tremor' && x.poder === 'pista'), 'o crítico do golem não derrubou carga')
+    assert.equal(r.estado.encaixes.find((x) => x.tipo === 'pista')?.carga ?? 0, 1)
+  }
+
   console.log('Motor da Batalha: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })
