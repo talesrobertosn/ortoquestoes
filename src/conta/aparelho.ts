@@ -34,6 +34,12 @@ export function paginaAtual(): { pagina: string; questao: string | null } {
     const id = ids[i]
     return { pagina: ids.length ? `/sessao · ${i + 1} de ${ids.length}` : '/sessao', questao: id && /^[a-z0-9-]{3,80}$/.test(id) ? id : null }
   }
+  // no Torneio de Flashcards, o andar da partida em andamento (o painel mostra "batalha no andar 7")
+  const jogo = rota.match(/^\/flashcards\/(cripta|masmorra|torre)$/)
+  if (jogo) {
+    const partida = ler<{ andar?: number; fase?: string } | null>(jogo[1] === 'torre' ? 'flashcards:torre' : 'flashcards:partida', null)
+    if (partida?.andar && partida.fase !== 'fim') return { pagina: `${rota} · andar ${partida.andar}`, questao: null }
+  }
   return { pagina: rota, questao: null }
 }
 
