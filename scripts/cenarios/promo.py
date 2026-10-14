@@ -171,16 +171,16 @@ def capa(formato: str) -> Image.Image:
     base = Image.fromarray(arr.astype(np.uint8), 'RGBA')
     base = brilho(base, W * 0.5, hz - larg * 0.1, larg * 0.9, '#ffb060', 0.35)
     # herói em primeiro plano (pose de vitória) e o baú iluminado como segundo foco
-    heroi = quadro('heroi-3', 'vitoria', 2)
+    heroi = quadro('heroi-4', 'vitoria', 2)   # herói chibi (mascote, 14/10/2026), em escala 1: o quadro já é grande
     if retrato:
-        colar(base, heroi, int(W * 0.33), int(H * 0.86), 2)
+        colar(base, heroi, int(W * 0.36), int(H * 0.86), 1)
         b = bau(30)
         colar(base, b, int(W * 0.74), int(H * 0.84), 1)
         base = brilho(base, W * 0.74, H * 0.8, 22, '#ffd36a', 0.55)
         golem = quadro('golem', 'parado', 0)
         colar(base, golem.resize((golem.width // 2, golem.height // 2), Image.NEAREST), int(W * 0.72), int(hz + H * 0.16), 1)
     else:
-        colar(base, heroi, int(W * 0.36), int(H * 0.93), 2)
+        colar(base, heroi, int(W * 0.36), int(H * 0.93), 1)
         b = bau(38)
         colar(base, b, int(W * 0.62), int(H * 0.9), 1)
         base = brilho(base, W * 0.62, H * 0.85, 30, '#ffd36a', 0.55)
@@ -202,7 +202,7 @@ def cartao(tipo: str) -> Image.Image:
         return vinheta(base, 0.3)
     # progresso: o herói em três estágios, do aprendiz à lenda (os mesmos sprites do jogo)
     base = cena('floresta', 'paisagem').crop((130, 150, 390, 300))
-    for k, (est, fx) in enumerate([('heroi-1', 0.26), ('heroi-3', 0.5), ('heroi-6', 0.74)]):
+    for k, (est, fx) in enumerate([('heroi-1', 0.24), ('heroi-4', 0.5), ('heroi-6', 0.76)]):
         colar(base, quadro(est, 'parado', 0), int(base.width * fx), base.height - 12, 1)
     return vinheta(base, 0.3)
 

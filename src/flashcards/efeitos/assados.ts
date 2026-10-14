@@ -570,264 +570,29 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "heroi-1": {
-  "largura": 112,
-  "altura": 120,
+  "largura": 136,
+  "altura": 108,
   "colunas": 6,
   "ancora": [
-   54,
-   114
-  ],
-  "caixa": [
-   26,
-   34,
-   53,
-   83
-  ],
-  "animacoes": {
-   "parado": {
-    "linha": 0,
-    "quadros": 4,
-    "ms": 240
-   },
-   "preparo": {
-    "linha": 1,
-    "quadros": 3,
-    "ms": 90
-   },
-   "golpe": {
-    "linha": 2,
-    "quadros": 6,
-    "ms": 70
-   },
-   "dano": {
-    "linha": 3,
-    "quadros": 3,
-    "ms": 90
-   },
-   "derrota": {
-    "linha": 4,
-    "quadros": 5,
-    "ms": 140
-   },
-   "vitoria": {
-    "linha": 5,
-    "quadros": 4,
-    "ms": 150
-   }
-  }
- },
- "heroi-2": {
-  "largura": 112,
-  "altura": 120,
-  "colunas": 6,
-  "ancora": [
-   54,
-   114
-  ],
-  "caixa": [
-   25,
-   32,
-   55,
-   85
-  ],
-  "animacoes": {
-   "parado": {
-    "linha": 0,
-    "quadros": 4,
-    "ms": 240
-   },
-   "preparo": {
-    "linha": 1,
-    "quadros": 3,
-    "ms": 90
-   },
-   "golpe": {
-    "linha": 2,
-    "quadros": 6,
-    "ms": 70
-   },
-   "dano": {
-    "linha": 3,
-    "quadros": 3,
-    "ms": 90
-   },
-   "derrota": {
-    "linha": 4,
-    "quadros": 5,
-    "ms": 140
-   },
-   "vitoria": {
-    "linha": 5,
-    "quadros": 4,
-    "ms": 150
-   }
-  }
- },
- "heroi-3": {
-  "largura": 112,
-  "altura": 120,
-  "colunas": 6,
-  "ancora": [
-   54,
-   114
-  ],
-  "caixa": [
-   23,
-   31,
-   58,
-   87
-  ],
-  "animacoes": {
-   "parado": {
-    "linha": 0,
-    "quadros": 4,
-    "ms": 240
-   },
-   "preparo": {
-    "linha": 1,
-    "quadros": 3,
-    "ms": 90
-   },
-   "golpe": {
-    "linha": 2,
-    "quadros": 6,
-    "ms": 70
-   },
-   "dano": {
-    "linha": 3,
-    "quadros": 3,
-    "ms": 90
-   },
-   "derrota": {
-    "linha": 4,
-    "quadros": 5,
-    "ms": 140
-   },
-   "vitoria": {
-    "linha": 5,
-    "quadros": 4,
-    "ms": 150
-   }
-  }
- },
- "heroi-4": {
-  "largura": 112,
-  "altura": 120,
-  "colunas": 6,
-  "ancora": [
-   54,
-   114
-  ],
-  "caixa": [
-   21,
-   29,
-   61,
-   89
-  ],
-  "animacoes": {
-   "parado": {
-    "linha": 0,
-    "quadros": 4,
-    "ms": 240
-   },
-   "preparo": {
-    "linha": 1,
-    "quadros": 3,
-    "ms": 90
-   },
-   "golpe": {
-    "linha": 2,
-    "quadros": 6,
-    "ms": 70
-   },
-   "dano": {
-    "linha": 3,
-    "quadros": 3,
-    "ms": 90
-   },
-   "derrota": {
-    "linha": 4,
-    "quadros": 5,
-    "ms": 140
-   },
-   "vitoria": {
-    "linha": 5,
-    "quadros": 4,
-    "ms": 150
-   }
-  }
- },
- "heroi-5": {
-  "largura": 112,
-  "altura": 120,
-  "colunas": 6,
-  "ancora": [
-   54,
-   114
-  ],
-  "caixa": [
-   20,
-   28,
-   64,
-   90
-  ],
-  "animacoes": {
-   "parado": {
-    "linha": 0,
-    "quadros": 4,
-    "ms": 240
-   },
-   "preparo": {
-    "linha": 1,
-    "quadros": 3,
-    "ms": 90
-   },
-   "golpe": {
-    "linha": 2,
-    "quadros": 6,
-    "ms": 70
-   },
-   "dano": {
-    "linha": 3,
-    "quadros": 3,
-    "ms": 90
-   },
-   "derrota": {
-    "linha": 4,
-    "quadros": 5,
-    "ms": 140
-   },
-   "vitoria": {
-    "linha": 5,
-    "quadros": 4,
-    "ms": 150
-   }
-  }
- },
- "heroi-6": {
-  "largura": 112,
-  "altura": 120,
-  "colunas": 6,
-  "ancora": [
-   54,
-   114
+   60,
+   101
   ],
   "caixa": [
    19,
    11,
-   66,
-   107
+   72,
+   92
   ],
   "animacoes": {
    "parado": {
     "linha": 0,
     "quadros": 4,
-    "ms": 240
+    "ms": 260
    },
    "preparo": {
     "linha": 1,
     "quadros": 3,
-    "ms": 90
+    "ms": 95
    },
    "golpe": {
     "linha": 2,
@@ -847,7 +612,242 @@ export const ASSADOS: Record<string, MetaAssada> = {
    "vitoria": {
     "linha": 5,
     "quadros": 4,
-    "ms": 150
+    "ms": 160
+   }
+  }
+ },
+ "heroi-2": {
+  "largura": 136,
+  "altura": 108,
+  "colunas": 6,
+  "ancora": [
+   60,
+   101
+  ],
+  "caixa": [
+   17,
+   7,
+   75,
+   96
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "heroi-3": {
+  "largura": 136,
+  "altura": 108,
+  "colunas": 6,
+  "ancora": [
+   60,
+   101
+  ],
+  "caixa": [
+   15,
+   7,
+   77,
+   96
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "heroi-4": {
+  "largura": 136,
+  "altura": 108,
+  "colunas": 6,
+  "ancora": [
+   60,
+   101
+  ],
+  "caixa": [
+   14,
+   4,
+   78,
+   99
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "heroi-5": {
+  "largura": 136,
+  "altura": 108,
+  "colunas": 6,
+  "ancora": [
+   60,
+   101
+  ],
+  "caixa": [
+   12,
+   4,
+   80,
+   99
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
+   }
+  }
+ },
+ "heroi-6": {
+  "largura": 136,
+  "altura": 108,
+  "colunas": 6,
+  "ancora": [
+   60,
+   101
+  ],
+  "caixa": [
+   10,
+   3,
+   85,
+   101
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 160
    }
   }
  },
