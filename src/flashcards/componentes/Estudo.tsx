@@ -329,7 +329,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
         <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-limite-estudo">
           <div className="fc-janela">
             <h2 id="fc-limite-estudo">{bloqueio.falha ? 'Não deu para validar' : 'Limite grátis de hoje'}</h2>
-            <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.' : 'Você usou os 10 flashcards grátis destas 24 horas. Assinantes estudam sem limite.'}</p>
+            <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.' : 'Seu acesso grátis acabou por agora. Assinantes estudam sem limite.'}</p>
             <div className="fc-janela__botoes">
               <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirBloqueio(null)}>Fechar</button>
               {!bloqueio.falha && <a className="fc-botao" href={href('/assinatura')}>Ver os planos</a>}

@@ -1347,7 +1347,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
               <h2 id="fc-limite-titulo">{bloqueio.falha ? 'Não deu para validar' : 'Limite grátis de hoje'}</h2>
               <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.'
                 : bloqueio.cripta ? `Sua jornada grátis na Cripta acabou por hoje${bloqueio.liberaEm ? `; volte depois das ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`
-                : `Você usou os 10 flashcards grátis destas 24 horas${bloqueio.liberaEm ? `; libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`}</p>
+                : `Seu acesso grátis acabou por agora${bloqueio.liberaEm ? `; libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`}</p>
               <div className="fc-janela__botoes">
                 <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirBloqueio(null)}>{bloqueio.falha ? 'Tentar de novo' : 'Agora não'}</button>
                 {!bloqueio.falha && <a className="fc-botao" href={href('/assinatura')}>Ver os planos</a>}
