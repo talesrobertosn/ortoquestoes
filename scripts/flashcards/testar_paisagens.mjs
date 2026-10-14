@@ -21,7 +21,7 @@ try{
    },{nome,original})
    await p.locator(`.fc-cena--${nome}`).waitFor()
    await p.evaluate(async nome=>{const m=await import('/src/flashcards/efeitos/cenariosPintados.ts');const r=await m.carregarCenarioPintado(nome);if(!r)throw Error('Camadas ausentes: '+nome)},nome)
-   await p.waitForTimeout(400)
+   await p.waitForTimeout(1600)
    assert.equal(await p.locator('.fc-batalha').evaluate(e=>getComputedStyle(e).visibility),'hidden')
    assert.equal(await p.locator('.fc-batalha').getAttribute('aria-hidden'),'true')
    const escuro=await p.locator('.fc-veu').evaluate(e=>getComputedStyle(e).backgroundImage)

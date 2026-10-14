@@ -74,22 +74,14 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 41. [x] Floresta verdejante (fase do golem) com céu, montanhas nevadas, pinheiros e flores.
 42. [x] **Andar a céu aberto dentro da cripta** (como em Sword Art Online): uma porta leva a um bosque com céu azul, lago e borboletas.
-43. [ ] Vilarejo de pedra e madeira, com trilha, árvore grande e cerca (referência enviada pelo Tales).
-44. [ ] Ruínas de templo na floresta, com ponte de madeira e água.
-45. [ ] Vila vista de cima, com hortas, caminhos de pedra e rio.
-46. [ ] Campo florido ao pôr do sol (andar de descanso).
-47. [ ] Praia com farol (andar secreto).
-48. [ ] Jardim dos curandeiros: estufa de vidro com plantas medicinais.
-49. [x] Ciclo de dia e noite no andar a céu aberto.
-50. [x] Animais vivos nos cenários: pássaros, coelhos, peixes pulando no lago e vaga-lumes à noite.
 43. [x] Vilarejo de pedra e madeira, com trilha, árvore grande e cerca (referência enviada pelo Tales).
 44. [x] Ruínas de templo na floresta, com ponte de madeira e água.
 45. [x] Vila vista de cima, com hortas, caminhos de pedra e rio.
 46. [x] Campo florido ao pôr do sol (andar de descanso).
 47. [x] Praia com farol (andar secreto).
 48. [x] Jardim dos curandeiros: estufa de vidro com plantas medicinais.
-49. [ ] Ciclo de dia e noite no andar a céu aberto.
-50. [ ] Animais vivos nos cenários: pássaros, coelhos, peixes pulando no lago e vaga-lumes à noite.
+49. [x] Ciclo de dia e noite no andar a céu aberto.
+50. [x] Animais vivos nos cenários: pássaros, coelhos, peixes pulando no lago e vaga-lumes à noite.
 51. [x] Pintura dos cenários atualmente usados pelo jogo. Biomas apenas propostos para o futuro: Deserto das Dunas Douradas (substitui o antigo tema com ossos), pântano da necrose, observatório e fortaleza das placas. O **Salão do Trono** ficou pronto em 14/10 (`scripts/cenarios/salao.py`): colunas de capitel dourado, vitral redondo com feixes coloridos, tapete vermelho até o trono, estandartes e cortinas. A **Caverna dos Cristais** também (`scripts/cenarios/caverna.py`): rocha em névoa azul, cristais violeta e ciano, lago subterrâneo, cogumelos luminosos e a fenda de luz. E o **Laboratório do Alquimista** (`scripts/cenarios/laboratorio.py`): prateleiras de frascos, caldeirão verde, alambique, esfera armilar de latão e o negatoscópio com o molde de uma placa e parafusos (só o implante, sem anatomia). E a **Catacumba das Velas** (`scripts/cenarios/catacumba.py`): portão de ferro com luz verde, sarcófagos de pedra, urnas, velas, teias e névoa, sem ossos nem caveiras. E o **Templo do Sol** (`scripts/cenarios/templo.py`): teto aberto para o céu, disco solar esculpido, colunas com hera, espelho d'água com lótus e peixinhos e braseiros. E a **Passarela das Nuvens** (`scripts/cenarios/passarela.py`): ponte de pedra sobre um mar de nuvens, montanhas nevadas, torre com bandeira e lanternas. E a **Forja dos Implantes** (`scripts/cenarios/forja.py`): fornalha de tijolo com coifa, bigorna com uma placa de osteossíntese em brasa, parede de ferramentas, prateleira de placas e parafusos, barril fumegando e fagulhas. E o **Coliseu da Consolidação** (`scripts/cenarios/coliseu.py`): arquibancada em arcos ao entardecer com o público em pontinhos de cor, toldo listrado, portão com grade, tochas, escudos de bronze e a areia com o círculo de luta. Concluídos também treino (Pátio dos Estandartes), arquivo (Arquivo dos Mapas) e torre (Terraço do Horizonte), com quatro camadas nos dois formatos. Detalhes e revisão: [cenários pendentes](flashcards/CENARIOS-PENDENTES-14-10.md). PR draft [#247](https://github.com/talesrobertosn/ortoquestoes/pull/247), a revisar.
 
 ## E. Vilões novos (o Tales manda o estilo antes)

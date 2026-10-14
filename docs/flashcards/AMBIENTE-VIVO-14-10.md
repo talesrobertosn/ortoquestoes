@@ -14,3 +14,7 @@ A fauna é arte própria de `scripts/sprites/animais.py`, desenhada por máscara
 - Capturas `capturas/ambiente-vivo-14-10/`, dia e noite nos três formatos.
 
 Monstros novos permanecem em pausa. Falta medir FPS em aparelho físico; a medição sintética não substitui essa etapa. Próximo bloco permitido: pinturas de novas paisagens e aparência opcional do herói.
+
+## Publicação
+
+PR #260 mesclado em `10986abd`; deploy `38653549325` concluído com sucesso. O relatório do próximo bloco preserva o ciclo, a fauna e a pausa por visibilidade.
