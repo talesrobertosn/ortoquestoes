@@ -34,7 +34,7 @@ export function JanelaCentral({ aberta, aoFechar, rotulo, children, className = 
     const teclar = (e: KeyboardEvent) => {
       if (e.key === 'Escape') { e.stopPropagation(); fechar.current(); return }
       if (e.key !== 'Tab' || !caixa.current) return
-      const focaveis = caixa.current.querySelectorAll<HTMLElement>('button:not([disabled]), [href], input:not([disabled]), [tabindex]:not([tabindex="-1"])')
+      const focaveis = caixa.current.querySelectorAll<HTMLElement>('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')
       if (!focaveis.length) return
       const primeiro = focaveis[0], ultimo = focaveis[focaveis.length - 1]
       if (e.shiftKey && document.activeElement === primeiro) { e.preventDefault(); ultimo.focus() }

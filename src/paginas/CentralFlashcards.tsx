@@ -106,8 +106,8 @@ export function CentralFlashcards() {
       </section>
 
       <aside className="cf-aviso" role="note">
-        <Icone nome="alerta" tamanho={18} />
-        <p>{AVISO_BETA}</p>
+        <Icone nome="correio" tamanho={22} />
+        <p><strong>Estamos construindo os próximos flashcards com você.</strong><br />O beta está aberto. Conte o que gostou e o que podemos melhorar.</p>
         <button type="button" className="botao botao--fantasma" onClick={() => definirOpiniao('central')}>Enviar opinião</button>
       </aside>
 
@@ -435,25 +435,25 @@ export function JanelaOpiniao({ origem, aoFechar }: { origem: OrigemOpiniao; aoF
         </div>
       ) : (
         <form onSubmit={(e) => { e.preventDefault(); if (!vazio) void enviar() }}>
-          <h2>Como está sendo o beta?</h2>
-          <p className="cf-nota">Não mande print, dados pessoais ou dúvida médica: aqui é só sobre a experiência. Erro em um flashcard específico vai pelo botão de relatar erro da questão.</p>
+          <header className="cf-opiniao__cabeca"><span className="cf-opiniao__icone"><Icone nome="correio" tamanho={24} /></span><div><p className="cf-opiniao__selo">Sua experiência importa</p><h2>O que podemos melhorar?</h2><p>Um minuto da sua opinião ajuda a construir os próximos flashcards.</p></div></header>
+
           <fieldset className="cf-campo">
             <legend>Sobre o quê?</legend>
             <div className="cf-chips" role="radiogroup">
               {CATEGORIAS_OPINIAO.map((c) => <button key={c.id} type="button" role="radio" aria-checked={categoria === c.id} onClick={() => definirCategoria(c.id)}>{c.nome}</button>)}
             </div>
           </fieldset>
-          <Nota rotulo="Foi fácil estudar?" valor={facil} aoMudar={definirFacil} />
-          <Nota rotulo="Como foi a experiência visual?" valor={visual} aoMudar={definirVisual} />
+          <div className="cf-opiniao__notas"><Nota rotulo="Foi fácil estudar?" valor={facil} aoMudar={definirFacil} /><Nota rotulo="E o visual?" valor={visual} aoMudar={definirVisual} /></div>
           <fieldset className="cf-campo">
             <legend>O som funcionou no seu celular?</legend>
             <div className="cf-chips" role="radiogroup">
               {([['sim', 'Sim'], ['nao', 'Não'], ['nao_testei', 'Não testei']] as const).map(([v, n]) => <button key={v} type="button" role="radio" aria-checked={som === v} onClick={() => definirSom(som === v ? null : v)}>{n}</button>)}
             </div>
           </fieldset>
-          <label className="cf-campo"><span>Houve algum problema?</span><textarea rows={3} maxLength={1500} value={problema} onChange={(e) => definirProblema(e.target.value)} placeholder="Ex.: a tela cortou no celular deitado" /></label>
-          <label className="cf-campo"><span>O que você gostaria de melhorar?</span><textarea rows={3} maxLength={1500} value={melhorar} onChange={(e) => definirMelhorar(e.target.value)} /></label>
+          <label className="cf-campo"><span>Algo não funcionou?</span><textarea aria-label="Algo não funcionou?" rows={3} maxLength={1500} value={problema} onChange={(e) => definirProblema(e.target.value)} placeholder="Ex.: a tela cortou no celular deitado" /></label>
+          <label className="cf-campo"><span>Qual seria sua próxima melhoria?</span><textarea aria-label="Qual seria sua próxima melhoria?" rows={3} maxLength={1500} value={melhorar} onChange={(e) => definirMelhorar(e.target.value)} /></label>
           {erro && <p className="cf-alerta" role="alert">{erro}</p>}
+          <p className="cf-opiniao__privacidade">Conte apenas sobre a experiência, sem dados pessoais. Para corrigir conteúdo médico, use “Relatar erro” na questão.</p>
           <div className="cf-form__botoes">
             <button type="submit" className="botao botao--principal" disabled={vazio || estado === 'enviando'}>{estado === 'enviando' ? 'Enviando…' : 'Enviar opinião'}</button>
             <button type="button" className="botao botao--fantasma" onClick={aoFechar}>Cancelar</button>

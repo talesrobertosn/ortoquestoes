@@ -46,6 +46,7 @@ const familiaSom = (t: Timbre) => (t && FAMILIA_SOM[t]) || t
 let ctx: AudioContext | null = null
 let saida: GainNode, efeitos: GainNode, ambiente: GainNode, musica: GainNode, reverb: ConvolverNode, envio: GainNode
 let ligado = true
+let volumeGeral = 0.2
 let volEfeitos = 0.8, volAmbiente = 0.35, volMusica = 0.45
 let ambienteAtual: { nome: Ambiente; parar: () => void } | null = null
 let ambientePedido: Ambiente | null = null
@@ -82,16 +83,20 @@ function criar() {
   aplicarVolumes()
 }
 
+export const volumeDaSessao = () => volumeGeral
+export function reiniciarVolume() { volumeGeral = 0.2; aplicarVolumes() }
+
 function aplicarVolumes() {
   if (!ctx) return
   const t = ctx.currentTime
-  saida.gain.setTargetAtTime(ligado ? 1 : 0, t, 0.03)
+  saida.gain.setTargetAtTime(ligado ? volumeGeral : 0, t, 0.03)
   efeitos.gain.setTargetAtTime(volEfeitos, t, 0.03)
   ambiente.gain.setTargetAtTime(volAmbiente * 0.6, t, 0.3)
   musica.gain.setTargetAtTime(volMusica * 0.55, t, 0.3)
 }
 
-export function configurarSom(o: { ligado: boolean; efeitos: number; ambiente: number; musica?: number }) {
+export function configurarSom(o: { ligado: boolean; efeitos: number; ambiente: number; musica?: number; volume?: number }) {
+  if (o.volume !== undefined) volumeGeral = Math.max(0,Math.min(1,o.volume))
   ligado = o.ligado; volEfeitos = o.efeitos; volAmbiente = o.ambiente
   if (o.musica !== undefined) volMusica = o.musica
   aplicarVolumes()

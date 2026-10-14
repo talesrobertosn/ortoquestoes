@@ -1,8 +1,9 @@
+import { Volume } from './Volume'
 import { useEffect, useMemo, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { FLASHCARDS_RANKING } from '../../config'
 import { href, navegar } from '../../util/rotas'
-import { configurarSom, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
 import { BESTIARIO } from '../motor/bestiario'
@@ -29,9 +30,18 @@ export function Entrada() {
   const cripta = useMemo(() => migrarPartida(ler<unknown>(CHAVE_PARTIDA, null)), [])
   const bestiario = useMemo(() => ({ ...BESTIARIO_VAZIO, ...ler<Partial<Bestiario>>(CHAVE_BESTIARIO, {}) }), [])
   const criptaViva = cripta && cripta.fase !== 'fim' ? cripta : null
+  const [volume, definirVolume] = useState(volumeDaSessao)
+  const [somAtivo, definirSomAtivo] = useState(() => ler<{som?:boolean}>(CHAVE_AJUSTES,{}).som ?? true)
+  const mudarVolume = (n: number) => {
+    definirVolume(n); definirSomAtivo(n>0)
+    const a=ler<Record<string,unknown>>(CHAVE_AJUSTES,{})
+    gravar(CHAVE_AJUSTES,{...a,versao:3,volume:n,som:n>0})
+    configurarSom({ligado:n>0,volume:n,efeitos:Number(a.volEfeitos??0.85),musica:Number(a.volMusica??0.45),ambiente:Number(a.volAmbiente??0.35)})
+  }
+
   useEffect(() => {
     const a = ler<{ som?: boolean; volEfeitos?: number; volAmbiente?: number; volMusica?: number }>(CHAVE_AJUSTES, {})
-    configurarSom({ ligado: a.som ?? true, efeitos: a.volEfeitos ?? 0.85, ambiente: a.volAmbiente ?? 0.35, musica: a.volMusica ?? 0.45 })
+    configurarSom({ ligado: a.som ?? true, efeitos: a.volEfeitos ?? 0.85, ambiente: a.volAmbiente ?? 0.35, musica: a.volMusica ?? 0.45, volume: volumeDaSessao() })
     tocarMusica('entrada'); tocarAmbiente('masmorra')
     // destrave por gesto e pausa por visibilidade, instalados uma vez para o jogo todo (sons.ts)
     instalarDestrave()
@@ -42,9 +52,10 @@ export function Entrada() {
   const escolher = (comSom: boolean) => {
     const a = ler<Record<string, unknown>>(CHAVE_AJUSTES, {})
     gravar(CHAVE_AJUSTES, { ...a, versao: 3, som: comSom })
-    configurarSom({ ligado: comSom, efeitos: (a.volEfeitos as number) ?? 0.85, ambiente: (a.volAmbiente as number) ?? 0.35, musica: (a.volMusica as number) ?? 0.45 })
+    configurarSom({ ligado: comSom, efeitos: (a.volEfeitos as number) ?? 0.85, ambiente: (a.volAmbiente as number) ?? 0.35, musica: (a.volMusica as number) ?? 0.45, volume: volumeDaSessao() })
     if (comSom) { destravar(); tocar('confirmar') }
     gravar(CHAVE_SOM_ESCOLHIDO, true)
+    definirSomAtivo(comSom)
     definirEscolherSom(false)
   }
 
@@ -59,6 +70,7 @@ export function Entrada() {
     <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); navegar('/flashcards') }}>
       <div className="fc-arena fc-entrada">
         <Cenario cena="campo" reduzido={false} clima="noite" />
+        <div className="fc-entrada__volume"><Volume valor={somAtivo ? volume : 0} aoMudar={mudarVolume} /></div>
         <div className="fc-entrada__miolo">
           <header className="fc-entrada__cabeca">
             <span className="fc-entrada__selo">Um encontro com o conhecimento</span>

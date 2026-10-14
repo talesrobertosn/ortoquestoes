@@ -1,3 +1,4 @@
+import { reiniciarVolume, tocarMusica, tocarAmbiente } from '../flashcards/efeitos/sons'
 import { lazy, Suspense, useEffect } from 'react'
 import { CentralFlashcards, CronogramaFlashcards, DesempenhoFlashcards } from './CentralFlashcards'
 import { navegar } from '../util/rotas'
@@ -17,6 +18,11 @@ const Jogo = lazy(() => import('./FlashcardsJogo'))
  *   #/flashcards/ranking    leva ao ranking do site, aba Flashcards
  */
 export function Flashcards({ secao }: { secao?: string }) {
+  useEffect(() => {
+    if (!["cripta","masmorra","biblioteca","estudo","entrada","torre"].includes(secao ?? '')) { reiniciarVolume();tocarMusica(null);tocarAmbiente(null) }
+  },[secao])
+  useEffect(() => () => { reiniciarVolume();tocarMusica(null);tocarAmbiente(null) },[])
+
   if (secao === 'torre') return <Redirecionar destino="/flashcards/entrada" />
   if (['cripta', 'masmorra', 'torre', 'biblioteca', 'estudo', 'entrada'].includes(secao ?? '')) return <Suspense fallback={null}><Jogo secao={secao!} /></Suspense>
   if (secao === 'ranking') return <Redirecionar destino="/ranking?aba=flashcards" />
