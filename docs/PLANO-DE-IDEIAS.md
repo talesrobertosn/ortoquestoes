@@ -86,7 +86,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 ## E. Vilões novos (o Tales manda o estilo antes)
 
-52. [ ] (T) Esperar a referência visual do Tales; pesquisar 2D HD pixel art parecida.
+52. [x] (T) Referências do Tales recebidas em 14/10 e descritas em [flashcards/MONSTROS-NOVOS.md](flashcards/MONSTROS-NOVOS.md), com o estilo de cada família e a receita.
 53. [ ] Folhas em volume para raptor, mímico e esqueleto, que hoje usam o sprite antigo.
 54. [ ] Variantes escarlate e ancestral do Dragão (folha própria).
 55. [ ] Cogumelo saltitante (andar a céu aberto, fofo e inofensivo).
