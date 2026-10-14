@@ -298,7 +298,6 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
     <div className="fc-estudo">
       <aside className="fc-estudo__painel" aria-label="Progresso do estudo">
         <button type="button" className="fc-botao-pequeno fc-estudo__voltar" onClick={aoTerminar}>← Biblioteca</button>
-        <GatoDaBiblioteca estado={humor.tipo === 'gloria' || (humor.tipo === 'chama' && humor.nivel >= 2) ? 'feliz' : humor.tipo === 'chama' || humor.tipo === 'arcoiris' || serie.acertos >= 1 ? 'acorda' : 'dorme'} />
         <NomeEmChamas nome={nomeMostrado} humor={humor} />
         <p className="fc-estudo__titulo">{titulo}</p>
         {humor.tipo !== 'calmo' && (
@@ -394,9 +393,4 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
       </div>
     </div>
   )
-}
-
-/** O gato da Biblioteca: dorme, acorda quando você acerta e fica feliz no combo (só enfeite). */
-function GatoDaBiblioteca({ estado }: { estado: 'dorme' | 'acorda' | 'feliz' }) {
-  return <span className={`fc-gato fc-gato--${estado}`} aria-hidden="true" style={{ backgroundImage: `url(${recurso(`flashcards/vfx/gato-${estado}.png`)})` }} />
 }

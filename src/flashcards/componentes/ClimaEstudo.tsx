@@ -2,8 +2,9 @@
  * Humor da Biblioteca (pedido do Tales, 14/10/2026): o clima da sessão de
  * estudo muda conforme a pessoa acerta, erra ou hesita.
  *
- *   3 "Sabia" seguidos   o nome pega fogo (laranja); 6, fogo azul; 9, chama arcana
- *   20 seguidos          Glória da Biblioteca: tudo brilha em ouro
+ *   3 "Sabia" seguidos   o flashcard pega fogo: aura de chamas em volta dele
+ *                        (escarlate); 6, fogo azul; 9, chama arcana (ver AuraDeFogo)
+ *   20 seguidos          Glória da Biblioteca: aura de ouro e tudo brilha
  *   3 erros seguidos     começa a chover (com o aviso de por quê)
  *   5 erros seguidos     tempestade: escurece, relâmpagos e trovão
  *   3 "Hesitei" seguidos (ou 30 s parado sem virar)   névoa da dúvida
@@ -12,8 +13,8 @@
  * Só aparência: não muda a revisão espaçada, o registro nem o servidor.
  */
 import { useEffect, useRef } from 'react'
-import { recurso } from '../../config'
 import { tocar } from '../efeitos/sons'
+import { AuraDeFogo } from './AuraDeFogo'
 
 export type TipoHumor = 'calmo' | 'chama' | 'gloria' | 'chuva' | 'tempestade' | 'nevoa' | 'arcoiris'
 export interface Humor { tipo: TipoHumor; nivel: number; titulo: string; sub: string }
@@ -45,7 +46,6 @@ export function humorDe(s: Serie): Humor {
 }
 
 const TOM_CHAMA = ['escarlate', 'escarlate', 'fatuo', 'ancestral'] as const
-const COR_FAGULHA: Record<number, string[]> = { 1: ['#ffe6a0', '#ffa23c', '#e04a1e'], 2: ['#e4fdff', '#7fe6ff', '#2a92d8'], 3: ['#fbe4ff', '#d88cff', '#9a3ad0'] }
 export const tomDaChama = (h: Humor) => (h.tipo === 'gloria' ? 'ouro' : TOM_CHAMA[h.nivel] ?? 'escarlate')
 
 /**
@@ -56,7 +56,8 @@ export const tomDaChama = (h: Humor) => (h.tipo === 'gloria' ? 'ouro' : TOM_CHAM
 export function ClimaEstudo({ humor, reduzido }: { humor: Humor; reduzido: boolean }) {
   const ref = useRef<HTMLCanvasElement>(null)
   const raiz = useRef<HTMLDivElement>(null)
-  const animado = !reduzido && (humor.tipo === 'chuva' || humor.tipo === 'tempestade' || humor.tipo === 'chama' || humor.tipo === 'gloria')
+  const animado = !reduzido && (humor.tipo === 'chuva' || humor.tipo === 'tempestade' || humor.tipo === 'gloria')
+  const aura = !reduzido && (humor.tipo === 'chama' || humor.tipo === 'gloria')
 
   useEffect(() => {
     const cv = ref.current
@@ -68,7 +69,7 @@ export function ClimaEstudo({ humor, reduzido }: { humor: Humor; reduzido: boole
     medir()
     window.addEventListener('resize', medir)
     const tempestade = humor.tipo === 'tempestade', chuva = tempestade || humor.tipo === 'chuva'
-    const n = chuva ? (tempestade ? 150 + humor.nivel * 40 : 90) : humor.tipo === 'gloria' ? 60 : 16 + humor.nivel * 14
+    const n = chuva ? (tempestade ? 150 + humor.nivel * 40 : 90) : 60
     const vento = tempestade ? 0.45 + humor.nivel * 0.1 : chuva ? 0.18 : 0
     type P = { x: number; y: number; v: number; f: number; k: number }
     const ps: P[] = Array.from({ length: n }, () => ({ x: Math.random() * W, y: Math.random() * H, v: 0.6 + Math.random() * 0.8, f: Math.random() * 6.28, k: Math.floor(Math.random() * 3) }))
@@ -114,19 +115,6 @@ export function ClimaEstudo({ humor, reduzido }: { humor: Humor; reduzido: boole
             }
           } else if (raio.t >= 9) raio = null
         }
-      } else if (humor.tipo === 'chama') {
-        // fagulhas subindo do pé da tela, na cor da chama
-        const cores = COR_FAGULHA[humor.nivel] ?? COR_FAGULHA[1]
-        for (const p of ps) {
-          p.y -= 0.9 * p.v * dt; p.f += 0.06 * dt; p.x += Math.sin(p.f) * 0.25 * dt
-          if (p.y < H * 0.25) { p.y = H + Math.random() * 10; p.x = Math.random() * W }
-          const vida = Math.min(1, (p.y - H * 0.25) / (H * 0.4))
-          c.globalAlpha = vida
-          c.fillStyle = cores[p.k]
-          c.fillRect(Math.round(p.x), Math.round(p.y), 1, 1)
-          if (p.k === 0) { c.globalAlpha = vida * 0.4; c.fillRect(Math.round(p.x), Math.round(p.y) + 1, 1, 1) }
-        }
-        c.globalAlpha = 1
       } else {
         // glória: cintilas em cruz que acendem e apagam, e poeira de ouro descendo devagar
         for (const p of ps) {
@@ -154,25 +142,18 @@ export function ClimaEstudo({ humor, reduzido }: { humor: Humor; reduzido: boole
       {humor.tipo === 'gloria' && <span className="fc-clima__raios" />}
       {humor.tipo === 'arcoiris' && <span className="fc-clima__arcoiris" />}
       {humor.tipo === 'nevoa' && <><span className="fc-clima__nevoa" /><span className="fc-clima__nevoa fc-clima__nevoa--2" /></>}
+      {aura && <AuraDeFogo tom={tomDaChama(humor)} nivel={humor.nivel} />}
       {animado && <canvas ref={ref} className="fc-clima__chuva" />}
     </div>
   )
 }
 
-/** O nome da pessoa com chamas em pixel art atrás (sequência de acertos na Biblioteca). */
+/** O nome da pessoa: na sequência de acertos ele brilha na cor da aura (o fogo mesmo fica em volta do flashcard). */
 export function NomeEmChamas({ nome, humor }: { nome: string; humor: Humor }) {
   const acesa = humor.tipo === 'chama' || humor.tipo === 'gloria'
   const tom = tomDaChama(humor)
-  const n = Math.max(3, Math.min(7, Math.round(nome.length / 1.6)))
   return (
     <p className={`fc-nome-chamas${acesa ? ` fc-nome-chamas--acesa fc-nome-chamas--${tom} fc-nome-chamas--nivel-${humor.nivel}` : ''}`}>
-      {acesa && (
-        <span className="fc-nome-chamas__fogo" aria-hidden="true">
-          {Array.from({ length: n }, (_, i) => (
-            <i key={i} style={{ backgroundImage: `url(${recurso(`flashcards/vfx/chama-${tom}.png`)})`, animationDelay: `${-((i * 137) % 540)}ms`, left: `${((i + 0.5) / n) * 100}%`, ['--s' as string]: String(0.8 + ((i * 7) % 5) / 10) }} />
-          ))}
-        </span>
-      )}
       <span className="fc-nome-chamas__texto">{nome}</span>
     </p>
   )
