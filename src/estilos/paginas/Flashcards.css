@@ -2185,23 +2185,36 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
   -webkit-mask: linear-gradient(#000 55%, transparent 92%); mask: linear-gradient(#000 55%, transparent 92%); }
 @keyframes fc-arcoiris { 0% { opacity: 0; transform: translateY(6%); } 18% { opacity: .7; transform: none; } 75% { opacity: .55; } 100% { opacity: .35; } }
 
-/* Nome em chamas: chamas de pixel atrás do nome, mais altas a cada nível. */
-.fc-nome-chamas { position: relative; margin: 2px 0 0; padding: 18px 4px 4px; text-align: center; font: 700 clamp(17px, 1.8vw, 22px)/1.1 var(--fc-titulo, var(--fc-ui)); color: #fff1c2; letter-spacing: .02em; }
+/* Nome na sequência de acertos: brilha na cor da aura (o fogo fica em volta do flashcard). */
+.fc-nome-chamas { position: relative; margin: 2px 0 0; padding: 6px 4px 4px; text-align: center; font: 700 clamp(17px, 1.8vw, 22px)/1.1 var(--fc-titulo, var(--fc-ui)); color: #fff1c2; letter-spacing: .02em; }
 .fc-nome-chamas__texto { position: relative; z-index: 1; }
-.fc-nome-chamas__fogo { position: absolute; left: 6%; right: 6%; bottom: 2px; height: 0; z-index: 0; }
-.fc-nome-chamas__fogo i { position: absolute; bottom: -6px; width: 36px; height: 48px; margin-left: -18px; background-repeat: no-repeat; background-size: 216px 48px;
-  image-rendering: pixelated; transform-origin: 50% 100%; transform: scale(var(--s, 1)); animation: fc-chama-viva .54s steps(6) infinite; opacity: .95; }
-@keyframes fc-chama-viva { to { background-position: -216px 0; } }
-.fc-nome-chamas--nivel-2 .fc-nome-chamas__fogo i { width: 48px; height: 64px; margin-left: -24px; background-size: 288px 64px; animation-name: fc-chama-viva-2; }
-@keyframes fc-chama-viva-2 { to { background-position: -288px 0; } }
-.fc-nome-chamas--nivel-3 .fc-nome-chamas__fogo i { width: 60px; height: 80px; margin-left: -30px; background-size: 360px 80px; animation-name: fc-chama-viva-3; }
-@keyframes fc-chama-viva-3 { to { background-position: -360px 0; } }
 .fc-nome-chamas--acesa .fc-nome-chamas__texto { text-shadow: 0 0 1px #000, 0 2px 0 #3a1a08, 0 0 12px rgba(255, 150, 60, .9); color: #fffbe8; animation: fc-nome-arde 1.2s ease-in-out infinite; }
 .fc-nome-chamas--fatuo .fc-nome-chamas__texto { text-shadow: 0 0 1px #000, 0 2px 0 #0e2a4a, 0 0 14px rgba(110, 200, 255, .95); }
 .fc-nome-chamas--ancestral .fc-nome-chamas__texto { text-shadow: 0 0 1px #000, 0 2px 0 #2a0e4a, 0 0 16px rgba(200, 120, 255, 1); }
 .fc-nome-chamas--ouro .fc-nome-chamas__texto { color: #fff7d0; text-shadow: 0 0 1px #000, 0 2px 0 #5a3008, 0 0 18px rgba(255, 210, 90, 1), 0 0 34px rgba(255, 190, 60, .7); }
 @keyframes fc-nome-arde { 50% { filter: brightness(1.18); } }
 .fc-arena--estudo .fc-estudo__painel:has(.fc-nome-chamas--ouro) { box-shadow: inset 0 0 0 2px #e9b955, 0 0 26px rgba(255, 200, 90, .55), 0 12px 26px rgba(0, 0, 0, .5); }
+
+/* Aura de fogo em volta do flashcard (AuraDeFogo.tsx): fogo em pixels grandes
+   e, por baixo, o mesmo fogo borrado e somado, que faz a luz HD. */
+.fc-clima > .fc-aura { inset: 0; }
+.fc-aura > * { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.fc-aura__fogo { image-rendering: pixelated; image-rendering: crisp-edges; animation: fc-aura-acende .8s ease-out both; }
+.fc-aura__brilho { filter: blur(18px) saturate(1.4); mix-blend-mode: screen; opacity: .8; animation: fc-aura-respira 1.6s ease-in-out infinite; }
+.fc-aura--nivel-3 .fc-aura__brilho, .fc-aura--nivel-4 .fc-aura__brilho { filter: blur(26px) saturate(1.5); opacity: .9; }
+@keyframes fc-aura-acende { from { opacity: 0; transform: translateY(6%) scaleY(.7); transform-origin: 50% 100%; } }
+@keyframes fc-aura-respira { 50% { opacity: .7; } }
+.fc-aura__clarao { opacity: 0; mix-blend-mode: screen; background: radial-gradient(50% 50% at 50% 55%, var(--aura-luz, rgba(255, 190, 90, .85)), transparent 75%); }
+.fc-aura--ignicao .fc-aura__clarao { animation: fc-aura-clarao .9s ease-out; }
+@keyframes fc-aura-clarao { 0% { opacity: 0; } 12% { opacity: 1; } 100% { opacity: 0; } }
+.fc-aura--fatuo { --aura-luz: rgba(110, 200, 255, .85); }
+.fc-aura--ancestral { --aura-luz: rgba(200, 120, 255, .85); }
+.fc-aura--ouro { --aura-luz: rgba(255, 220, 120, .9); }
+/* o flashcard parece aquecido: a borda ganha a luz da aura */
+.fc-arena--estudo:has(.fc-aura) .fc-estudo__mesa .fc-carta__borda { box-shadow: 0 0 0 2px #120a04, 0 2px 0 2px #4a3c26, 0 4px 0 2px #2a2014, 0 6px 0 2px #120a04, 0 0 0 4px var(--aura-borda, rgba(255, 170, 70, .9)), 0 0 38px 6px var(--aura-borda, rgba(255, 140, 50, .8)), inset 0 1px 0 rgba(255, 255, 255, .7); transition: box-shadow .6s ease; }
+.fc-arena--estudo:has(.fc-aura--fatuo) { --aura-borda: rgba(110, 200, 255, .9); }
+.fc-arena--estudo:has(.fc-aura--ancestral) { --aura-borda: rgba(200, 120, 255, .9); }
+.fc-arena--estudo:has(.fc-aura--ouro) { --aura-borda: rgba(255, 215, 110, .95); }
 
 /* Aviso do humor: explica por que o clima mudou. */
 .fc-humor { display: grid; gap: 2px; padding: 8px 10px; border-radius: 10px; font-family: var(--fc-ui); animation: fc-humor-entra .5s cubic-bezier(.2, .9, .3, 1.3) both;
@@ -2217,14 +2230,13 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 @keyframes fc-humor-entra { from { opacity: 0; transform: translateY(6px) scale(.96); } }
 .fc-estudo__melhor { margin: 0; text-align: center; font: 600 14px var(--fc-ui); color: #ffe6a8; }
 @media (prefers-reduced-motion: reduce) {
-  .fc-clima__raios, .fc-clima__nevoa, .fc-nome-chamas__fogo i, .fc-nome-chamas--acesa .fc-nome-chamas__texto, .fc-clima--clarao .fc-clima__veu { animation: none !important; }
+  .fc-clima__raios, .fc-clima__nevoa, .fc-nome-chamas--acesa .fc-nome-chamas__texto, .fc-clima--clarao .fc-clima__veu { animation: none !important; }
 }
 /* celular em pé: o painel do estudo vira uma faixa; o aviso do clima encolhe para uma linha */
 @media (max-width: 640px) and (orientation: portrait) {
   .fc-estudo__painel .fc-humor { display: none; }
   .fc-humor-aviso { display: grid; }
-  .fc-estudo__painel .fc-nome-chamas { flex: none; padding: 12px 2px 2px; font-size: 15px; }
-  .fc-nome-chamas--nivel-2 .fc-nome-chamas__fogo i, .fc-nome-chamas--nivel-3 .fc-nome-chamas__fogo i { width: 36px; height: 48px; margin-left: -18px; background-size: 216px 48px; animation-name: fc-chama-viva; }
+  .fc-estudo__painel .fc-nome-chamas { flex: none; padding: 4px 2px 2px; font-size: 15px; }
 }
 /* deitado (painel estreito à esquerda): só o título do humor */
 @media (max-height: 500px) and (orientation: landscape) { .fc-estudo__painel .fc-humor small { display: none; } }
@@ -2239,6 +2251,7 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 @media (max-width: 640px) and (orientation: portrait) { .fc-humor-aviso { display: grid; } }
 
 /* ---------- Em chamas (o Sopro do dragão) ---------- */
+@keyframes fc-chama-viva { to { background-position: -216px 0; } }
 .fc-em-chamas { position: absolute; left: 0; right: 0; bottom: 6%; height: 0; z-index: 3; pointer-events: none; }
 .fc-em-chamas i { position: absolute; bottom: 0; width: 36px; height: 48px; margin-left: -18px; background-repeat: no-repeat; background-size: 216px 48px; image-rendering: pixelated;
   animation: fc-chama-viva .54s steps(6) infinite; opacity: .9; }
@@ -2256,20 +2269,15 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 .fc-info--veneno { color: #c8ff9a; box-shadow: inset 0 0 0 1px rgba(122, 224, 74, .6); }
 .fc-info--grude { color: #b8f7c8; box-shadow: inset 0 0 0 1px rgba(111, 220, 148, .6); }
 
-/* ---------- Gato da Biblioteca e velas da sessão ---------- */
-.fc-gato { position: absolute; z-index: 3; left: 18px; top: calc(100% + 2px); width: 120px; height: 90px; pointer-events: none; background-repeat: no-repeat;
-  background-size: 720px 90px; image-rendering: pixelated; animation: fc-gato-anda 1.56s steps(6) infinite; }
-.fc-gato--acorda { animation-duration: .96s; }
-.fc-gato--feliz { animation-duration: .72s; }
-@keyframes fc-gato-anda { to { background-position: -720px 0; } }
+/* ---------- Velas da sessão ---------- */
 .fc-velas { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1px; min-height: 30px; }
 .fc-velas i { width: 12px; height: 20px; background-repeat: no-repeat; background-size: 48px 20px; image-rendering: pixelated; transform: scale(1.3); transform-origin: 50% 100%;
   filter: grayscale(1) brightness(.55); background-position: 0 0; }
 .fc-velas i.acesa { filter: none; animation: fc-vela .48s steps(4) infinite; }
 @keyframes fc-vela { to { background-position: -48px 0; } }
 .fc-velas b { margin-left: 4px; font: 700 12px var(--fc-ui); color: #ffe6a8; }
-@media (max-width: 640px) and (orientation: portrait), (max-height: 500px) and (orientation: landscape) { .fc-gato { display: none; } .fc-velas { display: none; } }
-@media (prefers-reduced-motion: reduce) { .fc-gato, .fc-velas i.acesa { animation: none; } }
+@media (max-width: 640px) and (orientation: portrait), (max-height: 500px) and (orientation: landscape) { .fc-velas { display: none; } }
+@media (prefers-reduced-motion: reduce) { .fc-velas i.acesa { animation: none; } }
 /* Computador: o pop-up do jogo deixa o site translúcido atrás (pedido do Tales, 13/10/2026).
    Sem desfoque ao vivo (pesava demais, ver acima); o !important vence o véu escuro geral. */
 @media (min-width: 900px) and (min-height: 560px) {
