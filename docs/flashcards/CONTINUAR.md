@@ -31,7 +31,7 @@ Leia nesta ordem:
   - correção do topo no celular;
   - a escolha "entrar com ou sem som" agora é perguntada uma vez só por aparelho. Fica guardada em `flashcards:som-escolhido`, nas chaves globais de `estado/armazenamento.ts`.
 - **O Tales confirmou:** o som funciona no celular e a parte 19 do SQL já foi colada no Supabase.
-- **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). O goblin já está pronto (`scripts/sprites/goblin.py`); siga pelo esqueleto. Depois, pela ordem do plano:
+- **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). O goblin e o esqueleto já estão prontos (`scripts/sprites/goblin.py` e `esqueleto.py`); siga pelo ent (Guardião da Fise). Depois, pela ordem do plano:
   - sons próprios dos golpes novos (ideia 17);
   - revisão dos botões (ideia 61);
   - cenários pintados que faltam (ideia 51).
