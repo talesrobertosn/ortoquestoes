@@ -66,7 +66,7 @@ function volumeSalvo(): number {
 /** O ouvido percebe volume em escala logarítmica: o quadrado faz 50% soar como "metade". */
 const curvaVolume = (v: number) => v * v
 let volumeGeral = volumeSalvo()
-let volEfeitos = 0.8, volAmbiente = 0.35, volMusica = 0.45
+let volEfeitos = 0.7, volAmbiente = 0.35, volMusica = 0.45
 let ambienteAtual: { nome: Ambiente; parar: () => void } | null = null
 let ambientePedido: Ambiente | null = null
 let musicaAtual: { nome: Musica; parar: () => void; procedural?: boolean } | null = null
@@ -113,7 +113,8 @@ function aplicarVolumes() {
   mestre.gain.setTargetAtTime(ligado ? curvaVolume(volumeGeral) : 0, t, 0.03)
   efeitos.gain.setTargetAtTime(volEfeitos, t, 0.03)
   ambiente.gain.setTargetAtTime(volAmbiente * 0.6, t, 0.3)
-  musica.gain.setTargetAtTime(volMusica * 0.55, t, 0.3)
+  // A música fica sempre bem abaixo dos efeitos (pedido do Tales, 15/10/2026: "música sempre mais baixa").
+  musica.gain.setTargetAtTime(volMusica * 0.3, t, 0.3)
 }
 
 export function configurarSom(o: { ligado: boolean; efeitos: number; ambiente: number; musica?: number; volume?: number }) {

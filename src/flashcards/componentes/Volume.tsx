@@ -54,3 +54,29 @@ export function Volume({ valor, aoMudar }: { valor: number; aoMudar: (valor: num
     </div>}
   </div>
 }
+
+/**
+ * Faixa de volume do menu do jogo, no visual do Torneio (madeira escura e ouro): rótulo, a faixa
+ * com o preenchimento dourado e o número; com `comPassos`, botões − e + de 10 em 10%.
+ */
+export function ControleVolume({ rotulo, valor, aoMudar, aoSoltar, desligado = false, comPassos = false }: {
+  rotulo: string; valor: number; aoMudar: (valor: number) => void; aoSoltar?: () => void; desligado?: boolean; comPassos?: boolean
+}) {
+  const mudar = (v: number, ouvir = false) => {
+    destravar()
+    const n = arredondar(v)
+    aoMudar(n)
+    if (ouvir && n > 0) setTimeout(() => tocar('selecao'), 40)
+  }
+  const pct = Math.round(valor * 100)
+  return (
+    <div className={'fc-volume-linha' + (desligado ? ' fc-volume-linha--off' : '')}>
+      <span className="fc-volume-linha__rotulo">{rotulo}</span>
+      {comPassos && <button type="button" className="fc-volume-linha__passo" aria-label={`Diminuir: ${rotulo.toLowerCase()}`} disabled={desligado || valor <= 0} onClick={() => mudar(valor - PASSO, true)}><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/></svg></button>}
+      <input className="fc-regua" type="range" min={0} max={1} step={0.05} value={valor} disabled={desligado} aria-label={rotulo} aria-valuetext={`${pct}%`}
+        style={{ ['--v' as string]: `${pct}%` }} onPointerDown={destravar} onChange={(e) => mudar(Number(e.target.value))} onPointerUp={aoSoltar} onKeyUp={aoSoltar} />
+      {comPassos && <button type="button" className="fc-volume-linha__passo" aria-label={`Aumentar: ${rotulo.toLowerCase()}`} disabled={desligado || valor >= 1} onClick={() => mudar(valor + PASSO, true)}><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/></svg></button>}
+      <output className="fc-volume-linha__valor">{desligado ? '–' : `${pct}%`}</output>
+    </div>
+  )
+}
