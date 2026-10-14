@@ -1,5 +1,6 @@
-import { memo, useEffect, useRef } from 'react'
 import { EstacoesBiblioteca } from './EstacoesBiblioteca'
+import { memo, useEffect, useRef, useState } from 'react'
+import { climaDoCiclo, INTERVALO_CEU } from '../efeitos/cicloExterior'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
 import { criarAmbiente, pintarCena, type Cena, type Clima } from '../efeitos/pintura'
 import { pintarTabuleiro } from '../efeitos/tabuleiros'
@@ -74,7 +75,20 @@ function climaENevoa(c: CanvasRenderingContext2D, W: number, H: number, clima: C
 const INTERNAS = new Set<Cena>(['covil', 'masmorra', 'salao', 'forja', 'caverna', 'catacumba', 'laboratorio', 'arquivo', 'biblioteca', 'templo'])
 
 export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar = 'dia' }: { cena: Cena; reduzido: boolean; clima?: Clima }) {
-  const clima: Clima = INTERNAS.has(cena) ? 'dia' : climaAndar
+  const [etapaCeu, definirEtapaCeu] = useState(0)
+  useEffect(() => {
+    if (cena !== 'jardim') { definirEtapaCeu(0); return }
+    if (reduzido) return
+    let timer = 0
+    const acompanharVisibilidade = () => {
+      window.clearInterval(timer)
+      if (!document.hidden) timer = window.setInterval(() => definirEtapaCeu(etapa => (etapa + 1) % 4), INTERVALO_CEU)
+    }
+    acompanharVisibilidade()
+    document.addEventListener('visibilitychange', acompanharVisibilidade)
+    return () => { window.clearInterval(timer); document.removeEventListener('visibilitychange', acompanharVisibilidade) }
+  }, [cena, reduzido])
+  const clima: Clima = INTERNAS.has(cena) ? 'dia' : cena === 'jardim' ? climaDoCiclo(etapaCeu) : climaAndar
   const base = useRef<HTMLCanvasElement>(null)
   const ambiente = useRef<HTMLCanvasElement>(null)
   const raiz = useRef<HTMLDivElement>(null)
