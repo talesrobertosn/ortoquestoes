@@ -518,17 +518,17 @@
 /* ============================================================ Top 3 em HD-2D: Salão dos Campeões (14/10/2026)
    Camadas em pixel art (scripts/cenarios/salao_campeoes.py) + luz, desfoque e micromovimentos.
    Coordenadas em % da arte de 320×240. O cartão é sempre noturno, nos dois temas. */
-.sc { position: relative; overflow: hidden; max-width: 34rem; margin: 0.5rem auto 0; width: 100%; border-radius: 16px; color: #f4ecdc; background: #070814;
+.sc { position: relative; overflow: hidden; margin: 1.25rem 0 1rem; width: 100%; border-radius: 16px; color: #f4ecdc; background: #070814;
   box-shadow: 0 0 0 1px #3a2c10, 0 0 0 3px #0b0a12, 0 0 0 4px #b8892c, 0 16px 40px rgba(5, 6, 16, 0.5); }
-.sc__cabeca { position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; column-gap: 0.7rem; padding: 0.5rem 0.8rem 0.45rem; text-align: center;
+.sc__cabeca { position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; column-gap: 0.7rem; padding: 0.8rem 1rem 0.7rem; text-align: center;
   background: radial-gradient(80% 140% at 50% 0%, rgba(120, 90, 200, 0.35), transparent 70%), linear-gradient(#0d0c1e, #070814); border-bottom: 1px solid rgba(232, 180, 64, 0.35); }
-.sc__selo { display: inline-flex; align-items: center; gap: 0.6rem; margin: 0; font-family: 'Cinzel', serif; font-weight: 700; font-size: clamp(0.62rem, 2.2vw, 0.78rem); letter-spacing: 0.3em; text-transform: uppercase; color: #e8b440; }
+.sc__selo { display: inline-flex; align-items: center; gap: 0.6rem; margin: 0; font-family: 'Cinzel', serif; font-weight: 700; font-size: clamp(0.72rem, 2.4vw, 0.9rem); letter-spacing: 0.3em; text-transform: uppercase; color: #e8b440; }
 .sc__selo::before, .sc__selo::after { content: '◆'; font-size: 0.6em; color: #b8892c; }
-.sc__titulo { margin: 0.05rem 0 0; font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(1.45rem, 6vw, 1.9rem); line-height: 1; letter-spacing: 0.08em;
+.sc__titulo { margin: 0.05rem 0 0; font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(1.7rem, 6vw, 2.4rem); line-height: 1; letter-spacing: 0.08em;
   background: linear-gradient(180deg, #fffbe8 0%, #ffe48e 40%, #e8b440 58%, #9a6614 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
   filter: drop-shadow(0 2px 0 #3a2404) drop-shadow(0 0 14px rgba(240, 190, 70, 0.5)); animation: sc-titulo 4s ease-in-out infinite; }
 @keyframes sc-titulo { 50% { filter: drop-shadow(0 2px 0 #3a2404) drop-shadow(0 0 22px rgba(255, 210, 100, 0.75)); } }
-.sc__sub { flex-basis: 100%; margin: 0.15rem 0 0; font-size: 0.75rem; color: #c8c4e0; }
+.sc__sub { flex-basis: 100%; margin: 0.2rem 0 0; font-size: 0.9rem; color: #c8c4e0; }
 
 /* A janela recorta o mundo: no celular mostra o miolo da cena, maior. */
 /* Recorte vertical da arte (y 36 a 208): some o friso do teto e o primeiro plano do tapete. */
@@ -611,13 +611,49 @@
 .sc__voce { position: absolute; top: 0.4cqw; right: 0.4cqw; padding: 0 0.8cqw; border-radius: 99px; font-size: 1.8cqw; font-weight: 800; text-transform: uppercase; background: #2fbf6a; color: #04210f; }
 .sc__placa--voce { box-shadow: inset 0 0 0 0.5cqw #2fbf6a; }
 
-.sc__extras { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.3rem; margin: 0; padding: 0.35rem 0.5rem; list-style: none; background: #0b0a18; border-top: 1px solid rgba(232, 180, 64, 0.25); }
-.sc__extras li { display: flex; flex-wrap: nowrap; min-width: 0; align-items: center; justify-content: center; gap: 0.25rem; font-size: 0.8rem; color: #cfc8b4; }
-.sc__extras-pos { font-family: 'Cinzel', serif; font-weight: 900; color: #e8b440; }
-.sc__extra { display: contents; }
 .sc .rk-movimento--parado { display: none; }
 /* No celular as setas saem da faixa para caber numa linha, mas a descrição continua para leitores de tela. */
-@media (max-width: 640px) { .sc__extras .rk-movimento { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; } }
-.sc__chamada { margin: 0; padding: 0.45rem 0.8rem; text-align: center; font-size: 0.82rem; line-height: 1.35; background: linear-gradient(90deg, #0b0a18, #1c1436, #0b0a18); border-top: 1px solid rgba(232, 180, 64, 0.45); }
+.sc__chamada { margin: 0; padding: 0.7rem 1rem; text-align: center; font-size: 0.95rem; line-height: 1.35; background: linear-gradient(90deg, #0b0a18, #1c1436, #0b0a18); border-top: 1px solid rgba(232, 180, 64, 0.45); }
 .sc__chamada b { color: #f8da70; }
 @media (prefers-reduced-motion: reduce) { .sc *, .sc__titulo { animation: none !important; } .sc__fogo img:first-child { opacity: 1; } }
+
+/* ---------- Top 3 refeito (14/10/2026): cena + cartões legíveis, largura cheia ----------
+   Computador: a cena à esquerda e os três cartões à direita. Celular: a cena em cima e os cartões embaixo.
+   Nos pedestais fica só o número do lugar; nomes e totais em rem, nunca miúdos. */
+.sc__corpo { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: stretch; background: #070814; }
+.sc__lista { position: relative; z-index: 1; }
+@media (max-width: 860px) { .sc__corpo { grid-template-columns: minmax(0, 1fr); } }
+.sc__janela { min-width: 0; width: 100%; align-self: center; }
+.sc__placa { gap: 0; }
+.sc__numero { font-family: 'Cinzel', serif; font-weight: 900; font-size: 7cqw; line-height: 1; color: #f8da70; text-shadow: 0 0.4cqw 0 #3a2404, 0 0 2.4cqw rgba(255, 200, 80, 0.7); }
+.sc__placa--2 .sc__numero { font-size: 5.6cqw; color: #e6edf8; text-shadow: 0 0.4cqw 0 #1a2030, 0 0 2cqw rgba(200, 220, 255, 0.6); }
+.sc__placa--3 .sc__numero { font-size: 5cqw; color: #f2b483; text-shadow: 0 0.4cqw 0 #3a1a08, 0 0 2cqw rgba(240, 150, 90, 0.6); }
+.sc__placa .sc__lugar { font-size: 1.7cqw; margin-top: 0.6cqw; }
+.sc__lista { display: grid; align-content: center; gap: 0.6rem; margin: 0; padding: 1rem; list-style: none;
+  background: radial-gradient(120% 80% at 50% 0%, rgba(90, 70, 170, 0.25), transparent 70%), #0b0a18; border-left: 1px solid rgba(232, 180, 64, 0.25); }
+@media (max-width: 860px) { .sc__lista { border-left: 0; border-top: 1px solid rgba(232, 180, 64, 0.25); padding: 0.8rem; } }
+.sc__cartao { --m: #e8b440; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; padding: 0.7rem 0.9rem; border-radius: 12px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--m) 70%, transparent); }
+.sc__cartao--1 { --m: #f2c45a; padding-block: 0.95rem; background: linear-gradient(90deg, rgba(242, 196, 90, 0.2), rgba(242, 196, 90, 0.04)); box-shadow: inset 0 0 0 2px var(--m), 0 0 22px rgba(242, 196, 90, 0.25); }
+.sc__cartao--2 { --m: #c8d2e0; }
+.sc__cartao--3 { --m: #d08a4a; }
+.sc__cartao--voce { box-shadow: inset 0 0 0 2px #2fbf6a, 0 0 16px rgba(47, 191, 106, 0.3); }
+.sc__medalha { display: grid; place-items: center; width: 2.6rem; aspect-ratio: 1; }
+.sc__cartao--1 .sc__medalha { width: 3.2rem; }
+.sc__medalha img { width: 100%; height: auto; image-rendering: pixelated; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--m) 70%, transparent)); }
+.sc__quem { display: grid; gap: 0.15rem; min-width: 0; }
+.sc__pos { font-family: 'Cinzel', serif; font-weight: 900; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--m); }
+.sc__cartao .sc__nome { font-family: 'Cinzel', serif; font-weight: 900; font-size: 1.1rem; line-height: 1.15; color: #fffaf0; overflow-wrap: anywhere; text-shadow: none; }
+.sc__cartao--1 .sc__nome { font-size: 1.3rem; }
+.sc__cartao .sc__voce { position: static; display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.45rem; vertical-align: 0.15em; font-size: 0.65rem; border-radius: 99px; }
+.sc__selos { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; margin-top: 0.15rem; }
+.sc__selos .sc__extra { display: contents; }
+.sc__cartao .sc__total { display: grid; justify-items: end; font-size: 0.75rem; color: #cfc8b4; text-align: right; }
+.sc__cartao .sc__total b { display: block; font-family: var(--fonte-marca); font-weight: 800; font-size: 1.35rem; line-height: 1.05; color: #fff; }
+.sc__cartao--1 .sc__total b { font-size: 1.6rem; color: #ffe48e; }
+@media (max-width: 420px) {
+  .sc__cartao { gap: 0.55rem; padding: 0.6rem 0.7rem; }
+  .sc__medalha { width: 2.2rem; } .sc__cartao--1 .sc__medalha { width: 2.7rem; }
+  .sc__cartao .sc__nome { font-size: 1rem; } .sc__cartao--1 .sc__nome { font-size: 1.15rem; }
+  .sc__cartao .sc__total b { font-size: 1.2rem; } .sc__cartao--1 .sc__total b { font-size: 1.4rem; }
+}
