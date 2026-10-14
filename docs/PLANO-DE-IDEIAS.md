@@ -37,7 +37,7 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 14. [x] Efeitos de cura em pixel art (corações subindo) também na Batalha, não só no veneno.
 15. [x] Golpe final: o vilão derrubado some num "puf" de fumaça em pixel art, com estrelas, maior no chefe.
 16. [ ] Número de dano em fonte pixel (bitmap própria), com quique e contorno.
-17. [ ] Som próprio para cada golpe novo: espada gigante, mandíbula, pedregulho e sopro.
+17. [x] Som próprio para cada golpe novo (14/10): `espada-gigante`, `mandibula`, `pedregulho` e o `sopro` com crepitar, em `efeitos/sons.ts`, tocados por `ataques.ts` e pela Arena.
 18. [ ] Variante do pedregulho por golem: cristal, obsidiana, rubro e cimento.
 
 ## B. Superpoderes dos vilões (mecânica)

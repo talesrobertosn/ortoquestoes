@@ -32,7 +32,7 @@ Leia nesta ordem:
   - a escolha "entrar com ou sem som" agora é perguntada uma vez só por aparelho. Fica guardada em `flashcards:som-escolhido`, nas chaves globais de `estado/armazenamento.ts`.
 - **O Tales confirmou:** o som funciona no celular e a parte 19 do SQL já foi colada no Supabase.
 - **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). O goblin, o esqueleto, o ent (Guardião da Fise), o mímico, a aranha e o Cogumelo da Necrose (monstro novo) já estão prontos (`scripts/sprites/goblin.py`, `esqueleto.py`, `ent.py`, `mimico.py`, `aranha.py` e `cogumelo.py`). **Os monstros estão em pausa por pedido do Tales** ("vamos continuar com mais monstrinhos futuramente"); só retome quando ele pedir. Depois, pela ordem do plano:
-  - sons próprios dos golpes novos (ideia 17);
+  - ~~sons próprios dos golpes novos (ideia 17)~~: feitos;
   - revisão dos botões (ideia 61);
   - cenários pintados que faltam (ideia 51).
 

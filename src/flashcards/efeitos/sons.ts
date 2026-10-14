@@ -25,6 +25,7 @@ export type Som =
   | 'combo' | 'derrota-inimigo' | 'vitoria-chefe' | 'derrota' | 'poder' | 'recompensa' | 'pista'
   | 'fase' | 'furia' | 'lendario' | 'imortal' | 'veneno' | 'evolucao' | 'acerto'
   | 'raio' | 'moedas' | 'queimadura' | 'divide' | 'roubo' | 'ajuda' | 'porta' | 'sino' | 'sopro' | 'renascer' | 'compra-loja'
+  | 'espada-gigante' | 'pedregulho' | 'mandibula'
   | 'jingle-vitoria' | 'jingle-derrota' | 'jingle-tesouro' | 'jingle-patamar' | 'jingle-topo' | 'jingle-chefe'
 
 export type Ambiente = 'campo' | 'masmorra' | 'salao' | 'biblioteca' | 'covil' | 'torre'
@@ -354,7 +355,41 @@ export function tocar(som: Som, forca = 1, t?: Timbre) {
     case 'porta': ruido(0, 0.7, 0.2, 400, 'bandpass', 900, 6); nota(varia(110), 0, 0.6, 'sawtooth', 0.05, 160); nota(65, 0.45, 0.5, 'sine', 0.2, 40); ruido(0.45, 0.3, 0.25, 900, 'lowpass', 120); break
     case 'sino': [1568, 2093].forEach((f, i) => { nota(f, i * 0.12, 1.1, 'sine', 0.08); nota(f * 2.76, i * 0.12, 0.5, 'sine', 0.02) }); break
     case 'compra-loja': tocar('moedas'); [784, 1047].forEach((f, i) => nota(f, 0.15 + i * 0.08, 0.3, 'triangle', 0.08)); break
-    case 'sopro': ruido(0, 1, 0.5, 600, 'bandpass', 2400, 0.7); ruido(0, 1, 0.25, 140, 'lowpass', 90); nota(varia(48), 0, 1, 'sawtooth', 0.14, 70); abaixarMusica(0.25, 1200); break
+    case 'sopro':
+      // rugido grave, a labareda que avança e o crepitar do fogo por cima
+      ruido(0, 1, 0.5, 600, 'bandpass', 2400, 0.7); ruido(0, 1, 0.25, 140, 'lowpass', 90); nota(varia(48), 0, 1, 'sawtooth', 0.14, 70)
+      nota(varia(73), 0.02, 0.9, 'sawtooth', 0.07, 98)
+      for (let i = 0; i < 9; i++) ruido(0.1 + i * 0.09 + Math.random() * 0.04, 0.035, 0.12, varia(5200, 0.25), 'highpass', undefined, 0.8, false)
+      abaixarMusica(0.25, 1200)
+      break
+    case 'espada-gigante':
+      // a lâmina enorme corta o ar (varredura que sobe), canta o aço e bate com peso no fim
+      ruido(0, 0.36, 0.34, 420, 'bandpass', 5200, 1.1)
+      nota(varia(392, 0.02), 0, 0.36, 'sawtooth', 0.04, 1568)
+      ;[1760, 2637, 3520].forEach((f, i) => nota(varia(f, 0.02), 0.2 + i * 0.03, 0.9 - i * 0.15, 'triangle', 0.05))
+      ruido(0.34, 0.06, 0.5, 4200, 'highpass', undefined, 0.7, false)
+      nota(varia(58), 0.34, 0.7, 'sine', 0.55, 30); ruido(0.34, 0.5, 0.32, 900, 'lowpass', 140)
+      ;[1047, 1568, 2093].forEach((f, i) => nota(f, 0.4 + i * 0.05, 0.6, 'sine', 0.04))
+      abaixarMusica(0.2, 1100)
+      break
+    case 'pedregulho':
+      // o assobio da pedra caindo do alto, o baque que racha o chão e o cascalho
+      nota(varia(1500, 0.04), 0, 0.42, 'sine', 0.05, 320); ruido(0, 0.42, 0.12, 900, 'bandpass', 300, 3)
+      ruido(0.42, 0.07, 0.55, 3000, 'highpass', undefined, 0.7, false)
+      nota(varia(46), 0.42, 0.9, 'sine', 0.7, 26); nota(varia(92), 0.42, 0.4, 'square', 0.06, 40)
+      ruido(0.42, 0.9, 0.5, 1300, 'lowpass', 110)
+      for (let i = 0; i < 7; i++) ruido(0.5 + i * 0.06 + Math.random() * 0.05, 0.05, 0.13, varia(2600, 0.35), 'bandpass', undefined, 3, false)
+      abaixarMusica(0.2, 1300)
+      break
+    case 'mandibula':
+      // a tampa range ao abrir, desce e fecha com estalo de dentes sobre a tela
+      nota(varia(96), 0, 0.16, 'sawtooth', 0.06, 70); ruido(0, 0.16, 0.12, 700, 'bandpass', 400, 6)
+      ruido(0.16, 0.08, 0.6, 1100, 'bandpass', undefined, 1.6, false)
+      nota(varia(70), 0.16, 0.45, 'sine', 0.5, 34); ruido(0.16, 0.35, 0.3, 600, 'lowpass', 120)
+      ;[3100, 2700, 3400, 2500].forEach((f, i) => nota(varia(f, 0.05), 0.17 + i * 0.018, 0.08, 'square', 0.03))
+      ;[1760, 2349].forEach((f, i) => nota(varia(f, 0.03), 0.2 + i * 0.02, 0.4, 'triangle', 0.035))
+      abaixarMusica(0.25, 900)
+      break
     case 'renascer': ruido(0, 1.4, 0.2, 300, 'lowpass', 8000); [262, 392, 523, 784, 1047, 1568].forEach((f, i) => nota(f, i * 0.11, 1.1, 'triangle', 0.08)); nota(65, 0, 2, 'sine', 0.2); abaixarMusica(0.15, 2200); break
     case 'jingle-vitoria': fanfarra(67, 132, [[0, 0, 0.5], [4, 0.5, 0.5], [7, 1, 0.5], [12, 1.5, 1.5], [11, 3, 0.5], [12, 3.5, 2]], [[0, 4, 7], [5, 9, 12], [7, 11, 14], [0, 4, 7]], 'triangle'); break
     case 'jingle-chefe': fanfarra(62, 120, [[0, 0, 0.75], [7, 0.75, 0.25], [12, 1, 1], [10, 2, 0.5], [12, 2.5, 0.5], [14, 3, 0.5], [16, 3.5, 0.5], [19, 4, 3]], [[0, 4, 7], [-2, 2, 5], [5, 9, 12], [7, 11, 14], [0, 4, 7]], 'sawtooth', true); break

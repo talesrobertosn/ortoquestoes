@@ -454,7 +454,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             // crítico: a espada gigante atravessa a tela na diagonal e rasga o ar
             animar(refMesa.current?.closest('.fc-batalha'), 'fc-pausa-impacto', 140)
             if (!reduzido) definirLamina((n) => n + 1)
-            tocar('disparo', 1.3)
+            tocar('espada-gigante')
             await P.espadaGigante(para, Math.atan2(Math.min(260, window.innerHeight * 0.3), Math.min(600, window.innerWidth * 0.5)))
           } else if (P) await P.voar(`lamina-${tom}`, topoCarta, para, { duracao: forte ? 0.32 : 0.28, curva: 0.18, escala: px * (forte ? 1.5 : 1.2), brilho: cor, rastro: cor })
           P?.efeito(`corte-${tom}`, para, { escala: px * (forte ? 1.5 : 1.1), espelhar: combo % 2 === 0 })
