@@ -1,4 +1,5 @@
 import { EstacoesBiblioteca } from './EstacoesBiblioteca'
+import { LeitoresBiblioteca } from './LeitoresBiblioteca'
 import { memo, useEffect, useRef, useState } from 'react'
 import { climaDoCiclo, INTERVALO_CEU } from '../efeitos/cicloExterior'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
@@ -184,6 +185,7 @@ export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: cl
       <canvas ref={base} className="fc-cena__base" />
       <canvas ref={ambiente} className="fc-cena__ambiente" />
       {cena === 'biblioteca' && <EstacoesBiblioteca reduzido={reduzido} />}
+      {cena === 'biblioteca' && <LeitoresBiblioteca reduzido={reduzido} />}
       <span className="fc-cena__nevoa" />
     </div>
   )
