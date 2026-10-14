@@ -435,3 +435,14 @@
 @media (max-width: 40rem) {
   .adm-usuario__numeros { grid-column: 1 / -1; }
 }
+
+/* Opiniões do beta dos flashcards (14/10/2026) */
+.adm-opinioes__filtro { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.adm-opinioes__filtro small { opacity: .7; margin-left: .25rem; }
+.adm-opinioes__on { background: var(--primaria-suave, #e3f1ec); border-color: currentColor; }
+.adm-opinioes { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.adm-opiniao { padding: 0.9rem 1rem; border: var(--borda); border-radius: var(--raio, 12px); background: var(--fundo, transparent); display: grid; gap: 0.35rem; min-width: 0; }
+.adm-opiniao header { display: flex; flex-wrap: wrap; gap: 0.25rem 0.9rem; align-items: baseline; font-size: 0.9rem; color: var(--texto-suave, #5b6866); }
+.adm-opiniao header strong { color: var(--texto, inherit); font-size: 1rem; }
+.adm-opiniao p { margin: 0; overflow-wrap: anywhere; }
+.adm-opiniao__notas { font-size: 0.9rem; color: var(--texto-suave, #5b6866); }

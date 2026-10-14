@@ -89,27 +89,22 @@ export function CentralFlashcards() {
 
   return (
     <article className="cf empilha-2">
+      <Abas atual="central" />
       <section className="cf-heroi">
         <picture className="cf-heroi__arte">
           <img src={recurso('flashcards/promo/capa-larga.png')} alt="" width={520} height={330} decoding="async" />
         </picture>
         <div className="cf-heroi__texto">
           <p className="cf-selo"><span className="cf-beta">Beta público</span> Flashcards</p>
-          <h1>Um novo jeito<br />de aprender.</h1>
-          <p>Flashcards tirados das questões comentadas das provas reais, com revisão espaçada: o que você erra volta antes, o que você sabe espaça. Responda, veja o verso e acompanhe a sua evolução por assunto.</p>
+          <h1>Treine flashcards<br />de Ortopedia.</h1>
+          <p>Por área, tirados das questões comentadas das provas reais. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
           <div className="cf-heroi__botoes">
-            <a className="botao botao--ouro botao--grande" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={18} /> Explorar o Torneio</a>
-            <a className="botao botao--principal" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Treinar na Biblioteca</a>
+            <a className="botao botao--ouro botao--grande" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Treinar flashcards</a>
+            <a className="botao botao--principal" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={18} /> Jogar a Cripta</a>
           </div>
           {LIMITES_HABILITADOS && <p className="cf-nota">Conta grátis: 10 flashcards a cada 24 horas. Assinante: sem limite.</p>}
         </div>
       </section>
-
-      <aside className="cf-aviso" role="note">
-        <Icone nome="correio" tamanho={22} />
-        <p><strong>Estamos construindo os próximos flashcards com você.</strong><br />O beta está aberto. Conte o que gostou e o que podemos melhorar.</p>
-        <button type="button" className="botao botao--fantasma" onClick={() => definirOpiniao('central')}>Enviar opinião</button>
-      </aside>
 
       {convite && (
         <aside className="cf-convite" role="note">
@@ -121,6 +116,7 @@ export function CentralFlashcards() {
         </aside>
       )}
 
+      <div className="cf-painel">
       <section className="cf-hoje" aria-labelledby="cf-hoje-titulo">
         <div className="cf-hoje__cabeca">
           <h2 id="cf-hoje-titulo"><Icone nome="reiniciar" tamanho={20} /> Revisões de hoje</h2>
@@ -135,12 +131,9 @@ export function CentralFlashcards() {
           <AtalhoEstudo destino={estudar('novos', 20)} rotulo="Nunca estudados" numero={novos} icone="estrela" desligado={novos === 0} />
         </div>
         {areas.length > 0 && <PorAssunto areas={areas} />}
-        {calc && plano && calc.metaHoje > 0 && (
-          <a className="botao botao--principal cf-hoje__plano" href={href(estudar('plano', calc.metaHoje, plano.areas))}>
-            Começar a sessão de hoje do cronograma ({calc.metaHoje})
-          </a>
-        )}
       </section>
+      <CartaoCronograma plano={plano} calc={calc} />
+      </div>
 
       <section aria-labelledby="cf-passos-titulo">
         <h2 id="cf-passos-titulo" className="cf-titulo">Como funciona</h2>
@@ -159,14 +152,53 @@ export function CentralFlashcards() {
           <CartaoModo arte="progresso" titulo="Meu desempenho" texto={`${contagem.estudados.toLocaleString('pt-BR')} flashcards únicos estudados neste aparelho e na sua conta.`} destino="/flashcards/desempenho" acao="Ver desempenho" />
         </div>
         <ul className="cf-links">
-          <li><a href={href('/flashcards/cronograma')}><Icone nome="calendario" tamanho={18} /><span><strong>Meu cronograma</strong><small>{plano ? `Até ${formatarData(plano.data)}` : 'Data-alvo e ritmo diário'}</small></span></a></li>
           <li><a href={href('/ranking?aba=flashcards')}><Icone nome="trofeu" tamanho={18} /><span><strong>Ranking dos flashcards</strong><small>Uma jornada · um ranking</small></span></a></li>
-          <li><button type="button" onClick={() => definirOpiniao('central')}><Icone nome="correio" tamanho={18} /><span><strong>Enviar opinião</strong><small>Som, visual, desempenho ou conteúdo</small></span></button></li>
         </ul>
       </section>
 
+      <aside className="cf-aviso" role="note">
+        <Icone nome="correio" tamanho={22} />
+        <p><strong>Estamos construindo os próximos flashcards com você.</strong><br />O beta está aberto. Conte o que gostou e o que podemos melhorar: a sua opinião chega direto ao painel da equipe.</p>
+        <button type="button" className="botao botao--principal" onClick={() => definirOpiniao('central')}>Enviar opinião</button>
+      </aside>
+
       {opiniao && <JanelaOpiniao origem={opiniao} aoFechar={() => definirOpiniao(null)} />}
     </article>
+  )
+}
+
+/** Cronograma em destaque na central (pedido do Tales, 14/10/2026: "que a pessoa consiga ver o cronograma com mais facilidade"). */
+function CartaoCronograma({ plano, calc }: { plano: PlanoFlashcards | null; calc: ReturnType<typeof calcularPlano> | null }) {
+  if (!plano) return (
+    <section className="cf-crono cf-crono--vazio" aria-labelledby="cf-crono-titulo">
+      <h2 id="cf-crono-titulo"><Icone nome="calendario" tamanho={20} /> Meu cronograma</h2>
+      <p>Diga a data da prova, os assuntos e quantos flashcards por dia. A meta de cada dia junta as revisões que venceram e os flashcards novos.</p>
+      <a className="botao botao--principal" href={href('/flashcards/cronograma')}>Montar meu cronograma</a>
+    </section>
+  )
+  const feito = calc ? Math.min(calc.feitosHoje, calc.metaHoje || calc.feitosHoje) : 0
+  const meta = calc?.metaHoje ?? 0
+  return (
+    <section className="cf-crono" aria-labelledby="cf-crono-titulo">
+      <h2 id="cf-crono-titulo"><Icone nome="calendario" tamanho={20} /> Meu cronograma</h2>
+      <p className="cf-crono__data">Até <b>{formatarData(plano.data)}</b>{calc && calc.diasRestantes > 0 ? ` · faltam ${calc.diasRestantes} ${calc.diasRestantes === 1 ? 'dia' : 'dias'}` : ''}</p>
+      {calc && calc.situacao === 'concluido' ? <p>Tudo em dia: nada novo nem revisão pendente nos assuntos do cronograma.</p>
+        : calc && calc.situacao === 'data-passada' ? <p>A data-alvo já passou. Escolha uma nova data no cronograma.</p>
+        : calc && !calc.ehDiaDeEstudo && !meta ? <p>Hoje não é dia de estudo no seu cronograma.</p>
+        : (
+          <>
+            <div className="cf-crono__meta" role="meter" aria-label="Meta de hoje" aria-valuemin={0} aria-valuemax={Math.max(meta, 1)} aria-valuenow={feito}>
+              <span>Meta de hoje</span><b className="numerico">{feito}/{meta}</b>
+              <i><em style={{ width: `${meta ? Math.round((100 * feito) / meta) : 0}%` }} /></i>
+            </div>
+            {calc && <p className="cf-nota">{calc.revisoesHoje} {calc.revisoesHoje === 1 ? 'revisão' : 'revisões'} + {calc.novosPorDia} {calc.novosPorDia === 1 ? 'novo' : 'novos'} por dia{calc.situacao === 'acima-do-ritmo' ? ' · acima do seu ritmo: considere aumentar o ritmo diário' : ''}</p>}
+          </>
+        )}
+      <div className="cf-crono__botoes">
+        {calc && meta > feito && <a className="botao botao--principal" href={href(estudar('plano', meta - feito, plano.areas))}>Fazer a sessão de hoje ({meta - feito})</a>}
+        <a className="botao botao--fantasma" href={href('/flashcards/cronograma')}>Ajustar cronograma</a>
+      </div>
+    </section>
   )
 }
 

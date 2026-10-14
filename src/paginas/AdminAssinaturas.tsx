@@ -9,6 +9,7 @@ import { AdminCrescimento } from '../componentes/admin/AdminCrescimento'
 import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
 import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
 import { AdminFinanceiro } from '../componentes/admin/AdminFinanceiro'
+import { AdminOpinioesFlashcards } from '../componentes/admin/AdminOpinioesFlashcards'
 import { contaDeTeste } from '../componentes/admin/contasTeste'
 import { meioDe } from '../componentes/admin/receita'
 import { usarLidos } from '../componentes/admin/lidos'
@@ -54,9 +55,9 @@ interface Resumo {
   assinantes_vigentes: number
 }
 
-type Aba = 'geral' | 'usuarios' | 'conteudo' | 'questoes' | 'crescimento' | 'financeiro' | 'assinaturas' | 'pagamentos' | 'configuracoes'
+type Aba = 'geral' | 'usuarios' | 'conteudo' | 'questoes' | 'opinioes' | 'crescimento' | 'financeiro' | 'assinaturas' | 'pagamentos' | 'configuracoes'
 const ABAS: Array<[Aba, string, NomeIcone]> = [
-  ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['conteudo', 'Conteúdo', 'livro'], ['questoes', 'Editar questões', 'livro'],
+  ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['conteudo', 'Conteúdo', 'livro'], ['questoes', 'Editar questões', 'livro'], ['opinioes', 'Opiniões dos flashcards', 'correio'],
   ['crescimento', 'Crescimento', 'raio'], ['financeiro', 'Financeiro', 'grafico'], ['assinaturas', 'Assinaturas', 'estrela'], ['pagamentos', 'Pagamentos', 'relogio'],
   ['configuracoes', 'Ajustes', 'filtro'],
 ]
@@ -165,6 +166,7 @@ export function AdminAssinaturas() {
       {aba === 'crescimento' && <AdminCrescimento usuarios={usuariosReais} assinaturas={reais ?? []} />}
       {aba === 'configuracoes' && <AdminConfiguracoes />}
       {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} />}
+      {aba === 'opinioes' && <AdminOpinioesFlashcards />}
       {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}
       <div hidden={aba !== 'conteudo'}><AdminConteudo vistaInicial={inicial.vista} aoMudarPendencias={definirPendenciasConteudo} aoEditar={editarQuestao} /></div>
     </>}
