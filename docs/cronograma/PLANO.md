@@ -108,7 +108,7 @@ Linguagem visual fixa:
   indo, blocos recolhidos, tour, resumo da semana, calendário .ics). Cores por área em `src/dados/coresAreas.ts`.
 - Montagem em 4 passos em `PlanoEstudo.tsx`, com o resumo ao vivo (barra fixa no celular) e a diferença de cada escolha.
 - Opções novas (dia leve, semana difícil, começar por, dominadas, segunda prova) na coluna `opcoes` de
-  `planos_estudo`: parte 20 do SQL (`supabase/colar-no-painel/sql-202610141300-parte20.sql`). Sem o SQL, ficam no aparelho.
+  `planos_estudo`: parte 20 do SQL (`supabase/colar-no-painel/sql-202610141300-parte20.sql`), **aplicada pelo Tales em 14/10/2026**. Antes disso, ficavam só no aparelho; o código mantém essa reserva para bancos sem a coluna.
 - Sessão: faixa da meta de hoje na cor da área; fim de sessão do cronograma com o que falta hoje e amanhã.
 - Modo demonstração só em desenvolvimento: `#/cronograma?demo=1`.
 
