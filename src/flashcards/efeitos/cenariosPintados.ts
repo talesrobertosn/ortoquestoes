@@ -13,6 +13,9 @@
  *   forja       Forja dos Implantes (`scripts/cenarios/forja.py`): fornalha com coifa, bigorna com a placa em brasa, ferramentas e implantes prontos
  *   coliseu     Coliseu da Consolidação (`scripts/cenarios/coliseu.py`): arquibancada em arcos ao entardecer, portão com grade, tochas e areia
  *   salao       Salão do Trono (`scripts/cenarios/salao.py`), onde moram os chefes: colunas, vitral e tapete vermelho
+ *   treino      Pátio dos Estandartes (`scripts/cenarios/treino.py`): alvo, galeria de madeira, flores e luz de manhã
+ *   arquivo     Arquivo dos Mapas (`scripts/cenarios/arquivo.py`): estantes, plantas geométricas, janela e lanternas
+ *   torre       Terraço do Horizonte (`scripts/cenarios/torre.py`): nuvens, montanhas, parapeito e estandartes ao entardecer
  *
  * Diferente das outras cenas, que são pintadas em código a cada tamanho, estas
  * são pintadas OFFLINE com `scripts/cenarios/pintor.py` (ruído, voronoi,
@@ -34,7 +37,7 @@ type Camada = (typeof CAMADAS)[number]
 export type ImagensCenario = Record<Formato, Record<Camada, HTMLImageElement>>
 
 /** Cena do jogo → nome do arquivo pintado. */
-export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio', catacumba: 'catacumba', templo: 'templo', passarela: 'passarela', forja: 'forja', coliseu: 'coliseu' }
+export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio', catacumba: 'catacumba', templo: 'templo', passarela: 'passarela', forja: 'forja', coliseu: 'coliseu', treino: 'treino', arquivo: 'arquivo', torre: 'torre' }
 
 const promessas = new Map<string, Promise<ImagensCenario | null>>()
 const prontas = new Map<string, ImagensCenario | null>()
