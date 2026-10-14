@@ -6,10 +6,14 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Início mais familiar — diretriz de 14/10/2026
+
+Tales pediu priorizar os acertos pessoais para diminuir frustração: **acertadas por você → maior acerto da turma → erradas por você → novas → mistura**. Até oito por grupo, grupos vazios pulados. Novas partidas; partidas salvas intactas. Testes de seleção, motor e interface nos três formatos. [Relatório](INICIO-FAMILIAR-14-10.md). Sem SQL. Paisagens #261 mescladas, deploy 38654687687 a conferir; não afirmar publicação do início antes de seu próprio deploy.
+
+
 ## Paisagens — continuidade de 14/10/2026
 
 Música #258 e estações #259 publicadas. Ambiente vivo #260 publicado: deploy 38653549325 concluído com sucesso. O bloco atual conclui 43–48, com seis pinturas integradas às paradas existentes e sem mudar o motor. [Relatório](PAISAGENS-14-10.md). Precisa do próprio PR e deploy. Sem SQL. Próximo: aparência e auditoria dos dados existentes.
-
 
 ## Ambiente vivo — continuidade de 14/10/2026
 

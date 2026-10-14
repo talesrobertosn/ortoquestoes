@@ -1,8 +1,8 @@
 /**
  * Jornada única (diretriz do Tales, 13/10/2026): a Cripta começa fácil e fica
  * mais difícil, sempre nesta ordem de grupos:
- *   1. questões de maior acerto da turma;
- *   2. questões que a pessoa já fez e acertou;
+ *   1. questões que a pessoa já fez e acertou (diretriz de 14/10/2026);
+ *   2. questões de maior acerto da turma;
  *   3. questões que a pessoa já fez e errou;
  *   4. questões novas (que a pessoa nunca fez nem viu em flashcard);
  * e só depois a mistura livre. Dentro de cada grupo o sorteio é uniforme
@@ -38,7 +38,7 @@ export interface ContextoSelecao {
 
 /** Flashcards sorteados em cada grupo antes de passar ao seguinte. */
 export const POR_GRUPO = 8
-export const GRUPOS_DA_JORNADA = ['maior acerto da turma', 'acertadas por você', 'erradas por você', 'novas'] as const
+export const GRUPOS_DA_JORNADA = ['acertadas por você', 'maior acerto da turma', 'erradas por você', 'novas'] as const
 
 const PESO_RARIDADE: Record<Raridade, number> = { lendaria: 4, epica: 2.8, rara: 1.9, comum: 1.3 }
 
@@ -78,8 +78,8 @@ export function montarBaralho(pool: Flashcard[], ctx: ContextoSelecao, semente: 
   const usados = new Set<string>()
   const saida: Flashcard[] = []
   const grupos = [
-    (c: Flashcard) => { const t=ctx.turma?.get(c.questao); return ctx.faixas?.get(c.questao) === 1 || (!!t && t.respondentes >= 3 && t.acerto >= corte) },
     (c: Flashcard) => ctx.questoes?.[c.questao]?.c === true,
+    (c: Flashcard) => { const t=ctx.turma?.get(c.questao); return ctx.faixas?.get(c.questao) === 1 || (!!t && t.respondentes >= 3 && t.acerto >= corte) },
     (c: Flashcard) => ctx.questoes?.[c.questao]?.c === false,
     (c: Flashcard) => !ctx.questoes?.[c.questao] && !ctx.registros[c.id],
   ]
