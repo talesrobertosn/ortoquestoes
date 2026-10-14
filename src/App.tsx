@@ -240,13 +240,18 @@ export function App() {
   const sobreposto = popup ? paginaDaRota(rota) : null
 
   // Abrir o pop-up e fechá-lo de volta para a mesma página não mexe na rolagem; ir para outra página começa do topo.
+  // Mudar só a consulta da mesma página (os filtros do Treinar vão para o endereço) também não mexe:
+  // no celular, cada caixa marcada levava a página de volta ao topo (relato do Tales, 14/10/2026).
   const jogoAntes = useRef(false)
   const fundoAoAbrir = useRef<string | null>(null)
+  const caminhoAntes = useRef<string | null>(null)
   useEffect(() => {
     if (popup && !jogoAntes.current) fundoAoAbrir.current = rotaDoFundo()
-    if (!popup && (!jogoAntes.current || textoRota !== fundoAoAbrir.current)) window.scrollTo({ top: 0, behavior: 'auto' })
+    const outraPagina = jogoAntes.current ? textoRota !== fundoAoAbrir.current : rota.caminho !== caminhoAntes.current
+    if (!popup && outraPagina) window.scrollTo({ top: 0, behavior: 'auto' })
+    if (!popup) caminhoAntes.current = rota.caminho
     jogoAntes.current = popup
-  }, [textoRota, popup])
+  }, [textoRota, popup, rota.caminho])
   const [primeiroFundo] = fundo.segmentos
 
   const estreita = ['sessao', 'questao'].includes(primeiroFundo ?? '')
