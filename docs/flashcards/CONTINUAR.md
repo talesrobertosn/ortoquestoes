@@ -6,6 +6,12 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Música e clima — continuidade de 14/10/2026
+
+O reparo #257 foi mesclado e o deploy `38648064258` terminou com sucesso, restabelecendo a publicação após #256. O tutorial já integra o novo Menu e não tem condição de escolha de som.
+
+O bloco seguinte é música (38, 75, 82), registrado em [MUSICA-CLIMA-14-10.md](MUSICA-CLIMA-14-10.md): mix por clima, coral sob demanda e sincronizado, trilha acústica Passeio ao Sol e emenda da faixa sala. Preserve a escala 2 de volume, mestre no fim da cadeia e controles do Menu. Não há SQL.
+
 ## Integração com o Menu do jogo — 14/10/2026
 
 A atualização #256 retirou a escolha de som da Entrada. O tutorial ainda referenciava `escolherSom`, removido nessa atualização, e o deploy falhou com TS2304. A correção remove apenas essa condição e atualiza os scripts de tutorial/benchmark para os controles atuais.

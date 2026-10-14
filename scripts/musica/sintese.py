@@ -137,6 +137,28 @@ def harpa(midi, dur=2.5, vel=0.7):
     return y * vel * 0.9
 
 
+def violao(midi, dur=2.5, vel=0.6):
+    """Corda de nylon: parciais que decaem e um toque de ruído da palheta."""
+    f = hz(midi)
+    t = tempo(int((dur + 0.4) * SR))
+    y = np.zeros_like(t)
+    for h in range(1, 13):
+        y += np.sin(2 * np.pi * f * h * t) * np.exp(-t * (1.6 + h * 0.48)) / h ** 1.45
+    corpo = np.sin(2 * np.pi * f * t) * np.exp(-t * 2.0) * 0.18
+    toque = filtrar(rng.normal(0, 1, len(t)), 3400) * np.exp(-t * 70) * 0.018
+    ataque = 1 - np.exp(-t * 700)
+    return (y + corpo + toque) * ataque * vel * 0.6
+
+
+def fechar_laco(est, sr=SR, segundos=0.014):
+    """Fecha a última janela suavemente no primeiro valor, sem mudar a duração."""
+    out = est.copy()
+    n = min(len(out), max(2, int(sr * segundos)))
+    peso = (1 - np.cos(np.linspace(0, np.pi, n))) / 2
+    out[-n:] = out[-n:] * (1-peso[:, None]) + out[0] * peso[:, None]
+    return out
+
+
 def piano(midi, dur=2.0, vel=0.7):
     f = hz(midi)
     n = int((dur + 1.2) * SR)

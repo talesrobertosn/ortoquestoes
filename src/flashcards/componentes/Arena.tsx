@@ -18,7 +18,7 @@ import { Palco, centro, pixelVfx, precarregarVfx } from '../efeitos/palco'
 import { ambienteBiblioteca } from '../biblioteca/sessao'
 import { ClimaEstudo, type Humor } from './ClimaEstudo'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
-import { configurarSom, ESCALA_VOLUME, VOLUME_INICIAL, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarClimaBiblioteca, configurarSom, ESCALA_VOLUME, VOLUME_INICIAL, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
@@ -278,6 +278,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     instalarDestrave()
   }, [])
   useEffect(() => { tocarAmbiente(modo === 'estudo' ? ambienteBiblioteca(leituraTranquila, humorEstudo?.tipo) : cenarioVisivel) }, [modo, cenarioVisivel, leituraTranquila, humorEstudo?.tipo])
+  useEffect(() => { configurarClimaBiblioteca(modo === 'estudo' ? humorEstudo?.tipo ?? 'calmo' : null, modo === 'estudo' && leituraTranquila); return () => configurarClimaBiblioteca(null) }, [modo, humorEstudo?.tipo, leituraTranquila])
   const adversarioEmCena = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo
   useEffect(() => { precarregarVfx(modo === 'estudo' ? VFX_BIBLIOTECA : vfxPorAndar(adversarioEmCena.sprite, adversarioEmCena.variante)) }, [modo, adversarioEmCena.sprite, adversarioEmCena.variante])
   const chefeEmCena = modo === 'batalha' && adversarioEmCena.chefe

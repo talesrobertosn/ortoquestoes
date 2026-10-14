@@ -1,3 +1,4 @@
+import { misturaBiblioteca, faseDaFaixa, suavizarEmenda } from './mixBiblioteca'
 import { carregarAudioArquivo } from './audioArquivo'
 /**
  * Identidade sonora do Torneio, sintetizada na hora com Web Audio (nenhum
@@ -69,8 +70,42 @@ let volumeGeral = volumeSalvo()
 let volEfeitos = 0.7, volAmbiente = 0.35, volMusica = 0.45
 let ambienteAtual: { nome: Ambiente; parar: () => void } | null = null
 let ambientePedido: Ambiente | null = null
-let musicaAtual: { nome: Musica; parar: () => void; procedural?: boolean } | null = null
+let musicaAtual: { nome: Musica; parar: () => void; procedural?: boolean; inicio?: number; duracao?: number } | null = null
 let musicaPedida: Musica | null = null
+let filtroMusica: BiquadFilterNode
+let climaMusical: string | null = null, leituraMusicalTranquila = false
+let coralAtual: { fonte: AudioBufferSourceNode; ganho: GainNode; inicio: number } | null = null
+
+function pararCoral() {
+  const c = coralAtual; coralAtual = null
+  if (!c || !ctx) return
+  c.ganho.gain.setTargetAtTime(.0001, ctx.currentTime, .25)
+  c.fonte.onended = () => c.ganho.disconnect()
+  c.fonte.stop(ctx.currentTime + 1.5)
+}
+
+function aplicarClimaMusical() {
+  if (!ctx || !filtroMusica) return
+  const mix = misturaBiblioteca(climaMusical, leituraMusicalTranquila)
+  filtroMusica.frequency.setTargetAtTime(mix.corte, ctx.currentTime, .45)
+  if (!mix.coral || musicaAtual?.nome !== 'biblioteca' || typeof musicaAtual.inicio !== 'number') { pararCoral(); return }
+  if (coralAtual?.inicio === musicaAtual.inicio) return
+  void carregarFaixa('biblioteca-coral').then(b => {
+    if (!b || !ctx || !misturaBiblioteca(climaMusical, leituraMusicalTranquila).coral || musicaAtual?.nome !== 'biblioteca' || typeof musicaAtual.inicio !== 'number' || coralAtual?.inicio === musicaAtual.inicio) return
+    pararCoral()
+    const duracao = Math.min(b.duration, musicaAtual.duracao ?? b.duration)
+    const fonte = ctx.createBufferSource(), ganho = ctx.createGain()
+    fonte.buffer = b; fonte.loop = true; fonte.loopEnd = duracao
+    ganho.gain.setValueAtTime(.0001, ctx.currentTime); ganho.gain.exponentialRampToValueAtTime(.16, ctx.currentTime + 1.4)
+    fonte.connect(ganho); ganho.connect(musica)
+    fonte.start(ctx.currentTime, faseDaFaixa(musicaAtual.inicio, ctx.currentTime, duracao))
+    coralAtual = { fonte, ganho, inicio: musicaAtual.inicio }
+  })
+}
+
+export function configurarClimaBiblioteca(clima: string | null, tranquilo = false) {
+  climaMusical = clima; leituraMusicalTranquila = tranquilo; aplicarClimaMusical()
+}
 
 /** Ganho geral das vozes: as receitas foram afinadas baixas, a saída compensa. */
 const G = 1.7
@@ -91,7 +126,7 @@ function criar() {
   saida.connect(cola); cola.connect(ganhoSaida); ganhoSaida.connect(limitador); limitador.connect(mestre); mestre.connect(ctx.destination)
   efeitos = ctx.createGain(); efeitos.connect(saida)
   ambiente = ctx.createGain(); ambiente.connect(saida)
-  musica = ctx.createGain(); musica.connect(saida)
+  musica = ctx.createGain(); filtroMusica = ctx.createBiquadFilter(); filtroMusica.type = 'lowpass'; filtroMusica.Q.value = .5; musica.connect(filtroMusica); filtroMusica.connect(saida)
   // reverberação de sala de pedra (resposta gerada por ruído decaindo)
   reverb = ctx.createConvolver()
   const dur = 1.4, n = Math.floor(ctx.sampleRate * dur)
@@ -101,6 +136,7 @@ function criar() {
   envio = ctx.createGain(); envio.gain.value = 0.24
   envio.connect(reverb); reverb.connect(efeitos)
   aplicarVolumes()
+  aplicarClimaMusical()
 }
 
 export const volumeDaSessao = () => volumeGeral
@@ -566,9 +602,9 @@ const hz = (midi: number) => 440 * Math.pow(2, (midi - 69) / 12)
 const ARQUIVO_MUSICA: Partial<Record<Musica, string>> = {
   entrada: 'cripta', chefe: 'chefe', elite: 'elite', dragao: 'dragao', torre: 'torre', biblioteca: 'biblioteca', arquivo: 'biblioteca',
   // Etapa 7 (13/10/2026): trilha própria da floresta, da masmorra, do covil e das salas
-  campo: 'floresta', masmorra: 'masmorra', covil: 'covil', loja: 'sala', sabio: 'sala',
-  salao: 'batalha', forja: 'batalha', coliseu: 'batalha', jardim: 'floresta',
-  laboratorio: 'batalha', caverna: 'batalha', templo: 'batalha', passarela: 'batalha', catacumba: 'batalha', treino: 'batalha',
+  campo: 'passeio', masmorra: 'masmorra', covil: 'covil', loja: 'sala', sabio: 'sala',
+  salao: 'batalha', forja: 'batalha', coliseu: 'batalha', jardim: 'passeio',
+  laboratorio: 'batalha', caverna: 'batalha', templo: 'batalha', passarela: 'batalha', catacumba: 'batalha', treino: 'passeio',
 }
 const ARQUIVO_JINGLE: Partial<Record<Som, string>> = { 'jingle-vitoria': 'vitoria', 'jingle-chefe': 'vitoria', 'jingle-topo': 'vitoria', 'jingle-derrota': 'derrota', 'jingle-tesouro': 'recompensa', 'jingle-patamar': 'recompensa' }
 const buffers = new Map<string, AudioBuffer>()
@@ -581,7 +617,11 @@ function carregarFaixa(nome: string): Promise<AudioBuffer | null> {
   if (!p && ctx) {
     const c = ctx
     const opus = !!document.createElement('audio').canPlayType('audio/ogg; codecs=opus')
-    p = carregarAudioArquivo(nome, { opus, url: arquivo => recurso(`flashcards/musica/${arquivo}`), decodificar: b => c.decodeAudioData(b) })
+    p = carregarAudioArquivo(nome, { opus, url: arquivo => recurso(`flashcards/musica/${arquivo}`), decodificar: async b => {
+      const audio = await c.decodeAudioData(b)
+      if (nome === 'sala') for (let canal = 0; canal < audio.numberOfChannels; canal++) suavizarEmenda(audio.getChannelData(canal), audio.sampleRate)
+      return audio
+    } })
       .then(buf => { if (buf) buffers.set(nome, buf); else { carregando.delete(nome); falhaSom = 'carregamento' }; return buf })
     carregando.set(nome, p)
   }
@@ -590,22 +630,25 @@ function carregarFaixa(nome: string): Promise<AudioBuffer | null> {
 
 /** Pré-carrega as faixas curtas e a da batalha (chamado no primeiro toque). */
 export function preCarregarTrilha() {
-  for (const n of ['floresta', 'batalha', 'vitoria', 'recompensa', 'derrota']) void carregarFaixa(n)
+  for (const n of ['passeio', 'batalha', 'vitoria', 'recompensa', 'derrota']) void carregarFaixa(n)
 }
 
 function tocarFaixa(nome: Musica, buf: AudioBuffer) {
   const c = ctx!
   const sai = c.createGain(); sai.gain.setValueAtTime(0.0001, c.currentTime); sai.gain.exponentialRampToValueAtTime(1, c.currentTime + 1.6); sai.connect(musica)
   const src = c.createBufferSource(); src.buffer = buf; src.loop = true
-  src.connect(sai); src.start()
+  const inicio = c.currentTime
+  src.connect(sai); src.start(inicio)
   musicaAtual = {
-    nome,
+    nome, inicio, duracao: buf.duration,
     parar: () => {
+      pararCoral()
       sai.gain.cancelScheduledValues(c.currentTime)
       sai.gain.setTargetAtTime(0.0001, c.currentTime, 0.35)
       window.setTimeout(() => { try { src.stop() } catch { /* já parou */ } sai.disconnect() }, 2200)
     },
   }
+  aplicarClimaMusical()
 }
 
 /** Fanfarra em arquivo, se já carregada: a música do cenário abaixa enquanto ela toca. */
@@ -625,6 +668,7 @@ export function tocarMusica(nome: Musica | null) {
   if (!ctx || ctx.state !== 'running') return
   if (musicaAtual?.nome === nome) return
   musicaAtual?.parar()
+  pararCoral()
   musicaAtual = null
   if (!nome) return
   const arquivo = ARQUIVO_MUSICA[nome]
