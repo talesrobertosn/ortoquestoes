@@ -71,6 +71,12 @@ export interface Inimigo {
    * você acertar VENENO.acertos flashcards seguidos (um erro recomeça a conta).
    */
   envenena?: number
+  /**
+   * Superpoder do fogo: o golpe carregado (o Sopro) deixa o herói em chamas por
+   * QUEIMADURA.flashcards flashcards, perdendo este tanto de vida em cada um
+   * (nunca abaixo de 1). Acertar um flashcard difícil apaga o fogo na hora.
+   */
+  queima?: number
   /** Moedas a mais quando cai (o Mímico guarda o tesouro). */
   ouroExtra?: number
   /** Só aparece num andar exato de um modo (o dragão do topo da Torre). */
@@ -239,9 +245,9 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'dragao-de-ossos', nome: 'Dragão de Ossos', sprite: 'dragao', cenario: 'covil', nivel: 'chefe', andarMin: 12,
-    vida: 300, forca: 4.4, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, carrega: { aCada: 3, mult: 1.8, nome: 'Sopro de fogo-fátuo' }, especialidade: 'osteometabolicas',
+    vida: 300, forca: 4.4, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, queima: 3, carrega: { aCada: 3, mult: 1.8, nome: 'Sopro de fogo-fátuo' }, especialidade: 'osteometabolicas',
     fase2: { abaixoDe: 0.5, nome: 'Asas em chamas', forca: 5.2, armadura: 1, barreira: 30 },
-    lema: 'Dorme sobre o tesouro de quem não estudou.', habilidade: 'A cada 3 rodadas, o Sopro (dano ×1,8, avisado na intenção). Na segunda fase, ganha barreira.',
+    lema: 'Dorme sobre o tesouro de quem não estudou.', habilidade: 'A cada 3 rodadas, o Sopro (dano ×1,8, avisado na intenção). Na segunda fase, ganha barreira. O Sopro deixa você em chamas por 3 flashcards (um acerto difícil apaga).',
   },
   {
     id: 'rainha-gosma', nome: 'Rainha do Cimento', sprite: 'gosma', variante: 'rainha', cenario: 'salao', nivel: 'chefe', andarMin: 21,
@@ -251,9 +257,9 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'dragao-rubro', nome: 'Dragão Rubro da Artrose', sprite: 'dragao', variante: 'escarlate', cenario: 'covil', nivel: 'chefe', andarMin: 39,
-    vida: 320, forca: 4.6, armadura: 5, paciencia: 15, porErroSeguido: 2, critico: 0.14, chefe: true, carrega: { aCada: 3, mult: 1.9, nome: 'Sopro de brasas' }, rajada: 2, especialidade: 'joelho',
+    vida: 320, forca: 4.6, armadura: 5, paciencia: 15, porErroSeguido: 2, critico: 0.14, chefe: true, queima: 3, carrega: { aCada: 3, mult: 1.9, nome: 'Sopro de brasas' }, rajada: 2, especialidade: 'joelho',
     fase2: { abaixoDe: 0.45, nome: 'Fúria do desgaste', forca: 5.5, armadura: 2 },
-    lema: 'Range a cada passo, queima a cada erro.', habilidade: 'Sopro a cada 3 rodadas e golpes em duas mordidas.',
+    lema: 'Range a cada passo, queima a cada erro.', habilidade: 'Sopro a cada 3 rodadas e golpes em duas mordidas. O Sopro deixa você em chamas por 3 flashcards (um acerto difícil apaga).',
   },
   {
     id: 'basilisco-do-radio', nome: 'Basilisco da Cabeça do Rádio', sprite: 'quimera', variante: 'basilisco', cenario: 'templo', nivel: 'chefe', andarMin: 15,
@@ -305,10 +311,10 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'dragao-ancestral', nome: 'Dragão Ancestral do Título', sprite: 'dragao', variante: 'ancestral', cenario: 'torre', nivel: 'chefe', andarMin: 1,
-    vida: 380, forca: 4.6, armadura: 6, paciencia: 16, porErroSeguido: 2, critico: 0.15, chefe: true, carrega: { aCada: 3, mult: 2, nome: 'Sopro do título' }, especialidade: 'trauma',
+    vida: 380, forca: 4.6, armadura: 6, paciencia: 16, porErroSeguido: 2, critico: 0.15, chefe: true, queima: 4, carrega: { aCada: 3, mult: 2, nome: 'Sopro do título' }, especialidade: 'trauma',
     exclusivo: { modo: 'torre', andar: 100 },
     fase2: { abaixoDe: 0.5, nome: 'Última prova', forca: 5.6, armadura: 2, barreira: 60 },
-    lema: 'O guardião do topo. Ninguém passa sem saber tudo.', habilidade: 'Sopro a cada 3 rodadas; com metade da vida, uma barreira de 60.',
+    lema: 'O guardião do topo. Ninguém passa sem saber tudo.', habilidade: 'Sopro a cada 3 rodadas; com metade da vida, uma barreira de 60. O Sopro deixa você em chamas por 3 flashcards (um acerto difícil apaga).',
   },
   {
     id: 'tita-da-coluna', nome: 'Titã da Coluna', sprite: 'golem', variante: 'obsidiana', cenario: 'masmorra', nivel: 'chefe', andarMin: 9,

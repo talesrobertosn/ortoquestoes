@@ -19,7 +19,7 @@ import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } fro
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
 import { registrarEstudo } from '../aprendizagem'
 import { contarSessaoTerminada } from '../opiniao'
-import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, VENENO, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
+import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, QUEIMADURA, VENENO, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
   BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
@@ -744,6 +744,34 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           }
           break
         }
+        case 'chamuscado': {
+          const h = centro(refHeroi.current)
+          for (let k = 0; k < 4; k++) P?.efeito('labareda-escarlate', { x: h.x + (k - 1.5) * 16, y: h.y + 10 }, { escala: pixelVfx(), vy: -60, atraso: k * 0.06 })
+          tocar('queimadura')
+          flutuar(refHeroi.current, 'EM CHAMAS', '#ffb062', { y: -110, x: 30, rotulo: `${ev.faltam} flashcards · acerto difícil apaga` })
+          if (!(await esperar(240, g))) return
+          break
+        }
+        case 'arde': {
+          if (ev.valor > 0) {
+            const h = centro(refHeroi.current)
+            for (let k = 0; k < 3; k++) P?.efeito('labareda-escarlate', { x: h.x + (k - 1) * 18, y: h.y + 6 }, { escala: pixelVfx() * 0.9, vy: -50, atraso: k * 0.07 })
+            animar(arte(refHeroi), 'fc-anim-queima', 600)
+            tocar('queimadura')
+            flutuar(refHeroi.current, `-${ev.valor}`, '#ffb062', { y: -40, x: -50, rotulo: ev.faltam > 0 ? `QUEIMANDO · faltam ${ev.faltam}` : 'QUEIMANDO' })
+            definirMostrado((m) => ({ ...m, vida: Math.max(1, m.vida - ev.valor) }))
+            if (!(await esperar(200, g))) return
+          }
+          break
+        }
+        case 'apagou': {
+          const h = centro(refHeroi.current)
+          P?.efeito('puf', { x: h.x, y: h.y - 10 }, { escala: pixelVfx() })
+          tocar(ev.motivo === 'dificil' ? 'escudo' : 'cura')
+          flutuar(refHeroi.current, 'FOGO APAGADO', '#cfe8ff', { y: -110, rotulo: ev.motivo === 'dificil' ? 'acerto difícil' : 'o fogo passou' })
+          if (!(await esperar(220, g))) return
+          break
+        }
         case 'veneno-curado': {
           const h = centro(refHeroi.current)
           P?.subir(h, '#b8ff8a', 26, 70)
@@ -1166,6 +1194,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                 <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '') + (partida.veneno ? ' fc-ator--envenenado' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                   {partida.veneno && <span className="fc-envenenado" aria-hidden="true" style={{ backgroundImage: `url(${recurso('flashcards/vfx/bolhas.png')})` }} />}
+                  {partida.queimadura && <span className="fc-em-chamas" aria-hidden="true">{[0, 1, 2].map((k) => <i key={k} style={{ backgroundImage: `url(${recurso('flashcards/vfx/chama-escarlate.png')})`, animationDelay: `${-k * 170}ms` }} />)}</span>}
                   <button type="button" className="fc-ator__toque" aria-label="Ver o seu herói: atributos, poderes e relíquias" onClick={() => { tocar('selecao'); definirPainel('heroi') }} />
                 </Ator>
                 <div className="fc-heroi__dados">
@@ -1179,6 +1208,14 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     </span>
                   </div>
                   <BarraVida atual={mostrado.vida} maximo={partida.vidaMax} tipo="heroi" rotulo="Sua vida" />
+                  {partida.queimadura && (
+                    <div className="fc-veneno-selo fc-veneno-selo--fogo" role="status" title={`Em chamas: cada flashcard tira ${partida.queimadura.dano} de vida (nunca abaixo de 1), por mais ${partida.queimadura.faltam}. Acertar um flashcard difícil apaga o fogo.`}>
+                      <b>Em chamas</b><span>−{partida.queimadura.dano} por flashcard</span>
+                      <span className="fc-veneno-selo__conta" aria-label={`Faltam ${partida.queimadura.faltam} flashcards`}>
+                        {Array.from({ length: QUEIMADURA.flashcards }, (_, i) => <i key={i} className={i < partida.queimadura!.faltam ? 'feito' : ''} />)}
+                      </span>
+                    </div>
+                  )}
                   {partida.veneno && (
                     <div className="fc-veneno-selo" role="status" title={`Envenenado: cada flashcard tira ${partida.veneno.dano} de vida (nunca abaixo de 1). Acerte ${VENENO.acertos} seguidos para curar; um erro recomeça a conta.`}>
                       <b>Envenenado</b><span>−{partida.veneno.dano} por flashcard</span>

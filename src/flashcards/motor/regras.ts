@@ -68,6 +68,8 @@ export const CURA_LOJA = { fracao: 0.3, preco: 30 }
  * um erro recomeça a conta. Novas picadas somam, até `acumula` vezes o dano.
  */
 export const VENENO = { acertos: 5, acumula: 3 }
+/** Em chamas (o superpoder do Sopro): arde por N flashcards; um acerto difícil apaga. */
+export const QUEIMADURA = { flashcards: 3 }
 
 /** Desgaste: a cada ato (Cripta) ou 10 andares (Torre), as curas rendem menos, até o piso. */
 export const DESGASTE = { porAto: 0.05, porDezAndares: 0.07, piso: 0.35 }
@@ -255,6 +257,8 @@ export interface Partida {
   rota?: RotaEstudo | null
   /** Envenenado: dano por flashcard e acertos seguidos que faltam para passar. */
   veneno?: { dano: number; faltam: number } | null
+  /** Em chamas: dano por flashcard e flashcards que faltam para o fogo apagar. */
+  queimadura?: { dano: number; faltam: number } | null
 }
 
 export type MotivoCura =
@@ -276,6 +280,9 @@ export type Evento =
   | { tipo: 'envenenado'; dano: number; faltam: number }
   | { tipo: 'veneno'; valor: number; faltam: number }
   | { tipo: 'veneno-curado' }
+  | { tipo: 'chamuscado'; dano: number; faltam: number }
+  | { tipo: 'arde'; valor: number; faltam: number }
+  | { tipo: 'apagou'; motivo: 'tempo' | 'dificil' }
   | { tipo: 'imortal' }
   | { tipo: 'renascer'; vida: number }
   | { tipo: 'cura'; valor: number; motivo: MotivoCura }
@@ -785,6 +792,11 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
         e = { ...e, veneno: { dano, faltam: VENENO.acertos } }
         eventos.push({ tipo: 'envenenado', dano, faltam: VENENO.acertos })
       } else if (e.fase !== 'fim' && p.veneno) e = { ...e, veneno: { ...p.veneno, faltam: VENENO.acertos } }
+      // o Sopro do dragão deixa o herói em chamas (renova o fogo se já estava queimando)
+      if (e.fase !== 'fim' && i.queima && carregado && !def.bloqueado && def.final > 0) {
+        e = { ...e, queimadura: { dano: i.queima, faltam: QUEIMADURA.flashcards } }
+        eventos.push({ tipo: 'chamuscado', dano: i.queima, faltam: QUEIMADURA.flashcards })
+      }
       if (e.fase !== 'fim' && i.rouba && e.encaixes.length) {
         let u: number, semente = e.semente
         ;[u, semente] = sortear(semente)
@@ -812,6 +824,18 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
       eventos.push({ tipo: 'veneno', valor, faltam: Math.max(0, faltam) })
       if (certo && faltam <= 0) { e = { ...e, veneno: null }; eventos.push({ tipo: 'veneno-curado' }) }
       else if (certo) e = { ...e, veneno: { ...p.veneno, faltam } }
+    }
+    // Em chamas: um acerto difícil apaga o fogo; senão, arde e conta um flashcard a menos.
+    if (p.queimadura && e.fase === 'resposta') {
+      if (certo && c.dificuldade === 3) { e = { ...e, queimadura: null }; eventos.push({ tipo: 'apagou', motivo: 'dificil' }) }
+      else {
+        const valor = Math.min(p.queimadura.dano, Math.max(0, e.vida - 1))
+        if (valor > 0) e = { ...e, vida: e.vida - valor, danoSofrido: e.danoSofrido + valor }
+        const faltam = p.queimadura.faltam - 1
+        eventos.push({ tipo: 'arde', valor, faltam: Math.max(0, faltam) })
+        if (faltam <= 0) { e = { ...e, queimadura: null }; eventos.push({ tipo: 'apagou', motivo: 'tempo' }) }
+        else if (!e.queimadura || e.queimadura === p.queimadura) e = { ...e, queimadura: { ...p.queimadura, faltam } }
+      }
     }
     if (e.fase === 'resposta' && e.inimigo.vida <= 0) return { estado: derrotarInimigo(e, eventos), eventos }
     if (e.fase === 'resposta' && i.regenera && e.inimigo.vida > 0) {

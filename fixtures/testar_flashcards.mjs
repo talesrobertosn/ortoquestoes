@@ -479,6 +479,41 @@ try {
     if (!m.inimigoDoAndar(1, 42, 'masmorra').inimigo.envenena) assert.equal(r.estado.veneno.faltam, m.VENENO.acertos, 'o erro não recomeçou a conta')
   }
 
+  // Em chamas (o Sopro do dragão): arde por 3 flashcards, nunca derruba, e um acerto difícil apaga.
+  {
+    let achado = null
+    for (let a = 1; a < 80 && !achado; a++) for (let sm = 1; sm < 40; sm++) { const iv = m.inimigoDoAndar(a, sm, 'masmorra').inimigo; if (iv.queima && iv.carrega) { achado = [a, sm]; break } }
+    assert.ok(achado, 'nenhum dragão queima')
+    const [andarQ, sementeQ] = achado
+    const iq = m.inimigoDoAndar(andarQ, sementeQ, 'masmorra').inimigo
+    let q = motor.novaPartida(sementeQ).estado
+    q = { ...q, andar: andarQ, sementeBase: sementeQ, vida: 300, vidaMax: 300, encaixes: [], reliquias: [], inimigo: { ...q.inimigo, id: iq.id, vida: 9000, vidaMax: 9000, barreira: 0, fase: 1, rodadas: 0, errosSeguidos: 0, furia: false } }
+    q = { ...q, atual: { ...q.atual, criticoInimigo: false, carregado: true } }
+    const erradaQ = (x) => x.atual.ordem.findIndex((o) => o !== motor.carta(x.atual.id).certa)
+    let r = motor.responder(q, erradaQ(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'chamuscado' && x.faltam === m.QUEIMADURA.flashcards), 'o Sopro não queimou')
+    assert.ok(!r.eventos.some((x) => x.tipo === 'arde'), 'ardeu no mesmo flashcard do Sopro')
+    // sem acerto difícil: arde nos 3 flashcards seguintes e apaga sozinho
+    q = motor.seguir(r.estado).estado
+    for (let k = 1; k <= m.QUEIMADURA.flashcards; k++) {
+      q = { ...q, inimigo: { ...q.inimigo, vida: 9000 }, atual: { ...q.atual, carregado: false, criticoInimigo: false } }
+      const naoDificil = motor.carta(q.atual.id).dificuldade !== 3
+      r = motor.responder(q, naoDificil ? certaPos(q) : erradaQ(q))
+      const t = r.eventos.find((x) => x.tipo === 'arde')
+      assert.ok(t && t.faltam === m.QUEIMADURA.flashcards - k, 'contagem da queimadura')
+      q = motor.seguir(r.estado).estado
+    }
+    assert.ok(r.eventos.some((x) => x.tipo === 'apagou' && x.motivo === 'tempo') && !r.estado.queimadura, 'o fogo não apagou sozinho')
+    // acerto difícil apaga na hora, sem arder
+    const dificil = cartas.find((c) => c.dificuldade === 3)
+    if (dificil) {
+      const qq = { ...q, queimadura: { dano: 3, faltam: 2 }, inimigo: { ...q.inimigo, vida: 9000 }, atual: { ...q.atual, id: dificil.id, ordem: dificil.opcoes.map((_, i) => i), eliminadas: [], respondida: false } }
+      const rr = motor.responder(qq, dificil.certa)
+      assert.ok(rr.eventos.some((x) => x.tipo === 'apagou' && x.motivo === 'dificil') && !rr.estado.queimadura, 'o acerto difícil não apagou')
+      assert.ok(!rr.eventos.some((x) => x.tipo === 'arde'), 'ardeu mesmo apagando')
+    }
+  }
+
   console.log('Motor da Batalha: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })
