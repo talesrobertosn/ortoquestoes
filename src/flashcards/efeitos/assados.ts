@@ -5,6 +5,53 @@
 export interface AnimAssada { linha: number; quadros: number; ms: number }
 export interface MetaAssada { largura: number; altura: number; colunas: number; ancora: [number, number]; caixa: [number, number, number, number]; animacoes: Record<string, AnimAssada> }
 export const ASSADOS: Record<string, MetaAssada> = {
+ "cogumelo": {
+  "largura": 156,
+  "altura": 112,
+  "colunas": 6,
+  "ancora": [
+   80,
+   101
+  ],
+  "caixa": [
+   56,
+   52,
+   48,
+   51
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 170
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 140
+   }
+  }
+ },
  "dragao": {
   "largura": 264,
   "altura": 216,
@@ -44,6 +91,147 @@ export const ASSADOS: Record<string, MetaAssada> = {
     "linha": 4,
     "quadros": 5,
     "ms": 150
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "ent": {
+  "largura": 222,
+  "altura": 152,
+  "colunas": 6,
+  "ancora": [
+   130,
+   142
+  ],
+  "caixa": [
+   56,
+   31,
+   149,
+   115
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 300
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 80
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 95
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 150
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 170
+   }
+  }
+ },
+ "esqueleto": {
+  "largura": 152,
+  "altura": 116,
+  "colunas": 6,
+  "ancora": [
+   76,
+   101
+  ],
+  "caixa": [
+   51,
+   32,
+   47,
+   71
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "goblin": {
+  "largura": 168,
+  "altura": 116,
+  "colunas": 6,
+  "ancora": [
+   88,
+   101
+  ],
+  "caixa": [
+   48,
+   31,
+   77,
+   72
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 240
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 140
    },
    "vitoria": {
     "linha": 5,
@@ -848,6 +1036,53 @@ export const ASSADOS: Record<string, MetaAssada> = {
     "linha": 5,
     "quadros": 4,
     "ms": 160
+   }
+  }
+ },
+ "mimico": {
+  "largura": 176,
+  "altura": 112,
+  "colunas": 6,
+  "ancora": [
+   104,
+   101
+  ],
+  "caixa": [
+   78,
+   54,
+   59,
+   50
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
    }
   }
  },

@@ -4,7 +4,7 @@
  * um golpe COMUM e um CRÍTICO; o crítico é um "superpoder" com cara própria:
  *
  *   pedra     golem, escaravelho, ent        comum: pedra girando em arco · crítico: pedregulho cai do céu, chão racha
- *   veneno    serpente, leviatã, mão          comum: cusparada de veneno · crítico: o bote (presas) e nuvem tóxica
+ *   veneno    serpente, leviatã, mão, cogumelo comum: cusparada de veneno · crítico: o bote (presas) e nuvem tóxica
  *   pancada   guardião, cavaleiro, rei        comum: onda de choque · crítico: pancada que racha o chão
  *   garra     raptor, goblin, aranha...       comum: três rasgos · crítico: rasgos gigantes por cima da tela
  *   mimico    mímico                          crítico: a tampa com dentes fecha na tela
@@ -25,7 +25,7 @@ export type Estilo = 'pedra' | 'veneno' | 'pancada' | 'garra' | 'mergulho' | 'ma
 
 const ESTILO: Record<string, Estilo> = {
   golem: 'pedra', escaravelho: 'pedra', ent: 'pedra',
-  serpente: 'veneno', leviata: 'veneno', mao: 'veneno',
+  serpente: 'veneno', leviata: 'veneno', mao: 'veneno', cogumelo: 'veneno',
   guardiao: 'pancada', cavaleiro: 'pancada', rei: 'pancada', esqueleto: 'pancada',
   raptor: 'garra', goblin: 'garra', aranha: 'garra', morcego: 'garra', corvo: 'garra', mimico: 'mimico',
   harpia: 'mergulho', espectro: 'magia', arconte: 'feixe', quimera: 'garra', gosma: 'gosma', dragao: 'fogo',

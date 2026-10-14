@@ -75,13 +75,14 @@ O quadro típico é de 128×128, com a âncora nos pés.
 |---|---|---|---|
 | golem, serpente, guardião, dragão, gosma (e variantes) | ✅ assados | já definidos | — |
 | herói (6 estágios) | ✅ chibi | `cavaleiro_chibi.py` | — |
-| **goblin** (Goblin da Fratura) | ⬜ arte antiga | chibi carismático | refs. 3 e 5: porrete com cravos, orelhas, olhos semicerrados |
-| **esqueleto** (Esqueleto do Metacarpo) | ⬜ | sóbrio e terroso | ref. 5: escudo redondo de madeira e espada curta |
-| **ent** (Guardião da Fise, chefe) | ⬜ | brutamontes HD | refs. 5 e 2: toco com um olho só, galhos-garra, musgo |
+| **goblin** (Goblin da Fratura) | ✅ chibi (14/10) | `goblin.py` | verde-limão, olhos semicerrados, faixa de gesso, tala no braço, porrete com parafusos de osso |
+| **esqueleto** (Esqueleto do Metacarpo) | ✅ sóbrio (14/10) | `esqueleto.py` | escudo redondo de madeira, espada curta enferrujada, placa com parafusos no fêmur, desaba num monte de ossos |
+| **ent** (Guardião da Fise, chefe) | ✅ brutamontes (14/10) | `ent.py` | toco quebrado de um olho só, a fise como faixa de seiva que brilha, galhos-garra, musgo, cogumelos e broto que floresce na vitória; tela maior de chefe (196×150) |
 | raptor, corvo, morcego, aranha, escaravelho | ⬜ | detalhado | ref. 1 (manchas e carapaça); a aranha pode virar o "cogumelo-aranha" da ref. 4 |
-| mímico | ⬜ | detalhado | baú com dentes e língua (já há a mandíbula em `vfx.py`) |
+| **mímico** (Mímico do Arsenal) | ✅ detalhado (14/10) | `mimico.py` | caixa de instrumentais de aço escovado com cantoneiras de latão e correias, dentes (alguns são bisturis), língua comprida, olhos acesos, pinça saindo da boca e moedas |
 | cavaleiro, rei, arconte, espectro, quimera, harpia, mão, leviatã | ⬜ | brutamontes HD (chefes) | ref. 2: massa, placas, faixas douradas |
-| **novos:** cogumelo saltitante, mandrágora, planta carnívora, abóbora, caranguejo, slime da espada | ⬜ ainda não existem | chibi (cogumelo, mandrágora, abóbora); detalhado (planta, caranguejo, slime) | refs. 1 e 4 |
+| **Cogumelo da Necrose** (novo, Jardim) | ✅ chibi (14/10) | `cogumelo.py` | chapéu vinho com pintas pálidas e um ossinho, olhos vermelhos bravos, pulinhos; envenena com esporos |
+| **novos:** mandrágora, planta carnívora, abóbora, caranguejo, slime da espada | ⬜ ainda não existem | chibi (cogumelo, mandrágora, abóbora); detalhado (planta, caranguejo, slime) | refs. 1 e 4 |
 
 ### Ideias de nome para os novos
 
@@ -121,9 +122,12 @@ Seguem o humor do bestiário:
 
 ## Ordem sugerida
 
-1. **Goblin**, chibi (ref. 3): estreia cedo e é o mais simples.
-2. **Esqueleto**, sóbrio (ref. 5).
-3. **Ent** (Guardião da Fise), o toco de um olho só (ref. 5).
-4. **Cogumelo da Necrose**, monstro novo do Jardim (refs. 4 e 5).
-5. **Mímico** e **aranha** (refs. 1 e 4).
+1. ~~**Goblin**, chibi (ref. 3)~~: feito em `scripts/sprites/goblin.py`. Ele importa as ferramentas do `cavaleiro_chibi.py` e soma rampas próprias: é o modelo mais curto para os próximos chibis.
+2. ~~**Esqueleto**, sóbrio (ref. 5)~~: feito em `scripts/sprites/esqueleto.py`, com o mesmo método do goblin.
+3. ~~**Ent** (Guardião da Fise)~~: feito em `scripts/sprites/ent.py`. Para chefes maiores, ele mostra como trocar `cc.W`, `cc.H`, `cc.XX`, `cc.YY` e `cc.DITHER` antes de desenhar.
+4. ~~**Cogumelo da Necrose**, monstro novo do Jardim (refs. 4 e 5)~~: feito. Para um monstro **novo**, além do gerador, foi preciso:
+   - acrescentar o nome em `Besta` e um desenho de reserva simples em `efeitos/bestas.ts`, com `TAMANHO_BESTAS`, `ORIGEM_BESTAS` e `PALETA_BESTAS`, porque a escala da folha assada usa a altura do desenho antigo;
+   - acrescentar o nome em `SpriteInimigo` e a entrada no `bestiario.ts`;
+   - ligar `ESTILO` em `ataques.ts`, `FAMILIA_SOM` em `sons.ts` e `PEQUENOS` em `Arena.tsx`.
+5. ~~**Mímico**~~ (feito em `mimico.py`) e **aranha** (refs. 1 e 4).
 6. **Chefes humanoides** no estilo brutamontes (ref. 2).

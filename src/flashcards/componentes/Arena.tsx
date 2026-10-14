@@ -59,7 +59,7 @@ const ROTULO_CURA: Record<MotivoCura, string> = {
 
 /** Onde cada modo guarda a partida em andamento. */
 /** Sprites desenhados menores que o Golem: ganham escala maior na arena e na apresentação. */
-const PEQUENOS = new Set<string>(['serpente', 'raptor', 'gosma', 'mimico', 'corvo', 'morcego', 'goblin', 'esqueleto', 'escaravelho', 'aranha', 'cavaleiro', 'espectro', 'harpia', 'mao'])
+const PEQUENOS = new Set<string>(['serpente', 'raptor', 'gosma', 'cogumelo', 'mimico', 'corvo', 'morcego', 'goblin', 'esqueleto', 'escaravelho', 'aranha', 'cavaleiro', 'espectro', 'harpia', 'mao'])
 const CHAVE_DO_MODO: Record<Modo, string> = { masmorra: CHAVE_PARTIDA, torre: CHAVE_PARTIDA_TORRE }
 const lerAltar = () => ({ ...ALTAR_VAZIO, ...ler<Partial<EstadoAltar>>(CHAVE_ALTAR, {}) }) as EstadoAltar
 /** Nome do jogo e dos modos (usado no topo e na Entrada). */

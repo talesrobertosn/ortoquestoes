@@ -8,7 +8,7 @@ import { Grade, MAT } from './pixel'
 
 export type Besta =
   | 'corvo' | 'morcego' | 'aranha' | 'escaravelho' | 'goblin' | 'esqueleto' | 'cavaleiro'
-  | 'espectro' | 'quimera' | 'mao' | 'leviata' | 'rei' | 'arconte' | 'ent' | 'harpia'
+  | 'espectro' | 'quimera' | 'mao' | 'leviata' | 'rei' | 'arconte' | 'ent' | 'harpia' | 'cogumelo'
 type Pose = 'parado' | 'respira' | 'preparo' | 'golpe' | 'dano' | 'vitoria'
 type P = [number, number]
 type Desenho = (g: Grade, pose: Pose, variante?: string) => void
@@ -449,6 +449,17 @@ const ent: Desenho = (g, pose) => {
   for (const [x, y] of [[-18, 20], [4, 12], [18, 24], [-6, 30], [12, 36]] as P[]) { g.elipse(cx + x, y + b, 2.4, 2.4, luz, 1, 0.4); g.ponto(cx + x, y + b, '#ffffff') }
 }
 
+/* ------------------------------------------------ Cogumelo da Necrose (desenho de reserva; a arte é a folha assada de scripts/sprites/cogumelo.py) */
+const cogumelo: Desenho = (g, pose) => {
+  const A = ANIMO[pose], chapeu = g.material(MAT.vermelho), caule = g.material(MAT.ventre), pinta = g.material(MAT.gesso)
+  const cx = 30 + A.dx * 0.5, b = A.b
+  for (const x of [cx - 5, cx + 5]) g.elipse(x, 52, 3.5, 2, caule)
+  g.elipse(cx, 40 + b * 0.5, 10, 11, caule)
+  olho(g, cx - 5, 38 + b * 0.5, '#ff4a2a'); olho(g, cx + 3, 38 + b * 0.5, '#ff4a2a')
+  g.elipse(cx, 22 + b, 19, 11, chapeu)
+  for (const [x, y] of [[-10, 20], [0, 15], [9, 19], [-3, 24]] as P[]) g.elipse(cx + x, y + b, 2.6, 2, pinta)
+}
+
 /* ------------------------------------------------ Harpia do Manguito */
 const harpia: Desenho = (g, pose) => {
   const A = ANIMO[pose], pena = g.material(MAT.tabardo), pele = g.material(MAT.pele), garra = g.material(MAT.ouro), cabelo = g.material(MAT.roxo)
@@ -474,19 +485,19 @@ const harpia: Desenho = (g, pose) => {
   g.linha(cx - 3, 36 + b, cx + 3, 36 + b, A.abre > 0.5 ? '#4f0e0a' : '#c0604a')
 }
 
-export const DESENHOS_BESTAS: Record<Besta, Desenho> = { corvo, morcego, aranha, escaravelho, goblin, esqueleto, cavaleiro, espectro, quimera, mao, leviata, rei, arconte, ent, harpia }
+export const DESENHOS_BESTAS: Record<Besta, Desenho> = { corvo, morcego, aranha, escaravelho, goblin, esqueleto, cavaleiro, espectro, quimera, mao, leviata, rei, arconte, ent, harpia, cogumelo }
 
 export const TAMANHO_BESTAS: Record<Besta, [number, number]> = {
   corvo: [76, 70], morcego: [84, 64], aranha: [100, 76], escaravelho: [90, 68], goblin: [70, 66], esqueleto: [72, 86], cavaleiro: [92, 98],
-  espectro: [92, 112], quimera: [130, 104], mao: [100, 98], leviata: [148, 128], rei: [124, 120], arconte: [124, 124], ent: [120, 126], harpia: [108, 92],
+  espectro: [92, 112], quimera: [130, 104], mao: [100, 98], leviata: [148, 128], rei: [124, 120], arconte: [124, 124], ent: [120, 126], harpia: [108, 92], cogumelo: [64, 58],
 }
 export const ORIGEM_BESTAS: Record<Besta, [number, number]> = {
   corvo: [4, 6], morcego: [4, 8], aranha: [4, 6], escaravelho: [4, 6], goblin: [6, 6], esqueleto: [4, 4], cavaleiro: [8, 6],
-  espectro: [6, 8], quimera: [2, 6], mao: [4, 4], leviata: [4, 4], rei: [8, 14], arconte: [6, 6], ent: [6, 4], harpia: [6, 6],
+  espectro: [6, 8], quimera: [2, 6], mao: [4, 4], leviata: [4, 4], rei: [8, 14], arconte: [6, 6], ent: [6, 4], harpia: [6, 6], cogumelo: [4, 4],
 }
 export const PALETA_BESTAS: Record<Besta, string[]> = {
   corvo: ['#9ea5b2', '#646b78', '#f2c45a'], morcego: ['#86789e', '#8a5530', '#ffe040'], aranha: ['#a878f0', '#6a40b8', '#ff4a6a'], escaravelho: ['#5fdc7a', '#7fe0ff', '#9ea5b2'],
   goblin: ['#7ac850', '#8a5530', '#9ea5b2'], esqueleto: ['#e8dcc0', '#fffaf0', '#7fe0ff'], cavaleiro: ['#98a8c0', '#e4ecf6', '#f2c45a'], espectro: ['#7fe0ff', '#d8ffff', '#a878f0'],
   quimera: ['#ffc24a', '#8a5530', '#e2b444'], mao: ['#98a8c0', '#f07a5a', '#f2c45a'], leviata: ['#7fe0ff', '#3aa0d0', '#f0dca0'], rei: ['#a878f0', '#f2c45a', '#97927f'],
-  arconte: ['#9ea5b2', '#f2c45a', '#ffc24a'], ent: ['#8f5f34', '#6a9a34', '#b8ffb0'], harpia: ['#b02c1e', '#f2b98e', '#f2c45a'],
+  arconte: ['#9ea5b2', '#f2c45a', '#ffc24a'], ent: ['#8f5f34', '#6a9a34', '#b8ffb0'], harpia: ['#b02c1e', '#f2b98e', '#f2c45a'], cogumelo: ['#ac3434', '#e0d0b0', '#e0e09a'],
 }

@@ -31,7 +31,7 @@ Leia nesta ordem:
   - correção do topo no celular;
   - a escolha "entrar com ou sem som" agora é perguntada uma vez só por aparelho. Fica guardada em `flashcards:som-escolhido`, nas chaves globais de `estado/armazenamento.ts`.
 - **O Tales confirmou:** o som funciona no celular e a parte 19 do SQL já foi colada no Supabase.
-- **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). Depois, pela ordem do plano:
+- **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). O goblin, o esqueleto, o ent (Guardião da Fise), o mímico e o Cogumelo da Necrose (monstro novo) já estão prontos (`scripts/sprites/goblin.py`, `esqueleto.py`, `ent.py`, `mimico.py` e `cogumelo.py`); siga pela aranha e pelo raptor. Depois, pela ordem do plano:
   - sons próprios dos golpes novos (ideia 17);
   - revisão dos botões (ideia 61);
   - cenários pintados que faltam (ideia 51).
@@ -265,7 +265,7 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
 
 ## Próximos passos sugeridos (em ordem)
 
-1. **Folhas em volume** para raptor, mímico e esqueleto, que estreiam cedo. Use o modelo de `scripts/sprites/gosma.py` e `python3 scripts/sprites/assar.py <nome>`.
+1. **Folha em volume** para o raptor, que estreia cedo (o esqueleto, o goblin, o ent, o mímico e o Cogumelo da Necrose já têm arte nova, de 14/10). Use o modelo de `scripts/sprites/gosma.py` e `python3 scripts/sprites/assar.py <nome>`.
 2. **Pintar Torre e Salão** com `scripts/cenarios/` (veja "Como fazer um cenário novo" em ARTE.md) e ligar em `CENAS_PINTADAS`.
 3. **Variantes escarlate e ancestral do Dragão**: acrescente `VARIANTES` em `scripts/sprites/dragao.py`.
 4. **Escudo do herói no estágio 6**: reduzir (`PROP[6]['escudo']` em `scripts/sprites/heroi.py`).
