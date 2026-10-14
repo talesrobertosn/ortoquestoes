@@ -6,7 +6,9 @@ import { rotaDe, usarRota, type Rota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
-import { FLASHCARDS_LIBERADO, SITE } from './config'
+import { EXIGIR_CONTA_PARA_QUESTOES, FLASHCARDS_LIBERADO, SITE } from './config'
+import { usarConta } from './conta/ContextoConta'
+import { contasDisponiveis } from './conta/supabase'
 import { usarLeitura } from './estado/preferencias'
 import { ErroDePagina } from './componentes/ErroDePagina'
 import { ExigeConta } from './componentes/ExigeConta'
@@ -214,13 +216,6 @@ export function App() {
   const [primeiro, segundo] = rota.segmentos
   const { densidade, fonte } = usarLeitura()
 
-  // Abrir ou fechar o pop-up do jogo não mexe na rolagem da página que fica atrás.
-  const jogoAntes = useRef(false)
-  useEffect(() => {
-    const agora = ehJogo(rota)
-    if (!agora && !jogoAntes.current) window.scrollTo({ top: 0, behavior: 'auto' })
-    jogoAntes.current = agora
-  }, [rota.caminho]) // eslint-disable-line react-hooks/exhaustive-deps
   // Emblemas "Fila zerada": observa as respostas e marca o dia em que a revisão zerou.
   useEffect(() => vigiarFilaZerada(), [])
 
@@ -232,13 +227,26 @@ export function App() {
         : `${SITE.nome}`)
   }, [rota.caminho, primeiro, segundo])
 
+  const { sessao } = usarConta()
   const jogo = ehJogo(rota)
+  // sem conta, o convite para criar a conta aparece na própria página, não num pop-up por baixo do site
+  const barrado = jogo && EXIGIR_CONTA_PARA_QUESTOES && contasDisponiveis && !sessao
+  const popup = jogo && !barrado
   // fora do jogo, a página atual vira o fundo do pop-up; dentro dele, o fundo é a última página do site
   const textoRota = rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')
   if (!jogo) lembrarFundo(textoRota)
-  const fundo = jogo ? rotaDe(rotaDoFundo()) : rota
-  const pagina = paginaDaRota(ehJogo(fundo) ? rotaDe('/flashcards') : fundo)
-  const sobreposto = jogo ? paginaDaRota(rota) : null
+  const fundo = popup ? rotaDe(rotaDoFundo()) : rota
+  const pagina = paginaDaRota(popup && ehJogo(fundo) ? rotaDe('/flashcards') : fundo)
+  const sobreposto = popup ? paginaDaRota(rota) : null
+
+  // Abrir o pop-up e fechá-lo de volta para a mesma página não mexe na rolagem; ir para outra página começa do topo.
+  const jogoAntes = useRef(false)
+  const fundoAoAbrir = useRef<string | null>(null)
+  useEffect(() => {
+    if (popup && !jogoAntes.current) fundoAoAbrir.current = rotaDoFundo()
+    if (!popup && (!jogoAntes.current || textoRota !== fundoAoAbrir.current)) window.scrollTo({ top: 0, behavior: 'auto' })
+    jogoAntes.current = popup
+  }, [textoRota, popup])
   const [primeiroFundo] = fundo.segmentos
 
   const estreita = ['sessao', 'questao'].includes(primeiroFundo ?? '')
@@ -259,7 +267,7 @@ export function App() {
           </ErroDePagina>
         </div>
       </main>
-      {sobreposto && <ErroDePagina caminho={rota.caminho}><Suspense fallback={null}>{sobreposto}</Suspense></ErroDePagina>}
+      {sobreposto && <ErroDePagina caminho={rota.caminho}><Suspense fallback={<div className="espera-jogo"><EsperaPixel rotulo="Abrindo o jogo" /></div>}>{sobreposto}</Suspense></ErroDePagina>}
       {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
       {!['sessao', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={!primeiroFundo || primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}

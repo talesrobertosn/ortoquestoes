@@ -1013,7 +1013,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     definirModo('estudo')
   }, [])
 
-  const fechar = useCallback(() => { tocar('fechar'); sairDoJogo() }, [])
+  // enquanto o servidor autoriza a resposta, ninguém sai: o resultado precisa ser aplicado e salvo
+  const fechar = useCallback(() => { if (validando.current) return; tocar('fechar'); sairDoJogo() }, [])
   const pedirFechar = useCallback(() => {
     const p = partidaRef.current
     if (p.fase === 'fim' || (p.rodada === 0 && modo === 'batalha')) fechar()
@@ -1120,7 +1121,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             )}
           </div>
           <div className="fc-topo__acoes">
-            <button type="button" className="fc-topo-botao" onClick={() => { tocar('selecao'); navegar('/flashcards/entrada') }} aria-label="Menu do Torneio (a partida fica salva)" title="Menu do Torneio">
+            <button type="button" className="fc-topo-botao" onClick={() => { if (validando.current) return; tocar('selecao'); navegar('/flashcards/entrada') }} aria-label="Menu do Torneio (a partida fica salva)" title="Menu do Torneio">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" /></svg>
               <span className="fc-topo-botao__texto">Menu</span>
             </button>

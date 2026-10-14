@@ -2260,10 +2260,10 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 .fc-velas b { margin-left: 4px; font: 700 12px var(--fc-ui); color: #ffe6a8; }
 @media (max-width: 640px) and (orientation: portrait), (max-height: 500px) and (orientation: landscape) { .fc-gato { display: none; } .fc-velas { display: none; } }
 @media (prefers-reduced-motion: reduce) { .fc-gato, .fc-velas i.acesa { animation: none; } }
-=======
-/* Computador: o pop-up do jogo deixa o site translúcido atrás (pedido do Tales, 13/10/2026). */
+/* Computador: o pop-up do jogo deixa o site translúcido atrás (pedido do Tales, 13/10/2026).
+   Sem desfoque ao vivo (pesava demais, ver acima); o !important vence o véu escuro geral. */
 @media (min-width: 900px) and (min-height: 560px) {
-  .fc-modal-veu { background: radial-gradient(ellipse at 50% 45%, rgba(14, 10, 18, .34), rgba(4, 3, 6, .58)); backdrop-filter: blur(2.5px) saturate(.9); -webkit-backdrop-filter: blur(2.5px) saturate(.9); cursor: pointer; }
+  .fc-modal-veu { background: radial-gradient(ellipse at 50% 45%, rgba(14, 10, 18, .42), rgba(4, 3, 6, .66)) !important; cursor: pointer; }
   .fc-modal { width: min(80vw, 1440px); height: min(84dvh, 960px); cursor: auto; }
 }
 /* Celular em pé: com o botão Menu são três botões redondos ao lado das abas; tudo um pouco menor para não sobrepor. */

@@ -21,5 +21,6 @@ export function rotaDoFundo(): string {
   try { return window.sessionStorage.getItem(CHAVE) || PADRAO } catch { return PADRAO }
 }
 
-/** Fecha o jogo e volta para o site (a página que estava atrás). */
-export function sairDoJogo() { navegar(rotaDoFundo()) }
+/** Fecha o jogo e volta para o site (a página que estava atrás), trocando a
+ * entrada do jogo no histórico: o Voltar do navegador não reabre o jogo. */
+export function sairDoJogo() { navegar(rotaDoFundo(), true) }
