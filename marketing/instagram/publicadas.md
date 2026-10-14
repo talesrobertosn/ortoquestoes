@@ -19,4 +19,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0192 | Zonas de DENIS no sacro (TEOT 2022), só como tela de exemplo no notebook | posts/2026-10-12-story-treine-gratis |
 | ombro-cotovelo-0019 (= mao-0032) | Nervo supraescapular e incisura supraescapular (TARO 2021) | posts/2026-10-13-cofre-supraescapular |
 | mao-1653 | Adutor do polegar e ramo profundo do ulnar (Simulados, anatomia da mão) | posts/2026-10-14-gps-ramo-profundo-ulnar (feed) |
-| pe-tornozelo-0104 | Flexor longo dos dedos, compartimento posterior profundo (TEOT/TARO) | posts/2026-10-14-gps-ramo-profundo-ulnar (stories) |
+| pe-tornozelo-0104 (= pe-tornozelo-0062) | Flexor longo dos dedos, compartimento posterior profundo (TEOT/TARO) | posts/2026-10-14-gps-ramo-profundo-ulnar (stories) |

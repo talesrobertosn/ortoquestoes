@@ -23,7 +23,7 @@ O músculo é do polegar. E o nervo? Ative o GPS.
 
 Questão de anatomia da mão dos OrtoQuestões Simulados: o músculo profundo que converge para a base ulnar do polegar é inervado pelo mediano, pelo ramo superficial do radial, pelo ramo profundo do ulnar ou pelo ramo superficial do ulnar?
 
-Comente a sua letra antes de seguir a rota. No caminho, o canal de Guyon, a saída do ramo profundo, a curva no hâmulo do hamato e o que acontece se o nervo for lesado. O último slide é o resumo para a prova.
+Comente a sua letra antes de seguir a rota. No caminho, o canal de Guyon, a saída do ramo profundo, a curva no hâmulo do hamato e o que acontece se o ramo for lesado. O último slide é o resumo para a prova.
 
 E nos stories de hoje, o GPS vai para a perna: uma questão oficial para escolher a faixa certa atrás do maléolo.
 
@@ -51,5 +51,7 @@ Treine grátis: o caminho está no nosso perfil, @ortoquestoes
     central e mais profundo; flexor longo do hálux lateral, na fíbula; ordem atrás do maléolo medial
     (Tom, Dick and very nervous Harry); cruzamento com o flexor longo do hálux no nó de Henry.
   - O trajeto do ramo profundo (Guyon, hâmulo do hamato, hipotenar, plano profundo com o arco palmar
-    profundo, interósseos) e o sinal de Froment são anatomia e semiologia clássicas, acrescentadas
-    para a rota; conferir na revisão.
+    profundo, interósseos) é anatomia clássica da referência do comentário (Netter, capítulo Mão:
+    Nervos e Artérias), acrescentada para a rota; conferir na revisão. O slide de lesão usa só as
+    ações do adutor descritas no comentário e o fato de o ramo profundo ser motor.
+  - `pe-tornozelo-0104` é duplicata de `pe-tornozelo-0062` (mesma questão): as duas ficam como publicadas.
