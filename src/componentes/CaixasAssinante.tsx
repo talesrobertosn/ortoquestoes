@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { usarPremium } from '../conta/premium'
-import { obterPlano } from '../conta/cronograma'
+import { guardarAdiantamento, obterPlano, opcoesComAdiantamento } from '../conta/cronograma'
 import { NovidadeSimulados } from './NovidadeSimulados'
 import { usarIndice } from '../dados/usarIndice'
 import { TOP_ASSUNTOS, areaPorId } from '../dados/incidencia'
@@ -36,6 +36,14 @@ export function usarCronogramaHoje() {
   }, [premium])
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
   useEffect(() => { if (premium) conferirMetaCronograma(calculo) }, [premium, calculo])
+  // Fez além da meta hoje: guarda o dia, para amanhã a meta já vir mais leve.
+  const extra = calculo?.extraHoje ?? 0
+  useEffect(() => {
+    if (!premium || !plano || !calculo || !extra || !opcoesComAdiantamento(plano, calculo)) return
+    let vivo = true
+    guardarAdiantamento(plano, calculo).then((p) => { if (vivo && p) definirPlano(p) })
+    return () => { vivo = false }
+  }, [premium, plano, extra]) // eslint-disable-line react-hooks/exhaustive-deps
   return { premium, logado, calculo: premium ? calculo : null, pendente, plano: premium ? plano : null, definirPlano }
 }
 export type CronogramaHoje = ReturnType<typeof usarCronogramaHoje>

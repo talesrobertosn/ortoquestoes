@@ -98,6 +98,20 @@ Linguagem visual fixa:
 39. [x] Trilho e semanas completos desfocados na prévia. (PR da reforma, 14/10/2026)
 40. [~] Trilha em pixel art até a prova (mapa com fases e o castelo da prova), também para o Instagram. Feito em parte: o "Onde você está" usa o trilho em pixel com a fonte e o horizonte da marca; o mapa ilustrado pede arte (T).
 
+### 7. Adiantar e extras sem cobrança (pedido do Tales, 14/10/2026)
+41. [x] Revisões e flashcards não são obrigatórios: saem da conta do "Seu dia" e do "Dia completo" e ficam num bloco "Se sobrar tempo", sem número na lista. O botão principal não manda mais para as revisões depois da meta.
+42. [x] Adiantar de verdade: o que a pessoa faz além da meta de hoje sai dos próximos dias, começando por amanhã (até zerar a meta dele; o resto vai para o dia seguinte). Antes, o extra se diluía pelo plano inteiro (amanhã caía de 60 para 59).
+43. [x] Painel "Adiantar" sempre à vista no cartão Hoje: +10, +20, +30, "amanhã inteiro" e "2 dias", cada um com o efeito ("amanhã fica com 40") e o tempo; "Cancelar o que falta". Com a meta pendente, o pedido entra na mesma sessão; com a meta feita, o painel vira o destaque dourado e abre a sessão na hora.
+44. [x] Amanhã, a semana e o fim da sessão mostram o adiantado ("eram 60", "livre, você já adiantou"). Dia todo adiantado conta como meta cumprida.
+45. [x] Conserto: o cartão dos OrtoQuestões Simulados dentro do bloco recolhido ficava espremido numa coluna fina no computador.
+
+Como funciona por dentro: `opcoes.adiantados` (no `planos_estudo.opcoes`, sem SQL novo) guarda, por dia, a meta daquele dia e
+o que a pessoa pediu para adiantar. No dia seguinte, o motor conta as primeiras respostas daquele dia, tira a meta e
+desconta o resto dos dias seguintes; a meta normal é recalculada devolvendo essas questões, então o plano continua
+agendando exatamente o que falta. O registro é gravado sozinho quando a pessoa passa da meta (página do cronograma,
+página inicial e fim de sessão leem o mesmo cálculo). Teste: `fixtures/testar_cronograma_adiantar.mjs`.
+Modo demonstração: `#/cronograma?demo=1&pendente` e `#/cronograma?demo=1&feita`.
+
 ## Como ficou (14/10/2026)
 
 - Motor: `src/dados/planoEstudo.ts` simula o plano dia a dia (`calculo.dias`), com passadas por prioridade

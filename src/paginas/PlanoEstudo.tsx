@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
-import { marcarAvisoSimulados, obterPlano, salvarOpcoes, salvarPlano } from '../conta/cronograma'
+import { guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano } from '../conta/cronograma'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
@@ -16,7 +16,7 @@ import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dad
 import { idsRevisaoHoje } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, HojeRetaFinal, MapaRisco } from './CronogramaHub'
-import { CartaoHoje, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
+import { CartaoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
 import { corDaArea } from '../dados/coresAreas'
 import '../estilos/paginas/CronogramaPainel.css'
 import { Carregando } from '../componentes/Estados'
@@ -61,7 +61,9 @@ function respondidasDemo(indice: Indice): Respondidas {
   for (let d = 5; d >= 0; d--) {
     const dia = new Date(); dia.setDate(dia.getDate() - d)
     if (dia.getDay() === 0) continue
-    for (let i = 0; i < (d === 0 ? 23 : d === 3 ? 12 : 55) && k < alvos.length; i++, k++) {
+    // `demo=1&feita` mostra o dia com a meta de hoje já feita (e além); `demo=1&pendente`, com pouco feito.
+    const deHoje = location.hash.includes('feita') ? 95 : location.hash.includes('pendente') ? 5 : 23
+    for (let i = 0; i < (d === 0 ? deHoje : d === 3 ? 12 : 55) && k < alvos.length; i++, k++) {
       const em = dia.getTime() - i * 60_000; const c = (k * 7) % 10 < 7
       r[alvos[k].id] = { c, q: em, historico: [{ em, correta: c }] } as unknown as RegistroQuestao
     }
@@ -96,6 +98,21 @@ export function PlanoEstudo() {
 
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
   useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
+  // Fez além da meta hoje: guarda o dia (e a meta dele), para amanhã a meta já vir mais leve.
+  const extraHoje = calculo?.extraHoje ?? 0
+  useEffect(() => {
+    if (DEMO || !plano || !calculo || !extraHoje || !opcoesComAdiantamento(plano, calculo)) return
+    let vivo = true
+    guardarAdiantamento(plano, calculo).then((p) => { if (vivo && p) definirPlano(p) })
+    return () => { vivo = false }
+  }, [plano, extraHoje]) // eslint-disable-line react-hooks/exhaustive-deps
+  // Vindo do fim da sessão ("adiantar"): rola até o painel.
+  const irAoAdiantar = typeof location !== 'undefined' && location.hash.includes('adiantar=1')
+  useEffect(() => {
+    if (!irAoAdiantar || !calculo) return
+    const t = setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250)
+    return () => clearTimeout(t)
+  }, [irAoAdiantar, !!calculo]) // eslint-disable-line react-hooks/exhaustive-deps
   const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
   // Os números do painel (constância, risco, esquecimento...) só mudam quando muda o histórico.
   const dadosHub = useMemo(() => {
@@ -129,12 +146,12 @@ export function PlanoEstudo() {
 
   const confirmarTroca = () => !sessao || !!sessao.concluidaEm || window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')
 
-  /** A sessão do dia: a área principal com a mistura espalhada (as duas da lista do dia). */
-  function comecarHoje() {
-    if (!indice || !calculo?.hoje || !plano) return
+  /** A sessão do dia: a área principal com a mistura espalhada (as duas da lista do dia), com o que a pessoa pediu para adiantar. */
+  function comecarHoje(c: CalculoPlano | null = calculo, p: PlanoSalvo | null | undefined = plano) {
+    if (!indice || !c?.hoje || !p) return
     if (!confirmarTroca()) return
-    const itens = calculo.hoje.itens.length ? calculo.hoje.itens : [{ slug: calculo.hoje.slug, n: calculo.hoje.n, mistura: false }]
-    const ids = idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), respondidas, incluiSimulados(plano))
+    const itens = c.hoje.itens.length ? c.hoje.itens : [{ slug: c.hoje.slug, n: c.hoje.n, mistura: false }]
+    const ids = idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), respondidas, incluiSimulados(p))
     const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
     iniciar(filtros, ids, { origem: 'cronograma' })
     navegar('/sessao')
@@ -158,16 +175,31 @@ export function PlanoEstudo() {
     navegar('/sessao')
   }
 
-  /** Adiantar: puxa as questões do próximo dia do plano, na mesma proporção das áreas dele. */
-  function adiantar(n: number) {
+  /**
+   * Adiantar n questões: soma ao que já foi adiantado hoje e guarda no plano (o motor tira
+   * isso de amanhã em diante). Com a meta de hoje feita, já abre a sessão com elas.
+   */
+  async function adiantar(n: number) {
     if (!indice || !calculo || !plano) return
-    const proximo = calculo.dias.slice(1).find((d) => d.total > 0)
-    if (!proximo || !confirmarTroca()) return
-    const fator = Math.min(1, n / proximo.total)
-    const itens = proximo.itens.map((i) => ({ slug: i.slug, n: Math.max(1, Math.round(i.n * fator)), mistura: i.mistura }))
-    const ids = idsDoDiaPlano(indice, itens, respondidas, incluiSimulados(plano))
-    iniciar({ ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma' })
-    navegar('/sessao')
+    const pedido = Math.max(calculo.extraHoje, calculo.adiantarPedido) + n
+    const opcoes = opcoesComAdiantamento(plano, calculo, pedido)
+    const novo = opcoes ? { ...plano, opcoes } : plano
+    definirPlano(novo)
+    if (calculo.faltaHoje === 0) comecarHoje(calcularPlano(indice, respondidas, novo), novo)
+    if (DEMO || !opcoes) return
+    definirSalvandoOpcoes(true)
+    try { const salvo = await guardarAdiantamento(plano, calculo, pedido); if (salvo && calculo.faltaHoje > 0) definirPlano(salvo) } finally { definirSalvandoOpcoes(false) }
+  }
+
+  /** Cancela o que foi pedido e ainda não foi feito (o que já foi feito a mais continua valendo). */
+  async function cancelarAdiantar() {
+    if (!calculo || !plano) return
+    const opcoes = opcoesComAdiantamento(plano, calculo, 0)
+    if (!opcoes) return
+    definirPlano({ ...plano, opcoes })
+    if (DEMO) return
+    definirSalvandoOpcoes(true)
+    try { const salvo = await guardarAdiantamento(plano, calculo, 0); if (salvo) definirPlano(salvo) } finally { definirSalvandoOpcoes(false) }
   }
 
   function marcarFeito(chave: keyof Omit<FeitosDoDia, 'data'>) {
@@ -219,6 +251,7 @@ export function PlanoEstudo() {
       feitosDia: feitosDia.data === chaveHoje() ? feitosDia : { data: chaveHoje() },
       minutosQuestao: minutosPorQuestao(lerHistorico()),
       aoSemanaDificil: semanaDificil,
+      aoCancelarAdiantar: cancelarAdiantar,
       salvandoOpcoes,
     }
   }
@@ -235,7 +268,7 @@ export function PlanoEstudo() {
     <div className="empilha-2 pe cp">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
     </div>
   )
 }
@@ -305,6 +338,7 @@ export interface HubDados {
   feitosDia: FeitosDoDia
   minutosQuestao: number
   aoSemanaDificil: (ativar: boolean) => void
+  aoCancelarAdiantar: () => void
   salvandoOpcoes: boolean
 }
 
@@ -327,32 +361,47 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
     if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: 4, estado: feitos.resumao ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href('/resumao'), aoClicar: () => hub?.aoMarcar('resumao') } : undefined })
+    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
     if (calculo.metaDiaria > 0) lista.push({
       id: 'novas', titulo: `${calculo.metaDiaria} questões novas`,
-      texto: <>{principal ? <>{mistura.length ? <>{principal.n} de {principal.nome} e {mistura.reduce((s, m) => s + m.n, 0)} de {mistura.map((m) => m.nome).join(' e ')} para misturar</> : principal.nome}</> : 'Do cronograma'}{incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados no meio' : ''}. {calculo.feitasHoje > 0 ? `${calculo.feitasHoje} de ${calculo.metaDiaria} feitas.` : ''}</>,
+      texto: <>{principal && !metaFeita ? <>{mistura.length ? (calculo.adiantarFalta > 0 ? <>{principal.nome}, com {mistura.map((m) => m.nome).join(' e ')} para misturar</> : <>{principal.n} de {principal.nome} e {mistura.reduce((s, m) => s + m.n, 0)} de {mistura.map((m) => m.nome).join(' e ')} para misturar</>) : principal.nome}</> : 'Do cronograma'}{incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados no meio' : ''}. {calculo.feitasHoje > 0 ? `${Math.min(calculo.feitasHoje, calculo.metaDiaria)} de ${calculo.metaDiaria} feitas.` : ''}{jaAdiantado}</>,
       minutos: calculo.metaDiaria * minutos, estado: metaFeita ? 'feito' : calculo.feitasHoje > 0 || pendente ? 'agora' : 'afazer',
       progresso: { feitas: Math.min(calculo.feitasHoje, calculo.metaDiaria), total: calculo.metaDiaria },
+    })
+    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `As ${calculo.adiantadoHoje} questões de hoje você fez antes. Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
+    const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
+    if (adiantando > 0) lista.push({
+      id: 'adiantadas', titulo: `+${adiantando} adiantadas`,
+      texto: calculo.adiantarFalta > 0 ? `Pedidas para adiantar: ${Math.min(calculo.extraHoje, adiantando)} de ${adiantando} feitas.` : 'Feitas além da meta. Saem dos próximos dias.',
+      minutos: calculo.adiantarFalta > 0 ? adiantando * minutos : null, estado: calculo.adiantarFalta > 0 ? (calculo.extraHoje > 0 ? 'agora' : 'afazer') : 'feito',
+      progresso: calculo.adiantarFalta > 0 ? { feitas: Math.min(calculo.extraHoje, adiantando), total: adiantando } : undefined,
     })
     if (calculo.miniHoje) lista.push({ id: 'mini', titulo: `Mini-simulado de ${TAMANHO_MINI} questões`, texto: 'Cronometrado, com o que você já viu nas últimas semanas, misturado como na prova. Os seus erros e dúvidas vêm primeiro.', minutos: TAMANHO_MINI * 1.5, estado: feitos.mini ? 'feito' : 'afazer', acao: aberto && hub ? { rotulo: 'Começar', aoClicar: hub.aoMini } : undefined })
   }
   if (hub && !calculo.provaPassou && !calculo.naRetaFinal) {
-    lista.push(hub.revisoesHoje > 0
-      ? { id: 'revisoes', titulo: `${hub.revisoesHoje} ${hub.revisoesHoje === 1 ? 'revisão' : 'revisões'}`, texto: 'Erros, chutes e dúvidas que voltam hoje, no tempo certo para fixar.', minutos: hub.revisoesHoje * minutos, estado: 'afazer', acao: { rotulo: 'Revisar', href: href('/revisao') } }
-      : { id: 'revisoes', titulo: 'Revisões em dia', texto: 'Nenhuma questão para rever hoje.', minutos: null, estado: 'feito' })
-    lista.push({ id: 'flashcards', titulo: 'Flashcards', texto: 'Uma rodada curta na Biblioteca para fixar o que você errou.', minutos: 5, estado: feitos.flashcards ? 'feito' : 'afazer', opcional: true, acao: { rotulo: 'Abrir', href: href('/flashcards'), aoClicar: () => hub.aoMarcar('flashcards') } })
+    // Revisões e flashcards ajudam a fixar, mas não são obrigatórios: ficam à parte, sem contar na meta.
+    if (hub.revisoesHoje > 0) lista.push({ id: 'revisoes', titulo: `${hub.revisoesHoje} ${hub.revisoesHoje === 1 ? 'revisão' : 'revisões'}`, texto: `Erros, chutes e dúvidas que voltam hoje · ~${formatarTempo(hub.revisoesHoje * minutos)}.`, minutos: hub.revisoesHoje * minutos, estado: 'afazer', opcional: true, acao: { rotulo: 'Revisar', href: href('/revisao') } })
+    lista.push({ id: 'flashcards', titulo: 'Flashcards', texto: 'Uma rodada curta para fixar o que você errou · ~5 min.', minutos: 5, estado: feitos.flashcards ? 'feito' : 'afazer', opcional: true, acao: { rotulo: 'Abrir', href: href('/flashcards'), aoClicar: () => hub.aoMarcar('flashcards') } })
   }
 
   // ── O botão único ──
   let botao: Parameters<typeof CartaoHoje>[0]['botao'] = null
   if (!aberto) botao = { rotulo: 'Criar meu cronograma', detalhe: 'Exclusivo para assinantes', href: href('/assinatura'), ouro: true }
   else if (pendente) botao = { rotulo: `Continuar: faltam ${pendente.total - pendente.feitas} questões`, detalhe: `Você parou na ${pendente.feitas + 1}ª. As que já respondeu ficam salvas.`, href: href('/sessao') }
-  else if (calculo.hoje && calculo.faltaHoje > 0) botao = { rotulo: calculo.feitasHoje > 0 ? `Continuar: faltam ${calculo.faltaHoje} questões` : `Começar: ${calculo.faltaHoje} questões`, detalhe: principal ? `${principal.nome}${mistura.length ? ` + ${mistura.map((m) => m.nome).join(' e ')}` : ''} · ~${formatarTempo(calculo.faltaHoje * minutos)}` : undefined, aoClicar: aoComecar }
+  else if (calculo.hoje && calculo.faltaHoje + calculo.adiantarFalta > 0) {
+    const n = calculo.faltaHoje + calculo.adiantarFalta
+    const so = calculo.faltaHoje === 0
+    botao = { rotulo: so ? `Continuar: faltam ${n} adiantadas` : calculo.feitasHoje > 0 ? `Continuar: faltam ${n} questões` : `Começar: ${n} questões`, detalhe: `${principal ? `${principal.nome}${mistura.length ? ` + ${mistura.map((m) => m.nome).join(' e ')}` : ''}` : 'Do cronograma'}${calculo.adiantarFalta > 0 && !so ? `, com ${calculo.adiantarFalta} adiantadas` : ''} · ~${formatarTempo(n * minutos)}`, aoClicar: aoComecar }
+  }
   else if (calculo.miniHoje && !feitos.mini && hub) botao = { rotulo: 'Fazer o mini-simulado', detalhe: `${TAMANHO_MINI} questões · ~45 min`, aoClicar: hub.aoMini }
-  else if (hub && hub.revisoesHoje > 0) botao = { rotulo: `Fazer as revisões (${hub.revisoesHoje})`, detalhe: 'A meta de questões novas de hoje já está feita', href: href('/revisao') }
-  else if (aoAdiantar && calculo.amanha && calculo.amanha.total > 0) botao = { rotulo: `Adiantar amanhã (${Math.min(calculo.amanha.total, Math.max(10, calculo.metaDiaNormal))})`, detalhe: 'Dia de hoje completo. O que adiantar alivia os próximos dias.', aoClicar: () => aoAdiantar(Math.min(calculo.amanha!.total, Math.max(10, calculo.metaDiaNormal))) }
+  // Meta feita: o destaque passa a ser o painel de adiantar (e as revisões ficam como extra, sem cobrança).
+  const podeAdiantar = aberto && !!aoAdiantar && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
+  const painelAdiantar = podeAdiantar && hub ? <PainelAdiantar calculo={calculo} minutos={minutos} destaque={!botao} salvando={hub.salvandoOpcoes} aoAdiantar={aoAdiantar!} aoCancelar={hub.aoCancelarAdiantar} /> : null
 
-  const tituloHoje = calculo.provaPassou ? 'A prova chegou' : folgaHoje ? 'Hoje é folga' : calculo.restante === 0 && !calculo.naRetaFinal ? 'Você cumpriu o cronograma inteiro' : metaFeita && !calculo.miniHoje ? 'Meta de hoje feita' : principal ? principal.nome : calculo.miniHoje ? 'Dia de mini-simulado' : 'Hoje'
-  const porQue = folgaHoje ? 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias. Se quiser, faça as revisões ou adiante amanhã.'
+  const tituloHoje = calculo.provaPassou ? 'A prova chegou' : folgaHoje ? 'Hoje é folga' : calculo.restante === 0 && !calculo.naRetaFinal ? 'Você cumpriu o cronograma inteiro' : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Hoje já está adiantado' : metaFeita && !calculo.miniHoje ? 'Meta de hoje feita' : principal ? principal.nome : calculo.miniHoje ? 'Dia de mini-simulado' : 'Hoje'
+  const porQue = folgaHoje ? 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias. Se quiser, adiante o próximo dia de estudo.'
+    : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Você fez as questões de hoje num dia anterior. Pode descansar ou adiantar mais.'
+    : metaFeita ? `Feito: ${calculo.metaDiaria} questões. Revisões e flashcards são extras, se sobrar tempo.`
     : calculo.tipoHoje === 'leve' ? `Dia leve (plantão): só ${calculo.metaDiaria} questões. ${principal ? porQueHoje(calculo, principal.slug, plano.prova).replace('Por que hoje: ', 'A área: ') : ''}`
     : calculo.tipoHoje === 'dificil' ? `Semana difícil: só o dia mínimo (${calculo.metaDiaria} questões), para não quebrar a sequência.`
     : principal ? porQueHoje(calculo, principal.slug, plano.prova) : calculo.restante === 0 ? 'Mantenha a revisão em dia e faça o Simulado Nacional do mês.' : ''
@@ -368,7 +417,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
       <div className="cp-col cp-col--principal">
         <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
           ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} />
-          : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} />}</div>
+          : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar} />}</div>
         {(hub?.mostrarDiagnostico || (hub?.esquecidos.length ?? 0) > 0) && <div className="cp-ordem-2">
           {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
           {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}

@@ -9,6 +9,7 @@
 .cp-rotulo b { font-size: 0.82rem; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--texto); }
 .cp-tag { display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.45rem; border-radius: 999px; background: var(--verdete-veu); color: var(--verdete); font-size: 0.66rem; font-weight: 800; vertical-align: 0.15em; }
 .cp-tag--ouro { background: var(--ouro-veu); color: var(--ouro-texto); }
+.cp-tag--verde { background: color-mix(in srgb, var(--cp-feito) 14%, var(--superficie)); color: var(--cp-feito); }
 
 /* ── Onde você está ── */
 .cp-onde { position: relative; overflow: hidden; padding: clamp(1.1rem, 3vw, 1.6rem) clamp(1.1rem, 3vw, 1.8rem) clamp(1.6rem, 3.5vw, 2.2rem); border-radius: var(--raio-cartao); background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media); }
@@ -60,6 +61,9 @@
 .cp-lista__fim { display: grid; justify-items: end; gap: 0.25rem; }
 .cp-lista__tempo { font-size: 0.78rem; font-weight: 700; color: var(--texto-2); white-space: nowrap; }
 .cp-lista__item--feito .cp-lista__tempo { color: var(--cp-feito); }
+/* As adiantadas são bônus: feitas, mas sem riscar. */
+.cp-lista__item--adiantadas .cp-lista__texto strong { text-decoration: none; }
+.cp-lista__item--feito.cp-lista__item--adiantadas .cp-lista__texto strong { color: var(--cp-feito); }
 .cp-lista__acao { padding: 0.25rem 0.7rem; border-radius: 999px; border: 1px solid var(--traco); background: var(--superficie-2); color: var(--verdete); font: inherit; font-size: 0.78rem; font-weight: 750; text-decoration: none; cursor: pointer; white-space: nowrap; }
 .cp-lista__acao:hover { border-color: var(--verdete); }
 .cp-hoje__total { display: flex; justify-content: space-between; gap: 1rem; margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
@@ -72,6 +76,47 @@
 .cp-hoje__teto { display: flex; gap: 0.4rem; align-items: flex-start; margin: 0; padding: 0.55rem 0.7rem; border-radius: var(--raio-controle); background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.78rem; line-height: 1.4; }
 .cp-hoje__teto svg { flex: none; margin-top: 0.1rem; }
 
+/* Extras (revisões, flashcards): ajudam, mas não contam na meta. */
+.cp-extras { display: grid; gap: 0.15rem; padding: 0.55rem 0.75rem 0.2rem; border-radius: var(--raio-controle); background: var(--superficie-2); border: 1px dashed var(--traco); }
+.cp-extras__titulo { display: flex; align-items: baseline; gap: 0.5rem; margin: 0; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--texto-2); }
+.cp-extras__titulo small { font-size: 0.68rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+.cp-lista--extras .cp-lista__item { padding: 0.45rem 0; }
+.cp-lista--extras .cp-lista__marca { width: 1.35rem; height: 1.35rem; border-style: dashed; font-size: 0.85rem; }
+.cp-lista--extras .cp-lista__texto strong { font-size: 0.86rem; }
+.cp-lista--extras .cp-lista__tempo { display: none; }
+
+/* ── Adiantar: sempre à vista; depois da meta feita, vira o destaque ── */
+.cp-adiantar { --cp-adiantar: var(--verdete); display: grid; gap: 0.6rem; padding: 0.75rem; border-radius: var(--raio-controle); background: color-mix(in srgb, var(--cp-adiantar) 6%, var(--superficie)); border: 1px solid color-mix(in srgb, var(--cp-adiantar) 30%, var(--traco)); scroll-margin: 6rem; }
+.cp-adiantar__cabeca { display: flex; gap: 0.6rem; align-items: center; }
+.cp-adiantar__cabeca strong { display: block; font-size: 0.95rem; }
+.cp-adiantar__cabeca small { display: block; font-size: 0.78rem; line-height: 1.35; color: var(--texto-2); }
+.cp-adiantar__icone { flex: none; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--cp-adiantar); color: #fff; }
+.cp-adiantar__opcoes { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.45rem; }
+.cp-adiantar__opcoes > * { grid-column: span 2; }
+.cp-adiantar__opcoes > .cp-adiantar__opcao--dia { grid-column: span 3; }
+.cp-adiantar__opcoes > .cp-adiantar__opcao--sozinha { grid-column: 1 / -1; }
+.cp-adiantar__opcao { display: grid; gap: 0.1rem; justify-items: start; padding: 0.55rem 0.65rem; border-radius: var(--raio-controle); border: 1.5px solid color-mix(in srgb, var(--cp-adiantar) 35%, var(--traco)); background: var(--superficie); color: var(--texto); font: inherit; text-align: left; cursor: pointer; box-shadow: 0 2px 0 color-mix(in srgb, var(--cp-adiantar) 25%, var(--traco)); transition: transform 0.08s, border-color 0.12s, background 0.12s; }
+.cp-adiantar__opcao b { font-family: var(--fonte-marca); font-size: 1.05rem; color: var(--cp-adiantar); }
+.cp-adiantar__opcao small { font-size: 0.7rem; line-height: 1.25; color: var(--texto-2); }
+.cp-adiantar__opcao em { font-style: normal; font-size: 0.68rem; font-weight: 700; color: var(--texto-2); }
+.cp-adiantar__opcao--dia { background: color-mix(in srgb, var(--cp-adiantar) 9%, var(--superficie)); }
+.cp-adiantar__opcao:hover:not(:disabled) { border-color: var(--cp-adiantar); }
+.cp-adiantar__opcao:active:not(:disabled) { transform: translateY(2px); box-shadow: none; }
+.cp-adiantar__opcao:focus-visible { outline: 3px solid color-mix(in srgb, var(--cp-adiantar) 55%, transparent); outline-offset: 2px; }
+.cp-adiantar__opcao:disabled { opacity: 0.6; cursor: wait; }
+.cp-adiantar__estado { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.6rem; margin: 0; padding: 0.45rem 0.6rem; border-radius: var(--raio-controle); background: color-mix(in srgb, var(--cp-feito) 10%, var(--superficie)); color: var(--texto-2); font-size: 0.78rem; line-height: 1.35; }
+.cp-adiantar__estado > svg { color: var(--cp-feito); }
+.cp-adiantar__estado > span { flex: 1 1 12rem; }
+.cp-adiantar__estado b { color: var(--texto); }
+.cp-adiantar__cancelar { padding: 0.15rem 0.55rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie); color: var(--texto-2); font: inherit; font-size: 0.72rem; font-weight: 700; cursor: pointer; }
+.cp-adiantar__cancelar:hover { color: var(--erro); border-color: var(--erro); }
+/* Meta feita: o painel dourado no lugar do botão. */
+.cp-adiantar--destaque { --cp-adiantar: var(--cp-agora); padding: 0.95rem; background: linear-gradient(160deg, color-mix(in srgb, #f4cf7c 22%, var(--superficie)), var(--superficie) 75%); border: 2px solid color-mix(in srgb, #f4cf7c 70%, var(--cp-agora)); box-shadow: 0 4px 0 color-mix(in srgb, #c9952f 45%, transparent); }
+.cp-adiantar--destaque .cp-adiantar__cabeca strong { font-family: var(--fonte-marca); font-size: 1.15rem; }
+.cp-adiantar--destaque .cp-adiantar__icone { width: 2.4rem; height: 2.4rem; background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; }
+.cp-adiantar--destaque .cp-adiantar__opcao--dia b { color: var(--ouro-texto); }
+@media (prefers-reduced-motion: reduce) { .cp-adiantar__opcao { transition: none; } .cp-adiantar__opcao:active:not(:disabled) { transform: none; } }
+
 /* ── Amanhã ── */
 .cp-amanha { display: grid; grid-template-columns: 6px minmax(0, 1fr) auto; gap: 0.8rem; align-items: center; padding: 0.8rem 1rem; border-radius: var(--raio-cartao); background: var(--superficie); border: 1px solid var(--traco); }
 .cp-amanha__cor { align-self: stretch; border-radius: 3px; }
@@ -79,6 +124,7 @@
 .cp-amanha small { display: block; margin-top: 0.15rem; font-size: 0.78rem; line-height: 1.35; color: var(--texto-2); }
 .cp-amanha__n { display: grid; justify-items: end; line-height: 1; }
 .cp-amanha__n b { font-family: var(--fonte-marca); font-size: 1.3rem; }
+.cp-amanha__n s { font-size: 0.75rem; font-weight: 700; color: var(--texto-2); margin-bottom: 0.1rem; }
 .cp-amanha__n small { margin: 0.2rem 0 0; font-size: 0.65rem; }
 
 /* ── Esta semana ── */
@@ -98,6 +144,8 @@
 .cp-dia--hoje { background: var(--cp-agora-veu); outline: 2px solid var(--cp-agora); outline-offset: -2px; }
 .cp-dia--hoje em { color: var(--cp-agora); }
 .cp-dia--folga { background: repeating-linear-gradient(135deg, var(--superficie-2) 0 5px, color-mix(in srgb, var(--traco) 70%, transparent) 5px 10px); }
+.cp-dia--adiantado em { color: var(--cp-feito); }
+.cp-dia--adiantado .cp-dia__cor { opacity: 0.45; }
 .cp-dia--mini .cp-dia__nome::after { content: ' ★'; color: var(--cp-agora); }
 .cp-legenda { display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; margin: 0; padding: 0; list-style: none; font-size: 0.72rem; font-weight: 650; color: var(--texto-2); }
 .cp-legenda li { display: inline-flex; align-items: center; gap: 0.3rem; }
@@ -140,7 +188,10 @@
 .cp-recolhido > summary span { flex: 1; }
 .cp-recolhido > summary > svg:last-child { color: var(--texto-2); transition: transform 0.15s ease; }
 .cp-recolhido[open] > summary > svg:last-child { transform: rotate(180deg); }
-.cp-recolhido__corpo { display: grid; gap: 0.8rem; padding: 0 1rem 1rem; }
+.cp-recolhido__corpo { display: grid; gap: 0.8rem; padding: 0 1rem 1rem; container-type: inline-size; }
+/* Os Simulados dentro do bloco recolhido (estreito mesmo no computador): uma coluna. */
+@container (max-width: 40rem) { .cp-recolhido__corpo .pe-simulados { grid-template-columns: auto minmax(0, 1fr); } .cp-recolhido__corpo .pe-simulados__acoes { grid-column: 1 / -1; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); } }
+@container (max-width: 26rem) { .cp-recolhido__corpo .pe-simulados { grid-template-columns: minmax(0, 1fr); } .cp-recolhido__corpo .pe-simulados__icone { width: 3.2rem; height: 3.2rem; } }
 .cp-recolhido__corpo > .cartao, .cp-recolhido__corpo > section { box-shadow: none; }
 
 .cp-prontidao ul { list-style: none; margin: 0.6rem 0 0; padding: 0; display: grid; gap: 0.55rem; }
