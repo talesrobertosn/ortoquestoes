@@ -2278,3 +2278,5 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
   .fc-modal .fc-topo-botao { min-width: 32px; min-height: 32px; }
   .fc-modal .fc-topo__acoes .fc-topo-botao[title="Ajustes"] { display: none; } /* telas de 320 px: o volume continua no botão de som */
 }
+/* celular em pé: o som e o X ficam no canto de cima; a entrada desce o título para não ficar embaixo deles */
+@media (max-width: 640px) and (orientation: portrait) { .fc-entrada__cabeca { padding-top: 34px; } }
