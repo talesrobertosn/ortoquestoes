@@ -102,7 +102,7 @@ export function CentralFlashcards() {
             <a className="botao botao--ouro botao--grande" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Treinar flashcards</a>
             <a className="botao botao--principal" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={18} /> Jogar a Cripta</a>
           </div>
-          {LIMITES_HABILITADOS && <p className="cf-nota">Conta grátis: 10 flashcards a cada 24 horas. Assinante: sem limite.</p>}
+          {LIMITES_HABILITADOS && <p className="cf-nota">Conta grátis: a cada 24 horas, 10 flashcards na Biblioteca ou uma vida na Cripta. Assinante: sem limite.</p>}
         </div>
       </section>
 

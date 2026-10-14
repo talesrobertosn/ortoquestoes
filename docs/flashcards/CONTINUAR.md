@@ -40,7 +40,7 @@ Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com o PR #227 aberto p
 **Já feito no PR #227:**
 - ordem da Cripta em 4 grupos;
 - poderes Mapa do especialista e Desvio de área, mais o talento "Rota de estudo";
-- 3 tentativas grátis na Cripta (SQL parte 19, que **o Tales precisa colar no Supabase**);
+- conta grátis: a cada 24 horas, 10 flashcards na Biblioteca **ou** uma vida na Cripta (SQL parte 19, `sql-202610140900-parte19.sql`, que **o Tales precisa colar no Supabase**);
 - opiniões no painel do admin;
 - página de Flashcards reorganizada, com o cronograma em destaque;
 - volume inicial de 20%;

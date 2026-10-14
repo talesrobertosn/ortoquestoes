@@ -41,12 +41,12 @@ export async function autorizarFlashcard(idFlashcard: string, chave = novaChave(
   }
 }
 
-export interface LimiteCripta extends LimiteFlashcard { tentativa?: number; tentativas?: number; cripta?: boolean }
+export interface LimiteCripta extends LimiteFlashcard { cripta?: boolean }
 
 /**
- * Cripta (parte 19 do SQL, 14/10/2026): a conta grátis tem 3 tentativas (corridas) no total;
- * cada partida nova, depois de morrer ou recomeçar, gasta uma. Assinante sem limite. Nessa
- * contagem a Cripta não gasta os 10 flashcards por 24 h da Biblioteca.
+ * Cripta (parte 19 do SQL, regra de 14/10/2026): a cada 24 horas, a conta grátis faz 10 flashcards
+ * na Biblioteca OU joga uma vida (uma corrida) na Cripta. Morrer ou recomeçar abre outra corrida,
+ * que só vale na janela seguinte. Assinante sem limite.
  * Enquanto a função não existir no banco (SQL ainda não colado), cai no limite antigo.
  */
 export async function autorizarFlashcardCripta(idFlashcard: string, chave: string, corrida: string, modo: 'masmorra' | 'torre'): Promise<LimiteCripta> {
@@ -54,7 +54,7 @@ export async function autorizarFlashcardCripta(idFlashcard: string, chave: strin
   try {
     const prazo = new Promise<never>((_, rejeitar) => setTimeout(() => rejeitar(new Error('A validação demorou demais.')), 10_000))
     const r = (await Promise.race([chamarRpc<Array<Record<string, unknown>>>('autorizar_flashcard_cripta', { p_chave_idempotencia: chave, p_id_flashcard: idFlashcard, p_corrida: corrida, p_modo: modo }), prazo]))[0]
-    return { permitido: Boolean(r.permitido), ilimitado: Boolean(r.ilimitado), restantes: null, liberaEm: '', tentativa: Number(r.tentativa), tentativas: Number(r.tentativas), motivo: r.motivo ? String(r.motivo) : undefined, cripta: true }
+    return { permitido: Boolean(r.permitido), ilimitado: Boolean(r.ilimitado), restantes: null, liberaEm: r.libera_em ? String(r.libera_em) : '', motivo: r.motivo ? String(r.motivo) : undefined, cripta: true }
   } catch (erro) {
     // 404: a função ainda não foi criada no banco; segue o limite de 10 por 24 h
     if (erro instanceof Error && 'status' in erro && (erro as { status?: number }).status === 404) return autorizarFlashcard(idFlashcard, chave)

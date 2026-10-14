@@ -104,13 +104,14 @@ function partidaSalva(modo: Modo): Partida | null {
 }
 
 /**
- * Partida nova com a corrida aberta no servidor. A corrida é a "tentativa" da conta grátis
- * (3 no total, parte 19 do SQL) e vale para o ranking quando ele estiver ligado.
+ * Partida nova com a corrida aberta no servidor. A corrida é a "vida" da conta grátis
+ * (uma por 24 h, no lugar dos 10 flashcards da Biblioteca; parte 19 do SQL) e vale para o
+ * ranking quando ele estiver ligado.
  */
 function comCorrida(p: Partida): Partida {
   if (!FLASHCARDS_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
   const idCorrida = crypto.randomUUID()
-  // o Fácil não conta para o ranking (só abre a corrida da tentativa)
+  // o Fácil não conta para o ranking (só abre a corrida da vida grátis)
   if (NIVEIS[nivelDaPartida(p)].ranqueado && RANKING_NO_SERVIDOR) void iniciarCorrida(idCorrida, p.modo, nivelDaPartida(p) === 'dificil' ? 'dificil' : 'normal')
   return { ...p, idCorrida }
 }
@@ -220,8 +221,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
   const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
   const [bloqueio, definirBloqueio] = useState<LimiteCripta | null>(null)
-  /** Conta grátis: "tentativa 2 de 3" (vem do servidor na primeira resposta de cada partida). */
-  const [tentativa, definirTentativa] = useState<{ n: number; de: number } | null>(null)
+  /** Conta grátis: a partida é a vida grátis destas 24 h (vem do servidor na primeira resposta). */
+  const [vidaGratis, definirVidaGratis] = useState(false)
   const [lamina, definirLamina] = useState(0)
   const [ajuda, definirAjuda] = useState<number | null>(null)
   const [tituloChefe, definirTituloChefe] = useState<Inimigo | null>(null)
@@ -926,13 +927,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
       validando.current = true
       const chave = chaves.current.get(p.rodada) ?? crypto.randomUUID()
       chaves.current.set(p.rodada, chave)
-      // partida salva antes das tentativas: abre a corrida agora
+      // partida salva antes da regra da vida grátis: abre a corrida agora
       let q = p
       if (!q.idCorrida && typeof crypto !== 'undefined' && 'randomUUID' in crypto) { q = { ...p, idCorrida: crypto.randomUUID() }; partidaRef.current = q; definirPartida(q) }
       const r = q.idCorrida ? await autorizarFlashcardCripta(q.atual!.id, chave, q.idCorrida, q.modo) : { permitido: true, ilimitado: true, restantes: null, liberaEm: '' }
       validando.current = false
       if (!r.permitido) { definirBloqueio(r); return }
-      definirTentativa(r.cripta && !r.ilimitado && r.tentativa && r.tentativas ? { n: Math.min(r.tentativa, r.tentativas), de: r.tentativas } : null)
+      definirVidaGratis(Boolean(r.cripta && !r.ilimitado))
       // sem a função nova no banco, o flashcard foi autorizado pelo limite antigo: liga à corrida à parte
       if (!r.cripta && q.idCorrida) void vincularFlashcard(chave, q.idCorrida)
       if (partidaRef.current !== q) return
@@ -1112,7 +1113,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                       })}
                     </span>
                     <b>Andar {partida.andar}</b>{ciclo ? ` · ato ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts <span className="fc-bolsa" title={`${partida.ouro} moedas para a Caixeira do Arsenal · ${cristaisAltar} cristais no Altar`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>{cansaco < 1 && <span className="fc-desgaste" title={`Desgaste: as curas rendem ${Math.round(cansaco * 100)}% neste trecho`}>cura {Math.round(cansaco * 100)}%</span>}
-                    {tentativa && <span className="fc-tentativa" title="Conta grátis: 3 tentativas na Cripta. Assinantes jogam sem limite.">Tentativa grátis {tentativa.n}/{tentativa.de}</span>}
+                    {vidaGratis && <span className="fc-tentativa" title="Conta grátis: a cada 24 horas, uma vida na Cripta ou 10 flashcards na Biblioteca. Assinantes jogam sem limite.">Vida grátis de hoje</span>}
                   </span>
                 )}
               </>
@@ -1348,12 +1349,11 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         {bloqueio && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-limite-titulo">
             <div className="fc-janela">
-              <h2 id="fc-limite-titulo">{bloqueio.falha ? 'Não deu para validar' : bloqueio.cripta ? 'Suas 3 tentativas grátis acabaram' : 'Limite grátis de hoje'}</h2>
+              <h2 id="fc-limite-titulo">{bloqueio.falha ? 'Não deu para validar' : 'Limite grátis de hoje'}</h2>
               <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.'
-                : bloqueio.cripta ? 'A conta grátis testa a Cripta com 3 tentativas. Assinantes jogam sem limite. Na Biblioteca, você continua treinando 10 flashcards grátis a cada 24 horas.'
+                : bloqueio.cripta ? `A cada 24 horas, a conta grátis joga uma vida na Cripta ou faz 10 flashcards na Biblioteca. ${bloqueio.motivo ?? ''}${bloqueio.liberaEm ? ` Libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}.` : ''} Assinantes jogam sem limite.`
                 : `Você usou os 10 flashcards grátis destas 24 horas${bloqueio.liberaEm ? `; libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`}</p>
               <div className="fc-janela__botoes">
-                {bloqueio.cripta && !bloqueio.falha && <button type="button" className="fc-botao fc-botao--secundario" onClick={() => { definirBloqueio(null); pular(); definirModo('estudo') }}>Ir para a Biblioteca</button>}
                 <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirBloqueio(null)}>{bloqueio.falha ? 'Tentar de novo' : 'Agora não'}</button>
                 {!bloqueio.falha && <a className="fc-botao" href={href('/assinatura')}>Ver os planos</a>}
               </div>
