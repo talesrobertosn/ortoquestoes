@@ -7,6 +7,7 @@
  *   masmorra    Masmorra (`scripts/cenarios/masmorra.py`), 2º andar e o resto dos atos de masmorra
  *   caverna     Caverna dos Cristais (`scripts/cenarios/caverna.py`): rocha em névoa azul, cristais, lago e a fenda de luz
  *   laboratorio Laboratório do Alquimista (`scripts/cenarios/laboratorio.py`): frascos, caldeirão e o negatoscópio com o molde da placa
+ *   catacumba   Catacumba das Velas (`scripts/cenarios/catacumba.py`): portão com luz verde, sarcófagos, urnas e velas (sem ossos)
  *   salao       Salão do Trono (`scripts/cenarios/salao.py`), onde moram os chefes: colunas, vitral e tapete vermelho
  *
  * Diferente das outras cenas, que são pintadas em código a cada tamanho, estas
@@ -29,7 +30,7 @@ type Camada = (typeof CAMADAS)[number]
 export type ImagensCenario = Record<Formato, Record<Camada, HTMLImageElement>>
 
 /** Cena do jogo → nome do arquivo pintado. */
-export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio' }
+export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio', catacumba: 'catacumba' }
 
 const promessas = new Map<string, Promise<ImagensCenario | null>>()
 const prontas = new Map<string, ImagensCenario | null>()
