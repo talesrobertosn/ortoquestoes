@@ -206,31 +206,4 @@
 .rk .rk-heroi__posicao { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 3.6rem; }
 @media (prefers-reduced-motion: reduce) { .rk-heroi__tocha { animation: none; } }
 
-/* "Subindo rápido": a pista dos que mais subiram, numa placa de jogo. */
-.rk .rk-alta {
-  display: grid; gap: 0.8rem; margin: 6px; padding: 1rem;
-  background: #13211e; background-image: radial-gradient(rgba(244, 207, 124, 0.08) 1px, transparent 1px); background-size: 8px 8px;
-  border: 0; box-shadow: 0 0 0 3px var(--px-ouro), 0 0 0 6px #13211e, 7px 7px 0 6px rgba(0, 0, 0, 0.25);
-}
-.rk-alta__cabeca { display: flex; align-items: center; justify-content: center; gap: 0.6rem; }
-.rk-alta__cabeca img { image-rendering: pixelated; animation: rk-tocha 0.5s steps(2) infinite; }
-.rk-alta__cabeca h2 { margin: 0; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 2.2rem; line-height: 1; letter-spacing: 0.03em; color: var(--px-ouro); text-shadow: 0 3px 0 #6b4a0c; }
-.rk .rk-alta__lista { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
-.rk .rk-alta__item {
-  position: relative; display: flex; align-items: center; gap: 0.65rem; min-width: 0; padding: 0.65rem 0.75rem; transform: none;
-  background: #1c2e2a; color: #f7ecd2; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1), 3px 3px 0 rgba(0, 0, 0, 0.35);
-}
-.rk .rk-alta__item--lider { background: #2a3a22; box-shadow: inset 0 0 0 2px var(--px-ouro), 3px 3px 0 rgba(0, 0, 0, 0.35); }
-.rk .rk-alta__item--voce { background: #3a2f12; box-shadow: inset 0 0 0 2px var(--px-ouro), 3px 3px 0 rgba(0, 0, 0, 0.35); }
-.rk-alta__salto { display: grid; justify-items: center; flex: none; min-width: 3.2rem; padding: 0.2rem 0.3rem; background: #1f7a4d; box-shadow: 2px 2px 0 #0b3a24; }
-.rk-alta__salto b { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.7rem; line-height: 0.95; color: #e9fff3; }
-.rk-alta__salto small { font-size: 0.66rem; font-weight: 750; text-transform: uppercase; color: #bff0d5; }
-.rk .rk-alta__avatar { flex: none; display: grid; place-items: center; width: 2.3rem; height: 2.3rem; font-family: var(--fonte-pixel); font-weight: 700; color: var(--px-tinta); background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); text-shadow: none; }
-.rk .rk-alta__nome { display: grid; min-width: 0; flex: 1; line-height: 1.2; }
-.rk .rk-alta__nome strong { font-family: var(--fonte-texto); font-weight: 750; font-size: 0.98rem; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.rk .rk-alta__nome small { color: #cdbb94; font-size: 0.8rem; font-weight: 600; }
-.rk .rk-alta__nome small b { color: var(--px-ouro); }
-.rk-alta__fogo { flex: none; image-rendering: pixelated; }
-@media (prefers-reduced-motion: reduce) { .rk-alta__cabeca img { animation: none; } }
-.rk .rk-alta__item:nth-child(n) { transform: none; }
 @media (max-width: 40rem) { .rk-heroi__tocha { display: none; } }
