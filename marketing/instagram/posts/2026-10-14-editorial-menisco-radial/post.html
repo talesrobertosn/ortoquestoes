@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Editorial: lesão meniscal radial</title>
+<!-- Estilo "editorial" (novo, sem temática): papel marfim, tinta azul-petróleo, Playfair Display nos
+     títulos, Inter no texto, fios finos e o dourado da marca só na alternativa certa.
+     Questão joelho-0189 (TEOT 2025, questão 105), gabarito A (radial). A única anatomia é a figura
+     original da questão, recortada só para tirar a marca solta do canto inferior.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-14-editorial-menisco-radial/post.html -->
+<style>
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; font-style: italic; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --papel: #f6f2ea; --papel2: #ede7db; --tinta: #13262e; --tinta2: #4a5a60; --fio: #d6cdbd; --petroleo: #14655e; --ouro: #c99a3c; --ouro-claro: #f4cf7c; --branco: #fffdf9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: var(--tinta); background: var(--papel); }
+section.story { height: 1920px; }
+section.escuro { background: var(--tinta); color: var(--papel); }
+/* Moldura fina e cabeçalho de revista. */
+.moldura { position: absolute; inset: 36px; border: 1.5px solid var(--fio); border-radius: 6px; pointer-events: none; }
+.escuro .moldura { border-color: rgba(246,242,234,.18); }
+.topo { position: absolute; left: 80px; right: 80px; top: 78px; display: flex; justify-content: space-between; align-items: center; font: 600 24px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--tinta2); }
+.escuro .topo { color: rgba(246,242,234,.6); }
+.topo .num { font: italic 500 30px Playfair; letter-spacing: 0; text-transform: none; color: var(--ouro); }
+.rodape { position: absolute; left: 80px; right: 80px; bottom: 78px; display: flex; justify-content: space-between; align-items: center; font: 500 24px Inter; color: var(--tinta2); }
+.escuro .rodape { color: rgba(246,242,234,.6); }
+.marca { display: flex; align-items: center; gap: 12px; font: 28px Inter; letter-spacing: -.01em; color: var(--tinta); }
+.escuro .marca { color: var(--papel); }
+.marca svg { width: 42px; height: 42px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.seta { display: flex; align-items: center; gap: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; }
+.seta i { display: block; width: 60px; height: 1.5px; background: currentColor; position: relative; }
+.seta i::after { content: ''; position: absolute; right: 0; top: -6px; width: 12px; height: 12px; border-right: 1.5px solid currentColor; border-top: 1.5px solid currentColor; transform: rotate(45deg); }
+.rotulo { font: 600 24px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--petroleo); }
+.escuro .rotulo { color: var(--ouro-claro); }
+h1, h2 { font-family: Playfair; font-weight: 600; letter-spacing: -.02em; }
+h1 em, h2 em { font-style: italic; font-weight: 500; color: var(--petroleo); }
+.escuro h1 em, .escuro h2 em { color: var(--ouro-claro); }
+.fio { height: 1.5px; background: var(--fio); }
+
+/* Figura da questão, num cartão branco. */
+.figura { background: #fff; border-radius: 18px; box-shadow: 0 1px 0 var(--fio), 0 30px 60px -30px rgba(19,38,46,.35); overflow: hidden; display: grid; place-items: center; }
+.figura .recorte { overflow: hidden; aspect-ratio: 954 / 1130; }
+.figura img { display: block; width: 100%; }
+.legenda-fig { margin-top: 16px; font: italic 400 22px Playfair; color: var(--tinta2); text-align: center; }
+
+/* p1 capa */
+.capa .bloco { position: absolute; left: 80px; right: 80px; top: 160px; }
+.capa h1 { margin-top: 22px; font-size: 112px; line-height: 1.0; }
+.capa p.sub { margin-top: 26px; max-width: 820px; font: 400 34px/1.45 Inter; color: var(--tinta2); }
+.capa .figura { position: absolute; left: 80px; right: 80px; top: 640px; height: 520px; }
+.capa .figura .recorte { height: 470px; }
+.capa .figura small { position: absolute; left: 30px; bottom: 22px; font: italic 400 22px Playfair; color: #8a8f8c; }
+
+/* p2 questão */
+.questao .bloco { position: absolute; left: 80px; right: 80px; top: 160px; }
+.questao .linha { display: grid; grid-template-columns: 300px 1fr; gap: 50px; align-items: center; }
+.questao .figura { height: 420px; padding: 26px; }
+.questao .figura .recorte { height: 370px; }
+.questao h2 { font-size: 58px; line-height: 1.14; }
+.alts { margin-top: 44px; display: grid; gap: 0; border-top: 1.5px solid var(--fio); }
+.alts li { list-style: none; display: grid; grid-template-columns: 76px 1fr; align-items: center; padding: 22px 0; border-bottom: 1.5px solid var(--fio); font: 500 44px Inter; letter-spacing: -.01em; }
+.alts b { font: italic 600 50px Playfair; color: var(--petroleo); }
+.comente { margin-top: 36px; font: italic 500 40px Playfair; color: var(--ouro); text-align: center; }
+
+/* p3 como ler */
+.ler .bloco { position: absolute; left: 80px; right: 80px; top: 170px; }
+.ler h2 { margin-top: 22px; font-size: 76px; line-height: 1.05; }
+.ler p.sub { margin-top: 26px; font: 400 32px/1.5 Inter; color: var(--tinta2); }
+.tabela { margin-top: 44px; border-top: 2px solid var(--tinta); }
+.tabela .tl { display: grid; grid-template-columns: 250px 1fr; gap: 30px; padding: 26px 0; border-bottom: 1.5px solid var(--fio); }
+.tabela .tl strong { font: 600 38px Playfair; }
+.tabela .tl span { font: 400 29px/1.4 Inter; color: var(--tinta2); }
+.tabela .tl span b { color: var(--tinta); font-weight: 650; }
+
+/* p4 resposta */
+.resposta .bloco { position: absolute; left: 80px; right: 80px; top: 170px; }
+.resposta .letra { display: flex; align-items: flex-end; gap: 36px; margin-top: 30px; padding-left: 24px; }
+.resposta .letra .A { font: italic 600 260px/0.8 Playfair; color: var(--ouro-claro); }
+.resposta .letra h2 { font-size: 110px; line-height: .95; padding-bottom: 8px; }
+.resposta p.def { margin-top: 40px; font: 400 36px/1.5 Inter; color: rgba(246,242,234,.82); }
+.resposta p.def b { color: var(--papel); font-weight: 650; }
+.erradas { margin-top: 56px; border-top: 1.5px solid rgba(246,242,234,.18); }
+.erradas div { display: grid; grid-template-columns: 76px 1fr; padding: 26px 0; border-bottom: 1.5px solid rgba(246,242,234,.18); }
+.erradas div > b { font: italic 600 46px Playfair; color: rgba(246,242,234,.45); }
+.erradas strong { display: block; font: 600 34px Inter; color: var(--papel); }
+.erradas span { display: block; margin-top: 6px; font: 400 28px/1.4 Inter; color: rgba(246,242,234,.68); }
+
+/* p5 por que importa */
+.importa .bloco { position: absolute; left: 80px; right: 80px; top: 170px; }
+.importa h2 { margin-top: 22px; font-size: 80px; line-height: 1.04; }
+.importa .citacao { margin-top: 46px; padding-left: 40px; border-left: 4px solid var(--ouro); font: italic 500 46px/1.3 Playfair; }
+.passos { margin-top: 50px; display: grid; gap: 34px; }
+.passos div { display: grid; grid-template-columns: 76px 1fr; }
+.passos div > b { font: italic 600 46px Playfair; color: var(--petroleo); }
+.passos strong { display: block; font: 650 34px Inter; }
+.passos span { display: block; margin-top: 6px; font: 400 30px/1.45 Inter; color: var(--tinta2); }
+.prova { position: absolute; left: 80px; right: 80px; bottom: 170px; padding: 34px 40px; background: var(--tinta); color: var(--papel); border-radius: 14px; }
+.prova small { font: 600 22px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--ouro-claro); }
+.prova p { margin-top: 10px; font: 500 36px/1.4 Inter; }
+.prova p b { color: var(--ouro-claro); font-weight: 650; }
+
+/* p6 chamada */
+.chamada .bloco { position: absolute; left: 80px; right: 80px; top: 50%; transform: translateY(-55%); text-align: center; }
+.chamada .simbolo { width: 150px; height: 150px; margin: 0 auto; }
+.chamada h2 { margin-top: 50px; font-size: 92px; line-height: 1.05; }
+.chamada p.sub { margin: 36px auto 0; max-width: 760px; font: 400 36px/1.5 Inter; color: var(--tinta2); }
+.chamada .botao { display: inline-block; margin-top: 60px; padding: 28px 64px; border-radius: 999px; background: var(--petroleo); color: #fff; font: 650 38px Inter; letter-spacing: -.01em; }
+.chamada .site { margin-top: 30px; font: italic 500 38px Playfair; color: var(--tinta); }
+
+/* stories */
+.story .topo { top: 120px; } .story .rodape { bottom: 120px; }
+.s-perg .bloco { position: absolute; left: 90px; right: 90px; top: 230px; }
+.s-perg h1 { margin-top: 24px; font-size: 76px; line-height: 1.08; }
+.s-perg .figura { margin: 48px auto 0; width: 520px; height: 580px; padding: 30px; }
+.s-perg .figura .recorte { height: 520px; }
+.s-perg .alts { margin-top: 44px; grid-template-columns: 1fr 1fr; column-gap: 40px; }
+.s-perg .alts li { font-size: 42px; padding: 28px 0; }
+.s-perg .convite { margin-top: 48px; text-align: center; font: italic 500 46px/1.3 Playfair; color: var(--ouro); }
+.s-resp .bloco { position: absolute; left: 90px; right: 90px; top: 50%; transform: translateY(-50%); }
+.s-resp .letra { display: flex; align-items: flex-end; gap: 36px; margin-top: 40px; padding-left: 30px; }
+.s-resp .letra .A { font: italic 600 320px/0.8 Playfair; color: var(--ouro-claro); }
+.s-resp .letra h2 { font-size: 130px; line-height: .95; padding-bottom: 10px; }
+.s-resp p.def { margin-top: 60px; font: 400 42px/1.5 Inter; color: rgba(246,242,234,.82); }
+.s-resp p.def b { color: var(--papel); font-weight: 650; }
+.s-resp .erradas div { padding: 32px 0; }
+.s-resp .erradas strong { font-size: 38px; } .s-resp .erradas span { font-size: 32px; }
+.s-resp .prova { position: static; margin-top: 70px; background: var(--papel); color: var(--tinta); }
+.s-resp .prova small { color: var(--petroleo); } .s-resp .prova p b { color: var(--petroleo); }
+.s-resp .final { margin-top: 60px; text-align: center; font: italic 500 40px Playfair; color: rgba(246,242,234,.75); }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- Feed 1: capa -->
+<section id="p1-capa" class="capa">
+  <div class="moldura"></div>
+  <div class="topo"><span>TEOT 2025 · Joelho</span><span class="num">01 / 06</span></div>
+  <div class="bloco">
+    <div class="rotulo">Questão da prova</div>
+    <h1>Para onde o corte <em>correu?</em></h1>
+    <p class="sub">Uma figura, quatro padrões de lesão meniscal. A direção da linha decide a resposta.</p>
+  </div>
+  <div class="figura"><div class="recorte"><img src="../../../../public/imagens/joelho/joelho-0189-1.png" alt=""></div><small>Figura original da prova</small></div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="seta">Arraste <i></i></span></div>
+</section>
+
+<!-- Feed 2: a questão -->
+<section id="p2-questao" class="questao">
+  <div class="moldura"></div>
+  <div class="topo"><span>A questão, como caiu</span><span class="num">02 / 06</span></div>
+  <div class="bloco">
+    <div class="linha">
+      <div class="figura"><div class="recorte"><img src="../../../../public/imagens/joelho/joelho-0189-1.png" alt=""></div></div>
+      <div><div class="rotulo">TEOT 2025 · questão 105</div><h2 style="margin-top:20px">A lesão meniscal evidenciada na figura a seguir corresponde a uma lesão:</h2></div>
+    </div>
+    <ul class="alts">
+      <li><b>A</b>Radial.</li>
+      <li><b>B</b>Em rampa.</li>
+      <li><b>C</b>Horizontal.</li>
+      <li><b>D</b>Longitudinal.</li>
+    </ul>
+    <p class="comente">Comente a sua letra antes de arrastar.</p>
+  </div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="seta">Arraste <i></i></span></div>
+</section>
+
+<!-- Feed 3: como ler -->
+<section id="p3-como-ler" class="ler">
+  <div class="moldura"></div>
+  <div class="topo"><span>Antes da resposta</span><span class="num">03 / 06</span></div>
+  <div class="bloco">
+    <div class="rotulo">Como ler a figura</div>
+    <h2>Compare o corte com as <em>fibras circunferenciais.</em></h2>
+    <p class="sub">Cada padrão de lesão tem o seu plano. É isso que a banca pede para reconhecer.</p>
+    <div class="tabela">
+      <div class="tl"><strong>Radial</strong><span><b>Perpendicular</b> às fibras circunferenciais, da borda livre em direção à periferia.</span></div>
+      <div class="tl"><strong>Longitudinal</strong><span><b>Paralela</b> às fibras. Na zona vermelha, ótima para sutura; pode virar alça de balde.</span></div>
+      <div class="tl"><strong>Horizontal</strong><span>Divide o menisco em <b>lâminas superior e inferior</b>. Típica degenerativa, associa-se a cisto meniscal.</span></div>
+      <div class="tl"><strong>Rampa</strong><span>Na <b>junção meniscocapsular</b> do corno posterior medial. Associada ao LCA.</span></div>
+    </div>
+  </div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="seta">Resposta <i></i></span></div>
+</section>
+
+<!-- Feed 4: resposta -->
+<section id="p4-resposta" class="resposta escuro">
+  <div class="moldura"></div>
+  <div class="topo"><span>Gabarito</span><span class="num">04 / 06</span></div>
+  <div class="bloco">
+    <div class="rotulo">Resposta</div>
+    <div class="letra"><span class="A">A</span><h2>Radial.</h2></div>
+    <p class="def">O corte vai <b>da borda livre (interna) em direção à periferia</b>, <b>perpendicular às fibras circunferenciais</b>.</p>
+    <div class="erradas">
+      <div><b>B</b><p><strong>Em rampa</strong><span>Fica na junção meniscocapsular periférica do corno posterior medial, sem atravessar o menisco.</span></p></div>
+      <div><b>C</b><p><strong>Horizontal</strong><span>Plano axial, que separa lâminas superior e inferior.</span></p></div>
+      <div><b>D</b><p><strong>Longitudinal</strong><span>Paralela às fibras circunferenciais.</span></p></div>
+    </div>
+  </div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="seta">Por que importa <i></i></span></div>
+</section>
+
+<!-- Feed 5: por que importa -->
+<section id="p5-por-que-importa" class="importa">
+  <div class="moldura"></div>
+  <div class="topo"><span>Na prática</span><span class="num">05 / 06</span></div>
+  <div class="bloco">
+    <div class="rotulo">Por que a direção importa</div>
+    <h2>A radial corta o que <em>segura a carga.</em></h2>
+    <p class="citacao">Se chega à periferia ou à raiz, perde-se o hoop stress: equivale à meniscectomia.</p>
+    <div class="passos">
+      <div><b>1</b><p><strong>Completas</strong><span>Suturar sempre que possível (técnicas em cruz ou transtibiais), para restaurar o hoop stress.</span></p></div>
+      <div><b>2</b><p><strong>Parciais pequenas</strong><span>Na zona avascular, regularização.</span></p></div>
+    </div>
+  </div>
+  <div class="prova"><small>Para a prova</small><p>Ruptura perpendicular às fibras, da borda livre para a periferia, é <b>radial</b>.</p></div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="seta">Arraste <i></i></span></div>
+</section>
+
+<!-- Feed 6: chamada -->
+<section id="p6-chamada" class="chamada">
+  <div class="moldura"></div>
+  <div class="topo"><span>Orto Questões</span><span class="num">06 / 06</span></div>
+  <div class="bloco">
+    <svg class="simbolo"><use href="#sim"/></svg>
+    <h2>Questões das provas oficiais, <em>comentadas.</em></h2>
+    <p class="sub">TEOT e TARO, alternativa por alternativa, para treinar no tempo que sobra do plantão.</p>
+    <div class="botao">Treine grátis</div>
+    <p class="site">ortoquestoes.com.br</p>
+  </div>
+  <div class="rodape"><span>Salve para revisar antes da prova</span><span>@ortoquestoes</span></div>
+</section>
+
+<!-- Story 1: pergunta -->
+<section id="s1-pergunta" class="story s-perg">
+  <div class="moldura"></div>
+  <div class="topo"><span>TEOT 2025 · Joelho</span><span class="num">Questão do dia</span></div>
+  <div class="bloco">
+    <div class="rotulo">Questão 105</div>
+    <h1>A lesão meniscal evidenciada na figura a seguir corresponde a uma lesão:</h1>
+    <div class="figura"><div class="recorte"><img src="../../../../public/imagens/joelho/joelho-0189-1.png" alt=""></div></div>
+    <ul class="alts">
+      <li><b>A</b>Radial.</li>
+      <li><b>B</b>Em rampa.</li>
+      <li><b>C</b>Horizontal.</li>
+      <li><b>D</b>Longitudinal.</li>
+    </ul>
+    <p class="convite">Guarde a sua letra.<br>A resposta sai no próximo story.</p>
+  </div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span>@ortoquestoes</span></div>
+</section>
+
+<!-- Story 2: resposta -->
+<section id="s2-resposta" class="story s-resp escuro">
+  <div class="moldura"></div>
+  <div class="topo"><span>TEOT 2025 · Joelho</span><span class="num">Gabarito</span></div>
+  <div class="bloco">
+    <div class="rotulo">Resposta</div>
+    <div class="letra"><span class="A">A</span><h2>Radial.</h2></div>
+    <p class="def">O corte vai <b>da borda livre para a periferia</b>, <b>perpendicular às fibras circunferenciais</b>.</p>
+    <div class="erradas" style="margin-top:60px">
+      <div><b>B</b><p><strong>Em rampa</strong><span>Junção meniscocapsular do corno posterior medial.</span></p></div>
+      <div><b>C</b><p><strong>Horizontal</strong><span>Separa lâminas superior e inferior.</span></p></div>
+      <div><b>D</b><p><strong>Longitudinal</strong><span>Paralela às fibras.</span></p></div>
+    </div>
+    <div class="prova"><small>Para a prova</small><p>Radial que chega à periferia perde o <b>hoop stress</b>: equivale à meniscectomia.</p></div>
+    <p class="final">Comentário completo no feed de hoje.</p>
+  </div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span>ortoquestoes.com.br</span></div>
+</section>
+</body></html>
