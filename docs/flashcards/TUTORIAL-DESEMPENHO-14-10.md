@@ -6,7 +6,7 @@ O Preceptor convida para uma demonstração curta após a escolha inicial de som
 
 Ao concluir ou pular, salva apenas `tutorialVisto` nos Ajustes existentes, por ação explícita da pessoa. Mantém os outros campos. Isso segue o armazenamento existente: visitantes conservam a preferência na sessão; contas seguem a política já implementada. Não há migração SQL nem alteração em limites.
 
-O foco acompanha cada etapa, fica no diálogo e retorna ao botão Como jogar. Arte: ícone e moldura existentes, sem imagem externa ou gerada.
+O foco acompanha cada etapa, fica no diálogo e retorna ao botão Como jogar. O diálogo é irmão da Entrada rolável, evitando que a rolagem de fundo esconda seu título. Arte: ícone e moldura existentes, sem imagem externa ou gerada.
 
 ## Desempenho (ideia 70, parcial)
 
@@ -25,3 +25,5 @@ Nesta execução, ambos os perfis tiveram mediana 59,9 FPS; P95 de intervalo de 
 - Base atualizada até #254 (volume e reinício); nenhuma dessas mudanças foi desfeita.
 
 Próxima fila permanece em PENDENCIAS-14-10.md: Biblioteca decorativa/música, cenários e personalização sem vantagem. Monstros novos continuam em pausa, e conteúdo médico/planos/dados existentes ficam fora do trabalho.
+
+PR de continuidade: [#255](https://github.com/talesrobertosn/ortoquestoes/pull/255), em rascunho. As capas foram comparadas por hash com o domínio público, e o formulário novo foi localizado no bundle publicado.

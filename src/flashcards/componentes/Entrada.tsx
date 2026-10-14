@@ -165,7 +165,6 @@ export function Entrada() {
             </div>
           </div>
         )}
-        {tutorial && !escolherSom && <Tutorial aoFechar={fecharTutorial} />}
         {painel === 'altar' && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-altar-titulo" onClick={() => definirPainel(null)}>
             <div className="fc-janela fc-janela--larga fc-altar" onClick={(e) => e.stopPropagation()}>
@@ -217,6 +216,7 @@ export function Entrada() {
           </div>
         )}
       </div>
+      {tutorial && !escolherSom && <Tutorial aoFechar={fecharTutorial} />}
     </ModalJogo>
   )
 }

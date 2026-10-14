@@ -6,6 +6,14 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Contexto atualizado da publicação — 14/10/2026
+
+- PRs #247–#250 e #252 publicados: cenários restantes, combate, desempenho, acessibilidade e Biblioteca.
+- PR #254 publicado: volume no fim da cadeia de áudio, curva v², padrão de **30% na escala 2**, botões +/− e silenciar; Começar do zero no Menu confirma antes e mantém recorde, cristais, talentos e bestiário. Não voltar ao padrão antigo de 20% nem desfazer essa implementação.
+- PR #255 em rascunho: tutorial opcional e benchmark sintético. Não tratar como publicado até conferir merge e deploy. O tutorial usa diálogo fora do contêiner rolável da Entrada, para seu título não sumir ao clicar.
+- Capas e formulário atual conferidos no domínio público: PNGs iguais aos arquivos do repositório; o bundle Flashcards contém **O que podemos melhorar?** e os grupos `cf-opiniao__notas`. Os prints com mago azul e caixa sem espaçamento são da aparência anterior.
+- Tales autoriza continuar e publicar após os testes, com relatórios por bloco. Monstros novos continuam em pausa. Questões médicas, planos e dados existentes não fazem parte deste trabalho. Não há SQL novo nesses blocos.
+
 ## Tutorial e benchmark — continuidade de 14/10/2026
 
 O PR #252 da Biblioteca foi mesclado. O bloco seguinte acrescenta tutorial opcional e medição local de FPS, documentados em [TUTORIAL-DESEMPENHO-14-10.md](TUTORIAL-DESEMPENHO-14-10.md). A base foi atualizada incluindo os controles de volume e o reinício de partida do PR #254. Preserve essas mudanças.
@@ -28,11 +36,11 @@ Leia nesta ordem:
 1. `AGENTS.md`, com as regras do projeto.
 2. Este arquivo.
 3. [../PLANO-DE-IDEIAS.md](../PLANO-DE-IDEIAS.md): as 84 ideias com checklist. Marque `[x]` no que fizer.
-4. [MONSTROS-NOVOS.md](MONSTROS-NOVOS.md): o próximo trabalho grande. Lá estão as referências de monstros que o Tales mandou, descritas, o estilo de cada família, o que já tem arte e a receita para fazer um monstro.
+4. [MONSTROS-NOVOS.md](MONSTROS-NOVOS.md): consulte as restrições; monstros novos estão em pausa. Lá estão as referências de monstros que o Tales mandou, descritas, o estilo de cada família, o que já tem arte e a receita para fazer um monstro.
 
 **Mensagem pronta para colar no agente:**
 
-> Repositório `talesrobertosn/ortoquestoes`, base `claude/pdfs-questoes-tp64dr` (o merge nela publica o site). Leia `AGENTS.md`, `docs/flashcards/CONTINUAR.md`, `docs/PLANO-DE-IDEIAS.md` e `docs/flashcards/MONSTROS-NOVOS.md`. Continue pela "Ordem sugerida" de MONSTROS-NOVOS.md: monstros em pixel art feitos por script, nunca imagem baixada ou gerada por IA. Trabalhe numa branch nova a partir da base e abra um PR para ela. Antes do PR, rode `npm test`, `npx tsc --noEmit`, `npm run build` e capturas com Playwright em 1400×860, 390×844 e 844×390. Ao terminar, marque o item no plano e atualize o topo de CONTINUAR.md.
+> Repositório `talesrobertosn/ortoquestoes`, base `claude/pdfs-questoes-tp64dr` (o merge nela publica o site). Leia `AGENTS.md`, `docs/flashcards/CONTINUAR.md`, `docs/PLANO-DE-IDEIAS.md` e `docs/flashcards/MONSTROS-NOVOS.md`. Continue pela fila de PENDENCIAS-14-10.md; mantenha monstros novos em pausa. Arte somente por scripts, nunca imagem externa ou gerada. Trabalhe numa branch nova a partir da base e abra um PR para ela. Antes do PR, rode `npm test`, `npx tsc --noEmit`, `npm run build` e capturas com Playwright em 1400×860, 390×844 e 844×390. Ao terminar, marque o item no plano e atualize o topo de CONTINUAR.md.
 
 ### Estado de agora
 
