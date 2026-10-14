@@ -54,12 +54,12 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 
 Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra.
 
-26. [~] **Nome em chamas:** 3 seguidas acende fogo laranja; 6, fogo azul; 9, chama arcana.
-27. [~] **Glória:** com 20 seguidas, tudo brilha em ouro (raios de luz, cintilas, moldura dourada).
-28. [~] **Chuva:** 3 erros seguidos fazem chover, com um aviso explicando o motivo.
-29. [~] **Tempestade:** 5 ou mais erros seguidos escurecem a tela, trazem relâmpagos e trovão. Mensagem calma: "leia o verso sem pressa".
-30. [~] **Névoa da dúvida:** 3 "Hesitei" seguidos, ou mais de 30 s sem virar o flashcard.
-31. [~] **Arco-íris:** o primeiro acerto depois da chuva.
+26. [x] **Nome em chamas:** 3 seguidas acende fogo laranja; 6, fogo azul; 9, chama arcana.
+27. [x] **Glória:** com 20 seguidas, tudo brilha em ouro (raios de luz, cintilas, moldura dourada).
+28. [x] **Chuva:** 3 erros seguidos fazem chover, com um aviso explicando o motivo.
+29. [x] **Tempestade:** 5 ou mais erros seguidos escurecem a tela, trazem relâmpagos e trovão. Mensagem calma: "leia o verso sem pressa".
+30. [x] **Névoa da dúvida:** 3 "Hesitei" seguidos, ou mais de 30 s sem virar o flashcard.
+31. [x] **Arco-íris:** o primeiro acerto depois da chuva.
 32. [ ] Velas da biblioteca que acendem uma a uma a cada acerto da sessão.
 33. [ ] Gato da biblioteca (pixel art) que dorme, acorda no combo e se espreguiça na glória.
 34. [ ] Livros que voam para a estante a cada flashcard dominado.
@@ -142,4 +142,5 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 ## Registro do que foi feito
 
-- **14/10/2026:** PR #227 mesclado (herói chibi, portas da encruzilhada, floresta verdejante, painel do admin, PNG otimizado). Depois disso, golpes em pixel art e o Envenenado (ideias 1 a 11 e 19).
+- **14/10/2026:** PR #227 mesclado (herói chibi, portas da encruzilhada, floresta verdejante, painel do admin, PNG otimizado). Depois disso, golpes em pixel art e o Envenenado (ideias 1 a 11 e 19), no PR #228.
+- **14/10/2026:** Humor da Biblioteca (ideias 26 a 31), no PR #228. Fica em `src/flashcards/componentes/ClimaEstudo.tsx` (limiares em `HUMOR`), as chamas são `chama-*` em `vfx.py` e há aviso flutuante no celular.

@@ -24,14 +24,14 @@ Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com PR para a base `cl
   - testes em `fixtures/testar_flashcards.mjs`;
   - na tela: selo sob a vida, bolhas e brilho verde no herói.
 
-**Em andamento: humor da Biblioteca** (ideias 26 a 31 do plano):
+**Feito: humor da Biblioteca** (ideias 26 a 31 do plano; `componentes/ClimaEstudo.tsx`, ligado em `Estudo.tsx` e `Arena.tsx`):
 - chamas no nome com 3, 6 e 9 acertos seguidos;
 - glória com 20;
 - chuva com 3 erros seguidos e tempestade com 5;
 - névoa na hesitação;
 - arco-íris depois da chuva.
 
-**Depois:** rankings temáticos (ideias 58 a 60).
+**Próximo:** rankings temáticos (ideias 58 a 60). Depois: andar a céu aberto estilo Stardew (ideia 42).
 
 ## Estado anterior (14/10/2026, antes do #227 ser mesclado)
 

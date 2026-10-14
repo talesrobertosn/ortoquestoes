@@ -11,6 +11,7 @@ import { autorizarFlashcardCripta, FLASHCARDS_NO_SERVIDOR, iniciarCorrida, RANKI
 import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro, pixelVfx, precarregarVfx } from '../efeitos/palco'
+import { ClimaEstudo, type Humor } from './ClimaEstudo'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
 import { configurarSom, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
@@ -234,6 +235,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const [atacando, definirAtacando] = useState(false)
   const [cenarioVisivel, definirCenarioVisivel] = useState(() => inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo.cenario)
   const [estudoPrimeiro, definirEstudoPrimeiro] = useState<string[]>([])
+  const [humorEstudo, definirHumorEstudo] = useState<Humor | null>(null)
 
   const canvasPalco = useRef<HTMLCanvasElement>(null)
   const palco = useRef<Palco | null>(null)
@@ -1027,6 +1029,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     <ModalJogo titulo={NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar}>
       <div className={classes} data-cenario={cenarioVisivel} data-modo={partida.modo}>
         <Cenario cena={modo === 'estudo' ? 'biblioteca' : cenarioVisivel} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
+        {modo === 'estudo' && humorEstudo && humorEstudo.tipo !== 'calmo' && <ClimaEstudo humor={humorEstudo} reduzido={reduzido} />}
 
         <header className="fc-topo">
           <div className="fc-abas" role="tablist" aria-label="Modo">
@@ -1073,7 +1076,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         </header>
 
         {modo === 'estudo' ? (
-          <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} />
+          <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} aoHumor={definirHumorEstudo} />
         ) : (
           <div className="fc-batalha">
             {/* Adversário em cena, de pé sobre a arena */}

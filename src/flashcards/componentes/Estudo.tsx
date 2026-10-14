@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { registrarEstudo } from '../aprendizagem'
 import { gravar, ler } from '../../estado/armazenamento'
 import { revisarHoje } from '../../estado/revisao'
@@ -11,6 +11,8 @@ import { contarSessaoTerminada } from '../opiniao'
 import { href } from '../../util/rotas'
 import { Cartao, familiasDe } from './Cartao'
 import { Sprite } from './Sprite'
+import { HUMOR, NomeEmChamas, SERIE_VAZIA, avancarSerie, humorDe, somDoHumor, type Humor } from './ClimaEstudo'
+import { ContextoConta } from '../../conta/ContextoConta'
 
 type Avaliacao = 'errei' | 'hesitei' | 'sabia'
 
@@ -44,7 +46,7 @@ const TIPOS = ['Na prova', 'Relâmpago', 'Imagem', 'Anatomia'] as const
  * o flashcard e pergunta como foi. A fila de revisão dos flashcards é
  * independente da fila das questões.
  */
-export function Estudo({ primeiro, aoAmpliar, reduzido }: { primeiro: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean }) {
+export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor }: { primeiro: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoHumor?: (h: Humor | null) => void }) {
   const cartas = todasAsCartas()
   const [registros, definirRegistros] = useState(() => ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}))
   const [sessao, definirSessao] = useState<{ titulo: string; ids: string[] } | null>(null)
@@ -87,12 +89,12 @@ export function Estudo({ primeiro, aoAmpliar, reduzido }: { primeiro: string[]; 
   }), [categorias, cartas, registros, filtrosExtras])
 
   /** Monta a fila: pendentes e errados, depois nunca vistos, depois o resto; sem repetir. */
-  const montar = useCallback((cat: Categoria) => {
+  const montar = useCallback((cat: Categoria, limite?: number) => {
     const lista = cartas.filter((c) => cat.filtro(c, registros[c.id]) && filtrosExtras(c))
     const peso = (c: Flashcard) => { const r = registros[c.id]; return r?.c === false ? 0 : pendente(r) ? 1 : !r ? 2 : 3 }
     // embaralha dentro de cada grupo para variar entre sessões
     const ordenada = lista.map((c) => ({ c, k: peso(c) + Math.random() * 0.9 })).sort((a, b) => a.k - b.k).map((x) => x.c)
-    const n = tamanho === 'pendentes' ? ordenada.filter((c) => peso(c) <= 1).length || Math.min(10, ordenada.length) : tamanho
+    const n = limite ?? (tamanho === 'pendentes' ? ordenada.filter((c) => peso(c) <= 1).length || Math.min(10, ordenada.length) : tamanho)
     return ordenada.slice(0, n).map((c) => c.id)
   }, [cartas, registros, filtrosExtras, tamanho])
 
@@ -117,7 +119,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido }: { primeiro: string[]; 
       const novos = cartas.filter((c) => naArea(c) && !registros[c.id]).map((c) => c.id)
       ids = [...venc, ...novos].slice(0, n)
     } else {
-      ids = montar({ ...base, filtro: (c, r) => base.filtro(c, r) && naArea(c) }).slice(0, n)
+      ids = montar({ ...base, filtro: (c, r) => base.filtro(c, r) && naArea(c) }, n)
     }
     if (ids.length) definirSessao({ titulo: id === 'plano' ? 'Sessão de hoje do cronograma' : base.nome, ids })
   }, [linkUsado, cartas, categorias, montar, registros])
@@ -128,7 +130,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido }: { primeiro: string[]; 
   }, [primeiro, cartas])
 
   if (sessao && sessao.ids.length) {
-    return <Sessao titulo={sessao.titulo} ids={sessao.ids} aoAmpliar={aoAmpliar} reduzido={reduzido}
+    return <Sessao titulo={sessao.titulo} ids={sessao.ids} aoAmpliar={aoAmpliar} reduzido={reduzido} aoHumor={aoHumor}
       aoTerminar={() => { definirRegistros(ler(CHAVE_REGISTROS, {})); definirSessao(null) }} />
   }
 
@@ -179,7 +181,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido }: { primeiro: string[]; 
 }
 
 /** Sessão de estudo: vira o flashcard e diz como foi. */
-function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: string; ids: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoTerminar: () => void }) {
+function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { titulo: string; ids: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoTerminar: () => void; aoHumor?: (h: Humor | null) => void }) {
   const porId = useMemo(() => new Map(todasAsCartas().map((c) => [c.id, c])), [])
   const fila = useMemo(() => ids.filter((id) => porId.has(id)), [ids, porId])
   const [pos, definirPos] = useState(0)
@@ -187,6 +189,17 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
   const [virada, definirVirada] = useState(false)
   const [feitos, definirFeitos] = useState<Record<Avaliacao, number>>({ errei: 0, hesitei: 0, sabia: 0 })
   const acabou = pos >= fila.length
+  // Humor da Biblioteca: a sequência de acertos, erros e hesitações muda o clima da sala
+  const [serie, definirSerie] = useState(SERIE_VAZIA)
+  const [melhor, definirMelhor] = useState(0)
+  const humor = useMemo(() => humorDe(serie), [serie])
+  const humorAntes = useRef(humor)
+  useEffect(() => { somDoHumor(humorAntes.current, humor); humorAntes.current = humor; aoHumor?.(acabou ? null : humor) }, [humor, acabou, aoHumor])
+  useEffect(() => () => aoHumor?.(null), [aoHumor])
+  const conta = useContext(ContextoConta)
+  const meta = conta?.sessao?.user.user_metadata
+  const nome = String(meta?.nome ?? '').trim().split(/\s+/)[0] || 'Você'
+  const nomeMostrado = nome !== 'Você' && meta?.situacao === 'ortopedista' ? `Dr. ${nome}` : nome
   const carta = porId.get(fila[Math.min(pos, fila.length - 1)])!
 
   // Alternativas no Estudo (13/10/2026): responder antes de virar, com correção na hora.
@@ -210,8 +223,16 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
       if (!r.permitido) { definirBloqueio(r); return }
     }
     definirVirada(true)
+    definirSerie((v) => (v.parado ? { ...v, parado: false } : v))
     return true
   }, [virada, acabou, carta])
+
+  // parado muito tempo sem virar: a névoa da dúvida chega devagar
+  useEffect(() => {
+    if (virada || acabou) return
+    const t = window.setTimeout(() => definirSerie((v) => ({ ...v, parado: true })), HUMOR.paradoSegundos * 1000)
+    return () => window.clearTimeout(t)
+  }, [pos, virada, acabou])
 
   const responder = useCallback(async (pos: number) => {
     if (virada || acabou || escolha !== null) return
@@ -227,6 +248,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
     registrarEstudo({ chave: `${sessao}:${pos}:${carta.id}`, id: carta.id, modo: 'estudo', objetiva: escolha === null ? null : ordem[escolha] === carta.certa, avaliacao: a })
     tocar(a === 'sabia' ? 'cura' : a === 'hesitei' ? 'confirmar' : 'erro')
     definirFeitos((f) => ({ ...f, [a]: f[a] + 1 }))
+    definirSerie((v) => { const n = avancarSerie(v, a); definirMelhor((m) => Math.max(m, n.acertos)); return n })
     definirVirada(false)
     definirEscolha(null)
     definirPos((p) => p + 1)
@@ -260,6 +282,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
             <div className="hesitei"><dt>Hesitei</dt><dd>{feitos.hesitei}</dd></div>
             <div className="errei"><dt>Errei</dt><dd>{feitos.errei}</dd></div>
           </dl>
+          {melhor >= 3 && <p className="fc-estudo__melhor">Melhor sequência: <b>{melhor}</b> {melhor >= HUMOR.gloria ? '· Glória da Biblioteca' : melhor >= HUMOR.chama[2] ? '· chama arcana' : melhor >= HUMOR.chama[1] ? '· fogo azul' : '· em chamas'}</p>}
           <p className="fc-janela__nota">Os que você errou voltam hoje; os que hesitou, em 3 dias; os que sabia, em 10.</p>
           <div className="fc-janela__botoes">
             <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_sessao')}>Enviar opinião</a>
@@ -274,7 +297,14 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
     <div className="fc-estudo">
       <aside className="fc-estudo__painel" aria-label="Progresso do estudo">
         <button type="button" className="fc-botao-pequeno fc-estudo__voltar" onClick={aoTerminar}>← Biblioteca</button>
+        <NomeEmChamas nome={nomeMostrado} humor={humor} />
         <p className="fc-estudo__titulo">{titulo}</p>
+        {humor.tipo !== 'calmo' && (
+          <div key={humor.tipo + humor.nivel} className={`fc-humor fc-humor--${humor.tipo}`} role="status">
+            <strong>{humor.titulo}</strong>
+            <small>{humor.sub}</small>
+          </div>
+        )}
         <div className="fc-estudo__contagem"><b>{atual}</b><small>de {fila.length}</small></div>
         <div className="fc-estudo__barra" aria-hidden="true"><i style={{ width: (100 * atual) / fila.length + '%' }} /></div>
         <dl className="fc-estudo__placar">
@@ -288,6 +318,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
           <span>Alternativas</span>
         </button>
       </aside>
+      {humor.tipo !== 'calmo' && <div key={'aviso-' + humor.tipo + humor.nivel} className={`fc-humor-aviso fc-humor--${humor.tipo}`} aria-hidden="true"><strong>{humor.titulo}</strong><small>{humor.sub}</small></div>}
       {bloqueio && (
         <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-limite-estudo">
           <div className="fc-janela">

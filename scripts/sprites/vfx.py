@@ -385,6 +385,41 @@ def labareda(pal, n=7, W=36):
     return quadros
 
 
+def chama_viva(pal, n=6, W=24, H=32):
+    """Chama de tocha que dança em laço (o nome em chamas da Biblioteca): base
+    redonda e cheia, corpo que afina numa ponta que balança, uma língua menor
+    ao lado e o miolo branco-amarelo embaixo, como as fogueiras do Stardew."""
+    quadros = []
+    for k in range(n):
+        q = Q(W, H)
+        fase = k / n * 2 * math.pi
+        bx, by, br = W / 2, H - 8.5, 6.8
+        base = np.hypot(q.x - bx, (q.y - by) * 1.05) <= br
+        # corpo: de by para cima, afinando até a ponta; o eixo balança mais em cima
+        alto = H - 10
+        t = np.clip((by - q.y) / alto, 0, 1)
+        eixo = bx + math.sin(fase) * 2.6 * t ** 1.5 + math.sin(fase * 2 + 1) * 0.8 * t
+        meia = br * (1 - t) ** 1.25 + 0.3
+        corpo = (q.y <= by) & (np.abs(q.x - eixo) <= meia) & (t < 0.97)
+        # língua menor que nasce do lado e sobe
+        lado = -1 if k % 2 else 1
+        tl = np.clip((by - 3 - q.y) / (alto * 0.55), 0, 1)
+        eixo2 = bx + lado * (4.2 + 1.5 * tl) + math.sin(fase + 2) * 1.2 * tl
+        lingua = (q.y <= by - 2) & (np.abs(q.x - eixo2) <= 2.6 * (1 - tl) ** 1.2) & (tl < 0.95) & (tl > 0)
+        m = base | corpo | lingua
+        # tons: miolo claro embaixo no centro, escurece para fora e para cima
+        d = np.hypot((q.x - bx) / 5.5, (q.y - (by - 2)) / 9.0)
+        prof = np.clip(d * 0.62 + t * 0.35, 0, 0.999)
+        pinta_rampa(q, m, prof, pal[:4])
+        q.contorno(pal[4])
+        fy = int(H - 6 - ((k / n) * (H - 6)) % (H - 7)) - 3
+        fx = int(bx + math.sin(fase * 2) * 6)
+        if 0 <= fy < H and 0 <= fx < W and q.a[fy, fx, 3] == 0:
+            q.a[fy, fx] = cor(pal[1])
+        quadros.append(q.a)
+    return quadros
+
+
 def pedra(n=4, W=22, base=None):
     """Pedra facetada girando (luz no alto à esquerda, como o resto do jogo)."""
     p = base or ['#f2e6c8', '#cdbb94', '#a08a68', '#6e5c46', '#3e3228']
@@ -834,6 +869,9 @@ def efeitos():
     for tom in ('fatuo', 'escarlate', 'ancestral'):
         add(f'bolafogo-{tom}', bola_fogo(PAL[tom]), 70, [31, 15], loop=True)
         add(f'labareda-{tom}', labareda(PAL[tom]), 60)
+    # chamas que dançam sobre o nome na Biblioteca (sequência de acertos): laço curto, sem virar fumaça
+    for tom in ('escarlate', 'fatuo', 'ancestral', 'ouro'):
+        add(f'chama-{tom}', chama_viva(PAL[tom]), 90, [12, 30], loop=True)
     add('pedra', pedra(), 70, loop=True)
     add('pedregulho', pedregulho(), 90, loop=True)
     add('poeira', poeira(), 70, [24, 30])

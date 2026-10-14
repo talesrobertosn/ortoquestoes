@@ -2143,3 +2143,87 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 .fc-veneno-selo__conta i.feito { background: #b8ff8a; box-shadow: 0 0 6px #8af05a; }
 @media (max-width: 520px) { .fc-veneno-selo > span:not(.fc-veneno-selo__conta) { display: none; } }
 @media (prefers-reduced-motion: reduce) { .fc-envenenado, .fc-ator--envenenado .fc-ator__corpo { animation: none; } }
+
+/* ============================================================ Humor da Biblioteca (14/10/2026)
+   Camada entre o cenário (z 0) e a interface (z 2). */
+.fc-arena > .fc-clima { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+.fc-clima > * { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.fc-clima__chuva { image-rendering: pixelated; image-rendering: crisp-edges; }
+.fc-clima__veu { transition: background 1.2s ease; animation: fc-clima-entra 1.2s ease both; }
+@keyframes fc-clima-entra { from { opacity: 0; } }
+.fc-clima--chuva .fc-clima__veu { background: linear-gradient(rgba(40, 60, 90, .42), rgba(30, 40, 60, .3)); }
+.fc-clima--tempestade .fc-clima__veu { background: linear-gradient(rgba(14, 18, 34, .66), rgba(10, 12, 24, .58)); }
+.fc-clima--tempestade.fc-clima--nivel-2 .fc-clima__veu { background: linear-gradient(rgba(10, 12, 26, .74), rgba(6, 8, 18, .66)); }
+.fc-clima--tempestade.fc-clima--nivel-3 .fc-clima__veu { background: linear-gradient(rgba(6, 8, 20, .8), rgba(4, 4, 12, .72)); }
+.fc-clima--clarao .fc-clima__veu { animation: fc-clarao-raio .6s ease-out; }
+@keyframes fc-clarao-raio { 0% { background: rgba(230, 240, 255, .75); } 12% { background: rgba(20, 24, 40, .6); } 22% { background: rgba(220, 232, 255, .55); } 100% { } }
+.fc-clima--chama .fc-clima__veu { background: radial-gradient(120% 70% at 50% 110%, rgba(255, 120, 40, .22), transparent 60%); }
+.fc-clima--chama.fc-clima--nivel-2 .fc-clima__veu { background: radial-gradient(120% 70% at 50% 110%, rgba(80, 170, 255, .26), transparent 60%); }
+.fc-clima--chama.fc-clima--nivel-3 .fc-clima__veu { background: radial-gradient(120% 75% at 50% 110%, rgba(190, 100, 255, .3), transparent 62%); }
+.fc-clima--gloria .fc-clima__veu { background: radial-gradient(90% 70% at 50% 0%, rgba(255, 226, 140, .38), rgba(255, 200, 90, .1) 55%, transparent 80%); }
+.fc-clima__raios { background: repeating-conic-gradient(from 0deg at 50% -12%, rgba(255, 236, 170, .22) 0deg 5deg, transparent 5deg 14deg);
+  mix-blend-mode: screen; animation: fc-raios-gira 24s linear infinite; -webkit-mask: linear-gradient(#000, transparent 85%); mask: linear-gradient(#000, transparent 85%); }
+@keyframes fc-raios-gira { to { transform: rotate(8deg); } }
+.fc-clima--nevoa .fc-clima__veu { background: rgba(120, 128, 150, .16); }
+.fc-clima__nevoa { inset: -10% -30%; width: 160%; height: 120%; opacity: .8;
+  background: radial-gradient(40% 18% at 20% 70%, rgba(220, 226, 240, .5), transparent), radial-gradient(35% 16% at 70% 55%, rgba(210, 218, 236, .45), transparent), radial-gradient(45% 20% at 45% 88%, rgba(230, 234, 246, .55), transparent);
+  animation: fc-nevoa-vai 18s ease-in-out infinite alternate; }
+.fc-clima__nevoa--2 { opacity: .4; animation-duration: 26s; animation-direction: alternate-reverse; transform: scaleX(-1); }
+@keyframes fc-nevoa-vai { from { translate: -6% 0; } to { translate: 6% -2%; } }
+.fc-clima__arcoiris { inset: 6% 0 auto 0; height: 80%; opacity: 0; animation: fc-arcoiris 6s ease forwards;
+  background: radial-gradient(circle 62vmax at 50% 118%, transparent 80%, #ff6a6a 80% 81.6%, #ffa23c 81.6% 83.2%, #ffe46a 83.2% 84.8%, #7ae04a 84.8% 86.4%, #5fb0ff 86.4% 88%, #9a7ae8 88% 89.6%, transparent 89.6%);
+  -webkit-mask: linear-gradient(#000 55%, transparent 92%); mask: linear-gradient(#000 55%, transparent 92%); }
+@keyframes fc-arcoiris { 0% { opacity: 0; transform: translateY(6%); } 18% { opacity: .7; transform: none; } 75% { opacity: .55; } 100% { opacity: .35; } }
+
+/* Nome em chamas: chamas de pixel atrás do nome, mais altas a cada nível. */
+.fc-nome-chamas { position: relative; margin: 2px 0 0; padding: 18px 4px 4px; text-align: center; font: 700 clamp(17px, 1.8vw, 22px)/1.1 var(--fc-titulo, var(--fc-ui)); color: #fff1c2; letter-spacing: .02em; }
+.fc-nome-chamas__texto { position: relative; z-index: 1; }
+.fc-nome-chamas__fogo { position: absolute; left: 6%; right: 6%; bottom: 2px; height: 0; z-index: 0; }
+.fc-nome-chamas__fogo i { position: absolute; bottom: -6px; width: 36px; height: 48px; margin-left: -18px; background-repeat: no-repeat; background-size: 216px 48px;
+  image-rendering: pixelated; transform-origin: 50% 100%; transform: scale(var(--s, 1)); animation: fc-chama-viva .54s steps(6) infinite; opacity: .95; }
+@keyframes fc-chama-viva { to { background-position: -216px 0; } }
+.fc-nome-chamas--nivel-2 .fc-nome-chamas__fogo i { width: 48px; height: 64px; margin-left: -24px; background-size: 288px 64px; animation-name: fc-chama-viva-2; }
+@keyframes fc-chama-viva-2 { to { background-position: -288px 0; } }
+.fc-nome-chamas--nivel-3 .fc-nome-chamas__fogo i { width: 60px; height: 80px; margin-left: -30px; background-size: 360px 80px; animation-name: fc-chama-viva-3; }
+@keyframes fc-chama-viva-3 { to { background-position: -360px 0; } }
+.fc-nome-chamas--acesa .fc-nome-chamas__texto { text-shadow: 0 0 1px #000, 0 2px 0 #3a1a08, 0 0 12px rgba(255, 150, 60, .9); color: #fffbe8; animation: fc-nome-arde 1.2s ease-in-out infinite; }
+.fc-nome-chamas--fatuo .fc-nome-chamas__texto { text-shadow: 0 0 1px #000, 0 2px 0 #0e2a4a, 0 0 14px rgba(110, 200, 255, .95); }
+.fc-nome-chamas--ancestral .fc-nome-chamas__texto { text-shadow: 0 0 1px #000, 0 2px 0 #2a0e4a, 0 0 16px rgba(200, 120, 255, 1); }
+.fc-nome-chamas--ouro .fc-nome-chamas__texto { color: #fff7d0; text-shadow: 0 0 1px #000, 0 2px 0 #5a3008, 0 0 18px rgba(255, 210, 90, 1), 0 0 34px rgba(255, 190, 60, .7); }
+@keyframes fc-nome-arde { 50% { filter: brightness(1.18); } }
+.fc-arena--estudo .fc-estudo__painel:has(.fc-nome-chamas--ouro) { box-shadow: inset 0 0 0 2px #e9b955, 0 0 26px rgba(255, 200, 90, .55), 0 12px 26px rgba(0, 0, 0, .5); }
+
+/* Aviso do humor: explica por que o clima mudou. */
+.fc-humor { display: grid; gap: 2px; padding: 8px 10px; border-radius: 10px; font-family: var(--fc-ui); animation: fc-humor-entra .5s cubic-bezier(.2, .9, .3, 1.3) both;
+  background: rgba(10, 14, 24, .6); box-shadow: inset 0 0 0 1.5px var(--cor-humor, #e9b955); }
+.fc-humor strong { font-size: 12.5px; color: var(--cor-humor, #ffe6a8); letter-spacing: .02em; }
+.fc-humor small { font-size: 11.5px; color: #e8e2d4; line-height: 1.35; }
+.fc-humor--chama { --cor-humor: #ffb062; }
+.fc-humor--gloria { --cor-humor: #ffd25a; background: linear-gradient(rgba(60, 40, 8, .7), rgba(30, 20, 4, .7)); }
+.fc-humor--chuva { --cor-humor: #9fc8f0; }
+.fc-humor--tempestade { --cor-humor: #b8c4ff; }
+.fc-humor--nevoa { --cor-humor: #c8ccd8; }
+.fc-humor--arcoiris { --cor-humor: #9ff09a; }
+@keyframes fc-humor-entra { from { opacity: 0; transform: translateY(6px) scale(.96); } }
+.fc-estudo__melhor { margin: 0; text-align: center; font: 600 14px var(--fc-ui); color: #ffe6a8; }
+@media (prefers-reduced-motion: reduce) {
+  .fc-clima__raios, .fc-clima__nevoa, .fc-nome-chamas__fogo i, .fc-nome-chamas--acesa .fc-nome-chamas__texto, .fc-clima--clarao .fc-clima__veu { animation: none !important; }
+}
+/* celular em pé: o painel do estudo vira uma faixa; o aviso do clima encolhe para uma linha */
+@media (max-width: 640px) and (orientation: portrait) {
+  .fc-estudo__painel .fc-humor { display: none; }
+  .fc-humor-aviso { display: grid; }
+  .fc-estudo__painel .fc-nome-chamas { flex: none; padding: 12px 2px 2px; font-size: 15px; }
+  .fc-nome-chamas--nivel-2 .fc-nome-chamas__fogo i, .fc-nome-chamas--nivel-3 .fc-nome-chamas__fogo i { width: 36px; height: 48px; margin-left: -18px; background-size: 216px 48px; animation-name: fc-chama-viva; }
+}
+/* deitado (painel estreito à esquerda): só o título do humor */
+@media (max-height: 500px) and (orientation: landscape) { .fc-estudo__painel .fc-humor small { display: none; } }
+
+/* aviso flutuante do clima (no celular em pé, onde o painel é uma faixa): aparece e some */
+.fc-humor-aviso { display: none; position: absolute; z-index: 30; left: 50%; top: 64px; width: min(340px, calc(100% - 32px)); translate: -50% 0; gap: 2px; padding: 8px 12px;
+  border-radius: 12px; font-family: var(--fc-ui); text-align: center; pointer-events: none; background: rgba(10, 14, 24, .86); box-shadow: inset 0 0 0 1.5px var(--cor-humor, #e9b955), 0 8px 20px rgba(0, 0, 0, .5);
+  animation: fc-humor-aviso 4.2s ease both; }
+.fc-humor-aviso strong { font-size: 13px; color: var(--cor-humor, #ffe6a8); }
+.fc-humor-aviso small { font-size: 12px; color: #e8e2d4; line-height: 1.35; }
+@keyframes fc-humor-aviso { 0% { opacity: 0; transform: translateY(-8px) scale(.95); } 10%, 82% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(-6px); } }
+@media (max-width: 640px) and (orientation: portrait) { .fc-humor-aviso { display: grid; } }
