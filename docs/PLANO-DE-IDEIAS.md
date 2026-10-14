@@ -66,7 +66,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 35. [x] Página de "diário da sessão" no fim: clima de cada trecho, melhor sequência, área mais forte.
 36. [ ] Selos colecionáveis da Biblioteca: primeira glória, 100 flashcards na semana, sem tempestade.
 37. [x] Modo "Leitura tranquila": chuva calma de fundo de propósito, para quem gosta de estudar com chuva.
-38. [ ] Música da Biblioteca que muda de camada com o humor (chuva abafa, glória abre um coral).
+38. [x] Música da Biblioteca que muda de camada com o humor (chuva abafa, glória abre um coral).
 39. [ ] Pequenos fantasmas leitores que passam ao fundo quando o estudo passa de 15 min (sem assustar).
 40. [ ] Estações do ano na Biblioteca conforme o mês (folhas no outono, neve em julho).
 
@@ -131,7 +131,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 ## J. Música e som (referência Stardew)
 
-75. [ ] Trilha calma e alegre para os andares a céu aberto (violão e flauta).
+75. [x] Trilha calma e alegre para os andares a céu aberto (violão e flauta).
 76. [x] Transição suave entre músicas (crossfade).
 77. [x] Ambiente de chuva e trovão para a Biblioteca.
 78. [x] (T) Confirmar o som num celular real.
@@ -141,7 +141,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 79. [x] Bestiário antigo atualizado com as artes novas.
 80. [x] Contador da rota de estudo.
 81. [ ] Áreas do baralho de demonstração.
-82. [ ] Emenda da faixa "sala" da música.
+82. [x] Emenda da faixa "sala" da música.
 83. [x] (T) Colar a parte 19 do SQL no Supabase.
 84. [x] PR #224 (abrir o jogo por cima do site, botão Menu, correção da barra no celular): trazer para a base.
 
@@ -167,3 +167,5 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026, continuidade da Biblioteca:** 34, 35, 37 e 77: livros por “Sabia”, diário de clima/área, chuva voluntária e ambiente procedural. Auditoria confirmou 76 (fades sobrepostos em `sons.ts`), 79 (`Ator` no bestiário) e 80 (contador da sessão) já implementados. Ver [relatório de continuidade](flashcards/PENDENCIAS-14-10.md).
 
 - **14/10/2026, tutorial e medição:** 63 concluída com demonstração isolada; 70 tem benchmark local reproduzível, mas a meta em aparelho físico continua pendente. [Relatório](flashcards/TUTORIAL-DESEMPENHO-14-10.md).
+
+- **14/10/2026, música e clima:** 38, 75 e 82: chuva abafa a trilha, Glória recebe coral sincronizado sob demanda, Passeio ao Sol traz violão/flauta aos cenários abertos, e a emenda das salas é suavizada. [Relatório](flashcards/MUSICA-CLIMA-14-10.md).

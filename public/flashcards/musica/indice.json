@@ -92,9 +92,23 @@
  },
  "sala": {
   "arquivo": "sala.mp3",
+  "arquivo_opus": "sala.ogg",
   "laco": true,
   "duracao": 45.714,
-  "bpm": 84,
-  "arquivo_opus": "sala.ogg"
+  "bpm": 84
+ },
+ "passeio": {
+  "arquivo": "passeio.mp3",
+  "arquivo_opus": "passeio.ogg",
+  "laco": true,
+  "duracao": 62.609,
+  "bpm": 92
+ },
+ "biblioteca-coral": {
+  "arquivo": "biblioteca-coral.mp3",
+  "arquivo_opus": "biblioteca-coral.ogg",
+  "laco": true,
+  "duracao": 65.455,
+  "bpm": 88
  }
 }

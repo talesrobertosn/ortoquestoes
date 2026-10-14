@@ -19,7 +19,7 @@ import numpy as np
 
 AQUI = Path(__file__).resolve().parent
 sys.path.insert(0, str(AQUI))
-from sintese import SR, finalizar  # noqa: E402
+from sintese import SR, finalizar, fechar_laco  # noqa: E402
 from temas import TEMAS  # noqa: E402
 
 DESTINO = AQUI.parents[1] / 'public' / 'flashcards' / 'musica'
@@ -55,6 +55,8 @@ def principal() -> int:
         t0 = time.time()
         T, laco = TEMAS[nome]()
         est = finalizar(T.mix, molhado=0.3 if laco else 0.34, laço=T.dur if laco else None)
+        if nome == 'sala':
+            est = fechar_laco(est)
         wav = DESTINO / f'{nome}.wav'
         gravar_wav(wav, est)
         mp3 = DESTINO / f'{nome}.mp3'

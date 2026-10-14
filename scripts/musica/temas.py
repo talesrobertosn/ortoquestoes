@@ -9,7 +9,7 @@ from __future__ import annotations
 import re
 
 from sintese import (Mix, caixa, coro, cordas, cordas_staccato, crescendo_prato, finalizar, flauta, harpa, metais, piano,
-                     prato, sino, taiko, timpano)
+                     prato, sino, taiko, timpano, violao)
 
 NOTAS = {'C': 0, 'D': 2, 'E': 4, 'F': 5, 'G': 7, 'A': 9, 'B': 11}
 
@@ -399,6 +399,35 @@ def sala():
     return T, True
 
 
+def passeio():
+    """Trilha acústica original em Sol maior: violão, flauta e celesta leve."""
+    T = Tema(92, 24)
+    for i, a in enumerate(['G', 'C', 'G', 'D', 'Em', 'C', 'Am', 'D'] * 3):
+        r, ter, qui = acorde(a, 3)
+        for k, n in enumerate((r-12, qui-12, ter, qui, r+12, qui, ter, qui-12)):
+            T.mix.add(violao(n, 2.0, .5 if k % 2 == 0 else .36), T.s(i*4+k*.5), -.25, .75)
+    melodia = ('G4:.5 B4:.5 D5:1 B4:1 A4:1 | G4:1 E5:1 D5:1 C5:1 | '
+               'B4:1 D5:.5 E5:.5 G5:1 D5:1 | F#5:1 E5:1 D5:1 r:1 | '
+               'E5:.5 G5:.5 B5:1 A5:1 G5:1 | E5:1 D5:1 C5:1 G4:1 | '
+               'A4:1 C5:.5 E5:.5 D5:1 C5:1 | A4:1 F#4:1 G4:1 r:1')
+    T.melodia(flauta, melodia, 0, .25, .62, vel=.43)
+    T.melodia(piano, melodia, 32, .15, .45, vel=.35)
+    T.melodia(flauta, melodia, 64, .25, .58, vel=.42)
+    for i in (1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23):
+        T.mix.add(sino(m('G6') if i % 4 == 1 else m('D6'), 2, .13), T.s(i*4+2.5), .5, .35)
+    return T, True
+
+
+def biblioteca_coral():
+    """Camada vocal sincronizada aos 24 compassos da Biblioteca; sem amostras."""
+    T = Tema(88, 24)
+    for i, a in enumerate(['G', 'C', 'G', 'D', 'Em', 'C', 'Am', 'D'] * 3):
+        for k, n in enumerate(acorde(a, 4)):
+            T.mix.add(coro(n, T.s(4), vel=.12, vogal='o'), T.s(i*4), [-.3,0,.3][k], .6)
+    return T, True
+
+
 TEMAS = {'cripta': cripta, 'batalha': batalha, 'elite': elite, 'chefe': chefe, 'dragao': dragao,
          'vitoria': vitoria, 'derrota': derrota, 'recompensa': recompensa, 'biblioteca': biblioteca, 'torre': torre,
-         'floresta': floresta, 'masmorra': masmorra, 'covil': covil, 'sala': sala}
+         'floresta': floresta, 'masmorra': masmorra, 'covil': covil, 'sala': sala,
+         'passeio': passeio, 'biblioteca-coral': biblioteca_coral}

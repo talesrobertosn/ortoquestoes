@@ -38,3 +38,7 @@ As caixas do plano são a referência de entrega, não uma promessa de que qualq
 ## Bloco seguinte
 
 Tutorial 63 concluído e benchmark 70 parcialmente validado. [Relatório](TUTORIAL-DESEMPENHO-14-10.md). Comparação das capturas antigas confirmou que o formulário e a capa já foram atualizados na versão publicada.
+
+## Música (38, 75, 82)
+
+Concluída para revisão e publicação, com síntese autoral e validação do player. [Relatório](MUSICA-CLIMA-14-10.md). O tutorial e o reparo de integração já estão na base; deploy #257 confirmado.
