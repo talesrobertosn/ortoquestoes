@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Painel de partidas: pé torto congênito</title>
+<!-- Stories de questão no mesmo painel de partidas do feed do dia (15/10/2026).
+     Questão pediatria-0001 (TARO 2020): enunciado, alternativas e gabarito iguais aos do acervo;
+     explicação a partir do comentário (public/acervo/comentarios/pediatria.json). -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root {
+  --noite: #0c1013; --painel: #15191d; --moldura: #2a2f35; --placa-a: #2a2f36; --placa-b: #1d2126;
+  --letra: #f3efe4; --apagada: #8d949c; --ouro: #f4cf7c; --ouro2: #c9952f; --verde: #3ecf8e; --vermelho: #ff7a6b; --azul: #7fb8ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--letra); }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1920px;
+  background: radial-gradient(120% 60% at 50% 0%, #1b2329 0%, var(--noite) 60%), var(--noite); }
+section::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,0.018) 0 2px, transparent 2px 120px); pointer-events: none; }
+.marca { position: absolute; left: 64px; top: 110px; display: flex; align-items: center; gap: 14px; font-family: Jakarta; font-weight: 800; font-size: 30px; }
+.marca i { display: grid; gap: 5px; }
+.marca i b { display: block; width: 30px; height: 7px; border-radius: 3px; background: #5d666f; }
+.marca i b:nth-child(2) { background: var(--ouro); width: 38px; }
+.selo { position: absolute; right: 64px; top: 104px; padding: 10px 20px; border-radius: 999px; border: 2px solid var(--ouro); color: var(--ouro); font-family: Jakarta; font-weight: 800; font-size: 22px; letter-spacing: 0.12em; text-transform: uppercase; }
+.flap { display: flex; gap: 3px; }
+.flap i { position: relative; display: grid; place-items: center; width: 34px; height: 56px; border-radius: 5px; background: linear-gradient(180deg, var(--placa-a) 0 49%, #0b0d0f 49% 51%, var(--placa-b) 51%); box-shadow: 0 2px 0 #08090b; font-style: normal; font-weight: 800; font-size: 36px; line-height: 1; color: var(--letra); text-transform: uppercase; }
+.flap i::after { content: ''; position: absolute; left: 0; right: 0; top: 49%; height: 2%; background: rgba(0,0,0,0.6); }
+.flap.ouro i { color: var(--ouro); } .flap.verde i { color: var(--verde); } .flap.vermelho i { color: var(--vermelho); } .flap.azul i { color: var(--azul); } .flap.apagada i { color: #5b636b; }
+.flap.mini i { width: 24px; height: 38px; font-size: 24px; border-radius: 4px; }
+
+.voo { position: absolute; left: 64px; right: 64px; top: 220px; display: flex; justify-content: space-between; align-items: center; padding: 22px 26px; border-radius: 18px; background: linear-gradient(180deg, #1a1f24, var(--painel)); border: 3px solid var(--moldura); }
+.voo small { display: block; margin-bottom: 8px; font-size: 18px; font-weight: 700; letter-spacing: 0.18em; color: var(--apagada); text-transform: uppercase; }
+.enunciado { position: absolute; left: 64px; right: 64px; top: 420px; font-family: Jakarta; font-weight: 700; font-size: 50px; line-height: 1.22; letter-spacing: -0.012em; text-wrap: pretty; }
+.enunciado em { font-style: normal; color: var(--ouro); }
+.portoes { position: absolute; left: 64px; right: 64px; display: grid; gap: 16px; }
+.portao { display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; padding: 22px 24px; border-radius: 18px; background: linear-gradient(180deg, #1a1f24, var(--painel)); border: 3px solid var(--moldura); }
+.portao p { font-size: 34px; line-height: 1.25; font-weight: 600; }
+.portao small { display: block; margin-top: 6px; font-size: 24px; line-height: 1.35; font-weight: 500; color: #b6bdc4; }
+.portao.certo { border-color: var(--verde); background: linear-gradient(160deg, rgba(62,207,142,0.16), rgba(62,207,142,0.03)); }
+.portao.errado { opacity: 0.86; }
+.portao.errado p { color: #c8ced4; }
+.chamada { position: absolute; left: 64px; right: 64px; bottom: 200px; display: grid; gap: 14px; }
+.rotulo { font-weight: 800; font-size: 22px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ouro); }
+.chamada h2 { font-family: Jakarta; font-weight: 800; font-size: 66px; line-height: 1.04; letter-spacing: -0.025em; }
+.chamada h2 em { font-style: normal; color: var(--ouro); }
+.chamada p { font-size: 32px; line-height: 1.4; color: #c7cdd3; }
+.prova { position: absolute; left: 64px; right: 64px; top: 1190px; display: grid; gap: 16px; padding: 30px 32px; border-radius: 22px; border: 2px solid var(--ouro); background: linear-gradient(160deg, rgba(244,207,124,0.13), rgba(244,207,124,0.02)); }
+.prova p { font-size: 31px; line-height: 1.42; color: #e2e5e8; }
+.prova b { color: var(--ouro); }
+.site { position: absolute; left: 0; right: 0; bottom: 90px; text-align: center; font-family: Jakarta; font-weight: 800; font-size: 30px; color: var(--apagada); }
+</style>
+</head>
+<body>
+
+<section id="q-story-01-pergunta">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="selo">Questão do dia</div>
+  <div class="voo">
+    <div><small>Voo</small><span class="flap ouro" data-t="TARO 2020" data-n="9"></span></div>
+    <div><small>Destino</small><span class="flap" data-t="PEDIATRIA" data-n="9"></span></div>
+  </div>
+  <p class="enunciado">No pé torto congênito, a transposição da inserção do tendão do músculo tibial anterior para o cuneiforme lateral ou cuboide está indicada para a correção da deformidade em:</p>
+  <div class="portoes" style="top: 830px">
+    <div class="portao"><span class="flap ouro" data-t="A" data-n="1"></span><p>equino valgo fixo do retropé</p><span class="flap mini apagada" data-t="?" data-n="1"></span></div>
+    <div class="portao"><span class="flap ouro" data-t="B" data-n="1"></span><p>equino valgo dinâmico do retropé</p><span class="flap mini apagada" data-t="?" data-n="1"></span></div>
+    <div class="portao"><span class="flap ouro" data-t="C" data-n="1"></span><p>inversão ou supinação fixa do mediopé</p><span class="flap mini apagada" data-t="?" data-n="1"></span></div>
+    <div class="portao"><span class="flap ouro" data-t="D" data-n="1"></span><p>inversão ou supinação dinâmica do mediopé</p><span class="flap mini apagada" data-t="?" data-n="1"></span></div>
+  </div>
+  <div class="chamada">
+    <p class="rotulo">Qual é o seu portão?</p>
+    <h2>Pense na sua letra. <em>A resposta sai no próximo story.</em></h2>
+  </div>
+</section>
+
+<section id="q-story-02-resposta">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="selo">Resposta</div>
+  <div class="voo">
+    <div><small>Embarque</small><span class="flap verde" data-t="PORTÃO D" data-n="8"></span></div>
+    <div><small>Situação</small><span class="flap verde" data-t="CONFIRMADO" data-n="10"></span></div>
+  </div>
+  <div class="portoes" style="top: 420px">
+    <div class="portao certo"><span class="flap verde" data-t="D" data-n="1"></span><p>inversão ou supinação dinâmica do mediopé<small>Recidiva dinâmica: na marcha, o antepé supina; parado, o pé se corrige.</small></p><span class="flap mini verde" data-t="✓" data-n="1"></span></div>
+    <div class="portao errado"><span class="flap apagada" data-t="A" data-n="1"></span><p>equino valgo fixo do retropé<small>O pé torto não tem equinovalgo, e deformidade fixa não se corrige com transferência.</small></p><span class="flap mini vermelho" data-t="X" data-n="1"></span></div>
+    <div class="portao errado"><span class="flap apagada" data-t="B" data-n="1"></span><p>equino valgo dinâmico do retropé<small>Não é a deformidade do pé torto; levar o tibial anterior para lateral agravaria o valgo.</small></p><span class="flap mini vermelho" data-t="X" data-n="1"></span></div>
+    <div class="portao errado"><span class="flap apagada" data-t="C" data-n="1"></span><p>inversão ou supinação fixa do mediopé<small>Pé rígido: primeiro gessos ou osteotomias; a transferência só funciona no pé flexível.</small></p><span class="flap mini vermelho" data-t="X" data-n="1"></span></div>
+  </div>
+  <div class="prova">
+    <p class="rotulo">Para a prova</p>
+    <p>Recidiva <b>dinâmica</b> do pé torto, depois dos <b>2,5 a 3 anos</b>: supinação do antepé no balanço da marcha, sola gasta na borda lateral, pé que se corrige passivamente. Transferência do <b>tendão inteiro</b> do tibial anterior para o <b>cuneiforme lateral</b>. Se a deformidade for <b>fixa</b>, gessos de Ponseti antes.</p>
+  </div>
+  <p class="site">Comentário completo em ortoquestoes.com.br</p>
+</section>
+
+<script>
+for (const el of document.querySelectorAll('.flap')) {
+  const t = (el.dataset.t || '').padEnd(+el.dataset.n || 0, ' ')
+  el.innerHTML = [...t].map((c) => `<i>${c === ' ' ? '&nbsp;' : c}</i>`).join('')
+}
+</script>
+</body>
+</html>

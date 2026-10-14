@@ -11,12 +11,24 @@ Painel de aeroporto com letras em plaquinhas que viram. Cada dia de estudo é um
 
 ## Ordem e horários
 
+Pedido do Tales (14/10): o feed é a propaganda e os stories são uma questão.
+
 | O quê | Arquivos | Quando |
 |---|---|---|
-| Feed (carrossel) | feed-01 a feed-05 | das 7h às 8h |
-| Stories | story-01 a story-03 | no almoço ou das 18h às 19h |
+| Feed (carrossel, propaganda) | feed-01 a feed-05 | das 7h às 8h |
+| Story da questão (pergunta) | q-story-01-pergunta | das 7h às 8h, junto com o feed, ou no almoço |
+| Story da questão (resposta) | q-story-02-resposta | das 18h às 19h |
+| Stories de propaganda (opcional) | story-01 a story-03 | outro dia, ou depois da resposta |
 
 Os stories não têm figurinha. Se quiser o link, use o modelo "Treine grátis".
+
+## Questão dos stories
+
+**pediatria-0001** (TARO 2020, pé torto congênito): enunciado, alternativas e gabarito (**D**) iguais
+aos do acervo (`public/acervo/temas/pediatria.json`). As frases das alternativas e o "Para a prova"
+vêm do comentário (`public/acervo/comentarios/pediatria.json`): recidiva dinâmica depois dos 2,5 a
+3 anos, transferência do tendão inteiro para o cuneiforme lateral, gessos antes se a deformidade
+for fixa. Arquivo: `questao.html`.
 
 ## Conferência
 
