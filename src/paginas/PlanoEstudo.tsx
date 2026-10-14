@@ -344,7 +344,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
 
   // ── O botão único ──
   let botao: Parameters<typeof CartaoHoje>[0]['botao'] = null
-  if (!aberto) botao = { rotulo: 'Seguir este cronograma', detalhe: 'Assinando, ele fica salvo e se ajusta todo dia', href: href('/assinatura'), ouro: true }
+  if (!aberto) botao = { rotulo: 'Criar meu cronograma', detalhe: 'Exclusivo para assinantes', href: href('/assinatura'), ouro: true }
   else if (pendente) botao = { rotulo: `Continuar: faltam ${pendente.total - pendente.feitas} questões`, detalhe: `Você parou na ${pendente.feitas + 1}ª. As que já respondeu ficam salvas.`, href: href('/sessao') }
   else if (calculo.hoje && calculo.faltaHoje > 0) botao = { rotulo: calculo.feitasHoje > 0 ? `Continuar: faltam ${calculo.faltaHoje} questões` : `Começar: ${calculo.faltaHoje} questões`, detalhe: principal ? `${principal.nome}${mistura.length ? ` + ${mistura.map((m) => m.nome).join(' e ')}` : ''} · ~${formatarTempo(calculo.faltaHoje * minutos)}` : undefined, aoClicar: aoComecar }
   else if (calculo.miniHoje && !feitos.mini && hub) botao = { rotulo: 'Fazer o mini-simulado', detalhe: `${TAMANHO_MINI} questões · ~45 min`, aoClicar: hub.aoMini }
@@ -360,7 +360,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   return <>
     {aberto && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
     {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
-    {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Esta é a prévia do seu cronograma. Assinando, ele fica salvo e se ajusta todo dia.</p>}
+    {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
 
     <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} />
 
@@ -384,15 +384,20 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
         </div>}
       </div>
       <div className="cp-col cp-col--lado">
-        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
-        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} /></div>}
+        {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
+        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} /></div>}
         {!calculo.provaPassou && <div className="cp-ordem-5">{aberto
           ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} />
           : <div className="cp-previa-depois">
-              <Depois calculo={calculo} plano={plano} maximo={2} semMais />
-              {semanas.length > SEMANAS_PREVIA && <Degustacao className="pe-degustacao" titulo={`Mais ${semanas.length - SEMANAS_PREVIA} semanas até a prova`} texto={<p>O cronograma completo: a lista de cada dia, as semanas até a prova, a reta final e o ajuste automático quando você atrasa ou adianta.</p>} acao="Liberar o cronograma completo">
-                <SemanaASemana semanas={semanas.slice(SEMANAS_PREVIA, SEMANAS_PREVIA + 3)} aberto={false} calculo={calculo} />
-              </Degustacao>}
+              <Degustacao className="pe-degustacao" titulo="O resto é do assinante" texto={<ul className="cp-vitrine-lista">
+                <li>Amanhã e as semanas até a prova, com os marcos</li>
+                <li>A sua data, o seu tempo por dia, folgas e dias de plantão</li>
+                <li>Ajuste automático quando atrasa ou adianta</li>
+                <li>Semana difícil, mini-simulados e reta final</li>
+                <li>Desempenho, prontidão e mapa de risco por área</li>
+              </ul>} acao="Criar meu cronograma">
+                <Depois calculo={calculo} plano={plano} maximo={3} semMais />
+              </Degustacao>
             </div>}</div>}
       </div>
     </div>
@@ -462,18 +467,21 @@ function primeiraVisita(): boolean {
 }
 
 /** Não assinante: preenche como o assinante e vê o começo do próprio cronograma. */
+/**
+ * Quem não assina vê uma vitrine (orientação de 14/10/2026): um exemplo do cronograma até o
+ * TEOT, montado com o próprio histórico, só com o essencial (onde você está, como é o dia e a
+ * semana em cores). Montar e seguir o seu, com todos os detalhes, é exclusivo para assinantes.
+ */
 function PreviaCronograma({ indice, respondidas }: { indice: Indice; respondidas: Respondidas }) {
-  // A prévia fica guardada no aparelho: quem volta encontra o próprio cronograma, sem preencher de novo.
-  const [guardada, definirGuardada] = usarArmazenado<PlanoSalvo | null>('cronograma:previa', null)
-  const previa = guardada && dataLocal(guardada.data_prova) > new Date() ? guardada : null
-  const calculo = useMemo(() => (previa ? calcularPlano(indice, respondidas, previa) : null), [indice, respondidas, previa])
-  if (!previa || !calculo) return <FormularioPlano indice={indice} respondidas={respondidas} atual={null} aoSalvar={definirGuardada} previa />
+  const exemplo = useMemo<PlanoSalvo>(() => {
+    const prova = dataLocal(DATA_TEOT) > new Date() ? DATA_TEOT : (() => { const d = new Date(); d.setDate(d.getDate() + 90); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}` })()
+    return { data_prova: prova, intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: respondidasNoAcervo(indice, respondidas, true), criado_em: new Date().toISOString(), incluir_simulados: true }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [indice])
+  const calculo = useMemo(() => calcularPlano(indice, respondidas, exemplo), [indice, respondidas, exemplo])
   return (
     <div className="empilha-2 pe cp">
-      <VisaoCronograma plano={previa} calculo={calculo} aberto={false} />
-      <div className="linha">
-        <button type="button" className="botao" onClick={() => definirGuardada(null)}><Icone nome="lapis" tamanho={16} /> Mudar a data ou a intensidade</button>
-      </div>
+      <VisaoCronograma plano={exemplo} calculo={calculo} aberto={false} />
     </div>
   )
 }

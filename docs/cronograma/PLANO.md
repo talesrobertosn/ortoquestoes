@@ -108,9 +108,17 @@ Linguagem visual fixa:
   indo, blocos recolhidos, tour, resumo da semana, calendário .ics). Cores por área em `src/dados/coresAreas.ts`.
 - Montagem em 4 passos em `PlanoEstudo.tsx`, com o resumo ao vivo (barra fixa no celular) e a diferença de cada escolha.
 - Opções novas (dia leve, semana difícil, começar por, dominadas, segunda prova) na coluna `opcoes` de
-  `planos_estudo`: parte 20 do SQL (`supabase/colar-no-painel/sql-202610141300-parte20.sql`). Sem o SQL, ficam no aparelho.
+  `planos_estudo`: parte 20 do SQL (`supabase/colar-no-painel/sql-202610141300-parte20.sql`), **aplicada pelo Tales em 14/10/2026**. Antes disso, ficavam só no aparelho; o código mantém essa reserva para bancos sem a coluna.
 - Sessão: faixa da meta de hoje na cor da área; fim de sessão do cronograma com o que falta hoje e amanhã.
 - Modo demonstração só em desenvolvimento: `#/cronograma?demo=1`.
+
+## Quem não assina (orientação do Tales, 14/10/2026)
+
+Quem não assina vê só uma **vitrine**: um exemplo do cronograma até o TEOT, montado com o próprio
+histórico, com o essencial (onde você está, o dia de hoje e a semana em cores, sem os números).
+Amanhã, as semanas seguintes, os ajustes, o desempenho e os blocos de detalhe ficam bloqueados.
+**Criar o cronograma é só para assinantes**: o formulário de montar não aparece para quem não assina.
+Isso substitui a prévia preenchida pela pessoa (itens 38 e 39).
 
 ## Regras que continuam valendo
 

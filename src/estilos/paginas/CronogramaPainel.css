@@ -231,3 +231,6 @@
   .pe .pe-ao-vivo__total span { font-family: inherit; font-size: inherit; }
   .pe .pe-ao-vivo__vazio { grid-column: 1 / -1; margin: 0; font-size: 0.8rem; }
 }
+
+/* Vitrine para quem não assina (14/10/2026). */
+.cp-vitrine-lista { margin: 0.4rem 0 0; padding-left: 1.1rem; text-align: left; font-size: var(--corpo-menor); line-height: 1.5; }

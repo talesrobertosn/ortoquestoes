@@ -543,7 +543,7 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
 
       <div className="vd-cronograma__rodape">
         <p><Icone nome="reiniciar" tamanho={16} /> No cronograma de verdade, o diagnóstico calibra o plano no primeiro dia, as áreas em que você está abaixo da média ganham mais espaço e a meta se recalcula todo dia (atrasou, sobe no máximo 25%). Dia de plantão vira dia leve, a semana difícil fica em 10 questões por dia, e a cada duas semanas vem um mini-simulado.</p>
-        <a className="botao botao--grande vd-botao-ouro" href={href(conta ? '/cronograma' : '/conta?modo=criar&voltar=%2Fcronograma')}>{assinante ? 'Abrir meu cronograma' : conta ? 'Ver a prévia com o meu histórico' : 'Criar conta grátis e ver o meu'}</a>
+        <a className="botao botao--grande vd-botao-ouro" href={href(conta ? '/cronograma' : '/conta?modo=criar&voltar=%2Fcronograma')}>{assinante ? 'Abrir meu cronograma' : conta ? 'Ver um exemplo com o meu histórico' : 'Criar conta grátis e ver o meu'}</a>
       </div>
     </section>
   )

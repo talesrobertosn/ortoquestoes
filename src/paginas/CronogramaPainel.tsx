@@ -63,7 +63,7 @@ export function OndeVoceEsta({ plano, calculo, previa = false }: { plano: PlanoS
 
   return (
     <section className="cp-onde" aria-labelledby="cp-onde-titulo">
-      <p className="cp-onde__selo">{previa ? 'Prévia do seu cronograma' : 'Onde você está'} · {plano.prova}</p>
+      <p className="cp-onde__selo">{previa ? 'Exemplo do cronograma' : 'Onde você está'} · {plano.prova}</p>
       <h1 id="cp-onde-titulo">{calculo.provaPassou ? 'Dia da prova' : <>Faltam <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
       <p className="cp-onde__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal}</p>
       {!calculo.provaPassou && <>
@@ -187,7 +187,7 @@ const diferencaDias = (d: Date) => Math.round((meiaNoite(d).getTime() - meiaNoit
 
 // ─── Esta semana ───────────────────────────────────────────────────────────
 
-export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean }) {
+export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean }) {
   const hoje = meiaNoite(new Date())
   const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
   const opcoes = opcoesDe(plano)
@@ -232,12 +232,13 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
               <span className="cp-dia__nome">{SEMANA_CURTA[x.d.getDay()]}</span>
               <b className="cp-dia__num">{x.d.getDate()}</b>
               <span className="cp-dia__cor" style={{ background: x.estado === 'folga' ? 'transparent' : faixaCores(x.itens.map((i) => ({ slug: i.slug, n: i.n }))) }} aria-hidden="true" />
-              <em>{x.estado === 'futuro' ? (x.tipo === 'leve' ? `${x.n} leve` : x.n || '') : x.estado === 'feito' || x.estado === 'parcial' ? `${ROTULO[x.estado]}` : ROTULO[x.estado]}</em>
+              <em>{simples ? (x.estado === 'hoje' || x.estado === 'folga' ? ROTULO[x.estado] : '') : x.estado === 'futuro' ? (x.tipo === 'leve' ? `${x.n} leve` : x.n || '') : x.estado === 'feito' || x.estado === 'parcial' ? `${ROTULO[x.estado]}` : ROTULO[x.estado]}</em>
             </li>
           ))}
         </ol>
         {areasSemana.size > 0 && <ul className="cp-legenda" aria-label="Cores das áreas">{[...areasSemana].map(([slug, nome]) => <li key={slug}><i style={{ background: corDaArea(slug) }} />{nome}</li>)}<li><i className="cp-legenda__folga" />folga</li></ul>}
-        {frases.length > 0 && <p className="cp-semana__frase">{frases.join(' ')}</p>}
+        {!simples && frases.length > 0 && <p className="cp-semana__frase">{frases.join(' ')}</p>}
+        {simples && <p className="cp-semana__frase">Cada cor é uma área. No seu cronograma, cada dia mostra quantas questões e quais assuntos.</p>}
         {aoSemanaDificil && <div className="cp-dificil">
           {dificilAtiva
             ? <><span><Icone nome="alerta" tamanho={15} /> <b>Semana difícil ativa:</b> {DIA_MINIMO} questões por dia, o suficiente para manter a sequência. O resto se espalha pelas próximas semanas.</span><button type="button" className="botao botao--fantasma" disabled={salvando} onClick={() => aoSemanaDificil(false)}>Voltar ao normal</button></>
