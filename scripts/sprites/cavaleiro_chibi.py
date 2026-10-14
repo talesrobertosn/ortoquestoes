@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
-"""Herói do Orto Questões em pixel art chibi (14/10/2026).
+"""Herói do Orto Questões em pixel art chibi, versão rica (14/10/2026).
 
-Pedido do Tales, com referência anexada na conversa ("Chibi como a 3ª"): cavaleiro chibi de elmo
-grande e redondo, fechado, com viseira, pluma vermelha curta, capa vermelha, armadura de aço em
-poucos tons, contorno escuro e corpo pequeno. Olha para a direita (para o adversário).
+Pedido do Tales: chibi como a 3ª referência (elmo grande, redondo e fechado com viseira, pluma e
+capa vermelhas, aço com contorno), e depois "mais rica em detalhes, mais bonita, mais efeitos,
+incrível, carismática, que possa ser usada como personagem no futuro".
 
-Tudo é desenhado em resolução nativa (1 pixel = 1 pixel do jogo): cada peça é uma forma simples
-pintada em faixas de tom (luz de cima e da esquerda) e ganha o próprio contorno; as peças são
-empilhadas de trás para a frente. Nada de imagem baixada ou gerada.
+Como desenha (tudo aqui, em resolução nativa: 1 pixel = 1 pixel do jogo):
+  - cada peça é uma máscara com normais (esfera, cápsula ou plano, com dobras no tecido);
+  - a luz vem de cima e da esquerda; o tom sai de uma rampa de cores com desvio de matiz
+    (sombra fria, brilho quente), com pontilhado 2×2 só nas passagens de tom do tecido;
+  - metal tem brilho especular e faixa escura de reflexo do horizonte;
+  - depois de empilhar as peças: contorno seletivo (a cor da borda vem do material), linha de
+    separação onde uma peça cobre outra e luz de recorte fria do lado de trás;
+  - efeitos por cima, sem contorno: olhos acesos na viseira, brilho da lâmina, rastro do golpe,
+    faíscas, cintilações da vitória e partículas da lenda.
+Olha para a direita (para o adversário).
 
     python3 scripts/sprites/cavaleiro_chibi.py                  # grava heroi-1..6 em public/flashcards/sprites/
-    python3 scripts/sprites/cavaleiro_chibi.py --previa x.png   # prévia ampliada (estágios × quadros)
+    python3 scripts/sprites/cavaleiro_chibi.py --previa x.png   # prévia ampliada
     python3 scripts/sprites/cavaleiro_chibi.py --mascote        # mascote grande em public/mascote/
 """
 from __future__ import annotations
@@ -30,35 +37,146 @@ from motor import gravar_folha  # noqa: E402
 RAIZ = AQUI.parents[1]
 DESTINO = RAIZ / 'public' / 'flashcards' / 'sprites'
 
-W, H = 64, 64          # tela de desenho
-WQ, MARGEM = 80, 8     # quadro gravado: mais largo, para caber o herói caído
-ANCORA = (31 + MARGEM, 60)
+W, H = 136, 108
+X0 = 60                 # eixo do corpo
+PE = 101                # linha dos pés
+ANCORA = (X0, PE)
 
 
 def hx(c):
     c = c.lstrip('#')
-    return tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))
+    return (int(c[0:2], 16), int(c[2:4], 16), int(c[4:6], 16))
 
 
-# paletas curtas, do escuro ao claro (estilo da referência: 4 a 5 tons por material)
-PAL = {
-    'aco': ['#262b36', '#465061', '#77839a', '#adb8c8', '#e4eaf1'],
-    'aco_esc': ['#1f242e', '#3a414e', '#5e6878', '#8a95a5', '#b6c0cc'],
-    'perola': ['#5d5850', '#958f84', '#cbc5b8', '#ece8df', '#ffffff'],
-    'vermelho': ['#3e0a10', '#76141c', '#ad2229', '#d9403d', '#f2735e'],
-    'ouro': ['#5a3708', '#94621a', '#cf9a32', '#f2cd5c', '#fff0b0'],
-    'couro': ['#2a170c', '#4d2d17', '#734424', '#986136', '#b98250'],
-    'madeira': ['#331d0d', '#5a3519', '#835227', '#a86f38', '#c58f52'],
-    'visor': ['#0c0e14', '#171b24', '#262c38', '#262c38', '#262c38'],
-    'lamina': ['#4f6d93', '#8fb3d8', '#cfe6fa', '#f0f8ff', '#ffffff'],
+RAMPAS = {
+    'aco': ['#161b26', '#272f3e', '#3d4759', '#5a6679', '#7f8ca1', '#a9b6c9', '#d3dde9', '#f4f8fc'],
+    'aco_t': ['#12161f', '#1f2531', '#313949', '#47515f', '#626e80', '#828fa2', '#a3afc0'],
+    'perola': ['#3f362f', '#62584e', '#8b8173', '#b4ab9b', '#d6cfc0', '#ece7dc', '#faf7f0', '#ffffff'],
+    'ouro': ['#3a210d', '#663b12', '#9c6119', '#cf9128', '#eebd47', '#fbe07c', '#fff6c4'],
+    'vermelho': ['#26060e', '#4a0c18', '#7a1621', '#ab232a', '#d23b36', '#ef6447', '#ff9a6a'],
+    'forro': ['#1b0811', '#300d1a', '#4a1424', '#651c2d'],
+    'azul': ['#0b1230', '#152457', '#203a87', '#2d53b4', '#4673d4', '#73a0ec', '#a8c9fa'],
+    'couro': ['#1f110a', '#3a2112', '#5a341b', '#7d4c27', '#a06836', '#c38a4f', '#dfae74'],
+    'madeira': ['#2a170b', '#4a2b14', '#6e421e', '#93592a', '#b5753a', '#d29654'],
+    'malha': ['#151a23', '#2a313f', '#465062', '#68748a', '#909db2'],
+    'visor': ['#05070b', '#0c1017', '#151b25', '#202837'],
+    'olho': ['#073142', '#0e6f8f', '#29b9e0', '#8beeff', '#e9fdff'],
+    'olho_dano': ['#3a0a06', '#8c2210', '#e2541f', '#ffae5c', '#fff1cf'],
+    'lamina': ['#2c4a70', '#4f78a8', '#86b2e0', '#c2e2fb', '#eef9ff', '#ffffff'],
+    'gema': ['#0b1a4a', '#1d3f9c', '#3f7bea', '#9cc9ff', '#ffffff'],
 }
-PAL = {k: [hx(c) for c in v] for k, v in PAL.items()}
-CONTORNO = hx('#161821')
-CONTORNO_VERM = hx('#2a0609')
+RAMPAS = {k: np.array([hx(c) for c in v], np.uint8) for k, v in RAMPAS.items()}
+NOMES = list(RAMPAS)
+TOPO = np.array([len(RAMPAS[n]) - 1 for n in NOMES])
+CONTORNO = {k: (np.array(v[0], float) * 0.55).astype(np.uint8) for k, v in RAMPAS.items()}
+
+L = np.array([-0.52, -0.66, 0.54]); L /= np.linalg.norm(L)
+HV = L + np.array([0, 0, 1.0]); HV /= np.linalg.norm(HV)
+BAYER = (np.array([[0, 2], [3, 1]]) / 4.0 - 0.375)
+
+YY, XX = np.mgrid[0:H, 0:W].astype(np.float32) + 0.5
+DITHER = BAYER[(YY.astype(int)) % 2, (XX.astype(int)) % 2]
 
 
-def desloca(m, dy, dx):
-    out = np.zeros_like(m)
+def P(dx, y):
+    return np.array([X0 + dx, y], float)
+
+
+def cheio(v):
+    return np.full((H, W), v, np.int16)
+
+
+# ------------------------------------------------------------------ formas
+def m_poli(pts):
+    im = Image.new('L', (W, H), 0)
+    ImageDraw.Draw(im).polygon([(float(x), float(y)) for x, y in pts], fill=255)
+    return np.asarray(im) > 0
+
+
+def m_elipse(c, rx, ry):
+    return ((XX - c[0]) / rx) ** 2 + ((YY - c[1]) / ry) ** 2 <= 1.0
+
+
+def proj_seg(p0, p1):
+    p0, p1 = np.array(p0, float), np.array(p1, float)
+    d = p1 - p0
+    L2 = max(float(d @ d), 1e-6)
+    t = np.clip(((XX - p0[0]) * d[0] + (YY - p0[1]) * d[1]) / L2, 0, 1)
+    px, py = p0[0] + t * d[0], p0[1] + t * d[1]
+    return t, XX - px, YY - py
+
+
+def m_capsula(p0, p1, r0, r1=None):
+    r1 = r0 if r1 is None else r1
+    t, ex, ey = proj_seg(p0, p1)
+    r = r0 + (r1 - r0) * t
+    return ex * ex + ey * ey <= r * r
+
+
+def m_curva(pts, larg0, larg1):
+    """Faixa ao longo de uma polilinha, afinando de larg0 a larg1."""
+    m = np.zeros((H, W), bool)
+    n = len(pts) - 1
+    for i in range(n):
+        a = larg0 + (larg1 - larg0) * i / n
+        b = larg0 + (larg1 - larg0) * (i + 1) / n
+        m |= m_capsula(pts[i], pts[i + 1], a / 2, b / 2)
+    return m
+
+
+def bezier(p0, p1, p2, n=10):
+    p0, p1, p2 = (np.array(p, float) for p in (p0, p1, p2))
+    return [(1 - t) ** 2 * p0 + 2 * (1 - t) * t * p1 + t * t * p2 for t in np.linspace(0, 1, n)]
+
+
+def ponto(x, y):
+    m = np.zeros((H, W), bool)
+    xi, yi = int(x), int(y)
+    if 0 <= xi < W and 0 <= yi < H:
+        m[yi, xi] = True
+    return m
+
+
+# ------------------------------------------------------------------ normais
+def n_esfera(c, rx, ry, chato=1.0):
+    nx, ny = (XX - c[0]) / rx * chato, (YY - c[1]) / ry * chato
+    nz = np.sqrt(np.clip(1 - nx * nx - ny * ny, 0.02, 1))
+    k = np.sqrt(nx * nx + ny * ny + nz * nz)
+    return nx / k, ny / k, nz / k
+
+
+def n_capsula(p0, p1, r0, r1=None):
+    r1 = r0 if r1 is None else r1
+    t, ex, ey = proj_seg(p0, p1)
+    r = np.maximum(r0 + (r1 - r0) * t, 0.5)
+    nx, ny = np.clip(ex / r, -0.98, 0.98), np.clip(ey / r, -0.98, 0.98)
+    nz = np.sqrt(np.clip(1 - nx * nx - ny * ny, 0.03, 1))
+    return nx, ny, nz
+
+
+def n_plano(nx, ny):
+    nz = math.sqrt(max(0.05, 1 - nx * nx - ny * ny))
+    return np.full((H, W), nx, np.float32), np.full((H, W), ny, np.float32), np.full((H, W), nz, np.float32)
+
+
+# ------------------------------------------------------------------ tons
+def tons(N, rampa, metal=False, pano=False, base=0.0, brilho=1.0):
+    nx, ny, nz = N
+    n = len(RAMPAS[rampa])
+    dif = nx * L[0] + ny * L[1] + nz * L[2]
+    if metal:
+        spec = np.clip(nx * HV[0] + ny * HV[1] + nz * HV[2], 0, 1) ** 26
+        v = 0.12 + 0.62 * np.clip(dif * 0.5 + 0.5, 0, 1) ** 1.45 + 0.55 * spec * brilho
+        v -= 0.11 * np.exp(-((ny - 0.18) / 0.11) ** 2) * (nz > 0.35)
+    else:
+        v = 0.08 + 0.84 * np.clip(dif * 0.55 + 0.45, 0, 1)
+    v = v + base
+    f = v * (n - 0.001) + (DITHER * 0.45 if pano else 0)
+    return np.clip(np.floor(f), 0, n - 1).astype(np.int16)
+
+
+def desloca(m, dy, dx, vazio=None):
+    out = np.zeros_like(m) if vazio is None else np.full_like(m, vazio)
     h, w = m.shape[:2]
     ys = slice(max(dy, 0), h + min(dy, 0)); ys0 = slice(max(-dy, 0), h + min(-dy, 0))
     xs = slice(max(dx, 0), w + min(dx, 0)); xs0 = slice(max(-dx, 0), w + min(-dx, 0))
@@ -66,294 +184,445 @@ def desloca(m, dy, dx):
     return out
 
 
-class Tela:
+class Quadro:
     def __init__(self):
-        self.cor = np.zeros((H, W, 3), np.uint8)
-        self.a = np.zeros((H, W), bool)
+        self.idx = np.full((H, W), -1, np.int16)
+        self.ramp = np.zeros((H, W), np.int16)
+        self.z = np.full((H, W), -1e9, np.float32)
+        self.grp = np.zeros((H, W), np.int32)
+        self.semc = np.zeros((H, W), bool)      # enfeites: não provocam separação nas peças de trás
+        self._g = 0
 
-    def colar(self, peca: 'Peca', contorno=True):
-        m, c = peca.m, peca.c
-        if contorno:
-            borda = np.zeros_like(m)
-            for dy, dx in ((0, 1), (0, -1), (1, 0), (-1, 0)):
-                borda |= desloca(m, dy, dx)
-            borda &= ~m
-            self.cor[borda] = peca.contorno
-            self.a |= borda
-        self.cor[m] = c[m]
-        self.a |= m
+    def novo_grupo(self):
+        self._g += 1
+        return self._g
 
-    def rgba(self):
-        out = np.zeros((H, W, 4), np.uint8)
-        out[..., :3] = self.cor
-        out[..., 3] = np.where(self.a, 255, 0)
-        return out
+    def peca(self, m, rampa, t, z, grupo=None, enfeite=False):
+        if not m.any():
+            return
+        if grupo is None:
+            grupo = self.novo_grupo()
+        sel = m & (z >= self.z)
+        self.idx[sel] = (t[sel] if isinstance(t, np.ndarray) else t)
+        self.idx[sel] = np.clip(self.idx[sel], 0, TOPO[NOMES.index(rampa)])
+        self.ramp[sel] = NOMES.index(rampa)
+        self.z[sel] = z
+        self.grp[sel] = grupo
+        self.semc[sel] = enfeite
+
+    def escurece(self, m, q=1):
+        sel = m & (self.idx >= 0)
+        self.idx[sel] = np.maximum(self.idx[sel] - q, 0)
+
+    def clareia(self, m, q=1):
+        sel = m & (self.idx >= 0)
+        self.idx[sel] = np.minimum(self.idx[sel] + q, TOPO[self.ramp[sel]])
+
+    def final(self):
+        a = self.idx >= 0
+        cor = np.zeros((H, W, 3), np.uint8)
+        for i, nome in enumerate(NOMES):
+            sel = a & (self.ramp == i)
+            if sel.any():
+                cor[sel] = RAMPAS[nome][self.idx[sel]]
+        # separação: o pixel coberto por uma peça mais à frente escurece
+        sep = np.zeros_like(a)
+        for dy, dx in ((-1, 0), (0, -1), (0, 1), (1, 0)):
+            zn = desloca(self.z, dy, dx, -1e9)
+            gn = desloca(self.grp, dy, dx)
+            an = desloca(a, dy, dx)
+            en = desloca(self.semc, dy, dx)
+            sep |= a & an & (zn > self.z + 0.3) & (gn != self.grp) & ~en & ~self.semc
+        for i, nome in enumerate(NOMES):
+            sel = sep & (self.ramp == i)
+            if sel.any():
+                cor[sel] = RAMPAS[nome][np.maximum(self.idx[sel] - 3, 0)]
+        # luz de recorte fria na borda de trás (direita)
+        borda_d = a & ~desloca(a, 0, -1)
+        rec_i = [NOMES.index(n) for n in ('aco', 'perola', 'ouro', 'azul', 'vermelho')]
+        rim = borda_d & np.isin(self.ramp, rec_i) & ~self.semc
+        cor[rim] = np.clip(cor[rim].astype(int) * 0.55 + np.array([150, 190, 235]) * 0.45, 0, 255).astype(np.uint8)
+        # contorno seletivo de fora
+        rgba = np.zeros((H, W, 4), np.uint8)
+        rgba[..., :3] = cor
+        rgba[..., 3] = np.where(a, 255, 0)
+        dono = np.full((H, W), -1, np.int16)
+        for dy, dx in ((1, 0), (0, 1), (0, -1), (-1, 0)):
+            an = desloca(a, dy, dx)
+            rn = desloca(self.ramp, dy, dx)
+            novo = an & ~a & (dono < 0)
+            dono[novo] = rn[novo]
+        for i, nome in enumerate(NOMES):
+            sel = dono == i
+            if sel.any():
+                rgba[sel, :3] = CONTORNO[nome]
+                rgba[sel, 3] = 255
+        return rgba
 
 
-class Peca:
-    def __init__(self, contorno=CONTORNO):
-        self.m = np.zeros((H, W), bool)
-        self.c = np.zeros((H, W, 3), np.uint8)
-        self.contorno = contorno
-
-    def pinta(self, mascara, pal, tons):
-        """tons: matriz de índices (0..4) já calculados para cada pixel."""
-        p = np.array(PAL[pal], np.uint8)
-        t = np.clip(tons, 0, len(PAL[pal]) - 1).astype(int)
-        self.c[mascara] = p[t][mascara]
-        self.m |= mascara
-        return self
+# ------------------------------------------------------------------ efeitos (sem contorno)
+def mistura(rgba, m, cor, alfa):
+    if not m.any():
+        return
+    c = np.array(cor, float)
+    base = rgba[m, :3].astype(float)
+    a0 = rgba[m, 3:4].astype(float) / 255
+    na = a0 + (1 - a0) * alfa
+    out = (base * a0 * (1 - alfa) + c * alfa) / np.maximum(na, 1e-3)
+    rgba[m, :3] = np.clip(out, 0, 255).astype(np.uint8)
+    rgba[m, 3] = np.clip(na[:, 0] * 255, 0, 255).astype(np.uint8)
 
 
-YY, XX = np.mgrid[0:H, 0:W].astype(np.float32) + 0.5
-
-
-def poli(pts):
-    im = Image.new('L', (W, H), 0)
-    ImageDraw.Draw(im).polygon([(x, y) for x, y in pts], fill=255)
-    return np.asarray(im) > 0
-
-
-def linha(p0, p1, larg):
-    im = Image.new('L', (W, H), 0)
-    ImageDraw.Draw(im).line([tuple(p0), tuple(p1)], fill=255, width=larg)
-    return np.asarray(im) > 0
-
-
-def elipse_m(cx, cy, rx, ry):
-    return ((XX - cx) / rx) ** 2 + ((YY - cy) / ry) ** 2 <= 1.0
-
-
-def faixas_esfera(cx, cy, rx, ry, base=0.0):
-    """Tons em faixas de uma esfera iluminada de cima-esquerda: 0 sombra … 4 brilho."""
-    nx, ny = (XX - cx) / rx, (YY - cy) / ry
-    nz = np.sqrt(np.clip(1 - nx * nx - ny * ny, 0, 1))
-    l = (-0.55 * nx - 0.6 * ny + 0.58 * nz) + base
-    t = np.select([l > 1.02, l > 0.62, l > 0.18, l > -0.3], [4, 3, 2, 1], 0)
-    return t
-
-
-def faixas_plano(y0, y1, x0, x1, base=2):
-    """Bloco: borda de cima clara, lado direito escuro."""
-    t = np.full((H, W), base)
-    t = np.where(YY - y0 < 1.5, base + 1, t)
-    t = np.where(XX > x1 - 2, base - 1, t)
-    return t
+def estrela(rgba, c, tam, cor=(255, 255, 255), alfa=1.0):
+    x, y = int(c[0]), int(c[1])
+    for d in range(-tam, tam + 1):
+        a = alfa * (1 - abs(d) / (tam + 1))
+        mistura(rgba, ponto(x + d, y) | ponto(x, y + d), cor, a)
 
 
 # ------------------------------------------------------------------ estágios
 ESTAGIOS = {
-    1: dict(metal='aco', capa=0, pluma=1, escudo='madeira', ouro=False, cinto='couro', lamina=13),
-    2: dict(metal='aco', capa=0, pluma=2, escudo='aco', ouro=False, cinto='vermelho', lamina=15),
-    3: dict(metal='aco', capa=1, pluma=2, escudo='aco', ouro=False, cinto='vermelho', lamina=16),
-    4: dict(metal='aco', capa=2, pluma=3, escudo='aco', ouro=True, cinto='vermelho', lamina=17),
-    5: dict(metal='aco', capa=2, pluma=3, escudo='ouro', ouro=True, cinto='vermelho', lamina=18, ouro2=True),
-    6: dict(metal='perola', capa=2, pluma=3, escudo='ouro', ouro=True, cinto='vermelho', lamina=19, lenda=True, ouro2=True),
+    1: dict(metal='aco', capa=0, pluma=1, escudo='madeira', friso=False, tabardo=False, cinto='couro', lamina=24, ombreira=1),
+    2: dict(metal='aco', capa=0, pluma=2, escudo='cruz', friso=False, tabardo=False, cinto='vermelho', lamina=27, ombreira=1),
+    3: dict(metal='aco', capa=1, pluma=2, escudo='cruz', friso=False, tabardo=True, cinto='vermelho', lamina=29, ombreira=2),
+    4: dict(metal='aco', capa=2, pluma=3, escudo='brasao', friso=True, tabardo=True, cinto='vermelho', lamina=31, ombreira=2),
+    5: dict(metal='aco', capa=2, pluma=3, escudo='brasao', friso=True, tabardo=True, cinto='vermelho', lamina=33, ombreira=3, ouro2=True),
+    6: dict(metal='perola', capa=2, pluma=3, escudo='brasao', friso=True, tabardo=True, cinto='vermelho', lamina=34, ombreira=3, ouro2=True, lenda=True),
 }
-
-
-def R(a):
-    c, s = math.cos(a), math.sin(a)
-    return np.array([[c, -s], [s, c]])
 
 
 def quadro(e: int, t: dict) -> np.ndarray:
     E = ESTAGIOS[e]
     k = t.get
+    q = Quadro()
     met = E['metal']
-    tela = Tela()
-    dx, dy = k('x', 0), k('y', 0)           # corpo inteiro
-    bob = k('bob', 0)                        # respiração (só tronco e cabeça)
-    inc = k('inclina', 0)                    # cabeça/tronco para a frente (+) ou para trás (-)
+    met_t = 'aco_t' if met == 'aco' else 'perola'
+    ouro = 'ouro'
+    dx, dy = k('x', 0), k('y', 0)
+    bob = k('bob', 0)
+    inc = k('inclina', 0)
 
-    # pontos-chave (repouso), corpo voltado para a direita
-    quad = np.array([31 + dx, 47 + dy + bob * 0.5])
-    ombro_t = np.array([35 + dx + inc, 37 + dy + bob])      # ombro do escudo (lado direito)
-    ombro_f = np.array([24 + dx + inc, 37 + dy + bob])      # ombro da espada (lado esquerdo da imagem)
-    cabeca = np.array([31 + dx + inc * 1.6, 23 + dy + bob])
+    cab = P(dx + inc * 1.5, 38 + dy + bob)            # centro do elmo
+    tor = P(dx + inc * 0.7, 69 + dy + bob * 0.6)        # centro do tronco
+    quad = P(dx, 81 + dy + bob * 0.3)
 
-    # ---- capa (atrás de tudo)
+    # ================= capa (atrás de tudo)
     if E['capa']:
         sw = k('capa', 0)
-        comp = 16 if E['capa'] == 1 else 21
-        top = np.array([cabeca[0] - 0.5, cabeca[1] + 13])
-        abre = 11 if E['capa'] == 1 else 14
-        pts = [top + (-9, -1), top + (9, -1), top + (abre - 1 + sw * 0.4, comp - 2), top + (abre - 3 + sw, comp),
-               top + (2 + sw, comp - 1.5), top + (-3 + sw, comp + 0.5), top + (-abre + sw * 1.2, comp - 1), top + (-abre + 1 + sw * 0.8, comp - 3)]
-        m = poli([tuple(p) for p in pts])
-        tn = np.where(XX < top[0] - 3 + sw * 0.5, 1, 2) + np.where(YY - top[1] < 2.5, 1, 0)
-        dobra = (np.abs(((XX - top[0] - sw * (YY - top[1]) / comp) % 5) - 2.5) < 0.6) & (YY - top[1] > 4)
-        tn = np.where(dobra, tn - 1, tn)
-        tela.colar(Peca(CONTORNO_VERM).pinta(m, 'vermelho', tn))
+        comp = 28 if E['capa'] == 1 else 33
+        abre = 17 if E['capa'] == 1 else 22
+        top = tor + (-1, -9)
+        bx = [(-abre + sw * 1.5, comp), (-abre * 0.55 + sw * 1.3, comp + 2.5), (-1 + sw, comp + 0.5), (abre * 0.4 + sw * 0.8, comp + 2.5), (abre - 2 + sw * 0.5, comp)]
+        pts = [top + (-11, 0), top + (11, 0), top + (abre * 0.75 + sw * 0.3, comp * 0.55)] + [top + b for b in reversed(bx)] + [top + (-abre * 0.8 + sw * 0.6, comp * 0.5)]
+        m = m_poli(pts)
+        rel = (YY - top[1]) / comp
+        dob = np.sin((XX - top[0] - sw * rel * 3) * 0.62) * (0.25 + 0.55 * np.clip(rel, 0, 1))
+        N = (np.clip(-0.15 + dob, -0.9, 0.9), np.full((H, W), -0.15), np.sqrt(np.clip(1 - dob ** 2, 0.1, 1)))
+        g = q.novo_grupo()
+        q.peca(m, 'vermelho', tons(N, 'vermelho', pano=True, base=-0.08), 0.0, g)
+        forro = m & (YY > top[1] + comp - 3 + np.sin(XX * 0.5) * 1.2) & (XX < top[0] - 4)
+        q.peca(forro, 'forro', cheio(2), 0.05, g)
 
-    # ---- braço de trás e escudo (o escudo fica na frente do corpo, mas o braço atrás)
-    mao_t = ombro_t + np.array(k('mao_t', (2, 7)))
-    braco_t = Peca().pinta(linha(ombro_t, mao_t, 4), 'aco_esc' if met == 'aco' else met, np.full((H, W), 2))
+    # ================= pernas
+    pe_t = P(dx - 6, PE + dy) + np.array(k('pe_t', (0, 0)))
+    pe_f = P(dx + 6, PE + dy) + np.array(k('pe_f', (0, 0)))
+    for lado, pe, z0 in (('t', pe_t, 1.0), ('f', pe_f, 2.0)):
+        mm = met if lado == 'f' else met_t
+        q0 = quad + ((-5.5 if lado == 't' else 5.5), 0)
+        j = (q0 + pe) / 2 + (1.2, -1)
+        g = q.novo_grupo()
+        q.peca(m_capsula(q0, j, 4.6, 4.2), 'malha', tons(n_capsula(q0, j, 4.6, 4.2), 'malha', base=-0.05), z0, g)
+        cn = pe + (0, -3)
+        q.peca(m_capsula(j, cn, 4.4, 3.8), mm, tons(n_capsula(j, cn, 4.4, 3.8), mm, metal=True), z0 + 0.05, g)
+        jm = ouro if E.get('ouro2') else mm
+        q.peca(m_elipse(j, 3.8, 3.3), jm, tons(n_esfera(j, 3.8, 3.3), jm, metal=True), z0 + 0.1, g)
+        q.peca(m_poli([j + (3, -1.5), j + (6, 0.5), j + (3, 1.5)]), jm, tons(n_plano(0.5, -0.2), jm, metal=True), z0 + 0.09, g)
+        bota = m_poli([pe + (-5, -5), pe + (2, -5.5), pe + (6.5, -2.5), pe + (8, 0.5), pe + (-5.5, 0.5)])
+        q.peca(bota, mm, tons(n_esfera(pe + (0, -1), 9, 6, 0.8), mm, metal=True), z0 + 0.12, g)
+        for i in range(3):   # lâminas da bota
+            xl = pe[0] - 1 + i * 2.6
+            q.peca(m_poli([(xl, pe[1] - 5 + i * 0.9), (xl + 0.9, pe[1] - 5 + i * 0.9), (xl + 1.6, pe[1] + 0.4), (xl + 0.7, pe[1] + 0.4)]) & bota, mm,
+                   cheio(1), z0 + 0.13, g, enfeite=True)
+        q.peca(m_poli([pe + (-5.5, -0.6), pe + (8, -0.6), pe + (8, 0.6), pe + (-5.5, 0.6)]), 'couro', cheio(1), z0 + 0.14, g, enfeite=True)
 
-    # ---- pernas
-    pe_t = np.array([27 + dx, 59 + dy]) + np.array(k('pe_t', (0, 0)))
-    pe_f = np.array([35 + dx, 59 + dy]) + np.array(k('pe_f', (0, 0)))
-    for qx, pe, nome in ((-2.5, pe_t, 't'), (2.5, pe_f, 'f')):
-        q = quad + (qx, 0)
-        perna = linha(q, pe + (0, -2), 5)
-        pp = Peca().pinta(perna, 'aco_esc' if nome == 't' else met, faixas_plano(q[1], pe[1], pe[0] - 2, pe[0] + 3, 2 if nome == 'f' else 1))
-        # bota: biqueira para a direita
-        bota = poli([tuple(pe + (-3, -3)), tuple(pe + (2, -3)), tuple(pe + (4.5, -1)), tuple(pe + (4.5, 0.5)), tuple(pe + (-3, 0.5))])
-        pp.pinta(bota, 'aco_esc' if nome == 't' else met, np.where(YY < pe[1] - 1.5, 2, 1))
-        # joelheira
-        jo = (q + pe) / 2 + (0.5, 0)
-        pp.pinta(elipse_m(jo[0], jo[1], 2.2, 1.8), 'ouro' if E.get('ouro2') else met, faixas_esfera(jo[0], jo[1], 2.2, 1.8) if nome == 'f' else np.full((H, W), 2))
-        tela.colar(pp)
+    # ================= braço do escudo (atrás do tronco)
+    omb_e = tor + (13, -6)
+    mao_e = omb_e + np.array(k('mao_e', (3, 12)))
+    q.peca(m_capsula(omb_e, mao_e, 3.6, 3.4), met_t, tons(n_capsula(omb_e, mao_e, 3.6, 3.4), met_t, metal=True), 2.5)
 
-    tela.colar(braco_t)
+    # ================= tronco
+    g = q.novo_grupo()
+    corpo = m_poli([tor + (-14, -10), tor + (14, -10), tor + (15, 0), tor + (13, 9), tor + (-13, 9), tor + (-15, 0)])
+    q.peca(corpo, met, tons(n_esfera(tor + (-3, -4), 18, 16, 0.8), met, metal=True, base=0.05), 3.0, g)
+    q.peca(m_capsula(tor + (2, -9), tor + (2, 6), 0.6), met, cheio(6), 3.05, g, enfeite=True)
+    q.peca(m_capsula(tor + (3.2, -9), tor + (3.2, 6), 0.5), met, cheio(2), 3.05, g, enfeite=True)
+    if E['tabardo']:
+        tab = m_poli([tor + (-9, -9.5), tor + (9, -9.5), tor + (10, 9), tor + (-10, 9)])
+        gt = q.novo_grupo()
+        q.peca(tab, 'azul', tons(n_esfera(tor + (-3, -3), 17, 16, 0.75), 'azul', pano=True), 3.2, gt)
+        bar = tab & ~m_poli([tor + (-7.6, -8.2), tor + (7.6, -8.2), tor + (8.6, 9), tor + (-8.6, 9)])
+        q.peca(bar, ouro, tons(n_esfera(tor + (-3, -3), 17, 16, 0.75), ouro, metal=True), 3.25, gt, enfeite=True)
+        cz = tor + (0.5, -1.5)
+        cruz = m_poli([cz + (-1.2, -5), cz + (1.2, -5), cz + (1.2, 4.5), cz + (-1.2, 4.5)]) | m_poli([cz + (-4, -2.2), cz + (4, -2.2), cz + (4, -0.2), cz + (-4, -0.2)])
+        q.peca(cruz, ouro, np.where(XX < cz[0], 5, 4).astype(np.int16), 3.3, gt, enfeite=True)
+    gc = q.novo_grupo()
+    cinto = m_poli([tor + (-14, 7), tor + (14, 7), tor + (14, 11), tor + (-14, 11)])
+    q.peca(cinto, E['cinto'], tons(n_capsula(tor + (-14, 9), tor + (14, 9), 2.3), E['cinto'], pano=True), 3.5, gc)
+    fiv = m_poli([tor + (-2.5, 6.5), tor + (2.5, 6.5), tor + (2.5, 11.5), tor + (-2.5, 11.5)])
+    q.peca(fiv, ouro, tons(n_esfera(tor + (-1, 8), 4, 4), ouro, metal=True), 3.55, gc)
+    q.peca(m_poli([tor + (-1, 8), tor + (1, 8), tor + (1, 10), tor + (-1, 10)]), E['cinto'], cheio(1), 3.56, gc, enfeite=True)
+    bolsa = m_poli([tor + (6, 10.5), tor + (12, 10.5), tor + (12.5, 16), tor + (6.5, 16.5)])
+    q.peca(bolsa, 'couro', tons(n_esfera(tor + (8, 12), 6, 6), 'couro'), 3.52, gc)
+    q.peca(m_poli([tor + (6, 10.5), tor + (12, 10.5), tor + (12, 12.5), tor + (9, 13.5), tor + (6, 12.5)]), 'couro', cheio(4), 3.53, gc, enfeite=True)
+    for sx in (-1, 1):   # tassets
+        ts = m_poli([tor + (sx * 3, 11), tor + (sx * 14, 11), tor + (sx * 15.5, 17), tor + (sx * 4, 17.5)])
+        q.peca(ts, met, tons(n_esfera(tor + (sx * 9 - 3, 9), 11, 9, 0.7), met, metal=True), 3.4)
+        q.peca(ts & (np.abs(YY - (tor[1] + 14)) < 0.6), met, cheio(2), 3.41, enfeite=True)
+    if E['tabardo']:
+        aba = m_poli([tor + (-5, 10.5), tor + (5, 10.5), tor + (5.5, 21), tor + (0, 23), tor + (-5.5, 21)])
+        ga = q.novo_grupo()
+        q.peca(aba, 'azul', tons(n_capsula(tor + (0, 10), tor + (0, 22), 5.5), 'azul'), 3.45, ga)
+        q.peca(aba & ~m_poli([tor + (-3.8, 10.5), tor + (3.8, 10.5), tor + (4.2, 20), tor + (0, 21.6), tor + (-4.2, 20)]), ouro, cheio(4), 3.46, ga, enfeite=True)
 
-    # ---- tronco: peitoral, cinto, saiote
-    tx, ty = cabeca[0] - 0.5, 36 + dy + bob
-    tronco = Peca()
-    corpo = poli([(tx - 7, ty), (tx + 7, ty), (tx + 7.5, ty + 7), (tx + 6, ty + 11), (tx - 6, ty + 11), (tx - 7.5, ty + 7)])
-    tronco.pinta(corpo, met, faixas_esfera(tx - 1, ty + 4, 9, 8, 0.15))
-    saiote = poli([(tx - 6.5, ty + 10), (tx + 6.5, ty + 10), (tx + 7.5, ty + 13.5), (tx - 7.5, ty + 13.5)])
-    tronco.pinta(saiote, met, np.where(XX > tx + 3, 1, 2))
-    cinto = (YY >= ty + 9) & (YY < ty + 11) & corpo
-    tronco.pinta(cinto, E['cinto'], np.where(XX < tx - 2, 3, 2))
-    if E['ouro']:
-        fivela = (np.abs(XX - tx) < 1.2) & (YY >= ty + 9) & (YY < ty + 11)
-        tronco.pinta(fivela, 'ouro', np.full((H, W), 3))
-    tela.colar(tronco)
+    # ================= gola de malha
+    gola = m_elipse(tor + (0, -10), 13, 4.2)
+    q.peca(gola, 'malha', tons(n_esfera(tor + (-2, -11), 13, 5), 'malha') + ((XX.astype(int) + YY.astype(int)) % 2).astype(np.int16) - 1, 3.6)
 
-    # ---- escudo (na frente do corpo, do lado do adversário)
-    ec = mao_t + np.array([3, 0]) + np.array(k('escudo', (0, 0)))
-    tam = 1.0 if E['escudo'] != 'madeira' else 0.86
-    sx, sy = 6.0 * tam, 8.0 * tam
-    forma = poli([tuple(ec + (-sx, -sy)), tuple(ec + (sx, -sy)), tuple(ec + (sx, sy * 0.25)), tuple(ec + (0, sy * 1.15)), tuple(ec + (-sx, sy * 0.25))])
-    esc = Peca()
+    # ================= escudo
+    ec = mao_e + np.array([3, -1]) + np.array(k('escudo', (0, 0)))
+    s_ = 0.88 if E['escudo'] == 'madeira' else 1.0
+
+    def esc(pp):
+        return [ec + np.array(v) * s_ for v in pp]
+    mf = m_poli(esc([(-11, -13), (11, -13), (11.5, 0), (8, 9), (0, 16), (-8, 9), (-11.5, 0)]))
+    mm_ = m_poli(esc([(-9, -11), (9, -11), (9.5, 0), (6.4, 7.8), (0, 13.6), (-6.4, 7.8), (-9.5, 0)]))
+    Ns = n_esfera(ec + (-4, -5), 20, 24, 0.55)
+    ge = q.novo_grupo()
     if E['escudo'] == 'madeira':
-        tn = 2 + ((XX - ec[0]) // 3 % 2 == 0)
-        esc.pinta(forma, 'madeira', np.where(XX > ec[0] + sx - 2, 1, tn))
+        tabua = ((XX - ec[0] + 20) // 5 % 2 == 0)
+        q.peca(mf, 'madeira', tons(Ns, 'madeira') - tabua.astype(np.int16), 7.0, ge)
+        q.peca(m_capsula(ec + (-10, -7), ec + (10, -7), 0.9) & mf, met_t, cheio(3), 7.05, ge, enfeite=True)
+        q.peca(m_capsula(ec + (-10, 4), ec + (9, 4), 0.9) & mf, met_t, cheio(3), 7.05, ge, enfeite=True)
+        q.peca(m_elipse(ec + (0, -1), 3.4, 3.4), met, tons(n_esfera(ec + (-1, -2), 3.4, 3.4), met, metal=True), 7.1, ge)
     else:
-        borda = forma & ~poli([tuple(ec + (-sx + 1.2, -sy + 1.2)), tuple(ec + (sx - 1.2, -sy + 1.2)), tuple(ec + (sx - 1.2, sy * 0.2)), tuple(ec + (0, sy * 1.15 - 1.6)), tuple(ec + (-sx + 1.2, sy * 0.2))])
-        campo = forma & ~borda
-        esc.pinta(campo, met if E['escudo'] != 'ouro' else met, np.where(XX < ec[0] - 1, 3, 2) - (YY > ec[1] + 3))
-        esc.pinta(borda, 'ouro' if E['escudo'] == 'ouro' or E['ouro'] else 'aco_esc', np.where(YY < ec[1] - sy + 1.5, 4, 2))
-        if E['ouro']:
-            cruz = ((np.abs(XX - ec[0]) < 1.0) & (np.abs(YY - ec[1] + 0.5) < sy * 0.7)) | ((np.abs(YY - ec[1] + 2) < 1.0) & (np.abs(XX - ec[0]) < sx * 0.6))
-            esc.pinta(cruz & campo, 'ouro', np.where(XX < ec[0], 4, 3))
+        aro = ouro if E['escudo'] == 'brasao' else met
+        q.peca(mf, aro, tons(Ns, aro, metal=True), 7.0, ge)
+        campo = 'azul' if E['escudo'] == 'brasao' else met
+        q.peca(mm_, campo, tons(Ns, campo, metal=campo != 'azul', base=0.02), 7.05, ge)
+        q.clareia(mm_ & (np.abs((XX - ec[0]) + (YY - ec[1]) * 0.8 + 4) < 1.6), 1)
+        cz = ec + (0, -1)
+        cruz = m_poli([cz + (-1.8, -9), cz + (1.8, -9), cz + (1.8, 9), cz + (-1.8, 9)]) | m_poli([cz + (-7, -4), cz + (7, -4), cz + (7, -0.6), cz + (-7, -0.6)])
+        if E['escudo'] == 'brasao':
+            q.peca(cruz & mm_, ouro, tons(n_plano(-0.3, -0.4), ouro, metal=True) + np.where(XX < cz[0], 1, 0).astype(np.int16), 7.1, ge, enfeite=True)
+            q.peca(m_elipse(cz + (0, -2.3), 2.0, 2.0), 'gema', tons(n_esfera(cz + (-0.6, -3), 2, 2), 'gema'), 7.15, ge, enfeite=True)
         else:
-            cruz = ((np.abs(XX - ec[0]) < 1.0) & (np.abs(YY - ec[1] + 0.5) < sy * 0.7)) | ((np.abs(YY - ec[1] + 2) < 1.0) & (np.abs(XX - ec[0]) < sx * 0.6))
-            esc.pinta(cruz & campo, 'vermelho', np.full((H, W), 2))
-    tela.colar(esc)
+            q.peca(cruz & mm_, 'vermelho', np.where(XX < cz[0], 4, 3).astype(np.int16), 7.1, ge, enfeite=True)
+        for (vx, vy) in ((-10, -12), (0, -12), (10, -12), (10.5, -2), (7, 8), (0, 14.5), (-7, 8), (-10.5, -2)):
+            c = ec + np.array([vx, vy]) * s_
+            q.peca(m_elipse(c, 0.9, 0.9), ouro if aro == met else met, cheio(5), 7.2, ge, enfeite=True)
+        for (vx, vy) in ((-5, 3), (4, -7), (5, 5)):
+            q.escurece((ponto(ec[0] + vx, ec[1] + vy) | ponto(ec[0] + vx + 1, ec[1] + vy + 1)) & mm_, 2)
 
-    # ---- cabeça: elmo grande e redondo, fechado, com viseira
-    cx, cy = cabeca
-    rx, ry = 11.5, 11.0
-    elmo = Peca()
-    dom = elipse_m(cx, cy, rx, ry)
-    elmo.pinta(dom, met, faixas_esfera(cx, cy, rx, ry))
-    # friso central (crista) do elmo, de cima até a viseira, deslocado para a direita (3/4)
-    friso = (np.abs(XX - (cx + 3.5)) < 0.9) & (YY < cy + 1) & dom
-    elmo.pinta(friso, 'ouro' if E['ouro'] else met, np.full((H, W), 3 if E['ouro'] else 4))
-    # viseira: placa da frente (lado direito), com fenda dos olhos e respiros
-    placa = elipse_m(cx + 4.5, cy + 3.2, 6.6, 6.2) & dom
-    elmo.pinta(placa, met, faixas_esfera(cx + 4, cy + 2, 7.5, 7.5, -0.05))
-    miolo = elipse_m(cx + 4.5, cy + 3.2, 5.6, 5.2)
-    elmo.pinta(placa & ~miolo & (XX < cx + rx - 1.2), met, np.full((H, W), 1))
-    fenda = (YY >= cy + 0.5) & (YY < cy + 2.5) & (XX > cx - 0.5) & (XX < cx + rx - 0.5) & dom
-    elmo.pinta(fenda, 'visor', np.full((H, W), 0))
-    fenda_v = (np.abs(XX - (cx + 3.5)) < 0.9) & (YY >= cy + 2.5) & (YY < cy + 7.5) & dom
-    elmo.pinta(fenda_v, 'visor', np.full((H, W), 1))
-    for i in range(3):   # respiros
-        elmo.pinta((np.abs(XX - (cx + 6.5 + i * 1.6)) < 0.5) & (np.abs(YY - (cy + 5.5)) < 0.5) & dom, 'visor', np.full((H, W), 1))
-    # gola (gorjal) embaixo do elmo
-    gola = elipse_m(cx, cy + ry - 0.5, 6, 2.2) & ~dom
-    elmo.pinta(gola, met, np.full((H, W), 1))
-    if E['ouro']:
-        aba = (np.abs(YY - (cy + ry - 2.6)) < 0.8) & dom
-        elmo.pinta(aba, 'ouro', np.where(XX < cx, 4, 2))
+    def ombreira(c, lado, z):
+        go = q.novo_grupo()
+        lam = E['ombreira']
+        for i in range(lam, -1, -1):
+            cc = c + np.array([lado * 0.6 * i, 3.2 * i])
+            rx, ry = 7.8 - 0.7 * i, 6.0 - 0.6 * i
+            m = m_elipse(cc, rx, ry) & (YY < cc[1] + ry * 0.55)
+            mm = ouro if (E.get('ouro2') and i == lam) else met
+            q.peca(m, mm, tons(n_esfera(cc + (-2, -2), rx + 1, ry + 1), mm, metal=True, base=0.06), z + 0.01 * (lam - i), go)
+            if E['friso'] and i == 0:
+                q.peca(m & (YY > cc[1] + ry * 0.2), ouro, cheio(4), z + 0.02, go, enfeite=True)
+        q.peca(m_elipse(c + (lado * -3.5, -1), 1.1, 1.1), ouro if E['friso'] else met, cheio(5), z + 0.05, go, enfeite=True)
 
-    # pluma vermelha curta, para trás
+    ombreira(omb_e + (1, 0), 1, 7.3)
+
+    # ================= elmo
+    cx, cy = cab
+    rx, ry = 20.0, 19.0
+    ge = q.novo_grupo()
+    dom = m_elipse(cab, rx, ry)
+    q.peca(dom, met, tons(n_esfera(cab, rx, ry), met, metal=True), 8.0, ge)
+    pv_c = cab + (8, 4)
+    placa = m_elipse(pv_c, 13, 14) & dom
+    q.peca(placa, met, tons(n_esfera(pv_c + (-3, -3), 15, 15, 0.9), met, metal=True), 8.05, ge)
+    q.escurece(placa & ~m_elipse(pv_c, 11.6, 12.6) & (XX < cx + rx - 2), 2)
+    q.escurece(dom & (YY > cy + ry - 4.5), 1)
+    q.peca(dom & (np.abs(YY - (cy + ry - 4.5)) < 0.6), met, cheio(6), 8.06, ge, enfeite=True)
+    crx = cx + 4
+    fm = ouro if E['friso'] else met
+    crista = dom & (np.abs(XX - crx - (YY - cy) * 0.08) < 1.3) & (YY < cy + 1)
+    q.peca(crista, fm, tons(n_plano(-0.2, -0.5), fm, metal=True) + 1, 8.1, ge, enfeite=True)
+    faixa = dom & (np.abs(YY - (cy - 4)) < 1.4) & (XX < crx - 1.3)
+    q.peca(faixa, fm, tons(n_esfera(cab, rx, ry), fm, metal=True), 8.08, ge, enfeite=True)
+    for xr in range(int(cx - rx + 4), int(crx - 2), 4):
+        q.peca(ponto(xr, cy - 4) & dom, fm, cheio(6), 8.09, ge, enfeite=True)
+    fenda = dom & (YY >= cy + 0.8) & (YY < cy + 4.6) & (XX > cx - 3) & (XX < cx + rx - 0.6)
+    q.peca(fenda, 'visor', np.where(XX < cx + 4, 0, 1).astype(np.int16), 8.2, ge, enfeite=True)
+    barra = dom & (np.abs(XX - crx) < 1.2) & (YY >= cy + 4.5) & (YY < cy + 12)
+    q.peca(barra, 'visor', cheio(1), 8.2, ge, enfeite=True)
+    for i in range(3):
+        for j in range(3):
+            if (i + j) % 2 == 0:
+                q.peca(ponto(crx + 4 + j * 2, cy + 7 + i * 2) & dom, 'visor', cheio(1), 8.2, ge, enfeite=True)
+    q.escurece((ponto(cx - 9, cy - 10) | ponto(cx - 8, cy - 9)) & dom, 2)   # amassadinho
+
+    # ================= pluma em penas
     if E['pluma']:
         sw = k('pluma', 0)
-        alt = {1: 4, 2: 6, 3: 8}[E['pluma']]
-        base_p = np.array([cx + 1, cy - ry + 1])
-        pts = [base_p + (-1, 1), base_p + (2, 0), base_p + (1, -alt * 0.6), base_p + (-2 + sw * 0.4, -alt),
-               base_p + (-6 + sw, -alt + 1), base_p + (-8 + sw, -alt * 0.45), base_p + (-5 + sw * 0.5, -alt * 0.5), base_p + (-3, -1)]
-        m = poli([tuple(p) for p in pts])
-        tn = np.where(YY < base_p[1] - alt * 0.6, 3, 2) + np.where(XX > base_p[0] - 1, 1, 0)
-        pl = Peca(CONTORNO_VERM).pinta(m, 'vermelho', tn)
-        tela.colar(pl)
-    tela.colar(elmo)
+        alt = {1: 0.55, 2: 0.8, 3: 1.0}[E['pluma']]
+        base = cab + (1, -ry + 2)
+        gp = q.novo_grupo()
+        penas = [(-6, -16, -15, -2), (-2, -19, -21, 2), (2, -20, -26, 7), (3, -17, -28, 12), (1, -12, -24, 16), (4, -10, -14, 12)]
+        for i, (c1x, c1y, ex, ey) in enumerate(penas):
+            ctrl = base + np.array([c1x * alt + sw * 2, c1y * alt])
+            fim = base + np.array([ex * alt + sw * 4, ey * alt * 0.7 - 14 * alt + abs(sw) * 1.2])
+            pts = bezier(base + (i - 2, 1), ctrl, fim, 9)
+            m = m_curva(pts, 5.0 * alt + 1.2, 1.5)
+            # cada pena: corpo vermelho, borda de cima clara (luz), borda de baixo escura
+            tn = cheio(3 if i % 2 else 4)
+            q.peca(m, 'vermelho', tn, 7.6 + 0.01 * i, gp)
+            cima = m & ~desloca(m, -1, 0) | (m & ~desloca(m, 0, 1) & (YY < base[1] - 4))
+            baixo = m & ~desloca(m, 1, 0)
+            q.peca(cima, 'vermelho', cheio(5), 7.605 + 0.01 * i, gp, enfeite=True)
+            q.peca(baixo, 'vermelho', cheio(2), 7.605 + 0.01 * i, gp, enfeite=True)
+            q.peca(m_curva(pts[2:-2], 0.7, 0.5) & m, 'vermelho', cheio(6 if i in (2, 3) else 5), 7.65 + 0.01 * i, gp, enfeite=True)
+        q.peca(m_elipse(base + (0, 1.5), 3.2, 2.2), fm, tons(n_esfera(base, 3.2, 2.2), fm, metal=True), 8.12, ge)
 
-    # ---- braço da frente e espada
-    mao_f = ombro_f + np.array(k('mao_f', (-1, 8)))
-    ang = k('espada', 2.15)      # direção da lâmina (radianos, 0 = para a direita, cresce para baixo)
+    # ================= braço da espada e espada
+    omb_d = tor + (-14, -6)
+    mao = omb_d + np.array(k('mao', (-3, 13)))
+    ang = k('espada', 2.45)
     d = np.array([math.cos(ang), math.sin(ang)])
     n = np.array([-d[1], d[0]])
-    L = E['lamina']
-    pomo = mao_f - d * 3
-    base = mao_f + d * 2
-    ponta = base + d * L
-    espada = Peca()
-    lam = 'lamina' if E.get('lenda') else 'aco'
-    espada.pinta(linha(base, ponta, 3), lam, np.full((H, W), 3))
-    espada.pinta(linha(base + n * 0.6, ponta + n * 0.6, 1), lam, np.full((H, W), 4))
-    espada.pinta(linha(mao_f - n * 3.5 + d * 1.5, mao_f + n * 3.5 + d * 1.5, 2), 'ouro' if E['ouro'] else 'couro', np.full((H, W), 3))
-    espada.pinta(linha(pomo, base, 2), 'couro', np.full((H, W), 2))
-    espada.pinta(elipse_m(pomo[0], pomo[1], 1.3, 1.3), 'ouro' if E['ouro'] else 'aco_esc', np.full((H, W), 3))
-    frente_espada = k('espada_frente', False)
-    braco_f = Peca().pinta(linha(ombro_f, mao_f, 4), met, np.full((H, W), 2))
-    braco_f.pinta(elipse_m(ombro_f[0], ombro_f[1], 3.2, 2.8), met, faixas_esfera(ombro_f[0], ombro_f[1], 3.2, 2.8))   # ombreira
-    if E.get('ouro2'):
-        braco_f.pinta(elipse_m(ombro_f[0], ombro_f[1], 3.2, 2.8) & (YY > ombro_f[1] + 1.2), 'ouro', np.full((H, W), 3))
-    braco_f.pinta(elipse_m(mao_f[0], mao_f[1], 2.0, 2.0), met, np.full((H, W), 3))  # manopla
-    if frente_espada:
-        tela.colar(braco_f)
-        tela.colar(espada)
-    else:
-        tela.colar(espada)
-        tela.colar(braco_f)
+    Lb = E['lamina']
+    pomo = mao - d * 6.5
+    guarda = mao + d * 4
+    base_l = guarda + d * 1.2
+    ponta = base_l + d * Lb
+    frente = bool(k('espada_frente', False))
+    zf = 9.4 if frente else k('espada_z', 2.2)
+    gs = q.novo_grupo()
+    lam = 'lamina' if E.get('lenda') else met
+    lamina = m_poli([base_l + n * 2.4, base_l - n * 2.4, ponta - d * 6 - n * 2.0, ponta, ponta - d * 6 + n * 2.0])
+    lado_luz = ((XX - base_l[0]) * n[0] + (YY - base_l[1]) * n[1]) < 0
+    q.peca(lamina, lam, np.where(lado_luz, 5, 3).astype(np.int16), zf, gs)
+    q.peca(m_capsula(base_l + d * 1, base_l + d * Lb * 0.66, 0.6) & lamina, lam, cheio(2), zf + 0.01, gs, enfeite=True)
+    q.peca(m_capsula(base_l - n * 2.0, ponta - d * 6 - n * 1.6, 0.5) & lamina, lam, cheio(7), zf + 0.01, gs, enfeite=True)
+    gm = ouro if e >= 2 else met
+    q.peca(m_capsula(guarda - n * 7, guarda + n * 7, 1.6, 1.6) | m_elipse(guarda - n * 7.5, 1.9, 1.9) | m_elipse(guarda + n * 7.5, 1.9, 1.9), gm,
+           tons(n_capsula(guarda - n * 7, guarda + n * 7, 1.8), gm, metal=True), zf + 0.05, gs)
+    trama = (((XX - pomo[0]) * d[0] + (YY - pomo[1]) * d[1]).astype(int) % 2 == 0)
+    q.peca(m_capsula(pomo, guarda, 1.6), 'couro', np.where(trama, 3, 2).astype(np.int16), zf + 0.03, gs)
+    q.peca(m_elipse(pomo, 2.4, 2.4), gm, tons(n_esfera(pomo + (-0.7, -0.7), 2.4, 2.4), gm, metal=True), zf + 0.04, gs)
+    if e >= 4:
+        q.peca(m_elipse(pomo, 1.1, 1.1), 'gema', cheio(3), zf + 0.045, gs, enfeite=True)
+    cot = (omb_d + mao) / 2 + np.array(k('cotovelo', (-2.5, 0)))
+    gb = q.novo_grupo()
+    zb = 9.5 if frente else 6.0
+    q.peca(m_capsula(omb_d, cot, 3.8, 3.4), met, tons(n_capsula(omb_d, cot, 3.8, 3.4), met, metal=True), zb, gb)
+    q.peca(m_capsula(cot, mao, 3.6, 3.4), met, tons(n_capsula(cot, mao, 3.6, 3.4), met, metal=True), zb + 0.02, gb)
+    cm = ouro if E.get('ouro2') else met
+    q.peca(m_elipse(cot, 3.3, 3.0), cm, tons(n_esfera(cot, 3.3, 3.0), cm, metal=True), zb + 0.04, gb)
+    q.peca(m_elipse(mao, 4.0, 3.8), met, tons(n_esfera(mao + (-1, -1), 4.2, 4.0), met, metal=True), zb + 0.06, gb)
+    for i in (-1.2, 0.9):
+        q.peca(m_capsula(mao + n * i - d * 2.5, mao + n * i + d * 2.5, 0.45) & m_elipse(mao, 4.0, 3.8), met, cheio(2), zb + 0.07, gb, enfeite=True)
+    ombreira(omb_d + (-1, 0), -1, zb + 0.1)
 
-    out = np.zeros((H, WQ, 4), np.uint8)
-    out[:, MARGEM:MARGEM + W] = tela.rgba()
+    # ================= montar e efeitos
+    rgba = q.final()
+    rg = RAMPAS['olho_dano' if k('dano') else 'olho']
+    bo = k('olhos', 1.0)
+    if bo > 0:
+        for (ox, oy, tam) in ((cx + 1.5, cy + 2.7, 1.8), (cx + 12.0, cy + 2.7, 1.4)):
+            m = m_elipse((ox, oy), tam + 0.6, 1.4)
+            mistura(rgba, m_elipse((ox, oy), tam + 3.5, 2.6) & ~m & (rgba[..., 3] > 0), rg[3], min(1.0, 0.22 * bo))
+            mistura(rgba, m, rg[2], min(1.0, 0.85 * bo))
+            mistura(rgba, m_elipse((ox - 0.3, oy - 0.2), tam * 0.6, 0.8), rg[4], min(1.0, bo))
+    if k('cintila_elmo'):
+        estrela(rgba, cab + (-9, -10), 2, (255, 255, 255), 0.95)
+    if k('brilho_lamina') is not None:
+        estrela(rgba, base_l + d * Lb * k('brilho_lamina'), 3, (255, 255, 240), 1.0)
+    if k('rastro'):
+        a0, a1, raio = k('rastro')
+        cen = omb_d + (2, 2)
+        ang_p = np.arctan2(YY - cen[1], XX - cen[0])
+        rr = np.hypot(XX - cen[0], YY - cen[1])
+        lo, hi = min(a0, a1), max(a0, a1)
+        arco = (rr > raio - 8) & (rr < raio + 2) & (ang_p > lo) & (ang_p < hi)
+        prog = np.clip((ang_p - lo) / max(hi - lo, 1e-3), 0, 1)
+        espessura = rr > raio - 1 - 7 * prog
+        mistura(rgba, arco & espessura, (170, 225, 255), 0.3)
+        mistura(rgba, arco & espessura & (prog > 0.5), (230, 248, 255), 0.6)
+        mistura(rgba, arco & (rr > raio - 1.2) & (prog > 0.2), (255, 255, 255), 0.95)
+    for (fx, fy) in (k('faiscas') or []):
+        estrela(rgba, ec + (fx, fy), 2, (255, 230, 150), 1.0)
+    for (fx, fy, tm) in (k('cintilas') or []):
+        estrela(rgba, (fx, fy), tm, (255, 246, 200), 1.0)
+    if E.get('lenda'):
+        rgba = aura(rgba, k('fase_aura', 0))
+    out = rgba
     queda = k('queda', 0)
-    if queda:   # tomba para trás girando em torno dos pés
+    if queda:
         im = Image.fromarray(out, 'RGBA').rotate(queda, resample=Image.NEAREST, center=(ANCORA[0], ANCORA[1] - 1),
                                                  translate=(k('queda_x', 0), k('queda_y', 0)))
         out = np.asarray(im).copy()
-    if E.get('lenda'):
-        out = aura(out)
     return out
 
 
-def aura(rgba):
+def aura(rgba, fase=0):
     a = rgba[..., 3] > 0
     halo = np.zeros(a.shape, bool)
-    for dy in (-1, 0, 1):
-        for dx in (-1, 0, 1):
-            if abs(dy) + abs(dx) <= 1:
-                halo |= desloca(a, dy, dx)
+    for dy, dx in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+        halo |= desloca(a, dy, dx)
     halo &= ~a
     out = rgba.copy()
-    out[halo, :3] = (255, 214, 120)
-    out[halo, 3] = 90
+    out[halo, :3] = (255, 220, 130)
+    out[halo, 3] = 110
+    rng = np.random.default_rng(7)
+    pts = rng.uniform([X0 - 34, 12], [X0 + 34, PE - 4], size=(14, 2))
+    for i, (px, py) in enumerate(pts):
+        py = (py - fase * 6 - i * 3) % (PE - 12) + 10
+        if a[int(py), int(px)]:
+            continue
+        estrela(out, (px, py), 1 if i % 3 else 2, (255, 228, 140), 0.85)
     return out
 
 
 # ------------------------------------------------------------------ poses
+def suave(a, b, f):
+    f = max(0.0, min(1.0, f))
+    f = f * f * (3 - 2 * f)
+    return a + (b - a) * f
+
+
 def poses():
     a = {}
-    a['parado'] = [{'bob': b, 'pluma': p, 'capa': c} for b, p, c in ((0, 0, 0), (0, 0.5, 0.5), (1, 1, 1), (1, 0.5, 0.5))]
-    # preparo: ergue a espada por cima do ombro
-    a['preparo'] = [{'mao_f': (-1 + 0 * f, 8 - 15 * f), 'espada': 2.15 - 3.6 * f, 'inclina': -1 * f, 'pluma': f, 'capa': 0.5 * f} for f in (0.35, 0.7, 1.0)]
+    a['parado'] = [
+        {'bob': 0, 'pluma': 0, 'capa': 0, 'brilho_lamina': 0.25, 'fase_aura': 0},
+        {'bob': 0.5, 'pluma': 0.4, 'capa': 0.5, 'brilho_lamina': 0.5, 'fase_aura': 1},
+        {'bob': 1, 'pluma': 0.8, 'capa': 1, 'cintila_elmo': True, 'olhos': 0.25, 'fase_aura': 2},
+        {'bob': 0.5, 'pluma': 0.4, 'capa': 0.5, 'brilho_lamina': 0.8, 'fase_aura': 3},
+    ]
+    a['preparo'] = [{'mao': (suave(-3, 2, f), suave(13, -12, f)), 'espada': suave(2.45, -1.2, f), 'cotovelo': (suave(-2.5, -5, f), 0),
+                     'inclina': -1.5 * f, 'pluma': 1.2 * f, 'capa': 0.6 * f, 'olhos': 1.0 + 0.3 * f, 'espada_z': 7.95 if f > 0.5 else 2.2} for f in (0.35, 0.7, 1.0)]
     g = []
-    for f in (0.0, 0.3, 0.6, 1.0, 0.85, 0.6):
+    for i, f in enumerate((0.0, 0.3, 0.6, 1.0, 0.85, 0.6)):
         s = min(1.0, f / 0.6)
-        g.append({'mao_f': (-1 + 14 * s, -7 + 13 * s), 'espada': -1.45 + 2.0 * s, 'x': 5 * s, 'inclina': -1 + 3 * s,
-                  'pe_f': (4 * s, 0), 'pluma': 1 - 2.2 * s, 'capa': -1.5 * s, 'espada_frente': True})
+        g.append({'mao': (suave(2, 22, s), suave(-12, 6, s)), 'espada': suave(-1.2, 0.35, s), 'cotovelo': (suave(-5, 3, s), suave(0, -3, s)),
+                  'x': 7 * s, 'inclina': suave(-1.5, 3, s), 'pe_f': (5 * s, 0), 'pluma': suave(1.2, -2.2, s), 'capa': -2 * s,
+                  'espada_frente': s > 0.25, 'rastro': (-1.9, 0.5, 40) if i in (2, 3) else None})
     a['golpe'] = g
-    a['dano'] = [{'x': -3 * f, 'inclina': -2 * f, 'pluma': 1.5 * f, 'capa': 1.5 * f, 'mao_t': (2, 7 - 2 * f), 'escudo': (-1 * f, -1 * f), 'mao_f': (-2 * f, 8)} for f in (1.0, 0.6, 0.25)]
-    a['derrota'] = [{'inclina': -1.5 * f, 'mao_f': (-1 - 3 * f, 8 - 4 * f), 'espada': 2.15 + 0.9 * f, 'pluma': -f, 'capa': -0.8 * f,
-                     'queda': 84 * f, 'queda_x': 10 * f, 'queda_y': -11 * f} for f in (0.15, 0.4, 0.7, 0.92, 1.0)]
-    a['vitoria'] = [{'mao_f': (1, 8 - 19 * f), 'espada': 2.15 - (2.15 + 1.6) * f, 'bob': -1 * f, 'pluma': 0.6 * f, 'capa': 1 * f, 'espada_frente': True} for f in (0.4, 0.8, 1.0, 0.9)]
+    a['dano'] = [{'x': -4 * f, 'inclina': -3 * f, 'pluma': 2 * f, 'capa': 2 * f, 'mao_e': (3, 12 - 2 * f), 'escudo': (-1 * f, -1 * f),
+                  'dano': f > 0.5, 'faiscas': [(-12, -6), (-13, 2), (-9, -12)] if f == 1.0 else None, 'olhos': 1.2} for f in (1.0, 0.6, 0.25)]
+    a['derrota'] = [{'inclina': -2 * f, 'mao': (-3 - 4 * f, 13 - 5 * f), 'espada': 2.45 + 0.8 * f, 'pluma': -f, 'capa': -1 * f,
+                     'olhos': max(0.0, 1 - f * 1.3), 'queda': 84 * f, 'queda_x': 16 * f, 'queda_y': -16 * f} for f in (0.15, 0.4, 0.7, 0.92, 1.0)]
+    v = []
+    for f, cint in ((0.4, None), (0.8, [(X0 - 30, 18, 2)]), (1.0, [(X0 - 30, 18, 3), (X0 - 40, 30, 2), (X0 - 18, 8, 2)]), (0.95, [(X0 - 34, 12, 2), (X0 - 22, 26, 3)])):
+        v.append({'mao': (suave(-3, 2, f), suave(13, -16, f)), 'espada': suave(2.45, -1.7, f), 'cotovelo': (suave(-2.5, -4, f), 0), 'bob': -1.5 * f,
+                  'pluma': 0.8 * f, 'capa': 1.2 * f, 'espada_frente': f > 0.5, 'cintilas': cint, 'olhos': 1.3, 'brilho_lamina': 0.95 if f >= 1 else None})
+    a['vitoria'] = v
     return a
 
 
@@ -364,24 +633,23 @@ def principal() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument('--previa')
     ap.add_argument('--anim', default='parado')
-    ap.add_argument('--escala', type=int, default=6)
+    ap.add_argument('--escala', type=int, default=4)
     ap.add_argument('--estagios', default='1,2,3,4,5,6')
     ap.add_argument('--so', type=int)
+    ap.add_argument('--fundo', default='#3a4048')
     ap.add_argument('--mascote', action='store_true')
     a = ap.parse_args()
     est = [int(x) for x in a.estagios.split(',')]
     if a.previa:
         nomes = a.anim.split(',')
-        lin = [(e, nm, p) for e in est for nm in nomes for p in ([poses()[nm][a.so]] if a.so is not None else poses()[nm])]
-        colunas = max(len(poses()[nm]) for nm in nomes) if a.so is None else 1
-        linhas = len(est) * len(nomes)
-        img = Image.new('RGBA', (WQ * colunas, H * linhas), (140, 140, 140, 255))
-        i = 0
+        P_ = poses()
+        cols = 1 if a.so is not None else max(len(P_[nm]) for nm in nomes)
+        img = Image.new('RGBA', (W * cols, H * len(est) * len(nomes)), hx(a.fundo) + (255,))
         for li, e in enumerate(est):
             for nj, nm in enumerate(nomes):
-                lista = [poses()[nm][a.so]] if a.so is not None else poses()[nm]
+                lista = [P_[nm][a.so]] if a.so is not None else P_[nm]
                 for ci, pz in enumerate(lista):
-                    img.alpha_composite(Image.fromarray(quadro(e, pz), 'RGBA'), (ci * WQ, (li * len(nomes) + nj) * H))
+                    img.alpha_composite(Image.fromarray(quadro(e, pz), 'RGBA'), (ci * W, (li * len(nomes) + nj) * H))
         img.resize((img.width * a.escala, img.height * a.escala), Image.NEAREST).save(a.previa)
         print('prévia:', a.previa)
         return 0
@@ -391,7 +659,7 @@ def principal() -> int:
         for e in (4, 6):
             q = Image.fromarray(quadro(e, poses()['parado'][0]), 'RGBA')
             q = q.crop(q.getbbox())
-            q.resize((q.width * 8, q.height * 8), Image.NEAREST).save(dest / f'heroi-{e}.png', optimize=True)
+            q.resize((q.width * 6, q.height * 6), Image.NEAREST).save(dest / f'heroi-{e}.png', optimize=True)
         print('mascote em', dest)
         return 0
     for e in est:
