@@ -1,6 +1,6 @@
 # Ideia 51: três cenários pendentes
 
-14/10/2026. Implementação para revisão em PR draft, sem merge.
+14/10/2026. Implementação para revisão no [PR draft #247](https://github.com/talesrobertosn/ortoquestoes/pull/247), sem merge.
 
 - `treino`: **Pátio dos Estandartes**, galeria de madeira, alvo de palha, banco, vasos e flâmulas em luz de manhã.
 - `arquivo`: **Arquivo dos Mapas**, estantes, plantas arquitetônicas geométricas, mesa, mapas enrolados e lanternas.
