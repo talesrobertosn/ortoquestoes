@@ -22,6 +22,11 @@ Leia nesta ordem:
 
 ### Estado de agora
 
+- **Movimento suave (14/10/2026, noite):** pedido do Tales, o flashcard "sambava" ao virar e os movimentos estavam duros.
+  - O flashcard desliza até a posição nova em vez de pular (`efeitos/deslizar.ts`, `useDeslizar`, usado no `Cartao` e no herói e botão da Batalha no celular).
+  - No celular, o flashcard fica preso pelo topo, e o verso do Estudo não troca mais as linhas do grid (o painel caía cerca de 140 px).
+  - Giro, compra, golpes, tremores, bote do adversário (parte da pose de preparo) e botão principal com curvas suaves; alternativas e botões entram em cascata.
+  - Tudo desligado em "Reduzir movimento". Fim do bloco "Movimento suave" em `Flashcards.css`.
 - **Na base e publicado:**
   - #228 e #229: golpes em pixel art; os superpoderes Envenenado, Em chamas, Grude e Tremor; o humor da Biblioteca com gato e velas; o Jardim Suspenso.
   - #235: top 3 do ranking com largura cheia.

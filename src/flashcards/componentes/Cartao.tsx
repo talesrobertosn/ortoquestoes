@@ -1,6 +1,7 @@
 import { memo, useEffect, useRef, useState } from 'react'
 import { recurso } from '../../config'
 import { href } from '../../util/rotas'
+import { useDeslizar } from '../efeitos/deslizar'
 import type { Flashcard } from '../tipos'
 import { Sprite } from './Sprite'
 import { Texto } from './Texto'
@@ -85,6 +86,10 @@ function Figura({ img, aoAmpliar }: { img: { src: string; legenda: string }; aoA
   )
 }
 
+/** Tempos do giro (ms): a metade que sai e a que entra; o CSS usa os mesmos. */
+const GIRO_SAI = 230
+const GIRO_ENTRA = 340
+
 /**
  * Flashcard físico: moldura por raridade, pergaminho, cabeçalho com brasão e
  * altura que acompanha o conteúdo. O giro acontece em duas metades: até 90°,
@@ -97,6 +102,8 @@ export const Cartao = memo(function Cartao({ carta, virada, dicaFrente, aoTocar,
   const [origemAberta, definirOrigem] = useState(false)
   const alvo = virada ? 'verso' : 'frente'
   const tempo = useRef(0)
+  const refCarta = useRef<HTMLElement>(null)
+  useDeslizar(refCarta, reduzido)
 
   useEffect(() => {
     if (alvo === lado) return
@@ -107,8 +114,8 @@ export const Cartao = memo(function Cartao({ carta, virada, dicaFrente, aoTocar,
     tempo.current = window.setTimeout(() => {
       definirLado(alvo)
       definirGiro('entra')
-      tempo.current = window.setTimeout(() => definirGiro(''), 260)
-    }, 200)
+      tempo.current = window.setTimeout(() => definirGiro(''), GIRO_ENTRA)
+    }, GIRO_SAI)
     return () => window.clearTimeout(tempo.current)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [alvo])
@@ -120,6 +127,7 @@ export const Cartao = memo(function Cartao({ carta, virada, dicaFrente, aoTocar,
   const frente = lado === 'frente'
   return (
     <article
+      ref={refCarta}
       className={`fc-carta fc-carta--${carta.raridade}${giro ? ' fc-carta--' + giro : ''}${!frente ? ' fc-carta--verso' : ''}${resultado && !frente ? ' fc-carta--' + resultado : ''}${familias.map((f) => ' fc-carta--fam-' + f).join('')}${classe ? ' ' + classe : ''}`}
       key={chave}
       aria-label={`Flashcard: ${carta.assunto}`}
