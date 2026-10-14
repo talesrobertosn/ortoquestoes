@@ -6,7 +6,7 @@ Tales autorizou publicar os quatro blocos e continuar as pendências sem novas c
 
 PRs #247, #248, #249 e #250 mesclados. Deploy `38622895104`, commit `2471c5588b975f288ce4d4d67518eaba4c7dc195`, concluído com sucesso. O site público abriu sem erros JavaScript em computador e celular. Os PNGs dos três cenários, cortina, pedregulho de cristal e OGG foram lidos no domínio e tiveram suas assinaturas binárias conferidas. A sessão protegida não foi testada com conta real; os testes funcionais do jogo foram locais, com Supabase desativado.
 
-## Bloco da Biblioteca
+## Bloco da Biblioteca — PR #252 mesclado
 
 - **34:** livro autoral em Python/numpy, um por “Sabia” da sessão, com animação de chegada à estante. Não equivale a domínio permanente e não cria coleção na conta.
 - **35:** diário ao concluir: trechos de clima, melhor sequência e área com maior proporção de “Sabia”, apenas com pelo menos três flashcards na área. São autoavaliações, não precisão médica aferida.
@@ -34,3 +34,7 @@ PRs #247, #248, #249 e #250 mesclados. Deploy `38622895104`, commit `2471c5588b9
 | Em pausa | 53, 54, 56, 57 | Não produzir novos monstros/variantes até Tales retomar essa direção. Ossos nos sprites existentes também permanecem intocados. |
 
 As caixas do plano são a referência de entrega, não uma promessa de que qualquer item sem marca já esteja pronto. Atualizar este relatório e CONTINUAR ao finalizar cada bloco, com PR, testes, capturas e publicação efetivamente observada.
+
+## Bloco seguinte
+
+Tutorial 63 concluído e benchmark 70 parcialmente validado. [Relatório](TUTORIAL-DESEMPENHO-14-10.md). Comparação das capturas antigas confirmou que o formulário e a capa já foram atualizados na versão publicada.

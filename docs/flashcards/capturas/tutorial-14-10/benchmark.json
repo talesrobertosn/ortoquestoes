@@ -1,0 +1,24 @@
+{
+  "data": "2026-10-14T22:10:33.941Z",
+  "limite": "Perfil sintético. A meta de 50 FPS em celular real precisa de medição física.",
+  "resultados": [
+    {
+      "perfil": "390×844, CPU 4×, Chromium headless",
+      "efeitos": "completos",
+      "quadros": 215,
+      "fpsMediano": 59.9,
+      "frameP95ms": 33.3,
+      "tarefasLongas": 3,
+      "maiorTarefaMs": 75
+    },
+    {
+      "perfil": "390×844, CPU 4×, Chromium headless",
+      "efeitos": "reduzidos",
+      "quadros": 225,
+      "fpsMediano": 59.9,
+      "frameP95ms": 16.8,
+      "tarefasLongas": 2,
+      "maiorTarefaMs": 84
+    }
+  ]
+}

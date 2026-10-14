@@ -108,7 +108,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
     - **No iPhone:** o "afundar" do pressionado funciona.
     - **Som:** os botões já tocavam o próprio som e não precisaram de mudança.
 62. [x] Transições entre telas com "cortina de pixels".
-63. [ ] Tutorial de 30 segundos jogável na primeira entrada (o Preceptor explica).
+63. [x] Tutorial de 30 segundos jogável na primeira entrada (o Preceptor explica).
 64. [x] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
 65. [x] Acessibilidade: modo sem tremor, alto contraste e texto maior.
 
@@ -120,7 +120,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 67. [x] Canvas de efeitos só ligado enquanto há efeito vivo; a pixel art usa uma camada própria.
 68. [x] Carregar as tiras de efeito sob demanda por andar (hoje: todas na entrada, 196 KB).
 69. [x] Música em OGG/Opus com fallback (hoje: MP3 a 112 kbps, 6 MB).
-70. [ ] Medir FPS no celular durante o crítico (alvo: 50+).
+70. [~] Medir FPS no celular durante o crítico (alvo: 50+).
 
 ## I. Mods e personalização
 
@@ -165,3 +165,5 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026, integração autorizada pelo Tales:** PRs #247 a #250 reúnem os quatro blocos solicitados, com testes da versão conjunta e publicação pelo workflow do site. Nenhum SQL novo. Os registros de rascunho acima são históricos.
 
 - **14/10/2026, continuidade da Biblioteca:** 34, 35, 37 e 77: livros por “Sabia”, diário de clima/área, chuva voluntária e ambiente procedural. Auditoria confirmou 76 (fades sobrepostos em `sons.ts`), 79 (`Ator` no bestiário) e 80 (contador da sessão) já implementados. Ver [relatório de continuidade](flashcards/PENDENCIAS-14-10.md).
+
+- **14/10/2026, tutorial e medição:** 63 concluída com demonstração isolada; 70 tem benchmark local reproduzível, mas a meta em aparelho físico continua pendente. [Relatório](flashcards/TUTORIAL-DESEMPENHO-14-10.md).
