@@ -194,8 +194,8 @@ def tons(p: Peca):
     if p.emissivo:
         s = 0.5 + 0.5 * np.clip(dif, 0, 1)
     elif p.metal:
-        spec = np.clip(nx * MEIO[0] + ny * MEIO[1] + nz * MEIO[2], 0, 1) ** 18
-        s = 0.06 + 0.6 * np.clip(dif * 0.55 + 0.45, 0, 1) ** 1.7 + 0.7 * spec
+        spec = np.clip(nx * MEIO[0] + ny * MEIO[1] + nz * MEIO[2], 0, 1) ** 22
+        s = 0.2 + 0.52 * np.clip(dif * 0.55 + 0.45, 0, 1) ** 1.3 + 0.4 * spec
         s -= 0.13 * np.exp(-((ny + 0.1) / 0.13) ** 2) * (nz > 0.5)   # reflexo escuro do horizonte
         s += 0.3 * np.clip(nx - 0.55, 0, 1)                            # luz de recorte à direita
     else:
@@ -207,6 +207,32 @@ def tons(p: Peca):
     return np.array(pal, np.uint8)[idx]
 
 
+def carimbo_raster(p: Peca):
+    """Carimbo desenhado à mão: amostra o desenho de origem pelo inverso do giro do osso (sem buracos)."""
+    _, grade, origem, piv_rep, piv_mundo, ang = p.luz
+    m = np.zeros((H, W), bool)
+    cor = np.zeros((H, W, 3), np.uint8)
+    mats = np.full((H, W), '', object)
+    hs, ws = len(grade), max(len(r) for r in grade)
+    ca, sa = math.cos(-ang), math.sin(-ang)
+    raio = hs + ws
+    cx, cy = piv_mundo
+    for y in range(max(0, int(cy - raio)), min(H, int(cy + raio))):
+        for x in range(max(0, int(cx - raio)), min(W, int(cx + raio))):
+            dx, dy = x + 0.5 - cx, y + 0.5 - cy
+            sx = piv_rep[0] + ca * dx - sa * dy - origem[0]
+            sy = piv_rep[1] + sa * dx + ca * dy - origem[1]
+            r, c = int(math.floor(sy)), int(math.floor(sx))
+            if 0 <= r < hs and 0 <= c < len(grade[r]):
+                cod = grade[r][c]
+                if cod is not None:
+                    mat, i = cod
+                    m[y, x] = True
+                    cor[y, x] = PAL[mat][i]
+                    mats[y, x] = mat
+    return m, cor, mats
+
+
 def render(pecas: list[Peca], retoques=()):
     cor = np.zeros((H, W, 3), np.uint8)
     alfa = np.zeros((H, W), bool)
@@ -214,7 +240,20 @@ def render(pecas: list[Peca], retoques=()):
     mat = np.full((H, W), '', object)
     grp = np.full((H, W), '', object)
     det = np.zeros((H, W), bool)
+    mao = np.zeros((H, W), bool)   # pixels desenhados à mão: a limpeza não mexe neles
     for p in sorted(pecas, key=lambda q: q.z):
+        if p.luz[0] == 'carimbo':
+            m, c, mats = carimbo_raster(p)
+            if not m.any():
+                continue
+            cor[m] = c[m]
+            alfa |= m
+            zb[m] = p.z
+            mat[m] = mats[m]
+            grp[m] = p.grupo
+            det[m] = p.detalhe
+            mao[m] = True
+            continue
         m = mascara(p.poly)
         if not m.any():
             continue
@@ -225,10 +264,11 @@ def render(pecas: list[Peca], retoques=()):
         mat[m] = p.mat
         grp[m] = p.grupo or str(id(p))
         det[m] = p.detalhe
+        mao[m] = False
     # limpeza: pixel isolado de um tom (nenhum vizinho igual na mesma peça) vira o tom vizinho
     viz = [(0, 1), (0, -1), (1, 0), (-1, 0)]
     nova = cor.copy()
-    ys, xs = np.where(alfa & ~det)
+    ys, xs = np.where(alfa & ~det & ~mao)
     for y, x in zip(ys, xs):
         if y == 0 or x == 0 or y == H - 1 or x == W - 1:
             continue
@@ -317,6 +357,122 @@ def membro(o: Osso, A, B, w0, w1, mat, z, metal=False, grupo='', textura=''):
     return Peca(o.pts(mundo), mat, z, o.luz(('cil', A, a, L, w0, w1)), metal, grupo, textura=textura)
 
 
+# ------------------------------------------------------------------ cabeça (desenho à mão)
+# Legenda: aço 1-7, ouro a-e (1-5), pele o p q r s t (0-5), cabelo g h (1, 2), olho e (escuro) e
+# Q (branco do olho), pluma T U V X Y Z (0-5), contorno K. Coordenadas: coluna 0 = x 54, linha 0 = y 37.
+LEGENDA = {**{str(i): ('aco', i) for i in range(1, 8)}, 'a': ('ouro', 1), 'b': ('ouro', 2), 'c': ('ouro', 3), 'd': ('ouro', 4), 'e': ('ouro', 5),
+           'o': ('pele', 0), 'p': ('pele', 1), 'q': ('pele', 2), 'r': ('pele', 3), 's': ('pele', 4), 't': ('pele', 5),
+           'g': ('cabelo', 1), 'h': ('cabelo', 2), 'E': ('escuro', 0), 'Q': ('branco', 3), 'K': ('escuro', 0),
+           'T': ('pluma', 0), 'U': ('pluma', 1), 'V': ('pluma', 2), 'X': ('pluma', 3), 'Y': ('pluma', 4), 'Z': ('pluma', 5)}
+CAB_X0, CAB_Y0 = 54, 37
+
+ROSTO = {   # linha: (coluna inicial, pixels)
+    17: (5, '5664qrrqqqqqq32'),
+    18: (5, '5d63rghrrrghq3'),
+    19: (5, '4653sQEsstEsr3'),
+    20: (5, '4553sssstrttq2'),
+    21: (5, '3442rssrrqrsp2'),
+    22: (6, '343rsssqqrsp'),
+    23: (6, '332rsrpppqo'),
+    24: (7, '22qrssrqo'),
+    25: (9, 'qrsrqo'),
+    26: (10, 'qrq'),
+}
+
+PLUMA = {   # tufo de penas (origem x 52, y 33): sobe da crista, abre para trás e cai atrás do elmo
+    0: (8, 'VXYYX'),
+    1: (5, 'UVXYZZYXV'),
+    2: (3, 'UVXXYZZYXXV'),
+    3: (2, 'UVXVXYYYXXVXV'),
+    4: (1, 'UVXVVXXYXXVVXV'),
+    5: (0, 'UVVUVVXXXXVUVXV'),
+    6: (0, 'UVUTUVVXXVVUUVXV'),
+    7: (0, 'VVT.TUVVVVUT.TVXV'),
+    8: (0, 'VXV..TUUVUT...TVX'),
+    9: (0, 'VXVU..TTUT....TUVX'),
+    10: (0, 'UVXVU.........TUV'),
+    11: (0, 'UVXVUT........TUV'),
+    12: (1, 'UVVUT.........TU'),
+    13: (1, 'TUVUT'),
+    14: (2, 'TUVT'),
+    15: (2, 'TUU'),
+    16: (3, 'TU'),
+    17: (3, 'T'),
+}
+PLUMA_X0, PLUMA_Y0 = 52, 33
+
+
+def grade_de(linhas, alt):
+    g = [[None] * 24 for _ in range(alt)]
+    for r, (c0, txt) in linhas.items():
+        for i, ch in enumerate(txt):
+            if ch != '.':
+                g[r][c0 + i] = LEGENDA[ch]
+    return g
+
+
+def domo_elmo(g, ouro_elmo, lenda):
+    """Domo de aço alto e redondo (linhas 9 a 15), aba dourada fina (16) e sombra da aba (17 só nos lados)."""
+    metal = 'perola' if lenda else 'aco'
+    cx, topo, base = 11.6, 8.6, 16.2
+    for r in range(8, 16):
+        y = r + 0.5
+        t = (y - topo) / (base - topo)
+        meia = 7.4 * math.sqrt(max(0.0, 1 - (1 - t) ** 2 * 1.0)) + 0.25
+        for c in range(24):
+            x = c + 0.5
+            if abs(x - cx) > meia:
+                continue
+            nx = (x - cx) / max(meia, 1)
+            ny = -(1 - t)
+            v = 0.52 - 0.34 * nx - 0.3 * ny * 0.7 + 0.1
+            v += 0.5 * math.exp(-(((nx + 0.42) / 0.2) ** 2 + ((t - 0.32) / 0.18) ** 2))   # brilho alto à esquerda
+            v -= 0.18 * math.exp(-((t - 0.78) / 0.12) ** 2)                              # faixa escura do reflexo
+            if abs(x - cx) > meia - 0.9:
+                v -= 0.18                                                                  # borda escurece
+            i = int(min(7, max(1, round(v * 7))))
+            g[r][c] = (metal, min(i, len(PAL[metal]) - 1))
+    # crista (friso) no meio, um pouco para a direita por causa do 3/4
+    for r in range(8, 16):
+        cr = 12
+        g[r][cr] = ('ouro', 5 if r < 11 else 4) if ouro_elmo else (metal, 7)
+        g[r][cr + 1] = ('ouro', 3) if ouro_elmo else (metal, 4)
+    # aba fina: uma linha dourada e, embaixo, a sombra
+    aba = 'ouro' if ouro_elmo else metal
+    for c in range(3, 21):
+        x = c + 0.5
+        g[16][c] = (aba, 5 if 5 <= c <= 8 else (4 if c < 13 else 3)) if aba == 'ouro' else (aba, 6 if c < 9 else 4)
+    g[16][3] = (aba, 2)
+    g[16][20] = (aba, 2)
+    if ouro_elmo:
+        g[12][5] = ('ouro', 4)   # rebite dourado do lado
+    return g
+
+
+def cabeca_desenho(cab, E, k, P, zc):
+    lenda = bool(E.get('lenda'))
+    g = grade_de(ROSTO, 28)
+    g = domo_elmo(g, E['elmo_ouro'], lenda)
+    if lenda:   # protetores de face em pérola
+        for r in range(17, 25):
+            for c in range(24):
+                if g[r][c] and g[r][c][0] == 'aco':
+                    g[r][c] = ('perola', min(6, g[r][c][1] + 1))
+    piv = PESCOCO
+    P.append(Peca([], 'aco', zc, ('carimbo', g, (CAB_X0, CAB_Y0), piv, cab.tf(piv), cab.thp - cab.th), grupo='cabeca'))
+    if E['pluma']:
+        gp = grade_de(PLUMA, 18)
+        if E['pluma'] == 1:   # pluma curta do escudeiro: só a metade de baixo
+            gp = [[None] * 24 for _ in range(6)] + gp[6:]
+        sw = k('pluma', 0)
+        # a pluma balança: gira em torno da base, no alto do elmo
+        base = (CAB_X0 + 10.5, CAB_Y0 + 9.5)
+        Jb = cab.tf(base)
+        osso_p = Osso(base, 0.0, Jb, (cab.thp - cab.th) - 0.06 * sw)
+        P.append(Peca([], 'pluma', zc - 0.05, ('carimbo', gp, (PLUMA_X0, PLUMA_Y0), base, osso_p.tf(base), osso_p.thp), grupo='pluma'))
+
+
+
 def montar(e: int, t: dict):
     E = ESTAGIOS[e]
     k = t.get
@@ -373,9 +529,10 @@ def montar(e: int, t: dict):
     if E['capa']:
         sw = k('capa', 0)
         cm = E['capa']
-        add(tronco, [(70, 63), (80, 62.5), (86, 68), (90.5, 82), (93 + sw, 98), (95 + sw * 1.6, 114), (91 + sw * 1.5, 119),
-                     (86 + sw, 115), (81, 118), (76, 108), (72, 90)], cm, 0.5, ('plano', 0.35, -0.1, 0.8), grupo='capa')
-        add(tronco, [(88.6, 86), (90.6, 98), (91.6 + sw, 112), (90.4 + sw, 113), (89.2, 99)], cm, 0.55, ('lisa', 1), grupo='capa', detalhe=True)
+        add(tronco, [(70, 62), (81, 61.5), (88, 64.5), (92.5, 74), (94.5 + sw * 0.5, 88), (96.5 + sw, 104), (98 + sw * 1.6, 120), (94 + sw * 1.5, 124),
+                     (90 + sw, 120), (86, 124), (80, 118), (75, 104), (72, 88)], cm, 0.5, ('plano', 0.35, -0.1, 0.8), grupo='capa')
+        for x0 in (89.0, 93.0):   # dobras
+            add(tronco, [(x0, 72), (x0 + 1.0, 72), (x0 + 3.0 + sw, 118), (x0 + 2.0 + sw, 118)], cm, 0.55, ('lisa', 1), grupo='capa', detalhe=True)
 
     # ---------------- pernas (a de trás, esquerda da imagem, primeiro)
     for lado, z in (('e', 2.0), ('d', 2.3)):
@@ -431,7 +588,8 @@ def montar(e: int, t: dict):
         xs_ = [x for x, _ in sola]
         add(pe, [(min(xs_), 149.0), (max(xs_), 149.0), (max(xs_), 150.8), (min(xs_), 150.8)], 'couro', z + 0.16, ('lisa', 0), grupo=g + 'p', detalhe=True)
         if E['grevas']:
-            add(pe, cobre, ar, z + 0.17, ('plano', -0.3, -0.6, 0.7), metal=True, grupo=g + 'pa')
+            add(pe, cobre, ar, z + 0.17, ('lisa', 3), grupo=g + 'pa')
+            add(pe, cobre[:4], ar, z + 0.175, ('lisa', 5), grupo=g + 'pa', detalhe=True)   # borda de cima pega a luz
 
     # ---------------- saia de malha, tabardo
     sk = 'malha' if E['malha'] else 'azul'
@@ -490,9 +648,16 @@ def montar(e: int, t: dict):
     w0, w1 = 1.8, 1.4
     lamina = [base - nrm * w0, base + nrm * w0, ponta - d * 5 + nrm * w1, ponta, ponta - d * 5 - nrm * w1]
     zs = k('espada_frente') if k('espada_frente') is not None else zb - 0.1
-    add(esp, [tuple(p) for p in lamina], lam, zs, ('cil', tuple(base), ang_de(d), Lb, 3.6, 2.8), metal=not E.get('lenda'), grupo='espada', emissivo=bool(E.get('lenda')))
-    sulco = [base + d * 1.5 - nrm * 0.45, base + d * 1.5 + nrm * 0.45, base + d * (Lb * 0.66) + nrm * 0.35, base + d * (Lb * 0.66) - nrm * 0.35]
-    add(esp, [tuple(p) for p in sulco], lam, zs + 0.01, ('lisa', 2 if E.get('lenda') else 1), grupo='espada', detalhe=True)
+    if E.get('lenda'):
+        add(esp, [tuple(p) for p in lamina], lam, zs, ('cil', tuple(base), ang_de(d), Lb, 3.6, 2.8), grupo='espada', emissivo=True)
+    else:
+        add(esp, [tuple(p) for p in lamina], lam, zs, ('lisa', 4), grupo='espada')
+        metade = [base + nrm * 0.1, base + nrm * w0, ponta - d * 5 + nrm * w1, ponta]   # lado de cima pega a luz
+        add(esp, [tuple(p) for p in metade], lam, zs + 0.005, ('lisa', 6), grupo='espada', detalhe=True)
+        fio = [base + nrm * (w0 - 0.5), base + nrm * w0, ponta - d * 5 + nrm * w1, ponta - d * 5 + nrm * (w1 - 0.5)]
+        add(esp, [tuple(p) for p in fio], lam, zs + 0.006, ('lisa', 7), grupo='espada', detalhe=True)
+    sulco = [base + d * 1.5 - nrm * 0.35, base + d * 1.5 + nrm * 0.35, base + d * (Lb * 0.6) + nrm * 0.3, base + d * (Lb * 0.6) - nrm * 0.3]
+    add(esp, [tuple(p) for p in sulco], lam, zs + 0.01, ('lisa', 2 if E.get('lenda') else 3), grupo='espada', detalhe=True)
     gm = 'ouro' if e >= 3 else ('aco' if e == 2 else 'couro')
     g0 = np.array(POMO) + d * 11.4
     guarda = [g0 - nrm * 6.4 + d * 1.4, g0 - nrm * 5.6 - d * 0.4, g0 + nrm * 5.6 - d * 0.4, g0 + nrm * 6.4 + d * 1.4, g0 + nrm * 5.0 + d * 1.6, g0 - nrm * 5.0 + d * 1.6]
@@ -510,76 +675,19 @@ def montar(e: int, t: dict):
     # ---------------- cachecol, gorjal e cabeça
     zc = 6.0
     add(cab, [(60.2, 61.4), (68.8, 61.4), (68.6, 66.4), (60.4, 66.4)], ar, 5.0, ('cil', (60.2, 64), -math.pi / 2, 8.6, 5, 5), metal=True, grupo='gorjal')
-    cach = [(53.8, 62.0), (57.0, 59.6), (60.4, 61.6), (63.4, 64.8), (68.6, 65.0), (71.4, 61.4), (74.2, 62.4), (74.0, 66.4), (70.8, 70.0), (64.0, 71.4), (57.6, 70.4), (54.4, 67.2)]
+    cach = [(55.0, 62.0), (57.6, 60.0), (60.6, 61.8), (63.4, 64.4), (68.4, 64.6), (71.0, 61.6), (73.4, 62.4), (73.0, 65.6), (70.2, 68.2), (64.0, 69.2), (58.4, 68.4), (55.6, 66.0)]
     add(tronco, cach, 'azul', 5.6, ('esf', (62.5, 64.5), 11, 7.5), grupo='cachecol')
     for a0, a1 in (((57.5, 64.6), (63.2, 69.2)), ((65.6, 67.6), (70.6, 66.0)), ((55.6, 66.8), (58.8, 69.6))):
         a0, a1 = np.array(a0), np.array(a1)
         n_ = np.array([-(a1 - a0)[1], (a1 - a0)[0]])
         n_ = n_ / np.linalg.norm(n_) * 0.5
         add(tronco, [tuple(a0 - n_), tuple(a0 + n_), tuple(a1 + n_), tuple(a1 - n_)], 'azul', 5.62, ('lisa', 1), grupo='cachecol', detalhe=True)
-    add(tronco, [(53.6, 63.6), (56.4, 64.6), (56.6, 72.0), (54.8, 73.4), (53.0, 70.0)], 'azul', 5.58, ('plano', -0.3, 0.0, 0.6), grupo='cachecol')
+    add(tronco, [(55.0, 63.6), (57.4, 64.6), (57.4, 70.4), (55.8, 71.6), (54.6, 68.6)], 'azul', 5.58, ('plano', -0.3, 0.0, 0.6), grupo='cachecol')
 
-    # rosto (3/4 olhando para a direita): testa sob a aba, nariz, queixo firme
-    rosto = [(60.4, 54.6), (70.4, 54.6), (71.2, 56.6), (70.6, 58.2), (72.2, 60.6), (70.9, 61.3), (71.2, 62.3), (70.6, 63.8), (68.6, 65.2), (65.0, 65.0), (61.6, 63.0)]
-    add(cab, rosto, 'pele', zc, ('esf', (65.0, 58.8), 6.8, 7.4), grupo='rosto')
-    add(cab, [(60.6, 54.8), (63.2, 54.8), (62.6, 58.6), (61.0, 58.8)], 'cabelo', zc + 0.05, ('lisa', 2), grupo='cabelo', detalhe=True)
-    # protetores de face: o de perto (esquerda) e o de longe (filete à direita)
-    add(cab, [(70.0, 54.8), (72.6, 54.8), (73.0, 58.4), (72.2, 62.0), (71.0, 62.6)], ar, zc - 0.1, ('esf', (71.4, 57), 2.4, 5), metal=True, grupo='face_d')
-    add(cab, [(56.0, 54.4), (61.8, 54.6), (63.0, 58.6), (62.6, 62.4), (60.4, 65.0), (57.4, 64.2), (56.2, 60.0)], ar, zc + 0.1, ('esf', (59.6, 57.6), 4.6, 6.8), metal=True, grupo='face_e')
-    add(cab, [(57.0, 60.6), (62.6, 60.3), (62.6, 61.2), (57.0, 61.5)], ar, zc + 0.11, ('lisa', 2), grupo='face_e', detalhe=True)
-    if E['elmo_ouro']:
-        add(cab, [(56.0, 54.4), (61.8, 54.6), (62.0, 55.6), (56.2, 55.4)], 'ouro', zc + 0.12, ('plano', 0, -0.3, 0), metal=True, grupo='face_e', detalhe=True)
-    domo = elipse((64.0, 54.6), 8.0, 9.4, 32, math.pi, 2 * math.pi)
-    add(cab, domo, ar, zc + 0.2, ('esf', (62.6, 53.0), 8.6, 9.6), metal=True, grupo='elmo')
-    add(cab, [(55.0, 52.6), (72.6, 52.6), (74.0, 54.4), (73.4, 55.6), (55.2, 55.4)], ar, zc + 0.3, ('cil', (55, 54), -math.pi / 2, 19, 3.0, 3.0), metal=True, grupo='aba')
-    crista_m = 'ouro' if E['elmo_ouro'] else ar
-    add(cab, [(63.4, 45.6), (64.6, 45.4), (65.6, 52.4), (64.6, 52.4)], crista_m, zc + 0.31, ('lisa', 2), metal=True, grupo='elmo', detalhe=True)
-    if E['elmo_ouro']:
-        add(cab, [(55.0, 52.4), (72.6, 52.4), (73.4, 53.4), (55.0, 53.6)], 'ouro', zc + 0.32, ('cil', (55, 53), -math.pi / 2, 19, 1.4, 1.4), metal=True, grupo='aba', detalhe=True)
-        add(cab, [(66.2, 52.6), (67.6, 52.6), (68.0, 48.6), (67.0, 46.8), (66.0, 48.6)], 'ouro', zc + 0.33, ('plano', -0.3, -0.3, 0.3), metal=True, grupo='elmo', detalhe=True)
-        add(cab, elipse((59.4, 50.6), 1.7, 1.7, 12), 'ouro', zc + 0.33, ('esf', (59.4, 50.6), 1.7, 1.7), metal=True, grupo='elmo', detalhe=True)
-
-    # traços do rosto, pixel a pixel (coordenadas de repouso)
-    for x in range(61, 70):
-        px(cab, x + 0.5, 55.5, 'pele', 1, zc + 0.15)
-    for x in (62, 63, 66, 67):
-        px(cab, x + 0.5, 56.5, 'pele', 2, zc + 0.15)
-    for x, y, m, i in [
-        (63, 57, 'cabelo', 1), (64, 57, 'cabelo', 1), (65, 57, 'cabelo', 2),       # sobrancelha de perto
-        (64, 58, 'escuro', 0), (65, 58, 'escuro', 1), (63, 58, 'pele', 2),          # olho de perto
-        (68, 57, 'cabelo', 1), (69, 57, 'cabelo', 2),                               # sobrancelha de longe
-        (69, 58, 'escuro', 0),                                                      # olho de longe
-        (67, 58, 'pele', 4), (67, 59, 'pele', 4), (67, 60, 'pele', 5),              # dorso do nariz
-        (68, 60, 'pele', 2), (70, 61, 'pele', 1), (69, 61, 'pele', 2),              # sombra do nariz
-        (63, 60, 'pele', 4), (64, 61, 'pele', 4),                                   # maçã do rosto
-        (67, 62, 'pele', 1), (68, 62, 'pele', 1), (69, 62, 'pele', 2),              # boca
-        (68, 63, 'pele', 4),                                                        # lábio de baixo
-        (64, 63, 'pele', 2), (65, 64, 'pele', 2), (66, 64, 'pele', 2), (67, 64, 'pele', 3),  # linha do queixo
-    ]:
-        px(cab, x + 0.5, y + 0.5, m, i, zc + 0.15)
-
-    # pluma azul em penas, saindo do alto do elmo e caindo para trás
-    if E['pluma']:
-        sw = k('pluma', 0)
-        larg = {1: 0.75, 2: 1.0, 3: 1.12}[E['pluma']]
-        curva = [(64.4, 46.4), (63.6, 42.6), (61.2, 40.4), (57.6, 40.6), (54.4, 42.8), (52.2, 46.2), (51.2, 49.6)]
-        curva = [np.array(c) + np.array([-sw * 0.6 * i / 6, sw * 0.5 * (i / 6) ** 2]) for i, c in enumerate(curva)]
-        for camada, (dx, dy, esc) in enumerate(((0.6, 1.4, 0.85), (0, 0, 1.0))):
-            sup, inf = [], []
-            for i, c in enumerate(curva):
-                f = i / (len(curva) - 1)
-                tng = curva[min(i + 1, len(curva) - 1)] - curva[max(i - 1, 0)]
-                tng = tng / np.linalg.norm(tng)
-                nn = np.array([tng[1], -tng[0]])
-                r = (3.4 - 2.6 * f) * larg * esc
-                sup.append(c + nn * r + (dx, dy))
-                serra = 1.0 if i % 2 == 0 else 0.45     # pontas das penas na borda de baixo
-                inf.append(c - nn * r * serra * 1.1 + (dx, dy))
-            poly = [tuple(p) for p in sup] + [tuple(p) for p in reversed(inf)]
-            add(cab, poly, 'pluma', zc + 0.13 + 0.02 * camada, ('plano', -0.2, -0.5, 1.0), grupo='pluma' + str(camada), detalhe=camada == 1)
-        for i in range(1, 6):  # veios das penas
-            c = curva[i]
-            px(cab, c[0], c[1] - 0.6, 'pluma', 5 if i < 3 else 4, zc + 0.2)
+    # cabeça desenhada à mão, pixel a pixel (rodada 3, 14/10): elmo alto e redondo de aço com aba fina
+    # dourada e crista, protetores de face dos dois lados, rosto adulto de 3/4 (sobrancelha, olho,
+    # nariz reto, boca e queixo marcado) e pluma em tufo de penas. Preso ao osso da cabeça.
+    cabeca_desenho(cab, E, k, P, zc)
 
     # ---------------- ombreiras em lâminas
     om = E['ombreira']
@@ -642,6 +750,10 @@ def montar(e: int, t: dict):
 
     for p in P:
         p.poly = [mv(x, y) for x, y in p.poly]
+        if p.luz[0] == 'carimbo':
+            _, g, o, pr, pm, an = p.luz
+            p.luz = ('carimbo', g, o, pr, np.array(mv(*pm)), an)
+            continue
         if p.luz[0] == 'cil':
             _, o, a, L, w0, w1 = p.luz
             p.luz = ('cil', np.array(mv(*o)), a, L * tam, w0 * tam, w1 * tam)

@@ -63,6 +63,21 @@ Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com o PR #227 aberto p
   5. Capturas com Playwright em 1400×860, 390×844 e 844×390. Mostrar ao Tales antes de mesclar.
   6. Atualizar a linha "Arte" em RESUMO-14-10.md.
 
+- **Rodada 3 (14/10, noite): mudança de direção pedida pelo Tales.** Ele mandou referências de cavaleiros em pixel art e escolheu **"Chibi como a 3ª"**: elmo grande, redondo e fechado com viseira, pluma vermelha curta, capa vermelha, aço em poucos tons e contorno escuro. Isso substitui o pedido anterior de "nada fofinho".
+  - Gerador novo: `scripts/sprites/cavaleiro_chibi.py`, em pixel art nativa. As peças são formas simples com tons em faixas (luz de cima e da esquerda), cada uma com contorno, empilhadas. O quadro tem 80×64, com âncora (39,60), e o cavaleiro tem cerca de 57 px de altura.
+  - Estágios: 1 escudo de madeira e pluma curta; 2 escudo de aço com cruz vermelha; 3 capa curta; 4 frisos de ouro, capa longa e cruz dourada; 5 ombreiras e joelheiras douradas; 6 lenda em pérola, com aura.
+  - Animações: parado, preparo, golpe, dano, derrota (tomba para trás girando sobre os pés) e vitória.
+  - Prancha para aprovação: `docs/flashcards/conceitos/heroi-chibi-previa-1.png`. **Ainda não assado no jogo; esperando a aprovação do Tales.** Depois de aprovado: `python3 scripts/sprites/cavaleiro_chibi.py`, `python3 scripts/sprites/indice.py`, a escala do herói no `Hud.tsx` (o herói novo é menor no quadro: subir `CRESCE.heroi`) e `--mascote`.
+  - `cavaleiro2d.py` (adulto) ganhou cabeça desenhada à mão (carimbos), lâmina clara, biqueiras escuras e capa saindo do ombro, mas foi deixado de lado com a troca para o chibi.
+
+- **Ideias de cenário do Tales (14/10, referências na conversa):**
+  - clareira com cavaleiro de costas, montanha nevada ao fundo e mata em camadas azuladas;
+  - vilarejo com casa de pedra e madeira, trilha de terra, árvore grande e cerca;
+  - ruínas de templo na floresta, com ponte de madeira e água;
+  - vila vista de cima, com hortas, caminhos de pedra e rio.
+
+  Servem como estilo para os próximos cenários pintados: pixel art de camadas com perspectiva atmosférica.
+
 **Entregar ao Tales no chat** (o texto está em RESUMO-14-10.md):
 - o texto do aviso no topo;
 - a avaliação das conquistas;
