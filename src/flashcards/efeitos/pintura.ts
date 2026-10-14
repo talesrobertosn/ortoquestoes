@@ -10,6 +10,7 @@
  */
 import type { Cenario } from '../motor/bestiario'
 import { fbm, ruido } from './texturas'
+import { pintarFauna } from './fauna'
 
 export type Cena = Cenario | 'biblioteca'
 type Ctx = CanvasRenderingContext2D
@@ -1265,6 +1266,7 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena, clima: Clim
       if (aberta) { c.fillRect(x - px2 * 2, y - px2 * 2, px2 * 2, px2 * 2); c.fillRect(x + px2, y - px2 * 2, px2 * 2, px2 * 2); c.fillRect(x - px2, y, px2, px2); c.fillRect(x + px2, y, px2, px2) }
       else { c.fillRect(x - px2, y - px2 * 2, px2, px2 * 2); c.fillRect(x + px2, y - px2 * 2, px2, px2 * 2) }
     }
+    pintarFauna(c, cena, clima, t, w, h, dpr)
     if (gotas.length) {
       c.strokeStyle = 'rgba(200, 222, 255, .55)'; c.lineWidth = Math.max(1, dpr)
       c.beginPath()
