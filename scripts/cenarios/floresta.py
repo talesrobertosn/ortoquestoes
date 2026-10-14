@@ -23,10 +23,10 @@ from pintor import F, Tela, fbm, hexrgb, rampa, ruido  # noqa: E402
 
 CASCA = rampa(['#120c0a', '#1d1510', '#2a1f17', '#3a2c1f', '#4d3b28', '#655034', '#806844'])
 MUSGO_TRONCO = rampa(['#121f17', '#1a2c1d', '#233b24', '#2f4c2b', '#3e6031', '#527638'])
-CHAO = rampa(['#0d1a12', '#132517', '#1a311b', '#234020', '#2e5126', '#3c652c', '#507b35', '#6b9540', '#93b552'])
+CHAO = rampa(['#11261a', '#18361f', '#214826', '#2c5c2c', '#3a7232', '#4c8a38', '#64a240', '#83ba4c', '#a9d260'])
 FOLHA = rampa(['#0a1a12', '#102419', '#17311f', '#1f4026', '#2a522c', '#386833', '#4d7f3a', '#6c9a44', '#95b852'])
 PEDRA = rampa(['#1f2420', '#2c332d', '#3b443b', '#4d574b', '#62705e', '#7d8a74', '#9aa68c'])
-NEVOA = '#d9e6b8'
+NEVOA = '#e2efd2'
 
 
 def _r(s, j):
@@ -40,69 +40,95 @@ def suave(a, b, v):
 
 # ------------------------------------------------------------------ fundo
 def fundo(t: Tela, hz):
+    """Céu aberto (14/10/2026, pedido do Tales: fase do Golem mais verdejante, como a referência
+    da clareira com a montanha): céu claro com nuvens em pixel, montanha nevada ao fundo, serras
+    azuladas, fileiras de pinheiros que somem na distância e copas só nos cantos de cima."""
     W, H, x, y = t.W, t.H, t.x, t.y
     cx = W * 0.5
-    dist = np.hypot((x - cx) / (W * 0.5), (y - H * 0.28) / (H * 0.5))
-    k = np.clip(dist, 0, 1)
-    quente = np.array(hexrgb('#f6ebb8'), F); frio = np.array(hexrgb('#2f5a4a'), F)
-    t.rgb[:] = quente * (1 - k[..., None] ** 1.1) + frio * (k[..., None] ** 1.1); t.a[:] = 1
-    # fileiras de troncos: cada tronco afina para cima, inclina um pouco e some na copa
-    fileiras = [(17, 5, 0.22, 101), (27, 9, 0.42, 103), (41, 15, 0.66, 107)]
-    for i, (passo, larg, escur, s) in enumerate(fileiras):
+    chao_y = H * hz
+    # céu: azul claro em cima, quase creme perto do horizonte
+    k = np.clip(y / chao_y, 0, 1)
+    alto, baixo = np.array(hexrgb('#7fc2e4'), F), np.array(hexrgb('#e3f1e2'), F)
+    t.rgb[:] = alto * (1 - k[..., None] ** 0.9) + baixo * (k[..., None] ** 0.9); t.a[:] = 1
+    # nuvens: bolos de fbm com o alto aceso e a base em sombra lilás
+    nuv = fbm(x / 46, y / 15, 4, 31) + 0.35 * np.exp(-((y - H * 0.16) / (H * 0.12)) ** 2) - 0.2 * k
+    corpo = nuv > 0.68
+    sombra = corpo & (fbm(x / 46, (y - 3) / 15, 4, 31) + 0.35 * np.exp(-((y - 3 - H * 0.16) / (H * 0.12)) ** 2) - 0.2 * k < 0.72)
+    t.cor(corpo, '#ffffff', 0.92)
+    t.cor(corpo & ~sombra & (nuv < 0.7), '#e4eef6', 0.9)
+    t.cor(sombra & (y > H * 0.08), '#cad7e8', 0.8)
+    # montanha nevada ao fundo (um pico grande e um menor), cor fria e clara
+    def serra(base_y, picos, cor_alta, cor_baixa, neve, s, aspereza):
+        xs = np.arange(W) + 0.5
+        cands = [py_ + np.abs(xs - px_) * (base_y - py_) / (larg * W * 0.22) for px_, py_, larg in picos]
+        qual = np.argmin(np.stack(cands), axis=0)
+        topo = np.minimum(np.min(np.stack(cands), axis=0), base_y)
+        topo += (fbm(xs / 9, s, 3, s) - 0.5) * aspereza
+        m = y >= topo[None, :]
+        alt = np.clip((y - topo[None, :]) / max(base_y - topo.min(), 1), 0, 1)
+        # face iluminada à esquerda do pico que forma o topo da coluna, sombra à direita
+        px_col = np.array([picos[i][0] for i in qual], F)
+        lado = np.broadcast_to(np.sign(xs - px_col)[None, :], x.shape)
+        base_c = np.array(hexrgb(cor_baixa), F); alta_c = np.array(hexrgb(cor_alta), F)
+        c = alta_c * (1 - alt[..., None]) + base_c * alt[..., None]
+        c = c * (1 - (0.13 if neve else 0.0) * np.clip(lado, 0, 1)[..., None])
+        t.rgb[m] = c[m]
+        if neve:
+            borda = topo[None, :] + (base_y - topo.min()) * 0.22 + 7 * (fbm(x / 4, y / 9, 3, s + 1) - 0.5) + 3 * np.sin(x * 0.7)
+            n = m & (y < borda)
+            claro, escuro = np.array(hexrgb('#eef4fa'), F), np.array(hexrgb('#aebfd6'), F)
+            sombra = np.clip(lado, 0, 1)
+            t.rgb[n] = (claro * (1 - sombra[..., None]) + escuro * sombra[..., None])[n]
+    serra(chao_y * 0.86, [(cx + W * 0.06, H * 0.07, 1.25), (cx - W * 0.22, H * 0.17, 1.4), (cx + W * 0.36, H * 0.2, 1.5)],
+          '#93add0', '#6f8eb4', True, 3, 7)
+    serra(chao_y * 0.95, [(cx - W * 0.35, H * 0.22, 2.4), (cx + W * 0.15, H * 0.25, 2.8), (cx + W * 0.45, H * 0.21, 2.2)],
+          '#7c9fae', '#5f8796', False, 5, 6)
+    # fileiras de pinheiros: cada fileira mais perto, mais verde e mais escura (perspectiva do ar)
+    fileiras = [(chao_y * 0.97, 7, 18, '#6f9c98', 41), (chao_y * 1.0, 9, 24, '#5a8c7c', 43), (chao_y * 1.03, 11, 30, '#447a5e', 47)]
+    for base_y, passo, alt_max, cor, s in fileiras:
         n = int(W / passo) + 3
+        cc = np.array(hexrgb(cor), F)
         for j in range(n):
-            if _r(s + 9, j) < 0.25:
-                continue
-            px_ = (j - 1 + 0.8 * _r(s, j)) * passo
-            w = larg * (0.55 + 0.9 * _r(s + 1, j))
-            pe = H * (hz + 0.025 + 0.035 * i)
-            kk = np.clip(y / pe, 0, 1)
-            meia = w / 2 * (0.55 + 0.45 * kk) + 0.7 * w * suave(0.9, 1.0, kk) ** 2
-            inc = (_r(s + 3, j) - 0.5) * 0.06
-            u = (x - px_ - (pe - y) * inc) / np.maximum(meia, 0.5)
-            m = (np.abs(u) < 1) & (y < pe)
+            px_ = (j - 1 + _r(s, j)) * passo
+            alt = alt_max * (0.55 + 0.45 * _r(s + 1, j))
+            topo = base_y - alt
+            meia = np.clip((y - topo) / alt, 0, 1) * (passo * 0.75)
+            m = (y >= topo) & (y <= base_y + 2) & (np.abs(x - px_) <= meia)
             if not m.any():
                 continue
-            sombra = np.array(hexrgb('#18332a'), F)
-            f = (escur * (0.7 + 0.3 * np.clip(u * 0.9 + 0.3, 0, 1)) * (0.55 + 0.45 * kk))[m][..., None]
-            t.rgb[m] = t.rgb[m] * (1 - f) + sombra * f
-        nev = (0.26 - 0.07 * i) * np.clip(1.05 - dist, 0, 1) * (0.6 + 0.4 * fbm(x / 50, y / 16, 3, 90 + i))
-        t.velar(nev, NEVOA)
-    # chão distante, apagado pela névoa
-    longe = y > H * hz
-    t.tingir(longe, np.clip(0.55 + 0.2 * fbm(x / 30, y / 8, 3, 5), 0, 0.999), rampa(['#56805a', '#6e9566', '#88aa74']))
-    t.velar(np.clip(1 - (y - H * hz) / (H * 0.12), 0, 1) * 0.6 * longe, NEVOA)
-    # copa fechada no alto: bolhas de folhagem ao longo de um arco, deixando a abertura no meio
+            lado = np.clip((x - px_) / np.maximum(meia, 1), -1, 1)
+            camada = ((y - topo) % 4 < 1.1)   # galhos em degraus
+            f = (0.92 - 0.12 * lado - 0.08 * camada)[..., None]
+            t.rgb[m] = (cc * f)[m]
+        t.velar(np.clip(1 - (y - chao_y * 0.85) / (H * 0.25), 0, 1) * 0.12 * (y < base_y + 2), NEVOA)
+    # chão distante
+    longe = y > chao_y + 2
+    t.tingir(longe, np.clip(0.55 + 0.2 * fbm(x / 30, y / 8, 3, 5), 0, 0.999), rampa(['#4f8a52', '#66a058', '#86b866']))
+    t.velar(np.clip(1 - (y - chao_y) / (H * 0.1), 0, 1) * 0.35 * longe, NEVOA)
+    # copas nos cantos de cima, verdes e com a borda acesa pelo céu
     rng = np.random.default_rng(11)
     blobs = []
-    for i in range(60):
-        lado = rng.choice([-1, 1])
-        a = rng.uniform(0.0, 1.0)
-        bx = cx + lado * (W * 0.16 + a * W * 0.42)
-        by = H * (0.02 + 0.30 * a ** 1.4) * rng.uniform(0.3, 1.0) - H * 0.03
-        r = H * rng.uniform(0.05, 0.1) * (0.7 + 0.6 * a)
-        blobs.append((bx, by, r))
-    for i in range(14):
-        blobs.append((cx + rng.uniform(-W * 0.2, W * 0.2), -H * rng.uniform(0.04, 0.09), H * rng.uniform(0.05, 0.08)))
+    for lado in (-1, 1):
+        for i in range(16):
+            a = rng.uniform(0.0, 1.0)
+            bx = cx + lado * (W * 0.3 + a * W * 0.28)
+            by = H * (0.01 + 0.18 * a ** 1.3) * rng.uniform(0.3, 1.0) - H * 0.04
+            r = H * rng.uniform(0.05, 0.09) * (0.8 + 0.5 * a)
+            blobs.append((bx, by, r))
     cachos = []
     for bx, by, r in blobs:
-        for j in range(7):
-            a = rng.uniform(0.15, np.pi - 0.15)  # só a metade de baixo, que aparece contra o céu
+        for j in range(6):
+            a = rng.uniform(0.15, np.pi - 0.15)
             d = r * rng.uniform(0.82, 1.0)
-            cachos.append((bx + np.cos(a) * d * 1.1, by + np.sin(a) * d * 0.85, r * rng.uniform(0.18, 0.32)))
-    blobs = blobs + cachos
-    for i, (bx, by, r) in enumerate(blobs):
+            cachos.append((bx + np.cos(a) * d * 1.1, by + np.sin(a) * d * 0.85, r * rng.uniform(0.2, 0.34)))
+    for i, (bx, by, r) in enumerate(blobs + cachos):
         dd = np.hypot(x - bx, (y - by) * 1.2) / r
-        borda = 0.35 * fbm(x / 2.6, y / 2.6, 2, 500 + i)
-        m = dd < 1.05 - borda
+        m = dd < 1.05 - 0.35 * fbm(x / 2.6, y / 2.6, 2, 500 + i)
         if not m.any():
             continue
         dx, dy = (x - bx) / r, (y - by) / r
         nz = np.sqrt(np.clip(1 - dd ** 2, 0, 1))
-        # luz vinda da abertura (do meio, de cima): borda de dentro acesa
-        para_meio = np.clip(-(dx * np.sign(bx - cx)) * 0.6 + dy * 0.5, 0, 1)
-        perto = np.clip(1 - np.abs(bx - cx) / (W * 0.5), 0, 1)
-        luz = 0.06 + 0.22 * nz + 0.42 * para_meio * perto + 0.18 * (ruido(x * 0.8, y * 0.8, 600 + i) - 0.5)
+        luz = 0.2 + 0.3 * nz + 0.35 * np.clip(-dy * 0.6 - dx * 0.3, 0, 1) + 0.15 * (ruido(x * 0.8, y * 0.8, 600 + i) - 0.5)
         t.tingir(m, np.clip(luz, 0, 0.999), FOLHA, 0.8)
 
 
@@ -123,7 +149,22 @@ def chao(t: Tela, hz):
     luz = luz - 0.18 * (1 - prof) * (1 - clar)  # perto do horizonte, a névoa cobre depois
     t.tingir(m, np.clip(luz, 0, 0.999), CHAO, 0.8)
     # névoa baixa no fundo do chão
-    t.velar(np.clip(1 - prof / 0.35, 0, 1) * 0.5 * m, NEVOA)
+    t.velar(np.clip(1 - prof / 0.3, 0, 1) * 0.28 * m, NEVOA)
+
+
+def flores(t: Tela, hz, n, s=1):
+    """Florzinhas brancas e amarelas no musgo (mais nas bordas da clareira)."""
+    rng = np.random.default_rng(s)
+    W, H = t.W, t.H
+    for i in range(n):
+        fx, fy = rng.uniform(0, W), rng.uniform(H * (hz + 0.06), H)
+        if abs(fx - W / 2) < W * 0.18 and fy < H * 0.75 and rng.uniform() < 0.7:
+            continue
+        cor = ['#fff6d8', '#ffe066', '#f7b7d0', '#cfe9ff'][int(rng.integers(0, 4))]
+        xi, yi = int(fx), int(fy)
+        for dx, dy in ((0, 0), (1, 0), (-1, 0), (0, -1), (0, 1)):
+            if 0 <= xi + dx < W and 0 <= yi + dy < H:
+                t.rgb[yi + dy, xi + dx] = hexrgb(cor if (dx, dy) != (0, 0) else '#f0a830')
 
 
 def capim(t: Tela, hz, densidade, s=1):
@@ -384,7 +425,7 @@ def pintar(W: int, H: int, saida: Path, nome: str):
     fundo(f, hz)
     # troncos médios atrás da clareira: no fundo, para ganharem névoa e desfoque (dão escala)
     ob = Objetos(W, H)
-    medios = [(0.31, -0.02, 13, 21), (0.69, -0.02, 15, 23), (0.425, 0.0, 7, 25), (0.575, 0.0, 8, 27)] if not retrato else [(0.3, -0.02, 10, 21), (0.7, -0.02, 11, 23)]
+    medios = [(0.27, -0.02, 11, 21), (0.73, -0.02, 12, 23)] if not retrato else [(0.24, -0.02, 9, 21), (0.76, -0.02, 9, 23)]
     for fx, ft, w, s in medios:
         ob.tronco_medio(W * fx, H * ft, H * (hz + 0.035), w, s)
     a = ob.t.a > 0
@@ -395,6 +436,7 @@ def pintar(W: int, H: int, saida: Path, nome: str):
     m = Tela(W, H)
     chao(m, hz)
     capim(m, hz, 0.0035, s=5)
+    flores(m, hz, int(W * H * 0.0009), s=9)
     folhas_caidas(m, hz, int(W * H * 0.0012), s=7)
     luzes = []
     om = Objetos(W, H)
@@ -430,7 +472,7 @@ def pintar(W: int, H: int, saida: Path, nome: str):
     # ---------------- luz
     lz = Tela(W, H)
     brilho = np.zeros((H, W, 3), F)
-    for i, (fx, ang, larg, forca) in enumerate([(0.45, 0.3, 10, 0.5), (0.53, 0.22, 6, 0.4), (0.6, 0.36, 13, 0.45), (0.39, 0.26, 5, 0.3)]):
+    for i, (fx, ang, larg, forca) in enumerate([]):   # céu aberto: sem feixes de copa
         d = np.abs((lz.x - W * fx) - lz.y * np.tan(ang))
         feixe = np.exp(-(d / larg) ** 2) * np.clip(1 - lz.y / (H * 0.85), 0, 1) ** 1.5 * (0.6 + 0.4 * fbm(lz.y / 30, i, 2, 3)) * forca
         brilho += feixe[..., None] * np.array(hexrgb('#ffeab0'), F)

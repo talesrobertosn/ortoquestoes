@@ -395,6 +395,49 @@ try {
     assert.equal(m.migrarPartida(antiga).sala, null)
   }
 
+  // Rota de estudo (13/10/2026): Mapa do especialista (só a área) e Desvio de área (sem ela) pelos próximos 10.
+  {
+    const pool = Array.from({ length: 40 }, (_, i) => ({ ...cartas[i % cartas.length], id: 'rota-' + i, area: i % 2 ? 'Coluna' : 'Joelho', areaId: i % 2 ? 'coluna' : 'joelho', subtemas: i % 4 === 1 ? ['Cervical'] : ['Outro'], batalha: true }))
+    const mr = m.criarMotor(pool)
+    const areas = mr.areasDaRota()
+    assert.deepEqual(areas.map((a) => a.area).sort(), ['coluna', 'joelho'])
+    assert.ok(areas.find((a) => a.area === 'coluna').subtemas.some((t) => t.nome === 'Cervical'))
+    const ini = mr.novaPartida(7, { ids: pool.map((c) => c.id) }).estado
+    const comMapa = { ...ini, vida: 9999, vidaMax: 9999, inimigo: { ...ini.inimigo, vida: 99999, vidaMax: 99999 }, encaixes: [{ tipo: 'mapa', carga: 1 }, { tipo: 'desvio', carga: 1 }] }
+    // o poder não funciona pelo caminho genérico (precisa da área)
+    assert.equal(mr.usarPoder(comMapa, 'mapa').estado, comMapa)
+    let e = mr.usarRota(comMapa, 'mapa', 'coluna', ['Cervical']).estado
+    assert.equal(e.encaixes.find((x) => x.tipo === 'mapa'), undefined, 'a carga do mapa não foi gasta')
+    const vistos = [e.atual.id]
+    for (let k = 0; k < 12; k++) {
+      e = mr.responder({ ...e }, e.atual.ordem.indexOf(mr.carta(e.atual.id).certa)).estado
+      if (e.vida <= 0 || e.fase !== 'resposta') break
+      e = mr.seguir(e).estado
+      if (e.fase !== 'pergunta') break
+      vistos.push(e.atual.id)
+    }
+    assert.ok(vistos.length >= 11, 'poucas compras no teste do mapa: ' + vistos.length)
+    const primeiros = vistos.slice(0, 10).map((id) => mr.carta(id))
+    assert.equal(e.rota ?? null, null, 'a rota não terminou depois de 10')
+    assert.ok(primeiros.every((c) => c.areaId === 'coluna' && c.subtemas.includes('Cervical')), 'mapa deixou passar outra área ou subtema')
+    let d = mr.usarRota(comMapa, 'desvio', 'joelho').estado
+    const vd = [d.atual.id]
+    for (let k = 0; k < 9; k++) {
+      d = mr.responder({ ...d }, d.atual.ordem.indexOf(mr.carta(d.atual.id).certa)).estado
+      if (d.fase !== 'resposta') break
+      d = mr.seguir(d).estado
+      if (d.fase !== 'pergunta') break
+      vd.push(d.atual.id)
+    }
+    assert.equal(vd.length, 10)
+    assert.ok(vd.every((id) => mr.carta(id).areaId !== 'joelho'), 'desvio deixou passar a área escolhida')
+    // partidas salvas sem o campo continuam abrindo
+    assert.equal(m.migrarPartida({ ...ini, rota: undefined }).rota, undefined)
+    // Altar: Rota de estudo começa com os poderes
+    const comAltar = mr.novaPartida(9, { ids: pool.map((c) => c.id), talentos: { rota: 2 } }).estado
+    assert.ok(['mapa', 'desvio'].every((t) => comAltar.encaixes.some((x) => x.tipo === t)))
+  }
+
   console.log('Motor da Batalha: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })

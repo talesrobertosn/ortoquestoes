@@ -6,6 +6,91 @@
 
 Atualizado em 13/10/2026, 21h. Tudo o que foi feito está mesclado na base e publicado; não há PR aberto.
 
+## PAROU AQUI (14/10/2026): leia isto primeiro
+
+Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com o PR #227 aberto para a base `claude/pdfs-questoes-tp64dr`. O merge está autorizado pelo Tales quando o CI "verificar" ficar verde.
+
+**Já feito no PR #227:**
+- ordem da Cripta em 4 grupos;
+- poderes Mapa do especialista e Desvio de área, mais o talento "Rota de estudo";
+- 3 tentativas grátis na Cripta (SQL parte 19, que **o Tales precisa colar no Supabase**);
+- opiniões no painel do admin;
+- página de Flashcards reorganizada, com o cronograma em destaque;
+- volume inicial de 20%;
+- mapa do Golem consertado;
+- resumão em [RESUMO-14-10.md](RESUMO-14-10.md), que traz também o texto do aviso no topo e a proposta de conquistas.
+
+**Em andamento: herói refeito do zero (prioridade máxima).**
+- **Pedido do Tales:** abandonar toda a direção de arte anterior. Nada de rosto redondo, fofinho ou infantil. Seguir o conceito `docs/flashcards/conceitos/heroi-adulto-proposta.png`: cavaleiro adulto, elmo aberto de aço com pluma azul e friso dourado, cachecol azul, ombreiras e peitoral, cota de malha, tabardo azul com borda dourada, cintos de couro, capa vermelha, escudo azul em gota com cruz dourada, espada longa, grevas e botas marrons.
+- O herói também será o **mascote do site**. Ele pode ter poucos movimentos, desde que fique bonito.
+- **O que já existe:**
+  - O renderizador novo é `scripts/sprites/cavaleiro2d.py`: pixel art 2D em recortes, com ossos, sombreamento por normal, brilho de metal, paleta e contorno.
+  - Ele substitui o herói SDF de `scripts/sprites/heroi.py`, que foi rejeitado. As folhas `heroi-1..6` que estão no repositório ainda são as do SDF.
+- **Primeira prévia:** `docs/flashcards/conceitos/cavaleiro2d-previa-1.png` (estágio 4, parado). A leitura geral está certa, mas ainda está aquém do conceito. Falta:
+  - rosto e queixo maiores e mais adultos, com olho legível;
+  - elmo mais alto, com protetor de face;
+  - pluma mais cheia, em penas;
+  - postura mais aberta e heroica, com pernas afastadas;
+  - calça azul aparecendo entre o tabardo e as grevas;
+  - joelheiras douradas e grevas que leiam como aço;
+  - pés de aço em vez das botas brancas;
+  - braço da espada com manopla e couro;
+  - menos ruído no tabardo.
+- **Veredito do Tales sobre a prévia 1: "Tá feio".** Não basta ajustar detalhes. O boneco está rígido, de frente, com proporções de brinquedo e superfícies chapadas.
+  - Repense a figura inteira a partir da silhueta do conceito: três quartos, pernas abertas, peito largo, ombreiras grandes em camadas e cabeça pequena em relação ao corpo.
+  - Se os polígonos não chegarem lá, troque de método: desenhe à mão uma matriz de pixels por paleta, um quadro-chave grande (uns 96 px de altura do corpo), e derive dele poucas poses.
+  - **Não mescle o PR #227 com o herói de agora**: ele ainda tem o herói SDF rejeitado.
+- **Rodada 2 (14/10, mais tarde):** `cavaleiro2d.py` foi reescrito do zero.
+  - **Base:** as medidas vêm do conceito, com 1 px para cerca de 10 px dele. O quadro tem 136×170, com âncora (68,164).
+  - **Como desenha:** peças presas a ossos 2D, IK nas pernas para agachar e dar passos, e retoques do rosto pixel a pixel.
+  - **Prévia:** `docs/flashcards/conceitos/cavaleiro2d-previa-2.png` (estágio 4, parado). As proporções de herói já funcionam: pernas longas, ombreiras grandes, escudo, tabardo e capa.
+  - **Falta corrigir:**
+    1. **Elmo achatado.** O domo está baixo e a faixa dourada muito grossa. Deixar o domo mais alto e redondo, com a aba fina.
+    2. **Protetores de face.** O da esquerda ficou escuro e ilegível.
+    3. **Rosto pequeno e borrado.** Retocar os pixels: olhos, nariz e queixo.
+    4. **Pluma.** Parece um gancho; deve ser um tufo de penas mais cheio.
+    5. **Lâmina da espada quase preta.** Usar o aço claro, com um fio de luz.
+    6. **Biqueiras dos pés brancas demais.** Escurecer o aço, deixando o brilho só na borda.
+    7. **Metal em geral.** A ombreira direita está estourada de branco e o peitoral escuro demais. Ajustar a fórmula do metal em `tons()`.
+    8. **Capa.** Aparece só como uma bandeira embaixo do escudo; deve sair do ombro.
+    9. **Animações.** Conferir com `--anim preparo|golpe|dano|derrota|vitoria`. As poses usam ângulos absolutos `be_b`, `be_a` e `esp`.
+  - **Para ver um quadro:** `--so 0 --estagios 4 --escala 6`.
+- **Próximos passos:**
+  1. Iterar: `python3 scripts/sprites/cavaleiro2d.py --previa /tmp/x.png --estagios 4 --escala 5`. Depois ver todos os estágios (`--estagios 1,2,3,4,5,6`) e as animações (`--anim golpe|dano|derrota|vitoria|preparo`).
+  2. Assar: `python3 scripts/sprites/cavaleiro2d.py`, depois `python3 scripts/sprites/indice.py`.
+  3. Conferir a escala e a âncora no `Hud.tsx`. O quadro agora é 120×132, com âncora (56,126); `escalaAssada` usa `CRESCE.heroi`.
+  4. Gerar o mascote (`--mascote`) e a arte da capa (`python3 scripts/cenarios/promo.py`).
+  5. Capturas com Playwright em 1400×860, 390×844 e 844×390. Mostrar ao Tales antes de mesclar.
+  6. Atualizar a linha "Arte" em RESUMO-14-10.md.
+
+- **Rodada 3 (14/10, noite): mudança de direção pedida pelo Tales.** Ele mandou referências de cavaleiros em pixel art e escolheu **"Chibi como a 3ª"**: elmo grande, redondo e fechado com viseira, pluma vermelha curta, capa vermelha, aço em poucos tons e contorno escuro. Isso substitui o pedido anterior de "nada fofinho".
+  - Gerador novo: `scripts/sprites/cavaleiro_chibi.py`, em pixel art nativa. As peças são formas simples com tons em faixas (luz de cima e da esquerda), cada uma com contorno, empilhadas. O quadro tem 80×64, com âncora (39,60), e o cavaleiro tem cerca de 57 px de altura.
+  - Estágios: 1 escudo de madeira e pluma curta; 2 escudo de aço com cruz vermelha; 3 capa curta; 4 frisos de ouro, capa longa e cruz dourada; 5 ombreiras e joelheiras douradas; 6 lenda em pérola, com aura.
+  - Animações: parado, preparo, golpe, dano, derrota (tomba para trás girando sobre os pés) e vitória.
+  - Prancha para aprovação: `docs/flashcards/conceitos/heroi-chibi-previa-1.png`. **Versão rica (pedido "mais detalhe, mais efeitos, carismático"):** `heroi-chibi-previa-2.png`. O quadro passa a 136×108 com âncora (60,101); traz rampas com desvio de matiz, especular, contorno seletivo, luz de recorte, olhos acesos na viseira (piscam no parado e ficam alaranjados no dano), pluma em penas, tabardo azul com cruz dourada, escudo com brasão e gema, rastro de golpe, faíscas, cintilações e aura com partículas na lenda. **Ainda não assado no jogo; esperando a aprovação do Tales.** Depois de aprovado: `python3 scripts/sprites/cavaleiro_chibi.py`, `python3 scripts/sprites/indice.py`, a escala do herói no `Hud.tsx` (o herói novo é menor no quadro: subir `CRESCE.heroi`) e `--mascote`.
+  - `cavaleiro2d.py` (adulto) ganhou cabeça desenhada à mão (carimbos), lâmina clara, biqueiras escuras e capa saindo do ombro, mas foi deixado de lado com a troca para o chibi.
+
+- **Ideias de cenário do Tales (14/10, referências na conversa):**
+  - clareira com cavaleiro de costas, montanha nevada ao fundo e mata em camadas azuladas;
+  - vilarejo com casa de pedra e madeira, trilha de terra, árvore grande e cerca;
+  - ruínas de templo na floresta, com ponte de madeira e água;
+  - vila vista de cima, com hortas, caminhos de pedra e rio.
+
+  Servem como estilo para os próximos cenários pintados: pixel art de camadas com perspectiva atmosférica.
+
+**Entregar ao Tales no chat** (o texto está em RESUMO-14-10.md):
+- o texto do aviso no topo;
+- a avaliação das conquistas;
+- o que falta:
+  - bestiário antigo;
+  - Torre e Salão;
+  - variantes do dragão;
+  - contador da rota;
+  - áreas do baralho de demonstração;
+  - emenda da faixa "sala";
+  - som no celular;
+  - parte 19 no Supabase.
+
 ## Mensagem para colar no agente
 
 > Leia AGENTS.md, docs/flashcards/CONTINUAR.md e docs/flashcards/PASSAGEM-ETAPA1.md no repositório

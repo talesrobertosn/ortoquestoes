@@ -16,6 +16,7 @@
  */
 
 import { recurso } from '../../config'
+import { ler } from '../../estado/armazenamento'
 
 export type Som =
   | 'hover' | 'selecao' | 'giro' | 'compra' | 'confirmar' | 'abrir' | 'fechar' | 'transicao'
@@ -46,7 +47,16 @@ const familiaSom = (t: Timbre) => (t && FAMILIA_SOM[t]) || t
 let ctx: AudioContext | null = null
 let saida: GainNode, efeitos: GainNode, ambiente: GainNode, musica: GainNode, reverb: ConvolverNode, envio: GainNode
 let ligado = true
-let volumeGeral = 0.2
+/**
+ * Volume geral: 20% na primeira vez (pedido do Tales, 14/10/2026); depois vale o que a pessoa
+ * escolheu, salvo nos ajustes ('flashcards:ajustes', campo volume) e lido de novo a cada entrada.
+ */
+const VOLUME_INICIAL = 0.2
+function volumeSalvo(): number {
+  const v = ler<{ volume?: unknown }>('flashcards:ajustes', {}).volume
+  return typeof v === 'number' && Number.isFinite(v) ? Math.max(0, Math.min(1, v)) : VOLUME_INICIAL
+}
+let volumeGeral = volumeSalvo()
 let volEfeitos = 0.8, volAmbiente = 0.35, volMusica = 0.45
 let ambienteAtual: { nome: Ambiente; parar: () => void } | null = null
 let ambientePedido: Ambiente | null = null
@@ -84,7 +94,8 @@ function criar() {
 }
 
 export const volumeDaSessao = () => volumeGeral
-export function reiniciarVolume() { volumeGeral = 0.2; aplicarVolumes() }
+/** Ao sair e voltar, retoma o volume salvo (ou os 20% iniciais). */
+export function reiniciarVolume() { volumeGeral = volumeSalvo(); aplicarVolumes() }
 
 function aplicarVolumes() {
   if (!ctx) return

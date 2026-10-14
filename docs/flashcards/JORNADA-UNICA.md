@@ -2,6 +2,27 @@
 
 Diretriz do Tales: retirar a escolha Fácil/Normal/Difícil e o ranking por dificuldade; começar com os flashcards de questões mais acertadas pela turma, depois questões que a pessoa acertou, depois as que errou, e finalmente misturar. Sortear dentro de cada grupo. Retirar a Torre da entrada e deixar Cripta e Biblioteca, com apresentação mais acolhedora. O cronograma de flashcards fica na central de Flashcards, sem o atalho no cronograma de questões. Enviar capturas reais ocasionalmente durante mudanças visuais, no computador e/ou celular.
 
+## Reforço do Tales (13/10/2026, noite)
+
+**Ordem dos grupos:** a Cripta começa sempre fácil e fica mais difícil, nesta ordem:
+1. questões de **maior acerto da turma**;
+2. questões que a pessoa **já fez e acertou**;
+3. questões que a pessoa **já fez e errou**;
+4. **questões novas**, que ela nunca fez nem viu em flashcard.
+
+Depois vem a mistura livre. Dentro de cada grupo o sorteio é completamente aleatório (pela semente). O que é fácil é subjetivo, por isso os grupos 2 a 4 usam o histórico da própria pessoa. Implementado em `motor/selecao.ts`, com 8 flashcards por grupo (`POR_GRUPO`), e testado em `fixtures/testar_progressao_flashcards.mjs`. O grupo 4 entrou nesta data; antes, depois das erradas vinha direto a mistura.
+
+**Poderes de rota de estudo:**
+- **Mapa do especialista** (raro): a pessoa escolhe uma área e, se quiser, subtemas dela, entre os 10 com mais flashcards. Os próximos 10 flashcards vêm dali.
+- **Desvio de área** (incomum): a pessoa escolhe uma área. Os próximos 10 flashcards não são dela.
+
+**Onde aparecem:** como recompensa, na loja da Caixeira e no Altar do Saber. O talento "Rota de estudo" tem dois níveis: o 1 começa a partida com o Desvio, e o 2 também com o Mapa.
+
+**Como funcionam:**
+- Se o flashcard da mesa não serve, ele volta ao baralho e outro entra, com o mesmo golpe previsto.
+- Dentro da rota, a ordem dos grupos continua valendo, porque a busca usa a mesma seleção com um filtro.
+- O motor guarda a rota em `Partida.rota`. Partidas antigas abrem normalmente.
+
 ## Implementação
 
 - Uma regra de combate para partidas novas, a antiga base Normal. Não há seletor ou selo de nível na partida. Os valores antigos ficam no motor somente para abrir partidas salvas, sem apagar progresso ou corridas históricas.

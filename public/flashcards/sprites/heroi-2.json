@@ -1,21 +1,21 @@
 {
- "largura": 112,
- "altura": 120,
+ "largura": 136,
+ "altura": 108,
  "colunas": 6,
  "ancora": [
-  54,
-  114
+  60,
+  101
  ],
  "animacoes": {
   "parado": {
    "linha": 0,
    "quadros": 4,
-   "ms": 240
+   "ms": 260
   },
   "preparo": {
    "linha": 1,
    "quadros": 3,
-   "ms": 90
+   "ms": 95
   },
   "golpe": {
    "linha": 2,
@@ -35,13 +35,13 @@
   "vitoria": {
    "linha": 5,
    "quadros": 4,
-   "ms": 150
+   "ms": 160
   }
  },
  "caixa": [
-  25,
-  29,
-  54,
-  88
+  17,
+  7,
+  75,
+  96
  ]
 }

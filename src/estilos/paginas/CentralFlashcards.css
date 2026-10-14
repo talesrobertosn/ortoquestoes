@@ -199,3 +199,24 @@
 .cf-opiniao textarea { height: 80px; }
 .cf-opiniao .cf-form__botoes { position: sticky; bottom: -32px; background: var(--superficie); padding-bottom: 12px; }
 @media(max-width:640px){.cf-opiniao .cf-form__botoes{bottom:-24px;}}
+
+/* Central reorganizada (14/10/2026): revisões de hoje e cronograma lado a lado, cronograma em destaque. */
+.cf-painel { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 1rem; align-items: stretch; }
+.cf-painel .cf-hoje__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cf-crono { display: grid; align-content: start; gap: 0.75rem; padding: 1.1rem; border: 1px solid var(--verdete); border-radius: var(--raio-cartao);
+  background: linear-gradient(160deg, var(--verdete-veu), var(--superficie) 70%); box-shadow: var(--sombra-media); }
+.cf-crono h2 { display: flex; align-items: center; gap: 0.5rem; margin: 0; font-size: 1.2rem; color: var(--verdete-tinta); }
+.cf-crono p { margin: 0; }
+.cf-crono__data { font-size: 1rem; }
+.cf-crono__meta { display: grid; grid-template-columns: 1fr auto; gap: 0.35rem; align-items: baseline; }
+.cf-crono__meta span { font-weight: 600; }
+.cf-crono__meta b { font-size: 1.6rem; line-height: 1; }
+.cf-crono__meta i { grid-column: 1 / -1; display: block; height: 10px; border-radius: 999px; background: var(--superficie-2); overflow: hidden; box-shadow: inset 0 0 0 1px var(--traco); }
+.cf-crono__meta em { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--verdete), var(--ouro, #d9a040)); }
+.cf-crono__botoes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
+.cf-crono--vazio { border-style: dashed; }
+.cf > .cf-aviso { border-color: var(--traco); background: var(--superficie); }
+@media (max-width: 860px) {
+  .cf-painel { grid-template-columns: minmax(0, 1fr); }
+  .cf-painel .cf-crono { order: -1; }
+}

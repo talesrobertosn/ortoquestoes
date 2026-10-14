@@ -17,7 +17,7 @@
  * abre as bênçãos em DUPLA (lendárias), que combinam os dois estilos.
  */
 
-export type TipoPoder = 'escudo' | 'imortal' | 'pocao' | 'pista' | 'duplo' | 'vital' | 'devastador' | 'eco' | 'barreira' | 'foco' | 'ruptura' | 'ampulheta' | 'trocar'
+export type TipoPoder = 'escudo' | 'imortal' | 'pocao' | 'pista' | 'duplo' | 'vital' | 'devastador' | 'eco' | 'barreira' | 'foco' | 'ruptura' | 'ampulheta' | 'trocar' | 'mapa' | 'desvio'
 export type TipoReliquia =
   | 'bisturi' | 'gesso' | 'amuleto' | 'lupa' | 'coracao' | 'vigor' | 'placas' | 'residente'
   | 'insignia' | 'selo' | 'mestre' | 'roubo' | 'livro' | 'marca' | 'preceptor' | 'ritual'
@@ -89,6 +89,8 @@ export const RECOMPENSAS: Record<Recompensa, Descricao> = {
   // ---------- Estratégia
   pista: d({ id: 'pista', nome: 'Pergaminho da pista', texto: 'Use quando quiser: elimina uma alternativa errada. O acerto conta como assistido.', detalhe: 'Ativa · 2 cargas por escolha, até 5 · sempre sobram duas alternativas.', icone: 'pergaminho', cor: '#e8d28a', tipo: 'poder', categoria: 'estrategia', raridade: 'comum', cargas: 2, maximo: 5, ativo: true, v: {} }),
   ampulheta: d({ id: 'ampulheta', nome: 'Ampulheta do plantão', texto: 'Use quando quiser: o adversário recomeça a contar a paciência (e perde a Fúria).', detalhe: 'Ativa · 1 carga, até 2 · boa contra adversários de muita vida.', icone: 'ampulheta', cor: '#e8c070', tipo: 'poder', categoria: 'estrategia', raridade: 'incomum', cargas: 1, maximo: 2, ativo: true, v: {} }),
+  mapa: d({ id: 'mapa', nome: 'Mapa do especialista', texto: 'Use quando quiser: escolha uma área (e, se quiser, subtemas). Os próximos 10 flashcards vêm dela.', detalhe: 'Ativa · 1 carga, até 2 · troca o flashcard da mesa se ele for de outra área.', icone: 'bussola', cor: '#7fd8b0', tipo: 'poder', categoria: 'estrategia', raridade: 'rara', cargas: 1, maximo: 2, ativo: true, v: { flashcards: 10 } }),
+  desvio: d({ id: 'desvio', nome: 'Desvio de área', texto: 'Use quando quiser: escolha uma área. Os próximos 10 flashcards não serão dela.', detalhe: 'Ativa · 1 carga, até 2 · troca o flashcard da mesa se ele for dessa área.', icone: 'desvio', cor: '#ffb07a', tipo: 'poder', categoria: 'estrategia', raridade: 'incomum', cargas: 1, maximo: 2, ativo: true, v: { flashcards: 10 } }),
   trocar: d({ id: 'trocar', nome: 'Carta na manga', texto: 'Use quando quiser: troca o flashcard da mesa por outro. Ele volta para o fim do baralho.', detalhe: 'Ativa · 1 carga, até 2 · não conta como resposta nem como erro.', icone: 'cartas', cor: '#c8a0ff', tipo: 'poder', categoria: 'estrategia', raridade: 'rara', cargas: 1, maximo: 2, ativo: true, v: {} }),
   // ---------- Relíquias
   bisturi: d({ id: 'bisturi', nome: 'Lâmina da precisão', texto: '+6 de dano nos acertos difíceis.', detalhe: 'Relíquia única · a partida toda.', icone: 'bisturi', cor: '#9fe0ff', tipo: 'reliquia', categoria: 'ataque', raridade: 'comum', v: { bonus: 6 } }),

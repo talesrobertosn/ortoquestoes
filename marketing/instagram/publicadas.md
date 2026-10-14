@@ -17,3 +17,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | conceitos-basicos-0079 | Osteomielite do calcâneo após prego no tênis, Pseudomonas (TARO 2022) | posts/2026-10-12-cupom-questao |
 | quadril-0077 | Testes da síndrome do piriforme, Pace e Freiberg (TEOT 2023) | posts/2026-10-12-var-piriforme |
 | trauma-0192 | Zonas de DENIS no sacro (TEOT 2022), só como tela de exemplo no notebook | posts/2026-10-12-story-treine-gratis |
+| ombro-cotovelo-0019 (= mao-0032) | Nervo supraescapular e incisura supraescapular (TARO 2021) | posts/2026-10-13-cofre-supraescapular |

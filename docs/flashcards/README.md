@@ -2,6 +2,8 @@
 
 **Último ajuste visual e de áudio (13/10/2026):** [Polimento do beta](POLIMENTO-AUDIO-OPINIAO.md): opinião redesenhada, controle vertical com início em 20%, camadas do cenário alinhadas, capa integrada e proposta documentada de herói adulto.
 
+**Resumo de 14/10/2026:** [RESUMO-14-10.md](RESUMO-14-10.md): estado atual, o que falta, conquistas, aviso do topo, 3 tentativas grátis da Cripta (parte 19 do SQL) e herói adulto.
+
 **Orientação mais recente:** [Jornada única](JORNADA-UNICA.md), 13/10/2026: ranking sem níveis, progressão por turma e histórico pessoal, entrada com Cripta/Biblioteca e cronograma dentro de Flashcards. As seções antigas abaixo são histórico quando conflitarem.
 
 Ponto de partida para quem for continuar este projeto: Claude, ChatGPT Codex ou outro agente.

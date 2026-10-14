@@ -1,7 +1,13 @@
 /**
- * Jornada única: oito sorteios no grupo de maior acerto da turma, oito nas
- * questões acertadas pelo usuário, oito nas erradas e, depois, mistura livre.
- * Grupos vazios são pulados. A ordem varia com a semente, sem reposição no lote.
+ * Jornada única (diretriz do Tales, 13/10/2026): a Cripta começa fácil e fica
+ * mais difícil, sempre nesta ordem de grupos:
+ *   1. questões de maior acerto da turma;
+ *   2. questões que a pessoa já fez e acertou;
+ *   3. questões que a pessoa já fez e errou;
+ *   4. questões novas (que a pessoa nunca fez nem viu em flashcard);
+ * e só depois a mistura livre. Dentro de cada grupo o sorteio é uniforme
+ * (completamente aleatório, pela semente). Grupos vazios são pulados, e um
+ * flashcard nunca repete no lote.
  * As faixas vêm de estatísticas reais com pelo menos três respondentes.
  * A rodada persistida evita reiniciar a introdução a cada reposição de baralho.
  */
@@ -26,7 +32,13 @@ export interface ContextoSelecao {
   turma?: ReadonlyMap<string, { respondentes: number; acerto: number }> | null
   inicio?: number
   faixas?: ReadonlyMap<string, 1 | 2 | 3> | null
+  /** Filtro extra (poderes Mapa do especialista e Desvio de área). */
+  aceita?: (c: Flashcard) => boolean
 }
+
+/** Flashcards sorteados em cada grupo antes de passar ao seguinte. */
+export const POR_GRUPO = 8
+export const GRUPOS_DA_JORNADA = ['maior acerto da turma', 'acertadas por você', 'erradas por você', 'novas'] as const
 
 const PESO_RARIDADE: Record<Raridade, number> = { lendaria: 4, epica: 2.8, rara: 1.9, comum: 1.3 }
 
@@ -45,9 +57,9 @@ export function pesoDoFlashcard(c: Flashcard, ctx: ContextoSelecao, posRecente: 
 }
 
 /** Flashcards que a Batalha pode usar (alternativas curtas, validados) dentro dos filtros. */
-export function elegiveisParaBatalha(pool: Flashcard[], ctx: Pick<ContextoSelecao, 'areas' | 'soImagem'>) {
+export function elegiveisParaBatalha(pool: Flashcard[], ctx: Pick<ContextoSelecao, 'areas' | 'soImagem' | 'aceita'>) {
   return pool.filter((c) => c.batalha !== false && c.opcoes.length >= 2
-    && (!ctx.areas?.length || ctx.areas.includes(c.areaId ?? '')) && (!ctx.soImagem || !!c.imagem))
+    && (!ctx.areas?.length || ctx.areas.includes(c.areaId ?? '')) && (!ctx.soImagem || !!c.imagem) && (!ctx.aceita || ctx.aceita(c)))
 }
 
 /**
@@ -69,14 +81,16 @@ export function montarBaralho(pool: Flashcard[], ctx: ContextoSelecao, semente: 
     (c: Flashcard) => { const t=ctx.turma?.get(c.questao); return ctx.faixas?.get(c.questao) === 1 || (!!t && t.respondentes >= 3 && t.acerto >= corte) },
     (c: Flashcard) => ctx.questoes?.[c.questao]?.c === true,
     (c: Flashcard) => ctx.questoes?.[c.questao]?.c === false,
+    (c: Flashcard) => !ctx.questoes?.[c.questao] && !ctx.registros[c.id],
   ]
+  const nGrupos = grupos.length
   let inicio = ctx.inicio ?? 0
   while (saida.length < n) {
-    const fase = Math.floor(inicio / 8)
-    const lista = elegiveis.filter(c => !usados.has(c.id) && (fase >= 3 || grupos[fase](c)))
+    const fase = Math.floor(inicio / POR_GRUPO)
+    const lista = elegiveis.filter(c => !usados.has(c.id) && (fase >= nGrupos || grupos[fase](c)))
     if (!lista.length) {
-      if (fase >= 3) break
-      inicio = (fase + 1) * 8
+      if (fase >= nGrupos) break
+      inicio = (fase + 1) * POR_GRUPO
       continue
     }
     const [u, proxima] = sortear(s); s = proxima

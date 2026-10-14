@@ -8,48 +8,51 @@ import { Ator } from './Hud'
 import { Sprite } from './Sprite'
 
 /**
- * Salas entre os andares (inspiração: as portas do Hades). Cada porta mostra
- * o que vem depois do próximo confronto; algumas levam à Caixeira do Arsenal
- * ou ao Velho Preceptor.
+ * Portas da Cripta, refeitas em 14/10/2026 (pedido do Tales: "difícil de entender o que é e para
+ * que serve cada porta"). Cada porta tem identidade própria (arco, cor, placa e o que se vê lá dentro
+ * ao entreabrir) e uma ficha clara: ANTES (há luta? contra quem?) e DEPOIS (o que você ganha).
  */
+interface InfoPorta { nome: string; depois: string; explica: string; icone: string; cor: string; vista: string }
 
-const PORTA_INFO: Record<string, { nome: string; texto: string; icone: string; cor: string }> = {
-  misto: { nome: 'Recompensa', texto: 'Um poder, uma relíquia ou um evento', icone: 'brasao', cor: '#e3b04b' },
-  poder: { nome: 'Poder', texto: 'Três poderes para os encaixes', icone: 'espada', cor: '#b07cff' },
-  reliquia: { nome: 'Relíquia', texto: 'Três relíquias que duram a partida', icone: 'amuleto', cor: '#ffcf5a' },
-  cura: { nome: 'Cura', texto: 'Vida, corações e fogueira', icone: 'coracao2', cor: '#ff6a7a' },
-  ouro: { nome: 'Tesouro', texto: 'Moedas para a Caixeira', icone: 'moeda', cor: '#ffd24a' },
-  loja: { nome: 'Caixeira do Arsenal', texto: 'Compre com suas moedas', icone: 'bolsa', cor: '#5fdc7a' },
-  sabio: { nome: 'Velho Preceptor', texto: 'Um conselho de quem já passou por aqui', icone: 'lanterna', cor: '#a8d8ff' },
-  chefe: { nome: 'Chefe', texto: 'O guardião deste andar', icone: 'coroa', cor: '#ff5a3c' },
-  ferreiro: { nome: 'Mestre Ferreiro', texto: 'Reforce o equipamento com moedas', icone: 'bigorna', cor: '#ff9a4a' },
-  curandeira: { nome: 'Irmã do Calo Ósseo', texto: 'Cura e uma lição de graça', icone: 'frasco', cor: '#ff8ab0' },
-  bau: { nome: 'Baú esquecido', texto: 'Tesouro... ou armadilha', icone: 'bolsa', cor: '#e8b85a' },
-  secreta: { nome: 'Parede rachada', texto: 'Uma sala que quase ninguém acha', icone: 'porta', cor: '#c9a0ff' },
-  evento: { nome: 'Encontro', texto: 'Algo aconteceu no caminho', icone: 'lanterna', cor: '#9ad8ff' },
+const PORTA_INFO: Record<string, InfoPorta> = {
+  misto: { nome: 'Surpresa', depois: 'Um prêmio ao acaso', explica: 'Pode ser um poder, uma relíquia ou um evento.', icone: 'brasao', cor: '#e3b04b', vista: 'surpresa' },
+  poder: { nome: 'Poder', depois: 'Escolha 1 de 3 poderes', explica: 'Poder é uma habilidade que você usa na batalha.', icone: 'espada', cor: '#b07cff', vista: 'runas' },
+  reliquia: { nome: 'Relíquia', depois: 'Escolha 1 de 3 relíquias', explica: 'Relíquia é um bônus que vale a partida toda.', icone: 'amuleto', cor: '#ffcf5a', vista: 'altar' },
+  cura: { nome: 'Cura', depois: 'Recupere vida', explica: 'Vida, corações e um descanso na fogueira.', icone: 'coracao2', cor: '#ff6a7a', vista: 'fogueira' },
+  ouro: { nome: 'Tesouro', depois: 'Ganhe moedas', explica: 'Moedas compram itens com a Caixeira.', icone: 'moeda', cor: '#ffd24a', vista: 'moedas' },
+  loja: { nome: 'Caixeira do Arsenal', depois: 'Compre com suas moedas', explica: 'Poderes, relíquias e poção de cura.', icone: 'bolsa', cor: '#5fdc7a', vista: 'loja' },
+  sabio: { nome: 'Velho Preceptor', depois: 'Uma ajuda grátis', explica: 'Ele oferece um conselho à sua escolha.', icone: 'lanterna', cor: '#a8d8ff', vista: 'lanterna' },
+  chefe: { nome: 'Chefe', depois: 'Prêmio de chefe', explica: 'Vencer o guardião abre o próximo trecho.', icone: 'coroa', cor: '#ff5a3c', vista: 'chefe' },
+  ferreiro: { nome: 'Mestre Ferreiro', depois: 'Reforce um poder', explica: 'Troque moedas por equipamento melhor.', icone: 'bigorna', cor: '#ff9a4a', vista: 'forja' },
+  curandeira: { nome: 'Irmã do Calo Ósseo', depois: 'Cura e uma lição', explica: 'Recupere vida e ganhe uma dica.', icone: 'frasco', cor: '#ff8ab0', vista: 'fogueira' },
+  bau: { nome: 'Baú esquecido', depois: 'Tesouro... ou armadilha', explica: 'Arrisque: pode valer muito.', icone: 'bolsa', cor: '#e8b85a', vista: 'moedas' },
+  secreta: { nome: 'Parede rachada', depois: 'Sala secreta', explica: 'Uma sala que quase ninguém acha.', icone: 'porta', cor: '#c9a0ff', vista: 'runas' },
+  evento: { nome: 'Encontro', depois: 'Algo no caminho', explica: 'Um encontro com escolhas.', icone: 'lanterna', cor: '#9ad8ff', vista: 'lanterna' },
 }
 
-function infoDaPorta(p: Porta) {
+function infoDaPorta(p: Porta): InfoPorta {
   if (p.tipo === 'loja' || p.tipo === 'sabio') return PORTA_INFO[p.tipo]
   if (p.tipo === 'sala') return PORTA_INFO[p.sala]
   if (p.tipo === 'chefe') return PORTA_INFO.chefe
   if (p.recompensa === 'bencao' && p.patrono) {
     const pat = PATRONOS[p.patrono]
-    return { nome: pat.nome, texto: `Bênção: ${pat.titulo.toLowerCase()}`, icone: pat.icone, cor: pat.cor }
+    return { nome: pat.nome, depois: 'Bênção: escolha 1 de 3', explica: pat.estilo, icone: pat.icone, cor: pat.cor, vista: 'bencao' }
   }
   return PORTA_INFO[p.recompensa]
 }
 
 export function Portas({ partida, aoEntrar, rapido }: { partida: Partida; aoEntrar: (k: number) => void; rapido: boolean }) {
   const [aberta, definirAberta] = useState<number | null>(null)
+  const [foco, definirFoco] = useState<number | null>(null)
   const proximo = partida.andar + 1
   const chefe = andarDeChefe(proximo, partida.modo)
   const adversario = inimigoDoAndar(proximo, partida.sementeBase, partida.modo).inimigo
+  const vidaBaixa = partida.vida <= partida.vidaMax * 0.45
   const entrar = useCallback((k: number) => {
     if (aberta !== null) return
     definirAberta(k)
     tocar('porta')
-    window.setTimeout(() => aoEntrar(k), rapido ? 220 : 620)
+    window.setTimeout(() => aoEntrar(k), rapido ? 220 : 700)
   }, [aberta, aoEntrar, rapido])
   useEffect(() => {
     const aoTeclar = (e: KeyboardEvent) => { const k = Number(e.key); if (k >= 1 && k <= partida.portas.length) entrar(k - 1) }
@@ -58,21 +61,46 @@ export function Portas({ partida, aoEntrar, rapido }: { partida: Partida; aoEntr
   }, [entrar, partida.portas.length])
   return (
     <div className={`fc-veu fc-veu--portas${aberta !== null ? ' fc-veu--abrindo' : ''}`} role="dialog" aria-modal="true" aria-labelledby="fc-portas-titulo">
-      <div className="fc-corredor">
-        <header className="fc-corredor__cabeca">
-          <h2 id="fc-portas-titulo">{chefe ? 'A porta do chefe' : 'Escolha a porta'}</h2>
-          <p>Andar {proximo}{partida.modo === 'torre' ? ' de 100' : ''}{chefe ? ` · ${adversario.nome}` : ' · o símbolo mostra a recompensa depois da luta'}</p>
+      <div className="fc-encruzilhada">
+        <header className="fc-encruzilhada__cabeca">
+          <span className="fc-encruzilhada__andar">Andar {proximo}{partida.modo === 'torre' ? ' de 100' : ''}</span>
+          <h2 id="fc-portas-titulo">{chefe ? 'O guardião espera' : 'Encruzilhada'}</h2>
+          <p>{chefe
+            ? <>Atrás da porta vermelha está <b>{adversario.nome}</b>. Vencer o chefe rende um prêmio maior.</>
+            : <>Escolha o caminho. Nas portas com <b>luta</b>, você enfrenta <b>{adversario.nome}</b> e ganha o prêmio da porta ao vencer. As outras são paradas sem luta.</>}</p>
         </header>
-        <div className="fc-portas">
+        <div className="fc-portais">
           {partida.portas.map((p, k) => {
             const info = infoDaPorta(p)
+            const luta = p.tipo === 'combate' || p.tipo === 'chefe'
+            const dica = (p.tipo === 'combate' && p.recompensa === 'cura' && vidaBaixa) || (p.tipo === 'sala' && p.sala === 'curandeira' && vidaBaixa)
+              ? 'Vida baixa: boa escolha'
+              : p.tipo === 'loja' ? `Você tem ${partida.ouro} moedas`
+              : null
+            const estado = aberta === k ? ' fc-portal--aberta' : aberta !== null ? ' fc-portal--recua' : foco === k ? ' fc-portal--foco' : ''
             return (
-              <button key={k} type="button" className={`fc-porta fc-porta--${p.tipo}${aberta === k ? ' fc-porta--aberta' : aberta !== null ? ' fc-porta--recua' : ''}`} style={{ ['--cor' as string]: info.cor, ['--i' as string]: k }}
-                onClick={() => entrar(k)} onPointerEnter={() => tocar('hover')} autoFocus={k === 0} disabled={aberta !== null && aberta !== k}>
-                <span className="fc-porta__arco" aria-hidden="true"><span className="fc-porta__folha fc-porta__folha--e" /><span className="fc-porta__folha fc-porta__folha--d" /><span className="fc-porta__luz" /></span>
-                <span className="fc-porta__selo"><Sprite nome={info.icone} /></span>
-                <strong>{info.nome}</strong>
-                <small>{info.texto}</small>
+              <button key={k} type="button" className={`fc-portal fc-portal--${p.tipo} fc-portal--vista-${info.vista}${estado}`}
+                style={{ ['--cor' as string]: info.cor, ['--i' as string]: k }}
+                onClick={() => entrar(k)} onPointerEnter={() => { tocar('hover'); definirFoco(k) }} onPointerLeave={() => definirFoco(null)}
+                onFocus={() => definirFoco(k)} onBlur={() => definirFoco(null)} autoFocus={k === 0} disabled={aberta !== null && aberta !== k}
+                aria-label={`${info.nome}. ${luta ? `Luta contra ${adversario.nome}` : 'Sem luta'}. Depois: ${info.depois}. ${info.explica}`}>
+                <span className="fc-portal__placa" aria-hidden="true"><Sprite nome={info.icone} /></span>
+                <span className="fc-portal__arco" aria-hidden="true">
+                  <span className="fc-portal__vista"><i /><i /><i /><i /><i /></span>
+                  <span className="fc-portal__folha fc-portal__folha--e" />
+                  <span className="fc-portal__folha fc-portal__folha--d" />
+                  <span className="fc-portal__brilho" />
+                  <span className="fc-portal__degrau" />
+                </span>
+                <span className="fc-portal__ficha">
+                  <strong>{info.nome}</strong>
+                  <span className={`fc-portal__antes${luta ? ' fc-portal__antes--luta' : ''}`}>
+                    <em>Antes</em>{luta ? <>Luta contra {adversario.nome}</> : 'Sem luta'}
+                  </span>
+                  <span className="fc-portal__depois"><em>Depois</em>{info.depois}</span>
+                  <small>{info.explica}</small>
+                  {dica && <span className="fc-portal__dica">{dica}</span>}
+                </span>
                 <span className="fc-recompensa__tecla" aria-hidden="true">{k + 1}</span>
               </button>
             )

@@ -147,12 +147,18 @@ const PAGINAS: Record<string, string> = {
   '/indicar': 'Indique e ganhe', '/ligas': 'Liga da residência', '/admin': 'Painel do administrador', '/termos': 'Termos de uso',
   '/contato': 'Suporte e contato', '/sobre': 'O projeto', '/projeto': 'O projeto', '/progresso': 'Progresso dos comentários',
   '/emails': 'Preferências de e-mail',
+  // Flashcards (beta): em que parte a pessoa está, com o nome público fora do jogo
+  '/flashcards': 'Flashcards: página inicial', '/flashcards/desempenho': 'Flashcards: vendo o desempenho',
+  '/flashcards/cronograma': 'Flashcards: montando o cronograma', '/flashcards/entrada': 'Torneio de Flashcards: escolhendo o modo',
+  '/flashcards/cripta': 'Torneio de Flashcards: batalha na Cripta', '/flashcards/masmorra': 'Torneio de Flashcards: batalha na Cripta',
+  '/flashcards/torre': 'Torneio de Flashcards: subindo a Torre', '/flashcards/biblioteca': 'Estudando flashcards (Biblioteca)',
+  '/flashcards/estudo': 'Estudando flashcards (Biblioteca)', '/flashcards/ranking': 'Flashcards: vendo o ranking',
 }
 /** "/sessao · 3 de 10" vira "Respondendo questões (3 de 10)". */
 export function rotuloPagina(pagina: string | null | undefined): string {
   if (!pagina) return 'sem registro'
   const [rota, extra] = pagina.split(' · ')
-  const nome = PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota)
+  const nome = PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota.startsWith('/flashcards') ? 'Flashcards' : rota)
   return extra ? `${nome} (${extra})` : nome
 }
 /** "agora", "há 4 min", "há 2 h", ou a data. */
