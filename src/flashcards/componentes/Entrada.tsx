@@ -192,7 +192,7 @@ export function Entrada() {
           </div>
         )}
       </div>
-      {tutorial && !escolherSom && <Tutorial aoFechar={fecharTutorial} />}
+      {tutorial && <Tutorial aoFechar={fecharTutorial} />}
     </ModalJogo>
   )
 }

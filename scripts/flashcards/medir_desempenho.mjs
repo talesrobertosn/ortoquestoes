@@ -13,7 +13,7 @@ try {
   await p.goto(url);await p.waitForFunction(()=>!!window.__torneio)
   if(await p.locator('.fc-apresenta').count())await p.locator('.fc-apresenta').click()
   await p.waitForTimeout(800)
-  if(reduzido){await p.getByRole('button',{name:'Ajustes de som e efeitos'}).click();await p.getByLabel('Reduzir movimento (sem tremor, partículas e giro)',{exact:true}).check();await p.keyboard.press('Escape')}
+  if(reduzido){await p.getByRole('button',{name:/Menu: som/}).click();await p.getByLabel('Reduzir movimento (sem tremor, partículas e giro)',{exact:true}).check();await p.keyboard.press('Escape')}
   const amostra=p.evaluate(()=>new Promise(resolve=>{
    const deltas=[],tarefas=[];let anterior=performance.now(),fim=anterior+4000
    const ob=new PerformanceObserver(l=>tarefas.push(...l.getEntries().map(e=>e.duration)));ob.observe({type:'longtask'})

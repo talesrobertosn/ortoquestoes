@@ -6,11 +6,17 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Integração com o Menu do jogo — 14/10/2026
+
+A atualização #256 retirou a escolha de som da Entrada. O tutorial ainda referenciava `escolherSom`, removido nessa atualização, e o deploy falhou com TS2304. A correção remove apenas essa condição e atualiza os scripts de tutorial/benchmark para os controles atuais.
+
+Estado novo do produto: ☰ abre o **Menu do jogo** (partida, som, movimento e leitura), sem engrenagem separada e sem pergunta inicial de som. Música usa ganho 0,3 no barramento; efeitos padrão 70%; mestre preserva a escala 2 e o início em 30%. Não ressuscitar os controles antigos. O tutorial é opcional e não exige uma escolha de áudio.
+
 ## Contexto atualizado da publicação — 14/10/2026
 
 - PRs #247–#250 e #252 publicados: cenários restantes, combate, desempenho, acessibilidade e Biblioteca.
 - PR #254 publicado: volume no fim da cadeia de áudio, curva v², padrão de **30% na escala 2**, botões +/− e silenciar; Começar do zero no Menu confirma antes e mantém recorde, cristais, talentos e bestiário. Não voltar ao padrão antigo de 20% nem desfazer essa implementação.
-- PR #255 em rascunho: tutorial opcional e benchmark sintético. Não tratar como publicado até conferir merge e deploy. O tutorial usa diálogo fora do contêiner rolável da Entrada, para seu título não sumir ao clicar.
+- PR #255 mesclado: tutorial opcional e benchmark sintético. Seu primeiro deploy foi cancelado pelo de #256; a correção de integração precisa de deploy concluído antes de afirmar publicação. O tutorial usa diálogo fora do contêiner rolável da Entrada, para seu título não sumir ao clicar.
 - Capas e formulário atual conferidos no domínio público: PNGs iguais aos arquivos do repositório; o bundle Flashcards contém **O que podemos melhorar?** e os grupos `cf-opiniao__notas`. Os prints com mago azul e caixa sem espaçamento são da aparência anterior.
 - Tales autoriza continuar e publicar após os testes, com relatórios por bloco. Monstros novos continuam em pausa. Questões médicas, planos e dados existentes não fazem parte deste trabalho. Não há SQL novo nesses blocos.
 
