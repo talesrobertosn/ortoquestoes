@@ -97,8 +97,10 @@ export function registrarConquistas(ids: readonly string[]) {
 }
 
 /** Meta do Cronograma: registra o dia quando a meta de hoje está cumprida. */
-export function conferirMetaCronograma(calculo: { metaDiaria: number; faltaHoje: number; naRetaFinal?: boolean; provaPassou?: boolean } | null | undefined) {
-  if (calculo && calculo.metaDiaria > 0 && calculo.faltaHoje === 0 && !calculo.naRetaFinal && !calculo.provaPassou) registrarFeito('meta_cronograma')
+export function conferirMetaCronograma(calculo: { metaDiaria: number; faltaHoje: number; adiantadoHoje?: number; naRetaFinal?: boolean; provaPassou?: boolean } | null | undefined) {
+  // Dia todo adiantado antes (meta zerada por adiantamento) também conta como meta cumprida.
+  const cumprida = calculo && (calculo.metaDiaria > 0 ? calculo.faltaHoje === 0 : (calculo.adiantadoHoje ?? 0) > 0)
+  if (calculo && cumprida && !calculo.naRetaFinal && !calculo.provaPassou) registrarFeito('meta_cronograma')
 }
 
 /**

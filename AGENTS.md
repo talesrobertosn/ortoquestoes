@@ -81,3 +81,8 @@ Diretriz de 13/10/2026: em mudanças visuais, enviar ocasionalmente capturas rea
 (computador e/ou celular) durante o trabalho, identificando prévia ou versão publicada.
 Flashcards: a orientação mais recente de ranking único, progressão por acerto real da turma e
 histórico pessoal, entrada sem Torre e cronograma próprio está em [docs/flashcards/JORNADA-UNICA.md](docs/flashcards/JORNADA-UNICA.md).
+
+## Cronograma (reforma desde 14/10/2026)
+
+Antes de mexer no cronograma (`#/cronograma`), leia [docs/cronograma/PLANO.md](docs/cronograma/PLANO.md):
+princípios de apresentação ("onde você está, hoje, amanhã, esta semana, depois"), protótipo, etapas com checklist.

@@ -233,3 +233,15 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 @media print { .rs-guerreiro { display: none; } }
 .rs-diagnostico { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1rem; border-color: color-mix(in srgb, var(--verdete) 40%, var(--traco)); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie) 70%); }
 .rs-diagnostico p { margin: 0.2rem 0 0; max-width: 60ch; }
+
+/* Fim de uma sessão do cronograma (14/10/2026): meta feita, o que falta hoje e amanhã. */
+.rs-cronograma { display: grid; justify-items: center; gap: 0.5rem; padding: 1.4rem 1.1rem 1.2rem; border-radius: var(--raio-cartao); text-align: center; color: var(--sobre-heroi); background: var(--heroi); box-shadow: var(--sombra-media); }
+.rs-cronograma__selo { display: grid; place-items: center; width: 3.6rem; height: 3.6rem; border-radius: 50%; background: rgba(255, 255, 255, 0.12); color: #ffe3a3; font-family: var(--fonte-pixel-titulo); font-size: 1.8rem; box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.06); }
+.rs-cronograma--feita .rs-cronograma__selo { background: #f4cf7c; color: #0b3a35; box-shadow: 0 0 0 7px rgba(244, 207, 124, 0.25); }
+.rs-cronograma h2 { margin: 0.4rem 0 0; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: clamp(1.8rem, 6vw, 2.3rem); line-height: 1; color: var(--sobre-heroi); }
+.rs-cronograma p { margin: 0; color: var(--sobre-heroi-2); font-size: var(--corpo-menor); }
+.rs-cronograma__proximo { width: 100%; max-width: 32rem; padding: 0.7rem 0.8rem; border-radius: var(--raio-controle); background: var(--heroi-vidro); text-align: left; font-size: var(--corpo-menor); line-height: 1.45; }
+.rs-cronograma__proximo b { color: #ffe3a3; }
+.rs-cronograma .botao { width: 100%; max-width: 32rem; justify-content: center; }
+.rs-cronograma__link { color: var(--sobre-heroi-2); font-size: var(--corpo-menor); }
+.rs-cronograma__link a { color: inherit; }

@@ -450,9 +450,16 @@ def pedra(n=4, W=22, base=None):
     return quadros
 
 
-def pedregulho(n=4, W=64):
+def pedregulho(n=4, W=64, variante='musgo'):
     """O pedregulho do crítico do golem: maior, com rachaduras, musgo e flores."""
-    p = ['#f2e6c8', '#cdbb94', '#a08a68', '#6e5c46', '#3e3228']
+    paletas = {
+        'musgo': ['#f2e6c8', '#cdbb94', '#a08a68', '#6e5c46', '#3e3228'],
+        'cristal': ['#e4fbff', '#80cbe8', '#5390c5', '#395a9d', '#22365f'],
+        'obsidiana': ['#a399bd', '#635676', '#3c304e', '#241c35', '#161126'],
+        'rubro': ['#ffe0a1', '#db8c5d', '#a14c3f', '#6d3036', '#3e2030'],
+        'cimento': ['#e8e9df', '#babeb7', '#929991', '#606b64', '#353f3b'],
+    }
+    p = paletas[variante]
     pts = []
     for j in range(11):
         a = j / 11 * 2 * math.pi
@@ -475,15 +482,23 @@ def pedregulho(n=4, W=64):
         # rachaduras
         for (ax, ay, bx, by) in ((-6, -10, 4, 2), (4, 2, 2, 12), (4, 2, 14, 6), (-14, 4, -6, 8)):
             linha(q, rot(ax, ay, ca, sa, W), rot(bx, by, ca, sa, W), p[4], m)
-        # musgo no topo (em relação à pedra), com florzinhas
-        topo = m & (((q.x - W / 2) * sa - (q.y - W / 2) * ca) > 14 - 3 * ruido2(q.x, q.y, 0.5, semente=2))
-        q.pinta(topo, '#5e9a3a')
-        q.pinta(topo & (((q.x - W / 2) * sa - (q.y - W / 2) * ca) > 18), '#8cc84e')
-        for fx, fy, fc in ((-6, -20, '#ffe46a'), (5, -21, '#ffffff'), (12, -16, '#ff9ac0')):
-            x, y = rot(fx, fy, ca, sa, W)
-            x, y = int(x), int(y)
-            if m[y, x]:
-                q.a[y, x] = cor(fc)
+        if variante == 'musgo':
+            # musgo no topo (em relação à pedra), com florzinhas
+            topo = m & (((q.x - W / 2) * sa - (q.y - W / 2) * ca) > 14 - 3 * ruido2(q.x, q.y, 0.5, semente=2))
+            q.pinta(topo, '#5e9a3a')
+            q.pinta(topo & (((q.x - W / 2) * sa - (q.y - W / 2) * ca) > 18), '#8cc84e')
+            for fx, fy, fc in ((-6, -20, '#ffe46a'), (5, -21, '#ffffff'), (12, -16, '#ff9ac0')):
+                x, y = rot(fx, fy, ca, sa, W)
+                x, y = int(x), int(y)
+                if m[y, x]:
+                    q.a[y, x] = cor(fc)
+        elif variante == 'cristal':
+            faceta = m & (lx + ly < -.1)
+            q.pinta(faceta & (np.mod(q.x + q.y, 13) < 2), '#b5eeff')
+        elif variante in ('obsidiana', 'rubro'):
+            brilho = '#b486db' if variante == 'obsidiana' else '#ffbf71'
+            linha(q, rot(-6, -10, ca, sa, W), rot(4, 2, ca, sa, W), brilho, m)
+            linha(q, rot(4, 2, ca, sa, W), rot(2, 12, ca, sa, W), brilho, m)
         q.contorno(p[4])
         quadros.append(q.a)
     return quadros
@@ -1062,6 +1077,8 @@ def efeitos():
     add('gato-feliz', gato('feliz', 6), 120, loop=True)
     add('vela', vela(), 120, loop=True)
     add('pena', pena(), 70, loop=True)
+    for variante in ('cristal', 'obsidiana', 'rubro', 'cimento'):
+        add(f'pedregulho-{variante}', pedregulho(variante=variante), 90, loop=True)
     return E
 
 
@@ -1077,7 +1094,8 @@ def gravar(E):
         cores = len(np.unique(tira.reshape(-1, 4), axis=0))
         if cores <= 256:
             im = im.convert('P', palette=Image.ADAPTIVE, colors=256) if False else im
-        im.save(DESTINO / f'{nome}.png', optimize=True)
+        if '--novos' not in sys.argv or not (DESTINO / f'{nome}.png').exists():
+            im.save(DESTINO / f'{nome}.png', optimize=True)
         meta[nome] = {'w': w, 'h': h, 'n': len(qs), 'ms': e['ms'], 'ancora': e['ancora'], 'loop': e['loop']}
     linhas = [
         '/**',
@@ -1115,7 +1133,9 @@ def previa(E, escala=4):
 if __name__ == '__main__':
     E = efeitos()
     if '--previa' in sys.argv:
-        previa(E)
+        if '--novos' not in sys.argv:
+            previa(E)
     else:
         gravar(E)
-        previa(E)
+        if '--novos' not in sys.argv:
+            previa(E)

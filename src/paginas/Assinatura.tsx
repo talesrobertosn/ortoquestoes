@@ -46,7 +46,7 @@ const periodo = (p: Plano) => p.meses === 1 ? 'por mês' : p.meses === 6 ? 'a ca
 
 /** As três coisas que a assinatura faz, em vez de uma lista de recursos. */
 const GANHOS: Array<{ icone: NomeIconePixel; titulo: string; texto: string; itens: string[] }> = [
-  { icone: 'planos', titulo: 'Um plano que pensa por você', texto: 'Você abre o site e sabe o que fazer hoje. O cronograma segue o que mais cai e se ajusta quando a rotina aperta.', itens: ['Diagnóstico no primeiro dia', 'Alerta quando um tema fica esquecido', 'Mapa de risco: o que mais cai e você mais erra', 'Reta final de duas semanas com resumão'] },
+  { icone: 'planos', titulo: 'Um plano que pensa por você', texto: 'Você abre o site e sabe o que fazer hoje, amanhã e até a prova. O cronograma passa primeiro pelo que mais cai em todas as áreas e se ajusta quando a rotina aperta.', itens: ['A lista de hoje, com o tempo de cada parte', 'Três passadas: o que mais cai vem primeiro', 'Dia de plantão e semana difícil sem quebrar o plano', 'Mini-simulado a cada duas semanas e reta final com resumão'] },
   { icone: 'simulado', titulo: 'Estude o que a banca cobra', texto: `Contamos ${numero(BASE_CONTAGEM)} questões das provas oficiais por assunto. E os ${ROTULO_SIMULADOS} trazem questões novas no padrão da banca, feitas por engenharia reversa das provas.`, itens: ['Temas que mais caem, área por área', 'Resumão: o que cai, em uma frase', `${ROTULO_SIMULADOS} no meio de cada sessão`] },
   { icone: 'turma', titulo: 'Saiba onde você está', texto: 'Compare com quem estuda para a mesma prova e chegue sabendo o que falta.', itens: ['Como a turma respondeu cada alternativa', 'Simulado Nacional todo mês, com sua posição', 'Liga da residência e relatório do mês'] },
 ]
@@ -257,7 +257,7 @@ export function Assinatura() {
             ['Revisão espaçada, caderno de erros, desempenho e ranking', true, true],
             ['Questões por dia', limitesHabilitados ? `${LIMITE_GRATIS_ATUAL} a cada 24 horas` : 'Sem limite nesta fase', 'Sem limite'],
             ...(FLASHCARDS_NA_VENDA ? [['Flashcards por dia (beta)', limitesHabilitados ? '10 a cada 24 horas' : 'Sem limite nesta fase', 'Sem limite'] as const] : []),
-            ['Cronograma até a prova, com diagnóstico, alertas e reta final', false, true],
+            ['Cronograma até a prova: a lista de cada dia, o que mais cai primeiro, dia de plantão e reta final', false, true],
             ['Resumão: o que cai, em uma frase por assunto', false, true],
             ['Temas que mais caem, área por área', false, true],
             ['Como a turma respondeu e treino pelas que a turma mais erra', false, true],
@@ -332,7 +332,7 @@ export function Assinatura() {
           <details><summary>Como funciona a garantia de 7 dias?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pede o reembolso integral pelo botão em Minha conta, sem precisar falar com ninguém nem justificar. Se o Mercado Pago não confirmar a solicitação automática, use o canal de contato do site para atendimento manual. O acesso pago só é encerrado depois que o reembolso é confirmado.</p></details>
           <details><summary>Pix ou cartão: qual a diferença?</summary><p>No Pix você paga o período inteiro de uma vez e o acesso é liberado assim que o Mercado Pago confirma; ele não renova sozinho, e a partir de 7 dias antes do fim a página libera a renovação sem perder os dias que faltam (avisamos por e-mail 3 dias antes). O CPF é pedido só para gerar o Pix e não fica salvo. No cartão, a renovação é automática na periodicidade escolhida e você desliga quando quiser; o Orto Questões não recebe os dados do cartão.</p></details>
           <details><summary>Preciso falar com alguém para cancelar? E o meu histórico?</summary><p>Não. Desligar a renovação e pedir o reembolso dentro da garantia são botões em Minha conta. Depois dos 7 dias, não há devolução proporcional automática: você mantém o acesso até o fim do período pago e a assinatura não renova (seus direitos previstos em lei continuam preservados; veja as <a href={href('/condicoes-assinatura')}>condições da assinatura</a>). Respostas, revisões, anotações e desempenho nunca são apagados.</p></details>
-          <details><summary>Como o cronograma é montado?</summary><p>Você informa a data da prova, a intensidade e os dias de folga. Um diagnóstico de 30 questões mostra onde você está mais fraco. O cronograma divide as questões pelos dias, começa pelas áreas e assuntos que mais caem (pela contagem das provas oficiais), dá mais espaço aos seus temas fracos e mistura de 2 a 6 {ROTULO_SIMULADOS} por sessão. As duas últimas semanas são a reta final: revisão forte e depois o modo prova, com simulado, os erros que importam e o resumão. Todo dia ele se recalcula e avisa quando um tema fica esquecido.</p></details>
+          <details><summary>Como o cronograma é montado?</summary><p>Em quatro passos: a data da prova, quanto tempo você tem por dia, como é a sua semana (folgas e dias de plantão, que viram dias leves) e por onde começar. Um diagnóstico opcional de 30 questões mostra onde você está mais fraco. O plano passa três vezes pelo acervo: na <b>1ª passada</b>, os assuntos de prioridade máxima de todas as áreas (pela contagem das provas oficiais); na 2ª, os de prioridade alta; na 3ª, o resto. Assim, se a rotina apertar, o que mais cai já foi visto. Cada área fica uns 3 dias em foco, com cerca de 30% de cada dia vindo de outra área para misturar, e entram de 2 a 6 {ROTULO_SIMULADOS} por sessão. A cada duas semanas há um mini-simulado, e as duas últimas semanas são a reta final: revisão forte e depois o modo prova, com simulado, os erros que importam e o resumão. Todo dia a página mostra onde você está, a lista de hoje com o tempo de cada parte, o que vem amanhã, a semana e as próximas semanas. Atrasou, a meta sobe no máximo 25%; numa semana difícil, dá para baixar para 10 questões por dia sem quebrar o plano.</p></details>
           <details><summary>O que são os {ROTULO_SIMULADOS}?</summary><p>Questões inéditas, escritas pelo Orto Questões por engenharia reversa das provas: estudamos o estilo, o nível e o que a banca repete, e escrevemos questões novas no mesmo padrão a partir da bibliografia, inclusive para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril. Não são questões oficiais nem cópia de prova sigilosa; trazem aviso na tela e comentário completo com a citação do livro.</p></details>
           <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? `O gratuito tem um número limitado de respostas novas (hoje, ${LIMITE_GRATIS_ATUAL}) a cada 24 horas. O relógio começa na primeira questão respondida e, 24 horas depois, a cota volta inteira; o site mostra quanto falta.` : `O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado, o patamar gratuito previsto é de ${LIMITE_GRATIS_ATUAL} respostas novas a cada 24 horas.`} Comentários, revisões e desempenho continuam abertos.</p></details>
         </div>
@@ -417,8 +417,22 @@ function irPara(id: string) {
 /** Ritmos para escolher, com o tempo aproximado (cerca de 1,5 minuto por questão). */
 const RITMOS: Array<[number, string]> = [[15, '≈ 25 min'], [25, '≈ 40 min'], [40, '≈ 1h'], [60, '≈ 1h30']]
 const FOLGAS: Array<[number, string]> = [[0, 'Todo dia'], [1, '1 folga'], [2, '2 folgas']]
-/** Áreas mostradas uma a uma na prévia; as demais viram uma linha só. */
-const FASES_VISIVEIS = 4
+
+/**
+ * Quanto do que cai é de cada prioridade, pela contagem das provas oficiais. Uma questão pode estar
+ * em mais de um assunto, então vale a proporção (aplicada ao total contado), não a soma.
+ */
+const PASSADAS_VENDA = (() => {
+  const soma = { 4: 0, 3: 0, resto: 0 }
+  for (const a of AREAS) for (const f of a.focos) { if (f.nivel === 4) soma[4] += f.n ?? 0; else if (f.nivel === 3) soma[3] += f.n ?? 0; else soma.resto += f.n ?? 0 }
+  const total = soma[4] + soma[3] + soma.resto || 1
+  const p1 = Math.round((BASE_CONTAGEM * soma[4]) / total), p2 = Math.round((BASE_CONTAGEM * soma[3]) / total)
+  return [
+    { nome: '1ª passada', texto: 'Prioridade máxima de todas as áreas', n: p1 },
+    { nome: '2ª passada', texto: 'Prioridade alta', n: p2 },
+    { nome: '3ª passada', texto: 'Prioridade média e baixa', n: Math.max(0, BASE_CONTAGEM - p1 - p2) },
+  ]
+})()
 
 function proximaProva(): string {
   const hoje = chaveDia()
@@ -427,10 +441,10 @@ function proximaProva(): string {
 const diasAte = (data: string) => Math.max(0, Math.round((Date.parse(`${data}T12:00:00Z`) - Date.parse(`${chaveDia()}T12:00:00Z`)) / 864e5))
 
 /**
- * Uma conta de verdade, com a contagem do que cai: escolha o ritmo, a data e
- * as folgas, e veja as fases do cronograma (as áreas na ordem da prova, com as
- * semanas de cada uma) e a reta final. O cronograma real usa também o
- * histórico da pessoa; aqui é a mesma lógica, sem o histórico.
+ * A mesma lógica do cronograma de verdade, sem o histórico da pessoa: escolha o
+ * ritmo, a data e as folgas e veja as três passadas pelo que mais cai (com as
+ * semanas de cada uma), a reta final e como fica um dia do plano. O cronograma
+ * real usa as questões do acervo (com os simulados) e o seu histórico.
  */
 function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boolean }) {
   const [ritmo, definirRitmo] = useState(25)
@@ -441,30 +455,32 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
   // Reta final: duas semanas (revisão forte e modo prova) com 6 semanas ou mais; uma com 3 a 5.
   const reta = semanas >= 6 ? 2 : semanas >= 3 ? 1 : 0
   const semanasEstudo = Math.max(1, semanas - reta)
-  const diasEstudo = Math.round(corridos * (7 - folgas) / 7)
-  const total = ritmo * diasEstudo
+  const porSemana = ritmo * (7 - folgas)
+  const total = porSemana * semanasEstudo
   const minutos = Math.round(ritmo * 1.5)
   const dataCurta = new Date(`${prova}T12:00:00Z`).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' }).replace('.', '')
 
-  // Fases: as áreas em ordem de incidência, com semanas proporcionais ao peso de cada uma.
-  const fases = useMemo(() => {
-    let acumulado = 0
-    return AREAS_CAEM.map((a) => {
-      const fatia = a.n / BASE_CONTAGEM
-      const de = Math.floor(acumulado * semanasEstudo) + 1
-      acumulado += fatia
-      const ate = Math.max(de, Math.ceil(acumulado * semanasEstudo))
-      return { area: a, fatia, de: Math.min(de, semanasEstudo), ate: Math.min(ate, semanasEstudo), questoes: Math.round(total * (1 - (reta ? (7 * reta) / Math.max(7 * reta, corridos) : 0)) * fatia) }
+  // As passadas, em sequência: cada uma ocupa as semanas que o ritmo pede, até a reta final.
+  const passadas = useMemo(() => {
+    let usado = 0
+    return PASSADAS_VENDA.map((p) => {
+      const cabe = Math.max(0, Math.min(p.n, total - usado))
+      const de = Math.floor(usado / porSemana) + 1
+      usado += cabe
+      const ate = Math.max(de, Math.ceil(usado / porSemana))
+      return { ...p, cabe, de: Math.min(de, semanasEstudo), ate: Math.min(ate, semanasEstudo), pct: p.n ? Math.round((cabe / p.n) * 100) : 0 }
     })
-  }, [semanasEstudo, total, reta, corridos])
+  }, [total, porSemana, semanasEstudo])
   const semanaTexto = (de: number, ate: number) => de === ate ? `Semana ${de}` : `Semanas ${de} a ${ate}`
+  const [a1, a2] = AREAS_CAEM
+  const mistura = Math.round(ritmo * 0.3)
 
   return (
     <section className="vd-cronograma" aria-labelledby="vd-titulo-cronograma">
       <div className="vd-cronograma__cabeca">
         <p className="vd-selo vd-selo--ouro"><Icone nome="rota" tamanho={15} /> O carro-chefe do plano</p>
         <h2 id="vd-titulo-cronograma">Seu cronograma, <em>montado em 10 segundos.</em></h2>
-        <p>Mexa nos botões: a conta abaixo usa a mesma ordem do cronograma de verdade, a das áreas que mais caem na prova.</p>
+        <p>Mexa nos botões: a conta abaixo usa a mesma lógica do cronograma de verdade. Primeiro o que mais cai em todas as áreas, depois o resto.</p>
       </div>
 
       <div className="vd-cronograma__painel">
@@ -490,44 +506,44 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
           </dl>
         </div>
 
-        <ol className="vd-fases" aria-label="Fases do cronograma">
-          {fases.slice(0, FASES_VISIVEIS).map((f, i) => {
-            const aberta = assinante || i < 3
-            const focos = f.area.focos.filter((x) => x.nivel >= 3).slice(0, 2)
-            return (
-              <li key={f.area.id} className={'vd-fase' + (aberta ? '' : ' vd-fase--fechada')} style={{ ['--fatia' as string]: `${Math.max(6, Math.round((f.fatia / fases[0].fatia) * 100))}%` }}>
+        <div className="vd-cronograma__plano">
+          <ol className="vd-fases" aria-label="Passadas do cronograma">
+            {passadas.map((p, i) => (
+              <li key={p.nome} className={'vd-fase' + (p.cabe === 0 ? ' vd-fase--fechada' : '')} style={{ ['--fatia' as string]: `${p.pct ? Math.max(6, p.pct) : 0}%` }}>
                 <span className="vd-fase__num">{i + 1}</span>
                 <div className="vd-fase__corpo">
-                  <p className="vd-fase__topo"><strong>{f.area.nome}</strong><small>{semanaTexto(f.de, f.ate)} · {(f.fatia * 100).toLocaleString('pt-BR', { maximumFractionDigits: 1 })}% da prova</small></p>
+                  <p className="vd-fase__topo"><strong>{p.nome} · {p.texto}</strong><small>{p.cabe ? semanaTexto(p.de, p.ate) : 'Não cabe neste ritmo'} · {p.pct >= 100 ? 'completa' : `${p.pct}% dela`}</small></p>
                   <span className="vd-fase__barra" aria-hidden="true"><i /></span>
-                  {focos.length > 0 && <p className="vd-fase__focos">{aberta ? <>Começa por: {focos.map((x) => x.nome).join(' · ')}</> : <><Icone nome="cadeado" tamanho={12} /> Assuntos desta fase no plano</>}</p>}
+                  {i === 0 && <p className="vd-fase__focos">Começa por {AREAS_CAEM.slice(0, 3).map((a) => a.nome.toLowerCase()).join(', ')} e passa por todas as áreas, em blocos de 3 dias</p>}
                 </div>
-                <span className="vd-fase__qtd">{numero(f.questoes)}<small> questões</small></span>
+                <span className="vd-fase__qtd">{numero(p.cabe)}<small> questões</small></span>
               </li>
-            )
-          })}
-          {fases.length > FASES_VISIVEIS && (() => {
-            const resto = fases.slice(FASES_VISIVEIS)
-            return <li className="vd-fase vd-fase--resto">
-              <span className="vd-fase__num">+{resto.length}</span>
-              <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Mais {resto.length} áreas, na ordem do que cai</strong><small>{semanaTexto(resto[0].de, resto[resto.length - 1].ate)}</small></p><p className="vd-fase__focos">{resto.map((f) => f.area.nome).join(' · ')}</p></div>
-              <span className="vd-fase__qtd">{numero(resto.reduce((s, f) => s + f.questoes, 0))}<small> questões</small></span>
-            </li>
-          })()}
-          {reta > 1 && <li className="vd-fase vd-fase--reta">
-            <span className="vd-fase__num"><Icone nome="reiniciar" tamanho={16} /></span>
-            <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Reta final · revisão forte</strong><small>Semana {semanas - 1} · penúltima semana</small></p><p className="vd-fase__focos">Seus erros, dúvidas e os assuntos que mais caem, uma fatia da prova por dia. Sem conteúdo novo.</p></div>
-          </li>}
-          {reta > 0 && <li className="vd-fase vd-fase--reta">
-            <span className="vd-fase__num"><Icone nome="bandeira" tamanho={16} /></span>
-            <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Reta final · modo prova</strong><small>Semana {semanas} · última semana</small></p><p className="vd-fase__focos">Simulado cronometrado no horário da prova, os erros que importam e o resumão. Véspera leve.</p></div>
-          </li>}
-        </ol>
+            ))}
+            {reta > 1 && <li className="vd-fase vd-fase--reta">
+              <span className="vd-fase__num"><Icone nome="reiniciar" tamanho={16} /></span>
+              <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Reta final · revisão forte</strong><small>Semana {semanas - 1} · penúltima semana</small></p><p className="vd-fase__focos">Seus erros, dúvidas e os assuntos que mais caem, uma fatia da prova por dia. Sem conteúdo novo.</p></div>
+            </li>}
+            {reta > 0 && <li className="vd-fase vd-fase--reta">
+              <span className="vd-fase__num"><Icone nome="bandeira" tamanho={16} /></span>
+              <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Reta final · modo prova</strong><small>Semana {semanas} · última semana</small></p><p className="vd-fase__focos">Simulado cronometrado, os erros que importam e o resumão. Véspera leve.</p></div>
+            </li>}
+          </ol>
+
+          {a1 && a2 && <div className="vd-dia" aria-label="Um dia do cronograma">
+            <p className="vd-dia__rotulo">Um dia do cronograma</p>
+            <ol>
+              <li><span>1</span><div><strong>Resumão do tema</strong><small>As frases "Na prova" de {a1.nome.toLowerCase()}</small></div><em>4 min</em></li>
+              <li><span>2</span><div><strong>{ritmo} questões novas</strong><small>{ritmo - mistura} de {a1.nome.toLowerCase()} e {mistura} de {a2.nome.toLowerCase()} para misturar</small></div><em>~{minutos} min</em></li>
+              <li><span>3</span><div><strong>Revisões do dia</strong><small>Erros e dúvidas que voltam no tempo certo</small></div><em>à parte</em></li>
+            </ol>
+            <p className="vd-dia__nota">Na página você vê também <b>o que vem amanhã</b>, a semana inteira na cor de cada área e as próximas semanas até a prova.</p>
+          </div>}
+        </div>
       </div>
 
       <div className="vd-cronograma__rodape">
-        <p><Icone nome="reiniciar" tamanho={16} /> No cronograma de verdade, um diagnóstico calibra o plano no primeiro dia, temas em que você está abaixo da média ganham mais espaço e a meta se recalcula todo dia. O painel mostra a sua sequência, avisa quando um tema fica esquecido e aponta o que mais cai e você mais erra.</p>
-        <a className="botao botao--grande vd-botao-ouro" href={href(conta ? '/cronograma' : '/conta?modo=criar&voltar=%2Fcronograma')}>{assinante ? 'Abrir meu cronograma' : conta ? 'Ver a prévia com o meu histórico' : 'Criar conta grátis e ver o meu'}</a>
+        <p><Icone nome="reiniciar" tamanho={16} /> No cronograma de verdade, o diagnóstico calibra o plano no primeiro dia, as áreas em que você está abaixo da média ganham mais espaço e a meta se recalcula todo dia (atrasou, sobe no máximo 25%). Dia de plantão vira dia leve, a semana difícil fica em 10 questões por dia, e a cada duas semanas vem um mini-simulado.</p>
+        <a className="botao botao--grande vd-botao-ouro" href={href(conta ? '/cronograma' : '/conta?modo=criar&voltar=%2Fcronograma')}>{assinante ? 'Abrir meu cronograma' : conta ? 'Ver um exemplo com o meu histórico' : 'Criar conta grátis e ver o meu'}</a>
       </div>
     </section>
   )

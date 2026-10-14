@@ -10,12 +10,48 @@ const pasta = await mkdtemp(join(tmpdir(), 'oq-fc-'))
 const arquivo = join(pasta, 'm.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/flashcards/motor/regras'; export * from './src/flashcards/motor/bestiario'; export * from './src/flashcards/motor/poderes'; export * from './src/flashcards/motor/altar'; export { BARALHO_DEMO } from './src/flashcards/dados/baralhoDemo'; export * from './src/flashcards/progresso'; export * from './src/flashcards/motor/selecao'`, resolveDir: process.cwd() },
+    stdin: { contents: `export * from './src/flashcards/motor/regras'; export * from './src/flashcards/motor/hipnose'; export * from './src/flashcards/motor/bestiario'; export * from './src/flashcards/motor/poderes'; export * from './src/flashcards/motor/altar'; export { BARALHO_DEMO } from './src/flashcards/dados/baralhoDemo'; export * from './src/flashcards/progresso'; export * from './src/flashcards/motor/selecao'`, resolveDir: process.cwd() },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' }, logLevel: 'error',
   })
   const m = await import(pathToFileURL(arquivo))
   const cartas = m.BARALHO_DEMO
   const motor = m.criarMotor(cartas)
+
+  // Hipnose altera somente as posições da apresentação, nunca o índice validado.
+  {
+    const achar = (pred) => { for(let a=1;a<100;a++)for(let sm=1;sm<80;sm++){if(pred(m.inimigoDoAndar(a,sm,'masmorra').inimigo))return {andar:a,sementeBase:sm}};throw Error('Adversário não encontrado') }
+    const lugar=achar(i=>i.variante==='basilisco')
+    const base = { ...motor.novaPartida(71).estado, ...lugar }
+    const preparar = (extra = {}) => ({ ...base, vida: 10000, vidaMax: 10000,
+      inimigo: { ...base.inimigo, id: 'basilisco-do-radio', vida: 10000, vidaMax: 10000, ...extra },
+      atual: { ...base.atual, carregado: true, criticoInimigo: false } })
+    const errado = base.atual.ordem.findIndex(x => x !== motor.carta(base.atual.id).certa)
+    const atingiu = motor.responder(preparar(), errado)
+    assert.equal(atingiu.eventos.filter(e => e.tipo === 'hipnose').length, 1)
+    const proxima = motor.seguir(atingiu.estado).estado
+    assert.ok(proxima.atual.visual)
+    assert.notDeepEqual(proxima.atual.visual, proxima.atual.ordem.map((_,k)=>k))
+    assert.equal(proxima.inimigo.hipnosePendente, false)
+    assert.deepEqual(JSON.parse(JSON.stringify(proxima)).atual.visual, proxima.atual.visual)
+    const original = structuredClone(motor.carta(proxima.atual.id))
+    for (const posVisual of m.indicesVisuais(proxima.atual)) {
+      const canonico = proxima.atual.ordem[posVisual]
+      const comVisual = motor.responder(proxima, posVisual)
+      const semVisual = motor.responder({ ...proxima, atual: { ...proxima.atual, visual: undefined } }, posVisual)
+      assert.equal(comVisual.eventos.find(e => e.tipo === 'resposta').certo, canonico === original.certa)
+      assert.deepEqual(comVisual.eventos, semVisual.eventos)
+      assert.equal(comVisual.estado.vida, semVisual.estado.vida)
+      assert.equal(comVisual.estado.pontos, semVisual.estado.pontos)
+    }
+    assert.deepEqual(motor.carta(proxima.atual.id), original)
+    const bloqueada = motor.responder({ ...preparar(), encaixes: [{tipo:'escudo',carga:1}] }, errado)
+    assert.ok(!bloqueada.eventos.some(e => e.tipo === 'hipnose'))
+    assert.ok(!motor.responder(preparar({hipnoseUsada:true}),errado).eventos.some(e=>e.tipo==='hipnose'))
+    assert.ok(!motor.responder({...preparar(),atual:{...preparar().atual,carregado:false}},errado).eventos.some(e=>e.tipo==='hipnose'))
+    const mimico = motor.responder({ ...preparar(), ...achar(i=>i.sprite==='mimico'), ouro:80, inimigo:{...base.inimigo,id:m.BESTIARIO.find(i=>i.sprite==='mimico').id}, encaixes:[{tipo:'pista',carga:2}] },errado)
+    assert.ok(mimico.eventos.some(e=>e.tipo==='roubou'))
+    assert.equal(mimico.estado.ouro,80,'Mímico mantém roubo de carga, não de ouro')
+  }
 
   // O baralho de demonstração respeita o formato: gabarito dentro das opções, ids rastreáveis, sem HTML.
   for (const c of cartas) {

@@ -36,9 +36,9 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 13. [x] Efeito de bloqueio do escudo em pixel art (hoje ainda usa o projétil antigo).
 14. [x] Efeitos de cura em pixel art (corações subindo) também na Batalha, não só no veneno.
 15. [x] Golpe final: o vilão derrubado some num "puf" de fumaça em pixel art, com estrelas, maior no chefe.
-16. [ ] Número de dano em fonte pixel (bitmap própria), com quique e contorno.
-17. [ ] Som próprio para cada golpe novo: espada gigante, mandíbula, pedregulho e sopro.
-18. [ ] Variante do pedregulho por golem: cristal, obsidiana, rubro e cimento.
+16. [x] Número de dano em fonte pixel (bitmap própria), com quique e contorno.
+17. [x] Som próprio para cada golpe novo (14/10): `espada-gigante`, `mandibula`, `pedregulho` e o `sopro` com crepitar, em `efeitos/sons.ts`, tocados por `ataques.ts` e pela Arena.
+18. [x] Variante do pedregulho por golem: cristal, obsidiana, rubro e cimento.
 
 ## B. Superpoderes dos vilões (mecânica)
 
@@ -46,8 +46,8 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 20. [x] **Em chamas** (dragões): depois do Sopro, 3 flashcards com dano leve; um acerto difícil apaga o fogo (testes no motor).
 21. [x] **Grude** (gosmas): depois de acertar o herói, o próximo erro dói 50% a mais (aparece na intenção); um acerto desgruda.
 22. [x] **Tremor** (golem): o crítico tira 1 carga de um poder equipado (ele cai da mochila).
-23. [ ] **Hipnose** (basilisco): embaralha a ordem das alternativas uma vez (só visual, sem mudar o gabarito).
-24. [ ] **Roubo** (mímico): já rouba ouro; mostrar a moeda voando para dentro do baú.
+23. [x] **Hipnose** (basilisco): embaralha a ordem das alternativas uma vez (só visual, sem mudar o gabarito).
+24. [x] **Roubo** (mímico): mantém o roubo de carga de poder; energia voa do poder para o baú. Correção aprovada pelo Tales em 14/10: não rouba ouro.
 25. [x] Mostrar o superpoder na placa do vilão: Picada venenosa, Sopro que queima, Grude e Tremor, com explicação ao passar o mouse.
 
 ## C. Biblioteca (estudo passivo, mais divertido)
@@ -82,14 +82,14 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 48. [ ] Jardim dos curandeiros: estufa de vidro com plantas medicinais.
 49. [ ] Ciclo de dia e noite no andar a céu aberto.
 50. [ ] Animais vivos nos cenários: pássaros, coelhos, peixes pulando no lago e vaga-lumes à noite.
-51. [ ] Cenários que faltam pintar: Torre, Salão, deserto dos ossos, pântano da necrose, observatório, fortaleza das placas e trono do dragão.
+51. [x] Pintura dos cenários atualmente usados pelo jogo. Biomas apenas propostos para o futuro: Deserto das Dunas Douradas (substitui o antigo tema com ossos), pântano da necrose, observatório e fortaleza das placas. O **Salão do Trono** ficou pronto em 14/10 (`scripts/cenarios/salao.py`): colunas de capitel dourado, vitral redondo com feixes coloridos, tapete vermelho até o trono, estandartes e cortinas. A **Caverna dos Cristais** também (`scripts/cenarios/caverna.py`): rocha em névoa azul, cristais violeta e ciano, lago subterrâneo, cogumelos luminosos e a fenda de luz. E o **Laboratório do Alquimista** (`scripts/cenarios/laboratorio.py`): prateleiras de frascos, caldeirão verde, alambique, esfera armilar de latão e o negatoscópio com o molde de uma placa e parafusos (só o implante, sem anatomia). E a **Catacumba das Velas** (`scripts/cenarios/catacumba.py`): portão de ferro com luz verde, sarcófagos de pedra, urnas, velas, teias e névoa, sem ossos nem caveiras. E o **Templo do Sol** (`scripts/cenarios/templo.py`): teto aberto para o céu, disco solar esculpido, colunas com hera, espelho d'água com lótus e peixinhos e braseiros. E a **Passarela das Nuvens** (`scripts/cenarios/passarela.py`): ponte de pedra sobre um mar de nuvens, montanhas nevadas, torre com bandeira e lanternas. E a **Forja dos Implantes** (`scripts/cenarios/forja.py`): fornalha de tijolo com coifa, bigorna com uma placa de osteossíntese em brasa, parede de ferramentas, prateleira de placas e parafusos, barril fumegando e fagulhas. E o **Coliseu da Consolidação** (`scripts/cenarios/coliseu.py`): arquibancada em arcos ao entardecer com o público em pontinhos de cor, toldo listrado, portão com grade, tochas, escudos de bronze e a areia com o círculo de luta. Concluídos também treino (Pátio dos Estandartes), arquivo (Arquivo dos Mapas) e torre (Terraço do Horizonte), com quatro camadas nos dois formatos. Detalhes e revisão: [cenários pendentes](flashcards/CENARIOS-PENDENTES-14-10.md). PR draft [#247](https://github.com/talesrobertosn/ortoquestoes/pull/247), a revisar.
 
 ## E. Vilões novos (o Tales manda o estilo antes)
 
-52. [ ] (T) Esperar a referência visual do Tales; pesquisar 2D HD pixel art parecida.
-53. [ ] Folhas em volume para raptor, mímico e esqueleto, que hoje usam o sprite antigo.
+52. [x] (T) Referências do Tales recebidas em 14/10 e descritas em [flashcards/MONSTROS-NOVOS.md](flashcards/MONSTROS-NOVOS.md), com o estilo de cada família e a receita.
+53. [ ] Folha em volume para o raptor, que ainda usa o sprite antigo. O esqueleto e o mímico já têm arte nova (14/10), e o goblin e o ent também.
 54. [ ] Variantes escarlate e ancestral do Dragão (folha própria).
-55. [ ] Cogumelo saltitante (andar a céu aberto, fofo e inofensivo).
+55. [x] Cogumelo saltitante: o **Cogumelo da Necrose** (14/10) mora no Jardim, anda aos pulinhos e envenena com esporos (`scripts/sprites/cogumelo.py`).
 56. [ ] Slime de mel e abelhas (andar do jardim).
 57. [ ] Fantasma bibliotecário (chefe da Biblioteca secreta).
 
@@ -101,10 +101,15 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 ## G. Botões, interface e experiência
 
-61. [ ] Revisão geral dos botões: estados de toque, foco, som, pressionado em pixel e tamanhos no celular.
+61. [x] Revisão geral dos botões (14/10), medida com Playwright em 390×844:
+    - **Área de toque:** os botões redondos do topo e as abas passaram a ter cerca de 44 px de área de toque, sem mudar o desenho.
+    - **Foco no teclado:** contorno de foco visível em todos os botões do topo, também fora da arena.
+    - **No toque:** o "flutuar" do hover não fica mais preso depois do dedo sair.
+    - **No iPhone:** o "afundar" do pressionado funciona.
+    - **Som:** os botões já tocavam o próprio som e não precisaram de mudança.
 62. [ ] Transições entre telas com "cortina de pixels".
 63. [ ] Tutorial de 30 segundos jogável na primeira entrada (o Preceptor explica).
-64. [ ] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
+64. [x] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
 65. [ ] Acessibilidade: modo sem tremor, alto contraste e texto maior.
 
 ## H. Otimização
@@ -127,7 +132,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 75. [ ] Trilha calma e alegre para os andares a céu aberto (violão e flauta).
 76. [ ] Transição suave entre músicas (crossfade).
 77. [ ] Ambiente de chuva e trovão para a Biblioteca.
-78. [ ] (T) Confirmar o som num celular real.
+78. [x] (T) Confirmar o som num celular real.
 
 ## K. Pendências antigas
 
@@ -135,8 +140,8 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 80. [ ] Contador da rota de estudo.
 81. [ ] Áreas do baralho de demonstração.
 82. [ ] Emenda da faixa "sala" da música.
-83. [ ] (T) Colar a parte 19 do SQL no Supabase.
-84. [ ] PR #224 (abrir o jogo por cima do site, botão Menu, correção da barra no celular): trazer para a base.
+83. [x] (T) Colar a parte 19 do SQL no Supabase.
+84. [x] PR #224 (abrir o jogo por cima do site, botão Menu, correção da barra no celular): trazer para a base.
 
 ---
 
@@ -150,3 +155,6 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** Em chamas (ideia 20). Os três dragões têm `queima`; em `regras.ts` ficam `QUEIMADURA`, `Partida.queimadura` e os eventos `chamuscado`, `arde` e `apagou`. Na tela: chamas no pé do herói e selo laranja.
 - **14/10/2026:** Grude e Tremor (ideias 21 e 22), com testes no motor, mais as etiquetas de superpoder na placa do vilão (ideia 25).
 - **14/10/2026:** Gato da Biblioteca e velas da sessão (ideias 32 e 33), pintados em `vfx.py` (`gato-*` e `vela`).
+- **14/10/2026:** O Tales confirmou o som no celular (ideia 78) e colou a parte 19 no Supabase (ideia 83). O #224 foi trazido para a base pelo #237 (ideia 84). O top 3 do ranking foi refeito com largura cheia e cartões legíveis (#235).
+
+- **14/10/2026:** Combate (16, 18, 23, 24 e 64), PR draft [#248](https://github.com/talesrobertosn/ortoquestoes/pull/248), a revisar. Numerais próprios, pedregulhos, hipnose apenas visual após o primeiro Olhar acertado e carga voando para o mímico. [Detalhes e testes](flashcards/COMBATE-14-10.md).

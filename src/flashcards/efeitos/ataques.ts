@@ -4,7 +4,7 @@
  * um golpe COMUM e um CRÍTICO; o crítico é um "superpoder" com cara própria:
  *
  *   pedra     golem, escaravelho, ent        comum: pedra girando em arco · crítico: pedregulho cai do céu, chão racha
- *   veneno    serpente, leviatã, mão          comum: cusparada de veneno · crítico: o bote (presas) e nuvem tóxica
+ *   veneno    serpente, leviatã, mão, cogumelo comum: cusparada de veneno · crítico: o bote (presas) e nuvem tóxica
  *   pancada   guardião, cavaleiro, rei        comum: onda de choque · crítico: pancada que racha o chão
  *   garra     raptor, goblin, aranha...       comum: três rasgos · crítico: rasgos gigantes por cima da tela
  *   mimico    mímico                          crítico: a tampa com dentes fecha na tela
@@ -19,13 +19,14 @@
  * é coreografada pela Arena, que conhece o DOM; aqui ficam só os efeitos.
  */
 import { pixelVfx, type Palco } from './palco'
+import { tocar } from './sons'
 
 type Ponto = { x: number; y: number }
 export type Estilo = 'pedra' | 'veneno' | 'pancada' | 'garra' | 'mergulho' | 'magia' | 'feixe' | 'olhar' | 'gosma' | 'fogo' | 'mimico'
 
 const ESTILO: Record<string, Estilo> = {
   golem: 'pedra', escaravelho: 'pedra', ent: 'pedra',
-  serpente: 'veneno', leviata: 'veneno', mao: 'veneno',
+  serpente: 'veneno', leviata: 'veneno', mao: 'veneno', cogumelo: 'veneno',
   guardiao: 'pancada', cavaleiro: 'pancada', rei: 'pancada', esqueleto: 'pancada',
   raptor: 'garra', goblin: 'garra', aranha: 'garra', morcego: 'garra', corvo: 'garra', mimico: 'mimico',
   harpia: 'mergulho', espectro: 'magia', arconte: 'feixe', quimera: 'garra', gosma: 'gosma', dragao: 'fogo',
@@ -55,6 +56,11 @@ const IMPACTO: Record<Estilo, Impacto> = {
   olhar: { cor: '#f0ff6a', cor2: '#ffffff', material: ['#c8b890', '#f0ff6a', '#8a7a5a'], garras: false },
   gosma: { cor: '#7fe0a0', cor2: '#d8ffe8', material: ['#5fc88a', '#d8ffe8', '#2a8a5a'], garras: false },
   fogo: { cor: '#7fe0ff', cor2: '#e8ffff', material: ['#d9cdb0', '#7fe0ff', '#ffffff'], garras: false },
+}
+
+export function pedregulhoDaVariante(variante?: string) {
+  const tipos = ['cristal', 'obsidiana', 'rubro', 'cimento']
+  return variante && tipos.includes(variante) ? `pedregulho-${variante}` : 'pedregulho'
 }
 
 /** Projétil em pixel art de cada estilo (usado também quando o escudo bloqueia). */
@@ -122,7 +128,8 @@ export async function atacar(P: Palco, estilo: Estilo, de: Ponto, para: Ponto, r
       case 'pedra': {
         if (crit && k === 0) {
           // o pedregulho musgoso cai do alto da tela em cima do herói
-          await P.voar('pedregulho', { x: alvo.x + 70, y: -120 }, alvo, { duracao: 0.42, curva: 0.05, escala: px * 1.6, orientar: false, giro: 7 })
+          tocar('pedregulho', P.reduzido ? 0 : 1)
+          await P.voar(pedregulhoDaVariante(o.variante), { x: alvo.x + 70, y: -120 }, alvo, { duracao: 0.42, curva: 0.05, escala: px * 1.6, orientar: false, giro: 7 })
           P.efeito('rachadura', chao, { escala: px * 1.4 })
           P.efeito('poeira', { x: chao.x - 50, y: chao.y }, { escala: px * 1.3, espelhar: true })
           P.efeito('poeira', { x: chao.x + 50, y: chao.y }, { escala: px * 1.3 })
@@ -174,6 +181,7 @@ export async function atacar(P: Palco, estilo: Estilo, de: Ponto, para: Ponto, r
       case 'garra': {
         if (crit && k === 0 && estilo === 'mimico') {
           // a tampa do baú com dentes fecha na tela inteira
+          tocar('mandibula')
           const esc = Math.max(2, Math.round(px * 1.5)), larg = 64 * esc, n = Math.ceil(W / larg) + 1
           const H = window.innerHeight, meio = H / 2
           for (let j = 0; j < n; j++) {
@@ -253,6 +261,7 @@ export async function atacar(P: Palco, estilo: Estilo, de: Ponto, para: Ponto, r
       case 'fogo': {
         const tom = tomFogo(o.variante)
         if (crit && k === 0) {
+          tocar('sopro')
           await soprar(P, o.boca ?? { x: de.x - 40, y: de.y - 10 }, alvo, tom, 0.7)
           P.efeito(`faisca-${tom === 'fatuo' ? 'azul' : tom === 'ancestral' ? 'arcano' : 'fogo'}`, alvo, { escala: px * 1.5 })
           tremer(1.1)

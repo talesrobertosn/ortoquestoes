@@ -3,10 +3,11 @@ import { useEffect, useRef, type ReactNode } from 'react'
 const FOCAVEIS = 'button:not([disabled]), [href], input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])'
 
 /**
- * Modal imersivo do Torneio, por cima do site: fundo escurecido e desfocado,
- * moldura de fantasia, foco preso dentro, rolagem do fundo bloqueada e foco
- * devolvido ao fechar. Clicar no fundo não fecha (evita perder a partida sem
- * querer); fechar é pelo X ou pela tecla Esc, que passam pela confirmação.
+ * Pop-up do Torneio por cima do site: a página de onde a pessoa veio continua
+ * atrás, translúcida (pedido do Tales: não se sentir presa no jogo). Moldura de
+ * fantasia, foco preso dentro, rolagem do fundo bloqueada e foco devolvido ao
+ * fechar. O X, a tecla Esc e um clique fora do pop-up pedem para fechar (a
+ * partida pede confirmação e fica salva) e voltam para o site.
  */
 export function ModalJogo({ children, titulo, aoPedirFechar }: { children: ReactNode; titulo: string; aoPedirFechar: () => void }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -29,7 +30,11 @@ export function ModalJogo({ children, titulo, aoPedirFechar }: { children: React
       else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primeiro.focus() }
     }
     document.addEventListener('keydown', aoTeclar)
+    // no iPhone, o :active (o botão "afundando" ao toque) só aparece com algum ouvinte de toque na página
+    const toque = () => {}
+    document.addEventListener('touchstart', toque, { passive: true })
     return () => {
+      document.removeEventListener('touchstart', toque)
       window.clearTimeout(t)
       document.removeEventListener('keydown', aoTeclar)
       html.style.overflow = overflow
@@ -39,12 +44,12 @@ export function ModalJogo({ children, titulo, aoPedirFechar }: { children: React
   }, [])
 
   return (
-    <div className="fc-modal-veu">
+    <div className="fc-modal-veu" onPointerDown={(e) => { if (e.target === e.currentTarget) pedir.current() }}>
       <div className="fc-modal" role="dialog" aria-modal="true" aria-label={titulo} ref={ref} tabIndex={-1}>
         <span className="fc-modal__canto fc-modal__canto--1" aria-hidden="true" /><span className="fc-modal__canto fc-modal__canto--2" aria-hidden="true" />
         <span className="fc-modal__canto fc-modal__canto--3" aria-hidden="true" /><span className="fc-modal__canto fc-modal__canto--4" aria-hidden="true" />
         {children}
-        <button type="button" className="fc-fechar" onClick={() => pedir.current()} aria-label="Fechar jogo" title="Fechar jogo">
+        <button type="button" className="fc-fechar" onClick={() => pedir.current()} aria-label="Fechar e voltar ao site" title="Fechar e voltar ao site">
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" /></svg>
         </button>
       </div>

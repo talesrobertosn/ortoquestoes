@@ -72,32 +72,46 @@ function Movimento({ linha }: { linha: LinhaRanking }) {
   </span>
 }
 
-/** Quem mais subiu desde o último registro: a vitrine de quem está jogando. */
+/** Chama animada do Salão dos Campeões (três quadros de pixel art). */
+function ChamaSalao({ classe }: { classe: string }) {
+  return <span className={classe} aria-hidden="true">
+    {[0, 1, 2].map((k) => <img key={k} src={recurso(`ranking/salao/fogo-${k}.png`)} alt="" draggable={false} />)}
+  </span>
+}
+
+/** Brasas que sobem pelo fundo, com posições fixas para não mudar a cada render. */
+const BRASAS_ALTA = Array.from({ length: 16 }, (_, i) => ({ l: 4 + ((i * 41.3) % 92), d: 3.2 + (i % 5) * 0.7, a: -((i * 0.83) % 5), dx: ((i * 7) % 11) - 5, s: 2 + (i % 3) }))
+
+/** Quem mais subiu desde o último registro, no mesmo salão noturno do Top 3: a escadaria de quem está jogando. */
 function EmAlta({ linhas }: { linhas: LinhaRanking[] }) {
   const subindo = linhas
     .filter(linha => (linha.variacao ?? 0) > 0 || (linha.variacao_semana ?? 0) >= FOGO_NA_SEMANA)
     .sort((a, b) => (b.variacao ?? 0) - (a.variacao ?? 0) || (b.variacao_semana ?? 0) - (a.variacao_semana ?? 0) || a.posicao - b.posicao)
     .slice(0, 3)
   if (!subindo.length) return null
-  return <section className="rk-alta" aria-label="Subindo rápido">
-    <header className="rk-alta__cabeca">
-      <img src={recurso('ranking/chama.png')} width={28} height={28} alt="" draggable={false} />
-      <h2>Subindo rápido</h2>
-      <img src={recurso('ranking/chama.png')} width={28} height={28} alt="" draggable={false} />
+  return <section className="sb" aria-labelledby="sb-titulo">
+    <img className="sb__fundo" src={recurso('ranking/salao/fundo.png')} alt="" draggable={false} aria-hidden="true" />
+    <span className="sb__brasas" aria-hidden="true">
+      {BRASAS_ALTA.map((b, i) => <i key={i} style={{ left: `${b.l}%`, width: b.s, height: b.s, animationDuration: `${b.d}s`, animationDelay: `${b.a}s`, ['--dx' as string]: `${b.dx}px` }} />)}
+    </span>
+    <header className="sb__cabeca">
+      <p className="sb__selo">Escadaria do Salão</p>
+      <h2 id="sb-titulo" className="sb__titulo"><ChamaSalao classe="sb__tocha" /><span>Subindo rápido</span><ChamaSalao classe="sb__tocha" /></h2>
+      <p className="sb__sub">Quem mais ganhou posições hoje e na semana</p>
     </header>
-    <ol className="rk-alta__lista">
+    <ol className="sb__lista">
       {subindo.map((linha, i) => {
         const hoje = linha.variacao ?? 0, semana = linha.variacao_semana ?? 0
         const salto = hoje > 0 ? hoje : semana
         return (
-          <li key={linha.posicao} className={'rk-alta__item' + (linha.eh_voce ? ' rk-alta__item--voce' : '') + (i === 0 ? ' rk-alta__item--lider' : '')}>
-            <span className="rk-alta__salto"><b className="numerico">+{salto}</b><small>{hoje > 0 ? 'hoje' : 'na semana'}</small></span>
-            <span className="rk-alta__avatar">{iniciais(linha.apelido)}</span>
-            <span className="rk-alta__nome">
-              <strong>{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong>
+          <li key={linha.posicao} className={'sb__degrau' + (linha.eh_voce ? ' sb__degrau--voce' : '') + (i === 0 ? ' sb__degrau--lider' : '')} style={{ animationDelay: `${i * 0.12}s` }}>
+            <span className="sb__salto"><span className="sb__seta" aria-hidden="true">▲</span><b className="numerico">+{salto}</b><small>{hoje > 0 ? 'hoje' : 'na semana'}</small></span>
+            <span className="sb__brasao">{iniciais(linha.apelido)}</span>
+            <span className="sb__quem">
+              <strong className="sb__nome">{linha.apelido}{linha.eh_voce && <span className="sb__voce">você</span>}</strong>
               <small>{salto > 0 ? <>#{linha.posicao + salto} <span aria-hidden="true">→</span> <b>#{linha.posicao}</b></> : <>agora em <b>#{linha.posicao}</b></>}</small>
             </span>
-            {emChamas(linha) && <img className="rk-alta__fogo" src={recurso('ranking/chama.png')} width={22} height={22} alt="em chamas" draggable={false} />}
+            {emChamas(linha) && <span className="sb__fogo" role="img" aria-label="em chamas"><ChamaSalao classe="sb__chama" /></span>}
           </li>
         )
       })}
@@ -124,7 +138,7 @@ function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Perio
     lugares={linhas.slice(0, 3).map((linha) => ({
       posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
       total: linha.total.toLocaleString('pt-BR'), rotuloTotal: periodo === 'semana' ? 'na semana' : 'questões',
-      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={20} /><Fogueira dias={linha.sequencia ?? 0} tamanho={14} /><Movimento linha={linha} /></span>,
+      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>,
     }))} />
 }
 

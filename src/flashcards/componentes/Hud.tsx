@@ -43,7 +43,7 @@ function assadoDe(quem: Personagem, variante?: string): { nome: string; meta: Me
  * o desenho antigo): mantém a altura do corpo antigo, um pouco maior para dar
  * presença, arredondada a quartos de pixel para os pixels ficarem regulares.
  */
-const CRESCE: Partial<Record<Personagem, number>> = { heroi: 1.65, dragao: 1.5, guardiao: 1.17, golem: 1.3, serpente: 1.4 }
+const CRESCE: Partial<Record<Personagem, number>> = { heroi: 1.65, dragao: 1.5, guardiao: 1.17, golem: 1.3, serpente: 1.4, aranha: 0.9 }
 function escalaAssada(quem: Personagem, escala: number, meta: MetaAssada) {
   const [, , , hAntigo] = caixaDoCorpo(quem)
   // o herói cresce de verdade a cada estágio (scripts/sprites/heroi.py): a referência é sempre o

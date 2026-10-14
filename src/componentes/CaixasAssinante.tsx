@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { usarPremium } from '../conta/premium'
-import { obterPlano } from '../conta/cronograma'
+import { guardarAdiantamento, obterPlano, opcoesComAdiantamento } from '../conta/cronograma'
 import { NovidadeSimulados } from './NovidadeSimulados'
 import { usarIndice } from '../dados/usarIndice'
 import { TOP_ASSUNTOS, areaPorId } from '../dados/incidencia'
@@ -36,6 +36,14 @@ export function usarCronogramaHoje() {
   }, [premium])
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
   useEffect(() => { if (premium) conferirMetaCronograma(calculo) }, [premium, calculo])
+  // Fez além da meta hoje: guarda o dia, para amanhã a meta já vir mais leve.
+  const extra = calculo?.extraHoje ?? 0
+  useEffect(() => {
+    if (!premium || !plano || !calculo || !extra || !opcoesComAdiantamento(plano, calculo)) return
+    let vivo = true
+    guardarAdiantamento(plano, calculo).then((p) => { if (vivo && p) definirPlano(p) })
+    return () => { vivo = false }
+  }, [premium, plano, extra]) // eslint-disable-line react-hooks/exhaustive-deps
   return { premium, logado, calculo: premium ? calculo : null, pendente, plano: premium ? plano : null, definirPlano }
 }
 export type CronogramaHoje = ReturnType<typeof usarCronogramaHoje>
@@ -84,9 +92,9 @@ function CaixaTemas() {
 }
 
 const COMO_FUNCIONA = [
-  { icone: 'calendario' as const, titulo: 'Você diz a data da prova', texto: 'E quantos dias por semana consegue estudar.' },
-  { icone: 'rota' as const, titulo: 'Ele monta o caminho', texto: 'A meta de cada dia e o tema de cada semana, começando pelo que mais cai.' },
-  { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. As duas últimas semanas são de reta final, com revisão forte e modo prova.' },
+  { icone: 'calendario' as const, titulo: 'Você diz a data e o seu tempo', texto: 'A data da prova, quanto tempo tem por dia, as folgas e os dias de plantão.' },
+  { icone: 'rota' as const, titulo: 'Ele monta o caminho', texto: 'Três passadas, a primeira pelo que mais cai em todas as áreas, com a lista de cada dia e o tempo de cada parte.' },
+  { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe no máximo 25%; adiantou, alivia. Mini-simulado a cada duas semanas e reta final com revisão forte e modo prova.' },
 ]
 
 /** Trilha da jornada: as semanas do cronograma como casas de um mapa de RPG, até a prova. */
@@ -117,7 +125,7 @@ function TrilhaJornada({ semanas }: { semanas: CalculoPlano['semanas'] }) {
 
 /** Início: o cronograma em destaque, logo abaixo do topo. Quem não tem um vê como montar. */
 export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje }) {
-  const { premium, logado, calculo, pendente, plano, definirPlano } = cronograma
+  const { premium, calculo, pendente, plano, definirPlano } = cronograma
 
   const titulo = (
     <div className="cr-destaque__texto">
@@ -125,7 +133,7 @@ export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje })
       <h2 id="cr-destaque-titulo" className="cr-destaque__nome">Cronograma</h2>
       <p className="cr-destaque__lide">{calculo
         ? (calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a sua prova. Siga a meta de hoje e o cronograma cuida do resto.</>)
-        : 'Você não perde tempo decidindo o que estudar: ele diz quanto fazer por dia e qual tema em cada semana, começando pelo que mais cai. Um pouco por dia, e no dia da prova você chega pronto.'}</p>
+        : 'Você não perde tempo decidindo o que estudar: ele mostra a lista de hoje, o que vem amanhã e as semanas até a prova, passando primeiro pelo que mais cai em todas as áreas. Um pouco por dia, e no dia da prova você chega pronto.'}</p>
     </div>
   )
 
@@ -146,7 +154,7 @@ export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje })
           {calculo.metaDiaria > 0 && calculo.metaDiaria <= 40
             ? <span className="cr-blocos" aria-hidden="true" style={{ gridTemplateColumns: `repeat(${calculo.metaDiaria}, minmax(0, 1fr))` }}>{Array.from({ length: calculo.metaDiaria }, (_, i) => <span key={i} className={i < calculo.feitasHoje ? 'cheio' : ''} />)}</span>
             : <span className="cr-destaque__barra"><span style={{ width: `${pct}%` }} /></span>}
-          <p>{calculo.naRetaFinal ? (calculo.fase === 'revisao' ? 'Reta final: revisão forte do que mais cai.' : calculo.fase === 'vespera' ? 'Véspera: aquecimento leve e descanso.' : 'Reta final: modo prova, simulado e resumão.') : calculo.hoje ? <>Hoje: <strong>{calculo.hoje.nome}</strong>{calculo.hoje.focos[0] ? `, começando por ${calculo.hoje.focos[0].toLowerCase()}` : ''}.</> : 'Meta de hoje cumprida. Bom trabalho!'}</p>
+          <p>{calculo.naRetaFinal ? (calculo.fase === 'revisao' ? 'Reta final: revisão forte do que mais cai.' : calculo.fase === 'vespera' ? 'Véspera: aquecimento leve e descanso.' : 'Reta final: modo prova, simulado e resumão.') : calculo.hoje ? <>Hoje: <strong>{calculo.hoje.nome}</strong>{calculo.hoje.itens.some((i) => i.mistura) ? ` + ${calculo.hoje.itens.filter((i) => i.mistura).map((i) => i.nome).join(' e ')}` : ''}{calculo.hoje.focos[0] ? `, começando por ${calculo.hoje.focos[0].toLowerCase()}` : ''}.</> : 'Meta de hoje cumprida. Bom trabalho!'}</p>
           {pendente
             ? <a className="botao botao--claro botao--grande" href={href('/sessao')}>Continuar de onde parei · {pendente.feitas}/{pendente.total}</a>
             : <a className="botao botao--ouro botao--grande" href={href('/cronograma')}>{calculo.hoje && calculo.faltaHoje ? 'Seguir o cronograma' : 'Abrir o cronograma'}</a>}
@@ -173,8 +181,8 @@ export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje })
         {premium
           ? <a className="botao botao--claro botao--grande" href={href('/cronograma')}>Montar meu cronograma</a>
           : <>
-            <a className="botao botao--ouro botao--grande" href={href(logado ? '/cronograma' : '/conta?modo=entrar')}>{logado ? 'Ver a prévia do meu cronograma' : 'Entrar e ver o meu cronograma'}</a>
-            <span className="cr-destaque__nota"><SeloAssinante /> A prévia é grátis; seguir o cronograma é do assinante.</span>
+            <a className="botao botao--ouro botao--grande" href={href('/cronograma')}>Ver um exemplo com o meu histórico</a>
+            <span className="cr-destaque__nota"><SeloAssinante /> Ver o exemplo é grátis; criar e seguir o seu é do assinante.</span>
           </>}
       </div>
     </section>

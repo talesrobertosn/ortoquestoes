@@ -24,3 +24,6 @@
 }
 .concluir-flutuante:hover { background: #ffdf95; }
 @media (min-width: 56rem) { .concluir-flutuante { bottom: 1.5rem; } }
+
+/* Jogo dos Flashcards abrindo (o pop-up ainda baixando): véu escuro por cima do site, com o guerreiro. */
+.espera-jogo { position: fixed; inset: 0; z-index: 70; display: grid; place-items: center; background: rgba(6, 5, 10, .78); --texto: #f6ead0; }

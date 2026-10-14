@@ -4,9 +4,47 @@
 
 **Orientação mais recente:** [Jornada única](JORNADA-UNICA.md), 13/10/2026: ranking sem níveis, progressão por turma e histórico pessoal, entrada com Cripta/Biblioteca e cronograma dentro de Flashcards. As seções antigas abaixo são histórico quando conflitarem.
 
-Atualizado em 13/10/2026, 21h. Tudo o que foi feito está mesclado na base e publicado; não há PR aberto.
+Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
-## PAROU AQUI (14/10/2026, madrugada): leia isto primeiro
+## PAROU AQUI (14/10/2026, tarde): leia isto primeiro
+
+### Para o ChatGPT, o Codex ou outro agente continuar
+
+Leia nesta ordem:
+1. `AGENTS.md`, com as regras do projeto.
+2. Este arquivo.
+3. [../PLANO-DE-IDEIAS.md](../PLANO-DE-IDEIAS.md): as 84 ideias com checklist. Marque `[x]` no que fizer.
+4. [MONSTROS-NOVOS.md](MONSTROS-NOVOS.md): o próximo trabalho grande. Lá estão as referências de monstros que o Tales mandou, descritas, o estilo de cada família, o que já tem arte e a receita para fazer um monstro.
+
+**Mensagem pronta para colar no agente:**
+
+> Repositório `talesrobertosn/ortoquestoes`, base `claude/pdfs-questoes-tp64dr` (o merge nela publica o site). Leia `AGENTS.md`, `docs/flashcards/CONTINUAR.md`, `docs/PLANO-DE-IDEIAS.md` e `docs/flashcards/MONSTROS-NOVOS.md`. Continue pela "Ordem sugerida" de MONSTROS-NOVOS.md: monstros em pixel art feitos por script, nunca imagem baixada ou gerada por IA. Trabalhe numa branch nova a partir da base e abra um PR para ela. Antes do PR, rode `npm test`, `npx tsc --noEmit`, `npm run build` e capturas com Playwright em 1400×860, 390×844 e 844×390. Ao terminar, marque o item no plano e atualize o topo de CONTINUAR.md.
+
+### Estado de agora
+
+- **Movimento suave (14/10/2026, noite):** pedido do Tales, o flashcard "sambava" ao virar e os movimentos estavam duros.
+  - O flashcard desliza até a posição nova em vez de pular (`efeitos/deslizar.ts`, `useDeslizar`, usado no `Cartao` e no herói e botão da Batalha no celular).
+  - No celular, o flashcard fica preso pelo topo, e o verso do Estudo não troca mais as linhas do grid (o painel caía cerca de 140 px).
+  - Giro, compra, golpes, tremores, bote do adversário (parte da pose de preparo) e botão principal com curvas suaves; alternativas e botões entram em cascata.
+  - Giro duplo corrigido: a chegada do baralho agora é a classe `fc-carta--chega`, só no flashcard novo (antes repetia depois de cada virada). Na Batalha, a chave do flashcard não muda ao responder (`chaveDaMesa`), e o giro cancela o pedido anterior.
+  - Ao seguir, uma cópia do flashcard anterior desliza para o descarte enquanto o novo chega (`descartar` em `Cartao.tsx`).
+  - Tudo desligado em "Reduzir movimento". Fim do bloco "Movimento suave" em `Flashcards.css`.
+- **Na base e publicado:**
+  - #228 e #229: golpes em pixel art; os superpoderes Envenenado, Em chamas, Grude e Tremor; o humor da Biblioteca com gato e velas; o Jardim Suspenso.
+  - #235: top 3 do ranking com largura cheia.
+- **PR #237**, no branch `claude/eloquent-brahmagupta-u85fiy`:
+  - o jogo abre como pop-up sobre o site;
+  - botão Menu na partida;
+  - correção do topo no celular;
+  - a escolha "entrar com ou sem som" agora é perguntada uma vez só por aparelho. Fica guardada em `flashcards:som-escolhido`, nas chaves globais de `estado/armazenamento.ts`.
+- **O Tales confirmou:** o som funciona no celular e a parte 19 do SQL já foi colada no Supabase.
+- **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). O goblin, o esqueleto, o ent (Guardião da Fise), o mímico, a aranha e o Cogumelo da Necrose (monstro novo) já estão prontos (`scripts/sprites/goblin.py`, `esqueleto.py`, `ent.py`, `mimico.py`, `aranha.py` e `cogumelo.py`). **Os monstros estão em pausa por pedido do Tales** ("vamos continuar com mais monstrinhos futuramente"); só retome quando ele pedir. Depois, pela ordem do plano:
+  - ~~sons próprios dos golpes novos (ideia 17)~~: feitos;
+  - ~~revisão dos botões (ideia 61)~~: feita;
+  - cenários pintados que faltam (ideia 51): o Salão, a Caverna, o Laboratório, a Catacumba, o Templo, a Passarela, a Forja e o Coliseu já foram pintados (`scripts/cenarios/salao.py`, `caverna.py`, `laboratorio.py`, `catacumba.py`, `templo.py`, `passarela.py`, `forja.py` e `coliseu.py`); treino, torre e arquivo foram concluídos no PR draft #247, com capturas e geradores em [CENARIOS-PENDENTES-14-10.md](CENARIOS-PENDENTES-14-10.md). Não publicados. **Nenhum enfeite de cenário pode ter osso, caveira ou outra anatomia** (regra de `docs/flashcards/README.md`).
+
+## Antes (14/10/2026, madrugada)
+
 
 **Lista de ideias com checklist (o plano):** [../PLANO-DE-IDEIAS.md](../PLANO-DE-IDEIAS.md). Marque o que fizer. Resumo da madrugada para o Tales: [RELATORIO-MANHA-14-10.md](RELATORIO-MANHA-14-10.md).
 
@@ -18,6 +56,7 @@ Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com PR para a base `cl
   - O `Palco` (`efeitos/palco.ts`) ganhou `efeito`, `voar`, `rasgo` e `espadaGigante`.
   - O ataque de cada vilão (comum e crítico) está em `efeitos/ataques.ts`; a investida (CSS `fc-investida--*`) e o terremoto (`fc-terremoto`), na `Arena.tsx`.
   - Para conferir: `python3 scripts/sprites/vfx.py` (gera e salva a prévia) e `node scripts/tmp-tela/golpes.mjs` (capturas; fica fora do git).
+- **Combate (14/10, em PR draft):** ideias 16, 18, 23, 24 e 64 concluídas no PR draft #248, sem merge. Hipnose após o primeiro Olhar que atinge o herói; mímico mantém roubo de carga. [COMBATE-14-10.md](COMBATE-14-10.md) traz testes, capturas e compatibilidade.
 - **Envenenado:**
   - campo `envenena` no bestiário;
   - `Partida.veneno`, `VENENO` e os eventos `envenenado`, `veneno` e `veneno-curado` em `regras.ts`;
@@ -192,6 +231,9 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
   temática do jogo foi para `#/flashcards/entrada`; `cripta`, `torre` e `biblioteca` continuam iguais.
   `#/flashcards/desempenho` e `#/flashcards/cronograma` são páginas do site. `#/flashcards/ranking`
   leva a `#/ranking?aba=cripta`. Só as rotas do jogo exigem conta (`PAGINAS_DO_SITE_FLASHCARDS` em `App.tsx`).
+- **Pop-up (pedido do Tales).** As rotas do jogo abrem por cima da última página do site
+  (`src/flashcards/fundo.ts` + `paginaDaRota` em `App.tsx`). No computador o site fica translúcido
+  atrás; X, Esc, clique fora e "Voltar ao site" voltam para ela; o botão "Menu" leva à entrada.
 - **Nome (regra do Tales).** Fora do jogo é sempre "Flashcards" ou "Torneio de Flashcards" (menu,
   capa, central, ranking, planos, títulos de aba). "Cripta" só dentro do jogo. O ranking do site é
   `#/ranking?aba=flashcards` (`aba=cripta` continua funcionando por link antigo).
@@ -231,7 +273,7 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
 
 ## Próximos passos sugeridos (em ordem)
 
-1. **Folhas em volume** para raptor, mímico e esqueleto, que estreiam cedo. Use o modelo de `scripts/sprites/gosma.py` e `python3 scripts/sprites/assar.py <nome>`.
+1. **Folha em volume** para o raptor, que estreia cedo (o esqueleto, o goblin, o ent, o mímico e o Cogumelo da Necrose já têm arte nova, de 14/10). Use o modelo de `scripts/sprites/gosma.py` e `python3 scripts/sprites/assar.py <nome>`.
 2. **Pintar Torre e Salão** com `scripts/cenarios/` (veja "Como fazer um cenário novo" em ARTE.md) e ligar em `CENAS_PINTADAS`.
 3. **Variantes escarlate e ancestral do Dragão**: acrescente `VARIANTES` em `scripts/sprites/dragao.py`.
 4. **Escudo do herói no estágio 6**: reduzir (`PROP[6]['escudo']` em `scripts/sprites/heroi.py`).

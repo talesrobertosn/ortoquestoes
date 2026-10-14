@@ -1,3 +1,4 @@
+import { embaralharVisual } from './hipnose'
 /**
  * Motor de regras da Batalha: funções puras, sem tela, sem relógio e sem
  * sorteio solto. Cada ação recebe o estado e devolve { estado, eventos }; os
@@ -86,6 +87,8 @@ export interface Jogada {
   id: string
   /** Ordem em que as alternativas aparecem (índices de `opcoes`). */
   ordem: number[]
+  /** Hipnose: apresentação das posições; a ordem canônica permanece intacta. */
+  visual?: number[]
   /** Posições (na ordem mostrada) eliminadas pela pista. */
   eliminadas: number[]
   respondida: boolean
@@ -121,6 +124,8 @@ export interface EstadoInimigo {
   brasas: number
   /** A gosma já se dividiu neste confronto. */
   dividido: boolean
+  hipnoseUsada?: boolean
+  hipnosePendente?: boolean
 }
 
 export type Fase = 'pergunta' | 'resposta' | 'recompensa' | 'portas' | 'loja' | 'sabio' | 'sala' | 'fim'
@@ -287,6 +292,7 @@ export type Evento =
   | { tipo: 'chamuscado'; dano: number; faltam: number }
   | { tipo: 'arde'; valor: number; faltam: number }
   | { tipo: 'apagou'; motivo: 'tempo' | 'dificil' }
+  | { tipo: 'hipnose' }
   | { tipo: 'grudou' }
   | { tipo: 'desgrudou' }
   | { tipo: 'tremor'; poder: TipoPoder }
@@ -496,7 +502,8 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const carregado = !!i.carrega && (p.inimigo.rodadas + 1) % i.carrega.aCada === 0
     const brilhante = b < CHANCE_BRILHANTE
     const atual: Jogada = { id, ordem, eliminadas: [], respondida: false, escolha: null, assistida: false, criticoInimigo, carregado, brilhante }
-    return { estado: { ...p, baralho, descarte, semente, atual, fase: 'pergunta', rota }, eventos: [{ tipo: 'compra', id, criticoInimigo, carregado, brilhante }] }
+    if (p.inimigo.hipnosePendente) atual.visual = embaralharVisual(ordem.length, semente)
+    return { estado: { ...p, inimigo: { ...p.inimigo, hipnosePendente: false }, baralho, descarte, semente, atual, fase: 'pergunta', rota }, eventos: [{ tipo: 'compra', id, criticoInimigo, carregado, brilhante }] }
   }
 
   function novaPartida(semente: number, config: ConfigPartida | string[] = {}): Resultado {
@@ -797,6 +804,11 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
             }
           }
         }
+      }
+      // Uma única hipnose por confronto, apenas quando o primeiro Olhar realmente acerta.
+      if (e.fase !== 'fim' && i.variante === 'basilisco' && carregado && !def.bloqueado && def.final > 0 && !e.inimigo.hipnoseUsada) {
+        e = { ...e, inimigo: { ...e.inimigo, hipnoseUsada: true, hipnosePendente: true } }
+        eventos.push({ tipo: 'hipnose' })
       }
       // a picada envenena (ou reforça o veneno); errar, envenenado, recomeça a conta dos acertos
       if (e.fase !== 'fim' && i.envenena && !def.bloqueado && def.final > 0) {

@@ -1,21 +1,24 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
-import { marcarAvisoSimulados, obterPlano, salvarPlano } from '../conta/cronograma'
+import { guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano } from '../conta/cronograma'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
-import { usarSessao } from '../estado/sessao'
+import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, dataLocal, idsDoDia, incluiSimulados, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
-import { areasDoDiaRevisao, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, mapaDeRisco, pontosCegos, temasEsquecidos } from '../dados/hubCronograma'
-import { idsDoFoco, type AreaIncidencia, type Foco } from '../dados/incidencia'
+import { calcularPlano, dataLocal, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { areasDoDiaRevisao, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
+import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
-import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, FasesCronograma, HojeRetaFinal, MapaRisco } from './CronogramaHub'
+import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, HojeRetaFinal, MapaRisco } from './CronogramaHub'
+import { CartaoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
+import { corDaArea } from '../dados/coresAreas'
+import '../estilos/paginas/CronogramaPainel.css'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
@@ -30,7 +33,6 @@ const DATA_TEOT = '2027-01-10'
 /** Semanas que o não assinante vê na prévia do próprio cronograma. */
 const SEMANAS_PREVIA = 2
 const curta = (d: Date) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
-const longa = (iso: string) => dataLocal(iso).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })
 type Respondidas = Record<string, RegistroQuestao>
 
 function amanhaIso() {
@@ -43,19 +45,50 @@ function amanhaIso() {
  * pode preencher a data e ver a prévia do próprio cronograma (hoje e as duas
  * primeiras semanas), com o resto guardado.
  */
+/** Só no ambiente de desenvolvimento: #/cronograma?demo=1 mostra o painel do assinante com um plano de exemplo. */
+const DEMO = import.meta.env.DEV && typeof location !== 'undefined' && location.hash.includes('demo=1')
+const planoDemo = (): PlanoSalvo => {
+  const criado = new Date(); criado.setDate(criado.getDate() - 6)
+  return { data_prova: DATA_TEOT, intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: criado.toISOString(), incluir_simulados: true, opcoes: { diasLeves: [3], qtdLeve: 15 } }
+}
+
+/** Respostas de exemplo do modo demo: ~50 por dia nos últimos dias, 70% de acerto, nas duas primeiras áreas do plano. */
+function respondidasDemo(indice: Indice): Respondidas {
+  const r: Respondidas = {}
+  const temas = ['trauma', 'pediatria'].map((slug) => indice.temas.findIndex((t) => t.slug === slug))
+  const alvos = indice.questoes.filter((q) => !q.dup && !q.ar && q.an !== 1 && temas.includes(q.t))
+  let k = 0
+  for (let d = 5; d >= 0; d--) {
+    const dia = new Date(); dia.setDate(dia.getDate() - d)
+    if (dia.getDay() === 0) continue
+    // `demo=1&feita` mostra o dia com a meta de hoje já feita (e além); `demo=1&pendente`, com pouco feito.
+    const deHoje = location.hash.includes('feita') ? 95 : location.hash.includes('pendente') ? 5 : 23
+    for (let i = 0; i < (d === 0 ? deHoje : d === 3 ? 12 : 55) && k < alvos.length; i++, k++) {
+      const em = dia.getTime() - i * 60_000; const c = (k * 7) % 10 < 7
+      r[alvos[k].id] = { c, q: em, historico: [{ em, correta: c }] } as unknown as RegistroQuestao
+    }
+  }
+  return r
+}
+
 export function PlanoEstudo() {
-  const { premium, logado, carregado } = usarPremium()
+  const acesso = usarPremium()
+  const premium = acesso.premium || DEMO, logado = acesso.logado, carregado = acesso.carregado || DEMO
   const { indice } = usarIndice()
-  const [respondidas] = usarArmazenado<Respondidas>('respondidas', {})
+  const [respondidasReais] = usarArmazenado<Respondidas>('respondidas', {})
+  const respondidas = useMemo(() => (DEMO && indice ? respondidasDemo(indice) : respondidasReais), [respondidasReais, indice])
   const { sessao, iniciar } = usarSessao()
   const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
   const [editando, definirEditando] = useState(false)
   const [erro, definirErro] = useState('')
+  const [salvandoOpcoes, definirSalvandoOpcoes] = useState(false)
   const [diagnosticoFeito, marcarDiagnostico] = usarArmazenado<string | null>('cronograma:diagnostico', null)
+  const [feitosDia, definirFeitosDia] = usarArmazenado<FeitosDoDia>('cronograma:dia', { data: '' })
   const { ritmo } = usarRitmoRevisao()
 
   useEffect(() => {
     if (!premium) { definirPlano(null); return }
+    if (DEMO) { definirPlano(planoDemo()); return }
     let vivo = true
     obterPlano()
       .then((p) => { if (vivo) { definirPlano(p); definirEditando(!p) } })
@@ -65,6 +98,21 @@ export function PlanoEstudo() {
 
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
   useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
+  // Fez além da meta hoje: guarda o dia (e a meta dele), para amanhã a meta já vir mais leve.
+  const extraHoje = calculo?.extraHoje ?? 0
+  useEffect(() => {
+    if (DEMO || !plano || !calculo || !extraHoje || !opcoesComAdiantamento(plano, calculo)) return
+    let vivo = true
+    guardarAdiantamento(plano, calculo).then((p) => { if (vivo && p) definirPlano(p) })
+    return () => { vivo = false }
+  }, [plano, extraHoje]) // eslint-disable-line react-hooks/exhaustive-deps
+  // Vindo do fim da sessão ("adiantar"): rola até o painel.
+  const irAoAdiantar = typeof location !== 'undefined' && location.hash.includes('adiantar=1')
+  useEffect(() => {
+    if (!irAoAdiantar || !calculo) return
+    const t = setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250)
+    return () => clearTimeout(t)
+  }, [irAoAdiantar, !!calculo]) // eslint-disable-line react-hooks/exhaustive-deps
   const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
   // Os números do painel (constância, risco, esquecimento...) só mudam quando muda o histórico.
   const dadosHub = useMemo(() => {
@@ -79,10 +127,12 @@ export function PlanoEstudo() {
       esquecidos: calculo.fase === 'conteudo' ? temasEsquecidos(indice, respondidas, calculo, plano) : [],
       riscos: mapaDeRisco(indice, respondidas), cegos: pontosCegos(indice, respondidas),
       desempenho: desempenhoPorArea(calculo),
+      prontidao: prontidaoPorArea(calculo),
       media: pesoTotal ? Math.round(temas.reduce((s, t) => s + (t.acerto ?? t.acertoEstimado!) * t.respondidas, 0) / pesoTotal) : null,
       revisoesHoje: idsRevisaoHoje(respondidas, ritmo).size,
       mostrarDiagnostico: !diagnosticoFeito && calculo.fase === 'conteudo' && respondidasNoAcervo(indice, respondidas, simulados) < 40,
       simulados: contagemSimulados(indice, respondidas),
+      semana: resumoDaSemana(indice, respondidas, calculo),
       areasRevisao,
       idsForte: areasRevisao.length ? idsRevisaoForte(indice, respondidas, areasRevisao.map((a) => a.slug), calculo.metaMedia) : [],
       erros: contarErrosQueImportam(indice, respondidas),
@@ -94,30 +144,81 @@ export function PlanoEstudo() {
   if (!premium) return <PreviaCronograma indice={indice} respondidas={respondidas} />
   if (plano === undefined) return <Carregando linhas={5} rotulo="Montando seu cronograma" />
 
-  function comecarHoje() {
-    if (!indice || !calculo?.hoje) return
-    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
-    const filtros = { ...FILTROS_VAZIOS, temas: [calculo.hoje.slug], situacao: 'naoRespondidas' as const, embaralhar: true, limite: calculo.hoje.n }
-    iniciar(filtros, idsDoDia(indice, calculo.hoje.slug, respondidas, calculo.hoje.n, incluiSimulados(plano)), { origem: 'cronograma' })
+  const confirmarTroca = () => !sessao || !!sessao.concluidaEm || window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')
+
+  /** A sessão do dia: a área principal com a mistura espalhada (as duas da lista do dia), com o que a pessoa pediu para adiantar. */
+  function comecarHoje(c: CalculoPlano | null = calculo, p: PlanoSalvo | null | undefined = plano) {
+    if (!indice || !c?.hoje || !p) return
+    if (!confirmarTroca()) return
+    const itens = c.hoje.itens.length ? c.hoje.itens : [{ slug: c.hoje.slug, n: c.hoje.n, mistura: false }]
+    const ids = idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), respondidas, incluiSimulados(p))
+    const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
+    iniciar(filtros, ids, { origem: 'cronograma' })
     navegar('/sessao')
   }
 
   /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
   function comecarIds(ids: string[], origem: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar', temas: string[] = []) {
     if (!ids.length) return
-    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
+    if (!confirmarTroca()) return
     iniciar({ ...FILTROS_VAZIOS, temas, embaralhar: false, limite: ids.length }, ids, { origem })
     navegar('/sessao')
   }
 
-  function adiantar(n: number) {
-    if (!indice || !calculo) return
-    const tema = proximoTema(calculo)
-    if (!tema) return
-    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
-    const filtros = { ...FILTROS_VAZIOS, temas: [tema.slug], situacao: 'naoRespondidas' as const, embaralhar: true, limite: n }
-    iniciar(filtros, idsDoDia(indice, tema.slug, respondidas, n, incluiSimulados(plano)), { origem: 'cronograma' })
+  /** Mini-simulado: 30 questões já vistas, cronometradas (1,5 min cada). */
+  function comecarMini() {
+    if (!indice) return
+    const ids = idsMiniSimulado(indice, respondidas)
+    if (!ids.length || !confirmarTroca()) return
+    marcarFeito('mini')
+    iniciar({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90) })
     navegar('/sessao')
+  }
+
+  /**
+   * Adiantar n questões: soma ao que já foi adiantado hoje e guarda no plano (o motor tira
+   * isso de amanhã em diante). Com a meta de hoje feita, já abre a sessão com elas.
+   */
+  async function adiantar(n: number) {
+    if (!indice || !calculo || !plano) return
+    const pedido = Math.max(calculo.extraHoje, calculo.adiantarPedido) + n
+    const opcoes = opcoesComAdiantamento(plano, calculo, pedido)
+    const novo = opcoes ? { ...plano, opcoes } : plano
+    definirPlano(novo)
+    if (calculo.faltaHoje === 0) comecarHoje(calcularPlano(indice, respondidas, novo), novo)
+    if (DEMO || !opcoes) return
+    definirSalvandoOpcoes(true)
+    try { const salvo = await guardarAdiantamento(plano, calculo, pedido); if (salvo && calculo.faltaHoje > 0) definirPlano(salvo) } finally { definirSalvandoOpcoes(false) }
+  }
+
+  /** Cancela o que foi pedido e ainda não foi feito (o que já foi feito a mais continua valendo). */
+  async function cancelarAdiantar() {
+    if (!calculo || !plano) return
+    const opcoes = opcoesComAdiantamento(plano, calculo, 0)
+    if (!opcoes) return
+    definirPlano({ ...plano, opcoes })
+    if (DEMO) return
+    definirSalvandoOpcoes(true)
+    try { const salvo = await guardarAdiantamento(plano, calculo, 0); if (salvo) definirPlano(salvo) } finally { definirSalvandoOpcoes(false) }
+  }
+
+  function marcarFeito(chave: keyof Omit<FeitosDoDia, 'data'>) {
+    const hojeChave = chaveHoje()
+    definirFeitosDia((atual) => ({ ...(atual.data === hojeChave ? atual : { data: hojeChave }), [chave]: true }))
+  }
+
+  async function semanaDificil(ativar: boolean) {
+    if (!plano) return
+    const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+    const seg = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
+    const chave = `${seg.getFullYear()}-${String(seg.getMonth() + 1).padStart(2, '0')}-${String(seg.getDate()).padStart(2, '0')}`
+    const atuais = (plano.opcoes?.semanasDificeis ?? []).filter((s) => s >= chave)
+    const opcoes = { ...(plano.opcoes ?? {}), semanasDificeis: ativar ? [...new Set([...atuais, chave])] : atuais.filter((s) => s !== chave) }
+    definirSalvandoOpcoes(true); definirErro('')
+    // Mostra na hora; o servidor confirma em seguida.
+    definirPlano({ ...plano, opcoes })
+    if (DEMO) { definirSalvandoOpcoes(false); return }
+    try { const salvo = await salvarOpcoes(plano, opcoes); if (salvo) definirPlano(salvo) } catch { definirErro('Não foi possível salvar agora. A semana difícil ficou só neste aparelho.') } finally { definirSalvandoOpcoes(false) }
   }
 
   const hub = montarHub()
@@ -139,52 +240,78 @@ export function PlanoEstudo() {
       aoTreinarFoco: (area: AreaIncidencia, foco: Foco) => {
         const ids = idsDoFoco(indice, area, foco)
         const ordem = [...ids.filter((id) => respondidas[id]?.c === false), ...ids.filter((id) => !respondidas[id]), ...ids.filter((id) => respondidas[id] && respondidas[id].c !== false)].slice(0, 20)
-        if (!ordem.length) return
-        if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
+        if (!ordem.length || !confirmarTroca()) return
         const subtemas = [area.subtema, foco.noAcervo ?? foco.nome].filter((s): s is string => !!s)
         iniciar({ ...FILTROS_VAZIOS, subtemas, embaralhar: false, limite: ordem.length }, ordem)
         navegar('/sessao')
       },
       aoIncluirSimulados: () => definirEditando(true),
+      aoMini: comecarMini,
+      aoMarcar: marcarFeito,
+      feitosDia: feitosDia.data === chaveHoje() ? feitosDia : { data: chaveHoje() },
+      minutosQuestao: minutosPorQuestao(lerHistorico()),
+      aoSemanaDificil: semanaDificil,
+      aoCancelarAdiantar: cancelarAdiantar,
+      salvandoOpcoes,
     }
   }
 
   if (editando || !plano || !calculo) {
     return <FormularioPlano indice={indice} respondidas={respondidas} atual={plano} aoCancelar={plano ? () => definirEditando(false) : undefined}
-      aoSalvar={(novo) => { marcarAvisoSimulados(); definirPlano(novo); definirEditando(false) }} />
+      aoSalvar={(novo, fazerDiagnostico) => {
+        marcarAvisoSimulados(); definirPlano(novo); definirEditando(false)
+        if (fazerDiagnostico) { marcarDiagnostico(new Date().toISOString()); comecarIds(idsDiagnostico(indice, respondidas, incluiSimulados(novo)), 'diagnostico') }
+      }} />
   }
 
   return (
-    <div className="empilha-2 pe">
+    <div className="empilha-2 pe cp">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} />
-      <div className="linha">
-        <button type="button" className="botao" onClick={() => definirEditando(true)}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
-      </div>
+      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
     </div>
   )
 }
 
-/**
- * O próximo tema da fila do cronograma, para quem quer fazer mais que a meta:
- * o tema desta semana que ainda tem questões, ou o primeiro da semana seguinte.
- */
-function proximoTema(calculo: CalculoPlano): { slug: string; nome: string; semana: Date; estaSemana: boolean } | null {
-  const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
-  for (const s of calculo.semanas) {
-    if (!s.temas.length || s.fim < hoje) continue
-    return { slug: s.temas[0].slug, nome: s.temas[0].nome, semana: s.inicio, estaSemana: s.atual }
-  }
-  return null
-}
+/** O que a pessoa marcou como feito hoje fora das questões (resumão, flashcards, mini-simulado). */
+interface FeitosDoDia { data: string; resumao?: boolean; flashcards?: boolean; mini?: boolean }
+const chaveHoje = () => { const d = new Date(); return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}` }
 
 /** Sessão do cronograma que ficou pela metade (a pessoa fechou o site no meio). */
-function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: number; tema: string } | null {
+function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: number; tema: string; simulado: boolean } | null {
   if (!sessao || sessao.concluidaEm || !sessao.origem) return null
   const feitas = Object.keys(sessao.respostas).length
   if (feitas >= sessao.ids.length) return null
-  return { feitas, total: sessao.ids.length, tema: sessao.filtros.temas[0] ?? '' }
+  return { feitas, total: sessao.ids.length, tema: sessao.filtros.temas[0] ?? '', simulado: !!sessao.simulado }
+}
+
+/** Resumo da semana que passou (para domingo e segunda): questões, dias, acerto e a área mais fraca. */
+function resumoDaSemana(indice: Indice, respondidas: Respondidas, calculo: CalculoPlano) {
+  const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+  if (hoje.getDay() !== 0 && hoje.getDay() !== 1) return null
+  const fim = hoje.getDay() === 1 ? hoje.getTime() : hoje.getTime() + 86_400_000
+  const inicio = fim - 7 * 86_400_000
+  const temaDe = new Map(indice.questoes.map((q) => [q.id, q.t]))
+  let feitas = 0, certas = 0, validas = 0
+  const dias = new Set<string>()
+  const porTema = new Map<number, { c: number; v: number }>()
+  for (const [id, r] of Object.entries(respondidas)) {
+    for (const h of r.historico ?? (r.q !== undefined ? [{ em: r.q, correta: r.c }] : [])) {
+      if (h.em < inicio || h.em >= fim) continue
+      feitas++; dias.add(new Date(h.em).toDateString())
+      if (h.correta === null) continue
+      validas++; if (h.correta) certas++
+      const t = temaDe.get(id)
+      if (t !== undefined) { const x = porTema.get(t) ?? { c: 0, v: 0 }; x.v++; if (h.correta) x.c++; porTema.set(t, x) }
+    }
+  }
+  const fraca = [...porTema].filter(([, x]) => x.v >= 8).sort((a, b) => a[1].c / a[1].v - b[1].c / b[1].v)[0]
+  const proxima = calculo.dias.find((d) => d.data.getTime() >= fim && d.itens.length)
+  return {
+    feitas, dias: dias.size, acerto: validas >= 5 ? Math.round((certas / validas) * 100) : null,
+    fraca: fraca ? indice.temas[fraca[0]]?.nome ?? null : null,
+    proxima: proxima ? [...new Set(calculo.dias.filter((d) => d.data.getTime() >= fim && d.data.getTime() < fim + 7 * 86_400_000).flatMap((d) => d.itens.filter((i) => !i.mistura).map((i) => i.nome)))].join(', ') : null,
+  }
 }
 
 /** Tudo o que o painel do assinante mostra além do plano (calculado em PlanoEstudo). */
@@ -195,225 +322,188 @@ export interface HubDados {
   riscos: ReturnType<typeof mapaDeRisco>
   cegos: ReturnType<typeof pontosCegos>
   desempenho: ReturnType<typeof desempenhoPorArea>
+  prontidao: ReturnType<typeof prontidaoPorArea>
   media: number | null
   revisoesHoje: number
   mostrarDiagnostico: boolean
   simulados: ReturnType<typeof contagemSimulados>
+  semana: ReturnType<typeof resumoDaSemana>
   retaFinal: Parameters<typeof HojeRetaFinal>[0]['acoes']
   aoDiagnostico: () => void
   aoReativar: (slug: string) => void
   aoTreinarFoco: (area: AreaIncidencia, foco: Foco) => void
   aoIncluirSimulados: () => void
+  aoMini: () => void
+  aoMarcar: (chave: 'resumao' | 'flashcards' | 'mini') => void
+  feitosDia: FeitosDoDia
+  minutosQuestao: number
+  aoSemanaDificil: (ativar: boolean) => void
+  aoCancelarAdiantar: () => void
+  salvandoOpcoes: boolean
 }
 
-export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string } | null; hub?: HubDados | null }) {
-  // Dia da semana marcado como folga: sem tarefa hoje, e isso não é "meta cumprida".
-  const folgaHoje = plano.folgas.includes(new Date().getDay())
-  const proximo = proximoTema(calculo)
+export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
+  const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
   const [explicacaoAberta] = useState(primeiraVisita)
-  const podeAdiantar = aberto && !!aoAdiantar && !!proximo && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
-  const nomeTemaPendente = pendente ? calculo.temas.find((t) => t.slug === pendente.tema)?.nome ?? 'a sessão do cronograma' : ''
+  const minutos = hub?.minutosQuestao ?? MINUTOS_POR_QUESTAO
   const naRetaFinalComRoteiro = aberto && !!hub && (calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera')
-  const ritmoTexto = !aberto || Math.abs(calculo.ritmo) <= 5 || calculo.esperadoAteHoje < 20
-    ? { classe: 'em-dia', texto: aberto ? 'Em dia com o cronograma' : 'Começando hoje' }
-    : calculo.ritmo > 0 ? { classe: 'frente', texto: `${calculo.ritmo}% à frente do cronograma` } : { classe: 'atras', texto: `${-calculo.ritmo}% atrás do cronograma` }
-  const progresso = calculo.alvo ? Math.min(100, Math.round((calculo.feitas / calculo.alvo) * 100)) : 100
-  const reforcados = calculo.temas.filter((t) => t.reforcado).sort((a, b) => (a.acerto ?? 0) - (b.acerto ?? 0))
   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
   const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
+  const feitos = hub?.feitosDia ?? { data: '' }
 
-  const linhaSemana = (s: CalculoPlano['semanas'][number], i: number) => (
-    <li key={i} className={'pe-semana pe-semana--detalhe' + (s.atual ? ' pe-semana--atual' : '')}>
-      <details open={s.atual && aberto}>
-        <summary className="pe-semana__linha">
-          <span className="pe-semana__data">{curta(s.inicio)} – {curta(s.fim)}{s.atual && <em>esta semana</em>}</span>
-          <span className="pe-semana__temas">
-            {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip">{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do cronograma: revisão e questões livres.</span>}
-          </span>
-          <span className="pe-semana__total numerico">{s.total}<Icone nome="baixo" tamanho={14} /></span>
-          {s.temas.length > 0 && <span className="pe-semana__resumo">
-            {s.temas.map((t) => <span key={t.slug}><b>{t.nome}:</b> {t.assuntos.slice(0, 3).map((a) => a.nome).join(', ')}{t.assuntos.length > 3 ? ` e mais ${t.assuntos.length - 3}` : ''}</span>)}
-            <em>Abra para ver por que estes e quanto cada um cai</em>
-          </span>}
-        </summary>
-        {s.temas.length > 0 && <div className="pe-semana__corpo">
-          <p className="pe-semana__explica">{s.diasEstudo} {s.diasEstudo === 1 ? 'dia' : 'dias'} de estudo, cerca de <b>{Math.round(s.total / Math.max(1, s.diasEstudo))} questões por dia</b>.</p>
-          {s.temas.map((t) => (
-            <div key={t.slug} className="pe-semana__tema">
-              <div className="pe-semana__tema-cabeca">
-                <p className="pe-semana__tema-nome"><strong>{t.nome}</strong><span className="numerico">{t.n} questões</span></p>
-                {t.posicaoArea && <span className="pe-semana__area">{t.posicaoArea}ª área em número de questões</span>}
-              </div>
-              <p className="pe-semana__porque">
-                <span>{t.assuntos.some((a) => a.nivel >= 3)
-                  ? <>Estas {t.n} questões são dos assuntos de {t.nome.toLowerCase()} com <b>mais questões nas provas oficiais</b>. O cronograma segue a contagem da área: começa pelo assunto com mais questões e desce.</>
-                  : <>Os assuntos de prioridade máxima em {t.nome.toLowerCase()} já ficaram para trás: agora entram os de prioridade menor, para você cobrir a área inteira.</>}</span>
-              </p>
-              <ul className="pe-assuntos">
-                {t.assuntos.slice(0, 10).map((a) => (
-                  <li key={a.nome} className={a.nivel ? `pe-assunto pe-assunto--${a.nivel}` : 'pe-assunto'}>
-                    <span className="pe-assunto__posicao numerico">{a.posicao ? `${a.posicao}º` : '·'}</span>
-                    <span className="pe-assunto__nome">{a.nome}<small>{ROTULO_COBRANCA[a.nivel]}</small></span>
-                    <b className="numerico">{a.n}</b>
-                  </li>
-                ))}
-                {t.assuntos.length > 10 && <li className="pe-assunto pe-assunto--resto"><span className="pe-assunto__posicao">+</span><span className="pe-assunto__nome">e mais {t.assuntos.length - 10} assuntos</span><b className="numerico">{t.assuntos.slice(10).reduce((soma, a) => soma + a.n, 0)}</b></li>}
-              </ul>
-              <p className="pe-semana__legenda">O número à esquerda é o lugar do assunto no ranking de {t.nome.toLowerCase()}; o da direita, quantas questões dele entram nesta semana.</p>
-              {t.depois.length > 0 && <p className="pe-semana__depois"><Icone nome="direita" tamanho={14} /> Nas próximas semanas de {t.nome.toLowerCase()}: {t.depois.join(', ')}.</p>}
-            </div>
-          ))}
-        </div>}
-      </details>
-    </li>
-  )
+  // ── A lista de hoje ──
+  const itensDia = calculo.hoje?.itens ?? []
+  const principal = itensDia.find((i) => !i.mistura) ?? itensDia[0] ?? null
+  const mistura = itensDia.filter((i) => i !== principal)
+  const folgaHoje = calculo.tipoHoje === 'folga'
+  const metaFeita = calculo.metaDiaria > 0 && calculo.faltaHoje === 0
+  const corHoje = corDaArea(principal?.slug ?? calculo.dias.find((d) => d.itens.length)?.itens[0]?.slug)
+  const lista: ItemChecklist[] = []
+  if (!calculo.provaPassou && !calculo.naRetaFinal) {
+    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: 4, estado: feitos.resumao ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href('/resumao'), aoClicar: () => hub?.aoMarcar('resumao') } : undefined })
+    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
+    if (calculo.metaDiaria > 0) lista.push({
+      id: 'novas', titulo: `${calculo.metaDiaria} questões novas`,
+      texto: <>{principal && !metaFeita ? <>{mistura.length ? (calculo.adiantarFalta > 0 ? <>{principal.nome}, com {mistura.map((m) => m.nome).join(' e ')} para misturar</> : <>{principal.n} de {principal.nome} e {mistura.reduce((s, m) => s + m.n, 0)} de {mistura.map((m) => m.nome).join(' e ')} para misturar</>) : principal.nome}</> : 'Do cronograma'}{incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados no meio' : ''}. {calculo.feitasHoje > 0 ? `${Math.min(calculo.feitasHoje, calculo.metaDiaria)} de ${calculo.metaDiaria} feitas.` : ''}{jaAdiantado}</>,
+      minutos: calculo.metaDiaria * minutos, estado: metaFeita ? 'feito' : calculo.feitasHoje > 0 || pendente ? 'agora' : 'afazer',
+      progresso: { feitas: Math.min(calculo.feitasHoje, calculo.metaDiaria), total: calculo.metaDiaria },
+    })
+    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `As ${calculo.adiantadoHoje} questões de hoje você fez antes. Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
+    const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
+    if (adiantando > 0) lista.push({
+      id: 'adiantadas', titulo: `+${adiantando} adiantadas`,
+      texto: calculo.adiantarFalta > 0 ? `Pedidas para adiantar: ${Math.min(calculo.extraHoje, adiantando)} de ${adiantando} feitas.` : 'Feitas além da meta. Saem dos próximos dias.',
+      minutos: calculo.adiantarFalta > 0 ? adiantando * minutos : null, estado: calculo.adiantarFalta > 0 ? (calculo.extraHoje > 0 ? 'agora' : 'afazer') : 'feito',
+      progresso: calculo.adiantarFalta > 0 ? { feitas: Math.min(calculo.extraHoje, adiantando), total: adiantando } : undefined,
+    })
+    if (calculo.miniHoje) lista.push({ id: 'mini', titulo: `Mini-simulado de ${TAMANHO_MINI} questões`, texto: 'Cronometrado, com o que você já viu nas últimas semanas, misturado como na prova. Os seus erros e dúvidas vêm primeiro.', minutos: TAMANHO_MINI * 1.5, estado: feitos.mini ? 'feito' : 'afazer', acao: aberto && hub ? { rotulo: 'Começar', aoClicar: hub.aoMini } : undefined })
+  }
+  if (hub && !calculo.provaPassou && !calculo.naRetaFinal) {
+    // Revisões e flashcards ajudam a fixar, mas não são obrigatórios: ficam à parte, sem contar na meta.
+    if (hub.revisoesHoje > 0) lista.push({ id: 'revisoes', titulo: `${hub.revisoesHoje} ${hub.revisoesHoje === 1 ? 'revisão' : 'revisões'}`, texto: `Erros, chutes e dúvidas que voltam hoje · ~${formatarTempo(hub.revisoesHoje * minutos)}.`, minutos: hub.revisoesHoje * minutos, estado: 'afazer', opcional: true, acao: { rotulo: 'Revisar', href: href('/revisao') } })
+    lista.push({ id: 'flashcards', titulo: 'Flashcards', texto: 'Uma rodada curta para fixar o que você errou · ~5 min.', minutos: 5, estado: feitos.flashcards ? 'feito' : 'afazer', opcional: true, acao: { rotulo: 'Abrir', href: href('/flashcards'), aoClicar: () => hub.aoMarcar('flashcards') } })
+  }
+
+  // ── O botão único ──
+  let botao: Parameters<typeof CartaoHoje>[0]['botao'] = null
+  if (!aberto) botao = { rotulo: 'Criar meu cronograma', detalhe: 'Exclusivo para assinantes', href: href('/assinatura'), ouro: true }
+  else if (pendente) botao = { rotulo: `Continuar: faltam ${pendente.total - pendente.feitas} questões`, detalhe: `Você parou na ${pendente.feitas + 1}ª. As que já respondeu ficam salvas.`, href: href('/sessao') }
+  else if (calculo.hoje && calculo.faltaHoje + calculo.adiantarFalta > 0) {
+    const n = calculo.faltaHoje + calculo.adiantarFalta
+    const so = calculo.faltaHoje === 0
+    botao = { rotulo: so ? `Continuar: faltam ${n} adiantadas` : calculo.feitasHoje > 0 ? `Continuar: faltam ${n} questões` : `Começar: ${n} questões`, detalhe: `${principal ? `${principal.nome}${mistura.length ? ` + ${mistura.map((m) => m.nome).join(' e ')}` : ''}` : 'Do cronograma'}${calculo.adiantarFalta > 0 && !so ? `, com ${calculo.adiantarFalta} adiantadas` : ''} · ~${formatarTempo(n * minutos)}`, aoClicar: aoComecar }
+  }
+  else if (calculo.miniHoje && !feitos.mini && hub) botao = { rotulo: 'Fazer o mini-simulado', detalhe: `${TAMANHO_MINI} questões · ~45 min`, aoClicar: hub.aoMini }
+  // Meta feita: o destaque passa a ser o painel de adiantar (e as revisões ficam como extra, sem cobrança).
+  const podeAdiantar = aberto && !!aoAdiantar && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
+  const painelAdiantar = podeAdiantar && hub ? <PainelAdiantar calculo={calculo} minutos={minutos} destaque={!botao} salvando={hub.salvandoOpcoes} aoAdiantar={aoAdiantar!} aoCancelar={hub.aoCancelarAdiantar} /> : null
+
+  const tituloHoje = calculo.provaPassou ? 'A prova chegou' : folgaHoje ? 'Hoje é folga' : calculo.restante === 0 && !calculo.naRetaFinal ? 'Você cumpriu o cronograma inteiro' : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Hoje já está adiantado' : metaFeita && !calculo.miniHoje ? 'Meta de hoje feita' : principal ? principal.nome : calculo.miniHoje ? 'Dia de mini-simulado' : 'Hoje'
+  const porQue = folgaHoje ? 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias. Se quiser, adiante o próximo dia de estudo.'
+    : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Você fez as questões de hoje num dia anterior. Pode descansar ou adiantar mais.'
+    : metaFeita ? `Feito: ${calculo.metaDiaria} questões. Revisões e flashcards são extras, se sobrar tempo.`
+    : calculo.tipoHoje === 'leve' ? `Dia leve (plantão): só ${calculo.metaDiaria} questões. ${principal ? porQueHoje(calculo, principal.slug, plano.prova).replace('Por que hoje: ', 'A área: ') : ''}`
+    : calculo.tipoHoje === 'dificil' ? `Semana difícil: só o dia mínimo (${calculo.metaDiaria} questões), para não quebrar a sequência.`
+    : principal ? porQueHoje(calculo, principal.slug, plano.prova) : calculo.restante === 0 ? 'Mantenha a revisão em dia e faça o Simulado Nacional do mês.' : ''
 
   return <>
-    <section className="pe-heroi">
-      <div className="pe-heroi__texto">
-        <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {aberto ? 'Cronograma' : 'Prévia do seu cronograma'} · {plano.prova}</p>
-        <h1>{calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <span className="numerico">{calculo.diasAteProva}</span> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
-        <p>Prova em {longa(plano.data_prova)}. Intensidade {ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}{plano.folgas.length ? `, folga ${plano.folgas.map((d) => DIAS_SEMANA[d]).join(', ')}` : ''}. {incluiSimulados(plano) ? 'Questões oficiais e OrtoQuestões Simulados.' : 'Só questões oficiais.'}</p>
-        {calculo.fase === 'conteudo' ? <p className={`pe-ritmo pe-ritmo--${ritmoTexto.classe}`}><Icone nome={ritmoTexto.classe === 'atras' ? 'baixo' : ritmoTexto.classe === 'frente' ? 'cima' : 'certo'} tamanho={15} /> {ritmoTexto.texto}</p>
-          : !calculo.provaPassou && <p className="pe-ritmo pe-ritmo--em-dia"><Icone nome="bandeira" tamanho={15} /> Reta final: sem conteúdo novo</p>}
+    {aberto && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
+    {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
+    {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
+
+    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} />
+
+    <div className="cp-colunas">
+      <div className="cp-col cp-col--principal">
+        <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
+          ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} />
+          : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar} />}</div>
+        {(hub?.mostrarDiagnostico || (hub?.esquecidos.length ?? 0) > 0) && <div className="cp-ordem-2">
+          {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
+          {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
+        </div>}
+        {aberto && <div className="cp-ordem-6"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
+        {aberto && hub && <div className="cp-recolhidos cp-ordem-7">
+          <Recolhido titulo="Constância: os últimos 14 dias" icone="fogo"><CartaoConstancia constancia={hub.constancia} elogio={hub.elogio} /></Recolhido>
+          <Recolhido titulo="Desempenho e prontidão por área" icone="grafico"><Prontidao areas={hub.prontidao} /><CartaoDesempenho areas={hub.desempenho} media={hub.media} /></Recolhido>
+          <Recolhido titulo="Mapa de risco" icone="alvo"><MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} /></Recolhido>
+          <Recolhido titulo="OrtoQuestões Simulados" icone="estrela"><CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoIncluir={hub.aoIncluirSimulados} /></Recolhido>
+          <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} /></Recolhido>
+          <ComoFuncionaCompleto aberto={explicacaoAberta} plano={plano} />
+        </div>}
       </div>
-      {calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera' ? <div className="pe-meta">
-        <span className="pe-meta__rotulo">{calculo.fase === 'revisao' ? 'Revisão forte' : calculo.fase === 'prova' ? 'Modo prova' : 'Véspera'}</span>
-        <strong className="numerico">{calculo.fase === 'revisao' ? calculo.metaMedia : calculo.fase === 'prova' ? 3 : 25}</strong>
-        <span className="pe-meta__rotulo">{calculo.fase === 'revisao' ? 'questões de revisão hoje' : calculo.fase === 'prova' ? 'tarefas na semana' : 'questões de aquecimento'}</span>
-        <small>{calculo.fase === 'vespera' ? 'Amanhã é o dia. Descanse.' : `${hub?.constancia.ultimos[hub.constancia.ultimos.length - 1]?.n ?? 0} respondidas hoje`}</small>
-      </div> : <div className="pe-meta">
-        <span className="pe-meta__rotulo">Meta de hoje</span>
-        <strong className="numerico">{calculo.metaDiaria}</strong>
-        <span className="pe-meta__rotulo">questões novas</span>
-        <span className="pe-meta__barra" aria-label={`${calculo.feitasHoje} de ${calculo.metaDiaria} feitas hoje`}><span style={{ width: `${calculo.metaDiaria ? Math.min(100, (calculo.feitasHoje / calculo.metaDiaria) * 100) : 100}%` }} /></span>
-        <small>{!calculo.hoje && folgaHoje ? 'Hoje é folga' : calculo.faltaHoje ? `${calculo.feitasHoje} feitas · faltam ${calculo.faltaHoje}` : 'Meta de hoje cumprida'}</small>
-      </div>}
-    </section>
-
-    {!calculo.provaPassou && <FasesCronograma calculo={calculo} plano={plano} />}
-
-    {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
-    {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
-
-    {aberto && pendente && (
-      <section className="pe-retomar" aria-label="Sessão em andamento">
-        <span className="pe-retomar__icone" aria-hidden="true"><Icone nome="raio" tamanho={22} /></span>
-        <div>
-          <strong>Você parou no meio: {pendente.feitas} de {pendente.total} questões de {nomeTemaPendente}</strong>
-          <small>Continue de onde parou. As que você já respondeu ficam salvas.</small>
-          <span className="pe-retomar__barra"><span style={{ width: `${Math.round((pendente.feitas / pendente.total) * 100)}%` }} /></span>
-        </div>
-        <a className="botao botao--principal botao--grande" href={href('/sessao')}>Continuar de onde parei</a>
-      </section>
-    )}
-
-    {naRetaFinalComRoteiro && hub ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} /> : <section className="pe-hoje">
-      <div>
-        <p className="meta">{calculo.naRetaFinal ? 'RETA FINAL' : 'HOJE'}</p>
-        {calculo.naRetaFinal ? (
-          <><h2>Semana da reta final</h2><p className="texto-2">Nada de conteúdo novo: refaça os erros e as marcadas com dúvida, e faça um simulado cronometrado.</p></>
-        ) : calculo.hoje ? (
-          <><h2>{calculo.hoje.n} questões de {calculo.hoje.nome}</h2><p className="texto-2">{calculo.hoje.focos.length ? <>Começando pelo que mais cai: {calculo.hoje.focos.join(', ')}. </> : 'Questões que você ainda não fez. '}{incluiSimulados(plano) ? 'Com alguns OrtoQuestões Simulados no meio. ' : ''}Depois, passe pela revisão do dia.</p></>
-        ) : calculo.restante === 0 ? (
-          <><h2>Você cumpriu o cronograma inteiro</h2><p className="texto-2">Mantenha a revisão em dia e faça o Simulado Nacional do mês.</p></>
-        ) : folgaHoje ? (
-          <><h2>Hoje é folga</h2><p className="texto-2">Dia de descanso no seu cronograma: a meta foi espalhada pelos outros dias. Se quiser, adiante as próximas logo abaixo.</p></>
-        ) : (
-          <><h2>Meta de hoje cumprida</h2><p className="texto-2">Amanhã tem mais. Se sobrar fôlego, adiante as próximas logo abaixo.</p></>
-        )}
+      <div className="cp-col cp-col--lado">
+        {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
+        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} /></div>}
+        {!calculo.provaPassou && <div className="cp-ordem-5">{aberto
+          ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} />
+          : <div className="cp-previa-depois">
+              <Degustacao className="pe-degustacao" titulo="O resto é do assinante" texto={<ul className="cp-vitrine-lista">
+                <li>Amanhã e as semanas até a prova, com os marcos</li>
+                <li>A sua data, o seu tempo por dia, folgas e dias de plantão</li>
+                <li>Ajuste automático quando atrasa ou adianta</li>
+                <li>Semana difícil, mini-simulados e reta final</li>
+                <li>Desempenho, prontidão e mapa de risco por área</li>
+              </ul>} acao="Criar meu cronograma">
+                <Depois calculo={calculo} plano={plano} maximo={3} semMais />
+              </Degustacao>
+            </div>}</div>}
       </div>
-      <div className="pe-hoje__acoes">
-        {!aberto ? (
-          <a className="botao botao--ouro botao--grande" href={href('/assinatura')}><Icone nome="cadeado" tamanho={17} /> Seguir este cronograma</a>
-        ) : calculo.naRetaFinal ? <>
-          <a className="botao botao--principal botao--grande" href={href('/treinar?situacao=erradas')}>Refazer os erros</a>
-          <a className="botao" href={href('/simulado-nacional')}>Simulado Nacional</a>
-        </> : calculo.hoje ? (
-          <button type="button" className={'botao botao--grande ' + (pendente ? '' : 'botao--principal')} onClick={aoComecar}>{pendente ? 'Começar uma nova' : 'Começar agora'}</button>
-        ) : (
-          <a className="botao botao--principal" href={href('/revisao')}>Ir para a revisão</a>
-        )}
-      </div>
-      {aberto && hub && hub.revisoesHoje > 0 && <a className="pe-hoje__revisao" href={href('/revisao')}><Icone nome="reiniciar" tamanho={15} /> <span>E mais <b>{hub.revisoesHoje} {hub.revisoesHoje === 1 ? 'revisão' : 'revisões'}</b> marcadas para hoje: erros, chutes e dúvidas que voltam no tempo certo.</span> <Icone nome="direita" tamanho={14} /></a>}
-    </section>}
+    </div>
 
-    {podeAdiantar && proximo && <section className={'pe-adiantar' + (calculo.hoje ? '' : ' pe-adiantar--destaque')} aria-labelledby="pe-adiantar-titulo">
-      <span className="pe-adiantar__icone" aria-hidden="true"><Icone nome="raio" tamanho={22} /></span>
-      <div className="pe-adiantar__texto">
-        <h2 id="pe-adiantar-titulo">{calculo.hoje ? 'Terminou e quer mais?' : 'Meta de hoje feita. Quer adiantar?'}</h2>
-        <p>Puxe as próximas questões do cronograma: <b>{proximo.nome}</b>{proximo.estaSemana ? ', o próximo tema desta semana' : `, da semana de ${curta(proximo.semana)}`}. O que você adiantar hoje alivia a meta dos próximos dias.</p>
-      </div>
-      <div className="pe-adiantar__acoes">
-        <button type="button" className="botao" onClick={() => aoAdiantar!(10)}>+10 questões</button>
-        <button type="button" className="botao" onClick={() => aoAdiantar!(20)}>+20</button>
-        <button type="button" className={'botao ' + (calculo.hoje ? '' : 'botao--principal')} onClick={() => aoAdiantar!(Math.max(10, calculo.metaDiaria))}>Adiantar um dia ({Math.max(10, calculo.metaDiaria)})</button>
-      </div>
-    </section>}
-
-    {hub && <CartaoConstancia constancia={hub.constancia} elogio={hub.elogio} />}
-
-    {aberto && <div className="pe-duas">
-      <section className="cartao cartao__corpo pe-progresso">
-        <h2>Progresso do cronograma</h2>
-        <div className="pe-progresso__numero"><strong className="numerico">{calculo.feitas.toLocaleString('pt-BR')}</strong><span>de {calculo.alvo.toLocaleString('pt-BR')} questões</span></div>
-        <span className="pe-barra"><span style={{ width: `${progresso}%` }} /></span>
-        <dl className="pe-dados">
-          <div><dt>Esperado até hoje</dt><dd className="numerico">{calculo.esperadoAteHoje.toLocaleString('pt-BR')}</dd></div>
-          <div><dt>{calculo.naRetaFinal ? 'Dias de estudo até a prova' : 'Dias de estudo até a reta final'}</dt><dd className="numerico">{calculo.diasEstudoRestantes}</dd></div>
-          <div><dt>Reta final a partir de</dt><dd>{curta(calculo.inicioRetaFinal)}</dd></div>
-        </dl>
-      </section>
-      {hub ? <CartaoDesempenho areas={hub.desempenho} media={hub.media} /> : <section className="cartao cartao__corpo pe-fracos">
-        <h2>Reforço nos pontos fracos</h2>
-        {reforcados.length ? <>
-          <p className="texto-2">Estes temas estão abaixo do seu acerto médio e ganham mais espaço no cronograma:</p>
-          <ul className="pe-fracos__lista">{reforcados.slice(0, 5).map((t) => <li key={t.slug}><span>{t.nome}</span><b className="numerico">{t.acerto ?? t.acertoEstimado}%</b></li>)}</ul>
-        </> : <p className="texto-2">Ainda não há tema claramente abaixo da sua média. O cronograma distribui pelo que falta em cada tema e reforça automaticamente quando algum ficar para trás.</p>}
-      </section>}
+    {aberto && aoAjustar && <div className="linha">
+      <button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
+      <a className="botao botao--fantasma" href={href('/temas-que-mais-caem')}><Icone nome="grafico" tamanho={16} /> Temas que mais caem</a>
     </div>}
-
-    {hub && <MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} />}
-    {hub && <CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoIncluir={hub.aoIncluirSimulados} />}
-
-    <ComoFuncionaCompleto aberto={explicacaoAberta} plano={plano} />
-
-    <a className="pe-incidencia" href={href('/temas-que-mais-caem')}>
-      <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="grafico" tamanho={20} /></span>
-      <span><strong>O cronograma segue os temas que mais caem</strong><small>As áreas com mais questões nas provas ganham mais espaço, e cada dia começa pelos assuntos de prioridade máxima. Veja a contagem.</small></span>
-      <Icone nome="direita" tamanho={18} />
-    </a>
-    <a className="pe-incidencia" href={href('/resumao')}>
-      <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="livro" tamanho={20} /></span>
-      <span><strong>Resumão: o que cai, em uma frase</strong><small>As frases "Na prova" dos assuntos que mais caem, área por área. Bom a qualquer momento e indispensável na reta final.</small></span>
-      <Icone nome="direita" tamanho={18} />
-    </a>
-
-    <section className="cartao cartao__corpo pe-semanas" aria-labelledby="pe-semanas-titulo">
-      <header className="pe-semanas__cabeca">
-        <div><h2 id="pe-semanas-titulo">Semana a semana</h2><p className="pe-semanas__dica">Cada semana mostra os assuntos que entram nela. Toque para ver o porquê e quanto cada um cai.</p></div>
-        <SeloAssinante />
-      </header>
-      <ol className="pe-linha">
-        {visiveis.map(linhaSemana)}
-        {aberto && !calculo.provaPassou && calculo.diasRetaFinal > 7 && <li className={'pe-semana pe-semana--final' + (calculo.fase === 'revisao' ? ' pe-semana--atual' : '')}>
-          <span className="pe-semana__data">{curta(calculo.inicioRetaFinal)} – {curta(new Date(calculo.inicioModoProva.getTime() - 86_400_000))}{calculo.fase === 'revisao' && <em>esta semana</em>}</span>
-          <div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Revisão forte: erros, dúvidas e o que mais cai</span></div>
-          <span className="pe-semana__total"><Icone nome="reiniciar" tamanho={16} /></span>
-        </li>}
-        {aberto && !calculo.provaPassou && <li className={'pe-semana pe-semana--final' + (calculo.fase === 'prova' || calculo.fase === 'vespera' ? ' pe-semana--atual' : '')}>
-          <span className="pe-semana__data">{curta(calculo.inicioModoProva)} – véspera{(calculo.fase === 'prova' || calculo.fase === 'vespera') && <em>esta semana</em>}</span>
-          <div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Modo prova: simulado, erros que importam e resumão</span></div>
-          <span className="pe-semana__total"><Icone nome="bandeira" tamanho={16} /></span>
-        </li>}
-      </ol>
-      {!aberto && semanas.length > SEMANAS_PREVIA && (
-        <Degustacao className="pe-degustacao" titulo={`Mais ${semanas.length - SEMANAS_PREVIA} semanas até a prova`} texto={<p>O cronograma completo, com a reta final, o progresso dia a dia e o ajuste automático quando você atrasa ou adianta.</p>} acao="Liberar o cronograma completo">
-          <ol className="pe-linha">{semanas.slice(SEMANAS_PREVIA, SEMANAS_PREVIA + 4).map((s, i) => linhaSemana(s, i + SEMANAS_PREVIA))}</ol>
-        </Degustacao>
-      )}
-    </section>
   </>
+}
+
+/** A lista detalhada de cada semana: os assuntos, o porquê e quanto cada um cai. */
+function SemanaASemana({ semanas, aberto, calculo }: { semanas: CalculoPlano['semanas']; aberto: boolean; calculo: CalculoPlano }) {
+  return (
+    <section className="pe-semanas" aria-label="Semana a semana, em detalhe">
+      {aberto && <header className="pe-semanas__cabeca"><div><h2>Semana a semana, em detalhe</h2><p className="pe-semanas__dica">Toque numa semana para ver os assuntos, o porquê e quanto cada um cai.</p></div><SeloAssinante /></header>}
+      <ol className="pe-linha">
+        {semanas.map((s, i) => (
+          <li key={i} className={'pe-semana pe-semana--detalhe' + (s.atual ? ' pe-semana--atual' : '')}>
+            <details>
+              <summary className="pe-semana__linha">
+                <span className="pe-semana__data">{curta(s.inicio)} – {curta(s.fim)}{s.atual && <em>esta semana</em>}</span>
+                <span className="pe-semana__temas">
+                  {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip" style={{ borderLeft: `4px solid ${corDaArea(t.slug)}` }}>{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do cronograma: revisão e questões livres.</span>}
+                </span>
+                <span className="pe-semana__total numerico">{s.total}<Icone nome="baixo" tamanho={14} /></span>
+              </summary>
+              {s.temas.length > 0 && <div className="pe-semana__corpo">
+                <p className="pe-semana__explica">{s.diasEstudo} {s.diasEstudo === 1 ? 'dia' : 'dias'} de estudo, cerca de <b>{Math.round(s.total / Math.max(1, s.diasEstudo))} questões por dia</b>.</p>
+                {s.temas.map((t) => (
+                  <div key={t.slug} className="pe-semana__tema">
+                    <div className="pe-semana__tema-cabeca">
+                      <p className="pe-semana__tema-nome"><strong>{t.nome}</strong><span className="numerico">{t.n} questões</span></p>
+                      {t.posicaoArea && <span className="pe-semana__area">{t.posicaoArea}ª área em número de questões</span>}
+                    </div>
+                    <ul className="pe-assuntos">
+                      {t.assuntos.slice(0, 10).map((a) => (
+                        <li key={a.nome} className={a.nivel ? `pe-assunto pe-assunto--${a.nivel}` : 'pe-assunto'}>
+                          <span className="pe-assunto__posicao numerico">{a.posicao ? `${a.posicao}º` : '·'}</span>
+                          <span className="pe-assunto__nome">{a.nome}<small>{ROTULO_COBRANCA[a.nivel]}</small></span>
+                          <b className="numerico">{a.n}</b>
+                        </li>
+                      ))}
+                      {t.assuntos.length > 10 && <li className="pe-assunto pe-assunto--resto"><span className="pe-assunto__posicao">+</span><span className="pe-assunto__nome">e mais {t.assuntos.length - 10} assuntos</span><b className="numerico">{t.assuntos.slice(10).reduce((soma, a) => soma + a.n, 0)}</b></li>}
+                    </ul>
+                    {t.depois.length > 0 && <p className="pe-semana__depois"><Icone nome="direita" tamanho={14} /> Nas próximas semanas de {t.nome.toLowerCase()}: {t.depois.join(', ')}.</p>}
+                  </div>
+                ))}
+              </div>}
+            </details>
+          </li>
+        ))}
+        {aberto && !calculo.provaPassou && calculo.diasRetaFinal > 7 && <li className="pe-semana pe-semana--final"><span className="pe-semana__data">{curta(calculo.inicioRetaFinal)} – {curta(new Date(calculo.inicioModoProva.getTime() - 86_400_000))}</span><div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Revisão forte: erros, dúvidas e o que mais cai</span></div><span className="pe-semana__total"><Icone nome="reiniciar" tamanho={16} /></span></li>}
+        {aberto && !calculo.provaPassou && <li className="pe-semana pe-semana--final"><span className="pe-semana__data">{curta(calculo.inicioModoProva)} – véspera</span><div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Modo prova: simulado, erros que importam e resumão</span></div><span className="pe-semana__total"><Icone nome="bandeira" tamanho={16} /></span></li>}
+      </ol>
+    </section>
+  )
 }
 
 /** A explicação do cronograma vem aberta só na primeira vez que a pessoa vê o próprio cronograma. */
@@ -425,34 +515,22 @@ function primeiraVisita(): boolean {
   } catch { return false }
 }
 
-/** O que o cronograma faz, em três passos. */
-function ComoFunciona() {
-  const passos = [
-    { titulo: 'Você diz a data da prova', texto: 'E os dias da semana em que não estuda (plantão, descanso).' },
-    { titulo: 'Ele monta o caminho', texto: 'Divide as questões que faltam pelos dias até a prova, começando pelas áreas e assuntos que mais caem e reforçando os seus temas fracos.' },
-    { titulo: 'E se ajusta sozinho, todo dia', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. As duas últimas semanas são a reta final: revisão forte e depois o modo prova, com simulado e resumão.' },
-  ]
-  return (
-    <ol className="cr-destaque__passos pe-como">
-      {passos.map((p, i) => (
-        <li key={p.titulo}><span className="cr-destaque__passo-num numerico">{i + 1}</span><span><strong>{p.titulo}</strong><small>{p.texto}</small></span></li>
-      ))}
-    </ol>
-  )
-}
-
 /** Não assinante: preenche como o assinante e vê o começo do próprio cronograma. */
+/**
+ * Quem não assina vê uma vitrine (orientação de 14/10/2026): um exemplo do cronograma até o
+ * TEOT, montado com o próprio histórico, só com o essencial (onde você está, como é o dia e a
+ * semana em cores). Montar e seguir o seu, com todos os detalhes, é exclusivo para assinantes.
+ */
 function PreviaCronograma({ indice, respondidas }: { indice: Indice; respondidas: Respondidas }) {
-  const [previa, definirPrevia] = useState<PlanoSalvo | null>(null)
-  const calculo = useMemo(() => (previa ? calcularPlano(indice, respondidas, previa) : null), [indice, respondidas, previa])
-  if (!previa || !calculo) return <FormularioPlano indice={indice} respondidas={respondidas} atual={null} aoSalvar={definirPrevia} previa />
+  const exemplo = useMemo<PlanoSalvo>(() => {
+    const prova = dataLocal(DATA_TEOT) > new Date() ? DATA_TEOT : (() => { const d = new Date(); d.setDate(d.getDate() + 90); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}` })()
+    return { data_prova: prova, intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: respondidasNoAcervo(indice, respondidas, true), criado_em: new Date().toISOString(), incluir_simulados: true }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [indice])
+  const calculo = useMemo(() => calcularPlano(indice, respondidas, exemplo), [indice, respondidas, exemplo])
   return (
-    <div className="empilha-2 pe">
-      <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Esta é a prévia do seu cronograma. Assinando, ele fica salvo e se ajusta todo dia.</p>
-      <VisaoCronograma plano={previa} calculo={calculo} aberto={false} />
-      <div className="linha">
-        <button type="button" className="botao" onClick={() => definirPrevia(null)}><Icone nome="lapis" tamanho={16} /> Mudar a data ou a intensidade</button>
-      </div>
+    <div className="empilha-2 pe cp">
+      <VisaoCronograma plano={exemplo} calculo={calculo} aberto={false} />
     </div>
   )
 }
@@ -461,7 +539,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   indice: Indice
   respondidas: Respondidas
   atual: PlanoSalvo | null
-  aoSalvar: (p: PlanoSalvo) => void
+  aoSalvar: (p: PlanoSalvo, diagnostico?: boolean) => void
   aoCancelar?: () => void
   /** Sem salvar no servidor: monta a prévia no próprio aparelho. */
   previa?: boolean
@@ -471,25 +549,54 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const [intensidade, definirIntensidade] = useState<Intensidade>(atual?.intensidade ?? 'firme')
   const [folgas, definirFolgas] = useState<number[]>(atual?.folgas ?? [0])
   const [simulados, definirSimulados] = useState(incluiSimulados(atual))
+  const opcoesAtuais = opcoesDe(atual)
+  const [diasLeves, definirDiasLeves] = useState<number[]>(opcoesAtuais.diasLeves)
+  const [qtdLeve, definirQtdLeve] = useState(opcoesAtuais.qtdLeve)
+  const [comecarPor, definirComecarPor] = useState<string | null>(opcoesAtuais.comecarPor)
+  const [dominadas, definirDominadas] = useState<string[]>(opcoesAtuais.dominadas)
+  const [provaExtra, definirProvaExtra] = useState<{ nome: string; data: string }>(atual?.opcoes?.provaExtra ?? { nome: '', data: '' })
+  const [diagnostico, definirDiagnostico] = useState(!atual && respondidasNoAcervo(indice, respondidas, true) < 40)
   const [recomecar, definirRecomecar] = useState(false)
   const [salvando, definirSalvando] = useState(false)
   const [erro, definirErro] = useState('')
+  const [passo, definirPasso] = useState(0)
   const dataValida = /^\d{4}-\d{2}-\d{2}$/.test(data) && dataLocal(data) > new Date()
+  const minutos = useMemo(() => minutosPorQuestao(lerHistorico()), [])
+  const areas = useMemo(() => indice.temas.map((t) => ({ slug: t.slug, nome: t.nome })).filter((t) => posicaoDaArea(t.slug) !== null || indice.questoes.some((q) => indice.temas[q.t]?.slug === t.slug && !q.ar)), [indice])
+
+  const opcoes = (): OpcoesPlano => ({
+    diasLeves: diasLeves.filter((d) => !folgas.includes(d)), qtdLeve, comecarPor, dominadas,
+    semanasDificeis: atual?.opcoes?.semanasDificeis ?? [],
+    ...(provaExtra.nome.trim() && /^\d{4}-\d{2}-\d{2}$/.test(provaExtra.data) ? { provaExtra: { nome: provaExtra.nome.trim().slice(0, 30), data: provaExtra.data } } : {}),
+  })
+  // As três intensidades simuladas com as escolhas atuais: meta, tempo e o que cobre.
+  const simulacoes = useMemo(() => {
+    if (!dataValida) return null
+    const base = respondidasNoAcervo(indice, respondidas, simulados)
+    const op = opcoes()
+    const resultado = {} as Record<Intensidade, { meta: number; maisCai: number; alvo: number }>
+    for (const i of Object.keys(ROTULO_INTENSIDADE) as Intensidade[]) {
+      const c = calcularPlano(indice, respondidas, { data_prova: data, intensidade: i, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: op })
+      resultado[i] = { meta: c.metaDiaNormal, maisCai: c.projecao.maisCaiPct, alvo: c.alvo }
+    }
+    return resultado
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [indice, respondidas, data, folgas, simulados, diasLeves, qtdLeve, comecarPor, dominadas.join(','), dataValida])
 
   async function salvar() {
     if (!dataValida || salvando) return
     const base = respondidasNoAcervo(indice, respondidas, simulados)
     if (previa) {
-      aoSalvar({ data_prova: data, intensidade, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados })
+      aoSalvar({ data_prova: data, intensidade, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: opcoes() })
       return
     }
     definirSalvando(true); definirErro('')
     try {
       // Trocar a escolha dos simulados muda o tamanho do acervo do plano: a contagem recomeça.
       const mudouSimulados = !!atual && incluiSimulados(atual) !== simulados
-      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: !atual || recomecar || mudouSimulados }, simulados)
+      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: !atual || recomecar || mudouSimulados }, simulados, opcoes())
       if (!salvo) throw new Error('Plano não encontrado depois de salvar.')
-      aoSalvar(salvo)
+      aoSalvar(salvo, diagnostico)
     } catch (falha) {
       definirErro(codigoErro(falha) === 'data_invalida' ? 'Escolha uma data futura, em até dois anos.' : codigoErro(falha) === 'premium_necessario' ? 'O cronograma é exclusivo para assinantes.' : 'Não foi possível salvar agora. Tente de novo.')
     } finally { definirSalvando(false) }
@@ -500,120 +607,159 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
     try { await chamarRpc('apagar_plano_estudo', {}); window.location.reload() } catch { definirErro('Não foi possível apagar agora.') }
   }
 
+  const alternar = (lista: number[], dia: number) => lista.includes(dia) ? lista.filter((x) => x !== dia) : [...lista, dia].sort()
+  const passos = [
+    { titulo: 'Qual prova e quando?', curto: 'Prova', pronto: dataValida },
+    { titulo: 'Quanto tempo por dia?', curto: 'Tempo', pronto: true },
+    { titulo: 'Como é a sua semana?', curto: 'Semana', pronto: true },
+    { titulo: 'Por onde começar?', curto: 'Prioridades', pronto: true },
+  ]
+  const ultimo = passo === passos.length - 1
+  const sim = simulacoes?.[intensidade]
+
   return (
     <div className="empilha-2 pe">
       <section className="pe-heroi pe-heroi--convite pe-heroi--form">
         <div>
           <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {atual ? 'Ajustar' : 'Seu estudo até a prova'}</p>
           <h1 className="pe-heroi__nome">Cronograma</h1>
-          <p>Quatro perguntas e ele diz <strong>quantas questões fazer por dia</strong> e <strong>qual tema estudar em cada semana</strong>, começando pelo que mais cai e terminando com <strong>duas semanas de reta final</strong>.{previa ? ' Veja a prévia do seu abaixo.' : ''}</p>
+          <p>Quatro perguntas e ele diz <strong>o que estudar em cada dia</strong>, começando pelo que mais cai, misturando as áreas e terminando com a <strong>reta final</strong>.{previa ? ' Veja a prévia do seu no fim.' : ''}</p>
         </div>
-        <ComoFunciona />
       </section>
       <div className="pe-montar">
-      <section className="cartao cartao__corpo pe-form">
-        <div className="pe-form__passo">
-          <span className="tr-etapa__numero">1</span>
-          <div className="pe-form__campos">
-            <h2>Qual prova e quando?</h2>
+      <section className="cartao cartao__corpo pe-form pe-form--passos">
+        <ol className="pe-passos" aria-label="Passos">
+          {passos.map((p, i) => <li key={p.curto}><button type="button" className={'pe-passos__item' + (i === passo ? ' pe-passos__item--atual' : i < passo ? ' pe-passos__item--feito' : '')} aria-current={i === passo ? 'step' : undefined} disabled={i > 0 && !dataValida} onClick={() => definirPasso(i)}><span className="numerico">{i < passo ? '✓' : i + 1}</span>{p.curto}</button></li>)}
+        </ol>
+        <h2 className="pe-form__titulo">{passos[passo].titulo}</h2>
+
+        {passo === 0 && <div className="pe-form__campos">
+          <div className="pe-form__linha">
+            <label className="campo">Prova<select className="entrada" value={PROVAS.includes(prova) ? prova : 'Outra prova'} onChange={(e) => definirProva(e.target.value)}>{PROVAS.map((p) => <option key={p}>{p}</option>)}</select></label>
+            <label className="campo">Data da prova<input className="entrada" type="date" min={amanhaIso()} value={data} onChange={(e) => definirData(e.target.value)} /></label>
+          </div>
+          {dataLocal(DATA_TEOT) > new Date() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
+            <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT 2027</strong> · prova teórica em 10 de janeiro de 2027</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
+          </button>}
+          {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000)} dias</b> até a prova.</p>}
+          <details className="pe-form__mais" open={!!provaExtra.nome}>
+            <summary>Vai fazer outra prova antes? (opcional)</summary>
+            <p className="texto-2">Ela aparece como marco no seu caminho até a prova principal, por exemplo o TARO antes do TEOT.</p>
             <div className="pe-form__linha">
-              <label className="campo">Prova<select className="entrada" value={PROVAS.includes(prova) ? prova : 'Outra prova'} onChange={(e) => definirProva(e.target.value)}>{PROVAS.map((p) => <option key={p}>{p}</option>)}</select></label>
-              <label className="campo">Data da prova<input className="entrada" type="date" min={amanhaIso()} value={data} onChange={(e) => definirData(e.target.value)} /></label>
+              <label className="campo">Nome<input className="entrada" maxLength={30} placeholder="Ex.: TARO" value={provaExtra.nome} onChange={(e) => definirProvaExtra({ ...provaExtra, nome: e.target.value })} /></label>
+              <label className="campo">Data<input className="entrada" type="date" min={amanhaIso()} max={data || undefined} value={provaExtra.data} onChange={(e) => definirProvaExtra({ ...provaExtra, data: e.target.value })} /></label>
             </div>
-            {dataLocal(DATA_TEOT) > new Date() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
-              <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT 2027</strong> · prova teórica em 10 de janeiro de 2027</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
-            </button>}
-            {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000)} dias</b> até a prova.</p>}
-          </div>
-        </div>
-        <div className="pe-form__passo">
-          <span className="tr-etapa__numero">2</span>
-          <div className="pe-form__campos">
-            <h2>Qual intensidade?</h2>
-            <p className="texto-2">É quanto do acervo você quer cobrir até a prova. O número embaixo de cada opção é a sua meta de questões novas por dia; a revisão do dia é à parte. Dá para trocar depois, e quem termina a meta pode sempre adiantar.</p>
-            <div className="pe-intensidades" role="radiogroup" aria-label="Intensidade">
-              {(Object.keys(ROTULO_INTENSIDADE) as Intensidade[]).map((i) => (
+          </details>
+        </div>}
+
+        {passo === 1 && <div className="pe-form__campos">
+          <p className="texto-2">Cada opção mostra o tempo por dia com o seu ritmo (~{String(minutos).replace('.', ',')} min por questão) e quanto do acervo ela cobre até a prova. As revisões do dia vêm à parte, e dá para trocar depois.</p>
+          <div className="pe-intensidades pe-intensidades--tempo" role="radiogroup" aria-label="Tempo por dia">
+            {(Object.keys(ROTULO_INTENSIDADE) as Intensidade[]).map((i) => {
+              const r = simulacoes?.[i]
+              return (
                 <button key={i} type="button" role="radio" aria-checked={intensidade === i} className="pe-intensidade" onClick={() => definirIntensidade(i)}>
-                  <strong>{ROTULO_INTENSIDADE[i].nome}</strong>
+                  <b className="pe-intensidade__tempo">{r ? `~${formatarTempo(r.meta * minutos)} por dia` : ROTULO_INTENSIDADE[i].nome}</b>
+                  <strong>{ROTULO_INTENSIDADE[i].nome}{r && <span className="numerico"> · {r.meta} questões</span>}</strong>
                   <span>{ROTULO_INTENSIDADE[i].texto}</span>
-                  {dataValida && <b className="numerico">{simularMeta(indice, respondidas, data, i, folgas, simulados)} por dia</b>}
+                  {r && <small>{r.maisCai >= 100 ? 'Cobre toda a prioridade máxima' : `Cobre ${r.maisCai}% da prioridade máxima`}</small>}
                 </button>
-              ))}
-            </div>
+              )
+            })}
           </div>
-        </div>
-        <div className="pe-form__passo">
-          <span className="tr-etapa__numero">3</span>
-          <div className="pe-form__campos">
-            <h2>Em que dias você não estuda?</h2>
-            <p className="texto-2">Plantão fixo, dia de descanso. A meta se espalha pelos outros dias.</p>
-            <div className="tr-pilulas">
-              {DIAS_SEMANA.map((d, i) => (
-                <button key={d} type="button" className="tr-pilula" aria-pressed={folgas.includes(i)} disabled={!folgas.includes(i) && folgas.length >= 5}
-                  onClick={() => definirFolgas(folgas.includes(i) ? folgas.filter((x) => x !== i) : [...folgas, i].sort())}>{d}</button>
-              ))}
-            </div>
+        </div>}
+
+        {passo === 2 && <div className="pe-form__campos">
+          <h3 className="pe-form__sub">Folga: em que dias você não estuda?</h3>
+          <div className="tr-pilulas">
+            {DIAS_SEMANA.map((d, i) => <button key={d} type="button" className="tr-pilula" aria-pressed={folgas.includes(i)} disabled={!folgas.includes(i) && folgas.length >= 5} onClick={() => { definirFolgas(alternar(folgas, i)); definirDiasLeves(diasLeves.filter((x) => x !== i)) }}>{d}</button>)}
           </div>
-        </div>
-        <div className="pe-form__passo">
-          <span className="tr-etapa__numero">4</span>
-          <div className="pe-form__campos">
-            <h2>Incluir os OrtoQuestões Simulados?</h2>
-            <p className="texto-2">São questões autorais do site, feitas por <strong>engenharia reversa das provas originais</strong>: o mesmo estilo, o mesmo tipo de cobrança e o mesmo nível, escritas a partir da bibliografia de referência e comentadas com a citação do livro. Cobrem pontos do livro que ainda não caíram e fixam o conteúdo de onde saem as próximas questões. Não contam para os temas que mais caem, que usam só as provas oficiais.</p>
-            <div className="pe-intensidades" role="radiogroup" aria-label="OrtoQuestões Simulados">
-              <button type="button" role="radio" aria-checked={simulados} className="pe-intensidade" onClick={() => definirSimulados(true)}>
-                <strong>Oficiais e Simulados</strong>
-                <span>Recomendado. Mais questões no padrão da prova, para aprender o conteúdo e não só decorar as provas anteriores.</span>
-              </button>
-              <button type="button" role="radio" aria-checked={!simulados} className="pe-intensidade" onClick={() => definirSimulados(false)}>
-                <strong>Só questões oficiais</strong>
-                <span>Apenas as questões das provas anteriores. Os simulados continuam disponíveis no treino livre.</span>
-              </button>
-            </div>
-            {atual && incluiSimulados(atual) !== simulados && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Trocar esta opção recomeça a contagem do cronograma a partir de hoje.</p>}
+          <h3 className="pe-form__sub">Dia leve: em que dias você tem plantão?</h3>
+          <p className="texto-2">Nesses dias a meta cai para poucas questões, e o resto se espalha pelos dias normais.</p>
+          <div className="tr-pilulas">
+            {DIAS_SEMANA.map((d, i) => <button key={d} type="button" className="tr-pilula" aria-pressed={diasLeves.includes(i)} disabled={folgas.includes(i)} onClick={() => definirDiasLeves(alternar(diasLeves, i))}>{d}</button>)}
           </div>
-        </div>
-        {atual && <label className="caixa"><input type="checkbox" checked={recomecar} onChange={(e) => definirRecomecar(e.target.checked)} /><span>Recomeçar a contagem hoje (zera o "à frente ou atrás do cronograma")</span></label>}
+          {diasLeves.length > 0 && <div className="pe-form__linha pe-form__linha--leve">
+            <span className="texto-2">Questões num dia leve:</span>
+            <div className="tr-pilulas">{[10, 15, 20, 25].map((n) => <button key={n} type="button" className="tr-pilula" aria-pressed={qtdLeve === n} onClick={() => definirQtdLeve(n)}>{n}</button>)}</div>
+          </div>}
+        </div>}
+
+        {passo === 3 && <div className="pe-form__campos">
+          <h3 className="pe-form__sub">Começar por qual área? <small>(opcional)</small></h3>
+          <p className="texto-2">Sem escolha, o plano começa pelas áreas que mais caem e pelas suas mais fracas.</p>
+          <select className="entrada" value={comecarPor ?? ''} onChange={(e) => definirComecarPor(e.target.value || null)}>
+            <option value="">Deixar o cronograma escolher</option>
+            {areas.map((a) => <option key={a.slug} value={a.slug}>{a.nome}</option>)}
+          </select>
+          <h3 className="pe-form__sub">Já domina alguma área? <small>(opcional)</small></h3>
+          <p className="texto-2">Ela entra só com os assuntos de prioridade máxima, e o tempo vai para o resto.</p>
+          <div className="tr-pilulas">{areas.map((a) => <button key={a.slug} type="button" className="tr-pilula" aria-pressed={dominadas.includes(a.slug)} onClick={() => definirDominadas(dominadas.includes(a.slug) ? dominadas.filter((x) => x !== a.slug) : [...dominadas, a.slug])}>{a.nome}</button>)}</div>
+          <h3 className="pe-form__sub">Incluir os OrtoQuestões Simulados?</h3>
+          <div className="pe-intensidades" role="radiogroup" aria-label="OrtoQuestões Simulados">
+            <button type="button" role="radio" aria-checked={simulados} className="pe-intensidade" onClick={() => definirSimulados(true)}><strong>Oficiais e Simulados</strong><span>Recomendado: de 2 a 6 por sessão, no padrão da prova.</span></button>
+            <button type="button" role="radio" aria-checked={!simulados} className="pe-intensidade" onClick={() => definirSimulados(false)}><strong>Só questões oficiais</strong><span>Os simulados seguem no treino livre.</span></button>
+          </div>
+          <details className="pe-form__mais"><summary>O que são os OrtoQuestões Simulados?</summary><p className="texto-2">Questões autorais do site, feitas por <strong>engenharia reversa das provas originais</strong>: o mesmo estilo, o mesmo tipo de cobrança e o mesmo nível, escritas a partir da bibliografia de referência e comentadas com a citação do livro. Não contam para os temas que mais caem, que usam só as provas oficiais.</p></details>
+          {atual && incluiSimulados(atual) !== simulados && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Trocar esta opção recomeça a contagem do cronograma a partir de hoje.</p>}
+          {!previa && !atual && <label className="caixa"><input type="checkbox" checked={diagnostico} onChange={(e) => definirDiagnostico(e.target.checked)} /><span>Começar com o <b>diagnóstico de 30 questões</b> (uns 45 minutos): o cronograma já sabe onde você está mais fraco desde o primeiro dia.</span></label>}
+          {atual && <label className="caixa"><input type="checkbox" checked={recomecar} onChange={(e) => definirRecomecar(e.target.checked)} /><span>Recomeçar a contagem hoje (zera o "à frente ou atrás do cronograma")</span></label>}
+        </div>}
+
         {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
-        <div className="linha">
-          <button type="button" className={'botao botao--grande ' + (previa ? 'botao--ouro' : 'botao--principal')} disabled={!dataValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : previa ? 'Ver a prévia do meu cronograma' : atual ? 'Salvar ajustes' : 'Criar meu cronograma'}</button>
+        <div className="pe-form__navegacao">
+          {passo > 0 && <button type="button" className="botao botao--fantasma" onClick={() => definirPasso(passo - 1)}><Icone nome="esquerda" tamanho={16} /> Voltar</button>}
+          {!ultimo
+            ? <button type="button" className="botao botao--principal botao--grande" disabled={!passos[passo].pronto} onClick={() => definirPasso(passo + 1)}>Continuar <Icone nome="direita" tamanho={16} /></button>
+            : <button type="button" className={'botao botao--grande ' + (previa ? 'botao--ouro' : 'botao--principal')} disabled={!dataValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : previa ? 'Ver a prévia do meu cronograma' : atual ? 'Salvar ajustes' : 'Criar meu cronograma'}</button>}
+          {atual && !ultimo && <button type="button" className="botao" disabled={!dataValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : 'Salvar agora'}</button>}
+        </div>
+        <div className="pe-form__rodape">
           {aoCancelar && <button type="button" className="botao botao--fantasma" onClick={aoCancelar}>Cancelar</button>}
           {atual && <button type="button" className="botao botao--fantasma pe-form__apagar" onClick={apagar}>Apagar cronograma</button>}
         </div>
         {previa && <p className="texto-2 pe-form__nota"><Icone nome="cadeado" tamanho={14} /> A prévia mostra o dia de hoje e as duas primeiras semanas. O cronograma completo, salvo e ajustado todo dia, é do assinante.</p>}
       </section>
-      <ResultadoAoVivo indice={indice} respondidas={respondidas} data={dataValida ? data : null} intensidade={intensidade} folgas={folgas} simulados={simulados} prova={prova} />
+      <ResultadoAoVivo data={dataValida ? data : null} prova={prova} folgas={folgas} diasLeves={diasLeves} qtdLeve={qtdLeve} simulados={simulados} intensidade={intensidade} meta={sim?.meta ?? null} maisCai={sim?.maisCai ?? null} minutos={minutos} />
       </div>
     </div>
   )
 }
 
 /**
- * Painel ao lado do formulário: o cronograma se formando enquanto a pessoa
- * responde. Dias até a prova, meta por dia (com o tempo que leva), dias de
- * estudo na semana e quantas questões novas terá feito no dia da prova.
+ * O cronograma se formando enquanto a pessoa responde: no computador, ao lado
+ * do formulário; no celular, uma barra fixa no rodapé. Quando uma escolha muda
+ * a meta, mostra a diferença ("e se").
  */
-function ResultadoAoVivo({ indice, respondidas, data, intensidade, folgas, simulados, prova }: {
-  indice: Indice; respondidas: Respondidas; data: string | null; intensidade: Intensidade; folgas: number[]; simulados: boolean; prova: string
+function ResultadoAoVivo({ data, prova, folgas, diasLeves, qtdLeve, simulados, intensidade, meta, maisCai, minutos }: {
+  data: string | null; prova: string; folgas: number[]; diasLeves: number[]; qtdLeve: number; simulados: boolean; intensidade: Intensidade; meta: number | null; maisCai: number | null; minutos: number
 }) {
   const dias = data ? Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000) : 0
-  const meta = data ? simularMeta(indice, respondidas, data, intensidade, folgas, simulados) : 0
+  const anterior = useRef<number | null>(null)
+  const [diferenca, definirDiferenca] = useState<number | null>(null)
+  useEffect(() => {
+    if (meta === null) return
+    if (anterior.current !== null && anterior.current !== meta) {
+      definirDiferenca(meta - anterior.current)
+      const t = setTimeout(() => definirDiferenca(null), 2600)
+      anterior.current = meta
+      return () => clearTimeout(t)
+    }
+    anterior.current = meta
+  }, [meta])
   const diasEstudo = 7 - folgas.length
-  const total = data ? Math.round(meta * dias * (diasEstudo / 7)) : 0
-  const minutos = Math.round(meta * 1.5)
-  const tempo = minutos >= 60 ? `${Math.floor(minutos / 60)}h${String(minutos % 60).padStart(2, '0')}` : `${minutos} min`
   return (
     <aside className="pe-ao-vivo" aria-live="polite" aria-label="Seu cronograma">
       <p className="pe-ao-vivo__selo">Seu cronograma</p>
-      {data ? <>
+      {data && meta !== null ? <>
         <p className="pe-ao-vivo__dias"><strong className="numerico">{dias}</strong> dias até a prova{prova ? ` (${prova})` : ''}</p>
         <dl className="pe-ao-vivo__lista">
-          <div><dt>Meta por dia</dt><dd><b className="numerico">{meta}</b> questões novas <small>≈ {tempo}</small></dd></div>
-          <div><dt>Dias de estudo</dt><dd><b className="numerico">{diasEstudo}</b> por semana{folgas.length ? <small>folga: {folgas.map((d) => DIAS_SEMANA[d]).join(', ')}</small> : null}</dd></div>
+          <div><dt>Num dia normal</dt><dd><b className="numerico">{meta}</b> questões novas <small>≈ {formatarTempo(meta * minutos)}</small>{diferenca !== null && <em className={'pe-ao-vivo__dif' + (diferenca > 0 ? ' pe-ao-vivo__dif--mais' : '')}>{diferenca > 0 ? '+' : ''}{diferenca} por dia</em>}</dd></div>
+          <div><dt>Semana</dt><dd><b className="numerico">{diasEstudo}</b> dias de estudo{folgas.length ? <small>folga: {folgas.map((d) => DIAS_SEMANA[d]).join(', ')}</small> : null}{diasLeves.length ? <small>dia leve ({qtdLeve}): {diasLeves.filter((d) => !folgas.includes(d)).map((d) => DIAS_SEMANA[d]).join(', ')}</small> : null}</dd></div>
           <div><dt>Ritmo</dt><dd><b>{ROTULO_INTENSIDADE[intensidade].nome}</b>{simulados ? <small>com os OrtoQuestões Simulados</small> : <small>só questões oficiais</small>}</dd></div>
         </dl>
-        <p className="pe-ao-vivo__total">cerca de <span className="numerico">{total.toLocaleString('pt-BR')}</span> questões novas feitas até o dia da prova</p>
-        <p className="pe-ao-vivo__nota">Um pouco por dia, do celular ou do computador. Atrasou, a meta sobe um pouco; adiantou, alivia.</p>
+        {maisCai !== null && <p className="pe-ao-vivo__total">{maisCai >= 100 ? 'Cobre toda a' : `Cobre ${maisCai}% da`} <span>prioridade máxima</span> até a reta final</p>}
+        <p className="pe-ao-vivo__nota">Um pouco por dia, do celular ou do computador. Atrasou, a meta sobe no máximo 25%; adiantou, alivia.</p>
       </> : <p className="pe-ao-vivo__vazio">Escolha a data da prova e o cronograma aparece aqui, se formando enquanto você responde.</p>}
     </aside>
   )

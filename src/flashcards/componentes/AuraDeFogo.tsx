@@ -78,7 +78,7 @@ function montarLut(tom: TomAura) {
   return lut
 }
 
-export function AuraDeFogo({ tom, nivel, alvo = '.fc-estudo__mesa .fc-carta' }: { tom: TomAura; nivel: number; alvo?: string }) {
+export function AuraDeFogo({ tom, nivel, alvo = '.fc-estudo__mesa .fc-carta:not(.fc-carta--descartada)' }: { tom: TomAura; nivel: number; alvo?: string }) {
   const fogoRef = useRef<HTMLCanvasElement>(null)
   const brilhoRef = useRef<HTMLCanvasElement>(null)
   const raizRef = useRef<HTMLDivElement>(null)

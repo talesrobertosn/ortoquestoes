@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { FLASHCARDS_RANKING } from '../../config'
 import { href, navegar } from '../../util/rotas'
+import { sairDoJogo } from '../fundo'
 import { configurarSom, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
@@ -10,7 +11,7 @@ import { BESTIARIO } from '../motor/bestiario'
 import { migrarPartida } from '../motor/regras'
 import {
   BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_SOM_ESCOLHIDO, CHAVE_BESTIARIO, CHAVE_PARTIDA, CHAVE_RECORDES, CHAVE_REGISTROS,
-  flashcardsUnicos, RECORDES_VAZIOS, type Bestiario, type Recordes,
+  flashcardsUnicos, RECORDES_VAZIOS, somPreferido, type Bestiario, type Recordes, type SomEscolhido,
 } from '../progresso'
 import { Cenario } from './Cenario'
 import { Ator } from './Hud'
@@ -31,7 +32,7 @@ export function Entrada() {
   const bestiario = useMemo(() => ({ ...BESTIARIO_VAZIO, ...ler<Partial<Bestiario>>(CHAVE_BESTIARIO, {}) }), [])
   const criptaViva = cripta && cripta.fase !== 'fim' ? cripta : null
   const [volume, definirVolume] = useState(volumeDaSessao)
-  const [somAtivo, definirSomAtivo] = useState(() => ler<{som?:boolean}>(CHAVE_AJUSTES,{}).som ?? true)
+  const [somAtivo, definirSomAtivo] = useState(() => ler<{som?:boolean}>(CHAVE_AJUSTES,{}).som ?? somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false)) ?? true)
   const mudarVolume = (n: number) => {
     definirVolume(n); definirSomAtivo(n>0)
     const a=ler<Record<string,unknown>>(CHAVE_AJUSTES,{})
@@ -41,20 +42,20 @@ export function Entrada() {
 
   useEffect(() => {
     const a = ler<{ som?: boolean; volEfeitos?: number; volAmbiente?: number; volMusica?: number }>(CHAVE_AJUSTES, {})
-    configurarSom({ ligado: a.som ?? true, efeitos: a.volEfeitos ?? 0.85, ambiente: a.volAmbiente ?? 0.35, musica: a.volMusica ?? 0.45, volume: volumeDaSessao() })
+    configurarSom({ ligado: a.som ?? somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false)) ?? true, efeitos: a.volEfeitos ?? 0.85, ambiente: a.volAmbiente ?? 0.35, musica: a.volMusica ?? 0.45, volume: volumeDaSessao() })
     tocarMusica('entrada'); tocarAmbiente('masmorra')
     // destrave por gesto e pausa por visibilidade, instalados uma vez para o jogo todo (sons.ts)
     instalarDestrave()
   }, [])
 
   // primeira entrada: a pessoa escolhe com ou sem som (o toque no botão já destrava o áudio no celular)
-  const [escolherSom, definirEscolherSom] = useState(() => !ler<boolean>(CHAVE_SOM_ESCOLHIDO, false))
+  const [escolherSom, definirEscolherSom] = useState(() => !ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false))
   const escolher = (comSom: boolean) => {
     const a = ler<Record<string, unknown>>(CHAVE_AJUSTES, {})
     gravar(CHAVE_AJUSTES, { ...a, versao: 3, som: comSom })
     configurarSom({ ligado: comSom, efeitos: (a.volEfeitos as number) ?? 0.85, ambiente: (a.volAmbiente as number) ?? 0.35, musica: (a.volMusica as number) ?? 0.45, volume: volumeDaSessao() })
     if (comSom) { destravar(); tocar('confirmar') }
-    gravar(CHAVE_SOM_ESCOLHIDO, true)
+    gravar(CHAVE_SOM_ESCOLHIDO, comSom ? 'com' : 'sem')
     definirSomAtivo(comSom)
     definirEscolherSom(false)
   }
@@ -67,7 +68,7 @@ export function Entrada() {
   }
 
   return (
-    <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); navegar('/flashcards') }}>
+    <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); sairDoJogo() }}>
       <div className="fc-arena fc-entrada">
         <Cenario cena="campo" reduzido={false} clima="noite" />
         <div className="fc-entrada__volume"><Volume valor={somAtivo ? volume : 0} aoMudar={mudarVolume} /></div>

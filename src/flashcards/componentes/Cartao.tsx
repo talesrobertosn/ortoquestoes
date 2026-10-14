@@ -1,6 +1,7 @@
-import { memo, useEffect, useRef, useState } from 'react'
+import { memo, useCallback, useEffect, useRef, useState } from 'react'
 import { recurso } from '../../config'
 import { href } from '../../util/rotas'
+import { useDeslizar } from '../efeitos/deslizar'
 import type { Flashcard } from '../tipos'
 import { Sprite } from './Sprite'
 import { Texto } from './Texto'
@@ -86,41 +87,97 @@ function Figura({ img, aoAmpliar }: { img: { src: string; legenda: string }; aoA
 }
 
 /**
+ * Cópia do flashcard que acabou de sair, no mesmo lugar, deslizando para o
+ * descarte (à direita) enquanto o novo chega do baralho (à esquerda). É só
+ * enfeite: sem eventos, fora da leitura de tela e removida no fim.
+ */
+function descartar(velho: HTMLElement) {
+  const pai = velho.parentElement
+  if (!pai || typeof velho.animate !== 'function' || (typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches)) return
+  const copia = velho.cloneNode(true) as HTMLElement
+  copia.classList.remove('fc-carta--chega', 'fc-carta--sai', 'fc-carta--entra', 'fc-carta--ataca')
+  copia.classList.add('fc-carta--descartada')
+  copia.setAttribute('aria-hidden', 'true')
+  copia.removeAttribute('aria-label')
+  copia.querySelectorAll('[id]').forEach((n) => n.removeAttribute('id'))
+  Object.assign(copia.style, { position: 'absolute', top: velho.offsetTop + 'px', left: velho.offsetLeft + 'px', width: velho.offsetWidth + 'px', height: velho.offsetHeight + 'px', margin: '0', pointerEvents: 'none', zIndex: '0' })
+  pai.appendChild(copia)
+  const anim = copia.animate(
+    [{ transform: 'none', opacity: 1 }, { transform: 'translate(26%, 3%) rotate(6deg) scale(.86)', opacity: 0 }],
+    { duration: 380, easing: 'cubic-bezier(.5, 0, .75, .4)', fill: 'forwards' },
+  )
+  anim.onfinish = () => copia.remove()
+  window.setTimeout(() => copia.remove(), 800)
+}
+
+/** Tempos do giro (ms): a metade que sai e a que entra; o CSS usa os mesmos. */
+const GIRO_SAI = 230
+const GIRO_ENTRA = 340
+
+/**
  * Flashcard físico: moldura por raridade, pergaminho, cabeçalho com brasão e
  * altura que acompanha o conteúdo. O giro acontece em duas metades: até 90°,
  * troca a face e volta de -90°; assim o verso ocupa a altura que precisa e o
  * texto nunca aparece espelhado.
  */
 export const Cartao = memo(function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, resultado, assistida, aoGirar, reduzido, rodapeVerso, classe, familias = [] }: Props) {
-  const [lado, definirLado] = useState<'frente' | 'verso'>(virada ? 'verso' : 'frente')
+  const alvo = virada ? 'verso' : 'frente'
+  const [lado, definirLado] = useState<'frente' | 'verso'>(alvo)
   const [giro, definirGiro] = useState<'' | 'sai' | 'entra'>('')
   const [origemAberta, definirOrigem] = useState(false)
-  const alvo = virada ? 'verso' : 'frente'
+  const [chegando, definirChegando] = useState(true)
+  // Flashcard novo (outra chave): já nasce no lado pedido, sem giro, e só chega do baralho.
+  // Ajustado durante o render para o primeiro quadro do novo já sair certo.
+  const [chaveVista, definirChaveVista] = useState(chave)
+  if (chaveVista !== chave) {
+    definirChaveVista(chave)
+    definirLado(alvo)
+    definirGiro('')
+    definirOrigem(false)
+    definirChegando(true)
+  }
+  const ladoAtual = useRef(lado)
+  ladoAtual.current = lado
   const tempo = useRef(0)
+  const refCarta = useRef<HTMLElement | null>(null)
+  useDeslizar(refCarta, reduzido)
+  // o flashcard que sai (outra chave) não some de estalo: uma cópia vai para o descarte
+  const reduzidoAtual = useRef(reduzido)
+  reduzidoAtual.current = reduzido
+  const prenderCarta = useCallback((el: HTMLElement | null) => {
+    const velho = refCarta.current
+    refCarta.current = el
+    if (!el && velho && !reduzidoAtual.current) descartar(velho)
+  }, [])
 
+  // Giro em duas metades. Um pedido novo cancela o anterior: nunca sobra meio-giro
+  // de um flashcard para o próximo, e voltar atrás no meio só desfaz a saída.
   useEffect(() => {
-    if (alvo === lado) return
     window.clearTimeout(tempo.current)
-    if (reduzido) { definirLado(alvo); return }
+    if (alvo === ladoAtual.current) { definirGiro(''); return }
+    if (reduzido) { definirLado(alvo); definirGiro(''); return }
     aoGirar?.()
     definirGiro('sai')
     tempo.current = window.setTimeout(() => {
       definirLado(alvo)
       definirGiro('entra')
-      tempo.current = window.setTimeout(() => definirGiro(''), 260)
-    }, 200)
-    return () => window.clearTimeout(tempo.current)
+      tempo.current = window.setTimeout(() => definirGiro(''), GIRO_ENTRA)
+    }, GIRO_SAI)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [alvo])
-
-  // Novo flashcard: volta para a frente sem girar.
-  useEffect(() => { definirLado(virada ? 'verso' : 'frente'); definirGiro(''); definirOrigem(false) }, [chave]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [alvo, chave])
+  useEffect(() => () => window.clearTimeout(tempo.current), [])
+  useEffect(() => {
+    if (!chegando) return
+    const t = window.setTimeout(() => definirChegando(false), 600)
+    return () => window.clearTimeout(t)
+  }, [chegando, chave])
 
   const img = carta.imagem && { src: recurso('imagens/' + carta.imagem.arquivo), legenda: carta.imagem.legenda }
   const frente = lado === 'frente'
   return (
     <article
-      className={`fc-carta fc-carta--${carta.raridade}${giro ? ' fc-carta--' + giro : ''}${!frente ? ' fc-carta--verso' : ''}${resultado && !frente ? ' fc-carta--' + resultado : ''}${familias.map((f) => ' fc-carta--fam-' + f).join('')}${classe ? ' ' + classe : ''}`}
+      ref={prenderCarta}
+      className={`fc-carta fc-carta--${carta.raridade}${chegando ? ' fc-carta--chega' : ''}${giro ? ' fc-carta--' + giro : ''}${!frente ? ' fc-carta--verso' : ''}${resultado && !frente ? ' fc-carta--' + resultado : ''}${familias.map((f) => ' fc-carta--fam-' + f).join('')}${classe ? ' ' + classe : ''}`}
       key={chave}
       aria-label={`Flashcard: ${carta.assunto}`}
     >

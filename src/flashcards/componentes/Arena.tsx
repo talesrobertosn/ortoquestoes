@@ -1,3 +1,5 @@
+import { numeroPixel } from '../efeitos/numerosPixel'
+import { indicesVisuais } from '../motor/hipnose'
 import { Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
@@ -18,15 +20,17 @@ import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
 import { registrarEstudo } from '../aprendizagem'
+import { sairDoJogo } from '../fundo'
 import { contarSessaoTerminada } from '../opiniao'
 import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, QUEIMADURA, VENENO, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
   BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
-  RECORDES_VAZIOS, type Bestiario, type Recordes, type RegistroFlashcard,
+  CHAVE_SOM_ESCOLHIDO, RECORDES_VAZIOS, somPreferido, type Bestiario, type Recordes, type RegistroFlashcard, type SomEscolhido,
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
 import { Cartao, familiasDe } from './Cartao'
+import { useDeslizar } from '../efeitos/deslizar'
 import { ComChaves } from './Chaves'
 import { Cenario, TampoMesa } from './Cenario'
 import { climaDoAndar } from '../efeitos/pintura'
@@ -58,7 +62,7 @@ const ROTULO_CURA: Record<MotivoCura, string> = {
 
 /** Onde cada modo guarda a partida em andamento. */
 /** Sprites desenhados menores que o Golem: ganham escala maior na arena e na apresentação. */
-const PEQUENOS = new Set<string>(['serpente', 'raptor', 'gosma', 'mimico', 'corvo', 'morcego', 'goblin', 'esqueleto', 'escaravelho', 'aranha', 'cavaleiro', 'espectro', 'harpia', 'mao'])
+const PEQUENOS = new Set<string>(['serpente', 'raptor', 'gosma', 'cogumelo', 'mimico', 'corvo', 'morcego', 'goblin', 'esqueleto', 'escaravelho', 'aranha', 'cavaleiro', 'espectro', 'harpia', 'mao'])
 const CHAVE_DO_MODO: Record<Modo, string> = { masmorra: CHAVE_PARTIDA, torre: CHAVE_PARTIDA_TORRE }
 const lerAltar = () => ({ ...ALTAR_VAZIO, ...ler<Partial<EstadoAltar>>(CHAVE_ALTAR, {}) }) as EstadoAltar
 /** Nome do jogo e dos modos (usado no topo e na Entrada). */
@@ -175,7 +179,7 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
   }, [])
   if (!pronto) {
     return (
-      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={() => navegar('/flashcards/entrada')}>
+      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={sairDoJogo}>
         <div className="fc-arena fc-carregando" role="status">
           <Cenario cena="campo" reduzido />
           <div className="fc-carregando__caixa">
@@ -197,7 +201,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     // Ajustes da versão 1 (som desligado por padrão) não valem mais; a 2 ganha o volume da música.
     const versao = salvos.versao as number | undefined
     const validos = versao === 3 ? salvos : versao === 2 ? { ...salvos, versao: 3 as const } : {}
-    return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...validos, volume: volumeDaSessao() }
+    // sem ajuste salvo nesta conta, vale a escolha da primeira entrada feita neste aparelho
+    const som = somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false))
+    return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...(som === undefined ? {} : { som }), ...validos, volume: volumeDaSessao() }
   })
   const definirAjustes = (a: Partial<Ajustes>) => definirAjustesBruto((v) => { const n = { ...v, ...a }; gravar(CHAVE_AJUSTES, n); return n })
   const reduzido = ajustes.efeitos === 'reduzidos'
@@ -243,6 +249,11 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const refMao = useRef<HTMLDivElement>(null)
   const refSlots = useRef<HTMLDivElement>(null)
   const refMesa = useRef<HTMLElement>(null)
+  // no celular, a mão some quando o flashcard vira: o herói e o botão descem deslizando
+  const refBlocoHeroi = useRef<HTMLDivElement>(null)
+  const refBlocoAcao = useRef<HTMLDivElement>(null)
+  useDeslizar(refBlocoHeroi, reduzido)
+  useDeslizar(refBlocoAcao, reduzido)
   const geracao = useRef(0)
   const idFlutuante = useRef(0)
 
@@ -315,7 +326,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     no.className = 'fc-flutua' + (extra?.grande ? ' fc-flutua--grande' : '')
     no.style.left = xx + 'px'; no.style.top = Math.max(40, y + (extra?.y ?? 0)) + 'px'; no.style.color = tom
     no.dataset.id = String(id)
-    no.textContent = texto
+    const pixels = numeroPixel(texto)
+    if (pixels) { no.classList.add('fc-flutua--numero'); no.appendChild(pixels) }
+    else no.textContent = texto
     if (extra?.rotulo) { const r = document.createElement('small'); r.textContent = extra.rotulo; no.appendChild(r) }
     camada.appendChild(no)
     window.setTimeout(() => no.remove(), extra?.grande ? 1500 : 1150)
@@ -358,7 +371,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     quem: (andar: number, semente: number) => inimigoDoAndar(andar, semente, partidaRef.current.modo).inimigo.id,
     ir: (andar: number, semente: number) => {
       const p = partidaRef.current, { inimigo: i } = inimigoDoAndar(andar, semente, p.modo)
-      const q = { ...p, andar, sementeBase: semente, inimigo: { ...p.inimigo, id: i.id, vida: i.vida, vidaMax: i.vida, barreira: i.barreira ?? 0, fase: 1 as const, rodadas: 0, errosSeguidos: 0, furia: false } }
+      const q = { ...p, andar, sementeBase: semente, inimigo: { ...p.inimigo, id: i.id, vida: i.vida, vidaMax: i.vida, barreira: i.barreira ?? 0, fase: 1 as const, rodadas: 0, errosSeguidos: 0, furia: false, hipnoseUsada: false, hipnosePendente: false } }
       partidaRef.current = q; definirPartida(q); sincronizar(q); definirCenarioVisivel(i.cenario)
     } } })
 
@@ -447,11 +460,12 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           // a lâmina de energia em pixel art (a cor conta a história: azul, ouro no combo, fogo no 5+, arcano no golpe duplo)
           const tom = ev.duplo ? 'arcano' : ev.critico ? 'ouro' : combo >= 5 ? 'fogo' : combo >= COMBO_MINIMO || depois.estagio >= 4 ? 'ouro' : 'azul'
           const px = pixelVfx()
+          // o som da espada gigante toca mesmo com "Reduzir movimento" (só a animação fica de fora)
+          if (ev.critico || ev.duplo) tocar('espada-gigante')
           if (P && (ev.critico || ev.duplo) && !reduzido) {
             // crítico: a espada gigante atravessa a tela na diagonal e rasga o ar
             animar(refMesa.current?.closest('.fc-batalha'), 'fc-pausa-impacto', 140)
             if (!reduzido) definirLamina((n) => n + 1)
-            tocar('disparo', 1.3)
             await P.espadaGigante(para, Math.atan2(Math.min(260, window.innerHeight * 0.3), Math.min(600, window.innerWidth * 0.5)))
           } else if (P) await P.voar(`lamina-${tom}`, topoCarta, para, { duracao: forte ? 0.32 : 0.28, curva: 0.18, escala: px * (forte ? 1.5 : 1.2), brilho: cor, rastro: cor })
           P?.efeito(`corte-${tom}`, para, { escala: px * (forte ? 1.5 : 1.1), espelhar: combo % 2 === 0 })
@@ -506,7 +520,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           const boca = caixaInimigo ? { x: caixaInimigo.left + caixaInimigo.width * 0.2, y: caixaInimigo.top + caixaInimigo.height * 0.32 } : undefined
           if (ev.carregado) {
             definirFaixa({ texto: ev.carregado, sub: 'Golpe carregado', tom: 'vermelho' })
-            tocar('sopro')
+            tocar(estilo === 'fogo' ? 'sopro' : 'carregado')
             if (estilo === 'fogo' && P) {
               // o Sopro do dragão: chamas em pixel art atravessam a arena
               await soprar(P, boca ?? { x: de.x - 40, y: de.y - 10 }, para, tomFogo(adv.variante), 0.75)
@@ -823,8 +837,19 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           flutuar(refSlots.current, `${RECOMPENSAS[ev.poder].nome} −1`, '#e8d8b0', { y: -30, rotulo: 'TREMOR' })
           break
         }
+        case 'hipnose': {
+          definirFaixa({ texto: 'Olhar petrificante', sub: 'As alternativas do próximo flashcard mudam de lugar.', tom: 'azul' })
+          if (!(await esperar(1100, g))) return
+          definirFaixa(null)
+          break
+        }
         case 'roubou': {
           tocar('roubo')
+          if (inimigo.sprite === 'mimico' && P && !reduzido) {
+            const slots = refSlots.current?.querySelectorAll('.fc-encaixe')
+            const origem = slots?.[partida.encaixes.findIndex(e => e.tipo === ev.poder)] ?? refSlots.current
+            void P.voar('orbe', centro(origem), centro(refInimigo.current), { duracao: .65, curva: -.6, escala: pixelVfx()*.7 })
+          }
           if (refSlots.current) P?.explosao(centro(refSlots.current), { cor: '#c8a0ff', n: 14, forca: 200 })
           flutuar(refSlots.current, `${RECOMPENSAS[ev.poder].nome} −1`, '#d8c0ff', { y: -30, rotulo: 'ROUBADO' })
           break
@@ -1010,7 +1035,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     definirModo('estudo')
   }, [])
 
-  const fechar = useCallback(() => { tocar('fechar'); navegar('/flashcards/entrada') }, [])
+  // enquanto o servidor autoriza a resposta, ninguém sai: o resultado precisa ser aplicado e salvo
+  const fechar = useCallback(() => { if (validando.current) return; tocar('fechar'); sairDoJogo() }, [])
   const pedirFechar = useCallback(() => {
     const p = partidaRef.current
     if (p.fase === 'fim' || (p.rodada === 0 && modo === 'batalha')) fechar()
@@ -1037,7 +1063,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
       if (modo !== 'batalha' || ajustesAbertos || ampliada || confirmarSaida || painel) return
       const p = partidaRef.current
       if (apresentacao && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); definirApresentacao(null); return }
-      if (/^[1-4]$/.test(e.key) && p.fase === 'pergunta') { e.preventDefault(); escolherAlternativa(+e.key - 1, true); return }
+      if (/^[1-4]$/.test(e.key) && p.fase === 'pergunta') { e.preventDefault(); escolherAlternativa(indicesVisuais(p.atual)[+e.key - 1], true); return }
       if ((e.key === 'p' || e.key === 'P') && p.fase === 'pergunta') { usarPista(); return }
       if (e.key === 'Enter' || (e.key === ' ' && alvo?.tagName !== 'BUTTON' && alvo?.tagName !== 'A')) {
         if (p.fase === 'resposta') { e.preventDefault(); seguir() }
@@ -1057,6 +1083,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   /* ---------- Tela ---------- */
   const fase2 = partida.inimigo.fase === 2
   const ordem = partida.atual?.ordem ?? []
+  // um flashcard por compra: responder avança a rodada, mas o flashcard da mesa é o mesmo
+  // (antes ele "chegava do baralho" de novo bem na hora da resposta, e a mão também)
+  const chaveDaMesa = partida.atual ? `${partida.atual.respondida ? partida.rodada - 1 : partida.rodada}-${partida.atual.id}` : ''
   const pistas = partida.encaixes.find((e) => e.tipo === 'pista')?.carga ?? 0
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
   // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
@@ -1064,7 +1093,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : faixaTela === 'deitado' ? 1 : 1.8) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : faixaTela === 'deitado' ? 0.75 : 1.5) * (inimigo.variante === 'rainha' ? 1.25 : 1)
   const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'deitado' ? 1.1 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
-    ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${selecionada + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
+    ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${indicesVisuais(partida.atual).indexOf(selecionada) + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
     : partida.fase === 'resposta'
       ? { texto: 'Seguir', sub: 'Enter', ativo: true, acao: seguir, classe: 'seguir' }
       : { texto: partida.fase === 'fim' ? 'Fim' : 'Andar', sub: '', ativo: false, acao: () => {}, classe: '' }
@@ -1117,7 +1146,11 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             )}
           </div>
           <div className="fc-topo__acoes">
-            <Volume valor={ajustes.som ? ajustes.volume : 0} aoMudar={volume => definirAjustes({ volume, som: volume > 0 })} />
+            <button type="button" className="fc-topo-botao" onClick={() => { if (validando.current) return; tocar('selecao'); navegar('/flashcards/entrada') }} aria-label="Menu do Torneio (a partida fica salva)" title="Menu do Torneio">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" /></svg>
+              <span className="fc-topo-botao__texto">Menu</span>
+            </button>
+                        <Volume valor={ajustes.som ? ajustes.volume : 0} aoMudar={volume => definirAjustes({ volume, som: volume > 0 })} />
             <button type="button" className="fc-topo-botao" onClick={() => definirAjustesAbertos(true)} aria-label="Ajustes de som e efeitos" title="Ajustes">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" strokeWidth="2" /><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
               <span className="fc-topo-botao__texto">Ajustes</span>
@@ -1176,7 +1209,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                 <div className={`fc-intencao${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}${(intencao.critico || intencao.carregado) && !intencao.bloqueado ? ' fc-intencao--critico' : ''}${intencao.carregado && !intencao.bloqueado ? ' fc-intencao--sopro' : ''}`}
                   title={intencao.bloqueado ? 'O escudo bloqueia o próximo golpe' : `Intenção do adversário: o dano exato que você leva se errar${intencao.carregado ? ` (${intencao.carregado})` : intencao.critico ? ' (golpe crítico)' : ''}${intencao.protecoes.length ? `, já com ${intencao.protecoes.join(' e ')}` : ''}`}>
                   <span className="fc-intencao__gema">{intencao.bloqueado ? <Sprite nome="escudo" className="fc-sprite--icone" /> : <b>{intencao.dano}</b>}</span>
-                  <small>{intencao.bloqueado ? 'escudo pronto' : intencao.carregado ? 'sopro se errar' : intencao.critico ? 'crítico se errar' : intencao.rajada > 1 ? `${intencao.rajada} mordidas` : 'se errar'}</small>
+                  <span className="fc-intencao__simbolo" aria-hidden="true"><Sprite nome={intencao.bloqueado ? 'escudo' : intencao.carregado && inimigo.variante === 'basilisco' ? 'cartas' : intencao.carregado && inimigo.queima ? 'chama' : inimigo.envenena ? 'frasco' : inimigo.rouba ? 'bolsa' : intencao.rajada > 1 ? 'espadas' : 'espada'} /></span><small>{intencao.bloqueado ? 'escudo pronto' : intencao.carregado ? 'sopro se errar' : intencao.critico ? 'crítico se errar' : intencao.rajada > 1 ? `${intencao.rajada} mordidas` : 'se errar'}</small>
                 </div>
               )}
             </section>
@@ -1191,7 +1224,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
               <div className="fc-mesa__palco" ref={refCarta}>
                 {carta && partida.atual && (
                   <Cartao
-                    chave={partida.rodada + '-' + partida.atual.id}
+                    chave={chaveDaMesa}
                     carta={carta}
                     virada={mostrado.revelada && partida.fase !== 'pergunta'}
                     dicaFrente={faixaTela === 'celular' ? 'Escolha a resposta abaixo' : faixaTela === 'deitado' ? 'Escolha a resposta ao lado' : 'Escolha a resposta na sua mão · teclas 1 a 4'}
@@ -1209,7 +1242,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
 
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
-              <div className="fc-heroi">
+              <div className="fc-heroi" ref={refBlocoHeroi}>
                 <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '') + (partida.veneno ? ' fc-ator--envenenado' : '') + (partida.grudado ? ' fc-ator--grudado' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                   {partida.veneno && <span className="fc-envenenado" aria-hidden="true" style={{ backgroundImage: `url(${recurso('flashcards/vfx/bolhas.png')})` }} />}
@@ -1265,12 +1298,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
               </div>
 
               <div className={`fc-mao${partida.fase !== 'pergunta' ? ' fc-mao--respondida' : ''}`} ref={refMao} role="group" aria-label="Sua mão: alternativas">
-                {carta && ordem.map((opcao, pos) => {
+                {carta && indicesVisuais(partida.atual).map((pos, visual) => {
+                  const opcao = ordem[pos]
                   const eliminada = partida.atual!.eliminadas.includes(pos)
                   const m = mostrado.marcadas
                   const estado = m && m.certa >= 0 ? (pos === m.certa ? 'certa' : pos === m.escolha ? 'errada' : 'apagada') : m && pos === m.escolha ? 'jogada' : ''
                   return (
-                    <div key={partida.rodada + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
+                    <div key={chaveDaMesa + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: visual, ['--n' as string]: ordem.length }}>
                       <button
                         type="button"
                         className={`fc-alternativa${carta.opcoes[opcao].trim().length <= 4 ? ' fc-alternativa--curta' : ''}${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...carta.opcoes[opcao].split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
@@ -1278,9 +1312,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                         onClick={() => escolherAlternativa(pos, false)}
                         onPointerEnter={() => { if (partida.fase === 'pergunta' && !eliminada && faixaTela !== 'celular') tocar('hover') }}
                         aria-pressed={selecionada === pos}
-                        aria-label={`Alternativa ${pos + 1}: ${carta.opcoes[opcao]}${eliminada ? ' (eliminada pela pista)' : ''}`}
+                        aria-label={`Alternativa ${visual + 1}: ${carta.opcoes[opcao]}${eliminada ? ' (eliminada pela pista)' : ''}`}
                       >
-                        <i aria-hidden="true">{pos + 1}</i>
+                        <i aria-hidden="true">{visual + 1}</i>
                         <span>{carta.opcoes[opcao]}</span>
                       </button>
                     </div>
@@ -1288,7 +1322,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                 })}
               </div>
 
-              <div className="fc-acao">
+              <div className="fc-acao" ref={refBlocoAcao}>
                 <button type="button" className={`fc-principal ${botao.classe}`} disabled={!botao.ativo} onClick={() => { tocar('confirmar'); botao.acao() }}>
                   <span className="fc-principal__runa" aria-hidden="true" />
                   <Sprite nome={partida.fase === 'resposta' ? 'porta' : 'espada'} className="fc-sprite--icone fc-principal__icone" />
@@ -1362,10 +1396,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         {confirmarSaida && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-sair-titulo">
             <div className="fc-janela">
-              <h2 id="fc-sair-titulo">Sair do Torneio?</h2>
+              <h2 id="fc-sair-titulo">Voltar ao site?</h2>
               <p className="fc-janela__sub">Sua partida fica salva neste aparelho e continua de onde parou quando você voltar.</p>
               <div className="fc-janela__botoes">
-                <button type="button" className="fc-botao fc-botao--secundario" onClick={fechar}>Sair</button>
+                <button type="button" className="fc-botao fc-botao--secundario" onClick={fechar}>Voltar ao site</button>
                 <button type="button" className="fc-botao" onClick={() => definirConfirmarSaida(false)} autoFocus>Continuar jogando</button>
               </div>
             </div>
@@ -1614,7 +1648,8 @@ function Fim({ partida, aoNova, aoRevisar, aoSair, aoPatamar }: { partida: Parti
         <div className="fc-janela__botoes">
           {derrubaram.length > 0 && <button type="button" className="fc-botao fc-botao--secundario" onClick={aoRevisar}>Revisar no Estudo</button>}
           <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_partida')}>Enviar opinião</a>
-          <button type="button" className="fc-botao fc-botao--secundario" onClick={aoSair}>Sair</button>
+          <button type="button" className="fc-botao fc-botao--secundario" onClick={() => navegar('/flashcards/entrada')}>Menu</button>
+          <button type="button" className="fc-botao fc-botao--secundario" onClick={aoSair}>Voltar ao site</button>
           {patamar ? (
             <>
               <button type="button" className="fc-botao fc-botao--secundario" onClick={aoNova}>Recomeçar do térreo</button>

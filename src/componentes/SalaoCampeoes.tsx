@@ -40,6 +40,7 @@ export function SalaoCampeoes({ lugares, titulo, subtitulo, chamada }: { lugares
         <h2 id="sc-titulo" className="sc__titulo">{titulo}</h2>
         <p className="sc__sub">{subtitulo}</p>
       </header>
+      <div className="sc__corpo">
       <div className="sc__janela">
         <div className="sc__mundo">
           <img className="sc__camada sc__fundo" src={img('fundo')} alt="" draggable={false} />
@@ -63,21 +64,31 @@ export function SalaoCampeoes({ lugares, titulo, subtitulo, chamada }: { lugares
           </span>
           <img className="sc__camada sc__frente" src={img('frente')} alt="" draggable={false} />
           <span className="sc__grade" aria-hidden="true" />
-          <ol className="sc__placas">
+          {/* nos pedestais, só o número grande do lugar: nome e total ficam nos cartões, legíveis em qualquer tela */}
+          <ol className="sc__placas" aria-hidden="true">
             {lugares.map((l) => (
               <li key={l.posicao} className={`sc__placa sc__placa--${l.posicao}${l.ehVoce ? ' sc__placa--voce' : ''}`} style={PLACA[l.posicao]}>
-                <span className="sc__lugar">{LUGAR[l.posicao]}</span>
-                <strong className="sc__nome">{l.nome}</strong>
-                <span className="sc__total"><b className="numerico">{l.total}</b> {l.rotuloTotal}</span>
-                {l.ehVoce && <span className="sc__voce">você</span>}
+                <span className="sc__numero">{l.posicao}º</span>
+                <span className="sc__lugar">{LUGAR[l.posicao].replace(/^\dº /, '')}</span>
               </li>
             ))}
           </ol>
         </div>
       </div>
-      {lugares.some((l) => l.extra) && <ul className="sc__extras" aria-label="Emblemas e sequência do top 3">
-        {[...lugares].sort((a, b) => a.posicao - b.posicao).map((l) => <li key={l.posicao}><span className="sc__extras-pos">{l.posicao}º</span>{l.extra}</li>)}
-      </ul>}
+      <ol className="sc__lista" aria-label="Três primeiros colocados">
+        {[...lugares].sort((a, b) => a.posicao - b.posicao).map((l) => (
+          <li key={l.posicao} className={`sc__cartao sc__cartao--${l.posicao}${l.ehVoce ? ' sc__cartao--voce' : ''}`}>
+            <span className="sc__medalha" aria-label={LUGAR[l.posicao]}><img src={img(`trofeu-${l.posicao}`)} alt="" draggable={false} /></span>
+            <span className="sc__quem">
+              <span className="sc__pos">{LUGAR[l.posicao]}</span>
+              <strong className="sc__nome">{l.nome}{l.ehVoce && <span className="sc__voce">você</span>}</strong>
+              {l.extra && <span className="sc__selos">{l.extra}</span>}
+            </span>
+            <span className="sc__total"><b className="numerico">{l.total}</b><small>{l.rotuloTotal}</small></span>
+          </li>
+        ))}
+      </ol>
+      </div>
       {chamada && <p className="sc__chamada">{chamada}</p>}
     </section>
   )

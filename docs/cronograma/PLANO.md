@@ -1,0 +1,141 @@
+# Plano do cronograma (desde 14/10/2026)
+
+Caderno de trabalho da reforma do cronograma (`#/cronograma`). Serve ao Tales e a qualquer agente.
+Marque `[x]` no que ficar pronto e diga em que PR entrou; ideia nova vai no fim da seção, com número novo.
+
+Código atual: `src/paginas/PlanoEstudo.tsx` (página e formulário), `src/paginas/CronogramaHub.tsx`
+(peças do painel), `src/dados/planoEstudo.ts` (cálculo), `src/dados/hubCronograma.ts` (constância,
+risco, esquecimento, reta final), `src/componentes/CaixasAssinante.tsx` (cartão da página inicial).
+
+Protótipo aprovado como direção: [prototipo/hoje-e-depois.html](prototipo/hoje-e-depois.html)
+(gerar as imagens com `node marketing/instagram/gerar.mjs docs/cronograma/prototipo/hoje-e-depois.html`).
+
+## O que motivou (diagnóstico de 14/10/2026)
+
+- Montar o cronograma ocupa umas 5 telas no celular; o texto dos Simulados toma meia tela.
+- A meta diz "60 questões novas, ≈ 1h30", mas revisões, flashcards e resumão vêm à parte: a carga real fica escondida.
+- Uma área inteira por semana (240 de Trauma, depois 360 de Pediatria): cansa e a primeira área fica semanas sem voltar.
+- A página do assinante empilha 12 blocos sem hierarquia; "o que eu faço agora" disputa espaço com tudo.
+- Intensidade em % do acervo é abstrata; o residente pensa em tempo.
+
+## Princípios de apresentação (a pessoa sempre sabe o que está fazendo)
+
+A tela responde sempre, nesta ordem e com estas palavras, sem sinônimos:
+
+1. **Onde você está:** dias até a prova, semana X de N, fase e passada, num trilho com o marcador "você".
+   Uma frase diz o que a fase significa e quando começa a próxima.
+2. **Hoje:** um cartão só, com a área, o "por que hoje", os assuntos do dia em chips e a lista do dia
+   (resumão, questões novas, revisões, flashcards), cada item com tempo, estado (feito, agora, a fazer)
+   e o total do dia. Um único botão principal, que diz exatamente o que faz ("Continuar: faltam 37").
+3. **Amanhã:** uma linha com a área, os assuntos e o número. Dá continuidade e tira a ansiedade.
+4. **Esta semana:** 7 colunas (seg a dom) com a cor da área, o número, feito, hoje e folga hachurada,
+   e uma frase quando a área muda ("na quinta entra Joelho").
+5. **Depois:** linha do tempo por semana, com faixas na cor das áreas e os marcos (mini-simulados,
+   reta final, prova) em dourado tracejado. Recolhida em 4 ou 5 itens, com "ver todas".
+6. **Como você está indo:** constância e projeção. O resto (desempenho, mapa de risco, Simulados,
+   como funciona) vai para abas ou blocos recolhidos.
+
+Linguagem visual fixa:
+- **A cor diz a área**, em todo lugar: cronograma, semana, sessão, desempenho.
+- **Estados iguais em todo lugar:** feito (verde com ✓), agora (contorno dourado), a fazer (cinza),
+  folga (hachurado), atrasado (laranja), marco (dourado tracejado).
+- **Todo número tem unidade e tempo** ("60 questões · ~1h30").
+- **Todo "por quê" em uma linha**, perto da tarefa; explicação longa só no "?".
+- **Continuidade fora da página:** na sessão, barra no topo com a meta de hoje na cor da área; ao terminar,
+  tela "Meta de hoje feita" com o que falta hoje e o que vem amanhã.
+
+## Etapas
+
+### 1. Apresentação "hoje e depois"
+1. [x] Trilho "onde você está" no topo (fase, passada, semana X de N, frase da fase). (PR da reforma, 14/10/2026)
+2. [x] Cartão Hoje com checklist do dia, tempo de cada item, total do dia e botão único. (PR da reforma, 14/10/2026)
+3. [x] Linha "Amanhã". (PR da reforma, 14/10/2026)
+4. [x] "Esta semana" em 7 colunas, com cor da área e estados. (PR da reforma, 14/10/2026)
+5. [x] "Depois": linha do tempo recolhida com marcos. (PR da reforma, 14/10/2026)
+6. [x] Abas ou blocos recolhidos para desempenho, mapa de risco, Simulados e como funciona. (PR da reforma, 14/10/2026)
+7. [x] Paleta fixa de cores por área, compartilhada pelo site. (PR da reforma, 14/10/2026)
+8. [x] Barra da meta de hoje dentro da sessão do cronograma. (PR da reforma, 14/10/2026)
+9. [x] Tela de fim de sessão: meta feita, o que falta hoje, amanhã. (PR da reforma, 14/10/2026)
+10. [x] Tour de 3 passos na primeira visita (trilho, hoje, semana). (PR da reforma, 14/10/2026)
+
+### 2. Montagem
+11. [x] Uma pergunta por tela no celular, com o resumo ao vivo fixo no rodapé. (PR da reforma, 14/10/2026)
+12. [x] Intensidade em tempo por dia (30 min, 1h, 1h30, 2h+), mostrando a cobertura resultante. (PR da reforma, 14/10/2026)
+13. [x] Dia leve (plantão) além da folga. (PR da reforma, 14/10/2026)
+14. [~] Atalhos com as datas oficiais das provas; duas provas no mesmo plano (TARO e TEOT). Feito em parte: atalho do TEOT (única data oficial no repositório) e a segunda prova como marco no caminho.
+15. [x] Diagnóstico de 20 questões opcional dentro da montagem. (PR da reforma, 14/10/2026)
+16. [x] "Já domino esta área" e "começar por". (PR da reforma, 14/10/2026)
+17. [x] Texto dos Simulados em uma linha com "saiba mais". (PR da reforma, 14/10/2026)
+18. [x] Simulador "e se": efeito da mudança na hora. (PR da reforma, 14/10/2026)
+
+### 3. Distribuição dos temas
+19. [x] Passadas por incidência: 1ª o que mais cai em todas as áreas, 2ª prioridade média, 3ª o resto. (PR da reforma, 14/10/2026)
+20. [x] Intercalar: cerca de 70% da área do dia e 30% de mistura das áreas já vistas. (PR da reforma, 14/10/2026)
+21. [x] Blocos de 2 a 3 dias por grupo de assuntos, em vez de uma área por semana. (PR da reforma, 14/10/2026)
+22. [x] Mini-simulado cronometrado a cada 2 ou 3 semanas. (PR da reforma, 14/10/2026)
+23. [~] Resumão do tema no começo do dia. Feito em parte: item "Resumão do tema" na lista do dia, com link para o resumão (ainda não abre na área certa).
+24. [x] Revisões e flashcards dos erros dentro da meta do dia (uma meta, um tempo). (PR da reforma, 14/10/2026)
+
+### 4. Frequência e constância
+25. [x] Dia mínimo (10 questões) que mantém a sequência. (PR da reforma, 14/10/2026)
+26. [x] Teto para o atraso (no máximo +25%), espalhando o resto pela semana. (PR da reforma, 14/10/2026)
+27. [x] Botão "semana difícil". (PR da reforma, 14/10/2026)
+28. [~] Lembrete no horário escolhido (7h, almoço, 19h). Feito em parte: lembrete pelo calendário do celular (.ics com alarme às 7h, 12h ou 19h); notificação do próprio site precisa de servidor (T).
+29. [x] Exportar para o calendário (.ics). (PR da reforma, 14/10/2026)
+30. [~] Resumo de domingo. Feito em parte: no site, aos domingos e segundas; por e-mail depende do Tales (T).
+31. [~] Conquistas do cronograma. Feito em parte: já existem as do cronograma (28 e 84 dias, do início ao fim); novas pedem arte (T).
+32. [ ] Cronograma em grupo na Liga da residência (constância, não volume). (T) Precisa de servidor.
+
+### 5. Inteligência
+33. [x] Tempo por questão da própria pessoa, no lugar do fixo de 1,5 min. (PR da reforma, 14/10/2026)
+34. [x] Prontidão por área (cobertura × acerto × incidência). (PR da reforma, 14/10/2026)
+35. [x] "Por que hoje" em todo dia. (PR da reforma, 14/10/2026)
+36. [x] Assunto dominado (acerto acima de 85% em 15 ou mais) sai da fila. (PR da reforma, 14/10/2026)
+37. [x] Projeção "nesse ritmo você chega com X% do acervo e Y% do que mais cai". (PR da reforma, 14/10/2026)
+
+### 6. Quem não assina
+38. [x] Prévia guardada no aparelho. (PR da reforma, 14/10/2026)
+39. [x] Trilho e semanas completos desfocados na prévia. (PR da reforma, 14/10/2026)
+40. [~] Trilha em pixel art até a prova (mapa com fases e o castelo da prova), também para o Instagram. Feito em parte: o "Onde você está" usa o trilho em pixel com a fonte e o horizonte da marca; o mapa ilustrado pede arte (T).
+
+### 7. Adiantar e extras sem cobrança (pedido do Tales, 14/10/2026)
+41. [x] Revisões e flashcards não são obrigatórios: saem da conta do "Seu dia" e do "Dia completo" e ficam num bloco "Se sobrar tempo", sem número na lista. O botão principal não manda mais para as revisões depois da meta.
+42. [x] Adiantar de verdade: o que a pessoa faz além da meta de hoje sai dos próximos dias, começando por amanhã (até zerar a meta dele; o resto vai para o dia seguinte). Antes, o extra se diluía pelo plano inteiro (amanhã caía de 60 para 59).
+43. [x] Painel "Adiantar" sempre à vista no cartão Hoje: +10, +20, +30, "amanhã inteiro" e "2 dias", cada um com o efeito ("amanhã fica com 40") e o tempo; "Cancelar o que falta". Com a meta pendente, o pedido entra na mesma sessão; com a meta feita, o painel vira o destaque dourado e abre a sessão na hora.
+44. [x] Amanhã, a semana e o fim da sessão mostram o adiantado ("eram 60", "livre, você já adiantou"). Dia todo adiantado conta como meta cumprida.
+45. [x] Conserto: o cartão dos OrtoQuestões Simulados dentro do bloco recolhido ficava espremido numa coluna fina no computador.
+
+Como funciona por dentro: `opcoes.adiantados` (no `planos_estudo.opcoes`, sem SQL novo) guarda, por dia, a meta daquele dia e
+o que a pessoa pediu para adiantar. No dia seguinte, o motor conta as primeiras respostas daquele dia, tira a meta e
+desconta o resto dos dias seguintes; a meta normal é recalculada devolvendo essas questões, então o plano continua
+agendando exatamente o que falta. O registro é gravado sozinho quando a pessoa passa da meta (página do cronograma,
+página inicial e fim de sessão leem o mesmo cálculo). Teste: `fixtures/testar_cronograma_adiantar.mjs`.
+Modo demonstração: `#/cronograma?demo=1&pendente` e `#/cronograma?demo=1&feita`.
+
+## Como ficou (14/10/2026)
+
+- Motor: `src/dados/planoEstudo.ts` simula o plano dia a dia (`calculo.dias`), com passadas por prioridade
+  (máxima, alta, resto), blocos de ~3 dias por área, 30% de mistura revezando entre as outras áreas da passada
+  (tirada do fim da fila delas), dia leve, semana difícil (dia mínimo de 10), mini-simulado a cada 14 dias,
+  teto de 25% para o atraso e projeção. Teste: `fixtures/testar_cronograma_reforma.mjs`.
+- Página: `src/paginas/CronogramaPainel.tsx` (onde você está, Hoje, Amanhã, Esta semana, Depois, Como você está
+  indo, blocos recolhidos, tour, resumo da semana, calendário .ics). Cores por área em `src/dados/coresAreas.ts`.
+- Montagem em 4 passos em `PlanoEstudo.tsx`, com o resumo ao vivo (barra fixa no celular) e a diferença de cada escolha.
+- Opções novas (dia leve, semana difícil, começar por, dominadas, segunda prova) na coluna `opcoes` de
+  `planos_estudo`: parte 20 do SQL (`supabase/colar-no-painel/sql-202610141300-parte20.sql`), **aplicada pelo Tales em 14/10/2026**. Antes disso, ficavam só no aparelho; o código mantém essa reserva para bancos sem a coluna.
+- Sessão: faixa da meta de hoje na cor da área; fim de sessão do cronograma com o que falta hoje e amanhã.
+- Modo demonstração só em desenvolvimento: `#/cronograma?demo=1`.
+
+## Quem não assina (orientação do Tales, 14/10/2026)
+
+Quem não assina vê só uma **vitrine**: um exemplo do cronograma até o TEOT, montado com o próprio
+histórico, com o essencial (onde você está, o dia de hoje e a semana em cores, sem os números).
+Amanhã, as semanas seguintes, os ajustes, o desempenho e os blocos de detalhe ficam bloqueados.
+**Criar o cronograma é só para assinantes**: o formulário de montar não aparece para quem não assina.
+Isso substitui a prévia preenchida pela pessoa (itens 38 e 39).
+
+## Regras que continuam valendo
+
+- Não mudar preço, limites nem o que é do assinante sem o Tales pedir.
+- Não mexer em questões, gabaritos e comentários.
+- Mudança visual: capturas reais em celular e computador durante o trabalho.
