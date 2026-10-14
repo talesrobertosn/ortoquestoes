@@ -6,6 +6,57 @@
 
 Atualizado em 13/10/2026, 21h. Tudo o que foi feito está mesclado na base e publicado; não há PR aberto.
 
+## PAROU AQUI (14/10/2026): leia isto primeiro
+
+Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com o PR #227 aberto para a base `claude/pdfs-questoes-tp64dr`. O merge está autorizado pelo Tales quando o CI "verificar" ficar verde.
+
+**Já feito no PR #227:**
+- ordem da Cripta em 4 grupos;
+- poderes Mapa do especialista e Desvio de área, mais o talento "Rota de estudo";
+- 3 tentativas grátis na Cripta (SQL parte 19, que **o Tales precisa colar no Supabase**);
+- opiniões no painel do admin;
+- página de Flashcards reorganizada, com o cronograma em destaque;
+- volume inicial de 20%;
+- mapa do Golem consertado;
+- resumão em [RESUMO-14-10.md](RESUMO-14-10.md), que traz também o texto do aviso no topo e a proposta de conquistas.
+
+**Em andamento: herói refeito do zero (prioridade máxima).**
+- **Pedido do Tales:** abandonar toda a direção de arte anterior. Nada de rosto redondo, fofinho ou infantil. Seguir o conceito `docs/flashcards/conceitos/heroi-adulto-proposta.png`: cavaleiro adulto, elmo aberto de aço com pluma azul e friso dourado, cachecol azul, ombreiras e peitoral, cota de malha, tabardo azul com borda dourada, cintos de couro, capa vermelha, escudo azul em gota com cruz dourada, espada longa, grevas e botas marrons.
+- O herói também será o **mascote do site**. Ele pode ter poucos movimentos, desde que fique bonito.
+- **O que já existe:**
+  - O renderizador novo é `scripts/sprites/cavaleiro2d.py`: pixel art 2D em recortes, com ossos, sombreamento por normal, brilho de metal, paleta e contorno.
+  - Ele substitui o herói SDF de `scripts/sprites/heroi.py`, que foi rejeitado. As folhas `heroi-1..6` que estão no repositório ainda são as do SDF.
+- **Primeira prévia:** `docs/flashcards/conceitos/cavaleiro2d-previa-1.png` (estágio 4, parado). A leitura geral está certa, mas ainda está aquém do conceito. Falta:
+  - rosto e queixo maiores e mais adultos, com olho legível;
+  - elmo mais alto, com protetor de face;
+  - pluma mais cheia, em penas;
+  - postura mais aberta e heroica, com pernas afastadas;
+  - calça azul aparecendo entre o tabardo e as grevas;
+  - joelheiras douradas e grevas que leiam como aço;
+  - pés de aço em vez das botas brancas;
+  - braço da espada com manopla e couro;
+  - menos ruído no tabardo.
+- **Próximos passos:**
+  1. Iterar: `python3 scripts/sprites/cavaleiro2d.py --previa /tmp/x.png --estagios 4 --escala 5`. Depois ver todos os estágios (`--estagios 1,2,3,4,5,6`) e as animações (`--anim golpe|dano|derrota|vitoria|preparo`).
+  2. Assar: `python3 scripts/sprites/cavaleiro2d.py`, depois `python3 scripts/sprites/indice.py`.
+  3. Conferir a escala e a âncora no `Hud.tsx`. O quadro agora é 120×132, com âncora (56,126); `escalaAssada` usa `CRESCE.heroi`.
+  4. Gerar o mascote (`--mascote`) e a arte da capa (`python3 scripts/cenarios/promo.py`).
+  5. Capturas com Playwright em 1400×860, 390×844 e 844×390. Mostrar ao Tales antes de mesclar.
+  6. Atualizar a linha "Arte" em RESUMO-14-10.md.
+
+**Entregar ao Tales no chat** (o texto está em RESUMO-14-10.md):
+- o texto do aviso no topo;
+- a avaliação das conquistas;
+- o que falta:
+  - bestiário antigo;
+  - Torre e Salão;
+  - variantes do dragão;
+  - contador da rota;
+  - áreas do baralho de demonstração;
+  - emenda da faixa "sala";
+  - som no celular;
+  - parte 19 no Supabase.
+
 ## Mensagem para colar no agente
 
 > Leia AGENTS.md, docs/flashcards/CONTINUAR.md e docs/flashcards/PASSAGEM-ETAPA1.md no repositório
