@@ -2,7 +2,7 @@
 
 ## Tutorial (ideia 63)
 
-O Preceptor convida para uma demonstração curta após a escolha inicial de som. Pode pular, fechar por Escape e reabrir em **Como jogar**. As etapas são lembrar, conferir o verso e avaliar a confiança. Os cartões são instruções de interface, não questões médicas. O componente não importa acervo, motor, revisão, servidor nem ranking; não consome flashcards nem cria partida.
+O Preceptor convida para uma demonstração curta na primeira entrada. Pode pular, fechar por Escape e reabrir em **Como jogar**. As etapas são lembrar, conferir o verso e avaliar a confiança. Os cartões são instruções de interface, não questões médicas. O componente não importa acervo, motor, revisão, servidor nem ranking; não consome flashcards nem cria partida.
 
 Ao concluir ou pular, salva apenas `tutorialVisto` nos Ajustes existentes, por ação explícita da pessoa. Mantém os outros campos. Isso segue o armazenamento existente: visitantes conservam a preferência na sessão; contas seguem a política já implementada. Não há migração SQL nem alteração em limites.
 
@@ -26,4 +26,4 @@ Nesta execução, ambos os perfis tiveram mediana 59,9 FPS; P95 de intervalo de 
 
 Próxima fila permanece em PENDENCIAS-14-10.md: Biblioteca decorativa/música, cenários e personalização sem vantagem. Monstros novos continuam em pausa, e conteúdo médico/planos/dados existentes ficam fora do trabalho.
 
-PR de continuidade: [#255](https://github.com/talesrobertosn/ortoquestoes/pull/255), em rascunho. As capas foram comparadas por hash com o domínio público, e o formulário novo foi localizado no bundle publicado.
+PR de continuidade: [#255](https://github.com/talesrobertosn/ortoquestoes/pull/255), mesclado. A publicação inicial foi cancelada pelo deploy de #256, que falhou por uma referência antiga à escolha de som. A correção de integração está registrada em CONTINUAR. As capas foram comparadas por hash com o domínio público, e o formulário novo foi localizado no bundle publicado.
