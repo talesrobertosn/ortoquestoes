@@ -13,6 +13,7 @@ import { Cartao, familiasDe } from './Cartao'
 import { Sprite } from './Sprite'
 import { HUMOR, NomeEmChamas, SERIE_VAZIA, avancarSerie, humorDe, somDoHumor, type Humor } from './ClimaEstudo'
 import { ContextoConta } from '../../conta/ContextoConta'
+import { recurso } from '../../config'
 
 type Avaliacao = 'errei' | 'hesitei' | 'sabia'
 
@@ -297,6 +298,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
     <div className="fc-estudo">
       <aside className="fc-estudo__painel" aria-label="Progresso do estudo">
         <button type="button" className="fc-botao-pequeno fc-estudo__voltar" onClick={aoTerminar}>← Biblioteca</button>
+        <GatoDaBiblioteca estado={humor.tipo === 'gloria' || (humor.tipo === 'chama' && humor.nivel >= 2) ? 'feliz' : humor.tipo === 'chama' || humor.tipo === 'arcoiris' || serie.acertos >= 1 ? 'acorda' : 'dorme'} />
         <NomeEmChamas nome={nomeMostrado} humor={humor} />
         <p className="fc-estudo__titulo">{titulo}</p>
         {humor.tipo !== 'calmo' && (
@@ -312,6 +314,10 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
           <div className="hesitei"><dt>Hesitei</dt><dd>{feitos.hesitei}</dd></div>
           <div className="errei"><dt>Errei</dt><dd>{feitos.errei}</dd></div>
         </dl>
+        <div className="fc-velas" aria-label={`${feitos.sabia} velas acesas: uma por "Sabia" nesta sessão`} title="Uma vela acende a cada &quot;Sabia&quot; nesta sessão">
+          {Array.from({ length: 10 }, (_, i) => <i key={i} className={i < feitos.sabia % 10 || (feitos.sabia >= 10 && feitos.sabia % 10 === 0) ? 'acesa' : ''} style={{ backgroundImage: `url(${recurso('flashcards/vfx/vela.png')})`, animationDelay: `${-i * 110}ms` }} />)}
+          {feitos.sabia >= 10 && <b>×{Math.floor(feitos.sabia / 10)}</b>}
+        </div>
         <button type="button" className="fc-interruptor" role="switch" aria-checked={comAlternativas}
           onClick={() => { const v = !comAlternativas; definirComAlternativas(v); gravar(CHAVE_ALTERNATIVAS, v); tocar('selecao') }}>
           <span className="fc-interruptor__trilho" aria-hidden="true"><i /></span>
@@ -388,4 +394,9 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
       </div>
     </div>
   )
+}
+
+/** O gato da Biblioteca: dorme, acorda quando você acerta e fica feliz no combo (só enfeite). */
+function GatoDaBiblioteca({ estado }: { estado: 'dorme' | 'acorda' | 'feliz' }) {
+  return <span className={`fc-gato fc-gato--${estado}`} aria-hidden="true" style={{ backgroundImage: `url(${recurso(`flashcards/vfx/gato-${estado}.png`)})` }} />
 }

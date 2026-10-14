@@ -60,8 +60,8 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 29. [x] **Tempestade:** 5 ou mais erros seguidos escurecem a tela, trazem relâmpagos e trovão. Mensagem calma: "leia o verso sem pressa".
 30. [x] **Névoa da dúvida:** 3 "Hesitei" seguidos, ou mais de 30 s sem virar o flashcard.
 31. [x] **Arco-íris:** o primeiro acerto depois da chuva.
-32. [ ] Velas da biblioteca que acendem uma a uma a cada acerto da sessão.
-33. [ ] Gato da biblioteca (pixel art) que dorme, acorda no combo e se espreguiça na glória.
+32. [x] Velas da sessão: uma acende a cada "Sabia" (10 por fileira, com contador ×N).
+33. [x] Gato da Biblioteca em pixel art: dorme com Zzz, acorda quando você acerta e fica feliz (rabo em pé e coração) com o fogo azul e na glória.
 34. [ ] Livros que voam para a estante a cada flashcard dominado.
 35. [ ] Página de "diário da sessão" no fim: clima de cada trecho, melhor sequência, área mais forte.
 36. [ ] Selos colecionáveis da Biblioteca: primeira glória, 100 flashcards na semana, sem tempestade.
@@ -149,3 +149,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** PR #228 mesclado. Depois: escudo em pixel art (o golpe do vilão bate na bolha e ela se estilhaça), corações na cura, "puf" de vitória e lâmina de ouro a partir do estágio 4 (ideias 12 a 15).
 - **14/10/2026:** Em chamas (ideia 20). Os três dragões têm `queima`; em `regras.ts` ficam `QUEIMADURA`, `Partida.queimadura` e os eventos `chamuscado`, `arde` e `apagou`. Na tela: chamas no pé do herói e selo laranja.
 - **14/10/2026:** Grude e Tremor (ideias 21 e 22), com testes no motor, mais as etiquetas de superpoder na placa do vilão (ideia 25).
+- **14/10/2026:** Gato da Biblioteca e velas da sessão (ideias 32 e 33), pintados em `vfx.py` (`gato-*` e `vela`).
