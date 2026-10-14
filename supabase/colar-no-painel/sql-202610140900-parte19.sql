@@ -1,6 +1,6 @@
 -- Parte 19 (nova regra): conta grátis com uma vida na Cripta a cada 24 horas (14/10/2026).
 -- Cole no SQL Editor do Supabase e execute. Depende da parte 18. Substitui a versão anterior da parte 19 (3 tentativas):
--- pode colar mesmo que a versão anterior já tenha sido colada.
+-- pode colar mesmo que a versão anterior (ou o rascunho "Biblioteca ou Cripta") já tenha sido colada.
 
 -- Conta grátis: uma vida na Cripta a cada 24 horas (diretriz do Tales, 14/10/2026).
 -- "Na biblioteca, a pessoa tem 10 flashcards e na cripta ela tem uma vida. Ela pode ir até o quanto
@@ -28,6 +28,74 @@ create table if not exists public.flashcards_janela_cripta (
   atualizado_em timestamptz not null default now()
 );
 alter table public.flashcards_janela_cripta enable row level security;
+
+-- Biblioteca: a mesma função da parte 18. Recriada aqui porque um rascunho anterior desta parte 19
+-- (Biblioteca OU Cripta) pode ter sido colado; isto desfaz aquele rascunho.
+create or replace function public.autorizar_flashcard(p_chave_idempotencia uuid, p_id_flashcard text)
+returns table (permitido boolean, paywall_ativo boolean, ilimitado boolean, consumidas integer, limite integer, restantes integer, libera_em timestamptz, motivo text)
+language plpgsql security definer set search_path = public, pg_temp as $$
+declare
+  v_usuario uuid := auth.uid();
+  v_agora timestamptz := clock_timestamp();
+  v_janela interval := interval '24 hours';
+  v_libera timestamptz := v_agora + interval '24 hours';
+  v_config public.configuracao_comercial%rowtype;
+  v_teste boolean := false;
+  v_ilimitado boolean := false;
+  v_consumidas integer := 0;
+  v_inicio timestamptz;
+  v_limite constant integer := 10;
+begin
+  if v_usuario is null then raise exception 'autenticacao_necessaria' using errcode = '42501'; end if;
+  if p_id_flashcard is null or length(p_id_flashcard) > 160 then raise exception 'flashcard_invalido'; end if;
+  select * into v_config from public.configuracao_comercial where id = true;
+  if not found then raise exception 'configuracao_ausente'; end if;
+  select exists(select 1 from public.contas_teste where id_usuario = v_usuario and ativa) into v_teste;
+  paywall_ativo := v_config.paywall_ativo or v_teste;
+  limite := v_limite;
+
+  if not paywall_ativo then
+    insert into public.flashcards_autorizados values (p_chave_idempotencia, v_usuario, p_id_flashcard, false, v_agora) on conflict do nothing;
+    return query select true, false, true, 0, limite, null::integer, v_libera, null::text;
+    return;
+  end if;
+
+  select exists(select 1 from public.administradores adm where adm.id_usuario = v_usuario)
+      or exists(select 1 from public.acessos_cortesia c where c.id_usuario = v_usuario and coalesce(c.ate, 'infinity') > v_agora)
+      or exists(select 1 from public.assinaturas a where a.id_usuario = v_usuario and (a.status = 'ativa' or (a.status = 'cancelada' and a.cancelar_ao_fim)) and coalesce(a.fim_periodo, 'infinity') > v_agora)
+    into v_ilimitado;
+  if v_ilimitado then
+    insert into public.flashcards_autorizados values (p_chave_idempotencia, v_usuario, p_id_flashcard, false, v_agora) on conflict do nothing;
+    return query select true, true, true, 0, limite, null::integer, v_libera, null::text;
+    return;
+  end if;
+
+  -- trava a janela antes de ler: duas abas não passam juntas do 10º flashcard
+  insert into public.flashcards_janela_gratis(id_usuario, inicio, quantidade) values (v_usuario, v_agora, 0) on conflict do nothing;
+  select j.inicio, j.quantidade into v_inicio, v_consumidas from public.flashcards_janela_gratis j where j.id_usuario = v_usuario for update;
+  if v_inicio + v_janela <= v_agora then
+    update public.flashcards_janela_gratis set inicio = v_agora, quantidade = 0, atualizado_em = v_agora where id_usuario = v_usuario;
+    v_inicio := v_agora;
+    v_consumidas := 0;
+  end if;
+  v_libera := v_inicio + v_janela;
+
+  if exists(select 1 from public.flashcards_autorizados where chave_idempotencia = p_chave_idempotencia and id_usuario = v_usuario) then
+    return query select true, true, false, v_consumidas, limite, greatest(limite - v_consumidas, 0), v_libera, null::text;
+    return;
+  end if;
+
+  if v_consumidas >= limite then
+    return query select false, true, false, v_consumidas, limite, 0, v_libera, 'Você atingiu o limite de flashcards grátis.'::text;
+    return;
+  end if;
+
+  insert into public.flashcards_autorizados values (p_chave_idempotencia, v_usuario, p_id_flashcard, true, v_agora);
+  update public.flashcards_janela_gratis set quantidade = quantidade + 1, atualizado_em = v_agora where id_usuario = v_usuario returning quantidade into v_consumidas;
+  return query select true, true, false, v_consumidas, limite, greatest(limite - v_consumidas, 0), v_libera, null::text;
+end $$;
+revoke all on function public.autorizar_flashcard(uuid, text) from public;
+grant execute on function public.autorizar_flashcard(uuid, text) to authenticated;
 
 -- O retorno mudou (sai tentativa/tentativas, entra libera_em), por isso a função é recriada.
 drop function if exists public.autorizar_flashcard_cripta(uuid, text, uuid, text);
