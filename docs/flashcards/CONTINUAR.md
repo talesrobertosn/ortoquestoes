@@ -6,6 +6,10 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Tutorial e benchmark — continuidade de 14/10/2026
+
+O PR #252 da Biblioteca foi mesclado. O bloco seguinte acrescenta tutorial opcional e medição local de FPS, documentados em [TUTORIAL-DESEMPENHO-14-10.md](TUTORIAL-DESEMPENHO-14-10.md). A base foi atualizada incluindo os controles de volume e o reinício de partida do PR #254. Preserve essas mudanças.
+
 ## Continuidade autorizada — Biblioteca (14/10/2026)
 
 Tales pediu continuar a lista de pendências e publicar os blocos concluídos, mantendo relatórios no GitHub. A auditoria e a fila de trabalho estão em [PENDENCIAS-14-10.md](PENDENCIAS-14-10.md). Não retomar monstros novos nem modificar conteúdo médico, planos ou dados existentes de usuários. O bloco atual acrescenta diário por sessão, estante por “Sabia” e leitura tranquila com chuva. Não há SQL.
