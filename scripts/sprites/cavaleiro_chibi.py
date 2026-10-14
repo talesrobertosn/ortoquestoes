@@ -438,41 +438,55 @@ def quadro(e: int, t: dict) -> np.ndarray:
 
     ombreira(omb_e + (1, 0), 1, 7.3)
 
-    # ================= elmo
+    # ================= elmo (formato da referência: domo em ogiva, laterais retas, base plana e larga)
     cx, cy = cab
-    rx, ry = 20.0, 19.0
+    rx, ry = 19.5, 19.0
+    topo_y, base_y = cy - ry, cy + ry - 1
     ge = q.novo_grupo()
-    dom = m_elipse(cab, rx, ry)
-    q.peca(dom, met, tons(n_esfera(cab, rx, ry), met, metal=True), 8.0, ge)
-    pv_c = cab + (8, 4)
-    placa = m_elipse(pv_c, 13, 14) & dom
-    q.peca(placa, met, tons(n_esfera(pv_c + (-3, -3), 15, 15, 0.9), met, metal=True), 8.05, ge)
-    q.escurece(placa & ~m_elipse(pv_c, 11.6, 12.6) & (XX < cx + rx - 2), 2)
-    q.escurece(dom & (YY > cy + ry - 4.5), 1)
-    q.peca(dom & (np.abs(YY - (cy + ry - 4.5)) < 0.6), met, cheio(6), 8.06, ge, enfeite=True)
-    crx = cx + 4
+    t_ = np.clip((YY - topo_y) / (base_y - topo_y), 0, 1)
+    meia = rx * np.sin(np.clip(t_ * 1.5, 0, 1) * math.pi / 2) ** 0.55 * (1 + 0.04 * np.clip((t_ - 0.75) / 0.25, 0, 1))
+    meia = np.maximum(meia, 1.5)
+    dom = (YY >= topo_y) & (YY <= base_y) & (np.abs(XX - cx) <= meia)
+    nxh = np.clip((XX - cx) / meia, -0.97, 0.97)
+    nyh = -np.clip(1 - t_ * 1.5, 0, 1) * 0.85
+    nzh = np.sqrt(np.clip(1 - nxh ** 2 - nyh ** 2, 0.03, 1))
+    q.peca(dom, met, tons((nxh, nyh, nzh), met, metal=True), 8.0, ge)
+    crx = cx + 4                                     # crista vertical (3/4: um pouco à direita)
     fm = ouro if E['friso'] else met
-    crista = dom & (np.abs(XX - crx - (YY - cy) * 0.08) < 1.3) & (YY < cy + 1)
-    q.peca(crista, fm, tons(n_plano(-0.2, -0.5), fm, metal=True) + 1, 8.1, ge, enfeite=True)
-    faixa = dom & (np.abs(YY - (cy - 4)) < 1.4) & (XX < crx - 1.3)
-    q.peca(faixa, fm, tons(n_esfera(cab, rx, ry), fm, metal=True), 8.08, ge, enfeite=True)
-    for xr in range(int(cx - rx + 4), int(crx - 2), 4):
-        q.peca(ponto(xr, cy - 4) & dom, fm, cheio(6), 8.09, ge, enfeite=True)
-    fenda = dom & (YY >= cy + 0.8) & (YY < cy + 4.6) & (XX > cx - 3) & (XX < cx + rx - 0.6)
-    q.peca(fenda, 'visor', np.where(XX < cx + 4, 0, 1).astype(np.int16), 8.2, ge, enfeite=True)
-    barra = dom & (np.abs(XX - crx) < 1.2) & (YY >= cy + 4.5) & (YY < cy + 12)
-    q.peca(barra, 'visor', cheio(1), 8.2, ge, enfeite=True)
-    for i in range(3):
+    # aro da base, plano e largo
+    aro = dom & (YY > base_y - 3.5)
+    q.peca(aro, met, np.where(XX < cx - 4, 4, np.where(XX < cx + 8, 3, 2)).astype(np.int16), 8.02, ge)
+    q.peca(dom & (np.abs(YY - (base_y - 3.5)) < 0.6), met, cheio(6), 8.03, ge, enfeite=True)
+    if E['friso']:
+        q.peca(dom & (np.abs(YY - (base_y - 1.6)) < 0.7), ouro, np.where(XX < cx, 5, 3).astype(np.int16), 8.04, ge, enfeite=True)
+    # o "T" da frente: faixa da testa (horizontal) e crista (vertical), claros, com sombra embaixo/à direita
+    testa_y = cy - 3
+    testa = dom & (np.abs(YY - testa_y) < 1.0) & (XX > cx - 11)
+    q.peca(testa, fm, cheio(6 if fm == met else 5), 8.1, ge, enfeite=True)
+    q.peca(dom & (np.abs(YY - (testa_y + 1.5)) < 0.5) & (XX > cx - 11), met, cheio(2), 8.09, ge, enfeite=True)
+    crista = dom & (np.abs(XX - crx) < 1.2) & (YY < base_y - 3.5)
+    q.peca(crista, fm, cheio(6 if fm == met else 5), 8.11, ge, enfeite=True)
+    q.peca(dom & (np.abs(XX - (crx + 1.8)) < 0.5) & (YY > testa_y) & (YY < base_y - 3.5), met, cheio(2), 8.1, ge, enfeite=True)
+    # fendas dos olhos verticais, dos dois lados da crista (a de longe mais estreita)
+    olhos_pos = []
+    for ox, larg_f in ((crx - 5.5, 1.6), (crx + 6.0, 1.2)):
+        fenda = dom & (np.abs(XX - ox) < larg_f) & (YY > testa_y + 2) & (YY < testa_y + 10)
+        q.peca(fenda, 'visor', cheio(0), 8.2, ge, enfeite=True)
+        olhos_pos.append((ox, testa_y + 4.5, larg_f))
+    # respiros embaixo, do lado da frente
+    for i in range(2):
         for j in range(3):
-            if (i + j) % 2 == 0:
-                q.peca(ponto(crx + 4 + j * 2, cy + 7 + i * 2) & dom, 'visor', cheio(1), 8.2, ge, enfeite=True)
-    q.escurece((ponto(cx - 9, cy - 10) | ponto(cx - 8, cy - 9)) & dom, 2)   # amassadinho
+            q.peca(ponto(crx + 3 + j * 2, testa_y + 12 + i * 2) & dom, 'visor', cheio(1), 8.2, ge, enfeite=True)
+    # rebites na faixa e amassadinho
+    for xr in range(int(cx - 9), int(crx - 2), 4):
+        q.peca(ponto(xr, testa_y) & dom, fm, cheio(len(RAMPAS[fm]) - 1), 8.12, ge, enfeite=True)
+    q.escurece((ponto(cx - 8, cy - 11) | ponto(cx - 7, cy - 10)) & dom, 2)
 
     # ================= pluma em penas
     if E['pluma']:
         sw = k('pluma', 0)
         alt = {1: 0.55, 2: 0.8, 3: 1.0}[E['pluma']]
-        base = cab + (1, -ry + 2)
+        base = np.array([cx + 1, topo_y + 2.5])
         gp = q.novo_grupo()
         penas = [(-6, -16, -15, -2), (-2, -19, -21, 2), (2, -20, -26, 7), (3, -17, -28, 12), (1, -12, -24, 16), (4, -10, -14, 12)]
         for i, (c1x, c1y, ex, ey) in enumerate(penas):
@@ -535,13 +549,13 @@ def quadro(e: int, t: dict) -> np.ndarray:
     rg = RAMPAS['olho_dano' if k('dano') else 'olho']
     bo = k('olhos', 1.0)
     if bo > 0:
-        for (ox, oy, tam) in ((cx + 1.5, cy + 2.7, 1.8), (cx + 12.0, cy + 2.7, 1.4)):
-            m = m_elipse((ox, oy), tam + 0.6, 1.4)
-            mistura(rgba, m_elipse((ox, oy), tam + 3.5, 2.6) & ~m & (rgba[..., 3] > 0), rg[3], min(1.0, 0.22 * bo))
-            mistura(rgba, m, rg[2], min(1.0, 0.85 * bo))
-            mistura(rgba, m_elipse((ox - 0.3, oy - 0.2), tam * 0.6, 0.8), rg[4], min(1.0, bo))
+        for (ox, oy, lf) in olhos_pos:
+            m = m_elipse((ox, oy), max(lf - 0.4, 0.7), 1.9)
+            mistura(rgba, m_elipse((ox, oy), lf + 1.8, 3.6) & ~m & (rgba[..., 3] > 0), rg[3], min(1.0, 0.14 * bo))
+            mistura(rgba, m, rg[2], min(1.0, 0.8 * bo))
+            mistura(rgba, ponto(ox, oy - 1) | ponto(ox - 0.6, oy - 1), rg[4], min(1.0, bo))
     if k('cintila_elmo'):
-        estrela(rgba, cab + (-9, -10), 2, (255, 255, 255), 0.95)
+        estrela(rgba, cab + (-8, -9), 2, (255, 255, 255), 0.95)
     if k('brilho_lamina') is not None:
         estrela(rgba, base_l + d * Lb * k('brilho_lamina'), 3, (255, 255, 240), 1.0)
     if k('rastro'):
