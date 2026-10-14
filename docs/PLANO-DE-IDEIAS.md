@@ -158,4 +158,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** O Tales confirmou o som no celular (ideia 78) e colou a parte 19 no Supabase (ideia 83). O #224 foi trazido para a base pelo #237 (ideia 84). O top 3 do ranking foi refeito com largura cheia e cartões legíveis (#235).
 
 - **14/10/2026:** Combate (16, 18, 23, 24 e 64), PR draft [#248](https://github.com/talesrobertosn/ortoquestoes/pull/248), a revisar. Numerais próprios, pedregulhos, hipnose apenas visual após o primeiro Olhar acertado e carga voando para o mímico. [Detalhes e testes](flashcards/COMBATE-14-10.md).
-- **14/10/2026:** Desempenho (68 e 69), PR draft a revisar: tiras por adversário, música Opus com MP3 de reserva. [Testes e medidas](flashcards/DESEMPENHO-14-10.md).
+- **14/10/2026:** Desempenho (68 e 69), PR draft [#249](https://github.com/talesrobertosn/ortoquestoes/pull/249), a revisar: tiras por adversário, música Opus com MP3 de reserva. [Testes e medidas](flashcards/DESEMPENHO-14-10.md).

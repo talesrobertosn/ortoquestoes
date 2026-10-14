@@ -1,6 +1,6 @@
 # Desempenho: ideias 68 e 69
 
-14/10/2026. PR draft independente, sem merge.
+14/10/2026. PR draft [#249](https://github.com/talesrobertosn/ortoquestoes/pull/249), independente, sem merge.
 
 `vfxPorAndar` seleciona os efeitos comuns do herói e a família do adversário atual. A Biblioteca carrega gato, velas e chamas de humor. Ao trocar de andar, só as novas tiras são solicitadas; o cache do Palco reutiliza o que já carregou e o primeiro uso continua podendo carregar efeitos excepcionais. A lista já reconhece os pedregulhos novos do PR de combate, se seus metadados estiverem presentes, sem depender dele para funcionar.
 
