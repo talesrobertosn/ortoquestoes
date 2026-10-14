@@ -32,10 +32,10 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 9. [x] Gosma: no crítico, a gosma escorre do alto da tela.
 10. [x] Raptor, corvo e aranha: no crítico, rasgos gigantes de garra; guardião e esqueleto: pancada que racha o chão.
 11. [x] 47 tiras de efeito pintadas por `scripts/sprites/vfx.py` (prévias em `docs/flashcards/conceitos/vfx-previa-*.png`).
-12. [ ] Golpe do herói muda com o estágio: estágio 4 com rastro de ouro, estágio 6 com aura de pérola.
-13. [ ] Efeito de bloqueio do escudo em pixel art (hoje ainda usa o projétil antigo).
-14. [ ] Efeitos de cura em pixel art (corações subindo) também na Batalha, não só no veneno.
-15. [ ] "Finisher": o golpe que derruba o vilão ganha câmera lenta, zoom e confete de pixels.
+12. [x] Golpe do herói muda com o estágio: a partir do estágio 4, a lâmina é de ouro.
+13. [x] Efeito de bloqueio do escudo em pixel art (hoje ainda usa o projétil antigo).
+14. [x] Efeitos de cura em pixel art (corações subindo) também na Batalha, não só no veneno.
+15. [x] Golpe final: o vilão derrubado some num "puf" de fumaça em pixel art, com estrelas, maior no chefe.
 16. [ ] Número de dano em fonte pixel (bitmap própria), com quique e contorno.
 17. [ ] Som próprio para cada golpe novo: espada gigante, mandíbula, pedregulho e sopro.
 18. [ ] Variante do pedregulho por golem: cristal, obsidiana, rubro e cimento.
@@ -146,3 +146,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** Humor da Biblioteca (ideias 26 a 31), no PR #228. Fica em `src/flashcards/componentes/ClimaEstudo.tsx` (limiares em `HUMOR`), as chamas são `chama-*` em `vfx.py` e há aviso flutuante no celular.
 - **14/10/2026:** Rankings: pódio em pixel art refeito do zero (`scripts/cenarios/podio.py` e `src/componentes/PodioPixel.tsx`), com cena de festa no ranking das questões e cena de cripta no dos Flashcards, além da página dos Flashcards com tema de pedra e tochas (ideias 58 e 59). Prévia sem servidor: `#/ranking?demo=1` e `#/ranking?aba=flashcards&demo=1`, só no modo de desenvolvimento.
 - **14/10/2026:** Jardim Suspenso (ideia 42): andar a céu aberto dentro da cripta, com paredes em ruína, abóbada partida, cachoeira, lago com vitórias-régias e cerejeira. Fica em `scripts/cenarios/jardim.py` (cena `jardim`, também usada pela Gosma de Cimento e pelo Escaravelho). Os chefes do jardim continuam lá.
+- **14/10/2026:** PR #228 mesclado. Depois: escudo em pixel art (o golpe do vilão bate na bolha e ela se estilhaça), corações na cura, "puf" de vitória e lâmina de ouro a partir do estágio 4 (ideias 12 a 15).

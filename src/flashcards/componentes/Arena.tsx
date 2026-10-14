@@ -1,6 +1,6 @@
 import { Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
-import { INVESTIDA, atacar, estiloDe, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
+import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
 import { TABULEIRO } from '../efeitos/tabuleiros'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
@@ -447,7 +447,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           tocar('disparo', forte ? 1.2 : 1)
           window.setTimeout(() => { if (g === geracao.current) definirMostrado((m) => ({ ...m, revelada: true })) }, 240 * fator)
           // a lâmina de energia em pixel art (a cor conta a história: azul, ouro no combo, fogo no 5+, arcano no golpe duplo)
-          const tom = ev.duplo ? 'arcano' : ev.critico ? 'ouro' : combo >= 5 ? 'fogo' : combo >= COMBO_MINIMO ? 'ouro' : 'azul'
+          const tom = ev.duplo ? 'arcano' : ev.critico ? 'ouro' : combo >= 5 ? 'fogo' : combo >= COMBO_MINIMO || depois.estagio >= 4 ? 'ouro' : 'azul'
           const px = pixelVfx()
           if (P && (ev.critico || ev.duplo) && !reduzido) {
             // crítico: a espada gigante atravessa a tela na diagonal e rasga o ar
@@ -550,8 +550,12 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           if (!(await esperar(180, g))) return
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
           tocar('golpe-inimigo', 1, quemInimigo)
-          if (P) await P.projetil(de, para, { cor: '#ff5a3c', nucleo: '#ffd0c0', tam: 14, duracao: 0.32, curva: -0.25 })
+          // o golpe próprio do adversário vem e bate na bolha do escudo (pixel art)
+          const proj = projetilDoEstilo(estiloDe(adv.sprite, adv.variante), adv.variante)
+          if (P && proj) await P.voar(proj, de, para, { duracao: 0.32, curva: -0.25, escala: pixelVfx() * 1.2 })
+          else if (P) { P.linhas(para, '#fff1c2', 12); await new Promise((r) => window.setTimeout(r, 140)) }
           if (g !== geracao.current) return
+          P?.efeito('escudo', para, { escala: pixelVfx() * 1.4, brilho: '#7fb8ff' })
           animar(refHeroi.current, 'fc-anim-bloqueio', 640)
           P?.onda(para, '#7fb8ff', 110, 16)
           P?.clarao(para, '#5fa8ff', 260, 0.9)
@@ -573,7 +577,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           break
         }
         case 'cura': {
-          P?.subir(centro(refHeroi.current), '#7fe08f', 28, 70)
+          P?.subir(centro(refHeroi.current), '#7fe08f', 20, 70)
+          { const h = centro(refHeroi.current); for (let k = 0; k < Math.min(4, 1 + Math.floor(ev.valor / 6)); k++) P?.efeito('coracao', { x: h.x + (k - 1.5) * 20 + (Math.random() - 0.5) * 8, y: h.y }, { escala: pixelVfx(), vy: -80 - k * 10, atraso: k * 0.08, vida: 0.95, laco: true, some: 0.35 }) }
           P?.clarao(centro(refHeroi.current), '#5fdc7a', 200, 0.7, 0.6)
           animar(refHeroi.current, 'fc-anim-cura', 900)
           tocar('cura')
@@ -630,7 +635,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         case 'inimigo-derrotado': {
           if (!(await esperar(240, g))) return
           const caixa = refInimigo.current?.getBoundingClientRect()
-          if (caixa) { P?.dissolver(caixa, PALETA_PERSONAGEM[quemInimigo]); P?.fragmentos(centro(refInimigo.current), PALETA_PERSONAGEM[quemInimigo], 40, 520) }
+          if (caixa) { P?.dissolver(caixa, PALETA_PERSONAGEM[quemInimigo]); P?.fragmentos(centro(refInimigo.current), PALETA_PERSONAGEM[quemInimigo], 30, 520) }
+          // o "puf" de vitória em pixel art, maior no chefe, com estrelas
+          P?.efeito('puf', centro(refInimigo.current), { escala: pixelVfx() * (ev.chefe ? 2.4 : 1.7) })
+          P?.efeito('faisca-ouro', centro(refInimigo.current), { escala: pixelVfx() * (ev.chefe ? 2 : 1.4), atraso: 0.06 })
           P?.clarao(centro(refInimigo.current), '#ffe08a', 500, 1, 0.8)
           definirMostrado((m) => ({ ...m, inimigoCaiu: true }))
           posar(refHeroi, 'vitoria', 1800)

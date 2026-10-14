@@ -853,6 +853,79 @@ def pena(n=6, W=18, base=('#3a3448', '#5a5470', '#8a86a8')):
     return quadros
 
 
+def escudo_quebra(n=7, W=64):
+    """Bolha de escudo (azul, hexagonal) que segura o golpe, racha e voa em cacos."""
+    pal = ['#ffffff', '#dff6ff', '#8fd3ff', '#4a8fe0', '#2f4fa8']
+    rng = np.random.default_rng(31)
+    cacos = [(rng.uniform(0, 2 * math.pi), rng.uniform(0.6, 1.0)) for _ in range(14)]
+    quadros = []
+    for k in range(n):
+        q = Q(W, W)
+        c = W / 2
+        dx, dy = q.x - c, q.y - c
+        # hexágono: distância pelo maior dos três eixos
+        hexd = np.maximum(np.abs(dx) * 0.866 + np.abs(dy) * 0.5, np.abs(dy))
+        R = 24
+        if k <= 2:
+            borda = (hexd <= R) & (hexd > R - (3 if k == 0 else 2.2))
+            dentro = (hexd <= R - 2) & dither(q, 0.25 + 0.1 * k)
+            q.pinta(dentro, pal[2]); q.pinta(borda, pal[1])
+            q.pinta(borda & (dy < -R * 0.4) & (dx < 0), pal[0])
+            if k >= 1:
+                # rachaduras saindo do ponto do impacto (o centro)
+                for i in range(5):
+                    a = i / 5 * 2 * math.pi + 0.3
+                    for r in range(2, int(R * (0.5 + 0.25 * k))):
+                        px_ = int(c + math.cos(a + math.sin(r * 0.5) * 0.15) * r); py_ = int(c + math.sin(a + math.sin(r * 0.5) * 0.15) * r)
+                        q.a[py_, px_] = cor(pal[0])
+        else:
+            t = (k - 2) / (n - 3)
+            for i, (a, v) in enumerate(cacos):
+                r = 6 + t * 26 * v
+                px_, py_ = c + math.cos(a) * r, c + math.sin(a) * r + t * t * 10
+                tam = max(1.2, 4.2 * (1 - t * 0.7))
+                m = (np.abs(q.x - px_) + np.abs(q.y - py_) * 0.7) <= tam
+                if k == n - 1:
+                    m &= dither(q, 0.5)
+                q.pinta(m, pal[1] if i % 3 else pal[0]); q.pinta(m & (q.x > px_), pal[2])
+        q.contorno(pal[4])
+        quadros.append(q.a)
+    return quadros
+
+
+def puf(n=8, W=80):
+    """Explosão de vitória: clarão, anel de fumacinhas brancas e estrelas que se abrem."""
+    pal = ['#ffffff', '#fff4b8', '#ffd25a', '#c8b48e', '#6a5a46']
+    quadros = []
+    for k in range(n):
+        q = Q(W, W)
+        c = W / 2
+        t = k / (n - 1)
+        if k == 0:
+            q.pinta(np.hypot(q.x - c, q.y - c) <= 10, pal[0]); q.pinta(np.hypot(q.x - c, q.y - c) <= 6, pal[1])
+        else:
+            # fumacinhas em anel
+            for i in range(9):
+                a = i / 9 * 2 * math.pi + 0.2
+                r = 8 + 24 * (1 - (1 - t) ** 2)
+                bx, by = c + math.cos(a) * r, c + math.sin(a) * r * 0.85
+                rr = 7 * (1 - t * 0.75) + 1
+                d = np.hypot(q.x - bx, q.y - by)
+                m = d <= rr
+                if k >= 5:
+                    m &= ~dither(q, (k - 4) * 0.25)
+                luz = np.hypot(q.x - bx + rr * 0.35, q.y - by + rr * 0.35) / max(rr, 1)
+                pinta_rampa(q, m, np.clip(luz * 0.6 + t * 0.5, 0, 0.999), ['#ffffff', '#f4ead6', '#d8c8a8', '#a8977a'])
+            # estrelas de 4 pontas voando para fora
+            for i in range(5):
+                a = i / 5 * 2 * math.pi + 1.0
+                r = 10 + 30 * t
+                brilhinho(q, c + math.cos(a) * r, c + math.sin(a) * r, 3 if k < 5 else 1, pal)
+        q.contorno('#5a4a3a')
+        quadros.append(q.a)
+    return quadros
+
+
 # ================================================================== registro
 
 def efeitos():
@@ -889,6 +962,8 @@ def efeitos():
     for tom in ('gosma', 'acida', 'rainha'):
         add(f'escorre-{tom}', gota_tela(PAL[tom]), 90, [12, 0])
     add('coracao', coracao(), 90, loop=True)
+    add('escudo', escudo_quebra(), 60)
+    add('puf', puf(), 70)
     add('pena', pena(), 70, loop=True)
     return E
 
