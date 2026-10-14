@@ -2227,3 +2227,36 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 .fc-humor-aviso small { font-size: 12px; color: #e8e2d4; line-height: 1.35; }
 @keyframes fc-humor-aviso { 0% { opacity: 0; transform: translateY(-8px) scale(.95); } 10%, 82% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(-6px); } }
 @media (max-width: 640px) and (orientation: portrait) { .fc-humor-aviso { display: grid; } }
+
+/* ---------- Em chamas (o Sopro do dragão) ---------- */
+.fc-em-chamas { position: absolute; left: 0; right: 0; bottom: 6%; height: 0; z-index: 3; pointer-events: none; }
+.fc-em-chamas i { position: absolute; bottom: 0; width: 36px; height: 48px; margin-left: -18px; background-repeat: no-repeat; background-size: 216px 48px; image-rendering: pixelated;
+  animation: fc-chama-viva .54s steps(6) infinite; opacity: .9; }
+.fc-em-chamas i:nth-child(1) { left: 28%; transform: scale(.8); } .fc-em-chamas i:nth-child(2) { left: 52%; } .fc-em-chamas i:nth-child(3) { left: 74%; transform: scale(.7); }
+.fc-anim-queima { animation: fc-dano-queima .6s ease-out; }
+@keyframes fc-dano-queima { 0%, 100% { transform: none; } 25% { transform: translateY(-3px); filter: brightness(1.3) sepia(1) saturate(4) hue-rotate(-20deg); } 60% { transform: translateX(2px); } }
+.fc-veneno-selo--fogo { color: #ffe8d0; background: linear-gradient(#4a1e10, #2a1008); box-shadow: inset 0 0 0 1.5px #e0702a, 0 0 10px rgba(255, 120, 40, .4); }
+.fc-veneno-selo--fogo b { color: #ffb062; }
+.fc-veneno-selo--fogo .fc-veneno-selo__conta i { background: #4a2a1a; box-shadow: inset 0 0 0 1px #8a4a2a; }
+.fc-veneno-selo--fogo .fc-veneno-selo__conta i.feito { background: #ffb062; box-shadow: 0 0 6px #ff7a2a; }
+@media (prefers-reduced-motion: reduce) { .fc-em-chamas i { animation: none; } }
+.fc-veneno-selo--grude { color: #e4fff0; background: linear-gradient(#1a4a34, #0e2a1e); box-shadow: inset 0 0 0 1.5px #5fc88a, 0 0 10px rgba(110, 220, 150, .35); }
+.fc-veneno-selo--grude b { color: #9ff0b8; }
+.fc-ator--grudado .fc-ator__corpo { filter: drop-shadow(0 3px 0 rgba(110, 220, 150, .55)) drop-shadow(0 0 4px rgba(110, 220, 150, .5)); }
+.fc-info--veneno { color: #c8ff9a; box-shadow: inset 0 0 0 1px rgba(122, 224, 74, .6); }
+.fc-info--grude { color: #b8f7c8; box-shadow: inset 0 0 0 1px rgba(111, 220, 148, .6); }
+
+/* ---------- Gato da Biblioteca e velas da sessão ---------- */
+.fc-gato { position: absolute; z-index: 3; left: 18px; top: calc(100% + 2px); width: 120px; height: 90px; pointer-events: none; background-repeat: no-repeat;
+  background-size: 720px 90px; image-rendering: pixelated; animation: fc-gato-anda 1.56s steps(6) infinite; }
+.fc-gato--acorda { animation-duration: .96s; }
+.fc-gato--feliz { animation-duration: .72s; }
+@keyframes fc-gato-anda { to { background-position: -720px 0; } }
+.fc-velas { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1px; min-height: 30px; }
+.fc-velas i { width: 12px; height: 20px; background-repeat: no-repeat; background-size: 48px 20px; image-rendering: pixelated; transform: scale(1.3); transform-origin: 50% 100%;
+  filter: grayscale(1) brightness(.55); background-position: 0 0; }
+.fc-velas i.acesa { filter: none; animation: fc-vela .48s steps(4) infinite; }
+@keyframes fc-vela { to { background-position: -48px 0; } }
+.fc-velas b { margin-left: 4px; font: 700 12px var(--fc-ui); color: #ffe6a8; }
+@media (max-width: 640px) and (orientation: portrait), (max-height: 500px) and (orientation: landscape) { .fc-gato { display: none; } .fc-velas { display: none; } }
+@media (prefers-reduced-motion: reduce) { .fc-gato, .fc-velas i.acesa { animation: none; } }

@@ -8,7 +8,7 @@ Atualizado em 13/10/2026, 21h. Tudo o que foi feito está mesclado na base e pub
 
 ## PAROU AQUI (14/10/2026, madrugada): leia isto primeiro
 
-**Lista de ideias com checklist (o plano):** [../PLANO-DE-IDEIAS.md](../PLANO-DE-IDEIAS.md). Marque o que fizer.
+**Lista de ideias com checklist (o plano):** [../PLANO-DE-IDEIAS.md](../PLANO-DE-IDEIAS.md). Marque o que fizer. Resumo da madrugada para o Tales: [RELATORIO-MANHA-14-10.md](RELATORIO-MANHA-14-10.md).
 
 Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com PR para a base `claude/pdfs-questoes-tp64dr`. O PR #227 já foi mesclado.
 

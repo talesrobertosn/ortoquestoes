@@ -57,6 +57,18 @@ const IMPACTO: Record<Estilo, Impacto> = {
   fogo: { cor: '#7fe0ff', cor2: '#e8ffff', material: ['#d9cdb0', '#7fe0ff', '#ffffff'], garras: false },
 }
 
+/** Projétil em pixel art de cada estilo (usado também quando o escudo bloqueia). */
+export function projetilDoEstilo(estilo: Estilo, variante?: string): string | null {
+  switch (estilo) {
+    case 'pedra': return 'pedra'
+    case 'veneno': return `gota-${variante === 'eletrica' ? 'eletrico' : 'veneno'}`
+    case 'gosma': return `gota-${variante === 'acida' ? 'acida' : variante === 'rainha' ? 'rainha' : 'gosma'}`
+    case 'fogo': return `bolafogo-${tomFogo(variante)}`
+    case 'magia': return 'orbe'
+    default: return null
+  }
+}
+
 /** Tom do fogo do dragão e da gosma conforme a variante do bestiário. */
 export const tomFogo = (variante?: string) => (variante === 'escarlate' ? 'escarlate' : variante === 'ancestral' ? 'ancestral' : 'fatuo')
 const tomGosma = (variante?: string) => (variante === 'acida' ? 'acida' : variante === 'rainha' ? 'rainha' : 'gosma')

@@ -853,6 +853,172 @@ def pena(n=6, W=18, base=('#3a3448', '#5a5470', '#8a86a8')):
     return quadros
 
 
+def escudo_quebra(n=7, W=64):
+    """Bolha de escudo (azul, hexagonal) que segura o golpe, racha e voa em cacos."""
+    pal = ['#ffffff', '#dff6ff', '#8fd3ff', '#4a8fe0', '#2f4fa8']
+    rng = np.random.default_rng(31)
+    cacos = [(rng.uniform(0, 2 * math.pi), rng.uniform(0.6, 1.0)) for _ in range(14)]
+    quadros = []
+    for k in range(n):
+        q = Q(W, W)
+        c = W / 2
+        dx, dy = q.x - c, q.y - c
+        # hexágono: distância pelo maior dos três eixos
+        hexd = np.maximum(np.abs(dx) * 0.866 + np.abs(dy) * 0.5, np.abs(dy))
+        R = 24
+        if k <= 2:
+            borda = (hexd <= R) & (hexd > R - (3 if k == 0 else 2.2))
+            dentro = (hexd <= R - 2) & dither(q, 0.25 + 0.1 * k)
+            q.pinta(dentro, pal[2]); q.pinta(borda, pal[1])
+            q.pinta(borda & (dy < -R * 0.4) & (dx < 0), pal[0])
+            if k >= 1:
+                # rachaduras saindo do ponto do impacto (o centro)
+                for i in range(5):
+                    a = i / 5 * 2 * math.pi + 0.3
+                    for r in range(2, int(R * (0.5 + 0.25 * k))):
+                        px_ = int(c + math.cos(a + math.sin(r * 0.5) * 0.15) * r); py_ = int(c + math.sin(a + math.sin(r * 0.5) * 0.15) * r)
+                        q.a[py_, px_] = cor(pal[0])
+        else:
+            t = (k - 2) / (n - 3)
+            for i, (a, v) in enumerate(cacos):
+                r = 6 + t * 26 * v
+                px_, py_ = c + math.cos(a) * r, c + math.sin(a) * r + t * t * 10
+                tam = max(1.2, 4.2 * (1 - t * 0.7))
+                m = (np.abs(q.x - px_) + np.abs(q.y - py_) * 0.7) <= tam
+                if k == n - 1:
+                    m &= dither(q, 0.5)
+                q.pinta(m, pal[1] if i % 3 else pal[0]); q.pinta(m & (q.x > px_), pal[2])
+        q.contorno(pal[4])
+        quadros.append(q.a)
+    return quadros
+
+
+def puf(n=8, W=80):
+    """Explosão de vitória: clarão, anel de fumacinhas brancas e estrelas que se abrem."""
+    pal = ['#ffffff', '#fff4b8', '#ffd25a', '#c8b48e', '#6a5a46']
+    quadros = []
+    for k in range(n):
+        q = Q(W, W)
+        c = W / 2
+        t = k / (n - 1)
+        if k == 0:
+            q.pinta(np.hypot(q.x - c, q.y - c) <= 10, pal[0]); q.pinta(np.hypot(q.x - c, q.y - c) <= 6, pal[1])
+        else:
+            # fumacinhas em anel
+            for i in range(9):
+                a = i / 9 * 2 * math.pi + 0.2
+                r = 8 + 24 * (1 - (1 - t) ** 2)
+                bx, by = c + math.cos(a) * r, c + math.sin(a) * r * 0.85
+                rr = 7 * (1 - t * 0.75) + 1
+                d = np.hypot(q.x - bx, q.y - by)
+                m = d <= rr
+                if k >= 5:
+                    m &= ~dither(q, (k - 4) * 0.25)
+                luz = np.hypot(q.x - bx + rr * 0.35, q.y - by + rr * 0.35) / max(rr, 1)
+                pinta_rampa(q, m, np.clip(luz * 0.6 + t * 0.5, 0, 0.999), ['#ffffff', '#f4ead6', '#d8c8a8', '#a8977a'])
+            # estrelas de 4 pontas voando para fora
+            for i in range(5):
+                a = i / 5 * 2 * math.pi + 1.0
+                r = 10 + 30 * t
+                brilhinho(q, c + math.cos(a) * r, c + math.sin(a) * r, 3 if k < 5 else 1, pal)
+        q.contorno('#5a4a3a')
+        quadros.append(q.a)
+    return quadros
+
+
+def gato(estado, n, W=40, H=30):
+    """Gato laranja da Biblioteca (rajado, no estilo dos bichinhos do Stardew).
+    dorme: enrolado, respirando, com Zzz · acorda: sentado, pisca e mexe o rabo ·
+    feliz: rabo alto, olhos fechados de contente e coração."""
+    pel = ['#fff0d0', '#ffc070', '#f09040', '#c86a2a', '#7a3a1a']
+    quadros = []
+    for k in range(n):
+        q = Q(W, H)
+        x, y = q.x, q.y
+        if estado == 'dorme':
+            resp = 0.6 * math.sin(k / n * 2 * math.pi)
+            corpo = np.hypot((x - 20) / 13, (y - 21 + resp * 0.5) / (7 + resp)) <= 1
+            cab = np.hypot((x - 10) / 6, (y - 20) / 5.2) <= 1
+            orelha = ((y < 16) & (y > 12) & (np.abs(x - 7 - (16 - y) * 0.2) < (y - 12) * 0.6)) | ((y < 16) & (y > 12.5) & (np.abs(x - 12.5 + (16 - y) * 0.1) < (y - 12.5) * 0.6))
+            rabo = (np.hypot((x - 22) / 12, (y - 27) / 2.2) <= 1) & (x > 12)
+            m = corpo | cab | orelha | rabo
+            luz = np.clip(np.hypot((x - 14) / 16, (y - 14) / 12), 0, 0.999)
+            pinta_rampa(q, m, luz * 0.9, pel[:4])
+            listra = m & ~cab & (((x + y * 0.4).astype(int) % 6) < 1) & (y < 24)
+            q.pinta(listra, pel[3])
+            q.pinta(np.hypot((x - 10) / 3.5, (y - 22) / 1.6) <= 1, pel[0])     # focinho claro
+            q.pinta((np.abs(y - 19.5) < 0.5) & ((np.abs(x - 7.5) < 1.2) | (np.abs(x - 12) < 1.2)), pel[4])  # olhos fechados
+            q.contorno(pel[4])
+            # Zzz subindo
+            zy = 10 - (k % n) * 1.5
+            for i, (zx, zs) in enumerate(((16, 1), (19, 2))):
+                yy = int(zy - i * 4)
+                if 0 <= yy - 2 and yy + 1 < H:
+                    for (dx, dy) in ((0, 0), (1, 0), (zs, 0), (1, 1), (0, 2), (1, 2), (zs, 2)):
+                        if zx + dx < W:
+                            q.a[yy + dy - 2, zx + dx] = cor('#e8f0ff')
+        else:
+            feliz = estado == 'feliz'
+            corpo = np.hypot((x - 18) / 7.5, (y - 22) / 7) <= 1
+            peito = np.hypot((x - 15) / 4, (y - 22) / 4.5) <= 1
+            cab = np.hypot((x - 15) / 6.5, (y - 12) / 5.5) <= 1
+            orelha = ((y < 8.5) & (y > 3.5) & (np.abs(x - 11 + (8.5 - y) * 0.15) < (y - 3.5) * 0.55)) | ((y < 8.5) & (y > 3.5) & (np.abs(x - 19 - (8.5 - y) * 0.15) < (y - 3.5) * 0.55))
+            fase = k / n * 2 * math.pi
+            alto = 1.0 if feliz else 0.4
+            tx = 25 + 3 * math.sin(fase) * (1 if feliz else 0.6)
+            rabo = np.zeros_like(corpo)
+            for i in range(14):
+                t = i / 13
+                px_ = 24 + (tx - 24) * t + 2 * math.sin(t * 3 + fase) * t
+                py_ = 27 - t * 16 * alto - 2 * t
+                rabo |= np.hypot(x - px_, y - py_) <= 1.6
+            pata = ((np.abs(x - 13) < 1.8) | (np.abs(x - 18) < 1.8)) & (y > 26) & (y < 29.5)
+            m = corpo | cab | orelha | rabo | pata
+            luz = np.clip(np.hypot((x - 11) / 14, (y - 6) / 18), 0, 0.999)
+            pinta_rampa(q, m, luz * 0.9, pel[:4])
+            q.pinta(peito | (np.hypot((x - 15) / 3.4, (y - 14.5) / 1.8) <= 1), pel[0])
+            q.pinta(m & ~peito & ~cab & (((x * 0.8 + y * 0.3).astype(int) % 5) < 1), pel[3])
+            q.pinta(cab & (np.abs(x - 15) < 0.6) & (y < 9.5) & (y > 7), pel[3])
+            q.pinta(orelha & (np.abs(x - 15) > 5.5) & (y > 6), '#ffb0b8')
+            piscou = (not feliz) and k == n - 1
+            if feliz or piscou:
+                # olhos fechados de contente: ^ ^
+                for ex in (12, 18):
+                    for (dx, dy) in ((-1, 1), (0, 0), (1, 1)):
+                        q.a[11 + dy, ex + dx] = cor(pel[4])
+            else:
+                for ex in (12, 18):
+                    q.pinta((np.abs(x - ex - 0.5) < 1) & (np.abs(y - 11.5) < 1.5), '#2a3a2a')
+                    q.a[10, ex] = cor('#ffffff')
+            q.a[14, 15] = cor('#e06a7a')
+            q.contorno(pel[4])
+            if feliz and k % 3 != 2:
+                hy = int(4 - (k % 3) * 1.5)
+                for (dx, dy) in ((0, 0), (2, 0), (-1, 1), (0, 1), (1, 1), (2, 1), (3, 1), (0, 2), (1, 2), (2, 2), (1, 3)):
+                    if 0 <= hy + dy < H:
+                        q.a[hy + dy, 30 + dx] = cor('#ff6a86' if dy < 3 else '#c8304e')
+        quadros.append(q.a)
+    return quadros
+
+
+def vela(n=4, W=12, H=20):
+    """Vela acesa (as velas da sessão que se acendem a cada acerto)."""
+    quadros = []
+    for k in range(n):
+        q = Q(W, H)
+        x, y = q.x, q.y
+        cera = (np.abs(x - 6) < 2.8) & (y > 9) & (y < 19)
+        q.pinta(cera, '#f4ead6'); q.pinta(cera & (x > 7), '#d8c8a8'); q.pinta(cera & (y < 10.5), '#ffffff')
+        q.pinta((np.abs(x - 6) < 4.2) & (y >= 18), '#b07a3a')
+        dx = math.sin(k / n * 2 * math.pi) * 0.8
+        chama = np.hypot((x - 6 - dx * (8 - y) / 6) / 2, (y - 6) / 3.6) <= 1
+        q.pinta(chama, '#ffa23c'); q.pinta(chama & (np.hypot(x - 6, y - 7) < 1.6), '#fff4b8')
+        q.pinta((np.abs(x - 6) < 0.5) & (y > 8) & (y < 10), '#3a2a1a')
+        q.contorno('#3a2418')
+        quadros.append(q.a)
+    return quadros
+
+
 # ================================================================== registro
 
 def efeitos():
@@ -889,6 +1055,12 @@ def efeitos():
     for tom in ('gosma', 'acida', 'rainha'):
         add(f'escorre-{tom}', gota_tela(PAL[tom]), 90, [12, 0])
     add('coracao', coracao(), 90, loop=True)
+    add('escudo', escudo_quebra(), 60)
+    add('puf', puf(), 70)
+    add('gato-dorme', gato('dorme', 6), 260, loop=True)
+    add('gato-acorda', gato('acorda', 6), 160, loop=True)
+    add('gato-feliz', gato('feliz', 6), 120, loop=True)
+    add('vela', vela(), 120, loop=True)
     add('pena', pena(), 70, loop=True)
     return E
 

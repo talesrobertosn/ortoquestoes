@@ -68,6 +68,10 @@ export const CURA_LOJA = { fracao: 0.3, preco: 30 }
  * um erro recomeça a conta. Novas picadas somam, até `acumula` vezes o dano.
  */
 export const VENENO = { acertos: 5, acumula: 3 }
+/** Em chamas (o superpoder do Sopro): arde por N flashcards; um acerto difícil apaga. */
+export const QUEIMADURA = { flashcards: 3 }
+/** Grude (gosmas): multiplica o dano do próximo erro enquanto grudado. */
+export const GRUDE = { mult: 1.5 }
 
 /** Desgaste: a cada ato (Cripta) ou 10 andares (Torre), as curas rendem menos, até o piso. */
 export const DESGASTE = { porAto: 0.05, porDezAndares: 0.07, piso: 0.35 }
@@ -255,6 +259,10 @@ export interface Partida {
   rota?: RotaEstudo | null
   /** Envenenado: dano por flashcard e acertos seguidos que faltam para passar. */
   veneno?: { dano: number; faltam: number } | null
+  /** Em chamas: dano por flashcard e flashcards que faltam para o fogo apagar. */
+  queimadura?: { dano: number; faltam: number } | null
+  /** Grudado pela gosma: o próximo erro dói mais. */
+  grudado?: boolean
 }
 
 export type MotivoCura =
@@ -272,10 +280,16 @@ export type Evento =
   | { tipo: 'furia' }
   | { tipo: 'escudo'; restante: number }
   | { tipo: 'mitigado'; motivo: 'barreira' | 'foco' | 'preceptor'; valor: number }
-  | { tipo: 'dano-heroi'; valor: number; veneno: number; furia: boolean; critico: boolean; rajada: number; carregado: string | null }
+  | { tipo: 'dano-heroi'; valor: number; veneno: number; furia: boolean; critico: boolean; rajada: number; carregado: string | null; grude?: boolean }
   | { tipo: 'envenenado'; dano: number; faltam: number }
   | { tipo: 'veneno'; valor: number; faltam: number }
   | { tipo: 'veneno-curado' }
+  | { tipo: 'chamuscado'; dano: number; faltam: number }
+  | { tipo: 'arde'; valor: number; faltam: number }
+  | { tipo: 'apagou'; motivo: 'tempo' | 'dificil' }
+  | { tipo: 'grudou' }
+  | { tipo: 'desgrudou' }
+  | { tipo: 'tremor'; poder: TipoPoder }
   | { tipo: 'imortal' }
   | { tipo: 'renascer'; vida: number }
   | { tipo: 'cura'; valor: number; motivo: MotivoCura }
@@ -377,7 +391,11 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     if (critico) dano *= LIMITES.multCritico
     if (carregado && i.carrega) dano *= i.carrega.mult
     const teto = p.vidaMax * (critico || carregado ? LIMITES.critico : LIMITES[i.nivel])
-    dano = Math.min(dano, teto) * NIVEIS[nivelDaPartida(p)].danoRecebido
+    dano = Math.min(dano, teto)
+    // o Grude vem depois do teto do golpe (o +50% vale mesmo quando o golpe já bateria no limite),
+    // mas nunca passa do teto do crítico: o grude dói, não derruba de vida cheia
+    if (p.grudado) dano = Math.min(dano * GRUDE.mult, p.vidaMax * LIMITES.critico)
+    dano = dano * NIVEIS[nivelDaPartida(p)].danoRecebido
     const placas = p.reliquias.includes('placas') ? RECOMPENSAS.placas.v.fracao : 0
     const mestre = i.chefe && p.reliquias.includes('mestre') ? RECOMPENSAS.mestre.v.fracao : 0
     dano = dano * (1 - placas - mestre) - ESTAGIOS[p.estagio - 1].defesa
@@ -700,6 +718,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
           armaduraPerdida: e.inimigo.armaduraPerdida + (rupK >= 0 ? RECOMPENSAS.ruptura.v.reducao : 0),
         },
       }
+      if (e.grudado) { e = { ...e, grudado: false }; eventos.push({ tipo: 'desgrudou' }) }
       eventos.push({ tipo: 'dano-inimigo', valor: total + raio, critico, combo: sequencia, duplo: duploK >= 0, absorvido: Math.max(0, bruto - golpe), eco, barreira: absorvidoBarreira, especial, raio, sorte })
       if (sequencia >= COMBO_MINIMO) eventos.push({ tipo: 'combo', sequencia })
 
@@ -747,7 +766,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
         }
         e = { ...e, danoEvitado: e.danoEvitado + (dano - def.final) }
         let vida = e.vida - def.final
-        if (def.final > 0) eventos.push({ tipo: 'dano-heroi', valor: def.final, veneno, furia, critico, rajada: i.rajada ?? 1, carregado })
+        if (def.final > 0) eventos.push({ tipo: 'dano-heroi', valor: def.final, veneno, furia, critico, rajada: i.rajada ?? 1, carregado, grude: !!p.grudado })
         if (vida <= 0 && e.encaixes.some((x) => x.tipo === 'imortal')) {
           vida = 1
           e = { ...e, encaixes: gastar(e.encaixes, e.encaixes.findIndex((x) => x.tipo === 'imortal')), imortalUsado: true }
@@ -785,6 +804,28 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
         e = { ...e, veneno: { dano, faltam: VENENO.acertos } }
         eventos.push({ tipo: 'envenenado', dano, faltam: VENENO.acertos })
       } else if (e.fase !== 'fim' && p.veneno) e = { ...e, veneno: { ...p.veneno, faltam: VENENO.acertos } }
+      // a gosma gruda (o próximo erro dói mais); quem já estava grudado desgruda ao levar o golpe reforçado
+      if (e.fase !== 'fim' && !def.bloqueado && def.final > 0) {
+        if (i.gruda && !p.grudado) { e = { ...e, grudado: true }; eventos.push({ tipo: 'grudou' }) }
+        else if (p.grudado) e = { ...e, grudado: false }
+      }
+      // o tremor do golem: o crítico derruba 1 carga de um poder equipado
+      // (o escudo que o Velho Preceptor acabou de dar não estava equipado no golpe: fica de fora)
+      const ajudou = eventos.some((x) => x.tipo === 'ajuda')
+      const alvosTremor = e.encaixes.map((_, k) => k).filter((k) => !(ajudou && e.encaixes[k].tipo === 'escudo'))
+      if (e.fase !== 'fim' && i.tremor && critico && !def.bloqueado && def.final > 0 && alvosTremor.length) {
+        let u: number, semente = e.semente
+        ;[u, semente] = sortear(semente)
+        const k = alvosTremor[Math.floor(u * alvosTremor.length)]
+        const poder = e.encaixes[k].tipo
+        e = { ...e, semente, encaixes: gastar(e.encaixes, k), pocao: poder === 'pocao' ? 0 : e.pocao }
+        eventos.push({ tipo: 'tremor', poder })
+      }
+      // o Sopro do dragão deixa o herói em chamas (renova o fogo se já estava queimando)
+      if (e.fase !== 'fim' && i.queima && carregado && !def.bloqueado && def.final > 0) {
+        e = { ...e, queimadura: { dano: i.queima, faltam: QUEIMADURA.flashcards } }
+        eventos.push({ tipo: 'chamuscado', dano: i.queima, faltam: QUEIMADURA.flashcards })
+      }
       if (e.fase !== 'fim' && i.rouba && e.encaixes.length) {
         let u: number, semente = e.semente
         ;[u, semente] = sortear(semente)
@@ -812,6 +853,20 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
       eventos.push({ tipo: 'veneno', valor, faltam: Math.max(0, faltam) })
       if (certo && faltam <= 0) { e = { ...e, veneno: null }; eventos.push({ tipo: 'veneno-curado' }) }
       else if (certo) e = { ...e, veneno: { ...p.veneno, faltam } }
+    }
+    // Em chamas: um acerto difícil apaga o fogo; senão, arde e conta um flashcard a menos.
+    if (p.queimadura && e.fase === 'resposta') {
+      if (certo && c.dificuldade === 3) { e = { ...e, queimadura: null }; eventos.push({ tipo: 'apagou', motivo: 'dificil' }) }
+      else {
+        const valor = Math.min(p.queimadura.dano, Math.max(0, e.vida - 1))
+        if (valor > 0) e = { ...e, vida: e.vida - valor, danoSofrido: e.danoSofrido + valor }
+        const faltam = p.queimadura.faltam - 1
+        eventos.push({ tipo: 'arde', valor, faltam: Math.max(0, faltam) })
+        // um Sopro novo nesta resposta renova o fogo: aí a conta antiga não apaga nem desconta
+        const renovada = !!e.queimadura && e.queimadura !== p.queimadura
+        if (!renovada && faltam <= 0) { e = { ...e, queimadura: null }; eventos.push({ tipo: 'apagou', motivo: 'tempo' }) }
+        else if (!renovada) e = { ...e, queimadura: { ...p.queimadura, faltam } }
+      }
     }
     if (e.fase === 'resposta' && e.inimigo.vida <= 0) return { estado: derrotarInimigo(e, eventos), eventos }
     if (e.fase === 'resposta' && i.regenera && e.inimigo.vida > 0) {

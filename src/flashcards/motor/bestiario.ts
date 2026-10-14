@@ -71,6 +71,16 @@ export interface Inimigo {
    * você acertar VENENO.acertos flashcards seguidos (um erro recomeça a conta).
    */
   envenena?: number
+  /**
+   * Superpoder do fogo: o golpe carregado (o Sopro) deixa o herói em chamas por
+   * QUEIMADURA.flashcards flashcards, perdendo este tanto de vida em cada um
+   * (nunca abaixo de 1). Acertar um flashcard difícil apaga o fogo na hora.
+   */
+  queima?: number
+  /** Grude (gosmas): o golpe que acerta gruda; o próximo erro dói GRUDE.mult vezes, até você acertar. */
+  gruda?: boolean
+  /** Tremor (golens): o crítico que acerta faz cair 1 carga de um poder equipado. */
+  tremor?: boolean
   /** Moedas a mais quando cai (o Mímico guarda o tesouro). */
   ouroExtra?: number
   /** Só aparece num andar exato de um modo (o dragão do topo da Torre). */
@@ -85,8 +95,8 @@ export const BESTIARIO: Inimigo[] = [
   // ---------- Comuns
   {
     id: 'golem-de-gesso', nome: 'Golem de Gesso', sprite: 'golem', cenario: 'campo', nivel: 'comum', andarMin: 1,
-    vida: 80, forca: 3, armadura: 0, paciencia: 10, porErroSeguido: 0, critico: 0.06, especialidade: 'trauma',
-    lema: 'Lento, duro e cheio de gesso.', habilidade: 'Bate pouco, mas aguenta muito.',
+    vida: 80, forca: 3, armadura: 0, paciencia: 10, porErroSeguido: 0, critico: 0.06, tremor: true, especialidade: 'trauma',
+    lema: 'Lento, duro e cheio de gesso.', habilidade: 'Bate pouco, mas aguenta muito. Tremor: o crítico derruba 1 carga de um poder equipado.',
   },
   {
     id: 'serpente-do-ciatico', nome: 'Serpente do Ciático', sprite: 'serpente', cenario: 'masmorra', nivel: 'comum', andarMin: 2,
@@ -95,8 +105,8 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'elemental-do-calcio', nome: 'Elemental do Cálcio', sprite: 'golem', variante: 'cristal', cenario: 'masmorra', nivel: 'comum', andarMin: 4,
-    vida: 95, forca: 3.2, armadura: 4, paciencia: 11, porErroSeguido: 0, critico: 0.06, especialidade: 'osteometabolicas',
-    lema: 'Mineral puro, sem pressa.', habilidade: 'Armadura 4: cada acerto perde 4 de dano.',
+    vida: 95, forca: 3.2, armadura: 4, paciencia: 11, porErroSeguido: 0, critico: 0.06, tremor: true, especialidade: 'osteometabolicas',
+    lema: 'Mineral puro, sem pressa.', habilidade: 'Armadura 4: cada acerto perde 4 de dano. Tremor: o crítico derruba 1 carga de um poder equipado.',
   },
   {
     id: 'vibora-do-mediano', nome: 'Víbora do Mediano', sprite: 'serpente', variante: 'eletrica', cenario: 'masmorra', nivel: 'comum', andarMin: 4,
@@ -105,13 +115,13 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'golem-de-cimento', nome: 'Golem de Cimento Ósseo', sprite: 'golem', variante: 'cimento', cenario: 'campo', nivel: 'comum', andarMin: 7,
-    vida: 130, forca: 3.6, armadura: 2, paciencia: 12, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 4, total: 32 }, especialidade: 'quadril',
-    lema: 'Endurece enquanto você hesita.', habilidade: 'Regenera 4 por rodada (até 32 no confronto).',
+    vida: 130, forca: 3.6, armadura: 2, paciencia: 12, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 4, total: 32 }, tremor: true, especialidade: 'quadril',
+    lema: 'Endurece enquanto você hesita.', habilidade: 'Regenera 4 por rodada (até 32 no confronto). Tremor: o crítico derruba 1 carga de um poder equipado.',
   },
   {
     id: 'gosma-de-cimento', nome: 'Gosma de Cimento', sprite: 'gosma', cenario: 'jardim', nivel: 'comum', andarMin: 3,
-    vida: 90, forca: 3.1, armadura: 0, paciencia: 10, porErroSeguido: 0, critico: 0.05, divide: { abaixoDe: 0.5, barreira: 0.25 }, especialidade: 'quadril',
-    lema: 'Ainda não endureceu. Ainda.', habilidade: 'Com metade da vida, se divide e ganha uma barreira de 25% da vida.',
+    vida: 90, forca: 3.1, armadura: 0, paciencia: 10, porErroSeguido: 0, critico: 0.05, divide: { abaixoDe: 0.5, barreira: 0.25 }, gruda: true, especialidade: 'quadril',
+    lema: 'Ainda não endureceu. Ainda.', habilidade: 'Com metade da vida, se divide e ganha uma barreira de 25% da vida. Grude: depois de acertar você, o próximo erro dói 50% a mais (um acerto desgruda).',
   },
   {
     id: 'raptor-do-menisco', nome: 'Raptor do Menisco', sprite: 'raptor', cenario: 'campo', nivel: 'comum', andarMin: 4,
@@ -120,8 +130,8 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'gosma-acida', nome: 'Gosma do Metilmetacrilato', sprite: 'gosma', variante: 'acida', cenario: 'covil', nivel: 'comum', andarMin: 8,
-    vida: 120, forca: 3.4, armadura: 0, paciencia: 10, porErroSeguido: 3, critico: 0.06, divide: { abaixoDe: 0.5, barreira: 0.3 }, especialidade: 'quadril',
-    lema: 'O vapor arde antes da cola pegar.', habilidade: 'Veneno +3 por erro seguido e divisão com barreira de 30%.',
+    vida: 120, forca: 3.4, armadura: 0, paciencia: 10, porErroSeguido: 3, critico: 0.06, divide: { abaixoDe: 0.5, barreira: 0.3 }, gruda: true, especialidade: 'quadril',
+    lema: 'O vapor arde antes da cola pegar.', habilidade: 'Veneno +3 por erro seguido e divisão com barreira de 30%. Grude: depois de acertar você, o próximo erro dói 50% a mais (um acerto desgruda).',
   },
   {
     id: 'raptor-sombrio', nome: 'Raptor da Plica', sprite: 'raptor', variante: 'sombrio', cenario: 'covil', nivel: 'comum', andarMin: 10,
@@ -165,8 +175,8 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'slime-sinovial', nome: 'Slime Sinovial', sprite: 'gosma', variante: 'sinovial', cenario: 'laboratorio', nivel: 'comum', andarMin: 7,
-    vida: 110, forca: 3.2, armadura: 0, paciencia: 11, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 5, total: 40 }, divide: { abaixoDe: 0.4, barreira: 0.2 }, especialidade: 'joelho',
-    lema: 'Lubrifica, escorrega e volta.', habilidade: 'Regenera 5 por rodada e se divide com barreira.',
+    vida: 110, forca: 3.2, armadura: 0, paciencia: 11, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 5, total: 40 }, divide: { abaixoDe: 0.4, barreira: 0.2 }, gruda: true, especialidade: 'joelho',
+    lema: 'Lubrifica, escorrega e volta.', habilidade: 'Regenera 5 por rodada e se divide com barreira. Grude: depois de acertar você, o próximo erro dói 50% a mais (um acerto desgruda).',
   },
   {
     id: 'goblin-da-fratura', nome: 'Goblin da Fratura', sprite: 'goblin', cenario: 'forja', nivel: 'comum', andarMin: 3,
@@ -191,8 +201,8 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'colosso-da-tibia', nome: 'Colosso da Tíbia', sprite: 'golem', variante: 'rubro', cenario: 'campo', nivel: 'elite', andarMin: 5,
-    vida: 175, forca: 4.2, armadura: 1, paciencia: 11, porErroSeguido: 0, critico: 0.1, especialidade: 'joelho',
-    lema: 'A investida que racha o chão.', habilidade: 'Muita vida e golpes pesados.',
+    vida: 175, forca: 4.2, armadura: 1, paciencia: 11, porErroSeguido: 0, critico: 0.1, tremor: true, especialidade: 'joelho',
+    lema: 'A investida que racha o chão.', habilidade: 'Muita vida e golpes pesados. Tremor: o crítico derruba 1 carga de um poder equipado.',
   },
   {
     id: 'mao-dos-tendoes', nome: 'Mão dos Tendões', sprite: 'mao', cenario: 'laboratorio', nivel: 'elite', andarMin: 6,
@@ -239,21 +249,21 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'dragao-de-ossos', nome: 'Dragão de Ossos', sprite: 'dragao', cenario: 'covil', nivel: 'chefe', andarMin: 12,
-    vida: 300, forca: 4.4, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, carrega: { aCada: 3, mult: 1.8, nome: 'Sopro de fogo-fátuo' }, especialidade: 'osteometabolicas',
+    vida: 300, forca: 4.4, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, queima: 3, carrega: { aCada: 3, mult: 1.8, nome: 'Sopro de fogo-fátuo' }, especialidade: 'osteometabolicas',
     fase2: { abaixoDe: 0.5, nome: 'Asas em chamas', forca: 5.2, armadura: 1, barreira: 30 },
-    lema: 'Dorme sobre o tesouro de quem não estudou.', habilidade: 'A cada 3 rodadas, o Sopro (dano ×1,8, avisado na intenção). Na segunda fase, ganha barreira.',
+    lema: 'Dorme sobre o tesouro de quem não estudou.', habilidade: 'A cada 3 rodadas, o Sopro (dano ×1,8, avisado na intenção). Na segunda fase, ganha barreira. O Sopro deixa você em chamas por 3 flashcards (um acerto difícil apaga).',
   },
   {
     id: 'rainha-gosma', nome: 'Rainha do Cimento', sprite: 'gosma', variante: 'rainha', cenario: 'salao', nivel: 'chefe', andarMin: 21,
-    vida: 290, forca: 4.3, armadura: 2, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, divide: { abaixoDe: 0.6, barreira: 0.25 }, regenera: { porRodada: 4, total: 36 }, especialidade: 'quadril',
+    vida: 290, forca: 4.3, armadura: 2, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, divide: { abaixoDe: 0.6, barreira: 0.25 }, regenera: { porRodada: 4, total: 36 }, gruda: true, especialidade: 'quadril',
     fase2: { abaixoDe: 0.3, nome: 'Presa total', forca: 5.4, armadura: 4 },
-    lema: 'Tudo que toca, fixa.', habilidade: 'Regenera, se divide com barreira e endurece no fim.',
+    lema: 'Tudo que toca, fixa.', habilidade: 'Regenera, se divide com barreira e endurece no fim. Grude: depois de acertar você, o próximo erro dói 50% a mais (um acerto desgruda).',
   },
   {
     id: 'dragao-rubro', nome: 'Dragão Rubro da Artrose', sprite: 'dragao', variante: 'escarlate', cenario: 'covil', nivel: 'chefe', andarMin: 39,
-    vida: 320, forca: 4.6, armadura: 5, paciencia: 15, porErroSeguido: 2, critico: 0.14, chefe: true, carrega: { aCada: 3, mult: 1.9, nome: 'Sopro de brasas' }, rajada: 2, especialidade: 'joelho',
+    vida: 320, forca: 4.6, armadura: 5, paciencia: 15, porErroSeguido: 2, critico: 0.14, chefe: true, queima: 3, carrega: { aCada: 3, mult: 1.9, nome: 'Sopro de brasas' }, rajada: 2, especialidade: 'joelho',
     fase2: { abaixoDe: 0.45, nome: 'Fúria do desgaste', forca: 5.5, armadura: 2 },
-    lema: 'Range a cada passo, queima a cada erro.', habilidade: 'Sopro a cada 3 rodadas e golpes em duas mordidas.',
+    lema: 'Range a cada passo, queima a cada erro.', habilidade: 'Sopro a cada 3 rodadas e golpes em duas mordidas. O Sopro deixa você em chamas por 3 flashcards (um acerto difícil apaga).',
   },
   {
     id: 'basilisco-do-radio', nome: 'Basilisco da Cabeça do Rádio', sprite: 'quimera', variante: 'basilisco', cenario: 'templo', nivel: 'chefe', andarMin: 15,
@@ -305,16 +315,16 @@ export const BESTIARIO: Inimigo[] = [
   },
   {
     id: 'dragao-ancestral', nome: 'Dragão Ancestral do Título', sprite: 'dragao', variante: 'ancestral', cenario: 'torre', nivel: 'chefe', andarMin: 1,
-    vida: 380, forca: 4.6, armadura: 6, paciencia: 16, porErroSeguido: 2, critico: 0.15, chefe: true, carrega: { aCada: 3, mult: 2, nome: 'Sopro do título' }, especialidade: 'trauma',
+    vida: 380, forca: 4.6, armadura: 6, paciencia: 16, porErroSeguido: 2, critico: 0.15, chefe: true, queima: 4, carrega: { aCada: 3, mult: 2, nome: 'Sopro do título' }, especialidade: 'trauma',
     exclusivo: { modo: 'torre', andar: 100 },
     fase2: { abaixoDe: 0.5, nome: 'Última prova', forca: 5.6, armadura: 2, barreira: 60 },
-    lema: 'O guardião do topo. Ninguém passa sem saber tudo.', habilidade: 'Sopro a cada 3 rodadas; com metade da vida, uma barreira de 60.',
+    lema: 'O guardião do topo. Ninguém passa sem saber tudo.', habilidade: 'Sopro a cada 3 rodadas; com metade da vida, uma barreira de 60. O Sopro deixa você em chamas por 3 flashcards (um acerto difícil apaga).',
   },
   {
     id: 'tita-da-coluna', nome: 'Titã da Coluna', sprite: 'golem', variante: 'obsidiana', cenario: 'masmorra', nivel: 'chefe', andarMin: 9,
-    vida: 270, forca: 4.4, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, regenera: { porRodada: 5, total: 45 }, especialidade: 'coluna',
+    vida: 270, forca: 4.4, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, regenera: { porRodada: 5, total: 45 }, tremor: true, especialidade: 'coluna',
     fase2: { abaixoDe: 0.4, nome: 'Vértebras em brasa', forca: 5.4, armadura: 2 },
-    lema: 'Cada vértebra, uma muralha.', habilidade: 'Regenera 5 por rodada (até 45) e endurece na segunda fase.',
+    lema: 'Cada vértebra, uma muralha.', habilidade: 'Regenera 5 por rodada (até 45) e endurece na segunda fase. Tremor: o crítico derruba 1 carga de um poder equipado.',
   },
 ]
 

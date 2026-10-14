@@ -32,10 +32,10 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 9. [x] Gosma: no crítico, a gosma escorre do alto da tela.
 10. [x] Raptor, corvo e aranha: no crítico, rasgos gigantes de garra; guardião e esqueleto: pancada que racha o chão.
 11. [x] 47 tiras de efeito pintadas por `scripts/sprites/vfx.py` (prévias em `docs/flashcards/conceitos/vfx-previa-*.png`).
-12. [ ] Golpe do herói muda com o estágio: estágio 4 com rastro de ouro, estágio 6 com aura de pérola.
-13. [ ] Efeito de bloqueio do escudo em pixel art (hoje ainda usa o projétil antigo).
-14. [ ] Efeitos de cura em pixel art (corações subindo) também na Batalha, não só no veneno.
-15. [ ] "Finisher": o golpe que derruba o vilão ganha câmera lenta, zoom e confete de pixels.
+12. [x] Golpe do herói muda com o estágio: a partir do estágio 4, a lâmina é de ouro.
+13. [x] Efeito de bloqueio do escudo em pixel art (hoje ainda usa o projétil antigo).
+14. [x] Efeitos de cura em pixel art (corações subindo) também na Batalha, não só no veneno.
+15. [x] Golpe final: o vilão derrubado some num "puf" de fumaça em pixel art, com estrelas, maior no chefe.
 16. [ ] Número de dano em fonte pixel (bitmap própria), com quique e contorno.
 17. [ ] Som próprio para cada golpe novo: espada gigante, mandíbula, pedregulho e sopro.
 18. [ ] Variante do pedregulho por golem: cristal, obsidiana, rubro e cimento.
@@ -43,12 +43,12 @@ Legenda: `[x]` feito · `[~]` em andamento · `[ ]` a fazer · (T) depende do Ta
 ## B. Superpoderes dos vilões (mecânica)
 
 19. [x] **Envenenado** (serpentes, aranha, leviatã): cada flashcard arde até o herói acertar 5 seguidos; um erro recomeça a conta; o veneno nunca derruba. Há testes no motor.
-20. [ ] **Queimadura** (dragão): depois do sopro, 3 flashcards com dano leve; um acerto difícil apaga o fogo.
-21. [ ] **Grude** (gosma): a próxima alternativa errada custa o dobro, até um acerto.
-22. [ ] **Tremor** (golem): o crítico tira 1 carga de um poder equipado (ele cai da mochila).
+20. [x] **Em chamas** (dragões): depois do Sopro, 3 flashcards com dano leve; um acerto difícil apaga o fogo (testes no motor).
+21. [x] **Grude** (gosmas): depois de acertar o herói, o próximo erro dói 50% a mais (aparece na intenção); um acerto desgruda.
+22. [x] **Tremor** (golem): o crítico tira 1 carga de um poder equipado (ele cai da mochila).
 23. [ ] **Hipnose** (basilisco): embaralha a ordem das alternativas uma vez (só visual, sem mudar o gabarito).
 24. [ ] **Roubo** (mímico): já rouba ouro; mostrar a moeda voando para dentro do baú.
-25. [ ] Mostrar o superpoder na ficha do vilão com ícone e animação curta (bestiário e intenção).
+25. [x] Mostrar o superpoder na placa do vilão: Picada venenosa, Sopro que queima, Grude e Tremor, com explicação ao passar o mouse.
 
 ## C. Biblioteca (estudo passivo, mais divertido)
 
@@ -60,8 +60,8 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 29. [x] **Tempestade:** 5 ou mais erros seguidos escurecem a tela, trazem relâmpagos e trovão. Mensagem calma: "leia o verso sem pressa".
 30. [x] **Névoa da dúvida:** 3 "Hesitei" seguidos, ou mais de 30 s sem virar o flashcard.
 31. [x] **Arco-íris:** o primeiro acerto depois da chuva.
-32. [ ] Velas da biblioteca que acendem uma a uma a cada acerto da sessão.
-33. [ ] Gato da biblioteca (pixel art) que dorme, acorda no combo e se espreguiça na glória.
+32. [x] Velas da sessão: uma acende a cada "Sabia" (10 por fileira, com contador ×N).
+33. [x] Gato da Biblioteca em pixel art: dorme com Zzz, acorda quando você acerta e fica feliz (rabo em pé e coração) com o fogo azul e na glória.
 34. [ ] Livros que voam para a estante a cada flashcard dominado.
 35. [ ] Página de "diário da sessão" no fim: clima de cada trecho, melhor sequência, área mais forte.
 36. [ ] Selos colecionáveis da Biblioteca: primeira glória, 100 flashcards na semana, sem tempestade.
@@ -146,3 +146,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** Humor da Biblioteca (ideias 26 a 31), no PR #228. Fica em `src/flashcards/componentes/ClimaEstudo.tsx` (limiares em `HUMOR`), as chamas são `chama-*` em `vfx.py` e há aviso flutuante no celular.
 - **14/10/2026:** Rankings: pódio em pixel art refeito do zero (`scripts/cenarios/podio.py` e `src/componentes/PodioPixel.tsx`), com cena de festa no ranking das questões e cena de cripta no dos Flashcards, além da página dos Flashcards com tema de pedra e tochas (ideias 58 e 59). Prévia sem servidor: `#/ranking?demo=1` e `#/ranking?aba=flashcards&demo=1`, só no modo de desenvolvimento.
 - **14/10/2026:** Jardim Suspenso (ideia 42): andar a céu aberto dentro da cripta, com paredes em ruína, abóbada partida, cachoeira, lago com vitórias-régias e cerejeira. Fica em `scripts/cenarios/jardim.py` (cena `jardim`, também usada pela Gosma de Cimento e pelo Escaravelho). Os chefes do jardim continuam lá.
+- **14/10/2026:** PR #228 mesclado. Depois: escudo em pixel art (o golpe do vilão bate na bolha e ela se estilhaça), corações na cura, "puf" de vitória e lâmina de ouro a partir do estágio 4 (ideias 12 a 15).
+- **14/10/2026:** Em chamas (ideia 20). Os três dragões têm `queima`; em `regras.ts` ficam `QUEIMADURA`, `Partida.queimadura` e os eventos `chamuscado`, `arde` e `apagou`. Na tela: chamas no pé do herói e selo laranja.
+- **14/10/2026:** Grude e Tremor (ideias 21 e 22), com testes no motor, mais as etiquetas de superpoder na placa do vilão (ideia 25).
+- **14/10/2026:** Gato da Biblioteca e velas da sessão (ideias 32 e 33), pintados em `vfx.py` (`gato-*` e `vela`).

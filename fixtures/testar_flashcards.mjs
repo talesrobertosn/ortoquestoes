@@ -262,7 +262,7 @@ try {
       const golpe = r.eventos.find((e) => e.tipo === 'dano-heroi')
       if (golpe) {
         if (antes.vida === antes.vidaMax && golpe.valor >= antes.vida) golpeUnico++
-        const teto = golpe.critico || golpe.carregado ? 0.45 : 0.35
+        const teto = golpe.critico || golpe.carregado || golpe.grude ? 0.45 : 0.35
         if (golpe.valor > Math.ceil(antes.vidaMax * teto)) tetoFurado++
       }
       estado = r.estado
@@ -477,6 +477,104 @@ try {
     q = { ...q, andar: 1, sementeBase: 42, atual: { ...q.atual, criticoInimigo: false, carregado: false } }
     r = motor.responder(q, errada(q))
     if (!m.inimigoDoAndar(1, 42, 'masmorra').inimigo.envenena) assert.equal(r.estado.veneno.faltam, m.VENENO.acertos, 'o erro não recomeçou a conta')
+  }
+
+  // Em chamas (o Sopro do dragão): arde por 3 flashcards, nunca derruba, e um acerto difícil apaga.
+  {
+    let achado = null
+    for (let a = 1; a < 80 && !achado; a++) for (let sm = 1; sm < 40; sm++) { const iv = m.inimigoDoAndar(a, sm, 'masmorra').inimigo; if (iv.queima && iv.carrega) { achado = [a, sm]; break } }
+    assert.ok(achado, 'nenhum dragão queima')
+    const [andarQ, sementeQ] = achado
+    const iq = m.inimigoDoAndar(andarQ, sementeQ, 'masmorra').inimigo
+    let q = motor.novaPartida(sementeQ).estado
+    q = { ...q, andar: andarQ, sementeBase: sementeQ, vida: 300, vidaMax: 300, encaixes: [], reliquias: [], inimigo: { ...q.inimigo, id: iq.id, vida: 9000, vidaMax: 9000, barreira: 0, fase: 1, rodadas: 0, errosSeguidos: 0, furia: false } }
+    q = { ...q, atual: { ...q.atual, criticoInimigo: false, carregado: true } }
+    const erradaQ = (x) => x.atual.ordem.findIndex((o) => o !== motor.carta(x.atual.id).certa)
+    let r = motor.responder(q, erradaQ(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'chamuscado' && x.faltam === m.QUEIMADURA.flashcards), 'o Sopro não queimou')
+    assert.ok(!r.eventos.some((x) => x.tipo === 'arde'), 'ardeu no mesmo flashcard do Sopro')
+    // sem acerto difícil: arde nos 3 flashcards seguintes e apaga sozinho
+    q = motor.seguir(r.estado).estado
+    for (let k = 1; k <= m.QUEIMADURA.flashcards; k++) {
+      q = { ...q, inimigo: { ...q.inimigo, vida: 9000 }, atual: { ...q.atual, carregado: false, criticoInimigo: false } }
+      const naoDificil = motor.carta(q.atual.id).dificuldade !== 3
+      r = motor.responder(q, naoDificil ? certaPos(q) : erradaQ(q))
+      const t = r.eventos.find((x) => x.tipo === 'arde')
+      assert.ok(t && t.faltam === m.QUEIMADURA.flashcards - k, 'contagem da queimadura')
+      q = motor.seguir(r.estado).estado
+    }
+    assert.ok(r.eventos.some((x) => x.tipo === 'apagou' && x.motivo === 'tempo') && !r.estado.queimadura, 'o fogo não apagou sozinho')
+    // acerto difícil apaga na hora, sem arder
+    const dificil = cartas.find((c) => c.dificuldade === 3)
+    if (dificil) {
+      const qq = { ...q, queimadura: { dano: 3, faltam: 2 }, inimigo: { ...q.inimigo, vida: 9000 }, atual: { ...q.atual, id: dificil.id, ordem: dificil.opcoes.map((_, i) => i), eliminadas: [], respondida: false } }
+      const rr = motor.responder(qq, dificil.certa)
+      assert.ok(rr.eventos.some((x) => x.tipo === 'apagou' && x.motivo === 'dificil') && !rr.estado.queimadura, 'o acerto difícil não apagou')
+      assert.ok(!rr.eventos.some((x) => x.tipo === 'arde'), 'ardeu mesmo apagando')
+    }
+  }
+
+  // Grude (gosmas) e Tremor (golens)
+  {
+    const acha = (f) => { for (let a = 1; a < 80; a++) for (let sm = 1; sm < 40; sm++) { const iv = m.inimigoDoAndar(a, sm, 'masmorra').inimigo; if (f(iv)) return [a, sm, iv] } return null }
+    const preparar = ([a, sm, iv], extra = {}) => {
+      let q = motor.novaPartida(sm).estado
+      q = { ...q, andar: a, sementeBase: sm, vida: 300, vidaMax: 300, reliquias: [], encaixes: [], ...extra, inimigo: { ...q.inimigo, id: iv.id, vida: 9000, vidaMax: 9000, barreira: 0, fase: 1, rodadas: 0, errosSeguidos: 0, furia: false } }
+      return { ...q, atual: { ...q.atual, criticoInimigo: false, carregado: false } }
+    }
+    const errada = (x) => x.atual.ordem.findIndex((o) => o !== motor.carta(x.atual.id).certa)
+    const g = acha((iv) => iv.gruda)
+    assert.ok(g, 'nenhuma gosma gruda')
+    let q = preparar(g)
+    let r = motor.responder(q, errada(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'grudou') && r.estado.grudado, 'não grudou')
+    q = motor.seguir(r.estado).estado
+    q = { ...q, atual: { ...q.atual, criticoInimigo: false, carregado: false } }
+    const semGrude = motor.intencao({ ...q, grudado: false }).bruto, comGrude = motor.intencao(q).bruto
+    assert.ok(comGrude > semGrude, 'o grude não aumentou o dano da intenção')
+    r = motor.responder(q, certaPos(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'desgrudou') && !r.estado.grudado, 'o acerto não desgrudou')
+    const t = acha((iv) => iv.tremor)
+    assert.ok(t, 'nenhum golem treme')
+    q = preparar(t, { encaixes: [{ tipo: 'escudo', carga: 0 }, { tipo: 'pista', carga: 2 }].slice(1) })
+    q = { ...q, atual: { ...q.atual, criticoInimigo: true } }
+    r = motor.responder(q, errada(q))
+    assert.ok(r.eventos.some((x) => x.tipo === 'tremor' && x.poder === 'pista'), 'o crítico do golem não derrubou carga')
+    assert.equal(r.estado.encaixes.find((x) => x.tipo === 'pista')?.carga ?? 0, 1)
+  }
+
+  // Regressões da revisão: grude vale acima do teto; Sopro novo renova o fogo; tremor poupa o escudo do Preceptor.
+  {
+    const acha = (f) => { for (let a = 1; a < 80; a++) for (let sm = 1; sm < 40; sm++) { const iv = m.inimigoDoAndar(a, sm, 'masmorra').inimigo; if (f(iv)) return [a, sm, iv] } return null }
+    const preparar = ([a, sm, iv], extra = {}) => {
+      let q = motor.novaPartida(sm).estado
+      q = { ...q, andar: a, sementeBase: sm, vida: 300, vidaMax: 300, reliquias: [], encaixes: [], ...extra, inimigo: { ...q.inimigo, id: iv.id, vida: 9000, vidaMax: 9000, barreira: 0, fase: 1, rodadas: 0, errosSeguidos: 0, furia: false } }
+      return { ...q, atual: { ...q.atual, criticoInimigo: false, carregado: false } }
+    }
+    const errada = (x) => x.atual.ordem.findIndex((o) => o !== motor.carta(x.atual.id).certa)
+    // grude com vida máxima pequena (o golpe já bate no teto)
+    const g = acha((iv) => iv.gruda)
+    const qg = preparar(g, { vidaMax: 40, vida: 40 })
+    assert.ok(motor.intencao({ ...qg, grudado: true }).bruto > motor.intencao({ ...qg, grudado: false }).bruto, 'o grude não passou do teto')
+    // Sopro com queimadura no último flashcard: renova para 3
+    const d = acha((iv) => iv.queima && iv.carrega)
+    let qd = preparar(d, { queimadura: { dano: 3, faltam: 1 } })
+    qd = { ...qd, atual: { ...qd.atual, carregado: true } }
+    const rd = motor.responder(qd, errada(qd))
+    assert.ok(rd.eventos.some((x) => x.tipo === 'chamuscado'), 'o Sopro não queimou de novo')
+    assert.equal(rd.estado.queimadura?.faltam, m.QUEIMADURA.flashcards, 'o Sopro novo não renovou o fogo')
+    // tremor com Preceptor: o escudo recém-dado fica
+    const t = acha((iv) => iv.tremor && iv.forca > 3)
+    let qt = preparar(t, { andar: Math.max(t[0], m.AJUDA.desdeAndar), vida: 30, vidaMax: 300, ajudaUsada: false })
+    qt = { ...qt, atual: { ...qt.atual, criticoInimigo: true } }
+    for (let s2 = 1; s2 < 200; s2++) {
+      const rt = motor.responder({ ...qt, semente: s2 }, errada(qt))
+      if (rt.eventos.some((x) => x.tipo === 'ajuda')) {
+        assert.ok(!rt.eventos.some((x) => x.tipo === 'tremor'), 'o tremor tirou o escudo do Preceptor')
+        assert.ok(rt.estado.encaixes.some((x) => x.tipo === 'escudo'))
+        break
+      }
+    }
   }
 
   console.log('Motor da Batalha: ok')
