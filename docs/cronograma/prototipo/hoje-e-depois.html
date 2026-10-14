@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Cronograma: hoje e depois (protótipo)</title>
+<!-- Protótipo de 14/10/2026 para a nova apresentação do cronograma. Dados fictícios de exemplo.
+     Gerar as imagens: node marketing/instagram/gerar.mjs docs/cronograma/prototipo/hoje-e-depois.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../../marketing/instagram/fontes/plus-jakarta-sans-latin-wght-normal.woff2); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../../marketing/instagram/fontes/inter-latin-wght-normal.woff2); font-weight: 100 900; }
+@font-face { font-family: Jersey; src: url(../../../marketing/instagram/fontes/jersey-10-latin-400-normal.woff2); }
+:root { --verde: #14655e; --verde2: #0b3a35; --veu: #e6efee; --ouro: #f4cf7c; --ouro2: #a87a1f; --texto: #1d2624; --texto2: #5b6966; --traco: #dfe7e5; --fundo: #f1f4f3; --ok: #1f7a4d; --okveu: #e8f3ec;
+  --trauma: #c8513c; --pedi: #2e64a8; --mao: #c9952f; --coluna: #6b4fa0; --joelho: #1f8a70; --quadril: #b5527a; --ombro: #3a8fb7; --pe: #7a8b2e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #cfd8d6; font-family: Inter, sans-serif; color: var(--texto); }
+section { width: 390px; background: var(--fundo); margin: 0 0 30px; padding: 0 0 24px; overflow: hidden; }
+.topo { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: #fff; border-bottom: 1px solid var(--traco); font: 800 17px Jakarta; }
+.topo span { font: 600 12px Inter; color: var(--texto2); }
+.rot { margin: 22px 16px 8px; font: 800 11px Inter; letter-spacing: .12em; text-transform: uppercase; color: var(--texto2); display: flex; justify-content: space-between; align-items: baseline; }
+.rot b { color: var(--texto); letter-spacing: 0; text-transform: none; font: 700 12px Inter; }
+.cartao { margin: 0 12px; background: #fff; border-radius: 16px; box-shadow: 0 1px 0 var(--traco), 0 6px 18px rgba(20,60,55,.06); }
+
+/* 1. Onde estou: a trilha */
+.heroi { margin: 12px; padding: 16px 16px 14px; border-radius: 18px; color: #fff; background: linear-gradient(180deg, #0b3a35, #14655e); }
+.heroi small { font: 700 11px Inter; letter-spacing: .1em; text-transform: uppercase; color: #9fe3d4; }
+.heroi h1 { margin-top: 4px; font: 400 40px/1 Jersey; letter-spacing: .02em; }
+.heroi h1 em { font-style: normal; color: var(--ouro); }
+.heroi p { margin-top: 4px; font: 500 13px Inter; color: #cfe7e2; }
+.trilha { position: relative; margin-top: 16px; display: grid; grid-template-columns: 2.6fr 1fr 1fr .9fr .5fr; gap: 3px; }
+.trilha div { position: relative; height: 10px; border-radius: 3px; background: rgba(255,255,255,.18); }
+.trilha div.feito { background: rgba(244,207,124,.55); }
+.trilha .eu { position: absolute; top: -7px; width: 24px; height: 24px; border-radius: 50%; background: var(--ouro); border: 3px solid #0b3a35; box-shadow: 0 0 0 3px rgba(244,207,124,.35); }
+.trilha-nomes { margin-top: 6px; display: grid; grid-template-columns: 2.6fr 1fr 1fr .9fr .5fr; gap: 3px; font: 600 10px/1.2 Inter; color: #b9d8d2; }
+.trilha-nomes b { color: #fff; }
+.voce { margin-top: 12px; padding: 9px 11px; border-radius: 10px; background: rgba(255,255,255,.1); font: 500 12.5px/1.4 Inter; color: #e7f4f1; }
+.voce b { color: var(--ouro); }
+
+/* 2. Hoje */
+.hoje { padding: 16px; border: 2px solid var(--ouro2); }
+.hoje-cab { display: flex; gap: 10px; align-items: center; }
+.cor { width: 6px; align-self: stretch; border-radius: 3px; }
+.hoje h2 { font: 800 21px/1.15 Jakarta; letter-spacing: -.01em; }
+.hoje .porque { margin-top: 2px; font: 500 12px/1.35 Inter; color: var(--texto2); }
+.chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 5px; }
+.chips span { padding: 4px 8px; border-radius: 99px; background: #fbeeea; color: #8a3324; font: 600 11px Inter; }
+.lista { margin-top: 14px; list-style: none; display: grid; gap: 2px; }
+.lista li { display: grid; grid-template-columns: 26px 1fr auto; align-items: center; gap: 10px; padding: 9px 4px; border-top: 1px solid var(--traco); }
+.lista li:first-child { border-top: 0; }
+.marca { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; border: 2px solid #c5d1ce; font: 800 13px Inter; color: #fff; }
+.feito .marca { background: var(--ok); border-color: var(--ok); }
+.agora .marca { border-color: var(--ouro2); background: #fff7e2; color: var(--ouro2); }
+.lista strong { display: block; font: 700 14px Inter; }
+.feito strong { color: var(--texto2); text-decoration: line-through; text-decoration-color: #9fb3ae; }
+.lista small { font: 500 11.5px Inter; color: var(--texto2); }
+.lista .t { font: 700 12px Inter; color: var(--texto2); white-space: nowrap; }
+.barra { margin-top: 5px; height: 6px; border-radius: 3px; background: #efe4c6; overflow: hidden; }
+.barra i { display: block; height: 100%; width: 38%; background: var(--ouro2); }
+.total { margin-top: 12px; display: flex; justify-content: space-between; font: 600 12.5px Inter; color: var(--texto2); }
+.total b { color: var(--texto); }
+.botao { margin-top: 12px; display: block; text-align: center; padding: 14px; border-radius: 12px; background: var(--verde); color: #fff; font: 800 16px Jakarta; }
+.botao small { display: block; font: 600 11.5px Inter; color: #bfe3dc; }
+
+/* 3. Amanhã */
+.amanha { display: grid; grid-template-columns: 6px 1fr auto; gap: 12px; align-items: center; padding: 12px 14px; }
+.amanha strong { font: 700 14px Inter; }
+.amanha small { display: block; margin-top: 2px; font: 500 12px/1.35 Inter; color: var(--texto2); }
+.amanha .n { font: 800 18px Jakarta; text-align: right; }
+.amanha .n small { font: 600 10px Inter; }
+
+/* 4. Esta semana */
+.semana { padding: 12px 10px 10px; }
+.dias { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.dia { display: grid; justify-items: center; gap: 4px; padding: 7px 2px 8px; border-radius: 10px; background: #f6f8f7; font: 700 11px Inter; color: var(--texto2); }
+.dia b { font: 800 15px Jakarta; color: var(--texto); }
+.dia i { width: 70%; height: 6px; border-radius: 3px; }
+.dia em { font: 700 9px Inter; font-style: normal; }
+.dia.ok em { color: var(--ok); }
+.dia.hj { background: #fff7e2; outline: 2px solid var(--ouro2); }
+.dia.hj em { color: var(--ouro2); }
+.dia.folga { background: repeating-linear-gradient(135deg, #f1f4f3 0 5px, #e6ecea 5px 10px); }
+.legenda { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 10px; font: 600 10.5px Inter; color: var(--texto2); }
+.legenda span { display: inline-flex; align-items: center; gap: 4px; }
+.legenda i { width: 10px; height: 10px; border-radius: 3px; }
+.semana p { margin: 8px 4px 0; font: 500 12px/1.4 Inter; color: var(--texto2); }
+.semana p b { color: var(--texto); }
+
+/* 5. Depois */
+.depois { padding: 6px 14px; }
+.depois ol { list-style: none; }
+.depois li { position: relative; display: grid; grid-template-columns: 54px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--traco); }
+.depois li:first-child { border-top: 0; }
+.depois .data { font: 700 11.5px/1.25 Inter; color: var(--texto2); }
+.depois .faixa { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 6px; }
+.depois strong { font: 700 13.5px Inter; }
+.depois small { display: block; font: 500 11.5px/1.35 Inter; color: var(--texto2); }
+.tag { display: inline-block; margin-left: 4px; padding: 1px 6px; border-radius: 99px; background: var(--veu); color: var(--verde); font: 700 9.5px Inter; vertical-align: 1px; }
+.marco strong { color: var(--ouro2); }
+.marco .faixa { background: repeating-linear-gradient(90deg, var(--ouro) 0 8px, #fff3d0 8px 14px); }
+.mais { display: block; padding: 10px 0 6px; text-align: center; font: 700 12.5px Inter; color: var(--verde); border-top: 1px solid var(--traco); }
+
+/* 6. Como estou indo */
+.indo { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 12px; }
+.indo div { padding: 12px; border-radius: 14px; background: #fff; box-shadow: 0 1px 0 var(--traco); }
+.indo small { font: 700 10px Inter; letter-spacing: .08em; text-transform: uppercase; color: var(--texto2); }
+.indo b { display: block; margin-top: 3px; font: 800 20px Jakarta; }
+.indo span { font: 500 11.5px/1.35 Inter; color: var(--texto2); }
+
+/* Sessão e fim */
+.sessao-barra { margin: 0; padding: 10px 14px; background: #fff; border-bottom: 1px solid var(--traco); display: grid; grid-template-columns: 1fr auto; gap: 6px 10px; align-items: center; }
+.sessao-barra strong { font: 700 13px Inter; }
+.sessao-barra strong i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; background: var(--trauma); margin-right: 6px; }
+.sessao-barra span { font: 800 14px Jakarta; }
+.sessao-barra .barra { grid-column: 1 / -1; margin: 0; background: #eceee9; }
+.sessao-barra .barra i { width: 63%; background: var(--trauma); }
+.questao-fake { margin: 14px 12px; padding: 16px; background: #fff; border-radius: 16px; font: 500 14px/1.5 Inter; color: var(--texto2); }
+.questao-fake div { height: 10px; border-radius: 5px; background: #e9eeec; margin-top: 10px; }
+.fim { margin: 18px 12px 0; padding: 22px 16px 18px; border-radius: 18px; text-align: center; color: #fff; background: linear-gradient(180deg, #0b3a35, #14655e); }
+.fim .selo { display: inline-grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--ouro); color: #0b3a35; font: 800 30px Jakarta; box-shadow: 0 0 0 8px rgba(244,207,124,.25); }
+.fim h2 { margin-top: 14px; font: 400 34px/1 Jersey; }
+.fim p { margin-top: 6px; font: 500 13px/1.45 Inter; color: #cfe7e2; }
+.fim .prox { margin-top: 14px; text-align: left; padding: 12px; border-radius: 12px; background: rgba(255,255,255,.1); font: 500 12.5px/1.4 Inter; }
+.fim .prox b { color: var(--ouro); }
+.fim .botao { background: var(--ouro); color: #0b3a35; }
+.fim .botao small { color: #6b4a0c; }
+.nota { margin: 14px 16px 0; font: 500 11px/1.4 Inter; color: #7d8b88; }
+</style></head><body>
+
+<!-- Tela 1: o cronograma no celular -->
+<section id="t1-cronograma">
+  <div class="topo">Cronograma <span>TEOT · 10/01/2027</span></div>
+
+  <div class="heroi">
+    <small>Onde você está</small>
+    <h1>Faltam <em>88</em> dias</h1>
+    <p>Semana 1 de 13 · Conteúdo novo, 1ª passada</p>
+    <div class="trilha">
+      <div><span class="eu" style="left:6%"></span></div><div></div><div></div><div></div><div></div>
+    </div>
+    <div class="trilha-nomes"><span><b>1ª passada</b><br>o que mais cai</span><span>2ª passada</span><span>Revisão forte</span><span>Modo prova</span><span>Prova</span></div>
+    <p class="voce">Agora você passa por <b>todas as áreas</b> só nos assuntos que mais caem. Em 6/12 começa a 2ª passada, com os assuntos de prioridade média.</p>
+  </div>
+
+  <p class="rot">Hoje <b>terça, 14/10</b></p>
+  <div class="cartao hoje">
+    <div class="hoje-cab"><span class="cor" style="background:var(--trauma)"></span><div>
+      <h2>Trauma adulto</h2>
+      <p class="porque">Por que hoje: é a área com mais questões no TEOT, e você está com 54% de acerto nela.</p>
+    </div></div>
+    <div class="chips"><span>Cabeça do rádio</span><span>Luxação do joelho</span><span>Coluna toracolombar</span></div>
+    <ol class="lista">
+      <li class="feito"><span class="marca">✓</span><span><strong>Resumão do tema</strong><small>As frases "Na prova" dos 3 assuntos</small></span><span class="t">3 min</span></li>
+      <li class="agora"><span class="marca">2</span><span><strong>60 questões novas</strong><small>23 de 60 feitas</small><div class="barra"><i></i></div></span><span class="t">~1h30</span></li>
+      <li><span class="marca">3</span><span><strong>12 revisões</strong><small>Erros e dúvidas que voltam hoje</small></span><span class="t">~18 min</span></li>
+      <li><span class="marca">4</span><span><strong>10 flashcards dos seus erros</strong><small>Para fixar o que você errou hoje</small></span><span class="t">~5 min</span></li>
+    </ol>
+    <p class="total"><span>Seu dia: <b>~2h</b></span><span>Falta: <b>~1h20</b></span></p>
+    <a class="botao">Continuar: faltam 37 questões<small>Você parou na 23ª. Nada se perde.</small></a>
+  </div>
+
+  <p class="rot">Amanhã <b>quarta, 15/10</b></p>
+  <div class="cartao amanha"><span class="cor" style="background:var(--trauma);height:38px"></span>
+    <div><strong>Trauma adulto, continuação</strong><small>Pilão tibial, acetábulo e Monteggia, mais 10 questões de mistura de outras áreas</small></div>
+    <div class="n">60<br><small>questões</small></div></div>
+
+  <p class="rot">Esta semana <b>13 a 19/10</b></p>
+  <div class="cartao semana">
+    <div class="dias">
+      <div class="dia ok">seg<b>13</b><i style="background:var(--trauma)"></i><em>feito</em></div>
+      <div class="dia hj">ter<b>14</b><i style="background:var(--trauma)"></i><em>hoje</em></div>
+      <div class="dia">qua<b>15</b><i style="background:var(--trauma)"></i><em>60</em></div>
+      <div class="dia">qui<b>16</b><i style="background:linear-gradient(90deg,var(--trauma) 60%,var(--joelho) 60%)"></i><em>60</em></div>
+      <div class="dia">sex<b>17</b><i style="background:var(--joelho)"></i><em>60</em></div>
+      <div class="dia">sáb<b>18</b><i style="background:var(--joelho)"></i><em>45</em></div>
+      <div class="dia folga">dom<b>19</b><i style="background:transparent"></i><em>folga</em></div>
+    </div>
+    <div class="legenda"><span><i style="background:var(--trauma)"></i>Trauma</span><span><i style="background:var(--joelho)"></i>Joelho</span><span><i style="background:repeating-linear-gradient(135deg,#dfe7e5 0 3px,#c9d4d1 3px 6px)"></i>folga</span></div>
+    <p>Na quinta a semana troca de área: <b>entra Joelho</b>. Trauma volta em novembro, na 2ª passada.</p>
+  </div>
+
+  <p class="rot">Depois <b>até a prova</b></p>
+  <div class="cartao depois"><ol>
+    <li><span class="data">20 a<br>26/10</span><span><span class="faixa"><i style="flex:3;background:var(--pedi)"></i><i style="flex:1;background:var(--ombro)"></i></span><strong>Pediatria e Ombro</strong><small>Lesões fisárias, DDQ, pé torto; manguito e instabilidade</small></span></li>
+    <li><span class="data">27/10 a<br>02/11</span><span><span class="faixa"><i style="flex:2;background:var(--mao)"></i><i style="flex:2;background:var(--coluna)"></i></span><strong>Mão e Coluna</strong><small>Escafoide, tendões flexores; espondilolistese</small></span></li>
+    <li class="marco"><span class="data">02/11</span><span><span class="faixa"></span><strong>Mini-simulado 1</strong><small>30 questões cronometradas de tudo o que você já viu</small></span></li>
+    <li><span class="data">03 a<br>09/11</span><span><span class="faixa"><i style="flex:2;background:var(--quadril)"></i><i style="flex:2;background:var(--pe)"></i></span><strong>Quadril e Pé</strong><small>Perthes, epifisiólise; hálux valgo, Lisfranc</small></span></li>
+    <li class="marco"><span class="data">27/12</span><span><span class="faixa"></span><strong>Reta final</strong><small>Revisão forte e modo prova, sem conteúdo novo</small></span></li>
+  </ol><a class="mais">Ver as 13 semanas</a></div>
+
+  <p class="rot">Como você está indo</p>
+  <div class="indo">
+    <div><small>Constância</small><b>5 dias</b><span>seguidos com a meta feita</span></div>
+    <div><small>Projeção</small><b>100%</b><span>do que mais cai visto até 05/12</span></div>
+  </div>
+  <p class="nota">Protótipo com dados de exemplo. Ordem fixa: onde estou, hoje, amanhã, esta semana, depois, como estou indo.</p>
+</section>
+
+<!-- Tela 2: durante a sessão e ao terminar -->
+<section id="t2-sessao">
+  <div class="sessao-barra"><strong><i></i>Cronograma de hoje · Trauma adulto</strong><span>38/60</span><div class="barra"><i></i></div></div>
+  <div class="questao-fake">Questão 38 de 60<div></div><div style="width:80%"></div><div style="width:60%"></div><div style="width:90%;height:36px;margin-top:18px"></div><div style="width:90%;height:36px"></div><div style="width:90%;height:36px"></div></div>
+
+  <div class="fim">
+    <span class="selo">✓</span>
+    <h2>Meta de hoje feita</h2>
+    <p>60 questões de Trauma adulto, 71% de acerto. Sequência de 6 dias.</p>
+    <div class="prox">Ainda hoje: <b>12 revisões</b> (~18 min) e <b>10 flashcards</b> (~5 min).<br>Amanhã: Trauma adulto, continuação, 60 questões.</div>
+    <a class="botao">Fazer as revisões agora<small>ou volte mais tarde: elas ficam guardadas</small></a>
+  </div>
+  <p class="nota">Na sessão, a barra no topo mostra a meta de hoje na cor da área. Ao terminar, a tela diz o que falta hoje e o que vem amanhã.</p>
+</section>
+</body></html>
