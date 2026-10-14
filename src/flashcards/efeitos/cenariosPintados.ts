@@ -10,6 +10,8 @@
  *   catacumba   Catacumba das Velas (`scripts/cenarios/catacumba.py`): portão com luz verde, sarcófagos, urnas e velas (sem ossos)
  *   templo      Templo do Sol (`scripts/cenarios/templo.py`): teto aberto, disco solar, colunas com hera e espelho d'água
  *   passarela   Passarela das Nuvens (`scripts/cenarios/passarela.py`): ponte de pedra sobre o mar de nuvens, montanhas e lanternas
+ *   forja       Forja dos Implantes (`scripts/cenarios/forja.py`): fornalha com coifa, bigorna com a placa em brasa, ferramentas e implantes prontos
+ *   coliseu     Coliseu da Consolidação (`scripts/cenarios/coliseu.py`): arquibancada em arcos ao entardecer, portão com grade, tochas e areia
  *   salao       Salão do Trono (`scripts/cenarios/salao.py`), onde moram os chefes: colunas, vitral e tapete vermelho
  *
  * Diferente das outras cenas, que são pintadas em código a cada tamanho, estas
@@ -32,7 +34,7 @@ type Camada = (typeof CAMADAS)[number]
 export type ImagensCenario = Record<Formato, Record<Camada, HTMLImageElement>>
 
 /** Cena do jogo → nome do arquivo pintado. */
-export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio', catacumba: 'catacumba', templo: 'templo', passarela: 'passarela' }
+export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio', catacumba: 'catacumba', templo: 'templo', passarela: 'passarela', forja: 'forja', coliseu: 'coliseu' }
 
 const promessas = new Map<string, Promise<ImagensCenario | null>>()
 const prontas = new Map<string, ImagensCenario | null>()
