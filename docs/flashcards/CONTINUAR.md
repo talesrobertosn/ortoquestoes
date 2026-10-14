@@ -290,6 +290,10 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
 - **Sons:** revisão completa dos efeitos (acerto, erro, crítico, entrada de chefe, sala secreta) e transição suave entre músicas.
 - **Ranking da Torre:** só depois de validado (roteiro do beta).
 
+## Interface e acessibilidade (14/10, PR draft)
+
+Ideias 62 e 65 concluídas para revisão, sem merge: três preferências de leitura, foco nos diálogos e cortina de pixels. [ACESSIBILIDADE-14-10.md](ACESSIBILIDADE-14-10.md) traz capturas e verificações.
+
 ## Como trabalhar
 
 - **Instalar:** `npm install`.

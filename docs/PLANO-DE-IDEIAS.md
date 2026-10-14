@@ -107,10 +107,12 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
     - **No toque:** o "flutuar" do hover não fica mais preso depois do dedo sair.
     - **No iPhone:** o "afundar" do pressionado funciona.
     - **Som:** os botões já tocavam o próprio som e não precisaram de mudança.
-62. [ ] Transições entre telas com "cortina de pixels".
+62. [x] Transições entre telas com "cortina de pixels".
 63. [ ] Tutorial de 30 segundos jogável na primeira entrada (o Preceptor explica).
 64. [x] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
-65. [ ] Acessibilidade: modo sem tremor, alto contraste e texto maior.
+65. [x] Acessibilidade: modo sem tremor, alto contraste e texto maior.
+
+**Bloco de interface (14/10):** 62 e 65 concluídos em PR draft a revisar: sem tremor, contraste, leitura ampliada e cortina que respeita movimento reduzido. [Detalhes e capturas](flashcards/ACESSIBILIDADE-14-10.md).
 
 ## H. Otimização
 

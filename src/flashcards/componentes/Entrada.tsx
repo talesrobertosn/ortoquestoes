@@ -1,3 +1,4 @@
+import { usarPreferenciasVisuais } from './AparenciaFlashcards'
 import { Volume } from './Volume'
 import { useEffect, useMemo, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
@@ -24,6 +25,7 @@ import { Sprite } from './Sprite'
  * Bestiário. O ranking fica pronto atrás de uma trava (config.ts).
  */
 export function Entrada() {
+  const visual = usarPreferenciasVisuais()
   const [painel, definirPainel] = useState<'altar' | 'bestiario' | null>(null)
   const [altar, definirAltar] = useState<EstadoAltar>(() => ({ ...ALTAR_VAZIO, ...ler<Partial<EstadoAltar>>(CHAVE_ALTAR, {}) }))
   const rec = useMemo(() => ({ ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }), [])
@@ -70,7 +72,7 @@ export function Entrada() {
   return (
     <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); sairDoJogo() }}>
       <div className="fc-arena fc-entrada">
-        <Cenario cena="campo" reduzido={false} clima="noite" />
+        <Cenario cena="campo" reduzido={visual.movimentoReduzido} clima="noite" />
         <div className="fc-entrada__volume"><Volume valor={somAtivo ? volume : 0} aoMudar={mudarVolume} /></div>
         <div className="fc-entrada__miolo">
           <header className="fc-entrada__cabeca">

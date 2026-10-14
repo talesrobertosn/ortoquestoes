@@ -1,6 +1,7 @@
 import { numeroPixel } from '../efeitos/numerosPixel'
 import { indicesVisuais } from '../motor/hipnose'
 import { vfxPorAndar, VFX_BIBLIOTECA } from '../efeitos/vfxPorAndar'
+import { usarReducaoSistema } from './AparenciaFlashcards'
 import { Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
@@ -44,6 +45,9 @@ import { Sprite } from './Sprite'
 
 export interface Ajustes {
   versao: 3
+  semTremor?: boolean
+  altoContraste?: boolean
+  textoMaior?: boolean
   som: boolean
   volume: number
   volEfeitos: number
@@ -206,8 +210,11 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     const som = somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false))
     return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...(som === undefined ? {} : { som }), ...validos, volume: volumeDaSessao() }
   })
-  const definirAjustes = (a: Partial<Ajustes>) => definirAjustesBruto((v) => { const n = { ...v, ...a }; gravar(CHAVE_AJUSTES, n); return n })
-  const reduzido = ajustes.efeitos === 'reduzidos'
+  const ajustesRef = useRef(ajustes)
+  const definirAjustes = (a: Partial<Ajustes>) => { const n = { ...ajustesRef.current, ...a }; ajustesRef.current = n; gravar(CHAVE_AJUSTES, n); definirAjustesBruto(n) }
+  const sistemaReduzido = usarReducaoSistema()
+  const reduzido = sistemaReduzido || ajustes.efeitos === 'reduzidos'
+  const semTremor = reduzido || !!ajustes.semTremor
   const faixaTela = usarFaixa()
 
   const [modo, definirModo] = useState<'batalha' | 'estudo'>(abrirEstudo ? 'estudo' : 'batalha')
@@ -225,6 +232,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const refFlutuantes = useRef<HTMLDivElement>(null)
   const [ampliada, definirAmpliada] = useState<{ src: string; legenda: string } | null>(null)
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
+  const refAbrirAjustes = useRef<HTMLButtonElement>(null)
   const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
   const [bloqueio, definirBloqueio] = useState<LimiteCripta | null>(null)
   const [lamina, definirLamina] = useState(0)
@@ -337,12 +345,12 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
 
   const tremer = useCallback((forca: number) => {
     const b = refMesa.current?.closest<HTMLElement>('.fc-batalha')
-    if (reduzido || !b) return
+    if (semTremor || !b) return
     // a força vai no próprio elemento que treme (antes ficava na mesa e nunca chegava à animação)
     b.style.setProperty('--tremor', String(Math.min(1.6, forca)))
     if (forca >= 1.2) animar(b, 'fc-terremoto', 720)
     else animar(b, 'fc-treme', 420)
-  }, [reduzido])
+  }, [semTremor])
 
   /**
    * Investida do crítico: o adversário cresce, salta até o meio da tela e bate
@@ -1044,6 +1052,12 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     else definirConfirmarSaida(true)
   }, [fechar, modo])
 
+  useEffect(() => {
+    if (!ajustesAbertos) return
+    const frame = requestAnimationFrame(() => document.getElementById('fc-som')?.focus())
+    return () => { cancelAnimationFrame(frame); refAbrirAjustes.current?.focus({preventScroll:true}) }
+  }, [ajustesAbertos])
+
   // Teclado: 1 a 4 respondem; Enter/espaço seguem; P usa a pista; Esc pula a animação ou pede para fechar.
   useEffect(() => {
     const aoTeclar = (e: KeyboardEvent) => {
@@ -1107,7 +1121,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const classes = ['fc-arena', `fc-arena--${modo}`, `fc-arena--${faixaTela}`, `fc-arena--fase-${partida.fase}`, reduzido ? 'fc-arena--reduzida' : '', mostrado.vida <= 25 && modo === 'batalha' ? 'fc-arena--perigo' : ''].filter(Boolean).join(' ')
 
   return (
-    <ModalJogo titulo={NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar}>
+    <ModalJogo titulo={NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar} transicao={`${modo}:${cenarioVisivel}:${['loja','sabio','sala','fim'].includes(partida.fase) ? partida.fase : 'jogo'}`}>
       <div className={classes} data-cenario={cenarioVisivel} data-modo={partida.modo}>
         <Cenario cena={modo === 'estudo' ? 'biblioteca' : cenarioVisivel} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
         {modo === 'estudo' && humorEstudo && humorEstudo.tipo !== 'calmo' && <ClimaEstudo humor={humorEstudo} reduzido={reduzido} />}
@@ -1152,7 +1166,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
               <span className="fc-topo-botao__texto">Menu</span>
             </button>
                         <Volume valor={ajustes.som ? ajustes.volume : 0} aoMudar={volume => definirAjustes({ volume, som: volume > 0 })} />
-            <button type="button" className="fc-topo-botao" onClick={() => definirAjustesAbertos(true)} aria-label="Ajustes de som e efeitos" title="Ajustes">
+            <button ref={refAbrirAjustes} type="button" className="fc-topo-botao" onClick={() => definirAjustesAbertos(true)} aria-label="Ajustes de som e efeitos" title="Ajustes">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" strokeWidth="2" /><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
               <span className="fc-topo-botao__texto">Ajustes</span>
             </button>
@@ -1244,14 +1258,14 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
               <div className="fc-heroi" ref={refBlocoHeroi}>
-                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '') + (partida.veneno ? ' fc-ator--envenenado' : '') + (partida.grudado ? ' fc-ator--grudado' : '')}>
+                <Ator ref={ajustes.textoMaior ? undefined : refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '') + (partida.veneno ? ' fc-ator--envenenado' : '') + (partida.grudado ? ' fc-ator--grudado' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                   {partida.veneno && <span className="fc-envenenado" aria-hidden="true" style={{ backgroundImage: `url(${recurso('flashcards/vfx/bolhas.png')})` }} />}
                   {partida.queimadura && <span className="fc-em-chamas" aria-hidden="true">{[0, 1, 2].map((k) => <i key={k} style={{ backgroundImage: `url(${recurso('flashcards/vfx/chama-escarlate.png')})`, animationDelay: `${-k * 170}ms` }} />)}</span>}
                   <button type="button" className="fc-ator__toque" aria-label="Ver o seu herói: atributos, poderes e relíquias" onClick={() => { tocar('selecao'); definirPainel('heroi') }} />
                 </Ator>
-                <div className="fc-heroi__dados">
-                  <div className="fc-heroi__nome"><Sprite nome="coracao" className="fc-sprite--coracao" /><strong title={ESTAGIOS[partida.estagio - 1].nome}>Você</strong>
+                <div className="fc-heroi__dados" ref={ajustes.textoMaior ? refHeroi : undefined}>
+                  <div className="fc-heroi__nome"><Sprite nome="coracao" className="fc-sprite--coracao" />{ajustes.textoMaior ? <button type="button" className="fc-heroi-detalhes" onClick={() => definirPainel('heroi')} aria-label="Ver seus atributos, poderes e relíquias">Você</button> : <strong title={ESTAGIOS[partida.estagio - 1].nome}>Você</strong>}
                     <em className={`fc-estagio fc-estagio--${partida.estagio}`} title={`Estágio ${partida.estagio}: ${ESTAGIOS[partida.estagio - 1].nome}`}>{['I', 'II', 'III', 'IV', 'V', 'VI'][partida.estagio - 1]}</em>
                     <span className="fc-bolsa fc-bolsa--celular" aria-label={`${partida.ouro} moedas`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>
 
@@ -1423,6 +1437,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                 <label className="fc-ajuste"><input id="fc-efeitos" type="checkbox" checked={reduzido} onChange={(e) => definirAjustes({ efeitos: e.target.checked ? 'reduzidos' : 'completos' })} /><span>Reduzir movimento (sem tremor, partículas e giro)</span></label>
                 <label className="fc-ajuste"><input id="fc-rapido" type="checkbox" checked={ajustes.velocidade === 'rapida'} onChange={(e) => definirAjustes({ velocidade: e.target.checked ? 'rapida' : 'normal' })} /><span>Animações rápidas</span></label>
               </fieldset>
+              <fieldset className="fc-grupo">
+                <legend>Leitura e conforto</legend>
+                <label className="fc-ajuste"><input type="checkbox" checked={!!ajustes.semTremor} onChange={e=>definirAjustes({semTremor:e.target.checked})}/><span>Sem tremor da tela</span></label>
+                <label className="fc-ajuste"><input type="checkbox" checked={!!ajustes.altoContraste} onChange={e=>definirAjustes({altoContraste:e.target.checked})}/><span>Alto contraste</span></label>
+                <label className="fc-ajuste"><input type="checkbox" checked={!!ajustes.textoMaior} onChange={e=>definirAjustes({textoMaior:e.target.checked})}/><span>Texto maior</span></label>
+              </fieldset>
+              {sistemaReduzido && <p className="fc-janela__nota">O aparelho está configurado para reduzir movimento.</p>}
               <p className="fc-janela__nota">Teclado: 1 a 4 respondem, Enter segue, P usa a pista, Esc pula a animação ou fecha.</p>
               <div className="fc-janela__botoes">
                 <button type="button" className="fc-botao fc-botao--secundario" onClick={() => { definirAjustesAbertos(false); novaPartida() }}>Recomeçar partida</button>
