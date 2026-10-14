@@ -513,39 +513,73 @@
 .rkc-tocha--esq { left: 0.6rem; } .rkc-tocha--dir { right: 0.6rem; }
 .rk--cripta .cf-cabeca > :not(.rkc-tocha) { position: relative; padding-inline: 1.4rem; }
 
-/* ============================================================ Top 3 do ranking das questões (refeito em 14/10/2026)
-   Pódio claro: título "Top 3", e em cada degrau a medalha com as iniciais, o nome inteiro,
-   o total e o número da posição gravado no degrau. Visual 2º, 1º, 3º; leitura 1º, 2º, 3º. */
-.rkt { --m: var(--ouro); --m-veu: var(--ouro-veu); margin-top: 0.5rem; padding: 1rem clamp(0.6rem, 3vw, 1.4rem) 0; border-radius: var(--raio-cartao);
-  background: radial-gradient(70% 90% at 50% 100%, var(--ouro-veu), transparent 70%), var(--superficie); border: var(--borda); box-shadow: var(--sombra-media); overflow: hidden; }
-.rkt__cabeca { display: flex; align-items: center; justify-content: center; gap: 0.45rem; color: var(--ouro-texto); }
-.rkt__cabeca h2 { margin: 0; font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(1.1rem, 4vw, 1.35rem); letter-spacing: 0.01em; color: var(--texto); }
-.rkt__podio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; gap: clamp(0.3rem, 1.6vw, 0.8rem); max-width: 40rem; margin: 0.9rem auto 0; padding: 0; list-style: none; }
-.rkt__lugar { display: grid; min-width: 0; }
-.rkt__lugar--1 { order: 2; }
-.rkt__lugar--2 { order: 1; --m: var(--prata); --m-veu: var(--prata-veu); }
-.rkt__lugar--3 { order: 3; --m: var(--bronze); --m-veu: var(--bronze-veu); }
-.rkt__pessoa { position: relative; display: grid; justify-items: center; align-content: end; gap: 0.25rem; padding: 0 0.15rem 0.6rem; text-align: center; }
-.rkt__coroa { color: var(--ouro); line-height: 0; margin-bottom: -0.2rem; }
-.rkt__avatar { position: relative; display: grid; place-items: center; width: clamp(3.4rem, 15vw, 4.4rem); aspect-ratio: 1; border-radius: 50%;
-  font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(1.05rem, 4.6vw, 1.4rem); color: var(--texto); background: var(--m-veu);
-  box-shadow: inset 0 0 0 4px var(--m), 0 0 0 3px var(--superficie); }
-.rkt__lugar--1 .rkt__avatar { width: clamp(4.2rem, 19vw, 5.4rem); font-size: clamp(1.3rem, 5.6vw, 1.75rem); box-shadow: inset 0 0 0 5px var(--m), 0 0 0 3px var(--superficie), 0 0 22px color-mix(in srgb, var(--ouro) 45%, transparent); }
-.rkt__nome { max-width: 100%; margin-top: 0.15rem; font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(0.92rem, 3.6vw, 1.12rem); line-height: 1.2; overflow-wrap: anywhere; color: var(--texto); }
-.rkt__lugar--1 .rkt__nome { font-size: clamp(1rem, 4.2vw, 1.3rem); }
-.rkt__total { font-size: clamp(0.74rem, 2.8vw, 0.85rem); color: var(--texto-2); line-height: 1.2; }
-.rkt__total b { display: block; font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 800; color: var(--texto); }
-.rkt__extra { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.2rem; min-height: 0; }
-.rkt__extra:empty { display: none; }
-.rkt .rk-movimento--parado { display: none; }
-.rkt__degrau { display: grid; justify-items: center; align-content: start; gap: 0.1rem; padding: 0.55rem 0.2rem 0.7rem; border-radius: 10px 10px 0 0;
-  background: linear-gradient(color-mix(in srgb, var(--m) 30%, var(--superficie)), color-mix(in srgb, var(--m) 14%, var(--superficie)));
-  box-shadow: inset 0 4px 0 var(--m); }
-.rkt__lugar--1 .rkt__degrau { min-height: 7rem; }
-.rkt__lugar--2 .rkt__degrau { min-height: 5rem; }
-.rkt__lugar--3 .rkt__degrau { min-height: 3.6rem; }
-.rkt__numero { font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(1.8rem, 8vw, 2.6rem); line-height: 1; color: var(--m); }
-.rkt__lugar--1 .rkt__numero { font-size: clamp(2.4rem, 11vw, 3.4rem); }
-.rkt__rotulo { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto); }
-.rkt__lugar--voce .rkt__avatar { box-shadow: inset 0 0 0 4px var(--m), 0 0 0 3px var(--superficie), 0 0 0 6px var(--acerto); }
-@media (max-width: 420px) { .rkt__extra { display: none; } .rkt__rotulo { font-size: 0.64rem; letter-spacing: 0.04em; } }
+
+/* ============================================================ Top 3 "Hall da Fama" (14/10/2026)
+   Arte 2D vetorial (src/componentes/Top3Epico.tsx): palco à noite, holofotes, brasões de metal,
+   faixa com o nome e pedestais. O cartão é sempre escuro, como um palco, nos dois temas. */
+.t3 { --ouro1: #fff3b8; --ouro2: #f2c14e; --ouro3: #9a6a12;
+  position: relative; isolation: isolate; overflow: hidden; margin-top: 0.5rem; padding: clamp(1.1rem, 4vw, 1.8rem) clamp(0.5rem, 3vw, 1.6rem) 0; border-radius: 18px; color: #f6efe0;
+  background: radial-gradient(120% 70% at 50% 0%, #2a2f7a 0%, #141a4a 38%, #070a22 75%), #070a22;
+  box-shadow: 0 0 0 1px rgba(255, 220, 130, 0.35), 0 0 0 4px #0b0f2c, 0 0 0 5px rgba(242, 193, 78, 0.55), 0 18px 40px rgba(7, 10, 34, 0.45); }
+.t3__fundo { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.t3__fundo::after { content: ''; position: absolute; left: -10%; right: -10%; bottom: -30%; height: 60%; background: radial-gradient(50% 50% at 50% 50%, rgba(242, 193, 78, 0.35), transparent 70%); }
+.t3__feixe { position: absolute; top: -10%; height: 105%; width: 34%; background: linear-gradient(rgba(255, 244, 200, 0.42), rgba(255, 244, 200, 0) 85%);
+  clip-path: polygon(42% 0, 58% 0, 100% 100%, 0 100%); mix-blend-mode: screen; transform-origin: 50% 0; animation: t3-feixe 7s ease-in-out infinite alternate; }
+.t3__feixe--esq { left: 2%; transform: rotate(-16deg); animation-delay: -2s; opacity: 0.55; }
+.t3__feixe--meio { left: 33%; width: 34%; opacity: 0.9; animation-name: t3-feixe-meio; }
+.t3__feixe--dir { right: 2%; transform: rotate(16deg); animation-delay: -4s; opacity: 0.55; }
+@keyframes t3-feixe { from { rotate: -5deg; } to { rotate: 5deg; } }
+@keyframes t3-feixe-meio { from { opacity: 0.75; } to { opacity: 1; } }
+.t3__luz { position: absolute; border-radius: 50%; background: radial-gradient(circle, #fff6cf, rgba(242, 193, 78, 0.6) 45%, transparent 70%); opacity: 0.7; animation: t3-luz 6s ease-in-out infinite; }
+@keyframes t3-luz { 50% { opacity: 0.15; transform: translateY(-6px); } }
+
+.t3__cabeca { text-align: center; }
+.t3__selo { display: inline-flex; align-items: center; gap: 0.6rem; margin: 0; font-family: 'Cinzel', serif; font-weight: 700; font-size: clamp(0.68rem, 2.4vw, 0.8rem); letter-spacing: 0.32em; text-transform: uppercase; color: var(--ouro2); }
+.t3__selo::before, .t3__selo::after { content: ''; width: clamp(1.4rem, 8vw, 3rem); height: 1px; background: linear-gradient(90deg, transparent, var(--ouro2)); }
+.t3__selo::after { transform: scaleX(-1); }
+.t3__titulo { margin: 0.1rem 0 0; font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(2.6rem, 12vw, 4.2rem); line-height: 1; letter-spacing: 0.06em;
+  background: linear-gradient(180deg, #fffbe6 0%, #ffe28a 38%, #f2c14e 55%, #a8720f 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 3px 0 #4a2e05) drop-shadow(0 0 18px rgba(242, 193, 78, 0.45)); }
+.t3__sub { margin: 0.35rem 0 0; font-size: clamp(0.8rem, 3vw, 0.95rem); color: #c9cbe8; }
+
+.t3__podio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; gap: clamp(0.25rem, 1.8vw, 0.9rem); max-width: 44rem; margin: clamp(0.8rem, 3vw, 1.4rem) auto 0; padding: 0; list-style: none; }
+.t3__lugar { --m1: #fff3b8; --m2: #f2c14e; --m3: #9a6a12; display: grid; justify-items: center; align-content: end; min-width: 0; text-align: center; }
+.t3__lugar--1 { order: 2; }
+.t3__lugar--2 { order: 1; --m1: #ffffff; --m2: #c9d3df; --m3: #6c7a8c; }
+.t3__lugar--3 { order: 3; --m1: #ffd7b0; --m2: #d98a4e; --m3: #7a3f18; }
+
+.t3__emblema { position: relative; display: grid; place-items: center; width: clamp(4.6rem, 22vw, 7rem); margin-bottom: -0.6rem; z-index: 1; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.5)); }
+.t3__lugar--1 .t3__emblema { width: clamp(5.8rem, 28vw, 8.8rem); margin-top: 1.6rem; }
+.t3__brasao { width: 100%; height: auto; }
+.t3__brasao-numero { font-family: 'Cinzel', serif; font-weight: 900; font-size: 62px; }
+.t3__coroa { position: absolute; top: -26%; left: 50%; width: 52%; translate: -50% 0; z-index: 2; filter: drop-shadow(0 0 10px rgba(255, 220, 120, 0.7)); animation: t3-coroa 3s ease-in-out infinite; }
+@keyframes t3-coroa { 50% { transform: translateY(-3px); } }
+.t3__louros { position: absolute; left: -32%; top: -14%; width: 164%; height: auto; z-index: -1; opacity: 0.95; }
+
+.t3__faixa { position: relative; z-index: 2; max-width: 100%; padding: 0.4rem clamp(0.6rem, 2.6vw, 1.1rem) 0.45rem;
+  background: linear-gradient(180deg, var(--m1), var(--m2) 55%, var(--m3)); color: #1b1206;
+  clip-path: polygon(0 0, 100% 0, 94% 50%, 100% 100%, 0 100%, 6% 50%); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6); }
+.t3__nome { display: block; font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(0.85rem, 3.4vw, 1.1rem); line-height: 1.15; overflow-wrap: anywhere; padding-inline: 0.35rem; }
+.t3__lugar--1 .t3__nome { font-size: clamp(0.95rem, 4vw, 1.3rem); }
+.t3__voce { margin-top: 0.3rem; padding: 0.05rem 0.5rem; border-radius: 999px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; background: #2fbf6a; color: #04210f; }
+.t3__total { margin: 0.4rem 0 0; font-size: clamp(0.72rem, 2.8vw, 0.85rem); color: #c9cbe8; line-height: 1.15; }
+.t3__total b { display: block; font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(1.1rem, 4.6vw, 1.55rem); color: var(--m1); text-shadow: 0 0 12px color-mix(in srgb, var(--m2) 60%, transparent); }
+.t3__extra { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.2rem; margin-top: 0.3rem; }
+.t3 .rk-movimento--parado { display: none; }
+
+/* Pedestal de metal: tampo claro, frente com o título gravado. */
+.t3__pedestal { position: relative; justify-self: stretch; display: grid; place-items: start center; margin-top: 0.55rem; padding-top: 0.9rem;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), transparent 22%, transparent 78%, rgba(0, 0, 0, 0.35)), linear-gradient(180deg, var(--m2), var(--m3) 70%, color-mix(in srgb, var(--m3) 60%, #000));
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.55); }
+.t3__pedestal::before { content: ''; position: absolute; left: -5%; right: -5%; top: -0.55rem; height: 0.6rem; background: linear-gradient(180deg, var(--m1), var(--m2)); clip-path: polygon(4% 0, 96% 0, 100% 100%, 0 100%); }
+.t3__lugar--1 .t3__pedestal { min-height: 7.4rem; }
+.t3__lugar--2 .t3__pedestal { min-height: 5rem; }
+.t3__lugar--3 .t3__pedestal { min-height: 3.6rem; }
+.t3__pedestal-titulo { font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(0.56rem, 2.3vw, 0.82rem); letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb, var(--m3) 55%, #000); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
+.t3__lugar--voce .t3__faixa { outline: 2px solid #2fbf6a; outline-offset: 2px; }
+
+.t3__chamada { position: relative; margin: 0 calc(-1 * clamp(0.5rem, 3vw, 1.6rem)); padding: 0.75rem 1rem; text-align: center; font-size: clamp(0.82rem, 3vw, 0.95rem);
+  background: linear-gradient(90deg, #0b0f2c, #1a1440, #0b0f2c); border-top: 1px solid rgba(242, 193, 78, 0.45); color: #f6efe0; }
+.t3__chamada b { color: var(--ouro2); }
+@media (max-width: 420px) { .t3__extra { display: none; } .t3__pedestal-titulo { letter-spacing: 0.06em; } }
+@media (prefers-reduced-motion: reduce) { .t3__feixe, .t3__luz, .t3__coroa { animation: none; } }

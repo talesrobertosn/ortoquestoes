@@ -24,6 +24,7 @@ import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import { SeloServico } from '../componentes/ServicoRanking'
+import { Top3Epico } from '../componentes/Top3Epico'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
@@ -109,31 +110,22 @@ function iniciais(apelido: string): string {
   return ((partes[0]?.[0] ?? '') + (partes.length > 1 ? partes[partes.length - 1][0] : '')).toUpperCase() || '?'
 }
 
-const LUGARES_TOP3 = ['', '1º lugar', '2º lugar', '3º lugar']
-
-/** Top 3: pódio com nome, posição e total de cada um, sem precisar decifrar nada (refeito em 14/10/2026). */
-function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }) {
-  return <section className="rkt" aria-labelledby="rkt-titulo">
-    <header className="rkt__cabeca">
-      <Icone nome="trofeu" tamanho={20} />
-      <h2 id="rkt-titulo">Top 3 {periodo === 'semana' ? 'dos últimos 7 dias' : 'do ranking geral'}</h2>
-    </header>
-    <ol className="rkt__podio">
-      {linhas.slice(0, 3).map((linha) => (
-        <li key={linha.posicao} className={`rkt__lugar rkt__lugar--${linha.posicao}${linha.eh_voce ? ' rkt__lugar--voce' : ''}`}>
-          <div className="rkt__pessoa">
-            {linha.posicao === 1 && <span className="rkt__coroa" aria-hidden="true"><Icone nome="coroa" tamanho={26} /></span>}
-            <span className="rkt__avatar" aria-hidden="true">{iniciais(linha.apelido)}</span>
-            <strong className="rkt__nome">{linha.apelido}</strong>
-            {linha.eh_voce && <span className="rk-voce">você</span>}
-            <span className="rkt__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
-            <span className="rkt__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>
-          </div>
-          <div className="rkt__degrau"><span className="rkt__numero numerico" aria-hidden="true">{linha.posicao}</span><span className="rkt__rotulo">{LUGARES_TOP3[linha.posicao]}</span></div>
-        </li>
-      ))}
-    </ol>
-  </section>
+function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Periodo; eu: { posicao: number; total: number } | null }) {
+  const terceiro = linhas[2]
+  const faltam = eu && eu.posicao > 3 && terceiro ? Math.max(1, terceiro.total - eu.total + 1) : 0
+  const chamada = eu && eu.posicao <= 3
+    ? <>Você está no Hall da Fama. Continue respondendo para não perder o lugar.</>
+    : faltam > 0 ? <>Você está em <b>#{eu!.posicao}</b>. Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para entrar no top 3.</>
+      : undefined
+  return <Top3Epico
+    titulo="Top 3"
+    subtitulo={periodo === 'semana' ? 'Quem mais respondeu questões nos últimos 7 dias' : 'Quem mais respondeu questões no ranking geral'}
+    chamada={chamada}
+    lugares={linhas.slice(0, 3).map((linha) => ({
+      posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
+      total: linha.total.toLocaleString('pt-BR'), rotuloTotal: periodo === 'semana' ? 'na semana' : 'questões',
+      extra: <span className="t3__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>,
+    }))} />
 }
 
 /** A próxima meta, em questões, como uma missão de jogo. */
@@ -334,7 +326,7 @@ export function Ranking() {
 
       {top && top.length > 0 && <EmAlta linhas={top} />}
 
-      {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} />}
+      {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} eu={top.find((linha) => linha.eh_voce) ?? minhaPosicao} />}
 
       {top && top.length > 0 && comMovimento && !top.some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia rk-referencia--inicio">
         <Icone nome="relogio" tamanho={15} /> As setas de subida e descida e o foguinho aparecem a partir de amanhã: hoje o ranking registra as posições de referência.
