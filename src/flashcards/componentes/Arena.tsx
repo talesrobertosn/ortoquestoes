@@ -2,7 +2,7 @@ import { numeroPixel } from '../efeitos/numerosPixel'
 import { indicesVisuais } from '../motor/hipnose'
 import { vfxPorAndar, VFX_BIBLIOTECA } from '../efeitos/vfxPorAndar'
 import { usarReducaoSistema } from './AparenciaFlashcards'
-import { Volume } from './Volume'
+import { ControleVolume, Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
 import { TABULEIRO } from '../efeitos/tabuleiros'
@@ -60,7 +60,7 @@ export interface Ajustes {
   velocidade: 'normal' | 'rapida'
 }
 /** Som ligado por padrão (pedido do Tales em 12/10/2026); toca a partir do primeiro toque. */
-const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volume: VOLUME_INICIAL, escalaVolume: ESCALA_VOLUME, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
+const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volume: VOLUME_INICIAL, escalaVolume: ESCALA_VOLUME, volEfeitos: 0.7, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
 
 const ROTULO_CURA: Record<MotivoCura, string> = {
   sequencia: 'SEQUÊNCIA', lendaria: 'LENDÁRIA', pocao: 'POÇÃO', selo: 'SELO', roubo: 'ROUBO DE ENERGIA', vital: 'POÇÃO VITAL',
@@ -245,6 +245,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const validando = useRef(false)
   const chaves = useRef(new Map<number, string>())
   const [confirmarSaida, definirConfirmarSaida] = useState(false)
+  const [confirmarRecomeco, definirConfirmarRecomeco] = useState(false)
   const [transicao, definirTransicao] = useState(false)
   const [vermelho, definirVermelho] = useState(0)
   const [eliminando, definirEliminando] = useState<number | null>(null)
@@ -1058,7 +1059,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
 
   useEffect(() => {
     if (!ajustesAbertos) return
-    const frame = requestAnimationFrame(() => document.getElementById('fc-som')?.focus())
+    const frame = requestAnimationFrame(() => document.getElementById('fc-menu-continuar')?.focus())
     return () => { cancelAnimationFrame(frame); refAbrirAjustes.current?.focus({preventScroll:true}) }
   }, [ajustesAbertos])
 
@@ -1071,7 +1072,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
       if (e.key === 'Escape') {
         e.preventDefault()
         if (ampliada) definirAmpliada(null)
-        else if (ajustesAbertos) definirAjustesAbertos(false)
+        else if (ajustesAbertos) { definirAjustesAbertos(false); definirConfirmarRecomeco(false) }
         else if (painel) definirPainel(null)
         else if (confirmarSaida) definirConfirmarSaida(false)
         else if (apresentacao) definirApresentacao(null)
@@ -1166,15 +1167,11 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             )}
           </div>
           <div className="fc-topo__acoes">
-            <button type="button" className="fc-topo-botao" onClick={() => { if (validando.current) return; tocar('selecao'); navegar('/flashcards/entrada') }} aria-label="Menu do Torneio (a partida fica salva)" title="Menu do Torneio">
+            <button ref={refAbrirAjustes} type="button" className="fc-topo-botao" onClick={() => { tocar('selecao'); definirAjustesAbertos(true) }} aria-label="Menu: som, ajustes, recomeçar e voltar ao menu inicial" aria-haspopup="dialog" title="Menu">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" /></svg>
               <span className="fc-topo-botao__texto">Menu</span>
             </button>
                         <Volume valor={ajustes.som ? ajustes.volume : 0} aoMudar={volume => definirAjustes({ volume, som: volume > 0 })} />
-            <button ref={refAbrirAjustes} type="button" className="fc-topo-botao" onClick={() => definirAjustesAbertos(true)} aria-label="Ajustes de som e efeitos" title="Ajustes">
-              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" strokeWidth="2" /><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
-              <span className="fc-topo-botao__texto">Ajustes</span>
-            </button>
           </div>
         </header>
 
@@ -1427,15 +1424,30 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         )}
 
         {ajustesAbertos && (
-          <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-ajustes-titulo" onClick={() => definirAjustesAbertos(false)}>
-            <div className="fc-janela" onClick={(e) => e.stopPropagation()}>
-              <h2 id="fc-ajustes-titulo">Ajustes</h2>
-              <fieldset className="fc-grupo">
+          <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-menu-titulo" onClick={() => { definirAjustesAbertos(false); definirConfirmarRecomeco(false) }}>
+            <div className="fc-janela fc-menu" onClick={(e) => e.stopPropagation()}>
+              <h2 id="fc-menu-titulo">Menu</h2>
+              {/* Partida: continuar, recomeçar (com confirmação) e voltar ao menu inicial (15/10/2026) */}
+              <div className="fc-menu__acoes">
+                <button id="fc-menu-continuar" type="button" className="fc-botao" onClick={() => definirAjustesAbertos(false)}>Continuar</button>
+                {modo === 'batalha' && (confirmarRecomeco
+                  ? <div className="fc-menu__confirma" role="group" aria-label="Confirmar recomeço">
+                      <p>Recomeçar do andar 1? A partida do andar {partida.andar} será encerrada. Recorde, cristais e talentos continuam.</p>
+                      <div className="fc-janela__botoes">
+                        <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirConfirmarRecomeco(false)}>Cancelar</button>
+                        <button type="button" className="fc-botao" onClick={() => { definirConfirmarRecomeco(false); definirAjustesAbertos(false); novaPartida() }}>Recomeçar</button>
+                      </div>
+                    </div>
+                  : <button type="button" className="fc-botao fc-botao--secundario" onClick={() => { tocar('selecao'); definirConfirmarRecomeco(true) }}>Recomeçar a partida</button>)}
+                <button type="button" className="fc-botao fc-botao--secundario" onClick={() => { if (validando.current) return; tocar('selecao'); definirAjustesAbertos(false); navegar('/flashcards/entrada') }}>Voltar ao menu inicial</button>
+              </div>
+              <fieldset className="fc-grupo fc-menu__som">
                 <legend>Som</legend>
-                <label className="fc-ajuste"><input id="fc-som" type="checkbox" checked={ajustes.som} onChange={(e) => { destravar(); definirAjustes({ som: e.target.checked }); if (e.target.checked) window.setTimeout(() => tocar('poder'), 50) }} /><span>Som ligado</span></label>
-                <label className="fc-ajuste fc-ajuste--volume"><span>Efeitos</span><input id="fc-vol-efeitos" type="range" min={0} max={1} step={0.05} value={ajustes.volEfeitos} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volEfeitos: +e.target.value })} onPointerUp={() => tocar('impacto-medio')} /></label>
-                <label className="fc-ajuste fc-ajuste--volume"><span>Música</span><input id="fc-vol-musica" type="range" min={0} max={1} step={0.05} value={ajustes.volMusica} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volMusica: +e.target.value })} /></label>
-                <label className="fc-ajuste fc-ajuste--volume"><span>Ambiente</span><input id="fc-vol-ambiente" type="range" min={0} max={1} step={0.05} value={ajustes.volAmbiente} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volAmbiente: +e.target.value })} /></label>
+                <ControleVolume rotulo="Volume geral" valor={ajustes.som ? ajustes.volume : 0} aoMudar={(volume) => definirAjustes({ volume, som: volume > 0 })} comPassos />
+                <ControleVolume rotulo="Efeitos" valor={ajustes.volEfeitos} desligado={!ajustes.som} aoMudar={(volEfeitos) => definirAjustes({ volEfeitos })} aoSoltar={() => tocar('impacto-medio')} />
+                <ControleVolume rotulo="Música" valor={ajustes.volMusica} desligado={!ajustes.som} aoMudar={(volMusica) => definirAjustes({ volMusica })} />
+                <ControleVolume rotulo="Ambiente" valor={ajustes.volAmbiente} desligado={!ajustes.som} aoMudar={(volAmbiente) => definirAjustes({ volAmbiente })} />
+                <button type="button" className={'fc-menu__mudo' + (ajustes.som ? '' : ' fc-menu__mudo--on')} aria-pressed={!ajustes.som} onClick={() => { destravar(); const som = !ajustes.som; definirAjustes({ som, volume: som && ajustes.volume === 0 ? VOLUME_INICIAL : ajustes.volume }); if (som) window.setTimeout(() => tocar('poder'), 50) }}>{ajustes.som ? 'Silenciar tudo' : 'Ligar o som'}</button>
               </fieldset>
               <fieldset className="fc-grupo">
                 <legend>Movimento</legend>
@@ -1450,10 +1462,6 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
               </fieldset>
               {sistemaReduzido && <p className="fc-janela__nota">O aparelho está configurado para reduzir movimento.</p>}
               <p className="fc-janela__nota">Teclado: 1 a 4 respondem, Enter segue, P usa a pista, Esc pula a animação ou fecha.</p>
-              <div className="fc-janela__botoes">
-                <button type="button" className="fc-botao fc-botao--secundario" onClick={() => { definirAjustesAbertos(false); novaPartida() }}>Recomeçar partida</button>
-                <button type="button" className="fc-botao" onClick={() => definirAjustesAbertos(false)} autoFocus>Pronto</button>
-              </div>
             </div>
           </div>
         )}

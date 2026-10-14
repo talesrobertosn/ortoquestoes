@@ -5,7 +5,7 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { FLASHCARDS_RANKING } from '../../config'
 import { href, navegar } from '../../util/rotas'
 import { sairDoJogo } from '../fundo'
-import { configurarSom, ESCALA_VOLUME, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, ESCALA_VOLUME, volumeDaSessao, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
 import { BESTIARIO } from '../motor/bestiario'
@@ -39,28 +39,17 @@ export function Entrada() {
     definirVolume(n); definirSomAtivo(n>0)
     const a=ler<Record<string,unknown>>(CHAVE_AJUSTES,{})
     gravar(CHAVE_AJUSTES,{...a,versao:3,volume:n,escalaVolume:ESCALA_VOLUME,som:n>0})
-    configurarSom({ligado:n>0,volume:n,efeitos:Number(a.volEfeitos??0.85),musica:Number(a.volMusica??0.45),ambiente:Number(a.volAmbiente??0.35)})
+    configurarSom({ligado:n>0,volume:n,efeitos:Number(a.volEfeitos??0.7),musica:Number(a.volMusica??0.45),ambiente:Number(a.volAmbiente??0.35)})
   }
 
   useEffect(() => {
     const a = ler<{ som?: boolean; volEfeitos?: number; volAmbiente?: number; volMusica?: number }>(CHAVE_AJUSTES, {})
-    configurarSom({ ligado: a.som ?? somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false)) ?? true, efeitos: a.volEfeitos ?? 0.85, ambiente: a.volAmbiente ?? 0.35, musica: a.volMusica ?? 0.45, volume: volumeDaSessao() })
+    configurarSom({ ligado: a.som ?? somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false)) ?? true, efeitos: a.volEfeitos ?? 0.7, ambiente: a.volAmbiente ?? 0.35, musica: a.volMusica ?? 0.45, volume: volumeDaSessao() })
     tocarMusica('entrada'); tocarAmbiente('masmorra')
     // destrave por gesto e pausa por visibilidade, instalados uma vez para o jogo todo (sons.ts)
     instalarDestrave()
   }, [])
 
-  // primeira entrada: a pessoa escolhe com ou sem som (o toque no botão já destrava o áudio no celular)
-  const [escolherSom, definirEscolherSom] = useState(() => !ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false))
-  const escolher = (comSom: boolean) => {
-    const a = ler<Record<string, unknown>>(CHAVE_AJUSTES, {})
-    gravar(CHAVE_AJUSTES, { ...a, versao: 3, som: comSom })
-    configurarSom({ ligado: comSom, efeitos: (a.volEfeitos as number) ?? 0.85, ambiente: (a.volAmbiente as number) ?? 0.35, musica: (a.volMusica as number) ?? 0.45, volume: volumeDaSessao() })
-    if (comSom) { destravar(); tocar('confirmar') }
-    gravar(CHAVE_SOM_ESCOLHIDO, comSom ? 'com' : 'sem')
-    definirSomAtivo(comSom)
-    definirEscolherSom(false)
-  }
 
   const ir = (rota: string) => { tocar('porta'); window.setTimeout(() => navegar(rota), 160) }
   /**
@@ -139,19 +128,6 @@ export function Entrada() {
                 <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirConfirmarRecomeco(false)} autoFocus>Continuar a partida</button>
                 <button type="button" className="fc-botao" onClick={recomecar}>Começar do zero</button>
               </div>
-            </div>
-          </div>
-        )}
-        {escolherSom && (
-          <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-som-titulo">
-            <div className="fc-janela fc-som-escolha">
-              <h2 id="fc-som-titulo">Como você quer entrar?</h2>
-              <p className="fc-janela__sub">A Cripta tem trilha e efeitos próprios. Dá para mudar depois no botão de som, no alto da tela.</p>
-              <div className="fc-janela__botoes">
-                <button type="button" className="fc-botao" onClick={() => escolher(true)} autoFocus>Entrar com som</button>
-                <button type="button" className="fc-botao fc-botao--secundario" onClick={() => escolher(false)}>Entrar sem som</button>
-              </div>
-              <p className="fc-janela__nota">No iPhone, confira o volume do aparelho.</p>
             </div>
           </div>
         )}
