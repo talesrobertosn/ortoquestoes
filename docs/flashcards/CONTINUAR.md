@@ -36,6 +36,10 @@ Branch de trabalho: `claude/eloquent-brahmagupta-u85fiy`, com o PR #227 aberto p
   - pés de aço em vez das botas brancas;
   - braço da espada com manopla e couro;
   - menos ruído no tabardo.
+- **Veredito do Tales sobre a prévia 1: "Tá feio".** Não basta ajustar detalhes. O boneco está rígido, de frente, com proporções de brinquedo e superfícies chapadas.
+  - Repense a figura inteira a partir da silhueta do conceito: três quartos, pernas abertas, peito largo, ombreiras grandes em camadas e cabeça pequena em relação ao corpo.
+  - Se os polígonos não chegarem lá, troque de método: desenhe à mão uma matriz de pixels por paleta, um quadro-chave grande (uns 96 px de altura do corpo), e derive dele poucas poses.
+  - **Não mescle o PR #227 com o herói de agora**: ele ainda tem o herói SDF rejeitado.
 - **Próximos passos:**
   1. Iterar: `python3 scripts/sprites/cavaleiro2d.py --previa /tmp/x.png --estagios 4 --escala 5`. Depois ver todos os estágios (`--estagios 1,2,3,4,5,6`) e as animações (`--anim golpe|dano|derrota|vitoria|preparo`).
   2. Assar: `python3 scripts/sprites/cavaleiro2d.py`, depois `python3 scripts/sprites/indice.py`.
