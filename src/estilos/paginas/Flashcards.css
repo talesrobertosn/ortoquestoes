@@ -1867,6 +1867,12 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 .fc-entrada .fc-modo { background:linear-gradient(135deg,#f8f0daef,#e6dbc3ed);border:2px solid #a88651;box-shadow:inset 0 0 0 3px #fff4d8,0 12px 28px #0c1e1744; border-radius:18px; color:#304a36;padding:22px; gap:12px; }
 .fc-entrada .fc-modo strong { font:700 clamp(20px,2vw,27px)/1.25 var(--fc-titulo); color:#314b37; text-shadow:none; }
 .fc-entrada .fc-modo small,.fc-entrada .fc-modo__dados { color:#52604b;font-size:17px;line-height:1.4; }
+/* Começar do zero, embaixo do cartão da Cripta (15/10/2026) */
+.fc-modo-coluna { display:grid; gap:10px; align-content:start; min-width:0; }
+.fc-modo-coluna > .fc-modo { height:auto; }
+.fc-entrada .fc-modos .fc-recomecar { justify-self:center; display:inline-flex; align-items:center; gap:8px; padding:9px 18px; border-radius:999px; border:1.5px solid #a88651; background:#f8f0dae6; color:#5b3b14 !important; opacity:1; font:700 15px var(--fc-ui); cursor:pointer; box-shadow:0 3px 10px #0c1e1733; touch-action:manipulation; }
+.fc-entrada .fc-modos .fc-recomecar:hover { background:#fff7e2; }
+.fc-entrada .fc-modos .fc-recomecar:focus-visible { outline:3px solid #47765c; outline-offset:2px; }
 .fc-entrada .fc-modo__acao { background:#315e47; color:#fff2cc; border:1px solid #264631; padding:10px 16px;border-radius:9px; }
 .fc-entrada .fc-extra { background:#213e32e8;border-color:#9e996d77; }
 .fc-biblioteca__cabeca { background:linear-gradient(135deg,#f3eddae8,#e0e8d4e8)!important;color:#304e38; padding:24px!important; }
@@ -1906,16 +1912,22 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 @media (max-width: 640px) { .fc-rota__lista { grid-template-columns: 1fr 1fr; } }
 /* Volume rápido: cápsula vertical, arraste e teclado, inspirado no controle do celular. */
 .fc-volume { position:relative; z-index:35; }
-.fc-volume__painel { position:absolute; top:calc(100% + 12px); right:0; display:grid; justify-items:center; gap:10px; width:110px; padding:16px; border:1px solid #fff8; border-radius:24px; background:#f3efdeef; backdrop-filter:blur(18px); box-shadow:0 12px 40px #07160f66; color:#2b483a; font:600 14px var(--fc-ui); }
-.fc-volume__trilho { position:relative; width:54px; height:176px; overflow:hidden; border-radius:20px; background:#243c3a20; box-shadow:inset 0 1px 6px #11272420; }
+.fc-volume__painel { position:absolute; top:calc(100% + 12px); right:0; display:grid; justify-items:center; gap:8px; width:118px; padding:14px 14px 12px; border:1px solid #fff8; border-radius:24px; background:#f3efdeef; backdrop-filter:blur(18px); box-shadow:0 12px 40px #07160f66; color:#2b483a; font:600 14px var(--fc-ui); }
+.fc-volume__trilho { position:relative; width:54px; height:150px; overflow:hidden; border-radius:20px; background:#243c3a20; box-shadow:inset 0 1px 6px #11272420; }
 .fc-volume__preenchimento { position:absolute; bottom:0; left:0; right:0; height:var(--volume); background:#fffaf1; pointer-events:none; }
 .fc-volume__trilho input { position:absolute; inset:0; width:100%; height:100%; margin:0; writing-mode:vertical-lr; direction:rtl; opacity:0; cursor:ns-resize; touch-action:none; }
 .fc-volume__trilho:focus-within { outline:3px solid #47765c; outline-offset:-3px; }
-.fc-volume__trilho svg { position:absolute; bottom:13px; left:16px; pointer-events:none; }
-.fc-volume__painel output { font-variant-numeric:tabular-nums; }
+.fc-volume__painel output { font-variant-numeric:tabular-nums; font-size:16px; font-weight:800; min-height:20px; }
+/* − e + grandes, fáceis no dedo; o mudo lembra o volume de antes (15/10/2026). */
+.fc-volume__passo { display:grid; place-items:center; width:54px; height:40px; border:0; border-radius:14px; background:#fffaf1; color:#2b483a; font:800 26px/1 var(--fc-ui); cursor:pointer; box-shadow:0 2px 0 #2b483a33; touch-action:manipulation; }
+.fc-volume__passo:active:not(:disabled) { transform:translateY(1px); box-shadow:none; }
+.fc-volume__passo:disabled { opacity:.4; cursor:default; }
+.fc-volume__passo:focus-visible, .fc-volume__mudo:focus-visible { outline:3px solid #47765c; outline-offset:2px; }
+.fc-volume__mudo { width:100%; margin-top:2px; padding:7px 4px; border:1.5px solid #2b483a44; border-radius:999px; background:transparent; color:#2b483a; font:700 12px var(--fc-ui); cursor:pointer; touch-action:manipulation; }
+.fc-volume__mudo--on { background:#2b483a; border-color:#2b483a; color:#fffaf1; }
 .fc-entrada__volume { position:absolute; top:18px; right:76px; z-index:40; }
 .fc-topo__acoes { overflow:visible; }
-@media(max-width:640px){.fc-volume__painel{width:96px;padding:12px;}.fc-volume__trilho{height:150px;}.fc-entrada__volume{top:14px;right:62px;}}
+@media(max-width:640px){.fc-volume__painel{width:104px;padding:12px 10px 10px;}.fc-volume__trilho{height:120px;}.fc-entrada__volume{top:14px;right:62px;}}
 /* Conta grátis: selo das 3 tentativas da Cripta (14/10/2026) */
 
 /* Janela da rota, acabamento forjado (14/10/2026, "os botões estão um pouquinho feios"):

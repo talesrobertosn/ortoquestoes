@@ -5,7 +5,7 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { FLASHCARDS_RANKING } from '../../config'
 import { href, navegar } from '../../util/rotas'
 import { sairDoJogo } from '../fundo'
-import { configurarSom, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, ESCALA_VOLUME, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
 import { BESTIARIO } from '../motor/bestiario'
@@ -38,7 +38,7 @@ export function Entrada() {
   const mudarVolume = (n: number) => {
     definirVolume(n); definirSomAtivo(n>0)
     const a=ler<Record<string,unknown>>(CHAVE_AJUSTES,{})
-    gravar(CHAVE_AJUSTES,{...a,versao:3,volume:n,som:n>0})
+    gravar(CHAVE_AJUSTES,{...a,versao:3,volume:n,escalaVolume:ESCALA_VOLUME,som:n>0})
     configurarSom({ligado:n>0,volume:n,efeitos:Number(a.volEfeitos??0.85),musica:Number(a.volMusica??0.45),ambiente:Number(a.volAmbiente??0.35)})
   }
 
@@ -63,6 +63,18 @@ export function Entrada() {
   }
 
   const ir = (rota: string) => { tocar('porta'); window.setTimeout(() => navegar(rota), 160) }
+  /**
+   * Começar do zero (pedido do Tales, 15/10/2026): encerra a partida salva da Cripta e entra numa
+   * nova, do andar 1. Recorde, cristais, talentos e bestiário continuam. Conta como uma partida a mais.
+   */
+  const [confirmarRecomeco, definirConfirmarRecomeco] = useState(false)
+  const recomecar = () => {
+    const r = ler<Record<string, unknown>>(CHAVE_RECORDES, {})
+    gravar(CHAVE_RECORDES, { ...r, partidas: Number(r.partidas ?? 0) + 1, atualizadoEm: Date.now() })
+    gravar(CHAVE_PARTIDA, null)
+    definirConfirmarRecomeco(false)
+    ir('/flashcards/cripta')
+  }
   const comprar = (id: (typeof TALENTOS)[number]['id']) => {
     const novo = comprarTalento(altar, id)
     if (novo === altar) return
@@ -88,6 +100,7 @@ export function Entrada() {
           </div>
 
           <div className="fc-modos">
+            <div className="fc-modo-coluna">
             <button type="button" className="fc-modo fc-modo--cripta" onClick={() => ir('/flashcards/cripta')} onPointerEnter={() => tocar('hover')}>
               <span className="fc-modo__icone"><Sprite nome="porta" /></span>
               <strong>Cripta do Residente</strong>
@@ -95,6 +108,11 @@ export function Entrada() {
               <span className="fc-modo__dados">{rec.andarMaximo ? <>Recorde: <b>andar {rec.andarMaximo}</b></> : 'Sem recorde ainda'}</span>
               <span className="fc-modo__acao">{criptaViva ? `Continuar no andar ${criptaViva.andar}` : `Entrar na Cripta`}</span>
             </button>
+            {criptaViva && <button type="button" className="fc-recomecar" onClick={() => { tocar('selecao'); definirConfirmarRecomeco(true) }}>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5" stroke="currentColor" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              Começar do zero
+            </button>}
+            </div>
             <button type="button" className="fc-modo fc-modo--biblioteca" onClick={() => ir('/flashcards/biblioteca')} onPointerEnter={() => tocar('hover')}>
               <span className="fc-modo__icone"><Sprite nome="livro" /></span>
               <strong>Biblioteca de Flashcards</strong>
@@ -111,6 +129,19 @@ export function Entrada() {
           </div>
         </div>
 
+        {confirmarRecomeco && criptaViva && (
+          <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-recomeco-titulo" onClick={() => definirConfirmarRecomeco(false)}>
+            <div className="fc-janela" onClick={(e) => e.stopPropagation()}>
+              <h2 id="fc-recomeco-titulo">Começar do zero?</h2>
+              <p className="fc-janela__sub">A partida atual, no andar {criptaViva.andar}, será encerrada e você volta ao andar 1 com o herói novo.</p>
+              <p className="fc-janela__nota">Seu recorde, os cristais, os talentos do Altar e o Bestiário continuam.</p>
+              <div className="fc-janela__botoes">
+                <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirConfirmarRecomeco(false)} autoFocus>Continuar a partida</button>
+                <button type="button" className="fc-botao" onClick={recomecar}>Começar do zero</button>
+              </div>
+            </div>
+          </div>
+        )}
         {escolherSom && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-som-titulo">
             <div className="fc-janela fc-som-escolha">
