@@ -1,3 +1,5 @@
+import { numeroPixel } from '../efeitos/numerosPixel'
+import { indicesVisuais } from '../motor/hipnose'
 import { Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
@@ -324,7 +326,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     no.className = 'fc-flutua' + (extra?.grande ? ' fc-flutua--grande' : '')
     no.style.left = xx + 'px'; no.style.top = Math.max(40, y + (extra?.y ?? 0)) + 'px'; no.style.color = tom
     no.dataset.id = String(id)
-    no.textContent = texto
+    const pixels = numeroPixel(texto)
+    if (pixels) { no.classList.add('fc-flutua--numero'); no.appendChild(pixels) }
+    else no.textContent = texto
     if (extra?.rotulo) { const r = document.createElement('small'); r.textContent = extra.rotulo; no.appendChild(r) }
     camada.appendChild(no)
     window.setTimeout(() => no.remove(), extra?.grande ? 1500 : 1150)
@@ -367,7 +371,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     quem: (andar: number, semente: number) => inimigoDoAndar(andar, semente, partidaRef.current.modo).inimigo.id,
     ir: (andar: number, semente: number) => {
       const p = partidaRef.current, { inimigo: i } = inimigoDoAndar(andar, semente, p.modo)
-      const q = { ...p, andar, sementeBase: semente, inimigo: { ...p.inimigo, id: i.id, vida: i.vida, vidaMax: i.vida, barreira: i.barreira ?? 0, fase: 1 as const, rodadas: 0, errosSeguidos: 0, furia: false } }
+      const q = { ...p, andar, sementeBase: semente, inimigo: { ...p.inimigo, id: i.id, vida: i.vida, vidaMax: i.vida, barreira: i.barreira ?? 0, fase: 1 as const, rodadas: 0, errosSeguidos: 0, furia: false, hipnoseUsada: false, hipnosePendente: false } }
       partidaRef.current = q; definirPartida(q); sincronizar(q); definirCenarioVisivel(i.cenario)
     } } })
 
@@ -833,8 +837,19 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           flutuar(refSlots.current, `${RECOMPENSAS[ev.poder].nome} −1`, '#e8d8b0', { y: -30, rotulo: 'TREMOR' })
           break
         }
+        case 'hipnose': {
+          definirFaixa({ texto: 'Olhar petrificante', sub: 'As alternativas do próximo flashcard mudam de lugar.', tom: 'azul' })
+          if (!(await esperar(1100, g))) return
+          definirFaixa(null)
+          break
+        }
         case 'roubou': {
           tocar('roubo')
+          if (inimigo.sprite === 'mimico' && P && !reduzido) {
+            const slots = refSlots.current?.querySelectorAll('.fc-encaixe')
+            const origem = slots?.[partida.encaixes.findIndex(e => e.tipo === ev.poder)] ?? refSlots.current
+            void P.voar('orbe', centro(origem), centro(refInimigo.current), { duracao: .65, curva: -.6, escala: pixelVfx()*.7 })
+          }
           if (refSlots.current) P?.explosao(centro(refSlots.current), { cor: '#c8a0ff', n: 14, forca: 200 })
           flutuar(refSlots.current, `${RECOMPENSAS[ev.poder].nome} −1`, '#d8c0ff', { y: -30, rotulo: 'ROUBADO' })
           break
@@ -1048,7 +1063,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
       if (modo !== 'batalha' || ajustesAbertos || ampliada || confirmarSaida || painel) return
       const p = partidaRef.current
       if (apresentacao && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); definirApresentacao(null); return }
-      if (/^[1-4]$/.test(e.key) && p.fase === 'pergunta') { e.preventDefault(); escolherAlternativa(+e.key - 1, true); return }
+      if (/^[1-4]$/.test(e.key) && p.fase === 'pergunta') { e.preventDefault(); escolherAlternativa(indicesVisuais(p.atual)[+e.key - 1], true); return }
       if ((e.key === 'p' || e.key === 'P') && p.fase === 'pergunta') { usarPista(); return }
       if (e.key === 'Enter' || (e.key === ' ' && alvo?.tagName !== 'BUTTON' && alvo?.tagName !== 'A')) {
         if (p.fase === 'resposta') { e.preventDefault(); seguir() }
@@ -1078,7 +1093,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : faixaTela === 'deitado' ? 1 : 1.8) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : faixaTela === 'deitado' ? 0.75 : 1.5) * (inimigo.variante === 'rainha' ? 1.25 : 1)
   const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'deitado' ? 1.1 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
-    ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${selecionada + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
+    ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${indicesVisuais(partida.atual).indexOf(selecionada) + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
     : partida.fase === 'resposta'
       ? { texto: 'Seguir', sub: 'Enter', ativo: true, acao: seguir, classe: 'seguir' }
       : { texto: partida.fase === 'fim' ? 'Fim' : 'Andar', sub: '', ativo: false, acao: () => {}, classe: '' }
@@ -1194,7 +1209,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                 <div className={`fc-intencao${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}${(intencao.critico || intencao.carregado) && !intencao.bloqueado ? ' fc-intencao--critico' : ''}${intencao.carregado && !intencao.bloqueado ? ' fc-intencao--sopro' : ''}`}
                   title={intencao.bloqueado ? 'O escudo bloqueia o próximo golpe' : `Intenção do adversário: o dano exato que você leva se errar${intencao.carregado ? ` (${intencao.carregado})` : intencao.critico ? ' (golpe crítico)' : ''}${intencao.protecoes.length ? `, já com ${intencao.protecoes.join(' e ')}` : ''}`}>
                   <span className="fc-intencao__gema">{intencao.bloqueado ? <Sprite nome="escudo" className="fc-sprite--icone" /> : <b>{intencao.dano}</b>}</span>
-                  <small>{intencao.bloqueado ? 'escudo pronto' : intencao.carregado ? 'sopro se errar' : intencao.critico ? 'crítico se errar' : intencao.rajada > 1 ? `${intencao.rajada} mordidas` : 'se errar'}</small>
+                  <span className="fc-intencao__simbolo" aria-hidden="true"><Sprite nome={intencao.bloqueado ? 'escudo' : intencao.carregado && inimigo.variante === 'basilisco' ? 'cartas' : intencao.carregado && inimigo.queima ? 'chama' : inimigo.envenena ? 'frasco' : inimigo.rouba ? 'bolsa' : intencao.rajada > 1 ? 'espadas' : 'espada'} /></span><small>{intencao.bloqueado ? 'escudo pronto' : intencao.carregado ? 'sopro se errar' : intencao.critico ? 'crítico se errar' : intencao.rajada > 1 ? `${intencao.rajada} mordidas` : 'se errar'}</small>
                 </div>
               )}
             </section>
@@ -1283,12 +1298,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
               </div>
 
               <div className={`fc-mao${partida.fase !== 'pergunta' ? ' fc-mao--respondida' : ''}`} ref={refMao} role="group" aria-label="Sua mão: alternativas">
-                {carta && ordem.map((opcao, pos) => {
+                {carta && indicesVisuais(partida.atual).map((pos, visual) => {
+                  const opcao = ordem[pos]
                   const eliminada = partida.atual!.eliminadas.includes(pos)
                   const m = mostrado.marcadas
                   const estado = m && m.certa >= 0 ? (pos === m.certa ? 'certa' : pos === m.escolha ? 'errada' : 'apagada') : m && pos === m.escolha ? 'jogada' : ''
                   return (
-                    <div key={chaveDaMesa + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
+                    <div key={chaveDaMesa + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: visual, ['--n' as string]: ordem.length }}>
                       <button
                         type="button"
                         className={`fc-alternativa${carta.opcoes[opcao].trim().length <= 4 ? ' fc-alternativa--curta' : ''}${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...carta.opcoes[opcao].split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
@@ -1296,9 +1312,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                         onClick={() => escolherAlternativa(pos, false)}
                         onPointerEnter={() => { if (partida.fase === 'pergunta' && !eliminada && faixaTela !== 'celular') tocar('hover') }}
                         aria-pressed={selecionada === pos}
-                        aria-label={`Alternativa ${pos + 1}: ${carta.opcoes[opcao]}${eliminada ? ' (eliminada pela pista)' : ''}`}
+                        aria-label={`Alternativa ${visual + 1}: ${carta.opcoes[opcao]}${eliminada ? ' (eliminada pela pista)' : ''}`}
                       >
-                        <i aria-hidden="true">{pos + 1}</i>
+                        <i aria-hidden="true">{visual + 1}</i>
                         <span>{carta.opcoes[opcao]}</span>
                       </button>
                     </div>
