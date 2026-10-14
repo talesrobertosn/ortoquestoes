@@ -4,7 +4,7 @@ import { climaDoCiclo, INTERVALO_CEU } from '../efeitos/cicloExterior'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
 import { criarAmbiente, pintarCena, type Cena, type Clima } from '../efeitos/pintura'
 import { pintarTabuleiro } from '../efeitos/tabuleiros'
-import { CENAS_PINTADAS, carregarCenarioPintado, cenarioPintadoPronto, pintarCamadas } from '../efeitos/cenariosPintados'
+import { CENAS_PINTADAS, PAISAGENS, carregarCenarioPintado, cenarioPintadoPronto, pintarCamadas, type CenaAmbientada, type Paisagem } from '../efeitos/cenariosPintados'
 
 /** Desfoque barato e compatível com todos os navegadores: reduz e amplia de novo, com suavização. */
 function desfocar(src: HTMLCanvasElement, fator: number): HTMLCanvasElement {
@@ -74,10 +74,12 @@ function climaENevoa(c: CanvasRenderingContext2D, W: number, H: number, clima: C
 /** Cenas internas (caverna, salões, masmorras): o clima do andar não entra (não chove dentro do covil). */
 const INTERNAS = new Set<Cena>(['covil', 'masmorra', 'salao', 'forja', 'caverna', 'catacumba', 'laboratorio', 'arquivo', 'biblioteca', 'templo'])
 
-export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar = 'dia' }: { cena: Cena; reduzido: boolean; clima?: Clima }) {
+export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: climaAndar = 'dia' }: { cena: CenaAmbientada; reduzido: boolean; clima?: Clima }) {
+  const extra = PAISAGENS.includes(pedido as Paisagem)
+  const cena: Cena = extra ? 'campo' : pedido as Cena
   const [etapaCeu, definirEtapaCeu] = useState(0)
   useEffect(() => {
-    if (cena !== 'jardim') { definirEtapaCeu(0); return }
+    if (pedido !== 'jardim') { definirEtapaCeu(0); return }
     if (reduzido) return
     let timer = 0
     const acompanharVisibilidade = () => {
@@ -87,8 +89,8 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
     acompanharVisibilidade()
     document.addEventListener('visibilitychange', acompanharVisibilidade)
     return () => { window.clearInterval(timer); document.removeEventListener('visibilitychange', acompanharVisibilidade) }
-  }, [cena, reduzido])
-  const clima: Clima = INTERNAS.has(cena) ? 'dia' : cena === 'jardim' ? climaDoCiclo(etapaCeu) : climaAndar
+  }, [pedido, reduzido])
+  const clima: Clima = INTERNAS.has(cena) || pedido === 'estufa' ? 'dia' : pedido === 'campoflorido' ? 'entardecer' : pedido === 'jardim' ? climaDoCiclo(etapaCeu) : extra ? 'dia' : climaAndar
   const base = useRef<HTMLCanvasElement>(null)
   const ambiente = useRef<HTMLCanvasElement>(null)
   const raiz = useRef<HTMLDivElement>(null)
@@ -106,7 +108,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
       const novo = () => { const c = document.createElement('canvas'); Object.defineProperty(c, 'clientWidth', { value: w }); Object.defineProperty(c, 'clientHeight', { value: h }); return c }
       const planos: { fundo: HTMLCanvasElement; meio: HTMLCanvasElement; frente: HTMLCanvasElement; brilho: HTMLCanvasElement; luz?: HTMLCanvasElement } = { fundo: novo(), meio: novo(), frente: novo(), brilho: novo() }
       // Floresta e Biblioteca: camadas pintadas offline (ver efeitos/cenariosPintados.ts)
-      const nomePintado = CENAS_PINTADAS[cena]
+      const nomePintado = CENAS_PINTADAS[pedido]
       const pintado = nomePintado ? cenarioPintadoPronto(nomePintado) : null
       if (nomePintado && pintado === undefined) carregarCenarioPintado(nomePintado).then((r) => { if (r && vivo) { ultimo = ''; pintar() } })
       if (pintado) { planos.luz = novo(); pintarCamadas(planos, pintado, w, h) }
@@ -155,12 +157,12 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
     const obs = new ResizeObserver(() => { window.clearTimeout(espera); espera = window.setTimeout(pintar, 140) })
     obs.observe(alvo)
     return () => { vivo = false; obs.disconnect(); window.clearTimeout(espera) }
-  }, [cena, clima])
+  }, [pedido, cena, clima])
 
   useEffect(() => {
     if (reduzido || !ambiente.current) return
-    return criarAmbiente(ambiente.current, cena, clima)
-  }, [cena, reduzido, clima])
+    return criarAmbiente(ambiente.current, extra ? 'treino' : cena, clima)
+  }, [cena, extra, reduzido, clima])
 
   // paralaxe leve com o mouse (só no computador): move um plano só, sem repintar
   useEffect(() => {
@@ -178,7 +180,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
   }, [reduzido])
 
   return (
-    <div className={`fc-cena fc-cena--${cena} fc-cena--clima-${clima}`} ref={raiz} aria-hidden="true">
+    <div className={`fc-cena fc-cena--${pedido} fc-cena--clima-${clima}`} ref={raiz} aria-hidden="true">
       <canvas ref={base} className="fc-cena__base" />
       <canvas ref={ambiente} className="fc-cena__ambiente" />
       {cena === 'biblioteca' && <EstacoesBiblioteca reduzido={reduzido} />}

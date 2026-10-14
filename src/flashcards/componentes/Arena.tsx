@@ -37,6 +37,7 @@ import { useDeslizar } from '../efeitos/deslizar'
 import { ComChaves } from './Chaves'
 import { Cenario, TampoMesa } from './Cenario'
 import { climaDoAndar } from '../efeitos/pintura'
+import { paisagemDaParada } from '../efeitos/paisagens'
 import { Estudo } from './Estudo'
 import { Ator, BarraVida, Encaixe } from './Hud'
 import { Visualizador } from './Visualizador'
@@ -1123,13 +1124,14 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const ciclo = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).ciclo
   const torre = partida.modo === 'torre'
   const cansaco = desgaste(partida)
+  const parada = modo === 'batalha' && ['loja', 'sabio', 'sala', 'portas'].includes(partida.fase)
 
   const classes = ['fc-arena', `fc-arena--${modo}`, `fc-arena--${faixaTela}`, `fc-arena--fase-${partida.fase}`, reduzido ? 'fc-arena--reduzida' : '', mostrado.vida <= 25 && modo === 'batalha' ? 'fc-arena--perigo' : ''].filter(Boolean).join(' ')
 
   return (
     <ModalJogo titulo={NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar} transicao={`${modo}:${cenarioVisivel}:${['loja','sabio','sala','fim'].includes(partida.fase) ? partida.fase : 'jogo'}`}>
-      <div className={classes} data-cenario={cenarioVisivel} data-modo={partida.modo}>
-        <Cenario cena={modo === 'estudo' ? 'biblioteca' : cenarioVisivel} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
+      <div className={classes} data-cenario={cenarioVisivel} data-modo={partida.modo} data-parada={parada ? 'true' : undefined}>
+        <Cenario cena={paisagemDaParada(partida, modo === 'batalha', cenarioVisivel)} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
         {modo === 'estudo' && leituraTranquila && <ClimaEstudo humor={{tipo:'chuva', nivel:1, titulo:'Leitura tranquila', sub:''}} reduzido={reduzido} tranquilo />}
         {modo === 'estudo' && !leituraTranquila && humorEstudo && humorEstudo.tipo !== 'calmo' && <ClimaEstudo humor={humorEstudo} reduzido={reduzido} />}
 
@@ -1179,7 +1181,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         {modo === 'estudo' ? (
           <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} aoHumor={definirHumorEstudo} aoTranquilo={definirLeituraTranquila} />
         ) : (
-          <div className="fc-batalha">
+          <div className="fc-batalha" aria-hidden={parada || undefined}>
             {/* Adversário em cena, de pé sobre a arena */}
             <section className={`fc-inimigo${inimigo.chefe ? ' fc-inimigo--chefe' : ''}${fase2 ? ' fc-inimigo--fase2' : ''}${partida.inimigo.furia ? ' fc-inimigo--furia' : ''}`} aria-label={`Adversário: ${inimigo.nome}`}>
               <Ator ref={refInimigo} quem={inimigo.sprite as Personagem} variante={inimigo.variante} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (inimigo.nivel === 'elite' ? ' fc-ator--elite' : '') + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')}>

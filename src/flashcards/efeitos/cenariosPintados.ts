@@ -16,6 +16,13 @@
  *   treino      Pátio dos Estandartes (`scripts/cenarios/treino.py`): alvo, galeria de madeira, flores e luz de manhã
  *   arquivo     Arquivo dos Mapas (`scripts/cenarios/arquivo.py`): estantes, plantas geométricas, janela e lanternas
  *   torre       Terraço do Horizonte (`scripts/cenarios/torre.py`): nuvens, montanhas, parapeito e estandartes ao entardecer
+ *   vilarejo    Vilarejo dos Caminhos: casas de pedra e madeira, árvore e cerca (`vilarejo.py`)
+ *   ruinas      Ruínas do Bosque: colunas, rio e ponte de madeira (`ruinas.py`)
+ *   vila        Vila do Rio: telhados, hortas e caminhos vistos de cima (`vila.py`)
+ *   campoflorido Campo do Poente: flores e banco de descanso (`campoflorido.py`)
+ *   praia       Enseada do Farol: mar, dunas e farol (`praia.py`)
+ *   estufa      Jardim dos Curandeiros: vidro, ervas e canteiros (`estufa.py`)
+ *               Os seis scripts usam ferramentas de `scripts/cenarios/paisagens.py`.
  *
  * Diferente das outras cenas, que são pintadas em código a cada tamanho, estas
  * são pintadas OFFLINE com `scripts/cenarios/pintor.py` (ruído, voronoi,
@@ -32,12 +39,15 @@ import { recurso } from '../../config'
 import type { Cena } from './pintura'
 
 type Formato = 'paisagem' | 'retrato'
+export type Paisagem = 'vilarejo' | 'ruinas' | 'vila' | 'campoflorido' | 'praia' | 'estufa'
+export type CenaAmbientada = Cena | Paisagem
+export const PAISAGENS: readonly Paisagem[] = ['vilarejo', 'ruinas', 'vila', 'campoflorido', 'praia', 'estufa']
 const CAMADAS = ['fundo', 'meio', 'frente', 'luz'] as const
 type Camada = (typeof CAMADAS)[number]
 export type ImagensCenario = Record<Formato, Record<Camada, HTMLImageElement>>
 
 /** Cena do jogo → nome do arquivo pintado. */
-export const CENAS_PINTADAS: Partial<Record<Cena, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio', catacumba: 'catacumba', templo: 'templo', passarela: 'passarela', forja: 'forja', coliseu: 'coliseu', treino: 'treino', arquivo: 'arquivo', torre: 'torre' }
+export const CENAS_PINTADAS: Partial<Record<CenaAmbientada, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio', catacumba: 'catacumba', templo: 'templo', passarela: 'passarela', forja: 'forja', coliseu: 'coliseu', treino: 'treino', arquivo: 'arquivo', torre: 'torre', vilarejo: 'vilarejo', ruinas: 'ruinas', vila: 'vila', campoflorido: 'campoflorido', praia: 'praia', estufa: 'estufa' }
 
 const promessas = new Map<string, Promise<ImagensCenario | null>>()
 const prontas = new Map<string, ImagensCenario | null>()
