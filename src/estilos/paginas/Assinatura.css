@@ -449,3 +449,17 @@
 @media (max-width: 60rem) { .vd-ganhos, .vd-condicoes { grid-template-columns: minmax(0, 1fr); } }
 .vd-fase--resto { border-style: dashed; }
 .vd-fase--resto .vd-fase__num { background: var(--superficie-2); color: var(--texto-2); box-shadow: 0 0 0 2px var(--vd-borda); font-size: 1.1rem; }
+
+/* Prévia do cronograma reformado (14/10/2026): as três passadas e um dia do plano. */
+.vd-cronograma__plano { display: grid; gap: 1rem; min-width: 0; }
+.vd-dia { display: grid; gap: 0.6rem; padding: 0.9rem 1rem; background: var(--superficie-2); border: 2px solid var(--vd-borda); }
+.vd-dia__rotulo { margin: 0; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
+.vd-dia ol { display: grid; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
+.vd-dia li { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr) auto; gap: 0.6rem; align-items: center; padding: 0.45rem 0.6rem; background: var(--superficie); border: 2px solid var(--vd-borda); }
+.vd-dia li > span { display: grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 2px solid var(--vd-borda); font-size: 0.75rem; font-weight: 800; color: var(--texto-2); }
+.vd-dia li:nth-child(2) { border-color: var(--vd-ouro); }
+.vd-dia li:nth-child(2) > span { border-color: var(--vd-ouro); background: var(--vd-ouro); color: var(--vd-tinta); }
+.vd-dia strong { display: block; font-size: var(--corpo-menor); }
+.vd-dia small { display: block; font-size: 0.75rem; color: var(--texto-2); }
+.vd-dia em { font-style: normal; font-size: 0.75rem; font-weight: 750; color: var(--texto-2); white-space: nowrap; }
+.vd-dia__nota { margin: 0; font-size: 0.78rem; line-height: 1.45; color: var(--texto-2); }

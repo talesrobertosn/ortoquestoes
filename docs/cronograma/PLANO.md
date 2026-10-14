@@ -47,56 +47,70 @@ Linguagem visual fixa:
 ## Etapas
 
 ### 1. Apresentação "hoje e depois"
-1. [ ] Trilho "onde você está" no topo (fase, passada, semana X de N, frase da fase).
-2. [ ] Cartão Hoje com checklist do dia, tempo de cada item, total do dia e botão único.
-3. [ ] Linha "Amanhã".
-4. [ ] "Esta semana" em 7 colunas, com cor da área e estados.
-5. [ ] "Depois": linha do tempo recolhida com marcos.
-6. [ ] Abas ou blocos recolhidos para desempenho, mapa de risco, Simulados e como funciona.
-7. [ ] Paleta fixa de cores por área, compartilhada pelo site.
-8. [ ] Barra da meta de hoje dentro da sessão do cronograma.
-9. [ ] Tela de fim de sessão: meta feita, o que falta hoje, amanhã.
-10. [ ] Tour de 3 passos na primeira visita (trilho, hoje, semana).
+1. [x] Trilho "onde você está" no topo (fase, passada, semana X de N, frase da fase). (PR da reforma, 14/10/2026)
+2. [x] Cartão Hoje com checklist do dia, tempo de cada item, total do dia e botão único. (PR da reforma, 14/10/2026)
+3. [x] Linha "Amanhã". (PR da reforma, 14/10/2026)
+4. [x] "Esta semana" em 7 colunas, com cor da área e estados. (PR da reforma, 14/10/2026)
+5. [x] "Depois": linha do tempo recolhida com marcos. (PR da reforma, 14/10/2026)
+6. [x] Abas ou blocos recolhidos para desempenho, mapa de risco, Simulados e como funciona. (PR da reforma, 14/10/2026)
+7. [x] Paleta fixa de cores por área, compartilhada pelo site. (PR da reforma, 14/10/2026)
+8. [x] Barra da meta de hoje dentro da sessão do cronograma. (PR da reforma, 14/10/2026)
+9. [x] Tela de fim de sessão: meta feita, o que falta hoje, amanhã. (PR da reforma, 14/10/2026)
+10. [x] Tour de 3 passos na primeira visita (trilho, hoje, semana). (PR da reforma, 14/10/2026)
 
 ### 2. Montagem
-11. [ ] Uma pergunta por tela no celular, com o resumo ao vivo fixo no rodapé.
-12. [ ] Intensidade em tempo por dia (30 min, 1h, 1h30, 2h+), mostrando a cobertura resultante.
-13. [ ] Dia leve (plantão) além da folga.
-14. [ ] Atalhos com as datas oficiais das provas; duas provas no mesmo plano (TARO e TEOT).
-15. [ ] Diagnóstico de 20 questões opcional dentro da montagem.
-16. [ ] "Já domino esta área" e "começar por".
-17. [ ] Texto dos Simulados em uma linha com "saiba mais".
-18. [ ] Simulador "e se": efeito da mudança na hora.
+11. [x] Uma pergunta por tela no celular, com o resumo ao vivo fixo no rodapé. (PR da reforma, 14/10/2026)
+12. [x] Intensidade em tempo por dia (30 min, 1h, 1h30, 2h+), mostrando a cobertura resultante. (PR da reforma, 14/10/2026)
+13. [x] Dia leve (plantão) além da folga. (PR da reforma, 14/10/2026)
+14. [~] Atalhos com as datas oficiais das provas; duas provas no mesmo plano (TARO e TEOT). Feito em parte: atalho do TEOT (única data oficial no repositório) e a segunda prova como marco no caminho.
+15. [x] Diagnóstico de 20 questões opcional dentro da montagem. (PR da reforma, 14/10/2026)
+16. [x] "Já domino esta área" e "começar por". (PR da reforma, 14/10/2026)
+17. [x] Texto dos Simulados em uma linha com "saiba mais". (PR da reforma, 14/10/2026)
+18. [x] Simulador "e se": efeito da mudança na hora. (PR da reforma, 14/10/2026)
 
 ### 3. Distribuição dos temas
-19. [ ] Passadas por incidência: 1ª o que mais cai em todas as áreas, 2ª prioridade média, 3ª o resto.
-20. [ ] Intercalar: cerca de 70% da área do dia e 30% de mistura das áreas já vistas.
-21. [ ] Blocos de 2 a 3 dias por grupo de assuntos, em vez de uma área por semana.
-22. [ ] Mini-simulado cronometrado a cada 2 ou 3 semanas.
-23. [ ] Resumão do tema no começo do dia.
-24. [ ] Revisões e flashcards dos erros dentro da meta do dia (uma meta, um tempo).
+19. [x] Passadas por incidência: 1ª o que mais cai em todas as áreas, 2ª prioridade média, 3ª o resto. (PR da reforma, 14/10/2026)
+20. [x] Intercalar: cerca de 70% da área do dia e 30% de mistura das áreas já vistas. (PR da reforma, 14/10/2026)
+21. [x] Blocos de 2 a 3 dias por grupo de assuntos, em vez de uma área por semana. (PR da reforma, 14/10/2026)
+22. [x] Mini-simulado cronometrado a cada 2 ou 3 semanas. (PR da reforma, 14/10/2026)
+23. [~] Resumão do tema no começo do dia. Feito em parte: item "Resumão do tema" na lista do dia, com link para o resumão (ainda não abre na área certa).
+24. [x] Revisões e flashcards dos erros dentro da meta do dia (uma meta, um tempo). (PR da reforma, 14/10/2026)
 
 ### 4. Frequência e constância
-25. [ ] Dia mínimo (10 questões) que mantém a sequência.
-26. [ ] Teto para o atraso (no máximo +25%), espalhando o resto pela semana.
-27. [ ] Botão "semana difícil".
-28. [ ] Lembrete no horário escolhido (7h, almoço, 19h).
-29. [ ] Exportar para o calendário (.ics).
-30. [ ] Resumo de domingo.
-31. [ ] Conquistas do cronograma.
-32. [ ] Cronograma em grupo na Liga da residência (constância, não volume).
+25. [x] Dia mínimo (10 questões) que mantém a sequência. (PR da reforma, 14/10/2026)
+26. [x] Teto para o atraso (no máximo +25%), espalhando o resto pela semana. (PR da reforma, 14/10/2026)
+27. [x] Botão "semana difícil". (PR da reforma, 14/10/2026)
+28. [~] Lembrete no horário escolhido (7h, almoço, 19h). Feito em parte: lembrete pelo calendário do celular (.ics com alarme às 7h, 12h ou 19h); notificação do próprio site precisa de servidor (T).
+29. [x] Exportar para o calendário (.ics). (PR da reforma, 14/10/2026)
+30. [~] Resumo de domingo. Feito em parte: no site, aos domingos e segundas; por e-mail depende do Tales (T).
+31. [~] Conquistas do cronograma. Feito em parte: já existem as do cronograma (28 e 84 dias, do início ao fim); novas pedem arte (T).
+32. [ ] Cronograma em grupo na Liga da residência (constância, não volume). (T) Precisa de servidor.
 
 ### 5. Inteligência
-33. [ ] Tempo por questão da própria pessoa, no lugar do fixo de 1,5 min.
-34. [ ] Prontidão por área (cobertura × acerto × incidência).
-35. [ ] "Por que hoje" em todo dia.
-36. [ ] Assunto dominado (acerto acima de 85% em 15 ou mais) sai da fila.
-37. [ ] Projeção "nesse ritmo você chega com X% do acervo e Y% do que mais cai".
+33. [x] Tempo por questão da própria pessoa, no lugar do fixo de 1,5 min. (PR da reforma, 14/10/2026)
+34. [x] Prontidão por área (cobertura × acerto × incidência). (PR da reforma, 14/10/2026)
+35. [x] "Por que hoje" em todo dia. (PR da reforma, 14/10/2026)
+36. [x] Assunto dominado (acerto acima de 85% em 15 ou mais) sai da fila. (PR da reforma, 14/10/2026)
+37. [x] Projeção "nesse ritmo você chega com X% do acervo e Y% do que mais cai". (PR da reforma, 14/10/2026)
 
 ### 6. Quem não assina
-38. [ ] Prévia guardada no aparelho.
-39. [ ] Trilho e semanas completos desfocados na prévia.
-40. [ ] Trilha em pixel art até a prova (mapa com fases e o castelo da prova), também para o Instagram.
+38. [x] Prévia guardada no aparelho. (PR da reforma, 14/10/2026)
+39. [x] Trilho e semanas completos desfocados na prévia. (PR da reforma, 14/10/2026)
+40. [~] Trilha em pixel art até a prova (mapa com fases e o castelo da prova), também para o Instagram. Feito em parte: o "Onde você está" usa o trilho em pixel com a fonte e o horizonte da marca; o mapa ilustrado pede arte (T).
+
+## Como ficou (14/10/2026)
+
+- Motor: `src/dados/planoEstudo.ts` simula o plano dia a dia (`calculo.dias`), com passadas por prioridade
+  (máxima, alta, resto), blocos de ~3 dias por área, 30% de mistura revezando entre as outras áreas da passada
+  (tirada do fim da fila delas), dia leve, semana difícil (dia mínimo de 10), mini-simulado a cada 14 dias,
+  teto de 25% para o atraso e projeção. Teste: `fixtures/testar_cronograma_reforma.mjs`.
+- Página: `src/paginas/CronogramaPainel.tsx` (onde você está, Hoje, Amanhã, Esta semana, Depois, Como você está
+  indo, blocos recolhidos, tour, resumo da semana, calendário .ics). Cores por área em `src/dados/coresAreas.ts`.
+- Montagem em 4 passos em `PlanoEstudo.tsx`, com o resumo ao vivo (barra fixa no celular) e a diferença de cada escolha.
+- Opções novas (dia leve, semana difícil, começar por, dominadas, segunda prova) na coluna `opcoes` de
+  `planos_estudo`: parte 20 do SQL (`supabase/colar-no-painel/sql-202610141300-parte20.sql`). Sem o SQL, ficam no aparelho.
+- Sessão: faixa da meta de hoje na cor da área; fim de sessão do cronograma com o que falta hoje e amanhã.
+- Modo demonstração só em desenvolvimento: `#/cronograma?demo=1`.
 
 ## Regras que continuam valendo
 

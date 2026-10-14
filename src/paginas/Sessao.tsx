@@ -14,7 +14,7 @@ import { Atalhos } from '../componentes/Atalhos'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { usarConta } from '../conta/ContextoConta'
-import { usarFavoritos, usarSessao } from '../estado/sessao'
+import { lerRespondidas, usarFavoritos, usarSessao } from '../estado/sessao'
 import { marcarConviteLimiteVisto, saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
 import { usarAssinante } from '../conta/plano'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
@@ -24,6 +24,45 @@ import { gravar, ler } from '../estado/armazenamento'
 import { recurso } from '../config'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Sessao.css'
+import { obterPlano } from '../conta/cronograma'
+import { usarPremium } from '../conta/premium'
+import { calcularPlano } from '../dados/planoEstudo'
+import { corDaArea } from '../dados/coresAreas'
+
+/**
+ * Na sessão do cronograma: a meta de hoje, na cor da área, sempre à vista (reforma de 14/10/2026).
+ * O plano é calculado uma vez, ao abrir a sessão; depois, cada resposta da sessão soma uma
+ * (a sessão do cronograma só tem questões ainda não feitas), sem recalcular o plano a cada clique.
+ */
+function FaixaCronograma({ respondidasNaSessao }: { respondidasNaSessao: number }) {
+  const { premium } = usarPremium()
+  const { indice } = usarIndice()
+  const [base, definirBase] = useState<{ meta: number; feitas: number; nome: string | null; slug: string | null } | null>(null)
+  const naAbertura = useRef(respondidasNaSessao)
+  useEffect(() => {
+    if (!premium || !indice) return
+    let vivo = true
+    obterPlano().then((plano) => {
+      if (!vivo || !plano) return
+      const c = calcularPlano(indice, lerRespondidas(), plano)
+      if (!c.metaDiaria || c.naRetaFinal) return
+      const principal = c.hoje?.itens.find((i) => !i.mistura) ?? c.hoje?.itens[0]
+      definirBase({ meta: c.metaDiaria, feitas: c.feitasHoje, nome: principal?.nome ?? null, slug: principal?.slug ?? c.dias[0]?.itens[0]?.slug ?? null })
+    }).catch(() => {})
+    return () => { vivo = false }
+  }, [premium, indice])
+  if (!base) return null
+  const feitasHoje = base.feitas + Math.max(0, respondidasNaSessao - naAbertura.current)
+  const feitas = Math.min(feitasHoje, base.meta)
+  const feita = feitasHoje >= base.meta
+  return (
+    <div className="conteudo faixa-cronograma" style={{ ['--cor-area' as string]: corDaArea(base.slug) }}>
+      <span className="faixa-cronograma__texto"><i aria-hidden="true" />{feita ? 'Meta de hoje feita' : `Cronograma de hoje${base.nome ? ` · ${base.nome}` : ''}`}</span>
+      <b className="numerico">{feitasHoje}/{base.meta}</b>
+      <span className="faixa-cronograma__barra" role="progressbar" aria-valuemin={0} aria-valuemax={base.meta} aria-valuenow={feitas} aria-label="Meta de hoje do cronograma"><span style={{ width: `${(feitas / base.meta) * 100}%` }} /></span>
+    </div>
+  )
+}
 
 export function Sessao() {
   const { indice } = usarIndice()
@@ -291,6 +330,7 @@ export function Sessao() {
         <Icone nome="direita" tamanho={22} />
       </button>
       <div className="barra-sessao nao-imprime">
+        {sessao.origem === 'cronograma' && !simulado && <FaixaCronograma respondidasNaSessao={respondidas} />}
         <div className="conteudo barra-sessao__interno">
           <span className="barra-sessao__texto barra-sessao__texto--pixel">
             {respondidas} de {total}
