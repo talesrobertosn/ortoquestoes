@@ -259,9 +259,14 @@
 .fc-carta {
   --b1: #d8dde6; --b2: #6b7380; --b3: #3a404c; --brilho: rgba(200, 210, 230, 0);
   position: relative; width: min(620px, 100%); max-height: 100%; display: flex; min-height: 0;
-  animation: fc-compra .56s cubic-bezier(.22, 1, .36, 1) both;
-  transition: transform 360ms cubic-bezier(.22, 1, .36, 1), filter 360ms ease-out;
+  transition: transform 360ms cubic-bezier(.22, 1, .36, 1), translate 360ms cubic-bezier(.22, 1, .36, 1), scale 360ms cubic-bezier(.22, 1, .36, 1), filter 360ms ease-out;
 }
+/* a chegada do baralho fica numa classe que o Cartao põe só no flashcard novo:
+   na base, trocar a classe do giro fazia o navegador repetir a chegada depois de cada virada */
+.fc-carta--chega { animation: fc-compra .56s cubic-bezier(.22, 1, .36, 1) both; }
+/* cópia do flashcard anterior a caminho do descarte (Cartao.tsx, descartar) */
+.fc-carta--descartada { animation: none !important; transition: none !important; }
+.fc-carta--descartada * { animation-play-state: paused !important; }
 /* o flashcard novo desliza do baralho e assenta, sem quique */
 @keyframes fc-compra { from { transform: translate(-22%, 5%) rotate(-7deg) scale(.82); opacity: 0; } 45% { opacity: 1; } }
 .fc-carta--rara { --b1: #c8e4ff; --b2: #3a78c8; --b3: #163a6a; --brilho: rgba(95, 168, 255, .45); }
@@ -272,7 +277,8 @@
 .fc-carta--sai { transform: rotateY(90deg) scale(.96) translateY(-6px); transition: transform 230ms cubic-bezier(.55, 0, .8, .35); }
 .fc-carta--entra { animation: fc-entra-face 340ms cubic-bezier(.16, .84, .3, 1) both; }
 @keyframes fc-entra-face { from { transform: rotateY(-90deg) scale(.96) translateY(-6px); } }
-.fc-carta--ataca { transform: translateY(-12px) scale(1.02); filter: drop-shadow(0 0 18px var(--brilho)) brightness(1.08); }
+/* o flashcard se ergue no ataque por translate/scale, para não anular o giro (que usa transform) */
+.fc-carta--ataca { translate: 0 -12px; scale: 1.02; filter: drop-shadow(0 0 18px var(--brilho)) brightness(1.08); }
 .fc-carta__borda {
   flex: 1; min-width: 0; min-height: 0; display: flex; padding: 9px; border-radius: 22px;
   background: linear-gradient(150deg, #fff 0%, var(--b1) 10%, var(--b2) 45%, var(--b1) 70%, var(--b3) 100%);

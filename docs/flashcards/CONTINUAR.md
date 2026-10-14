@@ -26,6 +26,8 @@ Leia nesta ordem:
   - O flashcard desliza até a posição nova em vez de pular (`efeitos/deslizar.ts`, `useDeslizar`, usado no `Cartao` e no herói e botão da Batalha no celular).
   - No celular, o flashcard fica preso pelo topo, e o verso do Estudo não troca mais as linhas do grid (o painel caía cerca de 140 px).
   - Giro, compra, golpes, tremores, bote do adversário (parte da pose de preparo) e botão principal com curvas suaves; alternativas e botões entram em cascata.
+  - Giro duplo corrigido: a chegada do baralho agora é a classe `fc-carta--chega`, só no flashcard novo (antes repetia depois de cada virada). Na Batalha, a chave do flashcard não muda ao responder (`chaveDaMesa`), e o giro cancela o pedido anterior.
+  - Ao seguir, uma cópia do flashcard anterior desliza para o descarte enquanto o novo chega (`descartar` em `Cartao.tsx`).
   - Tudo desligado em "Reduzir movimento". Fim do bloco "Movimento suave" em `Flashcards.css`.
 - **Na base e publicado:**
   - #228 e #229: golpes em pixel art; os superpoderes Envenenado, Em chamas, Grude e Tremor; o humor da Biblioteca com gato e velas; o Jardim Suspenso.
