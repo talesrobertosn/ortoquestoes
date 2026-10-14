@@ -1,6 +1,6 @@
 # Interface e acessibilidade: ideias 62 e 65
 
-14/10/2026. Bloco em PR draft para revisão, sem merge.
+14/10/2026. Bloco no [PR #250](https://github.com/talesrobertosn/ortoquestoes/pull/250), em rascunho para revisão, sem merge.
 
 Nos Ajustes, **Leitura e conforto** oferece sem tremor da tela, alto contraste e texto maior. As preferências usam os ajustes existentes do jogo, com campos opcionais, mantendo som, volume, velocidade e compatibilidade com os ajustes antigos. Batalha, Biblioteca e Entrada recebem a aparência comum. Não há migração de contas nem alteração em progresso salvo.
 

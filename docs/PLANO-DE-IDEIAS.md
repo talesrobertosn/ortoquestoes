@@ -112,7 +112,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 64. [x] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
 65. [x] Acessibilidade: modo sem tremor, alto contraste e texto maior.
 
-**Bloco de interface (14/10):** 62 e 65 concluídos em PR draft a revisar: sem tremor, contraste, leitura ampliada e cortina que respeita movimento reduzido. [Detalhes e capturas](flashcards/ACESSIBILIDADE-14-10.md).
+**Bloco de interface (14/10):** 62 e 65 concluídos no PR #250 draft a revisar: sem tremor, contraste, leitura ampliada e cortina que respeita movimento reduzido. [Detalhes e capturas](flashcards/ACESSIBILIDADE-14-10.md).
 
 ## H. Otimização
 
