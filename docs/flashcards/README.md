@@ -1,5 +1,7 @@
 # Flashcards do Orto Questões: Torneio de Flashcards
 
+**Estado de 14/10, continuidade:** os PRs #247–#250 foram mesclados e publicados. Herói atual: chibi; arte nativa por scripts. O beta é público, com as regras de acesso existentes. Leia primeiro [CONTINUAR.md](CONTINUAR.md) e [PENDENCIAS-14-10.md](PENDENCIAS-14-10.md). Referências a herói adulto e travas de publicação abaixo são registros históricos.
+
 **Último ajuste visual e de áudio (13/10/2026):** [Polimento do beta](POLIMENTO-AUDIO-OPINIAO.md): opinião redesenhada, controle vertical com início em 20%, camadas do cenário alinhadas, capa integrada e proposta documentada de herói adulto.
 
 **Resumo de 14/10/2026:** [RESUMO-14-10.md](RESUMO-14-10.md): estado atual, o que falta, conquistas, aviso do topo, conta grátis com 10 flashcards na Biblioteca e uma vida na Cripta a cada 24 horas (parte 19 do SQL) e herói adulto.

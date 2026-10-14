@@ -15,6 +15,9 @@ import { HUMOR, NomeEmChamas, SERIE_VAZIA, avancarSerie, humorDe, somDoHumor, ty
 import { ContextoConta } from '../../conta/ContextoConta'
 import { recurso } from '../../config'
 
+import { diarioBiblioteca, type PassoBiblioteca } from '../biblioteca/sessao'
+import { DiarioBiblioteca, EstanteDaSessao } from './DiarioBiblioteca'
+
 type Avaliacao = 'errei' | 'hesitei' | 'sabia'
 
 interface Categoria {
@@ -47,7 +50,7 @@ const TIPOS = ['Na prova', 'Relâmpago', 'Imagem', 'Anatomia'] as const
  * o flashcard e pergunta como foi. A fila de revisão dos flashcards é
  * independente da fila das questões.
  */
-export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor }: { primeiro: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoHumor?: (h: Humor | null) => void }) {
+export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: { primeiro: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoHumor?: (h: Humor | null) => void; aoTranquilo?: (v: boolean) => void }) {
   const cartas = todasAsCartas()
   const [registros, definirRegistros] = useState(() => ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}))
   const [sessao, definirSessao] = useState<{ titulo: string; ids: string[] } | null>(null)
@@ -131,7 +134,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor }: { primeiro: s
   }, [primeiro, cartas])
 
   if (sessao && sessao.ids.length) {
-    return <Sessao titulo={sessao.titulo} ids={sessao.ids} aoAmpliar={aoAmpliar} reduzido={reduzido} aoHumor={aoHumor}
+    return <Sessao titulo={sessao.titulo} ids={sessao.ids} aoAmpliar={aoAmpliar} reduzido={reduzido} aoHumor={aoHumor} aoTranquilo={aoTranquilo}
       aoTerminar={() => { definirRegistros(ler(CHAVE_REGISTROS, {})); definirSessao(null) }} />
   }
 
@@ -182,7 +185,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor }: { primeiro: s
 }
 
 /** Sessão de estudo: vira o flashcard e diz como foi. */
-function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { titulo: string; ids: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoTerminar: () => void; aoHumor?: (h: Humor | null) => void }) {
+function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranquilo }: { titulo: string; ids: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoTerminar: () => void; aoHumor?: (h: Humor | null) => void; aoTranquilo?: (v: boolean) => void }) {
   const porId = useMemo(() => new Map(todasAsCartas().map((c) => [c.id, c])), [])
   const fila = useMemo(() => ids.filter((id) => porId.has(id)), [ids, porId])
   const [pos, definirPos] = useState(0)
@@ -193,9 +196,14 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
   // Humor da Biblioteca: a sequência de acertos, erros e hesitações muda o clima da sala
   const [serie, definirSerie] = useState(SERIE_VAZIA)
   const [melhor, definirMelhor] = useState(0)
+  const [passos, definirPassos] = useState<PassoBiblioteca[]>([])
+  const [tranquilo, definirTranquilo] = useState(false)
+  const ultimoAvaliado = useRef(-1)
+  const diario = useMemo(() => diarioBiblioteca(passos), [passos])
+  useEffect(() => { aoTranquilo?.(tranquilo && !acabou); return () => aoTranquilo?.(false) }, [tranquilo, acabou, aoTranquilo])
   const humor = useMemo(() => humorDe(serie), [serie])
   const humorAntes = useRef(humor)
-  useEffect(() => { somDoHumor(humorAntes.current, humor); humorAntes.current = humor; aoHumor?.(acabou ? null : humor) }, [humor, acabou, aoHumor])
+  useEffect(() => { if (!tranquilo) somDoHumor(humorAntes.current, humor); humorAntes.current = humor; aoHumor?.(acabou ? null : humor) }, [humor, acabou, aoHumor, tranquilo])
   useEffect(() => () => aoHumor?.(null), [aoHumor])
   const conta = useContext(ContextoConta)
   const meta = conta?.sessao?.user.user_metadata
@@ -244,21 +252,26 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
   }, [virada, acabou, escolha, virar, ordem, carta])
 
   const avaliar = useCallback((a: Avaliacao) => {
-    if (!virada || acabou) return
+    if (!virada || acabou || ultimoAvaliado.current === pos) return
+    ultimoAvaliado.current = pos
     // um evento por flashcard desta sessão: clique duplo ou tecla repetida não contam de novo
     registrarEstudo({ chave: `${sessao}:${pos}:${carta.id}`, id: carta.id, modo: 'estudo', objetiva: escolha === null ? null : ordem[escolha] === carta.certa, avaliacao: a })
     tocar(a === 'sabia' ? 'cura' : a === 'hesitei' ? 'confirmar' : 'erro')
     definirFeitos((f) => ({ ...f, [a]: f[a] + 1 }))
-    definirSerie((v) => { const n = avancarSerie(v, a); definirMelhor((m) => Math.max(m, n.acertos)); return n })
+    const novaSerie = avancarSerie(serie, a)
+    definirSerie(novaSerie)
+    definirMelhor(m => Math.max(m, novaSerie.acertos))
+    definirPassos(v => [...v, { area: carta.area || 'Geral', avaliacao: a, clima: humorDe(novaSerie).tipo }])
     definirVirada(false)
     definirEscolha(null)
     definirPos((p) => p + 1)
-  }, [carta, virada, acabou, sessao, pos, escolha, ordem])
+  }, [carta, virada, acabou, sessao, pos, escolha, ordem, serie])
 
   useEffect(() => {
     const aoTeclar = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return
       const alvo = e.target as HTMLElement
+      if (alvo?.closest('input, textarea, select, [contenteditable="true"]') || document.querySelector('.fc-veu[aria-modal="true"]')?.getClientRects().length) return
       if (e.key === ' ' && alvo?.tagName !== 'BUTTON' && alvo?.tagName !== 'A') { e.preventDefault(); virar() }
       if (!virada && mostrarAlternativas && /^[1-4]$/.test(e.key) && +e.key <= ordem.length) { responder(+e.key - 1); return }
       if (virada && e.key === '1') avaliar('errei')
@@ -284,6 +297,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
             <div className="errei"><dt>Errei</dt><dd>{feitos.errei}</dd></div>
           </dl>
           {melhor >= 3 && <p className="fc-estudo__melhor">Melhor sequência: <b>{melhor}</b> {melhor >= HUMOR.gloria ? '· Glória da Biblioteca' : melhor >= HUMOR.chama[2] ? '· chama arcana' : melhor >= HUMOR.chama[1] ? '· fogo azul' : '· em chamas'}</p>}
+          <DiarioBiblioteca diario={diario} />
           <p className="fc-janela__nota">Os que você errou voltam hoje; os que hesitou, em 3 dias; os que sabia, em 10.</p>
           <div className="fc-janela__botoes">
             <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_sessao')}>Enviar opinião</a>
@@ -317,7 +331,11 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
           {Array.from({ length: 10 }, (_, i) => <i key={i} className={i < feitos.sabia % 10 || (feitos.sabia >= 10 && feitos.sabia % 10 === 0) ? 'acesa' : ''} style={{ backgroundImage: `url(${recurso('flashcards/vfx/vela.png')})`, animationDelay: `${-i * 110}ms` }} />)}
           {feitos.sabia >= 10 && <b>×{Math.floor(feitos.sabia / 10)}</b>}
         </div>
-        <button type="button" className="fc-interruptor" role="switch" aria-checked={comAlternativas}
+        <EstanteDaSessao livros={feitos.sabia} reduzido={reduzido} />
+        <button type="button" className="fc-interruptor" role="switch" aria-checked={tranquilo} aria-label="Leitura tranquila" title="Leitura tranquila: chuva calma" onClick={() => definirTranquilo(v => !v)}>
+          <span className="fc-interruptor__trilho" aria-hidden="true"><i /></span><span>Leitura tranquila</span>
+        </button>
+        <button type="button" className="fc-interruptor" role="switch" aria-checked={comAlternativas} aria-label="Alternativas" title="Mostrar alternativas"
           onClick={() => { const v = !comAlternativas; definirComAlternativas(v); gravar(CHAVE_ALTERNATIVAS, v); tocar('selecao') }}>
           <span className="fc-interruptor__trilho" aria-hidden="true"><i /></span>
           <span>Alternativas</span>
@@ -388,7 +406,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor }: { tit
             <button type="button" className="fc-botao-pequeno fc-estudo__so-virar" onClick={() => { tocar('confirmar'); virar() }}>Virar sem responder · espaço</button>
           </>
         ) : (
-          <button type="button" className="fc-principal fc-principal--largo pronto" onClick={() => { tocar('confirmar'); virar() }}><span>Virar o flashcard</span><small>espaço</small></button>
+          <button type="button" className="fc-principal fc-principal--largo pronto" onClick={() => { tocar('confirmar'); virar() }}><span className="fc-principal__texto"><span>Virar o flashcard</span><small>espaço</small></span></button>
         )}
       </div>
     </div>

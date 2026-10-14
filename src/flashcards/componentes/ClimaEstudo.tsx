@@ -53,7 +53,7 @@ export const tomDaChama = (h: Humor) => (h.tipo === 'gloria' ? 'ouro' : TOM_CHAM
  * cintilas num canvas de pixels (só anima enquanto o humor pede); névoa,
  * escuridão, raios de luz e arco-íris em CSS.
  */
-export function ClimaEstudo({ humor, reduzido }: { humor: Humor; reduzido: boolean }) {
+export function ClimaEstudo({ humor, reduzido, tranquilo = false }: { humor: Humor; reduzido: boolean; tranquilo?: boolean }) {
   const ref = useRef<HTMLCanvasElement>(null)
   const raiz = useRef<HTMLDivElement>(null)
   const animado = !reduzido && (humor.tipo === 'chuva' || humor.tipo === 'tempestade' || humor.tipo === 'gloria')
@@ -137,7 +137,7 @@ export function ClimaEstudo({ humor, reduzido }: { humor: Humor; reduzido: boole
   }, [animado, humor.tipo, humor.nivel])
 
   return (
-    <div ref={raiz} className={`fc-clima fc-clima--${humor.tipo} fc-clima--nivel-${humor.nivel}`} aria-hidden="true">
+    <div ref={raiz} className={`fc-clima fc-clima--${humor.tipo} fc-clima--nivel-${humor.nivel}${tranquilo ? ' fc-clima--tranquilo' : ''}`} aria-hidden="true">
       <span className="fc-clima__veu" />
       {humor.tipo === 'gloria' && <span className="fc-clima__raios" />}
       {humor.tipo === 'arcoiris' && <span className="fc-clima__arcoiris" />}
