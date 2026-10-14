@@ -1258,8 +1258,11 @@
 .fc-intencao__gema, .fc-vida--baixa .fc-vida__trilho i, .fc-gema::after, .fc-encaixe--usavel::after, .fc-carta--epica .fc-carta__gema::after, .fc-carta--lendaria .fc-carta__gema::after, .fc-principal.pronto::after, .fc-principal.seguir::after { will-change: auto !important; }
 .fc-cena__nevoa { display: none; }
 .fc-arena--perigo .fc-cena__nevoa { display: block; }
-/* com o jogo aberto, o site por trás não precisa ser desenhado */
-body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-modal-aberto header.cabecalho, body.fc-modal-aberto footer { visibility: hidden; }
+/* no celular o jogo cobre a tela: o site por trás não precisa ser desenhado; no computador ele fica visível, translúcido */
+@media (max-width: 899px), (max-height: 559px) {
+  body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-modal-aberto header.cabecalho, body.fc-modal-aberto footer { visibility: hidden; }
+}
+body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 @media (max-width: 640px) { .fc-modal-veu { background: transparent !important; } .fc-modal { background-color: #07050a; } }
 .fc-cena span.fc-cena__nevoa { display: none; }
 .fc-arena--perigo .fc-cena span.fc-cena__nevoa { display: block; }
@@ -1871,8 +1874,7 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
  .fc-entrada .fc-extra {flex:1 1 130px;}
 }
 
-/* ============================================================
-   Rota de estudo (13/10/2026): poderes Mapa do especialista e Desvio de área.
+/* =====================================================   Rota de estudo (13/10/2026): poderes Mapa do especialista e Desvio de área.
    Janela para escolher a área (e subtemas, no Mapa) dos próximos 10 flashcards.
    ============================================================ */
 .fc-rota h2 { display: flex; align-items: center; gap: 10px; }
@@ -2258,3 +2260,23 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 .fc-velas b { margin-left: 4px; font: 700 12px var(--fc-ui); color: #ffe6a8; }
 @media (max-width: 640px) and (orientation: portrait), (max-height: 500px) and (orientation: landscape) { .fc-gato { display: none; } .fc-velas { display: none; } }
 @media (prefers-reduced-motion: reduce) { .fc-gato, .fc-velas i.acesa { animation: none; } }
+/* Computador: o pop-up do jogo deixa o site translúcido atrás (pedido do Tales, 13/10/2026).
+   Sem desfoque ao vivo (pesava demais, ver acima); o !important vence o véu escuro geral. */
+@media (min-width: 900px) and (min-height: 560px) {
+  .fc-modal-veu { background: radial-gradient(ellipse at 50% 45%, rgba(14, 10, 18, .42), rgba(4, 3, 6, .66)) !important; cursor: pointer; }
+  .fc-modal { width: min(80vw, 1440px); height: min(84dvh, 960px); cursor: auto; }
+}
+/* Celular em pé: com o botão Menu são três botões redondos ao lado das abas; tudo um pouco menor para não sobrepor. */
+@media (max-width: 520px) and (orientation: portrait) {
+  .fc-modal .fc-abas button { padding: 4px 8px; font-size: 12.5px !important; letter-spacing: .02em; }
+  .fc-modal .fc-topo__acoes { gap: 4px; }
+  .fc-modal .fc-topo-botao { min-width: 36px; min-height: 36px; }
+}
+@media (max-width: 360px) and (orientation: portrait) { .fc-modal .fc-abas button { padding: 4px 6px; font-size: 11.5px !important; } }
+@media (max-width: 340px) and (orientation: portrait) {
+  .fc-modal .fc-abas button { padding: 3px 5px; font-size: 11px !important; }
+  .fc-modal .fc-topo-botao { min-width: 32px; min-height: 32px; }
+  .fc-modal .fc-topo__acoes .fc-topo-botao[title="Ajustes"] { display: none; } /* telas de 320 px: o volume continua no botão de som */
+}
+/* celular em pé: o som e o X ficam no canto de cima; a entrada desce o título para não ficar embaixo deles */
+@media (max-width: 640px) and (orientation: portrait) { .fc-entrada__cabeca { padding-top: 34px; } }

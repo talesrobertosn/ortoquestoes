@@ -13,8 +13,9 @@ export interface Rota {
   consulta: URLSearchParams
 }
 
-function lerHash(): Rota {
-  const bruto = window.location.hash.replace(/^#/, '') || '/'
+/** Lê um caminho como "/flashcards?x=1" no mesmo formato da rota atual. */
+export function rotaDe(texto: string): Rota {
+  const bruto = texto.replace(/^#/, '') || '/'
   const [caminho, consulta = ''] = bruto.split('?')
   const limpo = caminho.replace(/\/+$/, '') || '/'
   return {
@@ -22,6 +23,10 @@ function lerHash(): Rota {
     segmentos: limpo.split('/').filter(Boolean).map(decodeURIComponent),
     consulta: new URLSearchParams(consulta),
   }
+}
+
+function lerHash(): Rota {
+  return rotaDe(window.location.hash)
 }
 
 export function usarRota(): Rota {

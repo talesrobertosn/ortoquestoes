@@ -1,11 +1,14 @@
-import { lazy, Suspense, useEffect, type ReactNode } from 'react'
+import { lembrarFundo, rotaDoFundo } from './flashcards/fundo'
+import { lazy, Suspense, useEffect, useRef, type ReactNode } from 'react'
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
-import { usarRota } from './util/rotas'
+import { rotaDe, usarRota, type Rota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
-import { FLASHCARDS_LIBERADO, SITE } from './config'
+import { EXIGIR_CONTA_PARA_QUESTOES, FLASHCARDS_LIBERADO, SITE } from './config'
+import { usarConta } from './conta/ContextoConta'
+import { contasDisponiveis } from './conta/supabase'
 import { usarLeitura } from './estado/preferencias'
 import { ErroDePagina } from './componentes/ErroDePagina'
 import { ExigeConta } from './componentes/ExigeConta'
@@ -90,23 +93,9 @@ const TITULOS: Record<string, string> = {
 /** Central, desempenho e cronograma dos flashcards são páginas do site; o resto é o jogo em tela cheia. */
 const PAGINAS_DO_SITE_FLASHCARDS = [undefined, 'desempenho', 'cronograma']
 
-export function App() {
-  const rota = usarRota()
+/** A página de uma rota (o App desenha a do site e, por cima, a do jogo). */
+function paginaDaRota(rota: Rota): ReactNode {
   const [primeiro, segundo] = rota.segmentos
-  const { densidade, fonte } = usarLeitura()
-
-  useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [rota.caminho])
-  // Emblemas "Fila zerada": observa as respostas e marca o dia em que a revisão zerou.
-  useEffect(() => vigiarFilaZerada(), [])
-
-  useEffect(() => {
-    document.title =
-      TITULOS[rota.caminho] ??
-      (primeiro === 'questao' && segundo
-        ? `Questão ${segundo} | Orto Questões`
-        : `${SITE.nome}`)
-  }, [rota.caminho, primeiro, segundo])
-
   let pagina: ReactNode
   switch (primeiro) {
     case undefined:
@@ -210,20 +199,65 @@ export function App() {
   // Páginas que mostram questões: por enquanto, só com conta (ver config.ts).
   // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
   // públicas do Google levam; responder pede a conta ali mesmo.
-  const jogo = primeiro === 'flashcards' && !PAGINAS_DO_SITE_FLASHCARDS.includes(segundo)
-  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || jogo) {
+  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || ehJogo(rota)) {
     pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
   }
 
-  const estreita = ['sessao', 'questao'].includes(primeiro ?? '')
+  return pagina
+}
+
+/** Rotas do jogo dos flashcards: abrem como pop-up por cima do site. */
+function ehJogo(rota: Rota) {
+  return rota.segmentos[0] === 'flashcards' && !PAGINAS_DO_SITE_FLASHCARDS.includes(rota.segmentos[1])
+}
+
+export function App() {
+  const rota = usarRota()
+  const [primeiro, segundo] = rota.segmentos
+  const { densidade, fonte } = usarLeitura()
+
+  // Emblemas "Fila zerada": observa as respostas e marca o dia em que a revisão zerou.
+  useEffect(() => vigiarFilaZerada(), [])
+
+  useEffect(() => {
+    document.title =
+      TITULOS[rota.caminho] ??
+      (primeiro === 'questao' && segundo
+        ? `Questão ${segundo} | Orto Questões`
+        : `${SITE.nome}`)
+  }, [rota.caminho, primeiro, segundo])
+
+  const { sessao } = usarConta()
+  const jogo = ehJogo(rota)
+  // sem conta, o convite para criar a conta aparece na própria página, não num pop-up por baixo do site
+  const barrado = jogo && EXIGIR_CONTA_PARA_QUESTOES && contasDisponiveis && !sessao
+  const popup = jogo && !barrado
+  // fora do jogo, a página atual vira o fundo do pop-up; dentro dele, o fundo é a última página do site
+  const textoRota = rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')
+  if (!jogo) lembrarFundo(textoRota)
+  const fundo = popup ? rotaDe(rotaDoFundo()) : rota
+  const pagina = paginaDaRota(popup && ehJogo(fundo) ? rotaDe('/flashcards') : fundo)
+  const sobreposto = popup ? paginaDaRota(rota) : null
+
+  // Abrir o pop-up e fechá-lo de volta para a mesma página não mexe na rolagem; ir para outra página começa do topo.
+  const jogoAntes = useRef(false)
+  const fundoAoAbrir = useRef<string | null>(null)
+  useEffect(() => {
+    if (popup && !jogoAntes.current) fundoAoAbrir.current = rotaDoFundo()
+    if (!popup && (!jogoAntes.current || textoRota !== fundoAoAbrir.current)) window.scrollTo({ top: 0, behavior: 'auto' })
+    jogoAntes.current = popup
+  }, [textoRota, popup])
+  const [primeiroFundo] = fundo.segmentos
+
+  const estreita = ['sessao', 'questao'].includes(primeiroFundo ?? '')
 
   return (
     <div className={`pagina pagina--${densidade}`} style={{ fontSize: `${fonte}%` }}>
       <a className="pular-para-conteudo" href="#conteudo-principal">
         Pular para o conteúdo
       </a>
-      <Cabecalho caminho={rota.caminho} />
-      {primeiro !== 'sessao' && !jogo && <AvisoSite />}
+      <Cabecalho caminho={fundo.caminho} />
+      {primeiroFundo !== 'sessao' && <AvisoSite />}
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           <ErroDePagina caminho={rota.caminho}>
@@ -233,9 +267,10 @@ export function App() {
           </ErroDePagina>
         </div>
       </main>
+      {sobreposto && <ErroDePagina caminho={rota.caminho}><Suspense fallback={<div className="espera-jogo"><EsperaPixel rotulo="Abrindo o jogo" /></div>}>{sobreposto}</Suspense></ErroDePagina>}
       {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
-      {!['sessao', 'questao', 'admin'].includes(primeiro ?? '') && !jogo && <Rodape comInstagram={!primeiro || primeiro === 'projeto' || primeiro === 'sobre'} />}
+      {!['sessao', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={!primeiroFundo || primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
     </div>

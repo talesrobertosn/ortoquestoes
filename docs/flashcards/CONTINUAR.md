@@ -4,9 +4,40 @@
 
 **Orientação mais recente:** [Jornada única](JORNADA-UNICA.md), 13/10/2026: ranking sem níveis, progressão por turma e histórico pessoal, entrada com Cripta/Biblioteca e cronograma dentro de Flashcards. As seções antigas abaixo são histórico quando conflitarem.
 
-Atualizado em 13/10/2026, 21h. Tudo o que foi feito está mesclado na base e publicado; não há PR aberto.
+Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
-## PAROU AQUI (14/10/2026, madrugada): leia isto primeiro
+## PAROU AQUI (14/10/2026, tarde): leia isto primeiro
+
+### Para o ChatGPT, o Codex ou outro agente continuar
+
+Leia nesta ordem:
+1. `AGENTS.md`, com as regras do projeto.
+2. Este arquivo.
+3. [../PLANO-DE-IDEIAS.md](../PLANO-DE-IDEIAS.md): as 84 ideias com checklist. Marque `[x]` no que fizer.
+4. [MONSTROS-NOVOS.md](MONSTROS-NOVOS.md): o próximo trabalho grande. Lá estão as referências de monstros que o Tales mandou, descritas, o estilo de cada família, o que já tem arte e a receita para fazer um monstro.
+
+**Mensagem pronta para colar no agente:**
+
+> Repositório `talesrobertosn/ortoquestoes`, base `claude/pdfs-questoes-tp64dr` (o merge nela publica o site). Leia `AGENTS.md`, `docs/flashcards/CONTINUAR.md`, `docs/PLANO-DE-IDEIAS.md` e `docs/flashcards/MONSTROS-NOVOS.md`. Continue pela "Ordem sugerida" de MONSTROS-NOVOS.md: monstros em pixel art feitos por script, nunca imagem baixada ou gerada por IA. Trabalhe numa branch nova a partir da base e abra um PR para ela. Antes do PR, rode `npm test`, `npx tsc --noEmit`, `npm run build` e capturas com Playwright em 1400×860, 390×844 e 844×390. Ao terminar, marque o item no plano e atualize o topo de CONTINUAR.md.
+
+### Estado de agora
+
+- **Na base e publicado:**
+  - #228 e #229: golpes em pixel art; os superpoderes Envenenado, Em chamas, Grude e Tremor; o humor da Biblioteca com gato e velas; o Jardim Suspenso.
+  - #235: top 3 do ranking com largura cheia.
+- **PR #237**, no branch `claude/eloquent-brahmagupta-u85fiy`:
+  - o jogo abre como pop-up sobre o site;
+  - botão Menu na partida;
+  - correção do topo no celular;
+  - a escolha "entrar com ou sem som" agora é perguntada uma vez só por aparelho. Fica guardada em `flashcards:som-escolhido`, nas chaves globais de `estado/armazenamento.ts`.
+- **O Tales confirmou:** o som funciona no celular e a parte 19 do SQL já foi colada no Supabase.
+- **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). Depois, pela ordem do plano:
+  - sons próprios dos golpes novos (ideia 17);
+  - revisão dos botões (ideia 61);
+  - cenários pintados que faltam (ideia 51).
+
+## Antes (14/10/2026, madrugada)
+
 
 **Lista de ideias com checklist (o plano):** [../PLANO-DE-IDEIAS.md](../PLANO-DE-IDEIAS.md). Marque o que fizer. Resumo da madrugada para o Tales: [RELATORIO-MANHA-14-10.md](RELATORIO-MANHA-14-10.md).
 
@@ -192,6 +223,9 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
   temática do jogo foi para `#/flashcards/entrada`; `cripta`, `torre` e `biblioteca` continuam iguais.
   `#/flashcards/desempenho` e `#/flashcards/cronograma` são páginas do site. `#/flashcards/ranking`
   leva a `#/ranking?aba=cripta`. Só as rotas do jogo exigem conta (`PAGINAS_DO_SITE_FLASHCARDS` em `App.tsx`).
+- **Pop-up (pedido do Tales).** As rotas do jogo abrem por cima da última página do site
+  (`src/flashcards/fundo.ts` + `paginaDaRota` em `App.tsx`). No computador o site fica translúcido
+  atrás; X, Esc, clique fora e "Voltar ao site" voltam para ela; o botão "Menu" leva à entrada.
 - **Nome (regra do Tales).** Fora do jogo é sempre "Flashcards" ou "Torneio de Flashcards" (menu,
   capa, central, ranking, planos, títulos de aba). "Cripta" só dentro do jogo. O ranking do site é
   `#/ranking?aba=flashcards` (`aba=cripta` continua funcionando por link antigo).
