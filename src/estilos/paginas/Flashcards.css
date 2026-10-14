@@ -1867,6 +1867,12 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 .fc-entrada .fc-modo { background:linear-gradient(135deg,#f8f0daef,#e6dbc3ed);border:2px solid #a88651;box-shadow:inset 0 0 0 3px #fff4d8,0 12px 28px #0c1e1744; border-radius:18px; color:#304a36;padding:22px; gap:12px; }
 .fc-entrada .fc-modo strong { font:700 clamp(20px,2vw,27px)/1.25 var(--fc-titulo); color:#314b37; text-shadow:none; }
 .fc-entrada .fc-modo small,.fc-entrada .fc-modo__dados { color:#52604b;font-size:17px;line-height:1.4; }
+/* Começar do zero, embaixo do cartão da Cripta (15/10/2026) */
+.fc-modo-coluna { display:grid; gap:10px; align-content:start; min-width:0; }
+.fc-modo-coluna > .fc-modo { height:auto; }
+.fc-entrada .fc-modos .fc-recomecar { justify-self:center; display:inline-flex; align-items:center; gap:8px; padding:9px 18px; border-radius:999px; border:1.5px solid #a88651; background:#f8f0dae6; color:#5b3b14 !important; opacity:1; font:700 15px var(--fc-ui); cursor:pointer; box-shadow:0 3px 10px #0c1e1733; touch-action:manipulation; }
+.fc-entrada .fc-modos .fc-recomecar:hover { background:#fff7e2; }
+.fc-entrada .fc-modos .fc-recomecar:focus-visible { outline:3px solid #47765c; outline-offset:2px; }
 .fc-entrada .fc-modo__acao { background:#315e47; color:#fff2cc; border:1px solid #264631; padding:10px 16px;border-radius:9px; }
 .fc-entrada .fc-extra { background:#213e32e8;border-color:#9e996d77; }
 .fc-biblioteca__cabeca { background:linear-gradient(135deg,#f3eddae8,#e0e8d4e8)!important;color:#304e38; padding:24px!important; }
