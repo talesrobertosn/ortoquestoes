@@ -104,7 +104,7 @@ function pintarClareira(c: Ctx, W: number, H: number) {
   for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
     const d = ((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2
     // degraus de sombra lisos (sem pontilhado: no celular o xadrez ficava gritante)
-    if (d < 1.15) px(c, x, y, '#0c1a10', Math.round(4 * 0.22 * Math.max(0, 1.15 - d) ** 0.7 * 4) / 16)
+    if (d < 1.15 && y > cy - ry * 0.1) px(c, x, y, '#0c1a10', Math.round(4 * 0.22 * Math.max(0, 1.15 - d) ** 0.7 * 4) / 16)
   }
   // raízes: entram pelas laterais e passam por baixo do anel (pintadas antes das pedras)
   const raiz = (x0: number, y0: number, ang: number, comp: number, w0: number, s: number) => {
@@ -127,17 +127,18 @@ function pintarClareira(c: Ctx, W: number, H: number) {
       if (r > 1.2 && i % 2 === 0) px(c, x, y + r + 1, '#06100a', 0.5)
     }
   }
-  raiz(-2, H * 0.3, 0.35, W * 0.24, 3.2, 3)
-  raiz(-2, H * 0.78, -0.25, W * 0.2, 2.6, 5)
-  raiz(W + 2, H * 0.36, Math.PI - 0.3, W * 0.22, 3, 7)
-  raiz(W + 2, H * 0.72, Math.PI + 0.2, W * 0.18, 2.4, 9)
+  // só raízes baixas, no chão da frente (as de cima pareciam soltas no ar)
+  raiz(-2, H * 0.8, -0.2, W * 0.2, 2.6, 5)
+  raiz(W + 2, H * 0.76, Math.PI + 0.18, W * 0.18, 2.4, 9)
   // pedras do anel: tamanhos e intervalos irregulares, musgo no topo, contorno e sombra de contato
   const passo = 0.13
   let i = 0
   for (let a = 0; a < Math.PI * 2; a += passo * (0.75 + ruido(i, 3, 71) * 0.6), i++) {
     if (ruido(i, 1, 73) < 0.12) continue // falha no anel
-    const x0 = cx + Math.cos(a) * rx, y0 = cy + Math.sin(a) * ry
     const perto = Math.sin(a) // > 0: metade da frente (mais perto da câmera, pedras maiores)
+    // só a metade da frente: a de trás ficava acima do horizonte da floresta e parecia flutuar (Tales, 14/10/2026)
+    if (perto < 0.28) continue
+    const x0 = cx + Math.cos(a) * rx, y0 = cy + Math.sin(a) * ry
     const lw = 4 + ruido(i, 5, 75) * 4 + perto * 1.5, lh = 2.6 + ruido(i, 7, 77) * 2.2 + perto * 0.8
     // sombra de contato
     for (let dx = -lw - 1; dx <= lw + 1; dx++) for (let dy = 0; dy <= 2; dy++) if (bayer(x0 + dx, y0 + lh + dy) < 0.5) px(c, x0 + dx, y0 + lh * 0.6 + dy, '#07100a', 0.5)
@@ -155,13 +156,14 @@ function pintarClareira(c: Ctx, W: number, H: number) {
   // tufos de capim e folhas secas em volta do anel
   for (let k = 0; k < W * 1.2; k++) {
     const a = ruido(k, 11, 85) * Math.PI * 2, d = 0.86 + ruido(k, 13, 87) * 0.32
+    if (Math.sin(a) < 0.2) continue // nada solto na metade de trás
     const x = cx + Math.cos(a) * rx * d, y = cy + Math.sin(a) * ry * d
     if (ruido(k, 15, 89) < 0.25) { px(c, x, y, ['#7a4a20', '#9a6428', '#c08a3a'][k % 3]); continue }
     const alt = 1 + Math.floor(ruido(k, 17, 91) * 3)
     for (let h = 0; h < alt; h++) px(c, x + (h === alt - 1 ? (k % 3) - 1 : 0), y - h, MUSGO[Math.min(5, 2 + h + (k % 2))])
   }
   // cogumelos que brilham de leve (dois grupos, perto das raízes)
-  for (const [fx, fy, s] of [[0.1, 0.38, 1], [0.9, 0.66, 2]] as const) {
+  for (const [fx, fy, s] of [[0.12, 0.84, 1], [0.88, 0.8, 2]] as const) {
     for (let k = 0; k < 3; k++) {
       const x = W * fx + (k - 1) * 2.5 + s, y = H * fy + (k % 2)
       px(c, x, y, '#c8d2b8'); px(c, x, y - 1, '#8f9a86')

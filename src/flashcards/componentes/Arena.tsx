@@ -7,7 +7,7 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
 import { carregarAcervo } from '../dados/acervo'
-import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, iniciarCorrida, RANKING_NO_SERVIDOR, registrarAndar, sincronizarProgresso, vincularFlashcard, type LimiteFlashcard } from '../servidor'
+import { autorizarFlashcardCripta, FLASHCARDS_NO_SERVIDOR, iniciarCorrida, RANKING_NO_SERVIDOR, registrarAndar, sincronizarProgresso, vincularFlashcard, type LimiteCripta } from '../servidor'
 import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro } from '../efeitos/palco'
@@ -102,12 +102,15 @@ function partidaSalva(modo: Modo): Partida | null {
   } catch { return null }
 }
 
-/** Partida nova com a corrida aberta no servidor (só vale para o ranking quando ele estiver ligado). */
+/**
+ * Partida nova com a corrida aberta no servidor. A corrida é a "tentativa" da conta grátis
+ * (3 no total, parte 19 do SQL) e vale para o ranking quando ele estiver ligado.
+ */
 function comCorrida(p: Partida): Partida {
-  // o Fácil não abre corrida: não conta para o ranking
-  if (!NIVEIS[nivelDaPartida(p)].ranqueado || !RANKING_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
+  if (!FLASHCARDS_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
   const idCorrida = crypto.randomUUID()
-  void iniciarCorrida(idCorrida, p.modo, nivelDaPartida(p) === 'dificil' ? 'dificil' : 'normal')
+  // o Fácil não conta para o ranking (só abre a corrida da tentativa)
+  if (NIVEIS[nivelDaPartida(p)].ranqueado && RANKING_NO_SERVIDOR) void iniciarCorrida(idCorrida, p.modo, nivelDaPartida(p) === 'dificil' ? 'dificil' : 'normal')
   return { ...p, idCorrida }
 }
 
@@ -215,7 +218,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const [ampliada, definirAmpliada] = useState<{ src: string; legenda: string } | null>(null)
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
   const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
-  const [bloqueio, definirBloqueio] = useState<LimiteFlashcard | null>(null)
+  const [bloqueio, definirBloqueio] = useState<LimiteCripta | null>(null)
+  /** Conta grátis: "tentativa 2 de 3" (vem do servidor na primeira resposta de cada partida). */
+  const [tentativa, definirTentativa] = useState<{ n: number; de: number } | null>(null)
   const [lamina, definirLamina] = useState(0)
   const [ajuda, definirAjuda] = useState<number | null>(null)
   const [tituloChefe, definirTituloChefe] = useState<Inimigo | null>(null)
@@ -793,11 +798,16 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
       validando.current = true
       const chave = chaves.current.get(p.rodada) ?? crypto.randomUUID()
       chaves.current.set(p.rodada, chave)
-      const r = await autorizarFlashcard(p.atual.id, chave)
+      // partida salva antes das tentativas: abre a corrida agora
+      let q = p
+      if (!q.idCorrida && typeof crypto !== 'undefined' && 'randomUUID' in crypto) { q = { ...p, idCorrida: crypto.randomUUID() }; partidaRef.current = q; definirPartida(q) }
+      const r = q.idCorrida ? await autorizarFlashcardCripta(q.atual!.id, chave, q.idCorrida, q.modo) : { permitido: true, ilimitado: true, restantes: null, liberaEm: '' }
       validando.current = false
       if (!r.permitido) { definirBloqueio(r); return }
-      if (p.idCorrida) void vincularFlashcard(chave, p.idCorrida)
-      if (partidaRef.current !== p) return
+      definirTentativa(r.cripta && !r.ilimitado && r.tentativa && r.tentativas ? { n: Math.min(r.tentativa, r.tentativas), de: r.tentativas } : null)
+      // sem a função nova no banco, o flashcard foi autorizado pelo limite antigo: liga à corrida à parte
+      if (!r.cripta && q.idCorrida) void vincularFlashcard(chave, q.idCorrida)
+      if (partidaRef.current !== q) return
     }
     definirMostrado((m) => ({ ...m, marcadas: { escolha: posicao, certa: -1 } }))
     mostradoRef.current = { ...mostradoRef.current, marcadas: { escolha: posicao, certa: -1 } }
@@ -973,6 +983,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                       })}
                     </span>
                     <b>Andar {partida.andar}</b>{ciclo ? ` · ato ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts <span className="fc-bolsa" title={`${partida.ouro} moedas para a Caixeira do Arsenal · ${cristaisAltar} cristais no Altar`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>{cansaco < 1 && <span className="fc-desgaste" title={`Desgaste: as curas rendem ${Math.round(cansaco * 100)}% neste trecho`}>cura {Math.round(cansaco * 100)}%</span>}
+                    {tentativa && <span className="fc-tentativa" title="Conta grátis: 3 tentativas na Cripta. Assinantes jogam sem limite.">Tentativa grátis {tentativa.n}/{tentativa.de}</span>}
                   </span>
                 )}
               </>
@@ -1180,9 +1191,12 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         {bloqueio && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-limite-titulo">
             <div className="fc-janela">
-              <h2 id="fc-limite-titulo">{bloqueio.falha ? 'Não deu para validar' : 'Limite grátis de hoje'}</h2>
-              <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.' : `Você usou os 10 flashcards grátis destas 24 horas${bloqueio.liberaEm ? `; libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`}</p>
+              <h2 id="fc-limite-titulo">{bloqueio.falha ? 'Não deu para validar' : bloqueio.cripta ? 'Suas 3 tentativas grátis acabaram' : 'Limite grátis de hoje'}</h2>
+              <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.'
+                : bloqueio.cripta ? 'A conta grátis testa a Cripta com 3 tentativas. Assinantes jogam sem limite. Na Biblioteca, você continua treinando 10 flashcards grátis a cada 24 horas.'
+                : `Você usou os 10 flashcards grátis destas 24 horas${bloqueio.liberaEm ? `; libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`}</p>
               <div className="fc-janela__botoes">
+                {bloqueio.cripta && !bloqueio.falha && <button type="button" className="fc-botao fc-botao--secundario" onClick={() => { definirBloqueio(null); pular(); definirModo('estudo') }}>Ir para a Biblioteca</button>}
                 <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirBloqueio(null)}>{bloqueio.falha ? 'Tentar de novo' : 'Agora não'}</button>
                 {!bloqueio.falha && <a className="fc-botao" href={href('/assinatura')}>Ver os planos</a>}
               </div>
