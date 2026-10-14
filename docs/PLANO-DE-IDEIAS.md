@@ -82,7 +82,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 48. [ ] Jardim dos curandeiros: estufa de vidro com plantas medicinais.
 49. [ ] Ciclo de dia e noite no andar a céu aberto.
 50. [ ] Animais vivos nos cenários: pássaros, coelhos, peixes pulando no lago e vaga-lumes à noite.
-51. [~] Cenários que faltam pintar: Torre, deserto dos ossos, pântano da necrose, observatório, fortaleza das placas e trono do dragão. O **Salão do Trono** ficou pronto em 14/10 (`scripts/cenarios/salao.py`): colunas de capitel dourado, vitral redondo com feixes coloridos, tapete vermelho até o trono, estandartes e cortinas. Ainda sem pintura no jogo: caverna, laboratório, catacumba, templo, passarela, forja, coliseu, treino, torre e arquivo.
+51. [~] Cenários que faltam pintar: Torre, deserto dos ossos, pântano da necrose, observatório, fortaleza das placas e trono do dragão. O **Salão do Trono** ficou pronto em 14/10 (`scripts/cenarios/salao.py`): colunas de capitel dourado, vitral redondo com feixes coloridos, tapete vermelho até o trono, estandartes e cortinas. A **Caverna dos Cristais** também (`scripts/cenarios/caverna.py`): rocha em névoa azul, cristais violeta e ciano, lago subterrâneo, cogumelos luminosos e a fenda de luz. Ainda sem pintura no jogo: laboratório, catacumba, templo, passarela, forja, coliseu, treino, torre e arquivo.
 
 ## E. Vilões novos (o Tales manda o estilo antes)
 
