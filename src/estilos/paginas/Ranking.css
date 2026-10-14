@@ -455,3 +455,60 @@
 .rk-arena__titulo, .rk-alta__titulo { letter-spacing: 0.08em; }
 .rk-visitante { display: flex; gap: 0.5rem; align-items: flex-start; margin: 0; padding: 0.7rem 0.9rem; border-radius: var(--raio-cartao); background: var(--superficie-2); border: 1px dashed var(--traco-forte); font-size: 0.9rem; line-height: 1.45; }
 .rk-visitante svg { flex: none; margin-top: 0.15rem; color: var(--ouro, #c9962c); }
+
+/* ============================================================ Pódio em pixel art (14/10/2026)
+   Cena pintada (scripts/cenarios/podio.py) + placas alinhadas com os degraus. */
+.pdx { position: relative; display: grid; gap: 0; margin-top: 0.5rem; border-radius: 14px; overflow: hidden;
+  box-shadow: 0 0 0 3px #1b1208, 0 0 0 5px #c99a3b, 0 10px 26px rgba(0, 0, 0, 0.28); background: #1b1208; }
+.pdx__cena { position: relative; line-height: 0; }
+.pdx__cena img { display: block; width: 100%; height: auto; aspect-ratio: 480 / 220; image-rendering: pixelated; }
+.pdx__titulo { position: absolute; left: 0; right: 0; top: 3%; margin: 0; text-align: center; line-height: 1; z-index: 2; }
+.pdx__titulo span { display: inline-block; padding: 0.35rem 1rem; font-family: var(--fonte-pixel); font-weight: 700; font-size: clamp(0.72rem, 2.2vw, 1.05rem);
+  letter-spacing: 0.08em; text-transform: uppercase; color: #ffe08a; background: #6b1d16; text-shadow: 2px 2px 0 #1b1208;
+  box-shadow: 0 0 0 3px #1b1208, 0 0 0 5px #c99a3b, 4px 4px 0 5px rgba(0, 0, 0, 0.35); }
+.pdx--cripta .pdx__titulo span { background: #3a1a5a; }
+.pdx__brilho { position: absolute; left: 41.5%; width: 17%; top: 0; height: 62%; pointer-events: none;
+  background: linear-gradient(rgba(255, 241, 176, 0.35), rgba(255, 241, 176, 0)); clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%); mix-blend-mode: screen; animation: pdx-brilho 3.2s ease-in-out infinite; }
+@keyframes pdx-brilho { 50% { opacity: 0.45; } }
+.pdx__confete { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.pdx__confete i { position: absolute; top: -4%; width: 0.6%; aspect-ratio: 1 / 1.6; background: var(--c); image-rendering: pixelated; animation: pdx-confete 4s linear infinite; }
+@keyframes pdx-confete { to { transform: translateY(560%) rotate(540deg); top: 70%; opacity: 0.2; } }
+.pdx--cripta .pdx__confete i { background: #b98aff; width: 0.4%; aspect-ratio: 1; animation-name: pdx-faisca; animation-duration: 5s; box-shadow: 0 0 6px #b98aff; }
+@keyframes pdx-faisca { from { top: 80%; opacity: 0; } 20% { opacity: 1; } to { top: 10%; opacity: 0; } }
+.pdx__placas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; margin: 0; padding: 0.7rem; list-style: none;
+  background: linear-gradient(#2a1d12, #1b1208); }
+.pdx--cripta .pdx__placas { background: linear-gradient(#1c1828, #110e1a); }
+.pdx__placa { --m1: #c28a2a; --m2: #fff1b0; display: grid; justify-items: center; align-content: start; gap: 0.15rem; min-width: 0; padding: 0.55rem 0.4rem 0.6rem; text-align: center;
+  border-radius: 8px; background: linear-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)); box-shadow: inset 0 0 0 2px var(--m1), inset 0 3px 0 rgba(255, 255, 255, 0.12); color: #f4ead6; }
+.pdx__placa--1 { order: 2; --m1: #f2c45a; transform: translateY(-0.3rem); box-shadow: inset 0 0 0 2px var(--m1), 0 0 18px rgba(242, 196, 90, 0.35); }
+.pdx__placa--2 { order: 1; --m1: #c8d2e0; }
+.pdx__placa--3 { order: 3; --m1: #d08a4a; }
+.pdx__placa--voce { box-shadow: inset 0 0 0 2px var(--m1), 0 0 0 2px #7fe08f; }
+.pdx__lugar { font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--m1); }
+.pdx__nome { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(0.85rem, 2.4vw, 1.05rem); }
+.pdx__voce { margin-left: 0.3rem; padding: 0 0.3rem; border-radius: 4px; font-size: 0.7rem; background: #2e7a3a; color: #fff; vertical-align: middle; }
+.pdx__valor { font-family: var(--fonte-pixel); font-weight: 700; font-size: clamp(0.95rem, 2.8vw, 1.25rem); color: #ffe08a; font-variant-numeric: tabular-nums; }
+.pdx__detalhe { color: #cbbfa6; }
+.pdx__extra { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.25rem; }
+@media (max-width: 560px) {
+  .pdx__placas { gap: 0.3rem; padding: 0.45rem; }
+  .pdx__placa { padding: 0.4rem 0.2rem; }
+  .pdx__lugar { font-size: 0.66rem; }
+  .pdx__extra { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .pdx__brilho, .pdx__confete i { animation: none; } .pdx__confete { display: none; } }
+
+/* Ranking dos Flashcards com cara de cripta (só o visual; o nome no site continua "Flashcards") */
+.rk--cripta .cf-cabeca { position: relative; padding: 1.4rem clamp(1rem, 4vw, 2.2rem); border-radius: 14px; color: #f4ead6; overflow: hidden;
+  background: radial-gradient(60% 120% at 0% 50%, rgba(255, 150, 60, 0.22), transparent 60%), radial-gradient(60% 120% at 100% 50%, rgba(255, 150, 60, 0.22), transparent 60%), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.28) 0 2px, transparent 2px 18px), repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.18) 0 2px, transparent 2px 36px), linear-gradient(#2a2538, #17131f);
+  box-shadow: 0 0 0 3px #1b1208, 0 0 0 5px #6a4aa0, 0 10px 26px rgba(0, 0, 0, 0.28); }
+.rk--cripta .cf-cabeca h1 { font-family: var(--fonte-pixel); color: #ffe08a; text-shadow: 3px 3px 0 #1b1208; }
+.rk--cripta .cf-cabeca p { color: #e2d8f0 !important; }
+.rk--cripta .cf-selo { color: #c8b0ff; }
+.rk--cripta .rkc-lista li { background: linear-gradient(90deg, #242033, #1b1828); color: #ece4f6; box-shadow: inset 0 0 0 1px #3a3450; }
+.rk--cripta .rkc-lista li b { font-family: var(--fonte-pixel); color: #c8b0ff; }
+.rk--cripta .rkc-lista em { font-family: var(--fonte-pixel); color: #ffe08a; }
+.rk--cripta .rkc-voce { outline: 2px solid #7fe08f; }
+.rkc-tocha { position: absolute; top: 50%; translate: 0 -50%; image-rendering: pixelated; }
+.rkc-tocha--esq { left: 0.6rem; } .rkc-tocha--dir { right: 0.6rem; }
+.rk--cripta .cf-cabeca > :not(.rkc-tocha) { position: relative; padding-inline: 1.4rem; }

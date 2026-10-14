@@ -24,6 +24,7 @@ import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import { SeloServico } from '../componentes/ServicoRanking'
+import { PodioPixel } from '../componentes/PodioPixel'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
@@ -110,30 +111,11 @@ function iniciais(apelido: string): string {
 }
 
 function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }) {
-  const ordem = [linhas[1], linhas[0], linhas[2]].filter(Boolean)
-  return (
-    <section className="rk-arena" aria-label="Três primeiros colocados" style={{ backgroundImage: `url(${recurso('ranking/arena.png')})` }}>
-      <img className="rk-arena__tocha rk-arena__tocha--esq" src={recurso('ranking/tocha.png')} alt="" width={24} height={48} draggable={false} />
-      <img className="rk-arena__tocha rk-arena__tocha--dir" src={recurso('ranking/tocha.png')} alt="" width={24} height={48} draggable={false} />
-      <p className="rk-arena__titulo"><span>Salão dos campeões</span></p>
-      <ol className="rk-podio">
-        {ordem.map((linha) => (
-          <li key={linha.posicao} className={`rk-podio__lugar rk-podio__lugar--${linha.posicao}${linha.eh_voce ? ' rk-podio__lugar--voce' : ''}`}>
-            {linha.posicao === 1 && <span className="rk-podio__luz" aria-hidden="true" />}
-            <img className="rk-podio__coroa" src={recurso(`emblemas/podio-${linha.posicao}.png`)} alt="" width={linha.posicao === 1 ? 64 : 48} height={linha.posicao === 1 ? 64 : 48} draggable={false} />
-            <span className="rk-podio__avatar">{iniciais(linha.apelido)}</span>
-            <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}<SeloServico servico={linha.servico} /></strong>
-            <span className="rk-podio__emblemas"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={32} /><Fogueira dias={linha.sequencia ?? 0} tamanho={20} /></span>
-            <div className="rk-podio__degrau">
-              <span className="rk-podio__posicao" aria-label={`${linha.posicao}º lugar`}>{linha.posicao}º</span>
-              <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b>{periodo === 'semana' ? 'na semana' : 'questões'}</span>
-              <Movimento linha={linha} />
-            </div>
-          </li>
-        ))}
-      </ol>
-    </section>
-  )
+  return <PodioPixel cena="festa" titulo="Salão dos campeões" lugares={linhas.slice(0, 3).map((linha) => ({
+    posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
+    valor: `${linha.total.toLocaleString('pt-BR')} ${periodo === 'semana' ? 'na semana' : 'questões'}`,
+    extra: <span className="pdx__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={28} /><Fogueira dias={linha.sequencia ?? 0} tamanho={18} /><Movimento linha={linha} /></span>,
+  }))} />
 }
 
 /** A próxima meta, em questões, como uma missão de jogo. */
@@ -144,8 +126,17 @@ function Missao({ eu, acima }: { eu: LinhaRanking; acima: LinhaRanking | null })
   return <span className="rk-missao"><Icone nome="alvo" tamanho={15} /><span>Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para passar {acima.apelido} e subir para #{acima.posicao}</span></span>
 }
 
+/** Só no desenvolvimento (#/ranking?demo=1): linhas fictícias para revisar o visual sem servidor. */
+const DEMO = import.meta.env.DEV && typeof location !== 'undefined' && location.hash.includes('demo=1')
+const NOMES_DEMO = ['Ana P.', 'Bruno C.', 'Carla M.', 'Diego R.', 'Elisa F.', 'Fábio T.', 'Gabi L.', 'Hugo S.', 'Iara N.', 'João V.', 'Karen D.', 'Lucas B.']
+const linhasDemo = (): LinhaRanking[] => Array.from({ length: 34 }, (_, i) => ({
+  posicao: i + 1, apelido: NOMES_DEMO[i % NOMES_DEMO.length], total: Math.round(4200 / (1 + i * 0.18)), total_geral: Math.round(4200 / (1 + i * 0.18)), eh_voce: i === 6,
+  variacao: [2, 0, -1, 4, 0, 1, 3][i % 7], variacao_semana: [6, 1, 0, 2, 0, 5, 1][i % 7], novo: i === 11, referencia_em: '2026-10-13', emblemas: null, sequencia: [12, 3, 0, 40, 7, 1, 21][i % 7], servico: null,
+}))
+
 export function Ranking() {
-  const { sessao } = usarConta()
+  const { sessao: sessaoReal } = usarConta()
+  const sessao = DEMO ? ({ user: { id: 'demo' } } as unknown as typeof sessaoReal) : sessaoReal
   const { contexto } = usarContextoLocal('')
   const [periodo, definirPeriodo] = useState<Periodo>('geral')
   const [linhas, definirLinhas] = useState<LinhaRanking[] | null>(null)
@@ -158,13 +149,18 @@ export function Ranking() {
   const [visitanteDisponivel, definirVisitanteDisponivel] = useState(true)
 
   const meuTotal = Object.keys(contexto.respondidas).length
-  const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido } = usarPerfilRanking(sessao)
+  const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido } = usarPerfilRanking(sessaoReal)
   const { streak, conquistadas, total: totalConquistas } = usarConquistas()
-  usarPublicarSequencia(sessao, streak.atual, streak.ateDia)
+  usarPublicarSequencia(sessaoReal, streak.atual, streak.ateDia)
 
   // Visitante: top 50 com as iniciais, pela função aberta (migração 202610110300).
   useEffect(() => {
-    if (!supabase || sessao) return
+    if (!DEMO) return
+    definirLinhas(linhasDemo()); definirComMovimento(true); definirMinhaPosicao({ posicao: 7, total: 2000, total_geral: 2000 })
+  }, [periodo])
+
+  useEffect(() => {
+    if (DEMO || !supabase || sessao) return
     let vivo = true
     definirErro(false)
     definirLinhas(null)
@@ -179,7 +175,7 @@ export function Ranking() {
   }, [sessao, periodo])
 
   useEffect(() => {
-    if (!supabase || !sessao) return
+    if (DEMO || !supabase || !sessao) return
     const cliente = supabase
     let vivo = true
     definirErro(false)
@@ -208,7 +204,7 @@ export function Ranking() {
     return () => { vivo = false }
   }, [sessao, periodo])
 
-  if (!contasDisponiveis || !supabase) {
+  if (!DEMO && (!contasDisponiveis || !supabase)) {
     return <article className="limite-leitura empilha">
       <h1>Ranking</h1>
       <p>O ranking depende de contas, que estão em preparação. Você já pode estudar gratuitamente.</p>

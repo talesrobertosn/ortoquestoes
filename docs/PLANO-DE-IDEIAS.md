@@ -95,8 +95,8 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 ## F. Rankings
 
-58. [ ] **Ranking da Cripta temático:** lápides, tochas, pódio de pedra e brasões.
-59. [ ] **Ranking geral refeito do zero:** top 3 em pódio com o herói chibi, coroa, medalhas animadas e brilho.
+58. [x] **Ranking da Cripta temático:** lápides, tochas, pódio de pedra e brasões.
+59. [x] **Ranking geral refeito do zero:** top 3 em pódio com o herói chibi, coroa, medalhas animadas e brilho.
 60. [ ] Mostrar o estágio do herói e o título de cada pessoa no ranking.
 
 ## G. Botões, interface e experiência
@@ -144,3 +144,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 - **14/10/2026:** PR #227 mesclado (herói chibi, portas da encruzilhada, floresta verdejante, painel do admin, PNG otimizado). Depois disso, golpes em pixel art e o Envenenado (ideias 1 a 11 e 19), no PR #228.
 - **14/10/2026:** Humor da Biblioteca (ideias 26 a 31), no PR #228. Fica em `src/flashcards/componentes/ClimaEstudo.tsx` (limiares em `HUMOR`), as chamas são `chama-*` em `vfx.py` e há aviso flutuante no celular.
+- **14/10/2026:** Rankings: pódio em pixel art refeito do zero (`scripts/cenarios/podio.py` e `src/componentes/PodioPixel.tsx`), com cena de festa no ranking das questões e cena de cripta no dos Flashcards, além da página dos Flashcards com tema de pedra e tochas (ideias 58 e 59). Prévia sem servidor: `#/ranking?demo=1` e `#/ranking?aba=flashcards&demo=1`, só no modo de desenvolvimento.
