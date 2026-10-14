@@ -24,7 +24,7 @@ import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import { SeloServico } from '../componentes/ServicoRanking'
-import { PodioPixel } from '../componentes/PodioPixel'
+import { SalaoCampeoes } from '../componentes/SalaoCampeoes'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
@@ -110,12 +110,22 @@ function iniciais(apelido: string): string {
   return ((partes[0]?.[0] ?? '') + (partes.length > 1 ? partes[partes.length - 1][0] : '')).toUpperCase() || '?'
 }
 
-function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }) {
-  return <PodioPixel cena="festa" titulo="Salão dos campeões" lugares={linhas.slice(0, 3).map((linha) => ({
-    posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
-    valor: `${linha.total.toLocaleString('pt-BR')} ${periodo === 'semana' ? 'na semana' : 'questões'}`,
-    extra: <span className="pdx__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={28} /><Fogueira dias={linha.sequencia ?? 0} tamanho={18} /><Movimento linha={linha} /></span>,
-  }))} />
+function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Periodo; eu: { posicao: number; total: number } | null }) {
+  const terceiro = linhas[2]
+  const faltam = eu && eu.posicao > 3 && terceiro ? Math.max(1, terceiro.total - eu.total + 1) : 0
+  const chamada = eu && eu.posicao <= 3
+    ? <>Você está no Salão dos Campeões. Continue respondendo para não perder o lugar.</>
+    : faltam > 0 ? <>Você está em <b>#{eu!.posicao}</b>. Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para entrar no top 3.</>
+      : undefined
+  return <SalaoCampeoes
+    titulo="Top 3"
+    subtitulo={periodo === 'semana' ? 'Quem mais respondeu questões nos últimos 7 dias' : 'Quem mais respondeu questões no ranking geral'}
+    chamada={chamada}
+    lugares={linhas.slice(0, 3).map((linha) => ({
+      posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
+      total: linha.total.toLocaleString('pt-BR'), rotuloTotal: periodo === 'semana' ? 'na semana' : 'questões',
+      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>,
+    }))} />
 }
 
 /** A próxima meta, em questões, como uma missão de jogo. */
@@ -316,7 +326,7 @@ export function Ranking() {
 
       {top && top.length > 0 && <EmAlta linhas={top} />}
 
-      {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} />}
+      {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} eu={top.find((linha) => linha.eh_voce) ?? minhaPosicao} />}
 
       {top && top.length > 0 && comMovimento && !top.some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia rk-referencia--inicio">
         <Icone nome="relogio" tamanho={15} /> As setas de subida e descida e o foguinho aparecem a partir de amanhã: hoje o ranking registra as posições de referência.
