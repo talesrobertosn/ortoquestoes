@@ -99,3 +99,7 @@ Registro em ordem de data. Cada linha é uma decisão do Tales; não mude sem no
 ## 13/10/2026 — polimento do beta
 
 Opinião com melhor acabamento; som baixo a cada abertura e controle vertical no ícone, em vez de mute imediato. Melhorar fundo do Golem, apresentação e capa. Preparar imagem de proposta de herói menos infantil. Toda mudança fica documentada para o Claude. Implementação e referência em [POLIMENTO-AUDIO-OPINIAO.md](POLIMENTO-AUDIO-OPINIAO.md).
+
+## 14/10/2026, início mais familiar
+
+Tales pediu que o começo priorize questões que a pessoa já acertou, para diminuir a frustração. Essa orientação substitui a ordem de 13/10: acertadas pelo usuário, maior acerto da turma, erradas pelo usuário, novas e mistura. O sorteio continua dentro de cada grupo, com até oito flashcards na abertura de cada grupo e salto dos grupos vazios. As respostas consultadas são das questões de origem; as partidas salvas permanecem intactas. Sem SQL.

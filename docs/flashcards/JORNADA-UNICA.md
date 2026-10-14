@@ -1,16 +1,18 @@
 # Jornada única dos flashcards, 13/10/2026
 
-Diretriz do Tales: retirar a escolha Fácil/Normal/Difícil e o ranking por dificuldade; começar com os flashcards de questões mais acertadas pela turma, depois questões que a pessoa acertou, depois as que errou, e finalmente misturar. Sortear dentro de cada grupo. Retirar a Torre da entrada e deixar Cripta e Biblioteca, com apresentação mais acolhedora. O cronograma de flashcards fica na central de Flashcards, sem o atalho no cronograma de questões. Enviar capturas reais ocasionalmente durante mudanças visuais, no computador e/ou celular.
+**Atualização de 14/10/2026:** Tales pediu diminuir a frustração no começo. A prioridade agora é o histórico pessoal: **acertadas por você → maior acerto da turma → erradas por você → novas → mistura**. Vale para novas partidas; não reordena partidas salvas. Sem SQL.
+
+Diretriz do Tales: retirar a escolha Fácil/Normal/Difícil e o ranking por dificuldade; começar com os flashcards de questões que a pessoa acertou, depois as mais acertadas pela turma, depois as que errou, e finalmente misturar. Sortear dentro de cada grupo. Retirar a Torre da entrada e deixar Cripta e Biblioteca, com apresentação mais acolhedora. O cronograma de flashcards fica na central de Flashcards, sem o atalho no cronograma de questões. Enviar capturas reais ocasionalmente durante mudanças visuais, no computador e/ou celular.
 
 ## Reforço do Tales (13/10/2026, noite)
 
 **Ordem dos grupos:** a Cripta começa sempre fácil e fica mais difícil, nesta ordem:
-1. questões de **maior acerto da turma**;
-2. questões que a pessoa **já fez e acertou**;
+1. questões que a pessoa **já fez e acertou**;
+2. questões de **maior acerto da turma**;
 3. questões que a pessoa **já fez e errou**;
 4. **questões novas**, que ela nunca fez nem viu em flashcard.
 
-Depois vem a mistura livre. Dentro de cada grupo o sorteio é completamente aleatório (pela semente). O que é fácil é subjetivo, por isso os grupos 2 a 4 usam o histórico da própria pessoa. Implementado em `motor/selecao.ts`, com 8 flashcards por grupo (`POR_GRUPO`), e testado em `fixtures/testar_progressao_flashcards.mjs`. O grupo 4 entrou nesta data; antes, depois das erradas vinha direto a mistura.
+Depois vem a mistura livre. Dentro de cada grupo o sorteio é completamente aleatório (pela semente). O que é fácil é subjetivo, por isso os grupos 1, 3 e 4 usam o histórico da própria pessoa. Implementado em `motor/selecao.ts`, com 8 flashcards por grupo (`POR_GRUPO`), e testado em `fixtures/testar_progressao_flashcards.mjs`. O grupo 4 entrou nesta data; antes, depois das erradas vinha direto a mistura.
 
 **Poderes de rota de estudo:**
 - **Mapa do especialista** (raro): a pessoa escolhe uma área e, se quiser, subtemas dela, entre os 10 com mais flashcards. Os próximos 10 flashcards vêm dali.
@@ -27,8 +29,8 @@ Depois vem a mistura livre. Dentro de cada grupo o sorteio é completamente alea
 
 - Uma regra de combate para partidas novas, a antiga base Normal. Não há seletor ou selo de nível na partida. Os valores antigos ficam no motor somente para abrir partidas salvas, sem apagar progresso ou corridas históricas.
 - `motor/selecao.ts`: introdução de oito flashcards por grupo (turma, acertos pessoais, erros pessoais), seguida de sorteio uniforme do acervo elegível. Grupos vazios são pulados. Sorteio sem reposição no lote, reproduzível pela semente; a rodada persistida impede reiniciar a introdução quando o baralho é reposto. As respostas pessoais são as das questões de origem, não a autoavaliação dos flashcards.
-- `faixas_flashcards()` no servidor: classificação agregada baseada no acerto real, com pelo menos três respondentes. Primeiro grupo: quartil superior; depois, faixa intermediária até o percentil 75 e a faixa inferior. Empates têm o mesmo grupo. A classificação não revela percentuais premium nem dados pessoais. A migration está também em `supabase/colar-no-painel/`; Tales confirmou execução na conversa.
-- As faixas reais também calibram a dificuldade educativa que o motor usa para dano e ataque. Sem medição suficiente, mantém-se a classificação editorial existente, sem inventar taxa. Se não há estatísticas, a seleção pula o primeiro grupo e usa o histórico pessoal e a mistura.
+- `faixas_flashcards()` no servidor: classificação agregada baseada no acerto real, com pelo menos três respondentes. Grupo da turma: quartil superior; depois, faixa intermediária até o percentil 75 e a faixa inferior. Empates têm o mesmo grupo. A classificação não revela percentuais premium nem dados pessoais. A migration está também em `supabase/colar-no-painel/`; Tales confirmou execução na conversa.
+- As faixas reais também calibram a dificuldade educativa que o motor usa para dano e ataque. Sem medição suficiente, mantém-se a classificação editorial existente, sem inventar taxa. Se não há estatísticas, a seleção pula o segundo grupo e usa o histórico pessoal e a mistura.
 - Ranking único pela RPC já existente `ranking_flashcards('masmorra')`, que agrega o melhor andar por conta independentemente do nível histórico. Não há migration destrutiva, importação de recorde local ou junção com o ranking de questões. Não foi alterado o critério de desempate do servidor existente.
 - Torre removida da central e entrada; links antigos redirecionam à entrada. Os dados salvos da Torre permanecem intactos.
 - Central: cenário original do jogo, tipografia Cinzel/Alegreya, contraste sobre a paisagem e botões próprios para explorar e treinar. Entrada: bosque, dois caminhos, pergaminho e cores naturais. Biblioteca: cabeçalho claro, painéis verdes e distinção explícita de treino sem combate.
