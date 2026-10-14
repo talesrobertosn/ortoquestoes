@@ -1,4 +1,5 @@
 import { memo, useEffect, useRef } from 'react'
+import { EstacoesBiblioteca } from './EstacoesBiblioteca'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
 import { criarAmbiente, pintarCena, type Cena, type Clima } from '../efeitos/pintura'
 import { pintarTabuleiro } from '../efeitos/tabuleiros'
@@ -166,6 +167,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
     <div className={`fc-cena fc-cena--${cena} fc-cena--clima-${clima}`} ref={raiz} aria-hidden="true">
       <canvas ref={base} className="fc-cena__base" />
       <canvas ref={ambiente} className="fc-cena__ambiente" />
+      {cena === 'biblioteca' && <EstacoesBiblioteca reduzido={reduzido} />}
       <span className="fc-cena__nevoa" />
     </div>
   )

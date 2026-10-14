@@ -23,6 +23,6 @@ Todo som é composto e sintetizado por código em `scripts/musica/`, sem amostra
 
 ## Estado e sequência
 
-O reparo do Menu #257 já está publicado (deploy 38648064258). Este bloco ainda depende do merge e do deploy próprios. Ao continuar, registrar o PR e o resultado efetivo da publicação; não presumir pelo estado dos arquivos locais.
+O reparo do Menu #257 já está publicado (deploy 38648064258). Este bloco foi mesclado no PR #258 (`c173b491`), com deploy `38651984359` concluído com sucesso.
 
 Próximas pendências permitidas: ambientação sazonal, cenários adicionais e aparência opcional. Monstros novos seguem em pausa. Medição de 50 FPS em aparelho físico continua pendente; o benchmark disponível é sintético.
