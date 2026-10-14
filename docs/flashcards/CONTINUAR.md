@@ -33,7 +33,7 @@ Leia nesta ordem:
 - **O Tales confirmou:** o som funciona no celular e a parte 19 do SQL já foi colada no Supabase.
 - **Próximo:** monstros novos e bestiário com arte nova (MONSTROS-NOVOS.md). O goblin, o esqueleto, o ent (Guardião da Fise), o mímico, a aranha e o Cogumelo da Necrose (monstro novo) já estão prontos (`scripts/sprites/goblin.py`, `esqueleto.py`, `ent.py`, `mimico.py`, `aranha.py` e `cogumelo.py`). **Os monstros estão em pausa por pedido do Tales** ("vamos continuar com mais monstrinhos futuramente"); só retome quando ele pedir. Depois, pela ordem do plano:
   - ~~sons próprios dos golpes novos (ideia 17)~~: feitos;
-  - revisão dos botões (ideia 61);
+  - ~~revisão dos botões (ideia 61)~~: feita;
   - cenários pintados que faltam (ideia 51).
 
 ## Antes (14/10/2026, madrugada)

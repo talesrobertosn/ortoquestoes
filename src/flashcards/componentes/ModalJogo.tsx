@@ -30,7 +30,11 @@ export function ModalJogo({ children, titulo, aoPedirFechar }: { children: React
       else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primeiro.focus() }
     }
     document.addEventListener('keydown', aoTeclar)
+    // no iPhone, o :active (o botão "afundando" ao toque) só aparece com algum ouvinte de toque na página
+    const toque = () => {}
+    document.addEventListener('touchstart', toque, { passive: true })
     return () => {
+      document.removeEventListener('touchstart', toque)
       window.clearTimeout(t)
       document.removeEventListener('keydown', aoTeclar)
       html.style.overflow = overflow

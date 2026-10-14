@@ -2280,3 +2280,20 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 }
 /* celular em pé: o som e o X ficam no canto de cima; a entrada desce o título para não ficar embaixo deles */
 @media (max-width: 640px) and (orientation: portrait) { .fc-entrada__cabeca { padding-top: 34px; } }
+
+/* ---------- Revisão dos botões (ideia 61, 14/10/2026) ---------- */
+/* área de toque de pelo menos ~44 px nos botões redondos do topo e nas abas, sem mudar o desenho */
+.fc-modal .fc-topo-botao, .fc-modal .fc-abas button { position: relative; -webkit-tap-highlight-color: transparent; }
+.fc-modal .fc-topo-botao::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; }
+/* as abas usam borda de 10 a 12 px com border-image: a área extra conta a partir da borda (a posição absoluta parte da caixa interna) */
+.fc-modal .fc-abas button::before { content: ""; position: absolute; inset: -16px -13px; }
+@media (max-width: 640px) { .fc-modal .fc-abas button::before { inset: -14px -11px; } }
+/* foco de teclado visível em todos os botões do topo, também fora da arena (entrada, Torre, Biblioteca) */
+.fc-modal .fc-topo-botao:focus-visible, .fc-modal .fc-abas button:focus-visible, .fc-modal .fc-botao-pequeno:focus-visible, .fc-modal .fc-botao-aval:focus-visible { outline: 3px solid #fff1c2; outline-offset: 3px; }
+.fc-modal button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+/* no toque, o "flutuar" do hover não fica preso depois do dedo sair; o "afundar" do pressionado continua */
+@media (hover: none) {
+  .fc-botao:not(:disabled):not(:active):hover, .fc-botao-pequeno:not(:active):hover, .fc-principal:not(:disabled):not(:active):hover,
+  .fc-botao-aval:not(:active):hover, .fc-modal .fc-topo-botao:not(:active):hover { transform: none; filter: none; }
+  .fc-botao:not(:disabled):hover::before { background-position: 150% 0; }
+}

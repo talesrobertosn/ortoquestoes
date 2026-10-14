@@ -101,7 +101,12 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 ## G. Botões, interface e experiência
 
-61. [ ] Revisão geral dos botões: estados de toque, foco, som, pressionado em pixel e tamanhos no celular.
+61. [x] Revisão geral dos botões (14/10), medida com Playwright em 390×844:
+    - **Área de toque:** os botões redondos do topo e as abas passaram a ter cerca de 44 px de área de toque, sem mudar o desenho.
+    - **Foco no teclado:** contorno de foco visível em todos os botões do topo, também fora da arena.
+    - **No toque:** o "flutuar" do hover não fica mais preso depois do dedo sair.
+    - **No iPhone:** o "afundar" do pressionado funciona.
+    - **Som:** os botões já tocavam o próprio som e não precisaram de mudança.
 62. [ ] Transições entre telas com "cortina de pixels".
 63. [ ] Tutorial de 30 segundos jogável na primeira entrada (o Preceptor explica).
 64. [ ] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
