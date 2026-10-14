@@ -18,7 +18,7 @@ import { Palco, centro, pixelVfx, precarregarVfx } from '../efeitos/palco'
 import { ambienteBiblioteca } from '../biblioteca/sessao'
 import { ClimaEstudo, type Humor } from './ClimaEstudo'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
-import { configurarSom, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, ESCALA_VOLUME, VOLUME_INICIAL, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
@@ -51,6 +51,8 @@ export interface Ajustes {
   textoMaior?: boolean
   som: boolean
   volume: number
+  /** Escala do volume (2 = depois do compressor, curva do ouvido; 15/10/2026). */
+  escalaVolume?: number
   volEfeitos: number
   volAmbiente: number
   volMusica: number
@@ -58,7 +60,7 @@ export interface Ajustes {
   velocidade: 'normal' | 'rapida'
 }
 /** Som ligado por padrão (pedido do Tales em 12/10/2026); toca a partir do primeiro toque. */
-const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volume: 0.2, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
+const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volume: VOLUME_INICIAL, escalaVolume: ESCALA_VOLUME, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
 
 const ROTULO_CURA: Record<MotivoCura, string> = {
   sequencia: 'SEQUÊNCIA', lendaria: 'LENDÁRIA', pocao: 'POÇÃO', selo: 'SELO', roubo: 'ROUBO DE ENERGIA', vital: 'POÇÃO VITAL',
@@ -209,7 +211,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     const validos = versao === 3 ? salvos : versao === 2 ? { ...salvos, versao: 3 as const } : {}
     // sem ajuste salvo nesta conta, vale a escolha da primeira entrada feita neste aparelho
     const som = somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false))
-    return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...(som === undefined ? {} : { som }), ...validos, volume: volumeDaSessao() }
+    return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...(som === undefined ? {} : { som }), ...validos, volume: volumeDaSessao(), escalaVolume: ESCALA_VOLUME }
   })
   const ajustesRef = useRef(ajustes)
   const definirAjustes = (a: Partial<Ajustes>) => { const n = { ...ajustesRef.current, ...a }; ajustesRef.current = n; gravar(CHAVE_AJUSTES, n); definirAjustesBruto(n) }

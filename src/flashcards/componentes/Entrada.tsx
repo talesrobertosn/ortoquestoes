@@ -5,7 +5,7 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { FLASHCARDS_RANKING } from '../../config'
 import { href, navegar } from '../../util/rotas'
 import { sairDoJogo } from '../fundo'
-import { configurarSom, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, ESCALA_VOLUME, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
 import { BESTIARIO } from '../motor/bestiario'
@@ -38,7 +38,7 @@ export function Entrada() {
   const mudarVolume = (n: number) => {
     definirVolume(n); definirSomAtivo(n>0)
     const a=ler<Record<string,unknown>>(CHAVE_AJUSTES,{})
-    gravar(CHAVE_AJUSTES,{...a,versao:3,volume:n,som:n>0})
+    gravar(CHAVE_AJUSTES,{...a,versao:3,volume:n,escalaVolume:ESCALA_VOLUME,som:n>0})
     configurarSom({ligado:n>0,volume:n,efeitos:Number(a.volEfeitos??0.85),musica:Number(a.volMusica??0.45),ambiente:Number(a.volAmbiente??0.35)})
   }
 

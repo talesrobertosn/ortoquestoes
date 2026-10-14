@@ -4,8 +4,9 @@ import { carregarAudioArquivo } from './audioArquivo'
  * arquivo, nenhuma licença de terceiros, nenhuma trilha de outro jogo).
  *
  * Mixagem: efeitos, ambiente e música em barramentos separados → compressor
- * de cola → ganho de saída → limitador. Assim o volume fica forte no celular
- * sem distorcer quando vários golpes se somam.
+ * de cola → ganho de saída → limitador → volume geral. O volume fica no fim da
+ * cadeia (15/10/2026): antes ele entrava antes do compressor, que "levantava" o
+ * som de novo, e 20% soava quase como 100%.
  *
  * Variedade: cada impacto tem quatro receitas (pedra, metal, abafado, mágico),
  * sorteadas sem repetir a anterior, com variação de altura e intensidade.
@@ -47,17 +48,23 @@ const FAMILIA_SOM: Record<string, string> = {
 const familiaSom = (t: Timbre) => (t && FAMILIA_SOM[t]) || t
 
 let ctx: AudioContext | null = null
-let saida: GainNode, efeitos: GainNode, ambiente: GainNode, musica: GainNode, reverb: ConvolverNode, envio: GainNode
+let saida: GainNode, mestre: GainNode, efeitos: GainNode, ambiente: GainNode, musica: GainNode, reverb: ConvolverNode, envio: GainNode
 let ligado = true
 /**
- * Volume geral: 20% na primeira vez (pedido do Tales, 14/10/2026); depois vale o que a pessoa
- * escolheu, salvo nos ajustes ('flashcards:ajustes', campo volume) e lido de novo a cada entrada.
+ * Volume geral: 30% na primeira vez, na escala nova (pedido do Tales, 15/10/2026: "som muito alto,
+ * deixar nativamente mais baixo"); depois vale o que a pessoa escolheu, salvo nos ajustes
+ * ('flashcards:ajustes', campo volume, com escalaVolume 2) e lido de novo a cada entrada.
+ * Volumes salvos na escala antiga (antes do compressor) não valem mais: recomeçam do inicial.
  */
-const VOLUME_INICIAL = 0.2
+export const VOLUME_INICIAL = 0.3
+export const ESCALA_VOLUME = 2
 function volumeSalvo(): number {
-  const v = ler<{ volume?: unknown }>('flashcards:ajustes', {}).volume
-  return typeof v === 'number' && Number.isFinite(v) ? Math.max(0, Math.min(1, v)) : VOLUME_INICIAL
+  const a = ler<{ volume?: unknown; escalaVolume?: unknown }>('flashcards:ajustes', {})
+  const v = a.volume
+  return a.escalaVolume === ESCALA_VOLUME && typeof v === 'number' && Number.isFinite(v) ? Math.max(0, Math.min(1, v)) : VOLUME_INICIAL
 }
+/** O ouvido percebe volume em escala logarítmica: o quadrado faz 50% soar como "metade". */
+const curvaVolume = (v: number) => v * v
 let volumeGeral = volumeSalvo()
 let volEfeitos = 0.8, volAmbiente = 0.35, volMusica = 0.45
 let ambienteAtual: { nome: Ambiente; parar: () => void } | null = null
@@ -80,7 +87,8 @@ function criar() {
   const limitador = ctx.createDynamicsCompressor()
   limitador.threshold.value = -2; limitador.knee.value = 0; limitador.ratio.value = 20; limitador.attack.value = 0.001; limitador.release.value = 0.08
   saida = ctx.createGain()
-  saida.connect(cola); cola.connect(ganhoSaida); ganhoSaida.connect(limitador); limitador.connect(ctx.destination)
+  mestre = ctx.createGain(); mestre.gain.value = 0
+  saida.connect(cola); cola.connect(ganhoSaida); ganhoSaida.connect(limitador); limitador.connect(mestre); mestre.connect(ctx.destination)
   efeitos = ctx.createGain(); efeitos.connect(saida)
   ambiente = ctx.createGain(); ambiente.connect(saida)
   musica = ctx.createGain(); musica.connect(saida)
@@ -96,13 +104,13 @@ function criar() {
 }
 
 export const volumeDaSessao = () => volumeGeral
-/** Ao sair e voltar, retoma o volume salvo (ou os 20% iniciais). */
+/** Ao sair e voltar, retoma o volume salvo (ou o inicial). */
 export function reiniciarVolume() { volumeGeral = volumeSalvo(); aplicarVolumes() }
 
 function aplicarVolumes() {
   if (!ctx) return
   const t = ctx.currentTime
-  saida.gain.setTargetAtTime(ligado ? volumeGeral : 0, t, 0.03)
+  mestre.gain.setTargetAtTime(ligado ? curvaVolume(volumeGeral) : 0, t, 0.03)
   efeitos.gain.setTargetAtTime(volEfeitos, t, 0.03)
   ambiente.gain.setTargetAtTime(volAmbiente * 0.6, t, 0.3)
   musica.gain.setTargetAtTime(volMusica * 0.55, t, 0.3)
