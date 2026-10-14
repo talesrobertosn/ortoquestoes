@@ -72,6 +72,7 @@ post em rede social. **Nome (regra do Tales, 13/10/2026):** fora do jogo é semp
 "Cripta do Residente" só aparece dentro do jogo (entrada temática e partidas). O roteiro completo e o que já foi feito estão em
 [docs/flashcards/LANCAMENTO-BETA.md](docs/flashcards/LANCAMENTO-BETA.md).
 
+A lista geral de ideias com checklist (feito / a fazer) é o [docs/PLANO-DE-IDEIAS.md](docs/PLANO-DE-IDEIAS.md): marque o que concluir.
 Para continuar o jogo, leia primeiro [docs/flashcards/CONTINUAR.md](docs/flashcards/CONTINUAR.md):
 estado atual, próximos passos, restrições, como testar (Playwright em três tamanhos) e como publicar.
 O último resumo do trabalho está em [docs/flashcards/RESUMO-CHATGPT.md](docs/flashcards/RESUMO-CHATGPT.md).
