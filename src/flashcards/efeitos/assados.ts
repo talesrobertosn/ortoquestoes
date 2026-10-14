@@ -578,10 +578,10 @@ export const ASSADOS: Record<string, MetaAssada> = {
    114
   ],
   "caixa": [
-   28,
-   30,
-   50,
-   87
+   26,
+   34,
+   53,
+   83
   ],
   "animacoes": {
    "parado": {
@@ -626,9 +626,9 @@ export const ASSADOS: Record<string, MetaAssada> = {
   ],
   "caixa": [
    25,
-   29,
-   54,
-   88
+   32,
+   55,
+   85
   ],
   "animacoes": {
    "parado": {
@@ -672,10 +672,10 @@ export const ASSADOS: Record<string, MetaAssada> = {
    114
   ],
   "caixa": [
-   24,
-   27,
-   56,
-   91
+   23,
+   31,
+   58,
+   87
   ],
   "animacoes": {
    "parado": {
@@ -719,10 +719,10 @@ export const ASSADOS: Record<string, MetaAssada> = {
    114
   ],
   "caixa": [
-   22,
-   25,
-   59,
-   93
+   21,
+   29,
+   61,
+   89
   ],
   "animacoes": {
    "parado": {
@@ -766,10 +766,10 @@ export const ASSADOS: Record<string, MetaAssada> = {
    114
   ],
   "caixa": [
-   21,
-   24,
-   62,
-   94
+   20,
+   28,
+   64,
+   90
   ],
   "animacoes": {
    "parado": {
@@ -814,8 +814,8 @@ export const ASSADOS: Record<string, MetaAssada> = {
   ],
   "caixa": [
    19,
-   12,
-   65,
+   11,
+   66,
    107
   ],
   "animacoes": {

@@ -1,5 +1,6 @@
 """Cavaleiro do Torneio, em volume. Mantém a identidade do herói original aprovado
-pelo Tales (capacete com pluma azul, escudo, espada, proporção chibi) e muda o
+pelo Tales (capacete com pluma azul, escudo, espada). Desde 14/10/2026 é um cavaleiro adulto
+(cabeça menor e oval, mandíbula, protetores de face, pernas longas), não mais chibi e muda o
 EQUIPAMENTO de verdade em cada estágio, não só a cor:
 
   1 Aprendiz do Torneio      gibão de couro, gorro de ferro, escudo redondo de madeira, espada curta
@@ -29,13 +30,16 @@ NOME = 'heroi-1'
 CAM = Camera(112, 120, (54, 114), inclinacao=0.16, escala=1.55)
 
 # proporções por estágio: pernas, tronco (altura), ombros (largura), cabeça, braços, grossura dos membros, escudo
+# Redesenho de 14/10/2026 (pedido do Tales: "infantilizado, cabecinha muito redonda, parece uma criança"):
+# desde o estágio 1 o herói é um jovem adulto (cabeça menor e alongada, pernas longas); o crescimento
+# por estágio continua, mas parte de um corpo heroico, não de um chibi.
 PROP = {
-    1: dict(perna=1.00, tronco=1.00, ombro=1.00, cab=1.00, braco=1.00, gr=1.00, escudo=1.00),
-    2: dict(perna=1.12, tronco=1.05, ombro=1.04, cab=0.96, braco=1.07, gr=1.03, escudo=1.04),
-    3: dict(perna=1.28, tronco=1.12, ombro=1.10, cab=0.91, braco=1.16, gr=1.07, escudo=1.08),
-    4: dict(perna=1.46, tronco=1.20, ombro=1.17, cab=0.85, braco=1.26, gr=1.11, escudo=1.12),
-    5: dict(perna=1.60, tronco=1.26, ombro=1.23, cab=0.80, braco=1.34, gr=1.14, escudo=1.15),
-    6: dict(perna=1.72, tronco=1.31, ombro=1.27, cab=0.76, braco=1.40, gr=1.16, escudo=1.17),
+    1: dict(perna=1.42, tronco=1.12, ombro=1.06, cab=0.70, braco=1.22, gr=0.98, escudo=0.92),
+    2: dict(perna=1.50, tronco=1.16, ombro=1.10, cab=0.68, braco=1.27, gr=1.01, escudo=0.95),
+    3: dict(perna=1.58, tronco=1.20, ombro=1.15, cab=0.665, braco=1.32, gr=1.05, escudo=0.98),
+    4: dict(perna=1.66, tronco=1.25, ombro=1.21, cab=0.65, braco=1.37, gr=1.09, escudo=1.00),
+    5: dict(perna=1.73, tronco=1.29, ombro=1.26, cab=0.635, braco=1.42, gr=1.12, escudo=1.02),
+    6: dict(perna=1.80, tronco=1.33, ombro=1.30, cab=0.62, braco=1.46, gr=1.15, escudo=1.03),
 }
 TEMPOS = {'parado': 240, 'preparo': 90, 'golpe': 70, 'dano': 90, 'derrota': 140, 'vitoria': 150}
 
@@ -135,29 +139,32 @@ def montar(t: dict) -> Cena:
         c.add('capa', pano, capa, grupo=8)
     # cabeça
     cab = tronco_o.filho((0, 8 * pt_ + 8.5 * pc - 1.5, 0.5), rx=t.get('cabeca', 0), rz=t.get('cabeca_lado', 0)).escalado(pc)
-    c.add('pele', lambda p: sd_esfera(p, 8.5), cab, grupo=10)
-    c.add('cabelo', lambda p: sd_elipsoide(p - V(0, 0.5, -2.2), (8.6, 7.4, 7.0)), cab, grupo=10, suave=0.5)
-    for lx in (-3.1, 3.1):
-        c.add('olho', lambda p, lx=lx: sd_elipsoide(p - V(lx, -0.9, 7.6), (1.35, 2.2, 1.0)), cab, grupo=11)
-    c.add('pele', lambda p: sd_esfera(p - V(0, -2.6, 8.0), 0.8), cab, grupo=12)  # nariz
-    for lx in (-3.4, 2.8):
-        c.add('brilho_olho', lambda p, lx=lx: sd_esfera(p - V(lx, 0.4, 8.35), 0.6), cab, grupo=11)
-    for lx in (-5.2, 5.2):
-        c.add('bochecha', lambda p, lx=lx: sd_elipsoide(p - V(lx, -3.0, 6.6), (1.6, 0.9, 1.2)), cab, grupo=12)
-    c.add('boca', lambda p: sd_elipsoide(p - V(0.4, -4.4, 7.9), (0.8, 0.35, 0.6)), cab, grupo=12)
+    # rosto adulto: crânio oval, mandíbula marcada, olhos estreitos e sobrancelhas firmes
+    c.add('pele', lambda p: sd_elipsoide(p - V(0, 0.4, 0), (7.4, 8.6, 7.6)), cab, grupo=10)
+    c.add('pele', lambda p: sd_elipsoide(p - V(0, -4.6, 1.6), (5.4, 4.0, 5.6)), cab, grupo=10, suave=2.0)  # mandíbula e queixo
+    c.add('cabelo', lambda p: sd_elipsoide(p - V(0, 1.0, -2.4), (7.6, 8.0, 6.6)), cab, grupo=10, suave=0.5)
+    for lx in (-2.8, 2.8):
+        c.add('olho', lambda p, lx=lx: sd_elipsoide(p - V(lx, -0.6, 7.1), (1.15, 0.8, 0.8)), cab, grupo=11)
+    c.add('pele', lambda p: sd_cone_redondo(p, V(0, -0.6, 7.6), V(0, -3.2, 8.3), 0.7, 1.0), cab, grupo=12)  # nariz reto
+    for lx in (-2.6, 3.0):
+        c.add('brilho_olho', lambda p, lx=lx: sd_esfera(p - V(lx, -0.3, 7.75), 0.35), cab, grupo=11)
+    c.add('boca', lambda p: sd_elipsoide(p - V(0.2, -5.0, 6.9), (1.5, 0.3, 0.5)), cab, grupo=12)
     # cabelo castanho saindo do capacete dos lados do rosto (como no original)
     for lx in (-1, 1):
         c.add('cabelo', lambda p, lx=lx: sd_elipsoide(p - V(lx * 7.9, -1.6, 2.6), (1.7, 4.4, 3.4)), cab, grupo=10, suave=0.3)
-        c.add('cabelo', lambda p, lx=lx: sd_elipsoide(p - V(lx * 3.0, 2.3, 7.8), (1.4, 0.45, 0.6)), cab, grupo=12)  # sobrancelha
-    c.add('cabelo', lambda p: sd_elipsoide(p - V(0, 3.6, 7.0), (6.6, 1.1, 1.4)), cab, grupo=10, suave=0.3)  # franja
+        c.add('cabelo', lambda p, lx=lx: sd_caixa(p - V(lx * 2.8, 1.2, 7.4), (1.6, 0.42, 0.5), 0.2), cab, grupo=12)  # sobrancelha reta
+    c.add('cabelo', lambda p: sd_elipsoide(p - V(0, 3.4, 6.2), (6.0, 1.0, 1.4)), cab, grupo=10, suave=0.3)  # franja
     # capacete: domo cortado + aba, muda por estágio
     def domo(p, r=9.4, base=2.6):
-        return np.maximum(sd_esfera(p, r), base - p[:, 1])
+        return np.maximum(sd_elipsoide(p, (r * 0.86, r * 1.08, r * 0.96)), base - p[:, 1])
     elmo_mat = 'esmalte'  # o capacete branco é a marca do herói original
-    c.add(elmo_mat, lambda p: domo(p - V(0, 0.3, -0.3)), cab, grupo=13)
+    c.add(elmo_mat, lambda p: domo(p - V(0, 0.6, -0.4)), cab, grupo=13)
     c.add('ouro', lambda p: sd_toro(p - V(0, 2.9, -0.2), 9.0, 0.9 + 0.25 * (e >= 5)), cab, grupo=14)
     if e >= 2:  # protetor de nariz
-        c.add(elmo_mat, lambda p: sd_caixa(p - V(0, 3.0, 9.0), (0.8, 2.0, 0.7), 0.4), cab, grupo=15)
+        c.add(elmo_mat, lambda p: sd_caixa(p - V(0, 2.4, 8.7), (0.8, 2.6, 0.7), 0.4), cab, grupo=15)
+    # protetores de face (cheek guards): dão o perfil de elmo de cavaleiro em vez de touca redonda
+    for lado in (-1, 1):
+        c.add(elmo_mat, lambda p, lado=lado: sd_caixa(p - V(lado * 7.0, -1.6, 3.0), (1.0, 4.6, 3.8), 0.9), cab, grupo=15, suave=0.8)
     if e >= 4:  # crista no topo: base de metal e crina vermelha
         c.add('ouro' if e >= 5 else 'aco', lambda p: sd_caixa(p - V(0, 9.0, -1), (1.0, 1.4, 6.5), 0.7), cab, grupo=16)
         if e == 4:
