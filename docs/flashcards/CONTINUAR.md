@@ -6,10 +6,14 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Leitores — continuidade de 14/10/2026
+
+Início familiar #262 publicado: merge 174b16ee, deploy 38655191938 concluído. **Acertos pessoais vêm antes da turma nas novas partidas.** Paisagens #261 publicadas (38654687687). O bloco atual conclui 39, com leitores decorativos depois de quinze minutos visíveis; [relatório](LEITORES-14-10.md), testes e capturas nos três formatos. Sem SQL. Precisa de seu próprio PR/deploy. Monstros seguem em pausa; próximos itens estão na auditoria.
+
+
 ## Início mais familiar — diretriz de 14/10/2026
 
 Tales pediu priorizar os acertos pessoais para diminuir frustração: **acertadas por você → maior acerto da turma → erradas por você → novas → mistura**. Até oito por grupo, grupos vazios pulados. Novas partidas; partidas salvas intactas. Testes de seleção, motor e interface nos três formatos. [Relatório](INICIO-FAMILIAR-14-10.md). Sem SQL. Paisagens #261 mescladas, deploy 38654687687 a conferir; não afirmar publicação do início antes de seu próprio deploy.
-
 
 ## Paisagens — continuidade de 14/10/2026
 

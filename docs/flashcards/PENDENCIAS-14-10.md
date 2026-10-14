@@ -42,3 +42,7 @@ Tutorial 63 concluído e benchmark 70 parcialmente validado. [Relatório](TUTORI
 ## Música (38, 75, 82)
 
 Concluída para revisão e publicação, com síntese autoral e validação do player. [Relatório](MUSICA-CLIMA-14-10.md). O tutorial e o reparo de integração já estão na base; deploy #257 confirmado.
+
+## Atualização após a publicação do início familiar
+
+Publicados: tutorial #255/#257, música #258, estações #259, ciclo/fauna #260, seis paisagens #261 e abertura por acertos pessoais #262. Leitores 39 em validação no bloco atual. A fila da tabela acima é histórica: consultar as caixas do plano e o topo de CONTINUAR. Permanecem 36, 60, 71, 72, 73, 74 e 81; 70 exige medição física. Monstros 53/54/56/57 continuam em pausa. Nenhum SQL novo nos blocos publicados.

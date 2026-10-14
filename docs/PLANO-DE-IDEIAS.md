@@ -67,7 +67,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 36. [ ] Selos colecionáveis da Biblioteca: primeira glória, 100 flashcards na semana, sem tempestade.
 37. [x] Modo "Leitura tranquila": chuva calma de fundo de propósito, para quem gosta de estudar com chuva.
 38. [x] Música da Biblioteca que muda de camada com o humor (chuva abafa, glória abre um coral).
-39. [ ] Pequenos fantasmas leitores que passam ao fundo quando o estudo passa de 15 min (sem assustar).
+39. [x] Pequenos fantasmas leitores que passam ao fundo quando o estudo passa de 15 min (sem assustar).
 40. [x] Estações do ano na Biblioteca conforme o mês (folhas no outono, neve em julho).
 
 ## D. Cenários (mais felizes, estilo Stardew Valley)
@@ -173,3 +173,5 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 - **14/10/2026, ambiente vivo:** 49 e 50: ciclo visual do Jardim, pássaros/coelho diurnos, peixe no lago e vaga-lumes existentes, sem mudar a partida. [Relatório](flashcards/AMBIENTE-VIVO-14-10.md).
 - **14/10/2026, paisagens:** 43–48: vilarejo, ruínas, vila vista de cima, campo florido, praia e estufa integrados às paradas existentes. [Relatório](flashcards/PAISAGENS-14-10.md).
+
+- **14/10/2026, leitores:** 39: manto e livro nas estantes depois de quinze minutos visíveis, sem persistência, combate ou animação com movimento reduzido. [Relatório](flashcards/LEITORES-14-10.md).
