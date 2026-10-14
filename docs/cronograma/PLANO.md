@@ -112,6 +112,14 @@ Linguagem visual fixa:
 - Sessão: faixa da meta de hoje na cor da área; fim de sessão do cronograma com o que falta hoje e amanhã.
 - Modo demonstração só em desenvolvimento: `#/cronograma?demo=1`.
 
+## Quem não assina (orientação do Tales, 14/10/2026)
+
+Quem não assina vê só uma **vitrine**: um exemplo do cronograma até o TEOT, montado com o próprio
+histórico, com o essencial (onde você está, o dia de hoje e a semana em cores, sem os números).
+Amanhã, as semanas seguintes, os ajustes, o desempenho e os blocos de detalhe ficam bloqueados.
+**Criar o cronograma é só para assinantes**: o formulário de montar não aparece para quem não assina.
+Isso substitui a prévia preenchida pela pessoa (itens 38 e 39).
+
 ## Regras que continuam valendo
 
 - Não mudar preço, limites nem o que é do assinante sem o Tales pedir.

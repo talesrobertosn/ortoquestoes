@@ -117,7 +117,7 @@ function TrilhaJornada({ semanas }: { semanas: CalculoPlano['semanas'] }) {
 
 /** Início: o cronograma em destaque, logo abaixo do topo. Quem não tem um vê como montar. */
 export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje }) {
-  const { premium, logado, calculo, pendente, plano, definirPlano } = cronograma
+  const { premium, calculo, pendente, plano, definirPlano } = cronograma
 
   const titulo = (
     <div className="cr-destaque__texto">
@@ -173,8 +173,8 @@ export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje })
         {premium
           ? <a className="botao botao--claro botao--grande" href={href('/cronograma')}>Montar meu cronograma</a>
           : <>
-            <a className="botao botao--ouro botao--grande" href={href(logado ? '/cronograma' : '/conta?modo=entrar')}>{logado ? 'Ver a prévia do meu cronograma' : 'Entrar e ver o meu cronograma'}</a>
-            <span className="cr-destaque__nota"><SeloAssinante /> A prévia é grátis; seguir o cronograma é do assinante.</span>
+            <a className="botao botao--ouro botao--grande" href={href('/cronograma')}>Ver um exemplo com o meu histórico</a>
+            <span className="cr-destaque__nota"><SeloAssinante /> Ver o exemplo é grátis; criar e seguir o seu é do assinante.</span>
           </>}
       </div>
     </section>
