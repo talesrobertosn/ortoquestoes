@@ -6,7 +6,11 @@ export function Tutorial({ aoFechar }: { aoFechar: () => void }) {
   const [etapa, definirEtapa] = useState(0)
   const [aviso, definirAviso] = useState('')
   const titulo = useRef<HTMLHeadingElement>(null)
-  useEffect(() => { titulo.current?.focus({ preventScroll: true }); definirAviso('') }, [etapa])
+  useEffect(() => {
+    titulo.current?.parentElement?.scrollTo({ top: 0 })
+    titulo.current?.focus({ preventScroll: true })
+    definirAviso('')
+  }, [etapa])
   useEffect(() => {
     const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.preventDefault(); e.stopImmediatePropagation(); aoFechar() } }
     window.addEventListener('keydown', tecla, true)

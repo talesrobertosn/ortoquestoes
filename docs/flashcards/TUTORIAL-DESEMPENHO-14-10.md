@@ -6,7 +6,7 @@ O Preceptor convida para uma demonstração curta após a escolha inicial de som
 
 Ao concluir ou pular, salva apenas `tutorialVisto` nos Ajustes existentes, por ação explícita da pessoa. Mantém os outros campos. Isso segue o armazenamento existente: visitantes conservam a preferência na sessão; contas seguem a política já implementada. Não há migração SQL nem alteração em limites.
 
-O foco acompanha cada etapa, fica no diálogo e retorna ao botão Como jogar. O diálogo é irmão da Entrada rolável, evitando que a rolagem de fundo esconda seu título. Arte: ícone e moldura existentes, sem imagem externa ou gerada.
+O foco acompanha cada etapa, fica no diálogo e retorna ao botão Como jogar. O diálogo é irmão da Entrada rolável, evitando que a rolagem de fundo desloque o diálogo. Cada etapa retorna ao topo do painel; em telas baixas o próprio tutorial pode rolar. Arte: ícone e moldura existentes, sem imagem externa ou gerada.
 
 ## Desempenho (ideia 70, parcial)
 
