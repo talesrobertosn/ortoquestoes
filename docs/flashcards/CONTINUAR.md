@@ -6,6 +6,10 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Continuidade autorizada — Biblioteca (14/10/2026)
+
+Tales pediu continuar a lista de pendências e publicar os blocos concluídos, mantendo relatórios no GitHub. A auditoria e a fila de trabalho estão em [PENDENCIAS-14-10.md](PENDENCIAS-14-10.md). Não retomar monstros novos nem modificar conteúdo médico, planos ou dados existentes de usuários. O bloco atual acrescenta diário por sessão, estante por “Sabia” e leitura tranquila com chuva. Não há SQL.
+
 ## Integração dos quatro blocos — 14/10/2026
 
 Tales autorizou mesclar e publicar os PRs #247, #248, #249 e #250. Esta revisão integra cenários, combate, desempenho e acessibilidade. Os registros abaixo que mencionam rascunho ou "não publicado" descrevem a etapa anterior à integração. A confirmação de publicação fica no workflow **Publicar no GitHub Pages** da branch do site. Não há SQL novo.

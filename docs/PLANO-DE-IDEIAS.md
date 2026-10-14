@@ -62,10 +62,10 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 31. [x] **Arco-íris:** o primeiro acerto depois da chuva.
 32. [x] Velas da sessão: uma acende a cada "Sabia" (10 por fileira, com contador ×N).
 33. [x] Gato da Biblioteca em pixel art: dorme com Zzz, acorda quando você acerta e fica feliz (rabo em pé e coração) com o fogo azul e na glória.
-34. [ ] Livros que voam para a estante a cada flashcard dominado.
-35. [ ] Página de "diário da sessão" no fim: clima de cada trecho, melhor sequência, área mais forte.
+34. [x] Livros que voam para a estante a cada flashcard dominado.
+35. [x] Página de "diário da sessão" no fim: clima de cada trecho, melhor sequência, área mais forte.
 36. [ ] Selos colecionáveis da Biblioteca: primeira glória, 100 flashcards na semana, sem tempestade.
-37. [ ] Modo "Leitura tranquila": chuva calma de fundo de propósito, para quem gosta de estudar com chuva.
+37. [x] Modo "Leitura tranquila": chuva calma de fundo de propósito, para quem gosta de estudar com chuva.
 38. [ ] Música da Biblioteca que muda de camada com o humor (chuva abafa, glória abre um coral).
 39. [ ] Pequenos fantasmas leitores que passam ao fundo quando o estudo passa de 15 min (sem assustar).
 40. [ ] Estações do ano na Biblioteca conforme o mês (folhas no outono, neve em julho).
@@ -132,14 +132,14 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 ## J. Música e som (referência Stardew)
 
 75. [ ] Trilha calma e alegre para os andares a céu aberto (violão e flauta).
-76. [ ] Transição suave entre músicas (crossfade).
-77. [ ] Ambiente de chuva e trovão para a Biblioteca.
+76. [x] Transição suave entre músicas (crossfade).
+77. [x] Ambiente de chuva e trovão para a Biblioteca.
 78. [x] (T) Confirmar o som num celular real.
 
 ## K. Pendências antigas
 
-79. [ ] Bestiário antigo atualizado com as artes novas.
-80. [ ] Contador da rota de estudo.
+79. [x] Bestiário antigo atualizado com as artes novas.
+80. [x] Contador da rota de estudo.
 81. [ ] Áreas do baralho de demonstração.
 82. [ ] Emenda da faixa "sala" da música.
 83. [x] (T) Colar a parte 19 do SQL no Supabase.
@@ -163,3 +163,5 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026:** Desempenho (68 e 69), PR draft [#249](https://github.com/talesrobertosn/ortoquestoes/pull/249), a revisar: tiras por adversário, música Opus com MP3 de reserva. [Testes e medidas](flashcards/DESEMPENHO-14-10.md).
 
 - **14/10/2026, integração autorizada pelo Tales:** PRs #247 a #250 reúnem os quatro blocos solicitados, com testes da versão conjunta e publicação pelo workflow do site. Nenhum SQL novo. Os registros de rascunho acima são históricos.
+
+- **14/10/2026, continuidade da Biblioteca:** 34, 35, 37 e 77: livros por “Sabia”, diário de clima/área, chuva voluntária e ambiente procedural. Auditoria confirmou 76 (fades sobrepostos em `sons.ts`), 79 (`Ator` no bestiário) e 80 (contador da sessão) já implementados. Ver [relatório de continuidade](flashcards/PENDENCIAS-14-10.md).

@@ -29,9 +29,9 @@ export type Som =
   | 'espada-gigante' | 'pedregulho' | 'mandibula' | 'carregado'
   | 'jingle-vitoria' | 'jingle-derrota' | 'jingle-tesouro' | 'jingle-patamar' | 'jingle-topo' | 'jingle-chefe'
 
-export type Ambiente = 'campo' | 'masmorra' | 'salao' | 'biblioteca' | 'covil' | 'torre'
+export type Ambiente = 'chuva' | 'campo' | 'masmorra' | 'salao' | 'biblioteca' | 'covil' | 'torre'
   | 'forja' | 'coliseu' | 'jardim' | 'laboratorio' | 'caverna' | 'templo' | 'passarela' | 'catacumba' | 'treino' | 'arquivo'
-export type Musica = Ambiente | 'chefe' | 'elite' | 'loja' | 'sabio' | 'entrada' | 'dragao'
+export type Musica = Exclude<Ambiente, 'chuva'> | 'chefe' | 'elite' | 'loja' | 'sabio' | 'entrada' | 'dragao'
 /** Timbre do golpe de cada adversário. */
 export type Timbre = string | undefined
 /**
@@ -430,7 +430,8 @@ export function tocarAmbiente(nome: Ambiente | null) {
     src.start(t, Math.random() * 1.5); o.start(t)
     nos.push(src, o)
   }
-  if (nome === 'campo') { camada(500, 0.6, 0.35, 0.08); camada(1600, 1.2, 0.06, 0.13, 'bandpass') }
+  if (nome === 'chuva') { camada(2800, .45, .18, .05, 'lowpass'); camada(6000, .4, .035, .12, 'bandpass') }
+  else if (nome === 'campo') { camada(500, 0.6, 0.35, 0.08); camada(1600, 1.2, 0.06, 0.13, 'bandpass') }
   else if (nome === 'masmorra') { camada(160, 0.8, 0.5, 0.05); camada(2400, 3, 0.03, 0.4, 'bandpass') }
   else if (nome === 'salao') { camada(240, 0.7, 0.3, 0.06); camada(3000, 4, 0.025, 0.6, 'bandpass') }
   else if (nome === 'covil') { camada(110, 0.9, 0.55, 0.04); camada(700, 2, 0.06, 0.3, 'bandpass') }
@@ -449,7 +450,7 @@ export function tocarAmbiente(nome: Ambiente | null) {
   // estalos de chama e madeira, pássaros no campo
   let vivo = true
   const detalhe = () => {
-    if (!vivo || !ctx) return
+    if (!vivo || !ctx || nome === 'chuva') return
     if (nome === 'covil') { const k = Math.random(); ruido(0, 0.3 + k * 0.4, 0.04 + k * 0.05, 300 + k * 400, 'lowpass', 120, 1, false, sai); if (k > 0.7) ruido(0, 0.05, 0.04, 3000, 'bandpass', undefined, 3, false, sai) }
     else if (nome === 'torre') { if (Math.random() < 0.25) { const f = 1800 + Math.random() * 900; nota(f, 0, 0.1, 'sine', 0.01, f * 1.2, false, sai) } }
     else if (nome === 'forja') { if (Math.random() < 0.3) { const f = 1900 + Math.random() * 500; nota(f, 0, 0.5, 'triangle', 0.018, undefined, false, sai); nota(f * 2.7, 0, 0.3, 'sine', 0.008, undefined, false, sai); ruido(0, 0.04, 0.05, 3000, 'bandpass', undefined, 2, false, sai) } else ruido(0, 0.2, 0.03, 400, 'lowpass', 150, 1, false, sai) }

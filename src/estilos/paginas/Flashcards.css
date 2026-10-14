@@ -2408,3 +2408,38 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
  .fc-acessibilidade--texto-maior .fc-carta__miolo { min-height:140px; }
 }
 @media(min-width:901px) and (min-height:600px){.fc-acessibilidade--texto-maior .fc-carta__miolo{min-height:170px}}
+
+/* Diário e estante da Biblioteca: só a sessão atual, sem novos registros. */
+/* O canvas fixo usa a janela inteira. Foco não deve deslocar o modal para
+   tentar revelar esse excedente; painéis e o diário têm rolagem própria. */
+@supports(overflow:clip){.fc-modal{overflow:clip;}}
+.fc-diario { margin:18px 0;text-align:left;padding:16px;border:1px solid #ac8957;border-radius:10px;background:#1c1b20; }
+.fc-diario h3 { margin:0 0 8px;color:#ffdc91;font:700 19px var(--fc-titulo); }
+.fc-diario p { font:400 15px/1.5 var(--fc-texto);color:#eee1c3;margin:8px 0; }
+.fc-diario .fc-diario__nota { color:#c9ba9d;font-size:13px; }
+.fc-diario ol { display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0;margin:12px 0 0;max-height:180px;overflow:auto; }
+.fc-diario__trecho { display:grid;gap:3px;padding:8px 12px;border-radius:7px;border:1px solid #557569;background:#22372e;font:700 14px var(--fc-texto); }
+.fc-diario__trecho small { font-weight:400;color:#eadcbd; }
+.fc-diario__trecho--chama,.fc-diario__trecho--gloria { background:#533b1c;border-color:#d4a552; }
+.fc-diario__trecho--chuva,.fc-diario__trecho--tempestade,.fc-diario__trecho--nevoa { background:#273544;border-color:#8eafc1; }
+.fc-estante { padding:4px 0;text-align:center; }
+.fc-estante > div { min-height:30px;display:flex;justify-content:center;align-items:end;border-bottom:4px solid #987449;box-shadow:0 2px 0 #34231e; }
+.fc-estante img { width:24px;height:28px;image-rendering:pixelated; }
+.fc-estante small { display:block;color:#c9b992;font:400 12px var(--fc-texto);margin-top:5px; }
+.fc-estante__voando { animation:fc-livro-guarda .65s ease-out; }
+@keyframes fc-livro-guarda { from { transform:translate(80px,-45px) rotate(25deg);opacity:0; } to { transform:none;opacity:1; } }
+.fc-clima--tranquilo .fc-clima__veu { background:rgba(45,68,79,.12); }
+.fc-clima--tranquilo .fc-clima__chuva { opacity:.55; }
+.fc-estudo__resumo { max-height:100%;overflow:auto; }
+@media(max-width:640px) and (orientation:portrait){
+ .fc-estante { display:none; }
+ .fc-estudo__painel .fc-interruptor { margin-left:0;flex-shrink:0; }
+ .fc-estudo__painel .fc-estudo__barra { display:none; }
+}
+@media(orientation:landscape) and (max-height:520px){.fc-estante { display:none; }.fc-estudo__painel{overflow:auto;}}
+@media(prefers-reduced-motion:reduce){.fc-estante__voando{animation:none;}}
+@media(min-width:901px) and (min-height:521px){
+ .fc-estudo__painel { grid-row:1 / -1;max-height:100%;overflow:auto;align-self:center; }
+ .fc-estudo__botoes,.fc-estudo__respondidas { grid-column:2;min-width:0; }
+ .fc-mao--estudo { width:100%;max-width:100%; }
+}
