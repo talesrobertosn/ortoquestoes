@@ -40,8 +40,8 @@ function imagemVfx(nome: string) {
   }
   return im
 }
-/** Baixa as tiras de antemão (na entrada da arena), para o primeiro golpe não piscar vazio. */
-export function precarregarVfx(nomes: string[] = Object.keys(VFX)) {
+/** Baixa apenas a lista do andar. imagemVfx também carrega uma tira ao primeiro uso. */
+export function precarregarVfx(nomes: string[] = []) {
   for (const n of nomes) if (VFX[n]) imagemVfx(n)
 }
 /** Tamanho do pixel do efeito na tela: 2 no celular, 3 no notebook, 4 em telas grandes. */

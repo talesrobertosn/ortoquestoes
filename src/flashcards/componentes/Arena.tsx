@@ -1,5 +1,6 @@
 import { numeroPixel } from '../efeitos/numerosPixel'
 import { indicesVisuais } from '../motor/hipnose'
+import { vfxPorAndar, VFX_BIBLIOTECA } from '../efeitos/vfxPorAndar'
 import { Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
@@ -265,6 +266,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
   useEffect(() => { tocarAmbiente(modo === 'estudo' ? 'biblioteca' : cenarioVisivel) }, [modo, cenarioVisivel])
   const adversarioEmCena = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo
+  useEffect(() => { precarregarVfx(modo === 'estudo' ? VFX_BIBLIOTECA : vfxPorAndar(adversarioEmCena.sprite, adversarioEmCena.variante)) }, [modo, adversarioEmCena.sprite, adversarioEmCena.variante])
   const chefeEmCena = modo === 'batalha' && adversarioEmCena.chefe
   const trilha = modo === 'estudo' ? 'biblioteca'
     : partida.fase === 'loja' ? 'loja' : partida.fase === 'sabio' || partida.fase === 'sala' ? 'sabio'
@@ -279,7 +281,6 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     if (!canvasPalco.current) return
     const p = new Palco(canvasPalco.current)
     palco.current = p
-    precarregarVfx()
     const aoRedimensionar = () => p.redimensionar()
     window.addEventListener('resize', aoRedimensionar)
     return () => { window.removeEventListener('resize', aoRedimensionar); p.limpar() }
