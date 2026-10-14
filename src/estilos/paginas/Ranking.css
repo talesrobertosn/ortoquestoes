@@ -612,11 +612,12 @@
 .sc__placa--voce { box-shadow: inset 0 0 0 0.5cqw #2fbf6a; }
 
 .sc__extras { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.3rem; margin: 0; padding: 0.35rem 0.5rem; list-style: none; background: #0b0a18; border-top: 1px solid rgba(232, 180, 64, 0.25); }
-.sc__extras li { display: flex; flex-wrap: nowrap; min-width: 0; overflow: hidden; align-items: center; justify-content: center; gap: 0.25rem; font-size: 0.8rem; color: #cfc8b4; }
+.sc__extras li { display: flex; flex-wrap: nowrap; min-width: 0; align-items: center; justify-content: center; gap: 0.25rem; font-size: 0.8rem; color: #cfc8b4; }
 .sc__extras-pos { font-family: 'Cinzel', serif; font-weight: 900; color: #e8b440; }
 .sc__extra { display: contents; }
 .sc .rk-movimento--parado { display: none; }
-@media (max-width: 640px) { .sc__extras .rk-movimento { display: none; } }
+/* No celular as setas saem da faixa para caber numa linha, mas a descrição continua para leitores de tela. */
+@media (max-width: 640px) { .sc__extras .rk-movimento { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; } }
 .sc__chamada { margin: 0; padding: 0.45rem 0.8rem; text-align: center; font-size: 0.82rem; line-height: 1.35; background: linear-gradient(90deg, #0b0a18, #1c1436, #0b0a18); border-top: 1px solid rgba(232, 180, 64, 0.45); }
 .sc__chamada b { color: #f8da70; }
 @media (prefers-reduced-motion: reduce) { .sc *, .sc__titulo { animation: none !important; } .sc__fogo img:first-child { opacity: 1; } }
