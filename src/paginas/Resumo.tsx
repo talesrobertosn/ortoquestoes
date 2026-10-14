@@ -347,6 +347,7 @@ export function Resumo() {
         {metaCumprida && <div className="rs-loot"><IconePixel nome="planos" tamanho={56} /><div><span className="rs-loot__tag">Baú da meta</span><strong>Meta de hoje cumprida</strong><small>{cronograma.calculo!.feitasHoje} de {cronograma.calculo!.metaDiaria} questões do cronograma.</small></div></div>}
       </section>}
 
+      {!emAndamento && sessao.origem === 'cronograma' && cronograma.calculo && !cronograma.calculo.naRetaFinal && <FimCronograma calculo={cronograma.calculo} />}
       {!emAndamento && sessao.origem === 'diagnostico' && (
         <section className="cartao cartao__corpo rs-diagnostico" aria-label="Diagnóstico concluído">
           <div><strong>Diagnóstico concluído</strong><p className="texto-2">O cronograma já usou o seu resultado: as áreas em que você foi pior ganham mais espaço desde hoje. Veja o seu acerto por área e o mapa de risco no painel.</p></div>
@@ -571,5 +572,29 @@ export function Resumo() {
         </div>
       </section>
     </article>
+  )
+}
+
+/**
+ * Fim de uma sessão do cronograma (reforma de 14/10/2026): diz se a meta de
+ * hoje foi feita, o que ainda falta hoje e o que vem amanhã, com um botão só.
+ */
+function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usarCronogramaHoje>['calculo']> }) {
+  const feita = calculo.metaDiaria > 0 && calculo.feitasHoje >= calculo.metaDiaria
+  const amanha = calculo.amanha
+  const nomesAmanha = amanha ? [...new Set(amanha.itens.map((i) => i.nome))].join(' e ') : ''
+  const quandoAmanha = amanha ? amanha.data.toLocaleDateString('pt-BR', { weekday: 'long' }).replace('-feira', '') : ''
+  return (
+    <section className={'rs-cronograma' + (feita ? ' rs-cronograma--feita' : '')} aria-labelledby="rs-cron-titulo">
+      <span className="rs-cronograma__selo" aria-hidden="true">{feita ? <Icone nome="certo" tamanho={28} /> : <span className="numerico">{calculo.faltaHoje}</span>}</span>
+      <h2 id="rs-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${calculo.faltaHoje} para a meta de hoje`}</h2>
+      <p>{calculo.feitasHoje} de {calculo.metaDiaria} questões novas do cronograma hoje.</p>
+      <div className="rs-cronograma__proximo">
+        {feita ? <>Ainda hoje: <b>as revisões do dia</b> e, se quiser, uma rodada de flashcards.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
+        {amanha && <><br />{amanha.data.getTime() - Date.now() < 2 * 86_400_000 ? 'Amanhã' : `Na ${quandoAmanha}`}: <b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.mini ? ' e o mini-simulado' : ''}.</>}
+      </div>
+      <a className={'botao botao--grande ' + (feita ? 'botao--ouro' : 'botao--principal')} href={href(feita ? '/revisao' : '/cronograma')}>{feita ? 'Fazer as revisões agora' : 'Continuar o cronograma'}</a>
+      {feita && <a className="rs-cronograma__link" href={href('/cronograma')}>ou voltar ao cronograma</a>}
+    </section>
   )
 }

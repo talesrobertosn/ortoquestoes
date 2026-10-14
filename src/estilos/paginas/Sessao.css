@@ -209,3 +209,11 @@
 /* A dica sobe para o meio da tela (no rodapé ela passava despercebida) e fica um pouco maior. */
 .dica-deslizar { top: 42%; bottom: auto; font-size: 1.05rem; padding: 0.75rem 1.1rem; }
 @media (min-width: 40.01rem) { .dica-deslizar { top: 42%; bottom: auto; } }
+
+/* Meta de hoje do cronograma, na cor da área (14/10/2026). */
+.faixa-cronograma { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.2rem 0.6rem; align-items: center; padding-bottom: 0.35rem; font-size: 0.78rem; }
+.faixa-cronograma__texto { display: inline-flex; align-items: center; gap: 0.4rem; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: 700; color: var(--texto-2); }
+.faixa-cronograma__texto i { flex: none; width: 0.6rem; height: 0.6rem; border-radius: 2px; background: var(--cor-area); }
+.faixa-cronograma b { font-family: var(--fonte-marca); font-size: 0.85rem; }
+.faixa-cronograma__barra { grid-column: 1 / -1; height: 0.3rem; border-radius: 999px; background: var(--superficie-2); overflow: hidden; }
+.faixa-cronograma__barra span { display: block; height: 100%; border-radius: inherit; background: var(--cor-area); transition: width 0.3s ease; }

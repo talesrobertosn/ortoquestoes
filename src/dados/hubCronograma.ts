@@ -1,6 +1,6 @@
 import type { Indice } from './tipos'
 import { AREAS, focoPorQuestao, idsDoFoco, type AreaIncidencia, type Foco, type Nivel } from './incidencia'
-import { entraNoPlano, incluiSimulados, type CalculoPlano, type PlanoSalvo } from './planoEstudo'
+import { DIA_MINIMO, entraNoPlano, incluiSimulados, MINUTOS_POR_QUESTAO, TAMANHO_MINI, type CalculoPlano, type PlanoSalvo } from './planoEstudo'
 
 /**
  * O que a página do cronograma mostra além do plano em si: a constância de
@@ -56,12 +56,13 @@ export function respostasPorDia(respondidas: Respondidas): Map<string, number> {
   return porDia
 }
 
-export function calcularConstancia(respondidas: Respondidas, plano: PlanoSalvo, calculo: CalculoPlano, agora = new Date()): Constancia {
+export function calcularConstancia(respondidas: Respondidas, plano: PlanoSalvo, _calculo: CalculoPlano, agora = new Date()): Constancia {
   const hoje = meiaNoite(agora)
   const criado = meiaNoite(new Date(plano.criado_em))
   const porDia = respostasPorDia(respondidas)
   // Cumprir é chegar a 80% da média planejada (a meta do dia oscila; a média é estável).
-  const minimo = Math.max(5, Math.round(calculo.metaMedia * 0.8))
+  // Dia mínimo (reforma de 14/10/2026): 10 questões, novas ou de revisão, mantêm a sequência, mesmo em dia de plantão.
+  const minimo = DIA_MINIMO
   const estadoDe = (d: Date): { estado: EstadoDia; n: number } => {
     const n = porDia.get(chave(d)) ?? 0
     if (d < criado) return { estado: 'antes', n }
@@ -345,3 +346,56 @@ export function desempenhoPorArea(calculo: CalculoPlano): Array<{ slug: string; 
 }
 
 export type { Nivel }
+
+// ─── Mini-simulado, tempo e prontidão (reforma de 14/10/2026) ──────────────
+
+/**
+ * Mini-simulado a cada duas semanas: 30 questões já vistas, das áreas
+ * estudadas, misturadas. Primeiro as erradas e as de dúvida ou chute, depois
+ * as acertadas há mais tempo; nunca a mesma questão respondida nos últimos 3 dias.
+ */
+export function idsMiniSimulado(indice: Indice, respondidas: Respondidas, n = TAMANHO_MINI, agora = Date.now()): string[] {
+  const focos = focoPorQuestao(indice)
+  const recente = agora - 3 * DIA
+  const vistas = indice.questoes.filter((q) => !q.dup && q.an !== 1 && !q.ar && respondidas[q.id] && respondidas[q.id].c !== null && ultimaVez(respondidas[q.id]) < recente)
+  const nota = (id: string) => {
+    const r = respondidas[id]
+    return (r.c === false ? 30 : r.confianca && r.confianca !== 'seguro' ? 20 : 0) + (focos.get(id)?.nivel ?? 0) * 2 - ultimaVez(r) / (30 * DIA)
+  }
+  const escolhidas = vistas.map((q) => q.id).sort((a, b) => nota(b) - nota(a)).slice(0, n)
+  // Embaralha de forma estável para não agrupar por área.
+  return escolhidas.sort((a, b) => hash(a) - hash(b))
+}
+const hash = (id: string) => { let h = 2166136261; for (let i = 0; i < id.length; i++) { h ^= id.charCodeAt(i); h = Math.imul(h, 16777619) } return h >>> 0 }
+
+/** Minutos por questão da própria pessoa, pelas sessões já feitas (sem os simulados cronometrados). */
+export function minutosPorQuestao(historico: Array<{ segundos: number; respondidas: number; limite?: number | null }>): number {
+  const validas = historico.filter((h) => !h.limite && h.respondidas >= 5 && h.segundos > 0)
+  const respostas = validas.reduce((s, h) => s + h.respondidas, 0)
+  if (respostas < 30) return MINUTOS_POR_QUESTAO
+  const media = validas.reduce((s, h) => s + h.segundos, 0) / respostas / 60
+  return Math.round(Math.min(4, Math.max(0.6, media)) * 10) / 10
+}
+
+export const formatarTempo = (minutos: number) => {
+  const m = Math.max(1, Math.round(minutos))
+  return m >= 60 ? `${Math.floor(m / 60)}h${m % 60 ? String(m % 60).padStart(2, '0') : ''}` : `${m} min`
+}
+
+export interface Prontidao { slug: string; nome: string; cobertura: number; acerto: number | null; prontidao: number; posicao: number }
+
+/**
+ * Prontidão por área: quanto do acervo da área já foi visto vezes o acerto
+ * nela. Ordenada pelo ranking das áreas que mais caem.
+ */
+export function prontidaoPorArea(calculo: CalculoPlano): Prontidao[] {
+  return calculo.temas
+    .map((t) => {
+      const total = t.respondidas + t.faltam
+      const cobertura = total ? Math.round((t.respondidas / total) * 100) : 0
+      const acerto = t.acerto ?? t.acertoEstimado
+      const posicao = AREAS.findIndex((a) => a.slug === t.slug && !a.subtema)
+      return { slug: t.slug, nome: t.nome, cobertura, acerto, prontidao: acerto === null ? 0 : Math.round((cobertura * acerto) / 100), posicao: posicao < 0 ? 99 : posicao + 1 }
+    })
+    .sort((a, b) => a.posicao - b.posicao)
+}

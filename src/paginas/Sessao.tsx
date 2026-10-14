@@ -24,6 +24,25 @@ import { gravar, ler } from '../estado/armazenamento'
 import { recurso } from '../config'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Sessao.css'
+import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
+import { corDaArea } from '../dados/coresAreas'
+
+/** Na sessão do cronograma: a meta de hoje, na cor da área, sempre à vista (reforma de 14/10/2026). */
+function FaixaCronograma() {
+  const { calculo } = usarCronogramaHoje()
+  if (!calculo || !calculo.metaDiaria || calculo.naRetaFinal) return null
+  const feitas = Math.min(calculo.feitasHoje, calculo.metaDiaria)
+  const principal = calculo.hoje?.itens.find((i) => !i.mistura) ?? calculo.hoje?.itens[0]
+  const cor = corDaArea(principal?.slug ?? calculo.dias[0]?.itens[0]?.slug)
+  const feita = calculo.feitasHoje >= calculo.metaDiaria
+  return (
+    <div className="conteudo faixa-cronograma" style={{ ['--cor-area' as string]: cor }}>
+      <span className="faixa-cronograma__texto"><i aria-hidden="true" />{feita ? 'Meta de hoje feita' : `Cronograma de hoje${principal ? ` · ${principal.nome}` : ''}`}</span>
+      <b className="numerico">{calculo.feitasHoje}/{calculo.metaDiaria}</b>
+      <span className="faixa-cronograma__barra" role="progressbar" aria-valuemin={0} aria-valuemax={calculo.metaDiaria} aria-valuenow={feitas} aria-label="Meta de hoje do cronograma"><span style={{ width: `${(feitas / calculo.metaDiaria) * 100}%` }} /></span>
+    </div>
+  )
+}
 
 export function Sessao() {
   const { indice } = usarIndice()
@@ -291,6 +310,7 @@ export function Sessao() {
         <Icone nome="direita" tamanho={22} />
       </button>
       <div className="barra-sessao nao-imprime">
+        {sessao.origem === 'cronograma' && !simulado && <FaixaCronograma />}
         <div className="conteudo barra-sessao__interno">
           <span className="barra-sessao__texto barra-sessao__texto--pixel">
             {respondidas} de {total}
