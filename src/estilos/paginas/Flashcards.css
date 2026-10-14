@@ -2539,3 +2539,8 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 .fc-estacao--parada .fc-estacao__particula { animation: none; }
 @media (max-width: 600px), (max-height: 500px) { .fc-estacao__ramo { width: 96px; height: 128px; opacity: .65; } .fc-estacao__particula { width: 8px; height: 8px; } }
 @media (prefers-reduced-motion: reduce) { .fc-estacao__particula { animation: none; } }
+
+/* Paradas: a paisagem substitui a arena; o encontro mantém seu painel opaco. */
+.fc-arena[data-parada] .fc-batalha { visibility: hidden; pointer-events: none; }
+.fc-arena[data-parada] .fc-veu { background: radial-gradient(ellipse at 50% 45%, rgba(9, 20, 16, .3), rgba(5, 10, 13, .62) 95%) !important; }
+.fc-arena[data-parada] .fc-encruzilhada__cabeca { padding: 14px 20px; border-radius: 16px; background: rgba(17, 24, 20, .9); box-shadow: 0 0 0 1px rgba(237, 202, 130, .35); }

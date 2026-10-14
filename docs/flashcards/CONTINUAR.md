@@ -6,10 +6,14 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Paisagens — continuidade de 14/10/2026
+
+Música #258 e estações #259 publicadas. Ambiente vivo #260 publicado: deploy 38653549325 concluído com sucesso. O bloco atual conclui 43–48, com seis pinturas integradas às paradas existentes e sem mudar o motor. [Relatório](PAISAGENS-14-10.md). Precisa do próprio PR e deploy. Sem SQL. Próximo: aparência e auditoria dos dados existentes.
+
+
 ## Ambiente vivo — continuidade de 14/10/2026
 
 Música #258 publicada (deploy 38651984359). Estações #259 publicadas: deploy 38652550484 concluído com sucesso. O bloco atual conclui 49 e 50: ciclo de dia/noite no Jardim e fauna decorativa, sem alterar o motor ou criar monstros. [Relatório](AMBIENTE-VIVO-14-10.md). Sem SQL. Próximo: paisagens e aparência.
-
 
 ## Estações — continuidade de 14/10/2026
 

@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs",
+    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs",
     "validar": "python3 scripts/validar_acervo.py",
     "funcoes:colar": "node scripts/juntar-funcoes.mjs"
   },
