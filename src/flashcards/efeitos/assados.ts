@@ -6,15 +6,15 @@ export interface AnimAssada { linha: number; quadros: number; ms: number }
 export interface MetaAssada { largura: number; altura: number; colunas: number; ancora: [number, number]; caixa: [number, number, number, number]; animacoes: Record<string, AnimAssada> }
 export const ASSADOS: Record<string, MetaAssada> = {
  "cogumelo": {
-  "largura": 136,
-  "altura": 108,
+  "largura": 156,
+  "altura": 112,
   "colunas": 6,
   "ancora": [
-   60,
+   80,
    101
   ],
   "caixa": [
-   36,
+   56,
    52,
    48,
    51
@@ -100,15 +100,15 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "ent": {
-  "largura": 196,
-  "altura": 150,
+  "largura": 222,
+  "altura": 152,
   "colunas": 6,
   "ancora": [
-   106,
+   130,
    142
   ],
   "caixa": [
-   32,
+   56,
    31,
    149,
    115
@@ -147,15 +147,15 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "esqueleto": {
-  "largura": 136,
-  "altura": 108,
+  "largura": 152,
+  "altura": 116,
   "colunas": 6,
   "ancora": [
-   60,
+   76,
    101
   ],
   "caixa": [
-   35,
+   51,
    32,
    47,
    71
@@ -194,15 +194,15 @@ export const ASSADOS: Record<string, MetaAssada> = {
   }
  },
  "goblin": {
-  "largura": 136,
-  "altura": 108,
+  "largura": 168,
+  "altura": 116,
   "colunas": 6,
   "ancora": [
-   60,
+   88,
    101
   ],
   "caixa": [
-   20,
+   48,
    31,
    77,
    72

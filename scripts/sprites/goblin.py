@@ -46,9 +46,19 @@ cc.TOPO = np.array([len(cc.RAMPAS[n]) - 1 for n in cc.NOMES])
 cc.CONTORNO = {k: (np.array(v[0], float) * 0.6).astype(np.uint8) for k, v in cc.RAMPAS.items()}
 
 from cavaleiro_chibi import (  # noqa: E402
-    ANCORA, H, PE, W, X0, XX, YY, Quadro, bezier, cheio, desloca, estrela, m_capsula, m_curva, m_elipse, m_poli,
+    Quadro, bezier, cheio, desloca, estrela, m_capsula, m_curva, m_elipse, m_poli,
     mistura, n_capsula, n_esfera, n_plano, ponto, suave, tons,
 )
+
+# tela com folga dos lados e embaixo (a arma e a derrota não encostam na borda da folha);
+# as ferramentas de cc leem W, H, XX e YY na hora
+W, H = 168, 116
+X0, PE = 88, 101
+ANCORA = (X0, PE)
+cc.W, cc.H = W, H
+cc.YY, cc.XX = np.mgrid[0:H, 0:W].astype(np.float32) + 0.5
+cc.DITHER = cc.BAYER[(cc.YY.astype(int)) % 2, (cc.XX.astype(int)) % 2]
+XX, YY = cc.XX, cc.YY
 
 DESTINO = cc.DESTINO
 
@@ -270,6 +280,9 @@ def quadro(t: dict) -> np.ndarray:
         im = Image.fromarray(out, 'RGBA').rotate(queda, resample=Image.NEAREST, center=(ANCORA[0], ANCORA[1] - 1),
                                                  translate=(k('queda_x', 0), k('queda_y', 0)))
         out = np.asarray(im).copy()
+        linhas = np.where(out[..., 3].any(axis=1))[0]
+        if len(linhas):   # deitado no chão: o ponto mais baixo encosta na linha dos pés
+            out = desloca(out, int(PE + 1 - linhas.max()), 0)
     return out
 
 
@@ -295,7 +308,7 @@ def poses():
     a['dano'] = [{'x': 5 * f, 'inclina': 3 * f, 'orelha': -2.5 * f, 'fechado': f > 0.5, 'boca': 0.7 * f, 'mao': (-5, 11 - 2 * f), 'porrete': -2.5 - 0.3 * f}
                  for f in (1.0, 0.6, 0.25)]
     a['derrota'] = [{'inclina': 2 * f, 'orelha': -2 * f, 'fechado': f > 0.3, 'boca': 0.6, 'mao': (-5 + 6 * f, 11 - 4 * f), 'porrete': -2.35 + 0.8 * f,
-                     'queda': -84 * f, 'queda_x': -2 * f, 'queda_y': -14 * f, 'estrelas_tonto': (f * 6) if f > 0.6 else None}
+                     'queda': -84 * f, 'queda_x': -2 * f, 'queda_y': 0, 'estrelas_tonto': (f * 6) if f > 0.6 else None}
                     for f in (0.15, 0.4, 0.7, 0.92, 1.0)]
     v = []
     for f, cint in ((0.5, None), (1.0, [(X0 + 22, 24, 2)]), (0.7, [(X0 + 24, 20, 3), (X0 - 26, 30, 2)]), (0.2, [(X0 - 22, 26, 2)])):

@@ -43,9 +43,19 @@ cc.TOPO = np.array([len(cc.RAMPAS[n]) - 1 for n in cc.NOMES])
 cc.CONTORNO = {k: (np.array(v[0], float) * 0.6).astype(np.uint8) for k, v in cc.RAMPAS.items()}
 
 from cavaleiro_chibi import (  # noqa: E402
-    ANCORA, H, PE, W, X0, XX, YY, Quadro, bezier, cheio, desloca, estrela, m_capsula, m_curva, m_elipse, m_poli,
+    Quadro, bezier, cheio, desloca, estrela, m_capsula, m_curva, m_elipse, m_poli,
     mistura, n_capsula, n_esfera, n_plano, ponto, suave, tons,
 )
+
+# tela com folga dos lados e embaixo (a arma e a derrota não encostam na borda da folha);
+# as ferramentas de cc leem W, H, XX e YY na hora
+W, H = 152, 116
+X0, PE = 76, 101
+ANCORA = (X0, PE)
+cc.W, cc.H = W, H
+cc.YY, cc.XX = np.mgrid[0:H, 0:W].astype(np.float32) + 0.5
+cc.DITHER = cc.BAYER[(cc.YY.astype(int)) % 2, (cc.XX.astype(int)) % 2]
+XX, YY = cc.XX, cc.YY
 
 DESTINO = cc.DESTINO
 

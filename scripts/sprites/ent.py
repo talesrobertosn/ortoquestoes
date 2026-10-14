@@ -28,8 +28,8 @@ import cavaleiro_chibi as cc  # noqa: E402
 from motor import gravar_folha  # noqa: E402
 
 # tela de chefe: as ferramentas de cc leem W, H, XX, YY e DITHER na hora
-W, H = 196, 150
-X0, PE = 106, 142
+W, H = 222, 152
+X0, PE = 130, 142
 ANCORA = (X0, PE)
 cc.W, cc.H = W, H
 cc.YY, cc.XX = np.mgrid[0:H, 0:W].astype(np.float32) + 0.5
