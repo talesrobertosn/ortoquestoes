@@ -33,6 +33,12 @@ export const CHAVE_RECORDES = 'flashcards:recordes'
 export const CHAVE_NIVEL = 'flashcards:nivel'
 /** A pessoa já escolheu entrar com ou sem som (pergunta só na primeira entrada). */
 export const CHAVE_SOM_ESCOLHIDO = 'flashcards:som-escolhido'
+/**
+ * A escolha da primeira entrada ("com som" ou "sem som"), guardada no aparelho.
+ * Valores antigos (true) só diziam que a pessoa já escolheu: o som fica nos ajustes.
+ */
+export type SomEscolhido = 'com' | 'sem' | true | false
+export const somPreferido = (v: SomEscolhido): boolean | undefined => (v === 'com' ? true : v === 'sem' ? false : undefined)
 const TAMANHO_HISTORICO = 600
 
 export interface Recordes {

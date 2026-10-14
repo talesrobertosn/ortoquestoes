@@ -24,7 +24,7 @@ import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaParti
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
   BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
-  RECORDES_VAZIOS, type Bestiario, type Recordes, type RegistroFlashcard,
+  CHAVE_SOM_ESCOLHIDO, RECORDES_VAZIOS, somPreferido, type Bestiario, type Recordes, type RegistroFlashcard, type SomEscolhido,
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
 import { Cartao, familiasDe } from './Cartao'
@@ -198,7 +198,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     // Ajustes da versão 1 (som desligado por padrão) não valem mais; a 2 ganha o volume da música.
     const versao = salvos.versao as number | undefined
     const validos = versao === 3 ? salvos : versao === 2 ? { ...salvos, versao: 3 as const } : {}
-    return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...validos, volume: volumeDaSessao() }
+    // sem ajuste salvo nesta conta, vale a escolha da primeira entrada feita neste aparelho
+    const som = somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false))
+    return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...(som === undefined ? {} : { som }), ...validos, volume: volumeDaSessao() }
   })
   const definirAjustes = (a: Partial<Ajustes>) => definirAjustesBruto((v) => { const n = { ...v, ...a }; gravar(CHAVE_AJUSTES, n); return n })
   const reduzido = ajustes.efeitos === 'reduzidos'
