@@ -1,6 +1,6 @@
 import { chamarRpc, ErroRpc } from '../servicos/supabase'
 import { gravar, ler } from '../estado/armazenamento'
-import { incluiSimulados, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
+import { chaveData, incluiSimulados, opcoesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
 
 /**
  * Leitura e gravação do cronograma no servidor. A escolha de incluir os
@@ -67,4 +67,30 @@ export async function ficarSoComOficiais(plano: PlanoSalvo): Promise<PlanoSalvo 
 /** Muda só as opções (semana difícil, por exemplo), sem recomeçar a contagem. */
 export async function salvarOpcoes(plano: PlanoSalvo, opcoes: OpcoesPlano): Promise<PlanoSalvo | null> {
   return salvarPlano({ p_data_prova: plano.data_prova, p_intensidade: plano.intensidade, p_folgas: plano.folgas, p_prova: plano.prova, p_base: plano.base_respondidas, p_recomecar: false }, incluiSimulados(plano), opcoes)
+}
+
+/**
+ * Adiantar: as opções com o registro de hoje (a meta do dia e quanto a pessoa pediu
+ * para adiantar), ou null se nada mudou. É o que permite, amanhã, tirar da meta o que
+ * ela fez a mais hoje. Sem `pedido`, mantém o que já estava pedido.
+ */
+export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPlano, 'metaDiaria' | 'extraHoje' | 'adiantarPedido' | 'naRetaFinal' | 'provaPassou'>, pedido?: number): OpcoesPlano | null {
+  if (calculo.naRetaFinal || calculo.provaPassou) return null
+  const hoje = chaveData(new Date())
+  const limite = chaveData(new Date(Date.now() - 30 * 86_400_000))
+  const lista = opcoesDe(plano).adiantados.filter((r) => r.em >= limite)
+  const atual = lista.find((r) => r.em === hoje)
+  const novoPedido = Math.max(0, Math.round(pedido ?? atual?.pedido ?? 0))
+  const outros = lista.filter((r) => r.em !== hoje).slice(-9)
+  const precisa = calculo.extraHoje > 0 || novoPedido > 0
+  if (!precisa) return atual ? { ...(plano.opcoes ?? {}), adiantados: outros } : null
+  if (atual && atual.meta === calculo.metaDiaria && (atual.pedido ?? 0) === novoPedido) return null
+  return { ...(plano.opcoes ?? {}), adiantados: [...outros, { em: hoje, meta: calculo.metaDiaria, ...(novoPedido ? { pedido: novoPedido } : {}) }] }
+}
+
+/** Grava o registro de hoje se mudou. Devolve o plano salvo (ou o plano com as opções novas, se o servidor falhar). */
+export async function guardarAdiantamento(plano: PlanoSalvo, calculo: Parameters<typeof opcoesComAdiantamento>[1], pedido?: number): Promise<PlanoSalvo | null> {
+  const opcoes = opcoesComAdiantamento(plano, calculo, pedido)
+  if (!opcoes) return null
+  try { return (await salvarOpcoes(plano, opcoes)) ?? { ...plano, opcoes } } catch { gravar(CHAVE_OPCOES, opcoes); return { ...plano, opcoes } }
 }

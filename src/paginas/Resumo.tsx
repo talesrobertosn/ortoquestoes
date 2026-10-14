@@ -581,6 +581,7 @@ export function Resumo() {
  */
 function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usarCronogramaHoje>['calculo']> }) {
   const feita = calculo.metaDiaria > 0 && calculo.feitasHoje >= calculo.metaDiaria
+  const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
   const amanha = calculo.amanha
   const nomesAmanha = amanha ? [...new Set(amanha.itens.map((i) => i.nome))].join(' e ') : ''
   const quandoAmanha = amanha ? amanha.data.toLocaleDateString('pt-BR', { weekday: 'long' }).replace('-feira', '') : ''
@@ -588,13 +589,13 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
     <section className={'rs-cronograma' + (feita ? ' rs-cronograma--feita' : '')} aria-labelledby="rs-cron-titulo">
       <span className="rs-cronograma__selo" aria-hidden="true">{feita ? <Icone nome="certo" tamanho={28} /> : <span className="numerico">{calculo.faltaHoje}</span>}</span>
       <h2 id="rs-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${calculo.faltaHoje} para a meta de hoje`}</h2>
-      <p>{calculo.feitasHoje} de {calculo.metaDiaria} questões novas do cronograma hoje.</p>
+      <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
       <div className="rs-cronograma__proximo">
-        {feita ? <>Ainda hoje: <b>as revisões do dia</b> e, se quiser, uma rodada de flashcards.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
-        {amanha && <><br />{amanha.data.getTime() - Date.now() < 2 * 86_400_000 ? 'Amanhã' : `Na ${quandoAmanha}`}: <b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.mini ? ' e o mini-simulado' : ''}.</>}
+        {feita ? <>Pronto por hoje. Se quiser, <b>adiante o próximo dia</b>: o que fizer a mais sai dele. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
+        {amanha && <><br />{amanha.data.getTime() - Date.now() < 2 * 86_400_000 ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
       </div>
-      <a className={'botao botao--grande ' + (feita ? 'botao--ouro' : 'botao--principal')} href={href(feita ? '/revisao' : '/cronograma')}>{feita ? 'Fazer as revisões agora' : 'Continuar o cronograma'}</a>
-      {feita && <a className="rs-cronograma__link" href={href('/cronograma')}>ou voltar ao cronograma</a>}
+      <a className={'botao botao--grande ' + (feita ? 'botao--ouro' : 'botao--principal')} href={href(feita ? '/cronograma?adiantar=1' : '/cronograma')}>{feita ? 'Adiantar o próximo dia' : 'Continuar o cronograma'}</a>
+      {feita && <span className="rs-cronograma__link"><a href={href('/cronograma')}>Voltar ao cronograma</a> · <a href={href('/revisao')}>revisões (opcional)</a></span>}
     </section>
   )
 }

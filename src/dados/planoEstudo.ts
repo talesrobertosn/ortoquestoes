@@ -51,7 +51,15 @@ export interface OpcoesPlano {
   dominadas?: string[]
   /** Outra prova antes da principal (ex.: TARO antes do TEOT): só um marco no caminho. */
   provaExtra?: { nome: string; data: string } | null
+  /**
+   * Adiantamentos: nos dias em que a pessoa foi além da meta, a meta daquele dia
+   * ("AAAA-MM-DD") e quanto ela pediu para adiantar. O que passou da meta sai dos
+   * dias seguintes, começando pelo próximo dia de estudo.
+   */
+  adiantados?: RegistroAdiantado[]
 }
+
+export interface RegistroAdiantado { em: string; meta: number; pedido?: number }
 
 /** Dia mínimo: mantém a sequência e é a meta da semana difícil. */
 export const DIA_MINIMO = 10
@@ -74,7 +82,11 @@ export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): 
   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],
   comecarPor: plano?.opcoes?.comecarPor ?? null,
   dominadas: plano?.opcoes?.dominadas ?? [],
+  adiantados: (plano?.opcoes?.adiantados ?? []).filter((r) => r && /^\d{4}-\d{2}-\d{2}$/.test(r.em) && Number.isFinite(r.meta)),
 })
+
+/** "AAAA-MM-DD" de uma data local. */
+export const chaveData = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 
 export const incluiSimulados = (plano: Pick<PlanoSalvo, 'incluir_simulados'> | null | undefined) => plano?.incluir_simulados !== false
 
@@ -138,7 +150,11 @@ export const ROTULO_PASSADA: Record<Passada, { nome: string; texto: string }> = 
 export type TipoDia = 'estudo' | 'leve' | 'dificil' | 'folga'
 /** Uma área dentro de um dia: as questões novas dela e os assuntos. */
 export interface ItemDia { slug: string; nome: string; n: number; assuntos: string[]; mistura: boolean; passada: Passada; ids: string[] }
-export interface DiaPlano { data: Date; tipo: TipoDia; meta: number; itens: ItemDia[]; total: number; passada: Passada | null; mini: boolean }
+export interface DiaPlano {
+  data: Date; tipo: TipoDia; meta: number; itens: ItemDia[]; total: number; passada: Passada | null; mini: boolean
+  /** Questões deste dia que a pessoa já adiantou (fez antes): saem da meta dele. */
+  adiantado: number
+}
 export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number; focos: string[]; assuntos: AssuntoSemana[]; posicaoArea: number | null; depois: string[] }>; total: number; atual: boolean }
 export interface CalculoPlano {
   diasAteProva: number
@@ -158,6 +174,15 @@ export interface CalculoPlano {
   metaDiaria: number
   feitasHoje: number
   faltaHoje: number
+  /** Adiantar: o que hoje já perdeu da meta por adiantamentos de dias anteriores. */
+  adiantadoHoje: number
+  /** Feitas hoje além da meta (vão para os próximos dias). */
+  extraHoje: number
+  /** O que a pessoa pediu para adiantar hoje e o quanto ainda falta disso. */
+  adiantarPedido: number
+  adiantarFalta: number
+  /** Meta de hoje se não houvesse adiantamento (para mostrar "era X"). */
+  metaHojeSemAdiantar: number
   esperadoAteHoje: number
   /** Positivo = adiantado, em % do esperado. */
   ritmo: number
@@ -233,12 +258,17 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 
   // Primeira resposta de hoje (não conta revisão de questão já vista).
   // Só o que entra no cronograma: cirurgia da mão, cópias e anuladas não contam.
-  const feitasHoje = indice.questoes.filter((q) => {
-    if (!entraNoPlano(q, simulados)) return false
+  // (contadas por dia, para saber também quanto foi feito nos dias em que a pessoa adiantou)
+  const primeirasPorDia = new Map<number, number>()
+  for (const q of indice.questoes) {
+    if (!entraNoPlano(q, simulados)) continue
     const r = respondidas[q.id]
     const primeira = r?.historico?.[0]?.em ?? r?.q
-    return primeira !== undefined && primeira >= hoje.getTime()
-  }).length
+    if (primeira === undefined) continue
+    const dia = primeira >= hoje.getTime() ? hoje.getTime() : meiaNoite(new Date(primeira)).getTime()
+    primeirasPorDia.set(dia, (primeirasPorDia.get(dia) ?? 0) + 1)
+  }
+  const feitasHoje = primeirasPorDia.get(hoje.getTime()) ?? 0
 
   const diasEstudoRestantes = diasDeEstudo(hoje, fimEstudo, plano.folgas)
 
@@ -330,14 +360,50 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     else if (c.tipo === 'estudo') pesoNormal += c.mini ? 0.5 : 1
   }
   const metaPlanejada = Math.max(1, Math.ceil(alvo / Math.max(1, diasDeEstudoCriacao.length)))
-  const precisa = pesoNormal > 0 ? Math.ceil(Math.max(0, restante + feitasHoje - fixos) / pesoNormal) : Math.max(0, restante + feitasHoje)
-  const tetoAtivo = precisa > Math.ceil(metaPlanejada * TETO_ATRASO)
-  const metaDiaNormal = tetoAtivo ? Math.ceil(metaPlanejada * TETO_ATRASO) : precisa
-  const metaDoTipo = (tipo: TipoDia, mini: boolean) => tipo === 'folga' ? 0 : tipo === 'leve' ? Math.min(opcoes.qtdLeve, metaDiaNormal || opcoes.qtdLeve) : tipo === 'dificil' ? Math.min(DIA_MINIMO, metaDiaNormal || DIA_MINIMO) : mini ? Math.ceil(metaDiaNormal / 2) : metaDiaNormal
+  // A meta normal; `devolver` são questões que dias de hoje em diante já não pedem (foram adiantadas antes de hoje).
+  const normalCom = (devolver: number) => {
+    const precisa = pesoNormal > 0 ? Math.ceil(Math.max(0, restante + feitasHoje - fixos + devolver) / pesoNormal) : Math.max(0, restante + feitasHoje)
+    const teto = precisa > Math.ceil(metaPlanejada * TETO_ATRASO)
+    return { normal: teto ? Math.ceil(metaPlanejada * TETO_ATRASO) : precisa, teto }
+  }
+  const metaDoTipoCom = (normal: number) => (tipo: TipoDia, mini: boolean) => tipo === 'folga' ? 0 : tipo === 'leve' ? Math.min(opcoes.qtdLeve, normal || opcoes.qtdLeve) : tipo === 'dificil' ? Math.min(DIA_MINIMO, normal || DIA_MINIMO) : mini ? Math.ceil(normal / 2) : normal
+  // Adiantar: o que a pessoa fez além da meta num dia sai dos dias seguintes, a começar pelo próximo
+  // dia de estudo (até zerar a meta dele; o resto vai para o outro). Só vale para os registros guardados
+  // (dia e meta daquele dia); o de hoje usa o que ela já fez a mais ou o que pediu, o que for maior.
+  const registros = opcoes.adiantados
+    .map((r) => ({ data: dataLocal(r.em), meta: Math.max(0, r.meta), pedido: Math.max(0, Math.min(400, r.pedido ?? 0)) }))
+    .filter((r) => r.data <= hoje && r.data >= criado && hoje.getTime() - r.data.getTime() <= 30 * DIA)
+    .sort((a, b) => a.data.getTime() - b.data.getTime())
+  const proximo = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)
+  const alocar = (metaBase: (d: Date) => number, deHoje: number) => {
+    const mapa = new Map<number, number>()
+    const lista = registros.some((r) => r.data.getTime() === hoje.getTime()) || !deHoje ? registros : [...registros, { data: hoje, meta: 0, pedido: 0 }]
+    for (const r of lista) {
+      let resto = r.data.getTime() === hoje.getTime() ? deHoje : Math.max(0, (primeirasPorDia.get(r.data.getTime()) ?? 0) - r.meta)
+      for (let d = proximo(r.data); resto > 0 && d < fimEstudo; d = proximo(d)) {
+        const livre = Math.max(0, metaBase(d) - (mapa.get(d.getTime()) ?? 0))
+        const t = Math.min(resto, livre)
+        if (t) { mapa.set(d.getTime(), (mapa.get(d.getTime()) ?? 0) + t); resto -= t }
+      }
+    }
+    return mapa
+  }
+  const baseDoDia = (normal: number) => { const m = metaDoTipoCom(normal); return (d: Date) => { const tipo = tipoDe(d); return tipo === 'estudo' ? m(tipo, ehMini(d)) : m(tipo, false) } }
+  const devolvido = (mapa: Map<number, number>) => [...mapa].reduce((s2, [t, n]) => s2 + (t >= hoje.getTime() ? n : 0), 0)
+  const passo1 = alocar(baseDoDia(normalCom(0).normal), 0)
+  const { normal: metaDiaNormal, teto: tetoAtivo } = normalCom(devolvido(passo1))
+  const metaDoTipo = metaDoTipoCom(metaDiaNormal)
+  const anteriores = alocar(baseDoDia(metaDiaNormal), 0)
   const tipoHoje = calendario[0]?.tipo ?? tipoDe(hoje)
   const miniHoje = !!calendario[0]?.mini
-  const metaDiaria = hoje >= inicioRetaFinal ? 0 : Math.min(restante + feitasHoje, metaDoTipo(tipoHoje, miniHoje))
+  const metaHojeSemAdiantar = hoje >= inicioRetaFinal ? 0 : Math.min(restante + feitasHoje, metaDoTipo(tipoHoje, miniHoje))
+  const adiantadoHoje = Math.min(metaHojeSemAdiantar, anteriores.get(hoje.getTime()) ?? 0)
+  const metaDiaria = metaHojeSemAdiantar - adiantadoHoje
   const faltaHoje = Math.max(0, metaDiaria - feitasHoje)
+  const extraHoje = hoje >= inicioRetaFinal ? 0 : Math.max(0, feitasHoje - metaDiaria)
+  const adiantarPedido = hoje >= inicioRetaFinal ? 0 : registros.find((r) => r.data.getTime() === hoje.getTime())?.pedido ?? 0
+  const adiantarFalta = Math.max(0, Math.min(restante, adiantarPedido - extraHoje))
+  const creditos = alocar(baseDoDia(metaDiaNormal), Math.max(extraHoje, adiantarPedido))
 
   // Blocos: em cada passada, as áreas se revezam em blocos de ~3 dias.
   const tamanhoBloco = Math.max(20, Math.round(metaDiaNormal * DIAS_BLOCO * (1 - MISTURA)))
@@ -358,7 +424,8 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const tirar = (bloco: { ids: string[] }, n: number) => bloco.ids.splice(0, n)
   const dias: DiaPlano[] = []
   for (const [i, c] of calendario.entries()) {
-    const meta = i === 0 ? faltaHoje : metaDoTipo(c.tipo, c.mini)
+    const adiantado = i === 0 ? adiantadoHoje : Math.min(metaDoTipo(c.tipo, c.mini), creditos.get(c.data.getTime()) ?? 0)
+    const meta = i === 0 ? faltaHoje + adiantarFalta : metaDoTipo(c.tipo, c.mini) - adiantado
     const itens: ItemDia[] = []
     let capacidade = meta
     const adicionar = (bloco: { t: TemaPlano; passada: Passada; ids: string[] }, n: number, mistura: boolean) => {
@@ -406,7 +473,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
       // Se a área do dia acabou no meio e a seguinte entrou com mais questões, ela vem primeiro.
       itens.sort((a2, b2) => Number(a2.mistura) - Number(b2.mistura) || (a2.mistura ? 0 : b2.n - a2.n))
     }
-    dias.push({ data: c.data, tipo: c.tipo, meta, itens, total: itens.reduce((s2, it) => s2 + it.n, 0), passada: itens[0]?.passada ?? null, mini: c.mini })
+    dias.push({ data: c.data, tipo: c.tipo, meta, itens, total: itens.reduce((s2, it) => s2 + it.n, 0), passada: itens[0]?.passada ?? null, mini: c.mini, adiantado })
   }
   const cortadas = blocos.reduce((s2, b2) => s2 + b2.ids.length, 0)
 
@@ -448,10 +515,10 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 
   const diaHoje = dias[0] && dias[0].data.getTime() === hoje.getTime() ? dias[0] : null
   const principalHoje = diaHoje?.itens[0]
-  const hojeTarefa = diaHoje && principalHoje && faltaHoje > 0
-    ? { slug: principalHoje.slug, nome: principalHoje.nome, n: Math.min(faltaHoje, 100), focos: principalHoje.assuntos.slice(0, 3), itens: diaHoje.itens, mini: diaHoje.mini, tipo: diaHoje.tipo }
+  const hojeTarefa = diaHoje && principalHoje && faltaHoje + adiantarFalta > 0
+    ? { slug: principalHoje.slug, nome: principalHoje.nome, n: Math.min(faltaHoje + adiantarFalta, 100), focos: principalHoje.assuntos.slice(0, 3), itens: diaHoje.itens, mini: diaHoje.mini, tipo: diaHoje.tipo }
     : null
-  const amanha = dias.slice(1).find((d) => d.total > 0 || d.mini) ?? null
+  const amanha = dias.slice(1).find((d) => d.total > 0 || d.mini || d.adiantado > 0) ?? null
 
   // Passadas: a de hoje e o primeiro dia de cada uma.
   const inicioPassada: Partial<Record<Passada, Date>> = {}
@@ -479,6 +546,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   return {
     diasAteProva: diasEntre(hoje, prova),
     diasEstudoRestantes, inicioRetaFinal, diasRetaFinal: diasFinais, inicioModoProva, vespera, fase, metaMedia, alvo, feitas, restante, metaDiaria, feitasHoje, faltaHoje,
+    adiantadoHoje, extraHoje, adiantarPedido, adiantarFalta, metaHojeSemAdiantar,
     esperadoAteHoje, ritmo, temas, semanas, hoje: hojeTarefa,
     naRetaFinal: hoje >= inicioRetaFinal && hoje < prova,
     provaPassou: hoje >= prova,

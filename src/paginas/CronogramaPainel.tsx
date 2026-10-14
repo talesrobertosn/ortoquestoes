@@ -99,7 +99,7 @@ export interface ItemChecklist {
   opcional?: boolean
 }
 
-export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, cor, aviso }: {
+export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, cor, aviso, adiantar }: {
   calculo: CalculoPlano
   titulo: string
   porQue: ReactNode
@@ -108,7 +108,11 @@ export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, co
   botao: { rotulo: string; detalhe?: string; aoClicar?: () => void; href?: string; ouro?: boolean } | null
   cor: string
   aviso?: ReactNode
+  /** O painel de adiantar: embaixo do botão, ou no lugar dele quando a meta de hoje já está feita. */
+  adiantar?: ReactNode
 }) {
+  const obrigatorios = itens.filter((i) => !i.opcional)
+  const extras = itens.filter((i) => i.opcional)
   const totalMin = itens.filter((i) => !i.opcional).reduce((s, i) => s + (i.minutos ?? 0), 0)
   const faltaMin = itens.filter((i) => !i.opcional && i.estado !== 'feito').reduce((s, i) => s + (i.minutos ?? 0) * (i.progresso ? 1 - i.progresso.feitas / Math.max(1, i.progresso.total) : 1), 0)
   const hoje = new Date()
@@ -126,11 +130,29 @@ export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, co
         {assuntos.length > 0 && <ul className="cp-chips" aria-label="Assuntos de hoje">{assuntos.slice(0, 5).map((a) => <li key={a}>{a}</li>)}{assuntos.length > 5 && <li>e mais {assuntos.length - 5}</li>}</ul>}
         {aviso}
         <ol className="cp-lista">
-          {itens.map((i, k) => (
-            <li key={i.id} className={`cp-lista__item cp-lista__item--${i.estado}`}>
-              <span className="cp-lista__marca" aria-hidden="true">{i.estado === 'feito' ? <Icone nome="certo" tamanho={14} /> : k + 1}</span>
+          {obrigatorios.map((i, k) => <ItemDaLista key={i.id} item={i} marca={k + 1} />)}
+        </ol>
+        {totalMin > 0 && <p className="cp-hoje__total"><span>Seu dia: <b>~{formatarTempo(totalMin)}</b></span><span>{faltaMin >= 1 ? <>Falta: <b>~{formatarTempo(faltaMin)}</b></> : <b>Dia completo</b>}</span></p>}
+        {botao && (botao.href
+          ? <a className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} href={botao.href} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</a>
+          : <button type="button" className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</button>)}
+        {adiantar}
+        {extras.length > 0 && <div className="cp-extras">
+          <p className="cp-extras__titulo">Se sobrar tempo <small>não conta na meta</small></p>
+          <ul className="cp-lista cp-lista--extras">{extras.map((i) => <ItemDaLista key={i.id} item={i} marca="+" />)}</ul>
+        </div>}
+        {calculo.projecao.tetoAtivo && !calculo.naRetaFinal && <p className="cp-hoje__teto"><Icone nome="alerta" tamanho={15} /> A meta subiu o máximo (25% acima da planejada) para não virar maratona. O que não couber sai do fim da fila, a parte de prioridade mais baixa.</p>}
+      </div>
+    </section>
+  )
+}
+
+function ItemDaLista({ item: i, marca }: { item: ItemChecklist; marca: ReactNode }) {
+  return (
+            <li className={`cp-lista__item cp-lista__item--${i.estado} cp-lista__item--${i.id}`}>
+              <span className="cp-lista__marca" aria-hidden="true">{i.estado === 'feito' ? <Icone nome="certo" tamanho={14} /> : marca}</span>
               <span className="cp-lista__texto">
-                <strong>{i.titulo}{i.opcional && <em> · opcional</em>}</strong>
+                <strong>{i.titulo}</strong>
                 <small>{i.texto}</small>
                 {i.progresso && i.progresso.total > 0 && <span className="cp-lista__barra" role="progressbar" aria-valuemin={0} aria-valuemax={i.progresso.total} aria-valuenow={i.progresso.feitas} aria-label={`${i.progresso.feitas} de ${i.progresso.total}`}><span style={{ width: `${Math.min(100, (i.progresso.feitas / i.progresso.total) * 100)}%` }} /></span>}
               </span>
@@ -139,15 +161,65 @@ export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, co
                 {i.acao && i.estado !== 'feito' && (i.acao.href ? <a className="cp-lista__acao" href={i.acao.href} onClick={i.acao.aoClicar}>{i.acao.rotulo}</a> : <button type="button" className="cp-lista__acao" onClick={i.acao.aoClicar}>{i.acao.rotulo}</button>)}
               </span>
             </li>
-          ))}
-        </ol>
-        {totalMin > 0 && <p className="cp-hoje__total"><span>Seu dia: <b>~{formatarTempo(totalMin)}</b></span><span>{faltaMin >= 1 ? <>Falta: <b>~{formatarTempo(faltaMin)}</b></> : <b>Dia completo</b>}</span></p>}
-        {botao && (botao.href
-          ? <a className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} href={botao.href} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</a>
-          : <button type="button" className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</button>)}
-        {calculo.projecao.tetoAtivo && !calculo.naRetaFinal && <p className="cp-hoje__teto"><Icone nome="alerta" tamanho={15} /> A meta subiu o máximo (25% acima da planejada) para não virar maratona. O que não couber sai do fim da fila, a parte de prioridade mais baixa.</p>}
+  )
+}
+
+// ─── Adiantar ──────────────────────────────────────────────────────────────
+
+/**
+ * Adiantar: o que a pessoa faz além da meta de hoje sai dos próximos dias, a começar
+ * por amanhã. Fica sempre à vista no cartão Hoje; depois da meta feita vira o destaque.
+ */
+export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdiantar, aoCancelar }: {
+  calculo: CalculoPlano
+  minutos: number
+  destaque: boolean
+  salvando?: boolean
+  aoAdiantar: (n: number) => void
+  aoCancelar: () => void
+}) {
+  // Os próximos dias que ainda têm meta, com quanto cada um pede.
+  const proximos = calculo.dias.slice(1).filter((d) => d.meta > 0).slice(0, 3)
+  const ja = Math.max(calculo.extraHoje, calculo.adiantarPedido)
+  const tocados = calculo.dias.slice(1).filter((d) => d.adiantado > 0)
+  if (!proximos.length && !tocados.length) return null
+  const nomeDia = (d: Date) => diferencaDias(d) === 1 ? 'amanhã' : semanaDia(d)
+  const d1 = proximos[0], d2 = proximos[1]
+  const opcoes: Array<{ id: string; n: number; rotulo: string; efeito: string }> = []
+  if (d1) {
+    for (const n of [10, 20, 30]) if (n < d1.meta) opcoes.push({ id: `+${n}`, n, rotulo: `+${n}`, efeito: `${nomeDia(d1.data)} fica com ${d1.meta - n}` })
+    opcoes.push({ id: 'd1', n: d1.meta, rotulo: diferencaDias(d1.data) === 1 ? 'Amanhã inteiro' : `${semanaDia(d1.data)} inteira`, efeito: `${d1.meta} questões · ${nomeDia(d1.data)} livre` })
+    if (d2) opcoes.push({ id: 'd2', n: d1.meta + d2.meta, rotulo: `2 dias`, efeito: `${d1.meta + d2.meta} questões · até ${semanaDia(d2.data)}` })
+  }
+  const pendente = Math.max(0, calculo.adiantarPedido - calculo.extraHoje)
+  return (
+    <div className={'cp-adiantar' + (destaque ? ' cp-adiantar--destaque' : '')} id="adiantar">
+      <div className="cp-adiantar__cabeca">
+        <span className="cp-adiantar__icone" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>
+        <div>
+          <strong>{destaque ? 'Quer adiantar?' : 'Sobrou energia? Adiante'}</strong>
+          <small>O que você fizer além da meta de hoje sai dos próximos dias, começando por {d1 ? nomeDia(d1.data) : 'amanhã'}.</small>
+        </div>
       </div>
-    </section>
+      {ja > 0 && <p className="cp-adiantar__estado" role="status">
+        <Icone nome="certo" tamanho={14} />
+        <span>
+          <b>{ja} {ja === 1 ? 'questão adiantada' : 'questões adiantadas'}</b>
+          {tocados.length > 0 && <> · {tocados.slice(0, 2).map((d) => `${nomeDia(d.data)}: ${d.meta + d.adiantado} → ${d.meta}`).join(' · ')}</>}
+          {pendente > 0 && <> · faltam {pendente} para fechar</>}
+        </span>
+        {pendente > 0 && <button type="button" className="cp-adiantar__cancelar" disabled={salvando} onClick={aoCancelar}>Cancelar o que falta</button>}
+      </p>}
+      {opcoes.length > 0 && <div className="cp-adiantar__opcoes" role="group" aria-label="Quanto adiantar">
+        {opcoes.map((o) => (
+          <button key={o.id} type="button" className={'cp-adiantar__opcao' + (o.id.startsWith('d') ? ' cp-adiantar__opcao--dia' : '') + (o.id === 'd1' && !d2 ? ' cp-adiantar__opcao--sozinha' : '')} disabled={salvando} onClick={() => aoAdiantar(o.n)}>
+            <b>{o.rotulo}</b>
+            <small>{o.efeito}</small>
+            <em>~{formatarTempo(o.n * minutos)}</em>
+          </button>
+        ))}
+      </div>}
+    </div>
   )
 }
 
@@ -169,16 +241,17 @@ export function LinhaAmanha({ dia }: { dia: DiaPlano | null }) {
   if (!dia) return null
   const principal = dia.itens.find((i) => !i.mistura) ?? dia.itens[0]
   const mistura = dia.itens.filter((i) => i !== principal)
+  const livre = dia.total === 0 && !dia.mini && dia.adiantado > 0
   return (
     <section className="cp-bloco" aria-labelledby="cp-amanha-titulo">
       <p className="cp-rotulo"><span id="cp-amanha-titulo">{diferencaDias(dia.data) === 1 ? 'Amanhã' : 'Próximo dia de estudo'}</span><b>{semanaDia(dia.data)}, {curta(dia.data)}</b></p>
       <div className="cp-amanha">
         <span className="cp-amanha__cor" style={{ background: faixaCores(dia.itens.map((i) => ({ slug: i.slug, n: i.n }))) }} aria-hidden="true" />
         <div>
-          <strong>{principal ? principal.nome : 'Mini-simulado'}{mistura.length > 0 && <> + {juntar(mistura.map((m) => m.nome))}</>}{dia.tipo === 'leve' && <span className="cp-tag">dia leve</span>}{dia.tipo === 'dificil' && <span className="cp-tag">semana difícil</span>}{dia.mini && <span className="cp-tag cp-tag--ouro">mini-simulado</span>}</strong>
-          <small>{principal ? principal.assuntos.slice(0, 3).join(', ') : `${TAMANHO_MINI} questões cronometradas do que você já viu`}{mistura.length > 0 && `; mais ${mistura.reduce((s, m) => s + m.n, 0)} de ${juntar(mistura.map((m) => m.nome))} para misturar`}</small>
+          <strong>{livre ? 'Livre: você já adiantou' : principal ? principal.nome : 'Mini-simulado'}{mistura.length > 0 && <> + {juntar(mistura.map((m) => m.nome))}</>}{dia.tipo === 'leve' && <span className="cp-tag">dia leve</span>}{dia.tipo === 'dificil' && <span className="cp-tag">semana difícil</span>}{dia.mini && <span className="cp-tag cp-tag--ouro">mini-simulado</span>}{dia.adiantado > 0 && !livre && <span className="cp-tag cp-tag--verde">−{dia.adiantado} adiantadas</span>}</strong>
+          <small>{livre ? `As ${dia.adiantado} questões deste dia você fez antes.` : principal ? principal.assuntos.slice(0, 3).join(', ') : `${TAMANHO_MINI} questões cronometradas do que você já viu`}{mistura.length > 0 && `; mais ${mistura.reduce((s, m) => s + m.n, 0)} de ${juntar(mistura.map((m) => m.nome))} para misturar`}</small>
         </div>
-        <span className="cp-amanha__n"><b className="numerico">{dia.total}</b><small>questões</small></span>
+        <span className="cp-amanha__n">{dia.adiantado > 0 && <s className="numerico">{dia.total + dia.adiantado}</s>}<b className="numerico">{dia.total}</b><small>questões</small></span>
       </div>
     </section>
   )
@@ -206,7 +279,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
     else if (folga) estado = 'folga'
     const itens = ehHoje ? (calculo.hoje?.itens ?? doPlano?.itens ?? []) : doPlano?.itens ?? []
     const n = ehHoje ? calculo.metaDiaria : doPlano?.total ?? passado?.n ?? 0
-    return { d, estado, itens, n, tipo: doPlano?.tipo, mini: doPlano?.mini ?? false, passadoN: passado?.n ?? 0 }
+    return { d, estado, itens, n, tipo: doPlano?.tipo, mini: doPlano?.mini ?? false, passadoN: passado?.n ?? 0, adiantado: !ehHoje && (doPlano?.adiantado ?? 0) > 0 }
   })
   // A frase da semana: quando a área principal muda (comparando dia a dia) e quando cai o mini-simulado.
   const principalDe = (itens: DiaPlano['itens']) => itens.find((i) => !i.mistura) ?? itens[0]
@@ -228,11 +301,11 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
       <div className="cp-semana">
         <ol className="cp-dias">
           {plano7.map((x) => (
-            <li key={x.d.getTime()} className={`cp-dia cp-dia--${x.estado}${x.mini ? ' cp-dia--mini' : ''}`} title={x.itens.map((i) => `${i.nome}: ${i.n}`).join(' · ')}>
+            <li key={x.d.getTime()} className={`cp-dia cp-dia--${x.estado}${x.mini ? ' cp-dia--mini' : ''}${x.adiantado ? ' cp-dia--adiantado' : ''}`} title={x.itens.map((i) => `${i.nome}: ${i.n}`).join(' · ')}>
               <span className="cp-dia__nome">{SEMANA_CURTA[x.d.getDay()]}</span>
               <b className="cp-dia__num">{x.d.getDate()}</b>
               <span className="cp-dia__cor" style={{ background: x.estado === 'folga' ? 'transparent' : faixaCores(x.itens.map((i) => ({ slug: i.slug, n: i.n }))) }} aria-hidden="true" />
-              <em>{simples ? (x.estado === 'hoje' || x.estado === 'folga' ? ROTULO[x.estado] : '') : x.estado === 'futuro' ? (x.tipo === 'leve' ? `${x.n} leve` : x.n || '') : x.estado === 'feito' || x.estado === 'parcial' ? `${ROTULO[x.estado]}` : ROTULO[x.estado]}</em>
+              <em>{simples ? (x.estado === 'hoje' || x.estado === 'folga' ? ROTULO[x.estado] : '') : x.estado === 'futuro' ? (x.adiantado && !x.n ? 'adiantado' : x.tipo === 'leve' ? `${x.n} leve` : x.n || '') : x.estado === 'feito' || x.estado === 'parcial' ? `${ROTULO[x.estado]}` : ROTULO[x.estado]}</em>
             </li>
           ))}
         </ol>

@@ -244,3 +244,4 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 .rs-cronograma__proximo b { color: #ffe3a3; }
 .rs-cronograma .botao { width: 100%; max-width: 32rem; justify-content: center; }
 .rs-cronograma__link { color: var(--sobre-heroi-2); font-size: var(--corpo-menor); }
+.rs-cronograma__link a { color: inherit; }
