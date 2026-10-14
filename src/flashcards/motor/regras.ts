@@ -280,7 +280,7 @@ export type Evento =
   | { tipo: 'furia' }
   | { tipo: 'escudo'; restante: number }
   | { tipo: 'mitigado'; motivo: 'barreira' | 'foco' | 'preceptor'; valor: number }
-  | { tipo: 'dano-heroi'; valor: number; veneno: number; furia: boolean; critico: boolean; rajada: number; carregado: string | null }
+  | { tipo: 'dano-heroi'; valor: number; veneno: number; furia: boolean; critico: boolean; rajada: number; carregado: string | null; grude?: boolean }
   | { tipo: 'envenenado'; dano: number; faltam: number }
   | { tipo: 'veneno'; valor: number; faltam: number }
   | { tipo: 'veneno-curado' }
@@ -387,11 +387,15 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const i = inimigoAtual(p)
     const { forca } = atributos(p)
     const veneno = i.porErroSeguido * p.inimigo.errosSeguidos
-    let dano = DANO_BASE[c.dificuldade] * forca * (p.inimigo.furia ? 1.5 : 1) * (p.grudado ? GRUDE.mult : 1) + veneno
+    let dano = DANO_BASE[c.dificuldade] * forca * (p.inimigo.furia ? 1.5 : 1) + veneno
     if (critico) dano *= LIMITES.multCritico
     if (carregado && i.carrega) dano *= i.carrega.mult
     const teto = p.vidaMax * (critico || carregado ? LIMITES.critico : LIMITES[i.nivel])
-    dano = Math.min(dano, teto) * NIVEIS[nivelDaPartida(p)].danoRecebido
+    dano = Math.min(dano, teto)
+    // o Grude vem depois do teto do golpe (o +50% vale mesmo quando o golpe já bateria no limite),
+    // mas nunca passa do teto do crítico: o grude dói, não derruba de vida cheia
+    if (p.grudado) dano = Math.min(dano * GRUDE.mult, p.vidaMax * LIMITES.critico)
+    dano = dano * NIVEIS[nivelDaPartida(p)].danoRecebido
     const placas = p.reliquias.includes('placas') ? RECOMPENSAS.placas.v.fracao : 0
     const mestre = i.chefe && p.reliquias.includes('mestre') ? RECOMPENSAS.mestre.v.fracao : 0
     dano = dano * (1 - placas - mestre) - ESTAGIOS[p.estagio - 1].defesa
@@ -762,7 +766,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
         }
         e = { ...e, danoEvitado: e.danoEvitado + (dano - def.final) }
         let vida = e.vida - def.final
-        if (def.final > 0) eventos.push({ tipo: 'dano-heroi', valor: def.final, veneno, furia, critico, rajada: i.rajada ?? 1, carregado })
+        if (def.final > 0) eventos.push({ tipo: 'dano-heroi', valor: def.final, veneno, furia, critico, rajada: i.rajada ?? 1, carregado, grude: !!p.grudado })
         if (vida <= 0 && e.encaixes.some((x) => x.tipo === 'imortal')) {
           vida = 1
           e = { ...e, encaixes: gastar(e.encaixes, e.encaixes.findIndex((x) => x.tipo === 'imortal')), imortalUsado: true }
@@ -806,10 +810,13 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
         else if (p.grudado) e = { ...e, grudado: false }
       }
       // o tremor do golem: o crítico derruba 1 carga de um poder equipado
-      if (e.fase !== 'fim' && i.tremor && critico && !def.bloqueado && def.final > 0 && e.encaixes.length) {
+      // (o escudo que o Velho Preceptor acabou de dar não estava equipado no golpe: fica de fora)
+      const ajudou = eventos.some((x) => x.tipo === 'ajuda')
+      const alvosTremor = e.encaixes.map((_, k) => k).filter((k) => !(ajudou && e.encaixes[k].tipo === 'escudo'))
+      if (e.fase !== 'fim' && i.tremor && critico && !def.bloqueado && def.final > 0 && alvosTremor.length) {
         let u: number, semente = e.semente
         ;[u, semente] = sortear(semente)
-        const k = Math.floor(u * e.encaixes.length)
+        const k = alvosTremor[Math.floor(u * alvosTremor.length)]
         const poder = e.encaixes[k].tipo
         e = { ...e, semente, encaixes: gastar(e.encaixes, k), pocao: poder === 'pocao' ? 0 : e.pocao }
         eventos.push({ tipo: 'tremor', poder })
@@ -855,8 +862,10 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
         if (valor > 0) e = { ...e, vida: e.vida - valor, danoSofrido: e.danoSofrido + valor }
         const faltam = p.queimadura.faltam - 1
         eventos.push({ tipo: 'arde', valor, faltam: Math.max(0, faltam) })
-        if (faltam <= 0) { e = { ...e, queimadura: null }; eventos.push({ tipo: 'apagou', motivo: 'tempo' }) }
-        else if (!e.queimadura || e.queimadura === p.queimadura) e = { ...e, queimadura: { ...p.queimadura, faltam } }
+        // um Sopro novo nesta resposta renova o fogo: aí a conta antiga não apaga nem desconta
+        const renovada = !!e.queimadura && e.queimadura !== p.queimadura
+        if (!renovada && faltam <= 0) { e = { ...e, queimadura: null }; eventos.push({ tipo: 'apagou', motivo: 'tempo' }) }
+        else if (!renovada) e = { ...e, queimadura: { ...p.queimadura, faltam } }
       }
     }
     if (e.fase === 'resposta' && e.inimigo.vida <= 0) return { estado: derrotarInimigo(e, eventos), eventos }
