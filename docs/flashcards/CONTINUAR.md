@@ -6,6 +6,12 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Integração dos quatro blocos — 14/10/2026
+
+Tales autorizou mesclar e publicar os PRs #247, #248, #249 e #250. Esta revisão integra cenários, combate, desempenho e acessibilidade. Os registros abaixo que mencionam rascunho ou "não publicado" descrevem a etapa anterior à integração. A confirmação de publicação fica no workflow **Publicar no GitHub Pages** da branch do site. Não há SQL novo.
+
+Na versão integrada passaram `npx tsc -b`, `npm test`, build e Playwright em computador, celular em pé e deitado: áudio Opus/MP3, carregamento por andar, foco, leitura ampliada, sem tremor e cortina com movimento reduzido. As questões médicas e as regras de acesso permanecem fora deste bloco.
+
 ## PAROU AQUI (14/10/2026, tarde): leia isto primeiro
 
 ### Para o ChatGPT, o Codex ou outro agente continuar
@@ -289,6 +295,10 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
 - **Torre do Título:** marcos nos andares 10, 25, 50, 75 e 100, mapa da subida e histórico.
 - **Sons:** revisão completa dos efeitos (acerto, erro, crítico, entrada de chefe, sala secreta) e transição suave entre músicas.
 - **Ranking da Torre:** só depois de validado (roteiro do beta).
+
+## Interface e acessibilidade (14/10, PR #250 draft)
+
+Ideias 62 e 65 concluídas para revisão, sem merge: três preferências de leitura, foco nos diálogos e cortina de pixels. [ACESSIBILIDADE-14-10.md](ACESSIBILIDADE-14-10.md) traz capturas e verificações.
 
 ## Como trabalhar
 

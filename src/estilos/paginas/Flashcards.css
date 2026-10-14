@@ -2368,3 +2368,43 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 @media(max-width:640px){.fc-flutua--numero svg{height:34px}.fc-flutua--numero.fc-flutua--grande svg{height:46px}.fc-intencao__simbolo canvas{width:18px;height:18px}}
 @media(prefers-reduced-motion:reduce){.fc-flutua--numero{animation:none;opacity:1}}
 .fc-arena--reduzida .fc-flutua--numero { animation:none;opacity:1; }
+/* Preferências de leitura comuns à entrada, Batalha e Biblioteca. */
+.fc-acessibilidade--sem-tremor .fc-treme, .fc-acessibilidade--sem-tremor .fc-terremoto { animation:none !important; }
+.fc-acessibilidade--contraste .fc-carta__moldura { background:#fff8e5; color:#17131b; box-shadow:0 0 0 3px #17131b; }
+.fc-acessibilidade--contraste .fc-carta__pergunta, .fc-acessibilidade--contraste .fc-carta__explicacao, .fc-acessibilidade--contraste .fc-carta__resposta { color:#17131b; text-shadow:none; }
+.fc-acessibilidade--contraste .fc-alternativa { background:#fff8e5;color:#17131b;box-shadow:inset 0 0 0 3px #17131b; text-shadow:none; }
+.fc-acessibilidade--contraste .fc-alternativa--certa { background:#e2ffdb; }
+.fc-acessibilidade--contraste .fc-alternativa--errada { background:#ffe6df; }
+.fc-acessibilidade--contraste .fc-placa__nome, .fc-acessibilidade--contraste .fc-topo, .fc-acessibilidade--contraste .fc-info { color:#fff8e5;text-shadow:none; }
+.fc-acessibilidade--contraste .fc-entrada__porta { background:#fff8e5;color:#17131b; }
+.fc-acessibilidade--texto-maior .fc-carta__pergunta { font-size:clamp(23px,1.3vw + 15px,30px);line-height:1.4; }
+.fc-acessibilidade--texto-maior .fc-carta__explicacao, .fc-acessibilidade--texto-maior .fc-carta__resposta { font-size:22px;line-height:1.4; }
+.fc-acessibilidade--texto-maior .fc-alternativa span { font-size:clamp(17px,1.5vw,22px);line-height:1.25; }
+.fc-acessibilidade--texto-maior .fc-carta__miolo { overflow-y:auto; }
+.fc-acessibilidade--texto-maior .fc-entrada__porta p { font-size:19px; }
+/* A textura 16×16 é pintada em scripts/cenarios/cortina.py. */
+.fc-cortina-pixels { position:absolute;inset:0;z-index:90;display:grid;grid-template-columns:repeat(10,1fr);grid-template-rows:repeat(8,1fr);pointer-events:none;overflow:hidden;animation:fc-cortina-fim .55s linear both; }
+.fc-cortina-pixels i { background-image:var(--cortina-textura);background-size:100% 100%;image-rendering:pixelated;transform-origin:0 0;animation:fc-pixel-abre .24s steps(4,end) forwards;animation-delay:calc(var(--coluna)*.018s + var(--linha)*.013s); }
+@keyframes fc-pixel-abre { from{opacity:1;transform:scale(1)} to{opacity:0;transform:scale(.05)} }
+@keyframes fc-cortina-fim { 0%,99%{visibility:visible} 100%{visibility:hidden} }
+.fc-acessibilidade--movimento-reduzido .fc-cortina-pixels { display:none; }
+@media(prefers-reduced-motion:reduce){.fc-cortina-pixels{display:none!important}}
+/* Texto maior reserva espaço para ler; mãos longas rolam sem empurrar a ação para fora. */
+.fc-acessibilidade--texto-maior .fc-mao { max-height:180px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;align-content:start; }
+.fc-acessibilidade--texto-maior .fc-carta__miolo { flex:1 1 auto;min-height:90px; }
+/* A leitura ampliada mantém o HUD e compacta o avatar decorativo do herói. */
+.fc-acessibilidade--texto-maior .fc-heroi > .fc-ator { display:none; }
+.fc-heroi-detalhes { border:1px solid #dfc483;background:#162037;color:#fff8e5;padding:2px 8px;border-radius:6px; }
+@media(min-width:901px){
+ .fc-acessibilidade--texto-maior .fc-jogador { grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"mao mao" "heroi acao";gap:10px; }
+ .fc-acessibilidade--texto-maior .fc-heroi { grid-area:heroi;justify-self:start; }
+ .fc-acessibilidade--texto-maior .fc-acao { grid-area:acao; }
+ .fc-acessibilidade--texto-maior .fc-mao { grid-area:mao;grid-template-columns:repeat(4,minmax(0,1fr));max-height:150px;padding:6px; }
+ .fc-acessibilidade--texto-maior .fc-carta { width:min(900px,calc(100% - 36px)); }
+ .fc-acessibilidade--texto-maior .fc-pilha { display:none; }
+}
+@media(min-width:901px){
+ .fc-acessibilidade--texto-maior .fc-mesa__palco { padding:8px 12px; }
+ .fc-acessibilidade--texto-maior .fc-carta__miolo { min-height:140px; }
+}
+@media(min-width:901px) and (min-height:600px){.fc-acessibilidade--texto-maior .fc-carta__miolo{min-height:170px}}

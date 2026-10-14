@@ -1,3 +1,4 @@
+import { CortinaPixels } from './CortinaPixels'
 import { useEffect, useRef, type ReactNode } from 'react'
 
 const FOCAVEIS = 'button:not([disabled]), [href], input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])'
@@ -9,7 +10,7 @@ const FOCAVEIS = 'button:not([disabled]), [href], input:not([disabled]), select,
  * fechar. O X, a tecla Esc e um clique fora do pop-up pedem para fechar (a
  * partida pede confirmação e fica salva) e voltam para o site.
  */
-export function ModalJogo({ children, titulo, aoPedirFechar }: { children: ReactNode; titulo: string; aoPedirFechar: () => void }) {
+export function ModalJogo({ children, titulo, aoPedirFechar, transicao }: { children: ReactNode; titulo: string; aoPedirFechar: () => void; transicao?: string }) {
   const ref = useRef<HTMLDivElement>(null)
   const pedir = useRef(aoPedirFechar)
   pedir.current = aoPedirFechar
@@ -23,10 +24,12 @@ export function ModalJogo({ children, titulo, aoPedirFechar }: { children: React
     const t = window.setTimeout(() => ref.current?.focus({ preventScroll: true }), 30)
     const aoTeclar = (e: KeyboardEvent) => {
       if (e.key !== 'Tab' || !ref.current) return
-      const lista = [...ref.current.querySelectorAll<HTMLElement>(FOCAVEIS)].filter((el) => el.offsetParent !== null || el === document.activeElement)
+      const dialogs = [...ref.current.querySelectorAll<HTMLElement>('[role=dialog][aria-modal=true]')].filter(el=>el.offsetParent!==null)
+      const escopo = dialogs[dialogs.length - 1] ?? ref.current
+      const lista = [...escopo.querySelectorAll<HTMLElement>(FOCAVEIS)].filter((el) => el.offsetParent !== null || el === document.activeElement)
       if (!lista.length) return
       const primeiro = lista[0], ultimo = lista[lista.length - 1]
-      if (e.shiftKey && (document.activeElement === primeiro || document.activeElement === ref.current)) { e.preventDefault(); ultimo.focus() }
+      if (e.shiftKey && (document.activeElement === primeiro || document.activeElement === ref.current || !escopo.contains(document.activeElement))) { e.preventDefault(); ultimo.focus() }
       else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primeiro.focus() }
     }
     document.addEventListener('keydown', aoTeclar)
@@ -49,6 +52,7 @@ export function ModalJogo({ children, titulo, aoPedirFechar }: { children: React
         <span className="fc-modal__canto fc-modal__canto--1" aria-hidden="true" /><span className="fc-modal__canto fc-modal__canto--2" aria-hidden="true" />
         <span className="fc-modal__canto fc-modal__canto--3" aria-hidden="true" /><span className="fc-modal__canto fc-modal__canto--4" aria-hidden="true" />
         {children}
+        <CortinaPixels key={transicao ?? titulo} />
         <button type="button" className="fc-fechar" onClick={() => pedir.current()} aria-label="Fechar e voltar ao site" title="Fechar e voltar ao site">
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" /></svg>
         </button>

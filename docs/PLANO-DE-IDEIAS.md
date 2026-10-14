@@ -107,10 +107,12 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
     - **No toque:** o "flutuar" do hover não fica mais preso depois do dedo sair.
     - **No iPhone:** o "afundar" do pressionado funciona.
     - **Som:** os botões já tocavam o próprio som e não precisaram de mudança.
-62. [ ] Transições entre telas com "cortina de pixels".
+62. [x] Transições entre telas com "cortina de pixels".
 63. [ ] Tutorial de 30 segundos jogável na primeira entrada (o Preceptor explica).
 64. [x] Indicador claro de "o que este golpe vai fazer" (intenção) com ícone do superpoder.
-65. [ ] Acessibilidade: modo sem tremor, alto contraste e texto maior.
+65. [x] Acessibilidade: modo sem tremor, alto contraste e texto maior.
+
+**Bloco de interface (14/10):** 62 e 65 concluídos no PR #250 draft a revisar: sem tremor, contraste, leitura ampliada e cortina que respeita movimento reduzido. [Detalhes e capturas](flashcards/ACESSIBILIDADE-14-10.md).
 
 ## H. Otimização
 
@@ -159,3 +161,5 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 - **14/10/2026:** Combate (16, 18, 23, 24 e 64), PR draft [#248](https://github.com/talesrobertosn/ortoquestoes/pull/248), a revisar. Numerais próprios, pedregulhos, hipnose apenas visual após o primeiro Olhar acertado e carga voando para o mímico. [Detalhes e testes](flashcards/COMBATE-14-10.md).
 - **14/10/2026:** Desempenho (68 e 69), PR draft [#249](https://github.com/talesrobertosn/ortoquestoes/pull/249), a revisar: tiras por adversário, música Opus com MP3 de reserva. [Testes e medidas](flashcards/DESEMPENHO-14-10.md).
+
+- **14/10/2026, integração autorizada pelo Tales:** PRs #247 a #250 reúnem os quatro blocos solicitados, com testes da versão conjunta e publicação pelo workflow do site. Nenhum SQL novo. Os registros de rascunho acima são históricos.
