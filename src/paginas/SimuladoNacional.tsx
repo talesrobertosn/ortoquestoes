@@ -35,7 +35,7 @@ const iniciais = (apelido: string) => {
 export function SimuladoNacional({ consulta }: { consulta: URLSearchParams }) {
   const { premium, logado, carregado } = usarPremium()
   const { indice } = usarIndice()
-  const { sessao, iniciar } = usarSessao()
+  const { sessao, iniciar, liberarParaNova } = usarSessao()
   const pedida = consulta.get('edicao')
   const [edicao, definirEdicao] = useState<EdicaoNacional | null>(null)
   const [resultado, definirResultado] = useState<ResultadoNacional | null>(null)
@@ -69,7 +69,8 @@ export function SimuladoNacional({ consulta }: { consulta: URLSearchParams }) {
 
   async function comecar() {
     if (!edicao?.edicao || ocupado) return
-    if (sessao && !sessao.concluidaEm && sessao.nacional !== edicao.edicao && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
+    // Pergunta antes de chamar o servidor: iniciar a edição já liga o relógio da prova.
+    if (!(await liberarParaNova({ nacional: edicao.edicao }))) return
     definirOcupado(true); definirErro('')
     try {
       const inicio = await chamarRpc<{ ids: string[]; iniciado_em: string; duracao_min: number }>('iniciar_simulado_nacional', { p_edicao: edicao.edicao })

@@ -72,6 +72,57 @@
   --raio-grande: var(--raio-cartao);
   --sombra-media: 0 1px 2px rgba(18, 24, 26, 0.04), 0 10px 28px rgba(18, 24, 26, 0.07);
 
+  /* Escalas (auditoria de 15/10/2026, F0.4). Novas e aditivas: o CSS antigo
+     continua com os valores dele e migra aos poucos para estes nomes. */
+  /* Espaço: passos de 4px até 48px. */
+  --e-1: 0.25rem;
+  --e-2: 0.5rem;
+  --e-3: 0.75rem;
+  --e-4: 1rem;
+  --e-5: 1.5rem;
+  --e-6: 2rem;
+  --e-7: 2.5rem;
+  --e-8: 3rem;
+  /* Raio: os dois do site e a cápsula. */
+  --raio-sm: var(--raio-pequeno);
+  --raio-md: var(--raio-controle);
+  --raio-lg: var(--raio-cartao);
+  --raio-pill: 999px;
+  /* Sombra: leve, média e a dura do estilo pixel. */
+  --sombra-1: var(--sombra);
+  --sombra-2: var(--sombra-media);
+  --sombra-pixel: 3px 3px 0 var(--pixel-ouro-sombra);
+  /* Movimento. */
+  --duracao-rapida: 0.15s;
+  --duracao: 0.22s;
+  --curva: cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* Camadas: do conteúdo fixo ao jogo, sem números soltos (1000, 200, 90…). */
+  --z-sticky: 20;
+  --z-cabecalho: 40;
+  --z-barra: 50;
+  --z-flutuante: 80;
+  --z-janela: 1000;
+  --z-aviso: 1100;
+  --z-jogo: 1200;
+  /* Medidas de estrutura usadas em calc() espalhados. */
+  --altura-cabecalho: 4rem;
+  --altura-barra-movel: 4.25rem;
+  /* Estilo pixel (temporada): as cores repetidas em hex pelos CSS de página. */
+  --pixel-tinta: #1b1208;
+  --pixel-ouro: #f4cf7c;
+  --pixel-ouro-sombra: #c9952f;
+  --pixel-selo-fundo: #0b3a35;
+  --pixel-selo-texto: #ffe3a3;
+  /* Texto de estado sobre fundo claro (os --acerto/--erro puros servem para borda e ícone). */
+  --acerto-texto: #17603c;
+  --erro-texto: #9a3530;
+  --aviso-texto: #7d560c;
+  /* Texto sobre fundo de acerto/erro cheio. */
+  --sobre-acerto: #ffffff;
+  --sobre-erro: #ffffff;
+  /* Anel de foco: visível também sobre o botão principal. */
+  --foco: #0b3a35;
+
   /* Faixas de destaque (heróis): verdete profundo com texto claro */
   /* Temporada pixel (estilo B, aprovado em 11/10/2026): céu em faixas sólidas e um
      horizonte em pixels no pé, repetido em blocos de tamanho fixo. */
@@ -125,6 +176,14 @@
   --sobre-destaque: #0f1413;
   --sombra: none;
   --sombra-media: 0 0 0 1px var(--traco);
+
+  --acerto-texto: #6fd3a0;
+  --erro-texto: #f0958c;
+  --aviso-texto: #ecc47a;
+  /* No escuro, acerto e erro são claros: texto escuro por cima. */
+  --sobre-acerto: #0f1413;
+  --sobre-erro: #0f1413;
+  --foco: #ffe3a3;
 
   --heroi-ceu: linear-gradient(180deg, #0c221f 0 25%, #0f2b27 25% 50%, #12332f 50% 75%, #153c37 75% 100%);
   --heroi-horizonte: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 8' shape-rendering='crispEdges'%3E%3Crect x='0' y='6' width='2' height='2' fill='%23091a17'/%3E%3Crect x='2' y='6' width='2' height='2' fill='%23091a17'/%3E%3Crect x='4' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='6' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='8' y='6' width='2' height='2' fill='%23091a17'/%3E%3Crect x='10' y='4' width='2' height='4' fill='%23091a17'/%3E%3Crect x='12' y='4' width='2' height='4' fill='%23091a17'/%3E%3Crect x='14' y='4' width='2' height='4' fill='%23091a17'/%3E%3Crect x='16' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='18' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='20' y='7' width='2' height='1' fill='%23091a17'/%3E%3Crect x='22' y='7' width='2' height='1' fill='%23091a17'/%3E%3Crect x='24' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='26' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='28' y='3' width='2' height='5' fill='%23091a17'/%3E%3Crect x='30' y='3' width='2' height='5' fill='%23091a17'/%3E%3Crect x='32' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='34' y='6' width='2' height='2' fill='%23091a17'/%3E%3Crect x='36' y='6' width='2' height='2' fill='%23091a17'/%3E%3Crect x='38' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='40' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='42' y='4' width='2' height='4' fill='%23091a17'/%3E%3Crect x='44' y='4' width='2' height='4' fill='%23091a17'/%3E%3Crect x='46' y='2' width='2' height='6' fill='%23091a17'/%3E%3Crect x='48' y='2' width='2' height='6' fill='%23091a17'/%3E%3Crect x='50' y='4' width='2' height='4' fill='%23091a17'/%3E%3Crect x='52' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='54' y='5' width='2' height='3' fill='%23091a17'/%3E%3Crect x='56' y='6' width='2' height='2' fill='%23091a17'/%3E%3Crect x='58' y='6' width='2' height='2' fill='%23091a17'/%3E%3Crect x='0' y='7' width='60' height='1' fill='%2306110f'/%3E%3C/svg%3E") left bottom / 240px 32px repeat-x;

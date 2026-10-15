@@ -79,7 +79,7 @@ export function PlanoEstudo() {
   const { indice } = usarIndice()
   const [respondidasReais] = usarArmazenado<Respondidas>('respondidas', {})
   const respondidas = useMemo(() => (DEMO && indice ? respondidasDemo(indice) : respondidasReais), [respondidasReais, indice])
-  const { sessao, iniciar } = usarSessao()
+  const { sessao, iniciarComAviso } = usarSessao()
   const salvoNoServidor = usarPlanoSalvo(premium && !DEMO)
   const [planoDemo_, definirPlanoDemo] = useState<PlanoSalvo | null>(() => (DEMO ? planoDemo() : null))
   const plano = DEMO ? planoDemo_ : salvoNoServidor.plano
@@ -154,34 +154,30 @@ export function PlanoEstudo() {
   if (!premium) return <PreviaCronograma indice={indice} respondidas={respondidas} />
   if (plano === undefined) return <Carregando linhas={5} rotulo="Montando seu cronograma" />
 
-  const confirmarTroca = () => !sessao || !!sessao.concluidaEm || window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')
-
   /** A sessão do dia: a área principal com a mistura espalhada (as duas da lista do dia), com o que a pessoa pediu para adiantar. */
-  function comecarHoje(c: CalculoPlano | null = calculo, p: PlanoSalvo | null | undefined = plano) {
+  async function comecarHoje(c: CalculoPlano | null = calculo, p: PlanoSalvo | null | undefined = plano) {
     if (!indice || !c?.hoje || !p) return
-    if (!confirmarTroca()) return
     const itens = c.hoje.itens.length ? c.hoje.itens : [{ slug: c.hoje.slug, n: c.hoje.n, mistura: false }]
     const ids = idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), respondidas, incluiSimulados(p))
     const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
-    iniciar(filtros, ids, { origem: 'cronograma' })
+    if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma' }))) return
     navegar('/sessao')
   }
 
   /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
-  function comecarIds(ids: string[], origem: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar', temas: string[] = []) {
+  async function comecarIds(ids: string[], origem: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar', temas: string[] = []) {
     if (!ids.length) return
-    if (!confirmarTroca()) return
-    iniciar({ ...FILTROS_VAZIOS, temas, embaralhar: false, limite: ids.length }, ids, { origem })
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, embaralhar: false, limite: ids.length }, ids, { origem }))) return
     navegar('/sessao')
   }
 
   /** Mini-simulado: 30 questões já vistas, cronometradas (1,5 min cada). */
-  function comecarMini() {
+  async function comecarMini() {
     if (!indice) return
     const ids = idsMiniSimulado(indice, respondidas)
-    if (!ids.length || !confirmarTroca()) return
+    if (!ids.length) return
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90) }))) return
     marcarFeito('mini')
-    iniciar({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90) })
     navegar('/sessao')
   }
 
@@ -249,12 +245,12 @@ export function PlanoEstudo() {
       },
       aoDiagnostico: () => { marcarDiagnostico(new Date().toISOString()); comecarIds(idsDiagnostico(indice, respondidas, simulados), 'diagnostico') },
       aoReativar: (slug: string) => comecarIds(idsReativar(indice, respondidas, slug), 'reativar', [slug]),
-      aoTreinarFoco: (area: AreaIncidencia, foco: Foco) => {
+      aoTreinarFoco: async (area: AreaIncidencia, foco: Foco) => {
         const ids = idsDoFoco(indice, area, foco)
         const ordem = [...ids.filter((id) => respondidas[id]?.c === false), ...ids.filter((id) => !respondidas[id]), ...ids.filter((id) => respondidas[id] && respondidas[id].c !== false)].slice(0, 20)
-        if (!ordem.length || !confirmarTroca()) return
+        if (!ordem.length) return
         const subtemas = [area.subtema, foco.noAcervo ?? foco.nome].filter((s): s is string => !!s)
-        iniciar({ ...FILTROS_VAZIOS, subtemas, embaralhar: false, limite: ordem.length }, ordem)
+        if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, subtemas, embaralhar: false, limite: ordem.length }, ordem))) return
         navegar('/sessao')
       },
       aoIncluirSimulados: () => definirEditando(true),

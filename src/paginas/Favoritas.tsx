@@ -19,7 +19,7 @@ export function Favoritas() {
   const { sessao } = usarConta()
   const { indice } = usarIndice()
   const { favoritos, alternar } = usarFavoritos()
-  const { iniciar } = usarSessao()
+  const { iniciarComAviso } = usarSessao()
   // Quem escondeu as etiquetas para não se entregar não quer vê-las aqui
   // tampouco: desta lista se sai direto para uma sessão com essas questões.
   const { mostrarEtiquetas } = usarEtiquetas()
@@ -45,10 +45,10 @@ export function Favoritas() {
     [questoes],
   )
 
-  function treinar() {
+  async function treinar() {
     const existentes = favoritos.filter((id) => porId.has(id))
     if (existentes.length === 0) return
-    iniciar({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, situacao: 'favoritas' }, existentes, {})
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, situacao: 'favoritas' }, existentes, {}))) return
     navegar('/sessao')
   }
 

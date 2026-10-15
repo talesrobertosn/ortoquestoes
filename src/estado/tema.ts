@@ -5,11 +5,16 @@ export type Tema = 'claro' | 'escuro' | 'sistema'
 
 const COR_BARRA: Record<'claro' | 'escuro', string> = { claro: '#F1F3F2', escuro: '#101615' }
 
+const ESCURO_NO_APARELHO = '(prefers-color-scheme: dark)'
+
+/**
+ * "Sistema" segue o aparelho. Antes o atributo era apagado e o CSS não tinha
+ * regra para isso, então "sistema" ficava sempre claro, mesmo no celular escuro.
+ */
 function aplicar(tema: Tema) {
   const raiz = document.documentElement
-  if (tema === 'sistema') delete raiz.dataset.tema
-  else raiz.dataset.tema = tema
-  const efetivo = tema === 'claro' ? 'claro' : 'escuro'
+  const efetivo = tema === 'sistema' ? (window.matchMedia(ESCURO_NO_APARELHO).matches ? 'escuro' : 'claro') : tema
+  raiz.dataset.tema = efetivo
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', COR_BARRA[efetivo])
 }
 
@@ -25,6 +30,11 @@ export function usarTema() {
 
   useEffect(() => {
     aplicar(tema)
+    if (tema !== 'sistema') return
+    const aparelho = window.matchMedia(ESCURO_NO_APARELHO)
+    const mudou = () => aplicar('sistema')
+    aparelho.addEventListener('change', mudou)
+    return () => aparelho.removeEventListener('change', mudou)
   }, [tema])
 
   const trocar = useCallback((proximo: Tema) => {

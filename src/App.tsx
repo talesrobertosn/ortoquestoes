@@ -7,6 +7,7 @@ import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
 import { AvisoArmazenamento } from './componentes/AvisoArmazenamento'
+import { HospedeConfirmacao } from './componentes/Confirmar'
 import { EXIGIR_CONTA_PARA_QUESTOES, FLASHCARDS_LIBERADO, SITE } from './config'
 import { usarConta } from './conta/ContextoConta'
 import { contasDisponiveis } from './conta/supabase'
@@ -280,6 +281,7 @@ export function App() {
       {!['sessao', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={!primeiroFundo || primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
+      <HospedeConfirmacao />
     </div>
   )
 }

@@ -63,7 +63,7 @@ const PROVAS_DO_ACERVO = [
 
 export function Inicio() {
   const { indice, carregando } = usarIndice()
-  const { iniciar } = usarSessao()
+  const { iniciarComAviso } = usarSessao()
   const { sessao: conta } = usarConta()
   const cronograma = usarCronogramaHoje()
   const { conquistadas, total: totalConquistas, streak: sequenciaViva } = usarConquistas()
@@ -140,11 +140,10 @@ export function Inicio() {
   }, [contexto.respondidas, hojeChave])
 
   /** Treino rápido: uma sessão embaralhada de todo o acervo, num clique. */
-  function treinoRapido(quantidade: number) {
+  async function treinoRapido(quantidade: number) {
     if (!indice) return
-    if (sessaoEmAndamento && !window.confirm('Iniciar outro treino substitui a sessão em andamento. Seu histórico será mantido. Continuar?')) return
     const filtros = { ...FILTROS_VAZIOS, embaralhar: true, limite: quantidade }
-    iniciar(filtros, montarSessao(indice, filtros, Date.now()))
+    if (!(await iniciarComAviso(filtros, montarSessao(indice, filtros, Date.now())))) return
     navegar('/sessao')
   }
 

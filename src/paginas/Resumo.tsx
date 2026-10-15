@@ -85,7 +85,7 @@ function EntregaNacional({ sessao }: { sessao: EstadoSessao }) {
 
 export function Resumo() {
   const { indice } = usarIndice()
-  const { sessao, iniciar, finalizar } = usarSessao()
+  const { sessao, iniciarComAviso, finalizar } = usarSessao()
   const { sessao: conta } = usarConta()
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
@@ -226,9 +226,9 @@ export function Resumo() {
   const visiveis =
     filtroAtivo === 'erradas' ? dados.erradas : filtroAtivo === 'incertas' ? dados.incertas : dados.linhas
 
-  function refazer(lista: Linha[]) {
+  async function refazer(lista: Linha[]) {
     if (lista.length === 0) return
-    iniciar({ ...sessao!.filtros, embaralhar: false, limite: null }, lista.map((l) => l.id))
+    if (!(await iniciarComAviso({ ...sessao!.filtros, embaralhar: false, limite: null }, lista.map((l) => l.id)))) return
     navegar('/sessao')
   }
 

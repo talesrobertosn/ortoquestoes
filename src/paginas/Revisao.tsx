@@ -37,7 +37,7 @@ const ESCADAS: { rotulo: string; icone: NomeIcone; dias: number[]; nota: string;
 function inicioMes(data: number): number { const d = new Date(data); d.setDate(1); d.setHours(0, 0, 0, 0); return d.getTime() }
 
 export function Revisao() {
-  const { indice, carregando } = usarIndice(); const { contexto } = usarContextoLocal(''); const { iniciar } = usarSessao()
+  const { indice, carregando } = usarIndice(); const { contexto } = usarContextoLocal(''); const { iniciarComAviso } = usarSessao()
   const [selecionado, definirSelecionado] = useState(inicioDia())
   const [mesExibido, definirMesExibido] = useState(() => inicioMes(inicioDia()))
   const { ritmo, definirRitmo } = usarRitmoRevisao()
@@ -59,7 +59,7 @@ export function Revisao() {
   const irParaMes = (delta: number) => definirMesExibido((atual) => { const d = new Date(atual); d.setMonth(d.getMonth() + delta); return d.getTime() })
   const pendentes = [...plano.values()].reduce((n, d) => n + d.ids.length, 0); const atrasadas = plano.get(chaveDia(hoje))?.atrasadas ?? 0
   const incertas = Object.values(contexto.respondidas).filter(r => r.confianca === 'duvida' || r.confianca === 'chute').length
-  const iniciarIds = (ids: string[]) => { if (!indice || !ids.length) return; iniciar({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, limite: ids.length, embaralhar: true, situacao: 'revisarHoje' }, ids); navegar('/sessao') }
+  const iniciarIds = async (ids: string[]) => { if (!indice || !ids.length) return; if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, limite: ids.length, embaralhar: true, situacao: 'revisarHoje' }, ids))) return; navegar('/sessao') }
   if (carregando || !indice) return <div className="estado"><p>Preparando sua revisão…</p></div>
   const temaFragil = [...plano.values()].flatMap(d => [...d.temas.entries()]).sort((a,b)=>b[1]-a[1])[0]
   const idsHoje = plano.get(chaveDia(hoje))?.ids ?? []

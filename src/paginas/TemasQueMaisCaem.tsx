@@ -46,18 +46,17 @@ export function TemasQueMaisCaem() {
   const { premium, logado, carregado } = usarPremium()
   const { indice } = usarIndice()
   const [respondidas] = usarArmazenado<Respondidas>('respondidas', {})
-  const { sessao, iniciar } = usarSessao()
+  const { iniciarComAviso } = usarSessao()
 
   if (logado && !carregado) return <Carregando linhas={4} rotulo="Carregando" />
   if (!indice) return <Carregando linhas={6} rotulo="Carregando o ranking" />
 
-  function treinar(area: AreaIncidencia, foco?: Foco) {
+  async function treinar(area: AreaIncidencia, foco?: Foco) {
     if (!indice) return
     const ids = ordemDeTreino(idsDoFoco(indice, area, foco), respondidas, Date.now())
     if (!ids.length) return
-    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const subtemas = [area.subtema, foco ? (foco.noAcervo ?? foco.nome) : undefined].filter((s): s is string => !!s)
-    iniciar({ ...FILTROS_VAZIOS, temas: subtemas.length ? [] : [area.slug], subtemas, embaralhar: true, limite: ids.length }, ids)
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas: subtemas.length ? [] : [area.slug], subtemas, embaralhar: true, limite: ids.length }, ids))) return
     navegar('/sessao')
   }
 
