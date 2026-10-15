@@ -686,3 +686,19 @@
   .sb__nome { font-size: 0.98rem; }
 }
 @media (prefers-reduced-motion: reduce) { .sb *, .sb__titulo > span { animation: none !important; } .sb__tocha img:first-child, .sb__chama img:first-child { opacity: 1; } .sb__brasas { display: none; } }
+
+/* Filtros do inventário: Próximas / Conquistadas / Todas e a família. */
+.inv-filtros { display: flex; flex-wrap: wrap; align-items: end; gap: 0.75rem 1rem; margin: 1rem 0 0.25rem; }
+.inv-segmentado { display: inline-flex; padding: 0.2rem; border-radius: 999px; background: var(--superficie-2); border: var(--borda); }
+.inv-segmentado button { min-height: 40px; padding: 0 1rem; border: 0; border-radius: 999px; background: none; color: var(--texto-2); font: inherit; font-weight: 700; cursor: pointer; }
+.inv-segmentado button[aria-pressed="true"] { background: var(--superficie); color: var(--verdete); box-shadow: var(--sombra); }
+.inv-familia-escolha { display: grid; gap: 0.2rem; font-size: var(--meta); font-weight: 700; color: var(--texto-2); }
+.inv-familia-escolha select { min-height: 44px; max-width: 16rem; }
+.inv-filtros__nota { margin: 0.25rem 0 0.5rem; font-size: var(--meta); }
+.inv-bau { display: flex; align-items: center; gap: 0.9rem; margin-top: 1rem; padding: 0.85rem 1rem; border-radius: var(--raio-cartao); border: 1px dashed var(--traco-forte); background: var(--superficie-2); }
+.inv-bau .inv-item__misterio { flex: 0 0 auto; }
+.inv-bau span:last-child { display: grid; gap: 0.15rem; }
+.inv-bau small { color: var(--texto-2); }
+@media (max-width: 40rem) { .inv-segmentado { width: 100%; } .inv-segmentado button { flex: 1; padding: 0 0.5rem; } .inv-familia-escolha, .inv-familia-escolha select { width: 100%; max-width: none; } }
+.inv-grade--proximas { margin-top: 0.75rem; }
+.inv-item__familia { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--texto-2); }
