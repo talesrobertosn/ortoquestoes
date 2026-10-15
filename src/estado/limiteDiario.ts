@@ -2,8 +2,9 @@ import { useCallback, useState } from 'react'
 import { chamarRpc } from '../servicos/supabase'
 import { gravar, ler } from './armazenamento'
 import { registrarAssinante } from '../conta/plano'
+import { FUSO_DIA, chaveDoDia, inicioDoDia } from '../util/dia'
 
-export const FUSO_DIA = 'America/Sao_Paulo'
+export { FUSO_DIA }
 export const LIMITES_HABILITADOS = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
 const CHAVE_BLOQUEIO = 'limite:bloqueio'
 const CHAVE_SALDO = 'limite:saldo'
@@ -47,27 +48,12 @@ function registrarBloqueioDiario(liberaEm: string): void {
   }
 }
 
-// Criar um Intl.DateTimeFormat custa caro (dezenas de microssegundos, mais no
-// celular) e chaveDia roda uma vez por resposta do histórico: um formato só,
-// criado na primeira vez, deixa a página inicial bem mais leve.
-let formatoDia: Intl.DateTimeFormat | null = null
-let formatoHora: Intl.DateTimeFormat | null = null
-
-export function chaveDia(data: Date | number = new Date()): string {
-  formatoDia ??= new Intl.DateTimeFormat('en-CA', { timeZone: FUSO_DIA, year: 'numeric', month: '2-digit', day: '2-digit' })
-  return formatoDia.format(data)
+/** O dia do limite é o de São Paulo (src/util/dia.ts), o mesmo do servidor. */
+export function chaveDia(data: Date | number = Date.now()): string {
+  return chaveDoDia(data)
 }
-export function inicioDia(data = new Date()): Date {
-  const [ano, mes, dia] = chaveDia(data).split('-').map(Number)
-  const meiaNoiteUtc = Date.UTC(ano, mes - 1, dia)
-  // Calcula o deslocamento real do fuso nessa data, sem cristalizar “UTC-3”.
-  const referencia = new Date(Date.UTC(ano, mes - 1, dia, 12))
-  formatoHora ??= new Intl.DateTimeFormat('en-US', { timeZone: FUSO_DIA, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit', hourCycle:'h23' })
-  const partes = formatoHora.formatToParts(referencia)
-  const valor = (tipo: string) => Number(partes.find((p) => p.type === tipo)?.value)
-  const comoUtc = Date.UTC(valor('year'), valor('month') - 1, valor('day'), valor('hour'), valor('minute'), valor('second'))
-  const deslocamento = comoUtc - referencia.getTime()
-  return new Date(meiaNoiteUtc - deslocamento)
+export function inicioDia(data: Date | number = Date.now()): Date {
+  return new Date(inicioDoDia(data))
 }
 
 export interface EstadoLimite {

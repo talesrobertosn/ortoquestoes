@@ -12,7 +12,7 @@
 import type { RegistroQuestao } from './revisao'
 import { dominada } from './revisao'
 import { calcularStreak, META_STREAK_DIARIA } from './streak'
-import { chaveDia } from './planoRevisao'
+import { chaveDoDia as chaveDia, numeroDoDia, somarDias } from '../util/dia'
 import { diasRetaFinal } from '../dados/planoEstudo'
 import type { FeitosServidor } from '../conta/feitos'
 
@@ -602,8 +602,8 @@ function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) 
   const metas = f.dias?.meta_cronograma ?? []
   let cronogramaCompleto = 0
   if (f.plano && f.plano.data_prova <= hoje) {
-    // O dia em que o plano foi criado no relógio do aparelho, como o cronograma conta
-    // (meiaNoite local). Com slice(0, 10) era o dia em UTC: plano criado às 22h de
+    // O dia em que o plano foi criado em São Paulo, como o cronograma conta
+    // (src/util/dia.ts). Com slice(0, 10) era o dia em UTC: plano criado às 22h de
     // Brasília exigia um dia a mais para "Do início ao fim".
     const inicio = numeroDia(chaveDia(new Date(f.plano.criado_em).getTime())), fim = numeroDia(f.plano.data_prova) - diasRetaFinal(f.plano.criado_em, f.plano.data_prova)
     const feitos = new Set(metas.map(numeroDia))
@@ -649,14 +649,12 @@ function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) 
     contraCorrente: Number(f.contra_corrente) || 0,
   }
 }
-/** Semana (segunda a domingo) do horário local, contada desde 1970. */
+/** Semana (segunda a domingo) dos dias de São Paulo, contada desde 1970. */
 function semanaDe(em: number) {
-  const d = new Date(em)
-  return Math.floor((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000 + 3) / 7)
+  return Math.floor((numeroDoDia(chaveDia(em)) + 3) / 7)
 }
 function vesperaDe(prova: string) {
-  const [a, m, d] = prova.split('-').map(Number)
-  return chaveDia(new Date(a, m - 1, d - 1, 12).getTime())
+  return somarDias(prova.slice(0, 10), -1)
 }
 
 /** Acertou na primeira vez? Sem erros, sim; com erros, só se o histórico guardado começa na primeira tentativa. */

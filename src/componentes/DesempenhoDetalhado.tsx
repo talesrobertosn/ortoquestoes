@@ -5,11 +5,11 @@ import { calcularStreak } from '../estado/streak'
 import { lerProvas, rotuloProva, type ProvaInteresse } from '../conta/perfilEstudo'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
+import { FUSO_DIA, chaveDoDia, diaDaSemana, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 
 interface Evento { id: string; em: number; correta: boolean | null }
 
 const DIAS = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
-const SEMANA_MS = 7 * 86_400_000
 const pctDe = (parte: number, todo: number) => (todo ? Math.round((100 * parte) / todo) : null)
 const faixa = (p: number) => (p >= 70 ? 'bom' : p >= 50 ? 'medio' : 'baixo')
 const n = (v: number) => v.toLocaleString('pt-BR')
@@ -59,17 +59,18 @@ export function DesempenhoDetalhado({ indice, marcadas, limite, meta }: {
     const certas = contadas.filter(e => e.correta).length
     const primeiras = contadas.filter(e => e.primeira), repetidas = contadas.filter(e => !e.primeira)
 
-    // Últimas 8 semanas (a atual por último).
-    const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
-    const inicioSemanaAtual = hoje.getTime() - ((hoje.getDay() + 6) % 7) * 86_400_000
+    // Últimas 8 semanas (a atual por último), em dias de São Paulo (src/util/dia.ts).
+    const hoje = hojeBR()
+    const segundaAtual = somarDias(hoje, -((diaDaSemana(hoje) + 6) % 7))
     const semanas = Array.from({ length: 8 }, (_, i) => {
-      const inicio = inicioSemanaAtual - (7 - i) * SEMANA_MS
-      const daqui = contadas.filter(e => e.em >= inicio && e.em < inicio + SEMANA_MS)
-      return { inicio, total: daqui.length, certas: daqui.filter(e => e.correta).length, dias: new Set(daqui.map(e => new Date(e.em).toDateString())).size }
+      const segunda = somarDias(segundaAtual, -(7 - i) * 7)
+      const inicio = inicioDaChave(segunda), fim = inicioDaChave(somarDias(segunda, 7))
+      const daqui = contadas.filter(e => e.em >= inicio && e.em < fim)
+      return { inicio, total: daqui.length, certas: daqui.filter(e => e.correta).length, dias: new Set(daqui.map(e => chaveDoDia(e.em))).size }
     })
 
     const porDia = DIAS.map(() => ({ total: 0, certas: 0 }))
-    for (const e of contadas) { const g = porDia[new Date(e.em).getDay()]; g.total++; if (e.correta) g.certas++ }
+    for (const e of contadas) { const g = porDia[diaDaSemana(e.em)]; g.total++; if (e.correta) g.certas++ }
 
     const grupos = GRUPOS.map(g => {
       const ids = [...infoPorId].filter(([, info]) => g.pertence(info.prova, info.area)).map(([id]) => id)
@@ -79,8 +80,9 @@ export function DesempenhoDetalhado({ indice, marcadas, limite, meta }: {
       return { ...g, total: ids.length, vistas, respostas: ev.length, certas: ev.filter(e => e.correta).length, meu: g.interesse.some(i => interesse.includes(i)) }
     }).filter(g => g.total > 0)
 
-    const dias28 = new Set(contadas.filter(e => e.em >= hoje.getTime() - 27 * 86_400_000).map(e => new Date(e.em).toDateString())).size
-    const respostas28 = contadas.filter(e => e.em >= hoje.getTime() - 27 * 86_400_000).length
+    const inicio28 = inicioDaChave(somarDias(hoje, -27))
+    const dias28 = new Set(contadas.filter(e => e.em >= inicio28).map(e => chaveDoDia(e.em))).size
+    const respostas28 = contadas.filter(e => e.em >= inicio28).length
     const vistasTotal = [...infoPorId.keys()].filter(id => marcadas[id]).length
     const streak = calcularStreak(marcadas)
     return {
@@ -122,7 +124,7 @@ export function DesempenhoDetalhado({ indice, marcadas, limite, meta }: {
               const p = pctDe(s.certas, s.total)
               const anterior = lista[i + 1] ? pctDe(lista[i + 1].certas, lista[i + 1].total) : null
               return <tr key={s.inicio}>
-                <th scope="row">{i === 0 ? 'Esta semana' : new Date(s.inicio).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })}</th>
+                <th scope="row">{i === 0 ? 'Esta semana' : new Date(s.inicio).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: FUSO_DIA })}</th>
                 <td className="numerico"><span className="dp-mini-barra" style={{ width: `${(s.total / maiorSemana) * 100}%` }} aria-hidden="true" />{n(s.total)}</td>
                 <td className="numerico">{s.dias}</td>
                 <td>{p === null ? '–' : <span className={`dp-texto--${faixa(p)}`}><strong>{p}%</strong>{anterior !== null && p !== anterior && <small className="dp-variacao"> {p > anterior ? '▲' : '▼'} {Math.abs(p - anterior)}</small>}</span>}</td>

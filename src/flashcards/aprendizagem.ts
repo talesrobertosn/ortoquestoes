@@ -3,7 +3,7 @@
  *
  * Um só caminho para o Estudo e para a Cripta registrarem uma resposta:
  *   - atualiza a fila de revisão (mesma escada de intervalos das questões, estado próprio);
- *   - soma o dia (no fuso do aparelho) para "atividade por dia";
+ *   - soma o dia (de São Paulo, src/util/dia.ts) para "atividade por dia";
  *   - guarda a chave do evento e ignora a mesma chave de novo (clique duplo,
  *     recarregar a página, reenvio, reconexão);
  *   - separa a resposta OBJETIVA (alternativa certa ou errada) da AUTOAVALIAÇÃO
@@ -15,6 +15,7 @@ import { ler, gravar } from '../estado/armazenamento'
 import { dominada, proximoRegistro, revisarHoje } from '../estado/revisao'
 import { CHAVE_HISTORICO, CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, lembrarVisto, registrarResposta, type Recordes, type RegistroFlashcard } from './progresso'
 import type { Flashcard } from './tipos'
+import { chaveDoDia as chaveDoDiaBR, diaDaSemana, somarDias } from '../util/dia'
 
 export const CHAVE_DIARIO = 'flashcards:diario'
 export const CHAVE_EVENTOS = 'flashcards:eventos'
@@ -51,9 +52,9 @@ export type RegistroAprendizagem = RegistroFlashcard & {
   av?: Avaliacao
 }
 
+/** "AAAA-MM-DD" no dia de São Paulo, o mesmo das questões, da sequência e do cronograma. */
 export function chaveDoDia(t: number) {
-  const d = new Date(t)
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+  return chaveDoDiaBR(t)
 }
 
 export interface EventoEstudo {
@@ -165,10 +166,10 @@ export function calcularEstatisticas(cartas: Flashcard[], nomes: Record<string, 
       if (pend) x.pendentes++
     }
   }
-  const limite = chaveDoDia(agora - (dias - 1) * 86400000)
+  const limite = somarDias(chaveDoDia(agora), -(dias - 1))
   const p = { dias, revisoes: 0, novos: 0, objetivas: 0, objetivasCertas: 0, primeiras: 0, primeirasCertas: 0, errei: 0, hesitei: 0, sabia: 0, diasAtivos: 0, porDia: [] as Array<{ dia: string; revisoes: number }> }
   for (let i = dias - 1; i >= 0; i--) {
-    const k = chaveDoDia(agora - i * 86400000)
+    const k = somarDias(chaveDoDia(agora), -i)
     const d = diario[k]
     p.porDia.push({ dia: k, revisoes: d?.revisoes ?? 0 })
     if (!d || k < limite) continue
@@ -220,13 +221,12 @@ export interface CalculoPlano {
 export function diasDeEstudo(plano: Pick<PlanoFlashcards, 'data' | 'diasSemana'>, agora = Date.now()) {
   const [a, m, d] = plano.data.split('-').map(Number)
   if (!a || !m || !d) return -1
-  const fim = new Date(a, m - 1, d).getTime()
-  const hoje = new Date(agora); hoje.setHours(0, 0, 0, 0)
-  if (fim < hoje.getTime()) return -1
+  const fim = `${a}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`
+  const hoje = chaveDoDiaBR(agora)
+  if (fim < hoje) return -1
   let n = 0
-  for (let t = hoje.getTime(); t <= fim; t += 86400000) {
-    const dia = new Date(t).getDay()
-    if (!plano.diasSemana.length || plano.diasSemana.includes(dia)) n++
+  for (let k = hoje; k <= fim; k = somarDias(k, 1)) {
+    if (!plano.diasSemana.length || plano.diasSemana.includes(diaDaSemana(k))) n++
   }
   return n
 }
@@ -242,7 +242,7 @@ export function calcularPlano(plano: PlanoFlashcards | null, cartas: Flashcard[]
   const novosRestantes = doPlano.filter((c) => !registros[c.id]).length
   const revisoesHoje = doPlano.filter((c) => revisarHoje(registros[c.id], agora)).length
   const feitosHoje = doPlano.filter((c) => registros[c.id] && chaveDoDia(registros[c.id].q) === hoje).length
-  const ehDiaDeEstudo = !plano.diasSemana.length || plano.diasSemana.includes(new Date(agora).getDay())
+  const ehDiaDeEstudo = !plano.diasSemana.length || plano.diasSemana.includes(diaDaSemana(agora))
   if (dias < 0) return { ...vazio, situacao: 'data-passada', novosRestantes, revisoesHoje, feitosHoje, ehDiaDeEstudo }
   if (!novosRestantes && !revisoesHoje) return { ...vazio, situacao: 'concluido', diasRestantes: dias, feitosHoje, ehDiaDeEstudo }
   const novosPorDia = dias > 0 ? Math.ceil(novosRestantes / dias) : novosRestantes

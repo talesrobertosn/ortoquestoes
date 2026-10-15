@@ -14,7 +14,8 @@ import { type ResumoHistorico, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
 import { conquistaAtual, proximaConquista } from '../estado/conquistas'
 import { Medalha } from '../componentes/Medalha'
-import { chaveDia, inicioDia } from '../estado/planoRevisao'
+import { chaveDia } from '../estado/planoRevisao'
+import { FUSO_DIA, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 import { DesempenhoDetalhado } from '../componentes/DesempenhoDetalhado'
 import '../estilos/paginas/Apoio.css'
 
@@ -246,10 +247,10 @@ const PERIODOS: { tipo: PeriodoDesempenho['tipo']; rotulo: string }[] = [
 function inicioDoPeriodo(p: PeriodoDesempenho): number {
   if (p.tipo === 'tudo') return 0
   if (p.tipo === 'desde') {
-    const data = p.desde ? new Date(`${p.desde}T00:00:00`).getTime() : NaN
+    const data = p.desde && /^\d{4}-\d{2}-\d{2}$/.test(p.desde) ? inicioDaChave(p.desde) : NaN
     return Number.isFinite(data) ? data : 0
   }
-  return inicioDia() - (Number(p.tipo) - 1) * 86400000
+  return inicioDaChave(somarDias(hojeBR(), -(Number(p.tipo) - 1)))
 }
 function descreverPeriodo(p: PeriodoDesempenho): string {
   if (p.tipo === 'tudo') return 'desde o começo'
@@ -341,9 +342,9 @@ export function DadosLocais() {
         porDia.set(chave, atual)
       }
     }
-    const hoje = inicioDia()
+    const hoje = hojeBR()
     return Array.from({ length: 28 }, (_, i) => {
-      const dia = hoje - (27 - i) * 86400000
+      const dia = inicioDaChave(somarDias(hoje, -(27 - i)))
       return { dia, fora: dia + 86400000 <= limite, ...(porDia.get(chaveDia(dia)) ?? { total: 0, certas: 0 }) }
     })
   }, [marcadas, reinicioEm, limite])
@@ -417,7 +418,7 @@ export function DadosLocais() {
           <div className="ct-seg dp-periodo__seg" role="group" aria-label="Escolher período">
             {PERIODOS.map((opcao) => (
               <button key={opcao.tipo} type="button" aria-pressed={periodo.tipo === opcao.tipo}
-                onClick={() => definirPeriodo(opcao.tipo === 'desde' ? { tipo: 'desde', desde: periodo.desde ?? new Date(inicioDia() - 29 * 86400000).toISOString().slice(0, 10) } : { tipo: opcao.tipo, desde: periodo.desde })}>
+                onClick={() => definirPeriodo(opcao.tipo === 'desde' ? { tipo: 'desde', desde: periodo.desde ?? somarDias(hojeBR(), -29) } : { tipo: opcao.tipo, desde: periodo.desde })}>
                 {opcao.rotulo}
               </button>
             ))}
@@ -425,7 +426,7 @@ export function DadosLocais() {
           {periodo.tipo === 'desde' && (
             <label className="dp-periodo__data">
               <span className="so-leitor">Data inicial</span>
-              <input className="entrada" type="date" value={periodo.desde ?? ''} max={chaveDia(Date.now())} onChange={(e) => definirPeriodo({ tipo: 'desde', desde: e.target.value })} />
+              <input className="entrada" type="date" value={periodo.desde ?? ''} max={hojeBR()} onChange={(e) => definirPeriodo({ tipo: 'desde', desde: e.target.value })} />
             </label>
           )}
         </div>
@@ -446,7 +447,7 @@ export function DadosLocais() {
           </div>
           <div className="dp-barras" role="img" aria-label={`Atividade diária: ${questoesMes} respostas em 28 dias`}>
             {atividade.map((d) => (
-              <span key={d.dia} className={'dp-barras__dia' + (d.fora ? ' dp-barras__dia--fora' : '')} title={`${new Date(d.dia).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })}: ${d.total} ${d.total === 1 ? 'resposta' : 'respostas'}${d.total ? `, ${Math.round((d.certas / d.total) * 100)}% de acerto` : ''}`}>
+              <span key={d.dia} className={'dp-barras__dia' + (d.fora ? ' dp-barras__dia--fora' : '')} title={`${new Date(d.dia).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', timeZone: FUSO_DIA })}: ${d.total} ${d.total === 1 ? 'resposta' : 'respostas'}${d.total ? `, ${Math.round((d.certas / d.total) * 100)}% de acerto` : ''}`}>
                 <span className="dp-barras__barra" style={{ height: `${d.total ? Math.max(6, (d.total / maiorDia) * 100) : 0}%` }} />
               </span>
             ))}

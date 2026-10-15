@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { chamarRpc, ErroRpc } from '../servicos/supabase'
 import { gravar, ler } from '../estado/armazenamento'
-import { chaveData, incluiSimulados, opcoesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
+import { hojeBR, somarDias } from '../util/dia'
+import { incluiSimulados, opcoesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
 
 /**
  * Leitura e gravação do cronograma no servidor. O plano mora numa linha só
@@ -160,8 +161,8 @@ export async function salvarOpcoes(alterar: (atual: PlanoSalvo) => OpcoesPlano |
  */
 export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPlano, 'metaDiaria' | 'extraHoje' | 'adiantarPedido' | 'naRetaFinal' | 'provaPassou'>, pedido?: number): OpcoesPlano | null {
   if (calculo.naRetaFinal || calculo.provaPassou) return null
-  const hoje = chaveData(new Date())
-  const limite = chaveData(new Date(Date.now() - 30 * 86_400_000))
+  const hoje = hojeBR()
+  const limite = somarDias(hoje, -30)
   const lista = opcoesDe(plano).adiantados.filter((r) => r.em >= limite)
   const atual = lista.find((r) => r.em === hoje)
   const novoPedido = Math.max(0, Math.round(pedido ?? atual?.pedido ?? 0))
