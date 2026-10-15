@@ -120,6 +120,8 @@ export function dataLocal(iso: string): Date {
 }
 const meiaNoite = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate())
 const diasEntre = (a: Date, b: Date) => Math.round((meiaNoite(b).getTime() - meiaNoite(a).getTime()) / DIA)
+/** Dias de hoje até a data (AAAA-MM-DD), na mesma conta do painel do cronograma. */
+export const diasAte = (data: string, agora = new Date()) => diasEntre(agora, dataLocal(data))
 
 /** Dias de estudo em [inicio, fim), sem os dias da semana de folga. */
 export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number {

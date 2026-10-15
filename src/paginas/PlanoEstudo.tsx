@@ -11,7 +11,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, dataLocal, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, dataLocal, diasAte, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
@@ -25,6 +25,7 @@ import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
+import { usarDiaAtual } from '../util/usarDiaAtual'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
@@ -105,7 +106,9 @@ export function PlanoEstudo() {
     if (salvoNoServidor.falhou && !plano) definirErro('Não foi possível carregar seu cronograma. Confira a conexão.')
   }, [salvoNoServidor.falhou, plano])
 
-  const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
+  const dia = usarDiaAtual()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas, dia])
   useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
   // Fez além da meta hoje: guarda o dia (e a meta dele), para amanhã a meta já vir mais leve.
   const extraHoje = calculo?.extraHoje ?? 0
@@ -660,7 +663,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
           {dataLocal(DATA_TEOT) > new Date() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
             <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT 2027</strong> · prova teórica em 10 de janeiro de 2027</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
           </button>}
-          {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000)} dias</b> até a prova.</p>}
+          {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{diasAte(data)} dias</b> até a prova.</p>}
           <details className="pe-form__mais" open={!!provaExtra.nome}>
             <summary>Vai fazer outra prova antes? (opcional)</summary>
             <p className="texto-2">Ela aparece como marco no seu caminho até a prova principal, por exemplo o TARO antes do TEOT.</p>
@@ -753,7 +756,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
 function ResultadoAoVivo({ data, prova, folgas, diasLeves, qtdLeve, simulados, intensidade, meta, maisCai, minutos }: {
   data: string | null; prova: string; folgas: number[]; diasLeves: number[]; qtdLeve: number; simulados: boolean; intensidade: Intensidade; meta: number | null; maisCai: number | null; minutos: number
 }) {
-  const dias = data ? Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000) : 0
+  const dias = data ? diasAte(data) : 0
   const anterior = useRef<number | null>(null)
   const [diferenca, definirDiferenca] = useState<number | null>(null)
   useEffect(() => {

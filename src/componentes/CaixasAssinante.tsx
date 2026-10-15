@@ -4,6 +4,7 @@ import { usarPremium } from '../conta/premium'
 import { usarConta } from '../conta/ContextoConta'
 import { guardarAdiantamento, opcoesComAdiantamento, usarPlanoSalvo } from '../conta/cronograma'
 import { NovidadeSimulados } from './NovidadeSimulados'
+import { usarDiaAtual } from '../util/usarDiaAtual'
 import { usarIndice } from '../dados/usarIndice'
 import { TOP_ASSUNTOS, areaPorId } from '../dados/incidencia'
 import { calcularPlano, type CalculoPlano } from '../dados/planoEstudo'
@@ -31,7 +32,9 @@ export function usarCronogramaHoje() {
   const pendente = sessaoLocal && !sessaoLocal.concluidaEm && sessaoLocal.origem === 'cronograma' && Object.keys(sessaoLocal.respostas).length < sessaoLocal.ids.length
     ? { feitas: Object.keys(sessaoLocal.respostas).length, total: sessaoLocal.ids.length } : null
 
-  const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
+  const dia = usarDiaAtual()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas, dia])
   useEffect(() => { if (premium) conferirMetaCronograma(calculo) }, [premium, calculo])
   // Fez além da meta hoje: guarda o dia, para amanhã a meta já vir mais leve.
   const extra = calculo?.extraHoje ?? 0
