@@ -165,6 +165,33 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0016-co1",
+   "questao": "trauma-0016",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Com calcar curto e dobradiça medial rompida juntos (Hertel), qual é o valor preditivo de isquemia da cabeça umeral?",
+   "resposta": "97%",
+   "explicacao": "Cerca de **97%**: os vasos que entram pela região posteromedial foram arrancados.",
+   "opcoes": [
+    "97%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "8fdf7e1a8426",
+   "origem": "autoral",
+   "trecho": "o valor preditivo de isquemia é de cerca de **97%**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0019-co1",
    "questao": "trauma-0019",
    "area": "Trauma adulto",
@@ -383,6 +410,174 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0057-co1",
+   "questao": "trauma-0057",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura isolada do tubérculo menor é rara. Em qual luxação do ombro (convulsão, choque elétrico) ela deve ser lembrada?",
+   "resposta": "luxação posterior",
+   "explicacao": "Na **luxação posterior**, o subescapular arranca o tubérculo menor, que vai para medial.",
+   "opcoes": [
+    "Luxação posterior",
+    "Luxação anterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "487f72b9c7c6",
+   "origem": "autoral",
+   "trecho": "Pode ocorrer na **luxação posterior** do ombro (por convulsão ou choque elétrico)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0057-co2",
+   "questao": "trauma-0057",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O fragmento do tubérculo menor, puxado para medial pelo subescapular, pode bloquear qual movimento do ombro?",
+   "resposta": "rotação interna",
+   "explicacao": "O tubérculo menor desviado medialmente pode **bloquear a rotação interna**.",
+   "opcoes": [
+    "rotação interna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "487f72b9c7c6",
+   "origem": "autoral",
+   "trecho": "pode **bloquear a rotação interna**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0057-co3",
+   "questao": "trauma-0057",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual artéria é hoje considerada a principal na irrigação da cabeça do úmero?",
+   "resposta": "artéria circunflexa umeral posterior",
+   "explicacao": "A **circunflexa umeral posterior** entra pela região posteromedial. Antes, o papel era atribuído à artéria arqueada, ramo da circunflexa anterior.",
+   "opcoes": [
+    "Artéria circunflexa umeral posterior",
+    "Artéria arqueada"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "487f72b9c7c6",
+   "origem": "autoral",
+   "trecho": "A **artéria circunflexa umeral posterior** é hoje considerada a principal",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0057-co4",
+   "questao": "trauma-0057",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do tubérculo maior, a partir de que desvio superior já pode haver impacto subacromial e indicação de fixação?",
+   "resposta": "5 mm",
+   "explicacao": "Um desvio superior de apenas **5 mm** (3 a 5 mm em atletas) já pode causar impacto, bem menos que o 1 cm de Neer.",
+   "opcoes": [
+    "5 mm",
+    "1 cm"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "487f72b9c7c6",
+   "origem": "autoral",
+   "trecho": "Um desvio superior de apenas **5 mm** (3 a 5 mm em atletas) já pode causar **impacto subacromial**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0057-tb1",
+   "questao": "trauma-0057",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do úmero proximal, para onde o supraespinal, o infraespinal e o redondo menor desviam o tubérculo maior?",
+   "resposta": "Superior e posterior",
+   "explicacao": "O **tubérculo maior** sobe e vai para trás, puxado pelo manguito posterossuperior. O tubérculo menor vai para medial (subescapular).",
+   "opcoes": [
+    "Superior e posterior",
+    "Medial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "487f72b9c7c6",
+   "origem": "autoral",
+   "trecho": "Supraespinal, infraespinal e redondo menor | **Superior e posterior**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0057-tb2",
+   "questao": "trauma-0057",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do úmero proximal, qual músculo é o principal responsável pelo desvio medial da diáfise?",
+   "resposta": "Peitoral maior",
+   "explicacao": "A **diáfise** é puxada para medial (e anterior) pelo **peitoral maior**, com subida pelo deltoide.",
+   "opcoes": [
+    "Peitoral maior",
+    "Subescapular",
+    "Supraespinal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "487f72b9c7c6",
+   "origem": "autoral",
+   "trecho": "**Diáfise** | **Peitoral maior** (e deltoide)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0066-co1",
    "questao": "trauma-0066",
    "area": "Trauma adulto",
@@ -434,6 +629,33 @@
    "fonte": "58aadfd44f1e",
    "origem": "autoral",
    "trecho": "**fragmento distal**: o **estiloide radial**, que fica lateral em supinação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0071-co1",
+   "questao": "trauma-0071",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fixação com placa bloqueada do úmero proximal, quantos milímetros abaixo do topo do tubérculo maior se posiciona a placa?",
+   "resposta": "5 a 8 mm",
+   "explicacao": "A placa fica **5 a 8 mm** abaixo do topo do tubérculo maior, para não causar impacto subacromial.",
+   "opcoes": [
+    "5 a 8 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "a9c960757bc2",
+   "origem": "autoral",
+   "trecho": "**posicionar a placa** de 5 a 8 mm abaixo do topo do tubérculo maior",
    "criadoEm": "2026-10-15"
   },
   {
@@ -884,6 +1106,33 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0146-co1",
+   "questao": "trauma-0146",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para prevenir a rigidez na fratura do úmero proximal tratada sem cirurgia, por quanto tempo se usa a tipoia?",
+   "resposta": "2 a 3 semanas",
+   "explicacao": "**Tipoia curta**, por 2 a 3 semanas, com exercícios pendulares e mobilização passiva precoces.",
+   "opcoes": [
+    "2 a 3 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "fe2335d814a0",
+   "origem": "autoral",
+   "trecho": "**tipoia curta**, por 2 a 3 semanas",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0163-ar1",
    "questao": "trauma-0163",
    "area": "Trauma adulto",
@@ -1241,6 +1490,260 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0181-cl1",
+   "questao": "trauma-0181",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação AO clássica (Müller) do úmero proximal, qual tipo é a fratura articular, no colo anatômico?",
+   "resposta": "11C",
+   "explicacao": "**11C** é a fratura **articular** (colo anatômico). 11A é extra-articular unifocal e 11B, extra-articular bifocal.",
+   "opcoes": [
+    "11A",
+    "11B",
+    "11C"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "725d0d69fd95",
+   "origem": "autoral",
+   "trecho": "11C | **Articular** (colo anatômico)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0181-cl2",
+   "questao": "trauma-0181",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na AO clássica do úmero proximal, a fratura bifocal extra-articular (11B) com luxação glenoumeral é qual subgrupo?",
+   "resposta": "B3",
+   "explicacao": "**11B3**: bifocal com luxação glenoumeral. B1 tem impacção metafisária; B2 não tem.",
+   "opcoes": [
+    "B1",
+    "B2",
+    "B3"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "725d0d69fd95",
+   "origem": "autoral",
+   "trecho": "B3 com luxação glenoumeral",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0181-cl3",
+   "questao": "trauma-0181",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na AO clássica do úmero proximal, o subgrupo A2 é a fratura extra-articular unifocal impactada de qual região?",
+   "resposta": "colo cirúrgico",
+   "explicacao": "**A2: colo cirúrgico impactado.** A1 é a tuberosidade isolada e A3, o colo cirúrgico não impactado.",
+   "opcoes": [
+    "Colo cirúrgico",
+    "Tuberosidade isolada",
+    "Colo anatômico"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "725d0d69fd95",
+   "origem": "autoral",
+   "trecho": "A2 colo cirúrgico impactado",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0183-co1",
+   "questao": "trauma-0183",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a cortical inferomedial do colo do úmero, que sustenta a cabeça como um pilar?",
+   "resposta": "calcar",
+   "explicacao": "O **calcar**: cominuído, a cabeça perde o apoio e cai em varo.",
+   "opcoes": [
+    "calcar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "575a9df53c42",
+   "origem": "autoral",
+   "trecho": "O **calcar** é a cortical **inferomedial** do colo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0183-co2",
+   "questao": "trauma-0183",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na placa bloqueada do úmero proximal com cominuição medial grande, qual enxerto estrutural intramedular restaura o suporte medial?",
+   "resposta": "enxerto de fíbula",
+   "explicacao": "O **enxerto de fíbula** (aloenxerto) intramedular, junto com os parafusos do calcar.",
+   "opcoes": [
+    "enxerto de fíbula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "575a9df53c42",
+   "origem": "autoral",
+   "trecho": "como o **enxerto de fíbula** (aloenxerto), quando a cominuição é grande",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0184-co1",
+   "questao": "trauma-0184",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para prevenir a perfuração articular na placa bloqueada do úmero proximal, quantos milímetros abaixo do osso subcondral os parafusos devem parar?",
+   "resposta": "5 a 8 mm",
+   "explicacao": "Parafusos **5 a 8 mm** abaixo do osso subcondral, além do suporte medial e de evitar a redução em varo.",
+   "opcoes": [
+    "5 a 8 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "a5091de38995",
+   "origem": "autoral",
+   "trecho": "usar parafusos 5 a 8 mm abaixo do osso subcondral",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0184-pc1",
+   "questao": "trauma-0184",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Südkamp mostrou complicações em cerca de um terço das placas bloqueadas do úmero proximal. Quem mostrou a importância do suporte medial?",
+   "resposta": "Gardner",
+   "explicacao": "**Gardner** e colaboradores: suporte medial com redução do calcar e parafusos oblíquos inferomediais.",
+   "opcoes": [
+    "Gardner",
+    "Südkamp"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "a5091de38995",
+   "origem": "autoral",
+   "trecho": "Gardner e colaboradores mostraram a importância do **suporte medial**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0184-tb1",
+   "questao": "trauma-0184",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na placa bloqueada do úmero proximal, a falta de suporte medial (calcar) leva a qual complicação?",
+   "resposta": "Colapso em varo",
+   "explicacao": "Sem **suporte medial**, cominuição ou redução em varo, a cabeça perde altura: **colapso em varo** e perda de redução.",
+   "opcoes": [
+    "Colapso em varo",
+    "Impacto subacromial",
+    "Osteonecrose da cabeça"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "a5091de38995",
+   "origem": "autoral",
+   "trecho": "**Colapso em varo, perda de redução** | Falta de **suporte medial** (calcar)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0184-tb2",
+   "questao": "trauma-0184",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteossíntese do úmero proximal, a placa posicionada alta causa qual complicação?",
+   "resposta": "Impacto subacromial",
+   "explicacao": "A **placa alta** bate no acrômio: **impacto subacromial**.",
+   "opcoes": [
+    "Impacto subacromial",
+    "Colapso em varo",
+    "Osteonecrose da cabeça"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "a5091de38995",
+   "origem": "autoral",
+   "trecho": "Impacto subacromial | Placa posicionada alta",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0219-co1",
    "questao": "trauma-0219",
    "area": "Trauma adulto",
@@ -1461,6 +1964,143 @@
    "fonte": "675721be19b6",
    "origem": "autoral",
    "trecho": "testar a estabilidade da radioulnar distal em **pronação**, **neutro** e **supinação**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0232-pc1",
+   "questao": "trauma-0232",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A queda com o ombro em flexão, abdução e rotação interna impacta a cabeça umeral em valgo. Com o ombro em adução, a cabeça tomba em quê?",
+   "resposta": "varo",
+   "explicacao": "Em **adução**, a cabeça tomba em **varo**, para baixo e para dentro.",
+   "opcoes": [
+    "Varo",
+    "Valgo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "27fa2dec943d",
+   "origem": "autoral",
+   "trecho": "com o ombro em **adução**, a cabeça tomba em **varo**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0265-ar1",
+   "questao": "trauma-0265",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A isquemia inicial da cabeça umeral prevista pelos critérios de Hertel sempre evolui para necrose?",
+   "resposta": "nem sempre",
+   "explicacao": "**Nem sempre**: muitas cabeças revascularizam. Hertel prevê isquemia, não necrose sintomática.",
+   "opcoes": [
+    "nem sempre"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "20d717f9e243",
+   "origem": "autoral",
+   "trecho": "Mas isquemia inicial **nem sempre** vira necrose: muitas cabeças revascularizam.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0265-co1",
+   "questao": "trauma-0265",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pelos critérios de Hertel, a partir de que desvio entre cabeça e diáfise no calcar a dobradiça medial é considerada rompida?",
+   "resposta": "2 mm",
+   "explicacao": "**Ruptura da dobradiça medial**: desvio acima de **2 mm** no calcar. Com o calcar curto (menos de 8 mm), a isquemia passa de 90%.",
+   "opcoes": [
+    "2 mm",
+    "8 mm"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "20d717f9e243",
+   "origem": "autoral",
+   "trecho": "com desvio acima de **2 mm** entre a cabeça e a diáfise no calcar",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0265-co2",
+   "questao": "trauma-0265",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura do úmero proximal impactada em valgo é de quatro partes de Neer, mas tem necrose baixa. Que estrutura preservada explica isso?",
+   "resposta": "periósteo medial íntegro",
+   "explicacao": "O **periósteo medial íntegro** funciona como ponte vascular para a cabeça.",
+   "opcoes": [
+    "periósteo medial íntegro"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "20d717f9e243",
+   "origem": "autoral",
+   "trecho": "A fratura **impactada em valgo** mantém o periósteo medial íntegro, funcionando como ponte vascular",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0265-pc1",
+   "questao": "trauma-0265",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A circunflexa posterior responde pela maior parte do fluxo da cabeça umeral. Qual ramo ascendente da circunflexa anterior, no sulco do bíceps, era antes apontado como principal?",
+   "resposta": "artéria arqueada de Laing",
+   "explicacao": "A **artéria arqueada de Laing** sobe pelo sulco bicipital e entra na cabeça; estudos recentes mostraram que a circunflexa posterior dá cerca de dois terços do fluxo.",
+   "opcoes": [
+    "artéria arqueada de Laing"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "20d717f9e243",
+   "origem": "autoral",
+   "trecho": "pelo seu ramo ascendente, a **artéria arqueada de Laing**, que sobe pelo sulco do bíceps",
    "criadoEm": "2026-10-15"
   },
   {
@@ -1768,6 +2408,116 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0329-co1",
+   "questao": "trauma-0329",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Sem infraespinal e redondo menor após necrose do tubérculo maior, o paciente não leva a mão à boca. Que sinal é esse?",
+   "resposta": "sinal da corneta",
+   "explicacao": "**Sinal da corneta**: falta de rotação lateral. A reversa devolve a elevação, e a transferência do grande dorsal, a rotação lateral.",
+   "opcoes": [
+    "sinal da corneta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "677f146c5ced",
+   "origem": "autoral",
+   "trecho": "o paciente não consegue levar a mão à boca ou à cabeça (sinal da corneta)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0442-co1",
+   "questao": "trauma-0442",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Depois do colo cirúrgico, qual é a segunda fratura em duas partes mais comum do úmero proximal?",
+   "resposta": "tubérculo maior",
+   "explicacao": "O **tubérculo maior** é a segunda, muitas vezes com luxação anterior. Tubérculo menor e colo anatômico são raros.",
+   "opcoes": [
+    "Tubérculo maior",
+    "Tubérculo menor",
+    "Colo anatômico"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "bf214e9e8601",
+   "origem": "autoral",
+   "trecho": "**tubérculo maior**: a segunda mais comum, muitas vezes com **luxação anterior** do ombro",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0442-co2",
+   "questao": "trauma-0442",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura em duas partes do colo anatômico do úmero é rara. Qual complicação lhe dá o pior prognóstico?",
+   "resposta": "necrose",
+   "explicacao": "O **colo anatômico** separa a cabeça das inserções: rara e de pior prognóstico, pela **necrose**.",
+   "opcoes": [
+    "necrose"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "bf214e9e8601",
+   "origem": "autoral",
+   "trecho": "**colo anatômico**: rara e de pior prognóstico (necrose)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0442-co3",
+   "questao": "trauma-0442",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pela classificação de Neer, quanto um segmento do úmero proximal precisa estar desviado para contar como parte?",
+   "resposta": "1 cm",
+   "explicacao": "Uma parte só conta se desviar mais de **1 cm** ou angular mais de **45°**.",
+   "opcoes": [
+    "1 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "bf214e9e8601",
+   "origem": "autoral",
+   "trecho": "Uma parte só conta se desviar mais de **1 cm** ou angular mais de **45°**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0547-co1",
    "questao": "trauma-0547",
    "area": "Trauma adulto",
@@ -1928,6 +2678,173 @@
    "fonte": "79ce51560070",
    "origem": "autoral",
    "trecho": "sobretudo quando a lesão é na **inserção femoral** (proximal), onde a irrigação é boa.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0566-co1",
+   "questao": "trauma-0566",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual a posição da fratura do úmero proximal entre as fraturas por fragilidade, depois do quadril e do punho?",
+   "resposta": "terceira",
+   "explicacao": "É a **terceira** fratura por fragilidade mais comum, típica da mulher idosa após queda da própria altura.",
+   "opcoes": [
+    "terceira"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "323751dd28ee",
+   "origem": "autoral",
+   "trecho": "é a **terceira** fratura por fragilidade mais comum, depois do quadril e do punho",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0566-co2",
+   "questao": "trauma-0566",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na rigidez após fratura do úmero proximal, qual movimento costuma ser o mais perdido, junto com a elevação?",
+   "resposta": "rotação externa",
+   "explicacao": "A perda mais comum é da **rotação externa** e da elevação: imobilizar pouco e mobilizar cedo.",
+   "opcoes": [
+    "rotação externa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "323751dd28ee",
+   "origem": "autoral",
+   "trecho": "A perda mais comum é da **rotação externa** e da elevação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0678-cl1",
+   "questao": "trauma-0678",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual classificação gradua a osteonecrose da cabeça umeral de I (só na ressonância) a V (colapso com desgaste da glenoide)?",
+   "resposta": "Cruess",
+   "explicacao": "**Cruess** gradua a necrose da cabeça umeral. Boileau classifica as sequelas para a artroplastia; Hertel prevê a isquemia.",
+   "opcoes": [
+    "Cruess",
+    "Boileau",
+    "Hertel"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "4191d4195861",
+   "origem": "autoral",
+   "trecho": "A classificação de **Cruess** gradua de I (só na ressonância) a V (colapso com desgaste da glenoide).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0678-co1",
+   "questao": "trauma-0678",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após fratura do úmero proximal, em que intervalo costuma surgir a dor intensa da osteonecrose da cabeça?",
+   "resposta": "entre 6 meses e 2 anos",
+   "explicacao": "A paciente evoluía bem e, **entre 6 meses e 2 anos**, surge dor intensa e noturna, coincidindo com o colapso subcondral.",
+   "opcoes": [
+    "entre 6 meses e 2 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "4191d4195861",
+   "origem": "autoral",
+   "trecho": "(geralmente entre 6 meses e 2 anos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0686-co1",
+   "questao": "trauma-0686",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura isolada do tubérculo maior, qual desvio superior é tolerado em atletas e trabalhadores com atividade acima da cabeça?",
+   "resposta": "3 mm",
+   "explicacao": "Aceitam-se cerca de **5 mm** de desvio superior em geral e apenas **3 mm** em quem usa o braço acima da cabeça.",
+   "opcoes": [
+    "3 mm",
+    "5 mm",
+    "1 cm"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "3cc0845c56b9",
+   "origem": "autoral",
+   "trecho": "e apenas **3 mm** em atletas e trabalhadores com atividade acima da cabeça",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0686-pc1",
+   "questao": "trauma-0686",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura do tubérculo maior pode ser fixada pela via deltopeitoral. Qual via dá acesso mais direto ao tubérculo?",
+   "resposta": "transdeltóidea",
+   "explicacao": "A via **transdeltóidea** chega direto ao tubérculo maior; a deltopeitoral também é opção, assim como a artroscopia.",
+   "opcoes": [
+    "Transdeltóidea",
+    "Deltopeitoral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "3cc0845c56b9",
+   "origem": "autoral",
+   "trecho": "embora a transdeltóidea dê acesso mais direto ao tubérculo",
    "criadoEm": "2026-10-15"
   },
   {
@@ -2094,6 +3011,33 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0721-co1",
+   "questao": "trauma-0721",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Uma fratura sentinela do punho ou do ombro depois dos 50 anos aumenta muito o risco de futura fratura de qual osso, além das vértebras?",
+   "resposta": "quadril",
+   "explicacao": "Fraturas **sentinela** da osteoporose: prever fratura do **quadril** e vertebral, e tratar a osteoporose.",
+   "opcoes": [
+    "quadril"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "8619d37791ec",
+   "origem": "autoral",
+   "trecho": "aumenta muito o risco de uma futura fratura do **quadril** e de vértebras",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0745-cl1",
    "questao": "trauma-0745",
    "area": "Trauma adulto",
@@ -2145,6 +3089,87 @@
    "fonte": "371a5f029da1",
    "origem": "autoral",
    "trecho": "**A modificação de Wascher.** Acrescenta **sufixos** para lesões associadas",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0750-co1",
+   "questao": "trauma-0750",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por qual espaço anatômico passa o nervo axilar, junto com a artéria circunflexa umeral posterior, antes de contornar o colo cirúrgico?",
+   "resposta": "espaço quadrangular",
+   "explicacao": "O axilar passa pelo **espaço quadrangular** e contorna o colo cirúrgico por trás, encostado no osso.",
+   "opcoes": [
+    "espaço quadrangular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "e58577dc9be5",
+   "origem": "autoral",
+   "trecho": "passa pelo **espaço quadrangular** (junto com a artéria circunflexa umeral posterior)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0750-co2",
+   "questao": "trauma-0750",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A que distância do acrômio o nervo axilar contorna o colo cirúrgico do úmero?",
+   "resposta": "5 a 7 cm",
+   "explicacao": "O axilar contorna o colo cirúrgico por trás a cerca de **5 a 7 cm** do acrômio, onde a fratura acontece.",
+   "opcoes": [
+    "5 a 7 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "e58577dc9be5",
+   "origem": "autoral",
+   "trecho": "**contorna o colo cirúrgico** do úmero por trás, a cerca de 5 a 7 cm do acrômio",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0750-co3",
+   "questao": "trauma-0750",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do úmero proximal, que área de sensibilidade na face lateral do ombro se testa para o nervo axilar?",
+   "resposta": "distintivo de sargento",
+   "explicacao": "A área do **distintivo de sargento** (regimental badge), além da contração do deltoide.",
+   "opcoes": [
+    "distintivo de sargento"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "e58577dc9be5",
+   "origem": "autoral",
+   "trecho": "(área do \"distintivo de sargento\", o \"regimental badge\")",
    "criadoEm": "2026-10-15"
   },
   {
@@ -2202,6 +3227,170 @@
    "fonte": "f61c50e7604b",
    "origem": "autoral",
    "trecho": "A **pseudartrose da ulna** é a principal causa de reoperação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0778-co1",
+   "questao": "trauma-0778",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No AP verdadeiro do ombro (Grashey), quantos graus o raio é inclinado em relação ao plano do tórax?",
+   "resposta": "40°",
+   "explicacao": "Cerca de **40°**, alinhado com a escápula: a glenoide aparece de perfil, sem sobreposição com a cabeça.",
+   "opcoes": [
+    "40°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "808250481ad4",
+   "origem": "autoral",
+   "trecho": "o raio é inclinado cerca de 40° em relação ao plano do tórax",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0778-pc1",
+   "questao": "trauma-0778",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O Grashey em rotação externa mostra o tubérculo maior de perfil. Que lesões a incidência de Garth (apical oblíqua) mostra?",
+   "resposta": "borda anteroinferior da glenoide",
+   "explicacao": "**Garth** mostra fraturas da **borda anteroinferior da glenoide** e lesões de Hill-Sachs, não o tubérculo maior.",
+   "opcoes": [
+    "borda anteroinferior da glenoide"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "808250481ad4",
+   "origem": "autoral",
+   "trecho": "**Garth** (apical oblíqua): mostra fraturas da borda anteroinferior da glenoide e lesões de Hill-Sachs",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0785-co1",
+   "questao": "trauma-0785",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na consolidação viciosa do tubérculo maior com desvio pequeno, qual procedimento artroscópico se associa à acromioplastia?",
+   "resposta": "tuberculoplastia",
+   "explicacao": "**Tuberculoplastia**: retirar o excesso de osso do tubérculo. Desvio grande pede osteotomia; artrose pede artroplastia.",
+   "opcoes": [
+    "tuberculoplastia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "b18cf742dedd",
+   "origem": "autoral",
+   "trecho": "**desvio pequeno**: **acromioplastia** e **tuberculoplastia**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0786-ar1",
+   "questao": "trauma-0786",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura do úmero proximal com vários traços, mas nenhum segmento desviado acima de 1 cm ou 45 graus: quantas partes de Neer?",
+   "resposta": "uma parte",
+   "explicacao": "Neer conta **partes desviadas**, não fragmentos: sem desvio, é **uma parte**, por mais traços que tenha.",
+   "opcoes": [
+    "uma parte"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "432aa16849f8",
+   "origem": "autoral",
+   "trecho": "uma fratura com vários traços mas sem desvio é \"uma parte\", por mais fragmentos que tenha",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0786-cl1",
+   "questao": "trauma-0786",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Neer, cerca de que proporção das fraturas do úmero proximal é de uma parte, sem desvio significativo?",
+   "resposta": "80%",
+   "explicacao": "**Uma parte**: sem desvio acima de 1 cm ou 45 graus, cerca de **80%** das fraturas.",
+   "opcoes": [
+    "80%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "432aa16849f8",
+   "origem": "autoral",
+   "trecho": "**Uma parte**: sem desvio significativo (cerca de 80% das fraturas)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0786-cl2",
+   "questao": "trauma-0786",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Neer: colo cirúrgico, tubérculo maior e tubérculo menor desviados em relação à cabeça, que fica solta. Quantas partes?",
+   "resposta": "Quatro partes",
+   "explicacao": "**Quatro partes**: a cabeça fica solta, com alto risco de **necrose**.",
+   "opcoes": [
+    "Duas partes",
+    "Três partes",
+    "Quatro partes"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "432aa16849f8",
+   "origem": "autoral",
+   "trecho": "**Quatro partes**: os três segmentos desviados em relação à cabeça, que fica solta",
    "criadoEm": "2026-10-15"
   },
   {
@@ -2283,6 +3472,60 @@
    "fonte": "a706e47d9d2a",
    "origem": "autoral",
    "trecho": "Na luxação **posterior**, a tíbia vai para trás e a artéria é **contundida** ou lacerada diretamente.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0826-co1",
+   "questao": "trauma-0826",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemiartroplastia para fratura do úmero proximal, qual retroversão do componente se busca?",
+   "resposta": "20 a 30 graus",
+   "explicacao": "Retroversão de cerca de **20 a 30 graus**, para posicionar os tubérculos; a consolidação deles é o que mais pesa.",
+   "opcoes": [
+    "20 a 30 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "3b6495cd7c47",
+   "origem": "autoral",
+   "trecho": "na **retroversão** correta (cerca de 20 a 30 graus)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0826-co2",
+   "questao": "trauma-0826",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemiartroplastia para fratura, a borda da prótese fica a cerca de 5,5 cm de qual referência anatômica, para acertar a altura?",
+   "resposta": "inserção do peitoral maior",
+   "explicacao": "A **inserção do peitoral maior** é a referência de altura; o topo da cabeça fica 5 a 8 mm acima do tubérculo maior.",
+   "opcoes": [
+    "inserção do peitoral maior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "3b6495cd7c47",
+   "origem": "autoral",
+   "trecho": "a borda da prótese a cerca de 5,5 cm da inserção do peitoral maior",
    "criadoEm": "2026-10-15"
   },
   {
@@ -2669,6 +3912,34 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0889-pc1",
+   "questao": "trauma-0889",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No úmero proximal, o colo cirúrgico é o que mais evolui para pseudartrose. Na epífise (cabeça), qual é o risco principal?",
+   "resposta": "necrose",
+   "explicacao": "A **epífise** tem irrigação ameaçada: o risco é a **necrose**, não a pseudartrose.",
+   "opcoes": [
+    "Necrose",
+    "Pseudartrose"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "696fbd5bb2fb",
+   "origem": "autoral",
+   "trecho": "a **epífise** (cabeça) tem irrigação ameaçada, e o risco é a **necrose**, não a pseudartrose",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0891-co1",
    "questao": "trauma-0891",
    "area": "Trauma adulto",
@@ -2774,6 +4045,119 @@
    "fonte": "3d82594bde78",
    "origem": "autoral",
    "trecho": "presos na **fóvea** da ulna",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0924-pc1",
+   "questao": "trauma-0924",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Três partes com colo cirúrgico e tubérculo maior: a cabeça roda para medial pelo subescapular. Nas três partes com tubérculo menor, para onde a cabeça é rodada?",
+   "resposta": "lateral",
+   "explicacao": "Presa ao **tubérculo maior**, a cabeça é rodada para **lateral** pelos rotadores externos.",
+   "opcoes": [
+    "Lateral",
+    "Medial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "db32eab88a7b",
+   "origem": "autoral",
+   "trecho": "a cabeça fica presa ao tubérculo maior e é rodada para **lateral** pelos rotadores externos",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0926-cl1",
+   "questao": "trauma-0926",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Campbell das fraturas periprotéticas do úmero, qual região corresponde à metáfise proximal?",
+   "resposta": "Região 2",
+   "explicacao": "Campbell: **1** tuberosidades, **2** metáfise, **3** diáfise proximal, **4** diáfise média e distal.",
+   "opcoes": [
+    "Região 1",
+    "Região 2",
+    "Região 4"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "a88eec6ea90c",
+   "origem": "autoral",
+   "trecho": "**Região 2**: a **metáfise** proximal.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0926-cl2",
+   "questao": "trauma-0926",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Campbell (fratura periprotética do úmero): qual região fica na diáfise média e distal, abaixo da ponta da haste?",
+   "resposta": "Região 4",
+   "explicacao": "Na **região 4**, a haste costuma estar estável e a fratura é tratada como uma diafisária.",
+   "opcoes": [
+    "Região 1",
+    "Região 2",
+    "Região 4"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "a88eec6ea90c",
+   "origem": "autoral",
+   "trecho": "**Região 4**: a **diáfise média e distal** (abaixo da ponta da haste)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0926-cl3",
+   "questao": "trauma-0926",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Wright e Cofield das fraturas periprotéticas do úmero, qual tipo é a fratura distal à ponta da haste?",
+   "resposta": "C",
+   "explicacao": "Wright e Cofield: **A** ao redor da ponta com extensão proximal, **B** ao redor da ponta sem extensão, **C** distal à ponta.",
+   "opcoes": [
+    "C"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "a88eec6ea90c",
+   "origem": "autoral",
+   "trecho": "**C** (distal à ponta)",
    "criadoEm": "2026-10-15"
   },
   {
@@ -2911,6 +4295,148 @@
    "fonte": "1de2208908c2",
    "origem": "autoral",
    "trecho": "**pivot-shift** (lateral): testa a instabilidade **posterolateral** (colateral lateral);",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0973-co1",
+   "questao": "trauma-0973",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além do calcar curto e da dobradiça medial rompida, qual padrão de traço é o terceiro preditor de isquemia de Hertel?",
+   "resposta": "colo anatômico",
+   "explicacao": "Hertel: calcar de 8 mm ou menos, dobradiça medial rompida e traço no **colo anatômico**. O head-split não entrou como preditor.",
+   "opcoes": [
+    "Colo anatômico",
+    "Colo cirúrgico",
+    "Head-split"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "711540de6e6d",
+   "origem": "autoral",
+   "trecho": "E o **padrão básico** da fratura, com o traço no **colo anatômico**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0973-co2",
+   "questao": "trauma-0973",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como ficou conhecido o sistema binário de Hertel para descrever as fraturas do úmero proximal, com perguntas de sim ou não sobre cada traço?",
+   "resposta": "Lego",
+   "explicacao": "As fraturas em **\"Lego\"** de Hertel: cada traço é respondido com sim ou não.",
+   "opcoes": [
+    "Lego"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "711540de6e6d",
+   "origem": "autoral",
+   "trecho": "Descreveu um sistema **binário** (as fraturas em \"Lego\", com perguntas de sim ou não sobre cada traço)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0979-cl1",
+   "questao": "trauma-0979",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Boileau (sequelas de fratura do úmero proximal): luxação ou fratura-luxação crônica travada é qual tipo?",
+   "resposta": "Tipo 2",
+   "explicacao": "**Tipo 2**: luxação crônica travada, intracapsular. Tipo 1 é colapso ou necrose; 3, pseudartrose do colo cirúrgico; 4, consolidação viciosa grave dos tubérculos.",
+   "opcoes": [
+    "Tipo 1",
+    "Tipo 2",
+    "Tipo 4"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "8ed0c6667c59",
+   "origem": "autoral",
+   "trecho": "**Tipo 2**: **luxação** ou fratura-luxação **crônica** travada (intracapsular)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0979-cl2",
+   "questao": "trauma-0979",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Boileau (sequelas de fratura do úmero proximal): consolidação viciosa grave dos tubérculos é qual tipo?",
+   "resposta": "Tipo 4",
+   "explicacao": "**Tipo 4**: extracapsular, exige osteotomia dos tubérculos ou soluções especiais.",
+   "opcoes": [
+    "Tipo 1",
+    "Tipo 2",
+    "Tipo 4"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "8ed0c6667c59",
+   "origem": "autoral",
+   "trecho": "**Tipo 4**: consolidação viciosa **grave** dos **tubérculos** (extracapsular)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0979-co1",
+   "questao": "trauma-0979",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Boileau das sequelas, quais tipos (intracapsulares) permitem artroplastia sem osteotomia dos tubérculos?",
+   "resposta": "tipos 1 e 2",
+   "explicacao": "Os **tipos 1 e 2** têm bons resultados com prótese sem osteotomia; os tipos 3 e 4 (extracapsulares) exigem osteotomia.",
+   "opcoes": [
+    "Tipos 1 e 2",
+    "Tipos 3 e 4"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "8ed0c6667c59",
+   "origem": "autoral",
+   "trecho": "Os tipos 1 e 2 (intracapsulares) permitem artroplastia **sem osteotomia** dos tubérculos",
    "criadoEm": "2026-10-15"
   },
   {
@@ -3884,6 +5410,62 @@
    "origem": "autoral",
    "trecho": "Frequentemente exige osteotomia da ulna (alongamento e angulação)",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1227-co1",
+   "questao": "trauma-1227",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No tratamento conservador da fratura do úmero proximal, quanto tempo o paciente pode levar para recuperar o máximo de movimento do ombro?",
+   "resposta": "mais de 1 ano",
+   "explicacao": "Tipoia por 2 semanas e fisioterapia progressiva; a recuperação muitas vezes leva **mais de 1 ano**.",
+   "opcoes": [
+    "mais de 1 ano"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "48d70e3b90b9",
+   "origem": "autoral",
+   "trecho": "muitas vezes leva **mais de 1 ano** para recuperar o máximo de movimento do ombro",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1227-co2",
+   "questao": "trauma-1227",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do úmero proximal",
+   "subtemas": [
+    "Fratura do úmero proximal"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que proporção das fraturas do úmero proximal corresponde às de três e quatro partes e às fraturas-luxações, centro do debate cirúrgico?",
+   "resposta": "12,5%",
+   "explicacao": "Cerca de **12,5%**. Neer dizia que 85% eram minimamente desviadas; um estudo mais recente encontrou 49%.",
+   "opcoes": [
+    "12,5%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "48d70e3b90b9",
+   "origem": "autoral",
+   "trecho": "As fraturas em três e quatro partes e as fraturas-luxações, centro do debate, são cerca de 12,5%.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
   },
   {
    "id": "fc-trauma-1407-co1",

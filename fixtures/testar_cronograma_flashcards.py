@@ -70,6 +70,19 @@ linhas, _ = C.levantar()
 reais = [l for l in linhas if not l["assunto"].startswith("Outr")]
 assert all(a["incidencia"] >= b["incidencia"] for a, b in zip(reais, reais[1:])), "fila fora da ordem de incidência"
 assert linhas.index(reais[-1]) < min((i for i, l in enumerate(linhas) if l["assunto"].startswith("Outr")), default=len(linhas)), "resto antes dos reais"
+# cada autoral conta uma vez só, mesmo quando o assunto aparece em duas áreas da incidência
+# (bug de 15/10/2026: "Fraturas da coluna toracolombar", em Trauma adulto e em Coluna, somava 55 duas vezes)
+nomes_fila = {l["assunto"] for l in linhas}
+autorais_na_fila = sum(1 for cs in A.ler_autorais().values() for f in cs if f["assunto"] in nomes_fila)
+assert sum(l["autorais"] for l in linhas) == autorais_na_fila, "autoral contado em mais de uma linha da fila"
+assert C.resumir(linhas)["autorais"] == autorais_na_fila
+chave = C.chave_de_autoral({"areas": [
+    {"id": "trauma", "focos": [{"nome": "X", "n": 40}]},
+    {"id": "coluna", "focos": [{"nome": "X", "n": 20}]},
+]})
+assert chave({"assunto": "X", "areaId": "coluna"}) == ("X", "coluna")
+assert chave({"assunto": "X", "areaId": "trauma"}) == ("X", "trauma")
+assert chave({"assunto": "X", "areaId": "mao"}) == ("X", "trauma"), "área sem linha vai para a de maior incidência"
 from datetime import date  # noqa: E402
 semanas = C.planejar(linhas, 40, date(2026, 10, 19))
 assert all(s["total"] <= 40 for s in semanas) and semanas[0]["itens"][0]["assunto"] == next(l for l in linhas if l["falta"] and l["comComentario"])["assunto"]
