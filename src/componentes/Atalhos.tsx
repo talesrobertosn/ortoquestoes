@@ -1,6 +1,8 @@
 const LISTA: Array<[string, string]> = [
   ['1 … 5', 'Selecionar a alternativa'],
+  ['S · D · C', 'Confiança: tenho certeza, tenho dúvida ou foi um chute'],
   ['Enter', 'Confirmar a resposta, e depois avançar'],
+  ['L', 'Modo leitura: só o comentário, sem as alternativas'],
   ['→ ou N', 'Próxima questão'],
   ['← ou P', 'Questão anterior'],
   ['M', 'Abrir o mapa de questões'],

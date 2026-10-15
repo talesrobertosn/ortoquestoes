@@ -117,14 +117,16 @@ export function CartaoQuestao({
   const [erroEnvio, definirErroEnvio] = useState('')
   // Errou agora (não ao rever uma questão já respondida): a página rola até o começo do comentário.
   const [errouAgora, definirErrouAgora] = useState(false)
-  useEffect(() => definirErrouAgora(false), [questao.id])
+  // Respondeu agora (não ao rever): o resultado entra com um pequeno movimento de acerto ou de erro.
+  const [respondeuAgora, definirRespondeuAgora] = useState(false)
+  useEffect(() => { definirErrouAgora(false); definirRespondeuAgora(false) }, [questao.id])
   async function confirmar(letra: Letra) {
     if (travada || enviando) return
     definirErroEnvio('')
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
     const segundos = segundosNaQuestao()
     definirEnviando(true)
-    try { await aoResponder(letra, correta, segundos, confianca); if (correta === false) definirErrouAgora(true) }
+    try { await aoResponder(letra, correta, segundos, confianca); definirRespondeuAgora(true); if (correta === false) definirErrouAgora(true) }
     catch (erro) {
       // Nunca falhar em silêncio: o que der errado aparece embaixo do botão.
       definirErroEnvio(erro instanceof Error ? `${erro.name}: ${erro.message}` : String(erro))
@@ -201,6 +203,20 @@ export function CartaoQuestao({
       }
 
       const tecla = evento.key.toLowerCase()
+      // Confiança pelo teclado (S, D, C), só antes de confirmar; L alterna o modo leitura depois.
+      const porTecla = ({ s: 'seguro', d: 'duvida', c: 'chute' } as const)[tecla as 's' | 'd' | 'c']
+      if (porTecla && !evento.shiftKey) {
+        if (travada || !revelarResposta || dissertativa) return
+        evento.preventDefault()
+        definirConfianca(porTecla)
+        return
+      }
+      if (tecla === 'l' && !evento.shiftKey) {
+        if (!mostrarGabarito) return
+        evento.preventDefault()
+        definirModoLeitura((atual) => !atual)
+        return
+      }
       if (tecla === 'f') {
         evento.preventDefault()
         aoFavoritar()
@@ -350,7 +366,7 @@ export function CartaoQuestao({
             >
               <Icone nome={copiado ? 'certo' : 'link'} tamanho={18} />
             </button>
-            {mostrarGabarito && <button type="button" className={'qz-ferramenta' + (modoLeitura ? ' qz-ferramenta--ativa' : '')} onClick={() => definirModoLeitura(atual => !atual)} aria-pressed={modoLeitura} aria-label={modoLeitura ? 'Mostrar alternativas' : 'Ler comentário sem alternativas'} title={modoLeitura ? 'Mostrar alternativas' : 'Modo leitura'}><Icone nome="livro" tamanho={18} /></button>}
+            {mostrarGabarito && <button type="button" className={'qz-ferramenta' + (modoLeitura ? ' qz-ferramenta--ativa' : '')} onClick={() => definirModoLeitura(atual => !atual)} aria-pressed={modoLeitura} aria-label={modoLeitura ? 'Mostrar alternativas' : 'Ler comentário sem alternativas'} title={modoLeitura ? 'Mostrar alternativas (L)' : 'Modo leitura (L)'}><Icone nome="livro" tamanho={18} /></button>}
           </div>
         </div>
 
@@ -386,7 +402,7 @@ export function CartaoQuestao({
           </div>
         )}
 
-        {!modoLeitura && <ul className="alternativas">
+        {!modoLeitura && <ul className={'alternativas' + (respondeuAgora && mostrarGabarito ? ' alternativas--agora' : '')}>
           {questao.alternativas.map((alternativa, i) => {
             const letra = alternativa.letra
             const riscada = riscadas.includes(letra)
@@ -488,7 +504,7 @@ export function CartaoQuestao({
           <div className={'linha nao-imprime acao-responder' + (escolhida ? ' acao-responder--pronta' : '')}>
             {/* Sempre à vista, antes de escolher: o botão não pula para baixo no clique e a pessoa vê que pode marcar dúvida ou chute. */}
             <div className="grupo-opcoes confianca" role="group" aria-label="Sua confiança nesta resposta">
-              {([['seguro', 'Tenho ', 'certeza'], ['duvida', 'Tenho ', 'dúvida'], ['chute', 'Foi um ', 'chute']] as const).map(([valor, prefixo, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={confianca === valor} onClick={() => definirConfianca(valor)}><span className="confianca__prefixo">{prefixo}</span><span className="confianca__rotulo">{rotulo}</span></button>)}
+              {([['seguro', 'Tenho ', 'certeza', 'S'], ['duvida', 'Tenho ', 'dúvida', 'D'], ['chute', 'Foi um ', 'chute', 'C']] as const).map(([valor, prefixo, rotulo, tecla]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={confianca === valor} aria-keyshortcuts={tecla} title={`${prefixo}${rotulo} (${tecla})`} onClick={() => definirConfianca(valor)}><span className="confianca__prefixo">{prefixo}</span><span className="confianca__rotulo">{rotulo}</span></button>)}
             </div>
             <button
               type="button"
@@ -503,12 +519,12 @@ export function CartaoQuestao({
             <span className="campo__auxilio acao-responder__dica">Acerto com dúvida ou chute volta antes para revisão.</span>
             <span className="meta so-teclado">
               Teclas <kbd>1</kbd>–<kbd>{letrasDisponiveis.length}</kbd> selecionam,{' '}
-              <kbd>Enter</kbd> confirma
+              <kbd>S</kbd> <kbd>D</kbd> <kbd>C</kbd> mudam a confiança e <kbd>Enter</kbd> confirma
             </span>
           </div>
         ) : !modoLeitura && (
           <>
-            <Resultado questao={questao} resposta={resposta!} />
+            <Resultado questao={questao} resposta={resposta!} agora={respondeuAgora} />
             {turma && <p className="alt-turma-resumo"><Icone nome="grupo" tamanho={15} /> {turma.porLetra
               ? <>Porcentagens da primeira resposta de {pessoas(turma.respondentes)}. {turma.acertoPrimeira}% acertaram de primeira{resposta!.correta === false && turma.acertoPrimeira >= 80 ? '; quase todo mundo acerta esta, vale reler o comentário' : resposta!.correta === true && turma.acertoPrimeira <= 40 ? '; você acertou uma que a maioria erra' : ''}.</>
               : <>A porcentagem da turma em cada alternativa aparece a partir de 3 pessoas{turma.respondentes ? ` (até agora, ${pessoas(turma.respondentes)})` : ''}.</>}</p>}
@@ -643,7 +659,7 @@ function formatarData(iso?: string | null) {
   return new Date(ano, mes - 1, dia).toLocaleDateString('pt-BR')
 }
 
-function Resultado({ questao, resposta }: { questao: Questao; resposta: Resposta }) {
+function Resultado({ questao, resposta, agora = false }: { questao: Questao; resposta: Resposta; agora?: boolean }) {
   if (questao.anulada) {
     return (
       <div className="resultado resultado--neutro" role="status">
@@ -669,12 +685,12 @@ function Resultado({ questao, resposta }: { questao: Questao; resposta: Resposta
     </small>
   )
   return resposta.correta ? (
-    <div className="resultado resultado--acerto" role="status">
+    <div className={'resultado resultado--acerto' + (agora ? ' resultado--agora' : '')} role="status">
       <Icone nome="certo" />
       <span>Você acertou. {rotulo}: {questao.gabarito}.{nota}</span>
     </div>
   ) : (
-    <div className="resultado resultado--erro" role="status">
+    <div className={'resultado resultado--erro' + (agora ? ' resultado--agora' : '')} role="status">
       <Icone nome="errado" />
       <span>Você errou. {rotulo}: {questao.gabarito}, você marcou {resposta.escolhida}.{nota}</span>
     </div>
