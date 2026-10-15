@@ -26,7 +26,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageOps
 
 RAIZ = Path(__file__).resolve().parent.parent
 PUBLICO = RAIZ / "public"
@@ -52,6 +52,8 @@ def converter(p: Path) -> tuple[bytes, tuple[int, int], tuple[int, int]]:
     im = Image.open(p)
     im.load()
     original = im.size
+    # Foto de celular: a rotação vem no EXIF, que o WebP não leva. Aplica antes de converter.
+    im = ImageOps.exif_transpose(im)
     tem_alfa = im.mode in ("RGBA", "LA", "PA") or (im.mode == "P" and "transparency" in im.info)
     im = im.convert("RGBA" if tem_alfa else "RGB")
     if tem_alfa and im.getchannel("A").getextrema() == (255, 255):
