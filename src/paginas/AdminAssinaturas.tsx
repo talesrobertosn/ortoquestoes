@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
@@ -97,8 +97,13 @@ export function AdminAssinaturas() {
   const testes = (assinaturas?.length ?? 0) - (reais?.length ?? 0)
   const usuariosReais = useMemo(() => usuarios?.filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
 
+  // Um clique por vez: sem isso, clique duplo disparava oito RPCs pesadas.
+  const [atualizando, definirAtualizando] = useState(false)
+  const emVoo = useRef(false)
   const carregar = useCallback(async () => {
-    if (!sessao) return
+    if (!sessao || emVoo.current) return
+    emVoo.current = true; definirAtualizando(true)
+    try {
     // Assinaturas e eventos existem desde antes; resumo e usuários dependem da
     // migração nova. Uma falha nestes não esconde o resto do painel.
     const [a, e, r, u] = await Promise.allSettled([
@@ -115,6 +120,7 @@ export function AdminAssinaturas() {
       definirResumo(r.value[0] ?? null); definirUsuarios(u.value); definirErroNovo('')
     } else definirErroNovo(erroDoPainel(r.status === 'rejected' ? r.reason : (u as PromiseRejectedResult).reason, MIGRACAO))
     definirAtualizadoEm(new Date())
+    } finally { emVoo.current = false; definirAtualizando(false) }
   }, [sessao])
   useEffect(() => { void carregar() }, [carregar])
   // No celular as abas rolam de lado: a escolhida precisa ficar à vista.
@@ -146,10 +152,12 @@ export function AdminAssinaturas() {
         <h1>Painel do administrador</h1>
         <p>{atualizadoEm ? `Dados de ${atualizadoEm.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}.` : 'Verificando acesso…'} Só contas em administradores conseguem abrir.</p>
       </div>
-      <button className="botao adm-heroi__atualizar" type="button" onClick={() => void carregar()}><Icone nome="reiniciar" tamanho={16} /> Atualizar</button>
+      <button className="botao adm-heroi__atualizar" type="button" onClick={() => void carregar()} disabled={atualizando} aria-busy={atualizando}><Icone nome="reiniciar" tamanho={16} /> {atualizando ? 'Atualizando…' : 'Atualizar'}</button>
     </header>
 
-    {erroAcesso ? <p role="alert" className="adm-alerta">{erroAcesso}</p> : assinaturas === null ? <p role="status">Carregando o painel…</p> : <>
+    {/* Falha ao atualizar não derruba o painel: o aviso aparece em cima dos dados que já estavam na tela. */}
+    {erroAcesso && <p role="alert" className="adm-alerta">{erroAcesso}{assinaturas !== null && ' Os dados abaixo são da última atualização.'}</p>}
+    {assinaturas === null ? (!erroAcesso && <p role="status">Carregando o painel…</p>) : <>
       <nav className="adm-abas" role="tablist" aria-label="Seções do painel">
         {ABAS.map(([valor, rotulo, icone]) => <button key={valor} type="button" role="tab" aria-selected={aba === valor} className="adm-aba" onClick={() => trocarAba(valor)}>
           <Icone nome={icone} tamanho={16} /><span>{rotulo}</span>{contadores[valor] ? <b className={valor === 'pagamentos' || valor === 'conteudo' ? 'adm-aba__alerta' : ''}>{contadores[valor]}</b> : null}
