@@ -203,9 +203,17 @@
 @keyframes dica-empurra-dir { 50% { transform: translateX(3px); } }
 .dica-teclado kbd { color: #1b1208; background: #f4cf7c; border-radius: 0; box-shadow: 2px 2px 0 #1b1208; }
 @media (prefers-reduced-motion: reduce) { .dica-deslizar svg { animation: none; } }
-/* A dica sobe para o meio da tela (no rodapé ela passava despercebida) e fica um pouco maior. */
-.dica-deslizar { top: 42%; bottom: auto; font-size: 1.3rem; padding: 0.65rem 1.1rem; }
-@media (min-width: 40.01rem) { .dica-deslizar { top: 42%; bottom: auto; } }
+/* Dica discreta (16/10/2026, pedido do Tales): no meio da tela ela cobria o enunciado e as
+   alternativas. Fica menor, translúcida e baixa, acima da barra do celular e longe do texto. */
+.dica-deslizar {
+  top: auto; bottom: calc(5.6rem + env(safe-area-inset-bottom)); font-size: 0.95rem; padding: 0.35rem 0.7rem; gap: 0.35rem;
+  z-index: 60; opacity: 0.94; box-shadow: 0 0 0 2px #f4cf7c, 0 0 0 4px #1b1208, 3px 3px 0 4px rgba(0, 0, 0, 0.18);
+  animation-name: dica-deslizar-discreta;
+}
+.dica-deslizar svg { width: 12px; height: 12px; }
+.dica-teclado kbd { font-size: 0.8rem; padding: 0 0.3rem; }
+@media (min-width: 40.01rem) { .dica-deslizar { top: auto; bottom: 1.25rem; } }
+@keyframes dica-deslizar-discreta { 0% { opacity: 0; transform: translate(-50%, 6px); } 10%, 85% { opacity: 0.94; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, 4px); } }
 
 /* Meta de hoje do cronograma, na cor da área (14/10/2026). */
 .faixa-cronograma { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.2rem 0.6rem; align-items: center; padding-bottom: 0.35rem; font-size: 0.78rem; }

@@ -14,6 +14,11 @@ export interface PedidoConfirmacao {
   sim: string
   /** Rótulo de desistir; padrão "Cancelar". */
   nao?: string
+  /**
+   * O que o botão de desistir faz além de fechar (ex.: "Continuar a atual" leva
+   * à sessão em andamento). O X e o Esc só fecham. A promessa segue resolvendo false.
+   */
+  aoNao?: () => void
 }
 
 /** Pergunta com resposta escrita, no lugar de window.prompt. */
@@ -61,7 +66,7 @@ export function HospedeConfirmacao() {
         <h2>{pendente.titulo}</h2>
         {pendente.texto && <p>{pendente.texto}</p>}
         <div className="confirmar__acoes">
-          <button type="button" className="botao" onClick={() => responder(false)}>{pendente.nao ?? 'Cancelar'}</button>
+          <button type="button" className="botao" onClick={() => { const acao = pendente.aoNao; responder(false); acao?.() }}>{pendente.nao ?? 'Cancelar'}</button>
           <button type="button" className="botao botao--principal" onClick={() => responder(true)}>{pendente.sim}</button>
         </div>
       </div>}
