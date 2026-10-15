@@ -2,7 +2,7 @@
   "post": "post-26",
   "data": "2026-11-05",
   "horario": "18:30",
-  "status": "falta capturar as telas",
+  "status": "pronto",
   "slug": "treine-gratis-revisao",
   "formato": "story de propaganda (1, com figurinha de link)",
   "estilo": "treine-gratis",
@@ -16,9 +16,9 @@
         "etiqueta": "REVISÃO",
         "titulo": "Errou ontem?\n[[Ela volta na hora certa.]]",
         "sub": "A **revisão espaçada** traz de volta o que você errou, e o **desempenho** mostra onde focar. Tudo na conta grátis.",
-        "tela_notebook": "marketing/instagram/telas/t-lap-revisao.png",
-        "tela_celular": "marketing/instagram/telas/t-cel-erros.png",
-        "captura": "npm run build && npx vite preview --port 4175  (outro terminal); depois: TEMA=escuro LARGURA=1100 ALTURA=688 ESCALA=2 node marketing/instagram/telas.mjs 'lap-revisao=revisao@main' && TEMA=escuro node marketing/instagram/telas.mjs 'cel-erros=erros@main'",
+        "tela_notebook": "marketing/kit/telas/t-lap-revisao.png",
+        "tela_celular": "marketing/kit/telas/t-cel-erros.png",
+        "captura": "npm run build && npx vite preview --port 4175  (outro terminal); depois: TEMA=escuro LARGURA=1100 ALTURA=688 ESCALA=2 node marketing/instagram/telas.mjs 'lap-revisao=revisao@main' && TEMA=escuro node marketing/instagram/telas.mjs 'cel-erros=erros@main' && cp marketing/instagram/telas/t-*.png marketing/kit/telas/",
         "recursos": [
           {
             "titulo": "Revisão espaçada",
@@ -48,7 +48,6 @@
   "link_figurinha": "https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaign=treine-gratis-revisao#/conta?modo=criar&voltar=%2Ftreinar",
   "legenda": null,
   "conferencia": [
-    "Só recursos que existem, conferidos na tabela \"Gratuito ou assinante\" de src/paginas/Assinatura.tsx. Sem preço, sem número do acervo.",
-    "Telas ainda não capturadas: rode o comando de conteudo.captura antes de gerar."
+    "Só recursos que existem, conferidos na tabela \"Gratuito ou assinante\" de src/paginas/Assinatura.tsx. Sem preço, sem número do acervo."
   ]
 }

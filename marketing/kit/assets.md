@@ -80,7 +80,11 @@ TEMA=escuro LARGURA=1100 ALTURA=688 ESCALA=2 node marketing/instagram/telas.mjs 
 ESCONDER='.dp-heroi__sync' TEMA=escuro node marketing/instagram/telas.mjs 'cel-dados=dados@main'                               # celular
 ```
 
-Cada captura vira `marketing/instagram/telas/t-NOME.png`. Rotas úteis: `dados` (desempenho), `revisao`,
+Cada captura vira `marketing/instagram/telas/t-NOME.png`; copie a que for usar para `marketing/kit/telas/`
+(essa pasta vai para o git). Já capturadas em 15/10/2026, com a conta de exemplo e tema escuro:
+`t-lap-enneking`, `t-lap-simulado`, `t-lap-cronograma`, `t-lap-revisao` (notebook) e `t-cel-dados`,
+`t-cel-revisao`, `t-cel-cronograma`, `t-cel-erros` (celular). No Cronograma, `ESCONDER='.cp-tour'` tira o
+cartão de boas-vindas. Rotas úteis: `dados` (desempenho), `revisao`,
 `erros`, `cronograma`, `treinar`, `ranking`, `flashcards`. Toda tela leva "Tela ilustrativa".
 Prints reais já no repositório (Flashcards, 13/10): `marketing/instagram/posts/2026-10-13-torneio-flashcards/prints/`
 (`pc-*.jpg` para o notebook, `cel-*.jpg` para o celular).
