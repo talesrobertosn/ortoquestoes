@@ -103,7 +103,11 @@ export async function sincronizarProgresso(): Promise<boolean> {
 /* ------------------------------------------------------------ Ranking (desligado por padrão) */
 
 export type TipoRanking = 'masmorra' | 'torre' | 'unicos'
-export interface LinhaRanking { posicao: number; apelido: string; valor: number; ehVoce: boolean }
+export interface LinhaRanking {
+  posicao: number; apelido: string; valor: number; ehVoce: boolean
+  /** Vitrine escolhida pela pessoa e emblemas de Flashcards travados (parte 25 do SQL; ausentes antes dela). */
+  emblemas?: string[]; emblemasFlashcards?: string[]
+}
 
 /** Abre a corrida no servidor: o andar só vale para o ranking se a corrida tiver flashcards autorizados. */
 /** Abre a corrida no servidor com a dificuldade (gravada uma vez; o Fácil não abre corrida). */
@@ -148,9 +152,14 @@ export async function registrarAndar(corrida: string, andar: number) {
 export async function lerRanking(tipo: TipoRanking): Promise<LinhaRanking[] | null> {
   if (!RANKING_NO_SERVIDOR) return null
   try {
-    type Linha = { posicao: number; apelido: string; valor: number; eh_voce: boolean }
+    type Linha = { posicao: number; apelido: string; valor: number; eh_voce: boolean; emblemas?: string[] | null; emblemas_flashcards?: string[] | null }
     const corpo = { p_tipo: tipo }
-    const linhas = await chamarRpc<Linha[]>('ranking_flashcards', corpo).catch(() => chamarRpcPublica<Linha[]>('ranking_flashcards', corpo))
-    return linhas.map((l) => ({ posicao: Number(l.posicao), apelido: l.apelido, valor: Number(l.valor), ehVoce: Boolean(l.eh_voce) }))
+    const ler = (nome: string) => chamarRpc<Linha[]>(nome, corpo).catch(() => chamarRpcPublica<Linha[]>(nome, corpo))
+    // Com os emblemas (parte 25 do SQL); sem ela no banco, o ranking de antes.
+    const linhas = await ler('ranking_flashcards_emblemas').catch(() => ler('ranking_flashcards'))
+    return linhas.map((l) => ({
+      posicao: Number(l.posicao), apelido: l.apelido, valor: Number(l.valor), ehVoce: Boolean(l.eh_voce),
+      emblemas: Array.isArray(l.emblemas) ? l.emblemas : [], emblemasFlashcards: Array.isArray(l.emblemas_flashcards) ? l.emblemas_flashcards : [],
+    }))
   } catch { return null }
 }

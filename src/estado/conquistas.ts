@@ -15,6 +15,8 @@ import { calcularStreak, META_STREAK_DIARIA } from './streak'
 import { chaveDoDia as chaveDia, numeroDoDia, somarDias } from '../util/dia'
 import { diasRetaFinal } from '../dados/planoEstudo'
 import type { FeitosServidor } from '../conta/feitos'
+import { ATRASO_RESGATE_DIAS, REVISOES_DIA_SEQUENCIA, resumoRevisoes, sequenciaRevisao } from './metasRevisao'
+import { FC_REVISOES_DIA, METRICAS_FLASHCARDS_VAZIAS, type MetricasFlashcards } from '../flashcards/conquistas'
 
 export type NivelMedalha = 'bronze' | 'prata' | 'ouro' | 'esmeralda' | 'lendario'
 
@@ -33,7 +35,10 @@ export type FamiliaId =
   | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'mestre' | 'especialista' | 'aproveitamento'
   | 'resistencia' | 'colecao' | 'anotacoes' | 'pseudartrose' | 'imagem' | 'certeza' | 'provas' | 'assuntos'
   | 'horaDeOuro' | 'calibrado' | 'contraCorrente' | 'completo' | 'notaDeCorte' | 'curva' | 'runSemDano' | 'chefes'
-  | 'pontual' | 'filaZerada' | 'cronograma' | 'nacional' | 'arena' | 'indicacao' | 'revisor' | 'editorial' | 'secretas'
+  | 'pontual' | 'filaZerada' | 'cronograma' | 'nacional' | 'arena' | 'indicacao' | 'revisor' | 'editorial'
+  | 'revisoes' | 'constancia' | 'resgate'
+  | 'fcProfundezas' | 'fcMestreRevisao' | 'fcEspecialista' | 'fcBestiario' | 'fcSemErrar' | 'fcLendarios' | 'fcDragoes'
+  | 'secretas'
 
 export interface Emblema extends Conquista {
   familia: FamiliaId
@@ -88,6 +93,16 @@ export const FAMILIAS: readonly Familia[] = [
   { id: 'indicacao', titulo: 'Indicação', unidade: (v) => `${v} amigos` },
   { id: 'revisor', titulo: 'Revisor de banca', unidade: (v) => `${v} erros corrigidos` },
   { id: 'editorial', titulo: 'Conselho editorial', unidade: (v) => `${n(v)} comentários avaliados` },
+  { id: 'revisoes', titulo: 'Revisões feitas', unidade: (v) => `${n(v)} revisões` },
+  { id: 'constancia', titulo: 'Constância na revisão', unidade: (v) => `${v} dias seguidos revisando` },
+  { id: 'resgate', titulo: 'Resgate de atrasadas', unidade: (v) => `${n(v)} atrasadas resgatadas` },
+  { id: 'fcProfundezas', titulo: 'Flashcards: profundezas', unidade: (v) => `andar ${v}` },
+  { id: 'fcMestreRevisao', titulo: 'Flashcards: mestre da revisão', unidade: (v) => `${v} dias seguidos` },
+  { id: 'fcEspecialista', titulo: 'Flashcards: especialista', unidade: (v) => `${v} dominados numa área` },
+  { id: 'fcBestiario', titulo: 'Flashcards: bestiário', unidade: (v) => `${v} adversários vencidos` },
+  { id: 'fcSemErrar', titulo: 'Flashcards: sem errar', unidade: (v) => `${v} acertos seguidos` },
+  { id: 'fcLendarios', titulo: 'Flashcards: lendários', unidade: (v) => `${n(v)} lendários acertados` },
+  { id: 'fcDragoes', titulo: 'Flashcards: secretas', unidade: () => 'secreta' },
   { id: 'secretas', titulo: 'Secretas', unidade: () => 'secreta' },
 ]
 
@@ -340,7 +355,7 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['chefe-new-game', 1, 'New Game+', 'NG+', 'lendario', 'Domine todas as questões de um tema inteiro.'],
   ]),
   ...familia('chefes', 'platina', [
-    ['chefe-platina', 1, 'Platina', 'PT', 'lendario', 'Conquiste todos os outros emblemas que não são secretos (a sequência de dias não entra).'],
+    ['chefe-platina', 1, 'Platina', 'PT', 'lendario', 'Conquiste todos os outros emblemas de questões que não são secretos (a sequência de dias e os de Flashcards não entram).'],
   ]),
   ...familia('pontual', 'pontual', [
     ['pontual-30', 30, 'Pontual', '30', 'ouro', 'Responda a Questão do Dia 30 dias seguidos.'],
@@ -397,6 +412,66 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['editorial-300', 300, 'Crítico implacável', '300', 'esmeralda', 'Avalie os comentários de 300 questões.'],
     ['editorial-1000', 1000, 'Escriba-mor', '1k', 'lendario', 'Avalie os comentários de 1.000 questões.'],
   ]),
+  ...familia('revisoes', 'revisoes', [
+    ['revisoes-250', 250, 'Revisor de plantão', '250', 'prata', 'Faça 250 revisões: responda de novo questões que você já tinha respondido.'],
+    ['revisoes-1000', 1000, 'Memória treinada', '1k', 'ouro', 'Faça 1.000 revisões de questões.'],
+    ['revisoes-3000', 3000, 'Arquivo vivo', '3k', 'esmeralda', 'Faça 3.000 revisões de questões.'],
+    ['revisoes-8000', 8000, 'Guardião da memória', '8k', 'lendario', 'Faça 8.000 revisões de questões.'],
+  ]),
+  ...familia('constancia', 'constancia', [
+    ['constancia-7', 7, 'Ritual da revisão', '7', 'prata', `Revise pelo menos ${REVISOES_DIA_SEQUENCIA} questões por dia (ou zere a fila de Revisar hoje), 7 dias seguidos. As folgas do seu ritmo não quebram.`],
+    ['constancia-21', 21, 'Hábito forjado', '21', 'ouro', `Revise pelo menos ${REVISOES_DIA_SEQUENCIA} questões por dia (ou zere a fila), 21 dias seguidos.`],
+    ['constancia-60', 60, 'Disciplina de ferro', '60', 'esmeralda', `Revise pelo menos ${REVISOES_DIA_SEQUENCIA} questões por dia (ou zere a fila), 60 dias seguidos.`],
+    ['constancia-120', 120, 'Monge copista', '120', 'lendario', `Revise pelo menos ${REVISOES_DIA_SEQUENCIA} questões por dia (ou zere a fila), 120 dias seguidos.`],
+  ]),
+  ...familia('resgate', 'resgate', [
+    ['resgate-50', 50, 'Resgate', '50', 'ouro', `Faça 50 revisões que estavam atrasadas havia ${ATRASO_RESGATE_DIAS} dias ou mais.`],
+    ['resgate-200', 200, 'Batedor das atrasadas', '200', 'esmeralda', `Faça 200 revisões atrasadas havia ${ATRASO_RESGATE_DIAS} dias ou mais.`],
+    ['resgate-500', 500, 'Nenhuma fica para trás', '500', 'lendario', `Faça 500 revisões atrasadas havia ${ATRASO_RESGATE_DIAS} dias ou mais.`],
+  ]),
+  ...familia('fcProfundezas', 'fcAndar', [
+    ['fc-andar-6', 6, 'Primeira descida', 'A6', 'bronze', 'Chegue ao andar 6 numa partida do jogo dos Flashcards (andar conferido pelo servidor).'],
+    ['fc-andar-12', 12, 'Diante do dragão', 'A12', 'prata', 'Chegue ao andar 12 numa partida do jogo dos Flashcards, o covil do dragão.'],
+    ['fc-andar-21', 21, 'Fundo do abismo', 'A21', 'ouro', 'Chegue ao andar 21 numa partida do jogo dos Flashcards.'],
+    ['fc-andar-30', 30, 'Abismo do residente', 'A30', 'esmeralda', 'Chegue ao andar 30 numa partida do jogo dos Flashcards.'],
+    ['fc-andar-45', 45, 'Sem fundo', 'A45', 'lendario', 'Chegue ao andar 45 numa partida do jogo dos Flashcards.'],
+  ]),
+  ...familia('fcMestreRevisao', 'fcMestreRevisao', [
+    ['fc-revisao-3', 3, 'Aprendiz das cartas', '3d', 'bronze', `Revise pelo menos ${FC_REVISOES_DIA} flashcards por dia, 3 dias seguidos.`],
+    ['fc-revisao-7', 7, 'Leitor assíduo', '7d', 'prata', `Revise pelo menos ${FC_REVISOES_DIA} flashcards por dia, 7 dias seguidos.`],
+    ['fc-revisao-14', 14, 'Mestre da revisão', '14d', 'ouro', `Revise pelo menos ${FC_REVISOES_DIA} flashcards por dia, 14 dias seguidos.`],
+    ['fc-revisao-30', 30, 'Grão-mestre da revisão', '30d', 'esmeralda', `Revise pelo menos ${FC_REVISOES_DIA} flashcards por dia, 30 dias seguidos.`],
+    ['fc-revisao-60', 60, 'Memória de dragão', '60d', 'lendario', `Revise pelo menos ${FC_REVISOES_DIA} flashcards por dia, 60 dias seguidos.`],
+  ]),
+  ...familia('fcEspecialista', 'fcEspecialista', [
+    ['fc-especialista-25', 25, 'Especialista de área', '25', 'ouro', 'Domine 25 flashcards de uma mesma área, acertando em todas as voltas da revisão.'],
+    ['fc-especialista-100', 100, 'Referência da área', '100', 'esmeralda', 'Domine 100 flashcards de uma mesma área.'],
+    ['fc-especialista-250', 250, 'Catedrático', '250', 'lendario', 'Domine 250 flashcards de uma mesma área.'],
+  ]),
+  ...familia('fcBestiario', 'fcBestiario', [
+    ['fc-bestiario-8', 8, 'Caçador', '8', 'prata', 'Vença 8 adversários diferentes no jogo dos Flashcards.'],
+    ['fc-bestiario-20', 20, 'Domador de feras', '20', 'ouro', 'Vença 20 adversários diferentes no jogo dos Flashcards.'],
+    ['fc-bestiario-43', 43, 'Bestiário completo', 'ALL', 'lendario', 'Vença todos os 43 adversários do jogo dos Flashcards.'],
+  ]),
+  ...familia('fcSemErrar', 'fcSemErrar', [
+    ['fc-sem-errar-10', 10, 'Sem errar', '10', 'prata', 'Acerte 10 flashcards seguidos numa partida do jogo dos Flashcards.'],
+    ['fc-sem-errar-25', 25, 'Lâmina afiada', '25', 'ouro', 'Acerte 25 flashcards seguidos numa partida.'],
+    ['fc-sem-errar-50', 50, 'Impecável', '50', 'lendario', 'Acerte 50 flashcards seguidos numa partida.'],
+  ]),
+  ...familia('fcLendarios', 'fcLendarios', [
+    ['fc-lendarios-50', 50, 'Caçador de lendários', '50', 'ouro', 'Acerte 50 flashcards lendários diferentes (os dos temas que mais caem na prova).'],
+    ['fc-lendarios-200', 200, 'Colecionador de lendários', '200', 'esmeralda', 'Acerte 200 flashcards lendários diferentes.'],
+    ['fc-lendarios-500', 500, 'Relicário lendário', '500', 'lendario', 'Acerte 500 flashcards lendários diferentes.'],
+  ]),
+  ...familia('fcDragoes', 'fcDragaoOssos', [
+    ['fc-dragao-ossos', 1, 'Ossos ao pó', 'D', 'ouro', 'Vença o Dragão de Ossos no jogo dos Flashcards.'],
+  ], true),
+  ...familia('fcDragoes', 'fcDragoes', [
+    ['fc-dragoes', 2, 'Matador de dragões', 'DD', 'esmeralda', 'Vença os dois dragões das profundezas: o Dragão de Ossos e o Dragão Rubro da Artrose.'],
+  ], true),
+  ...familia('secretas', 'revisoesNumDia', [
+    ['secreta-muralha', 100, 'Muralha derrubada', '100', 'esmeralda', 'Faça 100 revisões de questões num mesmo dia.'],
+  ], true),
   ...familia('secretas', 'chuteMestre', [
     ['secreta-chute', 5, 'Chute de mestre', 'gol', 'esmeralda', 'Acerte 5 chutes seguidos (questões marcadas como chute).'],
   ], true),
@@ -519,6 +594,22 @@ export interface Metricas {
   indicados30: number
   relatosResolvidos: number
   comentariosAvaliados: number
+  /** Revisões feitas (respostas a questões já respondidas antes). */
+  revisoes: number
+  /** Maior sequência de dias revisando (src/estado/metasRevisao.ts). */
+  constancia: number
+  /** Revisões feitas com atraso de ATRASO_RESGATE_DIAS ou mais. */
+  resgate: number
+  /** Mais revisões num mesmo dia. */
+  revisoesNumDia: number
+  fcAndar: number
+  fcMestreRevisao: number
+  fcEspecialista: number
+  fcBestiario: number
+  fcDragaoOssos: number
+  fcDragoes: number
+  fcSemErrar: number
+  fcLendarios: number
   /** Emblemas já conquistados e travados no servidor: não se perdem. */
   travadas?: ReadonlySet<string>
   /** Porcentagem de acerto na primeira tentativa (0 enquanto houver menos de APROVEITAMENTO_MINIMO questões). */
@@ -563,6 +654,10 @@ export interface Extras {
   grupos?: ReadonlyMap<string, readonly GrupoProva[]>
   acervo?: DadosAcervo
   servidor?: FeitosServidor | null
+  /** Dias de folga do ritmo de revisão (não quebram a constância). */
+  folgasRevisao?: readonly number[]
+  /** Métricas dos Flashcards (src/flashcards/conquistas.ts). */
+  flashcards?: MetricasFlashcards | null
 }
 
 const HORA = 60 * 60 * 1000
@@ -831,7 +926,14 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
       if (++errosSeguidos >= 5) aposErros = 0
     }
   }
+  const revisao = resumoRevisoes(respondidas)
   return {
+    revisoes: revisao.total,
+    constancia: sequenciaRevisao(revisao.porDia, { diasZerados: extras.servidor?.dias?.fila_zerada ?? [], folgas: extras.folgasRevisao ?? [] }, agora).maior,
+    resgate: revisao.resgatadas,
+    revisoesNumDia: revisao.maiorDia,
+    ...METRICAS_FLASHCARDS_VAZIAS,
+    ...extras.flashcards,
     questoes: Object.keys(respondidas).length,
     // A sequência vale enquanto está viva: perdeu, o emblema some e recomeça do zero.
     sequencia: calcularStreak(respondidas, agora).atual,
@@ -901,7 +1003,9 @@ export const desbloqueado = (emblema: Emblema, metricas: Metricas): boolean =>
   (emblema.familia !== 'sequencia' && !!metricas.travadas?.has(emblema.id)) || valorDe(emblema, metricas) >= emblema.minimo
 
 /** Entra na Platina: tudo o que não é secreto, menos a sequência (que pode se perder) e a própria Platina. */
-const contaParaPlatina = (e: Emblema) => !e.secreta && e.familia !== 'sequencia' && e.id !== 'chefe-platina'
+const contaParaPlatina = (e: Emblema) => !e.secreta && e.familia !== 'sequencia' && !e.familia.startsWith('fc') && e.id !== 'chefe-platina'
+/** Famílias dos Flashcards (produto à parte, em beta): ficam fora da Platina. */
+export const ehFamiliaFlashcards = (f: FamiliaId) => f.startsWith('fc')
 /** Fecha as métricas: a Platina depende de todos os outros emblemas. */
 export function completarMetricas(metricas: Metricas): Metricas {
   const platina = EMBLEMAS.filter(contaParaPlatina).every((e) => desbloqueado(e, metricas)) ? 1 : 0
