@@ -30,6 +30,115 @@
    "fonte": "3dc4ec08f866"
   },
   {
+   "id": "fc-trauma-0002-co1",
+   "questao": "trauma-0002",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o arco da cabeça do rádio que nunca articula com a ulna, a zona de segurança de Smith e Hotchkiss?",
+   "resposta": "90 a 110°",
+   "explicacao": "Um arco de cerca de **90 a 110°** que nunca articula com a ulna em nenhuma rotação: ali a placa não bloqueia a pronossupinação.",
+   "opcoes": [
+    "90 a 110°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "d89998ee54c0",
+   "origem": "autoral",
+   "trecho": "um arco de cerca de **90 a 110°** da cabeça que **nunca articula** com a ulna, em nenhuma posição de rotação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0002-co2",
+   "questao": "trauma-0002",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Com o antebraço neutro, entre as linhas projetadas a partir de quais referências fica a zona segura da cabeça do rádio?",
+   "resposta": "estiloide radial e do tubérculo de Lister",
+   "explicacao": "Entre o **estiloide radial** e o **tubérculo de Lister**, voltada para lateral com o antebraço em rotação neutra.",
+   "opcoes": [
+    "estiloide radial e do tubérculo de Lister"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "d89998ee54c0",
+   "origem": "autoral",
+   "trecho": "Ela está entre as linhas projetadas a partir do **estiloide radial** e do **tubérculo de Lister**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0002-co3",
+   "questao": "trauma-0002",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No acesso lateral à cabeça do rádio, que manobra do antebraço afasta o nervo interósseo posterior do campo?",
+   "resposta": "Pronar",
+   "explicacao": "**Pronar** o antebraço afasta o **nervo interósseo posterior**.",
+   "opcoes": [
+    "Pronar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "d89998ee54c0",
+   "origem": "autoral",
+   "trecho": "**Pronar** o antebraço afasta o **nervo interósseo posterior** do campo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0002-pc1",
+   "questao": "trauma-0002",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O acesso de Kocher à cabeça do rádio passa entre ancôneo e extensor ulnar do carpo. Qual acesso passa entre extensor radial curto do carpo e extensor comum dos dedos?",
+   "resposta": "Kaplan",
+   "explicacao": "**Kaplan:** extensor radial curto do carpo e extensor comum dos dedos. **Kocher:** ancôneo e extensor ulnar do carpo.",
+   "opcoes": [
+    "Kaplan",
+    "Kocher"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "d89998ee54c0",
+   "origem": "autoral",
+   "trecho": "**Kaplan** (entre extensor radial curto do carpo e extensor comum dos dedos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0002-q",
    "questao": "trauma-0002",
    "area": "Trauma adulto",
@@ -109,6 +218,60 @@
    "prova": "TARO",
    "ano": 2020,
    "fonte": "b43746bbf178"
+  },
+  {
+   "id": "fc-trauma-0008-co1",
+   "questao": "trauma-0008",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na instabilidade rotatória posteromedial em varo, qual ligamento se rompe junto com a fratura da faceta anteromedial do coronoide?",
+   "resposta": "ligamento colateral lateral",
+   "explicacao": "O varo fratura a **faceta anteromedial** e rompe o **colateral lateral**; o tratamento repara os dois.",
+   "opcoes": [
+    "ligamento colateral lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "b7283912a508",
+   "origem": "autoral",
+   "trecho": "fratura a **faceta anteromedial** e rompe o **ligamento colateral lateral**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0008-co2",
+   "questao": "trauma-0008",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual implante se usa para fixar a fratura da faceta anteromedial do coronoide?",
+   "resposta": "placa de suporte medial",
+   "explicacao": "**Placa de suporte medial** na faceta, mais o reparo do colateral lateral. Fragmentos pequenos já instabilizam.",
+   "opcoes": [
+    "placa de suporte medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "b7283912a508",
+   "origem": "autoral",
+   "trecho": "fixar a faceta (placa de suporte medial)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0008-q",
@@ -759,6 +922,33 @@
    "fonte": "c93e549ea591"
   },
   {
+   "id": "fc-trauma-0034-co1",
+   "questao": "trauma-0034",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho, a imobilização prolongada piora o prognóstico por levar a quê?",
+   "resposta": "rigidez",
+   "explicacao": "Imobilização prolongada leva à **rigidez**; reconstrução precoce dos cruzados é fator de bom prognóstico.",
+   "opcoes": [
+    "rigidez"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "c83a27cda17f",
+   "origem": "autoral",
+   "trecho": "imobilização prolongada, que leva à **rigidez**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0034-q",
    "questao": "trauma-0034",
    "area": "Trauma adulto",
@@ -1218,6 +1408,60 @@
    "fonte": "a53de7fe3214"
   },
   {
+   "id": "fc-trauma-0055-co1",
+   "questao": "trauma-0055",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na tríade terrível do cotovelo, qual ligamento se solta primeiro do epicôndilo?",
+   "resposta": "colateral lateral",
+   "explicacao": "Mecanismo posterolateral (valgo, supinação, carga axial): o **colateral lateral** se solta do epicôndilo primeiro.",
+   "opcoes": [
+    "colateral lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "cfdaf451d063",
+   "origem": "autoral",
+   "trecho": "O colateral lateral se solta do epicôndilo primeiro.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0055-co2",
+   "questao": "trauma-0055",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Tríade terrível com coronoide, cabeça do rádio e colateral lateral tratados, mas o cotovelo segue instável: o que se acrescenta?",
+   "resposta": "colateral medial ou fixador articulado",
+   "explicacao": "De dentro para fora: coronoide, cabeça do rádio, colateral lateral; se continuar instável, **colateral medial ou fixador articulado**.",
+   "opcoes": [
+    "colateral medial ou fixador articulado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "cfdaf451d063",
+   "origem": "autoral",
+   "trecho": "**colateral medial** ou **fixador articulado**: se o cotovelo continuar instável.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0055-np",
    "questao": "trauma-0055",
    "area": "Trauma adulto",
@@ -1243,6 +1487,34 @@
    "prova": "TARO",
    "ano": 2018,
    "fonte": "cfdaf451d063"
+  },
+  {
+   "id": "fc-trauma-0055-pc1",
+   "questao": "trauma-0055",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A ponta do coronoide acompanha a tríade terrível. A que região do coronoide se associa a fratura-luxação transolecraniana?",
+   "resposta": "base",
+   "explicacao": "Fratura do olécrano com luxação (**transolecraniana**) se associa à **base** do coronoide, tipo 3.",
+   "opcoes": [
+    "ponta",
+    "base"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "cfdaf451d063",
+   "origem": "autoral",
+   "trecho": "fratura do olécrano com luxação é a fratura-luxação **transolecraniana** (associada à base do coronoide, tipo 3)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0056-q",
@@ -2386,6 +2658,116 @@
    "fonte": "7bd235532682"
   },
   {
+   "id": "fc-trauma-0105-ar1",
+   "questao": "trauma-0105",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação posterolateral irredutível do joelho, vale insistir nas tentativas de redução fechada?",
+   "resposta": "necrose da pele",
+   "explicacao": "Não: a tração aperta a casa de botão, e as tentativas podem causar **necrose da pele** medial. Redução aberta precoce.",
+   "opcoes": [
+    "necrose da pele"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "2db0ae0355a9",
+   "origem": "autoral",
+   "trecho": "as tentativas repetidas podem causar **necrose da pele** medial pela tensão.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0105-co1",
+   "questao": "trauma-0105",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual direção de luxação do joelho é a exceção clássica, que pode ser irredutível por interposição de partes moles?",
+   "resposta": "posterolateral",
+   "explicacao": "A **posterolateral**: o côndilo medial fica preso numa casa de botão.",
+   "opcoes": [
+    "posterolateral",
+    "anterior",
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "2db0ae0355a9",
+   "origem": "autoral",
+   "trecho": "A exceção clássica é a luxação **posterolateral**, que pode ser **irredutível** por **interposição de partes moles**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0105-co2",
+   "questao": "trauma-0105",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação posterolateral irredutível do joelho, qual côndilo fica preso na casa de botão?",
+   "resposta": "côndilo femoral medial",
+   "explicacao": "O **côndilo femoral medial** atravessa a cápsula medial e o colateral tibial, que o aprisionam.",
+   "opcoes": [
+    "côndilo femoral medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "2db0ae0355a9",
+   "origem": "autoral",
+   "trecho": "o **côndilo femoral medial** atravessa as estruturas mediais e fica preso numa \"casa de botão\" (buttonhole).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0105-co3",
+   "questao": "trauma-0105",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o sinal cutâneo da luxação posterolateral irredutível do joelho?",
+   "resposta": "sinal da covinha",
+   "explicacao": "**Sinal da covinha (dimple sign):** a pele medial é repuxada para dentro pelos tecidos interpostos.",
+   "opcoes": [
+    "sinal da covinha"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "2db0ae0355a9",
+   "origem": "autoral",
+   "trecho": "**O sinal da covinha (dimple sign).**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0105-q",
    "questao": "trauma-0105",
    "area": "Trauma adulto",
@@ -2816,6 +3198,206 @@
    "prova": "TARO",
    "ano": 2016,
    "fonte": "080762eee201"
+  },
+  {
+   "id": "fc-trauma-0125-cl1",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação anatômica de Schenck, qual tipo é a lesão de um só cruzado com o joelho luxado?",
+   "resposta": "KD-I",
+   "explicacao": "**KD-I:** um cruzado. **KD-II:** os dois cruzados. **KD-III:** dois cruzados e um colateral. **KD-IV:** os quatro. **KD-V:** fratura-luxação.",
+   "opcoes": [
+    "KD-I",
+    "KD-II",
+    "KD-IV",
+    "KD-V"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "| KD-I | **Um** cruzado (LCA ou LCP), com o joelho luxado |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-cl2",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck, como se chama a luxação com os dois cruzados, o colateral lateral e o canto posterolateral lesados?",
+   "resposta": "KD-III L",
+   "explicacao": "**KD-III L:** dois cruzados, colateral lateral e canto posterolateral; mais lesão do **fibular**. **KD-III M:** com o colateral medial.",
+   "opcoes": [
+    "KD-III M",
+    "KD-III L",
+    "KD-IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "| KD-III L | Os dois cruzados e o **colateral lateral e canto posterolateral** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-cl3",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck, qual tipo de luxação do joelho tem os quatro ligamentos lesados?",
+   "resposta": "KD-IV",
+   "explicacao": "**KD-IV:** os **quatro** ligamentos (dois cruzados e dois colaterais).",
+   "opcoes": [
+    "KD-II",
+    "KD-III L",
+    "KD-IV",
+    "KD-V"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "| KD-IV | Os **quatro** ligamentos |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-cl4",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck, que tipo é a luxação do joelho com fratura periarticular?",
+   "resposta": "KD-V",
+   "explicacao": "**KD-V:** fratura-luxação.",
+   "opcoes": [
+    "KD-I",
+    "KD-IV",
+    "KD-V"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "| KD-V | Fratura-luxação |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-co1",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em quais dois pontos a artéria poplítea fica fixa, o que a faz estirar na luxação do joelho?",
+   "resposta": "hiato dos adutores e no arco do sóleo",
+   "explicacao": "Presa no **hiato dos adutores** e no **arco do sóleo**, não escapa do deslocamento.",
+   "opcoes": [
+    "hiato dos adutores e no arco do sóleo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "a artéria poplítea fica fixa no hiato dos adutores e no arco do sóleo e é estirada na luxação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-co2",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho, qual é a conduta diante da ausência de pulso?",
+   "resposta": "exploração imediata",
+   "explicacao": "ITB abaixo de 0,9: angiotomografia. **Ausência de pulso: exploração imediata.**",
+   "opcoes": [
+    "exploração imediata",
+    "angiotomografia"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "ausência de pulso indica exploração imediata.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-pc1",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Schenck classifica a luxação do joelho pelos ligamentos rompidos. Por qual critério a classifica Kennedy?",
+   "resposta": "direção do deslocamento",
+   "explicacao": "**Kennedy:** direção (anterior, posterior, medial, lateral, rotatória), muitas vezes desconhecida porque o joelho reduz sozinho.",
+   "opcoes": [
+    "direção do deslocamento"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "a direção do deslocamento (classificação de Kennedy: anterior, posterior, medial, lateral, rotatória)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0125-q",
@@ -3657,6 +4239,143 @@
    "fonte": "ccaa6da039a2"
   },
   {
+   "id": "fc-trauma-0163-ar1",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Joelho com lesão multiligamentar que chega reduzido pode ser tratado como uma entorse grave?",
+   "resposta": "luxação que reduziu",
+   "explicacao": "Não: muitas luxações **reduzem espontaneamente**. Todo joelho multiligamentar é uma **luxação que reduziu**, com avaliação vascular.",
+   "opcoes": [
+    "luxação que reduziu"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "todo joelho com lesão **multiligamentar** deve ser tratado como uma luxação que reduziu.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0163-co1",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a direção mais comum da luxação do joelho, causada pela hiperextensão?",
+   "resposta": "anterior",
+   "explicacao": "**Anterior** (hiperextensão) é a mais comum. O trauma do painel causa a **posterior**.",
+   "opcoes": [
+    "anterior",
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "A hiperextensão causa a luxação **anterior**, a mais comum.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0163-co2",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão da poplítea por luxação do joelho, após quantas horas de isquemia a taxa de amputação sobe muito?",
+   "resposta": "6 a 8 horas",
+   "explicacao": "Isquemia de mais de **6 a 8 horas** leva a altas taxas de amputação.",
+   "opcoes": [
+    "6 a 8 horas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "A isquemia de mais de **6 a 8 horas** leva a altas taxas de **amputação**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0163-co3",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho, o nervo fibular é lesado sobretudo em quais lesões?",
+   "resposta": "posterolaterais",
+   "explicacao": "Fibular lesado em cerca de 20 a 40%, sobretudo nas lesões **posterolaterais**, com recuperação ruim.",
+   "opcoes": [
+    "posterolaterais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "É lesado em cerca de 20 a 40% dos casos, sobretudo nas lesões **posterolaterais**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0163-pc1",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A hiperextensão causa a luxação anterior do joelho. Que luxação causa o trauma do painel, com o joelho fletido?",
+   "resposta": "posterior",
+   "explicacao": "**Trauma do painel:** a tíbia é empurrada para trás, luxação **posterior**.",
+   "opcoes": [
+    "anterior",
+    "posterior"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "o mecanismo clássico é o **trauma do painel**: o joelho fletido bate no painel, e a tíbia é empurrada para trás (luxação **posterior**).",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0163-q",
    "questao": "trauma-0163",
    "area": "Trauma adulto",
@@ -3684,6 +4403,33 @@
    "fonte": "eedea6b162c1"
   },
   {
+   "id": "fc-trauma-0163-tb1",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Luxação do joelho de ultrabaixa energia, por tropeço: em que paciente ocorre, com alto risco vascular?",
+   "resposta": "obesos mórbidos",
+   "explicacao": "**Ultrabaixa energia:** tropeço em **obesos mórbidos**; rara, mas com alto risco vascular.",
+   "opcoes": [
+    "obesos mórbidos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "| Ultrabaixa energia | Tropeço em **obesos mórbidos** | Raro, mas com alto risco vascular |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0164-q",
    "questao": "trauma-0164",
    "area": "Trauma adulto",
@@ -3709,6 +4455,199 @@
    "prova": "TARO",
    "ano": 2014,
    "fonte": "35710c3ae810"
+  },
+  {
+   "id": "fc-trauma-0165-cl1",
+   "questao": "trauma-0165",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Broberg e Morrey deram números ao Mason II da cabeça do rádio. Qual desvio mínimo entra no tipo II?",
+   "resposta": "2 mm ou mais",
+   "explicacao": "**Tipo II de Broberg e Morrey:** desvio de **2 mm ou mais** ou acometimento de **30% ou mais** da superfície articular.",
+   "opcoes": [
+    "2 mm ou mais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "72541e907973",
+   "origem": "autoral",
+   "trecho": "desvio de **2 mm ou mais** ou acometimento de **30% ou mais** da superfície articular.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0165-cl2",
+   "questao": "trauma-0165",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pelos critérios de Broberg e Morrey, que acometimento da superfície articular coloca a fratura da cabeça do rádio no tipo II?",
+   "resposta": "30% ou mais",
+   "explicacao": "**30% ou mais** da superfície articular, ou desvio de 2 mm ou mais.",
+   "opcoes": [
+    "30% ou mais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "72541e907973",
+   "origem": "autoral",
+   "trecho": "acometimento de **30% ou mais** da superfície articular.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0165-cl3",
+   "questao": "trauma-0165",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quem acrescentou à classificação de Mason o tipo IV, fratura da cabeça do rádio com luxação do cotovelo?",
+   "resposta": "Johnston",
+   "explicacao": "**Johnston** acrescentou o **tipo IV** (com luxação). Broberg e Morrey incluíram o colo; Hotchkiss, critérios de tratamento.",
+   "opcoes": [
+    "Johnston",
+    "Hotchkiss",
+    "Broberg e Morrey"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "72541e907973",
+   "origem": "autoral",
+   "trecho": "| IV (Johnston) | Fratura da cabeça com **luxação do cotovelo** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0165-co1",
+   "questao": "trauma-0165",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura Mason III da cabeça do rádio, até quantos fragmentos ainda se considera a cabeça reconstruível para fixação?",
+   "resposta": "até 3 fragmentos",
+   "explicacao": "Reconstruível (**até 3 fragmentos**): fixação. Muito cominuída: **artroplastia** da cabeça do rádio.",
+   "opcoes": [
+    "até 3 fragmentos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "72541e907973",
+   "origem": "autoral",
+   "trecho": "- **Tipo III**: se reconstruível (até 3 fragmentos), fixação;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0165-co2",
+   "questao": "trauma-0165",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura da cabeça do rádio com dor no punho e migração proximal do rádio: qual lesão associada da membrana interóssea?",
+   "resposta": "Essex-Lopresti",
+   "explicacao": "**Essex-Lopresti:** lesão da membrana interóssea com migração proximal do rádio; não pode passar despercebida.",
+   "opcoes": [
+    "Essex-Lopresti"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "72541e907973",
+   "origem": "autoral",
+   "trecho": "da membrana interóssea (lesão de **Essex-Lopresti**, com dor no punho e migração proximal do rádio)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0165-pc1",
+   "questao": "trauma-0165",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Broberg e Morrey incluíram o colo e deram números à classificação de Mason. Qual modificação acrescentou critérios de tratamento, como o bloqueio mecânico?",
+   "resposta": "Hotchkiss",
+   "explicacao": "**Hotchkiss:** critérios de tratamento pelo **bloqueio mecânico** do movimento e pela possibilidade de fixação.",
+   "opcoes": [
+    "Hotchkiss",
+    "Johnston",
+    "Broberg e Morrey"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "72541e907973",
+   "origem": "autoral",
+   "trecho": "**A modificação de Hotchkiss** acrescentou critérios de **tratamento** baseados no bloqueio mecânico do movimento e na possibilidade de fixação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0165-pc2",
+   "questao": "trauma-0165",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O coronoide se classifica por Regan e Morrey ou por O'Driscoll. Qual classificação própria tem a fratura do capítulo?",
+   "resposta": "Bryan e Morrey modificada por McKee",
+   "explicacao": "Capítulo: **Bryan e Morrey modificada por McKee**. Olécrano: Colton, Mayo, Schatzker.",
+   "opcoes": [
+    "Bryan e Morrey modificada por McKee"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "72541e907973",
+   "origem": "autoral",
+   "trecho": "As fraturas do **capítulo** têm classificação própria (Bryan e Morrey modificada por McKee)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0165-q",
@@ -5712,6 +6651,92 @@
    "fonte": "2cbd9e0e7035"
   },
   {
+   "id": "fc-trauma-0269-cl1",
+   "questao": "trauma-0269",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo",
+    "Fratura do olécrano"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mayo da fratura do olécrano, o que define o tipo III?",
+   "resposta": "com instabilidade",
+   "explicacao": "**Mayo I:** sem desvio. **II:** com desvio e cotovelo estável. **III:** **com instabilidade**.",
+   "opcoes": [
+    "sem desvio",
+    "com desvio e cotovelo estável",
+    "com instabilidade"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d80bca654322",
+   "origem": "autoral",
+   "trecho": "**Mayo** classifica o olécrano: I sem desvio, II com desvio e cotovelo estável, III com instabilidade",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0269-co1",
+   "questao": "trauma-0269",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo",
+    "Fratura do olécrano"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do olécrano, a partir de quanto desvio a cirurgia é indicada?",
+   "resposta": "mais de 2 mm",
+   "explicacao": "Operar se **desviada (mais de 2 mm)** ou com **perda da extensão ativa**.",
+   "opcoes": [
+    "mais de 2 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d80bca654322",
+   "origem": "autoral",
+   "trecho": "fratura **desviada** (mais de 2 mm) ou com **perda da extensão ativa**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0269-co2",
+   "questao": "trauma-0269",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo",
+    "Fratura do olécrano"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura do olécrano em idoso com pouca demanda: qual é a alternativa à fixação?",
+   "resposta": "excisão do fragmento com reinserção do tríceps",
+   "explicacao": "No idoso de baixa demanda, **excisão do fragmento com reinserção do tríceps**.",
+   "opcoes": [
+    "excisão do fragmento com reinserção do tríceps"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d80bca654322",
+   "origem": "autoral",
+   "trecho": "no idoso com pouca demanda, a excisão do fragmento com reinserção do tríceps.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0269-np",
    "questao": "trauma-0269",
    "area": "Trauma adulto",
@@ -6200,6 +7225,114 @@
    "fonte": "63f23d985bdf"
   },
   {
+   "id": "fc-trauma-0298-ar1",
+   "questao": "trauma-0298",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho, pulsos distais palpáveis excluem lesão arterial?",
+   "resposta": "não excluem",
+   "explicacao": "**Não:** a lesão da **íntima** pode trombosar horas depois. Medir o ITB.",
+   "opcoes": [
+    "não excluem"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e2df27abde82",
+   "origem": "autoral",
+   "trecho": "Pulsos palpáveis **não excluem** lesão da íntima, que pode trombosar horas depois.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0298-co1",
+   "questao": "trauma-0298",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se calcula o índice tornozelo-braquial (ITB)?",
+   "resposta": "pressão sistólica do tornozelo dividida pela do braço",
+   "explicacao": "**ITB:** pressão sistólica do tornozelo dividida pela do braço, com Doppler. Abaixo de 0,9: angiotomografia.",
+   "opcoes": [
+    "pressão sistólica do tornozelo dividida pela do braço"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e2df27abde82",
+   "origem": "autoral",
+   "trecho": "O **ITB** é a pressão sistólica do tornozelo dividida pela do braço, medida com Doppler.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0298-co2",
+   "questao": "trauma-0298",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual estudo mostrou que ITB acima de 0,9 na luxação do joelho tem valor preditivo negativo próximo de 100%?",
+   "resposta": "Mills",
+   "explicacao": "Estudo de **Mills**: ITB acima de 0,9 permite observar com exames seriados, sem angiografia de rotina.",
+   "opcoes": [
+    "Mills"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e2df27abde82",
+   "origem": "autoral",
+   "trecho": "(estudo de **Mills**)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0298-co3",
+   "questao": "trauma-0298",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na revascularização da poplítea após luxação do joelho, qual procedimento profilático se associa?",
+   "resposta": "fasciotomia",
+   "explicacao": "**Fasciotomia** profilática na revascularização.",
+   "opcoes": [
+    "fasciotomia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e2df27abde82",
+   "origem": "autoral",
+   "trecho": "Na revascularização, faz-se **fasciotomia** profilática.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0298-q",
    "questao": "trauma-0298",
    "area": "Trauma adulto",
@@ -6333,6 +7466,116 @@
    "prova": "TEOT/TARO",
    "ano": null,
    "fonte": "e8788f378d94"
+  },
+  {
+   "id": "fc-trauma-0310-cl1",
+   "questao": "trauma-0310",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Bryan e Morrey da fratura do capítulo, qual epônimo é o tipo I, fragmento grande com boa porção de osso subcondral?",
+   "resposta": "Hahn-Steinthal",
+   "explicacao": "**Tipo I: Hahn-Steinthal** (fragmento grande). **Tipo II: Kocher-Lorenz** (casca fina).",
+   "opcoes": [
+    "Hahn-Steinthal",
+    "Kocher-Lorenz"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "99ee1761fa81",
+   "origem": "autoral",
+   "trecho": "**Tipo I** (**Hahn-Steinthal**): fragmento grande, com boa porção de osso subcondral.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0310-cl2",
+   "questao": "trauma-0310",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Bryan e Morrey da fratura do capítulo, qual epônimo é o tipo II, casca osteocondral fina?",
+   "resposta": "Kocher-Lorenz",
+   "explicacao": "**Tipo II: Kocher-Lorenz**, com pouco osso. **Tipo I: Hahn-Steinthal**.",
+   "opcoes": [
+    "Hahn-Steinthal",
+    "Kocher-Lorenz"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "99ee1761fa81",
+   "origem": "autoral",
+   "trecho": "**Tipo II** (**Kocher-Lorenz**): casca osteocondral fina, com pouco osso.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0310-cl3",
+   "questao": "trauma-0310",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O que caracteriza o tipo IV de McKee na fratura do capítulo?",
+   "resposta": "se estende à tróclea",
+   "explicacao": "**Tipo IV (McKee):** o fragmento **se estende à tróclea**, com o duplo arco.",
+   "opcoes": [
+    "se estende à tróclea"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "99ee1761fa81",
+   "origem": "autoral",
+   "trecho": "**Tipo IV** (McKee): o fragmento se estende à **tróclea**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0310-co1",
+   "questao": "trauma-0310",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual sinal na radiografia de perfil denuncia a fratura do capítulo, que quase não aparece no AP?",
+   "resposta": "duplo arco",
+   "explicacao": "**Sinal do duplo arco:** borda subcondral do capítulo e da tróclea lateral desviadas para cima e para a frente.",
+   "opcoes": [
+    "duplo arco"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "99ee1761fa81",
+   "origem": "autoral",
+   "trecho": "onde surge o **sinal do duplo arco**",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0310-q",
@@ -10037,6 +11280,33 @@
    "fonte": "6f3e5c451633"
   },
   {
+   "id": "fc-trauma-0690-co1",
+   "questao": "trauma-0690",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual parcela da carga do cotovelo passa pela articulação radiocapitelar?",
+   "resposta": "cerca de 60%",
+   "explicacao": "Cerca de **60%** da carga: a cabeça do rádio também é **estabilizador secundário** contra o valgo.",
+   "opcoes": [
+    "cerca de 60%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "1544df2d576d",
+   "origem": "autoral",
+   "trecho": "(cerca de 60% da carga passa pela articulação radiocapitelar)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0690-q",
    "questao": "trauma-0690",
    "area": "Trauma adulto",
@@ -10062,6 +11332,60 @@
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
    "fonte": "1544df2d576d"
+  },
+  {
+   "id": "fc-trauma-0691-ar1",
+   "questao": "trauma-0691",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A ressecção da cabeça do rádio fraturada ainda tem indicação? Para quem?",
+   "resposta": "pacientes de baixa demanda sem instabilidade",
+   "explicacao": "Só em **pacientes de baixa demanda sem instabilidade**; com instabilidade, fixação ou prótese.",
+   "opcoes": [
+    "pacientes de baixa demanda sem instabilidade"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "e189d2654106",
+   "origem": "autoral",
+   "trecho": "**ressecção** apenas em pacientes de baixa demanda sem instabilidade.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0691-co1",
+   "questao": "trauma-0691",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da cabeça do rádio, que dado, testado após aspirar a hemartrose, mais pesa na decisão de operar?",
+   "resposta": "bloqueio mecânico",
+   "explicacao": "A aspiração com anestésico alivia a dor e permite testar o **bloqueio mecânico** à rotação.",
+   "opcoes": [
+    "bloqueio mecânico"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "e189d2654106",
+   "origem": "autoral",
+   "trecho": "permite testar se há **bloqueio mecânico** à rotação, o dado que mais pesa na decisão.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0691-q",
@@ -11031,6 +12355,60 @@
    "prova": "SBOT-SP",
    "ano": null,
    "fonte": "ec5599370043"
+  },
+  {
+   "id": "fc-trauma-0745-cl1",
+   "questao": "trauma-0745",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck modificada por Wascher, o que indica o sufixo N?",
+   "resposta": "lesão neurológica",
+   "explicacao": "**C:** lesão vascular (poplítea). **N:** **lesão neurológica**, geralmente do fibular comum.",
+   "opcoes": [
+    "lesão neurológica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "371a5f029da1",
+   "origem": "autoral",
+   "trecho": "e **N** para lesão **neurológica** (nerve), geralmente do **fibular comum**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0745-co1",
+   "questao": "trauma-0745",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quem acrescentou à classificação de Schenck os sufixos para lesões vasculares e nervosas?",
+   "resposta": "Wascher",
+   "explicacao": "**Wascher** acrescentou **C** (circulation) e **N** (nerve).",
+   "opcoes": [
+    "Wascher"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "371a5f029da1",
+   "origem": "autoral",
+   "trecho": "**A modificação de Wascher.** Acrescenta **sufixos** para lesões associadas",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0745-q",
@@ -13592,6 +14970,118 @@
    "fonte": "97d43a219eb7"
   },
   {
+   "id": "fc-trauma-0879-ar1",
+   "questao": "trauma-0879",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que a banda de tensão é evitada na fratura cominuta do olécrano?",
+   "resposta": "encurtaria o olécrano",
+   "explicacao": "Comprimiria os fragmentos soltos e **encurtaria o olécrano**, estreitando a incisura troclear. A **placa** mantém o comprimento.",
+   "opcoes": [
+    "encurtaria o olécrano"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "09b328e6d2de",
+   "origem": "autoral",
+   "trecho": "A banda de tensão comprimiria os fragmentos soltos e **encurtaria** o olécrano",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0879-cl1",
+   "questao": "trauma-0879",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mayo do olécrano, o que significa a letra B acrescentada ao tipo?",
+   "resposta": "cominuta",
+   "explicacao": "Cada tipo de Mayo em **A** (não cominuta) ou **B** (**cominuta**).",
+   "opcoes": [
+    "cominuta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "09b328e6d2de",
+   "origem": "autoral",
+   "trecho": "cada tipo em **A** (não cominuta) ou **B** (**cominuta**).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0879-cl2",
+   "questao": "trauma-0879",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura do olécrano Mayo 2A, transversa simples e não cominuta: qual é o tratamento?",
+   "resposta": "banda de tensão",
+   "explicacao": "**2A:** **banda de tensão** ou parafuso intramedular; a tração do tríceps vira compressão. **2B:** placa.",
+   "opcoes": [
+    "banda de tensão",
+    "placa e parafusos",
+    "excisão da ponta"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "09b328e6d2de",
+   "origem": "autoral",
+   "trecho": "**2A** (transversa simples, não cominuta): **banda de tensão** ou parafuso intramedular",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0879-cl3",
+   "questao": "trauma-0879",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o tipo mais comum da classificação de Mayo da fratura do olécrano?",
+   "resposta": "tipo 2",
+   "explicacao": "**Tipo 2:** desviada com cotovelo **estável** (colaterais e coronoide íntegros), a mais comum.",
+   "opcoes": [
+    "tipo 1",
+    "tipo 2",
+    "tipo 3"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "09b328e6d2de",
+   "origem": "autoral",
+   "trecho": "**tipo 2**: **desviada**, com o cotovelo **estável** (os ligamentos colaterais e o coronoide íntegros); a mais comum;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0879-np",
    "questao": "trauma-0879",
    "area": "Trauma adulto",
@@ -15285,6 +16775,62 @@
    "fonte": "28df33136072"
   },
   {
+   "id": "fc-trauma-0971-cl1",
+   "questao": "trauma-0971",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Regan e Morrey do coronoide, qual tipo acomete até metade da altura do processo?",
+   "resposta": "II",
+   "explicacao": "**I:** avulsão da ponta. **II:** até **50%** da altura. **III:** mais de 50%.",
+   "opcoes": [
+    "I",
+    "II",
+    "III"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "1de2208908c2",
+   "origem": "autoral",
+   "trecho": "**tipo II**: até **50%** da altura do coronoide;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0971-cl2",
+   "questao": "trauma-0971",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o tipo I da classificação de Regan e Morrey do coronoide?",
+   "resposta": "avulsão da ponta",
+   "explicacao": "**Regan e Morrey I:** **avulsão da ponta**; a classificação é pela altura do fragmento.",
+   "opcoes": [
+    "avulsão da ponta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "1de2208908c2",
+   "origem": "autoral",
+   "trecho": "**tipo I**: avulsão da **ponta**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0971-np",
    "questao": "trauma-0971",
    "area": "Trauma adulto",
@@ -15310,6 +16856,33 @@
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
    "fonte": "1de2208908c2"
+  },
+  {
+   "id": "fc-trauma-0971-pc1",
+   "questao": "trauma-0971",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O estresse em valgo testa o colateral medial. Que instabilidade o pivot-shift lateral testa?",
+   "resposta": "posterolateral",
+   "explicacao": "**Pivot-shift:** instabilidade **posterolateral** (colateral lateral). O estresse em **varo** decide a fixação do coronoide tipo II.",
+   "opcoes": [
+    "posterolateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "1de2208908c2",
+   "origem": "autoral",
+   "trecho": "**pivot-shift** (lateral): testa a instabilidade **posterolateral** (colateral lateral);",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0972-q",
@@ -15999,6 +17572,150 @@
    "fonte": "b85f09f6215c"
   },
   {
+   "id": "fc-trauma-1006-cl1",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteonecrose do joelho (Koshino modificada por Aglietti), qual estágio tem radiografia normal, com alteração só na ressonância ou cintilografia?",
+   "resposta": "Estágio 1",
+   "explicacao": "**1:** radiografia normal. **2:** achatamento. **3:** radiotransparência com halo. **4:** colapso. **5:** artrose.",
+   "opcoes": [
+    "Estágio 1",
+    "Estágio 2",
+    "Estágio 3",
+    "Estágio 5"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "**Estágio 1**: radiografia **normal**, alteração só na ressonância ou cintilografia.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1006-cl2",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Koshino e Aglietti da osteonecrose do joelho, qual estágio é o achatamento da área de carga do côndilo?",
+   "resposta": "Estágio 2",
+   "explicacao": "**Estágio 2:** **achatamento** da área de carga, ainda sem a lesão com halo.",
+   "opcoes": [
+    "Estágio 1",
+    "Estágio 2",
+    "Estágio 3",
+    "Estágio 5"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "**Estágio 2**: **achatamento** da área de carga do côndilo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1006-cl3",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Koshino e Aglietti da osteonecrose do joelho, qual estágio tem área radiotransparente com halo esclerótico, ainda sem colapso?",
+   "resposta": "Estágio 3",
+   "explicacao": "**Estágio 3:** radiotransparência com **halo esclerótico**. O colapso com placa calcificada é o 4.",
+   "opcoes": [
+    "Estágio 1",
+    "Estágio 2",
+    "Estágio 3",
+    "Estágio 5"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "**Estágio 3**: área **radiotransparente** com **halo esclerótico** ao redor.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1006-co1",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteonecrose espontânea do joelho (SONK) costuma associar-se a qual lesão meniscal?",
+   "resposta": "lesão da raiz posterior do menisco medial",
+   "explicacao": "Muitas são fraturas por insuficiência subcondral, ligadas à **lesão da raiz posterior do menisco medial**.",
+   "opcoes": [
+    "lesão da raiz posterior do menisco medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "frequentemente associadas a **lesão da raiz posterior do menisco medial**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1006-co2",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na SONK, lesões que ocupam menos de quanto da largura do côndilo tendem a evoluir bem sem cirurgia?",
+   "resposta": "menos de 40% da largura do côndilo",
+   "explicacao": "Pequenas: menos de cerca de 3,5 a 5 cm² ou **menos de 40% da largura do côndilo**. As grandes colapsam.",
+   "opcoes": [
+    "menos de 40% da largura do côndilo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "Lesões **pequenas** (menos de cerca de 3,5 a 5 cm², ou menos de 40% da largura do côndilo)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-1008-q",
    "questao": "trauma-1008",
    "area": "Trauma adulto",
@@ -16024,6 +17741,62 @@
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
    "fonte": "56e6fd83eddf"
+  },
+  {
+   "id": "fc-trauma-1009-co1",
+   "questao": "trauma-1009",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual antagonista do receptor da IL-1, intra-articular, está em estudo para reduzir a artrose pós-traumática?",
+   "resposta": "anakinra",
+   "explicacao": "**Anakinra** intra-articular, na janela logo após o trauma.",
+   "opcoes": [
+    "anakinra"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "beace94998b2",
+   "origem": "autoral",
+   "trecho": "antagonistas do receptor da IL-1 (como a anakinra intra-articular)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1009-pc1",
+   "questao": "trauma-1009",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A IL-1 beta é o pico do primeiro dia após o trauma articular. Qual citocina sobe depois e é marcador sistêmico de gravidade no politrauma?",
+   "resposta": "IL-6",
+   "explicacao": "**IL-6:** sobe depois e se mantém, marcador sistêmico do politrauma. **IL-10:** anti-inflamatória.",
+   "opcoes": [
+    "IL-6",
+    "IL-10",
+    "IL-12"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "beace94998b2",
+   "origem": "autoral",
+   "trecho": "A **IL-6** aumenta um pouco depois e se mantém; é o marcador sistêmico de gravidade no politrauma.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-1009-q",
@@ -16474,6 +18247,114 @@
    "fonte": "280dd6a45a7e"
   },
   {
+   "id": "fc-trauma-1032-co1",
+   "questao": "trauma-1032",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão meniscal em rampa aparece em que proporção dos joelhos com lesão do LCA?",
+   "resposta": "15 a 25%",
+   "explicacao": "Até cerca de **15 a 25%** dos joelhos com LCA roto.",
+   "opcoes": [
+    "15 a 25%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "3767557eb829",
+   "origem": "autoral",
+   "trecho": "(até cerca de 15 a 25%)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1032-co2",
+   "questao": "trauma-1032",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual manobra artroscópica passa o artroscópio pela incisura até o compartimento posteromedial para ver a lesão em rampa?",
+   "resposta": "manobra de Gillquist",
+   "explicacao": "**Manobra de Gillquist**, muitas vezes com portal posteromedial e palpação da junção.",
+   "opcoes": [
+    "manobra de Gillquist"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "3767557eb829",
+   "origem": "autoral",
+   "trecho": "(manobra de Gillquist)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1032-co3",
+   "questao": "trauma-1032",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Lesão meniscal em rampa instável, achada na reconstrução do LCA: qual é a conduta?",
+   "resposta": "suturadas",
+   "explicacao": "Instáveis devem ser **suturadas** (todo-dentro ou gancho pelo portal posteromedial); as estáveis e pequenas podem cicatrizar.",
+   "opcoes": [
+    "suturadas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "3767557eb829",
+   "origem": "autoral",
+   "trecho": "Lesões **instáveis** devem ser **suturadas**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1032-pc1",
+   "questao": "trauma-1032",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão radial da raiz posterior do menisco lateral se associa à lesão do LCA. A da raiz do medial se associa a quê?",
+   "resposta": "joelhos degenerativos",
+   "explicacao": "Raiz **lateral:** LCA. Raiz **medial:** **joelhos degenerativos** e osteonecrose.",
+   "opcoes": [
+    "joelhos degenerativos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "3767557eb829",
+   "origem": "autoral",
+   "trecho": "a do **medial** associa-se a joelhos degenerativos e a osteonecrose.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-1033-q",
    "questao": "trauma-1033",
    "area": "Trauma adulto",
@@ -16789,6 +18670,87 @@
    "prova": "TARO",
    "ano": 2023,
    "fonte": "ed03b16ae9e1"
+  },
+  {
+   "id": "fc-trauma-1048-co1",
+   "questao": "trauma-1048",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a curva aguda do enxerto do LCP ao sair do túnel tibial, que favorece seu alongamento?",
+   "resposta": "killer turn",
+   "explicacao": "**Killer turn:** curva aguda no túnel tibial; alonga o enxerto e gera frouxidão posterior residual.",
+   "opcoes": [
+    "killer turn"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "1240495423d3",
+   "origem": "autoral",
+   "trecho": "a curva do enxerto ao sair do túnel tibial (o **\"killer turn\"**)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1048-co2",
+   "questao": "trauma-1048",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual técnica de fixação tibial do LCP, direto na face posterior da tíbia, evita a curva aguda do enxerto?",
+   "resposta": "inlay",
+   "explicacao": "Técnica **inlay** tibial: evita o killer turn.",
+   "opcoes": [
+    "inlay"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "1240495423d3",
+   "origem": "autoral",
+   "trecho": "usar a técnica **inlay** tibial (fixação direta na face posterior da tíbia, evitando o killer turn)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1048-co3",
+   "questao": "trauma-1048",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual lesão associada, se não tratada, sobrecarrega o enxerto do LCP?",
+   "resposta": "canto posterolateral",
+   "explicacao": "Lesões do **canto posterolateral** não tratadas sobrecarregam o enxerto: tratar todas as lesões associadas.",
+   "opcoes": [
+    "canto posterolateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "1240495423d3",
+   "origem": "autoral",
+   "trecho": "**lesões do canto posterolateral não tratadas** sobrecarregam o enxerto.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-1048-q",
@@ -17195,6 +19157,93 @@
    "prova": "TARO",
    "ano": 2022,
    "fonte": "f1e596619ebf"
+  },
+  {
+   "id": "fc-trauma-1068-cl1",
+   "questao": "trauma-1068",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de LaPrade da lesão da raiz meniscal, qual tipo é a ruptura radial completa até 9 mm da inserção óssea?",
+   "resposta": "tipo II",
+   "explicacao": "**I:** parcial. **II:** radial completa até 9 mm. **III:** com alça de balde. **IV:** oblíqua complexa. **V:** avulsão óssea.",
+   "opcoes": [
+    "tipo I",
+    "tipo II",
+    "tipo III",
+    "tipo IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "72d23ac47e83",
+   "origem": "autoral",
+   "trecho": "tipo II é ruptura radial completa até 9 mm da inserção óssea",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1068-cl2",
+   "questao": "trauma-1068",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de LaPrade da raiz meniscal, qual tipo associa uma lesão em alça de balde?",
+   "resposta": "tipo III",
+   "explicacao": "**Tipo III:** lesão da raiz com **alça de balde**.",
+   "opcoes": [
+    "tipo I",
+    "tipo II",
+    "tipo III",
+    "tipo IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "72d23ac47e83",
+   "origem": "autoral",
+   "trecho": "tipo III associa uma lesão em alça de balde",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1068-cl3",
+   "questao": "trauma-1068",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de LaPrade da raiz meniscal, o que é o tipo I?",
+   "resposta": "lesão parcial",
+   "explicacao": "**Tipo I:** **lesão parcial** da raiz.",
+   "opcoes": [
+    "lesão parcial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "72d23ac47e83",
+   "origem": "autoral",
+   "trecho": "Tipo I é lesão parcial",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-1068-q",
@@ -18247,6 +20296,88 @@
    "fonte": "a757f495c35a"
   },
   {
+   "id": "fc-trauma-1109-cl1",
+   "questao": "trauma-1109",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da ponta do coronoide (O'Driscoll tipo 1), qual tamanho separa os subtipos 1 e 2?",
+   "resposta": "2 mm",
+   "explicacao": "**Ponta:** subtipo 1 até **2 mm**; subtipo 2 mais de 2 mm.",
+   "opcoes": [
+    "2 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f794afe0736a",
+   "origem": "autoral",
+   "trecho": "**tipo 1, ponta**: subtipos 1 (até 2 mm) e 2 (mais de 2 mm);",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1109-cl2",
+   "questao": "trauma-1109",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da base do coronoide (O'Driscoll tipo 3), qual subtipo tem fratura do olécrano associada?",
+   "resposta": "subtipo 2",
+   "explicacao": "**Base:** subtipo 1, corpo e base; **subtipo 2**, com fratura do olécrano.",
+   "opcoes": [
+    "subtipo 1",
+    "subtipo 2"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f794afe0736a",
+   "origem": "autoral",
+   "trecho": "**tipo 3, base**: subtipo 1 (corpo e base) e subtipo 2 (com fratura do olécrano).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1109-co1",
+   "questao": "trauma-1109",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento se insere no tubérculo sublime, a saliência na face medial do coronoide?",
+   "resposta": "feixe anterior do ligamento colateral medial",
+   "explicacao": "**Feixe anterior do colateral medial.** O O'Driscoll II.3 leva essa inserção e o freio medial ao valgo.",
+   "opcoes": [
+    "feixe anterior do ligamento colateral medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f794afe0736a",
+   "origem": "autoral",
+   "trecho": "onde se insere o **feixe anterior do ligamento colateral medial**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-1109-np",
    "questao": "trauma-1109",
    "area": "Trauma adulto",
@@ -18272,6 +20403,120 @@
    "prova": "TEOT",
    "ano": 2024,
    "fonte": "f794afe0736a"
+  },
+  {
+   "id": "fc-trauma-1194-cl1",
+   "questao": "trauma-1194",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo",
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Bado, para onde luxa a cabeça do rádio no tipo II, com a ulna angulada posteriormente?",
+   "resposta": "Posterior ou posterolateral",
+   "explicacao": "**Bado II:** luxação **posterior ou posterolateral**. I e IV: anterior; III: lateral ou anterolateral.",
+   "opcoes": [
+    "Anterior",
+    "Posterior ou posterolateral",
+    "Lateral ou anterolateral"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "cd3b62e98eab",
+   "origem": "autoral",
+   "trecho": "| II | Posterior ou posterolateral | Ulna angulada posteriormente |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1194-co1",
+   "questao": "trauma-1194",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo",
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão de Monteggia do adulto, qual é a chave do tratamento para que a cabeça do rádio reduza?",
+   "resposta": "redução anatômica e a fixação estável da ulna",
+   "explicacao": "**Redução anatômica e fixação estável da ulna** com placa; em geral a cabeça do rádio reduz espontaneamente.",
+   "opcoes": [
+    "redução anatômica e a fixação estável da ulna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "cd3b62e98eab",
+   "origem": "autoral",
+   "trecho": "Em adultos, a chave é a **redução anatômica e a fixação estável da ulna** (com placa)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1194-co2",
+   "questao": "trauma-1194",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo",
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Monteggia com ulna fixada e cabeça do rádio que não reduz: qual estrutura pode estar interposta?",
+   "resposta": "ligamento anular",
+   "explicacao": "Interposição do **ligamento anular**, que deve ser liberado e reparado.",
+   "opcoes": [
+    "ligamento anular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "cd3b62e98eab",
+   "origem": "autoral",
+   "trecho": "pode haver interposição do ligamento anular, que deve ser liberado e reparado.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1194-co3",
+   "questao": "trauma-1194",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtemas": [
+    "Fratura da cabeça do rádio e instabilidade do cotovelo",
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Monteggia crônica da criança, que osteotomia costuma ser necessária para reduzir a cabeça do rádio?",
+   "resposta": "osteotomia da ulna",
+   "explicacao": "**Osteotomia da ulna** (alongamento e angulação), com ou sem reconstrução do ligamento anular.",
+   "opcoes": [
+    "osteotomia da ulna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "cd3b62e98eab",
+   "origem": "autoral",
+   "trecho": "Frequentemente exige osteotomia da ulna (alongamento e angulação)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-1200-q",

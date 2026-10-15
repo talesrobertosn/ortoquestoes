@@ -1104,6 +1104,123 @@
    }
   },
   {
+   "id": "fc-quadril-0042-tb1",
+   "questao": "quadril-0042",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ramo do plexo lombar é o único que perfura o psoas e corre na sua face anterior?",
+   "resposta": "genitofemoral",
+   "explicacao": "**Genitofemoral** (L1 a L2): perfura o psoas; risco no acesso lateral transpsoas (XLIF).",
+   "opcoes": [
+    "genitofemoral",
+    "femoral",
+    "obturatório",
+    "cutâneo femoral lateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b501c0a54bcd",
+   "origem": "autoral",
+   "trecho": "| genitofemoral | L1 a L2 | **perfura o psoas**, corre na face anterior | risco no acesso lateral transpsoas (XLIF) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0042-tb2",
+   "questao": "quadril-0042",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ramo do plexo lombar emerge da borda medial do psoas?",
+   "resposta": "obturatório",
+   "explicacao": "**Obturatório** (L2 a L4): borda **medial** do psoas. Os demais saem pela borda lateral ou perfuram o músculo.",
+   "opcoes": [
+    "genitofemoral",
+    "femoral",
+    "obturatório",
+    "cutâneo femoral lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b501c0a54bcd",
+   "origem": "autoral",
+   "trecho": "| obturatório | L2 a L4 | borda **medial** do psoas | parafusos na parede medial |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0042-tb3",
+   "questao": "quadril-0042",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo do plexo lombar, que cruza o ilíaco até a EIAS, é o da meralgia parestésica?",
+   "resposta": "cutâneo femoral lateral",
+   "explicacao": "**Cutâneo femoral lateral** (L2 a L3): meralgia parestésica; risco na via anterior do quadril.",
+   "opcoes": [
+    "genitofemoral",
+    "femoral",
+    "obturatório",
+    "cutâneo femoral lateral"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b501c0a54bcd",
+   "origem": "autoral",
+   "trecho": "| cutâneo femoral lateral | L2 a L3 | borda lateral, cruza o ilíaco até a EIAS | meralgia parestésica, via anterior do quadril |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0042-tb4",
+   "questao": "quadril-0042",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo é lesado na retirada de enxerto da crista ilíaca anterior, com dormência suprapúbica e glútea lateral?",
+   "resposta": "ílio-hipogástrico",
+   "explicacao": "**Ílio-hipogástrico** (L1): o mais cranial; sensibilidade suprapúbica e da face lateral do glúteo.",
+   "opcoes": [
+    "ílio-hipogástrico"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b501c0a54bcd",
+   "origem": "autoral",
+   "trecho": "| ==ílio-hipogástrico== | L1 | borda lateral do psoas, **o mais cranial**, cruza o quadrado lombar até a crista | lesado na **retirada de enxerto da crista anterior** e em incisões ilioinguinais |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-quadril-0043-q",
    "questao": "quadril-0043",
    "area": "Quadril",
@@ -1251,6 +1368,62 @@
    }
   },
   {
+   "id": "fc-quadril-0048-co1",
+   "questao": "quadril-0048",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Vias de acesso ao quadril",
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nos acessos laterais do quadril, a que distância acima da ponta do trocânter fica o nervo glúteo superior?",
+   "resposta": "cerca de 5 cm",
+   "explicacao": "**Cerca de 5 cm:** não estender a divisão do glúteo médio além disso.",
+   "opcoes": [
+    "cerca de 5 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "43a8a5bd8cc7",
+   "origem": "autoral",
+   "trecho": "- **Nervo glúteo superior**, a cerca de 5 cm acima da ponta do trocânter",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0048-co2",
+   "questao": "quadril-0048",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Vias de acesso ao quadril",
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que marcha resulta da lesão do nervo glúteo superior num acesso lateral do quadril?",
+   "resposta": "Trendelenburg",
+   "explicacao": "Perda dos abdutores: marcha de **Trendelenburg**.",
+   "opcoes": [
+    "Trendelenburg"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "43a8a5bd8cc7",
+   "origem": "autoral",
+   "trecho": "- Lesão dele gera marcha de Trendelenburg.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-quadril-0048-q",
    "questao": "quadril-0048",
    "area": "Quadril",
@@ -1283,6 +1456,66 @@
     "largura": 372,
     "altura": 452
    }
+  },
+  {
+   "id": "fc-quadril-0048-tb1",
+   "questao": "quadril-0048",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Vias de acesso ao quadril",
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual acesso lateral do quadril divide glúteo médio e vasto lateral, com manguito contínuo sobre o trocânter e sem osteotomia?",
+   "resposta": "Hardinge",
+   "explicacao": "**Hardinge:** sem osteotomia. **McLauchlan:** osteotomia de lâmina do trocânter. **Charnley:** osteotomia completa.",
+   "opcoes": [
+    "Hardinge",
+    "McLauchlan",
+    "Charnley"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "43a8a5bd8cc7",
+   "origem": "autoral",
+   "trecho": "| Hardinge | divide glúteo médio e vasto lateral, manguito contínuo sobre o trocânter, sem osteotomia |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0048-tb2",
+   "questao": "quadril-0048",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Vias de acesso ao quadril",
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual acesso do quadril usa a osteotomia trocantérica completa clássica?",
+   "resposta": "Charnley",
+   "explicacao": "**Charnley:** osteotomia trocantérica completa. A reinserção osso com osso consolida melhor, mas pode haver pseudartrose do fragmento.",
+   "opcoes": [
+    "Hardinge",
+    "McLauchlan",
+    "Charnley"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "43a8a5bd8cc7",
+   "origem": "autoral",
+   "trecho": "| Charnley | osteotomia trocantérica completa (clássica) |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-quadril-0049-q",
@@ -1841,6 +2074,142 @@
    "fonte": "8c7ebeef602e"
   },
   {
+   "id": "fc-quadril-0080-co1",
+   "questao": "quadril-0080",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Parafusos acetabulares em qual quadrante põem o nervo obturatório em risco?",
+   "resposta": "ântero-inferior",
+   "explicacao": "Quadrante **ântero-inferior**; também cimento ou afastadores na parede medial.",
+   "opcoes": [
+    "ântero-inferior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "4bede1001e3f",
+   "origem": "autoral",
+   "trecho": "- Parafusos acetabulares no quadrante **ântero-inferior**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0080-tb1",
+   "questao": "quadril-0080",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O nervo pudendo sai da pelve pela incisura isquiática maior. Por qual incisura ele volta para chegar ao períneo?",
+   "resposta": "menor",
+   "explicacao": "Sai pela **maior**, volta pela **menor**, contornando a espinha isquiática.",
+   "opcoes": [
+    "menor",
+    "maior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "4bede1001e3f",
+   "origem": "autoral",
+   "trecho": "| pudendo | sai pela incisura isquiática maior, volta pela menor, vai ao períneo |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0081-co1",
+   "questao": "quadril-0081",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a única parte dos isquiotibiais inervada pela divisão fibular do ciático?",
+   "resposta": "Cabeça curta",
+   "explicacao": "**Cabeça curta do bíceps femoral** (linha áspera): divisão **fibular**. Todo o resto é da divisão tibial.",
+   "opcoes": [
+    "Cabeça curta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "285ac15df482",
+   "origem": "autoral",
+   "trecho": "- **Cabeça curta:** linha áspera; inervada pela divisão **fibular**, a única parte dos isquiotibiais com essa inervação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0081-co2",
+   "questao": "quadril-0081",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Avulsão da cabeça da fíbula na radiografia (sinal do arco) indica lesão de qual região do joelho?",
+   "resposta": "canto posterolateral",
+   "explicacao": "**Sinal do arco:** avulsão da cabeça da fíbula, lesão do **canto posterolateral**.",
+   "opcoes": [
+    "canto posterolateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "285ac15df482",
+   "origem": "autoral",
+   "trecho": "- Avulsão da cabeça da fíbula (\"sinal do arco\") indica lesão do canto posterolateral.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0081-co3",
+   "questao": "quadril-0081",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo corre na borda posteromedial do tendão do bíceps femoral e contorna o colo da fíbula?",
+   "resposta": "nervo fibular comum",
+   "explicacao": "O **fibular comum**: risco nas lesões do canto posterolateral e nas cirurgias da região.",
+   "opcoes": [
+    "nervo fibular comum"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "285ac15df482",
+   "origem": "autoral",
+   "trecho": "- O **nervo fibular comum** corre na borda posteromedial do tendão do bíceps e contorna o colo da fíbula",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-quadril-0081-q",
    "questao": "quadril-0081",
    "area": "Quadril",
@@ -1874,6 +2243,117 @@
    }
   },
   {
+   "id": "fc-quadril-0081-tb1",
+   "questao": "quadril-0081",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na face lateral do joelho, onde se insere a banda iliotibial?",
+   "resposta": "tubérculo de Gerdy",
+   "explicacao": "**Tubérculo de Gerdy**. Bíceps e colateral lateral: cabeça da fíbula.",
+   "opcoes": [
+    "tubérculo de Gerdy",
+    "cabeça da fíbula",
+    "tuberosidade da tíbia"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "285ac15df482",
+   "origem": "autoral",
+   "trecho": "| banda iliotibial | **tubérculo de Gerdy** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0082-co1",
+   "questao": "quadril-0082",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama o choque da EIAI proeminente contra o colo femoral na flexão do quadril?",
+   "resposta": "impacto subespinhal",
+   "explicacao": "**Impacto subespinhal:** EIAI proeminente batendo no colo em flexão.",
+   "opcoes": [
+    "impacto subespinhal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "919557dae399",
+   "origem": "autoral",
+   "trecho": "- EIAI proeminente pode causar **impacto subespinhal**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0082-co2",
+   "questao": "quadril-0082",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se origina o vasto medial?",
+   "resposta": "linha intertrocantérica e linha áspera medial",
+   "explicacao": "**Vasto medial:** linha intertrocantérica e linha áspera medial. Lateral: trocânter maior e linha áspera lateral.",
+   "opcoes": [
+    "linha intertrocantérica e linha áspera medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "919557dae399",
+   "origem": "autoral",
+   "trecho": "- **Medial:** linha intertrocantérica e linha áspera medial.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0082-pc1",
+   "questao": "quadril-0082",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A cabeça direta do reto femoral nasce na EIAI. Onde nasce a cabeça refletida?",
+   "resposta": "sulco supra-acetabular",
+   "explicacao": "Direta: **EIAI**. Refletida: **sulco supra-acetabular**, acima do rebordo.",
+   "opcoes": [
+    "sulco supra-acetabular",
+    "espinha ilíaca anterossuperior (EIAS)"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "919557dae399",
+   "origem": "autoral",
+   "trecho": "| sulco supra-acetabular | reto femoral (cabeça refletida) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-quadril-0082-q",
    "questao": "quadril-0082",
    "area": "Quadril",
@@ -1905,6 +2385,252 @@
     "largura": 464,
     "altura": 405
    }
+  },
+  {
+   "id": "fc-quadril-0082-tb1",
+   "questao": "quadril-0082",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais músculos se originam na espinha ilíaca anterossuperior (EIAS)?",
+   "resposta": "sartório e tensor da fáscia lata",
+   "explicacao": "EIAS: **sartório e tensor da fáscia lata**. EIAI: reto femoral.",
+   "opcoes": [
+    "sartório e tensor da fáscia lata"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "919557dae399",
+   "origem": "autoral",
+   "trecho": "| espinha ilíaca anterossuperior (EIAS) | **sartório** e tensor da fáscia lata |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0084-co1",
+   "questao": "quadril-0084",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão do anel pélvico, a avulsão da espinha isquiática indica lesão do sacroespinal e que tipo de instabilidade?",
+   "resposta": "instabilidade rotacional",
+   "explicacao": "Avulsão da espinha isquiática ou da ponta do sacro: lesão do sacroespinal e **instabilidade rotacional**.",
+   "opcoes": [
+    "instabilidade rotacional"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "91b316fa4758",
+   "origem": "autoral",
+   "trecho": "a avulsão da espinha isquiática ou da ponta do sacro indica lesão do sacroespinal e **instabilidade rotacional**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0084-pc1",
+   "questao": "quadril-0084",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento sacroespinal vai à espinha isquiática. Qual ligamento, mais superficial e largo, vai à tuberosidade isquiática?",
+   "resposta": "sacrotuberal",
+   "explicacao": "**Sacrotuberal:** à tuberosidade, fecha o forame isquiático menor. **Sacroespinal:** à espinha, separa os forames maior e menor.",
+   "opcoes": [
+    "sacrotuberal",
+    "sacroespinal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "91b316fa4758",
+   "origem": "autoral",
+   "trecho": "| sacrotuberal | sacro, cóccix e EIPI → **tuberosidade isquiática** | fecha o forame isquiático menor; mais superficial e largo |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0084-tb1",
+   "questao": "quadril-0084",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais estruturas passam pelo forame isquiático maior acima do piriforme?",
+   "resposta": "vasos e nervo glúteos superiores",
+   "explicacao": "**Acima:** só os **vasos e nervo glúteos superiores**. Abaixo: ciático, glúteos inferiores, pudendo e outros.",
+   "opcoes": [
+    "vasos e nervo glúteos superiores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "91b316fa4758",
+   "origem": "autoral",
+   "trecho": "| vasos e nervo glúteos superiores | ciático, glúteos inferiores, pudendo, cutâneo femoral posterior, nervo do obturador interno | tendão do obturador interno, pudendo e vasos pudendos internos (voltando) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0084-tb2",
+   "questao": "quadril-0084",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual tendão passa pelo forame isquiático menor, junto do pudendo que volta?",
+   "resposta": "obturador interno",
+   "explicacao": "Forame menor: **tendão do obturador interno**, pudendo e vasos pudendos internos.",
+   "opcoes": [
+    "obturador interno"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "91b316fa4758",
+   "origem": "autoral",
+   "trecho": "tendão do obturador interno, pudendo e vasos pudendos internos (voltando)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0085-co1",
+   "questao": "quadril-0085",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual teste avalia a retração do reto femoral?",
+   "resposta": "Ely",
+   "explicacao": "**Teste de Ely:** retração do reto femoral, o componente biarticular do quadríceps.",
+   "opcoes": [
+    "Ely"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e45d8a28518c",
+   "origem": "autoral",
+   "trecho": "- Teste de **Ely** avalia sua retração.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0087-tb1",
+   "questao": "quadril-0087",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento capsular posterior do quadril limita a rotação interna?",
+   "resposta": "isquiofemoral",
+   "explicacao": "**Isquiofemoral:** posterior, limita rotação interna. **Iliofemoral:** extensão e rotação externa. **Pubofemoral:** abdução.",
+   "opcoes": [
+    "isquiofemoral",
+    "iliofemoral",
+    "pubofemoral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0ca664015e60",
+   "origem": "autoral",
+   "trecho": "| isquiofemoral | posterior | rotação interna |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0087-tb2",
+   "questao": "quadril-0087",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o epônimo do ligamento iliofemoral, o grande reforço anterior e superior da cápsula do quadril?",
+   "resposta": "Y de Bigelow",
+   "explicacao": "**Y de Bigelow:** limita extensão e rotação externa.",
+   "opcoes": [
+    "Y de Bigelow"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0ca664015e60",
+   "origem": "autoral",
+   "trecho": "| iliofemoral (Y de Bigelow) | anterior, superior | extensão, rotação externa |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0087-tb3",
+   "questao": "quadril-0087",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual movimento é limitado pela zona orbicular, circunferencial no colo femoral?",
+   "resposta": "distração",
+   "explicacao": "**Zona orbicular:** fibras circulares no colo que limitam a **distração**.",
+   "opcoes": [
+    "distração"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0ca664015e60",
+   "origem": "autoral",
+   "trecho": "| zona orbicular | circunferencial no colo | distração |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-quadril-0092-q",
@@ -2218,6 +2944,89 @@
    "fonte": "a34cdc7e6cd5"
   },
   {
+   "id": "fc-quadril-0130-co1",
+   "questao": "quadril-0130",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na face posterior da coxa, qual estrutura corre entre os isquiotibiais mediais e o bíceps femoral?",
+   "resposta": "nervo isquiático",
+   "explicacao": "O **nervo isquiático**: medial a ele, semitendíneo e semimembranáceo; lateral, o bíceps.",
+   "opcoes": [
+    "nervo isquiático"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "03f9abd55067",
+   "origem": "autoral",
+   "trecho": "- O nervo isquiático corre entre os grupos medial (semis) e lateral (bíceps).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0130-tb1",
+   "questao": "quadril-0130",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se insere o semimembranáceo, com cinco expansões?",
+   "resposta": "côndilo tibial posteromedial",
+   "explicacao": "**Côndilo tibial posteromedial**, com 5 expansões; estabiliza o canto posteromedial. O semitendíneo vai à pata de ganso.",
+   "opcoes": [
+    "côndilo tibial posteromedial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "03f9abd55067",
+   "origem": "autoral",
+   "trecho": "| semimembranáceo | tuberosidade isquiática (lateral e mais alta) | côndilo tibial posteromedial (5 expansões) | divisão tibial |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0131-co1",
+   "questao": "quadril-0131",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual músculo separa os ramos anterior e posterior do nervo obturatório?",
+   "resposta": "adutor curto",
+   "explicacao": "O **adutor curto**: o ramo anterior passa à frente, o posterior atrás.",
+   "opcoes": [
+    "adutor curto",
+    "adutor longo",
+    "adutor magno"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "8296b4225ae3",
+   "origem": "autoral",
+   "trecho": "- O **adutor curto** separa os ramos **anterior** (à frente) e **posterior** (atrás).",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-quadril-0131-q",
    "questao": "quadril-0131",
    "area": "Quadril",
@@ -2249,6 +3058,89 @@
     "largura": 337,
     "altura": 568
    }
+  },
+  {
+   "id": "fc-quadril-0132-co1",
+   "questao": "quadril-0132",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na maioria das pessoas (cerca de 85 a 90%), como o nervo isquiático passa em relação ao piriforme?",
+   "resposta": "inteiro abaixo",
+   "explicacao": "**Inteiro abaixo** do piriforme. A variante mais comum é a divisão fibular através do músculo (Beaton e Anson).",
+   "opcoes": [
+    "inteiro abaixo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "fe0850b24699",
+   "origem": "autoral",
+   "trecho": "- Na maioria (cerca de 85 a 90%), o nervo passa **inteiro abaixo** do piriforme.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0132-co2",
+   "questao": "quadril-0132",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pela classificação de Beaton e Anson, qual é a variante mais comum do nervo isquiático no piriforme?",
+   "resposta": "divisão fibular através do músculo",
+   "explicacao": "Variante mais comum: **divisão fibular através do piriforme**.",
+   "opcoes": [
+    "divisão fibular através do músculo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "fe0850b24699",
+   "origem": "autoral",
+   "trecho": "- Variante mais comum: divisão fibular **através** do músculo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0132-co3",
+   "questao": "quadril-0132",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual rotador curto do quadril fica entre o piriforme e o obturador interno?",
+   "resposta": "gêmeo superior",
+   "explicacao": "De cima para baixo: piriforme, **gêmeo superior**, obturador interno, gêmeo inferior, quadrado femoral.",
+   "opcoes": [
+    "gêmeo superior",
+    "gêmeo inferior",
+    "quadrado femoral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "fe0850b24699",
+   "origem": "autoral",
+   "trecho": "- O gêmeo superior é o pequeno músculo entre o piriforme e o obturador interno.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-quadril-0132-q",
@@ -2284,6 +3176,89 @@
    }
   },
   {
+   "id": "fc-quadril-0133-co1",
+   "questao": "quadril-0133",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o conteúdo do triângulo femoral, de lateral para medial?",
+   "resposta": "nervo, artéria, veia",
+   "explicacao": "**NAV:** nervo, artéria, veia. Limites: ligamento inguinal, sartório e adutor longo.",
+   "opcoes": [
+    "nervo, artéria, veia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "1e90591e0df1",
+   "origem": "autoral",
+   "trecho": "- Conteúdo, de lateral para medial: **nervo, artéria, veia** (NAV).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0135-co1",
+   "questao": "quadril-0135",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se insere o adutor longo?",
+   "resposta": "terço médio da linha áspera",
+   "explicacao": "Do corpo do púbis ao **terço médio da linha áspera**; borda medial do triângulo femoral.",
+   "opcoes": [
+    "terço médio da linha áspera"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "e77a7f162b05",
+   "origem": "autoral",
+   "trecho": "se insere no terço médio da **linha áspera**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0135-pc1",
+   "questao": "quadril-0135",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A porção adutora do adutor magno é inervada pelo obturatório. E a porção isquiotibial, que nasce no ísquio?",
+   "resposta": "ciático",
+   "explicacao": "Inervação dupla: porção adutora pelo **obturatório**; porção isquiotibial pelo **ciático** (tibial).",
+   "opcoes": [
+    "ciático",
+    "obturatório",
+    "femoral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "e77a7f162b05",
+   "origem": "autoral",
+   "trecho": "| **Adutor magno** | **Duplo**: porção adutora pelo **obturatório**; porção isquiotibial (do ísquio) pelo **ciático** (tibial) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-quadril-0135-q",
    "questao": "quadril-0135",
    "area": "Quadril",
@@ -2315,6 +3290,145 @@
     "largura": 348,
     "altura": 683
    }
+  },
+  {
+   "id": "fc-quadril-0135-tb1",
+   "questao": "quadril-0135",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual músculo do compartimento medial da coxa é a exceção inervada pelo femoral?",
+   "resposta": "Pectíneo",
+   "explicacao": "**Pectíneo:** femoral (às vezes também o obturatório). Os demais adutores são do obturatório.",
+   "opcoes": [
+    "Pectíneo",
+    "Grácil",
+    "Adutor curto"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "e77a7f162b05",
+   "origem": "autoral",
+   "trecho": "| **Pectíneo** | **Femoral** (às vezes também o obturatório): a exceção do grupo |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0137-co1",
+   "questao": "quadril-0137",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais três tendões formam a pata de ganso, de anterior para posterior?",
+   "resposta": "sartório, do grácil e do semitendíneo",
+   "explicacao": "**Sartório, grácil e semitendíneo** (SGT, \"Sargento\"), na face anteromedial da tíbia proximal.",
+   "opcoes": [
+    "sartório, do grácil e do semitendíneo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0d6992d399f1",
+   "origem": "autoral",
+   "trecho": "do **sartório**, do **grácil** e do **semitendíneo** (de anterior para posterior e de cima para baixo: \"SGT\", Sargento)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0137-co2",
+   "questao": "quadril-0137",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais dois tendões flexores são os enxertos mais usados na reconstrução do LCA?",
+   "resposta": "semitendíneo e o grácil",
+   "explicacao": "O **semitendíneo e o grácil**, retirados na pata de ganso com extrator de tendão.",
+   "opcoes": [
+    "semitendíneo e o grácil"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0d6992d399f1",
+   "origem": "autoral",
+   "trecho": "O **semitendíneo** e o **grácil** são os enxertos mais usados na **reconstrução do ligamento cruzado anterior**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0139-co1",
+   "questao": "quadril-0139",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Pubalgia e osteíte púbica",
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se insere a porção isquiática do adutor magno, inervada pelo tibial?",
+   "resposta": "tubérculo adutor",
+   "explicacao": "Porção isquiática: **tubérculo adutor**. Porção adutora: linha áspera.",
+   "opcoes": [
+    "tubérculo adutor"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "112fd4462b7d",
+   "origem": "autoral",
+   "trecho": "- **isquiática** (\"isquiotibial\"), inervada pelo tibial, insere-se no **tubérculo adutor**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0139-co2",
+   "questao": "quadril-0139",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Pubalgia e osteíte púbica",
+    "Anatomia do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Entre as duas porções do adutor magno, por qual abertura os vasos femorais passam a poplíteos?",
+   "resposta": "hiato dos adutores",
+   "explicacao": "O **hiato dos adutores**, onde a artéria femoral vira poplítea.",
+   "opcoes": [
+    "hiato dos adutores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "112fd4462b7d",
+   "origem": "autoral",
+   "trecho": "- Entre elas, o **hiato dos adutores**, por onde os vasos femorais passam a poplíteos.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-quadril-0139-q",
@@ -2349,6 +3463,34 @@
     "largura": 460,
     "altura": 477
    }
+  },
+  {
+   "id": "fc-quadril-0139-tb1",
+   "questao": "quadril-0139",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Anatomia do quadril",
+   "subtemas": [
+    "Pubalgia e osteíte púbica",
+    "Anatomia do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se origina o pectíneo, o mais superior e lateral dos adutores?",
+   "resposta": "linha pectínea do púbis",
+   "explicacao": "**Linha pectínea do púbis**. Adutor longo: corpo do púbis. Magno: ramo isquiopúbico até a tuberosidade.",
+   "opcoes": [
+    "linha pectínea do púbis"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "112fd4462b7d",
+   "origem": "autoral",
+   "trecho": "| pectíneo | linha pectínea do púbis | mais superior e lateral |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-quadril-0140-q",

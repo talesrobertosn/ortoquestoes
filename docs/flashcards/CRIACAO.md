@@ -39,7 +39,9 @@ flashcard veio e tratá-las no cronograma. Agora:
   As regras de escrita são as mesmas: trecho literal do comentário, nada de fora.
 - **Primeiros lotes (15/10/2026):** anatomia do antebraço (Netter, Anatomia da mão e punho)
   e coronoide e cabeça do rádio (Fratura da cabeça do rádio e instabilidade do cotovelo),
-  os dois primeiros assuntos da fila com questões de simulado.
+  os dois primeiros assuntos da fila com questões de simulado. O lote 3
+  (`2026-10-15-simulados-ombro-1.json`) cobriu as 24 questões de simulado de Anatomia do ombro
+  (ombro, axila e braço).
 
 ## Rotina
 
