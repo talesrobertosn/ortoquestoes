@@ -351,3 +351,6 @@
 @media (max-width: 40rem) { .tr-barra__salvar { display: none; } }
 /* "Ajustar mais" e a trilha rolam até o passo sem escondê-lo sob o cabeçalho fixo. */
 .treinar-pagina .tr-etapa { scroll-margin-top: 5.5rem; }
+
+/* atalhos diretos dos flashcards (15/10/2026): estudar ou jogar, sem passar pela escolha */
+.tr-heroi__flashcards { display: flex; flex-wrap: wrap; gap: 0 1rem; }

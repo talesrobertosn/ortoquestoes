@@ -23,6 +23,7 @@ import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
 import { registrarEstudo } from '../aprendizagem'
+import { aplicarRotaDoCronograma } from '../rotaCronograma'
 import { sairDoJogo } from '../fundo'
 import { contarSessaoTerminada } from '../opiniao'
 import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, QUEIMADURA, VENENO, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
@@ -222,7 +223,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const faixaTela = usarFaixa()
 
   const [modo, definirModo] = useState<'batalha' | 'estudo'>(abrirEstudo ? 'estudo' : 'batalha')
-  const [partida, definirPartida] = useState<Partida>(() => partidaSalva(modoJogo) ?? (modoJogo === 'torre' ? patamarSalvo() : null) ?? comCorrida(motor.novaPartida(sementeNova(), { modo: modoJogo, talentos: lerAltar().talentos, nivel: nivelEscolhido() }).estado))
+  // aplicarRotaDoCronograma: "Seguir o cronograma" na Entrada (rotaCronograma.ts); sem rota guardada, nada muda
+  const [partida, definirPartida] = useState<Partida>(() => aplicarRotaDoCronograma(partidaSalva(modoJogo) ?? (modoJogo === 'torre' ? patamarSalvo() : null) ?? comCorrida(motor.novaPartida(sementeNova(), { modo: modoJogo, talentos: lerAltar().talentos, nivel: nivelEscolhido() }).estado)))
   const partidaRef = useRef(partida)
   const [mostrado, definirMostrado] = useState<Mostrado>(() => ({
     vida: partida.vida, vidaInimigo: partida.inimigo.vida, revelada: partida.fase !== 'pergunta', resultado: null, marcadas: null, inimigoCaiu: false, heroiCaiu: false,

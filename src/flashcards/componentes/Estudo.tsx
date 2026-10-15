@@ -17,6 +17,10 @@ import { recurso } from '../../config'
 
 import { diarioBiblioteca, type PassoBiblioteca } from '../biblioteca/sessao'
 import { DiarioBiblioteca, EstanteDaSessao } from './DiarioBiblioteca'
+import { CHAVE_PLANO, calcularCronograma, migrarPlano, rotuloTempo, sessaoDoCronograma, type Cronograma } from '../cronograma'
+import { ehAcerto, horaDaSessao, HORAS_BIBLIOTECA } from '../biblioteca/horas'
+import { FundoBiblioteca } from './FundoBiblioteca'
+import '../../estilos/paginas/BibliotecaEstudo.css'
 
 type Avaliacao = 'errei' | 'hesitei' | 'sabia'
 
@@ -53,7 +57,17 @@ const TIPOS = ['Na prova', 'Relâmpago', 'Imagem', 'Anatomia'] as const
 export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: { primeiro: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoHumor?: (h: Humor | null) => void; aoTranquilo?: (v: boolean) => void }) {
   const cartas = todasAsCartas()
   const [registros, definirRegistros] = useState(() => ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}))
-  const [sessao, definirSessao] = useState<{ titulo: string; ids: string[] } | null>(null)
+  const [sessao, definirSessaoBruta] = useState<{ titulo: string; ids: string[]; chave: number; cronograma?: boolean } | null>(null)
+  const definirSessao = useCallback((s: { titulo: string; ids: string[]; cronograma?: boolean } | null) => definirSessaoBruta(s && { ...s, chave: Date.now() + Math.random() }), [])
+  // Cronograma dos flashcards (15/10/2026): a sessão de hoje é exatamente a mesma da central e da página do cronograma.
+  const crono = useMemo<Cronograma | null>(() => (cartas.length < 50 ? null : calcularCronograma(migrarPlano(ler<unknown>(CHAVE_PLANO, null)), cartas, registros)), [cartas, registros])
+  const seguirCronograma = useCallback((extra = 0) => {
+    if (cartas.length < 50) return
+    // sempre dos registros mais novos: no fim de uma sessão, "adiantar" já sabe o que foi feito
+    const agora = calcularCronograma(migrarPlano(ler<unknown>(CHAVE_PLANO, null)), cartas, ler(CHAVE_REGISTROS, {}))
+    const ids = sessaoDoCronograma(agora, extra || (agora.sessaoHoje.length ? 0 : agora.plano.ritmo))
+    if (ids.length) { tocar('abrir'); definirSessao({ titulo: agora.sessaoHoje.length && !extra ? 'Cronograma: sessão de hoje' : 'Cronograma: adiantando', ids, cronograma: true }) }
+  }, [cartas, definirSessao])
   const [tamanho, definirTamanho] = useState<number | 'pendentes'>(20)
   const [tipos, definirTipos] = useState<string[]>([])
   const [dificuldade, definirDificuldade] = useState<number | null>(null)
@@ -115,26 +129,25 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
     const n = Math.max(1, Math.min(200, Number(q.get('n')) || 20))
     const base = categorias.find((c) => c.id === (id === 'plano' ? 'pendentes' : id))
     if (!base) return
-    const naArea = (c: Flashcard) => !areas.length || areas.includes(c.areaId ?? c.area ?? '')
-    let ids: string[]
     if (id === 'plano') {
-      // revisões vencidas das áreas do plano primeiro, depois os nunca estudados, até a meta do dia
-      const venc = cartas.filter((c) => naArea(c) && pendente(registros[c.id])).map((c) => c.id)
-      const novos = cartas.filter((c) => naArea(c) && !registros[c.id]).map((c) => c.id)
-      ids = [...venc, ...novos].slice(0, n)
-    } else {
-      ids = montar({ ...base, filtro: (c, r) => base.filtro(c, r) && naArea(c) }, n)
+      // a sessão de hoje do cronograma (revisões primeiro, depois os novos da fila); &extra=N adianta
+      seguirCronograma(Math.max(0, Math.min(200, Number(q.get('extra')) || 0)))
+      return
     }
-    if (ids.length) definirSessao({ titulo: id === 'plano' ? 'Sessão de hoje do cronograma' : base.nome, ids })
-  }, [linkUsado, cartas, categorias, montar, registros])
+    const assunto = q.get('assunto')
+    const naArea = (c: Flashcard) => (!areas.length || areas.includes(c.areaId ?? c.area ?? '')) && (!assunto || c.assunto === assunto)
+    const ids = montar({ ...base, filtro: (c, r) => base.filtro(c, r) && naArea(c) }, n)
+    if (ids.length) definirSessao({ titulo: assunto ?? base.nome, ids })
+  }, [linkUsado, cartas, categorias, montar, seguirCronograma, definirSessao])
 
   // Vindo da Batalha: os flashcards que derrubaram você abrem uma sessão na hora.
   useEffect(() => {
-    if (primeiro.length) definirSessao({ titulo: 'Os que te derrubaram na Batalha', ids: [...new Set(primeiro)].filter((id) => cartas.some((c) => c.id === id)) })
-  }, [primeiro, cartas])
+    if (primeiro.length) definirSessao({ titulo: 'Os que te derrubaram na Batalha', ids: [...new Set(primeiro)].filter((id) => todasAsCartas().some((c) => c.id === id)) })
+  }, [primeiro, definirSessao])
 
   if (sessao && sessao.ids.length) {
-    return <Sessao titulo={sessao.titulo} ids={sessao.ids} aoAmpliar={aoAmpliar} reduzido={reduzido} aoHumor={aoHumor} aoTranquilo={aoTranquilo}
+    return <Sessao key={sessao.chave} titulo={sessao.titulo} ids={sessao.ids} aoAmpliar={aoAmpliar} reduzido={reduzido} aoHumor={aoHumor} aoTranquilo={aoTranquilo}
+      cronograma={sessao.cronograma} aoAdiantar={(n) => { definirRegistros(ler(CHAVE_REGISTROS, {})); seguirCronograma(n) }}
       aoTerminar={() => { definirRegistros(ler(CHAVE_REGISTROS, {})); definirSessao(null) }} />
   }
 
@@ -162,6 +175,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
           </div>
         </div>
       </header>
+      {crono && <CartaoCronogramaEstudo c={crono} aoSeguir={seguirCronograma} />}
       <div className="fc-categorias">
         {resumo.map(({ cat, total, estudados, dominio, pendentes }) => (
           <button key={cat.id} type="button" className="fc-categoria" style={{ ['--cor' as string]: cat.cor }} disabled={!total}
@@ -184,8 +198,36 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
   )
 }
 
+/** "Seguir cronograma" no alto da Biblioteca: a sessão de hoje em um toque. */
+function CartaoCronogramaEstudo({ c, aoSeguir }: { c: Cronograma; aoSeguir: (extra?: number) => void }) {
+  const hoje = c.semana[0].assuntos
+  const revisoes = c.sessaoHoje.length - c.novosHoje.length
+  const proximos = c.assuntos.find((a) => a.novos.length)
+  const total = c.sessaoHoje.length
+  const partes = [revisoes ? `${revisoes} ${revisoes === 1 ? 'revisão' : 'revisões'}` : '', c.novosHoje.length ? `${c.novosHoje.length} ${c.novosHoje.length === 1 ? 'novo' : 'novos'}` : ''].filter(Boolean)
+  if (c.concluido) return null
+  return (
+    <section className="fc-crono-estudo" aria-labelledby="fc-crono-estudo">
+      <span className="fc-crono-estudo__icone" aria-hidden="true"><Sprite nome="pergaminho" /></span>
+      <div className="fc-crono-estudo__texto">
+        <h3 id="fc-crono-estudo">{total ? 'Seguir cronograma' : c.ehDiaDeEstudo ? 'Meta de hoje feita' : 'Hoje é folga no cronograma'}</h3>
+        <p>
+          {total ? <>Hoje: <strong>{hoje.map((f) => f.assunto).join(' · ') || 'revisões'}</strong> · {partes.join(' + ')} · {rotuloTempo(total)}</>
+            : <>Quer adiantar? Os próximos são de <strong>{proximos?.assunto ?? 'todos os assuntos'}</strong>. Tudo o que passar da meta adianta o plano.</>}
+        </p>
+        <a className="fc-crono-estudo__ver" href={href('/flashcards/cronograma')}>Ver o cronograma</a>
+      </div>
+      {(total > 0 || c.novosRestantes > 0) && (
+        <button type="button" className="fc-principal fc-crono-estudo__botao pronto" onClick={() => aoSeguir(total ? 0 : c.plano.ritmo)}>
+          <span className="fc-principal__texto"><span>{total ? `Começar · ${total}` : `Adiantar ${Math.min(c.plano.ritmo, c.novosRestantes)}`}</span><small>{total ? 'a sessão de hoje' : 'do próximo dia'}</small></span>
+        </button>
+      )}
+    </section>
+  )
+}
+
 /** Sessão de estudo: vira o flashcard e diz como foi. */
-function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranquilo }: { titulo: string; ids: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoTerminar: () => void; aoHumor?: (h: Humor | null) => void; aoTranquilo?: (v: boolean) => void }) {
+function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranquilo, cronograma, aoAdiantar }: { titulo: string; ids: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean; aoTerminar: () => void; aoHumor?: (h: Humor | null) => void; aoTranquilo?: (v: boolean) => void; cronograma?: boolean; aoAdiantar?: (n: number) => void }) {
   const porId = useMemo(() => new Map(todasAsCartas().map((c) => [c.id, c])), [])
   const fila = useMemo(() => ids.filter((id) => porId.has(id)), [ids, porId])
   const [pos, definirPos] = useState(0)
@@ -193,6 +235,9 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
   const [virada, definirVirada] = useState(false)
   const [feitos, definirFeitos] = useState<Record<Avaliacao, number>>({ errei: 0, hesitei: 0, sabia: 0 })
   const acabou = pos >= fila.length
+  // A hora da Biblioteca anda com os acertos: amanhecer -> dia -> tarde -> pôr do sol -> noite (biblioteca/horas.ts)
+  const [acertos, definirAcertos] = useState(0)
+  const hora = horaDaSessao(acertos, fila.length)
   // Humor da Biblioteca: a sequência de acertos, erros e hesitações muda o clima da sala
   const [serie, definirSerie] = useState(SERIE_VAZIA)
   const [melhor, definirMelhor] = useState(0)
@@ -210,6 +255,13 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
   const nome = String(meta?.nome ?? '').trim().split(/\s+/)[0] || 'Você'
   const nomeMostrado = nome !== 'Você' && meta?.situacao === 'ortopedista' ? `Dr. ${nome}` : nome
   const carta = porId.get(fila[Math.min(pos, fila.length - 1)])!
+  // pré-carrega a imagem dos dois próximos flashcards: a figura chega pronta, sem pulo
+  useEffect(() => {
+    for (const id of fila.slice(pos + 1, pos + 3)) {
+      const img = porId.get(id)?.imagem
+      if (img) { const i = new Image(); i.decoding = 'async'; i.src = recurso('imagens/' + img.arquivo) }
+    }
+  }, [pos, fila, porId])
 
   // Alternativas no Estudo (13/10/2026): responder antes de virar, com correção na hora.
   // Opcional (lembrado no aparelho); só aparece quando o flashcard tem alternativas boas.
@@ -229,6 +281,9 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
   // dois flashcards grátis (duas chamadas, cada uma com chave nova).
   const virando = useRef(false)
   const chavesVirar = useRef(new Map<string, string>())
+  // Quem o servidor já disse que não tem limite vira na hora: a contagem segue igual (mesma chave), em segundo plano.
+  const semLimite = useRef(false)
+  const [validando, definirValidando] = useState(false)
   const virar = useCallback(async () => {
     if (virada || acabou || virando.current) return
     if (FLASHCARDS_NO_SERVIDOR) {
@@ -236,10 +291,16 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
       const vez = `${pos}:${carta.id}`
       const chave = chavesVirar.current.get(vez) ?? novaChave()
       chavesVirar.current.set(vez, chave)
-      virando.current = true
-      let r: LimiteFlashcard
-      try { r = await autorizarFlashcard(carta.id, chave) } finally { virando.current = false }
-      if (!r.permitido) { definirBloqueio(r); return }
+      if (semLimite.current) {
+        void autorizarFlashcard(carta.id, chave).then((r) => { if (!r.permitido && !r.falha) { semLimite.current = false; definirBloqueio(r) } else if (!r.ilimitado) semLimite.current = false })
+      } else {
+        virando.current = true
+        const espera = window.setTimeout(() => definirValidando(true), 250)
+        let r: LimiteFlashcard
+        try { r = await autorizarFlashcard(carta.id, chave) } finally { virando.current = false; window.clearTimeout(espera); definirValidando(false) }
+        if (!r.permitido) { definirBloqueio(r); return }
+        semLimite.current = r.ilimitado
+      }
     }
     definirVirada(true)
     definirSerie((v) => (v.parado ? { ...v, parado: false } : v))
@@ -265,7 +326,9 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
     if (!virada || acabou || ultimoAvaliado.current === pos) return
     ultimoAvaliado.current = pos
     // um evento por flashcard desta sessão: clique duplo ou tecla repetida não contam de novo
-    registrarEstudo({ chave: `${sessao}:${pos}:${carta.id}`, id: carta.id, modo: 'estudo', objetiva: escolha === null ? null : ordem[escolha] === carta.certa, avaliacao: a })
+    const objetiva = escolha === null ? null : ordem[escolha] === carta.certa
+    registrarEstudo({ chave: `${sessao}:${pos}:${carta.id}`, id: carta.id, modo: 'estudo', objetiva, avaliacao: a })
+    if (ehAcerto(objetiva, a)) definirAcertos((n) => n + 1)
     tocar(a === 'sabia' ? 'cura' : a === 'hesitei' ? 'confirmar' : 'erro')
     definirFeitos((f) => ({ ...f, [a]: f[a] + 1 }))
     const novaSerie = avancarSerie(serie, a)
@@ -284,19 +347,23 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
       if (alvo?.closest('input, textarea, select, [contenteditable="true"]') || document.querySelector('.fc-veu[aria-modal="true"]')?.getClientRects().length) return
       if (e.key === ' ' && alvo?.tagName !== 'BUTTON' && alvo?.tagName !== 'A') { e.preventDefault(); virar() }
       if (!virada && mostrarAlternativas && /^[1-4]$/.test(e.key) && +e.key <= ordem.length) { responder(+e.key - 1); return }
+      // Enter aceita a avaliação sugerida pela alternativa (certa: Sabia; errada: Errei)
+      if (virada && e.key === 'Enter' && escolha !== null && alvo?.tagName !== 'BUTTON' && alvo?.tagName !== 'A') { e.preventDefault(); avaliar(ordem[escolha] === carta.certa ? 'sabia' : 'errei'); return }
       if (virada && e.key === '1') avaliar('errei')
       if (virada && e.key === '2') avaliar('hesitei')
       if (virada && e.key === '3') avaliar('sabia')
     }
     window.addEventListener('keydown', aoTeclar)
     return () => window.removeEventListener('keydown', aoTeclar)
-  }, [avaliar, virada, virar, responder, mostrarAlternativas, ordem])
+  }, [avaliar, virada, virar, responder, mostrarAlternativas, ordem, escolha, carta])
 
   const total = feitos.errei + feitos.hesitei + feitos.sabia
   // fim de sessão: conta para o convite de opinião do beta e manda o progresso para a conta
   useEffect(() => { if (acabou && total) { contarSessaoTerminada(); void sincronizarProgresso() } }, [acabou, total])
   if (acabou) {
     return (
+      <>
+      <FundoBiblioteca indice={hora.indice} reduzido={reduzido} />
       <div className="fc-estudo fc-estudo--fim">
         <div className="fc-janela fc-estudo__resumo">
           <h2>Sessão concluída</h2>
@@ -307,7 +374,9 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
             <div className="errei"><dt>Errei</dt><dd>{feitos.errei}</dd></div>
           </dl>
           {melhor >= 3 && <p className="fc-estudo__melhor">Melhor sequência: <b>{melhor}</b> {melhor >= HUMOR.gloria ? '· Glória da Biblioteca' : melhor >= HUMOR.chama[2] ? '· chama arcana' : melhor >= HUMOR.chama[1] ? '· fogo azul' : '· em chamas'}</p>}
+          <p className="fc-estudo__hora-fim">A luz chegou a: <b>{hora.hora.nome}</b> · {acertos} {acertos === 1 ? 'acerto' : 'acertos'}</p>
           <DiarioBiblioteca diario={diario} />
+          {cronograma && <FimCronograma aoAdiantar={aoAdiantar} />}
           <p className="fc-janela__nota">Os que você errou voltam hoje; os que hesitou, em 3 dias; os que sabia, em 10.</p>
           <div className="fc-janela__botoes">
             <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_sessao')}>Enviar opinião</a>
@@ -315,11 +384,14 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
           </div>
         </div>
       </div>
+      </>
     )
   }
   const atual = pos + 1
   return (
-    <div className="fc-estudo">
+    <>
+    <FundoBiblioteca indice={hora.indice} reduzido={reduzido} />
+    <div className={`fc-estudo${validando ? ' fc-estudo--validando' : ''}`} aria-busy={validando || undefined}>
       <aside className="fc-estudo__painel" aria-label="Progresso do estudo">
         <button type="button" className="fc-botao-pequeno fc-estudo__voltar" onClick={aoTerminar}>← Biblioteca</button>
         <NomeEmChamas nome={nomeMostrado} humor={humor} />
@@ -331,6 +403,10 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
           </div>
         )}
         <div className="fc-estudo__contagem"><b>{atual}</b><small>de {fila.length}</small></div>
+        <p className="fc-estudo__hora" key={hora.hora.id} title={hora.hora.frase}>
+          <span className="fc-estudo__hora-pontos" aria-hidden="true">{HORAS_BIBLIOTECA.map((h, i) => <i key={h.id} data-ativa={i <= hora.indice || undefined} />)}</span>
+          <span><b>{hora.hora.nome}</b><small>{hora.faltam ? `${hora.faltam} ${hora.faltam === 1 ? 'acerto' : 'acertos'} para a próxima luz` : hora.hora.frase}</small></span>
+        </p>
         <div className="fc-estudo__barra" aria-hidden="true"><i style={{ width: (100 * atual) / fila.length + '%' }} /></div>
         <dl className="fc-estudo__placar">
           <div className="sabia"><dt>Sabia</dt><dd>{feitos.sabia}</dd></div>
@@ -391,7 +467,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
       <div className={`fc-estudo__botoes${!virada && mostrarAlternativas ? ' fc-estudo__botoes--alternativas' : ''}`}>
         {virada ? (
           <>
-            {escolha !== null && <p className={`fc-estudo__veredito fc-estudo__veredito--${errouNaAlternativa ? 'errou' : 'acertou'}`} role="status">{errouNaAlternativa ? 'Você errou na alternativa. Como foi de verdade?' : 'Acertou! Foi com segurança?'}</p>}
+            {escolha !== null && <p className={`fc-estudo__veredito fc-estudo__veredito--${errouNaAlternativa ? 'errou' : 'acertou'}`} role="status">{errouNaAlternativa ? 'Você errou na alternativa. Como foi de verdade?' : 'Acertou! Foi com segurança?'}<small className="fc-estudo__dica-tecla"> Enter aceita o sugerido</small></p>}
             <button type="button" className={`fc-botao-aval fc-botao-aval--errei${errouNaAlternativa ? ' fc-botao-aval--sugerido' : ''}`} onClick={() => avaliar('errei')}><i aria-hidden="true">1</i><strong>Errei</strong><small>volta hoje</small></button>
             <button type="button" className="fc-botao-aval fc-botao-aval--hesitei" onClick={() => avaliar('hesitei')}><i aria-hidden="true">2</i><strong>Hesitei</strong><small>volta em 3 dias</small></button>
             <button type="button" className={`fc-botao-aval fc-botao-aval--sabia${escolha !== null && !errouNaAlternativa ? ' fc-botao-aval--sugerido' : ''}`} onClick={() => avaliar('sabia')}><i aria-hidden="true">3</i><strong>Sabia</strong><small>volta em 10 dias</small></button>
@@ -419,6 +495,26 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
           <button type="button" className="fc-principal fc-principal--largo pronto" onClick={() => { tocar('confirmar'); virar() }}><span className="fc-principal__texto"><span>Virar o flashcard</span><small>espaço</small></span></button>
         )}
       </div>
+    </div>
+    </>
+  )
+}
+
+/** Fim de uma sessão do cronograma: o que falta hoje, o que vem amanhã e a opção de adiantar. */
+function FimCronograma({ aoAdiantar }: { aoAdiantar?: (n: number) => void }) {
+  const c = useMemo(() => calcularCronograma(migrarPlano(ler<unknown>(CHAVE_PLANO, null)), todasAsCartas(), ler(CHAVE_REGISTROS, {})), [])
+  const amanha = c.amanha
+  return (
+    <div className="fc-fim-crono">
+      {c.sessaoHoje.length
+        ? <p><b>Faltam {c.sessaoHoje.length} para a meta de hoje.</b> Pode seguir agora ou mais tarde: a fila espera.</p>
+        : <p><b>{c.ehDiaDeEstudo ? 'Meta de hoje feita.' : 'Adiantou num dia de folga.'}</b> {c.novosFeitosHoje > c.metaNovos && c.metaNovos ? `Você adiantou ${c.novosFeitosHoje - c.metaNovos} do plano.` : 'O que passar disso adianta o plano.'}</p>}
+      {amanha && <p className="fc-fim-crono__amanha">Amanhã: {amanha.novos ? `${amanha.assuntos.map((f) => f.assunto).join(' · ')} · ${amanha.novos} novos` : 'só as revisões que vencerem'}</p>}
+      {aoAdiantar && (c.sessaoHoje.length > 0 || c.novosRestantes > 0) && (
+        <button type="button" className="fc-botao fc-botao--secundario" onClick={() => aoAdiantar(c.sessaoHoje.length ? 0 : c.plano.ritmo)}>
+          {c.sessaoHoje.length ? `Continuar a sessão de hoje (${c.sessaoHoje.length})` : `Adiantar mais ${Math.min(c.plano.ritmo, c.novosRestantes)}`}
+        </button>
+      )}
     </div>
   )
 }

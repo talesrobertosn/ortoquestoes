@@ -470,18 +470,23 @@ export function Inicio() {
 function QuadroFlashcards({ classe }: { classe: string }) {
   const id = classe.split(' ')[0] + '-titulo'
   return (
-    <a className={`inicio-flash ${classe}`} href={href('/flashcards')} aria-labelledby={id}>
+    <section className={`inicio-flash ${classe}`} aria-labelledby={id}>
       <picture className="inicio-flash__arte">
         <source media="(max-width: 52rem)" srcSet={recurso('flashcards/promo/capa-retrato.png')} />
         <img src={recurso('flashcards/promo/capa-larga.png')} alt="" width={520} height={330} loading="lazy" decoding="async" />
       </picture>
       <span className="inicio-flash__texto">
         <span className="inicio-flash__selo">Flashcards · Beta público</span>
-        <strong id={id}>Conhecimento que evolui com você.</strong>
+        {/* o quadro todo leva à central; os botões vão direto (pedido do Tales, 15/10/2026: nem todo mundo quer o jogo) */}
+        <a className="inicio-flash__capa" href={href('/flashcards')}><strong id={id}>Conhecimento que evolui com você.</strong></a>
         <span className="inicio-flash__desc">Flashcards de Ortopedia, revisão espaçada e uma jornada para testar o que você sabe.</span>
-        <span className="botao botao--ouro inicio-flash__botao">Treinar flashcards <Icone nome="direita" tamanho={16} /></span>
+        <span className="inicio-flash__botoes">
+          <a className="botao botao--ouro inicio-flash__botao" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={16} /> Estudar flashcards</a>
+          <a className="botao inicio-flash__botao inicio-flash__botao--jogo" href={href('/flashcards/cripta')}><Icone nome="raio" tamanho={16} /> Jogar o Torneio</a>
+        </span>
+        <a className="inicio-flash__crono" href={href('/flashcards/biblioteca?categoria=plano')}><Icone nome="rota" tamanho={15} /> Seguir o cronograma de hoje</a>
       </span>
-    </a>
+    </section>
   )
 }
 

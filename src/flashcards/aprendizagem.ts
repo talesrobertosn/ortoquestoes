@@ -15,7 +15,7 @@ import { ler, gravar } from '../estado/armazenamento'
 import { dominada, proximoRegistro, revisarHoje } from '../estado/revisao'
 import { CHAVE_HISTORICO, CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, lembrarVisto, registrarResposta, type Recordes, type RegistroFlashcard } from './progresso'
 import type { Flashcard } from './tipos'
-import { chaveDoDia as chaveDoDiaBR, diaDaSemana, somarDias } from '../util/dia'
+import { chaveDoDia as chaveDoDiaBR, somarDias } from '../util/dia'
 
 export const CHAVE_DIARIO = 'flashcards:diario'
 export const CHAVE_EVENTOS = 'flashcards:eventos'
@@ -134,11 +134,16 @@ export interface Estatisticas {
   /** Última avaliação de cada flashcard no Estudo (registros novos). */
   ultimaAvaliacao: Record<Avaliacao, number>
   /** No período: respostas, objetivas e acerto; dias com estudo. */
-  periodo: { dias: number; revisoes: number; novos: number; objetivas: number; objetivasCertas: number; primeiras: number; primeirasCertas: number; errei: number; hesitei: number; sabia: number; diasAtivos: number; porDia: Array<{ dia: string; revisoes: number }> }
+  periodo: { dias: number; revisoes: number; novos: number; objetivas: number; objetivasCertas: number; primeiras: number; primeirasCertas: number; errei: number; hesitei: number; sabia: number; diasAtivos: number; porDia: DiaResumido[] }
   porArea: Array<{ area: string; nome: string; total: number; estudados: number; dominados: number; pendentes: number; tentativas: number; acertos: number }>
+  /** Assuntos com pelo menos 3 respostas, do menor acerto para o maior (pontos fracos primeiro). */
+  porAssunto: Array<{ assunto: string; area: string; nome: string; estudados: number; tentativas: number; acertos: number; pendentes: number }>
   /** Primeiro dia com dados por dia (antes disso, o histórico antigo não tem a contagem diária). */
   desde: string | null
 }
+
+/** Um dia do gráfico de evolução: respostas e como foram. */
+export interface DiaResumido { dia: string; revisoes: number; errei: number; hesitei: number; sabia: number; objetivas: number; objetivasCertas: number; cripta: number }
 
 export function calcularEstatisticas(cartas: Flashcard[], nomes: Record<string, string>, dias = 30, agora = Date.now()): Estatisticas {
   const registros = ler<Record<string, RegistroAprendizagem>>(CHAVE_REGISTROS, {})
@@ -147,6 +152,7 @@ export function calcularEstatisticas(cartas: Flashcard[], nomes: Record<string, 
   let revisoes = 0, pendentes = 0, dominados = 0
   const ultimaAvaliacao: Record<Avaliacao, number> = { errei: 0, hesitei: 0, sabia: 0 }
   const areas = new Map<string, Estatisticas['porArea'][number]>()
+  const assuntos = new Map<string, Estatisticas['porAssunto'][number]>()
   for (const c of cartas) {
     const a = c.areaId ?? c.area ?? 'outras'
     if (!areas.has(a)) areas.set(a, { area: a, nome: nomes[a] ?? c.area ?? a, total: 0, estudados: 0, dominados: 0, pendentes: 0, tentativas: 0, acertos: 0 })
@@ -164,14 +170,19 @@ export function calcularEstatisticas(cartas: Flashcard[], nomes: Record<string, 
       x.estudados++; x.tentativas += r.tentativas ?? 1; x.acertos += r.acertos ?? Number(r.c === true)
       if (dom) x.dominados++
       if (pend) x.pendentes++
+      const ka = (c.areaId ?? c.area ?? 'outras') + '|' + c.assunto
+      const y = assuntos.get(ka) ?? { assunto: c.assunto, area: c.areaId ?? c.area ?? 'outras', nome: x.nome, estudados: 0, tentativas: 0, acertos: 0, pendentes: 0 }
+      y.estudados++; y.tentativas += r.tentativas ?? 1; y.acertos += r.acertos ?? Number(r.c === true)
+      if (pend) y.pendentes++
+      assuntos.set(ka, y)
     }
   }
   const limite = somarDias(chaveDoDia(agora), -(dias - 1))
-  const p = { dias, revisoes: 0, novos: 0, objetivas: 0, objetivasCertas: 0, primeiras: 0, primeirasCertas: 0, errei: 0, hesitei: 0, sabia: 0, diasAtivos: 0, porDia: [] as Array<{ dia: string; revisoes: number }> }
+  const p = { dias, revisoes: 0, novos: 0, objetivas: 0, objetivasCertas: 0, primeiras: 0, primeirasCertas: 0, errei: 0, hesitei: 0, sabia: 0, diasAtivos: 0, porDia: [] as DiaResumido[] }
   for (let i = dias - 1; i >= 0; i--) {
     const k = somarDias(chaveDoDia(agora), -i)
     const d = diario[k]
-    p.porDia.push({ dia: k, revisoes: d?.revisoes ?? 0 })
+    p.porDia.push({ dia: k, revisoes: d?.revisoes ?? 0, errei: d?.errei ?? 0, hesitei: d?.hesitei ?? 0, sabia: d?.sabia ?? 0, objetivas: d?.objetivas ?? 0, objetivasCertas: d?.objetivasCertas ?? 0, cripta: d?.cripta ?? 0 })
     if (!d || k < limite) continue
     p.revisoes += d.revisoes; p.novos += d.novos; p.objetivas += d.objetivas; p.objetivasCertas += d.objetivasCertas
     p.primeiras += d.primeiras; p.primeirasCertas += d.primeirasCertas; p.errei += d.errei; p.hesitei += d.hesitei; p.sabia += d.sabia
@@ -181,76 +192,13 @@ export function calcularEstatisticas(cartas: Flashcard[], nomes: Record<string, 
   return {
     unicos: Object.keys(registros).length, revisoes, pendentes, dominados, ultimaAvaliacao, periodo: p,
     porArea: [...areas.values()].filter((x) => x.total > 0).sort((a, b) => b.estudados - a.estudados || b.total - a.total),
+    porAssunto: [...assuntos.values()].filter((x) => x.tentativas >= 3)
+      .sort((a, b) => a.acertos / a.tentativas - b.acertos / b.tentativas || b.tentativas - a.tentativas || a.assunto.localeCompare(b.assunto, 'pt-BR')),
     desde,
   }
 }
 
 /* ------------------------------------------------------------ Cronograma */
 
-export const CHAVE_PLANO = 'flashcards:plano'
-
-export interface PlanoFlashcards {
-  /** Data-alvo (AAAA-MM-DD). */
-  data: string
-  /** Áreas incluídas (vazio = todas). */
-  areas: string[]
-  /** Dias da semana em que a pessoa estuda (0 = domingo). */
-  diasSemana: number[]
-  /** Teto de flashcards por dia (novos + revisões). */
-  ritmo: number
-  criadoEm: number
-}
-
-export interface CalculoPlano {
-  situacao: 'sem-data' | 'data-passada' | 'sem-flashcards' | 'concluido' | 'ok' | 'acima-do-ritmo'
-  diasRestantes: number
-  novosRestantes: number
-  revisoesHoje: number
-  /** Novos por dia de estudo para terminar na data. */
-  novosPorDia: number
-  /** Meta de hoje: revisões vencidas + novos do dia (limitada ao ritmo quando dá). */
-  metaHoje: number
-  /** Estudados hoje que contam para o plano (nas áreas do plano). */
-  feitosHoje: number
-  /** Carga necessária por dia (novos + revisões médias). */
-  cargaPorDia: number
-  ehDiaDeEstudo: boolean
-}
-
-/** Dias de estudo entre amanhã/hoje e a data-alvo (inclui hoje e a data), conforme os dias da semana escolhidos. */
-export function diasDeEstudo(plano: Pick<PlanoFlashcards, 'data' | 'diasSemana'>, agora = Date.now()) {
-  const [a, m, d] = plano.data.split('-').map(Number)
-  if (!a || !m || !d) return -1
-  const fim = `${a}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`
-  const hoje = chaveDoDiaBR(agora)
-  if (fim < hoje) return -1
-  let n = 0
-  for (let k = hoje; k <= fim; k = somarDias(k, 1)) {
-    if (!plano.diasSemana.length || plano.diasSemana.includes(diaDaSemana(k))) n++
-  }
-  return n
-}
-
-export function calcularPlano(plano: PlanoFlashcards | null, cartas: Flashcard[], agora = Date.now()): CalculoPlano {
-  const vazio: CalculoPlano = { situacao: 'sem-data', diasRestantes: 0, novosRestantes: 0, revisoesHoje: 0, novosPorDia: 0, metaHoje: 0, feitosHoje: 0, cargaPorDia: 0, ehDiaDeEstudo: false }
-  if (!plano?.data) return vazio
-  const registros = ler<Record<string, RegistroAprendizagem>>(CHAVE_REGISTROS, {})
-  const doPlano = cartas.filter((c) => !plano.areas.length || plano.areas.includes(c.areaId ?? c.area ?? ''))
-  if (!doPlano.length) return { ...vazio, situacao: 'sem-flashcards' }
-  const dias = diasDeEstudo(plano, agora)
-  const hoje = chaveDoDia(agora)
-  const novosRestantes = doPlano.filter((c) => !registros[c.id]).length
-  const revisoesHoje = doPlano.filter((c) => revisarHoje(registros[c.id], agora)).length
-  const feitosHoje = doPlano.filter((c) => registros[c.id] && chaveDoDia(registros[c.id].q) === hoje).length
-  const ehDiaDeEstudo = !plano.diasSemana.length || plano.diasSemana.includes(diaDaSemana(agora))
-  if (dias < 0) return { ...vazio, situacao: 'data-passada', novosRestantes, revisoesHoje, feitosHoje, ehDiaDeEstudo }
-  if (!novosRestantes && !revisoesHoje) return { ...vazio, situacao: 'concluido', diasRestantes: dias, feitosHoje, ehDiaDeEstudo }
-  const novosPorDia = dias > 0 ? Math.ceil(novosRestantes / dias) : novosRestantes
-  // revisões: as vencidas hoje mais uma estimativa das que vão vencer (cerca de 1 por novo estudado nos próximos dias)
-  const cargaPorDia = novosPorDia * 2 + Math.ceil(revisoesHoje / Math.max(1, Math.min(dias, 3)))
-  const metaHoje = ehDiaDeEstudo ? Math.min(Math.max(plano.ritmo, revisoesHoje), revisoesHoje + novosPorDia) : revisoesHoje
-  return {
-    situacao: cargaPorDia > plano.ritmo ? 'acima-do-ritmo' : 'ok', diasRestantes: dias, novosRestantes, revisoesHoje, novosPorDia,
-    metaHoje, feitosHoje, cargaPorDia, ehDiaDeEstudo,
-  }
-}
+// O cronograma dos flashcards mora em ./cronograma.ts desde 15/10/2026 (sequência por incidência).
+export { CHAVE_PLANO, calcularCronograma, migrarPlano, planoSugerido, type Cronograma, type PlanoFlashcards } from './cronograma'
