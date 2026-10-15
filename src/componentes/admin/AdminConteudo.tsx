@@ -30,7 +30,7 @@ export function AdminConteudo({ vista: vistaExterna = 'suspeitas', aoMudarVista,
   const [erro, definirErro] = useState('')
   const [minimo, definirMinimo] = useState(5)
   const [nomes, definirNomes] = useState<Map<string, { titulo: string; trecho: string }>>(new Map())
-  const [mensagensAvaliacao, definirMensagensAvaliacao] = useState(0)
+  const [mensagensAvaliacao, definirMensagensAvaliacao] = useState<number | null>(null)
   // Ids já pedidos ao acervo, achados ou não: sem isto, um id inexistente pediria de novo a cada render.
   const pedidos = useRef(new Set<string>())
 
@@ -43,7 +43,8 @@ export function AdminConteudo({ vista: vistaExterna = 'suspeitas', aoMudarVista,
   }, [carregarRelatos])
 
   const abertos = relatos?.filter(r => r.status === 'aberto').length ?? 0
-  useEffect(() => { aoMudarPendencias?.(abertos + mensagensAvaliacao) }, [abertos, mensagensAvaliacao, aoMudarPendencias])
+  // Só avisa a barra depois de ler relatos e avaliações: antes disso o número seria um zero falso.
+  useEffect(() => { if (relatos && mensagensAvaliacao !== null) aoMudarPendencias?.(abertos + mensagensAvaliacao) }, [relatos, abertos, mensagensAvaliacao, aoMudarPendencias])
 
   const comAmostra = useMemo(() => (stats ?? []).filter(s => Number(s.acertos_primeira) + Number(s.erros_primeira) >= minimo), [stats, minimo])
   const suspeitas = useMemo(() => [...comAmostra].filter(s => (acertoPrimeira(s) ?? 100) <= 30).sort((a, b) => (acertoPrimeira(a) ?? 0) - (acertoPrimeira(b) ?? 0) || Number(b.pessoas) - Number(a.pessoas)).slice(0, 60), [comAmostra])
@@ -135,7 +136,7 @@ export function AdminConteudo({ vista: vistaExterna = 'suspeitas', aoMudarVista,
     </div></div>
     <div className="adm-filtros" role="tablist" aria-label="Vistas de conteúdo">
       {VISTAS.map(([valor, rotulo]) => <button key={valor} type="button" role="tab" aria-selected={vista === valor} aria-pressed={vista === valor} className="adm-chip" onClick={() => definirVista(valor)}>
-        {rotulo}{valor === 'relatos' && abertos > 0 && <span className="adm-chip__alerta">{abertos}</span>}{valor === 'avaliacoes' && mensagensAvaliacao > 0 && <span className="adm-chip__alerta">{mensagensAvaliacao}</span>}
+        {rotulo}{valor === 'relatos' && abertos > 0 && <span className="adm-chip__alerta">{abertos}</span>}{valor === 'avaliacoes' && !!mensagensAvaliacao && <span className="adm-chip__alerta">{mensagensAvaliacao}</span>}
       </button>)}
     </div>
     {erro && vista !== 'avaliacoes' && <p role="alert" className="adm-alerta">{erro}</p>}

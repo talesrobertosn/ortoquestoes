@@ -4,7 +4,10 @@ import { chamarRpc } from '../../servicos/supabase'
 export type TipoLido = 'avaliacao' | 'pagamento'
 
 const chaveLocal = (tipo: TipoLido) => `oq-admin-lidos:${tipo}`
-function lerLocal(tipo: TipoLido): string[] {
+/** Chave com que uma avaliação de comentário é marcada como lida (a mesma no banco: ver contadores_admin). */
+export const chaveAvaliacao = (l: { id_questao: string; usuario: string | null; atualizado_em: string }) => `${l.id_questao}|${l.usuario ?? ''}|${l.atualizado_em}`
+
+export function lerLocal(tipo: TipoLido): string[] {
   try { return JSON.parse(localStorage.getItem(chaveLocal(tipo)) ?? '[]') as string[] } catch { return [] }
 }
 function gravarLocal(tipo: TipoLido, chaves: Set<string>) {

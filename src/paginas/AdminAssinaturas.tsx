@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
-import { chamarFuncao, chamarRpc } from '../servicos/supabase'
+import { chamarFuncao } from '../servicos/supabase'
 import { href, navegar } from '../util/rotas'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { AdminConteudo, type VistaConteudo } from '../componentes/admin/AdminConteudo'
@@ -13,6 +13,8 @@ import { AdminOpinioesFlashcards } from '../componentes/admin/AdminOpinioesFlash
 import { contaDeTeste } from '../componentes/admin/contasTeste'
 import { meioDe } from '../componentes/admin/receita'
 import { usarLidos } from '../componentes/admin/lidos'
+import { usarRpc } from '../componentes/admin/usarRpc'
+import { usarContadoresAdmin } from '../componentes/admin/contadores'
 import {
   PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
 } from '../componentes/admin/formatos'
@@ -111,46 +113,56 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const [idEditar, definirIdEditar] = useState<string | null>(url.id)
   useEffect(() => { if (aba === 'conteudo') definirVista(url.vista) }, [aba, url.vista])
   useEffect(() => { if (aba === 'questoes' && url.id) definirIdEditar(url.id) }, [aba, url.id])
-  const [assinaturas, definirAssinaturas] = useState<LinhaAssinatura[] | null>(null)
-  const [eventos, definirEventos] = useState<LinhaEvento[] | null>(null)
-  const [usuarios, definirUsuarios] = useState<LinhaUsuario[] | null>(null)
-  const [resumo, definirResumo] = useState<Resumo | null>(null)
-  const [erroAcesso, definirErroAcesso] = useState('')
-  const [erroNovo, definirErroNovo] = useState('')
-  const [pendenciasConteudo, definirPendenciasConteudo] = useState<number | null>(null)
-  const [atualizadoEm, definirAtualizadoEm] = useState<Date | null>(null)
+  // Cada consulta tem um dono só e fica em cache (usarRpc): trocar de aba não pede de novo,
+  // clique duplo não duplica, e a lista pesada de usuários só vem para as abas que a mostram.
+  const conta = sessao?.user.id
+  const assinaturasQ = usarRpc<LinhaAssinatura[]>(conta, 'listar_assinaturas_admin')
+  const eventosQ = usarRpc<LinhaEvento[]>(conta, 'listar_eventos_pagamento_admin')
+  const resumoQ = usarRpc<Resumo[]>(conta, 'resumo_admin')
+  const contadoresQ = usarContadoresAdmin(conta)
+  // Sem a RPC leve (parte 22 ainda não colada), o número de contas sai da própria lista.
+  const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
+  const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
+    ativo: aba === 'geral' || aba === 'usuarios' || aba === 'crescimento' || semContadores,
+    // "Ao vivo" só na aba Usuários e com a aba do navegador visível.
+    atualizarCada: aba === 'usuarios' ? 30_000 : undefined,
+    prazoMs: 20_000,
+  })
+  const assinaturas = assinaturasQ.dados ?? null
+  const eventos = eventosQ.dados ?? null
+  const usuarios = usuariosQ.dados ?? null
+  const resumo = resumoQ.dados?.[0] ?? null
+  const erroAcesso = assinaturasQ.erro ? erroDoPainel(assinaturasQ.erro, MIGRACAO) : ''
+  const falhaNova = resumoQ.erro ?? usuariosQ.erro
+  const erroNovo = falhaNova ? erroDoPainel(falhaNova, MIGRACAO) : ''
+  const atualizadoEm = assinaturasQ.atualizadoEm ? new Date(assinaturasQ.atualizadoEm) : null
+  // Pendências de conteúdo: a RPC leve dá o número; com a aba Conteúdo aberta, vale o que ela
+  // acabou de contar (resolver um relato baixa na hora). O mais recente dos dois ganha.
+  const [pendenciasAoVivo, definirPendenciasAoVivo] = useState<{ valor: number; em: number } | null>(null)
+  const registrarPendencias = useCallback((valor: number) => definirPendenciasAoVivo({ valor, em: Date.now() }), [])
+  const pendenciasConteudo = pendenciasAoVivo && pendenciasAoVivo.em >= (contadoresQ.atualizadoEm ?? 0) ? pendenciasAoVivo.valor : contadoresQ.dados?.conteudo ?? null
   const lidosPagamento = usarLidos('pagamento')
   // Compras de teste do dono ficam fora das estatísticas; a lista completa continua na aba Assinaturas.
   const reais = useMemo(() => assinaturas?.filter(a => !contaDeTeste(a)) ?? null, [assinaturas])
   const testes = (assinaturas?.length ?? 0) - (reais?.length ?? 0)
   const usuariosReais = useMemo(() => usuarios?.filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
 
-  // Um clique por vez: sem isso, clique duplo disparava oito RPCs pesadas.
-  const [atualizando, definirAtualizando] = useState(false)
-  const emVoo = useRef(false)
+  // Um clique por vez: o botão fica ocupado e os pedidos em voo são reaproveitados.
+  const atualizando = assinaturasQ.carregando || eventosQ.carregando || resumoQ.carregando || usuariosQ.carregando || contadoresQ.carregando
+  const { recarregar: recAssinaturas } = assinaturasQ
+  const { recarregar: recEventos } = eventosQ
+  const { recarregar: recResumo } = resumoQ
+  const { recarregar: recUsuarios } = usuariosQ
+  const { recarregar: recContadores } = contadoresQ
   const carregar = useCallback(async () => {
-    if (!sessao || emVoo.current) return
-    emVoo.current = true; definirAtualizando(true)
-    try {
-    // Assinaturas e eventos existem desde antes; resumo e usuários dependem da
-    // migração nova. Uma falha nestes não esconde o resto do painel.
-    const [a, e, r, u] = await Promise.allSettled([
-      chamarRpc<LinhaAssinatura[]>('listar_assinaturas_admin', {}),
-      chamarRpc<LinhaEvento[]>('listar_eventos_pagamento_admin', {}),
-      chamarRpc<Resumo[]>('resumo_admin', {}),
-      chamarRpc<LinhaUsuario[]>('listar_usuarios_admin', {}),
-    ])
-    if (a.status === 'rejected') { definirErroAcesso(erroDoPainel(a.reason, MIGRACAO)); return }
-    definirErroAcesso('')
-    definirAssinaturas(a.value)
-    definirEventos(e.status === 'fulfilled' ? e.value : [])
-    if (r.status === 'fulfilled' && u.status === 'fulfilled') {
-      definirResumo(r.value[0] ?? null); definirUsuarios(u.value); definirErroNovo('')
-    } else definirErroNovo(erroDoPainel(r.status === 'rejected' ? r.reason : (u as PromiseRejectedResult).reason, MIGRACAO))
-    definirAtualizadoEm(new Date())
-    } finally { emVoo.current = false; definirAtualizando(false) }
-  }, [sessao])
-  useEffect(() => { void carregar() }, [carregar])
+    await Promise.all([recAssinaturas(), recEventos(), recResumo(), recUsuarios(), recContadores()])
+  }, [recAssinaturas, recEventos, recResumo, recUsuarios, recContadores])
+  // Saindo da aba Conteúdo, o contador volta a vir do servidor já com o que foi resolvido lá.
+  const abaAnterior = useRef(aba)
+  useEffect(() => {
+    if (abaAnterior.current === 'conteudo' && aba !== 'conteudo') void recContadores()
+    abaAnterior.current = aba
+  }, [aba, recContadores])
   // No celular as abas rolam de lado: a escolhida precisa ficar à vista.
   useEffect(() => {
     document.querySelector('.adm-aba[aria-selected="true"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
@@ -172,7 +184,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
 
   const errosPagamento = eventos?.filter(ev => ev.status_processamento === 'erro' && !lidosPagamento.lidos.has(String(ev.id))).length ?? 0
   const contadores: Partial<Record<Aba, number>> = {
-    usuarios: usuarios?.length, assinaturas: reais?.filter(vigente).length,
+    usuarios: contadoresQ.dados?.usuarios ?? usuarios?.length, assinaturas: reais?.filter(vigente).length,
     pagamentos: errosPagamento || undefined, conteudo: pendenciasConteudo || undefined,
   }
 
@@ -198,7 +210,9 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
       {erroNovo && (aba === 'geral' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
 
       {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={reais ?? []} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
-      {aba === 'usuarios' && usuarios && <AdminUsuarios usuarios={usuarios} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} />}
+      {aba === 'usuarios' && (usuarios
+        ? <AdminUsuarios usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} />
+        : !usuariosQ.erro && <p role="status">Carregando usuários…</p>)}
       {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
       {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
       {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
@@ -206,8 +220,8 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
       {aba === 'configuracoes' && <AdminConfiguracoes />}
       {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} aoAbrir={id => { definirIdEditar(id); irPara({ id }) }} />}
       {aba === 'opinioes' && <AdminOpinioesFlashcards />}
-      {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}
-      <div hidden={aba !== 'conteudo'}><AdminConteudo vista={vista} aoMudarVista={nova => { definirVista(nova); irPara({ vista: nova }) }} aoMudarPendencias={definirPendenciasConteudo} aoEditar={editarQuestao} /></div>
+      {/* Montada só na própria aba: o contador da barra vem de contadores_admin. */}
+      {aba === 'conteudo' && <AdminConteudo vista={vista} aoMudarVista={nova => { definirVista(nova); irPara({ vista: nova }) }} aoMudarPendencias={registrarPendencias} aoEditar={editarQuestao} />}
     </>}
   </article>
 }
@@ -216,11 +230,17 @@ function VisaoGeral({ resumo, usuarios, assinaturas, errosPagamento, mensagens, 
   resumo: Resumo | null; usuarios: LinhaUsuario[] | null; assinaturas: LinhaAssinatura[]
   errosPagamento: number; mensagens: number | null; irPara: (aba: Aba) => void; verUsuarios: (filtro: FiltroUsuarios) => void
 }) {
-  const hoje = (usuarios ?? []).filter(ativoHoje).sort((a, b) => new Date(b.ultima_atividade ?? 0).getTime() - new Date(a.ultima_atividade ?? 0).getTime())
-  const novos = (usuarios ?? []).filter(u => Date.now() - new Date(u.criado_em).getTime() < 14 * 86_400_000).sort((a, b) => new Date(b.criado_em).getTime() - new Date(a.criado_em).getTime())
-  const vigentes = assinaturas.filter(vigente)
-  const novasAssinaturas = [...assinaturas].sort((a, b) => new Date(inicioDe(b)).getTime() - new Date(inicioDe(a)).getTime()).slice(0, 4)
-  const semana = (usuarios ?? []).filter(u => u.respondidas_7d > 0).sort((a, b) => b.respondidas_7d - a.respondidas_7d).slice(0, 5)
+  // Recalculados só quando a lista muda (antes, a cada render do painel).
+  const { hoje, novos, semana } = useMemo(() => {
+    const lista = usuarios ?? []
+    return {
+      hoje: lista.filter(ativoHoje).sort((a, b) => new Date(b.ultima_atividade ?? 0).getTime() - new Date(a.ultima_atividade ?? 0).getTime()),
+      novos: lista.filter(u => Date.now() - new Date(u.criado_em).getTime() < 14 * 86_400_000).sort((a, b) => new Date(b.criado_em).getTime() - new Date(a.criado_em).getTime()),
+      semana: lista.filter(u => u.respondidas_7d > 0).sort((a, b) => b.respondidas_7d - a.respondidas_7d).slice(0, 5),
+    }
+  }, [usuarios])
+  const vigentes = useMemo(() => assinaturas.filter(vigente), [assinaturas])
+  const novasAssinaturas = useMemo(() => [...assinaturas].sort((a, b) => new Date(inicioDe(b)).getTime() - new Date(inicioDe(a)).getTime()).slice(0, 4), [assinaturas])
   const n = (valor: number | undefined) => valor === undefined ? '—' : valor.toLocaleString('pt-BR')
 
   return <div className="empilha-2">
