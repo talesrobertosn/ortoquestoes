@@ -2503,6 +2503,205 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0523-co1",
+   "questao": "pediatria-0523",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em cerca de quantas fraturas diafisárias do antebraço da criança ocorre refratura?",
+   "resposta": "5%",
+   "explicacao": "Cerca de **5%**, em geral nos primeiros meses, sobretudo no galho verde diafisário.",
+   "opcoes": [
+    "5%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71d94d01ace3",
+   "origem": "autoral",
+   "trecho": "A refratura ocorre em cerca de **5%** das fraturas diafisárias do antebraço, geralmente nos primeiros meses.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0523-co2",
+   "questao": "pediatria-0523",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se trata a fratura em tórus (em fivela) do punho da criança?",
+   "resposta": "tala removível por 3 semanas",
+   "explicacao": "O **tórus** é estável: **tala removível por 3 semanas**, sem refratura relevante.",
+   "opcoes": [
+    "tala removível por 3 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71d94d01ace3",
+   "origem": "autoral",
+   "trecho": "O tórus é uma fratura **estável** e se trata com tala removível por 3 semanas, sem refratura relevante.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0523-co3",
+   "questao": "pediatria-0523",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para reduzir a refratura, por quanto tempo se recomenda o gesso na fratura diafisária do antebraço da criança?",
+   "resposta": "6 semanas",
+   "explicacao": "Cerca de **6 semanas** de gesso e depois um período de proteção; imobilização curta é fator de risco.",
+   "opcoes": [
+    "6 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71d94d01ace3",
+   "origem": "autoral",
+   "trecho": "**Imobilização curta**: na diáfise, recomenda-se cerca de **6 semanas** de gesso, mais um período de proteção.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0523-pc1",
+   "questao": "pediatria-0523",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Galho verde do antebraço com ápice volar vem de supinação com carga axial. E o ápice dorsal?",
+   "resposta": "pronação",
+   "explicacao": "**Ápice volar:** supinação, reduz com pronação. **Ápice dorsal:** **pronação**, reduz com supinação.",
+   "opcoes": [
+    "pronação",
+    "supinação"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71d94d01ace3",
+   "origem": "autoral",
+   "trecho": "**Ápice dorsal**: lesão por **pronação** com carga axial. O fragmento distal fica pronado.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0527-co1",
+   "questao": "pediatria-0527",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do antebraço da criança abaixo de 9 anos, quanto de angulação se aceita?",
+   "resposta": "15° a 20°",
+   "explicacao": "**Abaixo de 9 anos:** 15° a 20° de angulação e 45° de má rotação. **Acima:** 10° e 30°.",
+   "opcoes": [
+    "10°",
+    "15° a 20°"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "cfb179e06d47",
+   "origem": "autoral",
+   "trecho": "Abaixo de 9 anos, aceitam-se até cerca de **15° a 20°** de angulação, 45° de má rotação e desvio completo com encurtamento pequeno",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0527-co2",
+   "questao": "pediatria-0527",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do antebraço da criança acima de 9 anos, quanto de angulação se aceita?",
+   "resposta": "10°",
+   "explicacao": "**Acima de 9 anos:** cerca de **10°** de angulação e 30° de má rotação.",
+   "opcoes": [
+    "10°",
+    "15° a 20°"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "cfb179e06d47",
+   "origem": "autoral",
+   "trecho": "acima de 9 anos, cerca de **10°** de angulação e 30° de má rotação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0527-co3",
+   "questao": "pediatria-0527",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No método de Evans, com o antebraço em supinação completa, para onde aponta a tuberosidade do bíceps?",
+   "resposta": "medial",
+   "explicacao": "Tuberosidade do bíceps **medial** e estiloide radial lateral em supinação; se não combinam, há malrotação.",
+   "opcoes": [
+    "medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "cfb179e06d47",
+   "origem": "autoral",
+   "trecho": "o perfil da **tuberosidade do bíceps** (fragmento proximal), que em supinação completa aponta para **medial**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0543-co1",
    "questao": "pediatria-0543",
    "area": "Ortopedia pediátrica",
@@ -2986,6 +3185,92 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0562-co1",
+   "questao": "pediatria-0562",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o primeiro osso do carpo a ossificar, por volta dos 2 a 3 meses de vida?",
+   "resposta": "capitato",
+   "explicacao": "**Capitato** primeiro, seguido do **hamato**.",
+   "opcoes": [
+    "capitato",
+    "hamato",
+    "escafoide"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f361255ab8db",
+   "origem": "autoral",
+   "trecho": "O **capitato** é o primeiro osso do carpo a ossificar (por volta dos 2 a 3 meses de vida), seguido do hamato.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0562-co2",
+   "questao": "pediatria-0562",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual epônimo recebe a síndrome escafocapitato, fratura do escafoide e do colo do capitato?",
+   "resposta": "Fenton",
+   "explicacao": "**Síndrome de Fenton:** a cabeça do capitato pode girar até 180°, com risco de necrose.",
+   "opcoes": [
+    "Fenton"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f361255ab8db",
+   "origem": "autoral",
+   "trecho": "**A síndrome escafocapitato (de Fenton).** É uma variante especial e grave:",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0562-co3",
+   "questao": "pediatria-0562",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome escafocapitato, quanto pode girar a cabeça do capitato ao voltar o punho à posição neutra?",
+   "resposta": "180°",
+   "explicacao": "A cabeça gira **até 180°**, com a superfície articular para baixo; a irrigação é retrógrada, como no polo proximal do escafoide.",
+   "opcoes": [
+    "180°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f361255ab8db",
+   "origem": "autoral",
+   "trecho": "o fragmento proximal do capitato (a **cabeça**) **gira até 180°**, ficando com a superfície articular virada para baixo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0564-cl1",
    "questao": "pediatria-0564",
    "area": "Ortopedia pediátrica",
@@ -3125,6 +3410,94 @@
    "fonte": "b3fff1b51056",
    "origem": "autoral",
    "trecho": "- **Cabeça hipertrofiada** ou deformada (a mais comum das alterações radiográficas)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0566-pc1",
+   "questao": "pediatria-0566",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Mão da criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na supracondiliana, o desvio posterolateral lesa o interósseo anterior. Qual nervo é lesado na fratura em flexão?",
+   "resposta": "ulnar",
+   "explicacao": "**Posterolateral:** interósseo anterior. **Posteromedial:** radial. **Flexão:** **ulnar**. **Monteggia:** interósseo posterior.",
+   "opcoes": [
+    "ulnar",
+    "radial",
+    "interósseo anterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b5593ba2f3a9",
+   "origem": "autoral",
+   "trecho": "na fratura em **flexão**, o **ulnar**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0566-tb1",
+   "questao": "pediatria-0566",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Mão da criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No exame lúdico da criança com fratura do antebraço, o gesto de joinha testa quais nervos?",
+   "resposta": "Radial e interósseo posterior",
+   "explicacao": "**Joinha:** radial e interósseo posterior. **OK:** interósseo anterior. **Cruzar os dedos:** ulnar.",
+   "opcoes": [
+    "Radial e interósseo posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b5593ba2f3a9",
+   "origem": "autoral",
+   "trecho": "| **Joinha** (extensão do polegar) e abrir a mão | **Radial** e **interósseo posterior** (extensores) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0566-tb2",
+   "questao": "pediatria-0566",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Mão da criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No exame lúdico da criança, cruzar os dedos ou abrir e fechar em leque testa qual nervo?",
+   "resposta": "Ulnar",
+   "explicacao": "**Cruzar os dedos:** **ulnar** (interósseos). **Joinha:** radial. **OK:** interósseo anterior.",
+   "opcoes": [
+    "Ulnar",
+    "Radial",
+    "Interósseo anterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b5593ba2f3a9",
+   "origem": "autoral",
+   "trecho": "| **Cruzar os dedos** ou abrir e fechar em leque | **Ulnar** (interósseos) |",
    "criadoEm": "2026-10-15"
   },
   {
@@ -3435,6 +3808,148 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0594-co1",
+   "questao": "pediatria-0594",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura irredutível do rádio distal da criança, qual é a manobra de redução fechada sob anestesia?",
+   "resposta": "exagerar a deformidade",
+   "explicacao": "**Exagerar a deformidade**, encostar borda com borda e então corrigir; se falhar, redução aberta pelo lado do bloqueio.",
+   "opcoes": [
+    "exagerar a deformidade"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "73351e317c11",
+   "origem": "autoral",
+   "trecho": "**primeiro**, tentar a redução fechada sob anestesia: **exagerar a deformidade**, levar a borda de um fragmento contra a do outro e então corrigir;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0594-tb1",
+   "questao": "pediatria-0594",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio distal da criança com desvio dorsal irredutível, qual músculo costuma se interpor no foco?",
+   "resposta": "pronador quadrado",
+   "explicacao": "O lado oposto ao desvio é estirado: no **desvio dorsal** se interpõem periósteo volar, **pronador quadrado** e flexores.",
+   "opcoes": [
+    "pronador quadrado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "73351e317c11",
+   "origem": "autoral",
+   "trecho": "| **Dorsal** (o mais comum) | Volar | Periósteo volar, **pronador quadrado**, tendões flexores, às vezes o nervo mediano |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0598-co1",
+   "questao": "pediatria-0598",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio da criança no terço proximal, em que posição se imobiliza o antebraço?",
+   "resposta": "supinação",
+   "explicacao": "**Proximal:** o supinador supina o fragmento proximal, imobilizar em **supinação**. **Médio:** neutra. **Distal:** pronação.",
+   "opcoes": [
+    "supinação",
+    "neutra",
+    "pronação"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "687ab022bd1f",
+   "origem": "autoral",
+   "trecho": "**terço proximal**: o supinador puxa o fragmento proximal em supinação, e o antebraço é imobilizado em **supinação**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0598-co2",
+   "questao": "pediatria-0598",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio da criança no terço distal, em que posição se imobiliza o antebraço?",
+   "resposta": "pronação",
+   "explicacao": "**Distal:** o pronador quadrado prona o fragmento distal, imobilizar em **pronação**.",
+   "opcoes": [
+    "supinação",
+    "neutra",
+    "pronação"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "687ab022bd1f",
+   "origem": "autoral",
+   "trecho": "**terço distal**: o pronador quadrado puxa o distal em pronação, e a posição é de **pronação**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0598-co3",
+   "questao": "pediatria-0598",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas fraturas diafisárias instáveis do antebraço ou no adolescente, qual implante se usa?",
+   "resposta": "haste intramedular elástica",
+   "explicacao": "**Haste intramedular elástica** (TEN); a maioria, porém, se trata com redução fechada e gesso.",
+   "opcoes": [
+    "haste intramedular elástica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "687ab022bd1f",
+   "origem": "autoral",
+   "trecho": "Nos instáveis ou nos adolescentes, usa-se a **haste intramedular elástica** (TEN).",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0602-cl1",
    "questao": "pediatria-0602",
    "area": "Ortopedia pediátrica",
@@ -3607,6 +4122,114 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0604-co1",
+   "questao": "pediatria-0604",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quanto do crescimento do antebraço vem da fise distal do rádio?",
+   "resposta": "75 a 80%",
+   "explicacao": "Cerca de **75 a 80%**: por isso o rádio distal remodela tanto.",
+   "opcoes": [
+    "75 a 80%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "f73a4d1796d5",
+   "origem": "autoral",
+   "trecho": "que responde por cerca de 75 a 80% do crescimento do antebraço.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0604-co2",
+   "questao": "pediatria-0604",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio distal da criança, qual posição de imobilização do punho favorece a síndrome aguda do túnel do carpo?",
+   "resposta": "flexão extrema",
+   "explicacao": "Também favorecem: desvio completo com cavalgamento e cotovelo flutuante. O punho não deve ficar em **flexão extrema**.",
+   "opcoes": [
+    "flexão extrema"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "f73a4d1796d5",
+   "origem": "autoral",
+   "trecho": "e quando o punho é imobilizado em **flexão extrema**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0606-co1",
+   "questao": "pediatria-0606",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução fechada da deformidade plástica do antebraço, quanta força se aplica?",
+   "resposta": "20 a 30 kg",
+   "explicacao": "**20 a 30 kg**, lenta e contínua, por 2 a 3 minutos, sobre fulcro acolchoado, sob anestesia geral.",
+   "opcoes": [
+    "20 a 30 kg"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "6102f9f5bca3",
+   "origem": "autoral",
+   "trecho": "**Força de 20 a 30 kg**, aplicada **lentamente** sobre as extremidades do osso.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0606-co2",
+   "questao": "pediatria-0606",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução da deformidade plástica do antebraço, por quanto tempo a força é mantida?",
+   "resposta": "2 a 3 minutos",
+   "explicacao": "**2 a 3 minutos** contínuos: as microfraturas cedem aos poucos; força rápida pode criar fratura completa instável.",
+   "opcoes": [
+    "2 a 3 minutos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "6102f9f5bca3",
+   "origem": "autoral",
+   "trecho": "Mantida de forma **contínua** por **2 a 3 minutos**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0607-cl1",
    "questao": "pediatria-0607",
    "area": "Ortopedia pediátrica",
@@ -3721,6 +4344,62 @@
    "fonte": "5be97c336f15",
    "origem": "autoral",
    "trecho": "| V | Equivalente ao Salter-Harris **IV** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0609-co1",
+   "questao": "pediatria-0609",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na avulsão Salter-Harris III do colateral ulnar do polegar na criança, a partir de qual desvio se opera?",
+   "resposta": "mais de 2 mm",
+   "explicacao": "Fragmento **com mais de 2 mm** de desvio, rodado, com mais de 10% a 25% da superfície ou instável: redução aberta.",
+   "opcoes": [
+    "mais de 2 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "01531e17e780",
+   "origem": "autoral",
+   "trecho": "Fragmento **desviado** ou rodado (mais de 2 mm, ou mais de 10% a 25% da superfície articular) ou instabilidade: **redução aberta**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0609-pc1",
+   "questao": "pediatria-0609",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A abdução forçada do polegar da criança avulsiona o colateral ulnar. Em que movimento avulsiona a placa volar?",
+   "resposta": "hiperextensão",
+   "explicacao": "**Placa volar:** **hiperextensão**, fragmento volar. **Colateral ulnar:** abdução, fragmento epifisário ulnar.",
+   "opcoes": [
+    "hiperextensão"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "01531e17e780",
+   "origem": "autoral",
+   "trecho": "| Placa volar | Avulsão da base volar na hiperextensão |",
    "criadoEm": "2026-10-15"
   },
   {
@@ -3861,6 +4540,34 @@
    "fonte": "542572223e85",
    "origem": "autoral",
    "trecho": "Em cerca de **20%** dos casos, há uma **lesão associada**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0612-pc1",
+   "questao": "pediatria-0612",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A força rotacional quebra rádio e ulna da criança em níveis diferentes. E a força angular pura?",
+   "resposta": "mesmo nível",
+   "explicacao": "**Angular:** **mesmo nível**, como galho dobrado. **Rotacional:** níveis diferentes, e a redução corrige a rotação.",
+   "opcoes": [
+    "mesmo nível"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "9cdf6871525d",
+   "origem": "autoral",
+   "trecho": "**força angular** (flexão ou extensão pura): os dois ossos quebram no **mesmo nível**, como um galho dobrado;",
    "criadoEm": "2026-10-15"
   },
   {
@@ -4116,6 +4823,90 @@
    "fonte": "3d37f8c6dc78",
    "origem": "autoral",
    "trecho": "Abaixo de **10 anos**, aceita-se quase qualquer desvio (até 70° de angulação e desvio total)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0621-ar1",
+   "questao": "pediatria-0621",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "No valgo de Cozen, a osteotomia precoce da tíbia resolve a deformidade?",
+   "resposta": "recidivar",
+   "explicacao": "Não é indicada: o valgo pode **recidivar** após a osteotomia; prefere-se observar e guiar o crescimento.",
+   "opcoes": [
+    "recidivar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "56b95d73832a",
+   "origem": "autoral",
+   "trecho": "A **osteotomia** precoce é desaconselhada, porque o valgo pode **recidivar** após ela.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0621-co1",
+   "questao": "pediatria-0621",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "No fenômeno de Cozen, após a fratura da metáfise proximal da tíbia, quando o valgo atinge o máximo?",
+   "resposta": "12 a 18 meses",
+   "explicacao": "O valgo atinge o máximo em **12 a 18 meses** e, na maioria, melhora sozinho.",
+   "opcoes": [
+    "12 a 18 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "56b95d73832a",
+   "origem": "autoral",
+   "trecho": "Atinge o **máximo em cerca de 12 a 18 meses**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0621-co2",
+   "questao": "pediatria-0621",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Valgo de Cozen persistente e importante: qual é o tratamento?",
+   "resposta": "hemiepifisiodese medial",
+   "explicacao": "**Hemiepifisiodese medial** temporária (placa em 8), após observar 18 a 24 meses.",
+   "opcoes": [
+    "hemiepifisiodese medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "56b95d73832a",
+   "origem": "autoral",
+   "trecho": "**hemiepifisiodese medial** temporária (placa em 8), que guia o crescimento.",
    "criadoEm": "2026-10-15"
   },
   {
@@ -4427,6 +5218,33 @@
    "fonte": "7d151bebf0e5",
    "origem": "autoral",
    "trecho": "| **Mais de 4 mm** ou fragmento rodado | **Redução aberta** e fixação |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0636-tb1",
+   "questao": "pediatria-0636",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na deformidade plástica do antebraço em criança acima de 4 anos, a partir de qual angulação se corrige?",
+   "resposta": "maior que 20°",
+   "explicacao": "Angulação **maior que 20°** acima de 4 anos, ou qualquer uma que bloqueie redução ou rotação.",
+   "opcoes": [
+    "maior que 20°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "c23af1901783",
+   "origem": "autoral",
+   "trecho": "| Angulação **maior que 20°** em criança **acima de 4 anos** | **Corrigir** |",
    "criadoEm": "2026-10-15"
   },
   {
