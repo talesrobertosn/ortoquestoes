@@ -83,6 +83,15 @@ function EntregaNacional({ sessao }: { sessao: EstadoSessao }) {
   )
 }
 
+/**
+ * A letra marcada, ou null na dissertativa. Decide pelo tipo da questão, não só
+ * pela letra gravada: sessões salvas antes da correção ainda têm 'A' nelas.
+ */
+function letraMarcada(l: { questao?: Questao | null; resposta?: Resposta | null }): string | null {
+  if (l.questao?.tipo === 'dissertativa') return null
+  return l.resposta?.escolhida ?? null
+}
+
 export function Resumo() {
   const { indice } = usarIndice()
   const { sessao, iniciarComAviso, finalizar } = usarSessao()
@@ -249,7 +258,7 @@ export function Resumo() {
           l.questao?.tema ?? '',
           l.questao?.ano ?? '',
           l.questao?.prova ?? '',
-          l.resposta?.escolhida ?? '',
+          letraMarcada(l) ?? '',
           l.questao?.gabarito ?? '',
           l.resposta?.confianca ?? '',
           l.resposta?.segundos ?? '',
@@ -472,7 +481,7 @@ export function Resumo() {
             const descricao =
               l.situacao === 'pulada' ? 'sem resposta'
                 : l.situacao === 'anulada' ? 'anulada'
-                  : `${l.situacao}, ${l.resposta!.escolhida ? `marcou ${l.resposta!.escolhida}` : 'autoavaliada'}${l.situacao === 'errada' && l.questao?.gabarito ? `, gabarito ${l.questao.gabarito}` : ''}${incerta ? `, ${ROTULO_CONFIANCA[l.resposta!.confianca!].toLowerCase()}` : ''}`
+                  : `${l.situacao}, ${letraMarcada(l) ? `marcou ${letraMarcada(l)}` : 'autoavaliada'}${l.situacao === 'errada' && l.questao?.gabarito ? `, gabarito ${l.questao.gabarito}` : ''}${incerta ? `, ${ROTULO_CONFIANCA[l.resposta!.confianca!].toLowerCase()}` : ''}`
             return (
               <li key={l.id}>
                 <a className={`rs-casa rs-casa--${l.situacao}${incerta ? ' rs-casa--incerta' : ''}`} href={href(`/questao/${l.id}`)} title={`Questão ${l.numero}: ${descricao}`} aria-label={`Questão ${l.numero}: ${descricao}`}>
@@ -522,11 +531,11 @@ export function Resumo() {
                         {l.situacao === 'pulada' ? (
                           <span className="rs-chip">Sem resposta</span>
                         ) : l.situacao === 'anulada' ? (
-                          <span className="rs-chip">Anulada{r!.escolhida ? ` · marcou ${r!.escolhida}` : ''}</span>
+                          <span className="rs-chip">Anulada{letraMarcada(l) ? ` · marcou ${letraMarcada(l)}` : ''}</span>
                         ) : (
                           <>
                             <span className={`rs-chip rs-chip--${l.situacao}`}>
-                              <Icone nome={l.situacao === 'certa' ? 'certo' : 'errado'} tamanho={13} /> {r!.escolhida ? `Marcou ${r!.escolhida}` : l.situacao === 'certa' ? 'Acertou (autoavaliação)' : 'Errou (autoavaliação)'}
+                              <Icone nome={l.situacao === 'certa' ? 'certo' : 'errado'} tamanho={13} /> {letraMarcada(l) ? `Marcou ${letraMarcada(l)}` : l.situacao === 'certa' ? 'Acertou (autoavaliação)' : 'Errou (autoavaliação)'}
                             </span>
                             {l.situacao === 'errada' && q?.gabarito && <span className="rs-chip rs-chip--gabarito">Gabarito {q.gabarito}</span>}
                           </>
