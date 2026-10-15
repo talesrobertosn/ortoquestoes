@@ -9,6 +9,7 @@ import { navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
 import { retornoAuth, definirAvisoConta, textoErroLink, validarRetornoUmaVez } from './retornoAuth'
 import { concluirGoogle, textoErroGoogle } from './google'
+import { tomarVoltar } from './passagem'
 import { aplicarConviteRecebido, conferirMinhaIndicacao } from './indicacao'
 import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
 import { verificarMarcoEmail } from './emailsMarco'
@@ -59,7 +60,8 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
         aguardandoRetorno = false
         if (ok && retorno.recuperacao) definirRecuperacao(true)
         if (!ok) definirAvisoConta(textoErroLink('otp_expired', retorno.recuperacao))
-        irPara(ok ? (retorno.recuperacao ? '/conta' : '/') : retorno.recuperacao ? '/conta?modo=recuperar' : '/conta')
+        // Cadastro confirmado: volta para onde a pessoa pediu a conta (planos, treinar...).
+        irPara(ok ? (retorno.recuperacao ? '/conta' : tomarVoltar() ?? '/') : retorno.recuperacao ? '/conta?modo=recuperar' : '/conta')
         definirCarregando(false)
       }
       void validarRetornoUmaVez(async () => {
@@ -97,7 +99,9 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
         // Volta do Google: aceite dos Termos e nome no perfil, e a pessoa volta
         // para onde estava. Fora do callback, que não pode aguardar o Auth.
         const destinoGoogle = doGoogle && proxima ? concluirGoogle(cliente, proxima.user) : null
-        url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = destinoGoogle ?? (falhou && deRecuperacao ? '/conta?modo=recuperar' : '/conta')
+        // Link de confirmação do cadastro (?conta=confirmar&code=): mesma volta guardada no cadastro.
+        const destinoCadastro = !doGoogle && !deRecuperacao && proxima ? tomarVoltar() : null
+        url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = destinoGoogle ?? destinoCadastro ?? (falhou && deRecuperacao ? '/conta?modo=recuperar' : '/conta')
         window.history.replaceState(null, '', url.href)
         window.dispatchEvent(new HashChangeEvent('hashchange'))
       }

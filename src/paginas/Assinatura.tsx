@@ -8,7 +8,8 @@ import { Simbolo } from '../marca/Simbolo'
 import { JanelaCentral } from '../componentes/JanelaCentral'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { eventoMeta } from '../conta/consentimento'
-import { href } from '../util/rotas'
+import { href, navegar } from '../util/rotas'
+import { linkConta } from '../conta/passagem'
 import { FLASHCARDS_NA_VENDA, recurso, LIMITE_GRATIS_ATUAL, ROTULO_SIMULADOS } from '../config'
 import { MENSAL, PLANOS, real, ECONOMIA_ANUAL } from '../dados/planos'
 import { AREAS, BASE_CONTAGEM } from '../dados/incidencia'
@@ -51,7 +52,7 @@ const GANHOS: Array<{ icone: NomeIconePixel; titulo: string; texto: string; iten
   { icone: 'turma', titulo: 'Saiba onde você está', texto: 'Compare com quem estuda para a mesma prova e chegue sabendo o que falta.', itens: ['Como a turma respondeu cada alternativa', 'Simulado Nacional todo mês, com sua posição', 'Liga da residência e relatório do mês'] },
 ]
 
-export function Assinatura() {
+export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao } = usarConta()
   const [metricas, definirMetricas] = useState<MetricasConta | null>(null)
   const [mensagem, definirMensagem] = useState<string | null>(null)
@@ -61,7 +62,8 @@ export function Assinatura() {
   const [meioPagamento, definirMeioPagamento] = useState<'cartao' | 'pix'>(pixHabilitado ? 'pix' : 'cartao')
   const [cpf, definirCpf] = useState('')
   const [pix, definirPix] = useState<{ url: string; pedido_id: string; expira_em: string } | null>(null)
-  const [vitrine, definirVitrine] = useState<Plano>(PLANO_ANUAL)
+  // ?plano= mantém o plano escolhido por quem criou a conta a partir desta página.
+  const [vitrine, definirVitrine] = useState<Plano>(() => PLANOS.find((p) => p.id === consulta?.get('plano')) ?? PLANO_ANUAL)
   const [barraVisivel, definirBarraVisivel] = useState(false)
   const heroi = useRef<HTMLElement>(null)
   const locais = useMemo(() => Object.values(lerRespondidas()), [])
@@ -117,9 +119,9 @@ export function Assinatura() {
     definirAceitouCondicoes(false)
     definirMensagem(null)
   }
-  /** Botões de compra da página: sem conta, cria a conta e volta para cá. */
+  /** Botões de compra da página: sem conta, cria a conta e volta para cá, com o plano escolhido. */
   function comprar(plano: Plano) {
-    if (!sessao) { location.assign(href('/conta?modo=criar&voltar=%2Fassinatura')); return }
+    if (!sessao) { navegar(linkConta('criar', `/assinatura?plano=${plano.id}`)); return }
     if (!pagamentosHabilitados) { irPara('planos'); return }
     escolher(plano)
   }
@@ -298,7 +300,7 @@ export function Assinatura() {
                 <p className="vd-plano__total">{p.meses === 1 ? 'cobrado todo mês, sem fidelidade' : <><b>{real(p.total)}</b> {periodo(p)} · de <s>{real(cheio)}</s></>}</p>
                 <p className="vd-plano__dia"><Icone nome="relogio" tamanho={14} /> {centavos(porDia(p))} por dia de estudo</p>
                 {!sessao
-                  ? <a className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} href={href('/conta?modo=criar&voltar=%2Fassinatura')}>Criar conta para assinar</a>
+                  ? <a className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} href={href(linkConta('criar', `/assinatura?plano=${p.id}`))}>Criar conta para assinar</a>
                   : <button className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} type="button" disabled={!pagamentosHabilitados || (ativa && !renovarPix)} onClick={() => escolher(p)}>{rotuloComprar(p)}</button>}
               </article>
             )

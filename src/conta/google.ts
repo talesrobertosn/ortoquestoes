@@ -4,6 +4,8 @@ import { chave, supabase, url, type ClienteSupabase } from './supabase'
 import { dadosAceiteTermos, VERSAO_TERMOS } from './termos'
 import { dadosOrigem } from './origem'
 import { eventoMeta } from './consentimento'
+import { rotaDe } from '../util/rotas'
+import { guardarVoltar, rotaVoltar, tomarVoltar } from './passagem'
 
 /**
  * Entrar com o Google (OAuth pelo Supabase, fluxo PKCE).
@@ -42,8 +44,12 @@ export function usarGoogleDisponivel(): boolean {
 export async function entrarComGoogle(): Promise<string | null> {
   if (!supabase) return 'Contas indisponíveis no momento.'
   const rota = window.location.hash.replace(/^#/, '') || '/'
+  // Na página de conta, o destino é o `voltar=` que trouxe a pessoa até ali
+  // (planos, treinar...); sem ele, a capa.
+  const voltarPara = rota.startsWith('/conta') ? rotaVoltar(rotaDe(rota).consulta.get('voltar')) ?? '/' : rota
+  guardarVoltar(null)
   try {
-    sessionStorage.setItem(PEDIDO, JSON.stringify({ voltarPara: rota.startsWith('/conta') ? '/' : rota, em: Date.now() }))
+    sessionStorage.setItem(PEDIDO, JSON.stringify({ voltarPara, em: Date.now() }))
   } catch { /* armazenamento indisponível: volta para o início */ }
   const retorno = new URL(window.location.pathname, window.location.origin)
   retorno.searchParams.set('conta', 'google')
@@ -72,8 +78,9 @@ function lerPedido(): Pedido | null {
  */
 export function concluirGoogle(cliente: ClienteSupabase, usuario: User | null): string {
   const pedido = lerPedido()
+  const guardado = tomarVoltar()
   if (usuario && pedido) void completarPerfil(cliente, usuario)
-  return pedido?.voltarPara || '/'
+  return pedido?.voltarPara || guardado || '/'
 }
 
 async function completarPerfil(cliente: ClienteSupabase, usuario: User) {
