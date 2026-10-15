@@ -2,6 +2,758 @@
  "area": "pediatria",
  "flashcards": [
   {
+   "id": "fc-pediatria-0007-cl1",
+   "questao": "pediatria-0007",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Aitken da DFFP, qual tipo tem cabeça presente, acetábulo normal e defeito subtrocantérico que ossifica, deixando coxa vara?",
+   "resposta": "A",
+   "explicacao": "**Aitken A:** a falha cartilaginosa **ossifica** e sobra coxa vara grave. No **B**, a falha persiste como pseudoartrose do colo.",
+   "opcoes": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9387aba3ef4a",
+   "origem": "autoral",
+   "trecho": "| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0007-cl2",
+   "questao": "pediatria-0007",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Aitken da DFFP, qual tipo tem cabeça presente, mas a conexão com a diáfise não ossifica e fica uma pseudoartrose no colo?",
+   "resposta": "B",
+   "explicacao": "**Aitken B:** cabeça presente, acetábulo adequado ou levemente displásico, **pseudoartrose** persistente no colo. Nos tipos A e B existe quadril potencial.",
+   "opcoes": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9387aba3ef4a",
+   "origem": "autoral",
+   "trecho": "| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0007-cl3",
+   "questao": "pediatria-0007",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Aitken da DFFP, qual tipo tem cabeça e acetábulo ausentes e fêmur muito curto?",
+   "resposta": "D",
+   "explicacao": "**Aitken D:** sem cabeça, sem acetábulo, sem articulação. Nos tipos C e D, a regra é a **adaptação protética**.",
+   "opcoes": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9387aba3ef4a",
+   "origem": "autoral",
+   "trecho": "| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0007-co1",
+   "questao": "pediatria-0007",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na rotacionplastia de Van Nes, para deficiências femorais graves, o tornozelo é girado quantos graus para funcionar como joelho?",
+   "resposta": "180°",
+   "explicacao": "**180°:** o tornozelo rodado vira um \"joelho\" dentro da prótese.",
+   "opcoes": [
+    "180°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9387aba3ef4a",
+   "origem": "autoral",
+   "trecho": "**rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0009-co1",
+   "questao": "pediatria-0009",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia fibular, como se corrige o joelho valgo dado pela hipoplasia do côndilo lateral?",
+   "resposta": "hemiepifisiodese medial",
+   "explicacao": "**Hemiepifisiodese medial**, junto com o alongamento e a reconstrução do tornozelo (SUPERankle de Paley).",
+   "opcoes": [
+    "hemiepifisiodese medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a6a9d55f8c17",
+   "origem": "autoral",
+   "trecho": "correção do valgo do joelho por **hemiepifisiodese** medial",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0009-tb1",
+   "questao": "pediatria-0009",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pela classificação de Frantz e O'Rahilly, como se classifica a ausência da fíbula com ausência dos raios laterais do pé?",
+   "resposta": "Longitudinal terminal",
+   "explicacao": "**Longitudinal terminal:** falta um lado do membro até a ponta. Com o pé normal, seria **longitudinal intercalar**.",
+   "opcoes": [
+    "Longitudinal terminal",
+    "Longitudinal intercalar",
+    "Transversal terminal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a6a9d55f8c17",
+   "origem": "autoral",
+   "trecho": "| Ausência da fíbula **com ausência** dos raios laterais do pé | Longitudinal **terminal** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0009-tb2",
+   "questao": "pediatria-0009",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pela classificação de Frantz e O'Rahilly, como se classifica a focomelia, em que a mão sai do ombro?",
+   "resposta": "Transversal intercalar",
+   "explicacao": "**Transversal intercalar:** falta um segmento intermediário em toda a largura, com as partes distais presentes.",
+   "opcoes": [
+    "Transversal intercalar",
+    "Transversal terminal",
+    "Longitudinal intercalar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a6a9d55f8c17",
+   "origem": "autoral",
+   "trecho": "| Focomelia | Transversal intercalar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0009-tb3",
+   "questao": "pediatria-0009",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia fibular, qual coalizão tarsal acompanha o pé em equinovalgo?",
+   "resposta": "talocalcaneana",
+   "explicacao": "**Coalizão talocalcaneana**, com ausência de raios laterais e tornozelo em \"bola e soquete\".",
+   "opcoes": [
+    "talocalcaneana"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a6a9d55f8c17",
+   "origem": "autoral",
+   "trecho": "| **Pé** | **Equinovalgo**, **coalizão tarsal** (talocalcaneana), ausência dos raios laterais",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-cl1",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Jones da hemimelia tibial, qual tipo é a ausência completa da tíbia com epífise distal do fêmur hipoplásica?",
+   "resposta": "1a",
+   "explicacao": "**Jones 1a:** tíbia totalmente ausente. No **1b**, a tíbia proximal existe mas não está ossificada ao nascer.",
+   "opcoes": [
+    "1a",
+    "1b",
+    "2",
+    "4"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "| **1a** | **Ausência completa** da tíbia; epífise distal do fêmur **hipoplásica** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-cl2",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Jones da hemimelia tibial, o que caracteriza o tipo 4?",
+   "resposta": "Diástase tibiofibular distal",
+   "explicacao": "**Jones 4: diástase tibiofibular distal**; trata-se com reconstrução da pinça do tornozelo ou Syme.",
+   "opcoes": [
+    "Diástase tibiofibular distal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "| 4 | **Diástase** tibiofibular distal |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-cl3",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia tibial tipo 1b de Jones, como está a tíbia proximal ao nascer?",
+   "resposta": "não ossificada",
+   "explicacao": "**Presente, mas não ossificada**: só aparece na ultrassonografia ou na ressonância.",
+   "opcoes": [
+    "não ossificada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "| 1b | Tíbia proximal presente, mas **não ossificada** ao nascer (vista na ultrassonografia ou ressonância) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-co1",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia tibial tipo 1 de Jones, qual achado define o tratamento?",
+   "resposta": "quadríceps funcionante",
+   "explicacao": "**Quadríceps funcionante.** Sem ele: **desarticulação do joelho** e prótese. Com extensão ativa: pode-se tentar centralizar a fíbula (Brown).",
+   "opcoes": [
+    "quadríceps funcionante"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "No tipo 1, o que define o tratamento é a **presença de um quadríceps funcionante**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-co2",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia tibial tipo 1a com quadríceps e extensão ativa, qual cirurgia centraliza a fíbula sob o fêmur?",
+   "resposta": "Brown",
+   "explicacao": "**Cirurgia de Brown:** centralização da fíbula. Os resultados são irregulares, com contratura em flexão.",
+   "opcoes": [
+    "Brown"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "pode-se tentar a **centralização da fíbula** sob o fêmur (cirurgia de Brown)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-ar1",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Antes da fratura, faz-se osteotomia corretiva para endireitar a tíbia com encurvamento anterolateral?",
+   "resposta": "Não",
+   "explicacao": "**Não:** a osteotomia vira pseudoartrose. Protege-se a tíbia com **órtese** (concha, AFO ou KAFO).",
+   "opcoes": [
+    "Não"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "**Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-co1",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na pseudoartrose congênita da tíbia, qual tecido ao redor do foco estrangula o osso e precisa ser ressecado?",
+   "resposta": "hamartoma fibroso",
+   "explicacao": "**Hamartoma fibroso** com periósteo espessado. A ressecção completa é parte fundamental da cirurgia.",
+   "opcoes": [
+    "hamartoma fibroso"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-co2",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No encurvamento congênito posteromedial da tíbia, qual é a discrepância de comprimento média ao fim do crescimento?",
+   "resposta": "3 a 4 cm",
+   "explicacao": "**Em média 3 a 4 cm.** A angulação se corrige sozinha, mas a discrepância persiste: epifisiodese contralateral ou alongamento.",
+   "opcoes": [
+    "3 a 4 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "Ao final, chega em média a **3 a 4 cm**, com variação ampla.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-co3",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na pseudoartrose congênita da tíbia, qual técnica que une tíbia e fíbula tem mostrado bons resultados?",
+   "resposta": "cross-union",
+   "explicacao": "**Cross-union**, junto com ressecção do hamartoma, haste ou Ilizarov e enxerto autólogo.",
+   "opcoes": [
+    "cross-union"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-tb1",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual direção de encurvamento congênito da tíbia indica pseudoartrose congênita, ligada à NF1, de mau prognóstico?",
+   "resposta": "Anterolateral",
+   "explicacao": "**Anterolateral é a ruim:** tende a fraturar e não consolidar. Posteromedial é benigno; anteromedial acompanha a hemimelia fibular.",
+   "opcoes": [
+    "Anterolateral",
+    "Posteromedial",
+    "Anteromedial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-tb2",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O encurvamento congênito anteromedial da tíbia, com covinha cutânea, acompanha qual deficiência?",
+   "resposta": "Hemimelia fibular",
+   "explicacao": "**Hemimelia fibular:** discrepância importante e deformidade do pé e do tornozelo.",
+   "opcoes": [
+    "Hemimelia fibular",
+    "Pseudoartrose congênita"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0045-cl1",
+   "questao": "pediatria-0045",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções",
+    "Pseudartrose congênita da tíbia e deformidades da perna"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Paley da deficiência femoral congênita, o que caracteriza o tipo 4?",
+   "resposta": "fêmur distal ausente",
+   "explicacao": "**Paley 1 a 4:** do fêmur intacto (ossificação normal ou retardada) ao **fêmur distal ausente**. Orienta a reconstrução em etapas.",
+   "opcoes": [
+    "fêmur distal ausente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "f4f81208e238",
+   "origem": "autoral",
+   "trecho": "tipo 1 (fêmur intacto, com ossificação normal ou retardada) até tipo 4 (fêmur distal ausente)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0076-cl1",
+   "questao": "pediatria-0076",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Gillespie da deficiência femoral, qual é a indicação para o grupo B, a DFFP verdadeira com fêmur abaixo de 50%?",
+   "resposta": "Adaptação protética",
+   "explicacao": "**Grupo B: adaptação protética** (Syme, artrodese do joelho, rotacionplastia). **Grupo A:** alongamento e reconstrução.",
+   "opcoes": [
+    "Adaptação protética",
+    "Alongamento"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "e19af94cf01b",
+   "origem": "autoral",
+   "trecho": "| **B** | **DFFP verdadeira**: fêmur com **menos de 50%**; quadril instável; o pé fica na altura do **joelho** contralateral ou acima | **Adaptação protética** (amputação de Syme, artrodese do joelho, rotacionplastia) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0076-co1",
+   "questao": "pediatria-0076",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na deficiência femoral, o percentual de encurtamento é constante. Qual método estima cedo a discrepância final?",
+   "resposta": "multiplicador de Paley",
+   "explicacao": "**Método multiplicador de Paley.** Até cerca de 15 a 20 cm previstos podem ser tratados com alongamentos em centros experientes.",
+   "opcoes": [
+    "multiplicador de Paley"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "e19af94cf01b",
+   "origem": "autoral",
+   "trecho": "a discrepância final pode ser estimada cedo (método multiplicador de Paley)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0085-co1",
+   "questao": "pediatria-0085",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na coxa vara congênita, como se chama o fragmento ósseo triangular entre as duas linhas em V invertido do colo?",
+   "resposta": "triângulo de Fairbank",
+   "explicacao": "**Triângulo de Fairbank**, na porção **inferomedial** do colo, junto à fise.",
+   "opcoes": [
+    "triângulo de Fairbank"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "83666d4bb240",
+   "origem": "autoral",
+   "trecho": "Entre elas fica um **fragmento ósseo triangular**: o **triângulo de Fairbank**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0085-co2",
+   "questao": "pediatria-0085",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a marcha típica da criança com coxa vara congênita?",
+   "resposta": "Trendelenburg indolor",
+   "explicacao": "**Trendelenburg indolor:** o trocânter alto encurta e enfraquece o glúteo médio. Há também limitação da abdução e da rotação interna.",
+   "opcoes": [
+    "Trendelenburg indolor"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "83666d4bb240",
+   "origem": "autoral",
+   "trecho": "Marcha de **Trendelenburg indolor** (o glúteo médio encurtado e enfraquecido pelo trocânter alto)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0085-tb1",
+   "questao": "pediatria-0085",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na coxa vara congênita, com ângulo de Hilgenreiner-epifisário maior que 60°, qual é a conduta?",
+   "resposta": "osteotomia valgizante",
+   "explicacao": "**Acima de 60°:** tende a progredir, **osteotomia valgizante** subtrocantérica. **Abaixo de 45°:** tende a corrigir; observar.",
+   "opcoes": [
+    "osteotomia valgizante",
+    "observar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "83666d4bb240",
+   "origem": "autoral",
+   "trecho": "| **Maior que 60°** | Tende a **progredir**; **osteotomia valgizante** subtrocantérica |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0085-tb2",
+   "questao": "pediatria-0085",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na coxa vara congênita, como evolui o quadril com ângulo de Hilgenreiner-epifisário menor que 45°?",
+   "resposta": "corrigir espontaneamente",
+   "explicacao": "**Abaixo de 45°: tende a corrigir espontaneamente**; observar. De 45 a 60°: acompanhar.",
+   "opcoes": [
+    "corrigir espontaneamente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "83666d4bb240",
+   "origem": "autoral",
+   "trecho": "| Menor que 45° | Tende a **corrigir espontaneamente**; observar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0132-co1",
+   "questao": "pediatria-0132",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções",
+    "Pseudartrose congênita da tíbia e deformidades da perna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a deficiência longitudinal mais comum dos ossos longos?",
+   "resposta": "hemimelia fibular",
+   "explicacao": "**Hemimelia fibular:** fíbula ausente ou hipoplásica, tíbia curta com arqueamento **anteromedial**, pé equinovalgo, joelho valgo e cruzados ausentes.",
+   "opcoes": [
+    "hemimelia fibular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "4ffd5bdf22f7",
+   "origem": "autoral",
+   "trecho": "**A hemimelia fibular.** É a deficiência longitudinal **mais comum** dos ossos longos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0426-co1",
    "questao": "pediatria-0426",
    "area": "Ortopedia pediátrica",
