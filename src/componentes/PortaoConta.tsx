@@ -1,6 +1,6 @@
 import { Painel } from './Painel'
 import { href } from '../util/rotas'
-import { FRASE_GRATIS } from '../config'
+import { fraseGratis } from '../config'
 import { linkConta } from '../conta/passagem'
 
 /**
@@ -15,7 +15,7 @@ export function PortaoConta({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
     <Painel titulo="Crie sua conta para responder" aberto={aberto} aoFechar={aoFechar}>
       <div className="empilha">
         <p>Para responder, é preciso ter uma conta. Criar leva menos de um minuto e não pede cartão.</p>
-        <p className="texto-2">{FRASE_GRATIS}</p>
+        <p className="texto-2">{fraseGratis('frase')}</p>
         <div className="linha linha--empilha-celular">
           <a className="botao botao--principal" href={href(linkConta('criar'))}>
             Criar conta gratuita

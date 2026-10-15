@@ -6,7 +6,7 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { Icone } from '../componentes/Icone'
 import { useMemo, useState } from 'react'
-import { SITE, TEXTO_GRATIS } from '../config'
+import { EXIGIR_CONTA_PARA_QUESTOES, SITE, fraseGratis } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
@@ -42,10 +42,11 @@ export function Sobre() {
         <p className="pj-heroi__selo">O projeto</p>
         <h1>Questões de ortopedia comentadas, feitas por quem vive a especialidade.</h1>
         <p className="pj-heroi__lide">
-          O Orto Questões (também escrito OrtoQuestões, no endereço ortoquestoes.com.br) reúne questões de provas anteriores (TEOT, TARO, R4 do ENARE, TECOC de ombro e cotovelo e outras),
-          organizadas por assunto, para quem se prepara para o título de especialista ou para a
-          residência. Foi criado por um residente de ortopedia para quem estuda entre plantões e
-          cirurgias: da página inicial até a primeira questão, no máximo dois cliques.
+          O Orto Questões (ortoquestoes.com.br, também escrito OrtoQuestões) reúne questões de provas
+          anteriores, como TEOT, TARO, R4 do ENARE e TECOC de ombro e cotovelo, organizadas por assunto,
+          para quem se prepara para o título de especialista ou para a residência. Foi criado por um
+          residente de ortopedia para estudar entre plantões e cirurgias: da página inicial à primeira
+          questão, no máximo dois cliques.
         </p>
         {indice && (
           <dl className="pj-heroi__numeros">
@@ -60,24 +61,24 @@ export function Sobre() {
       <section className="pj-secao">
         <header className="pj-secao__cabeca">
           <p className="meta">OS COMENTÁRIOS</p>
-          <h2>Como cada comentário é construído</h2>
-          <p>Todo comentário segue o mesmo roteiro: o conceito por trás da questão, por que a alternativa correta está certa e por que cada uma das outras está errada.</p>
+          <h2>Como cada comentário é feito</h2>
+          <p>Sempre o mesmo roteiro: o conceito por trás da questão, por que a correta está certa e por que cada uma das outras está errada.</p>
         </header>
         <ol className="pj-passos">
           <li className="pj-passo">
             <span className="pj-passo__icone"><Icone nome="livro" tamanho={22} /></span>
             <h3>Bibliografia de referência</h3>
-            <p>A base é a literatura que as bancas cobram: os tratados clássicos da ortopedia, as classificações oficiais e os guias das sociedades.</p>
+            <p>A base é o que as bancas cobram: os tratados clássicos, as classificações oficiais e os guias das sociedades.</p>
           </li>
           <li className="pj-passo">
             <span className="pj-passo__icone"><Icone nome="raio" tamanho={22} /></span>
             <h3>Redação com apoio de IA</h3>
-            <p>A inteligência artificial pode ser usada para organizar e redigir a explicação a partir dessas fontes. Ela é ferramenta de escrita, não a fonte do conteúdo.</p>
+            <p>A inteligência artificial pode organizar e redigir a explicação a partir dessas fontes. É ferramenta de escrita, não fonte.</p>
           </li>
           <li className="pj-passo">
             <span className="pj-passo__icone"><Icone nome="alvo" tamanho={22} /></span>
-            <h3>Fontes à vista e correção contínua</h3>
-            <p>Quando o comentário cita fontes específicas, elas aparecem no fim, com livro e capítulo. Se o gabarito da banca parece errado, o comentário avisa. Erro relatado é corrigido.</p>
+            <h3>Fontes à vista, correção contínua</h3>
+            <p>Fontes específicas aparecem no fim, com livro e capítulo. Gabarito da banca que parece errado vem com aviso. Erro relatado é corrigido.</p>
           </li>
         </ol>
         <div className="pj-biblio">
@@ -86,12 +87,12 @@ export function Sobre() {
         </div>
         <p className="pj-nota">
           <Icone nome="alerta" tamanho={16} />
-          <span>Comentário de questão é material de estudo e não substitui o livro nem a conduta do seu serviço. Quando uma questão passar por revisão médica individual, isso aparece indicado nela.</span>
+          <span>Comentário é material de estudo: não substitui o livro nem a conduta do seu serviço.</span>
         </p>
         <aside className="pj-ia" aria-labelledby="pj-ia-titulo">
           <h3 id="pj-ia-titulo">Sobre o uso de inteligência artificial</h3>
-          <p>Todo o conteúdo parte da <strong>bibliografia de referência</strong> da especialidade. Para dar conta de milhares de questões, usamos inteligência artificial para redigir parte dos textos: comentários, explicações e o enunciado de algumas questões autorais, como as dos OrtoQuestões Simulados.</p>
-          <p>A IA escreve bem, mas <strong>pode acrescentar algo que não está na fonte</strong>, simplificar demais ou errar um detalhe, mesmo com tom seguro. Por isso, trate cada comentário como ponto de partida: <strong>confira sempre na bibliografia indicada</strong> antes de levar a informação para a prova ou para a prática. Se encontrar algo estranho, use o <a href={href('/contato')}>relato de erro</a> ou o botão "Não ajudou" no próprio comentário: é assim que o texto é corrigido.</p>
+          <p>Tudo parte da <strong>bibliografia de referência</strong>. A IA redige parte dos textos: comentários, explicações e o enunciado de algumas questões autorais, como as dos OrtoQuestões Simulados.</p>
+          <p>Ela escreve bem, mas <strong>pode acrescentar algo que não está na fonte</strong>, simplificar demais ou errar um detalhe, mesmo com tom seguro. Use o comentário como ponto de partida e <strong>confira na bibliografia indicada</strong> antes de levar para a prova ou para a prática. Achou algo estranho? Use o <a href={href('/contato')}>relato de erro</a> ou o botão "Não ajudou" no comentário: é assim que o texto é corrigido.</p>
         </aside>
       </section>
 
@@ -100,21 +101,19 @@ export function Sobre() {
           <span className="pj-cartao__icone"><Icone nome="usuario" tamanho={20} /></span>
           <h2>Comentários da comunidade</h2>
           <p>
-            Conhecimento de prova circula melhor quando é compartilhado. Quem passou pelo TEOT sabe
-            explicar a questão que caiu; quem está estudando agora tem a dúvida fresca. Toda questão
-            tem um botão para você enviar o seu comentário: o macete que ficou, a divergência entre
-            serviços, a referência que a banca costuma seguir. Ele é conferido e publicado com o
-            seu crédito.
+            Toda questão tem um botão para você enviar o seu comentário: o macete que ficou, a
+            divergência entre serviços, a referência que a banca costuma seguir. Ele é conferido e
+            publicado com o seu crédito.
           </p>
         </section>
         <section className="pj-cartao">
           <span className="pj-cartao__icone"><Icone nome="mapa" tamanho={20} /></span>
           <h2>O acervo</h2>
           <p>
-            As questões são transcritas dos cadernos oficiais, sem reescrita nem correção do enunciado; os
-            do TARO estão na página pública da <a href="https://sbot.org.br/comissoes/sobre-a-sbot-comissao-ensino-treinamento/taro/" target="_blank" rel="noopener noreferrer">Comissão de Ensino e Treinamento da SBOT</a>. O
-            gabarito vem da própria prova ou, quando a banca não publica um oficial, de uma resposta
-            justificada e sinalizada como tal. Anuladas ficam marcadas e não contam no desempenho.
+            Questões transcritas dos cadernos oficiais, sem reescrever nem corrigir o enunciado (os do
+            TARO estão na página pública da <a href="https://sbot.org.br/comissoes/sobre-a-sbot-comissao-ensino-treinamento/taro/" target="_blank" rel="noopener noreferrer">Comissão de Ensino e Treinamento da SBOT</a>).
+            O gabarito é o da prova; quando a banca não publica um oficial, vem uma resposta justificada
+            e sinalizada como tal. Anuladas ficam marcadas e não contam no desempenho.
           </p>
           <ul className="pj-temas">{TEMAS_ACERVO.map((t) => <li key={t}>{t}</li>)}</ul>
         </section>
@@ -124,26 +123,24 @@ export function Sobre() {
         <section className="pj-cartao">
           <h2>Como funciona hoje</h2>
           <p>
-            O acervo inteiro está disponível para responder. A conta guarda suas respostas, revisões
-            e desempenho em qualquer aparelho. No futuro pretendo cobrar uma taxa pequena para manter
-            o projeto de pé, preservando um uso diário livre. Qualquer mudança será avisada aqui, com
-            antecedência.
+            {EXIGIR_CONTA_PARA_QUESTOES ? 'Para responder, crie uma conta grátis, sem cartão. ' : ''}A conta
+            guarda respostas, revisões e desempenho em qualquer aparelho. {fraseGratis('sobre')}{' '}
+            <a href={href('/assinatura')}>Veja os planos</a>. Mudanças no gratuito são avisadas no site.
           </p>
         </section>
         <section className="pj-cartao">
           <h2>Seus dados</h2>
           <p>
-            Respostas, revisões, favoritas, anotações e histórico ficam na sua conta, sincronizados
-            pelo Supabase com acesso restrito a você. Exporte ou zere seu progresso quando quiser em{' '}
+            Respostas, revisões, favoritas, anotações e histórico ficam na sua conta, sincronizados pelo
+            Supabase, com acesso restrito a você. Para exportar seu progresso, use{' '}
             <a href={href('/dados')}>Desempenho</a>.
           </p>
         </section>
         <section className="pj-cartao">
           <h2>Achou um erro?</h2>
           <p>
-            Extração de PDF erra. Enunciado truncado, figura faltando ou gabarito estranho: use o{' '}
-            <a href={href('/contato')}>relato de erro</a>. Uma questão com gabarito errado é pior do
-            que uma questão ausente.
+            Extração de PDF erra: enunciado truncado, figura faltando, gabarito estranho. Use o{' '}
+            <a href={href('/contato')}>relato de erro</a>. Gabarito errado é pior do que questão ausente.
           </p>
         </section>
       </div>
@@ -152,9 +149,9 @@ export function Sobre() {
         <div>
           <h2>Bora estudar?</h2>
           <p>
-            Acompanhe também no Instagram,{' '}
+            No Instagram,{' '}
             <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me">@{SITE.instagramUsuario}</a>,
-            com questão comentada e avisos de acervo novo. Feito por {SITE.autor}.
+            tem questão comentada e aviso de acervo novo. Feito por {SITE.autor}.
           </p>
         </div>
         <div className="linha linha--empilha-celular">
@@ -431,7 +428,7 @@ export function DadosLocais() {
         </div>
       </section>
 
-      {!conta && <p className="aviso-ia">Crie uma conta gratuita ({TEXTO_GRATIS.curto}) para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
+      {!conta && <p className="aviso-ia">Crie uma conta gratuita ({fraseGratis('curto')}) para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
       {conta && !armazenamentoDisponivel() && (
         <div className="estado">
           <p className="estado__titulo">Este navegador está com o armazenamento bloqueado.</p>

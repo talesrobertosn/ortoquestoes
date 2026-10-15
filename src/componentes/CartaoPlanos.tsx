@@ -4,6 +4,7 @@ import { href } from '../util/rotas'
 import { Icone } from './Icone'
 import { IconePixel } from './IconePixel'
 import { A_PARTIR_DE } from '../dados/planos'
+import { fraseGratis } from '../config'
 
 /**
  * Acesso fácil aos planos, no tom de um atalho: sem preço, sem urgência.
@@ -17,7 +18,7 @@ export function CartaoPlanos() {
       <span className="inicio-planos-atalho__icone"><IconePixel nome="planos" tamanho={52} /></span>
       <span className="inicio-planos-atalho__texto">
         <strong>{assinante ? 'Sua assinatura' : 'Planos e assinatura'}</strong>{!assinante && <em>a partir de {A_PARTIR_DE}/mês · Pix ou cartão</em>}
-        <small>{assinante ? 'Plano, renovação e pagamentos em um só lugar.' : 'Cronograma pelo que mais cai, Simulado Nacional e questões sem limite.'}</small>
+        <small>{assinante ? 'Plano, renovação e pagamentos em um só lugar.' : fraseGratis('cartaoPlanos')}</small>
       </span>
       <span className="inicio-planos-atalho__acao">{assinante ? 'Ver detalhes' : 'Conhecer os planos'} <Icone nome="direita" tamanho={16} /></span>
     </a>

@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis } from '../conta/supabase'
-import { EXIGIR_CONTA_PARA_QUESTOES, TEXTO_GRATIS } from '../config'
+import { EXIGIR_CONTA_PARA_QUESTOES, fraseGratis } from '../config'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
 import { ModalEntrar } from './ModalEntrar'
@@ -26,8 +26,8 @@ export function ExigeConta({ caminho, children }: { caminho: string; children: R
         Criar a conta não pede cartão e leva menos de um minuto.
       </p>
       <p className="exige-conta__gratis">
-        <strong>A conta é grátis</strong> {TEXTO_GRATIS.exige}
-        Entre, pratique e aproveite. {TEXTO_GRATIS.exigePlanos} <a href={href('/assinatura')}>conheça os planos</a>.
+        <strong>A conta é grátis</strong> {fraseGratis('exige')}
+        Entre, pratique e aproveite. {fraseGratis('exigePlanos')} <a href={href('/assinatura')}>conheça os planos</a>.
       </p>
       <ul className="exige-conta__lista">
         <li><Icone nome="grafico" tamanho={18} /> Responda no celular no plantão e continue no computador em casa</li>

@@ -10,7 +10,7 @@ import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { eventoMeta } from '../conta/consentimento'
 import { href, navegar } from '../util/rotas'
 import { linkConta } from '../conta/passagem'
-import { FLASHCARDS_NA_VENDA, recurso, LIMITE_GRATIS_ATUAL, ROTULO_SIMULADOS } from '../config'
+import { FLASHCARDS_NA_VENDA, recurso, ROTULO_SIMULADOS, LIMITES_HABILITADOS, fraseGratis } from '../config'
 import { MENSAL, PLANOS, real, ECONOMIA_ANUAL } from '../dados/planos'
 import { AREAS, BASE_CONTAGEM } from '../dados/incidencia'
 import { chaveDia } from '../estado/limiteDiario'
@@ -32,7 +32,8 @@ const ORDEM_PLANOS = [PLANO_MENSAL, PLANO_ANUAL, PLANO_SEMESTRAL]
 
 const pagamentosHabilitados = import.meta.env.VITE_PAGAMENTOS_HABILITADOS === 'true'
 const pixHabilitado = pagamentosHabilitados
-const limitesHabilitados = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
+// Limite diário do gratuito (VITE_LIMITES_HABILITADOS): o valor e os textos vêm de config.ts (fraseGratis).
+const limitesHabilitados = LIMITES_HABILITADOS
 
 interface MetricasConta { respostas_total: number; sequencia: number; plano: string | null; status_assinatura: string | null; fim_periodo: string | null; ultima_cobranca_em: string | null; cancelar_ao_fim: boolean }
 
@@ -270,7 +271,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
       {!comAcessoPago && <section className="vd-secao" aria-labelledby="vd-titulo-compara">
         <header className="vd-cabeca">
           <p className="vd-sobre">Gratuito ou assinante</p>
-          <h2 id="vd-titulo-compara">{limitesHabilitados ? 'O gratuito é generoso. O assinante vai além.' : 'O acervo é de todos. O assinante vai além.'}</h2>
+          <h2 id="vd-titulo-compara">{fraseGratis('comparacaoTitulo')}</h2>
           <p>Questões, comentários e ferramentas de estudo continuam abertos. A assinatura soma o plano até a prova, o que cai e a turma.</p>
         </header>
         <div className="vd-compara vd-cartao" role="table" aria-label="Comparação entre gratuito e assinante">
@@ -283,8 +284,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             ['Questões oficiais comentadas, alternativa por alternativa', true, true],
             [`${ROTULO_SIMULADOS}, por engenharia reversa das provas`, true, true],
             ['Revisão espaçada, caderno de erros, desempenho e ranking', true, true],
-            ['Questões por dia', limitesHabilitados ? `${LIMITE_GRATIS_ATUAL} a cada 24 horas` : 'Sem limite nesta fase', 'Sem limite'],
-            ...(FLASHCARDS_NA_VENDA ? [['Flashcards por dia (beta)', limitesHabilitados ? '10 a cada 24 horas' : 'Sem limite nesta fase', 'Sem limite'] as const] : []),
+            ['Questões por dia', fraseGratis('questoesPorDia'), 'Sem limite'],
+            ...(FLASHCARDS_NA_VENDA ? [['Flashcards por dia (beta)', fraseGratis('flashcardsPorDia'), 'Sem limite'] as const] : []),
             ['Cronograma até a prova: a lista de cada dia, o que mais cai primeiro, dia de plantão e reta final', false, true],
             ['Resumão: o que cai, em uma frase por assunto', false, true],
             ['Temas que mais caem, área por área', false, true],
@@ -363,7 +364,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           <details><summary>Preciso falar com alguém para cancelar? E o meu histórico?</summary><p>Não. Desligar a renovação e pedir o reembolso dentro da garantia são botões em Minha conta. Depois dos 7 dias, não há devolução proporcional automática: você mantém o acesso até o fim do período pago e a assinatura não renova (seus direitos previstos em lei continuam preservados; veja as <a href={href('/condicoes-assinatura')}>condições da assinatura</a>). Respostas, revisões, anotações e desempenho nunca são apagados.</p></details>
           <details><summary>Como o cronograma é montado?</summary><p>Em quatro passos: a data da prova, quanto tempo você tem por dia, como é a sua semana (folgas e dias de plantão, que viram dias leves) e por onde começar. Um diagnóstico opcional de 30 questões mostra onde você está mais fraco. O plano passa três vezes pelo acervo: na <b>1ª passada</b>, os assuntos de prioridade máxima de todas as áreas (pela contagem das provas oficiais); na 2ª, os de prioridade alta; na 3ª, o resto. Assim, se a rotina apertar, o que mais cai já foi visto. Cada área fica uns 3 dias em foco, com cerca de 30% de cada dia vindo de outra área para misturar, e entram de 2 a 6 {ROTULO_SIMULADOS} por sessão. A cada duas semanas há um mini-simulado, e as duas últimas semanas são a reta final: revisão forte e depois o modo prova, com simulado, os erros que importam e o resumão. Todo dia a página mostra onde você está, a lista de hoje com o tempo de cada parte, o que vem amanhã, a semana e as próximas semanas. Atrasou, a meta sobe no máximo 25%; numa semana difícil, dá para baixar para 10 questões por dia sem quebrar o plano.</p></details>
           <details><summary>O que são os {ROTULO_SIMULADOS}?</summary><p>Questões inéditas, escritas pelo Orto Questões por engenharia reversa das provas: estudamos o estilo, o nível e o que a banca repete, e escrevemos questões novas no mesmo padrão a partir da bibliografia, inclusive para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril. Não são questões oficiais nem cópia de prova sigilosa; trazem aviso na tela e comentário completo com a citação do livro.</p></details>
-          <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? `O gratuito tem um número limitado de respostas novas (hoje, ${LIMITE_GRATIS_ATUAL}) a cada 24 horas. O relógio começa na primeira questão respondida e, 24 horas depois, a cota volta inteira; o site mostra quanto falta.` : `O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado, o patamar gratuito previsto é de ${LIMITE_GRATIS_ATUAL} respostas novas a cada 24 horas.`} Comentários, revisões e desempenho continuam abertos.</p></details>
+          <details><summary>Como funciona o limite do plano gratuito?</summary><p>{fraseGratis('perguntaPlanos')} Comentários, revisões e desempenho continuam abertos.</p></details>
         </div>
       </section>
 

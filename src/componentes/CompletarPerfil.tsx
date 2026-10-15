@@ -58,6 +58,8 @@ export function CompletarPerfil() {
   }, [sessao?.user.id, faltas.length])
 
   if (!visivel || !sessao) return null
+  // O perfil ficou completo por outro caminho (perfil do cadastro aplicado ao entrar): some sozinho.
+  if (!faltas.length && estado === 'livre') return null
 
   function adiar() {
     const agora = new Date()

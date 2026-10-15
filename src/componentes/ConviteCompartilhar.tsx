@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { SITE, TEXTO_GRATIS } from '../config'
+import { SITE, fraseGratis } from '../config'
 import { Simbolo } from '../marca/Simbolo'
 import { Icone } from './Icone'
 
@@ -22,7 +22,7 @@ const PAUSA_COMPARTILHOU = 90 * DIA
 // Texto que chega pronto no WhatsApp; *negrito* é a formatação do próprio app.
 export const MENSAGEM = `Olá! Quero indicar o *Orto Questões*, um banco de questões de ortopedia que dá para usar de graça.
 
-Reúne provas do TEOT, TARO, fellowships e R4, com comentário em cada alternativa e revisão das questões erradas. ${TEXTO_GRATIS.convite}
+Reúne provas do TEOT, TARO, fellowships e R4, com comentário em cada alternativa e revisão das questões erradas. ${fraseGratis('convite')}
 
 ${SITE.url}`
 

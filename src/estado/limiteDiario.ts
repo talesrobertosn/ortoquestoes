@@ -4,7 +4,8 @@ import { gravar, ler } from './armazenamento'
 import { registrarAssinante } from '../conta/plano'
 
 export const FUSO_DIA = 'America/Sao_Paulo'
-export const LIMITES_HABILITADOS = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
+export { LIMITES_HABILITADOS } from '../config'
+import { LIMITES_HABILITADOS } from '../config'
 const CHAVE_BLOQUEIO = 'limite:bloqueio'
 const CHAVE_SALDO = 'limite:saldo'
 
