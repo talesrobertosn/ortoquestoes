@@ -17019,6 +17019,60 @@
    "fonte": "8ad6ffc6a209"
   },
   {
+   "id": "fc-pediatria-0632-co1",
+   "questao": "pediatria-0632",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura em galho verde, por que a cortical do lado da compressão permanece como zona fraca?",
+   "resposta": "não forma calo",
+   "explicacao": "A cortical só dobrou, **não forma calo**; o calo se forma no lado rompido, daí a refratura.",
+   "opcoes": [
+    "não forma calo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "6189b4f03131",
+   "origem": "autoral",
+   "trecho": "Essa cortical **não forma calo**: ela não fraturou, apenas se deformou.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0632-co2",
+   "questao": "pediatria-0632",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do antebraço da criança, qual é a regra clássica para corrigir a rotação com pronação ou supinação?",
+   "resposta": "em direção ao ápice",
+   "explicacao": "Rodar o antebraço (a palma) **em direção ao ápice** da angulação.",
+   "opcoes": [
+    "em direção ao ápice"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "6189b4f03131",
+   "origem": "autoral",
+   "trecho": "a regra clássica é rodar o antebraço **em direção ao ápice** da angulação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0632-q",
    "questao": "pediatria-0632",
    "area": "Ortopedia pediátrica",
@@ -17044,6 +17098,35 @@
    "prova": "TARO",
    "ano": 2018,
    "fonte": "6189b4f03131"
+  },
+  {
+   "id": "fc-pediatria-0632-tb1",
+   "questao": "pediatria-0632",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No antebraço da criança, como se chama a fratura em que a cortical enruga por compressão na metáfise?",
+   "resposta": "Tórus",
+   "explicacao": "**Tórus** (em fivela): estável, tratado com tala removível. Galho verde rompe uma cortical e dobra a outra.",
+   "opcoes": [
+    "Tórus",
+    "Galho verde",
+    "Deformidade plástica"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "6189b4f03131",
+   "origem": "autoral",
+   "trecho": "Tórus (em fivela) | A cortical enruga por compressão, na metáfise",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0633-q",
@@ -17484,6 +17567,90 @@
    "prova": "TARO",
    "ano": 2019,
    "fonte": "1c88f3818456"
+  },
+  {
+   "id": "fc-pediatria-0644-co1",
+   "questao": "pediatria-0644",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na mão da criança, qual fratura recebe o apelido de extra-oitava?",
+   "resposta": "base da falange proximal do dedo mínimo",
+   "explicacao": "Salter-Harris II da **base da falange proximal do dedo mínimo**, um dos locais mais frequentes.",
+   "opcoes": [
+    "base da falange proximal do dedo mínimo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "f69cdd9c0e68",
+   "origem": "autoral",
+   "trecho": "a **base da falange proximal do dedo mínimo** é um dos locais mais frequentes de todos (a fratura \"extra-oitava\", Salter-Harris II)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0644-co2",
+   "questao": "pediatria-0644",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Qual manobra reduz a fratura do colo do metacarpo com flexão de 90° na MF e na IFP, empurrando a cabeça para dorsal?",
+   "resposta": "Jahss",
+   "explicacao": "Manobra de **Jahss**, seguida de tala em posição intrínseca-plus.",
+   "opcoes": [
+    "Jahss"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "f69cdd9c0e68",
+   "origem": "autoral",
+   "trecho": "manobra de Jahss: flexão de 90° na metacarpofalângica e na interfalângica proximal",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0644-pc1",
+   "questao": "pediatria-0644",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "No colo do 5º metacarpo do adolescente aceitam-se até 40° ou mais. Quanto se tolera no 2º e no 3º?",
+   "resposta": "10 a 15°",
+   "explicacao": "A carpometacarpal do 4º e 5º é **móvel** e compensa; no 2º e 3º, apenas **10 a 15°**.",
+   "opcoes": [
+    "10 a 15°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "f69cdd9c0e68",
+   "origem": "autoral",
+   "trecho": "No 2º e no 3º, a compensação é pequena, e se toleram apenas cerca de **10 a 15°**.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0644-q",
@@ -18895,6 +19062,63 @@
    "fonte": "067ae9ff17ea"
   },
   {
+   "id": "fc-pediatria-0665-ar1",
+   "questao": "pediatria-0665",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A deformidade plástica do antebraço remodela tão bem quanto as fraturas da criança?",
+   "resposta": "remodela mal",
+   "explicacao": "**Não**: sem calo nem fratura para guiar, ela **remodela mal**, sobretudo na criança maior.",
+   "opcoes": [
+    "remodela mal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "ee2075b67a4f",
+   "origem": "autoral",
+   "trecho": "A deformidade plástica **remodela mal**, sobretudo na criança maior, porque não há calo nem fratura para guiar a remodelação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0665-co1",
+   "questao": "pediatria-0665",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em qual osso a deformidade plástica traumática é mais comum?",
+   "resposta": "ulna",
+   "explicacao": "Mais comum no antebraço, sobretudo na **ulna**; às vezes no rádio, na fíbula e na clavícula.",
+   "opcoes": [
+    "ulna",
+    "rádio",
+    "fíbula",
+    "clavícula"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "ee2075b67a4f",
+   "origem": "autoral",
+   "trecho": "Mais comum no **antebraço**, sobretudo na **ulna**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0665-q",
    "questao": "pediatria-0665",
    "area": "Ortopedia pediátrica",
@@ -19830,6 +20054,33 @@
    "fonte": "02520b7f0bd3"
   },
   {
+   "id": "fc-pediatria-0692-co1",
+   "questao": "pediatria-0692",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução da deformidade plástica do antebraço, o que a força rápida ou excessiva pode causar?",
+   "resposta": "fratura completa e instável",
+   "explicacao": "A correção é **gradual**, com força lenta e contínua; o excesso cria uma **fratura completa e instável**.",
+   "opcoes": [
+    "fratura completa e instável"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "bc4a383270eb",
+   "origem": "autoral",
+   "trecho": "Força rápida ou excessiva pode transformar a deformidade em uma fratura completa e instável.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0692-q",
    "questao": "pediatria-0692",
    "area": "Ortopedia pediátrica",
@@ -20667,6 +20918,181 @@
    "fonte": "a367e5f65b5a"
   },
   {
+   "id": "fc-pediatria-0712-cl1",
+   "questao": "pediatria-0712",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Letts da lesão de Monteggia da criança, o que define o tipo A?",
+   "resposta": "Deformidade plástica da ulna",
+   "explicacao": "Letts com cabeça **anterior**: **A deformidade plástica**, B galho verde, C fratura completa da ulna.",
+   "opcoes": [
+    "Deformidade plástica da ulna",
+    "Galho verde da ulna",
+    "Fratura completa da ulna"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "28f9e658f803",
+   "origem": "autoral",
+   "trecho": "A | Deformidade plástica da ulna; cabeça anterior",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0712-cl2",
+   "questao": "pediatria-0712",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Letts, qual lesão da ulna define o tipo C, com a cabeça do rádio anterior?",
+   "resposta": "Fratura completa da ulna",
+   "explicacao": "**Letts C**: **fratura completa** da ulna com cabeça anterior; A é deformidade plástica e B galho verde.",
+   "opcoes": [
+    "Fratura completa da ulna",
+    "Galho verde da ulna",
+    "Deformidade plástica da ulna"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "28f9e658f803",
+   "origem": "autoral",
+   "trecho": "C | Fratura completa da ulna; cabeça anterior",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0712-cl3",
+   "questao": "pediatria-0712",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Letts da Monteggia infantil, para onde está luxada a cabeça do rádio no tipo E?",
+   "resposta": "lateral",
+   "explicacao": "**D**: cabeça **posterior**; **E**: cabeça **lateral** (correspondem aos Bado II e III).",
+   "opcoes": [
+    "lateral",
+    "posterior",
+    "anterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "28f9e658f803",
+   "origem": "autoral",
+   "trecho": "E | Cabeça do rádio lateral",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0712-cl4",
+   "questao": "pediatria-0712",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os tipos A, B e C de Letts, todos com a cabeça do rádio anterior, correspondem a qual tipo de Bado?",
+   "resposta": "Bado I",
+   "explicacao": "**Bado I** (o mais comum na criança); Letts detalha a lesão da ulna. D e E correspondem aos Bado II e III.",
+   "opcoes": [
+    "Bado I",
+    "Bado II"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "28f9e658f803",
+   "origem": "autoral",
+   "trecho": "Os tipos A, B e C de Letts correspondem ao **Bado I**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0712-co1",
+   "questao": "pediatria-0712",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão de Monteggia da criança, o que traz e mantém a cabeça do rádio no lugar?",
+   "resposta": "redução da ulna",
+   "explicacao": "A **redução da ulna**, corrigindo inclusive a deformidade plástica; ulna encurvada deixa a cabeça luxada.",
+   "opcoes": [
+    "redução da ulna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "28f9e658f803",
+   "origem": "autoral",
+   "trecho": "a **redução da ulna**, inclusive **corrigindo a deformidade plástica**, é o que traz e mantém a **cabeça do rádio** no lugar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0712-co2",
+   "questao": "pediatria-0712",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em toda fratura da ulna da criança, qual linha se confere em todas as incidências para não perder um Monteggia?",
+   "resposta": "linha radiocapitelar",
+   "explicacao": "A **linha radiocapitelar** (pelo centro do colo do rádio) deve passar pelo centro do capítulo.",
+   "opcoes": [
+    "linha radiocapitelar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "28f9e658f803",
+   "origem": "autoral",
+   "trecho": "conferir a **linha radiocapitelar** em todas as incidências",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0712-q",
    "questao": "pediatria-0712",
    "area": "Ortopedia pediátrica",
@@ -20719,6 +21145,61 @@
    "fonte": "11470c9a75e8",
    "origem": "autoral",
    "trecho": "Na criança, a fise é mais fraca que a cápsula articular e os ligamentos, por isso o trauma que no adulto luxaria o ombro costuma, na criança, **descolar a fise**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0723-co1",
+   "questao": "pediatria-0723",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas fraturas do antebraço da criança, qual componente da deformidade costuma ser o principal?",
+   "resposta": "rotacional",
+   "explicacao": "O componente principal costuma ser **rotacional**, e a direção do ápice revela o mecanismo.",
+   "opcoes": [
+    "rotacional"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "42358bc8c541",
+   "origem": "autoral",
+   "trecho": "o componente principal da deformidade costuma ser **rotacional**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0723-tb1",
+   "questao": "pediatria-0723",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Galho verde do antebraço com ápice dorsal, por mecanismo em pronação: qual rotação faz a redução?",
+   "resposta": "Supinação",
+   "explicacao": "Pronação dá ápice **dorsal** e reduz em **supinação**; supinação dá ápice volar e reduz em pronação.",
+   "opcoes": [
+    "Supinação",
+    "Pronação"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "42358bc8c541",
+   "origem": "autoral",
+   "trecho": "Pronação | Dorsal | Desvio volar | Supinação",
    "criadoEm": "2026-10-15"
   },
   {
@@ -20842,6 +21323,62 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0729-co1",
+   "questao": "pediatria-0729",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde ocorre geralmente a refratura do antebraço da criança?",
+   "resposta": "pelo foco da fratura original",
+   "explicacao": "**Pelo foco original** (calo imaturo e cortical deformada), não na junção do calo com o osso normal.",
+   "opcoes": [
+    "pelo foco da fratura original"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "02723051829a",
+   "origem": "autoral",
+   "trecho": "Geralmente **pelo foco da fratura original** (o calo imaturo e a cortical deformada), não na junção do calo com o osso normal.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0729-co2",
+   "questao": "pediatria-0729",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em média, quanto tempo após a fratura inicial ocorre a refratura do antebraço da criança?",
+   "resposta": "3 meses",
+   "explicacao": "Bould e Bannister: em média **3 meses**, a maioria nos primeiros 6 meses.",
+   "opcoes": [
+    "3 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "02723051829a",
+   "origem": "autoral",
+   "trecho": "Bould e Bannister observaram refraturas em média por volta de **3 meses** após a fratura inicial",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0742-co1",
    "questao": "pediatria-0742",
    "area": "Ortopedia pediátrica",
@@ -20920,6 +21457,177 @@
    "fonte": "0289f6084f34",
    "origem": "autoral",
    "trecho": "A modificação de Lloyd-Roberts e Bucknill preserva melhor o comprimento e a direção da tira.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0747-co1",
+   "questao": "pediatria-0747",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Galho verde do antebraço com desvio dorsal: além de pronar, por que se flete o punho na redução?",
+   "resposta": "tensiona o periósteo dorsal íntegro",
+   "explicacao": "A flexão **tensiona o periósteo dorsal íntegro**, que funciona como dobradiça e mantém a redução.",
+   "opcoes": [
+    "tensiona o periósteo dorsal íntegro"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "ce26bcf15bdb",
+   "origem": "autoral",
+   "trecho": "a flexão do punho tensiona o periósteo dorsal íntegro, que funciona como dobradiça e mantém a redução.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0748-co1",
+   "questao": "pediatria-0748",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do colo do rádio da criança, até quanto de angulação se aceita sem redução?",
+   "resposta": "30 graus",
+   "explicacao": "Até cerca de **30 graus** (alguns aceitam 45 abaixo de 10 anos), com pronossupinação preservada.",
+   "opcoes": [
+    "30 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "81659d549f43",
+   "origem": "autoral",
+   "trecho": "Aceita-se angulação até cerca de **30 graus**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0748-pc1",
+   "questao": "pediatria-0748",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do colo do rádio da criança, Patterson usa cotovelo estendido, varo e supinação. Qual técnica usa cotovelo fletido e pronação?",
+   "resposta": "Israeli",
+   "explicacao": "**Israeli**: cotovelo fletido, pronação e pressão sobre a cabeça. **Patterson**: extensão, supinação, varo.",
+   "opcoes": [
+    "Israeli",
+    "Patterson",
+    "Metaizeau"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "81659d549f43",
+   "origem": "autoral",
+   "trecho": "Israeli | Cotovelo fletido, pronação com pressão sobre a cabeça",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0766-co1",
+   "questao": "pediatria-0766",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Ossificação e crescimento",
+   "subtemas": [
+    "Ossificação e crescimento",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a regra para memorizar onde ficam as fises que mais crescem nos membros?",
+   "resposta": "Perto do joelho e longe do cotovelo",
+   "explicacao": "**Perto do joelho** (fêmur distal, tíbia proximal) e **longe do cotovelo** (úmero proximal, rádio e ulna distais).",
+   "opcoes": [
+    "Perto do joelho e longe do cotovelo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "69ca7c68bd2e",
+   "origem": "autoral",
+   "trecho": "\"Perto do joelho e longe do cotovelo\"",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0766-tb1",
+   "questao": "pediatria-0766",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Ossificação e crescimento",
+   "subtemas": [
+    "Ossificação e crescimento",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quanto do crescimento do úmero vem da sua fise proximal?",
+   "resposta": "Cerca de 80%",
+   "explicacao": "Membro superior: o crescimento se concentra **longe do cotovelo**; úmero proximal **cerca de 80%**.",
+   "opcoes": [
+    "Cerca de 80%",
+    "Cerca de 20%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "69ca7c68bd2e",
+   "origem": "autoral",
+   "trecho": "Úmero | **Cerca de 80%** | Cerca de 20%",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0766-tb2",
+   "questao": "pediatria-0766",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Ossificação e crescimento",
+   "subtemas": [
+    "Ossificação e crescimento",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quanto do crescimento do fêmur vem da sua fise distal?",
+   "resposta": "Cerca de 70%",
+   "explicacao": "Membro inferior: o crescimento se concentra **perto do joelho**; fêmur distal **cerca de 70%**.",
+   "opcoes": [
+    "Cerca de 70%",
+    "Cerca de 30%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "69ca7c68bd2e",
+   "origem": "autoral",
+   "trecho": "Fêmur | Cerca de 30% | **Cerca de 70%**",
    "criadoEm": "2026-10-15"
   },
   {
@@ -21007,6 +21715,92 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0794-co1",
+   "questao": "pediatria-0794",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação congênita da cabeça do rádio, qual é a forma da cabeça radial?",
+   "resposta": "Convexa",
+   "explicacao": "Cabeça **convexa** (cupuliforme), colo alongado e capítulo hipoplásico; na traumática, a cabeça é côncava.",
+   "opcoes": [
+    "Convexa",
+    "côncava"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "8a87d0a551b7",
+   "origem": "autoral",
+   "trecho": "Cabeça do rádio | **Convexa**, colo alongado | Forma normal (côncava)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0794-co2",
+   "questao": "pediatria-0794",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação congênita da cabeça do rádio com dor na idade adulta, qual é o tratamento?",
+   "resposta": "ressecção da cabeça do rádio",
+   "explicacao": "A redução cirúrgica não funciona; com dor ou bloqueio, **ressecção da cabeça** após o fim do crescimento.",
+   "opcoes": [
+    "ressecção da cabeça do rádio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "8a87d0a551b7",
+   "origem": "autoral",
+   "trecho": "faz-se **ressecção da cabeça do rádio** após o fim do crescimento.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0794-pc1",
+   "questao": "pediatria-0794",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação congênita da cabeça do rádio, a direção costuma ser posterior. E na Monteggia não diagnosticada?",
+   "resposta": "anterior",
+   "explicacao": "Monteggia negligenciada: unilateral, **anterior**, cabeça côncava e ulna **arqueada**.",
+   "opcoes": [
+    "anterior",
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "8a87d0a551b7",
+   "origem": "autoral",
+   "trecho": "Direção | **Posterior** (ou lateral) | Geralmente **anterior**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0825-co1",
    "questao": "pediatria-0825",
    "area": "Ortopedia pediátrica",
@@ -21059,6 +21853,60 @@
    "fonte": "879bd0a7c112",
    "origem": "autoral",
    "trecho": "| Parada parcial (barra óssea) | Deformidade angular (varo ou valgo) progressiva |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0828-co1",
+   "questao": "pediatria-0828",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Segundo Morrey, qual arco de pronossupinação permite a maioria das atividades da vida diária?",
+   "resposta": "50° de pronação e 50° de supinação",
+   "explicacao": "O **arco funcional** é de **50° de pronação e 50° de supinação**; é resultado aceitável no tratamento conservador.",
+   "opcoes": [
+    "50° de pronação e 50° de supinação"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "56ab5d4c202e",
+   "origem": "autoral",
+   "trecho": "cerca de **50° de pronação e 50° de supinação**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0828-co2",
+   "questao": "pediatria-0828",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura diafisária do antebraço da criança, por que o desvio rotacional deve ser o menor possível?",
+   "resposta": "não remodela",
+   "explicacao": "A angulação remodela conforme a idade, mas a **rotação não remodela**.",
+   "opcoes": [
+    "não remodela"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "56ab5d4c202e",
+   "origem": "autoral",
+   "trecho": "Rotação: a menor possível, porque não remodela",
    "criadoEm": "2026-10-15"
   },
   {

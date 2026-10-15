@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 5232,
- "batalha": 4173,
- "soEstudo": 1059,
+ "total": 5262,
+ "batalha": 4185,
+ "soEstudo": 1077,
  "comImagem": 630,
  "simulados": 927,
- "autorais": 930,
+ "autorais": 960,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -286,29 +286,29 @@
   "pediatria": {
    "nome": "Ortopedia pediátrica",
    "arquivo": "pediatria.json",
-   "total": 810,
-   "batalha": 591,
+   "total": 840,
+   "batalha": 603,
    "comImagem": 48,
    "simulados": 0,
    "tipos": {
-    "Armadilha": 6,
-    "Classificação": 66,
-    "Conceito": 155,
+    "Armadilha": 7,
+    "Classificação": 70,
+    "Conceito": 173,
     "Imagem": 48,
     "Na prova": 1,
-    "Par confundível": 18,
+    "Par confundível": 21,
     "Relâmpago": 476,
-    "Tabela": 40
+    "Tabela": 44
    },
    "assuntos": {
     "Lesões fisárias": 113,
     "Genuvaro, genuvalgo e torções": 107,
-    "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 95,
-    "Fraturas do antebraço e punho na criança": 49,
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 100,
+    "Fraturas do antebraço e punho na criança": 68,
     "Fraturas do fêmur e da perna na criança": 48,
+    "Outras fraturas na criança": 28,
     "Outras doenças congênitas": 26,
     "Displasia do desenvolvimento do quadril": 26,
-    "Outras fraturas na criança": 25,
     "Pé torto congênito": 22,
     "Paralisia cerebral": 22,
     "Tíbia vara (Blount)": 19,
@@ -320,11 +320,11 @@
     "Osteogênese imperfeita": 14,
     "Joelho da criança": 14,
     "Fraturas do tornozelo na criança": 14,
+    "Ossificação e crescimento": 13,
     "Fraturas supracondilianas do úmero": 13,
     "Maus-tratos": 11,
     "Osteocondroses": 11,
     "Mielomeningocele": 10,
-    "Ossificação e crescimento": 10,
     "Fraturas da clavícula e do úmero proximal na criança": 10,
     "Coluna e pescoço da criança": 9,
     "Luxações na criança": 8,
@@ -476,5 +476,5 @@
    }
   }
  },
- "assinatura": "591a27d119c5"
+ "assinatura": "c3aa47686e4a"
 }
