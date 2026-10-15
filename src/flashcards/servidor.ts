@@ -105,7 +105,7 @@ export async function sincronizarProgresso(): Promise<boolean> {
 export type TipoRanking = 'masmorra' | 'torre' | 'unicos'
 export interface LinhaRanking {
   posicao: number; apelido: string; valor: number; ehVoce: boolean
-  /** Vitrine escolhida pela pessoa e emblemas de Flashcards travados (parte 25 do SQL; ausentes antes dela). */
+  /** Vitrine escolhida pela pessoa e emblemas de Flashcards travados (parte 26 do SQL; ausentes antes dela). */
   emblemas?: string[]; emblemasFlashcards?: string[]
 }
 
@@ -155,7 +155,7 @@ export async function lerRanking(tipo: TipoRanking): Promise<LinhaRanking[] | nu
     type Linha = { posicao: number; apelido: string; valor: number; eh_voce: boolean; emblemas?: string[] | null; emblemas_flashcards?: string[] | null }
     const corpo = { p_tipo: tipo }
     const ler = (nome: string) => chamarRpc<Linha[]>(nome, corpo).catch(() => chamarRpcPublica<Linha[]>(nome, corpo))
-    // Com os emblemas (parte 25 do SQL); sem ela no banco, o ranking de antes.
+    // Com os emblemas (parte 26 do SQL); sem ela no banco, o ranking de antes.
     const linhas = await ler('ranking_flashcards_emblemas').catch(() => ler('ranking_flashcards'))
     return linhas.map((l) => ({
       posicao: Number(l.posicao), apelido: l.apelido, valor: Number(l.valor), ehVoce: Boolean(l.eh_voce),

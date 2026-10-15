@@ -8,6 +8,6 @@ Regras, níveis, fontes de dados e arte: [docs/emblemas.md](../emblemas.md), se�
 
 - Métricas: `src/flashcards/conquistas.ts` (`metricasFlashcards`).
 - Leitura no site: `src/flashcards/emblemas.ts` (`usarMetricasFlashcards`), chamada por `usarConquistas`.
-- Andar validado pelo servidor: RPC `meus_recordes_flashcards` (parte 25 do SQL).
-- Emblemas no ranking de Flashcards: RPC `ranking_flashcards_emblemas` (parte 25), com volta automática
+- Andar validado pelo servidor: RPC `meus_recordes_flashcards` (parte 26 do SQL).
+- Emblemas no ranking de Flashcards: RPC `ranking_flashcards_emblemas` (parte 26), com volta automática
   para `ranking_flashcards` enquanto o SQL não estiver aplicado.

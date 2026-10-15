@@ -119,7 +119,7 @@ o emblema é travado no servidor (`registrar_conquistas`) como os outros.
 
 **No ranking:** o ranking geral já mostra a vitrine (até 3 emblemas escolhidos, inclusive os de
 Flashcards). O ranking de Flashcards (`#/ranking?aba=flashcards`) mostra o melhor emblema de Flashcards
-travado da pessoa e, depois, a vitrine, pela RPC `ranking_flashcards_emblemas` (parte 25 do SQL,
+travado da pessoa e, depois, a vitrine, pela RPC `ranking_flashcards_emblemas` (parte 26 do SQL,
 `supabase/migrations/202610151800_emblemas_revisao_flashcards.sql`). Sem o SQL, o ranking aparece como
 antes, sem emblemas, e os emblemas de andar ficam em zero.
 
