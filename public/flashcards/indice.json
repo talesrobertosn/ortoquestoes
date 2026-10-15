@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 5118,
- "batalha": 4144,
- "soEstudo": 974,
+ "total": 5143,
+ "batalha": 4147,
+ "soEstudo": 996,
  "comImagem": 630,
  "simulados": 900,
- "autorais": 816,
+ "autorais": 841,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -285,29 +285,29 @@
   "pediatria": {
    "nome": "Ortopedia pediátrica",
    "arquivo": "pediatria.json",
-   "total": 785,
-   "batalha": 588,
+   "total": 810,
+   "batalha": 591,
    "comImagem": 48,
    "simulados": 0,
    "tipos": {
-    "Armadilha": 5,
-    "Classificação": 61,
-    "Conceito": 138,
+    "Armadilha": 6,
+    "Classificação": 66,
+    "Conceito": 155,
     "Imagem": 48,
     "Na prova": 1,
-    "Par confundível": 17,
+    "Par confundível": 18,
     "Relâmpago": 476,
-    "Tabela": 39
+    "Tabela": 40
    },
    "assuntos": {
     "Lesões fisárias": 113,
     "Genuvaro, genuvalgo e torções": 107,
     "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 95,
     "Fraturas do antebraço e punho na criança": 49,
+    "Fraturas do fêmur e da perna na criança": 48,
     "Outras doenças congênitas": 26,
     "Displasia do desenvolvimento do quadril": 26,
     "Outras fraturas na criança": 25,
-    "Fraturas do fêmur e da perna na criança": 23,
     "Pé torto congênito": 22,
     "Paralisia cerebral": 22,
     "Tíbia vara (Blount)": 19,
@@ -475,5 +475,5 @@
    }
   }
  },
- "assinatura": "82a0f0869b96"
+ "assinatura": "d19fabe0677f"
 }

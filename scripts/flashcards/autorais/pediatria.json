@@ -2702,6 +2702,174 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0535-cl1",
+   "questao": "pediatria-0535",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Meyers e McKeever da espinha tibial, o que define o tipo III?",
+   "resposta": "Totalmente desviado",
+   "explicacao": "**I:** sem desvio. **II:** elevação anterior com dobradiça posterior. **III:** **totalmente desviado** ou rodado. **IV:** cominutivo.",
+   "opcoes": [
+    "Totalmente desviado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "9b12604547ec",
+   "origem": "autoral",
+   "trecho": "| III | **Totalmente desviado** (IIIA só a espinha; IIIB inclui a espinha e o platô) ou rodado | **Redução e fixação** (artroscópica ou aberta) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0535-cl2",
+   "questao": "pediatria-0535",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual padrão de fratura da espinha tibial Zaricznyj acrescentou como tipo IV a Meyers e McKeever?",
+   "resposta": "Cominutivo",
+   "explicacao": "**Tipo IV de Zaricznyj:** fratura **cominutiva** da espinha tibial, com fixação cirúrgica.",
+   "opcoes": [
+    "Cominutivo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "9b12604547ec",
+   "origem": "autoral",
+   "trecho": "| IV | **Cominutivo** (Zaricznyj) | Fixação cirúrgica |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0535-co1",
+   "questao": "pediatria-0535",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da espinha tibial que não reduz em extensão, qual estrutura meniscal costuma se interpor sob o fragmento?",
+   "resposta": "corno anterior do menisco medial",
+   "explicacao": "O **corno anterior do menisco medial** ou o ligamento intermeniscal: indica artroscopia para liberar e fixar.",
+   "opcoes": [
+    "corno anterior do menisco medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "9b12604547ec",
+   "origem": "autoral",
+   "trecho": "o **corno anterior do menisco medial** ou o **ligamento intermeniscal** pode ficar **interposto** sob o fragmento",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0535-co2",
+   "questao": "pediatria-0535",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura da espinha tibial na criança é o equivalente pediátrico de qual lesão?",
+   "resposta": "lesão do LCA",
+   "explicacao": "O LCA é mais forte que a epífise imatura e **arranca** a espinha tibial em vez de romper.",
+   "opcoes": [
+    "lesão do LCA"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "9b12604547ec",
+   "origem": "autoral",
+   "trecho": "É o **equivalente pediátrico da lesão do LCA**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0541-co1",
+   "questao": "pediatria-0541",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No gesso pelvipodálico da fratura do fêmur da criança, em quanto de flexão deve ficar o joelho?",
+   "resposta": "45° a 60°",
+   "explicacao": "Joelho a **45° a 60°** (não 90°), fossa poplítea acolchoada e sem tração excessiva: previne a síndrome compartimental.",
+   "opcoes": [
+    "45° a 60°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "7dd5e45accfe",
+   "origem": "autoral",
+   "trecho": "Gesso com o joelho em flexão de cerca de **45° a 60°** (e não 90°)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0541-co2",
+   "questao": "pediatria-0541",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No gesso pelvipodálico da criança de 6 meses a 5 anos, quanto de encurtamento do fêmur é aceitável?",
+   "resposta": "até 2 cm",
+   "explicacao": "Aceita-se **até 2 cm**, porque o fêmur fraturado terá hipercrescimento.",
+   "opcoes": [
+    "até 2 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "7dd5e45accfe",
+   "origem": "autoral",
+   "trecho": "Encurtamento de até 2 cm é aceitável nessa idade, porque haverá hipercrescimento.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0543-co1",
    "questao": "pediatria-0543",
    "area": "Ortopedia pediátrica",
@@ -2814,6 +2982,62 @@
    "origem": "autoral",
    "trecho": "| Aspecto | Tillaux | Triplanar |\n|---|---|---|\n| Planos do traço | Dois (sagital pela epífise e axial pela fise) | Três (acrescenta o coronal na metáfise posterior) |",
    "criadoEm": "2026-10-13"
+  },
+  {
+   "id": "fc-pediatria-0545-co1",
+   "questao": "pediatria-0545",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que faixa etária é típica a fratura metafisária proximal da tíbia que evolui com valgo de Cozen?",
+   "resposta": "3 a 6 anos",
+   "explicacao": "Crianças de **3 a 6 anos**, com galho verde ou fratura incompleta aberta medialmente.",
+   "opcoes": [
+    "3 a 6 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d9e285b45102",
+   "origem": "autoral",
+   "trecho": "típica de crianças de **3 a 6 anos**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0545-tb1",
+   "questao": "pediatria-0545",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Entre as teorias do valgo de Cozen, que papel tem a fíbula íntegra?",
+   "resposta": "tirante lateral",
+   "explicacao": "A fíbula íntegra é **tirante lateral** e limita o crescimento lateral; somam-se hipercrescimento medial e interposição da pata de ganso.",
+   "opcoes": [
+    "tirante lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d9e285b45102",
+   "origem": "autoral",
+   "trecho": "| **Fíbula íntegra** | Funciona como tirante lateral e limita o crescimento lateral |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0547-co1",
@@ -3011,6 +3235,90 @@
    "fonte": "d12dc8a4ca85",
    "origem": "autoral",
    "trecho": "| III | Comum no côndilo **medial**; intra-articular |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0556-co1",
+   "questao": "pediatria-0556",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas hastes flexíveis de titânio do fêmur da criança, quanto do diâmetro do istmo cada haste deve ter?",
+   "resposta": "40%",
+   "explicacao": "Cada haste com **40%** do istmo; juntas preenchem cerca de **80%**. Menos que isso fica instável.",
+   "opcoes": [
+    "40%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "bce0d99a4160",
+   "origem": "autoral",
+   "trecho": "Cada haste deve ter cerca de **40% do diâmetro do istmo**; juntas, preenchem cerca de **80%**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0556-co2",
+   "questao": "pediatria-0556",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a complicação mais comum das hastes flexíveis no fêmur da criança?",
+   "resposta": "Irritação da pele pelas pontas das hastes",
+   "explicacao": "A mais comum: **irritação da pele pelas pontas**. Também discrepância por hipercrescimento e encurtamento nas instáveis.",
+   "opcoes": [
+    "Irritação da pele pelas pontas das hastes"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "bce0d99a4160",
+   "origem": "autoral",
+   "trecho": "Irritação da pele pelas pontas das hastes (a mais comum)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0556-co3",
+   "questao": "pediatria-0556",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "As hastes flexíveis do fêmur da criança entram por portais distais medial e lateral a quantos centímetros da fise?",
+   "resposta": "2 a 3 cm acima da fise",
+   "explicacao": "Entradas distais **2 a 3 cm acima da fise**, hastes pré-curvadas com ápice no nível da fratura.",
+   "opcoes": [
+    "2 a 3 cm acima da fise"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "bce0d99a4160",
+   "origem": "autoral",
+   "trecho": "introduzidas por entradas distais **medial e lateral**, cerca de 2 a 3 cm acima da fise.",
    "criadoEm": "2026-10-15"
   },
   {
@@ -3410,6 +3718,87 @@
    "fonte": "b3fff1b51056",
    "origem": "autoral",
    "trecho": "- **Cabeça hipertrofiada** ou deformada (a mais comum das alterações radiográficas)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0565-co1",
+   "questao": "pediatria-0565",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura supracondiliana do fêmur, quais músculos puxam o fragmento distal em extensão posterior, ameaçando os vasos poplíteos?",
+   "resposta": "gastrocnêmios",
+   "explicacao": "Os **gastrocnêmios**, presos nos côndilos, angulam o fragmento distal para trás.",
+   "opcoes": [
+    "gastrocnêmios"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "dc092462f053",
+   "origem": "autoral",
+   "trecho": "Nas fraturas **supracondilianas**, o fragmento distal é puxado em **extensão posterior** pelos gastrocnêmios, com risco para os vasos poplíteos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0565-co2",
+   "questao": "pediatria-0565",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após a consolidação da fratura diafisária do fêmur na criança, quanto o osso costuma sobrecrescer?",
+   "resposta": "0,7 a 2 cm",
+   "explicacao": "Sobrecrescimento de **0,7 a 2 cm**, maior entre 2 e 10 anos; por isso se aceita pequeno encurtamento inicial.",
+   "opcoes": [
+    "0,7 a 2 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "dc092462f053",
+   "origem": "autoral",
+   "trecho": "ocorre **sobrecrescimento** do fêmur fraturado (cerca de 0,7 a 2 cm, mais entre 2 e 10 anos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0565-co3",
+   "questao": "pediatria-0565",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No lactente com menos de 6 meses, em quanto tempo consolida a fratura diafisária do fêmur?",
+   "resposta": "2 a 3 semanas",
+   "explicacao": "Consolida em **2 a 3 semanas** e remodela muito: o Pavlik basta.",
+   "opcoes": [
+    "2 a 3 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "dc092462f053",
+   "origem": "autoral",
+   "trecho": "Nessa idade, o fêmur consolida em **2 a 3 semanas** e tem enorme potencial de remodelação.",
    "criadoEm": "2026-10-15"
   },
   {
@@ -3950,6 +4339,152 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0599-ar1",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do colo do fêmur Delbet I ou II da criança, deve-se poupar a fise mesmo à custa da fixação?",
+   "resposta": "a estabilidade é prioritária",
+   "explicacao": "Não. Os parafusos podem cruzar a fise se necessário: **a estabilidade é prioritária**.",
+   "opcoes": [
+    "a estabilidade é prioritária"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "**fixação interna**, com parafusos que podem **cruzar a fise** nos tipos I e II se necessário, porque a estabilidade é prioritária.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0599-cl1",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet do colo do fêmur da criança, qual tipo é o transepifisário, com risco de necrose altíssimo?",
+   "resposta": "I",
+   "explicacao": "**I:** transepifisário, necrose até quase 100% com luxação. **II:** transcervical, cerca de 50%. **III:** cervicotrocantérico, 25%. **IV:** intertrocantérico, 10%.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "| **I** | **Transepifisário**: descolamento pela fise, com ou sem luxação da cabeça | **Altíssima** (até quase 100% se houver luxação) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0599-cl2",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet do colo do fêmur da criança, como se chama o tipo III?",
+   "resposta": "Cervicotrocantérico",
+   "explicacao": "**Delbet III:** **cervicotrocantérico** (basocervical), necrose em cerca de 25%, o segundo mais frequente.",
+   "opcoes": [
+    "Transepifisário",
+    "Transcervical",
+    "Cervicotrocantérico",
+    "Intertrocantérico"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "| **III** | **Cervicotrocantérico** (basocervical) | Cerca de 25% |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0599-cl3",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet, qual é o risco de necrose avascular do tipo IV, intertrocantérico?",
+   "resposta": "cerca de 10% ou menos",
+   "explicacao": "Quanto mais proximal, maior a necrose: o **IV** tem o menor risco, **cerca de 10% ou menos**.",
+   "opcoes": [
+    "cerca de 10% ou menos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "| **IV** | **Intertrocantérico** | Baixa, cerca de 10% ou menos |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0599-co1",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura desviada do colo do fêmur da criança, qual gesto reduz a tamponada do hematoma intracapsular?",
+   "resposta": "descompressão da cápsula",
+   "explicacao": "**Descompressão da cápsula** (capsulotomia ou aspiração), junto com redução anatômica urgente e fixação.",
+   "opcoes": [
+    "descompressão da cápsula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "**descompressão da cápsula** (capsulotomia ou aspiração), que reduz a tamponada;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0602-cl1",
    "questao": "pediatria-0602",
    "area": "Ortopedia pediátrica",
@@ -4119,6 +4654,34 @@
    "fonte": "2b8dbe52750a",
    "origem": "autoral",
    "trecho": "A fise proximal da tíbia fecha de **posterior para anterior** e de proximal para distal, e a fise da tuberosidade é a **última** a fechar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0603-co1",
+   "questao": "pediatria-0603",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na haste rígida do fêmur do adolescente, qual ponto de entrada se evita, e por quê?",
+   "resposta": "fossa do piriforme",
+   "explicacao": "Evita-se a **fossa do piriforme**: lesa os vasos retinaculares e causa necrose da cabeça. Entrada trocantérica lateral.",
+   "opcoes": [
+    "fossa do piriforme"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "62d5d2d11251",
+   "origem": "autoral",
+   "trecho": "A entrada pela **fossa do piriforme** é evitada pelo risco de lesar os vasos retinaculares e causar **necrose** da cabeça femoral.",
    "criadoEm": "2026-10-15"
   },
   {
@@ -5221,6 +5784,119 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0630-co1",
+   "questao": "pediatria-0630",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O que é a fratura do bebê (toddler's fracture), em crianças de 1 a 3 anos que começam a andar?",
+   "resposta": "espiral do terço distal da tíbia",
+   "explicacao": "Fratura **espiral do terço distal da tíbia** com a fíbula íntegra, de baixa energia.",
+   "opcoes": [
+    "espiral do terço distal da tíbia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0f58b81534e1",
+   "origem": "autoral",
+   "trecho": "a **fratura do bebê** (toddler's fracture), espiral do terço distal da tíbia com a fíbula íntegra, em crianças de 1 a 3 anos que começam a andar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0630-co2",
+   "questao": "pediatria-0630",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura diafisária da tíbia em menores de 8 anos, quanto de varo ou valgo se aceita?",
+   "resposta": "10°",
+   "explicacao": "Menores de 8 anos: **10°** de varo ou valgo, 10° sagital e 1 cm de encurtamento; maiores, 5°. A rotação não remodela.",
+   "opcoes": [
+    "10°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0f58b81534e1",
+   "origem": "autoral",
+   "trecho": "Em menores de 8 anos, aceitam-se até cerca de **10°** de varo ou valgo, 10° de angulação sagital e 1 cm de encurtamento",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0630-co3",
+   "questao": "pediatria-0630",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da diáfise da tíbia da criança, em cerca de quantos casos a fíbula está íntegra?",
+   "resposta": "70%",
+   "explicacao": "Cerca de **70%**: a fíbula íntegra funciona como tirante lateral e leva ao varo.",
+   "opcoes": [
+    "70%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0f58b81534e1",
+   "origem": "autoral",
+   "trecho": "Em cerca de **70%** dos casos, a fíbula está íntegra.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0630-pc1",
+   "questao": "pediatria-0630",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura da tíbia da criança com a fíbula íntegra tende ao varo. E com a fíbula também fraturada?",
+   "resposta": "valgo",
+   "explicacao": "**Fíbula íntegra:** varo (molde em valgo). **Fíbula fraturada:** **valgo** e encurtamento.",
+   "opcoes": [
+    "valgo",
+    "varo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0f58b81534e1",
+   "origem": "autoral",
+   "trecho": "Quando a **fíbula** também está fraturada, a tendência é o **valgo** e o **encurtamento**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0636-tb1",
    "questao": "pediatria-0636",
    "area": "Ortopedia pediátrica",
@@ -5356,6 +6032,34 @@
    "fonte": "7b5f6644f38b",
    "origem": "autoral",
    "trecho": "avulsão do **epicôndilo medial** (o lado medial em tensão)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0647-co1",
+   "questao": "pediatria-0647",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Acima de qual peso as hastes flexíveis de titânio falham mais no fêmur da criança?",
+   "resposta": "45 a 50 kg",
+   "explicacao": "Falham em crianças **acima de 45 a 50 kg**, acima de 11 anos e em fraturas instáveis: preferir placa submuscular ou haste rígida.",
+   "opcoes": [
+    "45 a 50 kg"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "07c8a06c572d",
+   "origem": "autoral",
+   "trecho": "As hastes falham mais em fraturas **instáveis** (cominutivas, oblíquas longas, de comprimento instável), em crianças **pesadas** (acima de 45 a 50 kg) e acima de 11 anos.",
    "criadoEm": "2026-10-15"
   },
   {
