@@ -24,6 +24,7 @@ import { gravar, ler } from '../estado/armazenamento'
 import { recurso } from '../config'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Sessao.css'
+import { urlImagem } from '../dados/edicoes'
 import { obterPlano } from '../conta/cronograma'
 import { usarPremium } from '../conta/premium'
 import { calcularPlano } from '../dados/planoEstudo'
@@ -207,7 +208,11 @@ export function Sessao() {
     if (!sessao || sessao.simulado || !questoes) return
     preCarregarComentario(indice, questaoAtual)
     const proxima = questoes.find((q) => q.id === sessao.ids[posicao + 1]) ?? null
-    const espera = window.setTimeout(() => preCarregarComentario(indice, proxima), 1500)
+    const espera = window.setTimeout(() => {
+      preCarregarComentario(indice, proxima)
+      // As figuras da próxima também: ao avançar, a imagem já está no cache.
+      for (const imagem of proxima?.imagens ?? []) new Image().src = urlImagem(imagem.arquivo)
+    }, 1500)
     return () => window.clearTimeout(espera)
   }, [indice, questoes, questaoAtual, sessao, posicao])
 

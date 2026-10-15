@@ -107,13 +107,16 @@ export function CartaoQuestao({
 
   const [enviando, definirEnviando] = useState(false)
   const [erroEnvio, definirErroEnvio] = useState('')
+  // Errou agora (não ao rever uma questão já respondida): o comentário rola até a letra marcada.
+  const [errouAgora, definirErrouAgora] = useState(false)
+  useEffect(() => definirErrouAgora(false), [questao.id])
   async function confirmar(letra: Letra) {
     if (travada || enviando) return
     definirErroEnvio('')
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
     const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
     definirEnviando(true)
-    try { await aoResponder(letra, correta, segundos, confianca) }
+    try { await aoResponder(letra, correta, segundos, confianca); if (correta === false) definirErrouAgora(true) }
     catch (erro) {
       // Nunca falhar em silêncio: o que der errado aparece embaixo do botão.
       definirErroEnvio(erro instanceof Error ? `${erro.name}: ${erro.message}` : String(erro))
@@ -368,7 +371,7 @@ export function CartaoQuestao({
         {questao.imagens.length > 0 && (
           <div className="questao__figuras">
             {questao.imagens.map((imagem) => (
-              <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? `Figura da questão ${questao.id}`} largura={imagem.largura} altura={imagem.altura} />
+              <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? `Figura da questão ${questao.id}`} largura={imagem.largura} altura={imagem.altura} prioridade />
             ))}
           </div>
         )}
@@ -511,7 +514,7 @@ export function CartaoQuestao({
               </div>
             )}
 
-            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} />
+            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
@@ -697,12 +700,23 @@ function ComentarioDaIA({
   comentario,
   carregando,
   escolhida,
+  rolarParaMarcada = false,
 }: {
   questao: Questao
   comentario: ComentarioIA | null
   carregando: boolean
   escolhida: Letra | null
+  rolarParaMarcada?: boolean
 }) {
+  // Ao errar, o que mais importa é por que a letra marcada não serve: leva até ela uma vez.
+  const marcada = useRef<HTMLElement>(null)
+  const rolou = useRef(false)
+  useEffect(() => {
+    if (!rolarParaMarcada || !comentario || rolou.current || !marcada.current) return
+    rolou.current = true
+    const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    marcada.current.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' })
+  }, [rolarParaMarcada, comentario])
   // Sem gabarito oficial, o comentário pode indicar a resposta pela bibliografia.
   const referencia = questao.anulada ? null : questao.gabarito ?? comentario?.provavel ?? null
   // Todas as outras letras aparecem, mesmo sem análise: sumir com uma delas
@@ -781,7 +795,7 @@ function ComentarioDaIA({
             )}
 
             {erradas.map((letra) => (
-              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra}>
+              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra} ref={escolhida === letra ? marcada : undefined}>
                 <header className="cm-alt__cabeca">
                   <span className="cm-alt__letra">{letra}</span>
                   <strong className="cm-alt__texto">{textoAlternativa(letra) ?? 'Alternativa'}</strong>
