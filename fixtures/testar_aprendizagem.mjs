@@ -57,19 +57,17 @@ try {
   assert.equal(est.periodo.diasAtivos, 1); assert.equal(est.desde, '2026-10-13')
   assert.equal(est.pendentes, 2) // c3 (errei) e c1 (errou na Cripta)
 
-  // Cronograma: sem data, data passada, metas, sobrecarga e concluído.
-  assert.equal(m.calcularPlano(null, cartas, t0).situacao, 'sem-data')
-  const base = { areas: [], diasSemana: [], ritmo: 500, criadoEm: t0 }
-  assert.equal(m.calcularPlano({ ...base, data: '2026-10-01' }, cartas, t0).situacao, 'data-passada')
-  const ok = m.calcularPlano({ ...base, data: '2026-11-12' }, cartas, t0)
-  assert.equal(ok.situacao, 'ok'); assert.equal(ok.novosRestantes, cartas.length - 3); assert.equal(ok.revisoesHoje, 2)
-  assert.ok(ok.metaHoje >= ok.revisoesHoje && ok.metaHoje <= ok.revisoesHoje + ok.novosPorDia)
-  assert.equal(m.calcularPlano({ ...base, data: '2026-10-15', ritmo: 1 }, cartas, t0).situacao, 'acima-do-ritmo')
-  assert.equal(m.calcularPlano({ ...base, data: '2026-11-12', areas: ['area-que-nao-existe'] }, cartas, t0).situacao, 'sem-flashcards')
+  // Cronograma (sequência por incidência, 15/10/2026; detalhes em testar_cronograma_sequencia_flashcards.mjs):
+  // sem plano usa o sugerido, revisões vencidas vêm antes e o plano termina quando tudo foi visto.
+  const regs = m.ler('flashcards:registros', {})
+  const sem = m.calcularCronograma(null, cartas, regs, t0)
+  assert.equal(sem.revisoes.length, 2); assert.deepEqual(sem.sessaoHoje.slice(0, 2).sort(), sem.revisoes.slice().sort())
+  assert.equal(sem.novosRestantes, cartas.length - 3)
   const soUma = cartas[0].areaId ?? cartas[0].area
   const daArea = cartas.filter((c) => (c.areaId ?? c.area) === soUma)
   for (const [i, c] of daArea.entries()) m.registrarEstudo({ chave: 'tudo:' + i, id: c.id, modo: 'estudo', objetiva: true, avaliacao: 'sabia', agora: t0 + 5000 })
-  assert.equal(m.calcularPlano({ ...base, data: '2026-11-12', areas: [soUma] }, cartas, t0 + 6000).situacao, 'concluido')
+  const fim = m.calcularCronograma({ areas: [soUma], diasSemana: [], ritmo: 20, criadoEm: t0 }, cartas, m.ler('flashcards:registros', {}), t0 + 6000)
+  assert.equal(fim.novosRestantes, 0); assert.equal(fim.previsao, null)
 
   console.log('aprendizagem dos flashcards: ok')
 } finally {

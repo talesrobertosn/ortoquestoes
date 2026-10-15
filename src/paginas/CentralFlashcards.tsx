@@ -2,26 +2,22 @@ import { useEffect, useMemo, useState } from 'react'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { JanelaCentral } from '../componentes/JanelaCentral'
 import { recurso } from '../config'
-import { gravar, ler } from '../estado/armazenamento'
+import { ler } from '../estado/armazenamento'
 import { revisarHoje } from '../estado/revisao'
 import { href, navegar } from '../util/rotas'
-import {
-  calcularEstatisticas, calcularPlano, CHAVE_PLANO, chaveDoDia, type PlanoFlashcards,
-} from '../flashcards/aprendizagem'
+import { calcularEstatisticas, chaveDoDia, type DiaResumido } from '../flashcards/aprendizagem'
+import { corDaArea } from '../dados/coresAreas'
+import { CartaoCronograma, PaginaCronogramaFlashcards, linkSessaoCronograma, usarCronograma } from './CronogramaFlashcards'
 import { carregarAcervo, indiceDoAcervo } from '../flashcards/dados/acervo'
 import {
   CATEGORIAS_OPINIAO, deveConvidar, dispensarConvite, enviarOpiniao, mensagemDeErro,
   type CategoriaOpiniao, type OrigemOpiniao,
 } from '../flashcards/opiniao'
-import { CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, type RegistroFlashcard, type Recordes } from '../flashcards/progresso'
+import { CHAVE_RECORDES, RECORDES_VAZIOS, type Recordes } from '../flashcards/progresso'
 import type { Flashcard } from '../flashcards/tipos'
 import '../estilos/paginas/CentralFlashcards.css'
 
 export const AVISO_BETA = 'O Torneio de Flashcards está em beta. Estamos aprimorando o visual, o áudio e as mecânicas. Teste e conte o que funcionou — ou o que precisa melhorar.'
-
-/** Data da prova usada no cronograma de questões quando a pessoa não tem plano (PlanoEstudo.tsx). */
-const DATA_TEOT = '2027-01-10'
-const DIA = 86400000
 
 function usarAcervo() {
   const [cartas, definirCartas] = useState<Flashcard[] | null>(null)
@@ -41,6 +37,8 @@ const estudar = (categoria: string, n?: number, areas: string[] = []) => {
   if (n) q.set('n', String(n))
   return `/flashcards/biblioteca?${q}`
 }
+/** Biblioteca já num assunto (pontos fracos do desempenho). */
+const estudarAssunto = (area: string, assunto: string) => `/flashcards/biblioteca?${new URLSearchParams({ categoria: 'area:' + area, area, assunto, n: '20' })}`
 
 function Abas({ atual }: { atual: 'central' | 'desempenho' | 'cronograma' }) {
   const abas: Array<{ id: typeof atual; rotulo: string; destino: string; icone: NomeIcone }> = [
@@ -60,10 +58,8 @@ function Abas({ atual }: { atual: 'central' | 'desempenho' | 'cronograma' }) {
 /* ------------------------------------------------------------------ Central */
 
 export function CentralFlashcards() {
-  const { cartas, nomes } = usarAcervo()
-  const registros = useMemo(() => ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}), [])
+  const { cartas, nomes, crono, salvo, registros } = usarCronograma()
   const rec = useMemo(() => ({ ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }), [])
-  const plano = useMemo(() => ler<PlanoFlashcards | null>(CHAVE_PLANO, null), [])
   // #/flashcards?opiniao=fim_sessao (fim da sessão de estudo ou da partida) já abre a janela
   const [opiniao, definirOpiniao] = useState<OrigemOpiniao | null>(() => {
     const o = new URLSearchParams(window.location.hash.split('?')[1] ?? '').get('opiniao')
@@ -81,7 +77,6 @@ export function CentralFlashcards() {
     }
   }, [registros])
   const novos = cartas ? cartas.filter((c) => !registros[c.id]).length : null
-  const calc = useMemo(() => (cartas && plano ? calcularPlano(plano, cartas) : null), [cartas, plano])
   const areas = useMemo(() => Object.entries(nomes).sort((a, b) => a[1].localeCompare(b[1], 'pt-BR')), [nomes])
 
   return (
@@ -96,8 +91,9 @@ export function CentralFlashcards() {
           <h1>Treine flashcards<br />de Ortopedia.</h1>
           <p>Por área, tirados das questões comentadas das provas reais. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
           <div className="cf-heroi__botoes">
-            <a className="botao botao--ouro botao--grande" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Treinar flashcards</a>
-            <a className="botao botao--principal" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={18} /> Jogar a Cripta</a>
+            <a className="botao botao--ouro botao--grande" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Estudar flashcards</a>
+            <a className="botao botao--principal" href={href('/flashcards/cripta')}><Icone nome="raio" tamanho={18} /> Jogar o Torneio</a>
+            <a className="botao botao--fantasma cf-heroi__crono" href={href(linkSessaoCronograma())}><Icone nome="rota" tamanho={18} /> Seguir cronograma</a>
           </div>
         </div>
       </section>
@@ -128,7 +124,7 @@ export function CentralFlashcards() {
         </div>
         {areas.length > 0 && <PorAssunto areas={areas} />}
       </section>
-      <CartaoCronograma plano={plano} calc={calc} />
+      <CartaoCronograma c={crono} sugerido={!salvo} />
       </div>
 
       <section aria-labelledby="cf-passos-titulo">
@@ -160,41 +156,6 @@ export function CentralFlashcards() {
 
       {opiniao && <JanelaOpiniao origem={opiniao} aoFechar={() => definirOpiniao(null)} />}
     </article>
-  )
-}
-
-/** Cronograma em destaque na central (pedido do Tales, 14/10/2026: "que a pessoa consiga ver o cronograma com mais facilidade"). */
-function CartaoCronograma({ plano, calc }: { plano: PlanoFlashcards | null; calc: ReturnType<typeof calcularPlano> | null }) {
-  if (!plano) return (
-    <section className="cf-crono cf-crono--vazio" aria-labelledby="cf-crono-titulo">
-      <h2 id="cf-crono-titulo"><Icone nome="calendario" tamanho={20} /> Meu cronograma</h2>
-      <p>Diga a data da prova, os assuntos e quantos flashcards por dia. A meta de cada dia junta as revisões que venceram e os flashcards novos.</p>
-      <a className="botao botao--principal" href={href('/flashcards/cronograma')}>Montar meu cronograma</a>
-    </section>
-  )
-  const feito = calc ? Math.min(calc.feitosHoje, calc.metaHoje || calc.feitosHoje) : 0
-  const meta = calc?.metaHoje ?? 0
-  return (
-    <section className="cf-crono" aria-labelledby="cf-crono-titulo">
-      <h2 id="cf-crono-titulo"><Icone nome="calendario" tamanho={20} /> Meu cronograma</h2>
-      <p className="cf-crono__data">Até <b>{formatarData(plano.data)}</b>{calc && calc.diasRestantes > 0 ? ` · faltam ${calc.diasRestantes} ${calc.diasRestantes === 1 ? 'dia' : 'dias'}` : ''}</p>
-      {calc && calc.situacao === 'concluido' ? <p>Tudo em dia: nada novo nem revisão pendente nos assuntos do cronograma.</p>
-        : calc && calc.situacao === 'data-passada' ? <p>A data-alvo já passou. Escolha uma nova data no cronograma.</p>
-        : calc && !calc.ehDiaDeEstudo && !meta ? <p>Hoje não é dia de estudo no seu cronograma.</p>
-        : (
-          <>
-            <div className="cf-crono__meta" role="meter" aria-label="Meta de hoje" aria-valuemin={0} aria-valuemax={Math.max(meta, 1)} aria-valuenow={feito}>
-              <span>Meta de hoje</span><b className="numerico">{feito}/{meta}</b>
-              <i><em style={{ width: `${meta ? Math.round((100 * feito) / meta) : 0}%` }} /></i>
-            </div>
-            {calc && <p className="cf-nota">{calc.revisoesHoje} {calc.revisoesHoje === 1 ? 'revisão' : 'revisões'} + {calc.novosPorDia} {calc.novosPorDia === 1 ? 'novo' : 'novos'} por dia{calc.situacao === 'acima-do-ritmo' ? ' · acima do seu ritmo: considere aumentar o ritmo diário' : ''}</p>}
-          </>
-        )}
-      <div className="cf-crono__botoes">
-        {calc && meta > feito && <a className="botao botao--principal" href={href(estudar('plano', meta - feito, plano.areas))}>Fazer a sessão de hoje ({meta - feito})</a>}
-        <a className="botao botao--fantasma" href={href('/flashcards/cronograma')}>Ajustar cronograma</a>
-      </div>
-    </section>
   )
 }
 
@@ -233,7 +194,12 @@ function CartaoModo({ arte, titulo, texto, destino, acao }: { arte: string; titu
 /* -------------------------------------------------------------- Desempenho */
 
 const pct = (a: number, b: number) => (b ? `${Math.round((100 * a) / b)}%` : '—')
+const DIAS_CURTOS = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 
+/**
+ * Meu desempenho (visual refeito em 15/10/2026): números principais, evolução por dia com
+ * as autoavaliações empilhadas, cada área com a sua cor e os pontos fracos com botão para treinar.
+ */
 export function DesempenhoFlashcards() {
   const { cartas, nomes } = usarAcervo()
   const [dias, definirDias] = useState(30)
@@ -241,7 +207,9 @@ export function DesempenhoFlashcards() {
   if (!est) return <article className="cf empilha-2"><Abas atual="desempenho" /><p role="status">Carregando o acervo…</p></article>
   const p = est.periodo
   const avaliacoes = p.errei + p.hesitei + p.sabia
-  const maxDia = Math.max(1, ...p.porDia.map((d) => d.revisoes))
+  const fracos = est.porAssunto.filter((a) => a.acertos < a.tentativas).slice(0, 6)
+  const estudadas = est.porArea.filter((a) => a.estudados > 0)
+  const naoEstudadas = est.porArea.filter((a) => !a.estudados)
   return (
     <article className="cf empilha-2">
       <Abas atual="desempenho" />
@@ -252,70 +220,124 @@ export function DesempenhoFlashcards() {
       </header>
 
       <section className="cf-numeros" aria-label="Totais desde o começo">
-        <Numero rotulo="Flashcards únicos estudados" valor={est.unicos} nota="Cada flashcard conta uma vez, por mais que você repita." />
+        <Numero rotulo="Flashcards únicos estudados" valor={est.unicos} nota={cartas ? `de ${cartas.length.toLocaleString('pt-BR')} no acervo` : 'Cada flashcard conta uma vez.'} barra={cartas?.length ? est.unicos / cartas.length : undefined} />
         <Numero rotulo="Respostas no total" valor={est.revisoes} nota="Todas as vezes que você respondeu, contando as repetições." />
         <Numero rotulo="Revisões pendentes hoje" valor={est.pendentes} nota="Venceram pela repetição espaçada." destino={est.pendentes ? estudar('pendentes', Math.min(est.pendentes, 50)) : undefined} />
-        <Numero rotulo="Dominados" valor={est.dominados} nota="Acertou todas as voltas da escada de revisão e saiu da fila." />
+        <Numero rotulo="Dominados" valor={est.dominados} nota="Acertou todas as voltas da escada de revisão." barra={est.unicos ? est.dominados / est.unicos : undefined} />
       </section>
 
       <section className="cf-bloco" aria-labelledby="cf-periodo">
         <div className="cf-bloco__cabeca">
-          <h2 id="cf-periodo">Nos últimos {dias} dias</h2>
+          <h2 id="cf-periodo">Evolução nos últimos {dias} dias</h2>
           <div className="cf-chips" role="radiogroup" aria-label="Período">
             {[7, 30, 90].map((d) => <button key={d} type="button" role="radio" aria-checked={dias === d} onClick={() => definirDias(d)}>{d} dias</button>)}
           </div>
         </div>
-        {est.desde && <p className="cf-nota">Registro diário desde {formatarData(est.desde)}. Respostas anteriores à versão beta entram nos totais acima, mas não aqui: nada é estimado para trás.</p>}
         <div className="cf-numeros cf-numeros--miudo">
           <Numero rotulo="Respostas" valor={p.revisoes} nota={`${p.diasAtivos} ${p.diasAtivos === 1 ? 'dia' : 'dias'} com estudo`} />
           <Numero rotulo="Flashcards novos" valor={p.novos} nota="Vistos pela primeira vez no período" />
-          <Numero rotulo="Acerto na primeira resposta" valor={pct(p.primeirasCertas, p.primeiras)} nota={`${p.primeirasCertas} de ${p.primeiras} flashcards respondidos pela primeira vez com alternativas`} />
+          <Numero rotulo="Acerto na primeira resposta" valor={pct(p.primeirasCertas, p.primeiras)} nota={`${p.primeirasCertas} de ${p.primeiras} na primeira vez com alternativas`} />
           <Numero rotulo="Acerto nas alternativas" valor={pct(p.objetivasCertas, p.objetivas)} nota={`${p.objetivasCertas} de ${p.objetivas} respostas com alternativa`} />
         </div>
+        <GraficoDias porDia={p.porDia} />
         <h3 className="cf-sub">Como você se avaliou</h3>
         {avaliacoes ? (
           <div className="cf-barra" role="img" aria-label={`Errei ${p.errei}, hesitei ${p.hesitei}, sabia ${p.sabia}`}>
             {(['errei', 'hesitei', 'sabia'] as const).map((k) => p[k] ? <span key={k} className={`cf-barra__${k}`} style={{ flexGrow: p[k] }}>{rotuloAvaliacao[k]} {p[k]}</span> : null)}
           </div>
         ) : <p className="cf-nota">Ainda sem autoavaliações no período. Elas vêm da Biblioteca (Errei, Hesitei, Sabia); no Torneio conta só o acerto da alternativa.</p>}
-        <p className="cf-nota">“Sabia” é a sua impressão, não um acerto conferido: o acerto objetivo é o da alternativa escolhida.</p>
-        <h3 className="cf-sub">Respostas por dia</h3>
-        <div className="cf-dias" role="img" aria-label={`Respostas por dia nos últimos ${dias} dias`}>
-          {p.porDia.map((d) => <i key={d.dia} title={`${formatarData(d.dia)}: ${d.revisoes}`} style={{ height: `${(100 * d.revisoes) / maxDia}%` }} data-hoje={d.dia === chaveDoDia(Date.now()) || undefined} />)}
-        </div>
+        <p className="cf-nota">“Sabia” é a sua impressão, não um acerto conferido: o acerto objetivo é o da alternativa escolhida.{est.desde ? ` Registro diário desde ${formatarData(est.desde)}; nada é estimado para trás.` : ''}</p>
+      </section>
+
+      <section className="cf-bloco" aria-labelledby="cf-fracos">
+        <h2 id="cf-fracos">Pontos fracos</h2>
+        {fracos.length ? (
+          <ul className="cfd-fracos">
+            {fracos.map((a) => (
+              <li key={a.area + a.assunto} style={{ ['--area' as string]: corDaArea(a.area) }}>
+                <span className="cfd-fracos__nome"><strong>{a.assunto}</strong><small>{a.nome} · {a.acertos} de {a.tentativas} respostas certas{a.pendentes ? ` · ${a.pendentes} para revisar` : ''}</small></span>
+                <span className="cfd-fracos__pct numerico" aria-hidden="true" data-faixa={a.acertos / a.tentativas >= 0.75 ? 'bom' : a.acertos / a.tentativas >= 0.5 ? 'medio' : 'baixo'}>{pct(a.acertos, a.tentativas)}</span>
+                <a className="botao botao--principal" href={href(estudarAssunto(a.area, a.assunto))}>Treinar</a>
+              </li>
+            ))}
+          </ul>
+        ) : <p className="cf-nota">Os assuntos com menor acerto aparecem aqui depois de três respostas em cada um. Por enquanto, nada para destacar.</p>}
       </section>
 
       <section className="cf-bloco" aria-labelledby="cf-areas">
-        <h2 id="cf-areas">Por assunto</h2>
-        <div className="cf-tabela">
-          <table>
-            <thead><tr><th scope="col">Área</th><th scope="col">Estudados</th><th scope="col">Acerto</th><th scope="col">Pendentes</th><th scope="col"><span className="so-leitor">Ação</span></th></tr></thead>
-            <tbody>
-              {est.porArea.map((a) => (
-                <tr key={a.area}>
-                  <th scope="row">{a.nome}</th>
-                  <td className="numerico">{a.estudados}/{a.total}</td>
-                  <td className="numerico">{pct(a.acertos, a.tentativas)}</td>
-                  <td className="numerico">{a.pendentes}</td>
-                  <td><a href={href(estudar(a.pendentes ? 'pendentes' : 'area:' + a.area, 20, [a.area]))}>{a.pendentes ? 'Revisar' : 'Estudar'}</a></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p className="cf-nota">Acerto por assunto: respostas certas sobre todas as respostas daquela área, desde o começo.</p>
+        <h2 id="cf-areas">Por área</h2>
+        <ul className="cfd-areas">
+          {[...estudadas, ...naoEstudadas].map((a) => {
+            const prog = a.total ? a.estudados / a.total : 0
+            const acerto = a.tentativas ? a.acertos / a.tentativas : null
+            return (
+              <li key={a.area} style={{ ['--area' as string]: corDaArea(a.area) }}>
+                <span className="cfd-areas__nome"><i aria-hidden="true" /><strong>{a.nome}</strong></span>
+                <span className="cfd-areas__barra" role="meter" aria-label={`${a.nome}: ${a.estudados} de ${a.total} estudados`} aria-valuemin={0} aria-valuemax={a.total} aria-valuenow={a.estudados} title={`${a.estudados} de ${a.total} estudados`}>
+                  <i style={{ width: `${Math.max(prog ? 1.5 : 0, prog * 100)}%` }} />
+                </span>
+                <span className="cfd-areas__num numerico">{a.estudados}<small>/{a.total}</small></span>
+                <span className="cfd-areas__acerto numerico" data-faixa={acerto === null ? 'vazio' : acerto >= 0.75 ? 'bom' : acerto >= 0.5 ? 'medio' : 'baixo'}>{acerto === null ? '—' : pct(a.acertos, a.tentativas)}<small>acerto</small></span>
+                <a className="cfd-areas__acao" href={href(estudar(a.pendentes ? 'pendentes' : 'area:' + a.area, 20, [a.area]))}>{a.pendentes ? `Revisar ${a.pendentes}` : 'Estudar'}</a>
+              </li>
+            )
+          })}
+        </ul>
+        <p className="cf-nota">Barra: flashcards da área já estudados. Acerto: respostas certas sobre todas as respostas daquela área, desde o começo.</p>
       </section>
     </article>
   )
 }
 
+/** Respostas por dia, empilhadas por autoavaliação (a Cripta e as respostas sem avaliação ficam em cinza). */
+function GraficoDias({ porDia }: { porDia: DiaResumido[] }) {
+  const max = Math.max(1, ...porDia.map((d) => d.revisoes))
+  const topo = max <= 5 ? max : Math.ceil(max / 5) * 5
+  const hoje = chaveDoDia(Date.now())
+  const total = porDia.reduce((s, d) => s + d.revisoes, 0)
+  const rotulo = (d: DiaResumido) => { const [, m, dd] = d.dia.split('-'); return `${Number(dd)}/${Number(m)}` }
+  const marcas = porDia.length <= 7 ? porDia.map((_, i) => i) : [0, Math.floor(porDia.length / 2), porDia.length - 1]
+  return (
+    <figure className="cfd-grafico">
+      <figcaption>
+        <strong>Respostas por dia</strong>
+        <span className="cfd-legenda" aria-hidden="true"><i className="cfd-c--sabia" /> Sabia <i className="cfd-c--hesitei" /> Hesitei <i className="cfd-c--errei" /> Errei <i className="cfd-c--outras" /> Torneio e sem avaliação</span>
+      </figcaption>
+      {total ? (
+        <div className="cfd-grafico__area">
+          <span className="cfd-grafico__eixo" aria-hidden="true"><b>{topo}</b><b>0</b></span>
+          <ol className="cfd-grafico__barras" aria-label={`Respostas por dia nos últimos ${porDia.length} dias`}>
+            {porDia.map((d) => {
+              const outras = Math.max(0, d.revisoes - d.sabia - d.hesitei - d.errei)
+              const ds = new Date(d.dia + 'T12:00:00')
+              const texto = `${DIAS_CURTOS[ds.getDay()]}, ${rotulo(d)}: ${d.revisoes} ${d.revisoes === 1 ? 'resposta' : 'respostas'}${d.revisoes ? ` (sabia ${d.sabia}, hesitei ${d.hesitei}, errei ${d.errei}, outras ${outras})` : ''}`
+              return (
+                <li key={d.dia} data-hoje={d.dia === hoje || undefined} title={texto} aria-label={texto} tabIndex={d.revisoes ? 0 : -1}>
+                  <span className="cfd-pilha" style={{ height: `${(100 * d.revisoes) / topo}%` }}>
+                    {outras > 0 && <i className="cfd-c--outras" style={{ flexGrow: outras }} />}
+                    {d.errei > 0 && <i className="cfd-c--errei" style={{ flexGrow: d.errei }} />}
+                    {d.hesitei > 0 && <i className="cfd-c--hesitei" style={{ flexGrow: d.hesitei }} />}
+                    {d.sabia > 0 && <i className="cfd-c--sabia" style={{ flexGrow: d.sabia }} />}
+                  </span>
+                </li>
+              )
+            })}
+          </ol>
+          <span className="cfd-grafico__datas" aria-hidden="true">{marcas.map((i) => <b key={i} style={{ left: `${((i + 0.5) * 100) / porDia.length}%` }}>{porDia[i].dia === hoje ? 'hoje' : rotulo(porDia[i])}</b>)}</span>
+        </div>
+      ) : <p className="cf-nota cfd-grafico__vazio">Nenhuma resposta no período. Os dias de estudo aparecem aqui como barras.</p>}
+    </figure>
+  )
+}
+
 const rotuloAvaliacao = { errei: 'Errei', hesitei: 'Hesitei', sabia: 'Sabia' }
 
-function Numero({ rotulo, valor, nota, destino }: { rotulo: string; valor: number | string; nota: string; destino?: string }) {
+function Numero({ rotulo, valor, nota, destino, barra }: { rotulo: string; valor: number | string; nota: string; destino?: string; barra?: number }) {
   return (
     <div className="cf-numero">
       <span>{rotulo}</span>
       <b className="numerico">{typeof valor === 'number' ? valor.toLocaleString('pt-BR') : valor}</b>
+      {barra !== undefined && <i className="cfd-mini" aria-hidden="true"><em style={{ width: `${Math.min(100, Math.max(barra > 0 ? 2 : 0, barra * 100))}%` }} /></i>}
       <small>{nota}</small>
       {destino && <a href={href(destino)}>Revisar agora</a>}
     </div>
@@ -329,106 +351,8 @@ function formatarData(iso: string) {
 
 /* -------------------------------------------------------------- Cronograma */
 
-const DIAS_SEMANA = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
-const RITMOS = [10, 20, 30, 50, 80]
-
 export function CronogramaFlashcards() {
-  const { cartas, nomes } = usarAcervo()
-  const [plano, definirPlano] = useState<PlanoFlashcards | null>(() => ler<PlanoFlashcards | null>(CHAVE_PLANO, null))
-  const [editando, definirEditando] = useState(!plano)
-  const calc = useMemo(() => (cartas && plano ? calcularPlano(plano, cartas) : null), [cartas, plano])
-  const salvar = (p: PlanoFlashcards) => { gravar(CHAVE_PLANO, p); definirPlano(p); definirEditando(false) }
-  return (
-    <article className="cf empilha-2">
-      <Abas atual="cronograma" />
-      <header className="cf-cabeca">
-        <p className="cf-selo"><span className="cf-beta">Beta</span> Flashcards</p>
-        <h1>Meu cronograma de flashcards</h1>
-        <p>Escolha a data-alvo, os assuntos e os dias em que você estuda. A meta de cada dia junta as revisões que venceram e os flashcards novos que faltam. É separado do cronograma de questões.</p>
-      </header>
-      {!cartas ? <p role="status">Carregando o acervo…</p> : editando || !plano
-        ? <FormularioPlano atual={plano} nomes={nomes} aoSalvar={salvar} aoCancelar={plano ? () => definirEditando(false) : undefined} />
-        : calc && <ResumoPlano plano={plano} calc={calc} nomes={nomes} aoEditar={() => definirEditando(true)} />}
-    </article>
-  )
-}
-
-function ResumoPlano({ plano, calc, nomes, aoEditar }: { plano: PlanoFlashcards; calc: ReturnType<typeof calcularPlano>; nomes: Record<string, string>; aoEditar: () => void }) {
-  const assuntos = plano.areas.length ? plano.areas.map((a) => nomes[a] ?? a).join(', ') : 'Todas as áreas'
-  const aviso: Record<string, string> = {
-    'data-passada': 'A data-alvo já passou. Escolha uma nova data para continuar com metas diárias; as revisões vencidas seguem abaixo.',
-    'sem-flashcards': 'Os assuntos escolhidos não têm flashcards no acervo. Edite o plano e escolha outras áreas.',
-    concluido: 'Tudo em dia: você já viu todos os flashcards do plano e nenhuma revisão venceu hoje.',
-    'acima-do-ritmo': `Para terminar até a data, a carga estimada é de ${calc.cargaPorDia} por dia, acima do seu ritmo de ${plano.ritmo}. Aumente o ritmo, inclua mais dias ou adie a data.`,
-  }
-  const acumuladas = calc.revisoesHoje > plano.ritmo
-  return (
-    <section className="cf-bloco cf-plano" aria-label="Plano atual">
-      <div className="cf-plano__topo">
-        <div>
-          <h2>{calc.situacao === 'data-passada' ? 'A data-alvo passou' : `${calc.diasRestantes} ${calc.diasRestantes === 1 ? 'dia de estudo' : 'dias de estudo'} até ${formatarData(plano.data)}`}</h2>
-          <p className="cf-nota">{assuntos} · {plano.diasSemana.length === 7 || !plano.diasSemana.length ? 'todos os dias' : plano.diasSemana.map((d) => DIAS_SEMANA[d]).join(', ')} · ritmo de {plano.ritmo} por dia</p>
-        </div>
-        <button type="button" className="botao botao--fantasma" onClick={aoEditar}><Icone nome="lapis" tamanho={16} /> Editar</button>
-      </div>
-      {aviso[calc.situacao] && <p className={`cf-alerta cf-alerta--${calc.situacao}`} role="status">{aviso[calc.situacao]}</p>}
-      {acumuladas && <p className="cf-alerta" role="status">Acumularam {calc.revisoesHoje} revisões, mais que o seu ritmo. A sessão de hoje começa por elas; os novos esperam até a fila baixar.</p>}
-      <div className="cf-numeros cf-numeros--miudo">
-        <Numero rotulo="Meta de hoje" valor={calc.ehDiaDeEstudo ? calc.metaHoje : 0} nota={calc.ehDiaDeEstudo ? 'Revisões vencidas + novos do dia' : 'Hoje não é dia de estudo no seu plano'} />
-        <Numero rotulo="Revisões vencidas" valor={calc.revisoesHoje} nota="Nos assuntos do plano" />
-        <Numero rotulo="Novos por dia" valor={calc.novosPorDia} nota={`Faltam ${calc.novosRestantes.toLocaleString('pt-BR')} nunca estudados`} />
-        <Numero rotulo="Feitos hoje" valor={calc.feitosHoje} nota="Flashcards do plano respondidos hoje" />
-      </div>
-      {calc.metaHoje > 0 && (
-        <a className="botao botao--principal botao--grande" href={href(estudar('plano', Math.max(1, calc.metaHoje - calc.feitosHoje) || calc.metaHoje, plano.areas))}>Começar a sessão de hoje</a>
-      )}
-    </section>
-  )
-}
-
-function FormularioPlano({ atual, nomes, aoSalvar, aoCancelar }: { atual: PlanoFlashcards | null; nomes: Record<string, string>; aoSalvar: (p: PlanoFlashcards) => void; aoCancelar?: () => void }) {
-  const hoje = chaveDoDia(Date.now())
-  const [data, definirData] = useState(atual?.data ?? (DATA_TEOT > hoje ? DATA_TEOT : chaveDoDia(Date.now() + 60 * DIA)))
-  const [areas, definirAreas] = useState<string[]>(atual?.areas ?? [])
-  const [diasSemana, definirDias] = useState<number[]>(atual?.diasSemana ?? [1, 2, 3, 4, 5, 6])
-  const [ritmo, definirRitmo] = useState(atual?.ritmo ?? 20)
-  const lista = Object.entries(nomes).sort((a, b) => a[1].localeCompare(b[1], 'pt-BR'))
-  const alterna = <T,>(v: T[], x: T) => (v.includes(x) ? v.filter((y) => y !== x) : [...v, x])
-  const invalido = !data || data <= hoje ? 'Escolha uma data a partir de amanhã.' : !diasSemana.length ? 'Escolha ao menos um dia da semana.' : ''
-  return (
-    <form className="cf-bloco cf-form" onSubmit={(e) => { e.preventDefault(); if (!invalido) aoSalvar({ data, areas, diasSemana: [...diasSemana].sort(), ritmo, criadoEm: atual?.criadoEm ?? Date.now() }) }}>
-      <label className="cf-campo">
-        <span>Data-alvo</span>
-        <input type="date" value={data} min={chaveDoDia(Date.now() + DIA)} onChange={(e) => definirData(e.target.value)} required />
-        <small>Sugestão: a data do TEOT usada no cronograma de questões ({formatarData(DATA_TEOT)}).</small>
-      </label>
-      <fieldset className="cf-campo">
-        <legend>Assuntos</legend>
-        <div className="cf-chips">
-          <button type="button" aria-pressed={!areas.length} onClick={() => definirAreas([])}>Todos</button>
-          {lista.map(([id, nome]) => <button key={id} type="button" aria-pressed={areas.includes(id)} onClick={() => definirAreas(alterna(areas, id))}>{nome}</button>)}
-        </div>
-      </fieldset>
-      <fieldset className="cf-campo">
-        <legend>Dias disponíveis</legend>
-        <div className="cf-chips">
-          {DIAS_SEMANA.map((n, i) => <button key={n} type="button" aria-pressed={diasSemana.includes(i)} onClick={() => definirDias(alterna(diasSemana, i))}>{n}</button>)}
-        </div>
-      </fieldset>
-      <fieldset className="cf-campo">
-        <legend>Ritmo diário (flashcards por dia)</legend>
-        <div className="cf-chips" role="radiogroup">
-          {RITMOS.map((r) => <button key={r} type="button" role="radio" aria-checked={ritmo === r} onClick={() => definirRitmo(r)}>{r}</button>)}
-        </div>
-      </fieldset>
-      {invalido && <p className="cf-alerta" role="status">{invalido}</p>}
-      <div className="cf-form__botoes">
-        <button type="submit" className="botao botao--principal" disabled={!!invalido}>Salvar cronograma</button>
-        {aoCancelar && <button type="button" className="botao botao--fantasma" onClick={aoCancelar}>Cancelar</button>}
-      </div>
-      <p className="cf-nota">O cronograma de flashcards fica salvo neste aparelho.</p>
-    </form>
-  )
+  return <PaginaCronogramaFlashcards abas={<Abas atual="cronograma" />} />
 }
 
 /* ---------------------------------------------------------------- Opinião */

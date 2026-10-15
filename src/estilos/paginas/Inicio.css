@@ -605,3 +605,19 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
  .inicio-flash--faixa .inicio-flash__texto { width: 88%; }
  .inicio-flash--faixa .inicio-flash__desc { display: block; }
 }
+
+/* Quadro dos flashcards com caminhos diretos (15/10/2026): estudar, jogar ou seguir o cronograma. */
+.inicio-flash .inicio-flash__capa, .inicio-flash .inicio-flash__capa:hover, .inicio-flash .inicio-flash__capa:visited { color: #f6efd8; text-decoration: none; }
+.inicio-flash__capa::after { content: ''; position: absolute; inset: 0; z-index: 0; }
+.inicio-flash__capa:focus-visible { outline: none; }
+.inicio-flash__capa:focus-visible::after { outline: 2px solid #e3b860; outline-offset: -3px; border-radius: inherit; }
+.inicio-flash__botoes, .inicio-flash__crono { position: relative; z-index: 1; }
+.inicio-flash__botoes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.25rem; }
+.inicio-flash__botoes .inicio-flash__botao { margin-top: 0; }
+.inicio-flash__botao--jogo { background: rgba(248, 239, 217, 0.12); color: #f8efd9; border-color: rgba(248, 239, 217, 0.55); }
+.inicio-flash__botao--jogo:hover { background: rgba(248, 239, 217, 0.22); color: #fff; }
+.inicio-flash__crono { justify-self: start; display: inline-flex; align-items: center; gap: 0.35rem; min-height: 2rem; color: #f0cf83; font-weight: 700; font-size: 0.9rem; }
+.inicio-flash__crono:hover { color: #fff; }
+@media (max-width: 40rem) {
+  .inicio-flash__botoes .botao { flex: 1 1 auto; justify-content: center; min-height: 44px; }
+}

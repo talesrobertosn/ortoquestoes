@@ -220,3 +220,63 @@
   .cf-painel { grid-template-columns: minmax(0, 1fr); }
   .cf-painel .cf-crono { order: -1; }
 }
+
+/* Meu desempenho (15/10/2026): evolução empilhada, áreas com a cor da área e pontos fracos. */
+.cfd-mini { display: block; height: 6px; margin: 0.2rem 0 0.1rem; border-radius: 999px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); overflow: hidden; }
+.cfd-mini em { display: block; height: 100%; border-radius: inherit; background: var(--verdete); }
+.cfd-c--sabia { background: var(--acerto); }
+.cfd-c--hesitei { background: var(--aviso); }
+.cfd-c--errei { background: var(--erro); }
+.cfd-c--outras { background: var(--traco-forte); }
+.cfd-grafico { display: grid; gap: 0.6rem; margin: 0.5rem 0 0; }
+.cfd-grafico figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.3rem 1rem; }
+.cfd-legenda { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.45rem; font-size: 0.8rem; color: var(--texto-2); }
+.cfd-legenda i { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 3px; margin-left: 0.35rem; }
+.cfd-grafico__area { position: relative; display: grid; grid-template-columns: 2rem minmax(0, 1fr); grid-template-rows: 9rem auto; column-gap: 0.4rem; }
+.cfd-grafico__eixo { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; font-size: 0.72rem; color: var(--texto-2); font-variant-numeric: tabular-nums; }
+.cfd-grafico__barras { display: flex; align-items: flex-end; gap: 2px; margin: 0; padding: 0; list-style: none; border-bottom: 1px solid var(--traco-forte);
+  background: linear-gradient(var(--traco) 1px, transparent 1px) 0 0 / 100% 50%; }
+.cfd-grafico__barras li { flex: 1 1 0; display: flex; align-items: flex-end; height: 100%; min-width: 0; cursor: default; border-radius: 4px 4px 0 0; }
+.cfd-grafico__barras li:hover, .cfd-grafico__barras li:focus-visible { background: color-mix(in srgb, var(--verdete) 10%, transparent); outline: none; }
+.cfd-pilha { display: flex; flex-direction: column; gap: 2px; width: 100%; max-width: 22px; margin: 0 auto; overflow: hidden; border-radius: 4px 4px 0 0; }
+.cfd-pilha i { display: block; min-height: 2px; flex-basis: 0; }
+.cfd-grafico__barras li[data-hoje] .cfd-pilha { box-shadow: 0 0 0 2px var(--ouro); }
+.cfd-grafico__datas { grid-column: 2; position: relative; height: 1.2rem; font-size: 0.72rem; color: var(--texto-2); }
+.cfd-grafico__datas b { position: absolute; top: 0.2rem; transform: translateX(-50%); font-weight: 500; white-space: nowrap; }
+.cfd-grafico__datas b:first-child { transform: none; left: 0 !important; }
+.cfd-grafico__datas b:last-child:not(:first-child) { transform: none; left: auto !important; right: 0; }
+.cfd-grafico__vazio { padding: 1.5rem; border: 1px dashed var(--traco-forte); border-radius: var(--raio); text-align: center; }
+
+.cfd-fracos, .cfd-areas { display: grid; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
+.cfd-fracos li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 0.75rem; padding: 0.6rem 0.75rem; border: 1px solid var(--traco); border-left: 4px solid var(--area); border-radius: var(--raio); background: var(--superficie-2); }
+.cfd-fracos__nome { display: grid; min-width: 0; }
+.cfd-fracos__nome small { color: var(--texto-2); }
+.cfd-fracos__pct { font-size: 1.3rem; font-weight: 800; color: var(--erro-texto, var(--erro)); }
+.cfd-fracos__pct[data-faixa="bom"] { color: var(--acerto-texto, var(--acerto)); }
+.cfd-fracos__pct[data-faixa="medio"] { color: var(--aviso-texto, var(--aviso)); }
+.cfd-areas li { display: grid; grid-template-columns: minmax(9rem, 1.4fr) minmax(5rem, 2fr) 4.5rem 4.2rem 6.5rem; align-items: center; gap: 0.75rem; padding: 0.5rem 0.25rem; border-bottom: 1px solid var(--traco); }
+.cfd-areas__nome { display: flex; align-items: center; gap: 0.5rem; min-width: 0; }
+.cfd-areas__nome i { flex: none; width: 0.75rem; height: 0.75rem; border-radius: 3px; background: var(--area); }
+.cfd-areas__nome strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+.cfd-areas__barra { display: block; height: 10px; border-radius: 999px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); overflow: hidden; }
+.cfd-areas__barra i { display: block; height: 100%; border-radius: inherit; background: var(--area); }
+.cfd-areas__num { text-align: right; font-weight: 700; }
+.cfd-areas__num small { font-weight: 400; color: var(--texto-2); }
+.cfd-areas__acerto { display: grid; justify-items: end; font-weight: 800; line-height: 1.1; }
+.cfd-areas__acerto small { font-weight: 500; font-size: 0.7rem; color: var(--texto-2); }
+.cfd-areas__acerto[data-faixa="bom"] { color: var(--acerto-texto, var(--acerto)); }
+.cfd-areas__acerto[data-faixa="medio"] { color: var(--aviso-texto, var(--aviso)); }
+.cfd-areas__acerto[data-faixa="baixo"] { color: var(--erro-texto, var(--erro)); }
+.cfd-areas__acerto[data-faixa="vazio"] { color: var(--texto-2); }
+.cfd-areas__acao { justify-self: end; display: inline-flex; align-items: center; min-height: 2.25rem; padding: 0 0.75rem; border: 1px solid var(--traco-forte); border-radius: 999px; font-weight: 700; font-size: 0.85rem; text-decoration: none; white-space: nowrap; }
+.cfd-areas__acao:hover { border-color: var(--verdete); }
+@media (max-width: 40rem) {
+  .cfd-areas li { grid-template-columns: minmax(0, 1fr) auto auto; grid-template-areas: "nome num acerto" "barra barra acao"; row-gap: 0.4rem; }
+  .cfd-areas__nome { grid-area: nome; } .cfd-areas__num { grid-area: num; } .cfd-areas__acerto { grid-area: acerto; }
+  .cfd-areas__barra { grid-area: barra; } .cfd-areas__acao { grid-area: acao; }
+  .cfd-fracos li { grid-template-columns: minmax(0, 1fr) auto; }
+  .cfd-fracos li .botao { grid-column: 1 / -1; justify-content: center; }
+  .cfd-grafico__area { grid-template-rows: 7rem auto; }
+}
+/* botões do herói da central: três caminhos diretos */
+.cf-heroi__botoes .cf-heroi__crono { background: transparent; color: #f8efd9; border-color: #f8efd9aa; }
