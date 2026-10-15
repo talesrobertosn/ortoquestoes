@@ -11,7 +11,7 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
 import { carregarAcervo } from '../dados/acervo'
-import { autorizarFlashcardCripta, FLASHCARDS_NO_SERVIDOR, iniciarCorrida, RANKING_NO_SERVIDOR, registrarAndar, sincronizarProgresso, vincularFlashcard, type LimiteCripta } from '../servidor'
+import { autorizarFlashcardCripta, FLASHCARDS_NO_SERVIDOR, novaChave, iniciarCorrida, RANKING_NO_SERVIDOR, registrarAndar, sincronizarProgresso, vincularFlashcard, type LimiteCripta } from '../servidor'
 import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro, pixelVfx, precarregarVfx } from '../efeitos/palco'
@@ -121,8 +121,8 @@ function partidaSalva(modo: Modo): Partida | null {
  * (uma por 24 h, parte 19 do SQL) e vale para o ranking quando ele estiver ligado.
  */
 function comCorrida(p: Partida): Partida {
-  if (!FLASHCARDS_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
-  const idCorrida = crypto.randomUUID()
+  if (!FLASHCARDS_NO_SERVIDOR) return p
+  const idCorrida = novaChave()
   // o Fácil não conta para o ranking (só abre a corrida da vida grátis)
   if (NIVEIS[nivelDaPartida(p)].ranqueado && RANKING_NO_SERVIDOR) void iniciarCorrida(idCorrida, p.modo, nivelDaPartida(p) === 'dificil' ? 'dificil' : 'normal')
   return { ...p, idCorrida }
@@ -963,13 +963,17 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     // Plano grátis: o servidor decide se este flashcard ainda cabe nas 24 h (trava desligada por padrão).
     if (FLASHCARDS_NO_SERVIDOR && p.atual) {
       validando.current = true
-      const chave = chaves.current.get(p.rodada) ?? crypto.randomUUID()
+      const chave = chaves.current.get(p.rodada) ?? novaChave()
       chaves.current.set(p.rodada, chave)
       // partida salva antes da regra da vida grátis: abre a corrida agora
       let q = p
-      if (!q.idCorrida && typeof crypto !== 'undefined' && 'randomUUID' in crypto) { q = { ...p, idCorrida: crypto.randomUUID() }; partidaRef.current = q; definirPartida(q) }
-      const r = q.idCorrida ? await autorizarFlashcardCripta(q.atual!.id, chave, q.idCorrida, q.modo) : { permitido: true, ilimitado: true, restantes: null, liberaEm: '' }
-      validando.current = false
+      if (!q.idCorrida) { q = { ...p, idCorrida: novaChave() }; partidaRef.current = q; definirPartida(q) }
+      // Uma falha aqui deixava `validando` preso e o jogo parava de aceitar toques
+      // sem aviso. Agora o toque simplesmente não conta e a pessoa tenta de novo.
+      let r: Awaited<ReturnType<typeof autorizarFlashcardCripta>>
+      try { r = await autorizarFlashcardCripta(q.atual!.id, chave, q.idCorrida!, q.modo) }
+      catch (falha) { console.error('Flashcard não autorizado', falha); return }
+      finally { validando.current = false }
       if (!r.permitido) { definirBloqueio(r); return }
       // sem a função nova no banco, o flashcard foi autorizado pelo limite antigo: liga à corrida à parte
       if (!r.cripta && q.idCorrida) void vincularFlashcard(chave, q.idCorrida)
