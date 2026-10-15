@@ -145,3 +145,72 @@ export function escolherVespera(candidatas: CandidataVespera[], edicao: string, 
   })
   return embaralhar(escolhidas, semente ^ 0x9e3779b9)
 }
+
+/**
+ * Em que pé está a edição para esta pessoa. Uma só regra para o botão do topo,
+ * o texto do prazo e o histórico (antes cada pedaço da página decidia sozinho,
+ * e uma edição ainda por abrir aparecia como "encerrada").
+ */
+export type SituacaoEdicao = 'em-breve' | 'aberta' | 'andamento' | 'tempo-esgotado' | 'entregue' | 'encerrada'
+export function situacaoEdicao(ed: Pick<EdicaoNacional, 'abre_em' | 'fecha_em' | 'duracao_min' | 'minha'>, agora = Date.now()): SituacaoEdicao {
+  const minha = ed.minha
+  if (minha?.entregue_em) return 'entregue'
+  if (minha) return Date.parse(minha.iniciado_em) + ed.duracao_min * 60_000 < agora ? 'tempo-esgotado' : 'andamento'
+  if (agora < Date.parse(ed.abre_em)) return 'em-breve'
+  if (agora > Date.parse(ed.fecha_em)) return 'encerrada'
+  return 'aberta'
+}
+
+/** Segundos que faltam da prova começada (nunca negativo). */
+export function segundosRestantesProva(iniciadoEm: string, duracaoMin: number, agora = Date.now()): number {
+  return Math.max(0, Math.round((Date.parse(iniciadoEm) + duracaoMin * 60_000 - agora) / 1000))
+}
+
+/** "abre em 3 dias", "encerra em 5 horas": o prazo que importa agora, ou null quando já encerrou. */
+export function prazoEdicao(ed: Pick<EdicaoNacional, 'abre_em' | 'fecha_em'>, agora = Date.now()): string | null {
+  const abrir = Date.parse(ed.abre_em) - agora
+  const [ms, verbo] = abrir > 0 ? [abrir, 'abre'] : [Date.parse(ed.fecha_em) - agora, 'encerra']
+  if (ms <= 0) return null
+  // Arredonda os dias: "2 dias e 23 horas" diz "3 dias", como a data mostrada ao lado.
+  const dias = Math.round(ms / 86_400_000)
+  if (ms >= 86_400_000) return `${verbo} em ${dias} ${dias === 1 ? 'dia' : 'dias'}`
+  const horas = Math.floor(ms / 3_600_000)
+  if (horas >= 1) return `${verbo} em ${horas} ${horas === 1 ? 'hora' : 'horas'}`
+  const minutos = Math.max(1, Math.ceil(ms / 60_000))
+  return `${verbo} em ${minutos} min`
+}
+
+export interface ItemCorrecao { id_questao: string; gabarito: string; marcada: string | null }
+export interface ResumoCorrecao {
+  certas: number
+  erradas: number
+  brancas: number
+  /** Erradas e em branco, agrupadas pelo tema, do tema com mais erros para o com menos. */
+  porTema: Array<{ tema: string; ids: string[] }>
+  /** Ids errados ou em branco, na ordem da prova. */
+  paraRever: string[]
+}
+/** Conta a correção e junta o que errou por tema (o tema vem do índice do acervo). */
+export function resumirCorrecao(itens: ItemCorrecao[], temaDe: (id: string) => string | undefined): ResumoCorrecao {
+  let certas = 0, erradas = 0, brancas = 0
+  const paraRever: string[] = []
+  const grupos = new Map<string, string[]>()
+  for (const q of itens) {
+    if (q.marcada && q.marcada === q.gabarito) { certas++; continue }
+    if (q.marcada) erradas++
+    else brancas++
+    paraRever.push(q.id_questao)
+    const tema = temaDe(q.id_questao) ?? 'Outros'
+    grupos.set(tema, [...(grupos.get(tema) ?? []), q.id_questao])
+  }
+  const porTema = [...grupos].map(([tema, ids]) => ({ tema, ids })).sort((a, b) => b.ids.length - a.ids.length || a.tema.localeCompare(b.tema, 'pt-BR'))
+  return { certas, erradas, brancas, porTema, paraRever }
+}
+
+export interface EdicaoHistorico { edicao: string; acertos: number; total: number; noTempo: boolean | null }
+/** Nota de cada edição feita e a variação (em pontos) sobre a anterior; da mais recente para a mais antiga. */
+export function evolucaoHistorico(historico: EdicaoHistorico[]): Array<EdicaoHistorico & { nota: number; variacao: number | null }> {
+  const nota = (h: EdicaoHistorico) => (h.total ? Math.round((h.acertos / h.total) * 100) : 0)
+  const ordenado = [...historico].sort((a, b) => a.edicao.localeCompare(b.edicao))
+  return ordenado.map((h, i) => ({ ...h, nota: nota(h), variacao: i ? nota(h) - nota(ordenado[i - 1]) : null })).reverse()
+}
