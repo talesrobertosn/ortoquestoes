@@ -8,13 +8,14 @@ import { usarSessao } from '../estado/sessao'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
 import { navegar } from '../util/rotas'
 import { INTERVALOS } from '../estado/revisao'
+import { FUSO_DIA, diaDaSemana, inicioDaChave } from '../util/dia'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import '../estilos/paginas/Revisao.css'
 
 const DIA = 86400000
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const TETOS: Array<number | null> = [15, 20, 30, 50, null]
-const FORMATO_MES = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric' })
+const FORMATO_MES = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric', timeZone: FUSO_DIA })
 
 /** "90d" fica ilegível — a partir de 2 meses o rótulo passa a ser em meses/anos. */
 function rotuloIntervalo(dias: number): string {
@@ -34,7 +35,14 @@ const ESCADAS: { rotulo: string; icone: NomeIcone; dias: number[]; nota: string;
   { rotulo: 'Certeza', icone: 'certo', dias: INTERVALOS.seguro, nota: 'Espaça bastante', nivel: 3 },
 ]
 
-function inicioMes(data: number): number { const d = new Date(data); d.setDate(1); d.setHours(0, 0, 0, 0); return d.getTime() }
+// O calendário anda pelos dias de São Paulo (src/util/dia.ts), como o resto da revisão.
+const anoMes = (data: number) => chaveDia(data).slice(0, 7)
+function inicioMes(data: number): number { return inicioDaChave(`${anoMes(data)}-01`) }
+/** O mês `delta` meses depois do mês de `data`, como chave "AAAA-MM". */
+function somarMeses(data: number, delta: number): string {
+  const [ano, mes] = anoMes(data).split('-').map(Number)
+  return new Date(Date.UTC(ano, mes - 1 + delta, 1)).toISOString().slice(0, 7)
+}
 
 export function Revisao() {
   const { indice, carregando } = usarIndice(); const { contexto } = usarContextoLocal(''); const { iniciarComAviso } = usarSessao()
@@ -50,13 +58,13 @@ export function Revisao() {
   const mesAtual = inicioMes(hoje)
   const mesLimite = useMemo(() => inicioMes(hoje + JANELA_REVISAO_DIAS * DIA), [hoje])
   const celulasMes = useMemo(() => {
-    const base = new Date(mesExibido); const ano = base.getFullYear(); const mes = base.getMonth()
-    const diasNoMes = new Date(ano, mes + 1, 0).getDate()
-    const celulas: (number | null)[] = Array.from({ length: new Date(ano, mes, 1).getDay() }, () => null)
-    for (let d = 1; d <= diasNoMes; d++) celulas.push(new Date(ano, mes, d).getTime())
+    const chaveMes = anoMes(mesExibido); const [ano, mes] = chaveMes.split('-').map(Number)
+    const diasNoMes = new Date(Date.UTC(ano, mes, 0)).getUTCDate()
+    const celulas: (number | null)[] = Array.from({ length: diaDaSemana(`${chaveMes}-01`) }, () => null)
+    for (let d = 1; d <= diasNoMes; d++) celulas.push(inicioDaChave(`${chaveMes}-${String(d).padStart(2, '0')}`))
     return celulas
   }, [mesExibido])
-  const irParaMes = (delta: number) => definirMesExibido((atual) => { const d = new Date(atual); d.setMonth(d.getMonth() + delta); return d.getTime() })
+  const irParaMes = (delta: number) => definirMesExibido((atual) => inicioDaChave(`${somarMeses(atual, delta)}-01`))
   const pendentes = [...plano.values()].reduce((n, d) => n + d.ids.length, 0); const atrasadas = plano.get(chaveDia(hoje))?.atrasadas ?? 0
   const incertas = Object.values(contexto.respondidas).filter(r => r.confianca === 'duvida' || r.confianca === 'chute').length
   const iniciarIds = async (ids: string[]) => { if (!indice || !ids.length) return; if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, limite: ids.length, embaralhar: true, situacao: 'revisarHoje' }, ids))) return; navegar('/sessao') }
@@ -65,7 +73,7 @@ export function Revisao() {
   const idsHoje = plano.get(chaveDia(hoje))?.ids ?? []
   const hojeTotal = idsHoje.length
   const excedente = Math.max(0, vencidasHoje - hojeTotal)
-  const folgaHoje = ritmo.folgas.includes(new Date(hoje).getDay())
+  const folgaHoje = ritmo.folgas.includes(diaDaSemana(hoje))
   const proximoDia = [...plano.values()].filter(d => d.inicio > hoje && d.ids.length).sort((a, b) => a.inicio - b.inicio)[0]
   const alternarFolga = (d: number) => definirRitmo({ ...ritmo, folgas: ritmo.folgas.includes(d) ? ritmo.folgas.filter(x => x !== d) : [...ritmo.folgas, d].sort() })
   const textoHeroi = hojeTotal
@@ -117,7 +125,7 @@ export function Revisao() {
           const d = plano.get(chaveDia(data)); const carga = d?.ids.length ?? 0
           const classe = passado ? 'calendario__dia--passado' : d?.atrasadas ? 'calendario__dia--atrasado' : carga > 20 ? 'calendario__dia--alto' : carga > 0 ? 'calendario__dia--leve' : ''
           return <button key={data} type="button" className={`calendario__dia ${classe} ${selecionado === data ? 'calendario__dia--selecionado' : ''}`} disabled={passado} onClick={() => definirSelecionado(data)}>
-            <strong>{new Date(data).getDate()}</strong>
+            <strong>{Number(chaveDia(data).slice(8))}</strong>
             <small>{passado ? '' : carga || '—'}</small>
           </button>
         })}

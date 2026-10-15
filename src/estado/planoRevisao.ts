@@ -1,6 +1,7 @@
 import type { Indice } from '../dados/tipos'
 import type { RegistroQuestao } from './revisao'
 import { dominada } from './revisao'
+import { FUSO_DIA, chaveDoDia, diaDaSemana, inicioDoDia, inicioDoDiaSeguinte } from '../util/dia'
 
 export interface DiaRevisao {
   chave: string; inicio: number; ids: string[]; temas: Map<string, number>; acertos: number; tentativas: number
@@ -24,13 +25,14 @@ export const SEM_RITMO: RitmoRevisao = { limite: null, folgas: [] }
 
 type Registros = Record<string, Partial<RegistroQuestao> & { c: boolean | null }>
 
-export function inicioDia(data = Date.now()) { const d = new Date(data); d.setHours(0, 0, 0, 0); return d.getTime() }
-/** AAAA-MM-DD no fuso do aparelho: em UTC, quem estuda depois das 21h (Brasília) caía no dia seguinte. */
-export function chaveDia(data: number) {
-  const d = new Date(data)
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
-}
-function diaSeguinte(dia: number) { const d = new Date(dia); d.setDate(d.getDate() + 1); d.setHours(0, 0, 0, 0); return d.getTime() }
+/**
+ * Os dias da revisão são dias de São Paulo (src/util/dia.ts), os mesmos do
+ * limite, da sequência e do cronograma: `inicio` é o primeiro instante do dia
+ * lá, e a chave é "AAAA-MM-DD".
+ */
+export function inicioDia(data = Date.now()) { return inicioDoDia(data) }
+export function chaveDia(data: number) { return chaveDoDia(data) }
+const diaSeguinte = (dia: number) => inicioDoDiaSeguinte(dia)
 
 /** Mesma regra de revisarHoje: registros antigos sem data voltam 3 dias depois da resposta. */
 function vencimentoDe(r: Partial<RegistroQuestao> & { c: boolean | null }): number | null {
@@ -59,7 +61,7 @@ export function distribuirRevisoes(registros: Registros, ritmo: RitmoRevisao = S
   const folgas = new Set(ritmo.folgas.length >= 7 ? [] : ritmo.folgas)
   const feitas = ritmo.limite === null ? 0 : revisoesFeitasHoje(registros, agora)
   const capacidade = (dia: number) => {
-    if (folgas.has(new Date(dia).getDay())) return 0
+    if (folgas.has(diaDaSemana(dia))) return 0
     if (ritmo.limite === null) return Infinity
     return dia === hoje ? Math.max(0, ritmo.limite - feitas) : ritmo.limite
   }
@@ -108,5 +110,5 @@ export function planoRevisao(indice: Indice, registros: Registros, dias = JANELA
   }
   return porDia
 }
-const FORMATO_ROTULO = new Intl.DateTimeFormat('pt-BR', { weekday: 'short', day: 'numeric', month: 'short' })
+const FORMATO_ROTULO = new Intl.DateTimeFormat('pt-BR', { weekday: 'short', day: 'numeric', month: 'short', timeZone: FUSO_DIA })
 export function rotuloDia(data: number) { return FORMATO_ROTULO.format(data) }

@@ -1,4 +1,5 @@
-import { chaveDia } from './planoRevisao'
+// Dias de São Paulo (src/util/dia.ts), como o servidor confere sequencia_em no ranking.
+import { chaveDoDia as chaveDia, numeroDoDia, somarDias } from '../util/dia'
 import type { RegistroQuestao } from './revisao'
 
 /** Quantas questões por dia mantêm a sequência viva. */
@@ -19,8 +20,6 @@ export interface Streak {
   /** Último dia (AAAA-MM-DD) incluído na sequência atual: hoje, se a meta já foi batida, ou ontem. */
   ateDia: string
 }
-
-const numeroDoDia = (chave: string) => Math.floor(new Date(`${chave}T00:00:00Z`).getTime() / 86400000)
 
 /**
  * Conta questões respondidas por dia a partir do histórico curto que já fica
@@ -72,7 +71,7 @@ export function calcularStreak(
     hojeContagem,
     metaHojeAtingida,
     emRisco: !metaHojeAtingida && atual > 0,
-    ateDia: metaHojeAtingida ? hojeChave : chaveDia(agora - 86400000),
+    ateDia: metaHojeAtingida ? hojeChave : somarDias(hojeChave, -1),
   }
 }
 

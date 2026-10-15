@@ -11,7 +11,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, dataLocal, diasAte, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, diasAte, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
@@ -26,6 +26,7 @@ import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
 import { usarDiaAtual } from '../util/usarDiaAtual'
+import { chaveCivil, chaveDoDia, diaCivil, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
@@ -38,9 +39,9 @@ const SEMANAS_PREVIA = 2
 const curta = (d: Date) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
 type Respondidas = Record<string, RegistroQuestao>
 
+/** Amanhã no dia de São Paulo (src/util/dia.ts). */
 function amanhaIso() {
-  const d = new Date(); d.setDate(d.getDate() + 1)
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+  return somarDias(hojeBR(), 1)
 }
 
 /**
@@ -220,9 +221,9 @@ export function PlanoEstudo() {
 
   async function semanaDificil(ativar: boolean) {
     if (!plano) return
-    const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+    const hoje = diaCivil()
     const seg = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
-    const chave = `${seg.getFullYear()}-${String(seg.getMonth() + 1).padStart(2, '0')}-${String(seg.getDate()).padStart(2, '0')}`
+    const chave = chaveCivil(seg)
     const alternarSemana = (p: PlanoSalvo) => {
       const atuais = (p.opcoes?.semanasDificeis ?? []).filter((s) => s >= chave)
       return { ...(p.opcoes ?? {}), semanasDificeis: ativar ? [...new Set([...atuais, chave])] : atuais.filter((s) => s !== chave) }
@@ -288,7 +289,7 @@ export function PlanoEstudo() {
 
 /** O que a pessoa marcou como feito hoje fora das questões (flashcards, mini-simulado). O resumão tem registro próprio (estado/resumaoLido). */
 interface FeitosDoDia { data: string; flashcards?: boolean; mini?: boolean }
-const chaveHoje = () => { const d = new Date(); return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}` }
+const chaveHoje = () => { const d = diaCivil(); return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}` }
 
 /** Sessão do cronograma que ficou pela metade (a pessoa fechou o site no meio). */
 function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: number; tema: string; simulado: boolean } | null {
@@ -300,10 +301,12 @@ function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: n
 
 /** Resumo da semana que passou (para domingo e segunda): questões, dias, acerto e a área mais fraca. */
 function resumoDaSemana(indice: Indice, respondidas: Respondidas, calculo: CalculoPlano) {
-  const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+  const hoje = diaCivil()
   if (hoje.getDay() !== 0 && hoje.getDay() !== 1) return null
-  const fim = hoje.getDay() === 1 ? hoje.getTime() : hoje.getTime() + 86_400_000
-  const inicio = fim - 7 * 86_400_000
+  // Semana de segunda a domingo em dias de São Paulo (src/util/dia.ts).
+  const chaveFim = somarDias(hojeBR(), hoje.getDay() === 1 ? 0 : 1)
+  const fim = inicioDaChave(chaveFim)
+  const inicio = inicioDaChave(somarDias(chaveFim, -7))
   const temaDe = new Map(indice.questoes.map((q) => [q.id, q.t]))
   let feitas = 0, certas = 0, validas = 0
   const dias = new Set<string>()
@@ -311,7 +314,7 @@ function resumoDaSemana(indice: Indice, respondidas: Respondidas, calculo: Calcu
   for (const [id, r] of Object.entries(respondidas)) {
     for (const h of r.historico ?? (r.q !== undefined ? [{ em: r.q, correta: r.c }] : [])) {
       if (h.em < inicio || h.em >= fim) continue
-      feitas++; dias.add(new Date(h.em).toDateString())
+      feitas++; dias.add(chaveDoDia(h.em))
       if (h.correta === null) continue
       validas++; if (h.correta) certas++
       const t = temaDe.get(id)
@@ -538,7 +541,7 @@ function SemanaASemana({ semanas, aberto, calculo }: { semanas: CalculoPlano['se
  */
 function PreviaCronograma({ indice, respondidas }: { indice: Indice; respondidas: Respondidas }) {
   const exemplo = useMemo<PlanoSalvo>(() => {
-    const prova = dataLocal(DATA_TEOT) > new Date() ? DATA_TEOT : (() => { const d = new Date(); d.setDate(d.getDate() + 90); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}` })()
+    const prova = DATA_TEOT > hojeBR() ? DATA_TEOT : somarDias(hojeBR(), 90)
     return { data_prova: prova, intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: respondidasNoAcervo(indice, respondidas, true), criado_em: new Date().toISOString(), incluir_simulados: true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [indice])
@@ -559,7 +562,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   /** Sem salvar no servidor: monta a prévia no próprio aparelho. */
   previa?: boolean
 }) {
-  const [data, definirData] = useState(atual?.data_prova ?? (dataLocal(DATA_TEOT) > new Date() ? DATA_TEOT : ''))
+  const [data, definirData] = useState(atual?.data_prova ?? (DATA_TEOT > hojeBR() ? DATA_TEOT : ''))
   const [prova, definirProva] = useState(atual?.prova ?? 'TEOT')
   const [intensidade, definirIntensidade] = useState<Intensidade>(atual?.intensidade ?? 'firme')
   const [folgas, definirFolgas] = useState<number[]>(atual?.folgas ?? [0])
@@ -577,7 +580,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const [passo, definirPasso] = useState(0)
   const { status } = usarConta()
   const sincronizado = !!previa || (status.pronto && status.pendentes === 0)
-  const dataValida = /^\d{4}-\d{2}-\d{2}$/.test(data) && dataLocal(data) > new Date()
+  const dataValida = /^\d{4}-\d{2}-\d{2}$/.test(data) && data > hojeBR()
   const minutos = useMemo(() => minutosPorQuestao(lerHistorico()), [])
   const areas = useMemo(() => indice.temas.map((t) => ({ slug: t.slug, nome: t.nome })).filter((t) => posicaoDaArea(t.slug) !== null || indice.questoes.some((q) => indice.temas[q.t]?.slug === t.slug && !q.ar)), [indice])
 
@@ -591,7 +594,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   // a digitação com folga, sem travar o campo a cada tecla.
   const dataSimulada = useDeferredValue(data)
   const simulacoes = useMemo(() => {
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(dataSimulada) || dataLocal(dataSimulada) <= new Date()) return null
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dataSimulada) || dataSimulada <= hojeBR()) return null
     const base = respondidasNoAcervo(indice, respondidas, simulados)
     const op = opcoes()
     const resultado = {} as Record<Intensidade, { meta: number; maisCai: number; alvo: number }>
@@ -666,7 +669,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
             <label className="campo">Prova<select className="entrada" value={PROVAS.includes(prova) ? prova : 'Outra prova'} onChange={(e) => definirProva(e.target.value)}>{PROVAS.map((p) => <option key={p}>{p}</option>)}</select></label>
             <label className="campo">Data da prova<input className="entrada" type="date" min={amanhaIso()} value={data} onChange={(e) => definirData(e.target.value)} /></label>
           </div>
-          {dataLocal(DATA_TEOT) > new Date() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
+          {DATA_TEOT > hojeBR() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
             <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT 2027</strong> · prova teórica em 10 de janeiro de 2027</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
           </button>}
           {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{diasAte(data)} dias</b> até a prova.</p>}

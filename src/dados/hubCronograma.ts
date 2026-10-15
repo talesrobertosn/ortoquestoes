@@ -1,4 +1,5 @@
 import type { Indice } from './tipos'
+import { diaCivil } from '../util/dia'
 import { AREAS, focoPorQuestao, idsDoFoco, type AreaIncidencia, type Foco, type Nivel } from './incidencia'
 import { DIA_MINIMO, entraNoPlano, incluiSimulados, MINUTOS_POR_QUESTAO, TAMANHO_MINI, type CalculoPlano, type PlanoSalvo } from './planoEstudo'
 
@@ -50,15 +51,16 @@ export interface Constancia {
 export function respostasPorDia(respondidas: Respondidas): Map<string, number> {
   const porDia = new Map<string, number>()
   for (const r of Object.values(respondidas)) for (const em of momentos(r)) {
-    const k = chave(new Date(em))
+    const k = chave(diaCivil(em))
     porDia.set(k, (porDia.get(k) ?? 0) + 1)
   }
   return porDia
 }
 
 export function calcularConstancia(respondidas: Respondidas, plano: PlanoSalvo, _calculo: CalculoPlano, agora = new Date()): Constancia {
-  const hoje = meiaNoite(agora)
-  const criado = meiaNoite(new Date(plano.criado_em))
+  // Dias de São Paulo (src/util/dia.ts), como datas civis.
+  const hoje = diaCivil(agora)
+  const criado = diaCivil(Date.parse(plano.criado_em))
   const porDia = respostasPorDia(respondidas)
   // Cumprir é chegar a 80% da média planejada (a meta do dia oscila; a média é estável).
   // Dia mínimo (reforma de 14/10/2026): 10 questões, novas ou de revisão, mantêm a sequência, mesmo em dia de plantão.
@@ -139,7 +141,7 @@ export function temasEsquecidos(indice: Indice, respondidas: Respondidas, calcul
   for (const [i, t] of porTema) {
     const tema = indice.temas[i]
     if (!tema || t.respondidas < 10 || daSemana.has(tema.slug)) continue
-    const dias = Math.floor((meiaNoite(new Date(agora)).getTime() - meiaNoite(new Date(t.ultima)).getTime()) / DIA)
+    const dias = Math.round((diaCivil(agora).getTime() - diaCivil(t.ultima).getTime()) / DIA)
     if (dias >= limiteDias) lista.push({ slug: tema.slug, nome: tema.nome, dias, respondidas: t.respondidas, erros: t.erros })
   }
   const peso = (slug: string) => { const i = AREAS.findIndex((a) => a.slug === slug); return i < 0 ? 1 : 1.35 - (0.55 * i) / Math.max(1, AREAS.length - 1) }
@@ -263,7 +265,7 @@ export function idsDiagnostico(indice: Indice, respondidas: Respondidas, simulad
  * parecida da prova). Devolve as áreas do dia de hoje.
  */
 export function areasDoDiaRevisao(plano: PlanoSalvo, calculo: CalculoPlano, agora = new Date()): AreaIncidencia[] {
-  const hoje = meiaNoite(agora)
+  const hoje = diaCivil(agora)
   const dias: Date[] = []
   for (let d = meiaNoite(calculo.inicioRetaFinal); d < meiaNoite(calculo.inicioModoProva); d = somarDias(d, 1)) if (!plano.folgas.includes(d.getDay())) dias.push(d)
   const indiceHoje = dias.findIndex((d) => d.getTime() === hoje.getTime())

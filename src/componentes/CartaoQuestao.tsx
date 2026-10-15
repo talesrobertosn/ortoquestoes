@@ -19,6 +19,7 @@ import { usarIndice } from '../dados/usarIndice'
 import { RelatarErro } from './RelatarErro'
 import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
 import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
+import { usarTempoVisivel } from '../util/tempoVisivel'
 import '../estilos/paginas/CartaoQuestao.css'
 
 interface Props {
@@ -43,6 +44,12 @@ interface Props {
    * no fim. Enquanto isso a alternativa continua trocável, como numa prova.
    */
   revelarResposta?: boolean
+  /**
+   * Separa o tempo acumulado de cada questão por sessão (o id da sessão):
+   * voltar a uma questão continua o relógio dela, e a mesma questão em outra
+   * sessão começa do zero.
+   */
+  chaveTempo?: string
 }
 
 export function CartaoQuestao({
@@ -60,6 +67,7 @@ export function CartaoQuestao({
   aoAvancar,
   atalhosAtivos = true,
   revelarResposta = true,
+  chaveTempo = '',
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
@@ -71,7 +79,8 @@ export function CartaoQuestao({
   const [grifos, definirGrifos] = useState<Array<{ left: number; top: number; width: number; height: number }>>([])
   const [modoLeitura, definirModoLeitura] = useState(false)
   const [ultimaAcao, definirUltimaAcao] = useState<{ tipo: 'favorito' | 'revisao' | 'risco'; letra?: Letra } | null>(null)
-  const inicio = useRef<number>(Date.now())
+  // Só o tempo com a página visível, somado por questão na sessão.
+  const segundosNaQuestao = usarTempoVisivel(`${chaveTempo}:${questao.id}`)
   const areaDaQuestao = useRef<HTMLElement>(null)
   const grifoRecente = useRef(false)
   const ponteiro = useRef<{ tipo: string; x: number; y: number; moveu: boolean }>({ tipo: '', x: 0, y: 0, moveu: false })
@@ -97,7 +106,6 @@ export function CartaoQuestao({
     definirMenuGrifo(null)
     definirRevelada(false)
     definirTextoDissertativa(lerRascunho(questao.id))
-    inicio.current = Date.now()
   }, [questao.id])
 
   const letrasDisponiveis = useMemo(
@@ -114,7 +122,7 @@ export function CartaoQuestao({
     if (travada || enviando) return
     definirErroEnvio('')
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
-    const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
+    const segundos = segundosNaQuestao()
     definirEnviando(true)
     try { await aoResponder(letra, correta, segundos, confianca); if (correta === false) definirErrouAgora(true) }
     catch (erro) {
@@ -132,7 +140,7 @@ export function CartaoQuestao({
   async function autoavaliar(nota: 'acertei' | 'parcial' | 'errei') {
     if (respondida || enviando) return
     definirErroEnvio('')
-    const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
+    const segundos = segundosNaQuestao()
     definirEnviando(true)
     // Sem letra: antes ia 'A', que aparecia como "Você marcou A" no caderno e
     // contava na estatística de "como a turma respondeu".

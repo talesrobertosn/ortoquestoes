@@ -1,4 +1,5 @@
 import { chaveData } from '../dados/planoEstudo'
+import { diaCivil } from '../util/dia'
 
 /**
  * Áreas do resumão lidas hoje, para o item "Resumão do tema" do cronograma.
@@ -14,10 +15,10 @@ export const SEGUNDOS_LEITURA = 60
 export interface ResumaoHoje { data: string; areas: string[] }
 export const RESUMAO_HOJE_VAZIO: ResumaoHoje = { data: '', areas: [] }
 
-export const lidoHoje = (registro: ResumaoHoje, slug: string | undefined, hoje = new Date()) =>
+export const lidoHoje = (registro: ResumaoHoje, slug: string | undefined, hoje = diaCivil()) =>
   !!slug && registro.data === chaveData(hoje) && registro.areas.includes(slug)
 
-export function comAreaLida(registro: ResumaoHoje, slug: string, hoje = new Date()): ResumaoHoje {
+export function comAreaLida(registro: ResumaoHoje, slug: string, hoje = diaCivil()): ResumaoHoje {
   const data = chaveData(hoje)
   const areas = registro.data === data ? registro.areas : []
   return areas.includes(slug) ? registro : { data, areas: [...areas, slug] }

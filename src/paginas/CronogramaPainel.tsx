@@ -5,6 +5,7 @@ import { formatarTempo, type Constancia, type Prontidao } from '../dados/hubCron
 import { corDaArea } from '../dados/coresAreas'
 import { posicaoDaArea } from '../dados/incidencia'
 import { Icone } from '../componentes/Icone'
+import { chaveCivil, diaCivil } from '../util/dia'
 
 /**
  * A apresentação do cronograma (reforma de 14/10/2026, docs/cronograma/PLANO.md).
@@ -31,9 +32,9 @@ const faixaCores = (partes: Array<{ slug: string; n: number }>) => {
 // ─── Onde você está ────────────────────────────────────────────────────────
 
 export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; aoAjustar?: () => void }) {
-  const hoje = meiaNoite(new Date())
+  const hoje = diaCivil()
   const prova = new Date(calculo.vespera.getTime() + DIA)
-  const criado = meiaNoite(new Date(plano.criado_em))
+  const criado = diaCivil(Date.parse(plano.criado_em))
   // Trechos do trilho: as passadas que existem, a reta final (revisão forte e modo prova) e a prova.
   const passadas = ([1, 2, 3] as Passada[]).filter((p) => calculo.inicioPassada[p] || calculo.passadaAtual === p)
   const inicioDe = (p: Passada) => (calculo.inicioPassada[p] ?? hoje)
@@ -80,7 +81,7 @@ export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { pl
             {trechos.map((t, i) => <span key={t.id} className={i === atual ? 'cp-trilho__nome--atual' : ''}>{(t.ate.getTime() - t.de.getTime()) / (fim - inicio) >= 0.16 && <><b>{t.nome}</b><small>{t.sub}</small></>}</span>)}
             <span />
           </div>
-          <p className="cp-trilho__marcos">{plano.opcoes?.provaExtra?.nome && plano.opcoes.provaExtra.data >= `${hoje.getFullYear()}-${String(hoje.getMonth() + 1).padStart(2, '0')}-${String(hoje.getDate()).padStart(2, '0')}` && <span>{plano.opcoes.provaExtra.nome} <b>{curta(new Date(`${plano.opcoes.provaExtra.data}T00:00:00`))}</b></span>}{trechos.filter((t) => (t.ate.getTime() - t.de.getTime()) / (fim - inicio) < 0.16).map((t) => <span key={t.id}>{t.nome} <b>{curta(t.de)}</b></span>)}<span>Prova <b>{curta(prova)}</b></span></p>
+          <p className="cp-trilho__marcos">{plano.opcoes?.provaExtra?.nome && plano.opcoes.provaExtra.data >= chaveCivil(hoje) && <span>{plano.opcoes.provaExtra.nome} <b>{curta(new Date(`${plano.opcoes.provaExtra.data}T00:00:00`))}</b></span>}{trechos.filter((t) => (t.ate.getTime() - t.de.getTime()) / (fim - inicio) < 0.16).map((t) => <span key={t.id}>{t.nome} <b>{curta(t.de)}</b></span>)}<span>Prova <b>{curta(prova)}</b></span></p>
         </div>
         <p className="cp-trilho__resumo">{trechos.map((t) => t.nome).join(' → ')} → prova em {curta(prova)}. Você está em: {atual >= 0 ? trechos[atual].nome : 'conteúdo novo'}.</p>
       </>}
@@ -118,7 +119,7 @@ export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, co
   const extras = itens.filter((i) => i.opcional)
   const totalMin = itens.filter((i) => !i.opcional).reduce((s, i) => s + (i.minutos ?? 0), 0)
   const faltaMin = itens.filter((i) => !i.opcional && i.estado !== 'feito').reduce((s, i) => s + (i.minutos ?? 0) * (i.progresso ? 1 - i.progresso.feitas / Math.max(1, i.progresso.total) : 1), 0)
-  const hoje = new Date()
+  const hoje = diaCivil()
   return (
     <section className="cp-bloco" aria-labelledby="cp-hoje-titulo">
       <p className="cp-rotulo"><span id="cp-hoje-titulo">Hoje</span><b>{semanaDia(hoje)}, {curta(hoje)}</b></p>
@@ -259,12 +260,12 @@ export function LinhaAmanha({ dia }: { dia: DiaPlano | null }) {
     </section>
   )
 }
-const diferencaDias = (d: Date) => Math.round((meiaNoite(d).getTime() - meiaNoite(new Date()).getTime()) / DIA)
+const diferencaDias = (d: Date) => Math.round((meiaNoite(d).getTime() - diaCivil().getTime()) / DIA)
 
 // ─── Esta semana ───────────────────────────────────────────────────────────
 
 export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean }) {
-  const hoje = meiaNoite(new Date())
+  const hoje = diaCivil()
   const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
   const opcoes = opcoesDe(plano)
   const chave = `${segunda.getFullYear()}-${String(segunda.getMonth() + 1).padStart(2, '0')}-${String(segunda.getDate()).padStart(2, '0')}`
@@ -277,7 +278,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
     const folga = plano.folgas.includes(d.getDay())
     let estado: 'feito' | 'hoje' | 'futuro' | 'folga' | 'atrasado' | 'parcial' | 'antes' = 'futuro'
     if (ehHoje) estado = 'hoje'
-    else if (d < meiaNoite(new Date(plano.criado_em))) estado = 'antes'
+    else if (d < diaCivil(Date.parse(plano.criado_em))) estado = 'antes'
     else if (d < hoje) estado = folga ? 'folga' : passado?.estado === 'cumprido' ? 'feito' : passado?.estado === 'parcial' ? 'parcial' : passado?.estado === 'antes' ? 'antes' : 'atrasado'
     else if (folga) estado = 'folga'
     const itens = ehHoje ? (calculo.hoje?.itens ?? doPlano?.itens ?? []) : doPlano?.itens ?? []
@@ -332,7 +333,7 @@ interface SemanaDepois { inicio: Date; fim: Date; partes: Array<{ slug: string; 
 export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false }: { calculo: CalculoPlano; maximo?: number; detalhe?: ReactNode; plano?: PlanoSalvo; semMais?: boolean }) {
   const extra = plano?.opcoes?.provaExtra && /^\d{4}-\d{2}-\d{2}$/.test(plano.opcoes.provaExtra.data) ? { nome: plano.opcoes.provaExtra.nome, data: new Date(`${plano.opcoes.provaExtra.data}T00:00:00`) } : null
   const [tudo, definirTudo] = useState(false)
-  const hoje = meiaNoite(new Date())
+  const hoje = diaCivil()
   const fimSemana = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() + 7 - ((hoje.getDay() + 6) % 7))
   const semanas: SemanaDepois[] = []
   let passadaAnterior: Passada | null = calculo.passadaAtual

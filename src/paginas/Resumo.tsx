@@ -21,6 +21,7 @@ import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
 import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
 import { conviteDiarioMostradoHoje } from '../componentes/ConviteDiario'
 import { lerBloqueioDiario } from '../estado/limiteDiario'
+import { chaveCivil, hojeBR, somarDias } from '../util/dia'
 import '../estilos/componentes/EsperaPixel.css'
 import '../estilos/paginas/Resumo.css'
 
@@ -600,7 +601,7 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
       <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
       <div className="rs-cronograma__proximo">
         {feita ? <>Pronto por hoje. Se quiser, <b>adiante o próximo dia</b>: o que fizer a mais sai dele. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
-        {amanha && <><br />{amanha.data.getTime() - Date.now() < 2 * 86_400_000 ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
+        {amanha && <><br />{chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
       </div>
       <a className={'botao botao--grande ' + (feita ? 'botao--ouro' : 'botao--principal')} href={href(feita ? '/cronograma?adiantar=1' : '/cronograma')}>{feita ? 'Adiantar o próximo dia' : 'Continuar o cronograma'}</a>
       {feita && <span className="rs-cronograma__link"><a href={href('/cronograma')}>Voltar ao cronograma</a> · <a href={href('/revisao')}>revisões (opcional)</a></span>}

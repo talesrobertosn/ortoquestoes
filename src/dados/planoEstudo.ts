@@ -1,4 +1,5 @@
 import type { Indice } from './tipos'
+import { diaCivil, inicioDoDia } from '../util/dia'
 import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, type Nivel } from './incidencia'
 
 /**
@@ -107,7 +108,7 @@ export const DIAS_RETA_FINAL_CURTA = 7
 export const DIAS_MODO_PROVA = 7
 /** Duas semanas de reta final só quando o plano começou com 6 semanas ou mais. */
 export function diasRetaFinal(criadoEm: string, dataProva: string): number {
-  return diasEntre(meiaNoite(new Date(criadoEm)), dataLocal(dataProva)) >= 42 ? DIAS_RETA_FINAL : DIAS_RETA_FINAL_CURTA
+  return diasEntre(diaCivil(Date.parse(criadoEm)), dataLocal(dataProva)) >= 42 ? DIAS_RETA_FINAL : DIAS_RETA_FINAL_CURTA
 }
 /** conteudo: questões novas; revisao: semana −2; prova: semana −1; vespera: o dia anterior. */
 export type FaseCronograma = 'conteudo' | 'revisao' | 'prova' | 'vespera' | 'passou'
@@ -120,8 +121,8 @@ export function dataLocal(iso: string): Date {
 }
 const meiaNoite = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate())
 const diasEntre = (a: Date, b: Date) => Math.round((meiaNoite(b).getTime() - meiaNoite(a).getTime()) / DIA)
-/** Dias de hoje até a data (AAAA-MM-DD), na mesma conta do painel do cronograma. */
-export const diasAte = (data: string, agora = new Date()) => diasEntre(agora, dataLocal(data))
+/** Dias de hoje (dia de São Paulo) até a data (AAAA-MM-DD), na mesma conta do painel do cronograma. */
+export const diasAte = (data: string, agora: Date | number = Date.now()) => diasEntre(diaCivil(agora), dataLocal(data))
 
 /** Dias de estudo em [inicio, fim), sem os dias da semana de folga. */
 export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number {
@@ -213,10 +214,12 @@ export interface CalculoPlano {
 }
 
 export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora = new Date()): CalculoPlano {
-  const hoje = meiaNoite(agora)
+  // Hoje e o dia de criação são dias de São Paulo (src/util/dia.ts), como datas civis.
+  const hoje = diaCivil(agora)
+  const inicioHoje = inicioDoDia(agora)
   const prova = dataLocal(plano.data_prova)
   const simulados = incluiSimulados(plano)
-  const criado = meiaNoite(new Date(plano.criado_em))
+  const criado = diaCivil(Date.parse(plano.criado_em))
   const diasFinais = diasRetaFinal(plano.criado_em, plano.data_prova)
   const inicioRetaFinal = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - diasFinais)
   const inicioModoProva = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - DIAS_MODO_PROVA)
@@ -267,7 +270,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     const r = respondidas[q.id]
     const primeira = r?.historico?.[0]?.em ?? r?.q
     if (primeira === undefined) continue
-    const dia = primeira >= hoje.getTime() ? hoje.getTime() : meiaNoite(new Date(primeira)).getTime()
+    const dia = primeira >= inicioHoje ? hoje.getTime() : diaCivil(primeira).getTime()
     primeirasPorDia.set(dia, (primeirasPorDia.get(dia) ?? 0) + 1)
   }
   const feitasHoje = primeirasPorDia.get(hoje.getTime()) ?? 0

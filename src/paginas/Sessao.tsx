@@ -467,6 +467,7 @@ export function Sessao() {
           aoAvancar={avancar}
           atalhosAtivos={!painelAberto}
           revelarResposta={!simulado}
+          chaveTempo={sessao.id}
         /></>
       ) : (
         <Estado titulo="Esta questão saiu do acervo.">
