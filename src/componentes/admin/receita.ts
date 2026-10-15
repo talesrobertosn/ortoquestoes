@@ -6,6 +6,11 @@ import { PLANOS as PRECOS } from '../../dados/planos'
  * cartão (renovação automática), a primeira cobrança das renovações, e
  * cancelamento (a pessoa desligou a renovação) de reembolso e de Pix que
  * simplesmente terminou. Estimativa: o extrato oficial é o do Mercado Pago.
+ *
+ * Com a RPC cobrancas_admin (parte 23), o Pix passa a usar o valor e a data
+ * que o banco gravou ao confirmar o pagamento, e o cartão o valor contratado no
+ * checkout; renovações antigas do cartão continuam reconstruídas (o banco só
+ * guarda a última cobrança de cada assinatura) e saem marcadas como estimadas.
  */
 
 export interface AssinaturaBase {
@@ -27,12 +32,78 @@ export interface AssinaturaBase {
 }
 
 export type Meio = 'pix' | 'cartao'
-export interface Cobranca { em: Date; valor: number; plano: string; id_usuario: string; estimada: boolean; tipo: 'nova' | 'renovacao'; meio: Meio }
+export interface Cobranca {
+  em: Date; valor: number; plano: string; id_usuario: string
+  /** Data ou valor deduzidos (renovação antiga reconstruída, ou paga sem a cobrança gravada). */
+  estimada: boolean
+  tipo: 'nova' | 'renovacao'; meio: Meio
+  /** Número do pagamento no Mercado Pago, quando o banco guarda. */
+  id_pagamento?: string | null
+}
 
-export const MES = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
-export const NOME_MES = (chave: string, curto = false) => new Date(`${chave}-15T12:00:00`).toLocaleDateString('pt-BR', curto ? { month: 'short' } : { month: 'long', year: 'numeric' })
+/**
+ * Cobrança gravada no banco, como a RPC cobrancas_admin devolve: no Pix, cada
+ * pedido pago (valor confirmado pelo Mercado Pago); no cartão, a última
+ * cobrança aprovada de cada assinatura, com o valor contratado no checkout.
+ */
+export interface CobrancaReal {
+  id_usuario: string
+  plano: string
+  meio: string
+  valor: number | string | null
+  em: string
+  id_pagamento: string | null
+  /** 'paga' ou 'reembolsada'. */
+  situacao: string
+  usuario?: string | null
+  nome?: string | null
+  id_assinatura?: string | null
+}
+
+/**
+ * Fuso único da receita: cada cobrança cai no dia e no mês de Brasília, qualquer
+ * que seja o fuso do navegador (o resto do painel já conta assim). O Brasil não
+ * tem horário de verão desde 2019, então Brasília é UTC−3 o ano inteiro.
+ */
+const FUSO_MS = 3 * 3_600_000
+/** Os campos UTC do Date devolvido são a data e a hora no relógio de Brasília. */
+const relogioSP = (d: Date) => new Date(d.getTime() - FUSO_MS)
+/** "2026-10": o mês da data em Brasília. */
+export const MES = (d: Date) => { const s = relogioSP(d); return `${s.getUTCFullYear()}-${String(s.getUTCMonth() + 1).padStart(2, '0')}` }
+/** "2026-10-15": o dia da data em Brasília. */
+export const DIA = (d: Date) => relogioSP(d).toISOString().slice(0, 10)
+/** O mês `chave` andando `n` meses ("2026-01" e −1 dão "2025-12"). */
+export function somarMesChave(chave: string, n: number) {
+  const [ano, mes] = chave.split('-').map(Number)
+  const total = ano * 12 + (mes - 1) + n
+  return `${Math.floor(total / 12)}-${String((total % 12) + 1).padStart(2, '0')}`
+}
+/** Primeiro instante do mês `chave` em Brasília. */
+export const inicioDoMes = (chave: string) => { const [ano, mes] = chave.split('-').map(Number); return new Date(Date.UTC(ano, mes - 1, 1) + FUSO_MS) }
+/** Meses (chaves) com algum instante em [de, ate): do mês de `de` ao mês de `ate`. */
+export function mesesEntre(de: Date, ate: Date) {
+  const lista: string[] = []
+  for (let k = MES(de); inicioDoMes(k) < ate && lista.length < 600; k = somarMesChave(k, 1)) lista.push(k)
+  return lista
+}
+export const NOME_MES = (chave: string, curto = false) => new Date(`${chave}-15T12:00:00`).toLocaleDateString('pt-BR', curto ? { month: 'short', timeZone: 'America/Sao_Paulo' } : { month: 'long', year: 'numeric', timeZone: 'America/Sao_Paulo' })
 export const precoDe = (plano: string) => PRECOS.find(p => p.id === plano)
-export const somarMeses = (d: Date, meses: number) => { const n = new Date(d); n.setMonth(n.getMonth() + meses); return n }
+/**
+ * A mesma data `meses` meses depois (ou antes), no relógio de Brasília, travando
+ * no último dia quando o mês de destino é mais curto: 31/01 + 1 mês = 28/02
+ * (29/02 no bissexto), e não 03/03. Numa série (renovação a renovação), conte
+ * sempre da mesma âncora (âncora + k períodos), senão o dia encolhe de vez
+ * depois do primeiro fevereiro.
+ */
+export function somarMeses(d: Date, meses: number) {
+  const s = relogioSP(d)
+  const dia = s.getUTCDate()
+  s.setUTCDate(1)
+  s.setUTCMonth(s.getUTCMonth() + meses)
+  const ultimo = new Date(Date.UTC(s.getUTCFullYear(), s.getUTCMonth() + 1, 0)).getUTCDate()
+  s.setUTCDate(Math.min(dia, ultimo))
+  return new Date(s.getTime() + FUSO_MS)
+}
 
 /**
  * Pix ou cartão. Sem a coluna do banco, deduz: o Pix é gravado já "sem renovar"
@@ -75,11 +146,13 @@ export const dataReembolso = (a: AssinaturaBase) => a.status === 'reembolsada' ?
 /**
  * Paga, mas sem a cobrança gravada (o aviso do Mercado Pago não chegou ou não
  * foi processado). No cartão, a assinatura só fica ativa depois de a primeira
- * cobrança ser aprovada.
+ * cobrança ser aprovada (pausada também já passou por ativa). "Vencida" sem
+ * cobrança não conta: é o que o webhook grava quando o pagamento expira, e
+ * assinatura que nunca pagou não pode entrar na receita.
  */
 export function pagaSemCobranca(a: AssinaturaBase) {
   if (a.ultima_cobranca_em || !precoDe(a.plano)) return false
-  if (a.status === 'ativa' || a.status === 'pausada' || a.status === 'vencida') return true
+  if (a.status === 'ativa' || a.status === 'pausada') return true
   if (a.status === 'cancelada' && a.fim_periodo && (a.inicio_periodo ?? a.criada_em)) {
     const dias = (new Date(a.fim_periodo).getTime() - new Date((a.inicio_periodo ?? a.criada_em)!).getTime()) / 86_400_000
     return dias >= 25
@@ -87,31 +160,64 @@ export function pagaSemCobranca(a: AssinaturaBase) {
   return false
 }
 
+/** Valor gravado (o PostgREST manda numeric como número; texto também serve); null se faltar. */
+const valorDe = (v: number | string | null | undefined) => {
+  const n = v === null || v === undefined || v === '' ? NaN : Number(v)
+  return Number.isFinite(n) && n > 0 ? n : null
+}
+
 /**
  * Cobranças: a última paga e, para trás, uma a cada período do plano até a
  * criação da assinatura (a mais antiga é a "nova", as demais são renovações).
  * Pix é sempre uma cobrança só. Reembolso tira a última. Paga sem cobrança
  * gravada entra com uma cobrança estimada no início.
+ *
+ * Com `reais` (RPC cobrancas_admin), o Pix sai dos pedidos pagos, com o valor e
+ * a data gravados (reembolsado não entra), e o cartão usa o valor contratado.
+ * Só entram pessoas presentes em `assinaturas` (quem tira contas de teste de lá
+ * tira daqui também). Sem `reais`, tudo pelo preço atual do plano.
  */
-export function cobrancas(assinaturas: AssinaturaBase[]): Cobranca[] {
+export function cobrancas(assinaturas: AssinaturaBase[], reais?: CobrancaReal[] | null): Cobranca[] {
   const lista: Cobranca[] = []
+  const quem = new Set(assinaturas.map(a => a.id_usuario))
+  const ultimaNoCartao = new Map<string, CobrancaReal>()
+  const chaveCartao = (id: string, em: string) => `${id}|${new Date(em).getTime()}`
+  for (const r of reais ?? []) {
+    if (!quem.has(r.id_usuario) || !r.em) continue
+    if (r.meio !== 'pix') { ultimaNoCartao.set(chaveCartao(r.id_usuario, r.em), r); continue }
+    const gravado = valorDe(r.valor)
+    const valor = gravado ?? precoDe(r.plano)?.total
+    if (r.situacao !== 'paga' || !valor) continue
+    lista.push({ em: new Date(r.em), valor, plano: r.plano, id_usuario: r.id_usuario, estimada: gravado === null, tipo: 'nova', meio: 'pix', id_pagamento: r.id_pagamento })
+  }
   for (const a of assinaturas) {
     const preco = precoDe(a.plano)
     if (!preco) continue
     const meio = meioDe(a)
+    if (meio === 'pix' && reais) continue
     if (!a.ultima_cobranca_em) {
       if (pagaSemCobranca(a)) lista.push({ em: new Date(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao ?? Date.now()), valor: preco.total, plano: a.plano, id_usuario: a.id_usuario, estimada: true, tipo: 'nova', meio })
       continue
     }
-    const datas: Date[] = []
-    if (meio === 'pix') datas.push(new Date(a.ultima_cobranca_em))
-    else {
+    const real = meio === 'cartao' ? ultimaNoCartao.get(chaveCartao(a.id_usuario, a.ultima_cobranca_em)) : undefined
+    const valor = valorDe(real?.valor) ?? preco.total
+    // A última cobrança é a gravada; as anteriores do cartão são reconstruídas, contando da mesma âncora.
+    const ultima = new Date(a.ultima_cobranca_em)
+    const datas: Array<{ em: Date; gravada: boolean }> = [{ em: ultima, gravada: true }]
+    if (meio === 'cartao') {
       const inicio = new Date(a.criada_em ?? a.inicio_periodo ?? a.ultima_cobranca_em).getTime() - 3 * 86_400_000
-      for (let d = new Date(a.ultima_cobranca_em); d.getTime() >= inicio && datas.length < 120; d = somarMeses(d, -preco.meses)) datas.push(d)
+      for (let k = 1; k < 120; k++) {
+        const d = somarMeses(ultima, -k * preco.meses)
+        if (d.getTime() < inicio) break
+        datas.push({ em: d, gravada: false })
+      }
     }
     if (a.status === 'reembolsada') datas.shift()
     datas.reverse()
-    datas.forEach((em, i) => lista.push({ em, valor: preco.total, plano: a.plano, id_usuario: a.id_usuario, estimada: false, tipo: i === 0 ? 'nova' : 'renovacao', meio }))
+    datas.forEach(({ em, gravada }, i) => lista.push({
+      em, valor, plano: a.plano, id_usuario: a.id_usuario, estimada: !gravada, tipo: i === 0 ? 'nova' : 'renovacao', meio,
+      id_pagamento: gravada ? real?.id_pagamento ?? null : null,
+    }))
   }
   return lista.sort((x, y) => x.em.getTime() - y.em.getTime())
 }
@@ -132,13 +238,13 @@ export interface Mes {
   baseCartao: number
 }
 
-/** Mês a mês, dos últimos `meses` meses até o atual. */
-export function mesAMes(assinaturas: AssinaturaBase[], meses = 12): Mes[] {
-  const agora = new Date()
-  const lista = cobrancas(assinaturas)
+/** Mês a mês (meses de Brasília), dos últimos `meses` meses até o atual. */
+export function mesAMes(assinaturas: AssinaturaBase[], meses = 12, agora = new Date(), reais?: CobrancaReal[] | null): Mes[] {
+  const lista = cobrancas(assinaturas, reais)
   const mapa = new Map<string, Mes>()
+  const atual = MES(agora)
   for (let i = meses - 1; i >= 0; i--) {
-    const chave = MES(somarMeses(agora, -i))
+    const chave = somarMesChave(atual, -i)
     mapa.set(chave, { chave, receita: 0, novasCartao: 0, novasPix: 0, receitaNovas: 0, renovacoes: 0, receitaRenovacoes: 0, cancelamentos: 0, reembolsos: 0, valorReembolsado: 0, pixEncerrados: 0, baseCartao: 0 })
   }
   for (const c of lista) {
@@ -156,8 +262,7 @@ export function mesAMes(assinaturas: AssinaturaBase[], meses = 12): Mes[] {
   }
   // Base de cartões ativos no fim de cada mês: criada antes do fim do mês e sem cancelamento/reembolso até lá.
   for (const m of mapa.values()) {
-    const [ano, mes] = m.chave.split('-').map(Number)
-    const fim = new Date(ano, mes, 1).getTime()
+    const fim = inicioDoMes(somarMesChave(m.chave, 1)).getTime()
     m.baseCartao = assinaturas.filter(a => {
       if (meioDe(a) !== 'cartao' || !(a.ultima_cobranca_em || pagaSemCobranca(a))) return false
       const inicio = new Date(a.criada_em ?? a.inicio_periodo ?? a.ultima_cobranca_em ?? 0).getTime()
@@ -177,12 +282,12 @@ export function aReceberNoCartao(assinaturas: AssinaturaBase[], meses: number, a
   const limite = somarMeses(agora, meses)
   let valor = 0, cobrancas = 0
   // Mês a mês dentro da mesma janela (o mês de hoje até o mês do limite), para o gráfico somar igual.
-  const porMes = new Map<string, { valor: number; quantidade: number }>()
-  for (let d = new Date(agora.getFullYear(), agora.getMonth(), 1); d < limite; d = somarMeses(d, 1)) porMes.set(MES(d), { valor: 0, quantidade: 0 })
+  const porMes = new Map<string, { valor: number; quantidade: number }>(mesesEntre(agora, limite).map(k => [k, { valor: 0, quantidade: 0 }]))
   for (const a of assinaturas) {
     const preco = precoDe(a.plano)
     if (!preco || !vigente(a, agora.getTime()) || !renovaSozinha(a) || !a.fim_periodo) continue
-    for (let d = new Date(a.fim_periodo); d < limite; d = somarMeses(d, preco.meses)) {
+    const ancora = new Date(a.fim_periodo)
+    for (let k = 0, d = ancora; d < limite && k < 600; k++, d = somarMeses(ancora, k * preco.meses)) {
       if (d < agora) continue
       valor += preco.total; cobrancas++
       const m = porMes.get(MES(d)); if (m) { m.valor += preco.total; m.quantidade++ }
@@ -226,8 +331,7 @@ export function renovacaoDoPix(assinaturas: AssinaturaBase[], agora = new Date()
 export function aReceberNoPix(assinaturas: AssinaturaBase[], meses: number, taxa: number, agora = new Date()) {
   const limite = somarMeses(agora, meses), ms = agora.getTime()
   const p = Math.max(0, Math.min(1, taxa))
-  const porMes = new Map<string, { valor: number; quantidade: number }>()
-  for (let d = new Date(agora.getFullYear(), agora.getMonth(), 1); d < limite; d = somarMeses(d, 1)) porMes.set(MES(d), { valor: 0, quantidade: 0 })
+  const porMes = new Map<string, { valor: number; quantidade: number }>(mesesEntre(agora, limite).map(k => [k, { valor: 0, quantidade: 0 }]))
   const comCartao = new Set(assinaturas.filter(a => vigente(a, ms) && renovaSozinha(a)).map(a => a.id_usuario))
   const ultimo = new Map<string, AssinaturaBase>()
   for (const a of assinaturas) {
@@ -239,7 +343,8 @@ export function aReceberNoPix(assinaturas: AssinaturaBase[], meses: number, taxa
   for (const a of ultimo.values()) {
     const preco = precoDe(a.plano)!
     let chance = p, conta = false
-    for (let d = new Date(a.fim_periodo!); d < limite; d = somarMeses(d, preco.meses), chance *= p) {
+    const ancora = new Date(a.fim_periodo!)
+    for (let k = 0, d = ancora; d < limite && k < 600; k++, d = somarMeses(ancora, k * preco.meses), chance *= p) {
       if (d < agora) continue
       conta = true
       valor += preco.total * chance; renovacoes += chance
@@ -248,21 +353,4 @@ export function aReceberNoPix(assinaturas: AssinaturaBase[], meses: number, taxa
     if (conta) pessoas++
   }
   return { valor, renovacoes, pessoas, porMes: [...porMes] }
-}
-
-/** Próximas renovações automáticas, mês a mês, supondo que ninguém cancele. */
-export function previsao(assinaturas: AssinaturaBase[], meses: number) {
-  const agora = new Date(), limite = somarMeses(agora, meses)
-  const porMes = new Map<string, { valor: number; quantidade: number }>()
-  for (let i = 0; i < meses; i++) porMes.set(MES(somarMeses(agora, i)), { valor: 0, quantidade: 0 })
-  for (const a of assinaturas) {
-    const preco = precoDe(a.plano)
-    if (!preco || !renovaSozinha(a) || !a.fim_periodo) continue
-    for (let d = new Date(a.fim_periodo); d < limite; d = somarMeses(d, preco.meses)) {
-      if (d < agora) continue
-      const atual = porMes.get(MES(d))
-      if (atual) { atual.valor += preco.total; atual.quantidade++ }
-    }
-  }
-  return [...porMes]
 }
