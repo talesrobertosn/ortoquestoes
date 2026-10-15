@@ -1,0 +1,118 @@
+{
+  "post": "post-07",
+  "data": "2026-10-21",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "snellen-hosalkar",
+  "formato": "feed (carrossel de 5)",
+  "estilo": "snellen",
+  "assunto": "Odontoide na criança: Hosalkar tipo II",
+  "gancho": "Na criança, o odontoide tem uma linha a mais. A banca perguntou se o traço fica acima dela.",
+  "por_que": "Coluna cervical da criança; as quatro alternativas são tipos parecidos e \"acima da sincondrose\" decide.",
+  "questao": {
+    "id": "trauma-0989",
+    "area": "Trauma adulto",
+    "subtema": "Fraturas da coluna cervical alta",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Em crianças, a fratura do odontoide acima do nível da sincondrose basilar é classificada, segundo HOSALKAR, como tipo",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "IA."
+      },
+      {
+        "letra": "B",
+        "texto": "IB."
+      },
+      {
+        "letra": "C",
+        "texto": "IC."
+      },
+      {
+        "letra": "D",
+        "texto": "II."
+      }
+    ],
+    "gabarito": "D",
+    "imagens": [],
+    "comentario": {
+      "correta": "**II.** A fratura acima do nível da sincondrose basilar, no dente já ossificado, é o tipo II de Hosalkar, semelhante à do adulto.",
+      "incorretas": {
+        "A": "**Pela sincondrose.** O grupo I descreve as lesões através da sincondrose, e não acima dela.",
+        "B": "**Pela sincondrose.** O IB também é uma lesão da sincondrose, com outro grau de desvio ou associação.",
+        "C": "**Pela sincondrose.** O IC pertence ao grupo das lesões através da sincondrose."
+      },
+      "conceito_trechos": [
+        "**O odontoide da criança é diferente.** O **dente** de C2 se une ao **corpo** do áxis por uma placa cartilaginosa, a **sincondrose** (dentocentral ou basilar), que fica **abaixo** do nível das facetas de C1-C2, dentro do corpo de C2. Ela se funde por volta dos **5 a 7 anos**, podendo deixar uma linha esclerótica visível até a adolescência. Antes da fusão, a sincondrose é o **elo fraco**: um trauma em flexão ou extensão **descola** o dente através dela, como uma fratura fisária, e não produz a fratura da base típica do adulto.",
+        "**Na prova:** Hosalkar: tipo **I** = lesão **pela sincondrose** (fisária, comum na criança pequena); tipo **II** = fratura **acima** da sincondrose, semelhante ao adulto."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "snellen",
+      "conteudo": {
+        "linhas": [
+          "C2",
+          "DENTE",
+          "HOSALKAR",
+          "QUAL É O TIPO",
+          "IA · IB · IC · II",
+          "em crianças, a fratura fica",
+          "acima da sincondrose basilar"
+        ],
+        "negritos": [
+          "fratura do odontoide",
+          "HOSALKAR"
+        ],
+        "grifos": [
+          "acima do nível da sincondrose basilar"
+        ],
+        "dica_questao": "Três tipos com letra e um sem: quem decide é a palavra de baixo.",
+        "lupa_texto": "acima da\nsincondrose",
+        "lupa_cartoes": [
+          "Na criança, o dente se une ao corpo de C2 pela **sincondrose**, que se funde por volta dos **5 a 7 anos**. Antes disso, ela é o elo fraco.",
+          "Hosalkar só pergunta: o traço **passa pela** sincondrose ou fica **acima** dela? A resposta está na linha mais miúda."
+        ],
+        "chamada_resposta": "Hosalkar: pela sincondrose ou acima dela.",
+        "motivos": {
+          "A": "**Pela sincondrose**: o grupo I são as lesões através dela.",
+          "B": "**Pela sincondrose**, com outro grau de desvio ou associação.",
+          "C": "**Pela sincondrose**: também é do grupo I.",
+          "D": "**Acima da sincondrose**, no dente já ossificado: semelhante à do adulto."
+        },
+        "selo_gabarito": "Gabarito · como no adulto",
+        "rodape_resposta": "Letra **D** · tipo II",
+        "vermelho": {
+          "rotulo": "Tipo II · acima dela",
+          "texto": "Fratura no **dente ossificado**. Se instável ou irredutível, pode exigir **fixação**."
+        },
+        "verde": {
+          "rotulo": "Tipo I · pela sincondrose",
+          "texto": "Descolamento **fisário**: redução e imobilização, com ótimo potencial de consolidação."
+        },
+        "cartao_final": "Na radiografia, a **pseudossubluxação C2-C3** é normal até cerca de 8 anos, e a sincondrose aberta pode parecer fratura."
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: snellen-feed-01 a feed-05, das 7h às 8h."
+  ],
+  "legenda": "Até que linha você lê?\n\nTARO 2026: fratura do odontoide na criança e a classificação de Hosalkar. Três tipos com letra, um sem, e a resposta está numa palavra do fim do enunciado.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem vai fazer o plantão da pediatria.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#ortopediapediatrica",
+    "#coluna",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão trauma-0989 (TARO 2026), gabarito oficial D: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

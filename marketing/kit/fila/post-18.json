@@ -1,0 +1,190 @@
+{
+  "post": "post-18",
+  "data": "2026-10-30",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "mecanica-dura-mater",
+  "formato": "stories (6)",
+  "estilo": "mecanica-fina",
+  "assunto": "Dura-máter na ressonância sagital T2",
+  "gancho": "Você reconhece o canal. Mas que linha é essa?",
+  "por_que": "Coluna com imagem real de ressonância: identificar a estrutura pela posição exata no canal.",
+  "questao": {
+    "id": "coluna-0286",
+    "area": "Coluna",
+    "subtema": "Anatomia da coluna",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na imagem a seguir, a estrutura indicada pela seta corresponde",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "à dura-máter."
+      },
+      {
+        "letra": "B",
+        "texto": "ao ligamento amarelo."
+      },
+      {
+        "letra": "C",
+        "texto": "ao ligamento interespinhoso."
+      },
+      {
+        "letra": "D",
+        "texto": "ao ligamento longitudinal posterior."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/coluna/coluna-0286-1.png",
+        "legenda": null
+      }
+    ],
+    "comentario": {
+      "correta": "**Correta: A (à dura-máter).** Na ressonância sagital em T2, a seta aponta a linha escura e fina que forma a parede posterior do saco dural, envolvendo diretamente o líquor (branco): a **dura-máter**.",
+      "incorretas": {
+        "B": "O **ligamento amarelo** fica entre as **lâminas**, posterior e lateral ao saco, e aparece mais espesso, não como a fina parede do saco dural.",
+        "C": "O **ligamento interespinhoso** fica **entre os processos espinhosos**, bem atrás do canal vertebral.",
+        "D": "O **ligamento longitudinal posterior** fica na parede **anterior** do canal, colado à face posterior dos corpos vertebrais e dos discos."
+      },
+      "conceito_trechos": [
+        "**A imagem.** Ressonância **sagital ponderada em T2** da coluna lombar. O **líquor** aparece **branco** (hiperintenso) dentro do saco dural. A seta aponta a **linha escura e fina** que forma a **parede posterior** do saco, separando o líquor da gordura epidural posterior: a **dura-máter**."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "mecanica-fina",
+      "conteudo": {
+        "capa": {
+          "tag": "Coluna lombar · TARO 2026",
+          "titulo": "Você reconhece\no canal.\n[[Mas que linha\né essa?]]",
+          "sub": "Uma questão de ressonância.\nUma linha fina entre o branco e a gordura.",
+          "pilulas": [
+            "OBSERVAR",
+            "LOCALIZAR",
+            "NOMEAR"
+          ]
+        },
+        "questao_slide": {
+          "tag": "Questão oficial · TARO 2026",
+          "titulo": "Encontre a\n[[parede certa.]]"
+        },
+        "raciocinio": {
+          "titulo": "Ler o branco.\n[[Depois, a borda.]]",
+          "sub": "Sagital em T2: o líquor é branco.\nA seta aponta a borda de trás dele.",
+          "passos": [
+            {
+              "titulo": "Ache o líquor.",
+              "texto": "Em T2, ele aparece **branco** dentro do saco dural."
+            },
+            {
+              "titulo": "Siga a borda posterior.",
+              "texto": "Uma **linha escura e fina** separa o líquor da gordura epidural."
+            },
+            {
+              "titulo": "Descarte os vizinhos.",
+              "texto": "Ligamento amarelo entre as lâminas; LLP na parede **anterior** do canal."
+            }
+          ]
+        },
+        "resposta": {
+          "tag": "Alternativa A · a parede do saco",
+          "titulo": "É a\n[[dura-máter.]]",
+          "destaque": {
+            "titulo": "A membrana que envolve o líquor.",
+            "texto": "A linha escura e fina da seta é a parede posterior do saco dural."
+          },
+          "mostrador": "T2",
+          "mostrador_texto": "Líquor **branco**,\ndura-máter **escura**.",
+          "comparacao": {
+            "B": {
+              "titulo": "Ligamento amarelo",
+              "texto": "Fica entre as lâminas e é mais espesso; não é a fina parede do saco."
+            },
+            "C": {
+              "titulo": "Ligamento interespinhoso",
+              "texto": "Entre os processos espinhosos, bem atrás do canal."
+            },
+            "D": {
+              "titulo": "Ligamento longitudinal posterior",
+              "texto": "Na parede anterior do canal, colado aos corpos e aos discos."
+            }
+          },
+          "guardar": "Guarde: a borda que envolve o líquor é a dura-máter."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "O canal\nde frente\npara trás.\n[[Em T2.]]",
+          "itens": [
+            {
+              "titulo": "Corpo, disco e LLP.",
+              "texto": "O LLP é a linha escura colada à face posterior dos corpos e dos discos."
+            },
+            {
+              "titulo": "Saco dural.",
+              "texto": "Dura-máter escura e fina envolvendo o **líquor branco** e as raízes."
+            },
+            {
+              "titulo": "Gordura e ligamento amarelo.",
+              "texto": "Atrás do saco, a gordura epidural e, entre as lâminas, o **ligamento amarelo**."
+            }
+          ],
+          "destaque": {
+            "titulo": "Na clínica: durotomia.",
+            "texto": "Lesão da dura-máter na cirurgia: fístula liquórica, cefaleia postural e pseudomeningocele."
+          }
+        },
+        "final": {
+          "tag": "Coluna · TARO 2026",
+          "celular": {
+            "titulo": "A · à dura-máter.",
+            "texto": "Na sagital T2, a seta aponta a linha escura e fina da parede posterior do saco dural.",
+            "itens": [
+              {
+                "rotulo": "POR QUE NÃO B?",
+                "texto": "O ligamento amarelo fica entre as lâminas e é mais espesso."
+              },
+              {
+                "rotulo": "POR QUE NÃO C?",
+                "texto": "O interespinhoso fica entre os processos espinhosos."
+              },
+              {
+                "rotulo": "POR QUE NÃO D?",
+                "texto": "O LLP fica na parede anterior do canal."
+              }
+            ]
+          },
+          "recursos": [
+            {
+              "titulo": "A imagem.",
+              "texto": "Treine o olhar na ressonância."
+            },
+            {
+              "titulo": "O raciocínio.",
+              "texto": "Conecte sinal e estrutura."
+            },
+            {
+              "titulo": "As alternativas.",
+              "texto": "Entenda a certa e cada erro."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Stories do gancho e da questão: mecanica-fina-mf-01 e mf-02, das 7h às 8h.",
+    "Stories do raciocínio, da resposta e da chamada: mf-03 a mf-06, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão coluna-0286 (TARO 2026), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

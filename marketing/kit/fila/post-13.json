@@ -1,0 +1,116 @@
+{
+  "post": "post-13",
+  "data": "2026-10-26",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "snellen-tillaux",
+  "formato": "feed (carrossel de 5)",
+  "estilo": "snellen",
+  "assunto": "Tillaux: ordem de fechamento da fise distal da tíbia",
+  "gancho": "A fise da tíbia fecha em ordem. A Tillaux mora no último pedaço.",
+  "por_que": "Lesões fisárias estão entre os temas que mais caem na pediatria; as alternativas usam as mesmas palavras em ordens diferentes.",
+  "questao": {
+    "id": "pediatria-0910",
+    "area": "Ortopedia pediátrica",
+    "subtema": "Fraturas do tornozelo na criança",
+    "prova": "TEOT",
+    "ano": 2025,
+    "simulado": false,
+    "enunciado": "As fraturas de TILLAUX são decorrentes do fechamento assimétrico sequencial das regiões da fise distal da tíbia, que acontece na seguinte ordem:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Central, lateral e medial."
+      },
+      {
+        "letra": "B",
+        "texto": "Central, medial e lateral."
+      },
+      {
+        "letra": "C",
+        "texto": "Medial, central e lateral."
+      },
+      {
+        "letra": "D",
+        "texto": "Medial, lateral e central."
+      }
+    ],
+    "gabarito": "B",
+    "imagens": [],
+    "comentario": {
+      "correta": "Central, medial e lateral corresponde à sequência simplificada cobrada. O fechamento medial antecede o lateral, deixando a inserção anterolateral do ligamento tibiofibular em uma epífise ainda parcialmente ligada por cartilagem fisária. A rotação externa concentra a falha nessa região e produz o fragmento de Tillaux.",
+      "incorretas": {
+        "A": "O início central está correto, mas fechar a região lateral antes da medial contraria a transição que produz Tillaux. Se a porção anterolateral já estivesse fechada, faltaria a área fisária vulnerável para a avulsão característica. A ordem final é o detalhe que diferencia esta opção da resposta.",
+        "C": "A região lateral é corretamente colocada por último, mas a medial não é a primeira a fechar. A progressão se inicia centralmente e depois envolve o território medial. A alternativa reproduz parte do mecanismo e erra justamente o ponto inicial da sequência fisiológica.",
+        "D": "A opção erra o início e também troca a relação entre a região central e a lateral. A região central não permanece aberta depois da lateral. Para evitar decorar três palavras isoladas, relacione a ordem ao resultado anatômico: centro e região medial maduros, com porção anterolateral ainda suscetível à avulsão."
+      },
+      "conceito_trechos": [
+        "A fise distal da tíbia não fecha toda ao mesmo tempo. Durante a transição para a maturidade, o fechamento começa centralmente, progride pelas regiões mediais e termina lateralmente. A alternativa da prova resume as subdivisões anteromedial e posteromedial em uma única região medial."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "snellen",
+      "conteudo": {
+        "linhas": [
+          "FISE",
+          "TÍBIA",
+          "TILLAUX",
+          "QUAL ORDEM",
+          "3 REGIÕES DA FISE",
+          "o fechamento é assimétrico",
+          "e sequencial na fise distal"
+        ],
+        "negritos": [
+          "TILLAUX"
+        ],
+        "grifos": [
+          "fechamento assimétrico sequencial"
+        ],
+        "dica_questao": "Três palavras em ordens diferentes: quem decide é o mecanismo.",
+        "lupa_texto": "assimétrico\ne sequencial",
+        "lupa_cartoes": [
+          "A fise distal da tíbia **não fecha toda ao mesmo tempo**. Enquanto uma parte já fechou, outra ainda está aberta e vulnerável.",
+          "A Tillaux é a avulsão **anterolateral** pelo ligamento tibiofibular anteroinferior. Para ela existir, o lado lateral ainda precisa estar **aberto**."
+        ],
+        "chamada_resposta": "Tillaux: o lateral é o último a fechar.",
+        "motivos": {
+          "A": "Começa no centro, mas fechar o **lateral antes do medial** tiraria a área vulnerável da Tillaux.",
+          "B": "**Central, medial e lateral**: a porção anterolateral fica por último, ainda aberta.",
+          "C": "O lateral está por último, mas o fechamento **começa no centro**, não no medial.",
+          "D": "Erra o início e deixa o **centro por último**."
+        },
+        "selo_gabarito": "Gabarito · lateral por último",
+        "rodape_resposta": "Letra **B** · central, medial, lateral",
+        "vermelho": {
+          "rotulo": "Quando acontece",
+          "texto": "Na adolescência: centro e medial já fechados, **anterolateral** aberta. A rotação externa avulsiona esse canto."
+        },
+        "verde": {
+          "rotulo": "O que é",
+          "texto": "Lesão intra-articular **Salter-Harris III**. A tomografia avalia a superfície e o desvio."
+        },
+        "cartao_final": "O pouco crescimento que resta não dispensa restaurar a **congruência da articulação**."
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: snellen-feed-01 a feed-05, das 7h às 8h."
+  ],
+  "legenda": "Até que linha você lê?\n\nTEOT 2025: a fratura de Tillaux e a ordem de fechamento da fise distal da tíbia. As quatro alternativas usam as mesmas três palavras; o mecanismo da fratura decide a ordem.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem decora sem entender.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TEOT",
+    "#ortopediapediatrica",
+    "#residenciamedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão pediatria-0910 (TEOT 2025), gabarito oficial B: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

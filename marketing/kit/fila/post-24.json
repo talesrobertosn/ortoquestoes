@@ -1,0 +1,187 @@
+{
+  "post": "post-24",
+  "data": "2026-11-04",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "mecanica-cutaneo-medial",
+  "formato": "stories (6)",
+  "estilo": "mecanica-fina",
+  "assunto": "Nervo cutâneo medial do antebraço junto à basílica",
+  "gancho": "Você reconhece a veia. Mas quem anda com ela?",
+  "por_que": "Anatomia de superfície do membro superior: vizinhança exata entre veia e nervo.",
+  "questao": {
+    "id": "mao-0574",
+    "area": "Mão e punho",
+    "subtema": "Exame físico da mão e punho",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na figura a seguir, a estrutura apontada pela seta corresponde ao nervo",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "ulnar."
+      },
+      {
+        "letra": "B",
+        "texto": "mediano."
+      },
+      {
+        "letra": "C",
+        "texto": "cutâneo medial do braço."
+      },
+      {
+        "letra": "D",
+        "texto": "cutâneo medial do antebraço."
+      }
+    ],
+    "gabarito": "D",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/mao/mao-0575-1.webp",
+        "legenda": null
+      }
+    ],
+    "comentario": {
+      "correta": "**Cutâneo medial do antebraço.**\n- Superficial, acompanhando a basílica.\n- Doador de enxerto; risco no acesso medial.",
+      "incorretas": {
+        "A": "**Posterior e profundo.**\n- Rumo ao túnel cubital.",
+        "B": "**Com a artéria.**\n- Sobre a braquial.",
+        "C": "**Proximal e curto.**\n- Não desce ao antebraço."
+      },
+      "conceito_trechos": [
+        "### Veias e nervos superficiais do membro superior\n| Lado | Veia | Nervo acompanhante |\n|---|---|---|\n| radial | ==cefálica== | ramo superficial do radial (punho), cutâneo lateral do antebraço |\n| ==ulnar== | ==basílica== | ramo dorsal do ulnar; cutâneo medial do antebraço (volar-medial) |\n| dorso do antebraço | tributárias | ==cutâneo posterior do antebraço== (radial) |",
+        "> **Na prova:** nervo junto à basílica no braço = ==cutâneo medial do antebraço=="
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "mecanica-fina",
+      "conteudo": {
+        "capa": {
+          "tag": "Braço · TARO 2026",
+          "titulo": "Você reconhece\na veia.\n[[Mas quem anda\ncom ela?]]",
+          "sub": "Uma questão sobre trajeto.\nQuatro nervos do lado medial."
+        },
+        "questao_slide": {
+          "tag": "Questão oficial · TARO 2026",
+          "titulo": "Encontre o\n[[nervo certo.]]"
+        },
+        "raciocinio": {
+          "titulo": "Ler o plano.\n[[Depois, o vizinho.]]",
+          "sub": "Superficial ou profundo?\nCom a artéria ou com a veia?",
+          "passos": [
+            {
+              "titulo": "Veja o plano.",
+              "texto": "A seta aponta um nervo **superficial**, fora do feixe da artéria."
+            },
+            {
+              "titulo": "Ache a veia vizinha.",
+              "texto": "No lado ulnar do braço, a veia superficial é a **basílica**."
+            },
+            {
+              "titulo": "Descarte quem não desce.",
+              "texto": "O cutâneo medial do **braço** é proximal e curto."
+            }
+          ]
+        },
+        "resposta": {
+          "tag": "Alternativa D · cutâneo medial do antebraço",
+          "titulo": "É o\n[[cutâneo medial\ndo antebraço.]]",
+          "tamanho": 72,
+          "destaque": {
+            "titulo": "Superficial, junto à basílica.",
+            "texto": "Perfura a fáscia no meio do braço; vem do fascículo medial (C8-T1)."
+          },
+          "mostrador": "FM",
+          "mostrador_texto": "Ramo do fascículo\n**medial (C8-T1).**",
+          "comparacao": {
+            "A": {
+              "titulo": "Ulnar",
+              "texto": "Posterior e profundo, rumo ao túnel cubital."
+            },
+            "B": {
+              "titulo": "Mediano",
+              "texto": "Anda com a artéria braquial."
+            },
+            "C": {
+              "titulo": "Cutâneo medial do braço",
+              "texto": "Proximal e curto; não desce ao antebraço."
+            }
+          },
+          "guardar": "Guarde: nervo junto à basílica no braço = cutâneo medial do antebraço."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "Veia e nervo\nandam juntos.\n[[Dos dois lados.]]",
+          "itens": [
+            {
+              "titulo": "Lado radial.",
+              "texto": "**Cefálica** com o cutâneo lateral do antebraço (do musculocutâneo)."
+            },
+            {
+              "titulo": "Lado ulnar.",
+              "texto": "**Basílica** com o cutâneo medial do antebraço (do fascículo medial)."
+            },
+            {
+              "titulo": "Dorso.",
+              "texto": "Cutâneo posterior do antebraço, ramo do **radial** no braço."
+            }
+          ],
+          "destaque": {
+            "titulo": "Na prática: cuidado na dissecção.",
+            "texto": "É doador clássico de enxerto e é lesado na punção da basílica e no acesso medial do cotovelo."
+          }
+        },
+        "final": {
+          "tag": "Braço · TARO 2026",
+          "celular": {
+            "titulo": "D · cutâneo medial do antebraço.",
+            "texto": "Superficial, acompanhando a basílica. Doador de enxerto e em risco no acesso medial.",
+            "itens": [
+              {
+                "rotulo": "POR QUE NÃO A?",
+                "texto": "O ulnar é posterior e profundo, rumo ao túnel cubital."
+              },
+              {
+                "rotulo": "POR QUE NÃO B?",
+                "texto": "O mediano anda com a artéria braquial."
+              },
+              {
+                "rotulo": "POR QUE NÃO C?",
+                "texto": "O cutâneo medial do braço é proximal e curto."
+              }
+            ]
+          },
+          "recursos": [
+            {
+              "titulo": "A imagem.",
+              "texto": "Treine o olhar anatômico."
+            },
+            {
+              "titulo": "O raciocínio.",
+              "texto": "Conecte plano e vizinhança."
+            },
+            {
+              "titulo": "As alternativas.",
+              "texto": "Entenda a certa e cada erro."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Stories do gancho e da questão: mecanica-fina-mf-01 e mf-02, das 7h às 8h.",
+    "Stories do raciocínio, da resposta e da chamada: mf-03 a mf-06, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão mao-0574 (TARO 2026), gabarito oficial D: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

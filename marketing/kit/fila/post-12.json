@@ -1,0 +1,189 @@
+{
+  "post": "post-12",
+  "data": "2026-10-25",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "mecanica-abdutor-longo",
+  "formato": "stories (6)",
+  "estilo": "mecanica-fina",
+  "assunto": "Origem do abdutor longo do polegar",
+  "gancho": "Você reconhece o antebraço. Mas quem nasce ali?",
+  "por_que": "Mão e antebraço com imagem de origens: relação precisa, como a referência aprovada (origem dos lumbricais).",
+  "questao": {
+    "id": "mao-0570",
+    "area": "Mão e punho",
+    "subtema": "Fratura do rádio distal",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na imagem a seguir, a seta representa a origem do músculo",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "extensor longo do polegar."
+      },
+      {
+        "letra": "B",
+        "texto": "extensor curto do polegar."
+      },
+      {
+        "letra": "C",
+        "texto": "abdutor longo do polegar."
+      },
+      {
+        "letra": "D",
+        "texto": "extensor ulnar do carpo."
+      }
+    ],
+    "gabarito": "C",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/mao/mao-0571-1.png",
+        "legenda": null
+      }
+    ],
+    "comentario": {
+      "correta": "**Abdutor longo do polegar.**\n- Nasce de ulna, membrana e rádio.\n- O mais proximal da camada profunda.",
+      "incorretas": {
+        "A": "**Ulna e membrana.**\n- Área estreita, distal.",
+        "B": "**Rádio e membrana.**\n- Não alcança a ulna.",
+        "D": "**Epicôndilo e borda ulnar.**\n- Não cruza a membrana."
+      },
+      "conceito_trechos": [
+        "### Compartimento dorsal do antebraço\n| Camada | Músculos |\n|---|---|\n| superficial | ERLC, ERCC, extensor comum, extensor do mínimo, EUC (+ braquiorradial) |\n| profunda | supinador, ==abdutor longo, extensor curto e extensor longo do polegar==, extensor do indicador |",
+        "> **Na prova:** origem larga cruzando a membrana nos dois ossos = ==abdutor longo do polegar=="
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "mecanica-fina",
+      "conteudo": {
+        "capa": {
+          "tag": "Antebraço · TARO 2026",
+          "titulo": "Você reconhece\no antebraço.\n[[Mas quem nasce\nali?]]",
+          "sub": "Uma questão sobre a origem.\nUma área que cruza dois ossos."
+        },
+        "questao_slide": {
+          "tag": "Questão oficial · TARO 2026",
+          "titulo": "Encontre o\n[[ponto de partida.]]",
+          "altura_imagem": 460
+        },
+        "raciocinio": {
+          "altura_imagem": 420,
+          "titulo": "Ler a área.\n[[Depois, a camada.]]",
+          "sub": "A seta aponta uma origem larga\nna face dorsal do antebraço.",
+          "passos": [
+            {
+              "titulo": "Situe a camada profunda.",
+              "texto": "Abdutor longo, extensor curto e extensor longo do polegar, e o extensor do indicador."
+            },
+            {
+              "titulo": "Conte os ossos.",
+              "texto": "A origem larga cruza a membrana e chega à **ulna e ao rádio**."
+            },
+            {
+              "titulo": "Compare a altura.",
+              "texto": "Das origens profundas, a do abdutor longo é a **mais proximal**."
+            }
+          ]
+        },
+        "resposta": {
+          "tag": "Alternativa C · origem do abdutor longo",
+          "titulo": "É o\n[[abdutor longo\ndo polegar.]]",
+          "tamanho": 74,
+          "destaque": {
+            "titulo": "Ulna, membrana interóssea e rádio.",
+            "texto": "A origem do abdutor longo do polegar é a mais proximal da camada profunda dorsal."
+          },
+          "mostrador": "ALP",
+          "mostrador_texto": "Origem larga que cruza\n**a membrana nos dois ossos.**",
+          "comparacao": {
+            "A": {
+              "titulo": "Extensor longo do polegar",
+              "texto": "Ulna e membrana: área estreita, distal."
+            },
+            "B": {
+              "titulo": "Extensor curto do polegar",
+              "texto": "Rádio e membrana: não alcança a ulna."
+            },
+            "D": {
+              "titulo": "Extensor ulnar do carpo",
+              "texto": "Epicôndilo e borda ulnar: não cruza a membrana."
+            }
+          },
+          "guardar": "Guarde: origem larga nos dois ossos = abdutor longo do polegar."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "A camada\nprofunda\n[[de cima\npara baixo.]]",
+          "itens": [
+            {
+              "titulo": "Abdutor longo do polegar.",
+              "texto": "Ulna, membrana interóssea e rádio: o mais proximal."
+            },
+            {
+              "titulo": "Extensores do polegar.",
+              "texto": "O curto nasce no rádio e na membrana; o longo, na ulna e na membrana."
+            },
+            {
+              "titulo": "Extensor do indicador.",
+              "texto": "Ulna e membrana: o mais distal."
+            }
+          ],
+          "destaque": {
+            "titulo": "Entre as camadas, o interósseo posterior.",
+            "texto": "Ele sai do supinador e corre entre a camada superficial e a profunda."
+          }
+        },
+        "final": {
+          "tag": "Antebraço · TARO 2026",
+          "celular": {
+            "titulo": "C · abdutor longo do polegar.",
+            "texto": "Nasce de ulna, membrana e rádio: o mais proximal da camada profunda.",
+            "itens": [
+              {
+                "rotulo": "POR QUE NÃO A?",
+                "texto": "O extensor longo do polegar nasce na ulna e na membrana, numa área estreita e distal."
+              },
+              {
+                "rotulo": "POR QUE NÃO B?",
+                "texto": "O extensor curto nasce no rádio e na membrana; não alcança a ulna."
+              },
+              {
+                "rotulo": "POR QUE NÃO D?",
+                "texto": "O extensor ulnar do carpo nasce no epicôndilo e na borda ulnar."
+              }
+            ]
+          },
+          "recursos": [
+            {
+              "titulo": "A imagem.",
+              "texto": "Treine o olhar anatômico."
+            },
+            {
+              "titulo": "O raciocínio.",
+              "texto": "Conecte área e músculo."
+            },
+            {
+              "titulo": "As alternativas.",
+              "texto": "Entenda a certa e cada erro."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Stories do gancho e da questão: mecanica-fina-mf-01 e mf-02, das 7h às 8h.",
+    "Stories do raciocínio, da resposta e da chamada: mf-03 a mf-06, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão mao-0570 (TARO 2026), gabarito oficial C: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

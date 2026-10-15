@@ -1,0 +1,180 @@
+{
+  "post": "post-10",
+  "data": "2026-10-23",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "cofre-coracobraquial",
+  "formato": "feed (carrossel de 6)",
+  "estilo": "cofre-duas-chaves",
+  "assunto": "Coracobraquial e nervo musculocutâneo",
+  "gancho": "Acertar o músculo abre só metade do cofre.",
+  "por_que": "TEOT 2025 com imagem e duas setas (músculo + nervo que o atravessa): duas chaves que precisam coincidir.",
+  "questao": {
+    "id": "ombro-cotovelo-0559",
+    "area": "Ombro e cotovelo",
+    "subtema": "Anatomia do ombro",
+    "prova": "TEOT",
+    "ano": 2025,
+    "simulado": false,
+    "enunciado": "Os nomes do músculo assinaladao (seta 1) e da respectiva estrutura que o transpassa (seta 2) são, respectivamente:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Coracobraquial e nervo mediano."
+      },
+      {
+        "letra": "B",
+        "texto": "Coracobraquial e nervo musculocutâneo."
+      },
+      {
+        "letra": "C",
+        "texto": "Cabeça curta do bíceps braquial e nervo mediano."
+      },
+      {
+        "letra": "D",
+        "texto": "Cabeça curta do bíceps braquial e nervo musculocutâneo."
+      }
+    ],
+    "gabarito": "B",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/ombro-cotovelo/ombro-cotovelo-0559-teot2025.jpeg",
+        "legenda": "TEOT 2025, questão 8. Figura original do arquivo fornecido."
+      }
+    ],
+    "comentario": {
+      "correta": "Coracobraquial e musculocutâneo formam o par característico demonstrado. Reconhecer a origem coracoide, a inserção umeral e a passagem do nervo pelo músculo resolve a figura. Essa relação tem aplicação cirúrgica: afastamento excessivo do tendão conjunto pode tracionar o musculocutâneo, mesmo que o nervo não esteja imediatamente visível no campo.",
+      "incorretas": {
+        "A": "A identificação do coracobraquial está correta, mas a do nervo está errada. O mediano desce no braço associado à artéria braquial e não é o elemento que tipicamente atravessa esse músculo. A opção mistura uma estrutura muscular corretamente reconhecida com um nervo cujo território funcional e percurso são diferentes.",
+        "C": "A cabeça curta do bíceps compartilha a origem coracoide, mas não corresponde ao músculo de inserção medial umeral marcado. Além disso, o mediano não fornece a inervação motora usual do bíceps. Portanto, a alternativa erra tanto a continuidade do músculo quanto o nervo relacionado à perfuração mostrada.",
+        "D": "O musculocutâneo realmente inerva o bíceps, o que torna a alternativa plausível. Contudo, inervar um músculo e perfurá-lo são relações diferentes: a passagem característica assinalada ocorre no coracobraquial. A cabeça curta segue para o ventre do bíceps e para o tendão distal, não para uma inserção na diáfise umeral."
+      },
+      "conceito_trechos": [
+        "Na figura, a seta 1 indica o coracobraquial e a seta 2 indica o nervo musculocutâneo em sua relação com esse músculo. O coracobraquial nasce no processo coracoide e se insere na face medial da diáfise umeral. Como termina no úmero, participa da flexão e adução do ombro, sem cruzar o cotovelo."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cofre-duas-chaves",
+      "conteudo": {
+        "fonte": "Imagem original da questão · TEOT 2025",
+        "capa": {
+          "tag": "Anatomia do braço · TEOT 2025",
+          "titulo": "Acertar o músculo\nabre só [[metade\ndo cofre.]]",
+          "sub": "A outra chave é o nervo\nque atravessa esse músculo.",
+          "chaves": [
+            "MÚSCULO",
+            "NERVO"
+          ]
+        },
+        "questao_slide": {
+          "pedido_texto": "Comente sua combinação antes de continuar."
+        },
+        "leitura": {
+          "titulo": "Primeiro, o músculo.\n[[Depois, quem o atravessa.]]",
+          "paineis": [
+            {
+              "titulo": "O músculo",
+              "texto": "Nasce no **processo coracoide** e termina na face **medial da diáfise do úmero**."
+            },
+            {
+              "titulo": "O nervo",
+              "texto": "Sai do fascículo lateral e tipicamente **perfura** esse músculo."
+            }
+          ],
+          "nota": {
+            "titulo": "Inervar não é perfurar.",
+            "texto": "O musculocutâneo inerva o bíceps, mas atravessa o coracobraquial."
+          }
+        },
+        "resposta": {
+          "titulo": "Coracobraquial +\n[[musculocutâneo.]]",
+          "tamanho": 72,
+          "sub": "O nervo perfura o músculo de origem\ncoracoide e inserção no úmero.",
+          "chaves": [
+            "Coracobraquial",
+            "Musculocutâneo"
+          ],
+          "comparacao": {
+            "A": {
+              "titulo": "Acerta o músculo. Troca o nervo.",
+              "texto": "O mediano desce com a artéria braquial; não atravessa o coracobraquial."
+            },
+            "C": {
+              "titulo": "Erra as duas chaves.",
+              "texto": "A cabeça curta do bíceps vai ao rádio, e o mediano não é o nervo da perfuração."
+            },
+            "D": {
+              "titulo": "Inervar não é perfurar.",
+              "texto": "O musculocutâneo inerva o bíceps, mas a passagem característica é no coracobraquial."
+            }
+          },
+          "guardar": "Coracobraquial: o músculo que o musculocutâneo atravessa."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "Dois músculos,\n[[uma origem.]]",
+          "sub": "Coracobraquial e cabeça curta do bíceps\nnascem juntos no coracoide.",
+          "itens": [
+            {
+              "titulo": "Coracobraquial.",
+              "texto": "Termina no **úmero**: flexão e adução do ombro, sem cruzar o cotovelo."
+            },
+            {
+              "titulo": "Cabeça curta do bíceps.",
+              "texto": "Segue até o **rádio**: flexão do cotovelo e supinação."
+            },
+            {
+              "titulo": "Musculocutâneo.",
+              "texto": "Perfura o coracobraquial, segue entre bíceps e braquial e termina como **cutâneo lateral do antebraço**."
+            }
+          ],
+          "destaque": {
+            "rotulo": "NA CIRURGIA",
+            "titulo": "Cuidado ao afastar o tendão conjunto.",
+            "texto": "O afastamento excessivo pode tracionar o musculocutâneo."
+          }
+        },
+        "final": {
+          "celular": {
+            "titulo": "B · Coracobraquial e nervo musculocutâneo.",
+            "texto": "Coracobraquial e musculocutâneo formam o par característico demonstrado.",
+            "itens": [
+              {
+                "rotulo": "ALTERNATIVA A",
+                "texto": "O músculo está certo, o nervo não: o mediano acompanha a artéria braquial."
+              },
+              {
+                "rotulo": "ALTERNATIVA C",
+                "texto": "A cabeça curta do bíceps segue até o rádio; o mediano não inerva o bíceps."
+              },
+              {
+                "rotulo": "ALTERNATIVA D",
+                "texto": "Inervar e perfurar são relações diferentes: a passagem é no coracobraquial."
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: cofre-duas-chaves-feed-01 a feed-06, das 7h às 8h."
+  ],
+  "legenda": "Acertar o músculo abre só metade do cofre.\n\nTEOT 2025: a seta 1 aponta um músculo e a seta 2, a estrutura que o atravessa. Para abrir, as duas chaves precisam coincidir.\n\nComente a sua combinação (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem vai entrar no centro cirúrgico do ombro.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TEOT",
+    "#anatomia",
+    "#ombroecotovelo",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão ombro-cotovelo-0559 (TEOT 2025), gabarito oficial B: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

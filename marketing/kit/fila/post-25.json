@@ -1,0 +1,116 @@
+{
+  "post": "post-25",
+  "data": "2026-11-05",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "snellen-marchetti",
+  "formato": "feed (carrossel de 5)",
+  "estilo": "snellen",
+  "assunto": "Espondilolistese adquirida (Marchetti e Bartolozzi): traumática",
+  "gancho": "A coluna já nasceu assim ou foi lesada depois? A banca escondeu isso numa palavra.",
+  "por_que": "Coluna: classificação que confunde com Wiltse; a palavra \"adquirida\" decide.",
+  "questao": {
+    "id": "coluna-0289",
+    "area": "Coluna",
+    "subtema": "Espondilólise e espondilolistese",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Segundo a classificação de MARCHETTI e BARTOLOZZI, a espondilolistese considerada uma lesão adquirida é",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "traumática."
+      },
+      {
+        "letra": "B",
+        "texto": "alto grau displásico."
+      },
+      {
+        "letra": "C",
+        "texto": "baixo grau displásico."
+      },
+      {
+        "letra": "D",
+        "texto": "alongamento da pars interarticularis."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [],
+    "comentario": {
+      "correta": "Traumática. Na classificação de Marchetti e Bartolozzi, ela pertence ao grupo adquirido, junto com as formas pós-cirúrgica, patológica e degenerativa.",
+      "incorretas": {
+        "B": "O alto grau displásico pertence ao grupo desenvolvimental, de coluna com displasia de base, e é o de maior risco de progressão.",
+        "C": "O baixo grau displásico também faz parte do grupo desenvolvimental, e não do adquirido.",
+        "D": "O alongamento da pars é uma das formas em que o defeito aparece dentro do grupo desenvolvimental, tanto no alto quanto no baixo grau."
+      },
+      "conceito_trechos": [
+        "A classificação de Wiltse, a mais antiga e mais conhecida, separa a espondilolistese por causa (displásica, ístmica, degenerativa, traumática, patológica). Marchetti e Bartolozzi propuseram outra lógica, pensando em **prognóstico e tratamento**: a primeira pergunta é se a coluna **já nasceu com um defeito** ou se era normal e **sofreu uma agressão**."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "snellen",
+      "conteudo": {
+        "linhas": [
+          "LISE",
+          "PARS",
+          "MARCHETTI",
+          "BARTOLOZZI",
+          "QUAL É ADQUIRIDA",
+          "a espondilolistese considerada",
+          "uma lesão adquirida é"
+        ],
+        "negritos": [
+          "MARCHETTI e BARTOLOZZI"
+        ],
+        "grifos": [
+          "lesão adquirida"
+        ],
+        "dica_questao": "Leia até a última palavra antes de escolher.",
+        "lupa_texto": "lesão\nadquirida",
+        "lupa_cartoes": [
+          "Marchetti e Bartolozzi perguntam primeiro: a coluna **já nasceu com um defeito** ou era normal e **sofreu uma agressão**?",
+          "**Desenvolvimental** é displasia de base, de alto ou baixo grau. **Adquirida** é coluna normal lesada depois."
+        ],
+        "chamada_resposta": "Nasceu assim ou foi lesada depois?",
+        "motivos": {
+          "A": "**Traumática**: fratura aguda ou de estresse da pars numa coluna normal. Grupo adquirido.",
+          "B": "**Alto grau displásico**: grupo desenvolvimental, o de maior risco de progressão.",
+          "C": "**Baixo grau displásico**: também desenvolvimental.",
+          "D": "**Alongamento da pars**: forma do defeito dentro do grupo desenvolvimental."
+        },
+        "selo_gabarito": "Gabarito · grupo adquirido",
+        "rodape_resposta": "Letra **A** · traumática",
+        "vermelho": {
+          "rotulo": "Desenvolvimental",
+          "texto": "Displasia de base, de **alto ou baixo grau**, com lise ou alongamento da pars. O alto grau é o que mais progride."
+        },
+        "verde": {
+          "rotulo": "Adquirida",
+          "texto": "Coluna normal lesada depois: **traumática, pós-cirúrgica, patológica e degenerativa**."
+        },
+        "cartao_final": "Diferente de Wiltse: a lise ístmica pode cair nos **dois grupos**, conforme a coluna de base."
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: snellen-feed-01 a feed-05, das 7h às 8h."
+  ],
+  "legenda": "Até que linha você lê?\n\nTARO 2026: espondilolistese na classificação de Marchetti e Bartolozzi. Três alternativas falam de displasia; uma palavra no fim do enunciado decide o grupo.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem só lembra de Wiltse.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#coluna",
+    "#residenciamedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão coluna-0289 (TARO 2026), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "post": "post-29",
+  "data": "2026-11-08",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "cupom-menisco-discoide",
+  "formato": "stories (3)",
+  "estilo": "cupom-fiscal",
+  "assunto": "Menisco discoide lateral: cabeça alta da fíbula",
+  "gancho": "Joelho que estala na criança. E no raio X?",
+  "por_que": "Joelho da criança: sinais radiográficos que viram regra rápida para a prova.",
+  "questao": {
+    "id": "pediatria-0491",
+    "area": "Ortopedia pediátrica",
+    "subtema": "Joelho da criança",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "O menisco discoide lateral pode estar associado à",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "cabeça alta da fíbula."
+      },
+      {
+        "letra": "B",
+        "texto": "diminuição do espaço interarticular."
+      },
+      {
+        "letra": "C",
+        "texto": "hiperplasia da espinha tibial lateral."
+      },
+      {
+        "letra": "D",
+        "texto": "hiperplasia do côndilo femoral lateral."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [],
+    "comentario": {
+      "correta": "**Correta: A (cabeça alta da fíbula).** Entre os sinais radiográficos associados ao menisco discoide lateral está a **cabeça da fíbula alta**, ao lado do espaço articular lateral alargado, do côndilo lateral achatado e da espinha tibial lateral hipoplásica.",
+      "incorretas": {
+        "B": "O espaço articular lateral está **alargado**, e não diminuído, porque o menisco espesso afasta os ossos.",
+        "C": "A espinha tibial lateral está **hipoplásica** (pequena), e não hiperplásica.",
+        "D": "O côndilo femoral lateral fica **achatado e hipoplásico**, e não hiperplásico."
+      },
+      "conceito_trechos": [
+        "**O menisco discoide lateral.** É uma variação anatômica em que o menisco lateral tem forma de **disco**, mais largo e espesso, cobrindo parte ou todo o platô tibial lateral. Muitas vezes é assintomático; quando sintomático, a criança tem o **joelho que estala** (ressalto na extensão), bloqueio, dor ou derrame."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cupom-fiscal",
+      "conteudo": {
+        "gancho": "Joelho que estala\nna criança. [[E no raio X?]]",
+        "explicacao": [
+          "Na radiografia, o menisco discoide lateral pode vir com a **cabeça da fíbula alta**.",
+          "Os outros sinais: espaço lateral **alargado**, côndilo lateral **achatado** e espinha tibial lateral **hipoplásica**."
+        ],
+        "erradas": {
+          "B": "Espaço: alargado, não diminuído.",
+          "C": "Espinha: hipoplásica, não hiperplásica.",
+          "D": "Côndilo: achatado, não hiperplásico."
+        },
+        "regra": "Discoide lateral:\n[[fíbula alta.]]"
+      }
+    }
+  ],
+  "publicacao": [
+    "Story da pergunta: cupom-fiscal-story-01, das 7h às 8h.",
+    "Stories da resposta e do cupom: story-02 e story-03, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão pediatria-0491 (TARO 2026), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

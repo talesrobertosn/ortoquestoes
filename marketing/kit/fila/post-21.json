@@ -1,0 +1,191 @@
+{
+  "post": "post-21",
+  "data": "2026-11-01",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "var-peitoral-maior",
+  "formato": "feed (carrossel de 5) + stories (3)",
+  "estilo": "var",
+  "assunto": "Ruptura do peitoral maior: abdução e rotação externa",
+  "gancho": "Supino, descida, barra no peito. E um estalo.",
+  "por_que": "Ombro e lesão esportiva; alternativas em pares de posição, uma alonga e a outra encurta.",
+  "questao": {
+    "id": "ombro-cotovelo-0452",
+    "area": "Ombro e cotovelo",
+    "subtema": "Lesões do bíceps",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "No mecanismo mais comum da ruptura do tendão do músculo peitoral maior, o ombro é forçado em",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "adução e rotação interna."
+      },
+      {
+        "letra": "B",
+        "texto": "adução e rotação externa."
+      },
+      {
+        "letra": "C",
+        "texto": "abdução e rotação interna."
+      },
+      {
+        "letra": "D",
+        "texto": "abdução e rotação externa."
+      }
+    ],
+    "gabarito": "D",
+    "imagens": [],
+    "comentario": {
+      "correta": "**Abdução e rotação externa.** Na descida do supino, o ombro em abdução, rotação externa e extensão alonga ao máximo a cabeça esternal, que rompe sob contração excêntrica.",
+      "incorretas": {
+        "A": "**Músculo encurtado.** Em adução e rotação interna o peitoral está contraído e curto, posição da sua ação, e não de ruptura.",
+        "B": "**Adução encurta.** A rotação externa alonga, mas a adução aproxima origem e inserção, reduzindo a tensão.",
+        "C": "**Rotação interna encurta.** A abdução alonga, mas a rotação interna relaxa o tendão."
+      },
+      "conceito_trechos": [
+        "**Como o peitoral maior rompe.** A ruptura acontece numa **contração excêntrica** com o músculo **alongado ao máximo**. O cenário clássico é o **supino** (bench press) na fase final da **descida**, com a barra perto do peito: o ombro está em **extensão**, **abdução** e **rotação externa**, e as fibras inferiores da cabeça **esternal**, que são as mais longas e as que mais se torcem, recebem a carga. Também ocorre em lutas, rúgbi e em quedas com o braço afastado.",
+        "**Na prova:** ruptura do peitoral maior = contração excêntrica no **supino**, ombro em **abdução e rotação externa** (com extensão); avulsão na inserção umeral é a mais comum."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "var",
+      "conteudo": {
+        "area": "OMBRO",
+        "destaques": [
+          "peitoral maior"
+        ],
+        "capa": {
+          "titulo": "Quatro posições\nem campo.\n[[Só uma rompe\no peitoral.]]",
+          "lide": "Adução ou abdução, rotação interna ou externa. A banca cruzou as posições do ombro no mecanismo da ruptura do peitoral maior. O VAR vai revisar cada lance.",
+          "escalacao": [
+            "Adução",
+            "Abdução",
+            "Rot. interna",
+            "Rot. externa"
+          ]
+        },
+        "replay": {
+          "titulo": "Rompe [[alongado\nao máximo.]]",
+          "lide": "O cenário clássico é a descida do supino, com a barra perto do peito:",
+          "blocos": [
+            {
+              "rotulo": "Jogada 1 · posição",
+              "titulo": "Alongar",
+              "texto": "Ombro em **extensão, abdução e rotação externa**: a cabeça esternal no comprimento máximo."
+            },
+            {
+              "rotulo": "Jogada 2 · carga",
+              "titulo": "Frear",
+              "texto": "Contração **excêntrica**: o músculo recebe a carga enquanto alonga, e o tendão rompe."
+            }
+          ],
+          "leitura": "procure a posição que alonga, não a que encurta.",
+          "tarja": [
+            "Replay",
+            "Alonga ou encurta o peitoral?"
+          ]
+        },
+        "decisao": {
+          "motivos": {
+            "A": "Adução e rotação interna **encurtam** o peitoral: posição da sua ação, não de ruptura.",
+            "B": "A rotação externa alonga, mas a **adução** aproxima origem e inserção.",
+            "C": "A abdução alonga, mas a **rotação interna** relaxa o tendão.",
+            "D": "**Abdução e rotação externa** (com extensão): alongamento máximo sob contração excêntrica."
+          }
+        },
+        "sumula": {
+          "linhas": [
+            {
+              "item": "Abdução",
+              "desc": "Alonga o peitoral",
+              "chip": "em",
+              "rotulo": "ALONGA"
+            },
+            {
+              "item": "Rot. externa",
+              "desc": "Alonga e torce as fibras inferiores",
+              "chip": "em",
+              "rotulo": "ALONGA"
+            },
+            {
+              "item": "Extensão",
+              "desc": "Completa a posição da descida do supino",
+              "chip": "banco",
+              "rotulo": "NO BANCO"
+            },
+            {
+              "item": "Adução",
+              "desc": "Aproxima origem e inserção",
+              "chip": "imp",
+              "rotulo": "ENCURTA"
+            },
+            {
+              "item": "Rot. interna",
+              "desc": "Relaxa o tendão",
+              "chip": "imp",
+              "rotulo": "ENCURTA"
+            }
+          ],
+          "para_prova": "ruptura do peitoral maior = contração excêntrica no **supino**, ombro em **abdução e rotação externa**."
+        },
+        "story1": {
+          "titulo": "Em que posição o [[peitoral rompe?]]"
+        },
+        "story2": {
+          "titulo": "Duas posições estão em [[outro time.]]",
+          "fichas": [
+            {
+              "nome": "Adução",
+              "texto": "Aproxima origem e inserção: o peitoral **encurta** e a tensão cai."
+            },
+            {
+              "nome": "Rot. interna",
+              "texto": "É a ação do próprio peitoral: o tendão **relaxa**."
+            }
+          ],
+          "lide": "Tirando as duas, **sobra uma só alternativa** em jogo."
+        },
+        "story3": {
+          "titulo": "Abdução e\n[[rotação externa.]]",
+          "blocos": [
+            {
+              "rotulo": "Posição",
+              "titulo": "Alongado",
+              "texto": "Descida do supino, barra **perto do peito**."
+            },
+            {
+              "rotulo": "Carga",
+              "titulo": "Excêntrica",
+              "texto": "O músculo **freia** enquanto alonga."
+            }
+          ],
+          "para_prova": "a lesão mais comum é a **avulsão do tendão** na inserção umeral."
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: var-feed-01 a feed-05, das 7h às 8h.",
+    "Story da pergunta: var-story-01, logo depois do feed.",
+    "Stories da resposta: var-story-02 e story-03, ao meio-dia."
+  ],
+  "legenda": "Supino, descida, barra no peito. E um estalo.\n\nTARO 2026: o mecanismo da ruptura do peitoral maior. A banca cruzou adução, abdução e as duas rotações; o VAR revisa cada lance.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para o colega que vive na academia.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#ombro",
+    "#medicinaesportiva",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão ombro-cotovelo-0452 (TARO 2026), gabarito oficial D: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

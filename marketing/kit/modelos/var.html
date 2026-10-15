@@ -1,0 +1,343 @@
+<!doctype html>
+<!--
+  MODELO PARAMETRIZADO DO KIT · VAR da questão (feed 5 imagens 1080x1350 e stories 3 imagens 1080x1920) · aprovado por Tales em 12/10/2026.
+  O CSS é o do modelo aprovado (marketing/instagram/estilos/var-da-questao/modelo.html), sem mudança.
+  NÃO edite este arquivo para fazer um post: preencha o JSON da fila e rode
+    node marketing/kit/renderizar.mjs marketing/kit/fila/post-NN.json
+  Campos aceitos: marketing/kit/modelos/CAMPOS.md · Guia do estilo: marketing/instagram/estilos/VAR-DA-QUESTAO.md
+  Aberto direto no navegador, mostra o EXEMPLO (o post aprovado original).
+-->
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Kit · VAR da questão</title>
+<style>
+@font-face { font-family: J; src: url(../../instagram/fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: I; src: url(../../instagram/fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; }
+:root { --ouro: #ffd23f; --verm: #ff4d5a; --verde: #35e08a; --tinta: #0a1226; --painel: #0f1a36; --texto: #e9eefb; --mudo: #9fb0d4; }
+section { position: relative; width: 1080px; height: 1350px; overflow: hidden; font-family: I, sans-serif; color: var(--texto);
+  background:
+    linear-gradient(180deg, rgba(6, 12, 30, 0.92) 0%, rgba(6, 12, 30, 0.55) 38%, rgba(6, 12, 30, 0.82) 100%),
+    repeating-linear-gradient(90deg, #0f5b34 0 90px, #136b3e 90px 180px); }
+section.story { height: 1920px; }
+/* linhas do campo, só decoração */
+.campo { position: absolute; inset: 0; pointer-events: none; }
+.campo::before { content: ""; position: absolute; left: 50%; top: -10%; bottom: -10%; width: 4px; background: rgba(255,255,255,0.10); }
+.campo::after { content: ""; position: absolute; left: 50%; top: 50%; width: 520px; height: 520px; margin: -260px 0 0 -260px; border-radius: 50%; border: 4px solid rgba(255,255,255,0.08); }
+/* placar da transmissão */
+.placar { position: absolute; z-index: 5; left: 56px; top: 50px; display: flex; align-items: stretch; height: 64px; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 30px rgba(0,0,0,0.45); font-family: J; font-weight: 800; }
+.story .placar { top: 260px; left: 70px; }
+.placar > * { display: flex; align-items: center; padding: 0 20px; font-size: 24px; letter-spacing: 1px; }
+.placar .marca { background: #fff; color: #0a1226; gap: 10px; font-size: 25px; letter-spacing: -0.5px; padding: 0 18px 0 12px; }
+.placar .marca svg { width: 42px; height: 42px; }
+.placar .marca b { font-weight: 800; }
+.placar .marca span { font-weight: 500; }
+.placar .prova { background: var(--tinta); color: #fff; }
+.placar .area { background: #1b2a55; color: var(--mudo); }
+.placar .vivo { background: var(--verm); color: #fff; gap: 10px; }
+.placar .vivo i { width: 14px; height: 14px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px rgba(255,255,255,0.3); }
+.contador { position: absolute; z-index: 5; right: 56px; top: 50px; height: 64px; display: flex; align-items: center; padding: 0 22px; border-radius: 14px; background: rgba(10, 18, 38, 0.85); font-family: J; font-weight: 800; font-size: 26px; color: var(--ouro); letter-spacing: 2px; }
+.story .contador { top: 260px; right: 70px; }
+/* tarja inferior */
+.tarja { position: absolute; z-index: 5; left: 56px; right: 56px; bottom: 48px; display: grid; grid-template-columns: auto 1fr; border-radius: 16px; overflow: hidden; box-shadow: 0 14px 30px rgba(0,0,0,0.45); }
+.story .tarja { bottom: auto; top: 1590px; left: 70px; right: 70px; }
+.tarja b { display: flex; align-items: center; padding: 0 24px; background: var(--ouro); color: var(--tinta); font-family: J; font-weight: 800; font-size: 24px; letter-spacing: 2px; text-transform: uppercase; }
+.tarja span { display: flex; align-items: center; padding: 18px 24px; background: rgba(10, 18, 38, 0.92); font-size: 25px; color: #fff; }
+.conteudo { position: absolute; z-index: 4; left: 56px; right: 56px; top: 160px; }
+.story .conteudo { left: 70px; right: 70px; top: 370px; }
+section:not(.story) .conteudo { top: 140px !important; bottom: 140px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+section:not(.story) .conteudo > .monitor, section:not(.story) .conteudo > .duas, section:not(.story) .conteudo > .painel, section:not(.story) .conteudo > .alts, section:not(.story) .conteudo > .sumula, section:not(.story) .conteudo > .escalacao { align-self: stretch; }
+.story .conteudo { top: 370px; bottom: 360px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.story .conteudo > .monitor, .story .conteudo > .fichas, .story .conteudo > .duas, .story .conteudo > .painel { align-self: stretch; }
+.story .ficha { padding: 30px 150px 28px 30px; }
+.story .ficha h3 { font-size: 56px; }
+.story .ficha p { font-size: 31px; }
+.story .ficha .st { font-size: 22px; }
+.story .impedimento { right: 60px !important; }
+.story .bloco h3 { font-size: 58px; }
+.story .bloco p { font-size: 30px; }
+.story .alt { font-size: 36px; padding: 22px; }
+.escalacao { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.escalacao div { position: relative; border-radius: 18px; padding: 22px 18px 18px; background: rgba(10,18,38,0.88); border: 2px solid rgba(255,255,255,0.14); text-align: center; }
+.escalacao div::before { content: attr(data-n); display: block; font-family: J; font-weight: 800; font-size: 64px; line-height: 1; color: var(--ouro); }
+.escalacao b { display: block; margin-top: 8px; font-family: J; font-weight: 800; font-size: 30px; color: #fff; }
+.escalacao span { display: block; margin-top: 6px; font-size: 20px; letter-spacing: 2px; color: var(--mudo); font-family: J; font-weight: 700; }
+.selo { display: inline-flex; align-items: center; gap: 12px; padding: 10px 18px; border-radius: 10px; background: var(--ouro); color: var(--tinta); font-family: J; font-weight: 800; font-size: 24px; letter-spacing: 3px; text-transform: uppercase; }
+.selo.verm { background: var(--verm); color: #fff; }
+h1, h2 { font-family: J; font-weight: 800; letter-spacing: -0.04em; line-height: 0.98; color: #fff; text-shadow: 0 8px 30px rgba(0,0,0,0.5); }
+h1 { font-size: 118px; }
+h2 { font-size: 78px; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+p { font-size: 32px; line-height: 1.4; }
+.lide { color: #d7def0; }
+.painel { background: rgba(10, 18, 38, 0.86); border: 2px solid rgba(255,255,255,0.10); border-radius: 26px; padding: 30px 34px; box-shadow: 0 24px 50px rgba(0,0,0,0.35); }
+/* monitor do VAR */
+.monitor { position: relative; border-radius: 30px; padding: 16px; background: linear-gradient(140deg, #2a3350, #0b1124 60%, #39425e); box-shadow: 0 30px 60px rgba(0,0,0,0.5), inset 0 0 0 2px rgba(255,255,255,0.12); }
+.monitor .tela { position: relative; border-radius: 18px; background: #0a1430; overflow: hidden; padding: 30px 32px;
+  background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 5px); }
+.monitor .rotulo { position: absolute; top: -20px; left: 40px; padding: 6px 16px; border-radius: 8px; background: #5b3df5; color: #fff; font-family: J; font-weight: 800; font-size: 22px; letter-spacing: 3px; }
+.enun { font-size: 38px; line-height: 1.38; color: #fff; }
+.enun b { color: var(--ouro); }
+.alts { display: grid; gap: 16px; margin-top: 26px; }
+.alt { display: grid; grid-template-columns: 70px 1fr auto; align-items: center; gap: 20px; padding: 20px 22px; border-radius: 16px; background: rgba(255,255,255,0.06); border: 2px solid rgba(255,255,255,0.10); font-size: 34px; font-weight: 600; color: #fff; }
+.alt i { font-style: normal; display: grid; place-items: center; width: 62px; height: 62px; border-radius: 12px; background: #fff; color: var(--tinta); font-family: J; font-weight: 800; font-size: 34px; }
+.alt small { font-family: J; font-weight: 800; font-size: 20px; letter-spacing: 2px; padding: 8px 14px; border-radius: 8px; }
+.alt.x { opacity: 0.92; }
+.alt.x small { background: var(--verm); color: #fff; }
+.alt.ok { background: rgba(53, 224, 138, 0.16); border-color: var(--verde); }
+.alt.ok small { background: var(--verde); color: #04261a; }
+.motivo { grid-column: 2 / 4; font-size: 27px; font-weight: 400; line-height: 1.35; color: #c7d2ea; margin-top: -4px; }
+.motivo b { color: #fff; }
+/* fichas dos jogadores */
+.fichas { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.ficha { position: relative; border-radius: 22px; padding: 26px 26px 24px; background: rgba(10, 18, 38, 0.88); border: 2px solid rgba(255,255,255,0.12); }
+.ficha .num { position: absolute; right: 22px; top: 14px; font-family: J; font-weight: 800; font-size: 84px; line-height: 1; color: rgba(255,255,255,0.08); }
+.ficha h3 { font-family: J; font-weight: 800; font-size: 46px; letter-spacing: -0.02em; color: #fff; }
+.ficha p { font-size: 25px; line-height: 1.38; color: #c7d2ea; margin-top: 10px; }
+.ficha p b { color: #fff; }
+.ficha .st { display: inline-block; margin-top: 16px; font-family: J; font-weight: 800; font-size: 20px; letter-spacing: 2px; padding: 8px 14px; border-radius: 8px; }
+.ficha.em { border-color: var(--verde); }
+.ficha.em .st { background: var(--verde); color: #04261a; }
+.ficha.imp .st { background: var(--verm); color: #fff; }
+.ficha.imp h3 { color: #d9dfee; }
+/* linha de impedimento: só um traço diagonal */
+.impedimento { position: absolute; top: -30px; bottom: -30px; width: 6px; background: var(--verm); box-shadow: 0 0 22px var(--verm); transform: rotate(14deg); opacity: 0.85; }
+.impedimento.az { background: #4fa3ff; box-shadow: 0 0 22px #4fa3ff; }
+.duas { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.bloco { border-radius: 22px; padding: 28px; background: rgba(10, 18, 38, 0.88); border: 2px solid rgba(255,255,255,0.12); }
+.bloco small { display: block; font-family: J; font-weight: 800; font-size: 21px; letter-spacing: 3px; text-transform: uppercase; color: var(--ouro); margin-bottom: 10px; }
+.bloco h3 { font-family: J; font-weight: 800; font-size: 50px; color: #fff; letter-spacing: -0.02em; }
+.bloco p { font-size: 28px; line-height: 1.38; color: #c7d2ea; margin-top: 10px; }
+.bloco p b { color: #fff; }
+.sumula { width: 100%; border-collapse: separate; border-spacing: 0 10px; font-size: 27px; }
+.sumula td { padding: 16px 20px; background: rgba(10, 18, 38, 0.88); }
+.sumula td:first-child { border-radius: 14px 0 0 14px; font-family: J; font-weight: 800; color: #fff; font-size: 32px; width: 230px; }
+.sumula td:last-child { border-radius: 0 14px 14px 0; text-align: right; width: 210px; }
+.sumula .chip { font-family: J; font-weight: 800; font-size: 19px; letter-spacing: 2px; padding: 7px 12px; border-radius: 8px; }
+.chip.em { background: var(--verde); color: #04261a; }
+.chip.imp { background: var(--verm); color: #fff; }
+.chip.banco { background: #2b3a66; color: var(--mudo); }
+.sumula td.desc { color: #c7d2ea; }
+.decisao { font-family: J; font-weight: 800; font-size: 230px; line-height: 0.85; color: var(--verde); letter-spacing: -0.06em; text-shadow: 0 10px 40px rgba(53,224,138,0.35); }
+</style>
+<style>
+/* Kit: as cores que o modelo aprovado punha em linha (style="color:...") nos negritos. */
+.lide b { color: #fff; }
+.painel p b { color: #fff; }
+</style>
+</head><body>
+<script src="base.js"></script>
+<script>
+// EXEMPLO = o post aprovado (quadril-0077, TEOT 2023). Campos em CAMPOS.md.
+const EXEMPLO = {
+  questao: {
+    id: 'quadril-0077', prova: 'TEOT', ano: 2023, gabarito: 'D',
+    enunciado: 'Na semiologia do quadril, os testes utilizados para avaliar dor no músculo piriforme são',
+    alternativas: [{ letra: 'A', texto: 'ELY e PHELPS.' }, { letra: 'B', texto: 'PACE e PHELPS.' }, { letra: 'C', texto: 'ELY e FREIBERG.' }, { letra: 'D', texto: 'PACE e FREIBERG.' }]
+  },
+  conteudo: {
+    area: 'QUADRIL',
+    destaques: ['piriforme'],
+    capa: {
+      titulo: 'Quatro testes\nem campo.\n[[Só dois jogam\npelo piriforme.]]',
+      lide: 'Ely, Phelps, Pace e Freiberg. A banca escalou os quatro numa questão sobre a síndrome do piriforme. O VAR vai revisar cada lance.',
+      escalacao: ['Ely', 'Phelps', 'Pace', 'Freiberg']
+    },
+    replay: {
+      titulo: 'O piriforme aperta o [[nervo isquiático.]]',
+      lide: 'Dor na nádega que piora sentado. Os testes reproduzem essa dor de dois jeitos:',
+      blocos: [
+        { rotulo: 'Jogada 1 · ativo', titulo: 'Contrair', texto: 'O paciente força o músculo **contra resistência**. Ele aumenta de volume e aperta o nervo.' },
+        { rotulo: 'Jogada 2 · passivo', titulo: 'Esticar', texto: 'O examinador **alonga** o músculo por cima do nervo, girando a perna para dentro.' }
+      ],
+      leitura: 'a dupla certa tem um teste de cada jogada.',
+      tarja: ['Replay', 'Procure um teste ativo e um passivo']
+    },
+    decisao: {
+      motivos: {
+        A: 'Nenhum dos dois: **Ely** avalia o reto femoral e **Phelps**, o grácil.',
+        B: 'Pace está certo, mas **Phelps** avalia o encurtamento do grácil.',
+        C: 'Freiberg está certo, mas **Ely** avalia o encurtamento do reto femoral.',
+        D: '**Pace** é ativo (contrai contra resistência) e **Freiberg** é passivo (estica o músculo sobre o nervo).'
+      },
+      tarja: ['Gabarito: D', 'Pace e Freiberg']
+    },
+    sumula: {
+      linhas: [
+        { item: 'Pace', desc: 'Sentado, abre e gira para fora contra resistência', chip: 'em', rotulo: 'PIRIFORME' },
+        { item: 'Freiberg', desc: 'Deitado, rotação interna forçada com o quadril esticado', chip: 'em', rotulo: 'PIRIFORME' },
+        { item: 'Ely', desc: 'Encurtamento do reto femoral', chip: 'imp', rotulo: 'OUTRO TIME' },
+        { item: 'Phelps', desc: 'Encurtamento do grácil', chip: 'imp', rotulo: 'OUTRO TIME' },
+        { item: 'FAIR e Beatty', desc: 'Também testam o piriforme', chip: 'banco', rotulo: 'NO BANCO' }
+      ],
+      para_prova: 'piriforme é **Pace** (ativo) e **Freiberg** (passivo). Ely e Phelps jogam em outro time.'
+    },
+    story1: { titulo: 'Quem marca o [[piriforme?]]' },
+    story2: {
+      titulo: 'Dois testes estão em [[outro time.]]',
+      fichas: [
+        { nome: 'Ely', texto: 'Avalia o encurtamento do **reto femoral**: de bruços, dobra-se o joelho e a bacia sobe da mesa.' },
+        { nome: 'Phelps', texto: 'Avalia o encurtamento do **grácil**: a abertura da coxa melhora quando o joelho dobra.' }
+      ]
+    },
+    story3: {
+      titulo: 'Pace e [[Freiberg.]]',
+      blocos: [
+        { rotulo: 'Ativo', titulo: 'Pace', texto: 'Sentado, abre e gira a perna para fora **contra resistência**.' },
+        { rotulo: 'Passivo', titulo: 'Freiberg', texto: 'Deitado, **rotação interna forçada** com o quadril esticado.' }
+      ],
+      para_prova: 'um contrai, o outro estica. Ely (reto femoral) e Phelps (grácil) jogam em outro time.'
+    }
+  }
+}
+
+KIT.montar(EXEMPLO, (q, c) => {
+  const { t } = KIT
+  const P = KIT.prova(q)
+  const dq = ` data-question="${q.id}"`
+  const incluir = c.incluir ?? 'ambos'
+  const area = c.area ?? (q.area ?? '').toUpperCase()
+  const cap = c.capa ?? {}, rp = c.replay ?? {}, dc = c.decisao ?? {}, sm = c.sumula ?? {}
+  const s1 = c.story1 ?? {}, s2 = c.story2 ?? {}, s3 = c.story3 ?? {}
+  const marca = '<span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span>'
+  const placar = (extra, vivo) => `<div class="placar">${marca}<span class="prova">${t(P)}</span>${extra ? `<span class="area">${t(extra)}</span>` : ''}${vivo ? '<span class="vivo"><i></i>AO VIVO</span>' : ''}</div>`
+  const tarja = (par) => `<div class="tarja"><b>${t(par[0])}</b><span>${t(par[1])}</span></div>`
+  const enun = KIT.marcar(q.enunciado, c.destaques, [])
+  const semPonto = (s) => s.replace(/\.$/, '')
+  const monitor = (rot, estilo) => `<div class="monitor"${estilo ? ` style="${estilo}"` : ''}><span class="rotulo">${rot}</span><div class="tela">
+      <p class="enun">${enun}</p>
+      <div class="alts">
+        ${q.alternativas.map((a) => `<div class="alt"><i>${a.letra}</i><span>${t(a.texto)}</span><span></span></div>`).join('\n        ')}
+      </div>
+    </div></div>`
+  const bloco = (b) => `<div class="bloco"><small>${t(b.rotulo)}</small><h3>${t(b.titulo)}</h3><p>${t(b.texto)}</p></div>`
+  const okAlt = q.alternativas.find((a) => a.letra === q.gabarito)
+  const feed = `
+<section id="feed-01"${dq}>
+  <div class="campo"></div>
+  ${placar(area, true)}
+  <div class="contador">REVISÃO</div>
+  <div class="conteudo" style="top:250px">
+    <span class="selo verm">${t(cap.selo ?? 'Lance polêmico')}</span>
+    <h1 style="margin-top:34px">${t(cap.titulo)}</h1>
+    <p class="lide" style="margin-top:40px;max-width:860px">${t(cap.lide)}</p>
+    <div class="escalacao" style="margin-top:44px">${(cap.escalacao ?? []).map((n) => `<div data-n="?"><b>${t(n)}</b><span>EM REVISÃO</span></div>`).join('')}</div>
+  </div>
+  ${tarja(cap.tarja ?? ['VAR da questão', 'Arraste para ver o lance e comente a sua letra'])}
+</section>
+
+<section id="feed-02"${dq}>
+  <div class="campo"></div>
+  ${placar(area)}
+  <div class="contador">O LANCE · 2/5</div>
+  <div class="conteudo" style="top:190px">
+    ${monitor('LANCE EM REVISÃO')}
+    <p class="lide" style="margin-top:36px;text-align:center">${t(c.lance?.lide ?? 'Antes do VAR: **comente a sua letra.**\nA decisão sai nos próximos slides.')}</p>
+  </div>
+  ${tarja(c.lance?.tarja ?? (q.simulado ? ['OrtoQuestões Simulados', 'Questão autoral de treino'] : ['Questão oficial', `${P}, enunciado e alternativas da prova`]))}
+</section>
+
+<section id="feed-03"${dq}>
+  <div class="campo"></div>
+  ${placar(area)}
+  <div class="contador">REPLAY · 3/5</div>
+  <div class="conteudo" style="top:190px">
+    <span class="selo">${t(rp.selo ?? 'Câmera lenta')}</span>
+    <h2 style="margin-top:28px">${t(rp.titulo)}</h2>
+    ${rp.lide ? `<p class="lide" style="margin-top:24px">${t(rp.lide)}</p>` : ''}
+    <div class="duas" style="margin-top:32px">
+      ${(rp.blocos ?? []).map(bloco).join('\n      ')}
+    </div>
+    ${rp.leitura ? `<div class="painel" style="margin-top:28px"><p style="font-size:30px"><b style="color:var(--ouro)">${t(rp.leitura_rotulo ?? 'Leitura do VAR:')}</b> ${t(rp.leitura)}</p></div>` : ''}
+  </div>
+  ${tarja(rp.tarja ?? ['Replay', 'O detalhe que decide o lance'])}
+</section>
+
+<section id="feed-04"${dq}>
+  <div class="campo"></div>
+  ${placar(area)}
+  <div class="contador">DECISÃO · 4/5</div>
+  <div class="conteudo" style="top:180px">
+    <span class="selo">${t(dc.selo ?? 'Revisão lance a lance')}</span>
+    <div class="alts" style="margin-top:28px;gap:18px">
+      ${q.alternativas.map((a) => {
+        const ok = a.letra === q.gabarito
+        const m = dc.motivos?.[a.letra] ?? KIT.motivo(q, a.letra)
+        return `<div class="alt ${ok ? 'ok' : 'x'}"><i>${a.letra}</i><span>${t(a.texto)}</span><small>${ok ? 'GOL VALIDADO' : 'ANULADO'}</small><span class="motivo"${ok ? ' style="color:#dff8ea"' : ''}>${t(m)}</span></div>`
+      }).join('\n      ')}
+    </div>
+  </div>
+  ${tarja(dc.tarja ?? [`Gabarito: ${q.gabarito}`, semPonto(okAlt?.texto ?? '')])}
+</section>
+
+<section id="feed-05"${dq}>
+  <div class="campo"></div>
+  ${placar(area)}
+  <div class="contador">SÚMULA · 5/5</div>
+  <div class="conteudo" style="top:180px">
+    <span class="selo">${t(sm.selo ?? 'Súmula da partida')}</span>
+    <table class="sumula" style="margin-top:22px">
+      ${(sm.linhas ?? []).map((l) => `<tr><td>${t(l.item)}</td><td class="desc">${t(l.desc)}</td><td><span class="chip ${l.chip ?? 'imp'}">${t(l.rotulo)}</span></td></tr>`).join('\n      ')}
+    </table>
+    <div class="painel" style="margin-top:22px;border-color:var(--ouro)"><p style="font-size:31px"><b style="color:var(--ouro)">Para a prova:</b> ${t(sm.para_prova)}</p></div>
+    <p class="lide" style="margin-top:30px;text-align:center;font-size:30px">${t(sm.fecho ?? 'Questões oficiais comentadas lance a lance.')}<br><b style="color:#fff">ortoquestoes.com.br</b> · @ortoquestoes</p>
+  </div>
+  ${tarja(sm.tarja ?? ['Fim de jogo', 'Salve para revisar antes da prova'])}
+</section>`
+
+  const stories = `
+<section id="story-01" class="story"${dq}>
+  <div class="campo"></div>
+  ${placar(null, true)}
+  <div class="conteudo">
+    <span class="selo verm">${t(s1.selo ?? 'VAR checando')}</span>
+    <h2 style="margin-top:26px;font-size:84px">${t(s1.titulo)}</h2>
+    ${monitor('LANCE', 'margin-top:44px')}
+  </div>
+  ${tarja(s1.tarja ?? ['Sua letra?', 'Comente. A decisão do VAR sai no próximo story.'])}
+</section>
+
+<section id="story-02" class="story"${dq}>
+  <div class="campo"></div>
+  ${placar(s2.area ?? 'CHECAGEM')}
+  <div class="conteudo">
+    <span class="selo verm">${t(s2.selo ?? 'Impedimento')}</span>
+    <h2 style="margin-top:26px;font-size:80px">${t(s2.titulo)}</h2>
+    <div class="fichas" style="margin-top:44px;grid-template-columns:1fr">
+      ${(s2.fichas ?? []).map((f, i) => `<div class="ficha imp" style="overflow:hidden"><span class="impedimento" style="right:120px"></span><span class="num">${String(i + 1).padStart(2, '0')}</span><h3>${t(f.nome)}</h3><p>${t(f.texto)}</p><span class="st">${t(f.st ?? 'IMPEDIDO')}</span></div>`).join('\n      ')}
+    </div>
+    <p class="lide" style="margin-top:40px;font-size:38px">${t(s2.lide ?? 'Tirando os dois, **sobra uma só alternativa** em jogo.')}</p>
+  </div>
+  ${tarja(s2.tarja ?? ['Checagem', 'A decisão final sai no próximo story'])}
+</section>
+
+<section id="story-03" class="story"${dq}>
+  <div class="campo"></div>
+  ${placar(s3.area ?? 'DECISÃO')}
+  <div class="conteudo">
+    <span class="selo" style="background:var(--verde);color:#04261a">${t(s3.selo ?? 'Gol validado')}</span>
+    <p class="decisao" style="margin-top:30px">${q.gabarito}</p>
+    <h2 style="margin-top:14px;font-size:76px">${t(s3.titulo)}</h2>
+    <div class="duas" style="margin-top:40px">
+      ${(s3.blocos ?? rp.blocos ?? []).map(bloco).join('\n      ')}
+    </div>
+    <div class="painel" style="margin-top:28px;border-color:var(--ouro)"><p style="font-size:32px"><b style="color:var(--ouro)">Para a prova:</b> ${t(s3.para_prova ?? sm.para_prova)}</p></div>
+  </div>
+  ${tarja(s3.tarja ?? ['Mais lances', 'Questões oficiais comentadas: o caminho está no perfil'])}
+</section>`
+  return (incluir === 'stories' ? '' : feed) + (incluir === 'feed' ? '' : stories)
+}, () => {
+  // Conteúdo centralizado entre o placar e a tarja: se não couber, reduz por igual.
+  for (const s of document.querySelectorAll('section')) {
+    const ct = s.querySelector('.conteudo'), s0 = s.getBoundingClientRect().top
+    const story = s.classList.contains('story')
+    const topo = s.querySelector('.placar').getBoundingClientRect().bottom - s0 + 16
+    const base = s.querySelector('.tarja').getBoundingClientRect().top - s0 - 16
+    KIT.encaixar(s, () => KIT.uniao(ct), [...ct.children], base, topo)
+    s.querySelectorAll('.escalacao b').forEach((b) => KIT.caberLargura(b, 20))
+    const pl = s.querySelector('.placar').getBoundingClientRect(), ct2 = s.querySelector('.contador')
+    if (ct2 && pl.right > ct2.getBoundingClientRect().left - 8) KIT.aviso(`${s.id}: o placar encosta no contador; use uma "area" mais curta (ex.: PÉ, OMBRO).`)
+    if (pl.right > s.getBoundingClientRect().right - 40) KIT.aviso(`${s.id}: o placar passa da largura; use uma "area" mais curta.`)
+  }
+})
+</script>
+</body></html>

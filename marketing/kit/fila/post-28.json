@@ -1,0 +1,180 @@
+{
+  "post": "post-28",
+  "data": "2026-11-07",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "cofre-colo-femoral",
+  "formato": "feed (carrossel de 6)",
+  "estilo": "cofre-duas-chaves",
+  "assunto": "Redução do colo femoral: Lowell e Garden",
+  "gancho": "Ler uma imagem abre só metade do cofre.",
+  "por_que": "Fratura do colo femoral é tema forte de trauma; duas imagens e duas chaves (A e B).",
+  "questao": {
+    "id": "quadril-0328",
+    "area": "Quadril",
+    "subtema": "Fraturas do quadril e do acetábulo",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na fratura do colo femoral, as imagens A e B ilustram, respectivamente, os parâmetros intraoperatórios de qualidade da redução correspondentes aos índices de alinhamento de",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "LOWELL e GARDEN."
+      },
+      {
+        "letra": "B",
+        "texto": "GARDEN e LOWELL."
+      },
+      {
+        "letra": "C",
+        "texto": "LOWELL e WINTER."
+      },
+      {
+        "letra": "D",
+        "texto": "GARDEN e WINTER."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/quadril/quadril-0328-1.jpeg",
+        "legenda": null
+      }
+    ],
+    "comentario": {
+      "correta": "**Resposta oficial.**\n- A imagem A mostra as curvas corticais de Lowell.\n- A imagem B mostra o índice angular de Garden.",
+      "incorretas": {
+        "B": "**Ordem invertida.**\n- O gabarito atribui Lowell à imagem A e Garden à B.",
+        "C": "**Winter não se aplica.**\n- Não é parâmetro de redução do colo femoral.",
+        "D": "**Winter não se aplica.**\n- Independentemente da ordem, Winter não entra."
+      },
+      "conceito_trechos": [
+        "### Qualidade da redução no colo femoral\n| Parâmetro | Como se avalia | Normal |\n|---|---|---|\n| ==índice de Garden== | ângulo entre trabéculas compressivas e cortical medial da diáfise | ==cerca de 160° no AP e 180° no perfil== (aceitável 155 a 180°) |\n| ==sinal de Lowell== | contornos corticais da cabeça e do colo formando curvas contínuas em ==S== ou ==C== reverso | curvas lisas, sem degrau |",
+        "> **Na prova:** o gabarito identifica ==A = Lowell== e ==B = Garden== (veja o alerta sobre a ordem das imagens)."
+      ],
+      "conferido": false,
+      "alerta": "A ordem entre as imagens A e B (qual mostra o índice de Lowell e qual mostra o de Garden) depende do rótulo de cada imagem no caderno da prova. O gabarito considera Lowell na imagem A e Garden na imagem B; confira a figura original antes de memorizar a ordem."
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cofre-duas-chaves",
+      "conteudo": {
+        "capa": {
+          "tag": "Colo do fêmur · TARO 2026",
+          "titulo": "Ler uma imagem\nabre só [[metade\ndo cofre.]]",
+          "sub": "As imagens A e B mostram dois jeitos\nde conferir a redução do colo femoral.",
+          "chaves": [
+            "IMAGEM A",
+            "IMAGEM B"
+          ],
+          "porta": "DUPLA CONFERÊNCIA"
+        },
+        "questao_slide": {
+          "pedido_texto": "Comente sua combinação antes de continuar."
+        },
+        "leitura": {
+          "titulo": "Uma imagem é visual.\n[[A outra mede ângulo.]]",
+          "paineis": [
+            {
+              "titulo": "Imagem A · curvas",
+              "texto": "Contornos da cabeça e do colo em **S** ou **C** reverso, sem degrau."
+            },
+            {
+              "titulo": "Imagem B · ângulos",
+              "texto": "Ângulo entre as **trabéculas compressivas** e a cortical medial: 160° no AP, 180° no perfil."
+            }
+          ],
+          "nota": {
+            "titulo": "Winter não entra.",
+            "texto": "Não é parâmetro de redução do colo femoral."
+          }
+        },
+        "resposta": {
+          "titulo": "Lowell +\n[[Garden.]]",
+          "sub": "A: as curvas de Lowell.\nB: o índice angular de Garden.",
+          "chaves": [
+            "A · Lowell",
+            "B · Garden"
+          ],
+          "comparacao": {
+            "B": {
+              "titulo": "Ordem invertida.",
+              "texto": "O gabarito atribui Lowell à imagem A e Garden à B."
+            },
+            "C": {
+              "titulo": "Winter não se aplica.",
+              "texto": "Não é parâmetro de redução do colo femoral."
+            },
+            "D": {
+              "titulo": "Winter não se aplica.",
+              "texto": "Independentemente da ordem, Winter não entra."
+            }
+          },
+          "guardar": "Lowell é visual (curvas); Garden mede o ângulo."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "Redução do colo\n[[em dois olhares.]]",
+          "itens": [
+            {
+              "titulo": "Garden quantifica.",
+              "texto": "Cerca de **160° no AP** e **180° no perfil** (aceitável de 155° a 180°)."
+            },
+            {
+              "titulo": "Abaixo disso, varo.",
+              "texto": "Abaixo de 155° a 160° no AP indica varo; desvio acima de 20° no perfil aumenta necrose e falha."
+            },
+            {
+              "titulo": "Lowell é visual.",
+              "texto": "Qualquer quebra ou angulação nas curvas em S ou C indica redução imperfeita."
+            }
+          ],
+          "destaque": {
+            "rotulo": "NA SALA",
+            "titulo": "Os dois se completam.",
+            "texto": "Avaliados na radioscopia, em AP e perfil."
+          }
+        },
+        "final": {
+          "celular": {
+            "titulo": "A · LOWELL e GARDEN.",
+            "texto": "A imagem A mostra as curvas corticais de Lowell; a B, o índice angular de Garden.",
+            "itens": [
+              {
+                "rotulo": "ALTERNATIVA B",
+                "texto": "Ordem invertida: o gabarito atribui Lowell à A e Garden à B."
+              },
+              {
+                "rotulo": "ALTERNATIVA C",
+                "texto": "Winter não é parâmetro de redução do colo femoral."
+              },
+              {
+                "rotulo": "ALTERNATIVA D",
+                "texto": "Independentemente da ordem, Winter não entra."
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: cofre-duas-chaves-feed-01 a feed-06, das 7h às 8h."
+  ],
+  "legenda": "Ler uma imagem abre só metade do cofre.\n\nTARO 2026: duas imagens de conferência da redução na fratura do colo femoral. Uma é visual, a outra mede ângulo; para abrir, as duas chaves precisam coincidir.\n\nComente a sua combinação (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem fica na radioscopia.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#quadril",
+    "#trauma",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão quadril-0328 (TARO 2026), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica.",
+    "O comentário tem alerta (veja questao.comentario.alerta): confira a imagem original antes de publicar."
+  ]
+}

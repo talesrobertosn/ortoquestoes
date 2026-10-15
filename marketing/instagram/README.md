@@ -19,6 +19,8 @@ de assinatura).
 
 **Orientações gerais de marketing (público, horários, frequência, regras): [docs/marketing/orientacoes.md](../../docs/marketing/orientacoes.md).**
 
+**Kit de posts e fila das próximas postagens: [marketing/kit/README.md](../kit/README.md)** (JSON + um comando, modelos aprovados parametrizados).
+
 **Regras permanentes (mais novas que as seções abaixo; prevalecem sobre elas):**
 
 - **Stories sem figurinha:** nada de quiz, enquete, sim/não, caixa de pergunta nem link (o

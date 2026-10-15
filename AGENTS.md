@@ -47,6 +47,8 @@ Para qualquer conteúdo de divulgação (Instagram, propaganda, e-mail), siga
 frequência e regras da marca definidas pelo dono do projeto. Para fazer os posts, siga o roteiro
 [docs/prompts/codex-instagram.md](docs/prompts/codex-instagram.md) (imagens em HTML a partir dos
 modelos; nunca imagem gerada por IA).
+Para os estilos aprovados, prefira o kit [marketing/kit/README.md](marketing/kit/README.md): fila pronta e um comando por post
+(roteiro curto para o Codex em [docs/prompts/codex-post-rapido.md](docs/prompts/codex-post-rapido.md)).
 
 ## Flashcards (Torneio de Flashcards, desde 12/10/2026)
 

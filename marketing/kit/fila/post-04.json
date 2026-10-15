@@ -1,0 +1,178 @@
+{
+  "post": "post-04",
+  "data": "2026-10-18",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "cofre-canal-adutor",
+  "formato": "feed (carrossel de 6)",
+  "estilo": "cofre-duas-chaves",
+  "assunto": "Canal adutor: nervo safeno e artéria femoral",
+  "gancho": "Achar o canal é só metade do cofre.",
+  "por_que": "Anatomia com imagem e duas estruturas na mesma seta (nervo + vaso): a metáfora exata do Cofre.",
+  "questao": {
+    "id": "quadril-0190",
+    "area": "Quadril",
+    "subtema": "Anatomia do quadril",
+    "prova": "TARO",
+    "ano": 2025,
+    "simulado": false,
+    "enunciado": "Na imagem a seguir, as estruturas assinaladas pela seta no canal adutor correspondem:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "ao nervo safeno e à artéria femoral."
+      },
+      {
+        "letra": "B",
+        "texto": "ao nervo femoral e à artéria femoral."
+      },
+      {
+        "letra": "C",
+        "texto": "ao nervo safeno e à veia safena magna."
+      },
+      {
+        "letra": "D",
+        "texto": "ao nervo femoral e à veia safena magna."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/quadril/quadril-0190-1.jpeg",
+        "legenda": "Fonte: NETTER, F. H. Atlas de anatomia humana. 7. ed. Rio de Janeiro: Elsevier, 2019."
+      }
+    ],
+    "comentario": {
+      "correta": "**Safeno e artéria femoral.**\n- No canal adutor o componente nervoso já é o safeno, ramo terminal do femoral.\n- Acompanha a artéria femoral até o hiato dos adutores.",
+      "incorretas": {
+        "B": "**Femoral termina antes.**\n- O nervo femoral se divide logo abaixo do ligamento inguinal.",
+        "C": "**Safena magna é superficial.**\n- Corre no subcutâneo, fora do canal.",
+        "D": "**Os dois errados.**\n- O nervo é o safeno, e a veia do canal é a femoral."
+      },
+      "conceito_trechos": [
+        "### Canal dos adutores (Hunter)\n- Do ápice do triângulo femoral ao **hiato dos adutores**, no terço médio da coxa.\n- Limites:\n  - **anterolateral:** vasto medial;\n  - **posterior:** adutor longo e adutor magno;\n  - **teto (anteromedial):** sartório e membrana vastoadutora.",
+        "> **Na prova:** no canal adutor = ==nervo safeno e artéria femoral==."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cofre-duas-chaves",
+      "conteudo": {
+        "capa": {
+          "tag": "Anatomia da coxa · TARO 2025",
+          "titulo": "Achar o canal\nabre só [[metade\ndo cofre.]]",
+          "sub": "A seta aponta duas estruturas.\nUm nervo e um vaso, juntos.",
+          "chaves": [
+            "NERVO",
+            "VASO"
+          ]
+        },
+        "questao_slide": {
+          "pedido_texto": "Comente sua combinação antes de continuar."
+        },
+        "leitura": {
+          "titulo": "Primeiro, o canal.\n[[Depois, quem passa.]]",
+          "paineis": [
+            {
+              "titulo": "O nervo",
+              "texto": "No canal, o femoral **já se dividiu**: segue o ramo sensitivo, o **safeno**."
+            },
+            {
+              "titulo": "O vaso",
+              "texto": "A **artéria femoral** atravessa o canal até o hiato dos adutores."
+            }
+          ],
+          "nota": {
+            "titulo": "A safena magna não entra.",
+            "texto": "Ela corre no subcutâneo, fora do canal."
+          }
+        },
+        "resposta": {
+          "titulo": "Safeno +\n[[artéria femoral.]]",
+          "sub": "O nervo safeno acompanha a artéria\naté o hiato dos adutores.",
+          "chaves": [
+            "Nervo safeno",
+            "Artéria femoral"
+          ],
+          "comparacao": {
+            "B": {
+              "titulo": "O femoral termina antes.",
+              "texto": "Divide-se logo abaixo do ligamento inguinal."
+            },
+            "C": {
+              "titulo": "A safena magna é superficial.",
+              "texto": "Corre no subcutâneo, fora do canal."
+            },
+            "D": {
+              "titulo": "Erra as duas chaves.",
+              "texto": "O nervo é o safeno, e a veia do canal é a femoral."
+            }
+          },
+          "guardar": "Canal dos adutores: nervo safeno + artéria femoral."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "O canal de Hunter\n[[em três chaves.]]",
+          "itens": [
+            {
+              "titulo": "Onde fica.",
+              "texto": "Do ápice do triângulo femoral ao **hiato dos adutores**, no terço médio da coxa."
+            },
+            {
+              "titulo": "As paredes.",
+              "texto": "Vasto medial, adutores longo e magno e, no teto, o **sartório** com a membrana vastoadutora."
+            },
+            {
+              "titulo": "O que passa.",
+              "texto": "Artéria e veia femorais, **nervo safeno** e, na porção proximal, o nervo para o vasto medial."
+            }
+          ],
+          "destaque": {
+            "rotulo": "NA CLÍNICA",
+            "titulo": "Bloqueio do canal adutor.",
+            "texto": "Na artroplastia do joelho: analgesia sensitiva com pouca perda motora do quadríceps."
+          }
+        },
+        "final": {
+          "celular": {
+            "titulo": "A · ao nervo safeno e à artéria femoral.",
+            "texto": "No canal adutor, o componente nervoso já é o safeno, ramo terminal do femoral, que acompanha a artéria femoral.",
+            "itens": [
+              {
+                "rotulo": "ALTERNATIVA B",
+                "texto": "O nervo femoral se divide logo abaixo do ligamento inguinal."
+              },
+              {
+                "rotulo": "ALTERNATIVA C",
+                "texto": "A veia safena magna corre no subcutâneo, fora do canal."
+              },
+              {
+                "rotulo": "ALTERNATIVA D",
+                "texto": "Os dois errados: o nervo é o safeno, e a veia do canal é a femoral."
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: cofre-duas-chaves-feed-01 a feed-06, das 7h às 8h."
+  ],
+  "legenda": "Achar o canal é só metade do cofre.\n\nTARO 2025: a seta aponta duas estruturas no canal adutor. Para abrir, nervo e vaso precisam estar certos ao mesmo tempo.\n\nComente a sua combinação (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem confunde safeno com safena.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#anatomia",
+    "#residenciamedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão quadril-0190 (TARO 2025), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

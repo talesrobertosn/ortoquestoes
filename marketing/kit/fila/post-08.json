@@ -1,0 +1,53 @@
+{
+  "post": "post-08",
+  "data": "2026-10-21",
+  "horario": "18:30",
+  "status": "pronto",
+  "slug": "treine-gratis-flashcards",
+  "formato": "story de propaganda (1, com figurinha de link)",
+  "estilo": "treine-gratis",
+  "produto": "Flashcards (beta)",
+  "gancho": "Flashcards de Ortopedia, por área.",
+  "por_que": "Divulgar o Torneio de Flashcards (beta público desde 13/10) com prints reais já no repositório. Nome: sempre \"Flashcards\", nunca Cripta.",
+  "pecas": [
+    {
+      "estilo": "treine-gratis",
+      "conteudo": {
+        "etiqueta": "FLASHCARDS · BETA",
+        "titulo": "Flashcards de\n[[Ortopedia, por área.]]",
+        "sub": "Das provas, com o comentário. Você diz como foi: **Errei, Hesitei ou Sabia.**",
+        "tela_notebook": "marketing/instagram/posts/2026-10-13-torneio-flashcards/prints/pc-estudo-verso2.jpg",
+        "tela_celular": "marketing/instagram/posts/2026-10-13-torneio-flashcards/prints/cel-estudo-frente2.jpg",
+        "recursos": [
+          {
+            "titulo": "Por área",
+            "apoio": "Coluna, Joelho, Mão, Trauma e mais"
+          },
+          {
+            "titulo": "Das provas",
+            "apoio": "cada um com o comentário"
+          },
+          {
+            "titulo": "Revisão no tempo certo",
+            "apoio": "o que você erra volta antes"
+          },
+          {
+            "titulo": "Modo jogo",
+            "apoio": "cada acerto é um golpe"
+          }
+        ],
+        "dica": "Teste grátis pelo link aqui embaixo",
+        "utm_campaign": "treine-gratis-flashcards"
+      }
+    }
+  ],
+  "publicacao": [
+    "Story: treine-gratis-s1, das 18h às 19h, depois do post de questão do dia.",
+    "No Instagram, pôr a figurinha de link no espaço livre embaixo do botão, com o texto \"Treine grátis\"."
+  ],
+  "link_figurinha": "https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaign=treine-gratis-flashcards#/conta?modo=criar&voltar=%2Ftreinar",
+  "legenda": null,
+  "conferencia": [
+    "Só recursos que existem, conferidos na tabela \"Gratuito ou assinante\" de src/paginas/Assinatura.tsx. Sem preço, sem número do acervo."
+  ]
+}

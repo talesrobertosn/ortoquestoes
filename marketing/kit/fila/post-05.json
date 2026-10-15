@@ -1,0 +1,83 @@
+{
+  "post": "post-05",
+  "data": "2026-10-19",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "cupom-enxerto-flexor",
+  "formato": "stories (3)",
+  "estilo": "cupom-fiscal",
+  "assunto": "Enxerto para tendão flexor: palmar longo",
+  "gancho": "Faltou tendão no dedo. De onde tirar?",
+  "por_que": "Mão: questão curta e direta (cabe na nota), resposta que vira regra para a prova.",
+  "questao": {
+    "id": "mao-0572",
+    "area": "Mão e punho",
+    "subtema": "Lesões dos tendões flexores",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na reconstrução dos tendões flexores dos dedos da mão, o tendão preferencial para ser utilizado como enxerto é",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "palmar longo."
+      },
+      {
+        "letra": "B",
+        "texto": "plantar delgado."
+      },
+      {
+        "letra": "C",
+        "texto": "extensor longo dos dedos."
+      },
+      {
+        "letra": "D",
+        "texto": "extensor comum dos dedos."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [],
+    "comentario": {
+      "correta": "O palmar longo está no mesmo campo, tem calibre e comprimento adequados e é dispensável, por isso é o enxerto preferido.",
+      "incorretas": {
+        "B": "O plantar delgado é a segunda opção: exige outro campo cirúrgico e também pode estar ausente.",
+        "C": "Os extensores longos dos dedos do pé servem como alternativa, sobretudo para vários enxertos, mas não são a primeira escolha.",
+        "D": "O extensor comum dos dedos da mão está em uso; retirá-lo troca um déficit por outro."
+      },
+      "conceito_trechos": [
+        "Na **reconstrução dos tendões flexores** em dois tempos, ou no enxerto primário, o enxerto ideal precisa ter o calibre e o comprimento certos, ser fácil de colher e poder ser dispensado sem prejuízo.",
+        "**Na prova**: enxerto preferencial para tendão flexor = **palmar longo**."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cupom-fiscal",
+      "conteudo": {
+        "gancho": "Faltou tendão no dedo.\n[[De onde tirar?]]",
+        "explicacao": [
+          "O **palmar longo** fica no **mesmo campo cirúrgico**, tem calibre e comprimento adequados e não faz falta.",
+          "Falta em cerca de **15%** das pessoas: teste antes, com a oposição do polegar ao mínimo e o punho fletido."
+        ],
+        "erradas": {
+          "B": "Plantar delgado: 2ª opção, outro campo.",
+          "C": "Extensores do pé: alternativa, outro campo.",
+          "D": "Extensor comum: está em uso."
+        },
+        "regra": "Enxerto de flexor =\n[[palmar longo.]]"
+      }
+    }
+  ],
+  "publicacao": [
+    "Story da pergunta: cupom-fiscal-story-01, das 7h às 8h.",
+    "Stories da resposta e do cupom: story-02 e story-03, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão mao-0572 (TARO 2026), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}
