@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
-import { guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano } from '../conta/cronograma'
+import { guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { usarPremium } from '../conta/premium'
+import { usarConta } from '../conta/ContextoConta'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -78,7 +79,14 @@ export function PlanoEstudo() {
   const [respondidasReais] = usarArmazenado<Respondidas>('respondidas', {})
   const respondidas = useMemo(() => (DEMO && indice ? respondidasDemo(indice) : respondidasReais), [respondidasReais, indice])
   const { sessao, iniciar } = usarSessao()
-  const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
+  const salvoNoServidor = usarPlanoSalvo(premium && !DEMO)
+  const [planoDemo_, definirPlanoDemo] = useState<PlanoSalvo | null>(() => (DEMO ? planoDemo() : null))
+  const plano = DEMO ? planoDemo_ : salvoNoServidor.plano
+  const definirPlano = DEMO ? definirPlanoDemo : salvoNoServidor.definirPlano
+  const { status } = usarConta()
+  // Antes do primeiro sync as respostas deste aparelho podem estar atrasadas:
+  // nada que dependa delas é gravado no plano compartilhado até lá.
+  const sincronizado = DEMO || (status.pronto && status.pendentes === 0)
   const [editando, definirEditando] = useState(false)
   const [erro, definirErro] = useState('')
   const [salvandoOpcoes, definirSalvandoOpcoes] = useState(false)
@@ -86,26 +94,25 @@ export function PlanoEstudo() {
   const [feitosDia, definirFeitosDia] = usarArmazenado<FeitosDoDia>('cronograma:dia', { data: '' })
   const { ritmo } = usarRitmoRevisao()
 
+  // Sem plano no servidor, abre direto o formulário (só na primeira leitura).
+  const primeiraLeitura = useRef(true)
   useEffect(() => {
-    if (!premium) { definirPlano(null); return }
-    if (DEMO) { definirPlano(planoDemo()); return }
-    let vivo = true
-    obterPlano()
-      .then((p) => { if (vivo) { definirPlano(p); definirEditando(!p) } })
-      .catch(() => { if (vivo) { definirPlano(null); definirErro('Não foi possível carregar seu cronograma. Confira a conexão.') } })
-    return () => { vivo = false }
-  }, [premium])
+    if (plano === undefined || !primeiraLeitura.current) return
+    primeiraLeitura.current = false
+    if (!plano) definirEditando(true)
+  }, [plano])
+  useEffect(() => {
+    if (salvoNoServidor.falhou && !plano) definirErro('Não foi possível carregar seu cronograma. Confira a conexão.')
+  }, [salvoNoServidor.falhou, plano])
 
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
   useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
   // Fez além da meta hoje: guarda o dia (e a meta dele), para amanhã a meta já vir mais leve.
   const extraHoje = calculo?.extraHoje ?? 0
   useEffect(() => {
-    if (DEMO || !plano || !calculo || !extraHoje || !opcoesComAdiantamento(plano, calculo)) return
-    let vivo = true
-    guardarAdiantamento(plano, calculo).then((p) => { if (vivo && p) definirPlano(p) })
-    return () => { vivo = false }
-  }, [plano, extraHoje]) // eslint-disable-line react-hooks/exhaustive-deps
+    if (DEMO || !sincronizado || !plano || !calculo || !extraHoje || !opcoesComAdiantamento(plano, calculo)) return
+    guardarAdiantamento(calculo).catch(() => undefined)
+  }, [plano, extraHoje, sincronizado]) // eslint-disable-line react-hooks/exhaustive-deps
   // Vindo do fim da sessão ("adiantar"): rola até o painel.
   const irAoAdiantar = typeof location !== 'undefined' && location.hash.includes('adiantar=1')
   useEffect(() => {
@@ -187,8 +194,8 @@ export function PlanoEstudo() {
     definirPlano(novo)
     if (calculo.faltaHoje === 0) comecarHoje(calcularPlano(indice, respondidas, novo), novo)
     if (DEMO || !opcoes) return
-    definirSalvandoOpcoes(true)
-    try { const salvo = await guardarAdiantamento(plano, calculo, pedido); if (salvo && calculo.faltaHoje > 0) definirPlano(salvo) } finally { definirSalvandoOpcoes(false) }
+    definirSalvandoOpcoes(true); definirErro('')
+    try { await guardarAdiantamento(calculo, pedido) } catch { definirPlano(plano); definirErro('Não foi possível salvar o adiantamento agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
   }
 
   /** Cancela o que foi pedido e ainda não foi feito (o que já foi feito a mais continua valendo). */
@@ -198,8 +205,8 @@ export function PlanoEstudo() {
     if (!opcoes) return
     definirPlano({ ...plano, opcoes })
     if (DEMO) return
-    definirSalvandoOpcoes(true)
-    try { const salvo = await guardarAdiantamento(plano, calculo, 0); if (salvo) definirPlano(salvo) } finally { definirSalvandoOpcoes(false) }
+    definirSalvandoOpcoes(true); definirErro('')
+    try { await guardarAdiantamento(calculo, 0) } catch { definirPlano(plano); definirErro('Não foi possível cancelar agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
   }
 
   function marcarFeito(chave: keyof Omit<FeitosDoDia, 'data'>) {
@@ -212,13 +219,15 @@ export function PlanoEstudo() {
     const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
     const seg = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
     const chave = `${seg.getFullYear()}-${String(seg.getMonth() + 1).padStart(2, '0')}-${String(seg.getDate()).padStart(2, '0')}`
-    const atuais = (plano.opcoes?.semanasDificeis ?? []).filter((s) => s >= chave)
-    const opcoes = { ...(plano.opcoes ?? {}), semanasDificeis: ativar ? [...new Set([...atuais, chave])] : atuais.filter((s) => s !== chave) }
+    const alternarSemana = (p: PlanoSalvo) => {
+      const atuais = (p.opcoes?.semanasDificeis ?? []).filter((s) => s >= chave)
+      return { ...(p.opcoes ?? {}), semanasDificeis: ativar ? [...new Set([...atuais, chave])] : atuais.filter((s) => s !== chave) }
+    }
     definirSalvandoOpcoes(true); definirErro('')
     // Mostra na hora; o servidor confirma em seguida.
-    definirPlano({ ...plano, opcoes })
+    definirPlano({ ...plano, opcoes: alternarSemana(plano) })
     if (DEMO) { definirSalvandoOpcoes(false); return }
-    try { const salvo = await salvarOpcoes(plano, opcoes); if (salvo) definirPlano(salvo) } catch { definirErro('Não foi possível salvar agora. A semana difícil ficou só neste aparelho.') } finally { definirSalvandoOpcoes(false) }
+    try { await salvarOpcoes(alternarSemana) } catch { definirPlano(plano); definirErro('Não foi possível salvar a semana difícil agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
   }
 
   const hub = montarHub()
@@ -560,6 +569,8 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const [salvando, definirSalvando] = useState(false)
   const [erro, definirErro] = useState('')
   const [passo, definirPasso] = useState(0)
+  const { status } = usarConta()
+  const sincronizado = !!previa || (status.pronto && status.pendentes === 0)
   const dataValida = /^\d{4}-\d{2}-\d{2}$/.test(data) && dataLocal(data) > new Date()
   const minutos = useMemo(() => minutosPorQuestao(lerHistorico()), [])
   const areas = useMemo(() => indice.temas.map((t) => ({ slug: t.slug, nome: t.nome })).filter((t) => posicaoDaArea(t.slug) !== null || indice.questoes.some((q) => indice.temas[q.t]?.slug === t.slug && !q.ar)), [indice])
@@ -590,11 +601,19 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
       aoSalvar({ data_prova: data, intensidade, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: opcoes() })
       return
     }
+    // A contagem do plano parte das respostas deste aparelho: se ele ainda não
+    // recebeu as dos outros, a base sairia baixa para sempre, em todos eles.
+    if (!sincronizado) { definirErro('Aguarde alguns segundos: seu progresso ainda está sincronizando.'); return }
     definirSalvando(true); definirErro('')
     try {
+      // Relê o plano: outro aparelho pode ter adiantado o dia ou marcado a semana difícil.
+      const fresco = atual ? await obterPlano() : null
       // Trocar a escolha dos simulados muda o tamanho do acervo do plano: a contagem recomeça.
-      const mudouSimulados = !!atual && incluiSimulados(atual) !== simulados
-      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: !atual || recomecar || mudouSimulados }, simulados, opcoes())
+      const mudouSimulados = !!fresco && incluiSimulados(fresco) !== simulados
+      const recomecando = !fresco || recomecar || mudouSimulados
+      const anteriores = opcoesDe(fresco)
+      const novasOpcoes: OpcoesPlano = { ...opcoes(), semanasDificeis: anteriores.semanasDificeis, ...(recomecando ? {} : { adiantados: anteriores.adiantados }) }
+      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: recomecando }, simulados, novasOpcoes)
       if (!salvo) throw new Error('Plano não encontrado depois de salvar.')
       aoSalvar(salvo, diagnostico)
     } catch (falha) {

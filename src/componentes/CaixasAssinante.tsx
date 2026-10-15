@@ -1,11 +1,12 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { usarPremium } from '../conta/premium'
-import { guardarAdiantamento, obterPlano, opcoesComAdiantamento } from '../conta/cronograma'
+import { usarConta } from '../conta/ContextoConta'
+import { guardarAdiantamento, opcoesComAdiantamento, usarPlanoSalvo } from '../conta/cronograma'
 import { NovidadeSimulados } from './NovidadeSimulados'
 import { usarIndice } from '../dados/usarIndice'
 import { TOP_ASSUNTOS, areaPorId } from '../dados/incidencia'
-import { calcularPlano, type CalculoPlano, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, type CalculoPlano } from '../dados/planoEstudo'
 import { recurso } from '../config'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
@@ -16,34 +17,30 @@ import { Icone } from './Icone'
 import { Degustacao, SeloAssinante } from './Premium'
 import { NivelCobranca } from './NivelCobranca'
 
-/** Cronograma do assinante e o dia de hoje. Lido uma vez no início: a meta
+/** Cronograma do assinante e o dia de hoje (relido ao voltar para a aba): a meta
  * vira a ação principal do topo, e a caixa do cronograma só aparece para quem
  * ainda não montou o seu (ou não assina). */
 export function usarCronogramaHoje() {
   const { premium, logado } = usarPremium()
   const { indice } = usarIndice()
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
-  const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
+  const { plano, definirPlano } = usarPlanoSalvo(premium)
+  const { status } = usarConta()
+  const sincronizado = status.pronto && status.pendentes === 0
   const [sessaoLocal] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
   const pendente = sessaoLocal && !sessaoLocal.concluidaEm && sessaoLocal.origem === 'cronograma' && Object.keys(sessaoLocal.respostas).length < sessaoLocal.ids.length
     ? { feitas: Object.keys(sessaoLocal.respostas).length, total: sessaoLocal.ids.length } : null
 
-  useEffect(() => {
-    if (!premium) { definirPlano(null); return }
-    let vivo = true
-    obterPlano().then((p) => { if (vivo) definirPlano(p) }).catch(() => { if (vivo) definirPlano(null) })
-    return () => { vivo = false }
-  }, [premium])
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
   useEffect(() => { if (premium) conferirMetaCronograma(calculo) }, [premium, calculo])
   // Fez além da meta hoje: guarda o dia, para amanhã a meta já vir mais leve.
   const extra = calculo?.extraHoje ?? 0
+  // Só depois da sincronização: antes dela as respostas deste aparelho podem
+  // estar atrasadas e a meta de hoje sairia errada para todos os aparelhos.
   useEffect(() => {
-    if (!premium || !plano || !calculo || !extra || !opcoesComAdiantamento(plano, calculo)) return
-    let vivo = true
-    guardarAdiantamento(plano, calculo).then((p) => { if (vivo && p) definirPlano(p) })
-    return () => { vivo = false }
-  }, [premium, plano, extra]) // eslint-disable-line react-hooks/exhaustive-deps
+    if (!premium || !sincronizado || !plano || !calculo || !extra || !opcoesComAdiantamento(plano, calculo)) return
+    guardarAdiantamento(calculo).catch(() => undefined)
+  }, [premium, sincronizado, plano, extra]) // eslint-disable-line react-hooks/exhaustive-deps
   return { premium, logado, calculo: premium ? calculo : null, pendente, plano: premium ? plano : null, definirPlano }
 }
 export type CronogramaHoje = ReturnType<typeof usarCronogramaHoje>
