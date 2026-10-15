@@ -115,6 +115,92 @@
    "fonte": "250ff4a3ba11"
   },
   {
+   "id": "fc-ombro-cotovelo-0006-ar1",
+   "questao": "ombro-cotovelo-0006",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No ombro com rotura grande e irreparável do manguito, pode-se ressecar o ligamento coracoacromial para abrir espaço?",
+   "resposta": "não se deve ressecar",
+   "explicacao": "**Não:** o arco coracoacromial é o último freio da cabeça; ressecá-lo ou fazer acromioplastia extensa pode provocar o **escape anterossuperior**.",
+   "opcoes": [
+    "não se deve ressecar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "504851d49b58",
+   "origem": "autoral",
+   "trecho": "**não se deve ressecar o ligamento coracoacromial** nem fazer uma acromioplastia extensa",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0006-co1",
+   "questao": "ombro-cotovelo-0006",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento glenoumeral limita a descida da cabeça com o braço junto ao corpo?",
+   "resposta": "glenoumeral superior",
+   "explicacao": "**Glenoumeral superior:** freio da descida em adução. O **médio** limita a translação anterior em abdução moderada.",
+   "opcoes": [
+    "glenoumeral superior",
+    "glenoumeral médio",
+    "coracoumeral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "504851d49b58",
+   "origem": "autoral",
+   "trecho": "O ligamento glenoumeral superior limita a descida da cabeça com o braço junto ao corpo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0006-pc1",
+   "questao": "ombro-cotovelo-0006",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento, do coracoide ao úmero, reforça o intervalo rotador e limita a rotação externa com o braço junto ao corpo?",
+   "resposta": "coracoumeral",
+   "explicacao": "**Coracoumeral:** limita a rotação externa em adução; sua retração trava a rotação externa no **ombro congelado**.",
+   "opcoes": [
+    "coracoumeral",
+    "coracoacromial",
+    "glenoumeral médio",
+    "glenoumeral superior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "504851d49b58",
+   "origem": "autoral",
+   "trecho": "O ligamento coracoumeral, do coracoide ao úmero, reforça a cápsula na região do intervalo rotador e limita a rotação externa com o braço junto ao corpo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0006-q",
    "questao": "ombro-cotovelo-0006",
    "area": "Ombro e cotovelo",
@@ -1445,6 +1531,119 @@
    }
   },
   {
+   "id": "fc-ombro-cotovelo-0057-cl1",
+   "questao": "ombro-cotovelo-0057",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Goutallier, qual grau tem gordura e músculo em quantidades iguais?",
+   "resposta": "3",
+   "explicacao": "**Goutallier 3:** meio a meio. A partir do **3**, o reparo tende a falhar.",
+   "opcoes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "945d3dd24e1b",
+   "origem": "autoral",
+   "trecho": "**Grau 3**: gordura e músculo em **quantidades iguais**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0057-co1",
+   "questao": "ombro-cotovelo-0057",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para a rotura irreparável do subescapular, qual transferência muscular é indicada?",
+   "resposta": "peitoral maior",
+   "explicacao": "Subescapular irreparável: transferência do **peitoral maior**.",
+   "opcoes": [
+    "peitoral maior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "945d3dd24e1b",
+   "origem": "autoral",
+   "trecho": "Para o subescapular irreparável, a transferência indicada é a do **peitoral maior**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0057-co2",
+   "questao": "ombro-cotovelo-0057",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual sinal mostra a atrofia do supraespinal quando ele não cruza a linha entre o coracoide e a espinha da escápula?",
+   "resposta": "sinal da tangente",
+   "explicacao": "**Sinal da tangente:** atrofia do supraespinal; também se usa a classificação de **Thomazeau**.",
+   "opcoes": [
+    "sinal da tangente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "945d3dd24e1b",
+   "origem": "autoral",
+   "trecho": "a **atrofia** é medida pelo sinal da tangente (o supraespinal não cruza a linha entre o coracoide e a espinha)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0057-pc1",
+   "questao": "ombro-cotovelo-0057",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No manguito, Goutallier gradua a gordura e Thomazeau, a atrofia. Qual classificação mede a retração do tendão?",
+   "resposta": "Patte",
+   "explicacao": "**Patte:** retração. **Goutallier:** infiltração gordurosa. **Thomazeau** e sinal da tangente: atrofia.",
+   "opcoes": [
+    "Patte",
+    "Goutallier",
+    "Thomazeau"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "945d3dd24e1b",
+   "origem": "autoral",
+   "trecho": "a **retração** do tendão, pela classificação de Patte.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0057-q",
    "questao": "ombro-cotovelo-0057",
    "area": "Ombro e cotovelo",
@@ -2032,6 +2231,90 @@
    "fonte": "d94ee00fb2a7"
   },
   {
+   "id": "fc-ombro-cotovelo-0082-co1",
+   "questao": "ombro-cotovelo-0082",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além do deltoide não funcionante, a lesão de qual nervo contraindica a prótese reversa do ombro?",
+   "resposta": "nervo axilar",
+   "explicacao": "A reversa depende do **deltoide**; deltoide não funcionante ou lesão do **nervo axilar** a contraindicam.",
+   "opcoes": [
+    "nervo axilar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "79b1dc92cf9d",
+   "origem": "autoral",
+   "trecho": "**deltoide não funcionante** ou lesão do **nervo axilar** contraindicam a reversa.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0082-co2",
+   "questao": "ombro-cotovelo-0082",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Artropatia do manguito com derrame volumoso, às vezes hemorrágico, ligado a cristais de hidroxiapatita: qual é o nome?",
+   "resposta": "ombro de Milwaukee",
+   "explicacao": "**Ombro de Milwaukee:** derrame volumoso, às vezes hemorrágico, com cristais de **hidroxiapatita**.",
+   "opcoes": [
+    "ombro de Milwaukee"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "79b1dc92cf9d",
+   "origem": "autoral",
+   "trecho": "(o \"ombro de Milwaukee\", ligado a cristais de hidroxiapatita)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0082-co3",
+   "questao": "ombro-cotovelo-0082",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama o quadro em que o paciente não eleva o braço ativamente, mas o examinador consegue elevá-lo?",
+   "resposta": "pseudoparalisia",
+   "explicacao": "**Pseudoparalisia:** típica da artropatia do manguito; o movimento passivo está preservado.",
+   "opcoes": [
+    "pseudoparalisia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "79b1dc92cf9d",
+   "origem": "autoral",
+   "trecho": "**pseudoparalisia**: o paciente não eleva o braço ativamente, embora o examinador consiga elevá-lo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0084-q",
    "questao": "ombro-cotovelo-0084",
    "area": "Ombro e cotovelo",
@@ -2111,6 +2394,60 @@
    "prova": "TEOT/TARO",
    "ano": null,
    "fonte": "19986a7f77e6"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0088-co1",
+   "questao": "ombro-cotovelo-0088",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além do diabetes, qual hábito do paciente pesa muito na falha do reparo do manguito?",
+   "resposta": "tabagismo",
+   "explicacao": "O **tabagismo**: a nicotina contrai os vasos e atrapalha as células que reparam o tendão.",
+   "opcoes": [
+    "tabagismo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "3dd1d94c3cf9",
+   "origem": "autoral",
+   "trecho": "O **tabagismo** também pesa muito",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0088-co2",
+   "questao": "ombro-cotovelo-0088",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que a osteoporose aumenta o risco de falha do reparo do manguito rotador?",
+   "resposta": "as âncoras seguram mal no osso fraco",
+   "explicacao": "Na **osteoporose**, **as âncoras seguram mal** no osso fraco.",
+   "opcoes": [
+    "as âncoras seguram mal no osso fraco"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "3dd1d94c3cf9",
+   "origem": "autoral",
+   "trecho": "osteoporose (as âncoras seguram mal no osso fraco)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0088-q",
@@ -3320,6 +3657,169 @@
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
    "fonte": "2bdd8327fe91"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0185-cl1",
+   "questao": "ombro-cotovelo-0185",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação artroscópica de Snyder, o que indica a letra C?",
+   "resposta": "lesão completa",
+   "explicacao": "**A:** articular. **B:** bursal. **C:** **lesão completa** (transfixante).",
+   "opcoes": [
+    "lesão completa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "a763326872a1",
+   "origem": "autoral",
+   "trecho": "**C** para a lesão completa (transfixante)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0185-cl2",
+   "questao": "ombro-cotovelo-0185",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Snyder, qual é a extensão da lesão parcial grau 1, só irritação superficial?",
+   "resposta": "menor que 1 cm",
+   "explicacao": "**Grau 1:** **menor que 1 cm**. 2: menor que 2 cm. 3: menor que 3 cm. 4: retalho grande.",
+   "opcoes": [
+    "menor que 1 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "a763326872a1",
+   "origem": "autoral",
+   "trecho": "**Grau 1**: irritação sinovial ou capsular superficial, área pequena, **menor que 1 cm**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0185-cl3",
+   "questao": "ombro-cotovelo-0185",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Snyder, qual achado define a lesão parcial grau 4?",
+   "resposta": "retalho",
+   "explicacao": "**Grau 4:** lesão parcial muito grave, com **retalho** (flap) grande, muitas vezes de mais de um tendão.",
+   "opcoes": [
+    "retalho"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "a763326872a1",
+   "origem": "autoral",
+   "trecho": "**Grau 4**: lesão parcial muito grave, com **retalho** (flap) grande",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0185-cl4",
+   "questao": "ombro-cotovelo-0185",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Snyder, desgaste e fragmentação de toda uma face do tendão, com que extensão máxima, é grau 3?",
+   "resposta": "menor que 3 cm",
+   "explicacao": "**Grau 3:** fragmentação extensa, **menor que 3 cm**.",
+   "opcoes": [
+    "menor que 3 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "a763326872a1",
+   "origem": "autoral",
+   "trecho": "**Grau 3**: desgaste e fragmentação mais extensos, muitas vezes de toda uma face do tendão, **menor que 3 cm**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0185-co1",
+   "questao": "ombro-cotovelo-0185",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O que significa a sigla PASTA na lesão parcial do manguito?",
+   "resposta": "avulsão parcial da face articular do supraespinal",
+   "explicacao": "**PASTA:** **avulsão parcial da face articular do supraespinal**, comum em arremessadores.",
+   "opcoes": [
+    "avulsão parcial da face articular do supraespinal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "a763326872a1",
+   "origem": "autoral",
+   "trecho": "**PASTA** (avulsão parcial da face articular do supraespinal)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0185-pc1",
+   "questao": "ombro-cotovelo-0185",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ellman gradua a lesão parcial do manguito pela profundidade. Snyder a gradua por qual critério?",
+   "resposta": "extensão",
+   "explicacao": "**Snyder:** **extensão** (1 cm, 2 cm, 3 cm, flap). **Ellman:** profundidade (3 mm, 6 mm).",
+   "opcoes": [
+    "extensão",
+    "profundidade"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "a763326872a1",
+   "origem": "autoral",
+   "trecho": "Snyder gradua a lesão parcial por **extensão** (1 cm, 2 cm, 3 cm, flap); Ellman, por **profundidade** (3 mm, 6 mm).",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0185-q",
@@ -6787,6 +7287,117 @@
    "fonte": "31c8892e0088"
   },
   {
+   "id": "fc-ombro-cotovelo-0387-cl1",
+   "questao": "ombro-cotovelo-0387",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Goutallier, qual grau tem gordura evidente, mas ainda menos gordura que músculo?",
+   "resposta": "2",
+   "explicacao": "**Goutallier 2:** **menos gordura que músculo**. 3: igual. 4: mais gordura que músculo.",
+   "opcoes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d76a55eff4f9",
+   "origem": "autoral",
+   "trecho": "**Grau 2**: gordura evidente, mas **menos gordura que músculo**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0387-co1",
+   "questao": "ombro-cotovelo-0387",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que corte da tomografia ou ressonância se gradua a infiltração gordurosa de Goutallier?",
+   "resposta": "sagital oblíquo em Y",
+   "explicacao": "**Sagital oblíquo em Y:** o corte mais lateral em que a espinha encontra o corpo da escápula.",
+   "opcoes": [
+    "sagital oblíquo em Y"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d76a55eff4f9",
+   "origem": "autoral",
+   "trecho": "no corte **sagital oblíquo em Y**, o mais lateral em que a espinha encontra o corpo da escápula.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0387-co2",
+   "questao": "ombro-cotovelo-0387",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Goutallier descreveu a infiltração gordurosa na tomografia. Quem a adaptou para a ressonância?",
+   "resposta": "Fuchs",
+   "explicacao": "Descrita na **tomografia** e adaptada à ressonância por **Fuchs**.",
+   "opcoes": [
+    "Fuchs"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d76a55eff4f9",
+   "origem": "autoral",
+   "trecho": "Descritos na **tomografia** e adaptados à ressonância (Fuchs)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0387-co3",
+   "questao": "ombro-cotovelo-0387",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após a ruptura do supraespinal, em quanto tempo costuma surgir a infiltração gordurosa grau 2 de Goutallier?",
+   "resposta": "cerca de 3 anos",
+   "explicacao": "A gordura aparece meses após a ruptura; o **grau 2** costuma surgir em **cerca de 3 anos**. Não adiar o reparo nos jovens.",
+   "opcoes": [
+    "cerca de 3 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d76a55eff4f9",
+   "origem": "autoral",
+   "trecho": "o grau 2 do supraespinal costuma surgir em cerca de 3 anos",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0387-q",
    "questao": "ombro-cotovelo-0387",
    "area": "Ombro e cotovelo",
@@ -8403,6 +9014,90 @@
    }
   },
   {
+   "id": "fc-ombro-cotovelo-0452-cl1",
+   "questao": "ombro-cotovelo-0452",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do bíceps",
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual classificação, modificada por Bak, divide a ruptura do peitoral maior em contusão, lesões parciais e completas?",
+   "resposta": "Tietjen",
+   "explicacao": "**Tietjen** (modificada por Bak): contusão, parcial e completa, pela localização.",
+   "opcoes": [
+    "Tietjen"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71b3c682de4a",
+   "origem": "autoral",
+   "trecho": "A classificação de **Tietjen**, modificada por Bak, divide em contusão, lesões parciais e completas",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0452-co1",
+   "questao": "ombro-cotovelo-0452",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do bíceps",
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a lesão mais comum na ruptura do peitoral maior?",
+   "resposta": "avulsão do tendão",
+   "explicacao": "**Avulsão do tendão** na inserção umeral, em contração excêntrica no supino.",
+   "opcoes": [
+    "avulsão do tendão"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71b3c682de4a",
+   "origem": "autoral",
+   "trecho": "A lesão mais comum é a **avulsão do tendão** na inserção umeral.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0452-co2",
+   "questao": "ombro-cotovelo-0452",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do bíceps",
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se insere o tendão do peitoral maior no úmero?",
+   "resposta": "lábio lateral do sulco intertubercular",
+   "explicacao": "**Lábio lateral do sulco intertubercular**, com fibras torcidas: as inferiores vão mais alto.",
+   "opcoes": [
+    "lábio lateral do sulco intertubercular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71b3c682de4a",
+   "origem": "autoral",
+   "trecho": "o tendão se insere no **lábio lateral** do sulco intertubercular",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0452-q",
    "questao": "ombro-cotovelo-0452",
    "area": "Ombro e cotovelo",
@@ -8710,6 +9405,382 @@
    "fonte": "b070cae0c488"
   },
   {
+   "id": "fc-ombro-cotovelo-0468-ar1",
+   "questao": "ombro-cotovelo-0468",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artropatia do manguito rotador, para onde se desloca a cabeça umeral?",
+   "resposta": "superior",
+   "explicacao": "A cabeça **não subluxa inferiormente**: o deltoide sem oposição a puxa para **cima**. Subluxação inferior é do ombro paralítico.",
+   "opcoes": [
+    "superior",
+    "inferior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "1dcb758a8483",
+   "origem": "autoral",
+   "trecho": "A cabeça **não subluxa inferiormente**: o deslocamento é **superior**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0468-cl1",
+   "questao": "ombro-cotovelo-0468",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Hamada da artropatia do manguito, qual grau tem intervalo acromioumeral de 5 mm ou menos?",
+   "resposta": "2",
+   "explicacao": "**Hamada 1:** intervalo de 6 mm ou mais. **2:** **5 mm ou menos**. **3:** acetabularização. **4:** estreitamento glenoumeral. **5:** colapso.",
+   "opcoes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "1dcb758a8483",
+   "origem": "autoral",
+   "trecho": "| 2 | Intervalo de 5 mm ou menos |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0468-cl2",
+   "questao": "ombro-cotovelo-0468",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Hamada da artropatia do manguito, qual grau corresponde à acetabularização do acrômio?",
+   "resposta": "3",
+   "explicacao": "**Hamada 3:** **acetabularização** do acrômio, que se amolda à cabeça (sinal da sobrancelha).",
+   "opcoes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "1dcb758a8483",
+   "origem": "autoral",
+   "trecho": "| 3 | Acetabularização do acrômio |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0468-cl3",
+   "questao": "ombro-cotovelo-0468",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Hamada da artropatia do manguito, qual grau é o colapso da cabeça umeral?",
+   "resposta": "5",
+   "explicacao": "**Hamada 5:** **colapso da cabeça umeral**, o último estágio.",
+   "opcoes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "1dcb758a8483",
+   "origem": "autoral",
+   "trecho": "| 5 | Colapso da cabeça umeral |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0468-cl4",
+   "questao": "ombro-cotovelo-0468",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No grau 4 de Hamada (estreitamento glenoumeral), o que o subtipo 4B tem que o 4A não tem?",
+   "resposta": "acetabularização",
+   "explicacao": "**4A:** estreitamento glenoumeral **sem** acetabularização; **4B:** **com** acetabularização.",
+   "opcoes": [
+    "acetabularização"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "1dcb758a8483",
+   "origem": "autoral",
+   "trecho": "| 4 | Estreitamento glenoumeral (4A sem, 4B com acetabularização) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0468-co1",
+   "questao": "ombro-cotovelo-0468",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o tratamento de escolha na artropatia do manguito rotador sintomática?",
+   "resposta": "artroplastia reversa",
+   "explicacao": "A **reversa** medializa e abaixa o centro de rotação e devolve ao deltoide a capacidade de elevar o braço.",
+   "opcoes": [
+    "artroplastia reversa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "1dcb758a8483",
+   "origem": "autoral",
+   "trecho": "a **artroplastia reversa** é o tratamento de escolha nos sintomáticos",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0468-pc1",
+   "questao": "ombro-cotovelo-0468",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artropatia do manguito, o acrômio que se amolda à cabeça é a acetabularização. Como se chama a cabeça arredondada com a tuberosidade maior gasta?",
+   "resposta": "Femoralização",
+   "explicacao": "**Femoralização:** a cabeça fica com aspecto de cabeça femoral. **Acetabularização:** o acrômio vira um \"acetábulo\".",
+   "opcoes": [
+    "Femoralização",
+    "Acetabularização"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "1dcb758a8483",
+   "origem": "autoral",
+   "trecho": "- **Femoralização**: a cabeça se arredonda e a tuberosidade maior se desgasta, com aspecto de cabeça femoral.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0481-co1",
+   "questao": "ombro-cotovelo-0481",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Fraturas do úmero proximal e da escápula"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No reparo da rotura retraída, o avanço lateral do supraespinal além de quanto já tensiona o nervo supraescapular?",
+   "resposta": "1 cm",
+   "explicacao": "Os ramos motores curtos ancoram o músculo: avanço de mais de cerca de **1 cm** já tensiona o nervo.",
+   "opcoes": [
+    "1 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "fc7ca23104ca",
+   "origem": "autoral",
+   "trecho": "o avanço lateral do tendão de mais de cerca de **1 cm** já tensiona o nervo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0481-co2",
+   "questao": "ombro-cotovelo-0481",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Fraturas do úmero proximal e da escápula"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na incisura supraescapular, a que distância da borda superior da glenoide passa o nervo supraescapular?",
+   "resposta": "2 a 3 cm",
+   "explicacao": "**2 a 3 cm** da borda superior; **1,5 a 2 cm** da borda posterior (incisura espinoglenoidal).",
+   "opcoes": [
+    "2 a 3 cm",
+    "1,5 a 2 cm"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "fc7ca23104ca",
+   "origem": "autoral",
+   "trecho": "Fica a cerca de **2 a 3 cm** da borda superior da glenoide (incisura supraescapular)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0481-co3",
+   "questao": "ombro-cotovelo-0481",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Fraturas do úmero proximal e da escápula"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na liberação capsular do lado articular para mobilizar o manguito, até onde se pode ir medialmente à glenoide?",
+   "resposta": "cerca de 1 cm",
+   "explicacao": "Não ultrapassar **cerca de 1 cm** medial à borda da glenoide, para poupar o nervo supraescapular.",
+   "opcoes": [
+    "cerca de 1 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "fc7ca23104ca",
+   "origem": "autoral",
+   "trecho": "Liberar a cápsula no lado articular sem ultrapassar cerca de 1 cm medial à borda da glenoide.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0492-co1",
+   "questao": "ombro-cotovelo-0492",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Peitoral maior e outras rupturas tendíneas",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Peitoral maior e outras rupturas tendíneas"
+   ],
+   "tipo": "Conceito",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Em que exercício e em que fase o peitoral maior rompe classicamente?",
+   "resposta": "descida do supino",
+   "explicacao": "Contração excêntrica na **descida do supino** com carga alta, em homens de 20 a 40 anos.",
+   "opcoes": [
+    "descida do supino"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "0c10f26dda13",
+   "origem": "autoral",
+   "trecho": "classicamente na fase de descida do **supino** com carga alta",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0492-co2",
+   "questao": "ombro-cotovelo-0492",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Peitoral maior e outras rupturas tendíneas",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Peitoral maior e outras rupturas tendíneas"
+   ],
+   "tipo": "Conceito",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na ruptura do peitoral maior, qual contorno do tórax se perde, sobretudo com adução resistida?",
+   "resposta": "prega axilar anterior",
+   "explicacao": "Perda do contorno da **prega axilar anterior**, com equimose e fraqueza de adução e rotação medial.",
+   "opcoes": [
+    "prega axilar anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "0c10f26dda13",
+   "origem": "autoral",
+   "trecho": "perda do contorno da prega axilar anterior (acentuada com adução resistida)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0492-tb1",
+   "questao": "ombro-cotovelo-0492",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Peitoral maior e outras rupturas tendíneas",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Peitoral maior e outras rupturas tendíneas"
+   ],
+   "tipo": "Tabela",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Ruptura do peitoral maior no ventre muscular: qual é o tratamento usual?",
+   "resposta": "Tratamento conservador",
+   "explicacao": "**Ventre muscular:** conservador. **Avulsão na inserção** (a mais comum): reparo com âncoras, botões ou túneis.",
+   "opcoes": [
+    "Tratamento conservador"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "0c10f26dda13",
+   "origem": "autoral",
+   "trecho": "| Ventre muscular | Tratamento conservador |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0520-q",
    "questao": "ombro-cotovelo-0520",
    "area": "Ombro e cotovelo",
@@ -8901,6 +9972,90 @@
    "fonte": "c908a393c7e2"
   },
   {
+   "id": "fc-ombro-cotovelo-0533-cl1",
+   "questao": "ombro-cotovelo-0533",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Goutallier, qual grau tem apenas algumas estrias de gordura no músculo?",
+   "resposta": "1",
+   "explicacao": "**Goutallier 1:** **algumas estrias**. 0: normal; 2: mais músculo que gordura.",
+   "opcoes": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "18b568b77e5e",
+   "origem": "autoral",
+   "trecho": "| 1 | Algumas estrias de gordura |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0533-cl2",
+   "questao": "ombro-cotovelo-0533",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Retração pequena do supraespinal, perto da inserção: qual é o estágio de Patte?",
+   "resposta": "estágio 1",
+   "explicacao": "**Patte estágio 1:** retração pequena, perto da inserção, favorável ao reparo.",
+   "opcoes": [
+    "estágio 1"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "18b568b77e5e",
+   "origem": "autoral",
+   "trecho": "Retração pequena (estágio 1 de Patte, perto da inserção).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0533-co1",
+   "questao": "ombro-cotovelo-0533",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que faixa de Goutallier é considerada infiltração gordurosa baixa, favorável ao reparo do manguito?",
+   "resposta": "Goutallier 0 a 2",
+   "explicacao": "**0 a 2:** favorável. **3 e 4:** degeneração avançada, mais nova ruptura.",
+   "opcoes": [
+    "Goutallier 0 a 2"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "18b568b77e5e",
+   "origem": "autoral",
+   "trecho": "**Infiltração gordurosa baixa** (Goutallier 0 a 2).",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0534-q",
    "questao": "ombro-cotovelo-0534",
    "area": "Ombro e cotovelo",
@@ -9066,6 +10221,34 @@
    "fonte": "df5d5c9e259c"
   },
   {
+   "id": "fc-ombro-cotovelo-0554-co1",
+   "questao": "ombro-cotovelo-0554",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Artroscopia e vias de acesso do ombro",
+   "subtemas": [
+    "Artroscopia e vias de acesso do ombro",
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No portal de Neviaser, qual nervo passa medialmente e está em risco?",
+   "resposta": "nervo supraescapular",
+   "explicacao": "O **nervo supraescapular** e os vasos passam medialmente; o trocarte vai direcionado para lateral.",
+   "opcoes": [
+    "nervo supraescapular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "d030c73132c2",
+   "origem": "autoral",
+   "trecho": "O nervo supraescapular e os vasos supraescapulares passam medialmente",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0554-q",
    "questao": "ombro-cotovelo-0554",
    "area": "Ombro e cotovelo",
@@ -9092,6 +10275,64 @@
    "prova": "CET-PR",
    "ano": null,
    "fonte": "d030c73132c2"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0554-tb1",
+   "questao": "ombro-cotovelo-0554",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Artroscopia e vias de acesso do ombro",
+   "subtemas": [
+    "Artroscopia e vias de acesso do ombro",
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroscopia do ombro, onde fica o portal posterior, de visualização inicial?",
+   "resposta": "cerca de 2 cm abaixo e 1 cm medial ao ângulo posterolateral do acrômio",
+   "explicacao": "**Posterior:** cerca de **2 cm abaixo e 1 cm medial** ao ângulo posterolateral do acrômio.",
+   "opcoes": [
+    "cerca de 2 cm abaixo e 1 cm medial ao ângulo posterolateral do acrômio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "d030c73132c2",
+   "origem": "autoral",
+   "trecho": "| Posterior | cerca de 2 cm abaixo e 1 cm medial ao ângulo posterolateral do acrômio | visualização inicial da articulação |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0554-tb2",
+   "questao": "ombro-cotovelo-0554",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Artroscopia e vias de acesso do ombro",
+   "subtemas": [
+    "Artroscopia e vias de acesso do ombro",
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual portal da artroscopia do ombro, 2 a 3 cm além da borda do acrômio, serve ao espaço subacromial e ao reparo do manguito?",
+   "resposta": "Lateral",
+   "explicacao": "**Lateral:** espaço subacromial e reparo do manguito. **Anterior:** intervalo dos rotadores.",
+   "opcoes": [
+    "Posterior",
+    "Anterior",
+    "Lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "d030c73132c2",
+   "origem": "autoral",
+   "trecho": "| Lateral | 2 a 3 cm lateral ao acrômio | espaço subacromial; reparo do manguito |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0555-q",
@@ -9148,6 +10389,183 @@
    "prova": "CET-PR",
    "ano": null,
    "fonte": "5d3f22b52210"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0557-cl1",
+   "questao": "ombro-cotovelo-0557",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Ellman da lesão parcial do manguito, o que indica a letra A?",
+   "resposta": "face articular",
+   "explicacao": "**A:** face **articular** (a mais comum). **B:** face bursal. **C:** intratendínea.",
+   "opcoes": [
+    "face articular",
+    "face bursal",
+    "intratendínea"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "e07513213aa0",
+   "origem": "autoral",
+   "trecho": "| A | face articular (a mais comum) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0557-cl2",
+   "questao": "ombro-cotovelo-0557",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Ellman da lesão parcial do manguito, o que indica a letra C?",
+   "resposta": "intratendínea",
+   "explicacao": "**C:** **intratendínea** (intersticial). A: articular; B: bursal.",
+   "opcoes": [
+    "face articular",
+    "face bursal",
+    "intratendínea"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "e07513213aa0",
+   "origem": "autoral",
+   "trecho": "| C | intratendínea (intersticial) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0557-cl3",
+   "questao": "ombro-cotovelo-0557",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Ellman, qual profundidade define a lesão parcial grau I?",
+   "resposta": "menos de 3 mm",
+   "explicacao": "**I:** **menos de 3 mm**. II: 3 a 6 mm. III: mais de 6 mm.",
+   "opcoes": [
+    "menos de 3 mm",
+    "de 3 a 6 mm",
+    "mais de 6 mm"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "e07513213aa0",
+   "origem": "autoral",
+   "trecho": "| I | menos de 3 mm |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0557-cl4",
+   "questao": "ombro-cotovelo-0557",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Ellman, qual profundidade define a lesão parcial grau II?",
+   "resposta": "de 3 a 6 mm",
+   "explicacao": "**II:** **3 a 6 mm**, ainda até cerca da metade do tendão.",
+   "opcoes": [
+    "menos de 3 mm",
+    "de 3 a 6 mm",
+    "mais de 6 mm"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "e07513213aa0",
+   "origem": "autoral",
+   "trecho": "| II | de 3 a 6 mm |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0557-co1",
+   "questao": "ombro-cotovelo-0557",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a espessura aproximada do tendão do supraespinal junto à inserção?",
+   "resposta": "10 a 12 mm",
+   "explicacao": "Cerca de **10 a 12 mm**: por isso mais de 6 mm (Ellman III) já é mais da metade da espessura.",
+   "opcoes": [
+    "10 a 12 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "e07513213aa0",
+   "origem": "autoral",
+   "trecho": "Como o tendão do supraespinal tem cerca de 10 a 12 mm de espessura junto à inserção",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0557-co2",
+   "questao": "ombro-cotovelo-0557",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Imagem do ombro e cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão parcial do manguito, qual face tende a ser reparada com limiar menor de profundidade?",
+   "resposta": "face bursal",
+   "explicacao": "A **face bursal** cicatriza pior e se associa mais ao impacto, por isso o limiar para reparo é menor.",
+   "opcoes": [
+    "face bursal",
+    "face articular"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "e07513213aa0",
+   "origem": "autoral",
+   "trecho": "A face bursal tende a ser reparada com limiar menor de profundidade do que a articular",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0557-q",

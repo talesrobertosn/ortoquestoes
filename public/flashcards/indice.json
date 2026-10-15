@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4617,
- "batalha": 3995,
- "soEstudo": 622,
+ "total": 4667,
+ "batalha": 4014,
+ "soEstudo": 653,
  "comImagem": 630,
  "simulados": 793,
- "autorais": 315,
+ "autorais": 365,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -174,24 +174,29 @@
   "ombro-cotovelo": {
    "nome": "Ombro e cotovelo",
    "arquivo": "ombro-cotovelo.json",
-   "total": 399,
-   "batalha": 379,
+   "total": 449,
+   "batalha": 398,
    "comImagem": 90,
    "simulados": 68,
    "tipos": {
     "Anatomia": 14,
+    "Armadilha": 2,
+    "Classificação": 17,
+    "Conceito": 24,
     "Imagem": 76,
-    "Relâmpago": 309
+    "Par confundível": 4,
+    "Relâmpago": 309,
+    "Tabela": 3
    },
    "assuntos": {
+    "Lesões do manguito rotador": 78,
     "Anatomia do ombro": 55,
     "Instabilidade anterior do ombro": 49,
-    "Lesões do manguito rotador": 34,
     "Omartrose e artroplastia do ombro": 32,
     "Fraturas do úmero proximal e da escápula": 29,
     "Instabilidade do cotovelo": 25,
     "Lesões do bíceps": 22,
-    "Artroscopia e vias de acesso do ombro": 14,
+    "Artroscopia e vias de acesso do ombro": 17,
     "Capsulite adesiva": 12,
     "Epicondilite lateral e medial": 12,
     "Tendinite calcária": 10,
@@ -205,12 +210,12 @@
     "Instabilidade posterior e multidirecional": 8,
     "Lesões SLAP e do lábio superior": 7,
     "Anatomia do cotovelo": 6,
+    "Peitoral maior e outras rupturas tendíneas": 5,
     "Artroscopia do cotovelo": 5,
     "Fraturas do cotovelo e antebraço": 4,
     "Biomecânica do ombro e cotovelo": 3,
     "Impacto subacromial e acromioplastia": 3,
     "Luxação acromioclavicular e esternoclavicular": 2,
-    "Peitoral maior e outras rupturas tendíneas": 2,
     "Ossificação heterotópica": 1,
     "Lesão do subescapular": 1,
     "Osteonecrose da cabeça umeral": 1
@@ -465,5 +470,5 @@
    }
   }
  },
- "assinatura": "d3f2aa97136b"
+ "assinatura": "162ae8faaf49"
 }
