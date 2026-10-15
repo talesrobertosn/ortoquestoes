@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4916,
- "batalha": 4096,
- "soEstudo": 820,
+ "total": 4944,
+ "batalha": 4105,
+ "soEstudo": 839,
  "comImagem": 630,
- "simulados": 846,
- "autorais": 614,
+ "simulados": 874,
+ "autorais": 642,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -347,20 +347,20 @@
   "quadril": {
    "nome": "Quadril",
    "arquivo": "quadril.json",
-   "total": 296,
-   "batalha": 219,
+   "total": 324,
+   "batalha": 228,
    "comImagem": 74,
-   "simulados": 63,
+   "simulados": 91,
    "tipos": {
     "Anatomia": 37,
-    "Conceito": 21,
+    "Conceito": 39,
     "Imagem": 37,
-    "Par confundível": 3,
+    "Par confundível": 7,
     "Relâmpago": 181,
-    "Tabela": 17
+    "Tabela": 23
    },
    "assuntos": {
-    "Anatomia do quadril": 119,
+    "Anatomia do quadril": 147,
     "Artroplastia total: componentes e fixação": 51,
     "Vias de acesso ao quadril": 31,
     "Osteonecrose da cabeça femoral": 13,
@@ -473,5 +473,5 @@
    }
   }
  },
- "assinatura": "7d71bb8d0037"
+ "assinatura": "4ac64b1b51d1"
 }
