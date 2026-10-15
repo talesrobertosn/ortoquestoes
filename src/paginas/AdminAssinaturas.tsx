@@ -12,6 +12,7 @@ import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
 import { AdminLembretes } from '../componentes/admin/AdminLembretes'
 import { AdminRelatorioMensal } from '../componentes/admin/AdminRelatorioMensal'
 import { AdminEmails } from '../componentes/admin/AdminEmails'
+import { AdminCartas } from '../componentes/admin/AdminCartas'
 import { AdminSimulados } from '../componentes/admin/AdminSimulados'
 import { SECOES, abaPadrao, definicaoDe, lerUrl, secaoDe, urlAntiga, urlDe, type Aba, type EstadoUrl, type Secao } from '../componentes/admin/secoes'
 import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
@@ -230,6 +231,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
           {aba === 'usuarios' && (usuarios
             ? <AdminUsuarios usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} />
             : !usuariosQ.erro && <p role="status">Carregando usuários…</p>)}
+          {aba === 'cartas' && <AdminCartas usuarios={usuarios} />}
           {aba === 'crescimento' && <AdminCrescimento usuarios={usuariosReais} assinaturas={reais ?? []} />}
 
           {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}

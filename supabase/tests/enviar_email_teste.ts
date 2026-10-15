@@ -6,7 +6,7 @@ Deno.env.set('SUPABASE_URL', 'https://banco.teste'); Deno.env.set('SUPABASE_ANON
 Deno.env.set('RESEND_API_KEY', 're_teste'); Deno.env.set('EMAIL_REMETENTE', 'OrtoQuestões <contato@ortoquestoes.com.br>'); Deno.env.set('EMAIL_SEGREDO', 'segredo-de-teste-bem-longo')
 
 const ANA = '00000000-0000-0000-0000-00000000000b', ADM = '00000000-0000-0000-0000-00000000000a'
-const estado = { respondidas: 510, quer: true, marcosEnviados: new Set<number>(), enviados: [] as Array<{ to: string[]; subject: string; corpo?: Record<string, unknown> }>, prefs: [] as unknown[], resendFalha: false, linhas: new Map<number, string>(), ultimoErro: '', relatorioEnviado: false, relatorios: [] as unknown[] }
+const estado = { respondidas: 510, quer: true, marcosEnviados: new Set<number>(), enviados: [] as Array<{ to: string[]; subject: string; corpo?: Record<string, unknown> }>, prefs: [] as unknown[], resendFalha: false, linhas: new Map<number, string>(), ultimoErro: '', relatorioEnviado: false, relatorios: [] as unknown[], carta: { quer: true, novidades: false, mesmoTipo: false, h48: 0 }, registros: [] as Array<Record<string, unknown>> }
 globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) => {
   const url = String(entrada), metodo = opcoes.method ?? 'GET'
   const corpo = opcoes.body ? JSON.parse(String(opcoes.body)) : null
@@ -25,10 +25,15 @@ globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) 
     temas: [{ tema: 'joelho', certas: 40, total: 50, certas_ant: 25, total_ant: 40 }, { tema: 'tumores', certas: 8, total: 20, certas_ant: 12, total_ant: 20 }],
     simulado: { titulo: 'Simulado Nacional · Setembro de 2026', acertos: 36, total: 50 } })
   if (url.includes('rpc/emails_administradores')) return j([{ email: 'admin@x.com' }])
+  // Parte 27: travas da carta; o perfil completo responde 404 (como antes de colar o SQL).
+  if (url.includes('rpc/dados_carta_envio')) return j({ email: 'ana@x.com', nome: 'Ana Paula', confirmado: true, novidades: estado.carta.novidades, administrador: false, assinante: false, quer_cartas: estado.carta.quer, mesmo_tipo_30d: estado.carta.mesmoTipo, emails_48h: estado.carta.h48 })
+  if (url.includes('rpc/dados_carta_usuario')) return j({ code: 'PGRST202' }, 404)
+  if (url.includes('emails_enviados?id_usuario=eq.') && metodo === 'GET') return j([])
   if (url.includes('administradores?id_usuario=eq.')) return j(url.includes(ADM) ? [{ id_usuario: ADM }] : [])
   if (url.includes('avaliacoes_comentario')) return j([{ observacao: 'Não entendi a inervação', motivo: 'confuso', atualizado_em: new Date().toISOString() }])
   if (url.includes('emails_enviados?tipo=eq.alerta_admin')) return j([])
   if (url.includes('emails_enviados') && metodo === 'POST') {
+    estado.registros.push(corpo)
     if (corpo.tipo === 'relatorio') { estado.relatorios.push(corpo); return j([{ id: 900 }], 201) }
     if (corpo.tipo === 'marco') { if (estado.marcosEnviados.has(corpo.marco)) return j({ code: '23505' }, 409); estado.marcosEnviados.add(corpo.marco); estado.linhas.set(corpo.marco, corpo.status) }
     if (corpo.status === 'falhou') estado.ultimoErro = corpo.erro
@@ -53,7 +58,8 @@ const confere = (nome: string, ok: boolean, extra: unknown = '') => { console.lo
 
 let r = await chamar('ana', { acao: 'marco' })
 confere('marco 500 enviado', r.dados.resultado === 'enviado' && r.dados.marco === 500 && estado.enviados.length === 1, r)
-confere('assunto do marco', estado.enviados[0]?.subject === 'Ana, você chegou a 500 questões', estado.enviados[0])
+confere('marco sai como carta assinada', !!estado.enviados[0]?.subject && String(estado.enviados[0]?.corpo?.text).includes('500') && String(estado.enviados[0]?.corpo?.text).includes('Um abraço,\nTales, do Orto Questões') && !String(estado.enviados[0]?.corpo?.html).includes('<img'), estado.enviados[0]?.subject)
+confere('marco automático leva List-Unsubscribe', String((estado.enviados[0]?.corpo?.headers as Record<string, string>)?.['List-Unsubscribe']).includes('#/emails'), estado.enviados[0]?.corpo?.headers)
 r = await chamar('ana', { acao: 'marco' })
 confere('segundo pedido não duplica', r.dados.resultado === 'ja_enviado' && estado.enviados.length === 1, r)
 estado.respondidas = 900
@@ -76,9 +82,9 @@ confere('admin manda parabéns', r.dados.resultado === 'enviado' && estado.envia
 {
   const carta = estado.enviados[2]
   confere('parabéns sai como carta pessoal', carta.subject === 'Ana, um recado sobre o seu estudo' && !String(carta.corpo?.html).includes('Emblema desbloqueado') && String(carta.corpo?.text).startsWith('Oi, Ana,'), carta.subject)
-  confere('carta sem cabeçalho de envio em massa, com descadastro no rodapé', !carta.corpo?.headers && String(carta.corpo?.html).includes('Descadastrar'), carta.corpo?.headers)
+  confere('carta pessoal sem cabeçalho de envio em massa nem rodapé', !carta.corpo?.headers && !String(carta.corpo?.html).includes('clicar aqui') && String(carta.corpo?.text).endsWith('Um abraço,\nTales, do Orto Questões'), carta.corpo?.headers)
   const cartao = await chamar('adm', { acao: 'previa', id_usuario: ANA, formato: 'cartao' })
-  confere('formato cartão mantém o emblema', cartao.dados.html.includes('Emblema desbloqueado') && cartao.dados.assunto.startsWith('Ana, você chegou a'), cartao.dados.assunto)
+  confere('o antigo cartão com emblema também vira carta', !cartao.dados.html.includes('<img') && cartao.dados.assunto === 'Ana, um recado sobre o seu estudo', cartao.dados.assunto)
   const semRecado = await chamar('adm', { acao: 'previa', id_usuario: ANA })
   confere('carta sem recado tem texto padrão', semRecado.dados.html.includes('Passando para te dar parabéns'), '')
 }
@@ -108,7 +114,7 @@ estado.resendFalha = false
 r = await chamar('ana', { acao: 'relatorios_mensais', mes: '2026-09' })
 confere('não admin não dispara relatórios', r.status === 403, r)
 r = await chamar('adm', { acao: 'previa_relatorio', mes: '2026-09' })
-confere('prévia do relatório', r.status === 200 && r.dados.assunto === 'Ana, você respondeu 320 questões em setembro' && r.dados.html.includes('Joelho') && r.dados.html.includes('63% → 80%') && r.dados.html.includes('Tumores'), { status: r.status, assunto: r.dados.assunto })
+confere('prévia do relatório em forma de carta', r.status === 200 && /setembro/.test(r.dados.assunto + r.dados.html) && r.dados.html.includes('320 questões') && r.dados.html.includes('Um abraço,<br>Tales, do Orto Questões'), { status: r.status, assunto: r.dados.assunto })
 const antes = estado.enviados.length
 r = await chamar('adm', { acao: 'relatorios_mensais', mes: '2026-09' })
 confere('admin envia o lote do mês', r.status === 200 && r.dados.enviados === 1 && estado.enviados.length === antes + 1 && estado.enviados.at(-1)?.to[0] === 'ana@x.com', r)
@@ -123,3 +129,38 @@ r = await chamar(null, { acao: 'descadastrar', u: ANA, t: tRel })
 confere('link do relatório não vale para conquistas', r.status === 400, r)
 r = await chamar(null, { acao: 'descadastrar', u: ANA, t: tRel, tipo: 'relatorio' })
 confere('descadastro do relatório', r.status === 200 && (estado.prefs.at(-1) as { relatorio_mensal?: boolean }).relatorio_mensal === false, r)
+
+// Cartas pessoais (ação "carta")
+{
+  const corpoCarta = 'Oi, Ana,\n\nVi o seu estudo e quis escrever.\n\nFica o atalho: ortoquestoes.com.br/#/revisao'
+  let r2 = await chamar('ana', { acao: 'carta', id_usuario: ANA, assunto: 'Ana, um recado', corpo: corpoCarta })
+  confere('carta: só administrador', r2.status === 403, r2)
+  const antes2 = estado.enviados.length
+  r2 = await chamar('adm', { acao: 'carta', id_usuario: ANA, assunto: 'Ana, um recado', corpo: corpoCarta, modelo: 'ativo:70-80', versao: 'ativo:70-80#v2', origem: 'manual' })
+  const enviada = estado.enviados.at(-1)
+  confere('carta manual enviada, sem List-Unsubscribe', r2.dados.resultado === 'enviado' && estado.enviados.length === antes2 + 1 && !enviada?.corpo?.headers, r2)
+  confere('carta manual: assinatura fixa e um link', String(enviada?.corpo?.text).endsWith('Um abraço,\nTales, do Orto Questões') && (String(enviada?.corpo?.html).match(/<a /g) ?? []).length === 1, enviada?.corpo?.text)
+  const reg = estado.registros.at(-1)!
+  confere('carta registrada com modelo, versão e origem', reg.tipo === 'carta' && reg.modelo === 'ativo:70-80' && reg.versao === 'ativo:70-80#v2' && reg.origem === 'manual' && reg.status === 'enviando', reg)
+  r2 = await chamar('adm', { acao: 'carta', id_usuario: ANA, assunto: 'Oi', corpo: 'Oi, {nome}' })
+  confere('carta com marcador sem preencher é recusada', r2.status === 400, r2)
+  r2 = await chamar('adm', { acao: 'carta', id_usuario: ANA, assunto: 'Ana, um convite', corpo: corpoCarta, modelo: 'convite_50', versao: 'convite_50#v1', origem: 'lote' })
+  confere('convite em lote sem aceite de novidades é recusado', r2.status === 409 && r2.dados.erro === 'sem_aceite_novidades', r2)
+  estado.carta.novidades = true
+  r2 = await chamar('adm', { acao: 'carta', id_usuario: ANA, assunto: 'Ana, um convite', corpo: corpoCarta, modelo: 'convite_50', versao: 'convite_50#v1', origem: 'lote' })
+  const lote = estado.enviados.at(-1)
+  confere('convite em lote com aceite sai com List-Unsubscribe e descadastro discreto', r2.dados.resultado === 'enviado' && String((lote?.corpo?.headers as Record<string, string>)?.['List-Unsubscribe']).includes('tipo=cartas') && String(lote?.corpo?.html).includes('é só clicar aqui'), lote?.corpo?.headers)
+  estado.carta.mesmoTipo = true
+  r2 = await chamar('adm', { acao: 'carta', id_usuario: ANA, assunto: 'Ana, um convite', corpo: corpoCarta, modelo: 'convite_20', origem: 'lote' })
+  confere('mesmo tipo em 30 dias não vai em lote', r2.status === 409 && r2.dados.erro === 'mesmo_tipo_30_dias', r2)
+  estado.carta.mesmoTipo = false; estado.carta.h48 = 1
+  r2 = await chamar('adm', { acao: 'carta', id_usuario: ANA, assunto: 'Ana, sumiu?', corpo: corpoCarta, modelo: 'sumiu', origem: 'lote' })
+  confere('quem recebeu e-mail nas últimas 48 h fica fora do lote', r2.status === 409 && r2.dados.erro === 'recebeu_email_recente', r2)
+  estado.carta.h48 = 0; estado.carta.quer = false
+  r2 = await chamar('adm', { acao: 'carta', id_usuario: ANA, assunto: 'Ana, oi', corpo: corpoCarta, origem: 'manual' })
+  confere('quem não quer cartas não recebe nem a manual', r2.status === 409 && r2.dados.erro === 'pessoa_nao_quer_emails', r2)
+  const { linkDescadastro: linkCartas } = await import('../functions/_shared/email.ts')
+  const tCartas = new URL((await linkCartas(ANA, 'cartas')).replace('#/emails', 'emails')).searchParams.get('t')!
+  r2 = await chamar(null, { acao: 'descadastrar', u: ANA, t: tCartas, tipo: 'cartas' })
+  confere('descadastro das cartas', r2.status === 200 && (estado.prefs.at(-1) as { cartas?: boolean }).cartas === false, r2)
+}

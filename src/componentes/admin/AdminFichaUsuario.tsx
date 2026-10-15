@@ -2,17 +2,17 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { lerLocais, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { usarConta } from '../../conta/ContextoConta'
-import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
+import { chamarRpc } from '../../servicos/supabase'
 import { usarIndice } from '../../dados/usarIndice'
 import { Icone, type NomeIcone } from '../Icone'
 import { BarrasHorizontais, GraficoColunas } from './AdminGraficos'
 import { OQueVe, type LinhaUsuario } from './AdminUsuarios'
 import { href } from '../../util/rotas'
-import { confirmar, pedirTexto } from '../Confirmar'
+import { confirmar } from '../Confirmar'
 import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, haQuantoTempo, motivoFalhaEmail, porcentagem, rotuloOrigem, rotuloPagina } from './formatos'
-import { escreverRecado } from './recado'
 import { AdminAssinaturaUsuario } from './AdminAssinaturaUsuario'
-import { MODELOS, gravarModelosSalvos, lerModelosSalvos, modeloSugerido, preencher, type DadosModelo, type ModeloSalvo } from './modelosEmail'
+import { perfilDaFicha, type EnvioHistorico } from './modelosEmail'
+import { CartaPessoal } from './CartaPessoal'
 import { usarRpc, rpcInexistente } from './usarRpc'
 import { PLANOS_RECENTE_DIAS, diasDesde } from './sinais'
 import '../../estilos/paginas/AdminFicha.css'
@@ -66,7 +66,7 @@ interface Evento { em: number; tipo: 'planos' | 'condicoes' | 'pagina' | 'sessao
 const ICONE_EVENTO: Record<Evento['tipo'], NomeIcone> = { planos: 'estrela', condicoes: 'estrela', pagina: 'olho', sessao: 'livro', cripta: 'raio', email: 'correio', conta: 'usuario' }
 
 export type AbaFicha = 'resumo' | 'tempo' | 'pagamentos' | 'acoes'
-const ABAS: Array<[AbaFicha, string]> = [['resumo', 'Resumo'], ['tempo', 'Linha do tempo'], ['pagamentos', 'Assinatura'], ['acoes', 'Contato e ações']]
+const ABAS: Array<[AbaFicha, string]> = [['resumo', 'Resumo'], ['tempo', 'Linha do tempo'], ['pagamentos', 'Assinatura'], ['acoes', 'Carta e ações']]
 
 /** Cartão de métrica: número grande, rótulo e uma linha de apoio. */
 function Metrica({ rotulo, valor, apoio, tom, titulo }: { rotulo: string; valor: ReactNode; apoio?: ReactNode; tom?: 'bom' | 'ruim' | 'ouro'; titulo?: string }) {
@@ -89,14 +89,8 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
   const definirAviso = (texto: string) => definirAvisoBruto({ texto, erro: false })
   const definirFalha = (texto: string) => definirAvisoBruto({ texto, erro: true })
   const [ocupado, definirOcupado] = useState(false)
-  const [recado, definirRecado] = useState('')
-  const [previa, definirPrevia] = useState<string | null>(null)
-  const [formato, definirFormato] = useState<'carta' | 'cartao'>('carta')
-  const [variante, definirVariante] = useState(0)
   const [cortesiaDias, definirCortesiaDias] = useState('90')
   const [cortesiaMotivo, definirCortesiaMotivo] = useState('')
-  const [salvos, definirSalvos] = useState<ModeloSalvo[]>(lerModelosSalvos)
-  const [modeloEscolhido, definirModeloEscolhido] = useState('')
 
   // Três consultas com cache (usarRpc): reabrir a mesma ficha mostra na hora o que já veio.
   const args = useMemo(() => ({ p_id: usuario.id_usuario }), [usuario.id_usuario])
@@ -168,6 +162,7 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
       soma.set(t, item)
     }
     return [...soma].map(([t, v]) => ({
+      slug: indice.temas[t]?.slug ?? '',
       nome: indice.temas[t]?.nome ?? String(t),
       acerto: porcentagem(v.certasPrimeira, v.certasPrimeira + v.erradasPrimeira) ?? 0,
       aposRevisao: porcentagem(v.certas, v.certas + v.erradas) ?? 0,
@@ -215,29 +210,23 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
   const nome = usuario.nome ?? usuario.email?.split('@')[0] ?? 'Sem nome'
   const acertoPrimeira = acertoReal(usuario)
   const acertoRevisao = acertoAposRevisao(usuario)
-  // A carta cita o acerto que a pessoa vê no Desempenho (todas as tentativas); sem a migração nova, o real ou o após revisão.
-  const acertoGeral = acertoPorTentativa(usuario) ?? acertoPrimeira ?? acertoRevisao
   const situacao = extra?.perfil?.situacao ?? detalhe?.perfil?.situacao ?? usuario.situacao ?? null
   const ano = extra?.perfil?.ano_residencia ?? usuario.ano_residencia ?? null
   const servico = extra?.perfil?.servico ?? detalhe?.perfil?.servico ?? usuario.servico ?? null
   const locais = lerLocais(extra?.perfil?.locais_trabalho, servico ?? '')
   const provas = extra?.perfil?.provas?.length ? extra.perfil.provas : (usuario.provas ?? '').split(',').filter(Boolean)
   const cidadeUf = [detalhe?.perfil?.cidade ?? usuario.cidade, detalhe?.perfil?.uf ?? usuario.uf].filter(Boolean).join('/')
-  const dadosModelo: DadosModelo = {
-    respondidas: usuario.respondidas, acerto: acertoGeral, semana: usuario.respondidas_7d,
-    diasParado: usuario.ultima_atividade ? Math.floor((Date.now() - new Date(usuario.ultima_atividade).getTime()) / 86_400_000) : null,
-    diasConta: Math.floor((Date.now() - new Date(usuario.criado_em).getTime()) / 86_400_000),
-    servico, situacao, assinante: !!usuario.plano_vigente,
-  }
-  const sugerido = modeloSugerido(dadosModelo)
-  function usarModelo(id: string) {
-    definirModeloEscolhido(id)
-    const pronto = MODELOS.find(m => m.id === id)
-    const meu = salvos.find(m => m.id === id)
-    if (pronto) definirRecado(pronto.texto(dadosModelo).slice(0, 600))
-    else if (meu) definirRecado(preencher(meu.texto, dadosModelo).slice(0, 600))
-    if (pronto || meu) definirFormato('carta')
-  }
+  // Carta: sem a parte 27, o perfil sai do que a ficha já tem (temas, horário, flashcards, planos).
+  const fcCartasFicha = Math.max(extra?.flashcards.servidor?.unicos ?? 0, extra?.flashcards.progresso?.cartas ?? 0)
+  const perfilReserva = useMemo(() => perfilDaFicha(usuario, {
+    areas: porTema.filter(t => t.slug).map(t => ({ slug: t.slug, total: t.total, certas: Math.round(t.total * t.aposRevisao / 100) })),
+    horas: atividade?.horas ?? [], provas, situacao, ano,
+    flashcards: extra ? fcCartasFicha : null, viuPlanos: extra?.planos?.vezes ?? null,
+  }), [usuario, porTema, atividade, extra, situacao, ano, provas.join(',')])
+  const historicoReserva = useMemo<EnvioHistorico[]>(() => (detalhe?.emails ?? []).map(e => ({
+    tipo: e.tipo, marco: e.marco, assunto: e.assunto, status: e.status, em: e.em,
+    origem: e.tipo === 'marco' || e.tipo === 'relatorio' ? 'automatico' : e.tipo === 'lembrete' ? 'lote' : 'manual',
+  })), [detalhe])
   const cortesiaVale = detalhe?.cortesia && (!detalhe.cortesia.ate || new Date(detalhe.cortesia.ate) > new Date())
 
   // Planos: o sinal que mais importa para a receita. Destaque forte nos últimos 7 dias.
@@ -263,7 +252,7 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
 
   // No body: um ancestral com transform (animação de entrada da página) deslocava o position: fixed.
   return createPortal(<div className="adm-ficha fx" role="dialog" aria-modal="true" aria-labelledby="adm-ficha-nome" onClick={e => { if (e.target === e.currentTarget) aoFechar() }}>
-    <div ref={painel} className="adm-ficha__painel fx__painel">
+    <div ref={painel} className={'adm-ficha__painel fx__painel' + (aba === 'acoes' ? ' fx__painel--larga' : '')}>
       <header className="fx-cabeca">
         <div className="fx-cabeca__linha">
           <span className="fx-avatar" style={{ background: corDe(usuario.id_usuario) }} aria-hidden="true">{iniciais(nome) || '?'}{usuario.online && <span className="adm-online" />}</span>
@@ -301,7 +290,7 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
           <strong>Olhou os preços {planos!.vezes > 1 ? `${planos!.vezes} vezes` : 'uma vez'} nos últimos 30 dias</strong>
           <p>Última vez {quandoPlanos}.{(planos?.condicoes_vezes ?? 0) > 0 ? ` Também abriu as Condições da Assinatura (${planos!.condicoes_vezes}×), o passo antes do checkout.` : ''} Ainda não assina.</p>
         </div>
-        {aba !== 'acoes' && <button type="button" className="botao botao--fantasma" onClick={() => definirAba('acoes')}>Escrever um recado</button>}
+        {aba !== 'acoes' && <button type="button" className="botao botao--fantasma" onClick={() => definirAba('acoes')}>Escrever uma carta</button>}
       </aside>}
 
       {aba === 'pagamentos' ? <AdminAssinaturaUsuario idUsuario={usuario.id_usuario} email={usuario.email} />
@@ -389,54 +378,7 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
               </section>}
 
               {aba === 'acoes' && <>
-                <section className="fx-bloco">
-                  <header className="fx-bloco__cabeca"><h3><Icone nome="correio" tamanho={16} />Mandar uma carta por e-mail</h3></header>
-                  {!detalhe.emails_conquistas ? <p className="adm-vazio">Esta pessoa desligou os e-mails de conquistas.</p> : <>
-                    <fieldset className="adm-formato">
-                      <legend>Formato</legend>
-                      <label className="caixa"><input type="radio" name="formato-email" checked={formato === 'carta'} onChange={() => definirFormato('carta')} /><span><strong>Carta pessoal</strong> · texto simples, assinado por você. Tem mais chance de ficar fora de Promoções no Gmail.</span></label>
-                      <label className="caixa"><input type="radio" name="formato-email" checked={formato === 'cartao'} onChange={() => definirFormato('cartao')} /><span><strong>Cartão com emblema</strong> · mais bonito, mas o Gmail tende a pôr em Promoções.</span></label>
-                    </fieldset>
-                    {formato === 'carta' && <div className="adm-modelos">
-                      <label className="campo">Começar de um modelo
-                        <select className="entrada" value={modeloEscolhido} onChange={e => usarModelo(e.target.value)}>
-                          <option value="">Escolha um modelo…</option>
-                          {(['Retorno', 'Pessoal'] as const).map(g => <optgroup key={g} label={g === 'Retorno' ? 'Trazer de volta' : 'Pessoal'}>
-                            {MODELOS.filter(m => m.grupo === g).map(m => <option key={m.id} value={m.id}>{m.titulo}{m.id === sugerido ? ' (sugerido)' : ''}</option>)}
-                          </optgroup>)}
-                          {salvos.length > 0 && <optgroup label="Meus modelos">{salvos.map(m => <option key={m.id} value={m.id}>{m.titulo}</option>)}</optgroup>}
-                        </select>
-                      </label>
-                      <div className="adm-modelos__atalhos">
-                        {MODELOS.filter(m => m.id === sugerido).map(m => <button key={m.id} type="button" className="adm-chip adm-chip--sugerido" onClick={() => usarModelo(m.id)}><Icone nome="estrela" tamanho={14} /> Sugerido: {m.titulo}</button>)}
-                        <button type="button" className="adm-chip" disabled={!recado.trim()} onClick={async () => {
-                          const titulo = await pedirTexto({ titulo: 'Salvar como modelo', rotulo: 'Nome do modelo', texto: 'Fica salvo neste navegador. No texto, {questoes}, {servico}, {dias} ou {prova} se preenchem sozinhos.', sim: 'Salvar modelo', obrigatorio: true, maximo: 60 })
-                          if (!titulo?.trim()) return
-                          const lista = [...salvos, { id: `meu-${Date.now()}`, titulo: titulo.trim().slice(0, 60), texto: recado }]
-                          definirSalvos(lista); gravarModelosSalvos(lista); definirAviso('Modelo salvo.')
-                        }}><Icone nome="baixar" tamanho={14} /> Salvar como modelo</button>
-                        {salvos.some(m => m.id === modeloEscolhido) && <button type="button" className="adm-chip" onClick={async () => {
-                          if (!(await confirmar({ titulo: 'Apagar este modelo salvo?', texto: 'Some só da lista deste navegador; e-mails já enviados não mudam.', sim: 'Apagar modelo' }))) return
-                          const lista = salvos.filter(m => m.id !== modeloEscolhido)
-                          definirSalvos(lista); gravarModelosSalvos(lista); definirModeloEscolhido('')
-                        }}><Icone nome="lixeira" tamanho={14} /> Apagar modelo</button>}
-                      </div>
-                    </div>}
-                    <label className="campo">{formato === 'carta' ? 'Texto da carta (se ficar vazio, vai um parabéns padrão)' : 'Recado seu (opcional, aparece destacado no e-mail)'}<textarea className="entrada" rows={formato === 'carta' ? 7 : 3} maxLength={600} value={recado} onChange={e => definirRecado(e.target.value)} placeholder="Ex.: Vi seu ritmo nas últimas semanas e fiquei feliz. Continue assim!" /></label>
-                    <div className="linha adm-recado__acoes">
-                      <button type="button" className="botao botao--fantasma" onClick={() => {
-                        definirRecado(escreverRecado({ respondidas: usuario.respondidas, acerto: acertoGeral, semana: usuario.respondidas_7d, diasParado: diasSemEstudo, temas: porTema }, variante))
-                        definirVariante(v => v + 1)
-                      }}><Icone nome="lapis" tamanho={16} /> {variante ? 'Escrever outra versão' : 'Escrever pelo desempenho'}</button>
-                      <small className="adm-nota">{recado.length}/600 · confira e ajuste antes de enviar</small>
-                    </div>
-                    <div className="linha">
-                      <button type="button" className="botao" disabled={ocupado} onClick={() => void acao('Prévia', async () => { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa', id_usuario: usuario.id_usuario, recado, formato }); definirPrevia(r.html) }, '')}>Ver prévia</button>
-                      <button type="button" className="botao botao--principal" disabled={ocupado} onClick={async () => { if (await confirmar({ titulo: 'Enviar o e-mail de parabéns?', texto: `${formato === 'carta' ? 'Carta pessoal' : 'Cartão com emblema'} para ${usuario.email}.`, sim: 'Enviar' })) void acao('Envio', () => chamarFuncao('enviar-email', { acao: 'parabens', id_usuario: usuario.id_usuario, recado, formato }), 'E-mail enviado.') }}>Enviar parabéns</button>
-                    </div>
-                    {previa && <div className="adm-previa"><div className="adm-previa__topo"><span>Prévia do e-mail</span><button type="button" className="adm-link" onClick={() => definirPrevia(null)}>Fechar prévia</button></div><iframe title="Prévia do e-mail" srcDoc={previa} sandbox="" /></div>}
-                  </>}
-                </section>
+                <CartaPessoal usuario={usuario} perfilReserva={perfilReserva} historicoReserva={historicoReserva} querReserva={detalhe.emails_conquistas} aoEnviar={() => void detalheQ.recarregar()} />
 
                 <section className="fx-bloco">
                   <header className="fx-bloco__cabeca"><h3>Ações</h3></header>
@@ -465,10 +407,6 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
                   </div>
                 </section>
 
-                {detalhe.emails.length > 0 && <section className="fx-bloco">
-                  <header className="fx-bloco__cabeca"><h3>E-mails enviados</h3></header>
-                  <ul className="adm-mini">{detalhe.emails.map((e, i) => <li key={i}><span className="adm-mini__nome">{e.assunto ?? (e.tipo === 'marco' && e.marco ? `Emblema de ${e.marco} questões` : e.tipo)}<small>{e.tipo === 'marco' ? 'automático' : 'enviado por você'}{e.status === 'falhou' ? ' · não saiu; o motivo aparece em Ajustes › E-mails' : ''}</small></span><span className={'adm-selo ' + (e.status === 'enviado' ? 'adm-selo--ok' : 'adm-selo--ruim')}>{e.status === 'enviado' ? data(e.em) : e.status}</span></li>)}</ul>
-                </section>}
               </>}
             </div>}
     </div>

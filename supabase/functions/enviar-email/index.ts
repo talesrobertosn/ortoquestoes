@@ -1,6 +1,7 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
 import { MARCOS, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, type CampanhaLembrete, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
+import { perfilDosDados, problemaGrave, renderizarCarta, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta } from '../_shared/cartas.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -30,6 +31,18 @@ import { MARCOS, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, em
  *   relato_resolvido   administrador: avisa quem relatou um erro (id_relato) que
  *                      a questão foi corrigida. Só relato com status resolvido.
  *   previa_relato      administrador: o mesmo aviso, sem enviar.
+ *   carta              administrador: carta pessoal escrita pelo motor (cartas.ts) e
+ *                      revisada no painel. Campos: id_usuario, assunto, corpo, modelo,
+ *                      versao, origem ("manual", pela ficha, ou "lote", pela seção
+ *                      Cartas). O servidor monta o e-mail com a mesma função da prévia.
+ *                      Lote: só com a parte 27; recusa administrador, e-mail não
+ *                      confirmado, quem não quer cartas, convite sem o aceite de
+ *                      novidades (Termos 14.3), o mesmo tipo em 30 dias e quem recebeu
+ *                      qualquer e-mail nas últimas 48 horas; leva List-Unsubscribe.
+ *
+ * Desde 15/10/2026 todo e-mail para a pessoa sai em forma de carta (só texto,
+ * assinado pelo Tales). Os envios gravam modelo, versão e origem no histórico
+ * quando a parte 27 já foi colada; antes dela, gravam como antes.
  */
 
 interface DadosUsuario {
@@ -56,12 +69,40 @@ async function montar(id: string, marco: Marco | null, recado?: string | null, c
   const dados = await dadosUsuario(id)
   if (!dados?.email) return null
   const m = marco ?? marcoAtingido(Number(dados.respondidas)) ?? MARCOS[0]
+  // A carta automática do marco usa o perfil completo (parte 27) e não repete a versão já recebida.
+  const [perfil, anteriores] = carta ? [null, []] : await Promise.all([perfilCompleto(id).catch(() => null), anterioresDe(id).catch(() => [])])
   const email = (carta ? emailCarta : emailMarco)({
     nome: dados.nome, marco: m, respondidas: Number(dados.respondidas), acertos: Number(dados.acertos),
     erros: Number(dados.erros), respondidas7d: Number(dados.respondidas_7d), recado,
-    site: site(), linkDescadastro: await linkDescadastro(id),
+    site: site(), linkDescadastro: await linkDescadastro(id), perfil, anteriores,
   })
   return { dados, marco: m, email }
+}
+
+/** E-mails anteriores da pessoa (para o sorteio não repetir a versão). Sem a parte 27, só tipo e marco. */
+async function anterioresDe(id: string): Promise<EnvioAnterior[]> {
+  const base = `emails_enviados?id_usuario=eq.${id}&order=enviado_em.desc&limit=40`
+  let r = await banco(`${base}&select=tipo,modelo,versao,marco,status,em:enviado_em`)
+  if (!r.ok) r = await banco(`${base}&select=tipo,marco,status,em:enviado_em`)
+  return r.ok ? await r.json() as EnvioAnterior[] : []
+}
+
+/** Perfil completo da pessoa para a carta (parte 27). Null se a parte ainda não foi colada. */
+async function perfilCompleto(id: string): Promise<PerfilCarta | null> {
+  const r = await banco('rpc/dados_carta_usuario', { method: 'POST', body: JSON.stringify({ p_id: id }) })
+  if (!r.ok) return null
+  const dados = await r.json() as DadosCartaBanco | null
+  return dados ? perfilDosDados(dados) : null
+}
+
+/** Grava o registro; os campos da parte 27 (modelo, versao, origem) vão juntos e, se o banco ainda não os tiver, ficam de fora. */
+async function atualizarEnvio(id: number, campos: Record<string, unknown>, extras: Record<string, unknown>) {
+  const limpos = Object.fromEntries(Object.entries(extras).filter(([, v]) => v !== null && v !== undefined))
+  if (Object.keys(limpos).length) {
+    const r = await banco(`emails_enviados?id=eq.${id}`, { method: 'PATCH', body: JSON.stringify({ ...campos, ...limpos }) })
+    if (r.ok) return r
+  }
+  return banco(`emails_enviados?id=eq.${id}`, { method: 'PATCH', body: JSON.stringify(campos) })
 }
 
 const motivo = (falha: unknown) => (falha instanceof Error ? falha.message : String(falha)).slice(0, 300)
@@ -88,7 +129,7 @@ async function montarRelatorio(id: string, mes: string) {
   if (!r.ok) throw new Error('consulta_relatorio_falhou')
   const dados = await r.json() as Omit<DadosRelatorio, 'site' | 'linkDescadastro'> & { email: string | null }
   if (!dados?.email) return null
-  const email = emailRelatorio({ ...dados, site: site(), linkDescadastro: await linkDescadastro(id, 'relatorio') })
+  const email = emailRelatorio({ ...dados, site: site(), linkDescadastro: await linkDescadastro(id, 'relatorio'), anteriores: await anterioresDe(id).catch(() => []) })
   return { ...email, para: dados.email }
 }
 
@@ -113,7 +154,7 @@ async function montarQuinzenal(id: string, ref: string) {
   if (!r.ok) throw new Error('consulta_relatorio_falhou')
   const dados = await r.json() as Omit<DadosRelatorio, 'site' | 'linkDescadastro'> & { email: string | null }
   if (!dados?.email) return null
-  const email = emailRelatorio({ ...dados, site: site(), linkDescadastro: await linkDescadastro(id, 'relatorio') })
+  const email = emailRelatorio({ ...dados, site: site(), linkDescadastro: await linkDescadastro(id, 'relatorio'), anteriores: await anterioresDe(id).catch(() => []) })
   return { ...email, para: dados.email }
 }
 
@@ -149,7 +190,7 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
       const pronto = quinzenal ? await montarQuinzenal(id, mes) : await montarRelatorio(id, mes)
       if (!pronto) throw new Error('usuario_sem_email')
       await enviarEmail(pronto.para, pronto.assunto, pronto.html, pronto.texto, await linkDescadastro(id, 'relatorio'))
-      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado', assunto: pronto.assunto }) })
+      await atualizarEnvio(linha.id, { status: 'enviado', assunto: pronto.assunto }, { modelo: pronto.modelo, versao: pronto.versao, origem: 'automatico' })
       enviados++
     } catch (falha) {
       await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
@@ -196,10 +237,10 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
         campanha, nome: d.nome, respondidas: Number(numeros?.respondidas ?? d.respondidas), diasFora: Number(d.dias_fora ?? 0),
         diasRestantes: Number(d.dias_restantes ?? 3), fimEm: d.fim_periodo ?? null, plano: d.plano ?? null,
         acertos: Number(numeros?.acertos ?? 0), respondidas7d: Number(numeros?.respondidas_7d ?? 0),
-        site: site(), linkDescadastro: descadastro,
+        site: site(), linkDescadastro: descadastro, referencia: d.referencia, anteriores: await anterioresDe(d.id_usuario).catch(() => []),
       })
       await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro)
-      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado', assunto: e.assunto }) })
+      await atualizarEnvio(linha.id, { status: 'enviado', assunto: e.assunto }, { modelo: e.modelo, versao: e.versao, origem: por ? 'lote' : 'automatico' })
       enviados++
     } catch (falha) {
       await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
@@ -218,12 +259,12 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; quinzena?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string }
+    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; quinzena?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string; assunto?: string; corpo?: string; modelo?: string; versao?: string; origem?: string }
 
     if (corpo.acao === 'descadastrar') {
-      const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : corpo.tipo === 'lembretes' ? 'lembretes' : 'conquistas'
+      const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : corpo.tipo === 'lembretes' ? 'lembretes' : corpo.tipo === 'cartas' ? 'cartas' : 'conquistas'
       if (!corpo.u || !corpo.t || !/^[0-9a-f-]{36}$/.test(corpo.u) || !await tokenDescadastroValido(corpo.u, corpo.t, tipo)) return json({ erro: 'link_invalido' }, 400, req)
-      const coluna = tipo === 'relatorio' ? 'relatorio_mensal' : tipo === 'lembretes' ? 'lembretes' : 'conquistas'
+      const coluna = tipo === 'relatorio' ? 'relatorio_mensal' : tipo === 'lembretes' ? 'lembretes' : tipo === 'cartas' ? 'cartas' : 'conquistas'
       const r = await banco('preferencias_email', {
         method: 'POST', headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
         body: JSON.stringify({ id_usuario: corpo.u, [coluna]: false, atualizado_em: new Date().toISOString() }),
@@ -347,7 +388,7 @@ Deno.serve(async (req) => {
       const pronto = await montar(usuario.id, marco)
       try {
         await enviarEmail(pronto!.dados.email!, pronto!.email.assunto, pronto!.email.html, pronto!.email.texto, await linkDescadastro(usuario.id))
-        await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado', assunto: pronto!.email.assunto }) })
+        await atualizarEnvio(linha.id, { status: 'enviado', assunto: pronto!.email.assunto }, { modelo: pronto!.email.modelo, versao: pronto!.email.versao, origem: 'automatico' })
         return json({ resultado: 'enviado', marco: marco.minimo }, 200, req)
       } catch (falha) {
         await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
@@ -368,12 +409,62 @@ Deno.serve(async (req) => {
       return json({ resultado: 'ok' }, 200, req)
     }
 
+    if (corpo.acao === 'carta') {
+      if (!await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
+      if (!corpo.id_usuario || !/^[0-9a-f-]{36}$/.test(corpo.id_usuario)) return json({ erro: 'usuario_invalido' }, 400, req)
+      const assunto = typeof corpo.assunto === 'string' ? corpo.assunto.trim() : ''
+      const texto = typeof corpo.corpo === 'string' ? corpo.corpo.trim() : ''
+      if (!assunto || assunto.length > 120 || !texto || texto.length > 6000) return json({ erro: 'carta_invalida' }, 400, req)
+      const grave = problemaGrave(`${assunto}\n${texto}`)
+      if (grave) return json({ erro: `carta_com_problema: ${grave}` }, 400, req)
+      const modelo = typeof corpo.modelo === 'string' && /^[a-z0-9_:-]{1,60}$/.test(corpo.modelo) ? corpo.modelo : null
+      const versao = typeof corpo.versao === 'string' && /^[a-z0-9_:#-]{1,80}$/.test(corpo.versao) ? corpo.versao : null
+      const lote = corpo.origem === 'lote'
+      if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
+
+      // Travas (parte 27). Sem ela, a carta individual segue a regra antiga; o lote espera o SQL.
+      const r = await banco('rpc/dados_carta_envio', { method: 'POST', body: JSON.stringify({ p_id: corpo.id_usuario, p_modelo: modelo }) })
+      let pessoa: { email: string | null; quer_cartas: boolean; confirmado?: boolean; novidades?: boolean; administrador?: boolean; mesmo_tipo_30d?: boolean; emails_48h?: number } | null = null
+      const comParte27 = r.ok
+      if (comParte27) pessoa = await r.json()
+      else {
+        if (lote) return json({ erro: 'sql_pendente' }, 409, req)
+        const antigo = await dadosUsuario(corpo.id_usuario)
+        pessoa = antigo ? { email: antigo.email, quer_cartas: antigo.quer_conquistas } : null
+      }
+      if (!pessoa?.email) return json({ erro: 'usuario_sem_email' }, 404, req)
+      if (!pessoa.quer_cartas) return json({ erro: 'pessoa_nao_quer_emails' }, 409, req)
+      if (lote) {
+        if (pessoa.administrador) return json({ erro: 'administrador' }, 409, req)
+        if (!pessoa.confirmado) return json({ erro: 'email_nao_confirmado' }, 409, req)
+        if (modelo?.startsWith('convite') && !pessoa.novidades) return json({ erro: 'sem_aceite_novidades' }, 409, req)
+        if (pessoa.mesmo_tipo_30d) return json({ erro: 'mesmo_tipo_30_dias' }, 409, req)
+        if (Number(pessoa.emails_48h ?? 0) > 0) return json({ erro: 'recebeu_email_recente' }, 409, req)
+      }
+
+      const descadastro = lote ? await linkDescadastro(corpo.id_usuario, 'cartas') : null
+      const e = renderizarCarta({ assunto, corpo: texto, descadastro })
+      // Reserva o registro antes de enviar: dois cliques seguidos não mandam duas vezes no lote.
+      const registro = { id_usuario: corpo.id_usuario, assunto, status: 'enviando', enviado_por: usuario.id }
+      let reserva = comParte27 ? await registrar({ ...registro, tipo: 'carta', modelo, versao, origem: lote ? 'lote' : 'manual' }) : null
+      if (!reserva?.ok) reserva = await registrar({ ...registro, tipo: 'parabens' })
+      const [linha] = reserva.ok ? await reserva.json() as Array<{ id: number }> : []
+      try {
+        await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, descadastro ?? undefined)
+        if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado' }) })
+        return json({ resultado: 'enviado', para: pessoa.email }, 200, req)
+      } catch (falha) {
+        if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+        return json({ erro: motivo(falha) }, 502, req)
+      }
+    }
+
     if (corpo.acao === 'parabens' || corpo.acao === 'previa') {
       if (!await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
       if (!corpo.id_usuario || !/^[0-9a-f-]{36}$/.test(corpo.id_usuario)) return json({ erro: 'usuario_invalido' }, 400, req)
       const recado = typeof corpo.recado === 'string' ? corpo.recado.slice(0, 600) : null
-      // Carta (padrão): texto simples, com mais chance de cair fora de Promoções no Gmail.
-      const carta = corpo.formato !== 'cartao'
+      // Sempre carta desde 15/10/2026 (o cartão com emblema saiu): texto simples, fora de Promoções.
+      const carta = true
       const pronto = await montar(corpo.id_usuario, null, recado, carta)
       if (!pronto) return json({ erro: 'usuario_sem_email' }, 404, req)
       if (corpo.acao === 'previa') return json({ assunto: pronto.email.assunto, html: pronto.email.html, quer_conquistas: pronto.dados.quer_conquistas }, 200, req)

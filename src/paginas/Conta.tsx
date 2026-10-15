@@ -129,6 +129,17 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     try { await chamarRpc('definir_preferencia_lembretes', { p_lembretes: valor }) }
     catch { definirLembretes(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
   }
+  // Cartas pessoais do Tales (parte 27): sem a parte colada, o interruptor não aparece.
+  const [cartas, definirCartas] = useState<boolean | null>(null)
+  useEffect(() => {
+    if (!sessao?.user.id) return
+    chamarRpc<boolean>('obter_preferencia_cartas', {}).then((v) => definirCartas(v !== false)).catch(() => undefined)
+  }, [sessao?.user.id])
+  const trocarCartas = async (valor: boolean) => {
+    definirCartas(valor)
+    try { await chamarRpc('definir_preferencia_cartas', { p_cartas: valor }) }
+    catch { definirCartas(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
+  }
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
   const { ritmo, definirRitmo } = usarRitmoRevisao()
@@ -591,6 +602,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         {emailsConquistas !== null && <label className="ct-interruptor"><input type="checkbox" checked={emailsConquistas} onChange={e => void trocarEmailsConquistas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber e-mail de parabéns quando eu desbloquear um emblema</span></label>}
         {relatorioMensal !== null && <label className="ct-interruptor"><input type="checkbox" checked={relatorioMensal} onChange={e => void trocarRelatorioMensal(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber os resumos de estudo por e-mail: a cada 15 dias, quantas questões você fez, o acerto e o próximo passo (assinantes também recebem o relatório do mês)</span></label>}
         {lembretes !== null && <label className="ct-interruptor"><input type="checkbox" checked={lembretes} onChange={e => void trocarLembretes(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber lembretes de estudo quando eu ficar alguns dias sem aparecer</span></label>}
+        {cartas !== null && <label className="ct-interruptor"><input type="checkbox" checked={cartas} onChange={e => void trocarCartas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber, de vez em quando, uma mensagem pessoal do Tales sobre o meu estudo</span></label>}
       </section>}
       {secao === 'ranking' && <section id="ct-ranking" className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--ouro"><Icone nome="trofeu" tamanho={18} /></span><div><h2>Ranking</h2><p>Conta questões respondidas, não acerto.</p></div></header>
