@@ -179,8 +179,9 @@
 @media (hover: hover) and (pointer: fine) and (min-width: 40.01rem) { .nav-sessao__tecla { display: inline-block; } }
 
 /* ---------- Barra de XP (temporada RPG) ---------- */
-.barra-sessao__texto--pixel { font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.95rem; color: var(--texto); }
-.barra-sessao__combo { display: inline-flex; align-items: center; gap: 0.2rem; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.9rem; color: #b26a12; white-space: nowrap; }
+/* Contador e combo na Jersey 10 (15/10/2026): na Pixelify pequena, "2 de 5" lia como "8 de S". */
+.barra-sessao__texto--pixel { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.3rem; line-height: 1; letter-spacing: 0.02em; color: var(--texto); }
+.barra-sessao__combo { display: inline-flex; align-items: center; gap: 0.2rem; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.2rem; line-height: 1; color: #b26a12; white-space: nowrap; }
 .barra-sessao__combo img { image-rendering: pixelated; }
 .xp-blocos { flex: 1 1 auto; display: grid; gap: 2px; min-width: 4rem; }
 .xp-bloco { height: 11px; background: var(--traco); box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08); }
@@ -193,7 +194,7 @@
 .dica-deslizar {
   border-radius: 0; padding: 0.55rem 0.9rem; gap: 0.5rem; backdrop-filter: none;
   background: linear-gradient(180deg, #3a2913, #22170b); color: #ffe08a;
-  font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em; text-shadow: 1px 1px 0 #1b1208;
+  font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.2rem; letter-spacing: 0.03em; text-shadow: 1px 1px 0 #1b1208;
   box-shadow: 0 0 0 3px #f4cf7c, 0 0 0 6px #1b1208, 5px 5px 0 6px rgba(0, 0, 0, 0.3);
 }
 .dica-deslizar svg { color: #f4cf7c; animation: dica-empurra-esq 0.8s steps(2, end) infinite; }
@@ -203,7 +204,7 @@
 .dica-teclado kbd { color: #1b1208; background: #f4cf7c; border-radius: 0; box-shadow: 2px 2px 0 #1b1208; }
 @media (prefers-reduced-motion: reduce) { .dica-deslizar svg { animation: none; } }
 /* A dica sobe para o meio da tela (no rodapé ela passava despercebida) e fica um pouco maior. */
-.dica-deslizar { top: 42%; bottom: auto; font-size: 1.05rem; padding: 0.75rem 1.1rem; }
+.dica-deslizar { top: 42%; bottom: auto; font-size: 1.3rem; padding: 0.65rem 1.1rem; }
 @media (min-width: 40.01rem) { .dica-deslizar { top: 42%; bottom: auto; } }
 
 /* Meta de hoje do cronograma, na cor da área (14/10/2026). */
@@ -217,3 +218,15 @@
 /* Deslizar entre questões: a página só rola na vertical (e amplia com pinça);
    o gesto horizontal fica com o JS, sem precisar de um ouvinte não passivo. */
 .sessao-gestos { touch-action: pan-y pinch-zoom; }
+
+/* "Próxima" na barra fixa, depois de responder (15/10/2026). No celular o Mapa vira só ícone para caber. */
+.barra-sessao__proxima { min-height: 36px; padding-inline: 0.85rem; gap: 0.3rem; border-radius: 999px; white-space: nowrap; }
+@media (prefers-reduced-motion: no-preference) {
+  .barra-sessao__proxima { animation: barra-proxima-entra 0.28s cubic-bezier(.2, .9, .3, 1.2) both; }
+}
+@keyframes barra-proxima-entra { from { opacity: 0; transform: translateX(8px) scale(0.92); } to { opacity: 1; transform: none; } }
+@media (max-width: 40rem) {
+  .barra-sessao__interno--respondida { gap: 0.5rem; }
+  .barra-sessao__interno--respondida .barra-sessao__mapa { padding-inline: 0.6rem; }
+  .barra-sessao__interno--respondida .barra-sessao__mapa-rotulo { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}

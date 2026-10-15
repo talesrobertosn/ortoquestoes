@@ -112,7 +112,8 @@
 @media (max-width: 46rem) {
   .rv-heroi { grid-template-columns: 1fr; gap: 1.5rem; }
   .rv-heroi__numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); min-width: 0; }
-  .rv-heroi__numeros > div:last-child { grid-column: 1 / -1; }
+  /* Só a última de uma quantidade ímpar ocupa a linha toda; com duas, ficam lado a lado (antes uma saía com metade e a outra inteira). */
+  .rv-heroi__numeros > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 
 /* Trilha: pontos ligados por uma linha, com o intervalo embaixo. */
