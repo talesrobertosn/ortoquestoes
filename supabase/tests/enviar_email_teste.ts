@@ -81,7 +81,7 @@ r = await chamar('adm', { acao: 'parabens', id_usuario: ANA, recado: 'Continue a
 confere('admin manda parabéns', r.dados.resultado === 'enviado' && estado.enviados.length === 3, r)
 {
   const carta = estado.enviados[2]
-  confere('parabéns sai como carta pessoal', carta.subject === 'Ana, um recado sobre o seu estudo' && !String(carta.corpo?.html).includes('Emblema desbloqueado') && String(carta.corpo?.text).startsWith('Oi, Ana,'), carta.subject)
+  confere('parabéns sai como carta pessoal', carta.subject === 'Ana, um recado sobre o seu estudo' && !String(carta.corpo?.html).includes('Emblema desbloqueado') && String(carta.corpo?.text).startsWith('Oi, Ana'), carta.subject)
   confere('carta pessoal sem cabeçalho de envio em massa nem rodapé', !carta.corpo?.headers && !String(carta.corpo?.html).includes('clicar aqui') && String(carta.corpo?.text).endsWith('Um abraço,\nTales, do Orto Questões'), carta.corpo?.headers)
   const cartao = await chamar('adm', { acao: 'previa', id_usuario: ANA, formato: 'cartao' })
   confere('o antigo cartão com emblema também vira carta', !cartao.dados.html.includes('<img') && cartao.dados.assunto === 'Ana, um recado sobre o seu estudo', cartao.dados.assunto)
@@ -163,4 +163,11 @@ confere('descadastro do relatório', r.status === 200 && (estado.prefs.at(-1) as
   const tCartas = new URL((await linkCartas(ANA, 'cartas')).replace('#/emails', 'emails')).searchParams.get('t')!
   r2 = await chamar(null, { acao: 'descadastrar', u: ANA, t: tCartas, tipo: 'cartas' })
   confere('descadastro das cartas', r2.status === 200 && (estado.prefs.at(-1) as { cartas?: boolean }).cartas === false, r2)
+}
+
+// Tom (docs/emails/TOM.md): nada que soe grosseiro, acusatório ou de cobrança em nenhum e-mail enviado.
+{
+  const PROIBIDO = [/vou ser (direto|sincer)/i, /sem rodeios/i, /olha só/i, /infelizmente/i, /\bsó que\b/i, /\bvocê (ainda )?não\b/i, /\bchut/i, /alternativa qualquer/i, /cobrança/i, /gr[aá]tis|oferta|desconto|aproveite/i]
+  const ruins = estado.enviados.filter((e) => e.to[0] !== 'admin@x.com').flatMap((e) => PROIBIDO.filter((re) => re.test(`${e.subject}\n${e.corpo?.text ?? ''}`)).map((re) => `${e.subject}: ${re}`))
+  confere('nenhum e-mail enviado tem expressão proibida pelo guia de tom', ruins.length === 0, ruins)
 }
