@@ -4,6 +4,9 @@ import { BarrasHorizontais } from './AdminGraficos'
 import { baixarCsv, porcentagem, acertoAposRevisao, acertoReal, rotuloOrigem } from './formatos'
 import type { LinhaUsuario } from './AdminUsuarios'
 import { chaveServico, servicoConhecido, SERVICO_GERAL } from './servicosConhecidos'
+import { usarConta } from '../../conta/ContextoConta'
+import { usarRpc } from './usarRpc'
+import type { SinalUsuario } from './sinais'
 
 /** Ordem fixa das etapas nas tabelas: da formação para o título. */
 const ORDEM_ETAPAS = ['R1', 'R2', 'R3', 'Residente (ano não informado)', 'R4 / fellowship', 'Residente de mão', 'Ortopedista', 'Estudante', 'Outro', 'Não informado']
@@ -48,6 +51,23 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
   const [ordemServicos, definirOrdemServicos] = useState<'contas' | 'acerto' | 'ativos' | 'questoes'>('contas')
   const [todosServicos, definirTodosServicos] = useState(false)
   const comMigracao = usuarios.some(u => u.provas !== undefined)
+  // Outros locais de trabalho (parte 25): a mesma consulta leve da lista de pessoas, em cache.
+  const { sessao } = usarConta()
+  const sinaisQ = usarRpc<SinalUsuario[]>(sessao?.user.id, 'sinais_usuarios_admin')
+  const outrosLocais = useMemo(() => {
+    const ids = new Set((criterio === 'ativos' ? usuarios.filter(u => u.respondidas_7d > 0) : usuarios).map(u => u.id_usuario))
+    const uf = new Map(usuarios.map(u => [u.id_usuario, u.uf]))
+    const contas = new Map<string, { nome: string; pessoas: Set<string> }>()
+    for (const s of Array.isArray(sinaisQ.dados) ? sinaisQ.dados : []) {
+      if (!s.locais_trabalho || !ids.has(s.id_usuario)) continue
+      for (const local of s.locais_trabalho.split(' · ')) {
+        const chave = chaveServico(local, uf.get(s.id_usuario))
+        const g = contas.get(chave) ?? { nome: chave === SERVICO_GERAL ? SERVICO_GERAL : servicoConhecido(local, uf.get(s.id_usuario)) ?? local.trim(), pessoas: new Set<string>() }
+        g.pessoas.add(s.id_usuario); contas.set(chave, g)
+      }
+    }
+    return [...contas.values()].map(g => ({ rotulo: g.nome, valor: g.pessoas.size })).sort((a, b) => b.valor - a.valor)
+  }, [sinaisQ.dados, usuarios, criterio])
   const d = useMemo(() => {
     const base = criterio === 'ativos' ? usuarios.filter(u => u.respondidas_7d > 0) : usuarios
     const etapas = agrupar(base, u => [etapaDe(u)]).sort((a, b) => ORDEM_ETAPAS.indexOf(a.rotulo) - ORDEM_ETAPAS.indexOf(b.rotulo))
@@ -171,6 +191,12 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
         </tr>)}</tbody>
       </table></div>
       {servicosOrdenados.length > 15 && <button type="button" className="adm-link" onClick={() => definirTodosServicos(!todosServicos)}>{todosServicos ? 'Mostrar só os 15 primeiros' : `Ver todos os ${servicosOrdenados.length} serviços`}</button>}
+    </>}
+
+    {outrosLocais.length > 0 && <>
+      <h3>Outros locais de trabalho</h3>
+      <p className="adm-nota">Além do serviço principal: quem marcou que trabalha em vários locais (ortopedistas) ou também em outros serviços (residentes, plantões). Cada pessoa conta uma vez por local.</p>
+      <BarrasHorizontais itens={outrosLocais.slice(0, 15).map(l => ({ ...l, detalhe: `${l.valor} pessoa(s)` }))} />
     </>}
 
     <h3>De onde vêm os cadastros</h3>

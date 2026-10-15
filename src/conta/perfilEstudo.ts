@@ -21,8 +21,7 @@ export type ProvaInteresse = 'taro' | 'teot' | 'mao' | 'r4' | 'atualizacao'
 export const SITUACOES: Array<[Situacao, string]> = [
   ['residente', 'Residente de ortopedia (R1 a R3)'],
   ['r4', 'R4 ou fellowship em subespecialidade'],
-  ['mao', 'Residente de cirurgia da mão'],
-  ['ortopedista', 'Ortopedista'],
+  ['mao', 'Residente de cirurgia da mão'],  ['ortopedista', 'Ortopedista'],
   ['estudante', 'Estudante de medicina'],
   ['outro', 'Outro profissional'],
 ]
@@ -69,3 +68,49 @@ export function perfilEstudoCompleto(meta: Record<string, unknown> | undefined |
   if (situacao === 'residente' && !meta.ano_residencia) return false
   return lerProvas(meta.provas_interesse).length > 0
 }
+
+/**
+ * Atalho de um toque para a etapa (aviso "Complete seu perfil"): cada botão já diz
+ * a situação e, para residente, o ano. Mesmos valores gravados pelo formulário completo.
+ */
+export const ETAPAS_RAPIDAS: Array<{ id: string; rotulo: string; situacao: Situacao; ano: AnoResidencia | '' }> = [
+  { id: 'estudante', rotulo: 'Estudante', situacao: 'estudante', ano: '' },
+  { id: 'r1', rotulo: 'R1', situacao: 'residente', ano: 'r1' },
+  { id: 'r2', rotulo: 'R2', situacao: 'residente', ano: 'r2' },
+  { id: 'r3', rotulo: 'R3', situacao: 'residente', ano: 'r3' },
+  { id: 'r4', rotulo: 'R4 / fellow', situacao: 'r4', ano: '' },
+  { id: 'mao', rotulo: 'Residente de cirurgia da mão', situacao: 'mao', ano: '' },
+  { id: 'ortopedista', rotulo: 'Ortopedista', situacao: 'ortopedista', ano: '' },
+  { id: 'outro', rotulo: 'Outro', situacao: 'outro', ano: '' },
+]
+
+/** Qual atalho corresponde ao que já está gravado ('' quando nenhum). */
+export function etapaRapidaDe(situacao: string, ano: string): string {
+  return ETAPAS_RAPIDAS.find((e) => e.situacao === situacao && (e.situacao !== 'residente' || e.ano === ano))?.id ?? ''
+}
+
+/** Até quantos locais de trabalho extras a pessoa informa, e o tamanho de cada nome. */
+export const LOCAIS_MAXIMO = 8
+export const LOCAL_TAMANHO = 80
+
+/**
+ * Outros hospitais ou serviços onde a pessoa trabalha, além do principal (campo
+ * `locais_trabalho` dos metadados). Limpa espaços, tira vazios e repetidos (sem
+ * diferença de maiúscula e acento) e o que for igual ao serviço principal.
+ */
+export function lerLocais(valor: unknown, principal = ''): string[] {
+  const lista = Array.isArray(valor) ? valor : typeof valor === 'string' && valor ? valor.split(/[;\n]/) : []
+  const chave = (t: string) => t.toLocaleLowerCase('pt-BR').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim()
+  const vistos = new Set<string>(principal.trim() ? [chave(principal)] : [])
+  const saida: string[] = []
+  for (const bruto of lista) {
+    const texto = String(bruto ?? '').replace(/\s+/g, ' ').trim().slice(0, LOCAL_TAMANHO)
+    if (texto.length < 2 || vistos.has(chave(texto))) continue
+    vistos.add(chave(texto)); saida.push(texto)
+    if (saida.length >= LOCAIS_MAXIMO) break
+  }
+  return saida
+}
+
+/** Para quem a pergunta é "onde trabalha" (e não "onde faz residência" ou "faculdade"). */
+export const trabalhaComoEspecialista = (situacao: string) => situacao === 'ortopedista' || situacao === 'outro'
