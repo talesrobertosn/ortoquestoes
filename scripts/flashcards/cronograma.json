@@ -4,12 +4,12 @@
  "inicio": "2026-10-19",
  "totais": {
   "fabrica": 4302,
-  "autorais": 234,
+  "autorais": 540,
   "meta": 3646,
-  "falta": 3443,
+  "falta": 3148,
   "fabricaSimulados": 754,
   "simulados": 799,
-  "autoraisSimulados": 39
+  "autoraisSimulados": 92
  },
  "assuntos": [
   {
@@ -61,9 +61,9 @@
    "fontesRicas": 57,
    "fabrica": 43,
    "questoesComFlashcard": 43,
-   "autorais": 27,
+   "autorais": 68,
    "meta": 60,
-   "falta": 33,
+   "falta": 0,
    "simulados": 0,
    "fabricaSimulados": 0,
    "autoraisSimulados": 0,
@@ -79,10 +79,10 @@
    "comComentario": 81,
    "fontesRicas": 49,
    "fabrica": 67,
-   "questoesComFlashcard": 67,
-   "autorais": 19,
+   "questoesComFlashcard": 68,
+   "autorais": 59,
    "meta": 57,
-   "falta": 38,
+   "falta": 0,
    "simulados": 22,
    "fabricaSimulados": 22,
    "autoraisSimulados": 19,
@@ -98,10 +98,10 @@
    "comComentario": 59,
    "fontesRicas": 18,
    "fabrica": 43,
-   "questoesComFlashcard": 43,
-   "autorais": 0,
+   "questoesComFlashcard": 47,
+   "autorais": 44,
    "meta": 56,
-   "falta": 56,
+   "falta": 12,
    "simulados": 0,
    "fabricaSimulados": 0,
    "autoraisSimulados": 0,
@@ -118,9 +118,9 @@
    "fontesRicas": 41,
    "fabrica": 29,
    "questoesComFlashcard": 30,
-   "autorais": 8,
+   "autorais": 48,
    "meta": 53,
-   "falta": 45,
+   "falta": 5,
    "simulados": 0,
    "fabricaSimulados": 0,
    "autoraisSimulados": 0,
@@ -137,12 +137,12 @@
    "fontesRicas": 20,
    "fabrica": 65,
    "questoesComFlashcard": 65,
-   "autorais": 0,
+   "autorais": 53,
    "meta": 52,
-   "falta": 52,
+   "falta": 0,
    "simulados": 24,
    "fabricaSimulados": 24,
-   "autoraisSimulados": 0,
+   "autoraisSimulados": 53,
    "posicao": 7
   },
   {
@@ -155,10 +155,10 @@
    "comComentario": 54,
    "fontesRicas": 17,
    "fabrica": 43,
-   "questoesComFlashcard": 43,
-   "autorais": 0,
+   "questoesComFlashcard": 45,
+   "autorais": 41,
    "meta": 50,
-   "falta": 50,
+   "falta": 9,
    "simulados": 0,
    "fabricaSimulados": 0,
    "autoraisSimulados": 0,
@@ -212,10 +212,10 @@
    "comComentario": 125,
    "fontesRicas": 70,
    "fabrica": 93,
-   "questoesComFlashcard": 93,
-   "autorais": 0,
+   "questoesComFlashcard": 100,
+   "autorais": 41,
    "meta": 47,
-   "falta": 47,
+   "falta": 6,
    "simulados": 64,
    "fabricaSimulados": 63,
    "autoraisSimulados": 0,
@@ -1657,9 +1657,9 @@
    "fontesRicas": 3,
    "fabrica": 17,
    "questoesComFlashcard": 17,
-   "autorais": 0,
+   "autorais": 3,
    "meta": 18,
-   "falta": 18,
+   "falta": 15,
    "simulados": 2,
    "fabricaSimulados": 2,
    "autoraisSimulados": 0,
@@ -3632,10 +3632,10 @@
    "comComentario": 9,
    "fontesRicas": 3,
    "fabrica": 6,
-   "questoesComFlashcard": 6,
-   "autorais": 0,
+   "questoesComFlashcard": 7,
+   "autorais": 3,
    "meta": 4,
-   "falta": 4,
+   "falta": 1,
    "simulados": 0,
    "fabricaSimulados": 0,
    "autoraisSimulados": 0,
@@ -5416,14 +5416,24 @@
    "fim": "2026-10-25",
    "itens": [
     {
-     "assunto": "Genuvaro, genuvalgo e torções",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 33
+     "assunto": "Lesões do manguito rotador",
+     "area": "Ombro e cotovelo",
+     "quantidade": 12
     },
     {
-     "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+     "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Luxação do joelho e lesões ligamentares",
      "area": "Trauma adulto",
-     "quantidade": 27
+     "quantidade": 9
+    },
+    {
+     "assunto": "Neuropatia ulnar e outras compressões",
+     "area": "Mão e punho",
+     "quantidade": 34
     }
    ],
    "total": 60
@@ -5434,14 +5444,14 @@
    "fim": "2026-11-01",
    "itens": [
     {
-     "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
-     "area": "Trauma adulto",
-     "quantidade": 11
+     "assunto": "Neuropatia ulnar e outras compressões",
+     "area": "Mão e punho",
+     "quantidade": 14
     },
     {
-     "assunto": "Lesões do manguito rotador",
+     "assunto": "Omartrose e artroplastia do ombro",
      "area": "Ombro e cotovelo",
-     "quantidade": 49
+     "quantidade": 46
     }
    ],
    "total": 60
@@ -5452,19 +5462,24 @@
    "fim": "2026-11-08",
    "itens": [
     {
-     "assunto": "Lesões do manguito rotador",
+     "assunto": "Omartrose e artroplastia do ombro",
      "area": "Ombro e cotovelo",
-     "quantidade": 7
+     "quantidade": 2
     },
     {
-     "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
-     "area": "Ortopedia pediátrica",
+     "assunto": "Anatomia do quadril",
+     "area": "Quadril",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Artroplastia total: componentes e fixação",
+     "area": "Quadril",
      "quantidade": 45
     },
     {
-     "assunto": "Anatomia do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 8
+     "assunto": "Fraturas do antebraço e punho na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 7
     }
    ],
    "total": 60
@@ -5475,14 +5490,14 @@
    "fim": "2026-11-15",
    "itens": [
     {
-     "assunto": "Anatomia do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 44
+     "assunto": "Fraturas do antebraço e punho na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 38
     },
     {
-     "assunto": "Luxação do joelho e lesões ligamentares",
-     "area": "Trauma adulto",
-     "quantidade": 16
+     "assunto": "Fraturas do fêmur e da perna na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 22
     }
    ],
    "total": 60
@@ -5493,14 +5508,14 @@
    "fim": "2026-11-22",
    "itens": [
     {
-     "assunto": "Luxação do joelho e lesões ligamentares",
-     "area": "Trauma adulto",
-     "quantidade": 34
+     "assunto": "Fraturas do fêmur e da perna na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 20
     },
     {
-     "assunto": "Neuropatia ulnar e outras compressões",
-     "area": "Mão e punho",
-     "quantidade": 26
+     "assunto": "Instabilidade anterior do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 40
     }
    ],
    "total": 60
@@ -5511,14 +5526,19 @@
    "fim": "2026-11-29",
    "itens": [
     {
-     "assunto": "Neuropatia ulnar e outras compressões",
-     "area": "Mão e punho",
-     "quantidade": 22
+     "assunto": "Instabilidade anterior do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 2
     },
     {
-     "assunto": "Omartrose e artroplastia do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 38
+     "assunto": "Fraturas da coluna toracolombar",
+     "area": "Trauma adulto",
+     "quantidade": 41
+    },
+    {
+     "assunto": "Fraturas diafisárias do antebraço",
+     "area": "Trauma adulto",
+     "quantidade": 17
     }
    ],
    "total": 60
@@ -5529,19 +5549,14 @@
    "fim": "2026-12-06",
    "itens": [
     {
-     "assunto": "Omartrose e artroplastia do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 10
+     "assunto": "Fraturas diafisárias do antebraço",
+     "area": "Trauma adulto",
+     "quantidade": 24
     },
     {
-     "assunto": "Anatomia do quadril",
-     "area": "Quadril",
-     "quantidade": 47
-    },
-    {
-     "assunto": "Artroplastia total: componentes e fixação",
-     "area": "Quadril",
-     "quantidade": 3
+     "assunto": "Anatomia da coluna",
+     "area": "Coluna",
+     "quantidade": 36
     }
    ],
    "total": 60
@@ -5552,14 +5567,19 @@
    "fim": "2026-12-13",
    "itens": [
     {
-     "assunto": "Artroplastia total: componentes e fixação",
-     "area": "Quadril",
-     "quantidade": 42
+     "assunto": "Anatomia da coluna",
+     "area": "Coluna",
+     "quantidade": 4
     },
     {
-     "assunto": "Fraturas do antebraço e punho na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 18
+     "assunto": "Fratura do úmero proximal",
+     "area": "Trauma adulto",
+     "quantidade": 40
+    },
+    {
+     "assunto": "Anatomia do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 16
     }
    ],
    "total": 60
@@ -5570,14 +5590,14 @@
    "fim": "2026-12-20",
    "itens": [
     {
-     "assunto": "Fraturas do antebraço e punho na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 27
+     "assunto": "Anatomia do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 23
     },
     {
-     "assunto": "Fraturas do fêmur e da perna na criança",
+     "assunto": "Displasia do desenvolvimento do quadril",
      "area": "Ortopedia pediátrica",
-     "quantidade": 33
+     "quantidade": 37
     }
    ],
    "total": 60
@@ -5588,19 +5608,19 @@
    "fim": "2026-12-27",
    "itens": [
     {
-     "assunto": "Fraturas do fêmur e da perna na criança",
+     "assunto": "Displasia do desenvolvimento do quadril",
      "area": "Ortopedia pediátrica",
-     "quantidade": 9
+     "quantidade": 2
     },
     {
-     "assunto": "Instabilidade anterior do ombro",
+     "assunto": "Instabilidade do cotovelo",
      "area": "Ombro e cotovelo",
-     "quantidade": 42
+     "quantidade": 37
     },
     {
-     "assunto": "Fraturas da coluna toracolombar",
-     "area": "Trauma adulto",
-     "quantidade": 9
+     "assunto": "Lesões dos tendões flexores",
+     "area": "Mão e punho",
+     "quantidade": 21
     }
    ],
    "total": 60
@@ -5611,14 +5631,19 @@
    "fim": "2027-01-03",
    "itens": [
     {
-     "assunto": "Fraturas da coluna toracolombar",
-     "area": "Trauma adulto",
-     "quantidade": 32
+     "assunto": "Lesões dos tendões flexores",
+     "area": "Mão e punho",
+     "quantidade": 16
     },
     {
-     "assunto": "Fraturas diafisárias do antebraço",
+     "assunto": "Metástases ósseas",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 35
+    },
+    {
+     "assunto": "Síndrome compartimental",
      "area": "Trauma adulto",
-     "quantidade": 28
+     "quantidade": 9
     }
    ],
    "total": 60
@@ -5629,19 +5654,14 @@
    "fim": "2027-01-10",
    "itens": [
     {
-     "assunto": "Fraturas diafisárias do antebraço",
+     "assunto": "Síndrome compartimental",
      "area": "Trauma adulto",
-     "quantidade": 13
+     "quantidade": 26
     },
     {
-     "assunto": "Anatomia da coluna",
+     "assunto": "Hérnia de disco lombar",
      "area": "Coluna",
-     "quantidade": 40
-    },
-    {
-     "assunto": "Fratura do úmero proximal",
-     "area": "Trauma adulto",
-     "quantidade": 7
+     "quantidade": 34
     }
    ],
    "total": 60
@@ -5652,13 +5672,13 @@
    "fim": "2027-01-17",
    "itens": [
     {
-     "assunto": "Fratura do úmero proximal",
-     "area": "Trauma adulto",
+     "assunto": "Estadiamento, biópsia e margens",
+     "area": "Tumores ósseos e de partes moles",
      "quantidade": 33
     },
     {
-     "assunto": "Anatomia do pé e tornozelo",
-     "area": "Pé e tornozelo",
+     "assunto": "Lesão do ligamento cruzado anterior",
+     "area": "Joelho",
      "quantidade": 27
     }
    ],
@@ -5670,19 +5690,19 @@
    "fim": "2027-01-24",
    "itens": [
     {
-     "assunto": "Anatomia do pé e tornozelo",
-     "area": "Pé e tornozelo",
-     "quantidade": 12
+     "assunto": "Lesão do ligamento cruzado anterior",
+     "area": "Joelho",
+     "quantidade": 6
     },
     {
-     "assunto": "Displasia do desenvolvimento do quadril",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 39
-    },
-    {
-     "assunto": "Instabilidade do cotovelo",
+     "assunto": "Lesões do bíceps",
      "area": "Ombro e cotovelo",
-     "quantidade": 9
+     "quantidade": 33
+    },
+    {
+     "assunto": "Osteomielite aguda",
+     "area": "Conceitos básicos",
+     "quantidade": 21
     }
    ],
    "total": 60
@@ -5693,14 +5713,19 @@
    "fim": "2027-01-31",
    "itens": [
     {
-     "assunto": "Instabilidade do cotovelo",
-     "area": "Ombro e cotovelo",
-     "quantidade": 28
+     "assunto": "Osteomielite aguda",
+     "area": "Conceitos básicos",
+     "quantidade": 12
     },
     {
-     "assunto": "Lesões dos tendões flexores",
-     "area": "Mão e punho",
+     "assunto": "Displasias esqueléticas e síndromes",
+     "area": "Ortopedia pediátrica",
      "quantidade": 32
+    },
+    {
+     "assunto": "Lesão medular e síndromes medulares",
+     "area": "Coluna",
+     "quantidade": 16
     }
    ],
    "total": 60
@@ -5711,19 +5736,19 @@
    "fim": "2027-02-07",
    "itens": [
     {
-     "assunto": "Lesões dos tendões flexores",
-     "area": "Mão e punho",
-     "quantidade": 5
+     "assunto": "Lesão medular e síndromes medulares",
+     "area": "Coluna",
+     "quantidade": 15
     },
     {
-     "assunto": "Metástases ósseas",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 35
+     "assunto": "Paralisia cerebral",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 31
     },
     {
-     "assunto": "Síndrome compartimental",
-     "area": "Trauma adulto",
-     "quantidade": 20
+     "assunto": "Anatomia do joelho",
+     "area": "Joelho",
+     "quantidade": 14
     }
    ],
    "total": 60
@@ -5734,19 +5759,19 @@
    "fim": "2027-02-14",
    "itens": [
     {
-     "assunto": "Síndrome compartimental",
-     "area": "Trauma adulto",
-     "quantidade": 15
+     "assunto": "Anatomia do joelho",
+     "area": "Joelho",
+     "quantidade": 16
     },
     {
-     "assunto": "Hérnia de disco lombar",
+     "assunto": "Escoliose idiopática",
      "area": "Coluna",
-     "quantidade": 34
+     "quantidade": 30
     },
     {
-     "assunto": "Estadiamento, biópsia e margens",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 11
+     "assunto": "Fratura da escápula",
+     "area": "Trauma adulto",
+     "quantidade": 14
     }
    ],
    "total": 60
@@ -5757,19 +5782,19 @@
    "fim": "2027-02-21",
    "itens": [
     {
-     "assunto": "Estadiamento, biópsia e margens",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 22
+     "assunto": "Fratura da escápula",
+     "area": "Trauma adulto",
+     "quantidade": 16
     },
     {
-     "assunto": "Lesão do ligamento cruzado anterior",
+     "assunto": "Princípios de osteossíntese",
+     "area": "Conceitos básicos",
+     "quantidade": 30
+    },
+    {
+     "assunto": "Artroplastia total do joelho",
      "area": "Joelho",
-     "quantidade": 33
-    },
-    {
-     "assunto": "Lesões do bíceps",
-     "area": "Ombro e cotovelo",
-     "quantidade": 5
+     "quantidade": 14
     }
    ],
    "total": 60
@@ -5780,14 +5805,19 @@
    "fim": "2027-02-28",
    "itens": [
     {
-     "assunto": "Lesões do bíceps",
-     "area": "Ombro e cotovelo",
-     "quantidade": 28
+     "assunto": "Artroplastia total do joelho",
+     "area": "Joelho",
+     "quantidade": 15
     },
     {
-     "assunto": "Osteomielite aguda",
-     "area": "Conceitos básicos",
-     "quantidade": 32
+     "assunto": "Fratura da clavícula",
+     "area": "Trauma adulto",
+     "quantidade": 29
+    },
+    {
+     "assunto": "Fraturas do tálus e do calcâneo",
+     "area": "Trauma adulto",
+     "quantidade": 16
     }
    ],
    "total": 60
@@ -5798,19 +5828,19 @@
    "fim": "2027-03-07",
    "itens": [
     {
-     "assunto": "Osteomielite aguda",
-     "area": "Conceitos básicos",
-     "quantidade": 1
+     "assunto": "Fraturas do tálus e do calcâneo",
+     "area": "Trauma adulto",
+     "quantidade": 13
     },
     {
-     "assunto": "Displasias esqueléticas e síndromes",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 32
+     "assunto": "Fraturas dos metacarpos e falanges",
+     "area": "Trauma adulto",
+     "quantidade": 28
     },
     {
-     "assunto": "Lesão medular e síndromes medulares",
+     "assunto": "Espondilólise e espondilolistese",
      "area": "Coluna",
-     "quantidade": 27
+     "quantidade": 19
     }
    ],
    "total": 60
@@ -5821,19 +5851,24 @@
    "fim": "2027-03-14",
    "itens": [
     {
-     "assunto": "Lesão medular e síndromes medulares",
+     "assunto": "Espondilólise e espondilolistese",
      "area": "Coluna",
-     "quantidade": 4
+     "quantidade": 8
     },
     {
-     "assunto": "Paralisia cerebral",
+     "assunto": "Pé torto congênito",
      "area": "Ortopedia pediátrica",
-     "quantidade": 31
+     "quantidade": 27
     },
     {
-     "assunto": "Anatomia do joelho",
-     "area": "Joelho",
-     "quantidade": 25
+     "assunto": "Fratura da patela e lesão do aparelho extensor",
+     "area": "Trauma adulto",
+     "quantidade": 19
+    },
+    {
+     "assunto": "Lesões dos tendões extensores",
+     "area": "Mão e punho",
+     "quantidade": 6
     }
    ],
    "total": 60
@@ -5844,19 +5879,19 @@
    "fim": "2027-03-21",
    "itens": [
     {
-     "assunto": "Anatomia do joelho",
-     "area": "Joelho",
-     "quantidade": 5
+     "assunto": "Lesões dos tendões extensores",
+     "area": "Mão e punho",
+     "quantidade": 20
     },
     {
-     "assunto": "Escoliose idiopática",
-     "area": "Coluna",
-     "quantidade": 30
-    },
-    {
-     "assunto": "Fratura da escápula",
+     "assunto": "Fratura da diáfise do fêmur",
      "area": "Trauma adulto",
-     "quantidade": 25
+     "quantidade": 19
+    },
+    {
+     "assunto": "Condrossarcoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 21
     }
    ],
    "total": 60
@@ -5867,19 +5902,24 @@
    "fim": "2027-03-28",
    "itens": [
     {
-     "assunto": "Fratura da escápula",
-     "area": "Trauma adulto",
-     "quantidade": 5
+     "assunto": "Condrossarcoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 4
     },
     {
-     "assunto": "Princípios de osteossíntese",
-     "area": "Conceitos básicos",
-     "quantidade": 30
-    },
-    {
-     "assunto": "Artroplastia total do joelho",
-     "area": "Joelho",
+     "assunto": "Exame físico da mão e punho",
+     "area": "Mão e punho",
      "quantidade": 25
+    },
+    {
+     "assunto": "Hálux valgo",
+     "area": "Pé e tornozelo",
+     "quantidade": 25
+    },
+    {
+     "assunto": "Ossificação e crescimento",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 6
     }
    ],
    "total": 60
@@ -5890,134 +5930,9 @@
    "fim": "2027-04-04",
    "itens": [
     {
-     "assunto": "Artroplastia total do joelho",
-     "area": "Joelho",
-     "quantidade": 4
-    },
-    {
-     "assunto": "Fratura da clavícula",
-     "area": "Trauma adulto",
-     "quantidade": 29
-    },
-    {
-     "assunto": "Fraturas do tálus e do calcâneo",
-     "area": "Trauma adulto",
-     "quantidade": 27
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 25,
-   "inicio": "2027-04-05",
-   "fim": "2027-04-11",
-   "itens": [
-    {
-     "assunto": "Fraturas do tálus e do calcâneo",
-     "area": "Trauma adulto",
-     "quantidade": 2
-    },
-    {
-     "assunto": "Fraturas dos metacarpos e falanges",
-     "area": "Trauma adulto",
-     "quantidade": 28
-    },
-    {
-     "assunto": "Espondilólise e espondilolistese",
-     "area": "Coluna",
-     "quantidade": 27
-    },
-    {
-     "assunto": "Pé torto congênito",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 3
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 26,
-   "inicio": "2027-04-12",
-   "fim": "2027-04-18",
-   "itens": [
-    {
-     "assunto": "Pé torto congênito",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 24
-    },
-    {
-     "assunto": "Fratura da patela e lesão do aparelho extensor",
-     "area": "Trauma adulto",
-     "quantidade": 19
-    },
-    {
-     "assunto": "Lesões dos tendões extensores",
-     "area": "Mão e punho",
-     "quantidade": 17
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 27,
-   "inicio": "2027-04-19",
-   "fim": "2027-04-25",
-   "itens": [
-    {
-     "assunto": "Lesões dos tendões extensores",
-     "area": "Mão e punho",
-     "quantidade": 9
-    },
-    {
-     "assunto": "Fratura da diáfise do fêmur",
-     "area": "Trauma adulto",
-     "quantidade": 19
-    },
-    {
-     "assunto": "Condrossarcoma",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 25
-    },
-    {
-     "assunto": "Exame físico da mão e punho",
-     "area": "Mão e punho",
-     "quantidade": 7
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 28,
-   "inicio": "2027-04-26",
-   "fim": "2027-05-02",
-   "itens": [
-    {
-     "assunto": "Exame físico da mão e punho",
-     "area": "Mão e punho",
-     "quantidade": 18
-    },
-    {
-     "assunto": "Hálux valgo",
-     "area": "Pé e tornozelo",
-     "quantidade": 25
-    },
-    {
      "assunto": "Ossificação e crescimento",
      "area": "Ortopedia pediátrica",
-     "quantidade": 17
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 29,
-   "inicio": "2027-05-03",
-   "fim": "2027-05-09",
-   "itens": [
-    {
-     "assunto": "Ossificação e crescimento",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 8
+     "quantidade": 19
     },
     {
      "assunto": "Tíbia vara (Blount)",
@@ -6032,16 +5947,21 @@
     {
      "assunto": "Fratura do anel pélvico",
      "area": "Trauma adulto",
-     "quantidade": 17
+     "quantidade": 6
     }
    ],
    "total": 60
   },
   {
-   "semana": 30,
-   "inicio": "2027-05-10",
-   "fim": "2027-05-16",
+   "semana": 25,
+   "inicio": "2027-04-05",
+   "fim": "2027-04-11",
    "itens": [
+    {
+     "assunto": "Fratura do anel pélvico",
+     "area": "Trauma adulto",
+     "quantidade": 11
+    },
     {
      "assunto": "Fratura do planalto tibial",
      "area": "Trauma adulto",
@@ -6055,25 +5975,25 @@
     {
      "assunto": "Joelho da criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 17
-    },
-    {
-     "assunto": "Instabilidade do carpo",
-     "area": "Mão e punho",
-     "quantidade": 9
+     "quantidade": 15
     }
    ],
    "total": 60
   },
   {
-   "semana": 31,
-   "inicio": "2027-05-17",
-   "fim": "2027-05-23",
+   "semana": 26,
+   "inicio": "2027-04-12",
+   "fim": "2027-04-18",
    "itens": [
+    {
+     "assunto": "Joelho da criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 2
+    },
     {
      "assunto": "Instabilidade do carpo",
      "area": "Mão e punho",
-     "quantidade": 14
+     "quantidade": 23
     },
     {
      "assunto": "Lesão do ligamento cruzado posterior",
@@ -6083,25 +6003,25 @@
     {
      "assunto": "Fratura do úmero distal",
      "area": "Trauma adulto",
-     "quantidade": 17
-    },
-    {
-     "assunto": "Fraturas da pelve e do quadril na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 6
+     "quantidade": 12
     }
    ],
    "total": 60
   },
   {
-   "semana": 32,
-   "inicio": "2027-05-24",
-   "fim": "2027-05-30",
+   "semana": 27,
+   "inicio": "2027-04-19",
+   "fim": "2027-04-25",
    "itens": [
+    {
+     "assunto": "Fratura do úmero distal",
+     "area": "Trauma adulto",
+     "quantidade": 5
+    },
     {
      "assunto": "Fraturas da pelve e do quadril na criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 11
+     "quantidade": 17
     },
     {
      "assunto": "Osteossarcoma",
@@ -6111,25 +6031,25 @@
     {
      "assunto": "Pseudartrose e retardo de consolidação",
      "area": "Conceitos básicos",
-     "quantidade": 22
-    },
-    {
-     "assunto": "Fratura da diáfise da tíbia",
-     "area": "Trauma adulto",
-     "quantidade": 5
+     "quantidade": 16
     }
    ],
    "total": 60
   },
   {
-   "semana": 33,
-   "inicio": "2027-05-31",
-   "fim": "2027-06-06",
+   "semana": 28,
+   "inicio": "2027-04-26",
+   "fim": "2027-05-02",
    "itens": [
+    {
+     "assunto": "Pseudartrose e retardo de consolidação",
+     "area": "Conceitos básicos",
+     "quantidade": 6
+    },
     {
      "assunto": "Fratura da diáfise da tíbia",
      "area": "Trauma adulto",
-     "quantidade": 11
+     "quantidade": 16
     },
     {
      "assunto": "Fratura subtrocantérica",
@@ -6144,20 +6064,20 @@
     {
      "assunto": "Lesões de nervos periféricos",
      "area": "Mão e punho",
-     "quantidade": 17
+     "quantidade": 6
     }
    ],
    "total": 60
   },
   {
-   "semana": 34,
-   "inicio": "2027-06-07",
-   "fim": "2027-06-13",
+   "semana": 29,
+   "inicio": "2027-05-03",
+   "fim": "2027-05-09",
    "itens": [
     {
      "assunto": "Lesões de nervos periféricos",
      "area": "Mão e punho",
-     "quantidade": 4
+     "quantidade": 15
     },
     {
      "assunto": "Tumor de células gigantes",
@@ -6172,25 +6092,25 @@
     {
      "assunto": "Epifisiólise proximal do fêmur",
      "area": "Ortopedia pediátrica",
-     "quantidade": 15
-    },
-    {
-     "assunto": "Fratura do colo do fêmur",
-     "area": "Trauma adulto",
-     "quantidade": 6
+     "quantidade": 10
     }
    ],
    "total": 60
   },
   {
-   "semana": 35,
-   "inicio": "2027-06-14",
-   "fim": "2027-06-20",
+   "semana": 30,
+   "inicio": "2027-05-10",
+   "fim": "2027-05-16",
    "itens": [
+    {
+     "assunto": "Epifisiólise proximal do fêmur",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    },
     {
      "assunto": "Fratura do colo do fêmur",
      "area": "Trauma adulto",
-     "quantidade": 9
+     "quantidade": 15
     },
     {
      "assunto": "Fraturas da coluna toracolombar",
@@ -6210,20 +6130,20 @@
     {
      "assunto": "Exame físico do ombro",
      "area": "Ombro e cotovelo",
-     "quantidade": 18
+     "quantidade": 7
     }
    ],
    "total": 60
   },
   {
-   "semana": 36,
-   "inicio": "2027-06-21",
-   "fim": "2027-06-27",
+   "semana": 31,
+   "inicio": "2027-05-17",
+   "fim": "2027-05-23",
    "itens": [
     {
      "assunto": "Exame físico do ombro",
      "area": "Ombro e cotovelo",
-     "quantidade": 2
+     "quantidade": 13
     },
     {
      "assunto": "Lesões meniscais",
@@ -6238,25 +6158,25 @@
     {
      "assunto": "Doença de Dupuytren",
      "area": "Mão e punho",
-     "quantidade": 14
-    },
-    {
-     "assunto": "Exame neurológico e radiculopatias",
-     "area": "Coluna",
-     "quantidade": 4
+     "quantidade": 7
     }
    ],
    "total": 60
   },
   {
-   "semana": 37,
-   "inicio": "2027-06-28",
-   "fim": "2027-07-04",
+   "semana": 32,
+   "inicio": "2027-05-24",
+   "fim": "2027-05-30",
    "itens": [
+    {
+     "assunto": "Doença de Dupuytren",
+     "area": "Mão e punho",
+     "quantidade": 7
+    },
     {
      "assunto": "Exame neurológico e radiculopatias",
      "area": "Coluna",
-     "quantidade": 10
+     "quantidade": 14
     },
     {
      "assunto": "Fraturas supracondilianas do úmero",
@@ -6271,25 +6191,25 @@
     {
      "assunto": "Dor e analgesia",
      "area": "Conceitos básicos",
-     "quantidade": 19
-    },
-    {
-     "assunto": "Osteonecrose da cabeça femoral",
-     "area": "Quadril",
-     "quantidade": 3
+     "quantidade": 11
     }
    ],
    "total": 60
   },
   {
-   "semana": 38,
-   "inicio": "2027-07-05",
-   "fim": "2027-07-11",
+   "semana": 33,
+   "inicio": "2027-05-31",
+   "fim": "2027-06-06",
    "itens": [
+    {
+     "assunto": "Dor e analgesia",
+     "area": "Conceitos básicos",
+     "quantidade": 8
+    },
     {
      "assunto": "Osteonecrose da cabeça femoral",
      "area": "Quadril",
-     "quantidade": 16
+     "quantidade": 19
     },
     {
      "assunto": "Pé diabético e neuroartropatia de Charcot",
@@ -6300,24 +6220,19 @@
      "assunto": "Displasia fibrosa",
      "area": "Tumores ósseos e de partes moles",
      "quantidade": 14
-    },
-    {
-     "assunto": "Hérnia de disco e mielopatia cervical",
-     "area": "Coluna",
-     "quantidade": 11
     }
    ],
    "total": 60
   },
   {
-   "semana": 39,
-   "inicio": "2027-07-12",
-   "fim": "2027-07-18",
+   "semana": 34,
+   "inicio": "2027-06-07",
+   "fim": "2027-06-13",
    "itens": [
     {
      "assunto": "Hérnia de disco e mielopatia cervical",
      "area": "Coluna",
-     "quantidade": 3
+     "quantidade": 14
     },
     {
      "assunto": "Mão reumatoide",
@@ -6327,30 +6242,30 @@
     {
      "assunto": "Artroscopia e vias de acesso do ombro",
      "area": "Ombro e cotovelo",
-     "quantidade": 18
+     "quantidade": 15
     },
     {
      "assunto": "Osteoporose: diagnóstico",
      "area": "Osteometabólicas",
-     "quantidade": 18
-    },
-    {
-     "assunto": "Capsulite adesiva",
-     "area": "Ombro e cotovelo",
-     "quantidade": 7
+     "quantidade": 17
     }
    ],
    "total": 60
   },
   {
-   "semana": 40,
-   "inicio": "2027-07-19",
-   "fim": "2027-07-25",
+   "semana": 35,
+   "inicio": "2027-06-14",
+   "fim": "2027-06-20",
    "itens": [
+    {
+     "assunto": "Osteoporose: diagnóstico",
+     "area": "Osteometabólicas",
+     "quantidade": 1
+    },
     {
      "assunto": "Capsulite adesiva",
      "area": "Ombro e cotovelo",
-     "quantidade": 6
+     "quantidade": 13
     },
     {
      "assunto": "Lesões ligamentares dos dedos",
@@ -6380,20 +6295,20 @@
     {
      "assunto": "Artrite séptica",
      "area": "Conceitos básicos",
-     "quantidade": 9
+     "quantidade": 1
     }
    ],
    "total": 60
   },
   {
-   "semana": 41,
-   "inicio": "2027-07-26",
-   "fim": "2027-08-01",
+   "semana": 36,
+   "inicio": "2027-06-21",
+   "fim": "2027-06-27",
    "itens": [
     {
      "assunto": "Artrite séptica",
      "area": "Conceitos básicos",
-     "quantidade": 3
+     "quantidade": 11
     },
     {
      "assunto": "Coluna e pescoço da criança",
@@ -6418,20 +6333,20 @@
     {
      "assunto": "Coalizões tarsais",
      "area": "Pé e tornozelo",
-     "quantidade": 14
+     "quantidade": 6
     }
    ],
    "total": 60
   },
   {
-   "semana": 42,
-   "inicio": "2027-08-02",
-   "fim": "2027-08-08",
+   "semana": 37,
+   "inicio": "2027-06-28",
+   "fim": "2027-07-04",
    "itens": [
     {
      "assunto": "Coalizões tarsais",
      "area": "Pé e tornozelo",
-     "quantidade": 2
+     "quantidade": 10
     },
     {
      "assunto": "Instabilidade femoropatelar",
@@ -6451,20 +6366,20 @@
     {
      "assunto": "Epicondilite lateral e medial",
      "area": "Ombro e cotovelo",
-     "quantidade": 10
+     "quantidade": 2
     }
    ],
    "total": 60
   },
   {
-   "semana": 43,
-   "inicio": "2027-08-09",
-   "fim": "2027-08-15",
+   "semana": 38,
+   "inicio": "2027-07-05",
+   "fim": "2027-07-11",
    "itens": [
     {
      "assunto": "Epicondilite lateral e medial",
      "area": "Ombro e cotovelo",
-     "quantidade": 2
+     "quantidade": 10
     },
     {
      "assunto": "Lesões musculares",
@@ -6489,25 +6404,25 @@
     {
      "assunto": "Fratura do rádio distal",
      "area": "Trauma adulto",
-     "quantidade": 7
-    },
-    {
-     "assunto": "Fratura do tornozelo",
-     "area": "Trauma adulto",
-     "quantidade": 3
+     "quantidade": 2
     }
    ],
    "total": 60
   },
   {
-   "semana": 44,
-   "inicio": "2027-08-16",
-   "fim": "2027-08-22",
+   "semana": 39,
+   "inicio": "2027-07-12",
+   "fim": "2027-07-18",
    "itens": [
+    {
+     "assunto": "Fratura do rádio distal",
+     "area": "Trauma adulto",
+     "quantidade": 5
+    },
     {
      "assunto": "Fratura do tornozelo",
      "area": "Trauma adulto",
-     "quantidade": 4
+     "quantidade": 7
     },
     {
      "assunto": "Fraturas do tornozelo na criança",
@@ -6532,25 +6447,25 @@
     {
      "assunto": "Doença de Kienböck",
      "area": "Mão e punho",
-     "quantidade": 11
-    },
-    {
-     "assunto": "Fraturas da coluna cervical",
-     "area": "Coluna",
-     "quantidade": 4
+     "quantidade": 7
     }
    ],
    "total": 60
   },
   {
-   "semana": 45,
-   "inicio": "2027-08-23",
-   "fim": "2027-08-29",
+   "semana": 40,
+   "inicio": "2027-07-19",
+   "fim": "2027-07-25",
    "itens": [
+    {
+     "assunto": "Doença de Kienböck",
+     "area": "Mão e punho",
+     "quantidade": 4
+    },
     {
      "assunto": "Fraturas da coluna cervical",
      "area": "Coluna",
-     "quantidade": 7
+     "quantidade": 11
     },
     {
      "assunto": "Fraturas do úmero proximal e da escápula",
@@ -6575,21 +6490,26 @@
     {
      "assunto": "Fraturas da clavícula e do úmero proximal na criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 6
-    },
-    {
-     "assunto": "Fratura transtrocantérica",
-     "area": "Trauma adulto",
-     "quantidade": 3
+     "quantidade": 1
     }
    ],
    "total": 60
   },
   {
-   "semana": 46,
-   "inicio": "2027-08-30",
-   "fim": "2027-09-05",
+   "semana": 41,
+   "inicio": "2027-07-26",
+   "fim": "2027-08-01",
    "itens": [
+    {
+     "assunto": "Fraturas da clavícula e do úmero proximal na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Fratura transtrocantérica",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
     {
      "assunto": "Imagem do pé e tornozelo",
      "area": "Pé e tornozelo",
@@ -6613,21 +6533,26 @@
     {
      "assunto": "Ombro e cotovelo da criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 6
-    },
-    {
-     "assunto": "Osteogênese imperfeita",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 6
+     "quantidade": 4
     }
    ],
    "total": 60
   },
   {
-   "semana": 47,
-   "inicio": "2027-09-06",
-   "fim": "2027-09-12",
+   "semana": 42,
+   "inicio": "2027-08-02",
+   "fim": "2027-08-08",
    "itens": [
+    {
+     "assunto": "Ombro e cotovelo da criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Osteogênese imperfeita",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 6
+    },
     {
      "assunto": "Fratura da diáfise do úmero",
      "area": "Trauma adulto",
@@ -6656,25 +6581,25 @@
     {
      "assunto": "Fraturas do tornozelo e do pilão tibial",
      "area": "Pé e tornozelo",
-     "quantidade": 10
-    },
-    {
-     "assunto": "Lesões osteocondrais do tálus",
-     "area": "Pé e tornozelo",
-     "quantidade": 4
+     "quantidade": 6
     }
    ],
    "total": 60
   },
   {
-   "semana": 48,
-   "inicio": "2027-09-13",
-   "fim": "2027-09-19",
+   "semana": 43,
+   "inicio": "2027-08-09",
+   "fim": "2027-08-15",
    "itens": [
+    {
+     "assunto": "Fraturas do tornozelo e do pilão tibial",
+     "area": "Pé e tornozelo",
+     "quantidade": 4
+    },
     {
      "assunto": "Lesões osteocondrais do tálus",
      "area": "Pé e tornozelo",
-     "quantidade": 6
+     "quantidade": 10
     },
     {
      "assunto": "Mieloma múltiplo e plasmocitoma",
@@ -6704,21 +6629,26 @@
     {
      "assunto": "Maus-tratos",
      "area": "Ortopedia pediátrica",
-     "quantidade": 6
-    },
-    {
-     "assunto": "Pseudartrose congênita da tíbia e deformidades da perna",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 6
+     "quantidade": 4
     }
    ],
    "total": 60
   },
   {
-   "semana": 49,
-   "inicio": "2027-09-20",
-   "fim": "2027-09-26",
+   "semana": 44,
+   "inicio": "2027-08-16",
+   "fim": "2027-08-22",
    "itens": [
+    {
+     "assunto": "Maus-tratos",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Pseudartrose congênita da tíbia e deformidades da perna",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 6
+    },
     {
      "assunto": "Fratura do pilão tibial",
      "area": "Trauma adulto",
@@ -6762,25 +6692,25 @@
     {
      "assunto": "Tendão calcâneo",
      "area": "Pé e tornozelo",
-     "quantidade": 5
-    },
-    {
-     "assunto": "Amputações e próteses",
-     "area": "Conceitos básicos",
-     "quantidade": 5
+     "quantidade": 2
     }
    ],
    "total": 60
   },
   {
-   "semana": 50,
-   "inicio": "2027-09-27",
-   "fim": "2027-10-03",
+   "semana": 45,
+   "inicio": "2027-08-23",
+   "fim": "2027-08-29",
    "itens": [
+    {
+     "assunto": "Tendão calcâneo",
+     "area": "Pé e tornozelo",
+     "quantidade": 3
+    },
     {
      "assunto": "Amputações e próteses",
      "area": "Conceitos básicos",
-     "quantidade": 3
+     "quantidade": 8
     },
     {
      "assunto": "Doença de Paget",
@@ -6815,7 +6745,20 @@
     {
      "assunto": "Fraturas do pé na criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 5
+     "quantidade": 4
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 46,
+   "inicio": "2027-08-30",
+   "fim": "2027-09-05",
+   "itens": [
+    {
+     "assunto": "Fraturas do pé na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 1
     },
     {
      "assunto": "Metatarsalgia e neuroma de Morton",
@@ -6825,20 +6768,7 @@
     {
      "assunto": "Mão da criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 2
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 51,
-   "inicio": "2027-10-04",
-   "fim": "2027-10-10",
-   "itens": [
-    {
-     "assunto": "Mão da criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 3
+     "quantidade": 5
     },
     {
      "assunto": "Raquitismo e osteomalácia",
@@ -6893,7 +6823,20 @@
     {
      "assunto": "Lesões SLAP e do lábio superior",
      "area": "Ombro e cotovelo",
-     "quantidade": 4
+     "quantidade": 3
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 47,
+   "inicio": "2027-09-06",
+   "fim": "2027-09-12",
+   "itens": [
+    {
+     "assunto": "Lesões SLAP e do lábio superior",
+     "area": "Ombro e cotovelo",
+     "quantidade": 1
     },
     {
      "assunto": "Pé plano flexível",
@@ -6903,20 +6846,7 @@
     {
      "assunto": "Sarcomas de partes moles",
      "area": "Tumores ósseos e de partes moles",
-     "quantidade": 3
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 52,
-   "inicio": "2027-10-11",
-   "fim": "2027-10-17",
-   "itens": [
-    {
-     "assunto": "Sarcomas de partes moles",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 1
+     "quantidade": 4
     },
     {
      "assunto": "Síndrome do túnel do carpo",
@@ -6981,7 +6911,20 @@
     {
      "assunto": "Fixadores externos",
      "area": "Conceitos básicos",
-     "quantidade": 4
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 48,
+   "inicio": "2027-09-13",
+   "fim": "2027-09-19",
+   "itens": [
+    {
+     "assunto": "Fixadores externos",
+     "area": "Conceitos básicos",
+     "quantidade": 2
     },
     {
      "assunto": "Fraturas do quadril e do acetábulo",
@@ -6991,20 +6934,7 @@
     {
      "assunto": "Luxação acromioclavicular e esternoclavicular",
      "area": "Ombro e cotovelo",
-     "quantidade": 2
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 53,
-   "inicio": "2027-10-18",
-   "fim": "2027-10-24",
-   "itens": [
-    {
-     "assunto": "Luxação acromioclavicular e esternoclavicular",
-     "area": "Ombro e cotovelo",
-     "quantidade": 2
+     "quantidade": 4
     },
     {
      "assunto": "Osteotomias do quadril",
@@ -7014,7 +6944,7 @@
     {
      "assunto": "Peitoral maior e outras rupturas tendíneas",
      "area": "Ombro e cotovelo",
-     "quantidade": 4
+     "quantidade": 1
     },
     {
      "assunto": "Vias de acesso à coluna",
@@ -7085,7 +7015,15 @@
      "assunto": "Fraturas do escafoide e do carpo",
      "area": "Mão e punho",
      "quantidade": 3
-    },
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 49,
+   "inicio": "2027-09-20",
+   "fim": "2027-09-26",
+   "itens": [
     {
      "assunto": "Fraturas dos metacarpos e falanges",
      "area": "Mão e punho",
@@ -7094,20 +7032,7 @@
     {
      "assunto": "Biomecânica do joelho",
      "area": "Joelho",
-     "quantidade": 2
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 54,
-   "inicio": "2027-10-25",
-   "fim": "2027-10-31",
-   "itens": [
-    {
-     "assunto": "Biomecânica do joelho",
-     "area": "Joelho",
-     "quantidade": 3
+     "quantidade": 5
     },
     {
      "assunto": "Fraturas periprotéticas do quadril",
@@ -7197,21 +7122,26 @@
     {
      "assunto": "Reconstrução do LCA: enxertos e túneis",
      "area": "Joelho",
-     "quantidade": 3
-    },
-    {
-     "assunto": "Biomecânica do ombro e cotovelo",
-     "area": "Ombro e cotovelo",
-     "quantidade": 3
+     "quantidade": 1
     }
    ],
    "total": 60
   },
   {
-   "semana": 55,
-   "inicio": "2027-11-01",
-   "fim": "2027-11-07",
+   "semana": 50,
+   "inicio": "2027-09-27",
+   "fim": "2027-10-03",
    "itens": [
+    {
+     "assunto": "Reconstrução do LCA: enxertos e túneis",
+     "area": "Joelho",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Biomecânica do ombro e cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
     {
      "assunto": "Cordoma",
      "area": "Tumores ósseos e de partes moles",
@@ -7305,21 +7235,26 @@
     {
      "assunto": "Vias de acesso ao joelho",
      "area": "Joelho",
-     "quantidade": 3
-    },
-    {
-     "assunto": "Artroplastia unicompartimental",
-     "area": "Joelho",
-     "quantidade": 3
+     "quantidade": 1
     }
    ],
    "total": 60
   },
   {
-   "semana": 56,
-   "inicio": "2027-11-08",
-   "fim": "2027-11-14",
+   "semana": 51,
+   "inicio": "2027-10-04",
+   "fim": "2027-10-10",
    "itens": [
+    {
+     "assunto": "Vias de acesso ao joelho",
+     "area": "Joelho",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Artroplastia unicompartimental",
+     "area": "Joelho",
+     "quantidade": 3
+    },
     {
      "assunto": "Biomecânica da coluna",
      "area": "Coluna",
@@ -7413,21 +7348,26 @@
     {
      "assunto": "Osteonecrose da cabeça umeral",
      "area": "Ombro e cotovelo",
-     "quantidade": 3
-    },
-    {
-     "assunto": "Raquitismo e doenças metabólicas na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 3
+     "quantidade": 1
     }
    ],
    "total": 60
   },
   {
-   "semana": 57,
-   "inicio": "2027-11-15",
-   "fim": "2027-11-21",
+   "semana": 52,
+   "inicio": "2027-10-11",
+   "fim": "2027-10-17",
    "itens": [
+    {
+     "assunto": "Osteonecrose da cabeça umeral",
+     "area": "Ombro e cotovelo",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Raquitismo e doenças metabólicas na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
     {
      "assunto": "Soltura, osteólise e revisão",
      "area": "Quadril",
@@ -7466,25 +7406,25 @@
     {
      "assunto": "Outros temas do ombro e cotovelo",
      "area": "Ombro e cotovelo",
-     "quantidade": 5
-    },
-    {
-     "assunto": "Outras lesões pseudotumorais",
-     "area": "Tumores ósseos e de partes moles",
      "quantidade": 1
     }
    ],
    "total": 60
   },
   {
-   "semana": 58,
-   "inicio": "2027-11-22",
-   "fim": "2027-11-28",
+   "semana": 53,
+   "inicio": "2027-10-18",
+   "fim": "2027-10-24",
    "itens": [
+    {
+     "assunto": "Outros temas do ombro e cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 4
+    },
     {
      "assunto": "Outras lesões pseudotumorais",
      "area": "Tumores ósseos e de partes moles",
-     "quantidade": 2
+     "quantidade": 3
     },
     {
      "assunto": "Outros temas de ortopedia pediátrica",
@@ -7522,7 +7462,7 @@
      "quantidade": 3
     }
    ],
-   "total": 23
+   "total": 28
   }
  ],
  "historico": [
