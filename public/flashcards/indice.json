@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4970,
- "batalha": 4112,
- "soEstudo": 858,
+ "total": 5010,
+ "batalha": 4120,
+ "soEstudo": 890,
  "comImagem": 630,
  "simulados": 900,
- "autorais": 668,
+ "autorais": 708,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -113,27 +113,27 @@
   "mao": {
    "nome": "Mão e punho",
    "arquivo": "mao.json",
-   "total": 1032,
-   "batalha": 882,
+   "total": 1072,
+   "batalha": 890,
    "comImagem": 131,
    "simulados": 114,
    "tipos": {
     "Anatomia": 31,
-    "Armadilha": 1,
-    "Classificação": 15,
-    "Conceito": 45,
+    "Armadilha": 3,
+    "Classificação": 17,
+    "Conceito": 70,
     "Imagem": 100,
     "Na prova": 57,
-    "Par confundível": 10,
+    "Par confundível": 16,
     "Relâmpago": 749,
-    "Tabela": 24
+    "Tabela": 29
    },
    "assuntos": {
     "Anatomia da mão e punho": 261,
+    "Neuropatia ulnar e outras compressões": 89,
     "Lesões dos tendões flexores": 60,
     "Outras malformações congênitas": 55,
     "Fraturas dos metacarpos e falanges": 55,
-    "Neuropatia ulnar e outras compressões": 49,
     "Lesões de nervos periféricos": 40,
     "Instabilidade do carpo": 40,
     "Retalhos e cobertura cutânea": 33,
@@ -473,5 +473,5 @@
    }
   }
  },
- "assinatura": "49c63c178924"
+ "assinatura": "e08fbd12f094"
 }
