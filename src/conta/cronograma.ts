@@ -123,6 +123,16 @@ export async function salvarOpcoes(alterar: (atual: PlanoSalvo) => OpcoesPlano |
   if (!plano) return null
   const opcoes = alterar(plano)
   if (!opcoes) return plano
+  // Com a parte 21, manda só as chaves que mudaram; o servidor junta com o resto.
+  const antes = plano.opcoes ?? {}
+  const removeu = Object.keys(antes).some((k) => !(k in opcoes))
+  const patch = Object.fromEntries(Object.entries(opcoes).filter(([k, v]) => JSON.stringify(v) !== JSON.stringify((antes as Record<string, unknown>)[k])))
+  if (!Object.keys(patch).length && !removeu) return plano
+  if (!removeu) {
+    try { await chamarRpc('ajustar_opcoes_plano', { p_patch: patch }); return obterPlano() } catch (falha) {
+      if (!funcaoInexistente(falha)) throw falha
+    }
+  }
   return salvarPlano({ p_data_prova: plano.data_prova, p_intensidade: plano.intensidade, p_folgas: plano.folgas, p_prova: plano.prova, p_base: plano.base_respondidas, p_recomecar: false }, incluiSimulados(plano), opcoes)
 }
 
