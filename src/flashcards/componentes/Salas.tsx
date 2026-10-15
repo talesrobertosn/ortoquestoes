@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { tocar } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { andarDeChefe, CURA_LOJA, type ItemLoja, type OfertaSabio, type OpcaoSala, type Partida, type Porta } from '../motor/regras'
@@ -48,11 +48,18 @@ export function Portas({ partida, aoEntrar, rapido }: { partida: Partida; aoEntr
   const chefe = andarDeChefe(proximo, partida.modo)
   const adversario = inimigoDoAndar(proximo, partida.sementeBase, partida.modo).inimigo
   const vidaBaixa = partida.vida <= partida.vidaMax * 0.45
+  const vivo = useRef(true)
+  useEffect(() => { vivo.current = true; return () => { vivo.current = false } }, [])
   const entrar = useCallback((k: number) => {
     if (aberta !== null) return
     definirAberta(k)
     tocar('porta')
-    window.setTimeout(() => aoEntrar(k), rapido ? 220 : 700)
+    window.setTimeout(() => {
+      if (!vivo.current) return
+      aoEntrar(k)
+      // se a porta não abriu (a encruzilhada continua na tela), as portas voltam a responder
+      window.setTimeout(() => { if (vivo.current) definirAberta(null) }, 1200)
+    }, rapido ? 220 : 700)
   }, [aberta, aoEntrar, rapido])
   useEffect(() => {
     const aoTeclar = (e: KeyboardEvent) => { const k = Number(e.key); if (k >= 1 && k <= partida.portas.length) entrar(k - 1) }

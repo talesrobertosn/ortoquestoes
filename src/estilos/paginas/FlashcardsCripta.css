@@ -1,0 +1,93 @@
+/* =====================================================================
+   Cripta do Residente: fluidez e correções (15/10/2026)
+   Carregado depois de Flashcards.css (importado pela Arena). Fica num arquivo
+   à parte para não disputar linhas com a Biblioteca, que muda em paralelo.
+   ===================================================================== */
+
+/* ---------------------------------------------------------------------
+   Botão principal parado no lugar (celular em pé).
+   Antes, ao responder, a mão de alternativas sumia e o herói e o botão
+   desciam ~130 px deslizando: o toque em "Seguir" logo depois de responder
+   caía na mesa e nada acontecia. Agora o herói e o botão moram no rodapé
+   e a mão fica acima deles; quando ela sai, o verso cresce e o botão fica.
+   --------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .fc-arena--batalha .fc-jogador { grid-template-areas: "mao mao" "heroi acao"; row-gap: 8px; }
+  .fc-arena--batalha.fc-arena--fase-resposta .fc-jogador { grid-template-areas: "heroi acao"; }
+}
+
+/* ---------------------------------------------------------------------
+   Herói e botão sumidos depois de uma parada (celular deitado).
+   Nas paradas (portas, loja, preceptor, sala), a arena some com
+   `visibility: hidden` na .fc-batalha. No celular deitado, o herói e o botão
+   ficam dentro de .fc-jogador com `display: contents`, e o Chrome não
+   recalculava a visibilidade herdada por ele quando a parada acabava: o herói,
+   a vida e o botão Atacar/Seguir continuavam invisíveis e o toque atravessava.
+   A pessoa tocava em "Seguir" e nada acontecia, para sempre. A regra vale agora
+   em cada filho, que é recalculado quando a parada sai.
+   --------------------------------------------------------------------- */
+.fc-arena[data-parada] .fc-batalha > *, .fc-arena[data-parada] .fc-jogador > * { visibility: hidden; pointer-events: none; }
+
+/* ---------------------------------------------------------------------
+   Cena enquanto as camadas pintadas chegam: degradê nas cores da própria
+   cena (variáveis postas pelo Cenario). A pintura entra por cima, suave.
+   --------------------------------------------------------------------- */
+.fc-cena { background: radial-gradient(ellipse 120% 70% at 50% 38%, color-mix(in srgb, var(--espera-ceu, #1c1622) 86%, #fff), transparent 70%),
+  linear-gradient(var(--espera-ceu, #1c1622), var(--espera-chao, #0c0a10) 78%); }
+
+/* ---------------------------------------------------------------------
+   Dica dos poderes e relíquias (componentes/Dica.tsx). Balão do jogo, preso
+   à moldura: madeira escura, aro na cor do poder, seta que segue o alvo.
+   --------------------------------------------------------------------- */
+.fc-dica-jogo { position: absolute; z-index: 140; box-sizing: border-box; width: max-content; max-width: min(300px, calc(100% - 16px)); padding: 11px 13px 12px; border-radius: 12px;
+  color: #f6ead0; font: 500 14px/1.42 var(--fc-ui); text-align: left; pointer-events: none;
+  background: linear-gradient(180deg, #2c1f17, #18110c 70%);
+  box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px color-mix(in srgb, var(--cor) 62%, #8a6224), 0 0 0 4.5px #0c0604, 0 16px 34px rgba(0, 0, 0, .62), inset 0 1px 0 rgba(255, 240, 210, .12);
+  animation: fc-dica-entra .14s ease-out both; }
+.fc-dica-jogo--toque { pointer-events: auto; }
+.fc-dica-jogo::after { content: ""; position: absolute; left: var(--seta); bottom: -7px; width: 12px; height: 12px; transform: translateX(-50%) rotate(45deg); background: #18110c;
+  box-shadow: 1.5px 1.5px 0 0 color-mix(in srgb, var(--cor) 62%, #8a6224), 3px 3px 0 0 #0c0604; }
+.fc-dica-jogo--abaixo::after { bottom: auto; top: -7px; background: #2c1f17; box-shadow: -1.5px -1.5px 0 0 color-mix(in srgb, var(--cor) 62%, #8a6224), -3px -3px 0 0 #0c0604; }
+@keyframes fc-dica-entra { from { opacity: 0; translate: 0 4px; } }
+.fc-dica-jogo--abaixo { animation-name: fc-dica-entra-baixo; }
+@keyframes fc-dica-entra-baixo { from { opacity: 0; translate: 0 -4px; } }
+.fc-dica-jogo__cabeca { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.fc-dica-jogo__icone { flex: none; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, color-mix(in srgb, var(--cor) 55%, #2a1a2e), #150d16); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px color-mix(in srgb, var(--cor) 70%, #000); }
+.fc-modal .fc-dica-jogo__icone .fc-sprite { width: 24px; height: 24px; }
+.fc-dica-jogo__titulo { display: grid; gap: 1px; min-width: 0; }
+.fc-dica-jogo__titulo small { font: 800 10.5px/1.2 var(--fc-ui); letter-spacing: .1em; text-transform: uppercase; color: color-mix(in srgb, var(--cor) 70%, #f6e2b0); }
+.fc-dica-jogo__titulo strong { font: 900 16.5px/1.15 var(--fc-titulo); letter-spacing: .03em; color: #fff3d6; text-shadow: 0 1px 0 #000; }
+.fc-dica-jogo p { margin: 0; }
+.fc-dica-jogo__texto { color: #f6ead0; }
+.fc-dica-jogo__detalhe { margin-top: 4px !important; font-size: 12.5px; color: #cdbb98; }
+.fc-dica-jogo__estado { margin-top: 8px !important; padding-top: 7px; border-top: 1px solid rgba(233, 185, 85, .22); font: 800 12px/1.3 var(--fc-ui); letter-spacing: .04em; text-transform: uppercase; color: #f2c45a; }
+.fc-dica-jogo__acao { display: block; width: 100%; margin-top: 10px; min-height: 44px; border: 0; border-radius: 10px; cursor: pointer; font: 900 15px var(--fc-titulo); letter-spacing: .08em; text-transform: uppercase; color: #2a1606;
+  background: linear-gradient(#ffe8a8, #e0a83c 55%, #b07a1e); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #fff1c2, 0 0 0 4.5px #0c0604, 0 4px 0 #5a3a10; }
+.fc-dica-jogo__acao:active { transform: translateY(3px); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #fff1c2, 0 0 0 4.5px #0c0604, 0 1px 0 #5a3a10; }
+.fc-dica-jogo__lista { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; max-height: min(46vh, 320px); overflow: auto; }
+.fc-dica-jogo__lista li { display: flex; gap: 9px; align-items: flex-start; }
+.fc-dica-jogo__lista li > span:last-child { display: grid; gap: 1px; }
+.fc-dica-jogo__lista strong { font: 800 14px/1.2 var(--fc-ui); color: #fff3d6; }
+.fc-dica-jogo__lista small { font: 500 12.5px/1.35 var(--fc-ui); color: #e0d0b0; }
+.fc-dica-jogo__mini { flex: none; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 7px; transform: rotate(45deg) scale(.86);
+  background: radial-gradient(circle, color-mix(in srgb, var(--cor) 40%, #1a1020), #120a10); box-shadow: inset 0 0 0 1.5px var(--fc-ouro); }
+.fc-modal .fc-dica-jogo__mini .fc-sprite { width: 18px; height: 18px; transform: rotate(-45deg); }
+
+/* encaixes e relíquias viram alvos de verdade: realce no mouse, foco visível */
+.fc-encaixe { cursor: pointer; transition: transform .12s ease-out, filter .12s ease-out; -webkit-tap-highlight-color: transparent; }
+.fc-encaixe--espera { cursor: help; }
+.fc-encaixe--espera:not(.fc-encaixe--vazio) { filter: saturate(.75) brightness(.9); }
+.fc-encaixe:not(.fc-encaixe--vazio):hover { transform: translateY(-2px); filter: brightness(1.12); }
+.fc-encaixe:focus-visible, .fc-reliquia:focus-visible, .fc-reliquias-selo:focus-visible { outline: 3px solid #fff1c2; outline-offset: 3px; }
+.fc-reliquia { border: 0; padding: 0; color: inherit; cursor: help; transition: filter .12s ease-out, box-shadow .12s ease-out; -webkit-tap-highlight-color: transparent; }
+.fc-reliquia:hover { filter: brightness(1.2); box-shadow: inset 0 0 0 1.5px var(--fc-ouro), 0 0 12px color-mix(in srgb, var(--cor) 70%, transparent); }
+.fc-reliquias-selo { display: none; position: relative; align-items: center; gap: 4px; min-width: 40px; height: 36px; padding: 0 9px 0 6px; border: 0; border-radius: 10px; cursor: pointer; color: #fff3d6;
+  background: radial-gradient(circle at 30% 30%, rgba(233, 185, 85, .28), #150d16 75%); box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #b98a36, 0 0 0 4px #0c0604; -webkit-tap-highlight-color: transparent; }
+.fc-modal .fc-reliquias-selo .fc-sprite--icone { width: 20px; height: 20px; }
+.fc-reliquias-selo b { font: 800 13px var(--fc-ui); }
+@media (max-width: 640px), (orientation: landscape) and (max-height: 520px) and (min-width: 480px) {
+  .fc-reliquias-selo { display: inline-flex; }
+}
+@media (max-width: 640px) { .fc-reliquias-selo { height: 32px; min-width: 36px; } }
+@media (prefers-reduced-motion: reduce) { .fc-dica-jogo { animation: none; } }

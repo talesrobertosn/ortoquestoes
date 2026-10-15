@@ -44,44 +44,72 @@ export type CenaAmbientada = Cena | Paisagem
 export const PAISAGENS: readonly Paisagem[] = ['vilarejo', 'ruinas', 'vila', 'campoflorido', 'praia', 'estufa']
 const CAMADAS = ['fundo', 'meio', 'frente', 'luz'] as const
 type Camada = (typeof CAMADAS)[number]
-export type ImagensCenario = Record<Formato, Record<Camada, HTMLImageElement>>
+export type CamadasCenario = Record<Camada, HTMLImageElement>
+/** Camadas já carregadas de uma cena: só o formato da tela atual é baixado (o outro vem se a tela girar). */
+export type ImagensCenario = Partial<Record<Formato, CamadasCenario>>
 
 /** Cena do jogo → nome do arquivo pintado. */
 export const CENAS_PINTADAS: Partial<Record<CenaAmbientada, string>> = { campo: 'floresta', biblioteca: 'biblioteca', covil: 'covil', masmorra: 'masmorra', jardim: 'jardim', salao: 'salao', caverna: 'caverna', laboratorio: 'laboratorio', catacumba: 'catacumba', templo: 'templo', passarela: 'passarela', forja: 'forja', coliseu: 'coliseu', treino: 'treino', arquivo: 'arquivo', torre: 'torre', vilarejo: 'vilarejo', ruinas: 'ruinas', vila: 'vila', campoflorido: 'campoflorido', praia: 'praia', estufa: 'estufa' }
 
-const promessas = new Map<string, Promise<ImagensCenario | null>>()
-const prontas = new Map<string, ImagensCenario | null>()
+/** Mesmo corte de `pintarCamadas`: tela mais alta que larga usa as camadas em retrato. */
+export const formatoPara = (w: number, h: number): Formato => (h > w * 1.05 ? 'retrato' : 'paisagem')
+const formatoDaJanela = (): Formato => (typeof window === 'undefined' ? 'paisagem' : formatoPara(window.innerWidth, window.innerHeight))
+
+const promessas = new Map<string, Promise<CamadasCenario | null>>()
+const prontas = new Map<string, ImagensCenario>()
+const falhas = new Set<string>()
 
 function carregar(src: string) {
   return new Promise<HTMLImageElement>((ok, falha) => {
     const img = new Image()
     img.decoding = 'async'
-    img.onload = () => ok(img)
+    img.onload = () => {
+      // decodifica antes de entregar: o primeiro drawImage não trava o quadro (celular)
+      if (typeof img.decode === 'function') img.decode().then(() => ok(img), () => ok(img))
+      else ok(img)
+    }
     img.onerror = falha
     img.src = src
   })
 }
 
-/** Carrega as 8 camadas de uma cena uma vez só (cache do módulo). Devolve null se algo falhar: o jogo usa a cena antiga. */
-export function carregarCenarioPintado(nome: string): Promise<ImagensCenario | null> {
-  let p = promessas.get(nome)
+/**
+ * Carrega as 4 camadas de uma cena, no formato pedido (por padrão, o da tela),
+ * uma vez só (cache do módulo). Antes baixava os dois formatos (8 PNGs) e a
+ * metade nunca era usada. Devolve null se algo falhar: o jogo usa a cena antiga.
+ */
+export function carregarCenarioPintado(nome: string, formato: Formato = formatoDaJanela()): Promise<ImagensCenario | null> {
+  const chave = nome + ':' + formato
+  let p = promessas.get(chave)
   if (!p) {
-    const formatos: Formato[] = ['paisagem', 'retrato']
-    p = Promise.all(formatos.flatMap((f) => CAMADAS.map((c) => carregar(recurso(`flashcards/cenarios/${nome}-${f}-${c}.png`)))))
+    p = Promise.all(CAMADAS.map((c) => carregar(recurso(`flashcards/cenarios/${nome}-${formato}-${c}.png`))))
       .then((imgs) => {
-        const r = {} as ImagensCenario
-        formatos.forEach((f, i) => { r[f] = {} as Record<Camada, HTMLImageElement>; CAMADAS.forEach((c, j) => { r[f][c] = imgs[i * CAMADAS.length + j] }) })
+        const r = {} as CamadasCenario
+        CAMADAS.forEach((c, j) => { r[c] = imgs[j] })
+        prontas.set(nome, { ...prontas.get(nome), [formato]: r })
         return r
       })
-      .catch(() => null)
-      .then((r) => { prontas.set(nome, r); return r })
-    promessas.set(nome, p)
+      .catch(() => { falhas.add(chave); return null })
+    promessas.set(chave, p)
   }
-  return p
+  return p.then((r) => (r ? prontas.get(nome) ?? null : null))
 }
 
-/** Já carregou? (para pintar direto, sem esperar um quadro). undefined = ainda carregando. */
-export const cenarioPintadoPronto = (nome: string) => prontas.get(nome)
+/**
+ * Já carregou o formato desta tela? `undefined` = ainda carregando (ou nem pedido);
+ * `null` = falhou (usar a cena antiga, pintada em código).
+ */
+export function cenarioPintadoPronto(nome: string, formato: Formato = formatoDaJanela()): ImagensCenario | null | undefined {
+  const r = prontas.get(nome)
+  if (r?.[formato]) return r
+  return falhas.has(nome + ':' + formato) ? null : undefined
+}
+
+/** Começa a baixar a cena antes de ela aparecer (próximo andar, tela de carregamento). */
+export function precarregarCenario(cena: CenaAmbientada | undefined) {
+  const nome = cena && CENAS_PINTADAS[cena]
+  if (nome) void carregarCenarioPintado(nome)
+}
 
 /**
  * Preenche os planos da cena com as camadas recortadas no centro.
@@ -92,8 +120,9 @@ export function pintarCamadas(
   planos: { fundo: HTMLCanvasElement; meio: HTMLCanvasElement; frente: HTMLCanvasElement; brilho: HTMLCanvasElement; luz?: HTMLCanvasElement },
   imgs: ImagensCenario, w: number, h: number,
 ) {
-  const formato: Formato = h > w * 1.05 ? 'retrato' : 'paisagem'
-  const conj = imgs[formato]
+  const formato = formatoPara(w, h)
+  const conj = imgs[formato] ?? imgs.retrato ?? imgs.paisagem
+  if (!conj) return 0
   const iw = conj.fundo.naturalWidth, ih = conj.fundo.naturalHeight
   const s = Math.max(2, Math.ceil(Math.max(w / iw, h / ih) - 0.02))
   const W = Math.ceil(w / s), H = Math.ceil(h / s)

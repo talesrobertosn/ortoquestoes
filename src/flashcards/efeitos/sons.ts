@@ -628,9 +628,20 @@ function carregarFaixa(nome: string): Promise<AudioBuffer | null> {
   return p ?? Promise.resolve(null)
 }
 
-/** Pré-carrega as faixas curtas e a da batalha (chamado no primeiro toque). */
+/**
+ * Pré-carrega as fanfarras curtas (chamado no primeiro toque). Fluidez, 15/10/2026:
+ * antes baixava de uma vez cinco faixas (1,1 MB, com as músicas do passeio e da
+ * batalha) no mesmo instante em que o jogo pedia a cena, os sprites e as figuras.
+ * Agora a música do lugar vem só quando toca (tocarMusica) e as fanfarras esperam
+ * o navegador folgar. Com o som desligado, nada é baixado.
+ */
+let trilhaAgendada = false
 export function preCarregarTrilha() {
-  for (const n of ['passeio', 'batalha', 'vitoria', 'recompensa', 'derrota']) void carregarFaixa(n)
+  if (trilhaAgendada || !ligado || volumeGeral <= 0) return
+  trilhaAgendada = true
+  const ocioso = (window as unknown as { requestIdleCallback?: (f: () => void, o?: { timeout: number }) => number }).requestIdleCallback
+  const baixar = () => { for (const n of ['vitoria', 'recompensa', 'derrota']) void carregarFaixa(n) }
+  window.setTimeout(() => (ocioso ? ocioso(baixar, { timeout: 5000 }) : baixar()), 4000)
 }
 
 function tocarFaixa(nome: Musica, buf: AudioBuffer) {
