@@ -11,7 +11,8 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
 import { carregarAcervo } from '../dados/acervo'
-import { autorizarFlashcardCripta, FLASHCARDS_NO_SERVIDOR, novaChave, iniciarCorrida, RANKING_NO_SERVIDOR, registrarAndar, sincronizarProgresso, vincularFlashcard, type LimiteCripta } from '../servidor'
+import { agendarEnvioJogo, autorizarFlashcardCripta, FLASHCARDS_NO_SERVIDOR, novaChave, iniciarCorrida, instalarContinuidade, RANKING_NO_SERVIDOR, registrarAndar, sincronizarJogo, sincronizarProgresso, vincularFlashcard, type LimiteCripta } from '../servidor'
+import { CHAVE_DO_MODO, EVENTO_PARTIDA_REMOTA, estavel, idDaPartida, idDoAparelho, limparPatamar, novoIdPartida, protegerModo, salvarPartidaLocal, salvarPatamar, tomarPendente, tomarVinda } from '../continuidade'
 import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro, pixelVfx, precarregarVfx } from '../efeitos/palco'
@@ -29,7 +30,7 @@ import { contarSessaoTerminada } from '../opiniao'
 import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, QUEIMADURA, VENENO, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
-  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
+  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
   CHAVE_SOM_ESCOLHIDO, RECORDES_VAZIOS, somPreferido, type Bestiario, type Recordes, type RegistroFlashcard, type SomEscolhido,
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
@@ -73,7 +74,6 @@ const ROTULO_CURA: Record<MotivoCura, string> = {
 /** Onde cada modo guarda a partida em andamento. */
 /** Sprites desenhados menores que o Golem: ganham escala maior na arena e na apresentação. */
 const PEQUENOS = new Set<string>(['serpente', 'raptor', 'gosma', 'cogumelo', 'mimico', 'corvo', 'morcego', 'goblin', 'esqueleto', 'escaravelho', 'aranha', 'cavaleiro', 'espectro', 'harpia', 'mao'])
-const CHAVE_DO_MODO: Record<Modo, string> = { masmorra: CHAVE_PARTIDA, torre: CHAVE_PARTIDA_TORRE }
 const lerAltar = () => ({ ...ALTAR_VAZIO, ...ler<Partial<EstadoAltar>>(CHAVE_ALTAR, {}) }) as EstadoAltar
 /** Nome do jogo e dos modos (usado no topo e na Entrada). */
 export const NOME_MODO: Record<Modo, string> = { masmorra: 'Cripta do Residente', torre: 'Torre do Título' }
@@ -123,7 +123,8 @@ function partidaSalva(modo: Modo): Partida | null {
   try {
     if (p.atual) motor.carta(p.atual.id)
     p.derrubaram.forEach((id) => motor.carta(id))
-    return p
+    // partidas salvas antes da continuidade ganham o id derivado agora (fica fixo daqui em diante)
+    return { ...p, idPartida: idDaPartida(p) }
   } catch { return null }
 }
 
@@ -131,7 +132,9 @@ function partidaSalva(modo: Modo): Partida | null {
  * Partida nova com a corrida aberta no servidor. A corrida é a "vida" da conta grátis
  * (uma por 24 h, parte 19 do SQL) e vale para o ranking quando ele estiver ligado.
  */
-function comCorrida(p: Partida): Partida {
+function comCorrida(q: Partida): Partida {
+  // toda partida nova ganha a sua identidade (continuidade entre aparelhos)
+  const p: Partida = { ...q, idPartida: novoIdPartida() }
   if (!FLASHCARDS_NO_SERVIDOR) return p
   const idCorrida = novaChave()
   // o Fácil não conta para o ranking (só abre a corrida da vida grátis)
@@ -143,7 +146,7 @@ function comCorrida(p: Partida): Partida {
 function patamarSalvo(): Partida | null {
   const p = migrarPartida(ler<unknown>(CHAVE_PATAMAR, null))
   if (!p || p.modo !== 'torre') return null
-  try { if (p.atual) motor.carta(p.atual.id); return { ...p, semente: sementeNova() } } catch { return null }
+  try { if (p.atual) motor.carta(p.atual.id); return { ...p, semente: sementeNova(), idPartida: novoIdPartida() } } catch { return null }
 }
 
 /** deitado: celular na horizontal (tela baixa e mais larga que alta), com layout próprio em três colunas. */
@@ -192,6 +195,7 @@ interface Mostrado {
  */
 export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo; abrirEstudo?: boolean }) {
   const [pronto, definirPronto] = useState(false)
+  const [vinda, definirVinda] = useState<number | undefined>()
   useEffect(() => {
     let vivo = true
     // enquanto o acervo chega, o primeiro andar já vai baixando (herói e Golem de Gesso; a floresta vem pelo Cenario abaixo)
@@ -200,7 +204,19 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
     // A sincronia do progresso (duas chamadas ao servidor) não segura a entrada por mais de 2,5 s:
     // ela continua em segundo plano e as próximas reposições do baralho já usam o resultado.
     const sincronia = Promise.race([sincronizarProgresso(), new Promise((ok) => window.setTimeout(ok, 2500))])
-    void Promise.all([carregarAcervo(), sincronia, carregarFaixas()]).then(([cartas, , faixas]) => { if (!vivo) return; prepararMotor(cartas, faixas); definirPronto(true) })
+    // Continuidade (15/10/2026): a partida da conta chega ANTES de a partida ser montada; vale a mais
+    // recente entre este aparelho e o servidor. Rede lenta: até 4 s, depois segue com a do aparelho
+    // (se a da conta chegar depois e for mais nova, a arena a adota quando puder).
+    const jogo = FLASHCARDS_NO_SERVIDOR
+      ? Promise.race([sincronizarJogo().catch(() => null), new Promise<null>((ok) => window.setTimeout(() => ok(null), 4000))])
+      : Promise.resolve(null)
+    void Promise.all([carregarAcervo(), sincronia, carregarFaixas(), jogo]).then(([cartas, , faixas, r]) => {
+      if (!vivo) return
+      prepararMotor(cartas, faixas)
+      // tomada uma vez (no modo estrito do React o efeito roda duas vezes)
+      definirVinda(r ? tomarVinda(modo) : undefined)
+      definirPronto(true)
+    })
     return () => { vivo = false }
   }, [])
   if (!pronto) {
@@ -217,10 +233,20 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
       </ModalJogo>
     )
   }
-  return <ArenaJogo modo={modo} abrirEstudo={abrirEstudo} />
+  return <ArenaJogo modo={modo} abrirEstudo={abrirEstudo} vinda={vinda} />
 }
 
-function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: boolean }) {
+/** Mudanças que vão para a conta na hora (as outras esperam até 5 s). */
+function mudancaImportante(a: Partida, b: Partida): boolean {
+  if (a.andar !== b.andar || b.fase === 'fim' || a.ouro > b.ouro || a.reliquias.length !== b.reliquias.length) return true
+  const respondendo = (a.fase === 'pergunta' && b.fase === 'resposta') || (a.fase === 'resposta' && b.fase === 'pergunta')
+  if (a.fase !== b.fase && !respondendo) return true
+  return estavel(a.encaixes) !== estavel(b.encaixes) || estavel(a.sala) !== estavel(b.sala)
+}
+
+const AVISO_OUTRO_APARELHO = (andar: number) => `Continuando a partida do seu outro aparelho (andar ${andar})`
+
+function ArenaJogo({ modo: modoJogo, abrirEstudo, vinda }: { modo: Modo; abrirEstudo: boolean; vinda?: number }) {
   const [ajustes, definirAjustesBruto] = useState<Ajustes>(() => {
     const salvos = ler<Partial<Ajustes>>(CHAVE_AJUSTES, {})
     const reduzSistema = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -240,8 +266,19 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
 
   const [modo, definirModo] = useState<'batalha' | 'estudo'>(abrirEstudo ? 'estudo' : 'batalha')
   // aplicarRotaDoCronograma: "Seguir o cronograma" na Entrada (rotaCronograma.ts); sem rota guardada, nada muda
-  const [partida, definirPartida] = useState<Partida>(() => aplicarRotaDoCronograma(partidaSalva(modoJogo) ?? (modoJogo === 'torre' ? patamarSalvo() : null) ?? comCorrida(motor.novaPartida(sementeNova(), { modo: modoJogo, talentos: lerAltar().talentos, nivel: nivelEscolhido() }).estado)))
+  const [partida, definirPartida] = useState<Partida>(() => {
+    // a partida deste modo fica protegida: a sincronização não a troca por baixo (a arena adota quando puder)
+    protegerModo(modoJogo)
+    return aplicarRotaDoCronograma(partidaSalva(modoJogo) ?? (modoJogo === 'torre' ? patamarSalvo() : null) ?? comCorrida(motor.novaPartida(sementeNova(), { modo: modoJogo, talentos: lerAltar().talentos, nivel: nivelEscolhido() }).estado))
+  })
   const partidaRef = useRef(partida)
+  /** A partida como chegou (do aparelho ou da conta): salvá-la de novo não muda o carimbo. */
+  const intocadaRef = useRef<Partida | null>(partida)
+  const anteriorRef = useRef(partida)
+  /** Carimbo da última gravação: uma partida remota só é adotada se for mais nova. */
+  const carimboRef = useRef(partida.atualizadoEm ?? 0)
+  const [aviso, definirAviso] = useState<string | null>(() => (vinda !== undefined && partida.aparelho && partida.aparelho !== idDoAparelho() ? AVISO_OUTRO_APARELHO(partida.andar) : null))
+  const [remotaPendente, definirRemotaPendente] = useState(0)
   const [mostrado, definirMostrado] = useState<Mostrado>(() => ({
     vida: partida.vida, vidaInimigo: partida.inimigo.vida, revelada: partida.fase !== 'pergunta', resultado: null, marcadas: null, inimigoCaiu: false, heroiCaiu: false,
   }))
@@ -332,7 +369,65 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   useEffect(() => { tocarMusica(trilha) }, [trilha])
   useEffect(() => () => { tocarAmbiente(null); tocarMusica(null) }, [])
 
-  useEffect(() => { partidaRef.current = partida; gravar(CHAVE_DO_MODO[partida.modo], partida) }, [partida])
+  useEffect(() => {
+    partidaRef.current = partida
+    // Continuidade: cada mudança sai com carimbo e vai para a conta (importante na hora; o resto em até 5 s)
+    const intocada = partida === intocadaRef.current
+    const em = intocada ? partida.atualizadoEm ?? 0 : Date.now()
+    salvarPartidaLocal(partida, em)
+    carimboRef.current = em
+    if (!intocada) agendarEnvioJogo(mudancaImportante(anteriorRef.current, partida))
+    anteriorRef.current = partida
+  }, [partida])
+  // Salva ao esconder a aba e ao fechar; ao voltar, confere o outro aparelho. Ao sair do jogo, envia o que faltar.
+  useEffect(() => {
+    protegerModo(modoJogo)
+    const desinstalar = instalarContinuidade()
+    const aoChegar = (e: Event) => { if ((e as CustomEvent<{ modo: Modo }>).detail?.modo === modoJogo) definirRemotaPendente((n) => n + 1) }
+    window.addEventListener(EVENTO_PARTIDA_REMOTA, aoChegar)
+    definirRemotaPendente((n) => n + 1)
+    return () => { window.removeEventListener(EVENTO_PARTIDA_REMOTA, aoChegar); protegerModo(null); desinstalar() }
+  }, [modoJogo])
+  /**
+   * Partida mais nova vinda de outro aparelho com o jogo aberto (a sincronia chegou depois da
+   * entrada, ou a pessoa voltou à aba depois de jogar no outro aparelho). Só troca fora de
+   * animação e de validação, e nunca por cima da tela de fim.
+   */
+  useEffect(() => {
+    if (!remotaPendente || animando || validando.current || modo !== 'batalha') return
+    const v = tomarPendente(modoJogo)
+    const atual = partidaRef.current
+    if (!v || v.em <= carimboRef.current || atual.fase === 'fim') return
+    let estado: Partida | null = null
+    if (v.partida) {
+      try {
+        if (v.partida.atual) motor.carta(v.partida.atual.id)
+        estado = { ...v.partida, idPartida: v.id, atualizadoEm: v.em, aparelho: v.aparelho }
+      } catch { estado = null }
+      if (!estado) return
+    } else {
+      // lápide de outra partida não mexe nesta; desta mesma, a partida acabou no outro aparelho
+      if (v.id !== idDaPartida(atual)) return
+      estado = comCorrida(motor.novaPartida(sementeNova(), { modo: modoJogo, talentos: lerAltar().talentos, nivel: nivelEscolhido() }).estado)
+    }
+    geracao.current++
+    palco.current?.limpar()
+    intocadaRef.current = v.partida ? estado : null
+    partidaRef.current = estado
+    definirPartida(estado)
+    definirSelecionada(null)
+    definirFaixa(null)
+    definirMostrado({ vida: estado.vida, vidaInimigo: estado.inimigo.vida, revelada: estado.fase !== 'pergunta', resultado: null, marcadas: null, inimigoCaiu: false, heroiCaiu: false })
+    const { inimigo: i } = inimigoDoAndar(estado.andar, estado.sementeBase, estado.modo)
+    definirCenarioVisivel(i.cenario)
+    definirCristaisAltar(lerAltar().cristais)
+    definirAviso(v.partida ? AVISO_OUTRO_APARELHO(estado.andar) : 'A partida anterior foi encerrada no seu outro aparelho')
+  }, [remotaPendente, animando, modo, modoJogo])
+  useEffect(() => {
+    if (!aviso) return
+    const t = window.setTimeout(() => definirAviso(null), 6500)
+    return () => window.clearTimeout(t)
+  }, [aviso])
 
   useEffect(() => {
     if (!canvasPalco.current) return
@@ -474,12 +569,14 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     const lista = vencido ? b.vencidos : b.vistos
     if (lista.includes(id)) return
     gravar(CHAVE_BESTIARIO, { ...b, vistos: b.vistos.includes(id) ? b.vistos : [...b.vistos, id], vencidos: vencido ? [...b.vencidos, id] : b.vencidos })
+    agendarEnvioJogo()
   }, [])
   /** Cristais de conhecimento vão direto para o Altar (não se perdem se a partida cair). */
   const ganharNoAltar = useCallback((valor: number) => {
     const a = ganharCristais(lerAltar(), valor)
     gravar(CHAVE_ALTAR, a)
     definirCristaisAltar(a.cristais)
+    agendarEnvioJogo()
   }, [])
 
   const encenarBruto = useCallback(async (eventos: Evento[], depois: Partida) => {
@@ -948,7 +1045,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           break
         }
         case 'patamar': {
-          gravar(CHAVE_PATAMAR, depois)
+          salvarPatamar(depois)
           tocar('jingle-patamar')
           definirFaixa({ texto: `Patamar ${ev.andar}`, sub: 'Progresso salvo: se cair, você volta daqui', tom: 'azul' })
           if (!(await esperar(1300, g))) return
@@ -1094,7 +1191,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     pular()
     const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
     gravar(CHAVE_RECORDES, { ...rec, partidas: rec.partidas + 1, atualizadoEm: Date.now() })
-    if (partidaRef.current.modo === 'torre') gravar(CHAVE_PATAMAR, null)
+    if (partidaRef.current.modo === 'torre') limparPatamar()
     const r0 = motor.novaPartida(sementeNova(), { modo: partidaRef.current.modo, talentos: lerAltar().talentos, nivel: nivelEscolhido() })
     const r = { ...r0, estado: comCorrida(r0.estado) }
     definirMostrado({ vida: r.estado.vida, vidaInimigo: r.estado.inimigo.vida, revelada: false, resultado: null, marcadas: null, inimigoCaiu: false, heroiCaiu: false })
@@ -1106,7 +1203,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     const salvo = migrarPartida(ler<unknown>(CHAVE_PATAMAR, null))
     if (!salvo || salvo.modo !== 'torre') { novaPartida(); return }
     pular()
-    const estado: Partida = { ...salvo, semente: sementeNova() }
+    // a subida que recomeça do patamar é outra partida (a que caiu fica encerrada)
+    const estado: Partida = { ...salvo, semente: sementeNova(), idPartida: novoIdPartida() }
     try { if (estado.atual) motor.carta(estado.atual.id) } catch { novaPartida(); return }
     partidaRef.current = estado
     definirPartida(estado)
@@ -1445,6 +1543,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         {lamina > 0 && <div className="fc-lamina" key={'l-' + lamina} aria-hidden="true"><i /></div>}
         <div className="fc-borda-vermelha" key={'v-' + vermelho} data-ativo={vermelho > 0 ? 1 : 0} aria-hidden="true" />
         {transicao && <div className="fc-transicao" aria-hidden="true" />}
+
+        {aviso && modo === 'batalha' && <div className="fc-aviso-aparelho" role="status" onClick={() => definirAviso(null)}>{aviso}</div>}
 
         {faixa && modo === 'batalha' && (
           <div className={`fc-faixa fc-faixa--${faixa.tom}`} role="status" onClick={pular}>
