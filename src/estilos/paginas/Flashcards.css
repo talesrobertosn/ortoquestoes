@@ -1916,7 +1916,7 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 @media (min-width: 861px) and (min-height: 800px) { .fc-entrada__palco { margin-top:22px; } }
 @media (min-width: 861px) and (max-height: 780px) {
   .fc-entrada__miolo { padding-top:14px; padding-bottom:12px; gap:10px; }
-  .fc-entrada__palco { zoom:.68; }
+  .fc-entrada__palco { zoom:.68; margin-top:16px; } /* o penacho do herói não encosta no subtítulo */
   .fc-entrada__selo { padding:5px 13px; }
 }
 

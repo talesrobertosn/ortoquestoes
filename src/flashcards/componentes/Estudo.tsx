@@ -175,7 +175,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
           </div>
         </div>
       </header>
-      {crono && <CartaoCronogramaEstudo c={crono} aoSeguir={seguirCronograma} />}
+      {crono && <CartaoCronogramaEstudo c={crono} sugerido={!ler<unknown>(CHAVE_PLANO, null)} aoSeguir={seguirCronograma} />}
       <div className="fc-categorias">
         {resumo.map(({ cat, total, estudados, dominio, pendentes }) => (
           <button key={cat.id} type="button" className="fc-categoria" style={{ ['--cor' as string]: cat.cor }} disabled={!total}
@@ -210,7 +210,7 @@ function OrigemDoAcervo({ cartas }: { cartas: Flashcard[] }) {
 }
 
 /** "Seguir cronograma" no alto da Biblioteca: a sessão de hoje em um toque. */
-function CartaoCronogramaEstudo({ c, aoSeguir }: { c: Cronograma; aoSeguir: (extra?: number) => void }) {
+function CartaoCronogramaEstudo({ c, sugerido, aoSeguir }: { c: Cronograma; sugerido: boolean; aoSeguir: (extra?: number) => void }) {
   const hoje = c.semana[0].assuntos
   const revisoes = c.sessaoHoje.length - c.novosHoje.length
   const proximos = c.assuntos.find((a) => a.novos.length)
@@ -226,7 +226,9 @@ function CartaoCronogramaEstudo({ c, aoSeguir }: { c: Cronograma; aoSeguir: (ext
           {total ? <>Hoje: <strong>{hoje.map((f) => f.assunto).join(' · ') || 'revisões'}</strong> · {partes.join(' + ')} · {rotuloTempo(total)}</>
             : <>Quer adiantar? Os próximos são de <strong>{proximos?.assunto ?? 'todos os assuntos'}</strong>. Tudo o que passar da meta adianta o plano.</>}
         </p>
-        <a className="fc-crono-estudo__ver" href={href('/flashcards/cronograma')}>Ver o cronograma</a>
+        {/* sem plano salvo vale o plano sugerido (o mesmo da central e de Meu cronograma): dizer isso, com o atalho para ajustar */}
+        {sugerido && <p className="fc-crono-estudo__sugerido">Plano sugerido: todos os assuntos, na ordem dos que mais caem, {c.plano.ritmo} novos por dia.</p>}
+        <a className="fc-crono-estudo__ver" href={href('/flashcards/cronograma')}>{sugerido ? 'Ajustar o plano' : 'Ver o cronograma'}</a>
       </div>
       {(total > 0 || c.novosRestantes > 0) && (
         <button type="button" className="fc-principal fc-crono-estudo__botao pronto" onClick={() => aoSeguir(total ? 0 : c.plano.ritmo)}>
