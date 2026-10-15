@@ -74,10 +74,15 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const locais = useMemo(() => Object.values(lerRespondidas()), [])
   const nome = String(sessao?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
 
+  // Falha na consulta não pode deixar "Carregando assinatura…" para sempre: mostra o
+  // erro com "Tentar de novo" (o assinante guardado continua vendo a área dele).
+  const [falhouConsulta, definirFalhouConsulta] = useState(false)
+  const [tentativa, definirTentativa] = useState(0)
   useEffect(() => {
     if (!sessao) return
-    chamarRpc<MetricasConta[]>('obter_estado_conta', {}).then((r) => { definirMetricas(r[0] ?? null); definirConsultou(true) }).catch(() => definirMetricas(null))
-  }, [sessao])
+    definirFalhouConsulta(false)
+    chamarRpc<MetricasConta[]>('obter_estado_conta', {}).then((r) => { definirMetricas(r[0] ?? null); definirConsultou(true) }).catch(() => { definirMetricas(null); definirFalhouConsulta(true) })
+  }, [sessao, tentativa])
 
   useEffect(() => {
     if (!pix || !sessao) return
@@ -216,7 +221,9 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           <span className="vd-ativo__icone"><Icone nome="certo" tamanho={22} /></span>
           <div>
             <h1 id="vd-titulo-minha">Minha assinatura</h1>
-            {!metricas ? <p role="status">Carregando assinatura…</p> : <>
+            {!metricas ? (falhouConsulta
+              ? <p role="alert">Não foi possível carregar os dados da assinatura agora. <button type="button" className="botao--vinculo" onClick={() => definirTentativa((n) => n + 1)}>Tentar de novo</button></p>
+              : <p role="status">Carregando assinatura…</p>) : <>
             <h2>{semRenovacao ? 'Acesso pago sem renovação automática' : `Seu plano ${metricas.plano} está ativo`}</h2>
             <p>{semRenovacao ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {fimTexto ?? 'o fim do período atual'}.</p>
             <dl className="vd-ativo__dados">

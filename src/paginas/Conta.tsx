@@ -245,7 +245,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         definirSenha('')
         // Convite aberto antes de entrar (liga, planos, treinar): volta para ele;
         // sem convite na rota, vale o de um cadastro feito antes neste navegador.
-        const destino = voltar ?? tomarVoltar()
+        // Consome o destino guardado mesmo quando o da URL vence: ele vale uma vez só e
+        // não pode sobrar para um login posterior (talvez de outra conta) neste navegador.
+        const guardado = tomarVoltar()
+        const destino = voltar ?? guardado
         if (destino) navegar(destino)
         else navegar('/')
       } else if (modo === 'criar') {
