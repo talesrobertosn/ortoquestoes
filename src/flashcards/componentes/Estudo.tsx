@@ -6,7 +6,7 @@ import { indiceDoAcervo, todasAsCartas } from '../dados/acervo'
 import { tocar } from '../efeitos/sons'
 import { CHAVE_REGISTROS, type RegistroFlashcard } from '../progresso'
 import type { Flashcard } from '../tipos'
-import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, sincronizarProgresso, type LimiteFlashcard } from '../servidor'
+import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, novaChave, sincronizarProgresso, type LimiteFlashcard } from '../servidor'
 import { contarSessaoTerminada } from '../opiniao'
 import { href } from '../../util/rotas'
 import { Cartao, familiasDe } from './Cartao'
@@ -225,16 +225,26 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
 
   const [bloqueio, definirBloqueio] = useState<LimiteFlashcard | null>(null)
   // Ver o verso conta como um flashcard estudado: no plano grátis, o servidor decide (trava desligada por padrão).
+  // Trava em voo e chave fixa por flashcard: um toque duplo em "Virar" gastava
+  // dois flashcards grátis (duas chamadas, cada uma com chave nova).
+  const virando = useRef(false)
+  const chavesVirar = useRef(new Map<string, string>())
   const virar = useCallback(async () => {
-    if (virada || acabou) return
+    if (virada || acabou || virando.current) return
     if (FLASHCARDS_NO_SERVIDOR) {
-      const r = await autorizarFlashcard(carta.id)
+      // Por posição na fila: o mesmo flashcard que volta mais adiante conta de novo.
+      const vez = `${pos}:${carta.id}`
+      const chave = chavesVirar.current.get(vez) ?? novaChave()
+      chavesVirar.current.set(vez, chave)
+      virando.current = true
+      let r: LimiteFlashcard
+      try { r = await autorizarFlashcard(carta.id, chave) } finally { virando.current = false }
       if (!r.permitido) { definirBloqueio(r); return }
     }
     definirVirada(true)
     definirSerie((v) => (v.parado ? { ...v, parado: false } : v))
     return true
-  }, [virada, acabou, carta])
+  }, [virada, acabou, carta, pos])
 
   // parado muito tempo sem virar: a névoa da dúvida chega devagar
   useEffect(() => {
