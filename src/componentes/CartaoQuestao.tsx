@@ -107,7 +107,7 @@ export function CartaoQuestao({
 
   const [enviando, definirEnviando] = useState(false)
   const [erroEnvio, definirErroEnvio] = useState('')
-  // Errou agora (não ao rever uma questão já respondida): o comentário rola até a letra marcada.
+  // Errou agora (não ao rever uma questão já respondida): a página rola até o começo do comentário.
   const [errouAgora, definirErrouAgora] = useState(false)
   useEffect(() => definirErrouAgora(false), [questao.id])
   async function confirmar(letra: Letra) {
@@ -711,14 +711,16 @@ function ComentarioDaIA({
   escolhida: Letra | null
   rolarParaMarcada?: boolean
 }) {
-  // Ao errar, o que mais importa é por que a letra marcada não serve: leva até ela uma vez.
-  const marcada = useRef<HTMLElement>(null)
+  // Ao errar, leva uma vez até o começo do comentário (não até a análise da
+  // letra marcada: com os comentários longos ela fica perto do fim da página e
+  // a pessoa perdia o conceito). A letra marcada continua destacada.
+  const inicio = useRef<HTMLDivElement>(null)
   const rolou = useRef(false)
   useEffect(() => {
-    if (!rolarParaMarcada || !comentario || rolou.current || !marcada.current) return
+    if (!rolarParaMarcada || !comentario || rolou.current || !inicio.current) return
     rolou.current = true
     const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    marcada.current.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' })
+    inicio.current.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' })
   }, [rolarParaMarcada, comentario])
   // Sem gabarito oficial, o comentário pode indicar a resposta pela bibliografia.
   const referencia = questao.anulada ? null : questao.gabarito ?? comentario?.provavel ?? null
@@ -732,7 +734,7 @@ function ComentarioDaIA({
     questao.alternativas.find((a) => a.letra === letra)?.texto
 
   return (
-    <div className="bloco-comentario cm">
+    <div className="bloco-comentario cm" ref={inicio}>
       <header className="cm-cabeca">
         <span className="cm-cabeca__icone"><Icone nome="livro" tamanho={20} /></span>
         <div>
@@ -798,7 +800,7 @@ function ComentarioDaIA({
             )}
 
             {erradas.map((letra) => (
-              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra} ref={escolhida === letra ? marcada : undefined}>
+              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra}>
                 <header className="cm-alt__cabeca">
                   <span className="cm-alt__letra">{letra}</span>
                   <strong className="cm-alt__texto">{textoAlternativa(letra) ?? 'Alternativa'}</strong>

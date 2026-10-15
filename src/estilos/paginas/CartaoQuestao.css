@@ -421,3 +421,7 @@
 .av__pergunta small { display: block; font-weight: 400; color: var(--texto-2); font-size: var(--meta); margin-top: .15rem; }
 .av__erro { display: inline-flex; align-items: center; gap: .4rem; border: 1px dashed var(--erro); background: var(--erro-veu); color: var(--erro); border-radius: var(--raio-controle); padding: .5rem .75rem; font: 600 var(--corpo-menor) var(--fonte-texto); cursor: pointer; text-align: left; min-height: var(--toque); }
 .relato__ajuda { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+
+/* O começo do comentário para abaixo do cabeçalho e da barra da sessão, que são fixos. */
+.bloco-comentario.cm { scroll-margin-top: 8.5rem; }
+@media (max-width: 40rem) { .bloco-comentario.cm { scroll-margin-top: 6.5rem; } }
