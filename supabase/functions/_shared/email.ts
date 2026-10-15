@@ -12,9 +12,11 @@ import { emailAlerta } from './modelo-email.ts'
 export const emailConfigurado = () => !!Deno.env.get('RESEND_API_KEY') && !!Deno.env.get('EMAIL_REMETENTE')
 
 /**
- * `descadastro` vira o cabeçalho List-Unsubscribe, que o Gmail usa como sinal
- * de envio em massa: vai nos automáticos e fica de fora da carta pessoal (que
- * mantém o link no rodapé).
+ * `descadastro` vira o cabeçalho List-Unsubscribe (com o endereço de resposta,
+ * se houver, como alternativa por e-mail). O Gmail lê esse cabeçalho como sinal
+ * de envio em massa: vai nos automáticos e nas cartas em lote (onde é exigido e
+ * protege a reputação do domínio) e fica de fora da carta enviada a uma pessoa
+ * só pela ficha, que é correspondência pessoal. Ver docs/emails/ENTREGABILIDADE.md.
  */
 export async function enviarEmail(para: string | string[], assunto: string, html: string, texto: string, descadastro?: string) {
   const chave = Deno.env.get('RESEND_API_KEY'), remetente = Deno.env.get('EMAIL_REMETENTE')
@@ -30,7 +32,7 @@ export async function enviarEmail(para: string | string[], assunto: string, html
       html,
       text: texto,
       ...(responder ? { reply_to: responder } : {}),
-      ...(descadastro ? { headers: { 'List-Unsubscribe': `<${descadastro}>` } } : {}),
+      ...(descadastro ? { headers: { 'List-Unsubscribe': [`<${descadastro}>`, ...(responder ? [`<mailto:${responder}?subject=parar>`] : [])].join(', ') } } : {}),
     }),
   })
   if (!resposta.ok) {
@@ -52,7 +54,7 @@ async function hmac(texto: string) {
   return [...assinatura].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 40)
 }
 /** Qual e-mail o link desliga. Os links antigos (sem tipo) são de conquistas. */
-export type TipoDescadastro = 'conquistas' | 'relatorio' | 'lembretes'
+export type TipoDescadastro = 'conquistas' | 'relatorio' | 'lembretes' | 'cartas'
 const textoAssinado = (idUsuario: string, tipo: TipoDescadastro) => tipo === 'conquistas' ? `descadastro:${idUsuario}` : `descadastro:${tipo}:${idUsuario}`
 
 export async function linkDescadastro(idUsuario: string, tipo: TipoDescadastro = 'conquistas') {

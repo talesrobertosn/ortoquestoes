@@ -52,6 +52,14 @@ algo em poucos segundos e dar vontade de responder.
 - Ao entregar um post, mandar a **legenda do feed como texto** na conversa, além da `LEGENDA.md`
   (no celular é mais fácil de copiar).
 
+## E-mails (cartas do Tales, orientação de 15/10/2026)
+
+Todo e-mail para as pessoas sai como carta de amigo: só texto, sem logo, sem botão, um link no
+máximo, assunto curto sem emoji nem palavra de promoção e a assinatura fixa "Um abraço, / Tales,
+do Orto Questões". Os textos vêm do motor de cartas (várias versões por situação e por faixa de
+acerto). Regras, descadastro e publicação: [docs/emails/ENTREGABILIDADE.md](../emails/ENTREGABILIDADE.md);
+amostras: [docs/emails/MODELOS.md](../emails/MODELOS.md); ideias: [docs/emails/IDEIAS.md](../emails/IDEIAS.md).
+
 ## Estilos que funcionam (e como escolher)
 
 - **Esperar pelo menos 2 dias para repetir um estilo** (feed ou stories; orientação de 07/10/2026).

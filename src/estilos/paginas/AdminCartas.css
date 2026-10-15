@@ -1,0 +1,85 @@
+/* Cartas pessoais (15/10/2026): a carta da ficha, o histórico de e-mails ao lado e a seção Pessoas › Cartas. */
+
+/* ---------- Carta da ficha */
+.ce { display: grid; gap: .8rem; }
+.ce__grade { display: grid; gap: 1rem; align-items: start; }
+@container (min-width: 46rem) { .ce__grade { grid-template-columns: minmax(0, 1fr) 15.5rem; } }
+@media (min-width: 64rem) { .fx__painel--larga .ce__grade { grid-template-columns: minmax(0, 1fr) 16rem; } }
+.ce__carta { display: grid; gap: .7rem; min-width: 0; align-content: start; }
+.ce__escolhas { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+.ce__texto { min-height: 14rem; font-family: var(--fonte-texto); line-height: 1.5; resize: vertical; }
+.ce__acoes { display: flex; flex-wrap: wrap; gap: .5rem .75rem; align-items: center; }
+.ce__acoes .botao { display: inline-flex; align-items: center; gap: .4rem; }
+.ce-dica { color: var(--texto-2); font-weight: 400; }
+.ce-motivo { display: block; margin: 0; padding: .55rem .75rem; border-radius: var(--raio-controle, 10px); background: var(--verdete-veu); color: var(--texto); font-size: var(--corpo-menor); }
+.ce-motivo svg { margin-right: .3rem; color: var(--verdete); vertical-align: -2px; }
+.ce-versao { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.ce-nota-termos { border-left: 3px solid var(--aviso); padding-left: .6rem; }
+.ce-avisos { margin: 0; padding: .5rem .75rem .5rem 1.6rem; border-radius: var(--raio-controle, 10px); background: var(--aviso-veu); color: var(--aviso-texto); font-size: var(--corpo-menor); }
+.ce-pref { margin: 0; }
+
+/* Aviso de excesso de e-mails: amarelo com 2 na semana, vermelho com 3 ou mais. */
+.ce-excesso { margin: 0; padding: .55rem .75rem; border-radius: var(--raio-controle, 10px); font-size: var(--corpo-menor); }
+.ce-excesso--atencao { background: var(--aviso-veu); color: var(--aviso-texto); box-shadow: inset 3px 0 0 var(--aviso); }
+.ce-excesso--muito { background: var(--erro-veu); color: var(--erro-texto, var(--erro)); box-shadow: inset 3px 0 0 var(--erro); }
+
+/* Prévia exata: cabeçalho de caixa de entrada + o HTML que sai. */
+.ce-previa { border: var(--borda); border-radius: var(--raio-cartao); overflow: hidden; background: #ffffff; }
+.ce-previa__topo { padding: .6rem .85rem; border-bottom: 1px solid #e5e7e6; background: #f7f8f8; color: #333; font-size: .85rem; }
+.ce-previa__topo p { margin: .1rem 0; overflow-wrap: anywhere; }
+.ce-previa__topo span { display: inline-block; min-width: 4.2rem; color: #777; }
+.ce-previa iframe { display: block; width: 100%; height: 30rem; border: 0; background: #ffffff; }
+
+/* ---------- Histórico ao lado */
+.ce-hist { display: grid; gap: .55rem; align-content: start; padding: .85rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.ce-hist__titulo { margin: 0; font-size: 1rem; }
+.ce-hist__ultimo, .ce-hist__contagem { margin: 0; font-size: var(--corpo-menor); }
+.ce-hist__contagem { color: var(--texto-2); }
+.ce-hist__lista { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.ce-hist__lista li { display: grid; grid-template-columns: 2.8rem minmax(0, 1fr); gap: .4rem; padding-top: .45rem; border-top: var(--borda); font-size: var(--corpo-menor); }
+.ce-hist__lista time { color: var(--texto-2); font-variant-numeric: tabular-nums; }
+.ce-hist__lista b { font-weight: 650; }
+.ce-hist__lista small { display: block; color: var(--texto-2); overflow-wrap: anywhere; }
+.ce-hist__item--falhou b { color: var(--erro); }
+
+/* Versão de uma linha (seção Cartas). */
+.ce-mini summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: .1rem .4rem; align-items: baseline; }
+.ce-mini summary small { flex-basis: 100%; color: var(--texto-2); }
+.ce-mini ol { margin: .35rem 0 0; padding-left: 1rem; font-size: var(--corpo-menor); }
+.ce-mini ol small { display: block; color: var(--texto-2); }
+.ce-mini--vazio { color: var(--texto-2); }
+.ce-mini__alerta { padding: .05rem .45rem; border-radius: 999px; font-size: .75rem; }
+.ce-mini__alerta--atencao { background: var(--aviso-veu); color: var(--aviso-texto); }
+.ce-mini__alerta--muito { background: var(--erro-veu); color: var(--erro-texto, var(--erro)); }
+
+/* Ficha mais larga na parte da carta, para o histórico caber ao lado. */
+.fx .fx__painel.fx__painel--larga { width: min(66rem, 100%); }
+.fx__painel--larga .fx-corpo { container-type: inline-size; }
+
+/* ---------- Seção Cartas */
+.cl-segmentos { display: flex; flex-wrap: wrap; gap: .5rem; }
+.cl-barra { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; align-items: end; justify-content: space-between; }
+.cl-recente { max-width: 22rem; }
+.cl-resumo { margin: 0; }
+.cl-barra__acoes { display: flex; gap: 1rem; }
+.cl-tabela th small, .cl-tabela td small { display: block; color: var(--texto-2); font-weight: 400; font-size: var(--corpo-menor); }
+.cl-tabela td, .cl-tabela th { vertical-align: top; }
+.cl-tabela__carta { max-width: 22rem; }
+.cl-tabela__carta .adm-link { text-align: left; }
+.cl-tabela__fora > * { opacity: .55; }
+.cl-tabela__excesso { box-shadow: inset 3px 0 0 var(--aviso); }
+.cl-previa { display: grid; gap: .8rem; padding: 1rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.cl-previa__cabeca h3 { margin: 0; }
+.cl-previa__grade { display: grid; gap: 1rem; align-items: start; }
+@media (min-width: 60rem) { .cl-previa__grade { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.cl-enviar { display: grid; gap: .4rem; justify-items: start; }
+.cl-enviar .botao { display: inline-flex; align-items: center; gap: .45rem; }
+.cl-progresso { display: grid; gap: .4rem; padding: .8rem 1rem; border-radius: var(--raio-cartao); background: var(--verdete-veu); }
+.cl-progresso p { margin: 0; }
+.cl-progresso progress { width: 100%; height: .6rem; accent-color: var(--verdete); }
+.cl-progresso .botao { justify-self: start; }
+.cl-relatorio { padding: .8rem 1rem; border-radius: var(--raio-cartao); background: var(--acerto-veu); }
+.cl-relatorio--falhas { background: var(--aviso-veu); }
+.cl-relatorio p, .cl-relatorio ul { margin: 0 0 .4rem; }
+.cl-fora summary { cursor: pointer; font-weight: 650; }
+.cl-tabela { min-width: 50rem; }

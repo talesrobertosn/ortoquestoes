@@ -72,7 +72,17 @@ export function motivoFalhaEmail(bruto: string | null | undefined): string {
   const [, status, detalhe] = texto.match(/^envio_recusado_(\d+)(?::\s*(.*))?$/) ?? []
   const doResend = detalhe ? ` Resposta do Resend: "${detalhe}"` : ''
   if (texto === 'email_nao_configurado') return 'Faltam segredos no Supabase (Edge Functions › Secrets): RESEND_API_KEY, EMAIL_REMETENTE e EMAIL_SEGREDO, com esses nomes exatos.'
-  if (texto === 'pessoa_nao_quer_emails') return 'Esta pessoa desligou os e-mails de conquistas em Minha conta.'
+  if (texto === 'pessoa_nao_quer_emails') return 'Esta pessoa desligou os e-mails do site (em Minha conta ou pelo link do e-mail).'
+  if (texto === 'acao_invalida') return 'A função enviar-email publicada no Supabase ainda é a antiga. Publique a nova (docs/emails/ENTREGABILIDADE.md, seção Publicar).'
+  if (texto === 'sql_pendente') return 'Falta colar no Supabase a parte 27 (supabase/colar-no-painel/sql-202610152100-parte27.sql).'
+  if (texto === 'administrador') return 'Conta de administrador: fica fora do envio em lote.'
+  if (texto === 'email_nao_confirmado') return 'A pessoa ainda não confirmou o e-mail.'
+  if (texto === 'sem_aceite_novidades') return 'A pessoa não marcou "Quero receber novidades" (Termos, item 14.3); convite em lote não vai.'
+  if (texto === 'mesmo_tipo_30_dias') return 'Já recebeu esta carta nos últimos 30 dias.'
+  if (texto === 'recebeu_email_recente') return 'Recebeu outro e-mail do site nas últimas 48 horas.'
+  if (texto === 'usuario_sem_email') return 'Conta sem e-mail.'
+  if (texto === 'carta_invalida') return 'Assunto ou texto vazio (ou longo demais).'
+  if (texto.startsWith('carta_com_problema')) return 'O texto tem um valor vazio ou um marcador sem preencher, como {nome}.'
   if (status === '401') return 'O Resend não reconheceu a chave. Confira o segredo RESEND_API_KEY (começa com re_).' + doResend
   if (status === '403') return 'O Resend recusou o remetente: o domínio ortoquestoes.com.br ainda não está "Verified" no Resend, ou o EMAIL_REMETENTE usa outro domínio.' + doResend
   if (status === '422') return 'O Resend achou algum dado inválido, quase sempre o formato do EMAIL_REMETENTE. Use: OrtoQuestões <contato@ortoquestoes.com.br>.' + doResend
