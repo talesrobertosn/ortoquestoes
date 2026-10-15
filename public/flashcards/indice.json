@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 5504,
- "batalha": 4240,
- "soEstudo": 1264,
+ "total": 5561,
+ "batalha": 4266,
+ "soEstudo": 1295,
  "comImagem": 630,
- "simulados": 1038,
- "autorais": 1202,
+ "simulados": 1040,
+ "autorais": 1259,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -390,24 +390,25 @@
   "trauma": {
    "nome": "Trauma adulto",
    "arquivo": "trauma.json",
-   "total": 1158,
-   "batalha": 878,
+   "total": 1215,
+   "batalha": 904,
    "comImagem": 92,
-   "simulados": 347,
+   "simulados": 349,
    "tipos": {
-    "Armadilha": 10,
-    "Classificação": 53,
-    "Conceito": 118,
+    "Armadilha": 12,
+    "Classificação": 64,
+    "Conceito": 151,
     "Imagem": 92,
     "Na prova": 200,
-    "Par confundível": 22,
+    "Par confundível": 29,
     "Relâmpago": 659,
-    "Tabela": 4
+    "Tabela": 8
    },
    "assuntos": {
     "Fratura da cabeça do rádio e instabilidade do cotovelo": 126,
     "Fraturas diafisárias do antebraço": 125,
     "Luxação do joelho e lesões ligamentares": 97,
+    "Fratura do úmero proximal": 91,
     "Fratura da escápula": 73,
     "Fraturas da coluna toracolombar": 57,
     "Luxação acromioclavicular": 50,
@@ -416,7 +417,6 @@
     "Fratura do anel pélvico": 37,
     "Fratura do úmero distal": 37,
     "Fraturas por estresse": 36,
-    "Fratura do úmero proximal": 34,
     "Fraturas do tálus e do calcâneo": 29,
     "Fratura do acetábulo": 29,
     "Síndrome compartimental": 28,
@@ -481,5 +481,5 @@
    }
   }
  },
- "assinatura": "0e100f255509"
+ "assinatura": "77e51b6539a4"
 }
