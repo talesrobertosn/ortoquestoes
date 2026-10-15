@@ -54,7 +54,7 @@
 .treinar-pagina .tr-rapida { border-radius: 4px; }
 
 /* Trilha dos passos: o mapa da montagem, como as casas de um jogo. */
-.tr-trilha { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.5rem; }
+.tr-trilha { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem; }
 .tr-trilha__passo {
   position: relative; display: flex; gap: 0.55rem; align-items: center; min-width: 0;
   padding: 0.6rem 0.7rem; background: var(--superficie); color: var(--texto); text-decoration: none; text-align: left;
@@ -67,10 +67,6 @@
 .tr-trilha__passo strong { font-size: 0.88rem; }
 .tr-trilha__passo small { overflow: hidden; color: var(--texto-2); font-size: 0.76rem; white-space: nowrap; text-overflow: ellipsis; }
 .tr-trilha__passo:not(:last-child)::after { content: ""; position: absolute; right: -0.45rem; top: 50%; width: 0.4rem; height: 4px; background: var(--px-borda); transform: translateY(-50%); }
-.tr-trilha__passo--fim { background: var(--px-ouro); border-color: var(--px-tinta); color: var(--px-tinta); box-shadow: 3px 3px 0 var(--px-ouro-sombra); }
-.tr-trilha__passo--fim b { background: var(--px-tinta); color: var(--px-ouro); font-size: 0.9rem; }
-.tr-trilha__passo--fim small { color: #3b2410; }
-.tr-trilha__passo--fim:disabled { opacity: 0.55; cursor: default; transform: none; }
 @media (max-width: 56rem) {
   .tr-trilha { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 6px 6px 0; scrollbar-width: none; }
   .tr-trilha::-webkit-scrollbar { display: none; }

@@ -33,6 +33,7 @@ import { CampoServico } from '../componentes/CampoServico'
 import { CamposEtapa } from '../componentes/CamposEtapa'
 import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import '../estilos/paginas/Conta.css'
+import { TEXTO_GRATIS } from '../config'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -342,7 +343,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <li><span><Icone nome="estrela" tamanho={18} /></span>Favoritas e anotações nas questões</li>
           <li><span><Icone nome="raio" tamanho={18} /></span>Sequência de dias, ranking e emblemas</li>
         </ul>
-        <p className="acesso__rodape">Comece grátis, sem cartão de crédito. Entre de qualquer aparelho e continue de onde parou. No gratuito, um número limitado de questões a cada 24 horas; sem limite, nos planos.</p>
+        <p className="acesso__rodape">Comece grátis, sem cartão de crédito. Entre de qualquer aparelho e continue de onde parou. {TEXTO_GRATIS.rodape}</p>
       </aside>
       <section className="acesso__cartao">
         {!recuperacao && modo !== 'recuperar' && <div className="acesso__abas" role="tablist">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="acesso__aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}

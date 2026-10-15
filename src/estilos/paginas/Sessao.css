@@ -217,3 +217,7 @@
 .faixa-cronograma b { font-family: var(--fonte-marca); font-size: 0.85rem; }
 .faixa-cronograma__barra { grid-column: 1 / -1; height: 0.3rem; border-radius: 999px; background: var(--superficie-2); overflow: hidden; }
 .faixa-cronograma__barra span { display: block; height: 100%; border-radius: inherit; background: var(--cor-area); transition: width 0.3s ease; }
+
+/* Deslizar entre questões: a página só rola na vertical (e amplia com pinça);
+   o gesto horizontal fica com o JS, sem precisar de um ouvinte não passivo. */
+.sessao-gestos { touch-action: pan-y pinch-zoom; }

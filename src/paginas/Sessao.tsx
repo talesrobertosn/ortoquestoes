@@ -15,7 +15,7 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { usarConta } from '../conta/ContextoConta'
 import { lerRespondidas, usarFavoritos, usarSessao } from '../estado/sessao'
-import { marcarConviteLimiteVisto, saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
+import { erroDeConexao, marcarConviteLimiteVisto, saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
 import { usarAssinante } from '../conta/plano'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
@@ -24,6 +24,7 @@ import { gravar, ler } from '../estado/armazenamento'
 import { recurso } from '../config'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Sessao.css'
+import { urlImagem } from '../dados/edicoes'
 import { obterPlano } from '../conta/cronograma'
 import { usarPremium } from '../conta/premium'
 import { calcularPlano } from '../dados/planoEstudo'
@@ -63,6 +64,8 @@ function FaixaCronograma({ respondidasNaSessao }: { respondidasNaSessao: number 
     </div>
   )
 }
+
+const CHAVE_FIM_MOSTRADO = 'ortoquestoes:fim-mostrado'
 
 export function Sessao() {
   const { indice } = usarIndice()
@@ -115,12 +118,15 @@ export function Sessao() {
   // por sessão); quem prefere ler o comentário antes ganha o botão flutuante.
   const tudoRespondido = total > 0 && respondidas === total
   const [fim, definirFim] = useState<'fechado' | 'aberto' | 'lendo'>('fechado')
-  const fimMostrado = useRef<string | null>(null)
-  const idSessao = sessao ? sessao.ids.join(',') + ':' + (sessao.criadaEm ?? '') : ''
+  // Guardado na aba: depois de um F5 lendo o último comentário, o pop-up não reabre.
+  const idSessao = sessao ? `${sessao.id}:${sessao.criadaEm ?? ''}` : ''
   useEffect(() => {
-    if (!tudoRespondido || fimMostrado.current === idSessao) return
-    fimMostrado.current = idSessao
-    const t = window.setTimeout(() => definirFim('aberto'), simulado ? 300 : 900)
+    if (!tudoRespondido) return
+    try { if (sessionStorage.getItem(CHAVE_FIM_MOSTRADO) === idSessao) return } catch { /* sem armazenamento: mostra */ }
+    const t = window.setTimeout(() => {
+      try { sessionStorage.setItem(CHAVE_FIM_MOSTRADO, idSessao) } catch { /* idem */ }
+      definirFim('aberto')
+    }, simulado ? 300 : 900)
     return () => window.clearTimeout(t)
   }, [tudoRespondido, idSessao, simulado])
   const acertosSessao = sessao ? Object.values(sessao.respostas).filter((r) => r.correta === true).length : 0
@@ -140,12 +146,18 @@ export function Sessao() {
   const [restante, definirRestante] = useState<number | null>(() =>
     sessao ? segundosRestantes(sessao) : null,
   )
+  // Depende só do que o relógio usa: com o objeto inteiro, o intervalo era
+  // recriado a cada resposta ou troca de questão.
+  const criadaEm = sessao?.criadaEm ?? 0
+  const limiteSegundos = sessao?.limiteSegundos ?? 0
+  const encerrada = !!sessao?.concluidaEm
   useEffect(() => {
-    if (!sessao || !sessao.limiteSegundos || sessao.concluidaEm) return
-    definirRestante(segundosRestantes(sessao))
-    const relogio = window.setInterval(() => definirRestante(segundosRestantes(sessao)), 1000)
+    if (!limiteSegundos || encerrada) return
+    const medir = () => definirRestante(Math.round((criadaEm + limiteSegundos * 1000 - Date.now()) / 1000))
+    medir()
+    const relogio = window.setInterval(medir, 1000)
     return () => window.clearInterval(relogio)
-  }, [sessao])
+  }, [criadaEm, limiteSegundos, encerrada])
 
   // Acabou a cota grátis de hoje: seguir para uma questão ainda não respondida
   // abre o convite; fechar leva ao resumo da sessão.
@@ -200,6 +212,14 @@ export function Sessao() {
     return () => window.clearTimeout(espera)
   }, [indice, questoes, questaoAtual, sessao, posicao])
 
+  // As figuras da próxima descem em toda sessão, simulado inclusive (lá a espera
+  // pela imagem gasta o cronômetro): ao avançar, a imagem já está no cache.
+  useEffect(() => {
+    if (!sessao || !questoes) return
+    const proxima = questoes.find((q) => q.id === sessao.ids[posicao + 1])
+    for (const imagem of proxima?.imagens ?? []) new Image().src = urlImagem(imagem.arquivo)
+  }, [questoes, sessao, posicao])
+
   // Deslizar troca de questão. Na última, o cartão só resiste: encerrar a
   // sessão continua sendo um toque de propósito, nunca um gesto sem querer.
   const espiar = usarDeslizar({
@@ -253,6 +273,14 @@ export function Sessao() {
     finalizar()
     navegar('/resumo')
   }, [restante, sessao, finalizar])
+
+  // Sessão já encerrada não volta a aceitar respostas (o Voltar do navegador
+  // trazia a pessoa para cá): as respostas novas não entrariam no histórico.
+  const concluida = !!sessao?.concluidaEm
+  useEffect(() => {
+    if (concluida) navegar('/resumo', true)
+  }, [concluida])
+  if (concluida) return null
 
   if (!sessao || total === 0) {
     return (
@@ -411,6 +439,7 @@ export function Sessao() {
               const chave = chavesResposta.current.get(chaveMapa) ?? gerarId()
               chavesResposta.current.set(chaveMapa, chave)
               const permissao = await autorizar(questaoAtual.id, chave)
+              if (permissao.falhaValidacao) throw erroDeConexao()
               if (!permissao.permitido) {
                 // Com respostas na sessão, o limite vira fechamento: o resumo
                 // mostra o dia cumprido em vez de um painel no meio da questão.

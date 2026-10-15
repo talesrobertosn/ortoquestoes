@@ -83,6 +83,17 @@ export interface EstadoLimite {
   falhaValidacao?: boolean
 }
 
+/**
+ * Falha de rede ao validar a resposta. Vira erro junto ao botão "Responder"
+ * (o cartão mostra a mensagem), e não o painel de limite diário, que fazia a
+ * pessoa achar que tinha acabado a cota.
+ */
+export function erroDeConexao(): Error {
+  const erro = new Error('não deu para confirmar com o servidor; confira a internet')
+  erro.name = 'Conexão'
+  return erro
+}
+
 export function usarLimiteDiario() {
   const [estado, definirEstado] = useState<EstadoLimite | null>(null)
   const [validando, definirValidando] = useState(false)

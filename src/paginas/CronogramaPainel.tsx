@@ -30,7 +30,7 @@ const faixaCores = (partes: Array<{ slug: string; n: number }>) => {
 
 // ─── Onde você está ────────────────────────────────────────────────────────
 
-export function OndeVoceEsta({ plano, calculo, previa = false }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean }) {
+export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; aoAjustar?: () => void }) {
   const hoje = meiaNoite(new Date())
   const prova = new Date(calculo.vespera.getTime() + DIA)
   const criado = meiaNoite(new Date(plano.criado_em))
@@ -63,7 +63,10 @@ export function OndeVoceEsta({ plano, calculo, previa = false }: { plano: PlanoS
 
   return (
     <section className="cp-onde" aria-labelledby="cp-onde-titulo">
-      <p className="cp-onde__selo">{previa ? 'Exemplo do cronograma' : 'Onde você está'} · {plano.prova}</p>
+      <p className="cp-onde__selo">{previa ? 'Exemplo do cronograma' : 'Onde você está'} · {plano.prova}
+        {/* Trocar data, folga ou ritmo fica no topo: antes era preciso rolar a página inteira. */}
+        {aoAjustar && <button type="button" className="cp-onde__ajustar" onClick={aoAjustar}><Icone nome="lapis" tamanho={14} /> Ajustar</button>}
+      </p>
       <h1 id="cp-onde-titulo">{calculo.provaPassou ? 'Dia da prova' : <>Faltam <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
       <p className="cp-onde__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal}</p>
       {!calculo.provaPassou && <>

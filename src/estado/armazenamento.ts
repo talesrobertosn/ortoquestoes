@@ -16,9 +16,19 @@ const GLOBAIS = new Set(['tema', 'etiquetas', 'instalar:dispensado', 'convite-co
  */
 const PERSISTE_ABA = new Set(['sessao:atual'])
 export const EVENTO_DADOS = 'ortoquestoes:dados'
+/** Disparado uma vez quando o navegador recusa gravar por falta de espaço. */
+export const EVENTO_ARMAZENAMENTO_CHEIO = 'ortoquestoes:armazenamento-cheio'
+let cheio = false
+export function armazenamentoCheio() { return cheio }
+function semEspaco(erro: unknown): boolean {
+  const e = erro as { name?: string; code?: number } | null
+  return e?.name === 'QuotaExceededError' || e?.name === 'NS_ERROR_DOM_QUOTA_REACHED' || e?.code === 22 || e?.code === 1014
+}
 export interface MudancaDados { chave: string; antes: unknown; valor: unknown; usuario: string | null; origem: 'local' | 'nuvem' }
 export function definirUsuarioLocal(id: string | null) {
   usuario = id
+  // Pede ao navegador para não apagar os dados da conta quando faltar espaço.
+  if (id !== null) void navigator.storage?.persist?.().catch(() => undefined)
   if (id === null) {
     try {
       if (armazenamentoDisponivel()) {
@@ -70,7 +80,10 @@ export function gravar(chave: string, valor: unknown, origem: 'local' | 'nuvem' 
     if ((usuario !== null || GLOBAIS.has(chave)) && armazenamentoDisponivel()) { window.localStorage.setItem(completa, bruto); memoria.delete(completa) }
     else if (usuario === null && PERSISTE_ABA.has(chave)) { window.sessionStorage.setItem(completa, bruto); memoria.delete(completa) }
     else memoria.set(completa, bruto)
-  } catch { memoria.set(completa, bruto) }
+  } catch (erro) {
+    memoria.set(completa, bruto)
+    if (semEspaco(erro) && !cheio) { cheio = true; window.dispatchEvent(new Event(EVENTO_ARMAZENAMENTO_CHEIO)) }
+  }
   window.dispatchEvent(new CustomEvent<MudancaDados>(EVENTO_DADOS, { detail: { chave, antes, valor, usuario, origem } }))
 }
 export function remover(chave: string): void {

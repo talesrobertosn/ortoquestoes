@@ -33,7 +33,10 @@ export function AdminLembretes() {
   const [erro, definirErro] = useState('')
   const [enviando, definirEnviando] = useState<{ campanha: Campanha; texto: string } | null>(null)
   const [previa, definirPrevia] = useState<{ campanha: Campanha; html: string; para?: string | null } | null>(null)
-  const [mensagem, definirMensagem] = useState('')
+  // Sucesso e erro tinham a mesma cor verde: erro parecia confirmação.
+  const [mensagem, definirRecado] = useState<{ texto: string; erro: boolean }>({ texto: '', erro: false })
+  const definirMensagem = (texto: string) => definirRecado({ texto, erro: false })
+  const definirFalha = (texto: string) => definirRecado({ texto, erro: true })
   const [listas, definirListas] = useState<Partial<Record<Campanha, Pessoa[] | string>>>({})
 
   const carregar = useCallback(async () => {
@@ -52,7 +55,7 @@ export function AdminLembretes() {
   async function verPrevia(campanha: Campanha, pessoa?: Pessoa) {
     const extra = pessoa ? { id_usuario: pessoa.id_usuario, dias_fora: pessoa.dias_fora ?? undefined, dias_restantes: pessoa.dias_restantes ?? undefined, fim_periodo: pessoa.fim_periodo ?? undefined, plano: pessoa.plano ?? undefined } : {}
     try { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa_lembrete', campanha, ...extra }); definirPrevia({ campanha, html: r.html, para: pessoa ? (pessoa.nome ?? pessoa.email) : null }) }
-    catch (f) { definirMensagem(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
+    catch (f) { definirFalha(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
   }
 
   async function enviar(c: (typeof CAMPANHAS)[number], pessoas: number) {
@@ -71,7 +74,7 @@ export function AdminLembretes() {
         if (!r.talvez_restem || r.enviados === 0) break
       }
       definirMensagem(`${c.titulo}: ${total} ${total === 1 ? 'e-mail enviado' : 'e-mails enviados'}${falhas ? `, ${falhas} com falha (o motivo fica na ficha de cada pessoa)` : ''}.`)
-    } catch (f) { definirMensagem(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
+    } catch (f) { definirFalha(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
     finally { definirEnviando(null); void carregar() }
   }
 
@@ -80,7 +83,7 @@ export function AdminLembretes() {
   return (
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-lembretes">
       <div><h2 id="adm-titulo-lembretes">Lembretes por e-mail</h2><p>Um botão por campanha, com a lista de quem recebe pelo nome e o último lembrete de cada pessoa. Para não virar spam, ninguém recebe dois lembretes em menos de 2 dias (só o "Pix: termina hoje" passa, por ser o último aviso). Quem já recebeu nesta ausência ou desligou os lembretes fica de fora.</p></div>
-      {mensagem && <p role="status" className="adm-nota adm-mensagem">{mensagem}</p>}
+      {mensagem.texto && <p role={mensagem.erro ? 'alert' : 'status'} className={'adm-nota adm-mensagem' + (mensagem.erro ? ' adm-mensagem--erro' : '')}>{mensagem.texto}</p>}
       <div className="adm-lembretes">
         {CAMPANHAS.map((c) => {
           const r = resumo?.find((x) => x.campanha === c.id)
@@ -176,7 +179,10 @@ function ResumoQuinzenal({ aoPrevia }: { aoPrevia: (html: string) => void }) {
   const [ref] = useState(quinzenaAnterior)
   const [resumo, definirResumo] = useState<{ pendentes: number; enviados: number; falharam: number } | null | string>(null)
   const [enviando, definirEnviando] = useState('')
-  const [mensagem, definirMensagem] = useState('')
+  // Sucesso e erro tinham a mesma cor verde: erro parecia confirmação.
+  const [mensagem, definirRecado] = useState<{ texto: string; erro: boolean }>({ texto: '', erro: false })
+  const definirMensagem = (texto: string) => definirRecado({ texto, erro: false })
+  const definirFalha = (texto: string) => definirRecado({ texto, erro: true })
   useEffect(() => {
     chamarRpc<Array<{ pendentes: number; enviados: number; falharam: number }>>('resumo_quinzenal_admin', { p_ref: ref })
       .then(([r]) => definirResumo(r ?? { pendentes: 0, enviados: 0, falharam: 0 }))
@@ -184,7 +190,7 @@ function ResumoQuinzenal({ aoPrevia }: { aoPrevia: (html: string) => void }) {
   }, [ref, enviando])
   async function previa() {
     try { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa_quinzenal', quinzena: ref }); aoPrevia(r.html) }
-    catch (f) { definirMensagem(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
+    catch (f) { definirFalha(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
   }
   async function enviar(pendentes: number) {
     if (!window.confirm(`Enviar o resumo de ${nomeQuinzena(ref)} para ${pendentes} ${pendentes === 1 ? 'pessoa' : 'pessoas'}?`)) return
@@ -197,7 +203,7 @@ function ResumoQuinzenal({ aoPrevia }: { aoPrevia: (html: string) => void }) {
         if (!r.talvez_restem || r.enviados === 0) break
       }
       definirMensagem(`Resumo de ${nomeQuinzena(ref)}: ${total} enviados${falhas ? `, ${falhas} com falha` : ''}.`)
-    } catch (f) { definirMensagem(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
+    } catch (f) { definirFalha(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
     finally { definirEnviando('') }
   }
   const pendentes = resumo && typeof resumo === 'object' ? Number(resumo.pendentes) : 0
@@ -207,7 +213,7 @@ function ResumoQuinzenal({ aoPrevia }: { aoPrevia: (html: string) => void }) {
       <h3>Resumo quinzenal · {nomeQuinzena(ref)}</h3>
       <p>Quantas questões a pessoa fez na quinzena, o acerto comparado com a anterior, os temas e o próximo passo. Vai para todos que estudaram na quinzena e não desligaram os resumos. Sai sozinho nos dias 1 e 16 pelo agendador; no dia 1, assinantes recebem só o relatório do mês.</p>
       <p className="adm-nota">{resumo === null ? 'Contando…' : typeof resumo === 'string' ? resumo : <><strong>{pendentes}</strong> pendentes · {Number(resumo.enviados)} enviados{Number(resumo.falharam) ? ` · ${resumo.falharam} com falha` : ''}</>}</p>
-      {mensagem && <p role="status" className="adm-nota">{mensagem}</p>}
+      {mensagem.texto && <p role={mensagem.erro ? 'alert' : 'status'} className={'adm-nota' + (mensagem.erro ? ' adm-mensagem adm-mensagem--erro' : '')}>{mensagem.texto}</p>}
     </div>
     <div className="adm-lembrete__acoes">
       <button type="button" className="botao" onClick={() => void previa()}>Ver prévia</button>

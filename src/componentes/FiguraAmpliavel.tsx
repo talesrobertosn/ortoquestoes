@@ -15,19 +15,29 @@ export function TextoComLinks({ texto }: { texto: string }) {
  * página, com a imagem inteira; tocar de novo aproxima no ponto tocado e dá
  * para arrastar. Fecha no X, no Esc ou tocando fora.
  */
-export function FiguraAmpliavel({ imagem, src, alt, alturaMaxima = '22rem', largura, altura }: {
+export function FiguraAmpliavel({ imagem, src, alt, alturaMaxima = '22rem', largura, altura, prioridade = false }: {
   imagem: Imagem
   src: string
   alt: string
   alturaMaxima?: string
   largura?: number | null
   altura?: number | null
+  /** A figura do enunciado: carrega já, sem esperar entrar na tela. */
+  prioridade?: boolean
 }) {
   const [aberta, definirAberta] = useState(false)
+  // Rede fraca: em vez de um ícone quebrado, um aviso com "tentar de novo".
+  const [falhou, definirFalhou] = useState(false)
+  const [tentativa, definirTentativa] = useState(0)
+  if (falhou) return (
+    <figure className="questao__figura">
+      <p className="comentario__pendente">A imagem não carregou. <button type="button" className="botao botao--fantasma" onClick={() => { definirFalhou(false); definirTentativa((n) => n + 1) }}>Tentar de novo</button></p>
+    </figure>
+  )
   return (
     <figure className="questao__figura">
       <button type="button" className="figura-ampliavel" onClick={() => definirAberta(true)} aria-label="Ampliar imagem">
-        <img src={src} alt={alt} loading="lazy" width={largura ?? undefined} height={altura ?? undefined} style={{ maxHeight: alturaMaxima, width: 'auto' }} />
+        <img key={tentativa} src={tentativa && !src.startsWith('data:') ? `${src}${src.includes('?') ? '&' : '?'}t=${tentativa}` : src} alt={alt} loading={prioridade ? 'eager' : 'lazy'} onError={() => definirFalhou(true)} width={largura ?? undefined} height={altura ?? undefined} style={{ maxHeight: alturaMaxima, width: 'auto' }} />
       </button>
       {(imagem.legenda || imagem.fonte) && (
         <figcaption>

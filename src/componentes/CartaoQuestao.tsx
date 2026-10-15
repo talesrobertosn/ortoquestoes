@@ -1,5 +1,6 @@
-import { lerRespondidas } from '../estado/sessao'
-import { dominada, INTERVALOS } from '../estado/revisao'
+import { CHAVE_RESPONDIDAS } from '../estado/sessao'
+import { usarArmazenado } from '../estado/usarArmazenado'
+import { dominada, INTERVALOS, type RegistroQuestao } from '../estado/revisao'
 import { TextoEditorial, TextoEmLinha, Referencias } from './TextoEditorial'
 import { NotasQuestao } from './NotasQuestao'
 import { AvaliarComentario } from './AvaliarComentario'
@@ -61,6 +62,9 @@ export function CartaoQuestao({
   revelarResposta = true,
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
+  // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
+  // inteiro a cada render (a cada segundo no simulado, por causa do cronômetro).
+  const [respondidasTodas] = usarArmazenado<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
   const [confianca, definirConfianca] = useState<'seguro' | 'duvida' | 'chute'>('seguro')
   const [copiado, definirCopiado] = useState(false)
   const [menuGrifo, definirMenuGrifo] = useState<{ x: number; y: number } | null>(null)
@@ -103,13 +107,16 @@ export function CartaoQuestao({
 
   const [enviando, definirEnviando] = useState(false)
   const [erroEnvio, definirErroEnvio] = useState('')
+  // Errou agora (não ao rever uma questão já respondida): o comentário rola até a letra marcada.
+  const [errouAgora, definirErrouAgora] = useState(false)
+  useEffect(() => definirErrouAgora(false), [questao.id])
   async function confirmar(letra: Letra) {
     if (travada || enviando) return
     definirErroEnvio('')
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
     const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
     definirEnviando(true)
-    try { await aoResponder(letra, correta, segundos, confianca) }
+    try { await aoResponder(letra, correta, segundos, confianca); if (correta === false) definirErrouAgora(true) }
     catch (erro) {
       // Nunca falhar em silêncio: o que der errado aparece embaixo do botão.
       definirErroEnvio(erro instanceof Error ? `${erro.name}: ${erro.message}` : String(erro))
@@ -264,7 +271,8 @@ export function CartaoQuestao({
   }
 
   const semGabarito = !questao.gabarito && !questao.anulada && questao.tipo !== 'dissertativa'
-  const historicoDaQuestao = lerRespondidas()[questao.id]?.historico ?? []
+  const registroDaQuestao = respondidasTodas[questao.id]
+  const historicoDaQuestao = registroDaQuestao?.historico ?? []
   // Etiquetas de assunto adiantam a resposta; quando escondidas, voltam junto
   // com o gabarito, que é quando elas servem para estudar em vez de entregar.
   const etiquetasVisiveis = mostrarEtiquetas || mostrarGabarito
@@ -363,7 +371,7 @@ export function CartaoQuestao({
         {questao.imagens.length > 0 && (
           <div className="questao__figuras">
             {questao.imagens.map((imagem) => (
-              <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? `Figura da questão ${questao.id}`} largura={imagem.largura} altura={imagem.altura} />
+              <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? `Figura da questão ${questao.id}`} largura={imagem.largura} altura={imagem.altura} prioridade />
             ))}
           </div>
         )}
@@ -498,7 +506,7 @@ export function CartaoQuestao({
 
         {mostrarGabarito && (
           <div className="comentario">
-            {resposta && resposta.correta !== null && !dissertativa && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : `Acerto seguro registrado. Ela volta em ${INTERVALOS.seguro.join(', ').replace(/, (\d+)$/, ' e $1')} dias, conforme você for acertando.`}</p>}
+            {resposta && resposta.correta !== null && !dissertativa && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(registroDaQuestao) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : `Acerto seguro registrado. Ela volta em ${INTERVALOS.seguro.join(', ').replace(/, (\d+)$/, ' e $1')} dias, conforme você for acertando.`}</p>}
             {questao.comentario && (
               <div className="bloco-comentario">
                 <p className="comentario__titulo">Comentário do autor</p>
@@ -506,7 +514,7 @@ export function CartaoQuestao({
               </div>
             )}
 
-            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} />
+            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
@@ -692,17 +700,30 @@ function ComentarioDaIA({
   comentario,
   carregando,
   escolhida,
+  rolarParaMarcada = false,
 }: {
   questao: Questao
   comentario: ComentarioIA | null
   carregando: boolean
   escolhida: Letra | null
+  rolarParaMarcada?: boolean
 }) {
+  // Ao errar, o que mais importa é por que a letra marcada não serve: leva até ela uma vez.
+  const marcada = useRef<HTMLElement>(null)
+  const rolou = useRef(false)
+  useEffect(() => {
+    if (!rolarParaMarcada || !comentario || rolou.current || !marcada.current) return
+    rolou.current = true
+    const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    marcada.current.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' })
+  }, [rolarParaMarcada, comentario])
   // Sem gabarito oficial, o comentário pode indicar a resposta pela bibliografia.
   const referencia = questao.anulada ? null : questao.gabarito ?? comentario?.provavel ?? null
+  // Todas as outras letras aparecem, mesmo sem análise: sumir com uma delas
+  // deixava a pessoa sem saber se o comentário estava incompleto.
   const erradas = questao.alternativas
     .map((a) => a.letra)
-    .filter((letra) => letra !== referencia && comentario?.incorretas[letra])
+    .filter((letra) => letra !== referencia)
 
   const textoAlternativa = (letra: string) =>
     questao.alternativas.find((a) => a.letra === letra)?.texto
@@ -774,7 +795,7 @@ function ComentarioDaIA({
             )}
 
             {erradas.map((letra) => (
-              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra}>
+              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra} ref={escolhida === letra ? marcada : undefined}>
                 <header className="cm-alt__cabeca">
                   <span className="cm-alt__letra">{letra}</span>
                   <strong className="cm-alt__texto">{textoAlternativa(letra) ?? 'Alternativa'}</strong>
@@ -784,7 +805,9 @@ function ComentarioDaIA({
                     ? <span className="cm-selo cm-selo--erro"><Icone nome="errado" tamanho={13} /> Sua resposta</span>
                     : <span className="cm-selo cm-selo--neutro">Incorreta</span>}
                 </header>
-                <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} />
+                {comentario.incorretas[letra]?.trim()
+                  ? <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} />
+                  : <p className="comentario__pendente">Sem análise desta alternativa.</p>}
               </article>
             ))}
           </div>

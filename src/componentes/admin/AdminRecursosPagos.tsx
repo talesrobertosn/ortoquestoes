@@ -40,7 +40,10 @@ export function AdminRecursosPagos() {
   const [erro, definirErro] = useState('')
   const [vespera, definirVespera] = useState({ prova: '2027-01-10', abre: '2026-12-27', questoes: QUESTOES_VESPERA, duracao: DURACAO_VESPERA_MIN })
   const [montadaVespera, definirMontadaVespera] = useState<{ edicao: string; itens: CandidataEdicao[] } | null>(null)
-  const [mensagem, definirMensagem] = useState('')
+  // Sucesso e erro tinham a mesma cor verde: erro parecia confirmação.
+  const [mensagem, definirRecado] = useState<{ texto: string; erro: boolean }>({ texto: '', erro: false })
+  const definirMensagem = (texto: string) => definirRecado({ texto, erro: false })
+  const definirFalha = (texto: string) => definirRecado({ texto, erro: true })
 
   const carregar = useCallback(async () => {
     try {
@@ -57,12 +60,12 @@ export function AdminRecursosPagos() {
   async function trocarExclusivos(valor: boolean) {
     if (!window.confirm(valor ? 'Deixar os recursos do plano pago só para assinantes?' : 'Liberar os recursos do plano pago para TODAS as contas (promoção)? Vale na hora.')) return
     try { await chamarRpc('definir_config_premium_admin', { p_exclusivos: valor }); definirExclusivos(valor); atualizarPremium(); definirMensagem(valor ? 'Recursos pagos só para assinantes.' : 'Recursos pagos liberados para todos.') }
-    catch { definirMensagem('Não foi possível salvar.') }
+    catch { definirFalha('Não foi possível salvar.') }
   }
 
   async function verPrevia() {
     try { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa_relatorio', mes }); definirPrevia(r.html) }
-    catch (f) { definirMensagem(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
+    catch (f) { definirFalha(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
   }
 
   async function enviarRelatorios() {
@@ -77,7 +80,7 @@ export function AdminRecursosPagos() {
         if (!r.talvez_restem || r.enviados === 0) break
       }
       definirMensagem(`Relatório de ${nomeEdicao(mes)}: ${total} enviados${falhas ? `, ${falhas} com falha (motivo na lista de e-mails abaixo)` : ''}.`)
-    } catch (f) { definirMensagem(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
+    } catch (f) { definirFalha(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
     finally { definirEnviando('') }
   }
 
@@ -92,7 +95,7 @@ export function AdminRecursosPagos() {
       const usadas = new Set(edicoes.flatMap((e) => e.ids ?? []))
       const edicao = proximaEdicao(edicoes.map((e) => e.edicao))
       definirMontada({ edicao, itens: escolherEdicao(candidatas, edicao, QUESTOES_EDICAO, usadas) })
-    } catch { definirMensagem('Não foi possível montar a edição (acervo não carregou).') }
+    } catch { definirFalha('Não foi possível montar a edição (acervo não carregou).') }
     finally { definirMontando(false) }
   }
 
@@ -114,7 +117,7 @@ export function AdminRecursosPagos() {
       const usadas = new Set(edicoes.flatMap((e) => e.ids ?? []))
       const edicao = `${vespera.prova.slice(0, 7)}-vespera`
       definirMontadaVespera({ edicao, itens: escolherVespera(candidatas, edicao, vespera.questoes, usadas) })
-    } catch { definirMensagem('Não foi possível montar o simulado de véspera (acervo não carregou).') }
+    } catch { definirFalha('Não foi possível montar o simulado de véspera (acervo não carregou).') }
     finally { definirMontando(false) }
   }
 
@@ -123,14 +126,14 @@ export function AdminRecursosPagos() {
     // Abre às 00:00 e fecha às 23:59 da véspera, no horário de Brasília (UTC-3).
     const abre = new Date(`${vespera.abre}T00:00:00-03:00`)
     const fecha = new Date(new Date(`${vespera.prova}T00:00:00-03:00`).getTime() - 1000)
-    if (!(fecha > abre)) { definirMensagem('A abertura precisa ser antes da véspera da prova.'); return }
+    if (!(fecha > abre)) { definirFalha('A abertura precisa ser antes da véspera da prova.'); return }
     const anoProva = vespera.prova.slice(0, 4)
     const titulo = `Simulado de véspera · Prova ${anoProva}`
     if (!window.confirm(`Publicar "${titulo}" com ${montadaVespera.itens.length} questões em ${vespera.duracao / 60} h? Fica no ar de ${abre.toLocaleDateString('pt-BR')} até ${fecha.toLocaleDateString('pt-BR')}.`)) return
     try {
       await chamarRpc('publicar_simulado_admin', { p_edicao: montadaVespera.edicao, p_titulo: titulo, p_abre: abre.toISOString(), p_fecha: fecha.toISOString(), p_duracao: vespera.duracao, p_itens: montadaVespera.itens })
       definirMontadaVespera(null); definirMensagem(`${titulo} publicado.`); await carregar()
-    } catch (f) { definirMensagem(`Não foi possível publicar: ${erroDoPainel(f, '202610050100_editor_questoes.sql')}`) }
+    } catch (f) { definirFalha(`Não foi possível publicar: ${erroDoPainel(f, '202610050100_editor_questoes.sql')}`) }
   }
 
   async function publicar() {
@@ -142,7 +145,7 @@ export function AdminRecursosPagos() {
     try {
       await chamarRpc('publicar_simulado_admin', { p_edicao: montada.edicao, p_titulo: titulo, p_abre: abre.toISOString(), p_fecha: fimDaEdicao(montada.edicao), p_duracao: DURACAO_EDICAO_MIN, p_itens: montada.itens })
       definirMontada(null); definirMensagem(`${titulo} publicado.`); await carregar()
-    } catch { definirMensagem('Não foi possível publicar (edição já tem participantes?).') }
+    } catch { definirFalha('Não foi possível publicar (edição já tem participantes?).') }
   }
 
   if (erro) return <section className="adm-secao"><h2>Recursos do plano pago</h2><p role="alert" className="adm-alerta">{erro}</p></section>
@@ -151,7 +154,7 @@ export function AdminRecursosPagos() {
   const porTema = montada ? Object.entries(montada.itens.reduce<Record<string, number>>((acc, i) => ({ ...acc, [i.tema]: (acc[i.tema] ?? 0) + 1 }), {})).sort((a, b) => b[1] - a[1]) : []
 
   return <>
-    {mensagem && <p role="status" className="adm-nota adm-mensagem">{mensagem}</p>}
+    {mensagem.texto && <p role={mensagem.erro ? 'alert' : 'status'} className={'adm-nota adm-mensagem' + (mensagem.erro ? ' adm-mensagem--erro' : '')}>{mensagem.texto}</p>}
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-pagos">
       <div><h2 id="adm-titulo-pagos">Recursos do plano pago</h2><p>Como a turma respondeu, Simulado Nacional, cronograma, temas que mais caem, liga da residência e relatório mensal.</p></div>
       <label className="ct-interruptor"><input type="checkbox" checked={exclusivos} onChange={(e) => void trocarExclusivos(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span><strong>Só para assinantes</strong><br /><small>Desligado, libera tudo para todas as contas (útil numa promoção). O relatório mensal continua só para quem tem plano, cortesia ou é administrador.</small></span></label>

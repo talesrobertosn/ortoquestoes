@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
+import { A_PARTIR_DE } from '../dados/planos'
 
 interface EstadoAssinatura {
   plano: string | null
@@ -90,7 +91,7 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
       </dl>
       {!ativo && !periodoPagoVigente && !detalhada && <a className="inicio-planos-atalho ct-planos" href={href('/assinatura')}>
         <span className="inicio-planos-atalho__icone"><IconePixel nome="planos" tamanho={48} /></span>
-        <span className="inicio-planos-atalho__texto"><strong>Conheça os planos</strong><em>a partir de R$ 19,99/mês · Pix ou cartão</em><small>Cronograma pelo que mais cai, Simulado Nacional e questões sem limite.</small></span>
+        <span className="inicio-planos-atalho__texto"><strong>Conheça os planos</strong><em>a partir de {A_PARTIR_DE}/mês · Pix ou cartão</em><small>Cronograma pelo que mais cai, Simulado Nacional e questões sem limite.</small></span>
         <span className="inicio-planos-atalho__acao">Ver planos <Icone nome="direita" tamanho={16} /></span>
       </a>}
       {detalhada ? <>

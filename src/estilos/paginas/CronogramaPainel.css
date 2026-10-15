@@ -14,6 +14,9 @@
 /* ── Onde você está ── */
 .cp-onde { position: relative; overflow: hidden; padding: clamp(1.1rem, 3vw, 1.6rem) clamp(1.1rem, 3vw, 1.8rem) clamp(1.6rem, 3.5vw, 2.2rem); border-radius: var(--raio-cartao); background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media); }
 .cp-onde__selo { margin: 0; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #9fe3d4; }
+.cp-onde__selo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.cp-onde__ajustar { margin-left: auto; display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; padding: 0 0.85rem; border-radius: 999px; border: 1px solid var(--heroi-traco); background: var(--heroi-vidro); color: var(--sobre-heroi); font: inherit; font-size: 0.72rem; letter-spacing: 0.08em; cursor: pointer; }
+.cp-onde__ajustar:hover { background: var(--heroi-traco); }
 .cp-onde h1 { margin: 0.2rem 0 0; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: clamp(2.4rem, 7vw, 3.4rem); line-height: 1; letter-spacing: 0.02em; color: var(--sobre-heroi); }
 .cp-onde h1 em { font-style: normal; color: #ffe3a3; }
 .cp-onde__sub { margin: 0.3rem 0 0; font-size: var(--corpo-menor); color: var(--sobre-heroi-2); }

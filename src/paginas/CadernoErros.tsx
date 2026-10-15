@@ -30,10 +30,18 @@ const POR_PAGINA = 12
 const dataCurta = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short' })
 
 function levantarErros(indice: Indice, respondidas: Record<string, RegistroQuestao>): Erro[] {
+  // Cópias de uma mesma questão (`dup` aponta para o id original) entram uma vez só,
+  // com os históricos somados: um erro feito pela cópia não some porque o original foi acertado.
+  const copias = new Map<string, string[]>()
+  for (const item of indice.questoes) {
+    if (item.dup && respondidas[item.dup]) copias.set(item.dup, [...(copias.get(item.dup) ?? []), item.id])
+  }
   const lista: Erro[] = []
   for (const item of indice.questoes) {
-    const r = respondidas[item.id]
-    if (!r) continue
+    if (item.dup && respondidas[item.dup]) continue
+    const registros = [item.id, ...(copias.get(item.id) ?? [])].map((id) => respondidas[id]).filter((r): r is RegistroQuestao => !!r)
+    if (!registros.length) continue
+    const r = registros.length === 1 ? registros[0] : juntarRegistros(registros)
     const erros = r.erros ?? (r.c === false ? 1 : 0)
     if (erros === 0 && r.c !== false) continue
     const ultimoErro = [...(r.historico ?? [])].reverse().find((h) => h.correta === false)
@@ -44,6 +52,17 @@ function levantarErros(indice: Indice, respondidas: Record<string, RegistroQuest
     })
   }
   return lista
+}
+
+/** Original e cópias como um registro só: a resposta mais recente manda, os erros e o histórico somam. */
+function juntarRegistros(registros: RegistroQuestao[]): RegistroQuestao {
+  const recente = registros.reduce((a, b) => (b.q > a.q ? b : a))
+  const errosDe = (r: RegistroQuestao) => r.erros ?? (r.c === false ? 1 : 0)
+  return {
+    ...recente,
+    erros: registros.reduce((soma, r) => soma + errosDe(r), 0),
+    historico: registros.flatMap((r) => r.historico ?? []).sort((a, b) => a.em - b.em),
+  }
 }
 
 /**
@@ -63,16 +82,20 @@ export function CadernoErros() {
   const [questoes, definirQuestoes] = useState<Map<string, Questao>>(new Map())
 
   const todos = useMemo(() => (indice ? levantarErros(indice, respondidas) : []), [indice, respondidas])
-  const abertos = todos.filter((e) => e.aberto)
+  const abertos = useMemo(() => todos.filter((e) => e.aberto), [todos])
   const corrigidos = todos.length - abertos.length
-  const comCerteza = abertos.filter((e) => e.comCerteza).length
+  const comCerteza = useMemo(() => abertos.filter((e) => e.comCerteza).length, [abertos])
 
-  const daSituacao = todos.filter((e) => situacao === 'todos' || (situacao === 'abertos' ? e.aberto : !e.aberto))
-  const porTema = new Map<number, number>()
-  for (const e of daSituacao) porTema.set(e.tema, (porTema.get(e.tema) ?? 0) + 1)
-  const visiveis = daSituacao
-    .filter((e) => tema === null || e.tema === tema)
-    .sort((a, b) => ordem === 'frequentes' ? b.erros - a.erros || b.registro.q - a.registro.q : b.registro.q - a.registro.q)
+  // Filtrar e ordenar só quando muda o recorte (antes era a cada render).
+  const { porTema, visiveis } = useMemo(() => {
+    const daSituacao = todos.filter((e) => situacao === 'todos' || (situacao === 'abertos' ? e.aberto : !e.aberto))
+    const porTema = new Map<number, number>()
+    for (const e of daSituacao) porTema.set(e.tema, (porTema.get(e.tema) ?? 0) + 1)
+    const visiveis = daSituacao
+      .filter((e) => tema === null || e.tema === tema)
+      .sort((a, b) => ordem === 'frequentes' ? b.erros - a.erros || b.registro.q - a.registro.q : b.registro.q - a.registro.q)
+    return { porTema, visiveis }
+  }, [todos, situacao, tema, ordem])
 
   // Onde os erros em aberto se concentram, por subtema.
   const focos = useMemo(() => {
@@ -81,8 +104,7 @@ export function CadernoErros() {
     for (const e of abertos) for (const s of e.subtemas) contagem.set(s, (contagem.get(s) ?? 0) + 1)
     return [...contagem.entries()].filter(([, n]) => n >= 2).sort((a, b) => b[1] - a[1]).slice(0, 5)
       .map(([s, n]) => ({ nome: indice.subtemas[s], n }))
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [indice, respondidas])
+  }, [indice, abertos])
 
   const pagina = visiveis.slice(0, limite)
   const chavePagina = pagina.map((e) => e.id).join(',')
@@ -141,14 +163,14 @@ export function CadernoErros() {
           </p>
           <div className="linha linha--empilha-celular">
             {abertos.length > 0 && (
-              <button className="botao rv-heroi__acao" onClick={() => refazer([...abertos].sort((a, b) => b.registro.q - a.registro.q).slice(0, 10).map((e) => e.id))}>
+              <button type="button" className="botao rv-heroi__acao" onClick={() => refazer([...abertos].sort((a, b) => b.registro.q - a.registro.q).slice(0, 10).map((e) => e.id))}>
                 Refazer {Math.min(10, abertos.length)} agora
               </button>
             )}
             {abertos.length > 10 && (
-              <button className="botao rv-heroi__secundaria" onClick={() => refazer(abertos.map((e) => e.id))}>Todos os {abertos.length}</button>
+              <button type="button" className="botao rv-heroi__secundaria" onClick={() => refazer(abertos.map((e) => e.id))}>Todos os {abertos.length}</button>
             )}
-            <button className="botao rv-heroi__secundaria nao-imprime" onClick={() => window.print()}>
+            <button type="button" className="botao rv-heroi__secundaria nao-imprime" onClick={() => window.print()}>
               <Icone nome="impressora" tamanho={16} /> Imprimir
             </button>
           </div>
@@ -176,7 +198,7 @@ export function CadernoErros() {
       <section className="ce-filtros nao-imprime" aria-label="Filtros do caderno">
         <div className="ce-abas" role="tablist">
           {([['abertos', 'Em aberto', abertos.length], ['corrigidos', 'Corrigidos', corrigidos], ['todos', 'Todos', todos.length]] as const).map(([valor, rotulo, n]) => (
-            <button key={valor} role="tab" aria-selected={situacao === valor} className={situacao === valor ? 'ativo' : ''} onClick={() => { definirSituacao(valor); definirTema(null) }}>
+            <button type="button" key={valor} role="tab" aria-selected={situacao === valor} className={situacao === valor ? 'ativo' : ''} onClick={() => { definirSituacao(valor); definirTema(null) }}>
               {rotulo} <span className="numerico">{n}</span>
             </button>
           ))}
@@ -190,9 +212,9 @@ export function CadernoErros() {
         </label>
         {porTema.size > 1 && (
           <div className="ce-temas">
-            <button className={tema === null ? 'ativo' : ''} onClick={() => definirTema(null)}>Todos os temas</button>
+            <button type="button" className={tema === null ? 'ativo' : ''} onClick={() => definirTema(null)}>Todos os temas</button>
             {[...porTema.entries()].sort((a, b) => b[1] - a[1]).map(([t, n]) => (
-              <button key={t} className={tema === t ? 'ativo' : ''} onClick={() => definirTema(t)}>
+              <button type="button" key={t} className={tema === t ? 'ativo' : ''} onClick={() => definirTema(t)}>
                 {indice.temas[t]?.nome} <span className="numerico">{n}</span>
               </button>
             ))}
@@ -213,7 +235,7 @@ export function CadernoErros() {
       )}
 
       {visiveis.length > limite && (
-        <button className="botao botao--fantasma ce-mais nao-imprime" onClick={() => definirLimite((n) => n + POR_PAGINA)}>
+        <button type="button" className="botao botao--fantasma ce-mais nao-imprime" onClick={() => definirLimite((n) => n + POR_PAGINA)}>
           Mostrar mais {Math.min(POR_PAGINA, visiveis.length - limite)} de {visiveis.length - limite}
         </button>
       )}
@@ -279,7 +301,7 @@ function ItemErro({ erro, questao, indice, nota }: { erro: Erro; questao?: Quest
       )}
 
       <div className="ce-item__acoes nao-imprime">
-        <button className="botao botao--fantasma" onClick={() => definirAberto((v) => !v)} aria-expanded={aberto}>
+        <button type="button" className="botao botao--fantasma" onClick={() => definirAberto((v) => !v)} aria-expanded={aberto}>
           <Icone nome={aberto ? 'cima' : 'livro'} tamanho={16} /> {aberto ? 'Fechar' : 'Entender o erro'}
         </button>
         <a className="botao botao--principal" href={href(`/questao/${erro.id}`)}>

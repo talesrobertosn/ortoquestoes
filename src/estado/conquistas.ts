@@ -602,7 +602,10 @@ function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) 
   const metas = f.dias?.meta_cronograma ?? []
   let cronogramaCompleto = 0
   if (f.plano && f.plano.data_prova <= hoje) {
-    const inicio = numeroDia(f.plano.criado_em.slice(0, 10)), fim = numeroDia(f.plano.data_prova) - diasRetaFinal(f.plano.criado_em, f.plano.data_prova)
+    // O dia em que o plano foi criado no relógio do aparelho, como o cronograma conta
+    // (meiaNoite local). Com slice(0, 10) era o dia em UTC: plano criado às 22h de
+    // Brasília exigia um dia a mais para "Do início ao fim".
+    const inicio = numeroDia(chaveDia(new Date(f.plano.criado_em).getTime())), fim = numeroDia(f.plano.data_prova) - diasRetaFinal(f.plano.criado_em, f.plano.data_prova)
     const feitos = new Set(metas.map(numeroDia))
     let tudo = fim > inicio
     for (let d = inicio; tudo && d < fim; d++) if (!folgas.includes(diaDaSemana(d)) && !feitos.has(d)) tudo = false

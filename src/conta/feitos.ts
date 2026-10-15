@@ -3,6 +3,7 @@ import { usarConta } from './ContextoConta'
 import { chamarRpc } from '../servicos/supabase'
 import { gravar, ler, usuarioLocal } from '../estado/armazenamento'
 import { usarArmazenado } from '../estado/usarArmazenado'
+// Dia de São Paulo, de propósito: é o mesmo dia que o servidor grava em registrar_feito.
 import { chaveDia } from '../estado/limiteDiario'
 import { EVENTO_DADOS, type MudancaDados } from '../estado/armazenamento'
 import { revisarHoje, type RegistroQuestao } from '../estado/revisao'

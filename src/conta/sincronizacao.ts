@@ -3,6 +3,12 @@ import { EVENTO_DADOS, gravar, ler, limparTudo, usuarioLocal, type MudancaDados 
 import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, resolverConflito, TIPOS_SYNC, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
 import { gerarId } from '../util/id'
 
+/** A função `sincronizar_progresso` não existe neste banco (migração ainda não colada). */
+function rpcAusente(erro: { code?: string; message?: string } | null, status?: number): boolean {
+  if (!erro) return false
+  return status === 404 || erro.code === 'PGRST202' || erro.code === '42883' || /could not find the function/i.test(erro.message ?? '')
+}
+
 export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean; detalhe?: string; rejeitados: { id: string; tipo: TipoSync; item: string; erro: string; em: number }[] }
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
 export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string, notificar: (s: StatusSync) => void) {
@@ -21,11 +27,14 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     return [e?.code, e?.message ?? (erro instanceof Error ? erro.message : String(erro)), e?.details, e?.hint].filter(Boolean).join(' · ').slice(0, 300)
   }
   const prefixar = (p: Alteracao) => ({ ...p, item: estado.reinicio ? `r${estado.reinicio}:${p.item}` : p.item })
-  /** Envia um lote; se o servidor recusar, tenta pelo caminho direto (RLS). */
-  async function enviar(lote: Alteracao[]): Promise<{ docs: Documento[] } | { erro: unknown }> {
+  /** Envia um lote; o caminho direto (RLS) fica só para banco sem a função. */
+  async function enviar(lote: Alteracao[]): Promise<{ docs: Documento[] } | { erro: unknown; transitorio?: boolean }> {
     const remotas = lote.map(prefixar)
-    const { data, error } = await cliente.rpc('sincronizar_progresso', { alteracoes: remotas })
+    const { data, error, status } = await cliente.rpc('sincronizar_progresso', { alteracoes: remotas })
     if (!error) return { docs: (data ?? []) as Documento[] }
+    // A gravação direta não confere a versão e apagaria o que outro aparelho
+    // salvou. Ela só serve para bancos que ainda não têm a função instalada.
+    if (!rpcAusente(error, status)) return { erro: error, transitorio: status === 0 || status === 408 || status === 429 || status >= 500 }
     const linhas = remotas.map(p => ({ usuario_id: idUsuario, tipo: p.tipo, item: p.item, valor: p.valor, operacao: p.operacao }))
     const direto = await cliente.from('progresso_usuario').upsert(linhas, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
     if (!direto.error) return { docs: (direto.data ?? []) as Documento[] }
@@ -100,6 +109,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
           const alteracao = { tipo: 'historico', item: itemReinicio, valor: { id: itemReinicio, descricao: 'Reinício do progresso', concluidaEm: Date.now() }, base: marcador?.versao ?? 0, operacao: reinicio }
           const resposta = await cliente.rpc('sincronizar_progresso', { alteracoes: [alteracao] })
           if (!valido()) return
+          if (resposta.error && !rpcAusente(resposta.error, resposta.status)) throw resposta.error
           if (resposta.error) {
             const direto = await cliente.from('progresso_usuario').upsert({ usuario_id: idUsuario, tipo: alteracao.tipo, item: alteracao.item, valor: alteracao.valor, operacao: reinicio }, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
             if (!valido()) return
@@ -145,11 +155,15 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
         } else {
           // Um único item recusado (formato antigo, dado corrompido) não pode
           // prender a fila inteira: reenvia um por um e separa só o que falhar.
+          // Rede ou servidor fora do ar não é culpa de nenhum item: a fila
+          // fica intacta e tenta de novo no próximo ciclo.
+          if (resultado.transitorio) throw resultado.erro
           detalhe = descrever(resultado.erro)
           for (const alteracao of fila) {
             const individual = await enviar([alteracao])
             if (!valido()) return
             if ('docs' in individual) { aplicar(individual.docs, [alteracao]); continue }
+            if (individual.transitorio) throw individual.erro
             const id = identificador(alteracao.tipo, alteracao.item)
             estado.rejeitados = { ...(estado.rejeitados ?? {}), [id]: { tipo: alteracao.tipo, item: alteracao.item, valor: alteracao.valor, erro: descrever(individual.erro), em: Date.now() } }
             delete estado.pendentes[id]

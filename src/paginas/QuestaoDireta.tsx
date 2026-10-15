@@ -7,7 +7,7 @@ import { PortaoConta } from '../componentes/PortaoConta'
 import { Carregando, Estado } from '../componentes/Estados'
 import { usarConta } from '../conta/ContextoConta'
 import { registrarResposta, usarFavoritos } from '../estado/sessao'
-import { usarLimiteDiario } from '../estado/limiteDiario'
+import { erroDeConexao, usarLimiteDiario } from '../estado/limiteDiario'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href } from '../util/rotas'
 import { gerarId } from '../util/id'
@@ -80,6 +80,7 @@ export function QuestaoDireta({ id }: { id: string }) {
           try {
             chaveResposta.current ??= gerarId()
             const permissao = await autorizar(questao.id, chaveResposta.current)
+            if (permissao.falhaValidacao) throw erroDeConexao()
             if (!permissao.permitido) { definirLimiteAberto(true); return }
             definirResposta({ escolhida, correta, segundos, confianca })
             registrarResposta(questao.id, correta, confianca, escolhida)

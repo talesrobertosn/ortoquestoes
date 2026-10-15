@@ -1,16 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
-import { guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano } from '../conta/cronograma'
+import { guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { usarPremium } from '../conta/premium'
+import { usarConta } from '../conta/ContextoConta'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, dataLocal, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, dataLocal, diasAte, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
@@ -24,6 +25,7 @@ import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
+import { usarDiaAtual } from '../util/usarDiaAtual'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
@@ -78,7 +80,14 @@ export function PlanoEstudo() {
   const [respondidasReais] = usarArmazenado<Respondidas>('respondidas', {})
   const respondidas = useMemo(() => (DEMO && indice ? respondidasDemo(indice) : respondidasReais), [respondidasReais, indice])
   const { sessao, iniciar } = usarSessao()
-  const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
+  const salvoNoServidor = usarPlanoSalvo(premium && !DEMO)
+  const [planoDemo_, definirPlanoDemo] = useState<PlanoSalvo | null>(() => (DEMO ? planoDemo() : null))
+  const plano = DEMO ? planoDemo_ : salvoNoServidor.plano
+  const definirPlano = DEMO ? definirPlanoDemo : salvoNoServidor.definirPlano
+  const { status } = usarConta()
+  // Antes do primeiro sync as respostas deste aparelho podem estar atrasadas:
+  // nada que dependa delas é gravado no plano compartilhado até lá.
+  const sincronizado = DEMO || (status.pronto && status.pendentes === 0)
   const [editando, definirEditando] = useState(false)
   const [erro, definirErro] = useState('')
   const [salvandoOpcoes, definirSalvandoOpcoes] = useState(false)
@@ -86,26 +95,27 @@ export function PlanoEstudo() {
   const [feitosDia, definirFeitosDia] = usarArmazenado<FeitosDoDia>('cronograma:dia', { data: '' })
   const { ritmo } = usarRitmoRevisao()
 
+  // Sem plano no servidor, abre direto o formulário (só na primeira leitura).
+  const primeiraLeitura = useRef(true)
   useEffect(() => {
-    if (!premium) { definirPlano(null); return }
-    if (DEMO) { definirPlano(planoDemo()); return }
-    let vivo = true
-    obterPlano()
-      .then((p) => { if (vivo) { definirPlano(p); definirEditando(!p) } })
-      .catch(() => { if (vivo) { definirPlano(null); definirErro('Não foi possível carregar seu cronograma. Confira a conexão.') } })
-    return () => { vivo = false }
-  }, [premium])
+    if (plano === undefined || !primeiraLeitura.current) return
+    primeiraLeitura.current = false
+    if (!plano) definirEditando(true)
+  }, [plano])
+  useEffect(() => {
+    if (salvoNoServidor.falhou && !plano) definirErro('Não foi possível carregar seu cronograma. Confira a conexão.')
+  }, [salvoNoServidor.falhou, plano])
 
-  const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
+  const dia = usarDiaAtual()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas, dia])
   useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
   // Fez além da meta hoje: guarda o dia (e a meta dele), para amanhã a meta já vir mais leve.
   const extraHoje = calculo?.extraHoje ?? 0
   useEffect(() => {
-    if (DEMO || !plano || !calculo || !extraHoje || !opcoesComAdiantamento(plano, calculo)) return
-    let vivo = true
-    guardarAdiantamento(plano, calculo).then((p) => { if (vivo && p) definirPlano(p) })
-    return () => { vivo = false }
-  }, [plano, extraHoje]) // eslint-disable-line react-hooks/exhaustive-deps
+    if (DEMO || !sincronizado || !plano || !calculo || !extraHoje || !opcoesComAdiantamento(plano, calculo)) return
+    guardarAdiantamento(calculo).catch(() => undefined)
+  }, [plano, extraHoje, sincronizado]) // eslint-disable-line react-hooks/exhaustive-deps
   // Vindo do fim da sessão ("adiantar"): rola até o painel.
   const irAoAdiantar = typeof location !== 'undefined' && location.hash.includes('adiantar=1')
   useEffect(() => {
@@ -187,8 +197,8 @@ export function PlanoEstudo() {
     definirPlano(novo)
     if (calculo.faltaHoje === 0) comecarHoje(calcularPlano(indice, respondidas, novo), novo)
     if (DEMO || !opcoes) return
-    definirSalvandoOpcoes(true)
-    try { const salvo = await guardarAdiantamento(plano, calculo, pedido); if (salvo && calculo.faltaHoje > 0) definirPlano(salvo) } finally { definirSalvandoOpcoes(false) }
+    definirSalvandoOpcoes(true); definirErro('')
+    try { await guardarAdiantamento(calculo, pedido) } catch { definirPlano(plano); definirErro('Não foi possível salvar o adiantamento agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
   }
 
   /** Cancela o que foi pedido e ainda não foi feito (o que já foi feito a mais continua valendo). */
@@ -198,8 +208,8 @@ export function PlanoEstudo() {
     if (!opcoes) return
     definirPlano({ ...plano, opcoes })
     if (DEMO) return
-    definirSalvandoOpcoes(true)
-    try { const salvo = await guardarAdiantamento(plano, calculo, 0); if (salvo) definirPlano(salvo) } finally { definirSalvandoOpcoes(false) }
+    definirSalvandoOpcoes(true); definirErro('')
+    try { await guardarAdiantamento(calculo, 0) } catch { definirPlano(plano); definirErro('Não foi possível cancelar agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
   }
 
   function marcarFeito(chave: keyof Omit<FeitosDoDia, 'data'>) {
@@ -212,13 +222,15 @@ export function PlanoEstudo() {
     const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
     const seg = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
     const chave = `${seg.getFullYear()}-${String(seg.getMonth() + 1).padStart(2, '0')}-${String(seg.getDate()).padStart(2, '0')}`
-    const atuais = (plano.opcoes?.semanasDificeis ?? []).filter((s) => s >= chave)
-    const opcoes = { ...(plano.opcoes ?? {}), semanasDificeis: ativar ? [...new Set([...atuais, chave])] : atuais.filter((s) => s !== chave) }
+    const alternarSemana = (p: PlanoSalvo) => {
+      const atuais = (p.opcoes?.semanasDificeis ?? []).filter((s) => s >= chave)
+      return { ...(p.opcoes ?? {}), semanasDificeis: ativar ? [...new Set([...atuais, chave])] : atuais.filter((s) => s !== chave) }
+    }
     definirSalvandoOpcoes(true); definirErro('')
     // Mostra na hora; o servidor confirma em seguida.
-    definirPlano({ ...plano, opcoes })
+    definirPlano({ ...plano, opcoes: alternarSemana(plano) })
     if (DEMO) { definirSalvandoOpcoes(false); return }
-    try { const salvo = await salvarOpcoes(plano, opcoes); if (salvo) definirPlano(salvo) } catch { definirErro('Não foi possível salvar agora. A semana difícil ficou só neste aparelho.') } finally { definirSalvandoOpcoes(false) }
+    try { await salvarOpcoes(alternarSemana) } catch { definirPlano(plano); definirErro('Não foi possível salvar a semana difícil agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
   }
 
   const hub = montarHub()
@@ -344,7 +356,6 @@ export interface HubDados {
 
 export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
   const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
-  const [explicacaoAberta] = useState(primeiraVisita)
   const minutos = hub?.minutosQuestao ?? MINUTOS_POR_QUESTAO
   const naRetaFinalComRoteiro = aberto && !!hub && (calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera')
   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
@@ -411,7 +422,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
     {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
 
-    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} />
+    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} aoAjustar={aberto ? aoAjustar : undefined} />
 
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">
@@ -429,7 +440,8 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
           <Recolhido titulo="Mapa de risco" icone="alvo"><MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} /></Recolhido>
           <Recolhido titulo="OrtoQuestões Simulados" icone="estrela"><CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoIncluir={hub.aoIncluirSimulados} /></Recolhido>
           <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} /></Recolhido>
-          <ComoFuncionaCompleto aberto={explicacaoAberta} plano={plano} />
+          {/* Recolhido sempre: o tour de 3 partes já explica a página na primeira visita. */}
+          <ComoFuncionaCompleto aberto={false} plano={plano} />
         </div>}
       </div>
       <div className="cp-col cp-col--lado">
@@ -451,8 +463,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
       </div>
     </div>
 
-    {aberto && aoAjustar && <div className="linha">
-      <button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
+    {aberto && <div className="linha">
       <a className="botao botao--fantasma" href={href('/temas-que-mais-caem')}><Icone nome="grafico" tamanho={16} /> Temas que mais caem</a>
     </div>}
   </>
@@ -506,15 +517,6 @@ function SemanaASemana({ semanas, aberto, calculo }: { semanas: CalculoPlano['se
   )
 }
 
-/** A explicação do cronograma vem aberta só na primeira vez que a pessoa vê o próprio cronograma. */
-function primeiraVisita(): boolean {
-  try {
-    if (localStorage.getItem('ortoquestoes:cronograma-visto')) return false
-    localStorage.setItem('ortoquestoes:cronograma-visto', '1')
-    return true
-  } catch { return false }
-}
-
 /** Não assinante: preenche como o assinante e vê o começo do próprio cronograma. */
 /**
  * Quem não assina vê uma vitrine (orientação de 14/10/2026): um exemplo do cronograma até o
@@ -560,6 +562,8 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const [salvando, definirSalvando] = useState(false)
   const [erro, definirErro] = useState('')
   const [passo, definirPasso] = useState(0)
+  const { status } = usarConta()
+  const sincronizado = !!previa || (status.pronto && status.pendentes === 0)
   const dataValida = /^\d{4}-\d{2}-\d{2}$/.test(data) && dataLocal(data) > new Date()
   const minutos = useMemo(() => minutosPorQuestao(lerHistorico()), [])
   const areas = useMemo(() => indice.temas.map((t) => ({ slug: t.slug, nome: t.nome })).filter((t) => posicaoDaArea(t.slug) !== null || indice.questoes.some((q) => indice.temas[q.t]?.slug === t.slug && !q.ar)), [indice])
@@ -590,11 +594,19 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
       aoSalvar({ data_prova: data, intensidade, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: opcoes() })
       return
     }
+    // A contagem do plano parte das respostas deste aparelho: se ele ainda não
+    // recebeu as dos outros, a base sairia baixa para sempre, em todos eles.
+    if (!sincronizado) { definirErro('Aguarde alguns segundos: seu progresso ainda está sincronizando.'); return }
     definirSalvando(true); definirErro('')
     try {
+      // Relê o plano: outro aparelho pode ter adiantado o dia ou marcado a semana difícil.
+      const fresco = atual ? await obterPlano() : null
       // Trocar a escolha dos simulados muda o tamanho do acervo do plano: a contagem recomeça.
-      const mudouSimulados = !!atual && incluiSimulados(atual) !== simulados
-      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: !atual || recomecar || mudouSimulados }, simulados, opcoes())
+      const mudouSimulados = !!fresco && incluiSimulados(fresco) !== simulados
+      const recomecando = !fresco || recomecar || mudouSimulados
+      const anteriores = opcoesDe(fresco)
+      const novasOpcoes: OpcoesPlano = { ...opcoes(), semanasDificeis: anteriores.semanasDificeis, ...(recomecando ? {} : { adiantados: anteriores.adiantados }) }
+      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: recomecando }, simulados, novasOpcoes)
       if (!salvo) throw new Error('Plano não encontrado depois de salvar.')
       aoSalvar(salvo, diagnostico)
     } catch (falha) {
@@ -641,7 +653,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
           {dataLocal(DATA_TEOT) > new Date() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
             <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT 2027</strong> · prova teórica em 10 de janeiro de 2027</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
           </button>}
-          {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000)} dias</b> até a prova.</p>}
+          {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{diasAte(data)} dias</b> até a prova.</p>}
           <details className="pe-form__mais" open={!!provaExtra.nome}>
             <summary>Vai fazer outra prova antes? (opcional)</summary>
             <p className="texto-2">Ela aparece como marco no seu caminho até a prova principal, por exemplo o TARO antes do TEOT.</p>
@@ -734,7 +746,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
 function ResultadoAoVivo({ data, prova, folgas, diasLeves, qtdLeve, simulados, intensidade, meta, maisCai, minutos }: {
   data: string | null; prova: string; folgas: number[]; diasLeves: number[]; qtdLeve: number; simulados: boolean; intensidade: Intensidade; meta: number | null; maisCai: number | null; minutos: number
 }) {
-  const dias = data ? Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000) : 0
+  const dias = data ? diasAte(data) : 0
   const anterior = useRef<number | null>(null)
   const [diferenca, definirDiferenca] = useState<number | null>(null)
   useEffect(() => {

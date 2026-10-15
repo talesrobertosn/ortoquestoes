@@ -27,7 +27,8 @@ export const RANKING_NO_SERVIDOR = FLASHCARDS_NO_SERVIDOR && import.meta.env?.VI
 
 export interface LimiteFlashcard { permitido: boolean; ilimitado: boolean; restantes: number | null; liberaEm: string; motivo?: string; falha?: boolean }
 
-const novaChave = () => (typeof crypto !== 'undefined' && 'randomUUID' in crypto ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, () => Math.floor(Math.random() * 16).toString(16)))
+/** UUID com fallback: Safari antes do 15.4 não tem crypto.randomUUID. */
+export const novaChave = () => (typeof crypto !== 'undefined' && 'randomUUID' in crypto ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, () => Math.floor(Math.random() * 16).toString(16)))
 
 /** Pede ao servidor para contar este flashcard. Uma chave por resposta (repetir não gasta duas vezes). */
 export async function autorizarFlashcard(idFlashcard: string, chave = novaChave()): Promise<LimiteFlashcard> {
