@@ -101,7 +101,7 @@ const COMO_FUNCIONA = [
 ]
 
 /** Trilha da jornada: as semanas do cronograma como casas de um mapa de RPG, até a prova. */
-function TrilhaJornada({ semanas }: { semanas: CalculoPlano['semanas'] }) {
+export function TrilhaJornada({ semanas }: { semanas: CalculoPlano['semanas'] }) {
   const atual = Math.max(0, semanas.findIndex((s) => s.atual))
   const inicio = Math.max(0, Math.min(atual - 2, semanas.length - 6))
   const janela = semanas.slice(inicio, inicio + 6)
