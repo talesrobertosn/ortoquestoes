@@ -472,7 +472,7 @@ export function Resumo() {
             const descricao =
               l.situacao === 'pulada' ? 'sem resposta'
                 : l.situacao === 'anulada' ? 'anulada'
-                  : `${l.situacao}, marcou ${l.resposta!.escolhida}${l.situacao === 'errada' && l.questao?.gabarito ? `, gabarito ${l.questao.gabarito}` : ''}${incerta ? `, ${ROTULO_CONFIANCA[l.resposta!.confianca!].toLowerCase()}` : ''}`
+                  : `${l.situacao}, ${l.resposta!.escolhida ? `marcou ${l.resposta!.escolhida}` : 'autoavaliada'}${l.situacao === 'errada' && l.questao?.gabarito ? `, gabarito ${l.questao.gabarito}` : ''}${incerta ? `, ${ROTULO_CONFIANCA[l.resposta!.confianca!].toLowerCase()}` : ''}`
             return (
               <li key={l.id}>
                 <a className={`rs-casa rs-casa--${l.situacao}${incerta ? ' rs-casa--incerta' : ''}`} href={href(`/questao/${l.id}`)} title={`Questão ${l.numero}: ${descricao}`} aria-label={`Questão ${l.numero}: ${descricao}`}>
@@ -522,11 +522,11 @@ export function Resumo() {
                         {l.situacao === 'pulada' ? (
                           <span className="rs-chip">Sem resposta</span>
                         ) : l.situacao === 'anulada' ? (
-                          <span className="rs-chip">Anulada · marcou {r!.escolhida}</span>
+                          <span className="rs-chip">Anulada{r!.escolhida ? ` · marcou ${r!.escolhida}` : ''}</span>
                         ) : (
                           <>
                             <span className={`rs-chip rs-chip--${l.situacao}`}>
-                              <Icone nome={l.situacao === 'certa' ? 'certo' : 'errado'} tamanho={13} /> Marcou {r!.escolhida}
+                              <Icone nome={l.situacao === 'certa' ? 'certo' : 'errado'} tamanho={13} /> {r!.escolhida ? `Marcou ${r!.escolhida}` : l.situacao === 'certa' ? 'Acertou (autoavaliação)' : 'Errou (autoavaliação)'}
                             </span>
                             {l.situacao === 'errada' && q?.gabarito && <span className="rs-chip rs-chip--gabarito">Gabarito {q.gabarito}</span>}
                           </>

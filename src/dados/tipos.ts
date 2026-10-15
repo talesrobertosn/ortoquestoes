@@ -270,7 +270,8 @@ export const ROTULO_DIFICULDADE: Record<Dificuldade, string> = {
 
 /** Uma resposta dada dentro de uma sessão. */
 export interface Resposta {
-  escolhida: Letra
+  /** null na dissertativa: ela é autoavaliada, não há letra marcada. */
+  escolhida: Letra | null
   correta: boolean | null
   segundos: number
   confianca?: 'seguro' | 'duvida' | 'chute'
