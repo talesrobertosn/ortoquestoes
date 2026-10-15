@@ -1,12 +1,15 @@
 {
- "geradoEm": "2026-10-13",
+ "geradoEm": "2026-10-15",
  "ritmo": 60,
  "inicio": "2026-10-19",
  "totais": {
   "fabrica": 4302,
-  "autorais": 10,
+  "autorais": 215,
   "meta": 3646,
-  "falta": 3636
+  "falta": 3462,
+  "fabricaSimulados": 754,
+  "simulados": 799,
+  "autoraisSimulados": 20
  },
  "assuntos": [
   {
@@ -19,10 +22,13 @@
    "comComentario": 86,
    "fontesRicas": 75,
    "fabrica": 52,
-   "questoesComFlashcard": 53,
-   "autorais": 6,
+   "questoesComFlashcard": 59,
+   "autorais": 81,
    "meta": 77,
-   "falta": 71,
+   "falta": 0,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 1
   },
   {
@@ -35,10 +41,13 @@
    "comComentario": 254,
    "fontesRicas": 161,
    "fabrica": 180,
-   "questoesComFlashcard": 180,
-   "autorais": 0,
+   "questoesComFlashcard": 186,
+   "autorais": 95,
    "meta": 68,
-   "falta": 68,
+   "falta": 0,
+   "simulados": 46,
+   "fabricaSimulados": 46,
+   "autoraisSimulados": 20,
    "posicao": 2
   },
   {
@@ -52,9 +61,12 @@
    "fontesRicas": 57,
    "fabrica": 43,
    "questoesComFlashcard": 43,
-   "autorais": 0,
+   "autorais": 27,
    "meta": 60,
-   "falta": 60,
+   "falta": 33,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 3
   },
   {
@@ -71,6 +83,9 @@
    "autorais": 0,
    "meta": 57,
    "falta": 57,
+   "simulados": 22,
+   "fabricaSimulados": 22,
+   "autoraisSimulados": 0,
    "posicao": 4
   },
   {
@@ -87,6 +102,9 @@
    "autorais": 0,
    "meta": 56,
    "falta": 56,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 5
   },
   {
@@ -99,10 +117,13 @@
    "comComentario": 54,
    "fontesRicas": 41,
    "fabrica": 29,
-   "questoesComFlashcard": 29,
-   "autorais": 0,
+   "questoesComFlashcard": 30,
+   "autorais": 8,
    "meta": 53,
-   "falta": 53,
+   "falta": 45,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 6
   },
   {
@@ -119,6 +140,9 @@
    "autorais": 0,
    "meta": 52,
    "falta": 52,
+   "simulados": 24,
+   "fabricaSimulados": 24,
+   "autoraisSimulados": 0,
    "posicao": 7
   },
   {
@@ -135,6 +159,9 @@
    "autorais": 0,
    "meta": 50,
    "falta": 50,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 8
   },
   {
@@ -151,6 +178,9 @@
    "autorais": 0,
    "meta": 48,
    "falta": 48,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 9
   },
   {
@@ -167,6 +197,9 @@
    "autorais": 0,
    "meta": 48,
    "falta": 48,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 10
   },
   {
@@ -183,6 +216,9 @@
    "autorais": 0,
    "meta": 47,
    "falta": 47,
+   "simulados": 64,
+   "fabricaSimulados": 63,
+   "autoraisSimulados": 0,
    "posicao": 11
   },
   {
@@ -199,6 +235,9 @@
    "autorais": 0,
    "meta": 45,
    "falta": 45,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 12
   },
   {
@@ -215,6 +254,9 @@
    "autorais": 0,
    "meta": 45,
    "falta": 45,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 13
   },
   {
@@ -231,6 +273,9 @@
    "autorais": 0,
    "meta": 42,
    "falta": 42,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 14
   },
   {
@@ -247,6 +292,9 @@
    "autorais": 0,
    "meta": 42,
    "falta": 42,
+   "simulados": 17,
+   "fabricaSimulados": 17,
+   "autoraisSimulados": 0,
    "posicao": 15
   },
   {
@@ -263,6 +311,9 @@
    "autorais": 0,
    "meta": 41,
    "falta": 41,
+   "simulados": 30,
+   "fabricaSimulados": 28,
+   "autoraisSimulados": 0,
    "posicao": 16
   },
   {
@@ -279,6 +330,9 @@
    "autorais": 0,
    "meta": 41,
    "falta": 41,
+   "simulados": 31,
+   "fabricaSimulados": 31,
+   "autoraisSimulados": 0,
    "posicao": 17
   },
   {
@@ -295,6 +349,9 @@
    "autorais": 0,
    "meta": 40,
    "falta": 40,
+   "simulados": 16,
+   "fabricaSimulados": 16,
+   "autoraisSimulados": 0,
    "posicao": 18
   },
   {
@@ -311,6 +368,9 @@
    "autorais": 0,
    "meta": 40,
    "falta": 40,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 19
   },
   {
@@ -327,6 +387,9 @@
    "autorais": 0,
    "meta": 39,
    "falta": 39,
+   "simulados": 36,
+   "fabricaSimulados": 36,
+   "autoraisSimulados": 0,
    "posicao": 20
   },
   {
@@ -343,6 +406,9 @@
    "autorais": 0,
    "meta": 39,
    "falta": 39,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 21
   },
   {
@@ -359,6 +425,9 @@
    "autorais": 0,
    "meta": 37,
    "falta": 37,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 22
   },
   {
@@ -375,6 +444,9 @@
    "autorais": 0,
    "meta": 37,
    "falta": 37,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 23
   },
   {
@@ -391,6 +463,9 @@
    "autorais": 0,
    "meta": 35,
    "falta": 35,
+   "simulados": 14,
+   "fabricaSimulados": 13,
+   "autoraisSimulados": 0,
    "posicao": 24
   },
   {
@@ -407,6 +482,9 @@
    "autorais": 0,
    "meta": 35,
    "falta": 35,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 25
   },
   {
@@ -423,6 +501,9 @@
    "autorais": 0,
    "meta": 34,
    "falta": 34,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 26
   },
   {
@@ -439,6 +520,9 @@
    "autorais": 0,
    "meta": 33,
    "falta": 33,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 27
   },
   {
@@ -455,6 +539,9 @@
    "autorais": 0,
    "meta": 33,
    "falta": 33,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 28
   },
   {
@@ -471,6 +558,9 @@
    "autorais": 0,
    "meta": 33,
    "falta": 33,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 29
   },
   {
@@ -487,6 +577,9 @@
    "autorais": 0,
    "meta": 33,
    "falta": 33,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 30
   },
   {
@@ -503,6 +596,9 @@
    "autorais": 0,
    "meta": 32,
    "falta": 32,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 31
   },
   {
@@ -519,6 +615,9 @@
    "autorais": 0,
    "meta": 31,
    "falta": 31,
+   "simulados": 15,
+   "fabricaSimulados": 12,
+   "autoraisSimulados": 0,
    "posicao": 32
   },
   {
@@ -535,6 +634,9 @@
    "autorais": 0,
    "meta": 31,
    "falta": 31,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 33
   },
   {
@@ -551,6 +653,9 @@
    "autorais": 0,
    "meta": 30,
    "falta": 30,
+   "simulados": 36,
+   "fabricaSimulados": 35,
+   "autoraisSimulados": 0,
    "posicao": 34
   },
   {
@@ -567,6 +672,9 @@
    "autorais": 0,
    "meta": 30,
    "falta": 30,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 35
   },
   {
@@ -583,6 +691,9 @@
    "autorais": 0,
    "meta": 30,
    "falta": 30,
+   "simulados": 53,
+   "fabricaSimulados": 52,
+   "autoraisSimulados": 0,
    "posicao": 36
   },
   {
@@ -593,12 +704,15 @@
    "incidencia": 30,
    "acervo": 76,
    "comComentario": 76,
-   "fontesRicas": 23,
+   "fontesRicas": 22,
    "fabrica": 64,
    "questoesComFlashcard": 64,
    "autorais": 0,
    "meta": 30,
    "falta": 30,
+   "simulados": 45,
+   "fabricaSimulados": 38,
+   "autoraisSimulados": 0,
    "posicao": 37
   },
   {
@@ -615,6 +729,9 @@
    "autorais": 0,
    "meta": 29,
    "falta": 29,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 38
   },
   {
@@ -631,6 +748,9 @@
    "autorais": 0,
    "meta": 29,
    "falta": 29,
+   "simulados": 32,
+   "fabricaSimulados": 30,
+   "autoraisSimulados": 0,
    "posicao": 39
   },
   {
@@ -647,6 +767,9 @@
    "autorais": 0,
    "meta": 29,
    "falta": 29,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 40
   },
   {
@@ -663,6 +786,9 @@
    "autorais": 0,
    "meta": 28,
    "falta": 28,
+   "simulados": 21,
+   "fabricaSimulados": 21,
+   "autoraisSimulados": 0,
    "posicao": 41
   },
   {
@@ -679,6 +805,9 @@
    "autorais": 0,
    "meta": 27,
    "falta": 27,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 42
   },
   {
@@ -695,6 +824,9 @@
    "autorais": 0,
    "meta": 27,
    "falta": 27,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 43
   },
   {
@@ -711,6 +843,9 @@
    "autorais": 0,
    "meta": 19,
    "falta": 19,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 44
   },
   {
@@ -727,6 +862,9 @@
    "autorais": 0,
    "meta": 26,
    "falta": 26,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 45
   },
   {
@@ -743,6 +881,9 @@
    "autorais": 0,
    "meta": 19,
    "falta": 19,
+   "simulados": 2,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 46
   },
   {
@@ -759,6 +900,9 @@
    "autorais": 0,
    "meta": 25,
    "falta": 25,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 47
   },
   {
@@ -775,6 +919,9 @@
    "autorais": 0,
    "meta": 25,
    "falta": 25,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 48
   },
   {
@@ -791,6 +938,9 @@
    "autorais": 0,
    "meta": 25,
    "falta": 25,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 49
   },
   {
@@ -807,6 +957,9 @@
    "autorais": 0,
    "meta": 25,
    "falta": 25,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 50
   },
   {
@@ -823,6 +976,9 @@
    "autorais": 0,
    "meta": 18,
    "falta": 18,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 51
   },
   {
@@ -839,6 +995,9 @@
    "autorais": 0,
    "meta": 17,
    "falta": 17,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 52
   },
   {
@@ -855,6 +1014,9 @@
    "autorais": 0,
    "meta": 17,
    "falta": 17,
+   "simulados": 25,
+   "fabricaSimulados": 16,
+   "autoraisSimulados": 0,
    "posicao": 53
   },
   {
@@ -871,6 +1033,9 @@
    "autorais": 0,
    "meta": 17,
    "falta": 17,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 54
   },
   {
@@ -887,6 +1052,9 @@
    "autorais": 0,
    "meta": 17,
    "falta": 17,
+   "simulados": 18,
+   "fabricaSimulados": 18,
+   "autoraisSimulados": 0,
    "posicao": 55
   },
   {
@@ -903,6 +1071,9 @@
    "autorais": 0,
    "meta": 17,
    "falta": 17,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 56
   },
   {
@@ -919,6 +1090,9 @@
    "autorais": 0,
    "meta": 23,
    "falta": 23,
+   "simulados": 11,
+   "fabricaSimulados": 11,
+   "autoraisSimulados": 0,
    "posicao": 57
   },
   {
@@ -935,6 +1109,9 @@
    "autorais": 0,
    "meta": 23,
    "falta": 23,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 58
   },
   {
@@ -951,6 +1128,9 @@
    "autorais": 0,
    "meta": 17,
    "falta": 17,
+   "simulados": 20,
+   "fabricaSimulados": 19,
+   "autoraisSimulados": 0,
    "posicao": 59
   },
   {
@@ -967,6 +1147,9 @@
    "autorais": 0,
    "meta": 17,
    "falta": 17,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 60
   },
   {
@@ -983,6 +1166,9 @@
    "autorais": 0,
    "meta": 22,
    "falta": 22,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 61
   },
   {
@@ -993,12 +1179,15 @@
    "incidencia": 22,
    "acervo": 31,
    "comComentario": 31,
-   "fontesRicas": 7,
+   "fontesRicas": 6,
    "fabrica": 24,
    "questoesComFlashcard": 24,
    "autorais": 0,
    "meta": 22,
    "falta": 22,
+   "simulados": 7,
+   "fabricaSimulados": 7,
+   "autoraisSimulados": 0,
    "posicao": 62
   },
   {
@@ -1015,6 +1204,9 @@
    "autorais": 0,
    "meta": 16,
    "falta": 16,
+   "simulados": 3,
+   "fabricaSimulados": 3,
+   "autoraisSimulados": 0,
    "posicao": 63
   },
   {
@@ -1031,6 +1223,9 @@
    "autorais": 0,
    "meta": 16,
    "falta": 16,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 64
   },
   {
@@ -1047,6 +1242,9 @@
    "autorais": 0,
    "meta": 16,
    "falta": 16,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 65
   },
   {
@@ -1063,6 +1261,9 @@
    "autorais": 0,
    "meta": 21,
    "falta": 21,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 66
   },
   {
@@ -1079,6 +1280,9 @@
    "autorais": 0,
    "meta": 21,
    "falta": 21,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 67
   },
   {
@@ -1095,6 +1299,9 @@
    "autorais": 1,
    "meta": 15,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 68
   },
   {
@@ -1111,6 +1318,9 @@
    "autorais": 0,
    "meta": 15,
    "falta": 15,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 69
   },
   {
@@ -1127,6 +1337,9 @@
    "autorais": 0,
    "meta": 15,
    "falta": 15,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 70
   },
   {
@@ -1143,6 +1356,9 @@
    "autorais": 0,
    "meta": 15,
    "falta": 15,
+   "simulados": 30,
+   "fabricaSimulados": 28,
+   "autoraisSimulados": 0,
    "posicao": 71
   },
   {
@@ -1159,6 +1375,9 @@
    "autorais": 0,
    "meta": 9,
    "falta": 9,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 72
   },
   {
@@ -1175,6 +1394,9 @@
    "autorais": 0,
    "meta": 9,
    "falta": 9,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 73
   },
   {
@@ -1191,6 +1413,9 @@
    "autorais": 0,
    "meta": 20,
    "falta": 20,
+   "simulados": 5,
+   "fabricaSimulados": 5,
+   "autoraisSimulados": 0,
    "posicao": 74
   },
   {
@@ -1207,6 +1432,9 @@
    "autorais": 0,
    "meta": 20,
    "falta": 20,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 75
   },
   {
@@ -1223,6 +1451,9 @@
    "autorais": 0,
    "meta": 20,
    "falta": 20,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 76
   },
   {
@@ -1239,6 +1470,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 77
   },
   {
@@ -1255,6 +1489,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 78
   },
   {
@@ -1271,6 +1508,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 79
   },
   {
@@ -1287,6 +1527,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 80
   },
   {
@@ -1303,6 +1546,9 @@
    "autorais": 0,
    "meta": 19,
    "falta": 19,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 81
   },
   {
@@ -1319,6 +1565,9 @@
    "autorais": 0,
    "meta": 19,
    "falta": 19,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 82
   },
   {
@@ -1335,6 +1584,9 @@
    "autorais": 0,
    "meta": 19,
    "falta": 19,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 83
   },
   {
@@ -1351,6 +1603,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 84
   },
   {
@@ -1367,6 +1622,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 85
   },
   {
@@ -1383,6 +1641,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 86
   },
   {
@@ -1399,6 +1660,9 @@
    "autorais": 0,
    "meta": 18,
    "falta": 18,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 87
   },
   {
@@ -1415,6 +1679,9 @@
    "autorais": 0,
    "meta": 18,
    "falta": 18,
+   "simulados": 5,
+   "fabricaSimulados": 5,
+   "autoraisSimulados": 0,
    "posicao": 88
   },
   {
@@ -1431,6 +1698,9 @@
    "autorais": 0,
    "meta": 13,
    "falta": 13,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 89
   },
   {
@@ -1447,6 +1717,9 @@
    "autorais": 0,
    "meta": 13,
    "falta": 13,
+   "simulados": 6,
+   "fabricaSimulados": 6,
+   "autoraisSimulados": 0,
    "posicao": 90
   },
   {
@@ -1463,6 +1736,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 25,
+   "fabricaSimulados": 16,
+   "autoraisSimulados": 0,
    "posicao": 91
   },
   {
@@ -1479,6 +1755,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 92
   },
   {
@@ -1495,6 +1774,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 93
   },
   {
@@ -1511,6 +1793,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 5,
+   "fabricaSimulados": 4,
+   "autoraisSimulados": 0,
    "posicao": 94
   },
   {
@@ -1527,6 +1812,9 @@
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 95
   },
   {
@@ -1543,6 +1831,9 @@
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 96
   },
   {
@@ -1553,12 +1844,15 @@
    "incidencia": 17,
    "acervo": 30,
    "comComentario": 30,
-   "fontesRicas": 11,
+   "fontesRicas": 9,
    "fabrica": 28,
    "questoesComFlashcard": 28,
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 13,
+   "fabricaSimulados": 13,
+   "autoraisSimulados": 0,
    "posicao": 97
   },
   {
@@ -1575,6 +1869,9 @@
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 6,
+   "fabricaSimulados": 6,
+   "autoraisSimulados": 0,
    "posicao": 98
   },
   {
@@ -1591,6 +1888,9 @@
    "autorais": 0,
    "meta": 7,
    "falta": 7,
+   "simulados": 41,
+   "fabricaSimulados": 39,
+   "autoraisSimulados": 0,
    "posicao": 99
   },
   {
@@ -1607,6 +1907,9 @@
    "autorais": 0,
    "meta": 16,
    "falta": 16,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 100
   },
   {
@@ -1623,6 +1926,9 @@
    "autorais": 0,
    "meta": 16,
    "falta": 16,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 101
   },
   {
@@ -1639,6 +1945,9 @@
    "autorais": 0,
    "meta": 16,
    "falta": 16,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 102
   },
   {
@@ -1655,6 +1964,9 @@
    "autorais": 0,
    "meta": 16,
    "falta": 16,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 103
   },
   {
@@ -1671,6 +1983,9 @@
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 104
   },
   {
@@ -1687,6 +2002,9 @@
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 105
   },
   {
@@ -1703,6 +2021,9 @@
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 106
   },
   {
@@ -1719,6 +2040,9 @@
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 107
   },
   {
@@ -1735,6 +2059,9 @@
    "autorais": 0,
    "meta": 12,
    "falta": 12,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 108
   },
   {
@@ -1751,6 +2078,9 @@
    "autorais": 0,
    "meta": 7,
    "falta": 7,
+   "simulados": 30,
+   "fabricaSimulados": 28,
+   "autoraisSimulados": 0,
    "posicao": 109
   },
   {
@@ -1767,6 +2097,9 @@
    "autorais": 0,
    "meta": 7,
    "falta": 7,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 110
   },
   {
@@ -1783,6 +2116,9 @@
    "autorais": 3,
    "meta": 7,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 111
   },
   {
@@ -1799,6 +2135,9 @@
    "autorais": 0,
    "meta": 7,
    "falta": 7,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 112
   },
   {
@@ -1815,6 +2154,9 @@
    "autorais": 0,
    "meta": 15,
    "falta": 15,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 113
   },
   {
@@ -1831,6 +2173,9 @@
    "autorais": 0,
    "meta": 15,
    "falta": 15,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 114
   },
   {
@@ -1847,6 +2192,9 @@
    "autorais": 0,
    "meta": 11,
    "falta": 11,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 115
   },
   {
@@ -1863,6 +2211,9 @@
    "autorais": 0,
    "meta": 11,
    "falta": 11,
+   "simulados": 24,
+   "fabricaSimulados": 21,
+   "autoraisSimulados": 0,
    "posicao": 116
   },
   {
@@ -1879,6 +2230,9 @@
    "autorais": 0,
    "meta": 11,
    "falta": 11,
+   "simulados": 24,
+   "fabricaSimulados": 23,
+   "autoraisSimulados": 0,
    "posicao": 117
   },
   {
@@ -1895,6 +2249,9 @@
    "autorais": 0,
    "meta": 11,
    "falta": 11,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 118
   },
   {
@@ -1911,6 +2268,9 @@
    "autorais": 0,
    "meta": 11,
    "falta": 11,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 119
   },
   {
@@ -1927,6 +2287,9 @@
    "autorais": 0,
    "meta": 11,
    "falta": 11,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 120
   },
   {
@@ -1943,6 +2306,9 @@
    "autorais": 0,
    "meta": 6,
    "falta": 6,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 121
   },
   {
@@ -1959,6 +2325,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 122
   },
   {
@@ -1975,6 +2344,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 123
   },
   {
@@ -1991,6 +2363,9 @@
    "autorais": 0,
    "meta": 14,
    "falta": 14,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 124
   },
   {
@@ -2007,6 +2382,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 125
   },
   {
@@ -2023,6 +2401,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 126
   },
   {
@@ -2039,6 +2420,9 @@
    "autorais": 0,
    "meta": 6,
    "falta": 6,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 127
   },
   {
@@ -2055,6 +2439,9 @@
    "autorais": 0,
    "meta": 6,
    "falta": 6,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 128
   },
   {
@@ -2071,6 +2458,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 17,
+   "fabricaSimulados": 17,
+   "autoraisSimulados": 0,
    "posicao": 129
   },
   {
@@ -2087,6 +2477,9 @@
    "autorais": 0,
    "meta": 13,
    "falta": 13,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 130
   },
   {
@@ -2103,6 +2496,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 131
   },
   {
@@ -2119,6 +2515,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 132
   },
   {
@@ -2135,6 +2534,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 133
   },
   {
@@ -2151,6 +2553,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 134
   },
   {
@@ -2167,6 +2572,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 135
   },
   {
@@ -2183,6 +2591,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 136
   },
   {
@@ -2199,6 +2610,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 137
   },
   {
@@ -2215,6 +2629,9 @@
    "autorais": 0,
    "meta": 10,
    "falta": 10,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 138
   },
   {
@@ -2231,6 +2648,9 @@
    "autorais": 0,
    "meta": 6,
    "falta": 6,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 139
   },
   {
@@ -2247,6 +2667,9 @@
    "autorais": 0,
    "meta": 6,
    "falta": 6,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 140
   },
   {
@@ -2263,6 +2686,9 @@
    "autorais": 0,
    "meta": 6,
    "falta": 6,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 141
   },
   {
@@ -2279,6 +2705,9 @@
    "autorais": 0,
    "meta": 6,
    "falta": 6,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 142
   },
   {
@@ -2295,6 +2724,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 143
   },
   {
@@ -2311,6 +2743,9 @@
    "autorais": 0,
    "meta": 9,
    "falta": 9,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 144
   },
   {
@@ -2327,6 +2762,9 @@
    "autorais": 0,
    "meta": 9,
    "falta": 9,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 145
   },
   {
@@ -2343,6 +2781,9 @@
    "autorais": 0,
    "meta": 9,
    "falta": 9,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 146
   },
   {
@@ -2359,6 +2800,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 147
   },
   {
@@ -2375,6 +2819,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 148
   },
   {
@@ -2391,6 +2838,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 8,
+   "fabricaSimulados": 8,
+   "autoraisSimulados": 0,
    "posicao": 149
   },
   {
@@ -2407,6 +2857,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 150
   },
   {
@@ -2423,6 +2876,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 151
   },
   {
@@ -2439,6 +2895,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 152
   },
   {
@@ -2455,6 +2914,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 153
   },
   {
@@ -2471,6 +2933,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 154
   },
   {
@@ -2487,6 +2952,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 155
   },
   {
@@ -2503,6 +2971,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 156
   },
   {
@@ -2519,6 +2990,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 9,
+   "fabricaSimulados": 6,
+   "autoraisSimulados": 0,
    "posicao": 157
   },
   {
@@ -2535,6 +3009,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 158
   },
   {
@@ -2551,6 +3028,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 159
   },
   {
@@ -2567,6 +3047,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 160
   },
   {
@@ -2583,6 +3066,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 161
   },
   {
@@ -2599,6 +3085,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 3,
+   "fabricaSimulados": 3,
+   "autoraisSimulados": 0,
    "posicao": 162
   },
   {
@@ -2615,6 +3104,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 8,
+   "fabricaSimulados": 4,
+   "autoraisSimulados": 0,
    "posicao": 163
   },
   {
@@ -2631,6 +3123,9 @@
    "autorais": 0,
    "meta": 7,
    "falta": 7,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 164
   },
   {
@@ -2647,6 +3142,9 @@
    "autorais": 0,
    "meta": 7,
    "falta": 7,
+   "simulados": 10,
+   "fabricaSimulados": 10,
+   "autoraisSimulados": 0,
    "posicao": 165
   },
   {
@@ -2663,6 +3161,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 166
   },
   {
@@ -2679,6 +3180,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 167
   },
   {
@@ -2695,6 +3199,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 168
   },
   {
@@ -2711,6 +3218,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 169
   },
   {
@@ -2727,6 +3237,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 170
   },
   {
@@ -2743,6 +3256,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 171
   },
   {
@@ -2759,6 +3275,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 172
   },
   {
@@ -2775,6 +3294,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 173
   },
   {
@@ -2791,6 +3313,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 174
   },
   {
@@ -2807,6 +3332,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 175
   },
   {
@@ -2823,6 +3351,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 176
   },
   {
@@ -2839,6 +3370,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 177
   },
   {
@@ -2855,6 +3389,9 @@
    "autorais": 0,
    "meta": 7,
    "falta": 7,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 178
   },
   {
@@ -2871,6 +3408,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 179
   },
   {
@@ -2887,6 +3427,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 180
   },
   {
@@ -2903,6 +3446,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 181
   },
   {
@@ -2919,6 +3465,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 182
   },
   {
@@ -2935,6 +3484,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 4,
+   "fabricaSimulados": 3,
+   "autoraisSimulados": 0,
    "posicao": 183
   },
   {
@@ -2951,6 +3503,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 184
   },
   {
@@ -2967,6 +3522,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 185
   },
   {
@@ -2983,6 +3541,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 186
   },
   {
@@ -2999,6 +3560,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 187
   },
   {
@@ -3015,6 +3579,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 188
   },
   {
@@ -3031,6 +3598,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 189
   },
   {
@@ -3047,6 +3617,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 190
   },
   {
@@ -3063,6 +3636,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 191
   },
   {
@@ -3079,6 +3655,9 @@
    "autorais": 0,
    "meta": 4,
    "falta": 4,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 192
   },
   {
@@ -3095,6 +3674,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 193
   },
   {
@@ -3111,6 +3693,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 5,
+   "fabricaSimulados": 5,
+   "autoraisSimulados": 0,
    "posicao": 194
   },
   {
@@ -3127,6 +3712,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 195
   },
   {
@@ -3143,6 +3731,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 196
   },
   {
@@ -3159,6 +3750,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 197
   },
   {
@@ -3175,6 +3769,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 198
   },
   {
@@ -3191,6 +3788,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 199
   },
   {
@@ -3207,6 +3807,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 200
   },
   {
@@ -3223,6 +3826,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 3,
+   "fabricaSimulados": 3,
+   "autoraisSimulados": 0,
    "posicao": 201
   },
   {
@@ -3239,6 +3845,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 202
   },
   {
@@ -3255,6 +3864,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 203
   },
   {
@@ -3271,6 +3883,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 204
   },
   {
@@ -3287,6 +3902,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 13,
+   "fabricaSimulados": 13,
+   "autoraisSimulados": 0,
    "posicao": 205
   },
   {
@@ -3303,6 +3921,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 21,
+   "fabricaSimulados": 21,
+   "autoraisSimulados": 0,
    "posicao": 206
   },
   {
@@ -3319,6 +3940,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 207
   },
   {
@@ -3335,6 +3959,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 208
   },
   {
@@ -3351,6 +3978,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 209
   },
   {
@@ -3367,6 +3997,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 210
   },
   {
@@ -3383,6 +4016,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 211
   },
   {
@@ -3399,6 +4035,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 212
   },
   {
@@ -3415,6 +4054,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 213
   },
   {
@@ -3431,6 +4073,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 214
   },
   {
@@ -3447,6 +4092,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 215
   },
   {
@@ -3463,6 +4111,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 216
   },
   {
@@ -3479,6 +4130,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 217
   },
   {
@@ -3495,6 +4149,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 218
   },
   {
@@ -3511,6 +4168,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 4,
+   "fabricaSimulados": 4,
+   "autoraisSimulados": 0,
    "posicao": 219
   },
   {
@@ -3527,6 +4187,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 220
   },
   {
@@ -3543,6 +4206,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 221
   },
   {
@@ -3559,6 +4225,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 222
   },
   {
@@ -3575,6 +4244,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 223
   },
   {
@@ -3591,6 +4263,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 224
   },
   {
@@ -3607,6 +4282,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 225
   },
   {
@@ -3623,6 +4301,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 226
   },
   {
@@ -3639,6 +4320,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 227
   },
   {
@@ -3655,6 +4339,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 228
   },
   {
@@ -3671,6 +4358,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 229
   },
   {
@@ -3687,6 +4377,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 230
   },
   {
@@ -3703,6 +4396,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 30,
+   "fabricaSimulados": 28,
+   "autoraisSimulados": 0,
    "posicao": 231
   },
   {
@@ -3719,6 +4415,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 232
   },
   {
@@ -3735,6 +4434,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 233
   },
   {
@@ -3751,6 +4453,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 234
   },
   {
@@ -3767,6 +4472,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 235
   },
   {
@@ -3783,6 +4491,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 236
   },
   {
@@ -3799,6 +4510,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 237
   },
   {
@@ -3815,6 +4529,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 238
   },
   {
@@ -3831,6 +4548,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 239
   },
   {
@@ -3847,6 +4567,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 240
   },
   {
@@ -3863,6 +4586,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 241
   },
   {
@@ -3879,6 +4605,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 6,
+   "fabricaSimulados": 6,
+   "autoraisSimulados": 0,
    "posicao": 242
   },
   {
@@ -3889,12 +4618,15 @@
    "incidencia": 3,
    "acervo": 16,
    "comComentario": 16,
-   "fontesRicas": 6,
+   "fontesRicas": 2,
    "fabrica": 15,
    "questoesComFlashcard": 15,
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 12,
+   "fabricaSimulados": 12,
+   "autoraisSimulados": 0,
    "posicao": 243
   },
   {
@@ -3911,6 +4643,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 244
   },
   {
@@ -3927,6 +4662,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 245
   },
   {
@@ -3943,6 +4681,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 246
   },
   {
@@ -3959,6 +4700,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 1,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 247
   },
   {
@@ -3975,6 +4719,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 248
   },
   {
@@ -3991,6 +4738,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 249
   },
   {
@@ -4007,6 +4757,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 250
   },
   {
@@ -4023,6 +4776,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 251
   },
   {
@@ -4039,6 +4795,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 252
   },
   {
@@ -4055,6 +4814,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 253
   },
   {
@@ -4071,6 +4833,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 254
   },
   {
@@ -4087,6 +4852,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 255
   },
   {
@@ -4103,6 +4871,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 256
   },
   {
@@ -4119,6 +4890,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 257
   },
   {
@@ -4135,6 +4909,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 258
   },
   {
@@ -4151,6 +4928,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 3,
+   "fabricaSimulados": 3,
+   "autoraisSimulados": 0,
    "posicao": 259
   },
   {
@@ -4167,6 +4947,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 260
   },
   {
@@ -4183,6 +4966,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 2,
+   "fabricaSimulados": 1,
+   "autoraisSimulados": 0,
    "posicao": 261
   },
   {
@@ -4199,6 +4985,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 262
   },
   {
@@ -4215,6 +5004,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 263
   },
   {
@@ -4231,6 +5023,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 264
   },
   {
@@ -4247,6 +5042,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 265
   },
   {
@@ -4263,6 +5061,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 266
   },
   {
@@ -4279,6 +5080,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 267
   },
   {
@@ -4295,6 +5099,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 268
   },
   {
@@ -4311,6 +5118,9 @@
    "autorais": 0,
    "meta": 19,
    "falta": 19,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 269
   },
   {
@@ -4327,6 +5137,9 @@
    "autorais": 0,
    "meta": 9,
    "falta": 9,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 270
   },
   {
@@ -4343,6 +5156,9 @@
    "autorais": 0,
    "meta": 8,
    "falta": 8,
+   "simulados": 2,
+   "fabricaSimulados": 2,
+   "autoraisSimulados": 0,
    "posicao": 271
   },
   {
@@ -4359,6 +5175,9 @@
    "autorais": 0,
    "meta": 7,
    "falta": 7,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 272
   },
   {
@@ -4375,6 +5194,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 273
   },
   {
@@ -4391,6 +5213,9 @@
    "autorais": 0,
    "meta": 5,
    "falta": 5,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 274
   },
   {
@@ -4407,6 +5232,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 275
   },
   {
@@ -4423,6 +5251,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 276
   },
   {
@@ -4439,6 +5270,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 277
   },
   {
@@ -4455,6 +5289,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 4,
+   "fabricaSimulados": 3,
+   "autoraisSimulados": 0,
    "posicao": 278
   },
   {
@@ -4471,6 +5308,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 279
   },
   {
@@ -4487,6 +5327,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 280
   },
   {
@@ -4503,6 +5346,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 281
   },
   {
@@ -4519,6 +5365,9 @@
    "autorais": 0,
    "meta": 3,
    "falta": 3,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 282
   },
   {
@@ -4535,6 +5384,9 @@
    "autorais": 0,
    "meta": 0,
    "falta": 0,
+   "simulados": 0,
+   "fabricaSimulados": 0,
+   "autoraisSimulados": 0,
    "posicao": 283
   },
   {
@@ -4545,12 +5397,15 @@
    "incidencia": 3,
    "acervo": 27,
    "comComentario": 27,
-   "fontesRicas": 12,
+   "fontesRicas": 13,
    "fabrica": 23,
    "questoesComFlashcard": 23,
    "autorais": 0,
    "meta": 0,
    "falta": 0,
+   "simulados": 17,
+   "fabricaSimulados": 15,
+   "autoraisSimulados": 0,
    "posicao": 284
   }
  ],
@@ -4561,9 +5416,14 @@
    "fim": "2026-10-25",
    "itens": [
     {
-     "assunto": "Lesões fisárias",
+     "assunto": "Genuvaro, genuvalgo e torções",
      "area": "Ortopedia pediátrica",
-     "quantidade": 60
+     "quantidade": 33
+    },
+    {
+     "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+     "area": "Trauma adulto",
+     "quantidade": 27
     }
    ],
    "total": 60
@@ -4574,14 +5434,14 @@
    "fim": "2026-11-01",
    "itens": [
     {
-     "assunto": "Lesões fisárias",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 11
+     "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+     "area": "Trauma adulto",
+     "quantidade": 30
     },
     {
-     "assunto": "Anatomia da mão e punho",
-     "area": "Mão e punho",
-     "quantidade": 49
+     "assunto": "Lesões do manguito rotador",
+     "area": "Ombro e cotovelo",
+     "quantidade": 30
     }
    ],
    "total": 60
@@ -4592,14 +5452,14 @@
    "fim": "2026-11-08",
    "itens": [
     {
-     "assunto": "Anatomia da mão e punho",
-     "area": "Mão e punho",
-     "quantidade": 19
+     "assunto": "Lesões do manguito rotador",
+     "area": "Ombro e cotovelo",
+     "quantidade": 26
     },
     {
-     "assunto": "Genuvaro, genuvalgo e torções",
+     "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 41
+     "quantidade": 34
     }
    ],
    "total": 60
@@ -4610,14 +5470,14 @@
    "fim": "2026-11-15",
    "itens": [
     {
-     "assunto": "Genuvaro, genuvalgo e torções",
+     "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 19
+     "quantidade": 11
     },
     {
-     "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
-     "area": "Trauma adulto",
-     "quantidade": 41
+     "assunto": "Anatomia do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 49
     }
    ],
    "total": 60
@@ -4628,14 +5488,19 @@
    "fim": "2026-11-22",
    "itens": [
     {
-     "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
-     "area": "Trauma adulto",
-     "quantidade": 16
+     "assunto": "Anatomia do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
     },
     {
-     "assunto": "Lesões do manguito rotador",
-     "area": "Ombro e cotovelo",
-     "quantidade": 44
+     "assunto": "Luxação do joelho e lesões ligamentares",
+     "area": "Trauma adulto",
+     "quantidade": 50
+    },
+    {
+     "assunto": "Neuropatia ulnar e outras compressões",
+     "area": "Mão e punho",
+     "quantidade": 7
     }
    ],
    "total": 60
@@ -4646,14 +5511,14 @@
    "fim": "2026-11-29",
    "itens": [
     {
-     "assunto": "Lesões do manguito rotador",
-     "area": "Ombro e cotovelo",
-     "quantidade": 12
+     "assunto": "Neuropatia ulnar e outras compressões",
+     "area": "Mão e punho",
+     "quantidade": 41
     },
     {
-     "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 48
+     "assunto": "Omartrose e artroplastia do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 19
     }
    ],
    "total": 60
@@ -4664,19 +5529,14 @@
    "fim": "2026-12-06",
    "itens": [
     {
-     "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 5
-    },
-    {
-     "assunto": "Anatomia do ombro",
+     "assunto": "Omartrose e artroplastia do ombro",
      "area": "Ombro e cotovelo",
-     "quantidade": 52
+     "quantidade": 29
     },
     {
-     "assunto": "Luxação do joelho e lesões ligamentares",
-     "area": "Trauma adulto",
-     "quantidade": 3
+     "assunto": "Anatomia do quadril",
+     "area": "Quadril",
+     "quantidade": 31
     }
    ],
    "total": 60
@@ -4687,14 +5547,14 @@
    "fim": "2026-12-13",
    "itens": [
     {
-     "assunto": "Luxação do joelho e lesões ligamentares",
-     "area": "Trauma adulto",
-     "quantidade": 47
+     "assunto": "Anatomia do quadril",
+     "area": "Quadril",
+     "quantidade": 16
     },
     {
-     "assunto": "Neuropatia ulnar e outras compressões",
-     "area": "Mão e punho",
-     "quantidade": 13
+     "assunto": "Artroplastia total: componentes e fixação",
+     "area": "Quadril",
+     "quantidade": 44
     }
    ],
    "total": 60
@@ -4705,14 +5565,19 @@
    "fim": "2026-12-20",
    "itens": [
     {
-     "assunto": "Neuropatia ulnar e outras compressões",
-     "area": "Mão e punho",
-     "quantidade": 35
+     "assunto": "Artroplastia total: componentes e fixação",
+     "area": "Quadril",
+     "quantidade": 1
     },
     {
-     "assunto": "Omartrose e artroplastia do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 25
+     "assunto": "Fraturas do antebraço e punho na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 45
+    },
+    {
+     "assunto": "Fraturas do fêmur e da perna na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 14
     }
    ],
    "total": 60
@@ -4723,14 +5588,14 @@
    "fim": "2026-12-27",
    "itens": [
     {
-     "assunto": "Omartrose e artroplastia do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 23
+     "assunto": "Fraturas do fêmur e da perna na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 28
     },
     {
-     "assunto": "Anatomia do quadril",
-     "area": "Quadril",
-     "quantidade": 37
+     "assunto": "Instabilidade anterior do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 32
     }
    ],
    "total": 60
@@ -4741,19 +5606,19 @@
    "fim": "2027-01-03",
    "itens": [
     {
-     "assunto": "Anatomia do quadril",
-     "area": "Quadril",
+     "assunto": "Instabilidade anterior do ombro",
+     "area": "Ombro e cotovelo",
      "quantidade": 10
     },
     {
-     "assunto": "Artroplastia total: componentes e fixação",
-     "area": "Quadril",
-     "quantidade": 45
+     "assunto": "Fraturas da coluna toracolombar",
+     "area": "Trauma adulto",
+     "quantidade": 41
     },
     {
-     "assunto": "Fraturas do antebraço e punho na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 5
+     "assunto": "Fraturas diafisárias do antebraço",
+     "area": "Trauma adulto",
+     "quantidade": 9
     }
    ],
    "total": 60
@@ -4764,14 +5629,14 @@
    "fim": "2027-01-10",
    "itens": [
     {
-     "assunto": "Fraturas do antebraço e punho na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 40
+     "assunto": "Fraturas diafisárias do antebraço",
+     "area": "Trauma adulto",
+     "quantidade": 32
     },
     {
-     "assunto": "Fraturas do fêmur e da perna na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 20
+     "assunto": "Anatomia da coluna",
+     "area": "Coluna",
+     "quantidade": 28
     }
    ],
    "total": 60
@@ -4782,14 +5647,19 @@
    "fim": "2027-01-17",
    "itens": [
     {
-     "assunto": "Fraturas do fêmur e da perna na criança",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 22
+     "assunto": "Anatomia da coluna",
+     "area": "Coluna",
+     "quantidade": 12
     },
     {
-     "assunto": "Instabilidade anterior do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 38
+     "assunto": "Fratura do úmero proximal",
+     "area": "Trauma adulto",
+     "quantidade": 40
+    },
+    {
+     "assunto": "Anatomia do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 8
     }
    ],
    "total": 60
@@ -4800,19 +5670,14 @@
    "fim": "2027-01-24",
    "itens": [
     {
-     "assunto": "Instabilidade anterior do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 4
+     "assunto": "Anatomia do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 31
     },
     {
-     "assunto": "Fraturas da coluna toracolombar",
-     "area": "Trauma adulto",
-     "quantidade": 41
-    },
-    {
-     "assunto": "Fraturas diafisárias do antebraço",
-     "area": "Trauma adulto",
-     "quantidade": 15
+     "assunto": "Displasia do desenvolvimento do quadril",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 29
     }
    ],
    "total": 60
@@ -4823,14 +5688,19 @@
    "fim": "2027-01-31",
    "itens": [
     {
-     "assunto": "Fraturas diafisárias do antebraço",
-     "area": "Trauma adulto",
-     "quantidade": 26
+     "assunto": "Displasia do desenvolvimento do quadril",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 10
     },
     {
-     "assunto": "Anatomia da coluna",
-     "area": "Coluna",
-     "quantidade": 34
+     "assunto": "Instabilidade do cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 37
+    },
+    {
+     "assunto": "Lesões dos tendões flexores",
+     "area": "Mão e punho",
+     "quantidade": 13
     }
    ],
    "total": 60
@@ -4841,19 +5711,19 @@
    "fim": "2027-02-07",
    "itens": [
     {
-     "assunto": "Anatomia da coluna",
-     "area": "Coluna",
-     "quantidade": 6
+     "assunto": "Lesões dos tendões flexores",
+     "area": "Mão e punho",
+     "quantidade": 24
     },
     {
-     "assunto": "Fratura do úmero proximal",
+     "assunto": "Metástases ósseas",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 35
+    },
+    {
+     "assunto": "Síndrome compartimental",
      "area": "Trauma adulto",
-     "quantidade": 40
-    },
-    {
-     "assunto": "Anatomia do pé e tornozelo",
-     "area": "Pé e tornozelo",
-     "quantidade": 14
+     "quantidade": 1
     }
    ],
    "total": 60
@@ -4864,14 +5734,14 @@
    "fim": "2027-02-14",
    "itens": [
     {
-     "assunto": "Anatomia do pé e tornozelo",
-     "area": "Pé e tornozelo",
-     "quantidade": 25
+     "assunto": "Síndrome compartimental",
+     "area": "Trauma adulto",
+     "quantidade": 34
     },
     {
-     "assunto": "Displasia do desenvolvimento do quadril",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 35
+     "assunto": "Hérnia de disco lombar",
+     "area": "Coluna",
+     "quantidade": 26
     }
    ],
    "total": 60
@@ -4882,18 +5752,18 @@
    "fim": "2027-02-21",
    "itens": [
     {
-     "assunto": "Displasia do desenvolvimento do quadril",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 4
+     "assunto": "Hérnia de disco lombar",
+     "area": "Coluna",
+     "quantidade": 8
     },
     {
-     "assunto": "Instabilidade do cotovelo",
-     "area": "Ombro e cotovelo",
-     "quantidade": 37
+     "assunto": "Estadiamento, biópsia e margens",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 33
     },
     {
-     "assunto": "Lesões dos tendões flexores",
-     "area": "Mão e punho",
+     "assunto": "Lesão do ligamento cruzado anterior",
+     "area": "Joelho",
      "quantidade": 19
     }
    ],
@@ -4905,19 +5775,19 @@
    "fim": "2027-02-28",
    "itens": [
     {
-     "assunto": "Lesões dos tendões flexores",
-     "area": "Mão e punho",
-     "quantidade": 18
+     "assunto": "Lesão do ligamento cruzado anterior",
+     "area": "Joelho",
+     "quantidade": 14
     },
     {
-     "assunto": "Metástases ósseas",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 35
+     "assunto": "Lesões do bíceps",
+     "area": "Ombro e cotovelo",
+     "quantidade": 33
     },
     {
-     "assunto": "Síndrome compartimental",
-     "area": "Trauma adulto",
-     "quantidade": 7
+     "assunto": "Osteomielite aguda",
+     "area": "Conceitos básicos",
+     "quantidade": 13
     }
    ],
    "total": 60
@@ -4928,14 +5798,19 @@
    "fim": "2027-03-07",
    "itens": [
     {
-     "assunto": "Síndrome compartimental",
-     "area": "Trauma adulto",
-     "quantidade": 28
+     "assunto": "Osteomielite aguda",
+     "area": "Conceitos básicos",
+     "quantidade": 20
     },
     {
-     "assunto": "Hérnia de disco lombar",
-     "area": "Coluna",
+     "assunto": "Displasias esqueléticas e síndromes",
+     "area": "Ortopedia pediátrica",
      "quantidade": 32
+    },
+    {
+     "assunto": "Lesão medular e síndromes medulares",
+     "area": "Coluna",
+     "quantidade": 8
     }
    ],
    "total": 60
@@ -4946,19 +5821,19 @@
    "fim": "2027-03-14",
    "itens": [
     {
-     "assunto": "Hérnia de disco lombar",
+     "assunto": "Lesão medular e síndromes medulares",
      "area": "Coluna",
-     "quantidade": 2
+     "quantidade": 23
     },
     {
-     "assunto": "Estadiamento, biópsia e margens",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 33
+     "assunto": "Paralisia cerebral",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 31
     },
     {
-     "assunto": "Lesão do ligamento cruzado anterior",
+     "assunto": "Anatomia do joelho",
      "area": "Joelho",
-     "quantidade": 25
+     "quantidade": 6
     }
    ],
    "total": 60
@@ -4969,19 +5844,19 @@
    "fim": "2027-03-21",
    "itens": [
     {
-     "assunto": "Lesão do ligamento cruzado anterior",
+     "assunto": "Anatomia do joelho",
      "area": "Joelho",
-     "quantidade": 8
+     "quantidade": 24
     },
     {
-     "assunto": "Lesões do bíceps",
-     "area": "Ombro e cotovelo",
-     "quantidade": 33
+     "assunto": "Escoliose idiopática",
+     "area": "Coluna",
+     "quantidade": 30
     },
     {
-     "assunto": "Osteomielite aguda",
-     "area": "Conceitos básicos",
-     "quantidade": 19
+     "assunto": "Fratura da escápula",
+     "area": "Trauma adulto",
+     "quantidade": 6
     }
    ],
    "total": 60
@@ -4992,19 +5867,19 @@
    "fim": "2027-03-28",
    "itens": [
     {
-     "assunto": "Osteomielite aguda",
+     "assunto": "Fratura da escápula",
+     "area": "Trauma adulto",
+     "quantidade": 24
+    },
+    {
+     "assunto": "Princípios de osteossíntese",
      "area": "Conceitos básicos",
-     "quantidade": 14
+     "quantidade": 30
     },
     {
-     "assunto": "Displasias esqueléticas e síndromes",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 32
-    },
-    {
-     "assunto": "Lesão medular e síndromes medulares",
-     "area": "Coluna",
-     "quantidade": 14
+     "assunto": "Artroplastia total do joelho",
+     "area": "Joelho",
+     "quantidade": 6
     }
    ],
    "total": 60
@@ -5015,19 +5890,19 @@
    "fim": "2027-04-04",
    "itens": [
     {
-     "assunto": "Lesão medular e síndromes medulares",
-     "area": "Coluna",
-     "quantidade": 17
-    },
-    {
-     "assunto": "Paralisia cerebral",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 31
-    },
-    {
-     "assunto": "Anatomia do joelho",
+     "assunto": "Artroplastia total do joelho",
      "area": "Joelho",
-     "quantidade": 12
+     "quantidade": 23
+    },
+    {
+     "assunto": "Fratura da clavícula",
+     "area": "Trauma adulto",
+     "quantidade": 29
+    },
+    {
+     "assunto": "Fraturas do tálus e do calcâneo",
+     "area": "Trauma adulto",
+     "quantidade": 8
     }
    ],
    "total": 60
@@ -5038,19 +5913,19 @@
    "fim": "2027-04-11",
    "itens": [
     {
-     "assunto": "Anatomia do joelho",
-     "area": "Joelho",
-     "quantidade": 18
-    },
-    {
-     "assunto": "Escoliose idiopática",
-     "area": "Coluna",
-     "quantidade": 30
-    },
-    {
-     "assunto": "Fratura da escápula",
+     "assunto": "Fraturas do tálus e do calcâneo",
      "area": "Trauma adulto",
-     "quantidade": 12
+     "quantidade": 21
+    },
+    {
+     "assunto": "Fraturas dos metacarpos e falanges",
+     "area": "Trauma adulto",
+     "quantidade": 28
+    },
+    {
+     "assunto": "Espondilólise e espondilolistese",
+     "area": "Coluna",
+     "quantidade": 11
     }
    ],
    "total": 60
@@ -5061,19 +5936,19 @@
    "fim": "2027-04-18",
    "itens": [
     {
-     "assunto": "Fratura da escápula",
+     "assunto": "Espondilólise e espondilolistese",
+     "area": "Coluna",
+     "quantidade": 16
+    },
+    {
+     "assunto": "Pé torto congênito",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 27
+    },
+    {
+     "assunto": "Fratura da patela e lesão do aparelho extensor",
      "area": "Trauma adulto",
-     "quantidade": 18
-    },
-    {
-     "assunto": "Princípios de osteossíntese",
-     "area": "Conceitos básicos",
-     "quantidade": 30
-    },
-    {
-     "assunto": "Artroplastia total do joelho",
-     "area": "Joelho",
-     "quantidade": 12
+     "quantidade": 17
     }
    ],
    "total": 60
@@ -5084,19 +5959,24 @@
    "fim": "2027-04-25",
    "itens": [
     {
-     "assunto": "Artroplastia total do joelho",
-     "area": "Joelho",
-     "quantidade": 17
+     "assunto": "Fratura da patela e lesão do aparelho extensor",
+     "area": "Trauma adulto",
+     "quantidade": 2
     },
     {
-     "assunto": "Fratura da clavícula",
-     "area": "Trauma adulto",
-     "quantidade": 29
+     "assunto": "Lesões dos tendões extensores",
+     "area": "Mão e punho",
+     "quantidade": 26
     },
     {
-     "assunto": "Fraturas do tálus e do calcâneo",
+     "assunto": "Fratura da diáfise do fêmur",
      "area": "Trauma adulto",
-     "quantidade": 14
+     "quantidade": 19
+    },
+    {
+     "assunto": "Condrossarcoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 13
     }
    ],
    "total": 60
@@ -5107,19 +5987,19 @@
    "fim": "2027-05-02",
    "itens": [
     {
-     "assunto": "Fraturas do tálus e do calcâneo",
-     "area": "Trauma adulto",
-     "quantidade": 15
+     "assunto": "Condrossarcoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 12
     },
     {
-     "assunto": "Fraturas dos metacarpos e falanges",
-     "area": "Trauma adulto",
-     "quantidade": 28
+     "assunto": "Exame físico da mão e punho",
+     "area": "Mão e punho",
+     "quantidade": 25
     },
     {
-     "assunto": "Espondilólise e espondilolistese",
-     "area": "Coluna",
-     "quantidade": 17
+     "assunto": "Hálux valgo",
+     "area": "Pé e tornozelo",
+     "quantidade": 23
     }
    ],
    "total": 60
@@ -5130,24 +6010,24 @@
    "fim": "2027-05-09",
    "itens": [
     {
-     "assunto": "Espondilólise e espondilolistese",
-     "area": "Coluna",
-     "quantidade": 10
+     "assunto": "Hálux valgo",
+     "area": "Pé e tornozelo",
+     "quantidade": 2
     },
     {
-     "assunto": "Pé torto congênito",
+     "assunto": "Ossificação e crescimento",
      "area": "Ortopedia pediátrica",
-     "quantidade": 27
+     "quantidade": 25
     },
     {
-     "assunto": "Fratura da patela e lesão do aparelho extensor",
-     "area": "Trauma adulto",
-     "quantidade": 19
+     "assunto": "Tíbia vara (Blount)",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 18
     },
     {
-     "assunto": "Lesões dos tendões extensores",
-     "area": "Mão e punho",
-     "quantidade": 4
+     "assunto": "Artrogripose e doenças neuromusculares",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 15
     }
    ],
    "total": 60
@@ -5158,88 +6038,14 @@
    "fim": "2027-05-16",
    "itens": [
     {
-     "assunto": "Lesões dos tendões extensores",
-     "area": "Mão e punho",
-     "quantidade": 22
-    },
-    {
-     "assunto": "Fratura da diáfise do fêmur",
-     "area": "Trauma adulto",
-     "quantidade": 19
-    },
-    {
-     "assunto": "Condrossarcoma",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 19
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 31,
-   "inicio": "2027-05-17",
-   "fim": "2027-05-23",
-   "itens": [
-    {
-     "assunto": "Condrossarcoma",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 6
-    },
-    {
-     "assunto": "Exame físico da mão e punho",
-     "area": "Mão e punho",
-     "quantidade": 25
-    },
-    {
-     "assunto": "Hálux valgo",
-     "area": "Pé e tornozelo",
-     "quantidade": 25
-    },
-    {
-     "assunto": "Ossificação e crescimento",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 4
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 32,
-   "inicio": "2027-05-24",
-   "fim": "2027-05-30",
-   "itens": [
-    {
-     "assunto": "Ossificação e crescimento",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 21
-    },
-    {
-     "assunto": "Tíbia vara (Blount)",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 18
-    },
-    {
      "assunto": "Artrogripose e doenças neuromusculares",
      "area": "Ortopedia pediátrica",
-     "quantidade": 17
+     "quantidade": 2
     },
     {
      "assunto": "Fratura do anel pélvico",
      "area": "Trauma adulto",
-     "quantidade": 4
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 33,
-   "inicio": "2027-05-31",
-   "fim": "2027-06-06",
-   "itens": [
-    {
-     "assunto": "Fratura do anel pélvico",
-     "area": "Trauma adulto",
-     "quantidade": 13
+     "quantidade": 17
     },
     {
      "assunto": "Fratura do planalto tibial",
@@ -5254,20 +6060,20 @@
     {
      "assunto": "Joelho da criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 13
+     "quantidade": 7
     }
    ],
    "total": 60
   },
   {
-   "semana": 34,
-   "inicio": "2027-06-07",
-   "fim": "2027-06-13",
+   "semana": 31,
+   "inicio": "2027-05-17",
+   "fim": "2027-05-23",
    "itens": [
     {
      "assunto": "Joelho da criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 4
+     "quantidade": 10
     },
     {
      "assunto": "Instabilidade do carpo",
@@ -5282,20 +6088,20 @@
     {
      "assunto": "Fratura do úmero distal",
      "area": "Trauma adulto",
-     "quantidade": 10
+     "quantidade": 4
     }
    ],
    "total": 60
   },
   {
-   "semana": 35,
-   "inicio": "2027-06-14",
-   "fim": "2027-06-20",
+   "semana": 32,
+   "inicio": "2027-05-24",
+   "fim": "2027-05-30",
    "itens": [
     {
      "assunto": "Fratura do úmero distal",
      "area": "Trauma adulto",
-     "quantidade": 7
+     "quantidade": 13
     },
     {
      "assunto": "Fraturas da pelve e do quadril na criança",
@@ -5310,20 +6116,20 @@
     {
      "assunto": "Pseudartrose e retardo de consolidação",
      "area": "Conceitos básicos",
-     "quantidade": 14
+     "quantidade": 8
     }
    ],
    "total": 60
   },
   {
-   "semana": 36,
-   "inicio": "2027-06-21",
-   "fim": "2027-06-27",
+   "semana": 33,
+   "inicio": "2027-05-31",
+   "fim": "2027-06-06",
    "itens": [
     {
      "assunto": "Pseudartrose e retardo de consolidação",
      "area": "Conceitos básicos",
-     "quantidade": 8
+     "quantidade": 14
     },
     {
      "assunto": "Fratura da diáfise da tíbia",
@@ -5338,25 +6144,25 @@
     {
      "assunto": "Marcha na criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 16
-    },
-    {
-     "assunto": "Lesões de nervos periféricos",
-     "area": "Mão e punho",
-     "quantidade": 4
+     "quantidade": 14
     }
    ],
    "total": 60
   },
   {
-   "semana": 37,
-   "inicio": "2027-06-28",
-   "fim": "2027-07-04",
+   "semana": 34,
+   "inicio": "2027-06-07",
+   "fim": "2027-06-13",
    "itens": [
+    {
+     "assunto": "Marcha na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 2
+    },
     {
      "assunto": "Lesões de nervos periféricos",
      "area": "Mão e punho",
-     "quantidade": 17
+     "quantidade": 21
     },
     {
      "assunto": "Tumor de células gigantes",
@@ -5371,20 +6177,20 @@
     {
      "assunto": "Epifisiólise proximal do fêmur",
      "area": "Ortopedia pediátrica",
-     "quantidade": 8
+     "quantidade": 2
     }
    ],
    "total": 60
   },
   {
-   "semana": 38,
-   "inicio": "2027-07-05",
-   "fim": "2027-07-11",
+   "semana": 35,
+   "inicio": "2027-06-14",
+   "fim": "2027-06-20",
    "itens": [
     {
      "assunto": "Epifisiólise proximal do fêmur",
      "area": "Ortopedia pediátrica",
-     "quantidade": 7
+     "quantidade": 13
     },
     {
      "assunto": "Fratura do colo do fêmur",
@@ -5404,25 +6210,25 @@
     {
      "assunto": "Fraturas expostas",
      "area": "Trauma adulto",
-     "quantidade": 9
-    },
-    {
-     "assunto": "Exame físico do ombro",
-     "area": "Ombro e cotovelo",
-     "quantidade": 5
+     "quantidade": 8
     }
    ],
    "total": 60
   },
   {
-   "semana": 39,
-   "inicio": "2027-07-12",
-   "fim": "2027-07-18",
+   "semana": 36,
+   "inicio": "2027-06-21",
+   "fim": "2027-06-27",
    "itens": [
+    {
+     "assunto": "Fraturas expostas",
+     "area": "Trauma adulto",
+     "quantidade": 1
+    },
     {
      "assunto": "Exame físico do ombro",
      "area": "Ombro e cotovelo",
-     "quantidade": 15
+     "quantidade": 20
     },
     {
      "assunto": "Lesões meniscais",
@@ -5432,25 +6238,25 @@
     {
      "assunto": "Tumores benignos de partes moles",
      "area": "Tumores ósseos e de partes moles",
-     "quantidade": 20
-    },
-    {
-     "assunto": "Doença de Dupuytren",
-     "area": "Mão e punho",
-     "quantidade": 5
+     "quantidade": 19
     }
    ],
    "total": 60
   },
   {
-   "semana": 40,
-   "inicio": "2027-07-19",
-   "fim": "2027-07-25",
+   "semana": 37,
+   "inicio": "2027-06-28",
+   "fim": "2027-07-04",
    "itens": [
+    {
+     "assunto": "Tumores benignos de partes moles",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 1
+    },
     {
      "assunto": "Doença de Dupuytren",
      "area": "Mão e punho",
-     "quantidade": 9
+     "quantidade": 14
     },
     {
      "assunto": "Exame neurológico e radiculopatias",
@@ -5470,20 +6276,20 @@
     {
      "assunto": "Dor e analgesia",
      "area": "Conceitos básicos",
-     "quantidade": 9
+     "quantidade": 3
     }
    ],
    "total": 60
   },
   {
-   "semana": 41,
-   "inicio": "2027-07-26",
-   "fim": "2027-08-01",
+   "semana": 38,
+   "inicio": "2027-07-05",
+   "fim": "2027-07-11",
    "itens": [
     {
      "assunto": "Dor e analgesia",
      "area": "Conceitos básicos",
-     "quantidade": 10
+     "quantidade": 16
     },
     {
      "assunto": "Osteonecrose da cabeça femoral",
@@ -5498,20 +6304,20 @@
     {
      "assunto": "Displasia fibrosa",
      "area": "Tumores ósseos e de partes moles",
-     "quantidade": 12
+     "quantidade": 6
     }
    ],
    "total": 60
   },
   {
-   "semana": 42,
-   "inicio": "2027-08-02",
-   "fim": "2027-08-08",
+   "semana": 39,
+   "inicio": "2027-07-12",
+   "fim": "2027-07-18",
    "itens": [
     {
      "assunto": "Displasia fibrosa",
      "area": "Tumores ósseos e de partes moles",
-     "quantidade": 2
+     "quantidade": 8
     },
     {
      "assunto": "Hérnia de disco e mielopatia cervical",
@@ -5531,20 +6337,20 @@
     {
      "assunto": "Osteoporose: diagnóstico",
      "area": "Osteometabólicas",
-     "quantidade": 12
+     "quantidade": 6
     }
    ],
    "total": 60
   },
   {
-   "semana": 43,
-   "inicio": "2027-08-09",
-   "fim": "2027-08-15",
+   "semana": 40,
+   "inicio": "2027-07-19",
+   "fim": "2027-07-25",
    "itens": [
     {
      "assunto": "Osteoporose: diagnóstico",
      "area": "Osteometabólicas",
-     "quantidade": 6
+     "quantidade": 12
     },
     {
      "assunto": "Capsulite adesiva",
@@ -5569,25 +6375,25 @@
     {
      "assunto": "Fraturas da coluna cervical alta",
      "area": "Trauma adulto",
-     "quantidade": 8
-    },
-    {
-     "assunto": "Luxação do quadril e fratura da cabeça femoral",
-     "area": "Trauma adulto",
-     "quantidade": 4
+     "quantidade": 6
     }
    ],
    "total": 60
   },
   {
-   "semana": 44,
-   "inicio": "2027-08-16",
-   "fim": "2027-08-22",
+   "semana": 41,
+   "inicio": "2027-07-26",
+   "fim": "2027-08-01",
    "itens": [
+    {
+     "assunto": "Fraturas da coluna cervical alta",
+     "area": "Trauma adulto",
+     "quantidade": 2
+    },
     {
      "assunto": "Luxação do quadril e fratura da cabeça femoral",
      "area": "Trauma adulto",
-     "quantidade": 4
+     "quantidade": 8
     },
     {
      "assunto": "Artrite séptica",
@@ -5612,25 +6418,25 @@
     {
      "assunto": "Luxação acromioclavicular",
      "area": "Trauma adulto",
-     "quantidade": 7
-    },
-    {
-     "assunto": "Coalizões tarsais",
-     "area": "Pé e tornozelo",
-     "quantidade": 1
+     "quantidade": 2
     }
    ],
    "total": 60
   },
   {
-   "semana": 45,
-   "inicio": "2027-08-23",
-   "fim": "2027-08-29",
+   "semana": 42,
+   "inicio": "2027-08-02",
+   "fim": "2027-08-08",
    "itens": [
+    {
+     "assunto": "Luxação acromioclavicular",
+     "area": "Trauma adulto",
+     "quantidade": 5
+    },
     {
      "assunto": "Coalizões tarsais",
      "area": "Pé e tornozelo",
-     "quantidade": 15
+     "quantidade": 16
     },
     {
      "assunto": "Instabilidade femoropatelar",
@@ -5645,20 +6451,20 @@
     {
      "assunto": "Pé cavo",
      "area": "Pé e tornozelo",
-     "quantidade": 13
+     "quantidade": 7
     }
    ],
    "total": 60
   },
   {
-   "semana": 46,
-   "inicio": "2027-08-30",
-   "fim": "2027-09-05",
+   "semana": 43,
+   "inicio": "2027-08-09",
+   "fim": "2027-08-15",
    "itens": [
     {
      "assunto": "Pé cavo",
      "area": "Pé e tornozelo",
-     "quantidade": 3
+     "quantidade": 9
     },
     {
      "assunto": "Epicondilite lateral e medial",
@@ -5683,20 +6489,20 @@
     {
      "assunto": "Ruptura dos tendões patelar e quadricipital",
      "area": "Joelho",
-     "quantidade": 9
+     "quantidade": 3
     }
    ],
    "total": 60
   },
   {
-   "semana": 47,
-   "inicio": "2027-09-06",
-   "fim": "2027-09-12",
+   "semana": 44,
+   "inicio": "2027-08-16",
+   "fim": "2027-08-22",
    "itens": [
     {
      "assunto": "Ruptura dos tendões patelar e quadricipital",
      "area": "Joelho",
-     "quantidade": 3
+     "quantidade": 9
     },
     {
      "assunto": "Fratura do rádio distal",
@@ -5726,25 +6532,25 @@
     {
      "assunto": "Exame físico do quadril",
      "area": "Quadril",
-     "quantidade": 15
-    },
-    {
-     "assunto": "Doença de Kienböck",
-     "area": "Mão e punho",
-     "quantidade": 2
+     "quantidade": 11
     }
    ],
    "total": 60
   },
   {
-   "semana": 48,
-   "inicio": "2027-09-13",
-   "fim": "2027-09-19",
+   "semana": 45,
+   "inicio": "2027-08-23",
+   "fim": "2027-08-29",
    "itens": [
+    {
+     "assunto": "Exame físico do quadril",
+     "area": "Quadril",
+     "quantidade": 4
+    },
     {
      "assunto": "Doença de Kienböck",
      "area": "Mão e punho",
-     "quantidade": 9
+     "quantidade": 11
     },
     {
      "assunto": "Fraturas da coluna cervical",
@@ -5769,20 +6575,20 @@
     {
      "assunto": "Tuberculose osteoarticular",
      "area": "Osteometabólicas",
-     "quantidade": 7
+     "quantidade": 1
     }
    ],
    "total": 60
   },
   {
-   "semana": 49,
-   "inicio": "2027-09-20",
-   "fim": "2027-09-26",
+   "semana": 46,
+   "inicio": "2027-08-30",
+   "fim": "2027-09-05",
    "itens": [
     {
      "assunto": "Tuberculose osteoarticular",
      "area": "Osteometabólicas",
-     "quantidade": 4
+     "quantidade": 10
     },
     {
      "assunto": "Fraturas da clavícula e do úmero proximal na criança",
@@ -5812,20 +6618,20 @@
     {
      "assunto": "Imagem do joelho",
      "area": "Joelho",
-     "quantidade": 9
+     "quantidade": 3
     }
    ],
    "total": 60
   },
   {
-   "semana": 50,
-   "inicio": "2027-09-27",
-   "fim": "2027-10-03",
+   "semana": 47,
+   "inicio": "2027-09-06",
+   "fim": "2027-09-12",
    "itens": [
     {
      "assunto": "Imagem do joelho",
      "area": "Joelho",
-     "quantidade": 1
+     "quantidade": 7
     },
     {
      "assunto": "Ombro e cotovelo da criança",
@@ -5860,25 +6666,25 @@
     {
      "assunto": "Fraturas do retropé, mediopé e antepé",
      "area": "Pé e tornozelo",
-     "quantidade": 10
-    },
-    {
-     "assunto": "Fraturas do tornozelo e do pilão tibial",
-     "area": "Pé e tornozelo",
-     "quantidade": 1
+     "quantidade": 5
     }
    ],
    "total": 60
   },
   {
-   "semana": 51,
-   "inicio": "2027-10-04",
-   "fim": "2027-10-10",
+   "semana": 48,
+   "inicio": "2027-09-13",
+   "fim": "2027-09-19",
    "itens": [
+    {
+     "assunto": "Fraturas do retropé, mediopé e antepé",
+     "area": "Pé e tornozelo",
+     "quantidade": 5
+    },
     {
      "assunto": "Fraturas do tornozelo e do pilão tibial",
      "area": "Pé e tornozelo",
-     "quantidade": 9
+     "quantidade": 10
     },
     {
      "assunto": "Lesões osteocondrais do tálus",
@@ -5903,25 +6709,25 @@
     {
      "assunto": "Cifose e doença de Scheuermann",
      "area": "Coluna",
-     "quantidade": 6
-    },
-    {
-     "assunto": "Luxações na criança",
-     "area": "Ortopedia pediátrica",
      "quantidade": 5
     }
    ],
    "total": 60
   },
   {
-   "semana": 52,
-   "inicio": "2027-10-11",
-   "fim": "2027-10-17",
+   "semana": 49,
+   "inicio": "2027-09-20",
+   "fim": "2027-09-26",
    "itens": [
+    {
+     "assunto": "Cifose e doença de Scheuermann",
+     "area": "Coluna",
+     "quantidade": 1
+    },
     {
      "assunto": "Luxações na criança",
      "area": "Ortopedia pediátrica",
-     "quantidade": 1
+     "quantidade": 6
     },
     {
      "assunto": "Maus-tratos",
@@ -5966,25 +6772,25 @@
     {
      "assunto": "Imagem da coluna",
      "area": "Coluna",
-     "quantidade": 5
-    },
-    {
-     "assunto": "Tendinite calcária",
-     "area": "Ombro e cotovelo",
-     "quantidade": 2
+     "quantidade": 1
     }
    ],
    "total": 60
   },
   {
-   "semana": 53,
-   "inicio": "2027-10-18",
-   "fim": "2027-10-24",
+   "semana": 50,
+   "inicio": "2027-09-27",
+   "fim": "2027-10-03",
    "itens": [
+    {
+     "assunto": "Imagem da coluna",
+     "area": "Coluna",
+     "quantidade": 4
+    },
     {
      "assunto": "Tendinite calcária",
      "area": "Ombro e cotovelo",
-     "quantidade": 3
+     "quantidade": 5
     },
     {
      "assunto": "Tendão calcâneo",
@@ -6019,25 +6825,25 @@
     {
      "assunto": "Osteoporose: tratamento",
      "area": "Osteometabólicas",
-     "quantidade": 8
-    },
-    {
-     "assunto": "Fibrocartilagem triangular e punho ulnar",
-     "area": "Mão e punho",
-     "quantidade": 4
+     "quantidade": 6
     }
    ],
    "total": 60
   },
   {
-   "semana": 54,
-   "inicio": "2027-10-25",
-   "fim": "2027-10-31",
+   "semana": 51,
+   "inicio": "2027-10-04",
+   "fim": "2027-10-10",
    "itens": [
+    {
+     "assunto": "Osteoporose: tratamento",
+     "area": "Osteometabólicas",
+     "quantidade": 2
+    },
     {
      "assunto": "Fibrocartilagem triangular e punho ulnar",
      "area": "Mão e punho",
-     "quantidade": 1
+     "quantidade": 5
     },
     {
      "assunto": "Fraturas do pé na criança",
@@ -6093,7 +6899,15 @@
      "assunto": "Exame físico do cotovelo",
      "area": "Ombro e cotovelo",
      "quantidade": 4
-    },
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 52,
+   "inicio": "2027-10-11",
+   "fim": "2027-10-17",
+   "itens": [
     {
      "assunto": "Hálux rígido",
      "area": "Pé e tornozelo",
@@ -6102,20 +6916,7 @@
     {
      "assunto": "Infecções da coluna",
      "area": "Coluna",
-     "quantidade": 2
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 55,
-   "inicio": "2027-11-01",
-   "fim": "2027-11-07",
-   "itens": [
-    {
-     "assunto": "Infecções da coluna",
-     "area": "Coluna",
-     "quantidade": 2
+     "quantidade": 4
     },
     {
      "assunto": "Lesões SLAP e do lábio superior",
@@ -6180,7 +6981,20 @@
     {
      "assunto": "Biomecânica da mão",
      "area": "Mão e punho",
-     "quantidade": 4
+     "quantidade": 3
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 53,
+   "inicio": "2027-10-18",
+   "fim": "2027-10-24",
+   "itens": [
+    {
+     "assunto": "Biomecânica da mão",
+     "area": "Mão e punho",
+     "quantidade": 1
     },
     {
      "assunto": "Biomecânica e marcha",
@@ -6190,20 +7004,7 @@
     {
      "assunto": "Encondroma e encondromatoses",
      "area": "Tumores ósseos e de partes moles",
-     "quantidade": 1
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 56,
-   "inicio": "2027-11-08",
-   "fim": "2027-11-14",
-   "itens": [
-    {
-     "assunto": "Encondroma e encondromatoses",
-     "area": "Tumores ósseos e de partes moles",
-     "quantidade": 3
+     "quantidade": 4
     },
     {
      "assunto": "Fixadores externos",
@@ -6278,7 +7079,20 @@
     {
      "assunto": "Hiperparatireoidismo e osteodistrofia renal",
      "area": "Osteometabólicas",
-     "quantidade": 3
+     "quantidade": 1
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 54,
+   "inicio": "2027-10-25",
+   "fim": "2027-10-31",
+   "itens": [
+    {
+     "assunto": "Hiperparatireoidismo e osteodistrofia renal",
+     "area": "Osteometabólicas",
+     "quantidade": 2
     },
     {
      "assunto": "Osteocondroma e exostoses múltiplas",
@@ -6288,20 +7102,7 @@
     {
      "assunto": "Fasciíte plantar e dor no calcanhar",
      "area": "Pé e tornozelo",
-     "quantidade": 1
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 57,
-   "inicio": "2027-11-15",
-   "fim": "2027-11-21",
-   "itens": [
-    {
-     "assunto": "Fasciíte plantar e dor no calcanhar",
-     "area": "Pé e tornozelo",
-     "quantidade": 2
+     "quantidade": 3
     },
     {
      "assunto": "Fraturas da coluna cervical baixa",
@@ -6386,7 +7187,20 @@
     {
      "assunto": "Imagem em ortopedia",
      "area": "Conceitos básicos",
-     "quantidade": 3
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 55,
+   "inicio": "2027-11-01",
+   "fim": "2027-11-07",
+   "itens": [
+    {
+     "assunto": "Imagem em ortopedia",
+     "area": "Conceitos básicos",
+     "quantidade": 1
     },
     {
      "assunto": "Ossificação heterotópica",
@@ -6396,20 +7210,7 @@
     {
      "assunto": "Sindactilia e polidactilia",
      "area": "Mão e punho",
-     "quantidade": 2
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 58,
-   "inicio": "2027-11-22",
-   "fim": "2027-11-28",
-   "itens": [
-    {
-     "assunto": "Sindactilia e polidactilia",
-     "area": "Mão e punho",
-     "quantidade": 1
+     "quantidade": 3
     },
     {
      "assunto": "Trauma da coluna na criança",
@@ -6499,7 +7300,20 @@
     {
      "assunto": "Deficiências longitudinais dos membros",
      "area": "Ortopedia pediátrica",
-     "quantidade": 3
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 56,
+   "inicio": "2027-11-08",
+   "fim": "2027-11-14",
+   "itens": [
+    {
+     "assunto": "Deficiências longitudinais dos membros",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 1
     },
     {
      "assunto": "Deficiências longitudinais e mão torta",
@@ -6509,20 +7323,7 @@
     {
      "assunto": "Instabilidade posterior e multidirecional",
      "area": "Ombro e cotovelo",
-     "quantidade": 2
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 59,
-   "inicio": "2027-11-29",
-   "fim": "2027-12-05",
-   "itens": [
-    {
-     "assunto": "Instabilidade posterior e multidirecional",
-     "area": "Ombro e cotovelo",
-     "quantidade": 1
+     "quantidade": 3
     },
     {
      "assunto": "Tratamento conservador e imobilização",
@@ -6612,7 +7413,20 @@
     {
      "assunto": "Fibroma condromixoide",
      "area": "Tumores ósseos e de partes moles",
-     "quantidade": 3
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 57,
+   "inicio": "2027-11-15",
+   "fim": "2027-11-21",
+   "itens": [
+    {
+     "assunto": "Fibroma condromixoide",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 1
     },
     {
      "assunto": "Fixação externa e princípios de tratamento",
@@ -6622,20 +7436,7 @@
     {
      "assunto": "Lesão da sindesmose",
      "area": "Pé e tornozelo",
-     "quantidade": 2
-    }
-   ],
-   "total": 60
-  },
-  {
-   "semana": 60,
-   "inicio": "2027-12-06",
-   "fim": "2027-12-12",
-   "itens": [
-    {
-     "assunto": "Lesão da sindesmose",
-     "area": "Pé e tornozelo",
-     "quantidade": 1
+     "quantidade": 3
     },
     {
      "assunto": "Luxação e instabilidade da artroplastia",
@@ -6680,25 +7481,25 @@
     {
      "assunto": "Outros temas de trauma",
      "area": "Trauma adulto",
-     "quantidade": 8
-    },
-    {
-     "assunto": "Outras doenças congênitas",
-     "area": "Ortopedia pediátrica",
-     "quantidade": 5
+     "quantidade": 7
     }
    ],
    "total": 60
   },
   {
-   "semana": 61,
-   "inicio": "2027-12-13",
-   "fim": "2027-12-19",
+   "semana": 58,
+   "inicio": "2027-11-22",
+   "fim": "2027-11-28",
    "itens": [
+    {
+     "assunto": "Outros temas de trauma",
+     "area": "Trauma adulto",
+     "quantidade": 1
+    },
     {
      "assunto": "Outras doenças congênitas",
      "area": "Ortopedia pediátrica",
-     "quantidade": 2
+     "quantidade": 7
     },
     {
      "assunto": "Outras infecções osteoarticulares",
@@ -6751,7 +7552,7 @@
      "quantidade": 3
     }
    ],
-   "total": 36
+   "total": 42
   }
  ],
  "historico": [
@@ -6820,6 +7621,14 @@
    "reprovados": 0,
    "assuntos": {
     "Anatomia da mão e punho": 20
+   }
+  },
+  {
+   "data": "2026-10-15",
+   "aprovados": 19,
+   "reprovados": 0,
+   "assuntos": {
+    "Fratura da cabeça do rádio e instabilidade do cotovelo": 19
    }
   }
  ]
