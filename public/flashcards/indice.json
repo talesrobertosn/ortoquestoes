@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4760,
- "batalha": 4046,
- "soEstudo": 714,
+ "total": 4801,
+ "batalha": 4060,
+ "soEstudo": 741,
  "comImagem": 630,
  "simulados": 846,
- "autorais": 458,
+ "autorais": 499,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -379,28 +379,28 @@
   "trauma": {
    "nome": "Trauma adulto",
    "arquivo": "trauma.json",
-   "total": 1010,
-   "batalha": 845,
+   "total": 1051,
+   "batalha": 859,
    "comImagem": 92,
    "simulados": 300,
    "tipos": {
-    "Armadilha": 3,
-    "Classificação": 21,
-    "Conceito": 27,
+    "Armadilha": 6,
+    "Classificação": 32,
+    "Conceito": 49,
     "Imagem": 92,
     "Na prova": 200,
-    "Par confundível": 7,
+    "Par confundível": 11,
     "Relâmpago": 659,
-    "Tabela": 1
+    "Tabela": 2
    },
    "assuntos": {
     "Fratura da cabeça do rádio e instabilidade do cotovelo": 126,
+    "Luxação do joelho e lesões ligamentares": 80,
     "Fratura da escápula": 73,
     "Fraturas diafisárias do antebraço": 64,
     "Luxação acromioclavicular": 50,
     "Fratura da clavícula": 44,
     "Fratura do rádio distal": 42,
-    "Luxação do joelho e lesões ligamentares": 39,
     "Fratura do úmero distal": 37,
     "Fraturas por estresse": 36,
     "Fratura do úmero proximal": 34,
@@ -470,5 +470,5 @@
    }
   }
  },
- "assinatura": "23bfa981177e"
+ "assinatura": "777c20f1074e"
 }

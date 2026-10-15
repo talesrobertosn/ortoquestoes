@@ -922,6 +922,33 @@
    "fonte": "c93e549ea591"
   },
   {
+   "id": "fc-trauma-0034-co1",
+   "questao": "trauma-0034",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho, a imobilização prolongada piora o prognóstico por levar a quê?",
+   "resposta": "rigidez",
+   "explicacao": "Imobilização prolongada leva à **rigidez**; reconstrução precoce dos cruzados é fator de bom prognóstico.",
+   "opcoes": [
+    "rigidez"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "c83a27cda17f",
+   "origem": "autoral",
+   "trecho": "imobilização prolongada, que leva à **rigidez**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0034-q",
    "questao": "trauma-0034",
    "area": "Trauma adulto",
@@ -2631,6 +2658,116 @@
    "fonte": "7bd235532682"
   },
   {
+   "id": "fc-trauma-0105-ar1",
+   "questao": "trauma-0105",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação posterolateral irredutível do joelho, vale insistir nas tentativas de redução fechada?",
+   "resposta": "necrose da pele",
+   "explicacao": "Não: a tração aperta a casa de botão, e as tentativas podem causar **necrose da pele** medial. Redução aberta precoce.",
+   "opcoes": [
+    "necrose da pele"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "2db0ae0355a9",
+   "origem": "autoral",
+   "trecho": "as tentativas repetidas podem causar **necrose da pele** medial pela tensão.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0105-co1",
+   "questao": "trauma-0105",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual direção de luxação do joelho é a exceção clássica, que pode ser irredutível por interposição de partes moles?",
+   "resposta": "posterolateral",
+   "explicacao": "A **posterolateral**: o côndilo medial fica preso numa casa de botão.",
+   "opcoes": [
+    "posterolateral",
+    "anterior",
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "2db0ae0355a9",
+   "origem": "autoral",
+   "trecho": "A exceção clássica é a luxação **posterolateral**, que pode ser **irredutível** por **interposição de partes moles**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0105-co2",
+   "questao": "trauma-0105",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação posterolateral irredutível do joelho, qual côndilo fica preso na casa de botão?",
+   "resposta": "côndilo femoral medial",
+   "explicacao": "O **côndilo femoral medial** atravessa a cápsula medial e o colateral tibial, que o aprisionam.",
+   "opcoes": [
+    "côndilo femoral medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "2db0ae0355a9",
+   "origem": "autoral",
+   "trecho": "o **côndilo femoral medial** atravessa as estruturas mediais e fica preso numa \"casa de botão\" (buttonhole).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0105-co3",
+   "questao": "trauma-0105",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o sinal cutâneo da luxação posterolateral irredutível do joelho?",
+   "resposta": "sinal da covinha",
+   "explicacao": "**Sinal da covinha (dimple sign):** a pele medial é repuxada para dentro pelos tecidos interpostos.",
+   "opcoes": [
+    "sinal da covinha"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "2db0ae0355a9",
+   "origem": "autoral",
+   "trecho": "**O sinal da covinha (dimple sign).**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0105-q",
    "questao": "trauma-0105",
    "area": "Trauma adulto",
@@ -3061,6 +3198,206 @@
    "prova": "TARO",
    "ano": 2016,
    "fonte": "080762eee201"
+  },
+  {
+   "id": "fc-trauma-0125-cl1",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação anatômica de Schenck, qual tipo é a lesão de um só cruzado com o joelho luxado?",
+   "resposta": "KD-I",
+   "explicacao": "**KD-I:** um cruzado. **KD-II:** os dois cruzados. **KD-III:** dois cruzados e um colateral. **KD-IV:** os quatro. **KD-V:** fratura-luxação.",
+   "opcoes": [
+    "KD-I",
+    "KD-II",
+    "KD-IV",
+    "KD-V"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "| KD-I | **Um** cruzado (LCA ou LCP), com o joelho luxado |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-cl2",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck, como se chama a luxação com os dois cruzados, o colateral lateral e o canto posterolateral lesados?",
+   "resposta": "KD-III L",
+   "explicacao": "**KD-III L:** dois cruzados, colateral lateral e canto posterolateral; mais lesão do **fibular**. **KD-III M:** com o colateral medial.",
+   "opcoes": [
+    "KD-III M",
+    "KD-III L",
+    "KD-IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "| KD-III L | Os dois cruzados e o **colateral lateral e canto posterolateral** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-cl3",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck, qual tipo de luxação do joelho tem os quatro ligamentos lesados?",
+   "resposta": "KD-IV",
+   "explicacao": "**KD-IV:** os **quatro** ligamentos (dois cruzados e dois colaterais).",
+   "opcoes": [
+    "KD-II",
+    "KD-III L",
+    "KD-IV",
+    "KD-V"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "| KD-IV | Os **quatro** ligamentos |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-cl4",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck, que tipo é a luxação do joelho com fratura periarticular?",
+   "resposta": "KD-V",
+   "explicacao": "**KD-V:** fratura-luxação.",
+   "opcoes": [
+    "KD-I",
+    "KD-IV",
+    "KD-V"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "| KD-V | Fratura-luxação |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-co1",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em quais dois pontos a artéria poplítea fica fixa, o que a faz estirar na luxação do joelho?",
+   "resposta": "hiato dos adutores e no arco do sóleo",
+   "explicacao": "Presa no **hiato dos adutores** e no **arco do sóleo**, não escapa do deslocamento.",
+   "opcoes": [
+    "hiato dos adutores e no arco do sóleo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "a artéria poplítea fica fixa no hiato dos adutores e no arco do sóleo e é estirada na luxação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-co2",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho, qual é a conduta diante da ausência de pulso?",
+   "resposta": "exploração imediata",
+   "explicacao": "ITB abaixo de 0,9: angiotomografia. **Ausência de pulso: exploração imediata.**",
+   "opcoes": [
+    "exploração imediata",
+    "angiotomografia"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "ausência de pulso indica exploração imediata.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0125-pc1",
+   "questao": "trauma-0125",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Schenck classifica a luxação do joelho pelos ligamentos rompidos. Por qual critério a classifica Kennedy?",
+   "resposta": "direção do deslocamento",
+   "explicacao": "**Kennedy:** direção (anterior, posterior, medial, lateral, rotatória), muitas vezes desconhecida porque o joelho reduz sozinho.",
+   "opcoes": [
+    "direção do deslocamento"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "9343b0fd8771",
+   "origem": "autoral",
+   "trecho": "a direção do deslocamento (classificação de Kennedy: anterior, posterior, medial, lateral, rotatória)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0125-q",
@@ -3902,6 +4239,143 @@
    "fonte": "ccaa6da039a2"
   },
   {
+   "id": "fc-trauma-0163-ar1",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Joelho com lesão multiligamentar que chega reduzido pode ser tratado como uma entorse grave?",
+   "resposta": "luxação que reduziu",
+   "explicacao": "Não: muitas luxações **reduzem espontaneamente**. Todo joelho multiligamentar é uma **luxação que reduziu**, com avaliação vascular.",
+   "opcoes": [
+    "luxação que reduziu"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "todo joelho com lesão **multiligamentar** deve ser tratado como uma luxação que reduziu.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0163-co1",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a direção mais comum da luxação do joelho, causada pela hiperextensão?",
+   "resposta": "anterior",
+   "explicacao": "**Anterior** (hiperextensão) é a mais comum. O trauma do painel causa a **posterior**.",
+   "opcoes": [
+    "anterior",
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "A hiperextensão causa a luxação **anterior**, a mais comum.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0163-co2",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão da poplítea por luxação do joelho, após quantas horas de isquemia a taxa de amputação sobe muito?",
+   "resposta": "6 a 8 horas",
+   "explicacao": "Isquemia de mais de **6 a 8 horas** leva a altas taxas de amputação.",
+   "opcoes": [
+    "6 a 8 horas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "A isquemia de mais de **6 a 8 horas** leva a altas taxas de **amputação**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0163-co3",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho, o nervo fibular é lesado sobretudo em quais lesões?",
+   "resposta": "posterolaterais",
+   "explicacao": "Fibular lesado em cerca de 20 a 40%, sobretudo nas lesões **posterolaterais**, com recuperação ruim.",
+   "opcoes": [
+    "posterolaterais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "É lesado em cerca de 20 a 40% dos casos, sobretudo nas lesões **posterolaterais**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0163-pc1",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A hiperextensão causa a luxação anterior do joelho. Que luxação causa o trauma do painel, com o joelho fletido?",
+   "resposta": "posterior",
+   "explicacao": "**Trauma do painel:** a tíbia é empurrada para trás, luxação **posterior**.",
+   "opcoes": [
+    "anterior",
+    "posterior"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "o mecanismo clássico é o **trauma do painel**: o joelho fletido bate no painel, e a tíbia é empurrada para trás (luxação **posterior**).",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0163-q",
    "questao": "trauma-0163",
    "area": "Trauma adulto",
@@ -3927,6 +4401,33 @@
    "prova": "TARO",
    "ano": 2014,
    "fonte": "eedea6b162c1"
+  },
+  {
+   "id": "fc-trauma-0163-tb1",
+   "questao": "trauma-0163",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Luxação do joelho de ultrabaixa energia, por tropeço: em que paciente ocorre, com alto risco vascular?",
+   "resposta": "obesos mórbidos",
+   "explicacao": "**Ultrabaixa energia:** tropeço em **obesos mórbidos**; rara, mas com alto risco vascular.",
+   "opcoes": [
+    "obesos mórbidos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "eedea6b162c1",
+   "origem": "autoral",
+   "trecho": "| Ultrabaixa energia | Tropeço em **obesos mórbidos** | Raro, mas com alto risco vascular |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0164-q",
@@ -6722,6 +7223,114 @@
    "prova": "TEOT/TARO",
    "ano": null,
    "fonte": "63f23d985bdf"
+  },
+  {
+   "id": "fc-trauma-0298-ar1",
+   "questao": "trauma-0298",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho, pulsos distais palpáveis excluem lesão arterial?",
+   "resposta": "não excluem",
+   "explicacao": "**Não:** a lesão da **íntima** pode trombosar horas depois. Medir o ITB.",
+   "opcoes": [
+    "não excluem"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e2df27abde82",
+   "origem": "autoral",
+   "trecho": "Pulsos palpáveis **não excluem** lesão da íntima, que pode trombosar horas depois.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0298-co1",
+   "questao": "trauma-0298",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se calcula o índice tornozelo-braquial (ITB)?",
+   "resposta": "pressão sistólica do tornozelo dividida pela do braço",
+   "explicacao": "**ITB:** pressão sistólica do tornozelo dividida pela do braço, com Doppler. Abaixo de 0,9: angiotomografia.",
+   "opcoes": [
+    "pressão sistólica do tornozelo dividida pela do braço"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e2df27abde82",
+   "origem": "autoral",
+   "trecho": "O **ITB** é a pressão sistólica do tornozelo dividida pela do braço, medida com Doppler.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0298-co2",
+   "questao": "trauma-0298",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual estudo mostrou que ITB acima de 0,9 na luxação do joelho tem valor preditivo negativo próximo de 100%?",
+   "resposta": "Mills",
+   "explicacao": "Estudo de **Mills**: ITB acima de 0,9 permite observar com exames seriados, sem angiografia de rotina.",
+   "opcoes": [
+    "Mills"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e2df27abde82",
+   "origem": "autoral",
+   "trecho": "(estudo de **Mills**)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0298-co3",
+   "questao": "trauma-0298",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na revascularização da poplítea após luxação do joelho, qual procedimento profilático se associa?",
+   "resposta": "fasciotomia",
+   "explicacao": "**Fasciotomia** profilática na revascularização.",
+   "opcoes": [
+    "fasciotomia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e2df27abde82",
+   "origem": "autoral",
+   "trecho": "Na revascularização, faz-se **fasciotomia** profilática.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0298-q",
@@ -11746,6 +12355,60 @@
    "prova": "SBOT-SP",
    "ano": null,
    "fonte": "ec5599370043"
+  },
+  {
+   "id": "fc-trauma-0745-cl1",
+   "questao": "trauma-0745",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck modificada por Wascher, o que indica o sufixo N?",
+   "resposta": "lesão neurológica",
+   "explicacao": "**C:** lesão vascular (poplítea). **N:** **lesão neurológica**, geralmente do fibular comum.",
+   "opcoes": [
+    "lesão neurológica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "371a5f029da1",
+   "origem": "autoral",
+   "trecho": "e **N** para lesão **neurológica** (nerve), geralmente do **fibular comum**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0745-co1",
+   "questao": "trauma-0745",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quem acrescentou à classificação de Schenck os sufixos para lesões vasculares e nervosas?",
+   "resposta": "Wascher",
+   "explicacao": "**Wascher** acrescentou **C** (circulation) e **N** (nerve).",
+   "opcoes": [
+    "Wascher"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "371a5f029da1",
+   "origem": "autoral",
+   "trecho": "**A modificação de Wascher.** Acrescenta **sufixos** para lesões associadas",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0745-q",
@@ -16909,6 +17572,150 @@
    "fonte": "b85f09f6215c"
   },
   {
+   "id": "fc-trauma-1006-cl1",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteonecrose do joelho (Koshino modificada por Aglietti), qual estágio tem radiografia normal, com alteração só na ressonância ou cintilografia?",
+   "resposta": "Estágio 1",
+   "explicacao": "**1:** radiografia normal. **2:** achatamento. **3:** radiotransparência com halo. **4:** colapso. **5:** artrose.",
+   "opcoes": [
+    "Estágio 1",
+    "Estágio 2",
+    "Estágio 3",
+    "Estágio 5"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "**Estágio 1**: radiografia **normal**, alteração só na ressonância ou cintilografia.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1006-cl2",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Koshino e Aglietti da osteonecrose do joelho, qual estágio é o achatamento da área de carga do côndilo?",
+   "resposta": "Estágio 2",
+   "explicacao": "**Estágio 2:** **achatamento** da área de carga, ainda sem a lesão com halo.",
+   "opcoes": [
+    "Estágio 1",
+    "Estágio 2",
+    "Estágio 3",
+    "Estágio 5"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "**Estágio 2**: **achatamento** da área de carga do côndilo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1006-cl3",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Koshino e Aglietti da osteonecrose do joelho, qual estágio tem área radiotransparente com halo esclerótico, ainda sem colapso?",
+   "resposta": "Estágio 3",
+   "explicacao": "**Estágio 3:** radiotransparência com **halo esclerótico**. O colapso com placa calcificada é o 4.",
+   "opcoes": [
+    "Estágio 1",
+    "Estágio 2",
+    "Estágio 3",
+    "Estágio 5"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "**Estágio 3**: área **radiotransparente** com **halo esclerótico** ao redor.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1006-co1",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteonecrose espontânea do joelho (SONK) costuma associar-se a qual lesão meniscal?",
+   "resposta": "lesão da raiz posterior do menisco medial",
+   "explicacao": "Muitas são fraturas por insuficiência subcondral, ligadas à **lesão da raiz posterior do menisco medial**.",
+   "opcoes": [
+    "lesão da raiz posterior do menisco medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "frequentemente associadas a **lesão da raiz posterior do menisco medial**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1006-co2",
+   "questao": "trauma-1006",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na SONK, lesões que ocupam menos de quanto da largura do côndilo tendem a evoluir bem sem cirurgia?",
+   "resposta": "menos de 40% da largura do côndilo",
+   "explicacao": "Pequenas: menos de cerca de 3,5 a 5 cm² ou **menos de 40% da largura do côndilo**. As grandes colapsam.",
+   "opcoes": [
+    "menos de 40% da largura do côndilo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "52e15084d838",
+   "origem": "autoral",
+   "trecho": "Lesões **pequenas** (menos de cerca de 3,5 a 5 cm², ou menos de 40% da largura do côndilo)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-1008-q",
    "questao": "trauma-1008",
    "area": "Trauma adulto",
@@ -16934,6 +17741,62 @@
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
    "fonte": "56e6fd83eddf"
+  },
+  {
+   "id": "fc-trauma-1009-co1",
+   "questao": "trauma-1009",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual antagonista do receptor da IL-1, intra-articular, está em estudo para reduzir a artrose pós-traumática?",
+   "resposta": "anakinra",
+   "explicacao": "**Anakinra** intra-articular, na janela logo após o trauma.",
+   "opcoes": [
+    "anakinra"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "beace94998b2",
+   "origem": "autoral",
+   "trecho": "antagonistas do receptor da IL-1 (como a anakinra intra-articular)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1009-pc1",
+   "questao": "trauma-1009",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A IL-1 beta é o pico do primeiro dia após o trauma articular. Qual citocina sobe depois e é marcador sistêmico de gravidade no politrauma?",
+   "resposta": "IL-6",
+   "explicacao": "**IL-6:** sobe depois e se mantém, marcador sistêmico do politrauma. **IL-10:** anti-inflamatória.",
+   "opcoes": [
+    "IL-6",
+    "IL-10",
+    "IL-12"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "beace94998b2",
+   "origem": "autoral",
+   "trecho": "A **IL-6** aumenta um pouco depois e se mantém; é o marcador sistêmico de gravidade no politrauma.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-1009-q",
@@ -17384,6 +18247,114 @@
    "fonte": "280dd6a45a7e"
   },
   {
+   "id": "fc-trauma-1032-co1",
+   "questao": "trauma-1032",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão meniscal em rampa aparece em que proporção dos joelhos com lesão do LCA?",
+   "resposta": "15 a 25%",
+   "explicacao": "Até cerca de **15 a 25%** dos joelhos com LCA roto.",
+   "opcoes": [
+    "15 a 25%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "3767557eb829",
+   "origem": "autoral",
+   "trecho": "(até cerca de 15 a 25%)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1032-co2",
+   "questao": "trauma-1032",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual manobra artroscópica passa o artroscópio pela incisura até o compartimento posteromedial para ver a lesão em rampa?",
+   "resposta": "manobra de Gillquist",
+   "explicacao": "**Manobra de Gillquist**, muitas vezes com portal posteromedial e palpação da junção.",
+   "opcoes": [
+    "manobra de Gillquist"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "3767557eb829",
+   "origem": "autoral",
+   "trecho": "(manobra de Gillquist)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1032-co3",
+   "questao": "trauma-1032",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Lesão meniscal em rampa instável, achada na reconstrução do LCA: qual é a conduta?",
+   "resposta": "suturadas",
+   "explicacao": "Instáveis devem ser **suturadas** (todo-dentro ou gancho pelo portal posteromedial); as estáveis e pequenas podem cicatrizar.",
+   "opcoes": [
+    "suturadas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "3767557eb829",
+   "origem": "autoral",
+   "trecho": "Lesões **instáveis** devem ser **suturadas**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1032-pc1",
+   "questao": "trauma-1032",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão radial da raiz posterior do menisco lateral se associa à lesão do LCA. A da raiz do medial se associa a quê?",
+   "resposta": "joelhos degenerativos",
+   "explicacao": "Raiz **lateral:** LCA. Raiz **medial:** **joelhos degenerativos** e osteonecrose.",
+   "opcoes": [
+    "joelhos degenerativos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "3767557eb829",
+   "origem": "autoral",
+   "trecho": "a do **medial** associa-se a joelhos degenerativos e a osteonecrose.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-1033-q",
    "questao": "trauma-1033",
    "area": "Trauma adulto",
@@ -17699,6 +18670,87 @@
    "prova": "TARO",
    "ano": 2023,
    "fonte": "ed03b16ae9e1"
+  },
+  {
+   "id": "fc-trauma-1048-co1",
+   "questao": "trauma-1048",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a curva aguda do enxerto do LCP ao sair do túnel tibial, que favorece seu alongamento?",
+   "resposta": "killer turn",
+   "explicacao": "**Killer turn:** curva aguda no túnel tibial; alonga o enxerto e gera frouxidão posterior residual.",
+   "opcoes": [
+    "killer turn"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "1240495423d3",
+   "origem": "autoral",
+   "trecho": "a curva do enxerto ao sair do túnel tibial (o **\"killer turn\"**)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1048-co2",
+   "questao": "trauma-1048",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual técnica de fixação tibial do LCP, direto na face posterior da tíbia, evita a curva aguda do enxerto?",
+   "resposta": "inlay",
+   "explicacao": "Técnica **inlay** tibial: evita o killer turn.",
+   "opcoes": [
+    "inlay"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "1240495423d3",
+   "origem": "autoral",
+   "trecho": "usar a técnica **inlay** tibial (fixação direta na face posterior da tíbia, evitando o killer turn)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1048-co3",
+   "questao": "trauma-1048",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual lesão associada, se não tratada, sobrecarrega o enxerto do LCP?",
+   "resposta": "canto posterolateral",
+   "explicacao": "Lesões do **canto posterolateral** não tratadas sobrecarregam o enxerto: tratar todas as lesões associadas.",
+   "opcoes": [
+    "canto posterolateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "1240495423d3",
+   "origem": "autoral",
+   "trecho": "**lesões do canto posterolateral não tratadas** sobrecarregam o enxerto.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-1048-q",
@@ -18105,6 +19157,93 @@
    "prova": "TARO",
    "ano": 2022,
    "fonte": "f1e596619ebf"
+  },
+  {
+   "id": "fc-trauma-1068-cl1",
+   "questao": "trauma-1068",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de LaPrade da lesão da raiz meniscal, qual tipo é a ruptura radial completa até 9 mm da inserção óssea?",
+   "resposta": "tipo II",
+   "explicacao": "**I:** parcial. **II:** radial completa até 9 mm. **III:** com alça de balde. **IV:** oblíqua complexa. **V:** avulsão óssea.",
+   "opcoes": [
+    "tipo I",
+    "tipo II",
+    "tipo III",
+    "tipo IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "72d23ac47e83",
+   "origem": "autoral",
+   "trecho": "tipo II é ruptura radial completa até 9 mm da inserção óssea",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1068-cl2",
+   "questao": "trauma-1068",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de LaPrade da raiz meniscal, qual tipo associa uma lesão em alça de balde?",
+   "resposta": "tipo III",
+   "explicacao": "**Tipo III:** lesão da raiz com **alça de balde**.",
+   "opcoes": [
+    "tipo I",
+    "tipo II",
+    "tipo III",
+    "tipo IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "72d23ac47e83",
+   "origem": "autoral",
+   "trecho": "tipo III associa uma lesão em alça de balde",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1068-cl3",
+   "questao": "trauma-1068",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de LaPrade da raiz meniscal, o que é o tipo I?",
+   "resposta": "lesão parcial",
+   "explicacao": "**Tipo I:** **lesão parcial** da raiz.",
+   "opcoes": [
+    "lesão parcial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "72d23ac47e83",
+   "origem": "autoral",
+   "trecho": "Tipo I é lesão parcial",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-1068-q",
