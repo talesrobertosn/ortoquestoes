@@ -21,7 +21,7 @@ import { NivelCobranca } from './NivelCobranca'
  * vira a ação principal do topo, e a caixa do cronograma só aparece para quem
  * ainda não montou o seu (ou não assina). */
 export function usarCronogramaHoje() {
-  const { premium, logado } = usarPremium()
+  const { premium, logado, carregado } = usarPremium()
   const { indice } = usarIndice()
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const { plano, definirPlano } = usarPlanoSalvo(premium)
@@ -41,7 +41,10 @@ export function usarCronogramaHoje() {
     if (!premium || !sincronizado || !plano || !calculo || !extra || !opcoesComAdiantamento(plano, calculo)) return
     guardarAdiantamento(calculo).catch(() => undefined)
   }, [premium, sincronizado, plano, extra]) // eslint-disable-line react-hooks/exhaustive-deps
-  return { premium, logado, calculo: premium ? calculo : null, pendente, plano: premium ? plano : null, definirPlano }
+  // Ainda sem saber se há plano: quem decide entre o cartão do cronograma e o
+  // "Até a prova" espera, em vez de mostrar um e trocar pelo outro (salto de ~400 px).
+  const carregando = logado && (!carregado || (premium && plano === undefined))
+  return { premium, logado, carregando, calculo: premium ? calculo : null, pendente, plano: premium ? plano : null, definirPlano }
 }
 export type CronogramaHoje = ReturnType<typeof usarCronogramaHoje>
 
