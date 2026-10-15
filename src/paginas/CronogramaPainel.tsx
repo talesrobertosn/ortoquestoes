@@ -275,10 +275,10 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
     const passado = constancia?.ultimos.find((u) => meiaNoite(u.dia).getTime() === d.getTime())
     const ehHoje = d.getTime() === hoje.getTime()
     const folga = plano.folgas.includes(d.getDay())
-    let estado: 'feito' | 'hoje' | 'futuro' | 'folga' | 'perdido' | 'parcial' | 'antes' = 'futuro'
+    let estado: 'feito' | 'hoje' | 'futuro' | 'folga' | 'atrasado' | 'parcial' | 'antes' = 'futuro'
     if (ehHoje) estado = 'hoje'
     else if (d < meiaNoite(new Date(plano.criado_em))) estado = 'antes'
-    else if (d < hoje) estado = folga ? 'folga' : passado?.estado === 'cumprido' ? 'feito' : passado?.estado === 'parcial' ? 'parcial' : passado?.estado === 'antes' ? 'antes' : 'perdido'
+    else if (d < hoje) estado = folga ? 'folga' : passado?.estado === 'cumprido' ? 'feito' : passado?.estado === 'parcial' ? 'parcial' : passado?.estado === 'antes' ? 'antes' : 'atrasado'
     else if (folga) estado = 'folga'
     const itens = ehHoje ? (calculo.hoje?.itens ?? doPlano?.itens ?? []) : doPlano?.itens ?? []
     const n = ehHoje ? calculo.metaDiaria : doPlano?.total ?? passado?.n ?? 0
@@ -297,7 +297,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
   if (mini) frases.push(`Na ${semanaDia(mini.d)}: mini-simulado de ${TAMANHO_MINI} questões.`)
   const areasSemana = new Map<string, string>()
   for (const x of plano7) for (const i of x.itens) areasSemana.set(i.slug, i.nome)
-  const ROTULO = { feito: 'feito', hoje: 'hoje', futuro: '', folga: 'folga', perdido: 'não feito', parcial: 'parcial', antes: '–' }
+  const ROTULO = { feito: 'feito', hoje: 'hoje', futuro: '', folga: 'folga', atrasado: 'atrasado', parcial: 'parcial', antes: '–' }
   return (
     <section className="cp-bloco" aria-labelledby="cp-semana-titulo">
       <p className="cp-rotulo"><span id="cp-semana-titulo">Esta semana</span><b>{curta(dias[0])} a {curta(dias[6])}</b></p>
@@ -375,7 +375,9 @@ export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false }:
       <div className="cp-depois">
         <ol>
           {linhas}
-          {(tudo || semanas.length <= maximo) && <>
+          {/* Reta final e prova ficam sempre à vista, mesmo com a lista recolhida. */}
+          {semanas.length > visiveis.length && <li className="cp-depois__salto" aria-hidden="true"><span /><span>⋮</span></li>}
+          {<>
             {!calculo.naRetaFinal && <li className="cp-depois__marco"><span className="cp-depois__data">{curta(calculo.inicioRetaFinal)}</span><span><span className="cp-depois__faixa cp-depois__faixa--marco" /><strong>Reta final</strong><small>{calculo.diasRetaFinal > 7 ? 'Revisão forte e depois o modo prova' : 'Modo prova'}, sem conteúdo novo</small></span></li>}
             <li className="cp-depois__marco cp-depois__marco--prova"><span className="cp-depois__data">{curta(prova)}</span><span><span className="cp-depois__faixa cp-depois__faixa--prova" /><strong>Prova</strong><small>Boa prova!</small></span></li>
           </>}

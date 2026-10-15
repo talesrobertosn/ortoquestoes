@@ -328,3 +328,6 @@
 .pe-entenda__lista li > span:last-child { display: grid; gap: 0.25rem; }
 .pe-entenda__lista small { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; }
 .pe-entenda__icone { flex: none; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: var(--raio-controle); background: var(--verdete-veu); color: var(--verdete); }
+
+/* A cor da área, a mesma do cronograma e da sessão. */
+.pe-cor-area { display: inline-block; width: 0.6rem; height: 0.6rem; margin-right: 0.35rem; border-radius: 2px; vertical-align: 0.05em; }

@@ -6,7 +6,8 @@
 export const COR_AREA: Record<string, string> = {
   trauma: '#c8513c',
   pediatria: '#2e64a8',
-  mao: '#c9952f',
+  // Não usar dourado: ele é a cor dos marcos (reta final, prova, mini-simulado).
+  mao: '#12a1a8',
   'ombro-cotovelo': '#3a8fb7',
   quadril: '#b5527a',
   joelho: '#1f8a70',

@@ -51,7 +51,9 @@ function amanhaIso() {
 const DEMO = import.meta.env.DEV && typeof location !== 'undefined' && location.hash.includes('demo=1')
 const planoDemo = (): PlanoSalvo => {
   const criado = new Date(); criado.setDate(criado.getDate() - 6)
-  return { data_prova: DATA_TEOT, intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: criado.toISOString(), incluir_simulados: true, opcoes: { diasLeves: [3], qtdLeve: 15 } }
+  // demoProva=AAAA-MM-DD (só em desenvolvimento): ver a reta final, o modo prova e a véspera.
+  const prova = location.hash.match(/demoProva=(\d{4}-\d{2}-\d{2})/)?.[1] ?? DATA_TEOT
+  return { data_prova: prova, intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: criado.toISOString(), incluir_simulados: true, opcoes: { diasLeves: [3], qtdLeve: 15 } }
 }
 
 /** Respostas de exemplo do modo demo: ~50 por dia nos últimos dias, 70% de acerto, nas duas primeiras áreas do plano. */
@@ -432,7 +434,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">
         <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
-          ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} />
+          ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} minutos={minutos} />
           : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar} />}</div>
         {(hub?.mostrarDiagnostico || (hub?.esquecidos.length ?? 0) > 0) && <div className="cp-ordem-2">
           {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
