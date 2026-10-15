@@ -10,6 +10,7 @@ import { href } from '../../util/rotas'
 import { confirmar, pedirTexto } from '../Confirmar'
 import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, haQuantoTempo, motivoFalhaEmail, porcentagem, rotuloOrigem, rotuloPagina } from './formatos'
 import { escreverRecado } from './recado'
+import { AdminAssinaturaUsuario } from './AdminAssinaturaUsuario'
 import { MODELOS, gravarModelosSalvos, lerModelosSalvos, modeloSugerido, preencher, type DadosModelo, type ModeloSalvo } from './modelosEmail'
 
 interface Detalhe {
@@ -38,9 +39,12 @@ const idade = (nascimento: string | null | undefined) => {
   return anos > 0 && anos < 110 ? anos : null
 }
 
+export type AbaFicha = 'resumo' | 'pagamentos'
+
 /** Ficha de uma pessoa: o que ela estudou e o que o administrador pode fazer por ela. */
-export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario; aoFechar: () => void }) {
+export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: { usuario: LinhaUsuario; aoFechar: () => void; abaInicial?: AbaFicha }) {
   const { indice } = usarIndice()
+  const [aba, definirAba] = useState<AbaFicha>(abaInicial)
   const [detalhe, definirDetalhe] = useState<Detalhe | null>(null)
   const [erro, definirErro] = useState('')
   // Sucesso e erro tinham a mesma cor verde: erro parecia confirmação.
@@ -191,7 +195,12 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
         <button type="button" className="botao-icone adm-ficha__fechar" onClick={aoFechar} aria-label="Fechar ficha"><Icone nome="fechar" tamanho={20} /></button>
       </header>
 
-      {erro ? <p role="alert" className="adm-alerta">{erro}</p> : !detalhe ? <p role="status">Carregando…</p> : <div className="empilha adm-ficha__corpo">
+      <div className="adm-filtros" role="group" aria-label="Partes da ficha">
+        <button type="button" className="adm-chip" aria-pressed={aba === 'resumo'} onClick={() => definirAba('resumo')}>Estudo e ações</button>
+        <button type="button" className="adm-chip" aria-pressed={aba === 'pagamentos'} onClick={() => definirAba('pagamentos')}>Assinatura e pagamentos</button>
+      </div>
+
+      {aba === 'pagamentos' ? <AdminAssinaturaUsuario idUsuario={usuario.id_usuario} email={usuario.email} /> : erro ? <p role="alert" className="adm-alerta">{erro}</p> : !detalhe ? <p role="status">Carregando…</p> : <div className="empilha adm-ficha__corpo">
         {aviso.texto && <p role={aviso.erro ? 'alert' : 'status'} className={'adm-nota adm-mensagem' + (aviso.erro ? ' adm-mensagem--erro' : '')}>{aviso.texto}</p>}
 
         <dl className="adm-cartao__dados adm-ficha__numeros">

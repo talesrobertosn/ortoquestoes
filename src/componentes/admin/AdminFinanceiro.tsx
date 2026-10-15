@@ -1,11 +1,13 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { chamarRpc } from '../../servicos/supabase'
 import { PLANOS as PRECOS, real } from '../../dados/planos'
 import { BarraComposicao, BarrasHorizontais, GraficoColunasEmpilhadas, type PontoEmpilhado } from './AdminGraficos'
 import { baixarCsv, porcentagem } from './formatos'
+import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente } from './pagamentos'
 import { TabelaMensal } from './AdminMensal'
 import {
   MES, NOME_MES, aReceberNoCartao, aReceberNoPix, cobrancas, dataCancelamento, mesAMes, meioDe, pagaSemCobranca, precoDe,
-  recorrentesNoCartao, renovacaoDoPix, renovaSozinha, somarMeses, vigente,
+  recorrentesNoCartao, renovacaoDoPix, renovaSozinha, somarMesChave, vigente, type CobrancaReal,
 } from './receita'
 
 export interface AssinaturaFinanceira {
@@ -39,14 +41,24 @@ const plural = (n: number, um: string, varios: string) => `${n} ${n === 1 ? um :
  * partir das assinaturas; o extrato oficial é o do Mercado Pago.
  */
 export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinaturas: AssinaturaFinanceira[]; usuarios: number | null; testes?: number }) {
-  const todas = useMemo(() => cobrancas(assinaturas), [assinaturas])
+  // Cobranças gravadas no banco (parte 23). Sem a RPC (404/PGRST202) ou com falha, segue a estimativa pelos planos.
+  const [reais, definirReais] = useState<CobrancaReal[] | null>(null)
+  const [semReais, definirSemReais] = useState<string | null>(null)
+  useEffect(() => {
+    let vivo = true
+    chamarRpc<CobrancaReal[]>('cobrancas_admin', {})
+      .then(lista => { if (vivo) { definirReais(lista); definirSemReais(null) } })
+      .catch(falha => { if (vivo) definirSemReais(funcaoAusente(falha) ? `Para usar os valores gravados no banco (Pix pelo valor pago, cartão pelo valor contratado), cole no Supabase a ${PARTE_COBRANCAS}.` : `As cobranças gravadas não carregaram (código: ${codigoDaFalha(falha)}); os valores abaixo são estimados pelos planos.`) })
+    return () => { vivo = false }
+  }, [assinaturas])
+  const todas = useMemo(() => cobrancas(assinaturas, reais), [assinaturas, reais])
 
   const d = useMemo(() => {
     const agora = new Date(), ms = agora.getTime()
-    const esteMes = MES(agora), mesPassado = MES(somarMeses(agora, -1))
-    // Recebido por mês, separado em cartão e Pix (últimos 12 meses).
+    const esteMes = MES(agora), mesPassado = somarMesChave(esteMes, -1)
+    // Recebido por mês (de Brasília), separado em cartão e Pix (últimos 12 meses).
     const porMes = new Map<string, [number, number]>()
-    for (let i = 11; i >= 0; i--) porMes.set(MES(somarMeses(agora, -i)), [0, 0])
+    for (let i = 11; i >= 0; i--) porMes.set(somarMesChave(esteMes, -i), [0, 0])
     for (const c of todas) { const m = porMes.get(MES(c.em)); if (m) m[c.meio === 'pix' ? 1 : 0] += c.valor }
     const totalMes = (k: string) => { const m = porMes.get(k); return m ? m[0] + m[1] : 0 }
     const total = todas.reduce((s, c) => s + c.valor, 0)
@@ -117,7 +129,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
   const pctPix = Math.round(taxaPix * 100)
 
   const semCobranca = useMemo(() => assinaturas.filter(pagaSemCobranca), [assinaturas])
-  const meses = useMemo(() => mesAMes(assinaturas, 12), [assinaturas])
+  const meses = useMemo(() => mesAMes(assinaturas, 12, new Date(), reais), [assinaturas, reais])
   const atual = meses[meses.length - 1], anterior = meses[meses.length - 2]
   const variacao = d.mesPassado ? Math.round(((d.esteMes - d.mesPassado) / d.mesPassado) * 100) : null
   const conversao = usuarios ? porcentagem(d.pagantes, usuarios) : null
@@ -126,10 +138,13 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-financeiro">
       <div className="adm-secao__cabeca"><div>
         <h2 id="adm-titulo-financeiro">Financeiro</h2>
-        <p>Valores brutos, reconstruídos a partir das assinaturas (cada cobrança pelo preço do plano; reembolsos descontados). Cartão renova sozinho; Pix é compra avulsa. Não descontam a taxa do Mercado Pago e não substituem o extrato dele.{testes > 0 && ` ${testes} assinatura(s) de teste do dono ficam de fora.`}</p>
+        <p>{reais
+          ? 'Valores brutos das cobranças gravadas no banco: Pix pelo valor pago, cartão pelo valor contratado no checkout. O banco guarda só a última cobrança de cada cartão; as renovações anteriores são reconstruídas a cada período do plano (marcadas como estimadas na planilha). Reembolsos descontados.'
+          : 'Valores brutos, reconstruídos a partir das assinaturas (cada cobrança pelo preço do plano; reembolsos descontados).'} Cartão renova sozinho; Pix é compra avulsa. Meses de Brasília. Não descontam a taxa do Mercado Pago e não substituem o extrato dele.{testes > 0 && ` ${testes} assinatura(s) de teste do dono ficam de fora.`}</p>
+        {semReais && <p className="adm-nota">{semReais}</p>}
       </div>
         <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-cobrancas-${new Date().toISOString().slice(0, 10)}.csv`,
-          ['Data', 'Plano', 'Valor', 'Meio', 'Tipo', 'Origem'], todas.map(c => [c.em.toLocaleDateString('pt-BR'), precoDe(c.plano)?.nome ?? c.plano, c.valor.toFixed(2).replace('.', ','), c.meio === 'pix' ? 'Pix' : 'Cartão', c.tipo === 'nova' ? 'Assinatura nova' : 'Renovação automática', c.estimada ? 'estimada (sem cobrança gravada)' : 'cobrança gravada']))}>Exportar cobranças</button>
+          ['Data', 'Plano', 'Valor', 'Meio', 'Tipo', 'Origem', 'Pagamento no Mercado Pago'], todas.map(c => [c.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' }), precoDe(c.plano)?.nome ?? c.plano, c.valor.toFixed(2).replace('.', ','), c.meio === 'pix' ? 'Pix' : 'Cartão', c.tipo === 'nova' ? 'Assinatura nova' : 'Renovação automática', c.estimada ? 'estimada (renovação reconstruída ou paga sem cobrança gravada)' : 'cobrança gravada', c.id_pagamento ?? '']))}>Exportar cobranças</button>
       </div>
 
       {semCobranca.length > 0 && <div className="adm-alerta" role="status">
