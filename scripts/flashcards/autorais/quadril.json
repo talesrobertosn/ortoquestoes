@@ -2,6 +2,498 @@
  "area": "quadril",
  "flashcards": [
   {
+   "id": "fc-quadril-0003-co1",
+   "questao": "quadril-0003",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia total do quadril, qual é a jump distance aproximada de uma cabeça de 36 mm?",
+   "resposta": "cerca de 18 mm",
+   "explicacao": "Jump distance = **raio** da cabeça: 28 mm dá cerca de 14 mm; 36 mm, **cerca de 18 mm**.",
+   "opcoes": [
+    "cerca de 18 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "cd82e27f4cd9",
+   "origem": "autoral",
+   "trecho": "Uma cabeça de 28 mm tem jump distance de cerca de 14 mm; uma de 36 mm, de cerca de 18 mm.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0003-co2",
+   "questao": "quadril-0003",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além de insertos com borda baixa, qual posição da taça diminui a jump distance?",
+   "resposta": "muito vertical",
+   "explicacao": "Diminuem a jump distance: taça com cobertura menor que meia esfera, inserto de borda baixa e taça **muito vertical**.",
+   "opcoes": [
+    "muito vertical"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "cd82e27f4cd9",
+   "origem": "autoral",
+   "trecho": "**O que diminui a jump distance**: taças com cobertura menor que meia esfera, insertos com borda baixa, ou a taça colocada muito vertical.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0009-co1",
+   "questao": "quadril-0009",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a corrosão na junção entre a cabeça e o colo, favorecida por cabeças grandes de metal?",
+   "resposta": "trunionose",
+   "explicacao": "**Trunionose:** corrosão na junção cabeça-colo, um dos preços das cabeças grandes de metal.",
+   "opcoes": [
+    "trunionose"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "743125a5fb29",
+   "origem": "autoral",
+   "trecho": "cabeças grandes de metal podem causar corrosão na junção entre a cabeça e o colo (a chamada trunionose).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0009-pc1",
+   "questao": "quadril-0009",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ATQ, a estabilidade depende da jump distance. De qual relação depende o arco de movimento antes do impacto?",
+   "resposta": "relação cabeça-colo",
+   "explicacao": "**Arco de movimento:** relação **cabeça-colo**. **Estabilidade:** jump distance (o raio da cabeça).",
+   "opcoes": [
+    "relação cabeça-colo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "743125a5fb29",
+   "origem": "autoral",
+   "trecho": "**Arco de movimento**: depende da **relação cabeça-colo**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0010-co1",
+   "questao": "quadril-0010",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No DAIR da infecção precoce da prótese, com o implante bem fixo, quais peças são trocadas?",
+   "resposta": "a cabeça e o forro de plástico",
+   "explicacao": "**DAIR:** desbridamento, antibiótico e manutenção do implante, trocando só as peças modulares: **a cabeça e o forro**.",
+   "opcoes": [
+    "a cabeça e o forro de plástico"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "8936614a5581",
+   "origem": "autoral",
+   "trecho": "trocando apenas as peças que se soltam, como a cabeça e o forro de plástico.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0010-co2",
+   "questao": "quadril-0010",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual antibiótico age melhor no biofilme de estafilococos, sempre associado a outro?",
+   "resposta": "rifampicina",
+   "explicacao": "A **rifampicina** penetra o biofilme estafilocócico, mas nunca é usada sozinha.",
+   "opcoes": [
+    "rifampicina"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "8936614a5581",
+   "origem": "autoral",
+   "trecho": "Alguns antibióticos agem melhor no biofilme, como a **rifampicina** para estafilococos, sempre associada a outro antibiótico.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0016-co1",
+   "questao": "quadril-0016",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além dos idosos e cardiopatas, em quais pacientes a síndrome da implantação do cimento é mais arriscada?",
+   "resposta": "fratura do colo do fêmur",
+   "explicacao": "Risco maior em idosos, em quem tem doença cardiopulmonar e nos operados por **fratura do colo do fêmur**.",
+   "opcoes": [
+    "fratura do colo do fêmur"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "d1f7c630ed4a",
+   "origem": "autoral",
+   "trecho": "O risco é maior em **idosos**, em pacientes operados por **fratura do colo do fêmur** e em quem já tem doença do coração ou do pulmão.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0016-co2",
+   "questao": "quadril-0016",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual cuidado de técnica cirúrgica reduz a síndrome da implantação do cimento na haste femoral?",
+   "resposta": "jato pulsátil",
+   "explicacao": "Lavar o canal com **jato pulsátil**, secá-lo e aliviar a pressão intraóssea; o anestesista hidrata e monitora.",
+   "opcoes": [
+    "jato pulsátil"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "d1f7c630ed4a",
+   "origem": "autoral",
+   "trecho": "**técnica cirúrgica**: lavar bem o canal com jato pulsátil, secá-lo e aliviar a pressão dentro do osso.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0027-co1",
+   "questao": "quadril-0027",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O offset femoral da prótese de quadril é o braço de alavanca de qual grupo muscular?",
+   "resposta": "abdutores",
+   "explicacao": "Offset = eixo da haste ao centro da cabeça: **braço de alavanca dos abdutores**.",
+   "opcoes": [
+    "abdutores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "66dc5cc0e4f4",
+   "origem": "autoral",
+   "trecho": "É o **braço de alavanca dos abdutores**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0027-tb1",
+   "questao": "quadril-0027",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ATQ, qual é a queixa típica do offset femoral aumentado demais?",
+   "resposta": "dor trocantérica",
+   "explicacao": "**Offset diminuído:** claudicação e instabilidade. **Aumentado demais:** **dor trocantérica**, sobrecarga e discrepância percebida.",
+   "opcoes": [
+    "dor trocantérica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "66dc5cc0e4f4",
+   "origem": "autoral",
+   "trecho": "| aumentado demais | dor trocantérica, sobrecarga na interface, discrepância percebida |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0028-ar1",
+   "questao": "quadril-0028",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Protrusão acetabular de um lado só combina com a pelve de Otto?",
+   "resposta": "causa secundária",
+   "explicacao": "Não. A pelve de Otto é **bilateral** e feminina; protrusão unilateral sugere **causa secundária** (trauma, infecção).",
+   "opcoes": [
+    "causa secundária"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "2d4576a4eaa6",
+   "origem": "autoral",
+   "trecho": "Protrusão de um lado só sugere uma causa secundária, como trauma ou infecção.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0028-co1",
+   "questao": "quadril-0028",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ATQ da protrusão acetabular, o que se coloca no fundo do acetábulo para trazer a taça à posição normal?",
+   "resposta": "enxerto ósseo",
+   "explicacao": "**Enxerto ósseo no fundo**, em geral da própria cabeça; nas protrusões graves, anéis de reforço.",
+   "opcoes": [
+    "enxerto ósseo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "2d4576a4eaa6",
+   "origem": "autoral",
+   "trecho": "é preciso colocar **enxerto ósseo no fundo** do acetábulo (geralmente usando a própria cabeça retirada) para trazer a taça de volta à posição normal;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0029-cl1",
+   "questao": "quadril-0029",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Crowe da displasia do quadril do adulto, qual subluxação define o tipo II?",
+   "resposta": "entre 50% e 75%",
+   "explicacao": "**Crowe I:** menos de 50%. **II:** **50% a 75%**. **III:** 75% a 100%. **IV:** mais de 100%, luxação alta.",
+   "opcoes": [
+    "menos de 50%",
+    "entre 50% e 75%",
+    "entre 75% e 100%",
+    "mais de 100%"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "a4d4ff8153a2",
+   "origem": "autoral",
+   "trecho": "**Crowe II**: entre 50% e 75%;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0029-cl2",
+   "questao": "quadril-0029",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Crowe, qual subluxação define o tipo IV, a luxação alta?",
+   "resposta": "mais de 100%",
+   "explicacao": "**Crowe IV:** **mais de 100%**, cabeça bem acima do acetábulo verdadeiro.",
+   "opcoes": [
+    "menos de 50%",
+    "entre 50% e 75%",
+    "entre 75% e 100%",
+    "mais de 100%"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "a4d4ff8153a2",
+   "origem": "autoral",
+   "trecho": "**Crowe IV**: mais de 100%, ou seja, uma **luxação alta**, com a cabeça bem acima do acetábulo verdadeiro.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0029-co1",
+   "questao": "quadril-0029",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ATQ do Crowe IV, qual osteotomia permite descer a cabeça ao acetábulo verdadeiro sem esticar o isquiático?",
+   "resposta": "osteotomia de encurtamento",
+   "explicacao": "**Osteotomia de encurtamento** subtrocantérica; a divisão fibular do isquiático é a que menos tolera o alongamento.",
+   "opcoes": [
+    "osteotomia de encurtamento"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "a4d4ff8153a2",
+   "origem": "autoral",
+   "trecho": "fazer uma **osteotomia de encurtamento** do fêmur logo abaixo do trocânter",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0032-co1",
+   "questao": "quadril-0032",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na displasia e nas revisões, quando não dá para pôr a taça no lugar anatômico, qual centro de rotação altera pouco as forças?",
+   "resposta": "centro alto medializado",
+   "explicacao": "O **centro alto medializado** é aceitável; o pior cenário é o centro **alto e lateral**.",
+   "opcoes": [
+    "centro alto medializado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "fc2c4f0e970e",
+   "origem": "autoral",
+   "trecho": "prefere-se subir o centro mas mantê-lo **medial** (o chamado centro alto medializado), que altera pouco as forças.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0038-co1",
+   "questao": "quadril-0038",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na taça cimentada, qual o papel do osso subcondral preservado na fresagem?",
+   "resposta": "base firme para o cimento",
+   "explicacao": "O subcondral, duro e rígido, é **base firme para o cimento**; retirado, o cimento se apoia no esponjoso, que deforma.",
+   "opcoes": [
+    "base firme para o cimento"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "e40883b68ce7",
+   "origem": "autoral",
+   "trecho": "Ela funciona como uma base firme para o cimento.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0038-co2",
+   "questao": "quadril-0038",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na cimentação da taça acetabular, como deve estar o leito ósseo?",
+   "resposta": "seco",
+   "explicacao": "Leito **seco**, sem sangue, camada uniforme de cimento, pequenos orifícios de ancoragem e taça não muito vertical.",
+   "opcoes": [
+    "seco"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "e40883b68ce7",
+   "origem": "autoral",
+   "trecho": "manter o leito **seco** (sem sangue) na hora de cimentar",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-quadril-0042-tb1",
    "questao": "quadril-0042",
    "area": "Quadril",
@@ -232,6 +724,225 @@
    "fonte": "43a8a5bd8cc7",
    "origem": "autoral",
    "trecho": "| Charnley | osteotomia trocantérica completa (clássica) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0054-pc1",
+   "questao": "quadril-0054",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Aumentar o offset femoral alonga o braço dos abdutores. Qual braço de alavanca é encurtado ao medializar o acetábulo?",
+   "resposta": "braço do peso do corpo",
+   "explicacao": "**Medializar a taça:** encurta o **braço do peso do corpo**. **Aumentar o offset:** alonga o braço dos abdutores.",
+   "opcoes": [
+    "braço do peso do corpo",
+    "braço dos abdutores"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "2736ab00429c",
+   "origem": "autoral",
+   "trecho": "Isso **encurta o braço do peso do corpo**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0055-co1",
+   "questao": "quadril-0055",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas zonas de Gruen, qual zona corresponde ao calcar, onde o stress shielding é maior?",
+   "resposta": "zona 7",
+   "explicacao": "**Zona 7** (calcar, proximal e medial) perde mais densidade; a zona 1, proximal lateral, perde menos.",
+   "opcoes": [
+    "zona 1",
+    "zona 7"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "81479a74039f",
+   "origem": "autoral",
+   "trecho": "Na divisão do fêmur em zonas usada para avaliar próteses (as **zonas de Gruen**), essa é a **zona 7**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0055-pc1",
+   "questao": "quadril-0055",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Hastes flexíveis de titânio reduzem o stress shielding. Hastes rígidas de qual liga o aumentam?",
+   "resposta": "cromo-cobalto",
+   "explicacao": "Hastes **rígidas** (**cromo-cobalto**) e grossas desviam mais carga e blindam o fêmur proximal.",
+   "opcoes": [
+    "cromo-cobalto",
+    "titânio"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "81479a74039f",
+   "origem": "autoral",
+   "trecho": "hastes muito **rígidas** (de cromo-cobalto) e **grossas**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0057-co1",
+   "questao": "quadril-0057",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ausência ou paralisia de qual grupo muscular é contraindicação absoluta da artroplastia total do quadril?",
+   "resposta": "músculos abdutores",
+   "explicacao": "Sem **abdutores** a prótese fica instável; também absolutas: infecção ativa, anestesia inviável e Charcot grave.",
+   "opcoes": [
+    "músculos abdutores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "81dce4426987",
+   "origem": "autoral",
+   "trecho": "ausência ou paralisia dos **músculos abdutores**, sem os quais a prótese fica instável;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0059-co1",
+   "questao": "quadril-0059",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual classificação gradua a ossificação heterotópica após a artroplastia do quadril?",
+   "resposta": "Brooker",
+   "explicacao": "**Brooker**, de I a IV; só os graus III e IV costumam limitar o movimento.",
+   "opcoes": [
+    "Brooker"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "fe4f4d11f936",
+   "origem": "autoral",
+   "trecho": "Ela é graduada pela **classificação de Brooker**, de I a IV.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0059-co2",
+   "questao": "quadril-0059",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o maior fator de risco do paciente para ossificação heterotópica após a ATQ?",
+   "resposta": "ter tido ossificação heterotópica antes",
+   "explicacao": "O maior: **ossificação heterotópica prévia**. Outros: espondilite anquilosante, DISH, sexo masculino, artrose com muitos osteófitos.",
+   "opcoes": [
+    "ter tido ossificação heterotópica antes"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "fe4f4d11f936",
+   "origem": "autoral",
+   "trecho": "**do paciente**: ter tido ossificação heterotópica antes (o maior de todos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0059-co3",
+   "questao": "quadril-0059",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual anti-inflamatório se usa por uma a duas semanas para prevenir a ossificação heterotópica de alto risco?",
+   "resposta": "indometacina",
+   "explicacao": "**Indometacina** por cerca de uma a duas semanas, ou radioterapia em dose única perioperatória.",
+   "opcoes": [
+    "indometacina"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "fe4f4d11f936",
+   "origem": "autoral",
+   "trecho": "um anti-inflamatório, a **indometacina**, por cerca de uma a duas semanas;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-quadril-0059-co4",
+   "questao": "quadril-0059",
+   "area": "Quadril",
+   "areaId": "quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtemas": [
+    "Artroplastia total: componentes e fixação"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ossificação heterotópica sintomática, depois de quanto tempo se faz a ressecção?",
+   "resposta": "6 a 12 meses",
+   "explicacao": "Só após o osso **amadurecer** (em geral **6 a 12 meses**), sempre com profilaxia de recidiva.",
+   "opcoes": [
+    "6 a 12 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "fe4f4d11f936",
+   "origem": "autoral",
+   "trecho": "retirar o osso só nos casos graves com sintomas, depois que ele amadureceu (em geral 6 a 12 meses)",
    "criadoEm": "2026-10-15"
   },
   {
