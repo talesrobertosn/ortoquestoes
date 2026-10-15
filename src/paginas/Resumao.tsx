@@ -16,6 +16,8 @@ import '../estilos/paginas/Resumao.css'
 import { irParaSecao, VoltarAoTopo } from '../componentes/IndicePagina'
 import { usarRota } from '../util/rotas'
 import { CHAVE_RESUMAO_HOJE, comAreaLida, RESUMAO_HOJE_VAZIO, SEGUNDOS_LEITURA, type ResumaoHoje } from '../estado/resumaoLido'
+import { enviarMarcas } from '../conta/cronograma'
+import { hojeBR } from '../util/dia'
 
 /** Áreas que quem não assina vê inteiras, como amostra. */
 const AREAS_AMOSTRA = 1
@@ -83,7 +85,11 @@ export function Resumao() {
   }, [tentativa])
 
   const [, definirLidoHoje] = usarArmazenado<ResumaoHoje>(CHAVE_RESUMAO_HOJE, RESUMAO_HOJE_VAZIO)
-  const marcarLidaHoje = (slug: string) => definirLidoHoje((atual) => comAreaLida(atual, slug))
+  const marcarLidaHoje = (slug: string) => {
+    definirLidoHoje((atual) => comAreaLida(atual, slug))
+    // Vai também para o plano no servidor: o cronograma dos outros aparelhos mostra o resumão como lido.
+    if (premium) enviarMarcas({ em: hojeBR(), resumao: [slug] }).catch(() => undefined)
+  }
 
   // Vindo do cronograma (#/resumao?tema=joelho): abre e rola até a área do dia. O roteador
   // é por hash, então nada de âncora "#rz-joelho": a área é aberta e rolada pelo código.

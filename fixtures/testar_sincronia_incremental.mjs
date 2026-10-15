@@ -136,8 +136,10 @@ async function principal() {
       const c = await celular.ler(tipo), p = await pc.ler(tipo)
       assert.deepEqual(c, p, `celular e PC iguais em ${tipo}`)
     }
-    assert.deepEqual((await celular.ler('respondidas')).q7, { c: true, q: 8000 }, 'na resposta vale a mais recente')
-    assert.deepEqual(servidor('respondidas').q7, { c: true, q: 8000 })
+    // Na resposta, a mais recente decide o estado, e a outra tentativa não se perde.
+    const juntada = { c: true, q: 8000, tentativas: 2, acertos: 1, erros: 1, historico: [{ em: 7000, correta: false }, { em: 8000, correta: true }] }
+    assert.deepEqual((await celular.ler('respondidas')).q7, juntada, 'na resposta vale a mais recente, com as duas tentativas')
+    assert.deepEqual(servidor('respondidas').q7, juntada)
     assert.deepEqual(await pc.ler('favoritos'), ['q10'], 'favorito do celular chegou ao PC')
     assert.deepEqual(await celular.ler('notas'), { q11: 'anotação do PC' }, 'nota do PC chegou ao celular')
     for (const a of [celular, pc]) {

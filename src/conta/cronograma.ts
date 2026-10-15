@@ -3,6 +3,7 @@ import { chamarRpc, ErroRpc } from '../servicos/supabase'
 import { gravar, ler } from '../estado/armazenamento'
 import { hojeBR, somarDias } from '../util/dia'
 import { incluiSimulados, opcoesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
+import { opcoesComMarcas, type MarcasDia } from './marcasDia'
 
 /**
  * Leitura e gravação do cronograma no servidor. O plano mora numa linha só
@@ -179,4 +180,13 @@ export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPl
 /** Grava o registro de hoje se mudou, sobre o plano atual do servidor. Uma falha sobe para quem chamou. */
 export async function guardarAdiantamento(calculo: Parameters<typeof opcoesComAdiantamento>[1], pedido?: number): Promise<PlanoSalvo | null> {
   return salvarOpcoes((atual) => opcoesComAdiantamento(atual, calculo, pedido))
+}
+
+/**
+ * Grava no plano o que este aparelho marcou hoje (resumão, flashcards,
+ * mini-simulado) e o servidor ainda não tem; ver conta/marcasDia.ts. Relê o
+ * plano antes, então o que outro aparelho marcou no meio tempo não se perde.
+ */
+export async function enviarMarcas(locais: MarcasDia): Promise<void> {
+  await salvarOpcoes((atual) => opcoesComMarcas(atual, locais))
 }

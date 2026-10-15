@@ -3,7 +3,7 @@ import { useCallback } from 'react'
 import type { EstadoSessao, Filtros, Letra, Resposta } from '../dados/tipos'
 import { ROTULO_AREA } from '../dados/tipos'
 import { usarArmazenado } from './usarArmazenado'
-import { gravar, ler } from './armazenamento'
+import { EVENTO_DADOS, gravar, ler, type MudancaDados } from './armazenamento'
 import { confirmar } from '../componentes/Confirmar'
 import { navegar } from '../util/rotas'
 
@@ -150,7 +150,8 @@ export function usarSessao() {
    */
   const liberarParaNova = useCallback(async (opcoes: OpcoesSessao = {}) => {
       const atual = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
-      const respondidas = atual ? Object.keys(atual.respostas).length : 0
+      // Só as respondidas aqui: as que vieram de outro aparelho já estão no histórico de lá.
+      const respondidas = atual ? Object.values(atual.respostas).filter((r) => !r.outroAparelho).length : 0
       // Respondida por inteiro mas sem "Concluir"/"Entregar" ainda conta: sem
       // concluidaEm, ela não está no histórico e sumiria sem aviso.
       const emAndamento = !!atual && !atual.concluidaEm && respondidas > 0
@@ -199,6 +200,70 @@ function registrarRespondida(id: string, correta: boolean | null, confianca: 'se
   gravar(CHAVE_RESPONDIDAS, mapa)
 }
 
+/**
+ * Traz para a sessão em andamento as respostas que chegaram de outro aparelho.
+ *
+ * A sessão (`sessao:atual`) é deste aparelho e não sobe para a nuvem; as
+ * respostas (`respondidas`) sobem. Sem esta conciliação, a sessão do
+ * cronograma começada aqui continuava oferecendo "Continuar: faltam N" com as
+ * mesmas questões que a pessoa já tinha feito no outro aparelho, e ela as
+ * refazia. Regras:
+ * - conta a tentativa feita depois que a sessão começou (em qualquer aparelho);
+ * - na sessão de questões novas do cronograma (e no diagnóstico), que só tem
+ *   questões que este aparelho via como não feitas, qualquer resposta conta:
+ *   a sessão pode ter sido montada antes de a sincronização trazer o que o
+ *   outro aparelho fez;
+ * - Simulado Nacional e sessões concluídas ficam como estão.
+ * Devolve a sessão nova, ou null quando nada muda.
+ */
+export function reconciliarSessao(sessao: EstadoSessao | null, respondidas: Record<string, RegistroQuestao>): EstadoSessao | null {
+  if (!sessao || sessao.concluidaEm || sessao.nacional || !Array.isArray(sessao.ids)) return null
+  const soNovas = (sessao.origem === 'cronograma' || sessao.origem === 'diagnostico') && !sessao.simulado
+  let respostas: Record<string, Resposta> | null = null
+  for (const id of sessao.ids) {
+    if (sessao.respostas[id]) continue
+    const r = respondidas[id]
+    if (!r || typeof r !== 'object') continue
+    const tentativas = r.historico?.length ? r.historico : [{ em: r.q, correta: r.c, confianca: r.confianca ?? 'seguro' }]
+    const ultima = [...tentativas].reverse().find((t) => t.em >= sessao.criadaEm) ?? (soNovas ? tentativas[tentativas.length - 1] : undefined)
+    if (!ultima) continue
+    respostas ??= { ...sessao.respostas }
+    respostas[id] = {
+      escolhida: ultima.em === r.q && r.m ? r.m as Letra : null,
+      correta: ultima.correta,
+      segundos: 0,
+      confianca: ultima.confianca ?? r.confianca,
+      outroAparelho: true,
+    }
+  }
+  if (!respostas) return null
+  // Parada numa questão já respondida, com as seguintes feitas no outro aparelho:
+  // "Continuar" leva direto à próxima que falta, sem passar uma por uma.
+  let posicao = sessao.posicao
+  const atual = sessao.ids[posicao]
+  if (atual && respostas[atual]) {
+    const proxima = sessao.ids.findIndex((id, i) => i > posicao && !respostas![id])
+    const pulou = sessao.ids.slice(posicao + 1, proxima < 0 ? undefined : proxima).some((id) => respostas![id]?.outroAparelho && !sessao.respostas[id])
+    if (proxima > posicao && pulou) posicao = proxima
+  }
+  return { ...sessao, respostas, posicao }
+}
+
+/** Confere a sessão deste aparelho sempre que chegam respostas da nuvem (e uma vez ao começar). */
+export function vigiarSessaoEntreAparelhos(): () => void {
+  const conferir = () => {
+    const nova = reconciliarSessao(ler<EstadoSessao | null>(CHAVE_SESSAO, null), lerRespondidas())
+    if (nova) gravar(CHAVE_SESSAO, nova)
+  }
+  const aoMudar = (evento: Event) => {
+    const m = (evento as CustomEvent<MudancaDados>).detail
+    if (m.chave === CHAVE_RESPONDIDAS && m.origem === 'nuvem') conferir()
+  }
+  window.addEventListener(EVENTO_DADOS, aoMudar)
+  conferir()
+  return () => window.removeEventListener(EVENTO_DADOS, aoMudar)
+}
+
 export function lerRespondidas(): Record<string, RegistroQuestao> {
   return ler(CHAVE_RESPONDIDAS, {})
 }
@@ -215,7 +280,9 @@ export function descreverFiltros(filtros: Filtros): string {
 }
 
 function registrarHistorico(sessao: EstadoSessao) {
-  const respostas = Object.values(sessao.respostas)
+  // As que vieram de outro aparelho já entraram no histórico de lá.
+  const respostas = Object.values(sessao.respostas).filter((r) => !r.outroAparelho)
+  if (!respostas.length && Object.keys(sessao.respostas).length) return
   const resumo: ResumoHistorico = {
     id: sessao.id,
     criadaEm: sessao.criadaEm,

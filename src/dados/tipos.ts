@@ -275,6 +275,8 @@ export interface Resposta {
   correta: boolean | null
   segundos: number
   confianca?: 'seguro' | 'duvida' | 'chute'
+  /** Respondida em outro aparelho (ou aba) e trazida pela sincronização: não conta de novo no histórico. */
+  outroAparelho?: boolean
 }
 
 export interface EstadoSessao {
