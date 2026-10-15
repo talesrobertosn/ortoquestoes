@@ -16,12 +16,24 @@ export interface Rota {
 /** Lê um caminho como "/flashcards?x=1" no mesmo formato da rota atual. */
 export function rotaDe(texto: string): Rota {
   const bruto = texto.replace(/^#/, '') || '/'
-  const [caminho, consulta = ''] = bruto.split('?')
+  // Só o primeiro "?" separa a consulta; uma busca pode conter "?" também.
+  const corte = bruto.indexOf('?')
+  const caminho = corte < 0 ? bruto : bruto.slice(0, corte)
+  const consulta = corte < 0 ? '' : bruto.slice(corte + 1)
   const limpo = caminho.replace(/\/+$/, '') || '/'
   return {
     caminho: limpo,
-    segmentos: limpo.split('/').filter(Boolean).map(decodeURIComponent),
+    segmentos: limpo.split('/').filter(Boolean).map(decodificar),
     consulta: new URLSearchParams(consulta),
+  }
+}
+
+/** Um "%" solto num link colado não derruba o site: o trecho fica como veio. */
+function decodificar(segmento: string): string {
+  try {
+    return decodeURIComponent(segmento)
+  } catch {
+    return segmento
   }
 }
 
