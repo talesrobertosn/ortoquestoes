@@ -24,6 +24,7 @@ import json
 import re
 import shutil
 import sys
+from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -212,10 +213,13 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
 <meta property="og:image" content="{SITE}previa-orto-questoes-coluna.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Orto Questões: questões de ortopedia comentadas para TEOT, TARO e R4">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#14655e">
 <link rel="icon" href="{raiz}favicon.svg?v=3" type="image/svg+xml">
 <link rel="icon" href="{raiz}favicon-32.png?v=3" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="{raiz}apple-touch-icon.png?v=3" sizes="180x180">
+<link rel="manifest" href="{raiz}manifest.webmanifest">
 <style>{ESTILO}</style>
 {extra}
 </head>
@@ -225,9 +229,10 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
   <nav>
     <a href="{raiz}questoes/">Assuntos</a>
     <a href="{raiz}teot/">TEOT</a>
+    <a href="{raiz}curso-preparatorio-teot/">Curso preparatório</a>
     <a href="{raiz}guias/">Guias de estudo</a>
     <a href="{raiz}#/treinar">Treinar</a>
-    <a href="{raiz}#/sobre">O projeto</a>
+    <a href="{raiz}sobre/">Sobre</a>
   </nav>
 </div></header>
 <main class="envoltorio">"""
@@ -251,6 +256,9 @@ def rodape(raiz: str = "../") -> str:
     · <a href="{raiz}simulado-teot/">Simulados</a>
     · <a href="{raiz}curso-ortopedia-r1/">Estudo no R1</a>
     · <a href="{raiz}flashcards-ortopedia/">Flashcards</a>
+    · <a href="{raiz}curso-preparatorio-teot/">Curso preparatório para o TEOT</a>
+    · <a href="{raiz}guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a>
+    · <a href="{raiz}sobre/">Sobre o Orto Questões</a>
     · <a href="https://www.instagram.com/ortoquestoes/">@ortoquestoes</a>
   </p>
 </footer>
@@ -306,49 +314,104 @@ def montar_questao(questao: dict, comentario: dict, raiz: str = "../") -> str:
     return "\n".join(partes)
 
 
+_DIMENSOES: dict[str, str] = {}
+
+
+def dimensoes(arquivo: str) -> str:
+    """width/height da figura, para o navegador reservar o espaço antes de baixar
+    (sem isso o texto pula quando a imagem chega). Sem Pillow, fica sem."""
+    if arquivo not in _DIMENSOES:
+        try:
+            from PIL import Image  # type: ignore
+
+            with Image.open(DIR_PUBLICO / "imagens" / arquivo) as imagem:
+                largura, altura = imagem.size
+            _DIMENSOES[arquivo] = f' width="{largura}" height="{altura}"'
+        except Exception:  # noqa: BLE001 — sem Pillow ou arquivo ausente: segue sem as medidas
+            _DIMENSOES[arquivo] = ""
+    return _DIMENSOES[arquivo]
+
+
 def figuras(questao: dict, raiz: str) -> str:
     saida = []
     for imagem in questao.get("imagens") or []:
         legenda = imagem.get("legenda") or f"Figura da questão {questao['id']}"
         saida.append(
-            f'<figure><img src="{raiz}imagens/{esc(imagem["arquivo"])}" alt="{html.escape(legenda, quote=True)}" loading="lazy">'
+            f'<figure><img src="{raiz}imagens/{esc(imagem["arquivo"])}" alt="{html.escape(legenda, quote=True)}"{dimensoes(imagem["arquivo"])} loading="lazy" decoding="async">'
             + (f"<figcaption>{esc(imagem['legenda'])}</figcaption>" if imagem.get("legenda") else "")
             + "</figure>"
         )
     return "\n".join(saida)
 
 
-def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict | None, proxima: dict | None) -> str:
+SUFIXO_TITULO = " | Orto Questões"
+
+
+def rotulo_curto(questao: dict) -> str:
+    """Origem em poucas palavras, para o título: "TEOT 2024", "simulado padrão TARO"."""
+    if questao.get("simulado"):
+        return f"simulado padrão {questao['prova']}" if questao.get("prova") else "simulado"
+    return " ".join(filter(None, [questao.get("prova"), str(questao.get("ano") or "")])).strip()
+
+
+def titulo_questao(questao: dict, tema: dict, nivel: int = 0) -> str:
+    """Título com o assunto e a origem ("TEOT 2024" é o que muita gente digita).
+
+    Nível 0: curto, porque o Google mostra uns 60 caracteres. Se dois títulos
+    coincidirem, o nível 1 mostra mais do enunciado e o nível 2 acrescenta o
+    identificador: título repetido divide o clique e confunde o buscador sobre
+    qual página mostrar."""
+    subtema = (questao.get("subtemas") or [tema["nome"]])[0]
+    rotulo = rotulo_curto(questao)
+    marca = f" · {questao['id']}" if nivel >= 2 else ""
+    cabeca = f"{subtema} ({rotulo})" if rotulo else subtema
+    limite = 62 if nivel == 0 else 100
+    return resumir(f"{cabeca}: {questao['enunciado']}", limite - len(marca)) + marca + SUFIXO_TITULO
+
+
+def descricao_questao(questao: dict, tema: dict, desempate: bool = False) -> str:
+    """Descrição com a origem e o começo do enunciado; o id só desempata."""
+    origem = origem_da_questao(questao)
+    fim = f" Questão {questao['id']}." if desempate else ""
+    return resumir(
+        f"Questão de {tema['nome'].lower()}{' (' + origem + ')' if origem else ''} com gabarito e conceito-chave: {questao['enunciado']}",
+        158 - len(fim),
+    ) + fim
+
+
+def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict | None, proxima: dict | None,
+                   nivel_titulo: int = 0, desempatar_descricao: bool = False) -> str:
     """Uma página por questão: enunciado, alternativas, gabarito e conceito-chave.
     A explicação alternativa por alternativa fica no site, a um clique."""
     raiz = "../../"
     slug = tema["slug"]
     subtema = (questao.get("subtemas") or [tema["nome"]])[0]
     origem = origem_da_questao(questao)
-    titulo = resumir(f"{subtema}: {questao['enunciado']}", 64) + " | Questão comentada | Orto Questões"
-    descricao = resumir(
-        f"Questão de {tema['nome'].lower()}{' (' + origem + ')' if origem else ''} com gabarito e conceito-chave: {questao['enunciado']}",
-        158,
-    )
+    titulo = titulo_questao(questao, tema, nivel_titulo)
+    descricao = descricao_questao(questao, tema, desempatar_descricao)
     caminho = f"questoes/{slug}/{questao['id']}.html"
     gabarito = questao.get("gabarito")
     textos = {a["letra"]: a["texto"] for a in questao.get("alternativas") or []}
+    rotulo = rotulo_curto(questao)
     migalhas = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Assuntos", "item": f"{SITE}questoes/"},
-            {"@type": "ListItem", "position": 2, "name": tema["nome"], "item": f"{SITE}questoes/{slug}.html"},
-            {"@type": "ListItem", "position": 3, "name": resumir(subtema, 60), "item": f"{SITE}{caminho}"},
+            {"@type": "ListItem", "position": 1, "name": "Orto Questões", "item": SITE},
+            {"@type": "ListItem", "position": 2, "name": "Questões por assunto", "item": f"{SITE}questoes/"},
+            {"@type": "ListItem", "position": 3, "name": tema["nome"], "item": f"{SITE}questoes/{slug}.html"},
+            {"@type": "ListItem", "position": 4, "name": resumir(subtema + (f" ({rotulo})" if rotulo else ""), 70),
+             "item": f"{SITE}{caminho}"},
         ],
     }
     extra = '<script type="application/ld+json">' + json.dumps(migalhas, ensure_ascii=False) + "</script>"
     corpo = [topo(titulo, descricao, caminho, extra, raiz)]
     corpo.append(
-        f'<nav class="migalhas meta"><a href="{raiz}questoes/">Assuntos</a> › '
+        f'<nav class="migalhas meta"><a href="{raiz}">Orto Questões</a> › <a href="{raiz}questoes/">Assuntos</a> › '
         f'<a href="{raiz}questoes/{slug}.html">{esc(tema["nome"])}</a> › {esc(subtema)}</nav>'
     )
-    corpo.append(f"<h1>Questão de {esc(subtema.lower() if subtema.isupper() else subtema)}</h1>")
+    nome_h1 = subtema.lower() if subtema.isupper() else subtema
+    corpo.append(f"<h1>Questão de {esc(nome_h1)}{' (' + esc(origem) + ')' if origem else ''}</h1>")
     rotulos = [tema["nome"], subtema] + ([origem] if origem else [])
     corpo.append('<p class="etiquetas">' + "".join(f"<span>{esc(r)}</span>" for r in dict.fromkeys(rotulos)) + "</p>")
     corpo.append('<article class="questao">')
@@ -386,26 +449,51 @@ def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict |
     return "\n".join(corpo)
 
 
-def dados_estruturados(itens: list[tuple[dict, dict]]) -> str:
-    """FAQPage: a forma que o buscador entende para pergunta com resposta."""
-    perguntas = []
-    for questao, comentario in itens[:10]:
-        resposta = texto_puro(" ".join(
-            filter(None, [comentario.get("correta"), comentario.get("conceito")])
-        ))
-        perguntas.append(
-            {
-                "@type": "Question",
-                "name": questao["enunciado"][:300],
-                "acceptedAnswer": {"@type": "Answer", "text": resposta[:1200]},
-            }
-        )
-    bloco = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": perguntas}
-    return (
-        '<script type="application/ld+json">'
-        + json.dumps(bloco, ensure_ascii=False)
-        + "</script>"
-    )
+def ld(bloco: dict) -> str:
+    return '<script type="application/ld+json">' + json.dumps(bloco, ensure_ascii=False) + "</script>"
+
+
+def migalhas_ld(*itens: tuple[str, str]) -> dict:
+    """BreadcrumbList a partir de (nome, caminho relativo ao site)."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": nome, "item": f"{SITE}{caminho}"}
+            for i, (nome, caminho) in enumerate((("Orto Questões", ""),) + itens, start=1)
+        ],
+    }
+
+
+def dados_estruturados(tema: dict, titulo: str, resumo: str, itens: list[tuple[dict, dict]]) -> str:
+    """Página de assunto: CollectionPage com a lista das questões em destaque.
+
+    Antes era FAQPage com o enunciado como pergunta. Questão de prova não é
+    pergunta frequente escrita pelo site (é o que a regra do Google pede para
+    FAQPage), e desde 2023 o resultado com FAQ só aparece para sites de governo
+    e de saúde: a marcação não ajudava e podia ser lida como abuso."""
+    caminho = f"questoes/{tema['slug']}.html"
+    colecao = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": f"{SITE}{caminho}#pagina",
+        "url": f"{SITE}{caminho}",
+        "name": titulo,
+        "description": resumo,
+        "inLanguage": "pt-BR",
+        "isPartOf": {"@type": "WebSite", "@id": f"{SITE}#website", "name": "Orto Questões", "url": SITE},
+        "about": tema["nome"],
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": len(itens),
+            "itemListElement": [
+                {"@type": "ListItem", "position": i, "url": f"{SITE}questoes/{tema['slug']}/{q['id']}.html",
+                 "name": resumir(q["enunciado"], 110)}
+                for i, (q, _) in enumerate(itens, start=1)
+            ],
+        },
+    }
+    return ld(colecao) + "\n" + ld(migalhas_ld(("Questões por assunto", "questoes/"), (tema["nome"], caminho)))
 
 
 def principal() -> int:
@@ -415,27 +503,41 @@ def principal() -> int:
     gerados: list[tuple[str, str, int, int]] = []
     total_paginas = 0
 
+    # 1º passo: o que vira página. Uma por questão comentada; fica de fora só o
+    # que não se sustenta fora do site: anulada e figura ainda não recuperada.
+    preparados = []
     for tema in taxonomia["temas"]:
-        slug = tema["slug"]
-        dados = ler_json(DIR_TEMAS / f"{slug}.json", None)
-        comentarios = ler_json(DIR_COMENTARIOS / f"{slug}.json", {}) or {}
+        dados = ler_json(DIR_TEMAS / f"{tema['slug']}.json", None)
+        comentarios = ler_json(DIR_COMENTARIOS / f"{tema['slug']}.json", {}) or {}
         if not dados or not comentarios:
             continue
-        titulo_pagina, resumo, abertura = TEXTOS.get(slug, (
-            f"Questões de {tema['nome'].lower()}",
-            f"Questões de prova de {tema['nome'].lower()}, comentadas alternativa por alternativa.",
-            f"Questões de provas anteriores de {tema['nome'].lower()}, com gabarito e comentário.",
-        ))
-
-        # Uma página por questão comentada. Fica de fora só o que não se
-        # sustenta fora do site: anulada e figura que ainda não foi recuperada.
         publicaveis = [
-            dict(q, tema_slug=slug)
+            dict(q, tema_slug=tema["slug"])
             for q in dados["questoes"]
             if q["id"] in comentarios and not q.get("anulada") and not q.get("figuraPendente")
             # cópia de outra questão: uma página só, a da questão mantida
             and not q.get("duplicataDe")
         ]
+        preparados.append((tema, dados, comentarios, publicaveis))
+
+    # Títulos e descrições únicos em todo o acervo (ver titulo_questao).
+    todas = [(q, tema) for tema, _, _, publicaveis in preparados for q in publicaveis]
+    nivel: dict[str, int] = {q["id"]: 0 for q, _ in todas}
+    for _ in range(2):
+        contagem = Counter(titulo_questao(q, t, nivel[q["id"]]) for q, t in todas)
+        for q, t in todas:
+            if contagem[titulo_questao(q, t, nivel[q["id"]])] > 1:
+                nivel[q["id"]] += 1
+    contagem = Counter(descricao_questao(q, t) for q, t in todas)
+    desempatar = {q["id"] for q, t in todas if contagem[descricao_questao(q, t)] > 1}
+
+    for tema, dados, comentarios, publicaveis in preparados:
+        slug = tema["slug"]
+        titulo_pagina, resumo, abertura = TEXTOS.get(slug, (
+            f"Questões de {tema['nome'].lower()}",
+            f"Questões de prova de {tema['nome'].lower()}, comentadas alternativa por alternativa.",
+            f"Questões de provas anteriores de {tema['nome'].lower()}, com gabarito e comentário.",
+        ))
         pasta = DIR_SAIDA / slug
         if pasta.exists():
             shutil.rmtree(pasta)
@@ -444,7 +546,8 @@ def principal() -> int:
             anterior = publicaveis[i - 1] if i > 0 else None
             proxima = publicaveis[i + 1] if i + 1 < len(publicaveis) else None
             (pasta / f"{questao['id']}.html").write_text(
-                pagina_questao(questao, comentarios[questao["id"]], tema, anterior, proxima), encoding="utf-8"
+                pagina_questao(questao, comentarios[questao["id"]], tema, anterior, proxima,
+                               nivel[questao["id"]], questao["id"] in desempatar), encoding="utf-8"
             )
         if PAGINAS_DE_QUESTAO:
             total_paginas += len(publicaveis)
@@ -455,7 +558,8 @@ def principal() -> int:
         titulo = f"{titulo_pagina} comentadas | Orto Questões"
         caminho = f"questoes/{slug}.html"
 
-        corpo = [topo(titulo, resumo, caminho, dados_estruturados(itens) if itens else "")]
+        corpo = [topo(titulo, resumo, caminho, dados_estruturados(tema, titulo, resumo, itens))]
+        corpo.append(f'<nav class="migalhas meta"><a href="../">Orto Questões</a> › <a href="./">Assuntos</a> › {esc(tema["nome"])}</nav>')
         corpo.append(f"<h1>{esc(titulo_pagina)} comentadas</h1>")
         corpo.append(f"<p>{esc(abertura)}</p>")
         if PAGINAS_DE_QUESTAO:
@@ -523,19 +627,39 @@ def principal() -> int:
         gerados.append((slug, tema["nome"], len(publicaveis), len(dados["questoes"])))
 
     # Índice das páginas por assunto.
-    titulo = "Banco de questões de ortopedia comentadas por assunto | Orto Questões (OrtoQuestões)"
+    titulo = "Questões de ortopedia comentadas por assunto | Orto Questões"
     resumo = (
-        "Banco de questões de ortopedia e traumatologia: provas anteriores de TEOT, TARO e ENARE R4 "
-        "comentadas e organizadas por assunto, com gabarito e conceito-chave."
+        "Questões de ortopedia e traumatologia por assunto: provas anteriores de TEOT, TARO e ENARE R4 "
+        "com gabarito da banca e conceito-chave, no Orto Questões (OrtoQuestões)."
     )
-    corpo = [topo(titulo, resumo, "questoes/")]
-    corpo.append("<h1>Banco de questões de ortopedia comentadas, por assunto</h1>")
+    lista_temas = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": f"{SITE}questoes/#pagina",
+        "url": f"{SITE}questoes/",
+        "name": titulo,
+        "description": resumo,
+        "inLanguage": "pt-BR",
+        "isPartOf": {"@type": "WebSite", "@id": f"{SITE}#website", "name": "Orto Questões", "url": SITE},
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": len(gerados),
+            "itemListElement": [
+                {"@type": "ListItem", "position": i, "url": f"{SITE}questoes/{slug}.html", "name": nome}
+                for i, (slug, nome, _, _) in enumerate(gerados, start=1)
+            ],
+        },
+    }
+    corpo = [topo(titulo, resumo, "questoes/", ld(lista_temas) + "\n" + ld(migalhas_ld(("Questões por assunto", "questoes/"))))]
+    corpo.append('<nav class="migalhas meta"><a href="../">Orto Questões</a> › Assuntos</nav>')
+    corpo.append("<h1>Questões de ortopedia comentadas, por assunto</h1>")
     corpo.append(
         "<p>O Orto Questões (também escrito OrtoQuestões) reúne questões de provas anteriores de ortopedia e traumatologia "
         "(TEOT, TARO, R4 do ENARE e outras), organizadas por assunto. Cada questão traz o "
         "enunciado original, o gabarito da banca e um comentário que explica o conceito e "
         "percorre as alternativas. No site dá para treinar com filtros, revisar no momento "
-        "certo e acompanhar o desempenho.</p>"
+        "certo e acompanhar o desempenho. Para conhecer as provas do acervo e como o treino funciona, veja a página do "
+        '<a href="../banco-de-questoes-ortopedia/">banco de questões de ortopedia</a>.</p>'
     )
     corpo.append(
         '<a class="acao" href="../#/treinar">Começar a treinar</a>' if PAGINAS_DE_QUESTAO

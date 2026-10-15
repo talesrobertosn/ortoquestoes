@@ -8,8 +8,10 @@ fragmento: para ele o site inteiro é a raiz. As páginas por assunto e por
 questão (gerar_paginas_seo.py) cobrem quem procura um tema específico; estas
 cobrem quem procura o site pelo que ele é: "banco de questões de ortopedia",
 "TEOT", "questões do TARO", "curso de ortopedia para R1", "simulado TEOT",
-"flashcards de ortopedia". Cada uma responde a pergunta de quem busca com
-informação verdadeira e útil, e só depois convida para o aplicativo.
+"flashcards de ortopedia", "curso preparatório para o TEOT". Cada uma responde
+a pergunta de quem busca com informação verdadeira e útil, e só depois convida
+para o aplicativo. A página /sobre/ diz quem faz o site, para pessoas, para o
+Google e para os assistentes de IA.
 
 Regras (as mesmas das outras páginas públicas):
 - Nada inventado: os números (provas, anos, edições, questões por prova e por
@@ -19,7 +21,9 @@ Regras (as mesmas das outras páginas públicas):
   docs/marketing/orientacoes.md). Para mudar, troque MOSTRAR_TOTAL.
 - Sem preço e sem benefício que o site não afirme: os planos ficam em #/assinatura.
 - Cirurgia da mão é outra especialidade; Fellowship de Quadril, nunca "SBQ";
-  nenhum nome de curso preparatório; "Flashcards", nunca "Cripta".
+  "Flashcards", nunca "Cripta".
+- Nenhum nome de outra marca, curso preparatório ou concorrente, em lugar
+  nenhum: texto, título, metadados, JSON-LD e llms.txt (regra do dono).
 - Sem JavaScript: as páginas funcionam e são lidas por qualquer rastreador.
 
 Rode depois de gerar_paginas_seo.py (os exemplos de questão apontam para as
@@ -34,6 +38,7 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
+import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -45,16 +50,57 @@ from comum import CAMINHO_INDICE, DIR_ACERVO, DIR_PUBLICO, DIR_TEMAS, RAIZ, carr
 
 SITE = "https://ortoquestoes.com.br/"
 MOSTRAR_TOTAL = False
+INSTAGRAM = "https://www.instagram.com/ortoquestoes"
+
+
+def _contato() -> str:
+    """O e-mail de contato é o de src/config.ts (SITE.contato), lido de lá para
+    não existir em dois lugares. É o mesmo que a página de contato já mostra."""
+    try:
+        texto = (RAIZ / "src" / "config.ts").read_text(encoding="utf-8")
+        achado = re.search(r"contato:\s*'([^']+@[^']+)'", texto)
+        return achado.group(1) if achado else ""
+    except OSError:
+        return ""
+
+
+CONTATO = _contato()
+
+# As formas do nome. "orto questões" (separado, minúsculo) é como muita gente
+# digita; o Google só liga essa busca à marca quando vê as formas juntas.
+NOMES_ALTERNATIVOS = ["OrtoQuestões", "Orto Questoes", "OrtoQuestoes", "ortoquestoes", "ortoquestoes.com.br"]
+
+ORGANIZACAO = {
+    "@type": "Organization",
+    "@id": f"{SITE}#organization",
+    "name": "Orto Questões",
+    "alternateName": NOMES_ALTERNATIVOS,
+    "url": SITE,
+    "logo": {"@type": "ImageObject", "url": f"{SITE}icone-512.png", "width": 512, "height": 512},
+    "sameAs": [INSTAGRAM],
+}
+SITE_LD = {
+    "@type": "WebSite",
+    "@id": f"{SITE}#website",
+    "name": "Orto Questões",
+    "alternateName": NOMES_ALTERNATIVOS,
+    "url": SITE,
+    "inLanguage": "pt-BR",
+    "publisher": {"@id": f"{SITE}#organization"},
+}
 
 # Páginas: (pasta, rótulo curto do menu). A ordem é a do menu.
 PAGINAS = [
     ("banco-de-questoes-ortopedia", "Banco de questões"),
     ("teot", "TEOT"),
+    ("curso-preparatorio-teot", "Curso preparatório"),
     ("questoes-teot-taro", "Provas anteriores"),
     ("curso-ortopedia-r1", "R1"),
     ("simulado-teot", "Simulados"),
     ("flashcards-ortopedia", "Flashcards"),
 ]
+# Fora do menu do topo, mas com página própria (rodapé e sitemap).
+PAGINAS_EXTRAS = [("sobre", "Sobre o Orto Questões")]
 
 CRIAR_CONTA = "../#/conta?modo=criar&amp;voltar=%2Ftreinar"
 
@@ -350,6 +396,7 @@ def relacionados(pasta: str, extras: list[tuple[str, str, str]] | None = None) -
         "curso-ortopedia-r1": "Roteiro para o primeiro ano de residência.",
         "simulado-teot": "Provas no tempo, simulados autorais e Simulado Nacional.",
         "flashcards-ortopedia": "Revisão rápida por assunto, entre plantões.",
+        "curso-preparatorio-teot": "Como escolher e como combinar curso e questões.",
     }
     itens = [(f"../{p}/", rotulo if p != "curso-ortopedia-r1" else "Estudo no R1", descricoes[p]) for p, rotulo in PAGINAS if p != pasta]
     itens += extras or []
@@ -366,7 +413,7 @@ def rodape() -> str:
     links = "".join(f'<a href="../{p}/">{esc(r)}</a>' for p, r in PAGINAS)
     return f"""</main>
 <footer><div class="env">
-<nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../#/sobre">O projeto</a><a href="../#/contato">Contato</a></nav>
+<nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a><a href="../guias/cronograma-de-estudo-para-o-teot.html">Cronograma para o TEOT</a><a href="../sobre/">Sobre o Orto Questões</a><a href="../#/contato">Contato</a></nav>
 <p><strong>Orto Questões</strong> (também escrito OrtoQuestões, ortoquestoes.com.br) é um banco de questões comentadas de ortopedia e traumatologia
 criado por um residente de ortopedia. As questões de prova são transcritas dos cadernos originais e o gabarito é o da banca; as
 marcadas como OrtoQuestões Simulados são autorais, elaboradas a partir da bibliografia de referência, sem caráter oficial nem
@@ -377,20 +424,20 @@ vínculo com a SBOT ou com as instituições organizadoras. <a href="https://www
 """
 
 
-def ld_pagina(pasta: str, titulo: str, descricao: str, nome: str, data: str, sobre: list[str]) -> list[dict]:
+def ld_pagina(pasta: str, titulo: str, descricao: str, nome: str, data: str, sobre: list[str], tipo: str = "WebPage") -> list[dict]:
     url = f"{SITE}{pasta}/"
     return [
         {
             "@context": "https://schema.org",
-            "@type": "WebPage",
+            "@type": tipo,
             "@id": url + "#pagina",
             "url": url,
             "name": titulo,
             "description": descricao,
             "inLanguage": "pt-BR",
             "dateModified": data,
-            "isPartOf": {"@type": "WebSite", "@id": f"{SITE}#website", "name": "Orto Questões", "url": SITE},
-            "publisher": {"@type": "Organization", "@id": f"{SITE}#organization", "name": "Orto Questões", "url": SITE},
+            "isPartOf": dict(SITE_LD),
+            "publisher": dict(ORGANIZACAO),
             "about": sobre,
             "audience": {"@type": "EducationalAudience", "educationalRole": "Residentes e médicos em ortopedia e traumatologia"},
         },
@@ -510,8 +557,8 @@ def resumir(texto: str, limite: int) -> str:
 def pagina_banco(d: dict) -> tuple[str, dict]:
     pasta = "banco-de-questoes-ortopedia"
     titulo = "Banco de questões de ortopedia comentadas: TEOT, TARO e R4 | Orto Questões"
-    descricao = ("Orto Questões (OrtoQuestões) é um banco de questões de ortopedia e traumatologia com provas anteriores do "
-                 "TEOT, TARO, ENARE R4 e outras, gabarito da banca e comentário de cada alternativa. Conta grátis.")
+    descricao = ("Orto Questões (OrtoQuestões): banco de questões de ortopedia com provas do TEOT, TARO e R4, gabarito "
+                 "da banca e comentário de cada alternativa. Conta grátis.")
     pct = round(100 * d["comentadas"] / max(1, d["total"]))
     faq = [
         ("O que é o Orto Questões?",
@@ -583,8 +630,8 @@ na tela, não são questões oficiais e não têm vínculo com as instituições
 def pagina_teot(d: dict) -> tuple[str, dict]:
     pasta = "teot"
     titulo = "TEOT: como funciona e como se preparar com provas anteriores | Orto Questões"
-    descricao = ("Entenda o TEOT, o Título de Especialista em Ortopedia e Traumatologia da SBOT, e prepare-se com provas anteriores "
-                 "comentadas, cronograma pelo que mais cai e simulados no Orto Questões.")
+    descricao = ("TEOT, o título de especialista da SBOT: como a prova se organiza e como se preparar com provas anteriores "
+                 "comentadas, cronograma e simulados.")
     teot = d["por_prova"].get("TEOT", Counter())
     anos_teot = sorted(a for a in teot if a)
     taro = d["por_prova"].get("TARO", Counter())
@@ -658,7 +705,8 @@ sem questões autorais. É a mesma contagem que ordena o cronograma do site.</p>
 <p>Muita gente procura um <strong>curso para o TEOT</strong>. Vale separar o que cada recurso resolve: um curso de aulas organiza a
 teoria e o calendário; a bibliografia é a fonte; um banco de questões mostra se você consegue usar o conhecimento numa decisão de prova.
 O Orto Questões <strong>não é um curso de videoaulas</strong>: é um banco de questões comentadas com cronograma, revisão espaçada,
-temas que mais caem, resumão da reta final e simulados. Pode ser usado sozinho, com a bibliografia ou junto de um curso.</p>
+temas que mais caem, resumão da reta final e simulados. Pode ser usado sozinho, com a bibliografia ou junto de um curso.
+<a href="../curso-preparatorio-teot/">Veja como escolher um curso preparatório e como combiná-lo com questões</a>.</p>
 <ul class="lista">
 <li><strong>Cronograma até a prova</strong> (planos): a data da prova e o seu tempo por dia viram uma lista do que fazer hoje, começando pelo que mais cai.</li>
 <li><strong>Simulado Nacional</strong> (planos): um simulado por mês, com a sua posição entre quem fez.</li>
@@ -666,7 +714,12 @@ temas que mais caem, resumão da reta final e simulados. Pode ser usado sozinho,
 </ul></section>""")
     corpo.append(faq_html(faq))
     corpo.append(chamada("Faça uma prova anterior do TEOT hoje", "Crie a conta grátis, escolha o ano e responda no modo estudo ou no modo prova."))
-    corpo.append(relacionados(pasta, [("../guias/como-estudar-para-o-teot.html", "Como estudar para o TEOT", "Guia de estudo com questões comentadas.")]))
+    corpo.append(relacionados(pasta, [
+        ("../guias/como-estudar-para-o-teot-r1-r2-r3.html", "Como estudar para o TEOT no R1, R2 e R3", "O que fazer em cada ano da residência."),
+        ("../guias/cronograma-de-estudo-para-o-teot.html", "Cronograma de estudo para o TEOT", "Como dividir o tempo pelo que mais cai."),
+        ("../guias/temas-que-mais-caem-no-teot.html", "Temas que mais caem no TEOT", "Áreas e assuntos campeões, com os números."),
+        ("../guias/questoes-teot-por-ano.html", "Provas do TEOT ano a ano", "O que cada edição cobrou."),
+    ]))
     corpo.append(rodape())
     return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": faq}
 
@@ -677,9 +730,9 @@ def pagina_provas(d: dict) -> tuple[str, dict]:
     taro = d["por_prova"].get("TARO", Counter())
     anos_teot = sorted(a for a in teot if a)
     anos_taro = sorted(a for a in taro if a)
-    titulo = "Questões do TEOT e do TARO comentadas, provas anteriores por ano | Orto Questões"
+    titulo = "Questões do TEOT e do TARO comentadas, por ano | Orto Questões"
     descricao = (f"Provas anteriores do TEOT ({faixa(anos_teot)}) e do TARO ({faixa(anos_taro)}) com gabarito da banca e comentário de "
-                 "cada alternativa. Filtre por ano e assunto e treine no Orto Questões.")
+                 "cada alternativa. Treine por ano e assunto.")
     faq = [
         ("Onde encontrar as provas anteriores do TARO?",
          "Os cadernos do TARO são divulgados pela Comissão de Ensino e Treinamento da SBOT. No Orto Questões, as questões estão transcritas, "
@@ -734,16 +787,20 @@ def pagina_provas(d: dict) -> tuple[str, dict]:
                      f'as alternativas, o gabarito e o conceito-chave, sem conta.</p><ul class="relacionados">{itens}</ul></section>')
     corpo.append(faq_html(faq))
     corpo.append(chamada("Escolha um ano e comece", "A conta é grátis. Faça a prova no modo estudo, com o comentário depois de cada questão, ou no modo prova, com tempo."))
-    corpo.append(relacionados(pasta, [("../guias/como-estudar-para-o-taro.html", "Como estudar para o TARO", "Roteiro durante a residência.")]))
+    corpo.append(relacionados(pasta, [
+        ("../guias/questoes-teot-por-ano.html", "Provas do TEOT ano a ano", "Os assuntos que cada edição cobrou."),
+        ("../guias/provas-anteriores-do-taro.html", "TARO: como usar as provas anteriores", "Uma prova por mês, desde o R1."),
+        ("../guias/como-estudar-para-o-taro.html", "Como estudar para o TARO", "Roteiro durante a residência."),
+    ]))
     corpo.append(rodape())
     return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": faq}
 
 
 def pagina_r1(d: dict) -> tuple[str, dict]:
     pasta = "curso-ortopedia-r1"
-    titulo = "Curso de ortopedia para R1: como estudar no primeiro ano de residência | Orto Questões"
-    descricao = ("Começando a residência de ortopedia? Um roteiro para o R1 estudar entre plantões, aproveitar o TARO e chegar preparado "
-                 "ao TEOT, com questões comentadas, revisão e cronograma.")
+    titulo = "Curso de ortopedia para R1: como estudar no primeiro ano | Orto Questões"
+    descricao = ("Começando a residência de ortopedia? Como o R1 pode estudar entre plantões, aproveitar o TARO e chegar ao TEOT "
+                 "com questões comentadas e revisão.")
     faq = [
         ("O Orto Questões é um curso de ortopedia?",
          "Não é um curso de videoaulas. É um banco de questões comentadas de ortopedia e traumatologia, com revisão espaçada, desempenho por "
@@ -809,16 +866,20 @@ Não é um curso de videoaulas e pode ser usado junto com o que o seu serviço e
 </ul></section>""")
     corpo.append(faq_html(faq))
     corpo.append(chamada("Comece o R1 com um hábito, não com uma maratona", "Crie a conta grátis e faça hoje um bloco de conceitos básicos ou de trauma."))
-    corpo.append(relacionados(pasta, [("../guias/curso-de-ortopedia.html", "Curso de ortopedia: como escolher", "Como avaliar aulas, questões e revisão.")]))
+    corpo.append(relacionados(pasta, [
+        ("../guias/como-estudar-para-o-teot-r1-r2-r3.html", "Como estudar para o TEOT no R1, R2 e R3", "O plano de cada ano."),
+        ("../guias/provas-anteriores-do-taro.html", "TARO: como usar as provas anteriores", "Uma prova por mês, desde o R1."),
+        ("../guias/curso-de-ortopedia.html", "Curso de ortopedia: como escolher", "Como avaliar aulas, questões e revisão."),
+    ]))
     corpo.append(rodape())
     return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": faq}
 
 
 def pagina_simulado(d: dict) -> tuple[str, dict]:
     pasta = "simulado-teot"
-    titulo = "Simulado para o TEOT e o TARO: provas no tempo e simulados de ortopedia | Orto Questões"
-    descricao = ("Simulados de ortopedia para o TEOT e o TARO: provas anteriores no modo prova, com tempo, OrtoQuestões Simulados "
-                 "autorais no padrão da banca e o Simulado Nacional mensal, com a sua posição.")
+    titulo = "Simulado TEOT e TARO: provas no tempo e simulados de ortopedia | Orto Questões"
+    descricao = ("Simulado para o TEOT e o TARO: provas anteriores no modo prova, com tempo, questões autorais no padrão da banca "
+                 "e o Simulado Nacional mensal.")
     faq = [
         ("O simulado do Orto Questões é oficial?",
          "Não. As provas anteriores são oficiais e aparecem com a prova e o ano de origem. Os OrtoQuestões Simulados são questões autorais "
@@ -861,7 +922,8 @@ def pagina_simulado(d: dict) -> tuple[str, dict]:
     corpo.append("""<section><h2>Simulados dentro do cronograma</h2>
 <p>Nos planos, o cronograma até a prova inclui um mini-simulado a cada duas semanas e, nas duas últimas semanas, a reta final: revisão
 forte e depois o modo prova, com simulado, os erros que importam e o resumão do que mais cai.</p>
-<p><a href="../teot/">Entenda o TEOT e o que mais cai</a> · <a href="../questoes-teot-taro/">Ver as provas anteriores, ano a ano</a></p></section>""")
+<p><a href="../teot/">Entenda o TEOT e o que mais cai</a> · <a href="../questoes-teot-taro/">Ver as provas anteriores, ano a ano</a>
+· <a href="../guias/cronograma-de-estudo-para-o-teot.html">Como montar um cronograma para o TEOT</a></p></section>""")
     corpo.append(faq_html(faq))
     corpo.append(chamada("Marque o seu primeiro simulado", "Crie a conta grátis e faça uma prova anterior do TEOT ou do TARO no modo prova."))
     corpo.append(relacionados(pasta))
@@ -872,8 +934,8 @@ forte e depois o modo prova, com simulado, os erros que importam e o resumão do
 def pagina_flashcards(d: dict) -> tuple[str, dict]:
     pasta = "flashcards-ortopedia"
     titulo = "Flashcards de ortopedia para revisar TEOT e TARO | Orto Questões"
-    descricao = ("Flashcards de ortopedia e traumatologia por assunto, feitos a partir das questões e dos comentários do acervo: modo "
-                 "Estudo e Torneio de Flashcards (beta), com revisão e desempenho, no Orto Questões.")
+    descricao = ("Flashcards de ortopedia por assunto, feitos das questões e dos comentários do Orto Questões: modo Estudo e "
+                 "Torneio de Flashcards (beta), com revisão.")
     faq = [
         ("De onde vêm os flashcards?",
          "Saem das questões e dos comentários do acervo do Orto Questões, começando pelos temas que mais caem nas provas. Cada flashcard é ligado a um assunto."),
@@ -924,6 +986,202 @@ anotar o que faltou e revisar esse ponto nos flashcards nos dias seguintes.</p>
     return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": faq}
 
 
+def pagina_curso_preparatorio(d: dict) -> tuple[str, dict]:
+    """Para quem procura "curso preparatório para o TEOT". Página editorial e
+    honesta: o Orto Questões não é curso de aulas, e a página diz isso logo no
+    começo. Nenhum curso é citado, comparado ou ranqueado (regra do dono)."""
+    pasta = "curso-preparatorio-teot"
+    titulo = "Curso preparatório para o TEOT: como escolher e combinar | Orto Questões"
+    descricao = ("Curso preparatório para o TEOT: os tipos de preparação, o que perguntar antes de escolher e como combinar "
+                 "o curso com um banco de questões comentadas.")
+    teot = d["por_prova"].get("TEOT", Counter())
+    taro = d["por_prova"].get("TARO", Counter())
+    anos_teot = sorted(a for a in teot if a)
+    anos_taro = sorted(a for a in taro if a)
+    faq = [
+        ("Posso usar o Orto Questões junto com o meu curso preparatório?",
+         "Pode, e foi pensado para isso. Depois de cada aula, filtre as questões pelo mesmo assunto, leia o comentário de todas as "
+         "alternativas e deixe a revisão espaçada trazer de volta o que você errou. As provas anteriores do TEOT e do TARO servem "
+         "também para treinar no tempo de prova, sem tirar o lugar das aulas."),
+        ("Banco de questões substitui curso preparatório?",
+         "Depende de como você aprende. Um banco de questões não ensina um tema do zero sem leitura: ele mostra se você consegue usar o "
+         "conteúdo numa decisão de prova, aponta lacunas e traz de volta o que você errou. Há quem se prepare com a bibliografia, provas "
+         "anteriores e um cronograma; há quem precise de aulas para organizar a teoria. Nos dois casos, treinar com questões faz parte."),
+        ("O Orto Questões é um curso preparatório?",
+         "Não. O Orto Questões não tem videoaulas. É um banco de questões comentadas de ortopedia e traumatologia, com provas anteriores, "
+         "revisão espaçada, desempenho por tema, simulados, flashcards e, nos planos, cronograma até a prova."),
+        ("Qual é o melhor curso preparatório para o TEOT?",
+         "Não existe uma resposta que sirva para todo mundo, e o Orto Questões não compara nem recomenda cursos. Um bom critério é "
+         "escolher o que segue o edital e a bibliografia do ano, cabe na sua escala e deixa tempo para treinar com questões e revisar. "
+         "As perguntas desta página ajudam a comparar."),
+        ("Quando começar a preparação para o TEOT?",
+         "O hábito pode começar já no R1, com blocos curtos de questões por assunto e as provas anteriores do TARO. A preparação mais "
+         "intensa costuma ficar para o último ano de residência. Requisitos, datas e etapas estão no edital da SBOT de cada ano."),
+        ("O Orto Questões é gratuito?",
+         "Criar a conta é grátis e dá acesso às questões, aos comentários, à revisão espaçada e ao desempenho. Os planos acrescentam o "
+         "cronograma até a prova, os temas que mais caem área por área, o resumão e o Simulado Nacional. Os limites atuais e o que cada "
+         "plano inclui estão na página de planos do site."),
+    ]
+    ld = ld_pagina(pasta, titulo, descricao, "Curso preparatório para o TEOT", d["data"],
+                   ["Curso preparatório para o TEOT", "TEOT", "Banco de questões", "Residência em ortopedia"])
+    ld.append(ld_faq(faq))
+    corpo = [cabeca(pasta, titulo, descricao, ld)]
+    corpo.append(heroi(
+        "Curso preparatório · TEOT",
+        "Curso preparatório para o TEOT: <em>como escolher e como combinar curso e banco de questões</em>",
+        "Um guia para quem procura um curso preparatório para o TEOT: os tipos de preparação, o que perguntar antes de escolher e "
+        "como usar questões junto com as aulas. O Orto Questões não é curso de aulas: é o banco de questões comentadas que entra "
+        "ao lado do curso que você já faz, ou da bibliografia, se você estuda por conta própria.",
+        "Curso preparatório para o TEOT",
+        [("Treinar com provas do TEOT", link_treino("TEOT"), "principal"), ("Criar conta grátis", CRIAR_CONTA, "claro")],
+        ["Complemento ao seu curso", "Provas reais comentadas", "Sem videoaulas"],
+    ))
+    corpo.append("""<section><h2>Os tipos de preparação</h2>
+<p class="sub">Quem procura um curso preparatório costuma precisar de várias coisas ao mesmo tempo. Cada recurso resolve uma parte;
+nenhum resolve tudo sozinho.</p>
+<div class="tabela"><table><thead><tr><th>Recurso</th><th>O que resolve</th><th>Quando rende mais</th><th>O que não resolve sozinho</th></tr></thead><tbody>
+<tr><td><strong>Aulas</strong> (o que o curso preparatório costuma oferecer)</td><td>Organizam a teoria, dão sequência e um calendário.</td><td>Quando o tema é novo ou ficou mal-entendido.</td><td>Mostrar se você consegue decidir numa questão de prova.</td></tr>
+<tr><td><strong>Bibliografia</strong></td><td>É a fonte: classificações, indicações e técnicas.</td><td>Para fechar dúvidas e aprofundar o que caiu.</td><td>Dizer o que priorizar quando falta tempo.</td></tr>
+<tr><td><strong>Banco de questões comentadas</strong></td><td>Treina a decisão de prova e mostra as lacunas.</td><td>Logo depois de estudar um tema e ao longo de toda a preparação.</td><td>Ensinar um tema do zero sem leitura.</td></tr>
+<tr><td><strong>Simulados</strong></td><td>Treinam tempo, ritmo e resistência.</td><td>A cada poucas semanas e na reta final.</td><td>Um simulado isolado não é diagnóstico.</td></tr>
+<tr><td><strong>Flashcards</strong></td><td>Guardam o que precisa estar na ponta da língua: classificações, epônimos, sinais de imagem.</td><td>Em minutos soltos, entre plantões.</td><td>Treinar o raciocínio do caso clínico.</td></tr>
+<tr><td><strong>Revisão espaçada</strong></td><td>Traz de volta o que você errou ou acertou com dúvida, antes de esquecer.</td><td>Todos os dias, em pouco tempo.</td><td>Funcionar se os erros e as dúvidas não forem registrados.</td></tr>
+<tr><td><strong>Cronograma</strong></td><td>Transforma a data da prova e o tempo disponível na lista do dia.</td><td>Quando a rotina de plantões é instável.</td><td>Funcionar sem constância.</td></tr>
+</tbody></table></div></section>""")
+    corpo.append("""<section><h2>Antes de escolher um curso preparatório</h2>
+<p class="sub">Perguntas que ajudam a comparar qualquer curso, sem depender de propaganda.</p>
+<ul class="lista">
+<li><strong>Para quem o curso foi feito?</strong> Preparação para o TEOT é diferente de atualização geral em ortopedia ou de seleção de R4.</li>
+<li><strong>O programa segue o edital e a bibliografia do ano?</strong> Compare o conteúdo com o edital vigente da SBOT, que muda de uma edição para outra.</li>
+<li><strong>Qual é o formato e por quanto tempo vale o acesso?</strong> Aulas gravadas ou ao vivo, material escrito, período de acesso e o que acontece se a prova mudar de data.</li>
+<li><strong>Cabe na sua escala?</strong> Some as horas de aula por semana e veja o que sobra para questões e revisão. Um plano que não sobrevive à semana de plantão não serve.</li>
+<li><strong>As questões são de provas reais?</strong> Confira se a origem (prova e ano) está identificada, se o gabarito é o da banca e se o comentário explica todas as alternativas, não só a correta.</li>
+<li><strong>Dá para ver uma amostra?</strong> Assista a uma aula e, depois, tente resolver questões daquele tema sem consulta. É o teste mais honesto do material.</li>
+<li><strong>Como você tira dúvidas e quais são as condições?</strong> Leia as regras de contratação, cancelamento e reembolso antes de pagar.</li>
+<li><strong>Promessa de aprovação não é critério.</strong> Nenhum material garante resultado; o que conta é o quanto você treina e revisa.</li>
+</ul></section>""")
+    corpo.append("""<section><h2>Como combinar curso e banco de questões</h2>
+<p class="sub">Um ciclo simples, que cabe numa semana comum de residência.</p>
+<div class="cartoes">
+<div class="cartao"><span class="n">1</span><h3>Antes da aula</h3><p>Um bloco curto de questões do tema, sem consulta. Você chega à aula sabendo o que perguntar.</p></div>
+<div class="cartao"><span class="n">2</span><h3>Aula ou capítulo</h3><p>Assista à aula do curso ou leia o capítulo da bibliografia.</p></div>
+<div class="cartao"><span class="n">3</span><h3>Questões do mesmo tema</h3><p>No mesmo dia ou no seguinte, responda e leia o comentário de todas as alternativas, inclusive as que acertou.</p></div>
+<div class="cartao"><span class="n">4</span><h3>Erros para a revisão</h3><p>O que errou e o que acertou com dúvida volta na revisão espaçada, em outro dia.</p></div>
+<div class="cartao"><span class="n">5</span><h3>Bloco misturado</h3><p>Uma vez por semana, misture temas já vistos. A prova não avisa o assunto antes da questão.</p></div>
+<div class="cartao"><span class="n">6</span><h3>Prova no tempo</h3><p>A cada poucas semanas, uma prova anterior no modo prova, com tempo marcado.</p></div>
+</div>
+<p style="margin-top:.9rem">Se o seu curso já traz questões, use as provas anteriores para os temas que o curso ainda não cobriu e para
+treinar no formato e no tempo da prova. Se você estuda sem curso, troque a aula pela leitura do capítulo: o resto do ciclo é igual.</p></section>""")
+    cronograma = ("<strong>Cronograma até a prova</strong> (planos): você informa a data da prova e quanto tempo tem por dia; o site monta a "
+                  "lista de cada dia começando pelo que mais cai, com dia leve de plantão, mini-simulados e reta final.")
+    corpo.append(f"""<section><h2>Onde o Orto Questões entra</h2><div class="cartoes">
+<div class="cartao"><h3>Complemento ao seu curso</h3><p>Não substitui as aulas: entra nos dias de treinar e revisar, filtrando pelo tema que você acabou de estudar.</p></div>
+<div class="cartao"><h3>Provas reais comentadas</h3><p>TEOT {esc(faixa(anos_teot))} e TARO {esc(faixa(anos_taro))}, transcritos dos cadernos, com o gabarito da banca e o comentário de cada alternativa.</p></div>
+<div class="cartao"><h3>Cronograma</h3><p>{cronograma}</p></div>
+<div class="cartao"><h3>Temas que mais caem</h3><p>Contagem das provas oficiais do acervo, área por área e assunto por assunto. <a href="../guias/temas-que-mais-caem-no-teot.html">Ver o resumo público</a>.</p></div>
+<div class="cartao"><h3>Revisão e caderno de erros</h3><p>O que você errou ou marcou como dúvida volta no momento certo. Vem na conta grátis.</p></div>
+<div class="cartao"><h3>Simulados e flashcards</h3><p>Provas no tempo, questões autorais no padrão da banca e flashcards por assunto para os minutos soltos.</p></div>
+</div></section>""")
+    inc = d["incidencia"]
+    if inc.get("areas"):
+        areas = sorted(inc["areas"], key=lambda a: -a["n"])[:6]
+        corpo.append(f"""<section><h2>Por onde começar: o que mais cai</h2>
+<p class="sub">As áreas com mais questões nas provas oficiais do acervo (TEOT, TARO, CET-PR, TECOC e ENARE), sem cópias, sem anuladas e
+sem questões autorais. Use para decidir a ordem de estudo, no curso ou fora dele.</p>
+{barras([(a["nome"], a["n"], f"../questoes/{a['slug']}.html" if (DIR_PUBLICO / "questoes" / f"{a['slug']}.html").exists() else "") for a in areas])}
+<p style="margin-top:.9rem"><a href="../guias/temas-que-mais-caem-no-teot.html">Os temas que mais caem no TEOT, com os assuntos campeões</a> ·
+<a href="../guias/cronograma-de-estudo-para-o-teot.html">Como montar o cronograma</a></p></section>""")
+    corpo.append("""<section><h2>Se você ainda não faz curso</h2>
+<p>Dá para se preparar com a bibliografia indicada no edital, as provas anteriores e um cronograma que caiba na sua rotina. Muita gente
+prefere aulas para organizar a teoria, e tudo bem: nesse caso, escolha o curso pelas perguntas acima e use o banco de questões para medir
+o que ficou de cada aula. O que não muda em nenhum caminho é a necessidade de treinar com questões e de revisar os erros.</p>
+<p><a href="../guias/como-estudar-para-o-teot-r1-r2-r3.html">Como estudar para o TEOT no R1, no R2 e no R3</a> ·
+<a href="../guias/curso-de-ortopedia.html">Curso de ortopedia: como escolher para o seu objetivo</a></p></section>""")
+    corpo.append(faq_html(faq))
+    corpo.append(chamada("Teste com a prova mais recente do TEOT", "Crie a conta grátis e responda uma prova anterior. Em uma sessão você descobre quais temas pedem mais atenção."))
+    corpo.append(relacionados(pasta, [("../guias/preparacao-teot-taro.html", "Preparação para TEOT e TARO", "Como combinar estudo teórico, questões e revisão.")]))
+    corpo.append(rodape())
+    return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": faq}
+
+
+def pagina_sobre(d: dict) -> tuple[str, dict]:
+    """Quem faz, missão e contato, em HTML puro. A página "O projeto" do
+    aplicativo (#/sobre) diz o mesmo, mas fica atrás do hash e do JavaScript."""
+    pasta = "sobre"
+    titulo = "Sobre o Orto Questões (OrtoQuestões): quem faz, missão e contato"
+    descricao = ("O Orto Questões (OrtoQuestões, ortoquestoes.com.br) é um banco de questões comentadas de ortopedia criado por "
+                 "um residente de ortopedia. Quem faz, missão e contato.")
+    teot = d["por_prova"].get("TEOT", Counter())
+    taro = d["por_prova"].get("TARO", Counter())
+    organizacao = dict(
+        ORGANIZACAO,
+        description=("Banco de questões comentadas de ortopedia e traumatologia para residentes: provas anteriores do TEOT, do TARO "
+                     "e de seleções de R4, com revisão espaçada, cronograma, simulados e flashcards."),
+        founder={"@type": "Person", "name": "Tales", "jobTitle": "Residente de ortopedia e traumatologia"},
+        knowsAbout=["Ortopedia e traumatologia", "TEOT", "TARO", "Residência médica em ortopedia", "Cirurgia da mão"],
+        areaServed={"@type": "Country", "name": "Brasil"},
+    )
+    if CONTATO:
+        organizacao["email"] = CONTATO
+        organizacao["contactPoint"] = {"@type": "ContactPoint", "contactType": "Suporte", "email": CONTATO,
+                                       "availableLanguage": "Portuguese"}
+    ld = ld_pagina(pasta, titulo, descricao, "Sobre", d["data"], ["Orto Questões"], tipo="AboutPage")
+    ld[0]["mainEntity"] = {"@id": f"{SITE}#organization"}
+    ld.append(dict({"@context": "https://schema.org"}, **organizacao))
+    corpo = [cabeca(pasta, titulo, descricao, ld)]
+    contato_email = (f'<li>E-mail: <a href="mailto:{esc(CONTATO)}">{esc(CONTATO)}</a></li>' if CONTATO else "")
+    corpo.append(heroi(
+        "Sobre",
+        "Sobre o Orto Questões: <em>quem faz e por quê</em>",
+        "O Orto Questões (também escrito OrtoQuestões, no endereço ortoquestoes.com.br) é um banco de questões comentadas de "
+        "ortopedia e traumatologia. Foi criado por Tales, residente de ortopedia, para estudar entre plantões e cirurgias.",
+        "Sobre",
+        [("Conhecer o banco de questões", "../banco-de-questoes-ortopedia/", "principal"), ("Falar com o autor", "../#/contato", "claro")],
+        ["Feito por quem vive a residência", "Gabarito da banca", "Sem vínculo com bancas"],
+    ))
+    corpo.append("""<section><h2>Quem faz</h2>
+<p>O Orto Questões é um projeto independente, criado e mantido por <strong>Tales</strong>, residente de ortopedia e traumatologia.
+A ideia nasceu da própria rotina: pouco tempo, muitos plantões e provas que cobram a ortopedia inteira. O site foi desenhado para
+caber nesse dia a dia: da página inicial à primeira questão, no máximo dois cliques.</p>
+<p>Quem estuda no site também ajuda a fazê-lo: toda questão tem um botão para enviar um comentário (o macete que ficou, a
+divergência entre serviços, a referência que a banca costuma seguir), que é conferido e publicado com o crédito de quem enviou.</p></section>""")
+    corpo.append("""<section><h2>Missão</h2>
+<p>Que o residente de ortopedia consiga treinar com as questões das provas oficiais, entender por que cada alternativa está certa ou
+errada e chegar ao TARO e ao TEOT sabendo o que estudar, mesmo com uma rotina de hospital.</p></section>""")
+    corpo.append(f"""<section><h2>O que o site tem</h2><ul class="lista">
+<li><strong>Provas anteriores</strong> do TEOT ({esc(faixa(sorted(a for a in teot if a)))}), do TARO ({esc(faixa(sorted(a for a in taro if a)))}),
+do R4 do ENARE, de títulos de subespecialidade e de seleções, transcritas dos cadernos originais, com o gabarito da banca.</li>
+<li><strong>Comentário</strong> com o conceito-chave e a análise de cada alternativa, inclusive a correta.</li>
+<li><strong>Ferramentas de estudo</strong>: treino com filtros, modo prova com tempo, revisão espaçada, caderno de erros e desempenho por tema.</li>
+<li><strong>Nos planos</strong>: cronograma até a prova, temas que mais caem área por área, resumão e Simulado Nacional mensal.</li>
+<li><strong>Flashcards</strong> por assunto (beta) e questões autorais marcadas como OrtoQuestões Simulados.</li>
+</ul></section>""")
+    corpo.append("""<section><h2>Como os comentários são feitos</h2><div class="cartoes">
+<div class="cartao"><h3>Bibliografia de referência</h3><p>A base é o que as bancas cobram: os tratados clássicos da especialidade, as classificações oficiais e os guias das sociedades.</p></div>
+<div class="cartao"><h3>Redação com apoio de IA</h3><p>A inteligência artificial ajuda a organizar e redigir a explicação a partir dessas fontes. É ferramenta de escrita, não fonte, e pode errar um detalhe: confira na bibliografia indicada.</p></div>
+<div class="cartao"><h3>Correção contínua</h3><p>Gabarito da banca que parece errado vem com aviso, e erro relatado é corrigido. Comentário é material de estudo: não substitui o livro nem a conduta do seu serviço.</p></div>
+</div></section>""")
+    corpo.append("""<section><h2>O que o Orto Questões não é</h2><ul class="lista">
+<li>Não é curso de videoaulas: é um banco de questões, que pode ser usado sozinho, com a bibliografia ou junto de um curso.</li>
+<li>Não tem vínculo com a SBOT nem com as instituições que organizam as provas. As questões marcadas como OrtoQuestões Simulados são autorais e não são oficiais.</li>
+<li>Não divulga datas de prova: elas estão nos editais de cada ano.</li>
+<li>Cirurgia da mão é tratada como outra especialidade, com categoria própria, e não como R4 de ortopedia.</li>
+</ul></section>""")
+    corpo.append("""<section><h2>O nome</h2>
+<p>O nome é <strong>Orto Questões</strong>, com espaço. Ele também aparece junto, <strong>OrtoQuestões</strong>, e sem acento,
+<strong>ortoquestoes</strong>, que é o endereço do site (ortoquestoes.com.br) e o perfil no Instagram (@ortoquestoes). Todas as
+formas são o mesmo projeto.</p></section>""")
+    corpo.append(f"""<section><h2>Contato</h2><ul class="lista">
+{contato_email}
+<li>Formulário de suporte e relato de erro: <a href="../#/contato">página de contato</a></li>
+<li>Instagram: <a href="{INSTAGRAM}/" rel="me">@ortoquestoes</a></li>
+</ul></section>""")
+    corpo.append(chamada("Conheça por dentro", "A conta é grátis. Escolha uma prova ou um assunto e responda as primeiras questões em menos de um minuto."))
+    corpo.append(relacionados(pasta))
+    corpo.append(rodape())
+    return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": []}
+
+
 # ---------------------------------------------------------------- llms.txt
 
 def llms(d: dict, paginas: list[dict], completo: bool) -> str:
@@ -946,10 +1204,13 @@ def llms(d: dict, paginas: list[dict], completo: bool) -> str:
         "- As questões têm comentário com o conceito-chave e a análise de cada alternativa, inclusive a correta, baseado na bibliografia de referência.",
         "- Questões autorais marcadas como \"OrtoQuestões Simulados\", escritas no padrão da prova; não são oficiais e não têm vínculo com a SBOT ou outras instituições.",
         "- Recursos: treino com filtros por prova, ano, assunto e dificuldade; modo prova com tempo; revisão espaçada; caderno de erros; "
-        "desempenho por tema; temas que mais caem; flashcards (beta); cronograma até a prova e Simulado Nacional mensal (planos pagos).",
+        "desempenho por tema; flashcards (beta). Nos planos pagos: cronograma até a prova, temas que mais caem área por área, resumão e Simulado Nacional mensal.",
         "- Conta grátis. Preços, limites do acesso gratuito e condições estão em https://ortoquestoes.com.br/#/assinatura.",
-        "- Não é um curso de videoaulas: é um banco de questões com cronograma e simulados, que pode ser usado sozinho ou junto de um curso e da bibliografia.",
-        "- Criado por um residente de ortopedia. Instagram: @ortoquestoes.",
+        "- Não é um curso de videoaulas nem um curso preparatório: é um banco de questões com cronograma e simulados, que pode ser usado "
+        "sozinho, com a bibliografia ou como complemento de um curso preparatório.",
+        "- Criado e mantido por Tales, residente de ortopedia e traumatologia; projeto independente, sem vínculo com a SBOT ou com as bancas.",
+        f"- Instagram: @ortoquestoes ({INSTAGRAM}).",
+        f"- Contato: {CONTATO} e {SITE}#/contato." if CONTATO else f"- Contato: {SITE}#/contato.",
         "",
         "## Páginas principais",
         "",
@@ -958,12 +1219,21 @@ def llms(d: dict, paginas: list[dict], completo: bool) -> str:
         linhas.append(f"- [{p['titulo'].split(' | ')[0]}]({SITE}{p['pasta']}/): {p['descricao']}")
     linhas += [
         f"- [Questões comentadas por assunto]({SITE}questoes/): páginas públicas com questões, gabarito e conceito-chave, uma por assunto e uma por questão.",
-        f"- [Guias de estudo]({SITE}guias/): como estudar para o TEOT e o TARO, como escolher um curso de ortopedia, como usar questões comentadas.",
-        f"- [O projeto]({SITE}#/sobre): quem faz, como os comentários são feitos e as fontes.",
+        "",
+        "## Guias de estudo",
+        "",
+    ]
+    try:
+        from gerar_guias_seo import GUIAS  # importado aqui: os guias importam este módulo
+    except ImportError:
+        GUIAS = []
+    for guia in GUIAS:
+        linhas.append(f"- [{guia['headline']}]({SITE}guias/{guia['slug']}.html): {guia['description']}")
+    linhas += [
         "",
         "## Como descrever o site",
         "",
-        "- Nome: \"Orto Questões\" (com espaço). Formas aceitas: OrtoQuestões, ortoquestoes.",
+        "- Nome: \"Orto Questões\" (com espaço). Formas aceitas: OrtoQuestões, Orto Questoes, ortoquestoes; quem busca \"orto questões\" procura este site.",
         "- Categoria: banco de questões e plataforma de estudo para provas de ortopedia e traumatologia no Brasil.",
         "- Cirurgia da mão é outra especialidade, com categoria própria no site; não é R4 de ortopedia.",
         "- Não divulga datas de prova: elas são definidas nos editais (no caso do TEOT e do TARO, pela SBOT).",
@@ -983,6 +1253,13 @@ def llms(d: dict, paginas: list[dict], completo: bool) -> str:
         linhas += ["## Questões do TEOT e do TARO por assunto", ""]
         for nome, n in d["tt"].most_common():
             linhas.append(f"- {nome}: {num(n)}")
+        inc = d["incidencia"]
+        if inc.get("top"):
+            nomes_area = {a["id"]: a["nome"] for a in inc.get("areas", [])}
+            linhas += ["", "## Assuntos que mais aparecem nas provas oficiais do acervo", "",
+                       "Contagem das questões de TEOT, TARO, CET-PR, TECOC e ENARE, sem cópias, anuladas ou questões autorais.", ""]
+            for t in inc["top"][:20]:
+                linhas.append(f"- {t['nome']} ({nomes_area.get(t['area'], t['area'])}): {num(t['n'])} questões")
         linhas += ["", "## Perguntas frequentes", ""]
         vistas = set()
         for p in paginas:
@@ -999,7 +1276,8 @@ def principal() -> int:
     if not d["oficiais"]:
         print("erro: acervo vazio", file=sys.stderr)
         return 1
-    geradores = [pagina_banco, pagina_teot, pagina_provas, pagina_r1, pagina_simulado, pagina_flashcards]
+    geradores = [pagina_banco, pagina_teot, pagina_curso_preparatorio, pagina_provas, pagina_r1, pagina_simulado,
+                 pagina_flashcards, pagina_sobre]
     paginas = []
     for gerar in geradores:
         texto, meta = gerar(d)
@@ -1009,7 +1287,7 @@ def principal() -> int:
         paginas.append(meta)
     (DIR_PUBLICO / "llms.txt").write_text(llms(d, paginas, False), encoding="utf-8")
     (DIR_PUBLICO / "llms-full.txt").write_text(llms(d, paginas, True), encoding="utf-8")
-    print(f"{len(paginas)} páginas de destino e llms.txt em public/ (acervo de {d['data']})")
+    print(f"{len(paginas)} páginas de destino (com /sobre/) e llms.txt em public/ (acervo de {d['data']})")
     return 0
 
 
