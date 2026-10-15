@@ -155,6 +155,8 @@ def completar(fc: dict, q: dict, c: dict, areas: dict, niveis: dict[str, int], n
     }
     if fc.get("alerta"):
         saida["alerta"] = fc["alerta"]
+    if F.colecao_da_questao(q):
+        saida["colecao"] = F.colecao_da_questao(q)
     if fc.get("imagem") and q.get("imagens"):
         im = q["imagens"][0]
         saida["imagem"] = {"arquivo": im["arquivo"], "legenda": im.get("legenda") or ""}

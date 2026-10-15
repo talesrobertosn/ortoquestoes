@@ -1,10 +1,12 @@
 {
  "versao": 4,
- "geradoEm": "2026-10-13",
- "total": 4312,
- "batalha": 3865,
- "soEstudo": 447,
+ "geradoEm": "2026-10-15",
+ "total": 4536,
+ "batalha": 3967,
+ "soEstudo": 569,
  "comImagem": 630,
+ "simulados": 793,
+ "autorais": 234,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -13,6 +15,7 @@
    "total": 281,
    "batalha": 238,
    "comImagem": 41,
+   "simulados": 63,
    "tipos": {
     "Anatomia": 3,
     "Imagem": 38,
@@ -47,6 +50,7 @@
    "total": 248,
    "batalha": 221,
    "comImagem": 18,
+   "simulados": 76,
    "tipos": {
     "Imagem": 18,
     "Relâmpago": 230
@@ -78,6 +82,7 @@
    "total": 185,
    "batalha": 175,
    "comImagem": 61,
+   "simulados": 35,
    "tipos": {
     "Anatomia": 23,
     "Imagem": 38,
@@ -108,17 +113,23 @@
   "mao": {
    "nome": "Mão e punho",
    "arquivo": "mao.json",
-   "total": 937,
-   "batalha": 835,
+   "total": 1032,
+   "batalha": 882,
    "comImagem": 131,
+   "simulados": 114,
    "tipos": {
     "Anatomia": 31,
+    "Armadilha": 1,
+    "Classificação": 15,
+    "Conceito": 45,
     "Imagem": 100,
     "Na prova": 57,
-    "Relâmpago": 749
+    "Par confundível": 10,
+    "Relâmpago": 749,
+    "Tabela": 24
    },
    "assuntos": {
-    "Anatomia da mão e punho": 166,
+    "Anatomia da mão e punho": 261,
     "Lesões dos tendões flexores": 60,
     "Outras malformações congênitas": 55,
     "Fraturas dos metacarpos e falanges": 55,
@@ -166,6 +177,7 @@
    "total": 399,
    "batalha": 379,
    "comImagem": 90,
+   "simulados": 68,
    "tipos": {
     "Anatomia": 14,
     "Imagem": 76,
@@ -210,6 +222,7 @@
    "total": 78,
    "batalha": 72,
    "comImagem": 4,
+   "simulados": 22,
    "tipos": {
     "Imagem": 4,
     "Relâmpago": 74
@@ -231,6 +244,7 @@
    "total": 227,
    "batalha": 215,
    "comImagem": 54,
+   "simulados": 36,
    "tipos": {
     "Anatomia": 24,
     "Imagem": 30,
@@ -266,21 +280,26 @@
   "pediatria": {
    "nome": "Ortopedia pediátrica",
    "arquivo": "pediatria.json",
-   "total": 534,
-   "batalha": 493,
+   "total": 644,
+   "batalha": 542,
    "comImagem": 48,
+   "simulados": 0,
    "tipos": {
-    "Conceito": 5,
+    "Armadilha": 4,
+    "Classificação": 33,
+    "Conceito": 51,
     "Imagem": 48,
-    "Par confundível": 2,
+    "Na prova": 1,
+    "Par confundível": 5,
     "Relâmpago": 476,
-    "Tabela": 3
+    "Tabela": 26
    },
    "assuntos": {
-    "Genuvaro, genuvalgo e torções": 39,
-    "Lesões fisárias": 38,
+    "Lesões fisárias": 113,
+    "Genuvaro, genuvalgo e torções": 66,
     "Outras doenças congênitas": 26,
     "Displasia do desenvolvimento do quadril": 26,
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 24,
     "Fraturas do antebraço e punho na criança": 23,
     "Fraturas do fêmur e da perna na criança": 23,
     "Pé torto congênito": 22,
@@ -290,7 +309,6 @@
     "Doença de Legg-Calvé-Perthes": 18,
     "Marcha na criança": 16,
     "Epifisiólise proximal do fêmur": 16,
-    "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 16,
     "Displasias esqueléticas e síndromes": 15,
     "Artrogripose e doenças neuromusculares": 15,
     "Osteogênese imperfeita": 14,
@@ -327,6 +345,7 @@
    "total": 255,
    "batalha": 205,
    "comImagem": 74,
+   "simulados": 63,
    "tipos": {
     "Anatomia": 37,
     "Imagem": 37,
@@ -355,17 +374,23 @@
   "trauma": {
    "nome": "Trauma adulto",
    "arquivo": "trauma.json",
-   "total": 951,
-   "batalha": 827,
+   "total": 970,
+   "batalha": 833,
    "comImagem": 92,
+   "simulados": 300,
    "tipos": {
+    "Armadilha": 1,
+    "Classificação": 6,
+    "Conceito": 9,
     "Imagem": 92,
     "Na prova": 200,
-    "Relâmpago": 659
+    "Par confundível": 2,
+    "Relâmpago": 659,
+    "Tabela": 1
    },
    "assuntos": {
+    "Fratura da cabeça do rádio e instabilidade do cotovelo": 86,
     "Fratura da escápula": 73,
-    "Fratura da cabeça do rádio e instabilidade do cotovelo": 67,
     "Fraturas diafisárias do antebraço": 64,
     "Luxação acromioclavicular": 50,
     "Fratura da clavícula": 44,
@@ -409,6 +434,7 @@
    "total": 217,
    "batalha": 205,
    "comImagem": 17,
+   "simulados": 16,
    "tipos": {
     "Imagem": 17,
     "Relâmpago": 200
@@ -439,5 +465,5 @@
    }
   }
  },
- "assinatura": "88383f7399f7"
+ "assinatura": "e143cfdae36a"
 }

@@ -98,6 +98,19 @@ def niveis_de_incidencia() -> dict[str, int]:
 
 RARIDADE_POR_NIVEL = {4: "lendaria", 3: "epica", 2: "rara", 1: "comum"}
 
+# Coleção de origem. As questões dos OrtoQuestões Simulados (TEOT e TARO feitos pela casa)
+# entram na fábrica e nos autorais como as de prova, mas o flashcard leva a marca
+# "colecao": "simulados", para o app e o cronograma separarem as duas fontes. A regra
+# é a mesma de src/dados/acervo.ts (simuladoDeOrtopedia): simulado, sem prova e sem
+# área própria (o Fellowship Quadril tem prova e área, e fica de fora).
+COLECAO_SIMULADOS = "simulados"
+
+
+def colecao_da_questao(q: dict) -> str | None:
+    if q.get("simulado") and not q.get("prova") and (q.get("area") or "base") == "base":
+        return COLECAO_SIMULADOS
+    return None
+
 
 def hash_fonte(q: dict, c: dict) -> str:
     base = json.dumps([q.get("enunciado"), q.get("alternativas"), q.get("gabarito"), q.get("imagens"), c.get("correta"), c.get("conceito"), c.get("alerta"), c.get("provavel")], ensure_ascii=False, sort_keys=True)
@@ -275,6 +288,8 @@ def montar(q: dict, c: dict, area: dict, niveis: dict[str, int]) -> tuple[dict |
         "ano": q.get("ano"),
         "fonte": hash_fonte(q, c),
     }
+    if colecao_da_questao(q):
+        fc["colecao"] = colecao_da_questao(q)
     if imagens:
         im = imagens[0]
         fc["imagem"] = {"arquivo": im["arquivo"], "legenda": im.get("legenda") or ""}
@@ -347,14 +362,32 @@ def ordem_de_producao(questoes: dict, niveis: dict[str, int]) -> list[str]:
     return sorted(questoes, key=chave)
 
 
+def colecoes_do_acervo() -> dict[str, str]:
+    """id da questão -> coleção de origem, só para as que têm coleção (hoje, os Simulados)."""
+    out: dict[str, str] = {}
+    for arq in sorted(TEMAS.glob("*.json")):
+        for q in ler_json(arq)["questoes"]:
+            c = colecao_da_questao(q)
+            if c:
+                out[q["id"]] = c
+    return out
+
+
 def publicar(cartas_por_area: dict[str, list[dict]]) -> None:
     """Grava os arquivos das áreas: os flashcards da fábrica mais os autorais
     (scripts/flashcards/autorais/), que a fábrica nunca altera."""
     from autorais import ler_autorais
     SAIDA.mkdir(parents=True, exist_ok=True)
     autorais = ler_autorais()
+    colecoes = colecoes_do_acervo()
     for area in sorted(set(cartas_por_area) | set(autorais)):
         cartas = [f for f in cartas_por_area.get(area, []) if f.get("origem") != "autoral"] + autorais.get(area, [])
+        for f in cartas:
+            # marca (ou desmarca) a coleção de origem também nos flashcards gerados antes desta regra
+            if colecoes.get(f["questao"]):
+                f["colecao"] = colecoes[f["questao"]]
+            else:
+                f.pop("colecao", None)
         cartas.sort(key=lambda f: f["id"])
         gravar_json(SAIDA / f"{area}.json", {"versao": VERSAO_FABRICA, "area": area, "flashcards": cartas})
 
@@ -383,6 +416,7 @@ def reconstruir_indice(areas: dict, pub: dict[str, list[dict]], estado: dict) ->
             "total": len(cartas),
             "batalha": sum(1 for f in cartas if f["batalha"]),
             "comImagem": sum(1 for f in cartas if "imagem" in f),
+            "simulados": sum(1 for f in cartas if f.get("colecao") == COLECAO_SIMULADOS),
             "tipos": {t: sum(1 for f in cartas if f["tipo"] == t) for t in sorted({f["tipo"] for f in cartas})},
             "assuntos": dict(sorted(sub.items(), key=lambda kv: -kv[1])),
         }
@@ -394,6 +428,8 @@ def reconstruir_indice(areas: dict, pub: dict[str, list[dict]], estado: dict) ->
         "batalha": sum(1 for f in todos if f["batalha"]),
         "soEstudo": sum(1 for f in todos if not f["batalha"]),
         "comImagem": sum(1 for f in todos if "imagem" in f),
+        "simulados": sum(1 for f in todos if f.get("colecao") == COLECAO_SIMULADOS),
+        "autorais": sum(1 for f in todos if f.get("origem") == "autoral"),
         "quarentena": sum(1 for v in estado.get("processados", {}).values() if v["status"] == "quarentena"),
         "areas": por_area,
         "assinatura": hashlib.sha1("".join(sorted(f["id"] + f["fonte"] for f in todos)).encode()).hexdigest()[:12],

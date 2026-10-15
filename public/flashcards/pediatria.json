@@ -138,6 +138,123 @@
    "fonte": "24a78dc96c33"
   },
   {
+   "id": "fc-pediatria-0007-cl1",
+   "questao": "pediatria-0007",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Aitken da DFFP, qual tipo tem cabeça presente, acetábulo normal e defeito subtrocantérico que ossifica, deixando coxa vara?",
+   "resposta": "A",
+   "explicacao": "**Aitken A:** a falha cartilaginosa **ossifica** e sobra coxa vara grave. No **B**, a falha persiste como pseudoartrose do colo.",
+   "opcoes": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9387aba3ef4a",
+   "origem": "autoral",
+   "trecho": "| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0007-cl2",
+   "questao": "pediatria-0007",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Aitken da DFFP, qual tipo tem cabeça presente, mas a conexão com a diáfise não ossifica e fica uma pseudoartrose no colo?",
+   "resposta": "B",
+   "explicacao": "**Aitken B:** cabeça presente, acetábulo adequado ou levemente displásico, **pseudoartrose** persistente no colo. Nos tipos A e B existe quadril potencial.",
+   "opcoes": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9387aba3ef4a",
+   "origem": "autoral",
+   "trecho": "| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0007-cl3",
+   "questao": "pediatria-0007",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Aitken da DFFP, qual tipo tem cabeça e acetábulo ausentes e fêmur muito curto?",
+   "resposta": "D",
+   "explicacao": "**Aitken D:** sem cabeça, sem acetábulo, sem articulação. Nos tipos C e D, a regra é a **adaptação protética**.",
+   "opcoes": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9387aba3ef4a",
+   "origem": "autoral",
+   "trecho": "| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0007-co1",
+   "questao": "pediatria-0007",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na rotacionplastia de Van Nes, para deficiências femorais graves, o tornozelo é girado quantos graus para funcionar como joelho?",
+   "resposta": "180°",
+   "explicacao": "**180°:** o tornozelo rodado vira um \"joelho\" dentro da prótese.",
+   "opcoes": [
+    "180°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9387aba3ef4a",
+   "origem": "autoral",
+   "trecho": "**rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0007-q",
    "questao": "pediatria-0007",
    "area": "Ortopedia pediátrica",
@@ -192,6 +309,33 @@
    "fonte": "016832ebaff4"
   },
   {
+   "id": "fc-pediatria-0009-co1",
+   "questao": "pediatria-0009",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia fibular, como se corrige o joelho valgo dado pela hipoplasia do côndilo lateral?",
+   "resposta": "hemiepifisiodese medial",
+   "explicacao": "**Hemiepifisiodese medial**, junto com o alongamento e a reconstrução do tornozelo (SUPERankle de Paley).",
+   "opcoes": [
+    "hemiepifisiodese medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a6a9d55f8c17",
+   "origem": "autoral",
+   "trecho": "correção do valgo do joelho por **hemiepifisiodese** medial",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0009-q",
    "questao": "pediatria-0009",
    "area": "Ortopedia pediátrica",
@@ -217,6 +361,91 @@
    "prova": "TARO",
    "ano": 2020,
    "fonte": "a6a9d55f8c17"
+  },
+  {
+   "id": "fc-pediatria-0009-tb1",
+   "questao": "pediatria-0009",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pela classificação de Frantz e O'Rahilly, como se classifica a ausência da fíbula com ausência dos raios laterais do pé?",
+   "resposta": "Longitudinal terminal",
+   "explicacao": "**Longitudinal terminal:** falta um lado do membro até a ponta. Com o pé normal, seria **longitudinal intercalar**.",
+   "opcoes": [
+    "Longitudinal terminal",
+    "Longitudinal intercalar",
+    "Transversal terminal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a6a9d55f8c17",
+   "origem": "autoral",
+   "trecho": "| Ausência da fíbula **com ausência** dos raios laterais do pé | Longitudinal **terminal** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0009-tb2",
+   "questao": "pediatria-0009",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pela classificação de Frantz e O'Rahilly, como se classifica a focomelia, em que a mão sai do ombro?",
+   "resposta": "Transversal intercalar",
+   "explicacao": "**Transversal intercalar:** falta um segmento intermediário em toda a largura, com as partes distais presentes.",
+   "opcoes": [
+    "Transversal intercalar",
+    "Transversal terminal",
+    "Longitudinal intercalar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a6a9d55f8c17",
+   "origem": "autoral",
+   "trecho": "| Focomelia | Transversal intercalar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0009-tb3",
+   "questao": "pediatria-0009",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia fibular, qual coalizão tarsal acompanha o pé em equinovalgo?",
+   "resposta": "talocalcaneana",
+   "explicacao": "**Coalizão talocalcaneana**, com ausência de raios laterais e tornozelo em \"bola e soquete\".",
+   "opcoes": [
+    "talocalcaneana"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a6a9d55f8c17",
+   "origem": "autoral",
+   "trecho": "| **Pé** | **Equinovalgo**, **coalizão tarsal** (talocalcaneana), ausência dos raios laterais",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0010-q",
@@ -271,6 +500,144 @@
    "prova": "TARO",
    "ano": 2020,
    "fonte": "7b6a89d91d32"
+  },
+  {
+   "id": "fc-pediatria-0013-cl1",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Jones da hemimelia tibial, qual tipo é a ausência completa da tíbia com epífise distal do fêmur hipoplásica?",
+   "resposta": "1a",
+   "explicacao": "**Jones 1a:** tíbia totalmente ausente. No **1b**, a tíbia proximal existe mas não está ossificada ao nascer.",
+   "opcoes": [
+    "1a",
+    "1b",
+    "2",
+    "4"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "| **1a** | **Ausência completa** da tíbia; epífise distal do fêmur **hipoplásica** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-cl2",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Jones da hemimelia tibial, o que caracteriza o tipo 4?",
+   "resposta": "Diástase tibiofibular distal",
+   "explicacao": "**Jones 4: diástase tibiofibular distal**; trata-se com reconstrução da pinça do tornozelo ou Syme.",
+   "opcoes": [
+    "Diástase tibiofibular distal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "| 4 | **Diástase** tibiofibular distal |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-cl3",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia tibial tipo 1b de Jones, como está a tíbia proximal ao nascer?",
+   "resposta": "não ossificada",
+   "explicacao": "**Presente, mas não ossificada**: só aparece na ultrassonografia ou na ressonância.",
+   "opcoes": [
+    "não ossificada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "| 1b | Tíbia proximal presente, mas **não ossificada** ao nascer (vista na ultrassonografia ou ressonância) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-co1",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia tibial tipo 1 de Jones, qual achado define o tratamento?",
+   "resposta": "quadríceps funcionante",
+   "explicacao": "**Quadríceps funcionante.** Sem ele: **desarticulação do joelho** e prótese. Com extensão ativa: pode-se tentar centralizar a fíbula (Brown).",
+   "opcoes": [
+    "quadríceps funcionante"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "No tipo 1, o que define o tratamento é a **presença de um quadríceps funcionante**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0013-co2",
+   "questao": "pediatria-0013",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemimelia tibial tipo 1a com quadríceps e extensão ativa, qual cirurgia centraliza a fíbula sob o fêmur?",
+   "resposta": "Brown",
+   "explicacao": "**Cirurgia de Brown:** centralização da fíbula. Os resultados são irregulares, com contratura em flexão.",
+   "opcoes": [
+    "Brown"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "ed7c7e3fd012",
+   "origem": "autoral",
+   "trecho": "pode-se tentar a **centralização da fíbula** sob o fêmur (cirurgia de Brown)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0013-q",
@@ -706,6 +1073,114 @@
    "fonte": "012285a91b08"
   },
   {
+   "id": "fc-pediatria-0032-ar1",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Antes da fratura, faz-se osteotomia corretiva para endireitar a tíbia com encurvamento anterolateral?",
+   "resposta": "Não",
+   "explicacao": "**Não:** a osteotomia vira pseudoartrose. Protege-se a tíbia com **órtese** (concha, AFO ou KAFO).",
+   "opcoes": [
+    "Não"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "**Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-co1",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na pseudoartrose congênita da tíbia, qual tecido ao redor do foco estrangula o osso e precisa ser ressecado?",
+   "resposta": "hamartoma fibroso",
+   "explicacao": "**Hamartoma fibroso** com periósteo espessado. A ressecção completa é parte fundamental da cirurgia.",
+   "opcoes": [
+    "hamartoma fibroso"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-co2",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No encurvamento congênito posteromedial da tíbia, qual é a discrepância de comprimento média ao fim do crescimento?",
+   "resposta": "3 a 4 cm",
+   "explicacao": "**Em média 3 a 4 cm.** A angulação se corrige sozinha, mas a discrepância persiste: epifisiodese contralateral ou alongamento.",
+   "opcoes": [
+    "3 a 4 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "Ao final, chega em média a **3 a 4 cm**, com variação ampla.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-co3",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na pseudoartrose congênita da tíbia, qual técnica que une tíbia e fíbula tem mostrado bons resultados?",
+   "resposta": "cross-union",
+   "explicacao": "**Cross-union**, junto com ressecção do hamartoma, haste ou Ilizarov e enxerto autólogo.",
+   "opcoes": [
+    "cross-union"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0032-q",
    "questao": "pediatria-0032",
    "area": "Ortopedia pediátrica",
@@ -731,6 +1206,63 @@
    "prova": "TARO",
    "ano": 2018,
    "fonte": "f502731271d3"
+  },
+  {
+   "id": "fc-pediatria-0032-tb1",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual direção de encurvamento congênito da tíbia indica pseudoartrose congênita, ligada à NF1, de mau prognóstico?",
+   "resposta": "Anterolateral",
+   "explicacao": "**Anterolateral é a ruim:** tende a fraturar e não consolidar. Posteromedial é benigno; anteromedial acompanha a hemimelia fibular.",
+   "opcoes": [
+    "Anterolateral",
+    "Posteromedial",
+    "Anteromedial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0032-tb2",
+   "questao": "pediatria-0032",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O encurvamento congênito anteromedial da tíbia, com covinha cutânea, acompanha qual deficiência?",
+   "resposta": "Hemimelia fibular",
+   "explicacao": "**Hemimelia fibular:** discrepância importante e deformidade do pé e do tornozelo.",
+   "opcoes": [
+    "Hemimelia fibular",
+    "Pseudoartrose congênita"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f502731271d3",
+   "origem": "autoral",
+   "trecho": "| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0033-q",
@@ -1020,6 +1552,34 @@
     "largura": 369,
     "altura": 296
    }
+  },
+  {
+   "id": "fc-pediatria-0045-cl1",
+   "questao": "pediatria-0045",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções",
+    "Pseudartrose congênita da tíbia e deformidades da perna"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Paley da deficiência femoral congênita, o que caracteriza o tipo 4?",
+   "resposta": "fêmur distal ausente",
+   "explicacao": "**Paley 1 a 4:** do fêmur intacto (ossificação normal ou retardada) ao **fêmur distal ausente**. Orienta a reconstrução em etapas.",
+   "opcoes": [
+    "fêmur distal ausente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "f4f81208e238",
+   "origem": "autoral",
+   "trecho": "tipo 1 (fêmur intacto, com ossificação normal ou retardada) até tipo 4 (fêmur distal ausente)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0045-q",
@@ -1673,6 +2233,61 @@
    "fonte": "8445d0422786"
   },
   {
+   "id": "fc-pediatria-0076-cl1",
+   "questao": "pediatria-0076",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Gillespie da deficiência femoral, qual é a indicação para o grupo B, a DFFP verdadeira com fêmur abaixo de 50%?",
+   "resposta": "Adaptação protética",
+   "explicacao": "**Grupo B: adaptação protética** (Syme, artrodese do joelho, rotacionplastia). **Grupo A:** alongamento e reconstrução.",
+   "opcoes": [
+    "Adaptação protética",
+    "Alongamento"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "e19af94cf01b",
+   "origem": "autoral",
+   "trecho": "| **B** | **DFFP verdadeira**: fêmur com **menos de 50%**; quadril instável; o pé fica na altura do **joelho** contralateral ou acima | **Adaptação protética** (amputação de Syme, artrodese do joelho, rotacionplastia) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0076-co1",
+   "questao": "pediatria-0076",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na deficiência femoral, o percentual de encurtamento é constante. Qual método estima cedo a discrepância final?",
+   "resposta": "multiplicador de Paley",
+   "explicacao": "**Método multiplicador de Paley.** Até cerca de 15 a 20 cm previstos podem ser tratados com alongamentos em centros experientes.",
+   "opcoes": [
+    "multiplicador de Paley"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "e19af94cf01b",
+   "origem": "autoral",
+   "trecho": "a discrepância final pode ser estimada cedo (método multiplicador de Paley)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0076-q",
    "questao": "pediatria-0076",
    "area": "Ortopedia pediátrica",
@@ -1890,6 +2505,60 @@
    "fonte": "b8132c106190"
   },
   {
+   "id": "fc-pediatria-0085-co1",
+   "questao": "pediatria-0085",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na coxa vara congênita, como se chama o fragmento ósseo triangular entre as duas linhas em V invertido do colo?",
+   "resposta": "triângulo de Fairbank",
+   "explicacao": "**Triângulo de Fairbank**, na porção **inferomedial** do colo, junto à fise.",
+   "opcoes": [
+    "triângulo de Fairbank"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "83666d4bb240",
+   "origem": "autoral",
+   "trecho": "Entre elas fica um **fragmento ósseo triangular**: o **triângulo de Fairbank**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0085-co2",
+   "questao": "pediatria-0085",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a marcha típica da criança com coxa vara congênita?",
+   "resposta": "Trendelenburg indolor",
+   "explicacao": "**Trendelenburg indolor:** o trocânter alto encurta e enfraquece o glúteo médio. Há também limitação da abdução e da rotação interna.",
+   "opcoes": [
+    "Trendelenburg indolor"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "83666d4bb240",
+   "origem": "autoral",
+   "trecho": "Marcha de **Trendelenburg indolor** (o glúteo médio encurtado e enfraquecido pelo trocânter alto)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0085-q",
    "questao": "pediatria-0085",
    "area": "Ortopedia pediátrica",
@@ -1915,6 +2584,61 @@
    "prova": "TARO",
    "ano": 2014,
    "fonte": "83666d4bb240"
+  },
+  {
+   "id": "fc-pediatria-0085-tb1",
+   "questao": "pediatria-0085",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na coxa vara congênita, com ângulo de Hilgenreiner-epifisário maior que 60°, qual é a conduta?",
+   "resposta": "osteotomia valgizante",
+   "explicacao": "**Acima de 60°:** tende a progredir, **osteotomia valgizante** subtrocantérica. **Abaixo de 45°:** tende a corrigir; observar.",
+   "opcoes": [
+    "osteotomia valgizante",
+    "observar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "83666d4bb240",
+   "origem": "autoral",
+   "trecho": "| **Maior que 60°** | Tende a **progredir**; **osteotomia valgizante** subtrocantérica |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0085-tb2",
+   "questao": "pediatria-0085",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na coxa vara congênita, como evolui o quadril com ângulo de Hilgenreiner-epifisário menor que 45°?",
+   "resposta": "corrigir espontaneamente",
+   "explicacao": "**Abaixo de 45°: tende a corrigir espontaneamente**; observar. De 45 a 60°: acompanhar.",
+   "opcoes": [
+    "corrigir espontaneamente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "83666d4bb240",
+   "origem": "autoral",
+   "trecho": "| Menor que 45° | Tende a **corrigir espontaneamente**; observar |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0086-q",
@@ -2876,6 +3600,34 @@
    "prova": "TARO",
    "ano": 2022,
    "fonte": "7872da135593"
+  },
+  {
+   "id": "fc-pediatria-0132-co1",
+   "questao": "pediatria-0132",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções",
+    "Pseudartrose congênita da tíbia e deformidades da perna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a deficiência longitudinal mais comum dos ossos longos?",
+   "resposta": "hemimelia fibular",
+   "explicacao": "**Hemimelia fibular:** fíbula ausente ou hipoplásica, tíbia curta com arqueamento **anteromedial**, pé equinovalgo, joelho valgo e cruzados ausentes.",
+   "opcoes": [
+    "hemimelia fibular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "4ffd5bdf22f7",
+   "origem": "autoral",
+   "trecho": "**A hemimelia fibular.** É a deficiência longitudinal **mais comum** dos ossos longos.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0132-q",
@@ -8773,6 +9525,233 @@
    "fonte": "4e44a511a340"
   },
   {
+   "id": "fc-pediatria-0515-cl1",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet da fratura do colo do fêmur na criança, qual tipo é o transcervical, no meio do colo, com necrose em cerca de 50%?",
+   "resposta": "II",
+   "explicacao": "**Delbet II (transcervical):** necrose **alta**, cerca de 50%. É também o tipo **mais frequente** (40 a 50% dos casos).",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "| **II** | **Transcervical**: no meio do colo | **Alta**, cerca de 50% |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-cl2",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet, onde fica a fratura do colo do fêmur do tipo III, com necrose em cerca de 25%?",
+   "resposta": "Cervicotrocantérico",
+   "explicacao": "**Delbet III: cervicotrocantérica (basocervical)**, necrose em cerca de 25%. Quanto mais **proximal**, maior o risco.",
+   "opcoes": [
+    "Transepifisário",
+    "Transcervical",
+    "Cervicotrocantérico",
+    "Intertrocantérico"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "| **III** | **Cervicotrocantérico** (basocervical) | Cerca de 25% |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-cl3",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual tipo de Delbet, intertrocantérico, tem o menor risco de necrose avascular da cabeça femoral na criança?",
+   "resposta": "IV",
+   "explicacao": "**Delbet IV (intertrocantérico):** necrose baixa, cerca de **10% ou menos**. A regra: quanto mais proximal a fratura, maior o risco.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "| **IV** | **Intertrocantérico** | Baixa, cerca de 10% ou menos |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-cl4",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o tipo de Delbet mais frequente entre as fraturas do colo do fêmur na criança?",
+   "resposta": "tipo II, transcervical",
+   "explicacao": "**Tipo II (transcervical):** 40 a 50% dos casos; depois o III (30 a 35%); o IV é menos frequente e o I é o mais raro, abaixo de 10%.",
+   "opcoes": [
+    "tipo II, transcervical"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "O **tipo II, transcervical**, responde por cerca de **40 a 50%** dos casos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-co1",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura desviada do colo do fêmur da criança, qual gesto, além da redução e fixação, diminui a tamponada do hematoma?",
+   "resposta": "descompressão da cápsula",
+   "explicacao": "**Descompressão da cápsula** (capsulotomia ou aspiração). A tamponada intracapsular piora a perfusão da cabeça.",
+   "opcoes": [
+    "descompressão da cápsula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "**descompressão da cápsula** (capsulotomia ou aspiração), que reduz a tamponada;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-co2",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na criança, a cabeça femoral depende quase só de quais vasos, que sobem pela face posterossuperior do colo?",
+   "resposta": "vasos retinaculares",
+   "explicacao": "**Vasos retinaculares**, ramos da **circunflexa femoral medial**. A artéria do ligamento redondo contribui pouco e a fise barra os vasos metafisários.",
+   "opcoes": [
+    "vasos retinaculares",
+    "artéria do ligamento redondo",
+    "vasos metafisários"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "a cabeça femoral depende quase só dos **vasos retinaculares** (ramos da **artéria circunflexa femoral medial**)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-co3",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os vasos retinaculares que nutrem a cabeça femoral da criança são ramos de qual artéria?",
+   "resposta": "circunflexa femoral medial",
+   "explicacao": "**Artéria circunflexa femoral medial.** A fratura desviada do colo rompe esses ramos, daí o risco de necrose.",
+   "opcoes": [
+    "circunflexa femoral medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "(ramos da **artéria circunflexa femoral medial**), que sobem pela face posterossuperior do colo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-pc1",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No tipo IA de Delbet, a epífise femoral descolada permanece no acetábulo. E no tipo IB, o que acontece com ela?",
+   "resposta": "se luxa para fora do acetábulo",
+   "explicacao": "**IB:** a epífise **luxa para fora do acetábulo**; risco de necrose próximo de **100%** e, em geral, redução aberta.",
+   "opcoes": [
+    "se luxa para fora do acetábulo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "- **IB**: a epífise **se luxa para fora do acetábulo**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0515-q",
    "questao": "pediatria-0515",
    "area": "Ortopedia pediátrica",
@@ -8798,6 +9777,90 @@
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
    "fonte": "800ce836c35a"
+  },
+  {
+   "id": "fc-pediatria-0516-co1",
+   "questao": "pediatria-0516",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a fratura metafisária da tíbia proximal da criança pequena, por mecanismo em valgo, que pode deixar valgo progressivo?",
+   "resposta": "Cozen",
+   "explicacao": "**Fratura de Cozen:** metafisária, em valgo, na criança pequena; pode evoluir com **valgo progressivo**.",
+   "opcoes": [
+    "Cozen"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "47008b0b4403",
+   "origem": "autoral",
+   "trecho": "como a fratura de **Cozen** (em valgo), que pode deixar valgo progressivo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0516-tb1",
+   "questao": "pediatria-0516",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mubarak das fraturas da tíbia proximal na criança, o mecanismo de extensão ameaça qual artéria?",
+   "resposta": "artéria poplítea",
+   "explicacao": "**Extensão:** desvio posterior da metáfise, com risco à **artéria poplítea**. Varo: risco ao nervo fibular.",
+   "opcoes": [
+    "artéria poplítea"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "47008b0b4403",
+   "origem": "autoral",
+   "trecho": "| Extensão | Desvio posterior da metáfise: risco à artéria poplítea |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0516-tb2",
+   "questao": "pediatria-0516",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mubarak das fraturas da tíbia proximal na criança, o mecanismo em varo coloca em risco qual nervo?",
+   "resposta": "nervo fibular",
+   "explicacao": "**Varo:** fratura fisária ou metafisária com risco ao **nervo fibular**. Extensão: risco à artéria poplítea.",
+   "opcoes": [
+    "nervo fibular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "47008b0b4403",
+   "origem": "autoral",
+   "trecho": "| Varo | Fisária ou metafisária, com risco ao nervo fibular |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0518-q",
@@ -9501,6 +10564,88 @@
    "fonte": "1122856faa82"
   },
   {
+   "id": "fc-pediatria-0552-ar1",
+   "questao": "pediatria-0552",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fise distal do fêmur, a Salter-Harris II tem prognóstico tão bom quanto em outras fises? Qual o risco de lesão do crescimento citado em algumas séries?",
+   "resposta": "30% a 50%",
+   "explicacao": "**Não.** Pela forma **ondulada** da fise e pela **alta energia** do trauma, mesmo o tipo II do fêmur distal tem **30% a 50%** de lesão do crescimento. O seguimento vai até o fim do crescimento.",
+   "opcoes": [
+    "30% a 50%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d12dc8a4ca85",
+   "origem": "autoral",
+   "trecho": "na distal do fêmur **mesmo o tipo II** tem alto risco de **lesão do crescimento** (de **30% a 50%** em algumas séries)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0552-co1",
+   "questao": "pediatria-0552",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fise distal do fêmur é a maior e a de crescimento mais rápido do corpo. Qual percentual do crescimento do fêmur ela responde?",
+   "resposta": "70%",
+   "explicacao": "**Cerca de 70%** do fêmur e **40%** do membro inferior (cerca de 1 cm por ano). Por isso a parada de crescimento ali tem grande repercussão.",
+   "opcoes": [
+    "70%",
+    "40%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d12dc8a4ca85",
+   "origem": "autoral",
+   "trecho": "responde por cerca de **70%** do crescimento do fêmur e **40%** do membro inferior",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0552-co2",
+   "questao": "pediatria-0552",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da fise distal do fêmur por hiperextensão, com o fragmento distal desviado para anterior, qual artéria corre risco?",
+   "resposta": "artéria poplítea",
+   "explicacao": "**Artéria poplítea**, sobretudo na **hiperextensão**. Outras complicações: lesão do nervo fibular, lesão ligamentar e síndrome compartimental.",
+   "opcoes": [
+    "artéria poplítea"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d12dc8a4ca85",
+   "origem": "autoral",
+   "trecho": "Lesão da **artéria poplítea** (sobretudo na hiperextensão, com o fragmento distal desviado para anterior)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0552-q",
    "questao": "pediatria-0552",
    "area": "Ortopedia pediátrica",
@@ -9526,6 +10671,66 @@
    "prova": "TARO",
    "ano": 2023,
    "fonte": "d12dc8a4ca85"
+  },
+  {
+   "id": "fc-pediatria-0552-tb1",
+   "questao": "pediatria-0552",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas fraturas da fise distal do fêmur, qual tipo de Salter-Harris é o mais frequente?",
+   "resposta": "II",
+   "explicacao": "**Salter-Harris II:** traço pela fise com fragmento metafisário (**Thurston-Holland**). No fêmur distal, mesmo o tipo II tem alto risco de lesão do crescimento.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d12dc8a4ca85",
+   "origem": "autoral",
+   "trecho": "| **II** | O **mais frequente**: traço pela fise com fragmento metafisário (o fragmento de Thurston-Holland) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0552-tb2",
+   "questao": "pediatria-0552",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fise distal do fêmur, qual tipo de Salter-Harris é comum no côndilo medial e é intra-articular?",
+   "resposta": "III",
+   "explicacao": "**Salter-Harris III** do côndilo **medial**: força em valgo transmitida pelo colateral tibial, com traço pela fise e pela epífise até a articulação.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d12dc8a4ca85",
+   "origem": "autoral",
+   "trecho": "| III | Comum no côndilo **medial**; intra-articular |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0553-q",
@@ -9637,6 +10842,177 @@
    "prova": "TEOT",
    "ano": 2024,
    "fonte": "7167649b131e"
+  },
+  {
+   "id": "fc-pediatria-0559-cl1",
+   "questao": "pediatria-0559",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na sigla SALTR de Salter-Harris, qual tipo corresponde ao 'Rammed', a compressão da fise com diagnóstico retrospectivo?",
+   "resposta": "V",
+   "explicacao": "**Tipo V (Rammed):** **compressão** da fise, reconhecida só depois, pelo distúrbio de crescimento. Prognóstico **ruim**.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "1055485a127b",
+   "origem": "autoral",
+   "trecho": "| **V** (Rammed) | **Compressão** da fise; diagnóstico retrospectivo | Ruim |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0559-cl2",
+   "questao": "pediatria-0559",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual tipo de Salter-Harris atravessa metáfise, fise e epífise e tem alto risco de barra óssea?",
+   "resposta": "IV",
+   "explicacao": "**Tipo IV (Through):** o traço cruza **metáfise, fise e epífise**; a epífise e a metáfise podem se tocar e formar **barra**.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "1055485a127b",
+   "origem": "autoral",
+   "trecho": "| **IV** (Through) | Atravessa **metáfise, fise e epífise** | Alto risco de barra |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0559-cl3",
+   "questao": "pediatria-0559",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual tipo de Salter-Harris passa pela fise e pela epífise até a articulação, sem fragmento metafisário, e exige redução anatômica?",
+   "resposta": "III",
+   "explicacao": "**Tipo III (Lower):** fise e **epífise** até a superfície articular. Intra-articular: exige **redução anatômica**.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "1055485a127b",
+   "origem": "autoral",
+   "trecho": "| **III** (Lower) | Fise e **epífise**, até a articulação | Exige redução anatômica |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0559-cl4",
+   "questao": "pediatria-0559",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O tipo VI acrescentado por Rang lesa a periferia da fise. Além da zona de Ranvier, qual estrutura fibrosa é atingida?",
+   "resposta": "anel pericondral de LaCroix",
+   "explicacao": "**Tipo VI de Rang:** lesão do **anel pericondral (LaCroix)** e da **zona de Ranvier**, por abrasão, queimadura, trauma direto ou avulsão ligamentar. Risco de **ponte óssea periférica**.",
+   "opcoes": [
+    "anel pericondral de LaCroix"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "1055485a127b",
+   "origem": "autoral",
+   "trecho": "a lesão do **anel pericondral** (de **LaCroix**) e da **zona de Ranvier**, na **periferia** da fise",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0559-co1",
+   "questao": "pediatria-0559",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Salter-Harris II, o traço passa pela fise e sai pela metáfise. Que nome recebe esse fragmento metafisário?",
+   "resposta": "Thurston-Holland",
+   "explicacao": "**Fragmento de Thurston-Holland:** o triângulo de metáfise da Salter-Harris **II**, o tipo **mais comum**.",
+   "opcoes": [
+    "Thurston-Holland"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "1055485a127b",
+   "origem": "autoral",
+   "trecho": "Fise e metáfise (fragmento de Thurston-Holland): o **mais comum**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0559-co2",
+   "questao": "pediatria-0559",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após lesão tipo VI de Rang, a ponte óssea periférica pode ser ressecada cedo. Qual técnica é citada?",
+   "resposta": "Langenskiöld",
+   "explicacao": "**Técnica de Langenskiöld:** ressecção precoce da ponte. Outra opção é a **hemiepifisiodese** do lado oposto antes de a deformidade se instalar.",
+   "opcoes": [
+    "Langenskiöld"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "1055485a127b",
+   "origem": "autoral",
+   "trecho": "a ponte periférica pode ser ressecada cedo (técnica de Langenskiöld) ou tratada com hemiepifisiodese do lado oposto",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0559-q",
@@ -9840,6 +11216,87 @@
    "fonte": "2dae4c443f5e"
   },
   {
+   "id": "fc-pediatria-0569-cl1",
+   "questao": "pediatria-0569",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas epífises tipo A de Dale e Harris, quase toda recobertas por cartilagem, por onde chegam os vasos epifisários?",
+   "resposta": "subindo pelo colo junto à fise",
+   "explicacao": "**Tipo A:** os vasos chegam pela periferia, **subindo pelo colo junto à fise**; na separação epifisária eles **rompem junto**, com risco de necrose e parada do crescimento.",
+   "opcoes": [
+    "subindo pelo colo junto à fise"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "850af4b51843",
+   "origem": "autoral",
+   "trecho": "Os vasos não têm por onde entrar diretamente e chegam pela periferia, **subindo pelo colo junto à fise**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0569-co1",
+   "questao": "pediatria-0569",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A epífise tipo A de Dale e Harris do fêmur proximal explica o alto risco de necrose em qual tipo de fratura do colo do fêmur da criança?",
+   "resposta": "Delbet I",
+   "explicacao": "**Delbet I** (transepifisária), sobretudo a **IB**. No rádio proximal, a mesma lógica vale para as fraturas desviadas do colo do rádio.",
+   "opcoes": [
+    "Delbet I"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "850af4b51843",
+   "origem": "autoral",
+   "trecho": "explica o alto risco de necrose na fratura **Delbet I** do colo do fêmur (sobretudo a IB)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0569-pc1",
+   "questao": "pediatria-0569",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na separação epifisária, os vasos das epífises tipo A de Dale e Harris rompem. E nas epífises tipo B, o que acontece com a irrigação?",
+   "resposta": "preservada",
+   "explicacao": "**Tipo B:** os vasos entram por **áreas sem cartilagem**, longe da fise; a irrigação da camada germinativa é **preservada**. São todas as epífises, menos fêmur proximal e rádio proximal.",
+   "opcoes": [
+    "preservada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "850af4b51843",
+   "origem": "autoral",
+   "trecho": "**tipo B**: os vasos entram na epífise por **áreas sem cartilagem**, longe da fise. Numa separação epifisária, a irrigação é preservada.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0569-q",
    "questao": "pediatria-0569",
    "area": "Ortopedia pediátrica",
@@ -9865,6 +11322,63 @@
    "prova": "TARO",
    "ano": 2022,
    "fonte": "850af4b51843"
+  },
+  {
+   "id": "fc-pediatria-0570-co1",
+   "questao": "pediatria-0570",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Depois do fêmur distal, qual fise forma barra com frequência após Salter-Harris III e IV e evolui com varo?",
+   "resposta": "maléolo medial",
+   "explicacao": "O **maléolo medial** forma barra com frequência e causa **varo**, mas a parada de crescimento é mais comum no **fêmur distal**.",
+   "opcoes": [
+    "Maléolo medial",
+    "Tíbia proximal",
+    "Fêmur proximal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "07c871d2bd07",
+   "origem": "autoral",
+   "trecho": "O **maléolo medial** (Salter-Harris III e IV) também forma barra com frequência e causa varo, mas o fêmur distal lidera.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0570-pc1",
+   "questao": "pediatria-0570",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após Salter-Harris III ou IV, a barra óssea periférica causa deformidade angular. E a barra central, que tipo de parada causa?",
+   "resposta": "linear",
+   "explicacao": "**Barra central:** parada **linear**, com **encurtamento**. **Barra periférica:** deformidade **angular** (varo ou valgo).",
+   "opcoes": [
+    "linear",
+    "deformidade angular"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "07c871d2bd07",
+   "origem": "autoral",
+   "trecho": "se for central, causa parada **linear** (encurtamento); se for periférica, deformidade angular",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0570-q",
@@ -10028,6 +11542,66 @@
    "prova": "SBOT-SP",
    "ano": null,
    "fonte": "5c57ff41b4d6"
+  },
+  {
+   "id": "fc-pediatria-0581-cl1",
+   "questao": "pediatria-0581",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Ratliff da necrose após fratura do colo do fêmur na criança, qual tipo atinge toda a cabeça femoral e tem o pior prognóstico?",
+   "resposta": "I",
+   "explicacao": "**Ratliff I:** necrose de **toda a cabeça** (epífise total), às vezes com parte do colo, por lesão de todos os vasos epifisários. Evolui com colapso e deformidade.",
+   "opcoes": [
+    "I",
+    "II",
+    "III"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "444a3ca6190e",
+   "origem": "autoral",
+   "trecho": "| **I** | **Toda a cabeça** femoral (epífise total), às vezes com parte do colo | **O pior**: colapso e deformidade |",
+   "criadoEm": "2026-10-15",
+   "alerta": "Na classificação de Ratliff original, o tipo II é a necrose parcial da cabeça e o tipo III acomete o colo (metáfise), do traço de fratura até a fise. A banca indicou epifisária parcial para o tipo III; a alternativa A seria defensável."
+  },
+  {
+   "id": "fc-pediatria-0581-co1",
+   "questao": "pediatria-0581",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Depois de uma fratura do colo do fêmur na criança, em geral em quanto tempo aparece a necrose avascular da cabeça?",
+   "resposta": "1 a 2 anos",
+   "explicacao": "Nos primeiros **1 a 2 anos**. Por isso o seguimento radiográfico deve durar pelo menos esse tempo.",
+   "opcoes": [
+    "1 a 2 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "444a3ca6190e",
+   "origem": "autoral",
+   "trecho": "Em geral, nos primeiros **1 a 2 anos** após a fratura.",
+   "criadoEm": "2026-10-15",
+   "alerta": "Na classificação de Ratliff original, o tipo II é a necrose parcial da cabeça e o tipo III acomete o colo (metáfise), do traço de fratura até a fise. A banca indicou epifisária parcial para o tipo III; a alternativa A seria defensável."
   },
   {
    "id": "fc-pediatria-0582-q",
@@ -10249,6 +11823,60 @@
    "prova": "TARO",
    "ano": 2021,
    "fonte": "e3938d77020d"
+  },
+  {
+   "id": "fc-pediatria-0590-ar1",
+   "questao": "pediatria-0590",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Adolescente com fise aberta e aparente lesão do colateral após trauma em varo ou valgo no joelho. Que lesão deve sempre ser lembrada?",
+   "resposta": "lesão fisária",
+   "explicacao": "Os colaterais se inserem na **epífise** e são mais resistentes que a fise: quem rompe é a **fise**. Investigar com radiografias em estresse ou ressonância.",
+   "opcoes": [
+    "lesão fisária"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "813f935c6b78",
+   "origem": "autoral",
+   "trecho": "no adolescente com \"lesão ligamentar\" do joelho e fise aberta, deve-se sempre pensar na lesão fisária (radiografias em estresse ou ressonância)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0590-co1",
+   "questao": "pediatria-0590",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas fraturas Salter-Harris III e IV do fêmur distal, qual degrau articular é o limite da redução anatômica?",
+   "resposta": "menor que 2 mm",
+   "explicacao": "Redução **anatômica** (degrau **menor que 2 mm**) e fixação com **parafusos epifisários paralelos à fise**.",
+   "opcoes": [
+    "menor que 2 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "813f935c6b78",
+   "origem": "autoral",
+   "trecho": "As fraturas III e IV do fêmur distal exigem redução **anatômica** (degrau articular menor que 2 mm) e fixação com parafusos epifisários paralelos à fise.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0590-q",
@@ -10589,6 +12217,178 @@
    "fonte": "067dbab31e0a"
   },
   {
+   "id": "fc-pediatria-0602-cl1",
+   "questao": "pediatria-0602",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Watson-Jones da fratura da tuberosidade anterior da tíbia, qual tipo tem traço que entra na articulação atravessando a epífise?",
+   "resposta": "III",
+   "explicacao": "**Watson-Jones III:** o traço atravessa a **epífise** até a **articulação**; comporta-se como Salter-Harris III ou IV. Avaliar menisco e superfície articular.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "2b8dbe52750a",
+   "origem": "autoral",
+   "trecho": "| III | Traço que se estende **para dentro da articulação**, atravessando a epífise |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0602-cl2",
+   "questao": "pediatria-0602",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da tuberosidade anterior da tíbia, qual tipo da classificação de Watson-Jones modificada tem traço por toda a fise proximal da tíbia, saindo posteriormente?",
+   "resposta": "IV",
+   "explicacao": "**Tipo IV (Ryu):** percorre **toda a fise** proximal da tíbia e sai posteriormente; comporta-se como **Salter-Harris II**.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "2b8dbe52750a",
+   "origem": "autoral",
+   "trecho": "| IV (Ryu) | Traço por **toda a fise** proximal da tíbia, saindo posteriormente |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0602-cl3",
+   "questao": "pediatria-0602",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da tuberosidade anterior da tíbia, qual tipo (McKoy) junta os tipos III e IV num traço em forma de Y?",
+   "resposta": "V",
+   "explicacao": "**Tipo V (McKoy):** combinação do tipo **III** com o tipo **IV**, em **Y**.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "2b8dbe52750a",
+   "origem": "autoral",
+   "trecho": "| V (McKoy) | Tipo III com tipo IV, em forma de **Y** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0602-cl4",
+   "questao": "pediatria-0602",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ogden acrescentou subtipos A e B à classificação de Watson-Jones da tuberosidade da tíbia. O que define o subtipo A?",
+   "resposta": "sem desvio",
+   "explicacao": "**A: sem desvio. B: com cominuição ou desvio.** O tipo IA é tratado com gesso inguinomaleolar em extensão.",
+   "opcoes": [
+    "sem desvio",
+    "com cominuição ou desvio"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "2b8dbe52750a",
+   "origem": "autoral",
+   "trecho": "modificada por Ogden, que acrescentou os subtipos A, sem desvio, e B, com cominuição ou desvio",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0602-co1",
+   "questao": "pediatria-0602",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da tuberosidade anterior da tíbia do adolescente, qual artéria passa junto à tuberosidade e pode sangrar no compartimento anterior?",
+   "resposta": "artéria recorrente tibial anterior",
+   "explicacao": "A **artéria recorrente tibial anterior** explica a **síndrome compartimental**, complicação a vigiar nessa fratura.",
+   "opcoes": [
+    "artéria recorrente tibial anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "2b8dbe52750a",
+   "origem": "autoral",
+   "trecho": "a **artéria recorrente tibial anterior** passa junto à tuberosidade e pode sangrar dentro do compartimento anterior",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0602-co2",
+   "questao": "pediatria-0602",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fise proximal da tíbia fecha de posterior para anterior. Qual porção dela é a última a fechar?",
+   "resposta": "tuberosidade",
+   "explicacao": "A fise da **tuberosidade** é a **última** a fechar; perto da maturidade, a tuberosidade é o ponto fraco do aparelho extensor.",
+   "opcoes": [
+    "tuberosidade"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "2b8dbe52750a",
+   "origem": "autoral",
+   "trecho": "A fise proximal da tíbia fecha de **posterior para anterior** e de proximal para distal, e a fise da tuberosidade é a **última** a fechar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0602-q",
    "questao": "pediatria-0602",
    "area": "Ortopedia pediátrica",
@@ -10726,6 +12526,63 @@
    "fonte": "6102f9f5bca3"
   },
   {
+   "id": "fc-pediatria-0607-cl1",
+   "questao": "pediatria-0607",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual tipo de Peterson é a fratura transversa da metáfise que se estende até a fise sem atravessá-la, sem equivalente em Salter-Harris?",
+   "resposta": "I",
+   "explicacao": "**Peterson I:** fratura **transversa da metáfise** com extensão longitudinal **até a fise**. Não existe em Salter-Harris.",
+   "opcoes": [
+    "I",
+    "III",
+    "V",
+    "VI"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "5be97c336f15",
+   "origem": "autoral",
+   "trecho": "| **I** | Fratura **transversa da metáfise** que se estende **longitudinalmente até a fise**, sem atravessá-la (não existe em Salter-Harris) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0607-co1",
+   "questao": "pediatria-0607",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "As lesões da placa de crescimento correspondem a que proporção das fraturas da infância?",
+   "resposta": "15 a 30%",
+   "explicacao": "**Cerca de 15 a 30%.** A fise é o ponto mais fraco do esqueleto da criança, e o risco principal é o **distúrbio de crescimento**.",
+   "opcoes": [
+    "15 a 30%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "5be97c336f15",
+   "origem": "autoral",
+   "trecho": "Cerca de 15 a 30% das fraturas infantis a acometem.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0607-q",
    "questao": "pediatria-0607",
    "area": "Ortopedia pediátrica",
@@ -10751,6 +12608,66 @@
    "prova": "TARO",
    "ano": 2016,
    "fonte": "5be97c336f15"
+  },
+  {
+   "id": "fc-pediatria-0607-tb1",
+   "questao": "pediatria-0607",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Peterson, o tipo III equivale a qual tipo de Salter-Harris?",
+   "resposta": "I",
+   "explicacao": "**Peterson III = Salter-Harris I.** Peterson II = SH II; IV = SH III; V = SH IV.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "5be97c336f15",
+   "origem": "autoral",
+   "trecho": "| III | Equivalente ao Salter-Harris **I** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0607-tb2",
+   "questao": "pediatria-0607",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Peterson, o tipo V equivale a qual tipo de Salter-Harris?",
+   "resposta": "IV",
+   "explicacao": "**Peterson V = Salter-Harris IV.** A numeração de Peterson fica deslocada porque o tipo I dele não existe em Salter-Harris.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "5be97c336f15",
+   "origem": "autoral",
+   "trecho": "| V | Equivalente ao Salter-Harris **IV** |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0608-q",
@@ -10947,6 +12864,62 @@
    "fonte": "68396bafad9b"
   },
   {
+   "id": "fc-pediatria-0615-ar1",
+   "questao": "pediatria-0615",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fixação da fratura de Tillaux, o parafuso epifisário precisa obrigatoriamente poupar a fise?",
+   "resposta": "pode cruzar a fise",
+   "explicacao": "**Não.** O parafuso **pode cruzar a fise**, porque ela está quase fechada e o risco de deformidade é mínimo. O objetivo é a congruência articular.",
+   "opcoes": [
+    "pode cruzar a fise"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3e078ad50586",
+   "origem": "autoral",
+   "trecho": "fixação com **parafuso epifisário** paralelo à articulação, que pode cruzar a fise, porque ela está quase fechada e o risco de deformidade é mínimo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0615-co1",
+   "questao": "pediatria-0615",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ao longo de quanto tempo a fise distal da tíbia completa o fechamento, abrindo a janela das fraturas de transição?",
+   "resposta": "18 meses",
+   "explicacao": "**Cerca de 18 meses** (12 a 15 anos nas meninas, 14 a 18 nos meninos), do centro para medial e por fim anterolateral.",
+   "opcoes": [
+    "18 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3e078ad50586",
+   "origem": "autoral",
+   "trecho": "ao longo de cerca de **18 meses** (entre 12 e 15 anos nas meninas, 14 e 18 nos meninos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0615-q",
    "questao": "pediatria-0615",
    "area": "Ortopedia pediátrica",
@@ -10975,6 +12948,36 @@
    "fonte": "3e078ad50586"
   },
   {
+   "id": "fc-pediatria-0615-tb1",
+   "questao": "pediatria-0615",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura triplanar do tornozelo é Salter-Harris II no perfil e III no AP. Em três dimensões, qual tipo ela é?",
+   "resposta": "IV",
+   "explicacao": "**Triplanar:** II no perfil, III no AP e **IV em três dimensões**. A Tillaux é Salter-Harris **III** (às vezes descrita como IV).",
+   "opcoes": [
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3e078ad50586",
+   "origem": "autoral",
+   "trecho": "| Salter-Harris | **III** (às vezes descrita como IV) | II no perfil, III no AP; IV em três dimensões |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0616-q",
    "questao": "pediatria-0616",
    "area": "Ortopedia pediátrica",
@@ -11000,6 +13003,175 @@
    "prova": "TARO",
    "ano": 2017,
    "fonte": "443ecc81d57c"
+  },
+  {
+   "id": "fc-pediatria-0617-cl1",
+   "questao": "pediatria-0617",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Neer-Horwitz da fratura do úmero proximal na criança, qual grau tem desvio de até um terço da diáfise?",
+   "resposta": "II",
+   "explicacao": "**Neer-Horwitz:** I até 5 mm; **II até um terço** da diáfise; III até dois terços; IV mais de dois terços.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "3d37f8c6dc78",
+   "origem": "autoral",
+   "trecho": "I (até 5 mm), II (até um terço da diáfise), III (até dois terços) e IV (mais de dois terços)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0617-cl2",
+   "questao": "pediatria-0617",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Neer-Horwitz da fratura do úmero proximal na criança, qual o desvio máximo do grau I?",
+   "resposta": "5 mm",
+   "explicacao": "**Grau I: até 5 mm.** Os graus seguintes usam a largura da diáfise: um terço, dois terços e mais de dois terços.",
+   "opcoes": [
+    "5 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "3d37f8c6dc78",
+   "origem": "autoral",
+   "trecho": "I (até 5 mm), II (até um terço da diáfise)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0617-co1",
+   "questao": "pediatria-0617",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual percentual do crescimento longitudinal do úmero vem da fise proximal, o que explica o enorme potencial de remodelamento?",
+   "resposta": "80%",
+   "explicacao": "**Cerca de 80%.** A fise fecha tarde (14 a 17 anos nas meninas, 16 a 18 nos meninos), e o remodelamento é grande.",
+   "opcoes": [
+    "80%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "3d37f8c6dc78",
+   "origem": "autoral",
+   "trecho": "A **fise proximal** do úmero responde por cerca de **80%** do crescimento longitudinal do osso",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0617-co2",
+   "questao": "pediatria-0617",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Salter-Harris II do úmero proximal do adolescente, qual músculo puxa o fragmento distal para anterior e lateral?",
+   "resposta": "peitoral maior",
+   "explicacao": "O **peitoral maior** desvia a diáfise para anterior e lateral; o fragmento proximal fica em **abdução e rotação externa** pelo manguito.",
+   "opcoes": [
+    "peitoral maior",
+    "deltoide",
+    "bíceps"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "3d37f8c6dc78",
+   "origem": "autoral",
+   "trecho": "o fragmento distal desvia para anterior e lateral, puxado pelo peitoral maior, e o proximal fica em abdução e rotação externa pelo manguito",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0617-co3",
+   "questao": "pediatria-0617",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do úmero proximal da criança, qual tendão interposto pode impedir a redução fechada?",
+   "resposta": "bíceps",
+   "explicacao": "A interposição do tendão do **bíceps** é a causa citada de redução fechada impossível.",
+   "opcoes": [
+    "bíceps",
+    "peitoral maior",
+    "deltoide"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "3d37f8c6dc78",
+   "origem": "autoral",
+   "trecho": "A interposição do tendão do **bíceps** pode impedir a redução fechada.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0617-co4",
+   "questao": "pediatria-0617",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do úmero proximal da criança, abaixo de qual idade se aceita quase qualquer desvio?",
+   "resposta": "10 anos",
+   "explicacao": "**Abaixo de 10 anos:** até 70° de angulação e desvio total. No adolescente perto da maturidade, a tolerância cai para cerca de **30° a 45°**.",
+   "opcoes": [
+    "10 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "3d37f8c6dc78",
+   "origem": "autoral",
+   "trecho": "Abaixo de **10 anos**, aceita-se quase qualquer desvio (até 70° de angulação e desvio total)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0617-q",
@@ -11141,6 +13313,35 @@
    "fonte": "56b95d73832a"
   },
   {
+   "id": "fc-pediatria-0622-co1",
+   "questao": "pediatria-0622",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chamam as ondulações da fise, sobretudo no fêmur distal, que se encaixam na metáfise e aumentam a resistência ao cisalhamento?",
+   "resposta": "processos mamilares",
+   "explicacao": "**Processos mamilares:** dão resistência por encaixe, mas a estrutura periférica que garante a estabilidade da junção é o **anel de LaCroix**.",
+   "opcoes": [
+    "Processos mamilares",
+    "Zona de Ranvier",
+    "Anel pericondral de LaCroix"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "b3efc82312b8",
+   "origem": "autoral",
+   "trecho": "**Os processos mamilares.** São as ondulações da fise (sobretudo no fêmur distal) que se encaixam na metáfise e aumentam a resistência ao cisalhamento",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0622-q",
    "questao": "pediatria-0622",
    "area": "Ortopedia pediátrica",
@@ -11166,6 +13367,66 @@
    "prova": "TARO",
    "ano": 2018,
    "fonte": "b3efc82312b8"
+  },
+  {
+   "id": "fc-pediatria-0622-tb1",
+   "questao": "pediatria-0622",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em qual zona da fise os vasos metafisários invadem e o osso substitui a cartilagem?",
+   "resposta": "Ossificação provisória",
+   "explicacao": "**Zona de ossificação provisória:** a última camada, do lado da **metáfise**, onde a cartilagem é trocada por osso.",
+   "opcoes": [
+    "Germinativa",
+    "Proliferativa",
+    "Hipertrófica",
+    "Ossificação provisória"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "b3efc82312b8",
+   "origem": "autoral",
+   "trecho": "| Ossificação provisória | Vasos metafisários invadem e o osso substitui a cartilagem |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0622-tb2",
+   "questao": "pediatria-0622",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual zona da fise guarda as células-tronco de reserva e é nutrida pelos vasos epifisários?",
+   "resposta": "Germinativa",
+   "explicacao": "**Zona germinativa (de reserva):** células-tronco e armazenamento, do lado da **epífise**, nutrida pelos **vasos epifisários**.",
+   "opcoes": [
+    "Germinativa",
+    "Proliferativa",
+    "Hipertrófica",
+    "Ossificação provisória"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "b3efc82312b8",
+   "origem": "autoral",
+   "trecho": "| **Germinativa** (de reserva) | Células-tronco; armazenamento; nutrida pelos vasos epifisários |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0623-q",
@@ -11220,6 +13481,35 @@
    "prova": "TARO",
    "ano": 2018,
    "fonte": "6efda952fe2a"
+  },
+  {
+   "id": "fc-pediatria-0625-co1",
+   "questao": "pediatria-0625",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas fraturas Salter-Harris I e II, qual camada da fise, do lado da epífise, é poupada, o que explica o bom prognóstico?",
+   "resposta": "germinativa",
+   "explicacao": "O traço passa pela zona **hipertrófica**; a camada **germinativa**, junto à epífise, fica intacta e o crescimento continua (exceção: fêmur distal).",
+   "opcoes": [
+    "germinativa",
+    "proliferativa",
+    "hipertrófica"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "da45006e2149",
+   "origem": "autoral",
+   "trecho": "Como a camada **germinativa** fica do lado da **epífise**, ela é poupada, e o crescimento costuma continuar normalmente",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0625-q",
@@ -11332,6 +13622,143 @@
    "fonte": "3965f422fe7e"
   },
   {
+   "id": "fc-pediatria-0629-cl1",
+   "questao": "pediatria-0629",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Milch da fratura do côndilo lateral do úmero, onde o traço do tipo I entra na articulação?",
+   "resposta": "lateral ao sulco",
+   "explicacao": "**Milch I:** traço **lateral ao sulco capitulotroclear**, atravessando o núcleo de ossificação do capítulo. Equivale ao **Salter-Harris IV**; cotovelo **estável**.",
+   "opcoes": [
+    "Lateral ao sulco",
+    "Medial ao sulco"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "7d151bebf0e5",
+   "origem": "autoral",
+   "trecho": "| **I** | **Lateral** ao sulco, atravessando o **núcleo de ossificação do capítulo** | **IV**; cotovelo **estável** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0629-cl2",
+   "questao": "pediatria-0629",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do côndilo lateral Milch II, com o traço entrando na tróclea, como fica a estabilidade do cotovelo?",
+   "resposta": "instável",
+   "explicacao": "**Milch II:** traço **medial** ao sulco, pela **tróclea**; equiparado ao Salter-Harris **II**. O cotovelo é **instável** e pode subluxar.",
+   "opcoes": [
+    "estável",
+    "instável"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "7d151bebf0e5",
+   "origem": "autoral",
+   "trecho": "| II | **Medial** ao sulco, entrando na **tróclea** | **II**; cotovelo **instável** (pode subluxar) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0629-co1",
+   "questao": "pediatria-0629",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do côndilo lateral do úmero da criança, qual incidência radiográfica mostra melhor o desvio?",
+   "resposta": "oblíqua interna",
+   "explicacao": "A **oblíqua interna** mostra a face **posterolateral**, onde o desvio costuma ser maior.",
+   "opcoes": [
+    "oblíqua interna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "7d151bebf0e5",
+   "origem": "autoral",
+   "trecho": "A incidência **oblíqua interna** mostra melhor o desvio, que costuma ser maior na face posterolateral.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0629-co2",
+   "questao": "pediatria-0629",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na via aberta da fratura do côndilo lateral, a dissecção excessiva de qual face do fragmento causa necrose avascular?",
+   "resposta": "posterior",
+   "explicacao": "A irrigação do côndilo entra pela face **posterior**: dissecar por trás arrisca **necrose avascular** do fragmento.",
+   "opcoes": [
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "7d151bebf0e5",
+   "origem": "autoral",
+   "trecho": "**Necrose avascular** do fragmento, sobretudo após dissecção posterior excessiva na via aberta. A irrigação do côndilo entra pela face **posterior**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0629-co3",
+   "questao": "pediatria-0629",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A pseudoartrose do côndilo lateral do úmero leva a cúbito valgo progressivo e à paralisia tardia de qual nervo?",
+   "resposta": "nervo ulnar",
+   "explicacao": "O fragmento fica banhado em líquido sinovial e puxado pelos extensores; o **cúbito valgo** estira o **nervo ulnar** ao longo dos anos.",
+   "opcoes": [
+    "nervo ulnar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "7d151bebf0e5",
+   "origem": "autoral",
+   "trecho": "Leva ao **cúbito valgo** progressivo e à **paralisia tardia do nervo ulnar**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0629-q",
    "questao": "pediatria-0629",
    "area": "Ortopedia pediátrica",
@@ -11357,6 +13784,62 @@
    "prova": "TARO",
    "ano": 2018,
    "fonte": "7d151bebf0e5"
+  },
+  {
+   "id": "fc-pediatria-0629-tb1",
+   "questao": "pediatria-0629",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do côndilo lateral do úmero com desvio menor que 2 mm, qual é o tratamento?",
+   "resposta": "Gesso",
+   "explicacao": "**Gesso com radiografias semanais**, porque a fratura pode desviar. De 2 a 4 mm com dobradiça íntegra: fios percutâneos; acima de 4 mm: redução aberta.",
+   "opcoes": [
+    "Gesso",
+    "Redução aberta"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "7d151bebf0e5",
+   "origem": "autoral",
+   "trecho": "| **Menos de 2 mm** | **Gesso**, com radiografias semanais (pode desviar) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0629-tb2",
+   "questao": "pediatria-0629",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do côndilo lateral do úmero com desvio acima de 4 mm ou fragmento rodado, qual é a conduta?",
+   "resposta": "Redução aberta",
+   "explicacao": "**Redução aberta e fixação.** O desvio, e não o tipo de Milch, é o que decide o tratamento.",
+   "opcoes": [
+    "Gesso",
+    "Redução aberta"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "7d151bebf0e5",
+   "origem": "autoral",
+   "trecho": "| **Mais de 4 mm** ou fragmento rodado | **Redução aberta** e fixação |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0630-q",
@@ -12189,6 +14672,90 @@
    "fonte": "2135c6c750d8"
   },
   {
+   "id": "fc-pediatria-0661-cl1",
+   "questao": "pediatria-0661",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Watson-Jones da fratura da tuberosidade da tíbia, qual tipo tem o traço na junção entre a apófise e a epífise proximal?",
+   "resposta": "II",
+   "explicacao": "**Tipo II:** traço na **junção** da apófise da tuberosidade com a epífise proximal da tíbia, com fragmento maior que o do tipo I.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "c7e8425d43e7",
+   "origem": "autoral",
+   "trecho": "| II | Traço na **junção** entre a apófise da tuberosidade e a epífise proximal da tíbia |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0661-co1",
+   "questao": "pediatria-0661",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura da tuberosidade da tíbia típica de meninos de 13 a 16 anos tem, muitas vezes, antecedente de qual doença?",
+   "resposta": "Osgood-Schlatter",
+   "explicacao": "**Osgood-Schlatter** é antecedente frequente. O mecanismo é a **contração violenta do quadríceps** no salto ou na aterrissagem.",
+   "opcoes": [
+    "Osgood-Schlatter"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "c7e8425d43e7",
+   "origem": "autoral",
+   "trecho": "É típica de **meninos de 13 a 16 anos**, muitas vezes com antecedente de **Osgood-Schlatter**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0661-co2",
+   "questao": "pediatria-0661",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o mecanismo da fratura da tuberosidade anterior da tíbia no adolescente, como na decolagem do salto?",
+   "resposta": "contração violenta do quadríceps",
+   "explicacao": "**Contração violenta do quadríceps** no salto (decolagem) ou na aterrissagem com o joelho fletido.",
+   "opcoes": [
+    "contração violenta do quadríceps"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "c7e8425d43e7",
+   "origem": "autoral",
+   "trecho": "É uma contração **violenta do quadríceps**, como no salto (decolagem) ou na aterrissagem com o joelho fletido.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0661-q",
    "questao": "pediatria-0661",
    "area": "Ortopedia pediátrica",
@@ -12214,6 +14781,36 @@
    "prova": "TARO",
    "ano": 2012,
    "fonte": "c7e8425d43e7"
+  },
+  {
+   "id": "fc-pediatria-0661-tb1",
+   "questao": "pediatria-0661",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura da tuberosidade da tíbia que percorre toda a fise proximal (tipo IV de Watson-Jones) se comporta como qual tipo de Salter-Harris?",
+   "resposta": "II",
+   "explicacao": "**Salter-Harris II.** O tipo I corresponde ao SH I, e o tipo III, que atravessa a epífise até a articulação, ao SH III ou IV.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "c7e8425d43e7",
+   "origem": "autoral",
+   "trecho": "Os que percorrem toda a fise (IV) se comportam como **Salter-Harris II**.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0662-q",
@@ -12464,6 +15061,90 @@
    "fonte": "8c14b9222c99"
   },
   {
+   "id": "fc-pediatria-0671-cl1",
+   "questao": "pediatria-0671",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pelos critérios de Flynn, a pseudartrose do côndilo lateral só deve ser fixada se o desvio estiver abaixo de qual limite?",
+   "resposta": "menor que 1 cm",
+   "explicacao": "**Flynn:** fixar (enxerto e parafuso, sem dissecar a face posterior) se houver **grande fragmento metafisário**, desvio **menor que 1 cm** e **fise aberta**.",
+   "opcoes": [
+    "menor que 1 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "2c06cc2f5005",
+   "origem": "autoral",
+   "trecho": "o desvio é **menor que 1 cm**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0671-cl2",
+   "questao": "pediatria-0671",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Critérios de Flynn para fixar a pseudartrose do côndilo lateral: grande fragmento metafisário, desvio menor que 1 cm e qual condição da fise?",
+   "resposta": "ainda está aberta",
+   "explicacao": "A **fise aberta** é o terceiro critério. Fragmento pequeno, desvio acima de 1 cm ou pseudartrose muito antiga contraindicam a fixação.",
+   "opcoes": [
+    "ainda está aberta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "2c06cc2f5005",
+   "origem": "autoral",
+   "trecho": "a **fise** ainda está aberta.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0671-co1",
+   "questao": "pediatria-0671",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pseudartrose antiga do côndilo lateral, que não deve ser fixada, com cúbito valgo e neuropatia ulnar: qual osteotomia trata a deformidade?",
+   "resposta": "osteotomia varizante do úmero distal",
+   "explicacao": "Tratam-se as consequências: **osteotomia varizante** do úmero distal e **transposição anterior do nervo ulnar** se houver neuropatia.",
+   "opcoes": [
+    "osteotomia varizante do úmero distal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "2c06cc2f5005",
+   "origem": "autoral",
+   "trecho": "trata-se as consequências, com **osteotomia** varizante do úmero distal para o valgo e **transposição anterior do nervo ulnar** se houver neuropatia.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0671-q",
    "questao": "pediatria-0671",
    "area": "Ortopedia pediátrica",
@@ -12490,6 +15171,34 @@
    "prova": "TARO",
    "ano": 2013,
    "fonte": "2c06cc2f5005"
+  },
+  {
+   "id": "fc-pediatria-0671-tb1",
+   "questao": "pediatria-0671",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura do côndilo lateral do úmero com desvio de 2 a 4 mm e articulação congruente: qual é o tratamento?",
+   "resposta": "Redução fechada e fios percutâneos",
+   "explicacao": "**Redução fechada e fios percutâneos**, com artrografia para confirmar a congruência. Abaixo de 2 mm: gesso; acima de 4 mm: redução aberta.",
+   "opcoes": [
+    "Redução fechada e fios percutâneos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "2c06cc2f5005",
+   "origem": "autoral",
+   "trecho": "| **2 a 4 mm**, com articulação congruente | Redução fechada e fios percutâneos (artrografia ajuda) |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0672-q",
@@ -13648,6 +16357,236 @@
    "fonte": "28f9e658f803"
   },
   {
+   "id": "fc-pediatria-0714-co1",
+   "questao": "pediatria-0714",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na criança, por que o trauma que luxaria o ombro de um adulto costuma descolar a fise proximal do úmero?",
+   "resposta": "a fise é mais fraca que a cápsula",
+   "explicacao": "A **fise** é mais fraca que a **cápsula articular** e os ligamentos; a luxação glenoumeral é rara antes da adolescência.",
+   "opcoes": [
+    "a fise é mais fraca que a cápsula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "11470c9a75e8",
+   "origem": "autoral",
+   "trecho": "Na criança, a fise é mais fraca que a cápsula articular e os ligamentos, por isso o trauma que no adulto luxaria o ombro costuma, na criança, **descolar a fise**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0724-cl1",
+   "questao": "pediatria-0724",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Bado da lesão de Monteggia, para onde luxa a cabeça do rádio no tipo I, o mais comum na criança?",
+   "resposta": "Anterior",
+   "explicacao": "**Bado I:** luxação **anterior** da cabeça do rádio com fratura da diáfise da ulna de ápice anterior (ou deformação plástica).",
+   "opcoes": [
+    "Anterior",
+    "Posterior",
+    "Lateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "5a40b121ee6f",
+   "origem": "autoral",
+   "trecho": "| I (o mais comum na criança) | Anterior | Diáfise, ápice anterior (ou deformação plástica) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0724-cl2",
+   "questao": "pediatria-0724",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Bado, qual tipo de Monteggia tem fratura metafisária proximal da ulna em varo, de ápice lateral?",
+   "resposta": "III",
+   "explicacao": "**Bado III:** luxação **lateral** da cabeça do rádio com fratura metafisária proximal da ulna em **varo**.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "5a40b121ee6f",
+   "origem": "autoral",
+   "trecho": "| III | Lateral | Metáfise proximal, em varo (ápice lateral) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0724-cl3",
+   "questao": "pediatria-0724",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Bado, qual tipo de Monteggia tem luxação anterior da cabeça do rádio com fratura das diáfises do rádio e da ulna?",
+   "resposta": "IV",
+   "explicacao": "**Bado IV:** luxação **anterior** da cabeça do rádio e fratura das **duas diáfises**.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "5a40b121ee6f",
+   "origem": "autoral",
+   "trecho": "| IV | Anterior | Fratura das diáfises do rádio e da ulna |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0724-co1",
+   "questao": "pediatria-0724",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para não perder um Monteggia ou equivalente na criança, qual linha deve ser conferida em toda fratura da ulna?",
+   "resposta": "linha radiocapitelar",
+   "explicacao": "A **linha radiocapitelar**, em todas as incidências. Equivalentes: deformação plástica da ulna com luxação da cabeça do rádio, ou fratura do colo do rádio com fratura da ulna.",
+   "opcoes": [
+    "linha radiocapitelar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "5a40b121ee6f",
+   "origem": "autoral",
+   "trecho": "toda fratura da ulna exige conferir a **linha radiocapitelar** em todas as incidências.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0825-co1",
+   "questao": "pediatria-0825",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quanto cresce por ano, aproximadamente, a fise distal do fêmur?",
+   "resposta": "9 a 10 mm",
+   "explicacao": "**Cerca de 9 a 10 mm por ano.** Uma parada ali produz discrepância e deformidade angular importantes.",
+   "opcoes": [
+    "9 a 10 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "879bd0a7c112",
+   "origem": "autoral",
+   "trecho": "crescendo cerca de 9 a 10 mm por ano",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0825-tb1",
+   "questao": "pediatria-0825",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após descolamento epifisário do fêmur distal, a parada parcial por barra óssea causa qual sequela?",
+   "resposta": "Deformidade angular",
+   "explicacao": "**Barra parcial:** deformidade angular (varo ou valgo) progressiva. **Parada completa:** encurtamento do membro.",
+   "opcoes": [
+    "Deformidade angular",
+    "Encurtamento do membro"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "879bd0a7c112",
+   "origem": "autoral",
+   "trecho": "| Parada parcial (barra óssea) | Deformidade angular (varo ou valgo) progressiva |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0840-co1",
+   "questao": "pediatria-0840",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por volta de que idade aparece o centro de ossificação secundário da tuberosidade anterior da tíbia?",
+   "resposta": "8 a 12 anos",
+   "explicacao": "Aparece por volta dos **8 a 12 anos** e depois se une à epífise. Perto do fechamento (13 a 16 anos), a placa tem fibrocartilagem, frágil à tração do tendão patelar.",
+   "opcoes": [
+    "8 a 12 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "7fbb09f24dd7",
+   "origem": "autoral",
+   "trecho": "um **centro de ossificação secundário** próprio (que aparece por volta dos 8 a 12 anos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0842-q",
    "questao": "pediatria-0842",
    "area": "Ortopedia pediátrica",
@@ -13823,6 +16762,34 @@
    }
   },
   {
+   "id": "fc-pediatria-0848-co1",
+   "questao": "pediatria-0848",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No recém-nascido com suspeita de descolamento epifisário do úmero proximal, qual exame ajuda porque a epífise ainda não está ossificada?",
+   "resposta": "ultrassonografia",
+   "explicacao": "A **ultrassonografia** diferencia o descolamento da luxação do ombro e da paralisia braquial (pseudoparalisia).",
+   "opcoes": [
+    "ultrassonografia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "b285b8c41fe2",
+   "origem": "autoral",
+   "trecho": "a ultrassonografia ajuda, porque a epífise ainda não está ossificada",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0848-q",
    "questao": "pediatria-0848",
    "area": "Ortopedia pediátrica",
@@ -13855,6 +16822,64 @@
     "largura": 656,
     "altura": 274
    }
+  },
+  {
+   "id": "fc-pediatria-0848-tb1",
+   "questao": "pediatria-0848",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No descolamento epifisário do úmero proximal acima de 11 anos, qual tipo de Salter-Harris predomina?",
+   "resposta": "Salter-Harris II",
+   "explicacao": "**Adolescentes: Salter-Harris II.** Abaixo de 5 anos predomina o **tipo I**; de 5 a 11 anos, fraturas metafisárias.",
+   "opcoes": [
+    "Salter-Harris I",
+    "Salter-Harris II",
+    "Salter-Harris III"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "b285b8c41fe2",
+   "origem": "autoral",
+   "trecho": "| **Acima de 11 anos** (adolescentes) | **Salter-Harris II** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0848-tb2",
+   "questao": "pediatria-0848",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na criança de 5 a 11 anos, qual padrão de fratura do úmero proximal é frequente?",
+   "resposta": "Fraturas metafisárias",
+   "explicacao": "**Fraturas metafisárias.** Abaixo de 5 anos: Salter-Harris I; acima de 11: Salter-Harris II.",
+   "opcoes": [
+    "Fraturas metafisárias"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "b285b8c41fe2",
+   "origem": "autoral",
+   "trecho": "| 5 a 11 anos | Fraturas metafisárias são frequentes |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0849-q",
@@ -14346,6 +17371,87 @@
    "prova": "CET-PR",
    "ano": null,
    "fonte": "a55be920fb70"
+  },
+  {
+   "id": "fc-pediatria-0909-co1",
+   "questao": "pediatria-0909",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Salter-Harris II, o periósteo costuma ficar íntegro do lado do fragmento metafisário. O que isso facilita?",
+   "resposta": "redução fechada",
+   "explicacao": "O periósteo íntegro do lado do **Thurston-Holland** funciona como dobradiça e ajuda a **redução fechada**.",
+   "opcoes": [
+    "redução fechada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "7d5cd925ce49",
+   "origem": "autoral",
+   "trecho": "O periósteo costuma ficar íntegro do lado desse fragmento, o que ajuda na redução fechada.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0909-co2",
+   "questao": "pediatria-0909",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fixação interna das fraturas Salter-Harris III e IV desviadas, como devem ficar os parafusos em relação à fise?",
+   "resposta": "paralelos à fise",
+   "explicacao": "**Parafusos paralelos à fise, sem atravessá-la**, após redução anatômica (muitas vezes aberta). Exemplo: Tillaux desviada.",
+   "opcoes": [
+    "paralelos à fise"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "7d5cd925ce49",
+   "origem": "autoral",
+   "trecho": "de preferência com parafusos paralelos à fise, sem atravessá-la",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0909-np1",
+   "questao": "pediatria-0909",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O fragmento de Thurston-Holland é {{c1::metafisário}} e caracteriza o tipo II de Salter-Harris.",
+   "resposta": "metafisário",
+   "explicacao": "Fragmento triangular da **metáfise** no **tipo II**. Fragmento **epifisário** caracteriza os tipos III e IV.",
+   "opcoes": [
+    "metafisário"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "7d5cd925ce49",
+   "origem": "autoral",
+   "trecho": "o fragmento de Thurston-Holland é metafisário (tipo II)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0910-q",
