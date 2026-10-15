@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/componentes/RelogioPixel.css'
 
 /** A janela do gratuito dura 24 h a partir da primeira questão (autorizar_resposta). */

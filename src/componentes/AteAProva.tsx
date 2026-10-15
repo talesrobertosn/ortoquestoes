@@ -4,7 +4,6 @@ import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia, LIMITES_HABILITADOS } from '../estado/limiteDiario'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
-import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/componentes/AteAProva.css'
 
 /** Ritmos para escolher, com o tempo aproximado (cerca de 1,5 minuto por questão). */

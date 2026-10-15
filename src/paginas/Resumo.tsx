@@ -16,7 +16,6 @@ import { CONQUISTAS, CONQUISTAS_SEQUENCIA, proximaConquista } from '../estado/co
 import { IconePixel } from '../componentes/IconePixel'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { recurso } from '../config'
-import '@fontsource/pixelify-sans/latin-700.css'
 import { href, navegar } from '../util/rotas'
 import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
 import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'

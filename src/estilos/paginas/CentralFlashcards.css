@@ -144,15 +144,15 @@
 .cf-heroi__arte img { width:100%; height:100%; object-fit:cover; object-position:70% 52%; }
 .cf-heroi::after { content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#142b25f5 0%,#142b25dd 30%,#142b2520 80%),linear-gradient(0deg,#10231b99,transparent 65%); }
 .cf-heroi__texto { grid-column:1 / -1; max-width:540px; color:#f5efd9; gap:20px; }
-.cf-heroi__texto h1 { font:700 clamp(32px,4vw,54px)/1.13 'Cinzel',serif; letter-spacing:-.02em; color:#fff5d5;text-shadow:0 3px 12px #0005; }
-.cf-heroi__texto > p:not(.cf-selo):not(.cf-nota) { font:400 22px/1.45 'Alegreya',serif; color:#eee9d8;max-width:43ch; }
+.cf-heroi__texto h1 { font:700 clamp(32px,4vw,54px)/1.13 var(--fonte-marca); letter-spacing:-.02em; color:#fff5d5;text-shadow:0 3px 12px #0005; }
+.cf-heroi__texto > p:not(.cf-selo):not(.cf-nota) { font:400 19px/1.5 var(--fonte-texto); color:#eee9d8;max-width:43ch; }
 .cf-heroi .cf-selo,.cf-heroi .cf-nota { color:#e0dbba; }
 .cf-heroi .cf-beta { background:#d5b067; color:#26392c; }
 .cf-heroi__botoes .botao--principal { background:#f8efd9; color:#234d3c; border-color:#f8efd9; }
 .cf-modos { gap:20px; }
 .cf-modo { border-color:#b5a58266; box-shadow:0 8px 24px #1434270b;transition:transform .2s; }
 .cf-modo:hover { transform:translateY(-3px); }
-.cf-modo strong { font:700 22px/1.2 'Cinzel',serif; }
+.cf-modo strong { font:700 20px/1.2 var(--fonte-marca); }
 .cf-links { grid-template-columns:repeat(3,minmax(0,1fr)); }
 @media(max-width:640px){
  .cf-heroi { min-height:590px; padding:28px 22px;align-items:end; }

@@ -3,7 +3,6 @@ import { SITE } from '../config'
 import { Icone } from './Icone'
 import { createPortal } from 'react-dom'
 import { recurso } from '../config'
-import '@fontsource/pixelify-sans/latin-700.css'
 import { IconeWhatsapp } from './ConviteCompartilhar'
 
 /**

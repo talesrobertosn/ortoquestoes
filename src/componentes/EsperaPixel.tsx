@@ -1,5 +1,4 @@
 import { useEffect, useState, type ReactNode } from 'react'
-import '@fontsource/pixelify-sans/latin-700.css'
 import { recurso } from '../config'
 import '../estilos/componentes/EsperaPixel.css'
 

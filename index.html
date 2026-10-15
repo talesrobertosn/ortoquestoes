@@ -56,6 +56,14 @@
     <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=3" sizes="180x180" />
     <!-- Instalar como aplicativo: manifesto (Android, computador) e metas do iPhone. -->
     <link rel="manifest" href="./manifest.webmanifest" />
+    <!--
+      A fonte da marca (nome no cabeçalho e títulos) aparece no alto de toda
+      página: pedida já, sem esperar o CSS chegar, o título não troca de fonte
+      na frente da pessoa. A Jersey 10 não entra aqui: no alto da tela ela só
+      aparece nos heróis de algumas páginas (ranking, cronograma, desempenho,
+      planos), não na inicial nem na maioria das outras.
+    -->
+    <link rel="preload" href="/src/marca/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Orto Questões" />
