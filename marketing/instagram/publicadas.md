@@ -23,3 +23,5 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | joelho-0189 | Lesão meniscal radial (TEOT 2025) | posts/2026-10-14-editorial-menisco-radial |
 | pediatria-0001 | Transferência do tibial anterior na recidiva dinâmica do pé torto (TARO 2020) | posts/2026-10-15-painel-adiantar (stories) |
 | coluna-0006 | Claudicação neurogênica: distância variável, alívio ao sentar (TARO 2020) | posts/2026-10-15-painel-claudicacao |
+| pediatria-0039 | Doença de Freiberg, cabeça do 2º metatarso (TARO 2021) | posts/2026-10-16-camara-escura (feed) |
+| tumores-0035 | Fibroma não ossificante (TARO 2021) | posts/2026-10-16-camara-escura (stories) |
