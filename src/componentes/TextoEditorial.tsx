@@ -71,12 +71,21 @@ function Tabela({ linhas }: { linhas: string[] }) {
     .map(celulasDaLinha)
   const [cabecalho, ...corpo] = celulas
   if (!cabecalho) return null
-  const cartoes = cabecalho.length >= 3
+  // Sem linhas no corpo, a única linha é o cabeçalho: no modo cartão ele some no celular.
+  const cartoes = cabecalho.length >= 3 && corpo.length > 0
+  // Linha que continua o grupo da anterior (1ª célula vazia, como nas tabelas SLIC):
+  // no cartão, a célula vazia mostra o grupo, senão o cartão fica sem contexto.
+  let grupo = ''
+  const grupos = corpo.map((linha) => {
+    if (!linha[0]?.trim()) return grupo
+    grupo = linha[0].replace(/\*\*|==/g, '')
+    return ''
+  })
   return (
     <div className={'te-tabela' + (cartoes ? ' te-tabela--cartoes' : '')}>
       <table>
         <thead><tr>{cabecalho.map((c, k) => <th key={k}>{formatarLinha(c)}</th>)}</tr></thead>
-        <tbody>{corpo.map((linha, k) => <tr key={k}>{linha.map((c, m) => <td key={m} data-rotulo={cartoes && m > 0 ? cabecalho[m]?.replace(/\*\*|==/g, '') : undefined}>{formatarLinha(c)}</td>)}</tr>)}</tbody>
+        <tbody>{corpo.map((linha, k) => <tr key={k}>{linha.map((c, m) => <td key={m} data-rotulo={cartoes && m > 0 ? cabecalho[m]?.replace(/\*\*|==/g, '') : undefined} data-grupo={cartoes && m === 0 && grupos[k] ? grupos[k] : undefined}>{formatarLinha(c)}</td>)}</tr>)}</tbody>
       </table>
     </div>
   )

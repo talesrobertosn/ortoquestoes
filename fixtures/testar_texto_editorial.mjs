@@ -36,6 +36,10 @@ try {
   assert.match(larga, /te-tabela--cartoes/)
   assert.match(larga, /<td data-rotulo="Traço">Sem desvio<\/td>/)
   assert.doesNotMatch(html('| A | B |\n|---|---|\n| 1 | 2 |'), /te-tabela--cartoes/)
+  // Tabela de uma linha só (sem corpo) não entra no modo cartão, que esconde o cabeçalho no celular.
+  assert.doesNotMatch(html('| retrovascular | IFD (residual) | dorsal ao feixe |'), /te-tabela--cartoes/)
+  // Linha que continua o grupo (1ª célula vazia) leva o nome do grupo para o cartão.
+  assert.match(html('| Eixo | Achado | Pontos |\n|---|---|---|\n| Morfologia | Sem alteração | 0 |\n| | Compressão | 1 |'), /<td data-grupo="Morfologia"><\/td><td data-rotulo="Achado">Compressão<\/td>/)
 
   // O acervo inteiro: nada quebra e nenhum *itálico* aparece cru.
   let total = 0, tabelas = 0
