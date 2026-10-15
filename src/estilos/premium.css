@@ -977,4 +977,5 @@
 .confirmar h2 { margin: 0; padding-right: 3rem; font-size: 1.15rem; line-height: 1.3; }
 .confirmar p { margin: 0; color: var(--texto-2); }
 .confirmar__acoes { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.5rem; margin-top: 0.5rem; }
-@media (max-width: 30rem) { .confirmar__acoes > .botao { flex: 1 1 100%; } .confirmar__acoes { flex-direction: column-reverse; } }
+/* Celular: um botão por linha, a ação principal em cima (grid; flex em coluna com wrap partia em duas colunas). */
+@media (max-width: 30rem) { .confirmar__acoes { display: grid; grid-template-columns: 1fr; } .confirmar__acoes > .botao--principal { order: -1; } .confirmar__acoes > .botao { width: 100%; } }
