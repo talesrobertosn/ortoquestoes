@@ -1,24 +1,24 @@
 import { useCallback, useEffect, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
-import { dataHora, erroDoPainel, motivoFalhaEmail } from './formatos'
+import { dataHora, erroDoPainel } from './formatos'
 import { AdminRecursosPagos } from './AdminRecursosPagos'
 import { confirmar } from '../Confirmar'
 
 interface ConfigComercial { paywall_ativo: boolean; limite_diario_gratis: number; pagamentos_ativos: boolean; atualizado_em: string }
 interface Aviso { id: number; texto: string; link: string | null; rotulo_link: string | null; tom: 'info' | 'destaque' | 'alerta'; ativo: boolean; fim: string | null; criado_em: string }
-interface ConfigEmails { marcos_automaticos: boolean; alertas_admin: boolean }
-interface EmailEnviado { id: number; tipo: string; marco: number | null; assunto: string | null; status: string; erro: string | null; enviado_em: string; usuario: string | null }
 
 const MIGRACAO = '202609290200_painel_admin_2.sql'
 const TOM: Record<Aviso['tom'], string> = { destaque: 'Verde (novidade)', info: 'Neutro', alerta: 'Amarelo (atenção)' }
-const TIPO_EMAIL: Record<string, string> = { marco: 'Parabéns automático', parabens: 'Parabéns enviado por você', alerta_admin: 'Alerta para você', relatorio: 'Relatório mensal' }
 
+/**
+ * Painel › Operações › Ajustes: recursos do plano pago, limite gratuito e pagamentos, aviso no
+ * topo do site. Os simulados foram para Operações › Simulados e os e-mails automáticos para
+ * Operações › Lembretes e e-mails (AdminEmails).
+ */
 export function AdminConfiguracoes() {
   const [comercial, definirComercial] = useState<ConfigComercial | null>(null)
   const [rascunho, definirRascunho] = useState<ConfigComercial | null>(null)
   const [avisos, definirAvisos] = useState<Aviso[] | null>(null)
-  const [emails, definirEmails] = useState<ConfigEmails | null>(null)
-  const [enviados, definirEnviados] = useState<EmailEnviado[] | null>(null)
   const [erro, definirErro] = useState('')
   // Sucesso e erro tinham a mesma cor verde: erro parecia confirmação.
   const [mensagem, definirRecado] = useState<{ texto: string; erro: boolean }>({ texto: '', erro: false })
@@ -28,11 +28,10 @@ export function AdminConfiguracoes() {
 
   const carregar = useCallback(async () => {
     try {
-      const [c, a, e, lista] = await Promise.all([
+      const [c, a] = await Promise.all([
         chamarRpc<ConfigComercial[]>('obter_config_comercial_admin', {}), chamarRpc<Aviso[]>('listar_avisos_admin', {}),
-        chamarRpc<ConfigEmails[]>('obter_config_emails_admin', {}), chamarRpc<EmailEnviado[]>('listar_emails_admin', {}),
       ])
-      definirComercial(c[0] ?? null); definirRascunho(c[0] ?? null); definirAvisos(a); definirEmails(e[0] ?? null); definirEnviados(lista); definirErro('')
+      definirComercial(c[0] ?? null); definirRascunho(c[0] ?? null); definirAvisos(a); definirErro('')
     } catch (f) { definirErro(erroDoPainel(f, MIGRACAO)) }
   }, [])
   useEffect(() => { void carregar() }, [carregar])
@@ -62,15 +61,10 @@ export function AdminConfiguracoes() {
   async function encerrarAviso() {
     try { await chamarRpc('encerrar_aviso_admin', {}); definirMensagem('Aviso retirado do site.'); await carregar() } catch { definirFalha('Não foi possível retirar o aviso.') }
   }
-  async function salvarEmails(proximo: ConfigEmails) {
-    definirEmails(proximo)
-    try { await chamarRpc('definir_config_emails_admin', { p_marcos: proximo.marcos_automaticos, p_alertas: proximo.alertas_admin }) } catch { definirFalha('Não foi possível salvar a configuração de e-mails.'); await carregar() }
-  }
 
   if (erro) return <section className="adm-secao"><p role="alert" className="adm-alerta">{erro}</p></section>
-  if (!rascunho || !avisos || !emails) return <section className="adm-secao"><p role="status">Carregando…</p></section>
+  if (!rascunho || !avisos) return <section className="adm-secao"><p role="status">Carregando…</p></section>
   const ativo = avisos.find(a => a.ativo)
-  const falhas = enviados?.filter(e => e.status === 'falhou').length ?? 0
 
   return <div className="empilha-2">
     {mensagem.texto && <p role={mensagem.erro ? 'alert' : 'status'} className={'adm-nota adm-mensagem' + (mensagem.erro ? ' adm-mensagem--erro' : '')}>{mensagem.texto}</p>}
@@ -106,15 +100,5 @@ export function AdminConfiguracoes() {
       <div className="linha"><button type="button" className="botao botao--principal" disabled={novo.texto.trim().length < 3} onClick={() => void publicarAviso()}>Publicar aviso</button></div>
     </section>
 
-    <section className="empilha adm-secao" aria-labelledby="adm-titulo-emails">
-      <div><h2 id="adm-titulo-emails">E-mails</h2><p>Parabéns automático quando alguém desbloqueia um emblema (50, 100, 250, 500, 1.000, 2.000, 3.000 e 4.000 questões), uma vez por emblema e só para quem não desligou em Minha conta.</p></div>
-      <label className="ct-interruptor"><input type="checkbox" checked={emails.marcos_automaticos} onChange={e => void salvarEmails({ ...emails, marcos_automaticos: e.target.checked })} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Enviar parabéns automáticos pelos emblemas</span></label>
-      <label className="ct-interruptor"><input type="checkbox" checked={emails.alertas_admin} onChange={e => void salvarEmails({ ...emails, alertas_admin: e.target.checked })} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Me avisar por e-mail quando um pagamento der erro ou alguém escrever que um comentário não ajudou</span></label>
-      <p className="adm-nota">Para mandar parabéns a alguém agora, com um recado seu, abra a pessoa na aba Usuários.</p>
-      <h3 className="adm-subtitulo">Últimos envios{falhas > 0 && <span className="adm-selo adm-selo--ruim">{falhas} com falha</span>}</h3>
-      {!enviados?.length ? <p className="adm-vazio">Nenhum e-mail enviado ainda.</p> : <ul className="adm-mini">
-        {enviados.slice(0, 30).map(e => <li key={e.id}><span className="adm-mini__nome">{e.assunto ?? TIPO_EMAIL[e.tipo]}<small>{TIPO_EMAIL[e.tipo] ?? e.tipo}{e.usuario ? ` · ${e.usuario}` : ''}</small>{e.status === 'falhou' && <small className="adm-erro-email">{motivoFalhaEmail(e.erro)}</small>}</span><span className={'adm-selo ' + (e.status === 'enviado' ? 'adm-selo--ok' : e.status === 'falhou' ? 'adm-selo--ruim' : 'adm-selo--neutro')}>{e.status === 'enviado' ? dataHora(e.enviado_em) : e.status}</span></li>)}
-      </ul>}
-    </section>
   </div>
 }

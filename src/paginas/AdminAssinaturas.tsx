@@ -1,14 +1,19 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { confirmar } from '../componentes/Confirmar'
 import { AdminFichaUsuario } from '../componentes/admin/AdminFichaUsuario'
 import { PARTE_COBRANCAS, lerEvento, linkDoEvento, reprocessarEvento, type EventoPagamento } from '../componentes/admin/pagamentos'
 import { href, navegar } from '../util/rotas'
-import { Icone, type NomeIcone } from '../componentes/Icone'
+import { Icone } from '../componentes/Icone'
 import { AdminConteudo, type VistaConteudo } from '../componentes/admin/AdminConteudo'
 import { AdminQuestoes } from '../componentes/admin/AdminQuestoes'
 import { AdminCrescimento } from '../componentes/admin/AdminCrescimento'
 import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
+import { AdminLembretes } from '../componentes/admin/AdminLembretes'
+import { AdminRelatorioMensal } from '../componentes/admin/AdminRelatorioMensal'
+import { AdminEmails } from '../componentes/admin/AdminEmails'
+import { AdminSimulados } from '../componentes/admin/AdminSimulados'
+import { SECOES, abaPadrao, definicaoDe, lerUrl, secaoDe, urlAntiga, urlDe, type Aba, type EstadoUrl, type Secao } from '../componentes/admin/secoes'
 import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
 import { AdminFinanceiro } from '../componentes/admin/AdminFinanceiro'
 import { AdminOpinioesFlashcards } from '../componentes/admin/AdminOpinioesFlashcards'
@@ -50,12 +55,6 @@ interface Resumo {
   assinantes_vigentes: number
 }
 
-type Aba = 'geral' | 'usuarios' | 'conteudo' | 'questoes' | 'opinioes' | 'crescimento' | 'financeiro' | 'assinaturas' | 'pagamentos' | 'configuracoes'
-const ABAS: Array<[Aba, string, NomeIcone]> = [
-  ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['conteudo', 'Conteúdo', 'livro'], ['questoes', 'Editar questões', 'livro'], ['opinioes', 'Opiniões dos flashcards', 'correio'],
-  ['crescimento', 'Crescimento', 'raio'], ['financeiro', 'Financeiro', 'grafico'], ['assinaturas', 'Assinaturas', 'estrela'], ['pagamentos', 'Pagamentos', 'relogio'],
-  ['configuracoes', 'Ajustes', 'filtro'],
-]
 const MIGRACAO = '202609290100_painel_admin.sql'
 
 /** Assinatura que dá acesso agora (em dia, ou cancelada que ainda vale até o fim do período). */
@@ -63,51 +62,30 @@ const vigente = (a: LinhaAssinatura) =>
   (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > new Date())
 const inicioDe = (a: LinhaAssinatura) => a.criada_em ?? a.inicio_periodo ?? a.ultima_atualizacao
 
-/**
- * O estado navegável do painel mora no endereço: #/admin?aba=…&filtro=…&vista=…&id=….
- * F5 e links abrem no mesmo lugar; Voltar passa pelas abas visitadas.
- */
-interface EstadoUrl { aba: Aba; filtro: FiltroUsuarios; vista: VistaConteudo; id: string | null }
-const FILTROS_URL: FiltroUsuarios[] = ['todos', 'online', 'hoje', 'ativos', 'novos', 'novos_parados', 'assinantes', 'parados']
-const VISTAS_URL: VistaConteudo[] = ['suspeitas', 'faceis', 'temas', 'relatos', 'avaliacoes']
+/** Partes cujo número é um alerta (vermelho); ele também sobe para a seção. */
+const ALERTAS: Aba[] = ['pagamentos', 'conteudo']
 
-function lerUrl(consulta: URLSearchParams): EstadoUrl {
-  const bruta = consulta.get('aba')
-  const filtro = consulta.get('filtro') as FiltroUsuarios
-  const vista = consulta.get('vista') as VistaConteudo
-  // Links antigos e os dos e-mails de alerta apontam para ?aba=avaliacoes ou relatos.
-  const legado = bruta === 'avaliacoes' || bruta === 'relatos' ? bruta : null
-  return {
-    aba: legado ? 'conteudo' : ABAS.some(([valor]) => valor === bruta) ? bruta as Aba : 'geral',
-    filtro: FILTROS_URL.includes(filtro) ? filtro : 'todos',
-    vista: legado ?? (VISTAS_URL.includes(vista) ? vista : 'suspeitas'),
-    id: consulta.get('id') || null,
-  }
-}
-
-/** Só o que vale para a aba entra no endereço, e só quando foge do padrão. */
-function urlDe({ aba, filtro, vista, id }: EstadoUrl): string {
-  const consulta = new URLSearchParams()
-  if (aba !== 'geral') consulta.set('aba', aba)
-  if (aba === 'usuarios' && filtro !== 'todos') consulta.set('filtro', filtro)
-  if (aba === 'conteudo' && vista !== 'suspeitas') consulta.set('vista', vista)
-  if (aba === 'questoes' && id) consulta.set('id', id)
-  const texto = consulta.toString()
-  return texto ? `/admin?${texto}` : '/admin'
-}
-
+/** Painel do administrador: cinco seções (Hoje, Pessoas, Receita, Conteúdo, Operações), cada uma com as suas partes. */
 export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const { sessao } = usarConta()
   // Lido do endereço a cada render: Voltar, F5 e links externos (hashchange) já chegam aqui pelo App.
   const url = lerUrl(consulta)
   const { aba } = url
-  // Vista e questão ficam lembradas fora da aba: voltar a Conteúdo ou ao editor reabre onde estava.
+  const secao = secaoDe(aba)
+  // Endereço antigo (?aba=geral, ?aba=configuracoes…): reescreve no formato novo sem criar histórico.
+  const antiga = urlAntiga(consulta)
+  const destinoNovo = urlDe(url)
+  useEffect(() => { if (antiga) navegar(destinoNovo, true) }, [antiga, destinoNovo])
+  // Vista e questão ficam lembradas fora da parte: voltar a Conteúdo ou ao editor reabre onde estava.
   const [vista, definirVista] = useState<VistaConteudo>(url.vista)
   const [idEditar, definirIdEditar] = useState<string | null>(url.id)
   useEffect(() => { if (aba === 'conteudo') definirVista(url.vista) }, [aba, url.vista])
   useEffect(() => { if (aba === 'questoes' && url.id) definirIdEditar(url.id) }, [aba, url.id])
-  // Cada consulta tem um dono só e fica em cache (usarRpc): trocar de aba não pede de novo,
-  // clique duplo não duplica, e a lista pesada de usuários só vem para as abas que a mostram.
+  // Cada seção lembra a última parte aberta: voltar a Receita reabre Pagamentos, se era lá.
+  const [ultimaParte, definirUltimaParte] = useState<Partial<Record<Secao, Aba>>>({})
+  useEffect(() => { definirUltimaParte(antes => antes[secao] === aba ? antes : { ...antes, [secao]: aba }) }, [secao, aba])
+  // Cada consulta tem um dono só e fica em cache (usarRpc): trocar de seção não pede de novo,
+  // clique duplo não duplica, e a lista pesada de usuários só vem para as partes que a mostram.
   const conta = sessao?.user.id
   const assinaturasQ = usarRpc<LinhaAssinatura[]>(conta, 'listar_assinaturas_admin')
   const eventosQ = usarRpc<LinhaEvento[]>(conta, 'listar_eventos_pagamento_admin')
@@ -116,8 +94,9 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   // Sem a RPC leve (parte 22 ainda não colada), o número de contas sai da própria lista.
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
-    ativo: aba === 'geral' || aba === 'usuarios' || aba === 'crescimento' || semContadores,
-    // "Ao vivo" só na aba Usuários e com a aba do navegador visível.
+    // Só Hoje, Pessoas › Usuários e Pessoas › Crescimento mostram a lista.
+    ativo: aba === 'hoje' || aba === 'usuarios' || aba === 'crescimento' || semContadores,
+    // "Ao vivo" só em Pessoas › Usuários e com a aba do navegador visível.
     atualizarCada: aba === 'usuarios' ? 30_000 : undefined,
     prazoMs: 20_000,
   })
@@ -129,13 +108,13 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const falhaNova = resumoQ.erro ?? usuariosQ.erro
   const erroNovo = falhaNova ? erroDoPainel(falhaNova, MIGRACAO) : ''
   const atualizadoEm = assinaturasQ.atualizadoEm ? new Date(assinaturasQ.atualizadoEm) : null
-  // Pendências de conteúdo: a RPC leve dá o número; com a aba Conteúdo aberta, vale o que ela
+  // Pendências de conteúdo: a RPC leve dá o número; com Conteúdo › Para revisar aberto, vale o que ela
   // acabou de contar (resolver um relato baixa na hora). O mais recente dos dois ganha.
   const [pendenciasAoVivo, definirPendenciasAoVivo] = useState<{ valor: number; em: number } | null>(null)
   const registrarPendencias = useCallback((valor: number) => definirPendenciasAoVivo({ valor, em: Date.now() }), [])
   const pendenciasConteudo = pendenciasAoVivo && pendenciasAoVivo.em >= (contadoresQ.atualizadoEm ?? 0) ? pendenciasAoVivo.valor : contadoresQ.dados?.conteudo ?? null
   const lidosPagamento = usarLidos('pagamento')
-  // Compras de teste do dono ficam fora das estatísticas; a lista completa continua na aba Assinaturas.
+  // Compras de teste do dono ficam fora das estatísticas; a lista completa continua em Receita › Assinaturas.
   const reais = useMemo(() => assinaturas?.filter(a => !contaDeTeste(a)) ?? null, [assinaturas])
   const testes = (assinaturas?.length ?? 0) - (reais?.length ?? 0)
   const usuariosReais = useMemo(() => usuarios?.filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
@@ -150,19 +129,19 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const carregar = useCallback(async () => {
     await Promise.all([recAssinaturas(), recEventos(), recResumo(), recUsuarios(), recContadores()])
   }, [recAssinaturas, recEventos, recResumo, recUsuarios, recContadores])
-  // Saindo da aba Conteúdo, o contador volta a vir do servidor já com o que foi resolvido lá.
+  // Saindo de Conteúdo › Para revisar, o contador volta a vir do servidor já com o que foi resolvido lá.
   const abaAnterior = useRef(aba)
   useEffect(() => {
     if (abaAnterior.current === 'conteudo' && aba !== 'conteudo') void recContadores()
     abaAnterior.current = aba
   }, [aba, recContadores])
-  // No celular as abas rolam de lado: a escolhida precisa ficar à vista.
+  // No celular as partes rolam de lado: a escolhida precisa ficar à vista.
   useEffect(() => {
-    document.querySelector('.adm-aba[aria-selected="true"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
+    document.querySelector('.adm-parte[aria-selected="true"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
   }, [aba, assinaturas !== null])
 
-  // Trocar de aba cria entrada no histórico (Voltar volta à aba anterior);
-  // filtro, vista e questão dentro da mesma aba só substituem o endereço.
+  // Trocar de parte cria entrada no histórico (Voltar volta à anterior);
+  // filtro, vista e questão dentro da mesma parte só substituem o endereço.
   function irPara(mudanca: Partial<EstadoUrl>) {
     const novo = { ...url, vista, id: idEditar, ...mudanca }
     const outraAba = novo.aba !== aba
@@ -170,6 +149,8 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
     if (outraAba) window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   const trocarAba = (nova: Aba) => irPara({ aba: nova, filtro: 'todos' })
+  // Tocar na seção em que já se está volta à primeira parte dela; em outra, reabre a última parte vista lá.
+  const destinoDaSecao = (s: Secao): Aba => s === secao ? abaPadrao(s) : ultimaParte[s] ?? abaPadrao(s)
   const abrirUsuarios = (filtro: FiltroUsuarios) => irPara({ aba: 'usuarios', filtro })
   const editarQuestao = (id: string) => { definirIdEditar(id); irPara({ aba: 'questoes', id }) }
 
@@ -180,11 +161,27 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
     usuarios: contadoresQ.dados?.usuarios ?? usuarios?.length, assinaturas: reais?.filter(vigente).length,
     pagamentos: errosPagamento || undefined, conteudo: pendenciasConteudo || undefined,
   }
+  const alertasDa = (s: Secao) => definicaoDe(s).abas.reduce((soma, a) => soma + (ALERTAS.includes(a.id) ? contadores[a.id] ?? 0 : 0), 0)
+  const definicao = definicaoDe(secao)
+  const variasPartes = definicao.abas.length > 1
+  const rotuloAba = definicao.abas.find(a => a.id === aba)?.rotulo ?? definicao.rotulo
 
-  return <article className="empilha-2 adm">
+  // Setas e Home/End andam entre as partes da seção (padrão de abas acessíveis).
+  function teclaNasPartes(evento: KeyboardEvent<HTMLDivElement>) {
+    const ids = definicao.abas.map(a => a.id)
+    const atual = ids.indexOf(aba)
+    const destino = evento.key === 'ArrowRight' ? (atual + 1) % ids.length : evento.key === 'ArrowLeft' ? (atual - 1 + ids.length) % ids.length
+      : evento.key === 'Home' ? 0 : evento.key === 'End' ? ids.length - 1 : -1
+    if (destino < 0) return
+    evento.preventDefault()
+    trocarAba(ids[destino])
+    requestAnimationFrame(() => document.getElementById(`adm-parte-${ids[destino]}`)?.focus())
+  }
+
+  return <article className="adm">
     <header className="adm-heroi">
       <div>
-        <p className="adm-heroi__sobre"><Icone nome="alvo" tamanho={15} /> Área restrita</p>
+        <p className="adm-heroi__sobre"><Icone nome="cadeado" tamanho={14} /> Área restrita</p>
         <h1>Painel do administrador</h1>
         <p>{atualizadoEm ? `Dados de ${atualizadoEm.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}.` : 'Verificando acesso…'} Só contas em administradores conseguem abrir.</p>
       </div>
@@ -193,33 +190,68 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
 
     {/* Falha ao atualizar não derruba o painel: o aviso aparece em cima dos dados que já estavam na tela. */}
     {erroAcesso && <p role="alert" className="adm-alerta">{erroAcesso}{assinaturas !== null && ' Os dados abaixo são da última atualização.'}</p>}
-    {assinaturas === null ? (!erroAcesso && <p role="status">Carregando o painel…</p>) : <>
-      <nav className="adm-abas" role="tablist" aria-label="Seções do painel">
-        {ABAS.map(([valor, rotulo, icone]) => <button key={valor} type="button" role="tab" aria-selected={aba === valor} className="adm-aba" onClick={() => trocarAba(valor)}>
-          <Icone nome={icone} tamanho={16} /><span>{rotulo}</span>{contadores[valor] ? <b className={valor === 'pagamentos' || valor === 'conteudo' ? 'adm-aba__alerta' : ''}>{contadores[valor]}</b> : null}
-        </button>)}
+    {assinaturas === null ? (!erroAcesso && <p role="status">Carregando o painel…</p>) : <div className="adm-corpo">
+      {/* Computador: coluna à esquerda. Celular: barra presa embaixo da tela. */}
+      <nav className="adm-nav" aria-label="Seções do painel">
+        <ul>
+          {SECOES.map(s => {
+            const alertas = alertasDa(s.id)
+            const numero = s.id === 'pessoas' ? contadores.usuarios : undefined
+            const destino = destinoDaSecao(s.id)
+            return <li key={s.id}>
+              <a className="adm-nav__item" href={href(urlDe({ ...url, vista, id: idEditar, aba: destino, filtro: 'todos' }))}
+                aria-current={secao === s.id ? 'page' : undefined}
+                onClick={e => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; e.preventDefault(); trocarAba(destino) }}>
+                <span className="adm-nav__icone"><Icone nome={s.icone} tamanho={20} />{alertas > 0 && <i className="adm-nav__ponto" aria-hidden="true" />}</span>
+                <span className="adm-nav__rotulo">{s.rotulo}</span>
+                {alertas > 0 ? <b className="adm-nav__numero adm-nav__numero--alerta">{alertas}<span className="so-leitor"> para ver</span></b>
+                  : numero ? <b className="adm-nav__numero">{numero}</b> : null}
+              </a>
+            </li>
+          })}
+        </ul>
       </nav>
 
-      {erroNovo && (aba === 'geral' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
+      <div className="adm-area empilha-2">
+        <div className="adm-area__cabeca">
+          <h2 className="adm-area__titulo">{definicao.rotulo}{variasPartes && <span className="so-leitor">: {rotuloAba}</span>}</h2>
+          {variasPartes && <div className="adm-partes" role="tablist" aria-label={`Partes de ${definicao.rotulo}`} onKeyDown={teclaNasPartes}>
+            {definicao.abas.map(a => <button key={a.id} id={`adm-parte-${a.id}`} type="button" role="tab" aria-selected={aba === a.id} aria-controls="adm-painel" tabIndex={aba === a.id ? 0 : -1} className="adm-parte" onClick={() => trocarAba(a.id)}>
+              <span>{a.rotulo}</span>{contadores[a.id] ? <b className={ALERTAS.includes(a.id) ? 'adm-parte__alerta' : ''}>{contadores[a.id]}</b> : null}
+            </button>)}
+          </div>}
+        </div>
 
-      {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={reais ?? []} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
-      {aba === 'usuarios' && (usuarios
-        ? <AdminUsuarios usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} />
-        : !usuariosQ.erro && <p role="status">Carregando usuários…</p>)}
-      {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
-      {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
-      {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} usuarios={usuarios} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
-      {aba === 'crescimento' && <AdminCrescimento usuarios={usuariosReais} assinaturas={reais ?? []} />}
-      {aba === 'configuracoes' && <AdminConfiguracoes />}
-      {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} aoAbrir={id => { definirIdEditar(id); irPara({ id }) }} />}
-      {aba === 'opinioes' && <AdminOpinioesFlashcards />}
-      {/* Montada só na própria aba: o contador da barra vem de contadores_admin. */}
-      {aba === 'conteudo' && <AdminConteudo vista={vista} aoMudarVista={nova => { definirVista(nova); irPara({ vista: nova }) }} aoMudarPendencias={registrarPendencias} aoEditar={editarQuestao} />}
-    </>}
+        <div id="adm-painel" className="empilha-2" role={variasPartes ? 'tabpanel' : undefined} aria-labelledby={variasPartes ? `adm-parte-${aba}` : undefined}>
+          {erroNovo && (aba === 'hoje' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
+
+          {aba === 'hoje' && <Hoje resumo={resumo} usuarios={usuarios} assinaturas={reais ?? []} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
+
+          {aba === 'usuarios' && (usuarios
+            ? <AdminUsuarios usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} />
+            : !usuariosQ.erro && <p role="status">Carregando usuários…</p>)}
+          {aba === 'crescimento' && <AdminCrescimento usuarios={usuariosReais} assinaturas={reais ?? []} />}
+
+          {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
+          {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
+          {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} usuarios={usuarios} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
+
+          {/* Montada só na própria parte: o contador da navegação vem de contadores_admin. */}
+          {aba === 'conteudo' && <AdminConteudo vista={vista} aoMudarVista={nova => { definirVista(nova); irPara({ vista: nova }) }} aoMudarPendencias={registrarPendencias} aoEditar={editarQuestao} />}
+          {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} aoAbrir={id => { definirIdEditar(id); irPara({ id }) }} />}
+          {aba === 'opinioes' && <AdminOpinioesFlashcards />}
+
+          {aba === 'lembretes' && <><AdminLembretes /><AdminRelatorioMensal /><AdminEmails /></>}
+          {aba === 'simulados' && <AdminSimulados />}
+          {aba === 'ajustes' && <AdminConfiguracoes />}
+        </div>
+      </div>
+    </div>}
   </article>
 }
 
-function VisaoGeral({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara, verUsuarios }: {
+/** Seção Hoje: números do dia e o que pede atenção, cada um com atalho para a parte certa. */
+function Hoje({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara, verUsuarios }: {
   resumo: Resumo | null; usuarios: LinhaUsuario[] | null; assinaturas: LinhaAssinatura[]
   errosPagamento: number; mensagens: number | null; irPara: (aba: Aba) => void; verUsuarios: (filtro: FiltroUsuarios) => void
 }) {
@@ -345,7 +377,7 @@ function Assinaturas({ linhas }: { linhas: LinhaAssinatura[] }) {
             <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em !== undefined ? data(a.ultima_cobranca_em) : '—'}</dd></div>
             <div><dt>{a.cancelar_ao_fim || a.status === 'cancelada' || meioDe(a) === 'pix' ? 'Acesso até' : 'Próxima cobrança'}</dt><dd>{data(a.proxima_cobranca ?? a.fim_periodo)}</dd></div>
           </dl>
-          {a.status === 'falha_pagamento' && <small className="adm-ajuda">A cobrança não foi confirmada. Veja a aba Pagamentos e o Mercado Pago.</small>}
+          {a.status === 'falha_pagamento' && <small className="adm-ajuda">A cobrança não foi confirmada. Veja Receita › Pagamentos e o Mercado Pago.</small>}
           {a.cancelar_ao_fim && a.status !== 'cancelada' && a.status !== 'reembolsada' && <small className="adm-ajuda">{meioDe(a) === 'pix' ? 'Pago no Pix: não renova sozinho; o acesso vale até o fim do período pago.' : 'Pediu cancelamento: o acesso vale até o fim do período pago.'}</small>}
         </li>
       })}
