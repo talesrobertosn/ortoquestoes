@@ -16,15 +16,21 @@
   .fc-arena--batalha.fc-arena--fase-resposta .fc-jogador { grid-template-areas: "heroi acao"; }
 }
 
+/* A arena não rola nunca. Com `overflow: hidden` ela ainda podia ser rolada pelo
+   navegador (foco num elemento meio fora da tela): no celular deitado, ao responder,
+   a tela inteira subia 11 px, o cabeçalho cortava e o botão saía de baixo do dedo. */
+.fc-modal, .fc-modal .fc-arena { overflow: clip; }
+
 /* ---------------------------------------------------------------------
    Herói e botão sumidos depois de uma parada (celular deitado).
    Nas paradas (portas, loja, preceptor, sala), a arena some com
    `visibility: hidden` na .fc-batalha. No celular deitado, o herói e o botão
-   ficam dentro de .fc-jogador com `display: contents`, e o Chrome não
-   recalculava a visibilidade herdada por ele quando a parada acabava: o herói,
-   a vida e o botão Atacar/Seguir continuavam invisíveis e o toque atravessava.
-   A pessoa tocava em "Seguir" e nada acontecia, para sempre. A regra vale agora
-   em cada filho, que é recalculado quando a parada sai.
+   ficam dentro de .fc-jogador com `display: contents` e ainda carregavam a
+   animação de deslize (já removida); nessa combinação o Chrome não recalculava a
+   visibilidade herdada quando a parada acabava: o herói, a vida e o botão
+   Atacar/Seguir continuavam invisíveis e o toque atravessava. A pessoa tocava
+   em "Seguir" e nada acontecia, para sempre. A regra vale agora em cada filho,
+   que é recalculado por conta própria quando a parada sai.
    --------------------------------------------------------------------- */
 .fc-arena[data-parada] .fc-batalha > *, .fc-arena[data-parada] .fc-jogador > * { visibility: hidden; pointer-events: none; }
 
@@ -91,3 +97,85 @@
 }
 @media (max-width: 640px) { .fc-reliquias-selo { height: 32px; min-width: 36px; } }
 @media (prefers-reduced-motion: reduce) { .fc-dica-jogo { animation: none; } }
+
+/* ---------------------------------------------------------------------
+   Figura do flashcard: o quadro guarda o lugar (sem pulo de layout), brilho
+   de espera enquanto carrega, entrada suave e aviso claro se a rede falhar.
+   A figura nunca distorce (contain) e o cursor de lupa avisa que amplia.
+   --------------------------------------------------------------------- */
+.fc-carta__imagem { min-height: 96px; overflow: hidden; isolation: isolate; }
+.fc-carta__imagem img { object-fit: contain; transition: opacity .28s ease-out; user-select: none; -webkit-user-drag: none; }
+.fc-carta__imagem--carregando img { opacity: 0; }
+.fc-carta__imagem--carregando::before { content: ""; position: absolute; inset: 6px; border-radius: 6px; z-index: -1;
+  background: linear-gradient(100deg, #1a120c 30%, #2e2216 50%, #1a120c 70%) 0 0 / 300% 100%; animation: fc-espera-figura 1.3s linear infinite; }
+@keyframes fc-espera-figura { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+.fc-carta__imagem--carregando::after, .fc-carta__imagem--falhou::after { display: none; }
+.fc-carta__imagem--falhou { cursor: pointer; display: grid; place-items: center; }
+.fc-carta__imagem--falhou img { display: none; }
+.fc-carta__imagem-aviso { padding: 10px 14px; font: 600 14px/1.4 var(--fc-ui); color: #f0e2c0; text-align: center; }
+.fc-carta__imagem-aviso b { display: block; margin-top: 4px; color: #f2c45a; text-decoration: underline; text-underline-offset: 3px; }
+.fc-carta__imagem:hover::after { background: rgba(40, 26, 12, .92); box-shadow: 0 0 0 1.5px #fff1c2; }
+@media (prefers-reduced-motion: reduce) { .fc-carta__imagem--carregando::before { animation: none; } }
+
+/* ---------------------------------------------------------------------
+   Barras de vida: moldura de metal, brilho de cima, dano residual em brasa,
+   número sempre legível e pulso de perigo no aro (não na barra inteira).
+   --------------------------------------------------------------------- */
+.fc-modal .fc-vida__trilho { border-radius: 5px; background: linear-gradient(#0e090c, #20161c);
+  box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #7a5a2a, 0 0 0 4px #0c0604, inset 0 3px 5px rgba(0, 0, 0, .75); }
+.fc-modal .fc-vida--chefe .fc-vida__trilho { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px var(--fc-ouro), 0 0 0 4.5px #0c0604, 0 0 16px rgba(255, 200, 90, .4), inset 0 3px 5px rgba(0, 0, 0, .75); }
+.fc-modal .fc-vida__trilho s { background: linear-gradient(#fff2c0, #ffb84a); }
+.fc-modal .fc-vida__trilho i::after { content: ""; position: absolute; left: 3px; right: 3px; top: 2px; height: 30%; border-radius: 3px; background: linear-gradient(rgba(255, 255, 255, .55), rgba(255, 255, 255, .08)); pointer-events: none; }
+.fc-modal .fc-vida__trilho i { min-width: 0; }
+.fc-modal .fc-vida b { letter-spacing: .01em; }
+.fc-modal .fc-vida--baixa .fc-vida__trilho { animation: fc-vida-perigo 1s ease-in-out infinite; }
+.fc-modal .fc-vida--baixa .fc-vida__trilho i { animation: none; background: linear-gradient(#ffb0a0, #ff3a2a 45%, #8a0e08); }
+@keyframes fc-vida-perigo { 50% { box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #ff5a3c, 0 0 0 4px #0c0604, 0 0 14px rgba(255, 70, 40, .7), inset 0 3px 5px rgba(0, 0, 0, .75); } }
+@media (prefers-reduced-motion: reduce) { .fc-modal .fc-vida--baixa .fc-vida__trilho { animation: none; box-shadow: 0 0 0 1.5px #0c0604, 0 0 0 3px #ff5a3c, 0 0 0 4px #0c0604, inset 0 3px 5px rgba(0, 0, 0, .75); } }
+
+/* ---------------------------------------------------------------------
+   Janelas por cima da arena (recompensa, portas, loja, preceptor, fim).
+   Centralizadas com `place-items: center`, cortavam o topo quando não cabiam
+   (celular deitado): o título sumia e não dava para rolar até ele. Agora a
+   margem automática centraliza quando sobra espaço e, quando falta, a janela
+   começa no topo e rola.
+   --------------------------------------------------------------------- */
+.fc-modal .fc-veu { place-items: start center; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.fc-modal .fc-veu > * { margin-block: auto; }
+
+/* recompensa no celular: o aviso "Você já tem..." fica na coluna do texto */
+@media (max-width: 640px) {
+  .fc-modal .fc-recompensa > :is(strong, .fc-recompensa__texto, .fc-recompensa__detalhe, .fc-recompensa__patrono, .fc-recompensa__aviso) { grid-column: 2; }
+  .fc-modal .fc-recompensa__pedestal { grid-row: span 6; align-self: center; }
+}
+
+/* recompensa no celular deitado: três cartas lado a lado, compactas, sem cortar */
+@media (orientation: landscape) and (max-height: 520px) and (min-width: 480px) {
+  .fc-modal .fc-veu { padding: 10px 56px 10px 12px; }
+  .fc-modal .fc-tesouro { gap: 18px; padding: 0; }
+  .fc-modal .fc-tesouro__cabeca h2 { font-size: 19px; }
+  .fc-modal .fc-tesouro__cabeca p { margin-top: 2px; font-size: 13px; }
+  .fc-modal .fc-recompensas { gap: 10px; }
+  .fc-modal .fc-recompensa { min-height: 0; gap: 3px; padding: 26px 10px 10px; }
+  .fc-modal .fc-recompensa__pedestal { width: 58px; height: 58px; margin: 0; }
+  .fc-modal .fc-recompensa__icone { width: 52px; height: 52px; }
+  .fc-modal .fc-recompensa__icone .fc-sprite { width: 34px; height: 34px; }
+  .fc-modal .fc-recompensa strong { font-size: 15px; }
+  .fc-modal .fc-recompensa__texto { font-size: 13px; line-height: 1.32; }
+  .fc-modal .fc-recompensa__detalhe { font-size: 11px; line-height: 1.3; }
+  .fc-modal .fc-recompensa__aviso { font-size: 11.5px; }
+}
+
+/* a Biblioteca chega em pedaço à parte: enquanto isso, um aviso calmo no lugar */
+.fc-estudo--chegando { display: grid !important; place-items: center; grid-template-columns: 1fr !important; }
+.fc-estudo--chegando span { padding: 10px 18px; border-radius: 12px; font: 700 15px var(--fc-ui); color: #f0e2c0; background: rgba(14, 9, 7, .72); box-shadow: 0 0 0 1px rgba(233, 185, 85, .35); }
+
+/* cabeçalho do flashcard no celular: o selo de raridade não fica sob o enfeite do canto */
+@media (max-width: 640px) { .fc-modal .fc-carta__cabeca { padding-right: 16px; } }
+
+/* botão principal: desabilitado com cara de desabilitado (não parece travado), e
+   o toque sempre dá retorno imediato, mesmo antes da animação */
+.fc-modal .fc-principal:disabled { cursor: not-allowed; }
+.fc-modal .fc-principal:disabled .fc-principal__texto span { opacity: .78; }
+.fc-modal .fc-principal { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.fc-alternativa, .fc-recompensa, .fc-portal, .fc-oferta, .fc-loja__preco, .fc-botao { touch-action: manipulation; }

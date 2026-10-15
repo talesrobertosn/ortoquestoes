@@ -1,11 +1,13 @@
-import { EstacoesBiblioteca } from './EstacoesBiblioteca'
-import { LeitoresBiblioteca } from './LeitoresBiblioteca'
-import { memo, useEffect, useRef, useState } from 'react'
+import { lazy, memo, Suspense, useEffect, useRef, useState } from 'react'
 import { climaDoCiclo, INTERVALO_CEU } from '../efeitos/cicloExterior'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
 import { criarAmbiente, pintarCena, type Cena, type Clima } from '../efeitos/pintura'
 import { pintarTabuleiro } from '../efeitos/tabuleiros'
 import { CENAS_PINTADAS, PAISAGENS, carregarCenarioPintado, cenarioPintadoPronto, formatoPara, pintarCamadas, type CenaAmbientada, type Paisagem } from '../efeitos/cenariosPintados'
+
+// enfeites só da Biblioteca: vêm à parte, quem joga a Cripta não os baixa
+const EstacoesBiblioteca = lazy(() => import('./EstacoesBiblioteca').then((m) => ({ default: m.EstacoesBiblioteca })))
+const LeitoresBiblioteca = lazy(() => import('./LeitoresBiblioteca').then((m) => ({ default: m.LeitoresBiblioteca })))
 
 /** Desfoque barato e compatível com todos os navegadores: reduz e amplia de novo, com suavização. */
 function desfocar(src: HTMLCanvasElement, fator: number): HTMLCanvasElement {
@@ -211,8 +213,7 @@ export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: cl
       style={{ ['--espera-ceu' as string]: (ESPERA[pedido] ?? ESPERA[cena] ?? ['#1c1622', '#0c0a10'])[0], ['--espera-chao' as string]: (ESPERA[pedido] ?? ESPERA[cena] ?? ['#1c1622', '#0c0a10'])[1] }}>
       <canvas ref={base} className="fc-cena__base" />
       <canvas ref={ambiente} className="fc-cena__ambiente" />
-      {cena === 'biblioteca' && <EstacoesBiblioteca reduzido={reduzido} />}
-      {cena === 'biblioteca' && <LeitoresBiblioteca reduzido={reduzido} />}
+      {cena === 'biblioteca' && <Suspense fallback={null}><EstacoesBiblioteca reduzido={reduzido} /><LeitoresBiblioteca reduzido={reduzido} /></Suspense>}
       <span className="fc-cena__nevoa" />
     </div>
   )

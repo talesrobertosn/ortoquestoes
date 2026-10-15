@@ -6,7 +6,7 @@ import { ControleVolume, Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
 import { TABULEIRO } from '../efeitos/tabuleiros'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
@@ -16,7 +16,7 @@ import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro, pixelVfx, precarregarVfx } from '../efeitos/palco'
 import { ambienteBiblioteca } from '../biblioteca/sessao'
-import { ClimaEstudo, type Humor } from './ClimaEstudo'
+import type { Humor } from './ClimaEstudo'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
 import { configurarClimaBiblioteca, configurarSom, ESCALA_VOLUME, VOLUME_INICIAL, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
@@ -38,7 +38,6 @@ import { Cenario, TampoMesa } from './Cenario'
 import { precarregarCenario } from '../efeitos/cenariosPintados'
 import { climaDoAndar } from '../efeitos/pintura'
 import { paisagemDaParada } from '../efeitos/paisagens'
-import { Estudo } from './Estudo'
 import { Ator, BarraVida, Encaixe, precarregarAtor, Reliquia, ReliquiasCompactas } from './Hud'
 import { Visualizador } from './Visualizador'
 import { recurso } from '../../config'
@@ -91,6 +90,16 @@ export function nivelEscolhido(): NivelJogo {
 
 /** Tamanho de cada reposição do baralho (a seleção roda de novo quando acaba). */
 const LOTE_DO_BARALHO = 40
+
+/**
+ * A Biblioteca (modo Estudo) e o clima dela vêm num pedaço à parte (fluidez, 15/10/2026):
+ * quem abre a Cripta não baixa nem interpreta o Estudo antes da primeira carta. O pedaço é
+ * buscado quando o navegador folga, então a troca de aba continua instantânea.
+ */
+const carregarEstudo = () => import('./Estudo')
+const carregarClima = () => import('./ClimaEstudo')
+const Estudo = lazy(() => carregarEstudo().then((m) => ({ default: m.Estudo })))
+const ClimaEstudo = lazy(() => carregarClima().then((m) => ({ default: m.ClimaEstudo })))
 
 let motor = criarMotor(BARALHO_DEMO)
 
@@ -291,6 +300,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   useEffect(() => { configurarClimaBiblioteca(modo === 'estudo' ? humorEstudo?.tipo ?? 'calmo' : null, modo === 'estudo' && leituraTranquila); return () => configurarClimaBiblioteca(null) }, [modo, humorEstudo?.tipo, leituraTranquila])
   const adversarioEmCena = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo
   useEffect(() => { precarregarVfx(modo === 'estudo' ? VFX_BIBLIOTECA : vfxPorAndar(adversarioEmCena.sprite, adversarioEmCena.variante)) }, [modo, adversarioEmCena.sprite, adversarioEmCena.variante])
+  // a Biblioteca chega antes de a pessoa trocar de aba (sem atrasar a primeira carta)
+  useEffect(() => {
+    const ocioso = (window as unknown as { requestIdleCallback?: (f: () => void, o?: { timeout: number }) => number }).requestIdleCallback
+    const buscar = () => { void carregarEstudo(); void carregarClima() }
+    const t = window.setTimeout(() => (ocioso ? ocioso(buscar, { timeout: 5000 }) : buscar()), 3500)
+    return () => window.clearTimeout(t)
+  }, [])
   // Pré-carregamento do caminho: o adversário e a cena deste andar já, os do próximo andar quando o navegador folgar.
   useEffect(() => {
     precarregarAtor(adversarioEmCena.sprite as Personagem, adversarioEmCena.variante)
@@ -1189,8 +1205,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     <ModalJogo titulo={NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar} transicao={`${modo}:${cenarioVisivel}:${['loja','sabio','sala','fim'].includes(partida.fase) ? partida.fase : 'jogo'}`}>
       <div className={classes} data-cenario={cenarioVisivel} data-modo={partida.modo} data-parada={parada ? 'true' : undefined}>
         <Cenario cena={paisagemDaParada(partida, modo === 'batalha', cenarioVisivel)} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
-        {modo === 'estudo' && leituraTranquila && <ClimaEstudo humor={{tipo:'chuva', nivel:1, titulo:'Leitura tranquila', sub:''}} reduzido={reduzido} tranquilo />}
-        {modo === 'estudo' && !leituraTranquila && humorEstudo && humorEstudo.tipo !== 'calmo' && <ClimaEstudo humor={humorEstudo} reduzido={reduzido} />}
+        <Suspense fallback={null}>
+          {modo === 'estudo' && leituraTranquila && <ClimaEstudo humor={{tipo:'chuva', nivel:1, titulo:'Leitura tranquila', sub:''}} reduzido={reduzido} tranquilo />}
+          {modo === 'estudo' && !leituraTranquila && humorEstudo && humorEstudo.tipo !== 'calmo' && <ClimaEstudo humor={humorEstudo} reduzido={reduzido} />}
+        </Suspense>
 
         <header className="fc-topo">
           <div className="fc-abas" role="tablist" aria-label="Modo">
@@ -1236,7 +1254,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         </header>
 
         {modo === 'estudo' ? (
-          <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} aoHumor={definirHumorEstudo} aoTranquilo={definirLeituraTranquila} />
+          <Suspense fallback={<div className="fc-estudo fc-estudo--chegando" role="status"><span>Abrindo a Biblioteca…</span></div>}>
+            <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} aoHumor={definirHumorEstudo} aoTranquilo={definirLeituraTranquila} />
+          </Suspense>
         ) : (
           <div className="fc-batalha" aria-hidden={parada || undefined}>
             {/* Adversário em cena, de pé sobre a arena */}
