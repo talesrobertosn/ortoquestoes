@@ -5,9 +5,10 @@ Ideias pensadas para os e-mails pessoais, com a decisão de cada uma. `[x]` feit
 
 ## Feito
 
-- [x] **Uma voz por faixa de acerto** (9 faixas): quem acerta 8% recebe uma pergunta sincera
-  ("está passando rápido pelas questões?"), quem acerta 50% ouve que é a faixa em que mais dá para
-  subir, quem acerta 93% recebe um pedido ("como você estuda?"). Nem sempre cita a porcentagem.
+- [x] **Uma voz por faixa de acerto** (9 faixas): quem acerta 8% recebe acolhimento e uma dica de
+  presente ("todo mundo que passou começou assim"), quem está na média ouve que é a fase em que mais
+  dá para crescer, quem acerta 93% recebe um pedido ("como você estuda?"). Abaixo de 50%, nunca cita
+  a porcentagem. Tom revisto em 15/10/2026 a pedido do dono: ver [TOM.md](TOM.md).
 - [x] **Observação que prova que alguém olhou**: melhor área, área mais estudada (com um comentário
   sobre a área, como "mão é uma área bem da hora"), horário de estudo, prova, etapa, ranking,
   sequência, flashcards. Só com dado significativo, no máximo duas por carta, para não parecer vigilância.

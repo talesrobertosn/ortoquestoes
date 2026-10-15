@@ -191,7 +191,84 @@ try {
   const carta = auto.emailCarta({ nome: 'Ana', marco: auto.MARCOS[0], respondidas: 0, acertos: 0, erros: 0, respondidas7d: 0, site: SITE, linkDescadastro: desc })
   assert.ok(!PROIBIDO.test(carta.texto), 'carta antiga com zero')
 
-  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${m.TIPOS_MANUAIS.length} situações, sem "0 questões"/undefined/null/NaN, assinadas, sem promoção no assunto e com variedade; automáticos em forma de carta.`)
+  // 10. Tom (docs/emails/TOM.md, retorno do dono em 15/10/2026): nenhuma expressão grosseira,
+  // acusatória, de cobrança ou de pressão, em centenas de sorteios de todas as situações e faixas.
+  const TOM_PROIBIDO = [
+    /vou ser (direto|direta|sincer[oa])/i, /sem rodeios/i, /\bfranc[oa]\b|franqueza/i, /olha só/i, /infelizmente/i, /\bsó que\b/i,
+    /\bsincer/i, /\bvocê (ainda )?não\b/i, /\bchut(e|es|ar|ou|ando)\b/i, /alternativa qualquer|qualquer uma|marcando/i,
+    /err(ou|a|am|ando|aram) muito|maior parte das respostas|errad[ao]s? demais/i, /lá embaixo|acerto (ainda )?(está )?baixo|baixo demais|n[aã]o decolou/i,
+    /desanim/i, /cobran[cç]a|\bculpa\b|\bsumiu\b/i, /gr[aá]tis|gratuit|oferta|desconto|aproveite|imperd[ií]vel|promo[cç]/i,
+    /[uú]ltima chance|urgente|\bcorra\b|não perca|só hoje|antes que acabe|últimas vagas|vagas limitadas/i,
+    /% de acerto parece|seria uma pena|que pena/i, /bem-vind[oa]/i, /R\$/,
+  ]
+  const tomOk = (texto, contexto) => { for (const re of TOM_PROIBIDO) assert.ok(!re.test(texto), `${contexto}: expressão proibida (${re}):\n${texto}`) }
+  const baixoComArea = (pct, extra = {}) => ({ ...rico(pct), areas: [{ slug: 'mao', total: 60, certas: 50 }, { slug: 'coluna', total: 60, certas: 6 }], ...extra })
+  let sorteios = 0
+  const perfisTom = [rico(5), rico(15), rico(25), rico(35), rico(45), rico(55), rico(65), rico(75), rico(85), rico(95), baixoComArea(12), pobre(45), pobre(1), pobre(0, { diasConta: 4 }), pobre(300, { acertos: 30, erros: 270, diasParado: 20 })]
+  for (const tipo of m.TIPOS_MANUAIS) {
+    for (const perfil of perfisTom) {
+      if (!m.tipoCombina(tipo, perfil)) continue
+      for (let semente = 1; semente <= 40; semente++) {
+        const carta = m.gerarCarta(perfil, { tipo, semente, hoje: HOJE, site: SITE, marco: tipo === 'marco' ? 100 : undefined })
+        tomOk(`${carta.assunto}\n${carta.corpo}`, `${tipo} #${semente}`); sorteios++
+      }
+    }
+  }
+  for (const faixa of m.FAIXAS) for (let semente = 1; semente <= 120; semente++) {
+    const carta = m.gerarCarta(rico(meio[faixa], { assinante: true }), { semente, anteriores: obrigadoJa, hoje: HOJE, site: SITE })
+    tomOk(`${carta.assunto}\n${carta.corpo}`, `ativo ${faixa} #${semente}`); sorteios++
+  }
+  for (let s = 1; s <= 30; s++) {
+    for (const campanha of ['nunca', 'tres_dias', 'sete_dias', 'renovacao_pix', 'renovacao_pix_hoje']) {
+      const e = auto.emailLembrete({ campanha, nome: 'Bruno', respondidas: campanha === 'nunca' ? 0 : 230, diasFora: 9, site: SITE, linkDescadastro: desc, diasRestantes: campanha === 'renovacao_pix_hoje' ? 0 : 3, fimEm: '2026-10-18T12:00:00Z', plano: 'mensal', acertos: 40, respondidas7d: 40, semente: s })
+      tomOk(`${e.assunto}\n${e.texto}`, `lembrete ${campanha} #${s}`); sorteios++
+    }
+    for (const d of [relBase, { ...relBase, respostas: 40, certas: 8, erradas: 32 }, { ...relBase, respostas: 0, certas: 0, erradas: 0, dias_ativos: 0 }]) {
+      const e = auto.emailRelatorio({ ...d, semente: s }); tomOk(`${e.assunto}\n${e.texto}`, `relatório #${s}`); sorteios++
+    }
+    const mc = auto.emailMarco({ nome: 'Ana', marco: auto.MARCOS[1], respondidas: 104, acertos: 10, erros: 94, respondidas7d: 20, site: SITE, linkDescadastro: desc, semente: s })
+    tomOk(`${mc.assunto}\n${mc.texto}`, `marco automático #${s}`); sorteios++
+  }
+  tomOk(relato.assunto + relato.texto, 'relato resolvido'); tomOk(carta.texto, 'carta antiga')
+  assert.ok(sorteios >= 1500, `poucos sorteios de tom (${sorteios})`)
+  // As expressões que o dono citou são barradas pela lista.
+  for (const ruim of ['Vou ser direto, porque sei que o seu tempo é curto.', 'Vou ser sincero: estou escrevendo para te convidar a assinar.', 'fiquei pensando se você não está marcando uma alternativa qualquer', '16% de acerto parece pouco, eu sei.']) {
+    assert.ok(TOM_PROIBIDO.some((re) => re.test(ruim)), `a lista não barra: ${ruim}`)
+  }
+
+  // 11. Abaixo de 50% de acerto, a carta nunca cita porcentagem (nem do acerto geral, nem de área).
+  const PORCENTAGEM = /\d+\s?%|por cento/i
+  let baixos = 0
+  for (const pct of [3, 8, 15, 25, 35, 42, 48]) {
+    for (const perfil of [rico(pct), baixoComArea(pct), pobre(200, { acertos: 2 * pct, erros: 200 - 2 * pct }), rico(pct, { diasParado: 15 }), rico(pct, { assinante: true })]) {
+      assert.ok(m.acertoCitavel(perfil) < 50)
+      for (let semente = 1; semente <= 30; semente++) {
+        const auto1 = m.gerarCarta(perfil, { semente, hoje: HOJE, site: SITE })
+        assert.ok(!PORCENTAGEM.test(auto1.assunto + auto1.corpo), `${auto1.versao} com ${pct}% citou porcentagem:\n${auto1.assunto}\n${auto1.corpo}`); baixos++
+        for (const tipo of [...m.TIPOS_MANUAIS, 'pausa']) {
+          if (!m.tipoCombina(tipo, perfil) || tipo === 'ativo') continue
+          const c = m.gerarCarta(perfil, { tipo, semente, hoje: HOJE, site: SITE, marco: tipo === 'marco' ? 100 : undefined })
+          assert.ok(!PORCENTAGEM.test(c.assunto + c.corpo), `${c.versao} com ${pct}% citou porcentagem:\n${c.assunto}\n${c.corpo}`); baixos++
+        }
+      }
+    }
+    for (const faixa of ['0-10', '10-20', '20-30', '30-40']) for (let semente = 1; semente <= 30; semente++) {
+      const c = m.gerarCarta(baixoComArea(pct), { tipo: 'ativo', faixa, semente, hoje: HOJE, site: SITE })
+      assert.ok(!PORCENTAGEM.test(c.assunto + c.corpo), `${c.versao} citou porcentagem:\n${c.corpo}`); baixos++
+    }
+    for (let s = 1; s <= 10; s++) for (const campanha of ['renovacao_pix', 'renovacao_pix_hoje', 'sete_dias']) {
+      const e = auto.emailLembrete({ campanha, nome: 'Bruno', respondidas: 200, acertos: 2 * pct, respondidas7d: 40, diasFora: 12, site: SITE, linkDescadastro: desc, diasRestantes: 3, fimEm: '2026-10-18T12:00:00Z', plano: 'mensal', semente: s })
+      assert.ok(!PORCENTAGEM.test(e.assunto + e.texto), `lembrete ${campanha} com ${pct}%:\n${e.texto}`); baixos++
+    }
+  }
+  for (let s = 1; s <= 20; s++) {
+    const e = auto.emailRelatorio({ ...relBase, respostas: 40, certas: 12, erradas: 28, semente: s })
+    assert.ok(!PORCENTAGEM.test(e.assunto + e.texto), `relatório com acerto baixo citou porcentagem:\n${e.texto}`); baixos++
+  }
+  // E a partir de 60% a porcentagem aparece em algum sorteio (o elogio com número continua existindo).
+  assert.ok(Array.from({ length: 40 }, (_, s) => m.gerarCarta(rico(75, { assinante: true }), { semente: s + 1, anteriores: obrigadoJa, hoje: HOJE, site: SITE }).corpo).some((t) => /75%/.test(t)), 'faixa alta nunca citou o acerto')
+
+  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${m.TIPOS_MANUAIS.length} situações, sem "0 questões"/undefined/null/NaN, assinadas, sem promoção no assunto e com variedade; automáticos em forma de carta; tom conferido em ${sorteios} sorteios e nenhuma porcentagem abaixo de 50% em ${baixos} cartas.`)
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }

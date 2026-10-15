@@ -87,9 +87,9 @@ export function emailCarta(d: DadosMarco): EmailPronto {
   const nome = primeiroNome(d.nome)
   const recado = d.recado?.trim()
   const padrao = d.respondidas > 0
-    ? `Passando para te dar parabéns: você já passou de ${questoes(d.respondidas)} no Orto Questões. Constância é o que mais faz diferença na prova, e você está construindo isso.`
-    : 'Passando para dar um oi. Sua conta está pronta, e quando quiser começar, cinco questões já bastam para pegar o jeito.'
-  const corpo = [nome ? `Oi, ${nome},` : 'Oi,', recado || padrao].join('\n\n')
+    ? `Passando para te dar parabéns: você já passou de ${questoes(d.respondidas)} no Orto Questões, e fiquei muito feliz de ver. Constância é o que mais faz diferença na prova, e você está construindo a sua com muita dedicação.`
+    : 'Passando para dar um oi e dizer que fico feliz de ter você por aqui. Sua conta está pronta, e quando quiser começar, cinco questões já bastam para pegar o jeito.'
+  const corpo = [nome ? `Oi, ${nome}, tudo bem?` : 'Oi, tudo bem?', recado || padrao].join('\n\n')
   const e = renderizarCarta({ assunto: nome ? `${nome}, um recado sobre o seu estudo` : 'Um recado sobre o seu estudo', corpo })
   return { ...e, modelo: null, versao: null }
 }
@@ -242,7 +242,7 @@ export function rotuloQuestao(id: string): string {
 
 /**
  * Aviso de que um relato de erro foi resolvido. Uma resposta a quem escreveu,
- * não uma campanha: sem link de descadastro.
+ * não uma campanha: sem link de descadastro. Tom: agradecer e reconhecer (docs/emails/TOM.md).
  */
 export function emailRelatoResolvido(d: DadosRelatoResolvido): { assunto: string; html: string; texto: string } {
   const nome = primeiroNome(d.nome)
@@ -252,11 +252,11 @@ export function emailRelatoResolvido(d: DadosRelatoResolvido): { assunto: string
   const trecho = relato.length > 240 ? relato.slice(0, 240).replace(/\s\S*$/, '') + '…' : relato
   const nota = d.nota?.trim() || null
   const corpo = [
-    nome ? `Oi, ${nome},` : 'Oi,',
-    `Você relatou um problema na questão de ${rotulo}: "${trecho}"`,
-    `Conferi e a questão já está corrigida no site.${nota ? ` O que foi feito: ${nota}` : ''}`,
-    'Obrigado por avisar. Cada relato deixa o banco de questões melhor para todo mundo que está estudando.',
+    nome ? `Oi, ${nome}, tudo bem?` : 'Oi, tudo bem?',
+    `Muito obrigado por ter avisado do problema em ${rotulo}: "${trecho}"`,
+    `Conferi com cuidado, e ela já está corrigida no site.${nota ? ` O que foi feito: ${nota}` : ''}`,
+    'Gente atenta como você deixa o banco de questões melhor para todo mundo que está estudando. Fiquei muito grato.',
     `Se quiser ver como ficou: ${link.replace(/^https?:\/\//, '')}`,
   ].join('\n\n')
-  return renderizarCarta({ assunto: `Corrigi a questão que você relatou (${rotulo})`, corpo })
+  return renderizarCarta({ assunto: `Obrigado pelo aviso sobre ${rotulo}`, corpo })
 }
