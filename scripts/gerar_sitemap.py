@@ -19,7 +19,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from comum import CAMINHO_INDICE, DIR_PUBLICO  # noqa: E402
-from gerar_paginas_destino import PAGINAS as PAGINAS_DESTINO  # noqa: E402
+from gerar_paginas_destino import PAGINAS, PAGINAS_EXTRAS  # noqa: E402
+
+PAGINAS_DESTINO = PAGINAS + PAGINAS_EXTRAS
 
 SITE = "https://ortoquestoes.com.br/"
 DIR_QUESTOES = DIR_PUBLICO / "questoes"
