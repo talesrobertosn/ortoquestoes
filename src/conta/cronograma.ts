@@ -141,8 +141,11 @@ export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPl
   const outros = lista.filter((r) => r.em !== hoje).slice(-9)
   const precisa = calculo.extraHoje > 0 || novoPedido > 0
   if (!precisa) return atual ? { ...(plano.opcoes ?? {}), adiantados: outros } : null
-  if (atual && atual.meta === calculo.metaDiaria && (atual.pedido ?? 0) === novoPedido) return null
-  return { ...(plano.opcoes ?? {}), adiantados: [...outros, { em: hoje, meta: calculo.metaDiaria, ...(novoPedido ? { pedido: novoPedido } : {}) }] }
+  // A meta do registro de hoje só sobe: se ela cair no meio do dia (semana difícil
+  // ligada depois de estudar), o que já era meta não vira adiantamento para amanhã.
+  const meta = Math.max(atual?.meta ?? 0, calculo.metaDiaria)
+  if (atual && atual.meta === meta && (atual.pedido ?? 0) === novoPedido) return null
+  return { ...(plano.opcoes ?? {}), adiantados: [...outros, { em: hoje, meta, ...(novoPedido ? { pedido: novoPedido } : {}) }] }
 }
 
 /** Grava o registro de hoje se mudou, sobre o plano atual do servidor. Uma falha sobe para quem chamou. */
