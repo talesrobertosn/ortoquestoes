@@ -1,9 +1,9 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4395,
- "batalha": 3904,
- "soEstudo": 491,
+ "total": 4437,
+ "batalha": 3932,
+ "soEstudo": 505,
  "comImagem": 630,
  "quarentena": 523,
  "areas": {
@@ -108,17 +108,22 @@
   "mao": {
    "nome": "Mão e punho",
    "arquivo": "mao.json",
-   "total": 937,
-   "batalha": 835,
+   "total": 979,
+   "batalha": 863,
    "comImagem": 131,
    "tipos": {
     "Anatomia": 31,
+    "Armadilha": 1,
+    "Classificação": 14,
+    "Conceito": 15,
     "Imagem": 100,
     "Na prova": 57,
-    "Relâmpago": 749
+    "Par confundível": 1,
+    "Relâmpago": 749,
+    "Tabela": 11
    },
    "assuntos": {
-    "Anatomia da mão e punho": 166,
+    "Anatomia da mão e punho": 208,
     "Lesões dos tendões flexores": 60,
     "Outras malformações congênitas": 55,
     "Fraturas dos metacarpos e falanges": 55,
@@ -442,5 +447,5 @@
    }
   }
  },
- "assinatura": "114899caa381"
+ "assinatura": "95720c6f8cfc"
 }

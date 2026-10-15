@@ -7793,6 +7793,101 @@
    "fonte": "3064b606164c"
   },
   {
+   "id": "fc-mao-0453-pc1",
+   "questao": "mao-0453",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Deformidades dos dedos"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Martin-Gruber leva fibras do mediano ao ulnar no antebraço. Como se chama a comunicação no antebraço no sentido ulnar para mediano?",
+   "resposta": "Marinacci",
+   "explicacao": "**Marinacci:** antebraço, ulnar para mediano. **Martin-Gruber:** antebraço, mediano para ulnar, principalmente motora.",
+   "opcoes": [
+    "Marinacci",
+    "Riche-Cannieu",
+    "Berrettini"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "Einstein",
+   "ano": 2026,
+   "fonte": "7b7210df1aeb",
+   "origem": "autoral",
+   "trecho": "| Marinacci | Antebraço; comunicação no sentido ulnar para mediano |",
+   "criadoEm": "2026-10-15",
+   "alerta": "O gabarito é C. A nomenclatura dos tipos de Martin-Gruber varia entre classificações; o dado mais estável é a comunicação motora do mediano para o ulnar no antebraço."
+  },
+  {
+   "id": "fc-mao-0453-tb1",
+   "questao": "mao-0453",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Deformidades dos dedos"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual comunicação nervosa ocorre na palma entre os ramos motores do ulnar e do mediano?",
+   "resposta": "Riche-Cannieu",
+   "explicacao": "**Riche-Cannieu:** palma, ramos **motores**. **Berrettini:** palma, ramos **sensitivos** digitais.",
+   "opcoes": [
+    "Martin-Gruber",
+    "Marinacci",
+    "Riche-Cannieu",
+    "Berrettini"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "Einstein",
+   "ano": 2026,
+   "fonte": "7b7210df1aeb",
+   "origem": "autoral",
+   "trecho": "| Riche-Cannieu | Palma; comunicação entre ramos motores ulnar e mediano |",
+   "criadoEm": "2026-10-15",
+   "alerta": "O gabarito é C. A nomenclatura dos tipos de Martin-Gruber varia entre classificações; o dado mais estável é a comunicação motora do mediano para o ulnar no antebraço."
+  },
+  {
+   "id": "fc-mao-0453-tb2",
+   "questao": "mao-0453",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Deformidades dos dedos"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual comunicação nervosa ocorre na palma entre ramos sensitivos digitais do mediano e do ulnar?",
+   "resposta": "Berrettini",
+   "explicacao": "**Berrettini:** palma, ramos **sensitivos** digitais. Localização e tipo de fibra distinguem as anastomoses.",
+   "opcoes": [
+    "Martin-Gruber",
+    "Marinacci",
+    "Riche-Cannieu",
+    "Berrettini"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "Einstein",
+   "ano": 2026,
+   "fonte": "7b7210df1aeb",
+   "origem": "autoral",
+   "trecho": "| Berrettini | Palma; comunicação entre ramos sensitivos digitais |",
+   "criadoEm": "2026-10-15",
+   "alerta": "O gabarito é C. A nomenclatura dos tipos de Martin-Gruber varia entre classificações; o dado mais estável é a comunicação motora do mediano para o ulnar no antebraço."
+  },
+  {
    "id": "fc-mao-0455-q",
    "questao": "mao-0455",
    "area": "Mão e punho",
@@ -9586,6 +9681,155 @@
    "fonte": "db27e57f28d9"
   },
   {
+   "id": "fc-mao-0577-co1",
+   "questao": "mao-0577",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões ligamentares dos dedos"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os ligamentos volares radiossemilunar longo e ulnossemilunar formam qual dos dois V do punho?",
+   "resposta": "V proximal",
+   "explicacao": "**V proximal:** radiossemilunar longo + ulnossemilunar. **V distal:** radioescafocapitato + ulnocapitato/triquetocapitato. Entre eles, o **espaço de Poirier**.",
+   "opcoes": [
+    "V proximal",
+    "V distal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "b04a57d90c3f",
+   "origem": "autoral",
+   "trecho": "Radiossemilunar longo + ulnossemilunar formam o ==V proximal==.",
+   "criadoEm": "2026-10-15",
+   "alerta": "A figura original está ausente do acervo. O comentário explica a relação anatômica do gabarito, mas a correspondência visual das setas não pôde ser conferida e deve permanecer sinalizada até a imagem ser recuperada."
+  },
+  {
+   "id": "fc-mao-0577-co2",
+   "questao": "mao-0577",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões ligamentares dos dedos"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a área de fraqueza volar do punho entre o V distal e o V proximal dos ligamentos extrínsecos?",
+   "resposta": "espaço de Poirier",
+   "explicacao": "**Espaço de Poirier**, entre os dois V ligamentares volares.",
+   "opcoes": [
+    "espaço de Poirier"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "b04a57d90c3f",
+   "origem": "autoral",
+   "trecho": "Entre os dois V: espaço de Poirier.",
+   "criadoEm": "2026-10-15",
+   "alerta": "A figura original está ausente do acervo. O comentário explica a relação anatômica do gabarito, mas a correspondência visual das setas não pôde ser conferida e deve permanecer sinalizada até a imagem ser recuperada."
+  },
+  {
+   "id": "fc-mao-0577-tb1",
+   "questao": "mao-0577",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões ligamentares dos dedos"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento extrínseco volar do punho, do rádio à cintura do escafoide e ao capitato, funciona como eixo de rotação do escafoide?",
+   "resposta": "radioescafocapitato",
+   "explicacao": "**Radioescafocapitato:** eixo de rotação do escafoide e freio da **translação ulnar** do carpo.",
+   "opcoes": [
+    "radioescafocapitato",
+    "radiossemilunar longo",
+    "triquetocapitato"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "b04a57d90c3f",
+   "origem": "autoral",
+   "trecho": "| ==radioescafocapitato== (volar) | rádio → cintura do escafoide → capitato | ==eixo de rotação do escafoide==; impede translação ulnar |",
+   "criadoEm": "2026-10-15",
+   "alerta": "A figura original está ausente do acervo. O comentário explica a relação anatômica do gabarito, mas a correspondência visual das setas não pôde ser conferida e deve permanecer sinalizada até a imagem ser recuperada."
+  },
+  {
+   "id": "fc-mao-0577-tb2",
+   "questao": "mao-0577",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões ligamentares dos dedos"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento volar do punho, do rádio ao espaço escafossemilunar, é mais uma estrutura neurovascular do que um estabilizador?",
+   "resposta": "radioescafossemilunar (Testut)",
+   "explicacao": "**Ligamento de Testut (radioescafossemilunar):** leva vasos e nervos ao espaço escafossemilunar; não é estabilizador mecânico importante.",
+   "opcoes": [
+    "radioescafossemilunar (Testut)"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "b04a57d90c3f",
+   "origem": "autoral",
+   "trecho": "| radioescafossemilunar (Testut) | rádio → espaço escafossemilunar | estrutura neurovascular |",
+   "criadoEm": "2026-10-15",
+   "alerta": "A figura original está ausente do acervo. O comentário explica a relação anatômica do gabarito, mas a correspondência visual das setas não pôde ser conferida e deve permanecer sinalizada até a imagem ser recuperada."
+  },
+  {
+   "id": "fc-mao-0577-tb3",
+   "questao": "mao-0577",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões ligamentares dos dedos"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No ligamento escafossemilunar intrínseco, qual parte é a mais forte?",
+   "resposta": "dorsal",
+   "explicacao": "A **parte dorsal** do escafossemilunar é a mais forte. Sua lesão dá diástase (sinal de **Terry Thomas**) e DISI.",
+   "opcoes": [
+    "dorsal",
+    "volar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "b04a57d90c3f",
+   "origem": "autoral",
+   "trecho": "| ==escafossemilunar== (intrínseco) | ==escafoide ↔ semilunar== | parte dorsal é a mais forte |",
+   "criadoEm": "2026-10-15",
+   "alerta": "A figura original está ausente do acervo. O comentário explica a relação anatômica do gabarito, mas a correspondência visual das setas não pôde ser conferida e deve permanecer sinalizada até a imagem ser recuperada."
+  },
+  {
    "id": "fc-mao-0584-q",
    "questao": "mao-0584",
    "area": "Mão e punho",
@@ -10188,6 +10432,158 @@
    "prova": "FMRP-USP",
    "ano": 2026,
    "fonte": "d735ad72ff83"
+  },
+  {
+   "id": "fc-mao-0673-cl1",
+   "questao": "mao-0673",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas zonas flexoras de Verdan, qual zona corresponde ao túnel do carpo?",
+   "resposta": "IV",
+   "explicacao": "**Zona IV: túnel do carpo.** III vai da borda distal do túnel à polia A1; V é proximal ao túnel.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "FMRP-USP",
+   "ano": 2026,
+   "fonte": "8cc202d31889",
+   "origem": "autoral",
+   "trecho": "| IV | Túnel do carpo |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0673-cl2",
+   "questao": "mao-0673",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual zona flexora de Verdan vai da borda distal do túnel do carpo à polia A1, onde se originam os lumbricais?",
+   "resposta": "III",
+   "explicacao": "**Zona III:** da saída do túnel do carpo à polia A1, região de **origem dos lumbricais**.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "FMRP-USP",
+   "ano": 2026,
+   "fonte": "8cc202d31889",
+   "origem": "autoral",
+   "trecho": "| III | Da borda distal do túnel do carpo à polia A1 (origem dos lumbricais) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0673-cl3",
+   "questao": "mao-0673",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual zona flexora de Verdan fica distal à inserção do flexor superficial, onde só passa o profundo?",
+   "resposta": "I",
+   "explicacao": "**Zona I:** só o **flexor profundo**, distal à inserção do superficial na falange média.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "FMRP-USP",
+   "ano": 2026,
+   "fonte": "8cc202d31889",
+   "origem": "autoral",
+   "trecho": "| I | Distal à inserção do superficial (só o profundo) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0673-cl4",
+   "questao": "mao-0673",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual zona flexora de Verdan, da prega palmar distal (polia A1) à inserção do superficial, é a 'terra de ninguém'?",
+   "resposta": "II",
+   "explicacao": "**Zona II:** os dois flexores no mesmo túnel osteofibroso estreito; aderência e ruptura são mais temidas. O **quiasma de Camper** fica aqui.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "FMRP-USP",
+   "ano": 2026,
+   "fonte": "8cc202d31889",
+   "origem": "autoral",
+   "trecho": "| II | Da prega palmar distal (polia A1) à inserção do superficial: \"terra de ninguém\" |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0673-co1",
+   "questao": "mao-0673",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Depois de se cruzarem no quiasma de Camper, onde se inserem as duas bandas do flexor superficial dos dedos?",
+   "resposta": "porção média da falange média",
+   "explicacao": "O superficial se divide na MF, contorna o profundo, cruza-se dorsalmente a ele (**quiasma**) e se insere na **porção média da falange média**.",
+   "opcoes": [
+    "porção média da falange média"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "FMRP-USP",
+   "ano": 2026,
+   "fonte": "8cc202d31889",
+   "origem": "autoral",
+   "trecho": "dorsalmente a ele, as fibras se cruzam (quiasma) e voltam a se inserir na porção média da falange média.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0676-q",
@@ -10928,6 +11324,91 @@
    "fonte": "bd164e17fa25"
   },
   {
+   "id": "fc-mao-0719-co1",
+   "questao": "mao-0719",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas zonas extensoras de Kleinert e Verdan, as zonas de número ímpar ficam sobre quais estruturas?",
+   "resposta": "articulações",
+   "explicacao": "**Ímpares sobre articulações; pares sobre ossos.** Zona I = IFD, III = IFP, V = MF.",
+   "opcoes": [
+    "articulações",
+    "ossos"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "IAUPE",
+   "ano": 2025,
+   "fonte": "f8e766cbff0a",
+   "origem": "autoral",
+   "trecho": "números ímpares ficam sobre articulações; pares, sobre ossos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0719-co2",
+   "questao": "mao-0719",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No teste de Elson para lesão aguda da banda central, qual achado na IFD indica que a banda central está rompida?",
+   "resposta": "rígida em extensão",
+   "explicacao": "Com a IFP fletida a **90 graus** na borda da mesa, a pessoa estende a falange média contra resistência: **IFD rígida em extensão** = banda central rompida.",
+   "opcoes": [
+    "rígida em extensão"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "IAUPE",
+   "ano": 2025,
+   "fonte": "f8e766cbff0a",
+   "origem": "autoral",
+   "trecho": "se a IFD fica rígida em extensão, a banda central está rompida",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0719-co3",
+   "questao": "mao-0719",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na botoeira fechada aguda, por quanto tempo se mantém a órtese com a IFP em extensão e a IFD livre?",
+   "resposta": "6 semanas",
+   "explicacao": "**Cerca de 6 semanas**, com a IFD livre para fletir (o que mobiliza as bandas laterais).",
+   "opcoes": [
+    "6 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "IAUPE",
+   "ano": 2025,
+   "fonte": "f8e766cbff0a",
+   "origem": "autoral",
+   "trecho": "órtese com a IFP em extensão por cerca de 6 semanas, deixando a IFD livre para fletir.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0719-q",
    "questao": "mao-0719",
    "area": "Mão e punho",
@@ -10954,6 +11435,65 @@
    "prova": "IAUPE",
    "ano": 2025,
    "fonte": "f8e766cbff0a"
+  },
+  {
+   "id": "fc-mao-0719-tb1",
+   "questao": "mao-0719",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas zonas extensoras, que deformidade resulta da lesão na zona I dos dedos, sobre a IFD?",
+   "resposta": "martelo",
+   "explicacao": "**Zona I: dedo em martelo.** Zona III (IFP): botoeira.",
+   "opcoes": [
+    "martelo",
+    "botoeira"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "IAUPE",
+   "ano": 2025,
+   "fonte": "f8e766cbff0a",
+   "origem": "autoral",
+   "trecho": "| I | IFD (martelo) | IF |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0719-tb2",
+   "questao": "mao-0719",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No polegar, a zona extensora V fica sobre qual articulação?",
+   "resposta": "Carpometacarpal",
+   "explicacao": "**Polegar:** I = IF, III = MF, **V = carpometacarpal**. Nos dedos, a zona V é a MF.",
+   "opcoes": [
+    "IF",
+    "MF",
+    "Carpometacarpal"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "IAUPE",
+   "ano": 2025,
+   "fonte": "f8e766cbff0a",
+   "origem": "autoral",
+   "trecho": "| V | MF (banda sagital, lesão por soco) | Carpometacarpal |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0720-q",
@@ -11496,6 +12036,36 @@
    "prova": "IAUPE",
    "ano": 2025,
    "fonte": "d71db014fcff"
+  },
+  {
+   "id": "fc-mao-0754-co1",
+   "questao": "mao-0754",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Tumores da mão"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o tumor de nervo periférico mais comum na mão e no membro superior?",
+   "resposta": "schwannoma",
+   "explicacao": "**Schwannoma (neurilemoma):** excêntrico e encapsulado, sai por enucleação. O **neurofibroma** é o que se associa à NF1.",
+   "opcoes": [
+    "schwannoma",
+    "neurofibroma",
+    "neuroma"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "IAUPE",
+   "ano": 2025,
+   "fonte": "2eef10870386",
+   "origem": "autoral",
+   "trecho": "O schwannoma é o tumor de nervo periférico mais comum na mão e membro superior em geral",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0754-q",
@@ -12965,6 +13535,93 @@
    }
   },
   {
+   "id": "fc-mao-0815-cl1",
+   "questao": "mao-0815",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Fibrocartilagem triangular e punho ulnar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Tolat da fossa sigmoide do rádio, qual forma, côncava e com bordas, dá boa estabilidade óssea?",
+   "resposta": "Em C",
+   "explicacao": "**Tolat:** plana (a menor estabilidade), **em C** (boa), rampa de esqui e em S (intermediárias).",
+   "opcoes": [
+    "Plana",
+    "Em C",
+    "Rampa de esqui",
+    "Em S"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "INTO",
+   "ano": 2026,
+   "fonte": "d38ccf3641ed",
+   "origem": "autoral",
+   "trecho": "| Em C | Côncava, com bordas | Boa |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0815-co1",
+   "questao": "mao-0815",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Fibrocartilagem triangular e punho ulnar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na instabilidade radioulnar distal, qual exame mostra a subluxação e a forma da fossa sigmoide?",
+   "resposta": "tomografia axial comparativa",
+   "explicacao": "**Tomografia axial comparativa em pronação e supinação.**",
+   "opcoes": [
+    "tomografia axial comparativa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "INTO",
+   "ano": 2026,
+   "fonte": "d38ccf3641ed",
+   "origem": "autoral",
+   "trecho": "a tomografia axial comparativa em pronação e supinação ajuda a ver a subluxação e a forma da fossa.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0815-co2",
+   "questao": "mao-0815",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Fibrocartilagem triangular e punho ulnar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na instabilidade radioulnar distal com fossa sigmoide plana, qual epônimo designa a reconstrução ligamentar anatômica preferida por alguns autores?",
+   "resposta": "Adams",
+   "explicacao": "**Reconstrução de Adams.** Outra opção é a osteoplastia da borda da fossa sigmoide (Wallwork e Bain).",
+   "opcoes": [
+    "Adams"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "INTO",
+   "ano": 2026,
+   "fonte": "d38ccf3641ed",
+   "origem": "autoral",
+   "trecho": "ou preferem a reconstrução ligamentar anatômica (Adams)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0815-q",
    "questao": "mao-0815",
    "area": "Mão e punho",
@@ -14246,6 +14903,209 @@
    "fonte": "8370bc98ed8c"
   },
   {
+   "id": "fc-mao-0865-ar1",
+   "questao": "mao-0865",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A arcada de Struthers, ponto de compressão do ulnar no braço, é uma banda osteofibrosa?",
+   "resposta": "musculofascial",
+   "explicacao": "**Não: é musculofascial** (fáscia profunda do braço, cabeça medial do tríceps e septo intermuscular medial). Pode comprimir o ulnar após transposição anterior.",
+   "opcoes": [
+    "musculofascial",
+    "osteofibrosa"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "522a2f9d2179",
+   "origem": "autoral",
+   "trecho": "| **Arcada de Struthers** | Faixa **musculofascial** (fáscia profunda do braço, cabeça medial do tríceps e septo intermuscular medial)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0865-cl1",
+   "questao": "mao-0865",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas zonas de Gross e Gelberman do canal de Guyon, qual ramo do ulnar ocupa a zona 2, contornando o hâmulo do hamato?",
+   "resposta": "ramo motor profundo",
+   "explicacao": "**Zona 1:** proximal à bifurcação (motor e sensitivo). **Zona 2: ramo motor profundo.** **Zona 3:** ramo sensitivo superficial.",
+   "opcoes": [
+    "ramo motor profundo",
+    "ramo sensitivo superficial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "522a2f9d2179",
+   "origem": "autoral",
+   "trecho": "**zona 2** (ramo **motor profundo**, que contorna o hâmulo do hamato)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0865-cl2",
+   "questao": "mao-0865",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas zonas de Gross e Gelberman do canal de Guyon, qual ramo do ulnar ocupa a zona 3?",
+   "resposta": "ramo sensitivo superficial",
+   "explicacao": "**Zona 3: ramo sensitivo superficial**; compressão ali dá déficit só sensitivo.",
+   "opcoes": [
+    "ramo motor profundo",
+    "ramo sensitivo superficial"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "522a2f9d2179",
+   "origem": "autoral",
+   "trecho": "zona 3 (ramo sensitivo superficial)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0865-co1",
+   "questao": "mao-0865",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A quantos centímetros proximais ao epicôndilo medial fica a arcada de Struthers?",
+   "resposta": "8 cm",
+   "explicacao": "**Cerca de 8 cm.** Se não for liberada, pode comprimir o ulnar após a transposição anterior.",
+   "opcoes": [
+    "8 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "522a2f9d2179",
+   "origem": "autoral",
+   "trecho": "cerca de **8 cm proximal** ao epicôndilo medial",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0865-co2",
+   "questao": "mao-0865",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual estrutura óssea forma o limite radial do canal de Guyon?",
+   "resposta": "hâmulo do hamato",
+   "explicacao": "**Canal de Guyon:** pisiforme (ulnar), **hâmulo do hamato (radial)**, ligamento palmar do carpo (teto), ligamento transverso do carpo e pisohamato (assoalho).",
+   "opcoes": [
+    "hâmulo do hamato",
+    "pisiforme"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "522a2f9d2179",
+   "origem": "autoral",
+   "trecho": "limites: pisiforme (ulnar), hâmulo do hamato (radial), ligamento palmar do carpo (teto)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0865-co3",
+   "questao": "mao-0865",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento forma o teto do canal de Guyon?",
+   "resposta": "ligamento palmar do carpo",
+   "explicacao": "**Teto: ligamento palmar do carpo.** Assoalho: ligamento transverso do carpo e pisohamato.",
+   "opcoes": [
+    "ligamento palmar do carpo",
+    "ligamento transverso do carpo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "522a2f9d2179",
+   "origem": "autoral",
+   "trecho": "ligamento palmar do carpo (teto), ligamento transverso do carpo e pisohamato (assoalho)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0865-co4",
+   "questao": "mao-0865",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a causa mais comum de compressão do nervo ulnar no canal de Guyon?",
+   "resposta": "cisto sinovial",
+   "explicacao": "**Cisto sinovial.** Outras: fratura do hâmulo, trombose ou aneurisma da artéria ulnar (martelo hipotenar), músculos anômalos. Em geral há causa identificável.",
+   "opcoes": [
+    "cisto sinovial",
+    "lipoma",
+    "músculos anômalos"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "522a2f9d2179",
+   "origem": "autoral",
+   "trecho": "**cisto sinovial** (a mais comum)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0865-q",
    "questao": "mao-0865",
    "area": "Mão e punho",
@@ -14272,6 +15132,36 @@
    "prova": "UFG",
    "ano": 2017,
    "fonte": "522a2f9d2179"
+  },
+  {
+   "id": "fc-mao-0865-tb1",
+   "questao": "mao-0865",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual estrutura forma o teto do túnel cubital, entre as duas cabeças do flexor ulnar do carpo, e é o local mais comum de compressão do ulnar no cotovelo?",
+   "resposta": "Ligamento arqueado de Osborne",
+   "explicacao": "**Ligamento de Osborne:** do epicôndilo ao olécrano, entre as cabeças do flexor ulnar do carpo.",
+   "opcoes": [
+    "Ligamento arqueado de Osborne",
+    "Arcada de Struthers",
+    "Septo intermuscular medial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "522a2f9d2179",
+   "origem": "autoral",
+   "trecho": "| **Ligamento arqueado de Osborne** | **Teto do túnel cubital**, entre as duas cabeças do flexor ulnar do carpo (do epicôndilo ao olécrano): o local **mais comum** de compressão no cotovelo |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0866-q",
@@ -14381,6 +15271,90 @@
    "prova": "UFG",
    "ano": 2017,
    "fonte": "9ff9dba35aa5"
+  },
+  {
+   "id": "fc-mao-0870-tb1",
+   "questao": "mao-0870",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões extensores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão extensora da zona II (falange média), qual sutura se usa, já que o tendão fino e plano não comporta Kessler?",
+   "resposta": "Sutura contínua simples ou em oito",
+   "explicacao": "**Sutura contínua simples ou em oito com fio fino.** Kessler modificado fica para tendões mais grossos (zona VI).",
+   "opcoes": [
+    "Sutura contínua simples ou em oito"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "9ff9dba35aa5",
+   "origem": "autoral",
+   "trecho": "| II | Falange média | Lesão das bandas laterais / tendão terminal | **Sutura contínua simples ou em oito com fio fino** (tendão fino e plano; Kessler não cabe) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0870-tb2",
+   "questao": "mao-0870",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões extensores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na zona extensora VII, sob o retináculo do punho, qual é o problema típico do reparo?",
+   "resposta": "Aderências sob o retináculo",
+   "explicacao": "**Aderências sob o retináculo:** repara-se o tendão com **liberação parcial do retináculo**.",
+   "opcoes": [
+    "Aderências sob o retináculo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "9ff9dba35aa5",
+   "origem": "autoral",
+   "trecho": "| VII | Punho (retináculo) | Aderências sob o retináculo | Reparo + liberação parcial do retináculo |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0870-tb3",
+   "questao": "mao-0870",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões extensores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na zona extensora IX, nos ventres musculares do antebraço proximal, qual é o reparo?",
+   "resposta": "Miorrafia",
+   "explicacao": "**Miorrafia**, própria das zonas VIII (quando no ventre) e IX.",
+   "opcoes": [
+    "Miorrafia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "9ff9dba35aa5",
+   "origem": "autoral",
+   "trecho": "| IX | Antebraço proximal (ventres) | Lesões musculares | **Miorrafia** |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0871-q",
@@ -14627,6 +15601,186 @@
    "prova": "UFG",
    "ano": 2017,
    "fonte": "c7a0560b6e5f"
+  },
+  {
+   "id": "fc-mao-0883-cl1",
+   "questao": "mao-0883",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Microcirurgia e retalhos livres"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mathes e Nahai, qual tipo de vascularização (um só pedículo) têm o tensor da fáscia lata e o gastrocnêmio?",
+   "resposta": "I",
+   "explicacao": "**Tipo I: um pedículo.** II: dominante + menores (grácil); III: dois dominantes; IV: segmentares; V: dominante + segmentares secundários.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "e285bbb4e6e8",
+   "origem": "autoral",
+   "trecho": "| I | Um pedículo | Tensor da fáscia lata, gastrocnêmio |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0883-cl2",
+   "questao": "mao-0883",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Microcirurgia e retalhos livres"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mathes e Nahai, qual tipo de vascularização têm o reto abdominal e o glúteo máximo?",
+   "resposta": "III",
+   "explicacao": "**Tipo III: dois pedículos dominantes** (reto abdominal, glúteo máximo, serrátil).",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "e285bbb4e6e8",
+   "origem": "autoral",
+   "trecho": "| III | Dois dominantes | Reto abdominal, glúteo máximo, serrátil |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0883-cl3",
+   "questao": "mao-0883",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Microcirurgia e retalhos livres"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mathes e Nahai, qual tipo de vascularização, só segmentar, têm o sartório e o tibial anterior?",
+   "resposta": "IV",
+   "explicacao": "**Tipo IV: segmentares.** Esses músculos não sobrevivem rodados sobre um único pedículo.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "e285bbb4e6e8",
+   "origem": "autoral",
+   "trecho": "| IV | Segmentares | Sartório, tibial anterior |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0883-cl4",
+   "questao": "mao-0883",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Microcirurgia e retalhos livres"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mathes e Nahai, qual tipo (dominante e segmentares secundários) têm o grande dorsal e o peitoral maior?",
+   "resposta": "V",
+   "explicacao": "**Tipo V:** um pedículo dominante e pedículos segmentares secundários.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "e285bbb4e6e8",
+   "origem": "autoral",
+   "trecho": "| V | Dominante + segmentares secundários | Grande dorsal, peitoral maior |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0883-co1",
+   "questao": "mao-0883",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Microcirurgia e retalhos livres"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O pedículo dominante do músculo grácil é ramo de qual artéria?",
+   "resposta": "circunflexa femoral medial",
+   "explicacao": "**Circunflexa femoral medial** (às vezes da femoral profunda); entra 8 a 12 cm abaixo do tubérculo púbico, sob o adutor longo.",
+   "opcoes": [
+    "circunflexa femoral medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "e285bbb4e6e8",
+   "origem": "autoral",
+   "trecho": "ramo da **artéria circunflexa femoral medial** (às vezes da femoral profunda), que entra no músculo cerca de 8 a 12 cm abaixo do tubérculo púbico",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0883-co2",
+   "questao": "mao-0883",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Microcirurgia e retalhos livres"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo inerva o grácil, permitindo usá-lo como transferência muscular livre funcional?",
+   "resposta": "obturatório",
+   "explicacao": "**Ramo anterior do obturatório**, que entra um pouco proximal ao pedículo.",
+   "opcoes": [
+    "obturatório"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "UFG",
+   "ano": 2017,
+   "fonte": "e285bbb4e6e8",
+   "origem": "autoral",
+   "trecho": "**nervo:** ramo anterior do **obturatório**, que entra um pouco proximal ao pedículo",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0883-q",
@@ -18837,6 +19991,93 @@
    "prova": "PUC-SP",
    "ano": 2020,
    "fonte": "6fdc40d0f7ec"
+  },
+  {
+   "id": "fc-mao-1084-cl1",
+   "questao": "mao-1084",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação anatômica de Cierny e Mader da osteomielite, qual tipo é a infecção restrita ao canal (endosteal)?",
+   "resposta": "Medular",
+   "explicacao": "**Tipo I: medular** (haste infectada, hematogênica). II superficial, III localizada (estável), IV difusa (instável).",
+   "opcoes": [
+    "Medular",
+    "Superficial",
+    "Localizada",
+    "Difusa"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "PUC-SP",
+   "ano": 2020,
+   "fonte": "6bb858d2d62d",
+   "origem": "autoral",
+   "trecho": "| I | **Medular** (endosteal) | Infecção restrita ao canal (por exemplo, haste infectada, hematogênica)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-1084-cl2",
+   "questao": "mao-1084",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Cierny e Mader, qual tipo de osteomielite tem lesão de espessura total da cortical, mas osso estável após o desbridamento?",
+   "resposta": "Localizada",
+   "explicacao": "**Tipo III: localizada**, estável após desbridamento. Se instável, é o tipo **IV (difusa)**.",
+   "opcoes": [
+    "Medular",
+    "Superficial",
+    "Localizada",
+    "Difusa"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "PUC-SP",
+   "ano": 2020,
+   "fonte": "6bb858d2d62d",
+   "origem": "autoral",
+   "trecho": "| III | Localizada | Lesão de espessura total da cortical, mas o osso continua **estável** após o desbridamento |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-1084-cl3",
+   "questao": "mao-1084",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação fisiológica de Cierny e Mader, o que define o hospedeiro classe C?",
+   "resposta": "o tratamento seria pior que a doença",
+   "explicacao": "**A:** normal. **B:** comprometido sistêmica (Bs) ou localmente (Bl). **C:** o tratamento seria pior que a doença.",
+   "opcoes": [
+    "o tratamento seria pior que a doença"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "PUC-SP",
+   "ano": 2020,
+   "fonte": "6bb858d2d62d",
+   "origem": "autoral",
+   "trecho": "**C:** o tratamento seria pior que a doença",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-1084-q",
