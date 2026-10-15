@@ -321,3 +321,7 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 
 ## Treine grátis: aprovado em 12/10/2026
 - **Story de propaganda (1 tela):** MacBook e iPhone com telas reais, os quatro recursos do plano gratuito, o botão dourado "Treine grátis" e um espaço livre para a figurinha de link com utm, que abre direto em "criar conta". É a exceção autorizada à regra dos stories sem figurinha. [Modelo](treine-gratis/modelo.html) e [guia](TREINE-GRATIS.md).
+
+## Controle de passaporte: proposta de 15/10/2026 (aguardando aprovação)
+- **Feed (6 slides) e stories (3):** a questão "a estrutura assinalada é o músculo..." vira um guichê de imigração. Cada alternativa se apresenta com um passaporte (naturalidade = origem, domicílio = inserção, nacionalidade = nervo, sinais particulares = aspecto na figura); a foto 3x4 é a imagem original da prova; os errados levam o carimbo "Visto negado" e o certo, "Entrada autorizada", com zona de leitura em fonte mono. Capa de livreto verde com emblema dourado, página creme com guilhoché abstrato, carimbos e clipe em CSS; nenhum desenho de anatomia. Bom para toda questão de identificação com quatro nomes parecidos (prova de anatomia do TEOT). Referência: [post](../posts/2026-10-15-passaporte-semimembranaceo/post.html). Se aprovado, copiar para `passaporte/modelo.html`.
+

@@ -21,3 +21,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | mao-1653 | Adutor do polegar e ramo profundo do ulnar (Simulados, anatomia da mão) | posts/2026-10-14-gps-ramo-profundo-ulnar (feed) |
 | pe-tornozelo-0104 (= pe-tornozelo-0062) | Flexor longo dos dedos, compartimento posterior profundo (TEOT/TARO) | posts/2026-10-14-gps-ramo-profundo-ulnar (stories) |
 | joelho-0189 | Lesão meniscal radial (TEOT 2025) | posts/2026-10-14-editorial-menisco-radial |
+| quadril-0130 | Semimembranáceo, isquiotibiais (TEOT 2024, prova de anatomia) | posts/2026-10-15-passaporte-semimembranaceo |
