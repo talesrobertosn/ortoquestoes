@@ -44,6 +44,10 @@ export interface Flashcard {
   ano?: number | null
   /** Hash da questão e do comentário de origem: muda quando a fonte muda. */
   fonte?: string
+  /** "autoral": escrito a partir do comentário (scripts/flashcards/autorais.py). Sem o campo: fábrica. */
+  origem?: 'autoral'
+  /** "simulados": a questão de origem é dos OrtoQuestões Simulados, e não de uma prova oficial. */
+  colecao?: 'simulados'
 }
 
 /** Resumo publicado pela fábrica (public/flashcards/indice.json). */
@@ -54,7 +58,10 @@ export interface IndiceAcervo {
   batalha: number
   soEstudo: number
   comImagem: number
+  /** Flashcards cuja questão de origem é dos OrtoQuestões Simulados. */
+  simulados?: number
+  autorais?: number
   quarentena: number
   assinatura: string
-  areas: Record<string, { nome: string; arquivo: string; total: number; batalha: number; comImagem: number; tipos: Record<string, number>; assuntos: Record<string, number> }>
+  areas: Record<string, { nome: string; arquivo: string; total: number; batalha: number; comImagem: number; simulados?: number; tipos: Record<string, number>; assuntos: Record<string, number> }>
 }

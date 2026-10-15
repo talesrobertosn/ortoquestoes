@@ -10,9 +10,10 @@ cedo o assunto entra no plano semanal.
     python3 scripts/flashcards/cronograma.py plano [--ritmo 60] [--inicio 2026-10-19] [--semanas 12]
         recalcula metas, cobertura e o plano semanal; grava docs/flashcards/CRONOGRAMA.md
         e scripts/flashcards/cronograma.json
-    python3 scripts/flashcards/cronograma.py proximo [--n 6] [--assunto "Lesões fisárias"] [--pular 0]
+    python3 scripts/flashcards/cronograma.py proximo [--n 6] [--assunto "Lesões fisárias"] [--pular 0] [--simulados]
         mostra o próximo assunto do plano e as questões-fonte (com o comentário inteiro)
-        para escrever o lote
+        para escrever o lote; com --simulados, só as questões dos OrtoQuestões Simulados,
+        no assunto de maior incidência que ainda tem simulado sem autoral
     python3 scripts/flashcards/cronograma.py aplicar lote.json
         valida o lote (fonte literal, resposta no trecho, alternativas com fonte),
         guarda os aprovados em scripts/flashcards/autorais/ e republica o acervo
@@ -64,18 +65,24 @@ def levantar():
     pub = F.ler_publicados()
     aut = A.ler_autorais()
     fab_por = Counter()
+    fab_sim = Counter()
     fab_questoes = defaultdict(set)
     for cartas in pub.values():
         for f in cartas:
             for s in f.get("subtemas") or [f["assunto"]]:
                 fab_por[s] += 1
                 fab_questoes[s].add(f["questao"])
+                if F.colecao_da_questao(questoes.get(f["questao"], {})):
+                    fab_sim[s] += 1
     aut_por = Counter()
+    aut_sim = Counter()
     aut_questoes = defaultdict(set)
     for cartas in aut.values():
         for f in cartas:
             aut_por[f["assunto"]] += 1
             aut_questoes[f["assunto"]].add(f["questao"])
+            if F.colecao_da_questao(questoes.get(f["questao"], {})):
+                aut_sim[f["assunto"]] += 1
     acervo = defaultdict(list)
     for qid, q in questoes.items():
         if q.get("anulada") or q.get("duplicataDe"):
@@ -89,12 +96,15 @@ def levantar():
             qs = acervo.get(s, [])
             com = [k for k in qs if comentarios.get(k, {}).get("conceito")]
             ricas = [k for k in com if any(riqueza(comentarios[k]).values())]
+            sims = [k for k in com if F.colecao_da_questao(questoes[k])]
             meta = 0 if s.startswith("Outr") and foco["n"] < 5 else max(META_MINIMA, math.ceil(foco["n"] * PESO.get(foco["nivel"], 0.2)))
             linhas.append({
                 "assunto": s, "areaId": a["id"], "area": a["nome"], "nivel": foco["nivel"], "incidencia": foco["n"],
                 "acervo": len(qs), "comComentario": len(com), "fontesRicas": len(ricas),
                 "fabrica": fab_por[s], "questoesComFlashcard": len(fab_questoes[s] | aut_questoes[s]),
                 "autorais": aut_por[s], "meta": meta, "falta": max(0, meta - aut_por[s]),
+                # OrtoQuestões Simulados: questões comentadas do assunto, flashcards da fábrica e autorais tirados delas
+                "simulados": len(sims), "fabricaSimulados": fab_sim[s], "autoraisSimulados": aut_sim[s],
             })
     # ordem: o que mais cai primeiro (contagem absoluta de questões de prova), depois o nível na área;
     # os assuntos de resto ("Outras fraturas...", "Outros temas...") vão para o fim, como na incidência
@@ -183,6 +193,23 @@ def escrever_doc(linhas, semanas, ritmo, inicio, mostrar_semanas, totais):
             for l in topo
         ]),
         "",
+        "## OrtoQuestões Simulados",
+        "",
+        "As questões dos OrtoQuestões Simulados (TEOT e TARO escritos pela casa, sem prova oficial) entram na fábrica e nos autorais como as de prova, com a marca `\"colecao\": \"simulados\"` no flashcard. Elas não contam para a incidência (que é só de prova oficial), mas seguem a mesma ordem: `cronograma.py proximo --simulados` abre o assunto de maior incidência que ainda tem questão de simulado sem autoral.",
+        "",
+        tabela_md(["", "Total"], [
+            ["Questões de simulado com comentário", totais["simulados"]],
+            ["Flashcards da fábrica tirados delas", totais["fabricaSimulados"]],
+            ["Flashcards autorais tirados delas", totais["autoraisSimulados"]],
+        ]),
+        "",
+        "Os assuntos com mais questões de simulado, na ordem da fila:",
+        "",
+        tabela_md(["#", "Assunto", "Área", "Questões de simulado", "Fábrica (simulados)", "Autorais (simulados)"], [
+            [l["posicao"], l["assunto"], l["area"], l["simulados"], l["fabricaSimulados"], l["autoraisSimulados"]]
+            for l in [l for l in linhas if l["simulados"]][:15]
+        ]),
+        "",
         f"## Plano das próximas {min(mostrar_semanas, len(semanas))} semanas",
         "",
     ]
@@ -196,7 +223,7 @@ def escrever_doc(linhas, semanas, ritmo, inicio, mostrar_semanas, totais):
         "",
         "## Rotina de cada lote",
         "",
-        "1. `python3 scripts/flashcards/cronograma.py proximo` mostra o assunto da vez e as questões-fonte, com o comentário inteiro.",
+        "1. `python3 scripts/flashcards/cronograma.py proximo` mostra o assunto da vez e as questões-fonte, com o comentário inteiro (`--simulados` para as questões dos OrtoQuestões Simulados).",
         "2. Escreva o lote (JSON) seguindo docs/flashcards/CRIACAO.md: uma ideia por flashcard, trecho literal do comentário, alternativas tiradas do próprio comentário ou da questão.",
         "3. `python3 scripts/flashcards/cronograma.py aplicar lote.json` valida, guarda os aprovados em `scripts/flashcards/autorais/` e republica o acervo. Os reprovados voltam com o motivo.",
         "4. `python3 scripts/flashcards/cronograma.py plano` atualiza esta página. Commit e PR, como nos comentários.",
@@ -208,7 +235,12 @@ def escrever_doc(linhas, semanas, ritmo, inicio, mostrar_semanas, totais):
 def resumir(linhas):
     """Totais. A fábrica é contada por flashcard único (um flashcard pode ter mais de um assunto)."""
     pub = F.ler_publicados()
-    tot = {"fabrica": sum(len(c) for c in pub.values()), "autorais": 0, "meta": 0, "falta": 0, "areas": {}}
+    tot = {"fabrica": sum(len(c) for c in pub.values()), "autorais": 0, "meta": 0, "falta": 0, "areas": {},
+           "fabricaSimulados": sum(1 for c in pub.values() for f in c if f.get("colecao") == F.COLECAO_SIMULADOS)}
+    # questões de simulado contadas uma vez (uma questão pode estar em dois assuntos)
+    _, questoes, comentarios = F.carregar_acervo()
+    tot["simulados"] = sum(1 for k, q in questoes.items() if F.colecao_da_questao(q) and not q.get("anulada") and (comentarios.get(k) or {}).get("conceito"))
+    tot["autoraisSimulados"] = sum(1 for c in A.ler_autorais().values() for f in c if f.get("colecao") == F.COLECAO_SIMULADOS)
     unicos = {}
     for slug, cartas in pub.items():
         if cartas:
@@ -248,20 +280,31 @@ def cmd_plano(args) -> int:
 
 def cmd_proximo(args) -> int:
     linhas, (areas, questoes, comentarios, pub, aut) = levantar()
+    usados = Counter(f["questao"] for cs in aut.values() for f in cs)
     if args.assunto:
         alvo = next((l for l in linhas if l["assunto"].lower() == args.assunto.lower()), None)
         if not alvo:
             print("Assunto não encontrado na incidência.", file=sys.stderr)
             return 1
+    elif args.simulados:
+        # o assunto de maior incidência que ainda tem questão de simulado comentada sem autoral
+        def sim_livre(l):
+            return any(F.colecao_da_questao(q) and l["assunto"] in (q.get("subtemas") or []) and not usados[k]
+                       and not q.get("anulada") and (comentarios.get(k) or {}).get("conceito") for k, q in questoes.items())
+        alvo = next((l for l in linhas if l["simulados"] and sim_livre(l)), None)
+        if not alvo:
+            print("Todas as questões de simulado comentadas já têm autoral.")
+            return 0
     else:
         alvo = next((l for l in linhas if l["falta"] > 0 and l["comComentario"]), None)
         if not alvo:
             print("Todas as metas estão cumpridas.")
             return 0
-    usados = Counter(f["questao"] for cs in aut.values() for f in cs)
     candidatas = []
     for qid, q in questoes.items():
         if q.get("anulada") or q.get("duplicataDe") or alvo["assunto"] not in (q.get("subtemas") or []):
+            continue
+        if args.simulados and not F.colecao_da_questao(q):
             continue
         c = comentarios.get(qid)
         if not c or not c.get("conceito"):
@@ -270,12 +313,13 @@ def cmd_proximo(args) -> int:
         oficial = q.get("prova") in ("TEOT", "TARO", "TEOT/TARO", "CET-PR", "TECOC", "ENARE")
         candidatas.append(((usados[qid], not r["tabela"], not r["classificacao"], not r["naProva"], not oficial, qid), qid, r))
     candidatas.sort()
-    print(f"# Assunto: {alvo['assunto']} ({alvo['area']}) · posição {alvo['posicao']} · {alvo['incidencia']} questões de prova · autorais {alvo['autorais']}/{alvo['meta']} · {len(candidatas)} questões-fonte")
+    print(f"# Assunto: {alvo['assunto']} ({alvo['area']}) · posição {alvo['posicao']} · {alvo['incidencia']} questões de prova · autorais {alvo['autorais']}/{alvo['meta']} · {len(candidatas)} questões-fonte"
+          + (f" (só OrtoQuestões Simulados: {alvo['autoraisSimulados']} autorais de simulado)" if args.simulados else ""))
     for _, qid, r in candidatas[args.pular:args.pular + args.n]:
         q, c = questoes[qid], comentarios[qid]
         certa = next((a["texto"] for a in q.get("alternativas") or [] if a["letra"] == q.get("gabarito")), "")
         marcas = ", ".join(k for k, v in r.items() if v) or "texto"
-        print("=" * 12, qid, "|", q.get("prova"), q.get("ano"), "|", marcas, "| autorais já feitos:", usados[qid])
+        print("=" * 12, qid, "|", "OrtoQuestões Simulados" if F.colecao_da_questao(q) else f"{q.get('prova')} {q.get('ano')}", "|", marcas, "| autorais já feitos:", usados[qid])
         print("ENUNCIADO:", F.limpar(q.get("enunciado", "")))
         for a in q.get("alternativas") or []:
             print(f"  {a['letra']}) {F.limpar(a['texto'])}")
@@ -343,6 +387,7 @@ def cmd_estado(_args) -> int:
     feitos_semana = sum(h["aprovados"] for h in plano.get("historico", []) if date.fromisoformat(h["data"]) >= seg)
     print(f"Ritmo {plano['ritmo']}/semana desde {inicio.strftime('%d/%m/%Y')} · nesta semana: {feitos_semana}/{plano['ritmo']}")
     print(f"Autorais {tot['autorais']}/{tot['meta']} · faltam {tot['falta']} · fábrica {tot['fabrica']}")
+    print(f"OrtoQuestões Simulados: {tot['simulados']} questões comentadas · fábrica {tot['fabricaSimulados']} · autorais {tot['autoraisSimulados']}")
     print("Próximos assuntos:")
     for l in [l for l in linhas if l["falta"]][:8]:
         print(f"  {l['posicao']:>3}. {l['assunto']} ({l['area']}): {l['autorais']}/{l['meta']} · {l['fontesRicas']} fontes ricas")
@@ -360,6 +405,7 @@ def principal() -> int:
     p.add_argument("--n", type=int, default=6)
     p.add_argument("--pular", type=int, default=0)
     p.add_argument("--assunto")
+    p.add_argument("--simulados", action="store_true", help="só questões dos OrtoQuestões Simulados")
     p = sub.add_parser("aplicar")
     p.add_argument("arquivo")
     sub.add_parser("estado")

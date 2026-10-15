@@ -51,6 +51,20 @@ if A.validar_autoral(bom, q, c, {F.normalizar(bom["frente"])}) == []:
 novo = A.completar(bom, q, c, areas, F.niveis_de_incidencia(), 7)
 assert novo["id"] == "fc-pediatria-0431-tb7" and novo["origem"] == "autoral" and novo["batalha"] and novo["raridade"] in ("comum", "rara", "epica", "lendaria"), novo
 
+# OrtoQuestões Simulados: a questão de simulado (sem prova, sem área própria) leva a marca da coleção;
+# a de prova oficial e a do Fellowship Quadril, não
+assert "colecao" not in novo, novo
+sim = next(x for x in questoes.values() if x.get("simulado") and not x.get("prova") and not x.get("area"))
+assert F.colecao_da_questao(sim) == "simulados"
+assert F.colecao_da_questao({**sim, "prova": "Fellowship Quadril", "area": "fellowship-quadril"}) is None
+assert F.colecao_da_questao(q) is None
+sim_c = next((k for k, x in questoes.items() if F.colecao_da_questao(x) and k in comentarios and x.get("subtemas")), None)
+if sim_c:
+    novo_sim = A.completar({**bom, "questao": sim_c, "assunto": None}, questoes[sim_c], comentarios[sim_c], areas, F.niveis_de_incidencia(), 1)
+    assert novo_sim["colecao"] == "simulados", novo_sim
+publicados = [f for c in F.ler_publicados(com_autorais=True).values() for f in c]
+assert all((f.get("colecao") == "simulados") == bool(F.colecao_da_questao(questoes.get(f["questao"], {}))) for f in publicados), "marca de coleção desatualizada no acervo publicado"
+
 # cronograma: ordem pela incidência, assuntos de resto no fim, plano respeita o ritmo
 linhas, _ = C.levantar()
 reais = [l for l in linhas if not l["assunto"].startswith("Outr")]
