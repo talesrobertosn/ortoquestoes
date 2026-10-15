@@ -1,4 +1,3 @@
-import { AdminLembretes } from './AdminLembretes'
 import { useEffect, useMemo, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
 import { BarrasHorizontais, GraficoColunas, type Ponto } from './AdminGraficos'
@@ -17,6 +16,7 @@ const MIGRACAO = '202609290200_painel_admin_2.sql'
 const dataCurta = (iso: string) => { const [, m, d] = iso.split('-'); return `${d}/${m}` }
 const dataLonga = (iso: string) => new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: 'short' })
 
+/** Painel › Pessoas › Crescimento: só métricas. Os lembretes por e-mail (ação) foram para Operações. */
 export function AdminCrescimento({ usuarios, assinaturas }: { usuarios: LinhaUsuario[] | null; assinaturas: AssinaturaBase[] }) {
   const [dias, definirDias] = useState(30)
   const [serie, definirSerie] = useState<Dia[] | null>(null)
@@ -46,7 +46,6 @@ export function AdminCrescimento({ usuarios, assinaturas }: { usuarios: LinhaUsu
   if (erro) return <section className="adm-secao"><p role="alert" className="adm-alerta">{erro}</p></section>
 
   return <div className="empilha-2">
-    <AdminLembretes />
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-dia">
       <div className="adm-secao__cabeca">
         <div><h2 id="adm-titulo-dia">Dia a dia</h2><p>Cada gráfico tem a sua escala. A data de uma resposta é a do aparelho de quem respondeu.</p></div>

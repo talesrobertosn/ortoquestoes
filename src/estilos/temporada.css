@@ -20,8 +20,7 @@
 .px-cartao,
 .treinar-pagina .tr-etapa,
 .pe .cartao,
-.dp .cartao,
-.adm-secao {
+.dp .cartao {
   border: 2px solid var(--px-borda) !important;
   border-radius: 6px !important;
   box-shadow: 5px 5px 0 var(--px-sombra) !important;
@@ -152,31 +151,6 @@
 .dp .dp-barras__dia:last-child .dp-barras__barra { background: repeating-linear-gradient(0deg, var(--ouro) 0 6px, #ffe3a3 6px 8px); }
 .dp .dp-tema__trilho, .dp .dp-tema__trilho > span { border-radius: 0 !important; }
 .dp .dp-destaque { border-radius: 4px; }
-
-/* ---------- Admin: quartel-general da temporada ------------------------ */
-.adm .adm-heroi {
-  padding: 1.2rem 1.4rem 2.6rem; color: var(--sobre-heroi); background: var(--heroi);
-  border: 2px solid var(--px-tinta); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra);
-}
-.adm .adm-heroi h1 { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1; letter-spacing: 0.02em; color: var(--px-ouro); text-shadow: 0 3px 0 #072320; }
-.adm .adm-heroi p { color: var(--sobre-heroi-2); }
-.adm .adm-heroi__sobre { display: inline-flex; padding: 0.1rem 0.5rem; background: #0b2b27; color: #9fe3d4 !important; font-family: var(--fonte-pixel); letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 2px 2px 0 #072320; }
-.adm .adm-heroi__atualizar { border-radius: 0; background: var(--px-ouro); color: var(--px-tinta); border: 0; box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra); }
-.adm .adm-abas { border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 4px 4px 0 var(--px-sombra); }
-.adm .adm-aba { border-radius: 0; }
-.adm .adm-aba[aria-selected="true"] { background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra); }
-.adm .adm-aba[aria-selected="true"] b { background: var(--px-tinta); color: var(--px-ouro); }
-.adm .adm-kpi { border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 4px 4px 0 var(--px-sombra); }
-.adm .adm-kpi strong { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 2.4rem; line-height: 0.95; letter-spacing: 0.01em; }
-.adm .adm-kpi--destaque { border-color: #c99a3b; background: color-mix(in srgb, var(--px-ouro) 14%, var(--superficie)); }
-.adm .adm-kpi--alerta { border-color: var(--erro); box-shadow: 4px 4px 0 color-mix(in srgb, var(--erro) 30%, transparent); }
-.adm .adm-kpi--botao:hover { transform: translate(-1px, -1px); }
-.adm .adm-secao h2 { display: flex; align-items: center; gap: 0.5rem; }
-.adm .adm-secao h2::before { content: ""; width: 0.6rem; height: 0.6rem; background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); flex: none; }
-.adm .adm-grafico, .adm .adm-lembrete { border: 2px solid var(--px-borda); border-radius: 4px; }
-.adm .adm-chip { border-radius: 4px; }
-.adm .adm-chip[aria-pressed="true"] { box-shadow: 2px 2px 0 var(--verdete); }
-.adm .adm-heroi .botao { flex: none; }
 
 /* ---------- Perfil: campo de serviço e pedido do que falta ------------- */
 .campo-servico { display: grid; gap: 0.35rem; }
