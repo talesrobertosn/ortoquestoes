@@ -1,12 +1,14 @@
+import { corDaArea } from '../dados/coresAreas'
 import type { ReactNode } from 'react'
 import type { CalculoPlano, PlanoSalvo } from '../dados/planoEstudo'
-import { incluiSimulados } from '../dados/planoEstudo'
+import { incluiSimulados, MINUTOS_POR_QUESTAO } from '../dados/planoEstudo'
 import type { Constancia, Elogio, Esquecido, Risco } from '../dados/hubCronograma'
-import { TAMANHO_DIAGNOSTICO } from '../dados/hubCronograma'
+import { formatarTempo, TAMANHO_DIAGNOSTICO } from '../dados/hubCronograma'
 import { ROTULO_NIVEL, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { Icone } from '../componentes/Icone'
 import { IconePixel } from '../componentes/IconePixel'
 import { href } from '../util/rotas'
+import { CartaoHoje, type ItemChecklist } from './CronogramaPainel'
 
 /**
  * As peças do cronograma como painel de estudo: as fases até a prova, os
@@ -99,55 +101,40 @@ export interface AcoesRetaFinal {
   aoAquecimento: () => void
 }
 
-export function HojeRetaFinal({ calculo, acoes }: { calculo: CalculoPlano; acoes: AcoesRetaFinal }) {
+/**
+ * O cartão Hoje da reta final, no mesmo visual do resto do cronograma (lista
+ * com tempo e estado, um botão só), para a página não trocar de linguagem ao
+ * entrar na revisão forte, no modo prova ou na véspera.
+ */
+export function HojeRetaFinal({ calculo, acoes, minutos = MINUTOS_POR_QUESTAO }: { calculo: CalculoPlano; acoes: AcoesRetaFinal; minutos?: number }) {
+  const resumao: ItemChecklist = { id: 'resumao', titulo: 'Resumão', texto: 'As frases "Na prova" dos comentários, só dos assuntos que mais caem, para ler em minutos.', minutos: 10, estado: 'afazer', acao: { rotulo: 'Ler', href: href('/resumao') } }
+  const erros: ItemChecklist = { id: 'erros', titulo: `Os erros que importam${acoes.errosQueImportam ? ` (${acoes.errosQueImportam})` : ''}`, texto: 'Só os erros dos assuntos de prioridade alta e máxima. É onde cada acerto a mais tem mais chance de aparecer na prova.', minutos: acoes.errosQueImportam ? Math.min(acoes.errosQueImportam, 20) * minutos : null, estado: 'afazer', acao: acoes.errosQueImportam ? { rotulo: 'Refazer', aoClicar: acoes.aoErros } : undefined }
+  const marco = 'var(--cp-marco)'
   if (calculo.fase === 'revisao') {
     const areas = acoes.revisaoHoje?.areas ?? []
-    return (
-      <section className="pe-hoje pe-hoje--final">
-        <div>
-          <p className="meta">RETA FINAL · REVISÃO FORTE</p>
-          <h2>{areas.length ? `Hoje: ${areas.map((a) => a.nome).join(' e ')}` : 'Revisão do que você já viu'}</h2>
-          <p className="texto-2">Nada de conteúdo novo. {acoes.revisaoHoje?.n ? <>Uma sessão de <b>{acoes.revisaoHoje.n} questões</b>: seus erros, as marcadas como chute ou dúvida e as dos assuntos que mais caem que você não vê há mais tempo.</> : 'Você não tem erros nem dúvidas pendentes nestas áreas: refaça os erros que importam e leia o resumão.'}</p>
-        </div>
-        <div className="pe-hoje__acoes">
-          {acoes.revisaoHoje?.n ? <button type="button" className="botao botao--principal botao--grande" onClick={acoes.aoRevisaoForte}>Começar a revisão de hoje</button> : <button type="button" className="botao botao--principal botao--grande" onClick={acoes.aoErros} disabled={!acoes.errosQueImportam}>Os erros que importam</button>}
-          <a className="botao" href={href('/resumao')}><Icone nome="livro" tamanho={16} /> Resumão</a>
-        </div>
-      </section>
-    )
+    const n = acoes.revisaoHoje?.n ?? 0
+    const itens: ItemChecklist[] = []
+    if (n) itens.push({ id: 'revisao', titulo: `${n} questões de revisão`, texto: 'Seus erros, as marcadas como chute ou dúvida e as dos assuntos que mais caem que você não vê há mais tempo.', minutos: n * minutos, estado: 'afazer' })
+    itens.push(n ? { ...erros, opcional: true } : erros, resumao)
+    return <CartaoHoje calculo={calculo} cor={areas.length ? corDaArea(areas[0].slug) : marco}
+      titulo={areas.length ? `Revisão: ${areas.map((a) => a.nome).join(' e ')}` : 'Revisão do que você já viu'}
+      porQue={n ? 'Reta final, revisão forte: nada de conteúdo novo.' : 'Reta final: você não tem erros nem dúvidas pendentes nestas áreas. Refaça os erros que importam e leia o resumão.'}
+      assuntos={[]} itens={itens}
+      botao={n ? { rotulo: 'Começar a revisão de hoje', detalhe: `${n} questões · ~${formatarTempo(n * minutos)}`, aoClicar: acoes.aoRevisaoForte } : acoes.errosQueImportam ? { rotulo: 'Refazer os erros que importam', aoClicar: acoes.aoErros } : null} />
   }
   if (calculo.fase === 'prova') {
-    const tarefas: Array<{ titulo: string; texto: string; acao: ReactNode }> = [
-      { titulo: 'Simulado cronometrado', texto: 'Faça no mesmo horário e com a mesma duração da prova, para treinar ritmo e cansaço. O Simulado de véspera e o Nacional estão na mesma página.', acao: <a className="botao botao--principal" href={href('/simulado-nacional')}>Ir para o simulado</a> },
-      { titulo: `Os erros que importam${acoes.errosQueImportam ? ` (${acoes.errosQueImportam})` : ''}`, texto: 'Só os erros dos assuntos de prioridade alta e máxima. É onde cada acerto a mais tem mais chance de aparecer na prova.', acao: <button type="button" className="botao" onClick={acoes.aoErros} disabled={!acoes.errosQueImportam}>Refazer agora</button> },
-      { titulo: 'Resumão', texto: 'As frases "Na prova" dos comentários, só dos assuntos que mais caem, para ler em minutos.', acao: <a className="botao" href={href('/resumao')}>Abrir o resumão</a> },
-    ]
-    return (
-      <section className="pe-hoje pe-hoje--final pe-hoje--lista">
-        <div>
-          <p className="meta">RETA FINAL · MODO PROVA</p>
-          <h2>A semana da prova</h2>
-          <p className="texto-2">Sem conteúdo novo e com um pouco menos de volume, para chegar descansado. Três tarefas, na ordem que preferir:</p>
-        </div>
-        <ol className="pe-tarefas">
-          {tarefas.map((t, i) => <li key={t.titulo}><span className="pe-tarefas__num numerico">{i + 1}</span><span><strong>{t.titulo}</strong><small>{t.texto}</small></span>{t.acao}</li>)}
-        </ol>
-      </section>
-    )
+    const simulado: ItemChecklist = { id: 'simulado', titulo: 'Simulado cronometrado', texto: 'No mesmo horário e com a mesma duração da prova, para treinar ritmo e cansaço. O Simulado de véspera e o Nacional estão na mesma página.', minutos: null, estado: 'afazer' }
+    return <CartaoHoje calculo={calculo} cor={marco} titulo="A semana da prova"
+      porQue="Modo prova: sem conteúdo novo e com um pouco menos de volume, para chegar descansado. Três tarefas, na ordem que preferir."
+      assuntos={[]} itens={[simulado, erros, resumao]}
+      botao={{ rotulo: 'Ir para o simulado', href: href('/simulado-nacional') }} />
   }
-  return (
-    <section className="pe-hoje pe-hoje--final">
-      <div>
-        <p className="meta">VÉSPERA</p>
-        <h2>Aquecimento leve e descanso</h2>
-        <p className="texto-2">Hoje não é dia de aprender coisa nova. Um aquecimento de 25 questões dos assuntos que mais caem (quase todas já acertadas por você, para chegar confiante), uma passada no resumão e cama cedo. Separe documento, caneta e o caminho até o local da prova.</p>
-      </div>
-      <div className="pe-hoje__acoes">
-        <button type="button" className="botao botao--principal botao--grande" onClick={acoes.aoAquecimento}>Aquecimento de 25</button>
-        <a className="botao" href={href('/resumao')}><Icone nome="livro" tamanho={16} /> Resumão</a>
-      </div>
-    </section>
-  )
+  const aquecimento: ItemChecklist = { id: 'aquecimento', titulo: 'Aquecimento de 25 questões', texto: 'Dos assuntos que mais caem, quase todas já acertadas por você, para chegar confiante.', minutos: 25 * minutos, estado: 'afazer' }
+  const preparar: ItemChecklist = { id: 'preparar', titulo: 'Deixar tudo pronto', texto: 'Documento, caneta e o caminho até o local da prova. E cama cedo.', minutos: null, estado: 'afazer' }
+  return <CartaoHoje calculo={calculo} cor={marco} titulo="Aquecimento leve e descanso"
+    porQue="Véspera: hoje não é dia de aprender coisa nova."
+    assuntos={[]} itens={[aquecimento, resumao, preparar]}
+    botao={{ rotulo: 'Começar o aquecimento', detalhe: `25 questões · ~${formatarTempo(25 * minutos)}`, aoClicar: acoes.aoAquecimento }} />
 }
 
 // ─── Constância ────────────────────────────────────────────────────────────
@@ -191,7 +178,7 @@ export function CartaoDesempenho({ areas, media }: { areas: Array<{ slug: string
         <ul className="pe-barras">
           {areas.map((a) => (
             <li key={a.slug} className={media !== null && a.acerto < media - 5 ? 'pe-barras--fraco' : media !== null && a.acerto > media + 5 ? 'pe-barras--forte' : ''}>
-              <span className="pe-barras__nome">{a.nome}</span>
+              <span className="pe-barras__nome"><i className="pe-cor-area" style={{ background: corDaArea(a.slug) }} aria-hidden="true" />{a.nome}</span>
               <span className="pe-barras__trilho"><span style={{ width: `${a.acerto}%` }} />{media !== null && <i style={{ left: `${media}%` }} aria-hidden="true" />}</span>
               <b className="numerico">{a.acerto}%</b>
             </li>
@@ -214,7 +201,7 @@ export function MapaRisco({ riscos, cegos, aoTreinar }: { riscos: Risco[]; cegos
           {riscos.map((r) => (
             <li key={r.area.slug + r.foco.nome}>
               <span className="pe-riscos__nivel" data-nivel={r.foco.nivel}>{r.acerto}%</span>
-              <span className="pe-riscos__nome"><strong>{r.foco.nome}</strong><small>{r.area.nome} · {ROTULO_NIVEL[r.foco.nivel].toLowerCase()} · {r.respondidas} respondidas</small></span>
+              <span className="pe-riscos__nome"><strong>{r.foco.nome}</strong><small><i className="pe-cor-area" style={{ background: corDaArea(r.area.slug) }} aria-hidden="true" />{r.area.nome} · {ROTULO_NIVEL[r.foco.nivel].toLowerCase()} · {r.respondidas} respondidas</small></span>
               <button type="button" className="botao" onClick={() => aoTreinar(r.area, r.foco)}>Treinar</button>
             </li>
           ))}
@@ -224,7 +211,7 @@ export function MapaRisco({ riscos, cegos, aoTreinar }: { riscos: Risco[]; cegos
         <h3 className="pe-risco__sub">Ainda não abertos</h3>
         <p className="texto-2">De prioridade máxima e sem nenhuma questão respondida:</p>
         <ul className="pe-cegos">
-          {cegos.map((c) => <li key={c.area.slug + c.foco.nome}><button type="button" onClick={() => aoTreinar(c.area, c.foco)}>{c.foco.nome}<small>{c.area.nome} · {c.total} questões</small></button></li>)}
+          {cegos.map((c) => <li key={c.area.slug + c.foco.nome}><button type="button" onClick={() => aoTreinar(c.area, c.foco)}>{c.foco.nome}<small><i className="pe-cor-area" style={{ background: corDaArea(c.area.slug) }} aria-hidden="true" />{c.area.nome} · {c.total} questões</small></button></li>)}
         </ul>
       </>}
     </section>
