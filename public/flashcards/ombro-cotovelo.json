@@ -31,6 +31,62 @@
    "fonte": "63129d8e877c"
   },
   {
+   "id": "fc-ombro-cotovelo-0002-co1",
+   "questao": "ombro-cotovelo-0002",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Anatomia do ombro",
+   "subtemas": [
+    "Anatomia do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por qual espaço o nervo axilar contorna o colo do úmero por trás até o deltoide?",
+   "resposta": "espaço quadrangular",
+   "explicacao": "Preso no **espaço quadrangular**, o axilar é esticado pela cabeça luxada; é o nervo mais lesado na luxação anterior.",
+   "opcoes": [
+    "espaço quadrangular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9dc22542cc63",
+   "origem": "autoral",
+   "trecho": "através de uma passagem entre músculos chamada **espaço quadrangular**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0002-co2",
+   "questao": "ombro-cotovelo-0002",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Anatomia do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação anterior do ombro, em que pacientes a lesão da artéria axilar é mais comum?",
+   "resposta": "idosos",
+   "explicacao": "Em **idosos**, com artérias endurecidas pela aterosclerose, sobretudo em luxações antigas ou reduções com força.",
+   "opcoes": [
+    "idosos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9dc22542cc63",
+   "origem": "autoral",
+   "trecho": "acontece mais em idosos, cujas artérias são endurecidas pela aterosclerose",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0002-q",
    "questao": "ombro-cotovelo-0002",
    "area": "Ombro e cotovelo",
@@ -533,6 +589,89 @@
    "fonte": "93ea384ac3b1"
   },
   {
+   "id": "fc-ombro-cotovelo-0010-co1",
+   "questao": "ombro-cotovelo-0010",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em média, a quantos centímetros da ponta do coracoide o nervo musculocutâneo entra no coracobraquial?",
+   "resposta": "5 cm",
+   "explicacao": "Cerca de **5 cm** (às vezes menos): por isso é o nervo em risco na Latarjet.",
+   "opcoes": [
+    "5 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "dafeb711e75a",
+   "origem": "autoral",
+   "trecho": "entra no músculo coracobraquial em média cerca de 5 cm abaixo da ponta do coracoide",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0010-co2",
+   "questao": "ombro-cotovelo-0010",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Latarjet, como se chama o efeito do tendão conjunto que segura o subescapular inferior em abdução e rotação externa?",
+   "resposta": "efeito de rede",
+   "explicacao": "Efeito triplo: **ósseo**, **de rede** (sling) e de reparo capsular.",
+   "opcoes": [
+    "efeito de rede"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "dafeb711e75a",
+   "origem": "autoral",
+   "trecho": "o **efeito de rede** (sling effect)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0010-co3",
+   "questao": "ombro-cotovelo-0010",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Latarjet, qual nervo pode ser atingido por parafusos longos demais que passam a cortical posterior?",
+   "resposta": "supraescapular",
+   "explicacao": "O **supraescapular** corre pelo colo posterior da glenoide; o musculocutâneo é o risco da mobilização do coracoide.",
+   "opcoes": [
+    "supraescapular",
+    "axilar",
+    "musculocutâneo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "dafeb711e75a",
+   "origem": "autoral",
+   "trecho": "O **supraescapular** corre pelo colo posterior da glenoide e pode ser atingido por parafusos longos demais.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0010-q",
    "questao": "ombro-cotovelo-0010",
    "area": "Ombro e cotovelo",
@@ -814,6 +953,87 @@
    "fonte": "f4e547dc487a"
   },
   {
+   "id": "fc-ombro-cotovelo-0017-co1",
+   "questao": "ombro-cotovelo-0017",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação posterior do ombro, por qual epônimo também se conhece a lesão de Hill-Sachs reversa?",
+   "resposta": "McLaughlin",
+   "explicacao": "**McLaughlin**: afundamento anteromedial da cabeça contra a borda posterior da glenoide.",
+   "opcoes": [
+    "McLaughlin"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "9d8fef81ff62",
+   "origem": "autoral",
+   "trecho": "Hill-Sachs reversa**, também chamada lesão de McLaughlin",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0017-co2",
+   "questao": "ombro-cotovelo-0017",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na modificação de Neer da cirurgia de McLaughlin, o que se transfere junto com o subescapular?",
+   "resposta": "tubérculo menor",
+   "explicacao": "Neer transfere o subescapular com o **tubérculo menor** osteotomizado, para fixação óssea mais firme.",
+   "opcoes": [
+    "tubérculo menor"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "9d8fef81ff62",
+   "origem": "autoral",
+   "trecho": "transfere-se o subescapular junto com o **tubérculo menor** osteotomizado",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0017-co3",
+   "questao": "ombro-cotovelo-0017",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Hill-Sachs reversa com mais de 50% da superfície articular: qual é a conduta?",
+   "resposta": "enxerto ou prótese",
+   "explicacao": "25 a 50%: transferência do subescapular; **acima de 50%**: enxerto osteocondral ou artroplastia.",
+   "opcoes": [
+    "enxerto ou prótese"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "9d8fef81ff62",
+   "origem": "autoral",
+   "trecho": "acima de 50%, enxerto ou prótese.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0017-q",
    "questao": "ombro-cotovelo-0017",
    "area": "Ombro e cotovelo",
@@ -905,6 +1125,60 @@
     "largura": 427,
     "altura": 375
    }
+  },
+  {
+   "id": "fc-ombro-cotovelo-0020-co1",
+   "questao": "ombro-cotovelo-0020",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O que significa a palavra francesa que dá nome ao remplissage?",
+   "resposta": "preenchimento",
+   "explicacao": "**Preenchimento**: o infraespinhal e a cápsula posterior preenchem o Hill-Sachs, que deixa de engatar.",
+   "opcoes": [
+    "preenchimento"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "dd73f78d7226",
+   "origem": "autoral",
+   "trecho": "palavra francesa que significa \"preenchimento\"",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0020-co2",
+   "questao": "ombro-cotovelo-0020",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o custo funcional do remplissage associado ao Bankart?",
+   "resposta": "perda de alguns graus de rotação externa",
+   "explicacao": "Uma **perda de alguns graus de rotação externa**, em geral bem tolerada.",
+   "opcoes": [
+    "perda de alguns graus de rotação externa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "dd73f78d7226",
+   "origem": "autoral",
+   "trecho": "O custo é uma perda de alguns graus de rotação externa, em geral bem tolerada.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0020-q",
@@ -2746,6 +3020,60 @@
    }
   },
   {
+   "id": "fc-ombro-cotovelo-0059-co1",
+   "questao": "ombro-cotovelo-0059",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quem descreveu os princípios biomecânicos da prótese reversa do ombro?",
+   "resposta": "Grammont",
+   "explicacao": "**Grammont**: medializar o centro de rotação e abaixar o úmero para o deltoide elevar o braço sem manguito.",
+   "opcoes": [
+    "Grammont"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "3de98926e41c",
+   "origem": "autoral",
+   "trecho": "Os princípios biomecânicos que fazem essa prótese funcionar foram descritos por **Grammont**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0059-co2",
+   "questao": "ombro-cotovelo-0059",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa de Grammont, o que a medialização do centro de rotação faz com o deltoide?",
+   "resposta": "aumentando o braço de alavanca",
+   "explicacao": "Afastar o centro de rotação do deltoide **aumenta o braço de alavanca**, como empurrar a porta longe da dobradiça.",
+   "opcoes": [
+    "aumentando o braço de alavanca"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "3de98926e41c",
+   "origem": "autoral",
+   "trecho": "Isso afasta esse ponto do deltoide, aumentando o braço de alavanca do músculo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0059-q",
    "questao": "ombro-cotovelo-0059",
    "area": "Ombro e cotovelo",
@@ -3929,6 +4257,63 @@
    "fonte": "d08c9044b39b"
   },
   {
+   "id": "fc-ombro-cotovelo-0111-co1",
+   "questao": "ombro-cotovelo-0111",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa, como se chamam os desenhos recentes que movem parte da prótese para fora e reduzem o notching?",
+   "resposta": "lateralizados",
+   "explicacao": "Os desenhos **lateralizados** são uma evolução, não o conceito original de Grammont.",
+   "opcoes": [
+    "lateralizados"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "0b28d47177ba",
+   "origem": "autoral",
+   "trecho": "Por isso surgiram os desenhos **lateralizados**, mais recentes, que movem parte da prótese para fora.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0111-pc1",
+   "questao": "ombro-cotovelo-0111",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa, o centro de rotação fica inferior e medial. E no ombro normal, onde fica?",
+   "resposta": "alta e lateral",
+   "explicacao": "O ombro normal tem centro **alto e lateral** e depende do manguito; a reversa o leva para baixo e para dentro.",
+   "opcoes": [
+    "alta e lateral",
+    "inferior e medial",
+    "inferior e lateral",
+    "superior e medial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "0b28d47177ba",
+   "origem": "autoral",
+   "trecho": "No ombro normal, o centro de rotação da cabeça do úmero fica numa posição relativamente **alta e lateral**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0111-q",
    "questao": "ombro-cotovelo-0111",
    "area": "Ombro e cotovelo",
@@ -4757,6 +5142,33 @@
    "fonte": "e28da696e49c"
   },
   {
+   "id": "fc-ombro-cotovelo-0177-pc1",
+   "questao": "ombro-cotovelo-0177",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrodese do ombro, o serrátil anterior move a escápula. E o serrátil posterior, qual é seu papel?",
+   "resposta": "ligado à respiração",
+   "explicacao": "O **serrátil posterior** é um músculo fino das costas, **ligado à respiração**, sem papel na escápula.",
+   "opcoes": [
+    "ligado à respiração"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "28f9e723e4fb",
+   "origem": "autoral",
+   "trecho": "O serrátil posterior é um músculo fino das costas, ligado à respiração",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0177-q",
    "questao": "ombro-cotovelo-0177",
    "area": "Ombro e cotovelo",
@@ -5163,6 +5575,65 @@
    "fonte": "a763326872a1"
   },
   {
+   "id": "fc-ombro-cotovelo-0187-cl1",
+   "questao": "ombro-cotovelo-0187",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade posterior e multidirecional",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Instabilidade posterior e multidirecional"
+   ],
+   "tipo": "Classificação",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na classificação de Kim do lábio posteroinferior, qual tipo é a lesão oculta que só aparece ao elevar o lábio com o probe?",
+   "resposta": "Tipo II",
+   "explicacao": "**Kim II**: avulsão incompleta e **oculta**. I descolamento incompleto; III erosão condrolabral; IV retalho.",
+   "opcoes": [
+    "Tipo II",
+    "Tipo I",
+    "Tipo III",
+    "Tipo IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "9bee7e9f33fb",
+   "origem": "autoral",
+   "trecho": "**Tipo II**: a lesão de Kim propriamente dita, avulsão incompleta e **oculta**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0187-cl2",
+   "questao": "ombro-cotovelo-0187",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade posterior e multidirecional",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Instabilidade posterior e multidirecional"
+   ],
+   "tipo": "Classificação",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na classificação de Kim das lesões labrais posteriores, o que caracteriza o tipo IV?",
+   "resposta": "retalho",
+   "explicacao": "**Kim IV**: rasgo em **retalho** (flap) do lábio, com a inserção capsulolabral preservada.",
+   "opcoes": [
+    "retalho"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "9bee7e9f33fb",
+   "origem": "autoral",
+   "trecho": "**Tipo IV**: rasgo em **retalho** (flap) do lábio",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0187-q",
    "questao": "ombro-cotovelo-0187",
    "area": "Ombro e cotovelo",
@@ -5523,6 +5994,60 @@
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
    "fonte": "68c3dea31f47"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0202-co1",
+   "questao": "ombro-cotovelo-0202",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No ombro de Charcot, qual é o descompasso clínico característico?",
+   "resposta": "pouca dor",
+   "explicacao": "O paciente tem **pouca dor** para o tamanho da destruição; o ombro fica frouxo e inchado.",
+   "opcoes": [
+    "pouca dor"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "5fee9b3c5648",
+   "origem": "autoral",
+   "trecho": "o paciente tem pouca dor para o tamanho da destruição",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0202-co2",
+   "questao": "ombro-cotovelo-0202",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o tratamento usual da artropatia de Charcot do ombro?",
+   "resposta": "conservador",
+   "explicacao": "Tratamento **conservador**: prótese e artrodese falham muito numa articulação sem sensibilidade.",
+   "opcoes": [
+    "conservador"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "5fee9b3c5648",
+   "origem": "autoral",
+   "trecho": "O tratamento costuma ser conservador, porque tanto a prótese quanto a artrodese falham muito numa articulação sem sensibilidade.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0202-q",
@@ -8209,6 +8734,60 @@
    "fonte": "24b7cc36412b"
   },
   {
+   "id": "fc-ombro-cotovelo-0357-ar1",
+   "questao": "ombro-cotovelo-0357",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A ausência do manguito rotador é contraindicação à prótese reversa?",
+   "resposta": "não é contraindicação",
+   "explicacao": "**Não**: a reversa existe justamente para o ombro sem manguito. A contraindicação clássica é a ausência do **deltoide**.",
+   "opcoes": [
+    "não é contraindicação"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "00b1a95ead88",
+   "origem": "autoral",
+   "trecho": "a **ausência do manguito rotador** não é contraindicação",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0357-co1",
+   "questao": "ombro-cotovelo-0357",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Antes de indicar a prótese reversa, a lesão de qual nervo deve ser descartada, por inervar o deltoide?",
+   "resposta": "nervo axilar",
+   "explicacao": "A reversa depende do **deltoide**; examinar força e sensibilidade do **nervo axilar**, com eletroneuromiografia se houver dúvida.",
+   "opcoes": [
+    "nervo axilar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "00b1a95ead88",
+   "origem": "autoral",
+   "trecho": "seja por lesão do **nervo axilar** (que o inerva)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0357-q",
    "questao": "ombro-cotovelo-0357",
    "area": "Ombro e cotovelo",
@@ -8358,6 +8937,62 @@
    "fonte": "2e28f4e542b9"
   },
   {
+   "id": "fc-ombro-cotovelo-0364-co1",
+   "questao": "ombro-cotovelo-0364",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro",
+    "Fraturas do úmero proximal e da escápula"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que a lesão do plexo braquial pode poupar o trapézio e permitir a artrodese do ombro?",
+   "resposta": "nervo acessório",
+   "explicacao": "O trapézio é inervado pelo **nervo acessório**, fora do plexo; com os músculos da escápula bons, a fusão funciona.",
+   "opcoes": [
+    "nervo acessório"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "8bcc0faa9c78",
+   "origem": "autoral",
+   "trecho": "O trapézio, por exemplo, é inervado pelo nervo acessório, que não faz parte do plexo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0364-co2",
+   "questao": "ombro-cotovelo-0364",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro",
+    "Fraturas do úmero proximal e da escápula"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual paralisia muscular contraindica a artrodese do ombro?",
+   "resposta": "paralisia dos músculos da escápula",
+   "explicacao": "Após a fusão, todo o movimento vem da escápula: sem trapézio e levantador da escápula, não sobra movimento.",
+   "opcoes": [
+    "paralisia dos músculos da escápula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "8bcc0faa9c78",
+   "origem": "autoral",
+   "trecho": "Por isso a **paralisia dos músculos da escápula**, como o trapézio e o levantador da escápula, é a contraindicação clássica.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0365-q",
    "questao": "ombro-cotovelo-0365",
    "area": "Ombro e cotovelo",
@@ -8422,6 +9057,33 @@
     "largura": 429,
     "altura": 987
    }
+  },
+  {
+   "id": "fc-ombro-cotovelo-0367-co1",
+   "questao": "ombro-cotovelo-0367",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese total anatômica do ombro, qual é a principal causa de revisão?",
+   "resposta": "componente da glenoide se solta",
+   "explicacao": "A carga na borda do polietileno (efeito **cavalo de balanço**) faz o cimento ceder e o **componente glenoidal soltar**.",
+   "opcoes": [
+    "componente da glenoide se solta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "4b66781947a2",
+   "origem": "autoral",
+   "trecho": "o cimento cede e o componente da glenoide se solta, a principal causa de revisão dessa prótese.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0367-q",
@@ -9097,6 +9759,60 @@
    "fonte": "c4cc9854bc9f"
   },
   {
+   "id": "fc-ombro-cotovelo-0390-co1",
+   "questao": "ombro-cotovelo-0390",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese do ombro artrósico, que movimento o osteófito inferior em barba de bode limita se não for retirado?",
+   "resposta": "rotação externa",
+   "explicacao": "O osteófito inferior prende a cápsula de baixo, **limita a rotação externa** e esconde o colo verdadeiro; por isso é ressecado.",
+   "opcoes": [
+    "rotação externa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "48a10b1476e9",
+   "origem": "autoral",
+   "trecho": "Na prótese, esse osteófito precisa ser **retirado**, porque prende a cápsula de baixo, limita a rotação externa e atrapalha a identificação do colo verdadeiro na hora do corte.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0390-pc1",
+   "questao": "ombro-cotovelo-0390",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrose primária do ombro, com manguito íntegro, a cabeça umeral vai para trás. Se a cabeça sobe, qual é a doença?",
+   "resposta": "artropatia do manguito",
+   "explicacao": "Cabeça **posterior** = artrose primária; cabeça **superior** = falta de manguito, a **artropatia do manguito**.",
+   "opcoes": [
+    "artropatia do manguito"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "48a10b1476e9",
+   "origem": "autoral",
+   "trecho": "Se a cabeça sobe, a doença é outra: a artropatia do manguito.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0390-q",
    "questao": "ombro-cotovelo-0390",
    "area": "Ombro e cotovelo",
@@ -9177,6 +9893,87 @@
    "prova": "TEOT/TARO",
    "ano": null,
    "fonte": "a9629a9f4d25"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0393-co1",
+   "questao": "ombro-cotovelo-0393",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artropatia do manguito, como se chama a perda da elevação ativa com movimento passivo preservado e sem lesão de nervo?",
+   "resposta": "pseudoparalisia",
+   "explicacao": "Na **pseudoparalisia** os músculos e nervos funcionam; falta o ponto de apoio. É a indicação clássica da reversa.",
+   "opcoes": [
+    "pseudoparalisia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e4041b243e57",
+   "origem": "autoral",
+   "trecho": "O sintoma mais marcante é a **pseudoparalisia**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0393-co2",
+   "questao": "ombro-cotovelo-0393",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que a doença de Parkinson é contraindicação relativa à prótese reversa do ombro?",
+   "resposta": "risco de luxação e fratura",
+   "explicacao": "Rigidez e movimentos involuntários aumentam o **risco de luxação e fratura** ao redor da prótese.",
+   "opcoes": [
+    "risco de luxação e fratura"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e4041b243e57",
+   "origem": "autoral",
+   "trecho": "a rigidez e os movimentos involuntários aumentam muito o risco de luxação e fratura.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0393-co3",
+   "questao": "ombro-cotovelo-0393",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quem descreveu a artropatia do manguito, com a cabeça apoiada e moldada no acrômio?",
+   "resposta": "Neer",
+   "explicacao": "A **artropatia do manguito** foi descrita por **Neer**: a cabeça sobe, apoia no acrômio e os ossos se moldam.",
+   "opcoes": [
+    "Neer"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e4041b243e57",
+   "origem": "autoral",
+   "trecho": "a **artropatia do manguito**, descrita por Neer",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0393-q",
@@ -9339,6 +10136,60 @@
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
    "fonte": "fb3944a4de94"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0402-co1",
+   "questao": "ombro-cotovelo-0402",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrose primária do ombro, como se chama a glenoide com a superfície original e uma nova cavidade posterior separadas por uma crista?",
+   "resposta": "bicôncava",
+   "explicacao": "A cabeça escava uma nova cavidade atrás, com uma crista entre ela e a original: a glenoide **bicôncava** (Walch B2).",
+   "opcoes": [
+    "bicôncava"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "210c1700e733",
+   "origem": "autoral",
+   "trecho": "com uma crista entre elas. É a glenoide **bicôncava**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0402-pc1",
+   "questao": "ombro-cotovelo-0402",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A bad arthritic triad é degenerativa. Qual tríade do ombro reúne luxação, rotura do manguito e lesão de nervo?",
+   "resposta": "tríade terrível do ombro",
+   "explicacao": "A **tríade terrível do ombro** é traumática; a bad arthritic triad é retroversão, biconcavidade e subluxação posterior.",
+   "opcoes": [
+    "tríade terrível do ombro"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "210c1700e733",
+   "origem": "autoral",
+   "trecho": "Não confundir com a **tríade terrível do ombro**: luxação, rotura do manguito e lesão de nervo, um quadro traumático.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0402-q",
@@ -9640,6 +10491,88 @@
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
    "fonte": "498655b0e9d2"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0415-cl1",
+   "questao": "ombro-cotovelo-0415",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual classificação divide pelo local as fraturas por estresse do acrômio e da espinha após prótese reversa?",
+   "resposta": "Levy",
+   "explicacao": "**Levy**: na frente do acrômio, mais atrás no acrômio ou na espinha; as duas últimas causam mais perda de função.",
+   "opcoes": [
+    "Levy"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "7041a378f782",
+   "origem": "autoral",
+   "trecho": "A classificação de **Levy** divide essas fraturas pelo local",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0415-co1",
+   "questao": "ombro-cotovelo-0415",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa, para onde deve apontar o parafuso superior da base glenoidal?",
+   "resposta": "processo coracoide",
+   "explicacao": "A base do **coracoide** tem o melhor osso da escápula; apontar para a espinha cria ponto de fragilidade e risco de fratura.",
+   "opcoes": [
+    "processo coracoide",
+    "espinha da escápula"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "7041a378f782",
+   "origem": "autoral",
+   "trecho": "Já o parafuso apontado para o **processo coracoide** é o trajeto recomendado",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0415-pc1",
+   "questao": "ombro-cotovelo-0415",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa, a distalização do úmero se liga à fratura do acrômio. A medialização do centro de rotação se liga a quê?",
+   "resposta": "notching",
+   "explicacao": "Medializar o centro de rotação favorece o **notching** escapular e a perda de rotação externa; distalizar demais sobrecarrega o acrômio.",
+   "opcoes": [
+    "notching"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "7041a378f782",
+   "origem": "autoral",
+   "trecho": "A medialização do centro de rotação, princípio original da prótese reversa, está ligada ao notching e à perda de rotação externa",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0415-q",
@@ -10397,6 +11330,89 @@
    }
   },
   {
+   "id": "fc-ombro-cotovelo-0444-co1",
+   "questao": "ombro-cotovelo-0444",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual era o ângulo cervicodiafisário do desenho original de Grammont da prótese reversa?",
+   "resposta": "155 graus",
+   "explicacao": "Grammont usava **155 graus**, com notching frequente; os desenhos onlay costumam usar 135 a 145 graus.",
+   "opcoes": [
+    "155 graus",
+    "135 a 145 graus"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "907ca996e7e5",
+   "origem": "autoral",
+   "trecho": "ângulo cervicodiafisário de **155 graus**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0444-np1",
+   "questao": "ombro-cotovelo-0444",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa, o componente {{c1::onlay}} lateraliza o úmero: maior braço de momento e mais wrap do deltoide.",
+   "resposta": "onlay",
+   "explicacao": "O **onlay** dá mais estabilidade e menos notching; o inlay, mais medial, tem mais notching e menos wrap.",
+   "opcoes": [
+    "onlay",
+    "inlay"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "907ca996e7e5",
+   "origem": "autoral",
+   "trecho": "**onlay** lateraliza o úmero: **maior braço de momento** e mais wrap do deltoide",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0444-pc1",
+   "questao": "ombro-cotovelo-0444",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa, a bandeja umeral inlay fica encaixada dentro da metáfise. E a onlay?",
+   "resposta": "apoiada sobre o corte",
+   "explicacao": "**Onlay** = bandeja **apoiada sobre** o corte, úmero mais lateral e distal; **inlay** = encaixada dentro, abaixo do corte.",
+   "opcoes": [
+    "apoiada sobre o corte"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "907ca996e7e5",
+   "origem": "autoral",
+   "trecho": "No **onlay**, a bandeja fica **apoiada sobre** o corte.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0444-q",
    "questao": "ombro-cotovelo-0444",
    "area": "Ombro e cotovelo",
@@ -10422,6 +11438,122 @@
    "prova": "TARO",
    "ano": 2026,
    "fonte": "907ca996e7e5"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0445-cl1",
+   "questao": "ombro-cotovelo-0445",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Imagem do ombro e cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual classificação gradua a artropatia do manguito pela acetabularização do acrômio e femoralização da cabeça?",
+   "resposta": "Hamada",
+   "explicacao": "**Hamada** gradua a artropatia do manguito; **Walch** descreve a glenoide da artrose primária na tomografia.",
+   "opcoes": [
+    "Hamada",
+    "Walch"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "1dd7191e1911",
+   "origem": "autoral",
+   "trecho": "acetabularização do acrômio e femoralização da cabeça (classificação de **Hamada**)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0445-cl2",
+   "questao": "ombro-cotovelo-0445",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Imagem do ombro e cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Walch da glenoide, como está a cabeça umeral no tipo A?",
+   "resposta": "centrada",
+   "explicacao": "Walch: **A centrada**, B subluxada posteriormente, C displásica, D anteriorizada.",
+   "opcoes": [
+    "centrada",
+    "subluxada posteriormente",
+    "displásica",
+    "anteriorizada"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "1dd7191e1911",
+   "origem": "autoral",
+   "trecho": "(A centrada, B subluxada posteriormente, C displásica, D anteriorizada)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0445-co1",
+   "questao": "ombro-cotovelo-0445",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Imagem do ombro e cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artropatia do manguito, que distância acromioumeral indica a migração superior da cabeça?",
+   "resposta": "abaixo de 7 mm",
+   "explicacao": "Distância acromioumeral **abaixo de 7 mm**, com acetabularização do acrômio e femoralização da cabeça.",
+   "opcoes": [
+    "abaixo de 7 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "1dd7191e1911",
+   "origem": "autoral",
+   "trecho": "distância acromioumeral abaixo de 7 mm",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0445-co2",
+   "questao": "ombro-cotovelo-0445",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Imagem do ombro e cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a artrose do ombro em que capsulorrafias apertadas empurram a cabeça umeral para trás?",
+   "resposta": "artropatia de capsulorrafia",
+   "explicacao": "Após cirurgias de instabilidade com capsulorrafia apertada, a cabeça é empurrada para trás: **artropatia de capsulorrafia**.",
+   "opcoes": [
+    "artropatia de capsulorrafia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "1dd7191e1911",
+   "origem": "autoral",
+   "trecho": "Na **artrose pós-instabilidade** e após capsulorrafias apertadas, a cabeça pode ser empurrada para trás (artropatia de capsulorrafia).",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0445-q",
@@ -11315,6 +12447,90 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-ombro-cotovelo-0482-co1",
+   "questao": "ombro-cotovelo-0482",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que indicação a artroplastia total anatômica do ombro tem os melhores resultados?",
+   "resposta": "osteoartrose primária",
+   "explicacao": "Na **osteoartrose primária** o manguito costuma estar íntegro e a anatomia é pouco distorcida; sequelas de fratura e de artrite séptica têm os piores resultados.",
+   "opcoes": [
+    "osteoartrose primária",
+    "sequela de fratura",
+    "sequela de artrite séptica",
+    "osteoartrose por instabilidade"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "14e27289935e",
+   "origem": "autoral",
+   "trecho": "Artroplastia total anatômica: melhores resultados na osteoartrose primária com manguito íntegro.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0482-co2",
+   "questao": "ombro-cotovelo-0482",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteoartrose primária do ombro, em que proporção dos casos o manguito rotador está roto?",
+   "resposta": "menos de 10%",
+   "explicacao": "O manguito **geralmente está íntegro** na artrose primária (ruptura em **menos de 10%**), o que favorece a prótese anatômica.",
+   "opcoes": [
+    "menos de 10%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "14e27289935e",
+   "origem": "autoral",
+   "trecho": "O **manguito rotador geralmente está íntegro** (ruptura em menos de 10%).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0482-co3",
+   "questao": "ombro-cotovelo-0482",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Manguito irreparável ou sequela de fratura com tuberosidades inviáveis: qual prótese do ombro está indicada?",
+   "resposta": "prótese reversa",
+   "explicacao": "Sem manguito funcional a anatômica falha; a **prótese reversa** é a indicação nesses cenários.",
+   "opcoes": [
+    "prótese reversa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "14e27289935e",
+   "origem": "autoral",
+   "trecho": "Artropatia do manguito, manguito irreparável ou sequelas com tuberosidades inviáveis são indicações da **prótese reversa**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0492-co1",
    "questao": "ombro-cotovelo-0492",
    "area": "Ombro e cotovelo",
@@ -11757,6 +12973,204 @@
    "fonte": "fdabce4925e9"
   },
   {
+   "id": "fc-ombro-cotovelo-0545-co1",
+   "questao": "ombro-cotovelo-0545",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o principal estabilizador estático contra a luxação anterior do ombro?",
+   "resposta": "banda anterior do ligamento glenoumeral inferior",
+   "explicacao": "A **banda anterior do LGUI** fica tensa em abdução e rotação externa, a posição da luxação; o Bankart a desinsere com o lábio.",
+   "opcoes": [
+    "banda anterior do ligamento glenoumeral inferior",
+    "ligamento glenoumeral superior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "1e5ac506a1b2",
+   "origem": "autoral",
+   "trecho": "Principal estabilizador estático contra a luxação anterior: banda anterior do ligamento glenoumeral inferior.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0545-pc1",
+   "questao": "ombro-cotovelo-0545",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento glenoumeral inferior atua em abdução e rotação externa. Em que posição atua mais o superior?",
+   "resposta": "Braço ao lado do corpo",
+   "explicacao": "O **LGUS**, com o coracoumeral no intervalo rotador, contém a translação inferior e posterior com o **braço ao lado**.",
+   "opcoes": [
+    "Braço ao lado do corpo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "1e5ac506a1b2",
+   "origem": "autoral",
+   "trecho": "Superior (LGUS) | Braço ao lado do corpo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0545-tb1",
+   "questao": "ombro-cotovelo-0545",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que posição do braço o ligamento glenoumeral médio atua mais, contendo a translação anterior?",
+   "resposta": "Abdução intermediária",
+   "explicacao": "**LGUM**: abdução intermediária (cerca de 45 graus). LGUS: braço ao lado. LGUI anterior: 90 graus com rotação externa.",
+   "opcoes": [
+    "Abdução intermediária"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "1e5ac506a1b2",
+   "origem": "autoral",
+   "trecho": "Médio (LGUM) | Abdução intermediária (cerca de 45 graus); contém a translação anterior",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0546-co1",
+   "questao": "ombro-cotovelo-0546",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pelo conceito de trilha glenoidal de Itoi e Di Giacomo, como se chama o Hill-Sachs que engata?",
+   "resposta": "off-track",
+   "explicacao": "Hill-Sachs **off-track** engata na glenoide e é fator de falha do Bankart isolado.",
+   "opcoes": [
+    "off-track"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "5406ead5efd9",
+   "origem": "autoral",
+   "trecho": "Lesão de Hill-Sachs que engata** (\"off-track\", pelo conceito de trilha glenoidal de Itoi e Di Giacomo)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0546-co2",
+   "questao": "ombro-cotovelo-0546",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual lesão, a avulsão umeral do ligamento glenoumeral, causa falha do Bankart quando não é reconhecida?",
+   "resposta": "HAGL",
+   "explicacao": "A **HAGL** não reconhecida está entre os fatores de falha do reparo artroscópico.",
+   "opcoes": [
+    "HAGL"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "5406ead5efd9",
+   "origem": "autoral",
+   "trecho": "Lesão de HAGL (avulsão umeral do ligamento glenoumeral) não reconhecida.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0546-tb1",
+   "questao": "ombro-cotovelo-0546",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No escore ISIS de Balg e Boileau, quantos pontos vale a idade de 20 anos ou menos?",
+   "resposta": "2",
+   "explicacao": "Idade de 20 anos ou menos: **2 pontos**, como esporte competitivo, Hill-Sachs no AP e perda do contorno glenoidal.",
+   "opcoes": [
+    "2",
+    "1"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "5406ead5efd9",
+   "origem": "autoral",
+   "trecho": "Idade de 20 anos ou menos | 2",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0548-pc1",
+   "questao": "ombro-cotovelo-0548",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Frouxidão do ombro é a translação passiva, achado de exame. O que define a instabilidade?",
+   "resposta": "condição clínica sintomática",
+   "explicacao": "**Instabilidade** é **sintomática** (dor, apreensão, luxação); frouxidão assintomática não precisa de tratamento.",
+   "opcoes": [
+    "condição clínica sintomática"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "de586818a302",
+   "origem": "autoral",
+   "trecho": "**Instabilidade**: condição **clínica sintomática**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0549-q",
    "questao": "ombro-cotovelo-0549",
    "area": "Ombro e cotovelo",
@@ -11783,6 +13197,62 @@
    "prova": "CET-PR",
    "ano": null,
    "fonte": "1dd0d53fd2df"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0550-co1",
+   "questao": "ombro-cotovelo-0550",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemiartroplastia do ombro para osteoartrite, por que a dor pode voltar ao longo dos anos?",
+   "resposta": "erosão progressiva da glenoide",
+   "explicacao": "A hemiartroplastia mantém a **glenoide nativa**, que segue se desgastando contra a cabeça metálica.",
+   "opcoes": [
+    "erosão progressiva da glenoide"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "86248f8a737e",
+   "origem": "autoral",
+   "trecho": "pode evoluir com dor por erosão progressiva da glenoide ao longo dos anos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0550-np1",
+   "questao": "ombro-cotovelo-0550",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O resultado principal e mais previsível da artroplastia do ombro na artrose é {{c1::o controle da dor}}.",
+   "resposta": "controle da dor",
+   "explicacao": "Movimento, força e estabilidade dependem do **manguito**, do deltoide e da reabilitação; o **alívio da dor** é o ganho mais consistente.",
+   "opcoes": [
+    "controle da dor",
+    "retorno da amplitude de movimento",
+    "estabilidade da articulação"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "86248f8a737e",
+   "origem": "autoral",
+   "trecho": "o resultado principal e mais previsível da artroplastia do ombro na artrose é o controle da dor.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0550-q",
@@ -14071,6 +15541,35 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-ombro-cotovelo-0591-co1",
+   "questao": "ombro-cotovelo-0591",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na série de Zimmerman, com 360 pacientes, qual foi a recidiva após o Latarjet?",
+   "resposta": "1%",
+   "explicacao": "**Latarjet 1%** contra Bankart 13%; o Bankart continuou falhando ao longo de 6 anos.",
+   "opcoes": [
+    "1%",
+    "13%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "d4cab030c073",
+   "origem": "autoral",
+   "trecho": "BANKART 13% contra LATARJET 1%",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-ombro-cotovelo-0591-q",
    "questao": "ombro-cotovelo-0591",
    "area": "Ombro e cotovelo",
@@ -14096,6 +15595,64 @@
    "prova": null,
    "ano": null,
    "fonte": "d4cab030c073",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0591-tb1",
+   "questao": "ombro-cotovelo-0591",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Perda glenoidal abaixo de 13,5% a 17,3% com Hill-Sachs on-track: qual é a cirurgia no algoritmo do Rockwood?",
+   "resposta": "BANKART artroscópico ou aberto",
+   "explicacao": "On-track e perda subcrítica: **Bankart**. Off-track: Bankart com remplissage ou Latarjet. 17,4% a 30%: Latarjet.",
+   "opcoes": [
+    "BANKART artroscópico ou aberto"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "d4cab030c073",
+   "origem": "autoral",
+   "trecho": "on-track (sem engate) | BANKART artroscópico ou aberto",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0591-tb2",
+   "questao": "ombro-cotovelo-0591",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Segundo o Rockwood, qual é a taxa de complicações do Latarjet?",
+   "resposta": "10,6% a 15%",
+   "explicacao": "Complicações: Bankart aberto 4,3%; **Latarjet 10,6% a 15%**; bloqueio ósseo 17,6%.",
+   "opcoes": [
+    "10,6% a 15%",
+    "4,3%",
+    "17,6%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "d4cab030c073",
+   "origem": "autoral",
+   "trecho": "LATARJET 10,6% a 15%",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
@@ -14128,6 +15685,123 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-ombro-cotovelo-0593-co1",
+   "questao": "ombro-cotovelo-0593",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Artroscopia e vias de acesso do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Bankart artroscópico, até onde se solta o complexo capsulolabral para permitir o desvio da cápsula?",
+   "resposta": "ver o ventre do subescapular",
+   "explicacao": "Mobilizar da borda até **ver o ventre do subescapular**; sem isso, o desvio capsular é insuficiente.",
+   "opcoes": [
+    "ver o ventre do subescapular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "b5f4935fefde",
+   "origem": "autoral",
+   "trecho": "Mobilizar o complexo capsulolabral** da borda até **ver o ventre do subescapular**",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0593-co2",
+   "questao": "ombro-cotovelo-0593",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Artroscopia e vias de acesso do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a lesão em que o lábio anterior cicatrizou medialmente, no colo da glenoide?",
+   "resposta": "ALPSA",
+   "explicacao": "Na **ALPSA**, soltar o lábio exige melhor visão (ótica de 70 graus ou portal anterolateral).",
+   "opcoes": [
+    "ALPSA"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "b5f4935fefde",
+   "origem": "autoral",
+   "trecho": "lesão ALPSA (lábio cicatrizado medialmente no colo)",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0593-co3",
+   "questao": "ombro-cotovelo-0593",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Artroscopia e vias de acesso do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ao final do Bankart artroscópico, o que na junção condrolabial indica bom desvio capsular?",
+   "resposta": "bumper",
+   "explicacao": "Um **bumper** de partes moles recriado sobre a borda da glenoide.",
+   "opcoes": [
+    "bumper"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "b5f4935fefde",
+   "origem": "autoral",
+   "trecho": "um **\"bumper\"** de partes moles na junção condrolabial indica bom desvio.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0593-pc1",
+   "questao": "ombro-cotovelo-0593",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Artroscopia e vias de acesso do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Bankart artroscópico, a primeira âncora fica às 5h30 no ombro direito. E no ombro esquerdo?",
+   "resposta": "6h30",
+   "explicacao": "Primeira âncora baixa, na face da glenoide: **5h30 no direito, 6h30 no esquerdo**; âncora alta demais é fator de falha.",
+   "opcoes": [
+    "6h30",
+    "5h30"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "b5f4935fefde",
+   "origem": "autoral",
+   "trecho": "Primeira âncora baixa na face da glenoide: 5h30 no ombro direito, 6h30 no esquerdo.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-ombro-cotovelo-0593-q",
    "questao": "ombro-cotovelo-0593",
    "area": "Ombro e cotovelo",
@@ -14154,6 +15828,63 @@
    "prova": null,
    "ano": null,
    "fonte": "b5f4935fefde",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0594-co1",
+   "questao": "ombro-cotovelo-0594",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Bankart aberto, em que posição do braço se faz o desvio capsular para não perder rotação externa?",
+   "resposta": "30 graus de flexão e 30 graus de rotação externa",
+   "explicacao": "Braço em **30 graus de flexão e 30 de rotação externa**, para evitar o superaperto.",
+   "opcoes": [
+    "30 graus de flexão e 30 graus de rotação externa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "44a542e2fd59",
+   "origem": "autoral",
+   "trecho": "desvio capsular com o braço em 30 graus de flexão e 30 graus de rotação externa",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0594-co2",
+   "questao": "ombro-cotovelo-0594",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na série de Neviaser do Bankart aberto, com 17 anos de seguimento, qual foi a recidiva?",
+   "resposta": "1,6%",
+   "explicacao": "**1,6%**, com perda pequena de rotação externa (4 graus); o artroscópico fica em cerca de 10,7% a 13,1%.",
+   "opcoes": [
+    "1,6%",
+    "10,7% a 13,1%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "44a542e2fd59",
+   "origem": "autoral",
+   "trecho": "NEVIASER (127 pacientes, 17 anos) teve recidiva de **1,6%**",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
