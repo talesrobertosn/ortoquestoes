@@ -4905,6 +4905,89 @@
    "fonte": "d80c8e26f04e"
   },
   {
+   "id": "fc-coluna-0302-co1",
+   "questao": "coluna-0302",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Qual é a fratura mais comum da coluna toracolombar na criança?",
+   "resposta": "fratura por compressão",
+   "explicacao": "A **compressão** (cunha) lesa só a coluna anterior, é estável e remodela pelas placas de crescimento.",
+   "opcoes": [
+    "fratura por compressão"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "59d3952e6d15",
+   "origem": "autoral",
+   "trecho": "A fratura por compressão é a lesão mais comum da coluna toracolombar na criança.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0302-co2",
+   "questao": "coluna-0302",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Fratura vertebral por compressão com trauma mínimo numa criança: o que se deve suspeitar?",
+   "resposta": "causa patológica",
+   "explicacao": "**Causa patológica**: leucemia, osteogênese imperfeita, granuloma eosinofílico, uso de corticoide.",
+   "opcoes": [
+    "causa patológica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "59d3952e6d15",
+   "origem": "autoral",
+   "trecho": "deve levantar a suspeita de causa patológica",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0302-co3",
+   "questao": "coluna-0302",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na criança, qual lesão dá a vértebra plana?",
+   "resposta": "granuloma eosinofílico",
+   "explicacao": "O **granuloma eosinofílico** causa a vértebra plana; entra no diagnóstico da compressão com trauma mínimo.",
+   "opcoes": [
+    "granuloma eosinofílico",
+    "leucemia",
+    "osteogênese imperfeita"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "59d3952e6d15",
+   "origem": "autoral",
+   "trecho": "granuloma eosinofílico (que dá a vértebra plana)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-coluna-0302-q",
    "questao": "coluna-0302",
    "area": "Coluna",
@@ -7351,6 +7434,64 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-coluna-0534-co1",
+   "questao": "coluna-0534",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar",
+    "Imagem da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Quem definiu estabilidade como a capacidade da coluna de limitar o deslocamento sob cargas fisiológicas?",
+   "resposta": "WHITE e PANJABI",
+   "explicacao": "**White e Panjabi**: sem lesar medula e raízes e sem evoluir para deformidade ou dor incapacitantes.",
+   "opcoes": [
+    "WHITE e PANJABI"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "531b60273c64",
+   "origem": "autoral",
+   "trecho": "WHITE e PANJABI definem estabilidade como a capacidade da coluna",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0534-pc1",
+   "questao": "coluna-0534",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar",
+    "Imagem da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na toracolombar, instabilidade é cifose acima de 30 graus e translação de 2,5 mm. Quais são os limites de White e Panjabi na cervical subaxial?",
+   "resposta": "acima de 11 graus e translação acima de 3,5 mm",
+   "explicacao": "Cervical subaxial: cifose segmentar **acima de 11 graus** e translação **acima de 3,5 mm**.",
+   "opcoes": [
+    "acima de 11 graus e translação acima de 3,5 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "531b60273c64",
+   "origem": "autoral",
+   "trecho": "cifose segmentar acima de 11 graus e translação acima de 3,5 mm",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-coluna-0534-q",
    "questao": "coluna-0534",
    "area": "Coluna",
@@ -8014,6 +8155,62 @@
    "prova": null,
    "ano": null,
    "fonte": "00115a8da4a5",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0542-co1",
+   "questao": "coluna-0542",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na AO Spine toracolombar, como se registra a fratura do tipo A que acompanha uma lesão B2 ou C?",
+   "resposta": "separadamente, depois",
+   "explicacao": "**Separadamente, depois** da principal: T12-L1 B2; L1 A3. Avisa que pode ser preciso suporte anterior.",
+   "opcoes": [
+    "separadamente, depois"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "805405a3ceb0",
+   "origem": "autoral",
+   "trecho": "a AO Spine pede que ela seja registrada **separadamente, depois** da lesão principal.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0542-co2",
+   "questao": "coluna-0542",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na notação da AO Spine toracolombar, quantos níveis leva uma lesão B2 ou C?",
+   "resposta": "dois níveis",
+   "explicacao": "B2 e C são lesões de segmento: **dois níveis** (T12-L1); a fratura A é de uma vértebra (L1).",
+   "opcoes": [
+    "dois níveis"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "805405a3ceb0",
+   "origem": "autoral",
+   "trecho": "a lesão B2 ou C é de segmento, então leva dois níveis",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {

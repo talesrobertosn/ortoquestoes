@@ -571,6 +571,60 @@
    "fonte": "7bd6977c4544"
   },
   {
+   "id": "fc-trauma-0019-co1",
+   "questao": "trauma-0019",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Em que proporção das fraturas toracolombares em explosão com déficit neurológico há laceração da dura-máter?",
+   "resposta": "um terço",
+   "explicacao": "Cerca de **um terço**; o sinal de alerta é a fratura vertical da lâmina.",
+   "opcoes": [
+    "um terço"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a2967641e8a5",
+   "origem": "autoral",
+   "trecho": "aparece em cerca de **um terço** das fraturas toracolombares em **explosão com déficit neurológico**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0019-co2",
+   "questao": "trauma-0019",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Explosão com fratura vertical da lâmina e raízes presas no traço: qual via se considera?",
+   "resposta": "via posterior com laminectomia",
+   "explicacao": "**Via posterior com laminectomia**, para liberar as raízes e reparar a dura antes de reduzir.",
+   "opcoes": [
+    "via posterior com laminectomia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "a2967641e8a5",
+   "origem": "autoral",
+   "trecho": "Por isso se considera a **via posterior com laminectomia**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0019-np",
    "questao": "trauma-0019",
    "area": "Trauma adulto",
@@ -5889,6 +5943,33 @@
    "fonte": "169fb1b039ec"
   },
   {
+   "id": "fc-trauma-0219-co1",
+   "questao": "trauma-0219",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Além da fístula liquórica e da meningite, qual complicação a lesão dural não tratada pode causar?",
+   "resposta": "pseudomeningocele",
+   "explicacao": "Lesão dural não tratada: fístula liquórica, **pseudomeningocele** e meningite.",
+   "opcoes": [
+    "pseudomeningocele"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "7112ff9f4109",
+   "origem": "autoral",
+   "trecho": "**fístula liquórica**, **pseudomeningocele** e **meningite**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0219-np",
    "questao": "trauma-0219",
    "area": "Trauma adulto",
@@ -10147,6 +10228,60 @@
     "largura": 268,
     "altura": 233
    }
+  },
+  {
+   "id": "fc-trauma-0547-co1",
+   "questao": "trauma-0547",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na fratura por compressão, qual perda de altura anterior sugere lesão do complexo ligamentar posterior?",
+   "resposta": "acima de 50%",
+   "explicacao": "Perda de altura **acima de 50%**, cifose acima de cerca de 25 graus e abertura interespinhosa.",
+   "opcoes": [
+    "acima de 50%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "023d7d8781e2",
+   "origem": "autoral",
+   "trecho": "**Perda de altura** anterior acima de **50%**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0547-co2",
+   "questao": "trauma-0547",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Qual sequência da ressonância confirma a lesão do complexo ligamentar posterior, com hipersinal nos ligamentos?",
+   "resposta": "STIR",
+   "explicacao": "Hipersinal no interespinhoso e no supraespinhoso em **STIR**.",
+   "opcoes": [
+    "STIR"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "023d7d8781e2",
+   "origem": "autoral",
+   "trecho": "com hipersinal no ligamento interespinhoso e supraespinhoso em STIR",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0547-q",
@@ -15007,6 +15142,142 @@
    "fonte": "63d97bbceeb9"
   },
   {
+   "id": "fc-trauma-0860-ar1",
+   "questao": "trauma-0860",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na fratura toracolombar em explosão, é o tamanho da retropulsão que decide o tratamento?",
+   "resposta": "estado neurológico",
+   "explicacao": "**Não**: decidem o **estado neurológico** e o **complexo ligamentar posterior**; a retropulsão tende a remodelar.",
+   "opcoes": [
+    "estado neurológico"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "03c012a5fb5c",
+   "origem": "autoral",
+   "trecho": "Não é o tamanho da retropulsão, mas o **estado neurológico** e a integridade do **complexo ligamentar posterior**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0860-cl1",
+   "questao": "trauma-0860",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na classificação de Denis das fraturas em explosão, qual tipo envolve só a placa superior, o mais frequente?",
+   "resposta": "tipo B",
+   "explicacao": "Denis: **B só a placa superior** (o mais comum); A as duas; C só a inferior; D com rotação; E com flexão lateral.",
+   "opcoes": [
+    "tipo B",
+    "tipo A"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "03c012a5fb5c",
+   "origem": "autoral",
+   "trecho": "a explosão **tipo B** (só a placa superior) é a mais frequente",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0860-cl2",
+   "questao": "trauma-0860",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na classificação de Denis das fraturas em explosão, o que envolve o tipo A?",
+   "resposta": "as duas placas",
+   "explicacao": "**Denis A**: **as duas placas** terminais (corresponde ao AO A4); B só a superior (AO A3).",
+   "opcoes": [
+    "as duas placas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "03c012a5fb5c",
+   "origem": "autoral",
+   "trecho": "o tipo A envolve as duas placas",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0860-co1",
+   "questao": "trauma-0860",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Por que a placa terminal superior é a que mais cede na fratura em explosão?",
+   "resposta": "mais fina",
+   "explicacao": "A placa superior é **mais fina** e menos densa, e recebe primeiro a carga do disco de cima.",
+   "opcoes": [
+    "mais fina"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "03c012a5fb5c",
+   "origem": "autoral",
+   "trecho": "A placa superior é mais **fina** e menos densa",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0860-co2",
+   "questao": "trauma-0860",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Em que região da coluna a fratura em explosão é mais comum?",
+   "resposta": "transição toracolombar",
+   "explicacao": "Na **transição toracolombar** (T11 a L2), onde a cifose torácica rígida encontra a lordose lombar móvel.",
+   "opcoes": [
+    "transição toracolombar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "03c012a5fb5c",
+   "origem": "autoral",
+   "trecho": "É mais comum na **transição toracolombar** (T11 a L2)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0860-q",
    "questao": "trauma-0860",
    "area": "Trauma adulto",
@@ -15658,6 +15929,60 @@
    "prova": "TARO",
    "ano": 2010,
    "fonte": "d451bbbf0cc3"
+  },
+  {
+   "id": "fc-trauma-0881-co1",
+   "questao": "trauma-0881",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na explosão, qual ligamento, muitas vezes íntegro, reduz os fragmentos retropulsados por ligamentotaxia?",
+   "resposta": "ligamento longitudinal posterior",
+   "explicacao": "O **ligamento longitudinal posterior** íntegro puxa os fragmentos de volta quando se distrai com parafusos pediculares.",
+   "opcoes": [
+    "ligamento longitudinal posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "cbffa9cd9445",
+   "origem": "autoral",
+   "trecho": "O **ligamento longitudinal posterior** muitas vezes está **íntegro** na explosão",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0881-pc1",
+   "questao": "trauma-0881",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A explosão pura tem as vértebras alinhadas. Se houver translação de uma vértebra sobre a outra, qual é a lesão?",
+   "resposta": "fratura-luxação",
+   "explicacao": "Translação = cisalhamento ou rotação: **fratura-luxação**, AO tipo C.",
+   "opcoes": [
+    "fratura-luxação"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "cbffa9cd9445",
+   "origem": "autoral",
+   "trecho": "a lesão é uma **fratura-luxação** (AO **tipo C**)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0881-q",
@@ -18067,6 +18392,114 @@
    "prova": "TARO",
    "ano": 2026,
    "fonte": "62aac904a22e"
+  },
+  {
+   "id": "fc-trauma-0997-cl1",
+   "questao": "trauma-0997",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na classificação de Takata das fraturas do limbo vertebral, como é o fragmento do tipo III?",
+   "resposta": "lateralizado",
+   "explicacao": "**Takata III**: fragmento **lateralizado**, pequeno, em lágrima. II central; IV toda a parede posterior.",
+   "opcoes": [
+    "lateralizado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "26ebce12f6a4",
+   "origem": "autoral",
+   "trecho": "**Tipo III**: fragmento **lateralizado**, pequeno e localizado",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0997-cl2",
+   "questao": "trauma-0997",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na classificação de Takata do limbo vertebral, o fragmento central do tipo II inclui quais ossos?",
+   "resposta": "osso cortical e esponjoso",
+   "explicacao": "**Takata II**: fratura central com **osso cortical e esponjoso**; o tipo I é só a borda cortical.",
+   "opcoes": [
+    "osso cortical e esponjoso"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "26ebce12f6a4",
+   "origem": "autoral",
+   "trecho": "**Tipo II**: fratura **central** com fragmento que inclui **osso cortical e esponjoso**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0997-co1",
+   "questao": "trauma-0997",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na fratura do limbo vertebral do adolescente, qual estrutura é avulsionada?",
+   "resposta": "anel apofisário",
+   "explicacao": "O ânulo fibroso arranca o **anel apofisário** posterior, ainda não fundido; quadro semelhante à hérnia de disco.",
+   "opcoes": [
+    "anel apofisário"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "26ebce12f6a4",
+   "origem": "autoral",
+   "trecho": "É a **avulsão** do **anel apofisário** posterior do corpo vertebral",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0997-co2",
+   "questao": "trauma-0997",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Qual é o melhor exame para ver o fragmento ósseo da fratura do limbo vertebral?",
+   "resposta": "tomografia",
+   "explicacao": "A **tomografia**; a ressonância pode confundir o fragmento com hérnia comum.",
+   "opcoes": [
+    "tomografia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "26ebce12f6a4",
+   "origem": "autoral",
+   "trecho": "A **tomografia** é o melhor exame para ver o fragmento ósseo",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0997-q",

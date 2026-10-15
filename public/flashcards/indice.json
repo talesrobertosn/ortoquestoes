@@ -1,33 +1,33 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 5357,
- "batalha": 4212,
- "soEstudo": 1145,
+ "total": 5380,
+ "batalha": 4214,
+ "soEstudo": 1166,
  "comImagem": 630,
- "simulados": 963,
- "autorais": 1055,
+ "simulados": 967,
+ "autorais": 1078,
  "quarentena": 523,
  "areas": {
   "coluna": {
    "nome": "Coluna",
    "arquivo": "coluna.json",
-   "total": 306,
-   "batalha": 245,
+   "total": 313,
+   "batalha": 246,
    "comImagem": 41,
-   "simulados": 85,
+   "simulados": 89,
    "tipos": {
     "Anatomia": 3,
     "Armadilha": 1,
     "Classificação": 18,
-    "Conceito": 3,
+    "Conceito": 9,
     "Imagem": 38,
-    "Par confundível": 1,
+    "Par confundível": 2,
     "Relâmpago": 240,
     "Tabela": 2
    },
    "assuntos": {
-    "Fraturas da coluna toracolombar": 65,
+    "Fraturas da coluna toracolombar": 72,
     "Anatomia da coluna": 39,
     "Fraturas da coluna cervical": 24,
     "Lesão medular e síndromes medulares": 23,
@@ -390,17 +390,17 @@
   "trauma": {
    "nome": "Trauma adulto",
    "arquivo": "trauma.json",
-   "total": 1080,
-   "batalha": 869,
+   "total": 1096,
+   "batalha": 870,
    "comImagem": 92,
    "simulados": 305,
    "tipos": {
-    "Armadilha": 7,
-    "Classificação": 39,
-    "Conceito": 62,
+    "Armadilha": 8,
+    "Classificação": 43,
+    "Conceito": 72,
     "Imagem": 92,
     "Na prova": 200,
-    "Par confundível": 17,
+    "Par confundível": 18,
     "Relâmpago": 659,
     "Tabela": 4
    },
@@ -409,10 +409,10 @@
     "Luxação do joelho e lesões ligamentares": 97,
     "Fratura da escápula": 73,
     "Fraturas diafisárias do antebraço": 64,
+    "Fraturas da coluna toracolombar": 57,
     "Luxação acromioclavicular": 50,
     "Fratura da clavícula": 44,
     "Fratura do rádio distal": 42,
-    "Fraturas da coluna toracolombar": 41,
     "Fratura do anel pélvico": 37,
     "Fratura do úmero distal": 37,
     "Fraturas por estresse": 36,
@@ -481,5 +481,5 @@
    }
   }
  },
- "assinatura": "419eac6d04e7"
+ "assinatura": "594e8e166ddc"
 }
