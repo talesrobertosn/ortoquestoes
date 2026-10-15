@@ -37,16 +37,49 @@ async function consultarMercadoPago(token, caminho) {
 var consultarFatura = (token, id) => consultarMercadoPago(token, `authorized_payments/${encodeURIComponent(id)}`);
 var consultarPagamento = (token, id) => consultarMercadoPago(token, `v1/payments/${encodeURIComponent(id)}`);
 
+// supabase/functions/_shared/cartas.ts
+var ASSINATURA = "Um abra\xE7o,\nTales, do Orto Quest\xF5es";
+var esc = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+var RE_LINK = /\b(?:https?:\/\/)?(?:www\.)?ortoquestoes\.com\.br\/?[^\s<>"')]*[^\s<>"').,;:!?]|\bhttps?:\/\/[^\s<>"')]+[^\s<>"').,;:!?]/g;
+function semAssinatura(corpo) {
+  return corpo.replace(/\s*(?:um abraço|abraço|abraços)[,.!]?\s*\n+\s*tales[^\n]*\s*$/i, "").replace(/\s+$/, "");
+}
+function renderizarCarta(c) {
+  const corpo = semAssinatura(c.corpo.replace(/\r\n/g, "\n").trim());
+  const paragrafos = corpo.split(/\n{2,}/).map((x) => x.trim()).filter(Boolean);
+  const assinatura = ASSINATURA.split("\n");
+  const avisoSair = c.textoDescadastro ?? "Se preferir n\xE3o receber mais estas mensagens";
+  const rodape = c.descadastro ? `${avisoSair}: ${c.descadastro}` : "";
+  const comLink = (t) => esc(t).replace(RE_LINK, (url) => {
+    const href = /^https?:\/\//.test(url) ? url : `https://${url}`;
+    return `<a href="${href}" style="color:#1a5fb4;">${url}</a>`;
+  });
+  const p = (html2, estilo = "") => `<p style="margin:0 0 14px 0;${estilo}">${html2}</p>`;
+  const html = `<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(c.assunto)}</title></head>
+<body style="margin:0;padding:0;background:#ffffff;">
+<div style="max-width:560px;padding:16px 14px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#222222;">
+${paragrafos.map((t) => p(comLink(t).replace(/\n/g, "<br>"))).join("\n")}
+${p(assinatura.map(esc).join("<br>"))}
+${c.descadastro ? p(`${esc(avisoSair)}, <a href="${esc(c.descadastro)}" style="color:#888888;">\xE9 s\xF3 clicar aqui</a>.`, "margin-top:28px;font-size:12px;line-height:1.4;color:#888888;") : ""}
+</div>
+</body>
+</html>`;
+  const texto = [...paragrafos, assinatura.join("\n"), ...rodape ? ["--", rodape] : []].join("\n\n");
+  return { assunto: c.assunto.trim(), html, texto };
+}
+
 // supabase/functions/_shared/modelo-email.ts
-var esc = (texto) => texto.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+var esc2 = (texto) => texto.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 function emailAlerta(titulo, linhas, link) {
-  const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${esc(titulo)}</title></head>
+  const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${esc2(titulo)}</title></head>
 <body style="margin:0;padding:24px 12px;background:#eef2f1;font-family:Arial,Helvetica,sans-serif;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center">
 <table role="presentation" width="560" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:560px;background:#ffffff;border-radius:14px;">
 <tr><td style="padding:22px 28px 6px 28px;font-size:12px;letter-spacing:2px;color:#146b61;text-transform:uppercase;font-weight:bold;">Painel do administrador</td></tr>
-<tr><td style="padding:0 28px 10px 28px;font-size:20px;line-height:26px;font-weight:bold;color:#1b2624;">${esc(titulo)}</td></tr>
-<tr><td style="padding:0 28px 8px 28px;font-size:15px;line-height:23px;color:#33413d;">${linhas.map((l) => esc(l)).join("<br>")}</td></tr>
+<tr><td style="padding:0 28px 10px 28px;font-size:20px;line-height:26px;font-weight:bold;color:#1b2624;">${esc2(titulo)}</td></tr>
+<tr><td style="padding:0 28px 8px 28px;font-size:15px;line-height:23px;color:#33413d;">${linhas.map((l) => esc2(l)).join("<br>")}</td></tr>
 <tr><td style="padding:14px 28px 26px 28px;"><a href="${link}" style="display:inline-block;padding:12px 22px;background:#146b61;color:#ffffff;border-radius:10px;font-weight:bold;text-decoration:none;font-size:14px;">Abrir o painel</a></td></tr>
 </table></td></tr></table></body></html>`;
   return { assunto: `[OrtoQuest\xF5es] ${titulo}`, html, texto: `${titulo}
@@ -197,7 +230,7 @@ function alteracaoDaCobranca(status, pagamento, statusAtual) {
   return null;
 }
 async function assinaturaPorExterno(idExterno) {
-  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status`);
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status,id_usuario,plano,ultima_cobranca_em`);
   if (!resposta.ok) throw new Error("consulta_assinatura_falhou");
   const assinaturas = await resposta.json();
   return assinaturas[0] ?? null;
@@ -251,6 +284,32 @@ async function aplicarCobranca(idAssinatura, pagamento, idEvento) {
   });
   if (!resposta.ok) throw new Error("atualizacao_cobranca_falhou");
   await marcarEvento(idEvento, "processado");
+  if (ehRenovacao(atual, pagamento)) await avisarRenovacao(atual, pagamento).catch((erro) => console.error("aviso_renovacao_falhou", String(erro)));
+}
+function ehRenovacao(atual, pagamento) {
+  if (pagamento.status !== "approved" || !pagamento.date_approved || !atual.ultima_cobranca_em || atual.status !== "ativa") return false;
+  return Date.parse(pagamento.date_approved) - Date.parse(atual.ultima_cobranca_em) > 20 * 864e5;
+}
+var dataBr = (d) => d.toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" });
+async function avisarRenovacao(atual, pagamento) {
+  if (!emailConfigurado()) return;
+  const r = await banco("rpc/dados_email_usuario", { method: "POST", body: JSON.stringify({ p_id: atual.id_usuario }) });
+  if (!r.ok) throw new Error("consulta_usuario_falhou");
+  const [pessoa] = await r.json();
+  if (!pessoa?.email) return;
+  const nome = pessoa.nome?.trim().split(/\s+/)[0];
+  const cobrado = new Date(pagamento.date_approved);
+  const prazo = new Date(cobrado.getTime() + 7 * 864e5);
+  const valor = Number(pagamento.transaction_amount ?? 0).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  const plano = atual.plano === "mensal" ? "mensal" : atual.plano === "semestral" ? "semestral" : "anual";
+  const corpo = [
+    nome ? `Oi, ${nome}, tudo bem?` : "Oi, tudo bem?",
+    `Seu plano ${plano} do Orto Quest\xF5es renovou hoje, ${dataBr(cobrado)}, no cart\xE3o (${valor}). O acesso continua normalmente, sem voc\xEA precisar fazer nada.`,
+    `Se a renova\xE7\xE3o n\xE3o era o que voc\xEA queria, sem problema: at\xE9 ${dataBr(prazo)} voc\xEA pode desistir e receber o valor integral de volta, com um bot\xE3o, sem precisar justificar. \xC9 s\xF3 abrir ${site()}#/conta/assinatura e tocar em "Desistir e solicitar reembolso integral". Se preferir s\xF3 n\xE3o renovar da pr\xF3xima vez, no mesmo lugar h\xE1 a op\xE7\xE3o de cancelar as pr\xF3ximas renova\xE7\xF5es.`,
+    "Qualquer d\xFAvida, \xE9 s\xF3 responder este e-mail."
+  ].join("\n\n");
+  const carta = renderizarCarta({ assunto: `Seu plano ${plano} renovou`, corpo });
+  await enviarEmail(pessoa.email, carta.assunto, carta.html, carta.texto);
 }
 async function processarPagamento(idRecurso, idEvento) {
   const token = Deno.env.get("MERCADO_PAGO_ACCESS_TOKEN");
