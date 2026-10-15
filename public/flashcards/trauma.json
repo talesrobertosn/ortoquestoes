@@ -3833,6 +3833,116 @@
    "fonte": "26974465663b"
   },
   {
+   "id": "fc-trauma-0143-cl1",
+   "questao": "trauma-0143",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Quem criou, em 1994, a classificação de distribuição de carga (load sharing) das fraturas toracolombares?",
+   "resposta": "McCormack, Karaikovic e Gaines",
+   "explicacao": "**McCormack, Karaikovic e Gaines**: prever se o corpo ainda sustenta carga e se a fixação posterior isolada vai falhar.",
+   "opcoes": [
+    "McCormack, Karaikovic e Gaines"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "879c8d4dc7b4",
+   "origem": "autoral",
+   "trecho": "**McCormack, Karaikovic e Gaines** (1994) criaram a **classificação de distribuição de carga**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0143-cl2",
+   "questao": "trauma-0143",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No load sharing de McCormack, com três itens de 1 a 3 pontos, qual é a faixa da soma total?",
+   "resposta": "3 a 9",
+   "explicacao": "A soma vai de **3 a 9**; acima de 6, reconstruir a coluna anterior ou fixar longo.",
+   "opcoes": [
+    "3 a 9"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "879c8d4dc7b4",
+   "origem": "autoral",
+   "trecho": "A soma vai de **3 a 9**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0143-tb1",
+   "questao": "trauma-0143",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Tabela",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No load sharing de McCormack, quanta cominução do corpo, na TC sagital, vale 3 pontos?",
+   "resposta": "mais de 60%",
+   "explicacao": "Cominução **pequena (menos de 30%)** vale 1; **grande (mais de 60%)** vale 3.",
+   "opcoes": [
+    "mais de 60%",
+    "menos de 30%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "879c8d4dc7b4",
+   "origem": "autoral",
+   "trecho": "Cominução do corpo (na TC sagital) | Pequena (menos de 30%) | Grande (mais de 60%)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0143-tb2",
+   "questao": "trauma-0143",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Tabela",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No load sharing de McCormack, quanta correção da cifose necessária vale 3 pontos?",
+   "resposta": "10° ou mais",
+   "explicacao": "Correção de **3° ou menos** vale 1; **10° ou mais** vale 3.",
+   "opcoes": [
+    "10° ou mais",
+    "3° ou menos"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "879c8d4dc7b4",
+   "origem": "autoral",
+   "trecho": "Correção da cifose necessária | 3° ou menos | 10° ou mais",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0144-np",
    "questao": "trauma-0144",
    "area": "Trauma adulto",
@@ -20482,6 +20592,88 @@
    }
   },
   {
+   "id": "fc-trauma-1099-co1",
+   "questao": "trauma-1099",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na fratura em explosão, como se chama o deslocamento de fragmentos da parede posterior para dentro do canal?",
+   "resposta": "retropulsão",
+   "explicacao": "A **retropulsão** traz risco neurológico; a tomografia mede a ocupação do canal.",
+   "opcoes": [
+    "retropulsão"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "a0511981f5eb",
+   "origem": "autoral",
+   "trecho": "(**retropulsão**), com risco neurológico",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1099-pc1",
+   "questao": "trauma-1099",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No AP da coluna, a distância interpedicular aumentada sugere explosão. O aumento da distância interespinhosa sugere qual mecanismo?",
+   "resposta": "distração",
+   "explicacao": "Interespinhosa aumentada: lesão do complexo ligamentar posterior por **distração** (flexão-distração).",
+   "opcoes": [
+    "distração"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "a0511981f5eb",
+   "origem": "autoral",
+   "trecho": "O **aumento da distância interespinhosa** sugere lesão do complexo ligamentar posterior por **distração**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1099-pc2",
+   "questao": "trauma-1099",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtemas": [
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na fratura em cunha, a parede posterior do corpo está íntegra. E na fratura em explosão?",
+   "resposta": "Lesada",
+   "explicacao": "Na explosão, a **parede posterior** é **lesada**, com retropulsão e maior risco neurológico.",
+   "opcoes": [
+    "Lesada",
+    "Íntegra"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "a0511981f5eb",
+   "origem": "autoral",
+   "trecho": "Parede posterior | Íntegra | Lesada (retropulsão)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-1099-q",
    "questao": "trauma-1099",
    "area": "Trauma adulto",
@@ -29120,6 +29312,155 @@
    "prova": null,
    "ano": null,
    "fonte": "e4e44c3bded6",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1499-cl1",
+   "questao": "trauma-1499",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do anel pélvico",
+   "subtemas": [
+    "Fratura do anel pélvico",
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na classificação de Denis das fraturas do sacro, onde passa o traço da zona I, a mais comum?",
+   "resposta": "lateral aos forames",
+   "explicacao": "**Zona I**: **lateral aos forames** (asa), quase 50%, pouco déficit. Zona II: forames. Zona III: canal.",
+   "opcoes": [
+    "lateral aos forames",
+    "através dos forames",
+    "medial aos forames"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "8066900eb7a0",
+   "origem": "autoral",
+   "trecho": "I | lateral aos forames (asa) | quase 50%, a mais comum | baixo",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1499-cl2",
+   "questao": "trauma-1499",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do anel pélvico",
+   "subtemas": [
+    "Fratura do anel pélvico",
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na classificação de Denis do sacro, qual é a frequência da zona III, medial aos forames?",
+   "resposta": "16%",
+   "explicacao": "**Zona III**: **16%**, a menos comum, com déficit em até 60% (raízes ou cauda equina).",
+   "opcoes": [
+    "16%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "8066900eb7a0",
+   "origem": "autoral",
+   "trecho": "III | medial aos forames, entrando no canal | 16%, a menos comum",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1500-cl1",
+   "questao": "trauma-1500",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do anel pélvico",
+   "subtemas": [
+    "Fratura do anel pélvico",
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na classificação de Roy-Camille do traço transverso da dissociação espinopélvica, o que é o tipo I?",
+   "resposta": "cifose sem translação",
+   "explicacao": "**I** cifose sem translação; II cifose com translação posterior; III translação completa; IV cominuição sem desvio.",
+   "opcoes": [
+    "cifose sem translação",
+    "translação completa, com o fragmento cefálico anterior ao caudal",
+    "cominuição completa sem desvio do fragmento cefálico"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "518b27f6d030",
+   "origem": "autoral",
+   "trecho": "ROY-CAMILLE: I cifose sem translação; II cifose com translação posterior do cefálico",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1500-cl2",
+   "questao": "trauma-1500",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do anel pélvico",
+   "subtemas": [
+    "Fratura do anel pélvico",
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Classificação",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Quem acrescentou o tipo IV, cominuição sem desvio, à classificação de Roy-Camille do sacro?",
+   "resposta": "STRANGE-VOGNSEN e LEBECH",
+   "explicacao": "**Strange-Vognsen e Lebech** acrescentaram o tipo IV aos três de Roy-Camille.",
+   "opcoes": [
+    "STRANGE-VOGNSEN e LEBECH"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "518b27f6d030",
+   "origem": "autoral",
+   "trecho": "STRANGE-VOGNSEN e LEBECH acrescentaram o quarto",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1500-co1",
+   "questao": "trauma-1500",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fratura do anel pélvico",
+   "subtemas": [
+    "Fratura do anel pélvico",
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na dissociação espinopélvica, em qual reconstrução da tomografia aparece a cifose que passa despercebida no AP?",
+   "resposta": "reconstrução sagital",
+   "explicacao": "A cifose aparece na **reconstrução sagital** em cortes finos; no AP e no axial passa despercebida.",
+   "opcoes": [
+    "reconstrução sagital"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "518b27f6d030",
+   "origem": "autoral",
+   "trecho": "A cifose aparece na **reconstrução sagital** da tomografia em cortes finos.",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
