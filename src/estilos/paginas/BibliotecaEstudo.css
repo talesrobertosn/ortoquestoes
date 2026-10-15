@@ -1,0 +1,77 @@
+/* Biblioteca (modo Estudo), 15/10/2026: horas do fundo, cronograma e fluxo mais leve no toque.
+   Fica num arquivo próprio para não disputar o Flashcards.css com o resto do jogo. */
+
+/* -------- o fundo que muda de hora com os acertos (FundoBiblioteca.tsx) */
+.fc-arena > .fc-fundo-estudo { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.fc-fundo-estudo__hora, .fc-fundo-estudo__hora > .fc-cena { position: absolute; inset: 0; }
+.fc-fundo-estudo__hora { animation: fc-hora-chega 1.8s ease-in-out both; will-change: opacity; }
+.fc-fundo-estudo--parado .fc-fundo-estudo__hora { animation: none; }
+@keyframes fc-hora-chega { from { opacity: 0; } to { opacity: 1; } }
+/* o tom da hora por cima da pintura: reforça o clima sem repintar (camada estática, barata) */
+.fc-fundo-estudo__hora::after { content: ""; position: absolute; inset: 0; pointer-events: none; }
+.fc-fundo-estudo__hora[data-hora="amanhecer"]::after { background: linear-gradient(180deg, rgba(150, 170, 230, .22), rgba(255, 180, 170, .12) 55%, rgba(40, 40, 80, .18)); mix-blend-mode: soft-light; }
+.fc-fundo-estudo__hora[data-hora="tarde"]::after { background: radial-gradient(ellipse at 50% 20%, rgba(255, 200, 90, .32), rgba(200, 120, 30, .16) 70%); mix-blend-mode: soft-light; }
+.fc-fundo-estudo__hora[data-hora="entardecer"]::after { background: linear-gradient(180deg, rgba(120, 60, 150, .30), rgba(255, 120, 60, .22) 60%, rgba(60, 20, 40, .30)); mix-blend-mode: soft-light; }
+.fc-fundo-estudo__hora[data-hora="noite"]::after { background: radial-gradient(ellipse at 50% 25%, rgba(70, 90, 170, .15), rgba(5, 8, 30, .55) 80%); }
+@media (prefers-reduced-motion: reduce) { .fc-fundo-estudo__hora { animation: none; } }
+
+/* indicador da hora no painel da sessão */
+.fc-estudo__hora { display: flex; align-items: center; gap: 10px; margin: 0; font-family: var(--fc-ui); animation: fc-hora-texto .6s ease both; }
+.fc-estudo__hora b { display: block; font: 800 14px/1.2 var(--fc-titulo); color: #ffe7a0; letter-spacing: .03em; }
+.fc-estudo__hora small { display: block; font: 600 12px/1.3 var(--fc-ui); color: #d8c8a8; }
+.fc-estudo__hora-pontos { display: grid; grid-template-columns: repeat(5, 8px); gap: 3px; flex: none; }
+.fc-estudo__hora-pontos i { width: 8px; height: 8px; border-radius: 50%; background: rgba(0, 0, 0, .55); box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .45); }
+.fc-estudo__hora-pontos i[data-ativa] { background: radial-gradient(circle at 40% 35%, #fff4c0, #e9b955); box-shadow: 0 0 6px rgba(255, 210, 120, .7); }
+@keyframes fc-hora-texto { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .fc-estudo__hora { animation: none; } }
+.fc-estudo__hora-fim { margin: 0; text-align: center; font: 600 14px var(--fc-ui); color: #e9dcc0; }
+.fc-estudo__hora-fim b { color: #ffe7a0; }
+
+/* -------- "Seguir cronograma" no alto da Biblioteca */
+.fc-crono-estudo { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px 16px; padding: 14px 16px; border-radius: 16px; color: #fff3d6;
+  background: radial-gradient(ellipse at 0% 0%, rgba(233, 185, 85, .32), transparent 60%), linear-gradient(#33241a, #18110b);
+  box-shadow: 0 0 0 2px #120a04, inset 0 0 0 1.5px #e9b955, 0 0 22px rgba(233, 185, 85, .25), 0 12px 24px rgba(0, 0, 0, .5); }
+.fc-crono-estudo__icone { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #6a4a20, #150d08); box-shadow: 0 0 0 2px var(--fc-ouro), 0 0 0 3px #120a04, 0 0 16px rgba(233, 185, 85, .5); }
+.fc-modal .fc-crono-estudo__icone .fc-sprite { width: 40px; height: 40px; }
+.fc-crono-estudo__texto { display: grid; gap: 3px; min-width: 0; }
+.fc-crono-estudo h3 { margin: 0; font: 900 18px/1.2 var(--fc-titulo); letter-spacing: .04em; color: var(--fc-ouro); text-shadow: 0 2px 0 #000; }
+.fc-crono-estudo p { margin: 0; font: 500 14.5px/1.4 var(--fc-ui); color: #e9dcc0; }
+.fc-crono-estudo strong { color: #fff3d6; }
+.fc-crono-estudo__ver { justify-self: start; font: 700 13px var(--fc-ui); color: #ffd98a !important; }
+.fc-crono-estudo__botao { min-width: 170px; }
+@media (max-width: 640px) {
+  .fc-crono-estudo { grid-template-columns: auto minmax(0, 1fr); padding: 12px; }
+  .fc-crono-estudo__icone { width: 46px; height: 46px; }
+  .fc-modal .fc-crono-estudo__icone .fc-sprite { width: 32px; height: 32px; }
+  .fc-crono-estudo__botao { grid-column: 1 / -1; width: 100%; min-height: 54px; }
+}
+
+/* -------- fim da sessão do cronograma */
+.fc-fim-crono { display: grid; gap: 8px; justify-items: center; padding: 12px; border-radius: 12px; background: rgba(0, 0, 0, .3); box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .35); text-align: center; }
+.fc-fim-crono p { margin: 0; font: 500 14.5px/1.4 var(--fc-ui); color: #e9dcc0; }
+.fc-fim-crono b { color: #ffe7a0; }
+.fc-fim-crono__amanha { font-size: 13.5px !important; color: #d8c8a8 !important; }
+
+/* -------- fluxo responder, virar, avaliar */
+.fc-estudo--validando .fc-estudo__mesa { cursor: progress; }
+.fc-estudo--validando .fc-estudo__botoes { opacity: .7; transition: opacity .2s; }
+.fc-estudo__dica-tecla { margin-left: 6px; font: 600 12px var(--fc-ui); opacity: .75; }
+@media (pointer: coarse) { .fc-estudo__dica-tecla { display: none; } }
+/* toque: sem atraso de clique duplo e sem seleção acidental de texto nos botões */
+.fc-estudo button, .fc-crono-estudo button, .fc-categoria { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.fc-botao-aval, .fc-alternativa, .fc-principal { user-select: none; -webkit-user-select: none; }
+/* a figura reserva o espaço antes de chegar (sem pulo de layout) e aparece com um esmaecimento curto */
+.fc-estudo .fc-carta__imagem img { background: rgba(0, 0, 0, .25); }
+@media (max-width: 640px) {
+  .fc-estudo__hora small { display: none; }
+  .fc-estudo__hora b { font-size: 12px; white-space: nowrap; }
+  .fc-estudo__hora { gap: 6px; }
+  .fc-estudo__hora-pontos { grid-template-columns: repeat(5, 6px); gap: 2px; }
+  .fc-estudo__hora-pontos i { width: 6px; height: 6px; }
+  /* botões de avaliar com alvo grande e fixos no rodapé do polegar */
+  .fc-botao-aval { min-height: 64px; }
+  .fc-estudo__so-virar { min-height: 44px; }
+}
+@media (max-width: 480px) { .fc-estudo__hora b { display: none; } .fc-estudo__hora { flex: none; } }
+@media (max-width: 640px) { .fc-estudo__dica-tecla { display: none; } }
+@media (max-height: 500px) { .fc-estudo__hora small { display: none; } .fc-estudo__hora b { font-size: 12px; } }

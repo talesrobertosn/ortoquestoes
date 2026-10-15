@@ -16,6 +16,9 @@ import {
   flashcardsUnicos, RECORDES_VAZIOS, somPreferido, type Bestiario, type Recordes, type SomEscolhido,
 } from '../progresso'
 import { Cenario } from './Cenario'
+import { CHAVE_PLANO, calcularCronograma, migrarPlano, rotaDoCronograma } from '../cronograma'
+import { carregarAcervo } from '../dados/acervo'
+import { guardarRotaDoCronograma } from '../rotaCronograma'
 import { Ator } from './Hud'
 import { ModalJogo } from './ModalJogo'
 import { Sprite } from './Sprite'
@@ -73,6 +76,13 @@ export function Entrada() {
     definirConfirmarRecomeco(false)
     ir('/flashcards/cripta')
   }
+  /** Cripta com o cronograma: os próximos flashcards vêm do assunto de hoje (rota do Mapa do especialista). */
+  const jogarCronograma = async () => {
+    const cartas = await carregarAcervo()
+    const rota = rotaDoCronograma(calcularCronograma(migrarPlano(ler<unknown>(CHAVE_PLANO, null)), cartas, ler(CHAVE_REGISTROS, {})))
+    if (rota) guardarRotaDoCronograma(rota)
+    ir('/flashcards/cripta')
+  }
   const comprar = (id: (typeof TALENTOS)[number]['id']) => {
     const novo = comprarTalento(altar, id)
     if (novo === altar) return
@@ -106,11 +116,16 @@ export function Entrada() {
               <span className="fc-modo__dados">{rec.andarMaximo ? <>Recorde: <b>andar {rec.andarMaximo}</b></> : 'Sem recorde ainda'}</span>
               <span className="fc-modo__acao">{criptaViva ? `Continuar no andar ${criptaViva.andar}` : `Entrar na Cripta`}</span>
             </button>
+            <button type="button" className="fc-recomecar fc-recomecar--crono" onClick={() => { tocar('selecao'); void jogarCronograma() }} title="Os próximos flashcards da Cripta vêm do assunto de hoje do seu cronograma">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 4h11l3 3v13H5zM8 10h8M8 14h8M8 18h5" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              Jogar o assunto de hoje
+            </button>
             {criptaViva && <button type="button" className="fc-recomecar" onClick={() => { tocar('selecao'); definirConfirmarRecomeco(true) }}>
               <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5" stroke="currentColor" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
               Começar do zero
             </button>}
             </div>
+            <div className="fc-modo-coluna">
             <button type="button" className="fc-modo fc-modo--biblioteca" onClick={() => ir('/flashcards/biblioteca')} onPointerEnter={() => tocar('hover')}>
               <span className="fc-modo__icone"><Sprite nome="livro" /></span>
               <strong>Biblioteca de Flashcards</strong>
@@ -118,6 +133,11 @@ export function Entrada() {
               <span className="fc-modo__dados"><b>{unicos.toLocaleString('pt-BR')}</b> flashcards únicos respondidos</span>
               <span className="fc-modo__acao">Treinar flashcards</span>
             </button>
+            <button type="button" className="fc-recomecar fc-recomecar--crono" onClick={() => ir('/flashcards/biblioteca?categoria=plano')}>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7M17 15l2 2 4-4" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              Seguir cronograma
+            </button>
+            </div>
           </div>
 
           <div className="fc-entrada__extras">
