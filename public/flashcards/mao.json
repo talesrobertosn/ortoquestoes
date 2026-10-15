@@ -22996,6 +22996,34 @@
    "fonte": "27827d2dbd30"
   },
   {
+   "id": "fc-mao-1264-co1",
+   "questao": "mao-1264",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além da pronação, qual outra ação tem o pronador redondo?",
+   "resposta": "flexão do antebraço",
+   "explicacao": "O pronador redondo **prona e flete o antebraço**; é inervado pelo **mediano**, que passa entre suas cabeças.",
+   "opcoes": [
+    "flexão do antebraço"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "0c6ac1068c14",
+   "origem": "autoral",
+   "trecho": "Sua ação combina pronação e flexão do antebraço.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-mao-1264-q",
    "questao": "mao-1264",
    "area": "Mão e punho",
@@ -23027,6 +23055,62 @@
     "largura": 845,
     "altura": 1862
    },
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1265-co1",
+   "questao": "mao-1265",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O pronador quadrado se insere na face anterior do rádio distal. De onde ele se origina?",
+   "resposta": "ulna distal",
+   "explicacao": "**Origem na região medial da ulna distal**, fibras transversais, inserção no rádio distal. Inervação: **interósseo anterior**.",
+   "opcoes": [
+    "ulna distal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "348bd3491590",
+   "origem": "autoral",
+   "trecho": "Origina-se na região medial da ulna distal e se insere na face anterior do rádio distal.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1265-pc1",
+   "questao": "mao-1265",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O pronador redondo é inervado diretamente pelo mediano. Qual nervo inerva o pronador quadrado?",
+   "resposta": "interósseo anterior",
+   "explicacao": "**Interósseo anterior** (ramo do mediano), que também inerva o flexor longo do polegar e a porção radial do flexor profundo.",
+   "opcoes": [
+    "interósseo anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "348bd3491590",
+   "origem": "autoral",
+   "trecho": "Recebe o nervo interósseo anterior e participa da pronação.",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
@@ -23064,6 +23148,35 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-mao-1266-pc1",
+   "questao": "mao-1266",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O flexor profundo dos dedos chega às falanges distais. Em quais falanges terminam os tendões do flexor superficial dos dedos?",
+   "resposta": "falanges médias",
+   "explicacao": "**Falanges médias**, sem incluir o polegar: flexão das **interfalângicas proximais**.",
+   "opcoes": [
+    "falanges médias",
+    "falanges distais"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "69cfdfe2945e",
+   "origem": "autoral",
+   "trecho": "Seus tendões terminam nas falanges médias dos dedos, sem incluir o polegar",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-mao-1266-q",
    "questao": "mao-1266",
    "area": "Mão e punho",
@@ -23095,6 +23208,62 @@
     "largura": 1024,
     "altura": 1536
    },
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1267-co1",
+   "questao": "mao-1267",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "De onde se origina o flexor profundo dos dedos?",
+   "resposta": "ulna anterior e na membrana interóssea",
+   "explicacao": "**Ulna anterior e membrana interóssea**; fica no plano profundo, medial ao flexor longo do polegar.",
+   "opcoes": [
+    "ulna anterior e na membrana interóssea"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "ef7cf1e02c1e",
+   "origem": "autoral",
+   "trecho": "O flexor profundo dos dedos nasce na ulna anterior e na membrana interóssea.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1267-co2",
+   "questao": "mao-1267",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Entre quais nervos se divide a inervação do flexor profundo dos dedos?",
+   "resposta": "interósseo anterior e ulnar",
+   "explicacao": "**Interósseo anterior** (indicador e médio) e **ulnar** (anular e mínimo).",
+   "opcoes": [
+    "interósseo anterior e ulnar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "ef7cf1e02c1e",
+   "origem": "autoral",
+   "trecho": "O profundo apresenta ainda distribuição nervosa dividida entre interósseo anterior e ulnar.",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
@@ -23132,6 +23301,34 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-mao-1268-co1",
+   "questao": "mao-1268",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo inerva o flexor longo do polegar, na porção radial do plano anterior profundo?",
+   "resposta": "interósseo anterior",
+   "explicacao": "**Interósseo anterior.** O tendão vai à falange distal do polegar e flete a interfalângica.",
+   "opcoes": [
+    "interósseo anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "13f7388e81da",
+   "origem": "autoral",
+   "trecho": "Sua inervação vem do interósseo anterior.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-mao-1268-q",
    "questao": "mao-1268",
    "area": "Mão e punho",
@@ -23163,6 +23360,34 @@
     "largura": 811,
     "altura": 1938
    },
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1269-pc1",
+   "questao": "mao-1269",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O braquiorradial, inervado pelo radial, flete o antebraço. Qual músculo do mesmo nervo faz a extensão do antebraço?",
+   "resposta": "ancôneo",
+   "explicacao": "O **ancôneo** estende o antebraço. Inervação radial não significa necessariamente extensão.",
+   "opcoes": [
+    "ancôneo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "742914623f0d",
+   "origem": "autoral",
+   "trecho": "O ancôneo atua na extensão do antebraço",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
@@ -23234,6 +23459,34 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-mao-1271-co1",
+   "questao": "mao-1271",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se origina o extensor radial curto do carpo?",
+   "resposta": "epicôndilo lateral",
+   "explicacao": "**Epicôndilo lateral**, com inserção na base do 3º metacarpal. O longo nasce mais acima, na região lateral distal do úmero.",
+   "opcoes": [
+    "epicôndilo lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "e0f1e96200ac",
+   "origem": "autoral",
+   "trecho": "O extensor radial curto do carpo nasce no epicôndilo lateral e termina na base do terceiro metacarpal.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-mao-1271-q",
    "questao": "mao-1271",
    "area": "Mão e punho",
@@ -23265,6 +23518,62 @@
     "largura": 828,
     "altura": 1899
    },
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1272-co1",
+   "questao": "mao-1272",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se insere o extensor ulnar do carpo?",
+   "resposta": "base do quinto metacarpal",
+   "explicacao": "**Base do 5º metacarpal.** Estende e desvia ulnarmente a mão; inervação pelo **interósseo posterior**.",
+   "opcoes": [
+    "base do quinto metacarpal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "25fdc4a52e7d",
+   "origem": "autoral",
+   "trecho": "termina na base do quinto metacarpal e atua na extensão e adução, ou desvio ulnar, da mão",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1272-pc1",
+   "questao": "mao-1272",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O extensor ulnar do carpo é inervado pelo interósseo posterior. E o flexor ulnar do carpo, qual nervo recebe?",
+   "resposta": "nervo ulnar",
+   "explicacao": "O **flexor ulnar do carpo** é anterior, flete o punho e recebe o **nervo ulnar**. O nome \"ulnar\" do extensor descreve posição, não nervo.",
+   "opcoes": [
+    "nervo ulnar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "25fdc4a52e7d",
+   "origem": "autoral",
+   "trecho": "fica anteriormente, flexiona o punho e recebe o nervo ulnar",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
@@ -23302,6 +23611,91 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-mao-1273-co1",
+   "questao": "mao-1273",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se origina o extensor longo do polegar?",
+   "resposta": "face posterior da ulna",
+   "explicacao": "**Face posterior da ulna**; muda de direção no **tubérculo de Lister** e se insere na base da falange distal do polegar.",
+   "opcoes": [
+    "face posterior da ulna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "008fd11772c8",
+   "origem": "autoral",
+   "trecho": "O extensor longo do polegar nasce na face posterior da ulna e se insere na base da falange distal do polegar.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1273-co2",
+   "questao": "mao-1273",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se insere o abdutor longo do polegar?",
+   "resposta": "base do primeiro metacarpal",
+   "explicacao": "**Base do 1º metacarpal.** Nasce posteriormente no rádio e na ulna; divide o 1º compartimento com o extensor curto.",
+   "opcoes": [
+    "base do primeiro metacarpal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "008fd11772c8",
+   "origem": "autoral",
+   "trecho": "O abdutor longo nasce posteriormente no rádio e na ulna e termina na base do primeiro metacarpal.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1273-pc1",
+   "questao": "mao-1273",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O extensor longo do polegar termina na falange distal. Onde termina o extensor curto do polegar?",
+   "resposta": "falange proximal",
+   "explicacao": "**Extensor curto: nasce no rádio e termina na falange proximal.** Abdutor longo: base do 1º metacarpal.",
+   "opcoes": [
+    "falange proximal",
+    "falange distal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "008fd11772c8",
+   "origem": "autoral",
+   "trecho": "O extensor curto nasce no rádio e termina na falange proximal.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-mao-1273-q",
    "questao": "mao-1273",
    "area": "Mão e punho",
@@ -23333,6 +23727,62 @@
     "largura": 770,
     "altura": 2043
    },
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1274-co1",
+   "questao": "mao-1274",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a arcada proximal do supinador, referência do trajeto do ramo profundo do radial?",
+   "resposta": "arcada de FROHSE",
+   "explicacao": "**Arcada de Frohse.** O ramo profundo atravessa o supinador e continua como **interósseo posterior**.",
+   "opcoes": [
+    "arcada de FROHSE"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "db6949f53c8b",
+   "origem": "autoral",
+   "trecho": "A arcada proximal do supinador é a arcada de FROHSE, uma referência do trajeto profundo.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1274-co2",
+   "questao": "mao-1274",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ramo profundo do radial atravessa o supinador. Sob qual músculo segue o ramo superficial do radial?",
+   "resposta": "braquiorradial",
+   "explicacao": "O **ramo superficial (sensitivo)** desce **sob o braquiorradial**, lateral à artéria radial.",
+   "opcoes": [
+    "braquiorradial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "db6949f53c8b",
+   "origem": "autoral",
+   "trecho": "o superficial segue sob o braquiorradial",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
@@ -23370,6 +23820,62 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-mao-1275-co1",
+   "questao": "mao-1275",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O nervo interósseo anterior desce junto à membrana interóssea acompanhado de qual artéria?",
+   "resposta": "artéria interóssea anterior",
+   "explicacao": "Desce com a **artéria interóssea anterior**, entre o flexor longo do polegar e o flexor profundo dos dedos.",
+   "opcoes": [
+    "artéria interóssea anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "fe62670911f2",
+   "origem": "autoral",
+   "trecho": "Desce com a artéria interóssea anterior, entre flexor longo do polegar e flexor profundo dos dedos, próximo à membrana interóssea.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1275-co2",
+   "questao": "mao-1275",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No antebraço, em que plano corre o nervo ulnar em relação aos flexores dos dedos?",
+   "resposta": "sobre o profundo dos dedos, sob o superficial",
+   "explicacao": "**Sobre o flexor profundo e sob o superficial**, acompanhado da artéria ulnar.",
+   "opcoes": [
+    "sobre o profundo dos dedos, sob o superficial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "fe62670911f2",
+   "origem": "autoral",
+   "trecho": "O ulnar percorre um plano sobre o profundo dos dedos, sob o superficial.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-mao-1275-q",
    "questao": "mao-1275",
    "area": "Mão e punho",
@@ -23395,6 +23901,35 @@
    "prova": null,
    "ano": null,
    "fonte": "fe62670911f2",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1276-co1",
+   "questao": "mao-1276",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No lado ulnar do antebraço distal, o nervo ulnar fica em que posição em relação à artéria ulnar?",
+   "resposta": "medial",
+   "explicacao": "**Nervo ulnar medial à artéria ulnar.** No lado radial, a artéria radial é lateral ao tendão do flexor radial do carpo.",
+   "opcoes": [
+    "medial",
+    "lateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "5e9e23474b95",
+   "origem": "autoral",
+   "trecho": "No lado ulnar, o nervo ulnar fica medial à artéria ulnar.",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
@@ -23429,6 +23964,36 @@
     "largura": 845,
     "altura": 1860
    },
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-mao-1277-cl1",
+   "questao": "mao-1277",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O compartimento móvel (coxim móvel) do antebraço reúne o braquiorradial, o extensor radial longo do carpo e qual outro músculo?",
+   "resposta": "extensor radial curto do carpo",
+   "explicacao": "**Coxim móvel:** braquiorradial, ERLC e **ERCC**. É uma classificação topográfica: o braquiorradial flete o antebraço e os radiais estendem a mão.",
+   "opcoes": [
+    "extensor radial curto do carpo",
+    "extensor dos dedos",
+    "supinador"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "47eaa65d9517",
+   "origem": "autoral",
+   "trecho": "O compartimento móvel, também chamado coxim móvel, reúne braquiorradial, extensor radial longo e extensor radial curto do carpo.",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
