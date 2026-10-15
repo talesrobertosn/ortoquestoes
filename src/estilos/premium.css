@@ -817,7 +817,6 @@
 /* ==========================================================================
    Painel do administrador
    ========================================================================== */
-@keyframes adm-pulso { 50% { box-shadow: 0 0 0 5px color-mix(in srgb, #22b573 10%, transparent); } }
 
 /* ---------- Aviso do topo do site (escrito no painel) ---------------- */
 .aviso-site { border-bottom: 1px solid color-mix(in srgb, var(--verdete) 25%, var(--traco)); background: var(--verdete-veu); color: var(--verdete-tinta); }
