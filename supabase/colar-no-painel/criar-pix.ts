@@ -88,6 +88,7 @@ async function consultarPixDoUsuario(idUsuario, idPedido) {
 }
 
 // supabase/functions/criar-pix/index.ts
+var VERSOES_CONDICOES_PIX = ["2026-10-16", "2026-10-01"];
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: cors(req) });
   if (req.method !== "POST") return json({ erro: "metodo_invalido" }, 405, req);
@@ -109,7 +110,7 @@ Deno.serve(async (req) => {
     }
     const plano = body.plano && PLANOS_PIX[body.plano];
     if (!plano) return json({ erro: "plano_invalido" }, 400, req);
-    if (body.aceite_confirmado !== true || body.aceite_termos_versao !== "2026-10-01") return json({ erro: "Atualize a p\xE1gina e aceite as condi\xE7\xF5es do pagamento por Pix." }, 400, req);
+    if (body.aceite_confirmado !== true || !VERSOES_CONDICOES_PIX.includes(body.aceite_termos_versao ?? "")) return json({ erro: "Atualize a p\xE1gina e aceite as condi\xE7\xF5es do pagamento por Pix." }, 400, req);
     if (typeof body.cpf !== "string" || !cpfValido(body.cpf)) return json({ erro: "Informe um CPF v\xE1lido para o pagamento." }, 400, req);
     const email = ambiente === "teste" ? Deno.env.get("MERCADO_PAGO_PAYER_EMAIL_TESTE") : usuario.email;
     if (!email) return json({ erro: "checkout_nao_configurado" }, 503, req);

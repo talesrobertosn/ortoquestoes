@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { User } from '@supabase/auth-js'
 import { chave, supabase, url, type ClienteSupabase } from './supabase'
-import { dadosAceiteTermos, VERSAO_TERMOS } from './termos'
+import { dadosAceiteTermos } from './termos'
 import { dadosOrigem } from './origem'
 import { eventoMeta } from './consentimento'
 import { rotaDe } from '../util/rotas'
@@ -72,8 +72,8 @@ function lerPedido(): Pedido | null {
 }
 
 /**
- * Depois da volta do Google: grava o aceite dos Termos (o botão avisa que
- * continuar é concordar com eles) e aproveita o nome que o Google entrega para
+ * Depois da volta do Google: grava o aceite dos Termos na primeira entrada (o
+ * botão avisa que continuar é concordar com eles) e aproveita o nome que o Google entrega para
  * o perfil, o ranking e os e-mails. Devolve a rota para onde levar a pessoa.
  */
 export function concluirGoogle(cliente: ClienteSupabase, usuario: User | null): string {
@@ -97,7 +97,10 @@ async function completarPerfil(cliente: ClienteSupabase, usuario: User) {
     const sobrenome = texto(m.family_name) || partes.slice(1).join(' ')
     if (sobrenome) dados.sobrenome = sobrenome
   }
-  if (m.termos_versao !== VERSAO_TERMOS) Object.assign(dados, dadosAceiteTermos())
+  // Primeiro acesso pelo Google: o botão avisa que continuar é concordar com os Termos.
+  // Quem já tinha aceitado uma versão anterior não tem a nova gravada em silêncio: vê o
+  // aviso de Termos atualizados (AvisoTermos), com o resumo do que mudou, e concorda ali.
+  if (!m.termos_versao) Object.assign(dados, dadosAceiteTermos())
   // Conta nova pelo Google (criada agora há pouco): registra a origem e conta o cadastro.
   // Contas antigas não ganham origem, para não parecerem vindas do anúncio de hoje.
   const nova = Date.now() - Date.parse(usuario.created_at ?? '') < 86_400_000
