@@ -25,3 +25,11 @@ Documentação oficial consultada em 01/10/2026:
 - https://www.mercadopago.com.br/developers/pt/docs/checkout-pro-preferences/additional-content/notifications/webhooks
 
 O ticket hospedado pelo Mercado Pago exibe QR Code e Pix Copia e Cola. A validade usada é 24 horas. A implementação não utiliza Pix Automático.
+
+## QR Code na própria página (16/10/2026)
+
+`criar-pix` devolve também `qr_code` (Pix Copia e Cola) e `qr_code_base64` (imagem do QR), opcionais e
+validados, tirados de `point_of_interaction.transaction_data`. A janela de pagamento mostra o QR, o código
+e o botão "Copiar código Pix"; sem esses campos (função antiga ainda publicada), mostra o link do Mercado
+Pago como antes. Arquivo para colar no painel: `supabase/colar-no-painel/criar-pix.ts`. Teste de ponta a
+ponta com Supabase e Mercado Pago simulados: `npm run test:compra`.

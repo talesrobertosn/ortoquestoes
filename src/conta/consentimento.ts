@@ -65,7 +65,7 @@ export function iniciarPixel() {
 }
 
 /** Evento padrão do Meta (cadastro, início de compra). Só sai com o consentimento dado. */
-export function eventoMeta(nome: 'CompleteRegistration' | 'InitiateCheckout', dados?: Record<string, unknown>) {
+export function eventoMeta(nome: 'CompleteRegistration' | 'AddToCart' | 'InitiateCheckout', dados?: Record<string, unknown>) {
   if (!PIXEL_META || lerConsentimento() !== 'aceito' || !window.fbq) return
   window.fbq('track', nome, dados)
 }
