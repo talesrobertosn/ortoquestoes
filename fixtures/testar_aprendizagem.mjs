@@ -57,6 +57,17 @@ try {
   assert.equal(est.periodo.diasAtivos, 1); assert.equal(est.desde, '2026-10-13')
   assert.equal(est.pendentes, 2) // c3 (errei) e c1 (errou na Cripta)
 
+  // Ideia 81: o baralho de demonstração usa só as áreas padrão do acervo (nada de "Trauma" ou "Anatomia" soltas em Meu desempenho).
+  const { readFileSync } = await import('node:fs')
+  const indice = JSON.parse(readFileSync('public/flashcards/indice.json', 'utf8'))
+  for (const c of cartas) {
+    assert.ok(indice.areas[c.areaId], `área fora do padrão no baralho de demonstração: ${c.id} (${c.areaId ?? c.area})`)
+    assert.equal(c.area, indice.areas[c.areaId].nome, `nome da área de ${c.id}`)
+  }
+  const nomesIndice = Object.fromEntries(Object.entries(indice.areas).map(([id, a]) => [id, a.nome]))
+  const areasDesempenho = m.calcularEstatisticas(cartas, nomesIndice, 30, t0 + 2000).porArea
+  assert.ok(areasDesempenho.every((a) => indice.areas[a.area]), 'Meu desempenho com área fora do acervo')
+
   // Cronograma (sequência por incidência, 15/10/2026; detalhes em testar_cronograma_sequencia_flashcards.mjs):
   // sem plano usa o sugerido, revisões vencidas vêm antes e o plano termina quando tudo foi visto.
   const regs = m.ler('flashcards:registros', {})

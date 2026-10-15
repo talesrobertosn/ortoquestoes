@@ -16,13 +16,8 @@ import type { Cenario } from '../motor/bestiario'
 import { celula, escalaPixel, pintarMesa } from './pintura'
 import { fbm, ruido } from './texturas'
 
-export type Tabuleiro = 'mesa' | 'chao' | 'plataforma'
-
-export const TABULEIRO: Record<Cenario, Tabuleiro> = {
-  campo: 'chao', jardim: 'chao', coliseu: 'chao', treino: 'chao', templo: 'chao', caverna: 'chao',
-  masmorra: 'mesa', salao: 'mesa', forja: 'mesa', catacumba: 'mesa', arquivo: 'mesa', laboratorio: 'mesa',
-  torre: 'plataforma', passarela: 'plataforma', covil: 'plataforma',
-}
+import { TABULEIRO } from './ambiente'
+export { TABULEIRO, type Tabuleiro } from './ambiente'
 
 type Ctx = CanvasRenderingContext2D
 const BAYER = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map((v) => (v + 0.5) / 16)

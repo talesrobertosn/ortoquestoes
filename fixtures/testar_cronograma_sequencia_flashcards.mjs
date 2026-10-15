@@ -15,7 +15,7 @@ const pasta = await mkdtemp(join(tmpdir(), 'oq-crono-'))
 const arquivo = join(pasta, 'c.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/flashcards/cronograma'; export * from './src/flashcards/rotaCronograma'; export * from './src/flashcards/biblioteca/horas'; export { proximoRegistro } from './src/estado/revisao'`, resolveDir: process.cwd() },
+    stdin: { contents: `export * from './src/flashcards/cronograma'; export * from './src/flashcards/rotaCronograma'; export * from './src/flashcards/rotaNaTela'; export * from './src/flashcards/biblioteca/horas'; export { proximoRegistro } from './src/estado/revisao'`, resolveDir: process.cwd() },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' }, logLevel: 'error',
   })
   const m = await import(pathToFileURL(arquivo))
@@ -136,6 +136,27 @@ try {
 
   // Tempo: 20 flashcards ~ 10 min; 150 ~ 1h15.
   assert.equal(m.rotuloTempo(20), '~10 min'); assert.equal(m.rotuloTempo(150), '~1h15')
+
+  // Contador da rota na tela (16/10/2026): o flashcard da mesa conta enquanto está à vista.
+  {
+    const cartaDe = (id) => ({ area: id.split('-')[0], areaId: id.split('-')[0], subtemas: [] })
+    const motorCompra = (r) => (r.restam > 1 ? { ...r, restam: r.restam - 1 } : null)
+    // Mapa usado com um flashcard de outra área na mesa: o motor troca e já desconta (restam 9)
+    let r = { modo: 'so', area: 'mao', subtemas: [], restam: 9 }
+    const mem = m.memoriaRotaInicial(null, 'joelho-1')
+    let v = m.rotaNaTela(mem, r, 'mao-0', cartaDe)
+    assert.deepEqual([v.faltam, v.total], [10, 10])
+    for (let k = 1; k <= 9; k++) { r = motorCompra(r); v = m.rotaNaTela(mem, r, `mao-${k}`, cartaDe); assert.equal(v.faltam, 10 - k) }
+    assert.equal(r, null); assert.equal(v.faltam, 1)
+    assert.equal(m.rotaNaTela(mem, null, 'joelho-2', cartaDe), null)
+    // Mapa com o flashcard da mesa já na área: ele é o primeiro dos 10
+    const mem2 = m.memoriaRotaInicial(null, 'mao-9')
+    assert.equal(m.rotaNaTela(mem2, { modo: 'so', area: 'mao', subtemas: [], restam: 9 }, 'mao-9', cartaDe).faltam, 10)
+    // Assunto de hoje (rota da Entrada, sem desconto ainda): 10 a partir do próximo
+    const mem3 = m.memoriaRotaInicial({ modo: 'so', area: 'mao', subtemas: [], restam: 10 }, 'mao-1')
+    assert.equal(m.rotaNaTela(mem3, { modo: 'so', area: 'mao', subtemas: [], restam: 10 }, 'mao-1', cartaDe).faltam, 10)
+    assert.equal(m.rotaNaTela(mem3, { modo: 'so', area: 'mao', subtemas: [], restam: 9 }, 'mao-2', cartaDe).faltam, 10)
+  }
 
   console.log('cronograma dos flashcards (sequência): ok')
 } finally {

@@ -1890,6 +1890,35 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
  .fc-entrada__extras {gap:8px;}
  .fc-entrada .fc-extra {flex:1 1 130px;}
 }
+/* Entrada no computador (acabamento, 15/10/2026): os caminhos e os botões do cronograma cabem no pop-up
+   sem rolar em 1400×860 e 1280×720. Cartões em faixa (ícone e título lado a lado, dados e ação na mesma
+   linha), botões secundários lado a lado sob cada cartão e cabeçalho/palco que encolhem com a altura. */
+@media (min-width: 861px) {
+  .fc-entrada__miolo { width:min(1080px,100%); padding:clamp(16px,3.2vh,44px) 22px clamp(14px,2.4vh,26px); gap:clamp(8px,1.9vh,20px); }
+  .fc-entrada__cabeca { position:relative; z-index:1; } /* o penacho do herói passa por trás do texto, não por cima */
+  .fc-entrada__palco { position:relative; z-index:0; }
+  .fc-entrada__cabeca h1 { margin:8px 0 4px; font-size:clamp(32px,min(4.5vw,7vh),60px); }
+  .fc-entrada__cabeca p { font-size:clamp(16px,min(1.8vw,2.7vh),21px); }
+  .fc-modos { max-width:980px; }
+  .fc-entrada .fc-modo { grid-template-columns:auto minmax(0,1fr) auto; grid-template-areas:"icone titulo titulo" "texto texto texto" "dados dados acao"; align-items:center; column-gap:14px; row-gap:8px; padding:16px 18px; }
+  .fc-entrada .fc-modo__icone { grid-area:icone; width:52px; height:52px; }
+  .fc-modal .fc-entrada .fc-modo__icone .fc-sprite { width:38px; height:38px; }
+  .fc-entrada .fc-modo strong { grid-area:titulo; font-size:clamp(20px,1.9vw,25px); }
+  .fc-entrada .fc-modo small { grid-area:texto; font-size:16px; line-height:1.38; }
+  .fc-entrada .fc-modo__dados { grid-area:dados; font-size:15px; }
+  .fc-entrada .fc-modo__dados b { color:#2f4a36; }
+  .fc-entrada .fc-modo__acao { grid-area:acao; margin:0; white-space:nowrap; }
+  .fc-modo-coluna { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; }
+  .fc-modo-coluna > .fc-modo { flex:1 1 100%; }
+  .fc-entrada .fc-modos .fc-recomecar { padding:7px 15px; font-size:14.5px; }
+  .fc-entrada .fc-extra { min-height:48px; padding-block:6px; }
+}
+@media (min-width: 861px) and (min-height: 800px) { .fc-entrada__palco { margin-top:22px; } }
+@media (min-width: 861px) and (max-height: 780px) {
+  .fc-entrada__miolo { padding-top:14px; padding-bottom:12px; gap:10px; }
+  .fc-entrada__palco { zoom:.68; }
+  .fc-entrada__selo { padding:5px 13px; }
+}
 
 /* =====================================================   Rota de estudo (13/10/2026): poderes Mapa do especialista e Desvio de área.
    Janela para escolher a área (e subtemas, no Mapa) dos próximos 10 flashcards.
@@ -2257,12 +2286,25 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 /* Aura de fogo em volta do flashcard (AuraDeFogo.tsx): fogo em pixels grandes
    e, por baixo, o mesmo fogo borrado e somado, que faz a luz HD. */
 .fc-clima > .fc-aura { inset: 0; }
+/* O céu do janelão é o relógio da sessão (amanhecer → noite): a aura esmaece no alto da tela e
+   deixa a hora à vista; em volta do flashcard e no chão o fogo segue inteiro (15 e 16/10/2026).
+   No computador o janelão fica no alto; no celular em pé, logo abaixo do flashcard (faixa do meio),
+   e aí o fogo esmaece só nessa faixa. A luz borrada do fogo (o brilho) também foi baixada, porque era
+   ela, somada em "screen", que lavava a noite e o pôr do sol.
+   A Glória mantém os raios e o ouro, mas mais fracos no céu. */
+.fc-clima { --clima-mascara: linear-gradient(rgba(0, 0, 0, .06), rgba(0, 0, 0, .28) 26%, #000 50%); }
+.fc-clima > .fc-aura, .fc-clima--chama .fc-clima__veu { -webkit-mask: var(--clima-mascara); mask: var(--clima-mascara); }
+.fc-clima--gloria .fc-clima__veu { -webkit-mask: linear-gradient(rgba(0, 0, 0, .3), #000 55%); mask: linear-gradient(rgba(0, 0, 0, .3), #000 55%); }
+.fc-clima--gloria .fc-clima__raios { opacity: .6; }
+@media (orientation: portrait) and (max-width: 860px) {
+  .fc-clima { --clima-mascara: linear-gradient(#000, #000 30%, rgba(0, 0, 0, .22) 40%, rgba(0, 0, 0, .22) 58%, #000 76%); }
+}
 .fc-aura > * { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .fc-aura__fogo { image-rendering: pixelated; image-rendering: crisp-edges; animation: fc-aura-acende .8s ease-out both; }
-.fc-aura__brilho { filter: blur(18px) saturate(1.4); mix-blend-mode: screen; opacity: .8; animation: fc-aura-respira 1.6s ease-in-out infinite; }
-.fc-aura--nivel-3 .fc-aura__brilho, .fc-aura--nivel-4 .fc-aura__brilho { filter: blur(26px) saturate(1.5); opacity: .9; }
+.fc-aura__brilho { --aura-brilho: .55; filter: blur(18px) saturate(1.4); mix-blend-mode: screen; opacity: var(--aura-brilho); animation: fc-aura-respira 1.6s ease-in-out infinite; }
+.fc-aura--nivel-3 .fc-aura__brilho, .fc-aura--nivel-4 .fc-aura__brilho { --aura-brilho: .62; filter: blur(26px) saturate(1.5); }
 @keyframes fc-aura-acende { from { opacity: 0; transform: translateY(6%) scaleY(.7); transform-origin: 50% 100%; } }
-@keyframes fc-aura-respira { 50% { opacity: .7; } }
+@keyframes fc-aura-respira { 50% { opacity: calc(var(--aura-brilho, .8) * .85); } }
 .fc-aura__clarao { opacity: 0; mix-blend-mode: screen; background: radial-gradient(50% 50% at 50% 55%, var(--aura-luz, rgba(255, 190, 90, .85)), transparent 75%); }
 .fc-aura--ignicao .fc-aura__clarao { animation: fc-aura-clarao .9s ease-out; }
 @keyframes fc-aura-clarao { 0% { opacity: 0; } 12% { opacity: 1; } 100% { opacity: 0; } }

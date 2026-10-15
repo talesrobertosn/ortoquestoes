@@ -1,4 +1,4 @@
-import type { Clima } from './pintura'
+import type { Clima } from './ambiente'
 
 export const INTERVALO_CEU = 120_000
 /** Quatro etapas visuais: manhã, entardecer, noite e amanhecer. */

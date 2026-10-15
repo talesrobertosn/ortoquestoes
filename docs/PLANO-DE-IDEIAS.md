@@ -140,7 +140,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 79. [x] Bestiário antigo atualizado com as artes novas.
 80. [x] Contador da rota de estudo.
-81. [ ] Áreas do baralho de demonstração.
+81. [x] Áreas do baralho de demonstração (Trauma adulto e Quadril, como no acervo; 15/10/2026).
 82. [x] Emenda da faixa "sala" da música.
 83. [x] (T) Colar a parte 19 do SQL no Supabase.
 84. [x] PR #224 (abrir o jogo por cima do site, botão Menu, correção da barra no celular): trazer para a base.

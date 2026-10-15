@@ -1,5 +1,5 @@
 import { recurso } from '../../config'
-import type { Cena, Clima } from './pintura'
+import type { Cena, Clima } from './ambiente'
 
 const imagens = new Map<string, HTMLImageElement>()
 function imagem(nome: string) {

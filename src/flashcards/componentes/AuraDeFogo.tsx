@@ -1,8 +1,8 @@
 /**
  * Aura de fogo da Biblioteca (pedido do Tales, 14/10/2026): na sequência de
  * acertos o flashcard pega fogo como os personagens de anime quando liberam
- * poder. As chamas nascem num anel em volta do flashcard, sobem quase até o
- * topo da tela e se abrem para os lados; a cada nível o fogo cresce e muda de
+ * poder. As chamas nascem num anel em volta do flashcard, sobem acima dele
+ * (sem cobrir o céu do janelão, que mostra a hora) e se abrem para os lados; a cada nível o fogo cresce e muda de
  * cor (escarlate, azul, arcano e, na Glória, ouro).
  *
  * Estilo HD-2D: o fogo é pixel art (um campo de chamas calculado numa grade de
@@ -39,11 +39,13 @@ const BRASA: Record<TomAura, number[][]> = {
  * fogo no chão da tela.
  */
 const NIVEIS = [
-  { alcance: 0.1, subir: 2.1, vel: 16, brasas: 50, chao: 0 },
-  { alcance: 0.1, subir: 2.1, vel: 16, brasas: 50, chao: 0 },
-  { alcance: 0.13, subir: 2.4, vel: 20, brasas: 90, chao: 0.07 },
-  { alcance: 0.16, subir: 2.7, vel: 24, brasas: 130, chao: 0.11 },
-  { alcance: 0.19, subir: 3, vel: 26, brasas: 170, chao: 0.14 },
+  // Acabamento de 15/10/2026: as chamas sobem menos (antes 2,1 a 3) e a parte de cima da aura
+  // esmaece no CSS (.fc-clima > .fc-aura), para o céu do janelão mostrar a hora da Biblioteca.
+  { alcance: 0.1, subir: 1.5, vel: 16, brasas: 50, chao: 0 },
+  { alcance: 0.1, subir: 1.5, vel: 16, brasas: 50, chao: 0 },
+  { alcance: 0.13, subir: 1.7, vel: 20, brasas: 90, chao: 0.07 },
+  { alcance: 0.16, subir: 1.9, vel: 24, brasas: 130, chao: 0.11 },
+  { alcance: 0.19, subir: 2.1, vel: 26, brasas: 170, chao: 0.14 },
 ]
 /** Faixas de cor do fogo (pixel art: a cor muda em degraus, não em degradê). */
 const FAIXAS = 9

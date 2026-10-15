@@ -5,7 +5,7 @@ import { usarReducaoSistema } from './AparenciaFlashcards'
 import { ControleVolume, Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
-import { TABULEIRO } from '../efeitos/tabuleiros'
+import { TABULEIRO } from '../efeitos/ambiente'
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
@@ -25,6 +25,7 @@ import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } fro
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
 import { registrarEstudo } from '../aprendizagem'
 import { aplicarRotaDoCronograma } from '../rotaCronograma'
+import { memoriaRotaInicial, rotaNaTela, type MemoriaRota } from '../rotaNaTela'
 import { sairDoJogo } from '../fundo'
 import { contarSessaoTerminada } from '../opiniao'
 import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, QUEIMADURA, VENENO, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
@@ -36,9 +37,9 @@ import {
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
 import { Cartao, familiasDe } from './Cartao'
 import { ComChaves } from './Chaves'
-import { Cenario, TampoMesa } from './Cenario'
+import { Cenario, TampoMesa, carregarPintura } from './Cenario'
 import { precarregarCenario } from '../efeitos/cenariosPintados'
-import { climaDoAndar } from '../efeitos/pintura'
+import { climaDoAndar } from '../efeitos/ambiente'
 import { paisagemDaParada } from '../efeitos/paisagens'
 import { Ator, BarraVida, Encaixe, precarregarAtor, Reliquia, ReliquiasCompactas } from './Hud'
 import { Visualizador } from './Visualizador'
@@ -210,7 +211,9 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
     const jogo = FLASHCARDS_NO_SERVIDOR
       ? Promise.race([sincronizarJogo().catch(() => null), new Promise<null>((ok) => window.setTimeout(() => ok(null), 4000))])
       : Promise.resolve(null)
-    void Promise.all([carregarAcervo(), sincronia, carregarFaixas(), jogo]).then(([cartas, , faixas, r]) => {
+    // a pintura em código (mesa e cenas sem arte pintada) vem num pedaço à parte, em paralelo com o acervo
+    const pintura = carregarPintura().catch(() => null)
+    void Promise.all([carregarAcervo(), sincronia, carregarFaixas(), jogo, pintura]).then(([cartas, , faixas, r]) => {
       if (!vivo) return
       prepararMotor(cartas, faixas)
       // tomada uma vez (no modo estrito do React o efeito roda duas vezes)
@@ -227,7 +230,7 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
           <div className="fc-carregando__caixa">
             <span className="fc-carregando__baralho" aria-hidden="true"><i /><i /><i /></span>
             <strong>{modo === 'torre' ? 'Subindo a escadaria' : 'Descendo à Cripta'}</strong>
-            <small>Milhares de flashcards das provas reais</small>
+            <small>Milhares de flashcards das provas reais e dos simulados</small>
           </div>
         </div>
       </ModalJogo>
@@ -447,6 +450,14 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo, vinda }: { modo: Modo; abrirEs
   }, [])
 
   const carta = partida.atual ? motor.carta(partida.atual.id) : null
+  // Contador da rota (Mapa do especialista, Desvio de área, assunto de hoje): quantos ainda faltam
+  const memoriaRota = useRef<MemoriaRota>(memoriaRotaInicial(partida.rota, partida.atual?.id))
+  const rotaVisivel = useMemo(() => {
+    const r = rotaNaTela(memoriaRota.current, partida.rota, partida.atual?.id, (id) => { try { return motor.carta(id) } catch { return undefined } })
+    if (!r) return null
+    const nome = motor.areasDaRota().find((a) => a.area === r.area)?.nome ?? r.area
+    return { ...r, nome }
+  }, [partida.rota, partida.atual?.id])
   // família da carta da mesa: imagem, anatomia, revisão (errou da última vez) e duelo de chefe
   const familiasCarta = useMemo(() => {
     if (!carta) return []
@@ -1418,6 +1429,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo, vinda }: { modo: Modo; abrirEs
               <span className="fc-gema fc-gema--3" aria-hidden="true" /><span className="fc-gema fc-gema--4" aria-hidden="true" />
               <div className="fc-pilha fc-pilha--baralho" aria-label={`${partida.baralho.length} flashcards no baralho`}><span className="fc-costas" /><span className="fc-costas" /><span className="fc-costas" /><b>{partida.baralho.length}</b><small>Baralho</small></div>
               <div className="fc-pilha fc-pilha--descarte" aria-label={`${partida.descarte.length} no descarte`}>{partida.descarte.length > 0 && <><span className="fc-costas" /><span className="fc-costas" /></>}<b>{partida.descarte.length}</b><small>Descarte</small></div>
+              {rotaVisivel && (
+                <p className={`fc-rota-hud fc-rota-hud--${rotaVisivel.modo}`} role="status" aria-label={`Rota de estudo: ${rotaVisivel.modo === 'so' ? '' : 'sem '}${rotaVisivel.nome}, faltam ${rotaVisivel.faltam} de ${rotaVisivel.total} flashcards`}>
+                  <Sprite nome={rotaVisivel.modo === 'so' ? 'bussola' : 'pergaminho'} className="fc-sprite--icone" />
+                  <span className="fc-rota-hud__area">{rotaVisivel.modo === 'so' ? rotaVisivel.nome : `Sem ${rotaVisivel.nome}`}</span>
+                  <b>{rotaVisivel.faltam}</b><small>{rotaVisivel.faltam === 1 ? 'falta' : 'faltam'}</small>
+                </p>
+              )}
               <div className="fc-mesa__palco" ref={refCarta}>
                 {carta && partida.atual && (
                   <Cartao

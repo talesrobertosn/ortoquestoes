@@ -156,7 +156,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
       <header className="fc-biblioteca__cabeca">
         <div>
           <h2>Biblioteca de flashcards</h2>
-          <p>{cartas.length.toLocaleString('pt-BR')} flashcards das provas reais. Escolha o que revisar.</p>
+          <p><OrigemDoAcervo cartas={cartas} /> Escolha o que revisar.</p>
         </div>
         <button type="button" className="fc-botao-pequeno fc-biblioteca__mostrar" aria-expanded={filtrosAbertos} onClick={() => definirFiltrosAbertos((v) => !v)}>
           Filtros · {tamanho === 'pendentes' ? 'pendentes' : `${tamanho} por sessão`}{filtrosAtivos ? ` · ${filtrosAtivos} ativo${filtrosAtivos > 1 ? 's' : ''}` : ''}
@@ -196,6 +196,17 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
       </div>
     </div>
   )
+}
+
+/**
+ * Quantos flashcards há e de onde vêm (15/10/2026): o número sai do acervo carregado, e os que vêm
+ * de OrtoQuestões Simulados (`colecao: 'simulados'`) não são "das provas reais".
+ */
+function OrigemDoAcervo({ cartas }: { cartas: Flashcard[] }) {
+  const simulados = useMemo(() => cartas.filter((c) => c.colecao === 'simulados').length, [cartas])
+  const n = (x: number) => x.toLocaleString('pt-BR')
+  if (!simulados) return <>{n(cartas.length)} flashcards das questões comentadas das provas reais.</>
+  return <>{n(cartas.length)} flashcards das questões comentadas: {n(cartas.length - simulados)} das provas reais e {n(simulados)} dos OrtoQuestões Simulados.</>
 }
 
 /** "Seguir cronograma" no alto da Biblioteca: a sessão de hoje em um toque. */
@@ -360,6 +371,9 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
   const total = feitos.errei + feitos.hesitei + feitos.sabia
   // fim de sessão: conta para o convite de opinião do beta e manda o progresso para a conta
   useEffect(() => { if (acabou && total) { contarSessaoTerminada(); void sincronizarProgresso() } }, [acabou, total])
+  // foco no "Voltar" sem rolar o resumo (com autoFocus o título "Sessão concluída" ficava cortado no alto)
+  const voltarRef = useRef<HTMLButtonElement>(null)
+  useEffect(() => { if (acabou) voltarRef.current?.focus({ preventScroll: true }) }, [acabou])
   if (acabou) {
     return (
       <>
@@ -380,7 +394,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
           <p className="fc-janela__nota">Os que você errou voltam hoje; os que hesitou, em 3 dias; os que sabia, em 10.</p>
           <div className="fc-janela__botoes">
             <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_sessao')}>Enviar opinião</a>
-            <button type="button" className="fc-botao" onClick={aoTerminar} autoFocus>Voltar à biblioteca</button>
+            <button ref={voltarRef} type="button" className="fc-botao" onClick={aoTerminar}>Voltar à biblioteca</button>
           </div>
         </div>
       </div>
