@@ -56,8 +56,8 @@ interface PropsDegustacao {
   /** Frase curta sobre o que fica guardado, ex.: "Os outros 17 assuntos". */
   titulo: string
   texto?: ReactNode
-  /** Texto do botão; o destino é sempre a página de planos (ou entrar). */
-  acao?: string
+  /** Texto do botão; o destino é sempre a página de planos (ou entrar). null: sem botão (quando a página já tem o pedido). */
+  acao?: string | null
   children: ReactNode
   className?: string
 }
@@ -77,8 +77,8 @@ export function Degustacao({ titulo, texto, acao = 'Liberar com a assinatura', c
           <span className="dg__cadeado" aria-hidden="true"><Icone nome="cadeado" tamanho={18} /></span>
           <p className="dg__titulo">{titulo}</p>
           {texto && <div className="dg__texto">{texto}</div>}
-          <a className="botao botao--ouro" href={href(logado ? '/assinatura' : '/conta?modo=entrar')}>{logado ? acao : 'Entrar para ver mais'}</a>
-          {logado && carregado && !pagamentos_ativos && <small className="dg__nota">As assinaturas abrem em breve.</small>}
+          {acao !== null && <a className="botao botao--ouro" href={href(logado ? '/assinatura' : '/conta?modo=entrar')}>{logado ? acao : 'Entrar para ver mais'}</a>}
+          {acao !== null && logado && carregado && !pagamentos_ativos && <small className="dg__nota">As assinaturas abrem em breve.</small>}
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 /* Cronograma reformado (14/10/2026, docs/cronograma/PLANO.md): onde você está, hoje, amanhã,
    esta semana, depois e como você está indo. A cor diz a área; os estados são sempre os mesmos. */
-.cp { --cp-feito: var(--acerto); --cp-agora: #a87a1f; --cp-agora-veu: #fff7e2; --cp-marco: #f4cf7c; }
-:root[data-tema="escuro"] .cp { --cp-agora: #e8b440; --cp-agora-veu: #2d2614; }
-@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) .cp { --cp-agora: #e8b440; --cp-agora-veu: #2d2614; } }
+.cp { --cp-feito: var(--acerto); --cp-agora: #a87a1f; --cp-agora-veu: #fff7e2; --cp-marco: #f4cf7c; --cp-atrasado: #c25a12; }
+:root[data-tema="escuro"] .cp { --cp-agora: #e8b440; --cp-agora-veu: #2d2614; --cp-atrasado: #f0954a; }
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) .cp { --cp-agora: #e8b440; --cp-agora-veu: #2d2614; --cp-atrasado: #f0954a; } }
 
 .cp-bloco { display: grid; gap: 0.5rem; }
 .cp-rotulo { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin: 0.6rem 0.2rem 0; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--texto-2); }
@@ -140,16 +140,17 @@
 .cp-dia em { min-height: 0.9rem; font-style: normal; font-size: 0.62rem; font-weight: 750; color: var(--texto-2); }
 .cp-dia--feito em { color: var(--cp-feito); }
 .cp-dia--feito .cp-dia__num::after { content: ' ✓'; font-size: 0.7em; color: var(--cp-feito); }
-.cp-dia--perdido { opacity: 0.6; }
+.cp-dia--atrasado em { color: var(--cp-atrasado); font-weight: 750; }
 .cp-dia--antes { opacity: 0.45; }
-.cp-dia--perdido em { color: var(--erro); }
-.cp-dia--parcial em { color: var(--cp-agora); }
+.cp-dia--parcial em { color: var(--cp-atrasado); }
+.cp-dia--parcial .cp-dia__cor { opacity: 0.55; }
 .cp-dia--hoje { background: var(--cp-agora-veu); outline: 2px solid var(--cp-agora); outline-offset: -2px; }
 .cp-dia--hoje em { color: var(--cp-agora); }
 .cp-dia--folga { background: repeating-linear-gradient(135deg, var(--superficie-2) 0 5px, color-mix(in srgb, var(--traco) 70%, transparent) 5px 10px); }
 .cp-dia--adiantado em { color: var(--cp-feito); }
 .cp-dia--adiantado .cp-dia__cor { opacity: 0.45; }
-.cp-dia--mini .cp-dia__nome::after { content: ' ★'; color: var(--cp-agora); }
+.cp-dia--mini { outline: 2px dashed var(--cp-marco); outline-offset: -2px; }
+.cp-dia--hoje.cp-dia--mini { outline-color: var(--cp-agora); }
 .cp-legenda { display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; margin: 0; padding: 0; list-style: none; font-size: 0.72rem; font-weight: 650; color: var(--texto-2); }
 .cp-legenda li { display: inline-flex; align-items: center; gap: 0.3rem; }
 .cp-legenda i { width: 0.7rem; height: 0.7rem; border-radius: 3px; }
@@ -168,6 +169,7 @@
 .cp-depois__faixa { display: block; height: 0.5rem; margin-bottom: 0.35rem; border-radius: 4px; }
 .cp-depois__faixa--marco { background: repeating-linear-gradient(90deg, var(--cp-marco) 0 8px, color-mix(in srgb, var(--cp-marco) 30%, transparent) 8px 14px); }
 .cp-depois__faixa--prova { background: var(--cp-marco); }
+.cp-depois li.cp-depois__salto { padding: 0.1rem 0; color: var(--texto-2); line-height: 1; }
 .cp-depois li strong { font-size: 0.9rem; }
 .cp-depois__marco strong { color: var(--ouro-texto); }
 .cp-depois li small { display: block; margin-top: 0.1rem; font-size: 0.76rem; line-height: 1.35; color: var(--texto-2); }

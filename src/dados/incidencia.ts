@@ -113,7 +113,22 @@ export function nivelPorQuestao(indice: Indice): Map<string, Nivel> {
 const minusculo = (s: string) => s.toLocaleLowerCase('pt-BR')
 
 /** Questões válidas (sem cópias nem anuladas) de uma área, ou de um assunto dentro dela. */
+const cacheIds = new WeakMap<Indice, Map<string, string[]>>()
+
 export function idsDoFoco(indice: Indice, area: AreaIncidencia, foco?: Foco): string[] {
+  // O cronograma pergunta isso dezenas de vezes por cálculo (a cada tecla no
+  // formulário); varrer o acervo inteiro toda vez custava metade do tempo.
+  let porChave = cacheIds.get(indice)
+  if (!porChave) { porChave = new Map(); cacheIds.set(indice, porChave) }
+  const chave = `${area.slug}\u0000${area.subtema ?? ''}\u0000${foco ? (foco.noAcervo ?? foco.nome) : ''}`
+  const pronto = porChave.get(chave)
+  if (pronto) return pronto
+  const ids = varrerFoco(indice, area, foco)
+  porChave.set(chave, ids)
+  return ids
+}
+
+function varrerFoco(indice: Indice, area: AreaIncidencia, foco?: Foco): string[] {
   const tema = indice.temas.findIndex((t) => t.slug === area.slug)
   if (tema < 0) return []
   const exigidos = [area.subtema, foco ? (foco.noAcervo ?? foco.nome) : undefined].filter((s): s is string => !!s).map(minusculo)
