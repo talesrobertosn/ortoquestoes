@@ -1,21 +1,12 @@
 import { useState } from 'react'
 import { LIMITE_GRATIS_ATUAL } from '../config'
-import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia, LIMITES_HABILITADOS } from '../estado/limiteDiario'
+import { diasAte, proximaProva, RITMOS_CAPA as RITMOS } from '../dados/ritmos'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/componentes/AteAProva.css'
 
-/** Ritmos para escolher, com o tempo aproximado (cerca de 1,5 minuto por questão). */
-const RITMOS: Array<[number, string]> = [[10, '15 min'], [20, '30 min'], [30, '45 min'], [50, '1h15']]
-
-/** A próxima prova do calendário; sem data futura cadastrada, seis meses à frente. */
-function proximaProva(): string {
-  const hoje = chaveDia()
-  return DATAS_PROVA.find((d) => d > hoje) ?? chaveDia(Date.now() + 182 * 864e5)
-}
-const diasAte = (data: string) => Math.max(0, Math.round((Date.parse(`${data}T12:00:00Z`) - Date.parse(`${chaveDia()}T12:00:00Z`)) / 864e5))
 const numero = (n: number) => n.toLocaleString('pt-BR')
 
 /**
