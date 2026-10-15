@@ -7,7 +7,7 @@ import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { servicoConhecido } from './servicosConhecidos'
 import { usarConta } from '../../conta/ContextoConta'
 import { usarRpc } from './usarRpc'
-import { PLANOS_RECENTE_DIAS, indexarSinais, textoPlanos, viuPlanos, type SinalUsuario } from './sinais'
+import { PLANOS_RECENTE_DIAS, ROTULOS_CATEGORIA, categoriaPessoa, indexarSinais, textoPlanos, viuPlanos, type CategoriaPessoa, type SinalUsuario } from './sinais'
 
 export interface LinhaUsuario {
   id_usuario: string
@@ -111,10 +111,28 @@ const iniciais = (u: LinhaUsuario) => (u.nome ?? u.email ?? '?').split(/[\s@.]+/
 /** Cor fixa por pessoa, para reconhecer de relance. */
 const corDe = (id: string) => `hsl(${[...id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 360, 7)} 45% 42%)`
 const hojeDe = (u: LinhaUsuario) => u.respondidas_hoje ?? (ativoHoje(u) ? null : 0)
+const ORDEM_LEGENDA: CategoriaPessoa[] = ['assinante', 'comum', 'planos', 'admin']
+/** Legenda discreta das cores dos cartões. */
+function LegendaCores() {
+  return <ul className="adm-legenda-cores" aria-label="Cores dos cartões">
+    {ORDEM_LEGENDA.map(c => <li key={c}><i className={`adm-cor--${c}`} aria-hidden="true" />{ROTULOS_CATEGORIA[c]}</li>)}
+  </ul>
+}
 
-/** O que a pessoa está vendo agora, com link para a questão. */
-export function OQueVe({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao' | 'pagina_em'> }) {
-  if (!u.pagina) return <span className="adm-ve adm-ve--vazio">Página ainda não registrada</span>
+/**
+ * O que a pessoa está vendo agora, com link para a questão. `linha`: tudo numa linha só, cortado
+ * com reticências (cartões de tamanho fixo da lista e do "Ao vivo").
+ */
+export function OQueVe({ u, linha = false, prefixo }: { u: Pick<LinhaUsuario, 'pagina' | 'questao' | 'pagina_em'>; linha?: boolean; prefixo?: string }) {
+  if (!u.pagina) return <span className={'adm-ve adm-ve--vazio' + (linha ? ' adm-ve--linha' : '')}>{prefixo ? `${prefixo}: página` : 'Página'} ainda não registrada</span>
+  if (linha) {
+    const texto = `${prefixo ? `${prefixo}: ` : ''}${rotuloPagina(u.pagina)}`
+    return <span className="adm-ve adm-ve--linha" title={[texto, u.questao, u.pagina_em ? haQuantoTempo(u.pagina_em) : ''].filter(Boolean).join(' · ')}>
+      <Icone nome="olho" tamanho={14} />
+      <span className="adm-ve__texto">{texto}{u.questao && <> · <a href={href(`/questao/${u.questao}`)} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>{u.questao}</a></>}</span>
+      <small>{u.pagina_em ? haQuantoTempo(u.pagina_em) : ''}</small>
+    </span>
+  }
   return <span className="adm-ve">
     <Icone nome="olho" tamanho={14} />
     <span>{rotuloPagina(u.pagina)}{u.questao && <> · <a href={href(`/questao/${u.questao}`)} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>{u.questao}</a></>}</span>
@@ -204,16 +222,17 @@ export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'tod
       {totais.comDadosHoje && <div className="adm-kpi-u"><span>Questões hoje</span><strong>{totais.questoesHoje.toLocaleString('pt-BR')}</strong><small>{totais.tentativasHoje.toLocaleString('pt-BR')} tentativas</small></div>}
       <div className="adm-kpi-u"><span>Contas novas hoje</span><strong>{totais.novosHoje}</strong></div>
     </div>
+    <LegendaCores />
 
     {aoVivo.length > 0 && <section className="adm-aovivo" aria-labelledby="adm-aovivo-titulo">
       <header><h3 id="adm-aovivo-titulo"><span className="adm-online" aria-hidden="true" />Ao vivo</h3><small>atualiza sozinho a cada 30 s · última leitura {haQuantoTempo(new Date(atualizadoEm ?? Date.now()).toISOString())}</small></header>
-      <ul>{aoVivo.map(u => <li key={u.id_usuario}>
-        <button type="button" onClick={() => definirAberto(u)}>
+      <ul>{aoVivo.map(u => { const cat = categoriaPessoa(u, sinais.get(u.id_usuario)); return <li key={u.id_usuario}>
+        <button type="button" className={`adm-cor--${cat}`} onClick={() => definirAberto(u)} aria-label={`${u.nome ?? u.email ?? 'Usuário'} (${ROTULOS_CATEGORIA[cat].toLowerCase()}): abrir ficha`}>
           <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}</span>
-          <span className="adm-aovivo__quem"><strong>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong><OQueVe u={u} /></span>
+          <span className="adm-aovivo__quem"><strong title={u.nome ?? u.email ?? undefined}>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong><OQueVe u={u} linha /></span>
           <span className="adm-aovivo__hoje"><strong className="numerico">{u.respondidas_hoje ?? '—'}</strong><small>hoje</small></span>
         </button>
-      </li>)}</ul>
+      </li> })}</ul>
     </section>}
 
     <div className="adm-filtros" role="group" aria-label="Filtrar usuários">
@@ -243,24 +262,27 @@ export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'tod
         const hoje = hojeDe(u)
         const sinal = sinais.get(u.id_usuario)
         const planosRecente = viuPlanos(sinal, PLANOS_RECENTE_DIAS)
-        return <li key={u.id_usuario} className={'adm-usuario adm-usuario--clicavel' + (u.online ? ' adm-usuario--online' : '') + (planosRecente && !u.plano_vigente ? ' adm-usuario--planos' : '')} role="button" tabIndex={0} aria-label={`Abrir ficha de ${u.nome ?? u.email ?? 'usuário'}`}
+        const categoria = categoriaPessoa(u, sinal)
+        const perfil = [u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : null, u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ')
+        const extra = [u.provas ? `Estuda para ${u.provas.split(',').map(rotuloProva).join(', ')}` : null, sinal?.locais_trabalho ? `Também em ${sinal.locais_trabalho}` : null].filter(Boolean).join(' · ')
+        return <li key={u.id_usuario} className={`adm-usuario adm-usuario--clicavel adm-cor--${categoria}` + (u.online ? ' adm-usuario--online' : '')} role="button" tabIndex={0} aria-label={`Abrir ficha de ${u.nome ?? u.email ?? 'usuário'} (${ROTULOS_CATEGORIA[categoria].toLowerCase()})`}
           onClick={() => definirAberto(u)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); definirAberto(u) } }}>
           <span className="adm-usuario__lado">
             <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}{u.online && <span className="adm-online" />}</span>
             <span className={'adm-usuario__pos' + (i < 3 && ordem === 'respondidas' && filtro === 'todos' && !buscaAdiada ? ` adm-usuario__pos--${i + 1}` : '')}>{i + 1}º</span>
           </span>
+          {/* Linhas fixas, cada uma numa linha só: o cartão não muda de tamanho quando a pessoa entra, sai ou troca de página. */}
           <div className="adm-usuario__quem">
-            <strong>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong>
-            <span className="adm-usuario__email">{u.email ?? 'conta sem e-mail'}</span>
-            {u.online && <OQueVe u={u} />}
-            {(u.situacao || u.servico || u.cidade) && <span className="adm-usuario__servico"><Icone nome="bandeira" tamanho={13} />{[u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : null, u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ')}</span>}
-            {sinal?.locais_trabalho && <span className="adm-usuario__servico"><Icone nome="mapa" tamanho={13} />Também em {sinal.locais_trabalho}</span>}
-            {u.provas && <span className="adm-usuario__servico"><Icone nome="alvo" tamanho={13} />Estuda para {u.provas.split(',').map(rotuloProva).join(', ')}</span>}
+            <strong className="adm-reticencias" title={u.nome ?? undefined}>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong>
+            <span className="adm-usuario__email adm-reticencias" title={u.email ?? undefined}>{u.email ?? 'conta sem e-mail'}</span>
+            <OQueVe u={u} linha prefixo={u.online ? 'Agora' : 'Última página'} />
+            <span className={'adm-usuario__info adm-reticencias' + (perfil ? '' : ' adm-usuario__info--vazia')} title={perfil || undefined}><Icone nome="bandeira" tamanho={13} />{perfil || 'Perfil não preenchido'}</span>
+            <span className={'adm-usuario__info adm-reticencias' + (extra ? '' : ' adm-usuario__info--vazia')} title={extra || undefined}><Icone nome="alvo" tamanho={13} />{extra || 'Provas de interesse não informadas'}</span>
             <span className="adm-usuario__selos">
+              {u.administrador && <span className="adm-selo adm-selo--admin">Administrador</span>}
+              {u.plano_vigente && <span className="adm-selo adm-selo--ok">Assinante {PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}</span>}
               {sinal && viuPlanos(sinal) && <span className={'adm-selo adm-selo--planos' + (planosRecente && !u.plano_vigente ? '' : ' adm-selo--planos-antigo')} title={`Abriu a página de planos ${sinal.planos_vezes}× nos últimos 30 dias${sinal.condicoes_ultima ? '; também abriu as Condições da Assinatura' : ''}`}><Icone nome="estrela" tamanho={12} />{textoPlanos(sinal)}</span>}
               {sinal && sinal.flashcards_unicos > 0 && <span className="adm-selo adm-selo--neutro" title={`${sinal.flashcards_7d} flashcards na semana${sinal.cripta_andar ? ` · andar ${sinal.cripta_andar} no Torneio` : ''}`}>{sinal.flashcards_unicos.toLocaleString('pt-BR')} flashcards</span>}
-              {u.plano_vigente && <span className="adm-selo adm-selo--ok">Assinante {PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}</span>}
-              {u.administrador && <span className="adm-selo">Administrador</span>}
               <span className="adm-selo adm-selo--neutro" title={`Cadastro em ${data(u.criado_em)}`}>Conta criada {haQuanto(u.criado_em)}</span>
               {u.aparelho && <span className="adm-selo adm-selo--neutro" title="Último aparelho em que a conta entrou">{u.aparelho}</span>}
             </span>
@@ -274,7 +296,7 @@ export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'tod
             <div className="adm-barra" aria-hidden="true"><span style={{ width: `${(u.respondidas / maior) * 100}%` }} /></div>
             <dl className="adm-usuario__dados">
               <div><dt>{acertoReal(u) !== null ? 'Acerto real' : 'Acerto'}</dt><dd className={acerto === null ? '' : acerto >= 70 ? 'adm-bom' : acerto < 50 ? 'adm-ruim' : ''} title={acertoReal(u) !== null ? 'Na 1ª tentativa de cada questão' : undefined}>{acerto === null ? '—' : `${acerto}%`}</dd></div>
-              {acertoReal(u) !== null && <div><dt>Após revisão</dt><dd title="Última resposta de cada questão: erros acertados na revisão contam como acerto">{acertoAposRevisao(u) === null ? '—' : `${acertoAposRevisao(u)}%`}</dd></div>}
+              <div><dt>Após revisão</dt><dd title="Última resposta de cada questão: erros acertados na revisão contam como acerto">{acertoReal(u) === null || acertoAposRevisao(u) === null ? '—' : `${acertoAposRevisao(u)}%`}</dd></div>
               <div><dt>Visto pela última vez</dt><dd title={(u.visto_em ?? u.ultima_atividade) ? new Date((u.visto_em ?? u.ultima_atividade)!).toLocaleString('pt-BR') : undefined}>{u.online ? 'agora' : haQuantoTempo(u.visto_em ?? u.ultima_atividade)}</dd></div>
             </dl>
           </div>

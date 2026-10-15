@@ -58,6 +58,14 @@ try {
 
   // O filtro novo da lista de pessoas fica no endereço (F5 e links mantêm).
   assert.equal(m.urlDe(m.lerUrl(new URLSearchParams('aba=usuarios&filtro=planos'))), '/admin?aba=usuarios&filtro=planos')
+  // Cores dos cartões de Pessoas: administrador > assinante > viu os planos (30 dias) > o resto.
+  const agoraC = Date.now(), haDias = (d) => new Date(agoraC - d * 86_400_000).toISOString()
+  assert.equal(m.categoriaPessoa({ administrador: true, plano_vigente: 'anual' }, { planos_vezes: 2, planos_ultima: haDias(1) }), 'admin')
+  assert.equal(m.categoriaPessoa({ administrador: false, plano_vigente: 'mensal' }, { planos_vezes: 2, planos_ultima: haDias(1) }), 'assinante')
+  assert.equal(m.categoriaPessoa({ administrador: false, plano_vigente: null }, { planos_vezes: 1, planos_ultima: haDias(29) }), 'planos')
+  assert.equal(m.categoriaPessoa({ administrador: false, plano_vigente: null }, { planos_vezes: 1, planos_ultima: haDias(31) }), 'comum')
+  assert.equal(m.categoriaPessoa({ administrador: false, plano_vigente: null }, null), 'comum')
+  assert.deepEqual(Object.keys(m.ROTULOS_CATEGORIA).sort(), ['admin', 'assinante', 'comum', 'planos'])
   console.log('Perfil e ficha do painel: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })

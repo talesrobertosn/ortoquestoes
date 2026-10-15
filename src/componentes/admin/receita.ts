@@ -222,6 +222,43 @@ export function cobrancas(assinaturas: AssinaturaBase[], reais?: CobrancaReal[] 
   return lista.sort((x, y) => x.em.getTime() - y.em.getTime())
 }
 
+/**
+ * Cobranças que foram devolvidas, só para a lista de Cobranças mostrar (não entram em nenhum
+ * total: `cobrancas` já as tira). No Pix, os pedidos que o banco gravou como reembolsados; no
+ * cartão (e no Pix sem a RPC), a última cobrança de cada assinatura reembolsada. `reembolsadaEm`
+ * é quando o acesso foi encerrado, quando se sabe.
+ */
+export function cobrancasReembolsadas(assinaturas: AssinaturaBase[], reais?: CobrancaReal[] | null): Array<Cobranca & { reembolsadaEm: Date | null }> {
+  const lista: Array<Cobranca & { reembolsadaEm: Date | null }> = []
+  const quem = new Set(assinaturas.map(a => a.id_usuario))
+  const noCartao = new Map<string, CobrancaReal>()
+  const chave = (id: string, em: string) => `${id}|${new Date(em).getTime()}`
+  for (const r of reais ?? []) {
+    if (!quem.has(r.id_usuario) || !r.em) continue
+    if (r.meio !== 'pix') { noCartao.set(chave(r.id_usuario, r.em), r); continue }
+    if (r.situacao !== 'reembolsada') continue
+    const gravado = valorDe(r.valor)
+    const valor = gravado ?? precoDe(r.plano)?.total
+    if (!valor) continue
+    const dono = assinaturas.find(a => a.id_usuario === r.id_usuario && a.status === 'reembolsada' && meioDe(a) === 'pix')
+    lista.push({ em: new Date(r.em), valor, plano: r.plano, id_usuario: r.id_usuario, estimada: gravado === null, tipo: 'nova', meio: 'pix', id_pagamento: r.id_pagamento, reembolsadaEm: dono ? dataReembolso(dono) : null })
+  }
+  for (const a of assinaturas) {
+    const preco = precoDe(a.plano)
+    if (a.status !== 'reembolsada' || !a.ultima_cobranca_em || !preco) continue
+    const meio = meioDe(a)
+    if (meio === 'pix' && reais) continue
+    const real = meio === 'cartao' ? noCartao.get(chave(a.id_usuario, a.ultima_cobranca_em)) : undefined
+    const gravado = valorDe(real?.valor)
+    // Como em `cobrancas`: houve cobrança um período antes (desde a criação)? Então a devolvida foi uma renovação.
+    const ultima = new Date(a.ultima_cobranca_em)
+    const inicio = new Date(a.criada_em ?? a.inicio_periodo ?? a.ultima_cobranca_em).getTime() - 3 * 86_400_000
+    const renovacao = meio === 'cartao' && somarMeses(ultima, -preco.meses).getTime() >= inicio
+    lista.push({ em: ultima, valor: gravado ?? preco.total, plano: a.plano, id_usuario: a.id_usuario, estimada: gravado === null, tipo: renovacao ? 'renovacao' : 'nova', meio, id_pagamento: real?.id_pagamento ?? null, reembolsadaEm: dataReembolso(a) })
+  }
+  return lista.sort((x, y) => x.em.getTime() - y.em.getTime())
+}
+
 export interface Mes {
   chave: string
   receita: number
