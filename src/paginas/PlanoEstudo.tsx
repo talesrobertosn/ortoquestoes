@@ -356,7 +356,6 @@ export interface HubDados {
 
 export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
   const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
-  const [explicacaoAberta] = useState(primeiraVisita)
   const minutos = hub?.minutosQuestao ?? MINUTOS_POR_QUESTAO
   const naRetaFinalComRoteiro = aberto && !!hub && (calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera')
   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
@@ -423,7 +422,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
     {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
 
-    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} />
+    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} aoAjustar={aberto ? aoAjustar : undefined} />
 
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">
@@ -441,7 +440,8 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
           <Recolhido titulo="Mapa de risco" icone="alvo"><MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} /></Recolhido>
           <Recolhido titulo="OrtoQuestões Simulados" icone="estrela"><CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoIncluir={hub.aoIncluirSimulados} /></Recolhido>
           <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} /></Recolhido>
-          <ComoFuncionaCompleto aberto={explicacaoAberta} plano={plano} />
+          {/* Recolhido sempre: o tour de 3 partes já explica a página na primeira visita. */}
+          <ComoFuncionaCompleto aberto={false} plano={plano} />
         </div>}
       </div>
       <div className="cp-col cp-col--lado">
@@ -463,8 +463,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
       </div>
     </div>
 
-    {aberto && aoAjustar && <div className="linha">
-      <button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
+    {aberto && <div className="linha">
       <a className="botao botao--fantasma" href={href('/temas-que-mais-caem')}><Icone nome="grafico" tamanho={16} /> Temas que mais caem</a>
     </div>}
   </>
@@ -516,15 +515,6 @@ function SemanaASemana({ semanas, aberto, calculo }: { semanas: CalculoPlano['se
       </ol>
     </section>
   )
-}
-
-/** A explicação do cronograma vem aberta só na primeira vez que a pessoa vê o próprio cronograma. */
-function primeiraVisita(): boolean {
-  try {
-    if (localStorage.getItem('ortoquestoes:cronograma-visto')) return false
-    localStorage.setItem('ortoquestoes:cronograma-visto', '1')
-    return true
-  } catch { return false }
 }
 
 /** Não assinante: preenche como o assinante e vê o começo do próprio cronograma. */
