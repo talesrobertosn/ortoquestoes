@@ -331,6 +331,9 @@ export function Sessao() {
 
   if (!questoes) return <Carregando linhas={7} />
 
+  // Respondida a atual, a barra fixa do topo ganha o "Próxima": no celular, o comentário
+  // longo deixava o botão do fim a milhares de pixels de distância.
+  const atualRespondida = !!(questaoAtual && sessao.respostas[questaoAtual.id])
   const proximaNaoRespondida = sessao.ids.findIndex(
     (id, i) => i > posicao && !sessao.respostas[id],
   )
@@ -371,7 +374,7 @@ export function Sessao() {
       </button>
       <div className="barra-sessao nao-imprime">
         {sessao.origem === 'cronograma' && !simulado && <FaixaCronograma respondidasNaSessao={respondidas} />}
-        <div className="conteudo barra-sessao__interno">
+        <div className={'conteudo barra-sessao__interno' + (atualRespondida ? ' barra-sessao__interno--respondida' : '')}>
           <span className="barra-sessao__texto barra-sessao__texto--pixel">
             {respondidas} de {total}
           </span>
@@ -411,8 +414,19 @@ export function Sessao() {
             style={{ minHeight: 36 }}
           >
             <Icone nome="mapa" tamanho={16} />
-            Mapa
+            <span className="barra-sessao__mapa-rotulo">Mapa</span>
           </button>
+          {atualRespondida && (
+            <button
+              type="button"
+              className="botao botao--principal barra-sessao__proxima"
+              onClick={avancar}
+              title={posicao + 1 < total ? 'Próxima questão (→)' : 'Concluir a sessão'}
+            >
+              {posicao + 1 < total ? 'Próxima' : 'Concluir'}
+              <Icone nome="direita" tamanho={16} />
+            </button>
+          )}
           <button
             type="button"
             className="botao-icone barra-sessao__teclado"

@@ -425,3 +425,17 @@
 /* O começo do comentário para abaixo do cabeçalho e da barra da sessão, que são fixos. */
 .bloco-comentario.cm { scroll-margin-top: 8.5rem; }
 @media (max-width: 40rem) { .bloco-comentario.cm { scroll-margin-top: 6.5rem; } }
+
+/* Microinteração ao responder (15/10/2026): só na resposta de agora, nunca ao rever.
+   Acerto: o aviso cresce de leve e o ✓ dá um pulinho; a alternativa certa brilha uma vez.
+   Erro: o aviso balança curto, sem alarme. Com movimento reduzido, nada se mexe. */
+@media (prefers-reduced-motion: no-preference) {
+  .resultado--agora { animation: resultado-entra 0.32s cubic-bezier(.2, .9, .3, 1.25) both; }
+  .resultado--acerto.resultado--agora > svg { animation: resultado-certo 0.5s 0.12s cubic-bezier(.2, .9, .3, 1.5) both; }
+  .resultado--erro.resultado--agora { animation: resultado-entra 0.2s ease-out both, resultado-balanca 0.36s 0.18s ease-in-out; }
+  .alternativas--agora .alternativa--certa { animation: alternativa-brilho 0.9s 0.05s ease-out; }
+}
+@keyframes resultado-entra { from { opacity: 0; transform: translateY(-4px) scale(0.97); } to { opacity: 1; transform: none; } }
+@keyframes resultado-certo { 0% { transform: scale(0.4) rotate(-20deg); } 60% { transform: scale(1.25) rotate(4deg); } 100% { transform: none; } }
+@keyframes resultado-balanca { 20% { transform: translateX(-4px); } 45% { transform: translateX(3px); } 70% { transform: translateX(-2px); } 100% { transform: none; } }
+@keyframes alternativa-brilho { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--acerto) 45%, transparent); } 100% { box-shadow: 0 0 0 10px color-mix(in srgb, var(--acerto) 0%, transparent); } }
