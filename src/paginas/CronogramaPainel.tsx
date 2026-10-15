@@ -227,13 +227,13 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
 }
 
 /** O "por que hoje" do dia: o lugar da área no ranking e o acerto nela. */
-export function porQueHoje(calculo: CalculoPlano, slug: string, prova: string): string {
+export function porQueHoje(calculo: CalculoPlano, slug: string, prova: string, semNumeros = false): string {
   const tema = calculo.temas.find((t) => t.slug === slug)
   const posicao = posicaoDaArea(slug)
   const acerto = tema?.acerto ?? tema?.acertoEstimado ?? null
   const partes = [
     posicao ? (posicao === 1 ? `é a área com mais questões no ${prova}` : `é a ${posicao}ª área em questões no ${prova}`) : 'é a vez dela na fila',
-    acerto !== null ? (tema?.reforcado ? `você está com ${acerto}% de acerto nela, abaixo da sua média` : `você está com ${acerto}% de acerto nela`) : '',
+    acerto !== null && !semNumeros ? (tema?.reforcado ? `você está com ${acerto}% de acerto nela, abaixo da sua média` : `você está com ${acerto}% de acerto nela`) : '',
   ].filter(Boolean)
   return `Por que hoje: ${partes.join(', e ')}.`
 }
