@@ -16,7 +16,7 @@ import {
   ROTULO_AREA,
   type Situacao,
 } from '../dados/tipos'
-import { consultaParaFiltros, filtrosParaConsulta, navegar } from '../util/rotas'
+import { consultaParaFiltros, filtrosParaConsulta, navegar, rotaDe } from '../util/rotas'
 import { SeletorArvore } from '../componentes/SeletorArvore'
 import { Carregando, Estado } from '../componentes/Estados'
 import { usarSessao } from '../estado/sessao'
@@ -74,9 +74,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : { ...FILTROS_VAZIOS, limite: 10 })
   useEffect(() => {
     const mudou = () => {
-      const [caminho, query = ''] = window.location.hash.slice(1).split('?')
-      if (caminho === '/treinar') {
-        const proximos = consultaParaFiltros(new URLSearchParams(query))
+      const rota = rotaDe(window.location.hash)
+      if (rota.caminho === '/treinar') {
+        const proximos = consultaParaFiltros(rota.consulta)
         definirFiltros(atuais => filtrosParaConsulta(atuais) === filtrosParaConsulta(proximos) ? atuais : proximos)
       }
     }
@@ -85,6 +85,16 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }, [])
   const [simulado, definirSimulado] = useState(false)
   const [minutos, definirMinutos] = useState(180)
+  // Link antigo com tema, subtema ou prova renomeados: fica só o que existe no
+  // acervo, em vez de "1 assunto" na trilha e zero questões sem explicação.
+  useEffect(() => {
+    if (!indice) return
+    const temas = new Set(indice.temas.map((t) => t.slug)), subtemas = new Set(indice.subtemas), provas = new Set(indice.provas)
+    definirFiltros((atuais) => {
+      const limpos = { ...atuais, temas: atuais.temas.filter((t) => temas.has(t)), subtemas: atuais.subtemas.filter((s) => subtemas.has(s)), provas: atuais.provas.filter((p) => provas.has(p)) }
+      return limpos.temas.length === atuais.temas.length && limpos.subtemas.length === atuais.subtemas.length && limpos.provas.length === atuais.provas.length ? atuais : limpos
+    })
+  }, [indice])
 
   // A URL acompanha os filtros: o endereço da barra é o filtro compartilhável.
   useEffect(() => {
@@ -192,6 +202,15 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const [telaLarga] = useState(() => typeof window === 'undefined' || window.matchMedia('(min-width: 52rem)').matches)
   const [situacaoAberta, definirSituacaoAberta] = useState(() => telaLarga || filtros.situacao !== 'todas')
   const [formatoAberto, definirFormatoAberto] = useState(telaLarga)
+  // Girar o tablet ou alargar a janela abre os passos que no celular ficam recolhidos.
+  useEffect(() => {
+    const largura = window.matchMedia('(min-width: 52rem)')
+    const aoMudar = () => { if (largura.matches) { definirSituacaoAberta(true); definirFormatoAberto(true) } }
+    largura.addEventListener('change', aoMudar)
+    return () => largura.removeEventListener('change', aoMudar)
+  }, [])
+  // Quantidade digitada: só limita ao total ao sair do campo (digitar "75" passava por "7").
+  const [rascunhoQtd, definirRascunhoQtd] = useState<string | null>(null)
 
   /** Sessão de 10 num clique, sem passar pelos filtros. */
   function sessaoRapida(preset: Partial<Filtros> = {}) {
@@ -287,9 +306,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <b>{i + 1}</b><span><strong>{titulo}</strong><small>{resumo}</small></span>
           </a>
         ))}
-        <button type="button" className="tr-trilha__passo tr-trilha__passo--fim" disabled={total === 0 || carregandoBusca} onClick={comecar}>
-          <b>▶</b><span><strong>Começar</strong><small>{total === 0 ? 'ajuste os filtros' : `${quantidadeSessao} ${quantidadeSessao === 1 ? 'questão' : 'questões'}`}</small></span>
-        </button>
       </nav>
 
       {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. No gratuito, você responde um número limitado de questões a cada 24 horas; os planos liberam sem limite. <a href={href('/conta')}>Criar minha conta</a></p>}
@@ -538,7 +554,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <button type="button" className="tr-pilula" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
             <label className="tr-quantidade">
               <span className="so-leitor">Quantidade personalizada</span>
-              <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={filtros.limite ?? ''} placeholder="Outra" onChange={(e) => atualizar({ limite: e.target.value ? Math.max(1, Math.min(total || 1, Math.floor(Number(e.target.value)) || 1)) : null })} />
+              <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={rascunhoQtd ?? filtros.limite ?? ''} placeholder="Outra" onChange={(e) => definirRascunhoQtd(e.target.value)} onBlur={() => { if (rascunhoQtd === null) return; const n = Math.floor(Number(rascunhoQtd)); atualizar({ limite: rascunhoQtd && n > 0 ? Math.max(1, Math.min(total || 1, n)) : null }); definirRascunhoQtd(null) }} onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }} />
             </label>
           </div>
         </div>
