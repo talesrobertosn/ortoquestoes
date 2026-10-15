@@ -19,6 +19,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from comum import CAMINHO_INDICE, DIR_PUBLICO  # noqa: E402
+from gerar_paginas_destino import PAGINAS as PAGINAS_DESTINO  # noqa: E402
 
 SITE = "https://ortoquestoes.com.br/"
 DIR_QUESTOES = DIR_PUBLICO / "questoes"
@@ -52,6 +53,15 @@ def entrada(endereco: str, data: str, frequencia: str, prioridade: str) -> str:
 def principal() -> int:
     data = data_do_acervo()
     urls = [entrada(SITE, data, "weekly", "1.0")]
+
+    # Páginas de destino (gerar_paginas_destino.py): só as que existem, para
+    # nunca anunciar um endereço 404. Prioridade alta: são as portas de entrada
+    # para "banco de questões de ortopedia", "TEOT", "simulado TEOT" etc.
+    for pasta, _ in PAGINAS_DESTINO:
+        if (DIR_PUBLICO / pasta / "index.html").exists():
+            urls.append(entrada(f"{SITE}{pasta}/", data, "weekly", "0.9"))
+        else:
+            print(f"aviso: public/{pasta}/ não existe — rode gerar_paginas_destino.py antes", file=sys.stderr)
 
     if DIR_QUESTOES.is_dir():
         urls.append(entrada(f"{SITE}questoes/", data, "weekly", "0.9"))

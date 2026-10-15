@@ -53,7 +53,8 @@ const Flashcards = lazy(() => import('./paginas/Flashcards').then(({ Flashcards 
 const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
-  '/': 'Orto Questões: banco de questões de ortopedia e cirurgia da mão',
+  // Igual ao <title> do index.html: o Google lê o título depois do JavaScript.
+  '/': 'Orto Questões (OrtoQuestões): banco de questões de ortopedia, TEOT e TARO',
   '/treinar': 'Montar sessão | Orto Questões',
   '/sessao': 'Respondendo | Orto Questões',
   '/resumo': 'Resumo da sessão | Orto Questões',

@@ -43,9 +43,11 @@ jobs:
         # cronograma e o resumão da reta final nunca ficam para trás quando o acervo muda.
         run: python3 scripts/gerar_incidencia.py && python3 scripts/gerar_resumao.py
       - name: Gerar páginas públicas e sitemap
-        # Uma página estática por questão e por assunto, para o Google indexar.
-        # São geradas do acervo a cada deploy e não ficam no repositório.
-        run: python3 scripts/gerar_paginas_seo.py && python3 scripts/gerar_guias_seo.py && python3 scripts/gerar_sitemap.py
+        # Uma página estática por questão e por assunto, os guias, as páginas de
+        # destino (banco de questões, TEOT, provas, R1, simulados, flashcards) e
+        # o llms.txt, para o Google e os assistentes de IA. São geradas do acervo
+        # a cada deploy e não ficam no repositório (docs/seo/PLANO-SEO-R1-2027.md).
+        run: python3 scripts/gerar_paginas_seo.py && python3 scripts/gerar_guias_seo.py && python3 scripts/gerar_paginas_destino.py && python3 scripts/gerar_sitemap.py
       - name: Construir
         # Sem BASE_ORTOQUESTOES: o vite.config.ts usa caminho relativo, e o
         # mesmo build serve tanto usuario.github.io/ortoquestoes/ quanto
