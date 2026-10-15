@@ -143,8 +143,13 @@ function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Perio
 }
 
 /** A próxima meta, em questões, como uma missão de jogo. */
-function Missao({ eu, acima }: { eu: LinhaRanking; acima: LinhaRanking | null }) {
+function Missao({ eu, acima, ultimoTop50 }: { eu: LinhaRanking; acima: LinhaRanking | null; ultimoTop50?: LinhaRanking | null }) {
   if (eu.posicao === 1) return <span className="rk-missao"><Icone nome="trofeu" tamanho={15} /><span>Você lidera. Responda hoje para defender o topo.</span></span>
+  // Fora da lista carregada: a meta é entrar no top 50 (antes era um parágrafo à parte no fim da página).
+  if (!acima && ultimoTop50 && eu.posicao > 50) {
+    const faltam = Math.max(1, ultimoTop50.total - eu.total + 1)
+    return <span className="rk-missao"><Icone nome="alvo" tamanho={15} /><span>Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para entrar no top 50</span></span>
+  }
   if (!acima) return null
   const faltam = Math.max(1, acima.total - eu.total + 1)
   return <span className="rk-missao"><Icone nome="alvo" tamanho={15} /><span>Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para passar {acima.apelido} e subir para #{acima.posicao}</span></span>
@@ -280,7 +285,7 @@ export function Ranking() {
             <strong className="rk-heroi__posicao">#{minhaPosicao.posicao}</strong>
             {eu && <Movimento linha={eu} />}
             <span className="rk-heroi__rotulo">{minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'nos últimos 7 dias' : 'respondidas'}</span>
-            {eu && <Missao eu={eu} acima={acima} />}
+            {eu && <Missao eu={eu} acima={acima} ultimoTop50={top?.[top.length - 1] ?? null} />}
           </> : meuTotal < MINIMO_RANKING ? <>
             <span className="rk-heroi__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
             <strong className="rk-heroi__posicao">Faltam {MINIMO_RANKING - meuTotal}</strong>
@@ -327,6 +332,8 @@ export function Ranking() {
         </div>
         <a className="rk-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> Liga da residência <SeloAssinante /></a>
       </div>
+      {/* O critério na dobra, não só no fim da página. */}
+      <p className="rk-criterio"><Icone nome="grafico" tamanho={15} /> <span>Conta cada questão diferente respondida{periodo === 'semana' ? ' nos últimos 7 dias' : ''}. Refazer a mesma não soma de novo.</span></p>
 
       {linhas === null && !erro && <Carregando linhas={6} rotulo="Carregando ranking" />}
 
@@ -340,7 +347,8 @@ export function Ranking() {
 
       {top && top.length > 0 && <EmAlta linhas={top} />}
 
-      {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} eu={top.find((linha) => linha.eh_voce) ?? minhaPosicao} />}
+      {/* Sem "você está em #N" aqui: a posição aparece uma vez só, no cartão do topo. */}
+      {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} eu={null} />}
 
       {top && top.length > 0 && comMovimento && !top.some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia rk-referencia--inicio">
         <Icone nome="relogio" tamanho={15} /> As setas de subida e descida e o foguinho aparecem a partir de amanhã: hoje o ranking registra as posições de referência.
@@ -376,9 +384,6 @@ export function Ranking() {
         </button>
       )}
 
-      {top && visiveis && minhaPosicao && minhaPosicao.posicao > visiveis.length && (
-        <p className="rk-fora">Você está em <strong>#{minhaPosicao.posicao}</strong>, com {minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'na semana' : 'respondidas'}. Faltam {Math.max(1, (top[top.length - 1]?.total ?? 0) - minhaPosicao.total + 1).toLocaleString('pt-BR')} para entrar no top 50.</p>
-      )}
     </>}
 
     <details className="cartao cartao__corpo rk-regras">
