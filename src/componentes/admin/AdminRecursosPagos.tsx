@@ -6,6 +6,7 @@ import { DURACAO_EDICAO_MIN, DURACAO_VESPERA_MIN, QUESTOES_EDICAO, QUESTOES_VESP
 import { nivelPorQuestao } from '../../dados/incidencia'
 import { nomeEdicao } from '../../estado/sessao'
 import { dataHora, erroDoPainel } from './formatos'
+import { confirmar } from '../Confirmar'
 
 const MIGRACAO = '202609300100_recursos_pagos.sql'
 const PROVAS_NACIONAL = new Set(['TEOT/TARO', 'TEOT', 'TARO', 'CET-PR'])
@@ -58,7 +59,7 @@ export function AdminRecursosPagos() {
   }, [mes, enviando])
 
   async function trocarExclusivos(valor: boolean) {
-    if (!window.confirm(valor ? 'Deixar os recursos do plano pago só para assinantes?' : 'Liberar os recursos do plano pago para TODAS as contas (promoção)? Vale na hora.')) return
+    if (!(await confirmar(valor ? { titulo: 'Deixar os recursos do plano pago só para assinantes?', texto: 'Vale na hora.', sim: 'Só para assinantes' } : { titulo: 'Liberar os recursos do plano pago para TODAS as contas?', texto: 'Promoção: vale na hora, para todo mundo.', sim: 'Liberar para todos' }))) return
     try { await chamarRpc('definir_config_premium_admin', { p_exclusivos: valor }); definirExclusivos(valor); atualizarPremium(); definirMensagem(valor ? 'Recursos pagos só para assinantes.' : 'Recursos pagos liberados para todos.') }
     catch { definirFalha('Não foi possível salvar.') }
   }
@@ -69,7 +70,7 @@ export function AdminRecursosPagos() {
   }
 
   async function enviarRelatorios() {
-    if (!resumo?.pendentes || !window.confirm(`Enviar o relatório de ${nomeEdicao(mes)} para ${resumo.pendentes} assinante(s)?`)) return
+    if (!resumo?.pendentes || !(await confirmar({ titulo: `Enviar o relatório de ${nomeEdicao(mes)} para ${resumo.pendentes} assinante(s)?`, sim: 'Enviar' }))) return
     let total = 0, falhas = 0
     try {
       // Lotes de até 40 (limite de tempo da Function); para quando um lote não envia nada.
@@ -129,7 +130,7 @@ export function AdminRecursosPagos() {
     if (!(fecha > abre)) { definirFalha('A abertura precisa ser antes da véspera da prova.'); return }
     const anoProva = vespera.prova.slice(0, 4)
     const titulo = `Simulado de véspera · Prova ${anoProva}`
-    if (!window.confirm(`Publicar "${titulo}" com ${montadaVespera.itens.length} questões em ${vespera.duracao / 60} h? Fica no ar de ${abre.toLocaleDateString('pt-BR')} até ${fecha.toLocaleDateString('pt-BR')}.`)) return
+    if (!(await confirmar({ titulo: `Publicar "${titulo}"?`, texto: `${montadaVespera.itens.length} questões em ${vespera.duracao / 60} h. Fica no ar de ${abre.toLocaleDateString('pt-BR')} até ${fecha.toLocaleDateString('pt-BR')}.`, sim: 'Publicar' }))) return
     try {
       await chamarRpc('publicar_simulado_admin', { p_edicao: montadaVespera.edicao, p_titulo: titulo, p_abre: abre.toISOString(), p_fecha: fecha.toISOString(), p_duracao: vespera.duracao, p_itens: montadaVespera.itens })
       definirMontadaVespera(null); definirMensagem(`${titulo} publicado.`); await carregar()
@@ -141,7 +142,7 @@ export function AdminRecursosPagos() {
     const [ano, m] = montada.edicao.split('-').map(Number)
     const abre = new Date(Date.UTC(ano, m - 1, 1, 3, 0, 0))
     const titulo = `Simulado Nacional · ${nomeEdicao(montada.edicao).replace(/^./, (c) => c.toUpperCase())}`
-    if (!window.confirm(`Publicar "${titulo}"? Abre em ${abre.toLocaleDateString('pt-BR')} e fecha no fim do mês.`)) return
+    if (!(await confirmar({ titulo: `Publicar "${titulo}"?`, texto: `Abre em ${abre.toLocaleDateString('pt-BR')} e fecha no fim do mês.`, sim: 'Publicar' }))) return
     try {
       await chamarRpc('publicar_simulado_admin', { p_edicao: montada.edicao, p_titulo: titulo, p_abre: abre.toISOString(), p_fecha: fimDaEdicao(montada.edicao), p_duracao: DURACAO_EDICAO_MIN, p_itens: montada.itens })
       definirMontada(null); definirMensagem(`${titulo} publicado.`); await carregar()

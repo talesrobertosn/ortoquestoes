@@ -3,6 +3,7 @@ import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { usarIndice } from '../../dados/usarIndice'
 import { carregarQuestoes } from '../../dados/acervo'
 import { href } from '../../util/rotas'
+import { confirmar, pedirTexto } from '../Confirmar'
 import { AdminAvaliacoes } from './AdminAvaliacoes'
 import { BarrasHorizontais } from './AdminGraficos'
 import { dataHora, erroDoPainel, porcentagem } from './formatos'
@@ -18,9 +19,12 @@ const VISTAS: Array<[VistaConteudo, string]> = [['suspeitas', 'Questões suspeit
 /** Acerto da primeira tentativa de todos: mede a questão, não o quanto cada um já revisou. */
 const acertoPrimeira = (e: Estatistica) => porcentagem(Number(e.acertos_primeira), Number(e.acertos_primeira) + Number(e.erros_primeira))
 
-export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias, aoEditar }: { vistaInicial?: VistaConteudo; aoMudarPendencias?: (n: number) => void; aoEditar?: (id: string) => void }) {
+export function AdminConteudo({ vista: vistaExterna = 'suspeitas', aoMudarVista, aoMudarPendencias, aoEditar }: { vista?: VistaConteudo; aoMudarVista?: (vista: VistaConteudo) => void; aoMudarPendencias?: (n: number) => void; aoEditar?: (id: string) => void }) {
   const { indice } = usarIndice()
-  const [vista, definirVista] = useState<VistaConteudo>(vistaInicial)
+  // A vista vem do endereço (#/admin?aba=conteudo&vista=…); o estado local responde ao toque sem esperar o hashchange.
+  const [vista, definirVistaLocal] = useState<VistaConteudo>(vistaExterna)
+  useEffect(() => { definirVistaLocal(vistaExterna) }, [vistaExterna])
+  const definirVista = (nova: VistaConteudo) => { definirVistaLocal(nova); aoMudarVista?.(nova) }
   const [stats, definirStats] = useState<Estatistica[] | null>(null)
   const [relatos, definirRelatos] = useState<Relato[] | null>(null)
   const [erro, definirErro] = useState('')
@@ -82,21 +86,32 @@ export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias, a
       .filter(t => t.respostas >= 10).sort((a, b) => a.acerto - b.acerto)
   }, [indice, stats])
 
+  // Resultado da última ação nos relatos, em linha (antes era window.alert).
+  const [aviso, definirAviso] = useState<{ texto: string; erro: boolean } | null>(null)
   async function mudarRelato(r: Relato, status: Relato['status']) {
-    const nota = status === 'aberto' ? null : window.prompt(status === 'resolvido' ? 'O que foi corrigido? (opcional; vai no e-mail para quem relatou, se você avisar)' : 'Anotação (opcional): por que foi descartado?', r.nota_admin ?? '') ?? r.nota_admin
-    try { await chamarRpc('atualizar_relato_admin', { p_id: r.id, p_status: status, p_nota: nota }); await carregarRelatos() } catch { window.alert('Não foi possível atualizar o relato.'); return }
-    if (status === 'resolvido' && r.usuario && window.confirm(`Avisar ${r.usuario} por e-mail que a questão foi corrigida?`)) await avisar(r)
+    let nota: string | null = null
+    if (status !== 'aberto') {
+      // Cancelar a anotação desiste da ação inteira; deixar vazia segue sem nota.
+      const escrita = await pedirTexto(status === 'resolvido'
+        ? { titulo: 'Marcar relato como resolvido', rotulo: 'O que foi corrigido? (opcional)', texto: 'Vai no e-mail para quem relatou, se você avisar.', valorInicial: r.nota_admin ?? '', sim: 'Marcar resolvido' }
+        : { titulo: 'Descartar relato', rotulo: 'Anotação (opcional): por que foi descartado?', valorInicial: r.nota_admin ?? '', sim: 'Descartar' })
+      if (escrita === null) return
+      nota = escrita
+    }
+    definirAviso(null)
+    try { await chamarRpc('atualizar_relato_admin', { p_id: r.id, p_status: status, p_nota: nota }); await carregarRelatos() } catch { definirAviso({ texto: 'Não foi possível atualizar o relato.', erro: true }); return }
+    if (status === 'resolvido' && r.usuario && await confirmar({ titulo: 'Avisar quem relatou?', texto: `Mandar um e-mail para ${r.usuario} dizendo que a questão foi corrigida.`, sim: 'Avisar por e-mail', nao: 'Agora não' })) await avisar(r)
   }
 
   /** E-mail para quem relatou, dizendo que a questão foi corrigida. */
   async function avisar(r: Relato) {
     try {
       const res = await chamarFuncao<{ resultado?: string; para?: string }>('enviar-email', { acao: 'relato_resolvido', id_relato: r.id })
-      window.alert(`E-mail enviado para ${res.para ?? r.usuario}.`)
+      definirAviso({ texto: `E-mail enviado para ${res.para ?? r.usuario}.`, erro: false })
       await carregarRelatos()
     } catch (f) {
       const motivo = f instanceof Error ? f.message : ''
-      window.alert(motivo === 'acao_invalida' ? 'A Function enviar-email ainda é a versão antiga. Atualize-a no Supabase para poder avisar.' : `Não foi possível enviar: ${motivo || 'erro desconhecido'}.`)
+      definirAviso({ texto: motivo === 'acao_invalida' ? 'A Function enviar-email ainda é a versão antiga. Atualize-a no Supabase para poder avisar.' : `Não foi possível enviar: ${motivo || 'erro desconhecido'}.`, erro: true })
     }
   }
 
@@ -142,6 +157,7 @@ export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias, a
       <BarrasHorizontais maximo={100} formato={v => `${v}%`} itens={temas.map(t => ({ rotulo: t.nome, valor: t.acerto, detalhe: `${t.respostas.toLocaleString('pt-BR')} respostas em ${t.questoes} questões`, destaque: t.acerto < 55 ? 'ruim' : t.acerto >= 75 ? 'bom' : undefined }))} />
     </>)}
 
+    {vista === 'relatos' && aviso && <p role={aviso.erro ? 'alert' : 'status'} className={'adm-mensagem' + (aviso.erro ? ' adm-mensagem--erro' : '')}>{aviso.texto}</p>}
     {vista === 'relatos' && !erro && (!relatos ? <p role="status">Carregando…</p> : relatos.length === 0 ? <p className="adm-vazio">Nenhum relato ainda. Eles chegam pelo botão "Relatar erro nesta questão".</p> :
       <ul className="adm-avaliacoes">{relatos.map(r => <li key={r.id} className={'adm-avaliacao' + (r.status !== 'aberto' ? ' adm-avaliacao--boa' : '')}>
         <div className="adm-avaliacao__topo"><Nome id={r.id_questao} /><span className={'adm-selo ' + (r.status === 'aberto' ? 'adm-selo--ruim' : 'adm-selo--neutro')}>{TIPOS_RELATO[r.tipo] ?? r.tipo} · {r.status === 'aberto' ? 'em aberto' : r.status}</span></div>

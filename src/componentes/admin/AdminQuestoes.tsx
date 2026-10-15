@@ -8,6 +8,7 @@ import { chamarRpc, enviarImagemQuestao } from '../../servicos/supabase'
 import { TextoEditorial } from '../TextoEditorial'
 import { href } from '../../util/rotas'
 import { dataHora, erroDoPainel } from './formatos'
+import { confirmar } from '../Confirmar'
 
 const MIGRACAO = '202610050100_editor_questoes.sql'
 const LETRAS: Letra[] = ['A', 'B', 'C', 'D', 'E']
@@ -196,7 +197,7 @@ function ListaImagens({ imagens, aoMudar, idQuestao, pasta }: { imagens: Imagem[
   )
 }
 
-export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
+export function AdminQuestoes({ idInicial, aoAbrir }: { idInicial?: string | null; aoAbrir?: (id: string) => void }) {
   const { indice } = usarIndice()
   const [tema, definirTema] = useState('')
   const [numero, definirNumero] = useState('')
@@ -215,6 +216,8 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   const [previa, definirPrevia] = useState(false)
 
   useEffect(() => { if (idInicial) definirId(idInicial) }, [idInicial])
+  // Questão aberta por aqui também vai para o endereço (?aba=questoes&id=…): F5 não perde.
+  const abrir = (novo: string) => { definirId(novo); aoAbrir?.(novo) }
   useEffect(() => { if (indice && !tema && indice.temas[0]) definirTema(indice.temas[0].slug) }, [indice, tema])
 
   const atualizarListaEditadas = useCallback(async () => {
@@ -253,7 +256,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   function abrirPorNumero() {
     const n = Number(numero)
     if (!tema || !Number.isInteger(n) || n <= 0) return
-    definirId(`${tema}-${String(n).padStart(4, '0')}`)
+    abrir(`${tema}-${String(n).padStart(4, '0')}`)
   }
 
   const mudar = <K extends keyof Formulario>(chave: K, valor: Formulario[K]) => definirForm((f) => (f ? { ...f, [chave]: valor } : f))
@@ -280,7 +283,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   }
 
   async function desfazer() {
-    if (!id || !window.confirm('Desfazer todas as edições desta questão? Ela volta a ser exatamente a do acervo.')) return
+    if (!id || !(await confirmar({ titulo: 'Desfazer todas as edições desta questão?', texto: 'Ela volta a ser exatamente a do acervo.', sim: 'Desfazer edições' }))) return
     try {
       await chamarRpc('remover_edicao_questao', { p_id: id })
       await atualizarListaEditadas()
@@ -300,8 +303,8 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
    */
   async function mudarPresenca(acao: 'esconder' | 'apagar' | 'mostrar') {
     if (!id) return
-    if (acao === 'esconder' && !window.confirm(`Esconder ${id} do site? Ela sai do treino, dos simulados e das contagens, e o link deixa de abrir. Dá para mostrar de novo depois.`)) return
-    if (acao === 'apagar' && !window.confirm(`Apagar ${id}? Ela some do site agora e sai dos arquivos do acervo na próxima limpeza. Até lá, ainda dá para desfazer aqui.`)) return
+    if (acao === 'esconder' && !(await confirmar({ titulo: `Esconder ${id} do site?`, texto: 'Ela sai do treino, dos simulados e das contagens, e o link deixa de abrir. Dá para mostrar de novo depois.', sim: 'Esconder' }))) return
+    if (acao === 'apagar' && !(await confirmar({ titulo: `Apagar ${id}?`, texto: 'Ela some do site agora e sai dos arquivos do acervo na próxima limpeza. Até lá, ainda dá para desfazer aqui.', sim: 'Apagar' }))) return
     const { oculta: _o, apagada: _a, ...resto } = salva ?? {}
     const dados: EdicaoQuestao = acao === 'mostrar' ? resto : { ...resto, oculta: true, ...(acao === 'apagar' ? { apagada: true } : {}) }
     definirSalvando(true); definirErro('')
@@ -348,14 +351,14 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
       {editadas.length > 0 && (
         <details className="adm-editor__editadas">
           <summary>{editadas.length} questão(ões) já editada(s)</summary>
-          <div className="linha">{editadas.map((e) => <button key={e} type="button" className="adm-chip" onClick={() => definirId(e)}>{e}</button>)}</div>
+          <div className="linha">{editadas.map((e) => <button key={e} type="button" className="adm-chip" onClick={() => abrir(e)}>{e}</button>)}</div>
         </details>
       )}
 
       {fora.length > 0 && (
         <details className="adm-editor__editadas">
           <summary>{fora.length} questão(ões) fora do site</summary>
-          <div className="linha">{fora.map((f) => <button key={f.id} type="button" className="adm-chip" onClick={() => definirId(f.id)}>{f.id} · {f.apagada ? 'apagada' : 'escondida'}</button>)}</div>
+          <div className="linha">{fora.map((f) => <button key={f.id} type="button" className="adm-chip" onClick={() => abrir(f.id)}>{f.id} · {f.apagada ? 'apagada' : 'escondida'}</button>)}</div>
         </details>
       )}
 
