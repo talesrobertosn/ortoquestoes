@@ -55,7 +55,7 @@ Feito para o Tales e para qualquer agente que continue o trabalho, seja Claude, 
 2. **Cenários procedurais:** Torre e Salão ainda não são pintados offline.
 3. **Dragão:** faltam as variantes escarlate e ancestral.
 4. **Contador da rota:** não aparece na tela quantos dos 10 flashcards do Mapa ou do Desvio ainda faltam.
-5. **Conquistas dos flashcards:** estão prontas no código (`src/flashcards/conquistas.ts`), mas desligadas. A proposta está em "Conquistas" abaixo.
+5. **Conquistas dos flashcards:** ligadas ao sistema de emblemas do site em 15/10/2026 (veja [CONQUISTAS.md](CONQUISTAS.md) e a seção de 15/10 em `docs/emblemas.md`).
 6. **Áreas sobrando:** o baralho de demonstração usa as áreas "Trauma" e "Anatomia", fora do padrão. O ideal é corrigir isso na origem.
 7. **Faixa "sala" da trilha:** a emenda do loop está audível.
 8. **Som no celular:** precisa ser testado num aparelho físico.

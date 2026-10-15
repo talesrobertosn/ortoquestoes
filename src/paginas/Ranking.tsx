@@ -406,7 +406,7 @@ export function Ranking() {
 export function Conquistas({ escolher = false }: { escolher?: boolean } = {}) {
   const { sessao } = usarConta()
   const { perfil, carregado, nomeExibido, salvarVitrine, comVitrine } = usarPerfilRanking(sessao)
-  const { metricas, streak, conquistadas, total } = usarConquistas()
+  const { metricas, streak, conquistadas, total } = usarConquistas({ comLendarios: true })
   usarPublicarSequencia(sessao, streak.atual, streak.ateDia)
   return <div className="empilha-2 rk">
     <section className="rk-heroi rk-heroi--conquistas">

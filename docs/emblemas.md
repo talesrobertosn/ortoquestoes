@@ -83,6 +83,46 @@ Adaptação: a ideia "Professor" (comentários seus marcados como úteis) virou 
 porque o site não tem comentários escritos por usuários; a avaliação dos comentários é o que existe
 e ajuda a melhorar o acervo.
 
+## Feitos em 15/10/2026: revisão e Flashcards
+
+Pedido do Tales: mais conquistas para quem revisa e emblemas de Flashcards que apareçam no ranking
+geral e no ranking de Flashcards. Arte pelo mesmo script (`scripts/gerar_emblemas_provisorios.py`,
+lote 3). As contas de revisão estão em `src/estado/metasRevisao.ts`; as de Flashcards, em
+`src/flashcards/conquistas.ts` e `src/flashcards/emblemas.ts`. Teste: `node fixtures/testar_conquistas.mjs`.
+
+**Revisão** (entram na Platina)
+
+| Família | Níveis | Regra | Arte |
+|---|---|---|---|
+| Revisões feitas | 250 prata, 1.000 ouro, 3.000 esmeralda, 8.000 lendário | Respostas a questões já respondidas antes (tentativas além da primeira) | Pilha de pergaminhos |
+| Constância na revisão | 7 prata, 21 ouro, 60 esmeralda, 120 lendário | Dias seguidos com 10 revisões ou com a fila de Revisar hoje zerada; folgas do ritmo não quebram | Tábua de pedra com dias riscados |
+| Resgate de atrasadas | 50 ouro, 200 esmeralda, 500 lendário | Revisões feitas 3+ dias depois do vencimento (a escada é refeita pelo histórico de cada questão) | Trompa |
+| Secreta: Muralha derrubada | esmeralda | 100 revisões num mesmo dia | Muralha com rombo |
+
+**Flashcards** (ids `fc-…`; ficam fora da Platina porque são outro produto, em beta). Fora do jogo, os
+textos dizem sempre "Flashcards", nunca "Cripta".
+
+| Família | Níveis | Regra | Fonte | Arte |
+|---|---|---|---|---|
+| Profundezas | andar 6, 12, 21, 30, 45 | Andar mais fundo numa partida | **Servidor** (`meus_recordes_flashcards`, corridas validadas); o recorde do aparelho não conta | Poço com escada em espiral |
+| Mestre da revisão | 3, 7, 14, 30, 60 dias | Dias seguidos com 15 revisões de flashcards | Registros dos flashcards (sincronizados) | Leque de cartas |
+| Especialista | 25 ouro, 100 esmeralda, 250 lendário | Flashcards dominados numa mesma área (todas as voltas da escada) | Registros | Astrolábio |
+| Bestiário | 8, 20, 43 (todos) | Adversários diferentes vencidos (o dragão do topo da Torre fica de fora) | Aparelho | Livro com marcas de garra |
+| Sem errar | 10, 25, 50 | Acertos seguidos numa partida | Aparelho (recorde `melhorSequencia`) | Corrente sem elo partido |
+| Colecionador de lendários | 50, 200, 500 | Flashcards lendários diferentes acertados | Registros + raridade do acervo (carregado só na página de Conquistas) | Carta lendária com coroa |
+| Secretas: Caçador de dragões | Dragão de Ossos (ouro); os dois dragões das profundezas (esmeralda) | Ossos e Rubro da Artrose vencidos | Aparelho | Presas no cordão |
+
+A Torre do Título saiu da entrada do jogo, por isso a família dela e a dos "três dragões" (que incluía
+o dragão do topo da Torre) não entraram. Bestiário, dragões e sem errar ainda dependem do aparelho: o
+servidor não registra adversários nem sequências; quando registrar, trocar a fonte. Uma vez conquistado,
+o emblema é travado no servidor (`registrar_conquistas`) como os outros.
+
+**No ranking:** o ranking geral já mostra a vitrine (até 3 emblemas escolhidos, inclusive os de
+Flashcards). O ranking de Flashcards (`#/ranking?aba=flashcards`) mostra o melhor emblema de Flashcards
+travado da pessoa e, depois, a vitrine, pela RPC `ranking_flashcards_emblemas` (parte 25 do SQL,
+`supabase/migrations/202610151800_emblemas_revisao_flashcards.sql`). Sem o SQL, o ranking aparece como
+antes, sem emblemas, e os emblemas de andar ficam em zero.
+
 ## Banco de ideias (brainstorm, ainda não decidido)
 
 **Aproveitamento**

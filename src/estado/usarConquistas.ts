@@ -7,6 +7,8 @@ import { registrarConquistas, usarFeitos } from '../conta/feitos'
 import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
 import { calcularStreak, type Streak } from './streak'
+import { usarRitmoRevisao } from './preferencias'
+import { usarMetricasFlashcards } from '../flashcards/emblemas'
 
 /** Métricas das conquistas e sequência atual, a partir do progresso guardado na conta. */
 /** Grupos de prova de cada questão, para os emblemas de especialista. */
@@ -53,16 +55,20 @@ function dadosDoAcervo(indice: Indice | null): DadosAcervo | undefined {
   return { imagem, subtemas, prova, totalProva, totalTema, anuladas }
 }
 
-export function usarConquistas(): { metricas: Metricas; streak: Streak; conquistadas: number; total: number } {
+/** `comLendarios`: só a página de Conquistas carrega o acervo dos flashcards para contar os lendários. */
+export function usarConquistas({ comLendarios = false }: { comLendarios?: boolean } = {}): { metricas: Metricas; streak: Streak; conquistadas: number; total: number } {
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
   const grupos = useMemo(() => gruposDoIndice(indice), [indice])
   const acervo = useMemo(() => dadosDoAcervo(indice), [indice])
   const servidor = usarFeitos()
+  const { ritmo } = usarRitmoRevisao()
+  const folgas = ritmo.folgas.join(',')
+  const flashcards = usarMetricasFlashcards(comLendarios)
   const resultado = useMemo(() => {
     const favoritas = ler<string[]>('favoritos', []).length
     const notas = Object.values(ler<Record<string, string>>('notas', {})).filter((t) => String(t ?? '').trim()).length
-    const base = calcularMetricas(contexto.respondidas, lerHistorico(), { favoritas, notas, grupos, acervo, servidor })
+    const base = calcularMetricas(contexto.respondidas, lerHistorico(), { favoritas, notas, grupos, acervo, servidor, flashcards, folgasRevisao: folgas ? folgas.split(',').map(Number) : [] })
     const metricas = completarMetricas({ ...base, travadas: new Set(servidor?.conquistas ?? []) })
     return {
       metricas,
@@ -70,7 +76,7 @@ export function usarConquistas(): { metricas: Metricas; streak: Streak; conquist
       conquistadas: EMBLEMAS.filter((e) => desbloqueado(e, metricas)).length,
       total: EMBLEMAS.length,
     }
-  }, [contexto.respondidas, grupos, acervo, servidor])
+  }, [contexto.respondidas, grupos, acervo, servidor, flashcards, folgas])
   // Trava no servidor o que acabou de ser conquistado (a sequência de dias não trava: ela se perde de propósito).
   useEffect(() => {
     if (!servidor || !acervo) return
