@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { LIMITE_GRATIS_ATUAL } from '../config'
-import { chaveDia, LIMITES_HABILITADOS } from '../estado/limiteDiario'
+import { LIMITE_GRATIS_ATUAL, LIMITES_HABILITADOS, fraseGratis } from '../config'
+import { chaveDia } from '../estado/limiteDiario'
 import { diasAte, proximaProva, RITMOS_CAPA as RITMOS } from '../dados/ritmos'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
@@ -51,7 +51,7 @@ export function AteAProva({ total, conta }: { total: number; conta: boolean }) {
         <p className="ap__nota">{vezes >= 1
           ? <>Dá para passar pelo acervo inteiro{vezes >= 2 ? ` ${Math.floor(vezes)} vezes` : ''} e ainda revisar o que errou. Cada questão é uma situação de prova que você já terá resolvido.</>
           : <>São {Math.round(vezes * 100)}% do acervo, começando pelo que mais cai. Cada questão é uma situação de prova que você já terá resolvido.</>}</p>
-        {passaDoGratis && <p className="ap__nota ap__nota--plano"><Icone nome="raio" tamanho={14} /> O gratuito libera {LIMITE_GRATIS_ATUAL} a cada 24 horas. Nesse ritmo, o plano libera sem limite.</p>}
+        {passaDoGratis && <p className="ap__nota ap__nota--plano"><Icone nome="raio" tamanho={14} /> {fraseGratis('ritmo')}</p>}
         <a className="botao botao--ouro botao--largo" href={href(conta ? '/cronograma' : '/conta?modo=criar&voltar=%2Fcronograma')}>{conta ? 'Montar meu cronograma até a prova' : 'Criar conta grátis e começar hoje'}</a>
       </div>
     </section>

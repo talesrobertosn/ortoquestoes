@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { EVENTO_DADOS } from '../estado/armazenamento'
+import { fraseGratis } from '../config'
 import { LIMITES_HABILITADOS, conviteLimiteJaVisto, lerBloqueioDiario, limiteGratisConhecido, limparBloqueioDiario, marcarConviteLimiteVisto, type EstadoLimite } from '../estado/limiteDiario'
 import { formatarDuracao } from '../dados/tipos'
 import { chamarRpc } from '../servicos/supabase'
@@ -184,7 +185,7 @@ function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = 
         </ul>
         <a className="botao botao--principal botao--grande pw-oferta__cta" href={href('/assinatura')}>Assinar por {real(POR_MES_ANUAL)}/mês</a>
         <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias · cancele quando quiser · também há plano mensal</p>
-        <p className="pw-oferta__projeto">O Orto Questões é um projeto independente: a assinatura paga o site e mantém para todo mundo o gratuito, com um número limitado de questões a cada 24 horas.</p>
+        <p className="pw-oferta__projeto">{fraseGratis('projeto')}</p>
         <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Espero o relógio zerar</button>
       </section>
     </div>
