@@ -1,7 +1,7 @@
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
-import { guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
+import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { usarPremium } from '../conta/premium'
 import { usarConta } from '../conta/ContextoConta'
@@ -28,6 +28,9 @@ import '../estilos/paginas/PlanoEstudo.css'
 import { usarDiaAtual } from '../util/usarDiaAtual'
 import { chaveCivil, chaveDoDia, diaCivil, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
+import { juntarMarcas, marcasDoPlano, opcoesComMarcas, type MarcasDia } from '../conta/marcasDia'
+import { ler } from '../estado/armazenamento'
+import { IndicadorSincronia } from '../componentes/IndicadorSincronia'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
@@ -88,15 +91,17 @@ export function PlanoEstudo() {
   const [planoDemo_, definirPlanoDemo] = useState<PlanoSalvo | null>(() => (DEMO ? planoDemo() : null))
   const plano = DEMO ? planoDemo_ : salvoNoServidor.plano
   const definirPlano = DEMO ? definirPlanoDemo : salvoNoServidor.definirPlano
-  const { status } = usarConta()
+  const { status, aguardarSincronia } = usarConta()
   // Antes do primeiro sync as respostas deste aparelho podem estar atrasadas:
   // nada que dependa delas é gravado no plano compartilhado até lá.
   const sincronizado = DEMO || (status.pronto && status.pendentes === 0)
   const [editando, definirEditando] = useState(false)
   const [erro, definirErro] = useState('')
   const [salvandoOpcoes, definirSalvandoOpcoes] = useState(false)
+  const [preparando, definirPreparando] = useState(false)
   const [diagnosticoFeito, marcarDiagnostico] = usarArmazenado<string | null>('cronograma:diagnostico', null)
   const [feitosDia, definirFeitosDia] = usarArmazenado<FeitosDoDia>('cronograma:dia', { data: '' })
+  const [resumaoLocal] = usarArmazenado<ResumaoHoje>(CHAVE_RESUMAO_HOJE, RESUMAO_HOJE_VAZIO)
   const { ritmo } = usarRitmoRevisao()
 
   // Sem plano no servidor, abre direto o formulário (só na primeira leitura).
@@ -114,6 +119,15 @@ export function PlanoEstudo() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas, dia])
   useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
+  // O que foi feito hoje fora das questões, neste aparelho e nos outros (conta/marcasDia.ts).
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const marcasLocais = useMemo(() => marcasDoAparelho(feitosDia, resumaoLocal), [feitosDia, resumaoLocal, dia])
+  const marcasHoje = useMemo(() => juntarMarcas(marcasDoPlano(plano), marcasLocais), [plano, marcasLocais])
+  // Sobe para o plano o que este aparelho marcou e o servidor ainda não tem.
+  useEffect(() => {
+    if (DEMO || !premium || !plano || !opcoesComMarcas(plano, marcasLocais)) return
+    enviarMarcas(marcasLocais).catch(() => undefined)
+  }, [plano, marcasLocais, premium])
   // Fez além da meta hoje: guarda o dia (e a meta dele), para amanhã a meta já vir mais leve.
   const extraHoje = calculo?.extraHoje ?? 0
   useEffect(() => {
@@ -163,8 +177,15 @@ export function PlanoEstudo() {
   /** A sessão do dia: a área principal com a mistura espalhada (as duas da lista do dia), com o que a pessoa pediu para adiantar. */
   async function comecarHoje(c: CalculoPlano | null = calculo, p: PlanoSalvo | null | undefined = plano) {
     if (!indice || !c?.hoje || !p) return
-    const itens = c.hoje.itens.length ? c.hoje.itens : [{ slug: c.hoje.slug, n: c.hoje.n, mistura: false }]
-    const ids = idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), respondidas, incluiSimulados(p))
+    // Antes de escolher as questões, traz o que foi feito nos outros aparelhos:
+    // sem isso, abrir o computador logo depois de estudar no MacBook montava a
+    // sessão com as mesmas questões. Sem rede, segue com o que este aparelho tem.
+    if (!DEMO) { definirPreparando(true); await aguardarSincronia(8000); definirPreparando(false) }
+    const atuais = DEMO ? respondidas : ler<Respondidas>('respondidas', {})
+    if (!DEMO && atuais !== respondidas) { c = calcularPlano(indice, atuais, p); if (!c.hoje) return }
+    const itens = c.hoje!.itens.length ? c.hoje!.itens : [{ slug: c.hoje!.slug, n: c.hoje!.n, mistura: false }]
+    const ids = idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), atuais, incluiSimulados(p))
+    if (!ids.length) return
     const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
     if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma' }))) return
     navegar('/sessao')
@@ -262,7 +283,8 @@ export function PlanoEstudo() {
       aoIncluirSimulados: () => definirEditando(true),
       aoMini: comecarMini,
       aoMarcar: marcarFeito,
-      feitosDia: feitosDia.data === chaveHoje() ? feitosDia : { data: chaveHoje() },
+      feitosDia: { data: chaveHoje(), ...(marcasHoje.flashcards ? { flashcards: true } : {}), ...(marcasHoje.mini ? { mini: true } : {}) },
+      resumaoLido: marcasHoje.resumao ?? [],
       minutosQuestao,
       aoSemanaDificil: semanaDificil,
       aoCancelarAdiantar: cancelarAdiantar,
@@ -281,6 +303,7 @@ export function PlanoEstudo() {
   return (
     <div className="empilha-2 pe cp">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
+      {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
       <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
     </div>
@@ -290,6 +313,18 @@ export function PlanoEstudo() {
 /** O que a pessoa marcou como feito hoje fora das questões (flashcards, mini-simulado). O resumão tem registro próprio (estado/resumaoLido). */
 interface FeitosDoDia { data: string; flashcards?: boolean; mini?: boolean }
 const chaveHoje = () => { const d = diaCivil(); return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}` }
+/** As marcas de hoje guardadas neste aparelho (as chaves antigas, que continuam valendo offline). */
+function marcasDoAparelho(feitos: FeitosDoDia, resumao: ResumaoHoje): MarcasDia {
+  const em = hojeBR()
+  const deHoje = feitos.data === chaveHoje()
+  const areas = resumao.data === em ? resumao.areas : []
+  return {
+    em,
+    ...(areas.length ? { resumao: areas } : {}),
+    ...(deHoje && feitos.flashcards ? { flashcards: true } : {}),
+    ...(deHoje && feitos.mini ? { mini: true } : {}),
+  }
+}
 
 /** Sessão do cronograma que ficou pela metade (a pessoa fechou o site no meio). */
 function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: number; tema: string; simulado: boolean } | null {
@@ -352,6 +387,8 @@ export interface HubDados {
   aoMini: () => void
   aoMarcar: (chave: 'flashcards' | 'mini') => void
   feitosDia: FeitosDoDia
+  /** Áreas do resumão lidas hoje em qualquer aparelho. */
+  resumaoLido: string[]
   minutosQuestao: number
   aoSemanaDificil: (ativar: boolean) => void
   aoCancelarAdiantar: () => void
@@ -379,7 +416,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   const corHoje = corDaArea(principal?.slug ?? calculo.dias.find((d) => d.itens.length)?.itens[0]?.slug)
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
-    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`) } : undefined })
+    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) || (hub?.resumaoLido ?? []).includes(principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`) } : undefined })
     const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
     // A vitrine mostra o jeito do dia, sem os números (orientação de 14/10): quantas e quanto tempo é do assinante.
     if (calculo.metaDiaria > 0 && !aberto) lista.push({
@@ -587,6 +624,8 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const opcoes = (): OpcoesPlano => ({
     diasLeves: diasLeves.filter((d) => !folgas.includes(d)), qtdLeve, comecarPor, dominadas,
     semanasDificeis: atual?.opcoes?.semanasDificeis ?? [],
+    // O que já foi feito hoje (em qualquer aparelho) continua feito depois de editar o plano.
+    ...(atual?.opcoes?.marcasDia ? { marcasDia: atual.opcoes.marcasDia } : {}),
     ...(provaExtra.nome.trim() && /^\d{4}-\d{2}-\d{2}$/.test(provaExtra.data) ? { provaExtra: { nome: provaExtra.nome.trim().slice(0, 30), data: provaExtra.data } } : {}),
   })
   // As três intensidades simuladas com as escolhas atuais: meta, tempo e o que cobre.

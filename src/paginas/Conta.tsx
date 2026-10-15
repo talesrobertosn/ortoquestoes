@@ -1,4 +1,5 @@
 import { useEffect, useState, type FormEvent } from 'react'
+import { haQuanto } from '../componentes/IndicadorSincronia'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
 import { avisoConta, definirAvisoConta } from '../conta/retornoAuth'
@@ -519,7 +520,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <p className="ct-heroi__email">{sessao.user.email}</p>
           <p className="ct-heroi__sync" role="status">
             <span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" />
-            {ROTULOS_STATUS[status.estado]}{status.pendentes > 0 && ` · ${status.pendentes} ${status.pendentes === 1 ? 'pendente' : 'pendentes'}`}
+            {ROTULOS_STATUS[status.estado]}{status.estado === 'salvo' && status.ultimaSincronia ? ` ${haQuanto(status.ultimaSincronia)}` : ''}{status.pendentes > 0 && ` · ${status.pendentes} ${status.pendentes === 1 ? 'pendente' : 'pendentes'}`}
           </p>
           {status.estado === 'erro' && status.detalhe && <p className="ct-heroi__erro">Motivo: {status.detalhe}</p>}
         </div>

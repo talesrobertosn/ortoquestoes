@@ -70,24 +70,63 @@ export function receberDocumento(estado: EstadoSync, doc: Documento, enviada?: A
   return true
 }
 
+/** Uma tentativa no histórico de uma questão (ver estado/revisao.ts). */
+interface Tentativa { em: number; correta: boolean | null; confianca?: string }
+interface RegistroSync { c: boolean | null; q: number; tentativas?: number; acertos?: number; erros?: number; p?: string; historico?: Tentativa[]; [campo: string]: unknown }
+const ehRegistro = (v: unknown): v is RegistroSync => !!v && typeof v === 'object' && !Array.isArray(v) && 'q' in (v as object)
+const chaveTentativa = (t: Tentativa) => `${t.em}|${t.correta}`
+
+/**
+ * Junta duas versões da mesma questão respondida em aparelhos diferentes sem
+ * perder nenhuma tentativa. A base é a versão com a resposta mais recente (o
+ * estado da revisão segue a última resposta); as tentativas que só a outra
+ * versão conhece entram no histórico e nos contadores. Relógios diferentes
+ * entre aparelhos só podem trocar qual das duas é "a última", nunca apagar uma.
+ */
+export function juntarRespondida(a: unknown, b: unknown): unknown {
+  if (!ehRegistro(a)) return ehRegistro(b) ? b : a
+  if (!ehRegistro(b)) return a
+  const [novo, velho] = Number(b.q) > Number(a.q) ? [b, a] : [a, b]
+  const conhecidas = new Set((novo.historico ?? []).map(chaveTentativa))
+  // Registro antigo, sem histórico: a própria resposta é a única tentativa conhecida.
+  const doVelho = velho.historico?.length ? velho.historico : [{ em: velho.q, correta: velho.c }]
+  const extras = doVelho.filter(t => !conhecidas.has(chaveTentativa(t)) && t.em !== novo.q)
+  if (!extras.length) return novo
+  const historico = [...(novo.historico ?? [{ em: novo.q, correta: novo.c }]), ...extras].sort((x, y) => x.em - y.em).slice(-8)
+  const primeiraMaisAntiga = (velho.historico?.[0]?.em ?? velho.q) < (novo.historico?.[0]?.em ?? novo.q)
+  return {
+    ...novo,
+    tentativas: (novo.tentativas ?? 1) + extras.length,
+    acertos: (novo.acertos ?? Number(novo.c === true)) + extras.filter(t => t.correta === true).length,
+    erros: (novo.erros ?? Number(novo.c === false)) + extras.filter(t => t.correta === false).length,
+    ...(primeiraMaisAntiga && velho.p ? { p: velho.p } : {}),
+    historico,
+  }
+}
+
 /**
  * Mesmo item alterado em dois aparelhos. Em vez de travar a fila esperando uma
  * decisão manual (que quase ninguém vê), resolve sozinho: na resposta de
- * questão vale a mais recente; nos demais tipos vale a deste aparelho, que é
+ * questão, junta as duas (nenhuma tentativa se perde) e reenvia a junção sobre
+ * a versão do servidor; nos demais tipos vale a deste aparelho, que é
  * reenviada sobre a versão atual do servidor. Retorna true quando o documento
- * remoto deve ser aplicado localmente.
+ * remoto (possivelmente já juntado, em `doc.valor`) deve ser aplicado localmente.
  */
 export function resolverConflito(estado: EstadoSync, id: string, doc: Documento): boolean {
   const pendente = estado.pendentes[id]
   delete estado.conflitos[id]
   if (!pendente) return true
-  if (doc.tipo === 'respondidas') {
-    const quandoRemoto = Number((doc.valor as { q?: number } | null)?.q ?? 0)
-    const quandoLocal = Number((pendente.valor as { q?: number } | null)?.q ?? 0)
-    if (doc.valor !== null && quandoRemoto > quandoLocal) {
+  if (doc.tipo === 'respondidas' && doc.valor !== null && pendente.valor !== null) {
+    const junto = juntarRespondida(doc.valor, pendente.valor)
+    if (JSON.stringify(junto) === JSON.stringify(doc.valor)) {
       delete estado.pendentes[id]
       return true
     }
+    pendente.valor = junto
+    pendente.base = doc.versao
+    pendente.operacao = gerarId()
+    doc.valor = junto
+    return true
   }
   pendente.base = doc.versao
   pendente.operacao = gerarId()
