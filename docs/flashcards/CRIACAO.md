@@ -16,6 +16,31 @@ cada lote. As regras de forma vêm de [FORMATOS.md](FORMATOS.md).
 
 A fábrica nunca apaga nem altera um autoral.
 
+## OrtoQuestões Simulados (desde 15/10/2026)
+
+As questões dos OrtoQuestões Simulados (TEOT e TARO escritos pela casa; no acervo,
+`"simulado": true`, sem `prova` e sem `area` própria) **já entravam na fábrica** desde o
+início: 754 das 799 viraram flashcard automático. O que faltava era saber de onde cada
+flashcard veio e tratá-las no cronograma. Agora:
+
+- **Marca de origem.** Todo flashcard (da fábrica ou autoral) cuja questão é de simulado
+  leva `"colecao": "simulados"`. A regra fica em `fabrica.colecao_da_questao` e é a mesma
+  de `simuladoDeOrtopedia` em `src/dados/acervo.ts`: o Fellowship Quadril, que tem prova e
+  área, fica de fora. A marca é aplicada na publicação, então os flashcards antigos também
+  a recebem; o `indice.json` conta `simulados` no total e por área.
+- **No app.** O botão "De onde veio" diz "dos OrtoQuestões Simulados" em vez de "do acervo".
+- **No cronograma.** As questões de simulado não contam para a incidência (que é só de
+  prova oficial), mas seguem a mesma ordem de assuntos. `CRONOGRAMA.md` ganhou a seção
+  "OrtoQuestões Simulados", com quantas questões de simulado cada assunto tem e quantos
+  flashcards da fábrica e autorais saíram delas.
+- **Para escrever:** `cronograma.py proximo --simulados` abre o assunto de maior incidência
+  que ainda tem questão de simulado comentada sem autoral e lista só essas questões
+  (marcadas "OrtoQuestões Simulados"). Com `--assunto`, restringe ao assunto pedido.
+  As regras de escrita são as mesmas: trecho literal do comentário, nada de fora.
+- **Primeiros lotes (15/10/2026):** anatomia do antebraço (Netter, Anatomia da mão e punho)
+  e coronoide e cabeça do rádio (Fratura da cabeça do rádio e instabilidade do cotovelo),
+  os dois primeiros assuntos da fila com questões de simulado.
+
 ## Rotina
 
 ```bash
@@ -28,7 +53,7 @@ python3 scripts/flashcards/fabrica.py validar       # confere tudo o que está p
 ```
 
 Para outro assunto: `proximo --assunto "Lesões fisárias"`. Para ver mais
-questões: `proximo --n 10 --pular 6`.
+questões: `proximo --n 10 --pular 6`. Só OrtoQuestões Simulados: `proximo --simulados`.
 
 ## Formato do lote
 
@@ -47,6 +72,7 @@ Uma lista JSON. Cada item:
 | `certa` | com `opcoes` | índice da alternativa igual à resposta |
 | `alerta` | se o comentário tiver divergência | o aviso, copiado |
 | `dificuldade` | não | 1, 2 ou 3 (sem ela, é estimada) |
+| `colecao` | não (automático) | preenchido na publicação: `simulados` quando a questão é dos OrtoQuestões Simulados |
 
 Exemplo real (aprovado no lote piloto de 13/10/2026):
 
