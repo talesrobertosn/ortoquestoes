@@ -19,7 +19,10 @@ export function AdminConfiguracoes() {
   const [emails, definirEmails] = useState<ConfigEmails | null>(null)
   const [enviados, definirEnviados] = useState<EmailEnviado[] | null>(null)
   const [erro, definirErro] = useState('')
-  const [mensagem, definirMensagem] = useState('')
+  // Sucesso e erro tinham a mesma cor verde: erro parecia confirmação.
+  const [mensagem, definirRecado] = useState<{ texto: string; erro: boolean }>({ texto: '', erro: false })
+  const definirMensagem = (texto: string) => definirRecado({ texto, erro: false })
+  const definirFalha = (texto: string) => definirRecado({ texto, erro: true })
   const [novo, definirNovo] = useState({ texto: '', link: '', rotulo: '', tom: 'destaque' as Aviso['tom'], dias: '7' })
 
   const carregar = useCallback(async () => {
@@ -44,7 +47,7 @@ export function AdminConfiguracoes() {
     try {
       await chamarRpc('definir_config_comercial_admin', { p_paywall_ativo: rascunho.paywall_ativo, p_limite: rascunho.limite_diario_gratis, p_pagamentos_ativos: rascunho.pagamentos_ativos })
       definirMensagem('Configuração comercial salva.'); await carregar()
-    } catch { definirMensagem('Não foi possível salvar a configuração comercial.') }
+    } catch { definirFalha('Não foi possível salvar a configuração comercial.') }
   }
 
   async function publicarAviso() {
@@ -53,14 +56,14 @@ export function AdminConfiguracoes() {
     try {
       await chamarRpc('salvar_aviso_admin', { p_texto: novo.texto.trim(), p_link: novo.link.trim() || null, p_rotulo_link: novo.rotulo.trim() || null, p_tom: novo.tom, p_fim: fim })
       definirNovo({ texto: '', link: '', rotulo: '', tom: 'destaque', dias: '7' }); definirMensagem('Aviso publicado: já aparece no topo do site.'); await carregar()
-    } catch { definirMensagem('Não foi possível publicar o aviso. O link precisa começar com https:// ou #/.') }
+    } catch { definirFalha('Não foi possível publicar o aviso. O link precisa começar com https:// ou #/.') }
   }
   async function encerrarAviso() {
-    try { await chamarRpc('encerrar_aviso_admin', {}); definirMensagem('Aviso retirado do site.'); await carregar() } catch { definirMensagem('Não foi possível retirar o aviso.') }
+    try { await chamarRpc('encerrar_aviso_admin', {}); definirMensagem('Aviso retirado do site.'); await carregar() } catch { definirFalha('Não foi possível retirar o aviso.') }
   }
   async function salvarEmails(proximo: ConfigEmails) {
     definirEmails(proximo)
-    try { await chamarRpc('definir_config_emails_admin', { p_marcos: proximo.marcos_automaticos, p_alertas: proximo.alertas_admin }) } catch { definirMensagem('Não foi possível salvar a configuração de e-mails.'); await carregar() }
+    try { await chamarRpc('definir_config_emails_admin', { p_marcos: proximo.marcos_automaticos, p_alertas: proximo.alertas_admin }) } catch { definirFalha('Não foi possível salvar a configuração de e-mails.'); await carregar() }
   }
 
   if (erro) return <section className="adm-secao"><p role="alert" className="adm-alerta">{erro}</p></section>
@@ -69,7 +72,7 @@ export function AdminConfiguracoes() {
   const falhas = enviados?.filter(e => e.status === 'falhou').length ?? 0
 
   return <div className="empilha-2">
-    {mensagem && <p role="status" className="adm-nota adm-mensagem">{mensagem}</p>}
+    {mensagem.texto && <p role={mensagem.erro ? 'alert' : 'status'} className={'adm-nota adm-mensagem' + (mensagem.erro ? ' adm-mensagem--erro' : '')}>{mensagem.texto}</p>}
 
     <AdminRecursosPagos />
 

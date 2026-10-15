@@ -42,7 +42,10 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   const { indice } = usarIndice()
   const [detalhe, definirDetalhe] = useState<Detalhe | null>(null)
   const [erro, definirErro] = useState('')
-  const [aviso, definirAviso] = useState('')
+  // Sucesso e erro tinham a mesma cor verde: erro parecia confirmação.
+  const [aviso, definirAvisoBruto] = useState<{ texto: string; erro: boolean }>({ texto: '', erro: false })
+  const definirAviso = (texto: string) => definirAvisoBruto({ texto, erro: false })
+  const definirFalha = (texto: string) => definirAvisoBruto({ texto, erro: true })
   const [ocupado, definirOcupado] = useState(false)
   const [recado, definirRecado] = useState('')
   const [previa, definirPrevia] = useState<string | null>(null)
@@ -124,7 +127,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   async function acao(rotulo: string, fazer: () => Promise<unknown>, sucesso: string) {
     if (ocupado) return
     definirOcupado(true); definirAviso('')
-    try { await fazer(); definirAviso(sucesso); await carregar() } catch (f) { const texto = String(f).replace(/^Error: /, ''); definirAviso(`${rotulo}: ${rotulo === 'Envio' ? motivoFalhaEmail(texto) : texto}`) } finally { definirOcupado(false) }
+    try { await fazer(); definirAviso(sucesso); await carregar() } catch (f) { const texto = String(f).replace(/^Error: /, ''); definirFalha(`${rotulo}: ${rotulo === 'Envio' ? motivoFalhaEmail(texto) : texto}`) } finally { definirOcupado(false) }
   }
 
   const nome = usuario.nome ?? usuario.email?.split('@')[0] ?? 'Sem nome'
@@ -173,7 +176,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
       </header>
 
       {erro ? <p role="alert" className="adm-alerta">{erro}</p> : !detalhe ? <p role="status">Carregando…</p> : <div className="empilha adm-ficha__corpo">
-        {aviso && <p role="status" className="adm-nota adm-mensagem">{aviso}</p>}
+        {aviso.texto && <p role={aviso.erro ? 'alert' : 'status'} className={'adm-nota adm-mensagem' + (aviso.erro ? ' adm-mensagem--erro' : '')}>{aviso.texto}</p>}
 
         <dl className="adm-cartao__dados adm-ficha__numeros">
           <div><dt>Questões</dt><dd className="numerico">{usuario.respondidas.toLocaleString('pt-BR')}</dd></div>

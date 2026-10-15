@@ -175,6 +175,10 @@
 .adm-celula { display: inline-block; min-width: 3.4rem; padding: .15rem .45rem; border-radius: 6px; font-weight: 700; font-variant-numeric: tabular-nums; background: linear-gradient(90deg, var(--verdete-veu) var(--p, 0%), transparent var(--p, 0%)); }
 .adm-linha-nota { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .4rem 1rem; }
 .adm-mensagem { padding: .6rem .85rem; border-radius: var(--raio-controle); background: var(--verdete-veu); color: var(--verdete-tinta); font-weight: 600; }
+.adm-mensagem--erro { background: var(--erro-veu); color: var(--erro); }
+/* Alertas do painel: aviso (role=status, ex.: migração pendente) em âmbar; erro (role=alert) em vermelho. */
+.adm-alerta { margin: 0; padding: .6rem .85rem; border-radius: var(--raio-controle); border-left: 4px solid var(--aviso); background: var(--aviso-veu); color: var(--texto); font-weight: 600; }
+.adm-alerta[role="alert"] { border-left-color: var(--erro); background: var(--erro-veu); color: var(--erro); }
 .adm-subtitulo { display: flex; align-items: center; gap: .5rem; margin: .25rem 0 0; font-size: 1rem; }
 .adm-campo-curto { max-width: 16rem; }
 .adm-aviso-previa { border: var(--borda); border-radius: var(--raio-controle); overflow: hidden; }
