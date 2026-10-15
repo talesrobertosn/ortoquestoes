@@ -157,7 +157,7 @@ function paginaDaRota(rota: Rota): ReactNode {
       pagina = <CondicoesAssinatura />
       break
     case 'assinatura':
-      pagina = <Assinatura />
+      pagina = <Assinatura consulta={rota.consulta} />
       break
     case 'admin':
       // /admin/assinaturas era o endereço antigo do painel e continua valendo.

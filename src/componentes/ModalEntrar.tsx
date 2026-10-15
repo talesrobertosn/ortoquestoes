@@ -6,6 +6,7 @@ import { Icone } from './Icone'
 import { BotaoGoogle } from './BotaoGoogle'
 import { ModalConfirmarEmail } from './ModalConfirmarEmail'
 import { limparConfirmacaoPendente } from '../conta/confirmacaoPendente'
+import { levarEmail, linkConta } from '../conta/passagem'
 
 /**
  * Entrar sem sair da página inicial: um pop-up pequeno e centralizado, não um
@@ -99,8 +100,8 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
           <button className="botao botao--principal botao--largo" disabled={ocupado}>{ocupado ? 'Entrando…' : 'Entrar'}</button>
         </form>
         <a
-          href={href('/conta?modo=recuperar')}
-          onClick={fechar}
+          href={href(linkConta('recuperar'))}
+          onClick={() => { levarEmail(email); fechar() }}
           className="texto-2"
         >
           Esqueceu sua senha?
@@ -110,7 +111,7 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
           <button
             type="button"
             className="botao botao--principal"
-            onClick={() => { fechar(); navegar('/conta?modo=criar') }}
+            onClick={() => { fechar(); navegar(linkConta('criar')) }}
           >
             Criar conta gratuita
           </button>

@@ -8,12 +8,14 @@ import { Simbolo } from '../marca/Simbolo'
 import { JanelaCentral } from '../componentes/JanelaCentral'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { eventoMeta } from '../conta/consentimento'
-import { href } from '../util/rotas'
+import { href, navegar } from '../util/rotas'
+import { linkConta } from '../conta/passagem'
 import { FLASHCARDS_NA_VENDA, recurso, LIMITE_GRATIS_ATUAL, ROTULO_SIMULADOS } from '../config'
 import { MENSAL, PLANOS, real, ECONOMIA_ANUAL } from '../dados/planos'
 import { AREAS, BASE_CONTAGEM } from '../dados/incidencia'
-import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia } from '../estado/limiteDiario'
+import { diasAte, proximaProva, RITMOS_PLANOS as RITMOS } from '../dados/ritmos'
+import { usarAssinante } from '../conta/plano'
 import '../estilos/paginas/Assinatura.css'
 
 /**
@@ -51,9 +53,13 @@ const GANHOS: Array<{ icone: NomeIconePixel; titulo: string; texto: string; iten
   { icone: 'turma', titulo: 'Saiba onde você está', texto: 'Compare com quem estuda para a mesma prova e chegue sabendo o que falta.', itens: ['Como a turma respondeu cada alternativa', 'Simulado Nacional todo mês, com sua posição', 'Liga da residência e relatório do mês'] },
 ]
 
-export function Assinatura() {
+export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao } = usarConta()
   const [metricas, definirMetricas] = useState<MetricasConta | null>(null)
+  // Até a consulta da conta voltar, vale o que ficou guardado (conta/plano.ts):
+  // quem assina não vê a página de vendas piscar antes de "Minha assinatura".
+  const [consultou, definirConsultou] = useState(false)
+  const assinanteGuardado = usarAssinante(sessao)
   const [mensagem, definirMensagem] = useState<string | null>(null)
   const [planoEscolhido, definirPlanoEscolhido] = useState<Plano | null>(null)
   const [aceitouCondicoes, definirAceitouCondicoes] = useState(false)
@@ -61,16 +67,22 @@ export function Assinatura() {
   const [meioPagamento, definirMeioPagamento] = useState<'cartao' | 'pix'>(pixHabilitado ? 'pix' : 'cartao')
   const [cpf, definirCpf] = useState('')
   const [pix, definirPix] = useState<{ url: string; pedido_id: string; expira_em: string } | null>(null)
-  const [vitrine, definirVitrine] = useState<Plano>(PLANO_ANUAL)
+  // ?plano= mantém o plano escolhido por quem criou a conta a partir desta página.
+  const [vitrine, definirVitrine] = useState<Plano>(() => PLANOS.find((p) => p.id === consulta?.get('plano')) ?? PLANO_ANUAL)
   const [barraVisivel, definirBarraVisivel] = useState(false)
   const heroi = useRef<HTMLElement>(null)
   const locais = useMemo(() => Object.values(lerRespondidas()), [])
   const nome = String(sessao?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
 
+  // Falha na consulta não pode deixar "Carregando assinatura…" para sempre: mostra o
+  // erro com "Tentar de novo" (o assinante guardado continua vendo a área dele).
+  const [falhouConsulta, definirFalhouConsulta] = useState(false)
+  const [tentativa, definirTentativa] = useState(0)
   useEffect(() => {
     if (!sessao) return
-    chamarRpc<MetricasConta[]>('obter_estado_conta', {}).then((r) => definirMetricas(r[0] ?? null)).catch(() => definirMetricas(null))
-  }, [sessao])
+    definirFalhouConsulta(false)
+    chamarRpc<MetricasConta[]>('obter_estado_conta', {}).then((r) => { definirMetricas(r[0] ?? null); definirConsultou(true) }).catch(() => { definirMetricas(null); definirFalhouConsulta(true) })
+  }, [sessao, tentativa])
 
   useEffect(() => {
     if (!pix || !sessao) return
@@ -106,7 +118,7 @@ export function Assinatura() {
     const observador = new IntersectionObserver(([e]) => definirBarraVisivel(!e.isIntersecting), { rootMargin: '-80px 0px 0px 0px' })
     observador.observe(alvo)
     return () => observador.disconnect()
-  }, [metricas])
+  }, [metricas, consultou, assinanteGuardado])
 
   function escolher(plano: Plano) {
     if (!pagamentosHabilitados || !sessao) return
@@ -117,10 +129,10 @@ export function Assinatura() {
     definirAceitouCondicoes(false)
     definirMensagem(null)
   }
-  /** Botões de compra da página: sem conta, cria a conta e volta para cá. */
+  /** Botões de compra da página: sem conta, cria a conta e volta para cá, com o plano escolhido. */
   function comprar(plano: Plano) {
-    if (!sessao) { location.assign(href('/conta?modo=criar&voltar=%2Fassinatura')); return }
-    if (!pagamentosHabilitados) { irPara('planos'); return }
+    if (!pagamentosHabilitados) return
+    if (!sessao) { navegar(linkConta('criar', `/assinatura?plano=${plano.id}`)); return }
     escolher(plano)
   }
   async function confirmarCompra() {
@@ -155,15 +167,21 @@ export function Assinatura() {
   const ativa = Boolean(metricas?.status_assinatura === 'ativa' && (!metricas.fim_periodo || new Date(metricas.fim_periodo).getTime() > Date.now()))
   const acessoPagoAteOFim = Boolean(metricas?.status_assinatura === 'cancelada' && metricas.fim_periodo && new Date(metricas.fim_periodo).getTime() > Date.now())
 
-  // Quem já tem acesso pago vê o estado do plano no topo, e não a página de vendas.
-  const comAcessoPago = Boolean((ativa || acessoPagoAteOFim) && metricas)
+  // Quem já tem acesso pago vê "Minha assinatura" no topo, e não a página de vendas.
+  const comAcessoPago = consultou ? Boolean((ativa || acessoPagoAteOFim) && metricas) : assinanteGuardado
   // Pix (ativo, sem renovação automática) nos 7 dias finais: pode renovar já, e o
   // período novo começa quando o atual termina (o servidor soma os dias).
   const fimAtual = metricas?.fim_periodo ? Date.parse(metricas.fim_periodo) : NaN
   const renovarPix = pixHabilitado && ativa && Boolean(metricas?.cancelar_ao_fim) && Number.isFinite(fimAtual) && fimAtual - Date.now() <= 7 * 864e5
   const diasRestantes = renovarPix ? Math.max(1, Math.ceil((fimAtual - Date.now()) / 864e5)) : 0
   const fimAtualTexto = renovarPix ? new Date(fimAtual).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) : ''
-  const rotuloComprar = (p: Plano) => !sessao ? 'Criar conta e assinar' : renovarPix ? `Renovar no Pix: ${p.nome.toLowerCase()}` : ativa ? 'Plano ativo' : pagamentosHabilitados ? `Assinar o ${p.nome.toLowerCase()}` : 'Em breve'
+  // Pagamentos desligados: todo botão de compra mostra "Em breve" e fica desabilitado, com ou sem conta.
+  const semCompra = !pagamentosHabilitados || (Boolean(sessao) && ativa && !renovarPix)
+  const rotuloComprar = (p: Plano) => !pagamentosHabilitados ? 'Em breve' : !sessao ? 'Criar conta e assinar' : renovarPix ? `Renovar no Pix: ${p.nome.toLowerCase()}` : ativa ? 'Plano ativo' : `Assinar o ${p.nome.toLowerCase()}`
+  const fimTexto = metricas?.fim_periodo ? new Date(metricas.fim_periodo).toLocaleDateString('pt-BR') : null
+  const semRenovacao = Boolean(metricas?.cancelar_ao_fim || acessoPagoAteOFim)
+  // A barra fixa só existe quando dá para comprar; fora da tela, sai também da leitura e do Tab.
+  const barraNaTela = barraVisivel && !planoEscolhido
 
   return (
     <div className="vd">
@@ -193,22 +211,32 @@ export function Assinatura() {
             <IconePixel nome="planos" tamanho={34} />
             <span><strong>Menos que um almoço.</strong> {real(porMes(vitrine))} garantem 30 dias de estudo com cronograma, ou {centavos(porDia(vitrine))} por dia.</span>
           </p>
-          <button type="button" className="botao botao--grande vd-botao-ouro" disabled={Boolean(sessao) && pagamentosHabilitados && ativa && !renovarPix} onClick={() => comprar(vitrine)}>{rotuloComprar(vitrine)}</button>
+          <button type="button" className="botao botao--grande vd-botao-ouro" disabled={semCompra} onClick={() => comprar(vitrine)}>{rotuloComprar(vitrine)}</button>
           <a className="vd-preco__comparar" href="#planos" onClick={(e) => { e.preventDefault(); irPara('planos') }}>Comparar os 3 planos <Icone nome="baixo" tamanho={14} /></a>
         </div>
       </section>}
 
-      {(ativa || acessoPagoAteOFim) && metricas && (
-        <section className="vd-ativo">
+      {comAcessoPago && (
+        <section className="vd-ativo" aria-labelledby="vd-titulo-minha">
           <span className="vd-ativo__icone"><Icone nome="certo" tamanho={22} /></span>
           <div>
-            <h2>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Acesso pago sem renovação automática' : `Seu plano ${metricas.plano} está ativo`}</h2>
-            <p>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {metricas.fim_periodo ? new Date(metricas.fim_periodo).toLocaleDateString('pt-BR') : 'o fim do período atual'}.</p>
+            <h1 id="vd-titulo-minha">Minha assinatura</h1>
+            {!metricas ? (falhouConsulta
+              ? <p role="alert">Não foi possível carregar os dados da assinatura agora. <button type="button" className="botao--vinculo" onClick={() => definirTentativa((n) => n + 1)}>Tentar de novo</button></p>
+              : <p role="status">Carregando assinatura…</p>) : <>
+            <h2>{semRenovacao ? 'Acesso pago sem renovação automática' : `Seu plano ${metricas.plano} está ativo`}</h2>
+            <p>{semRenovacao ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {fimTexto ?? 'o fim do período atual'}.</p>
+            <dl className="vd-ativo__dados">
+              <div><dt>Plano</dt><dd>{metricas.plano ? `Plano ${metricas.plano}` : 'Assinante'}</dd></div>
+              <div><dt>{semRenovacao ? 'Término do acesso' : 'Próxima cobrança'}</dt><dd>{fimTexto ?? 'Não informada'}</dd></div>
+              {metricas.ultima_cobranca_em && <div><dt>Última cobrança</dt><dd>{new Date(metricas.ultima_cobranca_em).toLocaleDateString('pt-BR')}</dd></div>}
+            </dl>
+            </>}
             <div className="linha">
               <a className="botao botao--principal" href={href('/cronograma')}>Abrir o cronograma</a>
               <a className="botao" href={href('/conta/assinatura')}>Gerenciar renovação ou pedir reembolso</a>
             </div>
-            {renovarPix && <p className="vd-ativo__renovar"><strong>Faltam {diasRestantes} {diasRestantes === 1 ? 'dia' : 'dias'}. Renove agora pelo Pix sem perder nada:</strong> os dias que restam continuam valendo e o novo período começa em {fimAtualTexto}, quando o atual termina. <a href="#planos">Escolher o plano</a></p>}
+            {metricas && renovarPix && <p className="vd-ativo__renovar"><strong>Faltam {diasRestantes} {diasRestantes === 1 ? 'dia' : 'dias'}. Renove agora pelo Pix sem perder nada:</strong> os dias que restam continuam valendo e o novo período começa em {fimAtualTexto}, quando o atual termina. <a href="#planos" onClick={(e) => { e.preventDefault(); irPara('planos') }}>Escolher o plano</a></p>}
           </div>
         </section>
       )}
@@ -236,7 +264,7 @@ export function Assinatura() {
       {FLASHCARDS_NA_VENDA && <Suspense fallback={null}><CartaoCriptaVenda variante="venda" limites={limitesHabilitados} /></Suspense>}
 
       {/* 3. O cronograma na prática. */}
-      <PreviaCronograma conta={Boolean(sessao)} assinante={comAcessoPago} />
+      {!comAcessoPago && <PreviaCronograma conta={Boolean(sessao)} />}
 
       {/* 4. Grátis × assinante: uma tabela só. */}
       {!comAcessoPago && <section className="vd-secao" aria-labelledby="vd-titulo-compara">
@@ -274,7 +302,8 @@ export function Assinatura() {
       </section>}
 
       {/* 5. Planos, pagamento e garantia, juntos. */}
-      {(!ativa || renovarPix) && <section className="vd-secao vd-planos-secao" id="planos" aria-labelledby="vd-titulo-planos">
+      {/* Com acesso pago, os planos só aparecem para renovar o Pix ou, sem renovação, voltar a assinar. */}
+      {(!comAcessoPago || renovarPix || (metricas && !ativa)) && <section className="vd-secao vd-planos-secao" id="planos" aria-labelledby="vd-titulo-planos">
         <header className="vd-cabeca">
           <p className="vd-sobre">Planos</p>
           <h2 id="vd-titulo-planos">Os três liberam tudo. <em>Muda só como você paga.</em></h2>
@@ -297,9 +326,9 @@ export function Assinatura() {
                 <p className="vd-plano__mes"><small>R$</small><strong>{semMoeda(porMes(p))}</strong><small>/mês</small></p>
                 <p className="vd-plano__total">{p.meses === 1 ? 'cobrado todo mês, sem fidelidade' : <><b>{real(p.total)}</b> {periodo(p)} · de <s>{real(cheio)}</s></>}</p>
                 <p className="vd-plano__dia"><Icone nome="relogio" tamanho={14} /> {centavos(porDia(p))} por dia de estudo</p>
-                {!sessao
-                  ? <a className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} href={href('/conta?modo=criar&voltar=%2Fassinatura')}>Criar conta para assinar</a>
-                  : <button className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} type="button" disabled={!pagamentosHabilitados || (ativa && !renovarPix)} onClick={() => escolher(p)}>{rotuloComprar(p)}</button>}
+                {!sessao && pagamentosHabilitados
+                  ? <a className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} href={href(linkConta('criar', `/assinatura?plano=${p.id}`))}>Criar conta para assinar</a>
+                  : <button className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} type="button" disabled={semCompra} onClick={() => escolher(p)}>{rotuloComprar(p)}</button>}
               </article>
             )
           })}
@@ -344,13 +373,13 @@ export function Assinatura() {
           <h2>Chegue à prova sabendo o que fez e o que falta.</h2>
           <p>{real(porMes(PLANO_ANUAL))} por mês no anual. Se não for para você, 7 dias e um botão.</p>
         </div>
-        <button type="button" className="botao botao--grande vd-botao-ouro" disabled={Boolean(sessao) && pagamentosHabilitados && ativa && !renovarPix} onClick={() => comprar(PLANO_ANUAL)}>{rotuloComprar(PLANO_ANUAL)}</button>
+        <button type="button" className="botao botao--grande vd-botao-ouro" disabled={semCompra} onClick={() => comprar(PLANO_ANUAL)}>{rotuloComprar(PLANO_ANUAL)}</button>
       </section>}
 
-      {!comAcessoPago && <div className={'vd-barra' + (barraVisivel && !planoEscolhido ? ' vd-barra--visivel' : '')} aria-hidden={!barraVisivel}>
+      {!comAcessoPago && pagamentosHabilitados && <div className={'vd-barra' + (barraNaTela ? ' vd-barra--visivel' : '')} aria-hidden={!barraNaTela}>
         <span className="vd-barra__preco"><strong>{real(porMes(vitrine))}</strong>/mês · {vitrine.nome.toLowerCase()}</span>
         <span className="vd-barra__garantia">7 dias de garantia</span>
-        <button type="button" className="botao vd-botao-ouro" tabIndex={barraVisivel ? 0 : -1} disabled={Boolean(sessao) && pagamentosHabilitados && ativa && !renovarPix} onClick={() => comprar(vitrine)}>{sessao ? 'Assinar' : 'Criar conta'}</button>
+        <button type="button" className="botao vd-botao-ouro" tabIndex={barraNaTela ? 0 : -1} disabled={semCompra} onClick={() => comprar(vitrine)}>{sessao ? 'Assinar' : 'Criar conta'}</button>
       </div>}
 
       <JanelaCentral aberta={planoEscolhido !== null} aoFechar={() => { if (!abrindoCheckout) definirPlanoEscolhido(null) }} rotulo="Finalizar assinatura" className="ck">
@@ -414,8 +443,6 @@ function irPara(id: string) {
 /* Prévia do cronograma: o centro da página.                                  */
 /* ------------------------------------------------------------------------- */
 
-/** Ritmos para escolher, com o tempo aproximado (cerca de 1,5 minuto por questão). */
-const RITMOS: Array<[number, string]> = [[15, '≈ 25 min'], [25, '≈ 40 min'], [40, '≈ 1h'], [60, '≈ 1h30']]
 const FOLGAS: Array<[number, string]> = [[0, 'Todo dia'], [1, '1 folga'], [2, '2 folgas']]
 
 /**
@@ -434,19 +461,13 @@ const PASSADAS_VENDA = (() => {
   ]
 })()
 
-function proximaProva(): string {
-  const hoje = chaveDia()
-  return DATAS_PROVA.find((d) => d > hoje) ?? chaveDia(Date.now() + 182 * 864e5)
-}
-const diasAte = (data: string) => Math.max(0, Math.round((Date.parse(`${data}T12:00:00Z`) - Date.parse(`${chaveDia()}T12:00:00Z`)) / 864e5))
-
 /**
  * A mesma lógica do cronograma de verdade, sem o histórico da pessoa: escolha o
  * ritmo, a data e as folgas e veja as três passadas pelo que mais cai (com as
  * semanas de cada uma), a reta final e como fica um dia do plano. O cronograma
  * real usa as questões do acervo (com os simulados) e o seu histórico.
  */
-function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boolean }) {
+function PreviaCronograma({ conta }: { conta: boolean }) {
   const [ritmo, definirRitmo] = useState(25)
   const [folgas, definirFolgas] = useState(1)
   const [prova, definirProva] = useState(proximaProva)
@@ -543,7 +564,7 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
 
       <div className="vd-cronograma__rodape">
         <p><Icone nome="reiniciar" tamanho={16} /> No cronograma de verdade, o diagnóstico calibra o plano no primeiro dia, as áreas em que você está abaixo da média ganham mais espaço e a meta se recalcula todo dia (atrasou, sobe no máximo 25%). Dia de plantão vira dia leve, a semana difícil fica em 10 questões por dia, e a cada duas semanas vem um mini-simulado.</p>
-        <a className="botao botao--grande vd-botao-ouro" href={href(conta ? '/cronograma' : '/conta?modo=criar&voltar=%2Fcronograma')}>{assinante ? 'Abrir meu cronograma' : conta ? 'Ver um exemplo com o meu histórico' : 'Criar conta grátis e ver o meu'}</a>
+        <a className="botao botao--grande vd-botao-ouro" href={href(conta ? '/cronograma' : '/conta?modo=criar&voltar=%2Fcronograma')}>{conta ? 'Ver um exemplo com o meu histórico' : 'Criar conta grátis e ver o meu'}</a>
       </div>
     </section>
   )

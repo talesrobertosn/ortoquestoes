@@ -85,7 +85,11 @@
 /* ---------- Assinante ativo ---------- */
 .vd-ativo { display: flex; gap: 1rem; padding: 1.25rem; border: 2px solid color-mix(in srgb, var(--acerto) 45%, transparent); border-radius: 6px; background: var(--acerto-veu); box-shadow: 5px 5px 0 color-mix(in srgb, var(--acerto) 22%, transparent); }
 .vd-ativo__icone { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 2.6rem; height: 2.6rem; background: var(--acerto); color: #fff; }
+.vd-ativo h1 { margin: 0 0 0.4rem; font-size: clamp(1.9rem, 4.5vw, 2.4rem); }
 .vd-ativo h2 { margin: 0 0 0.3rem; font-size: 1.7rem; }
+.vd-ativo__dados { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin: 0 0 1rem; }
+.vd-ativo__dados dt { color: var(--texto-2); font-size: var(--meta); }
+.vd-ativo__dados dd { margin: 0; font-weight: 700; }
 .vd-ativo p { margin: 0 0 0.75rem; }
 .vd-ativo .vd-ativo__renovar { margin: 0.9rem 0 0; padding: 0.75rem 0.9rem; background: var(--superficie); border: 2px dashed color-mix(in srgb, var(--acerto) 55%, transparent); line-height: 1.5; }
 

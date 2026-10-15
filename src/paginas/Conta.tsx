@@ -19,6 +19,7 @@ import { dadosAceiteTermos, VERSAO_TERMOS } from '../conta/termos'
 import { dadosOrigem } from '../conta/origem'
 import { eventoMeta } from '../conta/consentimento'
 import { textoErro } from '../conta/erros'
+import { emailTrazido, esquecerEmailTrazido, guardarVoltar, rotaVoltar, tomarVoltar } from '../conta/passagem'
 import { gravarConfirmacaoPendente, lerConfirmacaoPendente, limparConfirmacaoPendente } from '../conta/confirmacaoPendente'
 import { ModalConfirmarEmail } from '../componentes/ModalConfirmarEmail'
 import { Icone } from '../componentes/Icone'
@@ -54,7 +55,12 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
   )
-  const [email, definirEmail] = useState(ultimoEmail), [senha, definirSenha] = useState('')
+  // Destino de quem chegou por um convite (planos, treinar, questão avulsa): vale
+  // para entrar, para o cadastro e para a volta do Google. Ver conta/passagem.ts.
+  const voltar = rotaVoltar(consulta?.get('voltar'))
+  // "Esqueceu a senha?" no pop-up de entrar traz o e-mail que já foi digitado lá.
+  const [email, definirEmail] = useState(() => emailTrazido() || ultimoEmail()), [senha, definirSenha] = useState('')
+  useEffect(() => esquecerEmailTrazido(), [])
   const [confirmacao, definirConfirmacao] = useState(''), [verSenha, definirVerSenha] = useState(false)
   const [novaSenha, definirNovaSenha] = useState(''), [confirmacaoNovaSenha, definirConfirmacaoNovaSenha] = useState('')
   // Aviso deixado pelo retorno de um link de e-mail com problema (expirado,
@@ -237,20 +243,27 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         lembrarEmail(email.trim())
         limparConfirmacaoPendente()
         definirSenha('')
-        // Convite aberto antes de entrar (liga da residência): volta para ele.
-        const voltar = consulta?.get('voltar')
-        if (voltar && voltar.startsWith('/') && !voltar.startsWith('//')) navegar(voltar)
+        // Convite aberto antes de entrar (liga, planos, treinar): volta para ele;
+        // sem convite na rota, vale o de um cadastro feito antes neste navegador.
+        // Consome o destino guardado mesmo quando o da URL vence: ele vale uma vez só e
+        // não pode sobrar para um login posterior (talvez de outra conta) neste navegador.
+        const guardado = tomarVoltar()
+        const destino = voltar ?? guardado
+        if (destino) navegar(destino)
         else navegar('/')
       } else if (modo === 'criar') {
         if (!aceitouTermos) { falhar('Marque que leu e aceita os Termos de Uso para criar sua conta.'); return }
         if (!perfilCompleto(falhar)) return
+        // A conta só abre depois de confirmar o e-mail: o destino fica guardado
+        // para a volta do link (ContextoConta) ou para o próximo "Entrar".
+        guardarVoltar(voltar)
         const { data, error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos(), ...dadosOrigem() } } })
         if (error) throw error
         // Com a confirmação ligada, o Supabase não revela que o e-mail já existe:
         // devolve um usuário sem identidades. É o sinal de cadastro repetido.
         if (data.user && data.user.identities?.length === 0) { falhar('Este e-mail já tem cadastro no Orto Questões. Entre com a sua senha ou recupere o acesso.', 'ja_cadastrado'); return }
         eventoMeta('CompleteRegistration', { content_name: 'email' })
-        if (data.session) { navegar('/'); return }
+        if (data.session) { tomarVoltar(); navegar(voltar ?? '/'); return }
         gravarConfirmacaoPendente(email.trim())
         definirPendente(email.trim())
       } else {
