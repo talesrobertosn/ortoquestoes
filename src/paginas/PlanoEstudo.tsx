@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
 import { guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
@@ -123,6 +123,8 @@ export function PlanoEstudo() {
     const t = setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250)
     return () => clearTimeout(t)
   }, [irAoAdiantar, !!calculo]) // eslint-disable-line react-hooks/exhaustive-deps
+  // O histórico mora no armazenamento local: lido uma vez por mudança nas respostas, não a cada render.
+  const minutosQuestao = useMemo(() => minutosPorQuestao(lerHistorico()), [respondidas])
   const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
   // Os números do painel (constância, risco, esquecimento...) só mudam quando muda o histórico.
   const dadosHub = useMemo(() => {
@@ -257,7 +259,7 @@ export function PlanoEstudo() {
       aoMini: comecarMini,
       aoMarcar: marcarFeito,
       feitosDia: feitosDia.data === chaveHoje() ? feitosDia : { data: chaveHoje() },
-      minutosQuestao: minutosPorQuestao(lerHistorico()),
+      minutosQuestao,
       aoSemanaDificil: semanaDificil,
       aoCancelarAdiantar: cancelarAdiantar,
       salvandoOpcoes,
@@ -570,18 +572,21 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
     ...(provaExtra.nome.trim() && /^\d{4}-\d{2}-\d{2}$/.test(provaExtra.data) ? { provaExtra: { nome: provaExtra.nome.trim().slice(0, 30), data: provaExtra.data } } : {}),
   })
   // As três intensidades simuladas com as escolhas atuais: meta, tempo e o que cobre.
+  // A data é digitada: as três simulações (o cálculo inteiro, três vezes) seguem
+  // a digitação com folga, sem travar o campo a cada tecla.
+  const dataSimulada = useDeferredValue(data)
   const simulacoes = useMemo(() => {
-    if (!dataValida) return null
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dataSimulada) || dataLocal(dataSimulada) <= new Date()) return null
     const base = respondidasNoAcervo(indice, respondidas, simulados)
     const op = opcoes()
     const resultado = {} as Record<Intensidade, { meta: number; maisCai: number; alvo: number }>
     for (const i of Object.keys(ROTULO_INTENSIDADE) as Intensidade[]) {
-      const c = calcularPlano(indice, respondidas, { data_prova: data, intensidade: i, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: op })
+      const c = calcularPlano(indice, respondidas, { data_prova: dataSimulada, intensidade: i, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: op })
       resultado[i] = { meta: c.metaDiaNormal, maisCai: c.projecao.maisCaiPct, alvo: c.alvo }
     }
     return resultado
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [indice, respondidas, data, folgas, simulados, diasLeves, qtdLeve, comecarPor, dominadas.join(','), dataValida])
+  }, [indice, respondidas, dataSimulada, folgas, simulados, diasLeves, qtdLeve, comecarPor, dominadas.join(','), provaExtra.nome, provaExtra.data])
 
   async function salvar() {
     if (!dataValida || salvando) return
