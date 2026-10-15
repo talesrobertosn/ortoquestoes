@@ -1381,6 +1381,174 @@ FORMAS.update({
     "indicacao": chaves, "indicacao-turma": tenda, "revisor": lupa, "editorial": livro_aberto,
 })
 
+# ---- Lote 3 (15/10/2026): revisão e Flashcards, mesmo estilo medieval ----
+CARTA = ["#3a2a14", "#b8975c", "#e9d6a8", "#f7ecd0", "#fffaf0"]
+
+
+def girar(cx: float, cy: float, pontos: list[tuple[float, float]], ang: float) -> list[tuple[float, float]]:
+    c, s_ = math.cos(ang), math.sin(ang)
+    return [(cx + (x - cx) * c - (y - cy) * s_, cy + (x - cx) * s_ + (y - cy) * c) for (x, y) in pontos]
+
+
+def pergaminhos(t: Tela, nivel: str, degrau: int) -> None:
+    """Revisões feitas: a pilha de pergaminhos relidos, um a mais a cada nível."""
+    n = min(4, degrau + 1)
+    topo = 0
+    for i in range(n):
+        y = 25 - i * 5
+        x0 = 7 + (i % 2) * 2
+        t.camada(retangulo(x0, y - 2, x0 + 16, y + 2), PERGAMINHO)
+        t.camada(circulo(x0, y, 2.6) | circulo(x0 + 16, y, 2.6), PERGAMINHO)
+        t.pintar(linha(x0, y - 1.5, x0, y + 1.5, 0.3) | linha(x0 + 16, y - 1.5, x0 + 16, y + 1.5, 0.3), PERGAMINHO[1])
+        topo = y
+    t.camada(retangulo(15, topo - 2, 17, topo + 5), TECIDO_VERMELHO, contorno=False)
+    t.camada(circulo(16, topo + 6, 2.6), METAIS[nivel])
+    t.brilho(9, topo - 4, "#fff8e6")
+
+
+def tabua(t: Tela, nivel: str, degrau: int) -> None:
+    """Constância na revisão: a tábua de pedra com os dias riscados, grupo a grupo."""
+    t.camada(retangulo(5, 9, 26, 29) | circulo(15.5, 10, 10.5) & retangulo(5, 0, 26, 12), PEDRA)
+    t.camada(retangulo(5, 27, 26, 29), METAIS[nivel])
+    grupos = [(8, 11), (17, 11), (8, 19), (17, 19)][: min(4, degrau + 1)]
+    for (x, y) in grupos:
+        for k in range(4):
+            t.pintar(linha(x + k * 1.6, y, x + k * 1.6, y + 5, 0.3), METAIS[nivel][3])
+        t.pintar(linha(x - 0.8, y + 4.5, x + 5.6, y + 0.5, 0.3), METAIS[nivel][4])
+    t.brilho(10, 6, "#e7e5e4")
+
+
+def trompa(t: Tela, nivel: str, degrau: int) -> None:
+    """Resgate de atrasadas: a trompa que chama de volta quem ficou para trás."""
+    t.camada(linha(6, 25, 13, 28, 0.8) | linha(13, 28, 23, 22, 0.8), MADEIRA, contorno=False)
+    t.camada(poligono([(3, 25), (5, 21), (16, 13), (21, 6), (28, 13), (22, 18), (8, 27)]), OSSO)
+    t.camada(circulo(24.5, 9.5, 5.2), OSSO)
+    t.pintar(circulo(25.2, 8.8, 3), "#3b2f1e")
+    t.camada(circulo(24.5, 9.5, 5.2) - circulo(24.5, 9.5, 4.2), METAIS[nivel], contorno=False)
+    for (x, y) in ((10, 22), (16, 17)):
+        t.camada(poligono(girar(x, y, [(x - 1, y - 3), (x + 1, y - 3), (x + 1, y + 3), (x - 1, y + 3)], math.radians(-50))), METAIS[nivel], contorno=False)
+    for i in range(min(3, degrau + 1)):
+        t.pintar(linha(27 + i * 1.5, 2 + i * 0.5, 30, 4 + i * 2, 0.3), "#fde68a")
+
+
+def muralha(t: Tela, nivel: str, degrau: int) -> None:
+    """Muralha derrubada: cem revisões num dia abrem o rombo na muralha."""
+    parede = retangulo(3, 11, 28, 27)
+    for x in (3, 9, 21, 27):
+        parede |= retangulo(x - 0 if x < 27 else 25, 7, (x + 3) if x < 27 else 28, 11)
+    rombo = poligono([(11, 11), (21, 11), (19, 17), (17, 27), (13, 27), (12, 18)])
+    t.camada(parede - rombo, PEDRA)
+    t.pintar(rombo & retangulo(0, 0, 31, 27), "#0c0a09")
+    for y in (15, 19, 23):
+        t.pintar(linha(3, y, 10, y, 0.3) | linha(21, y, 28, y, 0.3), PEDRA[1])
+    for (x, y) in ((8, 29), (12, 29), (17, 29), (22, 29), (25, 28)):
+        t.camada(circulo(x, y, 1.6), PEDRA)
+    t.camada(estrela_forma(16, 20, 3.4, 1.4), METAIS[nivel], contorno=False)
+
+
+def poco(t: Tela, nivel: str, degrau: int) -> None:
+    """Profundezas: o poço com a escada em espiral; cada nível acende mais uma tocha."""
+    t.camada(circulo(16, 16, 13.5), PEDRA)
+    for r, c in ((10.5, "#292524"), (8, "#1c1917"), (5, "#0c0a09")):
+        t.pintar(circulo(16, 16, r), c)
+    for k in range(12):
+        a = k * 0.62
+        r = 9.5 - k * 0.55
+        x, y = 16 + math.cos(a) * r, 16 + math.sin(a) * r
+        t.camada(retangulo(round(x) - 1, round(y) - 1, round(x) + 1, round(y)), PEDRA, contorno=False)
+    t.camada(circulo(16, 16, 1.8), METAIS[nivel], contorno=False)
+    for i in range(min(5, degrau + 1)):
+        a = -math.pi / 2 + i * 2 * math.pi / 5
+        t.brilho(round(16 + math.cos(a) * 13), round(16 + math.sin(a) * 13), "#fbbf24")
+
+
+def leque_cartas(t: Tela, nivel: str, degrau: int) -> None:
+    """Mestre da revisão (Flashcards): o leque de cartas, uma a mais a cada nível."""
+    n = min(5, degrau + 2)
+    for i in range(n):
+        ang = math.radians((i - (n - 1) / 2) * 16)
+        t.camada(poligono(girar(16, 28, [(11, 8), (21, 8), (21, 26), (11, 26)], ang)), CARTA)
+    frente = girar(16, 28, [(11, 8), (21, 8), (21, 26), (11, 26)], math.radians(((n - 1) / 2) * 16))
+    cx = sum(x for x, _ in frente) / 4
+    cy = sum(y for _, y in frente) / 4
+    t.camada(poligono([(cx, cy - 4), (cx + 3, cy), (cx, cy + 4), (cx - 3, cy)]), METAIS[nivel])
+    t.camada(retangulo(9, 28, 23, 29), METAIS[nivel])
+
+
+def astrolabio(t: Tela, nivel: str, degrau: int) -> None:
+    """Especialista (Flashcards): o astrolábio de quem conhece cada canto de uma área."""
+    t.camada(poligono([(12, 29), (20, 29), (18, 25), (14, 25)]), MADEIRA)
+    t.camada(circulo(16, 14, 11.5) - circulo(16, 14, 9.5), METAIS[nivel])
+    t.camada(elipse(16, 14, 9, 3.4) - elipse(16, 14, 7.6, 2.2), METAIS["prata" if nivel != "prata" else "ouro"], contorno=False)
+    t.camada(estrela_forma(16, 14, 4.5, 1.8), METAIS["ouro"], contorno=False)
+    t.pintar(linha(9, 21, 23, 7, 0.4), METAIS[nivel][0])
+    for i in range(min(4, degrau + 1)):
+        a = math.pi * (0.75 + i * 0.5)
+        t.camada(circulo(16 + math.cos(a) * 10.5, 14 + math.sin(a) * 10.5, 1.4), AZUL if i % 2 else VERMELHO, contorno=False)
+
+
+def livro_bestiario(t: Tela, nivel: str, degrau: int) -> None:
+    """Bestiário (Flashcards): o livro de couro marcado pelas garras das feras vencidas."""
+    t.camada(retangulo(7, 4, 25, 28), COURO)
+    t.camada(retangulo(7, 4, 9, 28), MADEIRA, contorno=False)
+    for (x, y) in ((24, 5), (24, 27)):
+        t.camada(retangulo(x - 2, y - 1, x + 1, y + 1) & retangulo(10, 4, 25, 28), METAIS[nivel], contorno=False)
+    for k in range(3):
+        t.pintar(linha(12 + k * 3, 8, 17 + k * 3, 19, 0.8), "#1c0a06")
+        t.pintar(linha(13 + k * 3, 8, 18 + k * 3, 19, 0.3), "#e08b6f")
+    if degrau >= 1:
+        t.camada(circulo(17, 23.5, 2.2), METAIS[nivel])
+        t.ponto(17, 23, hexa("#ffffff"))
+    if degrau >= 2:
+        t.camada(retangulo(24, 13, 27, 17), METAIS["ouro"])
+
+
+def presas(t: Tela, nivel: str, degrau: int) -> None:
+    """Caçador de dragões (secreta): as presas arrancadas aos dragões, num cordão."""
+    corda = set()
+    for i in range(23):
+        x = 5 + i
+        corda |= circulo(x, 5 + 0.03 * (x - 16) ** 2 * -1 + 6, 0.6)
+    t.camada(corda, MADEIRA, contorno=False)
+    xs = [16] if degrau == 0 else [12, 20]
+    for j, x in enumerate(xs):
+        rampa = OSSO if j == 0 else ["#3b0a05", "#9a1c0c", "#e2491d", "#fb923c", "#fde68a"]
+        t.camada(poligono([(x - 3, 10), (x + 3, 10), (x + 2, 19), (x + 0.5, 27), (x - 1.5, 19)]), rampa)
+        t.camada(retangulo(x - 3, 9, x + 3, 11), METAIS[nivel])
+    t.brilho(6, 24, "#fde68a")
+
+
+def corrente(t: Tela, nivel: str, degrau: int) -> None:
+    """Sem errar (Flashcards): a corrente sem nenhum elo partido."""
+    n = (4, 6, 7)[min(degrau, 2)]
+    passo = min(5.0, 24 / (n - 1))
+    for i in range(n):
+        d = (i - (n - 1) / 2) * passo
+        x, y = 16 + d * 0.7071, 16 - d * 0.7071
+        if i % 2 == 0:
+            t.camada(circulo(x, y, 3.0) - circulo(x, y, 1.4), METAIS[nivel])
+        else:
+            t.camada(poligono(girar(x, y, [(x - 3.2, y - 1.1), (x + 3.2, y - 1.1), (x + 3.2, y + 1.1), (x - 3.2, y + 1.1)], math.radians(-45))), METAIS[nivel])
+    t.brilho(6, 6, "#ffffff")
+
+
+def carta_lendaria(t: Tela, nivel: str, degrau: int) -> None:
+    """Colecionador de lendários (Flashcards): a carta lendária, com coroa e gema."""
+    for i in range(min(3, degrau + 1), 0, -1):
+        t.camada(retangulo(9 + i * 2, 7 - i, 22 + i * 2, 28 - i), CARTA)
+    t.camada(retangulo(8, 7, 22, 29), METAIS[nivel])
+    t.camada(retangulo(10, 9, 20, 27), CARTA, contorno=False)
+    t.camada(poligono([(15, 12), (19, 18), (15, 24), (11, 18)]), ROXO)
+    t.ponto(14, 15, hexa("#ffffff"))
+    t.camada(poligono([(10, 4), (12, 7), (15, 3), (18, 7), (20, 4), (20, 8), (10, 8)]), METAIS["ouro"])
+
+
+FORMAS.update({
+    "revisoes": pergaminhos, "constancia": tabua, "resgate": trompa, "secreta-muralha": muralha,
+    "fcProfundezas": poco, "fcMestreRevisao": leque_cartas, "fcEspecialista": astrolabio, "fcBestiario": livro_bestiario,
+    "fcDragoes": presas, "fcSemErrar": corrente, "fcLendarios": carta_lendaria,
+})
+
 def desenhar(id_: str, familia: str, nivel: str, degrau: int) -> Tela:
     t = Tela()
     FORMAS.get(id_, FORMAS.get(familia, medalha))(t, nivel, degrau)

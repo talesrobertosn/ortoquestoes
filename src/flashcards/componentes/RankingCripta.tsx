@@ -8,6 +8,7 @@ import { lerRanking, RANKING_NO_SERVIDOR, type LinhaRanking, type TipoRanking } 
 import { Cenario } from './Cenario'
 import { ModalJogo } from './ModalJogo'
 import { Sprite } from './Sprite'
+import { EmblemasFlashcards } from '../../componentes/EmblemasFlashcards'
 
 /**
  * Ranking da Cripta do Residente (pronto, atrás da trava FLASHCARDS_RANKING):
@@ -37,7 +38,7 @@ export function RankingCripta() {
           <ol className="fc-ranking__lista">
             {linhas.map((l) => (
               <li key={l.posicao} className={`${l.ehVoce ? 'fc-ranking__voce' : ''}${l.posicao <= 3 ? ` fc-ranking__podio fc-ranking__podio--${l.posicao}` : ''}`}>
-                <b>{l.posicao}</b><span>{l.apelido}{l.ehVoce ? ' (você)' : ''}</span><em>{unidade(l.valor)}</em>
+                <b>{l.posicao}</b><span>{l.apelido}{l.ehVoce ? ' (você)' : ''}<EmblemasFlashcards vitrine={l.emblemas} flashcards={l.emblemasFlashcards} tamanho={24} /></span><em>{unidade(l.valor)}</em>
               </li>
             ))}
           </ol>

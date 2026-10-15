@@ -30,3 +30,10 @@ tem o ranking dela, separado, na outra aba.
 
 Pendências conhecidas: a validação é por contagem (bom contra edição de recorde, não contra quem
 responde de verdade com ajuda externa); um ranking semanal precisaria de período na função.
+
+## Emblemas e números (15/10/2026)
+
+- As linhas e o pódio mostram o melhor emblema de Flashcards da pessoa e a vitrine
+  (`ranking_flashcards_emblemas`, parte 26 do SQL).
+- Posição, andar e pontos usam a fonte de texto com algarismos tabulares: na fonte pixel o 6 parecia 2
+  e o 2 parecia 8. O clima do jogo fica nos títulos.

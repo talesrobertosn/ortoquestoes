@@ -986,8 +986,9 @@
 .fc-ranking__bloco { display: grid; gap: 8px; }
 .fc-ranking__lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .fc-ranking__lista li { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 12px; background: rgba(0, 0, 0, .35); font: 600 15px var(--fc-ui); }
-.fc-ranking__lista b { font: 900 18px var(--fc-titulo); color: #ffe7a0; text-align: center; }
-.fc-ranking__lista em { font-style: normal; font-weight: 800; color: #fff3d6; }
+.fc-ranking__lista b { font: 800 18px var(--fonte-texto); font-variant-numeric: tabular-nums lining-nums; color: #ffe7a0; text-align: center; }
+.fc-ranking__lista em { font-style: normal; font-weight: 800; color: #fff3d6; font-variant-numeric: tabular-nums lining-nums; }
+.fc-ranking__lista .emblemas-nome { margin-left: 6px; }
 .fc-ranking__podio--1 { box-shadow: inset 0 0 0 2px #ffd76a, 0 0 18px rgba(255, 210, 100, .3); }
 .fc-ranking__podio--2 { box-shadow: inset 0 0 0 2px #d8e2f0; }
 .fc-ranking__podio--3 { box-shadow: inset 0 0 0 2px #c8885a; }

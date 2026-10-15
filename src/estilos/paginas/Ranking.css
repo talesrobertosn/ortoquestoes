@@ -451,10 +451,12 @@
 .pdx__placa--2 { order: 1; --m1: #c8d2e0; }
 .pdx__placa--3 { order: 3; --m1: #d08a4a; }
 .pdx__placa--voce { box-shadow: inset 0 0 0 2px var(--m1), 0 0 0 2px #7fe08f; }
-.pdx__lugar { font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--m1); }
+.pdx__lugar { font-family: var(--fonte-texto); font-weight: 800; font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--m1); font-variant-numeric: tabular-nums lining-nums; }
 .pdx__nome { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(0.85rem, 2.4vw, 1.05rem); }
 .pdx__voce { margin-left: 0.3rem; padding: 0 0.3rem; border-radius: 4px; font-size: 0.7rem; background: #2e7a3a; color: #fff; vertical-align: middle; }
-.pdx__valor { font-family: var(--fonte-pixel); font-weight: 700; font-size: clamp(0.95rem, 2.8vw, 1.25rem); color: #ffe08a; font-variant-numeric: tabular-nums; }
+/* Números legíveis (pedido do Tales, 15/10/2026): a fonte pixel deixava o 6 parecido com o 2 e o 2 com o 8.
+   O clima do jogo fica nos títulos; andar, pontos e posição usam a fonte de texto com algarismos tabulares. */
+.pdx__valor { font-family: var(--fonte-texto); font-weight: 800; font-size: clamp(0.95rem, 2.8vw, 1.25rem); color: #ffe08a; font-variant-numeric: tabular-nums lining-nums; letter-spacing: 0.01em; }
 .pdx__detalhe { color: #cbbfa6; }
 .pdx__extra { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.25rem; }
 @media (max-width: 560px) {
@@ -473,8 +475,22 @@
 .rk--cripta .cf-cabeca p { color: #e2d8f0 !important; }
 .rk--cripta .cf-selo { color: #c8b0ff; }
 .rk--cripta .rkc-lista li { background: linear-gradient(90deg, #242033, #1b1828); color: #ece4f6; box-shadow: inset 0 0 0 1px #3a3450; }
-.rk--cripta .rkc-lista li b { font-family: var(--fonte-pixel); color: #c8b0ff; }
-.rk--cripta .rkc-lista em { font-family: var(--fonte-pixel); color: #ffe08a; }
+.rk--cripta .rkc-lista li b { font-family: var(--fonte-texto); font-weight: 800; font-size: 1.05rem; color: #c8b0ff; font-variant-numeric: tabular-nums lining-nums; text-align: center; }
+.rk--cripta .rkc-lista li:nth-child(-n+3) b { color: #ffe08a; }
+.rk--cripta .rkc-lista em { font-family: var(--fonte-texto); color: #ffe08a; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
+.rk--cripta .rkc-lista em small { margin-right: 0.3rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #bfb2d6; }
+.rk--cripta .rkc-lista em strong { font-size: 1.15rem; font-weight: 800; }
+.rkc-nome { display: flex; align-items: center; gap: 0.4rem; min-width: 0; }
+.rkc-nome > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rkc-nome .emblemas-nome { margin: 0; flex: none; }
+.rkc-emblemas { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; padding: 0.8rem 1rem; border-radius: 12px; color: #ece4f6; text-decoration: none;
+  background: linear-gradient(90deg, #2a2240, #1b1828); box-shadow: inset 0 0 0 1px #4a3f6a; }
+.rkc-emblemas:hover { box-shadow: inset 0 0 0 2px #8f6fd0; }
+.rkc-emblemas__artes { display: flex; gap: 0.2rem; }
+.rkc-emblemas__artes img { image-rendering: pixelated; }
+.rkc-emblemas strong { display: block; color: #ffe08a; }
+.rkc-emblemas small { color: #cfc3e6; }
+.rkc-emblemas__texto { flex: 1 1 14rem; min-width: 0; }
 .rk--cripta .rkc-voce { outline: 2px solid #7fe08f; }
 .rkc-tocha { position: absolute; top: 50%; translate: 0 -50%; image-rendering: pixelated; }
 .rkc-tocha--esq { left: 0.6rem; } .rkc-tocha--dir { right: 0.6rem; }

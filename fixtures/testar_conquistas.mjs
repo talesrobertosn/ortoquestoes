@@ -151,6 +151,46 @@ try {
   // Todo emblema aponta para uma métrica que existe.
   const metricas = m.calcularMetricas({}, [], {})
   for (const e of m.EMBLEMAS) assert.ok(e.familia === 'mestre' || e.familia === 'especialista' || typeof metricas[e.metrica] === 'number', e.id)
+  // Platina não exige os emblemas de Flashcards.
+  const semFc = m.completarMetricas({ ...ms, travadas: new Set(m.EMBLEMAS.map((e) => e.id).filter((id) => id !== 'chefe-platina' && !id.startsWith('fc-'))) })
+  assert.equal(semFc.platina, 1)
+
+  // Revisão (15/10/2026): revisões, resgate e constância a partir do histórico.
+  const DIA = 86400000
+  const hojeR = new Date(2026, 9, 15, 12, 0).getTime()
+  const rev = {}
+  for (let d = 1; d <= 8; d++) {
+    for (let i = 0; i < 10; i++) {
+      const em = hojeR - d * DIA, primeira = em - 14 * DIA // certeza: vencia em 10 dias, revisada 4 dias depois
+      rev[`joelho-${d * 100 + i}`] = { c: true, q: em, tentativas: 2, sequencia: 2, confianca: 'seguro', historico: [certo(primeira), certo(em)] }
+    }
+  }
+  const mr = m.calcularMetricas(rev, [], {}, hojeR)
+  assert.equal(mr.revisoes, 80)
+  assert.equal(mr.resgate, 80)
+  assert.equal(mr.constancia, 8)
+  assert.equal(mr.revisoesNumDia, 10)
+  // Uma folga no meio não quebra; um dia sem revisão quebra.
+  const furo = Object.fromEntries(Object.entries(rev).filter(([id]) => !id.startsWith('joelho-4')))
+  assert.equal(m.calcularMetricas(furo, [], {}, hojeR).constancia, 4)
+  const diaFolga = new Date(hojeR - 4 * DIA).getDay()
+  assert.equal(m.calcularMetricas(furo, [], { folgasRevisao: [diaFolga] }, hojeR).constancia, 7)
+  // Revisão no prazo não conta como resgate.
+  assert.equal(m.calcularMetricas({ 'mao-9': { c: true, q: hojeR, tentativas: 2, sequencia: 2, historico: [certo(hojeR - 10 * DIA), certo(hojeR)] } }, [], {}, hojeR).resgate, 0)
+
+  // Flashcards: métricas vindas de fora entram nas famílias fc.
+  const fc = m.calcularMetricas({}, [], { flashcards: { fcAndar: 21, fcMestreRevisao: 3, fcEspecialista: 0, fcBestiario: 8, fcDragaoOssos: 1, fcDragoes: 1, fcSemErrar: 10, fcLendarios: 0 } })
+  for (const id of ['fc-andar-21', 'fc-revisao-3', 'fc-bestiario-8', 'fc-dragao-ossos', 'fc-sem-errar-10']) assert.ok(m.desbloqueado(m.emblemaPorId(id), fc), id)
+  assert.ok(!m.desbloqueado(m.emblemaPorId('fc-dragoes'), fc))
+  // O Bestiário completo acompanha os adversários do jogo (o dragão do topo da Torre fica de fora).
+  const arqFc = join(pasta, 'fc.mjs')
+  await build({ stdin: { contents: `export * from './src/flashcards/conquistas';`, resolveDir: process.cwd() }, outfile: arqFc, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' } })
+  const f = await import(pathToFileURL(arqFc))
+  assert.equal(m.emblemaPorId('fc-bestiario-43').minimo, f.ADVERSARIOS_BESTIARIO.length)
+  assert.equal(f.areaDoFlashcard('fc-pediatria-0431-tb2'), 'pediatria')
+  assert.equal(f.areaDoFlashcard('fc-ombro-cotovelo-0012-q'), 'ombro-cotovelo')
+  const mf = f.metricasFlashcards({ registros: { 'fc-joelho-0001-q': { c: true, acertos: 1, sequencia: 9, confianca: 'seguro' } }, bestiario: { vencidos: ['dragao-de-ossos', 'dragao-rubro'] }, recordes: { andarMaximo: 40, melhorSequencia: 7 }, servidor: { andar_masmorra: 12, unicos: 1 }, lendarias: new Set(['fc-joelho-0001-q']) })
+  assert.deepEqual([mf.fcAndar, mf.fcEspecialista, mf.fcDragoes, mf.fcDragaoOssos, mf.fcSemErrar, mf.fcLendarios], [12, 1, 2, 1, 7, 1]) // andar só do servidor
   console.log('Emblemas difíceis: todos corretos.')
 } finally {
   await rm(pasta, { recursive: true, force: true })

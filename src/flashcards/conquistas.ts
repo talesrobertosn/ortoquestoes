@@ -1,83 +1,79 @@
 /**
- * Conquistas da Cripta do Residente, prontas para entrar no sistema de
- * emblemas do site (src/estado/conquistas.ts) quando o Tales liberar.
+ * Números dos emblemas de Flashcards (ligados ao sistema do site em 15/10/2026).
  *
- * Hoje NADA disto aparece nas conquistas: o arquivo só define os emblemas e
- * calcula os números a partir do que o jogo já guarda (recordes, registros e
- * bestiário). Para ligar (docs/flashcards/CONQUISTAS.md):
- *   1. acrescentar as famílias de FAMILIAS_CRIPTA em FamiliaId e FAMILIAS;
- *   2. acrescentar EMBLEMAS_CRIPTA em EMBLEMAS;
- *   3. somar `metricasCripta(...)` às métricas em calcularMetricas (Extras);
- *   4. trocar os recordes locais pelos do servidor (corridas validadas), para
- *      que ninguém ganhe emblema editando o aparelho.
- *
- * Seguem docs/emblemas.md: difíceis desde o primeiro nível (estilo
- * souls-like), níveis altos para pouquíssimas pessoas, qualidade além de volume.
+ * Os emblemas em si ficam em src/estado/conquistas.ts (famílias "fc…"), junto
+ * com todos os outros, para aparecerem no inventário, na vitrine e no ranking.
+ * Aqui só se calcula cada métrica a partir do que o jogo e a Biblioteca guardam:
+ *   - andar mais fundo: SÓ o recorde validado pelo servidor (corridas com
+ *     flashcards autorizados, migrações 202610130200/0300); o recorde do
+ *     aparelho não conta, para ninguém ganhar emblema editando o aparelho;
+ *   - mestre da revisão, especialista e lendários: registros dos flashcards
+ *     (sincronizados com a conta);
+ *   - bestiário, dragões e sem errar: o que o jogo guarda no aparelho (o
+ *     servidor ainda não registra adversários nem sequências).
+ * Fora do jogo o nome é sempre "Flashcards" (regra do Tales, 13/10/2026).
  */
+import { dominada } from '../estado/revisao'
+import { resumoRevisoes, sequenciaRevisao } from '../estado/metasRevisao'
 import { BESTIARIO } from './motor/bestiario'
-import type { Bestiario, Recordes } from './progresso'
+import type { Bestiario, Recordes, RegistroFlashcard } from './progresso'
 
-export type NivelCripta = 'bronze' | 'prata' | 'ouro' | 'esmeralda' | 'lendario'
-export type FamiliaCripta = 'cripta' | 'torre' | 'flashcardsUnicos' | 'bestiario' | 'dragoes'
+/** Mestre da revisão: o dia conta com pelo menos estas revisões de flashcards. */
+export const FC_REVISOES_DIA = 15
+/** Adversários que contam para o Bestiário completo (o dragão do topo da Torre fica de fora). */
+export const ADVERSARIOS_BESTIARIO = BESTIARIO.filter((b) => !b.exclusivo).map((b) => b.id)
+/** Os dragões das profundezas. */
+export const DRAGOES = ['dragao-de-ossos', 'dragao-rubro'] as const
 
-export interface EmblemaCripta {
-  id: string
-  familia: FamiliaCripta
-  minimo: number
-  rotulo: string
-  curto: string
-  nivel: NivelCripta
-  descricao: string
-  secreta?: boolean
+export interface MetricasFlashcards {
+  fcAndar: number
+  fcMestreRevisao: number
+  fcEspecialista: number
+  fcBestiario: number
+  fcDragaoOssos: number
+  fcDragoes: number
+  fcSemErrar: number
+  fcLendarios: number
+}
+export const METRICAS_FLASHCARDS_VAZIAS: MetricasFlashcards = { fcAndar: 0, fcMestreRevisao: 0, fcEspecialista: 0, fcBestiario: 0, fcDragaoOssos: 0, fcDragoes: 0, fcSemErrar: 0, fcLendarios: 0 }
+
+/** Recordes conferidos pelo servidor (RPC meus_recordes_flashcards). */
+export interface RecordesServidor { andar_masmorra: number; unicos: number }
+
+export interface DadosFlashcards {
+  registros: Record<string, Partial<RegistroFlashcard>>
+  bestiario?: Partial<Bestiario>
+  recordes?: Partial<Recordes>
+  servidor?: RecordesServidor | null
+  /** Ids dos flashcards lendários (do acervo carregado); sem ele, os lendários ficam como estão. */
+  lendarias?: ReadonlySet<string> | null
 }
 
-export const FAMILIAS_CRIPTA: Array<{ id: FamiliaCripta; titulo: string; unidade: (v: number) => string }> = [
-  { id: 'cripta', titulo: 'Profundezas da Cripta', unidade: (v) => `andar ${v}` },
-  { id: 'torre', titulo: 'Torre do Título', unidade: (v) => `${v}/100` },
-  { id: 'flashcardsUnicos', titulo: 'Flashcards únicos', unidade: (v) => `${v.toLocaleString('pt-BR')} flashcards` },
-  { id: 'bestiario', titulo: 'Bestiário', unidade: (v) => `${v} adversários vencidos` },
-  { id: 'dragoes', titulo: 'Caçador de dragões', unidade: (v) => `${v}` },
-]
+/** Área do flashcard pelo id ("fc-joelho-0123-q" → "joelho"). */
+export function areaDoFlashcard(id: string): string | null {
+  return /^fc-(.+?)-\d{2,5}-[a-z0-9]+$/.exec(id)?.[1] ?? null
+}
 
-const e = (familia: FamiliaCripta, id: string, minimo: number, rotulo: string, curto: string, nivel: NivelCripta, descricao: string, secreta = false): EmblemaCripta =>
-  ({ id, familia, minimo, rotulo, curto, nivel, descricao, secreta })
-
-export const EMBLEMAS_CRIPTA: readonly EmblemaCripta[] = [
-  e('cripta', 'cripta-6', 6, 'Desceu do primeiro ato', 'A2', 'bronze', 'Chegue ao andar 6 da Cripta numa partida.'),
-  e('cripta', 'cripta-12', 12, 'Diante do dragão', 'A4', 'prata', 'Chegue ao andar 12 da Cripta (o covil do Dragão de Ossos).'),
-  e('cripta', 'cripta-21', 21, 'Fundo da Cripta', 'A7', 'ouro', 'Chegue ao andar 21 da Cripta numa partida.'),
-  e('cripta', 'cripta-30', 30, 'Abismo do residente', 'A10', 'esmeralda', 'Chegue ao andar 30 da Cripta numa partida.'),
-  e('cripta', 'cripta-45', 45, 'Sem fundo', 'A15', 'lendario', 'Chegue ao andar 45 da Cripta numa partida.'),
-  e('torre', 'torre-20', 20, 'Segundo patamar do chefe', '20', 'bronze', 'Chegue ao andar 20 da Torre do Título.'),
-  e('torre', 'torre-40', 40, 'Meio caminho', '40', 'prata', 'Chegue ao andar 40 da Torre do Título.'),
-  e('torre', 'torre-60', 60, 'Acima das nuvens', '60', 'ouro', 'Chegue ao andar 60 da Torre do Título.'),
-  e('torre', 'torre-80', 80, 'Ar rarefeito', '80', 'esmeralda', 'Chegue ao andar 80 da Torre do Título.'),
-  e('torre', 'torre-100', 100, 'Título conquistado', '100', 'lendario', 'Vença o Dragão Ancestral no andar 100 da Torre.'),
-  e('flashcardsUnicos', 'flashcards-300', 300, 'Baralho próprio', '300', 'bronze', 'Responda 300 flashcards diferentes.'),
-  e('flashcardsUnicos', 'flashcards-1000', 1000, 'Mil cartas', '1k', 'prata', 'Responda 1.000 flashcards diferentes.'),
-  e('flashcardsUnicos', 'flashcards-2000', 2000, 'Colecionador', '2k', 'ouro', 'Responda 2.000 flashcards diferentes.'),
-  e('flashcardsUnicos', 'flashcards-3000', 3000, 'Arquivista', '3k', 'esmeralda', 'Responda 3.000 flashcards diferentes.'),
-  e('flashcardsUnicos', 'flashcards-4000', 4000, 'Acervo inteiro', '4k', 'lendario', 'Responda 4.000 flashcards diferentes.'),
-  e('bestiario', 'bestiario-8', 8, 'Caçador', '8', 'prata', 'Vença 8 adversários diferentes.'),
-  e('bestiario', 'bestiario-todos', BESTIARIO.length, 'Bestiário completo', 'ALL', 'lendario', 'Vença todos os adversários do Bestiário.'),
-  e('dragoes', 'dragao-de-ossos', 1, 'Ossos ao pó', 'D', 'ouro', 'Vença o Dragão de Ossos.', true),
-  e('dragoes', 'dragoes-todos', 3, 'Matador de dragões', 'DDD', 'esmeralda', 'Vença os três dragões.', true),
-]
-
-export type MetricasCripta = Record<FamiliaCripta, number>
-
-/** Números das famílias a partir do que o jogo já guarda. */
-export function metricasCripta(recordes: Partial<Recordes>, unicos: number, bestiario: Partial<Bestiario>): MetricasCripta {
-  const vencidos = bestiario.vencidos ?? []
-  const dragoes = BESTIARIO.filter((i) => i.sprite === 'dragao' && vencidos.includes(i.id)).length
+export function metricasFlashcards(d: DadosFlashcards, agora = Date.now()): MetricasFlashcards {
+  const dominadosPorArea = new Map<string, number>()
+  let lendarios = 0
+  for (const [id, r] of Object.entries(d.registros)) {
+    if (!r) continue
+    const area = areaDoFlashcard(id)
+    if (area && dominada(r)) dominadosPorArea.set(area, (dominadosPorArea.get(area) ?? 0) + 1)
+    if (d.lendarias?.has(id) && ((r.acertos ?? 0) > 0 || r.c === true)) lendarios++
+  }
+  const revisoes = resumoRevisoes(d.registros)
+  const vencidos = new Set(d.bestiario?.vencidos ?? [])
   return {
-    cripta: recordes.andarMaximo ?? 0,
-    // a Torre só conta 100 quando o topo foi vencido (chegar ao andar 100 não basta)
-    torre: Math.min(recordes.torreConcluida ? 100 : 99, recordes.torreMaximo ?? 0),
-    flashcardsUnicos: unicos,
-    bestiario: vencidos.length,
-    dragoes: (vencidos.includes('dragao-de-ossos') ? 1 : 0) + (dragoes >= 3 ? 2 : 0),
+    fcAndar: Math.max(0, Number(d.servidor?.andar_masmorra) || 0),
+    fcMestreRevisao: sequenciaRevisao(revisoes.porDia, { minimo: FC_REVISOES_DIA }, agora).maior,
+    fcEspecialista: Math.max(0, ...dominadosPorArea.values()),
+    fcBestiario: ADVERSARIOS_BESTIARIO.filter((id) => vencidos.has(id)).length,
+    fcDragaoOssos: vencidos.has('dragao-de-ossos') ? 1 : 0,
+    fcDragoes: DRAGOES.filter((id) => vencidos.has(id)).length,
+    fcSemErrar: Math.max(0, d.recordes?.melhorSequencia ?? 0),
+    // Sem o acervo na memória não dá para saber a raridade: o valor fica 0 e o emblema, se já travado no servidor, continua.
+    fcLendarios: lendarios,
   }
 }
-
-export const conquistadosCripta = (m: MetricasCripta) => EMBLEMAS_CRIPTA.filter((x) => m[x.familia] >= x.minimo)
