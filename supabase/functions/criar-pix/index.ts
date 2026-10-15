@@ -75,7 +75,12 @@ Deno.serve(async req => {
     validarPagamentoPix(pedido, pagamento, ambiente!)
     const url = pagamento.point_of_interaction?.transaction_data?.ticket_url
     if (typeof url !== 'string' || new URL(url).protocol !== 'https:' || new URL(url).hostname !== 'www.mercadopago.com.br') throw new Error('link_pix_invalido')
-    return json({ url, pedido_id: pedido.id, expira_em: pedido.expira_em }, 200, req)
+    // QR Code e Pix Copia e Cola, para pagar sem sair da página (16/10/2026). Opcionais: se o
+    // Mercado Pago não devolver ou vierem em formato inesperado, a página usa só o link acima.
+    const dadosPix = pagamento.point_of_interaction?.transaction_data ?? {}
+    const qr_code = typeof dadosPix.qr_code === 'string' && dadosPix.qr_code.length <= 1024 && dadosPix.qr_code.startsWith('000201') ? dadosPix.qr_code : undefined
+    const qr_code_base64 = typeof dadosPix.qr_code_base64 === 'string' && dadosPix.qr_code_base64.length <= 200_000 && /^[A-Za-z0-9+/=]+$/.test(dadosPix.qr_code_base64) ? dadosPix.qr_code_base64 : undefined
+    return json({ url, pedido_id: pedido.id, expira_em: pedido.expira_em, qr_code, qr_code_base64 }, 200, req)
   } catch (erro) {
     return json({ erro: erro instanceof Error ? erro.message : 'erro_pix' }, erro instanceof Error && erro.message === 'autenticacao_necessaria' ? 401 : 502, req)
   }
