@@ -85,7 +85,7 @@ function EntregaNacional({ sessao }: { sessao: EstadoSessao }) {
 
 export function Resumo() {
   const { indice } = usarIndice()
-  const { sessao, iniciar, encerrar } = usarSessao()
+  const { sessao, iniciar, finalizar } = usarSessao()
   const { sessao: conta } = usarConta()
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
@@ -380,7 +380,7 @@ export function Resumo() {
             <small>{dados.incertas.length ? 'Confirme o que acertou sem ter certeza' : 'Você respondeu tudo com convicção'}</small>
           </span>
         </button>
-        <a className="rs-acao" href={href('/treinar')} onClick={() => encerrar()}>
+        <a className="rs-acao" href={href('/treinar')} onClick={() => finalizar()}>
           <span className="rs-acao__icone rs-acao__icone--neutro"><Icone nome="estrela" tamanho={20} /></span>
           <span><strong>Nova sessão</strong><small>Montar outro treino</small></span>
         </a>

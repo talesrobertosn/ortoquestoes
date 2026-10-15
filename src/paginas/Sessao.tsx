@@ -254,6 +254,14 @@ export function Sessao() {
     navegar('/resumo')
   }, [restante, sessao, finalizar])
 
+  // Sessão já encerrada não volta a aceitar respostas (o Voltar do navegador
+  // trazia a pessoa para cá): as respostas novas não entrariam no histórico.
+  const concluida = !!sessao?.concluidaEm
+  useEffect(() => {
+    if (concluida) navegar('/resumo', true)
+  }, [concluida])
+  if (concluida) return null
+
   if (!sessao || total === 0) {
     return (
       <Estado
