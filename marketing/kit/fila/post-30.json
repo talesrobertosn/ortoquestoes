@@ -1,0 +1,191 @@
+{
+  "post": "post-30",
+  "data": "2026-11-09",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "mecanica-ziter",
+  "formato": "stories (6)",
+  "estilo": "mecanica-fina",
+  "assunto": "Incidência de Ziter para o escafoide",
+  "gancho": "Você reconhece o escafoide. Mas que incidência é essa?",
+  "por_que": "Escafoide é fratura perdida clássica; a imagem pede a incidência pelo posicionamento.",
+  "questao": {
+    "id": "trauma-0994",
+    "area": "Trauma adulto",
+    "subtema": "Fratura do escafoide e do carpo",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "A incidência radiológica para diagnóstico da fratura do escafoide demonstrada na imagem a seguir é descrita por",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "ZITER."
+      },
+      {
+        "letra": "B",
+        "texto": "STECHER."
+      },
+      {
+        "letra": "C",
+        "texto": "SCHNECK I."
+      },
+      {
+        "letra": "D",
+        "texto": "SCHNECK II."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/trauma/trauma-0994-1.png",
+        "legenda": null
+      }
+    ],
+    "comentario": {
+      "correta": "**Ziter.** A incidência com desvio ulnar e o raio inclinado em direção ao cotovelo alonga o escafoide e expõe a cintura, facilitando ver o traço.",
+      "incorretas": {
+        "B": "**Outra técnica.** A de Stecher alonga o escafoide com a mão fechada ou com os dedos elevados, e não é a mostrada.",
+        "C": "**Oblíqua.** As incidências de Schneck são oblíquas, com o punho parcialmente pronado ou supinado.",
+        "D": "**Oblíqua.** A Schneck II também é uma oblíqua, com outra rotação do punho."
+      },
+      "conceito_trechos": [
+        "**O escafoide escondido.** A fratura do **escafoide** é frequentemente **perdida** na radiografia inicial, porque o osso é **oblíquo** (inclinado cerca de 45 graus no plano sagital e também no coronal) e, no PA padrão, aparece **encurtado** e sobreposto. Por isso existem incidências especiais que **alongam** o escafoide e colocam o traço perpendicular ao raio.",
+        "**Na prova:** incidência com **desvio ulnar** e raio angulado cerca de **20 graus** para o cotovelo, alongando o escafoide = **Ziter**."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "mecanica-fina",
+      "conteudo": {
+        "capa": {
+          "tag": "Punho · TARO 2026",
+          "titulo": "Você reconhece\no escafoide.\n[[Mas que incidência\né essa?]]",
+          "sub": "Uma questão sobre posicionamento.\nUm osso oblíquo que precisa esticar.",
+          "pilulas": [
+            "OBSERVAR",
+            "POSICIONAR",
+            "NOMEAR"
+          ]
+        },
+        "questao_slide": {
+          "tag": "Questão oficial · TARO 2026",
+          "titulo": "Encontre a\n[[incidência certa.]]"
+        },
+        "raciocinio": {
+          "titulo": "Ler o punho.\n[[Depois, o raio.]]",
+          "sub": "O escafoide é oblíquo e engana no PA.\nA incidência certa precisa alongá-lo.",
+          "passos": [
+            {
+              "titulo": "Veja o desvio.",
+              "texto": "O **desvio ulnar** estende o escafoide e o alonga."
+            },
+            {
+              "titulo": "Pense no raio.",
+              "texto": "Inclinar o raio cerca de **20 graus** para o cotovelo alonga ainda mais."
+            },
+            {
+              "titulo": "Descarte as oblíquas.",
+              "texto": "Schneck I e II são **oblíquas**, com pronação ou supinação parcial."
+            }
+          ]
+        },
+        "resposta": {
+          "tag": "Alternativa A · incidência de Ziter",
+          "titulo": "É a\n[[Ziter.]]",
+          "destaque": {
+            "titulo": "Desvio ulnar + raio a 20 graus.",
+            "texto": "PA com o punho em desvio ulnar e o raio angulado para o cotovelo: o escafoide alonga e a cintura aparece."
+          },
+          "mostrador": "20°",
+          "mostrador_texto": "Raio angulado\n**para o cotovelo.**",
+          "comparacao": {
+            "B": {
+              "titulo": "Stecher",
+              "texto": "Alonga o escafoide com a mão fechada ou com os dedos elevados."
+            },
+            "C": {
+              "titulo": "Schneck I",
+              "texto": "Oblíqua, com o punho parcialmente pronado ou supinado."
+            },
+            "D": {
+              "titulo": "Schneck II",
+              "texto": "Também oblíqua, com outra rotação do punho."
+            }
+          },
+          "guardar": "Guarde: desvio ulnar e raio a 20 graus para o cotovelo = Ziter."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "Escafoide\nescondido.\n[[Não pare no PA.]]",
+          "itens": [
+            {
+              "titulo": "Série de quatro.",
+              "texto": "PA, perfil, oblíqua e PA com desvio ulnar."
+            },
+            {
+              "titulo": "Radiografia normal, suspeita alta?",
+              "texto": "Imobilize e reavalie, ou faça **ressonância** precoce, o exame mais sensível."
+            },
+            {
+              "titulo": "Fratura perdida custa caro.",
+              "texto": "Pode evoluir para pseudartrose, corcunda, DISI e **SNAC**."
+            }
+          ],
+          "destaque": {
+            "titulo": "Dor na tabaqueira anatômica.",
+            "texto": "Também no tubérculo e à compressão axial do polegar."
+          }
+        },
+        "final": {
+          "tag": "Punho · TARO 2026",
+          "celular": {
+            "titulo": "A · ZITER.",
+            "texto": "Desvio ulnar e raio inclinado para o cotovelo alongam o escafoide e expõem a cintura.",
+            "itens": [
+              {
+                "rotulo": "POR QUE NÃO B?",
+                "texto": "A Stecher alonga com a mão fechada ou os dedos elevados."
+              },
+              {
+                "rotulo": "POR QUE NÃO C?",
+                "texto": "Schneck I é oblíqua, com o punho parcialmente rodado."
+              },
+              {
+                "rotulo": "POR QUE NÃO D?",
+                "texto": "Schneck II também é oblíqua, com outra rotação."
+              }
+            ]
+          },
+          "recursos": [
+            {
+              "titulo": "A imagem.",
+              "texto": "Treine o olhar radiográfico."
+            },
+            {
+              "titulo": "O raciocínio.",
+              "texto": "Conecte posição e incidência."
+            },
+            {
+              "titulo": "As alternativas.",
+              "texto": "Entenda a certa e cada erro."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Stories do gancho e da questão: mecanica-fina-mf-01 e mf-02, das 7h às 8h.",
+    "Stories do raciocínio, da resposta e da chamada: mf-03 a mf-06, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão trauma-0994 (TARO 2026), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

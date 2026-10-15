@@ -1,0 +1,186 @@
+{
+  "post": "post-27",
+  "data": "2026-11-06",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "var-ensaio-randomizado",
+  "formato": "feed (carrossel de 5) + stories (3)",
+  "estilo": "var",
+  "assunto": "Força do ensaio clínico randomizado: randomização e alocação ocultada",
+  "gancho": "De onde vem a força do ensaio clínico randomizado?",
+  "por_que": "Metodologia científica cai no TARO e quase nunca aparece no feed; alternativas em pares.",
+  "questao": {
+    "id": "conceitos-basicos-0261",
+    "area": "Conceitos básicos",
+    "subtema": "Metodologia científica e estatística",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "A força do ensaio clínico randomizado está relacionada às características de",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "cegamento e uso de placebo."
+      },
+      {
+        "letra": "B",
+        "texto": "randomização e uso de placebo."
+      },
+      {
+        "letra": "C",
+        "texto": "randomização e alocação ocultada."
+      },
+      {
+        "letra": "D",
+        "texto": "alocação ocultada e uso de placebo."
+      }
+    ],
+    "gabarito": "C",
+    "imagens": [],
+    "comentario": {
+      "correta": "Randomização e alocação ocultada. O sorteio equilibra os grupos, e o sigilo da alocação impede que esse sorteio seja burlado.",
+      "incorretas": {
+        "A": "O cegamento e o placebo atuam depois da formação dos grupos, reduzindo distorções na avaliação, e não são a força principal do desenho.",
+        "B": "A randomização está certa, mas o placebo não protege a distribuição dos pacientes entre os grupos.",
+        "D": "A alocação ocultada está certa, mas o placebo tem outro papel, ligado ao cegamento do paciente."
+      },
+      "conceito_trechos": [
+        "O **ensaio clínico randomizado** é o estudo primário mais confiável para comparar tratamentos. Sua força vem de duas características:"
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "var",
+      "conteudo": {
+        "area": "MÉTODO",
+        "destaques": [
+          "ensaio clínico randomizado"
+        ],
+        "capa": {
+          "titulo": "Quatro recursos\nem campo.\n[[Só dois são\na força do ensaio.]]",
+          "lide": "Cegamento, placebo, randomização e alocação ocultada. A banca escalou os quatro numa questão de metodologia. O VAR vai revisar cada lance.",
+          "escalacao": [
+            "Cegamento",
+            "Placebo",
+            "Randomização",
+            "Alocação"
+          ]
+        },
+        "replay": {
+          "titulo": "A força está em\n[[formar os grupos.]]",
+          "lide": "Dois recursos agem antes de o paciente entrar no grupo; os outros, depois:",
+          "blocos": [
+            {
+              "rotulo": "Jogada 1 · sorteio",
+              "titulo": "Randomizar",
+              "texto": "Distribui os pacientes por **sorteio**, equilibrando até fatores que nem conhecemos."
+            },
+            {
+              "rotulo": "Jogada 2 · sigilo",
+              "titulo": "Ocultar",
+              "texto": "Quem inclui o paciente **não sabe** para qual grupo ele vai. Assim o sorteio não é burlado."
+            }
+          ],
+          "leitura": "cegamento e placebo atuam depois que os grupos já existem.",
+          "tarja": [
+            "Replay",
+            "O que age antes de formar os grupos?"
+          ]
+        },
+        "decisao": {
+          "motivos": {
+            "A": "Cegamento e placebo atuam **depois** da formação dos grupos; não são a força principal.",
+            "B": "A randomização está certa, mas o **placebo** não protege a distribuição.",
+            "C": "**Randomização e alocação ocultada**: o sorteio equilibra os grupos, e o sigilo impede que seja burlado.",
+            "D": "A alocação ocultada está certa, mas o placebo tem outro papel, ligado ao cegamento."
+          }
+        },
+        "sumula": {
+          "linhas": [
+            {
+              "item": "Randomização",
+              "desc": "Gera a sequência do sorteio",
+              "chip": "em",
+              "rotulo": "FORÇA"
+            },
+            {
+              "item": "Alocação oculta",
+              "desc": "Esconde a sequência de quem inclui",
+              "chip": "em",
+              "rotulo": "FORÇA"
+            },
+            {
+              "item": "Cegamento",
+              "desc": "Reduz distorção na avaliação",
+              "chip": "banco",
+              "rotulo": "DEPOIS"
+            },
+            {
+              "item": "Placebo",
+              "desc": "Permite cegar o paciente; raro em cirurgia",
+              "chip": "banco",
+              "rotulo": "DEPOIS"
+            }
+          ],
+          "para_prova": "a força do ensaio é **randomização** e **alocação ocultada**. Randomizar e ocultar são coisas diferentes."
+        },
+        "story1": {
+          "titulo": "De onde vem a força do [[ensaio randomizado?]]"
+        },
+        "story2": {
+          "titulo": "Dois recursos jogam [[depois do apito.]]",
+          "fichas": [
+            {
+              "nome": "Cegamento",
+              "texto": "Reduz distorções na **avaliação** dos resultados, com os grupos já formados.",
+              "st": "DEPOIS"
+            },
+            {
+              "nome": "Placebo",
+              "texto": "Permite **cegar** o paciente. Em cirurgia é raro: exigiria uma cirurgia simulada.",
+              "st": "DEPOIS"
+            }
+          ],
+          "lide": "Tirando os dois, **sobra uma só alternativa** em jogo."
+        },
+        "story3": {
+          "titulo": "Randomização e\n[[alocação ocultada.]]",
+          "blocos": [
+            {
+              "rotulo": "Sorteio",
+              "titulo": "Equilibra",
+              "texto": "Os grupos ficam **parecidos**."
+            },
+            {
+              "rotulo": "Sigilo",
+              "titulo": "Protege",
+              "texto": "Ninguém **escolhe** quem vai para cada grupo."
+            }
+          ],
+          "para_prova": "randomizar é gerar a sequência; ocultar é escondê-la de quem inclui os pacientes."
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: var-feed-01 a feed-05, das 7h às 8h.",
+    "Story da pergunta: var-story-01, logo depois do feed.",
+    "Stories da resposta: var-story-02 e story-03, ao meio-dia."
+  ],
+  "legenda": "De onde vem a força do ensaio clínico randomizado?\n\nTARO 2026: a banca escalou cegamento, placebo, randomização e alocação ocultada. Dois formam os grupos; dois atuam depois. O VAR revisa cada lance.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem pula metodologia na prova.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#medicinabaseadaemevidencias",
+    "#residenciamedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão conceitos-basicos-0261 (TARO 2026), gabarito oficial C: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

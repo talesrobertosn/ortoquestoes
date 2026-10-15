@@ -1,0 +1,188 @@
+{
+  "post": "post-06",
+  "data": "2026-10-20",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "mecanica-popliteo",
+  "formato": "stories (6)",
+  "estilo": "mecanica-fina",
+  "assunto": "Inserção do poplíteo na tíbia posterior",
+  "gancho": "Você reconhece a tíbia. Mas quem termina ali?",
+  "por_que": "Identificação por imagem com relação precisa (inserção acima da linha do sóleo): o terreno da Mecânica fina.",
+  "questao": {
+    "id": "joelho-0265",
+    "area": "Joelho",
+    "subtema": "Anatomia do joelho",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na imagem a seguir, a região anatômica apontada pela seta é a inserção do músculo",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Solear"
+      },
+      {
+        "letra": "B",
+        "texto": "Poplíteo"
+      },
+      {
+        "letra": "C",
+        "texto": "Gastrocnêmio"
+      },
+      {
+        "letra": "D",
+        "texto": "Semimembranáceo"
+      }
+    ],
+    "gabarito": "B",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/joelho/joelho-0265-1.png",
+        "legenda": null
+      }
+    ],
+    "comentario": {
+      "correta": "**Poplíteo.**\n- Área triangular na face posterior da tíbia, acima da linha do sóleo.",
+      "incorretas": {
+        "A": "**Sóleo.**\n- **Origina-se** na linha do sóleo, abaixo da área indicada.",
+        "C": "**Gastrocnêmio.**\n- Origina-se nos côndilos **femorais**; não tem inserção na tíbia.",
+        "D": "**Semimembranáceo.**\n- Insere-se mais alto, na tíbia **posteromedial**, junto ao platô."
+      },
+      "conceito_trechos": [
+        "### Lendo a figura\nVista **posterior** da tíbia e da fíbula (atlas de inserções: **azul** = inserção, **vermelho** = origem). A seta aponta a área azul **triangular** na face posterior da tíbia **proximal**, **acima da linha do sóleo**: a inserção do ==poplíteo==.",
+        "> **Na prova:** área triangular posterior da tíbia, acima da linha do sóleo = ==poplíteo==."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "mecanica-fina",
+      "conteudo": {
+        "capa": {
+          "tag": "Anatomia do joelho · TARO 2026",
+          "titulo": "Você reconhece\na tíbia.\n[[Mas quem termina\nali?]]",
+          "sub": "Uma questão sobre a inserção.\nUm detalhe acima de uma linha."
+        },
+        "questao_slide": {
+          "tag": "Questão oficial · TARO 2026",
+          "titulo": "Encontre o\n[[ponto de chegada.]]",
+          "altura_imagem": 460
+        },
+        "raciocinio": {
+          "altura_imagem": 420,
+          "titulo": "Ler a cor.\n[[Depois, a linha.]]",
+          "sub": "Azul é inserção; vermelho é origem.\nA seta aponta uma área azul.",
+          "passos": [
+            {
+              "titulo": "Situe a vista.",
+              "texto": "Face **posterior** da tíbia e da fíbula, no terço proximal."
+            },
+            {
+              "titulo": "Ache a linha do sóleo.",
+              "texto": "Ela marca a **origem** do sóleo, abaixo da área apontada."
+            },
+            {
+              "titulo": "Olhe acima dela.",
+              "texto": "A área **triangular** acima da linha recebe a inserção de um músculo."
+            }
+          ]
+        },
+        "resposta": {
+          "tag": "Alternativa B · inserção do poplíteo",
+          "titulo": "Termina no\n[[poplíteo.]]",
+          "destaque": {
+            "titulo": "Área triangular, acima da linha do sóleo.",
+            "texto": "É a inserção do poplíteo na face posterior da tíbia proximal."
+          },
+          "mostrador": "RI",
+          "mostrador_texto": "Destrava o joelho:\n**rotação interna da tíbia.**",
+          "comparacao": {
+            "A": {
+              "titulo": "Sóleo",
+              "texto": "**Origina-se** na linha do sóleo, abaixo da área indicada."
+            },
+            "C": {
+              "titulo": "Gastrocnêmio",
+              "texto": "Origina-se nos côndilos **femorais**; não se insere na tíbia."
+            },
+            "D": {
+              "titulo": "Semimembranáceo",
+              "texto": "Insere-se mais alto, na tíbia **posteromedial**, junto ao platô."
+            }
+          },
+          "guardar": "Guarde: acima da linha do sóleo, a inserção é do poplíteo."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "O poplíteo\nem três peças.\n[[Origem, inserção\ne função.]]",
+          "itens": [
+            {
+              "titulo": "Origem no fêmur.",
+              "texto": "Tendão no **côndilo femoral lateral**, intra-articular e extrassinovial, pelo hiato poplíteo."
+            },
+            {
+              "titulo": "Inserção na tíbia.",
+              "texto": "Face **posterior**, na área triangular **acima da linha do sóleo**."
+            },
+            {
+              "titulo": "Duas funções.",
+              "texto": "**Destrava** o joelho e estabiliza o canto posterolateral contra a **rotação externa**."
+            }
+          ],
+          "destaque": {
+            "titulo": "Inervação: nervo tibial.",
+            "texto": "Junto com o popliteofibular, é estabilizador dinâmico do canto posterolateral."
+          }
+        },
+        "final": {
+          "tag": "Joelho · TARO 2026",
+          "celular": {
+            "titulo": "B · Poplíteo",
+            "texto": "Área triangular na face posterior da tíbia, acima da linha do sóleo.",
+            "itens": [
+              {
+                "rotulo": "POR QUE NÃO A?",
+                "texto": "O sóleo se origina na linha do sóleo, abaixo da área indicada."
+              },
+              {
+                "rotulo": "POR QUE NÃO C?",
+                "texto": "O gastrocnêmio se origina nos côndilos femorais; não se insere na tíbia."
+              },
+              {
+                "rotulo": "POR QUE NÃO D?",
+                "texto": "O semimembranáceo se insere mais alto, na tíbia posteromedial."
+              }
+            ]
+          },
+          "recursos": [
+            {
+              "titulo": "A imagem.",
+              "texto": "Treine o olhar anatômico."
+            },
+            {
+              "titulo": "O raciocínio.",
+              "texto": "Conecte cor, linha e músculo."
+            },
+            {
+              "titulo": "As alternativas.",
+              "texto": "Entenda a certa e cada erro."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Stories do gancho e da questão: mecanica-fina-mf-01 e mf-02, das 7h às 8h.",
+    "Stories do raciocínio, da resposta e da chamada: mf-03 a mf-06, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão joelho-0265 (TARO 2026), gabarito oficial B: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

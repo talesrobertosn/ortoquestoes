@@ -71,6 +71,8 @@ são geradas por IA de imagem (nada de ultrarrealista, foto, ilustração ou 3D)
 dos modelos de `marketing/instagram/estilos/`, transformados em PNG por `marketing/instagram/gerar.mjs`.
 Para os simulados de questões, o roteiro é [docs/prompts/codex-simulados.md](../prompts/codex-simulados.md).
 
+**Kit de posts (15/10/2026):** para os estilos aprovados (Snellen, VAR, Cofre, Cupom, Mecânica fina e Treine grátis), o caminho mais rápido é o [kit](../../marketing/kit/README.md): cada post é um JSON numa fila pronta das próximas 30 postagens, e `node marketing/kit/renderizar.mjs <NN>` gera os PNGs, confere as regras desta página e escreve a legenda. Prompt curto para o Codex: [docs/prompts/codex-post-rapido.md](../prompts/codex-post-rapido.md).
+
 ## Rotina de cada post
 
 1. Escolher a questão (TEOT ou TARO de preferência, de um tema diferente do dia anterior) e ler o

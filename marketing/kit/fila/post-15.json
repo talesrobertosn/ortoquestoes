@@ -1,0 +1,191 @@
+{
+  "post": "post-15",
+  "data": "2026-10-27",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "var-compartimental",
+  "formato": "feed (carrossel de 5) + stories (3)",
+  "estilo": "var",
+  "assunto": "Síndrome compartimental na tíbia: terço proximal e sexo masculino",
+  "gancho": "Distal ou proximal? Feminino ou masculino? O VAR revisa o risco.",
+  "por_que": "Síndrome compartimental é urgência que cai todo ano; alternativas em pares (terço x sexo).",
+  "questao": {
+    "id": "trauma-0746",
+    "area": "Trauma adulto",
+    "subtema": "Síndrome compartimental",
+    "prova": "TEOT",
+    "ano": 2025,
+    "simulado": false,
+    "enunciado": "Nas fraturas diafisárias da tíbia no adulto, são fatores de risco para síndrome compartimental aguda a fratura do terço:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Distal e sexo feminino."
+      },
+      {
+        "letra": "B",
+        "texto": "Distal e sexo masculino."
+      },
+      {
+        "letra": "C",
+        "texto": "Proximal e sexo feminino."
+      },
+      {
+        "letra": "D",
+        "texto": "Proximal e sexo masculino."
+      }
+    ],
+    "gabarito": "D",
+    "imagens": [],
+    "comentario": {
+      "correta": "O terço proximal tem mais músculo dentro dos compartimentos, e os homens têm mais massa muscular e mais trauma de alta energia.",
+      "incorretas": {
+        "A": "O terço distal tem menos músculo, e o sexo feminino tem menos risco.",
+        "B": "O sexo masculino está certo, mas o risco é maior no terço proximal.",
+        "C": "O terço proximal está certo, mas o risco é maior no sexo masculino."
+      },
+      "conceito_trechos": [
+        "Na **fratura diafisária da tíbia** do adulto, alguns fatores aumentam o risco de **síndrome compartimental aguda**:",
+        "**Na prova**: são fatores de risco a fratura do terço **proximal** e o sexo **masculino**."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "var",
+      "conteudo": {
+        "area": "TRAUMA",
+        "destaques": [
+          "síndrome compartimental aguda"
+        ],
+        "capa": {
+          "titulo": "Terço e sexo\nem campo.\n[[Só uma dupla\naumenta o risco.]]",
+          "lide": "Distal ou proximal, feminino ou masculino. A banca cruzou terço da fratura e sexo na tíbia do adulto. O VAR vai revisar cada lance.",
+          "escalacao": [
+            "Distal",
+            "Proximal",
+            "Feminino",
+            "Masculino"
+          ]
+        },
+        "replay": {
+          "titulo": "Risco é [[músculo\ndentro da fáscia.]]",
+          "lide": "A síndrome compartimental aperta o que está dentro do compartimento. Dois fatores somam:",
+          "blocos": [
+            {
+              "rotulo": "Jogada 1 · onde",
+              "titulo": "Terço",
+              "texto": "O terço **proximal** da perna tem mais **músculo**; o distal tem mais tendão."
+            },
+            {
+              "rotulo": "Jogada 2 · quem",
+              "titulo": "Sexo",
+              "texto": "Homens têm mais **massa muscular** e mais trauma de **alta energia**."
+            }
+          ],
+          "leitura": "a dupla certa soma mais músculo nos dois quesitos.",
+          "tarja": [
+            "Replay",
+            "Onde há mais músculo para comprimir?"
+          ]
+        },
+        "decisao": {
+          "motivos": {
+            "A": "O terço distal tem menos músculo, e o sexo feminino tem menos risco.",
+            "B": "O sexo masculino está certo, mas o risco é maior no terço **proximal**.",
+            "C": "O terço proximal está certo, mas o risco é maior no sexo **masculino**.",
+            "D": "O terço **proximal** tem mais músculo nos compartimentos, e os **homens**, mais massa muscular e mais alta energia."
+          }
+        },
+        "sumula": {
+          "linhas": [
+            {
+              "item": "Proximal",
+              "desc": "Compartimentos mais volumosos em músculo",
+              "chip": "em",
+              "rotulo": "RISCO"
+            },
+            {
+              "item": "Masculino",
+              "desc": "Mais massa muscular e alta energia",
+              "chip": "em",
+              "rotulo": "RISCO"
+            },
+            {
+              "item": "Jovem",
+              "desc": "Pelo mesmo motivo",
+              "chip": "banco",
+              "rotulo": "NO BANCO"
+            },
+            {
+              "item": "Fechada",
+              "desc": "A ferida da exposta descomprime em parte",
+              "chip": "banco",
+              "rotulo": "NO BANCO"
+            },
+            {
+              "item": "Distal",
+              "desc": "Mais tendão, menos músculo",
+              "chip": "imp",
+              "rotulo": "MENOS RISCO"
+            }
+          ],
+          "para_prova": "terço **proximal** e sexo **masculino**. Delta P menor que 30 mmHg indica fasciotomia."
+        },
+        "story1": {
+          "titulo": "Quem aumenta o risco de [[síndrome\ncompartimental?]]"
+        },
+        "story2": {
+          "titulo": "Dois fatores estão em [[outro time.]]",
+          "fichas": [
+            {
+              "nome": "Terço distal",
+              "texto": "A perna tem mais **tendão** e menos músculo: o volume a comprimir é menor."
+            },
+            {
+              "nome": "Sexo feminino",
+              "texto": "Menos **massa muscular** dentro da fáscia: o risco é menor."
+            }
+          ],
+          "lide": "Tirando os dois, **sobra uma só alternativa** em jogo."
+        },
+        "story3": {
+          "titulo": "Proximal e [[masculino.]]",
+          "blocos": [
+            {
+              "rotulo": "Onde",
+              "titulo": "Proximal",
+              "texto": "Compartimentos mais **volumosos** em músculo."
+            },
+            {
+              "rotulo": "Quem",
+              "titulo": "Masculino",
+              "texto": "Mais **massa muscular** e alta energia."
+            }
+          ],
+          "para_prova": "na fratura de alto risco, exame seriado: dor desproporcional e dor ao estiramento passivo."
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: var-feed-01 a feed-05, das 7h às 8h.",
+    "Story da pergunta: var-story-01, logo depois do feed.",
+    "Stories da resposta: var-story-02 e story-03, ao meio-dia."
+  ],
+  "legenda": "Distal ou proximal? Feminino ou masculino?\n\nTEOT 2025: fatores de risco para síndrome compartimental aguda na fratura diafisária da tíbia do adulto. O VAR revisa cada combinação, lance a lance.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para o plantão e mande para quem vai passar a noite no trauma.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TEOT",
+    "#trauma",
+    "#residenciamedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão trauma-0746 (TEOT 2025), gabarito oficial D: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "post": "post-03",
+  "data": "2026-10-17",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "var-supracondiliana",
+  "formato": "feed (carrossel de 5) + stories (3)",
+  "estilo": "var",
+  "assunto": "Redução da supracondiliana posteromedial: flexão e pronação",
+  "gancho": "Flexão ou extensão? Pronação ou supinação? O VAR revisa a manobra.",
+  "por_que": "Supracondiliana é o tema campeão da pediatria; alternativas em pares (flexão/extensão x pronação/supinação), ideal para o VAR.",
+  "questao": {
+    "id": "pediatria-0914",
+    "area": "Ortopedia pediátrica",
+    "subtema": "Fraturas supracondilianas do úmero",
+    "prova": "TEOT",
+    "ano": 2025,
+    "simulado": false,
+    "enunciado": "Em crianças, a fratura supracondilar do úmero com desvio posteromedial deve ser reduzida por manobra de:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Flexão e pronação."
+      },
+      {
+        "letra": "B",
+        "texto": "Flexão e supinação."
+      },
+      {
+        "letra": "C",
+        "texto": "Extensão e pronação."
+      },
+      {
+        "letra": "D",
+        "texto": "Extensão e supinação."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [],
+    "comentario": {
+      "correta": "Flexão e pronação corresponde ao desvio posteromedial. A flexão corrige o componente em extensão e a pronação tensiona a dobradiça periosteal medial. A manobra só faz sentido depois de considerar comprimento e alinhamento; uma redução aparentemente boa que comprometa perfusão não representa um resultado aceitável.",
+      "incorretas": {
+        "B": "A flexão é adequada, mas a supinação combina melhor com o padrão posterolateral quando o periósteo lateral está íntegro. A posição rotacional não é escolhida arbitrariamente: ela deve tensionar a dobradiça preservada. Usar supinação para toda supracondiliana ignora a direção do deslocamento distal.",
+        "C": "A pronação corresponde ao lado da dobradiça medial, mas manter a correção em extensão não resolve o componente posterior típico da fratura em extensão. A opção acerta uma parte da mecânica e erra a outra. O nome do padrão da fratura não significa que a redução deva manter o cotovelo na mesma posição causal.",
+        "D": "A alternativa combina extensão inadequada para a correção final clássica com supinação do lado oposto ao padrão descrito. Supinação pode ter utilidade em outro sentido de desvio, e extensão pode integrar etapas iniciais de tração. Nenhuma dessas possibilidades torna o conjunto a manobra pedida para o padrão posteromedial."
+      },
+      "conceito_trechos": [
+        "Nas fraturas supracondilianas em extensão, o fragmento distal se desloca posteriormente e pode desviar para medial ou lateral. O lado de periósteo ainda íntegro funciona como uma dobradiça, ajudando a guiar e a estabilizar a redução. A rotação do antebraço modifica a tensão dessa dobradiça."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "var",
+      "conteudo": {
+        "area": "CRIANÇA",
+        "destaques": [
+          "desvio posteromedial"
+        ],
+        "capa": {
+          "titulo": "Quatro manobras\nem campo.\n[[Só uma reduz\no posteromedial.]]",
+          "lide": "Flexão ou extensão, pronação ou supinação. A banca escalou as quatro combinações numa supracondiliana da criança. O VAR vai revisar cada lance.",
+          "escalacao": [
+            "Flexão",
+            "Extensão",
+            "Pronação",
+            "Supinação"
+          ]
+        },
+        "replay": {
+          "titulo": "O periósteo íntegro é a [[dobradiça.]]",
+          "lide": "Na fratura em extensão, o fragmento distal vai para trás e para um dos lados. O periósteo que sobra guia a redução:",
+          "blocos": [
+            {
+              "rotulo": "Jogada 1 · rotação",
+              "titulo": "Pronar",
+              "texto": "No desvio **posteromedial**, o periósteo **medial** fica íntegro. A pronação tensiona esse lado."
+            },
+            {
+              "rotulo": "Jogada 2 · cotovelo",
+              "titulo": "Fletir",
+              "texto": "A **flexão** corrige o componente posterior, depois de recuperar comprimento e alinhamento."
+            }
+          ],
+          "leitura": "a rotação segue o lado da dobradiça; o posterior se corrige com flexão.",
+          "tarja": [
+            "Replay",
+            "Procure o lado do periósteo íntegro"
+          ]
+        },
+        "decisao": {
+          "motivos": {
+            "A": "A **flexão** corrige o componente posterior e a **pronação** tensiona a dobradiça periosteal medial.",
+            "B": "A flexão serve, mas a **supinação** combina com o desvio **posterolateral**.",
+            "C": "A pronação acerta o lado, mas manter em **extensão** não corrige o componente posterior.",
+            "D": "**Extensão e supinação**: erra a correção posterior e o lado da dobradiça."
+          }
+        },
+        "sumula": {
+          "linhas": [
+            {
+              "item": "Flexão",
+              "desc": "Corrige o componente posterior da fratura em extensão",
+              "chip": "em",
+              "rotulo": "EM CAMPO"
+            },
+            {
+              "item": "Pronação",
+              "desc": "Tensiona o periósteo medial íntegro",
+              "chip": "em",
+              "rotulo": "EM CAMPO"
+            },
+            {
+              "item": "Supinação",
+              "desc": "Ajuda no posterolateral, com dobradiça lateral",
+              "chip": "imp",
+              "rotulo": "OUTRO TIME"
+            },
+            {
+              "item": "Extensão",
+              "desc": "Não é a posição final da redução clássica",
+              "chip": "imp",
+              "rotulo": "OUTRO TIME"
+            },
+            {
+              "item": "Perfusão",
+              "desc": "Confira pulso, nervos e a redução na imagem",
+              "chip": "banco",
+              "rotulo": "SEMPRE"
+            }
+          ],
+          "para_prova": "posteromedial = **flexão e pronação**; no posterolateral, a rotação se inverte: **supinação**."
+        },
+        "story1": {
+          "titulo": "Qual manobra reduz o [[posteromedial?]]"
+        },
+        "story2": {
+          "titulo": "Duas manobras estão em [[outro time.]]",
+          "fichas": [
+            {
+              "nome": "Supinação",
+              "texto": "Combina com o desvio **posterolateral**, quando a dobradiça lateral está íntegra."
+            },
+            {
+              "nome": "Extensão",
+              "texto": "Pode entrar na **tração inicial**, mas não corrige o componente posterior na posição final."
+            }
+          ],
+          "lide": "Tirando as duas, **sobra uma só alternativa** em jogo."
+        },
+        "story3": {
+          "titulo": "Flexão e [[pronação.]]",
+          "blocos": [
+            {
+              "rotulo": "Cotovelo",
+              "titulo": "Flexão",
+              "texto": "Corrige o componente **posterior**."
+            },
+            {
+              "rotulo": "Antebraço",
+              "titulo": "Pronação",
+              "texto": "Tensiona a dobradiça **medial** íntegra."
+            }
+          ],
+          "para_prova": "o lado do desvio diz a rotação. Posteromedial prona; posterolateral supina."
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: var-feed-01 a feed-05, das 7h às 8h.",
+    "Story da pergunta: var-story-01, logo depois do feed.",
+    "Stories da resposta: var-story-02 e story-03, ao meio-dia."
+  ],
+  "legenda": "Flexão ou extensão? Pronação ou supinação?\n\nTEOT 2025: a supracondiliana da criança com desvio posteromedial e a manobra de redução. O VAR revisa cada combinação, lance a lance.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para o plantão e mande para quem reduz toda supracondiliana do mesmo jeito.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TEOT",
+    "#ortopediapediatrica",
+    "#residenciamedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão pediatria-0914 (TEOT 2025), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

@@ -4,6 +4,9 @@ Roteiro para outro agente fazer os posts exatamente como eles são feitos aqui. 
 Não pule etapa. Antes de tudo, leia as regras em
 [docs/marketing/orientacoes.md](../marketing/orientacoes.md).
 
+> **Atalho:** se o post for de um estilo aprovado do kit (Snellen, VAR, Cofre, Cupom, Mecânica fina, Treine grátis),
+> use [codex-post-rapido.md](codex-post-rapido.md) e [marketing/kit/README.md](../../marketing/kit/README.md): sem editar HTML.
+
 ---
 
 ## O mais importante: como as imagens são feitas

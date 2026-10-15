@@ -1,0 +1,83 @@
+{
+  "post": "post-17",
+  "data": "2026-10-29",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "cupom-gardner",
+  "formato": "stories (3)",
+  "estilo": "cupom-fiscal",
+  "assunto": "Síndrome de Gardner: osteomas múltiplos",
+  "gancho": "Pólipos, desmoide, cistos. E no osso?",
+  "por_que": "Tumores: associação clássica, enunciado curto, resposta de uma palavra.",
+  "questao": {
+    "id": "tumores-0260",
+    "area": "Tumores ósseos e de partes moles",
+    "subtema": "Tumores benignos de partes moles",
+    "prova": "TARO",
+    "ano": 2025,
+    "simulado": false,
+    "enunciado": "A síndrome de GARDNER é a associação entre pólipos intestinais, fibromatose e cistos cutâneos com múltiplos:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "osteomas."
+      },
+      {
+        "letra": "B",
+        "texto": "encondromas."
+      },
+      {
+        "letra": "C",
+        "texto": "osteoblastomas."
+      },
+      {
+        "letra": "D",
+        "texto": "osteocondromas."
+      }
+    ],
+    "gabarito": "A",
+    "imagens": [],
+    "comentario": {
+      "correta": "**Osteomas.** Múltiplos, sobretudo na mandíbula e no crânio.",
+      "incorretas": {
+        "B": "**Ollier.** Encondromas múltiplos são a doença de Ollier.",
+        "C": "**Sem síndrome.** Osteoblastomas múltiplos não formam quadro reconhecido.",
+        "D": "**Exostose múltipla hereditária.** Osteocondromas múltiplos, sem pólipos."
+      },
+      "conceito_trechos": [
+        "**O que é Gardner.** É uma variante da **polipose adenomatosa familiar**, do gene **APC**, autossômica dominante, com manifestações extraintestinais: **osteomas múltiplos**, na mandíbula, na maxila e no crânio, às vezes nos ossos longos; **cistos epidermoides** cutâneos; **tumores desmoides**, a fibromatose agressiva, muitas vezes intra-abdominais ou da parede abdominal e causa importante de morbidade depois da colectomia; além de dentes supranumerários e hipertrofia congênita do epitélio pigmentar da retina.",
+        "**Na prova:** pólipos, desmoide, cistos e **osteomas** formam a síndrome de Gardner."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cupom-fiscal",
+      "conteudo": {
+        "gancho": "Pólipos, desmoide, cistos.\n[[E no osso?]]",
+        "explicacao": [
+          "Gardner é variante da **polipose adenomatosa familiar** (gene APC), com **osteomas múltiplos** na mandíbula, na maxila e no crânio.",
+          "Os osteomas podem **preceder em anos** os pólipos: reconhecê-los pode antecipar a colonoscopia."
+        ],
+        "erradas": {
+          "B": "Encondromas: doença de Ollier.",
+          "C": "Osteoblastomas: sem síndrome.",
+          "D": "Osteocondromas: exostose múltipla."
+        },
+        "regra": "Gardner =\n[[osteomas.]]"
+      }
+    }
+  ],
+  "publicacao": [
+    "Story da pergunta: cupom-fiscal-story-01, das 7h às 8h.",
+    "Stories da resposta e do cupom: story-02 e story-03, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão tumores-0260 (TARO 2025), gabarito oficial A: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

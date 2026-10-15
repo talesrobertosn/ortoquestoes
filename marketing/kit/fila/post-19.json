@@ -1,0 +1,116 @@
+{
+  "post": "post-19",
+  "data": "2026-10-31",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "snellen-patela",
+  "formato": "feed (carrossel de 5)",
+  "estilo": "snellen",
+  "assunto": "Luxação da patela: lesão osteocondral inferomedial",
+  "gancho": "A patela sai para fora. A lesão aparece onde ela bate na volta.",
+  "por_que": "Joelho do pronto-socorro; as alternativas cruzam superior/inferior e medial/lateral, e o mecanismo decide.",
+  "questao": {
+    "id": "joelho-0262",
+    "area": "Joelho",
+    "subtema": "Ruptura dos tendões patelar e quadricipital",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na luxação aguda traumática mais frequente da patela, a lesão osteocondral é mais comum na borda",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "inferior e lateral da patela."
+      },
+      {
+        "letra": "B",
+        "texto": "inferior e medial da patela."
+      },
+      {
+        "letra": "C",
+        "texto": "superior e lateral da patela."
+      },
+      {
+        "letra": "D",
+        "texto": "superior e medial da patela."
+      }
+    ],
+    "gabarito": "B",
+    "imagens": [],
+    "comentario": {
+      "correta": "**Correta: B (inferior e medial).** Na luxação lateral aguda, a face medial da patela bate contra o côndilo femoral lateral na redução, e a lesão osteocondral é mais comum na **borda inferomedial** da patela.",
+      "incorretas": {
+        "A": "A **borda lateral** da patela não é a área de impacto: é a face medial que choca contra o côndilo lateral.",
+        "C": "A borda **superior e lateral** não participa do impacto típico da luxação lateral.",
+        "D": "A borda **medial** está correta, mas a lesão é **inferior**, porque a luxação ocorre em leve flexão, com a parte inferior da patela em contato com a tróclea."
+      },
+      "conceito_trechos": [
+        "**O mecanismo da luxação lateral da patela.** A luxação aguda mais comum é a **lateral**: com o joelho em leve flexão, o pé fixo e o fêmur rodando internamente (valgo dinâmico), a patela sai da tróclea e se desloca por cima do côndilo femoral lateral. Na maioria das vezes, ela **reduz espontaneamente** quando o joelho se estende."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "snellen",
+      "conteudo": {
+        "linhas": [
+          "BORDA",
+          "PATELA",
+          "LUXAÇÃO",
+          "QUAL BORDA",
+          "SUPERIOR · INFERIOR",
+          "na luxação aguda mais frequente",
+          "onde fica a lesão osteocondral"
+        ],
+        "negritos": [
+          "lesão osteocondral"
+        ],
+        "grifos": [
+          "luxação aguda traumática mais frequente"
+        ],
+        "dica_questao": "Quatro bordas parecidas: quem decide é saber qual luxação é a mais frequente.",
+        "lupa_texto": "luxação mais\nfrequente",
+        "lupa_cartoes": [
+          "A luxação aguda mais frequente da patela é a **lateral**. Na volta, a face **medial** da patela bate no **côndilo femoral lateral**.",
+          "E a luxação acontece com o joelho em **leve flexão**: a parte **inferior** da patela está em contato com a tróclea."
+        ],
+        "chamada_resposta": "A patela sai para fora e volta batendo.",
+        "motivos": {
+          "A": "A **borda lateral** não é a área de impacto: é a face medial que bate no côndilo lateral.",
+          "B": "**Inferior e medial**: a face medial bate no côndilo lateral, com a parte inferior em contato.",
+          "C": "A borda **superior e lateral** não participa do impacto típico.",
+          "D": "A borda medial está certa, mas a lesão é **inferior**, pela leve flexão."
+        },
+        "selo_gabarito": "Gabarito · borda inferomedial",
+        "rodape_resposta": "Letra **B** · inferior e medial",
+        "vermelho": {
+          "rotulo": "Os dois lados do impacto",
+          "texto": "Na RM: contusão na **faceta medial da patela** e na face anterolateral do **côndilo femoral lateral**."
+        },
+        "verde": {
+          "rotulo": "Na hemartrose",
+          "texto": "Radiografia com **axial** e, em geral, RM: fragmento grande e com osso pode ser **fixado**."
+        },
+        "cartao_final": "Com frequência, o **LPFM** é reparado ou reconstruído na mesma cirurgia."
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: snellen-feed-01 a feed-05, das 7h às 8h."
+  ],
+  "legenda": "Até que linha você lê?\n\nTARO 2026: luxação aguda da patela e a borda da lesão osteocondral. As alternativas cruzam superior, inferior, medial e lateral; o mecanismo decide.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem atende entorse de joelho no pronto-socorro.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#joelho",
+    "#residenciamedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão joelho-0262 (TARO 2026), gabarito oficial B: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}
