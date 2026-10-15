@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 5170,
- "batalha": 4153,
- "soEstudo": 1017,
+ "total": 5204,
+ "batalha": 4161,
+ "soEstudo": 1043,
  "comImagem": 630,
  "simulados": 927,
- "autorais": 868,
+ "autorais": 902,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -174,25 +174,26 @@
   "ombro-cotovelo": {
    "nome": "Ombro e cotovelo",
    "arquivo": "ombro-cotovelo.json",
-   "total": 587,
-   "batalha": 437,
+   "total": 621,
+   "batalha": 445,
    "comImagem": 90,
    "simulados": 148,
    "tipos": {
     "Anatomia": 14,
-    "Armadilha": 7,
-    "Classificação": 26,
-    "Conceito": 107,
+    "Armadilha": 8,
+    "Classificação": 29,
+    "Conceito": 129,
     "Imagem": 76,
-    "Par confundível": 20,
+    "Na prova": 2,
+    "Par confundível": 26,
     "Relâmpago": 309,
     "Tabela": 28
    },
    "assuntos": {
     "Anatomia do ombro": 108,
     "Lesões do manguito rotador": 104,
+    "Omartrose e artroplastia do ombro": 88,
     "Instabilidade anterior do ombro": 76,
-    "Omartrose e artroplastia do ombro": 54,
     "Fraturas do úmero proximal e da escápula": 29,
     "Instabilidade do cotovelo": 25,
     "Lesões do bíceps": 22,
@@ -475,5 +476,5 @@
    }
   }
  },
- "assinatura": "92c1564991a1"
+ "assinatura": "1ab564849245"
 }
