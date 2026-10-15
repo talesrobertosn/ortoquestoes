@@ -20,23 +20,8 @@ export const normalizar = (texto: string) => texto.toLocaleLowerCase('pt-BR').no
 export const corresponde = (termos: Array<string | null | undefined>, busca: string) =>
   !busca || termos.some((termo) => termo && normalizar(termo).includes(busca))
 
-export const PLANOS: Record<string, string> = { mensal: 'Mensal', semestral: 'Semestral', anual: 'Anual' }
-
-export const STATUS_ASSINATURA: Record<string, string> = {
-  ativa: 'Em dia', cancelada: 'Cancelada', reembolsada: 'Reembolsada', vencida: 'Vencida',
-  falha_pagamento: 'Falha no pagamento', pendente: 'Aguardando pagamento', pausada: 'Pausada',
-}
-
-export const STATUS_EVENTO: Record<string, string> = {
-  recebido: 'Na fila', processado: 'Processado', ignorado: 'Ignorado (normal)', erro: 'Precisa de atenção',
-}
-
-export const TIPOS_EVENTO: Record<string, string> = {
-  payment: 'Pagamento avulso',
-  subscription_authorized_payment: 'Cobrança da assinatura',
-  subscription_preapproval: 'Assinatura criada ou alterada',
-  subscription_preapproval_plan: 'Plano do Mercado Pago',
-}
+// Nomes de planos, status e avisos moram em rotulos.ts (um lugar só); reexportados aqui para quem já importava daqui.
+export { PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO } from './rotulos'
 
 /** O que cada código de erro do webhook quer dizer, e o que fazer. */
 export const ERROS_EVENTO: Record<string, string> = {
