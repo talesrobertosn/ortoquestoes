@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4899,
- "batalha": 4091,
- "soEstudo": 808,
+ "total": 4916,
+ "batalha": 4096,
+ "soEstudo": 820,
  "comImagem": 630,
  "simulados": 846,
- "autorais": 597,
+ "autorais": 614,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -382,23 +382,23 @@
   "trauma": {
    "nome": "Trauma adulto",
    "arquivo": "trauma.json",
-   "total": 1051,
-   "batalha": 859,
+   "total": 1068,
+   "batalha": 864,
    "comImagem": 92,
    "simulados": 300,
    "tipos": {
-    "Armadilha": 6,
-    "Classificação": 32,
-    "Conceito": 49,
+    "Armadilha": 7,
+    "Classificação": 33,
+    "Conceito": 60,
     "Imagem": 92,
     "Na prova": 200,
-    "Par confundível": 11,
+    "Par confundível": 15,
     "Relâmpago": 659,
     "Tabela": 2
    },
    "assuntos": {
     "Fratura da cabeça do rádio e instabilidade do cotovelo": 126,
-    "Luxação do joelho e lesões ligamentares": 80,
+    "Luxação do joelho e lesões ligamentares": 97,
     "Fratura da escápula": 73,
     "Fraturas diafisárias do antebraço": 64,
     "Luxação acromioclavicular": 50,
@@ -473,5 +473,5 @@
    }
   }
  },
- "assinatura": "4d3d6cbed833"
+ "assinatura": "7d71bb8d0037"
 }
