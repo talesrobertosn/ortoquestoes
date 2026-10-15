@@ -113,7 +113,7 @@
   .acao-responder .botao--grande { width: 100%; min-height: 48px; border-radius: var(--raio-controle); }
 }
 @media (max-width: 40rem) {
-  .acao-responder__dica { display: none; }
+  .acao-responder__dica { width: 100%; margin: 0; font-size: var(--meta); text-align: center; }
 }
 .questao-impressa { border-radius: var(--raio-cartao); box-shadow: var(--sombra-media); }
 .questao-impressa > .cartao__corpo { padding: clamp(1.1rem, 3.2vw, 2.1rem); }

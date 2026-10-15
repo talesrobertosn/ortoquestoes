@@ -478,9 +478,10 @@ export function CartaoQuestao({
           </div>
         ) : !respondida ? (
           <div className={'linha nao-imprime acao-responder' + (escolhida ? ' acao-responder--pronta' : '')}>
-            {escolhida && <div className="grupo-opcoes confianca" role="group" aria-label="Sua confiança nesta resposta">
+            {/* Sempre à vista, antes de escolher: o botão não pula para baixo no clique e a pessoa vê que pode marcar dúvida ou chute. */}
+            <div className="grupo-opcoes confianca" role="group" aria-label="Sua confiança nesta resposta">
               {([['seguro', 'Tenho ', 'certeza'], ['duvida', 'Tenho ', 'dúvida'], ['chute', 'Foi um ', 'chute']] as const).map(([valor, prefixo, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={confianca === valor} onClick={() => definirConfianca(valor)}><span className="confianca__prefixo">{prefixo}</span><span className="confianca__rotulo">{rotulo}</span></button>)}
-            </div>}
+            </div>
             <button
               type="button"
               className="botao botao--principal botao--grande"
@@ -491,7 +492,7 @@ export function CartaoQuestao({
               {enviando ? 'Registrando…' : escolhida ? `Responder ${escolhida}` : 'Escolha uma alternativa'}
             </button>
             {erroEnvio && <p className="aviso-formulario aviso-formulario--erro" role="alert">Não foi possível registrar a resposta. Tente de novo; se continuar, mande um print desta mensagem. <small>({erroEnvio})</small></p>}
-            {escolhida && <span className="campo__auxilio acao-responder__dica">Acerto com dúvida ou chute volta antes para revisão.</span>}
+            <span className="campo__auxilio acao-responder__dica">Acerto com dúvida ou chute volta antes para revisão.</span>
             <span className="meta so-teclado">
               Teclas <kbd>1</kbd>–<kbd>{letrasDisponiveis.length}</kbd> selecionam,{' '}
               <kbd>Enter</kbd> confirma
