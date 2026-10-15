@@ -171,6 +171,146 @@
    "fonte": "b06a4f0d185d"
   },
   {
+   "id": "fc-ombro-cotovelo-0004-co1",
+   "questao": "ombro-cotovelo-0004",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em extensão, quanto da carga compressiva do cotovelo passa pela articulação capitulorradial?",
+   "resposta": "60%",
+   "explicacao": "Cerca de **60%** da carga em extensão: por isso a artrose primária do cotovelo começa na **capitulorradial**.",
+   "opcoes": [
+    "60%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "250ff4a3ba11",
+   "origem": "autoral",
+   "trecho": "por onde passa a maior parte da carga compressiva do cotovelo, cerca de 60% em extensão.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0004-co2",
+   "questao": "ombro-cotovelo-0004",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrose primária do cotovelo, qual técnica de desbridamento abre uma janela na fossa olecraniana?",
+   "resposta": "Outerbridge-Kashiwagi",
+   "explicacao": "**Outerbridge-Kashiwagi:** a janela na fossa olecraniana dá acesso aos compartimentos anterior e posterior pela mesma via.",
+   "opcoes": [
+    "Outerbridge-Kashiwagi"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "250ff4a3ba11",
+   "origem": "autoral",
+   "trecho": "na técnica de **Outerbridge-Kashiwagi** abre-se uma janela na fossa olecraniana que dá acesso aos compartimentos anterior e posterior pela mesma via",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0004-co3",
+   "questao": "ombro-cotovelo-0004",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o perfil típico do paciente com artrose primária do cotovelo?",
+   "resposta": "homens de meia-idade",
+   "explicacao": "**Homens de meia-idade**, trabalhadores braçais, halterofilistas e arremessadores, quase sempre no lado dominante.",
+   "opcoes": [
+    "homens de meia-idade"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "250ff4a3ba11",
+   "origem": "autoral",
+   "trecho": "acomete **homens de meia-idade**, trabalhadores braçais, halterofilistas e atletas de arremesso",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0004-co4",
+   "questao": "ombro-cotovelo-0004",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrose primária do cotovelo, qual nervo deve ser sempre examinado, pelos osteófitos mediais?",
+   "resposta": "nervo ulnar",
+   "explicacao": "Os osteófitos mediais podem comprimir o **nervo ulnar**.",
+   "opcoes": [
+    "nervo ulnar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "250ff4a3ba11",
+   "origem": "autoral",
+   "trecho": "os osteófitos mediais podem comprimir o nervo ulnar, que deve ser examinado sempre.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0004-pc1",
+   "questao": "ombro-cotovelo-0004",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrose do cotovelo, o osteófito do olécrano dói na extensão terminal. Em que movimento dói o do coronoide?",
+   "resposta": "flexão máxima",
+   "explicacao": "Dor nos **extremos**: olécrano na extensão terminal, **coronoide na flexão máxima**; o arco médio é indolor.",
+   "opcoes": [
+    "flexão máxima"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "250ff4a3ba11",
+   "origem": "autoral",
+   "trecho": "dor na extensão terminal pelo olécrano e na flexão máxima pelo coronoide.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0004-q",
    "questao": "ombro-cotovelo-0004",
    "area": "Ombro e cotovelo",
@@ -1174,6 +1314,60 @@
    "fonte": "b9006ec06342"
   },
   {
+   "id": "fc-ombro-cotovelo-0036-co1",
+   "questao": "ombro-cotovelo-0036",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o agente típico da infecção da prótese do ombro?",
+   "resposta": "Cutibacterium acnes",
+   "explicacao": "O ***Cutibacterium acnes***, de crescimento lento, é o agente peculiar do ombro.",
+   "opcoes": [
+    "Cutibacterium acnes"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "67c851c808f1",
+   "origem": "autoral",
+   "trecho": "a infecção (com o *Cutibacterium acnes* como agente típico do ombro)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0036-co2",
+   "questao": "ombro-cotovelo-0036",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa, a tensão do deltoide pode causar fratura de quais estruturas?",
+   "resposta": "acrômio e da espinha da escápula",
+   "explicacao": "Complicações próprias da reversa: notching, instabilidade, infecção e fratura do **acrômio e da espinha da escápula**.",
+   "opcoes": [
+    "acrômio e da espinha da escápula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "67c851c808f1",
+   "origem": "autoral",
+   "trecho": "a fratura do acrômio e da espinha da escápula pela tensão do deltoide",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0036-q",
    "questao": "ombro-cotovelo-0036",
    "area": "Ombro e cotovelo",
@@ -1253,6 +1447,116 @@
    "prova": "TARO",
    "ano": 2016,
    "fonte": "4d57f55375fd"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0039-co1",
+   "questao": "ombro-cotovelo-0039",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A siringomielia, causa do Charcot do ombro, associa-se muitas vezes a qual malformação?",
+   "resposta": "Chiari tipo I",
+   "explicacao": "**Chiari tipo I**: a siringe cresce do centro da medula e destrói as fibras de dor e temperatura.",
+   "opcoes": [
+    "Chiari tipo I"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "7b6a7f519107",
+   "origem": "autoral",
+   "trecho": "muitas vezes associada à malformação de **Chiari** tipo I.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0039-co2",
+   "questao": "ombro-cotovelo-0039",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na dissociação siringomiélica, perde-se dor e temperatura em capa. O que fica preservado?",
+   "resposta": "tato e propriocepção",
+   "explicacao": "A siringe destrói as fibras que cruzam na comissura anterior (dor e temperatura); **tato e propriocepção** ficam preservados.",
+   "opcoes": [
+    "tato e propriocepção"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "7b6a7f519107",
+   "origem": "autoral",
+   "trecho": "perda de dor e temperatura em distribuição **em capa**, sobre ombros, tronco superior e membros superiores, com **tato e propriocepção preservados**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0039-co3",
+   "questao": "ombro-cotovelo-0039",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Diante de um ombro de Charcot, qual exame é obrigatório?",
+   "resposta": "ressonância da coluna cervical",
+   "explicacao": "**Ressonância cervical** e avaliação neurocirúrgica: a doença de base (Chiari, siringe) pode ser tratada.",
+   "opcoes": [
+    "ressonância da coluna cervical"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "7b6a7f519107",
+   "origem": "autoral",
+   "trecho": "Todo ombro de Charcot exige **ressonância da coluna cervical** e avaliação neurocirúrgica",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0039-pc1",
+   "questao": "ombro-cotovelo-0039",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Charcot do ombro é siringomielia; do pé, diabetes. Qual articulação a tabes dorsalis acomete sobretudo?",
+   "resposta": "joelho",
+   "explicacao": "**Tabes dorsalis** (sífilis terciária): sobretudo **joelho**, quadril e coluna.",
+   "opcoes": [
+    "joelho",
+    "ombro",
+    "pé"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "7b6a7f519107",
+   "origem": "autoral",
+   "trecho": "a **tabes dorsalis** (sífilis terciária) acomete sobretudo **joelho**, quadril e coluna",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0039-q",
@@ -1558,6 +1862,92 @@
    "fonte": "cabda190f5e5"
   },
   {
+   "id": "fc-ombro-cotovelo-0046-co1",
+   "questao": "ombro-cotovelo-0046",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese semiconstrita do cotovelo, qual componente sofre mais soltura asséptica?",
+   "resposta": "umeral",
+   "explicacao": "Soltura sobretudo do componente **umeral**: braço de alavanca desfavorável e pouco osso no úmero distal.",
+   "opcoes": [
+    "umeral",
+    "ulnar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "111a7491e617",
+   "origem": "autoral",
+   "trecho": "A principal complicação da semiconstrita é a **soltura asséptica**, sobretudo do componente **umeral**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0046-co2",
+   "questao": "ombro-cotovelo-0046",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após a prótese semiconstrita do cotovelo, qual é a restrição de carga repetida recomendada?",
+   "resposta": "cerca de 1 kg",
+   "explicacao": "Restrição para a vida toda: não carregar mais que **cerca de 1 kg** de forma repetida.",
+   "opcoes": [
+    "cerca de 1 kg"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "111a7491e617",
+   "origem": "autoral",
+   "trecho": "não carregar mais que cerca de 1 kg de forma repetida",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0046-pc1",
+   "questao": "ombro-cotovelo-0046",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese semiconstrita do cotovelo, a complicação principal é a soltura. Em qual tipo de prótese a instabilidade é o problema?",
+   "resposta": "não constrita",
+   "explicacao": "A **não constrita** depende dos ligamentos e pode luxar; a semiconstrita é ligada pela dobradiça.",
+   "opcoes": [
+    "não constrita",
+    "semiconstrita"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "111a7491e617",
+   "origem": "autoral",
+   "trecho": "a **instabilidade** é problema da **não constrita**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0046-q",
    "questao": "ombro-cotovelo-0046",
    "area": "Ombro e cotovelo",
@@ -1642,6 +2032,33 @@
    "fonte": "0fe467598ac8"
   },
   {
+   "id": "fc-ombro-cotovelo-0050-co1",
+   "questao": "ombro-cotovelo-0050",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o achado clínico mais precoce e constante da artrose primária do ombro?",
+   "resposta": "perda progressiva da rotação externa",
+   "explicacao": "Subescapular e cápsula anterior contraem: **perda progressiva da rotação externa**.",
+   "opcoes": [
+    "perda progressiva da rotação externa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "02142d7cd701",
+   "origem": "autoral",
+   "trecho": "O resultado é a perda progressiva da **rotação externa**, o achado clínico mais precoce e mais constante da doença.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0050-q",
    "questao": "ombro-cotovelo-0050",
    "area": "Ombro e cotovelo",
@@ -1694,6 +2111,60 @@
    "prova": "TARO",
    "ano": 2014,
    "fonte": "5fb9398b9c6a"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0052-co1",
+   "questao": "ombro-cotovelo-0052",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrodese do ombro, qual é a posição recomendada da fusão?",
+   "resposta": "30 graus de abdução, 30 de flexão e 30 de rotação interna",
+   "explicacao": "Os **três trintas**: abdução, flexão e rotação interna de 30 graus, para a mão alcançar a boca e o períneo.",
+   "opcoes": [
+    "30 graus de abdução, 30 de flexão e 30 de rotação interna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "b7dc7748aaa1",
+   "origem": "autoral",
+   "trecho": "a posição recomendada fica em torno de 30 graus de abdução, 30 de flexão e 30 de rotação interna",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0052-co2",
+   "questao": "ombro-cotovelo-0052",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para a artrodese do ombro funcionar, quais músculos que movem a escápula precisam estar bons?",
+   "resposta": "trapézio e o serrátil anterior",
+   "explicacao": "Após a fusão, o braço se move pela escápula: **trapézio e serrátil anterior** precisam funcionar.",
+   "opcoes": [
+    "trapézio e o serrátil anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "b7dc7748aaa1",
+   "origem": "autoral",
+   "trecho": "ela só funciona se os músculos que movem a escápula, como o trapézio e o serrátil anterior, estiverem bons.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0052-q",
@@ -2934,6 +3405,60 @@
    "fonte": "90c2e5ed9478"
   },
   {
+   "id": "fc-ombro-cotovelo-0087-co1",
+   "questao": "ombro-cotovelo-0087",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a carga excêntrica na borda do polietileno glenoidal que afrouxa sua interface?",
+   "resposta": "cavalo de balanço",
+   "explicacao": "Efeito **cavalo de balanço** (rocking horse): comprime um lado, levanta o outro, solta o componente glenoidal.",
+   "opcoes": [
+    "cavalo de balanço"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "19986a7f77e6",
+   "origem": "autoral",
+   "trecho": "é o efeito **cavalo de balanço** (rocking horse)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0087-co2",
+   "questao": "ombro-cotovelo-0087",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na suspeita de infecção da prótese do ombro, por quanto tempo as culturas devem ser mantidas?",
+   "resposta": "duas semanas",
+   "explicacao": "O *Cutibacterium acnes* cresce devagar: culturas por cerca de **duas semanas**.",
+   "opcoes": [
+    "duas semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "19986a7f77e6",
+   "origem": "autoral",
+   "trecho": "com o **Cutibacterium acnes** como agente peculiar do ombro, de crescimento lento, que exige culturas mantidas por cerca de duas semanas.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0087-q",
    "questao": "ombro-cotovelo-0087",
    "area": "Ombro e cotovelo",
@@ -3318,6 +3843,62 @@
    "prova": "TEOT",
    "ano": 2023,
    "fonte": "a3c21bf539b5"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0109-ar1",
+   "questao": "ombro-cotovelo-0109",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Lesão do ligamento colateral contraindica a prótese semiconstrita de Coonrad-Morrey?",
+   "resposta": "não depende dos ligamentos colaterais",
+   "explicacao": "Não. As peças são unidas por pino: a prótese **não depende dos ligamentos colaterais**; a lesão é até razão para escolhê-la.",
+   "opcoes": [
+    "não depende dos ligamentos colaterais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "d08c9044b39b",
+   "origem": "autoral",
+   "trecho": "Como as peças estão presas uma à outra, a prótese não depende dos ligamentos colaterais para ficar estável.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0109-co1",
+   "questao": "ombro-cotovelo-0109",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Artrose e artroplastia do cotovelo",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como a prótese de Coonrad-Morrey contorna a grande perda óssea do úmero distal?",
+   "resposta": "haste longa e uma aba anterior",
+   "explicacao": "**Haste longa e aba anterior** (flange) apoiada em enxerto ósseo.",
+   "opcoes": [
+    "haste longa e uma aba anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "d08c9044b39b",
+   "origem": "autoral",
+   "trecho": "que tem haste longa e uma aba anterior (flange) apoiada em enxerto ósseo.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0109-q",
@@ -3925,6 +4506,174 @@
    "prova": "TEOT",
    "ano": 2023,
    "fonte": "bc6561c23b6c"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0172-cl1",
+   "questao": "ombro-cotovelo-0172",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Walch da glenoide, qual tipo tem a glenoide bicôncava?",
+   "resposta": "B2",
+   "explicacao": "**B1:** estreitamento posterior. **B2:** **bicôncava**. **B3:** monocôncava retrovertida. **C:** displásica. **D:** anterior.",
+   "opcoes": [
+    "B1",
+    "B2",
+    "B3"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "5616d8dc1458",
+   "origem": "autoral",
+   "trecho": "**B2** com a glenoide **bicôncava**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0172-cl2",
+   "questao": "ombro-cotovelo-0172",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Walch, o que define o tipo C da glenoide?",
+   "resposta": "glenoide displásica",
+   "explicacao": "**Walch C:** **glenoide displásica**, retroversão congênita acima de 25 graus.",
+   "opcoes": [
+    "glenoide displásica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "5616d8dc1458",
+   "origem": "autoral",
+   "trecho": "**Tipo C**: glenoide displásica, com retroversão congênita acima de 25 graus.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0172-cl3",
+   "questao": "ombro-cotovelo-0172",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Walch, qual tipo tem subluxação anterior ou anteversão, o mais raro?",
+   "resposta": "Tipo D",
+   "explicacao": "**Walch D:** subluxação **anterior** ou anteversão, a exceção na artrose primária.",
+   "opcoes": [
+    "Tipo B",
+    "Tipo C",
+    "Tipo D"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "5616d8dc1458",
+   "origem": "autoral",
+   "trecho": "**Tipo D**: subluxação **anterior** ou anteversão.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0172-cl4",
+   "questao": "ombro-cotovelo-0172",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Walch B3, de glenoide monocôncava desgastada para trás, qual é o corte de subluxação posterior?",
+   "resposta": "acima de 70%",
+   "explicacao": "**B3:** retroversão acima de 15 graus ou subluxação **acima de 70%**.",
+   "opcoes": [
+    "acima de 70%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "5616d8dc1458",
+   "origem": "autoral",
+   "trecho": "**B3** com glenoide monocôncava inteiramente desgastada para trás, retroversão acima de 15 graus ou subluxação acima de 70%.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0172-co1",
+   "questao": "ombro-cotovelo-0172",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na radiografia da artrose primária do ombro, como se chama o osteófito inferior da cabeça umeral?",
+   "resposta": "barba de bode",
+   "explicacao": "O **osteófito inferior** da cabeça, em **barba de bode**, acompanha o desgaste posterior da glenoide.",
+   "opcoes": [
+    "barba de bode"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "5616d8dc1458",
+   "origem": "autoral",
+   "trecho": "Na radiografia, soma-se o **osteófito inferior** da cabeça, em \"barba de bode\".",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0172-pc1",
+   "questao": "ombro-cotovelo-0172",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A artrose primária gasta a glenoide atrás; a artropatia do manguito, em cima. Onde é o desgaste na artrite reumatoide?",
+   "resposta": "central",
+   "explicacao": "**Artrite reumatoide:** desgaste **central** e medial, simétrico, com osteopenia e pouco osteófito.",
+   "opcoes": [
+    "central",
+    "posterior",
+    "superior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "5616d8dc1458",
+   "origem": "autoral",
+   "trecho": "Na **artrite reumatoide**, o desgaste é **central** e medial, simétrico, com osteopenia e pouco osteófito.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0172-q",
@@ -5464,6 +6213,60 @@
    "fonte": "b5c1c0db0cda"
   },
   {
+   "id": "fc-ombro-cotovelo-0237-co1",
+   "questao": "ombro-cotovelo-0237",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese anatômica do ombro, o que a redução do offset umeral faz com a translação da cabeça?",
+   "resposta": "aumenta a translação",
+   "explicacao": "Tecidos frouxos: **aumenta a translação**, favorecendo instabilidade, e cai o braço de alavanca do manguito.",
+   "opcoes": [
+    "aumenta a translação"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "854a9df92f45",
+   "origem": "autoral",
+   "trecho": "Além disso, os tecidos ao redor ficam **frouxos**, e a cabeça se desloca mais (aumenta a translação), o que favorece instabilidade.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0237-pc1",
+   "questao": "ombro-cotovelo-0237",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia do ombro, reduzir o offset umeral afrouxa os tecidos. Qual erro aumenta a pressão sobre o componente glenoidal?",
+   "resposta": "overstuffing",
+   "explicacao": "**Overstuffing** (excesso de offset): tecidos tensos, rotação limitada e carga desigual na glenoide.",
+   "opcoes": [
+    "overstuffing"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "854a9df92f45",
+   "origem": "autoral",
+   "trecho": "A pressão aumentada sobre o componente da glenoide é consequência do excesso de offset (overstuffing), não da redução.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0237-q",
    "questao": "ombro-cotovelo-0237",
    "area": "Ombro e cotovelo",
@@ -6152,6 +6955,60 @@
    "fonte": "948973f13819"
   },
   {
+   "id": "fc-ombro-cotovelo-0300-ar1",
+   "questao": "ombro-cotovelo-0300",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quanto mais plano o componente glenoidal (raio muito maior que o da cabeça), melhor?",
+   "resposta": "o polietileno se desgasta mais rápido",
+   "explicacao": "Não. Plano demais reduz a área de contato e concentra pressão: **o polietileno se desgasta mais rápido**. Há uma faixa ideal.",
+   "opcoes": [
+    "o polietileno se desgasta mais rápido"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "1d35cd63ab80",
+   "origem": "autoral",
+   "trecho": "se o componente for plano demais, a área de contato fica pequena, a pressão se concentra num ponto e o polietileno se desgasta mais rápido.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0300-co1",
+   "questao": "ombro-cotovelo-0300",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a diferença proposital entre o raio da glenoide protética e o da cabeça?",
+   "resposta": "radial mismatch",
+   "explicacao": "**Radial mismatch:** glenoide com raio maior que a cabeça, para a cabeça deslizar sem carregar a borda.",
+   "opcoes": [
+    "radial mismatch"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "1d35cd63ab80",
+   "origem": "autoral",
+   "trecho": "Essa diferença tem nome: ***radial mismatch***, ou descompasso de raios.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0300-q",
    "questao": "ombro-cotovelo-0300",
    "area": "Ombro e cotovelo",
@@ -6754,6 +7611,33 @@
    "prova": "TARO",
    "ano": 2012,
    "fonte": "62cae4c95fa7"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0327-co1",
+   "questao": "ombro-cotovelo-0327",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtemas": [
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No ritmo escapuloumeral, numa elevação completa de cerca de 180 graus, quanto vem da escápula?",
+   "resposta": "cerca de 60 graus",
+   "explicacao": "Cerca de um terço, **60 graus**: é o limite de elevação após a artrodese do ombro.",
+   "opcoes": [
+    "cerca de 60 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "ae6d8f35ada3",
+   "origem": "autoral",
+   "trecho": "a escápula contribui com algo em torno de um terço, cerca de 60 graus.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0327-q",
