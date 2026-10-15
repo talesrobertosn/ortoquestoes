@@ -60,7 +60,6 @@
 .rk-movimento__sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .rk-linha > .rk-movimento { grid-column: 2; }
 .rk-mais { align-self: center; justify-self: center; margin-inline: auto; display: flex; }
-.rk-fora { margin: 0; padding: 0.9rem 1rem; border-radius: var(--raio-cartao); background: var(--verdete-veu); color: var(--texto); }
 .rk-regras { border-radius: var(--raio-grande); }
 .rk-regras h2 { margin: 0; font-size: 1.15rem; }
 .rk-regras > summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; list-style: none; cursor: pointer; }
@@ -702,3 +701,8 @@
 @media (max-width: 40rem) { .inv-segmentado { width: 100%; } .inv-segmentado button { flex: 1; padding: 0 0.5rem; } .inv-familia-escolha, .inv-familia-escolha select { width: 100%; max-width: none; } }
 .inv-grade--proximas { margin-top: 0.75rem; }
 .inv-item__familia { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--texto-2); }
+
+.rk-criterio { display: flex; align-items: center; gap: 0.45rem; margin: 0; font-size: var(--meta); color: var(--texto-2); }
+/* Lista de até 100 nomes: os emblemas ficam parados (a flutuação global de img[src*="emblemas/"]
+   virava centenas de animações ao mesmo tempo no celular). */
+.rk-lista img { animation: none; }
