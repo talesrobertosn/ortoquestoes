@@ -240,6 +240,15 @@ function porId(indice: Indice): Map<string, ItemIndice> {
   return mapa
 }
 
+// favoritos.includes por questão era O(n) dentro de um laço de ~7 mil itens, várias
+// vezes por tecla. O conjunto é montado uma vez por lista (a mesma lista, o mesmo conjunto).
+const conjuntosFavoritos = new WeakMap<string[], Set<string>>()
+function ehFavorita(contexto: ContextoLocal, id: string): boolean {
+  let conjunto = conjuntosFavoritos.get(contexto.favoritos)
+  if (!conjunto) { conjunto = new Set(contexto.favoritos); conjuntosFavoritos.set(contexto.favoritos, conjunto) }
+  return conjunto.has(id)
+}
+
 function aplicaUm(
   indice: Indice,
   item: ItemIndice,
@@ -288,7 +297,7 @@ function aplicaUm(
     if (filtros.situacao === 'naoRespondidas' && registro) return false
     if (filtros.situacao === 'erradas' && registro?.c !== false) return false
     if (filtros.situacao === 'acertadas' && registro?.c !== true) return false
-    if (filtros.situacao === 'favoritas' && !contexto.favoritos.includes(item.id)) return false
+    if (filtros.situacao === 'favoritas' && !ehFavorita(contexto, item.id)) return false
     if (filtros.situacao === 'incertas' && (!registro || (registro.confianca !== 'duvida' && registro.confianca !== 'chute'))) return false
     if (filtros.situacao === 'turmaErra' && !turmaErra(item.id, contexto)) return false
     if (filtros.situacao === 'turmaAcertaVoceErrou' && !turmaAcertaVoceErrou(item.id, contexto)) return false
@@ -365,7 +374,7 @@ export function contar(
       }
       if (venceHoje(item.id, contexto)) contagens.porSituacao.revisarHoje = (contagens.porSituacao.revisarHoje ?? 0) + 1
       if (dominada(registro)) contagens.porSituacao.dominadas = (contagens.porSituacao.dominadas ?? 0) + 1
-      if (contexto.favoritos.includes(item.id)) {
+      if (ehFavorita(contexto, item.id)) {
         contagens.porSituacao.favoritas = (contagens.porSituacao.favoritas ?? 0) + 1
       }
       if (registro && (registro.confianca === 'duvida' || registro.confianca === 'chute')) {

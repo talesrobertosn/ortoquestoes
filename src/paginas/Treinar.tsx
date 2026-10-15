@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useState } from 'react'
 import { FLASHCARDS_NO_MENU, TEXTO_GRATIS } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
@@ -104,7 +104,21 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     }
   }, [filtros])
 
-  const { contexto, carregandoBusca, turmaFalhou } = usarContextoLocal(filtros.busca, true)
+  // Digitar na busca não recalcula tudo a cada tecla: o texto vai para o filtro
+  // depois de 250 ms sem digitar, e as contagens pesadas usam a versão adiada
+  // dos filtros (o React atualiza a tela antes e conta em seguida).
+  const [buscaDigitada, definirBuscaDigitada] = useState(filtros.busca)
+  useEffect(() => { definirBuscaDigitada(filtros.busca) }, [filtros.busca])
+  useEffect(() => {
+    if (buscaDigitada === filtros.busca) return
+    const t = window.setTimeout(() => definirFiltros((atuais) => ({ ...atuais, busca: buscaDigitada })), 250)
+    return () => window.clearTimeout(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [buscaDigitada])
+  const filtrosAdiados = useDeferredValue(filtros)
+  const { contexto, carregandoBusca: carregandoTextos, turmaFalhou } = usarContextoLocal(filtros.busca, true)
+  // Busca ainda não aplicada (dentro dos 250 ms) conta como carregando: "Começar" espera.
+  const carregandoBusca = carregandoTextos || buscaDigitada !== filtros.busca
   const { premium, carregado: premiumCarregado, logado } = usarPremium()
   const semTurma = (!logado || premiumCarregado) && !premium
   const [conviteTurma, definirConviteTurma] = useState(false)
@@ -114,8 +128,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }, [semTurma, filtros.situacao])
   const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()
   const contagens = useMemo(
-    () => (indice ? contar(indice, filtros, contexto) : null),
-    [indice, filtros, contexto],
+    () => (indice ? contar(indice, filtrosAdiados, contexto) : null),
+    [indice, filtrosAdiados, contexto],
   )
   const arvore = useMemo(() => (indice ? arvoreAssuntos(indice) : []), [indice])
   const gruposProva = useMemo(() => {
@@ -200,7 +214,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   // No celular, Situação e Formato começam recolhidos mostrando o que está
   // escolhido; o botão fixo de começar já funciona com o padrão.
   const [telaLarga] = useState(() => typeof window === 'undefined' || window.matchMedia('(min-width: 52rem)').matches)
-  const [situacaoAberta, definirSituacaoAberta] = useState(() => telaLarga || filtros.situacao !== 'todas')
+  // "Quais questões" vem aberto também no celular: fechado, quem não percebia o <details>
+  // treinava "Todas" sem saber que dava para escolher só as novas ou as erradas.
+  const [situacaoAberta, definirSituacaoAberta] = useState(true)
   const [formatoAberto, definirFormatoAberto] = useState(telaLarga)
   // Girar o tablet ou alargar a janela abre os passos que no celular ficam recolhidos.
   useEffect(() => {
@@ -266,7 +282,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     filtros.dificuldades.length ? filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', ') : '',
   ].filter(Boolean).join(' · ')
   const opcoesAtivas = [filtros.comImagem, filtros.comComentario, filtros.incluirAnuladas, !filtros.embaralhar, !mostrarEtiquetas].filter(Boolean).length
-  const situacoesVisiveis = SITUACOES.filter((s) => !SITUACOES_TURMA.includes(s) && (s === 'todas' || s === filtros.situacao || (contagens?.porSituacao[s] ?? 0) > 0))
+  // Sempre as mesmas pílulas, no mesmo lugar: esconder as vazias fazia as outras mudarem de
+  // posição a cada filtro. A vazia fica visível e desabilitada (com 0).
+  const situacoesVisiveis = SITUACOES.filter((s) => !SITUACOES_TURMA.includes(s))
   return (
     <div className="empilha-2 treinar-pagina">
       <section className="tr-heroi">
@@ -362,11 +380,11 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             name="busca"
             autoComplete="off"
             placeholder="Ex.: Salter-Harris, Weber, manguito…"
-            value={filtros.busca}
-            onChange={(e) => atualizar({ busca: e.target.value })}
+            value={buscaDigitada}
+            onChange={(e) => definirBuscaDigitada(e.target.value)}
           />
         </div>
-        {carregandoBusca && <span className="campo__auxilio">Carregando o texto das questões…</span>}
+        {carregandoTextos && <span className="campo__auxilio">Carregando o texto das questões…</span>}
       </section>
 
       <details className="tr-etapa tr-etapa--recolhivel" id="etapa-2" open={situacaoAberta} onToggle={(e) => definirSituacaoAberta((e.currentTarget as HTMLDetailsElement).open)}>
@@ -385,6 +403,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               type="button"
               className="tr-pilula"
               aria-pressed={filtros.situacao === situacao}
+              disabled={situacao !== 'todas' && situacao !== filtros.situacao && (contagens?.porSituacao[situacao] ?? 0) === 0}
               onClick={() => atualizar({ situacao })}
             >
               {ROTULO_SITUACAO[situacao]}
