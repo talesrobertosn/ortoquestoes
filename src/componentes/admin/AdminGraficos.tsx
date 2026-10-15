@@ -121,11 +121,13 @@ export function BarrasHorizontais({ itens, formato = (v) => n(v), maximo }: {
  * as duas partes e o total. A mesma informação fica numa tabela.
  */
 export interface PontoEmpilhado { rotulo: string; rotuloCurto: string; partes: number[] }
-export function GraficoColunasEmpilhadas({ titulo, subtitulo, pontos, series, formato = n, rotuloTabela = 'Mês' }: {
+export function GraficoColunasEmpilhadas({ titulo, subtitulo, pontos, series, formato = n, rotuloTabela = 'Mês', previsto = false }: {
   titulo: string; subtitulo?: string; pontos: PontoEmpilhado[]
   series: Array<{ nome: string; classe: string }>
   formato?: (v: number) => string
   rotuloTabela?: string
+  /** Previsão: a tabela segue a ordem do tempo (do mês atual para frente). */
+  previsto?: boolean
 }) {
   const [ref, largura] = usarLargura<HTMLDivElement>()
   const [ativo, definirAtivo] = useState<number | null>(null)
@@ -183,7 +185,7 @@ export function GraficoColunasEmpilhadas({ titulo, subtitulo, pontos, series, fo
     </div>
     <details className="adm-grafico__tabela"><summary>Ver em tabela</summary>
       <table className="tabela"><thead><tr><th scope="col">{rotuloTabela}</th>{series.map(se => <th scope="col" key={se.nome}>{se.nome}</th>)}<th scope="col">Total</th></tr></thead>
-        <tbody>{[...pontos].reverse().map(pt => <tr key={pt.rotulo}><td>{pt.rotulo}</td>{pt.partes.map((v, k) => <td key={k} className="numerico">{formato(v)}</td>)}<td className="numerico">{formato(soma(pt))}</td></tr>)}</tbody></table>
+        <tbody>{(previsto ? pontos : [...pontos].reverse()).map(pt => <tr key={pt.rotulo}><td>{pt.rotulo}</td>{pt.partes.map((v, k) => <td key={k} className="numerico">{formato(v)}</td>)}<td className="numerico">{formato(soma(pt))}</td></tr>)}</tbody></table>
     </details>
   </figure>
 }

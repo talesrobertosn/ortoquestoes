@@ -148,12 +148,13 @@ export function DesempenhoDetalhado({ indice, marcadas, limite, meta }: {
       </div>
 
       <section className="cartao cartao__corpo dp-cartao">
-        <div className="dp-cartao__cabeca"><div><h2>Dia da semana</h2><p className="texto-2">Quanto você responde e quanto acerta em cada dia.</p></div></div>
+        <div className="dp-cartao__cabeca"><div><h2>Dia da semana</h2><p className="texto-2">A altura da barra é quanto você responde (o número em cima); embaixo, o acerto do dia.</p></div></div>
         <div className="dp-semana">
           {d.porDia.map((g, i) => {
             const p = pctDe(g.certas, g.total)
             const maior = Math.max(1, ...d.porDia.map(x => x.total))
             return <div key={i} className="dp-semana__dia" title={`${DIAS[i]}: ${n(g.total)} respostas${p === null ? '' : `, ${p}% de acerto`}`}>
+              <small className="dp-semana__total numerico">{n(g.total)}</small>
               <span className="dp-semana__barra"><span className={p === null ? '' : `dp-faixa--${faixa(p)}`} style={{ height: `${g.total ? Math.max(6, (g.total / maior) * 100) : 0}%` }} /></span>
               <strong>{p === null ? '–' : `${p}%`}</strong>
               <small>{DIAS[i].slice(0, 3)}</small>
