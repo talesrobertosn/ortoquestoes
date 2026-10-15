@@ -15,7 +15,6 @@ import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../compon
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
-import { IconePixel } from '../componentes/IconePixel'
 import { usarConquistas } from '../estado/usarConquistas'
 import { FLASHCARDS_NA_CAPA, recurso } from '../config'
 import '@fontsource/pixelify-sans/latin-700.css'
@@ -185,7 +184,6 @@ export function Inicio() {
           <Icone nome="direita" tamanho={20} />
         </a>
       )}
-      <CompletarPerfil />
       <section className="inicio-heroi">
         <div className="inicio-heroi__texto">
           {indice && indice.total > 0 && (
@@ -268,6 +266,8 @@ export function Inicio() {
       </section>
       {FLASHCARDS_NA_CAPA && <QuadroFlashcards classe={`inicio-flash--faixa${conta ? ' inicio-flash--so-celular' : ''}`} />}
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
+      {/* Depois do topo, não antes: o pedido de perfil não pode ser a primeira coisa da página. */}
+      <CompletarPerfil />
 
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
 
@@ -294,55 +294,12 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
+          {/* Ordem pelo que a pessoa veio fazer (auditoria de 15/10/2026): o estudo do dia logo
+              depois do topo; ranking, planos e indique no fim. Os quatro atalhos saíram: repetiam
+              os botões do topo e a barra de navegação. Sem conta, só o que funciona sem conta. */}
           <CartaoCronograma cronograma={cronograma} />
-
           {!cronograma.calculo && !cronograma.carregando && <AteAProva total={indice.total} conta={Boolean(conta)} />}
-
-          <ParComCripta>
-          <section className="inicio-ranking" aria-label="Ranking e conquistas">
-            <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
-            <div className="inicio-ranking__texto">
-              <p className="inicio-ranking__selo">Ranking e conquistas</p>
-              <h2>{conta ? <>Suba no <em>ranking</em> e destrave emblemas</> : <>Entre no <em>ranking</em> de quem mais estuda</>}</h2>
-              <p>{conta
-                ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequenciaViva.atual >= 3 ? <> · <b>{sequenciaViva.atual} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
-                : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>
-              {!conta && <PodioPrevia />}
-            </div>
-            <div className="inicio-ranking__acoes">
-              <a className="botao botao--ouro" href={href('/ranking')}>Ver ranking</a>
-              <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>Minhas conquistas</a>
-            </div>
-          </section>
-          </ParComCripta>
-
-          <CartaoPlanos />
-
-          <SecaoIndique />
-
-          <nav className="inicio-atalhos" aria-label="Atalhos">
-            <a className="inicio-atalho" href={href('/treinar')}>
-              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="treinar" tamanho={44} /></span>
-              <span className="inicio-atalho__titulo">Treinar</span>
-              <span className="inicio-atalho__nota">Por tema, prova ou dificuldade</span>
-            </a>
-            <a className="inicio-atalho" href={href('/revisao')}>
-              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="revisao" tamanho={44} /></span>
-              <span className="inicio-atalho__titulo">Revisão {revisarHoje > 0 && <span className="acao-rapida__contador">{revisarHoje}</span>}</span>
-              <span className="inicio-atalho__nota">O que vence hoje e nos próximos dias</span>
-            </a>
-            <a className="inicio-atalho" href={href('/dados')}>
-              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="desempenho" tamanho={44} /></span>
-              <span className="inicio-atalho__titulo">Desempenho</span>
-              <span className="inicio-atalho__nota">Sua evolução por tema e por prova</span>
-            </a>
-            <a className="inicio-atalho inicio-atalho--ouro" href={href('/ranking')}>
-              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="ranking" tamanho={44} /></span>
-              <span className="inicio-atalho__titulo">Ranking</span>
-              <span className="inicio-atalho__nota">{conta ? 'Sua posição e seus emblemas' : 'Quem mais estuda por aqui'}</span>
-            </a>
-          </nav>
-
+          {conta ? <>
           <div className="inicio-grade">
             <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
               <h2 id="inicio-hoje-titulo">Seu estudo de hoje</h2>
@@ -390,11 +347,9 @@ export function Inicio() {
               </section>
             })()}
           </div>
-
           <ConviteLimiteDoDia />
           <CaixasAssinante />
           <VitrineAssinante />
-
           <div className="inicio-grade">
             {Object.keys(contexto.respondidas).length > 0 && <section className="inicio-semana" aria-labelledby="inicio-semana-titulo">
               <h2 id="inicio-semana-titulo">{semana.total > 0 ? `${semana.total.toLocaleString('pt-BR')} ${semana.total === 1 ? 'questão' : 'questões'} em 7 dias` : 'Nenhuma questão nos últimos 7 dias'}</h2>
@@ -436,7 +391,6 @@ export function Inicio() {
               </section>
             )}
           </div>
-
           <section className="inicio-bloco">
             <h2>Por tema</h2>
             <p className="meta" style={{ marginTop: '0.25rem' }}>
@@ -462,6 +416,30 @@ export function Inicio() {
                 })}
             </ul>
           </section>
+          </> : <>
+          <ConviteLimiteDoDia />
+          <CaixasAssinante />
+          <VitrineAssinante />
+          </>}
+          <ParComCripta>
+          <section className="inicio-ranking" aria-label="Ranking e conquistas">
+            <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
+            <div className="inicio-ranking__texto">
+              <p className="inicio-ranking__selo">Ranking e conquistas</p>
+              <h2>{conta ? <>Suba no <em>ranking</em> e destrave emblemas</> : <>Entre no <em>ranking</em> de quem mais estuda</>}</h2>
+              <p>{conta
+                ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequenciaViva.atual >= 3 ? <> · <b>{sequenciaViva.atual} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
+                : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>
+              {!conta && <PodioPrevia />}
+            </div>
+            <div className="inicio-ranking__acoes">
+              <a className="botao botao--ouro" href={href('/ranking')}>Ver ranking</a>
+              <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>Minhas conquistas</a>
+            </div>
+          </section>
+          </ParComCripta>
+          <CartaoPlanos />
+          {conta && <SecaoIndique />}
 
         </>
       )}
@@ -506,7 +484,6 @@ function QuadroFlashcards({ classe }: { classe: string }) {
     </a>
   )
 }
-
 
 /** Ao lado do banner do ranking, quando VITE_FLASHCARDS_CAPA=1; sem a trava, o banner fica sozinho como sempre. */
 function ParComCripta({ children }: { children: React.ReactNode }) {
