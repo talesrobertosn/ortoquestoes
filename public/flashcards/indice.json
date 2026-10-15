@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 5292,
- "batalha": 4192,
- "soEstudo": 1100,
+ "total": 5320,
+ "batalha": 4200,
+ "soEstudo": 1120,
  "comImagem": 630,
- "simulados": 927,
- "autorais": 990,
+ "simulados": 936,
+ "autorais": 1018,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -174,26 +174,26 @@
   "ombro-cotovelo": {
    "nome": "Ombro e cotovelo",
    "arquivo": "ombro-cotovelo.json",
-   "total": 621,
-   "batalha": 445,
+   "total": 649,
+   "batalha": 453,
    "comImagem": 90,
-   "simulados": 148,
+   "simulados": 157,
    "tipos": {
     "Anatomia": 14,
     "Armadilha": 8,
-    "Classificação": 29,
-    "Conceito": 129,
+    "Classificação": 31,
+    "Conceito": 148,
     "Imagem": 76,
     "Na prova": 2,
-    "Par confundível": 26,
+    "Par confundível": 29,
     "Relâmpago": 309,
-    "Tabela": 28
+    "Tabela": 32
    },
    "assuntos": {
-    "Anatomia do ombro": 108,
+    "Anatomia do ombro": 109,
     "Lesões do manguito rotador": 104,
+    "Instabilidade anterior do ombro": 101,
     "Omartrose e artroplastia do ombro": 88,
-    "Instabilidade anterior do ombro": 76,
     "Fraturas do úmero proximal e da escápula": 29,
     "Instabilidade do cotovelo": 25,
     "Lesões do bíceps": 22,
@@ -204,11 +204,11 @@
     "Tendinite calcária": 10,
     "Exame físico do ombro": 10,
     "Imagem do ombro e cotovelo": 10,
+    "Instabilidade posterior e multidirecional": 10,
     "Rigidez do cotovelo": 9,
     "Outros temas do ombro e cotovelo": 9,
     "Lesões nervosas do ombro e cotovelo": 8,
     "Exame físico do cotovelo": 8,
-    "Instabilidade posterior e multidirecional": 8,
     "Lesões SLAP e do lábio superior": 7,
     "Anatomia do cotovelo": 6,
     "Peitoral maior e outras rupturas tendíneas": 5,
@@ -476,5 +476,5 @@
    }
   }
  },
- "assinatura": "8c89d41f10df"
+ "assinatura": "b78dc49803de"
 }

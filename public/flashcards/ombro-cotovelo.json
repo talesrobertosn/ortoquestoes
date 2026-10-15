@@ -31,6 +31,62 @@
    "fonte": "63129d8e877c"
   },
   {
+   "id": "fc-ombro-cotovelo-0002-co1",
+   "questao": "ombro-cotovelo-0002",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Anatomia do ombro",
+   "subtemas": [
+    "Anatomia do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por qual espaço o nervo axilar contorna o colo do úmero por trás até o deltoide?",
+   "resposta": "espaço quadrangular",
+   "explicacao": "Preso no **espaço quadrangular**, o axilar é esticado pela cabeça luxada; é o nervo mais lesado na luxação anterior.",
+   "opcoes": [
+    "espaço quadrangular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9dc22542cc63",
+   "origem": "autoral",
+   "trecho": "através de uma passagem entre músculos chamada **espaço quadrangular**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0002-co2",
+   "questao": "ombro-cotovelo-0002",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Anatomia do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação anterior do ombro, em que pacientes a lesão da artéria axilar é mais comum?",
+   "resposta": "idosos",
+   "explicacao": "Em **idosos**, com artérias endurecidas pela aterosclerose, sobretudo em luxações antigas ou reduções com força.",
+   "opcoes": [
+    "idosos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "9dc22542cc63",
+   "origem": "autoral",
+   "trecho": "acontece mais em idosos, cujas artérias são endurecidas pela aterosclerose",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0002-q",
    "questao": "ombro-cotovelo-0002",
    "area": "Ombro e cotovelo",
@@ -533,6 +589,89 @@
    "fonte": "93ea384ac3b1"
   },
   {
+   "id": "fc-ombro-cotovelo-0010-co1",
+   "questao": "ombro-cotovelo-0010",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em média, a quantos centímetros da ponta do coracoide o nervo musculocutâneo entra no coracobraquial?",
+   "resposta": "5 cm",
+   "explicacao": "Cerca de **5 cm** (às vezes menos): por isso é o nervo em risco na Latarjet.",
+   "opcoes": [
+    "5 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "dafeb711e75a",
+   "origem": "autoral",
+   "trecho": "entra no músculo coracobraquial em média cerca de 5 cm abaixo da ponta do coracoide",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0010-co2",
+   "questao": "ombro-cotovelo-0010",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Latarjet, como se chama o efeito do tendão conjunto que segura o subescapular inferior em abdução e rotação externa?",
+   "resposta": "efeito de rede",
+   "explicacao": "Efeito triplo: **ósseo**, **de rede** (sling) e de reparo capsular.",
+   "opcoes": [
+    "efeito de rede"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "dafeb711e75a",
+   "origem": "autoral",
+   "trecho": "o **efeito de rede** (sling effect)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0010-co3",
+   "questao": "ombro-cotovelo-0010",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Latarjet, qual nervo pode ser atingido por parafusos longos demais que passam a cortical posterior?",
+   "resposta": "supraescapular",
+   "explicacao": "O **supraescapular** corre pelo colo posterior da glenoide; o musculocutâneo é o risco da mobilização do coracoide.",
+   "opcoes": [
+    "supraescapular",
+    "axilar",
+    "musculocutâneo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "dafeb711e75a",
+   "origem": "autoral",
+   "trecho": "O **supraescapular** corre pelo colo posterior da glenoide e pode ser atingido por parafusos longos demais.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0010-q",
    "questao": "ombro-cotovelo-0010",
    "area": "Ombro e cotovelo",
@@ -814,6 +953,87 @@
    "fonte": "f4e547dc487a"
   },
   {
+   "id": "fc-ombro-cotovelo-0017-co1",
+   "questao": "ombro-cotovelo-0017",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação posterior do ombro, por qual epônimo também se conhece a lesão de Hill-Sachs reversa?",
+   "resposta": "McLaughlin",
+   "explicacao": "**McLaughlin**: afundamento anteromedial da cabeça contra a borda posterior da glenoide.",
+   "opcoes": [
+    "McLaughlin"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "9d8fef81ff62",
+   "origem": "autoral",
+   "trecho": "Hill-Sachs reversa**, também chamada lesão de McLaughlin",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0017-co2",
+   "questao": "ombro-cotovelo-0017",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na modificação de Neer da cirurgia de McLaughlin, o que se transfere junto com o subescapular?",
+   "resposta": "tubérculo menor",
+   "explicacao": "Neer transfere o subescapular com o **tubérculo menor** osteotomizado, para fixação óssea mais firme.",
+   "opcoes": [
+    "tubérculo menor"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "9d8fef81ff62",
+   "origem": "autoral",
+   "trecho": "transfere-se o subescapular junto com o **tubérculo menor** osteotomizado",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0017-co3",
+   "questao": "ombro-cotovelo-0017",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Hill-Sachs reversa com mais de 50% da superfície articular: qual é a conduta?",
+   "resposta": "enxerto ou prótese",
+   "explicacao": "25 a 50%: transferência do subescapular; **acima de 50%**: enxerto osteocondral ou artroplastia.",
+   "opcoes": [
+    "enxerto ou prótese"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "9d8fef81ff62",
+   "origem": "autoral",
+   "trecho": "acima de 50%, enxerto ou prótese.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0017-q",
    "questao": "ombro-cotovelo-0017",
    "area": "Ombro e cotovelo",
@@ -905,6 +1125,60 @@
     "largura": 427,
     "altura": 375
    }
+  },
+  {
+   "id": "fc-ombro-cotovelo-0020-co1",
+   "questao": "ombro-cotovelo-0020",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O que significa a palavra francesa que dá nome ao remplissage?",
+   "resposta": "preenchimento",
+   "explicacao": "**Preenchimento**: o infraespinhal e a cápsula posterior preenchem o Hill-Sachs, que deixa de engatar.",
+   "opcoes": [
+    "preenchimento"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "dd73f78d7226",
+   "origem": "autoral",
+   "trecho": "palavra francesa que significa \"preenchimento\"",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0020-co2",
+   "questao": "ombro-cotovelo-0020",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o custo funcional do remplissage associado ao Bankart?",
+   "resposta": "perda de alguns graus de rotação externa",
+   "explicacao": "Uma **perda de alguns graus de rotação externa**, em geral bem tolerada.",
+   "opcoes": [
+    "perda de alguns graus de rotação externa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "dd73f78d7226",
+   "origem": "autoral",
+   "trecho": "O custo é uma perda de alguns graus de rotação externa, em geral bem tolerada.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0020-q",
@@ -5299,6 +5573,65 @@
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
    "fonte": "a763326872a1"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0187-cl1",
+   "questao": "ombro-cotovelo-0187",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade posterior e multidirecional",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Instabilidade posterior e multidirecional"
+   ],
+   "tipo": "Classificação",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na classificação de Kim do lábio posteroinferior, qual tipo é a lesão oculta que só aparece ao elevar o lábio com o probe?",
+   "resposta": "Tipo II",
+   "explicacao": "**Kim II**: avulsão incompleta e **oculta**. I descolamento incompleto; III erosão condrolabral; IV retalho.",
+   "opcoes": [
+    "Tipo II",
+    "Tipo I",
+    "Tipo III",
+    "Tipo IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "9bee7e9f33fb",
+   "origem": "autoral",
+   "trecho": "**Tipo II**: a lesão de Kim propriamente dita, avulsão incompleta e **oculta**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0187-cl2",
+   "questao": "ombro-cotovelo-0187",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade posterior e multidirecional",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Instabilidade posterior e multidirecional"
+   ],
+   "tipo": "Classificação",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na classificação de Kim das lesões labrais posteriores, o que caracteriza o tipo IV?",
+   "resposta": "retalho",
+   "explicacao": "**Kim IV**: rasgo em **retalho** (flap) do lábio, com a inserção capsulolabral preservada.",
+   "opcoes": [
+    "retalho"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "9bee7e9f33fb",
+   "origem": "autoral",
+   "trecho": "**Tipo IV**: rasgo em **retalho** (flap) do lábio",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0187-q",
@@ -12640,6 +12973,204 @@
    "fonte": "fdabce4925e9"
   },
   {
+   "id": "fc-ombro-cotovelo-0545-co1",
+   "questao": "ombro-cotovelo-0545",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o principal estabilizador estático contra a luxação anterior do ombro?",
+   "resposta": "banda anterior do ligamento glenoumeral inferior",
+   "explicacao": "A **banda anterior do LGUI** fica tensa em abdução e rotação externa, a posição da luxação; o Bankart a desinsere com o lábio.",
+   "opcoes": [
+    "banda anterior do ligamento glenoumeral inferior",
+    "ligamento glenoumeral superior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "1e5ac506a1b2",
+   "origem": "autoral",
+   "trecho": "Principal estabilizador estático contra a luxação anterior: banda anterior do ligamento glenoumeral inferior.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0545-pc1",
+   "questao": "ombro-cotovelo-0545",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento glenoumeral inferior atua em abdução e rotação externa. Em que posição atua mais o superior?",
+   "resposta": "Braço ao lado do corpo",
+   "explicacao": "O **LGUS**, com o coracoumeral no intervalo rotador, contém a translação inferior e posterior com o **braço ao lado**.",
+   "opcoes": [
+    "Braço ao lado do corpo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "1e5ac506a1b2",
+   "origem": "autoral",
+   "trecho": "Superior (LGUS) | Braço ao lado do corpo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0545-tb1",
+   "questao": "ombro-cotovelo-0545",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que posição do braço o ligamento glenoumeral médio atua mais, contendo a translação anterior?",
+   "resposta": "Abdução intermediária",
+   "explicacao": "**LGUM**: abdução intermediária (cerca de 45 graus). LGUS: braço ao lado. LGUI anterior: 90 graus com rotação externa.",
+   "opcoes": [
+    "Abdução intermediária"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "1e5ac506a1b2",
+   "origem": "autoral",
+   "trecho": "Médio (LGUM) | Abdução intermediária (cerca de 45 graus); contém a translação anterior",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0546-co1",
+   "questao": "ombro-cotovelo-0546",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pelo conceito de trilha glenoidal de Itoi e Di Giacomo, como se chama o Hill-Sachs que engata?",
+   "resposta": "off-track",
+   "explicacao": "Hill-Sachs **off-track** engata na glenoide e é fator de falha do Bankart isolado.",
+   "opcoes": [
+    "off-track"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "5406ead5efd9",
+   "origem": "autoral",
+   "trecho": "Lesão de Hill-Sachs que engata** (\"off-track\", pelo conceito de trilha glenoidal de Itoi e Di Giacomo)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0546-co2",
+   "questao": "ombro-cotovelo-0546",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual lesão, a avulsão umeral do ligamento glenoumeral, causa falha do Bankart quando não é reconhecida?",
+   "resposta": "HAGL",
+   "explicacao": "A **HAGL** não reconhecida está entre os fatores de falha do reparo artroscópico.",
+   "opcoes": [
+    "HAGL"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "5406ead5efd9",
+   "origem": "autoral",
+   "trecho": "Lesão de HAGL (avulsão umeral do ligamento glenoumeral) não reconhecida.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0546-tb1",
+   "questao": "ombro-cotovelo-0546",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No escore ISIS de Balg e Boileau, quantos pontos vale a idade de 20 anos ou menos?",
+   "resposta": "2",
+   "explicacao": "Idade de 20 anos ou menos: **2 pontos**, como esporte competitivo, Hill-Sachs no AP e perda do contorno glenoidal.",
+   "opcoes": [
+    "2",
+    "1"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "5406ead5efd9",
+   "origem": "autoral",
+   "trecho": "Idade de 20 anos ou menos | 2",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0548-pc1",
+   "questao": "ombro-cotovelo-0548",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Frouxidão do ombro é a translação passiva, achado de exame. O que define a instabilidade?",
+   "resposta": "condição clínica sintomática",
+   "explicacao": "**Instabilidade** é **sintomática** (dor, apreensão, luxação); frouxidão assintomática não precisa de tratamento.",
+   "opcoes": [
+    "condição clínica sintomática"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2022,
+   "fonte": "de586818a302",
+   "origem": "autoral",
+   "trecho": "**Instabilidade**: condição **clínica sintomática**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0549-q",
    "questao": "ombro-cotovelo-0549",
    "area": "Ombro e cotovelo",
@@ -15010,6 +15541,35 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-ombro-cotovelo-0591-co1",
+   "questao": "ombro-cotovelo-0591",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na série de Zimmerman, com 360 pacientes, qual foi a recidiva após o Latarjet?",
+   "resposta": "1%",
+   "explicacao": "**Latarjet 1%** contra Bankart 13%; o Bankart continuou falhando ao longo de 6 anos.",
+   "opcoes": [
+    "1%",
+    "13%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "d4cab030c073",
+   "origem": "autoral",
+   "trecho": "BANKART 13% contra LATARJET 1%",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-ombro-cotovelo-0591-q",
    "questao": "ombro-cotovelo-0591",
    "area": "Ombro e cotovelo",
@@ -15035,6 +15595,64 @@
    "prova": null,
    "ano": null,
    "fonte": "d4cab030c073",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0591-tb1",
+   "questao": "ombro-cotovelo-0591",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Perda glenoidal abaixo de 13,5% a 17,3% com Hill-Sachs on-track: qual é a cirurgia no algoritmo do Rockwood?",
+   "resposta": "BANKART artroscópico ou aberto",
+   "explicacao": "On-track e perda subcrítica: **Bankart**. Off-track: Bankart com remplissage ou Latarjet. 17,4% a 30%: Latarjet.",
+   "opcoes": [
+    "BANKART artroscópico ou aberto"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "d4cab030c073",
+   "origem": "autoral",
+   "trecho": "on-track (sem engate) | BANKART artroscópico ou aberto",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0591-tb2",
+   "questao": "ombro-cotovelo-0591",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Segundo o Rockwood, qual é a taxa de complicações do Latarjet?",
+   "resposta": "10,6% a 15%",
+   "explicacao": "Complicações: Bankart aberto 4,3%; **Latarjet 10,6% a 15%**; bloqueio ósseo 17,6%.",
+   "opcoes": [
+    "10,6% a 15%",
+    "4,3%",
+    "17,6%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "d4cab030c073",
+   "origem": "autoral",
+   "trecho": "LATARJET 10,6% a 15%",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
@@ -15067,6 +15685,123 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-ombro-cotovelo-0593-co1",
+   "questao": "ombro-cotovelo-0593",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Artroscopia e vias de acesso do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Bankart artroscópico, até onde se solta o complexo capsulolabral para permitir o desvio da cápsula?",
+   "resposta": "ver o ventre do subescapular",
+   "explicacao": "Mobilizar da borda até **ver o ventre do subescapular**; sem isso, o desvio capsular é insuficiente.",
+   "opcoes": [
+    "ver o ventre do subescapular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "b5f4935fefde",
+   "origem": "autoral",
+   "trecho": "Mobilizar o complexo capsulolabral** da borda até **ver o ventre do subescapular**",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0593-co2",
+   "questao": "ombro-cotovelo-0593",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Artroscopia e vias de acesso do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a lesão em que o lábio anterior cicatrizou medialmente, no colo da glenoide?",
+   "resposta": "ALPSA",
+   "explicacao": "Na **ALPSA**, soltar o lábio exige melhor visão (ótica de 70 graus ou portal anterolateral).",
+   "opcoes": [
+    "ALPSA"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "b5f4935fefde",
+   "origem": "autoral",
+   "trecho": "lesão ALPSA (lábio cicatrizado medialmente no colo)",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0593-co3",
+   "questao": "ombro-cotovelo-0593",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Artroscopia e vias de acesso do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ao final do Bankart artroscópico, o que na junção condrolabial indica bom desvio capsular?",
+   "resposta": "bumper",
+   "explicacao": "Um **bumper** de partes moles recriado sobre a borda da glenoide.",
+   "opcoes": [
+    "bumper"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "b5f4935fefde",
+   "origem": "autoral",
+   "trecho": "um **\"bumper\"** de partes moles na junção condrolabial indica bom desvio.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0593-pc1",
+   "questao": "ombro-cotovelo-0593",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro",
+    "Artroscopia e vias de acesso do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Bankart artroscópico, a primeira âncora fica às 5h30 no ombro direito. E no ombro esquerdo?",
+   "resposta": "6h30",
+   "explicacao": "Primeira âncora baixa, na face da glenoide: **5h30 no direito, 6h30 no esquerdo**; âncora alta demais é fator de falha.",
+   "opcoes": [
+    "6h30",
+    "5h30"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "b5f4935fefde",
+   "origem": "autoral",
+   "trecho": "Primeira âncora baixa na face da glenoide: 5h30 no ombro direito, 6h30 no esquerdo.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-ombro-cotovelo-0593-q",
    "questao": "ombro-cotovelo-0593",
    "area": "Ombro e cotovelo",
@@ -15093,6 +15828,63 @@
    "prova": null,
    "ano": null,
    "fonte": "b5f4935fefde",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0594-co1",
+   "questao": "ombro-cotovelo-0594",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Bankart aberto, em que posição do braço se faz o desvio capsular para não perder rotação externa?",
+   "resposta": "30 graus de flexão e 30 graus de rotação externa",
+   "explicacao": "Braço em **30 graus de flexão e 30 de rotação externa**, para evitar o superaperto.",
+   "opcoes": [
+    "30 graus de flexão e 30 graus de rotação externa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "44a542e2fd59",
+   "origem": "autoral",
+   "trecho": "desvio capsular com o braço em 30 graus de flexão e 30 graus de rotação externa",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0594-co2",
+   "questao": "ombro-cotovelo-0594",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtemas": [
+    "Instabilidade anterior do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na série de Neviaser do Bankart aberto, com 17 anos de seguimento, qual foi a recidiva?",
+   "resposta": "1,6%",
+   "explicacao": "**1,6%**, com perda pequena de rotação externa (4 graus); o artroscópico fica em cerca de 10,7% a 13,1%.",
+   "opcoes": [
+    "1,6%",
+    "10,7% a 13,1%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "44a542e2fd59",
+   "origem": "autoral",
+   "trecho": "NEVIASER (127 pacientes, 17 anos) teve recidiva de **1,6%**",
+   "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
   {
