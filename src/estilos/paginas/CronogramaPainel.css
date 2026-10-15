@@ -78,6 +78,9 @@
 .cp-botao--ouro { background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; box-shadow: 0 4px 0 #8a6416; }
 .cp-hoje__teto { display: flex; gap: 0.4rem; align-items: flex-start; margin: 0; padding: 0.55rem 0.7rem; border-radius: var(--raio-controle); background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.78rem; line-height: 1.4; }
 .cp-hoje__teto svg { flex: none; margin-top: 0.1rem; }
+/* Dia de folga: trocar a folga ou a data sem rolar até o topo. */
+.cp-hoje__ajustar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 0.75rem; margin: 0; padding: 0.6rem 0.75rem; border-radius: var(--raio-controle); background: var(--superficie-2); border: var(--borda); font-size: var(--corpo-menor); color: var(--texto-2); }
+.cp-hoje__ajustar .botao { min-height: 44px; }
 
 /* Extras (revisões, flashcards): ajudam, mas não contam na meta. */
 .cp-extras { display: grid; gap: 0.15rem; padding: 0.55rem 0.75rem 0.2rem; border-radius: var(--raio-controle); background: var(--superficie-2); border: 1px dashed var(--traco); }
