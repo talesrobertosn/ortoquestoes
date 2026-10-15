@@ -286,6 +286,11 @@ export function Ranking() {
             {eu && <Movimento linha={eu} />}
             <span className="rk-heroi__rotulo">{minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'nos últimos 7 dias' : 'respondidas'}</span>
             {eu && <Missao eu={eu} acima={acima} ultimoTop50={top?.[top.length - 1] ?? null} />}
+            {/* Ranking antigo (sem a sua linha na lista): a meta sai da posição avulsa. */}
+            {!eu && top && top.length > 0 && minhaPosicao.posicao > top.length && (() => {
+              const faltam = Math.max(1, top[top.length - 1].total - minhaPosicao.total + 1)
+              return <span className="rk-missao"><Icone nome="alvo" tamanho={15} /><span>Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para entrar no top {top.length >= 50 ? 50 : top.length}</span></span>
+            })()}
           </> : meuTotal < MINIMO_RANKING ? <>
             <span className="rk-heroi__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
             <strong className="rk-heroi__posicao">Faltam {MINIMO_RANKING - meuTotal}</strong>
