@@ -168,6 +168,838 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-coluna-0492-co1",
+   "questao": "coluna-0492",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento da coluna une as lâminas de vértebras vizinhas?",
+   "resposta": "ligamento amarelo",
+   "explicacao": "O **amarelo** é interlaminar; o interespinal fica entre os espinhosos; o supraespinal acompanha suas pontas.",
+   "opcoes": [
+    "ligamento amarelo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "eea088fa6a56",
+   "origem": "autoral",
+   "trecho": "O ligamento amarelo une as lâminas de vértebras vizinhas.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0492-co2",
+   "questao": "coluna-0492",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento liga o processo transverso de L5 ao ílio?",
+   "resposta": "iliolombar",
+   "explicacao": "O **iliolombar** liga o transverso de L5 ao ílio, na transição lombopélvica.",
+   "opcoes": [
+    "iliolombar",
+    "amarelo",
+    "alar",
+    "nucal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "eea088fa6a56",
+   "origem": "autoral",
+   "trecho": "**O iliolombar liga L5 ao ílio.**",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0493-co1",
+   "questao": "coluna-0493",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além do multífido, quais músculos formam o grupo transversoespinal, na camada profunda do dorso?",
+   "resposta": "semiespinais e rotadores",
+   "explicacao": "Transversoespinal (profundo): **multífido, semiespinais e rotadores**. O eretor da espinha é intermédio.",
+   "opcoes": [
+    "semiespinais e rotadores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "8f823a57b4ef",
+   "origem": "autoral",
+   "trecho": "Esse grupo também reúne semiespinais e rotadores.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0493-co2",
+   "questao": "coluna-0493",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais músculos compõem o eretor da espinha, na camada intermédia do dorso?",
+   "resposta": "Iliocostal, longuíssimo e espinal",
+   "explicacao": "**Iliocostal, longuíssimo e espinal**, inervados pelos ramos posteriores dos nervos espinais.",
+   "opcoes": [
+    "Iliocostal, longuíssimo e espinal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "8f823a57b4ef",
+   "origem": "autoral",
+   "trecho": "Iliocostal, longuíssimo e espinal compõem o eretor da espinha, situado na camada intermédia.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0494-co1",
+   "questao": "coluna-0494",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo inerva os quatro músculos suboccipitais?",
+   "resposta": "nervo suboccipital",
+   "explicacao": "O **nervo suboccipital**, ramo posterior de C1; distinguem-se pelas fixações, não pela inervação.",
+   "opcoes": [
+    "nervo suboccipital"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "96a7bfd63a39",
+   "origem": "autoral",
+   "trecho": "Os quatro recebem o nervo suboccipital, ramo posterior de C1.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0494-co2",
+   "questao": "coluna-0494",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "De onde parte o músculo reto posterior menor da cabeça?",
+   "resposta": "tubérculo posterior do atlas",
+   "explicacao": "**Reto menor**: tubérculo posterior do atlas ao occipital. **Reto maior**: espinhoso do áxis ao occipital.",
+   "opcoes": [
+    "tubérculo posterior do atlas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "96a7bfd63a39",
+   "origem": "autoral",
+   "trecho": "O reto posterior menor parte do tubérculo posterior do atlas.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0494-pc1",
+   "questao": "coluna-0494",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O oblíquo inferior da cabeça vai do espinhoso do áxis ao transverso do atlas. De onde parte o oblíquo superior?",
+   "resposta": "processo transverso do atlas",
+   "explicacao": "O **oblíquo superior** parte do **processo transverso do atlas** e alcança o occipital.",
+   "opcoes": [
+    "processo transverso do atlas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "96a7bfd63a39",
+   "origem": "autoral",
+   "trecho": "O oblíquo superior parte do processo transverso do atlas e alcança o occipital.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0495-co1",
+   "questao": "coluna-0495",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No eretor da espinha, qual coluna muscular é a mais lateral, próxima às costelas?",
+   "resposta": "iliocostal",
+   "explicacao": "De lateral para medial: **iliocostal**, longuíssimo e espinal.",
+   "opcoes": [
+    "iliocostal",
+    "longuíssimo",
+    "espinal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "4fdcf44a03e2",
+   "origem": "autoral",
+   "trecho": "o iliocostal ocupa a porção mais lateral, próxima às costelas",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0495-co2",
+   "questao": "coluna-0495",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No eretor da espinha, qual coluna muscular é a mais medial, junto aos processos espinhosos?",
+   "resposta": "espinal",
+   "explicacao": "O **espinal** é o mais medial; o longuíssimo fica entre ele e o iliocostal.",
+   "opcoes": [
+    "espinal",
+    "longuíssimo",
+    "iliocostal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "4fdcf44a03e2",
+   "origem": "autoral",
+   "trecho": "**O espinal é a coluna mais medial do grupo.**",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0496-co1",
+   "questao": "coluna-0496",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na coluna cervical, qual ligamento é a continuação superior do supraespinal?",
+   "resposta": "nucal",
+   "explicacao": "O **nucal** continua o supraespinal, com referências occipitais e nos espinhosos cervicais.",
+   "opcoes": [
+    "nucal",
+    "alar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "23dfea76e8d3",
+   "origem": "autoral",
+   "trecho": "Outra continuidade posterior é a do supraespinal com o nucal.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0496-pc1",
+   "questao": "coluna-0496",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A membrana tectória continua o ligamento longitudinal posterior. Qual estrutura continua o longitudinal anterior?",
+   "resposta": "membrana atlantoccipital anterior",
+   "explicacao": "LLP → **membrana tectória**; LLA → **membrana atlantoccipital anterior**; supraespinal → nucal.",
+   "opcoes": [
+    "membrana atlantoccipital anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "23dfea76e8d3",
+   "origem": "autoral",
+   "trecho": "a membrana atlantoccipital anterior é apresentada como continuação do longitudinal anterior.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0497-co1",
+   "questao": "coluna-0497",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na junção craniovertebral, quais movimentos os ligamentos alares limitam?",
+   "resposta": "rotação e a inclinação lateral",
+   "explicacao": "Os **alares** são estabilizadores fortes que limitam a **rotação e a inclinação lateral**.",
+   "opcoes": [
+    "rotação e a inclinação lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "18478474088b",
+   "origem": "autoral",
+   "trecho": "limitam a rotação e a inclinação lateral na junção craniovertebral",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0497-pc1",
+   "questao": "coluna-0497",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os alares vão do dente do áxis aos côndilos occipitais. Qual ligamento vai do dente à margem anterior do forame magno?",
+   "resposta": "ligamento do ápice do dente",
+   "explicacao": "O **ligamento do ápice do dente** é delgado e contribui pouco para a estabilidade.",
+   "opcoes": [
+    "ligamento do ápice do dente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "18478474088b",
+   "origem": "autoral",
+   "trecho": "o ligamento do ápice do dente. Este vai até a margem anterior do forame magno",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0498-co1",
+   "questao": "coluna-0498",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual tipo de colágeno compõe o núcleo pulposo do disco intervertebral?",
+   "resposta": "colágeno tipo II",
+   "explicacao": "Núcleo: água, proteoglicanos e **colágeno tipo II**. Anel: tipo I por fora, tipo II por dentro.",
+   "opcoes": [
+    "colágeno tipo II"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "d083b979bd7a",
+   "origem": "autoral",
+   "trecho": "uma massa gelatinosa com água, proteoglicanos e colágeno tipo II",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0498-pc1",
+   "questao": "coluna-0498",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No disco, o núcleo pulposo resiste às cargas compressivas. A que cargas resistem as fibras oblíquas do anel fibroso?",
+   "resposta": "cargas tensivas",
+   "explicacao": "As fibras oblíquas do anel resistem a **cargas tensivas**; as externas se fixam às placas terminais.",
+   "opcoes": [
+    "cargas tensivas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "d083b979bd7a",
+   "origem": "autoral",
+   "trecho": "As fibras do anel têm orientação oblíqua e resistem a cargas tensivas.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0499-co1",
+   "questao": "coluna-0499",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais estruturas formam os limites superior e inferior do forame intervertebral?",
+   "resposta": "pedículos",
+   "explicacao": "Superior e inferior: **pedículos**; anterior: corpos e discos; posterior: facetas e cápsulas.",
+   "opcoes": [
+    "pedículos",
+    "corpos e discos",
+    "facetas e cápsulas"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "366e103623a6",
+   "origem": "autoral",
+   "trecho": "Seus limites superiores e inferiores são os pedículos",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0499-co2",
+   "questao": "coluna-0499",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na região cervical, qual estrutura também participa do limite anterior do forame intervertebral?",
+   "resposta": "unco",
+   "explicacao": "Na cervical, o **unco** se soma aos corpos e discos na parede anterior do forame.",
+   "opcoes": [
+    "unco"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "366e103623a6",
+   "origem": "autoral",
+   "trecho": "Na região cervical, o unco também participa da referência anterior.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0500-co1",
+   "questao": "coluna-0500",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No pescoço, sobre qual músculo desce o nervo frênico a caminho do tórax?",
+   "resposta": "escaleno anterior",
+   "explicacao": "O frênico passa sobre o **escaleno anterior**, fora da bainha carótica (que contém o vago).",
+   "opcoes": [
+    "escaleno anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "3fa184d4492d",
+   "origem": "autoral",
+   "trecho": "O frênico tem outro trajeto: passa sobre o escaleno anterior e segue para o tórax.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0501-co1",
+   "questao": "coluna-0501",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual lâmina da fáscia cervical envolve a tireoide e a traqueia?",
+   "resposta": "pré-traqueal",
+   "explicacao": "**Pré-traqueal**: tireoide e traqueia. Superficial: esternocleidomastóideo. Pré-vertebral: longo do pescoço e LLA.",
+   "opcoes": [
+    "pré-traqueal",
+    "pré-vertebral",
+    "superficial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "b13e7af58c05",
+   "origem": "autoral",
+   "trecho": "a pré-traqueal envolve tireoide e traqueia",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0501-co2",
+   "questao": "coluna-0501",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual lâmina da fáscia cervical reveste o esternocleidomastóideo?",
+   "resposta": "superficial",
+   "explicacao": "A lâmina **superficial** reveste o esternocleidomastóideo.",
+   "opcoes": [
+    "superficial",
+    "pré-traqueal",
+    "pré-vertebral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "b13e7af58c05",
+   "origem": "autoral",
+   "trecho": "A lâmina superficial reveste o esternocleidomastóideo",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0502-pc1",
+   "questao": "coluna-0502",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O nervo C8 sai entre C7 e T1. Em qual intervalo sai o nervo C7?",
+   "resposta": "C6-C7",
+   "explicacao": "C1 a C7 saem **acima** da vértebra de mesmo número: C7 em **C6-C7**; C8, abaixo de C7.",
+   "opcoes": [
+    "C6-C7",
+    "C7-T1"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "3ad2c50dc4d8",
+   "origem": "autoral",
+   "trecho": "O nervo C7 passa acima da vértebra C7, no intervalo C6-C7.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0503-co1",
+   "questao": "coluna-0503",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde ficam os corpos celulares sensitivos da raiz posterior do nervo espinal?",
+   "resposta": "gânglios das raízes posteriores",
+   "explicacao": "Sensitivos nos **gânglios das raízes posteriores**; motores no corno anterior da medula.",
+   "opcoes": [
+    "gânglios das raízes posteriores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "3edfdc7c8d0d",
+   "origem": "autoral",
+   "trecho": "Os corpos celulares sensitivos ficam nos gânglios das raízes posteriores.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0503-co2",
+   "questao": "coluna-0503",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O que inervam os ramos posteriores dos nervos espinais?",
+   "resposta": "musculatura do dorso, pele e cápsulas articulares",
+   "explicacao": "Ramos posteriores: estruturas locais (**dorso, pele, cápsulas**); ramos anteriores formam os plexos.",
+   "opcoes": [
+    "musculatura do dorso, pele e cápsulas articulares"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "3edfdc7c8d0d",
+   "origem": "autoral",
+   "trecho": "Os ramos posteriores inervam estruturas locais, como musculatura do dorso, pele e cápsulas articulares",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0504-co1",
+   "questao": "coluna-0504",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais modalidades sensitivas são conduzidas pelas colunas dorsais da medula?",
+   "resposta": "propriocepção e percepção vibratória",
+   "explicacao": "Colunas dorsais: **propriocepção e vibração**; espinotalâmico lateral: dor e temperatura.",
+   "opcoes": [
+    "propriocepção e percepção vibratória"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "bc4bbdf4d54c",
+   "origem": "autoral",
+   "trecho": "As colunas dorsais têm outra função sensitiva: propriocepção e percepção vibratória.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0504-pc1",
+   "questao": "coluna-0504",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O trato espinotalâmico lateral conduz dor e temperatura. A que modalidade se associa o espinotalâmico anterior?",
+   "resposta": "toque",
+   "explicacao": "Espinotalâmico **anterior**: **toque**. Os corticospinais são descendentes e motores.",
+   "opcoes": [
+    "toque"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "bc4bbdf4d54c",
+   "origem": "autoral",
+   "trecho": "O espinotalâmico anterior é associado ao toque",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0505-pc1",
+   "questao": "coluna-0505",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A artéria espinal anterior, ímpar, irriga os dois terços anteriores da medula. Qual território irrigam as espinais posteriores?",
+   "resposta": "terço posterior",
+   "explicacao": "As **espinais posteriores** são pares e irrigam o **terço posterior** da medula.",
+   "opcoes": [
+    "terço posterior",
+    "dois terços anteriores"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "7f24b80d293c",
+   "origem": "autoral",
+   "trecho": "As artérias espinais posteriores são pares e se relacionam ao terço posterior.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0506-co1",
+   "questao": "coluna-0506",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o nome anatômico descritivo da artéria de Adamkiewicz?",
+   "resposta": "artéria medular segmentar anterior maior",
+   "explicacao": "**Artéria medular segmentar anterior maior**: reforça a espinal anterior no segmento toracolombar.",
+   "opcoes": [
+    "artéria medular segmentar anterior maior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "e01a68718889",
+   "origem": "autoral",
+   "trecho": "A artéria de ADAMKIEWICZ é a artéria medular segmentar anterior maior.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0507-co1",
+   "questao": "coluna-0507",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais raízes contribuem para os nervos supraclaviculares?",
+   "resposta": "C3-C4",
+   "explicacao": "Supraclaviculares: **C3-C4**, sensitivos sobre a clavícula e o ombro. Auricular magno e occipital menor: C2-C3.",
+   "opcoes": [
+    "C3-C4",
+    "C2-C3",
+    "C1 a C3"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "9f7fdbc21043",
+   "origem": "autoral",
+   "trecho": "Os supraclaviculares recebem C3-C4",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-coluna-0507-pc1",
+   "questao": "coluna-0507",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O frênico recebe C3 a C5 e inerva o diafragma. Quais raízes formam a alça cervical, dos infra-hióideos?",
+   "resposta": "C1 a C3",
+   "explicacao": "**Alça cervical: C1 a C3** (omo-hióideo, esterno-hióideo, esternotireóideo); frênico: C3 a C5.",
+   "opcoes": [
+    "C1 a C3",
+    "C3 a C5",
+    "C3-C4"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "9f7fdbc21043",
+   "origem": "autoral",
+   "trecho": "A alça cervical é descrita de C1 a C3",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-coluna-0534-co1",
    "questao": "coluna-0534",
    "area": "Coluna",
