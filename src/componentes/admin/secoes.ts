@@ -7,7 +7,7 @@ import type { VistaConteudo } from './AdminConteudo'
  * partes ("abas"); a parte é o que vai no endereço (`#/admin?aba=…`), e a seção sai dela.
  *
  * Hoje      · o que pede atenção agora
- * Pessoas   · usuários (com a ficha) e crescimento
+ * Pessoas   · usuários (com a ficha), cartas pessoais em lote e crescimento
  * Receita   · financeiro, assinaturas e pagamentos
  * Conteúdo  · relatos e avaliações, editor de questões, opiniões dos flashcards
  * Operações · lembretes e e-mails, simulados, ajustes do site
@@ -15,7 +15,7 @@ import type { VistaConteudo } from './AdminConteudo'
 export type Secao = 'hoje' | 'pessoas' | 'receita' | 'conteudo' | 'operacoes'
 export type Aba =
   | 'hoje'
-  | 'usuarios' | 'crescimento'
+  | 'usuarios' | 'cartas' | 'crescimento'
   | 'financeiro' | 'assinaturas' | 'pagamentos'
   | 'conteudo' | 'questoes' | 'opinioes'
   | 'lembretes' | 'simulados' | 'ajustes'
@@ -24,7 +24,7 @@ export interface DefinicaoSecao { id: Secao; rotulo: string; icone: NomeIcone; a
 
 export const SECOES: DefinicaoSecao[] = [
   { id: 'hoje', rotulo: 'Hoje', icone: 'calendario', abas: [{ id: 'hoje', rotulo: 'Hoje' }] },
-  { id: 'pessoas', rotulo: 'Pessoas', icone: 'grupo', abas: [{ id: 'usuarios', rotulo: 'Usuários' }, { id: 'crescimento', rotulo: 'Crescimento' }] },
+  { id: 'pessoas', rotulo: 'Pessoas', icone: 'grupo', abas: [{ id: 'usuarios', rotulo: 'Usuários' }, { id: 'cartas', rotulo: 'Cartas' }, { id: 'crescimento', rotulo: 'Crescimento' }] },
   { id: 'receita', rotulo: 'Receita', icone: 'grafico', abas: [{ id: 'financeiro', rotulo: 'Financeiro' }, { id: 'assinaturas', rotulo: 'Assinaturas' }, { id: 'pagamentos', rotulo: 'Pagamentos' }] },
   { id: 'conteudo', rotulo: 'Conteúdo', icone: 'livro', abas: [{ id: 'conteudo', rotulo: 'Para revisar' }, { id: 'questoes', rotulo: 'Editar questões' }, { id: 'opinioes', rotulo: 'Opiniões dos flashcards' }] },
   { id: 'operacoes', rotulo: 'Operações', icone: 'filtro', abas: [{ id: 'lembretes', rotulo: 'Lembretes e e-mails' }, { id: 'simulados', rotulo: 'Simulados' }, { id: 'ajustes', rotulo: 'Ajustes' }] },

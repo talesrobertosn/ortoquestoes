@@ -72,7 +72,7 @@ async function enviarEmail(para, assunto, html, texto, descadastro) {
       html,
       text: texto,
       ...responder ? { reply_to: responder } : {},
-      ...descadastro ? { headers: { "List-Unsubscribe": `<${descadastro}>` } } : {}
+      ...descadastro ? { headers: { "List-Unsubscribe": [`<${descadastro}>`, ...responder ? [`<mailto:${responder}?subject=parar>`] : []].join(", ") } } : {}
     })
   });
   if (!resposta.ok) {
