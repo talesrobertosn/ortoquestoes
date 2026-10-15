@@ -278,3 +278,76 @@
 .seletor__etiqueta span { font-size: 1.1em; line-height: 1; opacity: 0.8; }
 .seletor__etiqueta:hover { background: var(--verdete); color: var(--sobre-destaque); }
 .seletor__etiqueta--sub { background: var(--superficie); }
+
+/* ---------- Filtros salvos com nome (15/10/2026) ---------- */
+.tr-salvos { display: grid; gap: 0.6rem; padding: 0.85rem 1rem; border-radius: var(--raio-cartao); background: var(--superficie); border: var(--borda); }
+.tr-salvos__cabeca { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.tr-salvos__cabeca h2 { display: inline-flex; align-items: center; gap: 0.45rem; margin: 0; font-size: 1rem; }
+.tr-salvos__cabeca h2 svg { color: var(--verdete); }
+.botao.tr-salvos__salvar { min-height: 40px; padding-inline: 0.85rem; font-size: var(--corpo-menor); }
+.tr-salvos__vazio { margin: 0; color: var(--texto-2); font-size: var(--meta); }
+.tr-salvos__lista { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.tr-salvo { display: flex; align-items: stretch; min-width: 0; max-width: 100%; border: var(--borda); border-radius: var(--raio-controle); background: var(--superficie); overflow: hidden; }
+.tr-salvo__usar {
+  display: grid; min-width: 0; padding: 0.45rem 0.75rem; text-align: left; line-height: 1.25;
+  background: none; border: 0; color: var(--texto); font: inherit; cursor: pointer;
+}
+.tr-salvo__usar strong { overflow: hidden; font-size: var(--corpo-menor); white-space: nowrap; text-overflow: ellipsis; }
+.tr-salvo__usar small { overflow: hidden; color: var(--texto-2); font-size: var(--meta); white-space: nowrap; text-overflow: ellipsis; }
+.tr-salvo__usar:hover { background: var(--superficie-2); }
+.tr-salvo:has(.tr-salvo__usar[aria-pressed="true"]) { border-color: var(--verdete); background: var(--verdete-veu); }
+.tr-salvo__usar[aria-pressed="true"] strong { color: var(--verdete); }
+.tr-salvo__acao {
+  display: inline-grid; place-items: center; flex: 0 0 auto; width: 44px; min-height: 44px;
+  background: none; border: 0; border-left: 1px solid var(--traco); color: var(--texto-2); cursor: pointer;
+}
+.tr-salvo__acao:hover { background: var(--superficie-2); color: var(--texto); }
+@media (max-width: 40rem) {
+  .tr-salvos__lista { display: grid; }
+  .tr-salvo__usar { flex: 1 1 auto; }
+}
+
+/* ---------- Montar em 3 toques (celular) ---------- */
+.tr-tres { display: none; }
+@media (max-width: 52rem) {
+  .tr-tres {
+    display: grid; gap: 0.85rem; padding: 1rem;
+    border-radius: var(--raio-grande); background: var(--superficie); border: 2px solid var(--verdete); box-shadow: var(--sombra-media);
+  }
+}
+.tr-tres__cabeca h2 { margin: 0; font-size: 1.15rem; }
+.tr-tres__cabeca p { margin: 0.15rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.tr-tres__linha { display: grid; gap: 0.4rem; min-width: 0; }
+.tr-tres__rotulo { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 750; font-size: var(--corpo-menor); }
+.tr-tres__rotulo b {
+  display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--verdete); color: var(--sobre-destaque); font-size: 0.8rem;
+}
+.entrada.tr-tres__tema { width: 100%; min-height: 44px; border-radius: var(--raio-controle); }
+.tr-tres .tr-pilula { min-height: 44px; }
+.tr-tres__extras { display: flex; align-items: flex-start; gap: 0.4rem; margin: 0; padding: 0.55rem 0.7rem; border-radius: var(--raio-controle); background: var(--superficie-2); color: var(--texto-2); font-size: var(--meta); }
+.tr-tres__extras svg { flex: none; margin-top: 0.1rem; color: var(--verdete); }
+.tr-tres__extras b { color: var(--texto); font-weight: 650; }
+.tr-tres__acoes { display: grid; gap: 0.5rem; }
+.tr-tres__acoes .botao { width: 100%; justify-content: center; }
+
+/* Botão de começar com a escolha escrita: o verbo e o número nunca cortam; o resto ganha reticências. */
+.botao.tr-comecar { display: inline-flex; align-items: center; justify-content: center; gap: 0.35em; min-width: 0; max-width: 100%; }
+.tr-comecar__verbo { flex: none; white-space: nowrap; }
+.tr-comecar__escolha { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: 600; }
+.tr-tres__secundarias { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+.tr-tres__secundarias .botao { min-height: 44px; padding-inline: 0.5rem; font-size: var(--corpo-menor); }
+/* Celular: duas linhas, "Responder 20" em cima e "Joelho · não respondidas" embaixo,
+   para a escolha caber sem cortar o verbo nem o número. */
+.tr-tres .botao.tr-comecar { flex-direction: column; gap: 0.1rem; line-height: 1.2; text-align: center; }
+.tr-tres .tr-comecar__ponto { display: none; }
+.tr-tres .tr-comecar__escolha { max-width: 100%; white-space: normal; font-size: 0.86em; }
+@media (max-width: 40rem) {
+  .tr-barra .botao.tr-comecar { flex-direction: column; align-items: flex-start; justify-content: center; gap: 0; line-height: 1.15; }
+  .tr-barra .tr-comecar__ponto { display: none; }
+  .tr-barra .tr-comecar__escolha { max-width: 100%; font-size: 0.8em; }
+}
+.tr-barra__salvar { white-space: nowrap; }
+@media (max-width: 40rem) { .tr-barra__salvar { display: none; } }
+/* "Ajustar mais" e a trilha rolam até o passo sem escondê-lo sob o cabeçalho fixo. */
+.treinar-pagina .tr-etapa { scroll-margin-top: 5.5rem; }
