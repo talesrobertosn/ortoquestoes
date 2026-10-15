@@ -21,6 +21,7 @@ import { eventoMeta } from '../conta/consentimento'
 import { textoErro } from '../conta/erros'
 import { emailTrazido, esquecerEmailTrazido, guardarVoltar, rotaVoltar, tomarVoltar } from '../conta/passagem'
 import { gravarConfirmacaoPendente, lerConfirmacaoPendente, limparConfirmacaoPendente } from '../conta/confirmacaoPendente'
+import { guardarPerfilPendente } from '../conta/perfilPendente'
 import { ModalConfirmarEmail } from '../componentes/ModalConfirmarEmail'
 import { Icone } from '../componentes/Icone'
 import { BotaoGoogle } from '../componentes/BotaoGoogle'
@@ -34,7 +35,7 @@ import { CampoServico } from '../componentes/CampoServico'
 import { CamposEtapa } from '../componentes/CamposEtapa'
 import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import '../estilos/paginas/Conta.css'
-import { TEXTO_GRATIS } from '../config'
+import { fraseGratis } from '../config'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -74,6 +75,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   // Depois da primeira tentativa de criar a conta, cada campo que falta fica em
   // vermelho com a explicação embaixo, e some assim que é preenchido.
   const [tentouCriar, definirTentouCriar] = useState(false)
+  // Cadastro em dois passos: o passo 1 (e-mail, senha e aceite) cria a conta; o
+  // passo 2 pede o perfil, que dá para pular. `comSessao`: a conta já abriu (sem
+  // confirmação de e-mail); sem ela, o perfil espera a confirmação neste navegador.
+  const [perfilDepois, definirPerfilDepois] = useState<{ email: string; comSessao: boolean } | null>(null)
+  const [tentouPerfil, definirTentouPerfil] = useState(false)
   function irParaCampo(campo: string) {
     const caixa = document.querySelector<HTMLElement>(`[data-campo="${campo}"]`)
     if (!caixa) return
@@ -185,25 +191,38 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     if (servico.trim().length < 2) { avisar('Informe o serviço onde você atua ou faz residência.'); return false }
     return true
   }
-  /** Campos do cadastro que faltam, na ordem da tela: [campo, nome curto, explicação]. */
+  /** Passo 1 do cadastro, o que falta, na ordem da tela: [campo, nome curto, explicação]. */
   function faltasCadastro(): Array<[string, string, string]> {
     const f: Array<[string, string, string]> = []
-    const anos = nascimento ? (Date.now() - new Date(`${nascimento}T12:00:00`).getTime()) / (365.25 * 864e5) : NaN
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) f.push(['email', 'e-mail', 'Informe um e-mail válido.'])
-    if (nome.trim().length < 2) f.push(['nome', 'nome', 'Informe seu nome.'])
-    if (sobrenome.trim().length < 2) f.push(['sobrenome', 'sobrenome', 'Informe seu sobrenome.'])
-    if (!(anos >= 18 && anos <= 100)) f.push(['nascimento', 'data de nascimento', nascimento ? 'Confira dia, mês e ano: a data parece incompleta ou com o ano errado.' : 'Informe sua data de nascimento.'])
-    if (!situacao) f.push(['situacao', 'sua etapa ("Você é")', 'Escolha uma opção.'])
-    if (situacao === 'residente' && !anoResidencia) f.push(['ano', 'ano da residência', 'Escolha R1, R2 ou R3.'])
-    if (!provas.length) f.push(['provas', 'a prova que você estuda', 'Marque ao menos uma prova.'])
-    if (servico.trim().length < 2) f.push(['servico', 'hospital ou serviço', 'Informe o hospital ou serviço onde faz residência ou trabalha.'])
-    if (cidade.trim().length < 2) f.push(['cidade', 'cidade', 'Informe sua cidade.'])
-    if (!uf) f.push(['uf', 'UF', 'Escolha o estado.'])
-    if (whatsapp.trim() && whatsapp.replace(/\D/g, '').length < 10) f.push(['whatsapp', 'WhatsApp', 'Confira o WhatsApp: use o DDD e o número (ou deixe em branco).'])
     if (senha.length < 8) f.push(['senha', 'senha', 'Use pelo menos 8 caracteres.'])
     else if (confirmacao !== senha) f.push(['confirmacao', 'confirmação da senha', 'Digite a mesma senha nos dois campos.'])
     if (!aceitouTermos) f.push(['termos', 'aceite dos Termos de Uso', 'Marque que leu e aceita os Termos de Uso.'])
     return f
+  }
+  /** Passo 2 (perfil): tudo é opcional, mas o que foi preenchido precisa estar certo. */
+  function faltasPerfilCadastro(): Array<[string, string, string]> {
+    const f: Array<[string, string, string]> = []
+    const anos = nascimento ? (Date.now() - new Date(`${nascimento}T12:00:00`).getTime()) / (365.25 * 864e5) : NaN
+    if (nascimento && !(anos >= 18 && anos <= 100)) f.push(['nascimento', 'data de nascimento', 'Confira dia, mês e ano: a data parece incompleta ou com o ano errado (ou deixe em branco).'])
+    if (situacao === 'residente' && !anoResidencia) f.push(['ano', 'ano da residência', 'Escolha R1, R2 ou R3.'])
+    if (whatsapp.trim() && whatsapp.replace(/\D/g, '').length < 10) f.push(['whatsapp', 'WhatsApp', 'Confira o WhatsApp: use o DDD e o número (ou deixe em branco).'])
+    return f
+  }
+  /** Só o que foi preenchido no passo 2: o que ficar em branco o "Complete seu perfil" pede depois. */
+  function dadosPerfilPreenchidos(): Record<string, unknown> {
+    const d: Record<string, unknown> = {}
+    if (nome.trim()) d.nome = nome.trim()
+    if (sobrenome.trim()) d.sobrenome = sobrenome.trim()
+    if (nascimento) d.nascimento = nascimento
+    if (situacao) { d.situacao = situacao; if (situacao === 'residente') d.ano_residencia = anoResidencia }
+    if (provas.length) d.provas_interesse = provas
+    if (situacao && provas.length) Object.assign(d, { perfil_estudo_em: new Date().toISOString(), perfil_estudo_perguntado: true })
+    if (servico.trim().length >= 2) d.servico = servico.trim()
+    if (cidade.trim()) d.cidade = cidade.trim()
+    if (uf) d.uf = uf
+    if (whatsapp.trim()) d.whatsapp = whatsapp.trim()
+    return d
   }
   function dadosPerfil() {
     return {
@@ -253,19 +272,21 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         else navegar('/')
       } else if (modo === 'criar') {
         if (!aceitouTermos) { falhar('Marque que leu e aceita os Termos de Uso para criar sua conta.'); return }
-        if (!perfilCompleto(falhar)) return
         // A conta só abre depois de confirmar o e-mail: o destino fica guardado
         // para a volta do link (ContextoConta) ou para o próximo "Entrar".
         guardarVoltar(voltar)
-        const { data, error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos(), ...dadosOrigem() } } })
+        const { data, error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { receber_novidades: receberNovidades, ...dadosAceiteTermos(), ...dadosOrigem() } } })
         if (error) throw error
         // Com a confirmação ligada, o Supabase não revela que o e-mail já existe:
         // devolve um usuário sem identidades. É o sinal de cadastro repetido.
         if (data.user && data.user.identities?.length === 0) { falhar('Este e-mail já tem cadastro no Orto Questões. Entre com a sua senha ou recupere o acesso.', 'ja_cadastrado'); return }
         eventoMeta('CompleteRegistration', { content_name: 'email' })
-        if (data.session) { tomarVoltar(); navegar(voltar ?? '/'); return }
-        gravarConfirmacaoPendente(email.trim())
-        definirPendente(email.trim())
+        // Conta criada: agora o passo 2 (perfil). O pop-up de confirmar o e-mail
+        // vem depois dele, para não cobrir o formulário.
+        if (!data.session) gravarConfirmacaoPendente(email.trim())
+        definirSenha(''); definirConfirmacao(''); definirTentouPerfil(false)
+        definirPerfilDepois({ email: email.trim(), comSessao: Boolean(data.session) })
+        window.scrollTo({ top: 0 })
       } else {
         const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), { redirectTo: retornoConta(true) })
         if (error) throw error
@@ -278,6 +299,32 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       falhar(textoErro(codigo), codigo)
     }
     finally { definirOcupado(false) }
+  }
+  /** Passo 2: salva o que foi preenchido (ou pula) e segue para onde a pessoa ia. */
+  async function concluirPerfil(pular: boolean) {
+    if (!perfilDepois || ocupado) return
+    definirErroForm(null)
+    if (!pular) {
+      const faltas = faltasPerfilCadastro()
+      if (faltas.length) {
+        definirTentouPerfil(true)
+        falhar(`Confira ${faltas.length > 1 ? 'os campos marcados' : 'o campo marcado'} em vermelho: ${faltas.map(([, n]) => n).join(', ')}. Ou pule e complete depois.`, 'incompleto', faltas[0][0])
+        return
+      }
+      const dados = dadosPerfilPreenchidos()
+      if (Object.keys(dados).length) {
+        if (perfilDepois.comSessao && supabase) {
+          definirOcupado(true)
+          const { error } = await supabase.auth.updateUser({ data: dados })
+          definirOcupado(false)
+          if (error) { falhar('Não foi possível salvar o perfil agora. Você pode pular e completar depois em Minha conta › Perfil.'); return }
+        } else guardarPerfilPendente(perfilDepois.email, dados)
+      }
+    }
+    const { email: criado, comSessao } = perfilDepois
+    definirPerfilDepois(null)
+    if (comSessao) { const guardado = tomarVoltar(); navegar(voltar ?? guardado ?? '/'); return }
+    definirPendente(criado)
   }
   async function reenviar() {
     if (!supabase || ocupado || !email.trim()) return
@@ -337,14 +384,15 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const pedeConfirmacao = recuperacao || modo === 'criar'
   const senhasConferem = confirmacao.length > 0 && confirmacao === senha
   const criando = !recuperacao && modo === 'criar'
-  const errosCadastro: Record<string, string> = criando && tentouCriar ? Object.fromEntries(faltasCadastro().map(([c, , m]) => [c, m])) : {}
+  const errosCadastro: Record<string, string> = perfilDepois ? (tentouPerfil ? Object.fromEntries(faltasPerfilCadastro().map(([c, , m]) => [c, m])) : {})
+    : criando && tentouCriar ? Object.fromEntries(faltasCadastro().map(([c, , m]) => [c, m])) : {}
   const inv = (c: string) => errosCadastro[c] ? ' entrada--invalida' : ''
   const erroDe = (c: string) => errosCadastro[c] && <span className="campo__erro" role="alert"><Icone nome="alerta" tamanho={14} />{errosCadastro[c]}</span>
   // Sem o selo "obrigatório" em cada campo: a validação continua e só avisa o que faltou ao enviar.
   const obrig = null
-  if (!sessao || recuperacao) {
+  if (!sessao || recuperacao || perfilDepois) {
     const titulo = recuperacao ? 'Crie uma nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Recuperar senha' : 'Entrar na sua conta'
-    const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Leva menos de um minuto. Depois é só confirmar o e-mail.' : modo === 'recuperar' ? 'Informe seu e-mail e enviaremos um link para criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
+    const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Só e-mail e senha. Depois é confirmar o e-mail.' : modo === 'recuperar' ? 'Informe seu e-mail e enviaremos um link para criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
     return <div className="acesso">
       <aside className="acesso__vitrine">
         <p className="acesso__marca"><span>Orto</span> Questões</p>
@@ -356,9 +404,31 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <li><span><Icone nome="estrela" tamanho={18} /></span>Favoritas e anotações nas questões</li>
           <li><span><Icone nome="raio" tamanho={18} /></span>Sequência de dias, ranking e emblemas</li>
         </ul>
-        <p className="acesso__rodape">Comece grátis, sem cartão de crédito. Entre de qualquer aparelho e continue de onde parou. {TEXTO_GRATIS.rodape}</p>
+        <p className="acesso__rodape">Comece grátis, sem cartão de crédito. Entre de qualquer aparelho e continue de onde parou. {fraseGratis('rodape')}</p>
       </aside>
       <section className="acesso__cartao">
+        {perfilDepois ? <>
+          <header className="acesso__cabeca">
+            <p className="acesso__passo">Passo 2 de 2 · opcional</p>
+            <h2>Conte um pouco sobre você</h2>
+            <p>Com isso, o site sugere as provas certas e o ranking mostra seu nome. Dá para pular e completar depois em Minha conta.</p>
+          </header>
+          <p className="aviso-formulario aviso-formulario--sucesso" role="status"><Icone nome="certo" tamanho={18} /> <span>{perfilDepois.comSessao ? 'Conta criada.' : <>Conta criada. Enviamos um link de confirmação para <strong>{perfilDepois.email}</strong>: abra-o para entrar. O que você preencher aqui entra na conta quando ela for confirmada.</>}</span></p>
+          <form className="empilha acesso__form" onSubmit={(e) => { e.preventDefault(); void concluirPerfil(false) }} noValidate>
+            <div className="linha-campos linha-campos--2"><label className="campo" data-campo="nome"><span className="campo__rotulo">Nome</span><input className="entrada" autoComplete="given-name" value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo" data-campo="sobrenome"><span className="campo__rotulo">Sobrenome</span><input className="entrada" autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
+            <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} erros={errosCadastro} />
+            <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} />
+            <label className="campo" data-campo="nascimento"><span className="campo__rotulo">Data de nascimento</span><input className={'entrada' + inv('nascimento')} type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} />{erroDe('nascimento')}</label>
+            <div className="linha-campos linha-campos--2"><label className="campo" data-campo="cidade"><span className="campo__rotulo">Cidade</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label><label className="campo" data-campo="uf"><span className="campo__rotulo">UF</span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select></label></div>
+            <label className="campo" data-campo="whatsapp"><span className="campo__rotulo">WhatsApp com DDD</span><input className={'entrada' + inv('whatsapp')} type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" />{erroDe('whatsapp')}</label>
+            <p className="meta">Seu contato nunca aparece para outros usuários.</p>
+            {erroForm && <div key={erroForm.n} className="aviso-formulario aviso-formulario--erro aviso-formulario--destaque" role="alert"><Icone nome="alerta" tamanho={20} /><span>{erroForm.texto}</span></div>}
+            <div className="acesso__acoes-perfil">
+              <button className="botao botao--principal" disabled={ocupado}>{ocupado ? 'Aguarde…' : 'Salvar e continuar'}</button>
+              <button type="button" className="botao botao--fantasma" disabled={ocupado} onClick={() => void concluirPerfil(true)}>Pular por agora</button>
+            </div>
+          </form>
+        </> : <>
         {!recuperacao && modo !== 'recuperar' && <div className="acesso__abas" role="tablist">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="acesso__aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}
         <header className="acesso__cabeca">
           {modo === 'recuperar' && !recuperacao && <button type="button" className="acesso__voltar" onClick={() => trocarModo('entrar')}><Icone nome="esquerda" tamanho={16} /> Voltar para entrar</button>}
@@ -369,14 +439,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         {!recuperacao && modo !== 'recuperar' && <BotaoGoogle />}
         <form className="empilha acesso__form" onSubmit={enviar} noValidate={criando}>
           {!recuperacao && <label className="campo" data-campo="email"><span className="campo__rotulo">E-mail {obrig}</span><input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : inv('email'))} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" />{erroDe('email')}</label>}
-          {!recuperacao && modo === 'criar' && <>
-            <div className="linha-campos linha-campos--2"><label className="campo" data-campo="nome"><span className="campo__rotulo">Nome {obrig}</span><input className={'entrada' + inv('nome')} autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" />{erroDe('nome')}</label><label className="campo" data-campo="sobrenome"><span className="campo__rotulo">Sobrenome {obrig}</span><input className={'entrada' + inv('sobrenome')} autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} />{erroDe('sobrenome')}</label></div>
-            <label className="campo" data-campo="nascimento"><span className="campo__rotulo">Data de nascimento {obrig}</span><input className={'entrada' + inv('nascimento')} type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} />{erroDe('nascimento')}</label>
-            <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} obrigatorio erros={errosCadastro} />
-            <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} obrigatorio classeEntrada={inv('servico')} extra={erroDe('servico')} />
-            <div className="linha-campos linha-campos--2"><label className="campo" data-campo="cidade"><span className="campo__rotulo">Cidade {obrig}</span><input className={'entrada' + inv('cidade')} autoComplete="address-level2" required value={cidade} onChange={e => definirCidade(e.target.value)} />{erroDe('cidade')}</label><label className="campo" data-campo="uf"><span className="campo__rotulo">UF {obrig}</span><select className={'entrada' + inv('uf')} required value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select>{erroDe('uf')}</label></div>
-            <label className="campo" data-campo="whatsapp"><span className="campo__rotulo">WhatsApp com DDD <span className="meta">(opcional)</span></span><input className={'entrada' + inv('whatsapp')} type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" />{erroDe('whatsapp')}</label>
-          </>}
           {(recuperacao || modo !== 'recuperar') && <div className="campo" data-campo="senha">
             <span className="acesso__rotulo-senha"><label htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'} {obrig}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="acesso__link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
             <span className="acesso__senha">
@@ -410,6 +472,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         {modo === 'entrar' && !recuperacao && <p className="acesso__alternativa">Não recebeu a confirmação? <button type="button" className="acesso__link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
         {!recuperacao && modo === 'criar' && <p className="meta">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome). Você pode sair do ranking quando quiser.</p>}
         <p className="acesso__seguranca"><Icone nome="certo" tamanho={14} /> Autenticação segura pelo Supabase. O Orto Questões não guarda sua senha.</p>
+        </>}
       </section>
       {pendente && <ModalConfirmarEmail
         email={pendente}
