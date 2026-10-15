@@ -1,0 +1,25 @@
+/* Perfil em poucos toques: etapa em botões, provas sugeridas e locais de trabalho. */
+.perfil-rapido__bloco { border: 0; padding: 0; margin: 0; min-width: 0; display: grid; gap: .6rem; }
+.perfil-rapido__bloco legend { padding: 0; margin-bottom: .45rem; font-weight: 700; }
+.perfil-rapido__chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+.perfil-rapido__chip {
+  display: inline-flex; align-items: center; gap: .3rem; min-height: 40px; padding: .4rem .85rem;
+  border: 1px solid var(--traco-forte); border-radius: var(--raio-pill, 999px); background: var(--superficie);
+  color: var(--texto); font: inherit; font-size: var(--corpo-menor); font-weight: 650; cursor: pointer;
+  transition: border-color var(--duracao-rapida, .15s), background var(--duracao-rapida, .15s);
+}
+.perfil-rapido__chip:hover { border-color: var(--verdete); }
+.perfil-rapido__chip[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); color: var(--verdete-tinta, var(--texto)); }
+.perfil-rapido__chip:focus-visible { outline: 3px solid var(--foco, var(--verdete)); outline-offset: 2px; }
+.perfil-rapido__provas { display: grid; gap: .45rem; }
+.perfil-rapido__provas p { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem; color: var(--texto-2); font-size: var(--corpo-menor); }
+.perfil-rapido__provas strong { color: var(--texto); }
+.perfil-rapido__rotulo { font-weight: 600; font-size: var(--corpo-menor); }
+.perfil-rapido__link { padding: 0; border: 0; background: none; color: var(--verdete); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+
+.campo-locais { display: grid; gap: .45rem; padding: .7rem .8rem; border-left: 3px solid var(--verdete); border-radius: var(--raio-pequeno, 6px); background: var(--superficie-2); }
+.campo-locais__titulo { font-weight: 600; font-size: var(--corpo-menor); }
+.campo-locais__item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .4rem; align-items: center; }
+.campo-locais__tirar { width: 40px; height: 40px; }
+.campo-locais__mais { justify-self: start; min-height: 36px; padding: .3rem .7rem; border: 1px dashed var(--traco-forte); border-radius: var(--raio-pill, 999px); background: var(--superficie); color: var(--verdete); font: inherit; font-size: var(--corpo-menor); font-weight: 700; cursor: pointer; }
+.campo-locais__mais:hover { border-color: var(--verdete); }
