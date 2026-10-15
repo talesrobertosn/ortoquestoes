@@ -63,7 +63,7 @@ Linguagem visual fixa:
 12. [x] Intensidade em tempo por dia (30 min, 1h, 1h30, 2h+), mostrando a cobertura resultante. (PR da reforma, 14/10/2026)
 13. [x] Dia leve (plantão) além da folga. (PR da reforma, 14/10/2026)
 14. [~] Atalhos com as datas oficiais das provas; duas provas no mesmo plano (TARO e TEOT). Feito em parte: atalho do TEOT (única data oficial no repositório) e a segunda prova como marco no caminho.
-15. [x] Diagnóstico de 20 questões opcional dentro da montagem. (PR da reforma, 14/10/2026)
+15. [x] Diagnóstico de 30 questões opcional dentro da montagem (o tamanho é `TAMANHO_DIAGNOSTICO`, em `hubCronograma.ts`). (PR da reforma, 14/10/2026)
 16. [x] "Já domino esta área" e "começar por". (PR da reforma, 14/10/2026)
 17. [x] Texto dos Simulados em uma linha com "saiba mais". (PR da reforma, 14/10/2026)
 18. [x] Simulador "e se": efeito da mudança na hora. (PR da reforma, 14/10/2026)
@@ -73,7 +73,7 @@ Linguagem visual fixa:
 20. [x] Intercalar: cerca de 70% da área do dia e 30% de mistura das áreas já vistas. (PR da reforma, 14/10/2026)
 21. [x] Blocos de 2 a 3 dias por grupo de assuntos, em vez de uma área por semana. (PR da reforma, 14/10/2026)
 22. [x] Mini-simulado cronometrado a cada 2 ou 3 semanas. (PR da reforma, 14/10/2026)
-23. [~] Resumão do tema no começo do dia. Feito em parte: item "Resumão do tema" na lista do dia, com link para o resumão (ainda não abre na área certa).
+23. [x] Resumão do tema no começo do dia. O item "Resumão do tema" abre `#/resumao?tema=<área>` já na área do dia (aberta e rolada até ela) e só fica feito quando a pessoa lê: toca em "Li esta área" ou fica um minuto com a área aberta e a aba à vista (`src/estado/resumaoLido.ts`). (branch claude/cronograma-ajustes, 15/10/2026)
 24. [x] Revisões e flashcards dos erros dentro da meta do dia (uma meta, um tempo). (PR da reforma, 14/10/2026)
 
 ### 4. Frequência e constância
@@ -104,6 +104,8 @@ Linguagem visual fixa:
 43. [x] Painel "Adiantar" sempre à vista no cartão Hoje: +10, +20, +30, "amanhã inteiro" e "2 dias", cada um com o efeito ("amanhã fica com 40") e o tempo; "Cancelar o que falta". Com a meta pendente, o pedido entra na mesma sessão; com a meta feita, o painel vira o destaque dourado e abre a sessão na hora.
 44. [x] Amanhã, a semana e o fim da sessão mostram o adiantado ("eram 60", "livre, você já adiantou"). Dia todo adiantado conta como meta cumprida.
 45. [x] Conserto: o cartão dos OrtoQuestões Simulados dentro do bloco recolhido ficava espremido numa coluna fina no computador.
+46. [x] "Ajustar" no topo, no "Onde você está", e no cartão Hoje em dia de folga (antes só no rodapé). "Como o seu cronograma funciona" começa recolhido; o tour de 3 partes some após "Entendi" e só é lido/gravado no cronograma do assinante, então a vitrine não o consome e ele aparece sozinho quando a pessoa assina. (T5.5, branch claude/cronograma-ajustes, 15/10/2026)
+47. [x] Um número só de "faltam N dias": a montagem e o painel contam de meia-noite a meia-noite (`diasAte` em `planoEstudo.ts`), sem o `Math.ceil` que dava um dia a mais. (branch claude/cronograma-ajustes, 15/10/2026)
 
 Como funciona por dentro: `opcoes.adiantados` (no `planos_estudo.opcoes`, sem SQL novo) guarda, por dia, a meta daquele dia e
 o que a pessoa pediu para adiantar. No dia seguinte, o motor conta as primeiras respostas daquele dia, tira a meta e
