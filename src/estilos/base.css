@@ -2013,3 +2013,7 @@ section[class$="-heroi"]::before, section[class$="-heroi"]::after, .heroi-escuro
 }
 /* No celular, acima da barra de navegação de baixo. */
 @media (max-width: 56rem) { .voltar-topo { bottom: calc(5rem + env(safe-area-inset-bottom)); } }
+/* Alvos do índice e dos atalhos ficam abaixo do cabeçalho fixo (60px) ao saltar. */
+.termos-pagina h2, .rz-area { scroll-margin-top: 5rem; }
+.termos-pagina h2:focus, .rz-area:focus { outline: none; }
+.termos-pagina h2:focus-visible, .rz-area:focus-visible { outline: 2px solid var(--verdete); outline-offset: 4px; }

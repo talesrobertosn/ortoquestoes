@@ -1,7 +1,18 @@
 import { useEffect, useState, type RefObject } from 'react'
 import { Icone } from './Icone'
 
-const rolar = (el: Element | null) => el?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })
+/**
+ * Leva até a seção e põe o foco nela: quem navega pelo teclado ou leitor de
+ * tela continua dali, e não volta ao índice no próximo Tab. O espaço do
+ * cabeçalho fixo fica no scroll-margin-top do alvo (CSS).
+ */
+export function irParaSecao(el: HTMLElement | null) {
+  if (!el) return
+  el.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })
+  if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1')
+  el.focus({ preventScroll: true })
+}
+const rolar = irParaSecao
 
 /**
  * Índice de uma página longa (Termos, por exemplo), montado a partir dos <h2>

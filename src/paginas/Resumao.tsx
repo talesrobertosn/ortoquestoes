@@ -9,7 +9,7 @@ import { IconePixel } from '../componentes/IconePixel'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href } from '../util/rotas'
 import '../estilos/paginas/Resumao.css'
-import { VoltarAoTopo } from '../componentes/IndicePagina'
+import { irParaSecao, VoltarAoTopo } from '../componentes/IndicePagina'
 import { rotaDe } from '../util/rotas'
 
 interface Frase { texto: string; id: string }
@@ -45,18 +45,22 @@ export function Resumao() {
 
   // Vindo do cronograma (?tema=joelho): abre e mostra direto a área do dia.
   const temaPedido = rotaDe(window.location.hash).consulta.get('tema')
+  // Depende também de premium: sem o acesso em cache, as áreas além da amostra só
+  // aparecem quando a consulta de assinatura responde, depois dos dados.
+  const [temaAberto, definirTemaAberto] = useState(false)
   useEffect(() => {
-    if (!dados || !temaPedido) return
+    if (!dados || !temaPedido || temaAberto) return
     const el = document.getElementById(`rz-${temaPedido}`) as HTMLDetailsElement | null
     if (!el) return
     el.open = true
     el.scrollIntoView({ block: 'start' })
-  }, [dados, temaPedido])
+    definirTemaAberto(true)
+  }, [dados, temaPedido, premium, temaAberto])
   const irPara = (slug: string) => {
     const el = document.getElementById(`rz-${slug}`) as HTMLDetailsElement | null
     if (!el) return
     el.open = true
-    el.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })
+    irParaSecao(el)
   }
 
   if (erro) return <p className="aviso-formulario aviso-formulario--erro" role="alert">Não foi possível carregar o resumão. Confira a conexão e recarregue.</p>
