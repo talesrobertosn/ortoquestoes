@@ -1,14 +1,14 @@
-import { useEffect, useMemo, useState } from 'react'
-import { chamarRpc } from '../../servicos/supabase'
-import { PLANOS as PRECOS, real } from '../../dados/planos'
+import { useMemo, useState, type ReactNode } from 'react'
+import { real } from '../../dados/planos'
+import { Icone } from '../Icone'
 import { BarraComposicao, BarrasHorizontais, GraficoColunasEmpilhadas, type PontoEmpilhado } from './AdminGraficos'
 import { baixarCsv, porcentagem } from './formatos'
-import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente } from './pagamentos'
 import { TabelaMensal } from './AdminMensal'
-import {
-  MES, NOME_MES, aReceberNoCartao, aReceberNoPix, cobrancas, dataCancelamento, mesAMes, meioDe, pagaSemCobranca, precoDe,
-  recorrentesNoCartao, renovacaoDoPix, renovaSozinha, somarMesChave, vigente, type CobrancaReal,
-} from './receita'
+import { NOME_MES, aReceberNoPix, cobrancas, mesAMes, pagaSemCobranca, precoDe, type CobrancaReal } from './receita'
+import { HORIZONTES, MINIMO_PARA_OBSERVADA, calcularFinanceiro, curto, taxaPixSugerida } from './financeiro'
+import { rotuloMeio, rotuloPlano, rotuloTipoCobranca } from './rotulos'
+import { Comparacao } from './Comparacao'
+import type { Aba } from './secoes'
 
 export interface AssinaturaFinanceira {
   id_usuario: string
@@ -27,92 +27,54 @@ export interface AssinaturaFinanceira {
 }
 
 const SERIES = [{ nome: 'Cartão', classe: 'adm-serie-cartao' }, { nome: 'Pix', classe: 'adm-serie-pix' }]
-const curto = (chave: string) => NOME_MES(chave, true).replace('.', '')
 const SERIES_PREVISAO = [{ nome: 'Cartão (renovação automática)', classe: 'adm-serie-cartao' }, { nome: 'Pix (recompra estimada)', classe: 'adm-serie-pix-estimado' }]
-const HORIZONTES = [1, 3, 6, 12] as const
-/** Sem histórico suficiente de Pix encerrados, a suposição começa aqui. */
-const TAXA_PIX_PADRAO = 0.6
-const MINIMO_PARA_OBSERVADA = 5
-const plural = (n: number, um: string, varios: string) => `${n} ${n === 1 ? um : varios}`
+const plural = (n: number, um: string, varios: string) => `${n.toLocaleString('pt-BR')} ${n === 1 ? um : varios}`
+/** "outubro" (sem o ano), para as comparações do resumo. */
+const soMes = (chave: string) => NOME_MES(chave).replace(/ de \d{4}$/, '')
+
+/** Nome de cada pessoa a partir das assinaturas (para as listas de cobranças). */
+export function nomesDasAssinaturas(assinaturas: Array<Pick<AssinaturaFinanceira, 'id_usuario' | 'nome' | 'usuario'>>) {
+  const mapa = new Map<string, { nome: string | null; email: string | null }>()
+  for (const a of assinaturas) {
+    const atual = mapa.get(a.id_usuario)
+    if (!atual || (!atual.nome && a.nome)) mapa.set(a.id_usuario, { nome: a.nome ?? atual?.nome ?? null, email: a.usuario ?? atual?.email ?? null })
+  }
+  return mapa
+}
+
+/** Um número do resumo: rótulo, valor e linhas de apoio. */
+function Numero({ rotulo, valor, children, destaque, icone }: { rotulo: string; valor: ReactNode; children?: ReactNode; destaque?: boolean; icone?: ReactNode }) {
+  return <div className={'adm-kpi adm-fin-numero' + (destaque ? ' adm-fin-numero--destaque' : '')}>
+    <span>{icone}{rotulo}</span><strong>{valor}</strong>{children}
+  </div>
+}
 
 /**
- * Financeiro: o que vai entrar (recorrência no cartão e previsão), o que já entrou (mês a mês,
- * cartão e Pix), a base de assinantes agora e o movimento do mês. Estimativa reconstruída a
- * partir das assinaturas; o extrato oficial é o do Mercado Pago.
+ * Financeiro (revisão de 15/10/2026, docs/admin/FINANCEIRO.md). De cima para baixo:
+ * 1. Resumo do mês, com a comparação ao mês anterior, e as últimas cobranças.
+ * 2. Previsão: o que vai entrar (recorrência no cartão e recompra do Pix).
+ * 3. Histórico: o que já entrou (mês a mês, por meio e por plano).
+ * 4. Base de assinantes agora.
+ * 5. Mês a mês (movimento e churn).
+ * 6. Ações sensíveis, reunidas, cada uma com confirmação onde ela acontece.
+ * Estimativa reconstruída a partir das assinaturas e das cobranças gravadas; o extrato oficial é o do Mercado Pago.
  */
-export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinaturas: AssinaturaFinanceira[]; usuarios: number | null; testes?: number }) {
-  // Cobranças gravadas no banco (parte 23). Sem a RPC (404/PGRST202) ou com falha, segue a estimativa pelos planos.
-  const [reais, definirReais] = useState<CobrancaReal[] | null>(null)
-  const [semReais, definirSemReais] = useState<string | null>(null)
-  useEffect(() => {
-    let vivo = true
-    chamarRpc<CobrancaReal[]>('cobrancas_admin', {})
-      .then(lista => { if (vivo) { definirReais(lista); definirSemReais(null) } })
-      .catch(falha => { if (vivo) definirSemReais(funcaoAusente(falha) ? `Para usar os valores gravados no banco (Pix pelo valor pago, cartão pelo valor contratado), cole no Supabase a ${PARTE_COBRANCAS}.` : `As cobranças gravadas não carregaram (código: ${codigoDaFalha(falha)}); os valores abaixo são estimados pelos planos.`) })
-    return () => { vivo = false }
-  }, [assinaturas])
+export function AdminFinanceiro({ assinaturas, usuarios, testes = 0, reais = null, avisoReais = null, errosPagamento = 0, irPara }: {
+  assinaturas: AssinaturaFinanceira[]; usuarios: number | null; testes?: number
+  /** Cobranças gravadas no banco (RPC cobrancas_admin, parte 23); null sem a RPC: tudo pelo preço dos planos. */
+  reais?: CobrancaReal[] | null
+  /** Por que as cobranças gravadas não vieram (SQL não colado ou falha), para avisar. */
+  avisoReais?: string | null
+  errosPagamento?: number
+  irPara?: (aba: Aba) => void
+}) {
   const todas = useMemo(() => cobrancas(assinaturas, reais), [assinaturas, reais])
+  const nomes = useMemo(() => nomesDasAssinaturas(assinaturas), [assinaturas])
 
-  const d = useMemo(() => {
-    const agora = new Date(), ms = agora.getTime()
-    const esteMes = MES(agora), mesPassado = somarMesChave(esteMes, -1)
-    // Recebido por mês (de Brasília), separado em cartão e Pix (últimos 12 meses).
-    const porMes = new Map<string, [number, number]>()
-    for (let i = 11; i >= 0; i--) porMes.set(somarMesChave(esteMes, -i), [0, 0])
-    for (const c of todas) { const m = porMes.get(MES(c.em)); if (m) m[c.meio === 'pix' ? 1 : 0] += c.valor }
-    const totalMes = (k: string) => { const m = porMes.get(k); return m ? m[0] + m[1] : 0 }
-    const total = todas.reduce((s, c) => s + c.valor, 0)
-    const pagantes = new Set(todas.map(c => c.id_usuario)).size
-    const primeira = todas[0]?.em ?? null
-    const mesesDeVida = primeira ? Math.max(1, (ms - primeira.getTime()) / (30.44 * 86_400_000)) : 0
-
-    // Recorrência e previsão.
-    const recorrentes = recorrentesNoCartao(assinaturas, ms)
-    const valorRecorrente = recorrentes.reduce((s, x) => s + x.valor, 0)
-    const mrr = recorrentes.reduce((s, x) => s + x.mensal, 0)
-    const aReceber = HORIZONTES.map(m => ({ meses: m, ...aReceberNoCartao(assinaturas, m, agora) }))
-
-    // Base com acesso agora.
-    const comAcesso = assinaturas.filter(a => vigente(a, ms))
-    const porPlano = PRECOS.map(p => {
-      const lista = comAcesso.filter(a => a.plano === p.id)
-      const renovam = lista.filter(renovaSozinha).length
-      const pix = lista.filter(a => meioDe(a) === 'pix').length
-      return { ...p, vigentes: lista.length, renovam, pix, cartaoSemRenovar: lista.length - renovam - pix, mensal: renovam * (p.total / p.meses) }
-    })
-    const em30 = (iso?: string | null) => !!iso && new Date(iso).getTime() > ms && new Date(iso).getTime() - ms < 30 * 86_400_000
-    const renovam30 = assinaturas.filter(a => renovaSozinha(a) && em30(a.fim_periodo))
-
-    // Histórico de cancelamentos e meios.
-    const pagas = assinaturas.filter(a => a.ultima_cobranca_em || pagaSemCobranca(a))
-    const pagasCartao = pagas.filter(a => meioDe(a) === 'cartao')
-    const receitaPix = todas.filter(c => c.meio === 'pix').reduce((s, c) => s + c.valor, 0)
-    const renovacoes = todas.filter(c => c.tipo === 'renovacao')
-
-    return {
-      total, pagantes, primeira, recorrentes, valorRecorrente, mrr, aReceber,
-      esteMes: totalMes(esteMes), mesPassado: totalMes(mesPassado),
-      mediaMensal: mesesDeVida ? total / mesesDeVida : 0,
-      ticket: todas.length ? total / todas.length : 0,
-      porPagante: pagantes ? total / pagantes : 0,
-      serie: [...porMes].map(([k, v]): PontoEmpilhado => ({ rotulo: NOME_MES(k), rotuloCurto: curto(k), partes: [Math.round(v[0] * 100) / 100, Math.round(v[1] * 100) / 100] })),
-      comAcesso: comAcesso.length, porPlano,
-      renovamAgora: comAcesso.filter(renovaSozinha).length,
-      pixComAcesso: comAcesso.filter(a => meioDe(a) === 'pix').length,
-      cartaoSemRenovar: comAcesso.filter(a => meioDe(a) === 'cartao' && !renovaSozinha(a)).length,
-      pixAcabando30: comAcesso.filter(a => meioDe(a) === 'pix' && em30(a.fim_periodo)).length,
-      renovacoes30: renovam30.length, valorRenovacoes30: renovam30.reduce((s, a) => s + (precoDe(a.plano)?.total ?? 0), 0),
-      cancelaram: pagasCartao.filter(a => dataCancelamento(a)).length, pagasCartao: pagasCartao.length,
-      reembolsos: assinaturas.filter(a => a.status === 'reembolsada').length,
-      pagasPix: pagas.length - pagasCartao.length, receitaPix, receitaCartao: total - receitaPix,
-      renovacoes: renovacoes.length, receitaRenovacoes: renovacoes.reduce((s, c) => s + c.valor, 0),
-      receitaPorPlano: PRECOS.map(p => { const lista = todas.filter(c => c.plano === p.id); return { nome: p.nome, valor: lista.reduce((s, c) => s + c.valor, 0), cobrancas: lista.length } }),
-    }
-  }, [todas, assinaturas])
+  const d = useMemo(() => calcularFinanceiro(assinaturas, todas), [todas, assinaturas])
 
   // Pix: suposição de recompra. A taxa começa na observada (quando já há Pix encerrados o bastante) e o dono ajusta.
-  const pixObservado = useMemo(() => renovacaoDoPix(assinaturas), [assinaturas])
-  const taxaSugerida = pixObservado.taxa !== null && pixObservado.encerrados >= MINIMO_PARA_OBSERVADA ? Math.round(pixObservado.taxa * 100) / 100 : TAXA_PIX_PADRAO
+  const { observado: pixObservado, taxa: taxaSugerida } = useMemo(() => taxaPixSugerida(assinaturas), [assinaturas])
   const [taxaEscolhida, escolherTaxa] = useState<number | null>(null)
   const taxaPix = taxaEscolhida ?? taxaSugerida
   const previsao = useMemo(() => {
@@ -131,138 +93,208 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
   const semCobranca = useMemo(() => assinaturas.filter(pagaSemCobranca), [assinaturas])
   const meses = useMemo(() => mesAMes(assinaturas, 12, new Date(), reais), [assinaturas, reais])
   const atual = meses[meses.length - 1], anterior = meses[meses.length - 2]
-  const variacao = d.mesPassado ? Math.round(((d.esteMes - d.mesPassado) / d.mesPassado) * 100) : null
   const conversao = usuarios ? porcentagem(d.pagantes, usuarios) : null
+  const ultimas = useMemo(() => [...todas].reverse().slice(0, 5), [todas])
+  const mesAtual = soMes(d.chaveMes), mesAnterior = soMes(d.chaveMesPassado)
+  const novasAgora = (atual?.novasCartao ?? 0) + (atual?.novasPix ?? 0), novasAntes = (anterior?.novasCartao ?? 0) + (anterior?.novasPix ?? 0)
+  const nomeDe = (id: string) => { const n = nomes.get(id); return n?.nome || n?.email || 'Pessoa sem nome' }
 
-  return <div className="empilha-2">
+  return <div className="empilha-2 adm-fin">
+    {/* 1. Resumo do mês */}
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-financeiro">
-      <div className="adm-secao__cabeca"><div>
-        <h2 id="adm-titulo-financeiro">Financeiro</h2>
-        <p>{reais
-          ? 'Valores brutos das cobranças gravadas no banco: Pix pelo valor pago, cartão pelo valor contratado no checkout. O banco guarda só a última cobrança de cada cartão; as renovações anteriores são reconstruídas a cada período do plano (marcadas como estimadas na planilha). Reembolsos descontados.'
-          : 'Valores brutos, reconstruídos a partir das assinaturas (cada cobrança pelo preço do plano; reembolsos descontados).'} Cartão renova sozinho; Pix é compra avulsa. Meses de Brasília. Não descontam a taxa do Mercado Pago e não substituem o extrato dele.{testes > 0 && ` ${testes} assinatura(s) de teste do dono ficam de fora.`}</p>
-        {semReais && <p className="adm-nota">{semReais}</p>}
-      </div>
+      <div className="adm-secao__cabeca">
+        <div>
+          <p className="adm-fin-rotulo">Resumo de {mesAtual}</p>
+          <h2 id="adm-titulo-financeiro">Financeiro</h2>
+          <p>Valores brutos, em meses de Brasília, comparados com {mesAnterior}.{testes > 0 && ` ${plural(testes, 'assinatura de teste do dono fica', 'assinaturas de teste do dono ficam')} de fora.`}</p>
+        </div>
         <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-cobrancas-${new Date().toISOString().slice(0, 10)}.csv`,
-          ['Data', 'Plano', 'Valor', 'Meio', 'Tipo', 'Origem', 'Pagamento no Mercado Pago'], todas.map(c => [c.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' }), precoDe(c.plano)?.nome ?? c.plano, c.valor.toFixed(2).replace('.', ','), c.meio === 'pix' ? 'Pix' : 'Cartão', c.tipo === 'nova' ? 'Assinatura nova' : 'Renovação automática', c.estimada ? 'estimada (renovação reconstruída ou paga sem cobrança gravada)' : 'cobrança gravada', c.id_pagamento ?? '']))}>Exportar cobranças</button>
+          ['Data', 'Pessoa', 'E-mail', 'Plano', 'Valor bruto', 'Meio', 'Tipo', 'Origem', 'Pagamento no Mercado Pago'], todas.map(c => [c.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' }), nomes.get(c.id_usuario)?.nome ?? '', nomes.get(c.id_usuario)?.email ?? '', rotuloPlano(c.plano), c.valor.toFixed(2).replace('.', ','), rotuloMeio(c.meio), rotuloTipoCobranca(c), c.estimada ? 'estimada (renovação reconstruída ou paga sem cobrança gravada)' : 'cobrança gravada', c.id_pagamento ?? '']))}>
+          <Icone nome="baixar" tamanho={15} /> Exportar cobranças
+        </button>
       </div>
 
+      {avisoReais && <p className="adm-alerta" role="status">{avisoReais}</p>}
       {semCobranca.length > 0 && <div className="adm-alerta" role="status">
-        <p><strong>{semCobranca.length} assinatura(s) paga(s) sem a cobrança gravada.</strong> Elas já entram nos totais pelo preço do plano, mas vale conferir no Mercado Pago e reprocessar o aviso na aba Pagamentos:</p>
-        <ul>{semCobranca.map(a => <li key={`${a.id_usuario}-${a.criada_em ?? a.ultima_atualizacao}`}>{a.nome || a.usuario || a.id_usuario} · {precoDe(a.plano)?.nome ?? a.plano} · {real(precoDe(a.plano)?.total ?? 0)} · desde {new Date(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao).toLocaleDateString('pt-BR')}</li>)}</ul>
+        <p><strong>{plural(semCobranca.length, 'assinatura paga sem a cobrança gravada', 'assinaturas pagas sem a cobrança gravada')}.</strong> Elas já entram nos totais pelo preço do plano, mas vale conferir no Mercado Pago e reprocessar o aviso em Receita › Avisos de pagamento:</p>
+        <ul>{semCobranca.map(a => <li key={`${a.id_usuario}-${a.criada_em ?? a.ultima_atualizacao}`}>{a.nome || a.usuario || a.id_usuario} · {rotuloPlano(a.plano)} · {real(precoDe(a.plano)?.total ?? 0)} · desde {new Date(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao).toLocaleDateString('pt-BR')}</li>)}</ul>
       </div>}
 
-      {/* 1. O que vai entrar */}
-      <div className="adm-fin-bloco">
-        <p className="adm-fin-rotulo">O que vai entrar</p>
-        <div className="adm-fin-heroi">
-          <div className="adm-fin-heroi__principal">
-            <span>Receita recorrente no cartão</span>
-            <strong>{real(d.valorRecorrente)}</strong>
-            <p><b>{d.recorrentes.length}</b> cartão(ões) renovando sozinhos, somando o valor de cada plano. Equivale a <b>{real(d.mrr)} por mês</b> (anual ÷ 12, semestral ÷ 6).</p>
-          </div>
-          <div className="adm-fin-receber">
-            {d.aReceber.map((x, i) => { const pix = previsao.pix[i]; return <div className="adm-kpi" key={x.meses}>
-              <span>{x.meses === 1 ? 'Próximo mês' : `Próximos ${x.meses} meses`}</span>
-              <strong>{real(x.valor + pix.valor)}</strong>
-              <small><i className="adm-serie-cartao" aria-hidden="true" />Cartão <b>{real(x.valor)}</b> <span>· {plural(x.cobrancas, 'renovação', 'renovações')}</span></small>
-              <small><i className="adm-serie-pix-estimado" aria-hidden="true" />Pix <b>~{real(pix.valor)}</b> <span>· ~{plural(Math.round(pix.renovacoes), 'recompra', 'recompras')}</span></small>
-            </div> })}
-          </div>
-        </div>
-        <div className="adm-fin-pix" role="group" aria-labelledby="adm-pix-titulo">
-          <div className="adm-fin-pix__texto">
-            <strong id="adm-pix-titulo">E se quem pagou Pix comprar de novo?</strong>
-            <p>O Pix não renova sozinho, mas muita gente recompra quando o acesso acaba. Para {plural(previsao.pessoas, 'pessoa', 'pessoas')} com Pix vigente, conta {pctPix}% do plano no dia em que o acesso termina; quem recompra pode recomprar de novo no fim do plano seguinte ({pctPix}% de {pctPix}%, e assim por diante). Quem também tem cartão renovando fica só no cartão.</p>
-            <small>{pixObservado.encerrados === 0
-              ? 'Ainda não há Pix encerrado há mais de 30 dias para medir a taxa real; a suposição começa em 60%.'
-              : `Na prática: ${pixObservado.renovados} de ${pixObservado.encerrados} Pix já encerrados (${Math.round((pixObservado.taxa ?? 0) * 100)}%) foram renovados até 30 dias depois do fim, no Pix ou no cartão${pixObservado.encerrados < MINIMO_PARA_OBSERVADA ? '; amostra pequena, por isso a suposição começa em 60%' : ''}.`}</small>
-          </div>
-          <div className="adm-fin-pix__controle">
-            <input type="range" min={0} max={100} step={1} value={pctPix} aria-label="Porcentagem de quem pagou Pix e recompra" aria-valuetext={`${pctPix}% recompram`} onChange={e => escolherTaxa(Number(e.target.value) / 100)} />
-            <output aria-live="polite">{pctPix}%</output>
-            <div className="adm-fin-pix__atalhos">
-              {pixObservado.taxa !== null && <button type="button" aria-pressed={Math.abs(taxaPix - Math.round(pixObservado.taxa * 100) / 100) < 0.001} onClick={() => escolherTaxa(Math.round(pixObservado.taxa! * 100) / 100)}>Real ({Math.round(pixObservado.taxa * 100)}%)</button>}
-              {[0.3, 0.5, 0.7, 0.9].map(t => <button type="button" key={t} aria-pressed={Math.abs(taxaPix - t) < 0.001} onClick={() => escolherTaxa(t)}>{t === 0.3 ? 'Pessimista' : t === 0.5 ? 'Metade' : t === 0.7 ? 'Otimista' : 'Quase todos'} ({Math.round(t * 100)}%)</button>)}
-            </div>
-          </div>
-        </div>
-        <GraficoColunasEmpilhadas titulo="Previsão: cartão + Pix" subtitulo={`de hoje até daqui a 12 meses; cartão se ninguém cancelar, Pix se ${pctPix}% recomprarem. Assinaturas novas entram por cima`}
-          pontos={previsao.pontos} series={SERIES_PREVISAO} formato={real} previsto />
-        <details className="adm-grafico__tabela"><summary>Ver os {d.recorrentes.length} cartões que renovam sozinhos</summary>
-          {d.recorrentes.length === 0 ? <p className="adm-vazio">Nenhum cartão renovando sozinho agora.</p> :
-            <div className="adm-tabela-rolagem" role="region" aria-label="Cartões que renovam sozinhos" tabIndex={0}><table className="tabela">
-              <thead><tr><th scope="col">Assinante</th><th scope="col">Plano</th><th scope="col">Valor do plano</th><th scope="col">Por mês</th><th scope="col">Próxima renovação</th></tr></thead>
-              <tbody>{d.recorrentes.map((x, i) => <tr key={`${x.assinatura.id_usuario}-${i}`}>
-                <td>{x.assinatura.nome || x.assinatura.usuario || x.assinatura.id_usuario.slice(0, 8)}</td><td>{x.plano}</td>
-                <td className="numerico">{real(x.valor)}</td><td className="numerico">{real(x.mensal)}</td>
-                <td>{x.proxima ? new Date(x.proxima).toLocaleDateString('pt-BR') : 'sem data'}</td>
-              </tr>)}</tbody>
-            </table></div>}
-        </details>
+      <div className="adm-fin-resumo">
+        <Numero rotulo={`Receita de ${mesAtual}`} valor={real(d.esteMes)} destaque>
+          <Comparacao atual={d.esteMes} anterior={d.mesPassado} base={mesAnterior} formato={real} />
+        </Numero>
+        <Numero rotulo="Receita recorrente por mês" valor={real(d.mrr)}>
+          <small>{plural(d.recorrentes.length, 'cartão renovando sozinho', 'cartões renovando sozinhos')} · {real(d.valorRecorrente)} por ciclo</small>
+        </Numero>
+        <Numero rotulo="Assinantes com acesso" valor={d.comAcesso.toLocaleString('pt-BR')}>
+          <small>{d.renovamAgora} no cartão que renova · {d.pixComAcesso} no Pix{d.cartaoSemRenovar ? ` · ${d.cartaoSemRenovar} cancelado(s) com acesso` : ''}</small>
+        </Numero>
+        <Numero rotulo={`Assinaturas novas em ${mesAtual}`} valor={novasAgora}>
+          <Comparacao atual={novasAgora} anterior={novasAntes} base={mesAnterior} />
+          <small>{atual?.novasCartao ?? 0} no cartão · {atual?.novasPix ?? 0} no Pix</small>
+        </Numero>
+        <Numero rotulo={`Cancelamentos em ${mesAtual}`} valor={atual?.cancelamentos ?? 0}>
+          <Comparacao atual={atual?.cancelamentos ?? 0} anterior={anterior?.cancelamentos ?? 0} base={mesAnterior} bom="desce" />
+          <small>renovação do cartão desligada · {plural(atual?.reembolsos ?? 0, 'reembolso', 'reembolsos')}</small>
+        </Numero>
+        <Numero rotulo="Pix que vencem em 30 dias" valor={d.pixAcabando30}>
+          <small>~{real(previsao.pix[0].valor)} se {pctPix}% recomprarem no próximo mês</small>
+          <small>bons candidatos a um lembrete de renovação</small>
+        </Numero>
       </div>
+
+      <div className="adm-fin-ultimas">
+        <div className="adm-secao__cabeca"><h3>Últimas cobranças</h3>{irPara && <button type="button" className="adm-link" onClick={() => irPara('cobrancas')}>Ver todas <Icone nome="direita" tamanho={14} /></button>}</div>
+        {ultimas.length === 0 ? <p className="adm-vazio">Nenhuma cobrança ainda.</p> : <ol className="adm-mini">
+          {ultimas.map((c, i) => <li key={`${c.id_usuario}-${c.em.getTime()}-${i}`}>
+            <span className="adm-mini__nome"><span className="adm-reticencias">{nomeDe(c.id_usuario)}</span><small>{c.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' })} · {rotuloPlano(c.plano)} · {rotuloMeio(c.meio)} · {rotuloTipoCobranca(c)}{c.estimada ? ' · estimada' : ''}</small></span>
+            <span className="adm-mini__valor numerico">{real(c.valor)}</span>
+          </li>)}
+        </ol>}
+      </div>
+
+      <details className="adm-fin-como">
+        <summary>Como estes números são calculados</summary>
+        <p>{reais
+          ? 'Cobranças gravadas no banco: Pix pelo valor pago, cartão pelo valor contratado no checkout. O banco guarda só a última cobrança de cada cartão; as renovações anteriores são reconstruídas a cada período do plano (marcadas como estimadas). Reembolsos descontados.'
+          : 'Reconstruídos a partir das assinaturas: cada cobrança pelo preço do plano; reembolsos descontados.'} Cartão renova sozinho; Pix é compra avulsa, sem renovação. Os valores são brutos: não descontam a taxa do Mercado Pago e não substituem o extrato dele.</p>
+        <p>Receita recorrente por mês = soma dos cartões que renovam sozinhos, cada um dividido pelos meses do plano (anual ÷ 12, semestral ÷ 6). Pix não entra, porque não renova.</p>
+      </details>
     </section>
 
-    {/* 2. O que já entrou */}
+    {/* 2. Previsão */}
+    <section className="empilha adm-secao" aria-labelledby="adm-titulo-previsao">
+      <div><p className="adm-fin-rotulo">Previsão</p><h2 id="adm-titulo-previsao">O que vai entrar</h2></div>
+      <div className="adm-fin-heroi">
+        <div className="adm-fin-heroi__principal">
+          <span>Renovações automáticas no cartão</span>
+          <strong>{real(d.valorRecorrente)}</strong>
+          <p><b>{plural(d.recorrentes.length, 'cartão renovando', 'cartões renovando')}</b> sozinho(s), somando o valor de cada plano. Equivale a <b>{real(d.mrr)} por mês</b>.</p>
+        </div>
+        <div className="adm-fin-receber">
+          {d.aReceber.map((x, i) => { const pix = previsao.pix[i]; return <div className="adm-kpi" key={x.meses}>
+            <span>{x.meses === 1 ? 'Próximo mês' : `Próximos ${x.meses} meses`}</span>
+            <strong>{real(x.valor + pix.valor)}</strong>
+            <small><i className="adm-serie-cartao" aria-hidden="true" />Cartão <b>{real(x.valor)}</b> <span>· {plural(x.cobrancas, 'renovação', 'renovações')}</span></small>
+            <small><i className="adm-serie-pix-estimado" aria-hidden="true" />Pix <b>~{real(pix.valor)}</b> <span>· ~{plural(Math.round(pix.renovacoes), 'recompra', 'recompras')}</span></small>
+          </div> })}
+        </div>
+      </div>
+      <div className="adm-fin-pix" role="group" aria-labelledby="adm-pix-titulo">
+        <div className="adm-fin-pix__texto">
+          <strong id="adm-pix-titulo">E se quem pagou Pix comprar de novo?</strong>
+          <p>O Pix não renova sozinho, mas muita gente recompra quando o acesso acaba. Para {plural(previsao.pessoas, 'pessoa', 'pessoas')} com Pix vigente, conta {pctPix}% do plano no dia em que o acesso termina; quem recompra pode recomprar de novo no fim do plano seguinte ({pctPix}% de {pctPix}%, e assim por diante). Quem também tem cartão renovando fica só no cartão.</p>
+          <small>{pixObservado.encerrados === 0
+            ? 'Ainda não há Pix encerrado há mais de 30 dias para medir a taxa real; a suposição começa em 60%.'
+            : `Na prática: ${pixObservado.renovados} de ${pixObservado.encerrados} Pix já encerrados (${Math.round((pixObservado.taxa ?? 0) * 100)}%) foram renovados até 30 dias depois do fim, no Pix ou no cartão${pixObservado.encerrados < MINIMO_PARA_OBSERVADA ? '; amostra pequena, por isso a suposição começa em 60%' : ''}.`}</small>
+        </div>
+        <div className="adm-fin-pix__controle">
+          <input type="range" min={0} max={100} step={1} value={pctPix} aria-label="Porcentagem de quem pagou Pix e recompra" aria-valuetext={`${pctPix}% recompram`} onChange={e => escolherTaxa(Number(e.target.value) / 100)} />
+          <output aria-live="polite">{pctPix}%</output>
+          <div className="adm-fin-pix__atalhos">
+            {pixObservado.taxa !== null && <button type="button" aria-pressed={Math.abs(taxaPix - Math.round(pixObservado.taxa * 100) / 100) < 0.001} onClick={() => escolherTaxa(Math.round(pixObservado.taxa! * 100) / 100)}>Real ({Math.round(pixObservado.taxa * 100)}%)</button>}
+            {[0.3, 0.5, 0.7, 0.9].map(t => <button type="button" key={t} aria-pressed={Math.abs(taxaPix - t) < 0.001} onClick={() => escolherTaxa(t)}>{t === 0.3 ? 'Pessimista' : t === 0.5 ? 'Metade' : t === 0.7 ? 'Otimista' : 'Quase todos'} ({Math.round(t * 100)}%)</button>)}
+          </div>
+        </div>
+      </div>
+      <GraficoColunasEmpilhadas titulo="Previsão mês a mês" subtitulo={`próximos 12 meses; cartão se ninguém cancelar, Pix se ${pctPix}% recomprarem. Assinaturas novas entram por cima`}
+        pontos={previsao.pontos} series={SERIES_PREVISAO} formato={real} previsto />
+      <details className="adm-grafico__tabela"><summary>Ver os {plural(d.recorrentes.length, 'cartão que renova', 'cartões que renovam')} sozinho(s)</summary>
+        {d.recorrentes.length === 0 ? <p className="adm-vazio">Nenhum cartão renovando sozinho agora.</p> :
+          <div className="adm-tabela-rolagem" role="region" aria-label="Cartões que renovam sozinhos" tabIndex={0}><table className="tabela adm-tabela">
+            <thead><tr><th scope="col">Assinante</th><th scope="col">Plano</th><th scope="col">Valor do plano</th><th scope="col">Por mês</th><th scope="col">Próxima renovação</th></tr></thead>
+            <tbody>{d.recorrentes.map((x, i) => <tr key={`${x.assinatura.id_usuario}-${i}`}>
+              <td>{x.assinatura.nome || x.assinatura.usuario || x.assinatura.id_usuario.slice(0, 8)}</td><td>{x.plano}</td>
+              <td className="numerico">{real(x.valor)}</td><td className="numerico">{real(x.mensal)}</td>
+              <td>{x.proxima ? new Date(x.proxima).toLocaleDateString('pt-BR') : 'sem data'}</td>
+            </tr>)}</tbody>
+          </table></div>}
+      </details>
+    </section>
+
+    {/* 3. Histórico */}
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-entrou">
-      <h2 id="adm-titulo-entrou" className="adm-fin-rotulo">O que já entrou</h2>
+      <div><p className="adm-fin-rotulo">Histórico</p><h2 id="adm-titulo-entrou">O que já entrou</h2></div>
       <div className="adm-kpis">
         <div className="adm-kpi adm-kpi--destaque adm-kpi--dinheiro"><span>Total recebido</span><strong>{real(d.total)}</strong><small>{d.primeira ? `desde ${d.primeira.toLocaleDateString('pt-BR')}` : 'nenhuma cobrança ainda'}</small></div>
-        <div className="adm-kpi"><span>Neste mês</span><strong>{real(d.esteMes)}</strong><small>{variacao === null ? 'sem base no mês passado' : `${variacao >= 0 ? '+' : ''}${variacao}% sobre ${real(d.mesPassado)} do mês passado`}</small></div>
         <div className="adm-kpi"><span>Média por mês</span><strong>{real(d.mediaMensal)}</strong><small>desde a primeira cobrança</small></div>
-        <div className="adm-kpi"><span>Ticket médio</span><strong>{real(d.ticket)}</strong><small>por cobrança paga · {real(d.porPagante)} por pagante</small></div>
+        <div className="adm-kpi"><span>Ticket médio</span><strong>{real(d.ticket)}</strong><small>por cobrança paga</small></div>
+        <div className="adm-kpi"><span>Por pagante</span><strong>{real(d.porPagante)}</strong><small>{plural(d.pagantes, 'pessoa já pagou', 'pessoas já pagaram')}</small></div>
       </div>
       <GraficoColunasEmpilhadas titulo="Receita por mês" subtitulo="últimos 12 meses, cartão e Pix" pontos={d.serie} series={SERIES} formato={real} />
       <div className="adm-duas">
         <section className="empilha" aria-labelledby="adm-titulo-meio">
-          <div><h3 id="adm-titulo-meio">Por meio de pagamento</h3><p>Total recebido desde o começo.</p></div>
+          <div><h3 id="adm-titulo-meio">Por meio de pagamento</h3><p className="adm-nota">Total recebido desde o começo.</p></div>
           <BarraComposicao formato={real} partes={[
-            { nome: 'Cartão', valor: d.receitaCartao, classe: 'adm-serie-cartao', detalhe: `${d.renovacoes} renovação(ões) automática(s), ${real(d.receitaRenovacoes)}` },
-            { nome: 'Pix', valor: d.receitaPix, classe: 'adm-serie-pix', detalhe: `${d.pagasPix} compra(s) avulsa(s)` },
+            { nome: 'Cartão', valor: d.receitaCartao, classe: 'adm-serie-cartao', detalhe: `${plural(d.renovacoes, 'renovação automática', 'renovações automáticas')}, ${real(d.receitaRenovacoes)}` },
+            { nome: 'Pix', valor: d.receitaPix, classe: 'adm-serie-pix', detalhe: plural(d.pagasPix, 'compra avulsa', 'compras avulsas') },
           ]} />
         </section>
         <section className="empilha" aria-labelledby="adm-titulo-planos-receita">
-          <div><h3 id="adm-titulo-planos-receita">Por plano</h3><p>Total recebido desde o começo.</p></div>
-          <BarrasHorizontais formato={v => real(v)} itens={d.receitaPorPlano.map(p => ({ rotulo: p.nome, valor: p.valor, detalhe: `${p.cobrancas} cobrança(s)${d.total ? ` · ${porcentagem(p.valor, d.total)}% do total` : ''}` }))} />
+          <div><h3 id="adm-titulo-planos-receita">Por plano</h3><p className="adm-nota">Total recebido desde o começo.</p></div>
+          <BarrasHorizontais formato={v => real(v)} itens={d.receitaPorPlano.map(p => ({ rotulo: p.nome, valor: p.valor, detalhe: `${plural(p.cobrancas, 'cobrança', 'cobranças')}${d.total ? ` · ${porcentagem(p.valor, d.total)}% do total` : ''}` }))} />
         </section>
       </div>
     </section>
 
-    {/* 3. A base agora */}
+    {/* 4. Base de assinantes */}
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-base">
-      <h2 id="adm-titulo-base" className="adm-fin-rotulo">Assinantes agora</h2>
+      <div><p className="adm-fin-rotulo">Agora</p><h2 id="adm-titulo-base">Base de assinantes</h2></div>
       <div className="adm-kpis">
-        <div className="adm-kpi adm-kpi--destaque"><span>Com acesso pago</span><strong>{d.comAcesso}</strong><small>{d.renovamAgora} renovam · {d.pixComAcesso} no Pix · {d.cartaoSemRenovar} cartão sem renovar</small></div>
+        <div className="adm-kpi adm-kpi--destaque"><span>Com acesso pago</span><strong>{d.comAcesso}</strong><small>{d.renovamAgora} renovam · {d.pixComAcesso} no Pix · {d.cartaoSemRenovar} cancelado(s) com acesso</small></div>
         <div className="adm-kpi"><span>Renovações em 30 dias</span><strong>{d.renovacoes30}</strong><small>{real(d.valorRenovacoes30)} previstos, se ninguém cancelar</small></div>
-        <div className="adm-kpi"><span>Pix que terminam em 30 dias</span><strong>{d.pixAcabando30}</strong><small>bons candidatos a um lembrete de renovação</small></div>
+        <div className="adm-kpi"><span>Pix que vencem em 30 dias</span><strong>{d.pixAcabando30}</strong><small>acesso termina; não renova sozinho</small></div>
         <div className="adm-kpi"><span>Conversão</span><strong>{conversao === null ? '—' : `${conversao}%`}</strong><small>{d.pagantes} de {usuarios ?? '—'} cadastrados já pagaram</small></div>
       </div>
       <div className="adm-duas">
         <section className="empilha" aria-labelledby="adm-titulo-composicao-base">
-          <div><h3 id="adm-titulo-composicao-base">Como pagam</h3><p>Quem tem acesso pago agora.</p></div>
+          <div><h3 id="adm-titulo-composicao-base">Como pagam</h3><p className="adm-nota">Quem tem acesso pago agora.</p></div>
           <BarraComposicao partes={[
             { nome: 'Cartão que renova', valor: d.renovamAgora, classe: 'adm-serie-cartao' },
-            { nome: 'Pix', valor: d.pixComAcesso, classe: 'adm-serie-pix', detalhe: d.cartaoSemRenovar ? `${d.cartaoSemRenovar} cartão sem renovar fora da barra` : undefined },
+            { nome: 'Pix', valor: d.pixComAcesso, classe: 'adm-serie-pix', detalhe: d.cartaoSemRenovar ? `${d.cartaoSemRenovar} cartão(ões) cancelado(s) com acesso ficam fora da barra` : undefined },
           ]} />
         </section>
         <section className="empilha" aria-labelledby="adm-titulo-planos-base">
-          <div><h3 id="adm-titulo-planos-base">Por plano</h3><p>Equivalente por mês do que renova sozinho.</p></div>
-          <BarrasHorizontais formato={v => real(v)} itens={d.porPlano.map(p => ({ rotulo: `${p.nome} · ${p.vigentes} com acesso`, valor: p.mensal, detalhe: `${real(p.total)} a cada ${p.meses === 1 ? 'mês' : `${p.meses} meses`} · ${p.renovam} renovam${p.pix ? ` · ${p.pix} no Pix` : ''}${p.cartaoSemRenovar > 0 ? ` · ${p.cartaoSemRenovar} cartão sem renovar` : ''}` }))} />
+          <div><h3 id="adm-titulo-planos-base">Por plano</h3><p className="adm-nota">Receita recorrente por mês de cada plano (só o que renova sozinho).</p></div>
+          <BarrasHorizontais formato={v => real(v)} itens={d.porPlano.map(p => ({ rotulo: `${p.nome} · ${p.vigentes} com acesso`, valor: p.mensal, detalhe: `${real(p.total)} a cada ${p.meses === 1 ? 'mês' : `${p.meses} meses`} · ${p.renovam} renovam${p.pix ? ` · ${p.pix} no Pix` : ''}${p.cartaoSemRenovar > 0 ? ` · ${p.cartaoSemRenovar} cancelado(s) com acesso` : ''}` }))} />
         </section>
       </div>
     </section>
 
-    {/* 4. Movimento */}
+    {/* 5. Mês a mês */}
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-mensal">
-      <p className="adm-fin-rotulo">Movimento</p>
+      <div><p className="adm-fin-rotulo">Movimento</p><h2 id="adm-titulo-mensal">Mês a mês</h2><p className="adm-nota">Assinaturas novas, renovações automáticas, cancelamentos, reembolsos e Pix encerrados em cada mês.</p></div>
       <div className="adm-kpis">
-        <div className="adm-kpi"><span>Assinaturas novas no mês</span><strong>{(atual?.novasCartao ?? 0) + (atual?.novasPix ?? 0)}</strong><small>{atual?.novasCartao ?? 0} no cartão · {atual?.novasPix ?? 0} no Pix{anterior ? ` · ${anterior.novasCartao + anterior.novasPix} no mês passado` : ''}</small></div>
-        <div className="adm-kpi"><span>Renovações automáticas no mês</span><strong>{atual?.renovacoes ?? 0}</strong><small>{real(atual?.receitaRenovacoes ?? 0)} renovados</small></div>
-        <div className="adm-kpi"><span>Cancelamentos no mês</span><strong>{atual?.cancelamentos ?? 0}</strong><small>renovação do cartão desligada · {atual?.reembolsos ?? 0} reembolso(s)</small></div>
-        <div className="adm-kpi"><span>Cancelamento acumulado</span><strong>{d.pagasCartao ? `${porcentagem(d.cancelaram, d.pagasCartao)}%` : '—'}</strong><small>{d.cancelaram} de {d.pagasCartao} no cartão desligaram a renovação · {d.reembolsos} reembolso(s)</small></div>
+        <div className="adm-kpi"><span>Renovações automáticas em {mesAtual}</span><strong>{atual?.renovacoes ?? 0}</strong><small>{real(atual?.receitaRenovacoes ?? 0)} renovados</small></div>
+        <div className="adm-kpi"><span>Reembolsos em {mesAtual}</span><strong>{atual?.reembolsos ?? 0}</strong><small>{real(atual?.valorReembolsado ?? 0)} devolvidos</small></div>
+        <div className="adm-kpi"><span>Pix encerrados em {mesAtual}</span><strong>{atual?.pixEncerrados ?? 0}</strong><small>acesso terminou sem renovar (normal no Pix)</small></div>
+        <div className="adm-kpi"><span>Cancelamento acumulado</span><strong>{d.pagasCartao ? `${porcentagem(d.cancelaram, d.pagasCartao)}%` : '—'}</strong><small>{d.cancelaram} de {d.pagasCartao} no cartão desligaram a renovação · {plural(d.reembolsos, 'reembolso', 'reembolsos')}</small></div>
       </div>
-      <div><h2 id="adm-titulo-mensal">Mês a mês</h2><p>Assinaturas novas, renovações automáticas, cancelamentos, reembolsos e Pix encerrados em cada mês.</p></div>
       <TabelaMensal meses={meses} />
+    </section>
+
+    {/* 6. Ações sensíveis */}
+    <section className="empilha adm-secao adm-fin-acoes" aria-labelledby="adm-titulo-acoes">
+      <div><p className="adm-fin-rotulo">Ações sensíveis</p><h2 id="adm-titulo-acoes">Reembolso, cortesia, cancelamento e avisos</h2>
+        <p className="adm-nota">Tudo o que mexe em dinheiro ou em acesso fica aqui reunido. Cada ação pede confirmação no lugar onde acontece, e nenhuma muda preço, plano ou regra de pagamento.</p></div>
+      <ul className="adm-acoes-lista">
+        <li className={errosPagamento ? 'adm-acao adm-acao--alerta' : 'adm-acao'}>
+          <span className="adm-acao__icone" aria-hidden="true"><Icone nome="reiniciar" tamanho={18} /></span>
+          <div><strong>Reprocessar aviso do Mercado Pago</strong><p>{errosPagamento ? `${plural(errosPagamento, 'aviso precisa', 'avisos precisam')} de atenção.` : 'Nenhum aviso com problema agora.'} O site consulta o Mercado Pago de novo e aplica o que ele disser; nada é cobrado nem devolvido.</p></div>
+          {irPara && <button type="button" className="botao botao--fantasma" onClick={() => irPara('pagamentos')}>Abrir avisos</button>}
+        </li>
+        <li className="adm-acao">
+          <span className="adm-acao__icone" aria-hidden="true"><Icone nome="estrela" tamanho={18} /></span>
+          <div><strong>Conceder ou remover cortesia</strong><p>Acesso sem pagar, para preceptores, parceiros e sorteios. Fica na ficha da pessoa (Pessoas › Usuários › ficha › Carta e ações), com confirmação.</p></div>
+          {irPara && <button type="button" className="botao botao--fantasma" onClick={() => irPara('usuarios')}>Abrir pessoas</button>}
+        </li>
+        <li className="adm-acao">
+          <span className="adm-acao__icone" aria-hidden="true"><Icone nome="cadeado" tamanho={18} /></span>
+          <div><strong>Reembolso e cancelamento</strong><p>A própria pessoa pede em Minha conta › Assinatura (reembolso integral em até 7 dias da cobrança; o cancelamento desliga a renovação e o acesso vale até o fim do período). O site só marca "Reembolsada" depois que o Mercado Pago confirma. Fora disso, faça direto no Mercado Pago.</p></div>
+          <a className="botao botao--fantasma" href="https://www.mercadopago.com.br/activities" target="_blank" rel="noopener noreferrer">Abrir o Mercado Pago</a>
+        </li>
+      </ul>
     </section>
   </div>
 }

@@ -53,3 +53,18 @@ export function textoPlanos(s: Pick<SinalUsuario, 'planos_ultima' | 'planos_veze
 export function indexarSinais(lista: SinalUsuario[] | null | undefined): Map<string, SinalUsuario> {
   return new Map((lista ?? []).map((s) => [s.id_usuario, s]))
 }
+
+/**
+ * Cor do cartão da pessoa no painel (Pessoas › Usuários e "Ao vivo"): administrador (azul),
+ * assinante (verde), quem não assina mas abriu a página de planos nos últimos 30 dias (amarelo)
+ * e o resto (branco). Administrador vem pelo papel da conta, nunca por nome.
+ */
+export type CategoriaPessoa = 'admin' | 'assinante' | 'planos' | 'comum'
+export const ROTULOS_CATEGORIA: Record<CategoriaPessoa, string> = {
+  assinante: 'Assinante', comum: 'Não assinante', planos: 'Viu os planos (30 dias)', admin: 'Administrador',
+}
+export function categoriaPessoa(u: { administrador?: boolean | null; plano_vigente?: string | null }, sinal?: Pick<SinalUsuario, 'planos_ultima' | 'planos_vezes'> | null, agora = Date.now()): CategoriaPessoa {
+  if (u.administrador) return 'admin'
+  if (u.plano_vigente) return 'assinante'
+  return viuPlanos(sinal, PLANOS_JANELA_DIAS, agora) ? 'planos' : 'comum'
+}

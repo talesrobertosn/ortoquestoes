@@ -8,7 +8,8 @@ import type { VistaConteudo } from './AdminConteudo'
  *
  * Hoje      · o que pede atenção agora
  * Pessoas   · usuários (com a ficha), cartas pessoais em lote e crescimento
- * Receita   · financeiro, assinaturas e pagamentos
+ * Receita   · financeiro (resumo e previsão), assinaturas, pagamentos recebidos (aba 'cobrancas')
+ *           e avisos de pagamento (aba 'pagamentos', endereço antigo mantido pelos e-mails de alerta)
  * Conteúdo  · relatos e avaliações, editor de questões, opiniões dos flashcards
  * Operações · lembretes e e-mails, simulados, ajustes do site
  */
@@ -16,7 +17,7 @@ export type Secao = 'hoje' | 'pessoas' | 'receita' | 'conteudo' | 'operacoes'
 export type Aba =
   | 'hoje'
   | 'usuarios' | 'cartas' | 'crescimento'
-  | 'financeiro' | 'assinaturas' | 'pagamentos'
+  | 'financeiro' | 'assinaturas' | 'cobrancas' | 'pagamentos'
   | 'conteudo' | 'questoes' | 'opinioes'
   | 'lembretes' | 'simulados' | 'ajustes'
 
@@ -25,7 +26,7 @@ export interface DefinicaoSecao { id: Secao; rotulo: string; icone: NomeIcone; a
 export const SECOES: DefinicaoSecao[] = [
   { id: 'hoje', rotulo: 'Hoje', icone: 'calendario', abas: [{ id: 'hoje', rotulo: 'Hoje' }] },
   { id: 'pessoas', rotulo: 'Pessoas', icone: 'grupo', abas: [{ id: 'usuarios', rotulo: 'Usuários' }, { id: 'cartas', rotulo: 'Cartas' }, { id: 'crescimento', rotulo: 'Crescimento' }] },
-  { id: 'receita', rotulo: 'Receita', icone: 'grafico', abas: [{ id: 'financeiro', rotulo: 'Financeiro' }, { id: 'assinaturas', rotulo: 'Assinaturas' }, { id: 'pagamentos', rotulo: 'Pagamentos' }] },
+  { id: 'receita', rotulo: 'Receita', icone: 'grafico', abas: [{ id: 'financeiro', rotulo: 'Financeiro' }, { id: 'assinaturas', rotulo: 'Assinaturas' }, { id: 'cobrancas', rotulo: 'Pagamentos' }, { id: 'pagamentos', rotulo: 'Avisos de pagamento' }] },
   { id: 'conteudo', rotulo: 'Conteúdo', icone: 'livro', abas: [{ id: 'conteudo', rotulo: 'Para revisar' }, { id: 'questoes', rotulo: 'Editar questões' }, { id: 'opinioes', rotulo: 'Opiniões dos flashcards' }] },
   { id: 'operacoes', rotulo: 'Operações', icone: 'filtro', abas: [{ id: 'lembretes', rotulo: 'Lembretes e e-mails' }, { id: 'simulados', rotulo: 'Simulados' }, { id: 'ajustes', rotulo: 'Ajustes' }] },
 ]
@@ -48,6 +49,7 @@ const LEGADO: Record<string, Aba> = {
   configuracoes: 'ajustes', // "Ajustes" (os simulados saíram para Operações › Simulados)
   avaliacoes: 'conteudo', relatos: 'conteudo', // dos e-mails de alerta; a vista vai junto
   pessoas: 'usuarios', receita: 'financeiro', operacoes: 'lembretes',
+  avisos: 'pagamentos', // a aba antiga "Pagamentos" (avisos do processador) virou "Avisos de pagamento"; o endereço continua ?aba=pagamentos
 }
 
 /**

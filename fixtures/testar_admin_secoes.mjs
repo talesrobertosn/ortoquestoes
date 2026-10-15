@@ -27,13 +27,18 @@ try {
   assert.equal(m.secaoDe('simulados'), 'operacoes')
   assert.equal(m.secaoDe('crescimento'), 'pessoas')
   assert.equal(m.secaoDe('pagamentos'), 'receita')
+  // Revisão do Financeiro: "Pagamentos" (aba cobrancas) é o dinheiro recebido; "Avisos de pagamento" mantém o endereço ?aba=pagamentos dos e-mails.
+  assert.equal(m.secaoDe('cobrancas'), 'receita')
+  assert.deepEqual(m.definicaoDe('receita').abas.map(a => a.id), ['financeiro', 'assinaturas', 'cobrancas', 'pagamentos'])
+  assert.equal(m.definicaoDe('receita').abas.find(a => a.id === 'pagamentos').rotulo, 'Avisos de pagamento')
+  assert.equal(m.definicaoDe('receita').abas.find(a => a.id === 'cobrancas').rotulo, 'Pagamentos')
   assert.equal(m.secaoDe('questoes'), 'conteudo')
 
   // Endereços antigos → parte nova.
   const mapa = {
     '': 'hoje', 'aba=geral': 'hoje', 'aba=usuarios': 'usuarios', 'aba=conteudo': 'conteudo', 'aba=questoes': 'questoes',
     'aba=opinioes': 'opinioes', 'aba=crescimento': 'crescimento', 'aba=financeiro': 'financeiro', 'aba=assinaturas': 'assinaturas',
-    'aba=pagamentos': 'pagamentos', 'aba=configuracoes': 'ajustes', 'aba=avaliacoes': 'conteudo', 'aba=relatos': 'conteudo',
+    'aba=pagamentos': 'pagamentos', 'aba=cobrancas': 'cobrancas', 'aba=avisos': 'pagamentos', 'aba=configuracoes': 'ajustes', 'aba=avaliacoes': 'conteudo', 'aba=relatos': 'conteudo',
     'aba=receita': 'financeiro', 'aba=pessoas': 'usuarios', 'aba=operacoes': 'lembretes', 'aba=qualquer-coisa': 'hoje',
   }
   for (const [consulta, aba] of Object.entries(mapa)) assert.equal(ler(consulta).aba, aba, consulta)

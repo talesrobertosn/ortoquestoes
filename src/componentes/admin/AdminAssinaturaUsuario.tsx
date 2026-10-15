@@ -3,7 +3,8 @@ import { chamarRpc } from '../../servicos/supabase'
 import { real } from '../../dados/planos'
 import { confirmar } from '../Confirmar'
 import { Icone } from '../Icone'
-import { PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, data, dataHora, nomeErro } from './formatos'
+import { STATUS_EVENTO, TIPOS_EVENTO, data, dataHora, nomeErro } from './formatos'
+import { STATUS_PIX, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from './rotulos'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, linkDoEvento, linkMercadoPago, reprocessarEvento, type EventoPagamento } from './pagamentos'
 
 /** Resposta de assinatura_usuario_admin (parte 23). */
@@ -19,12 +20,7 @@ interface AssinaturaDoUsuario {
   conta_teste: boolean
 }
 
-const STATUS_PIX: Record<string, string> = {
-  criando: 'Gerando o código', pending: 'Aguardando pagamento', approved: 'Pago', cancelled: 'Cancelado',
-  rejected: 'Recusado', refunded: 'Reembolsado', charged_back: 'Contestado (estorno)', expired: 'Expirou sem pagar',
-}
-const vigente = (a: AssinaturaDoUsuario['assinaturas'][number]) =>
-  (a.status === 'ativa' || (a.status === 'cancelada' && a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > new Date())
+const TOM_SELO = { ok: 'adm-selo--ok', aviso: 'adm-selo--aviso', ruim: 'adm-selo--ruim', neutro: 'adm-selo--neutro' } as const
 
 function LinkMP({ id, rotulo = 'Abrir no Mercado Pago' }: { id: string | null | undefined; rotulo?: string }) {
   const url = linkMercadoPago(id)
@@ -74,27 +70,32 @@ export function AdminAssinaturaUsuario({ idUsuario, email }: { idUsuario: string
     <section className="empilha">
       <h3 className="adm-subtitulo">Assinaturas <span className="adm-contagem">{assinaturas.length}</span></h3>
       {assinaturas.length === 0 ? <p className="adm-vazio">Nenhuma assinatura{email ? ` para ${email}` : ''}. Se a pessoa diz que pagou, confira os pedidos Pix abaixo e o Mercado Pago.</p> : <ul className="adm-cartoes">
-        {assinaturas.map(a => <li key={a.id} className={'adm-cartao' + (vigente(a) ? ' adm-cartao--ok' : a.status === 'falha_pagamento' ? ' adm-cartao--ruim' : '')}>
+        {assinaturas.map(a => {
+          const base = { ...a, id_usuario: idUsuario }
+          const s = situacaoAssinatura(base), proxima = proximaData(base)
+          return <li key={a.id} className={`adm-cartao adm-cartao--${s.tom}`}>
           <div className="adm-cartao__topo">
-            <div><strong>{PLANOS[a.plano] ?? a.plano}</strong>{a.valor !== null && <span className="adm-usuario__email">{real(Number(a.valor))} {a.meio === 'pix' ? 'pagos no Pix' : 'contratados no cartão'}</span>}</div>
-            <span><span className="adm-selo adm-selo--neutro">{a.meio === 'pix' ? 'Pix' : 'Cartão'}</span> <span className={`adm-selo adm-estado--${a.status}`}>{STATUS_ASSINATURA[a.status] ?? a.status}</span></span>
+            <div><strong>{rotuloPlano(a.plano)}</strong>{a.valor !== null && <span className="adm-usuario__email">{real(Number(a.valor))} {a.meio === 'pix' ? 'pagos no Pix' : 'contratados no cartão'}</span>}</div>
+            <span className="adm-cartao__selos"><span className={'adm-selo adm-selo--meio adm-selo--' + a.meio}>{rotuloMeio(a.meio)}</span> <span className={`adm-selo ${TOM_SELO[s.tom]}`}>{s.rotulo}</span></span>
           </div>
           <dl className="adm-cartao__dados">
             <div><dt>Criada em</dt><dd>{data(a.criada_em)}</dd></div>
             <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em ? dataHora(a.ultima_cobranca_em) : '—'}</dd></div>
-            <div><dt>{a.cancelar_ao_fim || a.status !== 'ativa' ? 'Acesso até' : 'Próxima cobrança'}</dt><dd>{data(a.fim_periodo)}</dd></div>
+            <div><dt>{proxima.rotulo}</dt><dd>{data(proxima.valor)}</dd></div>
             {a.cancelada_em && <div><dt>Cancelou em</dt><dd>{data(a.cancelada_em)}</dd></div>}
           </dl>
+          {s.detalhe && <small className="adm-ajuda">{s.detalhe}</small>}
           <small className="adm-evento__codigo">{a.meio === 'cartao' ? `assinatura ${a.id_externo ?? '—'}` : `pedido ${a.id_externo?.slice(4) ?? '—'}`}{a.ultima_cobranca_id ? ` · pagamento ${a.ultima_cobranca_id}` : ''} · atualizada {dataHora(a.atualizada_em)}</small>
           <LinkMP id={a.ultima_cobranca_id} rotulo="Ver o último pagamento no Mercado Pago" />
-        </li>)}
+        </li>
+        })}
       </ul>}
     </section>
 
     {pix.length > 0 && <section className="empilha">
       <h3 className="adm-subtitulo">Pedidos Pix <span className="adm-contagem">{pix.length}</span>{pixAbertos.length > 0 && <small className="adm-nota"> ({pixAbertos.length} sem assinatura: não pagos ou ainda abertos)</small>}</h3>
       <ul className="adm-mini">{pix.map(p => <li key={p.id}>
-        <span className="adm-mini__nome">{PLANOS[p.plano] ?? p.plano} · {real(Number(p.valor))}<small>criado {dataHora(p.criada_em)}{p.pagamento_id ? ` · pagamento ${p.pagamento_id}` : ''}{p.status === 'pending' ? ` · expira ${dataHora(p.expira_em)}` : ''}</small>{p.pagamento_id && <LinkMP id={p.pagamento_id} />}</span>
+        <span className="adm-mini__nome">{rotuloPlano(p.plano)} · {real(Number(p.valor))}<small>criado {dataHora(p.criada_em)}{p.pagamento_id ? ` · pagamento ${p.pagamento_id}` : ''}{p.status === 'pending' ? ` · expira ${dataHora(p.expira_em)}` : ''}</small>{p.pagamento_id && <LinkMP id={p.pagamento_id} />}</span>
         <span className={'adm-selo ' + (p.status === 'approved' ? 'adm-selo--ok' : ['refunded', 'charged_back', 'rejected'].includes(p.status) ? 'adm-selo--ruim' : 'adm-selo--neutro')}>{STATUS_PIX[p.status] ?? p.status}</span>
       </li>)}</ul>
     </section>}
