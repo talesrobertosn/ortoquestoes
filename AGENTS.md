@@ -86,3 +86,13 @@ histórico pessoal, entrada sem Torre e cronograma próprio está em [docs/flash
 
 Antes de mexer no cronograma (`#/cronograma`), leia [docs/cronograma/PLANO.md](docs/cronograma/PLANO.md):
 princípios de apresentação ("onde você está, hoje, amanhã, esta semana, depois"), protótipo, etapas com checklist.
+
+## Reforma de consistência do site (desde 15/10/2026)
+
+Antes de mexer em qualquer página do site (início, treinar, sessão, cronograma, desempenho, planos, conta,
+ranking, flashcards, painel do administrador), leia
+[docs/auditoria/AUDITORIA-GERAL-2026-10-15.md](docs/auditoria/AUDITORIA-GERAL-2026-10-15.md): diagnóstico
+completo, regras para os agentes (seção 2), direção de arte (seção 5) e o backlog priorizado em trilhas
+paralelas (seção 6). Pegue uma tarefa pelo número (ex.: `T2.3`), um PR por tarefa, e marque `[x]` com o PR
+ao concluir. Capturas de referência em `docs/auditoria/capturas-2026-10-15/` e o script
+`docs/auditoria/capturar-paginas.mjs` para repetir a medição.
