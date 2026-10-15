@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
 import { dataHora, erroDoPainel, motivoFalhaEmail } from './formatos'
 import { AdminRecursosPagos } from './AdminRecursosPagos'
+import { confirmar } from '../Confirmar'
 
 interface ConfigComercial { paywall_ativo: boolean; limite_diario_gratis: number; pagamentos_ativos: boolean; atualizado_em: string }
 interface Aviso { id: number; texto: string; link: string | null; rotulo_link: string | null; tom: 'info' | 'destaque' | 'alerta'; ativo: boolean; fim: string | null; criado_em: string }
@@ -43,7 +44,7 @@ export function AdminConfiguracoes() {
     if (rascunho.limite_diario_gratis !== comercial.limite_diario_gratis) mudancas.push(`mudar o limite para ${rascunho.limite_diario_gratis} questões por dia`)
     if (rascunho.pagamentos_ativos !== comercial.pagamentos_ativos) mudancas.push(rascunho.pagamentos_ativos ? 'LIGAR os pagamentos' : 'DESLIGAR os pagamentos')
     if (!mudancas.length) return
-    if (!window.confirm(`Confirmar? Isto vale na hora para todos os usuários:\n\n- ${mudancas.join('\n- ')}`)) return
+    if (!(await confirmar({ titulo: 'Vale na hora para todos os usuários', texto: `- ${mudancas.join('\n- ')}`, sim: 'Salvar e aplicar' }))) return
     try {
       await chamarRpc('definir_config_comercial_admin', { p_paywall_ativo: rascunho.paywall_ativo, p_limite: rascunho.limite_diario_gratis, p_pagamentos_ativos: rascunho.pagamentos_ativos })
       definirMensagem('Configuração comercial salva.'); await carregar()

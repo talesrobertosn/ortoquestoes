@@ -8,6 +8,7 @@ import { chamarRpc, enviarImagemQuestao } from '../../servicos/supabase'
 import { TextoEditorial } from '../TextoEditorial'
 import { href } from '../../util/rotas'
 import { dataHora, erroDoPainel } from './formatos'
+import { confirmar } from '../Confirmar'
 
 const MIGRACAO = '202610050100_editor_questoes.sql'
 const LETRAS: Letra[] = ['A', 'B', 'C', 'D', 'E']
@@ -280,7 +281,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   }
 
   async function desfazer() {
-    if (!id || !window.confirm('Desfazer todas as edições desta questão? Ela volta a ser exatamente a do acervo.')) return
+    if (!id || !(await confirmar({ titulo: 'Desfazer todas as edições desta questão?', texto: 'Ela volta a ser exatamente a do acervo.', sim: 'Desfazer edições' }))) return
     try {
       await chamarRpc('remover_edicao_questao', { p_id: id })
       await atualizarListaEditadas()
@@ -300,8 +301,8 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
    */
   async function mudarPresenca(acao: 'esconder' | 'apagar' | 'mostrar') {
     if (!id) return
-    if (acao === 'esconder' && !window.confirm(`Esconder ${id} do site? Ela sai do treino, dos simulados e das contagens, e o link deixa de abrir. Dá para mostrar de novo depois.`)) return
-    if (acao === 'apagar' && !window.confirm(`Apagar ${id}? Ela some do site agora e sai dos arquivos do acervo na próxima limpeza. Até lá, ainda dá para desfazer aqui.`)) return
+    if (acao === 'esconder' && !(await confirmar({ titulo: `Esconder ${id} do site?`, texto: 'Ela sai do treino, dos simulados e das contagens, e o link deixa de abrir. Dá para mostrar de novo depois.', sim: 'Esconder' }))) return
+    if (acao === 'apagar' && !(await confirmar({ titulo: `Apagar ${id}?`, texto: 'Ela some do site agora e sai dos arquivos do acervo na próxima limpeza. Até lá, ainda dá para desfazer aqui.', sim: 'Apagar' }))) return
     const { oculta: _o, apagada: _a, ...resto } = salva ?? {}
     const dados: EdicaoQuestao = acao === 'mostrar' ? resto : { ...resto, oculta: true, ...(acao === 'apagar' ? { apagada: true } : {}) }
     definirSalvando(true); definirErro('')

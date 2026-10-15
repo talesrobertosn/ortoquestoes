@@ -7,6 +7,7 @@ import { Icone } from '../Icone'
 import { BarrasHorizontais, GraficoColunas } from './AdminGraficos'
 import { OQueVe, type LinhaUsuario } from './AdminUsuarios'
 import { href } from '../../util/rotas'
+import { confirmar, pedirTexto } from '../Confirmar'
 import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, haQuantoTempo, motivoFalhaEmail, porcentagem, rotuloOrigem, rotuloPagina } from './formatos'
 import { escreverRecado } from './recado'
 import { MODELOS, gravarModelosSalvos, lerModelosSalvos, modeloSugerido, preencher, type DadosModelo, type ModeloSalvo } from './modelosEmail'
@@ -94,12 +95,27 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   // precisa rodar uma vez só, senão guardaria "hidden" como rolagem original.
   const fechar = useRef(aoFechar)
   fechar.current = aoFechar
+  // Diálogo de verdade: o foco entra ao abrir, não escapa com Tab para a
+  // página atrás e volta para quem abriu (o cartão da pessoa) ao fechar.
+  const painel = useRef<HTMLDivElement>(null)
   useEffect(() => {
-    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') fechar.current() }
+    const anterior = document.activeElement as HTMLElement | null
+    painel.current?.querySelector<HTMLElement>('.adm-ficha__fechar')?.focus()
+    const tecla = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { fechar.current(); return }
+      // Confirmação aberta por cima (JanelaCentral) cuida do próprio foco.
+      if (e.key !== 'Tab' || !painel.current || document.querySelector('.jc')) return
+      const focaveis = [...painel.current.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), iframe, [tabindex]:not([tabindex="-1"])')].filter(el => el.offsetParent !== null)
+      if (!focaveis.length) return
+      const primeiro = focaveis[0], ultimo = focaveis[focaveis.length - 1]
+      const dentro = painel.current.contains(document.activeElement)
+      if (e.shiftKey && (!dentro || document.activeElement === primeiro)) { e.preventDefault(); ultimo.focus() }
+      else if (!e.shiftKey && (!dentro || document.activeElement === ultimo)) { e.preventDefault(); primeiro.focus() }
+    }
     document.addEventListener('keydown', tecla)
     const rolagem = document.body.style.overflow
     document.body.style.overflow = 'hidden'
-    return () => { document.removeEventListener('keydown', tecla); document.body.style.overflow = rolagem }
+    return () => { document.removeEventListener('keydown', tecla); document.body.style.overflow = rolagem; anterior?.focus?.() }
   }, [])
 
   const porTema = useMemo(() => {
@@ -155,7 +171,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
 
   // No body: um ancestral com transform (animação de entrada da página) deslocava o position: fixed.
   return createPortal(<div className="adm-ficha" role="dialog" aria-modal="true" aria-labelledby="adm-ficha-nome" onClick={e => { if (e.target === e.currentTarget) aoFechar() }}>
-    <div className="adm-ficha__painel">
+    <div ref={painel} className="adm-ficha__painel">
       <header className="adm-ficha__cabeca">
         <div>
           <h2 id="adm-ficha-nome">{usuario.online && <span className="adm-online" aria-label="Online agora" />}{nome}</h2>
@@ -172,7 +188,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
             {detalhe?.perfil && !detalhe.perfil.confirmado && <span className="adm-selo adm-selo--ruim">E-mail não confirmado</span>}
           </div>
         </div>
-        <button type="button" className="botao-icone" onClick={aoFechar} aria-label="Fechar ficha"><Icone nome="fechar" tamanho={20} /></button>
+        <button type="button" className="botao-icone adm-ficha__fechar" onClick={aoFechar} aria-label="Fechar ficha"><Icone nome="fechar" tamanho={20} /></button>
       </header>
 
       {erro ? <p role="alert" className="adm-alerta">{erro}</p> : !detalhe ? <p role="status">Carregando…</p> : <div className="empilha adm-ficha__corpo">
@@ -262,14 +278,14 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
               </label>
               <div className="adm-modelos__atalhos">
                 {MODELOS.filter(m => m.id === sugerido).map(m => <button key={m.id} type="button" className="adm-chip adm-chip--sugerido" onClick={() => usarModelo(m.id)}><Icone nome="estrela" tamanho={14} /> Sugerido: {m.titulo}</button>)}
-                <button type="button" className="adm-chip" disabled={!recado.trim()} onClick={() => {
-                  const titulo = window.prompt('Nome do modelo (fica salvo neste navegador). Use {questoes}, {servico}, {dias} ou {prova} para preencher sozinho.')
+                <button type="button" className="adm-chip" disabled={!recado.trim()} onClick={async () => {
+                  const titulo = await pedirTexto({ titulo: 'Salvar como modelo', rotulo: 'Nome do modelo', texto: 'Fica salvo neste navegador. No texto, {questoes}, {servico}, {dias} ou {prova} se preenchem sozinhos.', sim: 'Salvar modelo', obrigatorio: true, maximo: 60 })
                   if (!titulo?.trim()) return
                   const lista = [...salvos, { id: `meu-${Date.now()}`, titulo: titulo.trim().slice(0, 60), texto: recado }]
                   definirSalvos(lista); gravarModelosSalvos(lista); definirAviso('Modelo salvo.')
                 }}><Icone nome="baixar" tamanho={14} /> Salvar como modelo</button>
-                {salvos.some(m => m.id === modeloEscolhido) && <button type="button" className="adm-chip" onClick={() => {
-                  if (!window.confirm('Apagar este modelo salvo?')) return
+                {salvos.some(m => m.id === modeloEscolhido) && <button type="button" className="adm-chip" onClick={async () => {
+                  if (!(await confirmar({ titulo: 'Apagar este modelo salvo?', texto: 'Some só da lista deste navegador; e-mails já enviados não mudam.', sim: 'Apagar modelo' }))) return
                   const lista = salvos.filter(m => m.id !== modeloEscolhido)
                   definirSalvos(lista); gravarModelosSalvos(lista); definirModeloEscolhido('')
                 }}><Icone nome="lixeira" tamanho={14} /> Apagar modelo</button>}
@@ -286,7 +302,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
             </div>
             <div className="linha">
               <button type="button" className="botao" disabled={ocupado} onClick={() => void acao('Prévia', async () => { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa', id_usuario: usuario.id_usuario, recado, formato }); definirPrevia(r.html) }, '')}>Ver prévia</button>
-              <button type="button" className="botao botao--principal" disabled={ocupado} onClick={() => { if (window.confirm(`Enviar o e-mail de parabéns (${formato === 'carta' ? 'carta pessoal' : 'cartão com emblema'}) para ${usuario.email}?`)) void acao('Envio', () => chamarFuncao('enviar-email', { acao: 'parabens', id_usuario: usuario.id_usuario, recado, formato }), 'E-mail enviado.') }}>Enviar parabéns</button>
+              <button type="button" className="botao botao--principal" disabled={ocupado} onClick={async () => { if (await confirmar({ titulo: 'Enviar o e-mail de parabéns?', texto: `${formato === 'carta' ? 'Carta pessoal' : 'Cartão com emblema'} para ${usuario.email}.`, sim: 'Enviar' })) void acao('Envio', () => chamarFuncao('enviar-email', { acao: 'parabens', id_usuario: usuario.id_usuario, recado, formato }), 'E-mail enviado.') }}>Enviar parabéns</button>
             </div>
             {previa && <div className="adm-previa"><div className="adm-previa__topo"><span>Prévia do e-mail</span><button type="button" className="adm-link" onClick={() => definirPrevia(null)}>Fechar prévia</button></div><iframe title="Prévia do e-mail" srcDoc={previa} sandbox="" /></div>}
           </>}
@@ -298,7 +314,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
             <div>
               <strong>Desconectar de todos os aparelhos</strong>
               <p>A conta sai em até 1 minuto de onde estiver aberta. Útil para conta compartilhada ou aparelho perdido. A pessoa pode entrar de novo com a senha.</p>
-              <button type="button" className="botao" disabled={ocupado} onClick={() => { if (window.confirm('Desconectar esta conta de todos os aparelhos?')) void acao('Desconectar', () => chamarRpc('desconectar_usuario_admin', { p_id: usuario.id_usuario }), 'Pronto: a conta sai dos aparelhos no próximo minuto.') }}>Desconectar</button>
+              <button type="button" className="botao" disabled={ocupado} onClick={async () => { if (await confirmar({ titulo: 'Desconectar esta conta de todos os aparelhos?', texto: 'A pessoa pode entrar de novo com a senha.', sim: 'Desconectar' })) void acao('Desconectar', () => chamarRpc('desconectar_usuario_admin', { p_id: usuario.id_usuario }), 'Pronto: a conta sai dos aparelhos no próximo minuto.') }}>Desconectar</button>
             </div>
             <div>
               <strong>{detalhe.oculto_ranking ? 'Fora do ranking público' : 'Aparece no ranking público'}</strong>

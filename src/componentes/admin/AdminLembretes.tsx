@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { recurso } from '../../config'
 import { erroDoPainel } from './formatos'
+import { confirmar } from '../Confirmar'
 
 const MIGRACAO = '202610040100_emails_lembretes.sql'
 
@@ -62,8 +63,8 @@ export function AdminLembretes() {
     // A confirmação diz quem vai receber, pelo nome, para não disparar no escuro.
     const lista = listas[c.id]
     const nomes = Array.isArray(lista) ? lista.filter((p) => p.liberado).map((p) => p.nome ?? p.email) : []
-    const quem = nomes.length ? `\n\n${nomes.slice(0, 15).join('\n')}${nomes.length > 15 ? `\n… e mais ${nomes.length - 15}` : ''}` : ''
-    if (!pessoas || !window.confirm(`Enviar "${c.titulo}" para ${pessoas} ${pessoas === 1 ? 'pessoa' : 'pessoas'}?${quem}`)) return
+    const quem = nomes.length ? `${nomes.slice(0, 15).join('\n')}${nomes.length > 15 ? `\n… e mais ${nomes.length - 15}` : ''}` : undefined
+    if (!pessoas || !(await confirmar({ titulo: `Enviar "${c.titulo}" para ${pessoas} ${pessoas === 1 ? 'pessoa' : 'pessoas'}?`, texto: quem, sim: 'Enviar' }))) return
     let total = 0, falhas = 0
     try {
       // Lotes de até 40 (limite de tempo da Function); para quando um lote não envia nada.
@@ -193,7 +194,7 @@ function ResumoQuinzenal({ aoPrevia }: { aoPrevia: (html: string) => void }) {
     catch (f) { definirFalha(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
   }
   async function enviar(pendentes: number) {
-    if (!window.confirm(`Enviar o resumo de ${nomeQuinzena(ref)} para ${pendentes} ${pendentes === 1 ? 'pessoa' : 'pessoas'}?`)) return
+    if (!(await confirmar({ titulo: `Enviar o resumo de ${nomeQuinzena(ref)} para ${pendentes} ${pendentes === 1 ? 'pessoa' : 'pessoas'}?`, sim: 'Enviar' }))) return
     let total = 0, falhas = 0
     try {
       for (let volta = 0; volta < 25; volta++) {
