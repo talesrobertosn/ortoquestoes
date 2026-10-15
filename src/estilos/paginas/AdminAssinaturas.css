@@ -159,6 +159,7 @@
 .adm-ficha__cabeca h2 { margin: 0; font-size: 1.3rem; overflow-wrap: anywhere; }
 .adm-ficha__cabeca p { margin: .15rem 0 .4rem; color: var(--texto-2); overflow-wrap: anywhere; }
 .adm-ficha__numeros { grid-template-columns: repeat(4, minmax(0, 1fr)); padding: .9rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.adm-ficha__painel > .adm-filtros { margin-bottom: 1rem; }
 .adm-acoes { display: grid; gap: .75rem; }
 .adm-acoes > div { display: grid; gap: .45rem; padding: .9rem 1rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
 .adm-acoes p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
