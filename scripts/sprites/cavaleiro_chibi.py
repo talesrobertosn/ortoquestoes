@@ -287,7 +287,7 @@ ESTAGIOS = {
     3: dict(metal='aco', capa=1, pluma=2, escudo='cruz', friso=False, tabardo=True, cinto='vermelho', lamina=29, ombreira=2),
     4: dict(metal='aco', capa=2, pluma=3, escudo='brasao', friso=True, tabardo=True, cinto='vermelho', lamina=31, ombreira=2),
     5: dict(metal='aco', capa=2, pluma=3, escudo='brasao', friso=True, tabardo=True, cinto='vermelho', lamina=33, ombreira=3, ouro2=True),
-    6: dict(metal='perola', capa=2, pluma=3, escudo='brasao', friso=True, tabardo=True, cinto='vermelho', lamina=34, ombreira=3, ouro2=True, lenda=True),
+    6: dict(metal='perola', capa=2, pluma=3, escudo='brasao', friso=True, tabardo=True, cinto='vermelho', lamina=34, ombreira=3, ouro2=True, lenda=True, escala_escudo=0.84),
 }
 
 
@@ -390,7 +390,9 @@ def quadro(e: int, t: dict) -> np.ndarray:
 
     # ================= escudo
     ec = mao_e + np.array([3, -1]) + np.array(k('escudo', (0, 0)))
-    s_ = 0.88 if E['escudo'] == 'madeira' else 1.0
+    # a lenda (estágio 6) usa um escudo menor: com as asas, a auréola e a armadura de pérola, o escudo
+    # do mesmo tamanho do estágio 5 pesava demais na silhueta (pendência de 14/10, refeita em 15/10)
+    s_ = 0.88 if E['escudo'] == 'madeira' else E.get('escala_escudo', 1.0)
 
     def esc(pp):
         return [ec + np.array(v) * s_ for v in pp]
@@ -411,7 +413,7 @@ def quadro(e: int, t: dict) -> np.ndarray:
         q.peca(mm_, campo, tons(Ns, campo, metal=campo != 'azul', base=0.02), 7.05, ge)
         q.clareia(mm_ & (np.abs((XX - ec[0]) + (YY - ec[1]) * 0.8 + 4) < 1.6), 1)
         cz = ec + (0, -1)
-        cruz = m_poli([cz + (-1.8, -9), cz + (1.8, -9), cz + (1.8, 9), cz + (-1.8, 9)]) | m_poli([cz + (-7, -4), cz + (7, -4), cz + (7, -0.6), cz + (-7, -0.6)])
+        cruz = m_poli([cz + np.array(v) * s_ for v in ((-1.8, -9), (1.8, -9), (1.8, 9), (-1.8, 9))]) | m_poli([cz + np.array(v) * s_ for v in ((-7, -4), (7, -4), (7, -0.6), (-7, -0.6))])
         if E['escudo'] == 'brasao':
             q.peca(cruz & mm_, ouro, tons(n_plano(-0.3, -0.4), ouro, metal=True) + np.where(XX < cz[0], 1, 0).astype(np.int16), 7.1, ge, enfeite=True)
             q.peca(m_elipse(cz + (0, -2.3), 2.0, 2.0), 'gema', tons(n_esfera(cz + (-0.6, -3), 2, 2), 'gema'), 7.15, ge, enfeite=True)

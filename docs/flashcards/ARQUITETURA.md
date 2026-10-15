@@ -10,7 +10,7 @@ Tudo em `src/flashcards/`, com camadas separadas como pediu o briefing:
 | Sorteio com semente | `motor/aleatorio.ts` | A mesma semente repete a partida (testes e, depois, o Desafio do dia). |
 | Monstros | `motor/bestiario.ts` | Vida, força, armadura, paciência, veneno, fase 2 do chefe, cenário de cada um. |
 | Poderes e relíquias | `motor/poderes.ts` | Catálogo com nome, texto, ícone e cor. |
-| Estado da partida | `Partida` em `regras.ts` | Salvo a cada mudança em `flashcards:partida` (por conta, como o resto do site); ao reabrir, a partida continua. |
+| Estado da partida | `Partida` em `regras.ts` | Salvo a cada mudança em `flashcards:partida` (por conta, como o resto do site), com `idPartida`, `atualizadoEm` e `aparelho`; ao reabrir, a partida continua, inclusive em outro aparelho (seção "Continuidade entre aparelhos" abaixo). |
 | Progresso educacional | `progresso.ts` | Registro por flashcard em `flashcards:registros`, no formato do `RegistroQuestao` e com a mesma escada de intervalos. Acerto livre conta como certeza, acerto com pista como dúvida, erro volta. É uma fila separada da de questões. |
 | Máquina da tela | `componentes/Arena.tsx` | Fases `pergunta → resposta → recompensa → fim`. O **diretor** (`encenar`) transforma cada evento em animação e pode ser pulado (Esc, Seguir, toque na faixa); ao pular, a tela sincroniza com o estado real. |
 | Efeitos e partículas | `efeitos/palco.ts` | Um canvas por cima da arena que só anima enquanto há partículas: projétil com rastro, fagulhas, onda de choque, corte, cura subindo, cacos de escudo, confete e dissolução. |
@@ -33,6 +33,31 @@ Tudo em `src/flashcards/`, com camadas separadas como pediu o briefing:
 1. rode `VITE_SUPABASE_URL=sem npx vite`; sem Supabase, o app não pede conta, e isso vale só nessa máquina;
 2. abra `#/flashcards`;
 3. no `npm run dev`, a arena expõe `window.__torneio`, que os testes de tela usam para achar a alternativa certa.
+
+## Continuidade entre aparelhos (15/10/2026, parte 28 do SQL)
+
+Bug do Tales: "no notebook eu estava no Golem; no computador, no Senhor do Anel Pélvico". A partida, o
+Bestiário, o Altar e o patamar da Torre ficavam só no localStorage. Agora vão para a conta.
+
+| Peça | Onde | O que faz |
+|---|---|---|
+| Mescla (pura) | `src/flashcards/continuidade.ts` | `JogoNuvem` v1: `{ versao, atualizadoEm, partidas: { masmorra, torre }, patamar, encerradas, bestiario, altar }`. Cada vaga de partida tem `id`, `em` (carimbo), `andar`, `aparelho` e a `partida` (ou `null`: lápide). |
+| Regras da mescla | `mesclarJogos` | Partida: vale a mais recente; empate entre partidas antigas sem carimbo, a mais funda. Lápide: partida encerrada (morte, desistência, vitória, "Começar do zero") entra em `encerradas` (as 30 últimas, com data) e nenhuma cópia viva dela volta, mesmo "mais nova". Bestiário: união. Altar: talentos pelo maior nível; cristais ganhos por aparelho (`porAparelho`, o maior de cada um, somados); saldo = ganhos menos o custo dos talentos (compra feita em outro aparelho desconta uma vez só). Patamar: o mais recente (limpar tem data: `{ limpoEm }`). |
+| Aparelho | `lerJogoLocal` / `gravarJogoLocal` | Lê e grava as mesmas chaves de antes (`flashcards:partida`, `flashcards:torre`, `flashcards:torre-patamar`, `flashcards:altar`, `flashcards:bestiario`) e duas novas (`flashcards:encerradas`, `flashcards:aparelho`). A lápide no lugar da partida é `{ encerrada: true, idPartida, andar, atualizadoEm }`: `migrarPartida` devolve `null`, então o site antigo lê "sem partida". |
+| Servidor | `servidor.ts` | `sincronizarJogo` (lê `ler_jogo_flashcards`, mescla, grava no aparelho e envia se o servidor estiver atrás), `agendarEnvioJogo` (comum: até 5 s; importante, na hora), `enviarJogoAoSair` (`fetch` com `keepalive`, até 64 kB) e `instalarContinuidade` (aba escondida e `pagehide` salvam; aba visível relê). Envio com trava otimista: `salvar_jogo_flashcards(p_jogo, p_base)` só grava sobre o `jogo_em` que o aparelho conhece; recusado, devolve o atual, o aparelho mescla e tenta de novo (até 3 vezes). Uma fila serializa leituras e envios. |
+| Arena | `componentes/Arena.tsx` | `Arena` espera o jogo da conta (até 4 s) ANTES de montar a partida. `ArenaJogo` protege o modo aberto (`protegerModo`): a sincronia não troca a partida por baixo; uma partida mais nova de outro aparelho fica pendente e é adotada fora de animação/validação e nunca por cima da tela de fim, com o aviso discreto "Continuando a partida do seu outro aparelho (andar X)". Gravação: carimbo a cada mudança; importante = andar, fase (fora pergunta↔resposta: portas, loja, sala, sábio, recompensa, fim), compra (ouro caiu), relíquia, poderes, sala; o resto espera até 5 s. Patamar da Torre e a subida que recomeça dele ganham id novo. |
+| Entrada | `componentes/Entrada.tsx` | Sincroniza ao abrir (Continuar no andar X, cristais e descobertos certos). "Começar do zero" grava lápide (`encerrarPartidaSalva`). Compra no Altar envia na hora. |
+| SQL | `202610152200_flashcards_continuidade.sql` (parte 28) | `flashcards_progresso.jogo jsonb` (até 256 kB) e `jogo_em`; `ler_progresso_flashcards` devolve também `jogo`/`jogo_em`; `salvar_progresso_flashcards` ganha `p_jogo`/`p_jogo_base` opcionais (a chamada antiga, com dois parâmetros, segue igual); `ler_jogo_flashcards` e `salvar_jogo_flashcards` leves, sem os registros. |
+
+**Sem a parte 28 colada:** a primeira resposta 404 desliga o envio do jogo e tudo segue só no aparelho, sem erro
+na tela. **Sem `VITE_FLASHCARDS_LIMITE=true`:** nada é chamado (como antes).
+
+**Não muda:** regras do jogo, dificuldade, ranking (corridas validadas no servidor) e a vida a cada 24 h da conta
+grátis (a partida continuada leva o mesmo `idCorrida`, decidido por `autorizar_flashcard_cripta`).
+
+**Testes:** `fixtures/testar_continuidade_flashcards.mjs` (no `npm test`: data, lápide, Bestiário, Altar, formato
+antigo) e `scripts/flashcards/testar_continuidade.mjs` (Playwright com dois navegadores e Supabase simulado: troca
+de aparelho, aviso, adoção ao voltar à aba, lápide, degradação sem o SQL).
 
 ## Proposta inicial (seções 1 a 5)
 
@@ -166,4 +191,4 @@ O baralho da partida é sorteado em lotes de 40, com semente, por peso: incidên
 
 - **Flashcards únicos respondidos** = número de chaves em `flashcards:registros` (repetição não conta). É a medida principal do ranking.
 - **Andar mais fundo**, partidas, chefes, melhor sequência e respostas em `flashcards:recordes`.
-- Ambos ficam no aparelho até a sincronização com o Supabase; o formato já é o que o servidor vai receber.
+- Ambos vão para a conta em `sincronizarProgresso` (parte 18). A partida, o Bestiário, o Altar e o patamar da Torre, em `sincronizarJogo` (parte 28, seção "Continuidade entre aparelhos").

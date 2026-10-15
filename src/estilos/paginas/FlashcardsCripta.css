@@ -210,3 +210,13 @@
 .fc-modal .fc-principal:disabled .fc-principal__texto span { opacity: .78; }
 .fc-modal .fc-principal { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .fc-alternativa, .fc-recompensa, .fc-portal, .fc-oferta, .fc-loja__preco, .fc-botao { touch-action: manipulation; }
+
+/* ---------- Continuidade entre aparelhos (15/10/2026) ----------
+   Aviso discreto quando a partida veio do outro aparelho: uma linha no alto, some sozinho. */
+.fc-aviso-aparelho { position: absolute; z-index: 40; left: 50%; top: 58px; translate: -50% 0; max-width: min(420px, calc(100% - 32px)); padding: 7px 14px;
+  border-radius: 999px; font: 600 13px/1.35 var(--fc-ui); color: #f0e2c0; text-align: center; cursor: pointer;
+  background: rgba(10, 14, 24, .82); box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .55), 0 6px 16px rgba(0, 0, 0, .45);
+  animation: fc-aviso-aparelho 6.5s ease both; }
+@keyframes fc-aviso-aparelho { 0% { opacity: 0; transform: translateY(-6px); } 8%, 85% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .fc-aviso-aparelho { animation: none; } }
+@media (max-width: 640px) { .fc-aviso-aparelho { top: 52px; font-size: 12px; } }

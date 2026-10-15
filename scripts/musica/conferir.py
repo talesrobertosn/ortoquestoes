@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Confere a trilha sem ouvir: volume (RMS), pico, saturação, brilho (centroide),
-emenda do laço e espectrograma de cada faixa.
+emenda do laço (salto de amostra e degrau de volume entre o último e o primeiro
+1/10 s; acima de uns 4 dB a volta do laço se ouve) e espectrograma de cada faixa.
 
     python3 scripts/musica/conferir.py [saida.png]
 """
@@ -44,7 +45,7 @@ def espectro(x: np.ndarray, alt=96, larg=360) -> np.ndarray:
 def principal() -> int:
     indice = json.loads((DIR / 'indice.json').read_text())
     linhas = []
-    print(f"{'faixa':<11} {'dur':>6} {'RMS dB':>7} {'pico':>6} {'satura%':>8} {'centroide Hz':>12} {'emenda':>7}")
+    print(f"{'faixa':<11} {'dur':>6} {'RMS dB':>7} {'pico':>6} {'satura%':>8} {'centroide Hz':>12} {'emenda':>7} {'degrau dB':>9}")
     for nome, meta in indice.items():
         x = ler(DIR / meta['arquivo'])
         rms = 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-9)
@@ -54,7 +55,10 @@ def principal() -> int:
         f = np.fft.rfftfreq(len(x[: SR * 20]), 1 / SR)
         centro = float(np.sum(S * f) / np.sum(S))
         emenda = float(abs(x[-1] - x[0])) if meta['laco'] else 0.0
-        print(f"{nome:<11} {len(x) / SR:6.1f} {rms:7.1f} {pico:6.2f} {satura:8.3f} {centro:12.0f} {emenda:7.3f}")
+        n = SR // 10
+        db = lambda y: 20 * np.log10(np.sqrt(np.mean(y ** 2)) + 1e-9)  # noqa: E731
+        degrau = db(x[:n]) - db(x[-n:]) if meta['laco'] else 0.0
+        print(f"{nome:<11} {len(x) / SR:6.1f} {rms:7.1f} {pico:6.2f} {satura:8.3f} {centro:12.0f} {emenda:7.3f} {degrau:9.1f}")
         linhas.append((nome, espectro(x)))
     if len(sys.argv) > 1:
         alt = sum(e.shape[0] + 14 for _, e in linhas)

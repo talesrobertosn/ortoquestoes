@@ -101,6 +101,13 @@ VARIANTES = {
         'olho': Material([(200, 40, 120), (255, 120, 200), (255, 230, 250)], emissivo=True),
     },
     'rainha': lambda: _rainha(),
+    # Slime Sinovial (15/10/2026): líquido de articulação, âmbar-claro e muito brilhante, bolhas
+    # douradas e olhos verde-água; antes caía no desenho antigo por não ter folha própria
+    'sinovial': lambda: {
+        'massa': Material(rampa('#f0d890', 7, escuro=0.28, claro=1.12, giro=0.12), textura=tex_massa, brilho=1.2, borda_luz=1.9),
+        'bolha': Material(rampa('#fffbe6', 4, escuro=0.65, claro=1.06), brilho=1.2),
+        'olho': Material([(20, 120, 110), (60, 210, 190), (210, 255, 245)], emissivo=True),
+    },
 }
 
 

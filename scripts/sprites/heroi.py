@@ -39,7 +39,7 @@ PROP = {
     3: dict(perna=1.58, tronco=1.20, ombro=1.15, cab=0.665, braco=1.32, gr=1.05, escudo=0.98),
     4: dict(perna=1.66, tronco=1.25, ombro=1.21, cab=0.65, braco=1.37, gr=1.09, escudo=1.00),
     5: dict(perna=1.73, tronco=1.29, ombro=1.26, cab=0.635, braco=1.42, gr=1.12, escudo=1.02),
-    6: dict(perna=1.80, tronco=1.33, ombro=1.30, cab=0.62, braco=1.46, gr=1.15, escudo=1.03),
+    6: dict(perna=1.80, tronco=1.33, ombro=1.30, cab=0.62, braco=1.46, gr=1.15, escudo=0.90),
 }
 TEMPOS = {'parado': 240, 'preparo': 90, 'golpe': 70, 'dano': 90, 'derrota': 140, 'vitoria': 150}
 
