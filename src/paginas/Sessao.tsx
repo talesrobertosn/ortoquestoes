@@ -140,12 +140,18 @@ export function Sessao() {
   const [restante, definirRestante] = useState<number | null>(() =>
     sessao ? segundosRestantes(sessao) : null,
   )
+  // Depende só do que o relógio usa: com o objeto inteiro, o intervalo era
+  // recriado a cada resposta ou troca de questão.
+  const criadaEm = sessao?.criadaEm ?? 0
+  const limiteSegundos = sessao?.limiteSegundos ?? 0
+  const encerrada = !!sessao?.concluidaEm
   useEffect(() => {
-    if (!sessao || !sessao.limiteSegundos || sessao.concluidaEm) return
-    definirRestante(segundosRestantes(sessao))
-    const relogio = window.setInterval(() => definirRestante(segundosRestantes(sessao)), 1000)
+    if (!limiteSegundos || encerrada) return
+    const medir = () => definirRestante(Math.round((criadaEm + limiteSegundos * 1000 - Date.now()) / 1000))
+    medir()
+    const relogio = window.setInterval(medir, 1000)
     return () => window.clearInterval(relogio)
-  }, [sessao])
+  }, [criadaEm, limiteSegundos, encerrada])
 
   // Acabou a cota grátis de hoje: seguir para uma questão ainda não respondida
   // abre o convite; fechar leva ao resumo da sessão.

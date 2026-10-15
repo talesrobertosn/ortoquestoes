@@ -1,5 +1,6 @@
-import { lerRespondidas } from '../estado/sessao'
-import { dominada, INTERVALOS } from '../estado/revisao'
+import { CHAVE_RESPONDIDAS } from '../estado/sessao'
+import { usarArmazenado } from '../estado/usarArmazenado'
+import { dominada, INTERVALOS, type RegistroQuestao } from '../estado/revisao'
 import { TextoEditorial, TextoEmLinha, Referencias } from './TextoEditorial'
 import { NotasQuestao } from './NotasQuestao'
 import { AvaliarComentario } from './AvaliarComentario'
@@ -61,6 +62,9 @@ export function CartaoQuestao({
   revelarResposta = true,
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
+  // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
+  // inteiro a cada render (a cada segundo no simulado, por causa do cronômetro).
+  const [respondidasTodas] = usarArmazenado<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
   const [confianca, definirConfianca] = useState<'seguro' | 'duvida' | 'chute'>('seguro')
   const [copiado, definirCopiado] = useState(false)
   const [menuGrifo, definirMenuGrifo] = useState<{ x: number; y: number } | null>(null)
@@ -264,7 +268,8 @@ export function CartaoQuestao({
   }
 
   const semGabarito = !questao.gabarito && !questao.anulada && questao.tipo !== 'dissertativa'
-  const historicoDaQuestao = lerRespondidas()[questao.id]?.historico ?? []
+  const registroDaQuestao = respondidasTodas[questao.id]
+  const historicoDaQuestao = registroDaQuestao?.historico ?? []
   // Etiquetas de assunto adiantam a resposta; quando escondidas, voltam junto
   // com o gabarito, que é quando elas servem para estudar em vez de entregar.
   const etiquetasVisiveis = mostrarEtiquetas || mostrarGabarito
@@ -498,7 +503,7 @@ export function CartaoQuestao({
 
         {mostrarGabarito && (
           <div className="comentario">
-            {resposta && resposta.correta !== null && !dissertativa && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : `Acerto seguro registrado. Ela volta em ${INTERVALOS.seguro.join(', ').replace(/, (\d+)$/, ' e $1')} dias, conforme você for acertando.`}</p>}
+            {resposta && resposta.correta !== null && !dissertativa && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(registroDaQuestao) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : `Acerto seguro registrado. Ela volta em ${INTERVALOS.seguro.join(', ').replace(/, (\d+)$/, ' e $1')} dias, conforme você for acertando.`}</p>}
             {questao.comentario && (
               <div className="bloco-comentario">
                 <p className="comentario__titulo">Comentário do autor</p>
