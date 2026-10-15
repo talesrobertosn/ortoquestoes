@@ -681,6 +681,114 @@
    "fonte": "288d52f7fd48"
   },
   {
+   "id": "fc-mao-0029-co1",
+   "questao": "mao-0029",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O pronador redondo tem uma cabeça umeral, no epicôndilo medial. De onde nasce a sua cabeça ulnar?",
+   "resposta": "processo coronoide",
+   "explicacao": "**Cabeça ulnar: processo coronoide.** O **nervo mediano** passa entre as duas cabeças (síndrome do pronador).",
+   "opcoes": [
+    "processo coronoide"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "828b9bf2d55a",
+   "origem": "autoral",
+   "trecho": "Duas cabeças: **umeral** (epicôndilo medial) e **ulnar** (processo coronoide).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0029-co2",
+   "questao": "mao-0029",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Onde se insere o pronador redondo, depois do seu trajeto oblíquo pelo antebraço?",
+   "resposta": "terço médio da face lateral do rádio",
+   "explicacao": "**Terço médio da face lateral do rádio.** Na via de Henry, ele é desinserido com o antebraço em **pronação**.",
+   "opcoes": [
+    "terço médio da face lateral do rádio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "828b9bf2d55a",
+   "origem": "autoral",
+   "trecho": "Trajeto ==oblíquo== até o **terço médio da face lateral do rádio**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0029-co3",
+   "questao": "mao-0029",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo passa entre as duas cabeças do pronador redondo e pode ser comprimido ali?",
+   "resposta": "nervo mediano",
+   "explicacao": "O **nervo mediano**, na **síndrome do pronador**.",
+   "opcoes": [
+    "nervo mediano"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "828b9bf2d55a",
+   "origem": "autoral",
+   "trecho": "O **nervo mediano** passa entre as cabeças (síndrome do pronador).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0029-co4",
+   "questao": "mao-0029",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na via de Henry para o terço médio do rádio, em que posição do antebraço se desinsere o pronador redondo?",
+   "resposta": "pronação",
+   "explicacao": "Com o antebraço em **pronação**, a inserção lateral do pronador redondo fica exposta para ser desinserida.",
+   "opcoes": [
+    "pronação"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "828b9bf2d55a",
+   "origem": "autoral",
+   "trecho": "Via de Henry: o pronador é desinserido (com o antebraço em pronação) para expor o terço médio do rádio.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0029-q",
    "questao": "mao-0029",
    "area": "Mão e punho",
@@ -712,6 +820,35 @@
     "largura": 766,
     "altura": 317
    }
+  },
+  {
+   "id": "fc-mao-0029-tb1",
+   "questao": "mao-0029",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em qual camada do compartimento volar do antebraço fica o flexor superficial dos dedos?",
+   "resposta": "intermediária",
+   "explicacao": "**Intermediária.** Superficial: pronador redondo, FRC, palmar longo, FUC. Profunda: FPD, FLP e pronador quadrado.",
+   "opcoes": [
+    "superficial",
+    "intermediária",
+    "profunda"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "828b9bf2d55a",
+   "origem": "autoral",
+   "trecho": "| intermediária | flexor superficial dos dedos |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0030-q",
@@ -2427,6 +2564,60 @@
    "fonte": "4671e5aef6ff"
   },
   {
+   "id": "fc-mao-0097-co1",
+   "questao": "mao-0097",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "De onde nasce a cabeça transversa do adutor do polegar?",
+   "resposta": "diáfise do 3º MC",
+   "explicacao": "**Transversa: diáfise do 3º metacarpo.** Oblíqua: bases do 2º e 3º metacarpos e capitato.",
+   "opcoes": [
+    "diáfise do 3º MC"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "c5e8ad3c8b64",
+   "origem": "autoral",
+   "trecho": "Cabeças: **transversa** (diáfise do 3º MC) e **oblíqua** (base do 2º e 3º MC, capitato).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0097-co2",
+   "questao": "mao-0097",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na paralisia do adutor do polegar, até quanto da força de pinça lateral pode ser perdida?",
+   "resposta": "até 75%",
+   "explicacao": "**Até 75%.** Sinais de **Froment** (flexão da IF do polegar) e **Jeanne** (hiperextensão da MF).",
+   "opcoes": [
+    "até 75%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "c5e8ad3c8b64",
+   "origem": "autoral",
+   "trecho": "Paralisia do adutor: **Froment** e **Jeanne**, perda da força de pinça lateral (até 75%).",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0097-q",
    "questao": "mao-0097",
    "area": "Mão e punho",
@@ -2623,6 +2814,63 @@
    "fonte": "ef3a52793a34"
   },
   {
+   "id": "fc-mao-0104-co1",
+   "questao": "mao-0104",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões extensores"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O extensor radial longo do carpo se insere no 2º metacarpo. Em qual metacarpo se insere o extensor radial curto do carpo?",
+   "resposta": "3º MC",
+   "explicacao": "**ERCC: base do 3º metacarpo**, mais ulnar; é o extensor mais \"puro\" do punho. ERLC: 2º metacarpo, mais radial.",
+   "opcoes": [
+    "2º MC",
+    "3º MC"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "cf14d74b4ad7",
+   "origem": "autoral",
+   "trecho": "**ERCC** insere-se na base do **3º MC** e fica mais ulnar",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0104-pc1",
+   "questao": "mao-0104",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões extensores"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome de interseção proximal, o 1º compartimento cruza sobre o 2º. Na interseção distal, no Lister, qual tendão cruza o 2º?",
+   "resposta": "ELP",
+   "explicacao": "**Distal: extensor longo do polegar (ELP)** sobre o 2º, no Lister. **Proximal:** 1º sobre o 2º, 4 a 6 cm do Lister.",
+   "opcoes": [
+    "ELP"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "cf14d74b4ad7",
+   "origem": "autoral",
+   "trecho": "Distal: ELP sobre o 2º (no Lister).",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0104-q",
    "questao": "mao-0104",
    "area": "Mão e punho",
@@ -2655,6 +2903,65 @@
     "largura": 1008,
     "altura": 433
    }
+  },
+  {
+   "id": "fc-mao-0104-tb1",
+   "questao": "mao-0104",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões extensores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrite reumatoide (síndrome de Vaughan-Jackson), qual tendão extensor é o primeiro a romper?",
+   "resposta": "extensor do mínimo",
+   "explicacao": "**Extensor do dedo mínimo (5º compartimento)**, que passa sobre a radioulnar distal.",
+   "opcoes": [
+    "extensor do mínimo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "cf14d74b4ad7",
+   "origem": "autoral",
+   "trecho": "| 5 | extensor do mínimo | Vaughan-Jackson (primeiro a romper) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0104-tb2",
+   "questao": "mao-0104",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões extensores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em qual compartimento extensor do punho corre o extensor longo do polegar, que contorna o tubérculo de Lister?",
+   "resposta": "3",
+   "explicacao": "**3º compartimento (ELP).** Rompe tardiamente após fratura do rádio distal.",
+   "opcoes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "cf14d74b4ad7",
+   "origem": "autoral",
+   "trecho": "| 3 | ELP (contorna o Lister) | ruptura após fratura do rádio |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0105-q",
@@ -2766,6 +3073,35 @@
    "fonte": "baf10b2dc8e6"
   },
   {
+   "id": "fc-mao-0109-pc1",
+   "questao": "mao-0109",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na botoeira, as bandas laterais migram para volar. E no pescoço de cisne, para onde elas migram?",
+   "resposta": "dorsal",
+   "explicacao": "**Pescoço de cisne: bandas para dorsal**, por frouxidão da placa volar, dedo em martelo ou intrínseco plus.",
+   "opcoes": [
+    "volar",
+    "dorsal"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "e6631f5aef11",
+   "origem": "autoral",
+   "trecho": "| pescoço de cisne | migram para **dorsal** | frouxidão da placa volar, dedo em martelo, intrínseco plus |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0109-q",
    "questao": "mao-0109",
    "area": "Mão e punho",
@@ -2798,6 +3134,153 @@
     "largura": 645,
     "altura": 165
    }
+  },
+  {
+   "id": "fc-mao-0109-tb1",
+   "questao": "mao-0109",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No aparelho extensor do dedo, onde se insere a banda central?",
+   "resposta": "base da falange média",
+   "explicacao": "**Banda central: base da falange média.** As bandas laterais se unem no **tendão terminal**, na base da falange distal.",
+   "opcoes": [
+    "base da falange média",
+    "base da falange distal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "e6631f5aef11",
+   "origem": "autoral",
+   "trecho": "| banda central | meio do dorso da falange proximal | ==base da falange média== |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0109-tb2",
+   "questao": "mao-0109",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento une dorsalmente as bandas laterais e impede que elas migrem para volar?",
+   "resposta": "ligamento triangular",
+   "explicacao": "**Ligamento triangular.** Quando ele cede, as bandas caem para volar: **botoeira**.",
+   "opcoes": [
+    "ligamento triangular",
+    "ligamento retinacular transverso",
+    "retinacular oblíquo (Landsmeer)"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "e6631f5aef11",
+   "origem": "autoral",
+   "trecho": "| ligamento triangular | une as bandas laterais dorsalmente | impede migração volar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0109-tb3",
+   "questao": "mao-0109",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento prende as bandas laterais à placa volar da IFP e impede que elas migrem para dorsal?",
+   "resposta": "ligamento retinacular transverso",
+   "explicacao": "**Retinacular transverso.** Se as bandas sobem para dorsal, surge o **pescoço de cisne**.",
+   "opcoes": [
+    "ligamento triangular",
+    "ligamento retinacular transverso",
+    "retinacular oblíquo (Landsmeer)"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "e6631f5aef11",
+   "origem": "autoral",
+   "trecho": "| ligamento retinacular transverso | prende as bandas laterais à placa volar da IFP | impede migração dorsal |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0109-tb4",
+   "questao": "mao-0109",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento passa volar à IFP e dorsal à IFD e coordena o movimento das duas articulações?",
+   "resposta": "retinacular oblíquo (Landsmeer)",
+   "explicacao": "**Ligamento retinacular oblíquo de Landsmeer:** a extensão da IFP o tensiona e ajuda a estender a IFD.",
+   "opcoes": [
+    "ligamento triangular",
+    "ligamento retinacular transverso",
+    "retinacular oblíquo (Landsmeer)"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "e6631f5aef11",
+   "origem": "autoral",
+   "trecho": "| retinacular oblíquo (Landsmeer) | volar à IFP, dorsal à IFD | coordena IFP e IFD |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0109-tb5",
+   "questao": "mao-0109",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões dos tendões flexores"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual estrutura do aparelho extensor, na metacarpofalângica, mantém o tendão extensor centralizado?",
+   "resposta": "banda sagital",
+   "explicacao": "**Banda sagital**, que se prende à placa volar e ao ligamento intermetacarpal. Sua ruptura (zona V) luxa o tendão.",
+   "opcoes": [
+    "banda sagital"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "e6631f5aef11",
+   "origem": "autoral",
+   "trecho": "| banda sagital | na MF, centraliza o tendão | placa volar, ligamento intermetacarpal |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0110-q",
@@ -3809,6 +4292,282 @@
    }
   },
   {
+   "id": "fc-mao-0166-co1",
+   "questao": "mao-0166",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que lado de cada dedo os lumbricais se inserem na banda lateral do aparelho extensor?",
+   "resposta": "radial",
+   "explicacao": "Pelo lado **radial** de cada dedo. Fletem a MF e estendem as interfalângicas (intrínseco plus).",
+   "opcoes": [
+    "radial",
+    "ulnar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "055d13d4339f",
+   "origem": "autoral",
+   "trecho": "Inserem-se na **banda lateral** do aparelho extensor (no lado radial de cada dedo).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0166-co2",
+   "questao": "mao-0166",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No lumbrical plus, após lesão do flexor profundo distal à origem do lumbrical, o que acontece com a interfalângica ao tentar fletir o dedo?",
+   "resposta": "estender paradoxalmente",
+   "explicacao": "O lumbrical puxa o tendão e a interfalângica se **estende paradoxalmente**.",
+   "opcoes": [
+    "estender paradoxalmente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "055d13d4339f",
+   "origem": "autoral",
+   "trecho": "a tentativa de fletir o dedo faz o lumbrical puxar o tendão e **estender paradoxalmente** a interfalângica.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0166-pc1",
+   "questao": "mao-0166",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os interósseos passam dorsalmente ao ligamento metacarpal transverso profundo. E os lumbricais, de que lado dele passam?",
+   "resposta": "Volar",
+   "explicacao": "**Lumbricais: volares** ao ligamento transverso profundo e nascem dos **tendões do flexor profundo**. Interósseos: dorsais e nascem dos metacarpos.",
+   "opcoes": [
+    "Volar",
+    "Dorsal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "055d13d4339f",
+   "origem": "autoral",
+   "trecho": "| **Lumbricais** | **Tendões do flexor profundo** | **Volar** (à frente) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0169-co1",
+   "questao": "mao-0169",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão de Stener do polegar do esquiador, qual estrutura se interpõe entre o colateral ulnar rompido e o osso?",
+   "resposta": "aponeurose do adutor",
+   "explicacao": "A **aponeurose do adutor** impede a cicatrização do ligamento: a lesão de Stener exige cirurgia.",
+   "opcoes": [
+    "aponeurose do adutor"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a42543173470",
+   "origem": "autoral",
+   "trecho": "a **aponeurose do adutor** pode se interpor entre o ligamento rompido e o osso, formando a **lesão de Stener**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0169-co2",
+   "questao": "mao-0169",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual arco arterial passa entre as duas cabeças do adutor do polegar, junto com o ramo profundo do ulnar?",
+   "resposta": "arco palmar profundo",
+   "explicacao": "O **arco palmar profundo** passa entre as cabeças transversa e oblíqua, com o **ramo profundo do nervo ulnar**.",
+   "opcoes": [
+    "arco palmar profundo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a42543173470",
+   "origem": "autoral",
+   "trecho": "Entre as duas cabeças do adutor passa o **arco palmar profundo** com o ramo profundo do nervo ulnar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0169-pc1",
+   "questao": "mao-0169",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A cabeça superficial do flexor curto do polegar é inervada pelo mediano. E a cabeça profunda?",
+   "resposta": "ulnar",
+   "explicacao": "**Flexor curto do polegar: inervação dupla**, mediano (superficial) e **ulnar (profunda)**.",
+   "opcoes": [
+    "mediano",
+    "ulnar"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a42543173470",
+   "origem": "autoral",
+   "trecho": "| Flexor curto do polegar | Medial ao abdutor curto | Mediano (superficial) e ulnar (profunda) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0169-tb1",
+   "questao": "mao-0169",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o músculo mais superficial da eminência tenar, na borda radial, inervado pelo mediano?",
+   "resposta": "Abdutor curto do polegar",
+   "explicacao": "**Abdutor curto do polegar.** Sob ele, o **oponente**; medial a ele, o **flexor curto**.",
+   "opcoes": [
+    "Abdutor curto do polegar",
+    "Oponente do polegar",
+    "Flexor curto do polegar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a42543173470",
+   "origem": "autoral",
+   "trecho": "| Abdutor curto do polegar | **Superficial**, na eminência tenar | Mediano |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0170-co1",
+   "questao": "mao-0170",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão do nervo ulnar, por que o indicador e o médio escapam da garra?",
+   "resposta": "seus lumbricais são do mediano",
+   "explicacao": "Os **lumbricais 1 e 2** são inervados pelo **mediano**. Na lesão combinada mediano e ulnar, a garra atinge os quatro dedos.",
+   "opcoes": [
+    "seus lumbricais são do mediano"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "7e00f18aee6e",
+   "origem": "autoral",
+   "trecho": "o indicador e o médio são poupados porque seus lumbricais são do mediano.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0170-tb1",
+   "questao": "mao-0170",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O 3º lumbrical, do anular, nasce de quantos tendões do flexor profundo?",
+   "resposta": "Dois tendões (bipenado)",
+   "explicacao": "**3º e 4º: bipenados**, de dois tendões, inervados pelo **ulnar**. 1º e 2º: unipenados, pelo **mediano**.",
+   "opcoes": [
+    "Um tendão (unipenado)",
+    "Dois tendões (bipenado)"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "7e00f18aee6e",
+   "origem": "autoral",
+   "trecho": "| 3º (anular) | Dois tendões (bipenado) | Ulnar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0171-co1",
+   "questao": "mao-0171",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A síndrome da intersecção, atrito do 1º compartimento sobre o 2º, ocorre a que distância proximal do punho?",
+   "resposta": "4 a 6 cm",
+   "explicacao": "**Cerca de 4 a 6 cm proximal ao punho**, onde os tendões do 1º cruzam sobre os extensores radiais do carpo.",
+   "opcoes": [
+    "4 a 6 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "fce58970292f",
+   "origem": "autoral",
+   "trecho": "atrito onde os tendões do 1º cruzam sobre o 2º, cerca de 4 a 6 cm proximal ao punho",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0171-q",
    "questao": "mao-0171",
    "area": "Mão e punho",
@@ -3840,6 +4599,63 @@
     "largura": 341,
     "altura": 243
    }
+  },
+  {
+   "id": "fc-mao-0171-tb1",
+   "questao": "mao-0171",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo corre no assoalho do 4º compartimento extensor do punho?",
+   "resposta": "nervo interósseo posterior",
+   "explicacao": "O **nervo interósseo posterior**, sob o extensor comum dos dedos e o extensor do indicador.",
+   "opcoes": [
+    "nervo interósseo posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "fce58970292f",
+   "origem": "autoral",
+   "trecho": "| 4 | Extensor comum dos dedos e extensor do indicador (com o nervo interósseo posterior no assoalho) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0171-tb2",
+   "questao": "mao-0171",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual compartimento extensor do punho passa sobre a articulação radioulnar distal?",
+   "resposta": "5",
+   "explicacao": "**5º compartimento: extensor do dedo mínimo**, sobre a radioulnar distal. O 6º (EUC) fica no sulco da ulna.",
+   "opcoes": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "fce58970292f",
+   "origem": "autoral",
+   "trecho": "| 5 | Extensor do dedo mínimo (sobre a articulação radioulnar distal) |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0172-q",
@@ -3955,6 +4771,90 @@
    "prova": "TARO",
    "ano": 2023,
    "fonte": "f25959bba5aa"
+  },
+  {
+   "id": "fc-mao-0181-co1",
+   "questao": "mao-0181",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento transverso do carpo se insere no tubérculo do escafoide e no trapézio. Em quais ossos ele se insere do lado ulnar?",
+   "resposta": "pisiforme, hâmulo do hamato",
+   "explicacao": "**Ulnar: pisiforme e hâmulo do hamato.** Radial: tubérculo do escafoide e trapézio. Cobre a fileira distal do carpo, com 3 a 4 cm.",
+   "opcoes": [
+    "pisiforme, hâmulo do hamato"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "fed174baca38",
+   "origem": "autoral",
+   "trecho": "**Inserções ulnares:** pisiforme, hâmulo do hamato.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0181-co2",
+   "questao": "mao-0181",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a causa principal de sintoma persistente após a liberação do túnel do carpo?",
+   "resposta": "Liberação incompleta distal",
+   "explicacao": "**Liberação incompleta da borda distal.** Seccionar todo o ligamento, até a gordura sobre o arco superficial, e estender à fáscia antebraquial.",
+   "opcoes": [
+    "Liberação incompleta distal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "fed174baca38",
+   "origem": "autoral",
+   "trecho": "Liberação incompleta distal: causa principal de **sintoma persistente**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0181-co3",
+   "questao": "mao-0181",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Anatomia da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A incidência do túnel do carpo, com o punho em hiperextensão, mostra bem a fratura de qual estrutura?",
+   "resposta": "hâmulo",
+   "explicacao": "Mostra o **hâmulo do hamato** e o pisiforme: é a incidência para a **fratura do hâmulo**.",
+   "opcoes": [
+    "hâmulo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "fed174baca38",
+   "origem": "autoral",
+   "trecho": "Punho em hiperextensão: mostra hâmulo do hamato e pisiforme (fratura do hâmulo).",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0181-q",
@@ -4395,6 +5295,36 @@
     "largura": 298,
     "altura": 336
    }
+  },
+  {
+   "id": "fc-mao-0238-tb1",
+   "questao": "mao-0238",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Anatomia da mão e punho",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões ligamentares dos dedos"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ligamento palmar do carpo, em V, vai do capitato ao escafoide e ao piramidal?",
+   "resposta": "arqueado (deltoide)",
+   "explicacao": "**Ligamento arqueado (deltoide)**, profundo e em V. O **transverso** é a faixa larga superficial que fecha o túnel.",
+   "opcoes": [
+    "arqueado (deltoide)",
+    "pisohamato",
+    "transverso (retináculo dos flexores)"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d3c0eb7ac7a8",
+   "origem": "autoral",
+   "trecho": "| arqueado (deltoide) | em V, do capitato ao escafoide e piramidal |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0240-q",
