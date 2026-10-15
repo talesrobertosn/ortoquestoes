@@ -69,7 +69,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const cronograma = usarCronogramaHoje()
   const rotuloCronograma = cronograma.calculo ? 'Seguir o cronograma' : 'Montar meu cronograma'
   const { indice, carregando } = usarIndice()
-  const { iniciar, sessao } = usarSessao()
+  const { iniciarComAviso } = usarSessao()
   const { sessao: conta } = usarConta()
   const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : { ...FILTROS_VAZIOS, limite: 10 })
   useEffect(() => {
@@ -213,11 +213,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const [rascunhoQtd, definirRascunhoQtd] = useState<string | null>(null)
 
   /** Sessão de 10 num clique, sem passar pelos filtros. */
-  function sessaoRapida(preset: Partial<Filtros> = {}) {
+  async function sessaoRapida(preset: Partial<Filtros> = {}) {
     if (!indice) return
-    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const rapido: Filtros = { ...FILTROS_VAZIOS, areas: filtros.areas, embaralhar: true, limite: 10, ...preset }
-    iniciar(rapido, montarSessao(indice, rapido, Date.now(), contexto))
+    if (!(await iniciarComAviso(rapido, montarSessao(indice, rapido, Date.now(), contexto)))) return
     navegar('/sessao')
   }
 
@@ -234,11 +233,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     document.getElementById('etapa-formato')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
-  function comecar() {
+  async function comecar() {
     if (!indice || total === 0 || carregandoBusca) return
-    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const ids = montarSessao(indice, filtros, Date.now(), contexto)
-    iniciar(filtros, ids, simulado ? { simulado: true, limiteSegundos: minutos * 60 } : {})
+    if (!(await iniciarComAviso(filtros, ids, simulado ? { simulado: true, limiteSegundos: minutos * 60 } : {}))) return
     navegar('/sessao')
   }
 

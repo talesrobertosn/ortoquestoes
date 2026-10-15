@@ -4,6 +4,7 @@ import type { EstadoSessao, Filtros, Letra, Resposta } from '../dados/tipos'
 import { ROTULO_AREA } from '../dados/tipos'
 import { usarArmazenado } from './usarArmazenado'
 import { gravar, ler } from './armazenamento'
+import { confirmar } from '../componentes/Confirmar'
 
 export const CHAVE_SESSAO = 'sessao:atual'
 export const CHAVE_HISTORICO = 'historico'
@@ -138,7 +139,41 @@ export function usarSessao() {
 
   const encerrar = useCallback(() => definirSessao(null), [definirSessao])
 
-  return { sessao, iniciar, responder, irPara, alternarRevisar, alternarRiscada, finalizar, encerrar, definirSessao }
+  /**
+   * Começa uma sessão nova avisando antes de substituir uma em andamento. A
+   * anterior é finalizada (entra no histórico com o que foi respondido), em vez
+   * de sumir: sete páginas trocavam a sessão, umas sem perguntar, outras com
+   * window.confirm, e nenhuma guardava a anterior.
+   * Devolve false quando a pessoa prefere continuar a atual. `liberarParaNova`
+   * é só a pergunta (para quem precisa perguntar antes de chamar o servidor).
+   */
+  const liberarParaNova = useCallback(async (opcoes: OpcoesSessao = {}) => {
+      const atual = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
+      const respondidas = atual ? Object.keys(atual.respostas).length : 0
+      const emAndamento = !!atual && !atual.concluidaEm && respondidas > 0 && respondidas < atual.ids.length
+      // Retomar o mesmo Simulado Nacional não é substituir.
+      if (emAndamento && !(opcoes.nacional && atual!.nacional === opcoes.nacional)) {
+        const sim = await confirmar({
+          titulo: 'Substituir a sessão em andamento?',
+          texto: `Você respondeu ${respondidas} de ${atual!.ids.length}. A sessão atual vai para o histórico com o que já foi feito.`,
+          sim: 'Começar a nova',
+          nao: 'Continuar a atual',
+        })
+        if (!sim) return false
+        registrarHistorico({ ...atual!, concluidaEm: Date.now() })
+      }
+      return true
+  }, [])
+  const iniciarComAviso = useCallback(
+    async (filtros: Filtros, ids: string[], opcoes: OpcoesSessao = {}) => {
+      if (!(await liberarParaNova(opcoes))) return false
+      iniciar(filtros, ids, opcoes)
+      return true
+    },
+    [iniciar, liberarParaNova],
+  )
+
+  return { sessao, iniciar, iniciarComAviso, liberarParaNova, responder, irPara, alternarRevisar, alternarRiscada, finalizar, encerrar, definirSessao }
 }
 
 /**

@@ -57,7 +57,7 @@ export function CadernoErros() {
   const { indice } = usarIndice()
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const [notas] = usarArmazenado<Record<string, string>>('notas', {})
-  const { iniciar } = usarSessao()
+  const { iniciarComAviso } = usarSessao()
   const [situacao, definirSituacao] = usarArmazenado<Situacao>('erros:situacao', 'abertos')
   const [ordem, definirOrdem] = usarArmazenado<Ordem>('erros:ordem', 'recentes')
   const [tema, definirTema] = useState<number | null>(null)
@@ -106,9 +106,9 @@ export function CadernoErros() {
 
   useEffect(() => { definirLimite(POR_PAGINA) }, [situacao, tema, ordem])
 
-  const refazer = (ids: string[]) => {
+  const refazer = async (ids: string[]) => {
     if (!ids.length) return
-    iniciar({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, situacao: 'erradas', limite: ids.length, embaralhar: true }, ids)
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, situacao: 'erradas', limite: ids.length, embaralhar: true }, ids))) return
     navegar('/sessao')
   }
 
