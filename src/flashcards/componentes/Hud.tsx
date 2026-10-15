@@ -2,7 +2,8 @@ import { forwardRef, memo } from 'react'
 import { recurso } from '../../config'
 import { ASSADOS, type MetaAssada } from '../efeitos/assados'
 import { caixaDoCorpo, pintarPersonagem, POSES, TAMANHO, type Personagem } from '../efeitos/personagens'
-import { RECOMPENSAS, type TipoPoder } from '../motor/poderes'
+import { RECOMPENSAS, type TipoPoder, type TipoReliquia } from '../motor/poderes'
+import { usarDica, type ConteudoDica } from './Dica'
 import { Sprite } from './Sprite'
 
 /** Folhas de sprite já montadas (uma imagem por personagem e variante), reaproveitadas entre telas. */
@@ -53,6 +54,21 @@ function escalaAssada(quem: Personagem, escala: number, meta: MetaAssada) {
   return Math.max(0.5, Math.round(alvo * 4) / 4)
 }
 
+/** Folhas já pedidas ao navegador (pré-carregamento: o sprite não "pisca" vazio ao entrar). */
+const pedidas = new Set<string>()
+/** Começa a baixar a folha assada do personagem (e o clarão branco) antes de ele aparecer. */
+export function precarregarAtor(quem: Personagem, variante?: string) {
+  const a = assadoDe(quem, variante)
+  if (!a || typeof Image === 'undefined') return
+  for (const arquivo of [a.nome, a.nome + '-branco']) {
+    if (pedidas.has(arquivo)) continue
+    pedidas.add(arquivo)
+    const img = new Image()
+    img.decoding = 'async'
+    img.src = recurso(`flashcards/sprites/${arquivo}.png`)
+  }
+}
+
 const QuadrosAssados = memo(function QuadrosAssados({ nome, meta, escala, dx, dy }: { nome: string; meta: MetaAssada; escala: number; dx: number; dy: number }) {
   const w = meta.largura * escala, h = meta.altura * escala
   const [x, y] = meta.caixa
@@ -98,6 +114,13 @@ interface AtorProps {
   chefe?: boolean
   /** Troca de paleta (variante do adversário ou estágio do herói). */
   variante?: string
+  /**
+   * A folha assada é maior que a caixa do desenho antigo e transborda dela. Com
+   * `contido`, o ator ganha margens do tamanho do transbordo: o corpo não sai pela
+   * borda da tela (o Golem de Gesso ficava cortado à esquerda no celular) nem
+   * entra por baixo do cabeçalho (a cabeça sumia atrás das abas no computador).
+   */
+  contido?: boolean
   children?: React.ReactNode
 }
 
@@ -106,7 +129,7 @@ interface AtorProps {
  * As animações (dano, ataque, bloqueio, derrota) entram por classes no
  * elemento `.fc-ator__corpo`; as poses, por `data-pose` no próprio ator.
  */
-export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, escala, classe, chefe, variante, children }, ref) {
+export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, escala, classe, chefe, variante, contido, children }, ref) {
   const assado = assadoDe(quem, variante)
   const ea = assado ? escalaAssada(quem, escala, assado.meta) : escala
   // o ator ocupa no layout o mesmo espaço do desenho antigo; a folha assada, maior,
@@ -116,8 +139,14 @@ export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, 
   // um terço do que cresceu desce sobre a borda da mesa (o adversário pisa na beira da arena)
   // o herói fica de pé sobre a mesma linha em todos os estágios: cresce só para cima
   const dy = assado ? (h * escala - assado.meta.caixa[3] * ea) * (quem === 'heroi' ? 1 : 0.66) : 0
+  // transbordo do corpo visível para os lados e para cima (só a folha assada transborda)
+  const lado = contido && dx < 0 ? Math.ceil(-dx) : 0
+  const acima = contido && dy < 0 ? Math.ceil(-dy) : 0
+  const caixa: React.CSSProperties = { width: w * escala, height: h * escala }
+  if (lado) { caixa.marginLeft = lado; caixa.marginRight = lado }
+  if (acima) caixa.marginTop = acima
   return (
-    <div ref={ref} className={`fc-ator fc-ator--${quem}${assado ? ' fc-ator--assado' : ''}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={{ width: w * escala, height: h * escala }}>
+    <div ref={ref} className={`fc-ator fc-ator--${quem}${assado ? ' fc-ator--assado' : ''}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={caixa}>
       <span className="fc-ator__aura" aria-hidden="true" />
       <span className="fc-ator__sombra" aria-hidden="true" />
       <div className="fc-ator__corpo" aria-hidden="true">{assado ? <QuadrosAssados nome={assado.nome} meta={assado.meta} escala={ea} dx={dx} dy={dy} /> : <Quadros quem={quem} escala={escala} variante={variante} />}</div>
@@ -142,16 +171,76 @@ export function BarraVida({ atual, maximo, tipo, rotulo }: { atual: number; maxi
   )
 }
 
-/** Encaixe de poder: vazio elegante, ícone grande e cargas. */
-export function Encaixe({ tipo, carga, extra, usavel, aoUsar }: { tipo?: TipoPoder; carga?: number; extra?: number; usavel?: boolean; aoUsar?: () => void }) {
-  if (!tipo) return <span className="fc-encaixe fc-encaixe--vazio" aria-label="Encaixe vazio"><span aria-hidden="true" /></span>
-  const d = RECOMPENSAS[tipo]
+const NOME_RARIDADE = { comum: 'Comum', incomum: 'Incomum', rara: 'Rara', epica: 'Épica', lendaria: 'Lendária' } as const
+
+/**
+ * Encaixe de poder: vazio elegante, ícone grande e cargas, com a dica do jogo
+ * (nome, efeito, cargas e se dá para usar agora). No computador, o clique usa e
+ * o mouse mostra a dica; no toque, o primeiro toque mostra a dica com "Usar".
+ * O botão nunca fica `disabled`: um botão desabilitado engole o toque e a dica
+ * não abriria; quando não dá para usar, ele avisa por quê.
+ */
+export function Encaixe({ tipo, carga, extra, usavel, aoUsar, motivo }: { tipo?: TipoPoder; carga?: number; extra?: number; usavel?: boolean; aoUsar?: () => void; motivo?: string }) {
+  const d = tipo ? RECOMPENSAS[tipo] : null
+  const cargas = carga ?? 0
+  const conteudo: ConteudoDica | null = d ? {
+    titulo: d.nome, selo: `Poder ${d.ativo ? 'de usar' : 'automático'} · ${NOME_RARIDADE[d.raridade]}`, texto: d.texto, detalhe: d.detalhe, icone: d.icone, cor: d.cor,
+    estado: [cargas > 0 ? `${cargas} carga${cargas > 1 ? 's' : ''}` : '', extra !== undefined ? `faltam ${extra} acerto${extra === 1 ? '' : 's'}` : '',
+      d.ativo ? (usavel ? 'pronto para usar' : motivo ?? 'use antes de responder') : 'dispara sozinho na hora certa'].filter(Boolean).join(' · '),
+    acao: usavel && aoUsar ? { rotulo: 'Usar agora', aoUsar } : undefined,
+  } : null
+  const dica = usarDica(conteudo)
+  if (!tipo || !d) return <span className="fc-encaixe fc-encaixe--vazio" aria-label="Encaixe vazio"><span aria-hidden="true" /></span>
   return (
-    <button type="button" className={`fc-encaixe${usavel ? ' fc-encaixe--usavel' : ''}`} style={{ ['--cor' as string]: d.cor }} disabled={!usavel} onClick={aoUsar}
-      title={`${d.nome}: ${d.texto}${usavel ? ' Toque para usar (tecla P).' : ''}`} aria-label={`${d.nome}${carga && carga > 1 ? `, ${carga} cargas` : ''}${usavel ? ', toque para usar' : ''}`}>
-      <Sprite nome={d.icone} className="fc-sprite--icone" />
-      {(carga ?? 0) > 1 && <b>{carga}</b>}
-      {extra !== undefined && <b>{extra}</b>}
-    </button>
+    <>
+      <button type="button" {...dica.ouvintes} className={`fc-encaixe${usavel ? ' fc-encaixe--usavel' : ' fc-encaixe--espera'}`} style={{ ['--cor' as string]: d.cor }}
+        aria-disabled={!usavel || undefined}
+        onClick={() => { if (dica.toqueAbre()) return; if (usavel) { dica.fechar(); aoUsar?.() } }}
+        aria-label={`${d.nome}${cargas > 1 ? `, ${cargas} cargas` : ''}${usavel ? ', toque para usar' : ''}`}>
+        <Sprite nome={d.icone} className="fc-sprite--icone" />
+        {cargas > 1 && <b>{cargas}</b>}
+        {extra !== undefined && <b>{extra}</b>}
+      </button>
+      {dica.balao}
+    </>
+  )
+}
+
+/** Relíquia equipada, com a mesma dica dos poderes (passar o mouse ou tocar). */
+export function Reliquia({ tipo, copias }: { tipo: TipoReliquia; copias: number }) {
+  const d = RECOMPENSAS[tipo]
+  const dica = usarDica({ titulo: d.nome, selo: `Relíquia · ${NOME_RARIDADE[d.raridade]}`, texto: d.texto, detalhe: d.detalhe, icone: d.icone, cor: d.cor, estado: copias > 1 ? `${copias} cópias · vale a partida toda` : 'vale a partida toda' })
+  return (
+    <>
+      <button type="button" {...dica.ouvintes} className="fc-reliquia" style={{ ['--cor' as string]: d.cor }} onClick={() => { if (!dica.toqueAbre()) dica.alternar() }} aria-label={`Relíquia ${d.nome}${copias > 1 ? ` ×${copias}` : ''}: ${d.texto}`}>
+        <Sprite nome={d.icone} className="fc-sprite--icone" />{copias > 1 && <b>{copias}</b>}
+      </button>
+      {dica.balao}
+    </>
+  )
+}
+
+/** No celular não cabe uma pedra por relíquia: um selo com a contagem abre a lista inteira. */
+export function ReliquiasCompactas({ lista }: { lista: TipoReliquia[] }) {
+  const unicas = [...new Set(lista)]
+  const dica = usarDica(unicas.length ? {
+    titulo: unicas.length === 1 ? '1 relíquia' : `${unicas.length} relíquias`, selo: 'Valem a partida toda', texto: 'Bônus que você ganhou nas recompensas.', cor: '#e9b955',
+    extra: (
+      <ul className="fc-dica-jogo__lista">
+        {unicas.map((r) => {
+          const d = RECOMPENSAS[r], n = lista.filter((x) => x === r).length
+          return <li key={r} style={{ ['--cor' as string]: d.cor }}><span className="fc-dica-jogo__mini" aria-hidden="true"><Sprite nome={d.icone} /></span><span><strong>{d.nome}{n > 1 ? ` ×${n}` : ''}</strong><small>{d.texto}</small></span></li>
+        })}
+      </ul>
+    ),
+  } : null)
+  if (!unicas.length) return null
+  return (
+    <>
+      <button type="button" {...dica.ouvintes} className="fc-reliquias-selo" onClick={() => { if (!dica.toqueAbre()) dica.alternar() }} aria-label={`${unicas.length} relíquias: ver a lista`}>
+        <Sprite nome={RECOMPENSAS[unicas[unicas.length - 1]].icone} className="fc-sprite--icone" /><b>{lista.length}</b>
+      </button>
+      {dica.balao}
+    </>
   )
 }
