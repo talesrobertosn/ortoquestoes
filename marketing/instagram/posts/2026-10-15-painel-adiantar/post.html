@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Painel de partidas: adiantar no Cronograma</title>
+<!-- Estilo novo (15/10/2026): painel de partidas de aeroporto, com letras em plaquinhas que viram.
+     Cada dia de estudo é um "voo": feito, adiantado ou no horário. Propaganda da função Adiantar do
+     Cronograma e das revisões/flashcards como extras. Telas reais em telas/ (modo demonstração). -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root {
+  --noite: #0c1013; --painel: #15191d; --moldura: #2a2f35; --placa-a: #2a2f36; --placa-b: #1d2126;
+  --letra: #f3efe4; --apagada: #8d949c; --ouro: #f4cf7c; --ouro2: #c9952f; --verde: #3ecf8e; --verdete: #0f6d5f; --azul: #7fb8ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--letra); }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px;
+  background: radial-gradient(120% 70% at 50% 0%, #1b2329 0%, var(--noite) 60%), var(--noite); }
+section.story { height: 1920px; }
+/* textura de saguão: linhas de luz bem fracas */
+section::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,0.018) 0 2px, transparent 2px 120px); pointer-events: none; }
+.marca { position: absolute; left: 64px; top: 56px; display: flex; align-items: center; gap: 14px; font-family: Jakarta; font-weight: 800; font-size: 30px; letter-spacing: -0.01em; }
+.marca i { display: grid; gap: 5px; }
+.marca i b { display: block; width: 30px; height: 7px; border-radius: 3px; background: #5d666f; }
+.marca i b:nth-child(2) { background: var(--ouro); width: 38px; }
+.marca span { color: var(--apagada); font-weight: 600; }
+.selo { position: absolute; right: 64px; top: 52px; padding: 10px 20px; border-radius: 999px; border: 2px solid var(--ouro); color: var(--ouro); font-family: Jakarta; font-weight: 800; font-size: 22px; letter-spacing: 0.12em; text-transform: uppercase; }
+.pagina { position: absolute; right: 64px; bottom: 52px; font-weight: 700; font-size: 22px; color: var(--apagada); letter-spacing: 0.1em; }
+
+/* ── O painel ── */
+.painel { position: relative; margin: 0 auto; width: 972px; padding: 26px 22px 30px; border-radius: 22px; background: linear-gradient(180deg, #1a1f24, var(--painel)); border: 3px solid var(--moldura); box-shadow: 0 30px 80px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.06); }
+.painel__topo { display: flex; justify-content: space-between; align-items: center; margin: 0 6px 18px; font-weight: 800; font-size: 22px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ouro); }
+.painel__topo em { font-style: normal; color: var(--apagada); letter-spacing: 0.12em; }
+.cols, .linha { display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; column-gap: 14px; align-items: center; }
+.cols span:nth-child(1) { width: 183px; } .cols span:nth-child(2) { width: 214px; } .cols span:nth-child(3) { width: 152px; } .cols span:nth-child(4) { width: 307px; }
+.cols { margin: 0 6px 10px; font-size: 16px; font-weight: 700; letter-spacing: 0.18em; color: var(--apagada); text-transform: uppercase; }
+.linha { padding: 10px 6px; border-top: 1px solid rgba(255,255,255,0.05); }
+.flap { display: flex; gap: 3px; }
+.flap i { position: relative; display: grid; place-items: center; width: 25px; height: 40px; border-radius: 4px; background: linear-gradient(180deg, var(--placa-a) 0 49%, #0b0d0f 49% 51%, var(--placa-b) 51%); box-shadow: 0 2px 0 #08090b; font-style: normal; font-weight: 800; font-size: 26px; line-height: 1; color: var(--letra); text-transform: uppercase; }
+.flap i::after { content: ''; position: absolute; left: 0; right: 0; top: 49%; height: 2%; background: rgba(0,0,0,0.6); }
+.flap.ouro i { color: var(--ouro); }
+.flap.verde i { color: var(--verde); }
+.flap.azul i { color: var(--azul); }
+.flap.apagada i { color: #5b636b; }
+.flap i.vira { transform: perspective(160px) rotateX(-28deg); transform-origin: 50% 0; filter: brightness(1.25); }
+/* painel grande (capa e story) */
+.grande .flap i { width: 28px; height: 50px; font-size: 31px; }
+.grande .linha { padding: 13px 6px; }
+
+/* ── Texto ── */
+.titulo { font-family: Jakarta; font-weight: 800; letter-spacing: -0.025em; line-height: 1.02; text-wrap: balance; }
+.titulo em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 32px; line-height: 1.38; color: #c7cdd3; text-wrap: balance; }
+.sub b { color: var(--letra); }
+.rotulo { font-weight: 800; font-size: 22px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ouro); }
+.nota { position: absolute; left: 64px; bottom: 52px; font-size: 20px; color: var(--apagada); }
+
+/* capa */
+.capa .painel { margin-top: 210px; }
+.capa .bloco { position: absolute; left: 64px; right: 64px; bottom: 130px; display: grid; gap: 22px; }
+.capa:not(.story) .titulo { font-size: 104px; }
+.capa .titulo { font-size: 92px; }
+
+/* antes e agora */
+.comparar { position: absolute; left: 64px; right: 64px; top: 140px; display: grid; gap: 26px; }
+.comparar .titulo { font-size: 66px; }
+.caso { display: grid; gap: 18px; padding: 30px 32px; border-radius: 22px; background: rgba(255,255,255,0.035); border: 2px solid var(--moldura); }
+.caso--agora { border-color: var(--ouro); background: linear-gradient(160deg, rgba(244,207,124,0.12), rgba(244,207,124,0.02)); }
+.caso h3 { display: flex; align-items: baseline; gap: 16px; font-family: Jakarta; font-size: 34px; font-weight: 800; }
+.caso h3 small { font-family: Inter; font-size: 22px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--apagada); }
+.caso--agora h3 small { color: var(--ouro); }
+.caso p { font-size: 28px; line-height: 1.4; color: #c7cdd3; }
+.caso p b { color: var(--letra); }
+.troca { display: flex; align-items: center; gap: 18px; font-size: 26px; font-weight: 700; color: var(--apagada); }
+.troca .seta { font-size: 40px; color: var(--ouro); font-weight: 800; }
+.troca .flap i { width: 44px; height: 70px; font-size: 48px; border-radius: 6px; }
+
+/* tela real */
+.tela { position: absolute; left: 50%; transform: translateX(-50%); border-radius: 34px; overflow: hidden; box-shadow: 0 40px 90px rgba(0,0,0,0.6), 0 0 0 10px #22272d, 0 0 0 12px #3a4048; }
+.tela img { display: block; width: 100%; }
+.chama { position: absolute; left: 64px; right: 64px; display: grid; gap: 16px; }
+
+/* extras */
+.extras { position: absolute; left: 64px; right: 64px; top: 130px; bottom: 110px; display: grid; align-content: center; gap: 40px; }
+.extras .titulo { font-size: 74px; }
+.meta { display: grid; gap: 14px; }
+.meta li { list-style: none; display: grid; grid-template-columns: 64px 1fr; gap: 26px; align-items: center; padding: 32px 30px; border-radius: 18px; background: rgba(255,255,255,0.04); border: 2px solid var(--moldura); font-size: 30px; line-height: 1.3; }
+.meta li b { display: block; font-family: Jakarta; font-size: 40px; }
+.meta li small { font-size: 24px; color: var(--apagada); }
+.meta li .bola { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; font-weight: 900; font-size: 30px; }
+.meta li.conta .bola { background: var(--verde); color: #08241a; }
+.meta li.extra { border-style: dashed; background: transparent; }
+.meta li.extra .bola { border: 3px dashed #6d757e; color: #9aa2aa; }
+
+/* final */
+.final { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 34px; text-align: center; padding: 0 80px; }
+.final .titulo { font-size: 96px; }
+.site { font-family: Jakarta; font-weight: 800; font-size: 44px; color: var(--letra); padding: 18px 36px; border-radius: 999px; background: linear-gradient(135deg, var(--ouro), var(--ouro2)); color: #3b2604; box-shadow: 0 6px 0 #8a6416; }
+.perfil { font-size: 28px; color: var(--apagada); }
+
+/* stories */
+.story .painel { margin-top: 300px; }
+.story .marca { top: 110px; }
+.story .selo { top: 106px; }
+.story .bloco { position: absolute; left: 64px; right: 64px; bottom: 240px; display: grid; gap: 26px; }
+.story.capa .painel { margin-top: 400px; }
+.story.capa .bloco { top: 1010px; bottom: auto; }
+.story .titulo { font-size: 104px; }
+.story .sub { font-size: 38px; }
+.story .nota { bottom: 120px; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════ FEED (1080×1350) ═════════════ -->
+
+<section id="feed-01-capa" class="capa">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="selo">Cronograma</div>
+  <div class="painel grande">
+    <p class="painel__topo">Partidas · seu estudo <em>até a prova</em></p>
+    <div class="cols"><span>Dia</span><span>Área</span><span>Questões</span><span>Situação</span></div>
+    <div class="linha"><span class="flap" data-t="HOJE" data-n="6"></span><span class="flap" data-t="TRAUMA" data-n="7"></span><span class="flap" data-t="60+30" data-n="5"></span><span class="flap verde" data-t="FEITO" data-n="10"></span></div>
+    <div class="linha"><span class="flap" data-t="AMANHÃ" data-n="6"></span><span class="flap" data-t="JOELHO" data-n="7"></span><span class="flap ouro" data-t="30" data-n="5"></span><span class="flap ouro" data-t="ADIANTADO" data-n="10"></span></div>
+    <div class="linha"><span class="flap" data-t="SÁB" data-n="6"></span><span class="flap" data-t="COLUNA" data-n="7"></span><span class="flap" data-t="60" data-n="5"></span><span class="flap azul" data-t="NO HORÁRIO" data-n="10"></span></div>
+    <div class="linha"><span class="flap apagada" data-t="DOM" data-n="6"></span><span class="flap apagada" data-t="FOLGA" data-n="7"></span><span class="flap apagada" data-t="" data-n="5"></span><span class="flap apagada" data-t="" data-n="10"></span></div>
+    <div class="linha"><span class="flap" data-t="SEG" data-n="6"></span><span class="flap" data-t="OMBRO" data-n="7"></span><span class="flap" data-t="60" data-n="5"></span><span class="flap azul" data-t="NO HORÁRIO" data-n="10"></span></div>
+  </div>
+  <div class="bloco">
+    <p class="rotulo">Novo no Cronograma</p>
+    <h1 class="titulo">Fez a mais hoje? <em>Amanhã fica mais leve.</em></h1>
+  </div>
+  <p class="pagina">1/5</p>
+</section>
+
+<section id="feed-02-antes-agora">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="comparar">
+    <h2 class="titulo">Você fez <em>30 questões</em> além da meta de hoje.</h2>
+    <div class="caso">
+      <h3>Antes <small>espalhava</small></h3>
+      <p>As 30 se diluíam por todos os dias até a prova. Amanhã quase não mudava.</p>
+      <div class="troca">amanhã <span class="flap apagada" data-t="60" data-n="2"></span><span class="seta">→</span><span class="flap" data-t="59" data-n="2"></span></div>
+    </div>
+    <div class="caso caso--agora">
+      <h3>Agora <small>sai de amanhã</small></h3>
+      <p>O que passou da meta <b>sai do próximo dia de estudo</b>. Se passar de um dia inteiro, o resto vai para o seguinte.</p>
+      <div class="troca">amanhã <span class="flap apagada" data-t="60" data-n="2"></span><span class="seta">→</span><span class="flap ouro" data-t="30" data-n="2"></span></div>
+    </div>
+    <div class="caso caso--agora">
+      <h3>Fez 60 a mais? <small>um dia inteiro</small></h3>
+      <div class="troca">amanhã <span class="flap apagada" data-t="60" data-n="2"></span><span class="seta">→</span><span class="flap verde" data-t="LIVRE" data-n="5"></span></div>
+    </div>
+  </div>
+  <p class="pagina">2/5</p>
+</section>
+
+<section id="feed-03-botoes">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="chama" style="top: 150px">
+    <p class="rotulo">No cartão Hoje</p>
+    <h2 class="titulo" style="font-size: 64px">Escolha quanto adiantar. <em>Cada botão mostra o efeito.</em></h2>
+  </div>
+  <div class="tela" style="top: 470px; width: 760px"><img src="telas/adiantar-feita.png" alt=""></div>
+  <p class="nota">Tela ilustrativa</p>
+  <p class="pagina">3/5</p>
+</section>
+
+<section id="feed-04-extras">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="extras">
+    <p class="rotulo">E mais</p>
+    <h2 class="titulo">A meta do dia é uma só: <em>as questões novas.</em></h2>
+    <ul class="meta">
+      <li class="conta"><span class="bola">✓</span><span><b>Questões do dia</b>conta na meta e na sua sequência</span></li>
+      <li class="extra"><span class="bola">+</span><span><b>Revisões</b><small>extra, se sobrar tempo</small></span></li>
+      <li class="extra"><span class="bola">+</span><span><b>Flashcards</b><small>extra, se sobrar tempo</small></span></li>
+    </ul>
+    <p class="sub">Revisar e fazer flashcards continua valendo muito. Só não trava mais o seu dia.</p>
+  </div>
+  <p class="pagina">4/5</p>
+</section>
+
+<section id="feed-05-final">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="final">
+    <div class="painel" style="width: 760px">
+      <div class="linha" style="grid-template-columns: 1fr 1fr; border: 0"><span class="flap" data-t="SEU ESTUDO" data-n="10"></span><span class="flap ouro" data-t="ADIANTADO" data-n="10"></span></div>
+    </div>
+    <h2 class="titulo">No horário. <em>Ou adiantado.</em></h2>
+    <p class="sub">O Cronograma monta o seu estudo até a prova, dia a dia, com o que mais cai. Para assinantes.</p>
+    <p class="site">ortoquestoes.com.br</p>
+    <p class="perfil">Mais no nosso perfil, @ortoquestoes</p>
+  </div>
+  <p class="pagina">5/5</p>
+</section>
+
+<!-- ═════════════ STORIES (1080×1920) ═════════════ -->
+
+<section id="story-01-painel" class="story capa">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="selo">Cronograma</div>
+  <div class="painel grande">
+    <p class="painel__topo">Partidas · seu estudo <em>até a prova</em></p>
+    <div class="cols"><span>Dia</span><span>Área</span><span>Questões</span><span>Situação</span></div>
+    <div class="linha"><span class="flap" data-t="HOJE" data-n="6"></span><span class="flap" data-t="TRAUMA" data-n="7"></span><span class="flap" data-t="60+30" data-n="5"></span><span class="flap verde" data-t="FEITO" data-n="10"></span></div>
+    <div class="linha"><span class="flap" data-t="AMANHÃ" data-n="6"></span><span class="flap" data-t="JOELHO" data-n="7"></span><span class="flap ouro" data-t="30" data-n="5"></span><span class="flap ouro" data-t="ADIANTADO" data-n="10"></span></div>
+    <div class="linha"><span class="flap" data-t="SÁB" data-n="6"></span><span class="flap" data-t="COLUNA" data-n="7"></span><span class="flap" data-t="60" data-n="5"></span><span class="flap azul" data-t="NO HORÁRIO" data-n="10"></span></div>
+    <div class="linha"><span class="flap" data-t="SEG" data-n="6"></span><span class="flap" data-t="OMBRO" data-n="7"></span><span class="flap" data-t="60" data-n="5"></span><span class="flap azul" data-t="NO HORÁRIO" data-n="10"></span></div>
+  </div>
+  <div class="bloco">
+    <p class="rotulo">Novo no Cronograma</p>
+    <h1 class="titulo">Adiantou hoje? <em>Sai de amanhã.</em></h1>
+    <p class="sub">Fez 30 a mais, amanhã cai 30. Fez um dia inteiro a mais, <b>amanhã fica livre</b>.</p>
+  </div>
+</section>
+
+<section id="story-02-tela" class="story">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="chama" style="top: 220px">
+    <p class="rotulo">Meta feita?</p>
+    <h2 class="titulo" style="font-size: 78px">Os botões de adiantar <em>viram o destaque.</em></h2>
+  </div>
+  <div class="tela" style="top: 560px; width: 560px"><img src="telas/hoje-feita.png" alt=""></div>
+  <p class="nota">Tela ilustrativa</p>
+</section>
+
+<section id="story-03-final" class="story">
+  <div class="marca"><i><b></b><b></b><b></b></i>Orto Questões</div>
+  <div class="final">
+    <p class="rotulo">E mais</p>
+    <h2 class="titulo" style="font-size: 88px">Revisões e flashcards agora são <em>extras.</em></h2>
+    <p class="sub" style="font-size: 38px">A meta do dia são as questões novas. O resto é bônus, se sobrar tempo.</p>
+    <div class="painel" style="width: 820px; margin-top: 20px">
+      <div class="linha" style="grid-template-columns: 1fr 1fr; border: 0"><span class="flap" data-t="SEU ESTUDO" data-n="10"></span><span class="flap ouro" data-t="ADIANTADO" data-n="10"></span></div>
+    </div>
+    <p class="site" style="margin-top: 30px">ortoquestoes.com.br</p>
+  </div>
+</section>
+
+<script>
+// Cada letra numa plaquinha; data-n é o número de plaquinhas da coluna. data-vira: a 1ª plaquinha "virando".
+for (const el of document.querySelectorAll('.flap')) {
+  const t = (el.dataset.t || '').padEnd(+el.dataset.n || 0, ' ')
+  el.innerHTML = [...t].map((c, i) => `<i${el.dataset.vira && i === 0 ? ' class="vira"' : ''}>${c === ' ' ? '&nbsp;' : c}</i>`).join('')
+}
+</script>
+</body>
+</html>
