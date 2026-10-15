@@ -5,6 +5,7 @@ import { ROTULO_AREA } from '../dados/tipos'
 import { usarArmazenado } from './usarArmazenado'
 import { gravar, ler } from './armazenamento'
 import { confirmar } from '../componentes/Confirmar'
+import { navegar } from '../util/rotas'
 
 export const CHAVE_SESSAO = 'sessao:atual'
 export const CHAVE_HISTORICO = 'historico'
@@ -160,6 +161,8 @@ export function usarSessao() {
           texto: `Você respondeu ${respondidas} de ${atual!.ids.length}. A sessão atual vai para o histórico com o que já foi feito.`,
           sim: 'Começar a nova',
           nao: 'Continuar a atual',
+          // Continuar a atual leva até ela (o X só fecha e deixa a pessoa onde está).
+          aoNao: () => navegar('/sessao'),
         })
         if (!sim) return false
         registrarHistorico({ ...atual!, concluidaEm: Date.now() })
