@@ -1,0 +1,82 @@
+{
+  "post": "post-11",
+  "data": "2026-10-24",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "cupom-tuberculose-cotovelo",
+  "formato": "stories (3)",
+  "estilo": "cupom-fiscal",
+  "assunto": "Tuberculose no membro superior: cotovelo",
+  "gancho": "Tuberculose no braço. Qual articulação?",
+  "por_que": "Infecção e osteometabólicas aparecem pouco no feed; questão curta, cabe na nota.",
+  "questao": {
+    "id": "osteometabolicas-0077",
+    "area": "Osteometabólicas",
+    "subtema": "Tuberculose osteoarticular",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na tuberculose osteoarticular dos membros superiores, a articulação mais frequentemente acometida é",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "o ombro."
+      },
+      {
+        "letra": "B",
+        "texto": "o punho."
+      },
+      {
+        "letra": "C",
+        "texto": "o cotovelo."
+      },
+      {
+        "letra": "D",
+        "texto": "a acromioclavicular."
+      }
+    ],
+    "gabarito": "C",
+    "imagens": [],
+    "comentario": {
+      "correta": "**Correta: C (cotovelo).** No membro superior, o cotovelo é a articulação mais acometida pela tuberculose osteoarticular, com frequência a partir de um foco no olécrano ou na ulna proximal.",
+      "incorretas": {
+        "A": "O **ombro** é acometido com menos frequência, geralmente na forma seca (caries sicca), com atrofia e rigidez sem abscesso.",
+        "B": "O **punho** é menos frequente que o cotovelo; a tuberculose ali costuma envolver as bainhas tendíneas e os ossos do carpo.",
+        "D": "A **acromioclavicular** é sede muito rara da doença."
+      },
+      "conceito_trechos": [
+        "**Distribuição da tuberculose osteoarticular.** A tuberculose chega ao esqueleto por via hematogênica e prefere regiões de osso esponjoso bem vascularizado e articulações que suportam carga. A ordem de frequência é: **coluna** (cerca de metade dos casos), **quadril** e **joelho**. No membro superior, ela é menos comum, mas o **cotovelo** é a articulação mais acometida."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cupom-fiscal",
+      "conteudo": {
+        "gancho": "Tuberculose no braço.\n[[Qual articulação?]]",
+        "explicacao": [
+          "No membro superior, o **cotovelo** é a mais acometida, muitas vezes a partir de um foco no **olécrano** ou na ulna proximal.",
+          "Quadro arrastado: aumento de volume fusiforme, **atrofia** precoce e perda progressiva do movimento, sobretudo da extensão."
+        ],
+        "erradas": {
+          "A": "Ombro: menos comum, forma seca.",
+          "B": "Punho: menos frequente que o cotovelo.",
+          "D": "Acromioclavicular: muito rara."
+        },
+        "regra": "TB no membro superior =\n[[cotovelo.]]"
+      }
+    }
+  ],
+  "publicacao": [
+    "Story da pergunta: cupom-fiscal-story-01, das 7h às 8h.",
+    "Stories da resposta e do cupom: story-02 e story-03, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão osteometabolicas-0077 (TARO 2026), gabarito oficial C: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

@@ -1,0 +1,248 @@
+<!doctype html>
+<!--
+  MODELO PARAMETRIZADO DO KIT · Tabela de Snellen (feed, 5 imagens 1080x1350) · aprovado por Tales em 12/10/2026.
+  O CSS é o do modelo aprovado (marketing/instagram/estilos/snellen/modelo.html), sem mudança.
+  NÃO edite este arquivo para fazer um post: preencha o JSON da fila e rode
+    node marketing/kit/renderizar.mjs marketing/kit/fila/post-NN.json
+  Campos aceitos: marketing/kit/modelos/CAMPOS.md · Guia do estilo: marketing/instagram/estilos/SNELLEN-E-CUPOM.md
+  Aberto direto no navegador, mostra o EXEMPLO (o post aprovado original).
+-->
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Kit · Tabela de Snellen</title>
+<style>
+@font-face { font-family: Inter; src: url(../../instagram/fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Source; src: url(../../instagram/fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; }
+section { position: relative; width: 1080px; height: 1350px; overflow: hidden; font-family: Inter, sans-serif; }
+section.story { height: 1920px; }
+b, strong { font-weight: 800; }
+
+/* ===================== FEED · TABELA DE SNELLEN ===================== */
+.sn { background: #e9e6df; color: #121212;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.035) 1px, transparent 1px); background-size: 120px 100%; }
+.sn::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: #d9d4ca; border-top: 6px solid #c9c2b5; }
+.sn .topo { position: absolute; z-index: 3; left: 64px; right: 64px; top: 44px; display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font-size: 32px; color: #121212; letter-spacing: -0.5px; }
+.marca svg { width: 52px; height: 52px; }
+.etiqueta { font-size: 24px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #5a554c; padding: 8px 16px; border: 2px solid #b8b0a2; border-radius: 40px; }
+.pagina { position: absolute; z-index: 3; left: 64px; right: 64px; bottom: 40px; display: flex; justify-content: space-between; align-items: center; font-size: 24px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #6b655a; }
+.pagina b { color: #121212; }
+/* o quadro iluminado */
+.quadro { position: absolute; z-index: 2; left: 150px; right: 150px; top: 132px; bottom: 170px; background: #fdfdfb; border-radius: 22px;
+  box-shadow: 0 0 0 14px #fff, 0 0 0 18px #cfc8bb, 0 40px 70px rgba(0,0,0,0.18), inset 0 0 80px rgba(240, 236, 220, 0.9); padding: 46px 40px 40px; }
+.quadro.largo { left: 70px; right: 70px; }
+.quadro.centro { display: flex; flex-direction: column; justify-content: center; }
+.linhas { display: grid; gap: 14px; }
+.ln { display: grid; grid-template-columns: 92px 1fr 92px; align-items: center; }
+.ln .n { font-size: 20px; font-weight: 700; color: #9a9385; letter-spacing: 1px; }
+.ln .n:last-child { text-align: right; }
+.ln .t { text-align: center; font-weight: 800; letter-spacing: 0.14em; line-height: 1.12; white-space: nowrap; }
+.ln.vermelho .n { color: #c23b2e; }
+.chamada { font-family: Source; font-weight: 700; color: #121212; letter-spacing: -1px; }
+.oclusor { position: absolute; z-index: 4; width: 120px; height: 300px; }
+.oclusor i { position: absolute; left: 0; top: 0; width: 120px; height: 150px; border-radius: 60px 60px 56px 56px; background: #141414; box-shadow: inset -10px -10px 0 rgba(255,255,255,0.06), 10px 14px 24px rgba(0,0,0,0.25); }
+.oclusor i::after { content: ""; position: absolute; left: 48px; top: 140px; width: 24px; height: 170px; border-radius: 12px; background: #141414; }
+.lupa { position: absolute; z-index: 5; border-radius: 50%; background: #fffef8; box-shadow: 0 0 0 16px #1c1c1c, 0 0 0 22px #3a3a3a, 0 30px 50px rgba(0,0,0,0.3), inset 0 0 50px rgba(200, 190, 160, 0.35); display: grid; place-items: center; text-align: center; }
+.lupa::after { content: ""; position: absolute; width: 230px; height: 46px; border-radius: 23px; background: #1c1c1c; right: -230px; top: 50%; transform: rotate(-28deg); transform-origin: left center; }
+.cartao { background: #fff; border-radius: 18px; box-shadow: 0 0 0 3px #e2ddd2; padding: 26px 30px; }
+.cartao p { font-size: 32px; line-height: 1.42; color: #2a2722; }
+.cartao p b { color: #121212; }
+.real { background: #fff3a8; padding: 0 6px; border-radius: 6px; }
+.otipos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.otipos div { display: grid; place-items: center; gap: 6px; padding: 18px 0 14px; border-radius: 16px; background: #fff; box-shadow: 0 0 0 3px #e2ddd2; }
+.otipos i { font-style: normal; font-size: 26px; font-weight: 800; color: #9a9385; letter-spacing: 2px; }
+.otipos span { font-size: 92px; font-weight: 800; letter-spacing: 0.06em; line-height: 1; }
+.escada { display: grid; gap: 20px; }
+.degrau { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center; padding: 30px 28px; border-radius: 16px; background: #fff; box-shadow: 0 0 0 3px #e2ddd2; }
+.degrau strong { font-size: 72px; letter-spacing: 0.06em; line-height: 1; }
+.degrau p { font-size: 31px; line-height: 1.35; color: #3a362f; }
+.degrau p b { color: #121212; }
+.degrau.ok { background: #121212; box-shadow: 0 0 0 4px #121212, 0 16px 30px rgba(0,0,0,0.2); }
+.degrau.ok strong, .degrau.ok p, .degrau.ok p b { color: #fff; }
+.degrau.ok .sel { display: inline-block; margin-top: 8px; font-size: 21px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; background: #fff3a8; color: #121212; padding: 4px 12px; border-radius: 20px; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 4px #121212; }
+.duo div { padding: 30px 30px 32px; color: #121212; }
+.duo .r { background: #e0533f; }
+.duo .g { background: #4fae6a; }
+.duo small { display: block; font-size: 22px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
+.duo p { font-size: 29px; line-height: 1.38; }
+
+/* ===================== STORIES · CUPOM FISCAL ===================== */
+.cp { background: #123a35; color: #1d1a14;
+  background-image: radial-gradient(rgba(255,255,255,0.05) 2px, transparent 2px); background-size: 22px 22px; }
+.cp .topo { position: absolute; z-index: 3; left: 70px; right: 70px; top: 250px; display: flex; justify-content: space-between; align-items: center; color: #fff; }
+.cp .marca { color: #fff; }
+.cp .etiqueta { color: #a8dcd1; border-color: rgba(168,220,209,0.45); }
+.impressora { position: absolute; z-index: 4; left: 90px; right: 90px; top: 350px; height: 96px; border-radius: 26px 26px 18px 18px; background: linear-gradient(#2c2c2c, #151515); box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+.impressora::before { content: ""; position: absolute; left: 70px; right: 70px; bottom: 18px; height: 14px; border-radius: 8px; background: #050505; }
+.impressora::after { content: ""; position: absolute; right: 40px; top: 26px; width: 18px; height: 18px; border-radius: 50%; background: #7ee28f; box-shadow: 0 0 14px #7ee28f; }
+.papel { position: absolute; z-index: 3; left: 150px; right: 150px; top: 420px; padding: 50px 50px 70px; background: #fbf8ef;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.06), transparent 60px), repeating-linear-gradient(0deg, rgba(120,100,60,0.025) 0 2px, transparent 2px 5px);
+  font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 30px; line-height: 1.5; box-shadow: 0 30px 50px rgba(0,0,0,0.35); }
+.papel.serrilha::after { content: ""; position: absolute; left: 0; right: 0; bottom: -24px; height: 24px;
+  background: linear-gradient(-45deg, transparent 16px, #fbf8ef 0) 0 0 / 32px 24px repeat-x, linear-gradient(45deg, transparent 16px, #fbf8ef 0) 0 0 / 32px 24px repeat-x; }
+.papel .c { text-align: center; }
+.papel h2 { font-family: inherit; font-size: 44px; font-weight: 700; letter-spacing: 2px; text-align: center; line-height: 1.2; }
+.papel .tr { border: 0; border-top: 3px dashed #8b8473; margin: 22px 0; }
+.papel .it { display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; align-items: baseline; }
+.papel .it + .it { margin-top: 16px; }
+.papel .it span:first-child { color: #8b8473; }
+.papel .it em { font-style: normal; color: #2d6a5f; font-weight: 700; }
+.papel .peq { font-size: 24px; color: #6b6555; }
+.papel .total { display: flex; justify-content: space-between; align-items: baseline; font-size: 40px; font-weight: 700; }
+.papel .valor { font-size: 120px; font-weight: 700; letter-spacing: -4px; line-height: 1; text-align: center; margin: 10px 0 6px; }
+.papel .valor small { font-size: 46px; letter-spacing: 0; }
+.papel .marcado { background: #1d1a14; color: #fbf8ef; padding: 2px 12px; }
+.barras { height: 110px; margin: 26px 20px 8px; background: repeating-linear-gradient(90deg, #1d1a14 0 4px, transparent 4px 7px, #1d1a14 7px 9px, transparent 9px 15px, #1d1a14 15px 21px, transparent 21px 24px, #1d1a14 24px 26px, transparent 26px 33px); }
+.chamada-cp { position: absolute; z-index: 5; left: 70px; right: 70px; font-family: Source; font-weight: 700; color: #fff; letter-spacing: -1px; }
+.chamada-cp em { font-style: normal; color: #f4cf7c; }
+</style>
+</head><body>
+<script src="base.js"></script>
+<script>
+// EXEMPLO = o post aprovado (trauma-0761, TEOT 2025). Os campos estão explicados em CAMPOS.md.
+const EXEMPLO = {
+  questao: {
+    id: 'trauma-0761', prova: 'TEOT', ano: 2025, gabarito: 'B',
+    enunciado: 'A fratura de Monteggia tipo 2 na classificação de BADO que ocorre na junção da metáfise com a diáfise da ulna é subclassificada como tipo:',
+    alternativas: [{ letra: 'A', texto: '2 A.' }, { letra: 'B', texto: '2 B.' }, { letra: 'C', texto: '2 C.' }, { letra: 'D', texto: '2 D.' }]
+  },
+  conteudo: {
+    linhas: ['BADO', 'TIPO 2', 'MONTEGGIA', 'QUAL SUBTIPO', '2A · 2B · 2C · 2D', 'o traço fica na junção da', 'metáfise com a diáfise da ulna'],
+    negritos: ['Monteggia tipo 2', 'BADO'],
+    grifos: ['junção da metáfise com a diáfise da ulna'],
+    optotipos: ['2A', '2B', '2C', '2D'],
+    dica_questao: 'Quatro opções iguais na linha de cima: quem decide é a de baixo.',
+    lupa_texto: 'junção da\nmetáfise com\na diáfise',
+    lupa_cartoes: [
+      '**Bado 2** já resolve a primeira metade: é a **Monteggia posterior**, com luxação posterior da cabeça do rádio, o padrão do adulto.',
+      'A subclassificação de **Jupiter** só pergunta uma coisa: **em que nível da ulna está o traço?** A palavra que responde está na linha mais miúda.'
+    ],
+    chamada_resposta: 'Jupiter: o tipo 2 lido de cima para baixo na ulna.',
+    motivos: {
+      A: 'Traço na **incisura troclear** distal, envolvendo o **coronoide**.',
+      B: 'Traço na **junção da metáfise com a diáfise**, logo distal ao coronoide.',
+      C: 'Traço **diafisário**.',
+      D: '**Cominutiva**, estendendo-se da incisura à diáfise, em vários níveis.'
+    },
+    selo_gabarito: 'Gabarito · o mais comum do tipo 2',
+    rodape_resposta: 'Letra **B** · 2B',
+    vermelho: { rotulo: 'Coronoide envolvido', texto: '**2A e 2D**: mais instabilidade do cotovelo e mais artrose. O coronoide deve ser fixado.' },
+    verde: { rotulo: 'Em todos', texto: '**Placa dorsal longa** na ulna; cabeça do rádio fixada ou substituída conforme a lesão.' },
+    cartao_final: 'O tipo 2 do adulto vai pior que o tipo 1 da criança, e a **pseudartrose da ulna** é a principal causa de reoperação.'
+  }
+}
+
+const TAM = [150, 96, 62, 46, 34, 24, 19]
+const NUM = ['20/200', '20/100', '20/70', '20/50', '20/40', '20/30', '20/20']
+const ESP = { 5: ';letter-spacing:0.08em', 6: ';letter-spacing:0.06em' }
+
+KIT.montar(EXEMPLO, (q, c) => {
+  const { t } = KIT
+  const P = KIT.prova(q)
+  const dq = ` data-question="${q.id}"`
+  const topo = (e) => `<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">${t(e)}</span></header>`
+  const pag = (a, b) => `<footer class="pagina"><span>${t(a)}</span><span>${t(b)}</span></footer>`
+  const letras = q.alternativas.map((a) => a.letra)
+  const curtas = q.alternativas.every((a) => a.texto.replace(/\.$/, '').length <= 4)
+  const otipos = c.optotipos || (curtas ? q.alternativas.map((a) => a.texto.replace(/\.$/, '')) : null)
+  const vermelhas = c.linhas_vermelhas || [6, 7]
+  const linhas = (c.linhas || []).slice(0, 7)
+  if (linhas.length !== 7) KIT.aviso('Snellen: "linhas" precisa de 7 linhas, da maior para a menor.')
+  const mot = (l) => c.motivos?.[l] ?? KIT.motivo(q, l)
+
+  const alternativas = otipos
+    ? `<div class="otipos" style="margin-top:34px">${letras.map((l, i) => `<div><i>${l}</i><span>${t(otipos[i])}</span></div>`).join('')}</div>`
+    : `<div class="escada lista" style="margin-top:30px;gap:14px">${q.alternativas.map((a) => `<div class="degrau" style="grid-template-columns:70px 1fr;padding:18px 24px"><strong style="font-size:48px">${a.letra}</strong><p>${t(a.texto)}</p></div>`).join('')}</div>`
+
+  return `
+<section id="feed-01" class="sn"${dq}>
+  ${topo(c.etiqueta_capa ?? `Exame de vista · ${P}`)}
+  <div class="quadro centro">
+    <p class="chamada" style="font-size:72px;line-height:1.02;text-align:center;margin-bottom:50px">${t(c.chamada_capa ?? 'Até que linha\nvocê lê?')}</p>
+    <div class="linhas">
+      ${linhas.map((l, i) => `<div class="ln${vermelhas.includes(i + 1) ? ' vermelho' : ''}"><span class="n">${i + 1}</span><span class="t" style="font-size:${TAM[i]}px${ESP[i] || ''}">${t(l)}</span><span class="n">${NUM[i]}</span></div>`).join('\n      ')}
+    </div>
+  </div>
+  <div class="oclusor" style="right:52px;top:540px;transform:rotate(14deg)"><i></i></div>
+  ${pag(c.rodape_capa ?? 'A resposta mora na **última linha**', 'Arraste')}
+</section>
+<section id="feed-02" class="sn"${dq}>
+  ${topo(c.etiqueta_questao ?? (q.simulado ? 'OrtoQuestões Simulados' : `Questão oficial · ${P}`))}
+  <div class="quadro largo centro" style="padding:54px 50px">
+    <p class="chamada" style="font-size:60px;line-height:1.05;margin-bottom:30px">${t(c.chamada_questao ?? 'Leia o enunciado inteiro, até a letra miúda.')}</p>
+    <div class="cartao"><p>${KIT.marcar(q.enunciado, c.negritos, c.grifos, 'real')}</p></div>
+    ${alternativas}
+    <p style="margin-top:40px;font-size:32px;line-height:1.4;color:#3a362f;text-align:center">Comente a sua letra <b style="color:#121212">antes</b> de arrastar.${c.dica_questao ? '<br>' + t(c.dica_questao) : ''}</p>
+  </div>
+  ${pag(c.rodape_questao ?? 'Linha por linha', '**2** / 5')}
+</section>
+<section id="feed-03" class="sn"${dq}>
+  ${topo(c.etiqueta_lupa ?? 'Com a lupa')}
+  <div class="quadro largo" style="padding:54px 50px">
+    <div class="linhas" style="opacity:0.22">
+      <div class="ln"><span class="n">1</span><span class="t" style="font-size:120px">${t(linhas[0])}</span><span class="n"></span></div>
+      <div class="ln"><span class="n">2</span><span class="t" style="font-size:80px">${t(linhas[1])}</span><span class="n"></span></div>
+    </div>
+    <div class="lupa" style="width:470px;height:470px;left:200px;top:110px">
+      <div><p style="font-size:24px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#c23b2e">${t(c.lupa_rotulo ?? `Linhas ${vermelhas.join(' e ')}, ampliadas`)}</p>
+      <p class="lupa-texto" style="font-size:46px;font-weight:800;line-height:1.15;margin-top:14px;letter-spacing:0.02em">${t(c.lupa_texto)}</p></div>
+    </div>
+    <div class="cartoes" style="position:absolute;left:50px;right:50px;bottom:46px;display:grid;gap:16px">
+      ${(c.lupa_cartoes || []).map((x) => `<div class="cartao"><p>${t(x)}</p></div>`).join('\n      ')}
+    </div>
+  </div>
+  ${pag(c.rodape_lupa ?? 'O detalhe que decide', '**3** / 5')}
+</section>
+<section id="feed-04" class="sn"${dq}>
+  ${topo(c.etiqueta_resposta ?? `Resposta · letra ${q.gabarito}`)}
+  <div class="quadro largo centro" style="padding:50px 46px">
+    <p class="chamada" style="font-size:52px;line-height:1.05;margin-bottom:28px">${t(c.chamada_resposta ?? 'A linha miúda decide.')}</p>
+    <div class="escada">
+      ${letras.map((l, i) => {
+        const ok = l === q.gabarito
+        const rot = c.rotulos?.[i] ?? (otipos ? otipos[i] : l)
+        return `<div class="degrau${ok ? ' ok' : ''}"><strong>${t(rot)}</strong><p>${t(mot(l))}${ok ? `<br><span class="sel">${t(c.selo_gabarito ?? 'Gabarito')}</span>` : ''}</p></div>`
+      }).join('\n      ')}
+    </div>
+  </div>
+  ${pag(c.rodape_resposta ?? `Letra **${q.gabarito}**`, '**4** / 5')}
+</section>
+<section id="feed-05" class="sn"${dq}>
+  ${topo(c.etiqueta_prova ?? 'Teste do vermelho e verde')}
+  <div class="quadro largo centro" style="padding:54px 50px">
+    <p class="chamada" style="font-size:60px;line-height:1.05;margin-bottom:30px">${t(c.chamada_prova ?? 'Para a prova, enxergue os dois lados.')}</p>
+    <div class="duo">
+      <div class="r"><small>${t(c.vermelho?.rotulo)}</small><p>${t(c.vermelho?.texto)}</p></div>
+      <div class="g"><small>${t(c.verde?.rotulo)}</small><p>${t(c.verde?.texto)}</p></div>
+    </div>
+    ${c.cartao_final ? `<div class="cartao" style="margin-top:26px"><p>${t(c.cartao_final)}</p></div>` : ''}
+    <p class="chamada" style="font-size:48px;line-height:1.1;margin-top:46px;text-align:center">A banca esconde o detalhe<br>na última linha.<br><span style="color:#2d6a5f">A gente treina o seu olho.</span></p>
+  </div>
+  <footer class="pagina"><span><b>ortoquestoes.com.br</b></span><span>@ortoquestoes</span></footer>
+</section>`
+}, () => {
+  // Linhas da tabela: sem quebra; diminui a fonte só se não couber (a 20/20 nunca abaixo de 19 px).
+  // Largura útil da linha: a do papel iluminado menos as duas colunas de números (92 px cada),
+  // com 10 px de tolerância (o modelo aprovado já encostava nesse limite).
+  const util = (el) => { const qd = el.closest('.quadro'), cs = getComputedStyle(qd); return qd.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 184 + 10 }
+  document.querySelectorAll('#feed-01 .ln .t').forEach((el, i) => KIT.caberLinha(el, i >= 5 ? TAM[i] : Math.round(TAM[i] * 0.55), util(el)))
+  document.querySelectorAll('#feed-03 .ln .t').forEach((el) => KIT.caberLinha(el, 30, util(el)))
+  // Quadros: o conteúdo precisa caber dentro do papel iluminado.
+  for (const s of document.querySelectorAll('section')) {
+    const qd = s.querySelector('.quadro.centro')
+    if (!qd) continue
+    const cs = getComputedStyle(qd), r = qd.getBoundingClientRect(), s0 = s.getBoundingClientRect().top
+    KIT.encaixar(s, () => KIT.uniao(qd), [...qd.children], r.bottom - s0 - parseFloat(cs.paddingBottom), r.top - s0 + parseFloat(cs.paddingTop))
+  }
+  // Lupa: o texto cabe no círculo; os cartões não sobem por cima da lupa.
+  const lt = document.querySelector('#feed-03 .lupa-texto')
+  if (lt) {
+    let fs = 46
+    while ((lt.parentElement.offsetHeight > 330 || lt.scrollWidth > 400) && fs > 28) { fs -= 2; lt.style.fontSize = fs + 'px' }
+  }
+  const s3 = document.querySelector('#feed-03'), ct = s3 && s3.querySelector('.cartoes')
+  if (ct) KIT.encaixar(s3, () => KIT.uniao(ct), [...ct.children], 1350, s3.querySelector('.lupa').getBoundingClientRect().bottom - s3.getBoundingClientRect().top + 12)
+})
+</script>
+</body></html>

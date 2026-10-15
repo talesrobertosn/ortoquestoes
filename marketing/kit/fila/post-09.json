@@ -1,0 +1,189 @@
+{
+  "post": "post-09",
+  "data": "2026-10-22",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "var-chevron",
+  "formato": "feed (carrossel de 5) + stories (3)",
+  "estilo": "var",
+  "assunto": "Chevron distal: AIM menor que 15° e idade menor que 50 anos",
+  "gancho": "Ângulo e idade: o Chevron só joga dentro dos dois limites.",
+  "por_que": "Hálux valgo cai sempre; alternativas cruzam dois limites (ângulo e idade), ótimo para o VAR.",
+  "questao": {
+    "id": "pe-tornozelo-0301",
+    "area": "Pé e tornozelo",
+    "subtema": "Hálux valgo",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "O procedimento de CHEVRON distal para correção do hálux valgo é recomendado para os pacientes com ângulo intermetatarsal",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "maior que 15° e idade maior que 50 anos."
+      },
+      {
+        "letra": "B",
+        "texto": "maior que 15° e idade menor que 50 anos."
+      },
+      {
+        "letra": "C",
+        "texto": "menor que 15° e idade maior que 50 anos."
+      },
+      {
+        "letra": "D",
+        "texto": "menor que 15° e idade menor que 50 anos."
+      }
+    ],
+    "gabarito": "D",
+    "imagens": [],
+    "comentario": {
+      "correta": "Menor que 15° e idade menor que 50 anos. A correção necessária cabe no deslizamento seguro da cabeça, e o osso de boa qualidade consolida o pequeno contato da osteotomia.",
+      "incorretas": {
+        "A": "Os dois critérios estão errados: um AIM acima de 15° exige deslizamento maior do que a técnica suporta, e a idade acima de 50 anos aumenta o risco de colapso.",
+        "B": "A idade está certa, mas com AIM acima de 15° falta contato ósseo depois do deslizamento. Nesses casos, indica-se uma osteotomia diafisária ou proximal.",
+        "C": "O ângulo está certo, mas acima dos 50 anos a qualidade óssea pesa contra a técnica, e muitos preferem osteotomias com maior superfície de contato."
+      },
+      "conceito_trechos": [
+        "A **osteotomia de Chevron distal** é uma das técnicas mais usadas no **hálux valgo**. O cirurgião faz um corte em forma de **V** perto da cabeça do 1º metatarso e desliza a cabeça para fora (lateral), aproximando o 1º metatarso do 2º. A técnica tem dois limites, um físico e um biológico, e a questão cobra os dois.",
+        "**Na prova**: Chevron distal é indicado para AIM menor que 15° e idade menor que 50 anos."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "var",
+      "conteudo": {
+        "area": "PÉ",
+        "destaques": [
+          "CHEVRON distal"
+        ],
+        "capa": {
+          "titulo": "Dois limites\nem campo.\n[[Chevron só\ndentro deles.]]",
+          "lide": "Ângulo intermetatarsal e idade. A banca cruzou 15° com 50 anos nas quatro alternativas. O VAR vai revisar cada lance.",
+          "escalacao": [
+            "AIM > 15°",
+            "AIM < 15°",
+            "> 50 anos",
+            "< 50 anos"
+          ]
+        },
+        "replay": {
+          "titulo": "Um limite é físico,\no outro é [[biológico.]]",
+          "lide": "O Chevron desliza a cabeça do 1º metatarso para fora. Dois freios decidem se ele serve:",
+          "blocos": [
+            {
+              "rotulo": "Jogada 1 · física",
+              "titulo": "Ângulo",
+              "texto": "Cada milímetro corrige cerca de 1°. Com segurança, corrige **AIM até cerca de 13° a 15°**."
+            },
+            {
+              "rotulo": "Jogada 2 · biologia",
+              "titulo": "Idade",
+              "texto": "O contato é pequeno e depende de **osso bom**. Classicamente, **menos de 50 anos**."
+            }
+          ],
+          "leitura": "o Chevron precisa dos dois a favor: ângulo menor e paciente mais jovem.",
+          "tarja": [
+            "Replay",
+            "Um limite físico e um biológico"
+          ]
+        },
+        "decisao": {
+          "motivos": {
+            "A": "Os dois errados: AIM acima de 15° exige deslizar demais, e acima dos 50 anos aumenta o risco de colapso.",
+            "B": "Idade certa, mas com AIM acima de 15° falta contato ósseo: osteotomia diafisária ou proximal.",
+            "C": "Ângulo certo, mas acima dos 50 anos a qualidade óssea pesa contra a técnica.",
+            "D": "**AIM menor que 15°** e **menos de 50 anos**: a correção cabe no deslizamento seguro, e o osso bom consolida."
+          },
+          "tarja": [
+            "Gabarito: D",
+            "Menor que 15° e menor que 50 anos"
+          ]
+        },
+        "sumula": {
+          "linhas": [
+            {
+              "item": "Chevron",
+              "desc": "AIM até cerca de 15°, osso de boa qualidade",
+              "chip": "em",
+              "rotulo": "DISTAL"
+            },
+            {
+              "item": "Scarf, Ludloff",
+              "desc": "AIM entre 15° e 20°",
+              "chip": "banco",
+              "rotulo": "DIÁFISE"
+            },
+            {
+              "item": "Na base",
+              "desc": "AIM acima de 20°",
+              "chip": "banco",
+              "rotulo": "PROXIMAL"
+            },
+            {
+              "item": "Lapidus",
+              "desc": "1º raio hipermóvel",
+              "chip": "banco",
+              "rotulo": "ARTRODESE"
+            }
+          ],
+          "para_prova": "Chevron distal = **AIM menor que 15°** e **idade menor que 50 anos**."
+        },
+        "story1": {
+          "titulo": "Quando o [[Chevron]] entra em campo?"
+        },
+        "story2": {
+          "titulo": "Dois limites marcam o [[impedimento.]]",
+          "fichas": [
+            {
+              "nome": "AIM > 15°",
+              "texto": "Exige deslizar mais do que a técnica suporta: sobra **pouco contato** para consolidar."
+            },
+            {
+              "nome": "> 50 anos",
+              "texto": "A **osteopenia** aumenta o risco de o fragmento afundar e a correção se perder."
+            }
+          ],
+          "lide": "Tirando os dois, **sobra uma só alternativa** em jogo."
+        },
+        "story3": {
+          "titulo": "Menos de 15°,\n[[menos de 50.]]",
+          "blocos": [
+            {
+              "rotulo": "Limite físico",
+              "titulo": "AIM < 15°",
+              "texto": "A correção cabe no **deslizamento seguro** da cabeça."
+            },
+            {
+              "rotulo": "Limite biológico",
+              "titulo": "< 50 anos",
+              "texto": "Osso de **boa qualidade** consolida o pequeno contato."
+            }
+          ],
+          "para_prova": "passou disso, a osteotomia sobe: diáfise de 15° a 20°, base acima de 20°."
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: var-feed-01 a feed-05, das 7h às 8h.",
+    "Story da pergunta: var-story-01, logo depois do feed.",
+    "Stories da resposta: var-story-02 e story-03, ao meio-dia."
+  ],
+  "legenda": "Ângulo e idade: o Chevron só joga dentro dos dois limites.\n\nTARO 2026: a banca cruzou ângulo intermetatarsal e idade nas quatro alternativas sobre o Chevron distal no hálux valgo. O VAR revisa cada lance.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem vai para o ambulatório de pé.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#peetornozelo",
+    "#residenciamedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão pe-tornozelo-0301 (TARO 2026), gabarito oficial D: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

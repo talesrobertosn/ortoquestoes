@@ -18,3 +18,5 @@ Em 12/10/2026, Tales também aprovou a **Tabela de Snellen** (feed de questão e
 Também em 12/10/2026, Tales aprovou o **VAR da questão** (feed e stories: cada alternativa revisada como um lance de futebol). Veja [o guia](marketing/instagram/estilos/VAR-DA-QUESTAO.md).
 
 Também em 12/10/2026, Tales aprovou o **Treine grátis** (story de propaganda com MacBook e iPhone, botão "Treine grátis" e espaço para a figurinha de link com utm, que abre direto em criar conta). Veja [o guia](marketing/instagram/estilos/TREINE-GRATIS.md).
+
+Kit de posts (15/10/2026): [marketing/kit/README.md](marketing/kit/README.md) traz os modelos aprovados parametrizados por JSON, a fila das próximas 30 postagens e o ciclo em um comando (`node marketing/kit/renderizar.mjs <NN>`). Prompt para o Codex: [docs/prompts/codex-post-rapido.md](docs/prompts/codex-post-rapido.md).

@@ -1,0 +1,178 @@
+{
+  "post": "post-22",
+  "data": "2026-11-02",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "cofre-pe-torto",
+  "formato": "feed (carrossel de 6)",
+  "estilo": "cofre-duas-chaves",
+  "assunto": "Pé torto congênito: cuboide e calcâneo na coluna lateral",
+  "gancho": "Saber a coluna abre só metade do cofre.",
+  "por_que": "Pé torto congênito cai sempre; a imagem pede a coluna certa e a ordem certa (duas chaves).",
+  "questao": {
+    "id": "pediatria-0493",
+    "area": "Ortopedia pediátrica",
+    "subtema": "Pé torto congênito",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na imagem a seguir, sobre a anatomia patológica do pé torto congênito, os números 1 e 2 representam, respectivamente,",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "tálus e navicular."
+      },
+      {
+        "letra": "B",
+        "texto": "navicular e tálus."
+      },
+      {
+        "letra": "C",
+        "texto": "calcâneo e cuboide."
+      },
+      {
+        "letra": "D",
+        "texto": "cuboide e calcâneo."
+      }
+    ],
+    "gabarito": "D",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/pediatria/pediatria-0493-1.png",
+        "legenda": null
+      }
+    ],
+    "comentario": {
+      "correta": "**Correta: D (cuboide e calcâneo).** No corte da coluna lateral do pé torto, o osso **1**, distal, é o **cuboide**, aduzido sobre o osso **2**, o **calcâneo**, maior e já com núcleo de ossificação.",
+      "incorretas": {
+        "A": "**Tálus e navicular** formam a coluna **medial**; a imagem mostra a coluna lateral, com a articulação calcaneocuboide.",
+        "B": "Também se refere à coluna medial, com a ordem dos ossos invertida.",
+        "C": "Os ossos estão certos, mas a ordem está invertida: o **1** é o cuboide (distal) e o **2** é o calcâneo (proximal)."
+      },
+      "conceito_trechos": [
+        "**A imagem.** Corte anatômico (histológico) de um **pé torto congênito**, do tipo usado por Ponseti para estudar a deformidade, mostrando a **coluna lateral** do pé. Os ossos estão parcialmente cartilaginosos, como no recém-nascido. O número **1** aponta o osso mais distal da coluna lateral, que se articula com o **2**, um osso maior, posterior e com o núcleo de ossificação já presente: são o **cuboide (1)** e o **calcâneo (2)**. A seta curva indica a **adução** do cuboide sobre o calcâneo."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cofre-duas-chaves",
+      "conteudo": {
+        "capa": {
+          "tag": "Pé torto congênito · TARO 2026",
+          "titulo": "Saber a coluna\nabre só [[metade\ndo cofre.]]",
+          "sub": "Os números 1 e 2 apontam dois ossos\nna anatomia patológica do pé torto.",
+          "chaves": [
+            "OSSO 1",
+            "OSSO 2"
+          ]
+        },
+        "questao_slide": {
+          "pedido_texto": "Comente sua combinação antes de continuar."
+        },
+        "leitura": {
+          "titulo": "Primeiro, qual coluna.\n[[Depois, qual ordem.]]",
+          "paineis": [
+            {
+              "titulo": "A coluna",
+              "texto": "A imagem mostra a coluna **lateral** do pé, com a articulação **calcaneocuboide**."
+            },
+            {
+              "titulo": "A ordem",
+              "texto": "O **1** é o osso distal; o **2**, maior e posterior, já tem núcleo de ossificação."
+            }
+          ],
+          "nota": {
+            "titulo": "Acertar os ossos não basta.",
+            "texto": "A ordem também precisa estar certa."
+          }
+        },
+        "resposta": {
+          "titulo": "Cuboide +\n[[calcâneo.]]",
+          "sub": "O cuboide (1) aduzido sobre o calcâneo (2).\nA seta curva mostra a adução.",
+          "chaves": [
+            "1 · Cuboide",
+            "2 · Calcâneo"
+          ],
+          "comparacao": {
+            "A": {
+              "titulo": "Tálus e navicular: coluna medial.",
+              "texto": "A imagem mostra a coluna lateral."
+            },
+            "B": {
+              "titulo": "Coluna medial, ordem invertida.",
+              "texto": "Também não é a coluna da imagem."
+            },
+            "C": {
+              "titulo": "Ossos certos, ordem invertida.",
+              "texto": "O 1 é o cuboide (distal) e o 2 é o calcâneo (proximal)."
+            }
+          },
+          "guardar": "Coluna lateral do pé torto: cuboide aduzido sobre o calcâneo."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "CAVE e\n[[Ponseti.]]",
+          "sub": "Os quatro componentes e a correção:",
+          "itens": [
+            {
+              "titulo": "Cavo, aduto, varo, equino.",
+              "texto": "Calcâneo, navicular e cuboide giram **juntos em torno do tálus**."
+            },
+            {
+              "titulo": "O cavo primeiro.",
+              "texto": "Supinando o antepé; depois, gessos semanais abduzindo em torno da **cabeça do tálus**."
+            },
+            {
+              "titulo": "Tenotomia e órtese.",
+              "texto": "Tenotomia do tendão calcâneo no equino residual e órtese de abdução contra a recidiva."
+            }
+          ],
+          "destaque": {
+            "rotulo": "ERRO CLÁSSICO",
+            "titulo": "Não empurrar o calcâneo.",
+            "texto": "O varo se corrige abduzindo o pé em torno do tálus."
+          }
+        },
+        "final": {
+          "celular": {
+            "titulo": "D · cuboide e calcâneo.",
+            "texto": "No corte da coluna lateral, o 1 é o cuboide, aduzido sobre o 2, o calcâneo.",
+            "itens": [
+              {
+                "rotulo": "ALTERNATIVA A",
+                "texto": "Tálus e navicular formam a coluna medial."
+              },
+              {
+                "rotulo": "ALTERNATIVA B",
+                "texto": "Coluna medial, com a ordem invertida."
+              },
+              {
+                "rotulo": "ALTERNATIVA C",
+                "texto": "Ossos certos, mas a ordem está invertida."
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: cofre-duas-chaves-feed-01 a feed-06, das 7h às 8h."
+  ],
+  "legenda": "Saber a coluna abre só metade do cofre.\n\nTARO 2026: anatomia patológica do pé torto congênito. Os números 1 e 2 apontam dois ossos; para abrir, a coluna e a ordem precisam estar certas.\n\nComente a sua combinação (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem vai passar no ambulatório de pé torto.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#ortopediapediatrica",
+    "#petortocongenito",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão pediatria-0493 (TARO 2026), gabarito oficial D: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

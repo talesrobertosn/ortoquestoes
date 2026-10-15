@@ -1,0 +1,54 @@
+{
+  "post": "post-14",
+  "data": "2026-10-26",
+  "horario": "18:30",
+  "status": "falta capturar as telas",
+  "slug": "treine-gratis-simulados",
+  "formato": "story de propaganda (1, com figurinha de link)",
+  "estilo": "treine-gratis",
+  "produto": "OrtoQuestões Simulados",
+  "gancho": "Questões novas, no padrão da prova.",
+  "por_que": "Explicar os Simulados (gratuitos) de forma concreta: provas, bibliografia, questão autoral e comentário.",
+  "pecas": [
+    {
+      "estilo": "treine-gratis",
+      "conteudo": {
+        "etiqueta": "SIMULADOS",
+        "titulo": "Questões novas,\n[[no padrão da prova.]]",
+        "sub": "Os **OrtoQuestões Simulados** são questões autorais, feitas por engenharia reversa das provas, com o comentário de cada alternativa.",
+        "tela_notebook": "marketing/instagram/telas/t-lap-simulado.png",
+        "tela_celular": "marketing/instagram/telas/t-cel-revisao.png",
+        "captura": "npm run build && npx vite preview --port 4175  (outro terminal); depois: TEMA=escuro LARGURA=1100 ALTURA=688 ESCALA=2 node marketing/instagram/telas.mjs 'lap-simulado=questao/joelho-0343>C@.cartao-questao' && ESCONDER='.dp-heroi__sync' TEMA=escuro node marketing/instagram/telas.mjs 'cel-revisao=revisao@main'",
+        "recursos": [
+          {
+            "titulo": "Engenharia reversa",
+            "apoio": "estudo das provas anteriores"
+          },
+          {
+            "titulo": "Bibliografia",
+            "apoio": "referência identificada"
+          },
+          {
+            "titulo": "Questão autoral",
+            "apoio": "sem prova nem ano oficial"
+          },
+          {
+            "titulo": "Comentário completo",
+            "apoio": "a certa e cada errada"
+          }
+        ],
+        "utm_campaign": "treine-gratis-simulados"
+      }
+    }
+  ],
+  "publicacao": [
+    "Story: treine-gratis-s1, das 18h às 19h, depois do post de questão do dia.",
+    "No Instagram, pôr a figurinha de link no espaço livre embaixo do botão, com o texto \"Treine grátis\"."
+  ],
+  "link_figurinha": "https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaign=treine-gratis-simulados#/conta?modo=criar&voltar=%2Ftreinar",
+  "legenda": null,
+  "conferencia": [
+    "Só recursos que existem, conferidos na tabela \"Gratuito ou assinante\" de src/paginas/Assinatura.tsx. Sem preço, sem número do acervo.",
+    "Telas ainda não capturadas: rode o comando de conteudo.captura antes de gerar."
+  ]
+}

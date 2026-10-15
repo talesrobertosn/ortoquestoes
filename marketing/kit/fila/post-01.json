@@ -1,0 +1,124 @@
+{
+  "post": "post-01",
+  "data": "2026-10-16",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "snellen-enneking",
+  "formato": "feed (carrossel de 5)",
+  "estilo": "snellen",
+  "assunto": "Estadiamento de Enneking, IIA",
+  "gancho": "Alto grau já dá o número. Uma palavra miúda dá a letra.",
+  "por_que": "Tumores: estadiamento cai todo ano; a palavra \"intracompartimental\" decide entre IIA e IIB, perfeito para a linha miúda.",
+  "questao": {
+    "id": "tumores-0247",
+    "area": "Tumores ósseos e de partes moles",
+    "subtema": "Estadiamento, biópsia e margens",
+    "prova": "TEOT",
+    "ano": 2025,
+    "simulado": false,
+    "enunciado": "De acordo com ENNEKING, uma lesão tumoral maligna, intracompartimental, de alto grau e sem metástases à distância, está no estágio:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "IA."
+      },
+      {
+        "letra": "B",
+        "texto": "IB."
+      },
+      {
+        "letra": "C",
+        "texto": "IIA."
+      },
+      {
+        "letra": "D",
+        "texto": "IIB."
+      }
+    ],
+    "gabarito": "C",
+    "imagens": [],
+    "comentario": {
+      "correta": "**IIA.** Alto grau, intracompartimental e sem metástase.",
+      "incorretas": {
+        "A": "**Baixo grau.** IA é baixo grau intracompartimental.",
+        "B": "**Baixo grau e fora do compartimento.** IB é baixo grau extracompartimental.",
+        "D": "**Fora do compartimento.** IIB é alto grau extracompartimental, a apresentação mais comum do osteossarcoma."
+      },
+      "conceito_trechos": [
+        "**Como se lê Enneking para malignos.** O algarismo romano indica o **grau**: I é baixo grau, II é alto grau e III é metástase. A letra indica o **compartimento**: A é intracompartimental, B é extracompartimental. Alto grau (II), intracompartimental (A) e sem metástase dá **IIA**. A sequência completa é IA, IB, IIA, IIB e III, este sem letra, porque a metástase define o estágio sozinha.",
+        "**Na prova:** alto grau contido e sem metástase é **IIA**."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "snellen",
+      "conteudo": {
+        "linhas": [
+          "GRAU",
+          "SÍTIO",
+          "ENNEKING",
+          "QUAL ESTÁGIO",
+          "IA · IB · IIA · IIB",
+          "maligna, de alto grau,",
+          "intracompartimental e sem metástases"
+        ],
+        "negritos": [
+          "ENNEKING",
+          "alto grau"
+        ],
+        "grifos": [
+          "intracompartimental"
+        ],
+        "optotipos": [
+          "IA",
+          "IB",
+          "IIA",
+          "IIB"
+        ],
+        "dica_questao": "Quatro estágios parecidos na linha de cima: quem decide é a de baixo.",
+        "lupa_texto": "alto grau +\nintracompartimental",
+        "lupa_cartoes": [
+          "O **algarismo romano** é o grau: **I** é baixo grau, **II** é alto grau e **III** é metástase. Alto grau sem metástase leva ao **II**.",
+          "A **letra** é o compartimento: **A** é intracompartimental, **B** é extracompartimental. A palavra miúda decide entre IIA e IIB."
+        ],
+        "chamada_resposta": "Enneking: o grau no número, o compartimento na letra.",
+        "motivos": {
+          "A": "**Baixo grau** intracompartimental.",
+          "B": "**Baixo grau** e fora do compartimento.",
+          "C": "**Alto grau**, intracompartimental e sem metástase.",
+          "D": "Alto grau **extracompartimental**: a apresentação mais comum do osteossarcoma."
+        },
+        "selo_gabarito": "Gabarito · alto grau contido",
+        "rodape_resposta": "Letra **C** · IIA",
+        "vermelho": {
+          "rotulo": "Barreira rompida",
+          "texto": "**Extracompartimental (B)**: a margem ampla precisa incluir tecido do compartimento vizinho."
+        },
+        "verde": {
+          "rotulo": "Tumor contido",
+          "texto": "**Intracompartimental (A)**: cortical, periósteo, cartilagem, fáscia ou cápsula ainda contêm o tumor."
+        },
+        "cartao_final": "Com metástase, o estágio é **III**, sem letra: a metástase define o estágio sozinha."
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: snellen-feed-01 a feed-05, das 7h às 8h."
+  ],
+  "legenda": "Até que linha você lê?\n\nTEOT 2025: estadiamento de Enneking para tumor maligno. O alto grau já resolve o número; a letra depende de uma palavra miúda no fim do enunciado.\n\nComente a sua letra (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem sempre troca IIA por IIB.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TEOT",
+    "#residenciamedica",
+    "#oncologiaortopedica",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão tumores-0247 (TEOT 2025), gabarito oficial C: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

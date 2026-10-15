@@ -1,0 +1,83 @@
+{
+  "post": "post-23",
+  "data": "2026-11-03",
+  "horario": "07:30",
+  "status": "pronto",
+  "slug": "cupom-projetil-quadril",
+  "formato": "stories (3)",
+  "estilo": "cupom-fiscal",
+  "assunto": "Projétil e quadril: aspiração seguida de artrografia",
+  "gancho": "Projétil perto do quadril. Entrou ou não?",
+  "por_que": "Trauma de pronto-socorro com resposta prática; enunciado curto.",
+  "questao": {
+    "id": "trauma-0993",
+    "area": "Trauma adulto",
+    "subtema": "Fraturas expostas",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "O melhor teste diagnóstico para detectar a penetração de um projetil de arma de fogo na articulação do quadril é a",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "artrotomografia."
+      },
+      {
+        "letra": "B",
+        "texto": "artroscopia diagnóstica."
+      },
+      {
+        "letra": "C",
+        "texto": "artroressonância magnética."
+      },
+      {
+        "letra": "D",
+        "texto": "aspiração do quadril seguida de artrografia."
+      }
+    ],
+    "gabarito": "D",
+    "imagens": [],
+    "comentario": {
+      "correta": "**Aspiração do quadril seguida de artrografia.** O contraste injetado extravasa pelo trajeto se a cápsula foi violada, confirmando a penetração articular.",
+      "incorretas": {
+        "A": "**Pouco prática no agudo.** A artrotomografia não é o teste clássico e pode ser prejudicada pelo metal.",
+        "B": "**Invasiva como exame.** A artroscopia é útil para tratar, mas não é o teste diagnóstico inicial.",
+        "C": "**Inadequada.** A artrorressonância é pouco prática no trauma agudo e contraindicada com fragmentos metálicos."
+      },
+      "conceito_trechos": [
+        "**Por que saber se o projétil entrou na articulação.** Um projétil que **viola a cápsula** do quadril muda a conduta: pode ter levado **contaminação** para dentro da articulação (artrite séptica), deixado **fragmentos** que lesam a cartilagem e, se ficar retido, **dissolve o chumbo** no líquido sinovial (sinovite por chumbo, artropatia e intoxicação sistêmica). Além disso, projéteis que atravessam o **intestino** antes da articulação carregam alto risco de infecção. Nesses casos, está indicada **artrotomia** ou **artroscopia** para lavagem e retirada dos fragmentos.",
+        "**Na prova:** melhor teste para saber se o projétil **penetrou o quadril** = **aspiração seguida de artrografia** (extravasamento de contraste pelo trajeto)."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cupom-fiscal",
+      "conteudo": {
+        "gancho": "Projétil perto do quadril.\n[[Entrou ou não?]]",
+        "explicacao": [
+          "**Aspira-se** o quadril e injeta-se **contraste**: se ele **extravasa** pelo trajeto, a cápsula foi violada.",
+          "Projétil dentro da articulação muda a conduta: lavagem e retirada dos fragmentos, por artroscopia ou artrotomia."
+        ],
+        "erradas": {
+          "A": "Artrotomografia: pouco prática no agudo.",
+          "B": "Artroscopia: trata, mas é invasiva como exame.",
+          "C": "Artrorressonância: contraindicada com metal."
+        },
+        "regra": "Projétil no quadril?\n[[Aspira e contrasta.]]"
+      }
+    }
+  ],
+  "publicacao": [
+    "Story da pergunta: cupom-fiscal-story-01, das 7h às 8h.",
+    "Stories da resposta e do cupom: story-02 e story-03, ao meio-dia (ou das 18h às 19h)."
+  ],
+  "legenda": null,
+  "conferencia": [
+    "Questão trauma-0993 (TARO 2026), gabarito oficial D: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}

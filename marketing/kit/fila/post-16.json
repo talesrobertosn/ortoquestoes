@@ -1,0 +1,180 @@
+{
+  "post": "post-16",
+  "data": "2026-10-28",
+  "horario": "07:00",
+  "status": "pronto",
+  "slug": "cofre-vizinhos-calcaneo",
+  "formato": "feed (carrossel de 6)",
+  "estilo": "cofre-duas-chaves",
+  "assunto": "Vizinhos do tendão calcâneo: FLH e fibular curto",
+  "gancho": "Um tendão de cada lado. Duas chaves para abrir.",
+  "por_que": "Anatomia do tornozelo com duas setas que precisam estar certas ao mesmo tempo.",
+  "questao": {
+    "id": "pe-tornozelo-0303",
+    "area": "Pé e tornozelo",
+    "subtema": "Anatomia do pé e tornozelo",
+    "prova": "TARO",
+    "ano": 2026,
+    "simulado": false,
+    "enunciado": "Na imagem a seguir, as estruturas anatômicas assinaladas pelas setas 1 e 2 são, respectivamente, os tendões",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "tibial posterior e fibular curto."
+      },
+      {
+        "letra": "B",
+        "texto": "tibial posterior e fibular longo."
+      },
+      {
+        "letra": "C",
+        "texto": "flexor longo do hálux e fibular curto."
+      },
+      {
+        "letra": "D",
+        "texto": "flexor longo do hálux e fibular longo."
+      }
+    ],
+    "gabarito": "C",
+    "imagens": [
+      {
+        "arquivo": "public/imagens/pe-tornozelo/pe-tornozelo-0304-1.png",
+        "legenda": null
+      }
+    ],
+    "comentario": {
+      "correta": "**São os vizinhos imediatos do tendão calcâneo.**\n- Medialmente, junto ao feixe tibial posterior, corre o flexor longo do hálux, o mais posterior dos tendões profundos.\n- Lateralmente, contornando o maléolo lateral, está o fibular curto, mais anterior e profundo que o fibular longo.",
+      "incorretas": {
+        "A": "**O tibial posterior fica mais anterior.**\n- Ele corre colado ao maléolo medial, na frente do flexor longo dos dedos.\n- Não é a estrutura medial junto ao tendão calcâneo apontada pela seta 1.",
+        "B": "**Erra as duas setas.**\n- O tibial posterior é anterior e medial demais para a seta 1.\n- O fibular longo fica por fora do fibular curto nesse nível, não na posição da seta 2.",
+        "D": "**Acerta a seta 1, erra a seta 2.**\n- O flexor longo do hálux está correto.\n- Mas nesse nível o fibular longo é mais superficial e posterior; o tendão junto ao osso é o fibular curto."
+      },
+      "conceito_trechos": [
+        "### Tendões ao redor do tendão calcâneo\n- Numa secção logo acima do calcâneo, cada lado do tendão calcâneo tem um vizinho característico.\n- **Medial e profundo:** o ==flexor longo do hálux==, o tendão mais posterior do compartimento profundo, ainda com fibras musculares baixas (\"ventre baixo\").\n- **Lateral:** os fibulares, atrás do maléolo lateral; o ==fibular curto== fica mais anterior e junto ao osso, o fibular longo por fora dele.",
+        "> **Na prova:** ao lado do tendão calcâneo = ==FLH medialmente e fibular curto lateralmente==."
+      ],
+      "conferido": false,
+      "alerta": null
+    }
+  },
+  "pecas": [
+    {
+      "estilo": "cofre-duas-chaves",
+      "conteudo": {
+        "capa": {
+          "tag": "Anatomia do tornozelo · TARO 2026",
+          "titulo": "Achar um vizinho\nabre só [[metade\ndo cofre.]]",
+          "sub": "As setas 1 e 2 apontam os dois\nvizinhos do tendão calcâneo.",
+          "chaves": [
+            "SETA 1",
+            "SETA 2"
+          ]
+        },
+        "questao_slide": {
+          "pedido_texto": "Comente sua combinação antes de continuar."
+        },
+        "leitura": {
+          "titulo": "Primeiro, o lado medial.\n[[Depois, o lateral.]]",
+          "paineis": [
+            {
+              "titulo": "Seta 1 · medial",
+              "texto": "O **flexor longo do hálux**: o tendão mais posterior do compartimento profundo, com ventre baixo."
+            },
+            {
+              "titulo": "Seta 2 · lateral",
+              "texto": "Atrás do maléolo lateral, o **fibular curto** fica mais anterior e junto ao osso."
+            }
+          ],
+          "nota": {
+            "titulo": "Acertar só uma seta não basta.",
+            "texto": "A alternativa precisa corresponder às duas."
+          }
+        },
+        "resposta": {
+          "titulo": "Flexor longo do hálux +\n[[fibular curto.]]",
+          "tamanho": 64,
+          "sub": "Os dois vizinhos imediatos\ndo tendão calcâneo.",
+          "chaves": [
+            "Flexor longo do hálux",
+            "Fibular curto"
+          ],
+          "comparacao": {
+            "A": {
+              "titulo": "O tibial posterior fica mais anterior.",
+              "texto": "Corre colado ao maléolo medial; não é a estrutura da seta 1."
+            },
+            "B": {
+              "titulo": "Erra as duas setas.",
+              "texto": "O tibial posterior é anterior demais; o fibular longo fica por fora do curto."
+            },
+            "D": {
+              "titulo": "Acerta a seta 1, erra a 2.",
+              "texto": "Nesse nível, o tendão junto ao osso é o fibular curto."
+            }
+          },
+          "guardar": "Ao lado do tendão calcâneo: FLH medial, fibular curto lateral."
+        },
+        "passos": {
+          "tag": "Para a prova",
+          "titulo": "Atrás do maléolo medial,\n[[em ordem.]]",
+          "sub": "De anterior para posterior:\n\"Tom, Dick AN Harry\".",
+          "itens": [
+            {
+              "titulo": "Tibial posterior e flexor longo dos dedos.",
+              "texto": "Os dois primeiros, junto ao maléolo medial."
+            },
+            {
+              "titulo": "Artéria e nervo tibial.",
+              "texto": "O feixe vem no meio."
+            },
+            {
+              "titulo": "Flexor longo do hálux.",
+              "texto": "O mais posterior, vizinho do tendão calcâneo."
+            }
+          ],
+          "destaque": {
+            "rotulo": "POR QUE O FLH IMPORTA",
+            "titulo": "Doador nas lesões crônicas do tendão calcâneo.",
+            "texto": "Fica ao lado dele; e causa impacto posterior em bailarinos."
+          }
+        },
+        "final": {
+          "celular": {
+            "titulo": "C · flexor longo do hálux e fibular curto.",
+            "texto": "São os vizinhos imediatos do tendão calcâneo: FLH medial e fibular curto lateral.",
+            "itens": [
+              {
+                "rotulo": "ALTERNATIVA A",
+                "texto": "O tibial posterior corre colado ao maléolo medial, mais anterior."
+              },
+              {
+                "rotulo": "ALTERNATIVA B",
+                "texto": "Erra as duas setas: tibial posterior e fibular longo."
+              },
+              {
+                "rotulo": "ALTERNATIVA D",
+                "texto": "Acerta a seta 1; junto ao osso, nesse nível, está o fibular curto."
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "publicacao": [
+    "Feed: cofre-duas-chaves-feed-01 a feed-06, das 7h às 8h."
+  ],
+  "legenda": "Um tendão de cada lado. Duas chaves para abrir.\n\nTARO 2026: as setas 1 e 2 apontam os vizinhos do tendão calcâneo. Para abrir o cofre, os dois precisam estar certos.\n\nComente a sua combinação (A, B, C ou D) antes de arrastar.\n\nSalve para revisar e mande para quem vai operar tendão calcâneo.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
+  "hashtags": [
+    "#ortopedia",
+    "#TARO",
+    "#peetornozelo",
+    "#anatomia",
+    "#ortoquestoes"
+  ],
+  "conferencia": [
+    "Questão pe-tornozelo-0303 (TARO 2026), gabarito oficial C: copiada do acervo pelo questao.mjs.",
+    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios); releia antes de publicar.",
+    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
+  ]
+}
