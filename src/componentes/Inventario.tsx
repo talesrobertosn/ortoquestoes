@@ -175,7 +175,9 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
     // Secretas fechadas vão para o baú; abertas aparecem como as outras.
     const visiveis = todas.filter((e) => !e.secreta || tem(e))
     const lista = filtro === 'conquistadas' ? visiveis.filter(tem)
-      : filtro === 'proximas' ? visiveis.filter((e) => !tem(e)).sort((x, y) => x.minimo - y.minimo).slice(0, 1)
+      // Na ordem em que a família foi escrita (do começo ao fim): famílias com métricas
+      // misturadas (cronograma, nacional) não têm metas comparáveis pelo número.
+      : filtro === 'proximas' ? visiveis.filter((e) => !tem(e)).slice(0, 1)
       : visiveis
     return { f, lista, feitas: todas.filter(tem).length, total: todas.length }
   }).filter((g) => g.lista.length)
