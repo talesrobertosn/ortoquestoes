@@ -705,9 +705,11 @@ function ComentarioDaIA({
 }) {
   // Sem gabarito oficial, o comentário pode indicar a resposta pela bibliografia.
   const referencia = questao.anulada ? null : questao.gabarito ?? comentario?.provavel ?? null
+  // Todas as outras letras aparecem, mesmo sem análise: sumir com uma delas
+  // deixava a pessoa sem saber se o comentário estava incompleto.
   const erradas = questao.alternativas
     .map((a) => a.letra)
-    .filter((letra) => letra !== referencia && comentario?.incorretas[letra])
+    .filter((letra) => letra !== referencia)
 
   const textoAlternativa = (letra: string) =>
     questao.alternativas.find((a) => a.letra === letra)?.texto
@@ -789,7 +791,9 @@ function ComentarioDaIA({
                     ? <span className="cm-selo cm-selo--erro"><Icone nome="errado" tamanho={13} /> Sua resposta</span>
                     : <span className="cm-selo cm-selo--neutro">Incorreta</span>}
                 </header>
-                <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} />
+                {comentario.incorretas[letra]?.trim()
+                  ? <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} />
+                  : <p className="comentario__pendente">Sem análise desta alternativa.</p>}
               </article>
             ))}
           </div>
