@@ -9,7 +9,9 @@
  */
 import { gravar, ler } from '../estado/armazenamento'
 import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
-import { chamarRpc, chamarRpcPublica } from '../servicos/supabase'
+import { chamarRpc, chamarRpcPublica, ErroRpc } from '../servicos/supabase'
+import { estavel, gravarJogoLocal, idDoAparelho, lerJogoLocal, mesclarJogos, validarJogo, type JogoNuvem } from './continuidade'
+import type { Modo } from './motor/bestiario'
 import { CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, type Recordes, type RegistroFlashcard } from './progresso'
 
 /**
@@ -88,7 +90,10 @@ export function mesclarRecordes(a: Partial<Recordes>, b: Partial<Recordes>): Rec
 export async function sincronizarProgresso(): Promise<boolean> {
   if (!FLASHCARDS_NO_SERVIDOR) return false
   try {
-    const [remoto] = await chamarRpc<Array<{ registros: Record<string, RegistroFlashcard>; recordes: Partial<Recordes> }>>('ler_progresso_flashcards', {})
+    const [remoto] = await chamarRpc<Array<{ registros: Record<string, RegistroFlashcard>; recordes: Partial<Recordes>; jogo?: unknown; jogo_em?: string | null }>>('ler_progresso_flashcards', {})
+    // Parte 28 do SQL: a mesma leitura traz o jogo (partida, Bestiário, Altar). Sem ela, segue só local.
+    if (remoto && !('jogo' in remoto)) suporteJogo = false
+    else if (baseJogo === undefined) void sincronizarJogo(remoto ? { jogo: remoto.jogo, jogo_em: remoto.jogo_em ?? null } : { jogo: null, jogo_em: null }).catch(() => undefined)
     const registros = mesclarRegistros(ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}), remoto?.registros ?? {})
     const recordes = mesclarRecordes(ler<Partial<Recordes>>(CHAVE_RECORDES, {}), remoto?.recordes ?? {})
     gravar(CHAVE_REGISTROS, registros)
@@ -97,6 +102,149 @@ export async function sincronizarProgresso(): Promise<boolean> {
     return true
   } catch {
     return false
+  }
+}
+
+/* ------------------------------------------------------------ Continuidade do jogo (parte 28 do SQL) */
+
+/**
+ * O jogo (partida em andamento, patamar da Torre, lápides, Bestiário e Altar) vai para a conta
+ * (continuidade.ts). Antes da parte 28 do SQL, as funções não existem: na primeira resposta 404
+ * o jogo segue só no aparelho, sem erro na tela.
+ */
+let suporteJogo: boolean | null = null
+/** jogo_em que este aparelho conhece (trava otimista); undefined = ainda não leu nesta visita. */
+let baseJogo: string | null | undefined
+/** O último jogo que se sabe estar no servidor (para não enviar uma partida mais velha por cima). */
+let remotoConhecido: JogoNuvem | null = null
+let ultimoEnviado = ''
+let fila: Promise<unknown> = Promise.resolve()
+function naFila<T>(tarefa: () => Promise<T>): Promise<T> {
+  const r = fila.then(tarefa, tarefa)
+  fila = r.catch(() => undefined)
+  return r
+}
+const semFuncao = (erro: unknown) => erro instanceof ErroRpc && erro.status === 404
+export const jogoNoServidor = () => FLASHCARDS_NO_SERVIDOR && suporteJogo !== false
+
+export interface ResultadoContinuidade {
+  /** O jogo da conta foi lido e mesclado. */
+  ok: boolean
+  /** Modos cuja partida veio de outro aparelho, com o andar (para o aviso). */
+  vindas: Partial<Record<Modo, number>>
+}
+
+/** Mescla o remoto no aparelho e guarda o que se sabe do servidor. */
+function absorver(remoto: unknown, jogoEm: string | null) {
+  const eu = idDoAparelho()
+  remotoConhecido = validarJogo(remoto)
+  baseJogo = jogoEm
+  const local = lerJogoLocal(eu)
+  return gravarJogoLocal(mesclarJogos(local, remotoConhecido), local, eu)
+}
+
+type RespostaSalvar = Array<{ salvo: boolean; jogo: unknown; jogo_em: string | null }>
+
+/** Envia o jogo do aparelho (mesclado com o último remoto conhecido). Conflito: mescla e tenta de novo. */
+async function enviar(): Promise<void> {
+  if (!jogoNoServidor()) return
+  for (let tentativa = 0; tentativa < 3; tentativa++) {
+    const jogo = mesclarJogos(lerJogoLocal(), remotoConhecido)
+    const texto = estavel(jogo)
+    if (texto === ultimoEnviado) return
+    let r: RespostaSalvar[number] | undefined
+    try { [r] = await chamarRpc<RespostaSalvar>('salvar_jogo_flashcards', { p_jogo: jogo, p_base: baseJogo ?? null }) }
+    catch (erro) { if (semFuncao(erro)) suporteJogo = false; return }
+    if (!r) return
+    suporteJogo = true
+    if (r.salvo) { baseJogo = r.jogo_em; remotoConhecido = jogo; ultimoEnviado = texto; return }
+    absorver(r.jogo, r.jogo_em)
+  }
+}
+
+/**
+ * Baixa o jogo da conta e mescla com o do aparelho (a partida mais recente vence; lápides,
+ * Bestiário e Altar por união). Depois envia o resultado, se o servidor estiver atrás.
+ * Pode receber o jogo já lido (ler_progresso_flashcards traz junto).
+ */
+export function sincronizarJogo(lido?: { jogo: unknown; jogo_em: string | null }): Promise<ResultadoContinuidade> {
+  if (!jogoNoServidor()) return Promise.resolve({ ok: false, vindas: {} })
+  return naFila(async () => {
+    // o jogo que veio junto com os registros só serve se esta visita ainda não leu o jogo
+    if (lido && baseJogo !== undefined) return { ok: true, vindas: {} }
+    let remoto = lido
+    if (!remoto) {
+      try { [remoto] = await chamarRpc<Array<{ jogo: unknown; jogo_em: string | null }>>('ler_jogo_flashcards', {}) }
+      catch (erro) { if (semFuncao(erro)) suporteJogo = false; return { ok: false, vindas: {} } }
+      remoto ??= { jogo: null, jogo_em: null }
+    }
+    suporteJogo = true
+    const vindas = absorver(remoto.jogo, remoto.jogo_em)
+    ultimoEnviado = remotoConhecido ? estavel(remotoConhecido) : ''
+    await enviar()
+    return { ok: true, vindas }
+  })
+}
+
+let espera: ReturnType<typeof setTimeout> | undefined
+/** Atraso das gravações comuns (cada flashcard respondido). */
+export const ATRASO_ENVIO_JOGO = 5000
+/**
+ * Pede para salvar o jogo na conta. Mudanças comuns esperam até 5 s (várias viram um envio só);
+ * as importantes (andar, sala, compra, poder, fim de combate, fim da partida) vão na hora.
+ */
+export function agendarEnvioJogo(imediato = false) {
+  if (!jogoNoServidor()) return
+  if (imediato) {
+    if (espera) { clearTimeout(espera); espera = undefined }
+    void naFila(enviar).catch(() => undefined)
+    return
+  }
+  if (espera) return
+  espera = setTimeout(() => { espera = undefined; void naFila(enviar).catch(() => undefined) }, ATRASO_ENVIO_JOGO)
+}
+
+/** Ao sair (aba escondida ou página fechando): envio com keepalive, sem esperar resposta. */
+export function enviarJogoAoSair() {
+  if (!jogoNoServidor()) return
+  if (espera) { clearTimeout(espera); espera = undefined }
+  const jogo = mesclarJogos(lerJogoLocal(), remotoConhecido)
+  const texto = estavel(jogo)
+  if (texto === ultimoEnviado) return
+  const corpo = { p_jogo: jogo, p_base: baseJogo ?? null }
+  // o keepalive aceita até 64 kB; acima disso, o envio comum (melhor esforço)
+  const keepalive = JSON.stringify(corpo).length < 60_000
+  void chamarRpc<RespostaSalvar>('salvar_jogo_flashcards', corpo, { keepalive })
+    .then(([r]) => { if (r?.salvo) { baseJogo = r.jogo_em; remotoConhecido = jogo; ultimoEnviado = texto } })
+    .catch(() => undefined)
+}
+
+let instalacoes = 0
+const aoMudarVisibilidade = () => {
+  if (document.visibilityState === 'hidden') enviarJogoAoSair()
+  else void sincronizarJogo().catch(() => undefined)
+}
+const aoSairDaPagina = () => enviarJogoAoSair()
+/**
+ * Enquanto o jogo está aberto: salva ao esconder a aba ou fechar a página e, ao voltar,
+ * confere se outro aparelho jogou nesse meio-tempo. Devolve a função que desinstala
+ * (e envia o que faltar).
+ */
+export function instalarContinuidade(): () => void {
+  if (!FLASHCARDS_NO_SERVIDOR || typeof window === 'undefined') return () => undefined
+  if (instalacoes++ === 0) {
+    document.addEventListener('visibilitychange', aoMudarVisibilidade)
+    window.addEventListener('pagehide', aoSairDaPagina)
+  }
+  let ativo = true
+  return () => {
+    if (!ativo) return
+    ativo = false
+    if (--instalacoes === 0) {
+      document.removeEventListener('visibilitychange', aoMudarVisibilidade)
+      window.removeEventListener('pagehide', aoSairDaPagina)
+    }
+    agendarEnvioJogo(true)
   }
 }
 

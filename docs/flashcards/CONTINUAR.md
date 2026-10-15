@@ -6,6 +6,29 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Continuidade entre aparelhos — 15/10/2026, noite
+
+Bug do Tales: "A continuidade do modo Cripta não é igual entre um computador e outro. No notebook eu estava no
+Golem; no computador, no Senhor do Anel Pélvico." Causa: partida em andamento, Bestiário, Altar e patamar da Torre
+ficavam só no localStorage de cada aparelho (e a leitura da partida acontecia sem baixar nada da conta).
+
+- **SQL novo: parte 28** (`supabase/colar-no-painel/sql-202610152200-parte28.sql`, mesma da migração
+  `202610152200_flashcards_continuidade.sql`). Idempotente, não apaga dados, cada conta só lê e grava a própria
+  linha. **Precisa ser colada** para a continuidade valer; antes disso o site segue só local, sem erro.
+- **Cliente:** `src/flashcards/continuidade.ts` (mescla pura e chaves locais) e, em `servidor.ts`,
+  `sincronizarJogo`/`agendarEnvioJogo`/`enviarJogoAoSair`/`instalarContinuidade`. A Arena baixa o jogo da conta
+  **antes** de montar a partida (até 4 s); vale a mais recente; partida encerrada vira lápide e não ressuscita;
+  Bestiário e Altar por união/máximo. Envio: importante na hora, o resto em até 5 s, e ao esconder a aba/fechar
+  (`keepalive`). Aba velha aberta: ao voltar, adota a partida mais nova do outro aparelho, com o aviso
+  "Continuando a partida do seu outro aparelho (andar X)". Detalhes em [ARQUITETURA.md](ARQUITETURA.md).
+- **Não muda:** regras, dificuldade, ranking, limites (a vida a cada 24 h segue no servidor).
+- **Testes:** `node fixtures/testar_continuidade_flashcards.mjs` (no `npm test`) e o Playwright
+  `scripts/flashcards/testar_continuidade.mjs` (dois navegadores, Supabase simulado; o cabeçalho do arquivo
+  diz como subir o servidor). Capturas em `/tmp/ortoquestoes-continuidade/`.
+- **Limites conhecidos:** duas partidas jogadas ao mesmo tempo em dois aparelhos não se juntam: vale a que mexeu
+  por último (só existe uma partida por modo). Uma partida antiga, sem carimbo, nos dois aparelhos: fica a mais
+  funda. O envio ao fechar é melhor esforço; o que não chegou sobe na próxima vez que esse aparelho abrir o jogo.
+
 ## Biblioteca e cronograma — 15/10/2026
 
 Pedido do Tales: cronograma "palpável, não aleatório", meta flexível, botão "Seguir cronograma", atalhos diretos para estudar ou jogar, fundos que mudam com os acertos, Biblioteca mais fluida no celular e desempenho mais visual. Sem SQL; não mexe em limites, preços, questões ou no cronograma geral (`#/cronograma`).

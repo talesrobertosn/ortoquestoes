@@ -256,6 +256,13 @@ export interface Partida {
   vencidos: string[]
   /** Corrida no servidor (ranking); o motor não usa, só carrega junto. */
   idCorrida?: string
+  /**
+   * Continuidade entre aparelhos (continuidade.ts, 15/10/2026); o motor não usa, só carrega junto:
+   * identidade da partida, quando ela mudou pela última vez e em qual aparelho.
+   */
+  idPartida?: string
+  atualizadoEm?: number
+  aparelho?: string
   /** Herói escolhido (motor/herois.ts); sem ele, o Cavaleiro. */
   heroi?: string
   /** Dificuldade escolhida no início; partidas antigas (sem o campo) são Normal. */
