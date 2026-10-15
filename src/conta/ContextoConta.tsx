@@ -10,6 +10,7 @@ import { gerarId } from '../util/id'
 import { retornoAuth, definirAvisoConta, textoErroLink, validarRetornoUmaVez } from './retornoAuth'
 import { concluirGoogle, textoErroGoogle } from './google'
 import { tomarVoltar } from './passagem'
+import { aplicarPerfilPendente } from './perfilPendente'
 import { aplicarConviteRecebido, conferirMinhaIndicacao } from './indicacao'
 import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
 import { verificarMarcoEmail } from './emailsMarco'
@@ -120,6 +121,12 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
     void verificarMarcoEmail(respondidas)
     void conferirMinhaIndicacao(sessao.user.id, respondidas)
   }, [sessao?.user.id, status.estado, status.pendentes])
+  // Perfil preenchido no passo 2 do cadastro antes de confirmar o e-mail: entra na conta agora.
+  useEffect(() => {
+    if (!supabase || !sessao?.user) return
+    void aplicarPerfilPendente(supabase, sessao.user).catch(() => undefined)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessao?.user.id])
   // Convite de indicação guardado antes de criar a conta: usa assim que entrar.
   useEffect(() => {
     if (!sessao?.user.id) return

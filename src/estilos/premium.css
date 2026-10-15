@@ -246,6 +246,12 @@
 .acesso__form .campo--checkbox input { margin-top: 0.3rem; }
 .botao.acesso__enviar { width: 100%; min-height: 50px; font-size: 1.02rem; border-radius: var(--raio-controle); margin-top: 0.25rem; }
 .acesso__alternativa { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); text-align: center; }
+/* Cadastro em dois passos: o passo 2 (perfil, opcional) depois de criar a conta. */
+.acesso__passo { margin: 0 0 0.35rem !important; color: var(--verdete) !important; font-size: var(--meta); font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; }
+.aviso-formulario--sucesso { display: flex; align-items: flex-start; gap: 0.55rem; }
+.aviso-formulario--sucesso svg { flex: 0 0 auto; margin-top: 0.1rem; color: var(--acerto); }
+.acesso__acoes-perfil { display: grid; gap: 0.5rem; margin-top: 0.25rem; }
+.acesso__acoes-perfil .botao { width: 100%; min-height: 48px; }
 .acesso__seguranca {
   display: flex; align-items: flex-start; gap: 0.45rem;
   margin: auto 0 0; padding-top: 1rem;

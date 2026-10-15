@@ -5,7 +5,8 @@ import { registrarAssinante } from '../conta/plano'
 import { FUSO_DIA, chaveDoDia, inicioDoDia } from '../util/dia'
 
 export { FUSO_DIA }
-export const LIMITES_HABILITADOS = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
+export { LIMITES_HABILITADOS } from '../config'
+import { LIMITES_HABILITADOS } from '../config'
 const CHAVE_BLOQUEIO = 'limite:bloqueio'
 const CHAVE_SALDO = 'limite:saldo'
 

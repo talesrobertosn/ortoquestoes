@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { criarBackup, validarBackup, restaurarBackup } from '../estado/backup'
-import { TEXTO_GRATIS } from '../config'
+import { fraseGratis } from '../config'
 export function BackupProgresso() {
   const { sessao } = usarConta()
   const [mensagem, definirMensagem] = useState('')
-  if (!sessao) return <section className="backup-progresso empilha"><h2>Salve seu progresso</h2><p>Crie uma conta gratuita ({TEXTO_GRATIS.curto}) para guardar respostas, revisões, favoritas e histórico com segurança e acessar tudo em qualquer dispositivo.</p><a className="botao botao--principal" href="#/conta">Criar minha conta</a></section>
+  if (!sessao) return <section className="backup-progresso empilha"><h2>Salve seu progresso</h2><p>Crie uma conta gratuita ({fraseGratis('curto')}) para guardar respostas, revisões, favoritas e histórico com segurança e acessar tudo em qualquer dispositivo.</p><a className="botao botao--principal" href="#/conta">Criar minha conta</a></section>
   function exportar() {
     const url = URL.createObjectURL(new Blob([JSON.stringify(criarBackup(), null, 2)], { type: 'application/json' }))
     const a = document.createElement('a')
