@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
-import { href } from '../util/rotas'
+import { href, navegar } from '../util/rotas'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { AdminConteudo, type VistaConteudo } from '../componentes/admin/AdminConteudo'
 import { AdminQuestoes } from '../componentes/admin/AdminQuestoes'
@@ -68,19 +68,49 @@ const vigente = (a: LinhaAssinatura) =>
   (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > new Date())
 const inicioDe = (a: LinhaAssinatura) => a.criada_em ?? a.inicio_periodo ?? a.ultima_atualizacao
 
-function lerUrl(): { aba: Aba; vista?: VistaConteudo; id?: string } {
-  const consulta = new URLSearchParams(window.location.hash.split('?')[1] ?? '')
-  const aba = consulta.get('aba')
-  if (aba === 'questoes') return { aba: 'questoes', id: consulta.get('id') ?? undefined }
+/**
+ * O estado navegável do painel mora no endereço: #/admin?aba=…&filtro=…&vista=…&id=….
+ * F5 e links abrem no mesmo lugar; Voltar passa pelas abas visitadas.
+ */
+interface EstadoUrl { aba: Aba; filtro: FiltroUsuarios; vista: VistaConteudo; id: string | null }
+const FILTROS_URL: FiltroUsuarios[] = ['todos', 'online', 'hoje', 'ativos', 'novos', 'novos_parados', 'assinantes', 'parados']
+const VISTAS_URL: VistaConteudo[] = ['suspeitas', 'faceis', 'temas', 'relatos', 'avaliacoes']
+
+function lerUrl(consulta: URLSearchParams): EstadoUrl {
+  const bruta = consulta.get('aba')
+  const filtro = consulta.get('filtro') as FiltroUsuarios
+  const vista = consulta.get('vista') as VistaConteudo
   // Links antigos e os dos e-mails de alerta apontam para ?aba=avaliacoes ou relatos.
-  if (aba === 'avaliacoes' || aba === 'relatos') return { aba: 'conteudo', vista: aba }
-  return { aba: ABAS.some(([valor]) => valor === aba) ? aba as Aba : 'geral' }
+  const legado = bruta === 'avaliacoes' || bruta === 'relatos' ? bruta : null
+  return {
+    aba: legado ? 'conteudo' : ABAS.some(([valor]) => valor === bruta) ? bruta as Aba : 'geral',
+    filtro: FILTROS_URL.includes(filtro) ? filtro : 'todos',
+    vista: legado ?? (VISTAS_URL.includes(vista) ? vista : 'suspeitas'),
+    id: consulta.get('id') || null,
+  }
 }
 
-export function AdminAssinaturas() {
+/** Só o que vale para a aba entra no endereço, e só quando foge do padrão. */
+function urlDe({ aba, filtro, vista, id }: EstadoUrl): string {
+  const consulta = new URLSearchParams()
+  if (aba !== 'geral') consulta.set('aba', aba)
+  if (aba === 'usuarios' && filtro !== 'todos') consulta.set('filtro', filtro)
+  if (aba === 'conteudo' && vista !== 'suspeitas') consulta.set('vista', vista)
+  if (aba === 'questoes' && id) consulta.set('id', id)
+  const texto = consulta.toString()
+  return texto ? `/admin?${texto}` : '/admin'
+}
+
+export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const { sessao } = usarConta()
-  const [inicial] = useState(lerUrl)
-  const [aba, definirAba] = useState<Aba>(inicial.aba)
+  // Lido do endereço a cada render: Voltar, F5 e links externos (hashchange) já chegam aqui pelo App.
+  const url = lerUrl(consulta)
+  const { aba } = url
+  // Vista e questão ficam lembradas fora da aba: voltar a Conteúdo ou ao editor reabre onde estava.
+  const [vista, definirVista] = useState<VistaConteudo>(url.vista)
+  const [idEditar, definirIdEditar] = useState<string | null>(url.id)
+  useEffect(() => { if (aba === 'conteudo') definirVista(url.vista) }, [aba, url.vista])
+  useEffect(() => { if (aba === 'questoes' && url.id) definirIdEditar(url.id) }, [aba, url.id])
   const [assinaturas, definirAssinaturas] = useState<LinhaAssinatura[] | null>(null)
   const [eventos, definirEventos] = useState<LinhaEvento[] | null>(null)
   const [usuarios, definirUsuarios] = useState<LinhaUsuario[] | null>(null)
@@ -90,8 +120,6 @@ export function AdminAssinaturas() {
   const [pendenciasConteudo, definirPendenciasConteudo] = useState<number | null>(null)
   const [atualizadoEm, definirAtualizadoEm] = useState<Date | null>(null)
   const lidosPagamento = usarLidos('pagamento')
-  const [filtroUsuarios, definirFiltroUsuarios] = useState<FiltroUsuarios>('todos')
-  const [idEditar, definirIdEditar] = useState<string | null>(inicial.id ?? null)
   // Compras de teste do dono ficam fora das estatísticas; a lista completa continua na aba Assinaturas.
   const reais = useMemo(() => assinaturas?.filter(a => !contaDeTeste(a)) ?? null, [assinaturas])
   const testes = (assinaturas?.length ?? 0) - (reais?.length ?? 0)
@@ -128,14 +156,17 @@ export function AdminAssinaturas() {
     document.querySelector('.adm-aba[aria-selected="true"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
   }, [aba, assinaturas !== null])
 
-  function abrirUsuarios(filtro: FiltroUsuarios) { definirFiltroUsuarios(filtro); trocarAba('usuarios') }
-  function editarQuestao(id: string) { definirIdEditar(id); trocarAba('questoes') }
-  function trocarAba(nova: Aba) {
-    definirAba(nova)
-    const base = window.location.hash.split('?')[0] || '#/admin'
-    history.replaceState(null, '', nova === 'geral' ? base : `${base}?aba=${nova}`)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+  // Trocar de aba cria entrada no histórico (Voltar volta à aba anterior);
+  // filtro, vista e questão dentro da mesma aba só substituem o endereço.
+  function irPara(mudanca: Partial<EstadoUrl>) {
+    const novo = { ...url, vista, id: idEditar, ...mudanca }
+    const outraAba = novo.aba !== aba
+    navegar(urlDe(novo), !outraAba)
+    if (outraAba) window.scrollTo({ top: 0, behavior: 'smooth' })
   }
+  const trocarAba = (nova: Aba) => irPara({ aba: nova, filtro: 'todos' })
+  const abrirUsuarios = (filtro: FiltroUsuarios) => irPara({ aba: 'usuarios', filtro })
+  const editarQuestao = (id: string) => { definirIdEditar(id); irPara({ aba: 'questoes', id }) }
 
   if (!sessao) return <article className="empilha limite-leitura"><h1>Painel do administrador</h1><p>Entre na sua conta para continuar.</p><a className="botao" href={href('/conta')}>Entrar</a></article>
 
@@ -167,16 +198,16 @@ export function AdminAssinaturas() {
       {erroNovo && (aba === 'geral' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
 
       {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={reais ?? []} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
-      {aba === 'usuarios' && usuarios && <AdminUsuarios key={filtroUsuarios} usuarios={usuarios} filtroInicial={filtroUsuarios} />}
+      {aba === 'usuarios' && usuarios && <AdminUsuarios usuarios={usuarios} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} />}
       {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
       {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
       {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
       {aba === 'crescimento' && <AdminCrescimento usuarios={usuariosReais} assinaturas={reais ?? []} />}
       {aba === 'configuracoes' && <AdminConfiguracoes />}
-      {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} />}
+      {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} aoAbrir={id => { definirIdEditar(id); irPara({ id }) }} />}
       {aba === 'opinioes' && <AdminOpinioesFlashcards />}
       {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}
-      <div hidden={aba !== 'conteudo'}><AdminConteudo vistaInicial={inicial.vista} aoMudarPendencias={definirPendenciasConteudo} aoEditar={editarQuestao} /></div>
+      <div hidden={aba !== 'conteudo'}><AdminConteudo vista={vista} aoMudarVista={nova => { definirVista(nova); irPara({ vista: nova }) }} aoMudarPendencias={definirPendenciasConteudo} aoEditar={editarQuestao} /></div>
     </>}
   </article>
 }

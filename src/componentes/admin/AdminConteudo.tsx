@@ -19,9 +19,12 @@ const VISTAS: Array<[VistaConteudo, string]> = [['suspeitas', 'Questões suspeit
 /** Acerto da primeira tentativa de todos: mede a questão, não o quanto cada um já revisou. */
 const acertoPrimeira = (e: Estatistica) => porcentagem(Number(e.acertos_primeira), Number(e.acertos_primeira) + Number(e.erros_primeira))
 
-export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias, aoEditar }: { vistaInicial?: VistaConteudo; aoMudarPendencias?: (n: number) => void; aoEditar?: (id: string) => void }) {
+export function AdminConteudo({ vista: vistaExterna = 'suspeitas', aoMudarVista, aoMudarPendencias, aoEditar }: { vista?: VistaConteudo; aoMudarVista?: (vista: VistaConteudo) => void; aoMudarPendencias?: (n: number) => void; aoEditar?: (id: string) => void }) {
   const { indice } = usarIndice()
-  const [vista, definirVista] = useState<VistaConteudo>(vistaInicial)
+  // A vista vem do endereço (#/admin?aba=conteudo&vista=…); o estado local responde ao toque sem esperar o hashchange.
+  const [vista, definirVistaLocal] = useState<VistaConteudo>(vistaExterna)
+  useEffect(() => { definirVistaLocal(vistaExterna) }, [vistaExterna])
+  const definirVista = (nova: VistaConteudo) => { definirVistaLocal(nova); aoMudarVista?.(nova) }
   const [stats, definirStats] = useState<Estatistica[] | null>(null)
   const [relatos, definirRelatos] = useState<Relato[] | null>(null)
   const [erro, definirErro] = useState('')

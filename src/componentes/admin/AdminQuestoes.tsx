@@ -197,7 +197,7 @@ function ListaImagens({ imagens, aoMudar, idQuestao, pasta }: { imagens: Imagem[
   )
 }
 
-export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
+export function AdminQuestoes({ idInicial, aoAbrir }: { idInicial?: string | null; aoAbrir?: (id: string) => void }) {
   const { indice } = usarIndice()
   const [tema, definirTema] = useState('')
   const [numero, definirNumero] = useState('')
@@ -216,6 +216,8 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   const [previa, definirPrevia] = useState(false)
 
   useEffect(() => { if (idInicial) definirId(idInicial) }, [idInicial])
+  // Questão aberta por aqui também vai para o endereço (?aba=questoes&id=…): F5 não perde.
+  const abrir = (novo: string) => { definirId(novo); aoAbrir?.(novo) }
   useEffect(() => { if (indice && !tema && indice.temas[0]) definirTema(indice.temas[0].slug) }, [indice, tema])
 
   const atualizarListaEditadas = useCallback(async () => {
@@ -254,7 +256,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   function abrirPorNumero() {
     const n = Number(numero)
     if (!tema || !Number.isInteger(n) || n <= 0) return
-    definirId(`${tema}-${String(n).padStart(4, '0')}`)
+    abrir(`${tema}-${String(n).padStart(4, '0')}`)
   }
 
   const mudar = <K extends keyof Formulario>(chave: K, valor: Formulario[K]) => definirForm((f) => (f ? { ...f, [chave]: valor } : f))
@@ -349,14 +351,14 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
       {editadas.length > 0 && (
         <details className="adm-editor__editadas">
           <summary>{editadas.length} questão(ões) já editada(s)</summary>
-          <div className="linha">{editadas.map((e) => <button key={e} type="button" className="adm-chip" onClick={() => definirId(e)}>{e}</button>)}</div>
+          <div className="linha">{editadas.map((e) => <button key={e} type="button" className="adm-chip" onClick={() => abrir(e)}>{e}</button>)}</div>
         </details>
       )}
 
       {fora.length > 0 && (
         <details className="adm-editor__editadas">
           <summary>{fora.length} questão(ões) fora do site</summary>
-          <div className="linha">{fora.map((f) => <button key={f.id} type="button" className="adm-chip" onClick={() => definirId(f.id)}>{f.id} · {f.apagada ? 'apagada' : 'escondida'}</button>)}</div>
+          <div className="linha">{fora.map((f) => <button key={f.id} type="button" className="adm-chip" onClick={() => abrir(f.id)}>{f.id} · {f.apagada ? 'apagada' : 'escondida'}</button>)}</div>
         </details>
       )}
 

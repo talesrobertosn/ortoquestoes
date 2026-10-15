@@ -96,7 +96,7 @@ export function OQueVe({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao' | 'pa
   </span>
 }
 
-export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtroInicial = 'todos' }: { usuarios: LinhaUsuario[]; filtroInicial?: FiltroUsuarios }) {
+export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtro: filtroUrl = 'todos', aoMudarFiltro }: { usuarios: LinhaUsuario[]; filtro?: FiltroUsuarios; aoMudarFiltro?: (filtro: FiltroUsuarios) => void }) {
   // Cópia viva: o painel carrega a lista uma vez; aqui ela se renova sozinha.
   const [usuarios, definirUsuarios] = useState(iniciaisUsuarios)
   const [atualizadoEm, definirAtualizadoEm] = useState(() => Date.now())
@@ -111,8 +111,11 @@ export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtroInicial = 'tod
     return () => window.clearInterval(t)
   }, [])
   const [busca, definirBusca] = useState('')
-  const [filtro, definirFiltro] = useState<Filtro>(filtroInicial)
-  const [ordem, definirOrdem] = useState<Ordem>(filtroInicial === 'novos' || filtroInicial === 'novos_parados' ? 'cadastro' : filtroInicial === 'hoje' ? 'atividade' : 'respondidas')
+  // O filtro vem do endereço (F5 e Voltar mantêm); a ordem inicial acompanha quem chegou por um atalho da Visão geral.
+  const [filtro, definirFiltroLocal] = useState<Filtro>(filtroUrl)
+  useEffect(() => { definirFiltroLocal(filtroUrl) }, [filtroUrl])
+  const definirFiltro = (novo: Filtro) => { definirFiltroLocal(novo); aoMudarFiltro?.(novo) }
+  const [ordem, definirOrdem] = useState<Ordem>(filtroUrl === 'novos' || filtroUrl === 'novos_parados' ? 'cadastro' : filtroUrl === 'hoje' ? 'atividade' : 'respondidas')
   const [aberto, definirAberto] = useState<LinhaUsuario | null>(null)
 
   const contagem = useMemo(() => Object.fromEntries(FILTROS.map(([f]) => [f, usuarios.filter(u => passaFiltro(u, f)).length])) as Record<Filtro, number>, [usuarios])
