@@ -1,4 +1,4 @@
--- Parte 25: emblemas de Flashcards no ranking e recordes conferidos pelo servidor, 15/10/2026.
+-- Parte 26: emblemas de Flashcards no ranking e recordes conferidos pelo servidor, 15/10/2026.
 -- Cole no SQL Editor do Supabase e execute. Pode colar mais de uma vez: só cria ou substitui funções novas, sem apagar dados.
 -- Enquanto não for colada, o site continua funcionando: o ranking de Flashcards aparece sem os emblemas e os emblemas de andar ficam em zero.
 
