@@ -1182,7 +1182,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
   // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
   const pequeno = PEQUENOS.has(inimigo.sprite)
-  const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : faixaTela === 'deitado' ? 1 : 1.8) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : faixaTela === 'deitado' ? 0.75 : 1.5) * (inimigo.variante === 'rainha' ? 1.25 : 1)
+  const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : faixaTela === 'deitado' ? 1 : 1.6) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : faixaTela === 'deitado' ? 0.75 : 1.3) * (inimigo.variante === 'rainha' ? 1.25 : 1)
   const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'deitado' ? 1.1 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
     ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${indicesVisuais(partida.atual).indexOf(selecionada) + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }

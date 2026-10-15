@@ -19,7 +19,7 @@
 /* A arena não rola nunca. Com `overflow: hidden` ela ainda podia ser rolada pelo
    navegador (foco num elemento meio fora da tela): no celular deitado, ao responder,
    a tela inteira subia 11 px, o cabeçalho cortava e o botão saía de baixo do dedo. */
-.fc-modal, .fc-modal .fc-arena { overflow: clip; }
+.fc-modal .fc-arena:is(.fc-arena--batalha, .fc-arena--estudo) { overflow: clip; }
 
 /* ---------------------------------------------------------------------
    Herói e botão sumidos depois de uma parada (celular deitado).
@@ -164,6 +164,37 @@
   .fc-modal .fc-recompensa__texto { font-size: 13px; line-height: 1.32; }
   .fc-modal .fc-recompensa__detalhe { font-size: 11px; line-height: 1.3; }
   .fc-modal .fc-recompensa__aviso { font-size: 11.5px; }
+}
+
+/* ---------------------------------------------------------------------
+   Notebook (tela baixa, 1280×720, 1366×768): o flashcard ficava espremido
+   numa faixa de 130 px e a pergunta nem aparecia, porque a mão de
+   alternativas, estreita entre o painel do herói e o botão, quebrava cada
+   alternativa em 5 linhas. O painel e o botão emagrecem, a mão ganha a
+   largura e o texto das alternativas fica numa medida que cabe em 2 ou 3 linhas.
+   --------------------------------------------------------------------- */
+@media (min-width: 641px) and (max-height: 820px) and (min-height: 521px) {
+  .fc-modal .fc-heroi__dados { width: clamp(220px, 18vw, 270px); }
+  .fc-modal .fc-heroi__nome .fc-combo span { display: none; }
+  .fc-modal .fc-principal { min-width: 168px; padding-right: 12px !important; }
+  .fc-jogador { gap: 10px; }
+  .fc-mao { gap: 8px 10px; padding: 6px 2px 2px; }
+  .fc-alternativa { min-height: 54px; padding-block: 5px; gap: 8px; }
+  .fc-alternativa > i { width: 32px; height: 32px; font-size: 15px; }
+  .fc-alternativa > span { font-size: 14px; line-height: 1.22; }
+  .fc-alternativa--longa > span, .fc-alternativa--muito-longa > span { font-size: 13px; }
+  .fc-dica { max-width: 180px; font-size: 12.5px; }
+  .fc-mesa__palco { padding-block: 6px; }
+}
+
+/* tela baixa e estreita (1024×640, tablet deitado): sem as pilhas de baralho e
+   descarte, sem a dica embaixo do botão e sem o rodapé de instruções na frente do
+   flashcard; a altura que sobra vai para a pergunta */
+@media (min-width: 641px) and (max-width: 1100px) and (max-height: 820px) and (min-height: 521px) {
+  .fc-pilha { display: none; }
+  .fc-arena--batalha .fc-dica { display: none; }
+  /* a frente não precisa do rodapé de instruções aqui: a altura vai para a pergunta */
+  .fc-arena--batalha .fc-carta:not(.fc-carta--verso) .fc-carta__pe { display: none; }
 }
 
 /* a Biblioteca chega em pedaço à parte: enquanto isso, um aviso calmo no lugar */
