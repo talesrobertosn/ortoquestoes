@@ -221,6 +221,60 @@
    "fonte": "3ffd65f8937b"
   },
   {
+   "id": "fc-mao-0010-co1",
+   "questao": "mao-0010",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A síndrome de Paget-Schroetter é a trombose venosa de esforço de qual segmento?",
+   "resposta": "axilossubclávio",
+   "explicacao": "**Paget-Schroetter:** trombose de esforço do segmento **axilossubclávio**, no desfiladeiro torácico venoso.",
+   "opcoes": [
+    "axilossubclávio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "6dd5c478d318",
+   "origem": "autoral",
+   "trecho": "A síndrome corresponde à trombose do segmento axilossubclávio associada ao desfiladeiro torácico venoso.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0010-co2",
+   "questao": "mao-0010",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No desfiladeiro torácico venoso, em que espaço a veia subclávia é comprimida?",
+   "resposta": "espaço costoclavicular",
+   "explicacao": "**Espaço costoclavicular**, entre a clavícula e a primeira costela; atividades repetitivas com o braço agravam o conflito.",
+   "opcoes": [
+    "espaço costoclavicular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "6dd5c478d318",
+   "origem": "autoral",
+   "trecho": "A veia pode sofrer compressão no espaço costoclavicular, entre a clavícula e a primeira costela.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0010-q",
    "questao": "mao-0010",
    "area": "Mão e punho",
@@ -273,6 +327,88 @@
    "prova": "TARO",
    "ano": 2019,
    "fonte": "ceefac3e56d5"
+  },
+  {
+   "id": "fc-mao-0012-co1",
+   "questao": "mao-0012",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento de Struthers, que pode comprimir o mediano, vai do epicôndilo medial a qual esporão do úmero?",
+   "resposta": "processo supracondiliano",
+   "explicacao": "O **ligamento de Struthers** liga o **processo supracondiliano** ao epicôndilo medial; o esporão aparece na radiografia.",
+   "opcoes": [
+    "processo supracondiliano"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "a0b9bccd569d",
+   "origem": "autoral",
+   "trecho": "**ligamento de Struthers**: uma faixa fibrosa que vai de um pequeno esporão ósseo (processo supracondiliano) do úmero ao epicôndilo medial; avaliado pela radiografia;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0012-co2",
+   "questao": "mao-0012",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Compressão do mediano na arcada do flexor superficial dos dedos: qual manobra a testa?",
+   "resposta": "interfalângica proximal do dedo médio",
+   "explicacao": "**Flexão contra resistência da interfalângica proximal do dedo médio** contrai o flexor superficial e aperta sua arcada sobre o nervo.",
+   "opcoes": [
+    "interfalângica proximal do dedo médio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "a0b9bccd569d",
+   "origem": "autoral",
+   "trecho": "**arcada do flexor superficial dos dedos**: testada com **flexão contra resistência** da interfalângica proximal do dedo médio.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0012-pc1",
+   "questao": "mao-0012",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O pronador redondo é testado com pronação contra resistência. Qual manobra testa a compressão do mediano pelo lacerto fibroso?",
+   "resposta": "flexão do cotovelo contra resistência",
+   "explicacao": "**Lacerto fibroso** (expansão do bíceps): **flexão do cotovelo contra resistência** em supinação. **Pronador:** pronação resistida estendendo o cotovelo.",
+   "opcoes": [
+    "flexão do cotovelo contra resistência",
+    "pronação contra resistência"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "a0b9bccd569d",
+   "origem": "autoral",
+   "trecho": "**lacerto fibroso**: uma expansão do tendão do bíceps. Testado com **flexão do cotovelo contra resistência**, com o antebraço em supinação;",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0012-q",
@@ -409,6 +545,114 @@
    "prova": "TARO",
    "ano": 2019,
    "fonte": "953d0201eb92"
+  },
+  {
+   "id": "fc-mao-0017-co1",
+   "questao": "mao-0017",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Depois do túnel do carpo, qual é a neuropatia compressiva mais comum do membro superior?",
+   "resposta": "síndrome do túnel cubital",
+   "explicacao": "A **síndrome do túnel cubital** (ulnar no cotovelo) é a **segunda** mais comum.",
+   "opcoes": [
+    "síndrome do túnel cubital"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "baffb198da48",
+   "origem": "autoral",
+   "trecho": "A **síndrome do túnel cubital** é a compressão do **nervo ulnar** no cotovelo. É a **segunda neuropatia compressiva mais comum** do membro superior, depois do túnel do carpo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0017-co2",
+   "questao": "mao-0017",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais são as opções cirúrgicas da síndrome do túnel cubital?",
+   "resposta": "liberação do nervo no lugar, transposição anterior ou epicondilectomia medial",
+   "explicacao": "Três opções: **liberação in situ**, **transposição anterior** do ulnar e **epicondilectomia medial**.",
+   "opcoes": [
+    "liberação do nervo no lugar, transposição anterior ou epicondilectomia medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "baffb198da48",
+   "origem": "autoral",
+   "trecho": "**Tratamento cirúrgico**: liberação do nervo no lugar, transposição anterior ou epicondilectomia medial.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0017-pc1",
+   "questao": "mao-0017",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na neuropatia ulnar, por que a perda de sensibilidade no dorso ulnar da mão aponta para o cotovelo, e não para o canal de Guyon?",
+   "resposta": "o ramo dorsal do ulnar sai antes do punho",
+   "explicacao": "**O ramo dorsal do ulnar sai antes do punho**: no Guyon, o dorso ulnar fica preservado.",
+   "opcoes": [
+    "o ramo dorsal do ulnar sai antes do punho"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "baffb198da48",
+   "origem": "autoral",
+   "trecho": "perda de sensibilidade no **dorso ulnar** da mão (o ramo dorsal do ulnar sai antes do punho, o que ajuda a diferenciar da compressão no canal de Guyon);",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0017-pc2",
+   "questao": "mao-0017",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Froment, o paciente dobra a ponta do polegar para segurar um papel. O que mostra o sinal de Wartenberg?",
+   "resposta": "o dedo mínimo fica afastado",
+   "explicacao": "**Wartenberg:** **dedo mínimo afastado**. **Froment:** flexão da interfalângica do polegar compensando a fraqueza do adutor.",
+   "opcoes": [
+    "o dedo mínimo fica afastado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "baffb198da48",
+   "origem": "autoral",
+   "trecho": "sinal de **Wartenberg** (o dedo mínimo fica afastado).",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0017-q",
@@ -878,6 +1122,90 @@
    "fonte": "424a76fd4d6b"
   },
   {
+   "id": "fc-mao-0031-co1",
+   "questao": "mao-0031",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Síndrome do túnel do carpo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No túnel do carpo, quais flexores superficiais ocupam o plano intermediário?",
+   "resposta": "flexores superficiais do 2º e 5º dedos",
+   "explicacao": "**34 sobre 25:** superficiais do médio e anelar no plano volar; do **indicador e mínimo** no intermediário; profundos no fundo.",
+   "opcoes": [
+    "flexores superficiais do 2º e 5º dedos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "5a24b06de512",
+   "origem": "autoral",
+   "trecho": "**plano intermediário**: os flexores superficiais do **2º e 5º dedos** (indicador e mínimo);",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0031-co2",
+   "questao": "mao-0031",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Síndrome do túnel do carpo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além do nervo mediano, quantos tendões passam pelo túnel do carpo?",
+   "resposta": "nove tendões",
+   "explicacao": "**Nove:** quatro flexores superficiais, quatro profundos e o flexor longo do polegar.",
+   "opcoes": [
+    "nove tendões"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "5a24b06de512",
+   "origem": "autoral",
+   "trecho": "**O que passa dentro dele**: o **nervo mediano** e **nove tendões**:",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0031-co3",
+   "questao": "mao-0031",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Síndrome do túnel do carpo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que posição do túnel do carpo fica o tendão do flexor longo do polegar?",
+   "resposta": "isolado no canto radial",
+   "explicacao": "O **flexor longo do polegar** fica **isolado no canto radial**; o polegar não tem flexor superficial.",
+   "opcoes": [
+    "isolado no canto radial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "5a24b06de512",
+   "origem": "autoral",
+   "trecho": "**isolado no canto radial**: o flexor longo do polegar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0031-q",
    "questao": "mao-0031",
    "area": "Mão e punho",
@@ -931,6 +1259,116 @@
    "prova": "TARO",
    "ano": 2021,
    "fonte": "6c769d56e147"
+  },
+  {
+   "id": "fc-mao-0034-ar1",
+   "questao": "mao-0034",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Plexo braquial e artéria subclávia passam pelo triângulo interescalênico. A veia subclávia também passa por ele?",
+   "resposta": "à frente do escaleno anterior",
+   "explicacao": "Não. A **veia subclávia** passa **à frente do escaleno anterior**, fora do triângulo.",
+   "opcoes": [
+    "à frente do escaleno anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "86e00652e573",
+   "origem": "autoral",
+   "trecho": "A **veia** subclávia passa **à frente** do escaleno anterior, fora do triângulo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0034-co1",
+   "questao": "mao-0034",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a forma mais comum da síndrome do desfiladeiro torácico?",
+   "resposta": "neurogênica",
+   "explicacao": "A forma **neurogênica** é a mais comum e envolve sobretudo o triângulo interescalênico.",
+   "opcoes": [
+    "neurogênica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "86e00652e573",
+   "origem": "autoral",
+   "trecho": "É o espaço mais envolvido na forma **neurogênica**, a mais comum;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0034-co2",
+   "questao": "mao-0034",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No espaço retropeitoral menor, em que posição do braço o feixe neurovascular é comprimido?",
+   "resposta": "levantado muito acima da cabeça",
+   "explicacao": "Atrás do **peitoral menor**, perto do coracoide: compressão com o braço **muito acima da cabeça**.",
+   "opcoes": [
+    "levantado muito acima da cabeça"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "86e00652e573",
+   "origem": "autoral",
+   "trecho": "O feixe é comprimido quando o braço é levantado muito acima da cabeça.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0034-pc1",
+   "questao": "mao-0034",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No desfiladeiro torácico, qual teste pede abrir e fechar as mãos com os braços elevados por 3 minutos?",
+   "resposta": "Roos",
+   "explicacao": "**Roos:** abrir e fechar as mãos, braços elevados, 3 minutos. **Adson:** girar a cabeça e inspirar. **Wright:** hiperabdução.",
+   "opcoes": [
+    "Roos",
+    "Adson",
+    "Wright"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "86e00652e573",
+   "origem": "autoral",
+   "trecho": "**Roos** (abrir e fechar as mãos com os braços elevados por 3 minutos)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0034-q",
@@ -1096,6 +1534,114 @@
    "fonte": "7f03cd0ac89d"
   },
   {
+   "id": "fc-mao-0041-co1",
+   "questao": "mao-0041",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A que distância do cotovelo o nervo interósseo anterior sai do mediano?",
+   "resposta": "4 a 6 cm abaixo do cotovelo",
+   "explicacao": "Sai **4 a 6 cm abaixo do cotovelo**, logo após o mediano passar pelo pronador redondo; é só motor.",
+   "opcoes": [
+    "4 a 6 cm abaixo do cotovelo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "1f51fff9d7b1",
+   "origem": "autoral",
+   "trecho": "cerca de 4 a 6 cm abaixo do cotovelo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0041-co2",
+   "questao": "mao-0041",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se testa a força do pronador quadrado, minimizando a ajuda do pronador redondo?",
+   "resposta": "cotovelo fletido",
+   "explicacao": "Pronação com o **cotovelo fletido**: o pronador redondo ajuda pouco e a fraqueza do quadrado aparece.",
+   "opcoes": [
+    "cotovelo fletido"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "1f51fff9d7b1",
+   "origem": "autoral",
+   "trecho": "a fraqueza do pronador quadrado é testada pedindo pronação com o **cotovelo fletido**, posição em que o pronador redondo ajuda pouco;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0041-co3",
+   "questao": "mao-0041",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual neurite braquial, que costuma melhorar sozinha, é o diferencial importante da síndrome do interósseo anterior?",
+   "resposta": "Parsonage-Turner",
+   "explicacao": "**Parsonage-Turner** (neurite braquial): por isso se observa por **3 a 6 meses** antes de operar.",
+   "opcoes": [
+    "Parsonage-Turner"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "1f51fff9d7b1",
+   "origem": "autoral",
+   "trecho": "Um diagnóstico diferencial importante é a **neurite braquial** (Parsonage-Turner), uma inflamação do nervo que costuma melhorar sozinha.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0041-co4",
+   "questao": "mao-0041",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome do interósseo anterior, por quanto tempo se costuma observar antes de operar?",
+   "resposta": "3 a 6 meses",
+   "explicacao": "Observação por **3 a 6 meses**, porque a neurite braquial costuma regredir sozinha.",
+   "opcoes": [
+    "3 a 6 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "1f51fff9d7b1",
+   "origem": "autoral",
+   "trecho": "Por isso, geralmente se observa por 3 a 6 meses antes de operar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0041-q",
    "questao": "mao-0041",
    "area": "Mão e punho",
@@ -1178,6 +1724,94 @@
    "fonte": "32485144292a"
   },
   {
+   "id": "fc-mao-0043-tb1",
+   "questao": "mao-0043",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Síndrome do túnel do carpo"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na escala de pressão do túnel do carpo, a partir de quantos mmHg a condução fica completamente bloqueada?",
+   "resposta": "60 a 80",
+   "explicacao": "**2 a 5:** normal. **20 a 30:** fluxo venoso epineural. **30:** transporte axonal. **40 a 50:** condução. **60 a 80:** bloqueio completo.",
+   "opcoes": [
+    "20 a 30",
+    "40 a 50",
+    "60 a 80"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "32485144292a",
+   "origem": "autoral",
+   "trecho": "**60 a 80**: a condução fica **completamente bloqueada**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0043-tb2",
+   "questao": "mao-0043",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Síndrome do túnel do carpo"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na escala de pressão do túnel do carpo, em que faixa (mmHg) altera-se a condução e surgem formigamentos?",
+   "resposta": "40 a 50",
+   "explicacao": "**40 a 50 mmHg:** altera-se a **condução**, com parestesia. Acima de 60, bloqueio completo.",
+   "opcoes": [
+    "20 a 30",
+    "40 a 50",
+    "60 a 80"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "32485144292a",
+   "origem": "autoral",
+   "trecho": "**40 a 50**: altera-se a **condução** do impulso, e aparecem formigamentos;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0043-tb3",
+   "questao": "mao-0043",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Síndrome do túnel do carpo"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a pressão normal (mmHg) dentro do túnel do carpo em repouso, com o punho neutro?",
+   "resposta": "2 a 5",
+   "explicacao": "Normal: **2 a 5 mmHg**. Na síndrome do túnel do carpo, a pressão de repouso costuma passar de 30.",
+   "opcoes": [
+    "2 a 5"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "32485144292a",
+   "origem": "autoral",
+   "trecho": "**2 a 5**: pressão normal em repouso, com o punho em posição neutra;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0044-q",
    "questao": "mao-0044",
    "area": "Mão e punho",
@@ -1203,6 +1837,61 @@
    "prova": "TARO",
    "ano": 2017,
    "fonte": "ef141f826879"
+  },
+  {
+   "id": "fc-mao-0045-co1",
+   "questao": "mao-0045",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No túnel cubital, a fáscia de Osborne é o teto. Qual ligamento forma o assoalho?",
+   "resposta": "ligamento colateral ulnar",
+   "explicacao": "**Assoalho:** cápsula e feixes posterior e transverso do **ligamento colateral ulnar**. **Paredes:** epicôndilo medial e olécrano.",
+   "opcoes": [
+    "ligamento colateral ulnar",
+    "ligamento transverso"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "41ee246d1e9f",
+   "origem": "autoral",
+   "trecho": "**assoalho**: a cápsula do cotovelo e os feixes posterior e transverso do **ligamento colateral ulnar**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0045-co2",
+   "questao": "mao-0045",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A arcada de Struthers, ponto proximal de compressão do ulnar, fica a quantos centímetros acima do epicôndilo?",
+   "resposta": "8 cm",
+   "explicacao": "Cerca de **8 cm** acima do epicôndilo medial. Não confundir com o **ligamento** de Struthers, que comprime o mediano.",
+   "opcoes": [
+    "8 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "41ee246d1e9f",
+   "origem": "autoral",
+   "trecho": "a arcada de Struthers (cerca de 8 cm acima do epicôndilo)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0045-q",
@@ -1448,6 +2137,64 @@
    "fonte": "c717e7a5ea24"
   },
   {
+   "id": "fc-mao-0055-cl1",
+   "questao": "mao-0055",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de McGowan do túnel cubital, qual grau tem formigamento intermitente e fraqueza só subjetiva?",
+   "resposta": "grau I",
+   "explicacao": "**I:** intermitente, fraqueza subjetiva. **II:** fraqueza mensurável, sem atrofia importante. **III:** parestesia permanente, fraqueza e atrofia.",
+   "opcoes": [
+    "grau I",
+    "grau II",
+    "grau III"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "a7995443778c",
+   "origem": "autoral",
+   "trecho": "**grau I**: formigamento **intermitente** (vai e volta) e **fraqueza subjetiva**: o paciente sente a mão mais fraca, mas o exame não mostra déficit;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0055-cl2",
+   "questao": "mao-0055",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de McGowan, qual grau tem fraqueza mensurável no exame, ainda sem atrofia importante?",
+   "resposta": "grau II",
+   "explicacao": "**McGowan II:** fraqueza **mensurável**, parestesia intermitente ou persistente, sem atrofia importante.",
+   "opcoes": [
+    "grau I",
+    "grau II",
+    "grau III"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "a7995443778c",
+   "origem": "autoral",
+   "trecho": "**grau II**: formigamento intermitente ou persistente, com **fraqueza mensurável** no exame, ainda sem atrofia importante;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0055-q",
    "questao": "mao-0055",
    "area": "Mão e punho",
@@ -1582,6 +2329,34 @@
    "prova": "TARO",
    "ano": 2016,
    "fonte": "164026e06e82"
+  },
+  {
+   "id": "fc-mao-0060-ar1",
+   "questao": "mao-0060",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Exame físico da mão e punho"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além da sensibilidade baixa a moderada, qual limitação tem o sinal de Tinel no túnel do carpo?",
+   "resposta": "positivo num nervo em regeneração",
+   "explicacao": "O **Tinel** também é **positivo num nervo em regeneração**; o **Durkan** tem a melhor sensibilidade e especificidade.",
+   "opcoes": [
+    "positivo num nervo em regeneração"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "60bc007f2189",
+   "origem": "autoral",
+   "trecho": "É fácil, mas tem **sensibilidade baixa a moderada**, e também é positivo num nervo em regeneração;",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0060-q",
@@ -1855,6 +2630,142 @@
    "fonte": "dec8ab806532"
   },
   {
+   "id": "fc-mao-0072-co1",
+   "questao": "mao-0072",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o ponto mais comum de compressão do nervo interósseo posterior no túnel radial?",
+   "resposta": "arcada de Frohse",
+   "explicacao": "A **arcada de Frohse**, borda superior do supinador. Outros: bandas radiocapitelares, alça de Henry, extensor radial curto e borda inferior do supinador.",
+   "opcoes": [
+    "arcada de Frohse",
+    "alça de Henry"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "68bbc2cc11f5",
+   "origem": "autoral",
+   "trecho": "a **arcada de Frohse**: a borda de cima do músculo supinador, o ponto **mais comum**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0072-co2",
+   "questao": "mao-0072",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No túnel radial, o que é a alça de Henry?",
+   "resposta": "vasos recorrentes radiais",
+   "explicacao": "A **alça de Henry** são **vasos recorrentes radiais** que cruzam o nervo, um dos cinco pontos de compressão.",
+   "opcoes": [
+    "vasos recorrentes radiais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "68bbc2cc11f5",
+   "origem": "autoral",
+   "trecho": "a **alça de Henry**: vasos recorrentes radiais que cruzam o nervo;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0072-co3",
+   "questao": "mao-0072",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome do interósseo posterior, por que o punho ainda estende, desviando para radial?",
+   "resposta": "extensor radial longo do carpo",
+   "explicacao": "O **extensor radial longo do carpo** é inervado antes da saída do interósseo posterior e continua funcionando.",
+   "opcoes": [
+    "extensor radial longo do carpo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "68bbc2cc11f5",
+   "origem": "autoral",
+   "trecho": "o punho estende desviando para radial, porque o extensor radial longo do carpo, inervado antes, continua funcionando.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0072-pc1",
+   "questao": "mao-0072",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A síndrome do túnel radial dá dor sem fraqueza. Qual é o achado motor da síndrome do interósseo posterior?",
+   "resposta": "dedos caídos",
+   "explicacao": "**Interósseo posterior:** os dedos não estendem (**dedos caídos**), sem perda sensitiva. **Túnel radial:** só dor.",
+   "opcoes": [
+    "dedos caídos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "68bbc2cc11f5",
+   "origem": "autoral",
+   "trecho": "**síndrome do interósseo posterior**: **fraqueza**: os dedos não estendem (dedos caídos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0072-pc2",
+   "questao": "mao-0072",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na epicondilite lateral a dor fica em cima do epicôndilo. Onde fica a dor da síndrome do túnel radial?",
+   "resposta": "3 a 4 dedos abaixo",
+   "explicacao": "No túnel radial, a dor fica no antebraço proximal, **3 a 4 dedos abaixo** do epicôndilo lateral, sobre o músculo.",
+   "opcoes": [
+    "3 a 4 dedos abaixo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "68bbc2cc11f5",
+   "origem": "autoral",
+   "trecho": "**síndrome do túnel radial**: **dor** no antebraço proximal, cerca de 3 a 4 dedos **abaixo** do epicôndilo lateral, **sem fraqueza**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0072-q",
    "questao": "mao-0072",
    "area": "Mão e punho",
@@ -2099,6 +3010,60 @@
    "fonte": "ff53f05788c6"
   },
   {
+   "id": "fc-mao-0081-co1",
+   "questao": "mao-0081",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por volta de que idade fecha a fise medial da clavícula, a última do corpo?",
+   "resposta": "25 anos",
+   "explicacao": "Fecha por volta dos **25 anos**: no jovem, a aparente luxação esternoclavicular pode ser descolamento fisário.",
+   "opcoes": [
+    "25 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "d1ee257849d1",
+   "origem": "autoral",
+   "trecho": "a placa de crescimento da ponta medial da clavícula é a última a fechar no corpo, por volta dos 25 anos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0081-co2",
+   "questao": "mao-0081",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução da luxação esternoclavicular posterior, qual especialista deve estar disponível?",
+   "resposta": "cirurgião torácico",
+   "explicacao": "Tomografia com contraste e redução com **cirurgião torácico** disponível, pelo risco de lesão vascular.",
+   "opcoes": [
+    "cirurgião torácico"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "d1ee257849d1",
+   "origem": "autoral",
+   "trecho": "e redução (fechada, puxando a clavícula para a frente, ou aberta) com um **cirurgião torácico** disponível, pelo risco de lesão vascular.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0081-q",
    "questao": "mao-0081",
    "area": "Mão e punho",
@@ -2234,6 +3199,90 @@
    "fonte": "ec6a17740489"
   },
   {
+   "id": "fc-mao-0086-co1",
+   "questao": "mao-0086",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Exame físico da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ramo do mediano sai antes do túnel do carpo e inerva a pele da região tenar?",
+   "resposta": "ramo cutâneo palmar",
+   "explicacao": "O **ramo cutâneo palmar** passa por cima do ligamento transverso: a sensibilidade tenar fica normal no túnel do carpo.",
+   "opcoes": [
+    "ramo cutâneo palmar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "49c7af3bfc2d",
+   "origem": "autoral",
+   "trecho": "o mediano dá um ramo para a pele **antes** de entrar no túnel, o **ramo cutâneo palmar**:",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0086-co2",
+   "questao": "mao-0086",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Exame físico da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A quantos centímetros acima da prega do punho sai o ramo cutâneo palmar do mediano?",
+   "resposta": "5 a 8 cm acima",
+   "explicacao": "Sai **5 a 8 cm acima** da prega do punho e corre fora do túnel.",
+   "opcoes": [
+    "5 a 8 cm acima"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "49c7af3bfc2d",
+   "origem": "autoral",
+   "trecho": "ele sai cerca de **5 a 8 cm acima** da prega do punho;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0086-co3",
+   "questao": "mao-0086",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Exame físico da mão e punho"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na liberação do túnel do carpo, a incisão se alinha a qual raio para poupar o ramo cutâneo palmar?",
+   "resposta": "quarto raio",
+   "explicacao": "Incisão alinhada ao **quarto raio**, ulnar à prega tenar.",
+   "opcoes": [
+    "quarto raio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "49c7af3bfc2d",
+   "origem": "autoral",
+   "trecho": "a incisão é feita alinhada ao quarto raio, para o lado ulnar da prega tenar, para não cortar o ramo cutâneo palmar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0086-q",
    "questao": "mao-0086",
    "area": "Mão e punho",
@@ -2296,6 +3345,91 @@
    }
   },
   {
+   "id": "fc-mao-0087-tb1",
+   "questao": "mao-0087",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Exame físico da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O Phalen usa flexão máxima dos punhos. Qual posição usa o Phalen reverso?",
+   "resposta": "Extensão máxima dos punhos",
+   "explicacao": "**Phalen reverso:** **extensão máxima** (mãos em prece), também por 60 s.",
+   "opcoes": [
+    "Extensão máxima dos punhos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "5a2e7e191003",
+   "origem": "autoral",
+   "trecho": "| Phalen reverso | Extensão máxima dos punhos (mãos em posição de prece) | 60 s |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0087-tb2",
+   "questao": "mao-0087",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Exame físico da mão e punho",
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por quanto tempo se mantém o teste de compressão de Durkan no túnel do carpo?",
+   "resposta": "30 s",
+   "explicacao": "**Durkan:** compressão com o polegar sobre o túnel por **30 s**. **Phalen:** 60 s. **Tinel:** imediato.",
+   "opcoes": [
+    "30 s"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "5a2e7e191003",
+   "origem": "autoral",
+   "trecho": "| Durkan | Compressão direta sobre o túnel com o polegar | 30 s |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0088-cl1",
+   "questao": "mao-0088",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Entre as variações do ramo motor recorrente do mediano, qual atravessa o ligamento transverso do carpo?",
+   "resposta": "transligamentar",
+   "explicacao": "Variações: **extraligamentar**, **subligamentar** e **transligamentar**. A incisão ulnar protege o ramo.",
+   "opcoes": [
+    "extraligamentar",
+    "subligamentar",
+    "transligamentar"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "4af0e3ea2470",
+   "origem": "autoral",
+   "trecho": "| ramo motor recorrente (variações: extraligamentar, subligamentar, **transligamentar**) | incisão ulnar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0088-q",
    "questao": "mao-0088",
    "area": "Mão e punho",
@@ -2327,6 +3461,114 @@
     "largura": 796,
     "altura": 768
    }
+  },
+  {
+   "id": "fc-mao-0088-tb1",
+   "questao": "mao-0088",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na liberação do túnel do carpo, o cruzamento da linha de Kaplan com o 3º espaço marca a origem de qual ramo?",
+   "resposta": "ramo motor recorrente",
+   "explicacao": "**Kaplan com o 3º espaço:** ramo **motor recorrente** tenar. **Kaplan com o 4º raio:** hâmulo do hamato. A linha em si marca o arco palmar superficial.",
+   "opcoes": [
+    "ramo motor recorrente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "4af0e3ea2470",
+   "origem": "autoral",
+   "trecho": "| cruzamento de Kaplan com o 3º espaço | | origem do **ramo motor recorrente** tenar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0088-tb2",
+   "questao": "mao-0088",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na palma, o cruzamento da linha cardinal de Kaplan com o eixo do 4º raio marca qual referência óssea?",
+   "resposta": "hâmulo do hamato",
+   "explicacao": "**Kaplan com o 4º raio:** **hâmulo do hamato**. **Kaplan com o 3º espaço:** ramo motor recorrente.",
+   "opcoes": [
+    "hâmulo do hamato"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "4af0e3ea2470",
+   "origem": "autoral",
+   "trecho": "| cruzamento de Kaplan com o 4º raio | | hâmulo do hamato |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0089-co1",
+   "questao": "mao-0089",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após quanto tempo os resultados funcionais da liberação aberta e da endoscópica do túnel do carpo se igualam?",
+   "resposta": "3 meses",
+   "explicacao": "A endoscópica devolve ao trabalho mais cedo, mas após cerca de **3 meses** os resultados são **semelhantes**.",
+   "opcoes": [
+    "3 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "3f728a274843",
+   "origem": "autoral",
+   "trecho": "**Os resultados**: após cerca de **3 meses**, os resultados funcionais das duas técnicas são **semelhantes**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0089-co2",
+   "questao": "mao-0089",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a principal causa de persistência dos sintomas após a liberação do túnel do carpo?",
+   "resposta": "liberação incompleta",
+   "explicacao": "A **liberação incompleta** do ligamento transverso; a visão limitada da endoscópica aumenta esse risco.",
+   "opcoes": [
+    "liberação incompleta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "3f728a274843",
+   "origem": "autoral",
+   "trecho": "liberação **incompleta**, a principal causa de persistência dos sintomas;",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0089-q",
@@ -2447,6 +3689,60 @@
     "largura": 476,
     "altura": 163
    }
+  },
+  {
+   "id": "fc-mao-0093-co1",
+   "questao": "mao-0093",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como diferenciar a ruptura dos extensores na artrite reumatoide da paralisia do interósseo posterior?",
+   "resposta": "efeito de tenodese",
+   "explicacao": "Ao fletir o punho, os dedos estendem pelo **efeito de tenodese** se o tendão estiver íntegro; na ruptura, não estendem.",
+   "opcoes": [
+    "efeito de tenodese"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b3d6266cd94e",
+   "origem": "autoral",
+   "trecho": "**ruptura dos tendões extensores** (como na artrite reumatoide): ao dobrar o punho, os dedos não se estendem pelo efeito de tenodese, o que mostra que o tendão está rompido.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0093-pc1",
+   "questao": "mao-0093",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O interósseo posterior dá dedos caídos com o punho ainda estendendo. O que dá a lesão alta do radial, na fratura do úmero?",
+   "resposta": "punho caído",
+   "explicacao": "**Lesão alta:** **punho caído** e perda sensitiva no dorso radial. **Interósseo posterior:** dedos caídos, sensibilidade preservada.",
+   "opcoes": [
+    "punho caído"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b3d6266cd94e",
+   "origem": "autoral",
+   "trecho": "**lesão alta do radial** (por exemplo, numa fratura do úmero): **punho caído** e perda de sensibilidade no dorso radial da mão;",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0093-q",
@@ -2758,6 +4054,34 @@
    "prova": "TEOT",
    "ano": 2021,
    "fonte": "ca193a51c96d"
+  },
+  {
+   "id": "fc-mao-0102-ar1",
+   "questao": "mao-0102",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na neuropatia ulnar, a garra do anelar e do mínimo é mais evidente na lesão alta ou na baixa?",
+   "resposta": "lesão baixa",
+   "explicacao": "**Paradoxo ulnar:** na **lesão baixa** o flexor profundo funciona e acentua a garra; na alta, ele também enfraquece.",
+   "opcoes": [
+    "lesão baixa",
+    "lesão alta"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "73dbebf743f8",
+   "origem": "autoral",
+   "trecho": "a **garra** do anelar e do mínimo é, curiosamente, **mais evidente na lesão baixa**. É o **paradoxo ulnar**",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0102-q",
@@ -3458,6 +4782,88 @@
    "fonte": "4606f190954f"
   },
   {
+   "id": "fc-mao-0122-co1",
+   "questao": "mao-0122",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Compressão do supraescapular na incisura supraescapular, pelo ligamento transverso superior: quais músculos são atingidos?",
+   "resposta": "supraespinal e infraespinal",
+   "explicacao": "Na **incisura supraescapular** o nervo ainda não deu ramos: atinge **supraespinal e infraespinal**.",
+   "opcoes": [
+    "supraespinal e infraespinal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "548844a327c5",
+   "origem": "autoral",
+   "trecho": "**ligamento transverso superior** espessado ou ossificado, comprimindo o nervo na incisura supraescapular (atinge supraespinal e infraespinal);",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0122-co2",
+   "questao": "mao-0122",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No cisto paralabral que comprime o supraescapular, o que se faz além de descomprimir o cisto?",
+   "resposta": "reparar o lábio",
+   "explicacao": "Artroscopia para descomprimir o cisto **e reparar o lábio**; sem o reparo, o cisto volta.",
+   "opcoes": [
+    "reparar o lábio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "548844a327c5",
+   "origem": "autoral",
+   "trecho": "descomprimir o cisto por artroscopia **e reparar o lábio**. Se o lábio não for reparado, o cisto volta.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0122-pc1",
+   "questao": "mao-0122",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Cisto paralabral na incisura espinoglenoidal comprime o supraescapular. Qual músculo atrofia isoladamente?",
+   "resposta": "infraespinal",
+   "explicacao": "Na **incisura espinoglenoidal** o nervo só vai ao **infraespinal**. Na incisura supraescapular, atinge supra e infraespinal.",
+   "opcoes": [
+    "infraespinal",
+    "supraespinal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "548844a327c5",
+   "origem": "autoral",
+   "trecho": "o resultado é **atrofia isolada do infraespinal** e fraqueza da rotação externa;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0122-q",
    "questao": "mao-0122",
    "area": "Mão e punho",
@@ -3647,6 +5053,33 @@
    "prova": "TEOT/TARO",
    "ano": null,
    "fonte": "2c09da1f2a6b"
+  },
+  {
+   "id": "fc-mao-0129-co1",
+   "questao": "mao-0129",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em quais procedimentos o ramo cutâneo dorsal do ulnar corre risco, com neuroma doloroso?",
+   "resposta": "portais ulnares da artroscopia do punho",
+   "explicacao": "Nos **portais ulnares da artroscopia do punho** e nos acessos à ulna distal.",
+   "opcoes": [
+    "portais ulnares da artroscopia do punho"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "63e4c685eb76",
+   "origem": "autoral",
+   "trecho": "o ramo dorsal do ulnar corre risco nos portais ulnares da artroscopia do punho e nos acessos à ulna distal",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0131-q",
@@ -4150,6 +5583,62 @@
    "fonte": "54bb8468bc09"
   },
   {
+   "id": "fc-mao-0155-co1",
+   "questao": "mao-0155",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Síndrome do túnel do carpo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ultrassonografia do túnel do carpo, qual razão entre a área do mediano no punho e no antebraço sugere compressão?",
+   "resposta": "maior que 1,4",
+   "explicacao": "Razão punho/antebraço **maior que 1,4**, além da área acima de 10 mm² no pisiforme.",
+   "opcoes": [
+    "maior que 1,4"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "230337d00e91",
+   "origem": "autoral",
+   "trecho": "razão entre a área no punho e no antebraço maior que 1,4;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0155-co2",
+   "questao": "mao-0155",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões",
+    "Síndrome do túnel do carpo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que a área do mediano não se mede na altura do capitato, dentro do túnel?",
+   "resposta": "achatado",
+   "explicacao": "Dentro do túnel o nervo está **achatado**; ele incha logo antes do estreitamento, na altura do pisiforme.",
+   "opcoes": [
+    "achatado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "230337d00e91",
+   "origem": "autoral",
+   "trecho": "Dentro do túnel, na altura do capitato ou do hamato, o nervo está **achatado**, e a área não reflete o inchaço.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0155-q",
    "questao": "mao-0155",
    "area": "Mão e punho",
@@ -4176,6 +5665,60 @@
    "prova": "TEOT",
    "ano": 2023,
    "fonte": "230337d00e91"
+  },
+  {
+   "id": "fc-mao-0156-ar1",
+   "questao": "mao-0156",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No túnel cubital, a transposição anterior do ulnar dá resultado melhor que a descompressão in situ?",
+   "resposta": "semelhantes",
+   "explicacao": "Não. Os resultados são **semelhantes**, com **menos complicações** na descompressão in situ.",
+   "opcoes": [
+    "semelhantes"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "fda76863c298",
+   "origem": "autoral",
+   "trecho": "Os estudos mostram resultados **semelhantes** entre a descompressão *in situ* e a transposição, com menos complicações na *in situ*.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0156-co1",
+   "questao": "mao-0156",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após a descompressão in situ do ulnar, o nervo escorrega sobre o epicôndilo ao fletir o cotovelo. Qual é a conduta?",
+   "resposta": "transposição",
+   "explicacao": "Testa-se a estabilidade fletindo o cotovelo; se o nervo escorregar, faz-se a **transposição anterior**.",
+   "opcoes": [
+    "transposição"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "fda76863c298",
+   "origem": "autoral",
+   "trecho": "após a descompressão, dobra-se o cotovelo para testar se o nervo escorrega; se escorregar, faz-se a transposição.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0156-q",
@@ -5468,6 +7011,91 @@
    }
   },
   {
+   "id": "fc-mao-0245-cl1",
+   "questao": "mao-0245",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas zonas do canal de Guyon, que déficit dá a compressão na zona I, antes da divisão do nervo?",
+   "resposta": "motor e sensitivo",
+   "explicacao": "**Zona I:** antes da divisão, **motor e sensitivo**. **II:** ramo profundo, só motor. **III:** ramo superficial, só sensitivo.",
+   "opcoes": [
+    "motor e sensitivo",
+    "só motor",
+    "só sensitivo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "b784b8cf330f",
+   "origem": "autoral",
+   "trecho": "**zona I**: **antes** da divisão do nervo. A compressão aí dá déficit **motor e sensitivo**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0245-cl2",
+   "questao": "mao-0245",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em qual zona do canal de Guyon a compressão, ao redor do ramo superficial, dá déficit só sensitivo?",
+   "resposta": "zona III",
+   "explicacao": "**Zona III:** ramo superficial, só sensitivo. **Zona II:** ramo profundo, só motor (Egawa e Duchenne sem perda sensitiva).",
+   "opcoes": [
+    "zona I",
+    "zona II",
+    "zona III"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "b784b8cf330f",
+   "origem": "autoral",
+   "trecho": "**zona III**: ao redor do **ramo superficial**. A compressão dá déficit **só sensitivo**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0245-co1",
+   "questao": "mao-0245",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na neuropatia ulnar, o que é o sinal de Egawa?",
+   "resposta": "não consegue desviar o dedo médio para os lados",
+   "explicacao": "**Egawa:** com a mão espalmada, o paciente **não desvia o dedo médio para os lados** (interósseos fracos). **Duchenne:** garra do anelar e do mínimo.",
+   "opcoes": [
+    "não consegue desviar o dedo médio para os lados"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "b784b8cf330f",
+   "origem": "autoral",
+   "trecho": "**sinal de Egawa**: não consegue desviar o dedo médio para os lados com a mão espalmada (fraqueza dos interósseos);",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-mao-0245-q",
    "questao": "mao-0245",
    "area": "Mão e punho",
@@ -5547,6 +7175,60 @@
    "prova": "TEOT/TARO",
    "ano": null,
    "fonte": "401d1b0daa79"
+  },
+  {
+   "id": "fc-mao-0248-co1",
+   "questao": "mao-0248",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que as manobras de Adson, Wright e Halsted dão muitos falsos positivos no desfiladeiro torácico?",
+   "resposta": "diminuição do pulso",
+   "explicacao": "Dependem da **diminuição do pulso**, que ocorre em muitas pessoas saudáveis. O **Roos** avalia a reprodução dos sintomas.",
+   "opcoes": [
+    "diminuição do pulso"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0be3718ffd9c",
+   "origem": "autoral",
+   "trecho": "as manobras de Adson, Wright e Halsted dependem principalmente da **diminuição do pulso**, que acontece também em muitas **pessoas saudáveis** (muitos falsos positivos).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-mao-0248-co2",
+   "questao": "mao-0248",
+   "area": "Mão e punho",
+   "areaId": "mao",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtemas": [
+    "Neuropatia ulnar e outras compressões"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No desfiladeiro torácico, como se faz a manobra costoclavicular de Halsted?",
+   "resposta": "ombros são levados para trás e para baixo",
+   "explicacao": "**Halsted:** **ombros para trás e para baixo**, fechando o espaço costoclavicular.",
+   "opcoes": [
+    "ombros são levados para trás e para baixo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0be3718ffd9c",
+   "origem": "autoral",
+   "trecho": "**Halsted** (costoclavicular): os ombros são levados para trás e para baixo.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-mao-0248-q",
