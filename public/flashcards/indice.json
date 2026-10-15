@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 5409,
- "batalha": 4220,
- "soEstudo": 1189,
+ "total": 5442,
+ "batalha": 4222,
+ "soEstudo": 1220,
  "comImagem": 630,
- "simulados": 988,
- "autorais": 1107,
+ "simulados": 1009,
+ "autorais": 1140,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -390,24 +390,24 @@
   "trauma": {
    "nome": "Trauma adulto",
    "arquivo": "trauma.json",
-   "total": 1125,
-   "batalha": 876,
+   "total": 1158,
+   "batalha": 878,
    "comImagem": 92,
-   "simulados": 326,
+   "simulados": 347,
    "tipos": {
-    "Armadilha": 9,
-    "Classificação": 52,
-    "Conceito": 90,
+    "Armadilha": 10,
+    "Classificação": 53,
+    "Conceito": 118,
     "Imagem": 92,
     "Na prova": 200,
-    "Par confundível": 19,
+    "Par confundível": 22,
     "Relâmpago": 659,
     "Tabela": 4
    },
    "assuntos": {
     "Fratura da cabeça do rádio e instabilidade do cotovelo": 126,
+    "Fraturas diafisárias do antebraço": 125,
     "Luxação do joelho e lesões ligamentares": 97,
-    "Fraturas diafisárias do antebraço": 93,
     "Fratura da escápula": 73,
     "Fraturas da coluna toracolombar": 57,
     "Luxação acromioclavicular": 50,
@@ -419,7 +419,7 @@
     "Fratura do úmero proximal": 34,
     "Fraturas do tálus e do calcâneo": 29,
     "Fratura do acetábulo": 29,
-    "Síndrome compartimental": 27,
+    "Síndrome compartimental": 28,
     "Fraturas dos metacarpos e falanges": 26,
     "Fratura da diáfise do úmero": 25,
     "Fratura do planalto tibial": 21,
@@ -481,5 +481,5 @@
    }
   }
  },
- "assinatura": "7532ef662228"
+ "assinatura": "05abb501e0ef"
 }

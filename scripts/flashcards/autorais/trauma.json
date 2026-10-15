@@ -219,6 +219,61 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0033-co1",
+   "questao": "trauma-0033",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na via dorsal de Thompson ao rádio proximal, como se posiciona o antebraço para afastar o nervo interósseo posterior?",
+   "resposta": "pronar",
+   "explicacao": "Na **Thompson**, **pronar** afasta o nervo do campo; na **Henry**, supinar e soltar o supinador de medial para lateral.",
+   "opcoes": [
+    "pronar",
+    "supinar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "c93e549ea591",
+   "origem": "autoral",
+   "trecho": "**via de Thompson** (dorsal): **pronar** o antebraço, que afasta o nervo do campo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0033-pc1",
+   "questao": "trauma-0033",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na via de Thompson se prona o antebraço. Na via anterior de Henry, como se protege o interósseo posterior?",
+   "resposta": "supinar",
+   "explicacao": "Na **Henry**, **supinar** e desinserir o supinador de medial para lateral, levando o nervo junto com o músculo.",
+   "opcoes": [
+    "supinar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "c93e549ea591",
+   "origem": "autoral",
+   "trecho": "**via de Henry** (anterior): **supinar** e desinserir o supinador do rádio de medial para lateral",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0034-co1",
    "questao": "trauma-0034",
    "area": "Trauma adulto",
@@ -325,6 +380,60 @@
    "fonte": "cfdaf451d063",
    "origem": "autoral",
    "trecho": "fratura do olécrano com luxação é a fratura-luxação **transolecraniana** (associada à base do coronoide, tipo 3)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0066-co1",
+   "questao": "trauma-0066",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que face do rádio proximal fica a tuberosidade bicipital?",
+   "resposta": "medial",
+   "explicacao": "Face **medial**; compara-se sua posição com a do lado normal (Evans) para acertar a rotação.",
+   "opcoes": [
+    "medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "58aadfd44f1e",
+   "origem": "autoral",
+   "trecho": "A referência é a **tuberosidade bicipital**, que fica na face **medial** do rádio proximal.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0066-pc1",
+   "questao": "trauma-0066",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução do rádio, a tuberosidade bicipital indica a rotação do fragmento proximal. Qual é a referência do fragmento distal?",
+   "resposta": "estiloide radial",
+   "explicacao": "Fragmento distal: o **estiloide radial**, lateral em supinação. Proximal: a tuberosidade bicipital.",
+   "opcoes": [
+    "estiloide radial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "58aadfd44f1e",
+   "origem": "autoral",
+   "trecho": "**fragmento distal**: o **estiloide radial**, que fica lateral em supinação.",
    "criadoEm": "2026-10-15"
   },
   {
@@ -1298,6 +1407,60 @@
    "fonte": "939c3c94920a",
    "origem": "autoral",
    "trecho": "**Pellegrini-Stieda**: calcificação junto ao côndilo femoral medial, sequela **crônica** da lesão do **colateral medial**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0231-co1",
+   "questao": "trauma-0231",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura de Galeazzi do adulto, quais músculos desviam o fragmento distal do rádio e tornam a placa necessária?",
+   "resposta": "pronador quadrado, braquiorradial e abdutor longo do polegar",
+   "explicacao": "**Pronador quadrado, braquiorradial e abdutor longo do polegar**: por isso é a fratura da necessidade.",
+   "opcoes": [
+    "pronador quadrado, braquiorradial e abdutor longo do polegar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "675721be19b6",
+   "origem": "autoral",
+   "trecho": "os músculos (pronador quadrado, braquiorradial e abdutor longo do polegar) desviam o fragmento distal",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0231-co2",
+   "questao": "trauma-0231",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Galeazzi, depois de fixar o rádio, em quais posições do antebraço se testa a estabilidade da radioulnar distal?",
+   "resposta": "pronação, neutro e supinação",
+   "explicacao": "Testar em **pronação, neutro e supinação**: estável mobiliza; instável fixa ou imobiliza; irredutível abre.",
+   "opcoes": [
+    "pronação, neutro e supinação"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "675721be19b6",
+   "origem": "autoral",
+   "trecho": "testar a estabilidade da radioulnar distal em **pronação**, **neutro** e **supinação**",
    "criadoEm": "2026-10-15"
   },
   {
@@ -2587,6 +2750,87 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0909-co1",
+   "questao": "trauma-0909",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na radioulnar distal, onde se prendem os feixes profundos dos ligamentos radioulnares?",
+   "resposta": "fóvea",
+   "explicacao": "Os feixes profundos se prendem na **fóvea** da ulna; fragmento grande da base do estiloide deve ser fixado.",
+   "opcoes": [
+    "fóvea"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "3d82594bde78",
+   "origem": "autoral",
+   "trecho": "presos na **fóvea** da ulna",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0929-co1",
+   "questao": "trauma-0929",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que a sinostose radioulnar é mais frequente nas fraturas do terço proximal do antebraço?",
+   "resposta": "espaço interósseo é estreito",
+   "explicacao": "No terço proximal o **espaço interósseo é estreito**; a incisão única ainda deixa hematoma contínuo entre os ossos.",
+   "opcoes": [
+    "espaço interósseo é estreito"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "db75cb9484bc",
+   "origem": "autoral",
+   "trecho": "No terço **proximal**, o espaço **interósseo** é **estreito**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0929-co2",
+   "questao": "trauma-0929",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na sinostose radioulnar estabelecida, após quanto tempo se faz a ressecção?",
+   "resposta": "6 a 12 meses",
+   "explicacao": "Após a maturação, em geral **6 a 12 meses**, com interposição de gordura, fáscia ou silicone e profilaxia.",
+   "opcoes": [
+    "6 a 12 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "db75cb9484bc",
+   "origem": "autoral",
+   "trecho": "(após a maturação, geralmente com 6 a 12 meses)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0971-cl1",
    "questao": "trauma-0971",
    "area": "Trauma adulto",
@@ -2667,6 +2911,34 @@
    "fonte": "1de2208908c2",
    "origem": "autoral",
    "trecho": "**pivot-shift** (lateral): testa a instabilidade **posterolateral** (colateral lateral);",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0990-co1",
+   "questao": "trauma-0990",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço",
+    "Luxação do quadril e fratura da cabeça femoral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o intervalo da via de Kocher no cotovelo?",
+   "resposta": "ancôneo e o extensor ulnar do carpo",
+   "explicacao": "**Kocher**: entre o **ancôneo** e o **extensor ulnar do carpo**, mais posterior que a de Kaplan.",
+   "opcoes": [
+    "ancôneo e o extensor ulnar do carpo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "3843924b6969",
+   "origem": "autoral",
+   "trecho": "**Kocher**: entre o **ancôneo** e o **extensor ulnar do carpo**",
    "criadoEm": "2026-10-15"
   },
   {
@@ -2975,6 +3247,33 @@
    "fonte": "beace94998b2",
    "origem": "autoral",
    "trecho": "A **IL-6** aumenta um pouco depois e se mantém; é o marcador sistêmico de gravidade no politrauma.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1019-co1",
+   "questao": "trauma-1019",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio abaixo da inserção do pronador redondo, por que a deformidade rotacional é menor?",
+   "resposta": "pronador redondo contrabalança os supinadores",
+   "explicacao": "O **pronador redondo**, preso ao fragmento proximal, **contrabalança** bíceps e supinador.",
+   "opcoes": [
+    "pronador redondo contrabalança os supinadores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "8189529ef6a9",
+   "origem": "autoral",
+   "trecho": "porque o pronador redondo contrabalança os supinadores",
    "criadoEm": "2026-10-15"
   },
   {
@@ -3442,6 +3741,34 @@
    "fonte": "f794afe0736a",
    "origem": "autoral",
    "trecho": "onde se insere o **feixe anterior do ligamento colateral medial**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1117-co1",
+   "questao": "trauma-1117",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental",
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome compartimental do antebraço, qual sequela resulta da necrose dos flexores profundos?",
+   "resposta": "contratura isquêmica de Volkmann",
+   "explicacao": "A **contratura isquêmica de Volkmann**: dedos fletidos e perda de função da mão.",
+   "opcoes": [
+    "contratura isquêmica de Volkmann"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "c8df5323a528",
+   "origem": "autoral",
+   "trecho": "pode evoluir para contratura isquêmica de Volkmann",
    "criadoEm": "2026-10-15"
   },
   {
@@ -4327,6 +4654,90 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-trauma-1436-co1",
+   "questao": "trauma-1436",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Monteggia, qual é a causa mais comum de subluxação residual da cabeça do rádio após fixar a ulna?",
+   "resposta": "redução não anatômica da ulna",
+   "explicacao": "Primeiro duvidar da ulna (**redução não anatômica**); com a ulna anatômica, pensar em interposição.",
+   "opcoes": [
+    "redução não anatômica da ulna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "5df552b19867",
+   "origem": "autoral",
+   "trecho": "A causa mais comum de subluxação residual é a redução não anatômica da ulna.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1436-co2",
+   "questao": "trauma-1436",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como Rouleau chamou a angulação dorsal da ulna proximal que uma placa reta pode apagar?",
+   "resposta": "PUDA",
+   "explicacao": "**PUDA** (proximal ulna dorsal angulation): cerca de 6 graus, a uns 5 cm da ponta do olécrano.",
+   "opcoes": [
+    "PUDA"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "5df552b19867",
+   "origem": "autoral",
+   "trecho": "chamada por ROULEAU de PUDA (proximal ulna dorsal angulation)",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1436-co3",
+   "questao": "trauma-1436",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a magnitude média da angulação dorsal da ulna proximal (PUDA)?",
+   "resposta": "cerca de 6 graus",
+   "explicacao": "**Cerca de 6 graus** (varia de 0 a 14), a uns 5 cm da ponta do olécrano.",
+   "opcoes": [
+    "cerca de 6 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "5df552b19867",
+   "origem": "autoral",
+   "trecho": "A ulna proximal tem uma angulação dorsal de cerca de 6 graus",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-trauma-1439-cl1",
    "questao": "trauma-1439",
    "area": "Trauma adulto",
@@ -4440,6 +4851,203 @@
    "colecao": "simulados"
   },
   {
+   "id": "fc-trauma-1440-co1",
+   "questao": "trauma-1440",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura isolada de um osso do antebraço: quais radiografias são sempre necessárias?",
+   "resposta": "cotovelo e do punho",
+   "explicacao": "Radiografar **cotovelo e punho**: ulna isolada afasta Monteggia; rádio isolado afasta Galeazzi.",
+   "opcoes": [
+    "cotovelo e do punho"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "5117ed81553d",
+   "origem": "autoral",
+   "trecho": "Toda fratura isolada de um osso do antebraço pede radiografias do cotovelo e do punho",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1440-co2",
+   "questao": "trauma-1440",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quem mostrou que os parâmetros radiográficos de lesão da radioulnar distal na Galeazzi são pouco confiáveis?",
+   "resposta": "TSISMENAKIS e TORNETTA",
+   "explicacao": "**Tsismenakis e Tornetta**: por isso se testa a RUD no intraoperatório, após fixar o rádio.",
+   "opcoes": [
+    "TSISMENAKIS e TORNETTA"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "5117ed81553d",
+   "origem": "autoral",
+   "trecho": "TSISMENAKIS e TORNETTA mostraram que esses parâmetros têm baixa confiabilidade",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1442-co1",
+   "questao": "trauma-1442",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fixação da radioulnar distal instável com fios de Kirschner, quantos fios e de que calibre se recomendam?",
+   "resposta": "dois fios de 2 mm",
+   "explicacao": "**Dois fios de 2 mm**, a 1 cm um do outro, o mais distal logo proximal à incisura sigmoide.",
+   "opcoes": [
+    "dois fios de 2 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "038adbf47037",
+   "origem": "autoral",
+   "trecho": "Recomendam-se dois fios de 2 mm, a 1 cm um do outro",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1442-pc1",
+   "questao": "trauma-1442",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Galeazzi, a luxação dorsal da ulna é imobilizada em supinação. E a luxação volar?",
+   "resposta": "pronação",
+   "explicacao": "A posição segue a direção: **dorsal → supinação**; **volar → pronação**.",
+   "opcoes": [
+    "pronação",
+    "supinação"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "038adbf47037",
+   "origem": "autoral",
+   "trecho": "a luxação volar é imobilizada em pronação",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1449-co1",
+   "questao": "trauma-1449",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais são os quatro compartimentos do antebraço?",
+   "resposta": "Volar superficial, volar profundo, dorsal e coxim móvel",
+   "explicacao": "**Volar superficial, volar profundo, dorsal e coxim móvel** (braquiorradial e extensores radiais).",
+   "opcoes": [
+    "Volar superficial, volar profundo, dorsal e coxim móvel"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "eda90a96fc2e",
+   "origem": "autoral",
+   "trecho": "Volar superficial, volar profundo, dorsal e coxim móvel.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1449-co2",
+   "questao": "trauma-1449",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome compartimental do antebraço, por qual incisão se libera o coxim móvel?",
+   "resposta": "incisão dorsal",
+   "explicacao": "O coxim móvel é liberado pela **incisão dorsal**, junto com o compartimento dorsal.",
+   "opcoes": [
+    "incisão dorsal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "eda90a96fc2e",
+   "origem": "autoral",
+   "trecho": "o coxim móvel é liberado pela incisão dorsal junto com o compartimento dorsal",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1450-co1",
+   "questao": "trauma-1450",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na via de Thompson, quais músculos afloram distalmente e separam o extensor radial curto do extensor dos dedos?",
+   "resposta": "abdutor longo e o extensor curto do polegar",
+   "explicacao": "O **abdutor longo e o extensor curto do polegar** afloram; por isso a dissecção vai de distal para proximal.",
+   "opcoes": [
+    "abdutor longo e o extensor curto do polegar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "f1e9813fa379",
+   "origem": "autoral",
+   "trecho": "onde o abdutor longo e o extensor curto do polegar afloram",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
    "id": "fc-trauma-1452-ar1",
    "questao": "trauma-1452",
    "area": "Trauma adulto",
@@ -4548,6 +5156,174 @@
    "fonte": "38674712a302",
    "origem": "autoral",
    "trecho": "SARMIENTO relatou 99% de consolidação com órtese funcional.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1453-co1",
+   "questao": "trauma-1453",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Segundo Schemitsch e Richards, com que erro máximo na magnitude do arco radial se preservam 80% da rotação?",
+   "resposta": "1,5 mm",
+   "explicacao": "Localização com erro de até cerca de 4% e magnitude de até **1,5 mm**: 80% ou mais da rotação normal.",
+   "opcoes": [
+    "1,5 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "426d35a3b6e3",
+   "origem": "autoral",
+   "trecho": "Restaurar a localização com erro de até cerca de 4% e a magnitude com erro de até 1,5 mm resultou em 80% ou mais da rotação normal",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1453-co2",
+   "questao": "trauma-1453",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A curvatura do rádio e da ulna permite cerca de quantos graus de pronossupinação?",
+   "resposta": "cerca de 150 graus",
+   "explicacao": "**Cerca de 150 graus**; por isso a redução diafisária do antebraço precisa ser anatômica.",
+   "opcoes": [
+    "cerca de 150 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "426d35a3b6e3",
+   "origem": "autoral",
+   "trecho": "a curvatura dos dois ossos permite cerca de 150 graus de rotação",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1454-ar1",
+   "questao": "trauma-1454",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Placa 1/3 tubular ou de reconstrução pélvica serve para fixar fratura diafisária do antebraço do adulto?",
+   "resposta": "não dão estabilidade suficiente",
+   "explicacao": "**Não**: essas placas **não dão estabilidade suficiente** e predispõem à pseudartrose.",
+   "opcoes": [
+    "não dão estabilidade suficiente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "dca1c600aafb",
+   "origem": "autoral",
+   "trecho": "Placas 1/3 tubulares ou de reconstrução pélvica não dão estabilidade suficiente e predispõem à pseudartrose.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1454-co1",
+   "questao": "trauma-1454",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que as placas de 3,5 mm substituíram as de 4,5 mm nas fraturas do antebraço?",
+   "resposta": "menos refratura após a retirada",
+   "explicacao": "Mesma consolidação, **menos refratura após a retirada** e menos fraturas ao redor do implante.",
+   "opcoes": [
+    "menos refratura após a retirada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "dca1c600aafb",
+   "origem": "autoral",
+   "trecho": "menos refratura após a retirada e menos fraturas ao redor do implante",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1455-co1",
+   "questao": "trauma-1455",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais fraturas associadas contraindicam a haste bloqueada no antebraço, por impedir o bloqueio proximal?",
+   "resposta": "fraturas associadas da cabeça ou do colo do rádio",
+   "explicacao": "Contraindicações: fise aberta, canal menor que 3 mm, infecção ativa e **fratura da cabeça ou do colo do rádio**.",
+   "opcoes": [
+    "fraturas associadas da cabeça ou do colo do rádio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "bcbe42983ebe",
+   "origem": "autoral",
+   "trecho": "fraturas associadas da cabeça ou do colo do rádio",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1455-co2",
+   "questao": "trauma-1455",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na haste bloqueada do antebraço, onde fica o ponto de entrada no rádio?",
+   "resposta": "junto ao tubérculo de LISTER",
+   "explicacao": "**Junto ao tubérculo de Lister**, entre os extensores radiais, para proteger o extensor longo do polegar.",
+   "opcoes": [
+    "junto ao tubérculo de LISTER"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "bcbe42983ebe",
+   "origem": "autoral",
+   "trecho": "O ponto de entrada do rádio fica junto ao tubérculo de LISTER",
    "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
@@ -4693,6 +5469,146 @@
    "fonte": "55fedb1f3f5a",
    "origem": "autoral",
    "trecho": "A sinostose completa ocorre em 1% a 6% das fraturas do antebraço.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1458-co1",
+   "questao": "trauma-1458",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que proporção das placas do antebraço precisa ser retirada?",
+   "resposta": "Menos de 10%",
+   "explicacao": "**Menos de 10%**; a retirada não é rotina e tem riscos (refratura, lesão nervosa, infecção).",
+   "opcoes": [
+    "Menos de 10%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "8006655d2e1e",
+   "origem": "autoral",
+   "trecho": "Menos de 10% das placas do antebraço precisam ser retiradas.",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1458-co2",
+   "questao": "trauma-1458",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Com placas de 4,5 mm no antebraço, qual era a refratura após a retirada nas séries antigas?",
+   "resposta": "22%",
+   "explicacao": "**22%** com 4,5 mm; séries posteriores com 3,5 mm não tiveram nenhuma.",
+   "opcoes": [
+    "22%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "8006655d2e1e",
+   "origem": "autoral",
+   "trecho": "as séries antigas tinham refratura de 22% após a retirada",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1459-co1",
+   "questao": "trauma-1459",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Segundo Tarr, consolidações viciosas de 15 graus no rádio e na ulna tiram quanto da rotação?",
+   "resposta": "27%",
+   "explicacao": "**27%** da rotação; deformidades do terço médio limitam mais a supinação.",
+   "opcoes": [
+    "27%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "a5809d71e04a",
+   "origem": "autoral",
+   "trecho": "consolidações viciosas de 15 graus no rádio e na ulna causaram perda de 27% da rotação",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1460-cl1",
+   "questao": "trauma-1460",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pela definição de Anderson, quando uma fratura do antebraço passa a ser pseudartrose?",
+   "resposta": "sem consolidar após 6 meses",
+   "explicacao": "Anderson: consolida até 6 meses; **sem consolidar após 6 meses** ou com cirurgia não planejada é pseudartrose.",
+   "opcoes": [
+    "sem consolidar após 6 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "cf5f79c3342a",
+   "origem": "autoral",
+   "trecho": "sem consolidar após 6 meses ou com cirurgia não planejada é pseudartrose",
+   "criadoEm": "2026-10-15",
+   "colecao": "simulados"
+  },
+  {
+   "id": "fc-trauma-1460-co1",
+   "questao": "trauma-1460",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtemas": [
+    "Fraturas diafisárias do antebraço"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após placa e parafusos nas fraturas diafisárias do antebraço, qual é a taxa de pseudartrose?",
+   "resposta": "0% a 10%",
+   "explicacao": "**0% a 10%**; quando ocorre, investigar infecção, presente em cerca de um terço.",
+   "opcoes": [
+    "0% a 10%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "cf5f79c3342a",
+   "origem": "autoral",
+   "trecho": "a pseudartrose ocorre em 0% a 10%",
    "criadoEm": "2026-10-15",
    "colecao": "simulados"
   },
