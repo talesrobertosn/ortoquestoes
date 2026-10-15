@@ -299,7 +299,8 @@ export function Inicio() {
               os botões do topo e a barra de navegação. Sem conta, só o que funciona sem conta. */}
           <CartaoCronograma cronograma={cronograma} />
           {!cronograma.calculo && !cronograma.carregando && <AteAProva total={indice.total} conta={Boolean(conta)} />}
-          {conta ? <>
+          {/* Sem o sistema de contas (VITE_SUPABASE_URL=sem) o progresso fica no aparelho: mostra tudo. */}
+          {conta || !contasDisponiveis ? <>
           <div className="inicio-grade">
             <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
               <h2 id="inicio-hoje-titulo">Seu estudo de hoje</h2>
@@ -439,7 +440,7 @@ export function Inicio() {
           </section>
           </ParComCripta>
           <CartaoPlanos />
-          {conta && <SecaoIndique />}
+          {(conta || !contasDisponiveis) && <SecaoIndique />}
 
         </>
       )}
