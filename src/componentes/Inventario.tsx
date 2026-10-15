@@ -6,10 +6,11 @@ import { JanelaCentral } from './JanelaCentral'
 import { EMBLEMAS_COM_IMAGEM } from '../dados/imagensEmblemas'
 import { recurso } from '../config'
 import {
-  EMBLEMAS, FAMILIAS, VITRINE_MAXIMO, conquistaAtual, desbloqueado, valorDe, emblemaPorId, podeIrParaVitrine,
+  EMBLEMAS, FAMILIAS, MESTRE_SEGUIDOS, VITRINE_MAXIMO, conquistaAtual, desbloqueado, valorDe, emblemaPorId, podeIrParaVitrine,
   type Emblema, type Metricas,
 } from '../estado/conquistas'
 import { META_STREAK_DIARIA } from '../estado/streak'
+import { usarArmazenado } from '../estado/usarArmazenado'
 
 /**
  * Dica de um emblema: ao passar o mouse, ao focar pelo teclado ou ao tocar,
@@ -87,7 +88,7 @@ function Progresso({ valor, meta }: { valor: number; meta: number }) {
   </span>
 }
 
-function ItemInventario({ emblema, metricas, naVitrine }: { emblema: Emblema; metricas: Metricas; naVitrine: boolean }) {
+function ItemInventario({ emblema, metricas, naVitrine, familia }: { emblema: Emblema; metricas: Metricas; naVitrine: boolean; familia?: string }) {
   const tem = desbloqueado(emblema, metricas)
   const oculta = emblema.secreta && !tem
   return <li className={'inv-item' + (tem ? ' inv-item--tem' : '') + (oculta ? ' inv-item--secreta' : '') + ` inv-item--${emblema.nivel}`}>
@@ -95,6 +96,7 @@ function ItemInventario({ emblema, metricas, naVitrine }: { emblema: Emblema; me
       {oculta ? <span className="inv-item__misterio" aria-hidden="true">?</span> : <Medalha conquista={emblema} tamanho={72} bloqueada={!tem} />}
       {naVitrine && <span className="inv-item__vitrine" title="Na sua vitrine"><Icone nome="estrela" tamanho={12} /></span>}
     </span>
+    {familia && <small className="inv-item__familia">{familia}</small>}
     <strong>{oculta ? 'Conquista secreta' : emblema.rotulo}</strong>
     <small className="inv-item__descricao">{oculta ? 'Continue estudando para descobrir.' : emblema.descricao}</small>
     {tem ? <small className="inv-item__ok">Conquistado</small> : !oculta && <Progresso valor={valorDe(emblema, metricas)} meta={emblema.minimo} />}
@@ -152,6 +154,9 @@ function EscolherVitrine({ aberta, aoFechar, metricas, atuais, salvar }: {
   </JanelaCentral>
 }
 
+type FiltroInventario = 'proximas' | 'conquistadas' | 'todas'
+const ROTULO_FILTRO: Record<FiltroInventario, string> = { proximas: 'Próximas', conquistadas: 'Conquistadas', todas: 'Todas' }
+
 /**
  * Inventário de conquistas: o cartão do jogador (toque no nome para montar a
  * vitrine) e todas as conquistas por família, com progresso das que faltam.
@@ -160,6 +165,23 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
   metricas: Metricas; nome: string; vitrine: string[]; salvarVitrine: (ids: string[]) => Promise<string | null>; podeEscolher: boolean; abrirEscolha?: boolean
 }) {
   const [escolhendo, definirEscolhendo] = useState(false)
+  // 168 emblemas numa página de 18 mil px no celular: por padrão só a próxima meta
+  // de cada família; "Conquistadas" e "Todas" a um toque, e uma família por vez.
+  const [filtro, definirFiltro] = usarArmazenado<FiltroInventario>('conquistas:filtro', 'proximas')
+  const [familia, definirFamilia] = useState('')
+  const grupos = FAMILIAS.filter((f) => (familia ? f.id === familia : true)).map((f) => {
+    const todas = EMBLEMAS.filter((e) => e.familia === f.id)
+    const tem = (e: Emblema) => desbloqueado(e, metricas)
+    // Secretas fechadas vão para o baú; abertas aparecem como as outras.
+    const visiveis = todas.filter((e) => !e.secreta || tem(e))
+    const lista = filtro === 'conquistadas' ? visiveis.filter(tem)
+      // Na ordem em que a família foi escrita (do começo ao fim): famílias com métricas
+      // misturadas (cronograma, nacional) não têm metas comparáveis pelo número.
+      : filtro === 'proximas' ? visiveis.filter((e) => !tem(e)).slice(0, 1)
+      : visiveis
+    return { f, lista, feitas: todas.filter(tem).length, total: todas.length }
+  }).filter((g) => g.lista.length)
+  const secretasGuardadas = EMBLEMAS.filter((e) => e.secreta && !desbloqueado(e, metricas)).length
   // Vindo de um atalho "escolher emblemas" (ranking, conta), a janela já abre.
   useEffect(() => { if (abrirEscolha && podeEscolher) definirEscolhendo(true) }, [abrirEscolha, podeEscolher])
   return <section className="cartao cartao__corpo inv" aria-label="Seus emblemas">
@@ -179,17 +201,40 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
       {podeEscolher && <small className="inv-jogador__dica">Eles aparecem ao lado do seu nome no ranking, para todo mundo ver.</small>}
     </button>
 
-    {FAMILIAS.map((f) => {
-      const lista = EMBLEMAS.filter((e) => e.familia === f.id)
-      const feitas = lista.filter((e) => desbloqueado(e, metricas)).length
-      return <div key={f.id} className="inv-familia">
-        <h3 className="inv-familia__titulo">{f.titulo} <small className="numerico">{feitas}/{lista.length}</small></h3>
-        {f.id === 'sequencia' && <p className="texto-2 inv-familia__nota">Conta enquanto a sequência está viva. Perdeu um dia, ela recomeça do zero.</p>}
-        <ul className="inv-grade">
-          {lista.map((e) => <ItemInventario key={e.id} emblema={e} metricas={metricas} naVitrine={vitrine.includes(e.id)} />)}
-        </ul>
+    <div className="inv-filtros" role="group" aria-label="Mostrar">
+      <div className="inv-segmentado">
+        {(Object.keys(ROTULO_FILTRO) as FiltroInventario[]).map((v) => <button key={v} type="button" aria-pressed={filtro === v} onClick={() => definirFiltro(v)}>{ROTULO_FILTRO[v]}</button>)}
       </div>
-    })}
+      <label className="inv-familia-escolha">
+        <span>Família</span>
+        <select className="entrada" value={familia} onChange={(e) => definirFamilia(e.target.value)}>
+          <option value="">Todas</option>
+          {FAMILIAS.filter((f) => f.id !== 'secretas').map((f) => <option key={f.id} value={f.id}>{f.titulo}</option>)}
+        </select>
+      </label>
+    </div>
+    {filtro === 'proximas' && <p className="texto-2 inv-filtros__nota">A próxima meta de cada família. Toque em "Todas" para ver os {EMBLEMAS.length} emblemas.</p>}
+
+    {/* Próximas: uma grade só, com a família em cada cartão (uma linha por família ainda dava 13 mil px). */}
+    {filtro === 'proximas' && !familia && grupos.length > 0 && <ul className="inv-grade inv-grade--proximas">
+      {grupos.map(({ f, lista }) => <ItemInventario key={f.id} emblema={lista[0]} metricas={metricas} naVitrine={vitrine.includes(lista[0].id)} familia={f.titulo} />)}
+    </ul>}
+    {!(filtro === 'proximas' && !familia) && grupos.map(({ f, lista, feitas, total }) => <div key={f.id} className="inv-familia">
+      <h3 className="inv-familia__titulo">{f.titulo} <small className="numerico">{feitas}/{total}</small></h3>
+      {f.id === 'sequencia' && <p className="texto-2 inv-familia__nota">Conta enquanto a sequência está viva. Perdeu um dia, ela recomeça do zero.</p>}
+      {/* O progresso parava em "99/100" sem dizer por quê. */}
+      {f.id === 'mestre' && <p className="texto-2 inv-familia__nota">Além dos acertos, é preciso acertar {MESTRE_SEGUIDOS} seguidas no tema. Até lá, o progresso fica uma antes da meta.</p>}
+      <ul className="inv-grade">
+        {lista.map((e) => <ItemInventario key={e.id} emblema={e} metricas={metricas} naVitrine={vitrine.includes(e.id)} />)}
+      </ul>
+    </div>)}
+    {!grupos.length && <p className="texto-2">{filtro === 'conquistadas' ? 'Nenhuma conquista aqui ainda. Continue estudando: a primeira vem rápido.' : 'Tudo conquistado nesta família.'}</p>}
+
+    {/* As secretas não descobertas ficam num baú só, em vez de vários cartões com "?". */}
+    {!familia && filtro !== 'conquistadas' && secretasGuardadas > 0 && <div className="inv-bau">
+      <span className="inv-item__misterio" aria-hidden="true">?</span>
+      <span><strong>{secretasGuardadas} {secretasGuardadas === 1 ? 'conquista secreta' : 'conquistas secretas'}</strong><small>Elas se revelam quando você as desbloqueia. Continue estudando.</small></span>
+    </div>}
 
     {escolhendo && <EscolherVitrine aberta={escolhendo} aoFechar={() => definirEscolhendo(false)} metricas={metricas} atuais={vitrine} salvar={salvarVitrine} />}
   </section>

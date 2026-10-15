@@ -2,10 +2,14 @@ import { LIMITE_GRATIS_ATUAL, SITE } from '../config'
 import { href } from '../util/rotas'
 import { VERSAO_TERMOS } from '../conta/termos'
 import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
+import { useRef } from 'react'
+import { IndicePagina, VoltarAoTopo } from '../componentes/IndicePagina'
 
 export function Termos() {
+  // 46 mil px no celular: o índice leva direto à cláusula e o "Topo" traz de volta.
+  const pagina = useRef<HTMLElement>(null)
   return (
-    <article className="limite-leitura empilha termos-pagina">
+    <article className="limite-leitura empilha termos-pagina" ref={pagina}>
       <header>
         <p className="meta">TERMOS DE USO E PRIVACIDADE</p>
         <h1>Termos de Uso e Privacidade — {SITE.nome}</h1>
@@ -17,6 +21,8 @@ export function Termos() {
           rege o cadastro e o uso do site {SITE.nome} ({SITE.url}).
         </p>
       </header>
+      <IndicePagina alvo={pagina} titulo="Índice das cláusulas" />
+      <VoltarAoTopo />
 
       <h2>Preâmbulo</h2>
       <p>

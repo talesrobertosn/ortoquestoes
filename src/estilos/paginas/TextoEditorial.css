@@ -53,3 +53,20 @@
 @media (max-width: 40rem) {
   .te-nota { padding-left: 2.6rem; }
 }
+.texto-editorial em { font-style: italic; }
+/* Tabela de 3+ colunas no celular: cada linha vira um cartão. A 1ª célula é o
+   título do cartão; as outras mostram o nome da coluna (data-rotulo) em cima. */
+@media (max-width: 40rem) {
+  .te-tabela--cartoes { overflow: visible; border: 0; border-radius: 0; }
+  .te-tabela--cartoes table, .te-tabela--cartoes tbody, .te-tabela--cartoes tr, .te-tabela--cartoes td { display: block; width: 100%; }
+  .te-tabela--cartoes table { font-size: 0.95em; }
+  .te-tabela--cartoes thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .te-tabela--cartoes tr { margin: 0 0 0.6rem; border: 1px solid color-mix(in srgb, var(--verdete) 30%, transparent); border-radius: var(--raio-controle); overflow: hidden; }
+  .te-tabela--cartoes tr:last-child { margin-bottom: 0; }
+  .te-tabela--cartoes td { padding: 0.5rem 0.75rem; border-bottom: 1px solid color-mix(in srgb, var(--verdete) 14%, transparent); overflow-wrap: anywhere; }
+  .te-tabela--cartoes tr td:last-child { border-bottom: 0; }
+  .te-tabela--cartoes td:first-child { font-weight: 800; color: var(--verdete); background: color-mix(in srgb, var(--verdete) 8%, transparent); }
+  .te-tabela--cartoes td[data-rotulo]::before { content: attr(data-rotulo); display: block; margin-bottom: 0.1rem; font-size: 0.78em; font-weight: 800; letter-spacing: 0.02em; color: var(--texto-2); }
+  .te-tabela--cartoes td:empty:not([data-grupo]) { display: none; }
+  .te-tabela--cartoes td[data-grupo]:empty::before { content: attr(data-grupo); font-weight: 700; opacity: 0.85; }
+}

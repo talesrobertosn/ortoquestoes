@@ -31,3 +31,8 @@
 @media (max-width: 30rem) { .rz-foco li { flex-direction: column; gap: 0.2rem; } }
 .rz-area--guardada { display: flex; align-items: center; gap: 0.8rem; padding: 0.9rem 1.1rem; }
 .rz-rodape { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 0; font-size: var(--meta); color: var(--texto-2); }
+/* Atalhos para cada área: um toque abre e leva até ela. */
+.rz-indice { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.rz-indice__item { min-height: 40px; padding: 0 0.85rem; border-radius: 999px; border: var(--borda); background: var(--superficie); color: var(--texto); font: inherit; font-size: var(--corpo-menor); font-weight: 650; cursor: pointer; }
+.rz-indice__item:hover { border-color: var(--verdete); color: var(--verdete); }
+.rz-indice__item--lida { color: var(--texto-2); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--texto-2) 50%, transparent); }

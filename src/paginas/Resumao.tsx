@@ -9,6 +9,8 @@ import { IconePixel } from '../componentes/IconePixel'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href } from '../util/rotas'
 import '../estilos/paginas/Resumao.css'
+import { irParaSecao, VoltarAoTopo } from '../componentes/IndicePagina'
+import { rotaDe } from '../util/rotas'
 
 interface Frase { texto: string; id: string }
 interface FocoResumao { nome: string; nivel: Nivel; frases: Frase[] }
@@ -41,6 +43,26 @@ export function Resumao() {
     return () => { vivo = false }
   }, [])
 
+  // Vindo do cronograma (?tema=joelho): abre e mostra direto a área do dia.
+  const temaPedido = rotaDe(window.location.hash).consulta.get('tema')
+  // Depende também de premium: sem o acesso em cache, as áreas além da amostra só
+  // aparecem quando a consulta de assinatura responde, depois dos dados.
+  const [temaAberto, definirTemaAberto] = useState(false)
+  useEffect(() => {
+    if (!dados || !temaPedido || temaAberto) return
+    const el = document.getElementById(`rz-${temaPedido}`) as HTMLDetailsElement | null
+    if (!el) return
+    el.open = true
+    el.scrollIntoView({ block: 'start' })
+    definirTemaAberto(true)
+  }, [dados, temaPedido, premium, temaAberto])
+  const irPara = (slug: string) => {
+    const el = document.getElementById(`rz-${slug}`) as HTMLDetailsElement | null
+    if (!el) return
+    el.open = true
+    irParaSecao(el)
+  }
+
   if (erro) return <p className="aviso-formulario aviso-formulario--erro" role="alert">Não foi possível carregar o resumão. Confira a conexão e recarregue.</p>
   if (!dados) return <Carregando linhas={6} rotulo="Carregando o resumão" />
 
@@ -51,7 +73,7 @@ export function Resumao() {
   const area = (a: AreaResumao, i: number) => {
     const lida = lidasValidas.includes(a.slug)
     return (
-      <details key={a.slug} className={'rz-area' + (lida ? ' rz-area--lida' : '')} open={i === 0 && !lida}>
+      <details key={a.slug} id={`rz-${a.slug}`} className={'rz-area' + (lida ? ' rz-area--lida' : '')} open={temaPedido ? a.slug === temaPedido : i === 0 && !lida}>
         <summary>
           <span className="rz-area__num numerico">{i + 1}</span>
           <span className="rz-area__nome"><strong>{a.nome}</strong><small>{a.focos.length} assuntos · {a.focos.reduce((s, f) => s + f.frases.length, 0)} frases</small></span>
@@ -85,7 +107,12 @@ export function Resumao() {
         </div>
       </section>
 
+      {visiveis.length > 3 && <nav className="rz-indice" aria-label="Ir para a área">
+        {visiveis.map((a) => <button type="button" key={a.slug} className={'rz-indice__item' + (lidasValidas.includes(a.slug) ? ' rz-indice__item--lida' : '')} onClick={() => irPara(a.slug)}>{a.nome}</button>)}
+      </nav>}
+
       <div className="rz-areas">{visiveis.map(area)}</div>
+      <VoltarAoTopo />
 
       {!premium && dados.areas.length > AREAS_AMOSTRA && (
         <Degustacao titulo={`Mais ${dados.areas.length - AREAS_AMOSTRA} áreas no resumão`} texto={<p>O resumão completo faz parte da reta final do cronograma do assinante: todas as áreas, com as frases dos assuntos que mais caem.</p>} acao="Liberar o resumão completo">

@@ -72,7 +72,7 @@ export function usarSessao() {
   )
 
   const responder = useCallback(
-    (id: string, escolhida: Letra, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => {
+    (id: string, escolhida: Letra | null, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => {
       // Persistência acontece fora do updater do React. Updaters podem ser
       // reexecutados ou descartados em celulares, o que fazia respostas
       // ficarem apenas no estado visual da sessão.
@@ -186,13 +186,13 @@ export function usarSessao() {
  * A confiança não tem valor padrão: ela decide quando a questão volta, e um
  * padrão silencioso já fez toda resposta ser contada como "tinha certeza".
  */
-export function registrarResposta(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute', escolhida?: Letra) {
+export function registrarResposta(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute', escolhida?: Letra | null) {
   registrarRespondida(id, correta, confianca, escolhida)
 }
 
-function registrarRespondida(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute', escolhida?: Letra) {
+function registrarRespondida(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute', escolhida?: Letra | null) {
   const mapa = ler<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
-  mapa[id] = proximoRegistro(mapa[id], correta, Date.now(), confianca, escolhida)
+  mapa[id] = proximoRegistro(mapa[id], correta, Date.now(), confianca, escolhida ?? undefined)
   gravar(CHAVE_RESPONDIDAS, mapa)
 }
 
