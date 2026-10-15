@@ -247,7 +247,8 @@ function ItemErro({ erro, questao, indice, nota }: { erro: Erro; questao?: Quest
   const [aberto, definirAberto] = useState(false)
   const [comentario, definirComentario] = useState<ComentarioIA | null | undefined>(undefined)
   const temaInfo = indice.temas[erro.tema]
-  const marcada = erro.registro.m as Letra | undefined
+  // Dissertativa não tem letra; registros antigos guardavam 'A' e mostravam "Você marcou A" vazio.
+  const marcada = questao?.tipo === 'dissertativa' ? undefined : erro.registro.m as Letra | undefined
   const alternativa = (l?: Letra | null) => questao?.alternativas.find((a) => a.letra === l)
 
   useEffect(() => {

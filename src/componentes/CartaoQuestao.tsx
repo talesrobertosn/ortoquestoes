@@ -32,7 +32,7 @@ interface Props {
   // A confiança é obrigatória de propósito: quando era opcional, os dois
   // pontos de chamada esqueceram de repassá-la e toda resposta virava
   // "seguro" no silêncio do valor padrão. O compilador agora cobra.
-  aoResponder: (letra: Letra, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => void | Promise<void>
+  aoResponder: (letra: Letra | null, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => void | Promise<void>
   aoRiscar: (letra: Letra) => void
   aoFavoritar: () => void
   aoRevisar: () => void
@@ -134,7 +134,9 @@ export function CartaoQuestao({
     definirErroEnvio('')
     const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
     definirEnviando(true)
-    try { await aoResponder('A', nota !== 'errei', segundos, nota === 'parcial' ? 'duvida' : 'seguro') }
+    // Sem letra: antes ia 'A', que aparecia como "Você marcou A" no caderno e
+    // contava na estatística de "como a turma respondeu".
+    try { await aoResponder(null, nota !== 'errei', segundos, nota === 'parcial' ? 'duvida' : 'seguro') }
     catch (erro) { definirErroEnvio(erro instanceof Error ? `${erro.name}: ${erro.message}` : String(erro)) }
     finally { definirEnviando(false) }
   }
