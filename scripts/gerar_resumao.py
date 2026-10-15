@@ -50,6 +50,14 @@ def frase_na_prova(comentario: dict | None) -> str | None:
     return texto if texto.endswith((".", "!", "?")) else texto + "."
 
 
+def origem_da_questao(q: dict) -> str | None:
+    """De onde a frase saiu, para a leitura mostrar ("TEOT 2019", "OrtoQuestões Simulados")."""
+    if q.get("simulado"):
+        return "OrtoQuestões Simulados"
+    partes = [str(p) for p in (q.get("prova"), q.get("ano")) if p]
+    return " ".join(partes) or None
+
+
 def main() -> None:
     incidencia = json.loads(INCIDENCIA.read_text(encoding="utf-8"))
     questoes_por_tema: dict[str, list[dict]] = {}
@@ -79,11 +87,16 @@ def main() -> None:
                 if not texto or normalizar(texto) in vistas:
                     continue
                 vistas.add(normalizar(texto))
-                frases.append({"texto": texto, "id": q["id"]})
+                frase = {"texto": texto, "id": q["id"]}
+                origem = origem_da_questao(q)
+                if origem:
+                    frase["origem"] = origem
+                frases.append(frase)
                 if len(frases) >= FRASES_POR_ASSUNTO:
                     break
             if frases:
-                focos_saida.append({"nome": foco["nome"], "nivel": foco["nivel"], "frases": frases})
+                # "n": questões de prova do assunto no acervo (a mesma contagem dos temas que mais caem).
+                focos_saida.append({"nome": foco["nome"], "nivel": foco["nivel"], "n": foco.get("n", 0), "frases": frases})
                 total += len(frases)
         if focos_saida:
             areas_saida.append({"nome": area["nome"], "slug": slug, "focos": focos_saida})
