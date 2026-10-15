@@ -191,6 +191,65 @@ export function aReceberNoCartao(assinaturas: AssinaturaBase[], meses: number, a
   return { valor, cobrancas, porMes: [...porMes] }
 }
 
+/** Quando a pessoa comprou (para achar a recompra de quem pagou Pix). */
+const compradaEm = (a: AssinaturaBase) => new Date(a.criada_em ?? a.inicio_periodo ?? a.ultima_cobranca_em ?? 0).getTime()
+
+/**
+ * Quantos Pix já terminados foram renovados: a mesma pessoa pagou de novo (Pix ou cartão, qualquer
+ * plano) depois da compra e até `folgaDias` dias depois do fim do acesso. Só conta o Pix cujo prazo
+ * para decidir já passou (fim + folga antes de hoje); os que ainda podem renovar ficam de fora para
+ * não puxar a taxa para baixo.
+ */
+export function renovacaoDoPix(assinaturas: AssinaturaBase[], agora = new Date(), folgaDias = 30) {
+  const folga = folgaDias * 86_400_000
+  const pagas = assinaturas.filter(a => a.status !== 'reembolsada' && (a.ultima_cobranca_em || pagaSemCobranca(a)))
+  let encerrados = 0, renovados = 0
+  for (const a of pagas) {
+    if (meioDe(a) !== 'pix' || !a.fim_periodo) continue
+    const fim = new Date(a.fim_periodo).getTime()
+    if (fim + folga > agora.getTime()) continue
+    encerrados++
+    const inicio = compradaEm(a)
+    if (pagas.some(b => b !== a && b.id_usuario === a.id_usuario && compradaEm(b) > inicio && compradaEm(b) <= fim + folga)) renovados++
+  }
+  return { encerrados, renovados, taxa: encerrados ? renovados / encerrados : null }
+}
+
+/**
+ * Estimativa do que o Pix traz de hoje até daqui a `meses` meses se uma fração `taxa` (0 a 1) de
+ * quem pagou Pix comprar de novo o mesmo plano quando o acesso acabar. Cada pessoa entra uma vez,
+ * pelo Pix com acesso que termina por último (quem já recomprou não conta em dobro), e fica de fora
+ * quem também tem cartão renovando sozinho. A segunda recompra vale taxa², a terceira taxa³, e assim
+ * por diante (para renovar de novo, a pessoa precisa ter renovado antes). `renovacoes` é o número
+ * esperado de recompras, fracionário.
+ */
+export function aReceberNoPix(assinaturas: AssinaturaBase[], meses: number, taxa: number, agora = new Date()) {
+  const limite = somarMeses(agora, meses), ms = agora.getTime()
+  const p = Math.max(0, Math.min(1, taxa))
+  const porMes = new Map<string, { valor: number; quantidade: number }>()
+  for (let d = new Date(agora.getFullYear(), agora.getMonth(), 1); d < limite; d = somarMeses(d, 1)) porMes.set(MES(d), { valor: 0, quantidade: 0 })
+  const comCartao = new Set(assinaturas.filter(a => vigente(a, ms) && renovaSozinha(a)).map(a => a.id_usuario))
+  const ultimo = new Map<string, AssinaturaBase>()
+  for (const a of assinaturas) {
+    if (meioDe(a) !== 'pix' || a.status === 'reembolsada' || !a.fim_periodo || !precoDe(a.plano) || !vigente(a, ms) || comCartao.has(a.id_usuario)) continue
+    const atual = ultimo.get(a.id_usuario)
+    if (!atual || new Date(a.fim_periodo) > new Date(atual.fim_periodo!)) ultimo.set(a.id_usuario, a)
+  }
+  let valor = 0, renovacoes = 0, pessoas = 0
+  for (const a of ultimo.values()) {
+    const preco = precoDe(a.plano)!
+    let chance = p, conta = false
+    for (let d = new Date(a.fim_periodo!); d < limite; d = somarMeses(d, preco.meses), chance *= p) {
+      if (d < agora) continue
+      conta = true
+      valor += preco.total * chance; renovacoes += chance
+      const m = porMes.get(MES(d)); if (m) { m.valor += preco.total * chance; m.quantidade += chance }
+    }
+    if (conta) pessoas++
+  }
+  return { valor, renovacoes, pessoas, porMes: [...porMes] }
+}
+
 /** Próximas renovações automáticas, mês a mês, supondo que ninguém cancele. */
 export function previsao(assinaturas: AssinaturaBase[], meses: number) {
   const agora = new Date(), limite = somarMeses(agora, meses)
