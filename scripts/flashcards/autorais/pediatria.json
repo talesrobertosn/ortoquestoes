@@ -179,6 +179,317 @@
    "criadoEm": "2026-10-13"
   },
   {
+   "id": "fc-pediatria-0515-cl1",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet da fratura do colo do fêmur na criança, qual tipo é o transcervical, no meio do colo, com necrose em cerca de 50%?",
+   "resposta": "II",
+   "explicacao": "**Delbet II (transcervical):** necrose **alta**, cerca de 50%. É também o tipo **mais frequente** (40 a 50% dos casos).",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "| **II** | **Transcervical**: no meio do colo | **Alta**, cerca de 50% |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-cl2",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet, onde fica a fratura do colo do fêmur do tipo III, com necrose em cerca de 25%?",
+   "resposta": "Cervicotrocantérico",
+   "explicacao": "**Delbet III: cervicotrocantérica (basocervical)**, necrose em cerca de 25%. Quanto mais **proximal**, maior o risco.",
+   "opcoes": [
+    "Transepifisário",
+    "Transcervical",
+    "Cervicotrocantérico",
+    "Intertrocantérico"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "| **III** | **Cervicotrocantérico** (basocervical) | Cerca de 25% |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-cl3",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual tipo de Delbet, intertrocantérico, tem o menor risco de necrose avascular da cabeça femoral na criança?",
+   "resposta": "IV",
+   "explicacao": "**Delbet IV (intertrocantérico):** necrose baixa, cerca de **10% ou menos**. A regra: quanto mais proximal a fratura, maior o risco.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "| **IV** | **Intertrocantérico** | Baixa, cerca de 10% ou menos |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-cl4",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o tipo de Delbet mais frequente entre as fraturas do colo do fêmur na criança?",
+   "resposta": "tipo II, transcervical",
+   "explicacao": "**Tipo II (transcervical):** 40 a 50% dos casos; depois o III (30 a 35%); o IV é menos frequente e o I é o mais raro, abaixo de 10%.",
+   "opcoes": [
+    "tipo II, transcervical"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "O **tipo II, transcervical**, responde por cerca de **40 a 50%** dos casos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-co1",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura desviada do colo do fêmur da criança, qual gesto, além da redução e fixação, diminui a tamponada do hematoma?",
+   "resposta": "descompressão da cápsula",
+   "explicacao": "**Descompressão da cápsula** (capsulotomia ou aspiração). A tamponada intracapsular piora a perfusão da cabeça.",
+   "opcoes": [
+    "descompressão da cápsula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "**descompressão da cápsula** (capsulotomia ou aspiração), que reduz a tamponada;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-co2",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na criança, a cabeça femoral depende quase só de quais vasos, que sobem pela face posterossuperior do colo?",
+   "resposta": "vasos retinaculares",
+   "explicacao": "**Vasos retinaculares**, ramos da **circunflexa femoral medial**. A artéria do ligamento redondo contribui pouco e a fise barra os vasos metafisários.",
+   "opcoes": [
+    "vasos retinaculares",
+    "artéria do ligamento redondo",
+    "vasos metafisários"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "a cabeça femoral depende quase só dos **vasos retinaculares** (ramos da **artéria circunflexa femoral medial**)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-co3",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os vasos retinaculares que nutrem a cabeça femoral da criança são ramos de qual artéria?",
+   "resposta": "circunflexa femoral medial",
+   "explicacao": "**Artéria circunflexa femoral medial.** A fratura desviada do colo rompe esses ramos, daí o risco de necrose.",
+   "opcoes": [
+    "circunflexa femoral medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "(ramos da **artéria circunflexa femoral medial**), que sobem pela face posterossuperior do colo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0515-pc1",
+   "questao": "pediatria-0515",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No tipo IA de Delbet, a epífise femoral descolada permanece no acetábulo. E no tipo IB, o que acontece com ela?",
+   "resposta": "se luxa para fora do acetábulo",
+   "explicacao": "**IB:** a epífise **luxa para fora do acetábulo**; risco de necrose próximo de **100%** e, em geral, redução aberta.",
+   "opcoes": [
+    "se luxa para fora do acetábulo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "800ce836c35a",
+   "origem": "autoral",
+   "trecho": "- **IB**: a epífise **se luxa para fora do acetábulo**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0516-co1",
+   "questao": "pediatria-0516",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a fratura metafisária da tíbia proximal da criança pequena, por mecanismo em valgo, que pode deixar valgo progressivo?",
+   "resposta": "Cozen",
+   "explicacao": "**Fratura de Cozen:** metafisária, em valgo, na criança pequena; pode evoluir com **valgo progressivo**.",
+   "opcoes": [
+    "Cozen"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "47008b0b4403",
+   "origem": "autoral",
+   "trecho": "como a fratura de **Cozen** (em valgo), que pode deixar valgo progressivo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0516-tb1",
+   "questao": "pediatria-0516",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mubarak das fraturas da tíbia proximal na criança, o mecanismo de extensão ameaça qual artéria?",
+   "resposta": "artéria poplítea",
+   "explicacao": "**Extensão:** desvio posterior da metáfise, com risco à **artéria poplítea**. Varo: risco ao nervo fibular.",
+   "opcoes": [
+    "artéria poplítea"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "47008b0b4403",
+   "origem": "autoral",
+   "trecho": "| Extensão | Desvio posterior da metáfise: risco à artéria poplítea |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0516-tb2",
+   "questao": "pediatria-0516",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Mubarak das fraturas da tíbia proximal na criança, o mecanismo em varo coloca em risco qual nervo?",
+   "resposta": "nervo fibular",
+   "explicacao": "**Varo:** fratura fisária ou metafisária com risco ao **nervo fibular**. Extensão: risco à artéria poplítea.",
+   "opcoes": [
+    "nervo fibular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "fonte": "47008b0b4403",
+   "origem": "autoral",
+   "trecho": "| Varo | Fisária ou metafisária, com risco ao nervo fibular |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0543-co1",
    "questao": "pediatria-0543",
    "area": "Ortopedia pediátrica",
@@ -1144,6 +1455,92 @@
    "fonte": "5be97c336f15",
    "origem": "autoral",
    "trecho": "| V | Equivalente ao Salter-Harris **IV** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0615-ar1",
+   "questao": "pediatria-0615",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fixação da fratura de Tillaux, o parafuso epifisário precisa obrigatoriamente poupar a fise?",
+   "resposta": "pode cruzar a fise",
+   "explicacao": "**Não.** O parafuso **pode cruzar a fise**, porque ela está quase fechada e o risco de deformidade é mínimo. O objetivo é a congruência articular.",
+   "opcoes": [
+    "pode cruzar a fise"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3e078ad50586",
+   "origem": "autoral",
+   "trecho": "fixação com **parafuso epifisário** paralelo à articulação, que pode cruzar a fise, porque ela está quase fechada e o risco de deformidade é mínimo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0615-co1",
+   "questao": "pediatria-0615",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ao longo de quanto tempo a fise distal da tíbia completa o fechamento, abrindo a janela das fraturas de transição?",
+   "resposta": "18 meses",
+   "explicacao": "**Cerca de 18 meses** (12 a 15 anos nas meninas, 14 a 18 nos meninos), do centro para medial e por fim anterolateral.",
+   "opcoes": [
+    "18 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3e078ad50586",
+   "origem": "autoral",
+   "trecho": "ao longo de cerca de **18 meses** (entre 12 e 15 anos nas meninas, 14 e 18 nos meninos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0615-tb1",
+   "questao": "pediatria-0615",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Lesões fisárias",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura triplanar do tornozelo é Salter-Harris II no perfil e III no AP. Em três dimensões, qual tipo ela é?",
+   "resposta": "IV",
+   "explicacao": "**Triplanar:** II no perfil, III no AP e **IV em três dimensões**. A Tillaux é Salter-Harris **III** (às vezes descrita como IV).",
+   "opcoes": [
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3e078ad50586",
+   "origem": "autoral",
+   "trecho": "| Salter-Harris | **III** (às vezes descrita como IV) | II no perfil, III no AP; IV em três dimensões |",
    "criadoEm": "2026-10-15"
   },
   {

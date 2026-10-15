@@ -1,9 +1,9 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4381,
- "batalha": 3899,
- "soEstudo": 482,
+ "total": 4395,
+ "batalha": 3904,
+ "soEstudo": 491,
  "comImagem": 630,
  "quarentena": 523,
  "areas": {
@@ -266,21 +266,21 @@
   "pediatria": {
    "nome": "Ortopedia pediátrica",
    "arquivo": "pediatria.json",
-   "total": 603,
-   "batalha": 527,
+   "total": 617,
+   "batalha": 532,
    "comImagem": 48,
    "tipos": {
-    "Armadilha": 2,
-    "Classificação": 21,
-    "Conceito": 35,
+    "Armadilha": 3,
+    "Classificação": 25,
+    "Conceito": 40,
     "Imagem": 48,
     "Na prova": 1,
-    "Par confundível": 4,
+    "Par confundível": 5,
     "Relâmpago": 476,
-    "Tabela": 16
+    "Tabela": 19
    },
    "assuntos": {
-    "Lesões fisárias": 99,
+    "Lesões fisárias": 113,
     "Genuvaro, genuvalgo e torções": 39,
     "Outras doenças congênitas": 26,
     "Displasia do desenvolvimento do quadril": 26,
@@ -442,5 +442,5 @@
    }
   }
  },
- "assinatura": "668833110d2f"
+ "assinatura": "114899caa381"
 }
