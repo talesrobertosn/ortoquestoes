@@ -16,6 +16,10 @@
  *  3. `renderizarCarta` transforma o texto em HTML mínimo + texto simples, com a
  *     assinatura fixa. É a única função que monta o e-mail final.
  *
+ * Tom: docs/emails/TOM.md (calor humano, elogio específico, nunca expor número ruim,
+ * sugestão em vez de ordem, convite sem pressão). Abaixo de 50% de acerto nenhuma
+ * porcentagem aparece (Ctx.pctBom), e o teste confere uma lista de expressões proibidas.
+ *
  * Regras que o teste (fixtures/testar_modelos_email.mjs) confere: nunca "0 questões",
  * "undefined", "null" ou "NaN"; plural certo; acerto só com amostra suficiente;
  * frases pessoais só com dado que existe; assunto sem palavra de promoção; no
@@ -172,15 +176,17 @@ export const dias = (n: number) => n === 1 ? '1 dia' : `${numero(n)} dias`
 
 /** Nome das áreas para usar no meio da frase: "em mão e punho", "questão de mão". */
 export const AREAS: Record<string, { em: string; de: string; sabor: string[] }> = {
+  // sabor[0] entra em elogio (melhor área); o último entra em "área mais estudada" e não
+  // pode afirmar desempenho, só reconhecer o tema.
   'mao': { em: 'mão e punho', de: 'mão', sabor: ['É uma área bem da hora, cheia de detalhe bonito de anatomia.', 'Mão é uma área linda, e a banca adora cobrar.', 'Área bem da hora, essa.'] },
-  'ombro-cotovelo': { em: 'ombro e cotovelo', de: 'ombro e cotovelo', sabor: ['Ombro tem muita classificação, então isso pesa a favor.', 'É um tema que recompensa quem insiste.'] },
-  'quadril': { em: 'quadril', de: 'quadril', sabor: ['Quadril é um tema que aparece em toda prova.', 'Bom tema para ter na ponta da língua.'] },
-  'joelho': { em: 'joelho', de: 'joelho', sabor: ['Joelho é daqueles temas que rendem muito na prova.', 'Tema clássico, bom de ter afiado.'] },
-  'coluna': { em: 'coluna', de: 'coluna', sabor: ['Coluna assusta muita gente, então ter isso afiado conta.', 'Tema que costuma separar quem estudou de quem não estudou.'] },
-  'pe-tornozelo': { em: 'pé e tornozelo', de: 'pé e tornozelo', sabor: ['Pé e tornozelo tem muito epônimo, e você está encarando.', 'Área cheia de detalhe, boa de dominar.'] },
-  'trauma': { em: 'trauma', de: 'trauma', sabor: ['Trauma é o feijão com arroz da prova.', 'Trauma bem estudado sustenta a nota.'] },
-  'pediatria': { em: 'ortopedia pediátrica', de: 'ortopedia pediátrica', sabor: ['Pediátrica tem muita classificação, então isso tem valor.', 'Área cheia de nome próprio, boa de dominar.'] },
-  'tumores': { em: 'tumores', de: 'tumor', sabor: ['Tumor assusta muita gente, então isso é ótimo.', 'Tumor é um tema que pouca gente gosta, e você está indo bem.'] },
+  'ombro-cotovelo': { em: 'ombro e cotovelo', de: 'ombro e cotovelo', sabor: ['Ombro tem muita classificação, então isso pesa a seu favor.', 'É um tema que recompensa quem se dedica.'] },
+  'quadril': { em: 'quadril', de: 'quadril', sabor: ['Quadril aparece em toda prova, então isso vale muito.', 'Bom tema para ter na ponta da língua.'] },
+  'joelho': { em: 'joelho', de: 'joelho', sabor: ['Joelho rende muito na prova, então isso vale ouro.', 'Tema clássico, bom de ter afiado.'] },
+  'coluna': { em: 'coluna', de: 'coluna', sabor: ['Coluna assusta muita gente, então ter isso afiado conta muito.', 'Coluna recompensa muito quem se dedica.'] },
+  'pe-tornozelo': { em: 'pé e tornozelo', de: 'pé e tornozelo', sabor: ['Pé e tornozelo tem muito epônimo, e você está dominando.', 'Área cheia de detalhe, boa de conhecer a fundo.'] },
+  'trauma': { em: 'trauma', de: 'trauma', sabor: ['Trauma é o feijão com arroz da prova, então isso sustenta a nota.', 'Trauma bem estudado sustenta a nota.'] },
+  'pediatria': { em: 'ortopedia pediátrica', de: 'ortopedia pediátrica', sabor: ['Pediátrica tem muita classificação, então isso tem muito valor.', 'Área cheia de nome próprio, boa de conhecer a fundo.'] },
+  'tumores': { em: 'tumores', de: 'tumor', sabor: ['Tumor assusta muita gente, então isso é ótimo.', 'Tumor é um tema que muita gente evita, e você está encarando.'] },
   'conceitos-basicos': { em: 'conceitos básicos', de: 'conceitos básicos', sabor: ['Base bem feita sustenta todo o resto.'] },
   'osteometabolicas': { em: 'doenças osteometabólicas', de: 'doenças osteometabólicas', sabor: ['Tema pequeno, mas que a banca não esquece.'] },
 }
@@ -356,6 +362,8 @@ export interface Ctx {
   r: number
   /** Acerto citável ou null. */
   pct: number | null
+  /** O acerto só quando é motivo de orgulho (50% ou mais); abaixo disso, null. Ver docs/emails/TOM.md. */
+  pctBom: number | null
   fatos: Fatos
   hoje: Date
   diasTeot: number
@@ -383,75 +391,85 @@ export interface Ctx {
   usados: Set<string>
 }
 
-/** Frases de cada fato. Várias formas, para não soar como formulário. */
-function frasesDoFato(chave: keyof Fatos, f: Fatos, pct: number | null): string[] {
+/**
+ * Frases de cada fato. Várias formas, para não soar como formulário. Tom (docs/emails/TOM.md):
+ * elogio honesto e específico; número só quando é motivo de orgulho (`mostrar` é falso quando
+ * o acerto geral está abaixo de 50% ou não dá para citar); o tema a melhorar nunca leva número.
+ */
+function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] {
   const A = (slug: string) => AREAS[slug]
   switch (chave) {
     case 'melhorArea': {
       const m = f.melhorArea!, a = A(m.slug)
-      return [
-        `Parabéns por estar tão bem em ${a.em}: ${m.pct}% de acerto em ${questoes(m.total)}.`,
-        `Reparei que ${a.em} é o seu ponto forte agora, com ${m.pct}% de acerto.`,
-        `Em ${a.em} você está voando: ${m.pct}% em ${questoes(m.total)}.`,
-        `Seu melhor tema hoje é ${a.em}. ${m.pct}% de acerto, e dá gosto de ver.`,
-        `Vi que você está muito bem em ${a.em}. ${a.sabor[0]}`,
-      ]
+      return mostrar
+        ? [
+            `Parabéns por estar tão bem em ${a.em}: ${m.pct}% de acerto em ${questoes(m.total)}.`,
+            `Reparei que ${a.em} é o seu ponto forte agora, com ${m.pct}% de acerto. Fiquei feliz de ver.`,
+            `Em ${a.em} você está voando: ${m.pct}% em ${questoes(m.total)}.`,
+            `Seu melhor tema hoje é ${a.em}. ${m.pct}% de acerto, e dá gosto de ver.`,
+            `Vi que você está muito bem em ${a.em}. ${a.sabor[0]}`,
+          ]
+        : [
+            `Vi que você está indo muito bem em ${a.em}. ${a.sabor[0]}`,
+            `Reparei que ${a.em} já virou um ponto forte seu. Fiquei feliz de ver.`,
+            `Em ${a.em} você já está mandando muito bem, e isso diz muito sobre o seu estudo.`,
+          ]
     }
     case 'maisEstudada': {
       const m = f.maisEstudada!, a = A(m.slug)
       return [
         `Vi que tem bastante questão de ${a.de} no seu histórico. ${a.sabor[a.sabor.length - 1]}`,
-        `Reparei que ${a.em} é o tema que você mais estuda: ${questoes(m.total)} até agora.`,
-        `Vi que você anda firme em ${a.em}, com ${questoes(m.total)}. ${a.sabor[0]}`,
+        `Reparei que ${a.em} é o tema a que você mais tem se dedicado: ${questoes(m.total)} até agora.`,
+        `Vi que você anda firme em ${a.em}, com ${questoes(m.total)}. ${a.sabor[a.sabor.length - 1]}`,
         `${a.de.charAt(0).toUpperCase() + a.de.slice(1)} parece ser a sua praia por aqui: já são ${questoes(m.total)}.`,
       ]
     }
     case 'areaFraca': {
-      const m = f.areaFraca!, a = A(m.slug)
+      const a = A(f.areaFraca!.slug)
       return [
-        `Vi que seu acerto em ${a.em} está em ${m.pct}%. É o tema em que cada sessão mais vai render.`,
-        `${a.em.charAt(0).toUpperCase() + a.em.slice(1)} ainda está te dando trabalho (${m.pct}%), e é ali que mora o ponto mais fácil de ganhar.`,
-        `Reparei que ${a.em} está abaixo do seu acerto geral${pct !== null ? ` (${m.pct}%, contra ${pct}% no total)` : ''}.`,
+        `Se fizer sentido dar uma atenção especial a um tema, eu iria em ${a.em}: é onde cada sessão vai render mais para você agora.`,
+        `Reparei que ${a.em} é o tema com mais espaço para crescer no seu caso, o que é uma ótima notícia: é ali que os pontos vêm mais rápido.`,
+        `Um palpite de quem olhou o seu estudo com carinho: alguns dias em ${a.em} podem fazer uma bela diferença.`,
       ]
     }
     case 'horario':
       return {
-        noite: ['Vi que você estuda bastante à noite.', 'Reparei que quase tudo seu sai à noite, depois que o dia acaba.', 'Vi que a noite é o seu horário de estudo.'],
-        madrugada: ['Vi que muita questão sua sai de madrugada. Cuida do sono também, viu?', 'Reparei que você estuda até de madrugada. Admiro, mas o sono também é estudo.'],
-        manha: ['Reparei que você gosta de estudar cedo, antes de o dia começar.', 'Vi que você estuda bastante de manhã cedo. Bom jeito de começar o dia.'],
-        almoco: ['Vi que muita questão sua sai na hora do almoço. Bom jeito de encaixar o estudo.', 'Reparei que você aproveita o horário do almoço para estudar.'],
-        tarde: ['Vi que você costuma estudar à tarde.', 'Reparei que a tarde é o seu horário de questões.'],
+        noite: ['Vi que você estuda bastante à noite, depois de um dia inteiro. Isso diz muito sobre a sua dedicação.', 'Reparei que quase tudo seu sai à noite, quando o dia já acabou. Admiro muito isso.', 'Vi que a noite é o seu horário de estudo. Respeito demais quem encontra esse tempo.'],
+        madrugada: ['Vi que muita questão sua sai de madrugada. Admiro a dedicação, e só peço que cuide do sono também, viu?', 'Reparei que você estuda até de madrugada. Admiro muito, e lembro com carinho que o sono também é estudo.'],
+        manha: ['Reparei que você gosta de estudar cedo, antes de o dia começar. Que jeito bonito de começar o dia.', 'Vi que você estuda bastante de manhã cedo. Admiro essa disciplina.'],
+        almoco: ['Vi que muita questão sua sai na hora do almoço. Que jeito esperto de encaixar o estudo na rotina.', 'Reparei que você aproveita o horário do almoço para estudar. Isso é dedicação.'],
+        tarde: ['Vi que você costuma estudar à tarde, num ritmo bem constante.', 'Reparei que a tarde é o seu horário de questões. Gosto de ver essa rotina.'],
       }[f.horario!]
     case 'prova':
       return {
-        teot: ['Vi que você está estudando para o TEOT.', 'Sei que o TEOT está no seu radar.', 'Vi que o seu foco é o TEOT.'],
-        taro: ['Vi que você está se preparando para o TARO.', 'Sei que o TARO está no seu radar.'],
+        teot: ['Vi que você está estudando para o TEOT.', 'Sei que o TEOT está no seu radar.', 'Vi que o seu foco é o TEOT, e fico na torcida.'],
+        taro: ['Vi que você está se preparando para o TARO.', 'Sei que o TARO está no seu radar, e fico na torcida.'],
         mao: ['Vi que você está se preparando para a prova da cirurgia da mão.', 'Sei que a prova da mão está no seu radar.'],
-        r4: ['Vi que você está mirando o R4.', 'Sei que a seleção do R4 está no seu radar.'],
-        atualizacao: ['Vi que você usa o site para se manter atualizado, sem prova marcada. Acho isso muito legal.', 'Gosto de ver gente estudando sem prova marcada, só para se manter em dia.'],
+        r4: ['Vi que você está mirando o R4.', 'Sei que a seleção do R4 está no seu radar, e fico na torcida.'],
+        atualizacao: ['Vi que você estuda para se manter em dia, sem prova marcada. Acho isso muito bonito.', 'Gosto muito de ver gente estudando sem prova marcada, só pelo prazer de se manter em dia.'],
       }[f.prova!]
     case 'etapa':
       return {
-        r1: ['Sei que o R1 é um ano de muita novidade e pouco tempo.', 'R1 é puxado, e estudar no meio disso tem muito valor.'],
-        r2: ['Sei que o R2 costuma ser puxado de plantão.', 'Estudar no meio do R2 não é pouca coisa.'],
-        r3: ['R3 é o ano do TEOT, então cada questão agora conta muito.', 'Sei que o R3 é um ano de reta final.'],
-        r4: ['Na subespecialidade, o detalhe faz toda a diferença.', 'Estudar no R4 é escolher ir além.'],
-        mao: ['Residência de mão pede muito detalhe, e você está encarando.', 'Na mão, o detalhe é tudo.'],
-        estudante: ['Estudar ortopedia ainda na graduação é sair na frente.', 'Bom ver gente da graduação estudando ortopedia a sério.'],
-        ortopedista: ['Bom ver ortopedista formado mantendo o estudo em dia.', 'Admiro quem continua estudando depois da residência.'],
+        r1: ['Sei que o R1 é um ano de muita novidade e pouco tempo, e mesmo assim você está aqui.', 'O R1 é puxado, e estudar no meio disso tem muito valor.'],
+        r2: ['Sei que o R2 costuma ser puxado de plantão, e mesmo assim você encontra tempo.', 'Estudar no meio do R2 não é pouca coisa.'],
+        r3: ['O R3 é o ano do TEOT, e cada questão agora conta muito.', 'Sei que o R3 é um ano intenso, de reta final.'],
+        r4: ['Na subespecialidade, o detalhe faz toda a diferença.', 'Estudar no R4 é escolher ir além, e eu admiro isso.'],
+        mao: ['Residência de mão pede muito detalhe, e você está encarando com vontade.', 'Na mão, o detalhe é tudo, e dá para ver que você sabe disso.'],
+        estudante: ['Estudar ortopedia ainda na graduação é sair na frente.', 'Fico feliz de ver gente da graduação estudando ortopedia com tanta seriedade.'],
+        ortopedista: ['Admiro muito quem segue estudando depois da residência.', 'É bonito ver quem já terminou a residência mantendo o estudo em dia.'],
       }[f.etapa!]
     case 'ranking': {
       const n = f.ranking!
       return n <= 10
-        ? [`Você está em ${n}º no ranking geral. Top 10.`, `${n}º lugar no ranking geral. Isso é muito estudo.`]
-        : [`Parabéns pela ${n}ª posição no ranking geral.`, `Vi que você está em ${n}º no ranking geral.`, `${n}º no ranking geral. Bonito.`]
+        ? [`Você está em ${n}º no ranking geral, entre os dez primeiros. Que orgulho.`, `${n}º lugar no ranking geral. Isso é muito estudo, e fiquei feliz de ver.`]
+        : [`Parabéns pela ${n}ª posição no ranking geral.`, `Vi que você está em ${n}º no ranking geral, e fiquei feliz de ver o seu nome lá.`, `${n}º no ranking geral. Bonito demais.`]
     }
     case 'sequencia':
-      return [`São ${dias(f.sequencia!)} seguidos estudando.`, `Sua sequência está em ${dias(f.sequencia!)}. Não deixa cair.`, `Vi a sua sequência: ${dias(f.sequencia!)} seguidos.`]
+      return [`São ${dias(f.sequencia!)} seguidos estudando. Que constância bonita.`, `Sua sequência está em ${dias(f.sequencia!)}, e isso diz muito sobre você.`, `Vi a sua sequência: ${dias(f.sequencia!)} seguidos. Admiro muito.`]
     case 'flashcards':
-      return ['Vi que você também está usando os flashcards.', `Vi que você já passou por ${numero(f.flashcards!)} flashcards também.`, 'E vi você nos flashcards também, que bom.']
+      return ['Vi que você também está usando os flashcards, que bom.', `Vi que você já passou por ${numero(f.flashcards!)} flashcards também.`, 'E vi você nos flashcards também. Fiquei feliz de ver.']
     case 'semana':
-      return [`Só nos últimos sete dias foram ${questoes(f.semana!)}.`, `Vi as ${questoes(f.semana!)} desta última semana.`, `${questoes(f.semana!).replace(/^./, (c) => c.toUpperCase())} em sete dias. Que ritmo.`]
+      return [`Só nos últimos sete dias foram ${questoes(f.semana!)}. Que dedicação.`, `Vi as ${questoes(f.semana!)} desta última semana, e fiquei feliz.`, `${questoes(f.semana!).replace(/^./, (c) => c.toUpperCase())} em sete dias. Que ritmo bonito.`]
   }
   return []
 }
@@ -459,30 +477,35 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, pct: number | null): string[
 /** Ordem padrão de interesse dos fatos (o que mais faz a pessoa sentir que foi vista primeiro). */
 const ORDEM_FATOS: Array<keyof Fatos> = ['melhorArea', 'ranking', 'maisEstudada', 'horario', 'prova', 'sequencia', 'semana', 'etapa', 'flashcards', 'areaFraca']
 
+/** Dicas oferecidas como presente ("um truque", "se ajudar"), nunca como ordem. */
 const DICAS: Record<'baixo' | 'medio' | 'alto', string[]> = {
   baixo: [
-    'Uma dica: antes de marcar, tente responder sem olhar as alternativas. Treina o raciocínio de prova.',
-    'Uma dica que ajuda muito: leia o comentário de cada alternativa errada, não só o da certa.',
-    'Uma sugestão: cinco questões por dia, todo dia, rendem mais que trinta de uma vez no domingo.',
-    'Quando errar, marque a questão como favorita e volte nela no dia seguinte.',
-    'Antes de escolher a certa, elimine as que você tem certeza de que estão erradas. Muda o jogo.',
+    'Um truque que ajuda muita gente: antes de olhar as alternativas, tente responder de cabeça. É um ótimo treino para o raciocínio de prova.',
+    'Uma coisa que costuma fazer diferença: ler também o comentário das alternativas que não são a resposta. É ali que a banca esconde as pegadinhas.',
+    'Se ajudar: cinco questões por dia, com calma, costumam render mais do que trinta de uma vez no domingo.',
+    'Uma ideia que funciona bem: quando uma questão te pegar, marque como favorita e volte nela no dia seguinte. É impressionante como ela fica.',
+    'Uma estratégia simples: antes de escolher a certa, descarte as que você tem certeza de que não são. A questão fica bem mais leve.',
   ],
   medio: [
-    'Uma sugestão: comece cada sessão pela Revisão do dia. São as questões que você errou voltando no momento certo.',
-    'Vale abrir o Caderno de erros uma vez por semana e refazer as que ainda incomodam.',
-    'Quando acertar no chute, trate como erro e leia o comentário. Chute certo engana o número.',
-    'Concentre alguns dias no tema mais fraco. É onde cada hora rende mais.',
-    'Leia o enunciado até o fim antes de olhar as alternativas. A banca esconde muita coisa na última linha.',
+    'Que tal começar cada sessão pela Revisão do dia? São as questões que pedem uma segunda olhada, voltando no momento certo.',
+    'Uma ideia: abrir o Caderno de erros uma vez por semana e refazer as que ainda incomodam. Rende muito.',
+    'Quando acertar com dúvida, vale ler o comentário como se tivesse errado. Assim o acerto vira certeza.',
+    'Alguns dias dedicados ao tema que mais te desafia costumam render muito, se fizer sentido para você.',
+    'Um truque de prova: ler o enunciado até o fim antes de olhar as alternativas. A banca adora esconder coisa na última linha.',
   ],
   alto: [
-    'Nesse nível, vale ler o comentário mesmo quando acerta. Às vezes o acerto veio pelo motivo errado.',
-    'Uma ideia: misture provas e temas na mesma sessão. Obriga a reconhecer o assunto sem pista.',
-    'Cuidado só com a revisão acumulada: matéria bem sabida também esfria se ficar parada.',
-    'Preste atenção nas questões que você erra duas vezes. São as mais valiosas da sua lista.',
-    'Desconfie do "exceto" e do "incorreta" no enunciado. É ali que quem sabe muito ainda perde ponto.',
+    'Nesse nível, vale ler o comentário mesmo quando acerta. Às vezes ele traz um detalhe que a banca ainda vai cobrar.',
+    'Uma ideia: misturar provas e temas na mesma sessão. Obriga a reconhecer o assunto sem pista, como no dia da prova.',
+    'Uma lembrança gentil: matéria bem sabida também esfria se ficar parada, então a Revisão em dia protege o que você conquistou.',
+    'As questões que voltam a te pegar uma segunda vez são as mais valiosas da sua lista. Vale dar um carinho especial a elas.',
+    'Um detalhe de prova: o "exceto" e o "incorreta" no enunciado. É ali que até quem sabe muito ainda deixa escapar um ponto.',
   ],
 }
-const FECHOS = ['Bons estudos.', 'Qualquer coisa, é só responder este e-mail.', 'Estou torcendo por você.', 'Conte comigo.', 'Se quiser trocar uma ideia, é só responder.', 'Sigo acompanhando por aqui.', 'Bom estudo por aí.']
+const FECHOS = ['Bons estudos, e conte comigo.', 'Se eu puder ajudar em qualquer coisa, é só responder este e-mail.', 'Estou torcendo por você.', 'Conte comigo no que precisar.', 'Fico feliz de acompanhar o seu caminho.', 'Torço muito pela sua aprovação.', 'Bons estudos por aí, e cuide-se.']
+/** O fecho não repete o que o texto já disse ("é só responder", "torcendo", "acompanhando"...). */
+const CHAVES_FECHO = ['respond', 'torc', 'acompanh', 'conte comigo', 'bons estudos']
+/** Minúsculas e sem cedilha, para "torço" e "torcida" contarem como a mesma ideia. */
+const simples = (t: string) => t.toLowerCase().replace(/ç/g, 'c')
 
 function tomDaFaixa(f: Faixa | null): 'baixo' | 'medio' | 'alto' {
   if (!f) return 'baixo'
@@ -493,6 +516,8 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
   const hoje = op.hoje ?? new Date()
   const site = (op.site ?? SITE_PADRAO).replace(/\/*$/, '/')
   const pct = acertoCitavel(p)
+  // Abaixo de 50% (ou sem amostra), nenhum número de acerto aparece: só esforço e constância.
+  const pctBom = pct !== null && pct >= 50 ? pct : null
   const fatos = fatosDe(p)
   const usados = new Set<string>()
   const um = <T,>(...opcoes: Array<T | null | undefined | false | ''>): T => {
@@ -501,13 +526,15 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
   }
   const fato = (chave: keyof Fatos): string | null => {
     if (fatos[chave] === undefined || usados.has(chave)) return null
-    const frases = frasesDoFato(chave, fatos, pct)
+    // Melhor área e área mais estudada no mesmo tema soariam repetidas: fica só uma.
+    if ((chave === 'maisEstudada' && usados.has('melhorArea') || chave === 'melhorArea' && usados.has('maisEstudada')) && fatos.melhorArea?.slug === fatos.maisEstudada?.slug) return null
+    const frases = frasesDoFato(chave, fatos, pctBom !== null)
     if (!frases.length) return null
     usados.add(chave)
     return frases[Math.floor(rnd() * frases.length)]
   }
   const ctx: Ctx = {
-    p, tipo, faixa, nome: primeiroNome(p.nome), r: Math.max(0, Math.floor(Number(p.respondidas) || 0)), pct, fatos, hoje,
+    p, tipo, faixa, nome: primeiroNome(p.nome), r: Math.max(0, Math.floor(Number(p.respondidas) || 0)), pct, pctBom, fatos, hoje,
     diasTeot: diasAteTeot(hoje), marco, pix: op.pix, relatorio: op.relatorio, usados,
     um, chance: (x) => rnd() < x,
     link: (rota) => { estado.link = rota; return (site + ROTAS[rota]).replace(/^https?:\/\//, '') },
@@ -522,16 +549,20 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
       return frases.length ? frases.join(' ') : null
     },
     dica: () => um(...DICAS[tomDaFaixa(faixa)]),
-    fecho: () => (rnd() < 0.15 ? null : um(...FECHOS)),
+    // "Torço pela sua aprovação" só para quem tem prova pela frente.
+    fecho: () => (rnd() < 0.15 ? null : um(...FECHOS.filter((f) => !(f.includes('aprovação') && (fatos.prova === 'atualizacao' || fatos.etapa === 'ortopedista'))))),
     ps: () => {
       const candidatos: Array<[string | null, string]> = []
-      if (fatos.ranking && !usados.has('ranking')) candidatos.push(['ranking', `P.S.: vi que você está em ${fatos.ranking}º no ranking geral. Bonito.`])
-      if (fatos.sequencia && !usados.has('sequencia')) candidatos.push(['sequencia', `P.S.: ${dias(fatos.sequencia)} seguidos. Não deixa a sequência cair.`])
-      if (fatos.horario === 'madrugada' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: e vá dormir, viu? A memória agradece.'])
-      if (fatos.horario === 'noite' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: vi que você estuda bastante à noite. Respeito muito quem estuda depois de um dia inteiro.'])
-      if (fatos.melhorArea && !usados.has('melhorArea')) candidatos.push(['melhorArea', `P.S.: ${AREAS[fatos.melhorArea.slug].em} com ${fatos.melhorArea.pct}% de acerto. Parabéns.`])
-      if (p.flashcards === 0 && tipo !== 'nunca_comecou') candidatos.push([null, 'P.S.: se ainda não testou, os flashcards estão em beta e valem uma olhada.'])
-      candidatos.push([null, 'P.S.: se encontrar erro em alguma questão, tem um botão para relatar. Eu leio todos.'])
+      if (fatos.ranking && !usados.has('ranking')) candidatos.push(['ranking', `P.S.: vi que você está em ${fatos.ranking}º no ranking geral. Fiquei feliz de ver o seu nome lá.`])
+      if (fatos.sequencia && !usados.has('sequencia')) candidatos.push(['sequencia', `P.S.: ${dias(fatos.sequencia)} seguidos de estudo. Que constância bonita.`])
+      if (fatos.horario === 'madrugada' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: vi que você estuda até de madrugada. Admiro muito, e peço com carinho: cuide do sono também, que a memória agradece.'])
+      if (fatos.horario === 'noite' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: vi que você estuda bastante à noite. Admiro muito quem encontra tempo depois de um dia inteiro.'])
+      if (fatos.melhorArea && !usados.has('melhorArea')) {
+        const em = AREAS[fatos.melhorArea.slug].em
+        candidatos.push(['melhorArea', pctBom !== null ? `P.S.: ${em} com ${fatos.melhorArea.pct}% de acerto. Parabéns, de verdade.` : `P.S.: ${em} está ficando muito forte no seu estudo. Parabéns, de verdade.`])
+      }
+      if (p.flashcards === 0 && tipo !== 'nunca_comecou') candidatos.push([null, 'P.S.: se tiver curiosidade, os flashcards estão em fase de testes. Ia adorar saber o que você acha.'])
+      candidatos.push([null, 'P.S.: se encontrar algo estranho em alguma questão, tem um botão para relatar. Eu leio cada relato pessoalmente.'])
       if (rnd() < 0.55) return null
       const [chave, texto] = candidatos[Math.floor(rnd() * candidatos.length)]
       if (chave) usados.add(chave)
@@ -562,8 +593,8 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
 // Geração
 // ---------------------------------------------------------------------------
 
-const SAUDACOES_NOME = ['Oi, {n},', 'Olá, {n},', '{n}, tudo bem?', 'Oi, {n}! Tudo bem?', 'Oi, {n}. Tudo certo por aí?', 'Oi, {n}.']
-const SAUDACOES = ['Oi,', 'Olá,', 'Oi! Tudo bem?', 'Tudo bem?']
+const SAUDACOES_NOME = ['Oi, {n}, tudo bem?', 'Olá, {n}, tudo bem?', 'Oi, {n}! Tudo bem por aí?', '{n}, tudo bem?', 'Oi, {n}, como vão os estudos?', 'Oi, {n}, espero que esteja tudo bem por aí.']
+const SAUDACOES = ['Oi, tudo bem?', 'Olá, tudo bem?', 'Oi! Tudo bem por aí?', 'Oi, como vão os estudos?']
 
 export function modeloDe(tipo: TipoCarta, faixa: Faixa | null): string {
   return tipo === 'ativo' && faixa ? `ativo:${faixa}` : tipo
@@ -642,8 +673,8 @@ export function gerarCarta(p: PerfilCarta, op: OpcoesCarta = {}): Carta {
     // O fecho não repete o que o texto já disse ("é só responder", "torcendo", "acompanhando").
     const paragrafos = brutos.filter((x, i) => {
       if (!FECHOS.includes(x)) return true
-      const chave = ['respond', 'torcendo', 'acompanh', 'conte comigo', 'bons estudos'].find((k) => x.toLowerCase().includes(k))
-      return !chave || !brutos.some((y, j) => j !== i && y.toLowerCase().includes(chave))
+      const chave = CHAVES_FECHO.find((k) => simples(x).includes(k))
+      return !chave || !brutos.some((y, j) => j !== i && simples(y).includes(chave))
     })
     const saudacao = v.saudacao ? v.saudacao(ctx) : ctx.nome ? ctx.um(...SAUDACOES_NOME).replace('{n}', ctx.nome) : ctx.um(...SAUDACOES)
     const assuntos = v.assuntos(ctx).filter((x): x is string => typeof x === 'string' && x.trim() !== '').map((x) => x.trim()).filter((a) => !problemaNoAssunto(a))
