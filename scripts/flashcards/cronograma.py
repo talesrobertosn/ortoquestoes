@@ -58,6 +58,22 @@ def riqueza(c: dict) -> dict:
     return {"tabela": bool(TABELA.search(con)), "classificacao": bool(CLASSIFICA.search(con)), "naProva": bool(F.linha_na_prova(con))}
 
 
+def chave_de_autoral(inc: dict):
+    """Função que diz em qual linha (assunto, área) da fila um autoral é contado."""
+    areas_do_assunto = defaultdict(list)
+    for a in inc.get("areas", []):
+        for foco in a["focos"]:
+            areas_do_assunto[foco["nome"]].append((foco["n"], a["id"]))
+
+    def chave(f: dict) -> tuple:
+        s, area = f["assunto"], f.get("areaId")
+        opcoes = areas_do_assunto.get(s)
+        if not opcoes or any(i == area for _, i in opcoes):
+            return (s, area)
+        return (s, max(opcoes, key=lambda o: o[0])[1])
+    return chave
+
+
 def levantar():
     """Números de cada assunto: incidência, acervo, flashcards da fábrica, autorais e fontes."""
     areas, questoes, comentarios = F.carregar_acervo()
@@ -74,15 +90,20 @@ def levantar():
                 fab_questoes[s].add(f["questao"])
                 if F.colecao_da_questao(questoes.get(f["questao"], {})):
                     fab_sim[s] += 1
+    # Um mesmo assunto pode aparecer em mais de uma área da incidência (por exemplo, "Fraturas da
+    # coluna toracolombar" em Trauma adulto e em Coluna). Cada autoral conta uma vez só: na linha da
+    # área da sua questão (areaId) ou, se o assunto não tem linha nessa área, na linha de maior incidência.
+    chave_autoral = chave_de_autoral(inc)
     aut_por = Counter()
     aut_sim = Counter()
     aut_questoes = defaultdict(set)
     for cartas in aut.values():
         for f in cartas:
-            aut_por[f["assunto"]] += 1
+            k = chave_autoral(f)
+            aut_por[k] += 1
             aut_questoes[f["assunto"]].add(f["questao"])
             if F.colecao_da_questao(questoes.get(f["questao"], {})):
-                aut_sim[f["assunto"]] += 1
+                aut_sim[k] += 1
     acervo = defaultdict(list)
     for qid, q in questoes.items():
         if q.get("anulada") or q.get("duplicataDe"):
@@ -97,14 +118,15 @@ def levantar():
             com = [k for k in qs if comentarios.get(k, {}).get("conceito")]
             ricas = [k for k in com if any(riqueza(comentarios[k]).values())]
             sims = [k for k in com if F.colecao_da_questao(questoes[k])]
+            k = (s, a["id"])
             meta = 0 if s.startswith("Outr") and foco["n"] < 5 else max(META_MINIMA, math.ceil(foco["n"] * PESO.get(foco["nivel"], 0.2)))
             linhas.append({
                 "assunto": s, "areaId": a["id"], "area": a["nome"], "nivel": foco["nivel"], "incidencia": foco["n"],
                 "acervo": len(qs), "comComentario": len(com), "fontesRicas": len(ricas),
                 "fabrica": fab_por[s], "questoesComFlashcard": len(fab_questoes[s] | aut_questoes[s]),
-                "autorais": aut_por[s], "meta": meta, "falta": max(0, meta - aut_por[s]),
+                "autorais": aut_por[k], "meta": meta, "falta": max(0, meta - aut_por[k]),
                 # OrtoQuestões Simulados: questões comentadas do assunto, flashcards da fábrica e autorais tirados delas
-                "simulados": len(sims), "fabricaSimulados": fab_sim[s], "autoraisSimulados": aut_sim[s],
+                "simulados": len(sims), "fabricaSimulados": fab_sim[s], "autoraisSimulados": aut_sim[k],
             })
     # ordem: o que mais cai primeiro (contagem absoluta de questões de prova), depois o nível na área;
     # os assuntos de resto ("Outras fraturas...", "Outros temas...") vão para o fim, como na incidência
