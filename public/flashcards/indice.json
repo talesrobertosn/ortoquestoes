@@ -1,9 +1,9 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4352,
- "batalha": 3888,
- "soEstudo": 464,
+ "total": 4381,
+ "batalha": 3899,
+ "soEstudo": 482,
  "comImagem": 630,
  "quarentena": 523,
  "areas": {
@@ -266,23 +266,25 @@
   "pediatria": {
    "nome": "Ortopedia pediátrica",
    "arquivo": "pediatria.json",
-   "total": 574,
-   "batalha": 516,
+   "total": 603,
+   "batalha": 527,
    "comImagem": 48,
    "tipos": {
     "Armadilha": 2,
-    "Classificação": 13,
-    "Conceito": 22,
+    "Classificação": 21,
+    "Conceito": 35,
     "Imagem": 48,
+    "Na prova": 1,
     "Par confundível": 4,
     "Relâmpago": 476,
-    "Tabela": 9
+    "Tabela": 16
    },
    "assuntos": {
-    "Lesões fisárias": 78,
+    "Lesões fisárias": 99,
     "Genuvaro, genuvalgo e torções": 39,
     "Outras doenças congênitas": 26,
     "Displasia do desenvolvimento do quadril": 26,
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 24,
     "Fraturas do antebraço e punho na criança": 23,
     "Fraturas do fêmur e da perna na criança": 23,
     "Pé torto congênito": 22,
@@ -292,7 +294,6 @@
     "Doença de Legg-Calvé-Perthes": 18,
     "Marcha na criança": 16,
     "Epifisiólise proximal do fêmur": 16,
-    "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 16,
     "Displasias esqueléticas e síndromes": 15,
     "Artrogripose e doenças neuromusculares": 15,
     "Osteogênese imperfeita": 14,
@@ -441,5 +442,5 @@
    }
   }
  },
- "assinatura": "f3507ba0003e"
+ "assinatura": "668833110d2f"
 }
