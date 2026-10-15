@@ -5,14 +5,14 @@ import { usarIndice } from '../../dados/usarIndice'
 import { Icone } from '../Icone'
 import { carregarQuestoes } from '../../dados/acervo'
 import { corresponde, dataHora, erroDoPainel, normalizar } from './formatos'
-import { usarLidos } from './lidos'
+import { chaveAvaliacao, usarLidos } from './lidos'
 
 interface LinhaAvaliacao { id_questao: string; util: boolean; motivo: string | null; observacao: string | null; atualizado_em: string; usuario: string | null }
 interface InfoQuestao { titulo: string; trecho: string }
 
 const MOTIVOS: Record<string, string> = { confuso: 'Ficou confuso', raso: 'Faltou profundidade', errado: 'Parece ter erro', outro: 'Outro motivo' }
 type Vista = 'ler' | 'questoes' | 'todas'
-const chaveDe = (l: LinhaAvaliacao) => `${l.id_questao}|${l.usuario ?? ''}|${l.atualizado_em}`
+const chaveDe = (l: LinhaAvaliacao) => chaveAvaliacao(l)
 
 /** "Coluna · TEOT 2024 · nº 28" a partir do id e do que já se sabe da questão. */
 function tituloPadrao(id: string) {

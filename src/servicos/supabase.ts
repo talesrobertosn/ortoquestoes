@@ -32,13 +32,18 @@ async function garantirToken(forcarLeitura = false) {
 }
 
 /** fetch com prazo: rede lenta não pode deixar um botão travado para sempre. */
-async function buscarComPrazo(endereco: string, opcoes: RequestInit, prazoMs = 8_000): Promise<Response> {
+async function buscarComPrazo(endereco: string, opcoes: RequestInit, prazoMs = 8_000, sinal?: AbortSignal): Promise<Response> {
   const controle = new AbortController()
   const temporizador = setTimeout(() => controle.abort(), prazoMs)
+  // Quem chamou também pode desistir (tela fechada, pedido substituído).
+  const desistir = () => controle.abort()
+  if (sinal?.aborted) controle.abort()
+  sinal?.addEventListener('abort', desistir)
   try {
     return await fetch(endereco, { ...opcoes, signal: controle.signal })
   } finally {
     clearTimeout(temporizador)
+    sinal?.removeEventListener('abort', desistir)
   }
 }
 
@@ -51,7 +56,10 @@ export class ErroRpc extends Error {
   constructor(mensagem: string, readonly status: number, readonly codigo: string) { super(mensagem) }
 }
 
-export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>): Promise<T> {
+/** Opções de uma RPC: `sinal` cancela o pedido; `prazoMs` alonga o prazo de consultas pesadas do painel. */
+export interface OpcoesRpc { sinal?: AbortSignal; prazoMs?: number }
+
+export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>, { sinal, prazoMs }: OpcoesRpc = {}): Promise<T> {
   if (!clienteConta) throw new Error('Servidor não configurado.')
   const enviar = async (forcarLeitura: boolean) => {
     const token = await garantirToken(forcarLeitura)
@@ -60,7 +68,7 @@ export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>)
       method: 'POST',
       headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify(corpo),
-    })
+    }, prazoMs, sinal)
   }
   let resposta = await enviar(false)
   // Token recusado (expirou entre a leitura e o envio): tenta uma vez com a sessão relida.

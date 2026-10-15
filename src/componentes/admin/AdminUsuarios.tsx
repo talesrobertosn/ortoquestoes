@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Icone } from '../Icone'
 import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corresponde, data, haQuanto, haQuantoTempo, normalizar, rotuloPagina, somarAcertos } from './formatos'
-import { chamarRpc } from '../../servicos/supabase'
 import { href } from '../../util/rotas'
 import { AdminFichaUsuario } from './AdminFichaUsuario'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
@@ -60,8 +59,27 @@ const ORDENS: Array<[Ordem, string]> = [
 const MINIMO_PARA_ACERTO = 20
 
 const ativo7d = (u: LinhaUsuario) => u.respondidas_7d > 0
-const diaSP = (d: Date | string) => new Date(d).toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' })
-export const ativoHoje = (u: LinhaUsuario) => !!u.ultima_atividade && diaSP(u.ultima_atividade) === diaSP(new Date())
+// Dia em Brasília ("2026-10-15"). Antes eram dois toLocaleDateString com fuso por chamada,
+// milhares por render; agora um formatador só, o dia de cada data guardado e o "hoje" lido
+// no máximo uma vez por minuto.
+const FORMATO_DIA = new Intl.DateTimeFormat('sv-SE', { timeZone: 'America/Sao_Paulo' })
+const diasJaVistos = new Map<string, string>()
+const diaSP = (iso: string) => {
+  let dia = diasJaVistos.get(iso)
+  if (dia === undefined) {
+    dia = FORMATO_DIA.format(new Date(iso))
+    if (diasJaVistos.size > 20_000) diasJaVistos.clear()
+    diasJaVistos.set(iso, dia)
+  }
+  return dia
+}
+let hojeGuardado = { ate: 0, dia: '' }
+const hojeSP = () => {
+  const agora = Date.now()
+  if (agora >= hojeGuardado.ate) hojeGuardado = { ate: agora + 60_000, dia: FORMATO_DIA.format(agora) }
+  return hojeGuardado.dia
+}
+export const ativoHoje = (u: LinhaUsuario) => !!u.ultima_atividade && diaSP(u.ultima_atividade) === hojeSP()
 /** Cadastro nos últimos 14 dias. */
 const novo = (u: LinhaUsuario) => Date.now() - new Date(u.criado_em).getTime() < 14 * 86_400_000
 /** Chegou há pelo menos 2 dias, nos últimos 30, fez menos de 10 questões e não estudou nos últimos 2 dias: pede um empurrão. */
@@ -79,8 +97,10 @@ const acertoDe = (u: LinhaUsuario) => acertoReal(u) ?? acertoAposRevisao(u)
  * Ranking privado: todas as contas (inclusive quem saiu do ranking público),
  * com total de questões, acerto e atividade. Só o administrador vê.
  */
-/** Atualização do "ao vivo": a lista inteira, a cada 30 s, só com a aba visível. */
-const AO_VIVO_MS = 30_000
+/** Quantas contas a lista desenha de cada vez ("Mostrar mais" desenha as próximas). */
+const POR_PAGINA = 50
+/** Espera depois da última tecla antes de refiltrar a lista. */
+const ESPERA_BUSCA_MS = 250
 const iniciais = (u: LinhaUsuario) => (u.nome ?? u.email ?? '?').split(/[\s@.]+/).filter(Boolean).slice(0, 2).map(p => p[0]?.toUpperCase()).join('')
 /** Cor fixa por pessoa, para reconhecer de relance. */
 const corDe = (id: string) => `hsl(${[...id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 360, 7)} 45% 42%)`
@@ -96,21 +116,23 @@ export function OQueVe({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao' | 'pa
   </span>
 }
 
-export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtro: filtroUrl = 'todos', aoMudarFiltro }: { usuarios: LinhaUsuario[]; filtro?: FiltroUsuarios; aoMudarFiltro?: (filtro: FiltroUsuarios) => void }) {
-  // Cópia viva: o painel carrega a lista uma vez; aqui ela se renova sozinha.
-  const [usuarios, definirUsuarios] = useState(iniciaisUsuarios)
-  const [atualizadoEm, definirAtualizadoEm] = useState(() => Date.now())
-  const [, definirTique] = useState(0)
-  useEffect(() => { definirUsuarios(iniciaisUsuarios); definirAtualizadoEm(Date.now()) }, [iniciaisUsuarios])
+/** O valor só depois de `ms` sem mudar (a busca não refiltra a lista a cada tecla). */
+function usarAdiado<T>(valor: T, ms: number): T {
+  const [adiado, definirAdiado] = useState(valor)
   useEffect(() => {
-    const t = window.setInterval(() => {
-      definirTique(n => n + 1)
-      if (document.visibilityState !== 'visible') return
-      chamarRpc<LinhaUsuario[]>('listar_usuarios_admin', {}).then(lista => { definirUsuarios(lista); definirAtualizadoEm(Date.now()) }).catch(() => undefined)
-    }, AO_VIVO_MS)
-    return () => window.clearInterval(t)
-  }, [])
+    const t = window.setTimeout(() => definirAdiado(valor), ms)
+    return () => window.clearTimeout(t)
+  }, [valor, ms])
+  return adiado
+}
+
+/**
+ * A lista vem do painel, que é o único dono de `listar_usuarios_admin` (com cache e
+ * "ao vivo" a cada 30 s enquanto esta aba está aberta e visível).
+ */
+export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'todos', aoMudarFiltro }: { usuarios: LinhaUsuario[]; atualizadoEm: number | null; filtro?: FiltroUsuarios; aoMudarFiltro?: (filtro: FiltroUsuarios) => void }) {
   const [busca, definirBusca] = useState('')
+  const buscaAdiada = usarAdiado(busca, ESPERA_BUSCA_MS)
   // O filtro vem do endereço (F5 e Voltar mantêm); a ordem inicial acompanha quem chegou por um atalho da Visão geral.
   const [filtro, definirFiltroLocal] = useState<Filtro>(filtroUrl)
   useEffect(() => { definirFiltroLocal(filtroUrl) }, [filtroUrl])
@@ -122,18 +144,18 @@ export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtro: filtroUrl = 
 
   const totais = useMemo(() => {
     const soma = somarAcertos(usuarios)
-    const hojeSP = new Date().toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' })
+    const hoje = hojeSP()
     return {
       respondidas: usuarios.reduce((s, u) => s + u.respondidas, 0), real: acertoReal(soma), revisao: acertoAposRevisao(soma),
       online: usuarios.filter(u => u.online).length, ativosHoje: usuarios.filter(ativoHoje).length,
       questoesHoje: usuarios.reduce((s, u) => s + (u.respondidas_hoje ?? 0), 0), tentativasHoje: usuarios.reduce((s, u) => s + (u.tentativas_hoje ?? 0), 0),
-      novosHoje: usuarios.filter(u => new Date(u.criado_em).toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' }) === hojeSP).length,
+      novosHoje: usuarios.filter(u => diaSP(u.criado_em) === hoje).length,
       comDadosHoje: usuarios.some(u => u.respondidas_hoje !== undefined),
     }
   }, [usuarios])
 
   const visiveis = useMemo(() => {
-    const termo = normalizar(busca.trim())
+    const termo = normalizar(buscaAdiada.trim())
     const lista = usuarios.filter(u => passaFiltro(u, filtro) && corresponde([u.nome, u.email, u.servico, servicoConhecido(u.servico, u.uf), u.cidade], termo))
     const tempo = (v: string | null) => v ? new Date(v).getTime() : 0
     const chave: Record<Ordem, (u: LinhaUsuario) => number> = {
@@ -145,9 +167,15 @@ export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtro: filtroUrl = 
       cadastro: u => tempo(u.criado_em),
     }
     return [...lista].sort((a, b) => chave[ordem](b) - chave[ordem](a) || b.respondidas - a.respondidas)
-  }, [usuarios, busca, filtro, ordem])
+  }, [usuarios, buscaAdiada, filtro, ordem])
 
-  const maior = Math.max(1, ...usuarios.map(u => u.respondidas))
+  // Desenha 50 de cada vez: com centenas de cartões o celular travava. Volta a 50 quando a lista muda de critério.
+  const [limite, definirLimite] = useState(POR_PAGINA)
+  useEffect(() => { definirLimite(POR_PAGINA) }, [buscaAdiada, filtro, ordem])
+  const desenhados = visiveis.length > limite ? visiveis.slice(0, limite) : visiveis
+
+  const maior = useMemo(() => usuarios.reduce((m, u) => Math.max(m, u.respondidas), 1), [usuarios])
+  const aoVivo = useMemo(() => usuarios.filter(u => u.online).sort((a, b) => (b.pagina_em ?? '').localeCompare(a.pagina_em ?? '')), [usuarios])
 
   return <section className="empilha adm-secao" aria-labelledby="adm-titulo-usuarios">
     <div className="adm-secao__cabeca">
@@ -164,9 +192,9 @@ export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtro: filtroUrl = 
       <div className="adm-kpi-u"><span>Contas novas hoje</span><strong>{totais.novosHoje}</strong></div>
     </div>
 
-    {usuarios.some(u => u.online) && <section className="adm-aovivo" aria-labelledby="adm-aovivo-titulo">
-      <header><h3 id="adm-aovivo-titulo"><span className="adm-online" aria-hidden="true" />Ao vivo</h3><small>atualiza sozinho a cada 30 s · última leitura {haQuantoTempo(new Date(atualizadoEm).toISOString())}</small></header>
-      <ul>{usuarios.filter(u => u.online).sort((a, b) => (b.pagina_em ?? '').localeCompare(a.pagina_em ?? '')).map(u => <li key={u.id_usuario}>
+    {aoVivo.length > 0 && <section className="adm-aovivo" aria-labelledby="adm-aovivo-titulo">
+      <header><h3 id="adm-aovivo-titulo"><span className="adm-online" aria-hidden="true" />Ao vivo</h3><small>atualiza sozinho a cada 30 s · última leitura {haQuantoTempo(new Date(atualizadoEm ?? Date.now()).toISOString())}</small></header>
+      <ul>{aoVivo.map(u => <li key={u.id_usuario}>
         <button type="button" onClick={() => definirAberto(u)}>
           <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}</span>
           <span className="adm-aovivo__quem"><strong>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong><OQueVe u={u} /></span>
@@ -187,7 +215,7 @@ export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtro: filtroUrl = 
     {filtro === 'novos_parados' && <p className="adm-nota adm-dica">Chegaram nas últimas semanas, fizeram menos de 10 questões e não voltaram nos últimos 2 dias. Abra a ficha e use um modelo de e-mail de retorno: um recado pessoal costuma trazer de volta.</p>}
     {ordem === 'acerto' && <p className="adm-nota">Ordenado pelo acerto real (1ª tentativa). Quem respondeu menos de {MINIMO_PARA_ACERTO} questões vai para o fim da lista: com poucas respostas o acerto ainda não diz muito.</p>}
     <div className="adm-linha-nota">
-      <p className="adm-nota" role="status">Mostrando {visiveis.length} de {usuarios.length} conta(s). Toque numa pessoa para abrir a ficha.</p>
+      <p className="adm-nota" role="status">{visiveis.length === usuarios.length ? `${usuarios.length} conta(s)` : `${visiveis.length} de ${usuarios.length} conta(s) neste filtro`}{desenhados.length < visiveis.length ? `, mostrando as primeiras ${desenhados.length}` : ''}. Toque numa pessoa para abrir a ficha.</p>
       <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-usuarios-${new Date().toISOString().slice(0, 10)}.csv`,
         ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'UF', 'Conta criada', 'Questões', 'Hoje', 'Acerto real, 1ª tentativa (%)', 'Acerto após revisão (%)', 'Na semana', 'Última atividade', 'Plano'],
         visiveis.map(u => [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, u.uf, data(u.criado_em), u.respondidas, u.respondidas_hoje ?? '', acertoReal(u), acertoAposRevisao(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
@@ -196,14 +224,14 @@ export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtro: filtroUrl = 
     </div>
 
     {visiveis.length === 0 ? <p>Ninguém neste filtro.</p> : <ol className="adm-usuarios">
-      {visiveis.map((u, i) => {
+      {desenhados.map((u, i) => {
         const acerto = acertoDe(u)
         const hoje = hojeDe(u)
         return <li key={u.id_usuario} className={'adm-usuario adm-usuario--clicavel' + (u.online ? ' adm-usuario--online' : '')} role="button" tabIndex={0} aria-label={`Abrir ficha de ${u.nome ?? u.email ?? 'usuário'}`}
           onClick={() => definirAberto(u)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); definirAberto(u) } }}>
           <span className="adm-usuario__lado">
             <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}{u.online && <span className="adm-online" />}</span>
-            <span className={'adm-usuario__pos' + (i < 3 && ordem === 'respondidas' && filtro === 'todos' && !busca ? ` adm-usuario__pos--${i + 1}` : '')}>{i + 1}º</span>
+            <span className={'adm-usuario__pos' + (i < 3 && ordem === 'respondidas' && filtro === 'todos' && !buscaAdiada ? ` adm-usuario__pos--${i + 1}` : '')}>{i + 1}º</span>
           </span>
           <div className="adm-usuario__quem">
             <strong>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong>
@@ -234,6 +262,11 @@ export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtro: filtroUrl = 
         </li>
       })}
     </ol>}
+    {desenhados.length < visiveis.length && <div className="linha">
+      <button type="button" className="botao botao--fantasma" onClick={() => definirLimite(n => n + POR_PAGINA)}>
+        Mostrar mais {Math.min(POR_PAGINA, visiveis.length - desenhados.length)} <small>({visiveis.length - desenhados.length} restante{visiveis.length - desenhados.length === 1 ? '' : 's'})</small>
+      </button>
+    </div>}
     {aberto && <AdminFichaUsuario usuario={aberto} aoFechar={() => definirAberto(null)} />}
   </section>
 }
