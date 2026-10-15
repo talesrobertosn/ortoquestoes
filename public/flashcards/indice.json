@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 4868,
- "batalha": 4085,
- "soEstudo": 783,
+ "total": 4899,
+ "batalha": 4091,
+ "soEstudo": 808,
  "comImagem": 630,
  "simulados": 846,
- "autorais": 566,
+ "autorais": 597,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -285,24 +285,24 @@
   "pediatria": {
    "nome": "Ortopedia pediátrica",
    "arquivo": "pediatria.json",
-   "total": 725,
-   "batalha": 574,
+   "total": 756,
+   "batalha": 580,
    "comImagem": 48,
    "simulados": 0,
    "tipos": {
     "Armadilha": 4,
-    "Classificação": 56,
-    "Conceito": 95,
+    "Classificação": 61,
+    "Conceito": 118,
     "Imagem": 48,
     "Na prova": 1,
-    "Par confundível": 12,
+    "Par confundível": 13,
     "Relâmpago": 476,
-    "Tabela": 33
+    "Tabela": 35
    },
    "assuntos": {
     "Lesões fisárias": 113,
     "Genuvaro, genuvalgo e torções": 107,
-    "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 64,
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 95,
     "Outras doenças congênitas": 26,
     "Displasia do desenvolvimento do quadril": 26,
     "Fraturas do antebraço e punho na criança": 23,
@@ -473,5 +473,5 @@
    }
   }
  },
- "assinatura": "f7a9b4ae62ed"
+ "assinatura": "4d3d6cbed833"
 }
