@@ -229,7 +229,7 @@ export const Cartao = memo(function Cartao({ carta, virada, dicaFrente, aoTocar,
               )}
               {origemAberta && (
                 <p className="fc-carta__origem">
-                  Questão <strong>{carta.questao}</strong> do acervo · {carta.area} · {carta.assunto}. O flashcard resume o comentário dessa questão e segue o gabarito oficial.
+                  Questão <strong>{carta.questao}</strong> {carta.colecao === 'simulados' ? 'dos OrtoQuestões Simulados' : 'do acervo'} · {carta.area} · {carta.assunto}. O flashcard resume o comentário dessa questão e segue o gabarito oficial.
                 </p>
               )}
             </div>
