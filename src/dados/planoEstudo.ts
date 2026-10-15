@@ -359,7 +359,19 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     else if (c.tipo === 'dificil') fixos += DIA_MINIMO
     else if (c.tipo === 'estudo') pesoNormal += c.mini ? 0.5 : 1
   }
-  const metaPlanejada = Math.max(1, Math.ceil(alvo / Math.max(1, diasDeEstudoCriacao.length)))
+  // A meta planejada usa o mesmo calendário de tipos desde a criação: contar dias
+  // leves e difíceis como normais deixava a planejada baixa e o teto disparava
+  // no primeiro dia de um plano novo com dois ou mais dias leves.
+  let fixosCriacao = 0, pesoCriacao = 0
+  for (const d of diasDeEstudoCriacao) {
+    const tipo = tipoDe(d)
+    if (tipo === 'leve') fixosCriacao += opcoes.qtdLeve
+    else if (tipo === 'dificil') fixosCriacao += DIA_MINIMO
+    else if (tipo === 'estudo') pesoCriacao += ehMini(d) ? 0.5 : 1
+  }
+  const metaPlanejada = pesoCriacao > 0
+    ? Math.max(1, Math.ceil(Math.max(0, alvo - fixosCriacao) / pesoCriacao))
+    : Math.max(1, Math.ceil(alvo / Math.max(1, diasDeEstudoCriacao.length)))
   // A meta normal; `devolver` são questões que dias de hoje em diante já não pedem (foram adiantadas antes de hoje).
   const normalCom = (devolver: number) => {
     const precisa = pesoNormal > 0 ? Math.ceil(Math.max(0, restante + feitasHoje - fixos + devolver) / pesoNormal) : Math.max(0, restante + feitasHoje)

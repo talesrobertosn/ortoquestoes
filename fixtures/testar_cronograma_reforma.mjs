@@ -53,6 +53,12 @@ try {
   const c3 = m.calcularPlano(indice, {}, plano({ criado_em: antigo.toISOString() }), agora)
   assert.ok(c3.projecao.tetoAtivo && c3.projecao.cortadas > 0 && c3.projecao.alvoPct < 100, 'teto do atraso não agiu')
   assert.equal(c3.projecao.maisCaiPct, 100, 'o corte deveria sair do fim da fila, não da prioridade máxima')
+  // 6b. Plano novo com dois dias leves: a meta planejada conta os dias leves, então o teto não dispara no dia 1.
+  for (const opcoes of [{ diasLeves: [2, 4], qtdLeve: 15 }, { diasLeves: [1, 3, 5], qtdLeve: 15 }, { diasLeves: [2, 4], qtdLeve: 15, semanasDificeis: [seg] }]) {
+    const novo = m.calcularPlano(indice, {}, plano({ opcoes }), agora)
+    assert.equal(novo.projecao.tetoAtivo, false, `teto disparou em plano novo (${JSON.stringify(opcoes)})`)
+    assert.equal(novo.projecao.cortadas, 0, `plano novo cortou questões (${JSON.stringify(opcoes)})`)
+  }
   // 7. Leve menor que a 1ª passada: só prioridade máxima, dividida entre as áreas.
   const c4 = m.calcularPlano(indice, {}, plano({ intensidade: 'leve' }), agora)
   assert.ok(c4.dias.flatMap((d) => d.itens).every((i) => i.passada === 1), 'leve agendou fora da prioridade máxima')
