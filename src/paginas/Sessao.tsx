@@ -15,7 +15,7 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { usarConta } from '../conta/ContextoConta'
 import { lerRespondidas, usarFavoritos, usarSessao } from '../estado/sessao'
-import { marcarConviteLimiteVisto, saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
+import { erroDeConexao, marcarConviteLimiteVisto, saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
 import { usarAssinante } from '../conta/plano'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
@@ -425,6 +425,7 @@ export function Sessao() {
               const chave = chavesResposta.current.get(chaveMapa) ?? gerarId()
               chavesResposta.current.set(chaveMapa, chave)
               const permissao = await autorizar(questaoAtual.id, chave)
+              if (permissao.falhaValidacao) throw erroDeConexao()
               if (!permissao.permitido) {
                 // Com respostas na sessão, o limite vira fechamento: o resumo
                 // mostra o dia cumprido em vez de um painel no meio da questão.
