@@ -5866,6 +5866,63 @@
    "fonte": "1b7083a92a88"
   },
   {
+   "id": "fc-trauma-0222-cl1",
+   "questao": "trauma-0222",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Schenck, qual tipo de luxação do joelho tem os dois cruzados e o colateral medial lesados?",
+   "resposta": "KD III M",
+   "explicacao": "**KD II:** os dois cruzados. **KD III M:** os dois cruzados e o **colateral medial**. **KD III L:** com colateral lateral e canto posterolateral. **KD IV:** os quatro.",
+   "opcoes": [
+    "KD II",
+    "KD III M",
+    "KD III L",
+    "KD IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "8840cdcca15f",
+   "origem": "autoral",
+   "trecho": "| KD III M | Os dois cruzados e o **colateral medial** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0222-co1",
+   "questao": "trauma-0222",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação KD II de Schenck, com os dois cruzados rotos, como fica o joelho em varo e valgo?",
+   "resposta": "estável em varo e valgo",
+   "explicacao": "Gaveta anterior e posterior positivas, mas **estável em varo e valgo**, porque os colaterais estão íntegros.",
+   "opcoes": [
+    "estável em varo e valgo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "8840cdcca15f",
+   "origem": "autoral",
+   "trecho": "O joelho fica instável no plano sagital (gaveta anterior e posterior positivas), mas estável em varo e valgo, porque os dois colaterais estão preservados.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0222-q",
    "questao": "trauma-0222",
    "area": "Trauma adulto",
@@ -5947,6 +6004,33 @@
    "fonte": "ce92249b8087"
   },
   {
+   "id": "fc-trauma-0225-co1",
+   "questao": "trauma-0225",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A avulsão da cabeça da fíbula na radiografia (sinal arqueado) indica lesão de qual região do joelho?",
+   "resposta": "canto posterolateral",
+   "explicacao": "Inserção do complexo arqueado, do bíceps e do colateral lateral: lesão do **canto posterolateral**, associada a LCP e luxação.",
+   "opcoes": [
+    "canto posterolateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "939c3c94920a",
+   "origem": "autoral",
+   "trecho": "indica lesão do **canto posterolateral** e tem forte associação com lesão do **cruzado posterior** e com a **luxação do joelho**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0225-np",
    "questao": "trauma-0225",
    "area": "Trauma adulto",
@@ -5972,6 +6056,64 @@
    "prova": "TARO",
    "ano": 2022,
    "fonte": "939c3c94920a"
+  },
+  {
+   "id": "fc-trauma-0225-pc1",
+   "questao": "trauma-0225",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Avulsão da borda lateral do planalto tibial pelo ligamento anterolateral, que indica lesão do LCA: qual é o nome?",
+   "resposta": "fratura de Segond",
+   "explicacao": "**Segond:** LCA. **Sinal arqueado:** cabeça da fíbula, canto posterolateral. **Pellegrini-Stieda:** colateral medial crônico.",
+   "opcoes": [
+    "fratura de Segond",
+    "sinal arqueado",
+    "Pellegrini-Stieda"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "939c3c94920a",
+   "origem": "autoral",
+   "trecho": "**fratura de Segond**: avulsão da borda **lateral** do planalto tibial, pelo ligamento anterolateral; indica lesão do **cruzado anterior**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0225-pc2",
+   "questao": "trauma-0225",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Pellegrini-Stieda, calcificação junto ao côndilo femoral medial, é sequela crônica de qual lesão?",
+   "resposta": "colateral medial",
+   "explicacao": "**Pellegrini-Stieda:** lesão crônica do **colateral medial**. Segond aponta o LCA; o sinal arqueado, o canto posterolateral.",
+   "opcoes": [
+    "colateral medial",
+    "cruzado anterior",
+    "canto posterolateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "939c3c94920a",
+   "origem": "autoral",
+   "trecho": "**Pellegrini-Stieda**: calcificação junto ao côndilo femoral medial, sequela **crônica** da lesão do **colateral medial**;",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0227-np",
@@ -10113,6 +10255,115 @@
    "fonte": "3278109e6915"
   },
   {
+   "id": "fc-trauma-0556-pc1",
+   "questao": "trauma-0556",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No teste de estresse em valgo, em que posição do joelho o teste isola o colateral medial?",
+   "resposta": "30° de flexão",
+   "explicacao": "A **30° de flexão**, cápsula posterior e cruzados relaxam e só o colateral medial segura. Abrir em **extensão** indica lesão de cruzados e canto posteromedial.",
+   "opcoes": [
+    "Extensão",
+    "30° de flexão"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3278109e6915",
+   "origem": "autoral",
+   "trecho": "**com o joelho a 30° de flexão**: a cápsula posterior e os cruzados ficam **relaxados**; o teste isola o **colateral medial**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0557-co1",
+   "questao": "trauma-0557",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho com os dois cruzados rotos, qual lesão do lado lateral exige reparo precoce?",
+   "resposta": "colateral lateral e canto posterolateral",
+   "explicacao": "**Colateral lateral e canto posterolateral** cicatrizam mal: reparo nas primeiras 2 a 3 semanas, junto com os cruzados.",
+   "opcoes": [
+    "colateral lateral e canto posterolateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "79ce51560070",
+   "origem": "autoral",
+   "trecho": "**colateral lateral e canto posterolateral**: cicatrizam mal; o reparo é feito **cedo** (nas primeiras 2 a 3 semanas), junto com a reconstrução dos cruzados;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0557-co2",
+   "questao": "trauma-0557",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Colateral medial avulsionado na tíbia com a pata de ganso interposta, que não cicatriza no lugar: é a lesão tipo de quem?",
+   "resposta": "Stener",
+   "explicacao": "A **lesão tipo Stener do joelho** precisa de reparo; o colateral medial desinserido no fêmur, ao contrário, cicatriza com órtese.",
+   "opcoes": [
+    "Stener"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "79ce51560070",
+   "origem": "autoral",
+   "trecho": "**colateral medial avulsionado na tíbia** com a pata de ganso interposta (lesão tipo Stener do joelho): não cicatriza no lugar e precisa de reparo;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0557-co3",
+   "questao": "trauma-0557",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que o colateral medial lesado na inserção femoral cicatriza bem com órtese?",
+   "resposta": "a irrigação é boa",
+   "explicacao": "Na **inserção femoral** (proximal) **a irrigação é boa**: pode-se esperar a cicatrização e reconstruir os cruzados depois.",
+   "opcoes": [
+    "a irrigação é boa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "79ce51560070",
+   "origem": "autoral",
+   "trecho": "sobretudo quando a lesão é na **inserção femoral** (proximal), onde a irrigação é boa.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0557-np",
    "questao": "trauma-0557",
    "area": "Trauma adulto",
@@ -11689,6 +11940,88 @@
    "prova": "CET-PR",
    "ano": null,
    "fonte": "faf6cea9a9e8"
+  },
+  {
+   "id": "fc-trauma-0704-ar1",
+   "questao": "trauma-0704",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que pacientes o índice tornozelo-braquial pode ser falsamente normal na luxação do joelho?",
+   "resposta": "vasos não compressíveis",
+   "explicacao": "Diabetes, doença renal e idosos com calcificação têm **vasos não compressíveis**: o ITB engana.",
+   "opcoes": [
+    "vasos não compressíveis"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "a8898838ceed",
+   "origem": "autoral",
+   "trecho": "O ITB pode ser falsamente normal em pacientes com vasos **não compressíveis** (diabetes, doença renal, idosos com calcificação).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0704-co1",
+   "questao": "trauma-0704",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho com ITB normal, por quanto tempo o exame vascular deve ser repetido?",
+   "resposta": "24 a 48 horas",
+   "explicacao": "ITB e exame clínico seriados nas primeiras **24 a 48 horas**; qualquer piora leva a imagem.",
+   "opcoes": [
+    "24 a 48 horas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "a8898838ceed",
+   "origem": "autoral",
+   "trecho": "o exame deve ser **repetido** nas primeiras 24 a 48 horas",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0704-co2",
+   "questao": "trauma-0704",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do joelho sem sinais duros, um ITB abaixo de 0,9 indica qual exame?",
+   "resposta": "angiotomografia",
+   "explicacao": "ITB **abaixo de 0,9**: **angiotomografia** e cirurgião vascular. Sinais duros: **exploração cirúrgica imediata**.",
+   "opcoes": [
+    "angiotomografia",
+    "exploração cirúrgica imediata"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "a8898838ceed",
+   "origem": "autoral",
+   "trecho": "Um ITB **abaixo de 0,9** é anormal e indica **angiotomografia** (ou arteriografia) e avaliação do cirurgião vascular.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0704-q",
@@ -13753,6 +14086,87 @@
    "fonte": "16740795fd26"
   },
   {
+   "id": "fc-trauma-0802-co1",
+   "questao": "trauma-0802",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual enxerto se usa na revascularização da poplítea lesada pela luxação do joelho?",
+   "resposta": "safena invertida",
+   "explicacao": "Revascularização em até **6 a 8 horas** com **safena invertida**, fasciotomia profilática e fixador externo.",
+   "opcoes": [
+    "safena invertida"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "a706e47d9d2a",
+   "origem": "autoral",
+   "trecho": "Revascularização em até **6 a 8 horas** (enxerto de safena invertida)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0802-co2",
+   "questao": "trauma-0802",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após o reparo da poplítea na luxação do joelho, como se estabiliza o joelho para proteger o reparo?",
+   "resposta": "fixador externo",
+   "explicacao": "**Fixador externo** transarticular protege a anastomose; associa-se fasciotomia dos quatro compartimentos.",
+   "opcoes": [
+    "fixador externo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "a706e47d9d2a",
+   "origem": "autoral",
+   "trecho": "estabilização com **fixador externo** para proteger o reparo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0802-pc1",
+   "questao": "trauma-0802",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação anterior do joelho, a poplítea é estirada sobre o platô. E na luxação posterior, o que sofre a artéria?",
+   "resposta": "contundida ou lacerada diretamente",
+   "explicacao": "**Anterior:** tração, ruptura da íntima e trombose. **Posterior:** a artéria é **contundida ou lacerada diretamente**.",
+   "opcoes": [
+    "contundida ou lacerada diretamente"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "a706e47d9d2a",
+   "origem": "autoral",
+   "trecho": "Na luxação **posterior**, a tíbia vai para trás e a artéria é **contundida** ou lacerada diretamente.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-trauma-0802-q",
    "questao": "trauma-0802",
    "area": "Trauma adulto",
@@ -15269,6 +15683,60 @@
    "prova": "TARO",
    "ano": 2010,
    "fonte": "5026b2592b28"
+  },
+  {
+   "id": "fc-trauma-0886-co1",
+   "questao": "trauma-0886",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que proporção das luxações do joelho a artéria poplítea é lesada?",
+   "resposta": "10 a 40%",
+   "explicacao": "**Artéria poplítea** em **10 a 40%**: avaliação por ITB obrigatória em todos.",
+   "opcoes": [
+    "10 a 40%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "e8b85d1755a3",
+   "origem": "autoral",
+   "trecho": "**Artéria poplítea** (10 a 40%, com avaliação por ITB obrigatória)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0886-co2",
+   "questao": "trauma-0886",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtemas": [
+    "Luxação do joelho e lesões ligamentares"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais são as sequelas mais comuns da luxação do joelho tratada?",
+   "resposta": "Rigidez e instabilidade residual",
+   "explicacao": "**Rigidez e instabilidade residual**, mesmo com redução, reparo vascular e reconstrução ligamentar.",
+   "opcoes": [
+    "Rigidez e instabilidade residual"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "e8b85d1755a3",
+   "origem": "autoral",
+   "trecho": "Rigidez e instabilidade residual são as sequelas mais comuns.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-trauma-0886-q",

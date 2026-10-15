@@ -11206,6 +11206,119 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0523-co1",
+   "questao": "pediatria-0523",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em cerca de quantas fraturas diafisárias do antebraço da criança ocorre refratura?",
+   "resposta": "5%",
+   "explicacao": "Cerca de **5%**, em geral nos primeiros meses, sobretudo no galho verde diafisário.",
+   "opcoes": [
+    "5%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71d94d01ace3",
+   "origem": "autoral",
+   "trecho": "A refratura ocorre em cerca de **5%** das fraturas diafisárias do antebraço, geralmente nos primeiros meses.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0523-co2",
+   "questao": "pediatria-0523",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se trata a fratura em tórus (em fivela) do punho da criança?",
+   "resposta": "tala removível por 3 semanas",
+   "explicacao": "O **tórus** é estável: **tala removível por 3 semanas**, sem refratura relevante.",
+   "opcoes": [
+    "tala removível por 3 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71d94d01ace3",
+   "origem": "autoral",
+   "trecho": "O tórus é uma fratura **estável** e se trata com tala removível por 3 semanas, sem refratura relevante.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0523-co3",
+   "questao": "pediatria-0523",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para reduzir a refratura, por quanto tempo se recomenda o gesso na fratura diafisária do antebraço da criança?",
+   "resposta": "6 semanas",
+   "explicacao": "Cerca de **6 semanas** de gesso e depois um período de proteção; imobilização curta é fator de risco.",
+   "opcoes": [
+    "6 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71d94d01ace3",
+   "origem": "autoral",
+   "trecho": "**Imobilização curta**: na diáfise, recomenda-se cerca de **6 semanas** de gesso, mais um período de proteção.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0523-pc1",
+   "questao": "pediatria-0523",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Galho verde do antebraço com ápice volar vem de supinação com carga axial. E o ápice dorsal?",
+   "resposta": "pronação",
+   "explicacao": "**Ápice volar:** supinação, reduz com pronação. **Ápice dorsal:** **pronação**, reduz com supinação.",
+   "opcoes": [
+    "pronação",
+    "supinação"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "71d94d01ace3",
+   "origem": "autoral",
+   "trecho": "**Ápice dorsal**: lesão por **pronação** com carga axial. O fragmento distal fica pronado.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0523-q",
    "questao": "pediatria-0523",
    "area": "Ortopedia pediátrica",
@@ -11259,6 +11372,92 @@
    "prova": "TARO",
    "ano": 2025,
    "fonte": "a802b1382bc8"
+  },
+  {
+   "id": "fc-pediatria-0527-co1",
+   "questao": "pediatria-0527",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do antebraço da criança abaixo de 9 anos, quanto de angulação se aceita?",
+   "resposta": "15° a 20°",
+   "explicacao": "**Abaixo de 9 anos:** 15° a 20° de angulação e 45° de má rotação. **Acima:** 10° e 30°.",
+   "opcoes": [
+    "10°",
+    "15° a 20°"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "cfb179e06d47",
+   "origem": "autoral",
+   "trecho": "Abaixo de 9 anos, aceitam-se até cerca de **15° a 20°** de angulação, 45° de má rotação e desvio completo com encurtamento pequeno",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0527-co2",
+   "questao": "pediatria-0527",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do antebraço da criança acima de 9 anos, quanto de angulação se aceita?",
+   "resposta": "10°",
+   "explicacao": "**Acima de 9 anos:** cerca de **10°** de angulação e 30° de má rotação.",
+   "opcoes": [
+    "10°",
+    "15° a 20°"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "cfb179e06d47",
+   "origem": "autoral",
+   "trecho": "acima de 9 anos, cerca de **10°** de angulação e 30° de má rotação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0527-co3",
+   "questao": "pediatria-0527",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No método de Evans, com o antebraço em supinação completa, para onde aponta a tuberosidade do bíceps?",
+   "resposta": "medial",
+   "explicacao": "Tuberosidade do bíceps **medial** e estiloide radial lateral em supinação; se não combinam, há malrotação.",
+   "opcoes": [
+    "medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "cfb179e06d47",
+   "origem": "autoral",
+   "trecho": "o perfil da **tuberosidade do bíceps** (fragmento proximal), que em supinação completa aponta para **medial**;",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0527-q",
@@ -11429,6 +11628,118 @@
    "fonte": "b85b4d35cc54"
   },
   {
+   "id": "fc-pediatria-0535-cl1",
+   "questao": "pediatria-0535",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Meyers e McKeever da espinha tibial, o que define o tipo III?",
+   "resposta": "Totalmente desviado",
+   "explicacao": "**I:** sem desvio. **II:** elevação anterior com dobradiça posterior. **III:** **totalmente desviado** ou rodado. **IV:** cominutivo.",
+   "opcoes": [
+    "Totalmente desviado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "9b12604547ec",
+   "origem": "autoral",
+   "trecho": "| III | **Totalmente desviado** (IIIA só a espinha; IIIB inclui a espinha e o platô) ou rodado | **Redução e fixação** (artroscópica ou aberta) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0535-cl2",
+   "questao": "pediatria-0535",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual padrão de fratura da espinha tibial Zaricznyj acrescentou como tipo IV a Meyers e McKeever?",
+   "resposta": "Cominutivo",
+   "explicacao": "**Tipo IV de Zaricznyj:** fratura **cominutiva** da espinha tibial, com fixação cirúrgica.",
+   "opcoes": [
+    "Cominutivo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "9b12604547ec",
+   "origem": "autoral",
+   "trecho": "| IV | **Cominutivo** (Zaricznyj) | Fixação cirúrgica |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0535-co1",
+   "questao": "pediatria-0535",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da espinha tibial que não reduz em extensão, qual estrutura meniscal costuma se interpor sob o fragmento?",
+   "resposta": "corno anterior do menisco medial",
+   "explicacao": "O **corno anterior do menisco medial** ou o ligamento intermeniscal: indica artroscopia para liberar e fixar.",
+   "opcoes": [
+    "corno anterior do menisco medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "9b12604547ec",
+   "origem": "autoral",
+   "trecho": "o **corno anterior do menisco medial** ou o **ligamento intermeniscal** pode ficar **interposto** sob o fragmento",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0535-co2",
+   "questao": "pediatria-0535",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura da espinha tibial na criança é o equivalente pediátrico de qual lesão?",
+   "resposta": "lesão do LCA",
+   "explicacao": "O LCA é mais forte que a epífise imatura e **arranca** a espinha tibial em vez de romper.",
+   "opcoes": [
+    "lesão do LCA"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "9b12604547ec",
+   "origem": "autoral",
+   "trecho": "É o **equivalente pediátrico da lesão do LCA**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0535-q",
    "questao": "pediatria-0535",
    "area": "Ortopedia pediátrica",
@@ -11516,6 +11827,62 @@
    "prova": "TARO",
    "ano": 2024,
    "fonte": "24fb4cbe5c8a"
+  },
+  {
+   "id": "fc-pediatria-0541-co1",
+   "questao": "pediatria-0541",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No gesso pelvipodálico da fratura do fêmur da criança, em quanto de flexão deve ficar o joelho?",
+   "resposta": "45° a 60°",
+   "explicacao": "Joelho a **45° a 60°** (não 90°), fossa poplítea acolchoada e sem tração excessiva: previne a síndrome compartimental.",
+   "opcoes": [
+    "45° a 60°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "7dd5e45accfe",
+   "origem": "autoral",
+   "trecho": "Gesso com o joelho em flexão de cerca de **45° a 60°** (e não 90°)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0541-co2",
+   "questao": "pediatria-0541",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No gesso pelvipodálico da criança de 6 meses a 5 anos, quanto de encurtamento do fêmur é aceitável?",
+   "resposta": "até 2 cm",
+   "explicacao": "Aceita-se **até 2 cm**, porque o fêmur fraturado terá hipercrescimento.",
+   "opcoes": [
+    "até 2 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "7dd5e45accfe",
+   "origem": "autoral",
+   "trecho": "Encurtamento de até 2 cm é aceitável nessa idade, porque haverá hipercrescimento.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0541-q",
@@ -11742,6 +12109,34 @@
    "fonte": "a122357eae2e"
   },
   {
+   "id": "fc-pediatria-0545-co1",
+   "questao": "pediatria-0545",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que faixa etária é típica a fratura metafisária proximal da tíbia que evolui com valgo de Cozen?",
+   "resposta": "3 a 6 anos",
+   "explicacao": "Crianças de **3 a 6 anos**, com galho verde ou fratura incompleta aberta medialmente.",
+   "opcoes": [
+    "3 a 6 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d9e285b45102",
+   "origem": "autoral",
+   "trecho": "típica de crianças de **3 a 6 anos**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0545-q",
    "questao": "pediatria-0545",
    "area": "Ortopedia pediátrica",
@@ -11770,6 +12165,34 @@
    "fonte": "d9e285b45102"
   },
   {
+   "id": "fc-pediatria-0545-tb1",
+   "questao": "pediatria-0545",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Entre as teorias do valgo de Cozen, que papel tem a fíbula íntegra?",
+   "resposta": "tirante lateral",
+   "explicacao": "A fíbula íntegra é **tirante lateral** e limita o crescimento lateral; somam-se hipercrescimento medial e interposição da pata de ganso.",
+   "opcoes": [
+    "tirante lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "d9e285b45102",
+   "origem": "autoral",
+   "trecho": "| **Fíbula íntegra** | Funciona como tirante lateral e limita o crescimento lateral |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0546-q",
    "questao": "pediatria-0546",
    "area": "Ortopedia pediátrica",
@@ -11795,6 +12218,62 @@
    "prova": "TARO",
    "ano": 2023,
    "fonte": "129ac80e458a"
+  },
+  {
+   "id": "fc-pediatria-0547-co1",
+   "questao": "pediatria-0547",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Luxações na criança",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação do cotovelo da criança, em que situação a fixação do epicôndilo medial é indicada sem discussão?",
+   "resposta": "encarcerado",
+   "explicacao": "Fragmento **encarcerado** na articulação: fixação. Desvios grandes e atletas de arremesso são indicações discutíveis.",
+   "opcoes": [
+    "encarcerado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "1122856faa82",
+   "origem": "autoral",
+   "trecho": "A fixação do epicôndilo medial é indicada quando ele está **encarcerado** e, discutivelmente, nos desvios grandes ou em atletas de arremesso.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0547-co2",
+   "questao": "pediatria-0547",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Luxações na criança",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o pico de idade da luxação do cotovelo na criança?",
+   "resposta": "entre 10 e 15 anos",
+   "explicacao": "Pico **entre 10 e 15 anos**, com as fises perto de fechar; a criança pequena tende a fraturar a supracondiliana antes de luxar.",
+   "opcoes": [
+    "entre 10 e 15 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "1122856faa82",
+   "origem": "autoral",
+   "trecho": "O pico é entre **10 e 15 anos**, quando as fises estão perto de fechar.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0547-q",
@@ -12019,6 +12498,90 @@
    "prova": "TARO",
    "ano": 2023,
    "fonte": "35d34f14657e"
+  },
+  {
+   "id": "fc-pediatria-0556-co1",
+   "questao": "pediatria-0556",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas hastes flexíveis de titânio do fêmur da criança, quanto do diâmetro do istmo cada haste deve ter?",
+   "resposta": "40%",
+   "explicacao": "Cada haste com **40%** do istmo; juntas preenchem cerca de **80%**. Menos que isso fica instável.",
+   "opcoes": [
+    "40%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "bce0d99a4160",
+   "origem": "autoral",
+   "trecho": "Cada haste deve ter cerca de **40% do diâmetro do istmo**; juntas, preenchem cerca de **80%**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0556-co2",
+   "questao": "pediatria-0556",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a complicação mais comum das hastes flexíveis no fêmur da criança?",
+   "resposta": "Irritação da pele pelas pontas das hastes",
+   "explicacao": "A mais comum: **irritação da pele pelas pontas**. Também discrepância por hipercrescimento e encurtamento nas instáveis.",
+   "opcoes": [
+    "Irritação da pele pelas pontas das hastes"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "bce0d99a4160",
+   "origem": "autoral",
+   "trecho": "Irritação da pele pelas pontas das hastes (a mais comum)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0556-co3",
+   "questao": "pediatria-0556",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "As hastes flexíveis do fêmur da criança entram por portais distais medial e lateral a quantos centímetros da fise?",
+   "resposta": "2 a 3 cm acima da fise",
+   "explicacao": "Entradas distais **2 a 3 cm acima da fise**, hastes pré-curvadas com ápice no nível da fratura.",
+   "opcoes": [
+    "2 a 3 cm acima da fise"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "bce0d99a4160",
+   "origem": "autoral",
+   "trecho": "introduzidas por entradas distais **medial e lateral**, cerca de 2 a 3 cm acima da fise.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0556-q",
@@ -12365,6 +12928,92 @@
    }
   },
   {
+   "id": "fc-pediatria-0562-co1",
+   "questao": "pediatria-0562",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o primeiro osso do carpo a ossificar, por volta dos 2 a 3 meses de vida?",
+   "resposta": "capitato",
+   "explicacao": "**Capitato** primeiro, seguido do **hamato**.",
+   "opcoes": [
+    "capitato",
+    "hamato",
+    "escafoide"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f361255ab8db",
+   "origem": "autoral",
+   "trecho": "O **capitato** é o primeiro osso do carpo a ossificar (por volta dos 2 a 3 meses de vida), seguido do hamato.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0562-co2",
+   "questao": "pediatria-0562",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual epônimo recebe a síndrome escafocapitato, fratura do escafoide e do colo do capitato?",
+   "resposta": "Fenton",
+   "explicacao": "**Síndrome de Fenton:** a cabeça do capitato pode girar até 180°, com risco de necrose.",
+   "opcoes": [
+    "Fenton"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f361255ab8db",
+   "origem": "autoral",
+   "trecho": "**A síndrome escafocapitato (de Fenton).** É uma variante especial e grave:",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0562-co3",
+   "questao": "pediatria-0562",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome escafocapitato, quanto pode girar a cabeça do capitato ao voltar o punho à posição neutra?",
+   "resposta": "180°",
+   "explicacao": "A cabeça gira **até 180°**, com a superfície articular para baixo; a irrigação é retrógrada, como no polo proximal do escafoide.",
+   "opcoes": [
+    "180°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "f361255ab8db",
+   "origem": "autoral",
+   "trecho": "o fragmento proximal do capitato (a **cabeça**) **gira até 180°**, ficando com a superfície articular virada para baixo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0562-q",
    "questao": "pediatria-0562",
    "area": "Ortopedia pediátrica",
@@ -12563,6 +13212,117 @@
    "fonte": "b3fff1b51056"
   },
   {
+   "id": "fc-pediatria-0565-co1",
+   "questao": "pediatria-0565",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura supracondiliana do fêmur, quais músculos puxam o fragmento distal em extensão posterior, ameaçando os vasos poplíteos?",
+   "resposta": "gastrocnêmios",
+   "explicacao": "Os **gastrocnêmios**, presos nos côndilos, angulam o fragmento distal para trás.",
+   "opcoes": [
+    "gastrocnêmios"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "dc092462f053",
+   "origem": "autoral",
+   "trecho": "Nas fraturas **supracondilianas**, o fragmento distal é puxado em **extensão posterior** pelos gastrocnêmios, com risco para os vasos poplíteos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0565-co2",
+   "questao": "pediatria-0565",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após a consolidação da fratura diafisária do fêmur na criança, quanto o osso costuma sobrecrescer?",
+   "resposta": "0,7 a 2 cm",
+   "explicacao": "Sobrecrescimento de **0,7 a 2 cm**, maior entre 2 e 10 anos; por isso se aceita pequeno encurtamento inicial.",
+   "opcoes": [
+    "0,7 a 2 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "dc092462f053",
+   "origem": "autoral",
+   "trecho": "ocorre **sobrecrescimento** do fêmur fraturado (cerca de 0,7 a 2 cm, mais entre 2 e 10 anos)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0565-co3",
+   "questao": "pediatria-0565",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No lactente com menos de 6 meses, em quanto tempo consolida a fratura diafisária do fêmur?",
+   "resposta": "2 a 3 semanas",
+   "explicacao": "Consolida em **2 a 3 semanas** e remodela muito: o Pavlik basta.",
+   "opcoes": [
+    "2 a 3 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "dc092462f053",
+   "origem": "autoral",
+   "trecho": "Nessa idade, o fêmur consolida em **2 a 3 semanas** e tem enorme potencial de remodelação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0566-pc1",
+   "questao": "pediatria-0566",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Mão da criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na supracondiliana, o desvio posterolateral lesa o interósseo anterior. Qual nervo é lesado na fratura em flexão?",
+   "resposta": "ulnar",
+   "explicacao": "**Posterolateral:** interósseo anterior. **Posteromedial:** radial. **Flexão:** **ulnar**. **Monteggia:** interósseo posterior.",
+   "opcoes": [
+    "ulnar",
+    "radial",
+    "interósseo anterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b5593ba2f3a9",
+   "origem": "autoral",
+   "trecho": "na fratura em **flexão**, o **ulnar**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0566-q",
    "questao": "pediatria-0566",
    "area": "Ortopedia pediátrica",
@@ -12589,6 +13349,64 @@
    "prova": "TARO",
    "ano": 2022,
    "fonte": "b5593ba2f3a9"
+  },
+  {
+   "id": "fc-pediatria-0566-tb1",
+   "questao": "pediatria-0566",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Mão da criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No exame lúdico da criança com fratura do antebraço, o gesto de joinha testa quais nervos?",
+   "resposta": "Radial e interósseo posterior",
+   "explicacao": "**Joinha:** radial e interósseo posterior. **OK:** interósseo anterior. **Cruzar os dedos:** ulnar.",
+   "opcoes": [
+    "Radial e interósseo posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b5593ba2f3a9",
+   "origem": "autoral",
+   "trecho": "| **Joinha** (extensão do polegar) e abrir a mão | **Radial** e **interósseo posterior** (extensores) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0566-tb2",
+   "questao": "pediatria-0566",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Mão da criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No exame lúdico da criança, cruzar os dedos ou abrir e fechar em leque testa qual nervo?",
+   "resposta": "Ulnar",
+   "explicacao": "**Cruzar os dedos:** **ulnar** (interósseos). **Joinha:** radial. **OK:** interósseo anterior.",
+   "opcoes": [
+    "Ulnar",
+    "Radial",
+    "Interósseo anterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b5593ba2f3a9",
+   "origem": "autoral",
+   "trecho": "| **Cruzar os dedos** ou abrir e fechar em leque | **Ulnar** (interósseos) |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0568-q",
@@ -12836,6 +13654,33 @@
    "prova": "TARO",
    "ano": 2022,
    "fonte": "8cf207c52950"
+  },
+  {
+   "id": "fc-pediatria-0572-co1",
+   "questao": "pediatria-0572",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que proporção das luxações do cotovelo da criança o epicôndilo medial é arrancado?",
+   "resposta": "30% a 50%",
+   "explicacao": "Em **30% a 50%**, pelo ligamento colateral medial e pela massa flexora-pronadora; o fragmento pode ficar encarcerado.",
+   "opcoes": [
+    "30% a 50%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "126b79815b06",
+   "origem": "autoral",
+   "trecho": "Em cerca de **30% a 50%** das luxações, o **epicôndilo medial** é arrancado pelo ligamento colateral medial e pela massa flexora-pronadora.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0572-q",
@@ -13117,6 +13962,34 @@
    "fonte": "0885ca35cc2e"
   },
   {
+   "id": "fc-pediatria-0586-co1",
+   "questao": "pediatria-0586",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Luxações na criança",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Depressão na cortical medial do úmero, vista meses depois da luxação, indicando mediano encarcerado: qual sinal?",
+   "resposta": "Matev",
+   "explicacao": "**Sinal de Matev:** o nervo mediano preso num sulco ósseo do úmero. Dor desproporcional e déficit progressivo indicam exploração.",
+   "opcoes": [
+    "Matev"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "6b35c094741c",
+   "origem": "autoral",
+   "trecho": "o sinal de **Matev**, uma depressão na cortical medial visível meses depois",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0586-q",
    "questao": "pediatria-0586",
    "area": "Ortopedia pediátrica",
@@ -13391,6 +14264,33 @@
    "fonte": "21076a573270"
   },
   {
+   "id": "fc-pediatria-0594-co1",
+   "questao": "pediatria-0594",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura irredutível do rádio distal da criança, qual é a manobra de redução fechada sob anestesia?",
+   "resposta": "exagerar a deformidade",
+   "explicacao": "**Exagerar a deformidade**, encostar borda com borda e então corrigir; se falhar, redução aberta pelo lado do bloqueio.",
+   "opcoes": [
+    "exagerar a deformidade"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "73351e317c11",
+   "origem": "autoral",
+   "trecho": "**primeiro**, tentar a redução fechada sob anestesia: **exagerar a deformidade**, levar a borda de um fragmento contra a do outro e então corrigir;",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0594-q",
    "questao": "pediatria-0594",
    "area": "Ortopedia pediátrica",
@@ -13416,6 +14316,33 @@
    "prova": "TARO",
    "ano": 2021,
    "fonte": "73351e317c11"
+  },
+  {
+   "id": "fc-pediatria-0594-tb1",
+   "questao": "pediatria-0594",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio distal da criança com desvio dorsal irredutível, qual músculo costuma se interpor no foco?",
+   "resposta": "pronador quadrado",
+   "explicacao": "O lado oposto ao desvio é estirado: no **desvio dorsal** se interpõem periósteo volar, **pronador quadrado** e flexores.",
+   "opcoes": [
+    "pronador quadrado"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "73351e317c11",
+   "origem": "autoral",
+   "trecho": "| **Dorsal** (o mais comum) | Volar | Periósteo volar, **pronador quadrado**, tendões flexores, às vezes o nervo mediano |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0595-q",
@@ -13508,6 +14435,94 @@
    "fonte": "4221f9b98a2f"
   },
   {
+   "id": "fc-pediatria-0598-co1",
+   "questao": "pediatria-0598",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio da criança no terço proximal, em que posição se imobiliza o antebraço?",
+   "resposta": "supinação",
+   "explicacao": "**Proximal:** o supinador supina o fragmento proximal, imobilizar em **supinação**. **Médio:** neutra. **Distal:** pronação.",
+   "opcoes": [
+    "supinação",
+    "neutra",
+    "pronação"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "687ab022bd1f",
+   "origem": "autoral",
+   "trecho": "**terço proximal**: o supinador puxa o fragmento proximal em supinação, e o antebraço é imobilizado em **supinação**;",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0598-co2",
+   "questao": "pediatria-0598",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio da criança no terço distal, em que posição se imobiliza o antebraço?",
+   "resposta": "pronação",
+   "explicacao": "**Distal:** o pronador quadrado prona o fragmento distal, imobilizar em **pronação**.",
+   "opcoes": [
+    "supinação",
+    "neutra",
+    "pronação"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "687ab022bd1f",
+   "origem": "autoral",
+   "trecho": "**terço distal**: o pronador quadrado puxa o distal em pronação, e a posição é de **pronação**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0598-co3",
+   "questao": "pediatria-0598",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas fraturas diafisárias instáveis do antebraço ou no adolescente, qual implante se usa?",
+   "resposta": "haste intramedular elástica",
+   "explicacao": "**Haste intramedular elástica** (TEN); a maioria, porém, se trata com redução fechada e gesso.",
+   "opcoes": [
+    "haste intramedular elástica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "687ab022bd1f",
+   "origem": "autoral",
+   "trecho": "Nos instáveis ou nos adolescentes, usa-se a **haste intramedular elástica** (TEN).",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0598-q",
    "questao": "pediatria-0598",
    "area": "Ortopedia pediátrica",
@@ -13534,6 +14549,152 @@
    "prova": "TARO",
    "ano": 2015,
    "fonte": "687ab022bd1f"
+  },
+  {
+   "id": "fc-pediatria-0599-ar1",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do colo do fêmur Delbet I ou II da criança, deve-se poupar a fise mesmo à custa da fixação?",
+   "resposta": "a estabilidade é prioritária",
+   "explicacao": "Não. Os parafusos podem cruzar a fise se necessário: **a estabilidade é prioritária**.",
+   "opcoes": [
+    "a estabilidade é prioritária"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "**fixação interna**, com parafusos que podem **cruzar a fise** nos tipos I e II se necessário, porque a estabilidade é prioritária.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0599-cl1",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet do colo do fêmur da criança, qual tipo é o transepifisário, com risco de necrose altíssimo?",
+   "resposta": "I",
+   "explicacao": "**I:** transepifisário, necrose até quase 100% com luxação. **II:** transcervical, cerca de 50%. **III:** cervicotrocantérico, 25%. **IV:** intertrocantérico, 10%.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "| **I** | **Transepifisário**: descolamento pela fise, com ou sem luxação da cabeça | **Altíssima** (até quase 100% se houver luxação) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0599-cl2",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet do colo do fêmur da criança, como se chama o tipo III?",
+   "resposta": "Cervicotrocantérico",
+   "explicacao": "**Delbet III:** **cervicotrocantérico** (basocervical), necrose em cerca de 25%, o segundo mais frequente.",
+   "opcoes": [
+    "Transepifisário",
+    "Transcervical",
+    "Cervicotrocantérico",
+    "Intertrocantérico"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "| **III** | **Cervicotrocantérico** (basocervical) | Cerca de 25% |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0599-cl3",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Delbet, qual é o risco de necrose avascular do tipo IV, intertrocantérico?",
+   "resposta": "cerca de 10% ou menos",
+   "explicacao": "Quanto mais proximal, maior a necrose: o **IV** tem o menor risco, **cerca de 10% ou menos**.",
+   "opcoes": [
+    "cerca de 10% ou menos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "| **IV** | **Intertrocantérico** | Baixa, cerca de 10% ou menos |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0599-co1",
+   "questao": "pediatria-0599",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura desviada do colo do fêmur da criança, qual gesto reduz a tamponada do hematoma intracapsular?",
+   "resposta": "descompressão da cápsula",
+   "explicacao": "**Descompressão da cápsula** (capsulotomia ou aspiração), junto com redução anatômica urgente e fixação.",
+   "opcoes": [
+    "descompressão da cápsula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5f82b4a46d92",
+   "origem": "autoral",
+   "trecho": "**descompressão da cápsula** (capsulotomia ou aspiração), que reduz a tamponada;",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0599-q",
@@ -13819,6 +14980,34 @@
    "fonte": "2b8dbe52750a"
   },
   {
+   "id": "fc-pediatria-0603-co1",
+   "questao": "pediatria-0603",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na haste rígida do fêmur do adolescente, qual ponto de entrada se evita, e por quê?",
+   "resposta": "fossa do piriforme",
+   "explicacao": "Evita-se a **fossa do piriforme**: lesa os vasos retinaculares e causa necrose da cabeça. Entrada trocantérica lateral.",
+   "opcoes": [
+    "fossa do piriforme"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "62d5d2d11251",
+   "origem": "autoral",
+   "trecho": "A entrada pela **fossa do piriforme** é evitada pelo risco de lesar os vasos retinaculares e causar **necrose** da cabeça femoral.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0603-q",
    "questao": "pediatria-0603",
    "area": "Ortopedia pediátrica",
@@ -13845,6 +15034,60 @@
    "prova": "TARO",
    "ano": 2015,
    "fonte": "62d5d2d11251"
+  },
+  {
+   "id": "fc-pediatria-0604-co1",
+   "questao": "pediatria-0604",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quanto do crescimento do antebraço vem da fise distal do rádio?",
+   "resposta": "75 a 80%",
+   "explicacao": "Cerca de **75 a 80%**: por isso o rádio distal remodela tanto.",
+   "opcoes": [
+    "75 a 80%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "f73a4d1796d5",
+   "origem": "autoral",
+   "trecho": "que responde por cerca de 75 a 80% do crescimento do antebraço.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0604-co2",
+   "questao": "pediatria-0604",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do rádio distal da criança, qual posição de imobilização do punho favorece a síndrome aguda do túnel do carpo?",
+   "resposta": "flexão extrema",
+   "explicacao": "Também favorecem: desvio completo com cavalgamento e cotovelo flutuante. O punho não deve ficar em **flexão extrema**.",
+   "opcoes": [
+    "flexão extrema"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "f73a4d1796d5",
+   "origem": "autoral",
+   "trecho": "e quando o punho é imobilizado em **flexão extrema**.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0604-q",
@@ -13900,6 +15143,60 @@
    "prova": "TARO",
    "ano": 2016,
    "fonte": "33b6d4298a40"
+  },
+  {
+   "id": "fc-pediatria-0606-co1",
+   "questao": "pediatria-0606",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução fechada da deformidade plástica do antebraço, quanta força se aplica?",
+   "resposta": "20 a 30 kg",
+   "explicacao": "**20 a 30 kg**, lenta e contínua, por 2 a 3 minutos, sobre fulcro acolchoado, sob anestesia geral.",
+   "opcoes": [
+    "20 a 30 kg"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "6102f9f5bca3",
+   "origem": "autoral",
+   "trecho": "**Força de 20 a 30 kg**, aplicada **lentamente** sobre as extremidades do osso.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0606-co2",
+   "questao": "pediatria-0606",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução da deformidade plástica do antebraço, por quanto tempo a força é mantida?",
+   "resposta": "2 a 3 minutos",
+   "explicacao": "**2 a 3 minutos** contínuos: as microfraturas cedem aos poucos; força rápida pode criar fratura completa instável.",
+   "opcoes": [
+    "2 a 3 minutos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "6102f9f5bca3",
+   "origem": "autoral",
+   "trecho": "Mantida de forma **contínua** por **2 a 3 minutos**.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0606-q",
@@ -14100,6 +15397,62 @@
    "fonte": "7f696984d0f5"
   },
   {
+   "id": "fc-pediatria-0609-co1",
+   "questao": "pediatria-0609",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na avulsão Salter-Harris III do colateral ulnar do polegar na criança, a partir de qual desvio se opera?",
+   "resposta": "mais de 2 mm",
+   "explicacao": "Fragmento **com mais de 2 mm** de desvio, rodado, com mais de 10% a 25% da superfície ou instável: redução aberta.",
+   "opcoes": [
+    "mais de 2 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "01531e17e780",
+   "origem": "autoral",
+   "trecho": "Fragmento **desviado** ou rodado (mais de 2 mm, ou mais de 10% a 25% da superfície articular) ou instabilidade: **redução aberta**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0609-pc1",
+   "questao": "pediatria-0609",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Lesões fisárias"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A abdução forçada do polegar da criança avulsiona o colateral ulnar. Em que movimento avulsiona a placa volar?",
+   "resposta": "hiperextensão",
+   "explicacao": "**Placa volar:** **hiperextensão**, fragmento volar. **Colateral ulnar:** abdução, fragmento epifisário ulnar.",
+   "opcoes": [
+    "hiperextensão"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "01531e17e780",
+   "origem": "autoral",
+   "trecho": "| Placa volar | Avulsão da base volar na hiperextensão |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0609-q",
    "questao": "pediatria-0609",
    "area": "Ortopedia pediátrica",
@@ -14212,6 +15565,90 @@
    "fonte": "a456c6a22980"
   },
   {
+   "id": "fc-pediatria-0611-cl1",
+   "questao": "pediatria-0611",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nos mecanismos de Wilkins do olécrano, extensão com varo e antebraço pronado se associa a que lesão do rádio?",
+   "resposta": "luxação lateral da cabeça do rádio",
+   "explicacao": "**Extensão com varo:** padrão de Monteggia. **Extensão com valgo e supinação:** galho verde do olécrano com fratura do **colo do rádio**.",
+   "opcoes": [
+    "luxação lateral da cabeça do rádio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "542572223e85",
+   "origem": "autoral",
+   "trecho": "| Extensão com varo | Antebraço em **pronação**: olécrano em varo, com possível luxação lateral da cabeça do rádio (padrão de Monteggia) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0611-co1",
+   "questao": "pediatria-0611",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fraturas por avulsão do olécrano na criança, sobretudo bilaterais, sugerem qual doença?",
+   "resposta": "osteogênese imperfeita",
+   "explicacao": "Avulsão **bilateral** do olécrano é sinal de fragilidade óssea: pense em **osteogênese imperfeita**.",
+   "opcoes": [
+    "osteogênese imperfeita"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "542572223e85",
+   "origem": "autoral",
+   "trecho": "Fraturas por avulsão do olécrano, sobretudo **bilaterais**, sugerem **osteogênese imperfeita**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0611-co2",
+   "questao": "pediatria-0611",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em cerca de quantas fraturas do olécrano da criança há lesão associada, como a do colo do rádio?",
+   "resposta": "20%",
+   "explicacao": "Em cerca de **20%** há lesão associada (colo do rádio ou Monteggia): examine o cotovelo inteiro.",
+   "opcoes": [
+    "20%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "542572223e85",
+   "origem": "autoral",
+   "trecho": "Em cerca de **20%** dos casos, há uma **lesão associada**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0611-q",
    "questao": "pediatria-0611",
    "area": "Ortopedia pediátrica",
@@ -14238,6 +15675,34 @@
    "prova": "TARO",
    "ano": 2017,
    "fonte": "542572223e85"
+  },
+  {
+   "id": "fc-pediatria-0612-pc1",
+   "questao": "pediatria-0612",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A força rotacional quebra rádio e ulna da criança em níveis diferentes. E a força angular pura?",
+   "resposta": "mesmo nível",
+   "explicacao": "**Angular:** **mesmo nível**, como galho dobrado. **Rotacional:** níveis diferentes, e a redução corrige a rotação.",
+   "opcoes": [
+    "mesmo nível"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "9cdf6871525d",
+   "origem": "autoral",
+   "trecho": "**força angular** (flexão ou extensão pura): os dois ossos quebram no **mesmo nível**, como um galho dobrado;",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0612-q",
@@ -14742,6 +16207,90 @@
    "prova": "TARO",
    "ano": 2017,
    "fonte": "92a9e9cab3ba"
+  },
+  {
+   "id": "fc-pediatria-0621-ar1",
+   "questao": "pediatria-0621",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "No valgo de Cozen, a osteotomia precoce da tíbia resolve a deformidade?",
+   "resposta": "recidivar",
+   "explicacao": "Não é indicada: o valgo pode **recidivar** após a osteotomia; prefere-se observar e guiar o crescimento.",
+   "opcoes": [
+    "recidivar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "56b95d73832a",
+   "origem": "autoral",
+   "trecho": "A **osteotomia** precoce é desaconselhada, porque o valgo pode **recidivar** após ela.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0621-co1",
+   "questao": "pediatria-0621",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "No fenômeno de Cozen, após a fratura da metáfise proximal da tíbia, quando o valgo atinge o máximo?",
+   "resposta": "12 a 18 meses",
+   "explicacao": "O valgo atinge o máximo em **12 a 18 meses** e, na maioria, melhora sozinho.",
+   "opcoes": [
+    "12 a 18 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "56b95d73832a",
+   "origem": "autoral",
+   "trecho": "Atinge o **máximo em cerca de 12 a 18 meses**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0621-co2",
+   "questao": "pediatria-0621",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Outras fraturas na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Valgo de Cozen persistente e importante: qual é o tratamento?",
+   "resposta": "hemiepifisiodese medial",
+   "explicacao": "**Hemiepifisiodese medial** temporária (placa em 8), após observar 18 a 24 meses.",
+   "opcoes": [
+    "hemiepifisiodese medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "56b95d73832a",
+   "origem": "autoral",
+   "trecho": "**hemiepifisiodese medial** temporária (placa em 8), que guia o crescimento.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0621-q",
@@ -15301,6 +16850,119 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0630-co1",
+   "questao": "pediatria-0630",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O que é a fratura do bebê (toddler's fracture), em crianças de 1 a 3 anos que começam a andar?",
+   "resposta": "espiral do terço distal da tíbia",
+   "explicacao": "Fratura **espiral do terço distal da tíbia** com a fíbula íntegra, de baixa energia.",
+   "opcoes": [
+    "espiral do terço distal da tíbia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0f58b81534e1",
+   "origem": "autoral",
+   "trecho": "a **fratura do bebê** (toddler's fracture), espiral do terço distal da tíbia com a fíbula íntegra, em crianças de 1 a 3 anos que começam a andar.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0630-co2",
+   "questao": "pediatria-0630",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura diafisária da tíbia em menores de 8 anos, quanto de varo ou valgo se aceita?",
+   "resposta": "10°",
+   "explicacao": "Menores de 8 anos: **10°** de varo ou valgo, 10° sagital e 1 cm de encurtamento; maiores, 5°. A rotação não remodela.",
+   "opcoes": [
+    "10°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0f58b81534e1",
+   "origem": "autoral",
+   "trecho": "Em menores de 8 anos, aceitam-se até cerca de **10°** de varo ou valgo, 10° de angulação sagital e 1 cm de encurtamento",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0630-co3",
+   "questao": "pediatria-0630",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura da diáfise da tíbia da criança, em cerca de quantos casos a fíbula está íntegra?",
+   "resposta": "70%",
+   "explicacao": "Cerca de **70%**: a fíbula íntegra funciona como tirante lateral e leva ao varo.",
+   "opcoes": [
+    "70%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0f58b81534e1",
+   "origem": "autoral",
+   "trecho": "Em cerca de **70%** dos casos, a fíbula está íntegra.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0630-pc1",
+   "questao": "pediatria-0630",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A fratura da tíbia da criança com a fíbula íntegra tende ao varo. E com a fíbula também fraturada?",
+   "resposta": "valgo",
+   "explicacao": "**Fíbula íntegra:** varo (molde em valgo). **Fíbula fraturada:** **valgo** e encurtamento.",
+   "opcoes": [
+    "valgo",
+    "varo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0f58b81534e1",
+   "origem": "autoral",
+   "trecho": "Quando a **fíbula** também está fraturada, a tendência é o **valgo** e o **encurtamento**",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0630-q",
    "questao": "pediatria-0630",
    "area": "Ortopedia pediátrica",
@@ -15492,6 +17154,33 @@
    "prova": "TARO",
    "ano": 2019,
    "fonte": "c23af1901783"
+  },
+  {
+   "id": "fc-pediatria-0636-tb1",
+   "questao": "pediatria-0636",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtemas": [
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na deformidade plástica do antebraço em criança acima de 4 anos, a partir de qual angulação se corrige?",
+   "resposta": "maior que 20°",
+   "explicacao": "Angulação **maior que 20°** acima de 4 anos, ou qualquer uma que bloqueie redução ou rotação.",
+   "opcoes": [
+    "maior que 20°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "c23af1901783",
+   "origem": "autoral",
+   "trecho": "| Angulação **maior que 20°** em criança **acima de 4 anos** | **Corrigir** |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0637-q",
@@ -15881,6 +17570,34 @@
    "fonte": "7346efb07503"
   },
   {
+   "id": "fc-pediatria-0647-co1",
+   "questao": "pediatria-0647",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Acima de qual peso as hastes flexíveis de titânio falham mais no fêmur da criança?",
+   "resposta": "45 a 50 kg",
+   "explicacao": "Falham em crianças **acima de 45 a 50 kg**, acima de 11 anos e em fraturas instáveis: preferir placa submuscular ou haste rígida.",
+   "opcoes": [
+    "45 a 50 kg"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "07c8a06c572d",
+   "origem": "autoral",
+   "trecho": "As hastes falham mais em fraturas **instáveis** (cominutivas, oblíquas longas, de comprimento instável), em crianças **pesadas** (acima de 45 a 50 kg) e acima de 11 anos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0647-q",
    "questao": "pediatria-0647",
    "area": "Ortopedia pediátrica",
@@ -15907,6 +17624,92 @@
    "prova": "TARO",
    "ano": 2019,
    "fonte": "07c8a06c572d"
+  },
+  {
+   "id": "fc-pediatria-0648-co1",
+   "questao": "pediatria-0648",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Ossificação e crescimento",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Capítulo, tróclea e epicôndilo lateral formam a epífise distal do úmero e se fundem à metáfise por volta de que idade?",
+   "resposta": "12 a 14 anos",
+   "explicacao": "Fusão aos **12 a 14 anos**; o epicôndilo medial, apófise separada, só funde aos 15 a 17.",
+   "opcoes": [
+    "12 a 14 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "a4c6d374379b",
+   "origem": "autoral",
+   "trecho": "se fundem entre si (formando a epífise distal do úmero) e com a metáfise por volta dos **12 a 14 anos**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0648-co2",
+   "questao": "pediatria-0648",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Ossificação e crescimento",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por volta de que idade o epicôndilo medial, último centro do úmero distal, se funde ao úmero?",
+   "resposta": "15 a 17 anos",
+   "explicacao": "É uma **apófise** separada: funde por volta dos **15 a 17 anos**, enquanto capítulo, tróclea e epicôndilo lateral fundem aos 12 a 14.",
+   "opcoes": [
+    "15 a 17 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "a4c6d374379b",
+   "origem": "autoral",
+   "trecho": "é o **último** a se fundir ao úmero, por volta dos **15 a 17 anos** (às vezes depois).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0648-pc1",
+   "questao": "pediatria-0648",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Ossificação e crescimento",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após a luxação do cotovelo, o epicôndilo medial encarcerado pode ser confundido na radiografia com qual centro?",
+   "resposta": "tróclea",
+   "explicacao": "Centro na posição da **tróclea** antes dos 7 a 9 anos, ou epicôndilo medial fora do lugar: suspeite de **encarceramento**.",
+   "opcoes": [
+    "tróclea",
+    "capítulo",
+    "olécrano"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "a4c6d374379b",
+   "origem": "autoral",
+   "trecho": "Na radiografia, ele pode ser confundido com o centro da **tróclea**.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0648-q",
@@ -15937,6 +17740,90 @@
    "fonte": "a4c6d374379b"
   },
   {
+   "id": "fc-pediatria-0648-tb1",
+   "questao": "pediatria-0648",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Ossificação e crescimento",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na sequência CRITOE, com que idade aparece o centro do epicôndilo medial?",
+   "resposta": "5 a 7 anos",
+   "explicacao": "O epicôndilo medial (**I**nterno) aparece aos **5 a 7 anos**, mas é o último a se fundir.",
+   "opcoes": [
+    "5 a 7 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "a4c6d374379b",
+   "origem": "autoral",
+   "trecho": "| Epicôndilo medial (**I**nterno) | 5 a 7 anos |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0649-co1",
+   "questao": "pediatria-0649",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Luxações na criança",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A partir de que idade a pronação dolorosa deixa de ocorrer, com o crescimento da cabeça do rádio?",
+   "resposta": "5 anos",
+   "explicacao": "Pico entre **1 e 4 anos**; a partir dos **5 anos** a cabeça do rádio cresce e o ligamento anular deixa de escorregar.",
+   "opcoes": [
+    "5 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "e7d2d616ac31",
+   "origem": "autoral",
+   "trecho": "A partir dos 5 anos, com o crescimento da cabeça do rádio, o problema desaparece.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0649-co2",
+   "questao": "pediatria-0649",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Luxações na criança",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na pronação dolorosa, o ligamento anular escorrega e fica interposto entre quais estruturas?",
+   "resposta": "entre a cabeça e o capítulo",
+   "explicacao": "Não há luxação articular: o **ligamento anular** se interpõe **entre a cabeça do rádio e o capítulo**.",
+   "opcoes": [
+    "entre a cabeça e o capítulo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "e7d2d616ac31",
+   "origem": "autoral",
+   "trecho": "fica **interposto** entre a cabeça e o capítulo.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0649-q",
    "questao": "pediatria-0649",
    "area": "Ortopedia pediátrica",
@@ -15963,6 +17850,35 @@
    "prova": "TARO",
    "ano": 2011,
    "fonte": "e7d2d616ac31"
+  },
+  {
+   "id": "fc-pediatria-0649-tb1",
+   "questao": "pediatria-0649",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Luxações na criança",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na pronação dolorosa, qual manobra de redução é a mais eficaz e a menos dolorosa?",
+   "resposta": "Hiperpronação",
+   "explicacao": "**Hiperpronação** com o cotovelo a 90°. A alternativa é **supinação e flexão** com o polegar sobre a cabeça do rádio.",
+   "opcoes": [
+    "Hiperpronação",
+    "Supinação e flexão"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "e7d2d616ac31",
+   "origem": "autoral",
+   "trecho": "| **Hiperpronação** | Com o cotovelo fletido a 90°, prona-se o antebraço além do normal; a mais eficaz e menos dolorosa |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0650-q",
@@ -18207,6 +20123,145 @@
    }
   },
   {
+   "id": "fc-pediatria-0698-cl1",
+   "questao": "pediatria-0698",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Jakob do côndilo lateral, qual estágio tem o fragmento desviado e rodado, fora da articulação?",
+   "resposta": "III",
+   "explicacao": "**Jakob I:** traço incompleto. **II:** desviado sem rotação. **III:** **desviado e rodado**, com redução aberta e fixação.",
+   "opcoes": [
+    "I",
+    "II",
+    "III"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "19b83f959891",
+   "origem": "autoral",
+   "trecho": "| III | **Desviado e rodado**, fora da articulação | **Redução aberta e fixação** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0698-co1",
+   "questao": "pediatria-0698",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Depois da supracondiliana, qual é a segunda fratura mais comum do cotovelo infantil?",
+   "resposta": "côndilo lateral",
+   "explicacao": "A fratura do **côndilo lateral do úmero** tem pico entre **4 e 10 anos** e é intra-articular e fisária.",
+   "opcoes": [
+    "côndilo lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "19b83f959891",
+   "origem": "autoral",
+   "trecho": "**A fratura do côndilo lateral do úmero.** É a **segunda fratura mais comum do cotovelo infantil**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0698-co2",
+   "questao": "pediatria-0698",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução aberta do côndilo lateral, qual face do fragmento não se deve dissecar, para evitar necrose?",
+   "resposta": "posterior",
+   "explicacao": "A irrigação chega pela face **posterior**: dissecá-la causa necrose avascular do fragmento.",
+   "opcoes": [
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "19b83f959891",
+   "origem": "autoral",
+   "trecho": "A dissecção deve evitar a face **posterior** do fragmento, por onde chega a irrigação, para não causar necrose.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0698-co3",
+   "questao": "pediatria-0698",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do côndilo lateral, além da tração dos extensores, o que atrapalha a consolidação do traço?",
+   "resposta": "líquido sinovial",
+   "explicacao": "O traço é intra-articular: o **líquido sinovial** banha a fratura e dificulta o calo, daí o risco de pseudartrose.",
+   "opcoes": [
+    "líquido sinovial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "19b83f959891",
+   "origem": "autoral",
+   "trecho": "Além disso, o **líquido sinovial** banha o traço e atrapalha a consolidação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0698-co4",
+   "questao": "pediatria-0698",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O traço do côndilo lateral começa na metáfise, cruza a fise e entra na articulação. Geralmente é qual Salter-Harris?",
+   "resposta": "IV",
+   "explicacao": "Fratura **intra-articular e fisária**, geralmente **Salter-Harris IV**; na radiografia só se vê o pequeno fragmento metafisário.",
+   "opcoes": [
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "19b83f959891",
+   "origem": "autoral",
+   "trecho": "**entra na articulação** (geralmente um Salter-Harris IV)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0698-q",
    "questao": "pediatria-0698",
    "area": "Ortopedia pediátrica",
@@ -18787,6 +20842,171 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0742-co1",
+   "questao": "pediatria-0742",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na técnica de Bell Tawse para a Monteggia crônica, de onde sai a tira que refaz o ligamento anular?",
+   "resposta": "tira central do tendão do tríceps",
+   "explicacao": "**Bell Tawse:** tira da **porção central do tríceps**, presa à ulna, passada ao redor do colo do rádio.",
+   "opcoes": [
+    "tira central do tendão do tríceps"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "0289f6084f34",
+   "origem": "autoral",
+   "trecho": "> Bell Tawse: tira central do tendão do tríceps passada ao redor do colo do rádio para refazer o ligamento anular.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0742-co2",
+   "questao": "pediatria-0742",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Monteggia crônica da criança, qual osteotomia restaura o comprimento e permite reduzir a cabeça do rádio?",
+   "resposta": "Osteotomia da ulna",
+   "explicacao": "**Osteotomia da ulna** de alongamento e angulação, redução aberta da cabeça e, se preciso, reconstrução do ligamento anular.",
+   "opcoes": [
+    "Osteotomia da ulna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "0289f6084f34",
+   "origem": "autoral",
+   "trecho": "**Osteotomia da ulna** (de alongamento e angulação) para restaurar o comprimento e permitir a redução.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0742-co3",
+   "questao": "pediatria-0742",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual modificação da técnica de Bell Tawse preserva melhor o comprimento e a direção da tira do tríceps?",
+   "resposta": "Lloyd-Roberts e Bucknill",
+   "explicacao": "A modificação de **Lloyd-Roberts e Bucknill** refina a reconstrução do ligamento anular com o tríceps.",
+   "opcoes": [
+    "Lloyd-Roberts e Bucknill"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "0289f6084f34",
+   "origem": "autoral",
+   "trecho": "A modificação de Lloyd-Roberts e Bucknill preserva melhor o comprimento e a direção da tira.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0768-co1",
+   "questao": "pediatria-0768",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Cúbito valgo progressivo após pseudartrose do côndilo lateral causa paralisia ulnar tardia. Quem a descreveu?",
+   "resposta": "Gay e Love",
+   "explicacao": "**Paralisia ulnar tardia de Gay e Love:** o valgo progressivo estira o nervo ulnar anos depois da fratura.",
+   "opcoes": [
+    "Gay e Love"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "1bdecc091b8b",
+   "origem": "autoral",
+   "trecho": "(paralisia ulnar tardia de Gay e Love)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0768-co2",
+   "questao": "pediatria-0768",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Mesmo em fraturas do côndilo lateral bem tratadas, o hipercrescimento lateral costuma gerar qual deformidade?",
+   "resposta": "Cúbito varo leve",
+   "explicacao": "**Cúbito varo leve** com esporão lateral, em geral sem repercussão funcional.",
+   "opcoes": [
+    "Cúbito varo leve"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "1bdecc091b8b",
+   "origem": "autoral",
+   "trecho": "| Hipercrescimento lateral e esporão lateral (mesmo em fraturas bem tratadas) | Cúbito varo leve, em geral sem repercussão funcional |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0768-co3",
+   "questao": "pediatria-0768",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A deformidade do úmero distal em rabo de peixe decorre de necrose ou parada de crescimento de qual estrutura?",
+   "resposta": "tróclea",
+   "explicacao": "A necrose ou parada de crescimento da **tróclea** deixa o sulco central em forma de rabo de peixe.",
+   "opcoes": [
+    "tróclea"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "1bdecc091b8b",
+   "origem": "autoral",
+   "trecho": "| Necrose ou parada de crescimento da tróclea | Deformidade em \"rabo de peixe\" |",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0825-co1",
    "questao": "pediatria-0825",
    "area": "Ortopedia pediátrica",
@@ -18839,6 +21059,87 @@
    "fonte": "879bd0a7c112",
    "origem": "autoral",
    "trecho": "| Parada parcial (barra óssea) | Deformidade angular (varo ou valgo) progressiva |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0831-co1",
+   "questao": "pediatria-0831",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No Monteggia tipo I de Bado, qual músculo puxa a cabeça do rádio luxada para a frente?",
+   "resposta": "bíceps",
+   "explicacao": "Por isso o tipo I é imobilizado em **flexão de 100 a 110°** e supinação: a flexão relaxa o **bíceps**.",
+   "opcoes": [
+    "bíceps"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "c93da264291a",
+   "origem": "autoral",
+   "trecho": "**Tipo I**: a cabeça luxa para a frente, puxada pelo **bíceps**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0831-co2",
+   "questao": "pediatria-0831",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após reduzir um Monteggia tipo I de Bado, em quanto de flexão se imobiliza o cotovelo?",
+   "resposta": "flexão de 100 a 110°",
+   "explicacao": "**Flexão de 100 a 110°** com o antebraço em **supinação**, relaxando a força deformante do bíceps.",
+   "opcoes": [
+    "flexão de 100 a 110°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "c93da264291a",
+   "origem": "autoral",
+   "trecho": "Imobiliza-se com o cotovelo em **flexão de 100 a 110°** e o antebraço em **supinação**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0831-co3",
+   "questao": "pediatria-0831",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A partir de quanto tempo a Monteggia da criança é chamada negligenciada, com reconstrução complexa?",
+   "resposta": "mais de 2 a 3 semanas",
+   "explicacao": "Com **mais de 2 a 3 semanas**, a redução simples da ulna já não basta.",
+   "opcoes": [
+    "mais de 2 a 3 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "c93da264291a",
+   "origem": "autoral",
+   "trecho": "Monteggia **negligenciada** (com mais de 2 a 3 semanas) exige reconstrução complexa.",
    "criadoEm": "2026-10-15"
   },
   {
@@ -20015,6 +22316,91 @@
    "prova": "TEPOP",
    "ano": 2024,
    "fonte": "6168a4e69a32"
+  },
+  {
+   "id": "fc-pediatria-0942-cl1",
+   "questao": "pediatria-0942",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Song do côndilo lateral, qual tipo tem desvio maior que 2 mm com rotação do fragmento?",
+   "resposta": "5",
+   "explicacao": "**Song 4:** mais de 2 mm, **sem** rotação. **Song 5:** mais de 2 mm, **com** rotação, que costuma levar à via aberta.",
+   "opcoes": [
+    "3",
+    "4",
+    "5"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "2380c05a221d",
+   "origem": "autoral",
+   "trecho": "| 5 | Desvio maior que 2 mm, com rotação |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0942-cl2",
+   "questao": "pediatria-0942",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Song do côndilo lateral, qual tipo tem traço estável, restrito à metáfise?",
+   "resposta": "1",
+   "explicacao": "**Song 1:** traço estável, metafisário. **2:** estabilidade incerta. **3:** pequeno desvio, mas intra-articular instável.",
+   "opcoes": [
+    "1",
+    "2",
+    "3"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "2380c05a221d",
+   "origem": "autoral",
+   "trecho": "| 1 | Traço estável, restrito à metáfise, com pequeno desvio |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0942-cl3",
+   "questao": "pediatria-0942",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Song, o tipo 3 do côndilo lateral tem pequeno desvio, mas que padrão de traço?",
+   "resposta": "intra-articular instável",
+   "explicacao": "**Song 3:** desvio pequeno, porém traço **intra-articular instável**; a palavra instável sozinha não define o tipo.",
+   "opcoes": [
+    "intra-articular instável"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "2380c05a221d",
+   "origem": "autoral",
+   "trecho": "| 3 | Pequeno desvio, mas padrão intra-articular instável |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0942-q",
