@@ -56,7 +56,7 @@ vencendo, 9 dias seguidos, 420 questões respondidas. Tamanhos: 1400×860, 390×
   computador. Na proposta, a arte só aparece em miniatura nos atalhos (52 e 64 KB) e, para o
   visitante, abaixo da dobra com `loading="lazy"`.
 - O "Onde mais erra" e o plano de revisão de 7 dias não são calculados para o visitante.
-- Nenhuma imagem, fonte ou biblioteca nova. O CSS novo tem cerca de 20 KB sem compressão.
+- Nenhuma imagem, fonte ou biblioteca nova. O CSS novo tem cerca de 25 KB sem compressão (carregado só com a página inicial).
 
 ---
 
