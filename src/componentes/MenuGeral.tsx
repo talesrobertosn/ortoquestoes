@@ -12,6 +12,7 @@ import { Icone, type NomeIcone } from './Icone'
 import { JanelaCentral, usarTelaLarga } from './JanelaCentral'
 import { Painel } from './Painel'
 import { SeloAssinante } from './Premium'
+import { A_PARTIR_DE } from '../dados/planos'
 
 interface Item {
   destino: string
@@ -82,7 +83,7 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
       : []),
     premium
       ? { destino: '/conta/assinatura', rotulo: 'Minha assinatura', texto: 'Plano, renovação e pagamentos', icone: 'medalha' }
-      : { destino: '/assinatura', rotulo: 'Planos e assinatura', texto: 'Pix ou cartão, a partir de R$ 19,99/mês', icone: 'medalha' },
+      : { destino: '/assinatura', rotulo: 'Planos e assinatura', texto: `Pix ou cartão, a partir de ${A_PARTIR_DE}/mês`, icone: 'medalha' },
     { destino: '/contato', rotulo: 'Suporte e contato', texto: 'Dúvida, sugestão ou problema', icone: 'interrogacao' },
     { destino: '/sobre', rotulo: 'O projeto', texto: 'Quem faz e como os comentários são feitos', icone: 'bandeira' },
     ...(administrador ? [{ destino: '/admin', rotulo: 'Painel do administrador', texto: 'Usuários, avaliações e pagamentos', icone: 'cadeado' as const }] : []),
@@ -99,7 +100,7 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
       {!premium && (
         <a className="mn-planos" href={href('/assinatura')} onClick={aoFechar}>
           <IconePixel nome="planos" tamanho={48} />
-          <span><strong>Planos e assinatura</strong><small>Cronograma, Simulado Nacional e mais · a partir de R$ 19,99/mês · Pix ou cartão</small></span>
+          <span><strong>Planos e assinatura</strong><small>Cronograma, Simulado Nacional e mais · a partir de {A_PARTIR_DE}/mês · Pix ou cartão</small></span>
           <span className="mn-planos__acao">Ver planos <Icone nome="direita" tamanho={14} /></span>
         </a>
       )}

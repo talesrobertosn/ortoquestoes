@@ -67,8 +67,38 @@ export const FLASHCARDS_NA_VENDA = import.meta.env?.VITE_FLASHCARDS_VENDA === '1
  */
 export const LIMITE_GRATIS_ATUAL = 20
 
-/** Frase curta para convites: o que o gratuito dá e que os planos tiram o limite. */
-export const FRASE_GRATIS = 'A conta é grátis e libera um número limitado de questões a cada 24 horas. Para estudar sem limite, há os planos.'
+/**
+ * O que o gratuito dá, num lugar só. Com o limite diário desligado
+ * (VITE_LIMITES_HABILITADOS), nenhum texto do site promete ou avisa limite:
+ * antes, oito componentes falavam em limite mesmo com ele desligado, enquanto
+ * a página de planos dizia "sem limite nesta fase".
+ */
+const LIMITE_LIGADO = import.meta.env?.VITE_LIMITES_HABILITADOS === 'true'
+export const TEXTO_GRATIS = LIMITE_LIGADO ? {
+  /** Convites e portões de conta. */
+  frase: 'A conta é grátis e libera um número limitado de questões a cada 24 horas. Para estudar sem limite, há os planos.',
+  /** Entre parênteses, no meio de uma frase. */
+  curto: 'com um número limitado de questões a cada 24 horas',
+  /** Rodapé da tela de entrar. */
+  rodape: 'No gratuito, um número limitado de questões a cada 24 horas; sem limite, nos planos.',
+  /** Mensagem de indicação (WhatsApp). */
+  convite: 'A conta é grátis e libera um número limitado de questões a cada 24 horas; os planos liberam sem limite.',
+  /** Aviso para visitante no Treinar. */
+  treinar: 'No gratuito, você responde um número limitado de questões a cada 24 horas; os planos liberam sem limite.',
+  /** Complemento de "A conta é grátis" no portão de conta. */
+  exige: 'e libera um número limitado de questões a cada 24 horas.',
+  exigePlanos: 'Para estudar sem limite,',
+} : {
+  frase: 'A conta é grátis e, nesta fase, sem limite diário de questões. Os planos trazem o cronograma e o Simulado Nacional.',
+  curto: 'sem limite diário nesta fase',
+  rodape: 'Nesta fase, o gratuito está sem limite diário de questões.',
+  convite: 'A conta é grátis e, nesta fase, sem limite diário de questões.',
+  treinar: 'Nesta fase, o gratuito está sem limite diário de questões.',
+  exige: 'e, nesta fase, sem limite diário de questões.',
+  exigePlanos: 'Para o cronograma e o Simulado Nacional,',
+}
+/** Frase curta para convites: o que o gratuito dá e o que os planos acrescentam. */
+export const FRASE_GRATIS = TEXTO_GRATIS.frase
 
 /** Prefixo de todas as chaves gravadas no localStorage. */
 export const PREFIXO_ARMAZENAMENTO = 'ortoquestoes:'

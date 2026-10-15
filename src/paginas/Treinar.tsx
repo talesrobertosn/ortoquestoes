@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { FLASHCARDS_NO_MENU } from '../config'
+import { FLASHCARDS_NO_MENU, TEXTO_GRATIS } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
@@ -308,7 +308,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         ))}
       </nav>
 
-      {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. No gratuito, você responde um número limitado de questões a cada 24 horas; os planos liberam sem limite. <a href={href('/conta')}>Criar minha conta</a></p>}
+      {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. {TEXTO_GRATIS.treinar} <a href={href('/conta')}>Criar minha conta</a></p>}
 
       <section className="tr-etapa" id="etapa-1">
         <header className="tr-etapa__cabeca">

@@ -10,7 +10,7 @@ import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { eventoMeta } from '../conta/consentimento'
 import { href } from '../util/rotas'
 import { FLASHCARDS_NA_VENDA, recurso, LIMITE_GRATIS_ATUAL, ROTULO_SIMULADOS } from '../config'
-import { MENSAL, PLANOS, real } from '../dados/planos'
+import { MENSAL, PLANOS, real, ECONOMIA_ANUAL } from '../dados/planos'
 import { AREAS, BASE_CONTAGEM } from '../dados/incidencia'
 import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia } from '../estado/limiteDiario'
@@ -288,7 +288,7 @@ export function Assinatura() {
             const desconto = Math.round((1 - porMes(p) / MENSAL) * 100)
             return (
               <article key={p.id} className={'vd-plano' + (p.destaque ? ' vd-plano--destaque' : '')}>
-                {p.destaque && <span className="vd-plano__fita">Melhor custo-benefício · metade do preço</span>}
+                {p.destaque && <span className="vd-plano__fita">Melhor custo-benefício · {ECONOMIA_ANUAL}</span>}
                 <header className="vd-plano__topo">
                   <h3>{p.nome}</h3>
                   {desconto > 0 && <span className="vd-plano__desconto">-{desconto}%</span>}
@@ -328,7 +328,7 @@ export function Assinatura() {
       <section className="vd-secao vd-faq" aria-labelledby="vd-titulo-faq">
         <header className="vd-cabeca"><p className="vd-sobre">Dúvidas</p><h2 id="vd-titulo-faq">Perguntas frequentes</h2></header>
         <div className="vd-faq__lista">
-          <details><summary>Quanto custa, de verdade?</summary><p>Mensal: {real(PLANO_MENSAL.total)} por mês. Semestral: {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). Anual: {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês e {centavos(porDia(PLANO_ANUAL))} por dia. Não há taxa de adesão nem cobrança escondida; os três planos liberam exatamente os mesmos recursos. Se a prova está a mais de seis meses, o anual sai pela metade do preço do mensal.</p></details>
+          <details><summary>Quanto custa, de verdade?</summary><p>Mensal: {real(PLANO_MENSAL.total)} por mês. Semestral: {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). Anual: {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês e {centavos(porDia(PLANO_ANUAL))} por dia. Não há taxa de adesão nem cobrança escondida; os três planos liberam exatamente os mesmos recursos. Se a prova está a mais de seis meses, o anual sai {ECONOMIA_ANUAL === 'metade do preço' ? 'pela metade do preço do mensal' : `${ECONOMIA_ANUAL} que o mensal`}.</p></details>
           <details><summary>Como funciona a garantia de 7 dias?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pede o reembolso integral pelo botão em Minha conta, sem precisar falar com ninguém nem justificar. Se o Mercado Pago não confirmar a solicitação automática, use o canal de contato do site para atendimento manual. O acesso pago só é encerrado depois que o reembolso é confirmado.</p></details>
           <details><summary>Pix ou cartão: qual a diferença?</summary><p>No Pix você paga o período inteiro de uma vez e o acesso é liberado assim que o Mercado Pago confirma; ele não renova sozinho, e a partir de 7 dias antes do fim a página libera a renovação sem perder os dias que faltam (avisamos por e-mail 3 dias antes). O CPF é pedido só para gerar o Pix e não fica salvo. No cartão, a renovação é automática na periodicidade escolhida e você desliga quando quiser; o Orto Questões não recebe os dados do cartão.</p></details>
           <details><summary>Preciso falar com alguém para cancelar? E o meu histórico?</summary><p>Não. Desligar a renovação e pedir o reembolso dentro da garantia são botões em Minha conta. Depois dos 7 dias, não há devolução proporcional automática: você mantém o acesso até o fim do período pago e a assinatura não renova (seus direitos previstos em lei continuam preservados; veja as <a href={href('/condicoes-assinatura')}>condições da assinatura</a>). Respostas, revisões, anotações e desempenho nunca são apagados.</p></details>

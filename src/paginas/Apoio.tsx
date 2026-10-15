@@ -6,7 +6,7 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { Icone } from '../componentes/Icone'
 import { useMemo, useState } from 'react'
-import { SITE } from '../config'
+import { SITE, TEXTO_GRATIS } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
@@ -429,7 +429,7 @@ export function DadosLocais() {
         </div>
       </section>
 
-      {!conta && <p className="aviso-ia">Crie uma conta gratuita (com um número limitado de questões a cada 24 horas) para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
+      {!conta && <p className="aviso-ia">Crie uma conta gratuita ({TEXTO_GRATIS.curto}) para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
       {conta && !armazenamentoDisponivel() && (
         <div className="estado">
           <p className="estado__titulo">Este navegador está com o armazenamento bloqueado.</p>
