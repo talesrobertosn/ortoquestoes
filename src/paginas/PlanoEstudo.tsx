@@ -369,9 +369,15 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   const corHoje = corDaArea(principal?.slug ?? calculo.dias.find((d) => d.itens.length)?.itens[0]?.slug)
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
-    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: 4, estado: feitos.resumao ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`), aoClicar: () => hub?.aoMarcar('resumao') } : undefined })
+    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: feitos.resumao ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`), aoClicar: () => hub?.aoMarcar('resumao') } : undefined })
     const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
-    if (calculo.metaDiaria > 0) lista.push({
+    // A vitrine mostra o jeito do dia, sem os números (orientação de 14/10): quantas e quanto tempo é do assinante.
+    if (calculo.metaDiaria > 0 && !aberto) lista.push({
+      id: 'novas', titulo: 'Questões novas',
+      texto: <>{principal ? <>{principal.nome}{mistura.length ? <>, com {mistura.map((m) => m.nome).join(' e ')} para misturar</> : null}</> : 'Do cronograma'}{incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados no meio' : ''}.</>,
+      minutos: null, estado: 'afazer',
+    })
+    else if (calculo.metaDiaria > 0) lista.push({
       id: 'novas', titulo: `${calculo.metaDiaria} questões novas`,
       texto: <>{principal && !metaFeita ? <>{mistura.length ? (calculo.adiantarFalta > 0 ? <>{principal.nome}, com {mistura.map((m) => m.nome).join(' e ')} para misturar</> : <>{principal.n} de {principal.nome} e {mistura.reduce((s, m) => s + m.n, 0)} de {mistura.map((m) => m.nome).join(' e ')} para misturar</>) : principal.nome}</> : 'Do cronograma'}{incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados no meio' : ''}. {calculo.feitasHoje > 0 ? `${Math.min(calculo.feitasHoje, calculo.metaDiaria)} de ${calculo.metaDiaria} feitas.` : ''}{jaAdiantado}</>,
       minutos: calculo.metaDiaria * minutos, estado: metaFeita ? 'feito' : calculo.feitasHoje > 0 || pendente ? 'agora' : 'afazer',
@@ -379,13 +385,13 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
     })
     else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `As ${calculo.adiantadoHoje} questões de hoje você fez antes. Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
     const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
-    if (adiantando > 0) lista.push({
+    if (adiantando > 0 && aberto) lista.push({
       id: 'adiantadas', titulo: `+${adiantando} adiantadas`,
       texto: calculo.adiantarFalta > 0 ? `Pedidas para adiantar: ${Math.min(calculo.extraHoje, adiantando)} de ${adiantando} feitas.` : 'Feitas além da meta. Saem dos próximos dias.',
       minutos: calculo.adiantarFalta > 0 ? adiantando * minutos : null, estado: calculo.adiantarFalta > 0 ? (calculo.extraHoje > 0 ? 'agora' : 'afazer') : 'feito',
       progresso: calculo.adiantarFalta > 0 ? { feitas: Math.min(calculo.extraHoje, adiantando), total: adiantando } : undefined,
     })
-    if (calculo.miniHoje) lista.push({ id: 'mini', titulo: `Mini-simulado de ${TAMANHO_MINI} questões`, texto: 'Cronometrado, com o que você já viu nas últimas semanas, misturado como na prova. Os seus erros e dúvidas vêm primeiro.', minutos: TAMANHO_MINI * 1.5, estado: feitos.mini ? 'feito' : 'afazer', acao: aberto && hub ? { rotulo: 'Começar', aoClicar: hub.aoMini } : undefined })
+    if (calculo.miniHoje) lista.push({ id: 'mini', titulo: aberto ? `Mini-simulado de ${TAMANHO_MINI} questões` : 'Mini-simulado', texto: 'Cronometrado, com o que você já viu nas últimas semanas, misturado como na prova. Os seus erros e dúvidas vêm primeiro.', minutos: aberto ? TAMANHO_MINI * 1.5 : null, estado: feitos.mini ? 'feito' : 'afazer', acao: aberto && hub ? { rotulo: 'Começar', aoClicar: hub.aoMini } : undefined })
   }
   if (hub && !calculo.provaPassou && !calculo.naRetaFinal) {
     // Revisões e flashcards ajudam a fixar, mas não são obrigatórios: ficam à parte, sem contar na meta.
@@ -407,8 +413,9 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   const podeAdiantar = aberto && !!aoAdiantar && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
   const painelAdiantar = podeAdiantar && hub ? <PainelAdiantar calculo={calculo} minutos={minutos} destaque={!botao} salvando={hub.salvandoOpcoes} aoAdiantar={aoAdiantar!} aoCancelar={hub.aoCancelarAdiantar} /> : null
 
-  const tituloHoje = calculo.provaPassou ? 'A prova chegou' : folgaHoje ? 'Hoje é folga' : calculo.restante === 0 && !calculo.naRetaFinal ? 'Você cumpriu o cronograma inteiro' : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Hoje já está adiantado' : metaFeita && !calculo.miniHoje ? 'Meta de hoje feita' : principal ? principal.nome : calculo.miniHoje ? 'Dia de mini-simulado' : 'Hoje'
+  const tituloHoje = calculo.provaPassou ? 'A prova chegou' : folgaHoje ? 'Hoje é folga' : !aberto && principal ? principal.nome : calculo.restante === 0 && !calculo.naRetaFinal ? 'Você cumpriu o cronograma inteiro' : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Hoje já está adiantado' : metaFeita && !calculo.miniHoje ? 'Meta de hoje feita' : principal ? principal.nome : calculo.miniHoje ? 'Dia de mini-simulado' : 'Hoje'
   const porQue = folgaHoje ? 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias. Se quiser, adiante o próximo dia de estudo.'
+    : !aberto ? (principal ? porQueHoje(calculo, principal.slug, plano.prova, true) : '')
     : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Você fez as questões de hoje num dia anterior. Pode descansar ou adiantar mais.'
     : metaFeita ? `Feito: ${calculo.metaDiaria} questões. Revisões e flashcards são extras, se sobrar tempo.`
     : calculo.tipoHoje === 'leve' ? `Dia leve (plantão): só ${calculo.metaDiaria} questões. ${principal ? porQueHoje(calculo, principal.slug, plano.prova).replace('Por que hoje: ', 'A área: ') : ''}`
@@ -454,7 +461,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
                 <li>Ajuste automático quando atrasa ou adianta</li>
                 <li>Semana difícil, mini-simulados e reta final</li>
                 <li>Desempenho, prontidão e mapa de risco por área</li>
-              </ul>} acao="Criar meu cronograma">
+              </ul>} acao={null}>
                 <Depois calculo={calculo} plano={plano} maximo={3} semMais />
               </Degustacao>
             </div>}</div>}
