@@ -6,6 +6,7 @@ import { rotaDe, usarRota, type Rota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
+import { AvisoArmazenamento } from './componentes/AvisoArmazenamento'
 import { EXIGIR_CONTA_PARA_QUESTOES, FLASHCARDS_LIBERADO, SITE } from './config'
 import { usarConta } from './conta/ContextoConta'
 import { contasDisponiveis } from './conta/supabase'
@@ -263,6 +264,7 @@ export function App() {
       </a>
       <Cabecalho caminho={fundo.caminho} />
       {primeiroFundo !== 'sessao' && <AvisoSite />}
+      <AvisoArmazenamento />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           <ErroDePagina caminho={rota.caminho}>
