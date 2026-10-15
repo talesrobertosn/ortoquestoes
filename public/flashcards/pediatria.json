@@ -11063,6 +11063,63 @@
    "fonte": "32c9a4e35ef5"
   },
   {
+   "id": "fc-pediatria-0521-co1",
+   "questao": "pediatria-0521",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual complicação neurológica aparece anos depois de uma fratura do côndilo lateral que evolui com cúbito valgo?",
+   "resposta": "paralisia tardia do nervo ulnar",
+   "explicacao": "**Paralisia tardia do nervo ulnar**, pelo estiramento no **cúbito valgo** progressivo.",
+   "opcoes": [
+    "paralisia tardia do nervo ulnar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "4d7e196f1437",
+   "origem": "autoral",
+   "trecho": "**paralisia tardia do nervo ulnar** (anos depois, pelo estiramento no valgo)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0521-pc1",
+   "questao": "pediatria-0521",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ângulo de carregamento mais valgo favorece a fratura do côndilo lateral. Ângulo mais varo com hiperextensão favorece qual fratura?",
+   "resposta": "supracondiliana",
+   "explicacao": "**Varo e hiperextensão:** supracondiliana. **Valgo:** côndilo lateral.",
+   "opcoes": [
+    "supracondiliana",
+    "côndilo lateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "4d7e196f1437",
+   "origem": "autoral",
+   "trecho": "Já um ângulo mais **varo** e a hiperextensão do cotovelo favorecem a supracondiliana.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0521-q",
    "questao": "pediatria-0521",
    "area": "Ortopedia pediátrica",
@@ -11089,6 +11146,64 @@
    "prova": "TARO",
    "ano": 2026,
    "fonte": "4d7e196f1437"
+  },
+  {
+   "id": "fc-pediatria-0521-tb1",
+   "questao": "pediatria-0521",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura do côndilo lateral do úmero na criança com desvio menor que 2 mm: qual é a conduta?",
+   "resposta": "Gesso, com radiografias semanais",
+   "explicacao": "**Menos de 2 mm:** gesso com **radiografias semanais**, porque pode desviar. 2 a 4 mm congruente: fios percutâneos. Mais de 4 mm: aberta.",
+   "opcoes": [
+    "Gesso, com radiografias semanais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "4d7e196f1437",
+   "origem": "autoral",
+   "trecho": "| **Menor que 2 mm** | Gesso, com radiografias semanais (pode desviar) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0521-tb2",
+   "questao": "pediatria-0521",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura do côndilo lateral com desvio maior que 4 mm ou articulação incongruente: qual é o tratamento?",
+   "resposta": "Redução aberta",
+   "explicacao": "**Mais de 4 mm** ou incongruência: **redução aberta** e fixação.",
+   "opcoes": [
+    "Gesso, com radiografias semanais",
+    "Redução fechada e fios percutâneos",
+    "Redução aberta"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "4d7e196f1437",
+   "origem": "autoral",
+   "trecho": "| **Maior que 4 mm** ou articulação incongruente | **Redução aberta** e fixação |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0523-q",
@@ -12276,6 +12391,148 @@
    "prova": "TEOT",
    "ano": 2024,
    "fonte": "f361255ab8db"
+  },
+  {
+   "id": "fc-pediatria-0564-cl1",
+   "questao": "pediatria-0564",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de O'Brien da fratura do colo do rádio na criança, até quanto de angulação é tipo I?",
+   "resposta": "Até 30°",
+   "explicacao": "**O'Brien I:** até **30°**, imobilização curta. II: 30° a 60°. III: mais de 60°.",
+   "opcoes": [
+    "Até 30°",
+    "30° a 60°",
+    "Mais de 60°"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "b3fff1b51056",
+   "origem": "autoral",
+   "trecho": "| I | Até **30°** | Imobilização curta e mobilização precoce |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0564-cl2",
+   "questao": "pediatria-0564",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura do colo do rádio na criança com angulação entre 30° e 60° (O'Brien II): qual é a conduta?",
+   "resposta": "Redução fechada ou percutânea",
+   "explicacao": "**O'Brien II:** **redução fechada ou percutânea**. III: percutânea ou intramedular (Metaizeau).",
+   "opcoes": [
+    "Redução fechada ou percutânea"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "b3fff1b51056",
+   "origem": "autoral",
+   "trecho": "| II | 30° a 60° | **Redução** fechada ou percutânea |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0564-co1",
+   "questao": "pediatria-0564",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual técnica de redução com haste intramedular é usada na fratura do colo do rádio da criança?",
+   "resposta": "Metaizeau",
+   "explicacao": "**Metaizeau:** redução intramedular, que evita a redução aberta.",
+   "opcoes": [
+    "Metaizeau"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "b3fff1b51056",
+   "origem": "autoral",
+   "trecho": "(técnica de **Metaizeau**, com haste intramedular)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0564-co2",
+   "questao": "pediatria-0564",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a pior sequela funcional da fratura do colo do rádio na criança, com bloqueio total da rotação?",
+   "resposta": "Sinostose radioulnar proximal",
+   "explicacao": "**Sinostose radioulnar proximal**, ligada à redução aberta e ao trauma de alta energia.",
+   "opcoes": [
+    "Sinostose radioulnar proximal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "b3fff1b51056",
+   "origem": "autoral",
+   "trecho": "- **Sinostose radioulnar proximal**: a pior sequela funcional, com bloqueio total da rotação; ligada à redução aberta e ao trauma de alta energia.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0564-co3",
+   "questao": "pediatria-0564",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a alteração radiográfica mais comum após a fratura do colo do rádio na criança?",
+   "resposta": "Cabeça hipertrofiada",
+   "explicacao": "**Cabeça hipertrofiada** ou deformada, incongruente com o capítulo e a ulna.",
+   "opcoes": [
+    "Cabeça hipertrofiada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "b3fff1b51056",
+   "origem": "autoral",
+   "trecho": "- **Cabeça hipertrofiada** ou deformada (a mais comum das alterações radiográficas)",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0564-q",
@@ -13871,6 +14128,62 @@
    "fonte": "01531e17e780"
   },
   {
+   "id": "fc-pediatria-0610-co1",
+   "questao": "pediatria-0610",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que até a fratura pouco desviada do côndilo lateral exige radiografias semanais?",
+   "resposta": "desvia com o tempo",
+   "explicacao": "A tração dos extensores faz a fratura **desviar com o tempo** e tender à **pseudartrose**.",
+   "opcoes": [
+    "desvia com o tempo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "a456c6a22980",
+   "origem": "autoral",
+   "trecho": "Essa tração explica por que a fratura **desvia com o tempo** e tende à **pseudartrose**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0610-co2",
+   "questao": "pediatria-0610",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além da massa extensora do antebraço, qual ligamento se origina no côndilo lateral do úmero?",
+   "resposta": "ligamento colateral lateral",
+   "explicacao": "O côndilo lateral é origem dos **extensores** e do **ligamento colateral lateral**.",
+   "opcoes": [
+    "ligamento colateral lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "a456c6a22980",
+   "origem": "autoral",
+   "trecho": "O côndilo lateral é a origem da massa **extensora** do antebraço (extensores radiais longo e curto do carpo, extensor comum dos dedos, extensor ulnar do carpo, supinador) e do **ligamento colateral lateral**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0610-q",
    "questao": "pediatria-0610",
    "area": "Ortopedia pediátrica",
@@ -15263,6 +15576,117 @@
    "fonte": "af690f5df11f"
   },
   {
+   "id": "fc-pediatria-0640-cl1",
+   "questao": "pediatria-0640",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual angulação define o tipo III de O'Brien da fratura do colo do rádio na criança?",
+   "resposta": "Mais de 60°",
+   "explicacao": "**O'Brien III:** **mais de 60°**; redução percutânea ou intramedular, aberta se falhar.",
+   "opcoes": [
+    "Até 30°",
+    "30° a 60°",
+    "Mais de 60°"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "7b5f6644f38b",
+   "origem": "autoral",
+   "trecho": "| III | Mais de **60°** | Redução percutânea ou intramedular (Metaizeau); aberta se falhar |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0640-co1",
+   "questao": "pediatria-0640",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do colo do rádio da criança, a necrose da cabeça é mais comum depois de qual tipo de redução?",
+   "resposta": "aberta",
+   "explicacao": "**Necrose** da cabeça: mais comum depois de redução **aberta**, o maior fator de mau resultado.",
+   "opcoes": [
+    "aberta",
+    "fechada"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "7b5f6644f38b",
+   "origem": "autoral",
+   "trecho": "- **Necrose da cabeça**: mais comum depois de redução **aberta**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0640-co2",
+   "questao": "pediatria-0640",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o pico de idade da fratura do colo do rádio na criança?",
+   "resposta": "entre 9 e 10 anos",
+   "explicacao": "Pico **entre 9 e 10 anos**; queda com o cotovelo estendido em valgo.",
+   "opcoes": [
+    "entre 9 e 10 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "7b5f6644f38b",
+   "origem": "autoral",
+   "trecho": "O pico é entre **9 e 10 anos**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0640-co3",
+   "questao": "pediatria-0640",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do colo do rádio por valgo, qual avulsão do lado medial em tensão deve ser procurada?",
+   "resposta": "epicôndilo medial",
+   "explicacao": "Mesmo mecanismo: avulsão do **epicôndilo medial**, fratura do olécrano em galho verde e lesão do colateral medial.",
+   "opcoes": [
+    "epicôndilo medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "7b5f6644f38b",
+   "origem": "autoral",
+   "trecho": "avulsão do **epicôndilo medial** (o lado medial em tensão)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0640-q",
    "questao": "pediatria-0640",
    "area": "Ortopedia pediátrica",
@@ -15651,6 +16075,149 @@
    "fonte": "76b1e3ba0478"
   },
   {
+   "id": "fc-pediatria-0655-cl1",
+   "questao": "pediatria-0655",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Milch, o traço do tipo I entra na articulação de que lado do sulco capitulotroclear?",
+   "resposta": "Lateral",
+   "explicacao": "**Milch I:** lateral ao sulco, pelo núcleo do capítulo: Salter-Harris **IV**, cotovelo estável. **Milch II:** medial, na tróclea.",
+   "opcoes": [
+    "Lateral",
+    "Medial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "f981a4cb2014",
+   "origem": "autoral",
+   "trecho": "| **I** | **Lateral** ao sulco, atravessando o **núcleo de ossificação do capítulo** | **IV**; cotovelo **estável** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0655-cl2",
+   "questao": "pediatria-0655",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O Milch II do côndilo lateral, com traço medial ao sulco entrando na tróclea, foi equiparado a qual Salter-Harris?",
+   "resposta": "II",
+   "explicacao": "**Milch II:** Salter-Harris **II**, cotovelo **instável**. Milch I: Salter-Harris IV.",
+   "opcoes": [
+    "II",
+    "IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "f981a4cb2014",
+   "origem": "autoral",
+   "trecho": "| II | **Medial** ao sulco, entrando na **tróclea** | **II**; cotovelo **instável** (pode subluxar) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0655-cl3",
+   "questao": "pediatria-0655",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura do côndilo lateral Milch II, como fica a estabilidade do cotovelo?",
+   "resposta": "instável",
+   "explicacao": "**Milch II:** cotovelo **instável**, pode subluxar. **Milch I:** estável.",
+   "opcoes": [
+    "estável",
+    "instável"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "f981a4cb2014",
+   "origem": "autoral",
+   "trecho": "| II | **Medial** ao sulco, entrando na **tróclea** | **II**; cotovelo **instável** (pode subluxar) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0655-co1",
+   "questao": "pediatria-0655",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual incidência radiográfica do cotovelo mostra melhor o desvio da fratura do côndilo lateral?",
+   "resposta": "oblíqua interna",
+   "explicacao": "A **oblíqua interna**: o desvio costuma ser maior na face posterolateral.",
+   "opcoes": [
+    "oblíqua interna"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "f981a4cb2014",
+   "origem": "autoral",
+   "trecho": "A incidência **oblíqua interna** mostra melhor o desvio, que costuma ser maior na face posterolateral.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0655-co2",
+   "questao": "pediatria-0655",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a deformidade do úmero distal, com nome de peixe, que pode seguir a fratura do côndilo lateral?",
+   "resposta": "rabo de peixe",
+   "explicacao": "Deformidade em **rabo de peixe** (fishtail) do úmero distal.",
+   "opcoes": [
+    "rabo de peixe"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "f981a4cb2014",
+   "origem": "autoral",
+   "trecho": "- Deformidade em **rabo de peixe** (fishtail) no úmero distal.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0655-q",
    "questao": "pediatria-0655",
    "area": "Ortopedia pediátrica",
@@ -15734,6 +16301,148 @@
    "fonte": "3f791ae0eb7a"
   },
   {
+   "id": "fc-pediatria-0658-cl1",
+   "questao": "pediatria-0658",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Gartland da fratura supracondiliana, o que permanece íntegro no tipo II?",
+   "resposta": "cortical posterior",
+   "explicacao": "**Gartland II:** desvio com a **cortical posterior** íntegra (dobradiça). III: desvio completo.",
+   "opcoes": [
+    "cortical posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "7e1b408acc8d",
+   "origem": "autoral",
+   "trecho": "| II | Desvio com a **cortical posterior** íntegra (dobradiça) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0658-cl2",
+   "questao": "pediatria-0658",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Gartland modificada, o que define o tipo IV da fratura supracondiliana?",
+   "resposta": "Instabilidade multidirecional",
+   "explicacao": "**Gartland IV:** **instabilidade multidirecional** (periósteo rompido), definida na redução.",
+   "opcoes": [
+    "Instabilidade multidirecional"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "7e1b408acc8d",
+   "origem": "autoral",
+   "trecho": "| IV | Instabilidade multidirecional (periósteo rompido), definida na redução |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0658-co1",
+   "questao": "pediatria-0658",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo é o mais lesado, no geral, na fratura supracondiliana do úmero da criança?",
+   "resposta": "interósseo anterior",
+   "explicacao": "O **interósseo anterior** (ramo do mediano). O **ulnar** é lesado no tipo em flexão e no fio medial.",
+   "opcoes": [
+    "interósseo anterior",
+    "nervo radial",
+    "ulnar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "7e1b408acc8d",
+   "origem": "autoral",
+   "trecho": "O nervo **mais lesado no geral** é o **interósseo anterior** (ramo do mediano).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0658-co2",
+   "questao": "pediatria-0658",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a complicação mais comum a longo prazo da fratura supracondiliana do úmero na criança?",
+   "resposta": "cúbito varo",
+   "explicacao": "**Cúbito varo** (coronha de espingarda), por redução com rotação e varo residual.",
+   "opcoes": [
+    "cúbito varo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "7e1b408acc8d",
+   "origem": "autoral",
+   "trecho": "A complicação mais comum a longo prazo é o **cúbito varo**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0658-co3",
+   "questao": "pediatria-0658",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No cotovelo flutuante da criança (supracondiliana e fratura do antebraço), qual complicação tem risco maior?",
+   "resposta": "síndrome compartimental",
+   "explicacao": "Maior risco de **síndrome compartimental**; conduta: fixar as duas fraturas e evitar gesso circular apertado.",
+   "opcoes": [
+    "síndrome compartimental"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "7e1b408acc8d",
+   "origem": "autoral",
+   "trecho": "O cotovelo flutuante tem **maior risco de síndrome compartimental** do antebraço",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0658-q",
    "questao": "pediatria-0658",
    "area": "Ortopedia pediátrica",
@@ -15760,6 +16469,149 @@
    "prova": "TARO",
    "ano": 2012,
    "fonte": "7e1b408acc8d"
+  },
+  {
+   "id": "fc-pediatria-0658-tb1",
+   "questao": "pediatria-0658",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na supracondiliana com desvio posteromedial do fragmento distal, qual nervo está em risco?",
+   "resposta": "nervo radial",
+   "explicacao": "**Posteromedial:** o fragmento proximal vai para lateral e ameaça o **radial**. **Posterolateral:** artéria braquial e mediano.",
+   "opcoes": [
+    "nervo radial",
+    "artéria braquial e nervo mediano"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "7e1b408acc8d",
+   "origem": "autoral",
+   "trecho": "| **Posteromedial** | O fragmento proximal empurra para **lateral**: **nervo radial** |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0658-tb2",
+   "questao": "pediatria-0658",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na supracondiliana com desvio posterolateral do fragmento distal, quais estruturas estão em risco?",
+   "resposta": "artéria braquial e nervo mediano",
+   "explicacao": "**Posterolateral:** o fragmento proximal vai para medial: **artéria braquial e nervo mediano** (interósseo anterior).",
+   "opcoes": [
+    "nervo radial",
+    "artéria braquial e nervo mediano"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "7e1b408acc8d",
+   "origem": "autoral",
+   "trecho": "| **Posterolateral** | O fragmento proximal empurra para **medial**: **artéria braquial** e **nervo mediano** (interósseo anterior) |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0659-cl1",
+   "questao": "pediatria-0659",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na criança, qual é a frequência aproximada do Monteggia tipo I de Bado?",
+   "resposta": "cerca de 70%",
+   "explicacao": "**Bado I** (luxação anterior, ulna com ápice anterior): **cerca de 70%** na criança.",
+   "opcoes": [
+    "cerca de 70%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "463a1d37dbe4",
+   "origem": "autoral",
+   "trecho": "o mais comum na criança (cerca de 70%)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0659-co1",
+   "questao": "pediatria-0659",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Monteggia tipo III, qual ramo nervoso que contorna o colo do rádio pode ser lesado?",
+   "resposta": "interósseo posterior",
+   "explicacao": "Força em varo: o **nervo radial (interósseo posterior)** contorna o colo do rádio.",
+   "opcoes": [
+    "interósseo posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "463a1d37dbe4",
+   "origem": "autoral",
+   "trecho": "Pode haver lesão do **nervo radial** (interósseo posterior), que contorna o colo do rádio.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0659-co2",
+   "questao": "pediatria-0659",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na Monteggia da criança com fratura completa e instável da ulna, transversa ou oblíqua curta, qual implante se usa?",
+   "resposta": "haste intramedular",
+   "explicacao": "**Haste intramedular:** oblíquas curtas e transversas. **Placa:** oblíquas longas e cominutivas.",
+   "opcoes": [
+    "haste intramedular",
+    "placa"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "463a1d37dbe4",
+   "origem": "autoral",
+   "trecho": "- Fratura completa e instável da ulna: **haste intramedular** (oblíquas curtas e transversas) ou **placa** (oblíquas longas e cominutivas).",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0659-q",
@@ -16014,6 +16866,91 @@
    "fonte": "23867cb3988e"
   },
   {
+   "id": "fc-pediatria-0664-co1",
+   "questao": "pediatria-0664",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para prevenir a sinostose radioulnar na fixação dos dois ossos do antebraço, como devem ser os acessos?",
+   "resposta": "Acessos separados",
+   "explicacao": "**Acessos separados** para rádio e ulna, sem enxerto nem parafusos no espaço interósseo, e mobilização precoce.",
+   "opcoes": [
+    "Acessos separados"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "067ae9ff17ea",
+   "origem": "autoral",
+   "trecho": "**Acessos separados** para o rádio e a ulna; evitar enxerto e parafusos no espaço interósseo",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0664-co2",
+   "questao": "pediatria-0664",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Sinostose radioulnar com o antebraço em posição funcional ruim: qual osteotomia o deixa em leve pronação?",
+   "resposta": "osteotomia derrotativa",
+   "explicacao": "**Osteotomia derrotativa** para posição funcional; ou ressecção da ponte com interposição.",
+   "opcoes": [
+    "osteotomia derrotativa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "067ae9ff17ea",
+   "origem": "autoral",
+   "trecho": "ou uma **osteotomia derrotativa** para deixar o antebraço em posição funcional (leve pronação).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0664-pc1",
+   "questao": "pediatria-0664",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Fraturas do antebraço e punho na criança"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Bado separa a Monteggia pela direção da cabeça do rádio. Qual classificação detalha a lesão da ulna na criança?",
+   "resposta": "Letts",
+   "explicacao": "**Letts:** lesão da ulna na criança. **Bado:** direção da cabeça do rádio.",
+   "opcoes": [
+    "Letts",
+    "Bado"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "067ae9ff17ea",
+   "origem": "autoral",
+   "trecho": "e a de **Letts** detalha a lesão da ulna na criança.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0664-q",
    "questao": "pediatria-0664",
    "area": "Ortopedia pediátrica",
@@ -16067,6 +17004,90 @@
    "prova": "TARO",
    "ano": 2012,
    "fonte": "ee2075b67a4f"
+  },
+  {
+   "id": "fc-pediatria-0666-co1",
+   "questao": "pediatria-0666",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após reduzir a supracondiliana, a mão está sem pulso, mas rosada e bem perfundida. Qual é a conduta?",
+   "resposta": "observada com vigilância",
+   "explicacao": "Mão **sem pulso, rosada:** **observar com vigilância**. Sem pulso e mal perfundida: exploração vascular.",
+   "opcoes": [
+    "observada com vigilância"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "a43526971371",
+   "origem": "autoral",
+   "trecho": "A **mão sem pulso, mas rosada** (bem perfundida) após a redução pode ser observada com vigilância",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0666-co2",
+   "questao": "pediatria-0666",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Além da dor desproporcional, qual manobra dolorosa alerta para a isquemia de Volkmann na supracondiliana?",
+   "resposta": "extensão passiva",
+   "explicacao": "Dor à **extensão passiva** dos dedos e dor desproporcional.",
+   "opcoes": [
+    "extensão passiva"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "a43526971371",
+   "origem": "autoral",
+   "trecho": "Os sinais de alerta são a **dor desproporcional** e a dor à **extensão passiva** dos dedos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0666-co3",
+   "questao": "pediatria-0666",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero",
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na contratura isquêmica de Volkmann, quais músculos necrosam sobretudo?",
+   "resposta": "flexor profundo dos dedos e o flexor longo do polegar",
+   "explicacao": "O **flexor profundo dos dedos** e o **flexor longo do polegar** viram fibrose: punho e dedos em flexão, mão em garra.",
+   "opcoes": [
+    "flexor profundo dos dedos e o flexor longo do polegar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "a43526971371",
+   "origem": "autoral",
+   "trecho": "os músculos flexores (sobretudo o flexor profundo dos dedos e o flexor longo do polegar) necrosam",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0666-q",
@@ -17003,6 +18024,62 @@
    "fonte": "86d7e68a6f80"
   },
   {
+   "id": "fc-pediatria-0696-co1",
+   "questao": "pediatria-0696",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a complicação mais comum, e estética, da fratura do côndilo lateral do úmero na criança?",
+   "resposta": "Esporão lateral",
+   "explicacao": "**Esporão lateral** (crescimento excessivo lateral), a mais comum e estética.",
+   "opcoes": [
+    "Esporão lateral",
+    "pseudartrose",
+    "necrose avascular"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b3155003ce69",
+   "origem": "autoral",
+   "trecho": "Esporão lateral (a mais comum, estética)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0696-co2",
+   "questao": "pediatria-0696",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por volta de que idade ossifica o epicôndilo lateral, o que torna rara sua avulsão isolada aos 6 anos?",
+   "resposta": "10 a 12 anos",
+   "explicacao": "O **epicôndilo lateral** só ossifica por volta dos **10 a 12 anos**.",
+   "opcoes": [
+    "10 a 12 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b3155003ce69",
+   "origem": "autoral",
+   "trecho": "O **epicôndilo lateral** só ossifica por volta dos 10 a 12 anos",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-pediatria-0696-q",
    "questao": "pediatria-0696",
    "area": "Ortopedia pediátrica",
@@ -17034,6 +18111,66 @@
     "largura": 1000,
     "altura": 716
    }
+  },
+  {
+   "id": "fc-pediatria-0697-cl1",
+   "questao": "pediatria-0697",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Jakob do côndilo lateral, qual estágio tem traço incompleto, com a dobradiça de cartilagem articular íntegra?",
+   "resposta": "I",
+   "explicacao": "**Jakob I:** traço incompleto, desvio menor que 2 mm, estável. **II:** desviado sem rotação. **III:** desviado e rodado.",
+   "opcoes": [
+    "I",
+    "II",
+    "III"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "73a780dda447",
+   "origem": "autoral",
+   "trecho": "| I | Traço **incompleto**, a dobradiça de cartilagem articular está íntegra; desvio mínimo (menos de 2 mm), estável | Gesso, com radiografias semanais |",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0697-cl2",
+   "questao": "pediatria-0697",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtemas": [
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Jakob do côndilo lateral, qual estágio tem traço completo até a articulação e fragmento desviado, mas sem rotação?",
+   "resposta": "II",
+   "explicacao": "**Jakob II:** desviado **sem rotação**, superfície ainda voltada para a articulação; fixação.",
+   "opcoes": [
+    "I",
+    "II",
+    "III"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "73a780dda447",
+   "origem": "autoral",
+   "trecho": "| II | Traço **completo** até a articulação, fragmento **desviado** mas sem rotação | Fixação (geralmente fechada ou aberta com fios) |",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-pediatria-0697-q",
