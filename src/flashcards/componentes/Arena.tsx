@@ -6,7 +6,7 @@ import { ControleVolume, Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { INVESTIDA, atacar, estiloDe, projetilDoEstilo, soprar, tomFogo, type Impacto } from '../efeitos/ataques'
 import { TABULEIRO } from '../efeitos/tabuleiros'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
@@ -16,7 +16,7 @@ import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro, pixelVfx, precarregarVfx } from '../efeitos/palco'
 import { ambienteBiblioteca } from '../biblioteca/sessao'
-import { ClimaEstudo, type Humor } from './ClimaEstudo'
+import type { Humor } from './ClimaEstudo'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
 import { configurarClimaBiblioteca, configurarSom, ESCALA_VOLUME, VOLUME_INICIAL, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
@@ -34,17 +34,17 @@ import {
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
 import { Cartao, familiasDe } from './Cartao'
-import { useDeslizar } from '../efeitos/deslizar'
 import { ComChaves } from './Chaves'
 import { Cenario, TampoMesa } from './Cenario'
+import { precarregarCenario } from '../efeitos/cenariosPintados'
 import { climaDoAndar } from '../efeitos/pintura'
 import { paisagemDaParada } from '../efeitos/paisagens'
-import { Estudo } from './Estudo'
-import { Ator, BarraVida, Encaixe } from './Hud'
+import { Ator, BarraVida, Encaixe, precarregarAtor, Reliquia, ReliquiasCompactas } from './Hud'
 import { Visualizador } from './Visualizador'
 import { recurso } from '../../config'
 import { ModalJogo } from './ModalJogo'
 import { Sprite } from './Sprite'
+import '../../estilos/paginas/FlashcardsCripta.css'
 
 export interface Ajustes {
   versao: 3
@@ -91,6 +91,16 @@ export function nivelEscolhido(): NivelJogo {
 
 /** Tamanho de cada reposição do baralho (a seleção roda de novo quando acaba). */
 const LOTE_DO_BARALHO = 40
+
+/**
+ * A Biblioteca (modo Estudo) e o clima dela vêm num pedaço à parte (fluidez, 15/10/2026):
+ * quem abre a Cripta não baixa nem interpreta o Estudo antes da primeira carta. O pedaço é
+ * buscado quando o navegador folga, então a troca de aba continua instantânea.
+ */
+const carregarEstudo = () => import('./Estudo')
+const carregarClima = () => import('./ClimaEstudo')
+const Estudo = lazy(() => carregarEstudo().then((m) => ({ default: m.Estudo })))
+const ClimaEstudo = lazy(() => carregarClima().then((m) => ({ default: m.ClimaEstudo })))
 
 let motor = criarMotor(BARALHO_DEMO)
 
@@ -184,7 +194,13 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
   const [pronto, definirPronto] = useState(false)
   useEffect(() => {
     let vivo = true
-    void Promise.all([carregarAcervo(), sincronizarProgresso(), carregarFaixas()]).then(([cartas, , faixas]) => { if (!vivo) return; prepararMotor(cartas, faixas); definirPronto(true) })
+    // enquanto o acervo chega, o primeiro andar já vai baixando (herói e Golem de Gesso; a floresta vem pelo Cenario abaixo)
+    precarregarAtor('heroi', 'heroi-1')
+    precarregarAtor('golem')
+    // A sincronia do progresso (duas chamadas ao servidor) não segura a entrada por mais de 2,5 s:
+    // ela continua em segundo plano e as próximas reposições do baralho já usam o resultado.
+    const sincronia = Promise.race([sincronizarProgresso(), new Promise((ok) => window.setTimeout(ok, 2500))])
+    void Promise.all([carregarAcervo(), sincronia, carregarFaixas()]).then(([cartas, , faixas]) => { if (!vivo) return; prepararMotor(cartas, faixas); definirPronto(true) })
     return () => { vivo = false }
   }, [])
   if (!pronto) {
@@ -266,12 +282,14 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const refMao = useRef<HTMLDivElement>(null)
   const refSlots = useRef<HTMLDivElement>(null)
   const refMesa = useRef<HTMLElement>(null)
-  // no celular, a mão some quando o flashcard vira: o herói e o botão descem deslizando
+  // O herói e o botão principal NÃO deslizam mais (15/10/2026): um alvo de toque que se
+  // move faz o dedo errar. No celular deitado, o deslize medido errado ainda jogava o botão
+  // para fora da tela (y 439 numa tela de 390) a cada flashcard novo. Agora eles ficam
+  // parados no rodapé em todos os formatos (FlashcardsCripta.css) e só o flashcard desliza.
   const refBlocoHeroi = useRef<HTMLDivElement>(null)
   const refBlocoAcao = useRef<HTMLDivElement>(null)
-  useDeslizar(refBlocoHeroi, reduzido)
-  useDeslizar(refBlocoAcao, reduzido)
   const geracao = useRef(0)
+  const inicioAnimacao = useRef(0)
   const idFlutuante = useRef(0)
 
   /* ---------- Som ---------- */
@@ -284,6 +302,28 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   useEffect(() => { configurarClimaBiblioteca(modo === 'estudo' ? humorEstudo?.tipo ?? 'calmo' : null, modo === 'estudo' && leituraTranquila); return () => configurarClimaBiblioteca(null) }, [modo, humorEstudo?.tipo, leituraTranquila])
   const adversarioEmCena = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo
   useEffect(() => { precarregarVfx(modo === 'estudo' ? VFX_BIBLIOTECA : vfxPorAndar(adversarioEmCena.sprite, adversarioEmCena.variante)) }, [modo, adversarioEmCena.sprite, adversarioEmCena.variante])
+  // a Biblioteca chega antes de a pessoa trocar de aba (sem atrasar a primeira carta)
+  useEffect(() => {
+    const ocioso = (window as unknown as { requestIdleCallback?: (f: () => void, o?: { timeout: number }) => number }).requestIdleCallback
+    const buscar = () => { void carregarEstudo(); void carregarClima() }
+    const t = window.setTimeout(() => (ocioso ? ocioso(buscar, { timeout: 5000 }) : buscar()), 3500)
+    return () => window.clearTimeout(t)
+  }, [])
+  // Pré-carregamento do caminho: o adversário e a cena deste andar já, os do próximo andar quando o navegador folgar.
+  useEffect(() => {
+    precarregarAtor(adversarioEmCena.sprite as Personagem, adversarioEmCena.variante)
+    precarregarAtor('heroi', partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined)
+    const proximo = inimigoDoAndar(partida.andar + 1, partida.sementeBase, partida.modo).inimigo
+    const depois = () => {
+      precarregarAtor(proximo.sprite as Personagem, proximo.variante)
+      precarregarCenario(proximo.cenario)
+      // o próximo estágio do herói aparece depois do chefe
+      if (proximo.chefe || adversarioEmCena.chefe) precarregarAtor('heroi', `heroi-${Math.min(6, partida.estagio + 1)}`)
+    }
+    const ocioso = (window as unknown as { requestIdleCallback?: (f: () => void, o?: { timeout: number }) => number }).requestIdleCallback
+    const t = window.setTimeout(() => (ocioso ? ocioso(depois, { timeout: 4000 }) : depois()), 2500)
+    return () => window.clearTimeout(t)
+  }, [partida.andar, partida.sementeBase, partida.modo, partida.estagio, adversarioEmCena.sprite, adversarioEmCena.variante, adversarioEmCena.chefe])
   const chefeEmCena = modo === 'batalha' && adversarioEmCena.chefe
   const trilha = modo === 'estudo' ? 'biblioteca'
     : partida.fase === 'loja' ? 'loja' : partida.fase === 'sabio' || partida.fase === 'sala' ? 'sabio'
@@ -384,7 +424,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
 
   // Só no desenvolvimento: os testes de tela leem o estado para escolher a alternativa certa ou errada.
-  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel,
+  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, animando, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, certaVisual: partida.atual ? indicesVisuais(partida.atual).indexOf(partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa)) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel,
     // capturas reproduzíveis: leva a partida a um andar e semente, com o adversário do jeito que o motor o prepara
     quem: (andar: number, semente: number) => inimigoDoAndar(andar, semente, partidaRef.current.modo).inimigo.id,
     ir: (andar: number, semente: number) => {
@@ -406,12 +446,17 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [sincronizar])
 
   // pré-carrega a figura do próximo flashcard do baralho, para ela já estar pronta
-  const proximoId = partida.baralho[0]
+  // pré-carrega (e decodifica) as figuras dos dois próximos flashcards do baralho, para elas já estarem prontas
+  const proximosIds = partida.baralho.slice(0, 2).join('|')
   useEffect(() => {
-    if (!proximoId) return
-    const prox = motor.carta(proximoId)
-    if (prox?.imagem) { const im = new Image(); im.src = recurso('imagens/' + prox.imagem.arquivo) }
-  }, [proximoId, motor])
+    for (const id of proximosIds ? proximosIds.split('|') : []) {
+      let prox: Flashcard | null = null
+      try { prox = motor.carta(id) } catch { prox = null }
+      if (!prox?.imagem) continue
+      const im = new Image(); im.decoding = 'async'; im.src = recurso('imagens/' + prox.imagem.arquivo)
+      void im.decode?.().catch(() => undefined)
+    }
+  }, [proximosIds])
 
   const arte = (r: React.RefObject<HTMLDivElement | null>) => r.current?.querySelector('.fc-ator__corpo')
   /** Troca a pose do sprite (preparo, golpe, dano, vitória) por um tempo e volta a respirar. */
@@ -437,9 +482,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     definirCristaisAltar(a.cristais)
   }, [])
 
-  const encenar = useCallback(async (eventos: Evento[], depois: Partida) => {
+  const encenarBruto = useCallback(async (eventos: Evento[], depois: Partida) => {
     const g = ++geracao.current
     const P = palco.current
+    inicioAnimacao.current = Date.now()
     definirAnimando(true)
     const combo = depois.sequencia
     const adv = inimigoDoAndar(depois.andar, depois.sementeBase, depois.modo).inimigo
@@ -932,6 +978,26 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     if (g === geracao.current) { definirAnimando(false); sincronizar(depois) }
   }, [esperar, flutuar, fator, sincronizar, inimigo.nome, tremer, reduzido, posar])
 
+  /**
+   * Encenação à prova de falha (15/10/2026). Uma exceção no meio da animação (um
+   * elemento que sumiu, um efeito que faltou) deixava `animando` ligado para sempre:
+   * as telas de recompensa, portas e fim só aparecem com `animando` desligado, e o
+   * jogo parava sem aviso. O estado da partida já está certo; só a encenação falhou,
+   * então ela é pulada e o resultado aparece.
+   */
+  const encenar = useCallback(async (eventos: Evento[], depois: Partida) => {
+    try { await encenarBruto(eventos, depois) }
+    catch (falha) { console.error('Animação da Cripta interrompida', falha); pular() }
+  }, [encenarBruto, pular])
+
+  // Vigia: nenhuma sequência legítima passa de ~9 s (chefe derrotado com evolução).
+  // Se passar, algo prendeu a encenação: pula para o jogo nunca ficar parado.
+  useEffect(() => {
+    if (!animando) return
+    const t = window.setInterval(() => { if (Date.now() - inicioAnimacao.current > 12000) pular() }, 1000)
+    return () => window.clearInterval(t)
+  }, [animando, pular])
+
   /* ---------- Ações ---------- */
   const aplicar = useCallback((r: { estado: Partida; eventos: Evento[] }) => {
     // Ação recusada pelo motor: mesmo estado. Encerrar muda o estado sem animação e precisa passar.
@@ -1118,13 +1184,16 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
   // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
   const pequeno = PEQUENOS.has(inimigo.sprite)
-  const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : faixaTela === 'deitado' ? 1 : 1.8) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : faixaTela === 'deitado' ? 0.75 : 1.5) * (inimigo.variante === 'rainha' ? 1.25 : 1)
+  const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : faixaTela === 'deitado' ? 1 : 1.6) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : faixaTela === 'deitado' ? 0.75 : 1.3) * (inimigo.variante === 'rainha' ? 1.25 : 1)
   const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'deitado' ? 1.1 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
     ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${indicesVisuais(partida.atual).indexOf(selecionada) + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
     : partida.fase === 'resposta'
       ? { texto: 'Seguir', sub: 'Enter', ativo: true, acao: seguir, classe: 'seguir' }
-      : { texto: partida.fase === 'fim' ? 'Fim' : 'Andar', sub: '', ativo: false, acao: () => {}, classe: '' }
+      : animando
+        // vitória, queda ou portas ainda em cena: o botão pula a animação e mostra a próxima tela
+        ? { texto: 'Seguir', sub: 'pular animação', ativo: true, acao: pular, classe: 'seguir' }
+        : { texto: partida.fase === 'fim' ? 'Fim' : 'Andar', sub: '', ativo: false, acao: () => {}, classe: '' }
   const mostrarRecompensas = partida.fase === 'recompensa' && !animando
   const mostrarFim = partida.fase === 'fim' && !animando
   const ciclo = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).ciclo
@@ -1138,8 +1207,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     <ModalJogo titulo={NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar} transicao={`${modo}:${cenarioVisivel}:${['loja','sabio','sala','fim'].includes(partida.fase) ? partida.fase : 'jogo'}`}>
       <div className={classes} data-cenario={cenarioVisivel} data-modo={partida.modo} data-parada={parada ? 'true' : undefined}>
         <Cenario cena={paisagemDaParada(partida, modo === 'batalha', cenarioVisivel)} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
-        {modo === 'estudo' && leituraTranquila && <ClimaEstudo humor={{tipo:'chuva', nivel:1, titulo:'Leitura tranquila', sub:''}} reduzido={reduzido} tranquilo />}
-        {modo === 'estudo' && !leituraTranquila && humorEstudo && humorEstudo.tipo !== 'calmo' && <ClimaEstudo humor={humorEstudo} reduzido={reduzido} />}
+        <Suspense fallback={null}>
+          {modo === 'estudo' && leituraTranquila && <ClimaEstudo humor={{tipo:'chuva', nivel:1, titulo:'Leitura tranquila', sub:''}} reduzido={reduzido} tranquilo />}
+          {modo === 'estudo' && !leituraTranquila && humorEstudo && humorEstudo.tipo !== 'calmo' && <ClimaEstudo humor={humorEstudo} reduzido={reduzido} />}
+        </Suspense>
 
         <header className="fc-topo">
           <div className="fc-abas" role="tablist" aria-label="Modo">
@@ -1185,12 +1256,14 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         </header>
 
         {modo === 'estudo' ? (
-          <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} aoHumor={definirHumorEstudo} aoTranquilo={definirLeituraTranquila} />
+          <Suspense fallback={<div className="fc-estudo fc-estudo--chegando" role="status"><span>Abrindo a Biblioteca…</span></div>}>
+            <Estudo primeiro={estudoPrimeiro} aoAmpliar={definirAmpliada} reduzido={reduzido} aoHumor={definirHumorEstudo} aoTranquilo={definirLeituraTranquila} />
+          </Suspense>
         ) : (
           <div className="fc-batalha" aria-hidden={parada || undefined}>
             {/* Adversário em cena, de pé sobre a arena */}
             <section className={`fc-inimigo${inimigo.chefe ? ' fc-inimigo--chefe' : ''}${fase2 ? ' fc-inimigo--fase2' : ''}${partida.inimigo.furia ? ' fc-inimigo--furia' : ''}`} aria-label={`Adversário: ${inimigo.nome}`}>
-              <Ator ref={refInimigo} quem={inimigo.sprite as Personagem} variante={inimigo.variante} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (inimigo.nivel === 'elite' ? ' fc-ator--elite' : '') + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')}>
+              <Ator ref={refInimigo} contido quem={inimigo.sprite as Personagem} variante={inimigo.variante} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (inimigo.nivel === 'elite' ? ' fc-ator--elite' : '') + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')}>
                 <button type="button" className="fc-ator__toque" aria-label={`Ver ${inimigo.nome}: atributos e habilidades`} onClick={() => { tocar('selecao'); definirPainel('inimigo') }} />
               </Ator>
               <div className="fc-placa">
@@ -1313,12 +1386,16 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                       const pronto = !!e && !!RECOMPENSAS[e.tipo].ativo && partida.fase === 'pergunta' && !partida.atual?.respondida && !apresentacao
                       // pista: sobram mais de 2 alternativas; poção: falta vida; os outros ativos (ampulheta, carta na manga, mapa, desvio) sempre
                       const usavel = pronto && (e!.tipo === 'pista' ? ordem.length - (partida.atual?.eliminadas.length ?? 0) > 2 : e!.tipo === 'vital' ? partida.vida < partida.vidaMax : true)
-                      return <Encaixe key={i} tipo={e?.tipo} carga={e?.carga} extra={e?.tipo === 'pocao' ? partida.pocao : undefined} usavel={usavel} aoUsar={() => e && usarPoder(e.tipo)} />
+                      // por que não dá para usar agora (aparece na dica do poder)
+                      const motivo = !e || usavel ? undefined
+                        : partida.fase !== 'pergunta' || partida.atual?.respondida ? 'use no próximo flashcard, antes de responder'
+                        : apresentacao ? 'use quando a luta começar'
+                        : e.tipo === 'pista' ? 'já sobram só duas alternativas'
+                        : e.tipo === 'vital' ? 'sua vida está cheia' : undefined
+                      return <Encaixe key={i} tipo={e?.tipo} carga={e?.carga} extra={e?.tipo === 'pocao' ? partida.pocao : undefined} usavel={usavel} motivo={motivo} aoUsar={() => e && usarPoder(e.tipo)} />
                     })}
-                    {[...new Set(partida.reliquias)].map((r) => {
-                      const n = partida.reliquias.filter((x) => x === r).length
-                      return <span key={r} className="fc-reliquia" title={`${RECOMPENSAS[r].nome}${n > 1 ? ` ×${n}` : ''}: ${RECOMPENSAS[r].texto}`} style={{ ['--cor' as string]: RECOMPENSAS[r].cor }}><Sprite nome={RECOMPENSAS[r].icone} className="fc-sprite--icone" />{n > 1 && <b>{n}</b>}</span>
-                    })}
+                    {[...new Set(partida.reliquias)].map((r) => <Reliquia key={r} tipo={r} copias={partida.reliquias.filter((x) => x === r).length} />)}
+                    <ReliquiasCompactas lista={partida.reliquias} />
                   </div>
                 </div>
               </div>
@@ -1351,7 +1428,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
               <div className="fc-acao" ref={refBlocoAcao}>
                 <button type="button" className={`fc-principal ${botao.classe}`} disabled={!botao.ativo} onClick={() => { tocar('confirmar'); botao.acao() }}>
                   <span className="fc-principal__runa" aria-hidden="true" />
-                  <Sprite nome={partida.fase === 'resposta' ? 'porta' : 'espada'} className="fc-sprite--icone fc-principal__icone" />
+                  <Sprite nome={botao.classe === 'seguir' ? 'porta' : 'espada'} className="fc-sprite--icone fc-principal__icone" />
                   <span className="fc-principal__texto"><span>{botao.texto}</span>{botao.sub && <small>{botao.sub}</small>}</span>
                 </button>
                 <p className="fc-dica" aria-live="polite">
@@ -1601,11 +1678,18 @@ function Recompensas({ partida, aoEscolher, aoEncerrar, rapido }: { partida: Par
   const proximo = inimigoDoAndar(partida.andar + 1, partida.sementeBase, partida.modo)
   const cheios = partida.encaixes.length >= ENCAIXES
   const [escolhida, definirEscolhida] = useState<Recompensa | null>(null)
+  const vivo = useRef(true)
+  useEffect(() => { vivo.current = true; return () => { vivo.current = false } }, [])
   const escolher = useCallback((r: Recompensa) => {
     if (escolhida) return
     definirEscolhida(r)
     tocar(['rara', 'epica', 'lendaria'].includes(RECOMPENSAS[r].raridade) ? 'lendario' : 'recompensa')
-    window.setTimeout(() => aoEscolher(r), rapido ? 260 : 720)
+    window.setTimeout(() => {
+      if (!vivo.current) return
+      aoEscolher(r)
+      // se a escolha não passou (a tela continua aberta), as outras opções voltam a responder
+      window.setTimeout(() => { if (vivo.current) definirEscolhida(null) }, 1200)
+    }, rapido ? 260 : 720)
   }, [escolhida, aoEscolher, rapido])
   useEffect(() => {
     const aoTeclar = (e: KeyboardEvent) => { const k = Number(e.key); if (k >= 1 && k <= partida.recompensas.length) escolher(partida.recompensas[k - 1]) }

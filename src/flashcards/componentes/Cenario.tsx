@@ -1,11 +1,13 @@
-import { EstacoesBiblioteca } from './EstacoesBiblioteca'
-import { LeitoresBiblioteca } from './LeitoresBiblioteca'
-import { memo, useEffect, useRef, useState } from 'react'
+import { lazy, memo, Suspense, useEffect, useRef, useState } from 'react'
 import { climaDoCiclo, INTERVALO_CEU } from '../efeitos/cicloExterior'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
 import { criarAmbiente, pintarCena, type Cena, type Clima } from '../efeitos/pintura'
 import { pintarTabuleiro } from '../efeitos/tabuleiros'
-import { CENAS_PINTADAS, PAISAGENS, carregarCenarioPintado, cenarioPintadoPronto, pintarCamadas, type CenaAmbientada, type Paisagem } from '../efeitos/cenariosPintados'
+import { CENAS_PINTADAS, PAISAGENS, carregarCenarioPintado, cenarioPintadoPronto, formatoPara, pintarCamadas, type CenaAmbientada, type Paisagem } from '../efeitos/cenariosPintados'
+
+// enfeites só da Biblioteca: vêm à parte, quem joga a Cripta não os baixa
+const EstacoesBiblioteca = lazy(() => import('./EstacoesBiblioteca').then((m) => ({ default: m.EstacoesBiblioteca })))
+const LeitoresBiblioteca = lazy(() => import('./LeitoresBiblioteca').then((m) => ({ default: m.LeitoresBiblioteca })))
 
 /** Desfoque barato e compatível com todos os navegadores: reduz e amplia de novo, com suavização. */
 function desfocar(src: HTMLCanvasElement, fator: number): HTMLCanvasElement {
@@ -72,6 +74,20 @@ function climaENevoa(c: CanvasRenderingContext2D, W: number, H: number, clima: C
  * oito camadas com filtros e misturas do CSS recalculadas a cada quadro, o que
  * travava o celular. Por cima fica só o ambiente animado (bokeh, poeira, chuva).
  */
+/**
+ * Cor de espera de cada cena (céu e chão), enquanto as camadas pintadas chegam pela rede.
+ * Antes, nesse meio-tempo, aparecia a cena antiga pintada em código, que no campo do
+ * Golem de Gesso era uma parede de masmorra; quando a floresta chegava, a cena trocava
+ * de repente. Agora fica um degradê nas cores da própria cena e a pintura entra suave.
+ */
+const ESPERA: Record<string, [string, string]> = {
+  campo: ['#3d5a46', '#1a2c1c'], jardim: ['#46684e', '#22381f'], treino: ['#56684a', '#283020'], vilarejo: ['#4a6a52', '#24341e'],
+  ruinas: ['#48604c', '#20301e'], vila: ['#52704e', '#283a20'], campoflorido: ['#7a5a4a', '#3a2a24'], praia: ['#6a9ab4', '#8a7a58'], estufa: ['#4e7a5a', '#203a26'],
+  biblioteca: ['#3e2c1c', '#1a120c'], arquivo: ['#3a3020', '#16120a'], covil: ['#3a1c12', '#140806'], forja: ['#4a2416', '#1a0a06'],
+  masmorra: ['#2c303c', '#12141a'], catacumba: ['#22302a', '#0a100c'], laboratorio: ['#2a3a32', '#101a14'], caverna: ['#262c50', '#0e1022'],
+  salao: ['#3a2230', '#160c12'], templo: ['#6a5630', '#2a2010'], coliseu: ['#6a4a30', '#2a1a10'], passarela: ['#6a88aa', '#2a3a50'], torre: ['#6a5a7a', '#2a2234'],
+}
+
 /** Cenas internas (caverna, salões, masmorras): o clima do andar não entra (não chove dentro do covil). */
 const INTERNAS = new Set<Cena>(['covil', 'masmorra', 'salao', 'forja', 'caverna', 'catacumba', 'laboratorio', 'arquivo', 'biblioteca', 'templo'])
 
@@ -94,13 +110,15 @@ export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: cl
   }, [pedido, reduzido])
   const clima: Clima = INTERNAS.has(cena) || pedido === 'estufa' ? 'dia' : pedido === 'campoflorido' ? 'entardecer' : pedido === 'jardim' ? climaDoCiclo(etapaCeu) : extra ? 'dia' : climaAndar
   const base = useRef<HTMLCanvasElement>(null)
+  const reduzidoRef = useRef(reduzido)
+  reduzidoRef.current = reduzido
   const ambiente = useRef<HTMLCanvasElement>(null)
   const raiz = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const alvo = base.current
     if (!alvo) return
-    let espera = 0, ultimo = '', vivo = true
+    let espera = 0, ultimo = '', vivo = true, chegou = false
     const pintar = () => {
       if (!vivo) return
       const w = alvo.clientWidth, h = alvo.clientHeight
@@ -111,8 +129,14 @@ export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: cl
       const planos: { fundo: HTMLCanvasElement; meio: HTMLCanvasElement; frente: HTMLCanvasElement; brilho: HTMLCanvasElement; luz?: HTMLCanvasElement } = { fundo: novo(), meio: novo(), frente: novo(), brilho: novo() }
       // Floresta e Biblioteca: camadas pintadas offline (ver efeitos/cenariosPintados.ts)
       const nomePintado = pintura ?? CENAS_PINTADAS[pedido]
-      const pintado = nomePintado ? cenarioPintadoPronto(nomePintado) : null
-      if (nomePintado && pintado === undefined) carregarCenarioPintado(nomePintado).then((r) => { if (r && vivo) { ultimo = ''; pintar() } })
+      const formato = formatoPara(w, h)
+      const pintado = nomePintado ? cenarioPintadoPronto(nomePintado, formato) : null
+      if (nomePintado && pintado === undefined) {
+        // ainda chegando: o canvas fica transparente sobre o degradê da cena e a pintura entra quando chegar
+        alvo.width = 1; alvo.height = 1
+        carregarCenarioPintado(nomePintado, formato).then(() => { if (vivo) { ultimo = ''; chegou = true; pintar() } })
+        return
+      }
       if (pintado) { planos.luz = novo(); pintarCamadas(planos, pintado, w, h) }
       else pintarCena(planos, cena)
       const q = Math.min(2, window.devicePixelRatio || 1)
@@ -154,6 +178,10 @@ export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: cl
       f.drawImage(desfocar(planos.frente, 2.4), (W - W * zoomFrente) / 2, (H - H * zoomFrente) / 2, W * zoomFrente, H * zoomFrente)
       f.globalCompositeOperation = 'source-atop'; f.fillStyle = 'rgba(0,0,0,.25)'; f.fillRect(0, 0, W, H)
       c.drawImage(fr, 0, 0)
+      if (chegou) {
+        chegou = false
+        if (!reduzidoRef.current && typeof alvo.animate === 'function') alvo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 420, easing: 'ease-out' })
+      }
     }
     pintar()
     const obs = new ResizeObserver(() => { window.clearTimeout(espera); espera = window.setTimeout(pintar, 140) })
@@ -182,11 +210,11 @@ export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: cl
   }, [reduzido])
 
   return (
-    <div className={`fc-cena fc-cena--${pedido} fc-cena--clima-${clima}`} ref={raiz} aria-hidden="true">
+    <div className={`fc-cena fc-cena--${pedido} fc-cena--clima-${clima}`} ref={raiz} aria-hidden="true"
+      style={{ ['--espera-ceu' as string]: (ESPERA[pedido] ?? ESPERA[cena] ?? ['#1c1622', '#0c0a10'])[0], ['--espera-chao' as string]: (ESPERA[pedido] ?? ESPERA[cena] ?? ['#1c1622', '#0c0a10'])[1] }}>
       <canvas ref={base} className="fc-cena__base" />
       <canvas ref={ambiente} className="fc-cena__ambiente" />
-      {cena === 'biblioteca' && <EstacoesBiblioteca reduzido={reduzido} />}
-      {cena === 'biblioteca' && <LeitoresBiblioteca reduzido={reduzido} />}
+      {cena === 'biblioteca' && <Suspense fallback={null}><EstacoesBiblioteca reduzido={reduzido} /><LeitoresBiblioteca reduzido={reduzido} /></Suspense>}
       <span className="fc-cena__nevoa" />
     </div>
   )

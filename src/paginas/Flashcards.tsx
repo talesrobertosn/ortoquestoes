@@ -2,6 +2,7 @@ import { reiniciarVolume, tocarMusica, tocarAmbiente } from '../flashcards/efeit
 import { lazy, Suspense, useEffect } from 'react'
 import { CentralFlashcards, CronogramaFlashcards, DesempenhoFlashcards } from './CentralFlashcards'
 import { navegar } from '../util/rotas'
+import { carregarAcervo } from '../flashcards/dados/acervo'
 
 // O jogo (fontes, folhas de estilo e motor) só carrega quando a pessoa entra nele;
 // a central e as páginas de desempenho e cronograma abrem leves.
@@ -22,6 +23,11 @@ export function Flashcards({ secao }: { secao?: string }) {
     if (!["cripta","masmorra","biblioteca","estudo","entrada","torre"].includes(secao ?? '')) { reiniciarVolume();tocarMusica(null);tocarAmbiente(null) }
   },[secao])
   useEffect(() => () => { reiniciarVolume();tocarMusica(null);tocarAmbiente(null) },[])
+  // Fluidez (15/10/2026): o acervo de flashcards começa a chegar junto com o código do jogo,
+  // e não só depois que ele baixa e monta (as duas esperas eram em fila no celular).
+  useEffect(() => {
+    if (['cripta', 'masmorra', 'biblioteca', 'estudo'].includes(secao ?? '')) void carregarAcervo()
+  }, [secao])
 
   if (secao === 'torre') return <Redirecionar destino="/flashcards/entrada" />
   if (['cripta', 'masmorra', 'torre', 'biblioteca', 'estudo', 'entrada'].includes(secao ?? '')) return <Suspense fallback={null}><Jogo secao={secao!} /></Suspense>

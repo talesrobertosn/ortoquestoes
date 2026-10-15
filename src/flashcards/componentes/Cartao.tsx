@@ -69,10 +69,25 @@ function Figura({ img, aoAmpliar }: { img: { src: string; legenda: string }; aoA
     return () => obs.disconnect()
   }, [])
   const abrir = (e: React.MouseEvent) => { e.stopPropagation(); aoAmpliar(img) }
+  // Carregamento suave (15/10/2026): o quadro da figura já ocupa o lugar dela (sem pulo de
+  // layout), mostra um brilho de espera e a figura entra com um esmaecer quando decodifica.
+  // Se a rede falhar, aparece um aviso com "Tentar de novo" em vez de um ícone quebrado.
+  const [estado, definirEstado] = useState<'carregando' | 'pronta' | 'falhou'>('carregando')
+  const [tentativa, definirTentativa] = useState(0)
+  const refImg = useRef<HTMLImageElement>(null)
+  useEffect(() => {
+    definirEstado('carregando')
+    const el = refImg.current
+    if (el?.complete && el.naturalWidth > 0) definirEstado('pronta')
+  }, [img.src, tentativa])
+  const src = tentativa ? `${img.src}${img.src.includes('?') ? '&' : '?'}t=${tentativa}` : img.src
   return (
     <figure ref={ref} className={'fc-carta__figura' + (apertada ? ' fc-carta__figura--apertada' : '')}>
-      <button type="button" className="fc-carta__imagem" onClick={abrir} aria-label="Abrir a imagem maior">
-        <img src={img.src} alt="Figura da questão de origem" loading="eager" />
+      <button type="button" className={`fc-carta__imagem fc-carta__imagem--${estado}`} onClick={estado === 'falhou' ? (e) => { e.stopPropagation(); definirTentativa((t) => t + 1) } : abrir}
+        aria-label={estado === 'falhou' ? 'A imagem não carregou: tentar de novo' : 'Abrir a imagem maior'} aria-busy={estado === 'carregando' || undefined}>
+        <img ref={refImg} key={src} src={src} alt="Figura da questão de origem" loading="eager" decoding="async" draggable={false}
+          onLoad={() => definirEstado('pronta')} onError={() => definirEstado('falhou')} />
+        {estado === 'falhou' && <span className="fc-carta__imagem-aviso">A imagem não carregou. <b>Tentar de novo</b></span>}
       </button>
       <button type="button" className="fc-ver-imagem" onClick={abrir}>
         <img src={img.src} alt="" aria-hidden="true" />
