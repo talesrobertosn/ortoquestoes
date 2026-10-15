@@ -64,6 +64,8 @@ function FaixaCronograma({ respondidasNaSessao }: { respondidasNaSessao: number 
   )
 }
 
+const CHAVE_FIM_MOSTRADO = 'ortoquestoes:fim-mostrado'
+
 export function Sessao() {
   const { indice } = usarIndice()
   const { sessao, responder, irPara, alternarRevisar, alternarRiscada, finalizar } = usarSessao()
@@ -115,12 +117,15 @@ export function Sessao() {
   // por sessão); quem prefere ler o comentário antes ganha o botão flutuante.
   const tudoRespondido = total > 0 && respondidas === total
   const [fim, definirFim] = useState<'fechado' | 'aberto' | 'lendo'>('fechado')
-  const fimMostrado = useRef<string | null>(null)
-  const idSessao = sessao ? sessao.ids.join(',') + ':' + (sessao.criadaEm ?? '') : ''
+  // Guardado na aba: depois de um F5 lendo o último comentário, o pop-up não reabre.
+  const idSessao = sessao ? `${sessao.id}:${sessao.criadaEm ?? ''}` : ''
   useEffect(() => {
-    if (!tudoRespondido || fimMostrado.current === idSessao) return
-    fimMostrado.current = idSessao
-    const t = window.setTimeout(() => definirFim('aberto'), simulado ? 300 : 900)
+    if (!tudoRespondido) return
+    try { if (sessionStorage.getItem(CHAVE_FIM_MOSTRADO) === idSessao) return } catch { /* sem armazenamento: mostra */ }
+    const t = window.setTimeout(() => {
+      try { sessionStorage.setItem(CHAVE_FIM_MOSTRADO, idSessao) } catch { /* idem */ }
+      definirFim('aberto')
+    }, simulado ? 300 : 900)
     return () => window.clearTimeout(t)
   }, [tudoRespondido, idSessao, simulado])
   const acertosSessao = sessao ? Object.values(sessao.respostas).filter((r) => r.correta === true).length : 0

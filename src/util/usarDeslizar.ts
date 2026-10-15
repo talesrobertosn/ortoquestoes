@@ -61,7 +61,6 @@ export function usarDeslizar({ area, palco, pronto, ativo, podeAvancar, podeVolt
         gesto.travado = Math.abs(dx) > Math.abs(dy) * 1.4 ? 'horizontal' : 'vertical'
       }
       if (gesto.travado !== 'horizontal') return
-      if (e.cancelable) e.preventDefault()
       // Sem questão para aquele lado, o cartão resiste: mexe pouco e volta.
       const livre = dx < 0 ? atual.current.podeAvancar : atual.current.podeVoltar
       gesto.dx = livre ? dx : dx * 0.25
@@ -92,7 +91,9 @@ export function usarDeslizar({ area, palco, pronto, ativo, podeAvancar, podeVolt
     const cancelar = () => { if (gesto) { gesto = null; mover(0, true) } }
 
     alvo.addEventListener('touchstart', inicio, { passive: true })
-    alvo.addEventListener('touchmove', movimento, { passive: false })
+    // Passivo: o navegador rola a página sem esperar o JS. Quem impede o arrasto
+    // horizontal da página é o `touch-action: pan-y pinch-zoom` de .sessao-gestos.
+    alvo.addEventListener('touchmove', movimento, { passive: true })
     alvo.addEventListener('touchend', fim, { passive: true })
     alvo.addEventListener('touchcancel', cancelar, { passive: true })
     return () => {
