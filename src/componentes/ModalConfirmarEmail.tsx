@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import '@fontsource/pixelify-sans/latin-700.css'
 import { retornoConta, supabase } from '../conta/supabase'
 import { textoErro } from '../conta/erros'
 import { caixaDeEntrada } from '../conta/confirmacaoPendente'

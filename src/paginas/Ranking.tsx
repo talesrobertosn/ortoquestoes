@@ -25,7 +25,6 @@ import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import { SeloServico } from '../componentes/ServicoRanking'
 import { SalaoCampeoes } from '../componentes/SalaoCampeoes'
-import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
 type Periodo = 'geral' | 'semana'

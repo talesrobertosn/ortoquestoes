@@ -9,7 +9,6 @@ import { BotaoGoogle } from '../componentes/BotaoGoogle'
 import { IconeWhatsapp } from '../componentes/ConviteCompartilhar'
 import { Icone } from '../componentes/Icone'
 import { href } from '../util/rotas'
-import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Indicar.css'
 
 function Regras() {

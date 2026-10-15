@@ -4,7 +4,6 @@ import { chaveDia, LIMITES_HABILITADOS } from '../estado/limiteDiario'
 import { diasAte, proximaProva, RITMOS_CAPA as RITMOS } from '../dados/ritmos'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
-import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/componentes/AteAProva.css'
 
 const numero = (n: number) => n.toLocaleString('pt-BR')

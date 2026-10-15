@@ -1,5 +1,3 @@
-import '@fontsource/cinzel/latin-700.css'
-import '@fontsource/alegreya/latin-400.css'
 import { useEffect, useMemo, useState } from 'react'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { JanelaCentral } from '../componentes/JanelaCentral'

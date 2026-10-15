@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
-import '@fontsource/pixelify-sans/latin-700.css'
 import { recurso } from '../config'
 import '../estilos/componentes/ModalConfirmarEmail.css'
 import '../estilos/componentes/EsperaPixel.css'

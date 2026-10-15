@@ -584,7 +584,7 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 .inicio-flash::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(12,32,25,.94) 0%, rgba(12,32,25,.8) 42%, rgba(12,32,25,.08) 100%); }
 .inicio-flash__texto { align-content: center; width: min(100%, 370px); gap: .8rem; padding: 2rem; }
 .inicio-flash__selo { background: #edd69f; color: #314031; letter-spacing: .07em; padding: .3rem .65rem; }
-.inicio-flash strong { font-family: 'Alegreya', Georgia, serif; font-size: 2rem; line-height: 1.1; font-weight: 600; }
+.inicio-flash strong { font-family: var(--fonte-marca); font-size: 2rem; line-height: 1.1; font-weight: 600; }
 .inicio-flash__desc { line-height: 1.55; color: #dedfcc; }
 .inicio-flash__botao { border-radius: 12px; }
 .inicio-flash--faixa { grid-template-columns: 1fr; min-height: 290px; }

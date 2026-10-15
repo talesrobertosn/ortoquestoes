@@ -57,6 +57,23 @@ export function esquecerEdicoes() {
 }
 
 /** A questão com a edição por cima. Sem edição, devolve a mesma questão. */
+/**
+ * Edições salvas no painel guardam a lista inteira de imagens com o nome de
+ * quando foram salvas. Depois da conversão para WebP (15/10/2026), um ".png"
+ * guardado no banco apontaria para um arquivo que não existe mais: se o acervo
+ * tem a mesma imagem em .webp, vale a do acervo.
+ */
+function comConversao(daEdicao: Imagem[], doAcervo: Imagem[] | undefined): Imagem[] {
+  if (!doAcervo?.length) return daEdicao
+  const semExtensao = (arquivo: string) => arquivo.replace(/\.(png|jpe?g|webp)$/i, '')
+  const porNome = new Map(doAcervo.map((img) => [semExtensao(img.arquivo), img]))
+  return daEdicao.map((img) => {
+    if (!/\.(png|jpe?g)$/i.test(img.arquivo)) return img
+    const convertida = porNome.get(semExtensao(img.arquivo))
+    return convertida && convertida.arquivo !== img.arquivo ? { ...img, arquivo: convertida.arquivo, largura: convertida.largura, altura: convertida.altura } : img
+  })
+}
+
 export function aplicarEdicao(q: Questao, e: EdicaoQuestao | undefined): Questao {
   if (!e) return gabaritoDeCorrecao(q)
   const nova: Questao = { ...q }
@@ -69,7 +86,7 @@ export function aplicarEdicao(q: Questao, e: EdicaoQuestao | undefined): Questao
   if (e.gabarito !== undefined) nova.gabarito = e.gabarito
   if (e.anulada !== undefined) nova.anulada = e.anulada
   if (e.imagens !== undefined) {
-    nova.imagens = e.imagens
+    nova.imagens = comConversao(e.imagens, q.imagens)
     if (e.imagens.length) nova.figuraPendente = false
   }
   if (e.comentario !== undefined) nova.comentario = e.comentario

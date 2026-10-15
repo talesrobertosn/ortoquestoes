@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react'
 import { recurso } from '../config'
 import { href } from '../util/rotas'
-import '@fontsource/pixelify-sans/latin-700.css'
 
 /**
  * Cenas da temporada RPG para telas vazias e de erro. Usam só as artes que já

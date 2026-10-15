@@ -6,7 +6,10 @@ import { ErroDePagina } from './componentes/ErroDePagina'
 // CSS global: só o que várias páginas usam. O que é de uma página só mora em
 // estilos/paginas/ e é importado pela própria página, para descer junto com
 // ela e não em toda visita (a inicial usava menos de 10% do CSS antigo).
+// Fontes pixel num só lugar: o CSS global (selos, heróis, rodapé, convites) já
+// usa as duas, e o @font-face só baixa o arquivo quando um texto pede a fonte.
 import '@fontsource/jersey-10/latin-400.css'
+import '@fontsource/pixelify-sans/latin-700.css'
 import './estilos/tokens.css'
 import './estilos/base.css'
 import './estilos/premium.css'
