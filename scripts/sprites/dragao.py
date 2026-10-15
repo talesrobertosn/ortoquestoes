@@ -237,3 +237,32 @@ def poses():
     a['derrota'] = [{'agacha': -10 * f, 'empina': -0.12 * f, 'cabeca': -0.2 - 0.8 * f, 'pescoco': -24 * f, 'estica': -4 * f, 'asas': -0.5 * f, 'pata_frente': 3 * f, 'pata_tras': 2 * f, 'nucleo': -5 * f} for f in (0.25, 0.5, 0.75, 0.95, 1.0)]
     a['vitoria'] = [{'empina': 0.1 * f, 'asas': 0.8 * f, 'pescoco': 10 * f, 'cabeca': suave(-0.25, 0.6, f), 'boca': 0.8 * f, 'nucleo': 2 * f, 'olhos': f} for f in (0.4, 0.8, 1.0, 0.9)]
     return a
+
+
+# Variantes de paleta (ideia 54, 15/10/2026): a mesma modelagem com outros materiais.
+#   python3 scripts/sprites/assar.py dragao --variante escarlate   → dragao-escarlate (Dragão Rubro da Artrose)
+#   python3 scripts/sprites/assar.py dragao --variante ancestral   → dragao-ancestral (Dragão Ancestral do Título)
+# O jogo pega a folha <arquétipo>-<variante> sozinho (Hud.tsx, assadoDe) e o sopro já tem a cor de
+# cada uma (ataques.ts, tomFogo): nada a ligar no código.
+VARIANTES = {
+    # ossos queimados cor de brasa, asas de couro vermelho e fogo âmbar
+    'escarlate': lambda: {
+        'osso': Material(rampa('#dca488', 7, escuro=0.2, claro=1.16, giro=0.25), textura=tex_osso),
+        'osso_velho': Material(rampa('#9c5640', 6, escuro=0.2, claro=1.15, giro=0.25), textura=tex_osso),
+        'chifre': Material(rampa('#3a1a14', 5, escuro=0.3, claro=1.7), brilho=0.35),
+        'membrana': Material(rampa('#7e1e12', 6, escuro=0.25, claro=1.45, giro=0.1), textura=tex_membrana, borda_luz=2.2,
+                             cores_textura=[(70, 14, 8), (130, 36, 18), (206, 84, 40)]),
+        'fogo': Material([(150, 40, 10), (240, 120, 30), (255, 200, 80), (255, 248, 210)], emissivo=True),
+        'dente': Material(rampa('#f2dcc0', 4, escuro=0.5, claro=1.1)),
+    },
+    # ossos negros de obsidiana, asas de ouro e fogo roxo (o chefe final da Torre)
+    'ancestral': lambda: {
+        'osso': Material(rampa('#5a526e', 7, escuro=0.22, claro=1.35, giro=0.15), textura=tex_osso, brilho=0.5),
+        'osso_velho': Material(rampa('#3a3448', 6, escuro=0.22, claro=1.35, giro=0.15), textura=tex_osso),
+        'chifre': Material(rampa('#c89a3a', 5, escuro=0.3, claro=1.3), brilho=0.8),
+        'membrana': Material(rampa('#c0882a', 6, escuro=0.25, claro=1.35, giro=0.12), textura=tex_membrana, borda_luz=2.2,
+                             cores_textura=[(90, 56, 14), (160, 108, 34), (236, 196, 96)]),
+        'fogo': Material([(80, 20, 140), (170, 80, 240), (225, 170, 255), (250, 240, 255)], emissivo=True),
+        'dente': Material(rampa('#fff1c8', 4, escuro=0.5, claro=1.1)),
+    },
+}

@@ -386,7 +386,10 @@ def covil():
 def sala():
     """Taverna calma em Sol maior: harpa como alaúde, piano leve e flauta; descanso entre os andares."""
     T = Tema(84, 16)
-    prog = ['G', 'G', 'Em', 'Em', 'C', 'D', 'G', 'D', 'G', 'Bm', 'C', 'G', 'Am', 'D', 'G', 'G']
+    # 15/10/2026, emenda do laço: o fim era G, G e uma pausa (a faixa "apagava" e o começo voltava
+    # de repente, 6 dB mais alto). Agora o último compasso é uma virada na dominante (D) e a
+    # melodia do piano desce F#-E-D até o Si do começo: o laço resolve como uma frase só.
+    prog = ['G', 'G', 'Em', 'Em', 'C', 'D', 'G', 'D', 'G', 'Bm', 'C', 'G', 'Am', 'D', 'G', 'D']
     for i, a in enumerate(prog):
         r, ter, qui = acorde(a, 3)
         for k, n in enumerate((r - 12, qui - 12, r, ter, qui, ter, r, qui - 12)):
@@ -395,7 +398,8 @@ def sala():
     tema = ('B4:1 D5:1 G5:1.5 F#5:.5 | E5:2 D5:2 | C5:1 E5:1 G5:1 E5:1 | D5:3 r:1 | '
             'B4:1 D5:1 G5:1 B5:1 | A5:2 G5:2 | E5:1 F#5:1 G5:1 A5:1 | G5:3 r:1')
     T.melodia(flauta, tema, 0, 0.15, 0.7, vel=0.48)
-    T.melodia(piano, tema, 32, 0.15, 0.5, vel=0.42)
+    virada = tema.rsplit('|', 1)[0] + '| G5:1 F#5:1 E5:1 D5:1'
+    T.melodia(piano, virada, 32, 0.15, 0.5, vel=0.42)
     return T, True
 
 
