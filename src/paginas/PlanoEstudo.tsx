@@ -360,7 +360,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   const corHoje = corDaArea(principal?.slug ?? calculo.dias.find((d) => d.itens.length)?.itens[0]?.slug)
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
-    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: 4, estado: feitos.resumao ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href('/resumao'), aoClicar: () => hub?.aoMarcar('resumao') } : undefined })
+    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: 4, estado: feitos.resumao ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`), aoClicar: () => hub?.aoMarcar('resumao') } : undefined })
     const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
     if (calculo.metaDiaria > 0) lista.push({
       id: 'novas', titulo: `${calculo.metaDiaria} questões novas`,

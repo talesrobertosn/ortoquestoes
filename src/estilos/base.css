@@ -1999,3 +1999,17 @@ kbd {
 /* Estilo B (temporada pixel): as aberturas usam o céu em faixas com horizonte em pixels;
    os brilhos e arcos redondos do degradê antigo saem de todas. */
 section[class$="-heroi"]::before, section[class$="-heroi"]::after, .heroi-escuro::before, .cr-destaque::before { display: none !important; }
+
+/* Páginas longas (IndicePagina.tsx): índice recolhível e botão "Topo". */
+.indice-pagina { border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.indice-pagina summary { display: flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0.4rem 1rem; cursor: pointer; font-weight: 700; color: var(--verdete); }
+.indice-pagina ol { margin: 0; padding: 0 1rem 0.8rem 2.2rem; display: grid; gap: 0.15rem; }
+.indice-pagina button { display: block; width: 100%; min-height: 40px; padding: 0.35rem 0.25rem; border: 0; background: none; color: var(--texto); font: inherit; font-size: var(--corpo-menor); text-align: left; cursor: pointer; }
+.indice-pagina button:hover { color: var(--verdete); text-decoration: underline; }
+.voltar-topo {
+  position: fixed; z-index: 30; right: max(1rem, env(safe-area-inset-right)); bottom: calc(1rem + env(safe-area-inset-bottom));
+  display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; padding: 0 1rem; border-radius: 999px;
+  border: var(--borda); background: var(--superficie); color: var(--texto); font: inherit; font-weight: 700; box-shadow: var(--sombra-media); cursor: pointer;
+}
+/* No celular, acima da barra de navegação de baixo. */
+@media (max-width: 56rem) { .voltar-topo { bottom: calc(5rem + env(safe-area-inset-bottom)); } }

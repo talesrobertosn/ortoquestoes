@@ -14,6 +14,7 @@ import { NivelCobranca } from '../componentes/NivelCobranca'
 import { IconePixel } from '../componentes/IconePixel'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/TemasQueMaisCaem.css'
+import { VoltarAoTopo } from '../componentes/IndicePagina'
 
 const QUESTOES_POR_TREINO = 20
 type Respondidas = Record<string, RegistroQuestao>
@@ -61,7 +62,7 @@ export function TemasQueMaisCaem() {
     navegar('/sessao')
   }
 
-  return <Ranking indice={indice} respondidas={respondidas} treinar={treinar} aberto={premium} />
+  return <><Ranking indice={indice} respondidas={respondidas} treinar={treinar} aberto={premium} /><VoltarAoTopo /></>
 }
 
 /** As três áreas com mais questões de prova, num pódio (2º, 1º, 3º). */
