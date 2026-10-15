@@ -87,7 +87,7 @@ export function Sobre() {
         </div>
         <p className="pj-nota">
           <Icone nome="alerta" tamanho={16} />
-          <span>Comentário é material de estudo: não substitui o livro nem a conduta do seu serviço. Questão que passou por revisão médica individual vem indicada.</span>
+          <span>Comentário é material de estudo: não substitui o livro nem a conduta do seu serviço.</span>
         </p>
         <aside className="pj-ia" aria-labelledby="pj-ia-titulo">
           <h3 id="pj-ia-titulo">Sobre o uso de inteligência artificial</h3>
