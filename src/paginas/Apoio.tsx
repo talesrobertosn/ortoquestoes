@@ -379,10 +379,12 @@ export function DadosLocais() {
             <p>É assim que fica o seu desempenho: acerto por tema, ritmo da semana e onde você mais erra. Cada resposta entra aqui, do celular ou do computador.</p>
             <a className="botao botao--claro" href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis e ver o meu</a>
           </> : <p>{mensagemDesempenho}</p>}
-          {conta && (
+          {/* No topo só quando há algo a fazer (erro, offline, itens parados): "Sincronizando…"
+              piscando no herói a cada 5 segundos competia com o desempenho. */}
+          {conta && (statusSync.estado === 'erro' || statusSync.estado === 'offline' || statusSync.estado === 'conflito' || statusSync.pendentes > 0 || statusSync.rejeitados.length > 0) && (
             <p className="dp-heroi__sync" role="status">
               <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
-              {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio` : 'Progresso salvo neste dispositivo'}
+              {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} ${statusSync.pendentes === 1 ? 'alteração aguardando' : 'alterações aguardando'} envio` : 'Progresso salvo neste dispositivo'}
               {statusSync.estado !== 'sincronizando' && <button type="button" className="botao--vinculo" onClick={sincronizar}>sincronizar agora</button>}
               {statusSync.estado === 'erro' && statusSync.detalhe && <small className="status-sincronia__detalhe">Motivo: {statusSync.detalhe}</small>}
               {statusSync.rejeitados.length > 0 && <a className="status-sincronia__detalhe dp-heroi__rejeitados" href={href('/conta')}>{statusSync.rejeitados.length} {statusSync.rejeitados.length === 1 ? 'item não enviado' : 'itens não enviados'} · ver em Minha conta</a>}
