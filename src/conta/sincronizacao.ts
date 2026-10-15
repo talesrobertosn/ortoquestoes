@@ -9,6 +9,13 @@ function rpcAusente(erro: { code?: string; message?: string } | null, status?: n
   return status === 404 || erro.code === 'PGRST202' || erro.code === '42883' || /could not find the function/i.test(erro.message ?? '')
 }
 
+/** Linhas por página na leitura (igual ao limite que a função aceita sem cortar). */
+const PAGINA = 500
+/** Com a leitura incremental, a conferência completa vira rede de segurança rara. */
+const RECONCILIAR_A_CADA = 30 * 60_000
+/** Intervalo com a aba visível. Trocar de aba ou de aparelho já sincroniza na hora. */
+const INTERVALO = 30_000
+
 export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean; detalhe?: string; rejeitados: { id: string; tipo: TipoSync; item: string; erro: string; em: number }[] }
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
 export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string, notificar: (s: StatusSync) => void) {
@@ -16,6 +23,12 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
   let ativo = true, executando = false, pronto = false
   const conhecidos = new Set<string>()
   let timer: ReturnType<typeof setTimeout> | undefined
+  // Leitura incremental (parte 24 do SQL): só as linhas com versão acima do
+  // cursor. A primeira leitura de cada sessão, a volta do offline e uma vez a
+  // cada RECONCILIAR_A_CADA releem tudo, como antes.
+  let leituraIncremental = true
+  let reconciliar = true
+  let ultimaCompleta = 0
   const valido = () => ativo && usuarioLocal() === idUsuario
   const salvar = () => { if (valido()) gravar('sincronia:v1', estado, 'nuvem') }
   let detalhe: string | undefined
@@ -86,12 +99,66 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
       }
     }
   }
+  /**
+   * Lê o progresso da conta. Com a função `ler_progresso_desde` (parte 24),
+   * pede só o que mudou desde o cursor; a função espera as gravações em
+   * andamento da conta, então nenhuma versão menor aparece depois. Sem ela
+   * (SQL ainda não colado), lê todas as linhas como sempre fez, e as próximas
+   * leituras desta página também serão completas.
+   */
+  async function receber(completa: boolean): Promise<{ docs: Documento[]; cursor: number } | undefined> {
+    const docs: Documento[] = []
+    if (leituraIncremental) {
+      let cursor = completa ? 0 : estado.cursor
+      for (;;) {
+        const { data, error, status } = await cliente.rpc('ler_progresso_desde', { p_cursor: cursor, p_limite: PAGINA })
+        if (!valido()) return undefined
+        if (error) {
+          if (!rpcAusente(error, status)) throw error
+          // Banco sem a parte 24: volta à leitura completa até recarregar a página.
+          leituraIncremental = false
+          docs.length = 0
+          break
+        }
+        const pagina = (data ?? []) as Documento[]
+        docs.push(...pagina)
+        for (const d of pagina) if (d.versao > cursor) cursor = d.versao
+        if (pagina.length < PAGINA) return { docs, cursor }
+      }
+    }
+    let pagina = 0
+    while (valido()) {
+      const { data, error } = await cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).order('versao').range(pagina, pagina + PAGINA - 1)
+      if (!valido()) return undefined
+      if (error) throw error
+      const documentos = (data ?? []) as Documento[]
+      docs.push(...documentos)
+      if (documentos.length < PAGINA) break
+      pagina += PAGINA
+    }
+    if (!valido()) return undefined
+    return { docs, cursor: docs.reduce((m, d) => Math.max(m, d.versao), 0) }
+  }
   function agendar() {
     if (!valido()) return
     clearTimeout(timer)
     timer = setTimeout(() => { void sincronizar() }, 1200)
   }
-  async function sincronizar() {
+  /**
+   * Com várias abas abertas, uma sincroniza por vez (Web Locks). A outra tenta
+   * de novo logo depois e, como lê do cursor, só recebe o que ainda falta.
+   * Navegadores sem Web Locks seguem como antes.
+   */
+  async function sincronizar(): Promise<void> {
+    if (!valido() || executando) return
+    const travas = (navigator as Navigator & { locks?: LockManager }).locks
+    if (!navigator.onLine || typeof travas?.request !== 'function') return ciclo()
+    await travas.request(`ortoquestoes:sincronia:${idUsuario}`, { ifAvailable: true }, async trava => {
+      if (!trava) { agendar(); return }
+      await ciclo()
+    })
+  }
+  async function ciclo() {
     if (!valido() || executando) return
     if (!navigator.onLine) { anunciar('offline'); return }
     executando = true; anunciar('sincronizando')
@@ -123,26 +190,22 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
         salvar()
         gravar('reinicio:pendente', null, 'nuvem')
       }
-      // Primeiro recebe: reconcilia todas as linhas antes de enviar alterações
-      // locais. O número da versão é global entre tipos; usar apenas `gt(cursor)`
-      // pode deixar respostas para trás quando favoritos e respostas chegam em
-      // ordens diferentes nos dispositivos.
+      // Primeiro recebe, depois envia: as alterações locais saem já com a base
+      // da versão que o servidor tem.
       // Conflitos guardados de versões anteriores: resolve e deixa o recebimento abaixo aplicar.
       for (const [id, doc] of Object.entries(estado.conflitos)) resolverConflito(estado, id, doc)
-      let pagina = 0
-      const recebidos: Documento[] = []
-      while (valido()) {
-        const { data, error } = await cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).order('versao').range(pagina, pagina + 499)
-        if (!valido()) return
-        if (error) throw error
-        const documentos = (data ?? []) as Documento[]
-        recebidos.push(...documentos)
-        if (documentos.length) estado.cursor = Math.max(estado.cursor, ...documentos.map(d => d.versao))
-        salvar()
-        if (documentos.length < 500) break
-        pagina += 500
-      }
-      aplicar(recebidos)
+      const completa = reconciliar || Date.now() - ultimaCompleta > RECONCILIAR_A_CADA
+      const referencia = estado
+      const recebidos = await receber(completa)
+      if (!recebidos || !valido()) return
+      aplicar(recebidos.docs)
+      // O cursor só avança junto com as versões aplicadas, no mesmo salvar():
+      // se outra aba regravar um estado mais antigo, cursor e versões voltam
+      // juntos e a próxima leitura relê o que faltou. Se o estado foi trocado
+      // durante uma leitura parcial (outra aba, reinício), o cursor fica como
+      // está e a próxima leitura repete as linhas, o que não tem efeito.
+      if (completa || estado === referencia) estado.cursor = recebidos.cursor
+      if (completa) { reconciliar = false; ultimaCompleta = Date.now() }
       semearLocais()
       salvar()
       pronto = true
@@ -162,7 +225,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
           for (const alteracao of fila) {
             const individual = await enviar([alteracao])
             if (!valido()) return
-            if ('docs' in individual) { aplicar(individual.docs, [alteracao]); continue }
+            if ('docs' in individual) { aplicar(individual.docs, [alteracao]); salvar(); continue }
             if (individual.transitorio) throw individual.erro
             const id = identificador(alteracao.tipo, alteracao.item)
             estado.rejeitados = { ...(estado.rejeitados ?? {}), [id]: { tipo: alteracao.tipo, item: alteracao.item, valor: alteracao.valor, erro: descrever(individual.erro), em: Date.now() } }
@@ -193,13 +256,16 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     estado = ler<EstadoSync>('sincronia:v1', estadoVazio()); agendar()
   }
   const aoVoltar = () => { if (document.visibilityState === 'visible') void sincronizar() }
+  // Voltando do offline, relê tudo uma vez: é a rede de segurança da leitura incremental.
+  const aoReconectar = () => { reconciliar = true; aoVoltar() }
   window.addEventListener(EVENTO_DADOS, aoGravar)
   window.addEventListener('storage', outraAba)
-  window.addEventListener('online', aoVoltar)
+  window.addEventListener('online', aoReconectar)
   document.addEventListener('visibilitychange', aoVoltar)
-  // Mantém os dispositivos próximos em poucos segundos mesmo quando a aba fica aberta
-  // sem trocar de visibilidade. A sincronização continua leve: só lê as linhas da própria conta.
-  const intervalo = setInterval(aoVoltar, 5000)
+  // Mantém os dispositivos próximos mesmo quando a aba fica aberta sem trocar de
+  // visibilidade. Cada volta só lê o que mudou desde o cursor; trocar de aba,
+  // de aplicativo ou de aparelho sincroniza na hora pelo visibilitychange.
+  const intervalo = setInterval(aoVoltar, INTERVALO)
   void sincronizar()
   return {
     sincronizar,
@@ -232,7 +298,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     parar() {
       ativo = false; clearTimeout(timer); clearInterval(intervalo)
       window.removeEventListener(EVENTO_DADOS, aoGravar); window.removeEventListener('storage', outraAba)
-      window.removeEventListener('online', aoVoltar); document.removeEventListener('visibilitychange', aoVoltar)
+      window.removeEventListener('online', aoReconectar); document.removeEventListener('visibilitychange', aoVoltar)
     },
   }
 }
