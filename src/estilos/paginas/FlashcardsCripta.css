@@ -244,3 +244,47 @@
 .fc-rota-hud small { font-size: 12px; font-weight: 600; opacity: .85; }
 @keyframes fc-rota-hud-entra { from { opacity: 0; transform: translate(-50%, -4px); } }
 @media (prefers-reduced-motion: reduce) { .fc-rota-hud { animation: none; } }
+
+/* ---------- Painel do adversário robusto (16/10/2026) ----------
+   Bug do celular: nos chefes de vida com 4 dígitos (Dragão Rubro 1472/1472, Dragão Ancestral 2280/2280)
+   a largura mínima do painel somada ao transbordo da asa do dragão alargava a coluna da batalha e
+   cortava a borda direita (alternativas e Atacar). Agora a coluna nunca passa da tela (minmax(0, 1fr)
+   em Flashcards.css), a placa encolhe por dentro (consulta de contêiner) e o número da vida fica curto
+   (numeroCompacto em Hud.tsx). */
+.fc-batalha > * { min-width: 0; }
+.fc-placa { container: placa / inline-size; }
+.fc-placa__nome { min-width: 0; }
+.fc-placa__nome strong { min-width: 0; overflow-wrap: break-word; hyphens: auto; }
+.fc-placa .fc-vida { min-width: 0; }
+.fc-placa .fc-vida__trilho { min-width: 32px; }
+.fc-placa__info { min-width: 0; }
+.fc-placa__info .fc-info { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.fc-placa__info .fc-info--andar, .fc-placa__info .fc-info--mais { flex: none; }
+@container placa (max-width: 230px) {
+  .fc-placa .fc-vida { gap: 6px; }
+  .fc-placa .fc-vida b { min-width: 0; font-size: 14px; }
+  .fc-placa .fc-vida b small { font-size: 10.5px; }
+  .fc-placa .fc-info { font-size: 11.5px; padding-inline: 6px; }
+}
+/* estreita demais para "1472/1472": fica só a vida atual (o máximo está no leitor de tela e no painel) */
+/* placa estreita: um selo só (o mais importante) e o "+N"; os outros ficam no painel do adversário */
+@container placa (max-width: 175px) {
+  .fc-placa__info .fc-info:nth-child(n+3):not(.fc-info--mais) { display: none; }
+  .fc-placa__info .fc-info--andar:not(:last-child) { display: none; }
+  .fc-placa__info .fc-info { max-width: calc(100% - 34px); }
+}
+@container placa (max-width: 150px) {
+  .fc-placa .fc-vida b small { display: none; }
+  .fc-placa__nome strong { font-size: 13px; letter-spacing: 0; }
+}
+@media (max-width: 640px) {
+  /* a asa do dragão (transbordo da folha assada) passa por baixo da placa, em vez de empurrá-la */
+  .fc-inimigo > .fc-ator--inimigo { margin-right: calc(var(--ator-lado, 0px) * -0.6) !important; }
+  .fc-inimigo > .fc-placa { flex: 1 1 0; }
+  .fc-intencao { flex: none; }
+  .fc-intencao small { max-width: 60px; overflow-wrap: break-word; }
+}
+/* celulares estreitos (360 px ou menos): os chefes grandes encolhem um pouco para a placa caber */
+@media (max-width: 374px) {
+  .fc-inimigo--chefe > .fc-ator--inimigo { zoom: .8; }
+}
