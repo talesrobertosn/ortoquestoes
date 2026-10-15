@@ -6,6 +6,7 @@ import { rotaDe, usarRota, type Rota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
+import { AvisoTermos } from './componentes/AvisoTermos'
 import { AvisoArmazenamento } from './componentes/AvisoArmazenamento'
 import { HospedeConfirmacao } from './componentes/Confirmar'
 import { EXIGIR_CONTA_PARA_QUESTOES, FLASHCARDS_LIBERADO, SITE } from './config'
@@ -266,6 +267,8 @@ export function App() {
       </a>
       <Cabecalho caminho={fundo.caminho} />
       {primeiroFundo !== 'sessao' && <AvisoSite />}
+      {/* Termos atualizados: fora da resposta de questões, do painel e de Minha conta (que mostra o aviso no corpo). */}
+      {!['sessao', 'questao', 'admin', 'conta'].includes(primeiroFundo ?? '') && <AvisoTermos />}
       <AvisoArmazenamento />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>

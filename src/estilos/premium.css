@@ -836,6 +836,45 @@
 .aviso-site__fechar { display: grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; border: 0; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; }
 .aviso-site__fechar:hover { background: color-mix(in srgb, currentColor 12%, transparent); }
 
+/* ---------- Termos atualizados (reaceite, 16/10/2026) ----------------- */
+.aviso-termos { background: var(--ouro-veu, var(--aviso-veu)); color: var(--texto); }
+.aviso-termos--faixa { border-bottom: 1px solid color-mix(in srgb, var(--aviso) 35%, var(--traco)); }
+.aviso-termos--cartao { border: 1px solid color-mix(in srgb, var(--aviso) 35%, var(--traco)); border-radius: var(--raio-cartao); }
+.aviso-termos__interno { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .75rem 1.25rem; padding-block: .9rem; }
+.aviso-termos--cartao .aviso-termos__interno { padding: 1rem 1.1rem; }
+.aviso-termos__texto { flex: 1 1 28rem; min-width: 0; }
+.aviso-termos h2 { display: flex; align-items: center; gap: .45rem; margin: 0 0 .3rem; font-size: 1.02rem; line-height: 1.3; }
+.aviso-termos h2 svg { flex: 0 0 auto; color: var(--aviso); }
+.aviso-termos p { margin: 0 0 .4rem; font-size: var(--corpo-menor); line-height: 1.5; }
+.aviso-termos__mudancas summary { cursor: pointer; font-size: var(--corpo-menor); font-weight: 700; color: var(--verdete); min-height: 32px; display: flex; align-items: center; }
+.aviso-termos__mudancas ul { margin: .35rem 0 0; padding-left: 1.2rem; font-size: var(--corpo-menor); line-height: 1.5; }
+.aviso-termos__mudancas li + li { margin-top: .25rem; }
+.aviso-termos__erro { color: var(--erro); font-weight: 650; }
+.aviso-termos__acoes { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; flex: 0 1 auto; }
+@media (max-width: 640px) {
+  .aviso-termos__acoes { width: 100%; }
+  .aviso-termos__acoes .botao { flex: 1 1 calc(50% - .5rem); justify-content: center; }
+}
+
+/* ---------- Páginas jurídicas: resumo, vigência e tabelas ------------- */
+.juridico-resumo { padding: 1.1rem 1.2rem; border: var(--borda); border-left: 4px solid var(--verdete); border-radius: var(--raio-cartao); background: var(--superficie); }
+.juridico-resumo h2 { margin-top: 0; font-size: 1.15rem; }
+.juridico-resumo > p:first-of-type { color: var(--texto-2, var(--ardosia)); font-size: var(--corpo-menor); }
+.juridico-resumo ul { margin: .5rem 0 0; padding-left: 1.2rem; line-height: 1.55; }
+.juridico-resumo li + li { margin-top: .35rem; }
+.juridico-mudancas { padding: .9rem 1.1rem; border: 1px dashed color-mix(in srgb, var(--aviso) 45%, var(--traco)); border-radius: var(--raio-cartao); background: var(--aviso-veu); }
+.juridico-mudancas summary { cursor: pointer; font-weight: 750; min-height: 36px; display: flex; align-items: center; }
+.juridico-mudancas ul { margin: .4rem 0 0; padding-left: 1.2rem; line-height: 1.55; }
+.juridico-vigencia { display: flex; flex-wrap: wrap; gap: .35rem 1.2rem; margin: .4rem 0 .6rem; padding: 0; list-style: none; font-size: var(--corpo-menor); color: var(--texto-2, var(--ardosia)); }
+.juridico-vigencia strong { color: var(--texto); }
+.juridico-tabela-rolagem { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.juridico-tabela { width: 100%; border-collapse: collapse; font-size: var(--corpo-menor); line-height: 1.45; }
+.juridico-tabela th, .juridico-tabela td { padding: .55rem .6rem; border-bottom: var(--borda); text-align: left; vertical-align: top; }
+.juridico-tabela th { font-weight: 750; background: var(--superficie-2, var(--porcelana)); }
+.termos-pagina h3 { margin: 1.1rem 0 .2rem; font-size: 1.02rem; }
+.termos-pagina .clausula-destaque { padding: 1rem 1.1rem; border: 1px solid color-mix(in srgb, var(--verdete) 35%, var(--traco)); border-radius: var(--raio-cartao); background: var(--verdete-veu); }
+.termos-pagina .clausula-destaque > :last-child { margin-bottom: 0; }
+
 /* ---------- Relatar erro dentro da questão ---------------------------- */
 .relato { flex: 1 1 100%; display: grid; gap: .7rem; padding: 1rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie-2); }
 .relato__titulo { margin: 0; font-weight: 750; }

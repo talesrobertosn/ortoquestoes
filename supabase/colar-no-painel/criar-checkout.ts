@@ -32,7 +32,7 @@ var planos = {
   semestral: { reason: "OrtoQuestoes Semestral", frequency: 6, transaction_amount: 179.9 },
   anual: { reason: "OrtoQuestoes Anual", frequency: 12, transaction_amount: 239.9 }
 };
-var versoesCondicoesAceitas = ["2026-10-01", "2026-09-30", "2026-09-28", "2026-09-27"];
+var versoesCondicoesAceitas = ["2026-10-16", "2026-10-01", "2026-09-30", "2026-09-28", "2026-09-27"];
 async function contaTesteAtiva(idUsuario) {
   const resposta = await banco(`contas_teste?id_usuario=eq.${encodeURIComponent(idUsuario)}&ativa=eq.true&select=id_usuario`);
   if (!resposta.ok) throw new Error("consulta_conta_teste_falhou");

@@ -130,7 +130,7 @@ export function CartaPessoal({ usuario, perfilReserva, historicoReserva, querRes
       <div className="ce__carta">
         {!querCartas && <p className="ce-excesso ce-excesso--muito" role="status"><strong>Esta pessoa não quer receber e-mails do site.</strong> O envio fica bloqueado.</p>}
         <p className="ce-motivo"><Icone nome="estrela" tamanho={14} /> {tipo === 'auto' ? <>Escolhida pela situação: <strong>{TIPOS[auto.tipo].rotulo}{auto.faixa && auto.tipo === 'ativo' ? ` · ${ROTULO_FAIXA[auto.faixa]}` : ''}</strong>. {auto.motivo}</> : <>Você escolheu: <strong>{TIPOS[tipoFinal].rotulo}</strong>.</>}</p>
-        {convite && banco && !banco.novidades && <p className="adm-nota ce-nota-termos">Esta pessoa não marcou “Quero receber novidades” (Termos, item 14.3). Convite para assinar só se ela tiver pedido ou se a conversa já existir.</p>}
+        {convite && banco && !banco.novidades && <p className="adm-nota ce-nota-termos">Esta pessoa não marcou “Quero receber novidades” (Termos, item 17.5.3). Convite para assinar só se ela tiver pedido ou se a conversa já existir.</p>}
         <div className="ce__escolhas">
           <label className="campo">Situação
             <select className="entrada" value={tipo} onChange={e => { definirTipo(e.target.value as TipoCarta | 'auto'); definirEditado(null) }}>

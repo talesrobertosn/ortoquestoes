@@ -111,6 +111,14 @@ _versoes = _re.findall(r"'([^']+)'", _lista.group(1))
 assert _versoes[0] == _site.group(1), f"Site ({_site.group(1)}) e checkout ({_versoes[0]}) com versões diferentes"
 _anterior = _re.search(r"VERSAO_CONDICOES_ANTERIOR = '([^']+)'", VERSOES_TERMOS)
 assert not _anterior or _anterior.group(1) in _versoes, "Versão anterior do site precisa seguir aceita pelo checkout"
+# O Pix também aceita a versão vigente das condições (senão o pagamento por Pix é recusado).
+_pix = (RAIZ / "supabase/functions/criar-pix/index.ts").read_text()
+_lista_pix = _re.search(r"VERSOES_CONDICOES_PIX = \[([^\]]*)\]", _pix)
+assert _lista_pix and _re.findall(r"'([^']+)'", _lista_pix.group(1))[0] == _site.group(1), "Pix e site com versões das condições diferentes"
+# Os textos jurídicos não falam em "processo"/"processado" (pedido do Tales, 15/10/2026).
+for _texto, _nome in ((TERMOS, "Termos"), (CONDICOES_ASSINATURA, "Condições")):
+    _corpo = "\n".join(l for l in _texto.splitlines() if not l.strip().startswith(("*", "/*", "//")))
+    assert not _re.search(r"process", _corpo, _re.I), f"{_nome}: evitar 'processo' e derivadas no texto"
 assert "create table if not exists public.aceites_assinatura" in ACEITES_ASSINATURA
 assert "alter table public.aceites_assinatura enable row level security" in ACEITES_ASSINATURA
 assert "revoke all on public.aceites_assinatura from anon, authenticated" in ACEITES_ASSINATURA
@@ -190,9 +198,9 @@ for trecho in ("paywall_ativo=false", "VITE_LIMITES_HABILITADOS=false", "WCS-523
 for trecho in ("VITE_LIMITES_HABILITADOS", "acesso gratuito está sem limite diário nesta fase", "atendimento manual"):
     assert trecho in PAGINA_ASSINATURA, f"Informação pré-compra ausente: {trecho}"
 assert "reembolso é integral e automático" not in PAGINA_ASSINATURA
-for trecho in ("assinaturas opcionais", "R$ 39,90", "R$ 179,90", "R$ 239,90", "sete dias", "sem reembolso proporcional automático"):
+for trecho in ("A assinatura é opcional", "R$ 39,90", "R$ 179,90", "R$ 239,90", "garantia de 7 dias", "Condições da Assinatura", "valor proporcional ao período não usufruído", "Resumo em linguagem simples", "não tem valor jurídico próprio"):
     assert trecho in TERMOS, f"Termos de assinatura incompletos: {trecho}"
-for trecho in ("R$ 39,90", "R$ 179,90", "R$ 239,90", "Mercado Pago", "não recebe nem armazena", "não há reembolso proporcional automático"):
+for trecho in ("R$ 39,90", "R$ 179,90", "R$ 239,90", "Mercado Pago", "não recebe nem guarda", "não há devolução proporcional dos meses restantes", "artigo 49", "Descontinuidade do serviço ou da oferta paga", "restituição proporcional", "pro rata", "em até 30 dias"):
     assert trecho in CONDICOES_ASSINATURA, f"Condições específicas incompletas: {trecho}"
 for trecho in ("pedir(VERSAO_CONDICOES_ASSINATURA)", "aceite_termos_versao: versao", "aceite_confirmado: true", "Continuar para Mercado Pago"):
     assert trecho in PAGINA_ASSINATURA, f"Aceite pré-checkout ausente: {trecho}"

@@ -1,7 +1,7 @@
 /**
  * Sinais leves por pessoa para a lista e a ficha do painel (parte 25,
  * sinais_usuarios_admin): quem abriu a página de planos, flashcards e locais
- * de trabalho. Tudo sai do que o site já registra (Termos, item 5.6): nenhuma
+ * de trabalho. Tudo sai do que o site já registra (Termos, item 17.4): nenhuma
  * coleta nova.
  */
 export interface SinalUsuario {
@@ -22,7 +22,7 @@ export interface SinalUsuario {
 const DIA = 86_400_000
 /** Até quantos dias o "Viu os planos" fica em destaque na lista. */
 export const PLANOS_RECENTE_DIAS = 7
-/** O histórico de páginas guarda 30 dias (Termos, item 5.6). */
+/** O histórico de páginas guarda 30 dias (Termos, item 17.4). */
 export const PLANOS_JANELA_DIAS = 30
 
 export function diasDesde(valor: string | null | undefined, agora = Date.now()): number | null {
