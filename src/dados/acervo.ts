@@ -425,7 +425,8 @@ export function montarSessao(
   // No treino amplo, alterna uma revisão/erro, uma questão nova e uma já
   // acertada. A sessão fica mais sustentável sem esconder a prioridade de
   // revisão e os filtros explícitos continuam sendo respeitados integralmente.
-  if (filtros.situacao === 'todas' && !filtros.busca.trim()) {
+  // Com "embaralhar" desligado a pessoa pediu a ordem da prova: nada é reordenado.
+  if (filtros.embaralhar && filtros.situacao === 'todas' && !filtros.busca.trim()) {
     const grupos = [[], [], []] as string[][]
     for (const id of ids) {
       const registro = contexto.respondidas[id]
