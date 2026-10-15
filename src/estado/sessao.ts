@@ -150,7 +150,9 @@ export function usarSessao() {
   const liberarParaNova = useCallback(async (opcoes: OpcoesSessao = {}) => {
       const atual = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
       const respondidas = atual ? Object.keys(atual.respostas).length : 0
-      const emAndamento = !!atual && !atual.concluidaEm && respondidas > 0 && respondidas < atual.ids.length
+      // Respondida por inteiro mas sem "Concluir"/"Entregar" ainda conta: sem
+      // concluidaEm, ela não está no histórico e sumiria sem aviso.
+      const emAndamento = !!atual && !atual.concluidaEm && respondidas > 0
       // Retomar o mesmo Simulado Nacional não é substituir.
       if (emAndamento && !(opcoes.nacional && atual!.nacional === opcoes.nacional)) {
         const sim = await confirmar({
@@ -226,7 +228,11 @@ function registrarHistorico(sessao: EstadoSessao) {
     ...(sessao.filtros?.provas?.length ? { provas: sessao.filtros.provas } : {}),
     ...(sessao.filtros?.anos?.length ? { anos: sessao.filtros.anos } : {}),
   }
+  // A mesma sessão entra uma vez só: se o Simulado Nacional falha ao começar
+  // depois do aviso, a anterior continua aberta e pode ser registrada de novo
+  // (outra tentativa ou o "Concluir" dela). Fica o registro mais recente.
   const historico = ler<ResumoHistorico[]>(CHAVE_HISTORICO, [])
+    .filter((h) => !(h.id === resumo.id && h.criadaEm === resumo.criadaEm))
   gravar(CHAVE_HISTORICO, [resumo, ...historico].slice(0, 50))
 }
 
