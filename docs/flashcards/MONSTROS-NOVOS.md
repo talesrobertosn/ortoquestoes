@@ -79,9 +79,10 @@ O quadro típico é de 128×128, com a âncora nos pés.
 | **esqueleto** (Esqueleto do Metacarpo) | ✅ sóbrio (14/10) | `esqueleto.py` | escudo redondo de madeira, espada curta enferrujada, placa com parafusos no fêmur, desaba num monte de ossos |
 | **ent** (Guardião da Fise, chefe) | ✅ brutamontes (14/10) | `ent.py` | toco quebrado de um olho só, a fise como faixa de seiva que brilha, galhos-garra, musgo, cogumelos e broto que floresce na vitória; tela maior de chefe (196×150) |
 | **aranha** (Aranha dos Ligamentos) | ✅ detalhado (14/10) | `aranha.py` | quitina roxa com manchas, oito patas de joelho alto, seis olhos, quelíceras que pingam veneno, o "X" dos cruzados no abdome e teia no golpe |
-| raptor, corvo, morcego, escaravelho | ⬜ | detalhado | ref. 1 (manchas e carapaça); a aranha pode virar o "cogumelo-aranha" da ref. 4 |
+| **raptor** (e sombrio, alfa), **corvo**, **morcego**, **escaravelho** | ✅ detalhado (15/10) | `raptor.py`, `corvo.py`, `morcego.py`, `escaravelho.py` | raptor com o menisco em meia-lua na coxa; corvo com bico de pinça de Kocher; morcego com a pulseira do túnel do carpo; escaravelho de carapaça com manchas de cartilagem |
+| **cavaleiro** (Tala, Fíbula, Artrodese) | ✅ (15/10) | `cavaleiro.py` | cavaleiro adulto de elmo fechado; talas de gesso, lança fina, escudo-torre e joelho travado por barra |
 | **mímico** (Mímico do Arsenal) | ✅ detalhado (14/10) | `mimico.py` | caixa de instrumentais de aço escovado com cantoneiras de latão e correias, dentes (alguns são bisturis), língua comprida, olhos acesos, pinça saindo da boca e moedas |
-| cavaleiro, rei, arconte, espectro, quimera, harpia, mão, leviatã | ⬜ | brutamontes HD (chefes) | ref. 2: massa, placas, faixas douradas |
+| rei, arconte, espectro, quimera, harpia, mão, leviatã | ⬜ | brutamontes HD (chefes) | ref. 2: massa, placas, faixas douradas |
 | **Cogumelo da Necrose** (novo, Jardim) | ✅ chibi (14/10) | `cogumelo.py` | chapéu vinho com pintas pálidas e um ossinho, olhos vermelhos bravos, pulinhos; envenena com esporos |
 | **novos:** mandrágora, planta carnívora, abóbora, caranguejo, slime da espada | ⬜ ainda não existem | chibi (cogumelo, mandrágora, abóbora); detalhado (planta, caranguejo, slime) | refs. 1 e 4 |
 
