@@ -59,6 +59,90 @@
    "fonte": "9dc22542cc63"
   },
   {
+   "id": "fc-ombro-cotovelo-0003-ar1",
+   "questao": "ombro-cotovelo-0003",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lateralização dos componentes é o princípio original de Grammont na prótese reversa?",
+   "resposta": "modificação posterior",
+   "explicacao": "Não. Grammont **medializa e abaixa**. Lateralizar é uma **modificação posterior** para reduzir o notching e melhorar a rotação.",
+   "opcoes": [
+    "modificação posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "b06a4f0d185d",
+   "origem": "autoral",
+   "trecho": "O abaixamento está certo, mas a lateralização não é o princípio original de Grammont. É uma modificação posterior, feita para reduzir o notching e melhorar a rotação.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0003-co1",
+   "questao": "ombro-cotovelo-0003",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quem definiu os princípios biomecânicos da prótese reversa do ombro (medializar e abaixar)?",
+   "resposta": "Grammont",
+   "explicacao": "**Grammont:** medializar o centro de rotação (mais alavanca para o deltoide) e abaixar o úmero (tensiona o deltoide).",
+   "opcoes": [
+    "Grammont"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "b06a4f0d185d",
+   "origem": "autoral",
+   "trecho": "Os princípios dessa prótese foram definidos por **Grammont**, e são dois:",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0003-co2",
+   "questao": "ombro-cotovelo-0003",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Omartrose e artroplastia do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na prótese reversa, a borda da peça umeral bate na borda inferior da escápula e desgasta o osso. Como se chama?",
+   "resposta": "notching escapular",
+   "explicacao": "O **notching escapular** é o preço da medialização de Grammont, junto com a perda de rotação externa.",
+   "opcoes": [
+    "notching escapular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "b06a4f0d185d",
+   "origem": "autoral",
+   "trecho": "Com o úmero mais perto da escápula, a borda da peça umeral bate na borda inferior da escápula e vai desgastando o osso, o chamado *notching* escapular.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0003-q",
    "questao": "ombro-cotovelo-0003",
    "area": "Ombro e cotovelo",
@@ -390,6 +474,67 @@
    "fonte": "6a5a11c07259"
   },
   {
+   "id": "fc-ombro-cotovelo-0013-pc1",
+   "questao": "ombro-cotovelo-0013",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Teste do bíceps com flexão anterior resistida, cotovelo estendido e antebraço supinado: qual é?",
+   "resposta": "Speed",
+   "explicacao": "**Speed:** flexão anterior resistida. **Yergason:** supinação resistida com cotovelo a 90 graus. **O'Brien:** lesão SLAP.",
+   "opcoes": [
+    "Speed",
+    "Yergason",
+    "O'Brien",
+    "Jobe"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "cc7bbaa09326",
+   "origem": "autoral",
+   "trecho": "Para o bíceps, o **Speed** (flexão anterior resistida com cotovelo estendido e antebraço supinado)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0013-pc2",
+   "questao": "ombro-cotovelo-0013",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Exame físico do ombro",
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Teste do bíceps com supinação resistida e cotovelo a 90 graus: qual é?",
+   "resposta": "Yergason",
+   "explicacao": "**Yergason:** supinação resistida com cotovelo a 90 graus. **Speed:** flexão anterior resistida com cotovelo estendido.",
+   "opcoes": [
+    "Speed",
+    "Yergason",
+    "O'Brien"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "cc7bbaa09326",
+   "origem": "autoral",
+   "trecho": "o **Yergason** (supinação resistida com cotovelo a 90 graus)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0013-q",
    "questao": "ombro-cotovelo-0013",
    "area": "Ombro e cotovelo",
@@ -443,6 +588,62 @@
    "prova": "TARO",
    "ano": 2018,
    "fonte": "016a4e6a8317"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0015-co1",
+   "questao": "ombro-cotovelo-0015",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Exame físico do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual manobra repete a elevação passiva após anestésico na bursa para confirmar dor subacromial?",
+   "resposta": "teste de infiltração de Neer",
+   "explicacao": "**Teste de infiltração de Neer:** se a dor some após o anestésico na bursa, a origem é **subacromial**; se persiste, pense na acromioclavicular ou na glenoumeral.",
+   "opcoes": [
+    "teste de infiltração de Neer"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f4e547dc487a",
+   "origem": "autoral",
+   "trecho": "**O teste de infiltração de Neer.** Para confirmar que a dor vem do espaço subacromial, injeta-se anestésico na bursa subacromial e repete-se a manobra.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0015-co2",
+   "questao": "ombro-cotovelo-0015",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Exame físico do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No teste de Neer, entre quantos graus de elevação passiva a dor de impacto costuma aparecer?",
+   "resposta": "entre 90 e 130 graus",
+   "explicacao": "Escápula estabilizada, braço elevado passivamente em rotação interna: dor **entre 90 e 130 graus** indica impacto.",
+   "opcoes": [
+    "entre 90 e 130 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "f4e547dc487a",
+   "origem": "autoral",
+   "trecho": "A dor, geralmente entre 90 e 130 graus, indica impacto",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0015-q",
@@ -1081,6 +1282,119 @@
    "fonte": "7b6a7f519107"
   },
   {
+   "id": "fc-ombro-cotovelo-0040-co1",
+   "questao": "ombro-cotovelo-0040",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ao levar a mão à boca, o paciente abduz o braço como quem toca corneta. Que sinal é esse?",
+   "resposta": "sinal de Hornblower",
+   "explicacao": "**Hornblower:** perda da rotação externa que indica lesão também do **redondo menor**, além do supra e do infraespinal.",
+   "opcoes": [
+    "sinal de Hornblower"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "91316ab9f20e",
+   "origem": "autoral",
+   "trecho": "(**sinal de Hornblower**, que indica perda também do redondo menor)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0040-co2",
+   "questao": "ombro-cotovelo-0040",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quem descreveu a transferência do grande dorsal para a rotura posterossuperior irreparável do manguito?",
+   "resposta": "Gerber",
+   "explicacao": "**Gerber**, a partir da ideia de **L'Episcopo** para a paralisia obstétrica. O grande dorsal vai ao tubérculo maior e vira rotador externo.",
+   "opcoes": [
+    "Gerber",
+    "L'Episcopo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "91316ab9f20e",
+   "origem": "autoral",
+   "trecho": "descrita por **Gerber** a partir da ideia de L'Episcopo para a paralisia obstétrica.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0040-co3",
+   "questao": "ombro-cotovelo-0040",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para o bom resultado da transferência do grande dorsal, qual tendão do manguito precisa estar íntegro?",
+   "resposta": "subescapular",
+   "explicacao": "O **subescapular** faz o par de forças com o manguito posterior no plano transverso; sua integridade é pré-requisito.",
+   "opcoes": [
+    "subescapular",
+    "peitoral maior",
+    "bíceps braquial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "91316ab9f20e",
+   "origem": "autoral",
+   "trecho": "O subescapular faz o par de forças com o manguito posterior no plano transverso. Sua integridade é justamente pré-requisito para o bom resultado da transferência do grande dorsal.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0040-pc1",
+   "questao": "ombro-cotovelo-0040",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na rotura posterossuperior irreparável, além do grande dorsal, qual transferência tem vetor mais parecido com o do infraespinal?",
+   "resposta": "trapézio inferior",
+   "explicacao": "O **trapézio inferior**, alongado com enxerto, reproduz melhor o vetor do infraespinal.",
+   "opcoes": [
+    "trapézio inferior",
+    "peitoral maior",
+    "subescapular"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "91316ab9f20e",
+   "origem": "autoral",
+   "trecho": "Uma alternativa atual, com vetor mais parecido com o do infraespinal, é a transferência do **trapézio inferior** alongado com enxerto.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0040-q",
    "questao": "ombro-cotovelo-0040",
    "area": "Ombro e cotovelo",
@@ -1409,6 +1723,118 @@
    "fonte": "b7dc7748aaa1"
   },
   {
+   "id": "fc-ombro-cotovelo-0053-co1",
+   "questao": "ombro-cotovelo-0053",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que posição do braço ocorre o impacto interno posterossuperior de Walch?",
+   "resposta": "abdução de 90 graus e rotação externa máxima",
+   "explicacao": "Na posição de **armar o arremesso**: a face articular do supra e do infraespinal encosta na borda posterossuperior da glenoide.",
+   "opcoes": [
+    "abdução de 90 graus e rotação externa máxima"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "cad5c851d3b4",
+   "origem": "autoral",
+   "trecho": "Ocorre na posição de **armar o arremesso**, com o braço em abdução de 90 graus e rotação externa máxima.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0053-co2",
+   "questao": "ombro-cotovelo-0053",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No arremessador com GIRD, qual parte da cápsula encurta com os anos?",
+   "resposta": "posteroinferior",
+   "explicacao": "A cápsula **posteroinferior** encurta, o centro de rotação migra para posterossuperior e o impacto interno se intensifica.",
+   "opcoes": [
+    "posteroinferior",
+    "anterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "cad5c851d3b4",
+   "origem": "autoral",
+   "trecho": "a cápsula **posteroinferior** encurta com os anos",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0053-co3",
+   "questao": "ombro-cotovelo-0053",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual exercício de alongamento da cápsula posterior é a base do tratamento do impacto interno?",
+   "resposta": "sleeper stretch",
+   "explicacao": "Reabilitação primeiro: **sleeper stretch**, alongamento em adução horizontal, correção da escápula e da mecânica do arremesso.",
+   "opcoes": [
+    "sleeper stretch"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "cad5c851d3b4",
+   "origem": "autoral",
+   "trecho": "alongamento da cápsula posterior (sleeper stretch e alongamento em adução horizontal)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0053-pc1",
+   "questao": "ombro-cotovelo-0053",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual impacto prende o subescapular entre o coracoide e o tubérculo menor?",
+   "resposta": "impacto subcoracoide",
+   "explicacao": "**Subcoracoide:** subescapular contra coracoide. **Subacromial:** face bursal do supraespinal contra o acrômio. **Interno:** face articular contra a glenoide posterossuperior.",
+   "opcoes": [
+    "impacto subcoracoide",
+    "impacto subacromial",
+    "impacto anterossuperior",
+    "impacto interno posterossuperior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "cad5c851d3b4",
+   "origem": "autoral",
+   "trecho": "O **impacto subcoracoide** é o subescapular preso entre coracoide e tubérculo menor",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0053-q",
    "questao": "ombro-cotovelo-0053",
    "area": "Ombro e cotovelo",
@@ -1464,6 +1890,60 @@
    "fonte": "c7d5b244bbb4"
   },
   {
+   "id": "fc-ombro-cotovelo-0055-co1",
+   "questao": "ombro-cotovelo-0055",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ressonância da lesão do subescapular, o que costuma acontecer com a cabeça longa do bíceps?",
+   "resposta": "luxação medial",
+   "explicacao": "A parte superior do subescapular compõe a **polia** do bíceps; sem ela, o tendão sofre **luxação medial**.",
+   "opcoes": [
+    "luxação medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "94119d29a643",
+   "origem": "autoral",
+   "trecho": "frequentemente com **luxação medial da cabeça longa do bíceps**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0055-co2",
+   "questao": "ombro-cotovelo-0055",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que achado da amplitude passiva, comparado ao lado são, sugere rotura do subescapular?",
+   "resposta": "rotação externa passiva aumenta",
+   "explicacao": "O subescapular é o **freio anterior**: roto, a **rotação externa passiva aumenta** e a rotação interna enfraquece.",
+   "opcoes": [
+    "rotação externa passiva aumenta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "94119d29a643",
+   "origem": "autoral",
+   "trecho": "Quando o subescapular está roto, o freio anterior se perde, e a **rotação externa passiva aumenta** em relação ao lado são.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0055-q",
    "questao": "ombro-cotovelo-0055",
    "area": "Ombro e cotovelo",
@@ -1495,6 +1975,64 @@
     "largura": 232,
     "altura": 353
    }
+  },
+  {
+   "id": "fc-ombro-cotovelo-0056-co1",
+   "questao": "ombro-cotovelo-0056",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Exame físico do ombro"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na série de Barth, qual teste do subescapular foi o mais sensível, detectando lesões pequenas da parte superior?",
+   "resposta": "bear hug",
+   "explicacao": "O **bear hug** foi o mais sensível e também serve para quem não consegue levar a mão às costas, exigência do **lift-off**.",
+   "opcoes": [
+    "Lift-off",
+    "Belly-press",
+    "Bear hug"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b578adf45b5b",
+   "origem": "autoral",
+   "trecho": "Na série de Barth, o bear hug foi o mais sensível dos testes do subescapular",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0056-pc1",
+   "questao": "ombro-cotovelo-0056",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Exame físico do ombro"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Bear hug e Yocum começam com a mão no ombro oposto. No bear hug o paciente resiste ao afastamento da mão. E no Yocum?",
+   "resposta": "eleva o cotovelo",
+   "explicacao": "**Yocum:** elevação ativa do cotovelo, teste de **impacto**. **Bear hug:** resistir ao afastamento da mão, teste do **subescapular**.",
+   "opcoes": [
+    "eleva o cotovelo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b578adf45b5b",
+   "origem": "autoral",
+   "trecho": "no Yocum o paciente **eleva o cotovelo**; no bear hug ele **resiste** a que a mão seja afastada.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0056-q",
@@ -1675,6 +2213,33 @@
     "largura": 160,
     "altura": 332
    }
+  },
+  {
+   "id": "fc-ombro-cotovelo-0058-co1",
+   "questao": "ombro-cotovelo-0058",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na transferência do peitoral maior passada sob o tendão conjunto, qual nervo exige cuidado?",
+   "resposta": "nervo musculocutâneo",
+   "explicacao": "O **nervo musculocutâneo** corre por baixo do tendão conjunto, onde o peitoral maior é passado para reproduzir o vetor do subescapular.",
+   "opcoes": [
+    "nervo musculocutâneo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "6300ce414206",
+   "origem": "autoral",
+   "trecho": "O cuidado é com o nervo musculocutâneo, que corre por baixo do tendão conjunto.",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0058-q",
@@ -4346,6 +4911,92 @@
    "fonte": "b472ed86ec73"
   },
   {
+   "id": "fc-ombro-cotovelo-0208-cl1",
+   "questao": "ombro-cotovelo-0208",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual tipo de colágeno é o da membrana basal, sem papel estrutural no tendão?",
+   "resposta": "Tipo IV",
+   "explicacao": "**Tipo IV:** membrana basal. **Tipo I:** maduro, do tendão e da cicatriz madura. **Tipo II:** cartilagem. **Tipo III:** imaturo, da cicatriz jovem.",
+   "opcoes": [
+    "Tipo I",
+    "Tipo II",
+    "Tipo III",
+    "Tipo IV"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "c21b6facc22a",
+   "origem": "autoral",
+   "trecho": "**Tipo IV**: da **membrana basal**, sem papel estrutural no tendão.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0208-co1",
+   "questao": "ombro-cotovelo-0208",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na cicatrização do tendão, em que fase o colágeno tipo III é trocado pelo tipo I?",
+   "resposta": "Remodelação",
+   "explicacao": "**Inflamatória** (primeiros dias), **proliferativa** (até cerca de 6 semanas, muito tipo III) e **remodelação** (meses), quando o tipo III vira tipo I e as fibras se alinham.",
+   "opcoes": [
+    "Inflamatória",
+    "Proliferativa",
+    "Remodelação"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "c21b6facc22a",
+   "origem": "autoral",
+   "trecho": "**Remodelação**, de semanas a meses (até um ano ou mais), em que o tipo III é trocado pelo **tipo I** e as fibras se alinham segundo a carga.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0208-co2",
+   "questao": "ombro-cotovelo-0208",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após o reparo do manguito, o tendão cicatriza ao osso por qual tipo de tecido de interface?",
+   "resposta": "fibrovascular",
+   "explicacao": "A interface é **fibrovascular**: o reparo não reconstrói a entese original em quatro camadas.",
+   "opcoes": [
+    "fibrovascular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TECOC/SBCOC Ombro e Cotovelo",
+   "ano": null,
+   "fonte": "c21b6facc22a",
+   "origem": "autoral",
+   "trecho": "No manguito, o tendão cicatriza ao osso por uma interface de tecido **fibrovascular**, e não pela entese original em quatro camadas.",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-ombro-cotovelo-0208-q",
    "questao": "ombro-cotovelo-0208",
    "area": "Ombro e cotovelo",
@@ -4701,6 +5352,89 @@
    "prova": "SBOT-SP",
    "ano": null,
    "fonte": "812808d74758"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0235-cl1",
+   "questao": "ombro-cotovelo-0235",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Patte da retração do manguito, até onde chega o coto do tendão no tipo 3?",
+   "resposta": "na glenoide",
+   "explicacao": "**Patte 1:** junto ao tubérculo. **2:** no nível da cabeça. **3:** **na glenoide**, a retração que prejudica o reparo.",
+   "opcoes": [
+    "junto ao tubérculo",
+    "no nível da cabeça",
+    "na glenoide"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "b5c1c0db0cda",
+   "origem": "autoral",
+   "trecho": "A **retração**, graduada por **Patte**: tipo 1 junto ao tubérculo, 2 no nível da cabeça, 3 na glenoide.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0235-co1",
+   "questao": "ombro-cotovelo-0235",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em algumas séries, acima dos 70 anos, a taxa de rerruptura após reparo do manguito passa de quanto?",
+   "resposta": "50%",
+   "explicacao": "A **idade** é o preditor mais consistente de falha: as taxas sobem a partir dos **60 a 65 anos** e passam de **50%** acima dos 70.",
+   "opcoes": [
+    "50%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "b5c1c0db0cda",
+   "origem": "autoral",
+   "trecho": "As taxas de rerruptura sobem muito a partir dos **60 a 65 anos** e, em algumas séries, passam de **50%** acima dos 70.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0235-co2",
+   "questao": "ombro-cotovelo-0235",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtemas": [
+    "Lesões do manguito rotador"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual distância acromioumeral sugere lesão maciça crônica do manguito e pior prognóstico do reparo?",
+   "resposta": "abaixo de 7 mm",
+   "explicacao": "**Distância acromioumeral abaixo de 7 mm** indica cabeça ascendida pela lesão maciça crônica.",
+   "opcoes": [
+    "abaixo de 7 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "b5c1c0db0cda",
+   "origem": "autoral",
+   "trecho": "distância acromioumeral abaixo de 7 mm, que sugere lesão maciça crônica",
+   "criadoEm": "2026-10-15"
   },
   {
    "id": "fc-ombro-cotovelo-0235-q",
