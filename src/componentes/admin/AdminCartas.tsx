@@ -25,7 +25,7 @@ const SEGMENTOS: Array<{ id: Segmento; rotulo: string; para: string }> = [
 ]
 const BLOQUEIO: Record<string, string> = {
   administrador: 'administrador', email_nao_confirmado: 'e-mail não confirmado', nao_quer_cartas: 'não quer e-mails',
-  assinante: 'já assina', sem_aceite_novidades: 'não aceitou novidades (Termos 14.3)', mesmo_tipo_30_dias: 'recebeu esta carta há menos de 30 dias',
+  assinante: 'já assina', sem_aceite_novidades: 'não aceitou novidades (Termos 17.5.3)', mesmo_tipo_30_dias: 'recebeu esta carta há menos de 30 dias',
   teste: 'conta de teste', recente: 'recebeu e-mail recente', sem_email: 'sem e-mail',
 }
 interface LinhaBanco { id_usuario: string; dados: DadosCartaBanco; bloqueio: string | null }

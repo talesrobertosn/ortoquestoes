@@ -77,7 +77,7 @@ export function motivoFalhaEmail(bruto: string | null | undefined): string {
   if (texto === 'sql_pendente') return 'Falta colar no Supabase a parte 27 (supabase/colar-no-painel/sql-202610152100-parte27.sql).'
   if (texto === 'administrador') return 'Conta de administrador: fica fora do envio em lote.'
   if (texto === 'email_nao_confirmado') return 'A pessoa ainda não confirmou o e-mail.'
-  if (texto === 'sem_aceite_novidades') return 'A pessoa não marcou "Quero receber novidades" (Termos, item 14.3); convite em lote não vai.'
+  if (texto === 'sem_aceite_novidades') return 'A pessoa não marcou "Quero receber novidades" (Termos, item 17.5.3); convite em lote não vai.'
   if (texto === 'mesmo_tipo_30_dias') return 'Já recebeu esta carta nos últimos 30 dias.'
   if (texto === 'recebeu_email_recente') return 'Recebeu outro e-mail do site nas últimas 48 horas.'
   if (texto === 'usuario_sem_email') return 'Conta sem e-mail.'

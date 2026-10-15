@@ -37,7 +37,7 @@ import { perfilDosDados, problemaGrave, renderizarCarta, type DadosCartaBanco, t
  *                      Cartas). O servidor monta o e-mail com a mesma função da prévia.
  *                      Lote: só com a parte 27; recusa administrador, e-mail não
  *                      confirmado, quem não quer cartas, convite sem o aceite de
- *                      novidades (Termos 14.3), o mesmo tipo em 30 dias e quem recebeu
+ *                      novidades (Termos 17.5.3), o mesmo tipo em 30 dias e quem recebeu
  *                      qualquer e-mail nas últimas 48 horas; leva List-Unsubscribe.
  *
  * Desde 15/10/2026 todo e-mail para a pessoa sai em forma de carta (só texto,

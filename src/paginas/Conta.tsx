@@ -15,7 +15,8 @@ import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarLeitura, usarEtiquetas, usarRitmoRevisao } from '../estado/preferencias'
 import { usarTema } from '../estado/tema'
-import { dadosAceiteTermos, VERSAO_TERMOS } from '../conta/termos'
+import { dadosAceiteTermos } from '../conta/termos'
+import { AvisoTermos } from '../componentes/AvisoTermos'
 import { dadosOrigem } from '../conta/origem'
 import { eventoMeta } from '../conta/consentimento'
 import { textoErro } from '../conta/erros'
@@ -162,7 +163,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [uf, definirUf] = useState(String(perfil.uf ?? ''))
   const [receberNovidades, definirReceberNovidades] = useState(Boolean(perfil.receber_novidades ?? false))
   const [aceitouTermos, definirAceitouTermos] = useState(false)
-  const [aceiteAtualizado, definirAceiteAtualizado] = useState(false)
   const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
   const { perfil: perfilRanking, carregado: rankingCarregado, salvar: salvarPerfilRanking, nomeExibido: nomeExibidoRanking, nomeCadastro: nomeCadastroRanking } = usarPerfilRanking(sessao)
   const [apelidoRanking, definirApelidoRanking] = useState('')
@@ -509,17 +509,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       definirMensagem('Você saiu da sua conta com segurança.')
     } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
   }
-  const confirmarNovosTermos = async () => {
-    if (!supabase || ocupado) return
-    definirOcupado(true)
-    try {
-      const { error } = await supabase.auth.updateUser({ data: dadosAceiteTermos() })
-      if (error) throw error
-      definirAceiteAtualizado(true)
-      definirMensagem('Sua ciência dos Termos de Uso atualizados foi registrada.')
-    } catch { definirMensagem('Não foi possível registrar agora. Você pode continuar usando sua conta e tentar novamente mais tarde.') }
-    finally { definirOcupado(false) }
-  }
   return <article className="empilha-2 conta-pagina ct">
     <section className="ct-heroi">
       <div className="ct-heroi__perfil">
@@ -549,14 +538,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     </section>
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
 
-    {!aceiteAtualizado && perfil.termos_versao !== VERSAO_TERMOS && <section className="ct-cartao" aria-label="Termos atualizados">
-      <h2>Termos de uso atualizados</h2>
-      <p>Deixamos mais claros a origem do conteúdo, o caráter não oficial dos simulados, a natureza da assinatura e o que acontece com ela se o serviço mudar. Sua conta continua disponível enquanto você lê a nova versão.</p>
-      <div className="linha linha--empilha-celular">
-        <a className="botao" href={href('/termos')} target="_blank" rel="noopener noreferrer">Ler os termos</a>
-        <button className="botao botao--principal" type="button" disabled={ocupado} onClick={() => void confirmarNovosTermos()}>Li e concordo com a versão atual</button>
-      </div>
-    </section>}
+    <AvisoTermos variante="cartao" />
 
     {status.rejeitados.length > 0 && <section className="ct-rejeitados" id="itens-nao-enviados">
       <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--alerta"><Icone nome="alerta" tamanho={18} /></span><div><h2>{status.rejeitados.length} {status.rejeitados.length === 1 ? 'item não pôde ser enviado' : 'itens não puderam ser enviados'}</h2><p>{status.rejeitados.length === 1 ? 'Ele continua salvo' : 'Eles continuam salvos'} neste aparelho, mas o servidor recusou o envio. O resto do seu progresso sincronizou normalmente.</p></div></header>

@@ -117,7 +117,7 @@ function frasesGratis(): Record<UsoFraseGratis, readonly [ligado: string, deslig
     /** Página de planos: pergunta "Como funciona o limite do plano gratuito?". */
     perguntaPlanos: [`O gratuito tem um número limitado de respostas novas (hoje, ${n}) a cada 24 horas. O relógio começa na primeira questão respondida e, 24 horas depois, a cota volta inteira; o site mostra quanto falta.`,
       `O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado, o patamar gratuito previsto é de ${n} respostas novas a cada 24 horas.`],
-    /** Termos de Uso, item 10.1 (texto jurídico: mudar só com nova versão dos Termos). */
+    /** Termos de Uso, item 7.1 (texto jurídico: mudar só com nova versão dos Termos). */
     termos: [`O plano gratuito permite registrar um número limitado de novas respostas a cada período de 24 horas, atualmente ${n}; o período começa na primeira resposta registrada e, ao final dele, a cota é renovada integralmente. Esse número pode ser alterado pelo ${SITE.nome}, com aviso no site.`,
       `Nesta fase, o plano gratuito permite responder sem limite diário, por decisão operacional do ${SITE.nome}. O limite gratuito planejado, mas ainda desligado, é de ${n} respostas novas por dia.`],
     /** Termos de Uso, resumo em linguagem direta. */

@@ -390,7 +390,7 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
                     </div>
                     <div>
                       <strong>{detalhe.oculto_ranking ? 'Fora do ranking público' : 'Aparece no ranking público'}</strong>
-                      <p>Para quem pediu para sair do ranking (Termos, item 14.7) ou usou um nome inadequado.</p>
+                      <p>Para quem pediu para sair do ranking (Termos, cláusula 10) ou usou um nome inadequado.</p>
                       <button type="button" className="botao" disabled={ocupado} onClick={() => void acao('Ranking', () => chamarRpc('ocultar_ranking_admin', { p_id: usuario.id_usuario, p_ocultar: !detalhe.oculto_ranking, p_motivo: detalhe.oculto_ranking ? null : 'pelo painel' }), detalhe.oculto_ranking ? 'Voltou para o ranking.' : 'Tirado do ranking.')}>{detalhe.oculto_ranking ? 'Mostrar no ranking' : 'Tirar do ranking'}</button>
                     </div>
                     <div>

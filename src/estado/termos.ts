@@ -1,7 +1,13 @@
 import { usarArmazenado } from './usarArmazenado'
 
-/** Alterar a versão torna necessária uma nova concordância no próximo acesso. */
-export const VERSAO_TERMOS = '2026-09-15'
+import { VERSAO_TERMOS } from '../conta/termos'
+
+/**
+ * Aceite guardado só no aparelho (legado). A versão vem de conta/termos.ts, a
+ * única fonte: assim as duas constantes nunca divergem. Alterar a versão lá torna
+ * necessária uma nova concordância no próximo acesso.
+ */
+export { VERSAO_TERMOS }
 const CHAVE_TERMOS = 'termos:aceite'
 
 export interface AceiteTermos {
