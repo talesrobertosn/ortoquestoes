@@ -79,6 +79,16 @@ export function Sessao() {
   const [erro, definirErro] = useState<string | null>(null)
   const areaGestos = useRef<HTMLDivElement>(null)
   const palco = useRef<HTMLDivElement>(null)
+  // O menu "…" da navegação fecha ao tocar fora ou com Esc.
+  const menuMais = useRef<HTMLDetailsElement>(null)
+  const fecharMenu = () => { if (menuMais.current) menuMais.current.open = false }
+  useEffect(() => {
+    const fora = (e: Event) => { if (menuMais.current?.open && !menuMais.current.contains(e.target as Node)) menuMais.current.open = false }
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape' && menuMais.current?.open) { menuMais.current.open = false; menuMais.current.querySelector('summary')?.focus() } }
+    document.addEventListener('pointerdown', fora)
+    document.addEventListener('keydown', esc)
+    return () => { document.removeEventListener('pointerdown', fora); document.removeEventListener('keydown', esc) }
+  }, [])
   const { estado: estadoLimite, autorizar } = usarLimiteDiario()
   const [limiteAberto, definirLimiteAberto] = useState(false)
   // Depois da 20ª, fechar o convite leva ao resumo da sessão.
@@ -116,9 +126,12 @@ export function Sessao() {
   // Fim de sessão: ao responder a última, o pop-up abre no meio da tela (uma vez
   // por sessão); quem prefere ler o comentário antes ganha o botão flutuante.
   const tudoRespondido = total > 0 && respondidas === total
-  const [fim, definirFim] = useState<'fechado' | 'aberto' | 'lendo'>('fechado')
-  // Guardado na aba: depois de um F5 lendo o último comentário, o pop-up não reabre.
+  // Guardado na aba: depois de um F5 lendo o último comentário, o pop-up não reabre
+  // e o botão flutuante de concluir continua lá.
   const idSessao = sessao ? `${sessao.id}:${sessao.criadaEm ?? ''}` : ''
+  const [fim, definirFim] = useState<'fechado' | 'aberto' | 'lendo'>(() => {
+    try { return tudoRespondido && sessionStorage.getItem(CHAVE_FIM_MOSTRADO) === idSessao ? 'lendo' : 'fechado' } catch { return 'fechado' }
+  })
   useEffect(() => {
     if (!tudoRespondido) return
     try { if (sessionStorage.getItem(CHAVE_FIM_MOSTRADO) === idSessao) return } catch { /* sem armazenamento: mostra */ }
@@ -473,21 +486,25 @@ export function Sessao() {
           Anterior
           <kbd className="nav-sessao__tecla" aria-hidden="true">←</kbd>
         </button>
-        <div className="nav-sessao__extras">
-          {posicao + 1 < total && !sessao.respostas[questaoAtual?.id ?? ''] && (
-            <button type="button" className="botao botao--fantasma" onClick={() => irPara(posicao + 1)}>
-              Pular por agora
+        {/* Três ações no máximo: Anterior, Próxima (que também pula a não respondida) e o resto no "…". */}
+        <details className="nav-sessao__mais" ref={menuMais}>
+          <summary className="botao botao--fantasma" aria-label="Mais ações da sessão">
+            <span aria-hidden="true">…</span>
+          </summary>
+          <div className="nav-sessao__menu" role="menu">
+            {proximaNaoRespondida > -1 && proximaNaoRespondida !== posicao + 1 && (
+              <button type="button" role="menuitem" onClick={() => { fecharMenu(); irPara(proximaNaoRespondida) }}>
+                Ir para a próxima não respondida
+              </button>
+            )}
+            <button type="button" role="menuitem" onClick={() => { fecharMenu(); definirMapaAberto(true) }}>
+              Mapa de questões
             </button>
-          )}
-          {proximaNaoRespondida > -1 && (
-            <button type="button" className="botao botao--fantasma" onClick={() => irPara(proximaNaoRespondida)}>
-              Próxima não respondida
+            <button type="button" role="menuitem" onClick={() => { fecharMenu(); concluir() }} disabled={respondidas === 0}>
+              {simulado ? 'Entregar o simulado' : 'Encerrar e ver resumo'}
             </button>
-          )}
-          <button type="button" className="botao botao--fantasma" onClick={concluir}>
-            {simulado ? 'Entregar o simulado' : 'Encerrar e ver resumo'}
-          </button>
-        </div>
+          </div>
+        </details>
         <button
           type="button"
           className="botao botao--principal nav-sessao__proxima"
