@@ -10,7 +10,8 @@ import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href } from '../util/rotas'
 import '../estilos/paginas/Resumao.css'
 import { irParaSecao, VoltarAoTopo } from '../componentes/IndicePagina'
-import { rotaDe } from '../util/rotas'
+import { usarRota } from '../util/rotas'
+import { CHAVE_RESUMAO_HOJE, comAreaLida, RESUMAO_HOJE_VAZIO, SEGUNDOS_LEITURA, type ResumaoHoje } from '../estado/resumaoLido'
 
 interface Frase { texto: string; id: string }
 interface FocoResumao { nome: string; nivel: Nivel; frases: Frase[] }
@@ -43,19 +44,42 @@ export function Resumao() {
     return () => { vivo = false }
   }, [])
 
-  // Vindo do cronograma (?tema=joelho): abre e mostra direto a área do dia.
-  const temaPedido = rotaDe(window.location.hash).consulta.get('tema')
+  const [, definirLidoHoje] = usarArmazenado<ResumaoHoje>(CHAVE_RESUMAO_HOJE, RESUMAO_HOJE_VAZIO)
+  const marcarLidaHoje = (slug: string) => definirLidoHoje((atual) => comAreaLida(atual, slug))
+
+  // Vindo do cronograma (#/resumao?tema=joelho): abre e rola até a área do dia. O roteador
+  // é por hash, então nada de âncora "#rz-joelho": a área é aberta e rolada pelo código.
+  // Lê a rota viva, para reagir quando só a consulta muda (de ?tema=joelho para ?tema=mao).
+  const temaPedido = usarRota().consulta.get('tema')
   // Depende também de premium: sem o acesso em cache, as áreas além da amostra só
   // aparecem quando a consulta de assinatura responde, depois dos dados.
-  const [temaAberto, definirTemaAberto] = useState(false)
+  const [temaAberto, definirTemaAberto] = useState<string | null>(null)
   useEffect(() => {
-    if (!dados || !temaPedido || temaAberto) return
+    // Sem tema na consulta (ou trocado): esquece o anterior, para o mesmo tema pedido de novo abrir outra vez.
+    if (!temaPedido) { if (temaAberto) definirTemaAberto(null); return }
+    if (!dados || temaAberto === temaPedido) return
     const el = document.getElementById(`rz-${temaPedido}`) as HTMLDetailsElement | null
     if (!el) return
     el.open = true
-    el.scrollIntoView({ block: 'start' })
-    definirTemaAberto(true)
+    irParaSecao(el)
+    definirTemaAberto(temaPedido)
   }, [dados, temaPedido, premium, temaAberto])
+
+  // Leitura de verdade: um minuto com a área pedida aberta e a aba à vista conta como lida hoje
+  // (o item "Resumão do tema" do cronograma fica feito). Abrir e sair na hora não conta.
+  useEffect(() => {
+    if (!temaAberto) return
+    let segundos = 0
+    const t = window.setInterval(() => {
+      const el = document.getElementById(`rz-${temaAberto}`) as HTMLDetailsElement | null
+      if (document.visibilityState !== 'visible' || !el?.open) return
+      segundos += 5
+      if (segundos >= SEGUNDOS_LEITURA) { marcarLidaHoje(temaAberto); window.clearInterval(t) }
+    }, 5000)
+    return () => window.clearInterval(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [temaAberto])
+
   const irPara = (slug: string) => {
     const el = document.getElementById(`rz-${slug}`) as HTMLDetailsElement | null
     if (!el) return
@@ -68,7 +92,11 @@ export function Resumao() {
 
   const visiveis = premium ? dados.areas : dados.areas.slice(0, AREAS_AMOSTRA)
   const lidasValidas = lidas.filter((slug) => dados.areas.some((a) => a.slug === slug))
-  const alternar = (slug: string) => definirLidas(lidasValidas.includes(slug) ? lidasValidas.filter((s) => s !== slug) : [...lidasValidas, slug])
+  const alternar = (slug: string) => {
+    const lendo = !lidasValidas.includes(slug)
+    definirLidas(lendo ? [...lidasValidas, slug] : lidasValidas.filter((s) => s !== slug))
+    if (lendo) marcarLidaHoje(slug)
+  }
 
   const area = (a: AreaResumao, i: number) => {
     const lida = lidasValidas.includes(a.slug)

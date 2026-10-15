@@ -12,7 +12,7 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { calcularPlano, dataLocal, diasAte, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
-import { areasDoDiaRevisao, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
+import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
@@ -26,6 +26,7 @@ import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
 import { usarDiaAtual } from '../util/usarDiaAtual'
+import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
@@ -285,8 +286,8 @@ export function PlanoEstudo() {
   )
 }
 
-/** O que a pessoa marcou como feito hoje fora das questões (resumão, flashcards, mini-simulado). */
-interface FeitosDoDia { data: string; resumao?: boolean; flashcards?: boolean; mini?: boolean }
+/** O que a pessoa marcou como feito hoje fora das questões (flashcards, mini-simulado). O resumão tem registro próprio (estado/resumaoLido). */
+interface FeitosDoDia { data: string; flashcards?: boolean; mini?: boolean }
 const chaveHoje = () => { const d = new Date(); return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}` }
 
 /** Sessão do cronograma que ficou pela metade (a pessoa fechou o site no meio). */
@@ -346,7 +347,7 @@ export interface HubDados {
   aoTreinarFoco: (area: AreaIncidencia, foco: Foco) => void
   aoIncluirSimulados: () => void
   aoMini: () => void
-  aoMarcar: (chave: 'resumao' | 'flashcards' | 'mini') => void
+  aoMarcar: (chave: 'flashcards' | 'mini') => void
   feitosDia: FeitosDoDia
   minutosQuestao: number
   aoSemanaDificil: (ativar: boolean) => void
@@ -355,7 +356,11 @@ export interface HubDados {
 }
 
 export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
+  // O tour só é lido e gravado no cronograma do assinante (aberto): a vitrine não toca nele,
+  // para ele aparecer sozinho na primeira visita depois de assinar.
   const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
+  // O resumão marca a área como lida hoje (botão "Li esta área" ou um minuto com ela aberta).
+  const [resumaoHoje] = usarArmazenado<ResumaoHoje>(CHAVE_RESUMAO_HOJE, RESUMAO_HOJE_VAZIO)
   const minutos = hub?.minutosQuestao ?? MINUTOS_POR_QUESTAO
   const naRetaFinalComRoteiro = aberto && !!hub && (calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera')
   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
@@ -371,7 +376,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   const corHoje = corDaArea(principal?.slug ?? calculo.dias.find((d) => d.itens.length)?.itens[0]?.slug)
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
-    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: feitos.resumao ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`), aoClicar: () => hub?.aoMarcar('resumao') } : undefined })
+    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`) } : undefined })
     const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
     // A vitrine mostra o jeito do dia, sem os números (orientação de 14/10): quantas e quanto tempo é do assinante.
     if (calculo.metaDiaria > 0 && !aberto) lista.push({
@@ -435,7 +440,8 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
       <div className="cp-col cp-col--principal">
         <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
           ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} minutos={minutos} />
-          : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar} />}</div>
+          : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar}
+            aviso={folgaHoje && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar as folgas?</span><button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : undefined} />}</div>
         {(hub?.mostrarDiagnostico || (hub?.esquecidos.length ?? 0) > 0) && <div className="cp-ordem-2">
           {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
           {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
@@ -724,7 +730,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
           </div>
           <details className="pe-form__mais"><summary>O que são os OrtoQuestões Simulados?</summary><p className="texto-2">Questões autorais do site, feitas por <strong>engenharia reversa das provas originais</strong>: o mesmo estilo, o mesmo tipo de cobrança e o mesmo nível, escritas a partir da bibliografia de referência e comentadas com a citação do livro. Não contam para os temas que mais caem, que usam só as provas oficiais.</p></details>
           {atual && incluiSimulados(atual) !== simulados && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Trocar esta opção recomeça a contagem do cronograma a partir de hoje.</p>}
-          {!previa && !atual && <label className="caixa"><input type="checkbox" checked={diagnostico} onChange={(e) => definirDiagnostico(e.target.checked)} /><span>Começar com o <b>diagnóstico de 30 questões</b> (uns 45 minutos): o cronograma já sabe onde você está mais fraco desde o primeiro dia.</span></label>}
+          {!previa && !atual && <label className="caixa"><input type="checkbox" checked={diagnostico} onChange={(e) => definirDiagnostico(e.target.checked)} /><span>Começar com o <b>diagnóstico de {TAMANHO_DIAGNOSTICO} questões</b> (uns 45 minutos): o cronograma já sabe onde você está mais fraco desde o primeiro dia.</span></label>}
           {atual && <label className="caixa"><input type="checkbox" checked={recomecar} onChange={(e) => definirRecomecar(e.target.checked)} /><span>Recomeçar a contagem hoje (zera o "à frente ou atrás do cronograma")</span></label>}
         </div>}
 

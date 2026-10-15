@@ -1,4 +1,4 @@
-import { useDeferredValue, useEffect, useMemo, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { FLASHCARDS_NO_MENU, fraseGratis } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
@@ -26,6 +26,8 @@ import { href } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
+import { confirmar, pedirTexto } from '../componentes/Confirmar'
+import { usarArmazenado } from '../estado/usarArmazenado'
 import '../estilos/paginas/Treinar.css'
 
 // TEOT e TARO vêm primeiro, cada um na sua pílula. "TEOT/TARO" fica para as
@@ -58,6 +60,31 @@ const DESCRICAO_SITUACAO: Record<Situacao, string> = {
   turmaErra: `As que menos de ${LIMITE_TURMA_ERRA}% da turma acerta de primeira, começando pelas mais erradas. É onde mora a pegadinha.`,
   turmaAcertaVoceErrou: `As que ${LIMITE_TURMA_ACERTA}% ou mais da turma acerta e você errou da última vez: lacunas que custam ponto fácil na prova.`,
 }
+/** Padrão de quem chega sem filtro: Ortopedia, todos os temas, só as não respondidas, 20. */
+const PADRAO: Filtros = { ...FILTROS_VAZIOS, situacao: 'naoRespondidas', limite: 20 }
+/** "Montar em 3 toques": as situações e quantidades mais usadas, sem rolar a página. */
+const SITUACOES_RAPIDAS: Situacao[] = ['naoRespondidas', 'todas', 'erradas', 'revisarHoje']
+const QUANTIDADES_RAPIDAS = [10, 20, 30, 50]
+/** Situação em minúsculas, curta, para caber no botão de responder do celular. */
+const SITUACAO_CURTA: Record<Situacao, string> = {
+  todas: 'todas',
+  naoRespondidas: 'não respondidas',
+  erradas: 'que errei',
+  acertadas: 'que acertei',
+  favoritas: 'favoritas',
+  revisarHoje: 'revisar hoje',
+  incertas: 'chute ou dúvida',
+  dominadas: 'dominadas',
+  turmaErra: 'a turma erra',
+  turmaAcertaVoceErrou: 'turma acerta, errei',
+}
+const AREA_CURTA: Record<Area, string> = { base: 'Ortopedia', enare: 'R4 ENARE', coluna: 'R4 Coluna', quadril: 'Quadril', mao: 'Mão' }
+
+/** Filtro guardado com nome; a consulta da URL (o endereço do filtro) é a chave. */
+interface FiltroSalvo { id: string; nome: string; consulta: string }
+const CHAVE_SALVOS = 'treinar:filtros-salvos'
+const MAXIMO_SALVOS = 12
+
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
   [120, '2 horas'],
@@ -71,7 +98,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const { indice, carregando } = usarIndice()
   const { iniciarComAviso } = usarSessao()
   const { sessao: conta } = usarConta()
-  const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : { ...FILTROS_VAZIOS, limite: 10 })
+  const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : PADRAO)
+  // Chegou sem filtro: vale o padrão até a pessoa mexer (ver o efeito mais abaixo).
+  const comecouNoPadrao = useRef(!consulta.size)
   useEffect(() => {
     const mudou = () => {
       const rota = rotaDe(window.location.hash)
@@ -87,13 +116,16 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const [minutos, definirMinutos] = useState(180)
   // Link antigo com tema, subtema ou prova renomeados: fica só o que existe no
   // acervo, em vez de "1 assunto" na trilha e zero questões sem explicação.
+  function semInexistentes(atuais: Filtros): Filtros {
+    if (!indice) return atuais
+    const temas = new Set(indice.temas.map((t) => t.slug)), subtemas = new Set(indice.subtemas), provas = new Set(indice.provas)
+    const limpos = { ...atuais, temas: atuais.temas.filter((t) => temas.has(t)), subtemas: atuais.subtemas.filter((s) => subtemas.has(s)), provas: atuais.provas.filter((p) => provas.has(p)) }
+    return limpos.temas.length === atuais.temas.length && limpos.subtemas.length === atuais.subtemas.length && limpos.provas.length === atuais.provas.length ? atuais : limpos
+  }
   useEffect(() => {
     if (!indice) return
-    const temas = new Set(indice.temas.map((t) => t.slug)), subtemas = new Set(indice.subtemas), provas = new Set(indice.provas)
-    definirFiltros((atuais) => {
-      const limpos = { ...atuais, temas: atuais.temas.filter((t) => temas.has(t)), subtemas: atuais.subtemas.filter((s) => subtemas.has(s)), provas: atuais.provas.filter((p) => provas.has(p)) }
-      return limpos.temas.length === atuais.temas.length && limpos.subtemas.length === atuais.subtemas.length && limpos.provas.length === atuais.provas.length ? atuais : limpos
-    })
+    definirFiltros(semInexistentes)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [indice])
 
   // A URL acompanha os filtros: o endereço da barra é o filtro compartilhável.
@@ -132,6 +164,19 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     [indice, filtrosAdiados, contexto],
   )
   const arvore = useMemo(() => (indice ? arvoreAssuntos(indice) : []), [indice])
+  const [salvos, definirSalvos] = usarArmazenado<FiltroSalvo[]>(CHAVE_SALVOS, [])
+
+  /** O padrão possível agora: quem já respondeu tudo cai em "Todas", não em zero questões. */
+  function filtrosPadrao(): Filtros {
+    if (!indice) return PADRAO
+    return (contar(indice, FILTROS_VAZIOS, contexto).porSituacao.naoRespondidas ?? 0) > 0 ? PADRAO : { ...PADRAO, situacao: 'todas' }
+  }
+  useEffect(() => {
+    if (!indice || !comecouNoPadrao.current) return
+    comecouNoPadrao.current = false
+    definirFiltros((atuais) => filtrosParaConsulta(atuais) === filtrosParaConsulta(PADRAO) ? filtrosPadrao() : atuais)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [indice])
   const gruposProva = useMemo(() => {
     const provasNoAcervo = indice?.provas ?? []
     const grupos: Array<{ rotulo: string; provas: string[] }> = []
@@ -256,6 +301,69 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     navegar('/sessao')
   }
 
+  /** Rola até um passo e o abre se estiver recolhido (botão, não âncora: as rotas usam o #). */
+  function irPara(alvo: string) {
+    if (alvo === 'etapa-2') definirSituacaoAberta(true)
+    if (alvo === 'etapa-3') definirFiltrosProvaAbertos(true)
+    if (alvo === 'etapa-formato') definirFormatoAberto(true)
+    window.requestAnimationFrame(() => document.getElementById(alvo)?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+  }
+
+  function nomeTema(slug: string) { return indice?.temas.find((t) => t.slug === slug)?.nome ?? slug }
+  /** "Joelho", "3 assuntos" ou a categoria inteira ("Ortopedia"). */
+  function rotuloOQue(f: Filtros) {
+    const n = f.temas.length + f.subtemas.length
+    if (f.temas.length === 1 && !f.subtemas.length) return nomeTema(f.temas[0])
+    if (!f.temas.length && f.subtemas.length === 1) return f.subtemas[0]
+    if (n > 1) return `${n} assuntos`
+    if (f.soSimulados) return 'Simulados'
+    return f.areas.length > 2 ? `${f.areas.length} categorias` : f.areas.map((a) => AREA_CURTA[a]).join(' + ')
+  }
+  function rotuloFiltro(f: Filtros) {
+    return [rotuloOQue(f), SITUACAO_CURTA[f.situacao], f.limite ?? 'todas'].join(' · ')
+  }
+
+  // Filtros salvos: a consulta da URL guarda tudo (assunto, situação, prova, quantidade…).
+  const consultaAtual = filtrosParaConsulta(filtros)
+  const salvoAtual = salvos.find((s) => s.consulta === consultaAtual)
+  async function salvarFiltro() {
+    if (salvoAtual || salvos.length >= MAXIMO_SALVOS) return
+    const consultaGravada = consultaAtual
+    const nome = (await pedirTexto({
+      titulo: 'Salvar este filtro',
+      texto: 'Dê um nome curto. Ele fica no topo do Treinar e refaz este filtro com um toque.',
+      rotulo: 'Nome do filtro',
+      valorInicial: rotuloFiltro(filtros).replace(/ · /g, ' '),
+      sim: 'Salvar',
+      obrigatorio: true,
+      maximo: 40,
+    }))?.trim()
+    if (!nome) return
+    const id = Date.now().toString(36) + Math.random().toString(36).slice(2, 6)
+    definirSalvos((atuais) => [...atuais.filter((s) => s.consulta !== consultaGravada), { id, nome, consulta: consultaGravada }])
+  }
+  function aplicarSalvo(salvo: FiltroSalvo) {
+    comecouNoPadrao.current = false
+    definirFiltros(semInexistentes(consultaParaFiltros(new URLSearchParams(salvo.consulta.replace(/^\?/, '')))))
+  }
+  async function renomearSalvo(salvo: FiltroSalvo) {
+    const nome = (await pedirTexto({ titulo: 'Renomear filtro', rotulo: 'Nome do filtro', valorInicial: salvo.nome, sim: 'Renomear', obrigatorio: true, maximo: 40 }))?.trim()
+    if (nome) definirSalvos((atuais) => atuais.map((s) => (s.id === salvo.id ? { ...s, nome } : s)))
+  }
+  async function apagarSalvo(salvo: FiltroSalvo) {
+    if (!(await confirmar({ titulo: `Apagar o filtro "${salvo.nome}"?`, texto: 'Some só o atalho. Suas respostas e o filtro que está na tela continuam iguais.', sim: 'Apagar' }))) return
+    definirSalvos((atuais) => atuais.filter((s) => s.id !== salvo.id))
+  }
+
+  /** "Salvar este filtro": no topo (quando já há salvos), nos 3 toques e na barra do computador. */
+  function botaoSalvar(classe: string) {
+    return (
+      <button type="button" className={'botao botao--fantasma ' + classe} onClick={salvarFiltro} disabled={!!salvoAtual || salvos.length >= MAXIMO_SALVOS || !indice} title={salvoAtual ? `Salvo como "${salvoAtual.nome}"` : 'Guardar este filtro com um nome'}>
+        <Icone nome={salvoAtual ? 'certo' : 'estrela'} tamanho={16} /> {salvoAtual ? 'Filtro salvo' : 'Salvar filtro'}
+      </button>
+    )
+  }
+
   if (carregando) return <Carregando linhas={6} rotulo="Carregando os filtros" />
 
   if (indice && indice.total === 0) {
@@ -285,6 +393,37 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   // Sempre as mesmas pílulas, no mesmo lugar: esconder as vazias fazia as outras mudarem de
   // posição a cada filtro. A vazia fica visível e desabilitada (com 0).
   const situacoesVisiveis = SITUACOES.filter((s) => !SITUACOES_TURMA.includes(s))
+
+  // O botão de começar diz o que vai começar: "Responder 20 · Joelho · não respondidas".
+  const escolha = `${rotuloOQue(filtros)} · ${SITUACAO_CURTA[filtros.situacao]}`
+  const verbo = simulado ? 'Iniciar prova' : 'Responder'
+  const rotuloComecar = total === 0 ? 'Ajuste os filtros' : `${verbo} ${quantidadeSessao} · ${escolha}`
+  const conteudoComecar = total === 0 ? 'Ajuste os filtros' : (
+    <>
+      <span className="tr-comecar__verbo">{verbo} <span className="botao__contador">{quantidadeSessao}</span></span>
+      <span className="tr-comecar__ponto" aria-hidden="true">·</span>
+      <span className="tr-comecar__escolha">{escolha}</span>
+    </>
+  )
+
+  // Montar em 3 toques: O que · Quais · Quantas. O que mais estiver valendo aparece escrito.
+  const valorTema = selecionados === 0 ? '' : filtros.temas.length === 1 && !filtros.subtemas.length ? filtros.temas[0] : '__varios'
+  const temasDaCategoria = arvore.filter((t) => (gerais?.porTema[t.slug] ?? 0) > 0 || filtros.temas.includes(t.slug))
+  const totalTodosTemas = Object.values(contagens?.porTema ?? {}).reduce((soma, n) => soma + n, 0)
+  const situacoesTres = SITUACOES_RAPIDAS.includes(filtros.situacao) ? SITUACOES_RAPIDAS : [...SITUACOES_RAPIDAS, filtros.situacao]
+  const quantidadesTres = filtros.limite === null || QUANTIDADES_RAPIDAS.includes(filtros.limite) ? QUANTIDADES_RAPIDAS : [...QUANTIDADES_RAPIDAS, filtros.limite].sort((a, b) => a - b)
+  const tambemValem = [
+    nomesProva.join(', '),
+    filtros.soSimulados && selecionados ? 'só simulados' : '',
+    [...filtros.anos].sort((a, b) => b - a).join(', '),
+    filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', '),
+    filtros.busca.trim() ? `busca "${filtros.busca.trim()}"` : '',
+    filtros.comImagem ? 'só com imagem' : '',
+    filtros.comComentario ? 'só com comentário' : '',
+    filtros.incluirAnuladas ? 'com anuladas' : '',
+    filtros.embaralhar ? '' : 'na ordem da prova',
+    simulado ? `modo prova, ${DURACOES.find(([v]) => v === minutos)?.[1] ?? `${minutos} min`}` : '',
+  ].filter(Boolean)
   return (
     <div className="empilha-2 treinar-pagina">
       <section className="tr-heroi">
@@ -311,6 +450,89 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </div>
       </section>
 
+      {salvos.length > 0 && <section className="tr-salvos" aria-labelledby="tr-salvos-titulo">
+        <div className="tr-salvos__cabeca">
+          <h2 id="tr-salvos-titulo"><Icone nome="filtro" tamanho={16} /> Seus filtros salvos</h2>
+          {botaoSalvar('tr-salvos__salvar')}
+        </div>
+        <ul className="tr-salvos__lista">
+          {salvos.map((salvo) => (
+            <li key={salvo.id} className="tr-salvo">
+              <button type="button" className="tr-salvo__usar" aria-pressed={salvo.consulta === consultaAtual} onClick={() => aplicarSalvo(salvo)}>
+                <strong>{salvo.nome}</strong>
+                <small>{rotuloFiltro(consultaParaFiltros(new URLSearchParams(salvo.consulta.replace(/^\?/, ''))))}</small>
+              </button>
+              <button type="button" className="tr-salvo__acao" aria-label={`Renomear o filtro ${salvo.nome}`} title="Renomear" onClick={() => renomearSalvo(salvo)}><Icone nome="lapis" tamanho={16} /></button>
+              <button type="button" className="tr-salvo__acao" aria-label={`Apagar o filtro ${salvo.nome}`} title="Apagar" onClick={() => apagarSalvo(salvo)}><Icone nome="lixeira" tamanho={16} /></button>
+            </li>
+          ))}
+        </ul>
+        {salvos.length >= MAXIMO_SALVOS && !salvoAtual && <p className="tr-salvos__vazio">Chegou a {MAXIMO_SALVOS} filtros salvos: apague um para salvar outro.</p>}
+        {!conta && <p className="tr-salvos__vazio">Sem conta, os filtros salvos valem só enquanto esta aba estiver aberta.</p>}
+      </section>}
+
+      <section className="tr-tres" aria-labelledby="tr-tres-titulo">
+        <header className="tr-tres__cabeca">
+          <h2 id="tr-tres-titulo">Montar em 3 toques</h2>
+          <p>O que, quais e quantas. Já vem no padrão: é só tocar em responder.</p>
+        </header>
+        <div className="tr-tres__linha">
+          <label className="tr-tres__rotulo" htmlFor="tr-tres-tema"><b>1</b> O que</label>
+          <select
+            id="tr-tres-tema"
+            className="entrada tr-tres__tema"
+            value={valorTema}
+            onChange={(e) => { if (e.target.value !== '__varios') atualizar({ temas: e.target.value ? [e.target.value] : [], subtemas: [] }) }}
+          >
+            {valorTema === '__varios' && <option value="__varios" disabled>{rotuloOQue(filtros)} (escolhidos abaixo)</option>}
+            <option value="">{rotuloOQue({ ...filtros, temas: [], subtemas: [] })} · todos os temas ({totalTodosTemas})</option>
+            {temasDaCategoria.map((t) => {
+              const n = contagens?.porTema[t.slug] ?? 0
+              return <option key={t.slug} value={t.slug} disabled={n === 0 && valorTema !== t.slug}>{t.nome} ({n})</option>
+            })}
+          </select>
+        </div>
+        <div className="tr-tres__linha">
+          <span className="tr-tres__rotulo" id="tr-tres-quais"><b>2</b> Quais</span>
+          <div className="tr-pilulas" role="group" aria-labelledby="tr-tres-quais">
+            {situacoesTres.map((situacao) => (
+              <button
+                key={situacao}
+                type="button"
+                className="tr-pilula"
+                aria-pressed={filtros.situacao === situacao}
+                disabled={situacao !== 'todas' && situacao !== filtros.situacao && (contagens?.porSituacao[situacao] ?? 0) === 0}
+                onClick={() => atualizar({ situacao })}
+              >
+                {ROTULO_SITUACAO[situacao]}
+                <span className="numerico">{contagens?.porSituacao[situacao] ?? 0}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="tr-tres__linha">
+          <span className="tr-tres__rotulo" id="tr-tres-quantas"><b>3</b> Quantas</span>
+          <div className="tr-pilulas" role="group" aria-labelledby="tr-tres-quantas">
+            {quantidadesTres.map((n) => (
+              <button key={n} type="button" className="tr-pilula" aria-pressed={filtros.limite === n} disabled={total < n && filtros.limite !== n} onClick={() => atualizar({ limite: n })}>{n}</button>
+            ))}
+            <button type="button" className="tr-pilula" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
+          </div>
+        </div>
+        {tambemValem.length > 0 && (
+          <p className="tr-tres__extras"><Icone nome="filtro" tamanho={15} /> <span>Também valem: <b>{tambemValem.join(' · ')}</b>.</span></p>
+        )}
+        <div className="tr-tres__acoes">
+          <button type="button" className="botao botao--principal botao--grande tr-comecar" disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
+            {conteudoComecar}
+          </button>
+          <div className="tr-tres__secundarias">
+            <button type="button" className="botao botao--fantasma tr-tres__mais" onClick={() => irPara('etapa-1')}>Ajustar mais <Icone nome="baixo" tamanho={16} /></button>
+            {botaoSalvar('tr-tres__salvar')}
+          </div>
+        </div>
+      </section>
+
       <nav className="tr-trilha" aria-label="Passos para montar a sessão">
         {[
           ['etapa-1', 'O que estudar', selecionados ? `${selecionados} ${selecionados === 1 ? 'assunto' : 'assuntos'}` : 'todos os assuntos'],
@@ -318,9 +540,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           ['etapa-3', 'Filtrar mais', 'opcional'],
           ['etapa-formato', 'Quantas e como', `${filtros.limite ?? 'todas'} · ${simulado ? 'prova' : 'estudo'}`],
         ].map(([alvo, titulo, resumo], i) => (
-          <a key={alvo} className="tr-trilha__passo" href={`#${alvo}`} onClick={(e) => { e.preventDefault(); document.getElementById(alvo)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>
+          <button key={alvo} type="button" className="tr-trilha__passo" onClick={() => irPara(alvo)}>
             <b>{i + 1}</b><span><strong>{titulo}</strong><small>{resumo}</small></span>
-          </a>
+          </button>
         ))}
       </nav>
 
@@ -681,13 +903,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </span>
         </div>
         <a className="botao botao--ouro tr-barra__cronograma" href={href('/cronograma')} title={rotuloCronograma} aria-label={rotuloCronograma}><Icone nome="rota" tamanho={18} /><span>{rotuloCronograma}</span></a>
-        <button type="button" className="botao botao--fantasma tr-barra__limpar" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, limite: 10 })}>Limpar</button>
-        <button type="button" className="botao botao--principal botao--grande" disabled={total === 0 || carregandoBusca} onClick={comecar}>
-          {total === 0 ? 'Ajuste os filtros' : simulado ? (
-            <>Iniciar modo prova · <span className="botao__contador">{quantidadeSessao}</span></>
-          ) : (
-            <>Responder <span className="botao__contador">{quantidadeSessao}</span> {quantidadeSessao === 1 ? 'questão' : 'questões'}</>
-          )}
+        {botaoSalvar('tr-barra__salvar')}
+        <button type="button" className="botao botao--fantasma tr-barra__limpar" title="Voltar ao padrão: Ortopedia, não respondidas, 20" onClick={() => definirFiltros(filtrosPadrao())}>Limpar</button>
+        <button type="button" className="botao botao--principal botao--grande tr-comecar" disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
+          {conteudoComecar}
         </button>
       </div>
     </div>
