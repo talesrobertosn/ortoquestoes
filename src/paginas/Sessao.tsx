@@ -208,13 +208,17 @@ export function Sessao() {
     if (!sessao || sessao.simulado || !questoes) return
     preCarregarComentario(indice, questaoAtual)
     const proxima = questoes.find((q) => q.id === sessao.ids[posicao + 1]) ?? null
-    const espera = window.setTimeout(() => {
-      preCarregarComentario(indice, proxima)
-      // As figuras da próxima também: ao avançar, a imagem já está no cache.
-      for (const imagem of proxima?.imagens ?? []) new Image().src = urlImagem(imagem.arquivo)
-    }, 1500)
+    const espera = window.setTimeout(() => preCarregarComentario(indice, proxima), 1500)
     return () => window.clearTimeout(espera)
   }, [indice, questoes, questaoAtual, sessao, posicao])
+
+  // As figuras da próxima descem em toda sessão, simulado inclusive (lá a espera
+  // pela imagem gasta o cronômetro): ao avançar, a imagem já está no cache.
+  useEffect(() => {
+    if (!sessao || !questoes) return
+    const proxima = questoes.find((q) => q.id === sessao.ids[posicao + 1])
+    for (const imagem of proxima?.imagens ?? []) new Image().src = urlImagem(imagem.arquivo)
+  }, [questoes, sessao, posicao])
 
   // Deslizar troca de questão. Na última, o cartão só resiste: encerrar a
   // sessão continua sendo um toque de propósito, nunca um gesto sem querer.

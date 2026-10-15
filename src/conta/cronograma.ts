@@ -24,14 +24,29 @@ function anunciar(plano: PlanoSalvo | null) {
   window.dispatchEvent(new CustomEvent<PlanoSalvo | null>(EVENTO_PLANO, { detail: plano }))
 }
 
+/**
+ * Leituras podem se sobrepor (foco, aba, rede, intervalo, gravações). Cada pedido
+ * leva um número; uma resposta só é anunciada se for mais nova que a última
+ * anunciada e se o pedido saiu depois da última gravação. Assim, uma leitura
+ * lenta feita antes de salvar não traz de volta o plano velho para a tela.
+ */
+let pedidos = 0
+let ultimoAnunciado = 0
+let ultimaGravacao = 0
+const marcarGravacao = () => { ultimaGravacao = ++pedidos }
+
 export async function obterPlano(): Promise<PlanoSalvo | null> {
+  const numero = ++pedidos
   const [bruto] = await chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {})
   const plano = !bruto ? null : {
     ...bruto,
     incluir_simulados: typeof bruto.incluir_simulados === 'boolean' ? bruto.incluir_simulados : ler<boolean>(CHAVE, true),
     opcoes: bruto.opcoes && typeof bruto.opcoes === 'object' ? bruto.opcoes : {},
   }
-  anunciar(plano)
+  if (numero > ultimoAnunciado && numero > ultimaGravacao) {
+    ultimoAnunciado = numero
+    anunciar(plano)
+  }
   return plano
 }
 
@@ -92,6 +107,7 @@ export async function salvarPlano(dados: DadosPlano, incluirSimulados: boolean, 
     { ...dados },
   ]
   for (const [i, corpo] of tentativas.entries()) {
+    marcarGravacao()
     try { await chamarRpc('salvar_plano_estudo', corpo); break } catch (falha) {
       if (!funcaoInexistente(falha) || i === tentativas.length - 1) throw falha
     }
@@ -129,6 +145,7 @@ export async function salvarOpcoes(alterar: (atual: PlanoSalvo) => OpcoesPlano |
   const patch = Object.fromEntries(Object.entries(opcoes).filter(([k, v]) => JSON.stringify(v) !== JSON.stringify((antes as Record<string, unknown>)[k])))
   if (!Object.keys(patch).length && !removeu) return plano
   if (!removeu) {
+    marcarGravacao()
     try { await chamarRpc('ajustar_opcoes_plano', { p_patch: patch }); return obterPlano() } catch (falha) {
       if (!funcaoInexistente(falha)) throw falha
     }

@@ -30,12 +30,18 @@ const POR_PAGINA = 12
 const dataCurta = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short' })
 
 function levantarErros(indice: Indice, respondidas: Record<string, RegistroQuestao>): Erro[] {
+  // Cópias de uma mesma questão (`dup` aponta para o id original) entram uma vez só,
+  // com os históricos somados: um erro feito pela cópia não some porque o original foi acertado.
+  const copias = new Map<string, string[]>()
+  for (const item of indice.questoes) {
+    if (item.dup && respondidas[item.dup]) copias.set(item.dup, [...(copias.get(item.dup) ?? []), item.id])
+  }
   const lista: Erro[] = []
   for (const item of indice.questoes) {
-    const r = respondidas[item.id]
-    if (!r) continue
-    // Cópia de uma questão que a pessoa também respondeu pelo id original: entra uma vez só.
     if (item.dup && respondidas[item.dup]) continue
+    const registros = [item.id, ...(copias.get(item.id) ?? [])].map((id) => respondidas[id]).filter((r): r is RegistroQuestao => !!r)
+    if (!registros.length) continue
+    const r = registros.length === 1 ? registros[0] : juntarRegistros(registros)
     const erros = r.erros ?? (r.c === false ? 1 : 0)
     if (erros === 0 && r.c !== false) continue
     const ultimoErro = [...(r.historico ?? [])].reverse().find((h) => h.correta === false)
@@ -46,6 +52,17 @@ function levantarErros(indice: Indice, respondidas: Record<string, RegistroQuest
     })
   }
   return lista
+}
+
+/** Original e cópias como um registro só: a resposta mais recente manda, os erros e o histórico somam. */
+function juntarRegistros(registros: RegistroQuestao[]): RegistroQuestao {
+  const recente = registros.reduce((a, b) => (b.q > a.q ? b : a))
+  const errosDe = (r: RegistroQuestao) => r.erros ?? (r.c === false ? 1 : 0)
+  return {
+    ...recente,
+    erros: registros.reduce((soma, r) => soma + errosDe(r), 0),
+    historico: registros.flatMap((r) => r.historico ?? []).sort((a, b) => a.em - b.em),
+  }
 }
 
 /**
