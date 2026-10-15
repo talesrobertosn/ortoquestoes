@@ -2,6 +2,752 @@
  "area": "coluna",
  "flashcards": [
   {
+   "id": "fc-coluna-0010-co1",
+   "questao": "coluna-0010",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Até cerca de que idade fica aberta a sincondrose entre o dente e o corpo do áxis, que pode simular fratura?",
+   "resposta": "6 anos",
+   "explicacao": "Até cerca de **6 anos**; uma sincondrose aberta é cartilagem e pode ser confundida com fratura.",
+   "opcoes": [
+    "6 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "0140e863c0aa",
+   "origem": "autoral",
+   "trecho": "a sincondrose entre o dente e o corpo do áxis (C2), que fica aberta até cerca de 6 anos",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0010-pc1",
+   "questao": "coluna-0010",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "As sincondroses neurocentrais unem cada hemiarco ao corpo. Qual sincondrose une os dois hemiarcos na linha média?",
+   "resposta": "sincondrose posterior",
+   "explicacao": "A **sincondrose posterior** fecha nos primeiros anos; as neurocentrais torácicas são as últimas a fechar.",
+   "opcoes": [
+    "sincondrose posterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "0140e863c0aa",
+   "origem": "autoral",
+   "trecho": "A **sincondrose posterior** une os dois hemiarcos na linha média",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0023-co1",
+   "questao": "coluna-0023",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual variação óssea de C1, uma ponte sobre a artéria vertebral, pode enganar quem coloca parafusos na massa lateral?",
+   "resposta": "ponticulus posticus",
+   "explicacao": "O **ponticulus posticus** parece parte do arco e pode levar o parafuso à artéria vertebral.",
+   "opcoes": [
+    "ponticulus posticus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "8c80f0adde1b",
+   "origem": "autoral",
+   "trecho": "o **ponticulus posticus**, uma ponte de osso sobre a artéria",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0023-co2",
+   "questao": "coluna-0023",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A raiz de C2, que passa abaixo do arco de C1, forma qual nervo?",
+   "resposta": "nervo occipital maior",
+   "explicacao": "A raiz de C2 forma o **nervo occipital maior**; sua lesão dá dor ou dormência occipital.",
+   "opcoes": [
+    "nervo occipital maior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "8c80f0adde1b",
+   "origem": "autoral",
+   "trecho": "A raiz de **C2**, que forma o nervo occipital maior, passa **abaixo** do arco de C1",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0027-co1",
+   "questao": "coluna-0027",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual síndrome resulta da lesão ou ligadura da artéria de Adamkiewicz?",
+   "resposta": "síndrome medular anterior",
+   "explicacao": "**Síndrome medular anterior**: paraplegia e perda de dor e temperatura, com propriocepção preservada.",
+   "opcoes": [
+    "síndrome medular anterior"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "23eed8e7588e",
+   "origem": "autoral",
+   "trecho": "surge a **síndrome medular anterior**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0027-co2",
+   "questao": "coluna-0027",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No acesso anterior à coluna torácica, por qual lado muitos cirurgiões preferem entrar para ficar longe da Adamkiewicz?",
+   "resposta": "direita",
+   "explicacao": "Pela **direita**: a Adamkiewicz nasce à esquerda em cerca de três quartos das pessoas.",
+   "opcoes": [
+    "direita",
+    "esquerda"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "23eed8e7588e",
+   "origem": "autoral",
+   "trecho": "muitos cirurgiões preferem entrar pela **direita** quando a doença permite",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0054-co1",
+   "questao": "coluna-0054",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No acesso paraespinhal de Wiltse, a que distância da linha média se faz a incisão?",
+   "resposta": "4 a 5 cm",
+   "explicacao": "Incisão paramediana a **4 a 5 cm** da linha média, no plano entre multífido e longuíssimo.",
+   "opcoes": [
+    "4 a 5 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "cdc5d0eca2d6",
+   "origem": "autoral",
+   "trecho": "paramediana, ~4 a 5 cm lateral à linha média",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0054-co2",
+   "questao": "coluna-0054",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Fraturas da coluna toracolombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No acesso de Wiltse, qual ramo do ramo dorsal, que inerva o multífido, é preservado?",
+   "resposta": "ramo medial",
+   "explicacao": "Wiltse preserva a inserção do multífido e o **ramo medial** do ramo dorsal.",
+   "opcoes": [
+    "ramo medial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "cdc5d0eca2d6",
+   "origem": "autoral",
+   "trecho": "preserva a inserção do multífido e o **ramo medial** do ramo dorsal",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0067-co1",
+   "questao": "coluna-0067",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No equilíbrio sagital, qual eixo vertical sagital (SVA) é considerado aceitável?",
+   "resposta": "até cerca de 5 cm",
+   "explicacao": "SVA de **até cerca de 5 cm**; o prumo de C7 cai atrás do promontório, junto ao canto posterossuperior de S1.",
+   "opcoes": [
+    "até cerca de 5 cm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "73a8033c1cdc",
+   "origem": "autoral",
+   "trecho": "considera-se aceitável um SVA de até cerca de 5 cm",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0067-co2",
+   "questao": "coluna-0067",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na correção da deformidade da coluna do adulto, qual versão pélvica se busca?",
+   "resposta": "abaixo de cerca de 20 graus",
+   "explicacao": "Metas: SVA abaixo de 5 cm, lordose proporcional à incidência pélvica e versão pélvica **abaixo de cerca de 20 graus**.",
+   "opcoes": [
+    "abaixo de cerca de 20 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "73a8033c1cdc",
+   "origem": "autoral",
+   "trecho": "uma versão pélvica abaixo de cerca de 20 graus",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0085-co1",
+   "questao": "coluna-0085",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Hérnia de disco e mielopatia cervical"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual epônimo recebe o tubérculo carotídeo, o tubérculo anterior do transverso de C6?",
+   "resposta": "Chassaignac",
+   "explicacao": "Tubérculo de **Chassaignac**: a carótida comum passa à frente dele e pode ser comprimida contra o osso.",
+   "opcoes": [
+    "Chassaignac"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "6c8d2e153b11",
+   "origem": "autoral",
+   "trecho": "recebe o nome de tubérculo carotídeo, ou de Chassaignac",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0163-co1",
+   "questao": "coluna-0163",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Fraturas da coluna toracolombar",
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quanto da lordose lombar o segmento L5-S1 faz sozinho?",
+   "resposta": "perto de 40%",
+   "explicacao": "L5-S1 faz **perto de 40%**; com L4-L5, cerca de dois terços da lordose lombar.",
+   "opcoes": [
+    "perto de 40%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "3a15d91ce390",
+   "origem": "autoral",
+   "trecho": "o L5-S1 sozinho já faz algo perto de 40%",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0163-co2",
+   "questao": "coluna-0163",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Fraturas da coluna toracolombar",
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se chama a perda iatrogênica da lordose após artrodese lombar baixa feita reta?",
+   "resposta": "síndrome do dorso plano",
+   "explicacao": "**Síndrome do dorso plano** (flatback): tronco projetado à frente, dor e degeneração acima.",
+   "opcoes": [
+    "síndrome do dorso plano"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "3a15d91ce390",
+   "origem": "autoral",
+   "trecho": "É a chamada **síndrome do dorso plano** iatrogênica, ou flatback.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0208-pc1",
+   "questao": "coluna-0208",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na coluna lombar, as facetas ficam quase no plano sagital. Em que plano ficam as facetas torácicas?",
+   "resposta": "plano coronal",
+   "explicacao": "Torácicas no **plano coronal** (telhas): permitem rotação. Lombares sagitais: flexoextensão, travam a rotação.",
+   "opcoes": [
+    "plano coronal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "8fc9e7d229ce",
+   "origem": "autoral",
+   "trecho": "As facetas ficam no plano coronal, como telhas sobrepostas, e permitem rotação",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0209-co1",
+   "questao": "coluna-0209",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No adulto, qual parte do disco intervertebral ainda recebe vasos da periferia?",
+   "resposta": "terço mais externo do anel",
+   "explicacao": "Só o **terço externo do anel**; núcleo e anel interno vivem de difusão pela placa terminal.",
+   "opcoes": [
+    "terço mais externo do anel"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "f368561d7dc8",
+   "origem": "autoral",
+   "trecho": "Apenas o terço mais externo do anel recebe vasos pequenos da periferia.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0209-co2",
+   "questao": "coluna-0209",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a maior estrutura do corpo adulto sem vasos sanguíneos?",
+   "resposta": "disco intervertebral",
+   "explicacao": "O **disco intervertebral**: nutrição por difusão, frágil diante de cigarro, aterosclerose e diabetes.",
+   "opcoes": [
+    "disco intervertebral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "f368561d7dc8",
+   "origem": "autoral",
+   "trecho": "O disco intervertebral do adulto é a maior estrutura do corpo sem vasos sanguíneos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0216-cl1",
+   "questao": "coluna-0216",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Anderson-Montesano das fraturas do côndilo occipital, qual tipo é a avulsão do ligamento alar?",
+   "resposta": "tipo III",
+   "explicacao": "**Tipo III**: avulsão do alar, potencialmente instável.",
+   "opcoes": [
+    "tipo III"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "f4b0629ff353",
+   "origem": "autoral",
+   "trecho": "**Fratura do côndilo occipital tipo III** (Anderson-Montesano): avulsão do alar",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0216-pc1",
+   "questao": "coluna-0216",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os alares vão do dente aos côndilos occipitais. Qual ligamento horizontal, atrás do dente, controla a translação anterior de C1?",
+   "resposta": "Transverso",
+   "explicacao": "O **transverso** une as massas laterais de C1 atrás do dente e controla a **translação anterior**.",
+   "opcoes": [
+    "Transverso",
+    "Alar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "f4b0629ff353",
+   "origem": "autoral",
+   "trecho": "**Transverso:** **horizontal**, atrás do dente, entre as massas laterais de C1. Controla a **translação anterior**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0272-co1",
+   "questao": "coluna-0272",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Lombalgia",
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ramo lateral do ramo dorsal do nervo espinal vai para qual músculo?",
+   "resposta": "iliocostal",
+   "explicacao": "Ramo dorsal: **lateral** ao iliocostal e pele; **intermediário** ao longuíssimo; **medial** à faceta e ao multífido.",
+   "opcoes": [
+    "iliocostal",
+    "longuíssimo",
+    "multífido"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a537bd7cc456",
+   "origem": "autoral",
+   "trecho": "**lateral**, que vai para o músculo iliocostal e para a pele",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0272-co2",
+   "questao": "coluna-0272",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Lombalgia",
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No bloqueio facetário, sob qual pequeno ligamento passa o ramo medial, onde se posiciona a agulha?",
+   "resposta": "mamiloacessório",
+   "explicacao": "No encontro do transverso com o articular superior, sob o ligamento **mamiloacessório**.",
+   "opcoes": [
+    "mamiloacessório"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a537bd7cc456",
+   "origem": "autoral",
+   "trecho": "sob um pequeno ligamento (o mamiloacessório)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0272-co3",
+   "questao": "coluna-0272",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Lombalgia",
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Cada articulação facetária lombar recebe ramos mediais de quais níveis?",
+   "resposta": "o do seu nível e o do nível de cima",
+   "explicacao": "Recebe **o do seu nível e o do nível de cima**: por isso o bloqueio é feito em dois ramos por articulação.",
+   "opcoes": [
+    "o do seu nível e o do nível de cima"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a537bd7cc456",
+   "origem": "autoral",
+   "trecho": "Cada faceta recebe ramos de dois níveis, o do seu nível e o do nível de cima",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0272-pc1",
+   "questao": "coluna-0272",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Lombalgia",
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ramo medial do ramo dorsal inerva a faceta. Qual nervo inerva a parte posterior do disco e o LLP?",
+   "resposta": "nervo sinuvertebral",
+   "explicacao": "O **sinuvertebral** volta ao canal e é o nervo da dor discogênica; o ramo medial, da dor facetária.",
+   "opcoes": [
+    "nervo sinuvertebral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a537bd7cc456",
+   "origem": "autoral",
+   "trecho": "Não confundir com o **nervo sinuvertebral**, que nasce perto do ramo ventral, volta para dentro do canal e inerva a parte posterior do disco",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0281-co1",
+   "questao": "coluna-0281",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Vias de acesso à coluna",
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No acesso anterior cervical, a lesão de qual estrutura sobre o longus colli causa síndrome de Horner?",
+   "resposta": "Cadeia simpática",
+   "explicacao": "A **cadeia simpática** fica sobre o longus colli, lateralmente; dissecção lateral agressiva causa Horner.",
+   "opcoes": [
+    "Cadeia simpática"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "2ffb35540375",
+   "origem": "autoral",
+   "trecho": "**Cadeia simpática** sobre o longus colli (lateralmente). Dissecção lateral agressiva causa **síndrome de Horner**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0281-co2",
+   "questao": "coluna-0281",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Vias de acesso à coluna",
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No acesso anterior cervical, de que lado o nervo laríngeo recorrente corre mais risco?",
+   "resposta": "direita",
+   "explicacao": "O **laríngeo recorrente** corre mais risco à **direita** e nos níveis baixos.",
+   "opcoes": [
+    "direita"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "2ffb35540375",
+   "origem": "autoral",
+   "trecho": "**Laríngeo recorrente**, sobretudo à **direita** e em níveis baixos.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0286-co1",
+   "questao": "coluna-0286",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que nível termina geralmente o saco dural?",
+   "resposta": "S2",
+   "explicacao": "O **saco dural** termina em **S2**; a medula (cone medular) termina por volta de L1-L2.",
+   "opcoes": [
+    "S2",
+    "L1-L2"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "74efe68f46ef",
+   "origem": "autoral",
+   "trecho": "O **saco dural** termina geralmente em **S2**.",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0286-co2",
+   "questao": "coluna-0286",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ressonância sagital, em qual parede do canal vertebral fica o ligamento longitudinal posterior?",
+   "resposta": "anterior",
+   "explicacao": "O LLP fica na parede **anterior** do canal, colado aos corpos; o amarelo fica atrás, entre as lâminas.",
+   "opcoes": [
+    "anterior",
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "74efe68f46ef",
+   "origem": "autoral",
+   "trecho": "O **ligamento longitudinal posterior** fica na parede **anterior** do canal",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0286-pc1",
+   "questao": "coluna-0286",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O saco dural termina em S2. Por volta de que nível termina a medula, no cone medular?",
+   "resposta": "L1-L2",
+   "explicacao": "Cone medular em **L1-L2**; abaixo dele estão as raízes da cauda equina.",
+   "opcoes": [
+    "L1-L2"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "74efe68f46ef",
+   "origem": "autoral",
+   "trecho": "A medula termina por volta de **L1-L2** (o cone medular)",
+   "criadoEm": "2026-10-15"
+  },
+  {
    "id": "fc-coluna-0302-co1",
    "questao": "coluna-0302",
    "area": "Coluna",
@@ -82,6 +828,178 @@
    "fonte": "59d3952e6d15",
    "origem": "autoral",
    "trecho": "granuloma eosinofílico (que dá a vértebra plana)",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0321-co1",
+   "questao": "coluna-0321",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O disco resiste mal ao cisalhamento horizontal. Quais estruturas controlam principalmente essa carga?",
+   "resposta": "facetas articulares",
+   "explicacao": "As **facetas articulares** seguram o cisalhamento; perder esse controle favorece a espondilolistese.",
+   "opcoes": [
+    "facetas articulares"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "dcd4fd4e850b",
+   "origem": "autoral",
+   "trecho": "quem a controla são principalmente as **facetas articulares**",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0321-co2",
+   "questao": "coluna-0321",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como se ancoram as fibras do terço externo do anel fibroso no anel apofisário?",
+   "resposta": "fibras de Sharpey",
+   "explicacao": "Terço externo: **fibras de Sharpey** no anel apofisário. A placa cartilaginosa não tem fibras contínuas com o osso.",
+   "opcoes": [
+    "fibras de Sharpey"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "dcd4fd4e850b",
+   "origem": "autoral",
+   "trecho": "As fibras do **terço externo** do anel ancoram-se firmemente no anel apofisário do corpo vertebral (fibras de Sharpey).",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0401-co1",
+   "questao": "coluna-0401",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Vias de acesso à coluna"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na maioria das pessoas, em qual vértebra a artéria vertebral entra no forame transverso?",
+   "resposta": "C6",
+   "explicacao": "A artéria vertebral entra no forame transverso em **C6** e sobe até C1.",
+   "opcoes": [
+    "C6"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2024,
+   "fonte": "b63ac3764bca",
+   "origem": "autoral",
+   "trecho": "a artéria vertebral entra no forame transverso de C6",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0401-tb1",
+   "questao": "coluna-0401",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Vias de acesso à coluna"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na via anterior cervical, qual nível vertebral corresponde ao osso hioide?",
+   "resposta": "C3",
+   "explicacao": "Hioide **C3**; cartilagem tireoide C4-C5; cricoide e tubérculo carotídeo C6; fúrcula T2.",
+   "opcoes": [
+    "C3",
+    "C4-C5",
+    "C6"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2024,
+   "fonte": "b63ac3764bca",
+   "origem": "autoral",
+   "trecho": "Osso hioide | C3",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0401-tb2",
+   "questao": "coluna-0401",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Vias de acesso à coluna"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na via anterior cervical, qual nível vertebral corresponde à borda superior da cartilagem tireoide?",
+   "resposta": "C4-C5",
+   "explicacao": "Cartilagem tireoide (borda superior) em **C4-C5**; confirmar sempre com radioscopia.",
+   "opcoes": [
+    "C4-C5",
+    "C3",
+    "C6"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2024,
+   "fonte": "b63ac3764bca",
+   "origem": "autoral",
+   "trecho": "Cartilagem tireoide (borda superior) | C4-C5",
+   "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0401-tb3",
+   "questao": "coluna-0401",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Anatomia da coluna",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Vias de acesso à coluna"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nível vertebral corresponde à fúrcula esternal?",
+   "resposta": "T2",
+   "explicacao": "A **fúrcula esternal** fica na altura de **T2**.",
+   "opcoes": [
+    "T2"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "R4 Coluna SES-DF",
+   "ano": 2024,
+   "fonte": "b63ac3764bca",
+   "origem": "autoral",
+   "trecho": "Fúrcula esternal | T2",
    "criadoEm": "2026-10-15"
   },
   {
