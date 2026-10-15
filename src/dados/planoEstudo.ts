@@ -58,6 +58,8 @@ export interface OpcoesPlano {
    * dias seguintes, começando pelo próximo dia de estudo.
    */
   adiantados?: RegistroAdiantado[]
+  /** O que foi feito hoje fora das questões, em qualquer aparelho (ver conta/marcasDia.ts). */
+  marcasDia?: { em: string; resumao?: string[]; flashcards?: boolean; mini?: boolean }
 }
 
 export interface RegistroAdiantado { em: string; meta: number; pedido?: number }
@@ -77,7 +79,7 @@ export const TAMANHO_MINI = 30
 /** Minutos por questão quando ainda não há histórico. */
 export const MINUTOS_POR_QUESTAO = 1.5
 
-export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra'>> => ({
+export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia'>> => ({
   diasLeves: plano?.opcoes?.diasLeves ?? [],
   qtdLeve: Math.max(5, Math.min(40, plano?.opcoes?.qtdLeve ?? QTD_LEVE_PADRAO)),
   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],

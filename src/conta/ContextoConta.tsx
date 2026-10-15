@@ -15,6 +15,7 @@ import { aplicarConviteRecebido, conferirMinhaIndicacao } from './indicacao'
 import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
 import { verificarMarcoEmail } from './emailsMarco'
 import { ler } from '../estado/armazenamento'
+import { vigiarSessaoEntreAparelhos } from '../estado/sessao'
 
 const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false, rejeitados: [] }
 interface ContaContexto {
@@ -24,6 +25,8 @@ interface ContaContexto {
   encerrarRecuperacao: () => void
   status: StatusSync
   sincronizar: () => void
+  /** Sincroniza e espera terminar (no máximo `ms`); resolve na hora para visitantes. */
+  aguardarSincronia: (ms?: number) => Promise<void>
   reiniciarProgresso: () => void
   resolver: (doc: Documento, manterLocal: boolean) => void
   reenviarRejeitados: () => void
@@ -112,7 +115,10 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!supabase || !sessao?.user.id) return
     sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
-    return () => { sync.current?.parar(); sync.current = null }
+    // A sessão de questões em andamento é deste aparelho: as respostas que chegam
+    // de outro aparelho entram nela (ver reconciliarSessao).
+    const pararSessao = vigiarSessaoEntreAparelhos()
+    return () => { sync.current?.parar(); sync.current = null; pararSessao() }
   }, [sessao?.user.id])
   // Tudo enviado ao servidor: é a hora de ver se um emblema novo pede e-mail de parabéns.
   useEffect(() => {
@@ -153,7 +159,8 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       gravar('reinicio:em', Date.now(), 'nuvem')
       sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
     },
-    sincronizar: () => { void sync.current?.sincronizar() }, resolver: (doc, manterLocal) => sync.current?.resolver(doc, manterLocal),
+    sincronizar: () => { void sync.current?.sincronizar() },
+    aguardarSincronia: (ms) => sync.current?.aguardar(ms) ?? Promise.resolve(), resolver: (doc, manterLocal) => sync.current?.resolver(doc, manterLocal),
     reenviarRejeitados: () => sync.current?.reenviarRejeitados(), descartarRejeitados: () => sync.current?.descartarRejeitados() }}>
     {carregando ? <EsperaPixel rotulo="Preparando sua conta" acao={<button className="botao" onClick={() => { definirUsuarioLocal(null); definirCarregando(false); navegar('/') }}>Continuar sem conta</button>} /> : <div key={sessao?.user.id ?? 'visitante'}>{children}</div>}
   </Contexto.Provider>

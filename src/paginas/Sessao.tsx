@@ -20,7 +20,7 @@ import { usarAssinante } from '../conta/plano'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
-import { gravar, ler } from '../estado/armazenamento'
+import { EVENTO_DADOS, gravar, ler, type MudancaDados } from '../estado/armazenamento'
 import { recurso } from '../config'
 import '../estilos/paginas/Sessao.css'
 import { urlImagem } from '../dados/edicoes'
@@ -39,6 +39,22 @@ function FaixaCronograma({ respondidasNaSessao }: { respondidasNaSessao: number 
   const { indice } = usarIndice()
   const [base, definirBase] = useState<{ meta: number; feitas: number; nome: string | null; slug: string | null } | null>(null)
   const naAbertura = useRef(respondidasNaSessao)
+  const agora = useRef(respondidasNaSessao)
+  agora.current = respondidasNaSessao
+  // Respostas que chegam de outro aparelho mudam o "feitas hoje": recalcula a base
+  // (e zera a conta desta sessão a partir daí), em vez de somar duas vezes.
+  const [vindasDaNuvem, definirVindasDaNuvem] = useState(0)
+  useEffect(() => {
+    let t: number | undefined
+    const aoMudar = (e: Event) => {
+      const m = (e as CustomEvent<MudancaDados>).detail
+      if (m.chave !== 'respondidas' || m.origem !== 'nuvem') return
+      window.clearTimeout(t)
+      t = window.setTimeout(() => definirVindasDaNuvem((n) => n + 1), 300)
+    }
+    window.addEventListener(EVENTO_DADOS, aoMudar)
+    return () => { window.clearTimeout(t); window.removeEventListener(EVENTO_DADOS, aoMudar) }
+  }, [])
   useEffect(() => {
     if (!premium || !indice) return
     let vivo = true
@@ -47,10 +63,11 @@ function FaixaCronograma({ respondidasNaSessao }: { respondidasNaSessao: number 
       const c = calcularPlano(indice, lerRespondidas(), plano)
       if (!c.metaDiaria || c.naRetaFinal) return
       const principal = c.hoje?.itens.find((i) => !i.mistura) ?? c.hoje?.itens[0]
+      naAbertura.current = agora.current
       definirBase({ meta: c.metaDiaria, feitas: c.feitasHoje, nome: principal?.nome ?? null, slug: principal?.slug ?? c.dias[0]?.itens[0]?.slug ?? null })
     }).catch(() => {})
     return () => { vivo = false }
-  }, [premium, indice])
+  }, [premium, indice, vindasDaNuvem])
   if (!base) return null
   const feitasHoje = base.feitas + Math.max(0, respondidasNaSessao - naAbertura.current)
   const feitas = Math.min(feitasHoje, base.meta)
@@ -448,7 +465,7 @@ export function Sessao() {
       )}
       <div className="sessao-palco" ref={palco}>
       {questaoAtual ? (
-        <><AvisoLimite estado={estadoLimite} /><CartaoQuestao
+        <><AvisoLimite estado={estadoLimite} />{sessao.respostas[questaoAtual.id]?.outroAparelho && <p className="conteudo aviso-outro-aparelho" role="note">Você já respondeu esta questão em outro aparelho. Siga para a próxima.</p>}<CartaoQuestao
           questao={questaoAtual}
           numero={posicao + 1}
           total={total}
