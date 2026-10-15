@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
-import { recurso } from '../../config'
+import { Icone, type NomeIcone } from '../Icone'
 import { erroDoPainel } from './formatos'
 import { confirmar } from '../Confirmar'
 
@@ -16,12 +16,12 @@ interface Pessoa {
 const MIGRACAO_LISTA = '202610060300_lembretes_sem_spam.sql'
 interface Resumo { campanha: Campanha; pessoas: number; enviados_7d: number; enviados_total: number; falharam_7d: number }
 
-const CAMPANHAS: Array<{ id: Campanha; titulo: string; para: string; arte: string }> = [
-  { id: 'nunca', titulo: 'Primeira missão', para: 'Quem criou a conta há pelo menos um dia e nunca respondeu uma questão. Apresenta o site e convida a dar uma chance. Cada pessoa recebe uma vez só.', arte: 'pixel/treinar.png' },
-  { id: 'tres_dias', titulo: 'Fogueira apagando', para: 'Quem respondia e está de 3 a 6 dias sem aparecer. Puxa de volta antes de o hábito esfriar.', arte: 'ranking/chama.png' },
-  { id: 'sete_dias', titulo: 'Retomar a jornada', para: 'Quem respondia e está de 7 a 90 dias sem aparecer. Tom acolhedor: o progresso está guardado, é só voltar.', arte: 'pixel/planos.png' },
-  { id: 'renovacao_pix', titulo: 'Pix: faltam 3 dias', para: 'Quem pagou no Pix (mensal, semestral ou anual) e tem o acesso terminando nos próximos 3 dias, sem ter renovado. Mostra quantas questões a pessoa fez, o acerto e o ritmo da semana, e chama para renovar. Um por compra.', arte: 'ranking/mensageiro.png' },
-  { id: 'renovacao_pix_hoje', titulo: 'Pix: termina hoje', para: 'Quem pagou no Pix e tem o acesso terminando hoje, sem ter renovado. Último aviso, com os mesmos números da pessoa. Um por compra.', arte: 'ranking/chama.png' },
+const CAMPANHAS: Array<{ id: Campanha; titulo: string; para: string; icone: NomeIcone }> = [
+  { id: 'nunca', titulo: 'Primeira missão', para: 'Quem criou a conta há pelo menos um dia e nunca respondeu uma questão. Apresenta o site e convida a dar uma chance. Cada pessoa recebe uma vez só.', icone: 'alvo' },
+  { id: 'tres_dias', titulo: 'Fogueira apagando', para: 'Quem respondia e está de 3 a 6 dias sem aparecer. Puxa de volta antes de o hábito esfriar.', icone: 'fogo' },
+  { id: 'sete_dias', titulo: 'Retomar a jornada', para: 'Quem respondia e está de 7 a 90 dias sem aparecer. Tom acolhedor: o progresso está guardado, é só voltar.', icone: 'rota' },
+  { id: 'renovacao_pix', titulo: 'Pix: faltam 3 dias', para: 'Quem pagou no Pix (mensal, semestral ou anual) e tem o acesso terminando nos próximos 3 dias, sem ter renovado. Mostra quantas questões a pessoa fez, o acerto e o ritmo da semana, e chama para renovar. Um por compra.', icone: 'relogio' },
+  { id: 'renovacao_pix_hoje', titulo: 'Pix: termina hoje', para: 'Quem pagou no Pix e tem o acesso terminando hoje, sem ter renovado. Último aviso, com os mesmos números da pessoa. Um por compra.', icone: 'alerta' },
 ]
 
 /**
@@ -91,7 +91,7 @@ export function AdminLembretes() {
           const pessoas = Number(r?.pessoas ?? 0)
           return (
             <article key={c.id} className="adm-lembrete">
-              <img src={recurso(c.arte)} width={40} height={40} alt="" />
+              <span className="adm-lembrete__icone" aria-hidden="true"><Icone nome={c.icone} tamanho={22} /></span>
               <div className="adm-lembrete__texto">
                 <h3>{c.titulo}</h3>
                 <p>{c.para}</p>
@@ -209,7 +209,7 @@ function ResumoQuinzenal({ aoPrevia }: { aoPrevia: (html: string) => void }) {
   }
   const pendentes = resumo && typeof resumo === 'object' ? Number(resumo.pendentes) : 0
   return <article className="adm-lembrete">
-    <img src={recurso('pixel/relatorio.png')} width={40} height={40} alt="" />
+    <span className="adm-lembrete__icone" aria-hidden="true"><Icone nome="grafico" tamanho={22} /></span>
     <div className="adm-lembrete__texto">
       <h3>Resumo quinzenal · {nomeQuinzena(ref)}</h3>
       <p>Quantas questões a pessoa fez na quinzena, o acerto comparado com a anterior, os temas e o próximo passo. Vai para todos que estudaram na quinzena e não desligaram os resumos. Sai sozinho nos dias 1 e 16 pelo agendador; no dia 1, assinantes recebem só o relatório do mês.</p>
