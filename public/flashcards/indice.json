@@ -1,12 +1,12 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-15",
- "total": 5204,
- "batalha": 4161,
- "soEstudo": 1043,
+ "total": 5232,
+ "batalha": 4173,
+ "soEstudo": 1059,
  "comImagem": 630,
  "simulados": 927,
- "autorais": 902,
+ "autorais": 930,
  "quarentena": 523,
  "areas": {
   "coluna": {
@@ -348,23 +348,23 @@
   "quadril": {
    "nome": "Quadril",
    "arquivo": "quadril.json",
-   "total": 376,
-   "batalha": 240,
+   "total": 404,
+   "batalha": 252,
    "comImagem": 74,
    "simulados": 117,
    "tipos": {
     "Anatomia": 37,
-    "Armadilha": 1,
-    "Classificação": 2,
-    "Conceito": 78,
+    "Armadilha": 2,
+    "Classificação": 7,
+    "Conceito": 95,
     "Imagem": 37,
-    "Par confundível": 16,
+    "Par confundível": 20,
     "Relâmpago": 181,
-    "Tabela": 24
+    "Tabela": 25
    },
    "assuntos": {
     "Anatomia do quadril": 173,
-    "Artroplastia total: componentes e fixação": 77,
+    "Artroplastia total: componentes e fixação": 99,
     "Vias de acesso ao quadril": 31,
     "Osteonecrose da cabeça femoral": 13,
     "Exame físico do quadril": 12,
@@ -372,14 +372,14 @@
     "Artroscopia do quadril e lesão labral": 9,
     "Dor peritrocantérica e tendinopatias": 9,
     "Fraturas periprotéticas do quadril": 8,
+    "Soltura, osteólise e revisão": 8,
     "Imagem do quadril": 7,
     "Biomecânica e marcha": 6,
     "Osteotomias do quadril": 5,
     "Pubalgia e osteíte púbica": 5,
     "Fraturas do quadril e do acetábulo": 4,
     "Displasia do quadril no adulto": 2,
-    "Outros temas do quadril": 2,
-    "Soltura, osteólise e revisão": 2
+    "Outros temas do quadril": 2
    }
   },
   "trauma": {
@@ -476,5 +476,5 @@
    }
   }
  },
- "assinatura": "1ab564849245"
+ "assinatura": "591a27d119c5"
 }
