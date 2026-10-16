@@ -9,11 +9,18 @@ const CHAVE_ULTIMO = 'oq-aviso-ultimo'
 function lerDispensado(): string {
   try { return localStorage.getItem(CHAVE) ?? '' } catch { return '' }
 }
+/**
+ * A cópia guardada só vale por VALIDADE_COPIA: sem rede, um aviso com prazo que já venceu no
+ * servidor não fica na tela para sempre (o servidor é quem sabe o fim de cada aviso).
+ */
+const VALIDADE_COPIA = 12 * 3600 * 1000
 function lerGuardado(): Aviso | null {
   try {
     const bruto = localStorage.getItem(CHAVE_ULTIMO)
-    const a = bruto ? JSON.parse(bruto) as Aviso : null
-    return a && typeof a.id === 'number' && typeof a.texto === 'string' ? a : null
+    const guardado = bruto ? JSON.parse(bruto) as { aviso?: Aviso; em?: number } : null
+    const a = guardado?.aviso
+    if (!a || typeof a.id !== 'number' || typeof a.texto !== 'string') return null
+    return typeof guardado.em === 'number' && Date.now() - guardado.em < VALIDADE_COPIA ? a : null
   } catch { return null }
 }
 
@@ -35,7 +42,7 @@ export function AvisoSite() {
     chamarRpcPublica<Aviso[]>('obter_aviso_site').then((lista) => {
       const a = lista?.[0] ?? null
       try {
-        if (a) localStorage.setItem(CHAVE_ULTIMO, JSON.stringify(a))
+        if (a) localStorage.setItem(CHAVE_ULTIMO, JSON.stringify({ aviso: a, em: Date.now() }))
         else localStorage.removeItem(CHAVE_ULTIMO)
       } catch { /* sem armazenamento */ }
       if (vivo) definirAviso(a && String(a.id) !== lerDispensado() ? a : null)

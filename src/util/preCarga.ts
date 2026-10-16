@@ -93,11 +93,26 @@ function primeiroTrecho(hash: string): string | null {
   return hash.replace(/^#\/?/, '').split(/[/?]/)[0] ?? ''
 }
 
+/**
+ * A página que o App mostra para um endereço. Quase sempre basta o primeiro trecho; as exceções
+ * são as mesmas do App: #/conta/assinatura (DetalhesAssinatura) e #/ranking?aba=flashcards ou
+ * aba=cripta (RankingCripta).
+ */
+export function paginaDoEndereco(hash: string): Pagina | null {
+  const trecho = primeiroTrecho(hash)
+  if (trecho === null) return null
+  const resto = hash.replace(/^#\/?/, '')
+  if (trecho === 'conta' && resto.split(/[?]/)[0].split('/')[1] === 'assinatura') return 'DetalhesAssinatura'
+  if (trecho === 'ranking') {
+    const aba = new URLSearchParams(resto.split('?')[1] ?? '').get('aba') ?? ''
+    if (aba === 'flashcards' || aba === 'cripta') return 'RankingCripta'
+  }
+  return PAGINA_DA_ROTA[trecho] ?? null
+}
+
 /** Adianta o código da página de um endereço ("#/treinar", "#/conta?x=1"). Falhar não é problema. */
 export function preCarregarRota(hash: string): void {
-  const trecho = primeiroTrecho(hash)
-  if (trecho === null) return
-  const pagina = PAGINA_DA_ROTA[trecho]
+  const pagina = paginaDoEndereco(hash)
   if (!pagina || pedidas.has(pagina)) return
   pedidas.add(pagina)
   // Se falhar (rede caiu), a página, quando aberta de verdade, tenta de novo e trata o erro.

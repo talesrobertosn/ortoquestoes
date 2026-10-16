@@ -94,6 +94,9 @@ const PAGINAS_PRE_CARGA: Record<string, string> = {
   sobre: 'src/paginas/Apoio.tsx',
   projeto: 'src/paginas/Apoio.tsx',
   contato: 'src/paginas/Apoio.tsx',
+  // Mesmas exceções do App (e de util/preCarga.ts): subpágina e aba que trocam de componente.
+  'conta/assinatura': 'src/paginas/DetalhesAssinatura.tsx',
+  'ranking/flashcards': 'src/paginas/RankingCripta.tsx',
 }
 
 function preCargaPorRota(): Plugin {
@@ -126,7 +129,7 @@ function preCargaPorRota(): Plugin {
           const arquivos = arquivosDe(modulo)
           if (arquivos) mapa[rota] = arquivos
         }
-        const script = `<script>(function(){try{var m=${JSON.stringify(mapa)};var r=(location.hash.replace(/^#\\/?/,'').split(/[/?]/)[0])||'';var a=m[r];if(!a)return;var b=document.baseURI;a.js.forEach(function(f){var l=document.createElement('link');l.rel='modulepreload';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)});a.css.forEach(function(f){var l=document.createElement('link');l.rel='preload';l.as='style';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)})}catch(e){}})()</script>`
+        const script = `<script>(function(){try{var m=${JSON.stringify(mapa)};var h=location.hash.replace(/^#\\/?/,''),c=h.split('?'),s=c[0].split('/'),r=s[0]||'';if(r==='conta'&&s[1]==='assinatura')r='conta/assinatura';else if(r==='ranking'&&/(^|&)aba=(flashcards|cripta)(&|$)/.test(c[1]||''))r='ranking/flashcards';var a=m[r];if(!a)return;var b=document.baseURI;a.js.forEach(function(f){var l=document.createElement('link');l.rel='modulepreload';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)});a.css.forEach(function(f){var l=document.createElement('link');l.rel='preload';l.as='style';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)})}catch(e){}})()</script>`
         // O crossOrigin vazio igual ao do carregador do Vite: sem ele, o navegador
         // não reaproveita a pré-carga e baixa o CSS da página de novo.
         // Antes do CSS: script em linha depois de uma folha de estilo espera a
