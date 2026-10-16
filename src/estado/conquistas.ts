@@ -1011,3 +1011,26 @@ export function completarMetricas(metricas: Metricas): Metricas {
   const platina = EMBLEMAS.filter(contaParaPlatina).every((e) => desbloqueado(e, metricas)) ? 1 : 0
   return { ...metricas, platina }
 }
+
+/** Famílias de contagem simples, em que "faltam N" se lê sem explicação (página inicial, "Quase lá"). */
+const FAMILIAS_QUASE_LA: ReadonlySet<FamiliaId> = new Set(['questoes', 'sequencia', 'dias', 'acertos', 'dominadas', 'sessoes', 'redencao', 'revisoes', 'imagem', 'constancia', 'colecao', 'anotacoes'])
+
+export interface QuaseLa { emblema: Emblema; valor: number; falta: number; fracao: number; texto: string }
+
+/**
+ * Os emblemas mais perto de cair, um por família, do mais adiantado ao menos:
+ * é o que puxa a pessoa de volta ("faltam 12 questões"). Só conta o que já começou.
+ */
+export function emblemasQuaseLa(metricas: Metricas, quantos = 3): QuaseLa[] {
+  const porFamilia = new Map<FamiliaId, QuaseLa>()
+  for (const emblema of EMBLEMAS) {
+    if (emblema.secreta || !FAMILIAS_QUASE_LA.has(emblema.familia) || desbloqueado(emblema, metricas)) continue
+    if (porFamilia.has(emblema.familia)) continue
+    const valor = Math.max(0, valorDe(emblema, metricas))
+    if (valor <= 0) continue
+    const falta = emblema.minimo - valor
+    const familia = FAMILIAS.find((f) => f.id === emblema.familia)
+    porFamilia.set(emblema.familia, { emblema, valor, falta, fracao: valor / emblema.minimo, texto: familia ? familia.unidade(falta) : String(falta) })
+  }
+  return [...porFamilia.values()].sort((a, b) => b.fracao - a.fracao).slice(0, quantos)
+}

@@ -1,22 +1,27 @@
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { type CSSProperties, useMemo, useState } from 'react'
+import { type CSSProperties, type ReactNode, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
 import { href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
-import { AmostraQuestao } from '../componentes/AmostraQuestao'
 import { AteAProva } from '../componentes/AteAProva'
 import { PodioPrevia } from '../componentes/PodioPrevia'
 import { Icone } from '../componentes/Icone'
+import { IconePixel } from '../componentes/IconePixel'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../componentes/CaixasAssinante'
+import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
+import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
+import { type DiaSequencia, PainelSequencia } from '../componentes/inicio/PainelSequencia'
+import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
 import { usarConquistas } from '../estado/usarConquistas'
-import { FLASHCARDS_NA_CAPA, recurso } from '../config'
+import { emblemasQuaseLa } from '../estado/conquistas'
+import { FLASHCARDS_NA_CAPA, fraseGratis, recurso } from '../config'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -27,10 +32,21 @@ import { contasDisponiveis } from '../conta/supabase'
 import { EXIGIR_CONTA_PARA_QUESTOES } from '../config'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
-import { calcularStreak } from '../estado/streak'
+import { META_STREAK_DIARIA, calcularStreak } from '../estado/streak'
 import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
 import { proximaFraseInicio } from '../dados/frasesInicio'
 import '../estilos/paginas/Inicio.css'
+import '../estilos/paginas/InicioPainel.css'
+
+/*
+ * Página inicial (proposta de 16/10/2026, docs/propostas/INICIO-16-10.md).
+ * Duas páginas numa só, cada uma com um trabalho:
+ * - Visitante: uma vitrine. Proposta de valor, uma questão para responder ali
+ *   mesmo, o que o site faz, o que mais cai, cronograma, flashcards e um convite claro.
+ * - Com conta: o painel do dia. UMA próxima ação no topo (continuar a sessão,
+ *   a meta do cronograma, a revisão de hoje ou um treino rápido), o progresso
+ *   e a sequência ao lado, atalhos, "quase lá" e o resto mais abaixo.
+ */
 
 /** "Hoje", "Ontem" ou a data curta: a lista de sessões lê melhor assim. */
 function quandoFoi(instante: number): string {
@@ -59,13 +75,26 @@ const PROVAS_DO_ACERVO = [
   { nome: 'TECOC', cor: '#9fd8f2' },
 ]
 
+/** A ação do topo do painel: uma só, a mais útil agora. */
+interface ProximaAcao {
+  selo: string
+  titulo: string
+  detalhe: ReactNode
+  botao: string
+  icone: 'raio' | 'rota' | 'calendario'
+  destino?: string
+  aoClicar?: () => void
+  desabilitada?: boolean
+  progresso?: { feitas: number; total: number }
+}
+
 export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciarComAviso } = usarSessao()
   const { sessao: conta } = usarConta()
   const cronograma = usarCronogramaHoje()
-  const { conquistadas, total: totalConquistas, streak: sequenciaViva } = usarConquistas()
-  // Sem conta, as questões ficam fechadas (ver config.ts): o botão principal leva ao cadastro.
+  const { metricas, conquistadas, total: totalConquistas } = usarConquistas()
+  // Sem conta, as questões ficam fechadas (ver config.ts): a página vira vitrine e o botão leva ao cadastro.
   const pedeConta = EXIGIR_CONTA_PARA_QUESTOES && contasDisponiveis && !conta
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
@@ -81,12 +110,12 @@ export function Inicio() {
 
   const { ritmo } = usarRitmoRevisao()
   const revisoesPlanejadas = useMemo(
-    () => (indice ? planoRevisao(indice, contexto.respondidas, 7, ritmo) : new Map()),
+    () => (indice && !pedeConta ? planoRevisao(indice, contexto.respondidas, 7, ritmo) : new Map()),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [indice, contexto.respondidas, ritmo.limite, ritmo.folgas.join(',')],
+    [indice, pedeConta, contexto.respondidas, ritmo.limite, ritmo.folgas.join(',')],
   )
   const temaFragil = useMemo(() => {
-    if (!indice) return null
+    if (!indice || pedeConta) return null
     const porTema = new Map<string, { acertos: number; tentativas: number; pendentes: number; slug: string }>()
     for (const item of indice.questoes) {
       const registro = contexto.respondidas[item.id]
@@ -105,7 +134,7 @@ export function Inicio() {
     return [...porTema.entries()]
       .filter(([, valor]) => valor.tentativas >= 2)
       .sort((a, b) => a[1].acertos / a[1].tentativas - b[1].acertos / b[1].tentativas)[0] ?? null
-  }, [indice, contexto.respondidas, revisoesPlanejadas])
+  }, [indice, pedeConta, contexto.respondidas, revisoesPlanejadas])
   // Questões por dia nos últimos 7 dias (fuso de São Paulo), contadas pelo
   // histórico de cada resposta, inclusive as de sessões não concluídas.
   const hojeChave = chaveDia(new Date())
@@ -137,6 +166,27 @@ export function Inicio() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [contexto.respondidas, hojeChave])
 
+  // A semana corrente, de segunda a domingo, para a sequência do topo: feito, hoje e o que ainda vem.
+  const diasSequencia = useMemo<DiaSequencia[]>(() => {
+    const porChave = new Map(semana.dias.map((d) => [d.chave, d.total]))
+    const curto = new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: FUSO_DIA }).format(new Date())
+    const desdeSegunda = (['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].indexOf(curto) + 7) % 7
+    return Array.from({ length: 7 }, (_, i) => {
+      const data = new Date(Date.now() + (i - desdeSegunda) * 86400000)
+      const chave = chaveDia(data)
+      const total = porChave.get(chave) ?? 0
+      const estado: DiaSequencia['estado'] = i === desdeSegunda ? (total >= META_STREAK_DIARIA ? 'hoje-feito' : 'hoje')
+        : i > desdeSegunda ? 'futuro' : total >= META_STREAK_DIARIA ? 'feito' : total > 0 ? 'parcial' : 'perdido'
+      return {
+        chave, total, estado,
+        inicial: ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'][i],
+        nome: data.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', timeZone: FUSO_DIA }),
+        numero: Number(data.toLocaleDateString('pt-BR', { day: 'numeric', timeZone: FUSO_DIA })),
+      }
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [semana, hojeChave])
+
   /** Treino rápido: uma sessão embaralhada de todo o acervo, num clique. */
   async function treinoRapido(quantidade: number) {
     if (!indice) return
@@ -151,12 +201,7 @@ export function Inicio() {
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
   const revisarHoje = contagens?.porSituacao.revisarHoje ?? 0
   const streak = useMemo(() => calcularStreak(contexto.respondidas), [contexto.respondidas])
-  const desempenho = useMemo(() => {
-    const registros = Object.values(contexto.respondidas)
-    const tentativas = registros.reduce((t, r) => t + (r.tentativas ?? 1), 0)
-    const acertos = registros.reduce((t, r) => t + (r.acertos ?? Number(r.c === true)), 0)
-    return { respondidas: registros.length, acerto: tentativas ? Math.round((acertos / tentativas) * 100) : null }
-  }, [contexto.respondidas])
+  const respondidasTotal = Object.keys(contexto.respondidas).length
   const respondidasPorTema = useMemo(() => {
     const mapa: Record<string, number> = {}
     if (!indice) return mapa
@@ -167,283 +212,122 @@ export function Inicio() {
     }
     return mapa
   }, [indice, contexto.respondidas])
+  const quaseLa = useMemo(() => (pedeConta ? [] : emblemasQuaseLa(metricas, 3)), [pedeConta, metricas])
+
+  const calculo = cronograma.calculo
   // Com cronograma e meta ainda por fazer, a meta de hoje é a ação principal do topo.
-  const metaHoje = cronograma.calculo && !cronograma.calculo.provaPassou && !cronograma.calculo.naRetaFinal && cronograma.calculo.hoje && cronograma.calculo.faltaHoje ? cronograma.calculo : null
+  const metaHoje = calculo && !calculo.provaPassou && !calculo.naRetaFinal && calculo.hoje && calculo.faltaHoje ? calculo : null
+  const metaCumprida = calculo && !calculo.provaPassou && !calculo.naRetaFinal && calculo.hoje && !calculo.faltaHoje && calculo.metaDiaria > 0
+  // A jornada do cronograma já está no painel: o cartão grande só aparece para quem não tem
+  // (convite ou "montar") e na reta final, que tem texto próprio.
+  const cronogramaNoPainel = Boolean(cronograma.premium && calculo && !calculo.naRetaFinal && !calculo.provaPassou)
   const titulo = nome ? cabecalhoDoDia.comNome(`${conta?.user.user_metadata?.situacao === 'ortopedista' ? 'Dr. ' : ''}${nome}`) : cabecalhoDoDia.semNome
 
-  return (
-    <div className="empilha-2">
-      {sessaoEmAndamento && (
-        <a className="aviso-sessao nao-imprime" href={href('/sessao')}>
-          <Icone nome="raio" tamanho={22} />
-          <span>
-            <strong>Você tem uma sessão em andamento</strong>
-            <small>{Object.keys(sessao!.respostas).length} de {sessao!.ids.length} respondidas. Toque para continuar</small>
-          </span>
-          <Icone nome="direita" tamanho={20} />
-        </a>
-      )}
-      <section className="inicio-heroi">
-        <div className="inicio-heroi__texto">
-          {indice && indice.total > 0 && (
-            <div className="inicio-provas">
-              <p className="inicio-provas__titulo"><span className="ponto-vivo" aria-hidden="true" /> Provas oficiais comentadas</p>
-              <ul className="inicio-provas__lista" aria-label="Provas no acervo">
-                {PROVAS_DO_ACERVO.map(({ nome, cor }) => (
-                  <li key={nome} style={{ '--cor-linha': cor } as CSSProperties}>{nome}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-          <h1>{titulo}</h1>
-          <p className="inicio-heroi__sub">{metaHoje
-            ? <>Faltam <strong>{metaHoje.diasAteProva} dias</strong> para a prova. Meta de hoje: <strong>{metaHoje.feitasHoje} de {metaHoje.metaDiaria}</strong> questões de <strong>{metaHoje.hoje?.nome}</strong>{metaHoje.hoje?.focos[0] ? `, começando por ${metaHoje.hoje.focos[0].toLowerCase()}` : ''}.</>
-            : cabecalhoDoDia.incentivo}</p>
-          {indice && contagens && indice.total > 0 && (
-            <div className="inicio-heroi__acoes">
-              {pedeConta ? (
-                <>
-                  <a className="botao botao--claro botao--grande" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>
-                    <Icone nome="raio" tamanho={18} /> Criar conta grátis e treinar
-                  </a>
-                  <button type="button" className="inicio-heroi__entrar" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>
-                  <p className="inicio-heroi__pratico"><Icone nome="certo" tamanho={14} /> No celular ou no computador, de onde estiver: sua conta continua de onde você parou.</p>
-                </>
-              ) : sessaoEmAndamento ? (
-                <a className="botao botao--claro botao--grande" href={href('/sessao')}>
-                  <Icone nome="raio" tamanho={18} /> Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}
-                </a>
-              ) : metaHoje ? (
-                <a className="botao botao--claro botao--grande" href={href('/cronograma')}>
-                  <Icone nome="rota" tamanho={18} /> Começar a meta de hoje
-                </a>
-              ) : (
-                <button type="button" className="botao botao--claro botao--grande" onClick={() => treinoRapido(10)} disabled={contagens.total < 10}>
-                  <Icone nome="raio" tamanho={18} /> {textoDoDia.acao}
-                </button>
-              )}
-              {!pedeConta && (
-                <div className="inicio-heroi__secundarias">
-                  <a className="inicio-atalho-heroi" href={href('/treinar')}>
-                    <Icone nome="filtro" tamanho={18} />
-                    <span>Montar minha sessão</span>
-                  </a>
-                  {conta && (
-                    <a className="inicio-atalho-heroi" href={href('/revisao')}>
-                      <Icone nome="calendario" tamanho={18} />
-                      <span>Revisar hoje</span>
-                      <strong className="inicio-atalho-heroi__contador numerico">{revisarHoje}</strong>
-                    </a>
-                  )}
-                </div>
-              )}
-            </div>
-          )}
-        </div>
-        {FLASHCARDS_NA_CAPA && conta && <QuadroFlashcards classe="inicio-flash--heroi" />}
-        {conta ? (
-          <div className={`inicio-heroi__painel${FLASHCARDS_NA_CAPA ? ' inicio-heroi__painel--com-flash' : ''}`} aria-label="Seu dia">
-            <div className="inicio-kpi">
-              <span className="inicio-kpi__icone"><Icone nome="fogo" tamanho={18} /></span>
-              <span className="inicio-kpi__rotulo">Sequência</span>
-              <strong className="numerico">{streak.atual} {streak.atual === 1 ? 'dia' : 'dias'}</strong>
-            </div>
-            <a className="inicio-kpi" href={href('/dados')}>
-              <span className="inicio-kpi__icone"><Icone nome="alvo" tamanho={18} /></span>
-              <span className="inicio-kpi__rotulo">Acerto geral</span>
-              <strong className="numerico">{desempenho.acerto === null ? '0%' : `${desempenho.acerto}%`}</strong>
-            </a>
-            <a className="inicio-kpi" href={href('/dados')}>
-              <span className="inicio-kpi__icone"><Icone nome="certo" tamanho={18} /></span>
-              <span className="inicio-kpi__rotulo">Respondidas</span>
-              <strong className="numerico">{desempenho.respondidas.toLocaleString('pt-BR')}</strong>
-            </a>
-          </div>
-        ) : (
-          <AmostraQuestao />
-        )}
-      </section>
-      {FLASHCARDS_NA_CAPA && <QuadroFlashcards classe={`inicio-flash--faixa${conta ? ' inicio-flash--so-celular' : ''}`} />}
-      <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
-      {/* Depois do topo, não antes: o pedido de perfil não pode ser a primeira coisa da página. */}
-      <CompletarPerfil />
+  const acao: ProximaAcao | null = !contagens ? null
+    : sessaoEmAndamento ? {
+      selo: 'Continue de onde parou',
+      titulo: sessao!.origem === 'cronograma' ? 'Sessão do cronograma' : 'Sua sessão de questões',
+      detalhe: <>{Object.keys(sessao!.respostas).length} de {sessao!.ids.length} respondidas. Falta pouco para fechar.</>,
+      botao: 'Continuar sessão', icone: 'raio', destino: '/sessao',
+      progresso: { feitas: Object.keys(sessao!.respostas).length, total: sessao!.ids.length },
+    }
+    : metaHoje ? {
+      selo: 'Cronograma de hoje',
+      titulo: metaHoje.hoje!.nome,
+      detalhe: <>{metaHoje.hoje!.focos[0] ? <>Começando por <strong>{metaHoje.hoje!.focos[0].toLowerCase()}</strong>. </> : null}Faltam {metaHoje.faltaHoje} {metaHoje.faltaHoje === 1 ? 'questão' : 'questões'} para a meta.</>,
+      botao: 'Seguir o cronograma', icone: 'rota', destino: '/cronograma',
+      progresso: { feitas: metaHoje.feitasHoje, total: metaHoje.metaDiaria },
+    }
+    : revisarHoje > 0 ? {
+      selo: metaCumprida ? 'Meta cumprida · agora a revisão' : 'Revisão de hoje',
+      titulo: `${revisarHoje.toLocaleString('pt-BR')} ${revisarHoje === 1 ? 'questão para rever' : 'questões para rever'}`,
+      detalhe: 'O que você errou ou marcou com dúvida volta no dia certo. Rever hoje é o que fixa.',
+      botao: 'Revisar agora', icone: 'calendario', destino: '/revisao',
+    }
+    : {
+      selo: metaCumprida ? 'Meta de hoje cumprida' : 'Treino rápido',
+      titulo: metaCumprida ? 'Quer ir além hoje?' : '10 questões, de todo o acervo',
+      detalhe: textoDoDia.explicacao,
+      botao: textoDoDia.acao, icone: 'raio', aoClicar: () => treinoRapido(10), desabilitada: contagens.total < 10,
+    }
 
-      {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
+  const vazio = indice && contagens && indice.total === 0 && (
+    <Estado
+      titulo="O acervo ainda está sendo importado."
+      acoes={<>
+        <a className="botao" href={href('/sobre')}>Sobre o projeto</a>
+        <a className="botao" href={href('/contato')}>Falar com o autor</a>
+      </>}
+    >
+      <p>As questões chegam por tema, conferidas uma a uma antes de entrar no ar. Assim que o primeiro tema for publicado, ele aparece aqui.</p>
+    </Estado>
+  )
+  const temAcervo = Boolean(indice && contagens && indice.total > 0)
 
-      {indice && contagens && indice.total === 0 && (
-        <Estado
-          titulo="O acervo ainda está sendo importado."
-          acoes={
-            <>
-              <a className="botao" href={href('/sobre')}>
-                Sobre o projeto
+  // ---------------------------------------------------------------- Visitante
+  if (pedeConta) {
+    return (
+      <div className="ip ip--vitrine">
+        <section className="ip-heroi ip-heroi--vitrine ip-entra" aria-labelledby="ip-vitrine-titulo">
+          <div className="ip-heroi__texto">
+            <p className="ip-selo"><span className="ponto-vivo" aria-hidden="true" /> Provas oficiais comentadas</p>
+            {/* A frase do título muda a cada abertura (rodízio de src/dados/frasesInicio.ts); a proposta de valor vem logo abaixo, fixa. */}
+            <h1 id="ip-vitrine-titulo">{cabecalhoDoDia.semNome}</h1>
+            <p className="ip-heroi__proposta">As provas de ortopedia, <em>comentadas como uma aula</em>.</p>
+            <p className="ip-heroi__lide">Treine pelas questões oficiais do TEOT, do TARO e das provas de subespecialidade. Cada alternativa explicada, a revisão no dia certo e um cronograma até a prova.</p>
+            <div className="ip-heroi__acoes">
+              <a className="botao ip-botao-ouro botao--grande" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>
+                <Icone nome="raio" tamanho={18} /> Criar conta grátis e treinar
               </a>
-              <a className="botao" href={href('/contato')}>
-                Falar com o autor
-              </a>
-            </>
-          }
-        >
-          <p>
-            As questões chegam por tema, conferidas uma a uma antes de entrar no ar. Assim que o
-            primeiro tema for publicado, ele aparece aqui.
-          </p>
-        </Estado>
-      )}
-
-      {indice && contagens && indice.total > 0 && (
-        <>
-          {/* Ordem pelo que a pessoa veio fazer (auditoria de 15/10/2026): o estudo do dia logo
-              depois do topo; ranking, planos e indique no fim. Os quatro atalhos saíram: repetiam
-              os botões do topo e a barra de navegação. Sem conta, só o que funciona sem conta. */}
-          <CartaoCronograma cronograma={cronograma} />
-          {!cronograma.calculo && !cronograma.carregando && <AteAProva total={indice.total} conta={Boolean(conta)} />}
-          {/* Sem o sistema de contas (VITE_SUPABASE_URL=sem) o progresso fica no aparelho: mostra tudo. */}
-          {conta || !contasDisponiveis ? <>
-          <div className="inicio-grade">
-            <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
-              <h2 id="inicio-hoje-titulo">Seu estudo de hoje</h2>
-              <p className="inicio-hoje__intro">{Object.keys(contexto.respondidas).length > 0 || conta
-                ? textoDoDia.explicacao
-                : <>Com a conta, esta área organiza o seu dia: o que revisar, o que ainda é novo e o que você já domina. <a href={href('/conta?modo=criar')}>Criar conta grátis</a></>}</p>
-              {(
-                <div className="inicio-hoje__lista">
-                  <a className="inicio-hoje__item inicio-hoje__item--destaque" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=revisarHoje&limite=20`)}>
-                    <span className="inicio-hoje__icone"><Icone nome="calendario" tamanho={18} /></span>
-                    <span className="inicio-hoje__rotulo"><strong>Revisar hoje</strong><small>{textoDoDia.revisar}</small></span>
-                    <b className="numerico">{(contagens.porSituacao.revisarHoje ?? 0).toLocaleString('pt-BR')}</b>
-                  </a>
-                  <a className="inicio-hoje__item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=naoRespondidas&limite=10`)}>
-                    <span className="inicio-hoje__icone"><Icone nome="livro" tamanho={18} /></span>
-                    <span className="inicio-hoje__rotulo"><strong>Questões novas</strong><small>{textoDoDia.novas}</small></span>
-                    <b className="numerico">{(contagens.porSituacao.naoRespondidas ?? 0).toLocaleString('pt-BR')}</b>
-                  </a>
-                  <a className="inicio-hoje__item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=dominadas`)}>
-                    <span className="inicio-hoje__icone"><Icone nome="medalha" tamanho={18} /></span>
-                    <span className="inicio-hoje__rotulo"><strong>Dominadas</strong><small>Ciclo de revisão completo</small></span>
-                    <b className="numerico">{(contagens.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
-                  </a>
-                </div>
-              )}
-            </section>
-
-            {temaFragil && (() => {
-              const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
-              return <section className="inicio-foco" aria-labelledby="inicio-foco-titulo">
-                <h2 id="inicio-foco-titulo">Onde você mais erra</h2>
-                <p className="inicio-foco__tema">{temaFragil[0]}</p>
-                <div className="inicio-foco__medida">
-                  <span className="inicio-foco__valor numerico">{100 - acerto}%</span>
-                  <span className="inicio-foco__rotulo">de erro neste tema ({acerto}% de acerto)</span>
-                </div>
-                <span className="inicio-foco__barra inicio-foco__barra--erro" role="img" aria-label={`${100 - acerto}% de erro`}><span style={{ width: `${Math.max(3, 100 - acerto)}%` }} /></span>
-                <dl className="inicio-foco__numeros">
-                  <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>
-                  <div><dt>Erros</dt><dd className="numerico">{(temaFragil[1].tentativas - temaFragil[1].acertos).toLocaleString('pt-BR')}</dd></div>
-                  <div><dt>Revisões</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>
-                </dl>
-                <p className="texto-2">De todos os temas que você já treinou, é onde você mais erra. Por isso é onde uma sessão curta rende mais pontos na prova.</p>
-                <a className="botao botao--principal" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
-              </section>
-            })()}
-          </div>
-          <ConviteLimiteDoDia />
-          <CaixasAssinante />
-          <VitrineAssinante />
-          <div className="inicio-grade">
-            {Object.keys(contexto.respondidas).length > 0 && <section className="inicio-semana" aria-labelledby="inicio-semana-titulo">
-              <h2 id="inicio-semana-titulo">{semana.total > 0 ? `${semana.total.toLocaleString('pt-BR')} ${semana.total === 1 ? 'questão' : 'questões'} em 7 dias` : 'Nenhuma questão nos últimos 7 dias'}</h2>
-              <dl className="inicio-semana__numeros">
-                <div><dt>Dias ativos</dt><dd className="numerico">{semana.diasAtivos} de 7</dd></div>
-                <div><dt>Acerto</dt><dd className="numerico">{semana.acerto === null ? '—' : `${semana.acerto}%`}</dd></div>
-                <div><dt>Média por dia</dt><dd className="numerico">{semana.diasAtivos ? Math.round(semana.total / semana.diasAtivos) : 0}</dd></div>
-              </dl>
-              <ol className="inicio-semana__grafico" aria-label="Questões respondidas por dia">
-                {semana.dias.map(dia => (
-                  <li key={dia.chave} className={dia.hoje ? 'inicio-semana__dia--hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}${dia.total ? `, ${Math.round((dia.acertos / dia.total) * 100)}% de acerto` : ''}`}>
-                    <span className="inicio-semana__coluna"><span style={{ height: `${dia.total ? Math.max(6, (dia.total / semana.maximo) * 100) : 0}%` }} /></span>
-                    <span className="inicio-semana__rotulo">{dia.rotulo}</span>
-                    <span className="inicio-semana__sr">{dia.nomeCompleto}: {dia.total} {dia.total === 1 ? 'questão' : 'questões'}</span>
-                  </li>
-                ))}
-              </ol>
-            </section>}
-              {historico.length > 0 && (
-              <section className="inicio-bloco inicio-bloco--sessoes">
-                <h2>Suas últimas sessões</h2>
-                <ol className="inicio-sessoes">
-                  {historico.slice(0, 3).map((h) => {
-                    const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
-                    return (
-                      <li key={h.id} className="inicio-sessao">
-                        <span className="inicio-sessao__quando">{quandoFoi(h.concluidaEm)}</span>
-                        <span className="inicio-sessao__nome">
-                          <strong>{h.descricao}</strong>
-                          <small>{h.respondidas} de {h.total} {h.total === 1 ? 'questão' : 'questões'}</small>
-                        </span>
-                        <span className={`inicio-sessao__acerto inicio-sessao__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'baixo'}`}>
-                          {acerto === null ? '—' : `${acerto}%`}
-                        </span>
-                      </li>
-                    )
-                  })}
-                </ol>
-              </section>
-            )}
-          </div>
-          <section className="inicio-bloco">
-            <h2>Por tema</h2>
-            <p className="meta" style={{ marginTop: '0.25rem' }}>
-              Um clique monta a sessão do tema inteiro.
-            </p>
-            <ul className="inicio-temas">
-              {indice.temas
-                .filter((tema) => (contagens.porTema[tema.slug] ?? 0) > 0)
-                .map((tema) => {
-                  const quantidade = contagens.porTema[tema.slug] ?? 0
-                  const feitas = Math.min(quantidade, respondidasPorTema[tema.slug] ?? 0)
-                  const porcento = quantidade ? Math.round((feitas / quantidade) * 100) : 0
-                  return (
-                    <li key={tema.slug}>
-                      <a className="inicio-tema" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${tema.slug}`)}>
-                        <span className="inicio-tema__nome">{tema.nome}</span>
-                        <span className="inicio-tema__numeros numerico">{feitas > 0 ? `${feitas} de ${quantidade}` : `${quantidade} questões`}</span>
-                        <span className="inicio-tema__trilho" aria-hidden="true"><span style={{ width: `${Math.max(feitas > 0 ? 2 : 0, porcento)}%` }} /></span>
-                        <Icone nome="direita" tamanho={16} />
-                      </a>
-                    </li>
-                  )
-                })}
+              <button type="button" className="ip-heroi__entrar" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>
+            </div>
+            <p className="ip-heroi__nota"><Icone nome="certo" tamanho={14} /> Conta grátis, {fraseGratis('curto')}. No celular ou no computador, continua de onde parou.</p>
+            <ul className="ip-provas" aria-label="Provas no acervo">
+              {PROVAS_DO_ACERVO.map(({ nome: prova, cor }) => <li key={prova} style={{ '--cor-linha': cor } as CSSProperties}>{prova}</li>)}
             </ul>
-          </section>
-          </> : <>
-          <ConviteLimiteDoDia />
-          <CaixasAssinante />
-          <VitrineAssinante />
-          </>}
-          <ParComCripta>
-          <section className="inicio-ranking" aria-label="Ranking e conquistas">
-            <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
-            <div className="inicio-ranking__texto">
-              <p className="inicio-ranking__selo">Ranking e conquistas</p>
-              <h2>{conta ? <>Suba no <em>ranking</em> e destrave emblemas</> : <>Entre no <em>ranking</em> de quem mais estuda</>}</h2>
-              <p>{conta
-                ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequenciaViva.atual >= 3 ? <> · <b>{sequenciaViva.atual} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
-                : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>
-              {!conta && <PodioPrevia />}
-            </div>
-            <div className="inicio-ranking__acoes">
-              <a className="botao botao--ouro" href={href('/ranking')}>Ver ranking</a>
-              <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>Minhas conquistas</a>
-            </div>
-          </section>
-          </ParComCripta>
-          <CartaoPlanos />
-          {(conta || !contasDisponiveis) && <SecaoIndique />}
+          </div>
+          <AmostraRespondivel />
+        </section>
+        <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
+        {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
+        {vazio}
+        <ConviteLimiteDoDia />
 
-        </>
-      )}
-      {!conta && (
+        <section className="ip-pilares ip-entra" aria-labelledby="ip-pilares-titulo" style={{ '--i': 1 } as CSSProperties}>
+          <h2 id="ip-pilares-titulo" className="ip-invisivel">O que o Orto Questões faz por você</h2>
+          {[
+            { arte: 'treinar' as const, titulo: 'Questões oficiais comentadas', texto: 'Cada alternativa explicada, a certa e as erradas, com o conceito por trás.' },
+            { arte: 'revisao' as const, titulo: 'Revisão no dia certo', texto: 'Errou, a questão volta logo. Acertou com certeza, só daqui a semanas.' },
+            { arte: 'simulado' as const, titulo: 'Cronograma até a prova', texto: 'A lista de cada dia, passando primeiro pelo que mais cai.' },
+            { arte: 'desempenho' as const, titulo: 'Seu desempenho por tema', texto: 'Onde você acerta, onde erra e o que treinar a seguir.' },
+          ].map((p) => (
+            <article key={p.titulo} className="ip-pilar">
+              <IconePixel nome={p.arte} tamanho={44} />
+              <h3>{p.titulo}</h3>
+              <p>{p.texto}</p>
+            </article>
+          ))}
+        </section>
+
+        {temAcervo && <>
+          <CaixasAssinante />
+          <CartaoCronograma cronograma={cronograma} />
+          {FLASHCARDS_NA_CAPA && <QuadroFlashcards classe="inicio-flash--faixa" />}
+          <AteAProva total={indice!.total} conta={false} />
+          <div className="ip-dupla ip-dupla--rodape">
+            <BlocoRanking conta={false} conquistadas={conquistadas} totalConquistas={totalConquistas} sequencia={streak.atual} />
+            <CartaoPlanos />
+          </div>
+          <section className="ip-chamada" aria-labelledby="ip-chamada-titulo">
+            <img src={recurso('ranking/mensageiro.png')} width={48} height={60} alt="" loading="lazy" decoding="async" />
+            <div>
+              <h2 id="ip-chamada-titulo">A primeira sessão leva um minuto.</h2>
+              <p>Crie a conta, escolha um tema e responda. O resto o site organiza para você.</p>
+            </div>
+            <a className="botao ip-botao-ouro botao--grande" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>Criar conta grátis</a>
+          </section>
+        </>}
+
         <section className="inicio-bloco inicio-seo" aria-labelledby="inicio-apresentacao">
           <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
           <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Estude por assunto, entenda as alternativas e revise seus erros.</p>
@@ -456,16 +340,236 @@ export function Inicio() {
             <a href={recurso('guias/questoes-r4-quadril-coluna.html')}>R4 de quadril e coluna</a>
           </nav>
         </section>
-      )}
+      </div>
+    )
+  }
+
+  // ---------------------------------------------------------------- Painel do dia
+  const pctAcao = acao?.progresso && acao.progresso.total ? Math.min(100, Math.round((acao.progresso.feitas / acao.progresso.total) * 100)) : null
+  return (
+    <div className="ip ip--painel">
+      <section className="ip-heroi ip-heroi--painel ip-entra" aria-labelledby="ip-painel-titulo">
+        <div className="ip-heroi__texto">
+          <p className="ip-selo">Seu dia de estudo</p>
+          <h1 id="ip-painel-titulo">{titulo}</h1>
+          <p className="ip-heroi__lide">{calculo && !calculo.provaPassou
+            ? <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a prova. {cabecalhoDoDia.incentivo}</>
+            : cabecalhoDoDia.incentivo}</p>
+
+          {acao && (
+            <div className="ip-acao">
+              <p className="ip-acao__selo">{acao.selo}</p>
+              <h2 className="ip-acao__titulo">{acao.titulo}</h2>
+              <p className="ip-acao__detalhe">{acao.detalhe}</p>
+              {acao.progresso && (
+                acao.progresso.total > 0 && acao.progresso.total <= 40
+                  ? <span className="ip-blocos" role="img" aria-label={`${acao.progresso.feitas} de ${acao.progresso.total}`} style={{ gridTemplateColumns: `repeat(${acao.progresso.total}, minmax(0, 1fr))` }}>
+                    {Array.from({ length: acao.progresso.total }, (_, i) => <span key={i} className={i < acao.progresso!.feitas ? 'cheio' : ''} style={{ '--i': i } as CSSProperties} />)}
+                  </span>
+                  : <span className="ip-barra" role="img" aria-label={`${pctAcao}%`}><span style={{ width: `${pctAcao}%` }} /></span>
+              )}
+              <div className="ip-acao__linha">
+                {acao.destino
+                  ? <a className="botao ip-botao-ouro botao--grande" href={href(acao.destino)}><Icone nome={acao.icone} tamanho={18} /> {acao.botao}</a>
+                  : <button type="button" className="botao ip-botao-ouro botao--grande" onClick={acao.aoClicar} disabled={acao.desabilitada}><Icone nome={acao.icone} tamanho={18} /> {acao.botao}</button>}
+                {acao.progresso && <span className="ip-acao__conta numerico"><strong>{acao.progresso.feitas}</strong> de {acao.progresso.total}</span>}
+              </div>
+              {/* O que vem depois, sem competir com a ação principal. */}
+              {(metaHoje || sessaoEmAndamento) && revisarHoje > 0 && (
+                <a className="ip-acao__depois" href={href('/revisao')}><Icone nome="calendario" tamanho={15} /> Depois: {revisarHoje} {revisarHoje === 1 ? 'questão' : 'questões'} para rever hoje <Icone nome="direita" tamanho={14} /></a>
+              )}
+            </div>
+          )}
+        </div>
+
+        <PainelSequencia streak={streak} dias={diasSequencia} quaseLa={quaseLa} conquistadas={conquistadas} totalConquistas={totalConquistas} />
+        {cronogramaNoPainel && calculo && cronograma.plano && <CaminhoProva calculo={calculo} plano={cronograma.plano} />}
+        {!cronograma.carregando && !calculo && <CaminhoConvite premium={cronograma.premium} />}
+      </section>
+
+      <nav className="ip-atalhos ip-entra" aria-label="Atalhos" style={{ '--i': 1 } as CSSProperties}>
+        <a className="ip-atalho" href={href('/treinar')}>
+          <IconePixel nome="treinar" tamanho={40} />
+          <span><strong>Treinar</strong><small>Monte a sua sessão</small></span>
+        </a>
+        <a className="ip-atalho" href={href('/revisao')}>
+          <IconePixel nome="revisao" tamanho={40} />
+          <span><strong>Revisão</strong><small>{revisarHoje ? `${revisarHoje.toLocaleString('pt-BR')} para hoje` : 'Em dia por hoje'}</small></span>
+          {revisarHoje > 0 && <b className="ip-atalho__contador numerico">{revisarHoje > 99 ? '99+' : revisarHoje}</b>}
+        </a>
+        {FLASHCARDS_NA_CAPA && <>
+          <a className="ip-atalho ip-atalho--arte" href={href('/flashcards/biblioteca')} style={{ '--arte': `url(${recurso('flashcards/promo/cartao-biblioteca.png')})` } as CSSProperties}>
+            <span><strong>Estudar flashcards</strong><small>Revisão espaçada</small></span>
+          </a>
+          <a className="ip-atalho ip-atalho--arte ip-atalho--jogo" href={href('/flashcards/cripta')} style={{ '--arte': `url(${recurso('flashcards/promo/cartao-cripta.png')})` } as CSSProperties}>
+            <span><strong>Jogar o Torneio</strong><small>Flashcards · Beta</small></span>
+          </a>
+        </>}
+      </nav>
+
+      <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
+      <ConviteLimiteDoDia />
+      {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
+      {vazio}
+
+      {temAcervo && <>
+        {/* O cronograma vale muito: quem ainda não tem um vê o convite logo depois dos atalhos. */}
+        {!cronograma.premium && !cronograma.carregando && <CartaoCronograma cronograma={cronograma} />}
+        {cronograma.premium && calculo && (calculo.naRetaFinal || calculo.provaPassou) && <CartaoCronograma cronograma={cronograma} />}
+
+        <div className="ip-trio">
+          <section className="ip-cartao ip-hoje" aria-labelledby="ip-hoje-titulo">
+            <header className="ip-cartao__cabeca"><h2 id="ip-hoje-titulo">Seu estudo de hoje</h2></header>
+            <p className="ip-cartao__intro">{textoDoDia.explicacao}</p>
+            <div className="ip-hoje__lista">
+              <a className="ip-hoje__item ip-hoje__item--destaque" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=revisarHoje&limite=20`)}>
+                <IconePixel nome="revisao" tamanho={32} />
+                <span><strong>Revisar hoje</strong><small>{textoDoDia.revisar}</small></span>
+                <b className="numerico">{revisarHoje.toLocaleString('pt-BR')}</b>
+              </a>
+              <a className="ip-hoje__item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=naoRespondidas&limite=10`)}>
+                <IconePixel nome="treinar" tamanho={32} />
+                <span><strong>Questões novas</strong><small>{textoDoDia.novas}</small></span>
+                <b className="ip-hoje__seta"><Icone nome="direita" tamanho={16} /></b>
+              </a>
+              <a className="ip-hoje__item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=dominadas`)}>
+                <IconePixel nome="ranking" tamanho={32} />
+                <span><strong>Dominadas</strong><small>Ciclo de revisão completo</small></span>
+                <b className="numerico">{(contagens!.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
+              </a>
+            </div>
+          </section>
+
+          <section className="ip-cartao ip-foco" aria-labelledby="ip-foco-titulo">
+            <header className="ip-cartao__cabeca"><h2 id="ip-foco-titulo">Onde você mais erra</h2></header>
+            {temaFragil ? (() => {
+              const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
+              return <>
+                <p className="ip-foco__tema">{temaFragil[0]}</p>
+                <div className="ip-foco__medida">
+                  <span className="ip-barra ip-barra--fina ip-barra--acerto" role="img" aria-label={`${acerto}% de acerto`}><span style={{ width: `${Math.max(4, acerto)}%` }} /></span>
+                  <small><b className="numerico">{acerto}%</b> de acerto</small>
+                </div>
+                <dl className="ip-foco__numeros">
+                  <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>
+                  <div><dt>Erros</dt><dd className="numerico">{(temaFragil[1].tentativas - temaFragil[1].acertos).toLocaleString('pt-BR')}</dd></div>
+                  <div><dt>Revisões</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>
+                </dl>
+                <p className="ip-foco__texto">De todos os temas que você já treinou, é onde uma sessão curta rende mais pontos na prova.</p>
+                <a className="botao ip-botao-contorno" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
+              </>
+            })() : <>
+              <p className="ip-foco__texto">Responda pelo menos duas questões de um tema e este cartão mostra onde uma sessão curta rende mais.</p>
+              <a className="botao ip-botao-contorno" href={href('/treinar')}>Montar uma sessão <Icone nome="direita" tamanho={16} /></a>
+            </>}
+          </section>
+
+          <section className="ip-cartao ip-semana" aria-labelledby="ip-semana-titulo">
+            <header className="ip-cartao__cabeca">
+              <h2 id="ip-semana-titulo">Sua semana</h2>
+              <a href={href('/dados')}>Desempenho <Icone nome="direita" tamanho={14} /></a>
+            </header>
+            <dl className="ip-semana__numeros">
+              <div><dt>Questões</dt><dd className="numerico">{semana.total.toLocaleString('pt-BR')}</dd></div>
+              <div><dt>Acerto</dt><dd className="numerico">{semana.acerto === null ? '—' : `${semana.acerto}%`}</dd></div>
+              <div><dt>Dias ativos</dt><dd className="numerico">{semana.diasAtivos} de 7</dd></div>
+            </dl>
+            <ol className="ip-semana__grafico" aria-label="Questões respondidas por dia">
+              {semana.dias.map((dia, i) => (
+                <li key={dia.chave} className={dia.hoje ? 'hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}`}>
+                  <span className="ip-semana__coluna"><span style={{ height: `${dia.total ? Math.max(8, (dia.total / semana.maximo) * 100) : 0}%`, '--i': i } as CSSProperties} /></span>
+                  <small>{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>
+                </li>
+              ))}
+            </ol>
+            {historico.length > 0 && (
+              <ol className="ip-sessoes">
+                {historico.slice(0, 3).map((h) => {
+                  const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
+                  return (
+                    <li key={h.id}>
+                      <span className="ip-sessoes__quando">{quandoFoi(h.concluidaEm)}</span>
+                      <span className="ip-sessoes__nome">{h.descricao}</span>
+                      <span className={`ip-sessoes__acerto ip-sessoes__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'baixo'}`}>{acerto === null ? '—' : `${acerto}%`}</span>
+                    </li>
+                  )
+                })}
+              </ol>
+            )}
+          </section>
+        </div>
+
+        <div className="ip-dupla">
+          <CaixasAssinante />
+          <VitrineAssinante />
+        </div>
+
+        {/* Depois do estudo do dia, não antes: os pedidos (perfil, novidade) não podem empurrar a ação principal para baixo. */}
+        <CompletarPerfil />
+        {cronogramaNoPainel && <NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} />}
+        {!calculo && !cronograma.carregando && respondidasTotal < 30 && <AteAProva total={indice!.total} conta={Boolean(conta)} />}
+
+        <section className="ip-temas" aria-labelledby="ip-temas-titulo">
+          <header className="ip-secao-cabeca">
+            <h2 id="ip-temas-titulo">Treinar por tema</h2>
+            <p>Um toque monta a sessão do tema. A barra mostra quanto você já passou por ele.</p>
+          </header>
+          <ul className="ip-temas__lista">
+            {indice!.temas
+              .filter((tema) => (contagens!.porTema[tema.slug] ?? 0) > 0)
+              .map((tema) => {
+                const quantidade = contagens!.porTema[tema.slug] ?? 0
+                const feitas = Math.min(quantidade, respondidasPorTema[tema.slug] ?? 0)
+                const porcento = quantidade ? Math.round((feitas / quantidade) * 100) : 0
+                return (
+                  <li key={tema.slug}>
+                    <a className="ip-tema" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${tema.slug}`)}>
+                      <span className="ip-tema__nome">{tema.nome}</span>
+                      <span className="ip-tema__pct numerico">{feitas > 0 ? `${Math.max(1, porcento)}%` : 'Novo'}</span>
+                      <span className="ip-tema__trilho" aria-hidden="true"><span style={{ width: `${Math.max(feitas > 0 ? 2 : 0, porcento)}%` }} /></span>
+                    </a>
+                  </li>
+                )
+              })}
+          </ul>
+        </section>
+
+        <div className="ip-dupla ip-dupla--rodape">
+          <BlocoRanking conta={Boolean(conta)} conquistadas={conquistadas} totalConquistas={totalConquistas} sequencia={streak.atual} />
+          <CartaoPlanos />
+        </div>
+        <SecaoIndique />
+      </>}
     </div>
   )
 }
 
+/** Ranking e conquistas, compacto, com a coroa em pixel art. */
+function BlocoRanking({ conta, conquistadas, totalConquistas, sequencia }: { conta: boolean; conquistadas: number; totalConquistas: number; sequencia: number }) {
+  return (
+    <section className="inicio-ranking ip-ranking" aria-label="Ranking e conquistas">
+      <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={64} height={64} loading="lazy" decoding="async" />
+      <div className="inicio-ranking__texto">
+        <p className="inicio-ranking__selo">Ranking e conquistas</p>
+        <h2>{conta ? <>Suba no <em>ranking</em> e destrave emblemas</> : <>Entre no <em>ranking</em> de quem mais estuda</>}</h2>
+        <p>{conta
+          ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequencia >= 3 ? <> · <b>{sequencia} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
+          : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>
+        {!conta && <PodioPrevia />}
+      </div>
+      <div className="inicio-ranking__acoes">
+        <a className="botao botao--ouro" href={href('/ranking')}>Ver ranking</a>
+        <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>{conta ? 'Minhas conquistas' : 'Conquistas'}</a>
+      </div>
+    </section>
+  )
+}
+
 /**
- * Flashcards na página inicial (beta público, 13/10/2026). No computador o
- * quadro ocupa a coluna da direita do herói; no celular vira uma faixa logo
- * abaixo. Fala só em flashcards (pedido do Tales, 13/10/2026): o nome Cripta só aparece
- * dentro do jogo; fora dele é "Flashcards" ou "Torneio de Flashcards".
+ * Flashcards na vitrine do visitante (beta público, 13/10/2026). Fala só em
+ * flashcards (pedido do Tales, 13/10/2026): o nome Cripta só aparece dentro do
+ * jogo; fora dele é "Flashcards" ou "Torneio de Flashcards". Para quem tem conta,
+ * os mesmos destinos viram atalhos logo abaixo do painel.
  */
 function QuadroFlashcards({ classe }: { classe: string }) {
   const id = classe.split(' ')[0] + '-titulo'
@@ -488,9 +592,4 @@ function QuadroFlashcards({ classe }: { classe: string }) {
       </span>
     </section>
   )
-}
-
-/** Ao lado do banner do ranking, quando VITE_FLASHCARDS_CAPA=1; sem a trava, o banner fica sozinho como sempre. */
-function ParComCripta({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
 }
