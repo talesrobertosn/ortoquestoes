@@ -41,6 +41,14 @@ export function paginaAtual(): { pagina: string; questao: string | null } {
     const partida = ler<{ andar?: number; fase?: string; encerrada?: boolean } | null>(jogo[1] === 'torre' ? 'flashcards:torre' : 'flashcards:partida', null)
     if (partida?.andar && partida.fase && partida.fase !== 'fim' && !partida.encerrada) return { pagina: `${rota} · andar ${partida.andar}`, questao: null }
   }
+  // Lendo um resumo da Biblioteca: o capítulo já vem na rota; junta o quanto foi lido (de 10 em 10%,
+  // para o sinal não disparar a cada parágrafo). O painel mostra "Lendo o resumo: <título> (40% lido)".
+  const resumo = rota.match(/^\/resumos\/([a-z0-9-]{3,80})$/)
+  if (resumo && resumo[1] !== 'caderno' && resumo[1] !== 'frases') {
+    const leitura = ler<Record<string, { progresso?: number } | null> | null>('biblioteca', null)?.[`l.${resumo[1]}`]
+    const p = typeof leitura?.progresso === 'number' ? Math.min(100, Math.floor(leitura.progresso / 10) * 10) : null
+    if (p !== null) return { pagina: `${rota} · ${p}% lido`, questao: null }
+  }
   return { pagina: rota, questao: null }
 }
 

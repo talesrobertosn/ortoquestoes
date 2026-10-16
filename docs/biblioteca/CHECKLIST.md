@@ -24,7 +24,8 @@ Desde 16/10/2026 **todos os resumos são abertos** (`acesso: gratis`, com págin
 | 4 | Luxação do joelho e lesão multiligamentar | joelho_dislocation.pdf (enviado em 16/10/2026, 63 páginas): Rockwood 10ª ed., cap. 61 · Knee Dislocations (Stannard, Richards) | [x] Feito em 16/10/2026: `rockwood10-61-luxacao-joelho` |
 | 5 | Fraturas e luxações da coluna toracolombar | fratura_toracolombar (3 arquivos, 100 páginas, 16/10/2026): Rockwood 10ª ed., cap. 49 (Kitto, Edwards, Tannoury) nas pp. 1–36; **pp. 37–100 são o cap. 50, Pelvic Ring Injuries (Firoozabadi)** | [x] Feito em 16/10/2026: `rockwood10-49-fratura-toracolombar`, aberto. Anel pélvico (cap. 50) recebido, ainda não resumido |
 | 6 | Fraturas diafisárias do rádio e da ulna | radio_ulnar.pdf (16/10/2026, 37 páginas): Rockwood 10ª ed., cap. 42 (Streubel, Grossman) | [x] Feito em 16/10/2026: `rockwood10-42-diafise-radio-ulna` (Monteggia, Galeazzi, vias, sinostose) |
-| 7 | Fratura do úmero distal | tema_1_cabeca_do_radio.pdf (enviado em 16/10/2026): na verdade é o cap. 39 do Rockwood (Distal Humerus Fractures) | [ ] Na fila (o nome do arquivo dizia cabeça do rádio; o capítulo certo da cabeça do rádio chegou depois, ver linha 3). |
+| 7 | Fratura do úmero proximal | umero_proximal.pdf (16/10/2026, 58 páginas): Rockwood 10ª ed., cap. 36 (Foruria, Martinez-Catalan, Sanchez-Sotelo) | [x] Feito em 16/10/2026: `rockwood10-36-umero-proximal` (Neer, Hertel, placa e calcar, reversa) |
+| 8 | Fratura do úmero distal | tema_1_cabeca_do_radio.pdf (enviado em 16/10/2026): na verdade é o cap. 39 do Rockwood (Distal Humerus Fractures) | [ ] Na fila (o nome do arquivo dizia cabeça do rádio; o capítulo certo da cabeça do rádio chegou depois, ver linha 3). |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo e qualquer divergência entre o
 livro e um gabarito oficial que tenha ido para `alerta:`.

@@ -22,3 +22,5 @@ Também em 12/10/2026, Tales aprovou o **Treine grátis** (story de propaganda c
 Kit de posts (15/10/2026): [marketing/kit/README.md](marketing/kit/README.md) traz os modelos aprovados parametrizados por JSON, a fila das próximas 30 postagens e o ciclo em um comando (`node marketing/kit/renderizar.mjs <NN>`). Prompt para o Codex: [docs/prompts/codex-post-rapido.md](docs/prompts/codex-post-rapido.md).
 
 Em 16/10/2026, Tales aprovou como modelo o trio **Embarque** (feed: cartão de embarque), **Exame de DNA** (stories de questão: "quem é o pai?") e **Créditos finais** (stories de propaganda com tudo o que o site tem e "Treine grátis"). Veja [o guia](marketing/instagram/estilos/EMBARQUE-DNA-CREDITOS.md).
+
+Em 16/10/2026, Tales definiu o **modelo padrão** de posts (stories e feed): o lançamento da Biblioteca de Resumos, com telas reais do site editadas (MacBook e iPhone, lupas com moldura dourada e pinos numerados), cor dominante verde ou branca. Quando ele pedir "no modelo padrão", use este. Veja [o guia](marketing/instagram/estilos/MODELO-PADRAO.md).

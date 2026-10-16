@@ -142,6 +142,8 @@ const PAGINAS: Record<string, string> = {
   '/indicar': 'Indique e ganhe', '/ligas': 'Liga da residência', '/admin': 'Painel do administrador', '/termos': 'Termos de uso',
   '/contato': 'Suporte e contato', '/sobre': 'O projeto', '/projeto': 'O projeto', '/progresso': 'Progresso dos comentários',
   '/emails': 'Preferências de e-mail',
+  // Biblioteca de resumos (16/10/2026); o resumo aberto no leitor vira "Lendo o resumo: <título>" (rotuloPagina)
+  '/resumos': 'Biblioteca de resumos (estante)', '/resumos/caderno': 'Resumos: caderno de estudo', '/resumos/frases': 'Resumos: frases que caem',
   // Flashcards (beta): em que parte a pessoa está, com o nome público fora do jogo
   '/flashcards': 'Flashcards: página inicial', '/flashcards/desempenho': 'Flashcards: vendo o desempenho',
   '/flashcards/cronograma': 'Flashcards: montando o cronograma', '/flashcards/entrada': 'Torneio de Flashcards: escolhendo o modo',
@@ -149,11 +151,21 @@ const PAGINAS: Record<string, string> = {
   '/flashcards/torre': 'Torneio de Flashcards: subindo a Torre', '/flashcards/biblioteca': 'Estudando flashcards (Biblioteca)',
   '/flashcards/estudo': 'Estudando flashcards (Biblioteca)', '/flashcards/ranking': 'Flashcards: vendo o ranking',
 }
+/** Títulos dos resumos da Biblioteca (o painel registra ao abrir), para "Lendo o resumo: Fratura do colo do fêmur". */
+const titulosResumos = new Map<string, string>()
+export function registrarTitulosResumos(lista: Array<{ id: string; titulo: string }>) { for (const c of lista) titulosResumos.set(c.id, c.titulo) }
+export const tituloResumo = (id: string) => titulosResumos.get(id) ?? id.replace(/^[a-z]+\d+-\d+-/, '').replace(/-/g, ' ')
+/** Id do capítulo quando a página é um resumo aberto no leitor (fora a estante, o caderno e as frases). */
+export function resumoDaPagina(pagina: string | null | undefined): string | null {
+  const m = (pagina ?? '').split(' · ')[0].match(/^\/resumos\/([a-z0-9-]{3,80})$/)
+  return m && m[1] !== 'caderno' && m[1] !== 'frases' ? m[1] : null
+}
 /** "/sessao · 3 de 10" vira "Respondendo questões (3 de 10)". */
 export function rotuloPagina(pagina: string | null | undefined): string {
   if (!pagina) return 'sem registro'
   const [rota, extra] = pagina.split(' · ')
-  const nome = PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota.startsWith('/flashcards') ? 'Flashcards' : rota)
+  const capitulo = resumoDaPagina(rota)
+  const nome = capitulo ? `Lendo o resumo: ${tituloResumo(capitulo)}` : PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota.startsWith('/flashcards') ? 'Flashcards' : rota)
   return extra ? `${nome} (${extra})` : nome
 }
 /** "agora", "há 4 min", "há 2 h", ou a data. */
