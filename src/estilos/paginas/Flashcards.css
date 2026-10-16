@@ -1868,6 +1868,8 @@ body.fc-modal-aberto .aviso-cookies { visibility: hidden; }
 .fc-entrada .fc-modo { background:linear-gradient(135deg,#f8f0daef,#e6dbc3ed);border:2px solid #a88651;box-shadow:inset 0 0 0 3px #fff4d8,0 12px 28px #0c1e1744; border-radius:18px; color:#304a36;padding:22px; gap:12px; }
 .fc-entrada .fc-modo strong { font:700 clamp(20px,2vw,27px)/1.25 var(--fc-titulo); color:#314b37; text-shadow:none; }
 .fc-entrada .fc-modo small,.fc-entrada .fc-modo__dados { color:#52604b;font-size:17px;line-height:1.4; }
+/* o número em negrito sumia no pergaminho claro abaixo de 861 px (creme sobre creme; auditoria 16/10) */
+.fc-entrada .fc-modo__dados b { color:#2f4a36; }
 /* Começar do zero, embaixo do cartão da Cripta (15/10/2026) */
 .fc-modo-coluna { display:grid; gap:10px; align-content:start; min-width:0; }
 .fc-modo-coluna > .fc-modo { height:auto; }
