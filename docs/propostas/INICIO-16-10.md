@@ -3,8 +3,8 @@
 Pedido do Tales: "Me mostra como você faria para deixar a página inicial mais bonita, melhor, como
 você otimizaria. Não sobe, só faz e me manda uns prints. Faça um brainstorm."
 
-**Situação: proposta, não publicada.** Está num branch próprio, com commit e sem push. Capturas
-antes e depois em `/tmp/claude-0/proposta-inicio/` (fora do repositório).
+**Situação: aprovada pelo Tales em 16/10/2026, com os ajustes da seção 4 (versão final).**
+Capturas antes, depois e final em `/tmp/claude-0/proposta-inicio/` (fora do repositório).
 
 Como foi feito: o app rodou localmente com Supabase simulado no navegador (mesma técnica de
 `fixtures/testar_compra_planos.mjs`: sessão falsa no `localStorage` e respostas do Supabase
@@ -166,3 +166,43 @@ questão ou dado mudou.
   `comparacao-celular-dobra.png` e `comparacao-visitante-computador.png` (primeira dobra).
 - `antes/` e `depois/`: `<visitante|logado>-<largura>x<altura>-<dobra|inteira>.png`; no depois
   também 844×390, o tema escuro (`-escuro`) e a amostra respondida (`-amostra-respondida`).
+
+---
+
+## 4. Ajustes pedidos pelo Tales na aprovação (versão final)
+
+1. **Sequência refeita, com pixel art própria.** A fogueira e os ícones dos dias saem de
+   `scripts/gerar_pixel_inicio.py` (feitos do zero por script, nada baixado nem gerado por IA):
+   fogueira em 4 quadros que tremula (`steps(4)`), fogueira apagada com fumaça para sequência
+   zerada, e os ícones de dia feito, hoje aceso, hoje esperando e dia sem estudo. O cartão mostra o
+   número grande dos dias seguidos, o recorde, a meta da sequência de hoje ("Hoje: 3 de 5") e a
+   **semana de segunda a domingo** com estados claros: feito (chama), parcial (brasa), sem estudo
+   (cinza), hoje (contorno dourado, pulsando enquanto falta) e futuro (tracejado). O espaço que
+   sobrava virou o **"Quase lá"** (os 3 emblemas mais perto de cair, com barra).
+2. **Frases do título mantidas e ampliadas.** O rodízio de `src/dados/frasesInicio.ts` continua: a
+   cada abertura ou recarregamento aparece a próxima frase de uma ordem embaralhada, passando por
+   todas antes de repetir. Eram 64; agora são 72 (8 novas no mesmo estilo). Para o visitante a
+   frase também voltou a ser o título, com a proposta de valor logo abaixo. As duas perguntas
+   ("Que tal...") passaram a terminar com interrogação também com o nome. Teste novo:
+   `fixtures/testar_frases_inicio.mjs` (no `npm test`): pelo menos 50, sem repetidas, sem total de
+   questões, e aberturas seguidas sempre com frases diferentes. Conferido também no navegador:
+   5 recarregamentos seguidos, 5 títulos diferentes, em cada tipo de conta.
+3. **Cronograma em destaque.** A meta de hoje continua sendo a ação do topo (blocos, "10 de 34",
+   botão dourado). Embaixo, ocupando a largura do topo, o **caminho até a prova**: linha do dia
+   em que o cronograma nasceu até a prova, semanas como marcos (douradas as que já passaram), o
+   mensageiro com a etiqueta "Hoje" onde a pessoa está, a bandeira de chegada em pixel art no pódio,
+   "Semana 5 de 25", o ritmo ("Adiantado", "No ritmo do plano" ou "Um pouco atrás · a meta já se
+   ajusta") e quatro fatos: hoje, amanhã, dias até a prova e quanto do que mais cai o plano cobre
+   até lá. Quem não tem cronograma vê o mesmo caminho vazio, até a próxima prova teórica do TEOT,
+   com o convite ("Montar meu cronograma" para assinante, "Ver um exemplo com o meu histórico" para
+   o gratuito, que também continua vendo o cartão grande do Cronograma). No celular, o caminho vem
+   logo depois da ação, antes da sequência.
+4. **Blocos obrigatórios para quem tem conta:** "Seu estudo de hoje" (revisar hoje, questões novas,
+   dominadas; o número de questões novas virou uma seta para não chegar perto do total do acervo),
+   "Onde você mais erra" (acerto, respostas, erros e revisões do tema, com "Treinar este tema"; sem
+   dado suficiente, um convite), "Sua semana" (questões, acerto, dias ativos, gráfico e últimas
+   sessões) e "O que a prova mais cobra" (ao lado dos recursos do assinante).
+
+Testado com três contas simuladas além do visitante: assinante com cronograma, conta gratuita e
+assinante sem cronograma, em 1400×860, 390×844 e 844×390 (e o tema escuro). Capturas em
+`/tmp/claude-0/proposta-inicio/final/`.

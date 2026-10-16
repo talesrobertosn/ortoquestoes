@@ -9,15 +9,16 @@ import { AteAProva } from '../componentes/AteAProva'
 import { PodioPrevia } from '../componentes/PodioPrevia'
 import { Icone } from '../componentes/Icone'
 import { IconePixel } from '../componentes/IconePixel'
-import { Medalha } from '../componentes/Medalha'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
-import { CaixasAssinante, CartaoCronograma, TrilhaJornada, usarCronogramaHoje } from '../componentes/CaixasAssinante'
+import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
+import { type DiaSequencia, PainelSequencia } from '../componentes/inicio/PainelSequencia'
+import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
 import { usarConquistas } from '../estado/usarConquistas'
 import { emblemasQuaseLa } from '../estado/conquistas'
 import { FLASHCARDS_NA_CAPA, fraseGratis, recurso } from '../config'
@@ -56,11 +57,11 @@ function quandoFoi(instante: number): string {
 }
 
 const VARIACOES_INICIO = [
-  { explicacao: 'Errou? A questão volta hoje. Acertou por chute? Volta amanhã. Acertou com certeza? Só reaparece daqui a semanas.', acao: 'Treinar 10 questões' },
-  { explicacao: 'Sessões curtas e frequentes fixam mais do que maratonas de fim de semana.', acao: 'Fazer 10 questões agora' },
-  { explicacao: 'Uma questão lida com atenção vale mais do que dez respondidas no automático. Leia o comentário, entenda e siga.', acao: 'Começar sessão de 10' },
-  { explicacao: 'A fila prioriza o que venceu e o que você errou. O intervalo entre as revisões também faz parte do estudo.', acao: 'Treinar 10 questões' },
-  { explicacao: 'Erros voltam cedo; acertos seguros ganham intervalos longos. Assim o seu tempo vai para onde rende mais.', acao: 'Praticar 10 questões' },
+  { explicacao: 'Errou? A questão volta hoje. Acertou por chute? Volta amanhã. Acertou com certeza? Só reaparece daqui a semanas.', acao: 'Treinar 10 questões', revisar: 'Retome o que precisa fixar', novas: 'Avance no acervo' },
+  { explicacao: 'Comece pelas revisões de hoje. Sessões curtas e frequentes fixam mais do que maratonas de fim de semana.', acao: 'Fazer 10 questões agora', revisar: 'Transforme erro em domínio', novas: 'Descubra um assunto novo' },
+  { explicacao: 'Uma questão lida com atenção vale mais do que dez respondidas no automático. Leia o comentário, entenda e siga.', acao: 'Começar sessão de 10', revisar: 'Volte ao que ainda desafia', novas: 'Amplie seu repertório' },
+  { explicacao: 'A fila prioriza o que venceu e o que você errou. O intervalo entre as revisões também faz parte do estudo.', acao: 'Treinar 10 questões', revisar: 'Sua fila de consolidação', novas: 'Comece algo diferente' },
+  { explicacao: 'Erros voltam cedo; acertos seguros ganham intervalos longos. Assim o seu tempo vai para onde rende mais.', acao: 'Praticar 10 questões', revisar: 'Fortaleça os pontos frágeis', novas: 'Explore questões inéditas' },
 ]
 
 /** As provas do acervo, cada uma com a cor da sua linha (a mesma do mapa de metrô do marketing). */
@@ -165,6 +166,27 @@ export function Inicio() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [contexto.respondidas, hojeChave])
 
+  // A semana corrente, de segunda a domingo, para a sequência do topo: feito, hoje e o que ainda vem.
+  const diasSequencia = useMemo<DiaSequencia[]>(() => {
+    const porChave = new Map(semana.dias.map((d) => [d.chave, d.total]))
+    const curto = new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: FUSO_DIA }).format(new Date())
+    const desdeSegunda = (['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].indexOf(curto) + 7) % 7
+    return Array.from({ length: 7 }, (_, i) => {
+      const data = new Date(Date.now() + (i - desdeSegunda) * 86400000)
+      const chave = chaveDia(data)
+      const total = porChave.get(chave) ?? 0
+      const estado: DiaSequencia['estado'] = i === desdeSegunda ? (total >= META_STREAK_DIARIA ? 'hoje-feito' : 'hoje')
+        : i > desdeSegunda ? 'futuro' : total >= META_STREAK_DIARIA ? 'feito' : total > 0 ? 'parcial' : 'perdido'
+      return {
+        chave, total, estado,
+        inicial: ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'][i],
+        nome: data.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', timeZone: FUSO_DIA }),
+        numero: Number(data.toLocaleDateString('pt-BR', { day: 'numeric', timeZone: FUSO_DIA })),
+      }
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [semana, hojeChave])
+
   /** Treino rápido: uma sessão embaralhada de todo o acervo, num clique. */
   async function treinoRapido(quantidade: number) {
     if (!indice) return
@@ -249,7 +271,9 @@ export function Inicio() {
         <section className="ip-heroi ip-heroi--vitrine ip-entra" aria-labelledby="ip-vitrine-titulo">
           <div className="ip-heroi__texto">
             <p className="ip-selo"><span className="ponto-vivo" aria-hidden="true" /> Provas oficiais comentadas</p>
-            <h1 id="ip-vitrine-titulo">As provas de ortopedia, <em>comentadas como uma aula</em>.</h1>
+            {/* A frase do título muda a cada abertura (rodízio de src/dados/frasesInicio.ts); a proposta de valor vem logo abaixo, fixa. */}
+            <h1 id="ip-vitrine-titulo">{cabecalhoDoDia.semNome}</h1>
+            <p className="ip-heroi__proposta">As provas de ortopedia, <em>comentadas como uma aula</em>.</p>
             <p className="ip-heroi__lide">Treine pelas questões oficiais do TEOT, do TARO e das provas de subespecialidade. Cada alternativa explicada, a revisão no dia certo e um cronograma até a prova.</p>
             <div className="ip-heroi__acoes">
               <a className="botao ip-botao-ouro botao--grande" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>
@@ -322,7 +346,6 @@ export function Inicio() {
 
   // ---------------------------------------------------------------- Painel do dia
   const pctAcao = acao?.progresso && acao.progresso.total ? Math.min(100, Math.round((acao.progresso.feitas / acao.progresso.total) * 100)) : null
-  const faltamSequencia = Math.max(0, META_STREAK_DIARIA - streak.hojeContagem)
   return (
     <div className="ip ip--painel">
       <section className="ip-heroi ip-heroi--painel ip-entra" aria-labelledby="ip-painel-titulo">
@@ -359,34 +382,9 @@ export function Inicio() {
           )}
         </div>
 
-        <aside className="ip-progresso" aria-label="Seu progresso">
-          <div className="ip-fogo">
-            <img src={recurso('emblemas/fogueira.png')} width={44} height={44} alt="" className={streak.atual > 0 ? 'ip-fogo__arte ip-fogo__arte--viva' : 'ip-fogo__arte ip-fogo__arte--apagada'} />
-            <div>
-              <strong>{streak.atual} {streak.atual === 1 ? 'dia seguido' : 'dias seguidos'}</strong>
-              <small>{streak.metaHojeAtingida ? 'Hoje já conta. Fogueira acesa.' : streak.emRisco ? `Faltam ${faltamSequencia} hoje para manter.` : `${META_STREAK_DIARIA} questões por dia acendem a fogueira.`}</small>
-            </div>
-          </div>
-          <ol className="ip-semana-pontos" aria-label="Últimos 7 dias">
-            {semana.dias.map((dia) => (
-              <li key={dia.chave} className={(dia.total >= META_STREAK_DIARIA ? 'cheio' : dia.total > 0 ? 'meio' : '') + (dia.hoje ? ' hoje' : '')} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}`}>
-                <span aria-hidden="true" />
-                <small>{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>
-              </li>
-            ))}
-          </ol>
-          <dl className="ip-numeros">
-            <div><dt>Na semana</dt><dd className="numerico">{semana.total.toLocaleString('pt-BR')}</dd></div>
-            <div><dt>Acerto 7 dias</dt><dd className="numerico">{semana.acerto === null ? '—' : `${semana.acerto}%`}</dd></div>
-            <div><dt>Respondidas</dt><dd className="numerico">{respondidasTotal.toLocaleString('pt-BR')}</dd></div>
-          </dl>
-          {cronogramaNoPainel && calculo && calculo.semanas.length > 0 && (
-            <a className="ip-jornada" href={href('/cronograma')} aria-label="Abrir o cronograma">
-              <span className="ip-jornada__rotulo"><Icone nome="rota" tamanho={14} /> Sua jornada até a prova</span>
-              <TrilhaJornada semanas={calculo.semanas} />
-            </a>
-          )}
-        </aside>
+        <PainelSequencia streak={streak} dias={diasSequencia} quaseLa={quaseLa} conquistadas={conquistadas} totalConquistas={totalConquistas} />
+        {cronogramaNoPainel && calculo && cronograma.plano && <CaminhoProva calculo={calculo} plano={cronograma.plano} />}
+        {!cronograma.carregando && !calculo && <CaminhoConvite premium={cronograma.premium} />}
       </section>
 
       <nav className="ip-atalhos ip-entra" aria-label="Atalhos" style={{ '--i': 1 } as CSSProperties}>
@@ -415,76 +413,100 @@ export function Inicio() {
       {vazio}
 
       {temAcervo && <>
+        {/* O cronograma vale muito: quem ainda não tem um vê o convite logo depois dos atalhos. */}
+        {!cronograma.premium && !cronograma.carregando && <CartaoCronograma cronograma={cronograma} />}
+        {cronograma.premium && calculo && (calculo.naRetaFinal || calculo.provaPassou) && <CartaoCronograma cronograma={cronograma} />}
+
         <div className="ip-trio">
-          {quaseLa.length > 0 && (
-            <section className="ip-cartao ip-quase" aria-labelledby="ip-quase-titulo">
-              <header className="ip-cartao__cabeca">
-                <h2 id="ip-quase-titulo">Quase lá</h2>
-                <a href={href('/conquistas')}>{conquistadas} de {totalConquistas} <Icone nome="direita" tamanho={14} /></a>
-              </header>
-              <ul className="ip-quase__lista">
-                {quaseLa.map((q) => (
-                  <li key={q.emblema.id}>
-                    <Medalha conquista={q.emblema} tamanho={40} />
-                    <span className="ip-quase__texto">
-                      <strong>{q.emblema.rotulo}</strong>
-                      <small>Faltam {q.texto}</small>
-                      <span className="ip-barra ip-barra--fina" aria-hidden="true"><span style={{ width: `${Math.max(4, Math.round(q.fracao * 100))}%` }} /></span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
+          <section className="ip-cartao ip-hoje" aria-labelledby="ip-hoje-titulo">
+            <header className="ip-cartao__cabeca"><h2 id="ip-hoje-titulo">Seu estudo de hoje</h2></header>
+            <p className="ip-cartao__intro">{textoDoDia.explicacao}</p>
+            <div className="ip-hoje__lista">
+              <a className="ip-hoje__item ip-hoje__item--destaque" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=revisarHoje&limite=20`)}>
+                <IconePixel nome="revisao" tamanho={32} />
+                <span><strong>Revisar hoje</strong><small>{textoDoDia.revisar}</small></span>
+                <b className="numerico">{revisarHoje.toLocaleString('pt-BR')}</b>
+              </a>
+              <a className="ip-hoje__item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=naoRespondidas&limite=10`)}>
+                <IconePixel nome="treinar" tamanho={32} />
+                <span><strong>Questões novas</strong><small>{textoDoDia.novas}</small></span>
+                <b className="ip-hoje__seta"><Icone nome="direita" tamanho={16} /></b>
+              </a>
+              <a className="ip-hoje__item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=dominadas`)}>
+                <IconePixel nome="ranking" tamanho={32} />
+                <span><strong>Dominadas</strong><small>Ciclo de revisão completo</small></span>
+                <b className="numerico">{(contagens!.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
+              </a>
+            </div>
+          </section>
 
-          {temaFragil && (() => {
-            const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
-            return (
-              <section className="ip-cartao ip-foco" aria-labelledby="ip-foco-titulo">
-                <header className="ip-cartao__cabeca"><h2 id="ip-foco-titulo">Onde uma sessão rende mais</h2></header>
+          <section className="ip-cartao ip-foco" aria-labelledby="ip-foco-titulo">
+            <header className="ip-cartao__cabeca"><h2 id="ip-foco-titulo">Onde você mais erra</h2></header>
+            {temaFragil ? (() => {
+              const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
+              return <>
                 <p className="ip-foco__tema">{temaFragil[0]}</p>
-                <p className="ip-foco__texto">É o tema em que você mais erra até aqui ({acerto}% de acerto em {temaFragil[1].tentativas} respostas){temaFragil[1].pendentes ? `, com ${temaFragil[1].pendentes} ${temaFragil[1].pendentes === 1 ? 'revisão marcada' : 'revisões marcadas'} na semana` : ''}. Dez questões dele agora valem mais do que trinta de um tema que você já domina.</p>
-                <a className="botao ip-botao-contorno" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${temaFragil[1].slug}&limite=10`)}>Treinar 10 deste tema <Icone nome="direita" tamanho={16} /></a>
-              </section>
-            )
-          })()}
+                <div className="ip-foco__medida">
+                  <span className="ip-barra ip-barra--fina ip-barra--acerto" role="img" aria-label={`${acerto}% de acerto`}><span style={{ width: `${Math.max(4, acerto)}%` }} /></span>
+                  <small><b className="numerico">{acerto}%</b> de acerto</small>
+                </div>
+                <dl className="ip-foco__numeros">
+                  <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>
+                  <div><dt>Erros</dt><dd className="numerico">{(temaFragil[1].tentativas - temaFragil[1].acertos).toLocaleString('pt-BR')}</dd></div>
+                  <div><dt>Revisões</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>
+                </dl>
+                <p className="ip-foco__texto">De todos os temas que você já treinou, é onde uma sessão curta rende mais pontos na prova.</p>
+                <a className="botao ip-botao-contorno" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
+              </>
+            })() : <>
+              <p className="ip-foco__texto">Responda pelo menos duas questões de um tema e este cartão mostra onde uma sessão curta rende mais.</p>
+              <a className="botao ip-botao-contorno" href={href('/treinar')}>Montar uma sessão <Icone nome="direita" tamanho={16} /></a>
+            </>}
+          </section>
 
-          {respondidasTotal > 0 && (
-            <section className="ip-cartao ip-semana" aria-labelledby="ip-semana-titulo">
-              <header className="ip-cartao__cabeca">
-                <h2 id="ip-semana-titulo">Sua semana</h2>
-                <a href={href('/dados')}>Desempenho <Icone nome="direita" tamanho={14} /></a>
-              </header>
-              <ol className="ip-semana__grafico" aria-label="Questões respondidas por dia">
-                {semana.dias.map((dia, i) => (
-                  <li key={dia.chave} className={dia.hoje ? 'hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}`}>
-                    <span className="ip-semana__coluna"><span style={{ height: `${dia.total ? Math.max(8, (dia.total / semana.maximo) * 100) : 0}%`, '--i': i } as CSSProperties} /></span>
-                    <small>{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>
-                  </li>
-                ))}
+          <section className="ip-cartao ip-semana" aria-labelledby="ip-semana-titulo">
+            <header className="ip-cartao__cabeca">
+              <h2 id="ip-semana-titulo">Sua semana</h2>
+              <a href={href('/dados')}>Desempenho <Icone nome="direita" tamanho={14} /></a>
+            </header>
+            <dl className="ip-semana__numeros">
+              <div><dt>Questões</dt><dd className="numerico">{semana.total.toLocaleString('pt-BR')}</dd></div>
+              <div><dt>Acerto</dt><dd className="numerico">{semana.acerto === null ? '—' : `${semana.acerto}%`}</dd></div>
+              <div><dt>Dias ativos</dt><dd className="numerico">{semana.diasAtivos} de 7</dd></div>
+            </dl>
+            <ol className="ip-semana__grafico" aria-label="Questões respondidas por dia">
+              {semana.dias.map((dia, i) => (
+                <li key={dia.chave} className={dia.hoje ? 'hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}`}>
+                  <span className="ip-semana__coluna"><span style={{ height: `${dia.total ? Math.max(8, (dia.total / semana.maximo) * 100) : 0}%`, '--i': i } as CSSProperties} /></span>
+                  <small>{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>
+                </li>
+              ))}
+            </ol>
+            {historico.length > 0 && (
+              <ol className="ip-sessoes">
+                {historico.slice(0, 3).map((h) => {
+                  const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
+                  return (
+                    <li key={h.id}>
+                      <span className="ip-sessoes__quando">{quandoFoi(h.concluidaEm)}</span>
+                      <span className="ip-sessoes__nome">{h.descricao}</span>
+                      <span className={`ip-sessoes__acerto ip-sessoes__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'baixo'}`}>{acerto === null ? '—' : `${acerto}%`}</span>
+                    </li>
+                  )
+                })}
               </ol>
-              {historico.length > 0 && (
-                <ol className="ip-sessoes">
-                  {historico.slice(0, 3).map((h) => {
-                    const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
-                    return (
-                      <li key={h.id}>
-                        <span className="ip-sessoes__quando">{quandoFoi(h.concluidaEm)}</span>
-                        <span className="ip-sessoes__nome">{h.descricao}</span>
-                        <span className={`ip-sessoes__acerto ip-sessoes__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'baixo'}`}>{acerto === null ? '—' : `${acerto}%`}</span>
-                      </li>
-                    )
-                  })}
-                </ol>
-              )}
-            </section>
-          )}
+            )}
+          </section>
+        </div>
+
+        <div className="ip-dupla">
+          <CaixasAssinante />
+          <VitrineAssinante />
         </div>
 
         {/* Depois do estudo do dia, não antes: os pedidos (perfil, novidade) não podem empurrar a ação principal para baixo. */}
         <CompletarPerfil />
         {cronogramaNoPainel && <NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} />}
-        {!cronogramaNoPainel && !cronograma.carregando && <CartaoCronograma cronograma={cronograma} />}
         {!calculo && !cronograma.carregando && respondidasTotal < 30 && <AteAProva total={indice!.total} conta={Boolean(conta)} />}
 
         <section className="ip-temas" aria-labelledby="ip-temas-titulo">
@@ -512,10 +534,6 @@ export function Inicio() {
           </ul>
         </section>
 
-        <div className="ip-dupla">
-          <CaixasAssinante />
-          <VitrineAssinante />
-        </div>
         <div className="ip-dupla ip-dupla--rodape">
           <BlocoRanking conta={Boolean(conta)} conquistadas={conquistadas} totalConquistas={totalConquistas} sequencia={streak.atual} />
           <CartaoPlanos />

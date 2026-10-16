@@ -73,7 +73,7 @@ export const FRASES_INICIO: FraseInicio[] = [
   f('Mão, coluna, quadril: escolha a sua linha', 'No Treinar, você combina as provas que quiser.'),
   f('Volte sempre ao básico', 'Anatomia é a pergunta escondida em metade das questões.'),
   f('O comentário é a aula', 'Leia mesmo quando acertar. É lá que mora o detalhe da próxima.'),
-  f('Que tal um simulado hoje', 'Tempo de prova, sem consulta. Treine a resistência também.', 'Que tal um simulado hoje?'),
+  { comNome: (nome) => `Que tal um simulado hoje, ${nome}?`, semNome: 'Que tal um simulado hoje?', incentivo: 'Tempo de prova, sem consulta. Treine a resistência também.' },
   f('Hoje tem progresso', 'Uma sessão curta já move o seu gráfico.'),
   f('A residência é longa, o estudo também', 'Ritmo sustentável ganha da maratona de véspera.'),
   f('Ortopedia é detalhe', 'E detalhe se aprende fazendo questão.'),
@@ -86,6 +86,15 @@ export const FRASES_INICIO: FraseInicio[] = [
   f('Gabarito comentado, dúvida resolvida', 'Não fique com a dúvida: o comentário explica cada alternativa.'),
   f('Cada questão é uma consulta', 'História, exame, imagem e conduta. Treine o raciocínio inteiro.'),
   f('Bora para mais uma', 'Uma questão puxa a outra. Comece pela primeira.'),
+  // 16/10/2026: mais algumas, no mesmo tom (o rodízio passa por todas antes de repetir).
+  f('Calo ósseo se forma todo dia', 'Um pouco de estudo hoje vira estrutura firme amanhã.'),
+  f('Teste de Lachman no conhecimento', 'Puxe o conceito: se tiver folga, o comentário fecha a lacuna.'),
+  f('Ortopedista bom revisa o raio-x duas vezes', 'Na questão também: releia o enunciado antes de marcar.'),
+  f('Hoje a anatomia vai a favor de você', 'Origem, inserção, inervação. O resto vem por consequência.'),
+  f('Fixação estável, mobilização precoce', 'Entenda hoje, revise amanhã e siga em frente sem medo de errar.'),
+  { comNome: (nome) => `Que tal começar pelo que mais cai, ${nome}?`, semNome: 'Que tal começar pelo que mais cai?', incentivo: 'O que a banca repete é o que mais rende no seu tempo curto.' },
+  f('Seu repertório cresce a cada plantão', 'Cada caso visto e cada questão feita se ajudam.'),
+  f('Pequenas doses, grandes consolidações', 'Vinte minutos bem usados valem mais do que uma noite em claro.'),
 ]
 
 const CHAVE = 'oq-frase-inicio'
