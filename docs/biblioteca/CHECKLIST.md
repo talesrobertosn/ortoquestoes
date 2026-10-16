@@ -26,6 +26,10 @@ Desde 16/10/2026 **todos os resumos são abertos** (`acesso: gratis`, com págin
 | 6 | Fraturas diafisárias do rádio e da ulna | radio_ulnar.pdf (16/10/2026, 37 páginas): Rockwood 10ª ed., cap. 42 (Streubel, Grossman) | [x] Feito em 16/10/2026: `rockwood10-42-diafise-radio-ulna` (Monteggia, Galeazzi, vias, sinostose) |
 | 7 | Fratura do úmero proximal | umero_proximal.pdf (16/10/2026, 58 páginas): Rockwood 10ª ed., cap. 36 (Foruria, Martinez-Catalan, Sanchez-Sotelo) | [x] Feito em 16/10/2026: `rockwood10-36-umero-proximal` (Neer, Hertel, placa e calcar, reversa) |
 | 8 | Fratura do úmero distal | tema_1_cabeca_do_radio.pdf (enviado em 16/10/2026): na verdade é o cap. 39 do Rockwood (Distal Humerus Fractures) | [ ] Na fila (o nome do arquivo dizia cabeça do rádio; o capítulo certo da cabeça do rádio chegou depois, ver linha 3). |
+| 9 | Síndrome compartimental aguda | sind_compartimental.pdf (16/10/2026, 33 páginas): Rockwood 10ª ed., cap. 17 · Acute Compartment Syndrome (Harvey, Bernstein, Duckworth) nas pp. 1–32; **p. 33 é a primeira página do cap. 18 (Principles of Mangled Extremity Management)**, ignorada | [x] Feito em 16/10/2026: `rockwood10-17-sindrome-compartimental` (simulados `trauma-1593` a `trauma-1606` em `treino=`; alertas: TARO 2023 8 h, TARO 2024 antebraço, SBOT-SP/TARO 2020 exame seriado, TARO 2021 baixa idade, TARO 2014 Matsen, TARO 2012 e sem ano pressão absoluta, USP-SP 2026 mão) |
+| 10 | Fraturas da escápula | escapula_.pdf (16/10/2026, 40 páginas): Rockwood 10ª ed., cap. 33 (Bartoníček) nas pp. 1–39; p. 40 é o início do cap. 34 | [x] Feito em 16/10/2026: `rockwood10-33-fratura-escapula` (só resumo; as questões já existiam) |
+| 11 | Fraturas da clavícula | claviculas.pdf (16/10/2026, 59 páginas): Rockwood 10ª ed., cap. 34 (Woltz, McKee) | [x] Feito em 16/10/2026: `rockwood10-34-fratura-clavicula` (só resumo) |
+| 12 | Fraturas e luxações do tálus | calcaneus_fracutres.pdf (16/10/2026, 65 páginas): **é o cap. 66 do Rockwood (tálus), não o de calcâneo** | [ ] 12 simulados prontos (fora do acervo), aguardando o Tales confirmar tálus ou mandar o calcâneo |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo e qualquer divergência entre o
 livro e um gabarito oficial que tenha ido para `alerta:`.
@@ -67,7 +71,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 18. [ ] Fraturas do antebraço e punho na criança (Ortopedia pediátrica)
 19. [ ] Fraturas diafisárias do antebraço (Trauma adulto)
 20. [x] Fratura da cabeça do rádio e instabilidade do cotovelo (Trauma adulto) — feito: `rockwood10-40-cotovelo-cabeca-radio` (também cobre olécrano e Monteggia posterior)
-21. [ ] Síndrome compartimental (Trauma adulto)
+21. [x] Síndrome compartimental (Trauma adulto) — feito: `rockwood10-17-sindrome-compartimental`
 22. [ ] Fraturas do fêmur e da perna na criança (Ortopedia pediátrica)
 23. [ ] Fraturas dos metacarpos e falanges (Trauma adulto)
 24. [ ] Estadiamento, biópsia e margens (Tumores ósseos e de partes moles)
