@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import { recurso } from '../../config'
+import { urlCss } from '../../config'
 import { META_STREAK_DIARIA, type Streak } from '../../estado/streak'
 import type { QuaseLa } from '../../estado/conquistas'
 import { href } from '../../util/rotas'
@@ -30,7 +30,7 @@ export function PainelSequencia({ streak, dias, quaseLa, conquistadas, totalConq
     <aside className="ip-seq" aria-label="Sua sequência e próximas conquistas">
       <div className="ip-seq__topo">
         <span className={`ip-fogueira${acesa ? '' : ' ip-fogueira--apagada'}`} role="img" aria-label={acesa ? 'Fogueira acesa' : 'Fogueira apagada'}
-          style={{ '--sprite': `url(${recurso(acesa ? 'pixel/inicio/fogueira.png' : 'pixel/inicio/fogueira-apagada.png')})` } as CSSProperties} />
+          style={{ '--sprite': urlCss(acesa ? 'pixel/inicio/fogueira.png' : 'pixel/inicio/fogueira-apagada.png') } as CSSProperties} />
         <div className="ip-seq__numero">
           <strong>{streak.atual}</strong>
           <span>{streak.atual === 1 ? 'dia seguido' : 'dias seguidos'}</span>
@@ -52,7 +52,7 @@ export function PainelSequencia({ streak, dias, quaseLa, conquistadas, totalConq
           <li key={d.chave} className={`ip-dia ip-dia--${d.estado}`} title={`${d.nome}: ${d.total} ${d.total === 1 ? 'questão' : 'questões'} (${LEGENDA[d.estado]})`}>
             <small className="ip-dia__inicial">{d.estado.startsWith('hoje') ? 'Hoje' : d.inicial}</small>
             <span className="ip-dia__ficha">
-              {ICONE[d.estado] !== undefined && <span className="ip-dia__icone" style={{ '--pos': ICONE[d.estado], '--sprite': `url(${recurso('pixel/inicio/dias.png')})` } as CSSProperties} />}
+              {ICONE[d.estado] !== undefined && <span className="ip-dia__icone" style={{ '--pos': ICONE[d.estado], '--sprite': urlCss('pixel/inicio/dias.png') } as CSSProperties} />}
             </span>
             <small className="ip-dia__numero numerico">{d.numero}</small>
             <span className="ip-invisivel">{d.nome}: {LEGENDA[d.estado]}</span>

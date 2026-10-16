@@ -13,6 +13,17 @@ export function recurso(caminho: string): string {
   return BASE + caminho.replace(/^\/+/, '')
 }
 
+/**
+ * `url("…")` com endereço absoluto, para usar em variável CSS (`--sprite`, `--arte`).
+ * Um url() relativo dentro de variável é resolvido a partir da folha de estilo que o
+ * usa (assets/), não da página: com base './' a imagem some no site publicado.
+ */
+export function urlCss(caminho: string): string {
+  const rel = recurso(caminho)
+  const abs = typeof document === 'undefined' ? rel : new URL(rel, document.baseURI).href
+  return `url("${abs}")`
+}
+
 export const SITE = {
   nome: 'Orto Questões',
   descricao:

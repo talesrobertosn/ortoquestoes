@@ -21,7 +21,7 @@ import { type DiaSequencia, PainelSequencia } from '../componentes/inicio/Painel
 import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
 import { usarConquistas } from '../estado/usarConquistas'
 import { emblemasQuaseLa } from '../estado/conquistas'
-import { FLASHCARDS_NA_CAPA, fraseGratis, recurso } from '../config'
+import { FLASHCARDS_NA_CAPA, fraseGratis, recurso, urlCss } from '../config'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -398,10 +398,10 @@ export function Inicio() {
           {revisarHoje > 0 && <b className="ip-atalho__contador numerico">{revisarHoje > 99 ? '99+' : revisarHoje}</b>}
         </a>
         {FLASHCARDS_NA_CAPA && <>
-          <a className="ip-atalho ip-atalho--arte" href={href('/flashcards/biblioteca')} style={{ '--arte': `url(${recurso('flashcards/promo/cartao-biblioteca.png')})` } as CSSProperties}>
+          <a className="ip-atalho ip-atalho--arte" href={href('/flashcards/biblioteca')} style={{ '--arte': urlCss('flashcards/promo/cartao-biblioteca.png') } as CSSProperties}>
             <span><strong>Estudar flashcards</strong><small>Revisão espaçada</small></span>
           </a>
-          <a className="ip-atalho ip-atalho--arte ip-atalho--jogo" href={href('/flashcards/cripta')} style={{ '--arte': `url(${recurso('flashcards/promo/cartao-cripta.png')})` } as CSSProperties}>
+          <a className="ip-atalho ip-atalho--arte ip-atalho--jogo" href={href('/flashcards/cripta')} style={{ '--arte': urlCss('flashcards/promo/cartao-cripta.png') } as CSSProperties}>
             <span><strong>Jogar o Torneio</strong><small>Flashcards · Beta</small></span>
           </a>
         </>}
