@@ -1,5 +1,5 @@
 import { DATA_TEOT } from '../dados/calendarioProvas'
-import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
 import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
@@ -41,7 +41,8 @@ const PROVAS = ['TEOT', 'TARO', 'ENARE R4', 'Outra prova']
 // A data também é usada pelos lembretes discretos de véspera.
 /** Semanas que o não assinante vê na prévia do próprio cronograma. */
 const SEMANAS_PREVIA = 2
-const curta = (d: Date) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
+const FORMATO_CURTA = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit' })
+const curta = (d: Date) => FORMATO_CURTA.format(d)
 type Respondidas = Record<string, RegistroQuestao>
 
 /** Amanhã no dia de São Paulo (src/util/dia.ts). */
@@ -416,9 +417,13 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   const feitos = hub?.feitosDia ?? { data: '' }
   // Calendário do mês (16/10/2026): só no cronograma do assinante; #/cronograma?calendario=1 abre direto.
   const temCalendario = aberto && !!indice && !!respondidas
-  const [calendarioAberto, definirCalendarioAberto] = useState(() => temCalendario && typeof location !== 'undefined' && location.hash.includes('calendario=1'))
-  const abrirCalendario = temCalendario ? () => definirCalendarioAberto(true) : undefined
-  const fecharCalendario = useCallback(() => definirCalendarioAberto(false), [])
+  // Desde 16/10/2026 ele fica sempre aberto na página (embaixo de Hoje); "ver no calendário" só rola até ele.
+  const abrirCalendario = temCalendario ? () => document.getElementById('calendario')?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }) : undefined
+  useEffect(() => {
+    if (!temCalendario || !location.hash.includes('calendario=1')) return
+    const t = setTimeout(() => abrirCalendario?.(), 300)
+    return () => clearTimeout(t)
+  }, [temCalendario]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── A lista de hoje ──
   const itensDia = calculo.hoje?.itens ?? []
@@ -483,8 +488,6 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
     : principal ? porQueHoje(calculo, principal.slug, plano.prova) : calculo.restante === 0 ? 'Mantenha a revisão em dia e faça o Simulado Nacional do mês.' : ''
 
   return <>
-    {calendarioAberto && temCalendario && <CalendarioCronograma plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
-      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} aoFechar={fecharCalendario} />}
     {aberto && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
     {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
@@ -501,21 +504,13 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
           {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
           {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
         </div>}
-        {aberto && <div className="cp-ordem-6"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
-        {aberto && hub && <div className="cp-recolhidos cp-ordem-7">
-          <Recolhido titulo="Constância: os últimos 14 dias" icone="fogo"><CartaoConstancia constancia={hub.constancia} elogio={hub.elogio} /></Recolhido>
-          <Recolhido titulo="Desempenho e prontidão por área" icone="grafico"><Prontidao areas={hub.prontidao} /><CartaoDesempenho areas={hub.desempenho} media={hub.media} /></Recolhido>
-          <Recolhido titulo="Mapa de risco" icone="alvo"><MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} /></Recolhido>
-          <Recolhido titulo="OrtoQuestões Simulados" icone="estrela"><CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoIncluir={hub.aoIncluirSimulados} /></Recolhido>
-          <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} /></Recolhido>
-          {/* Recolhido sempre: o tour de 3 partes já explica a página na primeira visita. */}
-          <ComoFuncionaCompleto aberto={false} plano={plano} />
-        </div>}
+        {aberto && !temCalendario && <div className="cp-ordem-6"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
       </div>
       <div className="cp-col cp-col--lado">
         {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
-        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} aoVerCalendario={abrirCalendario} /></div>}
-        {!calculo.provaPassou && <div className="cp-ordem-5">{aberto
+        {temCalendario && <div className="cp-ordem-4"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
+        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} compacta={temCalendario} /></div>}
+        {!calculo.provaPassou && !temCalendario && <div className="cp-ordem-5">{aberto
           ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} aoVerCalendario={abrirCalendario} />
           : <div className="cp-previa-depois">
               <Degustacao className="pe-degustacao" titulo="O resto é do assinante" texto={<ul className="cp-vitrine-lista">
@@ -530,6 +525,20 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
             </div>}</div>}
       </div>
     </div>
+
+    {temCalendario && <CalendarioCronograma embutido plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
+      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} />}
+
+        {aberto && hub && <div className="cp-recolhidos cp-recolhidos--grade">
+          <Recolhido titulo="Constância: os últimos 14 dias" icone="fogo"><CartaoConstancia constancia={hub.constancia} elogio={hub.elogio} /></Recolhido>
+          <Recolhido titulo="Desempenho e prontidão por área" icone="grafico"><Prontidao areas={hub.prontidao} /><CartaoDesempenho areas={hub.desempenho} media={hub.media} /></Recolhido>
+          <Recolhido titulo="Mapa de risco" icone="alvo"><MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} /></Recolhido>
+          <Recolhido titulo="OrtoQuestões Simulados" icone="estrela"><CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoIncluir={hub.aoIncluirSimulados} /></Recolhido>
+          {!calculo.provaPassou && <Recolhido titulo="Até a prova, semana a semana" icone="rota"><Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} /></Recolhido>}
+          <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} /></Recolhido>
+          {/* Recolhido sempre: o tour de 3 partes já explica a página na primeira visita. */}
+          <ComoFuncionaCompleto aberto={false} plano={plano} />
+        </div>}
 
     {aberto && <div className="linha">
       <a className="botao botao--fantasma" href={href('/temas-que-mais-caem')}><Icone nome="grafico" tamanho={16} /> Temas que mais caem</a>
@@ -646,19 +655,25 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   // As três intensidades simuladas com as escolhas atuais: meta, tempo e o que cobre.
   // A data é digitada: as três simulações (o cálculo inteiro, três vezes) seguem
   // a digitação com folga, sem travar o campo a cada tecla.
-  const dataSimulada = useDeferredValue(data)
+  // Todas as escolhas passam adiadas (não só a data): tocar numa folga ou num dia leve responde
+  // na hora e as simulações chegam logo depois, sem travar o toque.
+  const escolhas = useMemo(() => ({ data, folgas, simulados, op: opcoes() }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [data, folgas, simulados, diasLeves, qtdLeve, comecarPor, dominadas.join(','), provaExtra.nome, provaExtra.data])
+  const adiadas = useDeferredValue(escolhas)
   const simulacoes = useMemo(() => {
+    const { data: dataSimulada, folgas: f, simulados: sim, op } = adiadas
     if (!/^\d{4}-\d{2}-\d{2}$/.test(dataSimulada) || dataSimulada <= hojeBR()) return null
-    const base = respondidasNoAcervo(indice, respondidas, simulados)
-    const op = opcoes()
+    const base = respondidasNoAcervo(indice, respondidas, sim)
+    // Criado "hoje" (início do dia): o mesmo plano dá o mesmo resultado em toda a digitação.
+    const criado = new Date(inicioDaChave(hojeBR())).toISOString()
     const resultado = {} as Record<Intensidade, { meta: number; maisCai: number; alvo: number }>
     for (const i of Object.keys(ROTULO_INTENSIDADE) as Intensidade[]) {
-      const c = calcularPlano(indice, respondidas, { data_prova: dataSimulada, intensidade: i, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: op })
+      const c = calcularPlano(indice, respondidas, { data_prova: dataSimulada, intensidade: i, folgas: f, prova, base_respondidas: base, criado_em: criado, incluir_simulados: sim, opcoes: op })
       resultado[i] = { meta: c.metaDiaNormal, maisCai: c.projecao.maisCaiPct, alvo: c.alvo }
     }
     return resultado
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [indice, respondidas, dataSimulada, folgas, simulados, diasLeves, qtdLeve, comecarPor, dominadas.join(','), provaExtra.nome, provaExtra.data])
+  }, [indice, respondidas, adiadas, prova])
 
   async function salvar() {
     if (!dataValida || salvando) return

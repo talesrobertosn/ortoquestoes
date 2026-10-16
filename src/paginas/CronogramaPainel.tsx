@@ -19,8 +19,11 @@ export { fraseAdiantado, fraseAdiantadoHoje, noDia } from '../dados/frasesAdiant
  */
 
 const DIA = 86_400_000
-const curta = (d: Date) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
-const semanaDia = (d: Date) => d.toLocaleDateString('pt-BR', { weekday: 'long' }).replace('-feira', '')
+// Formatadores criados uma vez: toLocaleDateString monta um novo a cada chamada e a página faz centenas.
+const FORMATO_CURTA = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit' })
+const FORMATO_SEMANA = new Intl.DateTimeFormat('pt-BR', { weekday: 'long' })
+const curta = (d: Date) => FORMATO_CURTA.format(d)
+const semanaDia = (d: Date) => FORMATO_SEMANA.format(d).replace('-feira', '')
 const SEMANA_CURTA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const meiaNoite = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate())
 const juntar = (nomes: string[]) => nomes.length <= 1 ? nomes.join('') : `${nomes.slice(0, -1).join(', ')} e ${nomes[nomes.length - 1]}`
@@ -202,6 +205,7 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
   aoAdiantar: (n: number) => void
   aoCancelar: () => void
 }) {
+  const [abertoManual, definirAbertoManual] = useState(() => typeof location !== 'undefined' && location.hash.includes('adiantar=1'))
   // Os próximos dias que ainda têm meta, com quanto cada um pede.
   const proximos = calculo.dias.slice(1).filter((d) => d.meta > 0).slice(0, 3)
   const ja = Math.max(calculo.extraHoje, calculo.adiantarPedido)
@@ -216,15 +220,24 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
     if (d2) opcoes.push({ id: 'd2', n: d1.meta + d2.meta, rotulo: `2 dias`, efeito: `${d1.meta + d2.meta} questões · até ${semanaDia(d2.data)}` })
   }
   const pendente = Math.max(0, calculo.adiantarPedido - calculo.extraHoje)
+  // Antes da meta feita o painel fica fechado numa linha (a página pedia muita leitura de uma vez);
+  // abre sozinho quando já há algo adiantado, quando a meta acaba ou quando se chega por #adiantar.
+  const aberto = destaque || ja > 0 || abertoManual
+  const cabeca = <>
+    <span className="cp-adiantar__icone" aria-hidden="true"><Icone nome={aberto ? 'direita' : 'raio'} tamanho={18} /></span>
+    <div>
+      <strong>{destaque ? 'Quer adiantar?' : 'Sobrou energia? Adiante'}</strong>
+      <small>O que você fizer além da meta de hoje sai dos próximos dias, começando por {d1 ? nomeDia(d1.data) : 'amanhã'}.</small>
+    </div>
+  </>
+  if (!aberto) return (
+    <div className="cp-adiantar cp-adiantar--fechado" id="adiantar">
+      <button type="button" className="cp-adiantar__cabeca cp-adiantar__abrir" aria-expanded="false" onClick={() => definirAbertoManual(true)}>{cabeca}<Icone nome="baixo" tamanho={18} /></button>
+    </div>
+  )
   return (
     <div className={'cp-adiantar' + (destaque ? ' cp-adiantar--destaque' : '')} id="adiantar">
-      <div className="cp-adiantar__cabeca">
-        <span className="cp-adiantar__icone" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>
-        <div>
-          <strong>{destaque ? 'Quer adiantar?' : 'Sobrou energia? Adiante'}</strong>
-          <small>O que você fizer além da meta de hoje sai dos próximos dias, começando por {d1 ? nomeDia(d1.data) : 'amanhã'}.</small>
-        </div>
-      </div>
+      <div className="cp-adiantar__cabeca">{cabeca}</div>
       {ja > 0 && <p className="cp-adiantar__estado" role="status">
         <Icone nome="certo" tamanho={14} />
         <span>
@@ -284,7 +297,7 @@ const diferencaDias = (d: Date) => Math.round((meiaNoite(d).getTime() - diaCivil
 
 // ─── Esta semana ───────────────────────────────────────────────────────────
 
-export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false, aoVerCalendario }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean; aoVerCalendario?: () => void }) {
+export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false, aoVerCalendario, compacta = false }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean; aoVerCalendario?: () => void; /** Com o calendário aberto na página, a faixa dos 7 dias repetiria o que ele mostra: fica só a semana difícil. */ compacta?: boolean }) {
   const hoje = diaCivil()
   const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
   const opcoes = opcoesDe(plano)
@@ -319,6 +332,17 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
   const areasSemana = new Map<string, string>()
   for (const x of plano7) for (const i of x.itens) areasSemana.set(i.slug, i.nome)
   const ROTULO = { feito: 'feito', hoje: 'hoje', futuro: '', folga: 'folga', atrasado: 'atrasado', parcial: 'parcial', antes: '–' }
+  const dificil = aoSemanaDificil && <div className="cp-dificil">
+    {dificilAtiva
+      ? <><span><Icone nome="alerta" tamanho={15} /> <b>Semana difícil ativa:</b> {DIA_MINIMO} questões por dia, o suficiente para manter a sequência. O resto se espalha pelas próximas semanas.</span><button type="button" className="botao botao--fantasma" disabled={salvando} onClick={() => aoSemanaDificil(false)}>Voltar ao normal</button></>
+      : <><span>Plantão pesado ou semana corrida? Alivie esta semana para <b>{DIA_MINIMO} por dia</b> sem quebrar o plano.</span><button type="button" className="botao" disabled={salvando} onClick={() => aoSemanaDificil(true)}>Semana difícil</button></>}
+  </div>
+  if (compacta) return dificil ? (
+    <section className="cp-bloco" aria-labelledby="cp-semana-titulo">
+      <p className="cp-rotulo"><span id="cp-semana-titulo">Esta semana</span><b>{curta(dias[0])} a {curta(dias[6])}</b></p>
+      <div className="cp-semana cp-semana--compacta">{frases.length > 0 && <p className="cp-semana__frase">{frases.join(' ')}</p>}{dificil}</div>
+    </section>
+  ) : null
   return (
     <section className="cp-bloco" aria-labelledby="cp-semana-titulo">
       <p className="cp-rotulo"><span id="cp-semana-titulo">Esta semana</span><b>{curta(dias[0])} a {curta(dias[6])}</b></p>
@@ -337,11 +361,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
         {areasSemana.size > 0 && <ul className="cp-legenda" aria-label="Cores das áreas">{[...areasSemana].map(([slug, nome]) => <li key={slug}><i style={{ background: corDaArea(slug) }} />{nome}</li>)}<li><i className="cp-legenda__folga" />folga</li></ul>}
         {!simples && frases.length > 0 && <p className="cp-semana__frase">{frases.join(' ')}</p>}
         {simples && <p className="cp-semana__frase">Cada cor é uma área. No seu cronograma, cada dia mostra quantas questões e quais assuntos.</p>}
-        {aoSemanaDificil && <div className="cp-dificil">
-          {dificilAtiva
-            ? <><span><Icone nome="alerta" tamanho={15} /> <b>Semana difícil ativa:</b> {DIA_MINIMO} questões por dia, o suficiente para manter a sequência. O resto se espalha pelas próximas semanas.</span><button type="button" className="botao botao--fantasma" disabled={salvando} onClick={() => aoSemanaDificil(false)}>Voltar ao normal</button></>
-            : <><span>Plantão pesado ou semana corrida? Alivie esta semana para <b>{DIA_MINIMO} por dia</b> sem quebrar o plano.</span><button type="button" className="botao" disabled={salvando} onClick={() => aoSemanaDificil(true)}>Semana difícil</button></>}
-        </div>}
+        {dificil}
       </div>
     </section>
   )
@@ -466,7 +486,7 @@ export function TourCronograma({ aoFechar }: { aoFechar: () => void }) {
   const passos = [
     { titulo: 'Onde você está', texto: 'Quantos dias faltam, em que fase do plano você está e o que vem depois dela.' },
     { titulo: 'Hoje', texto: 'A lista do dia, com o tempo de cada parte e um botão só, que diz exatamente o que faz.' },
-    { titulo: 'Esta semana e depois', texto: 'Cada cor é uma área. Você vê o que cai em cada dia e as próximas semanas até a prova.' },
+    { titulo: 'O calendário', texto: 'Logo abaixo, o plano inteiro mês a mês até a prova. Cada cor é uma área; toque num dia para ver o que estudar nele e, nos próximos dias, adiantar.' },
   ]
   return (
     <section className="cp-tour" aria-labelledby="cp-tour-titulo">

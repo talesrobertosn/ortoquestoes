@@ -5,7 +5,7 @@ import { mkdir } from 'node:fs/promises'
 const BASE = process.env.BASE ?? 'http://127.0.0.1:5203/'
 const SAIDA = process.env.SAIDA ?? '/tmp/capturas-calendarios-16-10'
 await mkdir(SAIDA, { recursive: true })
-const nav = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['--no-sandbox'] })
+const nav = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/usr/bin/chromium', args: ['--no-sandbox'] })
 const erros = []
 async function pagina(width, height, time, timezoneId = 'America/Sao_Paulo') {
   const ctx = await nav.newContext({ viewport: { width, height }, locale: 'pt-BR', timezoneId, reducedMotion: 'reduce' })
@@ -19,11 +19,11 @@ async function pagina(width, height, time, timezoneId = 'America/Sao_Paulo') {
   return p
 }
 async function calendario(p, prova = '2027-01-10') {
+  // Desde 16/10/2026 o calendário fica sempre aberto na página (embutido, sem janela).
   await p.goto(`${BASE}#/cronograma?demo=1&pendente&demoProva=${prova}`)
-  await p.locator('.cc-abrir').first().waitFor()
+  await p.locator('.cc--embutido .cc-janela').waitFor()
   await p.evaluate(async () => (await import('/src/estado/armazenamento.ts')).gravar('cronograma:tour-v2', true))
-  await p.locator('.cc-abrir').first().click()
-  await p.locator('.cc-janela').waitFor()
+  await p.locator('.cc--embutido').scrollIntoViewIfNeeded()
 }
 try {
   for (const [nome, w, h] of [['computador',1400,860],['celular',390,844]]) {
@@ -36,12 +36,9 @@ try {
     assert.equal(await p.locator('.cc-dia--selecionado').count(), 1, 'seleção deve estar no mês visível')
     await p.getByRole('button', { name: 'Hoje', exact: true }).click()
     await p.screenshot({ path: `${SAIDA}/${nome}-mes-atual.png` })
-    // Tab e Shift+Tab ficam no diálogo. Não salta para o site por trás.
-    const botoes = p.locator('.cc-janela button:not(:disabled), .cc-janela a[href]')
-    await botoes.last().focus(); await p.keyboard.press('Tab')
-    assert.ok(await botoes.first().evaluate(el => el === document.activeElement))
-    await p.keyboard.press('Shift+Tab')
-    assert.ok(await botoes.last().evaluate(el => el === document.activeElement))
+    // Embutido: não prende o foco, não trava a rolagem da página e não tem botão de fechar.
+    assert.equal(await p.locator('.cc--embutido .cc-fechar').count(), 0)
+    assert.notEqual(await p.evaluate(() => document.body.style.overflow), 'hidden')
     // A aba atravessa a virada do dia: hoje e seleção acompanham sem recarregar.
     await p.clock.fastForward(36 * 60 * 60_000)
     await p.waitForTimeout(100)
@@ -49,8 +46,7 @@ try {
     assert.match(await p.locator('.cc-detalhe__data').innerText(), /18 de outubro/i)
     assert.ok(await p.evaluate(() => document.querySelector('.cc-janela').scrollWidth <= innerWidth))
     await p.keyboard.press('Escape')
-    assert.equal(await p.locator('.cc-janela').count(), 0)
-    assert.ok(await p.locator('.cc-abrir').first().evaluate(el => el === document.activeElement), 'foco retorna ao botão')
+    assert.equal(await p.locator('.cc--embutido .cc-janela').count(), 1, 'Esc não some com o calendário embutido')
     await p.context().close()
   }
   // Reta final/folga/prova mantêm "hoje"; em fuso com horário de verão a prova não muda de dia.
@@ -98,5 +94,27 @@ try {
   assert.match(await f.locator('.cfc-semana > li').first().innerText(), /folga/)
   await f.context().close()
   assert.deepEqual(erros,[])
+  // Revisão: o mesmo calendário, com o filtro de uma área só.
+  const r = await pagina(1400, 860, '2026-10-16T15:00:00Z')
+  await r.goto(`${BASE}#/`)
+  await r.evaluate(async () => {
+    const { carregarIndice } = await import('/src/dados/acervo.ts')
+    const { gravar } = await import('/src/estado/armazenamento.ts')
+    const indice = await carregarIndice(); const agora = Date.now(), D = 864e5; const reg = {}
+    indice.questoes.filter((_, i) => i % 29 === 0).slice(0, 200).forEach((q, k) => { const em = agora - (k % 20) * D; reg[q.id] = { q: em, c: k % 3 !== 0, confianca: 'seguro', tentativas: 2, acertos: 1, historico: [{ em: em - 5 * D, correta: true }, { em, correta: k % 3 !== 0 }], proximaRevisao: agora + ((k % 30) - 5) * D } })
+    gravar('respondidas', reg)
+  })
+  await r.goto(`${BASE}#/revisao`)
+  await r.locator('#calendario-revisao .cc-dia > button[aria-current="date"]').waitFor()
+  const total = Number(await r.locator('.rvx-heroi__titulo .numerico').first().innerText())
+  const pilula = r.locator('.rvx-area').nth(1)
+  const n = Number(await pilula.locator('small').innerText())
+  await pilula.click()
+  assert.equal(await pilula.getAttribute('aria-pressed'), 'true')
+  assert.ok(Number(await r.locator('.rvx-heroi__titulo .numerico').first().innerText()) <= Math.min(total, n), 'filtrado por área')
+  assert.equal(await r.locator('#calendario-revisao .cc-detalhe__item').count(), 1, 'detalhe de hoje só com a área escolhida')
+  await r.screenshot({ path: `${SAIDA}/revisao-area.png` })
+  await r.context().close()
+
   console.log(`Calendários no navegador: datas, seleção, foco, virada, fuso, plano encerrado e outra aba OK. Capturas: ${SAIDA}`)
 } finally { await nav.close() }

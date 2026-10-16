@@ -40,8 +40,10 @@ interface DiaCalendario {
 }
 
 const mesDe = mesCivil
-const nomeMes = (d: Date) => { const s = d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }); return s[0].toUpperCase() + s.slice(1) }
-const dataLonga = (d: Date) => d.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
+const FORMATO_MES = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric' })
+const FORMATO_LONGO = new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
+const nomeMes = (d: Date) => { const s = FORMATO_MES.format(d); return s[0].toUpperCase() + s.slice(1) }
+const dataLonga = (d: Date) => FORMATO_LONGO.format(d)
 const faixa = (partes: Array<{ slug: string; n: number }>) => {
   const total = partes.reduce((s, p) => s + p.n, 0)
   if (!total) return 'transparent'
@@ -62,7 +64,7 @@ export interface AcoesCalendario {
   salvando?: boolean
 }
 
-export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar }: {
+export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar, embutido = false }: {
   plano: PlanoSalvo
   calculo: CalculoPlano
   indice: Indice
@@ -70,7 +72,10 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   minutos: number
   revisoesHoje?: number
   acoes: AcoesCalendario
-  aoFechar: () => void
+  /** Sem ela o calendário fica na página (embutido); com ela, abre como janela. */
+  aoFechar?: () => void
+  /** Na página do cronograma o calendário fica sempre aberto (pedido do Tales, 16/10/2026). */
+  embutido?: boolean
 }) {
   const chaveHoje = usarDiaAtual()
   const hoje = diaCivil(chaveHoje)
@@ -83,6 +88,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   const janela = useRef<HTMLDivElement>(null)
   const fecharAtual = useRef(aoFechar)
   fecharAtual.current = aoFechar
+  const sair = () => aoFechar?.()
   useEffect(() => {
     const seguiaHoje = selecionado === ontem.current
     ontem.current = chaveHoje
@@ -168,12 +174,13 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
 
   // Teclado, rolagem da página e foco: Esc fecha; o fundo não rola; o foco volta para quem abriu.
   useEffect(() => {
+    if (embutido) return
     const antes = document.activeElement as HTMLElement | null
     const overflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     fechar.current?.focus()
     const tecla = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') { e.stopPropagation(); fecharAtual.current(); return }
+      if (e.key === 'Escape') { e.stopPropagation(); fecharAtual.current?.(); return }
       if (e.key !== 'Tab' || !janela.current) return
       const itens = [...janela.current.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], input, select, textarea, [tabindex="0"]')].filter(el => el.getClientRects().length > 0)
       const primeiro = itens[0], ultimo = itens[itens.length - 1]
@@ -183,7 +190,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     }
     window.addEventListener('keydown', tecla)
     return () => { window.removeEventListener('keydown', tecla); document.body.style.overflow = overflow; antes?.focus?.() }
-  }, [])
+  }, [embutido])
 
   const podeVoltar = mes > primeiroMes, podeAvancar = mes < ultimoMes
   function irMes(delta: number) {
@@ -194,8 +201,9 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   }
   function escolher(d: DiaCalendario) {
     definirSelecionado(d.chave)
-    // No celular o detalhe fica embaixo da grade: rola até ele.
-    if (window.matchMedia('(max-width: 52rem)').matches) {
+    // No celular o detalhe fica embaixo da grade: rola até ele (se ele não estiver à vista).
+    const r = detalhe.current?.getBoundingClientRect()
+    if (window.matchMedia('(max-width: 52rem)').matches && (!r || r.top > innerHeight - 120 || r.top < 0)) {
       const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
       requestAnimationFrame(() => detalhe.current?.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' }))
     }
@@ -206,9 +214,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   const areasMes = new Map<string, string>()
   for (const c of grade) for (const i of c?.plano?.itens ?? []) areasMes.set(i.slug, i.nome)
 
-  return createPortal(
-    <div className="cp cc" role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
-      <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={aoFechar} />
+  const conteudo = (
       <div className="cc-janela" ref={janela}>
         <header className="cc-topo">
           <div className="cc-topo__titulo">
@@ -224,7 +230,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
             <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={!podeVoltar} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
             <button type="button" className="cc-nav__hoje" onClick={irHoje}>{hoje > prova ? 'Dia da prova' : 'Hoje'}</button>
             <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={!podeAvancar} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
-            <button type="button" className="cc-fechar" ref={fechar} onClick={aoFechar} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>
+            {!embutido && <button type="button" className="cc-fechar" ref={fechar} onClick={sair} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>}
           </div>
         </header>
 
@@ -243,9 +249,15 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
               <li><i className="cc-legenda__reta" />reta final</li>
             </ul>
           </div>
-          <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={aoFechar} />
+          <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={sair} />
         </div>
       </div>
+  )
+  if (embutido) return <section className="cp cc cc--embutido" id="calendario" aria-labelledby="cc-titulo">{conteudo}</section>
+  return createPortal(
+    <div className="cp cc" role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
+      <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={sair} />
+      {conteudo}
     </div>,
     document.body,
   )

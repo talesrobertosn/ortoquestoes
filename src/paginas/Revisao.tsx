@@ -7,7 +7,7 @@ import { usarSessao } from '../estado/sessao'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
 import { href, navegar } from '../util/rotas'
 import { INTERVALOS, revisarHoje } from '../estado/revisao'
-import { FUSO_DIA, diaDaSemana, inicioDaChave, somarDias } from '../util/dia'
+import { FUSO_DIA, diaDaSemana } from '../util/dia'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
 import { REVISOES_CINCO_MINUTOS, REVISOES_DIA_SEQUENCIA, minutosPara, resumoRevisoes, sequenciaRevisao } from '../estado/metasRevisao'
@@ -17,12 +17,12 @@ import { EMBLEMAS, desbloqueado, valorDe, type FamiliaId } from '../estado/conqu
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { FLASHCARDS_LIBERADO, recurso } from '../config'
 import { CHAVE_REGISTROS, type RegistroFlashcard } from '../flashcards/progresso'
+import { CalendarioRevisao } from './RevisaoCalendario'
+import { corDaArea } from '../dados/coresAreas'
 import '../estilos/paginas/Revisao.css'
 
-const DIA = 86400000
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const TETOS: Array<number | null> = [15, 20, 30, 50, null]
-const FORMATO_MES = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric', timeZone: FUSO_DIA })
 const FORMATO_HOJE = new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', timeZone: FUSO_DIA })
 /** Famílias de emblema que a página mostra como "próxima conquista de revisão". */
 const FAMILIAS_REVISAO: Array<{ familia: FamiliaId; titulo: string }> = [
@@ -51,24 +51,6 @@ const ESCADAS: { rotulo: string; icone: NomeIcone; dias: number[]; nota: string;
   { rotulo: 'Dúvida', icone: 'olho', dias: INTERVALOS.duvida, nota: 'Espaça mais', nivel: 2 },
   { rotulo: 'Certeza', icone: 'certo', dias: INTERVALOS.seguro, nota: 'Espaça bastante', nivel: 3 },
 ]
-
-// O calendário anda pelos dias de São Paulo (src/util/dia.ts), como o resto da revisão.
-const anoMes = (data: number) => chaveDia(data).slice(0, 7)
-function inicioMes(data: number): number { return inicioDaChave(`${anoMes(data)}-01`) }
-/** O mês `delta` meses depois do mês de `data`, como chave "AAAA-MM". */
-function somarMeses(data: number, delta: number): string {
-  const [ano, mes] = anoMes(data).split('-').map(Number)
-  return new Date(Date.UTC(ano, mes - 1 + delta, 1)).toISOString().slice(0, 7)
-}
-
-/** Intensidade do mapa de calor (0 a 4). */
-function nivelCarga(n: number): number {
-  if (n <= 0) return 0
-  if (n <= 5) return 1
-  if (n <= 15) return 2
-  if (n <= 30) return 3
-  return 4
-}
 
 /** Anel de progresso do dia. */
 function Anel({ feitas, total }: { feitas: number; total: number }) {
@@ -105,36 +87,41 @@ function FlashcardsDeHoje() {
 
 export function Revisao() {
   const { indice, carregando } = usarIndice(); const { contexto } = usarContextoLocal(''); const { iniciarComAviso } = usarSessao()
-  const [selecionado, definirSelecionado] = useState(inicioDia())
-  const [mesExibido, definirMesExibido] = useState(() => inicioMes(inicioDia()))
   const { ritmo, definirRitmo } = usarRitmoRevisao()
+  // Revisar só uma área (pedido do Tales, 16/10/2026): o filtro vale para a página inteira
+  // (hoje, resgate e calendário) e fica guardado no aparelho. #/revisao?area=coluna abre direto.
+  const [areaGuardada, definirArea] = usarArmazenado<string | null>('revisao:area', null)
+  const [areaDaUrl] = useState(() => new URLSearchParams(location.hash.split('?')[1] ?? '').get('area'))
+  const area = areaDaUrl ?? areaGuardada
+  const slugDe = useMemo(() => indice ? new Map(indice.questoes.map((q) => [q.id, indice.temas[q.t]?.slug ?? ''])) : null, [indice])
+  const registros = useMemo(() => {
+    if (!area || !slugDe) return contexto.respondidas
+    return Object.fromEntries(Object.entries(contexto.respondidas).filter(([id]) => slugDe.get(id) === area))
+  }, [contexto.respondidas, area, slugDe])
+  // Quantas vencem hoje em cada área (sem teto), para os botões do filtro.
+  const porArea = useMemo(() => {
+    const m = new Map<string, number>()
+    if (!slugDe) return m
+    for (const { id } of distribuirRevisoes(contexto.respondidas, SEM_RITMO, 1).get(inicioDia()) ?? []) { const s = slugDe.get(id); if (s) m.set(s, (m.get(s) ?? 0) + 1) }
+    return m
+  }, [contexto.respondidas, slugDe])
   const feitos = usarFeitos()
   const { metricas } = usarConquistas()
   const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const plano = useMemo(() => indice ? planoRevisao(indice, contexto.respondidas, JANELA_REVISAO_DIAS, ritmo) : new Map<string, DiaRevisao>(), [indice, contexto.respondidas, chaveRitmo])
-  const vencidasHoje = useMemo(() => distribuirRevisoes(contexto.respondidas, SEM_RITMO, 1).get(inicioDia())?.length ?? 0, [contexto.respondidas])
-  const feitasHoje = useMemo(() => revisoesFeitasHoje(contexto.respondidas), [contexto.respondidas])
+  const plano = useMemo(() => indice ? planoRevisao(indice, registros, JANELA_REVISAO_DIAS, ritmo) : new Map<string, DiaRevisao>(), [indice, registros, chaveRitmo])
+  const vencidasHoje = useMemo(() => distribuirRevisoes(registros, SEM_RITMO, 1).get(inicioDia())?.length ?? 0, [registros])
+  const feitasHoje = useMemo(() => revisoesFeitasHoje(registros), [registros])
   const resumo = useMemo(() => resumoRevisoes(contexto.respondidas), [contexto.respondidas])
   const diasZerados = feitos?.dias?.fila_zerada
   // eslint-disable-next-line react-hooks/exhaustive-deps
   // Fila de hoje zerada depois de revisar: o dia conta na hora, antes de o servidor registrar.
-  const zeradaAgora = (contexto.revisaoHoje?.size ?? 0) === 0 && feitasHoje > 0
+  const zeradaAgora = (contexto.revisaoHoje?.size ?? 0) === 0 && revisoesFeitasHoje(contexto.respondidas) > 0
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const sequencia = useMemo(() => sequenciaRevisao(resumo.porDia, { diasZerados: [...(diasZerados ?? []), ...(zeradaAgora ? [chaveDia(inicioDia())] : [])], folgas: ritmo.folgas }), [resumo, diasZerados, chaveRitmo, zeradaAgora])
-  const hoje = inicioDia(); const chaveHoje = chaveDia(hoje); const dia = plano.get(chaveDia(selecionado))
-  const mesMinimo = useMemo(() => inicioMes(hoje - 90 * DIA), [hoje])
-  const mesLimite = useMemo(() => inicioMes(hoje + JANELA_REVISAO_DIAS * DIA), [hoje])
-  const celulasMes = useMemo(() => {
-    const chaveMes = anoMes(mesExibido); const [ano, mes] = chaveMes.split('-').map(Number)
-    const diasNoMes = new Date(Date.UTC(ano, mes, 0)).getUTCDate()
-    const celulas: (number | null)[] = Array.from({ length: diaDaSemana(`${chaveMes}-01`) }, () => null)
-    for (let d = 1; d <= diasNoMes; d++) celulas.push(inicioDaChave(`${chaveMes}-${String(d).padStart(2, '0')}`))
-    return celulas
-  }, [mesExibido])
-  const irParaMes = (delta: number) => definirMesExibido((atual) => inicioDaChave(`${somarMeses(atual, delta)}-01`))
+  const hoje = inicioDia(); const chaveHoje = chaveDia(hoje)
   const pendentes = [...plano.values()].reduce((n, d) => n + d.ids.length, 0)
-  const incertas = Object.values(contexto.respondidas).filter(r => r.confianca === 'duvida' || r.confianca === 'chute').length
+  const incertas = Object.values(registros).filter(r => r.confianca === 'duvida' || r.confianca === 'chute').length
   const iniciarIds = async (ids: string[]) => { if (!indice || !ids.length) return; if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, limite: ids.length, embaralhar: true, situacao: 'revisarHoje' }, ids))) return; navegar('/sessao') }
   if (carregando || !indice) return <div className="estado"><p>Preparando sua revisão…</p></div>
 
@@ -153,13 +140,6 @@ export function Revisao() {
   const totalDia = feitasHoje + hojeTotal
   const curta = Math.min(REVISOES_CINCO_MINUTOS, hojeTotal)
   const alternarFolga = (d: number) => definirRitmo({ ...ritmo, folgas: ritmo.folgas.includes(d) ? ritmo.folgas.filter(x => x !== d) : [...ritmo.folgas, d].sort() })
-
-  // Próximos 7 dias (previsão da semana).
-  const semana = Array.from({ length: 7 }, (_, i) => {
-    const k = somarDias(chaveHoje, i); const inicio = inicioDaChave(k)
-    return { k, inicio, carga: plano.get(k)?.ids.length ?? 0, folga: ritmo.folgas.includes(diaDaSemana(k)), feitas: i === 0 ? feitasHoje : 0 }
-  })
-  const maiorSemana = Math.max(1, ...semana.map(d => d.carga + d.feitas))
 
   // Próxima conquista de cada família de revisão.
   const conquistasRevisao = FAMILIAS_REVISAO.map(({ familia, titulo }) => {
@@ -180,12 +160,28 @@ export function Revisao() {
         ? `Você fez ${feitasHoje} ${feitasHoje === 1 ? 'revisão' : 'revisões'} hoje e não sobrou nenhuma. ${proximoDia ? 'Se quiser, dá para adiantar um pouco de amanhã.' : ''}`
         : pendentes ? 'Nada vence hoje. Aproveite para avançar em questões novas.' : 'Responda questões e o seu calendário de revisão se monta sozinho.'
 
+  const nomeArea = area ? indice.temas.find((t) => t.slug === area)?.nome : undefined
+  const areasFiltro = indice.temas.filter((t) => porArea.get(t.slug) || t.slug === area)
+  const escolherArea = (slug: string | null) => {
+    definirArea(slug)
+    if (areaDaUrl) navegar(slug ? `/revisao?area=${slug}` : '/revisao')
+  }
+
   return <div className="empilha-2 revisao-premium rvx">
+    {(areasFiltro.length > 1 || area) && <nav className="rvx-areas" aria-label="Revisar só uma área">
+      <span className="rvx-areas__rotulo">Revisar</span>
+      <div className="rvx-areas__lista">
+        <button type="button" className="rvx-area" aria-pressed={!area} onClick={() => escolherArea(null)}>Todas<small className="numerico">{[...porArea.values()].reduce((a, b) => a + b, 0)}</small></button>
+        {areasFiltro.map((t) => <button key={t.slug} type="button" className="rvx-area" aria-pressed={area === t.slug} onClick={() => escolherArea(area === t.slug ? null : t.slug)} style={{ ['--cor-area' as string]: corDaArea(t.slug) }}>
+          <i aria-hidden="true" />{t.nome}{porArea.get(t.slug) ? <small className="numerico">{porArea.get(t.slug)}</small> : null}
+        </button>)}
+      </div>
+    </nav>}
     <section className={'rvx-heroi' + (zerado ? ' rvx-heroi--zerado' : '')}>
       <div className="rvx-heroi__principal">
         <p className="rvx-heroi__data"><Icone nome="calendario" tamanho={15} /> {capitalizar(FORMATO_HOJE.format(hoje))}</p>
         {hojeTotal ? <>
-          <h1 className="rvx-heroi__titulo"><span className="numerico">{hojeTotal}</span> para hoje <span className="rvx-heroi__tempo">· ~{minutosPara(hojeTotal)} min</span></h1>
+          <h1 className="rvx-heroi__titulo"><span className="numerico">{hojeTotal}</span> {nomeArea ? `de ${nomeArea.toLowerCase()} ` : ''}para hoje <span className="rvx-heroi__tempo">· ~{minutosPara(hojeTotal)} min</span></h1>
           <p className="rvx-heroi__texto">{textoApoio}</p>
           <div className="rvx-heroi__acoes">
             <button type="button" className="botao rvx-comecar" onClick={() => iniciarIds(idsHoje)}>
@@ -211,7 +207,7 @@ export function Revisao() {
             <a className="botao rvx-curta" href={href('/treinar')}>Treinar questões novas</a>
           </div>
         </> : <>
-          <h1 className="rvx-heroi__titulo">{folgaHoje ? 'Hoje é dia de folga' : 'Tudo em dia por aqui'}</h1>
+          <h1 className="rvx-heroi__titulo">{folgaHoje ? 'Hoje é dia de folga' : nomeArea ? `${nomeArea}: tudo em dia` : 'Tudo em dia por aqui'}</h1>
           <p className="rvx-heroi__texto">{textoApoio}</p>
           <div className="rvx-heroi__acoes">
             <a className="botao rvx-comecar" href={href('/treinar')}><Icone nome="alvo" tamanho={20} /><span><strong>Treinar questões novas</strong><small>As que você errar voltam aqui no dia certo</small></span></a>
@@ -244,69 +240,7 @@ export function Revisao() {
 
     <FlashcardsDeHoje />
 
-    <section className="cartao cartao__corpo rvx-semana" aria-label="Próximos 7 dias">
-      <div className="entre">
-        <div><p className="meta">PRÓXIMOS 7 DIAS</p><h2>Sua semana de revisão</h2></div>
-        <p className="texto-2 rvx-semana__total"><b className="numerico">{semana.reduce((n, d) => n + d.carga, 0)}</b> na semana</p>
-      </div>
-      <ol className="rvx-barras">
-        {semana.map((d, i) => <li key={d.k}>
-          <button type="button" className={'rvx-barra' + (i === 0 ? ' rvx-barra--hoje' : '') + (selecionado === d.inicio ? ' rvx-barra--selecionada' : '') + (d.folga ? ' rvx-barra--folga' : '')} onClick={() => { definirSelecionado(d.inicio); definirMesExibido(inicioMes(d.inicio)) }} aria-label={`${rotuloDia(d.inicio)}: ${d.folga ? 'folga' : questoes(d.carga)}`}>
-            <span className="rvx-barra__valor numerico">{d.folga ? '—' : d.carga + d.feitas}</span>
-            <span className="rvx-barra__coluna">
-              {d.feitas > 0 && <span className="rvx-barra__feito" style={{ height: `${(d.feitas / maiorSemana) * 100}%` }} />}
-              <span className={`rvx-barra__carga rvx-nivel-${nivelCarga(d.carga)}`} style={{ height: `${(d.carga / maiorSemana) * 100}%` }} />
-            </span>
-            <span className="rvx-barra__dia">{i === 0 ? 'hoje' : DIAS_SEMANA[diaDaSemana(d.k)]}</span>
-          </button>
-        </li>)}
-      </ol>
-    </section>
-
-    <section className="cartao cartao__corpo rvx-calendario">
-      <div className="entre">
-        <div><p className="meta">CALENDÁRIO</p><h2>{capitalizar(FORMATO_MES.format(mesExibido))}</h2></div>
-        <div className="calendario__nav">
-          <button type="button" className="botao-icone" onClick={() => irParaMes(-1)} disabled={mesExibido <= mesMinimo} aria-label="Mês anterior"><Icone nome="esquerda" /></button>
-          <button type="button" className="botao-icone" onClick={() => irParaMes(1)} disabled={mesExibido >= mesLimite} aria-label="Próximo mês"><Icone nome="direita" /></button>
-        </div>
-      </div>
-      <div className="rvx-legenda" aria-hidden="true">
-        <span><i className="rvx-legenda__feito" /> revisões feitas</span>
-        <span>previstas <i className="rvx-nivel-1" /><i className="rvx-nivel-2" /><i className="rvx-nivel-3" /><i className="rvx-nivel-4" /> mais</span>
-      </div>
-      <div className="calendario__cabecalho">{DIAS_SEMANA.map(d => <span key={d}>{d}</span>)}</div>
-      <div className="calendario rvx-mes" role="grid" aria-label="Calendário de revisões">
-        {celulasMes.map((data, i) => {
-          if (data === null) return <span key={`vazio-${i}`} className="calendario__vazio" aria-hidden="true" />
-          const k = chaveDia(data)
-          const passado = data < hoje
-          const carga = plano.get(k)?.ids.length ?? 0
-          const feitas = resumo.porDia.get(k) ?? 0
-          const folga = ritmo.folgas.includes(diaDaSemana(k))
-          const classe = passado ? (feitas ? 'rvx-dia--feito' : 'rvx-dia--vazio') : `rvx-nivel-${nivelCarga(carga)}`
-          const rotulo = passado ? `${rotuloDia(data)}: ${feitas ? `${feitas} revisões feitas` : 'sem revisões'}` : `${rotuloDia(data)}: ${folga && !carga ? 'folga' : questoes(carga)}`
-          return <button key={data} type="button" aria-label={rotulo} title={rotulo}
-            className={`calendario__dia rvx-dia ${classe}${data === hoje ? ' rvx-dia--hoje' : ''}${selecionado === data ? ' calendario__dia--selecionado' : ''}`}
-            disabled={passado} onClick={() => definirSelecionado(data)}>
-            <strong>{Number(k.slice(8))}</strong>
-            <small>{passado ? (feitas ? <><Icone nome="certo" tamanho={11} />{feitas}</> : '') : folga && !carga ? 'folga' : carga || ''}</small>
-          </button>
-        })}
-      </div>
-      <div className="revisao-detalhe rvx-detalhe">
-        <p className="meta">{capitalizar(rotuloDia(selecionado))}{selecionado === hoje ? ' · hoje' : ''}</p>
-        <h3>{dia?.ids.length ? `${questoes(dia.ids.length)} · ~${minutosPara(dia.ids.length)} min` : 'Nenhuma revisão programada'}</h3>
-        {dia?.ids.length ? <>
-          <p className="texto-2">{dia.inicio === hoje && dia.atrasadas ? `${dia.atrasadas} vencidas foram trazidas para hoje. ` : dia.inicio > hoje && dia.redistribuidas ? `${dia.redistribuidas} vieram de dias anteriores pelo seu ritmo. ` : ''}Acerto histórico nelas: {dia.tentativas ? Math.round(dia.acertos / dia.tentativas * 100) : 0}%.</p>
-          <div className="chips">{[...dia.temas.entries()].sort((a, b) => b[1] - a[1]).map(([tema, n]) => <span key={tema}>{tema} · {n}</span>)}</div>
-          <div className="linha linha--empilha-celular">
-            <button className="botao botao--principal" onClick={() => iniciarIds(dia.ids)}>{dia.inicio === hoje ? 'Revisar as de hoje' : 'Adiantar este dia'}</button>
-            {dia.ids.length > REVISOES_CINCO_MINUTOS && <button className="botao" onClick={() => iniciarIds(dia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>Só 5 minutos ({REVISOES_CINCO_MINUTOS})</button>}
-          </div>
-        </> : <p className="texto-2">Escolha outro dia no calendário ou avance com novas questões.</p>}
-      </div>
-    </section>
+    <CalendarioRevisao indice={indice} registros={registros} plano={plano} folgas={ritmo.folgas} hoje={hoje} rotuloArea={nomeArea?.toLowerCase()} aoRevisar={iniciarIds} />
 
     <section className="cartao cartao__corpo rvx-conquistas" aria-label="Conquistas de revisão">
       <div className="entre">
