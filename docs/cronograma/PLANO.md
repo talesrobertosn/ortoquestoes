@@ -163,3 +163,12 @@ Isso substitui a prévia preenchida pela pessoa (itens 38 e 39).
 - Não mudar preço, limites nem o que é do assinante sem o Tales pedir.
 - Não mexer em questões, gabaritos e comentários.
 - Mudança visual: capturas reais em celular e computador durante o trabalho.
+
+### Revisão de 16/10: atenção especial aos calendários
+
+50. [x] Datas civis e plano encerrado: mês e dia da prova corretos em qualquer fuso; seleção acompanha a navegação e respeita o intervalo do plano.
+51. [x] Hoje também em folga/reta final/prova, histórico dos dias já vividos e navegação por teclado dentro do calendário.
+52. [x] Flashcards recalcula hoje/semana/previsão na virada do dia, ao voltar para a aba, ao mudar de conta e ao receber plano/registros de outra aba.
+53. [x] Exportação .ics com datas civis, marcos, linhas válidas com acentos e testes em quatro fusos. [Relatório e capturas](REVISAO-CALENDARIOS-16-10.md).
+
+Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoquestoes/pull/327).

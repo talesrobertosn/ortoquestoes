@@ -1,3 +1,5 @@
+import { gerarIcs } from '../dados/calendarioIcs'
+export { gerarIcs } from '../dados/calendarioIcs'
 import { useState, type ReactNode } from 'react'
 import type { CalculoPlano, DiaPlano, Passada, PlanoSalvo } from '../dados/planoEstudo'
 import { DIA_MINIMO, opcoesDe, ROTULO_PASSADA, TAMANHO_MINI } from '../dados/planoEstudo'
@@ -35,7 +37,7 @@ const faixaCores = (partes: Array<{ slug: string; n: number }>) => {
 
 export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; aoAjustar?: () => void }) {
   const hoje = diaCivil()
-  const prova = new Date(calculo.vespera.getTime() + DIA)
+  const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
   // Trechos do trilho: as passadas que existem, a reta final (revisão forte e modo prova) e a prova.
   const passadas = ([1, 2, 3] as Passada[]).filter((p) => calculo.inicioPassada[p] || calculo.passadaAtual === p)
@@ -59,7 +61,7 @@ export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { pl
       const proxima = ([2, 3] as Passada[]).find((p) => p > calculo.passadaAtual! && calculo.inicioPassada[p] && calculo.inicioPassada[p]! > hoje)
       return proxima ? <>Em {curta(calculo.inicioPassada[proxima]!)} começa a {ROTULO_PASSADA[proxima].nome}.</> : <>Em {curta(calculo.inicioRetaFinal)} começa a reta final, sem conteúdo novo.</>
     })()}</>
-    : calculo.fase === 'conteudo' ? <>Conteúdo novo até {curta(new Date(calculo.inicioRetaFinal.getTime() - DIA))}. Depois, a reta final.</>
+    : calculo.fase === 'conteudo' ? <>Conteúdo novo até {curta(new Date(calculo.inicioRetaFinal.getFullYear(), calculo.inicioRetaFinal.getMonth(), calculo.inicioRetaFinal.getDate() - 1))}. Depois, a reta final.</>
     : calculo.fase === 'revisao' ? <>Reta final: <b>revisão forte</b>, uma fatia da prova por dia. Em {curta(calculo.inicioModoProva)} começa o modo prova.</>
     : calculo.fase === 'prova' ? <>Reta final: <b>modo prova</b>. Simulado, os erros que importam e o resumão.</>
     : <>Véspera: aquecimento leve e descanso.</>
@@ -355,7 +357,7 @@ export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false, a
       s.total += it.n
     }
   }
-  const prova = new Date(calculo.vespera.getTime() + DIA)
+  const prova = plano ? diaCivil(plano.data_prova) : new Date(calculo.vespera.getFullYear(), calculo.vespera.getMonth(), calculo.vespera.getDate() + 1)
   const visiveis = tudo ? semanas : semanas.slice(0, maximo)
   const linhas: ReactNode[] = []
   let extraMostrado = !extra || extra.data < hoje
@@ -472,35 +474,6 @@ export function ResumoSemana({ feitas, acerto, dias, fraca, proxima }: { feitas:
 }
 
 // ─── Exportar para o calendário ────────────────────────────────────────────
-
-/** Arquivo .ics com cada dia de estudo, o mini-simulado, a reta final e a prova, com lembrete no horário escolhido. */
-export function gerarIcs(calculo: CalculoPlano, plano: PlanoSalvo, hora: number): string {
-  const p2 = (n: number) => String(n).padStart(2, '0')
-  const data = (d: Date) => `${d.getFullYear()}${p2(d.getMonth() + 1)}${p2(d.getDate())}`
-  const carimbo = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '')
-  const escapar = (s: string) => s.replace(/[\\,;]/g, (c) => `\\${c}`).replace(/\n/g, '\\n')
-  const eventos: string[] = []
-  const evento = (d: Date, titulo: string, descricao: string, id: string, alarme = true) => {
-    eventos.push([
-      'BEGIN:VEVENT', `UID:${id}@ortoquestoes.com.br`, `DTSTAMP:${carimbo}`,
-      `DTSTART:${data(d)}T${p2(hora)}0000`, `DTEND:${data(d)}T${p2(hora + 1)}0000`,
-      `SUMMARY:${escapar(titulo)}`, `DESCRIPTION:${escapar(descricao)}`, 'URL:https://ortoquestoes.com.br/#/cronograma',
-      ...(alarme ? ['BEGIN:VALARM', 'ACTION:DISPLAY', `DESCRIPTION:${escapar(titulo)}`, 'TRIGGER:PT0M', 'END:VALARM'] : []),
-      'END:VEVENT',
-    ].join('\r\n'))
-  }
-  for (const d of calculo.dias) {
-    if (!d.total && !d.mini) continue
-    const nomes = juntar(d.itens.map((i) => i.nome))
-    evento(d.data, `Orto Questões: ${d.total} questões${nomes ? ` · ${nomes}` : ''}${d.mini ? ' + mini-simulado' : ''}`, d.itens.map((i) => `${i.nome}: ${i.assuntos.slice(0, 3).join(', ')}`).join('\n'), `cronograma-${data(d.data)}`)
-  }
-  if (!calculo.naRetaFinal) evento(calculo.inicioRetaFinal, 'Orto Questões: começa a reta final', 'Revisão forte e modo prova, sem conteúdo novo.', `cronograma-reta-${data(calculo.inicioRetaFinal)}`)
-  const extra = plano.opcoes?.provaExtra
-  if (extra?.nome && /^\d{4}-\d{2}-\d{2}$/.test(extra.data)) evento(new Date(`${extra.data}T00:00:00`), `Prova: ${extra.nome}`, 'Boa prova!', `cronograma-prova-extra-${extra.data.replace(/-/g, '')}`, false)
-  const prova = new Date(calculo.vespera.getTime() + DIA)
-  evento(prova, `Prova: ${plano.prova}`, 'Boa prova!', `cronograma-prova-${data(prova)}`, false)
-  return ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Orto Questoes//Cronograma//PT', 'CALSCALE:GREGORIAN', 'X-WR-CALNAME:Cronograma Orto Questões', ...eventos, 'END:VCALENDAR'].join('\r\n')
-}
 
 export function ExportarCalendario({ calculo, plano }: { calculo: CalculoPlano; plano: PlanoSalvo }) {
   const [hora, definirHora] = useState(7)

@@ -6,11 +6,11 @@ import { mkdir } from 'node:fs/promises'
 const SAIDA = process.env.SAIDA ?? '/tmp/claude-0/capturas-calendario'
 await mkdir(SAIDA, { recursive: true })
 const BASE = process.env.BASE ?? 'http://localhost:5191/'
-const nav = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
+const nav = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/usr/bin/chromium', args: ['--no-sandbox'] })
 const erros = []
 async function pagina(largura, altura, esquema) {
   const ctx = await nav.newContext({ viewport: { width: largura, height: altura }, deviceScaleFactor: largura < 500 ? 2 : 1, colorScheme: esquema, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', isMobile: largura < 500, hasTouch: largura < 500 })
-  await ctx.addInitScript((t) => { localStorage.setItem('ortoquestoes:tema', JSON.stringify(t)); localStorage.setItem('ortoquestoes:cronograma:tour-v2', 'true') }, esquema === 'light' ? 'claro' : 'escuro')
+  await ctx.addInitScript((t) => { localStorage.setItem('oq-cookies', JSON.stringify({ escolha: 'recusado', versao: 1 })); localStorage.setItem('ortoquestoes:tema', JSON.stringify(t)); localStorage.setItem('ortoquestoes:cronograma:tour-v2', 'true') }, esquema === 'light' ? 'claro' : 'escuro')
   const p = await ctx.newPage()
   p.on('pageerror', (e) => erros.push(String(e)))
   p.on('console', (m) => { if (m.type() === 'error') erros.push(m.text()) })
@@ -95,3 +95,5 @@ for (const [nome, l, a] of [['computador', 1400, 860], ['celular', 390, 844]]) {
 }
 await nav.close()
 console.log(erros.length ? erros.join('\n') : 'sem erros')
+
+if (erros.length) process.exitCode = 1
