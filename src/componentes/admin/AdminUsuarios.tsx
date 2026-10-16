@@ -83,6 +83,14 @@ const hojeSP = () => {
   if (agora >= hojeGuardado.ate) hojeGuardado = { ate: agora + 60_000, dia: FORMATO_DIA.format(agora) }
   return hojeGuardado.dia
 }
+/**
+ * Online agora, medido no painel (16/10/2026): o aparelho manda sinal a cada 40 s com a aba à vista;
+ * sem sinal há mais de 100 s, a pessoa saiu (fechou, trocou de aba ou de app). O servidor usa 3 minutos;
+ * aqui a conta é refeita a cada 10 s, então quem sai some do "ao vivo" sem esperar a próxima leitura.
+ */
+export const ONLINE_MS = 100_000
+export const estaOnline = (u: Pick<LinhaUsuario, 'online' | 'visto_em'>, agora = Date.now()) =>
+  u.visto_em ? agora - new Date(u.visto_em).getTime() < ONLINE_MS : !!u.online
 export const ativoHoje = (u: LinhaUsuario) => !!u.ultima_atividade && diaSP(u.ultima_atividade) === hojeSP()
 /** Cadastro nos últimos 14 dias. */
 const novo = (u: LinhaUsuario) => Date.now() - new Date(u.criado_em).getTime() < 14 * 86_400_000
@@ -225,7 +233,7 @@ export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'tod
     <LegendaCores />
 
     {aoVivo.length > 0 && <section className="adm-aovivo" aria-labelledby="adm-aovivo-titulo">
-      <header><h3 id="adm-aovivo-titulo"><span className="adm-online" aria-hidden="true" />Ao vivo</h3><small>atualiza sozinho a cada 30 s · última leitura {haQuantoTempo(new Date(atualizadoEm ?? Date.now()).toISOString())}</small></header>
+      <header><h3 id="adm-aovivo-titulo"><span className="adm-online" aria-hidden="true" />Ao vivo</h3><small>atualiza sozinho a cada 15 s · última leitura {haQuantoTempo(new Date(atualizadoEm ?? Date.now()).toISOString())}</small></header>
       <ul>{aoVivo.map(u => { const cat = categoriaPessoa(u, sinais.get(u.id_usuario)); return <li key={u.id_usuario}>
         <button type="button" className={`adm-cor--${cat}`} onClick={() => definirAberto(u)} aria-label={`${u.nome ?? u.email ?? 'Usuário'} (${ROTULOS_CATEGORIA[cat].toLowerCase()}): abrir ficha`}>
           <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}</span>
