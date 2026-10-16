@@ -1,4 +1,4 @@
-> **16/10/2026 — Calendários:** revisão em `codex/calendarios-revisao-20261016`: hoje/semana dos Flashcards atualizam na virada de São Paulo e por outra aba; calendário mensal e exportação de questões revistos. [Decisões e testes](../cronograma/REVISAO-CALENDARIOS-16-10.md). Sem SQL ou mudança no progresso.
+> **16/10/2026 — Calendários:** [PR #327](https://github.com/talesrobertosn/ortoquestoes/pull/327), revisão em `codex/calendarios-revisao-20261016`: hoje/semana dos Flashcards atualizam na virada de São Paulo e por outra aba; calendário mensal e exportação de questões revistos. [Decisões e testes](../cronograma/REVISAO-CALENDARIOS-16-10.md). Sem SQL ou mudança no progresso.
 
 > **16/10/2026 — Easter eggs e encontros:** [PR #326](https://github.com/talesrobertosn/ortoquestoes/pull/326), implementação em `codex/easter-eggs-eventos-20261016`, base atualizada `b1521885`. Ver [gatilhos, decisões, testes e passagem](../EASTER-EGGS-E-EVENTOS.md). Publicação autorizada por Tales; nenhuma mudança médica ou SQL. Questões comuns podem receber visitas; provas continuam bloqueadas.
 

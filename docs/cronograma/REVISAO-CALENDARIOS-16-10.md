@@ -1,5 +1,7 @@
 # Revisão dos calendários — 16/10/2026
 
+Entrega: [PR #327](https://github.com/talesrobertosn/ortoquestoes/pull/327), implementação `7fe7b7c1f3a2722a5c50870e712d23559a679397`.
+
 Tales pediu continuidade, publicação a cada bloco concluído e atenção especial aos
 calendários. Este bloco parte do merge `e363c582` (eventos publicados no PR #326),
 branch `codex/calendarios-revisao-20261016`, worktree
@@ -98,3 +100,6 @@ data compartilhada, evitando texto de ano/data separado do valor do formulário.
 ![Calendário no computador](capturas-16-10/computador-mes-atual.png)
 ![Calendário no celular](capturas-16-10/celular-mes-atual.png)
 ![Semana dos Flashcards após a virada](capturas-16-10/celular-flashcards-virada.png)
+
+A revisão final também aplica à mensagem do console o mesmo bloqueio de provas,
+preferência e diálogos que já protege as visitas visuais.
