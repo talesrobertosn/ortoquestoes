@@ -109,7 +109,7 @@ export interface AcoesRetaFinal {
  * entrar na revisão forte, no modo prova ou na véspera.
  */
 export function HojeRetaFinal({ calculo, acoes, minutos = MINUTOS_POR_QUESTAO }: { calculo: CalculoPlano; acoes: AcoesRetaFinal; minutos?: number }) {
-  const resumao: ItemChecklist = { id: 'resumao', titulo: 'Resumão', texto: 'As frases "Na prova" dos comentários, só dos assuntos que mais caem, para ler em minutos.', minutos: 10, estado: 'afazer', acao: { rotulo: 'Ler', href: href('/resumao') } }
+  const resumao: ItemChecklist = { id: 'resumao', titulo: 'Frases que caem', texto: 'As frases "Na prova" dos comentários, só dos assuntos que mais caem, para ler em minutos.', minutos: 10, estado: 'afazer', acao: { rotulo: 'Ler', href: href('/resumos/frases') } }
   const erros: ItemChecklist = { id: 'erros', titulo: `Os erros que importam${acoes.errosQueImportam ? ` (${acoes.errosQueImportam})` : ''}`, texto: 'Só os erros dos assuntos de prioridade alta e máxima. É onde cada acerto a mais tem mais chance de aparecer na prova.', minutos: acoes.errosQueImportam ? Math.min(acoes.errosQueImportam, 20) * minutos : null, estado: 'afazer', acao: acoes.errosQueImportam ? { rotulo: 'Refazer', aoClicar: acoes.aoErros } : undefined }
   const marco = 'var(--cp-marco)'
   if (calculo.fase === 'revisao') {

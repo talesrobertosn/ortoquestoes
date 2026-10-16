@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { carregarCapitulo, carregarIndiceBiblioteca, textosDoCapitulo } from '../biblioteca/conteudo'
 import { resolverAncora } from '../biblioteca/ancoras'
 import { CORES, type Capitulo, type CorMarca, type IndiceBiblioteca, type Marca, type ResumoCapitulo } from '../biblioteca/tipos'
@@ -14,11 +14,15 @@ import { usarPremium } from '../conta/premium'
 import { corDaArea } from '../dados/coresAreas'
 import '../estilos/paginas/Resumos.css'
 
+/** Adendo da Biblioteca: as frases "Na prova" (o antigo Resumão), em #/resumos/frases. */
+const FrasesQueCaem = lazy(() => import('./Resumao').then(({ Resumao }) => ({ default: Resumao })))
+
 /**
  * Biblioteca OrtoQuestões (#/resumos, 16/10/2026). Ainda fora do menu (pedido do Tales, fase de testes).
  * - #/resumos: estante por especialidade, busca, filtros e "Continuar estudando".
  * - #/resumos/<capítulo>?bloco=<id>: o leitor (LeitorResumo).
  * - #/resumos/caderno: Meu caderno de estudo (todas as marcações e notas).
+ * - #/resumos/frases: adendo com as frases que caem (o antigo Resumão, 16/10/2026).
  */
 
 /** As especialidades da estante, na ordem do acervo (slug dos temas). */
@@ -35,6 +39,7 @@ export function Resumos({ segmentos, consulta }: { segmentos: string[]; consulta
   useEffect(() => { gravar('resumos:visto', true) }, [])
   const sub = segmentos[1]
   if (sub === 'caderno') return <Caderno />
+  if (sub === 'frases') return <Suspense fallback={<Carregando linhas={6} rotulo="Carregando as frases" />}><FrasesQueCaem /></Suspense>
   if (sub) return <LeitorResumo id={sub} consulta={consulta} />
   return <Estante />
 }
@@ -102,6 +107,11 @@ function Estante() {
         <ul className="rs-estante">{filtrados.filter((c) => c.especialidade === e.slug).map((c) => <Livro key={c.id} c={c} fechado={c.acesso !== 'gratis' && !premium} premium={premium} indice={indice} leitura={leituras[c.id]} marcas={marcas.filter((m) => m.capitulo === c.id && !m.marcador).length} />)}</ul>
       </section>)}
       {!filtrados.length && <p className="texto-2">Nenhum capítulo encontrado.</p>}
+      <a className="rs-adendo" href={href('/resumos/frases')}>
+        <span className="rs-adendo__selo">Adendo</span>
+        <span className="rs-adendo__texto"><strong>Frases que caem</strong><small>Uma frase por assunto, tirada dos comentários das questões de prova, de todas as áreas. Para reler em minutos antes das questões ou na véspera.</small></span>
+        <Icone nome="direita" tamanho={16} />
+      </a>
       <p className="rs-nota">Os resumos são texto autoral a partir dos capítulos citados, com revisão técnica; as questões e os anos vêm do acervo do site. Figuras originais só aparecem quando há licença de reprodução.</p>
     </div>
   )

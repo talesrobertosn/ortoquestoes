@@ -315,7 +315,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             ...(FLASHCARDS_NA_VENDA ? [['Flashcards por dia (beta)', fraseGratis('flashcardsPorDia'), 'Sem limite'] as const] : []),
             ['Cronograma até a prova: a lista de cada dia, o que mais cai primeiro, dia de plantão e reta final', false, true],
             ['Temas que mais caem, área por área e assunto por assunto', false, true],
-            ['Resumão: o que cai, em uma frase por assunto', false, true],
+            ['Biblioteca de resumos e frases que caem', false, true],
             ['Como a turma respondeu e treino pelas que a turma mais erra', false, true],
             ['Simulado Nacional todo mês, com sua posição', false, true],
             ['Liga da residência e relatório do mês', false, true],
@@ -624,7 +624,7 @@ const limitesHabilitadosTexto = () => LIMITES_HABILITADOS ? `Gratuito: ${fraseGr
 function SecaoRecursos({ servico }: { servico: string | null }) {
   const recursos: Array<{ img: string; titulo: string; texto: string; destino: string }> = [
     { img: 'pixel/ranking.png', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões em duas horas. Corrigida na hora, com a sua posição e o que falta, tema por tema, para você estar pronto.', destino: '/simulado-nacional' },
-    { img: 'pixel/treinar.png', titulo: 'Resumão', texto: 'O que cai, em uma frase por assunto: as frases "Na prova" que você relê em minutos, no dia a dia e na reta final.', destino: '/resumao' },
+    { img: 'pixel/treinar.png', titulo: 'Frases que caem', texto: 'O que cai, em uma frase por assunto: as frases "Na prova" que você relê em minutos, junto dos resumos da Biblioteca.', destino: '/resumos/frases' },
     { img: 'pixel/liga.png', titulo: 'Liga da residência', texto: servico ? `Um ranking privado só seu e dos seus colegas. Crie a liga do ${servico}, mande o convite no grupo e estudem juntos.` : 'Um ranking privado do seu serviço. Crie a liga, mande o convite no grupo do WhatsApp e estudem juntos.', destino: '/ligas' },
     { img: 'pixel/relatorio.png', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, o acerto, os temas que subiram e o próximo passo.', destino: '/conta?secao=estudo' },
     { img: 'pixel/turma.png', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e onde está a pegadinha. E sessões só com as que a turma mais erra.', destino: '/treinar' },

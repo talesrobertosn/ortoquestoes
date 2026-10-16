@@ -442,7 +442,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   const resumoHoje = resumosDosSubtemas(biblioteca, subtemasHoje)[0] ?? null
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
-    if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) || (hub?.resumaoLido ?? []).includes(principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`) } : undefined })
+    if (principal) lista.push({ id: 'resumao', titulo: 'Frases que caem do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) || (hub?.resumaoLido ?? []).includes(principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumos/frases?tema=${principal.slug}`) } : undefined })
     if (resumoHoje) {
       const l = leituras[resumoHoje.id]
       lista.push({ id: 'resumo-biblioteca', titulo: 'Resumo do capítulo', texto: <>{resumoHoje.titulo}: o capítulo na ordem em que a prova cobra, com as questões que já caíram no texto.{l?.progresso && !l.concluidoEm ? ` ${l.progresso}% lido.` : ''}</>, minutos: Math.max(1, Math.round(resumoHoje.minutos * (1 - (l?.progresso ?? 0) / 100))), estado: l?.concluidoEm || (l?.progresso ?? 0) >= 95 ? 'feito' : 'afazer', acao: { rotulo: l?.progresso ? 'Continuar' : 'Ler', href: href(`/resumos/${resumoHoje.id}`) }, opcional: true, icone: 'livro' })

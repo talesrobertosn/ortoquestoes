@@ -34,6 +34,8 @@ export interface Capitulo {
   resumo: string
   /** Plano gratuito: até 5 resumos abertos; os outros só para assinantes. */
   acesso: 'gratis' | 'assinante'
+  /** Subtemas do acervo que o resumo ensina (adendo "Frases que caem" no fim do leitor). */
+  subtemas?: string[]
   minutos: number
   secoes: Secao[]
 }

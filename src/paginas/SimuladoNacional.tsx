@@ -387,7 +387,7 @@ function Resultado({ resultado, slugDoTema, correcao, erroCorrecao, aoRecarregar
             })}
           </ul>
           <p className="sn-rever__rodape texto-2">
-            As questões feitas neste aparelho já entraram no <a href={href('/erros')}>caderno de erros</a> e na <a href={href('/revisao')}>revisão</a>. Para fixar os conceitos, use os <a href={href('/flashcards')}>flashcards</a> e o <a href={href('/resumao')}>Resumão</a>.
+            As questões feitas neste aparelho já entraram no <a href={href('/erros')}>caderno de erros</a> e na <a href={href('/revisao')}>revisão</a>. Para fixar os conceitos, use os <a href={href('/flashcards')}>flashcards</a> e as <a href={href('/resumos/frases')}>frases que caem</a>.
           </p>
         </section>
       )}
