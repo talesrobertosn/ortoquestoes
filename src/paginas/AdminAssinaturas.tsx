@@ -28,8 +28,10 @@ import { real } from '../dados/planos'
 import { usarLidos } from '../componentes/admin/lidos'
 import { usarRpc } from '../componentes/admin/usarRpc'
 import { usarContadoresAdmin } from '../componentes/admin/contadores'
+import { haQuantoTempo, registrarTitulosResumos, resumoDaPagina, tituloResumo } from '../componentes/admin/formatos'
+import { carregarIndiceBiblioteca } from '../biblioteca/conteudo'
 import { Comparacao } from '../componentes/admin/Comparacao'
-import { estudoDeHoje, type DiaSerie, type EstudoHoje } from '../componentes/admin/estudoHoje'
+import { diaSP, estudoDeHoje, type DiaSerie, type EstudoHoje } from '../componentes/admin/estudoHoje'
 import type { SinalUsuario } from '../componentes/admin/sinais'
 import {
   STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
@@ -304,6 +306,7 @@ function Hoje({ conta, resumo, usuarios, assinaturas, errosPagamento, mensagens,
   }), [serieQ.dados, usuarios, sinaisQ.dados])
 
   return <div className="empilha-2">
+    <NaBiblioteca usuarios={usuarios} />
     <EstudoDeHoje estudo={estudo} carregando={serieQ.carregando && !serieQ.dados} verUsuarios={verUsuarios} />
     <section className="adm-kpis" aria-label="Números principais">
       <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--online" onClick={() => irPara('usuarios')}><span><i className="adm-online" aria-hidden="true" /> Online agora</span><strong>{usuarios ? usuarios.filter(u => u.online).length.toLocaleString('pt-BR') : n(resumo?.online_agora)}</strong><small>com o site aberto e à vista agora</small></button>
@@ -545,5 +548,38 @@ function Pagamentos({ eventos, usuarios, recarregar, lidos, marcar }: { eventos:
       })}
     </ul>}
     {ficha && <AdminFichaUsuario usuario={ficha} abaInicial="pagamentos" aoFechar={() => definirFicha(null)} />}
+  </section>
+}
+
+/**
+ * Quem está na Biblioteca de resumos (pedido do Tales, 16/10/2026): agora (online, com o resumo aberto e
+ * quanto já leu) e hoje (a última página registrada foi um resumo). Vem do sinal do aparelho, sem SQL novo.
+ */
+function NaBiblioteca({ usuarios }: { usuarios: LinhaUsuario[] | null }) {
+  const [, definirTitulos] = useState(0)
+  useEffect(() => { carregarIndiceBiblioteca().then((i) => { registrarTitulosResumos(i.capitulos); definirTitulos((n) => n + 1) }).catch(() => undefined) }, [])
+  const { agora, hoje, porTema } = useMemo(() => {
+    const naBib = (u: LinhaUsuario) => (u.pagina ?? '').startsWith('/resumos')
+    const lista = (usuarios ?? []).filter(naBib)
+    const agora = lista.filter((u) => u.online).sort((a, b) => (b.pagina_em ?? '').localeCompare(a.pagina_em ?? ''))
+    const hoje = lista.filter((u) => !u.online && u.pagina_em && diaSP(u.pagina_em) === diaSP(Date.now()))
+    const porTema = new Map<string, number>()
+    for (const u of [...agora, ...hoje]) { const c = resumoDaPagina(u.pagina); if (c) porTema.set(c, (porTema.get(c) ?? 0) + 1) }
+    return { agora, hoje, porTema: [...porTema].sort((a, b) => b[1] - a[1]) }
+  }, [usuarios])
+  if (!usuarios) return null
+  const linha = (u: LinhaUsuario) => {
+    const c = resumoDaPagina(u.pagina)
+    const extra = (u.pagina ?? '').split(' · ')[1]
+    const onde = c ? tituloResumo(c) : u.pagina === '/resumos/caderno' ? 'Caderno de estudo' : u.pagina === '/resumos/frases' ? 'Frases que caem' : 'Estante (escolhendo um resumo)'
+    return <li key={u.id_usuario}><span className="adm-mini__nome"><span>{u.online && <i className="adm-online" aria-label="Online agora" />}{u.nome ?? u.email}</span><small>{[onde, extra, u.online ? null : haQuantoTempo(u.pagina_em)].filter(Boolean).join(' · ')}</small></span></li>
+  }
+  return <section className="adm-secao empilha" aria-labelledby="adm-bib-titulo">
+    <div className="adm-secao__cabeca"><h2 id="adm-bib-titulo">Na Biblioteca de resumos <span className="adm-contagem">{agora.length} agora</span></h2></div>
+    {agora.length === 0 && hoje.length === 0 ? <p className="adm-vazio">Ninguém com um resumo aberto agora. Quem abrir aparece aqui, com o tema e quanto já leu.</p> : <>
+      {porTema.length > 0 && <p className="adm-nota">{porTema.map(([c, n]) => `${tituloResumo(c)}: ${n}`).join(' · ')}</p>}
+      {agora.length > 0 && <><h3 className="adm-mini__titulo">Lendo agora</h3><ol className="adm-mini">{agora.map(linha)}</ol></>}
+      {hoje.length > 0 && <><h3 className="adm-mini__titulo">Hoje (a última página foi um resumo)</h3><ol className="adm-mini">{hoje.slice(0, 12).map(linha)}</ol></>}
+    </>}
   </section>
 }

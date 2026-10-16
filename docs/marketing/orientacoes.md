@@ -112,3 +112,6 @@ A página de planos foi refeita a pedido do Tales: três planos lado a lado no t
 
 ## Embarque, Exame de DNA e Créditos finais (aprovados em 16/10/2026)
 Tales pediu para salvar como modelo o post de 16/10: **Embarque** (feed de 3 slides com cartão de embarque), **Exame de DNA** (3 stories de questão, "quem é o pai?") e **Créditos finais** (3 stories de propaganda, com o texto longo e a chamada "Treine grátis"). Pouco texto no feed e nos stories de questão; o texto longo fica na propaganda, depois da questão. [Guia e modelos executáveis](../../marketing/instagram/estilos/EMBARQUE-DNA-CREDITOS.md).
+
+## Modelo padrão (16/10/2026)
+Tales aprovou o post da Biblioteca de Resumos como **modelo padrão**: "quando eu pedir no modelo padrão, seja esse". Telas reais do site editadas (aparelhos, lupas e pinos numerados), cor dominante verde ou branca, tonalidades ajustáveis. [Guia e modelo executável](../../marketing/instagram/estilos/MODELO-PADRAO.md).

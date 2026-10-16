@@ -1,5 +1,7 @@
 # Estilos oficiais de post
 
+> **Modelo padrão (16/10/2026):** quando o Tales pedir "no modelo padrão", use o [MODELO-PADRAO.md](MODELO-PADRAO.md) (telas reais editadas, verde ou branco), em vez de sortear.
+
 Os formatos de 4/10/2026 (o trio de estudo e o mapa de metrô das novidades) viraram estilos fixos da marca. Para variar a grade,
 sorteie um estilo a cada post novo (aleatório, sem repetir o último) e acompanhe com o story semeador
 do mesmo estilo.
