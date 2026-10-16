@@ -175,3 +175,10 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 - **14/10/2026, paisagens:** 43–48: vilarejo, ruínas, vila vista de cima, campo florido, praia e estufa integrados às paradas existentes. [Relatório](flashcards/PAISAGENS-14-10.md).
 
 - **14/10/2026, leitores:** 39: manto e livro nas estantes depois de quinze minutos visíveis, sem persistência, combate ou animação com movimento reduzido. [Relatório](flashcards/LEITORES-14-10.md).
+
+## L. Pequenos encontros no estudo (pedido de 16/10)
+
+85. [x] Easter eggs discretos: código, Tinel na marca, marcos pessoais, madrugada, datas, Arquivo do Preceptor, gato, martelinho, console, 404 e selo local. [Gatilhos e testes](EASTER-EGGS-E-EVENTOS.md).
+86. [x] Visitas aleatórias com cooldown, preferência em Minha conta, movimento reduzido e bloqueio de provas. Questão comum sem resposta pode recebê-las, conforme decisão mais recente de Tales. Sem SQL nem vantagem no ranking. [Relatório](EASTER-EGGS-E-EVENTOS.md).
+
+Entrega das ideias 85–86: [PR #326](https://github.com/talesrobertosn/ortoquestoes/pull/326), com capturas e testes completos.
