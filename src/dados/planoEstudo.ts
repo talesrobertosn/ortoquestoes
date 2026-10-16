@@ -478,6 +478,9 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
       adicionar(principal, capacidade - daMistura, false)
       // Sobra pequena do bloco (até 5): fecha o bloco hoje, em vez de deixar uma questão para amanhã.
       if (principal.ids.length > 0 && principal.ids.length <= 5) { const resto = principal.ids.splice(0); const it = itens.find((x) => x.slug === principal.t.slug && !x.mistura); if (it) { it.n += resto.length; it.ids.push(...resto); daMistura = Math.max(0, daMistura - resto.length) } }
+      // Fim da fila (só a próxima área sobrou): a mistura não passa da proporção do foco que o dia
+      // realmente recebeu; o resto da próxima área entra como foco, não como mistura.
+      if (!semProxima.length) { const foco = itens.find((x) => x.slug === principal.t.slug && !x.mistura)?.n ?? 0; daMistura = Math.min(daMistura, Math.round(foco * MISTURA / (1 - MISTURA))) }
       // Revezando a partir da área do dia; se uma não tiver o bastante, a próxima completa.
       for (let k = 0; k < outras.length && daMistura > 0 && capacidade > 0; k++) {
         const slug = outras[(i + k) % outras.length]
