@@ -291,8 +291,18 @@
   .fc-inimigo > .fc-placa { flex: 1 1 0; }
   .fc-intencao { flex: none; }
   .fc-intencao small { max-width: 60px; overflow-wrap: break-word; }
+  /* sempre duas linhas de altura ("se errar" ou "crítico se errar"): a mesa não pula entre um flashcard e outro */
+  .fc-intencao small { min-height: 2.2em; display: grid; align-content: start; }
+}
+/* celular em pé: a faixa do adversário tem altura mínima, para a mesa não descer ou subir quando
+   entra um adversário de nome mais longo ou de placa mais alta (pulo de layout medido pelo robô) */
+@media (max-width: 640px) and (orientation: portrait) {
+  .fc-inimigo { min-height: 112px; }
 }
 /* celulares estreitos (360 px ou menos): os chefes grandes encolhem um pouco para a placa caber */
 @media (max-width: 374px) {
   .fc-inimigo--chefe > .fc-ator--inimigo { zoom: .8; }
 }
+/* intenção do adversário fora da pergunta: guarda o lugar (sem pulo de layout), sem aparecer */
+.fc-intencao--oculta { visibility: hidden; pointer-events: none; }
+.fc-intencao--oculta * { animation: none !important; }

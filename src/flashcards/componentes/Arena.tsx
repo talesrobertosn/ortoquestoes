@@ -1413,8 +1413,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo, vinda }: { modo: Modo; abrirEs
                   )
                 })()}
               </div>
-              {partida.fase === 'pergunta' && (
-                <div className={`fc-intencao${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}${(intencao.critico || intencao.carregado) && !intencao.bloqueado ? ' fc-intencao--critico' : ''}${intencao.carregado && !intencao.bloqueado ? ' fc-intencao--sopro' : ''}`}
+              {/* na resposta a intenção some sem tirar o lugar: a mesa não sobe 10 px a cada resposta (16/10/2026) */}
+              {(partida.fase === 'pergunta' || partida.fase === 'resposta') && (
+                <div aria-hidden={partida.fase !== 'pergunta' || undefined} className={`fc-intencao${partida.fase !== 'pergunta' ? ' fc-intencao--oculta' : ''}${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}${(intencao.critico || intencao.carregado) && !intencao.bloqueado ? ' fc-intencao--critico' : ''}${intencao.carregado && !intencao.bloqueado ? ' fc-intencao--sopro' : ''}`}
                   title={intencao.bloqueado ? 'O escudo bloqueia o próximo golpe' : `Intenção do adversário: o dano exato que você leva se errar${intencao.carregado ? ` (${intencao.carregado})` : intencao.critico ? ' (golpe crítico)' : ''}${intencao.protecoes.length ? `, já com ${intencao.protecoes.join(' e ')}` : ''}`}>
                   <span className="fc-intencao__gema">{intencao.bloqueado ? <Sprite nome="escudo" className="fc-sprite--icone" /> : <b>{intencao.dano}</b>}</span>
                   <span className="fc-intencao__simbolo" aria-hidden="true"><Sprite nome={intencao.bloqueado ? 'escudo' : intencao.carregado && inimigo.variante === 'basilisco' ? 'cartas' : intencao.carregado && inimigo.queima ? 'chama' : inimigo.envenena ? 'frasco' : inimigo.rouba ? 'bolsa' : intencao.rajada > 1 ? 'espadas' : 'espada'} /></span><small>{intencao.bloqueado ? 'escudo pronto' : intencao.carregado ? 'sopro se errar' : intencao.critico ? 'crítico se errar' : intencao.rajada > 1 ? `${intencao.rajada} mordidas` : 'se errar'}</small>
