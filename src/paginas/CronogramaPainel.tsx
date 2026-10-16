@@ -6,7 +6,7 @@ import { DIA_MINIMO, opcoesDe, ROTULO_PASSADA, TAMANHO_MINI } from '../dados/pla
 import { formatarTempo, type Constancia, type Prontidao } from '../dados/hubCronograma'
 import { corDaArea } from '../dados/coresAreas'
 import { posicaoDaArea } from '../dados/incidencia'
-import { Icone } from '../componentes/Icone'
+import { Icone, type NomeIcone } from '../componentes/Icone'
 import { chaveCivil, diaCivil } from '../util/dia'
 import { fraseAdiantado } from '../dados/frasesAdiantar'
 export { fraseAdiantado, fraseAdiantadoHoje, noDia } from '../dados/frasesAdiantar'
@@ -105,6 +105,8 @@ export interface ItemChecklist {
   progresso?: { feitas: number; total: number }
   acao?: { rotulo: string; href?: string; aoClicar?: () => void }
   opcional?: boolean
+  /** Ícone dos extras ("Se sobrar tempo"), no lugar do número da lista. */
+  icone?: NomeIcone
 }
 
 export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, cor, aviso, adiantar }: {
@@ -145,10 +147,10 @@ export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, co
           ? <a className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} href={botao.href} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</a>
           : <button type="button" className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</button>)}
         {adiantar}
-        {extras.length > 0 && <div className="cp-extras">
-          <p className="cp-extras__titulo">Se sobrar tempo <small>não conta na meta</small></p>
-          <ul className="cp-lista cp-lista--extras">{extras.map((i) => <ItemDaLista key={i.id} item={i} marca="+" />)}</ul>
-        </div>}
+        {extras.length > 0 && <section className="cp-extras" aria-labelledby="cp-extras-titulo">
+          <p className="cp-extras__titulo"><span id="cp-extras-titulo">Se sobrar tempo</span><small>não conta na meta</small></p>
+          <ul className="cp-extras__lista">{extras.map((i) => <ItemExtra key={i.id} item={i} />)}</ul>
+        </section>}
         {calculo.projecao.tetoAtivo && !calculo.naRetaFinal && <p className="cp-hoje__teto"><Icone nome="alerta" tamanho={15} /> A meta subiu o máximo (25% acima da planejada) para não virar maratona. O que não couber sai do fim da fila, a parte de prioridade mais baixa.</p>}
       </div>
     </section>
@@ -170,6 +172,20 @@ function ItemDaLista({ item: i, marca }: { item: ItemChecklist; marca: ReactNode
               </span>
             </li>
   )
+}
+
+/** Um extra: o cartão inteiro é o atalho (ícone, nome, para que serve e o tempo). */
+function ItemExtra({ item: i }: { item: ItemChecklist }) {
+  const feito = i.estado === 'feito'
+  const corpo = <>
+    <span className="cp-extra__icone" aria-hidden="true"><Icone nome={feito ? 'certo' : i.icone ?? 'estrela'} tamanho={18} /></span>
+    <span className="cp-extra__texto"><strong>{i.titulo}</strong><small>{i.texto}</small></span>
+    <span className="cp-extra__acao">{feito ? 'Feito' : <>{i.acao?.rotulo}<Icone nome="direita" tamanho={14} /></>}</span>
+  </>
+  const classe = `cp-extra cp-extra--${i.id}${feito ? ' cp-extra--feito' : ''}`
+  return <li>{!feito && i.acao?.href ? <a className={classe} href={i.acao.href} onClick={i.acao.aoClicar}>{corpo}</a>
+    : !feito && i.acao ? <button type="button" className={classe} onClick={i.acao.aoClicar}>{corpo}</button>
+    : <div className={classe}>{corpo}</div>}</li>
 }
 
 // ─── Adiantar ──────────────────────────────────────────────────────────────
