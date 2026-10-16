@@ -4,7 +4,8 @@ import { JanelaCentral } from '../componentes/JanelaCentral'
 import { recurso } from '../config'
 import { ler } from '../estado/armazenamento'
 import { revisarHoje } from '../estado/revisao'
-import { href, navegar } from '../util/rotas'
+import { href, navegar, usarRota } from '../util/rotas'
+import { ehRotaDoJogo } from '../flashcards/fundo'
 import { calcularEstatisticas, chaveDoDia, type DiaResumido } from '../flashcards/aprendizagem'
 import { corDaArea } from '../dados/coresAreas'
 import { CartaoCronograma, PaginaCronogramaFlashcards, linkSessaoCronograma, usarCronograma } from './CronogramaFlashcards'
@@ -29,6 +30,18 @@ function usarAcervo() {
     return n
   }, [cartas])
   return { cartas, nomes }
+}
+
+/**
+ * Atrás do jogo (pop-up aberto direto em #/flashcards/...), a página é só fundo coberto:
+ * as artes (capa e cartões, ~340 kB) esperam o jogo fechar, para não disputar a rede
+ * com a abertura do jogo. Depois de liberadas, ficam.
+ */
+function usarArtesLiberadas() {
+  const atras = ehRotaDoJogo(usarRota().segmentos)
+  const [liberadas, definir] = useState(!atras)
+  useEffect(() => { if (!atras) definir(true) }, [atras])
+  return liberadas
 }
 
 const estudar = (categoria: string, n?: number, areas: string[] = []) => {
@@ -66,6 +79,7 @@ export function CentralFlashcards() {
     return o === 'fim_sessao' || o === 'fim_partida' ? o : null
   })
   const [convite, definirConvite] = useState(() => deveConvidar())
+  const artes = usarArtesLiberadas()
 
   const contagem = useMemo(() => {
     const v = Object.values(registros)
@@ -84,12 +98,12 @@ export function CentralFlashcards() {
       <Abas atual="central" />
       <section className="cf-heroi">
         <picture className="cf-heroi__arte">
-          <img src={recurso('flashcards/promo/capa-larga.png')} alt="" width={520} height={330} decoding="async" />
+          {artes && <img src={recurso('flashcards/promo/capa-larga.png')} alt="" width={520} height={330} decoding="async" />}
         </picture>
         <div className="cf-heroi__texto">
           <p className="cf-selo"><span className="cf-beta">Beta público</span> Flashcards</p>
           <h1>Treine flashcards<br />de Ortopedia.</h1>
-          <p>Por área, tirados das questões comentadas das provas reais. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
+          <p>Por área, tirados das questões comentadas das provas reais e dos OrtoQuestões Simulados. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
           <div className="cf-heroi__botoes">
             <a className="botao botao--ouro botao--grande" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={18} /> Estudar flashcards</a>
             <a className="botao botao--principal" href={href('/flashcards/cripta')}><Icone nome="raio" tamanho={18} /> Jogar o Torneio</a>
@@ -139,9 +153,9 @@ export function CentralFlashcards() {
       <section aria-labelledby="cf-modos-titulo">
         <h2 id="cf-modos-titulo" className="cf-titulo">Por onde seguir</h2>
         <div className="cf-modos">
-          <CartaoModo arte="biblioteca" titulo="Revisar flashcards" texto="Estudo calmo, sem combate, por assunto ou pelas revisões do dia." destino="/flashcards/biblioteca" acao="Abrir a Biblioteca" />
-          <CartaoModo arte="cripta" titulo="Torneio de Flashcards" texto={`Os mesmos flashcards em forma de jogo: cada acerto é um golpe. Uma jornada que começa pelo que é mais familiar e avança para seus desafios.${rec.andarMaximo ? ` Seu recorde: andar ${rec.andarMaximo}.` : ''}`} destino="/flashcards/entrada" acao="Entrar no Torneio" />
-          <CartaoModo arte="progresso" titulo="Meu desempenho" texto={`${contagem.estudados.toLocaleString('pt-BR')} flashcards únicos estudados neste aparelho e na sua conta.`} destino="/flashcards/desempenho" acao="Ver desempenho" />
+          <CartaoModo artes={artes} arte="biblioteca" titulo="Revisar flashcards" texto="Estudo calmo, sem combate, por assunto ou pelas revisões do dia." destino="/flashcards/biblioteca" acao="Abrir a Biblioteca" />
+          <CartaoModo artes={artes} arte="cripta" titulo="Torneio de Flashcards" texto={`Os mesmos flashcards em forma de jogo: cada acerto é um golpe. Uma jornada que começa pelo que é mais familiar e avança para seus desafios.${rec.andarMaximo ? ` Seu recorde: andar ${rec.andarMaximo}.` : ''}`} destino="/flashcards/entrada" acao="Entrar no Torneio" />
+          <CartaoModo artes={artes} arte="progresso" titulo="Meu desempenho" texto={`${contagem.estudados.toLocaleString('pt-BR')} flashcards únicos estudados neste aparelho e na sua conta.`} destino="/flashcards/desempenho" acao="Ver desempenho" />
         </div>
         <ul className="cf-links">
           <li><a href={href('/ranking?aba=flashcards')}><Icone nome="trofeu" tamanho={18} /><span><strong>Ranking dos flashcards</strong><small>Uma jornada · um ranking</small></span></a></li>
@@ -180,10 +194,10 @@ function PorAssunto({ areas }: { areas: Array<[string, string]> }) {
   )
 }
 
-function CartaoModo({ arte, titulo, texto, destino, acao }: { arte: string; titulo: string; texto: string; destino: string; acao: string }) {
+function CartaoModo({ artes, arte, titulo, texto, destino, acao }: { artes: boolean; arte: string; titulo: string; texto: string; destino: string; acao: string }) {
   return (
     <a className={`cf-modo cf-modo--${arte}`} href={href(destino)}>
-      <img src={recurso(`flashcards/promo/cartao-${arte}.png`)} alt="" width={260} height={150} loading="lazy" decoding="async" />
+      {artes ? <img src={recurso(`flashcards/promo/cartao-${arte}.png`)} alt="" width={260} height={150} loading="lazy" decoding="async" /> : <i className="cf-modo__vaga" aria-hidden="true" />}
       <strong>{titulo}</strong>
       <span>{texto}</span>
       <em>{acao} <Icone nome="direita" tamanho={14} /></em>

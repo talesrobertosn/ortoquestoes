@@ -36,7 +36,7 @@
  * é somada por cima em modo screen e também alimenta o bloom.
  */
 import { recurso } from '../../config'
-import type { Cena } from './pintura'
+import type { Cena } from './ambiente'
 
 type Formato = 'paisagem' | 'retrato'
 export type Paisagem = 'vilarejo' | 'ruinas' | 'vila' | 'campoflorido' | 'praia' | 'estufa'

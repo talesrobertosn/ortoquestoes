@@ -195,6 +195,16 @@
   .fc-arena--batalha .fc-dica { display: none; }
   /* a frente não precisa do rodapé de instruções aqui: a altura vai para a pergunta */
   .fc-arena--batalha .fc-carta:not(.fc-carta--verso) .fc-carta__pe { display: none; }
+  /* Acabamento (16/10/2026): o pop-up ocupa quase a tela toda (antes 80% × 84%, sobrava moldura
+     e faltava mesa) e o painel do herói e o botão emagrecem, para a mão de alternativas ter
+     largura: alternativas longas deixam de quebrar palavra por palavra. */
+  .fc-modal { width: calc(100vw - 28px); height: calc(100dvh - 28px); min-height: 0; }
+  .fc-modal .fc-heroi__dados { width: clamp(170px, 18vw, 200px); padding: 8px 10px; }
+  .fc-modal .fc-principal { min-width: 164px; }
+  .fc-jogador { gap: 10px; }
+  .fc-mao { padding-inline: 0; }
+  .fc-alternativa--longa > span, .fc-alternativa--muito-longa > span { font-size: 12.5px; line-height: 1.18; hyphens: auto; }
+  .fc-inimigo { min-height: 0; }
 }
 
 /* a Biblioteca chega em pedaço à parte: enquanto isso, um aviso calmo no lugar */
@@ -220,3 +230,79 @@
 @keyframes fc-aviso-aparelho { 0% { opacity: 0; transform: translateY(-6px); } 8%, 85% { opacity: 1; transform: none; } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .fc-aviso-aparelho { animation: none; } }
 @media (max-width: 640px) { .fc-aviso-aparelho { top: 52px; font-size: 12px; } }
+
+/* Contador da rota (16/10/2026): Mapa do especialista, Desvio de área e "Jogar o assunto de hoje".
+   Selo na borda de cima da mesa, à direita (fora do título do flashcard e dos selos de família, à esquerda),
+   com a área e quantos flashcards da rota ainda faltam (o da mesa conta). */
+.fc-rota-hud { position: absolute; z-index: 6; top: 0; right: clamp(10px, 3%, 40px); transform: translateY(-58%); margin: 0; display: inline-flex; align-items: center; gap: 6px; max-width: min(92%, 360px);
+  padding: 3px 11px 3px 6px; border-radius: 999px; background: rgba(12, 22, 18, .82); box-shadow: inset 0 0 0 1px rgba(127, 216, 176, .55), 0 2px 8px rgba(0, 0, 0, .4);
+  color: #e6f6ec; font: 700 13px var(--fc-ui); white-space: nowrap; pointer-events: none; font-variant-numeric: tabular-nums; animation: fc-rota-hud-entra .35s ease-out both; }
+.fc-rota-hud--sem { box-shadow: inset 0 0 0 1px rgba(255, 176, 122, .6), 0 2px 8px rgba(0, 0, 0, .4); color: #ffe6d2; }
+.fc-rota-hud .fc-sprite--icone { width: 18px; height: 18px; flex: none; }
+.fc-rota-hud__area { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.fc-rota-hud b { color: #9ff0c8; font-size: 14px; }
+.fc-rota-hud--sem b { color: #ffc89a; }
+.fc-rota-hud small { font-size: 12px; font-weight: 600; opacity: .85; }
+@keyframes fc-rota-hud-entra { from { opacity: 0; transform: translateY(-80%); } }
+@media (prefers-reduced-motion: reduce) { .fc-rota-hud { animation: none; } }
+/* celular em pé: a borda de cima é do adversário ("se errar") e do enfeite do flashcard; o selo vai para o pé
+   da mesa, no chão vazio acima das alternativas */
+@media (max-width: 640px) and (orientation: portrait) {
+  .fc-rota-hud { top: auto; bottom: 8px; right: auto; left: 50%; transform: translateX(-50%); }
+  @keyframes fc-rota-hud-entra-pe { from { opacity: 0; transform: translate(-50%, 4px); } }
+  .fc-rota-hud { animation-name: fc-rota-hud-entra-pe; }
+}
+
+/* ---------- Painel do adversário robusto (16/10/2026) ----------
+   Bug do celular: nos chefes de vida com 4 dígitos (Dragão Rubro 1472/1472, Dragão Ancestral 2280/2280)
+   a largura mínima do painel somada ao transbordo da asa do dragão alargava a coluna da batalha e
+   cortava a borda direita (alternativas e Atacar). Agora a coluna nunca passa da tela (minmax(0, 1fr)
+   em Flashcards.css), a placa encolhe por dentro (consulta de contêiner) e o número da vida fica curto
+   (numeroCompacto em Hud.tsx). */
+.fc-batalha > * { min-width: 0; }
+.fc-placa { container: placa / inline-size; }
+.fc-placa__nome { min-width: 0; }
+.fc-placa__nome strong { min-width: 0; overflow-wrap: break-word; hyphens: auto; }
+.fc-placa .fc-vida { min-width: 0; }
+.fc-placa .fc-vida__trilho { min-width: 32px; }
+.fc-placa__info { min-width: 0; }
+.fc-placa__info .fc-info { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.fc-placa__info .fc-info--andar, .fc-placa__info .fc-info--mais { flex: none; }
+@container placa (max-width: 230px) {
+  .fc-placa .fc-vida { gap: 6px; }
+  .fc-placa .fc-vida b { min-width: 0; font-size: 14px; }
+  .fc-placa .fc-vida b small { font-size: 10.5px; }
+  .fc-placa .fc-info { font-size: 11.5px; padding-inline: 6px; }
+}
+/* estreita demais para "1472/1472": fica só a vida atual (o máximo está no leitor de tela e no painel) */
+/* placa estreita: um selo só (o mais importante) e o "+N"; os outros ficam no painel do adversário */
+@container placa (max-width: 175px) {
+  .fc-placa__info .fc-info:nth-child(n+3):not(.fc-info--mais) { display: none; }
+  .fc-placa__info .fc-info--andar:not(:last-child) { display: none; }
+  .fc-placa__info .fc-info { max-width: calc(100% - 34px); }
+}
+@container placa (max-width: 150px) {
+  .fc-placa .fc-vida b small { display: none; }
+  .fc-placa__nome strong { font-size: 13px; letter-spacing: 0; }
+}
+@media (max-width: 640px) {
+  /* a asa do dragão (transbordo da folha assada) passa por baixo da placa, em vez de empurrá-la */
+  .fc-inimigo > .fc-ator--inimigo { margin-right: calc(var(--ator-lado, 0px) * -0.6) !important; }
+  .fc-inimigo > .fc-placa { flex: 1 1 0; }
+  .fc-intencao { flex: none; }
+  .fc-intencao small { max-width: 60px; overflow-wrap: break-word; }
+  /* sempre duas linhas de altura ("se errar" ou "crítico se errar"): a mesa não pula entre um flashcard e outro */
+  .fc-intencao small { min-height: 2.2em; display: grid; align-content: start; }
+}
+/* celular em pé: a faixa do adversário tem altura mínima, para a mesa não descer ou subir quando
+   entra um adversário de nome mais longo ou de placa mais alta (pulo de layout medido pelo robô) */
+@media (max-width: 640px) and (orientation: portrait) {
+  .fc-inimigo { min-height: 112px; }
+}
+/* celulares estreitos (360 px ou menos): os chefes grandes encolhem um pouco para a placa caber */
+@media (max-width: 374px) {
+  .fc-inimigo--chefe > .fc-ator--inimigo { zoom: .8; }
+}
+/* intenção do adversário fora da pergunta: guarda o lugar (sem pulo de layout), sem aparecer */
+.fc-intencao--oculta { visibility: hidden; pointer-events: none; }
+.fc-intencao--oculta * { animation: none !important; }

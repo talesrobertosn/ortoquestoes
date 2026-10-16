@@ -1,5 +1,5 @@
 import type { Partida } from '../motor/regras'
-import type { Cena } from './pintura'
+import type { Cena } from './ambiente'
 import type { CenaAmbientada } from './cenariosPintados'
 
 /** Só apresentação: não sorteia, escreve ou altera a sala escolhida pelo motor. */

@@ -3,14 +3,17 @@ import type { Flashcard } from '../tipos'
 /**
  * Baralho de demonstração: 12 flashcards tirados de questões reais do acervo e
  * dos comentários delas (o id da questão está em `questao`). Raridade pela
- * incidência do assunto na prova (lendária = prioridade máxima).
+ * incidência do assunto na prova (lendária = prioridade máxima). A área segue o
+ * padrão do acervo (`area`/`areaId` de public/flashcards/indice.json): Trauma
+ * adulto e Quadril, para não criar áreas soltas em Meu desempenho.
  * Até a fábrica (scripts/flashcards/) existir, a Batalha usa só este baralho.
  */
 export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1519-1",
     "questao": "trauma-1519",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do acetábulo",
     "tipo": "Imagem",
     "raridade": "lendaria",
@@ -33,7 +36,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1520-1",
     "questao": "trauma-1520",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do acetábulo",
     "tipo": "Imagem",
     "raridade": "lendaria",
@@ -56,7 +60,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1493-1",
     "questao": "trauma-1493",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do anel pélvico",
     "tipo": "Par confundível",
     "raridade": "epica",
@@ -75,7 +80,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1499-1",
     "questao": "trauma-1499",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Sacro",
     "tipo": "Tabela",
     "raridade": "lendaria",
@@ -94,7 +100,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1526-1",
     "questao": "trauma-1526",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do acetábulo",
     "tipo": "Na prova",
     "raridade": "epica",
@@ -113,7 +120,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1491-1",
     "questao": "trauma-1491",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do anel pélvico",
     "tipo": "Armadilha",
     "raridade": "rara",
@@ -132,7 +140,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-quadril-0668-1",
     "questao": "quadril-0668",
-    "area": "Anatomia",
+    "area": "Quadril",
+    "areaId": "quadril",
     "assunto": "Pelve: ligamentos",
     "tipo": "Anatomia",
     "raridade": "rara",
@@ -155,7 +164,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1529-1",
     "questao": "trauma-1529",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do acetábulo",
     "tipo": "Na prova",
     "raridade": "epica",
@@ -174,7 +184,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1502-1",
     "questao": "trauma-1502",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do anel pélvico",
     "tipo": "Na prova",
     "raridade": "lendaria",
@@ -193,7 +204,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1498-1",
     "questao": "trauma-1498",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fragilidade",
     "tipo": "Classificação",
     "raridade": "rara",
@@ -212,7 +224,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1533-1",
     "questao": "trauma-1533",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do acetábulo",
     "tipo": "Anatomia cirúrgica",
     "raridade": "comum",
@@ -231,7 +244,8 @@ export const BARALHO_DEMO: Flashcard[] = [
   {
     "id": "fc-trauma-1508-1",
     "questao": "trauma-1508",
-    "area": "Trauma",
+    "area": "Trauma adulto",
+    "areaId": "trauma",
     "assunto": "Fratura do anel pélvico",
     "tipo": "Anatomia cirúrgica",
     "raridade": "epica",

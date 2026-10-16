@@ -37,6 +37,7 @@
 .fc-crono-estudo h3 { margin: 0; font: 900 18px/1.2 var(--fc-titulo); letter-spacing: .04em; color: var(--fc-ouro); text-shadow: 0 2px 0 #000; }
 .fc-crono-estudo p { margin: 0; font: 500 14.5px/1.4 var(--fc-ui); color: #e9dcc0; }
 .fc-crono-estudo strong { color: #fff3d6; }
+.fc-crono-estudo p.fc-crono-estudo__sugerido { font-size: 12.5px; color: #cdbf9f; }
 .fc-crono-estudo__ver { justify-self: start; font: 700 13px var(--fc-ui); color: #ffd98a !important; }
 .fc-crono-estudo__botao { min-width: 170px; }
 @media (max-width: 640px) {

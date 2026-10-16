@@ -12,6 +12,12 @@ import { EMBLEMAS_COM_IMAGEM } from '../dados/imagensEmblemas'
 
 /** Três emblemas de Flashcards de amostra no convite para as conquistas. */
 const AMOSTRA = ['fc-andar-21', 'fc-revisao-14', 'fc-lendarios-200'].filter((id) => EMBLEMAS_COM_IMAGEM.has(id))
+/**
+ * Textura do cabeçalho com endereço absoluto: numa variável CSS um url() relativo
+ * ("./ranking/...") é resolvido a partir da folha que usa a variável (assets/), não
+ * do documento; foi o mesmo erro da cortina (CortinaPixels.tsx).
+ */
+const FUNDO_CRIPTA = `url("${typeof document === 'undefined' ? recurso('ranking/podio-cripta.png') : new URL(recurso('ranking/podio-cripta.png'), document.baseURI).href}")`
 const TOTAL_FC = EMBLEMAS.filter((e) => ehFamiliaFlashcards(e.familia) && !e.secreta).length
 
 /** Ranking único, agregado pelo servidor, sem apagar corridas históricas. */
@@ -29,7 +35,7 @@ export function RankingCripta() {
       <a className="rk-secoes__aba" href={href('/ranking?aba=flashcards')} aria-current="page">Flashcards</a>
       <a className="rk-secoes__aba" href={href('/conquistas')}>Conquistas</a>
     </nav>
-    <header className="cf-cabeca" style={{ ['--fundo-cripta' as string]: `url(${recurso('ranking/podio-cripta.png')})` }}><p className="cf-selo">Torneio de Flashcards</p><h1>Até onde o seu conhecimento leva você?</h1><p>Um só ranking. Conta o maior andar alcançado no jogo, conferido pelo servidor.</p></header>
+    <header className="cf-cabeca" style={{ ['--fundo-cripta' as string]: FUNDO_CRIPTA }}><p className="cf-selo">Torneio de Flashcards</p><h1>Até onde o seu conhecimento leva você?</h1><p>Um só ranking. Conta o maior andar alcançado no jogo, conferido pelo servidor.</p></header>
     <section className="cf-bloco" aria-label="Ranking dos flashcards">
       {linhas===undefined?<p role="status">Carregando…</p>:linhas===null?<p role="status">O ranking não respondeu agora. Tente novamente em instantes.</p>:!linhas.length?<p>A primeira posição está livre. Comece sua jornada.</p>:<>
         {linhas.length>=3&&<PodioPixel cena="cripta" titulo="Os que desceram mais fundo" lugares={linhas.slice(0,3).map(l=>({posicao:l.posicao,nome:l.apelido,ehVoce:l.ehVoce,valor:`andar ${l.valor}`,extra:<span className="pdx__extra"><EmblemasFlashcards vitrine={l.emblemas} flashcards={l.emblemasFlashcards} tamanho={24}/></span>}))}/>}

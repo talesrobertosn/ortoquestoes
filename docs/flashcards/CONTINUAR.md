@@ -6,6 +6,50 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Acabamento — 16/10/2026
+
+Retomada de dois agentes interrompidos (trabalho trazido arquivo a arquivo para a base com continuidade e arte nova) e
+fechamento das pendências de 15/10. Sem SQL; não mexe em questões, gabaritos, comentários, preços, limites nem dados.
+
+- **Biblioteca, céu à vista:** a aura de fogo sobe menos (`AuraDeFogo.tsx`, `subir` 2,1–3 → 1,5–2,1), o brilho somado em
+  `screen` baixou e o alto da tela tem máscara (`.fc-clima > .fc-aura`, `--clima-mascara`); no celular em pé a máscara
+  esmaece a faixa do meio, onde fica o janelão. A Glória mantém raios e ouro, mais fracos no céu.
+- **Entrada no computador:** cartões em faixa e botões do cronograma lado a lado; cabe sem rolar em 1400×860 e
+  1280×720 (no 1280×720 o palco encolhe e desce 16 px para o penacho não encostar no subtítulo).
+- **Ideia 81:** o baralho de demonstração usa `Trauma adulto`/`trauma` e `Quadril`/`quadril`; Meu desempenho só lista
+  áreas do índice (`aprendizagem.ts`). Teste em `testar_aprendizagem.mjs`.
+- **Central sem disputar a rede:** aberta por trás do jogo, a Central guarda o lugar das capas e só as baixa quando o
+  jogo fecha, uma vez (`usarArtesLiberadas`). Abertura do jogo: 0 capas (antes 4, ~400 kB).
+- **Ranking:** `--fundo-cripta` com endereço absoluto (mesmo erro da cortina).
+- **Pintura à parte:** `efeitos/ambiente.ts` (ambiente, tipos, luzes, tabuleiro) fica no jogo; `pintura.ts` +
+  `tabuleiros.ts` vão para `pintorCenas` (51 kB) por `import()` em `Cenario.tsx`, pedido junto com o acervo.
+  FlashcardsJogo 322,5 → 273,2 kB.
+- **Texto da Biblioteca:** o número sai do acervo carregado: "5.571 flashcards das questões comentadas: 4.533 das provas
+  reais e 1.038 dos OrtoQuestões Simulados" (o "4.324 das provas reais" era antigo e contava simulados).
+- **Seguir cronograma sem plano salvo:** o cartão aparece com o plano sugerido (o mesmo da central) e agora diz
+  "Plano sugerido: ... 20 novos por dia" com o atalho "Ajustar o plano".
+- **Contador da rota** (`rotaNaTela.ts`): selo "Joelho 7 faltam" na borda de cima da mesa, à direita (no celular em pé,
+  no pé da mesa). O flashcard da mesa conta enquanto está à vista. Teste em `testar_cronograma_sequencia_flashcards.mjs`.
+- **1024×640:** pop-up quase em tela cheia, painel do herói e botão mais estreitos, alternativas longas em 12,5 px.
+- **Bug do painel do chefe no celular:** coluna da batalha em `minmax(0, 1fr)`, placa com consulta de contêiner,
+  vida curta (`numeroCompacto`: até 9.999 inteiro, depois "12,4 mil"; sem "/máximo" quando a placa é estreita), selos
+  com reticências e um só quando a placa é estreita, asa do dragão por baixo da placa, chefes 20% menores até 374 px.
+  Conferido de 320 a 1400 px com Dragão Rubro 1472 e 2280, Dragão de Ossos, Rainha do Cimento e adversários pequenos.
+- **Fluidez (robô):** `scripts/flashcards/testar_percurso.mjs` joga 8 andares em 1400×860, 1280×720, 390×844 e
+  844×390 (acerta quase sempre, escolhe portas, loja, salas) e acusa exceção, trava, clique morto, alvo coberto,
+  texto cortado, coluna maior que a tela e CLS visível > 0,1 (o que muda sob portas, loja, apresentação e cortina é
+  contado à parte). Achados e correções: a mesa subia 10 px a cada resposta no celular (a intenção do adversário
+  sumia; agora fica oculta guardando o lugar, e o rótulo tem sempre duas linhas); faixa do adversário com altura
+  mínima no celular em pé; exceção `arc` com raio negativo nos efeitos (`palco.ts`). Resultado final: 8 andares nos
+  quatro formatos, CLS visível 0,001–0,035, nenhuma imagem acima de 1,5 s, nenhum clique morto.
+- **Primeira pergunta jogável** (390×844, CPU 4×, build de produção, mediana de 7): 2,26 s → 2,19 s; maior tarefa
+  456 → 421 ms; tarefas longas somadas 1,56 → 1,42 s; bytes na abertura 2,34 → 1,54 MB.
+- **Testes:** `npm test`, `npx tsc --noEmit`, `npm run build`, `testar_fluidez.mjs`, `testar_continuidade.mjs` (agora
+  acha o Chromium em `/opt/pw-browsers/chromium` sozinho) e `testar_percurso.mjs`. Capturas em
+  `/tmp/claude-0/capturas-acabamento/`.
+- **Pendências:** 1400×860 ainda tem um pulo pequeno (CLS 0,012) do rodapé do herói ao entrar a recompensa; o selo
+  "Fúria · dano ×1,5" fica com reticências no celular quando o chefe tem nome longo.
+
 ## Continuidade entre aparelhos — 15/10/2026, noite
 
 Bug do Tales: "A continuidade do modo Cripta não é igual entre um computador e outro. No notebook eu estava no

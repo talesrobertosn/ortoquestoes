@@ -1,4 +1,4 @@
-import { lembrarFundo, rotaDoFundo } from './flashcards/fundo'
+import { ehRotaDoJogo, lembrarFundo, rotaDoFundo } from './flashcards/fundo'
 import { lazy, Suspense, useEffect, useRef, type ReactNode } from 'react'
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
@@ -93,9 +93,6 @@ const TITULOS: Record<string, string> = {
   '/flashcards/torre': 'Torre do Título | Orto Questões',
   '/flashcards/biblioteca': 'Biblioteca de flashcards | Orto Questões',
 }
-
-/** Central, desempenho e cronograma dos flashcards são páginas do site; o resto é o jogo em tela cheia. */
-const PAGINAS_DO_SITE_FLASHCARDS = [undefined, 'desempenho', 'cronograma']
 
 /** A página de uma rota (o App desenha a do site e, por cima, a do jogo). */
 function paginaDaRota(rota: Rota): ReactNode {
@@ -212,7 +209,7 @@ function paginaDaRota(rota: Rota): ReactNode {
 
 /** Rotas do jogo dos flashcards: abrem como pop-up por cima do site. */
 function ehJogo(rota: Rota) {
-  return rota.segmentos[0] === 'flashcards' && !PAGINAS_DO_SITE_FLASHCARDS.includes(rota.segmentos[1])
+  return ehRotaDoJogo(rota.segmentos)
 }
 
 export function App() {
