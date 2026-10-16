@@ -1,0 +1,173 @@
+/* Calendário do cronograma (16/10/2026): o plano num mês de computador, de segunda a domingo.
+   Pop-up grande no computador (grade + detalhe ao lado); tela cheia no celular (detalhe embaixo).
+   Estados iguais aos do resto do cronograma: feito (verde ✓), hoje (dourado), folga (hachurado),
+   atrasado (laranja), marco (dourado tracejado), reta final (véu dourado). */
+
+.cc { position: fixed; inset: 0; z-index: 1100; display: grid; place-items: center; padding: 1rem; }
+.cc-veu { position: absolute; inset: 0; border: 0; padding: 0; background: rgba(8, 24, 22, 0.62); backdrop-filter: blur(4px); cursor: default; animation: cc-veu 0.2s ease-out; }
+.cc-janela { position: relative; display: grid; grid-template-rows: auto minmax(0, 1fr); width: min(1180px, 100%); max-height: calc(100dvh - 2rem); border-radius: 20px; background: var(--fundo); color: var(--texto); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); overflow: hidden; animation: cc-entra 0.26s cubic-bezier(0.2, 0.8, 0.2, 1); }
+@keyframes cc-veu { from { opacity: 0; } }
+@keyframes cc-entra { from { opacity: 0; transform: translateY(14px) scale(0.985); } }
+
+/* ── Topo: mês, resumo e navegação ── */
+.cc-topo { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 0.6rem 1rem; padding: 1rem 1.25rem 0.9rem; background: var(--superficie); border-bottom: 1px solid var(--traco); }
+.cc-topo__titulo { min-width: 0; }
+.cc-topo__selo { display: flex; align-items: center; gap: 0.35rem; margin: 0; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--verdete); }
+.cc-topo h2 { margin: 0.15rem 0 0; font-family: var(--fonte-marca); font-size: clamp(1.45rem, 3vw, 1.9rem); line-height: 1.1; letter-spacing: -0.01em; }
+.cc-topo__resumo { display: flex; flex-wrap: wrap; gap: 0.15rem 0.9rem; margin: 0.25rem 0 0; font-size: 0.8rem; color: var(--texto-2); }
+.cc-topo__resumo b { color: var(--texto); }
+.cc-nav { display: flex; align-items: center; gap: 0.35rem; }
+.cc-nav__botao, .cc-fechar { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--traco); background: var(--superficie-2); color: var(--texto); cursor: pointer; transition: background 0.15s, border-color 0.15s; }
+.cc-nav__botao:hover:not(:disabled), .cc-fechar:hover { border-color: var(--verdete); color: var(--verdete); }
+.cc-nav__botao:disabled { opacity: 0.35; cursor: default; }
+.cc-nav__hoje { min-height: 44px; padding: 0 1rem; border-radius: 999px; border: 1px solid var(--traco); background: var(--superficie-2); color: var(--verdete); font: inherit; font-size: 0.85rem; font-weight: 800; cursor: pointer; }
+.cc-nav__hoje:hover { border-color: var(--verdete); }
+.cc-fechar { margin-left: 0.4rem; }
+
+/* ── Corpo: grade e detalhe ── */
+.cc-corpo { display: grid; grid-template-columns: minmax(0, 1fr) 21rem; gap: 1.1rem; align-items: start; padding: 1rem 1.25rem 1.25rem; overflow-y: auto; overscroll-behavior: contain; }
+.cc-mes { display: grid; gap: 0.4rem; min-width: 0; }
+.cc-semana, .cc-grade { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.cc-semana li { padding: 0 0.4rem; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
+.cc-semana li:nth-child(n + 6) { color: color-mix(in srgb, var(--texto-2) 70%, transparent); }
+.cc-grade--frente { animation: cc-frente 0.24s ease-out; }
+.cc-grade--tras { animation: cc-tras 0.24s ease-out; }
+@keyframes cc-frente { from { opacity: 0; transform: translateX(18px); } }
+@keyframes cc-tras { from { opacity: 0; transform: translateX(-18px); } }
+
+.cc-dia { min-width: 0; }
+.cc-dia--vazio { min-height: 6.6rem; border-radius: 12px; background: color-mix(in srgb, var(--superficie-2) 40%, transparent); }
+.cc-dia > button { position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 0.25rem; width: 100%; height: 100%; min-height: 6.6rem; padding: 0.45rem 0.5rem 0.7rem; border: 1px solid var(--traco); border-radius: 12px; background: var(--superficie); color: inherit; font: inherit; text-align: left; cursor: pointer; overflow: hidden; transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease; }
+.cc-dia > button:hover:not(:disabled) { border-color: var(--traco-forte); transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
+.cc-dia > button:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
+.cc-dia > button:disabled { cursor: default; }
+.cc-dia__topo { display: flex; align-items: center; gap: 0.3rem; min-height: 1.3rem; }
+.cc-dia__num { font-family: var(--fonte-marca); font-size: 0.98rem; line-height: 1; }
+.cc-dia__hoje { margin-left: auto; padding: 0.08rem 0.4rem; border-radius: 999px; background: var(--cp-agora); color: #fff; font-size: 0.6rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.cc-dia__selo { display: grid; place-items: center; width: 1.05rem; height: 1.05rem; margin-left: auto; border-radius: 50%; font-size: 0.7rem; line-height: 1; }
+.cc-dia__selo--feito { background: var(--cp-feito); color: #fff; }
+.cc-dia__selo--marco { color: var(--ouro-texto); background: var(--ouro-veu); }
+.cc-dia__selo + .cc-dia__selo, .cc-dia__hoje + .cc-dia__selo { margin-left: 0.15rem; }
+.cc-dia__areas { display: grid; gap: 0.12rem; min-width: 0; }
+.cc-dia__area { display: flex; align-items: center; gap: 0.3rem; min-width: 0; font-size: 0.72rem; font-weight: 650; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cc-dia__area i { flex: none; width: 0.55rem; height: 0.55rem; border-radius: 2px; }
+.cc-dia__area > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.cc-dia__area--mais { color: var(--texto-2); font-weight: 700; }
+.cc-dia__marco { display: block; font-size: 0.64rem; font-weight: 800; line-height: 1.2; color: var(--ouro-texto); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cc-dia__rodape { display: flex; align-items: baseline; gap: 0.3rem; margin-top: auto; }
+.cc-dia__rodape em { font-style: normal; font-size: 0.72rem; font-weight: 800; color: var(--texto-2); white-space: nowrap; }
+.cc-dia__rodape s { font-size: 0.66rem; font-weight: 700; color: var(--texto-2); }
+.cc-dia__faixa { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; }
+
+/* Estados */
+.cc-dia--feito > button { background: color-mix(in srgb, var(--cp-feito) 7%, var(--superficie)); }
+.cc-dia--feito .cc-dia__rodape em, .cc-dia--adiantado .cc-dia__rodape em, .cc-dia--com-adiantado .cc-dia__rodape em { color: var(--cp-feito); }
+.cc-dia--feito .cc-dia__faixa, .cc-dia--parcial .cc-dia__faixa, .cc-dia--adiantado .cc-dia__faixa { opacity: 0.55; }
+.cc-dia--parcial .cc-dia__rodape em, .cc-dia--atrasado .cc-dia__rodape em { color: var(--cp-atrasado); }
+.cc-dia--atrasado > button { background: var(--superficie-2); }
+.cc-dia--hoje > button { background: var(--cp-agora-veu); border-color: var(--cp-agora); box-shadow: inset 0 0 0 1px var(--cp-agora); }
+.cc-dia--hoje .cc-dia__rodape em { color: var(--cp-agora); }
+.cc-dia--folga > button { background: repeating-linear-gradient(135deg, var(--superficie-2) 0 6px, color-mix(in srgb, var(--traco) 70%, transparent) 6px 12px); }
+.cc-dia--folga .cc-dia__rodape em { color: var(--texto-2); font-weight: 700; }
+.cc-dia--reta > button { background: color-mix(in srgb, #f4cf7c 16%, var(--superficie)); }
+.cc-dia--reta .cc-dia__rodape em { color: var(--ouro-texto); }
+.cc-dia--prova > button { background: linear-gradient(140deg, #f4cf7c, #c9952f); border: 2px dashed #8a6416; color: #3b2604; }
+.cc-dia--prova .cc-dia__rodape em { color: #3b2604; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.cc-dia--marco:not(.cc-dia--hoje):not(.cc-dia--prova) > button { border: 2px dashed var(--cp-marco); }
+.cc-dia--fora > button { opacity: 0.35; background: transparent; }
+.cc-dia--selecionado > button, .cc-dia--selecionado > button:hover:not(:disabled) { box-shadow: 0 0 0 2px var(--fundo), 0 0 0 4px var(--verdete); }
+
+.cc-legenda { margin-top: 0.35rem; }
+.cc-legenda__feito { background: var(--cp-feito); }
+.cc-legenda__hoje { background: var(--cp-agora-veu); border: 2px solid var(--cp-agora); }
+.cc-legenda__marco { border: 2px dashed var(--cp-marco); }
+.cc-legenda__reta { background: color-mix(in srgb, #f4cf7c 45%, var(--superficie)); }
+
+/* ── Detalhe do dia ── */
+.cc-detalhe { position: sticky; top: 0; display: grid; gap: 0.6rem; padding: 1rem 1.05rem 1.1rem; border-radius: 16px; background: var(--superficie); border: 1px solid var(--traco); border-top: 5px solid var(--cor-area, var(--verdete)); animation: cc-detalhe 0.22s ease-out; scroll-margin-top: 0.5rem; }
+@keyframes cc-detalhe { from { opacity: 0.4; transform: translateY(6px); } }
+.cc-detalhe--folga { border-top-color: var(--traco-forte); }
+.cc-detalhe--reta, .cc-detalhe--prova { border-top-color: #e0b04a; }
+.cc-detalhe--hoje { border-color: var(--cp-agora); }
+.cc-detalhe__data { display: flex; align-items: center; gap: 0.4rem; margin: 0; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
+.cc-detalhe__agora { padding: 0.06rem 0.45rem; border-radius: 999px; background: var(--cp-agora); color: #fff; font-size: 0.62rem; }
+.cc-detalhe h3 { margin: 0; font-family: var(--fonte-marca); font-size: 1.3rem; line-height: 1.15; }
+.cc-detalhe__sub { margin: 0; font-size: 0.84rem; line-height: 1.45; color: var(--texto-2); }
+.cc-verde { color: var(--cp-feito); }
+.cc-detalhe__progresso { position: relative; display: block; margin: 0; height: 1.4rem; border-radius: 999px; background: color-mix(in srgb, var(--cp-agora) 16%, var(--superficie-2)); overflow: hidden; }
+.cc-detalhe__progresso span { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: color-mix(in srgb, var(--cp-agora) 55%, transparent); }
+.cc-detalhe__progresso b { position: relative; display: block; padding: 0 0.7rem; font-size: 0.74rem; line-height: 1.4rem; }
+.cc-detalhe__lista { display: grid; margin: 0; padding: 0; list-style: none; }
+.cc-detalhe__item { display: grid; grid-template-columns: 0.7rem minmax(0, 1fr) auto; gap: 0.6rem; align-items: start; padding: 0.55rem 0; border-top: 1px solid var(--traco); }
+.cc-detalhe__item:first-child { border-top: 0; }
+.cc-detalhe__item > i { width: 0.7rem; height: 0.7rem; margin-top: 0.3rem; border-radius: 3px; background: var(--traco-forte); }
+.cc-detalhe__item strong { display: block; font-size: 0.9rem; line-height: 1.3; }
+.cc-detalhe__item small { display: block; margin-top: 0.1rem; font-size: 0.76rem; line-height: 1.35; color: var(--texto-2); }
+.cc-detalhe__item em { font-style: normal; font-size: 0.76rem; font-weight: 750; color: var(--texto-2); white-space: nowrap; }
+.cc-detalhe__item--extra { opacity: 0.8; }
+.cc-detalhe__item--extra > i { background: transparent; border: 2px dashed var(--traco-forte); }
+.cc-detalhe__item--marco > i { background: transparent; border: 2px dashed var(--cp-marco); }
+.cc-detalhe__item--marco strong { color: var(--ouro-texto); }
+.cc-detalhe__chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.3rem; }
+.cc-detalhe__chips span { padding: 0.12rem 0.5rem; border-radius: 999px; font-size: 0.7rem; font-weight: 650; background: var(--superficie-2); color: var(--texto-2); }
+.cc-detalhe__total { margin: 0; font-size: 0.84rem; color: var(--texto-2); }
+.cc-detalhe__total b { color: var(--texto); }
+.cc-detalhe__ok { display: flex; align-items: center; gap: 0.4rem; margin: 0; padding: 0.6rem 0.75rem; border-radius: var(--raio-controle); background: color-mix(in srgb, var(--cp-feito) 12%, var(--superficie)); color: var(--cp-feito); font-weight: 750; font-size: 0.86rem; }
+.cc-detalhe__nota { margin: 0; padding: 0.6rem 0.75rem; border-radius: var(--raio-controle); background: var(--superficie-2); font-size: 0.78rem; line-height: 1.45; color: var(--texto-2); }
+.cc-detalhe .cp-botao:disabled { opacity: 0.6; cursor: default; }
+
+/* Botão que abre o calendário (no cronograma). */
+.cc-abrir { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 44px; padding: 0 1rem; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--verdete) 40%, var(--traco)); background: var(--superficie); color: var(--verdete); font: inherit; font-size: 0.86rem; font-weight: 800; letter-spacing: 0; text-transform: none; cursor: pointer; transition: background 0.15s, border-color 0.15s, transform 0.15s; }
+.cc-abrir:hover { background: var(--verdete-veu); border-color: var(--verdete); }
+.cc-abrir:active { transform: translateY(1px); }
+.cc-abrir--largo { width: 100%; }
+
+/* ── Celular e tablet: tela cheia, detalhe embaixo da grade ── */
+@media (max-width: 52rem) {
+  .cc { padding: 0; place-items: stretch; }
+  .cc-janela { width: 100%; height: 100dvh; max-height: none; border-radius: 0; animation-name: cc-sobe; }
+  @keyframes cc-sobe { from { opacity: 0; transform: translateY(28px); } }
+  /* Topo compacto: mês e botões numa linha, o resumo embaixo. */
+  .cc-topo { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.25rem 0.5rem; align-items: center; padding: calc(0.6rem + env(safe-area-inset-top)) 0.75rem 0.6rem; }
+  .cc-topo__titulo { display: contents; }
+  .cc-topo__selo { display: none; }
+  .cc-topo h2 { grid-column: 1; grid-row: 1; margin: 0; font-size: 1.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cc-de { display: none; }
+  .cc-nav__botao, .cc-fechar { width: 42px; height: 42px; }
+  .cc-nav { grid-column: 2; grid-row: 1; gap: 0.25rem; }
+  .cc-nav__hoje { padding: 0 0.75rem; }
+  .cc-fechar { margin-left: 0.15rem; }
+  .cc-topo__resumo { grid-column: 1 / -1; grid-row: 2; margin: 0; font-size: 0.76rem; }
+  .cc-corpo { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 0.75rem 0.6rem calc(1.5rem + env(safe-area-inset-bottom)); }
+  .cc-detalhe { position: static; }
+}
+@media (max-width: 40rem) {
+  .cc-semana, .cc-grade { gap: 4px; }
+  .cc-semana li { padding: 0; text-align: center; font-size: 0.62rem; letter-spacing: 0.04em; }
+  .cc-dia--vazio { min-height: 4.4rem; }
+  .cc-dia > button { min-height: 4.4rem; align-items: center; gap: 0.2rem; padding: 0.35rem 0.1rem 0.55rem; border-radius: 10px; text-align: center; }
+  .cc-dia__topo { justify-content: center; min-height: 1.1rem; }
+  .cc-dia__num { font-size: 0.9rem; }
+  .cc-dia__hoje { display: none; }
+  .cc-dia__selo { position: absolute; top: 3px; right: 3px; width: 0.85rem; height: 0.85rem; margin: 0; font-size: 0.55rem; }
+  .cc-dia__selo + .cc-dia__selo { top: auto; bottom: 8px; }
+  .cc-dia__selo svg { width: 9px; height: 9px; }
+  /* No celular a célula mostra só a cor das áreas (pontos) e o número; o nome fica no detalhe. */
+  .cc-dia__areas { display: flex; justify-content: center; gap: 2px; }
+  .cc-dia__area { font-size: 0; gap: 0; }
+  .cc-dia__area i { width: 0.5rem; height: 0.5rem; border-radius: 50%; }
+  .cc-dia__area--mais, .cc-dia__marco { display: none; }
+  .cc-dia__rodape { justify-content: center; }
+  .cc-dia__rodape em > span { display: none; }
+  .cc-dia__rodape em::after { content: attr(data-curto); font-size: 0.68rem; }
+  .cc-dia__rodape s { display: none; }
+  .cc-dia--prova .cc-dia__rodape em::after { font-size: 0.58rem; }
+  .cc-dia__faixa { height: 4px; }
+  .cc-legenda { font-size: 0.68rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cc-veu, .cc-janela, .cc-grade--frente, .cc-grade--tras, .cc-detalhe { animation: none; }
+  .cc-dia > button, .cc-abrir, .cc-nav__botao, .cc-fechar { transition: none; }
+  .cc-dia > button:hover:not(:disabled) { transform: none; }
+}
