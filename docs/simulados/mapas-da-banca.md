@@ -2338,3 +2338,114 @@ a 33 é a primeira página do capítulo 18 (Principles of Mangled Extremity Mana
   antes da fixação e haste fresada.
 - **Pendências:** síndrome crônica de esforço, criança (3 A, iatrogenia em 61% sem fratura), mão (10
   compartimentos), deltoide e paciente encontrado caído (24 horas) ficaram fora do lote.
+
+## Fraturas e luxações do tálus (engenharia reversa em 16/10/2026; Rockwood cap. 66)
+
+**Recorte.** `mapear_banca.py` com regex de tálus, talar, astrágalo, HAWKINS, CANALE, subtalar,
+peritalar, snowboard, trigonum e talonavicular, subtema "Fraturas do tálus", temas Trauma, Pé e
+tornozelo, Pediatria e Ortopedia geral: 104 candidatos (98 de TEOT/TARO com quatro alternativas),
+quase todos de calcâneo, coalizão, pé plano, CHARCOT e entorse. Depois da leitura, **13 itens são de
+tálus** (mais 2 cópias): 2025 (1), 2024 (1), 2023 (1), 2022 (1), 2021 (1), 2020 (1), 2019 (1),
+2018 (2, um pediátrico), 2016 (1), 2011 (1), 2008 (1 com cópia, mais 1 sem gabarito em que o colo
+do tálus é distrator) e 1 sem ano (com cópia em pe-tornozelo). Cai uma vez por prova, todo ano,
+desde 2018. Enunciado mediano de 93 caracteres e alternativa de 20; termina em dois-pontos ou palavra
+(um em interrogação, TARO 2008). Uma imagem (TEOT 2025), nenhum caso clínico, três pares 2 por 2
+(TEOT 2023, TARO 2018 e TEOT 2025). Gabarito do recorte: A2, B5, C6, D0. Nenhuma questão de
+TEOT/TARO sobre luxação subtalar. Simulados já existentes: `pe-tornozelo-0422` (artéria do canal
+do tarso e tibial posterior) e `pe-tornozelo-0395` (inserção do talofibular posterior), do lote de
+anatomia do Netter. Nenhum lote dedicado ao capítulo 66.
+
+**Fatos carimbados (com prova e ano):**
+- **Sinal de HAWKINS e tempo da necrose**: reabsorção linear subcondral no domo, indicativa de
+  integridade vascular, na 6ª a 8ª semana (TARO 2021, `trauma-0080`); diagnóstico radiográfico da
+  osteonecrose a partir de 6 a 8 semanas (TARO 2016, `trauma-0118`); seguimento mínimo de 36 meses
+  na fratura desviada operada (TEOT 2024, `trauma-0562`). Três provas: o fato mais reciclado.
+- **Incidência de CANALE e KELLY**: pronação de 15 graus e raio a 75 graus, com flexão plantar
+  máxima (TARO 2018, `trauma-0051`); 75 graus com o horizontal e 15 graus de rotação medial (TEOT
+  2023, `trauma-0319`). BRODEN aparece nas provas de calcâneo (TARO 2010 e 2022, faceta posterior) e
+  na instabilidade subtalar (TEOT 2024, `pe-tornozelo-0177`).
+- **Processo lateral**: a "snowboarder" é do processo lateral (TARO 2019, `trauma-0036`); mecanismo
+  de dorsiflexão, rotação lateral, carga axial e eversão (TEOT 2022, `trauma-0202`); na criança,
+  mecanismo semelhante ao da entorse em inversão (TARO 2018, `pediatria-0626`, outro livro).
+- **Classificação**: colo do tálus HAWKINS III em radiografia, em par localização e tipo (TEOT 2025,
+  `trauma-0764`).
+- **Epidemiologia e associadas**: maléolo medial como a fratura mais associada à do colo (TARO 2008,
+  `trauma-0314` e `trauma-0955`, cópia, em interrogação); calcâneo como osso do tarso mais fraturado
+  (TARO 2020, `trauma-0010`).
+- **Acesso**: anteromedial indicado na fratura desviada do colo (TARO 2011, `trauma-0861`).
+- **Vascularização**: artéria do canal do tarso é ramo da tibial posterior (sem ano, `pe-tornozelo-0096`,
+  com cópia em `trauma-0304`).
+
+**Tendência.** De 2018 para cá, uma questão por prova, alternando três blocos: imagem e
+incidência (CANALE em 2018 e 2023, HAWKINS em imagem em 2025), necrose e seu tempo (2016, 2021,
+2024) e processo lateral (2019, 2022). Sumiram a pergunta de acesso (2011) e a de fratura associada
+(2008). A estreia da imagem em 2025 e o par localização e tipo apontam para mais classificação.
+Luxação subtalar, corpo, cabeça, processo posterior, VALLIER e técnica de fixação ainda não caíram.
+
+**Forma.** "Na fratura do tálus...", "Na avaliação radiográfica da fratura do tálus...", "Na fratura
+do processo lateral do tálus...", "Na osteonecrose após fratura-luxação do tálus...". Enunciado de
+80 a 130 caracteres; alternativas curtas (um tempo, um local, um tipo) ou pares de posição (graus
+com rotação; plantar ou dorsal com pronação ou supinação; colo ou corpo com HAWKINS II ou III).
+Epônimos em caixa alta: HAWKINS, CANALE, KELLY, BRODEN.
+
+**Como o examinador pensa.** Pergunta o número do livro ligado a uma decisão (6 a 8 semanas, 36
+meses, 15 e 75 graus), o local (processo lateral, colo), o tipo da classificação na imagem e o
+"mais associado". Nos pares cruza ângulo com rotação (75 ou 45 graus com rotação medial ou lateral),
+flexão com pronação, local com tipo. Os distratores vêm do mesmo capítulo ou do vizinho: 10 a 12
+semanas (fim da restrição de carga) contra 6 a 8; 12 e 24 meses contra 36; 45 graus contra 75;
+supinação contra pronação; processo posterior e medial contra lateral; corpo contra colo; calcâneo
+e pilão contra maléolo. Gabarito concentrado em B e C (nenhum D no recorte).
+
+**Divergências e lacunas.**
+- CANALE e KELLY: o TARO 2018 descreve flexão plantar máxima; o capítulo 66 descreve o pé plantígrado
+  sobre a mesa ("75 degrees to the perpendicular"), e a figura 66-11 mostra o joelho fletido com a
+  planta apoiada e o ângulo de 75 graus marcado em relação à mesa. Os números 15 e 75 coincidem em
+  todas as versões; não cobrar a posição do tornozelo.
+- BRODEN: o capítulo descreve as imagens sequenciais em 10, 20, 30 e 40 graus "de flexão plantar",
+  com rotação interna de 30 a 45 graus; não cobrar o número da série.
+- TARO 2008 (maléolo medial como a mais associada ao colo): o capítulo não separa o maléolo medial;
+  dá tornozelo 43% e calcâneo 28% para o tálus em geral e 19% a 43% de fraturas maleolares (mediais
+  e laterais). A gêmea cobrou a ordem do capítulo e citou a prova.
+- TEOT 2022 (processo lateral com rotação lateral): o capítulo cita dois estudos de cadáver, um com
+  eversão e dorsiflexão e outro com rotação externa e inversão, sempre em dorsiflexão. Cobrar a
+  dorsiflexão com eversão, que é a frase principal.
+- O capítulo traz dois números de frequência das fraturas do corpo (47% numa série inglesa como a
+  mais comum de todas; 13% a 20% das lesões do tálus em outra parte) e diz, na classificação, que a
+  do colo é a mais comum: não perguntar qual região mais quebra.
+- Necrose: momento de detecção pela RM aparece como "segunda semana" e "3 semanas"; perguntar só que
+  a RM é o exame mais sensível.
+- Lacunas com cara de prova: VALLIER IIA e IIB (nenhum caso contra 25%); necrose do tipo I até 13%,
+  do II 42% (HAWKINS) e 50% (CANALE), do III e IV 51% a 75%; OTA 81-B1, B2 e B3; tipo II como o mais
+  comum; colo desviado 15 a 20 graus para medial; colo cai em dorsiflexão e varo; 2 mm de
+  SANGEORZAN; varo com antepé supinado (PETERSON 32%, LORENTZEN 28%); placa lateral e parafuso
+  medial de posição; dois acessos com ponte de 5 a 7 cm; osteotomia do maléolo medial preserva o
+  deltoide e seu ramo arterial; região posterolateral do domo mais acometida; RM mais sensível;
+  necrose até 36 meses e colapso em equinovaro com artrodese tibiotalocalcaneana; pseudartrose de
+  2,5% e retardo acima de 6 meses; artrose de 46% a 97%; processo lateral com fragmento maior que 1
+  cm; processo posterior em flexão plantar extrema com o flexor longo do hálux entre os tubérculos
+  e os trigonum em 50%; tálus extruso com reimplante (SMITH, 27 casos) e espaçador de cimento com
+  MASQUELET; luxação subtalar medial em cerca de 75%, "pé do basquete" de GRANTHAM, bloqueio da
+  lateral pelo tibial posterior, falha da redução fechada de 10% e 15% a 20%, necrose de 0% a 10%
+  nas fechadas e até 50% nas expostas; fio de 2,0 mm para fixar a subtalar instável.
+
+**Destino.** Tema Trauma, subtema "Fraturas do tálus e do calcâneo", o mesmo das oficiais
+(`trauma-0764`, `trauma-0562`, `trauma-0319`). Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 66** (Fractures and Dislocations of the Talus; Sanders e Inculet):
+`trauma-1607` a `trauma-1618`, 12 questões, 2 figuras (HAWKINS II em perfil,
+figura 66-16B ampliada; posicionamento de CANALE, figura 66-11), 1 caso clínico, gabarito
+A3/B3/C3/D3, mediana do comentário de 4.590 caracteres, cada comentário fechado com "Por que esta
+questão foi criada".
+- **Gêmeas dos carimbados:** HAWKINS II em imagem com par articulação e tipo (TEOT 2025); sinal de
+  HAWKINS em par tempo e significado (TARO 2016 e 2021); RM e domo posterolateral (TEOT 2024, 36
+  meses); CANALE contra BRODEN pela finalidade, com a figura do posicionamento (TARO 2018, TEOT 2023,
+  TEOT 2024); tornozelo 43% e calcâneo 28% (TARO 2008 e 2020); processo lateral com corte de 1 cm e
+  processo posterior em espelho com o flexor longo do hálux (TARO 2019, TEOT 2022, TEOT 2024);
+  ramo deltoide e osteotomia do maléolo medial (sem ano e TARO 2011); caso clínico de HAWKINS III
+  com falha da redução fechada (TEOT 2025, conduta).
+- **Lacunas:** VALLIER IIA e IIB; placa lateral primeiro e parafuso medial de posição contra o varo;
+  luxação subtalar medial em 75% com bloqueio da lateral pelo tibial posterior.
+- **Pendências:** a posição do tornozelo na incidência de CANALE (TARO 2018) e o maléolo medial
+  isolado (TARO 2008) não têm frase equivalente no capítulo; ficaram explicados no comentário, sem
+  questão própria. Tálus extruso, cabeça do tálus, retardo e pseudartrose, artrose, prótese total do
+  tálus e artrodese de BLAIR ficaram fora para manter a média de 10 a 12 do pedido de 16/10/2026.

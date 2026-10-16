@@ -1,4 +1,6 @@
 import { usarConta } from '../conta/ContextoConta'
+import { lazy, Suspense } from 'react'
+import type { PaginaBusca } from './BuscaMenu'
 import { ChamaPixel } from './ChamaPixel'
 import { contasDisponiveis } from '../conta/supabase'
 import { usarAdministrador } from '../conta/administrador'
@@ -63,6 +65,35 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
   },
 ]
 
+/** Palavras de quem procura, para a busca do menu achar a página certa. */
+// A busca (e os índices que ela consulta) só é baixada quando o menu abre; até lá fica o campo parado.
+const BuscaMenu = lazy(() => import('./BuscaMenu').then((m) => ({ default: m.BuscaMenu })))
+function CampoBuscaVazio() {
+  return <div className="mn-busca"><label className="mn-busca__campo"><Icone nome="busca" tamanho={18} /><input type="search" disabled placeholder="Buscar: Garden, tríade terrível, revisão, flashcards…" aria-label="Buscar no site" /></label></div>
+}
+
+const SINONIMOS: Record<string, string> = {
+  '/treinar': 'questoes fazer praticar sessao estudar prova treino',
+  '/cronograma': 'plano de estudo calendario dia agenda meta',
+  '/resumos': 'livro capitulo rockwood resumo biblioteca leitura ler classificacao',
+  '/flashcards': 'cartas cards memorizar jogo',
+  '/revisao': 'revisar repeticao espacada voltar',
+  '/erros': 'errei erradas erros',
+  '/favoritas': 'estrela salvas marcadas',
+  '/temas-que-mais-caem': 'incidencia mais cobrado o que cai ranking assuntos',
+  '/simulado-nacional': 'prova simulado nota posicao',
+  '/dados': 'estatistica acerto desempenho grafico',
+  '/assinatura': 'assinar preco pagar pix cartao plano',
+  '/conta': 'perfil login senha',
+  '/contato': 'ajuda suporte duvida problema',
+}
+/** Páginas que não estão no menu, mas que a busca deve achar. */
+const EXTRAS_BUSCA: PaginaBusca[] = [
+  { destino: '/resumos/frases', rotulo: 'Frases que caem', texto: 'Uma frase por assunto, dos comentários das questões de prova', icone: 'livro', chaves: 'resumao frases na prova vespera' },
+  { destino: '/resumos/caderno', rotulo: 'Meu caderno de estudo', texto: 'Seus destaques e notas dos resumos', icone: 'lapis', chaves: 'marcacoes notas grifos destaques' },
+  { destino: '/conquistas', rotulo: 'Conquistas e emblemas', texto: 'Inventário de emblemas e vitrine', icone: 'medalha', chaves: 'emblemas medalhas trofeus' },
+]
+
 /** O botão que abre o menu mora no cabeçalho (computador) e na barra de baixo (celular). */
 export function MenuGeral({ aberto, aoFechar, caminho }: { aberto: boolean; aoFechar: () => void; caminho: string }) {
   const larga = usarTelaLarga()
@@ -95,6 +126,11 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
     ...(administrador ? [{ destino: '/admin', rotulo: 'Painel do administrador', texto: 'Usuários, avaliações e pagamentos', icone: 'cadeado' as const }] : []),
   ]
   const grupos = [...GRUPOS, { titulo: 'Conta e ajuda', itens: conta }]
+  // A busca do topo acha estas páginas pelo nome, pelo texto e por sinônimos de quem procura.
+  const paginasBusca: PaginaBusca[] = [
+    ...grupos.flatMap((g) => g.itens.map((i) => ({ destino: i.destino, rotulo: i.rotulo, texto: i.texto, icone: i.icone, chaves: SINONIMOS[i.destino] }))),
+    ...EXTRAS_BUSCA,
+  ]
 
   return (
     <div className="mn">
@@ -102,6 +138,7 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
         <h2 className="mn__titulo">Tudo o que tem aqui</h2>
         <p>Do que mais ajuda no estudo ao que você usa de vez em quando.</p>
       </header>
+      <Suspense fallback={<CampoBuscaVazio />}><BuscaMenu paginas={paginasBusca} aoIr={aoFechar} /></Suspense>
 
       {!premium && (
         <a className="mn-planos" href={href('/assinatura')} onClick={aoFechar}>

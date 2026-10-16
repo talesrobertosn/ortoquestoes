@@ -230,13 +230,17 @@ async function principal() {
     assert.equal(noComputador.c.feitasHoje, feitasHojeNoMac, 'o progresso do dia é o mesmo nos dois aparelhos')
     assert.ok(feitasNoMac.every(id => !noComputador.ids.includes(id)), 'o cronograma do computador não oferece de novo as questões feitas no MacBook')
     const sessao = await computador.ler('sessao:atual')
-    for (const id of feitasNoMac) {
+    // A sessão do computador só contém parte do que o MacBook sorteou (o sorteio depende do tamanho do acervo):
+    // as feitas no Mac que pertencem a ela precisam aparecer como feitas, e sempre há pelo menos uma.
+    const naSessao = feitasNoMac.filter(id => sessao.ids.includes(id))
+    assert.ok(naSessao.length > 0, 'o MacBook respondeu ao menos uma questão da sessão aberta no computador')
+    for (const id of naSessao) {
       assert.ok(sessao.respostas[id], `a sessão aberta no computador mostra ${id} como feita`)
       assert.equal(sessao.respostas[id].outroAparelho, true)
     }
     assert.equal(sessao.respostas[manha.ids[0]].outroAparelho, undefined, 'as respostas do próprio computador ficam como estavam')
     const faltam = sessao.ids.filter(id => !sessao.respostas[id]).length
-    assert.equal(faltam, manha.ids.length - 10, '"Continuar" mostra só o que falta de verdade')
+    assert.equal(faltam, manha.ids.length - 2 - naSessao.length, '"Continuar" mostra só o que falta de verdade')
 
     // Aba nova (outro navegador, nada guardado): já abre com tudo.
     const abaNova = criar('aba-nova', { desvio: 3 * HORA })
