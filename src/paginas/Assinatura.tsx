@@ -23,6 +23,7 @@ import { CartoesPlanos } from '../componentes/vendas/CartoesPlanos'
 import { PreviaCronograma } from '../componentes/vendas/PreviaCronograma'
 import { IconePix, IconeCartao } from '../componentes/vendas/IconesPagamento'
 import { usarRevelar } from '../componentes/vendas/usarRevelar'
+import { SecaoBiblioteca } from '../componentes/vendas/SecaoBiblioteca'
 import '../estilos/paginas/Assinatura.css'
 
 /**
@@ -283,6 +284,9 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
 
       {/* 4. O que mais cai. */}
       <SecaoTemas />
+
+      {/* 4b. Biblioteca de resumos: aberta para todos, explicada por inteiro (16/10/2026). */}
+      <SecaoBiblioteca />
 
       {/* 5. OrtoQuestões Simulados, por engenharia reversa. */}
       <SecaoSimulados />
