@@ -13,24 +13,42 @@ resto do site até ser encerrada. Não há SQL, Edge Function ou escrita no serv
 
 ## Apresentação e frequência
 
-- Aviso discreto no canto, sem som, sem capturar foco, desaparece em cinco segundos.
-  A descoberta com convite explícito para a sala fica oito segundos; a sala só abre
-  por ação da pessoa, nunca sozinha. O gato também fica cinco segundos.
-- Visitas automáticas: esperar 90 segundos desde a montagem do módulo; tentativa a
-  cada 30 segundos, probabilidade de 18%, intervalo mínimo de seis minutos entre
-  visitas. Uma aparição de cada tipo por dia de São Paulo, exceto madrugada (18 min).
-- Datas pessoais e véspera têm prioridade quando o sorteio permite uma visita.
-- Interações intencionais (logo, código, martelo, gato): dez segundos entre elas;
-  também respeitam provas, preferência e diálogos. Não acumulam sobre outra visita.
-- Fila de marcos pessoais e selo só usa respostas locais feitas naquela aba;
-  sincronização da nuvem não gera festa. A fila espera o intervalo de seis minutos.
-  Não se recuperam festas antigas ao abrir o site. O estado temporário some ao recarregar.
+**Limite que prevalece (Tales, 16/10/2026): no máximo uma surpresa por hora neste navegador,**
+somando todas (sorteio, datas especiais, marcos, selo, recorde e o "Virou reflexo" do duplo clique,
+que também acontece sem querer ao selecionar texto). A marca de tempo é única por navegador
+(`oq:eventos:ultima-aparicao:v1`, em `memoria.ts`), vale para todas as contas do aparelho e para
+todas as abas; fica fora de `estado/armazenamento` porque aquele é por conta, sincronizado e limpo
+ao sair. Regra pura em `regras.ts` (`INTERVALO_EVENTOS` = 60 min, `liberadoPeloRelogio`).
+Exceção deliberada: os gestos feitos de propósito para achar o segredo (cinco toques na logo,
+código no teclado, carinho no gato) sempre respondem, com dez segundos entre eles, e também contam
+como aparição (a próxima visita automática espera a hora inteira).
+
+- Aviso no canto, sem som, sem capturar foco, some em sete segundos (convite para o Arquivo: dez),
+  com um fio dourado que mostra o tempo restante e saída suave. A sala só abre por ação da pessoa.
+- Visitas automáticas: esperar 90 segundos desde a montagem do módulo; tentativa a cada 30 segundos,
+  probabilidade de 18%, e só depois do limite de uma hora. Uma aparição de cada tipo por dia de São Paulo.
+- Datas pessoais e véspera têm prioridade quando o sorteio permite uma visita (sem furar o limite).
+- Fila de marcos pessoais e selo só usa respostas locais feitas naquela aba; sincronização da nuvem
+  não gera festa. A fila espera o limite de uma hora. O estado temporário some ao recarregar.
 - Aba escondida remove a visita. Não há fila de sorteios acumulados ao voltar.
-- Administração, conta/cadastro, cobrança, termos e suporte não recebem visitas.
-  O combate tem sua própria apresentação e não recebe estes encontros. Na Biblioteca,
-  só há o encontro com o gato, por interação; a seleção e o estudo seguem iguais.
-- `prefers-reduced-motion: reduce` mantém o texto e remove confete, rastro de estrela
-  e cintilação. Sem sacudir a tela, sem som, sem animação contínua.
+- Administração, conta/cadastro, cobrança, termos e suporte não recebem visitas. O combate tem sua
+  própria apresentação. Na Biblioteca, só há o encontro com o gato, por interação.
+- `prefers-reduced-motion: reduce` mantém o texto e remove todo movimento (confete, estrela, raio,
+  poeira, fio do tempo, choque da logo).
+
+### Visual (refeito em 16/10/2026)
+
+Linguagem HD-2D do site: cada visita é um cartão com os tokens do tema (claro e escuro) e um pequeno
+palco noturno de verdete onde o sprite (pixel art 32x32 a 2x, `scripts/eventos/gerar.py`, mesmo motor
+dos ícones da página inicial) flutua sobre um halo de luz que respira, poeira de luz e sombra no chão.
+Efeitos: confete em pixels, estrela cadente com cintilas, raio elétrico no topo do cartão (Tinel).
+Logo: toques 2 a 4 acendem uma elipse de "agulhadas" douradas cada vez mais forte; no quinto, clarão,
+três arcos elétricos que contornam a marca, faíscas e um tremor amortecido (âmbar no tema claro).
+Arquivo do Preceptor: cena em pixel art com luar, candeeiros e vela acesos por luz suave, poeira no
+ar, bilhete de papel com fita, botões dourados; foco inicial em "Voltar ao estudo".
+
+Parâmetros só no Vite DEV, depois do hash: `?encontro=cafe|festa|estrela|tinel|selo|bolo|gato|arquivo`
+(cartões), `?encontro=sala` (abre o Arquivo) e `?encontro=choque` (choque na logo).
 
 ## Como desligar
 
