@@ -10,6 +10,7 @@ import { Icone } from '../componentes/Icone'
 import { Carregando, Estado } from '../componentes/Estados'
 import { href, navegar } from '../util/rotas'
 import { usarPremium } from '../conta/premium'
+import { ConvitePremium } from '../componentes/Premium'
 import { usarSessao } from '../estado/sessao'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
 import '../estilos/paginas/Resumos.css'
@@ -50,7 +51,7 @@ export function LeitorResumo({ id, consulta }: { id: string; consulta: URLSearch
   if (falhou) return <Estado titulo="Não foi possível abrir o resumo." acoes={<button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button>}><p>Confira a conexão.</p></Estado>
   if (capitulo === undefined) return <Carregando linhas={8} rotulo="Abrindo o resumo" />
   if (capitulo === null) return <Estado titulo="Resumo não encontrado." acoes={<a className="botao botao--principal" href={href('/resumos')}>Ver a biblioteca</a>}><p>O endereço pode ter mudado.</p></Estado>
-  // Plano gratuito: só os resumos marcados como abertos (até 5). Os outros mostram o que há dentro.
+  // Desde 16/10/2026 todos os resumos são abertos (acesso: gratis); o portão fica para um resumo marcado como assinante.
   if (capitulo.acesso !== 'gratis' && !acesso.premium) {
     if (acesso.logado && !acesso.carregado) return <Carregando linhas={6} rotulo="Conferindo o acesso" />
     return <ResumoFechado capitulo={capitulo} />
@@ -78,6 +79,8 @@ function ResumoFechado({ capitulo }: { capitulo: Capitulo }) {
 
 function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: string | null }) {
   const { indice } = usarIndice()
+  // Resumos abertos para todos (pedido do Tales, 16/10/2026); resolver as questões citadas é do assinante.
+  const { premium } = usarPremium()
   const bib = usarBiblioteca()
   const { preferencias: prefSalva, definirPreferencias } = bib
   // Primeira vez no leitor: o tema acompanha o do site (escuro abre escuro).
@@ -410,6 +413,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const idsDoCapitulo = useMemo(() => [...new Set(capitulo.secoes.flatMap((s) => s.blocos.flatMap((b) => b.tipo === 'questoes' ? [...questoesReais(b), ...b.treino] : [])))], [capitulo])
   async function treinarCapitulo() {
     salvarAgora()
+    if (!premium) { navegar('/assinatura'); return }
     if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, embaralhar: false, limite: idsDoCapitulo.length }, idsDoCapitulo))) return
     navegar('/sessao')
   }
@@ -471,7 +475,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
               <div><strong>{leitura?.concluidoEm ? 'Capítulo concluído' : 'Fim do resumo'}</strong><span>Agora, fixe com as questões: elas voltam na revisão no tempo certo.</span></div>
             </div>
             <div className="lr-fim__acoes">
-              {idsDoCapitulo.length > 0 && <button type="button" className="botao botao--principal" onClick={treinarCapitulo}><Icone nome="alvo" tamanho={16} /> Treinar as {idsDoCapitulo.length} questões do capítulo</button>}
+              {idsDoCapitulo.length > 0 && <button type="button" className="botao botao--principal" onClick={treinarCapitulo}><Icone nome={premium ? 'alvo' : 'cadeado'} tamanho={16} /> Treinar as {idsDoCapitulo.length} questões do capítulo</button>}
               <a className="botao" href={href('/resumos/caderno')}><Icone nome="lapis" tamanho={16} /> Meu caderno de estudo</a>
               <a className="botao" href={href('/resumos')}>Outros resumos</a>
             </div>
@@ -512,7 +516,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
       {questao && <aside className="lr-questao" role="dialog" aria-modal="true" aria-label="Questão">
         <header className="lr-painel__topo"><strong>Questão</strong><span className="lr-questao__dica">A leitura continua de onde você parou.</span><button type="button" className="lr-botao" onClick={() => definirQuestao(null)} aria-label="Voltar à leitura"><Icone nome="fechar" tamanho={18} /></button></header>
-        <div className="lr-questao__corpo"><Suspense fallback={<Carregando linhas={5} />}><QuestaoDireta id={questao} /></Suspense></div>
+        <div className="lr-questao__corpo">{premium
+          ? <Suspense fallback={<Carregando linhas={5} />}><QuestaoDireta id={questao} /></Suspense>
+          : <ConvitePremium icone="alvo" titulo="Resolva as questões do resumo" texto={<p>Os resumos são abertos para todos. Para fazer as questões citadas no texto, com gabarito, comentário e revisão no tempo certo, assine o OrtoQuestões.</p>} itens={['Todas as questões citadas nos resumos', 'Treinar o capítulo inteiro em uma sessão', 'Cronograma até a prova e Simulado Nacional']} />}</div>
         <footer className="lr-questao__rodape"><button type="button" className="botao botao--principal" onClick={() => definirQuestao(null)}><Icone nome="esquerda" tamanho={16} /> Voltar ao parágrafo</button></footer>
       </aside>}
       {questao && <button type="button" className="lr-veu" aria-label="Voltar à leitura" onClick={() => definirQuestao(null)} />}

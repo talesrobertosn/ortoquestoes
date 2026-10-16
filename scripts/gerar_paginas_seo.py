@@ -250,6 +250,7 @@ def rodape(raiz: str = "../") -> str:
     Os comentários se baseiam na bibliografia de referência da especialidade.
     <a href="{raiz}#/contato">Encontrou um erro?</a>
     · <a href="{raiz}guias/">Guias de estudo</a>
+    · <a href="{raiz}resumos/">Resumos de capítulos</a>
     · <a href="{raiz}banco-de-questoes-ortopedia/">Banco de questões de ortopedia</a>
     · <a href="{raiz}teot/">TEOT</a>
     · <a href="{raiz}questoes-teot-taro/">Provas do TEOT e do TARO</a>

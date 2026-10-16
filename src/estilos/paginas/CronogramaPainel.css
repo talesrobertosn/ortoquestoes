@@ -322,3 +322,10 @@ a.cp-extra:hover, button.cp-extra:hover { border-color: color-mix(in srgb, var(-
   .cp-recolhidos--grade { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 0.6rem 1.25rem; }
 }
 @media (prefers-reduced-motion: reduce) { .cp-adiantar__abrir > svg:last-child { transition: none; } }
+
+/* "Antes das questões, leia o resumo" dentro do Hoje (16/10/2026). */
+.cp-hoje__resumo { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.65rem; margin: 0.2rem 0 0.6rem; padding: 0.65rem 0.8rem; border: 1px solid rgba(255, 140, 50, 0.55); border-radius: 12px; background: linear-gradient(135deg, color-mix(in srgb, #ff8a2a 14%, var(--superficie)), var(--superficie)); color: var(--texto); text-decoration: none; box-shadow: 0 0 16px rgba(255, 110, 30, 0.18); transition: transform .15s, box-shadow .15s; }
+.cp-hoje__resumo:hover { transform: translateY(-1px); box-shadow: 0 0 22px rgba(255, 110, 30, 0.3); }
+.cp-hoje__resumo > svg:first-child { color: #ff8a2a; }
+.cp-hoje__resumo strong { display: block; font-size: 0.92rem; }
+.cp-hoje__resumo small { display: block; font-size: 0.76rem; color: var(--texto-2); }

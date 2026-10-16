@@ -188,3 +188,18 @@
 @media (max-width: 40rem) {
   .cc--embutido .cc-corpo { padding: 0.6rem 0.4rem 0.8rem; }
 }
+
+/* Calendário embutido mais chamativo (pedido do Tales, 16/10/2026: "ele está muito bom para ficar tão escondido").
+   Moldura com brilho, topo em destaque e o dia de hoje pulsando devagar. */
+.cc--embutido { position: relative; }
+.cc--embutido .cc-janela { border: 1px solid color-mix(in srgb, var(--cp-agora, #a87a1f) 45%, var(--traco)); box-shadow: 0 0 0 4px color-mix(in srgb, var(--cp-agora, #a87a1f) 10%, transparent), 0 18px 44px rgba(18, 24, 26, 0.16); }
+.cc--embutido .cc-topo { position: relative; padding: 1.25rem 1.4rem 1.05rem; background:
+  radial-gradient(120% 160% at 0% 0%, color-mix(in srgb, var(--verdete) 18%, transparent) 0%, transparent 55%),
+  radial-gradient(90% 140% at 100% 0%, color-mix(in srgb, var(--cp-agora, #a87a1f) 16%, transparent) 0%, transparent 60%),
+  var(--superficie); }
+.cc--embutido .cc-topo::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: linear-gradient(90deg, var(--verdete), var(--cp-agora, #a87a1f), #e2402a); }
+.cc--embutido .cc-topo__selo { font-size: 0.76rem; padding: 0.2rem 0.6rem; border-radius: 999px; background: var(--verdete-veu); width: max-content; }
+.cc--embutido .cc-topo h2 { font-size: clamp(1.7rem, 3.6vw, 2.3rem); }
+.cc--embutido .cc-dia--hoje > button { animation: cc-hoje-brilha 2.6s ease-in-out infinite; }
+@keyframes cc-hoje-brilha { 0%, 100% { box-shadow: inset 0 0 0 1px var(--cp-agora), 0 0 0 0 color-mix(in srgb, var(--cp-agora) 45%, transparent); } 50% { box-shadow: inset 0 0 0 1px var(--cp-agora), 0 0 0 6px color-mix(in srgb, var(--cp-agora) 0%, transparent), 0 0 18px color-mix(in srgb, var(--cp-agora) 55%, transparent); } }
+@media (prefers-reduced-motion: reduce) { .cc--embutido .cc-dia--hoje > button { animation: none; } }

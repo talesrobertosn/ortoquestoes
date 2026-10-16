@@ -1,4 +1,5 @@
 import { usarConta } from '../conta/ContextoConta'
+import { ChamaPixel } from './ChamaPixel'
 import { contasDisponiveis } from '../conta/supabase'
 import { usarAdministrador } from '../conta/administrador'
 import { usarPremium } from '../conta/premium'
@@ -22,6 +23,8 @@ interface Item {
   /** Recurso do assinante: quem não assina vê o selo e abre a prévia. */
   assinante?: boolean
   destaque?: boolean
+  /** Em chamas (fogo em pixel art em volta): o recurso novo que ninguém pode deixar de ver. */
+  fogo?: boolean
 }
 
 /** Do que mais se usa para o que menos se usa, dentro de cada grupo e entre os grupos. */
@@ -31,6 +34,8 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
     itens: [
       { destino: '/treinar', rotulo: 'Treinar', texto: 'Monte uma sessão por tema, prova ou ano', icone: 'livro' },
       { destino: '/cronograma', rotulo: 'Cronograma', texto: 'O plano de cada dia até a sua prova', icone: 'rota', assinante: true, destaque: true },
+      // Biblioteca de resumos (16/10/2026): na aba Estudar, em chamas, para ninguém deixar de ver (pedido do Tales).
+      { destino: '/resumos', rotulo: 'Resumos · Beta', texto: 'Os temas que mais caem, com as questões no meio do texto', icone: 'livro', destaque: true, fogo: true },
       { destino: '/flashcards', rotulo: 'Flashcards · Beta', texto: 'Revisão espaçada em flashcards e o modo jogo', icone: 'raio', destaque: true },
       { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', texto: 'Direto para a Biblioteca: revisão calma, sem jogo', icone: 'livro' },
       { destino: '/flashcards/cripta', rotulo: 'Jogar o Torneio', texto: 'Os mesmos flashcards em forma de jogo', icone: 'trofeu' },
@@ -43,8 +48,6 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
     titulo: 'Rumo à prova',
     itens: [
       { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'A contagem dos assuntos nas provas oficiais', icone: 'grafico', assinante: true },
-      // Biblioteca de resumos (16/10/2026): beta, só no menu suspenso (pedido do Tales).
-      { destino: '/resumos', rotulo: 'Resumos · Beta', texto: 'Capítulos dos livros, com as questões no meio do texto', icone: 'livro', destaque: true },
       { destino: '/simulado-nacional', rotulo: 'Simulado Nacional', texto: 'Uma prova por mês, com nota e posição', icone: 'alvo', assinante: true },
     ],
   },
@@ -134,11 +137,12 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
                 return (
                   <li key={item.rotulo}>
                     <a
-                      className={'mn-item' + (item.destaque ? ' mn-item--destaque' : '') + (item.assinante ? ' mn-item--assinante' : '')}
+                      className={'mn-item' + (item.destaque ? ' mn-item--destaque' : '') + (item.assinante ? ' mn-item--assinante' : '') + (item.fogo ? ' mn-item--fogo' : '')}
                       href={href(destino)}
                       onClick={aoFechar}
                       aria-current={atual && item.rotulo !== 'Relatório do mês' ? 'page' : undefined}
                     >
+                      {item.fogo && <ChamaPixel altura={22} lados={8} forca={0.85} raio={12} />}
                       <span className="mn-item__icone" aria-hidden="true"><Icone nome={item.icone} tamanho={19} /></span>
                       <span className="mn-item__texto"><strong>{item.rotulo}</strong><small>{item.texto}</small></span>
                       {bloqueado ? <SeloAssinante /> : <span className="mn-item__seta" aria-hidden="true"><Icone nome="direita" tamanho={16} /></span>}

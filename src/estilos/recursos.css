@@ -462,3 +462,7 @@
 .atalho-flashcards > svg:first-child { color: var(--ouro-texto); }
 .atalho-flashcards span { display: grid; gap: 0.15rem; }
 .atalho-flashcards small { color: var(--texto-2); }
+/* Resumos em chamas no menu (16/10/2026): o fogo fica atrás do item e o item ganha um brilho de brasa. */
+.mn-item--fogo { position: relative; isolation: isolate; margin: 0.9rem 0 0.35rem; border-color: rgba(255, 140, 50, 0.55); background: linear-gradient(135deg, color-mix(in srgb, #ff8a2a 16%, var(--superficie)), var(--superficie)); box-shadow: 0 0 18px rgba(255, 110, 30, 0.28); }
+.mn-item--fogo:hover { background: linear-gradient(135deg, color-mix(in srgb, #ff8a2a 24%, var(--superficie)), var(--superficie-2)); }
+.mn-item--fogo .mn-item__icone { background: linear-gradient(135deg, #ffd27a, #ff7a2a); color: #4a1a04; }

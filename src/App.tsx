@@ -210,7 +210,7 @@ function paginaDaRota(rota: Rota): ReactNode {
   // Páginas que mostram questões: por enquanto, só com conta (ver config.ts).
   // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
   // públicas do Google levam; responder pede a conta ali mesmo.
-  if (['treinar', 'sessao', 'resumo', 'resumos', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || ehJogo(rota)) {
+  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || ehJogo(rota)) {
     pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
   }
 

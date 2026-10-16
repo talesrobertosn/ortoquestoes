@@ -10,6 +10,7 @@ import { PodioPrevia } from '../componentes/PodioPrevia'
 import { Icone } from '../componentes/Icone'
 import { IconePixel } from '../componentes/IconePixel'
 import { bibliotecaVisivel } from '../biblioteca/recomendar'
+import { ChamaPixel } from '../componentes/ChamaPixel'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../componentes/CaixasAssinante'
@@ -407,8 +408,9 @@ export function Inicio() {
           </a>
         </>}
         {bibliotecaVisivel() && <a className="ip-atalho ip-atalho--resumos" href={href('/resumos')}>
+          <ChamaPixel altura={50} lados={16} raio={16} />
           <span className="ip-atalho__livros" aria-hidden="true"><i /><i /><i /></span>
-          <span><strong>Resumos</strong><small>Biblioteca · Beta</small></span>
+          <span><strong>Resumos</strong><small>Novos toda semana · Beta</small></span>
         </a>}
       </nav>
 

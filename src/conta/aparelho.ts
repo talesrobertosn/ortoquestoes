@@ -15,9 +15,9 @@ import { ler } from '../estado/armazenamento'
 const CHAVE_ID = 'oq-aparelho'
 /** Conta para a qual este aparelho já se registrou: sem ela, é um login novo aqui. */
 const CHAVE_REGISTRO = 'oq-aparelho-conta'
-const INTERVALO_MS = 60_000
+const INTERVALO_MS = 40_000
 /** De quanto em quanto tempo olha se a página ou a questão mudou (só manda sinal se mudou). */
-const OLHAR_PAGINA_MS = 15_000
+const OLHAR_PAGINA_MS = 4_000
 
 /**
  * O que está aberto agora, para o painel do administrador: a rota (sem os

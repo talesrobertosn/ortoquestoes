@@ -9,8 +9,11 @@ estão no fim deste arquivo. A fila de temas e o que já foi enviado estão em [
 
 1. **Todo resumo sai de um capítulo de livro ou artigo que o Tales enviou.** Nada de resumo "de memória"
    nem de outra fonte. O arquivo enviado é a fonte, e o cabeçalho do resumo diz qual é (`fonte:`).
-2. **Plano gratuito: até 5 resumos abertos** (`acesso: gratis`). Os outros aparecem na estante com cadeado
-   e só assinantes abrem. O gerador recusa um sexto resumo grátis.
+2. **Resumos abertos para todos** (decisão do Tales em 16/10/2026, para o Google achar o site): todo resumo usa
+   `acesso: gratis`, é lido sem conta no app e ganha página estática em `/resumos/<id>/`
+   (`scripts/gerar_resumos_seo.py`, gerada no deploy). **Resolver as questões citadas é do assinante**: no leitor,
+   "Fazer a questão" e "Treinar o capítulo" mostram o convite da assinatura para quem não assina.
+   (O limite antigo de 5 grátis caiu; o campo `acesso` continua, caso um resumo precise voltar a ser fechado.)
 3. **Pode e deve citar as questões no meio do resumo**, com botão para fazer a questão (ela abre num
    painel, sem perder o lugar da leitura).
 4. Texto **autoral**, em português, na ordem em que a prova cobra; não traduzir o livro nem copiar trechos
@@ -50,7 +53,7 @@ estão no fim deste arquivo. A fila de temas e o que já foi enviado estão em [
 3. **Escrever** `conteudo/biblioteca/<livro><edição>-<capítulo>-<tema>.md` no formato abaixo. A ordem das
    seções segue o que mais cai; a profundidade é proporcional à cobrança, sem cortar fundamentos.
 4. **Gerar e conferir:** `node scripts/biblioteca/gerar.mjs` (grava `public/biblioteca/`). Ele recusa
-   questão inexistente, duplicata, simulado marcado como "já caiu", negrito sem fechar e mais de 5 grátis.
+   questão inexistente, duplicata, simulado marcado como "já caiu" e negrito sem fechar.
 5. **Ver no navegador** (`VITE_SUPABASE_URL=sem npx vite`, abrir `#/resumos/<id>`), no computador e no
    celular, e rodar os testes (abaixo).
 6. Marcar o tema no [CHECKLIST.md](CHECKLIST.md), commitar `conteudo/`, `public/biblioteca/` e publicar.
@@ -63,7 +66,7 @@ id: rockwood10-53-colo-femur          # estável: é o endereço e a chave das m
 versao: 1                             # suba a cada revisão editorial do texto
 titulo: Fratura do colo do fêmur
 especialidade: trauma                 # slug de um tema do acervo
-acesso: gratis                        # gratis (até 5 no total) ou assinante (padrão)
+acesso: gratis                        # todos abertos desde 16/10/2026 (assinante fecha o leitor)
 livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 53 · Femoral Neck Fractures

@@ -6,7 +6,7 @@ import { chamarRpc } from '../../servicos/supabase'
 import { usarIndice } from '../../dados/usarIndice'
 import { Icone, type NomeIcone } from '../Icone'
 import { BarrasHorizontais, GraficoColunas } from './AdminGraficos'
-import { OQueVe, type LinhaUsuario } from './AdminUsuarios'
+import { estaOnline, OQueVe, type LinhaUsuario } from './AdminUsuarios'
 import { href } from '../../util/rotas'
 import { confirmar } from '../Confirmar'
 import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, haQuantoTempo, motivoFalhaEmail, porcentagem, rotuloOrigem, rotuloPagina } from './formatos'
@@ -96,10 +96,12 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
   const args = useMemo(() => ({ p_id: usuario.id_usuario }), [usuario.id_usuario])
   const detalheQ = usarRpc<Detalhe>(conta, 'detalhe_usuario_admin', args)
   // Ficha aberta: o "agora" se renova a cada 20 s.
-  const atividadeQ = usarRpc<Atividade>(conta, 'atividade_usuario_admin', args, { atualizarCada: 20_000 })
+  const atividadeQ = usarRpc<Atividade>(conta, 'atividade_usuario_admin', args, { atualizarCada: 10_000 })
   const extraQ = usarRpc<FichaExtra>(conta, 'ficha_extra_usuario_admin', args, { atualizarCada: 60_000 })
   const detalhe = detalheQ.dados ?? null
-  const atividade = atividadeQ.dados ?? null
+  // O "Agora" da ficha segue o último sinal (100 s), como a lista, e não os 3 minutos do servidor.
+  const bruta = atividadeQ.dados ?? null
+  const atividade = bruta?.agora ? { ...bruta, agora: { ...bruta.agora, online: estaOnline(bruta.agora) } } : bruta
   const extra = extraQ.dados ?? null
   const semAtividade = !atividade && !!atividadeQ.erro
   const semExtra = !extra && !!extraQ.erro && rpcInexistente(extraQ.erro)

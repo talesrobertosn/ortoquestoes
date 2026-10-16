@@ -15,7 +15,7 @@ import { AdminEmails } from '../componentes/admin/AdminEmails'
 import { AdminCartas } from '../componentes/admin/AdminCartas'
 import { AdminSimulados } from '../componentes/admin/AdminSimulados'
 import { SECOES, abaPadrao, definicaoDe, lerUrl, secaoDe, urlAntiga, urlDe, type Aba, type EstadoUrl, type Secao } from '../componentes/admin/secoes'
-import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
+import { AdminUsuarios, ativoHoje, estaOnline, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
 import { AdminFinanceiro } from '../componentes/admin/AdminFinanceiro'
 import { AdminCobrancas } from '../componentes/admin/AdminCobrancas'
 import { AdminExportar } from '../componentes/admin/AdminExportar'
@@ -98,15 +98,15 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const conta = sessao?.user.id
   const assinaturasQ = usarRpc<LinhaAssinatura[]>(conta, 'listar_assinaturas_admin')
   const eventosQ = usarRpc<LinhaEvento[]>(conta, 'listar_eventos_pagamento_admin')
-  const resumoQ = usarRpc<Resumo[]>(conta, 'resumo_admin')
+  const resumoQ = usarRpc<Resumo[]>(conta, 'resumo_admin', {}, { atualizarCada: aba === 'hoje' ? 20_000 : undefined })
   const contadoresQ = usarContadoresAdmin(conta)
   // Sem a RPC leve (parte 22 ainda não colada), o número de contas sai da própria lista.
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
     // Hoje, Pessoas › Usuários e Crescimento mostram a lista; Assinaturas, Cobranças e Avisos usam para abrir a ficha.
     ativo: ['hoje', 'usuarios', 'crescimento', 'assinaturas', 'cobrancas', 'pagamentos'].includes(aba) || semContadores,
-    // "Ao vivo" só em Pessoas › Usuários e com a aba do navegador visível.
-    atualizarCada: aba === 'usuarios' ? 30_000 : undefined,
+    // "Ao vivo" em Hoje e em Pessoas › Usuários, com a aba do navegador visível (antes era só em Usuários, a cada 30 s).
+    atualizarCada: aba === 'usuarios' || aba === 'hoje' ? 15_000 : undefined,
     prazoMs: 20_000,
   })
   // Cobranças gravadas no banco (parte 23): Financeiro e Cobranças leem da mesma consulta. Sem a RPC, tudo pelo preço dos planos.
@@ -117,7 +117,10 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
     : `As cobranças gravadas não carregaram (código: ${codigoDaFalha(cobrancasQ.erro)}); os valores abaixo são estimados pelos planos.`
   const assinaturas = assinaturasQ.dados ?? null
   const eventos = eventosQ.dados ?? null
-  const usuarios = usuariosQ.dados ?? null
+  // "Online" refeito no painel a cada 10 s pelo último sinal (estaOnline), sem esperar o servidor.
+  const [agoraOnline, definirAgoraOnline] = useState(() => Date.now())
+  useEffect(() => { const t = window.setInterval(() => definirAgoraOnline(Date.now()), 10_000); return () => window.clearInterval(t) }, [])
+  const usuarios = useMemo(() => usuariosQ.dados?.map(u => ({ ...u, online: estaOnline(u, Math.max(agoraOnline, usuariosQ.atualizadoEm ?? 0)) })) ?? null, [usuariosQ.dados, usuariosQ.atualizadoEm, agoraOnline])
   const resumo = resumoQ.dados?.[0] ?? null
   const erroAcesso = assinaturasQ.erro ? erroDoPainel(assinaturasQ.erro, MIGRACAO) : ''
   const falhaNova = resumoQ.erro ?? usuariosQ.erro
@@ -303,7 +306,7 @@ function Hoje({ conta, resumo, usuarios, assinaturas, errosPagamento, mensagens,
   return <div className="empilha-2">
     <EstudoDeHoje estudo={estudo} carregando={serieQ.carregando && !serieQ.dados} verUsuarios={verUsuarios} />
     <section className="adm-kpis" aria-label="Números principais">
-      <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--online" onClick={() => irPara('usuarios')}><span><i className="adm-online" aria-hidden="true" /> Online agora</span><strong>{n(resumo?.online_agora)}</strong><small>com a conta aberta nos últimos 3 minutos</small></button>
+      <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--online" onClick={() => irPara('usuarios')}><span><i className="adm-online" aria-hidden="true" /> Online agora</span><strong>{usuarios ? usuarios.filter(u => u.online).length.toLocaleString('pt-BR') : n(resumo?.online_agora)}</strong><small>com o site aberto e à vista agora</small></button>
       <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--destaque" onClick={() => verUsuarios('novos')}><span>Usuários cadastrados</span><strong>{n(resumo?.usuarios)}</strong><small>{resumo ? `+${resumo.novos_7d} nos últimos 7 dias · ver quem chegou` : 'rode a migração nova'}</small></button>
       <button type="button" className="adm-kpi adm-kpi--botao" onClick={() => verUsuarios('hoje')}><span>Ativos hoje</span><strong>{n(resumo?.ativos_hoje)}</strong><small>toque para ver os nomes</small></button>
       <button type="button" className="adm-kpi adm-kpi--botao" onClick={() => verUsuarios('ativos')}><span>Ativos na semana</span><strong>{n(resumo?.ativos_7d)}</strong><small>{resumo ? `${n(resumo.ativos_30d)} nos últimos 30 dias · ver nomes` : ''}</small></button>
