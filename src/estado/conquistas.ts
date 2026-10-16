@@ -17,6 +17,7 @@ import { diasRetaFinal } from '../dados/planoEstudo'
 import type { FeitosServidor } from '../conta/feitos'
 import { ATRASO_RESGATE_DIAS, REVISOES_DIA_SEQUENCIA, resumoRevisoes, sequenciaRevisao } from './metasRevisao'
 import { FC_REVISOES_DIA, METRICAS_FLASHCARDS_VAZIAS, type MetricasFlashcards } from '../flashcards/conquistas'
+import { CONCLUIR_MINIMO_S, METRICAS_BIBLIOTECA_VAZIAS, type MetricasBiblioteca } from '../biblioteca/conquistas'
 
 export type NivelMedalha = 'bronze' | 'prata' | 'ouro' | 'esmeralda' | 'lendario'
 
@@ -38,6 +39,7 @@ export type FamiliaId =
   | 'pontual' | 'filaZerada' | 'cronograma' | 'nacional' | 'arena' | 'indicacao' | 'revisor' | 'editorial'
   | 'revisoes' | 'constancia' | 'resgate'
   | 'fcProfundezas' | 'fcMestreRevisao' | 'fcEspecialista' | 'fcBestiario' | 'fcSemErrar' | 'fcLendarios' | 'fcDragoes'
+  | 'bibMarcas' | 'bibNotas' | 'bibAbertos' | 'bibConcluidos' | 'bibTempo' | 'bibDias'
   | 'secretas'
 
 export interface Emblema extends Conquista {
@@ -103,6 +105,12 @@ export const FAMILIAS: readonly Familia[] = [
   { id: 'fcSemErrar', titulo: 'Flashcards: sem errar', unidade: (v) => `${v} acertos seguidos` },
   { id: 'fcLendarios', titulo: 'Flashcards: lendários', unidade: (v) => `${n(v)} lendários acertados` },
   { id: 'fcDragoes', titulo: 'Flashcards: secretas', unidade: () => 'secreta' },
+  { id: 'bibMarcas', titulo: 'Resumos: marcações', unidade: (v) => `${n(v)} ${v === 1 ? 'marcação' : 'marcações'}` },
+  { id: 'bibNotas', titulo: 'Resumos: notas na margem', unidade: (v) => `${n(v)} ${v === 1 ? 'nota' : 'notas'}` },
+  { id: 'bibAbertos', titulo: 'Resumos: abertos', unidade: (v) => `${v} ${v === 1 ? 'resumo aberto' : 'resumos abertos'}` },
+  { id: 'bibConcluidos', titulo: 'Resumos: concluídos', unidade: (v) => `${v} ${v === 1 ? 'resumo concluído' : 'resumos concluídos'}` },
+  { id: 'bibTempo', titulo: 'Resumos: tempo de leitura', unidade: (v) => `${v < 60 ? `${v} min` : `${Math.floor(v / 60)} h${v % 60 ? ` ${v % 60} min` : ''}`} de leitura` },
+  { id: 'bibDias', titulo: 'Resumos: dias de leitura', unidade: (v) => `${v} ${v === 1 ? 'dia' : 'dias'} com leitura` },
   { id: 'secretas', titulo: 'Secretas', unidade: () => 'secreta' },
 ]
 
@@ -355,7 +363,7 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['chefe-new-game', 1, 'New Game+', 'NG+', 'lendario', 'Domine todas as questões de um tema inteiro.'],
   ]),
   ...familia('chefes', 'platina', [
-    ['chefe-platina', 1, 'Platina', 'PT', 'lendario', 'Conquiste todos os outros emblemas de questões que não são secretos (a sequência de dias e os de Flashcards não entram).'],
+    ['chefe-platina', 1, 'Platina', 'PT', 'lendario', 'Conquiste todos os outros emblemas de questões que não são secretos (a sequência de dias, os de Flashcards e os dos Resumos não entram).'],
   ]),
   ...familia('pontual', 'pontual', [
     ['pontual-30', 30, 'Pontual', '30', 'ouro', 'Responda a Questão do Dia 30 dias seguidos.'],
@@ -468,6 +476,45 @@ export const EMBLEMAS: readonly Emblema[] = [
   ], true),
   ...familia('fcDragoes', 'fcDragoes', [
     ['fc-dragoes', 2, 'Matador de dragões', 'DD', 'esmeralda', 'Vença os dois dragões das profundezas: o Dragão de Ossos e o Dragão Rubro da Artrose.'],
+  ], true),
+  ...familia('bibMarcas', 'bibMarcas', [
+    ['bib-marcas-1', 1, 'Primeiro grifo', '1', 'bronze', 'Grife com o marca-texto um trecho de um resumo da Biblioteca.'],
+    ['bib-marcas-10', 10, 'Marca-texto em punho', '10', 'prata', 'Faça 10 marcações nos resumos (o marcador de página não conta).'],
+    ['bib-marcas-50', 50, 'Página iluminada', '50', 'ouro', 'Faça 50 marcações nos resumos.'],
+    ['bib-marcas-150', 150, 'Iluminador', '150', 'esmeralda', 'Faça 150 marcações nos resumos.'],
+    ['bib-marcas-300', 300, 'Códice iluminado', '300', 'lendario', 'Faça 300 marcações nos resumos.'],
+  ]),
+  ...familia('bibNotas', 'bibNotas', [
+    ['bib-notas-1', 1, 'Nota na margem', '1', 'bronze', 'Escreva uma nota numa marcação de um resumo.'],
+    ['bib-notas-10', 10, 'Glosador', '10', 'prata', 'Escreva notas em 10 marcações dos resumos.'],
+    ['bib-notas-50', 50, 'Escriba da margem', '50', 'ouro', 'Escreva notas em 50 marcações dos resumos.'],
+    ['bib-notas-150', 150, 'Glosa ordinária', '150', 'esmeralda', 'Escreva notas em 150 marcações dos resumos.'],
+  ]),
+  ...familia('bibAbertos', 'bibAbertos', [
+    ['bib-abertos-1', 1, 'Primeira página', '1', 'bronze', 'Abra o seu primeiro resumo na Biblioteca.'],
+    ['bib-abertos-5', 5, 'Frequentador da biblioteca', '5', 'prata', 'Abra 5 resumos diferentes da Biblioteca.'],
+  ]),
+  ...familia('bibConcluidos', 'bibConcluidos', [
+    ['bib-concluidos-1', 1, 'Capítulo vencido', '1', 'prata', `Leia um resumo até o fim, com pelo menos ${CONCLUIR_MINIMO_S / 60} minutos de leitura nele.`],
+    ['bib-concluidos-3', 3, 'Estante em ordem', '3', 'ouro', `Leia 3 resumos diferentes até o fim, com pelo menos ${CONCLUIR_MINIMO_S / 60} minutos de leitura em cada.`],
+    ['bib-concluidos-7', 7, 'Prateleira completa', '7', 'esmeralda', `Leia 7 resumos diferentes até o fim, com pelo menos ${CONCLUIR_MINIMO_S / 60} minutos de leitura em cada.`],
+  ]),
+  ...familia('bibTempo', 'bibMinutos', [
+    ['bib-tempo-30', 30, 'Meia hora de estudo', '30m', 'bronze', 'Leia os resumos por 30 minutos. Só conta o tempo com o leitor aberto e você lendo.'],
+    ['bib-tempo-120', 120, 'Tarde na biblioteca', '2h', 'prata', 'Leia os resumos por 2 horas, somando todas as leituras.'],
+    ['bib-tempo-600', 600, 'Rato de biblioteca', '10h', 'ouro', 'Leia os resumos por 10 horas, somando todas as leituras.'],
+    ['bib-tempo-1500', 1500, 'Monge do scriptorium', '25h', 'esmeralda', 'Leia os resumos por 25 horas, somando todas as leituras.'],
+    ['bib-tempo-3000', 3000, 'Guardião dos tomos', '50h', 'lendario', 'Leia os resumos por 50 horas, somando todas as leituras.'],
+  ]),
+  ...familia('bibDias', 'bibDias', [
+    ['bib-dias-3', 3, 'Visita marcada', '3', 'bronze', 'Leia resumos em 3 dias diferentes, com pelo menos 1 minuto de leitura em cada.'],
+    ['bib-dias-7', 7, 'Semana de leitura', '7', 'prata', 'Leia resumos em 7 dias diferentes, com pelo menos 1 minuto de leitura em cada.'],
+    ['bib-dias-15', 15, 'Leitor de cabeceira', '15', 'ouro', 'Leia resumos em 15 dias diferentes.'],
+    ['bib-dias-30', 30, 'Mês na biblioteca', '30', 'esmeralda', 'Leia resumos em 30 dias diferentes.'],
+    ['bib-dias-60', 60, 'Morador da biblioteca', '60', 'lendario', 'Leia resumos em 60 dias diferentes.'],
+  ]),
+  ...familia('secretas', 'bibCoruja', [
+    ['secreta-coruja-biblioteca', 1, 'Coruja da biblioteca', '0h', 'ouro', 'Abra um resumo da Biblioteca entre meia-noite e 5 da manhã.'],
   ], true),
   ...familia('secretas', 'revisoesNumDia', [
     ['secreta-muralha', 100, 'Muralha derrubada', '100', 'esmeralda', 'Faça 100 revisões de questões num mesmo dia.'],
@@ -610,6 +657,13 @@ export interface Metricas {
   fcDragoes: number
   fcSemErrar: number
   fcLendarios: number
+  bibMarcas: number
+  bibNotas: number
+  bibAbertos: number
+  bibConcluidos: number
+  bibMinutos: number
+  bibDias: number
+  bibCoruja: number
   /** Emblemas já conquistados e travados no servidor: não se perdem. */
   travadas?: ReadonlySet<string>
   /** Porcentagem de acerto na primeira tentativa (0 enquanto houver menos de APROVEITAMENTO_MINIMO questões). */
@@ -658,6 +712,8 @@ export interface Extras {
   folgasRevisao?: readonly number[]
   /** Métricas dos Flashcards (src/flashcards/conquistas.ts). */
   flashcards?: MetricasFlashcards | null
+  /** Métricas da Biblioteca de Resumos (src/biblioteca/conquistas.ts). */
+  biblioteca?: MetricasBiblioteca | null
 }
 
 const HORA = 60 * 60 * 1000
@@ -934,6 +990,8 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     revisoesNumDia: revisao.maiorDia,
     ...METRICAS_FLASHCARDS_VAZIAS,
     ...extras.flashcards,
+    ...METRICAS_BIBLIOTECA_VAZIAS,
+    ...extras.biblioteca,
     questoes: Object.keys(respondidas).length,
     // A sequência vale enquanto está viva: perdeu, o emblema some e recomeça do zero.
     sequencia: calcularStreak(respondidas, agora).atual,
@@ -1003,9 +1061,11 @@ export const desbloqueado = (emblema: Emblema, metricas: Metricas): boolean =>
   (emblema.familia !== 'sequencia' && !!metricas.travadas?.has(emblema.id)) || valorDe(emblema, metricas) >= emblema.minimo
 
 /** Entra na Platina: tudo o que não é secreto, menos a sequência (que pode se perder) e a própria Platina. */
-const contaParaPlatina = (e: Emblema) => !e.secreta && e.familia !== 'sequencia' && !e.familia.startsWith('fc') && e.id !== 'chefe-platina'
+const contaParaPlatina = (e: Emblema) => !e.secreta && e.familia !== 'sequencia' && !ehFamiliaFlashcards(e.familia) && !ehFamiliaBiblioteca(e.familia) && e.id !== 'chefe-platina'
 /** Famílias dos Flashcards (produto à parte, em beta): ficam fora da Platina. */
 export const ehFamiliaFlashcards = (f: FamiliaId) => f.startsWith('fc')
+/** Famílias da Biblioteca de Resumos (em beta, 16/10/2026): também ficam fora da Platina. */
+export const ehFamiliaBiblioteca = (f: FamiliaId) => f.startsWith('bib')
 /** Fecha as métricas: a Platina depende de todos os outros emblemas. */
 export function completarMetricas(metricas: Metricas): Metricas {
   const platina = EMBLEMAS.filter(contaParaPlatina).every((e) => desbloqueado(e, metricas)) ? 1 : 0
@@ -1013,7 +1073,7 @@ export function completarMetricas(metricas: Metricas): Metricas {
 }
 
 /** Famílias de contagem simples, em que "faltam N" se lê sem explicação (página inicial, "Quase lá"). */
-const FAMILIAS_QUASE_LA: ReadonlySet<FamiliaId> = new Set(['questoes', 'sequencia', 'dias', 'acertos', 'dominadas', 'sessoes', 'redencao', 'revisoes', 'imagem', 'constancia', 'colecao', 'anotacoes'])
+const FAMILIAS_QUASE_LA: ReadonlySet<FamiliaId> = new Set(['questoes', 'sequencia', 'dias', 'acertos', 'dominadas', 'sessoes', 'redencao', 'revisoes', 'imagem', 'constancia', 'colecao', 'anotacoes', 'bibMarcas', 'bibConcluidos', 'bibDias'])
 
 export interface QuaseLa { emblema: Emblema; valor: number; falta: number; fracao: number; texto: string }
 

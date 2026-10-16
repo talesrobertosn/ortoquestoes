@@ -123,6 +123,8 @@ Legenda da figura no original (a imagem só aparece com licença).
 | Frases que caem (antigo Resumão) | `src/paginas/Resumao.tsx` em `#/resumos/frases`, `src/biblioteca/FrasesDoTema.tsx` | Desde 16/10/2026 o Resumão é adendo da Biblioteca: `#/resumao` redireciona para `#/resumos/frases` (com `?tema=`), saiu do menu e do rodapé, e cada resumo termina com um adendo pequeno (5 frases, "mostrar mais") das frases dos seus `subtemas` (`public/acervo/resumao.json`). Quem não assina vê 2. |
 | Acesso | `acesso` do capítulo + `usarPremium` | Igual às frases que caem: a regra vale na interface; o conteúdo é estático. Para proteger no servidor seria preciso servir o capítulo por função autenticada (pendência). |
 
+| Emblemas dos resumos (16/10/2026) | `src/biblioteca/conquistas.ts` (métricas), `src/biblioteca/tempoLeitura.ts` (cronômetro), famílias `bib…` em `src/estado/conquistas.ts` | Calculados no aparelho a partir da chave `biblioteca`, sem SQL novo. O documento de leitura ganhou `segundos` (leitura ativa: aba visível, leitor aberto e alguém mexendo nos últimos 2 min; no máximo o tempo real) e `dias` (dias de São Paulo com 1 minuto de leitura, até 120 por capítulo). O tempo vai na gravação da posição que já existe: junto com ela a partir de 30 s acumulados, sozinho a cada 2 min sem rolar e, ao sair ou esconder a aba, o que sobrou. Na junção entre aparelhos, `segundos` fica com o maior e `dias` com a união. Detalhes e lista em `docs/emblemas.md`. |
+
 "Salvo na conta" só aparece quando não há nenhum item da Biblioteca na fila; sem conexão aparece
 "Alterações locais pendentes"; banco sem a parte 29 aparece "Falha na sincronização" e as marcações
 ficam no aparelho (sem travar as respostas das questões e sem ir para "não enviados").
@@ -131,7 +133,8 @@ ficam no aparelho (sem travar as respostas das questões e sem ir para "não env
 
 - `npm test` inclui `fixtures/testar_biblioteca.mjs`: âncoras (exata, movida, outro bloco, trecho
   repetido, órfã, sobreposição), junção entre aparelhos, conflito pela fila real, banco sem a migração e o
-  gerador (`--conferir`).
+  gerador (`--conferir`), e a junção de `segundos` e `dias`. As métricas dos emblemas e o cronômetro de
+  leitura estão em `fixtures/testar_conquistas.mjs`.
 - `node fixtures/e2e_biblioteca.mjs` (Playwright, Supabase falso): destacar, anotar, recarregar, fonte,
   tema e modo paginado, abrir questão e voltar ao mesmo ponto, outro aparelho (celular) com a posição,
   sem conexão com edição conflitante (as duas notas ficam), exclusão, caderno, banco sem migração.

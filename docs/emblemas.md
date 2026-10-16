@@ -123,6 +123,36 @@ travado da pessoa e, depois, a vitrine, pela RPC `ranking_flashcards_emblemas` (
 `supabase/migrations/202610151800_emblemas_revisao_flashcards.sql`). Sem o SQL, o ranking aparece como
 antes, sem emblemas, e os emblemas de andar ficam em zero.
 
+## Feitos em 16/10/2026: Biblioteca de Resumos
+
+Pedido do Tales: emblemas para quem lê os resumos (quem marca, quem anota, quem abre, quem conclui,
+quanto tempo e quantos dias), **na arte dos easter eggs** (`scripts/eventos/gerar.py`): objetos com
+mais detalhe (miolo, reflexo, fita, brilho), o verde e o creme do site e o metal do nível nas peças de
+destaque. Desenho no mesmo script dos emblemas, lote 4 (`scripts/gerar_emblemas_provisorios.py`,
+funções `bib_*` e `coruja_biblioteca`). Exceção pedida pelo dono à regra "o primeiro nível já exige
+esforço": os primeiros passos (primeiro grifo, primeira nota, primeiro resumo aberto) são de bronze de
+propósito, para apresentar a Biblioteca; os níveis altos continuam difíceis. Os concluídos são limitados
+pelo acervo (7 resumos hoje): quando houver mais, criar níveis acima, sem endurecer os de agora.
+
+Tudo é calculado no aparelho (`src/biblioteca/conquistas.ts`) a partir da chave sincronizada
+`biblioteca`; **não precisa de SQL**. Uma vez conquistado, o emblema é travado no servidor
+(`registrar_conquistas`) como os outros. Ficam **fora da Platina** (produto em beta, como os Flashcards).
+
+| Família | Níveis | Regra | Arte |
+|---|---|---|---|
+| Resumos: marcações | 1 bronze, 10 prata, 50 ouro, 150 esmeralda, 300 lendário | Grifos coloridos não apagados (o marcador de página não conta) | Folha com trechos grifados (uma cor a mais por nível, capitular iluminada no topo) e marca-texto no metal do nível |
+| Resumos: notas na margem | 1 bronze, 10 prata, 50 ouro, 150 esmeralda | Marcações com nota escrita (3+ letras) | Ficha com glosas na margem, tinteiro e pena; fita e lacre nos altos |
+| Resumos: abertos | 1 bronze, 5 prata | Capítulos diferentes abertos | Tomo verde aberto com a página virando e a fita |
+| Resumos: concluídos | 1 prata, 3 ouro, 7 esmeralda | Lido até o fim com 5+ minutos de leitura ativa nele (leituras de antes do cronômetro contam) | Prateleira com 1, 3 e 7 tomos e o aparador no metal do nível |
+| Resumos: tempo de leitura | 30 min bronze, 2 h prata, 10 h ouro, 25 h esmeralda, 50 h lendário | Soma da leitura ativa (`segundos` de cada leitura) | Ampulheta sobre o tomo; a areia desce a cada nível |
+| Resumos: dias de leitura | 3 bronze, 7 prata, 15 ouro, 30 esmeralda, 60 lendário | Dias de São Paulo com 1+ minuto de leitura ativa (`dias` de cada leitura, unidos) | Folhinha com os dias carimbados |
+| Secreta: Coruja da biblioteca | ouro | Abrir um resumo entre meia-noite e 5 da manhã | Coruja sobre a pilha de resumos, com a lua |
+
+Leitura ativa: aba visível, leitor aberto e alguém mexendo nele (rolar, tocar, clicar, teclar) nos
+últimos 2 minutos; cada passo de 5 s soma no máximo o tempo real, então nunca passa de 60 s por minuto
+(`src/biblioteca/tempoLeitura.ts`). Ideias que ficaram para depois: ler as "Frases que caem" e ler o
+resumo antes das questões do dia.
+
 ## Banco de ideias (brainstorm, ainda não decidido)
 
 **Aproveitamento**

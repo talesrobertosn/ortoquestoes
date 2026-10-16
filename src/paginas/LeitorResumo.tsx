@@ -4,6 +4,7 @@ import { criarAncora, faixasDoBloco, resolverAncora, type Ancora, type AncoraRes
 import { CORES, ehTexto, type Bloco, type Capitulo, type CorMarca, type Marca, type Preferencias, type Radar } from '../biblioteca/tipos'
 import { usarBiblioteca, usarEstadoSalvamento } from '../biblioteca/usarBiblioteca'
 import { FrasesDoTema } from '../biblioteca/FrasesDoTema'
+import { GRAVAR_SOZINHO_S, PASSO_MS, novoCronometro, passoCronometro, registrarAtividade, retirarTempo } from '../biblioteca/tempoLeitura'
 import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
 import { Icone } from '../componentes/Icone'
@@ -222,12 +223,16 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
   // ── Salvar a posição (com folga: não grava a cada pixel) ──
   const temporizador = useRef<ReturnType<typeof setTimeout>>()
-  const salvarAgora = useCallback(() => {
+  // Tempo de leitura ativa (emblemas dos resumos): vai na mesma gravação da posição (src/biblioteca/tempoLeitura.ts).
+  const cronometro = useRef(novoCronometro())
+  /** `forcar`: ao sair ou esconder a aba, grava também o tempo que sobrou. */
+  const salvarAgora = useCallback((forcar = false) => {
     clearTimeout(temporizador.current)
     const p = posicao.current
-    if (!p) return
+    const tempo = retirarTempo(cronometro.current, forcar)
+    if (!p && !tempo) return
     const pct = Math.round(progressoAtual())
-    bib.salvarLeitura(capitulo.id, { bloco: p.bloco, deslocamento: Math.round(p.fracao * 100) / 100, progresso: pct, ...(pct >= 98 && !leitura?.concluidoEm ? { concluidoEm: Date.now() } : {}) })
+    bib.salvarLeitura(capitulo.id, p ? { bloco: p.bloco, deslocamento: Math.round(p.fracao * 100) / 100, progresso: pct, ...(pct >= 98 && !leitura?.concluidoEm ? { concluidoEm: Date.now() } : {}) } : {}, tempo)
   }, [capitulo.id, leitura?.concluidoEm]) // eslint-disable-line react-hooks/exhaustive-deps
   function progressoAtual() {
     const el = rolagem.current
@@ -238,16 +243,30 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     return max <= 0 ? 100 : (el.scrollTop / max) * 100
   }
   const aoRolar = useCallback(() => {
+    registrarAtividade(cronometro.current)
     posicao.current = lerPosicao()
     definirProgresso(progressoAtual())
     clearTimeout(temporizador.current)
     temporizador.current = setTimeout(salvarAgora, 1200)
   }, [lerPosicao, salvarAgora]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
-    const sair = () => { if (document.visibilityState === 'hidden') salvarAgora() }
+    const sair = () => { if (document.visibilityState === 'hidden') salvarAgora(true) }
+    const fechar = () => salvarAgora(true)
     document.addEventListener('visibilitychange', sair)
-    window.addEventListener('pagehide', salvarAgora)
-    return () => { document.removeEventListener('visibilitychange', sair); window.removeEventListener('pagehide', salvarAgora); salvarAgora() }
+    window.addEventListener('pagehide', fechar)
+    return () => { document.removeEventListener('visibilitychange', sair); window.removeEventListener('pagehide', fechar); salvarAgora(true) }
+  }, [salvarAgora])
+  // O relógio da leitura ativa: um passo a cada PASSO_MS; parado sem mexer há 2 minutos ou com a aba escondida.
+  useEffect(() => {
+    const mexeu = () => registrarAtividade(cronometro.current)
+    const eventos = ['pointerdown', 'pointermove', 'keydown', 'wheel', 'touchstart'] as const
+    for (const e of eventos) window.addEventListener(e, mexeu, { passive: true })
+    const relogio = setInterval(() => {
+      passoCronometro(cronometro.current, document.visibilityState === 'visible')
+      // Lendo sem rolar (uma tabela, uma figura): grava o tempo sozinho de vez em quando.
+      if (cronometro.current.pendente >= GRAVAR_SOZINHO_S) salvarAgora()
+    }, PASSO_MS)
+    return () => { clearInterval(relogio); for (const e of eventos) window.removeEventListener(e, mexeu) }
   }, [salvarAgora])
 
   const mudarPagina = useCallback((delta: number) => {
@@ -412,7 +431,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const { iniciarComAviso } = usarSessao()
   const idsDoCapitulo = useMemo(() => [...new Set(capitulo.secoes.flatMap((s) => s.blocos.flatMap((b) => b.tipo === 'questoes' ? [...questoesReais(b), ...b.treino] : [])))], [capitulo])
   async function treinarCapitulo() {
-    salvarAgora()
+    salvarAgora(true)
     if (!premium) { navegar('/assinatura'); return }
     if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, embaralhar: false, limite: idsDoCapitulo.length }, idsDoCapitulo))) return
     navegar('/sessao')

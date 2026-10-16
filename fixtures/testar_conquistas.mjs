@@ -191,6 +191,47 @@ try {
   assert.equal(f.areaDoFlashcard('fc-ombro-cotovelo-0012-q'), 'ombro-cotovelo')
   const mf = f.metricasFlashcards({ registros: { 'fc-joelho-0001-q': { c: true, acertos: 1, sequencia: 9, confianca: 'seguro' } }, bestiario: { vencidos: ['dragao-de-ossos', 'dragao-rubro'] }, recordes: { andarMaximo: 40, melhorSequencia: 7 }, servidor: { andar_masmorra: 12, unicos: 1 }, lendarias: new Set(['fc-joelho-0001-q']) })
   assert.deepEqual([mf.fcAndar, mf.fcEspecialista, mf.fcDragoes, mf.fcDragaoOssos, mf.fcSemErrar, mf.fcLendarios], [12, 1, 2, 1, 7, 1]) // andar só do servidor
+  // Biblioteca de Resumos (16/10/2026): marcações, notas, abertos, concluídos, tempo e dias.
+  const arqBib = join(pasta, 'bib.mjs')
+  await build({ stdin: { contents: `export * from './src/biblioteca/conquistas'; export * from './src/biblioteca/tempoLeitura';`, resolveDir: process.cwd() }, outfile: arqBib, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' } })
+  const b = await import(pathToFileURL(arqBib))
+  const marca = (id, extra = {}) => ({ tipo: 'marca', id, capitulo: 'cap', ancora: {}, cor: 'amarelo', nota: '', criadaEm: 1, editadaEm: 1, ...extra })
+  const docs = {
+    'm.a': marca('a', { nota: 'Neer: 4 partes' }), 'm.b': marca('b'), 'm.c': marca('c', { apagadaEm: 5, nota: 'apagada' }),
+    'm.d': marca('d', { marcador: true }), 'm.e': marca('e', { nota: '  ' }),
+    'l.um': { tipo: 'leitura', capitulo: 'um', bloco: '', deslocamento: 0, progresso: 100, em: 1, concluidoEm: 9, segundos: 1800, dias: [20740, 20741] },
+    'l.dois': { tipo: 'leitura', capitulo: 'dois', bloco: '', deslocamento: 0, progresso: 100, em: 1, concluidoEm: 9, segundos: 40, dias: [20741, 20745] },
+    'l.tres': { tipo: 'leitura', capitulo: 'tres', bloco: '', deslocamento: 0, progresso: 100, em: 1, concluidoEm: 9 }, // de antes do cronômetro
+    'l.quatro': { tipo: 'leitura', capitulo: 'quatro', bloco: '', deslocamento: 0, progresso: 0, em: 1, aberturas: [new Date(2026, 9, 16, 3, 20).getTime()] },
+    pref: { tipo: 'pref', em: 1 },
+  }
+  const mb = b.metricasBiblioteca(docs)
+  assert.deepEqual(mb, { bibMarcas: 3, bibNotas: 1, bibAbertos: 4, bibConcluidos: 2, bibMinutos: 30, bibDias: 3, bibCoruja: 1 })
+  assert.deepEqual(b.metricasBiblioteca(null), b.METRICAS_BIBLIOTECA_VAZIAS)
+  const comBib = m.calcularMetricas({}, [], { biblioteca: mb })
+  for (const id of ['bib-marcas-1', 'bib-notas-1', 'bib-abertos-1', 'bib-concluidos-1', 'bib-tempo-30', 'bib-dias-3', 'secreta-coruja-biblioteca']) assert.ok(m.desbloqueado(m.emblemaPorId(id), comBib), id)
+  for (const id of ['bib-marcas-10', 'bib-abertos-5', 'bib-concluidos-3', 'bib-tempo-120', 'bib-dias-7']) assert.ok(!m.desbloqueado(m.emblemaPorId(id), comBib), id)
+  assert.ok(m.EMBLEMAS.filter((e) => e.familia.startsWith('bib')).length >= 20)
+  // Os dos Resumos ficam fora da Platina, como os de Flashcards.
+  const semBib = m.completarMetricas({ ...ms, travadas: new Set(m.EMBLEMAS.map((e) => e.id).filter((id) => id !== 'chefe-platina' && !id.startsWith('fc-') && !id.startsWith('bib-'))) })
+  assert.equal(semBib.platina, 1)
+  // Cronômetro: só conta com a aba visível e alguém mexendo; nunca mais que o tempo real.
+  const t0 = new Date(2026, 9, 16, 10, 0).getTime()
+  const cr = b.novoCronometro(t0)
+  for (let k = 1; k <= 12; k++) b.passoCronometro(cr, true, t0 + k * 5000) // 1 minuto lendo
+  assert.equal(Math.round(cr.pendente), 60)
+  b.passoCronometro(cr, true, t0 + 60_000 + 3_600_000) // uma hora depois, sem ninguém mexer
+  assert.equal(Math.round(cr.pendente), 60, 'parado há mais de 2 minutos não conta')
+  b.registrarAtividade(cr, t0 + 3_700_000)
+  b.passoCronometro(cr, false, t0 + 3_705_000) // aba escondida
+  assert.equal(Math.round(cr.pendente), 60)
+  b.passoCronometro(cr, true, t0 + 3_710_000)
+  assert.equal(Math.round(cr.pendente), 65)
+  const r1 = b.retirarTempo(cr)
+  assert.equal(r1.segundos, 65); assert.ok(Number.isInteger(r1.dia), 'com 1 minuto, o dia vai junto')
+  b.passoCronometro(cr, true, t0 + 3_715_000)
+  assert.equal(b.retirarTempo(cr), null, 'menos de 30 s espera a próxima gravação')
+  assert.deepEqual(b.retirarTempo(cr, true), { segundos: 5 }, 'ao sair grava o que sobrou; o dia não se repete')
   console.log('Emblemas difíceis: todos corretos.')
 } finally {
   await rm(pasta, { recursive: true, force: true })

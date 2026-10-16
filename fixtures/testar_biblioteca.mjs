@@ -73,6 +73,9 @@ try {
   // Posição: vale a mais recente; o progresso e a conclusão não andam para trás.
   const l = m.juntarBiblioteca({ tipo: 'leitura', capitulo: 'cap', bloco: 'b', deslocamento: 0, progresso: 80, em: 5, concluidoEm: 4 }, { tipo: 'leitura', capitulo: 'cap', bloco: 'a', deslocamento: 0, progresso: 20, em: 9 })
   assert.equal(l.bloco, 'a'); assert.equal(l.progresso, 80); assert.equal(l.concluidoEm, 4)
+  // Tempo de leitura: fica o maior (não conta duas vezes); dias de leitura: a união, em ordem.
+  const lt = m.juntarBiblioteca({ tipo: 'leitura', capitulo: 'cap', bloco: 'b', deslocamento: 0, progresso: 10, em: 5, segundos: 300, dias: [3, 1] }, { tipo: 'leitura', capitulo: 'cap', bloco: 'a', deslocamento: 0, progresso: 20, em: 9, segundos: 120, dias: [2, 3] })
+  assert.equal(lt.segundos, 300); assert.deepEqual(lt.dias, [1, 2, 3])
 
   // ── Pela fila de sincronização: o mesmo item editado nos dois aparelhos ──
   const estado = m.estadoVazio()
