@@ -52,6 +52,147 @@ export const ASSADOS: Record<string, MetaAssada> = {
    }
   }
  },
+ "cavaleiro-artrodese": {
+  "largura": 168,
+  "altura": 124,
+  "colunas": 6,
+  "ancora": [
+   86,
+   108
+  ],
+  "caixa": [
+   58,
+   14,
+   57,
+   96
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "cavaleiro-fibula": {
+  "largura": 168,
+  "altura": 124,
+  "colunas": 6,
+  "ancora": [
+   86,
+   108
+  ],
+  "caixa": [
+   59,
+   6,
+   52,
+   104
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "cavaleiro": {
+  "largura": 168,
+  "altura": 124,
+  "colunas": 6,
+  "ancora": [
+   86,
+   108
+  ],
+  "caixa": [
+   59,
+   14,
+   56,
+   96
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 260
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
  "cogumelo": {
   "largura": 156,
   "altura": 112,
@@ -96,6 +237,147 @@ export const ASSADOS: Record<string, MetaAssada> = {
     "linha": 5,
     "quadros": 4,
     "ms": 140
+   }
+  }
+ },
+ "corvo": {
+  "largura": 156,
+  "altura": 116,
+  "colunas": 6,
+  "ancora": [
+   80,
+   101
+  ],
+  "caixa": [
+   43,
+   42,
+   71,
+   62
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 230
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 65
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "dragao-ancestral": {
+  "largura": 264,
+  "altura": 216,
+  "colunas": 6,
+  "ancora": [
+   150,
+   206
+  ],
+  "caixa": [
+   21,
+   27,
+   231,
+   189
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 230
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 85
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 150
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "dragao-escarlate": {
+  "largura": 264,
+  "altura": 216,
+  "colunas": 6,
+  "ancora": [
+   150,
+   206
+  ],
+  "caixa": [
+   21,
+   27,
+   231,
+   189
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 230
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 110
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 85
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 150
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
    }
   }
  },
@@ -190,6 +472,53 @@ export const ASSADOS: Record<string, MetaAssada> = {
     "linha": 5,
     "quadros": 4,
     "ms": 170
+   }
+  }
+ },
+ "escaravelho": {
+  "largura": 164,
+  "altura": 112,
+  "colunas": 6,
+  "ancora": [
+   86,
+   99
+  ],
+  "caixa": [
+   49,
+   54,
+   67,
+   47
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 230
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 70
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
    }
   }
  },
@@ -582,6 +911,53 @@ export const ASSADOS: Record<string, MetaAssada> = {
    45,
    60,
    57
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 220
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 100
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 75
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "gosma-sinovial": {
+  "largura": 112,
+  "altura": 104,
+  "colunas": 6,
+  "ancora": [
+   54,
+   96
+  ],
+  "caixa": [
+   24,
+   52,
+   60,
+   50
   ],
   "animacoes": {
    "parado": {
@@ -1120,6 +1496,194 @@ export const ASSADOS: Record<string, MetaAssada> = {
     "linha": 3,
     "quadros": 3,
     "ms": 90
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "morcego": {
+  "largura": 172,
+  "altura": 116,
+  "colunas": 6,
+  "ancora": [
+   86,
+   101
+  ],
+  "caixa": [
+   38,
+   29,
+   96,
+   73
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 150
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 95
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 65
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 120
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 130
+   }
+  }
+ },
+ "raptor-alfa": {
+  "largura": 176,
+  "altura": 116,
+  "colunas": 6,
+  "ancora": [
+   92,
+   101
+  ],
+  "caixa": [
+   38,
+   14,
+   125,
+   90
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 220
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 90
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 65
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "raptor-sombrio": {
+  "largura": 176,
+  "altura": 116,
+  "colunas": 6,
+  "ancora": [
+   92,
+   101
+  ],
+  "caixa": [
+   38,
+   19,
+   125,
+   85
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 220
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 90
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 65
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
+   },
+   "derrota": {
+    "linha": 4,
+    "quadros": 5,
+    "ms": 130
+   },
+   "vitoria": {
+    "linha": 5,
+    "quadros": 4,
+    "ms": 150
+   }
+  }
+ },
+ "raptor": {
+  "largura": 176,
+  "altura": 116,
+  "colunas": 6,
+  "ancora": [
+   92,
+   101
+  ],
+  "caixa": [
+   38,
+   19,
+   125,
+   85
+  ],
+  "animacoes": {
+   "parado": {
+    "linha": 0,
+    "quadros": 4,
+    "ms": 220
+   },
+   "preparo": {
+    "linha": 1,
+    "quadros": 3,
+    "ms": 90
+   },
+   "golpe": {
+    "linha": 2,
+    "quadros": 6,
+    "ms": 65
+   },
+   "dano": {
+    "linha": 3,
+    "quadros": 3,
+    "ms": 85
    },
    "derrota": {
     "linha": 4,

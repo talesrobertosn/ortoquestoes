@@ -1,0 +1,47 @@
+{
+ "largura": 156,
+ "altura": 116,
+ "colunas": 6,
+ "ancora": [
+  80,
+  101
+ ],
+ "animacoes": {
+  "parado": {
+   "linha": 0,
+   "quadros": 4,
+   "ms": 230
+  },
+  "preparo": {
+   "linha": 1,
+   "quadros": 3,
+   "ms": 95
+  },
+  "golpe": {
+   "linha": 2,
+   "quadros": 6,
+   "ms": 65
+  },
+  "dano": {
+   "linha": 3,
+   "quadros": 3,
+   "ms": 85
+  },
+  "derrota": {
+   "linha": 4,
+   "quadros": 5,
+   "ms": 130
+  },
+  "vitoria": {
+   "linha": 5,
+   "quadros": 4,
+   "ms": 150
+  }
+ },
+ "caixa": [
+  43,
+  42,
+  71,
+  62
+ ]
+}

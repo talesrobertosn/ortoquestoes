@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent }
 import { usarConta } from '../conta/ContextoConta'
 import { confirmar } from '../componentes/Confirmar'
 import { AdminFichaUsuario } from '../componentes/admin/AdminFichaUsuario'
-import { PARTE_COBRANCAS, lerEvento, linkDoEvento, reprocessarEvento, type EventoPagamento } from '../componentes/admin/pagamentos'
+import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, lerEvento, linkDoEvento, reprocessarEvento, type EventoPagamento } from '../componentes/admin/pagamentos'
 import { href, navegar } from '../util/rotas'
 import { Icone } from '../componentes/Icone'
 import { AdminConteudo, type VistaConteudo } from '../componentes/admin/AdminConteudo'
@@ -17,14 +17,22 @@ import { AdminSimulados } from '../componentes/admin/AdminSimulados'
 import { SECOES, abaPadrao, definicaoDe, lerUrl, secaoDe, urlAntiga, urlDe, type Aba, type EstadoUrl, type Secao } from '../componentes/admin/secoes'
 import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
 import { AdminFinanceiro } from '../componentes/admin/AdminFinanceiro'
+import { AdminCobrancas } from '../componentes/admin/AdminCobrancas'
+import { AdminExportar } from '../componentes/admin/AdminExportar'
+import { proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../componentes/admin/rotulos'
+import type { CobrancaReal } from '../componentes/admin/receita'
 import { AdminOpinioesFlashcards } from '../componentes/admin/AdminOpinioesFlashcards'
 import { contaDeTeste } from '../componentes/admin/contasTeste'
-import { meioDe } from '../componentes/admin/receita'
+import { meioDe, precoDe } from '../componentes/admin/receita'
+import { real } from '../dados/planos'
 import { usarLidos } from '../componentes/admin/lidos'
 import { usarRpc } from '../componentes/admin/usarRpc'
 import { usarContadoresAdmin } from '../componentes/admin/contadores'
+import { Comparacao } from '../componentes/admin/Comparacao'
+import { estudoDeHoje, type DiaSerie, type EstudoHoje } from '../componentes/admin/estudoHoje'
+import type { SinalUsuario } from '../componentes/admin/sinais'
 import {
-  PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
+  STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
 } from '../componentes/admin/formatos'
 import '../estilos/paginas/AdminAssinaturas.css'
 
@@ -95,12 +103,18 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   // Sem a RPC leve (parte 22 ainda não colada), o número de contas sai da própria lista.
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
-    // Só Hoje, Pessoas › Usuários e Pessoas › Crescimento mostram a lista.
-    ativo: aba === 'hoje' || aba === 'usuarios' || aba === 'crescimento' || semContadores,
+    // Hoje, Pessoas › Usuários e Crescimento mostram a lista; Assinaturas, Cobranças e Avisos usam para abrir a ficha.
+    ativo: ['hoje', 'usuarios', 'crescimento', 'assinaturas', 'cobrancas', 'pagamentos'].includes(aba) || semContadores,
     // "Ao vivo" só em Pessoas › Usuários e com a aba do navegador visível.
     atualizarCada: aba === 'usuarios' ? 30_000 : undefined,
     prazoMs: 20_000,
   })
+  // Cobranças gravadas no banco (parte 23): Financeiro e Cobranças leem da mesma consulta. Sem a RPC, tudo pelo preço dos planos.
+  const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: aba === 'financeiro' || aba === 'cobrancas' })
+  const cobrancasReais = cobrancasQ.erro ? null : cobrancasQ.dados ?? null
+  const avisoReais = !cobrancasQ.erro ? null : funcaoAusente(cobrancasQ.erro)
+    ? `Para usar os valores gravados no banco (Pix pelo valor pago, cartão pelo valor contratado), cole no Supabase a ${PARTE_COBRANCAS}. Enquanto isso, os valores são estimados pelos planos.`
+    : `As cobranças gravadas não carregaram (código: ${codigoDaFalha(cobrancasQ.erro)}); os valores abaixo são estimados pelos planos.`
   const assinaturas = assinaturasQ.dados ?? null
   const eventos = eventosQ.dados ?? null
   const usuarios = usuariosQ.dados ?? null
@@ -121,15 +135,16 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const usuariosReais = useMemo(() => usuarios?.filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
 
   // Um clique por vez: o botão fica ocupado e os pedidos em voo são reaproveitados.
-  const atualizando = assinaturasQ.carregando || eventosQ.carregando || resumoQ.carregando || usuariosQ.carregando || contadoresQ.carregando
+  const atualizando = assinaturasQ.carregando || eventosQ.carregando || resumoQ.carregando || usuariosQ.carregando || contadoresQ.carregando || cobrancasQ.carregando
   const { recarregar: recAssinaturas } = assinaturasQ
   const { recarregar: recEventos } = eventosQ
   const { recarregar: recResumo } = resumoQ
   const { recarregar: recUsuarios } = usuariosQ
   const { recarregar: recContadores } = contadoresQ
+  const { recarregar: recCobrancas } = cobrancasQ
   const carregar = useCallback(async () => {
-    await Promise.all([recAssinaturas(), recEventos(), recResumo(), recUsuarios(), recContadores()])
-  }, [recAssinaturas, recEventos, recResumo, recUsuarios, recContadores])
+    await Promise.all([recAssinaturas(), recEventos(), recResumo(), recUsuarios(), recContadores(), recCobrancas()])
+  }, [recAssinaturas, recEventos, recResumo, recUsuarios, recContadores, recCobrancas])
   // Saindo de Conteúdo › Para revisar, o contador volta a vir do servidor já com o que foi resolvido lá.
   const abaAnterior = useRef(aba)
   useEffect(() => {
@@ -186,7 +201,10 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
         <h1>Painel do administrador</h1>
         <p>{atualizadoEm ? `Dados de ${atualizadoEm.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}.` : 'Verificando acesso…'} Só contas em administradores conseguem abrir.</p>
       </div>
-      <button className="botao adm-heroi__atualizar" type="button" onClick={() => void carregar()} disabled={atualizando} aria-busy={atualizando}><Icone nome="reiniciar" tamanho={16} /> {atualizando ? 'Atualizando…' : 'Atualizar'}</button>
+      <div className="adm-heroi__acoes">
+        {assinaturas !== null && <AdminExportar />}
+        <button className="botao adm-heroi__atualizar" type="button" onClick={() => void carregar()} disabled={atualizando} aria-busy={atualizando}><Icone nome="reiniciar" tamanho={16} /> {atualizando ? 'Atualizando…' : 'Atualizar'}</button>
+      </div>
     </header>
 
     {/* Falha ao atualizar não derruba o painel: o aviso aparece em cima dos dados que já estavam na tela. */}
@@ -226,7 +244,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
         <div id="adm-painel" className="empilha-2" role={variasPartes ? 'tabpanel' : undefined} aria-labelledby={variasPartes ? `adm-parte-${aba}` : undefined}>
           {erroNovo && (aba === 'hoje' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
 
-          {aba === 'hoje' && <Hoje resumo={resumo} usuarios={usuarios} assinaturas={reais ?? []} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
+          {aba === 'hoje' && <Hoje conta={conta} resumo={resumo} usuarios={usuarios} assinaturas={reais ?? []} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
 
           {aba === 'usuarios' && (usuarios
             ? <AdminUsuarios usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} />
@@ -234,8 +252,13 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
           {aba === 'cartas' && <AdminCartas usuarios={usuarios} />}
           {aba === 'crescimento' && <AdminCrescimento usuarios={usuariosReais} assinaturas={reais ?? []} />}
 
-          {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
-          {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
+          {aba === 'financeiro' && (cobrancasQ.dados === undefined && !cobrancasQ.erro
+            ? <p role="status">Carregando as cobranças…</p>
+            : <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} reais={cobrancasReais} avisoReais={avisoReais} errosPagamento={errosPagamento} irPara={trocarAba} />)}
+          {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} usuarios={usuarios} />}
+          {aba === 'cobrancas' && (cobrancasQ.dados === undefined && !cobrancasQ.erro
+            ? <p role="status">Carregando as cobranças…</p>
+            : <AdminCobrancas assinaturas={reais ?? []} reais={cobrancasReais} avisoReais={avisoReais} usuarios={usuarios} testes={testes} />)}
           {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} usuarios={usuarios} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
 
           {/* Montada só na própria parte: o contador da navegação vem de contadores_admin. */}
@@ -253,8 +276,8 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
 }
 
 /** Seção Hoje: números do dia e o que pede atenção, cada um com atalho para a parte certa. */
-function Hoje({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara, verUsuarios }: {
-  resumo: Resumo | null; usuarios: LinhaUsuario[] | null; assinaturas: LinhaAssinatura[]
+function Hoje({ conta, resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara, verUsuarios }: {
+  conta: string | undefined; resumo: Resumo | null; usuarios: LinhaUsuario[] | null; assinaturas: LinhaAssinatura[]
   errosPagamento: number; mensagens: number | null; irPara: (aba: Aba) => void; verUsuarios: (filtro: FiltroUsuarios) => void
 }) {
   // Recalculados só quando a lista muda (antes, a cada render do painel).
@@ -269,8 +292,16 @@ function Hoje({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara
   const vigentes = useMemo(() => assinaturas.filter(vigente), [assinaturas])
   const novasAssinaturas = useMemo(() => [...assinaturas].sort((a, b) => new Date(inicioDe(b)).getTime() - new Date(inicioDe(a)).getTime()).slice(0, 4), [assinaturas])
   const n = (valor: number | undefined) => valor === undefined ? '—' : valor.toLocaleString('pt-BR')
+  // Estudo de hoje x ontem (São Paulo): série diária (7 dias, o mínimo da RPC) e sinais de flashcards, das consultas que já existem.
+  const serieQ = usarRpc<DiaSerie[]>(conta, 'serie_diaria_admin', { p_dias: 7 }, { atualizarCada: 120_000 })
+  const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {})
+  const estudo = useMemo(() => estudoDeHoje({
+    serie: Array.isArray(serieQ.dados) ? serieQ.dados : null, usuarios,
+    sinais: Array.isArray(sinaisQ.dados) ? sinaisQ.dados : null,
+  }), [serieQ.dados, usuarios, sinaisQ.dados])
 
   return <div className="empilha-2">
+    <EstudoDeHoje estudo={estudo} carregando={serieQ.carregando && !serieQ.dados} verUsuarios={verUsuarios} />
     <section className="adm-kpis" aria-label="Números principais">
       <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--online" onClick={() => irPara('usuarios')}><span><i className="adm-online" aria-hidden="true" /> Online agora</span><strong>{n(resumo?.online_agora)}</strong><small>com a conta aberta nos últimos 3 minutos</small></button>
       <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--destaque" onClick={() => verUsuarios('novos')}><span>Usuários cadastrados</span><strong>{n(resumo?.usuarios)}</strong><small>{resumo ? `+${resumo.novos_7d} nos últimos 7 dias · ver quem chegou` : 'rode a migração nova'}</small></button>
@@ -278,7 +309,7 @@ function Hoje({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara
       <button type="button" className="adm-kpi adm-kpi--botao" onClick={() => verUsuarios('ativos')}><span>Ativos na semana</span><strong>{n(resumo?.ativos_7d)}</strong><small>{resumo ? `${n(resumo.ativos_30d)} nos últimos 30 dias · ver nomes` : ''}</small></button>
       <div className="adm-kpi"><span>Questões respondidas</span><strong>{n(resumo?.respondidas_hoje)}</strong><small>{resumo ? `hoje · ${n(resumo.respondidas_7d)} na semana` : 'hoje'}</small></div>
       <div className="adm-kpi"><span>Assinantes com acesso</span><strong>{vigentes.length}</strong><small>{assinaturas.length} assinatura(s) no histórico</small></div>
-      <button type="button" className={'adm-kpi adm-kpi--botao' + (errosPagamento ? ' adm-kpi--alerta' : '')} onClick={() => irPara('pagamentos')}><span>Pagamentos com problema</span><strong>{errosPagamento}</strong><small>{errosPagamento ? 'toque para revisar' : 'tudo certo'}</small></button>
+      <button type="button" className={'adm-kpi adm-kpi--botao' + (errosPagamento ? ' adm-kpi--alerta' : '')} onClick={() => irPara('pagamentos')}><span>Avisos de pagamento com problema</span><strong>{errosPagamento}</strong><small>{errosPagamento ? 'toque para revisar' : 'tudo certo'}</small></button>
       <button type="button" className={'adm-kpi adm-kpi--botao' + (mensagens ? ' adm-kpi--alerta' : '')} onClick={() => irPara('conteudo')}><span>Conteúdo para revisar</span><strong>{mensagens ?? '—'}</strong><small>relatos de erro e "não ajudou" com texto</small></button>
     </section>
 
@@ -307,49 +338,99 @@ function Hoje({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara
       <section className="adm-secao empilha">
         <div className="adm-secao__cabeca"><h2>Assinaturas recentes</h2><button type="button" className="adm-link" onClick={() => irPara('assinaturas')}>Ver todas <Icone nome="direita" tamanho={14} /></button></div>
         {novasAssinaturas.length === 0 ? <p className="adm-vazio">Nenhuma assinatura ainda.</p> : <ol className="adm-mini">
-          {novasAssinaturas.map(a => <li key={`${a.id_usuario}:${a.ultima_atualizacao}`}><span className="adm-mini__nome">{a.nome ?? a.usuario}<small>{PLANOS[a.plano] ?? a.plano} · {STATUS_ASSINATURA[a.status] ?? a.status}</small></span><span className="adm-mini__valor">{haQuanto(inicioDe(a))}</span></li>)}
+          {novasAssinaturas.map(a => <li key={`${a.id_usuario}:${a.ultima_atualizacao}`}><span className="adm-mini__nome">{a.nome ?? a.usuario}<small>{rotuloPlano(a.plano)} · {rotuloMeio(meioDe(a))} · {situacaoAssinatura(a).rotulo}</small></span><span className="adm-mini__valor">{haQuanto(inicioDe(a))}</span></li>)}
         </ol>}
       </section>
     </div>
   </div>
 }
 
+/** Faixa do topo: estudaram, fizeram questões, questões e flashcards hoje, comparados a ontem. */
+function EstudoDeHoje({ estudo, carregando, verUsuarios }: { estudo: EstudoHoje; carregando: boolean; verUsuarios: (filtro: FiltroUsuarios) => void }) {
+  const n = (v: number | null | undefined) => v === null || v === undefined ? '—' : v.toLocaleString('pt-BR')
+  const dataCurta = (dia: string) => dia.split('-').reverse().slice(0, 2).join('/')
+  return <section className="adm-estudo" aria-labelledby="adm-estudo-titulo">
+    <header className="adm-estudo__cabeca">
+      <h2 id="adm-estudo-titulo">Estudo de hoje</h2>
+      <small>{dataCurta(estudo.hoje)}, horário de São Paulo · comparado com ontem ({dataCurta(estudo.ontem)}, dia inteiro){carregando ? ' · carregando…' : ''}</small>
+    </header>
+    <div className="adm-estudo__numeros">
+      <button type="button" className="adm-estudo__item adm-estudo__item--destaque" onClick={() => verUsuarios('hoje')}>
+        <span>Pessoas que estudaram</span><strong>{n(estudo.estudaram)}</strong>
+        <small>questões ou flashcards{estudo.pessoasQuestoes ? ` · ontem ${n(estudo.pessoasQuestoes.ontem)} fizeram questões` : ''}</small>
+      </button>
+      <div className="adm-estudo__item">
+        <span>Fizeram questões</span><strong>{n(estudo.pessoasQuestoes?.hoje)}</strong>
+        {estudo.pessoasQuestoes ? <Comparacao atual={estudo.pessoasQuestoes.hoje} anterior={estudo.pessoasQuestoes.ontem} base="ontem" /> : <small>série diária indisponível</small>}
+      </div>
+      <div className="adm-estudo__item">
+        <span>Questões respondidas</span><strong>{n(estudo.questoes?.hoje)}</strong>
+        {estudo.questoes ? <Comparacao atual={estudo.questoes.hoje} anterior={estudo.questoes.ontem} base="ontem" /> : <small>série diária indisponível</small>}
+      </div>
+      <div className="adm-estudo__item">
+        <span>Usaram flashcards</span><strong>{n(estudo.flashcards)}</strong>
+        <small>{estudo.flashcards === null ? 'cole a parte 25 para ver' : 'sem comparação: o painel guarda só o último uso'}</small>
+      </div>
+    </div>
+  </section>
+}
+
 type FiltroAssinatura = 'vigentes' | 'todas' | 'pendente' | 'falha_pagamento' | 'encerradas'
 type Periodo = 'tudo' | '7' | '30' | '90' | '365'
 const FILTROS_ASSINATURA: Array<[FiltroAssinatura, string]> = [
-  ['vigentes', 'Pagantes com acesso'], ['todas', 'Todas'], ['pendente', 'Aguardando pagamento'],
-  ['falha_pagamento', 'Falha no pagamento'], ['encerradas', 'Canceladas e encerradas'],
+  ['vigentes', 'Com acesso'], ['todas', 'Todas'], ['pendente', 'Pendentes'],
+  ['falha_pagamento', 'Falha no pagamento'], ['encerradas', 'Canceladas, expiradas e reembolsadas'],
 ]
 const PERIODOS: Array<[Periodo, string]> = [['tudo', 'Desde sempre'], ['7', 'Últimos 7 dias'], ['30', 'Últimos 30 dias'], ['90', 'Últimos 3 meses'], ['365', 'Último ano']]
+const TOM_SELO = { ok: 'adm-selo--ok', aviso: 'adm-selo--aviso', ruim: 'adm-selo--ruim', neutro: 'adm-selo--neutro' } as const
 
-function Assinaturas({ linhas }: { linhas: LinhaAssinatura[] }) {
+/** Receita › Assinaturas: quem paga, por qual meio e plano, e até quando vale o acesso. Nomes de rotulos.ts. */
+function Assinaturas({ linhas, usuarios }: { linhas: LinhaAssinatura[]; usuarios: LinhaUsuario[] | null }) {
   const [filtro, definirFiltro] = useState<FiltroAssinatura>('vigentes')
   const [periodo, definirPeriodo] = useState<Periodo>('tudo')
   const [ordem, definirOrdem] = useState<'recentes' | 'antigas'>('recentes')
+  const [plano, definirPlano] = useState<'todos' | 'mensal' | 'semestral' | 'anual'>('todos')
+  const [meio, definirMeio] = useState<'todos' | 'pix' | 'cartao'>('todos')
   const [busca, definirBusca] = useState('')
+  const [ficha, definirFicha] = useState<LinhaUsuario | null>(null)
 
   const passa = useCallback((a: LinhaAssinatura, f: FiltroAssinatura) =>
     f === 'todas' ? true : f === 'vigentes' ? vigente(a) : f === 'encerradas' ? !vigente(a) && ['cancelada', 'vencida', 'reembolsada', 'pausada'].includes(a.status) : a.status === f, [])
 
-  const noPeriodo = useCallback((a: LinhaAssinatura) =>
-    periodo === 'tudo' || Date.now() - new Date(inicioDe(a)).getTime() <= Number(periodo) * 86_400_000, [periodo])
+  // Período, plano e meio valem para os números dos filtros também.
+  const recorte = useCallback((a: LinhaAssinatura) =>
+    (periodo === 'tudo' || Date.now() - new Date(inicioDe(a)).getTime() <= Number(periodo) * 86_400_000)
+    && (plano === 'todos' || a.plano === plano) && (meio === 'todos' || meioDe(a) === meio), [periodo, plano, meio])
 
   const visiveis = useMemo(() => {
     const termo = normalizar(busca.trim())
-    return linhas.filter(a => passa(a, filtro) && noPeriodo(a) && corresponde([a.nome, a.usuario, PLANOS[a.plano], STATUS_ASSINATURA[a.status]], termo))
+    return linhas.filter(a => passa(a, filtro) && recorte(a) && corresponde([a.nome, a.usuario, rotuloPlano(a.plano), situacaoAssinatura(a).rotulo, rotuloMeio(meioDe(a))], termo))
       .sort((x, y) => (new Date(inicioDe(y)).getTime() - new Date(inicioDe(x)).getTime()) * (ordem === 'recentes' ? 1 : -1))
-  }, [linhas, filtro, noPeriodo, busca, ordem, passa])
+  }, [linhas, filtro, recorte, busca, ordem, passa])
+  const usuarioDe = (id: string) => usuarios?.find(u => u.id_usuario === id) ?? null
 
   return <section className="empilha adm-secao" aria-labelledby="adm-titulo-assinaturas">
     <div className="adm-secao__cabeca"><div>
       <h2 id="adm-titulo-assinaturas">Assinaturas</h2>
-      <p>Quem paga, desde quando e até quando vale o acesso.</p>
-    </div></div>
-    <div className="adm-filtros" role="group" aria-label="Filtrar assinaturas">
-      {FILTROS_ASSINATURA.map(([valor, rotulo]) => <button key={valor} type="button" className="adm-chip" aria-pressed={filtro === valor} onClick={() => definirFiltro(valor)}>{rotulo}<span>{linhas.filter(a => passa(a, valor) && noPeriodo(a)).length}</span></button>)}
+      <p>Quem paga, por qual meio e plano, desde quando e até quando vale o acesso. Cartão renova sozinho; Pix é pago uma vez e termina no fim do período.</p>
     </div>
-    <div className="adm-busca adm-busca--tres">
+      <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-assinaturas-${new Date().toISOString().slice(0, 10)}.csv`,
+        ['Nome', 'E-mail', 'Plano', 'Meio', 'Situação', 'Assinante desde', 'Última cobrança paga', 'Data', 'Qual data', 'Cancela ao fim', 'Teste'],
+        visiveis.map(a => { const p = proximaData(a); return [a.nome, a.usuario, rotuloPlano(a.plano), rotuloMeio(meioDe(a)), situacaoAssinatura(a).rotulo, data(inicioDe(a)), a.ultima_cobranca_em ? data(a.ultima_cobranca_em) : '', p.valor ? data(p.valor) : '', p.rotulo, a.cancelar_ao_fim ? 'sim' : 'não', contaDeTeste(a) ? 'sim' : ''] }))}>
+        <Icone nome="baixar" tamanho={15} /> Exportar planilha
+      </button>
+    </div>
+    <div className="adm-filtros" role="group" aria-label="Filtrar assinaturas">
+      {FILTROS_ASSINATURA.map(([valor, rotulo]) => <button key={valor} type="button" className="adm-chip" aria-pressed={filtro === valor} onClick={() => definirFiltro(valor)}>{rotulo}<span>{linhas.filter(a => passa(a, valor) && recorte(a)).length}</span></button>)}
+    </div>
+    <div className="adm-busca adm-busca--filtros">
       <label className="campo">Buscar nome ou e-mail<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
+      <label className="campo">Plano<select className="entrada" value={plano} onChange={e => definirPlano(e.target.value as typeof plano)}>
+        <option value="todos">Todos</option><option value="mensal">Mensal</option><option value="semestral">Semestral</option><option value="anual">Anual</option>
+      </select></label>
+      <label className="campo">Meio<select className="entrada" value={meio} onChange={e => definirMeio(e.target.value as typeof meio)}>
+        <option value="todos">Pix e cartão</option><option value="pix">Só Pix</option><option value="cartao">Só cartão</option>
+      </select></label>
       <label className="campo">Assinou em<select className="entrada" value={periodo} onChange={e => definirPeriodo(e.target.value as Periodo)}>
         {PERIODOS.map(([valor, rotulo]) => <option key={valor} value={valor}>{rotulo}</option>)}
       </select></label>
@@ -357,33 +438,36 @@ function Assinaturas({ linhas }: { linhas: LinhaAssinatura[] }) {
         <option value="recentes">Mais recentes primeiro</option><option value="antigas">Mais antigas primeiro</option>
       </select></label>
     </div>
-    <div className="adm-linha-nota">
-      <p className="adm-nota" role="status">Mostrando {visiveis.length} de {linhas.length} assinatura(s).</p>
-      <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-assinaturas-${new Date().toISOString().slice(0, 10)}.csv`,
-        ['Nome', 'E-mail', 'Plano', 'Status', 'Assinante desde', 'Última cobrança paga', 'Acesso até', 'Cancela ao fim'],
-        visiveis.map(a => [a.nome, a.usuario, PLANOS[a.plano] ?? a.plano, STATUS_ASSINATURA[a.status] ?? a.status, data(inicioDe(a)), a.ultima_cobranca_em ? data(a.ultima_cobranca_em) : '', a.fim_periodo ? data(a.fim_periodo) : '', a.cancelar_ao_fim ? 'sim' : 'não']))}>
-        <Icone nome="baixar" tamanho={15} /> Exportar planilha
-      </button>
-    </div>
+    <p className="adm-nota" role="status">Mostrando {visiveis.length} de {linhas.length} assinatura(s). As de teste do dono aparecem aqui com o selo "Teste" e ficam fora dos números.</p>
     {visiveis.length === 0 ? <p className="adm-vazio">Nenhuma assinatura neste filtro.</p> : <ul className="adm-cartoes">
       {visiveis.map(a => {
         const inicio = inicioDe(a)
-        return <li key={`${a.id_usuario}:${a.ultima_atualizacao}`} className={'adm-cartao' + (vigente(a) ? ' adm-cartao--ok' : a.status === 'falha_pagamento' ? ' adm-cartao--ruim' : '')}>
+        const s = situacaoAssinatura(a)
+        const proxima = proximaData(a)
+        const preco = precoDe(a.plano)
+        const u = usuarioDe(a.id_usuario)
+        return <li key={`${a.id_usuario}:${a.ultima_atualizacao}`} className={`adm-cartao adm-cartao--${s.tom}`}>
           <div className="adm-cartao__topo">
-            <div><strong>{a.nome ?? a.usuario}</strong>{a.nome && <span className="adm-usuario__email">{a.usuario}</span>}</div>
-            <span>{contaDeTeste(a) && <span className="adm-selo">Teste</span>} <span className="adm-selo adm-selo--neutro">{meioDe(a) === 'pix' ? 'Pix' : 'Cartão'}</span> <span className={`adm-selo adm-estado--${a.status}`}>{STATUS_ASSINATURA[a.status] ?? a.status}</span></span>
+            <div><strong className="adm-reticencias" title={a.nome ?? a.usuario}>{a.nome ?? a.usuario}</strong>{a.nome && <span className="adm-usuario__email adm-reticencias" title={a.usuario}>{a.usuario}</span>}</div>
+            <span className={`adm-selo ${TOM_SELO[s.tom]}`}>{s.rotulo}</span>
+          </div>
+          <div className="adm-cartao__selos">
+            <span className="adm-selo adm-selo--neutro">{rotuloPlano(a.plano)}{preco ? ` · ${real(preco.total)}` : ''}</span>
+            <span className={'adm-selo adm-selo--meio adm-selo--' + meioDe(a)}>{rotuloMeio(meioDe(a))}</span>
+            {contaDeTeste(a) && <span className="adm-selo adm-selo--aviso">Teste</span>}
           </div>
           <dl className="adm-cartao__dados">
-            <div><dt>Plano</dt><dd>{PLANOS[a.plano] ?? a.plano}</dd></div>
             <div><dt>Assinante desde</dt><dd>{data(inicio)} <small>({haQuanto(inicio)})</small></dd></div>
-            <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em !== undefined ? data(a.ultima_cobranca_em) : '—'}</dd></div>
-            <div><dt>{a.cancelar_ao_fim || a.status === 'cancelada' || meioDe(a) === 'pix' ? 'Acesso até' : 'Próxima cobrança'}</dt><dd>{data(a.proxima_cobranca ?? a.fim_periodo)}</dd></div>
+            <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em ? data(a.ultima_cobranca_em) : '—'}</dd></div>
+            <div><dt>{proxima.rotulo}</dt><dd>{data(proxima.valor)}</dd></div>
+            {a.cancelada_em && <div><dt>Cancelou em</dt><dd>{data(a.cancelada_em)}</dd></div>}
           </dl>
-          {a.status === 'falha_pagamento' && <small className="adm-ajuda">A cobrança não foi confirmada. Veja Receita › Pagamentos e o Mercado Pago.</small>}
-          {a.cancelar_ao_fim && a.status !== 'cancelada' && a.status !== 'reembolsada' && <small className="adm-ajuda">{meioDe(a) === 'pix' ? 'Pago no Pix: não renova sozinho; o acesso vale até o fim do período pago.' : 'Pediu cancelamento: o acesso vale até o fim do período pago.'}</small>}
+          {s.detalhe && <small className="adm-ajuda">{s.detalhe}</small>}
+          {u && <button type="button" className="adm-link adm-cartao__acao" onClick={() => definirFicha(u)}><Icone nome="usuario" tamanho={15} /> Abrir a ficha e os pagamentos</button>}
         </li>
       })}
     </ul>}
+    {ficha && <AdminFichaUsuario usuario={ficha} abaInicial="pagamentos" aoFechar={() => definirFicha(null)} />}
   </section>
 }
 
@@ -418,17 +502,17 @@ function Pagamentos({ eventos, usuarios, recarregar, lidos, marcar }: { eventos:
 
   return <section className="empilha adm-secao" aria-labelledby="adm-titulo-pagamentos">
     <div className="adm-secao__cabeca"><div>
-      <h2 id="adm-titulo-pagamentos">Pagamentos</h2>
-      <p>Avisos que o Mercado Pago mandou para o site (últimos {eventos.length}). "Ignorado" é normal: são avisos que não mudam nada. Só "Precisa de atenção" pede ação.</p>
+      <h2 id="adm-titulo-pagamentos">Avisos de pagamento</h2>
+      <p>Cada vez que um pagamento ou uma assinatura muda, o Mercado Pago avisa o site, e o site aplica a mudança (últimos {eventos.length} avisos). "Ignorado" é normal: são avisos que não mudam nada. Só "Precisa de atenção" pede ação. O dinheiro recebido está em Receita › Pagamentos.</p>
     </div></div>
     <div className="adm-filtros" role="group" aria-label="Filtrar pagamentos">
       {(['erro', 'todos', 'processado', 'ignorado', 'recebido'] as const).map(valor => <button key={valor} type="button" className="adm-chip" aria-pressed={status === valor} onClick={() => definirStatus(valor)}>{valor === 'todos' ? 'Todos' : STATUS_EVENTO[valor]}<span>{valor === 'todos' ? eventos.length : eventos.filter(e => e.status_processamento === valor).length}</span></button>)}
     </div>
-    <label className="campo adm-busca__unica">{comDono ? 'Buscar por pessoa, tipo, número ou erro' : 'Buscar por tipo, número ou erro'}<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
+    <label className="campo adm-busca__unica">{comDono ? 'Buscar pessoa, tipo, número ou erro' : 'Buscar tipo, número ou erro'}<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
     {!comDono && eventos.length > 0 && <p className="adm-nota">Para ver de quem é cada aviso e abrir a ficha da pessoa, cole no Supabase a {PARTE_COBRANCAS}.</p>}
     {aviso && <p role={aviso.erro ? 'alert' : 'status'} className={'adm-nota adm-mensagem' + (aviso.erro ? ' adm-mensagem--erro' : '')}>{aviso.texto}</p>}
     {status === 'erro' && naoVistos.length > 0 && <div className="adm-lidos__barra"><span>{naoVistos.length} {naoVistos.length === 1 ? 'problema não visto' : 'problemas não vistos'}</span><button type="button" className="botao botao--fantasma" onClick={() => marcar(naoVistos.map(e => String(e.id)))}><Icone nome="certo" tamanho={16} /> Marcar todos como vistos</button></div>}
-    {visiveis.length === 0 ? <p className="adm-vazio">{status === 'erro' ? 'Nenhum pagamento com problema.' : 'Nenhum aviso neste filtro.'}</p> : <ul className="adm-eventos">
+    {visiveis.length === 0 ? <p className="adm-vazio">{status === 'erro' ? 'Nenhum aviso com problema.' : 'Nenhum aviso neste filtro.'}</p> : <ul className="adm-eventos">
       {visiveis.map(e => {
         const erro = e.status_processamento === 'erro'
         const visto = lidos.has(String(e.id))
@@ -450,7 +534,7 @@ function Pagamentos({ eventos, usuarios, recarregar, lidos, marcar }: { eventos:
             <div className="linha">
               {erro && <button className="botao" type="button" disabled={reprocessando !== null} aria-busy={reprocessando === e.id} onClick={() => void reprocessar(e.id)}>{reprocessando === e.id ? 'Reprocessando… aguardando o resultado' : 'Reprocessar'}</button>}
               {erro && <button className="botao botao--fantasma" type="button" onClick={() => marcar([String(e.id)], !visto)}>{visto ? 'Marcar como não visto' : 'Marcar como visto'}</button>}
-              {usuarioDe(e.id_usuario) && <button className="botao botao--fantasma" type="button" onClick={() => definirFicha(usuarioDe(e.id_usuario))}><Icone nome="usuario" tamanho={16} /> Assinatura da pessoa</button>}
+              {usuarioDe(e.id_usuario) && <button className="botao botao--fantasma" type="button" onClick={() => definirFicha(usuarioDe(e.id_usuario))}><Icone nome="usuario" tamanho={16} /> Ficha e assinatura da pessoa</button>}
               {linkDoEvento(e) && <a className="botao botao--fantasma" href={linkDoEvento(e)!} target="_blank" rel="noopener noreferrer">Abrir no Mercado Pago</a>}
             </div>
           </div>}

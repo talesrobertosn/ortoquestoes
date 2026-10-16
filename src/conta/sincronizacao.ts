@@ -9,18 +9,69 @@ function rpcAusente(erro: { code?: string; message?: string } | null, status?: n
   return status === 404 || erro.code === 'PGRST202' || erro.code === '42883' || /could not find the function/i.test(erro.message ?? '')
 }
 
+/**
+ * Só um erro do próprio dado (formato que o banco recusa) tira um item da fila.
+ * Rede, servidor fora do ar, prazo esgotado e sessão vencida ou ainda sendo
+ * renovada (401/403, "JWT expired", "permission denied") passam: o item fica
+ * na fila e sobe na próxima tentativa. Antes, um 401 durante a renovação do
+ * login mandava respostas boas para "itens não enviados", e elas nunca
+ * chegavam aos outros aparelhos.
+ */
+const CODIGOS_DE_DADO = new Set(['23514', '22P02', '22023', '23502', '22003', '22001', '54000', '23505'])
+const MENSAGENS_DE_DADO = /alteração incompleta|versão inválida|versão inicial inválida|lote inválido/i
+export function erroDeDado(erro: unknown, status?: number): boolean {
+  const e = erro as { code?: string; message?: string } | null
+  if (status !== undefined && (status === 0 || status === 401 || status === 403 || status === 408 || status === 429 || status >= 500)) return false
+  if (/jwt|token|permission denied|autentica|not authorized|unauthorized/i.test(e?.message ?? '')) return false
+  return CODIGOS_DE_DADO.has(e?.code ?? '') || MENSAGENS_DE_DADO.test(e?.message ?? '')
+}
+/** Recusas antigas que não eram culpa do item (sessão, rede): voltam para a fila sozinhas. */
+const RECUSA_PASSAGEIRA = /jwt|token|permission denied|autentica|not authorized|unauthorized|fetch|network|abort|tempo esgotado|demorou|timeout|\b40[13]\b|42501|PGRST30/i
+/** Item sem linha no servidor enviado com base diferente de zero: reenvia como item novo. */
+const versaoInicialInvalida = (erro: unknown) => /versão inicial inválida/i.test((erro as { message?: string } | null)?.message ?? '')
+
 /** Linhas por página na leitura (igual ao limite que a função aceita sem cortar). */
 const PAGINA = 500
 /** Com a leitura incremental, a conferência completa vira rede de segurança rara. */
 const RECONCILIAR_A_CADA = 30 * 60_000
 /** Intervalo com a aba visível. Trocar de aba ou de aparelho já sincroniza na hora. */
 const INTERVALO = 30_000
+/** Nenhum pedido segura a fila: passado o prazo, conta como falha de rede e tenta de novo. */
+const PRAZO = 30_000
+/** Foco, visibilidade e "voltou a página" chegam juntos: um ciclo basta. */
+const INTERVALO_MINIMO = 1_500
 
-export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean; detalhe?: string; rejeitados: { id: string; tipo: TipoSync; item: string; erro: string; em: number }[] }
+class Prazo extends Error { status = 0; transitorio = true }
+function comPrazo<T>(pedido: PromiseLike<T>, ms = PRAZO): Promise<T> {
+  let temporizador: ReturnType<typeof setTimeout> | undefined
+  const limite = new Promise<never>((_, rejeitar) => { temporizador = setTimeout(() => rejeitar(new Prazo('O servidor demorou a responder (tempo esgotado)')), ms) })
+  return Promise.race([Promise.resolve(pedido), limite]).finally(() => clearTimeout(temporizador))
+}
+
+export interface StatusSync {
+  estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'
+  pendentes: number
+  conflitos: Documento[]
+  pronto: boolean
+  detalhe?: string
+  rejeitados: { id: string; tipo: TipoSync; item: string; erro: string; em: number }[]
+  /** Fim do último ciclo completo (enviou e recebeu), no relógio deste aparelho: só para o "sincronizado há X". */
+  ultimaSincronia?: number
+}
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
-export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string, notificar: (s: StatusSync) => void) {
+/** Ajustes para os testes (prazo curto de cada pedido e intervalo); o site usa os padrões. */
+export interface OpcoesSincronizacao { prazo?: number; intervalo?: number }
+export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string, notificar: (s: StatusSync) => void, opcoes: OpcoesSincronizacao = {}) {
+  const prazo = opcoes.prazo ?? PRAZO
   let estado = ler<EstadoSync>('sincronia:v1', estadoVazio())
   let ativo = true, executando = false, pronto = false
+  let ultimaSincronia = ler<number>('sincronia:ultima', 0) || undefined
+  let falhasSeguidas = 0
+  let ultimoInicio = 0
+  // Quem pediu para esperar (cronograma antes de montar a sessão): resolve no fim
+  // do primeiro ciclo que começar depois do pedido.
+  let ciclosIniciados = 0
+  let esperas: { depoisDe: number; pronto: () => void }[] = []
   const conhecidos = new Set<string>()
   let timer: ReturnType<typeof setTimeout> | undefined
   // Leitura incremental (parte 24 do SQL): só as linhas com versão acima do
@@ -33,7 +84,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
   const salvar = () => { if (valido()) gravar('sincronia:v1', estado, 'nuvem') }
   let detalhe: string | undefined
   const anunciar = (s: StatusSync['estado']) => {
-    if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto, detalhe: s === 'erro' ? detalhe : undefined, rejeitados: Object.entries(estado.rejeitados ?? {}).map(([id, r]) => ({ id, tipo: r.tipo, item: r.item, erro: r.erro, em: r.em })) })
+    if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto, detalhe: s === 'erro' || s === 'offline' ? detalhe : undefined, rejeitados: Object.entries(estado.rejeitados ?? {}).map(([id, r]) => ({ id, tipo: r.tipo, item: r.item, erro: r.erro, em: r.em })), ultimaSincronia })
   }
   const descrever = (erro: unknown) => {
     const e = erro as { message?: string; code?: string; details?: string; hint?: string; name?: string } | null
@@ -43,15 +94,18 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
   /** Envia um lote; o caminho direto (RLS) fica só para banco sem a função. */
   async function enviar(lote: Alteracao[]): Promise<{ docs: Documento[] } | { erro: unknown; transitorio?: boolean }> {
     const remotas = lote.map(prefixar)
-    const { data, error, status } = await cliente.rpc('sincronizar_progresso', { alteracoes: remotas })
+    let resposta: { data: unknown; error: { code?: string; message?: string } | null; status: number }
+    try { resposta = await comPrazo(cliente.rpc('sincronizar_progresso', { alteracoes: remotas }), prazo) } catch (erro) { return { erro, transitorio: true } }
+    const { data, error, status } = resposta
     if (!error) return { docs: (data ?? []) as Documento[] }
     // A gravação direta não confere a versão e apagaria o que outro aparelho
     // salvou. Ela só serve para bancos que ainda não têm a função instalada.
-    if (!rpcAusente(error, status)) return { erro: error, transitorio: status === 0 || status === 408 || status === 429 || status >= 500 }
+    if (!rpcAusente(error, status)) return { erro: error, transitorio: !erroDeDado(error, status) }
     const linhas = remotas.map(p => ({ usuario_id: idUsuario, tipo: p.tipo, item: p.item, valor: p.valor, operacao: p.operacao }))
-    const direto = await cliente.from('progresso_usuario').upsert(linhas, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
+    let direto: { data: unknown; error: { code?: string; message?: string } | null; status: number }
+    try { direto = await comPrazo(cliente.from('progresso_usuario').upsert(linhas, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao'), prazo) } catch (erro) { return { erro, transitorio: true } }
     if (!direto.error) return { docs: (direto.data ?? []) as Documento[] }
-    return { erro: direto.error ?? error }
+    return { erro: direto.error ?? error, transitorio: !erroDeDado(direto.error ?? error, direto.status) }
   }
   function aplicar(documentos: Documento[], enviadas: Alteracao[] = []) {
     // O marcador é a fonte de verdade para o comando de zerar a conta.
@@ -111,7 +165,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     if (leituraIncremental) {
       let cursor = completa ? 0 : estado.cursor
       for (;;) {
-        const { data, error, status } = await cliente.rpc('ler_progresso_desde', { p_cursor: cursor, p_limite: PAGINA })
+        const { data, error, status } = await comPrazo(cliente.rpc('ler_progresso_desde', { p_cursor: cursor, p_limite: PAGINA }), prazo)
         if (!valido()) return undefined
         if (error) {
           if (!rpcAusente(error, status)) throw error
@@ -128,7 +182,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     }
     let pagina = 0
     while (valido()) {
-      const { data, error } = await cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).order('versao').range(pagina, pagina + PAGINA - 1)
+      const { data, error } = await comPrazo(cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).order('versao').range(pagina, pagina + PAGINA - 1), prazo)
       if (!valido()) return undefined
       if (error) throw error
       const documentos = (data ?? []) as Documento[]
@@ -139,10 +193,15 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     if (!valido()) return undefined
     return { docs, cursor: docs.reduce((m, d) => Math.max(m, d.versao), 0) }
   }
-  function agendar() {
+  function agendar(espera = 1200) {
     if (!valido()) return
     clearTimeout(timer)
-    timer = setTimeout(() => { void sincronizar() }, 1200)
+    timer = setTimeout(() => { void sincronizar() }, espera)
+  }
+  function liberarEsperas(ate: number) {
+    const prontas = esperas.filter(e => e.depoisDe < ate)
+    esperas = esperas.filter(e => e.depoisDe >= ate)
+    for (const e of prontas) e.pronto()
   }
   /**
    * Com várias abas abertas, uma sincroniza por vez (Web Locks). A outra tenta
@@ -160,25 +219,35 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
   }
   async function ciclo() {
     if (!valido() || executando) return
-    if (!navigator.onLine) { anunciar('offline'); return }
+    // Sem rede não há o que esperar: quem pediu segue com o que este aparelho tem.
+    if (!navigator.onLine) { anunciar('offline'); liberarEsperas(Infinity); return }
     executando = true; anunciar('sincronizando')
+    ultimoInicio = Date.now()
+    const numero = ++ciclosIniciados
     try {
+      // Sem login válido (sessão vencida e a renovação falhou), o pedido sairia
+      // como visitante e seria recusado: espera a sessão voltar, sem mexer na fila.
+      if (cliente.auth) {
+        const { data } = await comPrazo(cliente.auth.getSession(), prazo)
+        if (!valido()) return
+        if (!data.session) throw Object.assign(new Error('Sessão expirada ou sendo renovada: o progresso fica guardado aqui e sobe quando ela voltar'), { status: 401 })
+      }
       // Um reinício local pendente impede a importação do histórico anterior.
       // O token persistido torna a repetição segura depois de falha ou F5.
       const reinicio = ler<string | null>('reinicio:pendente', null)
       if (reinicio) {
         const itemReinicio = `reinicio.v2.${reinicio}`
-        const consulta = await cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).eq('tipo', 'historico').eq('item', itemReinicio)
+        const consulta = await comPrazo(cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).eq('tipo', 'historico').eq('item', itemReinicio), prazo)
         if (!valido()) return
         if (consulta.error) throw consulta.error
         let marcador = (consulta.data ?? [])[0] as Documento | undefined
         if (marcador?.operacao !== reinicio) {
           const alteracao = { tipo: 'historico', item: itemReinicio, valor: { id: itemReinicio, descricao: 'Reinício do progresso', concluidaEm: Date.now() }, base: marcador?.versao ?? 0, operacao: reinicio }
-          const resposta = await cliente.rpc('sincronizar_progresso', { alteracoes: [alteracao] })
+          const resposta = await comPrazo(cliente.rpc('sincronizar_progresso', { alteracoes: [alteracao] }), prazo)
           if (!valido()) return
           if (resposta.error && !rpcAusente(resposta.error, resposta.status)) throw resposta.error
           if (resposta.error) {
-            const direto = await cliente.from('progresso_usuario').upsert({ usuario_id: idUsuario, tipo: alteracao.tipo, item: alteracao.item, valor: alteracao.valor, operacao: reinicio }, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
+            const direto = await comPrazo(cliente.from('progresso_usuario').upsert({ usuario_id: idUsuario, tipo: alteracao.tipo, item: alteracao.item, valor: alteracao.valor, operacao: reinicio }, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao'), prazo)
             if (!valido()) return
             if (direto.error) throw direto.error
             marcador = (direto.data ?? [])[0] as Documento | undefined
@@ -228,6 +297,12 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
             if ('docs' in individual) { aplicar(individual.docs, [alteracao]); salvar(); continue }
             if (individual.transitorio) throw individual.erro
             const id = identificador(alteracao.tipo, alteracao.item)
+            // A linha não existe no servidor (outra geração, conta recriada): sobe como item novo.
+            if (versaoInicialInvalida(individual.erro) && estado.pendentes[id] && estado.pendentes[id].base !== 0) {
+              estado.pendentes[id] = { ...estado.pendentes[id], base: 0, operacao: gerarId() }
+              delete estado.versoes[id]
+              continue
+            }
             estado.rejeitados = { ...(estado.rejeitados ?? {}), [id]: { tipo: alteracao.tipo, item: alteracao.item, valor: alteracao.valor, erro: descrever(individual.erro), em: Date.now() } }
             delete estado.pendentes[id]
           }
@@ -236,11 +311,25 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
       }
       const conflitos = Object.keys(estado.conflitos).length
       const pendentes = Object.keys(estado.pendentes).length
+      falhasSeguidas = 0
+      detalhe = undefined
+      if (!pendentes) { ultimaSincronia = Date.now(); if (valido()) gravar('sincronia:ultima', ultimaSincronia, 'nuvem') }
       anunciar(conflitos ? 'conflito' : pendentes ? 'sincronizando' : 'salvo')
       if (Object.values(estado.pendentes).some(p => !estado.conflitos[identificador(p.tipo, p.item)])) agendar()
-      detalhe = undefined
-    } catch (erro) { detalhe = descrever(erro); anunciar(navigator.onLine ? 'erro' : 'offline') }
-    finally { executando = false }
+    } catch (erro) {
+      detalhe = descrever(erro)
+      anunciar(navigator.onLine ? 'erro' : 'offline')
+      // Tenta de novo sozinho, cada vez mais espaçado (2 s, 4 s, 8 s... até 1 min).
+      falhasSeguidas++
+      if (navigator.onLine) agendar(Math.min(60_000, 1000 * 2 ** falhasSeguidas))
+    }
+    finally {
+      executando = false
+      // Quem esperava não fica preso: com ou sem sucesso, o ciclo terminou.
+      liberarEsperas(numero)
+      // Pedido feito durante este ciclo: precisa de um ciclo que comece depois dele.
+      if (esperas.length) agendar(50)
+    }
   }
   function aoGravar(evento: Event) {
     const m = (evento as CustomEvent<MudancaDados>).detail
@@ -255,20 +344,49 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     if (!valido() || evento.key !== `ortoquestoes:conta:${idUsuario}:sincronia:v1`) return
     estado = ler<EstadoSync>('sincronia:v1', estadoVazio()); agendar()
   }
-  const aoVoltar = () => { if (document.visibilityState === 'visible') void sincronizar() }
+  // Foco, visibilidade e volta da página chegam juntos: um ciclo só.
+  const aoVoltar = () => { if (document.visibilityState === 'visible' && Date.now() - ultimoInicio >= INTERVALO_MINIMO) void sincronizar() }
+  // Recusas antigas por sessão ou rede (versões anteriores do site): voltam para a fila.
+  if (estado.rejeitados) {
+    let voltaram = false
+    for (const [id, r] of Object.entries(estado.rejeitados)) {
+      if (!RECUSA_PASSAGEIRA.test(r.erro) || estado.pendentes[id]) continue
+      estado.pendentes[id] = { tipo: r.tipo, item: r.item, valor: r.valor, base: estado.versoes[id] ?? 0, operacao: gerarId() }
+      delete estado.rejeitados[id]
+      voltaram = true
+    }
+    if (voltaram) salvar()
+  }
   // Voltando do offline, relê tudo uma vez: é a rede de segurança da leitura incremental.
-  const aoReconectar = () => { reconciliar = true; aoVoltar() }
+  const aoReconectar = () => { reconciliar = true; void sincronizar() }
   window.addEventListener(EVENTO_DADOS, aoGravar)
   window.addEventListener('storage', outraAba)
   window.addEventListener('online', aoReconectar)
   document.addEventListener('visibilitychange', aoVoltar)
+  // Janela que volta ao primeiro plano sem trocar de aba (desktop) e página
+  // restaurada do cache do navegador (voltar/avançar) também sincronizam.
+  window.addEventListener('focus', aoVoltar)
+  window.addEventListener('pageshow', aoVoltar)
   // Mantém os dispositivos próximos mesmo quando a aba fica aberta sem trocar de
   // visibilidade. Cada volta só lê o que mudou desde o cursor; trocar de aba,
   // de aplicativo ou de aparelho sincroniza na hora pelo visibilitychange.
-  const intervalo = setInterval(aoVoltar, INTERVALO)
+  const intervalo = setInterval(aoVoltar, opcoes.intervalo ?? INTERVALO)
   void sincronizar()
   return {
     sincronizar,
+    /**
+     * Sincroniza agora e espera terminar (no máximo `ms`). Para quem vai decidir
+     * algo com as respostas: o cronograma, antes de escolher as questões de hoje.
+     */
+    aguardar(ms = 8000): Promise<void> {
+      if (!valido()) return Promise.resolve()
+      return new Promise<void>(resolver => {
+        const espera = { depoisDe: ciclosIniciados, pronto: () => { clearTimeout(t); resolver() } }
+        const t = setTimeout(() => { esperas = esperas.filter(e => e !== espera); resolver() }, ms)
+        esperas.push(espera)
+        if (!executando) void sincronizar()
+      })
+    },
     /** Devolve à fila os itens recusados (por exemplo, depois de uma correção no servidor). */
     reenviarRejeitados() {
       if (!valido() || !estado.rejeitados) return
@@ -299,6 +417,8 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
       ativo = false; clearTimeout(timer); clearInterval(intervalo)
       window.removeEventListener(EVENTO_DADOS, aoGravar); window.removeEventListener('storage', outraAba)
       window.removeEventListener('online', aoReconectar); document.removeEventListener('visibilitychange', aoVoltar)
+      window.removeEventListener('focus', aoVoltar); window.removeEventListener('pageshow', aoVoltar)
+      liberarEsperas(Infinity)
     },
   }
 }

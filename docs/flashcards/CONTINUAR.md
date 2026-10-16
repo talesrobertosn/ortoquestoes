@@ -6,6 +6,29 @@
 
 Atualizado em 14/10/2026, à tarde. Veja "PAROU AQUI" logo abaixo.
 
+## Continuidade entre aparelhos — 15/10/2026, noite
+
+Bug do Tales: "A continuidade do modo Cripta não é igual entre um computador e outro. No notebook eu estava no
+Golem; no computador, no Senhor do Anel Pélvico." Causa: partida em andamento, Bestiário, Altar e patamar da Torre
+ficavam só no localStorage de cada aparelho (e a leitura da partida acontecia sem baixar nada da conta).
+
+- **SQL novo: parte 28** (`supabase/colar-no-painel/sql-202610152200-parte28.sql`, mesma da migração
+  `202610152200_flashcards_continuidade.sql`). Idempotente, não apaga dados, cada conta só lê e grava a própria
+  linha. **Precisa ser colada** para a continuidade valer; antes disso o site segue só local, sem erro.
+- **Cliente:** `src/flashcards/continuidade.ts` (mescla pura e chaves locais) e, em `servidor.ts`,
+  `sincronizarJogo`/`agendarEnvioJogo`/`enviarJogoAoSair`/`instalarContinuidade`. A Arena baixa o jogo da conta
+  **antes** de montar a partida (até 4 s); vale a mais recente; partida encerrada vira lápide e não ressuscita;
+  Bestiário e Altar por união/máximo. Envio: importante na hora, o resto em até 5 s, e ao esconder a aba/fechar
+  (`keepalive`). Aba velha aberta: ao voltar, adota a partida mais nova do outro aparelho, com o aviso
+  "Continuando a partida do seu outro aparelho (andar X)". Detalhes em [ARQUITETURA.md](ARQUITETURA.md).
+- **Não muda:** regras, dificuldade, ranking, limites (a vida a cada 24 h segue no servidor).
+- **Testes:** `node fixtures/testar_continuidade_flashcards.mjs` (no `npm test`) e o Playwright
+  `scripts/flashcards/testar_continuidade.mjs` (dois navegadores, Supabase simulado; o cabeçalho do arquivo
+  diz como subir o servidor). Capturas em `/tmp/ortoquestoes-continuidade/`.
+- **Limites conhecidos:** duas partidas jogadas ao mesmo tempo em dois aparelhos não se juntam: vale a que mexeu
+  por último (só existe uma partida por modo). Uma partida antiga, sem carimbo, nos dois aparelhos: fica a mais
+  funda. O envio ao fechar é melhor esforço; o que não chegou sobe na próxima vez que esse aparelho abrir o jogo.
+
 ## Biblioteca e cronograma — 15/10/2026
 
 Pedido do Tales: cronograma "palpável, não aleatório", meta flexível, botão "Seguir cronograma", atalhos diretos para estudar ou jogar, fundos que mudam com os acertos, Biblioteca mais fluida no celular e desempenho mais visual. Sem SQL; não mexe em limites, preços, questões ou no cronograma geral (`#/cronograma`).
@@ -354,11 +377,18 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
 
 ## Próximos passos sugeridos (em ordem)
 
-1. **Folha em volume** para o raptor, que estreia cedo (o esqueleto, o goblin, o ent, o mímico e o Cogumelo da Necrose já têm arte nova, de 14/10). Use o modelo de `scripts/sprites/gosma.py` e `python3 scripts/sprites/assar.py <nome>`.
-2. **Pintar Torre e Salão** com `scripts/cenarios/` (veja "Como fazer um cenário novo" em ARTE.md) e ligar em `CENAS_PINTADAS`.
-3. **Variantes escarlate e ancestral do Dragão**: acrescente `VARIANTES` em `scripts/sprites/dragao.py`.
-4. **Escudo do herói no estágio 6**: reduzir (`PROP[6]['escudo']` em `scripts/sprites/heroi.py`).
-5. **Emenda da faixa "sala"**: revisar com `python3 scripts/musica/conferir.py`.
+1. **Pintar Torre e Salão** com `scripts/cenarios/` (veja "Como fazer um cenário novo" em ARTE.md) e ligar em `CENAS_PINTADAS`.
+2. **Adversários que ainda usam o desenho antigo** (na ordem em que aparecem): Mão dos Tendões (elite, andar 6), espectro (Espectro do Mediano, andar 7; Arquiteto e Necromante são variantes), Harpia do Manguito (7), quimera (Quimera da Pseudoartrose, 8; Basilisco e Escafoide são variantes) e os chefes rei, leviatã e arconte. Use `scripts/sprites/cavaleiro.py` (humanoide com três variantes) ou `raptor.py` (bicho com variantes) como modelo.
+3. **Celular (390×844), para quem mexe no layout da Arena:** com o Dragão Rubro (1472/1472) e o Dragão Ancestral (2280/2280), a placa do chefe com vida de quatro dígitos empurra a coluna e corta as alternativas e o botão Atacar na borda direita. O Dragão de Ossos (570/570) quase cabe. Não é da folha: a placa e a coluna do sprite precisam encolher (Arena.tsx/CSS, fora do escopo de arte).
+
+### Feito em 15/10/2026 (arte e música, pendências liberadas pelo Tales)
+
+- **Ideia 53, raptor:** `scripts/sprites/raptor.py` grava `raptor`, `raptor-sombrio` e `raptor-alfa`. Foi feito com as ferramentas do `cavaleiro_chibi.py` (como goblin, esqueleto e aranha), e não com o motor de volume do `assar.py`, para combinar com as folhas mais novas.
+- **Ideia 54, dragão:** `VARIANTES` em `dragao.py`; `python3 scripts/sprites/assar.py dragao --variante escarlate|ancestral` (uns 12 minutos cada). Gancho já existia (`assadoDe` no Hud e a cor do sopro em `ataques.ts`).
+- **Escudo do herói no estágio 6:** menor (`escala_escudo=0.84` em `cavaleiro_chibi.py`, que é o gerador do herói em jogo; `PROP[6]['escudo']` de `heroi.py` também caiu para 0,90). Só `heroi-6` mudou.
+- **Faixa "sala":** o fim do laço era G, G e pausa, e a volta entrava 5,5 dB mais alta. Agora o último compasso vira na dominante e a melodia desce até a nota do começo; degrau de 2,4 dB. `conferir.py` ganhou a coluna "degrau dB" (acima de uns 4 dB a emenda se ouve; masmorra e covil ainda passam de 10 dB).
+- **Folhas novas:** corvo, morcego, escaravelho, Slime Sinovial (`gosma.py`, variante `sinovial`) e os cavaleiros (`cavaleiro.py`: base = Cavaleiro da Tala, `fibula`, `artrodese`).
+- As folhas novas foram gravadas em PNG de paleta sem perda (cerca de 40% do tamanho).
 
 ## Ainda não feito do pedido de direção criativa
 

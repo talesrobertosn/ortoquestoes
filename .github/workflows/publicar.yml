@@ -44,7 +44,8 @@ jobs:
         run: python3 scripts/gerar_incidencia.py && python3 scripts/gerar_resumao.py
       - name: Gerar páginas públicas e sitemap
         # Uma página estática por questão e por assunto, os guias, as páginas de
-        # destino (banco de questões, TEOT, provas, R1, simulados, flashcards) e
+        # destino (banco de questões, TEOT, curso preparatório, provas, R1, simulados,
+        # flashcards, sobre) e
         # o llms.txt, para o Google e os assistentes de IA. São geradas do acervo
         # a cada deploy e não ficam no repositório (docs/seo/PLANO-SEO-R1-2027.md).
         run: python3 scripts/gerar_paginas_seo.py && python3 scripts/gerar_guias_seo.py && python3 scripts/gerar_paginas_destino.py && python3 scripts/gerar_sitemap.py

@@ -37,8 +37,9 @@ export function paginaAtual(): { pagina: string; questao: string | null } {
   // no Torneio de Flashcards, o andar da partida em andamento (o painel mostra "batalha no andar 7")
   const jogo = rota.match(/^\/flashcards\/(cripta|masmorra|torre)$/)
   if (jogo) {
-    const partida = ler<{ andar?: number; fase?: string } | null>(jogo[1] === 'torre' ? 'flashcards:torre' : 'flashcards:partida', null)
-    if (partida?.andar && partida.fase !== 'fim') return { pagina: `${rota} · andar ${partida.andar}`, questao: null }
+    // partida encerrada fica guardada como lápide ({ encerrada: true, andar }), sem fase (continuidade.ts)
+    const partida = ler<{ andar?: number; fase?: string; encerrada?: boolean } | null>(jogo[1] === 'torre' ? 'flashcards:torre' : 'flashcards:partida', null)
+    if (partida?.andar && partida.fase && partida.fase !== 'fim' && !partida.encerrada) return { pagina: `${rota} · andar ${partida.andar}`, questao: null }
   }
   return { pagina: rota, questao: null }
 }

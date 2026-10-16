@@ -22,6 +22,8 @@ import { guardarRotaDoCronograma } from '../rotaCronograma'
 import { Ator } from './Hud'
 import { ModalJogo } from './ModalJogo'
 import { Sprite } from './Sprite'
+import { encerrarPartidaSalva } from '../continuidade'
+import { agendarEnvioJogo, instalarContinuidade, sincronizarJogo } from '../servidor'
 
 /**
  * Entrada da Cripta do Residente: o portão da masmorra dos flashcards.
@@ -42,8 +44,23 @@ export function Entrada() {
   const [altar, definirAltar] = useState<EstadoAltar>(() => ({ ...ALTAR_VAZIO, ...ler<Partial<EstadoAltar>>(CHAVE_ALTAR, {}) }))
   const rec = useMemo(() => ({ ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }), [])
   const unicos = useMemo(() => flashcardsUnicos(ler<Record<string, unknown>>(CHAVE_REGISTROS, {})), [])
-  const cripta = useMemo(() => migrarPartida(ler<unknown>(CHAVE_PARTIDA, null)), [])
-  const bestiario = useMemo(() => ({ ...BESTIARIO_VAZIO, ...ler<Partial<Bestiario>>(CHAVE_BESTIARIO, {}) }), [])
+  // Continuidade (15/10/2026): a Entrada também traz da conta a partida, o Altar e o Bestiário de outro
+  // aparelho; quando a sincronia termina, relê o que mostra ("Continuar no andar X", cristais, descobertos).
+  const [sincronia, definirSincronia] = useState(0)
+  useEffect(() => {
+    let vivo = true
+    const desinstalar = instalarContinuidade()
+    void sincronizarJogo().then((r) => {
+      if (!vivo || !r.ok) return
+      definirAltar({ ...ALTAR_VAZIO, ...ler<Partial<EstadoAltar>>(CHAVE_ALTAR, {}) })
+      definirSincronia((n) => n + 1)
+    }).catch(() => undefined)
+    return () => { vivo = false; desinstalar() }
+  }, [])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const cripta = useMemo(() => migrarPartida(ler<unknown>(CHAVE_PARTIDA, null)), [sincronia])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const bestiario = useMemo(() => ({ ...BESTIARIO_VAZIO, ...ler<Partial<Bestiario>>(CHAVE_BESTIARIO, {}) }), [sincronia])
   const criptaViva = cripta && cripta.fase !== 'fim' ? cripta : null
   const [volume, definirVolume] = useState(volumeDaSessao)
   const [somAtivo, definirSomAtivo] = useState(() => ler<{som?:boolean}>(CHAVE_AJUSTES,{}).som ?? somPreferido(ler<SomEscolhido>(CHAVE_SOM_ESCOLHIDO, false)) ?? true)
@@ -72,7 +89,9 @@ export function Entrada() {
   const recomecar = () => {
     const r = ler<Record<string, unknown>>(CHAVE_RECORDES, {})
     gravar(CHAVE_RECORDES, { ...r, partidas: Number(r.partidas ?? 0) + 1, atualizadoEm: Date.now() })
-    gravar(CHAVE_PARTIDA, null)
+    // a partida vira lápide com data: outro aparelho não a traz de volta
+    encerrarPartidaSalva('masmorra')
+    agendarEnvioJogo(true)
     definirConfirmarRecomeco(false)
     ir('/flashcards/cripta')
   }
@@ -87,6 +106,7 @@ export function Entrada() {
     const novo = comprarTalento(altar, id)
     if (novo === altar) return
     gravar(CHAVE_ALTAR, novo); definirAltar(novo); tocar('evolucao')
+    agendarEnvioJogo(true)
   }
 
   return (
