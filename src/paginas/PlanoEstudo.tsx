@@ -329,8 +329,14 @@ function marcasDoAparelho(feitos: FeitosDoDia, resumao: ResumaoHoje): MarcasDia 
 }
 
 /** Sessão do cronograma que ficou pela metade (a pessoa fechou o site no meio). */
-function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: number; tema: string; simulado: boolean } | null {
+/**
+ * A sessão do cronograma que ainda dá para continuar. Só a de hoje: a de ontem
+ * (meio feita ou nem começada) prendia o botão do dia em "Continuar: faltam N",
+ * que levava de volta às questões de ontem, e não havia como montar a de hoje.
+ */
+export function sessaoPendente(sessao: EstadoSessao | null, agora: number = Date.now()): { feitas: number; total: number; tema: string; simulado: boolean } | null {
   if (!sessao || sessao.concluidaEm || !sessao.origem) return null
+  if (chaveDoDia(sessao.criadaEm) !== chaveDoDia(agora)) return null
   const feitas = Object.keys(sessao.respostas).length
   if (feitas >= sessao.ids.length) return null
   return { feitas, total: sessao.ids.length, tema: sessao.filtros.temas[0] ?? '', simulado: !!sessao.simulado }
@@ -449,8 +455,8 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   }
   if (hub && !calculo.provaPassou && !calculo.naRetaFinal) {
     // Revisões e flashcards ajudam a fixar, mas não são obrigatórios: ficam à parte, sem contar na meta.
-    if (hub.revisoesHoje > 0) lista.push({ id: 'revisoes', titulo: `${hub.revisoesHoje} ${hub.revisoesHoje === 1 ? 'revisão' : 'revisões'}`, texto: `Erros, chutes e dúvidas que voltam hoje · ~${formatarTempo(hub.revisoesHoje * minutos)}.`, minutos: hub.revisoesHoje * minutos, estado: 'afazer', opcional: true, acao: { rotulo: 'Revisar', href: href('/revisao') } })
-    lista.push({ id: 'flashcards', titulo: 'Flashcards', texto: 'Uma rodada curta para fixar o que você errou · ~5 min.', minutos: 5, estado: feitos.flashcards ? 'feito' : 'afazer', opcional: true, acao: { rotulo: 'Abrir', href: href('/flashcards'), aoClicar: () => hub.aoMarcar('flashcards') } })
+    if (hub.revisoesHoje > 0) lista.push({ id: 'revisoes', titulo: `${hub.revisoesHoje} ${hub.revisoesHoje === 1 ? 'revisão' : 'revisões'}`, texto: `Erros, chutes e dúvidas que voltam hoje · ~${formatarTempo(hub.revisoesHoje * minutos)}`, minutos: hub.revisoesHoje * minutos, estado: 'afazer', opcional: true, icone: 'reiniciar', acao: { rotulo: 'Revisar', href: href('/revisao') } })
+    lista.push({ id: 'flashcards', titulo: 'Flashcards', texto: 'Uma rodada curta para fixar o que você errou · ~5 min', minutos: 5, estado: feitos.flashcards ? 'feito' : 'afazer', opcional: true, icone: 'raio', acao: { rotulo: 'Abrir', href: href('/flashcards'), aoClicar: () => hub.aoMarcar('flashcards') } })
   }
 
   // ── O botão único ──

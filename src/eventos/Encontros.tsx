@@ -13,6 +13,28 @@ import { guardarLembrancas, lerLembrancas } from './memoria'
 import { avancaCodigo, CODIGO, escolher, marcosCruzados, permitido, recordeDoDia, semMovimento, type Contexto, type Evento } from './regras'
 import './encontros.css'
 
+/** Liga uma classe por um instante (e reinicia a animação se ela já estava rodando). */
+function pulsar(el: HTMLElement, classes: string, ms: number) {
+  const lista = classes.split(' ')
+  el.classList.remove(...[...el.classList].filter(c => c.startsWith('oq-tinel') || c === 'oq-reflexo'))
+  void el.offsetWidth
+  el.classList.add(...lista)
+  setTimeout(() => el.classList.remove(...lista), ms)
+}
+
+/** O choque do Tinel: a logo treme, acende e solta faíscas por menos de um segundo. */
+function choque(logo: HTMLElement) {
+  pulsar(logo, 'oq-choque', 900)
+  const r = logo.getBoundingClientRect()
+  const camada = document.createElement('span')
+  camada.className = 'oq-faiscas'
+  camada.setAttribute('aria-hidden', 'true')
+  Object.assign(camada.style, { left: `${r.left + r.width / 2}px`, top: `${r.top + r.height / 2}px`, width: `${r.width + 36}px`, height: `${r.height + 36}px` })
+  camada.innerHTML = Array.from({ length: 7 }, (_, i) => `<i style="--i:${i}"><svg viewBox="0 0 12 20"><path d="M7 0 1 11h4l-1 9 7-12H7l1-8Z"/></svg></i>`).join('')
+  document.body.appendChild(camada)
+  setTimeout(() => camada.remove(), 950)
+}
+
 /** Este componente e suas artes só são baixados depois da primeira pintura. */
 export default function Encontros() {
   const { sessao: conta } = usarConta()
@@ -105,14 +127,19 @@ export default function Encontros() {
     const toque = (e: MouseEvent) => {
       const alvo = e.target instanceof Element ? e.target : null
       if (!permitido(contexto())) return
-      if (alvo?.closest('.cabecalho__marca')) {
+      const logo = alvo?.closest<HTMLElement>('.cabecalho__marca')
+      if (logo) {
         toques = Date.now() - ultimoToque < 900 ? toques + 1 : 1; ultimoToque = Date.now()
+        // Sinal de Tinel: cada toque formiga um pouco mais; no quinto, a logo leva o choque.
+        if (!reducao.matches && toques >= 5) choque(logo)
+        else if (!reducao.matches && toques >= 2) pulsar(logo, `oq-tinel oq-tinel--${toques}`, 260)
         if (toques >= 5) { toques = 0; mostrar({ id: 'tinel', titulo: 'Deu um formigamento por aqui', texto: 'A logo sentiu os toques. O Preceptor ouviu e abriu uma portinha.', icone: 'martelo', efeito: 'formiga', arquivo: true }, true) }
       }
     }
     const martelo = (e: Event) => {
       if (!permitido(contexto())) return
       const alvo = e.target instanceof Element ? e.target.closest('.texto-editorial strong, .texto-editorial h4, .rz-foco h3') : null
+      if (alvo && /classifica|sillence|schatzker|salter|garden|neer|ao\/ota/i.test(alvo.textContent ?? '') && !reducao.matches) pulsar(alvo as HTMLElement, 'oq-reflexo', 700)
       if (alvo && /classifica|sillence|schatzker|salter|garden|neer|ao\/ota/i.test(alvo.textContent ?? '')) mostrar({ id: 'reflexo', titulo: 'Virou reflexo', texto: 'O martelinho passou por aqui. Uma boa classificação fica mais familiar a cada reencontro.', icone: 'martelo' }, true)
     }
     const gato = () => { if (contexto().rota === '/flashcards/biblioteca') mostrar({ id: 'gato', titulo: 'O bibliotecário de quatro patas', texto: 'Ele veio conferir a leitura. Um carinho e já volta para a estante.', icone: 'gato' }, true) }
@@ -169,6 +196,7 @@ export default function Encontros() {
         <button className="encontro__fechar" type="button" aria-label="Dispensar visita" onClick={() => { definirVisita(null); ocupada.current = false }}>×</button>
         {visita.efeito === 'confete' && <span className="encontro__confete" aria-hidden="true">{Array.from({ length: 12 }, (_, i) => <i key={i} style={{ '--i': i } as React.CSSProperties} />)}</span>}
         {visita.efeito === 'estrela' && <span className="encontro__estrela" aria-hidden="true" />}
+        {visita.efeito === 'formiga' && <svg className="encontro__raio" viewBox="0 0 120 24" aria-hidden="true"><path d="M0 12h22l6-9 8 18 7-14 6 8 5-5h66" /></svg>}
       </aside>}
     </div>
     {arquivo && <dialog ref={dialogo} className="arquivo-preceptor" aria-labelledby="arquivo-titulo" onCancel={() => definirArquivo(false)} onClick={e => { if (e.target === e.currentTarget) definirArquivo(false) }}>

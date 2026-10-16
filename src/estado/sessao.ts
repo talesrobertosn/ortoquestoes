@@ -6,6 +6,7 @@ import { usarArmazenado } from './usarArmazenado'
 import { EVENTO_DADOS, gravar, ler, type MudancaDados } from './armazenamento'
 import { confirmar } from '../componentes/Confirmar'
 import { navegar } from '../util/rotas'
+import { chaveDoDia } from '../util/dia'
 
 export const CHAVE_SESSAO = 'sessao:atual'
 export const CHAVE_HISTORICO = 'historico'
@@ -155,6 +156,12 @@ export function usarSessao() {
       // Respondida por inteiro mas sem "Concluir"/"Entregar" ainda conta: sem
       // concluidaEm, ela não está no histórico e sumiria sem aviso.
       const emAndamento = !!atual && !atual.concluidaEm && respondidas > 0
+      // A sessão do cronograma de um dia anterior dá lugar à de hoje sem perguntar:
+      // o que foi respondido nela vai para o histórico e já conta no plano.
+      if (emAndamento && opcoes.origem === 'cronograma' && atual!.origem === 'cronograma' && chaveDoDia(atual!.criadaEm) !== chaveDoDia()) {
+        registrarHistorico({ ...atual!, concluidaEm: Date.now() })
+        return true
+      }
       // Retomar o mesmo Simulado Nacional não é substituir.
       if (emAndamento && !(opcoes.nacional && atual!.nacional === opcoes.nacional)) {
         const sim = await confirmar({
