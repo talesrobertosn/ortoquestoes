@@ -1,0 +1,2652 @@
+diff --git a/docs/EASTER-EGGS-E-EVENTOS.md b/docs/EASTER-EGGS-E-EVENTOS.md
+new file mode 100644
+index 0000000..10a8244
+--- /dev/null
++++ b/docs/EASTER-EGGS-E-EVENTOS.md
+@@ -0,0 +1,105 @@
++# Easter eggs e eventos aleatórios
++
++Combinados com o Tales em 16/10/2026 (fila de `CONTINUAR-SESSAO-16-10.md`). Documento interno:
++**nada disto é revelado na interface**. A única coisa visível é a opção de desligar em Minha conta.
++
++## Onde está o código
++
++| Peça | Arquivo |
++|---|---|
++| Regras puras (quando pode, qual aparece, frequência, marcos, Konami, toques) | `src/eventos/regras.ts` |
++| Frases (todas) | `src/eventos/frases.ts` |
++| Host: relógio, ouvintes, recado, confete, estrela, esqueleto, gato | `src/eventos/Surpresas.tsx` + `surpresas.css` |
++| Memória local (o que já apareceu, achados, selos) | `src/eventos/memoria.ts` (chave `eventos:memoria`, por conta, neste aparelho) |
++| Preferência liga/desliga | `src/eventos/preferencia.ts` + interruptor em `src/paginas/Conta.tsx` |
++| Gato da Biblioteca | `src/eventos/GatoBiblioteca.tsx` |
++| Sala secreta | `src/paginas/ArquivoPreceptor.tsx` + `src/eventos/arquivo.css` (rota `#/arquivo-do-preceptor`) |
++| Página de erro com fratura | `MapaPerdido` em `src/componentes/CenasPixel.tsx` (CSS em `recursos.css`) |
++| Arte | `scripts/gerar_surpresas_pixel.py` → `public/pixel/surpresas/*.png` (pixel art à mão, 20×20). O mascote usa `public/mascote/heroi-6.png` e o gato, `public/flashcards/vfx/gato-*.png` (artes já existentes) |
++| Testes | `fixtures/testar_eventos.mjs` (no `npm test`, relógio falso) e `fixtures/e2e_eventos.mjs` (Playwright no build de produção, com capturas) |
++
++O módulo `Surpresas` é carregado sob demanda (`lazy`) 3 s depois da primeira tela e não desce no
++painel do administrador. A entrada do site cresceu cerca de 0,3 KB gzip (JS) e 0,2 KB (CSS).
++
++## Regras gerais
++
++- **Nunca no meio de uma questão:** em `#/sessao`, enquanto a questão da posição atual não tem
++  resposta; em `#/questao/...` (questão avulsa), nunca.
++- **Nunca em simulado:** Simulado Nacional (`#/simulado-nacional` ou sessão com `nacional`),
++  sessão cronometrada (`limiteSegundos`) e prova do cronograma/simulado (`simulado: true`), em
++  qualquer página, até a entrega. Um simulado abandonado deixa de segurar depois de 6 h.
++- Também não aparecem no jogo dos flashcards (pop-up) nem no painel/e-mails do administrador.
++- **Somem sozinhos** (4,5 a 9 s; o mouse em cima pausa) e têm botão de fechar.
++- **Frequência baixa:** a primeira olhada é 45 s depois de abrir o site; depois, uma por minuto e
++  a cada troca de página. Intervalo mínimo de **15 min** entre surpresas (6 min de madrugada e
++  para as datas únicas), no máximo **6 por dia**, chance de **12%** a cada olhada para as comuns,
++  sem repetir a mesma surpresa em seguida nem as últimas 12 frases.
++- **`prefers-reduced-motion`:** nada se mexe; confete, estrela cadente e esqueleto dançando não
++  aparecem, e as surpresas comuns que dependem de efeito (estrela, confete) saem do sorteio.
++- **Sem vantagem:** nada mexe em respostas, contagens, ranking, emblemas do servidor, acesso ou
++  limites. A memória é só local.
++- **Desligar:** Minha conta → Preferências → Leitura e aparência → "Mostrar pequenas surpresas de
++  vez em quando". Guarda neste aparelho (`ortoquestoes:eventos:desligados`, preferência do aparelho
++  como o tema) e, com conta, também no perfil (`user_metadata.surpresas_desligadas`, sem SQL novo).
++  Num aparelho novo vale a do perfil. Desligado, param todas as surpresas automáticas (eventos,
++  festa dos marcos, recorde, R1, mão de cirurgião, luazinha do plantão). Os eggs que a pessoa
++  aciona de propósito (Konami, Tinel, gato, martelo, fratura, sala secreta) continuam.
++
++## Como testar
++
++- `npm test` roda `fixtures/testar_eventos.mjs` (todos os casos com relógio falso).
++- `node fixtures/e2e_eventos.mjs` (opcional `CAPTURAS=/pasta`, `SEM_BUILD=1`): build de produção,
++  relógio falso do Playwright, 1400×860 e 390×844, com capturas.
++- Na mão: **`?surpresa=<id>`** no endereço (ex.: `#/?surpresa=cafe`) mostra aquela surpresa
++  ~4 s depois de abrir (ainda respeitando os bloqueios). `?surpresa=agora` roda o sorteio de
++  verdade na hora. Ids: `cafe`, `bilhete`, `mascote`, `estrela`, `confete`, `hora`, `biscoito`,
++  `madrugada`, `fim-de-semana`, `sexta-noite` e, quando a data/condição vale, `aniversario`,
++  `aniversario-conta`, `vespera-teot`, `dia-prova`, `dia-ortopedista`, `data-especial`, `marco`,
++  `recorde`, `r1-sem-dormir`, `mao-de-cirurgiao`. Para datas, mude o relógio (Playwright
++  `page.clock.install`).
++
++## Eventos aleatórios
++
++| Evento | Gatilho | Personagem / frases |
++|---|---|---|
++| Café de plantão | sorteio comum | caneca; `FRASES_CAFE` ("Pausa de trinta segundos para o café? O fêmur espera, prometo.") |
++| Bilhete na prancheta | sorteio comum | prancheta; `FRASES_BILHETE` (dicas de estudo "com letra de médico") |
++| Visita do mascote | sorteio comum | cavaleiro; `FRASES_MASCOTE` |
++| Estrela cadente | sorteio comum (fora do movimento reduzido) | estrela + rastro cruzando o topo; `FRASES_ESTRELA` |
++| Confete do acaso | sorteio comum (fora do movimento reduzido) | confete caindo; `FRASES_CONFETE` |
++| Frases por hora do dia | sorteio comum | sol (manhã/tarde) ou lua (noite); `FRASES_HORA` |
++| Biscoito da sorte | sorteio comum | biscoito; `FRASES_BISCOITO` |
++| Sexta à noite | sexta, a partir das 19h, 1×/dia | lua; `FRASES_SEXTA` |
++| Fim de semana | sábado ou domingo, a partir das 8h, 1×/dia, garantido | cavaleiro por 4,5 s; "Sábado, 15h, e você aqui. Que orgulho." (4 variações, com o dia e a hora reais) |
++| Madrugada | 0h–4h59; 50% a cada olhada, pode repetir a cada 6 min | lua ou café, título com a hora ("2h40"); 8 frases (`FRASES_MADRUGADA`) sem repetir as recentes |
++| Aniversário da pessoa | dia/mês da "Data de nascimento" do perfil (29/02 → 28/02 em ano comum), 1×/ano | bolo + confete, "Parabéns, Ana!" |
++| Aniversário da conta | 100 dias de conta e cada ano completo (created_at), 1×/dia | bolo + confete |
++| Recorde pessoal | hoje ≥ 30 respostas, acima do melhor dia anterior (≥ 20), 1×/dia | medalha; "N respostas hoje, o seu melhor dia até agora." |
++| Datas especiais | 01/01, 07/04, 12/10, 16/10 (coluna), 18/10 (médico), 20/10 (osteoporose), 08/11 (radiologia), 24/12, 25/12, 31/12 | `DATAS_ESPECIAIS` |
++
++As únicas do dia (aniversários, véspera, Dia do Ortopedista, datas, recorde, R1, mão, marco) não
++dependem de sorteio: aparecem na primeira olhada permitida (respeitando 6 min desde a anterior).
++
++## Easter eggs
++
++| Egg | Gatilho | Onde | O que acontece |
++|---|---|---|---|
++| Código Konami ortopédico | ↑ ↑ ↓ ↓ ← → ← → **O T** (de Ortopedia e Traumatologia) no teclado, fora de campos de texto | qualquer página, menos simulado | esqueleto dança pela tela (5 s) e recado com o link para o Arquivo do Preceptor |
++| Festa nas 1.000, 5.000 e 10.000 respostas | o total de respostas dadas **neste aparelho** cruza o marco (cada tentativa conta, revisões incluídas: o acervo não chega a 10.000 questões diferentes). Respostas vindas da sincronia não disparam | logo depois da resposta; em simulado, espera a entrega | confete + "1.000 respostas, Ana! Mil vezes você escolheu estudar." (uma vez por marco) |
++| Sinal de Tinel na logo | 5 toques na logo em 3 s | cabeçalho | a logo "formiga" (tremor + faíscas ⚡) e recado do Tinel |
++| Plantão da madrugada | 0h–4h59 | logo do cabeçalho | uma luazinha dourada no canto da logo (e as frases de madrugada) |
++| Dia do Ortopedista | 19/09 | recado | medalha + confete |
++| Véspera do TEOT / dia da prova | véspera e dia de `DATAS_PROVA` (`src/estado/conquistas.ts`, hoje 10/01/2027) | recado | lua ("Amanhã é o grande dia…") / cavaleiro ("Boa prova!") |
++| Sala secreta "Arquivo do Preceptor" | `#/arquivo-do-preceptor` (sem menu): pelo Konami, pelo recado do console ou pela porta que aparece depois de reduzir a fratura do 404 | página própria | anotações do preceptor, "gavetas" (eggs) encontradas neste aparelho (as não achadas ficam "trancadas", sem dica) e o selo Mão de cirurgião |
++| Gato da Biblioteca | sempre dormindo no canto inferior esquerdo da Biblioteca de Flashcards (`#/flashcards/biblioteca` e `/estudo`); 1 toque acorda, 3 toques fica feliz | Biblioteca | gato feliz com coração e recado (`FRASES_GATO`); volta a dormir em 6 s |
++| Martelo de reflexo nas classificações | 3 toques em 2 s no rótulo "área · Classificação" do flashcard | flashcards de classificação | o flashcard dá o "chute" do reflexo patelar e recado do martelo |
++| Mensagem no console | ao carregar as surpresas, uma vez por aba | console do navegador | recado caloroso e a pista `#/arquivo-do-preceptor?de=console` (abrir por ela marca a gaveta "Recado no console") |
++| Página de erro com fratura | qualquer rota inexistente | `NaoEncontrada` / `MapaPerdido` | negatoscópio com "fratura completa do link"; tocar no osso faz a redução (fragmentos alinham) e aparece "Uma porta rangeu no fim do corredor…" |
++| R1 sem dormir | respostas entre 0h e 5h em 3 noites diferentes nos últimos 7 dias, 1×/semana | recado | residente com olheiras e touca; convite carinhoso a dormir |
++| Emblema "Mão de cirurgião" | as 20 últimas respostas certas e marcadas com certeza ("seguro") | recado + Arquivo do Preceptor | **selo local visual** (os emblemas oficiais são calculados e exibidos pelo sistema de conquistas, que tem regra própria de dificuldade em `docs/emblemas.md`; para não mexer nele nem no servidor, este fica só como selo neste aparelho) |
++
++## O que ficou de fora
++
++- O código Konami é só de teclado; no celular a sala secreta chega pela fratura do 404.
++- Nenhum SQL nem Edge Function: a memória das surpresas e o selo Mão de cirurgião ficam no
++  aparelho (por conta). A preferência viaja pelo perfil (user_metadata), que já existe.
+diff --git a/docs/PLANO-DE-IDEIAS.md b/docs/PLANO-DE-IDEIAS.md
+index 372f2b3..2d09b6e 100644
+--- a/docs/PLANO-DE-IDEIAS.md
++++ b/docs/PLANO-DE-IDEIAS.md
+@@ -147,6 +147,11 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
+ 
+ ---
+ 
++## L. Easter eggs e eventos aleatórios (fila de 16/10/2026)
++
++85. [x] Easter eggs: código Konami ortopédico, festa nas 1.000/5.000/10.000 respostas, sinal de Tinel na logo, plantão da madrugada, Dia do Ortopedista e véspera do TEOT, sala secreta "Arquivo do Preceptor", gato da Biblioteca, martelo de reflexo nas classificações, recado no console, 404 com fratura, "R1 sem dormir" e selo local "Mão de cirurgião".
++86. [x] Eventos aleatórios: café de plantão, bilhete na prancheta, visita do mascote, estrela cadente, sexta à noite, confete do acaso, frases por hora, aniversário da conta e da pessoa, recorde pessoal, datas especiais, biscoito da sorte, fim de semana e madrugada; nunca em questão aberta nem em simulado, opção de desligar em Minha conta. Ver [EASTER-EGGS-E-EVENTOS.md](EASTER-EGGS-E-EVENTOS.md).
++
+ ## Registro do que foi feito
+ 
+ - **14/10/2026:** PR #227 mesclado (herói chibi, portas da encruzilhada, floresta verdejante, painel do admin, PNG otimizado). Depois disso, golpes em pixel art e o Envenenado (ideias 1 a 11 e 19), no PR #228.
+@@ -175,3 +180,4 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
+ - **14/10/2026, paisagens:** 43–48: vilarejo, ruínas, vila vista de cima, campo florido, praia e estufa integrados às paradas existentes. [Relatório](flashcards/PAISAGENS-14-10.md).
+ 
+ - **14/10/2026, leitores:** 39: manto e livro nas estantes depois de quinze minutos visíveis, sem persistência, combate ou animação com movimento reduzido. [Relatório](flashcards/LEITORES-14-10.md).
++- **16/10/2026, surpresas:** 85 e 86: regras puras em `src/eventos/regras.ts` (testadas com relógio falso em `fixtures/testar_eventos.mjs`), módulo carregado sob demanda, arte em `scripts/gerar_surpresas_pixel.py`. Sem SQL. [Documentação](EASTER-EGGS-E-EVENTOS.md).
+diff --git a/fixtures/e2e_eventos.mjs b/fixtures/e2e_eventos.mjs
+new file mode 100644
+index 0000000..169b778
+--- /dev/null
++++ b/fixtures/e2e_eventos.mjs
+@@ -0,0 +1,230 @@
++// Ponta a ponta no BUILD DE PRODUÇÃO: surpresas (eventos aleatórios) e easter eggs, com relógio
++// falso do Playwright e o parâmetro de teste ?surpresa=<id>. Confere bloqueios (simulado,
++// preferência desligada), movimento reduzido e tira capturas em computador e celular.
++//
++// Uso: node fixtures/e2e_eventos.mjs   (CAPTURAS=/pasta, CHROMIUM=/caminho, SEM_BUILD=1)
++import assert from 'node:assert/strict'
++import { execFileSync, spawn } from 'node:child_process'
++import { mkdir } from 'node:fs/promises'
++import { join } from 'node:path'
++
++const raiz = process.cwd()
++const SUPABASE = 'https://falso.supabase.co'
++const CONTA = '11111111-2222-4333-8444-555555555555'
++const capturas = process.env.CAPTURAS ?? '/tmp/claude-0/capturas-eventos'
++await mkdir(capturas, { recursive: true })
++const { chromium } = await import('playwright')
++
++const env = { ...process.env, VITE_SUPABASE_URL: SUPABASE, VITE_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_simulado', VITE_FLASHCARDS: '1' }
++if (!process.env.SEM_BUILD) execFileSync('npx', ['vite', 'build', '--logLevel', 'error'], { cwd: raiz, env, stdio: 'inherit' })
++const porta = 4300 + Math.floor(Math.random() * 500)
++const preview = spawn('npx', ['vite', 'preview', '--port', String(porta), '--strictPort'], { cwd: raiz, env, stdio: ['ignore', 'pipe', 'inherit'] })
++preview.stdout.resume()
++const BASE = `http://localhost:${porta}/`
++for (let i = 0; ; i++) {
++  if (await fetch(BASE).then((r) => r.ok, () => false)) break
++  if (i > 120) throw new Error('vite preview não subiu')
++  await new Promise((ok) => setTimeout(ok, 250))
++}
++
++const usuario = (meta = {}) => ({ id: CONTA, aud: 'authenticated', role: 'authenticated', email: 'ana@exemplo.com', app_metadata: { provider: 'email' }, user_metadata: { nome: 'Ana', ...meta }, created_at: '2026-09-01T00:00:00Z' })
++function atendente(meta) {
++  return async (rota) => {
++    const pedido = rota.request()
++    const url = new URL(pedido.url())
++    const cors = { 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': '*', 'access-control-expose-headers': '*' }
++    if (pedido.method() === 'OPTIONS') return rota.fulfill({ status: 204, headers: cors })
++    const responder = (corpo) => rota.fulfill({ status: 200, headers: { ...cors, 'content-type': 'application/json' }, body: JSON.stringify(corpo) })
++    if (url.pathname.startsWith('/auth/v1/user')) return responder(usuario(meta))
++    if (url.pathname.startsWith('/auth/v1/')) return responder({})
++    const rpc = url.pathname.match(/^\/rest\/v1\/rpc\/([a-z_]+)$/)?.[1]
++    if (rpc === 'obter_acesso_premium') return responder([{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }])
++    if (rpc === 'obter_estado_conta') return responder([{ status_assinatura: 'ativa', cancelar_ao_fim: false, fim_periodo: null }])
++    if (rpc === 'sinal_aparelho') return responder([{ ativo: true, outro_aparelho: null }])
++    if (rpc === 'sincronizar_progresso' || rpc === 'ler_progresso_desde') return responder([])
++    return responder(rpc ? null : [])
++  }
++}
++
++const TELAS = [{ nome: 'computador', viewport: { width: 1400, height: 860 } }, { nome: 'celular', viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 }]
++const navegador = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
++const erros = []
++
++/** Abre uma página com conta simulada, relógio falso e dados locais. */
++async function abrir(tela, { hora, meta = {}, locais = {}, escuro = false, reduzido = false } = {}) {
++  const contexto = await navegador.newContext({ viewport: tela.viewport, isMobile: tela.isMobile, hasTouch: tela.hasTouch, deviceScaleFactor: tela.deviceScaleFactor ?? 1, colorScheme: escuro ? 'dark' : 'light', reducedMotion: reduzido ? 'reduce' : 'no-preference' })
++  await contexto.route(`${SUPABASE}/**`, atendente(meta))
++  const sessao = { access_token: `tok-${CONTA}`, refresh_token: 'r', token_type: 'bearer', expires_in: 3600, expires_at: Math.floor(new Date(hora ?? Date.now()).getTime() / 1000) + 30 * 24 * 3600, user: usuario(meta) }
++  await contexto.addInitScript(([s, conta, extra, tema]) => {
++    if (sessionStorage.getItem('oq-teste-semeado')) return
++    sessionStorage.setItem('oq-teste-semeado', '1')
++    localStorage.setItem('sb-ortoquestoes-auth', s)
++    localStorage.setItem('ortoquestoes:tema', JSON.stringify(tema))
++    for (const [k, v] of Object.entries(extra)) localStorage.setItem(k.replace('@', `ortoquestoes:conta:${conta}:`), JSON.stringify(v))
++  }, [JSON.stringify(sessao), CONTA, locais, escuro ? 'escuro' : 'claro'])
++  const p = await contexto.newPage()
++  if (hora) await p.clock.install({ time: new Date(hora) })
++  p.on('pageerror', (e) => erros.push(`${tela.nome}: ${e.message}`))
++  return { p, contexto }
++}
++
++const recado = '.oq-recado'
++async function esperarRecado(p, id) {
++  await p.waitForSelector(`${recado}[data-surpresa="${id}"]`, { timeout: 15_000 })
++  await p.waitForTimeout(700)
++}
++
++try {
++  for (const tela of TELAS) {
++    const c = (nome) => join(capturas, `${tela.nome}-${nome}.png`)
++
++    // 1. Fim de semana: "Sábado, 15h, e você aqui".
++    console.log(`${tela.nome}: passo 1`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-17T15:00:00' })
++      await p.goto(BASE + '#/?surpresa=fim-de-semana')
++      await esperarRecado(p, 'fim-de-semana')
++      const texto = await p.locator(recado).innerText()
++      assert.match(texto, /Sábado, 15h/, texto)
++      await p.screenshot({ path: c('fim-de-semana') })
++      await contexto.close()
++    }
++    // 2. Madrugada (sorteio de verdade, ?surpresa=agora) + luazinha do plantão na logo, tema escuro.
++    console.log(`${tela.nome}: passo 2`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-15T02:40:00', escuro: true })
++      await p.goto(BASE + '#/treinar?surpresa=agora')
++      await p.waitForFunction(() => document.body.classList.contains('oq-plantao'), null, { timeout: 15_000 })
++      // O sorteio da madrugada tem 50%: tenta algumas vezes recarregando.
++      let ok = false
++      for (let i = 0; i < 8 && !ok; i++) {
++        ok = await p.waitForSelector(`${recado}[data-surpresa="madrugada"]`, { timeout: 5000 }).then(() => true, () => false)
++        if (!ok) { await p.evaluate(() => localStorage.removeItem(Object.keys(localStorage).find((k) => k.endsWith('eventos:memoria')) ?? 'x')); await p.reload() }
++      }
++      if (!ok) console.log(await p.evaluate(() => [location.hash, document.body.className, document.querySelector('main')?.innerText.slice(0, 200), JSON.stringify(Object.entries(localStorage).filter(([k]) => k.includes('eventos')))]))
++      assert.ok(ok, 'madrugada não apareceu')
++      await p.waitForTimeout(700)
++      await p.screenshot({ path: c('madrugada') })
++      await contexto.close()
++    }
++    // 3. Aniversário da pessoa (data de nascimento do perfil), com confete.
++    console.log(`${tela.nome}: passo 3`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-21T11:00:00', meta: { nascimento: '1995-10-21' } })
++      await p.goto(BASE + '#/?surpresa=agora')
++      await esperarRecado(p, 'aniversario')
++      assert.match(await p.locator(recado).innerText(), /Parabéns, Ana!/)
++      await p.waitForTimeout(300)
++      await p.screenshot({ path: c('aniversario') })
++      await contexto.close()
++    }
++    // 4. Simulado em andamento: nada aparece, nem forçado.
++    console.log(`${tela.nome}: passo 4`)
++    {
++      const agora = new Date('2026-10-15T14:00:00').getTime()
++      const simulado = { id: 's', criadaEm: agora - 10 * 60_000, filtros: {}, ids: ['ombro-1', 'ombro-2'], posicao: 0, respostas: {}, revisar: [], riscadas: {}, concluidaEm: null, simulado: true, limiteSegundos: 3600 }
++      const { p, contexto } = await abrir(tela, { hora: agora, locais: { '@sessao:atual': simulado } })
++      await p.goto(BASE + '#/?surpresa=cafe')
++      await p.waitForTimeout(6000)
++      assert.equal(await p.locator(recado).count(), 0, 'surpresa apareceu durante o simulado')
++      await contexto.close()
++    }
++    // 5. Preferência desligada: nada aparece.
++    console.log(`${tela.nome}: passo 5`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-15T14:00:00', locais: { 'ortoquestoes:eventos:desligados': true } })
++      await p.goto(BASE + '#/?surpresa=cafe')
++      await p.waitForTimeout(6000)
++      assert.equal(await p.locator(recado).count(), 0, 'surpresa apareceu com a preferência desligada')
++      await contexto.close()
++    }
++    // 6. Café de plantão e biscoito da sorte (comuns), e a opção em Minha conta.
++    console.log(`${tela.nome}: passo 6`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-15T14:00:00' })
++      await p.goto(BASE + '#/?surpresa=cafe')
++      await esperarRecado(p, 'cafe')
++      await p.screenshot({ path: c('cafe') })
++      await p.goto(BASE + '#/conta?secao=preferencias&surpresa=biscoito')
++      await esperarRecado(p, 'biscoito')
++      const interruptor = p.getByText('Mostrar pequenas surpresas', { exact: false })
++      await interruptor.scrollIntoViewIfNeeded()
++      await p.screenshot({ path: c('conta-preferencia') })
++      await contexto.close()
++    }
++    // 7. Página de erro com fratura: tocar no osso reduz a fratura.
++    console.log(`${tela.nome}: passo 7`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-15T14:00:00' })
++      await p.goto(BASE + '#/pagina-que-nao-existe')
++      await p.waitForSelector('.mapa-perdido__raiox')
++      await p.waitForTimeout(400)
++      await p.screenshot({ path: c('404-fratura') })
++      await p.click('.mapa-perdido__raiox')
++      await p.waitForSelector('.mapa-perdido__porta')
++      await p.waitForTimeout(800)
++      await p.screenshot({ path: c('404-reduzida'), fullPage: true })
++      await p.click('.mapa-perdido__porta a')
++      await p.waitForSelector('.arq__porta')
++      await p.waitForTimeout(400)
++      await p.screenshot({ path: c('arquivo-do-preceptor'), fullPage: true })
++      assert.ok(await p.locator('.arq__gaveta--aberta').count() >= 2, 'arquivo deveria listar a fratura e o próprio arquivo')
++      await contexto.close()
++    }
++    // 8. Sinal de Tinel: cinco toques na logo.
++    console.log(`${tela.nome}: passo 8`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-15T14:00:00' })
++      await p.goto(BASE + '#/')
++      await p.waitForTimeout(4500) // as surpresas descem 3 s depois da primeira tela
++      for (let i = 0; i < 5; i++) await p.click('.cabecalho__marca', { delay: 20 })
++      await p.waitForSelector(`${recado}`, { timeout: 5000 })
++      await p.waitForTimeout(250)
++      assert.match(await p.locator(recado).innerText(), /Tinel/)
++      await p.screenshot({ path: c('tinel') })
++      // 9. Código Konami ortopédico (só teclado; no celular fica a fratura e o console).
++    console.log(`${tela.nome}: passo 9`)
++      if (tela.nome === 'computador') {
++        await p.locator('.oq-recado__fechar').click()
++        for (const k of ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'o', 't']) await p.keyboard.press(k)
++        await p.waitForSelector('.oq-danca img')
++        await p.waitForTimeout(1600)
++        assert.match(await p.locator(recado).innerText(), /Código ortopédico/)
++        await p.screenshot({ path: c('konami') })
++      }
++      await contexto.close()
++    }
++    // 10. Movimento reduzido: confete nunca aparece, o recado sim (parado).
++    console.log(`${tela.nome}: passo 10`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-21T11:00:00', meta: { nascimento: '1995-10-21' }, reduzido: true })
++      await p.goto(BASE + '#/?surpresa=agora')
++      await esperarRecado(p, 'aniversario')
++      assert.equal(await p.locator('.oq-confete').count(), 0, 'confete com movimento reduzido')
++      assert.equal(await p.evaluate(() => getComputedStyle(document.querySelector('.oq-recado')).animationName), 'none')
++      await contexto.close()
++    }
++    // 11. Gato da Biblioteca: três toques e ele fica feliz.
++    console.log(`${tela.nome}: passo 11`)
++    {
++      const { p, contexto } = await abrir(tela, { hora: '2026-10-15T14:00:00', locais: { 'ortoquestoes:flashcards:som-escolhido': true } })
++      await p.goto(BASE + '#/flashcards/biblioteca')
++      const gato = await p.waitForSelector('.oq-gato', { timeout: 30_000 }).then(() => true, () => false)
++      if (gato) {
++        await p.waitForTimeout(2500)
++        await p.screenshot({ path: c('biblioteca-gato-dormindo') })
++        for (let i = 0; i < 3; i++) await p.click('.oq-gato', { force: true })
++        await p.waitForSelector('.oq-gato--feliz')
++        await p.waitForTimeout(700)
++        await p.screenshot({ path: c('biblioteca-gato-feliz') })
++      } else console.log(`${tela.nome}: Biblioteca não abriu no teste (gato sem captura)`)
++      await contexto.close()
++    }
++    console.log(`${tela.nome}: surpresas e easter eggs conferidos`)
++  }
++} finally {
++  await navegador.close()
++  preview.kill()
++}
++assert.deepEqual(erros, [], `Erros na página:\n${erros.join('\n')}`)
++console.log(`Capturas em ${capturas}`)
+diff --git a/fixtures/testar_eventos.mjs b/fixtures/testar_eventos.mjs
+new file mode 100644
+index 0000000..7222d03
+--- /dev/null
++++ b/fixtures/testar_eventos.mjs
+@@ -0,0 +1,210 @@
++// Eventos aleatórios e easter eggs (combinados com o Tales em 16/10/2026): regras puras de
++// src/eventos/regras.ts com relógio falso. Madrugada, fim de semana, aniversários, véspera do
++// TEOT, sessão em andamento, simulado, preferência desligada, movimento reduzido, frequência,
++// marcos de respostas, código Konami e as regras fixas das frases.
++import assert from 'node:assert/strict'
++import { build } from 'esbuild'
++import { mkdtemp, readFile, rm } from 'node:fs/promises'
++import { tmpdir } from 'node:os'
++import { join } from 'node:path'
++import { pathToFileURL } from 'node:url'
++
++const pasta = await mkdtemp(join(tmpdir(), 'oq-eventos-'))
++const arquivo = join(pasta, 'm.mjs')
++try {
++  await build({ stdin: { contents: `export * from './src/eventos/regras'; export * as F from './src/eventos/frases'`, resolveDir: process.cwd() }, outfile: arquivo, bundle: true, platform: 'node', format: 'esm', logLevel: 'error' })
++  const m = await import(pathToFileURL(arquivo))
++  const MIN = 60_000
++  // Quinta, 15/10/2026, 14h (hora local do aparelho).
++  const quinta = (h = 14, min = 0) => new Date(2026, 9, 15, h, min)
++  const sabado = (h = 15, min = 0) => new Date(2026, 9, 17, h, min)
++  const base = (extra = {}) => ({
++    agora: quinta(), segmentos: [], jogo: false, sessao: null, desligado: false, movimentoReduzido: false,
++    memoria: m.MEMORIA_VAZIA, dataProva: '2027-01-10', ...extra,
++  })
++  const sempre = () => 0        // sorteio que sempre "acerta"
++  const nunca = () => 0.999     // sorteio que nunca acerta
++  const sequencia = (...v) => { let i = 0; return () => v[i++ % v.length] }
++
++  // ---------- Bloqueios ----------
++  assert.equal(m.bloqueio(base()), null)
++  assert.equal(m.bloqueio(base({ desligado: true })), 'desligado', 'preferência desligada')
++  assert.equal(m.escolherEvento(base({ desligado: true }), sempre), null)
++  const aberta = { concluida: false, criadaEm: quinta().getTime() - 10 * MIN, questaoAtualAberta: true }
++  assert.equal(m.bloqueio(base({ segmentos: ['sessao'], sessao: aberta })), 'questao', 'questão aberta sem resposta')
++  assert.equal(m.escolherEvento(base({ segmentos: ['sessao'], sessao: aberta }), sempre), null)
++  assert.equal(m.bloqueio(base({ segmentos: ['sessao'], sessao: { ...aberta, questaoAtualAberta: false } })), null, 'questão já respondida libera')
++  assert.equal(m.bloqueio(base({ segmentos: [], sessao: aberta })), null, 'sessão aberta, mas a pessoa está em outra página')
++  assert.equal(m.bloqueio(base({ segmentos: ['questao', 'ombro-1'] })), 'questao')
++  for (const prova of [{ simulado: true }, { limiteSegundos: 3600 }, { nacional: '2026-10' }]) {
++    const s = { ...aberta, questaoAtualAberta: false, ...prova }
++    assert.equal(m.bloqueio(base({ segmentos: [], sessao: s })), 'simulado', `simulado ${JSON.stringify(prova)} segura em qualquer página`)
++    assert.equal(m.eggPermitido(base({ segmentos: [], sessao: s })), false, 'eggs também esperam o simulado')
++    assert.equal(m.bloqueio(base({ sessao: { ...s, concluida: true } })), null, 'simulado entregue libera')
++    assert.equal(m.bloqueio(base({ sessao: { ...s, criadaEm: quinta().getTime() - 7 * 60 * MIN } })), null, 'simulado abandonado há horas não segura para sempre')
++  }
++  assert.equal(m.bloqueio(base({ segmentos: ['simulado-nacional'] })), 'simulado')
++  assert.equal(m.bloqueio(base({ segmentos: ['flashcards', 'cripta'], jogo: true })), 'jogo')
++  assert.equal(m.eggPermitido(base({ segmentos: ['flashcards', 'biblioteca'], jogo: true })), true, 'o gato vive no jogo')
++  assert.equal(m.bloqueio(base({ segmentos: ['admin'] })), 'ferramenta')
++
++  // ---------- Frequência ----------
++  assert.equal(m.escolherEvento(base(), nunca), null, 'sem sorte, sem surpresa')
++  const comum = m.escolherEvento(base(), sempre)
++  assert.ok(comum && ['cafe', 'bilhete', 'mascote', 'estrela', 'confete', 'hora', 'biscoito'].includes(comum.id), `comum: ${comum?.id}`)
++  assert.ok(comum.duracaoMs >= 4000 && comum.duracaoMs <= 8000, 'some sozinho em poucos segundos')
++  const depois = m.registrarExibicao(m.MEMORIA_VAZIA, comum, quinta())
++  assert.equal(m.escolherEvento(base({ agora: quinta(14, 10), memoria: depois }), sempre), null, '10 min depois: ainda não')
++  const outro = m.escolherEvento(base({ agora: quinta(14, 16), memoria: depois }), sempre)
++  assert.ok(outro, '16 min depois: pode')
++  assert.notEqual(outro.id, comum.id, 'não repete a mesma surpresa em seguida')
++  const cheio = { ...m.MEMORIA_VAZIA, dia: [m.chaveLocal(quinta()), m.MAXIMO_POR_DIA] }
++  assert.equal(m.escolherEvento(base({ memoria: cheio }), sempre), null, 'teto do dia')
++  // Em muitas verificações por minuto ao longo de um dia, nunca passa do teto nem do intervalo.
++  let mem = m.MEMORIA_VAZIA, vistos = []
++  let semente = 7
++  const aleatorio = () => (semente = (semente * 16807) % 2147483647) / 2147483647
++  for (let min = 8 * 60; min < 23 * 60; min++) {
++    const agora = new Date(2026, 9, 15, 0, min)
++    const e = m.escolherEvento(base({ agora, memoria: mem }), aleatorio)
++    if (e) { vistos.push([min, e.id]); mem = m.registrarExibicao(mem, e, agora) }
++  }
++  assert.ok(vistos.length >= 1 && vistos.length <= m.MAXIMO_POR_DIA, `dia comum: ${vistos.length} surpresas`)
++  for (let i = 1; i < vistos.length; i++) assert.ok(vistos[i][0] - vistos[i - 1][0] >= 15, 'intervalo mínimo de 15 min')
++
++  // ---------- Movimento reduzido: nada de confete nem estrela cadente nos comuns ----------
++  for (let i = 0; i < 200; i++) {
++    const e = m.escolherEvento(base({ movimentoReduzido: true }), sequencia(0, i / 200, 0.5))
++    if (e) assert.ok(!e.efeito, `com movimento reduzido veio ${e.id} com efeito`)
++  }
++
++  // ---------- Madrugada ----------
++  const madrugada = new Date(2026, 9, 15, 2, 40)
++  const md = m.escolherEvento(base({ agora: madrugada }), sempre)
++  assert.equal(md?.id, 'madrugada')
++  assert.equal(md.titulo, '2h40')
++  let memMd = m.registrarExibicao(m.MEMORIA_VAZIA, md, madrugada)
++  assert.equal(m.escolherEvento(base({ agora: new Date(2026, 9, 15, 2, 44), memoria: memMd }), sempre), null, 'madrugada: 4 min ainda não')
++  const md2 = m.escolherEvento(base({ agora: new Date(2026, 9, 15, 2, 47), memoria: memMd }), sempre)
++  assert.equal(md2?.id, 'madrugada', 'madrugada repete depois de alguns minutos')
++  assert.notEqual(md2.frase, md.frase, 'com outra frase')
++  assert.ok(m.ehPlantao(madrugada) && !m.ehPlantao(quinta()), 'plantão da logo só de madrugada')
++  assert.equal(m.escolherEvento(base({ agora: new Date(2026, 9, 15, 5, 0) }), sempre)?.id === 'madrugada', false, '5h já não é madrugada')
++
++  // ---------- Fim de semana e sexta à noite ----------
++  const fds = m.escolherEvento(base({ agora: sabado(15) }), sempre)
++  assert.equal(fds?.id, 'fim-de-semana')
++  assert.ok(/^Sábado, 15h/.test(fds.frase), fds.frase)
++  assert.ok(fds.duracaoMs >= 4000 && fds.duracaoMs <= 5000, 'personagem por 4 a 5 s')
++  const memFds = m.registrarExibicao(m.MEMORIA_VAZIA, fds, sabado(15))
++  assert.notEqual(m.escolherEvento(base({ agora: sabado(17), memoria: memFds }), sempre)?.id, 'fim-de-semana', 'uma vez por dia')
++  assert.ok(/^Domingo, 10h30/.test(m.escolherEvento(base({ agora: new Date(2026, 9, 25, 10, 30) }), sempre).frase))
++  assert.equal(m.escolherEvento(base({ agora: new Date(2026, 9, 23, 20, 0) }), sempre)?.id, 'sexta-noite')
++
++  // ---------- Aniversários, véspera, dia da prova, datas especiais ----------
++  const niver = m.escolherEvento(base({ nascimento: '1996-10-15', nome: 'Ana Souza' }), nunca)
++  assert.equal(niver?.id, 'aniversario', 'aniversário não depende de sorteio')
++  assert.equal(niver.titulo, 'Parabéns, Ana!')
++  const memNiver = m.registrarExibicao(m.MEMORIA_VAZIA, niver, quinta())
++  assert.notEqual(m.escolherEvento(base({ agora: quinta(18), nascimento: '1996-10-15', memoria: memNiver }), nunca)?.id, 'aniversario', 'uma vez por ano')
++  assert.ok(m.ehAniversario('2000-02-29', new Date(2027, 1, 28, 9)), '29/02 comemora em 28/02 no ano comum')
++  assert.ok(!m.ehAniversario('2000-02-29', new Date(2028, 1, 28, 9)), 'e em 29/02 no bissexto')
++  assert.ok(!m.ehAniversario('', quinta()) && !m.ehAniversario('lixo', quinta()))
++  assert.equal(m.escolherEvento(base({ contaCriadaEm: '2025-10-15T13:00:00Z' }), nunca)?.id, 'aniversario-conta')
++  assert.equal(m.aniversarioDaConta('2025-10-15T13:00:00Z', quinta()).anos, 1)
++  assert.equal(m.aniversarioDaConta('2026-07-07T13:00:00Z', quinta()).dias, 100, '100 dias de conta')
++  assert.equal(m.aniversarioDaConta('2026-10-14T13:00:00Z', quinta()), null)
++  const vespera = m.escolherEvento(base({ agora: new Date(2027, 0, 9, 19) }), nunca)
++  assert.equal(vespera?.id, 'vespera-teot')
++  assert.equal(m.escolherEvento(base({ agora: new Date(2027, 0, 10, 7) }), nunca)?.id, 'dia-prova')
++  assert.equal(m.escolherEvento(base({ agora: new Date(2026, 8, 19, 10) }), nunca)?.id, 'dia-ortopedista')
++  assert.equal(m.escolherEvento(base({ agora: new Date(2026, 9, 18, 10) }), nunca)?.id, 'data-especial', 'Dia do Médico')
++  assert.equal(m.escolherEvento(base({ agora: new Date(2027, 0, 9, 19), segmentos: ['simulado-nacional'] }), nunca), null, 'nem a véspera fura o simulado')
++
++  // ---------- Marcos (1.000, 5.000, 10.000 respostas) ----------
++  assert.equal(m.marcoCruzado(999, 1000), 1000)
++  assert.equal(m.marcoCruzado(1000, 1001), null)
++  assert.equal(m.marcoCruzado(4990, 10010), 10000)
++  const resp = { a: { tentativas: 3 }, b: { c: true }, c: { tentativas: 0 } }
++  assert.equal(m.totalRespostas(resp), 5, 'cada tentativa conta (sem tentativas = 1)')
++  const memMarco = { ...m.MEMORIA_VAZIA, marcoPendente: 1000 }
++  const festa = m.escolherEvento(base({ memoria: memMarco, nome: 'Bia' }), nunca)
++  assert.equal(festa?.id, 'marco')
++  assert.ok(festa.frase.includes('1.000') && festa.frase.includes('Bia') && festa.efeito === 'confete', festa.frase)
++  assert.equal(m.escolherEvento(base({ memoria: memMarco, segmentos: ['sessao'], sessao: aberta }), sempre), null, 'a festa espera a questão')
++  const memDepois = m.registrarExibicao(memMarco, festa, quinta())
++  assert.deepEqual(memDepois.marcos, [1000]); assert.equal(memDepois.marcoPendente, null)
++  assert.ok(memDepois.achados.includes('marco'))
++  assert.notEqual(m.escolherEvento(base({ agora: quinta(15), memoria: { ...memDepois, marcoPendente: 1000 } }), nunca)?.id, 'marco', 'cada marco uma vez só')
++
++  // ---------- Recorde, R1 sem dormir, Mão de cirurgião ----------
++  const H = 3_600_000
++  const regs = {}
++  let n = 0
++  const marcar = (em, correta = true, confianca = 'seguro') => { regs[`q-${n++}`] = { c: correta, q: em, historico: [{ em, correta, confianca }] } }
++  const hoje10 = new Date(2026, 9, 15, 10).getTime()
++  for (let i = 0; i < 25; i++) marcar(hoje10 - 3 * 24 * H + i * MIN)               // melhor dia anterior: 25
++  for (let i = 0; i < 31; i++) marcar(hoje10 + i * MIN, i > 10)                     // hoje: 31
++  for (const d of [1, 2, 4]) marcar(new Date(2026, 9, 15 - d, 2, 30).getTime())     // três madrugadas na semana
++  const est = m.estatisticasDeRespostas(regs, quinta())
++  assert.equal(est.respostasHoje, 31); assert.equal(est.melhorDiaAnterior, 25); assert.equal(est.madrugadasNaSemana, 3)
++  assert.equal(est.maoDeCirurgiao, true, 'as 20 últimas certas e com certeza')
++  const ctxEst = base({ ...est })
++  const unicos = m.eventosUnicos(ctxEst).map((e) => e.id)
++  assert.deepEqual(unicos, ['mao-de-cirurgiao', 'recorde', 'r1-sem-dormir'])
++  const mao = m.escolherEvento(ctxEst, nunca)
++  const memMao = m.registrarExibicao(m.MEMORIA_VAZIA, mao, quinta())
++  assert.ok(memMao.selos['mao-de-cirurgiao'], 'selo local guardado')
++  assert.ok(!m.eventosUnicos(base({ ...est, memoria: memMao })).some((e) => e.id === 'mao-de-cirurgiao'), 'selo uma vez só')
++  marcar(hoje10 + 60 * MIN, true, 'duvida')
++  assert.equal(m.estatisticasDeRespostas(regs, quinta()).maoDeCirurgiao, false, 'uma dúvida quebra a mão firme')
++  assert.equal(m.estatisticasDeRespostas({}, quinta()).maoDeCirurgiao, false)
++
++  // ---------- Eggs acionados pela pessoa ----------
++  let pos = 0, feito = false
++  for (const t of ['ArrowUp', 'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'o', 'T']) [pos, feito] = m.avancarKonami(pos, t)
++  assert.ok(feito, 'Konami ortopédico (com uma seta a mais no começo)')
++  pos = 0; feito = false
++  for (const t of ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']) [pos, feito] = m.avancarKonami(pos, t)
++  assert.ok(!feito, 'o B A clássico não abre: aqui é O T')
++  let toques = [], bateu = false
++  for (const t of [0, 400, 800, 1200]) [toques, bateu] = m.contarToques(toques, t, m.TINEL_TOQUES, m.TINEL_JANELA)
++  assert.ok(!bateu)
++  ;[toques, bateu] = m.contarToques(toques, 1600, m.TINEL_TOQUES, m.TINEL_JANELA)
++  assert.ok(bateu, 'cinco toques em 3 s: Tinel positivo')
++  toques = []
++  for (const t of [0, 1000, 2000, 3000, 4000]) [toques, bateu] = m.contarToques(toques, t * 1.6, m.TINEL_TOQUES, m.TINEL_JANELA)
++  assert.ok(!bateu, 'toques espaçados não contam')
++
++  // ---------- Memória: lixo vira vazio, achados sem repetir ----------
++  assert.deepEqual(m.normalizarMemoria(null), m.MEMORIA_VAZIA)
++  assert.deepEqual(m.normalizarMemoria({ achados: ['x', 3], dia: 'oi', vistos: [] }).achados, ['x'])
++  assert.equal(m.registrarAchado(m.registrarAchado(m.MEMORIA_VAZIA, 'gato'), 'gato').achados.length, 1)
++
++  // ---------- Forçado (?surpresa=) respeita os bloqueios ----------
++  assert.equal(m.eventoForcado('cafe', base())?.id, 'cafe')
++  assert.equal(m.eventoForcado('cafe', base({ segmentos: ['simulado-nacional'] })), null)
++  assert.equal(m.eventoForcado('estrela', base({ movimentoReduzido: true })).efeito, null)
++  assert.equal(m.eventoForcado('fim-de-semana', base({ agora: sabado(15) })).frase.startsWith('Sábado, 15h'), true)
++
++  // ---------- Regras fixas das frases ----------
++  const indice = JSON.parse(await readFile(join(process.cwd(), 'public/acervo/indice.json'), 'utf8'))
++  const textos = []
++  for (const v of Object.values(m.F)) {
++    if (typeof v === 'string') textos.push(v)
++    else if (Array.isArray(v)) textos.push(...v.filter((x) => typeof x === 'string'))
++    else if (v && typeof v === 'object') for (const x of Object.values(v)) textos.push(...(Array.isArray(x) ? x : [x.titulo, x.frase].filter(Boolean)))
++  }
++  for (const marco of m.MARCOS_RESPOSTAS) textos.push(m.F.fraseMarco(marco, 'Ana'))
++  textos.push(m.F.fraseRecorde(40))
++  for (let i = 0; i < 8; i++) textos.push(m.F.fraseFimDeSemana(sabado(), '15h', () => i / 8))
++  assert.ok(textos.length > 80, `${textos.length} frases`)
++  const proibidas = /cripta|masmorra|infelizmente|vou ser (direto|sincero)|sem rodeios|só que|olha só|grátis|desconto|oferta|aproveite/i
++  for (const t of textos) {
++    assert.ok(!proibidas.test(t), `Frase fora do tom ou das regras: ${t}`)
++    assert.ok(!t.includes(String(indice.total)) && !t.includes(indice.total.toLocaleString('pt-BR')), `Frase cita o total: ${t}`)
++  }
++  console.log(`Eventos e easter eggs: bloqueios, frequência, madrugada, fim de semana, datas, marcos, eggs e ${textos.length} frases conferidos`)
++} finally {
++  await rm(pasta, { recursive: true, force: true })
++}
+diff --git a/package.json b/package.json
+index 4f40b1c..3d047cc 100644
+--- a/package.json
++++ b/package.json
+@@ -8,7 +8,7 @@
+     "build": "tsc -b && vite build",
+     "preview": "vite preview",
+     "typecheck": "tsc --noEmit",
+-    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_previsao_pix.mjs && node fixtures/testar_receita.mjs && node fixtures/testar_dia.mjs && node fixtures/testar_admin_secoes.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs && node fixtures/testar_texto_editorial.mjs && node fixtures/testar_reinicio.mjs && node fixtures/testar_sincronia_incremental.mjs && node fixtures/testar_simulado_resumao.mjs && node fixtures/testar_perfil_ficha.mjs && node fixtures/testar_conquistas.mjs && node fixtures/testar_revisao.mjs && node fixtures/testar_cronograma_sequencia_flashcards.mjs && node fixtures/testar_modelos_email.mjs && node fixtures/testar_pagina_vendas.mjs && node fixtures/testar_frases_inicio.mjs && node fixtures/testar_exportacao_painel.mjs && node fixtures/testar_rotulos_financeiro.mjs && node fixtures/testar_continuidade_flashcards.mjs && node fixtures/testar_sincronia_aparelhos.mjs && node fixtures/testar_adiantar_ponta_a_ponta.mjs && node fixtures/testar_imagens_inicio.mjs",
++    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_previsao_pix.mjs && node fixtures/testar_receita.mjs && node fixtures/testar_dia.mjs && node fixtures/testar_admin_secoes.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs && node fixtures/testar_texto_editorial.mjs && node fixtures/testar_reinicio.mjs && node fixtures/testar_sincronia_incremental.mjs && node fixtures/testar_simulado_resumao.mjs && node fixtures/testar_perfil_ficha.mjs && node fixtures/testar_conquistas.mjs && node fixtures/testar_revisao.mjs && node fixtures/testar_cronograma_sequencia_flashcards.mjs && node fixtures/testar_modelos_email.mjs && node fixtures/testar_pagina_vendas.mjs && node fixtures/testar_frases_inicio.mjs && node fixtures/testar_exportacao_painel.mjs && node fixtures/testar_rotulos_financeiro.mjs && node fixtures/testar_continuidade_flashcards.mjs && node fixtures/testar_sincronia_aparelhos.mjs && node fixtures/testar_adiantar_ponta_a_ponta.mjs && node fixtures/testar_imagens_inicio.mjs && node fixtures/testar_eventos.mjs",
+     "test:compra": "node fixtures/testar_compra_planos.mjs",
+     "validar": "python3 scripts/validar_acervo.py",
+     "funcoes:colar": "node scripts/juntar-funcoes.mjs",
+diff --git a/public/pixel/surpresas/biscoito.png b/public/pixel/surpresas/biscoito.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..a01f9833851a88b74d31997e21c73847198ace93
+GIT binary patch
+literal 279
+zcmV+y0qFjTP)<h;3K|Lk000e1NJLTq000yK000yS1^@s6jfou%0002qNkl<Zc-rlg
+zF%E(-6o!9#0%p{>;|(~7iMTO1J9`Rd51=<7ZeD>jsVkULXBZesol1(dAnNF!yrg-r
+z`SSO@SKzO2<qQ>l&y}Y9?NK_DfC|K}hfcoAQUE{@C04Lwg4sa2a!L`#MGs1bU{#hH
+zVM?d{yw?_DyF3KSDYe$ft2>jcAWGW4jkzRaYY;>U7#Cn%SfSP@o18H&008&R?ky-8
+zbEdRB9{~W23xsje=1r6COu4*-()U~`n_9}Imic<yo>lms+s5D?>KAl(x>k$X=RalY
+dxBKfidIIL`iYJ5X)Up5o002ovPDHLkV1g(0cf0@q
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/bolo.png b/public/pixel/surpresas/bolo.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..cd6cf064483e36ad4e0297dac589b15663caf809
+GIT binary patch
+literal 228
+zcmV<A02}{_P)<h;3K|Lk000e1NJLTq000yK000yS1^@s6jfou%00021Nkl<Zc-muN
+z7zm&xCGelBhW)?d@t;^jnTRrV+oOT=GEpuJ?K{apRRc)@EW~;bm-w}39~hDOjOd!K
+z-nmASi?mg=Pz=TD<(DN(u(AosVfFIMk|hjI8`>E5LHWpRbiUJuHVgwXyu7~Li{yw1
+z?A!+THiiqY-+Vw(EK?jQ=n;eA!dtUTsGAO{=4CA@f&cS29VFYJL_d3mYtKF~GE%GD
+eL(egT7XSb=zDh^ixzjNK0000<MNUMnLSTY87GA&r
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/cafe.png b/public/pixel/surpresas/cafe.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..66128fab424c4649e35b8afdce6eb500a4d6f38b
+GIT binary patch
+literal 268
+zcmeAS@N?(olHy`uVBq!ia0vp^A|TAc1|)ksWqE<rWltB!kcwN$2@BMB6n_6$U-PHY
+zIOoNV2{H#d&Rm=%q;O00`n=kNBWmZG^d77@aQFZaB&=S4py0<N<{cJR^BWr<+M69V
+zjH&o~&U8`CinWVa%{{!m9@zJsZSg*QxFtwLO44S3wb*i3pCb}&X9FhjOo_kHJH21V
+z<;1<CuTy6z?%-*5Wvj|Depqa0cevx5(LM%sH@WN`HoN!y{Qp1yyupXfr)U4S2lDLq
+z@f_$l9Z*!n+0_^o#PmOwTg_M^W2L~;$=ui98N8V{p*zvyX64KY-YeM{Z02+pEZRG9
+Q7SMYPp00i_>zopr0G*I_Z2$lO
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/confete.png b/public/pixel/surpresas/confete.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..d919ace6e1dafc2e3b29bf38f05701e95e3c062b
+GIT binary patch
+literal 316
+zcmV-C0mJ@@P)<h;3K|Lk000e1NJLTq000yK000yS1^@s6jfou%00034Nkl<Zc-qy{
+zAr8VY6b9hGoPY#3g&qhb61mJUH32thLc$RUf+I{INoEja2oi!qASMxmAUA_Raf63i
+zvNf;WMuOlaQ+@mTx39pjD)pyiTBpQe*WDl{7E?jCu~3nGP@}|d5R;11+HQvEj#UIz
+zbP`E2f<@HWTo<j=Ts1)L0BoyG`S<NLm9R)Yh!TfVe`-W4pMi?y6IW4g>Oz<9b{ZmE
+zb|6PH06^Q?Abg$CTRd@pzJ)GWs|mKh?y&M=6qBk0YH_>hFaQ|Kd8xO%4TToWcQ#?!
+zvSWN9f&&3y5KLIiy&Q~pC^#&yl^0iHlsF{%M^Ot@%ap7Ha#)?8|Fb^lin?q<f|rN@
+O0000<MNUMnLSTX&QGAL3
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/esqueleto.png b/public/pixel/surpresas/esqueleto.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..5f2759e763a10e47c6058597e72d52dcc1201d8a
+GIT binary patch
+literal 229
+zcmV<B02=>^P)<h;3K|Lk000e1NJLTq000yK000yS1^@s6jfou%00022Nkl<Zc-muR
+zzyY+R1pZ?azxM0{BLg15h|923S1)1JV5Y4{&`_)fetG}szm}B1e_U)_dYKrg3|R0<
+z!n|#!t;c{X2*~m_I!&>mFietRut3M>QeyNlVoQ71o_%11v5~{hOk0luU7lbPLQWnh
+z4{g9o<MItr;fKvIeEO)K4rv$5#H2@J)H4z)ZE(dh$*#iXB9dd67!5=lN{a0S)gs3z
+fF$PjK=J5dlld{ZW0po=z00000NkvXXu0mjfz~Wqg
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/estrela.png b/public/pixel/surpresas/estrela.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..bedb83313fc9ffc581eb2afb6e25204978995593
+GIT binary patch
+literal 234
+zcmeAS@N?(olHy`uVBq!ia0vp^A|TAc1|)ksWqE<rMo$;VkcwN$2@*UG-d+#vLwSGK
+zAAM}E=R9-8+bXx9z2&9TS(%%iSeXwu^ReY_7uLvHZ~Oaz$CSqK@<;_15iNl??6L*R
+zw%z7z%RX;sAoS(a)^vG^i?L0732lN;Q|IU%O_GS5`03LbUXW%U{quJg*sR<Wv4Fu}
+zFDi)Xf4ok>f!Qq^n&z7S`+t3s(1Del^JT&gdwk^;wmaMxyTf(vm3^O&{r~?}JMW+T
+gv$nvq3nsENcnW67dGt#z13I3;)78&qol`;+0Ia=QiU0rr
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/lua.png b/public/pixel/surpresas/lua.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..234ef46facde7c32ac288fb7e9dd73073ef9ed51
+GIT binary patch
+literal 225
+zcmeAS@N?(olHy`uVBq!ia0vp^A|TAc1|)ksWqE<r3QrfukcwN$2@*aJ{!eHAfAMHU
+zf#$VILJom7Z*Q`@ZOR3*fBgUdl*_`+d`?<h;%B3)vBz4xA3eS6obq!5=grda^XC^>
+zY@4}aVvR(lj0C5Y#=4y28}fZcm{&gRxZZlAO(@%dTai`3Sutn%gw+3>swHk;Qk*rC
+z5;ndU*~GJYp+wv@voi`Wk_uC;?+CW&%ResCJrk6pm!dMIcthvpkN|-*^P9zZW}Ie>
+X70bHMs+e>V=w=2_S3j3^P6<r_0#sNm
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/mao.png b/public/pixel/surpresas/mao.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..ebbae97e3beb6bc080455a4ef711344a2e8c3a15
+GIT binary patch
+literal 289
+zcmeAS@N?(olHy`uVBq!ia0vp^A|TAc1|)ksWqE<r3r`ovkcwN$2@OsE!)^W<2QV5a
+zO1GU3(A8}G9~H#3B(ft%ViO~f_5U@${qOktACg@XdfX8SJZ^Jkdkl^))Lw6B00e9J
+zuK(&kyY<AU>+@<8j(jjORJa^5>4$;Jv4)rF^B+%f=VKC!VOu2K;4Np%F+*YnOM+h7
+z!Q~uj#(H*U;+q2=X{B)c#n-t+={#m$u5X`IapBRyg10x>-Bz_K-b-OFwp+RGaMpvZ
+z>GBftTPg%nHFhOh#Cr5Byup*400c*tI(mCO_`lEk{l{GwJY6T4FpFlD34AfzrM>c<
+ilbDkf8_xl*42J85-KQA0ezFGonZeW5&t;ucLK6V{zHUqa
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/martelo.png b/public/pixel/surpresas/martelo.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..b43d7f85dedec5a9a5623c6a063643f9621b08fc
+GIT binary patch
+literal 204
+zcmeAS@N?(olHy`uVBq!ia0vp^A|TAc1|)ksWqE<rWKS2zkcwN$2@-D_1dm;qB=p07
+z&9dzCb_S0oB|ARL+5Ay0<3_8xzvL<jy+6lOHH0^<jdR}?^d?oUWc>r<FNY>C=LzN4
+zd+^mrc-x1AX&Q!YiKYUx7aoyv6Ugx7{9|AF>`{GC5QDH`m(VFIPp`0$QdQxNZ2U8{
+zXL=Y`IK-TES#_|aTvgbT?QyZHvgJCJWid;n7#OB}Oj)+oyXPj*c?_PeelF{r5}E)@
+C0ZS_Y
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/medalha.png b/public/pixel/surpresas/medalha.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..fe0ae0c60cf1803c52ca4254b5ccacf6632f4426
+GIT binary patch
+literal 288
+zcmeAS@N?(olHy`uVBq!ia0vp^A|TAc1|)ksWqE<rb59q?kcwN$2@8x8T*NO-68h19
+zX8*T0%*uvE1_xTsPRljB$8$SpkEDoD*#X{*K<V`pHZ(gbCbAzklg@t>%W;|K@|2~M
+zPJc*fWN&sl#K#5%ZJFh2#uc(RyRMd6@E%FiFl>AH#Ym@SPhXC!pmK_YqxhrEJx>hw
+z>^jY~Tzku1zXv8$IF~1Ki3;?vuF-mY=q0n-oHpAR4GBPlR#)pS+;zc~fBC{2%B)!e
+zn-X8NO_Di%gGcdLz#g`&-7g+Kot&evN%4q8+vb7;(^C@S_+S5Wi+Nb^_9nYq?sj2|
+j!`$-|O-^bm3otMkDOAKLF4kHL^fH5|tDnm{r-UW|Z`5(L
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/prancheta.png b/public/pixel/surpresas/prancheta.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..36bc2710e1df653934a423dfde3444c295d15fa5
+GIT binary patch
+literal 271
+zcmeAS@N?(olHy`uVBq!ia0vp^A|TAc1|)ksWqE<rHBT4EkcwN$2@8x8RF*h+dp)o>
+z`hROPe~*iF$GVw~jg5)_mNoOR_s>ZHfeqU?CU|_=eB6NLrjS_4$z2Sh7P~VK%kFSA
+zm=JL7<c0;SW!CX6V_V+%qHDuWj%92&i}tV?85kJE)cz64zmav?D_J!C;PRD;UxnX1
+zT4-eP^?|uSzuPAsmtsXjF`hNtof}(T>7^(=af&gtwTS89k#k#SXw&1fxUZ34`Le{5
+z>F1Ls#M^Z*Sg7NYuA5@lm(zarfH(g=Lly}RK~bLRa(k3>9<*`4mtYfRU~n&XQC!Hi
+R^Dxkd44$rjF6*2UngGWsW`+O&
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/r1.png b/public/pixel/surpresas/r1.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..bbe691fc3a85c1f009f29ea330dd2995205872d5
+GIT binary patch
+literal 317
+zcmV-D0mA-?P)<h;3K|Lk000e1NJLTq000yK000yS1^@s6jfou%00035Nkl<Zc-muN
+zpa9gbxcR?+#m)Z=)Bv~)V#KFOOG*H%rfbhWFd`e;7@^Kc&_FFIf&U8ACSa9&kW~OT
+z6df=TGVJNCJ8*FrTVdJ+oUUiV<wAj$3W#f-{a|>2EH1@?H*9elIAd}XUX2#PWyHsz
+zmXyH%PseBd|NsC0e=RA2|NsC0$Kd1gG9xYnPps`?Sh1N8E*9bY357plK?c@{VZrCp
+z2;WaQ`4bjk*TY0i5S*L2jp5wPZA1kZ-gJ0kZ5Pf6!Icgv$|)p8O6baEc)hkdJPND9
+zOyn5Gz`(!|x^fv-9}tX`)!|WC*|-1`F)qQzCfh(#0VA<7iwoe3ajF0SRwR6Npa?>p
+P00000NkvXXu0mjfnR<nj
+
+literal 0
+HcmV?d00001
+
+diff --git a/public/pixel/surpresas/sol.png b/public/pixel/surpresas/sol.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..869a8d94670d675b501ace934612c02243cea864
+GIT binary patch
+literal 211
+zcmeAS@N?(olHy`uVBq!ia0vp^A|TAc1|)ksWqE<rEKe85kcwN$2@)J1>Ze_+Pr7O}
+zarI0QZw{?v>gPNB7f+kQ&~_~QyxoJVhda)1SiRlMz`*8(gW&Zt>&EK=YC$~72?+^1
+zcAaKgecF)ckG=P6d#@V~yqAHpkF36IaN+lNo1=Fpwb6LahsxQU@eKRtsIizcJli$>
+za?6LR*>-w+zP({quBs4}J{{uU9&%pOMN=)TM{Vg@jRi6c4B;<RzD;x0V+OjC!PC{x
+JWt~$(695a2P@w<-
+
+literal 0
+HcmV?d00001
+
+diff --git a/scripts/gerar_surpresas_pixel.py b/scripts/gerar_surpresas_pixel.py
+new file mode 100644
+index 0000000..d9b923a
+--- /dev/null
++++ b/scripts/gerar_surpresas_pixel.py
+@@ -0,0 +1,363 @@
++"""Personagens das surpresas do site (eventos aleatórios e easter eggs, 16/10/2026).
++
++Pixel art feita à mão, pixel a pixel, nos desenhos em texto abaixo (nada baixado nem gerado
++por IA). Cada letra é uma cor da paleta do desenho; "." é transparente. O CSS amplia com
++image-rendering: pixelated, então os arquivos ficam minúsculos.
++
++Gera public/pixel/surpresas/<nome>.png (20x20) e, com --folha, uma prancha ampliada para conferir:
++
++    python3 scripts/gerar_surpresas_pixel.py
++    python3 scripts/gerar_surpresas_pixel.py --folha /tmp/prancha.png
++
++O mascote (cavaleiro) e o gato da Biblioteca reaproveitam artes que já existem
++(public/mascote/heroi-6.png e public/flashcards/vfx/gato-*.png).
++"""
++from __future__ import annotations
++
++import sys
++from pathlib import Path
++
++from PIL import Image
++
++PASTA = Path(__file__).resolve().parents[1] / "public" / "pixel" / "surpresas"
++LADO = 20
++
++CONTORNO = "#2a1a10"
++
++DESENHOS: dict[str, tuple[dict[str, str], list[str]]] = {
++    # Caneca de café com fumaça e coração.
++    "cafe": ({"k": CONTORNO, "s": "#d8dde3", "c": "#6b3a1c", "b": "#a8693c", "w": "#fff6e6", "o": "#e6d3b3", "r": "#e0565b", "p": "#9fb4c7", "q": "#6f8aa3"}, [
++        "....................",
++        ".......s...s........",
++        "......s...s.........",
++        ".......s...s........",
++        "......s...s.........",
++        "....................",
++        "...kkkkkkkkkkk......",
++        "...kccbcccbccckkk...",
++        "...kwwwwwwwwwwk..k..",
++        "...kwwrwrwwwwok..k..",
++        "...kwrrrrrwwwok..k..",
++        "...kwwrrrwwwwokkk...",
++        "...kwwwrwwwwwok.....",
++        "...kwwwwwwwwwok.....",
++        "...kowwwwwwwook.....",
++        "....kowwwwwook......",
++        ".....kkkkkkkk.......",
++        "..kqppppppppppqk....",
++        "...kkkkkkkkkkkk.....",
++        "....................",
++    ]),
++    # Prancheta com papel, prendedor e rabiscos.
++    "prancheta": ({"k": CONTORNO, "m": "#a86a34", "n": "#7a4a22", "g": "#c9ccd1", "h": "#8a9099", "p": "#fffdf5", "l": "#7fa8d9", "r": "#e0565b"}, [
++        "....................",
++        "........kkkk........",
++        "...kkkkkghhgkkkkk...",
++        "...kmmmkgggghkmmk...",
++        "...kmkkkkkkkkkkmk...",
++        "...kmkppppppppkmk...",
++        "...kmkpllllllpkmk...",
++        "...kmkppppppppkmk...",
++        "...kmkpllllpppkmk...",
++        "...kmkppppppppkmk...",
++        "...kmkplllllppkmk...",
++        "...kmkppppppppkmk...",
++        "...kmkpllpppppkmk...",
++        "...kmkppppppppkmk...",
++        "...kmkpppprrppkmk...",
++        "...kmkppprpprpkmk...",
++        "...kmkkkkkkkkkkmk...",
++        "...knnnnnnnnnnnnk...",
++        "...kkkkkkkkkkkkkk...",
++        "....................",
++    ]),
++    # Estrela cadente com rastro.
++    "estrela": ({"k": CONTORNO, "y": "#ffd448", "w": "#fff4c0", "o": "#e8a020", "t": "#b9d8ff", "u": "#7fa8d9"}, [
++        "....................",
++        ".............k......",
++        "............kyk.....",
++        "............kyk.....",
++        "........kkkkywykkkk.",
++        "........kyyywwwyyyk.",
++        ".........kyywwwyyk..",
++        "..........kyyyyyk...",
++        "..........kyokoyk...",
++        ".........kyok.koyk..",
++        "........tkk.....kk..",
++        ".......t............",
++        "......tu............",
++        ".....tu.............",
++        "....tu..............",
++        "...tu...............",
++        "..u.................",
++        "....................",
++        "....................",
++        "....................",
++    ]),
++    # Biscoito da sorte com o papelzinho saindo.
++    "biscoito": ({"k": CONTORNO, "a": "#f0b85a", "b": "#d08a2c", "c": "#ffd98a", "p": "#fffdf5", "r": "#e0565b"}, [
++        "....................",
++        "....................",
++        "....................",
++        "....................",
++        ".......kkkkkk.......",
++        ".....kkccccaakk.....",
++        "....kccccaaaaabk....",
++        "...kcccaaaaaaabbk...",
++        "...kccaaaaaaabbbk...",
++        "..kcaaaaakkaabbbbk..",
++        "..kcaaaakppkabbbbk..",
++        "..kaaaakpprpkbbbbk..",
++        "..kaaakppppppkbbk...",
++        "...kakpprppppkkk....",
++        "...kkkppppppk.......",
++        ".....kkkkkkk........",
++        "....................",
++        "....................",
++        "....................",
++        "....................",
++    ]),
++    # Bolo de aniversário com vela.
++    "bolo": ({"k": CONTORNO, "f": "#ffd448", "o": "#ff8a2a", "v": "#7fa8d9", "w": "#fff6e6", "r": "#e86a8a", "b": "#b06a3a", "c": "#d9915a", "p": "#c9ccd1"}, [
++        "....................",
++        ".........k..........",
++        "........kfk.........",
++        "........kok.........",
++        ".........k..........",
++        ".........v..........",
++        ".........v..........",
++        "....kkkkkvkkkkkk....",
++        "...kwwwwwwwwwwwwk...",
++        "...kwrwwrwwwrwwrk...",
++        "...krkrrkrrrkrrkk...",
++        "...kccccccccccccck..",
++        "...kbbbbbbbbbbbbbk..",
++        "...kwwwwwwwwwwwwwk..",
++        "...kccccccccccccck..",
++        "...kbbbbbbbbbbbbbk..",
++        "..kpppppppppppppppk.",
++        "...kkkkkkkkkkkkkkk..",
++        "....................",
++        "....................",
++    ]),
++    # Lua crescente com estrelinhas.
++    "lua": ({"k": CONTORNO, "y": "#ffe9a8", "o": "#e8c66a", "s": "#fff4c0"}, [
++        "....................",
++        "...............s....",
++        "......kkkk.....s....",
++        ".....kyyyk..........",
++        "....kyyyk......s....",
++        "...kyyyk............",
++        "...kyyok............",
++        "..kyyyok.........s..",
++        "..kyyyok............",
++        "..kyyyyok...........",
++        "..kyyyyyokk.........",
++        "..kyyyyyyookkk......",
++        "...kyyyyyyyyook.....",
++        "...kkyyyyyyyyyk.....",
++        ".....kkyyyyyykk.....",
++        ".......kkkkkk.......",
++        "....s...............",
++        "....................",
++        "..........s.........",
++        "....................",
++    ]),
++    # Sol sorridente.
++    "sol": ({"k": CONTORNO, "y": "#ffd448", "o": "#ff9a2a", "w": "#fff4c0", "r": "#e86a5a"}, [
++        "....................",
++        ".........o..........",
++        "....o....o....o.....",
++        ".....o.......o......",
++        ".......kkkkk........",
++        "......kwyyyyk.......",
++        ".....kwyyyyyyk......",
++        "..oo.kyykyykyk.oo...",
++        ".....kyyyyyyyk......",
++        ".....kyrykkyryk.....",
++        ".....kyyyyyyyk......",
++        "......kyyyyyk.......",
++        ".......kkkkk........",
++        ".....o.......o......",
++        "....o....o....o.....",
++        ".........o..........",
++        "....................",
++        "....................",
++        "....................",
++        "....................",
++    ]),
++    # R1 sem dormir: olheiras, cabelo bagunçado e touca.
++    "r1": ({"k": CONTORNO, "t": "#4ab0a0", "u": "#2f8a7c", "h": "#5a3418", "s": "#f2c79a", "o": "#9a7aa8", "w": "#ffffff", "e": "#2a1a10", "m": "#c06050", "j": "#7fc3b6", "z": "#7fa8d9"}, [
++        "...............zz...",
++        "..............z.....",
++        ".......kkkkkk..zz...",
++        "......kttttttk......",
++        ".....kttuttuttk.....",
++        ".....khhkkkkhhk.....",
++        ".....kssssssssk.....",
++        ".....kswewswewk.....",
++        ".....ksooosoook.....",
++        ".....kssssssssk.....",
++        ".....ksssmmsssk.....",
++        "......kssssssk......",
++        ".......kkkkkk.......",
++        ".....kjjjjjjjjk.....",
++        "....kjjjjjjjjjjk....",
++        "....kjjjkjjkjjjk....",
++        "....kjjjjjjjjjjk....",
++        "....kjjjjjjjjjjk....",
++        "....kkkkkkkkkkkk....",
++        "....................",
++    ]),
++    # Esqueleto dançando (código ortopédico e datas do osso).
++    "esqueleto": ({"k": CONTORNO, "w": "#f4efe2", "g": "#c9c2b0"}, [
++        "......kkkkkk........",
++        ".....kwwwwwwk.......",
++        ".....kwkkwkkwk......",
++        ".....kwkkwkkwk......",
++        ".....kwwwkwwwk......",
++        "......kwkwkwk.......",
++        ".......kwwwk........",
++        "..kk....kwk....kk...",
++        "...kk.kkwwwkk.kk....",
++        "....kkwgwgwgwkk.....",
++        "......kwgwgwk.......",
++        "......kwgwgwk.......",
++        ".......kwwwk........",
++        "........kwk.........",
++        "......kkwwwkk.......",
++        ".....kk.....kk......",
++        "....kk.......kk.....",
++        "...kk.........kk....",
++        "..kww.........wwk...",
++        "....................",
++    ]),
++    # Mão de cirurgião: luva cirúrgica azul com brilho.
++    "mao": ({"k": CONTORNO, "b": "#7fc3e6", "c": "#4a96c8", "w": "#e8f6ff", "y": "#ffd448"}, [
++        "..y.................",
++        ".yyy.....kk.........",
++        "..y..kk.kbbk.kk.....",
++        "....kbbkkbbkkbbk....",
++        "....kbbkkbwkkbbk....",
++        "....kbwkkbbkkbwk.kk.",
++        "....kbbkkbbkkbbkkbbk",
++        "....kbbkkbbkkbbkkbwk",
++        "....kbbbbbbbbbbkkbbk",
++        "....kbbbbbbbbbbbbbck",
++        "....kbbbbbbbbbbbbck.",
++        "....kbbbbbbbbbbbbck.",
++        "....kcbbbbbbbbbbck..",
++        ".....kcbbbbbbbbck...",
++        "......kcbbbbbbck....",
++        "......kwwwwwwwwk....",
++        "......kccccccccck...",
++        "......kwwwwwwwwk....",
++        "......kkkkkkkkkk....",
++        "..................y.",
++    ]),
++    # Martelo de reflexo (cabeça triangular de borracha).
++    "martelo": ({"k": CONTORNO, "r": "#e0565b", "s": "#b03a40", "m": "#c9ccd1", "h": "#8a9099"}, [
++        "....................",
++        "....................",
++        "..kkkkkkkkkkk.......",
++        "..krrrrrrrrrsk......",
++        "...krrrrrrrrsk......",
++        "....krrrrrrsk.......",
++        ".....krrrrsk........",
++        "......krrsk.........",
++        ".......kmk..........",
++        ".......kmhk.........",
++        "........kmk.........",
++        "........kmhk........",
++        ".........kmk........",
++        ".........kmhk.......",
++        "..........kmk.......",
++        "..........kmhk......",
++        "...........kmk......",
++        "...........kmhk.....",
++        "............kkk.....",
++        "....................",
++    ]),
++    # Medalha dourada com fita.
++    "medalha": ({"k": CONTORNO, "r": "#e0565b", "b": "#4a7ac8", "y": "#ffd448", "o": "#d4901a", "w": "#fff4c0"}, [
++        "....................",
++        "....kkkk...kkkk.....",
++        "....krrbk.kbbrk.....",
++        ".....krrbkbbrk......",
++        "......krrbbrk.......",
++        ".......krbbk........",
++        "......kkkkkkk.......",
++        ".....kyyyyyyyk......",
++        "....kywwyyyyyok.....",
++        "...kywyyyoyyyyok....",
++        "...kyyyyoooyyyok....",
++        "...kyyyoooooyyok....",
++        "...kyyyyoooyyyok....",
++        "...kyyyyyoyyyyok....",
++        "....kyyyyyyyyok.....",
++        ".....koyyyyyok......",
++        "......kkkkkkk.......",
++        "....................",
++        "....................",
++        "....................",
++    ]),
++    # Confete e serpentina.
++    "confete": ({"k": CONTORNO, "r": "#e0565b", "y": "#ffd448", "b": "#4a96c8", "g": "#5ab06a", "p": "#b06ad8", "o": "#ff9a2a"}, [
++        "....................",
++        "..r.......y.....b...",
++        ".rr...b.......p.....",
++        "......bb...o........",
++        "...y.......oo...g...",
++        "...yy..g.........g..",
++        "........g....r......",
++        ".b.....kkk......y...",
++        "......kpyrk.........",
++        "..p..kpyrbbk...o....",
++        ".....kyrbbgok.......",
++        "....kyrbbgoppk..r...",
++        "....krbbgoppyk......",
++        "...kkbbgoppyrk..b...",
++        "...kkkgoppyrk.......",
++        "..kkkkkppyrk....y...",
++        "..kkkkkkkkk.........",
++        ".kkkkk..............",
++        "....................",
++        "....................",
++    ]),
++}
++
++
++def desenhar(nome: str) -> Image.Image:
++    paleta, linhas = DESENHOS[nome]
++    img = Image.new("RGBA", (LADO, LADO), (0, 0, 0, 0))
++    px = img.load()
++    assert len(linhas) == LADO, f"{nome}: {len(linhas)} linhas"
++    for y, linha in enumerate(linhas):
++        linha = linha.ljust(LADO, ".")[:LADO]
++        for x, ch in enumerate(linha):
++            if ch == ".":
++                continue
++            cor = paleta.get(ch)
++            assert cor, f"{nome}: letra sem cor '{ch}' na linha {y}"
++            h = cor.lstrip("#")
++            px[x, y] = (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16), 255)
++    return img
++
++
++def main() -> None:
++    PASTA.mkdir(parents=True, exist_ok=True)
++    imagens = {nome: desenhar(nome) for nome in DESENHOS}
++    for nome, img in imagens.items():
++        img.save(PASTA / f"{nome}.png", optimize=True)
++    if "--folha" in sys.argv:
++        destino = Path(sys.argv[sys.argv.index("--folha") + 1])
++        escala = 8
++        folha = Image.new("RGBA", (len(imagens) * (LADO * escala + 16) + 16, LADO * escala + 32), (40, 44, 52, 255))
++        for i, img in enumerate(imagens.values()):
++            folha.alpha_composite(img.resize((LADO * escala, LADO * escala), Image.NEAREST), (16 + i * (LADO * escala + 16), 16))
++        folha.save(destino)
++    print(f"{len(imagens)} personagens em {PASTA}")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/App.tsx b/src/App.tsx
+index bf48b8d..d396da5 100644
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -1,5 +1,5 @@
+ import { ehRotaDoJogo, lembrarFundo, rotaDoFundo } from './flashcards/fundo'
+-import { lazy, Suspense, useEffect, useRef, type ReactNode } from 'react'
++import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from 'react'
+ import { EsperaPixel } from './componentes/EsperaPixel'
+ import { vigiarFilaZerada } from './conta/feitos'
+ import { rotaDe, usarRota, type Rota } from './util/rotas'
+@@ -51,6 +51,9 @@ const Indicar = lazy(() => import('./paginas/Indicar').then(({ Indicar }) => ({
+ const ConviteRecebido = lazy(() => import('./paginas/Indicar').then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
+ const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ default: Ligas })))
+ const Flashcards = lazy(() => import('./paginas/Flashcards').then(({ Flashcards }) => ({ default: Flashcards })))
++const ArquivoPreceptor = lazy(() => import('./paginas/ArquivoPreceptor').then(({ ArquivoPreceptor }) => ({ default: ArquivoPreceptor })))
++// Surpresas (eventos aleatórios e easter eggs): descem depois da primeira tela, sem pesar na entrada.
++const Surpresas = lazy(() => import('./eventos/Surpresas').then(({ Surpresas }) => ({ default: Surpresas })))
+ const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
+ 
+ const TITULOS: Record<string, string> = {
+@@ -92,6 +95,7 @@ const TITULOS: Record<string, string> = {
+   '/flashcards/cripta': 'Torneio de Flashcards | Orto Questões',
+   '/flashcards/torre': 'Torre do Título | Orto Questões',
+   '/flashcards/biblioteca': 'Biblioteca de flashcards | Orto Questões',
++  '/arquivo-do-preceptor': 'Arquivo do Preceptor | Orto Questões',
+ }
+ 
+ /** A página de uma rota (o App desenha a do site e, por cima, a do jogo). */
+@@ -190,6 +194,9 @@ function paginaDaRota(rota: Rota): ReactNode {
+     case 'ligas':
+       pagina = <Ligas key={rota.consulta.toString()} consulta={rota.consulta} />
+       break
++    case 'arquivo-do-preceptor':
++      pagina = <ArquivoPreceptor consulta={rota.consulta} />
++      break
+     case 'flashcards':
+       pagina = FLASHCARDS_LIBERADO ? <Flashcards secao={segundo} /> : <NaoEncontrada />
+       break
+@@ -220,6 +227,13 @@ export function App() {
+   // Emblemas "Fila zerada": observa as respostas e marca o dia em que a revisão zerou.
+   useEffect(() => vigiarFilaZerada(), [])
+ 
++  // As surpresas só descem com a página já pronta (e não descem no painel do administrador).
++  const [comSurpresas, definirComSurpresas] = useState(false)
++  useEffect(() => {
++    const t = window.setTimeout(() => definirComSurpresas(true), 3000)
++    return () => window.clearTimeout(t)
++  }, [])
++
+   useEffect(() => {
+     document.title =
+       TITULOS[rota.caminho] ??
+@@ -283,6 +297,7 @@ export function App() {
+       <ConviteDiario caminho={rota.caminho} />
+       <AvisoCookies />
+       <HospedeConfirmacao />
++      {comSurpresas && primeiro !== 'admin' && <Suspense fallback={null}><Surpresas segmentos={rota.segmentos} consulta={rota.consulta} jogo={jogo} /></Suspense>}
+     </div>
+   )
+ }
+diff --git a/src/componentes/CenasPixel.tsx b/src/componentes/CenasPixel.tsx
+index d138a64..cde78ce 100644
+--- a/src/componentes/CenasPixel.tsx
++++ b/src/componentes/CenasPixel.tsx
+@@ -1,4 +1,5 @@
+-import type { ReactNode } from 'react'
++import { useState, type ReactNode } from 'react'
++import { marcarAchado } from '../eventos/memoria'
+ import { recurso } from '../config'
+ import { href } from '../util/rotas'
+ 
+@@ -22,18 +23,40 @@ export function MensageiroDormindo({ titulo, texto, acao }: { titulo: string; te
+   )
+ }
+ 
+-/** Página não encontrada: um mapa de RPG com o caminho de volta. */
++/**
++ * Página não encontrada: o link "fraturou". O negatoscópio mostra um osso com traço de fratura;
++ * tocar no osso faz a redução (easter egg) e entreabre a porta do Arquivo do Preceptor.
++ */
+ export function MapaPerdido() {
++  const [reduzida, definirReduzida] = useState(false)
++  function reduzir() {
++    if (reduzida) return
++    definirReduzida(true)
++    marcarAchado('fratura')
++  }
+   return (
+     <article className="empilha-2 limite-leitura">
+       <section className="mapa-perdido">
+         <p className="mapa-perdido__codigo">404</p>
+-        <p className="mapa-perdido__titulo">Esta trilha não existe</p>
+-        <svg className="mapa-perdido__trilha" viewBox="0 0 300 90" aria-hidden="true">
+-          <path d="M10 70 C 60 10, 110 90, 160 40 S 250 20, 290 60" fill="none" stroke="#f4cf7c" strokeWidth="4" strokeDasharray="10 9" />
+-          <path d="M276 42l14 14M290 42l-14 14" stroke="#d9605a" strokeWidth="5" strokeLinecap="square" />
+-        </svg>
+-        <p>O endereço pode ter mudado. Volte para o início ou continue de onde parou.</p>
++        <p className="mapa-perdido__titulo">{reduzida ? 'Redução anatômica!' : 'Fratura completa do link'}</p>
++        <button type="button" className={'mapa-perdido__raiox' + (reduzida ? ' mapa-perdido__raiox--reduzida' : '')} onClick={reduzir} aria-label={reduzida ? 'Fratura reduzida' : 'Tentar reduzir a fratura'}>
++          <svg viewBox="0 0 300 96" aria-hidden="true">
++            <rect x="2" y="2" width="296" height="92" rx="8" fill="#0d1a24" stroke="#3d5568" strokeWidth="3" />
++            <g className="mapa-perdido__fragmento mapa-perdido__fragmento--1">
++              <path d="M28 34c-10-12 8-24 18-12 4-2 8-2 10 2h80l6 26h-86c-2 4-6 4-10 2-10 12-28 0-18-12-4-2-4-4 0-6z" fill="#dfe9ee" />
++              <path d="M58 40h72" stroke="#b9c9d2" strokeWidth="3" strokeLinecap="round" />
++            </g>
++            <g className="mapa-perdido__fragmento mapa-perdido__fragmento--2">
++              <path d="M150 24h86c2-4 6-4 10-2 10-12 28 0 18 12 4 2 4 4 0 6 10 12-8 24-18 12-4 2-8 2-10-2h-80l-6-26z" fill="#dfe9ee" />
++              <path d="M168 40h70" stroke="#b9c9d2" strokeWidth="3" strokeLinecap="round" />
++            </g>
++            <path className="mapa-perdido__traco" d="M140 20l6 10-5 8 6 10-4 10" fill="none" stroke="#d9605a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
++            <text x="16" y="86" fill="#7f97a8" fontSize="10" fontFamily="monospace">{reduzida ? 'PÓS-REDUÇÃO · ALINHADO' : 'AP · TRAÇO TRANSVERSO · DESVIO'}</text>
++          </svg>
++        </button>
++        <p>{reduzida
++          ? 'Fragmentos alinhados. Agora é só imobilizar e voltar para o início.'
++          : 'O endereço pode ter mudado. Conduta: redução incruenta, de volta ao início ou para onde você parou.'}</p>
+       </section>
+       <div className="linha linha--empilha-celular">
+         <a className="botao botao--principal botao--grande" href={href('/')}>Voltar ao início</a>
+@@ -43,6 +66,7 @@ export function MapaPerdido() {
+         <img src={recurso('ranking/mensageiro.png')} width={40} height={50} alt="" />
+         <span>Achou um link quebrado? Avise o mensageiro em <a href={href('/contato')}>Suporte e contato</a>.</span>
+       </p>
++      {reduzida && <p className="mapa-perdido__porta"><a href={href('/arquivo-do-preceptor')}>Uma porta rangeu no fim do corredor…</a></p>}
+     </article>
+   )
+ }
+diff --git a/src/estado/armazenamento.ts b/src/estado/armazenamento.ts
+index d13f12b..be94a21 100644
+--- a/src/estado/armazenamento.ts
++++ b/src/estado/armazenamento.ts
+@@ -4,7 +4,7 @@ let cacheDisponivel: boolean | null = null
+ const memoria = new Map<string, string>()
+ let usuario: string | null = null
+ // 'flashcards:som-escolhido': a escolha de entrar com ou sem som vale para o aparelho (perguntada uma vez só)
+-const GLOBAIS = new Set(['tema', 'etiquetas', 'instalar:dispensado', 'convite-compartilhar', 'convite-diario', 'dica:deslizar', 'flashcards:som-escolhido'])
++const GLOBAIS = new Set(['tema', 'etiquetas', 'instalar:dispensado', 'convite-compartilhar', 'convite-diario', 'dica:deslizar', 'flashcards:som-escolhido', 'eventos:desligados'])
+ /**
+  * Visitantes não persistem progresso entre dispositivos, mas uma sessão de
+  * questões em andamento é frágil demais para viver só na memória do processo
+diff --git a/src/estilos/recursos.css b/src/estilos/recursos.css
+index 6349010..123f4ed 100644
+--- a/src/estilos/recursos.css
++++ b/src/estilos/recursos.css
+@@ -345,6 +345,18 @@
+ .mapa-perdido__codigo { margin: 0; font-family: var(--fonte-pixel); font-weight: 700; font-size: 3.4rem; line-height: 1; color: #f4cf7c; text-shadow: 0 3px 0 #6b4a0c; }
+ .mapa-perdido__titulo { margin: 0.4rem 0 0; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.8rem; }
+ .mapa-perdido__trilha { display: block; width: min(100%, 22rem); height: 6rem; margin: 0.8rem auto; }
++.mapa-perdido__raiox { display: block; width: min(100%, 24rem); margin: 0.9rem auto; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 10px; }
++.mapa-perdido__raiox svg { display: block; width: 100%; height: auto; }
++.mapa-perdido__raiox:focus-visible { outline: 3px solid #f4cf7c; outline-offset: 3px; }
++.mapa-perdido__fragmento { transition: transform 0.6s cubic-bezier(0.3, 1.4, 0.5, 1); }
++.mapa-perdido__fragmento--1 { transform: translate(-6px, 6px) rotate(-3deg); transform-origin: 140px 40px; }
++.mapa-perdido__fragmento--2 { transform: translate(8px, -5px) rotate(4deg); transform-origin: 150px 40px; }
++.mapa-perdido__raiox--reduzida .mapa-perdido__fragmento { transform: none; }
++.mapa-perdido__traco { transition: opacity 0.4s; }
++.mapa-perdido__raiox--reduzida .mapa-perdido__traco { opacity: 0.25; }
++.mapa-perdido__porta { margin: 0; text-align: right; font-size: 0.85rem; }
++.mapa-perdido__porta a { color: var(--texto-2); }
++@media (prefers-reduced-motion: reduce) { .mapa-perdido__fragmento, .mapa-perdido__traco { transition: none; } }
+ .mapa-perdido p:last-child { margin: 0; color: rgba(255, 255, 255, 0.85); }
+ .mapa-perdido__dica { display: flex; gap: 0.75rem; align-items: center; padding: 0.8rem 1rem; border-radius: var(--raio-cartao); background: var(--ouro-veu); color: var(--ouro-texto); }
+ .mapa-perdido__dica img { image-rendering: pixelated; flex: none; }
+diff --git a/src/eventos/GatoBiblioteca.tsx b/src/eventos/GatoBiblioteca.tsx
+new file mode 100644
+index 0000000..9e4a52e
+--- /dev/null
++++ b/src/eventos/GatoBiblioteca.tsx
+@@ -0,0 +1,46 @@
++/**
++ * Gato da Biblioteca (easter egg): dorme num canto da Biblioteca de Flashcards. Um toque o acorda;
++ * três toques e ele fica feliz, com coração, e ronrona um recado. Volta a dormir sozinho.
++ * Arte já existente do jogo (public/flashcards/vfx/gato-*.png, 6 quadros de 40x30).
++ */
++import { useEffect, useRef, useState, type CSSProperties } from 'react'
++import { urlCss } from '../config'
++import { FRASES_GATO } from './frases'
++import { marcarAchado } from './memoria'
++import { GATO_TOQUES } from './regras'
++
++type Humor = 'dorme' | 'acorda' | 'feliz'
++
++export function GatoBiblioteca({ aoMiar }: { aoMiar: (frase: string) => void }) {
++  const [humor, definirHumor] = useState<Humor>('dorme')
++  const toques = useRef(0)
++  const vez = useRef(0)
++  const volta = useRef(0)
++  useEffect(() => () => window.clearTimeout(volta.current), [])
++
++  function tocar() {
++    toques.current += 1
++    window.clearTimeout(volta.current)
++    if (toques.current >= GATO_TOQUES) {
++      toques.current = 0
++      definirHumor('feliz')
++      marcarAchado('gato')
++      aoMiar(FRASES_GATO[vez.current++ % FRASES_GATO.length])
++      volta.current = window.setTimeout(() => definirHumor('dorme'), 6000)
++    } else {
++      definirHumor('acorda')
++      volta.current = window.setTimeout(() => { toques.current = 0; definirHumor('dorme') }, 4000)
++    }
++  }
++
++  return (
++    <button
++      type="button"
++      className={`oq-gato oq-gato--${humor}`}
++      style={{ '--gato': urlCss(`flashcards/vfx/gato-${humor}.png`) } as CSSProperties}
++      onClick={tocar}
++      aria-label="Gato da Biblioteca"
++      title="Zzz"
++    />
++  )
++}
+diff --git a/src/eventos/Surpresas.tsx b/src/eventos/Surpresas.tsx
+new file mode 100644
+index 0000000..acf8848
+--- /dev/null
++++ b/src/eventos/Surpresas.tsx
+@@ -0,0 +1,286 @@
++/**
++ * Surpresas do site: eventos aleatórios e easter eggs (docs/EASTER-EGGS-E-EVENTOS.md).
++ *
++ * Carregado sob demanda pelo App, alguns segundos depois da primeira tela, para não pesar no
++ * código inicial. As regras (quando pode, qual aparece) moram em ./regras, testadas em
++ * fixtures/testar_eventos.mjs; aqui ficam só o relógio, os ouvintes e o desenho.
++ */
++import { useCallback, useEffect, useRef, useState } from 'react'
++import { recurso } from '../config'
++import { usarConta } from '../conta/ContextoConta'
++import { EVENTO_DADOS, ler, type MudancaDados } from '../estado/armazenamento'
++import { DATAS_PROVA } from '../estado/conquistas'
++import type { EstadoSessao } from '../dados/tipos'
++import { href } from '../util/rotas'
++import { FRASE_KONAMI, FRASES_MARTELO, FRASES_TINEL, RECADO_CONSOLE } from './frases'
++import { atualizarMemoria, lerMemoria, marcarAchado } from './memoria'
++import { usarSurpresasDesligadas } from './preferencia'
++import {
++  avancarKonami, contarToques, eggPermitido, ehPlantao, escolherEvento, estatisticasDeRespostas, eventoForcado,
++  marcoCruzado, MARTELO_JANELA, MARTELO_TOQUES, MINUTO, registrarExibicao, TINEL_JANELA, TINEL_TOQUES, totalRespostas,
++  type Contexto, type Evento, type Personagem, type SessaoResumo,
++} from './regras'
++import { GatoBiblioteca } from './GatoBiblioteca'
++import './surpresas.css'
++
++/** Espera depois de abrir o site antes da primeira verificação (ninguém quer surpresa na porta). */
++const ESPERA_INICIAL = 45_000
++const VERIFICAR_A_CADA = MINUTO
++
++interface Props { segmentos: string[]; consulta: URLSearchParams; jogo: boolean }
++
++interface Exibicao { evento: Evento; chave: number; link?: { texto: string; destino: string } }
++
++function resumoSessao(): SessaoResumo | null {
++  const s = ler<EstadoSessao | null>('sessao:atual', null)
++  if (!s || !Array.isArray(s.ids)) return null
++  const atual = s.ids[s.posicao ?? 0]
++  return {
++    concluida: !!s.concluidaEm,
++    criadaEm: s.criadaEm ?? 0,
++    simulado: s.simulado,
++    limiteSegundos: s.limiteSegundos,
++    nacional: s.nacional,
++    questaoAtualAberta: !!atual && !s.respostas?.[atual],
++  }
++}
++
++const movimentoReduzido = () => typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
++
++export function Surpresas({ segmentos, consulta, jogo }: Props) {
++  const { sessao } = usarConta()
++  const [desligado] = usarSurpresasDesligadas()
++  const [exibicao, definirExibicao] = useState<Exibicao | null>(null)
++  const [danca, definirDanca] = useState(false)
++  const rota = useRef({ segmentos, jogo })
++  rota.current = { segmentos, jogo }
++  const desligadoRef = useRef(desligado)
++  desligadoRef.current = desligado
++  const meta = sessao?.user.user_metadata as Record<string, unknown> | undefined
++  const perfil = useRef({ nascimento: '', criada: '', nome: '' })
++  perfil.current = { nascimento: String(meta?.nascimento ?? ''), criada: sessao?.user.created_at ?? '', nome: String(meta?.nome ?? '') }
++
++  const contexto = useCallback((agora = new Date()): Contexto => {
++    const respondidas = ler<Record<string, never>>('respondidas', {})
++    return {
++      agora,
++      segmentos: rota.current.segmentos,
++      jogo: rota.current.jogo,
++      sessao: resumoSessao(),
++      desligado: desligadoRef.current,
++      movimentoReduzido: movimentoReduzido(),
++      memoria: lerMemoria(),
++      nascimento: perfil.current.nascimento,
++      contaCriadaEm: perfil.current.criada,
++      nome: perfil.current.nome,
++      dataProva: DATAS_PROVA[DATAS_PROVA.length - 1],
++      ...estatisticasDeRespostas(respondidas, agora),
++    }
++  }, [])
++
++  const mostrar = useCallback((evento: Evento, link?: Exibicao['link']) => {
++    definirExibicao({ evento, chave: Date.now(), link })
++  }, [])
++
++  const verificar = useCallback(() => {
++    if (document.visibilityState === 'hidden') return
++    const ctx = contexto()
++    const evento = escolherEvento(ctx)
++    if (!evento) return
++    atualizarMemoria((m) => registrarExibicao(m, evento, ctx.agora))
++    mostrar(evento)
++  }, [contexto, mostrar])
++
++  // Relógio: primeira olhada depois da espera; depois, uma por minuto e a cada troca de página.
++  const [pronto, definirPronto] = useState(false)
++  useEffect(() => {
++    const t = window.setTimeout(() => definirPronto(true), ESPERA_INICIAL)
++    return () => window.clearTimeout(t)
++  }, [])
++  useEffect(() => {
++    if (!pronto) return
++    const t = window.setInterval(verificar, VERIFICAR_A_CADA)
++    return () => window.clearInterval(t)
++  }, [pronto, verificar])
++  const textoRota = segmentos.join('/')
++  useEffect(() => {
++    if (!pronto) return
++    const t = window.setTimeout(verificar, 2500)
++    return () => window.clearTimeout(t)
++  }, [pronto, textoRota, verificar])
++
++  // ?surpresa=<id>: mostra aquela surpresa já (para testar e capturar); respeita os bloqueios.
++  const forcada = consulta.get('surpresa')
++  useEffect(() => {
++    if (!forcada) return
++    const t = window.setTimeout(() => {
++      if (forcada === 'agora') { verificar(); return }
++      const ctx = contexto()
++      const evento = eventoForcado(forcada, ctx)
++      if (evento) mostrar(evento)
++    }, 600)
++    return () => window.clearTimeout(t)
++  }, [forcada, contexto, mostrar, verificar])
++
++  // Festa das 1.000, 5.000 e 10.000 respostas: só as respostas dadas aqui (não a sincronia).
++  useEffect(() => {
++    const aoMudar = (e: Event) => {
++      const d = (e as CustomEvent<MudancaDados>).detail
++      if (d.chave !== 'respondidas' || d.origem !== 'local') return
++      const marco = marcoCruzado(totalRespostas(d.antes as Record<string, never>), totalRespostas(d.valor as Record<string, never>))
++      if (!marco) return
++      atualizarMemoria((m) => m.marcos.includes(marco) ? m : { ...m, marcoPendente: marco })
++      // Logo depois da resposta (a questão já foi respondida); em simulado, espera acabar.
++      window.setTimeout(verificar, 1800)
++    }
++    window.addEventListener(EVENTO_DADOS, aoMudar)
++    return () => window.removeEventListener(EVENTO_DADOS, aoMudar)
++  }, [verificar])
++
++  // Plantão da madrugada: a logo ganha uma luazinha das 0h às 5h.
++  useEffect(() => {
++    const aplicar = () => document.body.classList.toggle('oq-plantao', ehPlantao(new Date()) && !desligadoRef.current)
++    aplicar()
++    const t = window.setInterval(aplicar, MINUTO)
++    return () => { window.clearInterval(t); document.body.classList.remove('oq-plantao') }
++  }, [desligado])
++
++  // Recado no console, uma vez por aba.
++  useEffect(() => {
++    try {
++      if (sessionStorage.getItem('oq-recado-console')) return
++      sessionStorage.setItem('oq-recado-console', '1')
++    } catch { /* sem armazenamento: recado mesmo assim */ }
++    const [oi, ...resto] = RECADO_CONSOLE
++    console.log(`%c${oi}`, 'font: 700 15px system-ui; color: #0f766e')
++    for (const linha of resto) console.log(`%c${linha}`, 'font: 13px system-ui; color: #64748b')
++  }, [])
++
++  const podeEgg = () => eggPermitido({ agora: new Date(), segmentos: rota.current.segmentos, sessao: resumoSessao() })
++
++  // Código Konami ortopédico.
++  useEffect(() => {
++    let posicao = 0
++    const aoTeclar = (e: KeyboardEvent) => {
++      const alvo = e.target as HTMLElement | null
++      if (alvo && (alvo.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(alvo.tagName))) { posicao = 0; return }
++      const [nova, completou] = avancarKonami(posicao, e.key)
++      posicao = nova
++      if (!completou || !podeEgg()) return
++      marcarAchado('konami')
++      if (!movimentoReduzido()) { definirDanca(true); window.setTimeout(() => definirDanca(false), 5200) }
++      mostrar({ id: 'mascote', personagem: 'esqueleto', titulo: 'Código ortopédico', frase: FRASE_KONAMI, duracaoMs: 9000 }, { texto: 'Abrir o Arquivo do Preceptor', destino: '/arquivo-do-preceptor' })
++    }
++    window.addEventListener('keydown', aoTeclar)
++    return () => window.removeEventListener('keydown', aoTeclar)
++    // eslint-disable-next-line react-hooks/exhaustive-deps
++  }, [mostrar])
++
++  // Sinal de Tinel na logo e martelo de reflexo nos flashcards de classificação.
++  useEffect(() => {
++    let tinel: number[] = []
++    let martelo: number[] = []
++    let vez = 0
++    const aoTocar = (e: MouseEvent) => {
++      const alvo = e.target as HTMLElement | null
++      const logo = alvo?.closest<HTMLElement>('.cabecalho__marca')
++      if (logo) {
++        const [lista, bateu] = contarToques(tinel, Date.now(), TINEL_TOQUES, TINEL_JANELA)
++        tinel = lista
++        if (!bateu || !podeEgg()) return
++        marcarAchado('tinel')
++        logo.classList.remove('oq-tinel'); void logo.offsetWidth; logo.classList.add('oq-tinel')
++        window.setTimeout(() => logo.classList.remove('oq-tinel'), 1700)
++        mostrar({ id: 'mascote', personagem: 'mao', titulo: 'Sinal de Tinel', frase: FRASES_TINEL[vez++ % FRASES_TINEL.length], duracaoMs: 5000 })
++        return
++      }
++      const rotulo = alvo?.closest<HTMLElement>('.fc-carta__titulo small')
++      if (rotulo && /Classificação\s*$/.test(rotulo.textContent ?? '')) {
++        const [lista, bateu] = contarToques(martelo, Date.now(), MARTELO_TOQUES, MARTELO_JANELA)
++        martelo = lista
++        if (!bateu) return
++        marcarAchado('martelo')
++        const carta = rotulo.closest<HTMLElement>('.fc-carta')
++        if (carta && !movimentoReduzido()) {
++          carta.classList.remove('oq-reflexo'); void carta.offsetWidth; carta.classList.add('oq-reflexo')
++          window.setTimeout(() => carta.classList.remove('oq-reflexo'), 900)
++        }
++        mostrar({ id: 'mascote', personagem: 'martelo', titulo: 'Martelo de reflexo', frase: FRASES_MARTELO[vez++ % FRASES_MARTELO.length], duracaoMs: 5000 })
++      }
++    }
++    document.addEventListener('click', aoTocar, true)
++    return () => document.removeEventListener('click', aoTocar, true)
++    // eslint-disable-next-line react-hooks/exhaustive-deps
++  }, [mostrar])
++
++  const biblioteca = segmentos[0] === 'flashcards' && (segmentos[1] === 'biblioteca' || segmentos[1] === 'estudo')
++
++  return (
++    <>
++      {exibicao && <Recado key={exibicao.chave} exibicao={exibicao} aoFechar={() => definirExibicao(null)} />}
++      {danca && <div className="oq-danca" aria-hidden="true"><img src={recurso('pixel/surpresas/esqueleto.png')} width={20} height={20} alt="" /></div>}
++      {biblioteca && <GatoBiblioteca aoMiar={(frase) => mostrar({ id: 'mascote', personagem: 'gato', titulo: 'Gato da Biblioteca', frase, duracaoMs: 4500 })} />}
++    </>
++  )
++}
++
++function srcPersonagem(p: Personagem): string {
++  if (p === 'mascote') return recurso('mascote/heroi-6.png')
++  if (p === 'gato') return recurso('flashcards/vfx/gato-feliz.png')
++  return recurso(`pixel/surpresas/${p}.png`)
++}
++
++function Recado({ exibicao, aoFechar }: { exibicao: Exibicao; aoFechar: () => void }) {
++  const { evento, link } = exibicao
++  const [saindo, definirSaindo] = useState(false)
++  const pausado = useRef(false)
++  const controle = useRef<{ pausar: () => void; seguir: () => void } | null>(null)
++  useEffect(() => {
++    let restante = evento.duracaoMs
++    let inicio = Date.now()
++    let t = 0
++    const agendar = () => { t = window.setTimeout(() => { if (pausado.current) return; definirSaindo(true); window.setTimeout(aoFechar, 350) }, restante) }
++    agendar()
++    const pausar = () => { pausado.current = true; window.clearTimeout(t); restante -= Date.now() - inicio }
++    const seguir = () => { pausado.current = false; inicio = Date.now(); restante = Math.max(1500, restante); agendar() }
++    controle.current = { pausar, seguir }
++    return () => window.clearTimeout(t)
++    // eslint-disable-next-line react-hooks/exhaustive-deps
++  }, [])
++  const reduzido = movimentoReduzido()
++  return (
++    <>
++      {evento.efeito === 'confete' && !reduzido && <Confete />}
++      {evento.efeito === 'estrela' && !reduzido && <div className="oq-estrela-cadente" aria-hidden="true" />}
++      <aside
++        className={`oq-recado oq-recado--${evento.id}${saindo ? ' oq-recado--saindo' : ''}`}
++        role="status"
++        aria-live="polite"
++        data-surpresa={evento.id}
++        onMouseEnter={() => controle.current?.pausar()}
++        onMouseLeave={() => controle.current?.seguir()}
++      >
++        <span className={`oq-recado__arte oq-recado__arte--${evento.personagem}`} aria-hidden="true">
++          <img src={srcPersonagem(evento.personagem)} alt="" draggable={false} />
++        </span>
++        <span className="oq-recado__texto">
++          {evento.titulo && <strong>{evento.titulo}</strong>}
++          <span>{evento.frase}</span>
++          {link && <a href={href(link.destino)} onClick={aoFechar}>{link.texto}</a>}
++        </span>
++        <button type="button" className="oq-recado__fechar" onClick={aoFechar} aria-label="Fechar recado">×</button>
++      </aside>
++    </>
++  )
++}
++
++const CORES = ['#e0565b', '#ffd448', '#4a96c8', '#5ab06a', '#b06ad8', '#ff9a2a']
++function Confete() {
++  return (
++    <div className="oq-confete" aria-hidden="true">
++      {Array.from({ length: 28 }, (_, i) => (
++        <i key={i} style={{ left: `${(i * 37) % 100}%`, background: CORES[i % CORES.length], animationDelay: `${(i % 7) * 0.09}s`, animationDuration: `${1.8 + (i % 5) * 0.25}s` }} />
++      ))}
++    </div>
++  )
++}
+diff --git a/src/eventos/arquivo.css b/src/eventos/arquivo.css
+new file mode 100644
+index 0000000..0cfa190
+--- /dev/null
++++ b/src/eventos/arquivo.css
+@@ -0,0 +1,25 @@
++/* Arquivo do Preceptor (sala secreta). */
++.arq__porta {
++  display: flex; gap: 1.1rem; align-items: center; padding: 1.4rem 1.25rem; border-radius: var(--raio-cartao); color: #f6ead2;
++  background: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0 / 12px 12px, linear-gradient(160deg, #1d140c, #3a2814 65%, #4f3618);
++  box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.35);
++}
++.arq__porta h1 { margin: 0.1rem 0 0.35rem; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1; color: #f4cf7c; text-shadow: 0 3px 0 #6b4a0c; }
++.arq__porta p { margin: 0; color: rgba(246, 234, 210, 0.85); }
++.arq__sobre { font-family: var(--fonte-pixel); font-size: 0.8rem; letter-spacing: 0.04em; opacity: 0.75; }
++.arq__esqueleto { flex: none; width: 4.5rem; height: 4.5rem; image-rendering: pixelated; animation: arq-balanca 2.4s ease-in-out infinite; }
++@keyframes arq-balanca { 50% { transform: rotate(4deg); } }
++.arq__cartao { padding: 1.1rem 1.2rem; border-radius: var(--raio-cartao); background: var(--superficie); border: 1px solid var(--borda); }
++.arq__cartao h2 { margin: 0 0 0.7rem; font-size: 1.1rem; display: flex; gap: 0.5rem; align-items: baseline; }
++.arq__cartao h2 small { font-weight: 600; color: var(--texto-2); font-size: 0.85rem; }
++.arq__anotacoes { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.5rem; font-family: var(--fonte-texto); }
++.arq__gavetas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.5rem; }
++.arq__gaveta { display: flex; gap: 0.5rem; align-items: center; padding: 0.55rem 0.7rem; border-radius: 10px; font-size: 0.9rem; color: var(--texto-2); background: var(--superficie-2); border: 1px dashed var(--borda); }
++.arq__gaveta span { font-family: var(--fonte-pixel); color: var(--texto-2); }
++.arq__gaveta--aberta { color: var(--texto); border-style: solid; border-color: rgba(212, 144, 26, 0.5); background: var(--ouro-veu); }
++.arq__gaveta--aberta span { color: var(--ouro-texto); }
++.arq__nota { margin: 0.8rem 0 0; font-size: 0.85rem; color: var(--texto-2); }
++.arq__selo { display: flex; gap: 1rem; align-items: center; }
++.arq__selo img { width: 3.5rem; height: 3.5rem; image-rendering: pixelated; }
++.arq__selo p { margin: 0; }
++@media (prefers-reduced-motion: reduce) { .arq__esqueleto { animation: none; } }
+diff --git a/src/eventos/frases.ts b/src/eventos/frases.ts
+new file mode 100644
+index 0000000..d875373
+--- /dev/null
++++ b/src/eventos/frases.ts
+@@ -0,0 +1,192 @@
++/**
++ * Frases das surpresas (eventos aleatórios e easter eggs). Tom de colega de plantão: caloroso,
++ * leve, sem cobrança (docs/emails/TOM.md). Regras fixas: nunca o total de questões do acervo,
++ * nunca nome de outra marca, e fora do jogo o nome é "Flashcards". O teste
++ * fixtures/testar_eventos.mjs confere essas regras em todas as listas.
++ */
++import type { Personagem } from './regras'
++
++export const FRASES_CAFE = [
++  'Pausa de trinta segundos para o café? O fêmur espera, prometo.',
++  'Um gole de café e a próxima questão fica mais fácil. Ciência de plantão.',
++  'Café passado, cabeça fresca. Bora mais uma?',
++  'Hidratação também conta. Café vale, água vale mais. Os dois, melhor ainda.',
++  'O café chegou quentinho. Respira, estica as costas e segue no seu ritmo.',
++] as const
++
++export const FRASES_BILHETE = [
++  'Deixaram na prancheta: "Leia o comentário mesmo quando acertar. É lá que mora o detalhe da prova."',
++  'Recado na prancheta: "Classificação se aprende repetindo. Errar hoje é acertar em janeiro."',
++  'Bilhete do plantão: "Revisão feita vale mais que questão nova esquecida."',
++  'Na prancheta, com letra de médico: "Orgulho de ver você aqui de novo."',
++  'Anotado na prancheta: "Dúvida marcada é questão que volta na hora certa. Confia no processo."',
++  'Recado do preceptor: "Ninguém lembra de tudo. Quem passa é quem volta no que esqueceu."',
++] as const
++
++export const FRASES_MASCOTE = [
++  'O cavaleiro passou só para dizer que está torcendo por você.',
++  'Visita rápida do mascote: armadura brilhando, escudo erguido, e você mandando bem.',
++  'O mascote acenou de longe. Disse que hoje o dia rende.',
++  'Psiu, o cavaleiro deixou um recado: "Uma questão de cada vez, como quem sobe escada."',
++] as const
++
++export const FRASES_ESTRELA = [
++  'Uma estrela cadente! Faça um pedido. O meu é que caia a sua matéria favorita.',
++  'Passou uma estrela cadente. Dizem que dá sorte para quem estuda até tarde.',
++  'Estrela cadente avistada. Pedido sugerido: memória boa para epônimos.',
++] as const
++
++export const FRASES_CONFETE = [
++  'Confete do acaso! Nada de especial. Só deu vontade de comemorar você.',
++  'Confete sem motivo, porque estudar num dia comum também merece festa.',
++  'Um punhado de confete pela constância. Ela é a parte mais difícil.',
++] as const
++
++export const FRASES_BISCOITO = [
++  'Biscoito da sorte: "A alternativa que você hesitou em marcar costuma ser a certa. Confie no estudo."',
++  'Biscoito da sorte: "Uma revisão hoje poupa três amanhã."',
++  'Biscoito da sorte: "Seu próximo acerto vem de um erro que você já corrigiu."',
++  'Biscoito da sorte: "Em janeiro, alguém vai se orgulhar muito de você. Provavelmente você."',
++  'Biscoito da sorte: "Números da sorte: 3, 4, 5. As vértebras também concordam."',
++  'Biscoito da sorte: "A paciência consolida, como o osso."',
++] as const
++
++export const FRASES_HORA = {
++  manha: [
++    'Bom dia! Questão de manhã cedo fixa melhor. Dizem os neurônios.',
++    'Manhã de estudo é presente que a gente dá para o futuro.',
++    'Bom dia, colega. O café já está pronto e o cronograma também.',
++  ],
++  tarde: [
++    'Boa tarde! Aquela questão rápida entre um paciente e outro conta muito.',
++    'Tarde produtiva por aqui. Fico feliz de te ver de volta.',
++    'Depois do almoço o cérebro pede calma. Uma questão de cada vez.',
++  ],
++  noite: [
++    'Boa noite! Estudar depois de um dia inteiro diz muito sobre você.',
++    'Noite tranquila para revisar. Sem pressa, o sono também consolida.',
++    'Boa noite, colega. Mais algumas e depois descanso merecido.',
++  ],
++} as const
++
++export const FRASES_MADRUGADA = [
++  'Plantão puxado? Respira. Uma questão agora, um cochilo depois.',
++  'A madrugada é silenciosa e a cabeça trabalha bem. Mas o travesseiro também ensina.',
++  'Estudando de madrugada... coragem de residente. Lembra de beber água.',
++  'O hospital dorme e você estuda. Tenho orgulho disso, mas descansa um pouco também.',
++  'Hora boa para uma revisão curta e cama logo depois. Combinado?',
++  'Madrugada, café frio e você aqui. Que tal só mais cinco e depois descanso?',
++  'Se for plantão, que seja tranquilo. Se for insônia, que as questões ajudem a dormir.',
++  'O osso consolida enquanto a gente dorme. Você também, viu?',
++] as const
++
++export const FRASES_SEXTA = [
++  'Sexta à noite e você aqui. Isso é dedicação. Depois vai curtir um pouco, combinado?',
++  'Sextou com estudo. Mais umas e o fim de semana começa leve.',
++  'Sexta à noite estudando: em janeiro você vai se agradecer.',
++] as const
++
++const FIM_DE_SEMANA = [
++  (dia: string, hora: string) => `${dia}, ${hora}, e você aqui. Que orgulho.`,
++  (dia: string, hora: string) => `${dia}, ${hora}. Tem gente na praia e tem gente passando no TEOT.`,
++  (dia: string, hora: string) => `${dia}, ${hora}, estudando. O cavaleiro tirou o elmo em respeito.`,
++  (dia: string, hora: string) => `${dia}, ${hora}. Estudo leve hoje, descanso de verdade depois.`,
++] as const
++
++export function fraseFimDeSemana(agora: Date, hora: string, sortear: () => number): string {
++  const dia = agora.getDay() === 6 ? 'Sábado' : 'Domingo'
++  const f = FIM_DE_SEMANA[Math.min(FIM_DE_SEMANA.length - 1, Math.floor(sortear() * FIM_DE_SEMANA.length))]
++  return f(dia, hora)
++}
++
++export const FRASES_ANIVERSARIO = [
++  'Hoje o dia é seu. Que o novo ano traga a aprovação, saúde e plantões tranquilos.',
++  'Feliz aniversário! Hoje vale estudar menos e comemorar mais. Você merece.',
++  'Um ano a mais de vida e de sabedoria ortopédica. Feliz aniversário, colega!',
++] as const
++
++export const FRASES_ANIVERSARIO_CONTA = [
++  'Obrigado por estudar com a gente esse tempo todo. Cada questão foi um passo.',
++  'Olha o caminho que você já fez desde o primeiro dia. Bonito de ver.',
++  'Hoje faz aniversário a nossa parceria de estudo. Que venham muitas questões juntos.',
++] as const
++
++export const FRASES_VESPERA = [
++  'Amanhã é o grande dia. Hoje, revisão leve, comida boa e cama cedo. Você se preparou para isto.',
++  'Véspera de prova: o que você estudou já está aí dentro. Descansa, confia e boa prova amanhã.',
++  'Amanhã é o TEOT. Separa documento, caneta e água. E dorme cedo: o cérebro agradece.',
++] as const
++
++export const FRASES_DIA_PROVA = [
++  'Boa prova! Lê cada enunciado com calma. Você se preparou para isto.',
++  'Hoje é o dia. Respira fundo, confia no estudo e vai lá buscar o que é seu.',
++] as const
++
++export const FRASES_DIA_ORTOPEDISTA = [
++  'Feliz Dia do Ortopedista! Para quem já é e para quem está chegando lá.',
++  'Hoje é Dia do Ortopedista. Daqui a pouco é o seu nome no crachá.',
++] as const
++
++export const FRASES_R1 = [
++  'Três madrugadas estudando nesta semana. Admiro muito, mas hoje o plano é dormir, combinado?',
++  'R1 sem dormir detectado. O osso consolida no repouso, e a memória também.',
++] as const
++
++export const FRASES_MAO = [
++  'Vinte acertos seguidos, todos com certeza. Firmeza de quem opera bem. Selo guardado no Arquivo do Preceptor.',
++  'Mão firme, cabeça fria: vinte certezas seguidas. Esse selo é seu.',
++] as const
++
++/** Datas especiais fixas (mês-dia). O Dia do Ortopedista e a véspera do TEOT têm regra própria. */
++export const DATAS_ESPECIAIS: Record<string, { titulo: string; frase: string; personagem: Personagem }> = {
++  '01-01': { titulo: 'Feliz Ano Novo', frase: 'Ano novo, prova chegando. Que seja o ano da sua aprovação.', personagem: 'confete' },
++  '04-07': { titulo: 'Dia Mundial da Saúde', frase: 'Dia de cuidar de quem cuida. Uma pausa, um copo de água, e voltamos.', personagem: 'cafe' },
++  '10-12': { titulo: 'Dia das Crianças', frase: 'Hoje toda fise está aberta. Bom dia para revisar ortopedia pediátrica.', personagem: 'bolo' },
++  '10-16': { titulo: 'Dia Mundial da Coluna', frase: 'Dia da coluna: costas retas, ombros soltos e uma questão de coluna para comemorar.', personagem: 'esqueleto' },
++  '10-18': { titulo: 'Dia do Médico', frase: 'Feliz Dia do Médico! Obrigado por escolher cuidar de gente.', personagem: 'medalha' },
++  '10-20': { titulo: 'Dia Mundial da Osteoporose', frase: 'Dia de lembrar do osso frágil. Fratura de baixa energia é recado do esqueleto.', personagem: 'esqueleto' },
++  '11-08': { titulo: 'Dia Mundial da Radiologia', frase: 'Dia da radiologia: um viva ao raio X, que deixou a ortopedia enxergar por dentro.', personagem: 'esqueleto' },
++  '12-24': { titulo: 'Véspera de Natal', frase: 'Véspera de Natal. Estuda pouquinho e aproveita quem você ama.', personagem: 'estrela' },
++  '12-25': { titulo: 'Feliz Natal', frase: 'Feliz Natal! Hoje o melhor estudo é o descanso.', personagem: 'estrela' },
++  '12-31': { titulo: 'Último dia do ano', frase: 'Último dia do ano. Olha quanto você estudou até aqui. Que orgulho.', personagem: 'confete' },
++}
++
++export function fraseMarco(marco: number, nome: string): string {
++  const n = marco.toLocaleString('pt-BR')
++  const quem = nome ? `, ${nome}` : ''
++  return marco >= 10000
++    ? `Dez mil respostas${quem}! Isso é coisa de chefe de serviço. Obrigado por cada uma.`
++    : marco >= 5000
++      ? `${n} respostas${quem}! Metade do caminho para a lenda. Que constância bonita.`
++      : `${n} respostas${quem}! Mil vezes você escolheu estudar. Festa merecida.`
++}
++
++export function fraseRecorde(hoje: number): string {
++  return `${hoje} respostas hoje, o seu melhor dia até agora. Que dia!`
++}
++
++/** Konami ortopédico. */
++export const FRASE_KONAMI = 'Código ortopédico aceito. O esqueleto do preceptor dançou e deixou uma chave para você.'
++/** Sinal de Tinel na logo. */
++export const FRASES_TINEL = [
++  'Sinal de Tinel positivo: formigou até a ponta dos dedos. A logo pede um descanso.',
++  'Tinel positivo na logo. Percussão perfeita, mas o nervo pediu trégua.',
++] as const
++/** Martelo de reflexo nas classificações. */
++export const FRASES_MARTELO = [
++  'Reflexo patelar 2+, simétrico. Classificação também vira reflexo de tanto treinar.',
++  'Toc! Reflexo presente. Com classificação, o segredo é responder sem pensar duas vezes.',
++] as const
++/** Gato da Biblioteca. */
++export const FRASES_GATO = [
++  'Miau. O gato da Biblioteca aprova o seu ritmo.',
++  'Prrr... o gato ronronou. Dizem que dá sorte nos flashcards.',
++  'O gato abriu um olho, viu você estudando e voltou a dormir tranquilo.',
++] as const
++
++/** Recado no console do navegador (para quem abre as ferramentas do desenvolvedor). */
++export const RECADO_CONSOLE = [
++  'Oi, colega! Que curiosidade boa: boas-vindas aos bastidores do Orto Questões.',
++  'Já que você chegou até aqui: há um arquivo empoeirado nos fundos. Tente #/arquivo-do-preceptor?de=console',
++  'E se encontrar um bug, conta pra gente em Suporte e contato. Bons estudos!',
++] as const
+diff --git a/src/eventos/memoria.ts b/src/eventos/memoria.ts
+new file mode 100644
+index 0000000..81be2ef
+--- /dev/null
++++ b/src/eventos/memoria.ts
+@@ -0,0 +1,19 @@
++/**
++ * Memória das surpresas (o que já apareceu, quando, achados e selos), guardada na conta deste
++ * aparelho. Não sobe para o servidor e não entra em ranking nem em contagem nenhuma.
++ */
++import { gravar, ler } from '../estado/armazenamento'
++import { normalizarMemoria, registrarAchado, type Memoria } from './regras'
++
++export const CHAVE_MEMORIA = 'eventos:memoria'
++
++export const lerMemoria = (): Memoria => normalizarMemoria(ler<unknown>(CHAVE_MEMORIA, null))
++
++/** Lê, aplica a mudança e grava (sempre a partir do que está guardado agora). */
++export function atualizarMemoria(mudar: (m: Memoria) => Memoria): Memoria {
++  const nova = mudar(lerMemoria())
++  gravar(CHAVE_MEMORIA, nova)
++  return nova
++}
++
++export const marcarAchado = (id: string) => atualizarMemoria((m) => registrarAchado(m, id))
+diff --git a/src/eventos/preferencia.ts b/src/eventos/preferencia.ts
+new file mode 100644
+index 0000000..d1bf9fe
+--- /dev/null
++++ b/src/eventos/preferencia.ts
+@@ -0,0 +1,31 @@
++/**
++ * Ligar e desligar as surpresas (eventos aleatórios), em Minha conta > Preferências.
++ *
++ * Fica guardado neste aparelho ('eventos:desligados', preferência do aparelho, como o tema) e,
++ * com conta, também no perfil (user_metadata.surpresas_desligadas), que já viaja entre aparelhos
++ * sem SQL novo. A escolha feita neste aparelho vale; num aparelho novo (nada guardado ainda),
++ * vale a do perfil.
++ */
++import { useCallback } from 'react'
++import { usarConta } from '../conta/ContextoConta'
++import { supabase } from '../conta/supabase'
++import { usarArmazenado } from '../estado/usarArmazenado'
++
++export const CHAVE_SURPRESAS_DESLIGADAS = 'eventos:desligados'
++export const CAMPO_PERFIL = 'surpresas_desligadas'
++
++export function surpresasDesligadas(local: boolean | null, meta?: Record<string, unknown> | null): boolean {
++  if (typeof local === 'boolean') return local
++  return meta?.[CAMPO_PERFIL] === true
++}
++
++export function usarSurpresasDesligadas() {
++  const { sessao } = usarConta()
++  const [local, definirLocal] = usarArmazenado<boolean | null>(CHAVE_SURPRESAS_DESLIGADAS, null)
++  const desligado = surpresasDesligadas(local, sessao?.user.user_metadata)
++  const definir = useCallback((valor: boolean) => {
++    definirLocal(valor)
++    if (sessao && supabase) void supabase.auth.updateUser({ data: { [CAMPO_PERFIL]: valor } }).catch(() => undefined)
++  }, [definirLocal, sessao])
++  return [desligado, definir] as const
++}
+diff --git a/src/eventos/regras.ts b/src/eventos/regras.ts
+new file mode 100644
+index 0000000..884b92b
+--- /dev/null
++++ b/src/eventos/regras.ts
+@@ -0,0 +1,467 @@
++/**
++ * Regras puras dos eventos aleatórios e dos easter eggs (combinados com o Tales em 16/10/2026).
++ *
++ * Nada aqui toca a tela, o relógio ou o armazenamento: tudo chega pelo contexto (hora, rota,
++ * sessão, preferência, memória do que já apareceu) e o sorteio é uma função passada de fora.
++ * Assim `fixtures/testar_eventos.mjs` testa cada caso com relógio falso.
++ *
++ * Princípios:
++ * - nunca no meio de uma questão nem em simulado;
++ * - frequência baixa (intervalo mínimo e teto por dia), sem repetir a mesma surpresa em seguida;
++ * - nada mexe em contagem, ranking ou acesso: é só um recado que some sozinho.
++ *
++ * Documentação: docs/EASTER-EGGS-E-EVENTOS.md.
++ */
++import {
++  FRASES_ANIVERSARIO, FRASES_ANIVERSARIO_CONTA, FRASES_BILHETE, FRASES_BISCOITO, FRASES_CAFE, FRASES_CONFETE,
++  FRASES_DIA_ORTOPEDISTA, FRASES_DIA_PROVA, FRASES_ESTRELA, FRASES_HORA, FRASES_MADRUGADA, FRASES_MASCOTE,
++  FRASES_SEXTA, FRASES_VESPERA, DATAS_ESPECIAIS, fraseFimDeSemana, fraseMarco, fraseRecorde, FRASES_R1, FRASES_MAO,
++} from './frases'
++
++export const MINUTO = 60_000
++/** Intervalo mínimo entre duas surpresas automáticas. */
++export const INTERVALO_MINIMO = 15 * MINUTO
++/** De madrugada a surpresa pode voltar mais cedo (pedido do Tales), com outra frase. */
++export const INTERVALO_MADRUGADA = 6 * MINUTO
++/** Teto de surpresas automáticas por dia. */
++export const MAXIMO_POR_DIA = 6
++/** Chance, a cada verificação (uma por minuto), de uma surpresa comum aparecer. */
++export const CHANCE_ALEATORIA = 0.12
++/** Chance da madrugada, a cada verificação já passado o intervalo. */
++export const CHANCE_MADRUGADA = 0.5
++/** Simulado abandonado há mais que isso deixa de segurar as surpresas. */
++export const SIMULADO_VALE_POR = 6 * 60 * MINUTO
++/** Festa nas respostas de número 1.000, 5.000 e 10.000. */
++export const MARCOS_RESPOSTAS = [1000, 5000, 10000] as const
++/** Dia do Ortopedista (19 de setembro). */
++export const DIA_ORTOPEDISTA = '09-19'
++
++export type Personagem =
++  | 'cafe' | 'prancheta' | 'mascote' | 'estrela' | 'biscoito' | 'bolo' | 'lua' | 'sol' | 'r1'
++  | 'esqueleto' | 'mao' | 'martelo' | 'medalha' | 'gato' | 'confete'
++
++export type IdEvento =
++  | 'marco' | 'aniversario' | 'aniversario-conta' | 'vespera-teot' | 'dia-prova' | 'dia-ortopedista' | 'data-especial'
++  | 'mao-de-cirurgiao' | 'recorde' | 'r1-sem-dormir' | 'madrugada' | 'fim-de-semana' | 'sexta-noite'
++  | 'cafe' | 'bilhete' | 'mascote' | 'estrela' | 'confete' | 'hora' | 'biscoito'
++
++export interface Evento {
++  id: IdEvento
++  personagem: Personagem
++  titulo?: string
++  frase: string
++  /** Quanto tempo fica na tela antes de sumir sozinho. */
++  duracaoMs: number
++  /** Efeito por cima (só sem prefers-reduced-motion). */
++  efeito?: 'confete' | 'estrela' | null
++  /** Chave de "já vi": o evento único não volta enquanto a chave for a mesma (dia, ano, marco). */
++  chave?: string
++}
++
++/** O que importa da sessão de questões (estado `sessao:atual`). */
++export interface SessaoResumo {
++  concluida: boolean
++  criadaEm: number
++  simulado?: boolean
++  limiteSegundos?: number | null
++  nacional?: string
++  /** A questão da posição atual ainda não foi respondida. */
++  questaoAtualAberta: boolean
++}
++
++export interface Memoria {
++  /** Última surpresa automática (instante). */
++  ultimoEm: number | null
++  /** Última surpresa (id), para não repetir em seguida. */
++  ultimoId: string | null
++  /** Últimas frases mostradas (as mais recentes no fim). */
++  frases: string[]
++  /** Surpresas únicas já vistas: id → chave (dia, ano ou marco). */
++  vistos: Record<string, string>
++  /** Contagem do dia: [chave do dia, quantas]. */
++  dia: [string, number]
++  /** Marcos de respostas já festejados. */
++  marcos: number[]
++  /** Marco atingido esperando a hora certa (fora de questão e de simulado). */
++  marcoPendente: number | null
++  /** Easter eggs encontrados (para o Arquivo do Preceptor). */
++  achados: string[]
++  /** Selos locais (ex.: Mão de cirurgião): id → data em que foi conquistado. */
++  selos: Record<string, string>
++}
++
++export const MEMORIA_VAZIA: Memoria = { ultimoEm: null, ultimoId: null, frases: [], vistos: {}, dia: ['', 0], marcos: [], marcoPendente: null, achados: [], selos: {} }
++
++/** Normaliza o que veio do armazenamento (versões antigas, lixo, nada). */
++export function normalizarMemoria(bruto: unknown): Memoria {
++  const m = (bruto && typeof bruto === 'object' ? bruto : {}) as Partial<Memoria>
++  const lista = (v: unknown): unknown[] => Array.isArray(v) ? v : []
++  const objeto = (v: unknown): Record<string, string> => v && typeof v === 'object' && !Array.isArray(v) ? { ...(v as Record<string, string>) } : {}
++  return {
++    ultimoEm: typeof m.ultimoEm === 'number' ? m.ultimoEm : null,
++    ultimoId: typeof m.ultimoId === 'string' ? m.ultimoId : null,
++    frases: lista(m.frases).filter((f): f is string => typeof f === 'string').slice(-12),
++    vistos: objeto(m.vistos),
++    dia: Array.isArray(m.dia) && typeof m.dia[0] === 'string' && typeof m.dia[1] === 'number' ? [m.dia[0], m.dia[1]] : ['', 0],
++    marcos: lista(m.marcos).filter((n): n is number => typeof n === 'number'),
++    marcoPendente: typeof m.marcoPendente === 'number' ? m.marcoPendente : null,
++    achados: lista(m.achados).filter((f): f is string => typeof f === 'string'),
++    selos: objeto(m.selos),
++  }
++}
++
++export interface Contexto {
++  agora: Date
++  /** Segmentos da rota (#/sessao → ['sessao']). */
++  segmentos: string[]
++  /** A rota é o jogo dos flashcards (pop-up). */
++  jogo?: boolean
++  sessao: SessaoResumo | null
++  desligado: boolean
++  movimentoReduzido: boolean
++  memoria: Memoria
++  /** "AAAA-MM-DD" do perfil (Minha conta). */
++  nascimento?: string | null
++  /** created_at da conta (ISO). */
++  contaCriadaEm?: string | null
++  nome?: string
++  /** Respostas de hoje e o melhor dia anterior (recorde pessoal). */
++  respostasHoje?: number
++  melhorDiaAnterior?: number
++  /** Noites diferentes com resposta entre 0h e 5h nos últimos 7 dias. */
++  madrugadasNaSemana?: number
++  /** As 20 últimas respostas foram certas e com certeza. */
++  maoDeCirurgiao?: boolean
++  /** Data da prova que o site conhece ("AAAA-MM-DD"). */
++  dataProva: string
++}
++
++// ---------- Datas (relógio do aparelho: a surpresa fala da hora que a pessoa vê) ----------
++
++const dois = (n: number) => String(n).padStart(2, '0')
++export const chaveLocal = (d: Date) => `${d.getFullYear()}-${dois(d.getMonth() + 1)}-${dois(d.getDate())}`
++export const mesDia = (d: Date) => `${dois(d.getMonth() + 1)}-${dois(d.getDate())}`
++const bissexto = (a: number) => (a % 4 === 0 && a % 100 !== 0) || a % 400 === 0
++function diaDe(chave: string): Date | null {
++  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(chave ?? '')
++  if (!m) return null
++  const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]), 12)
++  return Number.isNaN(d.getTime()) ? null : d
++}
++const meioDia = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate(), 12).getTime()
++const diasEntre = (a: Date, b: Date) => Math.round((meioDia(b) - meioDia(a)) / 86_400_000)
++
++/** Hoje é o aniversário de quem nasceu em `nascimento` (29/02 vira 28/02 em ano comum). */
++export function ehAniversario(nascimento: string | null | undefined, agora: Date): boolean {
++  const n = diaDe(nascimento ?? '')
++  if (!n) return false
++  let md = mesDia(n)
++  if (md === '02-29' && !bissexto(agora.getFullYear())) md = '02-28'
++  return md === mesDia(agora)
++}
++
++/** Anos (ou 100 dias) de conta completados hoje; null se hoje não é data redonda. */
++export function aniversarioDaConta(criadaEm: string | null | undefined, agora: Date): { anos: number; dias: number } | null {
++  if (!criadaEm) return null
++  const c = new Date(criadaEm)
++  if (Number.isNaN(c.getTime())) return null
++  const dias = diasEntre(c, agora)
++  if (dias === 100) return { anos: 0, dias }
++  const anos = agora.getFullYear() - c.getFullYear()
++  return anos >= 1 && mesDia(c) === mesDia(agora) ? { anos, dias } : null
++}
++
++export const ehMadrugada = (agora: Date) => agora.getHours() < 5
++export const ehFimDeSemana = (agora: Date) => agora.getDay() === 0 || agora.getDay() === 6
++export const ehSextaNoite = (agora: Date) => agora.getDay() === 5 && agora.getHours() >= 19
++/** Plantão da madrugada (easter egg visual da logo): das 0h às 5h. */
++export const ehPlantao = ehMadrugada
++
++export function ehVespera(dataProva: string, agora: Date): boolean {
++  const p = diaDe(dataProva)
++  return !!p && diasEntre(agora, p) === 1
++}
++export function ehDiaDaProva(dataProva: string, agora: Date): boolean {
++  const p = diaDe(dataProva)
++  return !!p && diasEntre(agora, p) === 0
++}
++
++/** "15h" ou "15h40". */
++export function horaFalada(agora: Date): string {
++  const m = agora.getMinutes()
++  return `${agora.getHours()}h${m ? dois(m) : ''}`
++}
++
++// ---------- Quando não aparece ----------
++
++export type Bloqueio = 'desligado' | 'simulado' | 'questao' | 'jogo' | 'ferramenta' | null
++
++/** Sessão cronometrada, Simulado Nacional ou prova do cronograma em andamento. */
++export function simuladoEmAndamento(sessao: SessaoResumo | null, agora: Date): boolean {
++  if (!sessao || sessao.concluida) return false
++  const prova = !!sessao.simulado || !!sessao.limiteSegundos || !!sessao.nacional
++  return prova && agora.getTime() - sessao.criadaEm < SIMULADO_VALE_POR
++}
++
++/**
++ * Por que a surpresa automática não pode aparecer agora (null = pode).
++ * Os eggs que a própria pessoa aciona (Konami, Tinel, gato, martelo, 404) não passam por aqui:
++ * acontecem quando ela quer, mas também nunca em simulado (ver eggPermitido).
++ */
++export function bloqueio(ctx: Pick<Contexto, 'agora' | 'segmentos' | 'jogo' | 'sessao' | 'desligado'>): Bloqueio {
++  if (ctx.desligado) return 'desligado'
++  const [primeiro] = ctx.segmentos
++  if (primeiro === 'simulado-nacional' || simuladoEmAndamento(ctx.sessao, ctx.agora)) return 'simulado'
++  if (primeiro === 'questao') return 'questao'
++  if (primeiro === 'sessao' && ctx.sessao && !ctx.sessao.concluida && ctx.sessao.questaoAtualAberta) return 'questao'
++  if (ctx.jogo) return 'jogo'
++  if (primeiro === 'admin' || primeiro === 'emails') return 'ferramenta'
++  return null
++}
++
++/** Eggs acionados pela pessoa: só o simulado segura. */
++export function eggPermitido(ctx: Pick<Contexto, 'agora' | 'segmentos' | 'sessao'>): boolean {
++  return ctx.segmentos[0] !== 'simulado-nacional' && !simuladoEmAndamento(ctx.sessao, ctx.agora)
++}
++
++// ---------- Escolha ----------
++
++/** Escolhe uma frase evitando as mais recentes. */
++export function escolherFrase(lista: readonly string[], recentes: readonly string[], sortear: () => number): string {
++  const livres = lista.filter((f) => !recentes.includes(f))
++  const de = livres.length ? livres : lista
++  return de[Math.min(de.length - 1, Math.floor(sortear() * de.length))]
++}
++
++const SEGUNDOS = 1000
++const COMUNS: Array<{ id: IdEvento; personagem: Personagem; frases: readonly string[]; efeito?: 'confete' | 'estrela'; peso: number; titulo?: string }> = [
++  { id: 'cafe', personagem: 'cafe', frases: FRASES_CAFE, peso: 3, titulo: 'Café de plantão' },
++  { id: 'bilhete', personagem: 'prancheta', frases: FRASES_BILHETE, peso: 3, titulo: 'Bilhete na prancheta' },
++  { id: 'mascote', personagem: 'mascote', frases: FRASES_MASCOTE, peso: 2 },
++  { id: 'estrela', personagem: 'estrela', frases: FRASES_ESTRELA, efeito: 'estrela', peso: 1, titulo: 'Estrela cadente' },
++  { id: 'confete', personagem: 'confete', frases: FRASES_CONFETE, efeito: 'confete', peso: 1 },
++  { id: 'hora', personagem: 'sol', frases: [], peso: 3 },
++  { id: 'biscoito', personagem: 'biscoito', frases: FRASES_BISCOITO, peso: 2, titulo: 'Biscoito da sorte' },
++]
++
++function faseDoDia(agora: Date): keyof typeof FRASES_HORA {
++  const h = agora.getHours()
++  return h < 12 ? 'manha' : h < 18 ? 'tarde' : 'noite'
++}
++
++/**
++ * Surpresas únicas do dia, em ordem de prioridade. Cada uma tem uma chave: aparece uma vez por
++ * chave (o aniversário uma vez por ano, o recorde uma vez por dia, a mão de cirurgião uma vez só).
++ */
++export function eventosUnicos(ctx: Contexto): Evento[] {
++  const { agora, memoria } = ctx
++  const ano = String(agora.getFullYear())
++  const hoje = chaveLocal(agora)
++  const nome = ctx.nome?.trim().split(/\s+/)[0] ?? ''
++  const lista: Evento[] = []
++  const r = (frases: readonly string[]) => frases[(agora.getDate() + agora.getMonth()) % frases.length]
++  const marco = memoria.marcoPendente
++  if (marco && !memoria.marcos.includes(marco)) lista.push({ id: 'marco', personagem: 'confete', titulo: 'Festa!', frase: fraseMarco(marco, nome), duracaoMs: 7 * SEGUNDOS, efeito: 'confete', chave: String(marco) })
++  if (ehAniversario(ctx.nascimento, agora)) lista.push({ id: 'aniversario', personagem: 'bolo', titulo: nome ? `Parabéns, ${nome}!` : 'Parabéns!', frase: r(FRASES_ANIVERSARIO), duracaoMs: 7 * SEGUNDOS, efeito: 'confete', chave: ano })
++  const conta = aniversarioDaConta(ctx.contaCriadaEm, agora)
++  if (conta) lista.push({ id: 'aniversario-conta', personagem: 'bolo', titulo: conta.anos ? `${conta.anos} ${conta.anos === 1 ? 'ano' : 'anos'} de estudo juntos` : '100 dias de estudo juntos', frase: r(FRASES_ANIVERSARIO_CONTA), duracaoMs: 6 * SEGUNDOS, efeito: 'confete', chave: hoje })
++  if (ehDiaDaProva(ctx.dataProva, agora)) lista.push({ id: 'dia-prova', personagem: 'mascote', titulo: 'Hoje é o dia', frase: r(FRASES_DIA_PROVA), duracaoMs: 7 * SEGUNDOS, chave: hoje })
++  if (ehVespera(ctx.dataProva, agora)) lista.push({ id: 'vespera-teot', personagem: 'lua', titulo: 'Véspera do TEOT', frase: r(FRASES_VESPERA), duracaoMs: 7 * SEGUNDOS, chave: hoje })
++  if (mesDia(agora) === DIA_ORTOPEDISTA) lista.push({ id: 'dia-ortopedista', personagem: 'medalha', titulo: 'Dia do Ortopedista', frase: r(FRASES_DIA_ORTOPEDISTA), duracaoMs: 6 * SEGUNDOS, efeito: 'confete', chave: hoje })
++  const especial = DATAS_ESPECIAIS[mesDia(agora)]
++  if (especial) lista.push({ id: 'data-especial', personagem: especial.personagem, titulo: especial.titulo, frase: especial.frase, duracaoMs: 6 * SEGUNDOS, chave: hoje })
++  if (ctx.maoDeCirurgiao && !memoria.selos['mao-de-cirurgiao']) lista.push({ id: 'mao-de-cirurgiao', personagem: 'mao', titulo: 'Selo: Mão de cirurgião', frase: r(FRASES_MAO), duracaoMs: 7 * SEGUNDOS, chave: 'sempre' })
++  const hojeN = ctx.respostasHoje ?? 0, melhor = ctx.melhorDiaAnterior ?? 0
++  if (hojeN >= 30 && melhor >= 20 && hojeN > melhor) lista.push({ id: 'recorde', personagem: 'medalha', titulo: 'Recorde pessoal', frase: fraseRecorde(hojeN), duracaoMs: 6 * SEGUNDOS, chave: hoje })
++  if ((ctx.madrugadasNaSemana ?? 0) >= 3) {
++    // Uma vez por semana (a chave é a segunda-feira da semana).
++    const segunda = new Date(agora.getFullYear(), agora.getMonth(), agora.getDate() - ((agora.getDay() + 6) % 7), 12)
++    lista.push({ id: 'r1-sem-dormir', personagem: 'r1', titulo: 'R1 sem dormir', frase: r(FRASES_R1), duracaoMs: 6 * SEGUNDOS, chave: chaveLocal(segunda) })
++  }
++  return lista.filter((e) => memoria.vistos[e.id] !== e.chave)
++}
++
++/**
++ * A surpresa automática da vez, ou null. `sortear` devolve um número em [0, 1).
++ * Ordem: bloqueios → únicas do dia (não dependem de sorteio, só do intervalo curto) → teto do
++ * dia → madrugada → fim de semana / sexta à noite (uma vez por dia) → comuns, com chance baixa.
++ */
++export function escolherEvento(ctx: Contexto, sortear: () => number = Math.random): Evento | null {
++  if (bloqueio(ctx)) return null
++  const { agora, memoria } = ctx
++  const t = agora.getTime()
++  const hoje = chaveLocal(agora)
++  const doDia = memoria.dia[0] === hoje ? memoria.dia[1] : 0
++  const desde = memoria.ultimoEm === null ? Infinity : t - memoria.ultimoEm
++  const unicos = eventosUnicos(ctx)
++  if (unicos.length && desde >= INTERVALO_MADRUGADA) return unicos[0]
++  if (doDia >= MAXIMO_POR_DIA) return null
++
++  if (ehMadrugada(agora)) {
++    if (desde < INTERVALO_MADRUGADA || sortear() >= CHANCE_MADRUGADA) return null
++    const frase = escolherFrase(FRASES_MADRUGADA, memoria.frases, sortear)
++    return { id: 'madrugada', personagem: sortear() < 0.5 ? 'lua' : 'cafe', titulo: horaFalada(agora), frase, duracaoMs: 5 * SEGUNDOS }
++  }
++  if (desde < INTERVALO_MINIMO) return null
++
++  if (ehFimDeSemana(agora) && agora.getHours() >= 8 && memoria.vistos['fim-de-semana'] !== hoje) {
++    return { id: 'fim-de-semana', personagem: 'mascote', frase: fraseFimDeSemana(agora, horaFalada(agora), sortear), duracaoMs: 4500, chave: hoje }
++  }
++  if (ehSextaNoite(agora) && memoria.vistos['sexta-noite'] !== hoje) {
++    return { id: 'sexta-noite', personagem: 'lua', titulo: 'Sexta à noite', frase: escolherFrase(FRASES_SEXTA, memoria.frases, sortear), duracaoMs: 5 * SEGUNDOS, chave: hoje }
++  }
++
++  if (sortear() >= CHANCE_ALEATORIA) return null
++  const opcoes = COMUNS.filter((c) => c.id !== memoria.ultimoId && !(ctx.movimentoReduzido && c.efeito))
++  const total = opcoes.reduce((s, c) => s + c.peso, 0)
++  let alvo = sortear() * total
++  const c = opcoes.find((o) => (alvo -= o.peso) < 0) ?? opcoes[opcoes.length - 1]
++  if (c.id === 'hora') {
++    const fase = faseDoDia(agora)
++    return { id: 'hora', personagem: fase === 'noite' ? 'lua' : 'sol', frase: escolherFrase(FRASES_HORA[fase], memoria.frases, sortear), duracaoMs: 5 * SEGUNDOS }
++  }
++  return { id: c.id, personagem: c.personagem, titulo: c.titulo, frase: escolherFrase(c.frases, memoria.frases, sortear), duracaoMs: 5500, efeito: c.efeito ?? null }
++}
++
++/** Uma surpresa específica, para testar (?surpresa=id) sem esperar o relógio. */
++export function eventoForcado(id: string, ctx: Contexto, sortear: () => number = Math.random): Evento | null {
++  if (bloqueio(ctx)) return null
++  const unico = eventosUnicos({ ...ctx, memoria: MEMORIA_VAZIA }).find((e) => e.id === id)
++  if (unico) return unico
++  const comum = COMUNS.find((c) => c.id === id)
++  if (comum && comum.id !== 'hora') return { id: comum.id, personagem: comum.personagem, titulo: comum.titulo, frase: escolherFrase(comum.frases, [], sortear), duracaoMs: 5500, efeito: ctx.movimentoReduzido ? null : comum.efeito ?? null }
++  if (id === 'hora') { const fase = faseDoDia(ctx.agora); return { id: 'hora', personagem: fase === 'noite' ? 'lua' : 'sol', frase: escolherFrase(FRASES_HORA[fase], [], sortear), duracaoMs: 5000 } }
++  if (id === 'madrugada') return { id: 'madrugada', personagem: 'lua', titulo: horaFalada(ctx.agora), frase: escolherFrase(FRASES_MADRUGADA, [], sortear), duracaoMs: 5000 }
++  if (id === 'fim-de-semana') return { id: 'fim-de-semana', personagem: 'mascote', frase: fraseFimDeSemana(ctx.agora, horaFalada(ctx.agora), sortear), duracaoMs: 4500 }
++  if (id === 'sexta-noite') return { id: 'sexta-noite', personagem: 'lua', titulo: 'Sexta à noite', frase: escolherFrase(FRASES_SEXTA, [], sortear), duracaoMs: 5000 }
++  return null
++}
++
++/** Memória depois de mostrar a surpresa. */
++export function registrarExibicao(memoria: Memoria, evento: Evento, agora: Date): Memoria {
++  const hoje = chaveLocal(agora)
++  const doDia = memoria.dia[0] === hoje ? memoria.dia[1] : 0
++  const m: Memoria = {
++    ...memoria,
++    ultimoEm: agora.getTime(),
++    ultimoId: evento.id,
++    frases: [...memoria.frases, evento.frase].slice(-12),
++    dia: [hoje, doDia + 1],
++    vistos: evento.chave ? { ...memoria.vistos, [evento.id]: evento.chave } : memoria.vistos,
++  }
++  if (evento.id === 'marco' && memoria.marcoPendente) { m.marcos = [...memoria.marcos, memoria.marcoPendente]; m.marcoPendente = null }
++  if (evento.id === 'mao-de-cirurgiao') m.selos = { ...memoria.selos, 'mao-de-cirurgiao': hoje }
++  const achado = achadoDoEvento(evento.id)
++  return achado ? registrarAchado(m, achado) : m
++}
++
++// ---------- Contas a partir das respostas (respondidas) ----------
++
++interface Tentativa { em: number; correta: boolean | null; confianca?: string }
++interface RegistroMinimo { q?: number; c?: boolean | null; tentativas?: number; confianca?: string; historico?: Tentativa[] }
++
++/** Total de respostas dadas (cada tentativa conta: revisões também são questões respondidas). */
++export function totalRespostas(respondidas: Record<string, RegistroMinimo> | null | undefined): number {
++  let n = 0
++  for (const r of Object.values(respondidas ?? {})) if (r && typeof r === 'object') n += Math.max(1, Number(r.tentativas) || 1)
++  return n
++}
++
++/** Marco cruzado entre dois totais (o maior, se pular mais de um), ou null. */
++export function marcoCruzado(antes: number, depois: number): number | null {
++  let achado: number | null = null
++  for (const m of MARCOS_RESPOSTAS) if (antes < m && depois >= m) achado = m
++  return achado
++}
++
++function tentativas(respondidas: Record<string, RegistroMinimo> | null | undefined): Tentativa[] {
++  const lista: Tentativa[] = []
++  for (const r of Object.values(respondidas ?? {})) {
++    if (!r || typeof r !== 'object') continue
++    if (Array.isArray(r.historico) && r.historico.length) lista.push(...r.historico.filter((h) => h && typeof h.em === 'number'))
++    else if (typeof r.q === 'number') lista.push({ em: r.q, correta: r.c ?? null, confianca: r.confianca })
++  }
++  return lista
++}
++
++/** Respostas de hoje, o melhor dia anterior, as madrugadas da semana e a mão de cirurgião. */
++export function estatisticasDeRespostas(respondidas: Record<string, RegistroMinimo> | null | undefined, agora: Date) {
++  const lista = tentativas(respondidas).filter((t) => t.em <= agora.getTime())
++  const hoje = chaveLocal(agora)
++  const porDia = new Map<string, number>()
++  const noites = new Set<string>()
++  const semana = agora.getTime() - 7 * 86_400_000
++  for (const t of lista) {
++    const d = new Date(t.em)
++    const k = chaveLocal(d)
++    porDia.set(k, (porDia.get(k) ?? 0) + 1)
++    if (t.em >= semana && d.getHours() < 5) noites.add(k)
++  }
++  let melhor = 0
++  for (const [k, n] of porDia) if (k !== hoje && n > melhor) melhor = n
++  const ultimas = lista.sort((a, b) => a.em - b.em).slice(-20)
++  return {
++    respostasHoje: porDia.get(hoje) ?? 0,
++    melhorDiaAnterior: melhor,
++    madrugadasNaSemana: noites.size,
++    maoDeCirurgiao: ultimas.length === 20 && ultimas.every((t) => t.correta === true && (t.confianca ?? 'seguro') === 'seguro'),
++  }
++}
++
++// ---------- Easter eggs acionados pela pessoa ----------
++
++/** Código Konami ortopédico: ↑ ↑ ↓ ↓ ← → ← → O T (de Ortopedia e Traumatologia). */
++export const KONAMI = ['arrowup', 'arrowup', 'arrowdown', 'arrowdown', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'o', 't'] as const
++
++/** Avança o código com a tecla; devolve [nova posição, completou]. */
++export function avancarKonami(posicao: number, tecla: string): [number, boolean] {
++  const t = tecla.toLowerCase()
++  if (t === KONAMI[posicao]) return posicao + 1 === KONAMI.length ? [0, true] : [posicao + 1, false]
++  // ↑ ↑ ↑: quem apertou uma seta a mais continua no começo do código.
++  if (t === 'arrowup') return [posicao === 2 ? 2 : 1, false]
++  return [0, false]
++}
++
++/** Toques repetidos: guarda os instantes e diz se bateu `quantos` dentro da janela. */
++export function contarToques(toques: readonly number[], agora: number, quantos: number, janelaMs: number): [number[], boolean] {
++  const recentes = [...toques.filter((t) => agora - t <= janelaMs), agora]
++  return recentes.length >= quantos ? [[], true] : [recentes, false]
++}
++
++/** Toques na logo que dão o sinal de Tinel. */
++export const TINEL_TOQUES = 5
++export const TINEL_JANELA = 3000
++/** Toques no tipo "Classificação" do flashcard que trazem o martelo de reflexo. */
++export const MARTELO_TOQUES = 3
++export const MARTELO_JANELA = 2000
++/** Toques no gato da Biblioteca até ele ronronar. */
++export const GATO_TOQUES = 3
++
++/** Nomes dos achados (eggs) que o Arquivo do Preceptor lista depois de encontrados. */
++export const ACHADOS: Array<[string, string]> = [
++  ['konami', 'Código ortopédico'],
++  ['tinel', 'Sinal de Tinel na logo'],
++  ['plantao', 'Plantão da madrugada'],
++  ['gato', 'Gato da Biblioteca'],
++  ['martelo', 'Martelo de reflexo'],
++  ['fratura', 'Redução da fratura do link'],
++  ['arquivo', 'Arquivo do Preceptor'],
++  ['console', 'Recado no console'],
++  ['marco', 'Festa das respostas'],
++  ['r1', 'R1 sem dormir'],
++  ['datas', 'Datas especiais'],
++  ['mao', 'Mão de cirurgião'],
++]
++
++/** Achado correspondente ao evento automático (quando houver). */
++export function achadoDoEvento(id: IdEvento): string | null {
++  if (id === 'marco') return 'marco'
++  if (id === 'r1-sem-dormir') return 'r1'
++  if (id === 'mao-de-cirurgiao') return 'mao'
++  if (id === 'madrugada') return 'plantao'
++  return ['dia-ortopedista', 'vespera-teot', 'dia-prova', 'data-especial'].includes(id) ? 'datas' : null
++}
++
++export function registrarAchado(memoria: Memoria, id: string): Memoria {
++  return memoria.achados.includes(id) ? memoria : { ...memoria, achados: [...memoria.achados, id] }
++}
+diff --git a/src/eventos/surpresas.css b/src/eventos/surpresas.css
+new file mode 100644
+index 0000000..862af35
+--- /dev/null
++++ b/src/eventos/surpresas.css
+@@ -0,0 +1,106 @@
++/* Surpresas do site (eventos aleatórios e easter eggs). Carregado junto com o módulo, sob demanda. */
++
++/* ---------- Recado ---------- */
++.oq-recado {
++  position: fixed; z-index: 1050; left: 1rem; bottom: 1rem;
++  display: grid; grid-template-columns: auto 1fr auto; gap: 0.75rem; align-items: center;
++  width: min(24rem, calc(100vw - 2rem)); box-sizing: border-box;
++  padding: 0.7rem 0.6rem 0.7rem 0.75rem; border-radius: 14px;
++  color: var(--texto, #1d2433); background: var(--superficie, #fff);
++  border: 2px solid rgba(244, 207, 124, 0.7);
++  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.22), inset 0 0 0 1px rgba(255, 255, 255, 0.4);
++  animation: oq-recado-entra 0.42s cubic-bezier(0.2, 0.9, 0.3, 1.25) both;
++}
++.oq-recado--saindo { animation: oq-recado-sai 0.35s ease-in both; }
++.oq-recado__arte {
++  display: grid; place-items: center; width: 3.6rem; height: 3.6rem; border-radius: 12px;
++  background: radial-gradient(circle at 50% 40%, rgba(244, 207, 124, 0.35), rgba(244, 207, 124, 0.08) 70%);
++}
++.oq-recado__arte img { width: 3rem; height: 3rem; image-rendering: pixelated; animation: oq-pulinho 1.6s ease-in-out infinite; }
++.oq-recado__arte--mascote img { width: auto; height: 3.3rem; image-rendering: auto; }
++/* O gato é uma tira de 6 quadros: mostra só o primeiro. */
++.oq-recado__arte--gato { overflow: hidden; }
++.oq-recado__arte--gato img { width: auto; height: 2.6rem; object-fit: cover; object-position: 0 0; max-width: none; aspect-ratio: 40 / 30; }
++.oq-recado__texto { display: grid; gap: 0.15rem; font-size: 0.92rem; line-height: 1.35; min-width: 0; }
++.oq-recado__texto strong { font-family: var(--fonte-pixel); font-size: 0.98rem; letter-spacing: 0.01em; color: var(--ouro-texto, #8a5a0c); }
++.oq-recado__texto a { font-weight: 700; font-size: 0.88rem; margin-top: 0.15rem; }
++.oq-recado__fechar {
++  align-self: start; width: 1.9rem; height: 1.9rem; border: 0; border-radius: 50%; cursor: pointer;
++  font-size: 1.25rem; line-height: 1; color: var(--texto-2, #5b6475); background: transparent;
++}
++.oq-recado__fechar:hover, .oq-recado__fechar:focus-visible { background: rgba(127, 127, 127, 0.15); }
++[data-tema="escuro"] .oq-recado { border-color: rgba(244, 207, 124, 0.45); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
++/* No celular, acima da barra de navegação de baixo. */
++@media (max-width: 40rem) {
++  .oq-recado { left: 0.75rem; right: 0.75rem; width: auto; bottom: calc(4.6rem + env(safe-area-inset-bottom)); }
++}
++
++@keyframes oq-recado-entra { from { opacity: 0; transform: translateY(18px) scale(0.96); } to { opacity: 1; transform: none; } }
++@keyframes oq-recado-sai { to { opacity: 0; transform: translateY(12px); } }
++@keyframes oq-pulinho { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
++
++/* ---------- Confete ---------- */
++.oq-confete { position: fixed; inset: 0; z-index: 1049; pointer-events: none; overflow: hidden; }
++.oq-confete i { position: absolute; top: -12px; width: 8px; height: 12px; border-radius: 1px; opacity: 0.95; animation: oq-cai 2s cubic-bezier(0.3, 0.6, 0.5, 1) forwards; }
++.oq-confete i:nth-child(3n) { width: 6px; height: 6px; border-radius: 50%; }
++@keyframes oq-cai { to { transform: translateY(105vh) rotate(540deg); opacity: 0.9; } }
++
++/* ---------- Estrela cadente ---------- */
++.oq-estrela-cadente {
++  position: fixed; z-index: 1049; top: 8vh; right: 10vw; width: 140px; height: 3px; pointer-events: none;
++  border-radius: 2px; background: linear-gradient(90deg, rgba(255, 244, 192, 0), #fff4c0 70%, #fff);
++  box-shadow: 0 0 10px #ffd448; transform: rotate(-24deg); opacity: 0;
++  animation: oq-cadente 1.6s ease-out 0.2s forwards;
++}
++@keyframes oq-cadente {
++  0% { opacity: 0; transform: translate(0, 0) rotate(-24deg); }
++  15% { opacity: 1; }
++  100% { opacity: 0; transform: translate(-45vw, 22vh) rotate(-24deg); }
++}
++
++/* ---------- Esqueleto dançando (código ortopédico) ---------- */
++.oq-danca { position: fixed; z-index: 1049; left: 0; right: 0; bottom: 6.5rem; height: 5rem; pointer-events: none; }
++.oq-danca img { position: absolute; left: -5rem; width: 4.5rem; height: 4.5rem; image-rendering: pixelated; animation: oq-atravessa 5s linear forwards, oq-requebra 0.4s ease-in-out infinite alternate; }
++@keyframes oq-atravessa { to { left: calc(100% + 1rem); } }
++@keyframes oq-requebra { from { transform: rotate(-10deg) translateY(0); } to { transform: rotate(10deg) translateY(-8px); } }
++
++/* ---------- Sinal de Tinel na logo ---------- */
++.cabecalho__marca.oq-tinel { position: relative; }
++.cabecalho__marca.oq-tinel .cabecalho__selo { animation: oq-formiga 0.08s linear 18; }
++.cabecalho__marca.oq-tinel::after {
++  content: "⚡ ⚡ ⚡"; position: absolute; left: 100%; top: 50%; margin-left: 0.25rem; font-size: 0.75rem;
++  color: #f5b400; white-space: nowrap; transform: translateY(-50%); animation: oq-faisca 1.6s ease-out forwards; pointer-events: none;
++}
++@keyframes oq-formiga { 0% { transform: translate(0, 0); } 25% { transform: translate(1px, -1px); } 50% { transform: translate(-1px, 1px); } 75% { transform: translate(1px, 1px); } 100% { transform: translate(0, 0); } }
++@keyframes oq-faisca { 0% { opacity: 0; letter-spacing: -0.3em; } 20% { opacity: 1; } 100% { opacity: 0; letter-spacing: 0.6em; } }
++
++/* ---------- Plantão da madrugada: luazinha na logo ---------- */
++body.oq-plantao .cabecalho__selo { position: relative; }
++body.oq-plantao .cabecalho__selo::after {
++  content: ""; position: absolute; right: -0.55rem; top: -0.35rem; width: 0.7rem; height: 0.7rem; border-radius: 50%;
++  box-shadow: -3px 2px 0 0 #f4cf7c; transform: rotate(-20deg); pointer-events: none;
++}
++
++/* ---------- Martelo de reflexo no flashcard de classificação ---------- */
++.fc-carta.oq-reflexo { animation: oq-reflexo 0.8s cubic-bezier(0.3, 1.6, 0.5, 1); }
++@keyframes oq-reflexo { 0% { transform: none; } 18% { transform: translateY(2px) rotate(-1deg); } 40% { transform: translateY(-14px) rotate(2.5deg); } 70% { transform: translateY(2px) rotate(-0.5deg); } 100% { transform: none; } }
++
++/* ---------- Gato da Biblioteca ---------- */
++.oq-gato {
++  position: fixed; z-index: 1040; left: 0.6rem; bottom: 0.4rem; width: 60px; height: 45px; padding: 0; border: 0; cursor: pointer;
++  background: var(--gato) 0 0 / 360px 45px no-repeat; image-rendering: pixelated;
++  animation: oq-gato-quadros 1.5s steps(6) infinite; opacity: 0.92;
++}
++.oq-gato--acorda { animation-duration: 0.95s; }
++.oq-gato--feliz { animation-duration: 0.72s; }
++.oq-gato:focus-visible { outline: 2px solid #f4cf7c; outline-offset: 2px; border-radius: 6px; }
++@keyframes oq-gato-quadros { to { background-position: -360px 0; } }
++@media (max-width: 40rem) { .oq-gato { bottom: calc(0.3rem + env(safe-area-inset-bottom)); width: 48px; height: 36px; background-size: 288px 36px; } @keyframes oq-gato-quadros { to { background-position: -288px 0; } } }
++
++/* ---------- Movimento reduzido: tudo parado, só aparece e some ---------- */
++@media (prefers-reduced-motion: reduce) {
++  .oq-recado, .oq-recado--saindo, .oq-recado__arte img, .oq-gato, .fc-carta.oq-reflexo,
++  .cabecalho__marca.oq-tinel .cabecalho__selo, .cabecalho__marca.oq-tinel::after { animation: none; }
++  .oq-recado--saindo { opacity: 0; transition: opacity 0.2s; }
++  .oq-confete, .oq-estrela-cadente, .oq-danca { display: none; }
++}
+diff --git a/src/paginas/ArquivoPreceptor.tsx b/src/paginas/ArquivoPreceptor.tsx
+new file mode 100644
+index 0000000..93250f0
+--- /dev/null
++++ b/src/paginas/ArquivoPreceptor.tsx
+@@ -0,0 +1,77 @@
++/**
++ * Sala secreta "Arquivo do Preceptor" (easter egg). Não aparece em menu nenhum: chega-se pelo
++ * código ortopédico, pelo recado no console ou pela fratura reduzida da página de erro.
++ * Mostra as gavetas (eggs) já encontradas neste aparelho, sem contar como achar as outras, e os
++ * selos locais (Mão de cirurgião). Nada aqui vale ponto, ranking ou acesso.
++ */
++import { useEffect, useState } from 'react'
++import { recurso } from '../config'
++import { href } from '../util/rotas'
++import { lerMemoria, marcarAchado } from '../eventos/memoria'
++import { ACHADOS, type Memoria } from '../eventos/regras'
++import '../eventos/arquivo.css'
++
++const ANOTACOES = [
++  'Leia o enunciado inteiro antes das alternativas. A banca esconde a resposta no meio da frase.',
++  'Errou? Ótimo. Erro comentado é o que mais rende na revisão.',
++  'Classificação se aprende desenhando. Rabisque a fratura no papel e dê o nome.',
++  'Epônimo esquecido não é vergonha: anote, revise e ele volta na hora certa.',
++  'Um pouco todo dia vence muito de vez em quando. A sequência é a sua melhor amiga.',
++  'Na véspera, durma. Ninguém aprende ombro às três da manhã do dia da prova.',
++]
++
++export function ArquivoPreceptor({ consulta }: { consulta?: URLSearchParams }) {
++  const [memoria, definirMemoria] = useState<Memoria>(() => lerMemoria())
++  useEffect(() => {
++    marcarAchado('arquivo')
++    if (consulta?.get('de') === 'console') marcarAchado('console')
++    definirMemoria(lerMemoria())
++  }, [consulta])
++  const achados = new Set(memoria.achados)
++  const mao = memoria.selos['mao-de-cirurgiao']
++
++  return (
++    <article className="arq empilha-2 limite-leitura">
++      <header className="arq__porta">
++        <img className="arq__esqueleto" src={recurso('pixel/surpresas/esqueleto.png')} width={20} height={20} alt="" />
++        <div>
++          <p className="arq__sobre">Sala nos fundos · luz fraca · cheiro de papel antigo</p>
++          <h1>Arquivo do Preceptor</h1>
++          <p>Você achou a sala que pouca gente acha. Fique à vontade: o preceptor deixou umas anotações.</p>
++        </div>
++      </header>
++
++      <section className="arq__cartao">
++        <h2>Anotações na gaveta de cima</h2>
++        <ul className="arq__anotacoes">
++          {ANOTACOES.map((a) => <li key={a}>{a}</li>)}
++        </ul>
++      </section>
++
++      <section className="arq__cartao">
++        <h2>Gavetas encontradas <small>{achados.size} de {ACHADOS.length}</small></h2>
++        <ul className="arq__gavetas">
++          {ACHADOS.map(([id, nome]) => (
++            <li key={id} className={achados.has(id) ? 'arq__gaveta arq__gaveta--aberta' : 'arq__gaveta'}>
++              <span aria-hidden="true">{achados.has(id) ? '✦' : '?'}</span>
++              {achados.has(id) ? nome : 'Gaveta trancada'}
++            </li>
++          ))}
++        </ul>
++        <p className="arq__nota">As gavetas ficam guardadas neste aparelho. Não valem ponto nem ranking: são só para sorrir.</p>
++      </section>
++
++      {mao && (
++        <section className="arq__cartao arq__selo">
++          <img src={recurso('pixel/surpresas/mao.png')} width={20} height={20} alt="" />
++          <div>
++            <h2>Selo: Mão de cirurgião</h2>
++            <p>Vinte acertos seguidos, todos com certeza. Conquistado em {mao.split('-').reverse().join('/')}.</p>
++          </div>
++        </section>
++      )}
++
++      <p><a className="botao" href={href('/')}>Voltar ao início</a></p>
++    </article>
++  )
++}
+diff --git a/src/paginas/Conta.tsx b/src/paginas/Conta.tsx
+index 4247f10..e054c72 100644
+--- a/src/paginas/Conta.tsx
++++ b/src/paginas/Conta.tsx
+@@ -15,6 +15,7 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
+ import { usarIndice } from '../dados/usarIndice'
+ import { planoRevisao } from '../estado/planoRevisao'
+ import { usarLeitura, usarEtiquetas, usarRitmoRevisao } from '../estado/preferencias'
++import { usarSurpresasDesligadas } from '../eventos/preferencia'
+ import { usarTema } from '../estado/tema'
+ import { dadosAceiteTermos, dataDaVersao, VERSAO_TERMOS } from '../conta/termos'
+ import { AvisoTermos } from '../componentes/AvisoTermos'
+@@ -198,6 +199,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
+   const { indice } = usarIndice()
+   const { ritmo, definirRitmo } = usarRitmoRevisao()
+   const { densidade, definirDensidade, fonte, definirFonte } = usarLeitura()
++  const [surpresasDesligadas, definirSurpresasDesligadas] = usarSurpresasDesligadas()
+   const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()
+   const { tema, trocar: trocarTema } = usarTema()
+   const perfil = sessao?.user.user_metadata ?? {}
+@@ -720,6 +722,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
+             <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
+             <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
+             <p className="ct-amostra" style={{ fontSize: `${fonte}%` }}>Prévia: é assim que o enunciado das questões aparece.</p>
++            <InterruptorLocal ligado={!surpresasDesligadas} aoMudar={(v) => definirSurpresasDesligadas(!v)} detalhe="Nunca no meio de uma questão nem em simulado. Não muda nada no ranking.">Mostrar pequenas surpresas de vez em quando (recados curtos que somem sozinhos)</InterruptorLocal>
+           </section>
+           <section className="ct-cartao">
+             {cabecalhoSecao('correio', 'E-mails e mensagens', 'Escolha o que chega no seu e-mail. Cada mudança é salva na hora.')}

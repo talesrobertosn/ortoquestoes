@@ -1,0 +1,490 @@
+diff --git a/marketing/kit/fila/INDICE.md b/marketing/kit/fila/INDICE.md
+index 7580eb2..a8fe5ce 100644
+--- a/marketing/kit/fila/INDICE.md
++++ b/marketing/kit/fila/INDICE.md
+@@ -3,8 +3,8 @@
+ Gerado por `node marketing/kit/indice.mjs` a partir dos JSON desta pasta. Não edite à mão.
+ Próximo da fila: `node marketing/kit/proximo.mjs`. Ciclo completo: [../README.md](../README.md).
+ 
+-- Posts: 30 (25 de questão e 5 de produto, sem preço).
+-- Estilos: Tabela de Snellen: 5 · Cofre de duas chaves: 5 · Mecânica fina: 5 · Cupom fiscal: 5 · VAR da questão: 5 · Treine grátis: 5. O mesmo estilo nunca se repete em menos de 3 dias.
++- Posts: 33 (27 de questão e 6 de produto, sem preço).
++- Estilos: Tabela de Snellen: 5 · Cofre de duas chaves: 6 · Mecânica fina: 6 · Cupom fiscal: 5 · VAR da questão: 5 · Treine grátis: 6. O mesmo estilo nunca se repete em menos de 3 dias.
+ - Horários (orientações): feed das 7h às 8h; stories de resposta ao meio-dia; propaganda das 18h às 19h. No máximo 1 feed por dia nesta fila.
+ - "falta capturar as telas": rode antes o comando de `conteudo.captura` do JSON (precisa do site rodando; veja assets.md).
+ 
+@@ -40,3 +40,6 @@ Próximo da fila: `node marketing/kit/proximo.mjs`. Ciclo completo: [../README.m
+ | [28](post-28.json) | sáb 07/11 07:00 | feed (carrossel de 6) | Cofre de duas chaves | `quadril-0328` TARO 2026 · gab. A · com imagem | Redução do colo femoral: Lowell e Garden | pronto |
+ | [29](post-29.json) | dom 08/11 07:30 | stories (3) | Cupom fiscal | `pediatria-0491` TARO 2026 · gab. A | Menisco discoide lateral: cabeça alta da fíbula | pronto |
+ | [30](post-30.json) | seg 09/11 07:30 | stories (6) | Mecânica fina | `trauma-0994` TARO 2026 · gab. A · com imagem | Incidência de Ziter para o escafoide | pronto |
++| [31](post-31.json) | ter 10/11 07:00 | feed (carrossel de 6) | Cofre de duas chaves | `ombro-cotovelo-0638` Simulados  · gab. A · com imagem | Tríceps e nervo radial (OrtoQuestões Simulados) | pronto |
++| [33](post-33.json) | ter 10/11 18:30 | story de propaganda (1, com figurinha de link) | Treine grátis | Treine grátis (o tempo do residente) | O tempo que sobra também conta. | pronto |
++| [32](post-32.json) | qui 12/11 07:30 | stories (6) | Mecânica fina | `coluna-0281` TARO 2026 · gab. B · com imagem | Acesso anterior C6-C7: longus colli | pronto |
+diff --git a/marketing/kit/fila/post-31.json b/marketing/kit/fila/post-31.json
+new file mode 100644
+index 0000000..b66e76e
+--- /dev/null
++++ b/marketing/kit/fila/post-31.json
+@@ -0,0 +1,200 @@
++{
++  "post": "post-31",
++  "data": "2026-11-10",
++  "horario": "07:00",
++  "status": "pronto",
++  "slug": "cofre-triceps-radial",
++  "formato": "feed (carrossel de 6)",
++  "estilo": "cofre-duas-chaves",
++  "assunto": "Tríceps e nervo radial (OrtoQuestões Simulados)",
++  "gancho": "Qual músculo? E quem o comanda?",
++  "por_que": "Simulados com imagem do Netter e seta amarela: reconhecer o músculo e depois o nervo motor são as duas chaves. A lâmina 5 explica o que são os OrtoQuestões Simulados e a 6 convida para o site.",
++  "questao": {
++    "id": "ombro-cotovelo-0638",
++    "area": "Ombro e cotovelo",
++    "subtema": "Anatomia do ombro",
++    "prova": null,
++    "ano": null,
++    "simulado": true,
++    "enunciado": "Na exposição posterior do braço, o músculo indicado pela seta recebe inervação motora do nervo",
++    "alternativas": [
++      {
++        "letra": "A",
++        "texto": "radial."
++      },
++      {
++        "letra": "B",
++        "texto": "mediano."
++      },
++      {
++        "letra": "C",
++        "texto": "musculocutâneo."
++      },
++      {
++        "letra": "D",
++        "texto": "cutâneo medial do braço."
++      }
++    ],
++    "gabarito": "A",
++    "imagens": [
++      {
++        "arquivo": "public/imagens/ombro-cotovelo/ombro-cotovelo-0638-1.jpeg",
++        "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição."
++      }
++    ],
++    "comentario": {
++      "correta": "**A: radial.** O alvo é o tríceps, músculo posterior inervado pelo radial. O tendão em direção ao olécrano e a posição posterior ajudam a reconhecer o músculo antes de associar o nervo.",
++      "incorretas": {
++        "B": "**O mediano atravessa a região anterior.** Acompanha a artéria braquial e não apresenta distribuição motora no braço.",
++        "C": "**É o nervo da maior parte do compartimento anterior.** Inerva bíceps, coracobraquial e braquial medial. O tríceps pertence ao compartimento posterior radial.",
++        "D": "**É um nervo sensitivo.** O cutâneo medial do braço vem do fascículo medial e se distribui na pele da face medial do braço. Não fornece inervação motora ao tríceps."
++      },
++      "conceito_trechos": [
++        "O tríceps ocupa o compartimento posterior do braço, converge para o tendão que chega ao olécrano e participa da extensão do antebraço. A imagem mostra sua cabeça longa em continuidade com esse conjunto posterior."
++      ],
++      "conferido": false,
++      "alerta": null
++    }
++  },
++  "pecas": [
++    {
++      "estilo": "cofre-duas-chaves",
++      "conteudo": {
++        "fonte": "Fonte: Netter · Atlas de Anatomia Ortopédica",
++        "capa": {
++          "tag": "Anatomia do braço · OrtoQuestões Simulados",
++          "titulo": "Qual músculo?\nE [[quem o\ncomanda?]]",
++          "sub": "Duas chaves: o músculo da seta\ne o nervo motor dele.",
++          "chaves": [
++            "MÚSCULO",
++            "NERVO"
++          ]
++        },
++        "questao_slide": {
++          "tag": "O desafio · duas chaves, uma resposta",
++          "titulo": "Qual nervo [[abre?]]",
++          "pedido_texto": "Comente sua letra antes de continuar."
++        },
++        "leitura": {
++          "titulo": "Primeiro, o músculo.\n[[Depois, o nervo.]]",
++          "paineis": [
++            {
++              "titulo": "O músculo",
++              "texto": "Vista **posterior**, tendão que desce ao **olécrano**. Que músculo é esse?"
++            },
++            {
++              "titulo": "O nervo",
++              "texto": "O compartimento anterior é do **musculocutâneo**. E o **posterior**?"
++            }
++          ],
++          "nota": {
++            "titulo": "Sensitivo não comanda músculo.",
++            "texto": "O cutâneo medial do braço só leva a sensibilidade da pele."
++          }
++        },
++        "resposta": {
++          "tag": "Resposta · alternativa A",
++          "titulo": "Tríceps +\n[[nervo radial.]]",
++          "sub": "Compartimento posterior do braço,\ninervação motora pelo radial.",
++          "chaves": [
++            "Tríceps",
++            "Nervo radial"
++          ],
++          "comparacao": {
++            "B": {
++              "titulo": "Mediano: só atravessa o braço.",
++              "texto": "Acompanha a artéria braquial, sem ramo motor no braço."
++            },
++            "C": {
++              "titulo": "Musculocutâneo: o anterior.",
++              "texto": "Inerva bíceps, coracobraquial e braquial medial."
++            },
++            "D": {
++              "titulo": "Cutâneo medial: sensitivo.",
++              "texto": "Vai à pele da face medial do braço; não inerva o tríceps."
++            }
++          },
++          "guardar": "Compartimento posterior do braço: nervo radial."
++        },
++        "passos": {
++          "tag": "O que são os OrtoQuestões Simulados",
++          "titulo": "A questão é nova.\n[[O padrão é estudado.]]",
++          "sub": "Questões autorais, feitas por engenharia reversa\ndas provas anteriores, a partir da bibliografia.",
++          "itens": [
++            {
++              "titulo": "Lemos as provas anteriores.",
++              "texto": "Os assuntos, as relações cobradas e a forma de perguntar."
++            },
++            {
++              "titulo": "Conferimos a bibliografia.",
++              "texto": "A imagem e o conceito partem de uma referência identificada."
++            },
++            {
++              "titulo": "Escrevemos a questão.",
++              "texto": "Enunciado, alternativas e comentário da certa e de cada errada."
++            }
++          ],
++          "destaque": {
++            "rotulo": "NESTA QUESTÃO",
++            "titulo": "Reconhecer antes de associar.",
++            "texto": "Posição e tendão mostram o músculo; só então vem o nervo."
++          },
++          "nota": "Questões autorais, sem vínculo com as instituições organizadoras das provas."
++        },
++        "final": {
++          "celular": {
++            "titulo": "A · radial.",
++            "texto": "O alvo é o tríceps, músculo posterior inervado pelo radial.",
++            "itens": [
++              {
++                "rotulo": "ALTERNATIVA B",
++                "texto": "O mediano acompanha a artéria braquial e não tem distribuição motora no braço."
++              },
++              {
++                "rotulo": "ALTERNATIVA C",
++                "texto": "O musculocutâneo inerva bíceps, coracobraquial e braquial medial, todos anteriores."
++              },
++              {
++                "rotulo": "ALTERNATIVA D",
++                "texto": "É um nervo sensitivo, da pele da face medial do braço."
++              }
++            ]
++          },
++          "recursos": [
++            {
++              "titulo": "Questões oficiais.",
++              "texto": "As provas anteriores, comentadas."
++            },
++            {
++              "titulo": "OrtoQuestões Simulados.",
++              "texto": "Questões novas no padrão da banca."
++            },
++            {
++              "titulo": "Cada alternativa.",
++              "texto": "A certa e o porquê das erradas."
++            }
++          ],
++          "cta_titulo": "Conheça o Orto Questões.",
++          "cta_texto": "Crie sua conta grátis: o caminho está no nosso perfil."
++        }
++      }
++    }
++  ],
++  "publicacao": [
++    "Feed: cofre-duas-chaves-feed-01 a feed-06, das 7h às 8h."
++  ],
++  "legenda": "Qual músculo? E quem o comanda?\n\nOrtoQuestões Simulados: a seta amarela aponta um músculo do braço. Para abrir o cofre, reconheça o músculo e depois o nervo motor dele.\n\nComente a sua letra antes de arrastar.\n\nOs Simulados são questões autorais, feitas por engenharia reversa das provas anteriores, a partir da bibliografia.\n\nTreine grátis: o caminho está no nosso perfil, @ortoquestoes",
++  "hashtags": [
++    "#ortopedia",
++    "#TEOT",
++    "#TARO",
++    "#anatomia",
++    "#ortoquestoes"
++  ],
++  "conferencia": [
++    "Questão ombro-cotovelo-0638 (OrtoQuestões Simulados, simulado=true), gabarito A: copiada do acervo pelo questao.mjs. Não atribuir prova nem ano oficial.",
++    "Imagem: public/imagens/ombro-cotovelo/ombro-cotovelo-0638-1.jpeg (Netter, seta amarela original).",
++    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios/ombro-cotovelo.json).",
++    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
++  ]
++}
+diff --git a/marketing/kit/fila/post-32.json b/marketing/kit/fila/post-32.json
+new file mode 100644
+index 0000000..43933e2
+--- /dev/null
++++ b/marketing/kit/fila/post-32.json
+@@ -0,0 +1,196 @@
++{
++  "post": "post-32",
++  "data": "2026-11-12",
++  "horario": "07:30",
++  "status": "pronto",
++  "slug": "mecanica-longus-colli",
++  "formato": "stories (6)",
++  "estilo": "mecanica-fina",
++  "assunto": "Acesso anterior C6-C7: longus colli",
++  "gancho": "Acesso anterior. Quem você afasta?",
++  "por_que": "Questão oficial com imagem (corte axial com a seta): identificar o músculo pela posição. O último story convida para o site e mostra o Cronograma.",
++  "questao": {
++    "id": "coluna-0281",
++    "area": "Coluna",
++    "subtema": "Vias de acesso à coluna",
++    "prova": "TARO",
++    "ano": 2026,
++    "simulado": false,
++    "enunciado": "No acesso anterior ao nível C6-C7, o músculo apontado pela seta que deve ser afastado lateralmente até exposição da articulação unciforme é o",
++    "alternativas": [
++      {
++        "letra": "A",
++        "texto": "omohioide."
++      },
++      {
++        "letra": "B",
++        "texto": "longus colli."
++      },
++      {
++        "letra": "C",
++        "texto": "splenius cervicis."
++      },
++      {
++        "letra": "D",
++        "texto": "escaleno anterior."
++      }
++    ],
++    "gabarito": "B",
++    "imagens": [
++      {
++        "arquivo": "public/imagens/coluna/coluna-0281-1.webp",
++        "legenda": null
++      }
++    ],
++    "comentario": {
++      "correta": "**Longus colli.**",
++      "incorretas": {
++        "A": "**Omo-hióideo.**\n- Superficial; não fica sobre a coluna.",
++        "C": "**Esplênio do pescoço.**\n- Posterior; fora do acesso anterior.",
++        "D": "**Escaleno anterior.**\n- Lateral ao campo."
++      },
++      "conceito_trechos": [
++        "### A imagem\nCorte **axial** do pescoço, com as fáscias coloridas. A seta aponta o músculo sobre a face **anterolateral do corpo vertebral**, logo atrás da **fáscia pré-vertebral** (em laranja) e medial à bainha carotídea: o ==longus colli== (longo do pescoço).",
++        "> **Na prova:** músculo afastado lateralmente para expor a uncovertebral = ==longus colli==."
++      ],
++      "conferido": false,
++      "alerta": null
++    }
++  },
++  "pecas": [
++    {
++      "estilo": "mecanica-fina",
++      "conteudo": {
++        "capa": {
++          "tag": "Coluna cervical · TARO 2026",
++          "titulo": "Acesso anterior.\n[[Quem você\nafasta?]]",
++          "sub": "Um corte axial do pescoço.\nUm músculo colado à vértebra.",
++          "pilulas": [
++            "OBSERVAR",
++            "LOCALIZAR",
++            "AFASTAR"
++          ]
++        },
++        "questao_slide": {
++          "tag": "Questão oficial · TARO 2026",
++          "pedido": "Escolha a sua letra. A resposta vem no próximo story."
++        },
++        "raciocinio": {
++          "titulo": "Siga a seta.\n[[Até o osso.]]",
++          "sub": "A seta para sobre a face\nanterolateral do corpo vertebral.",
++          "passos": [
++            {
++              "titulo": "Ache a fáscia pré-vertebral.",
++              "texto": "A linha **laranja** passa logo à frente do músculo."
++            },
++            {
++              "titulo": "Olhe o vizinho.",
++              "texto": "O músculo fica **medial à bainha carotídea**."
++            },
++            {
++              "titulo": "Encoste no corpo vertebral.",
++              "texto": "Na face **anterolateral**: é o **longus colli**."
++            }
++          ]
++        },
++        "resposta": {
++          "tag": "Alternativa B",
++          "titulo": "É o\n[[longus colli.]]",
++          "destaque": {
++            "titulo": "O longo do pescoço.",
++            "texto": "Descolado e afastado lateralmente, expõe o disco e as uncovertebrais."
++          },
++          "comparacao": {
++            "A": {
++              "titulo": "Omo-hióideo",
++              "texto": "Superficial; não fica sobre a coluna."
++            },
++            "C": {
++              "titulo": "Esplênio do pescoço",
++              "texto": "Posterior; fora do acesso anterior."
++            },
++            "D": {
++              "titulo": "Escaleno anterior",
++              "texto": "Lateral ao campo, sobre o plexo e o frênico."
++            }
++          },
++          "guardar": "Guarde: para expor a uncovertebral, afaste o longus colli.",
++          "mostrador": "C6",
++          "mostrador_texto": "No nível **C6-C7**,\nafastar **lateralmente**."
++        },
++        "passos": {
++          "tag": "Para a prova",
++          "titulo": "O acesso,\n[[camada por\ncamada.]]",
++          "itens": [
++            {
++              "titulo": "Platisma.",
++              "texto": "Depois da incisão, a primeira camada."
++            },
++            {
++              "titulo": "O plano certo.",
++              "texto": "**Bainha carotídea** lateral; **traqueia e esôfago** mediais."
++            },
++            {
++              "titulo": "Fáscia pré-vertebral.",
++              "texto": "Logo atrás dela, o **longus colli**, afastado lateralmente."
++            }
++          ],
++          "destaque": {
++            "titulo": "Cuidado lateral.",
++            "texto": "A cadeia simpática fica sobre o longus colli: dissecção agressiva causa Horner."
++          }
++        },
++        "final": {
++          "tag": "Orto Questões",
++          "titulo": "Do treino\n[[até a prova.]]",
++          "celular": {
++            "titulo": "B · longus colli.",
++            "texto": "A seta aponta o músculo sobre a face anterolateral do corpo vertebral, atrás da fáscia pré-vertebral.",
++            "itens": [
++              {
++                "rotulo": "POR QUE NÃO A?",
++                "texto": "O omo-hióideo é superficial."
++              },
++              {
++                "rotulo": "POR QUE NÃO C?",
++                "texto": "O esplênio é posterior."
++              },
++              {
++                "rotulo": "POR QUE NÃO D?",
++                "texto": "O escaleno anterior é lateral."
++              }
++            ]
++          },
++          "recursos": [
++            {
++              "titulo": "Provas oficiais.",
++              "texto": "TEOT e TARO, comentadas."
++            },
++            {
++              "titulo": "Simulados.",
++              "texto": "Questões novas no padrão da banca."
++            },
++            {
++              "titulo": "Cronograma.",
++              "texto": "O caminho de cada dia até a prova."
++            }
++          ],
++          "nota": "Tela ilustrativa com trechos do comentário. O Cronograma é do plano de assinatura.",
++          "cta_titulo": "O site monta o seu caminho.",
++          "cta_texto": "Você diz a data da prova; o Cronograma monta a lista de cada dia. Comece grátis pelo nosso perfil."
++        }
++      }
++    }
++  ],
++  "publicacao": [
++    "Stories do gancho e da questão: mecanica-fina-mf-01 e mf-02, das 7h às 8h.",
++    "Stories do raciocínio, da resposta, do para a prova e do convite: mf-03 a mf-06, ao meio-dia (ou das 18h às 19h)."
++  ],
++  "legenda": null,
++  "conferencia": [
++    "Questão coluna-0281 (TARO 2026), gabarito oficial B, comentário sem alerta: copiada do acervo pelo questao.mjs.",
++    "Todo texto médico dos slides saiu do comentário do acervo (public/acervo/comentarios/coluna.json).",
++    "Cronograma: recurso do assinante, conferido na tabela \"Gratuito ou assinante\" de src/paginas/Assinatura.tsx.",
++    "O comentário está com conferido=false: a aprovação visual não é revisão médica."
++  ]
++}
+diff --git a/marketing/kit/fila/post-33.json b/marketing/kit/fila/post-33.json
+new file mode 100644
+index 0000000..8658753
+--- /dev/null
++++ b/marketing/kit/fila/post-33.json
+@@ -0,0 +1,54 @@
++{
++  "post": "post-33",
++  "data": "2026-11-10",
++  "horario": "18:30",
++  "status": "pronto",
++  "slug": "treine-gratis-tempo",
++  "formato": "story de propaganda (1, com figurinha de link)",
++  "estilo": "treine-gratis",
++  "produto": "Treine grátis (o tempo do residente)",
++  "gancho": "O tempo que sobra também conta.",
++  "por_que": "Mostrar como o site cabe na rotina: entre uma cirurgia e outra, no pronto-socorro, à noite em casa. Sem número de questões e sem preço.",
++  "pecas": [
++    {
++      "estilo": "treine-gratis",
++      "conteudo": {
++        "etiqueta": "ROTINA DE RESIDENTE",
++        "titulo": "O tempo que sobra\n[[também conta.]]",
++        "sub": "Questão comentada no celular ou no computador, **do jeito que a rotina deixa**.",
++        "tela_notebook": "marketing/kit/telas/t-lap-enneking.png",
++        "tela_celular": "marketing/kit/telas/t-cel-cronograma.png",
++        "captura": "npm run build && npx vite preview --port 4175  (outro terminal); depois: TEMA=escuro LARGURA=1100 ALTURA=688 ESCALA=2 node marketing/instagram/telas.mjs 'lap-enneking=questao/tumores-0247>C@.cartao-questao' && ESCONDER='.cp-tour' TEMA=escuro node marketing/instagram/telas.mjs 'cel-cronograma=cronograma@main' && cp marketing/instagram/telas/t-*.png marketing/kit/telas/",
++        "recursos": [
++          {
++            "titulo": "Entre uma cirurgia e outra",
++            "apoio": "uma questão e o comentário"
++          },
++          {
++            "titulo": "No pronto-socorro",
++            "apoio": "no intervalo, pelo celular"
++          },
++          {
++            "titulo": "À noite, em casa",
++            "apoio": "a revisão do que você errou"
++          },
++          {
++            "titulo": "Cronograma",
++            "apoio": "a lista do dia (assinatura)"
++          }
++        ],
++        "utm_campaign": "treine-gratis-tempo"
++      }
++    }
++  ],
++  "publicacao": [
++    "Story: treine-gratis-s1, das 18h às 19h, depois do post de questão do dia.",
++    "No Instagram, pôr a figurinha de link no espaço livre embaixo do botão, com o texto \"Treine grátis\"."
++  ],
++  "link_figurinha": "https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaign=treine-gratis-tempo#/conta?modo=criar&voltar=%2Ftreinar",
++  "legenda": null,
++  "conferencia": [
++    "Só recursos que existem, conferidos na tabela \"Gratuito ou assinante\" de src/paginas/Assinatura.tsx (questões e revisão no gratuito; Cronograma do assinante). Sem preço, sem número do acervo.",
++    "A frase \"entre uma cirurgia e outra, no plantão ou à noite em casa\" é a mesma da página de planos."
++  ]
++}

@@ -1,0 +1,2276 @@
+diff --git a/docs/cronograma/PLANO.md b/docs/cronograma/PLANO.md
+index e9008a6..f9b0b54 100644
+--- a/docs/cronograma/PLANO.md
++++ b/docs/cronograma/PLANO.md
+@@ -30,7 +30,7 @@ A tela responde sempre, nesta ordem e com estas palavras, sem sinônimos:
+ 3. **Amanhã:** uma linha com a área, os assuntos e o número. Dá continuidade e tira a ansiedade.
+ 4. **Esta semana:** 7 colunas (seg a dom) com a cor da área, o número, feito, hoje e folga hachurada,
+    e uma frase quando a área muda ("na quinta entra Joelho").
+-5. **Depois:** linha do tempo por semana, com faixas na cor das áreas e os marcos (mini-simulados,
++5. **Depois:** linha do tempo por semana, com faixas na cor das áreas e os marcos (Testes do cronograma,
+    reta final, prova) em dourado tracejado. Recolhida em 4 ou 5 itens, com "ver todas".
+ 6. **Como você está indo:** constância e projeção. O resto (desempenho, mapa de risco, Simulados,
+    como funciona) vai para abas ou blocos recolhidos.
+@@ -72,7 +72,7 @@ Linguagem visual fixa:
+ 19. [x] Passadas por incidência: 1ª o que mais cai em todas as áreas, 2ª prioridade média, 3ª o resto. (PR da reforma, 14/10/2026)
+ 20. [x] Intercalar: cerca de 70% da área do dia e 30% de mistura das áreas já vistas. (PR da reforma, 14/10/2026)
+ 21. [x] Blocos de 2 a 3 dias por grupo de assuntos, em vez de uma área por semana. (PR da reforma, 14/10/2026)
+-22. [x] Mini-simulado cronometrado a cada 2 ou 3 semanas. (PR da reforma, 14/10/2026)
++22. [x] Mini-simulado cronometrado a cada 2 ou 3 semanas (PR da reforma, 14/10/2026); desde 16/10 é o "Teste do cronograma" (item 50).
+ 23. [x] Resumão do tema no começo do dia. O item "Resumão do tema" abre `#/resumao?tema=<área>` já na área do dia (aberta e rolada até ela) e só fica feito quando a pessoa lê: toca em "Li esta área" ou fica um minuto com a área aberta e a aba à vista (`src/estado/resumaoLido.ts`). (branch claude/cronograma-ajustes, 15/10/2026)
+ 24. [x] Revisões e flashcards dos erros dentro da meta do dia (uma meta, um tempo). (PR da reforma, 14/10/2026)
+ 
+@@ -127,6 +127,51 @@ Linguagem visual fixa:
+     dia; hoje tem "Começar/Continuar"; os 3 próximos dias de estudo têm "Adiantar este dia" / "Adiantar até este dia" (o
+     mesmo pedido do painel Adiantar, que desconta na ordem). Código: `src/paginas/CronogramaCalendario.tsx` e
+     `src/estilos/paginas/CronogramaCalendario.css`. Capturas: `node fixtures/capturar_calendario.mjs` com o Vite aberto.
++50. [x] Testes automáticos no cronograma, com o nome **"Teste do cronograma"** em todo lugar (pedido do Tales, 16/10/2026;
++    nunca "mini-simulado", para não confundir com o Simulado Nacional nem com os OrtoQuestões Simulados). Agenda
++    (`agendaTestes` em `planoEstudo.ts`): a cada 14 dias desde a criação e, nas 4 semanas antes da reta final, toda semana;
++    mais um no primeiro dia de estudo da revisão forte (só com reta final de duas semanas). Cada marco cai no primeiro dia
++    normal da semana dele; semana sem nenhum (só dias leves, semana difícil) usa o primeiro dia que não é folga, com a meta
++    do dia leve. 30 questões já vistas, cronometradas, com cotas por área na proporção da incidência (`cotasPorIncidencia`
++    e `idsMiniSimulado` em `hubCronograma.ts`); no começo do plano, completa com inéditas do que mais cai (nunca sai vazio).
++    Conta como feito **no fim** (com metade respondida, tela `FimTeste` em `Resumo.tsx`), não ao começar; o resultado vai
++    para `opcoes.testes` do plano (`opcoesComTeste`/`guardarTeste` em `conta/cronograma.ts`, um por dia, os 20 mais
++    recentes; **sem SQL novo**, o JSON `opcoes` já existe). Interface: cartão `CartaoTeste` abaixo do Hoje (dia de teste,
++    teste pendente por até 7 dias, feito com o resultado ao lado do anterior e as barras dos últimos 6), item na lista do dia,
++    linha em Amanhã/Esta semana/Depois/.ics e as datas no calendário (★; verde feito, laranja pendente ou perdido).
++    Teste: `fixtures/testar_teste_cronograma.mjs` (no `npm test`; agenda, folga/leve/semana difícil, só um dia de estudo,
++    plano curto, pendente, revisão forte, cotas, registro e a virada do dia em 4 fusos).
++51. [x] Cronograma redesenhado com o calendário em evidência (pedido do Tales, 16/10/2026): o calendário do mês fica na
++    página, logo depois de "Amanhã" (coluna da direita no computador, ao lado do Hoje; no celular, depois de Amanhã), com
++    a semana de hoje marcada no topo das células, e abre em tela cheia ("Abrir em tela cheia", "Ver no calendário" do
++    Depois ou `#/cronograma?calendario=1`). Marcas: feito, parcial, perdido, hoje (também em dia de folga), folga, dia leve
++    (L), semana difícil (D), adiantado, Teste do cronograma (★), início de passada, reta final e prova, com legenda
++    completa (áreas do mês + marcas + "60 = questões do dia"). Na coluna, a célula mostra o número do dia, pontos com a cor
++    das áreas e as questões; os nomes ficam no detalhe e na tela cheia. Tocar num dia mostra o que ele tem (resumão,
++    questões por área com assuntos, teste, extras, tempo) e o botão certo: começar/continuar hoje, fazer o teste,
++    adiantar os 3 próximos dias. O botão grande "Ver calendário" saiu de "Esta semana" (o calendário já está acima).
++    Código: `CalendarioCronograma` com `modo="embutido" | "janela"` em `CronogramaCalendario.tsx`.
++52. [x] Calendário da Revisão no mesmo estilo (`#/revisao`, `Revisao.tsx`): mesma grade de segunda a domingo e mesmas
++    células e detalhe do calendário do cronograma; por dia, quantas revisões vencem (faixa mais escura quanto mais),
++    quantas foram feitas (✓), hoje e as folgas do ritmo; o detalhe traz as áreas, o tempo e "Revisar as de hoje" /
++    "Adiantar este dia" / "Só 5 minutos".
++53. [x] Auditoria de casos de borda (16/10/2026), com `fixtures/capturar_cronograma_conta.mjs` (conta de verdade com
++    Supabase falso) e o motor em script:
++    - **Prova em poucos dias com plano criado hoje** (8 dias): a meta pedia o plano inteiro num dia (3.798 questões).
++      Agora há um teto absoluto de `TETO_DIA` = 150 por dia; o que não couber sai do fim da fila, com o aviso
++      "Até a prova não cabe tudo" no cartão Hoje.
++    - **Prova passada**: o título dizia "Dia da prova" e o Hoje "A prova chegou". Agora "A prova passou", com o botão
++      "Escolher a próxima prova"; o "Ritmo" some de "Como você está indo" depois da prova.
++    - **Plano criado já dentro da reta final** (prova em 1 a 7 dias): o trilho tinha um trecho "Conteúdo novo · feito"
++      invertido; agora começa na criação.
++    - **Reta final**: o calendário mostrava áreas de conteúdo nos dias de revisão e o "Depois" listava semanas de conteúdo
++      novo (o motor segue distribuindo o resto até a prova). Os dois agora mostram só a reta final e os marcos; hoje
++      aparece marcado também dentro da reta final.
++    - **Todos os dias de folga menos um**: testes caem sempre nesse dia; hoje de folga aparece com a marca de hoje.
++    - **Fuso**: datas de teste e pendente pelos dias de São Paulo em 4 fusos do aparelho (com horário de verão no
++      aparelho, o "até 7 dias" do pendente usava diferença em ms; agora conta dias).
++    - **Prova amanhã/hoje, reta final curta (7 dias), conta gratuita (vitrine) x assinante**: sem erro; a vitrine segue
++      sem calendário (ele aparece na lista "O resto é do assinante").
+ 
+ Como funciona por dentro: `opcoes.adiantados` (no `planos_estudo.opcoes`, sem SQL novo) guarda, por dia, a meta daquele dia e
+ o que a pessoa pediu para adiantar. No dia seguinte, o motor conta as primeiras respostas daquele dia, tira a meta e
+diff --git a/fixtures/capturar_cronograma_conta.mjs b/fixtures/capturar_cronograma_conta.mjs
+new file mode 100644
+index 0000000..b1f1931
+--- /dev/null
++++ b/fixtures/capturar_cronograma_conta.mjs
+@@ -0,0 +1,178 @@
++// Capturas do cronograma e da revisão com uma conta de verdade (Supabase falso, como em
++// e2e_sincronia_cronograma.mjs): assinante com cronograma, conta gratuita (vitrine) e os casos
++// de borda (prova amanhã, hoje e passada, plano criado hoje, só um dia de estudo, reta final curta,
++// dia de Teste do cronograma e teste pendente). 1400×860, 390×844 e 844×390, claro e escuro.
++// Uso: SAIDA=/pasta node fixtures/capturar_cronograma_conta.mjs [filtro]
++import { mkdir, readFile } from 'node:fs/promises'
++
++const SUPABASE = 'https://falso.supabase.co'
++process.env.VITE_SUPABASE_URL = SUPABASE
++const { createServer } = await import('vite')
++const { chromium } = await import('playwright')
++const SAIDA = process.env.SAIDA ?? '/tmp/claude-0/capturas-cronograma-conta'
++const filtro = process.argv[2] ?? ''
++await mkdir(SAIDA, { recursive: true })
++const indice = JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))
++const DIA = 86_400_000
++const VERSAO_TERMOS = (await readFile('src/conta/termos.ts', 'utf8')).match(/VERSAO_TERMOS = '([^']+)'/)?.[1] ?? ''
++const CONTA = '11111111-2222-4333-8444-555555555555'
++const iso = (t) => new Date(t - 3 * 3_600_000).toISOString().slice(0, 10) // dia de São Paulo
++const hoje = Date.now()
++
++/** ~600 respostas nas últimas 5 semanas (com revisões feitas e vencendo), como em capturar_cronograma_redesenho.mjs. */
++function historico() {
++  const alvos = indice.questoes.filter((q) => !q.dup && !q.ar && q.an !== 1).filter((_, i) => i % 7 === 0).slice(0, 600)
++  const r = {}
++  alvos.forEach((q, k) => {
++    const diasAtras = 1 + (k % 35)
++    if (diasAtras % 7 === 3) return // um dia perdido por semana
++    const em = hoje - diasAtras * DIA - (k % 50) * 60_000
++    const correta = k % 10 < 7
++    const confianca = k % 9 === 0 ? 'chute' : k % 5 === 0 ? 'duvida' : 'seguro'
++    const h = [{ em, correta, confianca }]
++    let tentativas = 1, acertos = Number(correta), sequencia = correta ? 1 : 0
++    if (k % 3 === 0 && diasAtras > 3) { h.push({ em: em + Math.ceil(diasAtras / 2) * DIA, correta: true, confianca: 'seguro' }); tentativas++; acertos++; sequencia++ }
++    const intervalos = { chute: [1, 3, 7, 14], duvida: [3, 7, 21, 45], seguro: [10, 30, 90, 180] }[confianca]
++    const ultima = h[h.length - 1].em
++    r[q.id] = { c: correta, q: ultima, tentativas, acertos, erros: tentativas - acertos, sequencia, confianca, historico: h, proximaRevisao: !correta ? ultima : ultima + intervalos[Math.min(sequencia, 4) - 1] * DIA }
++  })
++  return r
++}
++const HISTORICO = historico()
++
++// Planos dos cenários: datas relativas a hoje.
++const base = { intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, incluir_simulados: true }
++const criadoHa = (dias) => new Date(hoje - dias * DIA).toISOString()
++const CENARIOS = {
++  assinante: { premium: true, plano: { ...base, data_prova: iso(hoje + 86 * DIA), criado_em: criadoHa(30), opcoes: { diasLeves: [3], qtdLeve: 15, testes: [{ em: iso(hoje - 15 * DIA), n: 30, certas: 19 }] } } },
++  'teste-hoje': { premium: true, plano: { ...base, data_prova: iso(hoje + 90 * DIA), criado_em: criadoHa(14), opcoes: {} } },
++  'teste-pendente': { premium: true, plano: { ...base, folgas: [], data_prova: iso(hoje + 90 * DIA), criado_em: criadoHa(17), opcoes: { testes: [] } } },
++  'teste-feito': { premium: true, plano: { ...base, folgas: [], data_prova: iso(hoje + 90 * DIA), criado_em: criadoHa(28), opcoes: { testes: [{ em: iso(hoje - 14 * DIA), n: 30, certas: 17 }, { em: iso(hoje), n: 30, certas: 22 }] } } },
++  'prova-amanha': { premium: true, plano: { ...base, data_prova: iso(hoje + DIA), criado_em: criadoHa(20) } },
++  'prova-hoje': { premium: true, plano: { ...base, data_prova: iso(hoje), criado_em: criadoHa(20) } },
++  'prova-passada': { premium: true, plano: { ...base, data_prova: iso(hoje - 5 * DIA), criado_em: criadoHa(40) } },
++  'criado-hoje': { premium: true, plano: { ...base, data_prova: iso(hoje + 8 * DIA), criado_em: criadoHa(0) } },
++  'um-dia': { premium: true, plano: { ...base, folgas: [0, 1, 2, 3, 4, 5, 6].filter((d) => d !== new Date(hoje + 2 * DIA).getDay()), data_prova: iso(hoje + 60 * DIA), criado_em: criadoHa(3) } },
++  'reta-curta': { premium: true, plano: { ...base, data_prova: iso(hoje + 9 * DIA), criado_em: criadoHa(25) } },
++  'reta-final': { premium: true, plano: { ...base, data_prova: iso(hoje + 12 * DIA), criado_em: criadoHa(60) } },
++  gratis: { premium: false, plano: null },
++}
++
++function servidor(cenario) {
++  const c = CENARIOS[cenario]
++  const plano = c.plano ? structuredClone(c.plano) : null
++  const rpcs = {
++    sincronizar_progresso: (a) => [200, (a.alteracoes ?? []).map((e, i) => ({ tipo: e.tipo, item: e.item, valor: e.valor, versao: i + 1, operacao: e.operacao }))],
++    ler_progresso_desde: () => [200, []],
++    obter_acesso_premium: () => [200, [{ premium: c.premium, motivo: c.premium ? 'assinatura' : null, recursos_exclusivos: c.premium, pagamentos_ativos: true }]],
++    obter_estado_conta: () => [200, [{ status_assinatura: c.premium ? 'ativa' : null, cancelar_ao_fim: false, fim_periodo: null }]],
++    obter_plano_estudo: () => [200, plano ? [structuredClone(plano)] : []],
++    ajustar_opcoes_plano: (a) => { if (plano) plano.opcoes = { ...plano.opcoes, ...a.p_patch }; return [200, true] },
++    salvar_plano_estudo: () => [200, null],
++    sinal_aparelho: () => [200, [{ ativo: true, outro_aparelho: null }]],
++    meus_feitos: () => [200, { conquistas: [], dias: {}, indicados_assinantes: 0, indicados_30_dias: 0, simulado_edicoes: [], simulado_participacoes: [], ranking_semana: [], relatos_resolvidos: 0, comentarios_avaliados: 0, contra_corrente: 0, plano: null }],
++  }
++  return async (rota) => {
++    const pedido = rota.request()
++    const url = new URL(pedido.url())
++    const cors = { 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': '*', 'access-control-expose-headers': '*' }
++    if (pedido.method() === 'OPTIONS') return rota.fulfill({ status: 204, headers: cors })
++    const responder = (status, corpo) => rota.fulfill({ status, headers: { ...cors, 'content-type': 'application/json' }, body: JSON.stringify(corpo) })
++    if (url.pathname.startsWith('/auth/v1/user')) return responder(200, usuario())
++    if (url.pathname.startsWith('/auth/v1/')) return responder(200, {})
++    const rpc = url.pathname.match(/^\/rest\/v1\/rpc\/([a-z_]+)$/)?.[1]
++    if (rpc && rpcs[rpc]) { const [s, corpo] = rpcs[rpc](JSON.parse(pedido.postData() || '{}')); return responder(s, corpo) }
++    return responder(200, rpc ? null : [])
++  }
++}
++const usuario = () => ({ id: CONTA, aud: 'authenticated', role: 'authenticated', email: 'tales@exemplo.com', app_metadata: { provider: 'email' }, user_metadata: { nome: 'Tales' }, created_at: '2026-09-01T00:00:00Z' })
++
++const site = await createServer({ server: { port: 5400 + Math.floor(Math.random() * 400), strictPort: false, fs: { strict: false } }, logLevel: 'error' })
++await site.listen()
++const BASE = site.resolvedUrls.local[0]
++const nav = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
++const erros = []
++
++async function abrir(cenario, largura, altura, esquema, rota) {
++  const celular = largura < 900
++  const ctx = await nav.newContext({ viewport: { width: largura, height: altura }, deviceScaleFactor: celular ? 2 : 1, colorScheme: esquema, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', isMobile: celular, hasTouch: celular })
++  await ctx.route(`${SUPABASE}/**`, servidor(cenario))
++  const sessao = { access_token: `tok-${CONTA}`, refresh_token: 'r', token_type: 'bearer', expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 30 * 24 * 3600, user: usuario() }
++  await ctx.addInitScript(([s, h, t, c, v]) => {
++    sessionStorage.setItem('oq-termos-adiado', v)
++    if (sessionStorage.getItem('semeado')) return
++    sessionStorage.setItem('semeado', '1')
++    localStorage.setItem('sb-ortoquestoes-auth', s)
++    localStorage.setItem('ortoquestoes:tema', JSON.stringify(t))
++    localStorage.setItem('ortoquestoes:consentimento', JSON.stringify({ analytics: false, em: Date.now() }))
++    // As chaves do aparelho da conta (armazenamento por conta).
++    for (const prefixo of ["ortoquestoes:", `ortoquestoes:conta:${c}:`]) {
++      localStorage.setItem(`${prefixo}respondidas`, JSON.stringify(h))
++      localStorage.setItem(`${prefixo}cronograma:tour-v2`, 'true')
++      localStorage.setItem(`${prefixo}cronograma:aviso-simulados`, 'true')
++    }
++  }, [JSON.stringify(sessao), HISTORICO, esquema === 'light' ? 'claro' : 'escuro', CONTA, VERSAO_TERMOS])
++  const p = await ctx.newPage()
++  p.on('pageerror', (e) => erros.push(`${cenario} ${largura}: ${e.message}`))
++  p.on('console', (m) => { if (m.type() === 'error' && !/Failed to load resource|favicon|ERR_/.test(m.text())) erros.push(`${cenario} ${largura}: ${m.text()}`) })
++  await p.goto(BASE + rota)
++  return p
++}
++async function semRolagemLateral(p, nome) {
++  const l = await p.evaluate(() => ({ doc: document.documentElement.scrollWidth, vw: innerWidth }))
++  if (l.doc > l.vw + 1) erros.push(`${nome}: rolagem horizontal ${JSON.stringify(l)}`)
++}
++async function recusar(p) { await p.evaluate(() => [...document.querySelectorAll('button')].find((b) => b.textContent?.trim() === 'Recusar')?.click()).catch(() => {}) }
++
++const TAMANHOS = [['computador', 1400, 860], ['celular', 390, 844], ['deitado', 844, 390]]
++for (const [cenario] of Object.entries(CENARIOS)) {
++  if (filtro && !cenario.startsWith(filtro) && filtro !== 'revisao') continue
++  if (filtro === 'revisao') break
++  const principais = cenario === 'assinante' || cenario === 'gratis'
++  for (const [nome, l, a] of principais ? TAMANHOS : TAMANHOS.slice(0, 2)) {
++    for (const esquema of principais && nome !== 'deitado' ? ['light', 'dark'] : ['light']) {
++      const id = `${cenario}-${nome}-${esquema === 'light' ? 'claro' : 'escuro'}`
++      const p = await abrir(cenario, l, a, esquema, '#/cronograma')
++      try { await p.waitForSelector('.cp-onde', { timeout: 30000 }) } catch { erros.push(`${id}: o cronograma não abriu`); await p.screenshot({ path: `${SAIDA}/${id}-erro.png` }); await p.context().close(); continue }
++      await recusar(p)
++      await p.waitForTimeout(900)
++      await p.screenshot({ path: `${SAIDA}/${id}-tela.png` })
++      await p.screenshot({ path: `${SAIDA}/${id}-inteira.png`, fullPage: true })
++      await semRolagemLateral(p, id)
++      const cal = p.locator('.cc-embutido')
++      if (await cal.count()) {
++        await cal.scrollIntoViewIfNeeded()
++        await p.waitForTimeout(300)
++        await p.screenshot({ path: `${SAIDA}/${id}-calendario.png` })
++        const teste = p.locator('.cc-embutido .cc-dia--marco > button').first()
++        if (await teste.count()) { await teste.click(); await p.waitForTimeout(400); await p.screenshot({ path: `${SAIDA}/${id}-calendario-teste.png` }) }
++      }
++      const cartao = p.locator('.cp-teste')
++      if (await cartao.count()) { await cartao.scrollIntoViewIfNeeded(); await p.waitForTimeout(200); await cartao.screenshot({ path: `${SAIDA}/${id}-teste.png` }) }
++      await p.context().close()
++    }
++  }
++}
++// Revisão.
++if (!filtro || filtro === 'revisao') {
++  for (const [nome, l, a] of TAMANHOS) {
++    for (const esquema of nome === 'deitado' ? ['light'] : ['light', 'dark']) {
++      const id = `revisao-${nome}-${esquema === 'light' ? 'claro' : 'escuro'}`
++      const p = await abrir('assinante', l, a, esquema, '#/revisao')
++      try { await p.waitForSelector('.rvx', { timeout: 30000 }) } catch { erros.push(`${id}: a revisão não abriu`); await p.screenshot({ path: `${SAIDA}/${id}-erro.png` }); await p.context().close(); continue }
++      await recusar(p)
++      await p.waitForTimeout(800)
++      await p.screenshot({ path: `${SAIDA}/${id}-inteira.png`, fullPage: true })
++      const cal = p.locator('.rvx-calendario')
++      await cal.scrollIntoViewIfNeeded()
++      const futuro = p.locator('.rvx-calendario .cc-dia--futuro > button').nth(3)
++      if (await futuro.count()) { await futuro.click(); await p.waitForTimeout(400) }
++      await cal.screenshot({ path: `${SAIDA}/${id}-calendario.png` })
++      await semRolagemLateral(p, id)
++      await p.context().close()
++    }
++  }
++}
++await nav.close()
++await site.close()
++console.log(erros.length ? erros.join('\n') : 'sem erros')
+diff --git a/fixtures/capturar_cronograma_redesenho.mjs b/fixtures/capturar_cronograma_redesenho.mjs
+new file mode 100644
+index 0000000..771a6c0
+--- /dev/null
++++ b/fixtures/capturar_cronograma_redesenho.mjs
+@@ -0,0 +1,157 @@
++// Capturas do redesenho do cronograma e da revisão (16/10/2026): antes e depois, nos três tamanhos
++// (1400×860, 1280×720 e 390×844), claro e escuro, para o assinante (modo demonstração, plano realista),
++// para a conta grátis (vitrine) e para a página de Revisão (com um histórico de exemplo).
++// Uso: npx vite --port 5193 (em outro terminal) e depois
++//   ROTULO=depois node fixtures/capturar_cronograma_redesenho.mjs [filtro]
++// BASE=http://localhost:5193/ e SAIDA=/tmp/claude-0/capturas-cronograma2 por padrão.
++import { chromium } from 'playwright'
++import { mkdir, readFile } from 'node:fs/promises'
++
++const SAIDA = process.env.SAIDA ?? '/tmp/claude-0/capturas-cronograma2'
++const ROTULO = process.env.ROTULO ?? 'depois'
++const BASE = process.env.BASE ?? 'http://localhost:5193/'
++const filtro = process.argv[2] ?? ''
++await mkdir(SAIDA, { recursive: true })
++const indice = JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))
++
++/** Um histórico de exemplo: ~600 respostas nas últimas 5 semanas, com revisões feitas e vencendo. */
++function historicoExemplo() {
++  const DIA = 86_400_000
++  const agora = Date.now()
++  const alvos = indice.questoes.filter((q) => !q.dup && !q.ar && q.an !== 1).filter((_, i) => i % 7 === 0).slice(0, 600)
++  const r = {}
++  alvos.forEach((q, k) => {
++    const diasAtras = 1 + (k % 35)
++    const em = agora - diasAtras * DIA - (k % 50) * 60_000
++    const correta = k % 10 < 7
++    const confianca = k % 9 === 0 ? 'chute' : k % 5 === 0 ? 'duvida' : 'seguro'
++    const historico = [{ em, correta, confianca }]
++    let tentativas = 1, acertos = Number(correta), sequencia = correta ? 1 : 0
++    // Algumas já foram revisadas (dias passados com revisões feitas).
++    if (k % 3 === 0 && diasAtras > 3) { const em2 = em + Math.ceil(diasAtras / 2) * DIA; historico.push({ em: em2, correta: true, confianca: 'seguro' }); tentativas++; acertos++; sequencia++ }
++    const intervalos = { chute: [1, 3, 7, 14], duvida: [3, 7, 21, 45], seguro: [10, 30, 90, 180] }[confianca]
++    const ultima = historico[historico.length - 1].em
++    const proximaRevisao = !correta ? ultima : ultima + intervalos[Math.min(sequencia, 4) - 1] * DIA
++    r[q.id] = { c: correta, q: ultima, tentativas, acertos, erros: tentativas - acertos, sequencia, confianca, historico, proximaRevisao }
++  })
++  return r
++}
++const HISTORICO = historicoExemplo()
++
++const nav = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
++const erros = []
++async function pagina(largura, altura, esquema, comHistorico) {
++  const celular = largura < 500
++  const ctx = await nav.newContext({ viewport: { width: largura, height: altura }, deviceScaleFactor: celular ? 2 : 1, colorScheme: esquema, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', isMobile: celular, hasTouch: celular })
++  await ctx.addInitScript(([t, h]) => {
++    localStorage.setItem('ortoquestoes:tema', JSON.stringify(t))
++    localStorage.setItem('ortoquestoes:cronograma:tour-v2', 'true')
++    localStorage.setItem('ortoquestoes:consentimento', JSON.stringify({ analytics: false, em: Date.now() }))
++  }, [esquema === 'light' ? 'claro' : 'escuro', comHistorico ? HISTORICO : null])
++  const p = await ctx.newPage()
++  p.comHistorico = comHistorico
++  p.on('pageerror', (e) => erros.push(`${largura}: ${e}`))
++  p.on('console', (m) => { if (m.type() === 'error' && !/Failed to load resource|favicon/.test(m.text())) erros.push(`${largura}: ${m.text()}`) })
++  return p
++}
++/**
++ * Sem conta (o Vite desta captura roda sem Supabase), o visitante não lê o localStorage: o histórico de
++ * exemplo e o tour visto entram depois de a página carregar.
++ */
++async function semear(p, comHistorico) {
++  // Visitante guarda tudo só na memória da aba: grava pelo próprio módulo do site (o Vite serve o mesmo).
++  await p.evaluate(async (h) => {
++    const m = await import('/src/estado/armazenamento.ts')
++    m.gravar('cronograma:tour-v2', true)
++    if (h) m.gravar('respondidas', h)
++  }, comHistorico ? HISTORICO : null)
++  await p.waitForTimeout(300)
++}
++async function recusarCookies(p) { await p.evaluate(() => [...document.querySelectorAll('button')].find((b) => b.textContent?.trim() === 'Recusar')?.click()).catch(() => {}) }
++async function semRolagemLateral(p, nome) {
++  const l = await p.evaluate(() => ({ doc: document.documentElement.scrollWidth, vw: innerWidth }))
++  if (l.doc > l.vw + 1) erros.push(`${nome}: rolagem horizontal ${JSON.stringify(l)}`)
++}
++
++const TAMANHOS = [['computador', 1400, 860], ['notebook', 1280, 720], ['celular', 390, 844]]
++for (const [nome, l, a] of TAMANHOS) {
++  for (const esquema of ['light', 'dark']) {
++    const tema = esquema === 'light' ? 'claro' : 'escuro'
++    const id = `${nome}-${tema}`
++    // 1. Assinante (modo demonstração: plano até o TEOT com estudo nos últimos dias).
++    if (!filtro || filtro.startsWith('assinante') || filtro === id) {
++      const p = await pagina(l, a, esquema, false)
++      await p.goto(`${BASE}#/cronograma?demo=1`)
++      await p.waitForSelector('.cp-hoje', { timeout: 30000 })
++      await semear(p, p.comHistorico)
++      await recusarCookies(p)
++      await p.waitForTimeout(700)
++      await p.screenshot({ path: `${SAIDA}/${ROTULO}-assinante-${id}-tela.png` })
++      await p.screenshot({ path: `${SAIDA}/${ROTULO}-assinante-${id}-inteira.png`, fullPage: true })
++      await semRolagemLateral(p, `assinante ${id}`)
++      // O calendário embutido (depois do redesenho): um dia futuro aberto.
++      const embutido = p.locator('.cc-embutido')
++      if (await embutido.count()) {
++        await embutido.scrollIntoViewIfNeeded()
++        const futuro = p.locator('.cc-embutido .cc-dia--futuro > button').nth(2)
++        if (await futuro.count()) { await futuro.click(); await p.waitForTimeout(450) }
++        await p.locator('.cc-embutido').screenshot({ path: `${SAIDA}/${ROTULO}-assinante-${id}-calendario.png` })
++        await semRolagemLateral(p, `calendário ${id}`)
++        const expandir = p.locator('.cc-embutido .cc-expandir')
++        if (await expandir.count()) {
++          await expandir.click(); await p.waitForSelector('.cc-janela'); await p.waitForTimeout(450)
++          await p.screenshot({ path: `${SAIDA}/${ROTULO}-assinante-${id}-calendario-cheio.png` })
++          await p.keyboard.press('Escape'); await p.waitForTimeout(250)
++          if (await p.locator('.cc-janela').count()) erros.push(`${id}: Esc não fechou o calendário cheio`)
++        }
++      }
++      await p.context().close()
++    }
++    // 2. Assinante com a meta de hoje feita (o adiantar vira destaque).
++    if ((!filtro || filtro.startsWith('feita') || filtro === id) && esquema === 'light') {
++      const p = await pagina(l, a, esquema, false)
++      await p.goto(`${BASE}#/cronograma?demo=1&feita`)
++      await p.waitForSelector('.cp-hoje', { timeout: 30000 })
++      await semear(p, p.comHistorico)
++      await recusarCookies(p)
++      await p.waitForTimeout(600)
++      await p.screenshot({ path: `${SAIDA}/${ROTULO}-feita-${id}-tela.png` })
++      await p.context().close()
++    }
++    // 3. Conta grátis: a vitrine.
++    if (!filtro || filtro.startsWith('gratis') || filtro === id) {
++      const p = await pagina(l, a, esquema, true)
++      await p.goto(`${BASE}#/cronograma`)
++      await p.waitForSelector('.cp-hoje', { timeout: 30000 })
++      await semear(p, p.comHistorico)
++      await recusarCookies(p)
++      await p.waitForTimeout(600)
++      await p.screenshot({ path: `${SAIDA}/${ROTULO}-gratis-${id}-tela.png` })
++      await p.screenshot({ path: `${SAIDA}/${ROTULO}-gratis-${id}-inteira.png`, fullPage: true })
++      await semRolagemLateral(p, `grátis ${id}`)
++      await p.context().close()
++    }
++    // 4. Revisão.
++    if (!filtro || filtro.startsWith('revisao') || filtro === id) {
++      const p = await pagina(l, a, esquema, true)
++      await p.goto(`${BASE}#/revisao`)
++      await p.waitForSelector('.rvx', { timeout: 30000 })
++      await semear(p, true)
++      await recusarCookies(p)
++      await p.waitForTimeout(700)
++      await p.screenshot({ path: `${SAIDA}/${ROTULO}-revisao-${id}-tela.png` })
++      await p.screenshot({ path: `${SAIDA}/${ROTULO}-revisao-${id}-inteira.png`, fullPage: true })
++      const cal = p.locator('.rvx-calendario, .rc-calendario').first()
++      if (await cal.count()) {
++        await cal.scrollIntoViewIfNeeded()
++        const futuro = p.locator('.rc-calendario .cc-dia--futuro > button').nth(3)
++        if (await futuro.count()) { await futuro.click(); await p.waitForTimeout(450) }
++        await cal.screenshot({ path: `${SAIDA}/${ROTULO}-revisao-${id}-calendario.png` })
++      }
++      await semRolagemLateral(p, `revisão ${id}`)
++      await p.context().close()
++    }
++  }
++}
++await nav.close()
++console.log(erros.length ? erros.join('\n') : 'sem erros')
+diff --git a/fixtures/testar_teste_cronograma.mjs b/fixtures/testar_teste_cronograma.mjs
+new file mode 100644
+index 0000000..886efef
+--- /dev/null
++++ b/fixtures/testar_teste_cronograma.mjs
+@@ -0,0 +1,145 @@
++// Teste do cronograma (16/10/2026): a agenda (quinzenal, semanal nas 4 semanas antes da reta final,
++// o teste da revisão forte, folga, dia leve e semana difícil), o teste pendente por até 7 dias,
++// a divisão das vagas por incidência e o registro do resultado no JSON `opcoes` do plano.
++// Roda de novo em 4 fusos do aparelho (TZ) para conferir a virada do dia de São Paulo.
++import assert from 'node:assert/strict'
++import { build } from 'esbuild'
++import { execFileSync } from 'node:child_process'
++import { mkdtemp, readFile, rm } from 'node:fs/promises'
++import { tmpdir } from 'node:os'
++import { join } from 'node:path'
++import { fileURLToPath, pathToFileURL } from 'node:url'
++
++const pasta = await mkdtemp(join(tmpdir(), 'oq-'))
++const arquivo = join(pasta, 'm.mjs')
++try {
++  await build({
++    stdin: { contents: `export * from './src/dados/planoEstudo'; export { cotasPorIncidencia, idsMiniSimulado } from './src/dados/hubCronograma'; export { opcoesComTeste } from './src/conta/cronograma'; export { pesoIncidenciaDoTema } from './src/dados/incidencia'`, resolveDir: process.cwd() },
++    outfile: arquivo, bundle: true, platform: 'node', format: 'esm',
++    define: { 'import.meta.env': JSON.stringify({ BASE_URL: '/', DEV: false, VITE_SUPABASE_URL: '' }) }, logLevel: 'error',
++  })
++  const m = await import(pathToFileURL(arquivo))
++  const indice = JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))
++  const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
++  const data = (s) => { const [a, b, c] = s.split('-').map(Number); return new Date(a, b - 1, c) }
++  const plano = (extra = {}) => ({ data_prova: '2027-01-10', intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: '2026-10-14T12:00:00Z', incluir_simulados: true, ...extra })
++
++  if (process.env.TZ_FILHO) {
++    // Fuso: às 23h10 de 27/10 em São Paulo ainda não é dia de teste; às 0h10 de 28/10 já é,
++    // seja qual for o fuso do aparelho.
++    const instante = Date.UTC(2026, 9, 28, 2, 10)
++    assert.equal(m.calcularPlano(indice, {}, plano(), instante).testes.hoje, false, `TZ=${process.env.TZ}: 23h10 de São Paulo ainda não é o dia do teste`)
++    assert.equal(m.calcularPlano(indice, {}, plano(), instante + 3_600_000).testes.hoje, true, `TZ=${process.env.TZ}: 0h10 de São Paulo já é o dia do teste`)
++    //    Pendente: 7 dias depois ainda vale; 8 dias depois, não (mesmo com horário de verão no aparelho).
++    assert.ok(m.calcularPlano(indice, {}, plano(), Date.UTC(2026, 10, 4, 15)).testes.pendente, `TZ=${process.env.TZ}: pendente no 7º dia`)
++    assert.equal(m.calcularPlano(indice, {}, plano(), Date.UTC(2026, 10, 5, 15)).testes.pendente, null, `TZ=${process.env.TZ}: pendente no 8º dia`)
++    process.exit(0)
++  }
++
++  const agenda = (criado, reta, tipoDe) => [...m.agendaTestes(data(criado), data(reta), tipoDe)].sort((a, b) => a - b).map((t) => iso(new Date(t)))
++  const semanal = (folgas = [], leves = [], dificeis = []) => (d) => folgas.includes(d.getDay()) ? 'folga'
++    : dificeis.some((s) => d >= data(s) && d < new Date(data(s).getFullYear(), data(s).getMonth(), data(s).getDate() + 7)) ? 'dificil'
++    : leves.includes(d.getDay()) ? 'leve' : 'estudo'
++
++  assert.equal(m.NOME_TESTE, 'Teste do cronograma')
++
++  // 1. Quinzenal desde a criação e semanal nas 4 semanas antes da reta final (domingo de folga).
++  //    Criado na quarta 14/10/2026, prova 10/01/2027: reta final em 27/12, semanais a partir de 29/11.
++  const a1 = agenda('2026-10-14', '2026-12-27', semanal([0]))
++  assert.deepEqual(a1, ['2026-10-28', '2026-11-11', '2026-11-30', '2026-12-07', '2026-12-14', '2026-12-21'], `agenda: ${a1}`)
++  for (let i = 1; i < a1.length; i++) assert.ok(Math.round((data(a1[i]) - data(a1[i - 1])) / 864e5) >= 7, 'testes colados')
++  assert.ok(a1.every((d) => data(d) < data('2026-12-27') && data(d).getDay() !== 0), 'teste na reta final ou na folga')
++
++  // 2. Dia leve: o teste da quarta passa para a quinta. Semana difícil: sai da semana dela.
++  assert.equal(agenda('2026-10-14', '2026-12-27', semanal([0], [3]))[0], '2026-10-29', 'dia leve deveria empurrar o teste para o dia normal seguinte')
++  const a3 = agenda('2026-10-14', '2026-12-27', semanal([0], [], ['2026-11-09']))
++  assert.ok(!a3.some((d) => d >= '2026-11-09' && d <= '2026-11-15'), `teste na semana difícil: ${a3}`)
++  assert.ok(a3.includes('2026-11-16'), 'o teste da semana difícil deveria ir para a segunda seguinte')
++
++  // 3. Só dias leves (nenhum dia normal): o teste não some, cai no primeiro dia que não é folga.
++  const a4 = agenda('2026-10-14', '2026-12-27', semanal([0], [1, 2, 3, 4, 5, 6]))
++  assert.equal(a4.length, a1.length, 'semana só de dias leves perdeu testes')
++  assert.ok(a4.every((d) => data(d).getDay() !== 0))
++  //    Todos os dias de folga menos a segunda: todos os testes caem às segundas.
++  const a5 = agenda('2026-10-14', '2026-12-27', semanal([0, 2, 3, 4, 5, 6]))
++  assert.ok(a5.length >= 5 && a5.every((d) => data(d).getDay() === 1), `todos de folga menos segunda: ${a5}`)
++  //    Sete dias de folga (o formulário não deixa): nenhum teste, sem travar.
++  assert.deepEqual(agenda('2026-10-14', '2026-12-27', () => 'folga'), [])
++
++  // 4. Plano curto: nenhum teste na primeira semana do plano; reta final amanhã, nenhum teste.
++  const a6 = agenda('2026-10-14', '2026-11-08', semanal([0]))
++  assert.ok(a6.length >= 1 && a6.length <= 3, `plano curto: ${a6}`)
++  assert.ok(a6.every((d) => Math.round((data(d) - data('2026-10-14')) / 864e5) >= 7), `teste na primeira semana do plano: ${a6}`)
++  assert.deepEqual(agenda('2026-10-14', '2026-10-15', semanal([0])), [])
++
++  // 5. No plano: datas, o teste da revisão forte e o pendente por até 7 dias.
++  const em = (a, mes, dia) => new Date(a, mes - 1, dia, 10)
++  const c0 = m.calcularPlano(indice, {}, plano(), em(2026, 10, 16))
++  assert.deepEqual(c0.testes.datas.map(iso), [...a1, '2026-12-28'], 'o teste da revisão forte é o primeiro dia de estudo dela (27/12 é domingo)')
++  assert.equal(c0.testes.hoje, false); assert.equal(c0.testes.pendente, null); assert.equal(iso(c0.testes.proximo), '2026-10-28')
++  assert.equal(c0.dias.filter((d) => d.mini).map((d) => iso(d.data)).join(), a1.join(), 'os dias do motor marcados como teste')
++  const noDia = m.calcularPlano(indice, {}, plano(), em(2026, 10, 28))
++  assert.equal(noDia.testes.hoje, true); assert.equal(noDia.miniHoje, true)
++  const comOpcoes = (quando, opcoes) => m.calcularPlano(indice, {}, plano({ opcoes }), quando)
++  assert.equal(iso(comOpcoes(em(2026, 10, 30)).testes.pendente), '2026-10-28', 'teste perdido deveria ficar pendente')
++  assert.equal(iso(comOpcoes(em(2026, 11, 4)).testes.pendente), '2026-10-28', 'pendente ainda no 7º dia')
++  assert.equal(comOpcoes(em(2026, 11, 5)).testes.pendente, null, 'pendente passou de 7 dias')
++  assert.equal(comOpcoes(em(2026, 10, 30), { testes: [{ em: '2026-10-29', n: 30, certas: 20 }] }).testes.pendente, null, 'teste feito depois da data não está mais pendente')
++  const feito = comOpcoes(em(2026, 10, 28), { testes: [{ em: '2026-10-28', n: 30, certas: 20 }] })
++  assert.equal(feito.testes.feitoHoje, true); assert.equal(feito.testes.feitos.length, 1)
++  const reta = m.calcularPlano(indice, {}, plano(), em(2026, 12, 28))
++  assert.equal(reta.naRetaFinal, true); assert.equal(reta.testes.hoje, true, 'dia do teste da revisão forte')
++  //    Reta final curta (plano de 30 dias): sem revisão forte, sem teste nela.
++  const curto = m.calcularPlano(indice, {}, plano({ data_prova: '2026-11-13' }), em(2026, 10, 16))
++  assert.equal(curto.diasRetaFinal, 7)
++  assert.ok(curto.testes.datas.every((d) => d < curto.inicioRetaFinal), 'teste dentro da reta final curta')
++  //    Dia de teste num dia leve (só dias leves): o teste aparece e a meta é a do dia leve.
++  const leve = comOpcoes(em(2026, 10, 28), { diasLeves: [1, 2, 3, 4, 5, 6], qtdLeve: 15 })
++  assert.equal(leve.testes.hoje, true); assert.equal(leve.metaDiaria, 15)
++
++  // 6. Cotas por incidência: soma n, respeita o que cada área tem, a sobra vai para as outras.
++  const areas = [...new Set(indice.temas.map((t) => t.slug))].filter((s) => m.pesoIncidenciaDoTema(s) > 0).slice(0, 5)
++  assert.ok(areas.length >= 3, 'áreas com incidência faltando no índice')
++  const lista = (s, k) => Array.from({ length: k }, (_, i) => `${s}-${i}`)
++  const peso = (s) => m.pesoIncidenciaDoTema(s)
++  const grande = new Map(areas.map((s) => [s, lista(s, 50)]))
++  const cot = m.cotasPorIncidencia(grande, 30)
++  assert.equal(cot.length, 30); assert.equal(new Set(cot).size, 30)
++  const conta = (ids, s) => ids.filter((id) => id.startsWith(`${s}-`)).length
++  const soma = areas.reduce((x, a) => x + peso(a), 0)
++  for (const s of areas) assert.ok(Math.abs(conta(cot, s) - (30 * peso(s)) / soma) < 1, `${s}: ${conta(cot, s)} vagas, ideal ${((30 * peso(s)) / soma).toFixed(2)}`)
++  const ordem = [...areas].sort((a, b) => peso(b) - peso(a))
++  const pouca = new Map(grande); pouca.set(ordem[0], lista(ordem[0], 2))
++  const cot2 = m.cotasPorIncidencia(pouca, 30)
++  assert.equal(cot2.length, 30, 'a sobra da área pequena deveria ir para as outras'); assert.equal(conta(cot2, ordem[0]), 2)
++  assert.equal(m.cotasPorIncidencia(new Map([[areas[0], lista(areas[0], 3)], [areas[1], lista(areas[1], 4)]]), 30).length, 7)
++  assert.deepEqual(m.cotasPorIncidencia(new Map(), 30), [])
++  assert.deepEqual(m.cotasPorIncidencia(new Map([[areas[0], ['a', 'b', 'c']]]), 2), ['a', 'b'], 'a ordem de cada área é mantida')
++  //    O teste nunca sai vazio: sem nada respondido, vêm inéditas dos assuntos que mais caem.
++  assert.equal(m.idsMiniSimulado(indice, {}).length, 30)
++
++  // 7. opcoesComTeste: um registro por dia (vale o de mais respondidas), no máximo 20, sem tocar no resto.
++  const base = { opcoes: { diasLeves: [3], adiantados: [{ em: '2026-10-15', meta: 60 }] } }
++  const o1 = m.opcoesComTeste(base, { em: '2026-10-28', n: 30, certas: 21 })
++  assert.deepEqual(o1.testes, [{ em: '2026-10-28', n: 30, certas: 21 }])
++  assert.deepEqual(o1.diasLeves, [3]); assert.deepEqual(o1.adiantados, base.opcoes.adiantados)
++  assert.equal(m.opcoesComTeste({ opcoes: o1 }, { em: '2026-10-28', n: 20, certas: 20 }), null, 'registro menor no mesmo dia não troca o maior')
++  assert.equal(m.opcoesComTeste({ opcoes: o1 }, { em: '2026-10-28', n: 30, certas: 25 }), null, 'mesmo n no mesmo dia não regrava')
++  assert.equal(m.opcoesComTeste(base, { em: '28/10/2026', n: 30, certas: 1 }), null, 'data inválida')
++  assert.equal(m.opcoesComTeste(base, { em: '2026-10-28', n: 0, certas: 0 }), null, 'teste vazio')
++  assert.equal(m.opcoesComTeste(base, { em: '2026-10-28', n: 30, certas: 99 }).testes[0].certas, 30, 'certas acima de n')
++  let o = {}
++  for (let i = 0; i < 25; i++) o = m.opcoesComTeste({ opcoes: o }, { em: iso(new Date(2026, 9, 1 + i)), n: 30, certas: i })
++  assert.equal(o.testes.length, 20); assert.equal(o.testes[0].em, '2026-10-06'); assert.equal(o.testes[19].em, '2026-10-25')
++  assert.equal(m.opcoesComTeste({}, { em: '2026-10-28', n: 30, certas: 15 }).testes.length, 1, 'plano antigo sem opcoes')
++  assert.deepEqual(m.testesDe({ opcoes: { testes: [null, { em: 'x', n: 1, certas: 1 }, { em: '2026-10-02', n: 30, certas: 3 }, { em: '2026-10-01', n: 30, certas: 2 }] } }).map((t) => t.em), ['2026-10-01', '2026-10-02'])
++  assert.deepEqual(m.testesDe({ opcoes: { testes: 'lixo' } }), [])
++
++  // 8. Os mesmos dias em 4 fusos do aparelho.
++  for (const tz of ['America/Sao_Paulo', 'Europe/Lisbon', 'Asia/Tokyo', 'America/New_York']) {
++    execFileSync(process.execPath, [fileURLToPath(import.meta.url)], { env: { ...process.env, TZ: tz, TZ_FILHO: '1' }, stdio: 'inherit' })
++  }
++  console.log('teste do cronograma: agenda, pendente, cotas por incidência e registro ok')
++} finally {
++  await rm(pasta, { recursive: true, force: true })
++}
+diff --git a/package.json b/package.json
+index 64977d8..efbd7f8 100644
+--- a/package.json
++++ b/package.json
+@@ -8,7 +8,7 @@
+     "build": "tsc -b && vite build",
+     "preview": "vite preview",
+     "typecheck": "tsc --noEmit",
+-    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_previsao_pix.mjs && node fixtures/testar_receita.mjs && node fixtures/testar_dia.mjs && node fixtures/testar_admin_secoes.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs && node fixtures/testar_texto_editorial.mjs && node fixtures/testar_reinicio.mjs && node fixtures/testar_sincronia_incremental.mjs && node fixtures/testar_simulado_resumao.mjs && node fixtures/testar_perfil_ficha.mjs && node fixtures/testar_conquistas.mjs && node fixtures/testar_revisao.mjs && node fixtures/testar_cronograma_sequencia_flashcards.mjs && node fixtures/testar_modelos_email.mjs && node fixtures/testar_pagina_vendas.mjs && node fixtures/testar_frases_inicio.mjs && node fixtures/testar_exportacao_painel.mjs && node fixtures/testar_rotulos_financeiro.mjs && node fixtures/testar_continuidade_flashcards.mjs && node fixtures/testar_sincronia_aparelhos.mjs && node fixtures/testar_adiantar_ponta_a_ponta.mjs && node fixtures/testar_imagens_inicio.mjs && node fixtures/testar_amostras_inicio.mjs && node fixtures/testar_orcamento_chunks.mjs && node fixtures/testar_pre_carga.mjs",
++    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_previsao_pix.mjs && node fixtures/testar_receita.mjs && node fixtures/testar_dia.mjs && node fixtures/testar_admin_secoes.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs && node fixtures/testar_texto_editorial.mjs && node fixtures/testar_reinicio.mjs && node fixtures/testar_sincronia_incremental.mjs && node fixtures/testar_simulado_resumao.mjs && node fixtures/testar_perfil_ficha.mjs && node fixtures/testar_conquistas.mjs && node fixtures/testar_revisao.mjs && node fixtures/testar_cronograma_sequencia_flashcards.mjs && node fixtures/testar_modelos_email.mjs && node fixtures/testar_pagina_vendas.mjs && node fixtures/testar_frases_inicio.mjs && node fixtures/testar_exportacao_painel.mjs && node fixtures/testar_rotulos_financeiro.mjs && node fixtures/testar_continuidade_flashcards.mjs && node fixtures/testar_sincronia_aparelhos.mjs && node fixtures/testar_adiantar_ponta_a_ponta.mjs && node fixtures/testar_teste_cronograma.mjs && node fixtures/testar_imagens_inicio.mjs && node fixtures/testar_amostras_inicio.mjs && node fixtures/testar_orcamento_chunks.mjs && node fixtures/testar_pre_carga.mjs",
+     "test:compra": "node fixtures/testar_compra_planos.mjs",
+     "validar": "python3 scripts/validar_acervo.py",
+     "funcoes:colar": "node scripts/juntar-funcoes.mjs",
+diff --git a/src/componentes/CaixasAssinante.tsx b/src/componentes/CaixasAssinante.tsx
+index a34c58e..ceaf5e4 100644
+--- a/src/componentes/CaixasAssinante.tsx
++++ b/src/componentes/CaixasAssinante.tsx
+@@ -97,7 +97,7 @@ function CaixaTemas() {
+ const COMO_FUNCIONA = [
+   { icone: 'calendario' as const, titulo: 'Você diz a data e o seu tempo', texto: 'A data da prova, quanto tempo tem por dia, as folgas e os dias de plantão.' },
+   { icone: 'rota' as const, titulo: 'Ele monta o caminho', texto: 'Três passadas, a primeira pelo que mais cai em todas as áreas, com a lista de cada dia e o tempo de cada parte.' },
+-  { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe no máximo 25%; adiantou, alivia. Mini-simulado a cada duas semanas e reta final com revisão forte e modo prova.' },
++  { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe no máximo 25%; adiantou, alivia. Teste do cronograma a cada duas semanas e reta final com revisão forte e modo prova.' },
+ ]
+ 
+ /** Trilha da jornada: as semanas do cronograma como casas de um mapa de RPG, até a prova. */
+diff --git a/src/conta/cronograma.ts b/src/conta/cronograma.ts
+index 6a7f711..c471f5c 100644
+--- a/src/conta/cronograma.ts
++++ b/src/conta/cronograma.ts
+@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
+ import { chamarRpc, ErroRpc } from '../servicos/supabase'
+ import { gravar, ler } from '../estado/armazenamento'
+ import { hojeBR, somarDias } from '../util/dia'
+-import { incluiSimulados, opcoesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
++import { incluiSimulados, opcoesDe, testesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo, type RegistroTeste } from '../dados/planoEstudo'
+ import { opcoesComMarcas, type MarcasDia } from './marcasDia'
+ 
+ /**
+@@ -182,9 +182,27 @@ export async function guardarAdiantamento(calculo: Parameters<typeof opcoesComAd
+   return salvarOpcoes((atual) => opcoesComAdiantamento(atual, calculo, pedido))
+ }
+ 
++/**
++ * Teste do cronograma feito: as opções com o resultado de hoje, ou null se nada muda.
++ * Um registro por dia (vale o de mais questões respondidas); guarda os 20 mais recentes.
++ */
++export function opcoesComTeste(plano: Pick<PlanoSalvo, 'opcoes'>, resultado: RegistroTeste): OpcoesPlano | null {
++  if (!/^\d{4}-\d{2}-\d{2}$/.test(resultado.em) || !(resultado.n > 0)) return null
++  const lista = testesDe(plano)
++  const atual = lista.find((t) => t.em === resultado.em)
++  if (atual && atual.n >= resultado.n) return null
++  const novo = { em: resultado.em, n: Math.round(resultado.n), certas: Math.max(0, Math.min(Math.round(resultado.certas), Math.round(resultado.n))) }
++  return { ...(plano.opcoes ?? {}), testes: [...lista.filter((t) => t.em !== resultado.em), novo].sort((a, b) => a.em.localeCompare(b.em)).slice(-20) }
++}
++
++/** Grava o resultado de um teste do cronograma sobre o plano atual do servidor. */
++export async function guardarTeste(resultado: RegistroTeste): Promise<PlanoSalvo | null> {
++  return salvarOpcoes((atual) => opcoesComTeste(atual, resultado))
++}
++
+ /**
+  * Grava no plano o que este aparelho marcou hoje (resumão, flashcards,
+- * mini-simulado) e o servidor ainda não tem; ver conta/marcasDia.ts. Relê o
++ * teste do cronograma) e o servidor ainda não tem; ver conta/marcasDia.ts. Relê o
+  * plano antes, então o que outro aparelho marcou no meio tempo não se perde.
+  */
+ export async function enviarMarcas(locais: MarcasDia): Promise<void> {
+diff --git a/src/conta/marcasDia.ts b/src/conta/marcasDia.ts
+index ddbba65..ad5face 100644
+--- a/src/conta/marcasDia.ts
++++ b/src/conta/marcasDia.ts
+@@ -3,7 +3,7 @@ import { hojeBR } from '../util/dia'
+ 
+ /**
+  * O que a pessoa fez hoje no cronograma fora das questões: resumão lido (por
+- * área), rodada de flashcards e mini-simulado.
++ * área), rodada de flashcards e teste do cronograma (`mini`).
+  *
+  * Até 15/10/2026 isso morava só no aparelho (`cronograma:dia` e
+  * `resumao:lido-hoje`): o computador mostrava "a fazer" o que já tinha sido
+diff --git a/src/dados/coresAreas.ts b/src/dados/coresAreas.ts
+index be7b3da..e673ce8 100644
+--- a/src/dados/coresAreas.ts
++++ b/src/dados/coresAreas.ts
+@@ -6,7 +6,7 @@
+ export const COR_AREA: Record<string, string> = {
+   trauma: '#c8513c',
+   pediatria: '#2e64a8',
+-  // Não usar dourado: ele é a cor dos marcos (reta final, prova, mini-simulado).
++  // Não usar dourado: ele é a cor dos marcos (reta final, prova, teste do cronograma).
+   mao: '#12a1a8',
+   'ombro-cotovelo': '#3a8fb7',
+   quadril: '#b5527a',
+diff --git a/src/dados/hubCronograma.ts b/src/dados/hubCronograma.ts
+index cac72dc..ba74027 100644
+--- a/src/dados/hubCronograma.ts
++++ b/src/dados/hubCronograma.ts
+@@ -1,6 +1,6 @@
+ import type { Indice } from './tipos'
+ import { diaCivil } from '../util/dia'
+-import { AREAS, focoPorQuestao, idsDoFoco, type AreaIncidencia, type Foco, type Nivel } from './incidencia'
++import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, type AreaIncidencia, type Foco, type Nivel } from './incidencia'
+ import { DIA_MINIMO, entraNoPlano, incluiSimulados, MINUTOS_POR_QUESTAO, TAMANHO_MINI, type CalculoPlano, type PlanoSalvo } from './planoEstudo'
+ 
+ /**
+@@ -349,25 +349,64 @@ export function desempenhoPorArea(calculo: CalculoPlano): Array<{ slug: string;
+ 
+ export type { Nivel }
+ 
+-// ─── Mini-simulado, tempo e prontidão (reforma de 14/10/2026) ──────────────
++// ─── Teste do cronograma (o antigo mini-simulado), tempo e prontidão ───────
+ 
+ /**
+- * Mini-simulado a cada duas semanas: 30 questões já vistas, das áreas
+- * estudadas, misturadas. Primeiro as erradas e as de dúvida ou chute, depois
+- * as acertadas há mais tempo; nunca a mesma questão respondida nos últimos 3 dias.
++ * Teste do cronograma (16/10/2026): 30 questões já vistas, cronometradas, com a mistura
++ * de áreas da prova: cada área entra na proporção do quanto cai (pesoIncidenciaDoTema),
++ * entre as áreas que a pessoa já estudou. Dentro de cada área, primeiro as erradas e as de
++ * dúvida ou chute, depois as dos assuntos que mais caem, acertadas há mais tempo; nada
++ * respondido nos últimos 3 dias (se não der 30 sem elas, elas voltam). No começo do plano,
++ * com menos de 30 vistas, o resto vem das inéditas dos assuntos que mais caem: o teste
++ * nunca sai vazio (antes, o botão não fazia nada).
+  */
+ export function idsMiniSimulado(indice: Indice, respondidas: Respondidas, n = TAMANHO_MINI, agora = Date.now()): string[] {
+   const focos = focoPorQuestao(indice)
+   const recente = agora - 3 * DIA
+-  const vistas = indice.questoes.filter((q) => !q.dup && q.an !== 1 && !q.ar && respondidas[q.id] && respondidas[q.id].c !== null && ultimaVez(respondidas[q.id]) < recente)
++  const elegivel = (q: Indice['questoes'][number]) => !q.dup && q.an !== 1 && !q.ar
++  const todasVistas = indice.questoes.filter((q) => elegivel(q) && respondidas[q.id] && respondidas[q.id].c !== null)
++  const antigas = todasVistas.filter((q) => ultimaVez(respondidas[q.id]) < recente)
++  const vistas = antigas.length >= n ? antigas : todasVistas
+   const nota = (id: string) => {
+     const r = respondidas[id]
+     return (r.c === false ? 30 : r.confianca && r.confianca !== 'seguro' ? 20 : 0) + (focos.get(id)?.nivel ?? 0) * 2 - ultimaVez(r) / (30 * DIA)
+   }
+-  const escolhidas = vistas.map((q) => q.id).sort((a, b) => nota(b) - nota(a)).slice(0, n)
++  const slugDe = (q: Indice['questoes'][number]) => indice.temas[q.t]?.slug ?? String(q.t)
++  const porArea = new Map<string, string[]>()
++  for (const q of vistas) { const l = porArea.get(slugDe(q)) ?? []; l.push(q.id); porArea.set(slugDe(q), l) }
++  for (const l of porArea.values()) l.sort((a, b) => nota(b) - nota(a))
++  const escolhidas = cotasPorIncidencia(porArea, n)
++  if (escolhidas.length < n) {
++    const usadas = new Set(escolhidas)
++    const ineditas = indice.questoes.filter((q) => elegivel(q) && !respondidas[q.id] && !usadas.has(q.id) && (focos.get(q.id)?.nivel ?? 0) >= 4)
++    const porAreaNovas = new Map<string, string[]>()
++    for (const q of ineditas) { const l = porAreaNovas.get(slugDe(q)) ?? []; l.push(q.id); porAreaNovas.set(slugDe(q), l) }
++    for (const l of porAreaNovas.values()) l.sort((a, b) => hash(a) - hash(b))
++    escolhidas.push(...cotasPorIncidencia(porAreaNovas, n - escolhidas.length))
++  }
+   // Embaralha de forma estável para não agrupar por área.
+   return escolhidas.sort((a, b) => hash(a) - hash(b))
+ }
++
++/** Divide n vagas entre as áreas na proporção da incidência, sem passar do que cada uma tem; a sobra vai para as outras. */
++export function cotasPorIncidencia(porArea: Map<string, string[]>, n: number): string[] {
++  const areas = [...porArea].filter(([, l]) => l.length).map(([slug, l]) => ({ slug, l, peso: pesoIncidenciaDoTema(slug), cota: 0 }))
++  let vagas = Math.min(n, areas.reduce((s, a) => s + a.l.length, 0))
++  while (vagas > 0) {
++    const abertas = areas.filter((a) => a.cota < a.l.length)
++    const soma = abertas.reduce((s, a) => s + a.peso, 0)
++    if (!abertas.length || !soma) break
++    // Maiores restos: cada área recebe a parte inteira e as frações decidem quem leva o resto.
++    const partes = abertas.map((a) => ({ a, ideal: (vagas * a.peso) / soma }))
++    let dadas = 0
++    for (const p of partes) { const k = Math.min(Math.floor(p.ideal), p.a.l.length - p.a.cota); p.a.cota += k; dadas += k }
++    const restos = partes.filter((p) => p.a.cota < p.a.l.length).sort((x, y) => (y.ideal % 1) - (x.ideal % 1) || y.a.peso - x.a.peso)
++    for (const p of restos) { if (dadas >= vagas) break; p.a.cota++; dadas++ }
++    if (!dadas) break
++    vagas -= dadas
++  }
++  return areas.flatMap((a) => a.l.slice(0, a.cota))
++}
+ const hash = (id: string) => { let h = 2166136261; for (let i = 0; i < id.length; i++) { h ^= id.charCodeAt(i); h = Math.imul(h, 16777619) } return h >>> 0 }
+ 
+ /** Minutos por questão da própria pessoa, pelas sessões já feitas (sem os simulados cronometrados). */
+diff --git a/src/dados/planoEstudo.ts b/src/dados/planoEstudo.ts
+index 4e128a3..a9c5026 100644
+--- a/src/dados/planoEstudo.ts
++++ b/src/dados/planoEstudo.ts
+@@ -60,26 +60,48 @@ export interface OpcoesPlano {
+   adiantados?: RegistroAdiantado[]
+   /** O que foi feito hoje fora das questões, em qualquer aparelho (ver conta/marcasDia.ts). */
+   marcasDia?: { em: string; resumao?: string[]; flashcards?: boolean; mini?: boolean }
++  /**
++   * Testes do cronograma feitos (16/10/2026): o dia ("AAAA-MM-DD", São Paulo), quantas
++   * questões foram respondidas e quantas certas. Ausente em planos antigos.
++   */
++  testes?: RegistroTeste[]
+ }
+ 
+ export interface RegistroAdiantado { em: string; meta: number; pedido?: number }
++export interface RegistroTeste { em: string; n: number; certas: number }
+ 
+ /** Dia mínimo: mantém a sequência e é a meta da semana difícil. */
+ export const DIA_MINIMO = 10
+ export const QTD_LEVE_PADRAO = 15
+ /** Atrasou: a meta de um dia normal sobe no máximo 25% sobre a planejada. */
+ export const TETO_ATRASO = 1.25
++/**
++ * Teto absoluto da meta de um dia normal (auditoria de 16/10/2026): com a prova perto demais
++ * (8 dias, plano criado hoje), a conta pedia o plano inteiro num dia só. Acima disso, o que não
++ * couber sai do fim da fila, a parte de prioridade mais baixa, como no teto do atraso.
++ */
++export const TETO_DIA = 150
+ /** Fatia de cada dia que vem da próxima área da fila. */
+ export const MISTURA = 0.3
+ /** Tamanho de um bloco de área, em dias de estudo. */
+ export const DIAS_BLOCO = 3
+-/** Mini-simulado: a cada 14 dias, com 30 questões cronometradas do que já foi visto. */
++/**
++ * Teste do cronograma (o antigo mini-simulado; no código continua `mini`): 30 questões
++ * cronometradas do que já foi visto, a cada 14 dias desde a criação e, nas 4 semanas antes
++ * da reta final, toda semana. Na revisão forte há mais um, no primeiro dia de estudo dela.
++ */
+ export const INTERVALO_MINI = 14
++export const INTERVALO_MINI_FINAL = 7
++export const SEMANAS_TESTE_SEMANAL = 4
+ export const TAMANHO_MINI = 30
++/** Nome do teste em todo lugar do cronograma (não confundir com o Simulado Nacional nem com os OrtoQuestões Simulados). */
++export const NOME_TESTE = 'Teste do cronograma'
++/** Um teste que ficou para trás continua oferecido por até tantos dias. */
++export const DIAS_TESTE_PENDENTE = 7
+ /** Minutos por questão quando ainda não há histórico. */
+ export const MINUTOS_POR_QUESTAO = 1.5
+ 
+-export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia'>> => ({
++export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'testes'>> => ({
+   diasLeves: plano?.opcoes?.diasLeves ?? [],
+   qtdLeve: Math.max(5, Math.min(40, plano?.opcoes?.qtdLeve ?? QTD_LEVE_PADRAO)),
+   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],
+@@ -88,6 +110,12 @@ export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined):
+   adiantados: (plano?.opcoes?.adiantados ?? []).filter((r) => r && /^\d{4}-\d{2}-\d{2}$/.test(r.em) && Number.isFinite(r.meta)),
+ })
+ 
++/** Os testes do cronograma já feitos, válidos e em ordem (planos antigos não têm). */
++export const testesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): RegistroTeste[] =>
++  (Array.isArray(plano?.opcoes?.testes) ? plano!.opcoes!.testes! : [])
++    .filter((t) => t && /^\d{4}-\d{2}-\d{2}$/.test(t.em) && Number.isFinite(t.n) && Number.isFinite(t.certas) && t.n > 0)
++    .sort((a, b) => a.em.localeCompare(b.em))
++
+ /** "AAAA-MM-DD" de uma data local. */
+ export const chaveData = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+ 
+@@ -198,9 +226,15 @@ export interface CalculoPlano {
+   provaPassou: boolean
+   /** Meta de um dia de estudo normal (a de hoje pode ser leve, difícil ou de mini-simulado). */
+   metaDiaNormal: number
+-  /** Tipo de hoje e se hoje é dia de mini-simulado. */
++  /** Tipo de hoje e se hoje é dia de mini-simulado (teste do cronograma num dia de conteúdo). */
+   tipoHoje: TipoDia
+   miniHoje: boolean
++  /**
++   * Testes do cronograma: todas as datas (da criação à revisão forte), se hoje é dia de teste
++   * (inclusive o da revisão forte), se o de hoje já foi feito, o último que ficou para trás
++   * (até DIAS_TESTE_PENDENTE dias) e os resultados guardados no plano.
++   */
++  testes: { datas: Date[]; hoje: boolean; feitoHoje: boolean; pendente: Date | null; proximo: Date | null; feitos: RegistroTeste[] }
+   /** Os dias de estudo de hoje até a reta final, um a um. */
+   dias: DiaPlano[]
+   /** Próximo dia com tarefa (depois de hoje). */
+@@ -212,7 +246,7 @@ export interface CalculoPlano {
+   semanaNumero: number
+   semanasTotal: number
+   /** Projeção no ritmo do plano: % do alvo, % do que mais cai e quando o que mais cai termina. */
+-  projecao: { alvoPct: number; maisCaiPct: number; fimMaisCai: Date | null; cortadas: number; tetoAtivo: boolean }
++  projecao: { alvoPct: number; maisCaiPct: number; fimMaisCai: Date | null; cortadas: number; tetoAtivo: boolean; /** O teto que agiu foi o absoluto (TETO_DIA), não o do atraso. */ tetoDia: boolean }
+ }
+ 
+ export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
+@@ -291,20 +325,14 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   const tipoDe = (d: Date): TipoDia => plano.folgas.includes(d.getDay()) ? 'folga' : semanasDificeis.has(chaveSegunda(d)) ? 'dificil' : opcoes.diasLeves.includes(d.getDay()) ? 'leve' : 'estudo'
+   const diasDeEstudoCriacao: Date[] = []
+   for (let d = criado; d < fimEstudo && diasDeEstudoCriacao.length < 800; d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) if (!plano.folgas.includes(d.getDay())) diasDeEstudoCriacao.push(d)
+-  // Mini-simulado: a cada INTERVALO_MINI dias corridos desde a criação, num dia de estudo normal.
+-  const ehMini = (d: Date) => {
+-    const desde = diasEntre(criado, d)
+-    if (desde < INTERVALO_MINI || hoje >= inicioRetaFinal) return false
+-    const marco = desde - (desde % INTERVALO_MINI)
+-    const alvoMini = new Date(criado.getFullYear(), criado.getMonth(), criado.getDate() + marco)
+-    // o primeiro dia de estudo normal a partir do marco
+-    for (let k = 0; k < 7; k++) { const x = new Date(alvoMini.getFullYear(), alvoMini.getMonth(), alvoMini.getDate() + k); if (tipoDe(x) === 'estudo') return x.getTime() === d.getTime() }
+-    return false
+-  }
++  // Teste do cronograma: a cada INTERVALO_MINI dias corridos desde a criação e, nas últimas
++  // SEMANAS_TESTE_SEMANAL semanas antes da reta final, toda semana; sempre num dia de estudo normal.
++  const datasTeste = agendaTestes(criado, inicioRetaFinal, tipoDe)
++  const ehMini = (d: Date) => hoje < inicioRetaFinal && datasTeste.has(d.getTime())
+   const calendario: Array<{ data: Date; tipo: TipoDia; mini: boolean }> = []
+   for (let d = hoje; d < fimEstudo && calendario.length < 800; d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) {
+     const tipo = tipoDe(d)
+-    calendario.push({ data: d, tipo, mini: tipo === 'estudo' && ehMini(d) })
++    calendario.push({ data: d, tipo, mini: tipo !== 'folga' && ehMini(d) })
+   }
+   // Meta de um dia normal: o que falta, menos o que os dias leves e difíceis levam, dividido pelos dias normais (mini vale meio).
+   let fixos = 0, pesoNormal = 0
+@@ -329,8 +357,9 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   // A meta normal; `devolver` são questões que dias de hoje em diante já não pedem (foram adiantadas antes de hoje).
+   const normalCom = (devolver: number) => {
+     const precisa = pesoNormal > 0 ? Math.ceil(Math.max(0, restante + feitasHoje - fixos + devolver) / pesoNormal) : Math.max(0, restante + feitasHoje)
+-    const teto = precisa > Math.ceil(metaPlanejada * TETO_ATRASO)
+-    return { normal: teto ? Math.ceil(metaPlanejada * TETO_ATRASO) : precisa, teto }
++    const limite = Math.min(TETO_DIA, Math.ceil(metaPlanejada * TETO_ATRASO))
++    const teto = precisa > limite
++    return { normal: teto ? limite : precisa, teto, tetoDia: teto && limite === TETO_DIA }
+   }
+   const metaDoTipoCom = (normal: number) => (tipo: TipoDia, mini: boolean) => tipo === 'folga' ? 0 : tipo === 'leve' ? Math.min(opcoes.qtdLeve, normal || opcoes.qtdLeve) : tipo === 'dificil' ? Math.min(DIA_MINIMO, normal || DIA_MINIMO) : mini ? Math.ceil(normal / 2) : normal
+   // Adiantar: o que a pessoa fez além da meta num dia sai dos dias seguintes, a começar pelo próximo
+@@ -362,11 +391,28 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   const baseDoDia = (normal: number) => { const m = metaDoTipoCom(normal); return (d: Date) => { const tipo = tipoDe(d); return tipo === 'estudo' ? m(tipo, ehMini(d)) : m(tipo, false) } }
+   const devolvido = (mapa: Map<number, number>) => [...mapa].reduce((s2, [t, n]) => s2 + (t >= hoje.getTime() ? n : 0), 0)
+   const passo1 = alocar(baseDoDia(normalCom(0).normal), 0)
+-  const { normal: metaDiaNormal, teto: tetoAtivo } = normalCom(devolvido(passo1))
++  const { normal: metaDiaNormal, teto: tetoAtivo, tetoDia } = normalCom(devolvido(passo1))
+   const metaDoTipo = metaDoTipoCom(metaDiaNormal)
+   const anteriores = alocar(baseDoDia(metaDiaNormal), 0)
+   const tipoHoje = calendario[0]?.tipo ?? tipoDe(hoje)
+   const miniHoje = !!calendario[0]?.mini
++  // Teste da revisão forte: o primeiro dia de estudo dela (só quando a reta final tem duas semanas).
++  let testeRetaFinal: Date | null = null
++  if (diasFinais > DIAS_MODO_PROVA) for (let d = inicioRetaFinal; d < inicioModoProva; d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) if (!plano.folgas.includes(d.getDay())) { testeRetaFinal = d; break }
++  const todasDatasTeste = [...[...datasTeste].map((t) => new Date(t)), ...(testeRetaFinal ? [testeRetaFinal] : [])]
++  const feitosTeste = testesDe(plano)
++  const chaveHoje = chaveData(hoje)
++  const testeHoje = miniHoje || (!!testeRetaFinal && testeRetaFinal.getTime() === hoje.getTime())
++  // O último teste que passou sem ser feito (nada feito desde a data dele) continua oferecido por uma semana.
++  // (diasEntre, e não a diferença em ms: num aparelho com horário de verão a semana tem 7 dias ± 1 hora.)
++  const ultimoTeste = todasDatasTeste.filter((d) => d < hoje && diasEntre(d, hoje) <= DIAS_TESTE_PENDENTE).pop() ?? null
++  const testes = {
++    datas: todasDatasTeste, hoje: testeHoje,
++    feitoHoje: feitosTeste.some((t) => t.em === chaveHoje),
++    pendente: !testeHoje && ultimoTeste && hoje < prova && !feitosTeste.some((t) => t.em >= chaveData(ultimoTeste)) ? ultimoTeste : null,
++    proximo: todasDatasTeste.find((d) => d > hoje) ?? null,
++    feitos: feitosTeste,
++  }
+   const metaHojeSemAdiantar = hoje >= inicioRetaFinal ? 0 : Math.min(restante + feitasHoje, metaDoTipo(tipoHoje, miniHoje))
+   const adiantadoHoje = Math.min(metaHojeSemAdiantar, anteriores.get(hoje.getTime()) ?? 0)
+   const metaDiaria = metaHojeSemAdiantar - adiantadoHoje
+@@ -561,7 +607,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   const projecao = {
+     alvoPct: alvo ? Math.min(100, Math.round(((feitas - feitasHoje + agendadas) / alvo) * 100)) : 100,
+     maisCaiPct: maisCai.length ? Math.min(100, Math.round(((maisCaiFeitas + maisCaiAgendadas) / maisCai.length) * 100)) : 100,
+-    fimMaisCai, cortadas, tetoAtivo,
++    fimMaisCai, cortadas, tetoAtivo, tetoDia,
+   }
+   const semanaNumero = Math.max(1, Math.floor(diasEntre(criado, hoje) / 7) + 1)
+   const semanasTotal = Math.max(semanaNumero, Math.ceil(diasEntre(criado, prova) / 7))
+@@ -576,12 +622,52 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+     esperadoAteHoje, ritmo, temas, semanas, hoje: hojeTarefa,
+     naRetaFinal: hoje >= inicioRetaFinal && hoje < prova,
+     provaPassou: hoje >= prova,
+-    metaDiaNormal, tipoHoje, miniHoje, dias, amanha, passadaAtual, inicioPassada, semanaNumero, semanasTotal, projecao,
++    metaDiaNormal, tipoHoje, miniHoje, testes, dias, amanha, passadaAtual, inicioPassada, semanaNumero, semanasTotal, projecao,
+   }
+ }
+ 
+ const unicos = (lista: string[]) => [...new Set(lista)]
+ 
++/**
++ * As datas dos testes do cronograma (meia-noite local, em ms), da criação até a reta final:
++ * a cada INTERVALO_MINI dias desde a criação enquanto faltam mais de SEMANAS_TESTE_SEMANAL
++ * semanas para a reta final; depois, um por semana, contado para trás a partir dela. Cada
++ * marco cai no primeiro dia de estudo normal (sem folga, dia leve ou semana difícil) da semana dele;
++ * se a semana não tiver nenhum, no primeiro dia que não é folga.
++ */
++export function agendaTestes(criado: Date, inicioRetaFinal: Date, tipoDe: (d: Date) => TipoDia): Set<number> {
++  const datas = new Set<number>()
++  const somar = (d: Date, n: number) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n)
++  // O primeiro dia de estudo normal da semana do marco; numa semana sem nenhum (só dias leves,
++  // semana difícil), o primeiro dia que não é folga: o teste não some por causa da rotina.
++  const primeiroNormal = (alvo: Date) => {
++    let reserva: Date | null = null
++    for (let k = 0; k < 7; k++) {
++      const x = somar(alvo, k)
++      if (x >= inicioRetaFinal) break
++      const tipo = tipoDe(x)
++      if (tipo === 'estudo') return x
++      if (tipo !== 'folga' && !reserva) reserva = x
++    }
++    return reserva
++  }
++  const inicioSemanal = somar(inicioRetaFinal, -SEMANAS_TESTE_SEMANAL * INTERVALO_MINI_FINAL)
++  for (let marco = INTERVALO_MINI; marco < 800; marco += INTERVALO_MINI) {
++    const alvo = somar(criado, marco)
++    // Um teste quinzenal colado no primeiro semanal (menos de uma semana antes) sai.
++    if (diasEntre(alvo, inicioSemanal) < INTERVALO_MINI_FINAL) break
++    const x = primeiroNormal(alvo)
++    if (x) datas.add(x.getTime())
++  }
++  for (let k = SEMANAS_TESTE_SEMANAL; k >= 1; k--) {
++    const alvo = somar(inicioRetaFinal, -k * INTERVALO_MINI_FINAL)
++    if (diasEntre(criado, alvo) < INTERVALO_MINI_FINAL) continue
++    const x = primeiroNormal(alvo)
++    if (x) datas.add(x.getTime())
++  }
++  return datas
++}
++
+ /** Até quantos dias para trás um dia sem registro de adiantamento é refeito. */
+ export const DIAS_INFERIR_ADIANTADO = 7
+ const cacheMetaDoDia = new WeakMap<object, Map<string, number>>()
+diff --git a/src/estilos/paginas/CronogramaCalendario.css b/src/estilos/paginas/CronogramaCalendario.css
+index 4e59aa3..34b5e54 100644
+--- a/src/estilos/paginas/CronogramaCalendario.css
++++ b/src/estilos/paginas/CronogramaCalendario.css
+@@ -63,8 +63,9 @@
+ .cc-dia--feito > button { background: color-mix(in srgb, var(--cp-feito) 7%, var(--superficie)); }
+ .cc-dia--feito .cc-dia__rodape em, .cc-dia--adiantado .cc-dia__rodape em, .cc-dia--com-adiantado .cc-dia__rodape em { color: var(--cp-feito); }
+ .cc-dia--feito .cc-dia__faixa, .cc-dia--parcial .cc-dia__faixa, .cc-dia--adiantado .cc-dia__faixa { opacity: 0.55; }
+-.cc-dia--parcial .cc-dia__rodape em, .cc-dia--atrasado .cc-dia__rodape em { color: var(--cp-atrasado); }
+-.cc-dia--atrasado > button { background: var(--superficie-2); }
++.cc-dia--parcial .cc-dia__rodape em, .cc-dia--perdido .cc-dia__rodape em { color: var(--cp-atrasado); }
++.cc-dia--parcial > button { background: color-mix(in srgb, var(--cp-atrasado) 5%, var(--superficie)); }
++.cc-dia--perdido > button { background: var(--superficie-2); border-color: color-mix(in srgb, var(--cp-atrasado) 45%, var(--traco)); }
+ .cc-dia--hoje > button { background: var(--cp-agora-veu); border-color: var(--cp-agora); box-shadow: inset 0 0 0 1px var(--cp-agora); }
+ .cc-dia--hoje .cc-dia__rodape em { color: var(--cp-agora); }
+ .cc-dia--folga > button { background: repeating-linear-gradient(135deg, var(--superficie-2) 0 6px, color-mix(in srgb, var(--traco) 70%, transparent) 6px 12px); }
+@@ -77,12 +78,67 @@
+ .cc-dia--fora > button { opacity: 0.35; background: transparent; }
+ .cc-dia--selecionado > button, .cc-dia--selecionado > button:hover:not(:disabled) { box-shadow: 0 0 0 2px var(--fundo), 0 0 0 4px var(--verdete); }
+ 
+-.cc-legenda { margin-top: 0.35rem; }
+ .cc-legenda__feito { background: var(--cp-feito); }
+ .cc-legenda__hoje { background: var(--cp-agora-veu); border: 2px solid var(--cp-agora); }
+ .cc-legenda__marco { border: 2px dashed var(--cp-marco); }
+ .cc-legenda__reta { background: color-mix(in srgb, #f4cf7c 45%, var(--superficie)); }
+ 
++/* Dia leve, semana difícil, adiantado, teste do cronograma e a linha de "esta semana". */
++.cc-dia__tipo { display: grid; place-items: center; width: 1.05rem; height: 1.05rem; margin-left: auto; border-radius: 4px; background: var(--verdete-veu); color: var(--verdete); font-size: 0.6rem; font-weight: 900; line-height: 1; }
++.cc-dia__tipo--dificil { background: color-mix(in srgb, var(--cp-atrasado) 16%, var(--superficie)); color: var(--cp-atrasado); }
++.cc-dia__hoje + .cc-dia__tipo, .cc-dia__selo + .cc-dia__tipo, .cc-dia__tipo + .cc-dia__selo { margin-left: 0.15rem; }
++.cc-dia--leve > button { background-image: radial-gradient(color-mix(in srgb, var(--verdete) 22%, transparent) 1px, transparent 1.2px); background-size: 7px 7px; }
++.cc-dia--dificil > button { background: color-mix(in srgb, var(--cp-atrasado) 5%, var(--superficie)); }
++.cc-dia--adiantado > button { background: color-mix(in srgb, var(--cp-feito) 10%, var(--superficie)); border-style: dashed; border-color: color-mix(in srgb, var(--cp-feito) 50%, var(--traco)); }
++.cc-dia__selo--teste-feito { background: var(--cp-feito); color: #fff; }
++.cc-dia__selo--teste-atrasado { background: var(--cp-atrasado); color: #fff; }
++.cc-dia--semana:not(.cc-dia--hoje) > button { box-shadow: inset 0 3px 0 color-mix(in srgb, var(--cp-agora) 55%, transparent); }
++
++/* Legenda: as áreas do mês e as marcas dos dias. */
++.cc-legenda { display: grid; gap: 0.3rem; margin-top: 0.35rem; }
++.cc-legenda .cp-legenda { margin: 0; }
++.cc-legenda__marcas { color: var(--texto-2); }
++.cc-legenda__parcial { background: color-mix(in srgb, var(--cp-atrasado) 25%, var(--superficie)); border: 1px solid var(--cp-atrasado); }
++.cc-legenda__perdido { background: var(--superficie-2); border: 2px solid var(--cp-atrasado); }
++.cc-legenda__adiantado { background: color-mix(in srgb, var(--cp-feito) 18%, var(--superficie)); border: 1px dashed var(--cp-feito); }
++.cc-legenda__prova { background: linear-gradient(140deg, #f4cf7c, #c9952f); border: 1px dashed #8a6416; }
++.cc-legenda i.cc-legenda__leve, .cc-legenda i.cc-legenda__dificil, .cc-legenda i.cc-legenda__teste { display: inline-grid; place-items: center; font-style: normal; font-size: 0.55rem; font-weight: 900; line-height: 1; }
++.cc-legenda i.cc-legenda__leve { background: var(--verdete-veu); color: var(--verdete); }
++.cc-legenda i.cc-legenda__dificil { background: color-mix(in srgb, var(--cp-atrasado) 16%, var(--superficie)); color: var(--cp-atrasado); }
++.cc-legenda i.cc-legenda__teste { background: var(--ouro-veu); color: var(--ouro-texto); border: 1px dashed var(--cp-marco); }
++
++/* ── Embutido na página (redesenho de 16/10/2026): o calendário em evidência ── */
++.cc-embutido { display: grid; gap: 0.5rem; }
++.cc-embutido__caixa { display: grid; gap: 0; border-radius: var(--raio-cartao); background: var(--superficie); border: 1px solid var(--traco); box-shadow: var(--sombra-media); overflow: hidden; }
++.cc-topo--embutido { align-items: center; padding: 0.8rem 1rem 0.7rem; }
++.cc-topo--embutido h2 { margin: 0; font-size: clamp(1.25rem, 2.4vw, 1.5rem); }
++.cc-corpo--embutido { grid-template-columns: minmax(0, 1fr); overflow: visible; padding: 0.8rem 0.8rem 0.9rem; gap: 0.9rem; }
++.cc-corpo--embutido .cc-dia > button, .cc-corpo--embutido .cc-dia--vazio { min-height: 5.6rem; }
++.cc-corpo--embutido .cc-detalhe { position: static; background: var(--fundo); }
++.cc-expandir { justify-self: center; margin: 0 0 0.9rem; }
++.cc-topo--embutido { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
++/* Na coluna da página a célula é estreita: mostra o número, a cor das áreas (pontos), as questões e
++   as marcas; os nomes das áreas ficam no detalhe e na tela cheia. */
++.cc-embutido .cc-semana li { padding: 0; text-align: center; }
++.cc-embutido .cc-semana, .cc-embutido .cc-grade { gap: 5px; }
++.cc-embutido .cc-dia > button { align-items: center; gap: 0.25rem; padding: 0.4rem 0.15rem 0.6rem; text-align: center; }
++.cc-embutido .cc-dia__topo { justify-content: center; }
++.cc-embutido .cc-dia__hoje { display: none; }
++.cc-embutido .cc-dia__selo { position: absolute; top: 4px; right: 4px; margin: 0; }
++.cc-embutido .cc-dia__selo + .cc-dia__selo { top: auto; bottom: 9px; }
++.cc-embutido .cc-dia__tipo { position: absolute; top: 4px; left: 4px; margin: 0; }
++.cc-embutido .cc-dia__areas { display: flex; justify-content: center; gap: 3px; }
++.cc-embutido .cc-dia__area { font-size: 0; gap: 0; }
++.cc-embutido .cc-dia__area i { width: 0.55rem; height: 0.55rem; border-radius: 50%; }
++.cc-embutido .cc-dia__area--mais, .cc-embutido .cc-dia__marco { display: none; }
++.cc-embutido .cc-dia__rodape { justify-content: center; }
++.cc-embutido .cc-dia__rodape em > span { display: none; }
++.cc-embutido .cc-dia__rodape em::after { content: attr(data-curto); font-size: 0.78rem; }
++.cc-embutido .cc-dia--prova .cc-dia__rodape em::after { font-size: 0.66rem; }
++.cc-embutido .cc-dia__rodape s { font-size: 0.62rem; }
++.cc-embutido .cc-nav__botao, .cc-embutido .cc-nav__hoje { min-height: 40px; }
++.cc-embutido .cc-nav__botao { width: 40px; height: 40px; }
++
+ /* ── Detalhe do dia ── */
+ .cc-detalhe { position: sticky; top: 0; display: grid; gap: 0.6rem; padding: 1rem 1.05rem 1.1rem; border-radius: 16px; background: var(--superficie); border: 1px solid var(--traco); border-top: 5px solid var(--cor-area, var(--verdete)); animation: cc-detalhe 0.22s ease-out; scroll-margin-top: 0.5rem; }
+ @keyframes cc-detalhe { from { opacity: 0.4; transform: translateY(6px); } }
+@@ -164,6 +220,12 @@
+   .cc-dia--prova .cc-dia__rodape em::after { font-size: 0.58rem; }
+   .cc-dia__faixa { height: 4px; }
+   .cc-legenda { font-size: 0.68rem; }
++  .cc-dia__tipo { position: absolute; top: 3px; left: 3px; width: 0.8rem; height: 0.8rem; margin: 0; font-size: 0.5rem; border-radius: 3px; }
++  .cc-corpo--embutido { padding: 0.6rem 0.45rem 0.8rem; }
++  .cc-corpo--embutido .cc-dia > button, .cc-corpo--embutido .cc-dia--vazio { min-height: 4.4rem; }
++  .cc-topo--embutido { display: grid; grid-template-columns: minmax(0, 1fr) auto; padding: 0.7rem 0.75rem 0.6rem; }
++  .cc-topo--embutido .cc-topo__titulo { display: block; }
++  .cc-topo--embutido .cc-nav__hoje { padding: 0 0.6rem; }
+ }
+ 
+ @media (prefers-reduced-motion: reduce) {
+@@ -171,3 +233,5 @@
+   .cc-dia > button, .cc-abrir, .cc-nav__botao, .cc-fechar { transition: none; }
+   .cc-dia > button:hover:not(:disabled) { transform: none; }
+ }
++.cc-legenda__numero { font-size: 0.72rem; color: var(--texto); }
++.cc-dia--e-hoje > button { border: 2px solid var(--cp-agora); }
+diff --git a/src/estilos/paginas/CronogramaPainel.css b/src/estilos/paginas/CronogramaPainel.css
+index a9bd4ac..bdec40f 100644
+--- a/src/estilos/paginas/CronogramaPainel.css
++++ b/src/estilos/paginas/CronogramaPainel.css
+@@ -293,3 +293,30 @@
+ 
+ /* Vitrine para quem não assina (14/10/2026). */
+ .cp-vitrine-lista { margin: 0.4rem 0 0; padding-left: 1.1rem; text-align: left; font-size: var(--corpo-menor); line-height: 1.5; }
++
++/* ── Teste do cronograma (16/10/2026): marco dourado tracejado, com o resultado ao lado do anterior ── */
++.cp-teste { display: grid; gap: 0.7rem; padding: 0.95rem 1.05rem; border-radius: var(--raio-cartao); background: color-mix(in srgb, var(--ouro-veu) 70%, var(--superficie)); border: 2px dashed var(--cp-marco); }
++.cp-teste--pendente { border-color: var(--cp-atrasado); background: color-mix(in srgb, var(--cp-atrasado) 6%, var(--superficie)); }
++.cp-teste--feito { border-style: solid; border-color: color-mix(in srgb, var(--cp-feito) 55%, var(--traco)); background: color-mix(in srgb, var(--cp-feito) 6%, var(--superficie)); }
++.cp-teste__cabeca { display: flex; gap: 0.7rem; align-items: flex-start; }
++.cp-teste__selo { display: grid; place-items: center; flex: none; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; }
++.cp-teste--pendente .cp-teste__selo { background: var(--cp-atrasado); color: #fff; }
++.cp-teste--feito .cp-teste__selo { background: var(--cp-feito); color: #fff; }
++.cp-teste__rotulo { margin: 0; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ouro-texto); }
++.cp-teste--pendente .cp-teste__rotulo { color: var(--cp-atrasado); }
++.cp-teste--feito .cp-teste__rotulo { color: var(--cp-feito); }
++.cp-teste h3 { margin: 0.1rem 0 0; font-size: 1.12rem; line-height: 1.2; }
++.cp-teste__sub { margin: 0.2rem 0 0; font-size: 0.84rem; line-height: 1.45; color: var(--texto-2); }
++.cp-teste__sub b { color: var(--texto); }
++.cp-teste__sobe { color: var(--cp-feito); font-weight: 750; }
++.cp-teste__desce { color: var(--cp-atrasado); font-weight: 750; }
++.cp-teste__nota { margin: 0; font-size: 0.78rem; line-height: 1.4; color: var(--texto-2); }
++.cp-teste__historico { display: flex; gap: 0.45rem; align-items: flex-end; margin: 0; padding: 0; list-style: none; overflow-x: auto; }
++.cp-teste__historico li { display: grid; justify-items: center; gap: 0.15rem; min-width: 2.9rem; }
++.cp-teste__barra { position: relative; display: block; width: 1.1rem; height: 2.6rem; border-radius: 4px; background: var(--superficie-2); overflow: hidden; }
++.cp-teste__barra span { position: absolute; left: 0; right: 0; bottom: 0; border-radius: inherit; background: color-mix(in srgb, var(--cp-marco) 80%, #c9952f); }
++.cp-teste__hoje .cp-teste__barra span { background: var(--cp-feito); }
++.cp-teste__historico b { font-size: 0.74rem; }
++.cp-teste__historico small { font-size: 0.64rem; color: var(--texto-2); }
++.cp-teste__hoje small { color: var(--cp-feito); font-weight: 800; }
++.cp-hoje-pilha { display: grid; gap: 1rem; }
+diff --git a/src/estilos/paginas/Revisao.css b/src/estilos/paginas/Revisao.css
+index 48284d8..7264566 100644
+--- a/src/estilos/paginas/Revisao.css
++++ b/src/estilos/paginas/Revisao.css
+@@ -273,3 +273,29 @@
+ @media (prefers-reduced-motion: reduce) { .rvx-recompensa__arte { animation: none; } .rvx-heroi .botao.rvx-comecar { transition: none; } }
+ .rvx-conquista__arte { flex: none; display: inline-flex; padding: 0.25rem; border-radius: 12px; background: var(--superficie); }
+ .rvx-conquista__arte--alvo img, .rvx-conquista__arte--alvo svg { filter: saturate(0.55); opacity: 0.85; }
++
++/* Calendário da revisão no estilo do calendário do cronograma (16/10/2026, CronogramaCalendario.css). */
++.rc-calendario { padding: 0; overflow: hidden; }
++.rc-calendario .cc-topo { background: var(--superficie); }
++.rc-corpo { grid-template-columns: minmax(0, 1fr) 20rem; overflow: visible; }
++.rc-calendario .cc-detalhe { position: static; background: var(--fundo); margin: 0; padding-top: 1rem; border-top: 5px solid var(--verdete); }
++.rc-calendario .cc-detalhe--hoje { border-color: var(--cp-agora); border-top-color: var(--cp-agora); }
++.rc-calendario .cc-dia > button, .rc-calendario .cc-dia--vazio { min-height: 5rem; }
++.rc-calendario .cc-dia__rodape em { font-size: 0.8rem; color: var(--texto); }
++.rc-calendario .cc-dia--feito .cc-dia__rodape em { color: var(--cp-feito); }
++.rc-calendario .cc-dia--livre .cc-dia__num { color: var(--texto-2); }
++.rc-calendario .rc-faixa { height: 6px; }
++.rc-nivel-1 .rc-faixa { background: color-mix(in srgb, var(--verdete) 30%, var(--superficie)); }
++.rc-nivel-2 .rc-faixa { background: color-mix(in srgb, var(--verdete) 55%, var(--superficie)); }
++.rc-nivel-3 .rc-faixa { background: color-mix(in srgb, var(--verdete) 80%, var(--superficie)); }
++.rc-nivel-4 .rc-faixa { background: var(--verdete); }
++.rc-calendario .cc-dia--futuro.rc-nivel-3 > button, .rc-calendario .cc-dia--futuro.rc-nivel-4 > button { background: color-mix(in srgb, var(--verdete) 8%, var(--superficie)); }
++.rc-legenda-carga i.rc-nivel-1 { background: color-mix(in srgb, var(--verdete) 30%, var(--superficie)); }
++.rc-legenda-carga i.rc-nivel-2 { background: color-mix(in srgb, var(--verdete) 55%, var(--superficie)); }
++.rc-legenda-carga i.rc-nivel-3 { background: color-mix(in srgb, var(--verdete) 80%, var(--superficie)); }
++.rc-legenda-carga i.rc-nivel-4 { background: var(--verdete); }
++.cp-legenda li.rc-legenda-carga { gap: 0.2rem; }
++.rc-acoes { display: grid; gap: 0.5rem; }
++.rc-calendario .cc-detalhe__item > i { background: var(--verdete); }
++@media (max-width: 52rem) { .rc-corpo { grid-template-columns: minmax(0, 1fr); } }
++@media (max-width: 40rem) { .rc-calendario .cc-dia > button, .rc-calendario .cc-dia--vazio { min-height: 3.8rem; } .rc-calendario .cc-dia__rodape em::after { font-size: 0.74rem; } }
+diff --git a/src/paginas/Assinatura.tsx b/src/paginas/Assinatura.tsx
+index 7247009..2344e88 100644
+--- a/src/paginas/Assinatura.tsx
++++ b/src/paginas/Assinatura.tsx
+@@ -346,7 +346,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
+           <details><summary>Paguei no Pix. Posso renovar antes de acabar sem perder dias?</summary><p>Pode. O Pix não renova sozinho, por isso mandamos um aviso por e-mail alguns dias antes do fim. A partir de 7 dias antes do término, esta página libera a renovação pelo Pix: os dias que faltam continuam valendo e o novo período começa no dia em que o atual termina. Nada se perde por pagar antes.</p></details>
+           <details><summary>Posso usar junto com o meu curso preparatório?</summary><p>Pode, e combina bem. O Orto Questões não é curso: é onde você treina com as questões das provas, comentadas, e segue um plano diário pelo que mais cai. Muita gente assiste às aulas de um lado e usa o cronograma para transformar o que estudou em questão feita, todo dia.</p></details>
+           <details><summary>Serve para o TEOT e para o TARO? E para outras provas?</summary><p>Sim. O acervo traz as provas oficiais já aplicadas do TEOT, do TARO, do R4 do ENARE e do TECOC, comentadas, e o cronograma pode ser montado para a data da sua prova. Para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril, há os {ROTULO_SIMULADOS}, escritos no padrão dessas bancas.</p></details>
+-          <details><summary>Como o cronograma é montado?</summary><p>Em quatro passos: a data da prova, quanto tempo você tem por dia, como é a sua semana (folgas e dias de plantão, que viram dias leves) e por onde começar. Um diagnóstico opcional de 30 questões mostra onde você está mais fraco. O plano passa três vezes pelo acervo: na 1ª passada, os assuntos de prioridade máxima de todas as áreas, pela contagem das provas oficiais; na 2ª, os de prioridade alta; na 3ª, o resto. Assim, se a rotina apertar, o que mais cai já foi visto. Cada área fica uns 3 dias em foco, com cerca de 30% de cada dia vindo de outra área para misturar, e entram {ROTULO_SIMULADOS} nas sessões. A cada duas semanas há um mini-simulado, e as duas últimas semanas são a reta final. Atrasou, a meta sobe no máximo 25%; numa semana difícil, dá para baixar para 10 questões por dia sem quebrar o plano.</p></details>
++          <details><summary>Como o cronograma é montado?</summary><p>Em quatro passos: a data da prova, quanto tempo você tem por dia, como é a sua semana (folgas e dias de plantão, que viram dias leves) e por onde começar. Um diagnóstico opcional de 30 questões mostra onde você está mais fraco. O plano passa três vezes pelo acervo: na 1ª passada, os assuntos de prioridade máxima de todas as áreas, pela contagem das provas oficiais; na 2ª, os de prioridade alta; na 3ª, o resto. Assim, se a rotina apertar, o que mais cai já foi visto. Cada área fica uns 3 dias em foco, com cerca de 30% de cada dia vindo de outra área para misturar, e entram {ROTULO_SIMULADOS} nas sessões. A cada duas semanas há um Teste do cronograma (30 questões cronometradas do que você já viu, toda semana no mês antes da reta final), e as duas últimas semanas são a reta final. Atrasou, a meta sobe no máximo 25%; numa semana difícil, dá para baixar para 10 questões por dia sem quebrar o plano.</p></details>
+           <details><summary>O que são os {ROTULO_SIMULADOS}?</summary><p>Questões inéditas, escritas pelo Orto Questões por engenharia reversa das provas: estudamos o estilo, o nível e o que a banca repete, e escrevemos questões novas no mesmo padrão a partir da bibliografia. Não são questões oficiais nem cópia de prova sigilosa; trazem aviso na tela e comentário completo com a citação do livro.</p></details>
+           <details><summary>Funciona no celular?</summary><p>Funciona no celular, no tablet e no computador, sem instalar nada, e você continua de onde parou. A conta fica aberta em um aparelho por vez; ao entrar em outro, o progresso vai junto.</p></details>
+           <details><summary>Como funciona o limite do plano gratuito?</summary><p>{fraseGratis('perguntaPlanos')} Comentários, revisões e desempenho continuam abertos.</p></details>
+@@ -491,7 +491,7 @@ function SecaoTempo() {
+ const PASSOS_CRONOGRAMA: Array<{ titulo: string; texto: string; itens: string[] }> = [
+   { titulo: 'Você conta a sua rotina', texto: 'A data da prova, quanto tempo tem por dia e como é a sua semana. Dia de plantão vira dia leve. Um diagnóstico opcional mostra por onde começar.', itens: ['Quatro perguntas, uma vez só', 'Muda quando a rotina mudar'] },
+   { titulo: 'Todo dia, a lista pronta', texto: 'O resumão do tema, as questões novas e as revisões, com o tempo de cada parte. O que mais cai vem primeiro, em todas as áreas, e as áreas se alternam para fixar.', itens: ['Hoje, amanhã e a semana na tela', 'Questões novas no padrão da banca'] },
+-  { titulo: 'O plano se ajusta sozinho', texto: 'Atrasou, a meta sobe no máximo 25%. Semana difícil, baixa para 10 questões por dia sem quebrar o plano. A cada duas semanas, um mini-simulado; nas duas últimas, a reta final.', itens: ['Áreas fracas ganham mais espaço', 'Reta final com resumão e modo prova'] },
++  { titulo: 'O plano se ajusta sozinho', texto: 'Atrasou, a meta sobe no máximo 25%. Semana difícil, baixa para 10 questões por dia sem quebrar o plano. A cada duas semanas, um Teste do cronograma; nas duas últimas, a reta final.', itens: ['Áreas fracas ganham mais espaço', 'Reta final com resumão e modo prova'] },
+ ]
+ 
+ function SecaoCronograma({ conta, assinante }: { conta: boolean; assinante: boolean }) {
+diff --git a/src/paginas/CronogramaCalendario.tsx b/src/paginas/CronogramaCalendario.tsx
+index e37a5e7..32b8f47 100644
+--- a/src/paginas/CronogramaCalendario.tsx
++++ b/src/paginas/CronogramaCalendario.tsx
+@@ -1,7 +1,7 @@
+ import { useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from 'react'
+ import { createPortal } from 'react-dom'
+ import type { Indice } from '../dados/tipos'
+-import { DIA_MINIMO, TAMANHO_MINI, ROTULO_PASSADA, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
++import { DIA_MINIMO, NOME_TESTE, TAMANHO_MINI, ROTULO_PASSADA, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo, type RegistroTeste } from '../dados/planoEstudo'
+ import { formatarTempo } from '../dados/hubCronograma'
+ import { corDaArea } from '../dados/coresAreas'
+ import { Icone } from '../componentes/Icone'
+@@ -9,13 +9,16 @@ import { chaveCivil, chaveDoDia, diaCivil } from '../util/dia'
+ import '../estilos/paginas/CronogramaCalendario.css'
+ 
+ /**
+- * Calendário do cronograma (pedido do Tales, 16/10/2026): o plano inteiro num mês de
+- * computador, de segunda a domingo, até a prova. Cada dia mostra a cor e o nome das
+- * áreas, quantas questões, a folga, o que já foi feito, hoje, os marcos (mini-simulado,
+- * passadas, reta final, prova). Tocar num dia abre o que estudar nele, com o botão de
+- * começar (hoje) ou de adiantar (os próximos dias, como no painel Adiantar).
+- * Os estados são os do resto do cronograma: feito (verde ✓), agora (dourado), a fazer,
+- * folga (hachurado), atrasado (laranja) e marco (dourado tracejado).
++ * Calendário do cronograma (pedido do Tales, 16/10/2026): o plano inteiro num mês, de segunda
++ * a domingo, até a prova. Desde o redesenho de 16/10 ele fica em evidência na própria página
++ * (modo "embutido", logo depois de "Amanhã") e abre em tela cheia pelo botão "Tela cheia" ou por
++ * `#/cronograma?calendario=1` (modo "janela").
++ *
++ * Cada dia mostra a cor e o nome das áreas, quantas questões e a sua marca: feito (verde ✓),
++ * parcial e perdido (laranja), hoje (dourado), folga (hachurado), dia leve, semana difícil,
++ * adiantado (verde), Teste do cronograma (★ dourado tracejado), início de passada, reta final
++ * (véu dourado) e a prova. Tocar num dia abre o que ele tem, com o botão de começar (hoje), de
++ * fazer o teste ou de adiantar (os próximos dias, como no painel Adiantar).
+  */
+ 
+ const DIA = 86_400_000
+@@ -25,6 +28,8 @@ const ADIANTAR_ATE = 3
+ const MINUTOS_RESUMAO = 4
+ 
+ type Fase = 'antes' | 'passado' | 'hoje' | 'conteudo' | 'revisao' | 'prova' | 'vespera' | 'dia-prova' | 'depois'
++/** A situação do teste do cronograma num dia que tem teste. */
++type SituacaoTeste = { feito: RegistroTeste | null; pendente: boolean; perdido: boolean } | null
+ interface DiaCalendario {
+   data: Date
+   chave: string
+@@ -36,12 +41,17 @@ interface DiaCalendario {
+   feitas: number
+   areasFeitas: Array<{ slug: string; nome: string; n: number }>
+   marcos: string[]
++  teste: SituacaoTeste
++  /** O dia está na semana de hoje (a linha "esta semana" do mês). */
++  semanaAtual: boolean
++  ehHoje: boolean
+ }
+ 
+ const mesDe = (d: Date) => new Date(d.getFullYear(), d.getMonth(), 1)
+ const nomeMes = (d: Date) => { const s = d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }); return s[0].toUpperCase() + s.slice(1) }
+ const dataLonga = (d: Date) => d.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
+-const faixa = (partes: Array<{ slug: string; n: number }>) => {
++const pct = (t: RegistroTeste) => Math.round((t.certas / Math.max(1, t.n)) * 100)
++export const faixaCalendario = (partes: Array<{ slug: string; n: number }>) => {
+   const total = partes.reduce((s, p) => s + p.n, 0)
+   if (!total) return 'transparent'
+   let acc = 0
+@@ -58,10 +68,14 @@ export interface AcoesCalendario {
+   pendente?: { feitas: number; total: number } | null
+   /** Pede para adiantar n questões (o mesmo do painel Adiantar). */
+   aoAdiantar?: (n: number) => void
++  /** Começa o Teste do cronograma (hoje ou o que ficou pendente). */
++  aoTeste?: () => void
++  /** O teste de hoje já foi feito neste aparelho (antes de o plano sincronizar). */
++  testeFeitoAqui?: boolean
+   salvando?: boolean
+ }
+ 
+-export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar }: {
++export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar, modo = 'janela', aoExpandir }: {
+   plano: PlanoSalvo
+   calculo: CalculoPlano
+   indice: Indice
+@@ -69,18 +83,25 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
+   minutos: number
+   revisoesHoje?: number
+   acoes: AcoesCalendario
+-  aoFechar: () => void
++  /** Só no modo janela. */
++  aoFechar?: () => void
++  /** "embutido": em evidência na página do cronograma; "janela": tela cheia por cima. */
++  modo?: 'janela' | 'embutido'
++  /** No modo embutido, abre a tela cheia. */
++  aoExpandir?: () => void
+ }) {
++  const janela = modo === 'janela'
+   const hoje = diaCivil()
+   const prova = new Date(calculo.vespera.getTime() + DIA)
+   const criado = diaCivil(Date.parse(plano.criado_em))
+   const primeiroMes = mesDe(criado < hoje ? criado : hoje)
+-  const ultimoMes = mesDe(prova)
++  const ultimoMes = mesDe(prova > hoje ? prova : hoje)
+   const [mes, definirMes] = useState(() => mesDe(hoje))
+   const [selecionado, definirSelecionado] = useState<string>(() => chaveCivil(hoje))
+   const [direcao, definirDirecao] = useState<'frente' | 'tras' | null>(null)
+   const fechar = useRef<HTMLButtonElement>(null)
+   const detalhe = useRef<HTMLElement>(null)
++  const fecharJanela = aoFechar ?? (() => undefined)
+ 
+   // O que foi feito em cada dia (todas as respostas, como na constância), por área.
+   const feitoPorDia = useMemo(() => {
+@@ -106,7 +127,11 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
+     for (const p of [2, 3] as Passada[]) { const d = calculo.inicioPassada[p]; if (d && d > hoje) m.set(chaveCivil(d), p) }
+     return m
+   }, [calculo]) // eslint-disable-line react-hooks/exhaustive-deps
++  // Os dias de teste do plano inteiro (passados e futuros, inclusive o da revisão forte).
++  const datasTeste = useMemo(() => new Set(calculo.testes.datas.map(chaveCivil)), [calculo])
+   const extra = plano.opcoes?.provaExtra && /^\d{4}-\d{2}-\d{2}$/.test(plano.opcoes.provaExtra.data) ? plano.opcoes.provaExtra : null
++  const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
++  const domingo = new Date(segunda.getFullYear(), segunda.getMonth(), segunda.getDate() + 6)
+ 
+   function montarDia(data: Date): DiaCalendario {
+     const chave = chaveCivil(data)
+@@ -119,57 +144,67 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
+       : data >= calculo.inicioModoProva ? 'prova'
+       : data >= calculo.inicioRetaFinal ? 'revisao'
+       : ehHoje ? 'hoje' : data < hoje ? 'passado' : 'conteudo'
+-    const doPlano = porChave.get(chave) ?? null
++    // Na reta final não há conteúdo novo: o motor ainda distribui o resto até a prova, mas o calendário não mostra.
++    const doPlano = fase === 'revisao' || fase === 'prova' || fase === 'vespera' ? null : porChave.get(chave) ?? null
+     const plano_ = ehHoje && doPlano ? { ...doPlano, itens: calculo.hoje?.itens ?? doPlano.itens, meta: calculo.metaDiaria, total: calculo.metaDiaria } : doPlano
+     const feito = feitoPorDia.get(chave)
+     const areasFeitas = feito ? [...feito.temas].map(([t, n]) => ({ slug: indice.temas[t]?.slug ?? String(t), nome: indice.temas[t]?.nome ?? '', n })).sort((a, b) => b.n - a.n) : []
+     const marcos: string[] = []
+-    if (data.getTime() === calculo.inicioRetaFinal.getTime() && calculo.diasRetaFinal > 7) marcos.push('Começa a revisão forte')
+-    if (data.getTime() === calculo.inicioModoProva.getTime()) marcos.push('Começa o modo prova')
++    if (data.getTime() === calculo.inicioRetaFinal.getTime() && calculo.diasRetaFinal > 7 && data >= criado) marcos.push('Começa a revisão forte')
++    if (data.getTime() === calculo.inicioModoProva.getTime() && data >= criado) marcos.push('Começa o modo prova')
+     const passada = inicioPassada.get(chave)
+     if (passada) marcos.push(`Começa a ${ROTULO_PASSADA[passada].nome}`)
+     if (extra && extra.data === chave) marcos.push(`Prova: ${extra.nome}`)
+-    return { data, chave, fase, folga, plano: plano_, feitas: feito?.n ?? 0, areasFeitas, marcos }
++    let teste: SituacaoTeste = null
++    if (datasTeste.has(chave) && data >= criado && data < prova) {
++      // Um teste conta para a data dele se foi feito nela ou depois, antes do teste seguinte.
++      const seguinte = calculo.testes.datas.map(chaveCivil).find((k) => k > chave) ?? '9999'
++      const feitoTeste = calculo.testes.feitos.filter((t) => t.em >= chave && t.em < seguinte).pop() ?? (ehHoje && acoes.testeFeitoAqui ? { em: chave, n: 0, certas: 0 } : null)
++      const pendente = !feitoTeste && !!calculo.testes.pendente && chaveCivil(calculo.testes.pendente) === chave
++      teste = { feito: feitoTeste, pendente, perdido: !feitoTeste && !pendente && data < hoje }
++    }
++    return { data, chave, fase, folga, plano: plano_, feitas: feito?.n ?? 0, areasFeitas, marcos, teste, semanaAtual: data >= segunda && data <= domingo, ehHoje }
+   }
+ 
+   // A grade do mês: semanas de segunda a domingo; os dias de fora do mês ficam vazios.
+   const grade = useMemo(() => {
+-    const primeiro = mes
+-    const recuo = (primeiro.getDay() + 6) % 7
++    const recuo = (mes.getDay() + 6) % 7
+     const diasNoMes = new Date(mes.getFullYear(), mes.getMonth() + 1, 0).getDate()
+     const celulas: Array<DiaCalendario | null> = Array.from({ length: recuo }, () => null)
+     for (let i = 1; i <= diasNoMes; i++) celulas.push(montarDia(new Date(mes.getFullYear(), mes.getMonth(), i)))
+     while (celulas.length % 7) celulas.push(null)
+     return celulas
+-  }, [mes, calculo, feitoPorDia, plano]) // eslint-disable-line react-hooks/exhaustive-deps
++  }, [mes, calculo, feitoPorDia, plano, acoes.testeFeitoAqui]) // eslint-disable-line react-hooks/exhaustive-deps
+ 
+   const diaSelecionado = useMemo(() => {
+     const [a, m, d] = selecionado.split('-').map(Number)
+     return montarDia(new Date(a, m - 1, d))
+-  }, [selecionado, calculo, feitoPorDia, plano]) // eslint-disable-line react-hooks/exhaustive-deps
++  }, [selecionado, calculo, feitoPorDia, plano, acoes.testeFeitoAqui]) // eslint-disable-line react-hooks/exhaustive-deps
+ 
+-  // Resumo do mês: dias de estudo, questões planejadas e feitas.
++  // Resumo do mês: dias de estudo, questões planejadas e feitas, testes.
+   const resumoMes = useMemo(() => {
+-    let estudo = 0, questoes = 0, feitas = 0, folgas = 0
++    let estudo = 0, questoes = 0, feitas = 0, folgas = 0, testes = 0
+     for (const c of grade) {
+       if (!c || c.fase === 'antes' || c.fase === 'depois') continue
+       if (rotuloEstado(c).estado === 'folga') folgas++
+       if (c.plano && c.plano.tipo !== 'folga') { estudo++; questoes += c.plano.total }
+       if (c.fase === 'passado' || c.fase === 'hoje') feitas += c.feitas
++      if (c.teste) testes++
+     }
+-    return { estudo, questoes, feitas, folgas }
++    return { estudo, questoes, feitas, folgas, testes }
+   }, [grade])
+ 
+-  // Teclado, rolagem da página e foco: Esc fecha; o fundo não rola; o foco volta para quem abriu.
++  // Só na janela: Esc fecha, o fundo não rola e o foco volta para quem abriu.
+   useEffect(() => {
++    if (!janela) return
+     const antes = document.activeElement as HTMLElement | null
+     const overflow = document.body.style.overflow
+     document.body.style.overflow = 'hidden'
+     fechar.current?.focus()
+-    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopPropagation(); aoFechar() } }
++    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopPropagation(); fecharJanela() } }
+     window.addEventListener('keydown', tecla)
+     return () => { window.removeEventListener('keydown', tecla); document.body.style.overflow = overflow; antes?.focus?.() }
+-  }, [aoFechar])
++  }, [janela, aoFechar]) // eslint-disable-line react-hooks/exhaustive-deps
+ 
+   const podeVoltar = mes > primeiroMes, podeAvancar = mes < ultimoMes
+   function irMes(delta: number) {
+@@ -179,10 +214,13 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
+   }
+   function escolher(d: DiaCalendario) {
+     definirSelecionado(d.chave)
+-    // No celular o detalhe fica embaixo da grade: rola até ele.
+-    if (window.matchMedia('(max-width: 52rem)').matches) {
++    // Com o detalhe embaixo da grade (celular, ou o calendário embutido), traz o detalhe à vista.
++    if (!janela || window.matchMedia('(max-width: 52rem)').matches) {
+       const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+-      requestAnimationFrame(() => detalhe.current?.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' }))
++      requestAnimationFrame(() => {
++        const r = detalhe.current?.getBoundingClientRect()
++        if (r && (r.top < 0 || r.top > window.innerHeight - 120)) detalhe.current?.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: janela ? 'start' : 'nearest' })
++      })
+     }
+   }
+   function irHoje() { definirDirecao(null); definirMes(mesDe(hoje)); definirSelecionado(chaveCivil(hoje)) }
+@@ -191,44 +229,71 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
+   const areasMes = new Map<string, string>()
+   for (const c of grade) for (const i of c?.plano?.itens ?? []) areasMes.set(i.slug, i.nome)
+ 
++  const titulo = <>{nomeMes(mes).replace(/ de \d+$/, '')} <span className="cc-de">de </span>{mes.getFullYear()}</>
++  const resumo = (
++    <p className="cc-topo__resumo">
++      {resumoMes.estudo > 0 && <span><b className="numerico">{resumoMes.estudo}</b> {resumoMes.estudo === 1 ? 'dia' : 'dias'} de estudo · <b className="numerico">{resumoMes.questoes.toLocaleString('pt-BR')}</b> questões</span>}
++      {resumoMes.feitas > 0 && <span><b className="numerico">{resumoMes.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
++      {resumoMes.testes > 0 && <span>{resumoMes.testes} {resumoMes.testes === 1 ? 'teste' : 'testes'}</span>}
++      {resumoMes.folgas > 0 && <span>{resumoMes.folgas} {resumoMes.folgas === 1 ? 'folga' : 'folgas'}</span>}
++    </p>
++  )
++  const nav = (
++    <div className="cc-nav">
++      <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={!podeVoltar} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
++      <button type="button" className="cc-nav__hoje" onClick={irHoje}>Hoje</button>
++      <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={!podeAvancar} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
++      {janela && <button type="button" className="cc-fechar" ref={fechar} onClick={fecharJanela} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>}
++    </div>
++  )
++  const mesGrade = (
++    <div className="cc-mes">
++      <ol className="cc-semana" aria-hidden="true">{SEMANA.map((s) => <li key={s}>{s}</li>)}</ol>
++      <ol key={mes.getTime()} className={'cc-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Dias de ${nomeMes(mes)}`}>
++        {grade.map((c, i) => c ? <Celula key={c.chave} dia={c} selecionado={c.chave === selecionado} aoEscolher={escolher} /> : <li key={`v${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />)}
++      </ol>
++      <LegendaCalendario areas={areasMes} />
++    </div>
++  )
++  const det = <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={fecharJanela} janela={janela} />
++
++  if (!janela) {
++    return (
++      <section className="cc-embutido" aria-labelledby="cc-embutido-titulo">
++        <p className="cp-rotulo"><span id="cc-embutido-rotulo">Calendário</span><b>o que tem em cada dia</b></p>
++        <div className="cc-embutido__caixa">
++          <header className="cc-topo cc-topo--embutido">
++            <div className="cc-topo__titulo">
++              <h2 id="cc-embutido-titulo" aria-live="polite">{titulo}</h2>
++              {resumo}
++            </div>
++            {nav}
++          </header>
++          <div className="cc-corpo cc-corpo--embutido">
++            {mesGrade}
++            {det}
++          </div>
++          {aoExpandir && <button type="button" className="cc-abrir cc-expandir" onClick={aoExpandir}><Icone nome="calendario" tamanho={16} /> Abrir em tela cheia</button>}
++        </div>
++      </section>
++    )
++  }
++
+   return createPortal(
+     <div className="cp cc" role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
+-      <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={aoFechar} />
++      <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={fecharJanela} />
+       <div className="cc-janela">
+         <header className="cc-topo">
+           <div className="cc-topo__titulo">
+             <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> Calendário do cronograma · {plano.prova}</p>
+-            <h2 id="cc-titulo" aria-live="polite">{nomeMes(mes).replace(/ de \d+$/, '')} <span className="cc-de">de </span>{mes.getFullYear()}</h2>
+-            <p className="cc-topo__resumo">
+-              {resumoMes.estudo > 0 && <span><b className="numerico">{resumoMes.estudo}</b> dias de estudo · <b className="numerico">{resumoMes.questoes.toLocaleString('pt-BR')}</b> questões</span>}
+-              {resumoMes.feitas > 0 && <span><b className="numerico">{resumoMes.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
+-              {resumoMes.folgas > 0 && <span>{resumoMes.folgas} {resumoMes.folgas === 1 ? 'folga' : 'folgas'}</span>}
+-            </p>
+-          </div>
+-          <div className="cc-nav">
+-            <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={!podeVoltar} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
+-            <button type="button" className="cc-nav__hoje" onClick={irHoje}>Hoje</button>
+-            <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={!podeAvancar} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
+-            <button type="button" className="cc-fechar" ref={fechar} onClick={aoFechar} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>
++            <h2 id="cc-titulo" aria-live="polite">{titulo}</h2>
++            {resumo}
+           </div>
++          {nav}
+         </header>
+-
+         <div className="cc-corpo">
+-          <div className="cc-mes">
+-            <ol className="cc-semana" aria-hidden="true">{SEMANA.map((s) => <li key={s}>{s}</li>)}</ol>
+-            <ol key={mes.getTime()} className={'cc-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Dias de ${nomeMes(mes)}`}>
+-              {grade.map((c, i) => c ? <Celula key={c.chave} dia={c} selecionado={c.chave === selecionado} aoEscolher={escolher} /> : <li key={`v${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />)}
+-            </ol>
+-            <ul className="cp-legenda cc-legenda" aria-label="Legenda">
+-              {[...areasMes].map(([slug, nome]) => <li key={slug}><i style={{ background: corDaArea(slug) }} />{nome}</li>)}
+-              <li><i className="cc-legenda__feito" />feito</li>
+-              <li><i className="cc-legenda__hoje" />hoje</li>
+-              <li><i className="cp-legenda__folga" />folga</li>
+-              <li><i className="cc-legenda__marco" />marco</li>
+-              <li><i className="cc-legenda__reta" />reta final</li>
+-            </ul>
+-          </div>
+-          <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={aoFechar} />
++          {mesGrade}
++          {det}
+         </div>
+       </div>
+     </div>,
+@@ -236,6 +301,31 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
+   )
+ }
+ 
++/** A legenda: as áreas do mês (cor) e as marcas dos dias, sempre as mesmas. */
++function LegendaCalendario({ areas }: { areas: Map<string, string> }) {
++  return (
++    <div className="cc-legenda">
++      {areas.size > 0 && <ul className="cp-legenda" aria-label="Cores das áreas">
++        {[...areas].map(([slug, nome]) => <li key={slug}><i style={{ background: corDaArea(slug) }} />{nome}</li>)}
++      </ul>}
++      <ul className="cp-legenda cc-legenda__marcas" aria-label="Marcas dos dias">
++        <li><b className="cc-legenda__numero numerico">60</b>questões do dia</li>
++        <li><i className="cc-legenda__feito" />feito</li>
++        <li><i className="cc-legenda__parcial" />parcial</li>
++        <li><i className="cc-legenda__perdido" />perdido</li>
++        <li><i className="cc-legenda__hoje" />hoje</li>
++        <li><i className="cp-legenda__folga" />folga</li>
++        <li><i className="cc-legenda__leve">L</i>dia leve</li>
++        <li><i className="cc-legenda__dificil">D</i>semana difícil</li>
++        <li><i className="cc-legenda__adiantado" />adiantado</li>
++        <li><i className="cc-legenda__teste">★</i>{NOME_TESTE}</li>
++        <li><i className="cc-legenda__reta" />reta final</li>
++        <li><i className="cc-legenda__prova" />prova</li>
++      </ul>
++    </div>
++  )
++}
++
+ function rotuloEstado(d: DiaCalendario): { estado: string; texto: string } {
+   if (d.fase === 'antes' || d.fase === 'depois') return { estado: 'fora', texto: '' }
+   if (d.fase === 'dia-prova') return { estado: 'prova', texto: 'Prova' }
+@@ -247,20 +337,21 @@ function rotuloEstado(d: DiaCalendario): { estado: string; texto: string } {
+   if (d.fase === 'passado') {
+     if (d.feitas >= DIA_MINIMO) return { estado: 'feito', texto: `${d.feitas} feitas` }
+     if (d.feitas > 0) return { estado: 'parcial', texto: `${d.feitas} feitas` }
+-    return { estado: 'atrasado', texto: 'sem estudo' }
++    return { estado: 'perdido', texto: 'perdido' }
+   }
++  if (d.ehHoje && (d.fase === 'revisao' || d.fase === 'prova' || d.fase === 'vespera')) return { estado: 'hoje', texto: d.fase === 'revisao' ? 'revisão' : d.fase === 'prova' ? 'modo prova' : 'véspera' }
+   if (d.fase === 'revisao') return { estado: 'reta', texto: 'revisão' }
+   if (d.fase === 'prova') return { estado: 'reta', texto: 'modo prova' }
+   if (d.fase === 'vespera') return { estado: 'reta', texto: 'véspera' }
+   const p = d.plano
+   if (!p) return { estado: 'futuro', texto: '' }
+   if (p.total === 0 && p.adiantado > 0 && !p.mini) return { estado: 'adiantado', texto: 'adiantado' }
+-  return { estado: 'futuro', texto: p.total ? `${p.total} q${p.tipo === 'leve' ? ' · leve' : p.tipo === 'dificil' ? ' · mínimo' : ''}` : p.mini ? 'mini' : '' }
++  return { estado: 'futuro', texto: p.total ? `${p.total} q` : p.mini ? 'teste' : '' }
+ }
+ 
+ /** O rótulo da célula no celular, onde cabe só um número ou uma palavra curta. */
+ function textoCurto(estado: string, texto: string): string {
+-  if (estado === 'atrasado') return '–'
++  if (estado === 'perdido') return '–'
+   if (estado === 'folga' || estado === 'hoje' && texto === 'hoje') return ''
+   if (estado === 'adiantado') return 'livre'
+   if (estado === 'prova') return 'PROVA'
+@@ -276,36 +367,40 @@ function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selec
+   const passado = d.fase === 'passado' || (d.fase === 'hoje' && d.feitas > 0 && !d.plano?.itens.length)
+   const partes = passado ? d.areasFeitas.slice(0, 4) : (d.plano?.itens ?? []).map((i) => ({ slug: i.slug, nome: i.nome, n: i.n }))
+   const areas = [...partes].reduce<Array<{ slug: string; nome: string; n: number }>>((acc, p) => { const a = acc.find((x) => x.slug === p.slug); if (a) a.n += p.n; else acc.push({ ...p }); return acc }, []).sort((a, b) => b.n - a.n)
+-  const mini = !!d.plano?.mini
+-  const marco = mini || d.marcos.length > 0
+-  const descricao = [dataLonga(d.data), texto, areas.length ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', mini ? 'mini-simulado' : '', ...d.marcos].filter(Boolean).join(', ')
++  const teste = d.teste
++  const tipo = d.fase === 'conteudo' || d.fase === 'hoje' ? d.plano?.tipo : undefined
++  const marco = !!teste || d.marcos.length > 0
++  const rotuloTeste = teste ? (teste.feito ? (teste.feito.n ? `Teste ${pct(teste.feito)}%` : 'Teste feito') : teste.pendente ? 'Teste pendente' : teste.perdido ? 'Teste perdido' : 'Teste') : ''
++  const descricao = [dataLonga(d.data), texto, tipo === 'leve' ? 'dia leve' : tipo === 'dificil' ? 'semana difícil' : '', areas.length ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', teste ? `${NOME_TESTE}${teste.feito?.n ? `, ${pct(teste.feito)}% de acerto` : teste.feito ? ', feito' : teste.pendente ? ', pendente' : teste.perdido ? ', não feito' : ''}` : '', d.plano?.adiantado ? `${d.plano.adiantado} adiantadas` : '', ...d.marcos].filter(Boolean).join(', ')
+   return (
+-    <li className={`cc-dia cc-dia--${estado}${marco ? ' cc-dia--marco' : ''}${d.plano?.adiantado ? ' cc-dia--com-adiantado' : ''}${selecionado ? ' cc-dia--selecionado' : ''}`}>
++    <li className={`cc-dia cc-dia--${estado}${marco ? ' cc-dia--marco' : ''}${tipo === 'leve' ? ' cc-dia--leve' : ''}${tipo === 'dificil' ? ' cc-dia--dificil' : ''}${d.plano?.adiantado ? ' cc-dia--com-adiantado' : ''}${d.semanaAtual ? ' cc-dia--semana' : ''}${d.ehHoje && estado !== 'hoje' ? ' cc-dia--e-hoje' : ''}${selecionado ? ' cc-dia--selecionado' : ''}`}>
+       <button type="button" onClick={() => aoEscolher(d)} aria-label={descricao} aria-pressed={selecionado} disabled={estado === 'fora'}>
+         <span className="cc-dia__topo">
+           <b className="cc-dia__num">{d.data.getDate()}</b>
+           {estado === 'feito' && <span className="cc-dia__selo cc-dia__selo--feito" aria-hidden="true"><Icone nome="certo" tamanho={11} /></span>}
+-          {estado === 'hoje' && <span className="cc-dia__hoje">hoje</span>}
+-          {mini && <span className="cc-dia__selo cc-dia__selo--marco" aria-hidden="true" title="Mini-simulado">★</span>}
++          {d.ehHoje && <span className="cc-dia__hoje">hoje</span>}
++          {tipo === 'leve' && <span className="cc-dia__tipo" aria-hidden="true" title="Dia leve">L</span>}
++          {tipo === 'dificil' && <span className="cc-dia__tipo cc-dia__tipo--dificil" aria-hidden="true" title="Semana difícil">D</span>}
++          {teste && <span className={'cc-dia__selo cc-dia__selo--marco' + (teste.feito ? ' cc-dia__selo--teste-feito' : teste.pendente || teste.perdido ? ' cc-dia__selo--teste-atrasado' : '')} aria-hidden="true" title={NOME_TESTE}>★</span>}
+         </span>
+         {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__areas">
+           {areas.slice(0, 2).map((a) => <span key={a.slug} className="cc-dia__area"><i style={{ background: corDaArea(a.slug) }} /><span>{curto(a.nome, 16)}</span></span>)}
+           {areas.length > 2 && <span className="cc-dia__area cc-dia__area--mais">+{areas.length - 2}</span>}
+         </span>}
+-        {d.marcos.length > 0 && <span className="cc-dia__marco">{d.marcos[0]}</span>}
++        {(rotuloTeste || d.marcos.length > 0) && <span className="cc-dia__marco">{rotuloTeste || d.marcos[0]}</span>}
+         <span className="cc-dia__rodape">
+           {texto && <em data-curto={textoCurto(estado, texto)}><span>{texto}</span></em>}
+           {d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && <s className="numerico">{d.plano.total + d.plano.adiantado}</s>}
+         </span>
+-        {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__faixa" style={{ background: faixa(areas) }} aria-hidden="true" />}
++        {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__faixa" style={{ background: faixaCalendario(areas) }} aria-hidden="true" />}
+       </button>
+     </li>
+   )
+ }
+ 
+-function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes, aoFechar }: {
++function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes, aoFechar, janela }: {
+   ancora: RefObject<HTMLElement>
+-  dia: DiaCalendario; calculo: CalculoPlano; plano: PlanoSalvo; minutos: number; revisoesHoje: number; acoes: AcoesCalendario; aoFechar: () => void
++  dia: DiaCalendario; calculo: CalculoPlano; plano: PlanoSalvo; minutos: number; revisoesHoje: number; acoes: AcoesCalendario; aoFechar: () => void; janela: boolean
+ }) {
+   const { estado } = rotuloEstado(d)
+   const p = d.plano
+@@ -314,6 +409,7 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
+   let titulo = ''
+   let sub: ReactNode = null
+   let acao: ReactNode = null
++  const fecharSeJanela = () => { if (janela) aoFechar() }
+ 
+   if (d.fase === 'dia-prova') { titulo = `Prova: ${plano.prova}`; sub = 'O dia que o plano inteiro prepara. Boa prova!' }
+   else if (d.fase === 'antes') { titulo = 'Antes do cronograma'; sub = 'O plano começou depois deste dia.' }
+@@ -327,7 +423,7 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
+     if (d.fase === 'prova') linhas.push({ id: 'sim', titulo: 'Simulado cronometrado', texto: 'No horário e com a duração da prova' }, { id: 'erros', titulo: 'Os erros que importam', texto: 'O que mais cai e você errou' })
+     if (d.fase === 'vespera') linhas.push({ id: 'aq', titulo: 'Aquecimento leve', texto: 'Poucas questões, só para entrar no ritmo' })
+   } else if (d.fase === 'passado') {
+-    titulo = d.folga && !d.feitas ? 'Folga' : d.feitas >= DIA_MINIMO ? 'Feito' : d.feitas > 0 ? 'Feito em parte' : 'Sem estudo'
++    titulo = d.folga && !d.feitas ? 'Folga' : d.feitas >= DIA_MINIMO ? 'Feito' : d.feitas > 0 ? 'Feito em parte' : 'Dia perdido'
+     sub = d.feitas ? `Você respondeu ${d.feitas} ${d.feitas === 1 ? 'questão' : 'questões'} neste dia${d.feitas >= DIA_MINIMO ? ', o bastante para manter a sequência' : ''}.` : d.folga ? 'Dia de descanso do seu plano.' : 'Nenhuma questão neste dia. O que ficou para trás já foi redistribuído pelos próximos dias.'
+     for (const a of d.areasFeitas.slice(0, 6)) linhas.push({ id: a.slug, cor: corDaArea(a.slug), titulo: `${a.n} de ${a.nome}` })
+   } else if (d.folga && (!p || p.tipo === 'folga')) {
+@@ -342,30 +438,40 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
+     linhas.push({ id: 'extras', titulo: revisoesHoje > 0 ? `${revisoesHoje} ${revisoesHoje === 1 ? 'revisão' : 'revisões'} e flashcards` : 'Revisões e flashcards', texto: 'Se sobrar tempo; não contam na meta', opcional: true })
+   } else if (p) {
+     const livre = p.total === 0 && p.adiantado > 0 && !p.mini
+-    titulo = livre ? 'Livre: você já adiantou' : principal ? principal.nome : p.mini ? 'Mini-simulado' : 'Dia de estudo'
++    titulo = livre ? 'Livre: você já adiantou' : principal ? principal.nome : p.mini ? NOME_TESTE : 'Dia de estudo'
+     const tipo = p.tipo === 'leve' ? 'Dia leve (plantão). ' : p.tipo === 'dificil' ? 'Semana difícil: só o dia mínimo. ' : ''
+     const passada = principal ? `${ROTULO_PASSADA[principal.passada].nome}: ${ROTULO_PASSADA[principal.passada].texto}.` : ''
+     sub = livre ? `As ${p.adiantado} questões deste dia você fez antes.` : <>{tipo}{passada}{p.adiantado > 0 ? <> <b className="cc-verde">−{p.adiantado} adiantadas</b> (eram {p.total + p.adiantado}).</> : null}</>
+     if (!livre && principal) linhas.push({ id: 'resumao', titulo: `Resumão de ${principal.nome.toLowerCase()}`, texto: 'As frases "Na prova", antes das questões', minutos: MINUTOS_RESUMAO })
+     for (const it of p.itens) linhas.push({ id: `${it.slug}-${it.mistura}`, cor: corDaArea(it.slug), titulo: <>{it.n} questões de {it.nome}{it.mistura && <span className="cp-tag">mistura</span>}</>, chips: it.assuntos.slice(0, 4), minutos: it.n * minutos })
+-    if (p.mini) linhas.push({ id: 'mini', titulo: `Mini-simulado de ${TAMANHO_MINI} questões`, texto: 'Cronometrado, do que você já viu', minutos: TAMANHO_MINI * 1.5 })
+     if (!livre) linhas.push({ id: 'extras', titulo: d.fase === 'hoje' && revisoesHoje > 0 ? `${revisoesHoje} ${revisoesHoje === 1 ? 'revisão' : 'revisões'} e flashcards` : 'Revisões e flashcards', texto: 'Se sobrar tempo; não contam na meta', opcional: true })
+   }
++  // O Teste do cronograma do dia (no conteúdo, na revisão forte ou no passado, com o resultado).
++  if (d.teste) {
++    const t = d.teste
++    linhas.splice(Math.min(1, linhas.length), 0, {
++      id: 'teste',
++      titulo: t.feito ? (t.feito.n ? `${NOME_TESTE}: ${pct(t.feito)}% de acerto` : `${NOME_TESTE}: feito`) : `${NOME_TESTE}: ${TAMANHO_MINI} questões`,
++      texto: t.feito?.n ? `${t.feito.certas} de ${t.feito.n} certas${t.feito.em !== d.chave ? `, feito em ${new Date(`${t.feito.em}T12:00:00`).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })}` : ''}` : t.pendente ? 'Ficou para trás: continua no seu cronograma por até 7 dias' : t.perdido ? 'Não foi feito. O próximo vem no dia marcado' : 'Cronometrado, do que você já viu, com a mistura de áreas da prova',
++      minutos: t.feito || t.perdido ? null : TAMANHO_MINI * Math.max(1.5, minutos),
++    })
++  }
+   for (const m of d.marcos) if (!titulo.includes(m)) linhas.unshift({ id: `marco-${m}`, titulo: m, texto: m.startsWith('Começa a') && m.includes('passada') ? 'Muda o nível de prioridade dos assuntos' : undefined })
+   const total = linhas.filter((l) => !l.opcional).reduce((s, l) => s + (l.minutos ?? 0), 0)
+ 
+-  // Ações: hoje começa ou continua; os próximos dias de estudo podem ser adiantados (na ordem, como no painel).
++  // Ações: hoje começa ou continua; o teste de hoje (ou o pendente); os próximos dias de estudo podem ser adiantados.
++  const testeAgora = acoes.aoTeste && d.teste && !d.teste.feito && (d.fase === 'hoje' || d.teste.pendente || (d.fase === 'revisao' && d.data.getTime() === diaCivil().getTime()))
+   if (d.fase === 'hoje') {
+     const falta = calculo.faltaHoje + calculo.adiantarFalta
+-    if (acoes.pendente) acao = <a className="cp-botao" href="#/sessao" onClick={aoFechar}>Continuar: faltam {acoes.pendente.total - acoes.pendente.feitas} questões</a>
+-    else if (calculo.hoje && falta > 0 && acoes.aoComecar) acao = <button type="button" className="cp-botao" onClick={() => { aoFechar(); acoes.aoComecar!() }}>{calculo.feitasHoje > 0 ? `Continuar: faltam ${falta} questões` : `Começar: ${falta} questões`}<small>~{formatarTempo(falta * minutos)}</small></button>
++    if (acoes.pendente) acao = <a className="cp-botao" href="#/sessao" onClick={fecharSeJanela}>Continuar: faltam {acoes.pendente.total - acoes.pendente.feitas} questões</a>
++    else if (calculo.hoje && falta > 0 && acoes.aoComecar) acao = <button type="button" className="cp-botao" onClick={() => { fecharSeJanela(); acoes.aoComecar!() }}>{calculo.feitasHoje > 0 ? `Continuar: faltam ${falta} questões` : `Começar: ${falta} questões`}<small>~{formatarTempo(falta * minutos)}</small></button>
+     else if (calculo.metaDiaria > 0 && calculo.faltaHoje === 0) acao = <p className="cc-detalhe__ok"><Icone nome="certo" tamanho={16} /> Meta de hoje feita: {calculo.metaDiaria} questões.</p>
+   } else if (d.fase === 'conteudo' && p && acoes.aoAdiantar && calculo.restante > 0) {
+     const proximos = calculo.dias.slice(1).filter((x) => x.meta > 0)
+     const k = proximos.findIndex((x) => x.data.getTime() === d.data.getTime())
+     if (k >= 0 && k < ADIANTAR_ATE) {
+       const n = proximos.slice(0, k + 1).reduce((s, x) => s + x.meta, 0)
+-      acao = <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoAdiantar!(n); setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ block: 'center' }), 200) }}>
++      acao = <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { fecharSeJanela(); acoes.aoAdiantar!(n); setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ block: 'center' }), 200) }}>
+         {k === 0 ? `Adiantar este dia: ${n} questões` : `Adiantar até este dia: ${n} questões`}
+         <small>{k === 0 ? 'Entram na sua sessão de hoje' : `Os ${k + 1} próximos dias de estudo, na ordem`} · ~{formatarTempo(n * minutos)}</small>
+       </button>
+@@ -373,14 +479,14 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
+   }
+ 
+   return (
+-    <section ref={ancora} className={`cc-detalhe cc-detalhe--${estado}`} aria-live="polite" aria-labelledby="cc-detalhe-titulo" style={{ ['--cor-area' as string]: principal ? corDaArea(principal.slug) : undefined }}>
+-      <p className="cc-detalhe__data">{dataLonga(d.data)}{d.fase === 'hoje' && <span className="cc-detalhe__agora">hoje</span>}</p>
+-      <h3 id="cc-detalhe-titulo">{titulo}</h3>
++    <section ref={ancora} className={`cc-detalhe cc-detalhe--${estado}${d.teste ? ' cc-detalhe--teste' : ''}`} aria-live="polite" aria-labelledby={janela ? 'cc-detalhe-titulo' : 'cc-detalhe-titulo-e'} style={{ ['--cor-area' as string]: principal ? corDaArea(principal.slug) : undefined }}>
++      <p className="cc-detalhe__data">{dataLonga(d.data)}{d.ehHoje && <span className="cc-detalhe__agora">hoje</span>}</p>
++      <h3 id={janela ? 'cc-detalhe-titulo' : 'cc-detalhe-titulo-e'}>{titulo || (d.teste ? NOME_TESTE : '')}</h3>
+       {sub && <p className="cc-detalhe__sub">{sub}</p>}
+       {d.fase === 'hoje' && calculo.feitasHoje > 0 && calculo.faltaHoje > 0 && <p className="cc-detalhe__progresso"><span style={{ width: `${Math.min(100, (calculo.feitasHoje / Math.max(1, calculo.metaDiaria)) * 100)}%` }} /><b>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} feitas</b></p>}
+       {linhas.length > 0 && <ul className="cc-detalhe__lista">
+         {linhas.map((l) => (
+-          <li key={l.id} className={l.opcional ? 'cc-detalhe__item cc-detalhe__item--extra' : l.id.startsWith('marco') ? 'cc-detalhe__item cc-detalhe__item--marco' : 'cc-detalhe__item'}>
++          <li key={l.id} className={l.opcional ? 'cc-detalhe__item cc-detalhe__item--extra' : l.id.startsWith('marco') || l.id === 'teste' ? 'cc-detalhe__item cc-detalhe__item--marco' : 'cc-detalhe__item'}>
+             <i style={{ background: l.cor }} aria-hidden="true" />
+             <span>
+               <strong>{l.titulo}</strong>
+@@ -391,8 +497,9 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
+           </li>
+         ))}
+       </ul>}
+-      {total > 0 && <p className="cc-detalhe__total">Seu dia: <b>~{formatarTempo(total)}</b></p>}
++      {total > 0 && <p className="cc-detalhe__total">Neste dia: <b>~{formatarTempo(total)}</b></p>}
+       {acao}
++      {testeAgora && <button type="button" className="cp-botao cp-botao--ouro" onClick={() => { fecharSeJanela(); acoes.aoTeste!() }}>{d.teste!.pendente ? `Fazer o ${NOME_TESTE.toLowerCase()} agora` : `Começar o ${NOME_TESTE.toLowerCase()}`}<small>{TAMANHO_MINI} questões · cronometrado</small></button>}
+     </section>
+   )
+ }
+diff --git a/src/paginas/CronogramaHub.tsx b/src/paginas/CronogramaHub.tsx
+index 75b45b2..de0dd55 100644
+--- a/src/paginas/CronogramaHub.tsx
++++ b/src/paginas/CronogramaHub.tsx
+@@ -253,7 +253,7 @@ export function ComoFuncionaCompleto({ aberto, plano }: { aberto: boolean; plano
+     { icone: 'alvo', titulo: 'Seus pontos fracos ganham reforço', texto: <>Tema em que você está abaixo da sua média recebe mais questões; assunto que você já domina (85% ou mais em 15 questões) vai para o fim da fila. O diagnóstico inicial calibra isso no primeiro dia, e acerto marcado como chute vale meio.</> },
+     { icone: 'relogio', titulo: 'A meta se ajusta, com limite', texto: <>A meta de hoje é o que falta dividido pelos dias até a reta final. Atrasou, ela sobe no máximo 25%; o que não couber sai do fim da fila, a parte de prioridade mais baixa, e a projeção avisa. Folga ({plano.folgas.length ? 'marcada por você' : 'se marcar alguma'}) não tem meta; dia leve (plantão) tem poucas questões; e a semana difícil fica no dia mínimo de 10.</> },
+     { icone: 'direita', titulo: 'Adiantar alivia os próximos dias', texto: <>Tudo o que você fizer além da meta de hoje sai dos próximos dias, começando por amanhã: fez 30 a mais, amanhã cai 30; fez um dia inteiro a mais, amanhã fica livre. Os botões de adiantar ficam no cartão de hoje.</> },
+-    { icone: 'reiniciar', titulo: 'Revisão e mini-simulado', texto: <>As revisões do dia (o que você errou, chutou ou marcou com dúvida) e os flashcards ficam na lista de hoje como extras: ajudam a fixar, mas não são obrigatórios nem contam na meta. A cada duas semanas, um mini-simulado de 30 questões cronometradas mistura o que você já viu. Tema estudado que fica 3 semanas sem resposta ganha um alerta para reativar.</> },
++    { icone: 'reiniciar', titulo: 'Revisão e Teste do cronograma', texto: <>As revisões do dia (o que você errou, chutou ou marcou com dúvida) e os flashcards ficam na lista de hoje como extras: ajudam a fixar, mas não são obrigatórios nem contam na meta. A cada duas semanas (e toda semana no mês antes da reta final), o Teste do cronograma: 30 questões cronometradas do que você já viu, com a mistura de áreas da prova, para comparar com o teste anterior. Fica oferecido por até 7 dias se você não conseguir no dia, e há mais um no começo da revisão forte. Tema estudado que fica 3 semanas sem resposta ganha um alerta para reativar.</> },
+     { icone: 'bandeira', titulo: 'Reta final de duas semanas', texto: <>Sem conteúdo novo. Na <b>penúltima semana</b>, revisão forte: cada dia uma fatia da prova, com seus erros, dúvidas e os assuntos que mais caem. Na <b>última semana</b>, modo prova: simulado cronometrado, os erros que importam e o resumão. Na <b>véspera</b>, só aquecimento e descanso. Planos com menos de 6 semanas têm só a última semana.</> },
+     { icone: 'fogo', titulo: 'Constância conta', texto: <>Cada dia de estudo com 10 questões ou mais (novas ou de revisão) entra na sua sequência, mesmo em dia de plantão. Folga marcada não quebra.</> },
+     { icone: 'lapis', titulo: 'Intensidade e ajustes', texto: <>Leve cobre metade das questões que faltam, firme 80% e completo todas; cada uma mostra o tempo por dia com o seu ritmo. Data, folgas, dias leves, área para começar e áreas dominadas mudam quando quiser, no botão "Ajustar" do topo (em "Onde você está").</> },
+diff --git a/src/paginas/CronogramaPainel.tsx b/src/paginas/CronogramaPainel.tsx
+index 88bf7f1..ee01033 100644
+--- a/src/paginas/CronogramaPainel.tsx
++++ b/src/paginas/CronogramaPainel.tsx
+@@ -1,6 +1,6 @@
+ import { useState, type ReactNode } from 'react'
+ import type { CalculoPlano, DiaPlano, Passada, PlanoSalvo } from '../dados/planoEstudo'
+-import { DIA_MINIMO, opcoesDe, ROTULO_PASSADA, TAMANHO_MINI } from '../dados/planoEstudo'
++import { DIA_MINIMO, DIAS_TESTE_PENDENTE, NOME_TESTE, opcoesDe, ROTULO_PASSADA, TAMANHO_MINI, TETO_DIA } from '../dados/planoEstudo'
+ import { formatarTempo, type Constancia, type Prontidao } from '../dados/hubCronograma'
+ import { corDaArea } from '../dados/coresAreas'
+ import { posicaoDaArea } from '../dados/incidencia'
+@@ -47,14 +47,17 @@ export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { pl
+       const ate = passadas[i + 1] ? inicioDe(passadas[i + 1]) : calculo.inicioRetaFinal
+       if (ate > de) trechos.push({ id: `p${p}`, nome: ROTULO_PASSADA[p].nome, sub: p === 1 ? 'prioridade máxima' : p === 2 ? 'prioridade alta' : 'o resto', de, ate })
+     })
+-  } else trechos.push({ id: 'conteudo', nome: 'Conteúdo novo', sub: 'feito', de: criado, ate: calculo.inicioRetaFinal })
++  } else if (calculo.inicioRetaFinal > criado) trechos.push({ id: 'conteudo', nome: 'Conteúdo novo', sub: 'feito', de: criado, ate: calculo.inicioRetaFinal })
++  // Plano criado já dentro da reta final (prova a poucos dias): o trilho começa na criação, sem trecho "feito" invertido.
+   if (calculo.diasRetaFinal > 7) trechos.push({ id: 'revisao', nome: 'Revisão forte', sub: curta(calculo.inicioRetaFinal), de: calculo.inicioRetaFinal, ate: calculo.inicioModoProva })
+   trechos.push({ id: 'prova', nome: 'Modo prova', sub: curta(calculo.inicioModoProva), de: calculo.inicioModoProva, ate: prova })
+   const inicio = trechos[0].de.getTime(), fim = prova.getTime()
+   const pos = Math.min(100, Math.max(0, ((hoje.getTime() - inicio) / Math.max(1, fim - inicio)) * 100))
+   const atual = trechos.findIndex((t) => hoje >= t.de && hoje < t.ate)
+ 
+-  const frase: ReactNode = calculo.provaPassou ? 'A prova chegou. Boa sorte!'
++  const passou = calculo.diasAteProva < 0
++  const frase: ReactNode = passou ? <>Este cronograma terminou em {curta(prova)}. Vai fazer outra prova? Toque em <b>Ajustar</b> e escolha a nova data.</>
++    : calculo.provaPassou ? 'A prova chegou. Boa sorte!'
+     : calculo.fase === 'conteudo' && calculo.passadaAtual ? <>Agora: <b>{ROTULO_PASSADA[calculo.passadaAtual].nome}</b>, {ROTULO_PASSADA[calculo.passadaAtual].texto}. {(() => {
+       const proxima = ([2, 3] as Passada[]).find((p) => p > calculo.passadaAtual! && calculo.inicioPassada[p] && calculo.inicioPassada[p]! > hoje)
+       return proxima ? <>Em {curta(calculo.inicioPassada[proxima]!)} começa a {ROTULO_PASSADA[proxima].nome}.</> : <>Em {curta(calculo.inicioRetaFinal)} começa a reta final, sem conteúdo novo.</>
+@@ -70,7 +73,7 @@ export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { pl
+         {/* Trocar data, folga ou ritmo fica no topo: antes era preciso rolar a página inteira. */}
+         {aoAjustar && <button type="button" className="cp-onde__ajustar" onClick={aoAjustar} aria-label="Ajustar o cronograma: data, ritmo, folgas" title="Ajustar o cronograma: data, ritmo, folgas"><Icone nome="lapis" tamanho={14} /> Ajustar</button>}
+       </p>
+-      <h1 id="cp-onde-titulo">{calculo.provaPassou ? 'Dia da prova' : <>Faltam <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
++      <h1 id="cp-onde-titulo">{passou ? 'A prova passou' : calculo.provaPassou ? 'Dia da prova' : <>Faltam <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
+       <p className="cp-onde__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal}</p>
+       {!calculo.provaPassou && <>
+         <div className="cp-trilho" aria-hidden="true">
+@@ -147,7 +150,9 @@ export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, co
+           <p className="cp-extras__titulo">Se sobrar tempo <small>não conta na meta</small></p>
+           <ul className="cp-lista cp-lista--extras">{extras.map((i) => <ItemDaLista key={i.id} item={i} marca="+" />)}</ul>
+         </div>}
+-        {calculo.projecao.tetoAtivo && !calculo.naRetaFinal && <p className="cp-hoje__teto"><Icone nome="alerta" tamanho={15} /> A meta subiu o máximo (25% acima da planejada) para não virar maratona. O que não couber sai do fim da fila, a parte de prioridade mais baixa.</p>}
++        {calculo.projecao.tetoAtivo && !calculo.naRetaFinal && !calculo.provaPassou && <p className="cp-hoje__teto"><Icone nome="alerta" tamanho={15} /> {calculo.projecao.tetoDia
++          ? <>Até a prova não cabe tudo: a meta para em {TETO_DIA} questões por dia, para não virar maratona. O que não couber sai do fim da fila, a parte de prioridade mais baixa.</>
++          : <>A meta subiu o máximo (25% acima da planejada) para não virar maratona. O que não couber sai do fim da fila, a parte de prioridade mais baixa.</>}</p>}
+       </div>
+     </section>
+   )
+@@ -170,6 +175,60 @@ function ItemDaLista({ item: i, marca }: { item: ItemChecklist; marca: ReactNode
+   )
+ }
+ 
++// ─── Teste do cronograma ───────────────────────────────────────────────────
++
++const pctTeste = (t: { n: number; certas: number }) => Math.round((t.certas / Math.max(1, t.n)) * 100)
++const dataDaChave = (k: string) => { const [a, m, d] = k.split('-').map(Number); return new Date(a, m - 1, d) }
++
++/**
++ * O cartão do Teste do cronograma (16/10/2026): aparece no dia do teste, quando um teste ficou
++ * para trás (por até DIAS_TESTE_PENDENTE dias) e, depois de feito, com o resultado ao lado do
++ * anterior. 30 questões cronometradas do que a pessoa já viu, com a mistura de áreas da prova.
++ * Não é o Simulado Nacional nem os OrtoQuestões Simulados: é um marco do próprio plano.
++ */
++export function CartaoTeste({ calculo, feitoAqui = false, aoFazer, minutos = 1.5, previa = false }: { calculo: CalculoPlano; feitoAqui?: boolean; aoFazer?: () => void; minutos?: number; previa?: boolean }) {
++  const t = calculo.testes
++  const hojeChave = chaveCivil(diaCivil())
++  const deHoje = t.feitos.find((x) => x.em === hojeChave) ?? null
++  const feito = t.feitoHoje || feitoAqui
++  const anteriores = t.feitos.filter((x) => x.em < hojeChave)
++  const ultimo = anteriores[anteriores.length - 1] ?? null
++  const mostrar = (t.hoje || !!t.pendente || feito) && !calculo.provaPassou
++  if (!mostrar) return null
++  const tempo = formatarTempo(TAMANHO_MINI * Math.max(1.5, minutos))
++  const pendente = !t.hoje && !!t.pendente && !feito
++  const limite = t.pendente ? new Date(t.pendente.getFullYear(), t.pendente.getMonth(), t.pendente.getDate() + DIAS_TESTE_PENDENTE) : null
++  const titulo = feito ? `${NOME_TESTE}: feito` : pendente ? `${NOME_TESTE} pendente` : `Hoje tem ${NOME_TESTE}`
++  const sub = feito
++    ? (deHoje ? <>Você acertou <b>{pctTeste(deHoje)}%</b> ({deHoje.certas} de {deHoje.n}){ultimo ? <>; no teste anterior, {pctTeste(ultimo)}% <span className={pctTeste(deHoje) >= pctTeste(ultimo) ? 'cp-teste__sobe' : 'cp-teste__desce'}>({pctTeste(deHoje) >= pctTeste(ultimo) ? '+' : ''}{pctTeste(deHoje) - pctTeste(ultimo)} pontos)</span></> : null}. Os erros já estão na revisão.</> : <>Resultado guardado neste aparelho; aparece aqui quando sincronizar.</>)
++    : pendente ? <>Era em {semanaDia(t.pendente!)}, {curta(t.pendente!)}. Ele fica aqui até {curta(limite!)}: faça quando der, sem atrasar a meta.</>
++    : <>{TAMANHO_MINI} questões cronometradas do que você já viu, com a mistura de áreas da prova. Os seus erros e dúvidas vêm primeiro.</>
++  // Os últimos resultados, para ver a curva (o de hoje no fim).
++  const historico = t.feitos.slice(-6)
++  return (
++    <section className={'cp-teste' + (feito ? ' cp-teste--feito' : pendente ? ' cp-teste--pendente' : '')} aria-labelledby="cp-teste-titulo">
++      <div className="cp-teste__cabeca">
++        <span className="cp-teste__selo" aria-hidden="true">{feito ? <Icone nome="certo" tamanho={18} /> : <Icone nome="relogio" tamanho={18} />}</span>
++        <div>
++          <p className="cp-teste__rotulo">{pendente ? 'Ficou para trás' : feito ? 'Hoje' : `Hoje · ${TAMANHO_MINI} questões · ~${tempo}`}</p>
++          <h3 id="cp-teste-titulo">{titulo}</h3>
++          <p className="cp-teste__sub">{sub}</p>
++        </div>
++      </div>
++      {historico.length > 0 && <ol className="cp-teste__historico" aria-label="Resultados dos testes do cronograma">
++        {historico.map((x) => <li key={x.em} className={x.em === hojeChave ? 'cp-teste__hoje' : ''} title={`${curta(dataDaChave(x.em))}: ${pctTeste(x)}%`}>
++          <span className="cp-teste__barra" aria-hidden="true"><span style={{ height: `${Math.max(6, pctTeste(x))}%` }} /></span>
++          <b className="numerico">{pctTeste(x)}%</b>
++          <small>{x.em === hojeChave ? 'hoje' : curta(dataDaChave(x.em))}</small>
++        </li>)}
++      </ol>}
++      {!feito && !historico.length && <p className="cp-teste__nota">É o seu primeiro teste: o resultado fica guardado no cronograma para comparar com os próximos.</p>}
++      {!feito && ultimo && <p className="cp-teste__nota">No teste anterior ({curta(dataDaChave(ultimo.em))}) você acertou <b>{pctTeste(ultimo)}%</b>. Dá para comparar no fim.</p>}
++      {!feito && aoFazer && !previa && <button type="button" className="cp-botao cp-botao--ouro" onClick={aoFazer}>{pendente ? `Fazer o ${NOME_TESTE.toLowerCase()} agora` : `Começar o ${NOME_TESTE.toLowerCase()}`}<small>{TAMANHO_MINI} questões · ~{tempo} · cronometrado</small></button>}
++    </section>
++  )
++}
++
+ // ─── Adiantar ──────────────────────────────────────────────────────────────
+ 
+ /**
+@@ -254,7 +313,7 @@ export function LinhaAmanha({ dia }: { dia: DiaPlano | null }) {
+       <div className="cp-amanha">
+         <span className="cp-amanha__cor" style={{ background: faixaCores(dia.itens.map((i) => ({ slug: i.slug, n: i.n }))) }} aria-hidden="true" />
+         <div>
+-          <strong>{livre ? 'Livre: você já adiantou' : principal ? principal.nome : 'Mini-simulado'}{mistura.length > 0 && <> + {juntar(mistura.map((m) => m.nome))}</>}{dia.tipo === 'leve' && <span className="cp-tag">dia leve</span>}{dia.tipo === 'dificil' && <span className="cp-tag">semana difícil</span>}{dia.mini && <span className="cp-tag cp-tag--ouro">mini-simulado</span>}{dia.adiantado > 0 && !livre && <span className="cp-tag cp-tag--verde">−{dia.adiantado} adiantadas</span>}</strong>
++          <strong>{livre ? 'Livre: você já adiantou' : principal ? principal.nome : NOME_TESTE}{mistura.length > 0 && <> + {juntar(mistura.map((m) => m.nome))}</>}{dia.tipo === 'leve' && <span className="cp-tag">dia leve</span>}{dia.tipo === 'dificil' && <span className="cp-tag">semana difícil</span>}{dia.mini && <span className="cp-tag cp-tag--ouro">{NOME_TESTE.toLowerCase()}</span>}{dia.adiantado > 0 && !livre && <span className="cp-tag cp-tag--verde">−{dia.adiantado} adiantadas</span>}</strong>
+           <small>{livre ? `As ${dia.adiantado} questões deste dia você fez antes.` : principal ? principal.assuntos.slice(0, 3).join(', ') : `${TAMANHO_MINI} questões cronometradas do que você já viu`}{mistura.length > 0 && `; mais ${mistura.reduce((s, m) => s + m.n, 0)} de ${juntar(mistura.map((m) => m.nome))} para misturar`}</small>
+         </div>
+         <span className="cp-amanha__n">{dia.adiantado > 0 && <s className="numerico">{dia.total + dia.adiantado}</s>}<b className="numerico">{dia.total}</b><small>questões</small></span>
+@@ -287,7 +346,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
+     const n = ehHoje ? calculo.metaDiaria : doPlano?.total ?? passado?.n ?? 0
+     return { d, estado, itens, n, tipo: doPlano?.tipo, mini: doPlano?.mini ?? false, passadoN: passado?.n ?? 0, adiantado: !ehHoje && (doPlano?.adiantado ?? 0) > 0 }
+   })
+-  // A frase da semana: quando a área principal muda (comparando dia a dia) e quando cai o mini-simulado.
++  // A frase da semana: quando a área principal muda (comparando dia a dia) e quando cai o teste do cronograma.
+   const principalDe = (itens: DiaPlano['itens']) => itens.find((i) => !i.mistura) ?? itens[0]
+   const frases: string[] = []
+   let anterior = calculo.hoje ? principalDe(calculo.hoje.itens)?.slug : undefined
+@@ -297,7 +356,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
+     anterior = atual?.slug
+   }
+   const mini = plano7.find((x) => x.d >= hoje && x.mini)
+-  if (mini) frases.push(`Na ${semanaDia(mini.d)}: mini-simulado de ${TAMANHO_MINI} questões.`)
++  if (mini) frases.push(`${mini.d.getTime() === hoje.getTime() ? 'Hoje' : `Na ${semanaDia(mini.d)}`}: ${NOME_TESTE.toLowerCase()}, ${TAMANHO_MINI} questões cronometradas.`)
+   const areasSemana = new Map<string, string>()
+   for (const x of plano7) for (const i of x.itens) areasSemana.set(i.slug, i.nome)
+   const ROTULO = { feito: 'feito', hoje: 'hoje', futuro: '', folga: 'folga', atrasado: 'atrasado', parcial: 'parcial', antes: '–' }
+@@ -340,7 +399,8 @@ export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false, a
+   const fimSemana = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() + 7 - ((hoje.getDay() + 6) % 7))
+   const semanas: SemanaDepois[] = []
+   let passadaAnterior: Passada | null = calculo.passadaAtual
+-  for (const d of calculo.dias) {
++  // Na reta final não há conteúdo novo: o "Depois" mostra só os marcos (o motor segue distribuindo o resto, sem uso aqui).
++  for (const d of calculo.naRetaFinal ? [] : calculo.dias) {
+     if (d.data < fimSemana) continue
+     const seg = new Date(d.data.getFullYear(), d.data.getMonth(), d.data.getDate() - ((d.data.getDay() + 6) % 7))
+     let s = semanas[semanas.length - 1]
+@@ -371,7 +431,7 @@ export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false, a
+         <small>{partes.slice(0, 2).map((p) => p.assuntos.slice(0, 2).join(', ')).filter(Boolean).join('; ')} · {s.total} questões</small>
+       </span>
+     </li>)
+-    for (const m of s.minis) linhas.push(<li key={`m${m.getTime()}`} className="cp-depois__marco"><span className="cp-depois__data">{curta(m)}</span><span><span className="cp-depois__faixa cp-depois__faixa--marco" /><strong>Mini-simulado</strong><small>{TAMANHO_MINI} questões cronometradas de tudo o que você já viu</small></span></li>)
++    for (const m of s.minis) linhas.push(<li key={`m${m.getTime()}`} className="cp-depois__marco"><span className="cp-depois__data">{curta(m)}</span><span><span className="cp-depois__faixa cp-depois__faixa--marco" /><strong>{NOME_TESTE}</strong><small>{TAMANHO_MINI} questões cronometradas, com a mistura de áreas da prova</small></span></li>)
+   }
+   return (
+     <section className="cp-bloco" aria-labelledby="cp-depois-titulo">
+@@ -404,7 +464,7 @@ export function ComoEstouIndo({ calculo, constancia, minutosQuestao }: { calculo
+       <p className="cp-rotulo"><span id="cp-indo-titulo">Como você está indo</span></p>
+       <div className="cp-indo">
+         {constancia && <div><small>Constância</small><b className="numerico">{constancia.sequencia} {constancia.sequencia === 1 ? 'dia' : 'dias'}</b><span>seguidos com {DIA_MINIMO}+ questões</span></div>}
+-        <div><small>Ritmo</small><b>{ritmo.t}</b><span>{ritmo.s}</span></div>
++        {!calculo.provaPassou && <div><small>Ritmo</small><b>{ritmo.t}</b><span>{ritmo.s}</span></div>}
+         <div><small>Projeção</small><b className="numerico">{p.maisCaiPct}%</b><span>da prioridade máxima vista{p.fimMaisCai ? ` até ${curta(p.fimMaisCai)}` : ''}</span></div>
+         <div><small>Progresso</small><b className="numerico">{calculo.feitas.toLocaleString('pt-BR')}</b><span>de {calculo.alvo.toLocaleString('pt-BR')} questões do plano ({p.alvoPct}% previsto até a reta final)</span></div>
+       </div>
+@@ -473,7 +533,7 @@ export function ResumoSemana({ feitas, acerto, dias, fraca, proxima }: { feitas:
+ 
+ // ─── Exportar para o calendário ────────────────────────────────────────────
+ 
+-/** Arquivo .ics com cada dia de estudo, o mini-simulado, a reta final e a prova, com lembrete no horário escolhido. */
++/** Arquivo .ics com cada dia de estudo, o teste do cronograma, a reta final e a prova, com lembrete no horário escolhido. */
+ export function gerarIcs(calculo: CalculoPlano, plano: PlanoSalvo, hora: number): string {
+   const p2 = (n: number) => String(n).padStart(2, '0')
+   const data = (d: Date) => `${d.getFullYear()}${p2(d.getMonth() + 1)}${p2(d.getDate())}`
+@@ -492,7 +552,7 @@ export function gerarIcs(calculo: CalculoPlano, plano: PlanoSalvo, hora: number)
+   for (const d of calculo.dias) {
+     if (!d.total && !d.mini) continue
+     const nomes = juntar(d.itens.map((i) => i.nome))
+-    evento(d.data, `Orto Questões: ${d.total} questões${nomes ? ` · ${nomes}` : ''}${d.mini ? ' + mini-simulado' : ''}`, d.itens.map((i) => `${i.nome}: ${i.assuntos.slice(0, 3).join(', ')}`).join('\n'), `cronograma-${data(d.data)}`)
++    evento(d.data, `Orto Questões: ${d.total} questões${nomes ? ` · ${nomes}` : ''}${d.mini ? ` + ${NOME_TESTE.toLowerCase()}` : ''}`, d.itens.map((i) => `${i.nome}: ${i.assuntos.slice(0, 3).join(', ')}`).join('\n'), `cronograma-${data(d.data)}`)
+   }
+   if (!calculo.naRetaFinal) evento(calculo.inicioRetaFinal, 'Orto Questões: começa a reta final', 'Revisão forte e modo prova, sem conteúdo novo.', `cronograma-reta-${data(calculo.inicioRetaFinal)}`)
+   const extra = plano.opcoes?.provaExtra
+diff --git a/src/paginas/PlanoEstudo.tsx b/src/paginas/PlanoEstudo.tsx
+index 814b9e3..990c4b8 100644
+--- a/src/paginas/PlanoEstudo.tsx
++++ b/src/paginas/PlanoEstudo.tsx
+@@ -11,13 +11,13 @@ import { usarArmazenado } from '../estado/usarArmazenado'
+ import type { RegistroQuestao } from '../estado/revisao'
+ import { lerHistorico, usarSessao } from '../estado/sessao'
+ import type { EstadoSessao } from '../dados/tipos'
+-import { calcularPlano, diasAte, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
++import { calcularPlano, diasAte, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, NOME_TESTE, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+ import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
+ import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
+ import { idsRevisaoHoje } from '../estado/planoRevisao'
+ import { usarRitmoRevisao } from '../estado/preferencias'
+ import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, HojeRetaFinal, MapaRisco } from './CronogramaHub'
+-import { CartaoHoje, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
++import { CartaoHoje, CartaoTeste, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
+ import { corDaArea } from '../dados/coresAreas'
+ import { CalendarioCronograma } from './CronogramaCalendario'
+ import '../estilos/paginas/CronogramaPainel.css'
+@@ -199,13 +199,16 @@ export function PlanoEstudo() {
+     navegar('/sessao')
+   }
+ 
+-  /** Mini-simulado: 30 questões já vistas, cronometradas (1,5 min cada). */
++  /**
++   * Teste do cronograma: 30 questões já vistas, cronometradas (1,5 min cada), com a mistura de
++   * áreas da prova. Conta como feito no fim (Resumo.tsx, FimTeste), com pelo menos metade
++   * respondida; antes, contava ao começar, mesmo se a pessoa desistisse no meio.
++   */
+   async function comecarMini() {
+     if (!indice) return
+     const ids = idsMiniSimulado(indice, respondidas)
+     if (!ids.length) return
+     if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90) }))) return
+-    marcarFeito('mini')
+     navegar('/sessao')
+   }
+ 
+@@ -311,7 +314,7 @@ export function PlanoEstudo() {
+   )
+ }
+ 
+-/** O que a pessoa marcou como feito hoje fora das questões (flashcards, mini-simulado). O resumão tem registro próprio (estado/resumaoLido). */
++/** O que a pessoa marcou como feito hoje fora das questões (flashcards, teste do cronograma). O resumão tem registro próprio (estado/resumaoLido). */
+ interface FeitosDoDia { data: string; flashcards?: boolean; mini?: boolean }
+ const chaveHoje = () => { const d = diaCivil(); return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}` }
+ /** As marcas de hoje guardadas neste aparelho (as chaves antigas, que continuam valendo offline). */
+@@ -407,6 +410,8 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
+   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
+   const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
+   const feitos = hub?.feitosDia ?? { data: '' }
++  // Teste do cronograma feito: o registro no plano (todos os aparelhos) ou a marca de hoje deste aparelho.
++  const testeFeito = calculo.testes.feitoHoje || !!feitos.mini || (!calculo.testes.hoje && !calculo.testes.pendente)
+   // Calendário do mês (16/10/2026): só no cronograma do assinante; #/cronograma?calendario=1 abre direto.
+   const temCalendario = aberto && !!indice && !!respondidas
+   const [calendarioAberto, definirCalendarioAberto] = useState(() => temCalendario && typeof location !== 'undefined' && location.hash.includes('calendario=1'))
+@@ -444,7 +449,8 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
+       minutos: calculo.adiantarFalta > 0 ? adiantando * minutos : null, estado: calculo.adiantarFalta > 0 ? (calculo.extraHoje > 0 ? 'agora' : 'afazer') : 'feito',
+       progresso: calculo.adiantarFalta > 0 ? { feitas: Math.min(calculo.extraHoje, adiantando), total: adiantando } : undefined,
+     })
+-    if (calculo.miniHoje) lista.push({ id: 'mini', titulo: aberto ? `Mini-simulado de ${TAMANHO_MINI} questões` : 'Mini-simulado', texto: 'Cronometrado, com o que você já viu nas últimas semanas, misturado como na prova. Os seus erros e dúvidas vêm primeiro.', minutos: aberto ? TAMANHO_MINI * 1.5 : null, estado: feitos.mini ? 'feito' : 'afazer', acao: aberto && hub ? { rotulo: 'Começar', aoClicar: hub.aoMini } : undefined })
++    // O teste tem cartão próprio logo abaixo (CartaoTeste), com o botão e o resultado anterior.
++    if (calculo.miniHoje) lista.push({ id: 'mini', titulo: aberto ? `${NOME_TESTE}: ${TAMANHO_MINI} questões` : NOME_TESTE, texto: aberto ? 'Cronometrado, com a mistura de áreas da prova. Detalhes e botão logo abaixo.' : 'Cronometrado, com o que você já viu, misturado como na prova.', minutos: aberto ? TAMANHO_MINI * 1.5 : null, estado: testeFeito ? 'feito' : 'afazer' })
+   }
+   if (hub && !calculo.provaPassou && !calculo.naRetaFinal) {
+     // Revisões e flashcards ajudam a fixar, mas não são obrigatórios: ficam à parte, sem contar na meta.
+@@ -461,13 +467,16 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
+     const so = calculo.faltaHoje === 0
+     botao = { rotulo: so ? `Continuar: faltam ${n} adiantadas` : calculo.feitasHoje > 0 ? `Continuar: faltam ${n} questões` : `Começar: ${n} questões`, detalhe: `${principal ? `${principal.nome}${mistura.length ? ` + ${mistura.map((m) => m.nome).join(' e ')}` : ''}` : 'Do cronograma'}${calculo.adiantarFalta > 0 && !so ? `, com ${calculo.adiantarFalta} adiantadas` : ''} · ~${formatarTempo(n * minutos)}`, aoClicar: aoComecar }
+   }
+-  else if (calculo.miniHoje && !feitos.mini && hub) botao = { rotulo: 'Fazer o mini-simulado', detalhe: `${TAMANHO_MINI} questões · ~45 min`, aoClicar: hub.aoMini }
++  else if ((calculo.testes.hoje || calculo.testes.pendente) && !testeFeito && hub && !calculo.provaPassou && !naRetaFinalComRoteiro) botao = { rotulo: `Fazer o ${NOME_TESTE.toLowerCase()}`, detalhe: `${TAMANHO_MINI} questões · ~${formatarTempo(TAMANHO_MINI * Math.max(1.5, minutos))}`, aoClicar: hub.aoMini, ouro: true }
+   // Meta feita: o destaque passa a ser o painel de adiantar (e as revisões ficam como extra, sem cobrança).
+   const podeAdiantar = aberto && !!aoAdiantar && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
+   const painelAdiantar = podeAdiantar && hub ? <PainelAdiantar calculo={calculo} minutos={minutos} destaque={!botao} salvando={hub.salvandoOpcoes} aoAdiantar={aoAdiantar!} aoCancelar={hub.aoCancelarAdiantar} /> : null
+ 
+-  const tituloHoje = calculo.provaPassou ? 'A prova chegou' : folgaHoje ? 'Hoje é folga' : !aberto && principal ? principal.nome : calculo.restante === 0 && !calculo.naRetaFinal ? 'Você cumpriu o cronograma inteiro' : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Hoje já está adiantado' : metaFeita && !calculo.miniHoje ? 'Meta de hoje feita' : principal ? principal.nome : calculo.miniHoje ? 'Dia de mini-simulado' : 'Hoje'
+-  const porQue = folgaHoje ? 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias. Se quiser, adiante o próximo dia de estudo.'
++  const acoesCalendario = { aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, aoTeste: hub?.aoMini, testeFeitoAqui: !!feitos.mini, salvando: hub?.salvandoOpcoes }
++  const tituloHoje = calculo.diasAteProva < 0 ? 'A prova passou' : calculo.provaPassou ? 'A prova chegou' : folgaHoje ? 'Hoje é folga' : !aberto && principal ? principal.nome : calculo.restante === 0 && !calculo.naRetaFinal ? 'Você cumpriu o cronograma inteiro' : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Hoje já está adiantado' : metaFeita && !calculo.miniHoje ? 'Meta de hoje feita' : principal ? principal.nome : calculo.miniHoje ? `Dia de ${NOME_TESTE}` : 'Hoje'
++  const porQue = calculo.diasAteProva < 0 ? (aberto && aoAjustar ? 'Para continuar estudando com o cronograma, escolha a data da próxima prova em Ajustar.' : '')
++    : calculo.provaPassou ? 'Hoje não tem meta: confie no que você estudou.'
++    : folgaHoje ? 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias. Se quiser, adiante o próximo dia de estudo.'
+     : !aberto ? (principal ? porQueHoje(calculo, principal.slug, plano.prova, true) : '')
+     : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Você fez as questões de hoje num dia anterior. Pode descansar ou adiantar mais.'
+     : metaFeita ? `Feito: ${calculo.metaDiaria} questões. Revisões e flashcards são extras, se sobrar tempo.`
+@@ -477,7 +486,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
+ 
+   return <>
+     {calendarioAberto && temCalendario && <CalendarioCronograma plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
+-      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} aoFechar={fecharCalendario} />}
++      acoes={acoesCalendario} aoFechar={fecharCalendario} />}
+     {aberto && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
+     {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
+     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
+@@ -486,10 +495,11 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
+ 
+     <div className="cp-colunas">
+       <div className="cp-col cp-col--principal">
+-        <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
++        <div className="cp-ordem-1 cp-hoje-pilha">{naRetaFinalComRoteiro && hub
+           ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} minutos={minutos} />
+           : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar}
+-            aviso={folgaHoje && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar as folgas?</span><button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : undefined} />}</div>
++            aviso={calculo.diasAteProva < 0 && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Escolha a nova data e o plano recomeça de onde você está.</span><button type="button" className="botao botao--principal" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Escolher a próxima prova</button></p> : folgaHoje && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar as folgas?</span><button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : undefined} />}
++          {aberto && hub && <CartaoTeste calculo={calculo} feitoAqui={!!feitos.mini} aoFazer={hub.aoMini} minutos={minutos} />}</div>
+         {(hub?.mostrarDiagnostico || (hub?.esquecidos.length ?? 0) > 0) && <div className="cp-ordem-2">
+           {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
+           {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
+@@ -507,7 +517,9 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
+       </div>
+       <div className="cp-col cp-col--lado">
+         {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
+-        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} aoVerCalendario={abrirCalendario} /></div>}
++        {/* O calendário do mês em evidência (redesenho de 16/10/2026): logo depois de "Amanhã", com tela cheia à parte. */}
++        {temCalendario && !calculo.provaPassou && <div className="cp-ordem-4"><CalendarioCronograma modo="embutido" plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0} acoes={acoesCalendario} aoExpandir={abrirCalendario} /></div>}
++        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} aoVerCalendario={temCalendario ? undefined : abrirCalendario} /></div>}
+         {!calculo.provaPassou && <div className="cp-ordem-5">{aberto
+           ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} aoVerCalendario={abrirCalendario} />
+           : <div className="cp-previa-depois">
+@@ -515,7 +527,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
+                 <li>Amanhã e as semanas até a prova, com os marcos</li>
+                 <li>A sua data, o seu tempo por dia, folgas e dias de plantão</li>
+                 <li>Ajuste automático quando atrasa ou adianta</li>
+-                <li>Semana difícil, mini-simulados e reta final</li>
++                <li>Calendário do mês, Testes do cronograma, semana difícil e reta final</li>
+                 <li>Desempenho, prontidão e mapa de risco por área</li>
+               </ul>} acao={null}>
+                 <Depois calculo={calculo} plano={plano} maximo={3} semMais />
+diff --git a/src/paginas/Resumo.tsx b/src/paginas/Resumo.tsx
+index 3fa7a6f..61d580e 100644
+--- a/src/paginas/Resumo.tsx
++++ b/src/paginas/Resumo.tsx
+@@ -22,7 +22,10 @@ import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
+ import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
+ import { conviteDiarioMostradoHoje } from '../componentes/ConviteDiario'
+ import { lerBloqueioDiario } from '../estado/limiteDiario'
+-import { chaveCivil, hojeBR, somarDias } from '../util/dia'
++import { chaveCivil, hojeBR, somarDias, diaCivil } from '../util/dia'
++import { guardarTeste } from '../conta/cronograma'
++import { gravar, ler } from '../estado/armazenamento'
++import { NOME_TESTE, TAMANHO_MINI } from '../dados/planoEstudo'
+ import '../estilos/componentes/EsperaPixel.css'
+ import '../estilos/paginas/Resumo.css'
+ 
+@@ -278,7 +281,8 @@ export function Resumo() {
+   }
+ 
+   const mostrarBatalha = !emAndamento && !sessao.nacional && pct !== null && !!batalha
+-  const metaCumprida = sessao.origem === 'cronograma' && !!cronograma.calculo && cronograma.calculo.metaDiaria > 0 && cronograma.calculo.feitasHoje >= cronograma.calculo.metaDiaria
++  const ehTeste = sessao.origem === 'cronograma' && !!sessao.simulado
++  const metaCumprida = !ehTeste && sessao.origem === 'cronograma' && !!cronograma.calculo && cronograma.calculo.metaDiaria > 0 && cronograma.calculo.feitasHoje >= cronograma.calculo.metaDiaria
+   const quando = new Date(fim).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' })
+   const hora = new Date(fim).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+ 
+@@ -357,7 +361,8 @@ export function Resumo() {
+         {metaCumprida && <div className="rs-loot"><IconePixel nome="planos" tamanho={56} /><div><span className="rs-loot__tag">Baú da meta</span><strong>Meta de hoje cumprida</strong><small>{cronograma.calculo!.feitasHoje} de {cronograma.calculo!.metaDiaria} questões do cronograma.</small></div></div>}
+       </section>}
+ 
+-      {!emAndamento && sessao.origem === 'cronograma' && cronograma.calculo && !cronograma.calculo.naRetaFinal && <FimCronograma calculo={cronograma.calculo} />}
++      {!emAndamento && ehTeste && <FimTeste sessao={sessao} plano={cronograma.plano} premium={cronograma.premium} />}
++      {!emAndamento && !ehTeste && sessao.origem === 'cronograma' && cronograma.calculo && !cronograma.calculo.naRetaFinal && <FimCronograma calculo={cronograma.calculo} />}
+       {!emAndamento && sessao.origem === 'diagnostico' && (
+         <section className="cartao cartao__corpo rs-diagnostico" aria-label="Diagnóstico concluído">
+           <div><strong>Diagnóstico concluído</strong><p className="texto-2">O cronograma já usou o seu resultado: as áreas em que você foi pior ganham mais espaço desde hoje. Veja o seu acerto por área e o mapa de risco no painel.</p></div>
+@@ -585,6 +590,49 @@ export function Resumo() {
+   )
+ }
+ 
++/**
++ * Fim do teste do cronograma (16/10/2026): o resultado vai para o plano (vale em todos os
++ * aparelhos e marca o teste como feito) e os erros já entram na revisão, pela regra de sempre
++ * (errou, a questão volta hoje). Antes, o teste contava como feito ao começar, mesmo se a
++ * pessoa desistisse no meio, e o fim mostrava "faltam N para a meta", como numa sessão comum.
++ * Conta como feito com pelo menos metade das questões respondidas.
++ */
++function FimTeste({ sessao, plano, premium }: { sessao: EstadoSessao; plano: ReturnType<typeof usarCronogramaHoje>['plano']; premium: boolean }) {
++  const respostas = Object.values(sessao.respostas)
++  const n = respostas.filter((r) => r.correta !== null).length
++  const certas = respostas.filter((r) => r.correta === true).length
++  const erros = respostas.filter((r) => r.correta === false).length
++  const valeu = n >= Math.ceil(sessao.ids.length / 2)
++  const em = hojeBR(sessao.concluidaEm ?? Date.now())
++  const anteriores = (plano?.opcoes?.testes ?? []).filter((t) => t.em < em && t.n > 0)
++  const ultimo = anteriores[anteriores.length - 1]
++  const pct = n ? Math.round((certas / n) * 100) : 0
++  const pctAntes = ultimo ? Math.round((ultimo.certas / ultimo.n) * 100) : null
++  useEffect(() => {
++    if (!valeu) return
++    // A marca do aparelho (offline) e o registro no plano (todos os aparelhos).
++    const d = diaCivil(sessao.concluidaEm ?? Date.now())
++    const chave = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`
++    const atual = ler<{ data: string; mini?: boolean }>('cronograma:dia', { data: '' })
++    if (atual.data !== chave || !atual.mini) gravar('cronograma:dia', { ...(atual.data === chave ? atual : { data: chave }), mini: true })
++    if (premium && plano) guardarTeste({ em, n, certas }).catch(() => undefined)
++  }, [valeu, premium, !!plano]) // eslint-disable-line react-hooks/exhaustive-deps
++  return (
++    <section className={'rs-cronograma' + (valeu ? ' rs-cronograma--feita' : '')} aria-labelledby="rs-teste-titulo">
++      <span className="rs-cronograma__selo" aria-hidden="true">{valeu ? <Icone nome="certo" tamanho={28} /> : <span className="numerico">{n}</span>}</span>
++      <h2 id="rs-teste-titulo">{valeu ? `${NOME_TESTE}: ${pct}% de acerto` : `${NOME_TESTE} pela metade`}</h2>
++      <p>{certas} de {n} {n === 1 ? 'questão' : 'questões'} certas{pctAntes !== null ? <> · no teste anterior, <b>{pctAntes}%</b>{pct > pctAntes ? ' (subiu)' : pct < pctAntes ? ' (caiu)' : ''}</> : null}.</p>
++      <div className="rs-cronograma__proximo">
++        {valeu
++          ? <>{erros > 0 ? <>Os <b>{erros} {erros === 1 ? 'erro volta' : 'erros voltam'} na revisão</b>, a partir de hoje, como qualquer erro. </> : <>Nenhum erro: nada novo para revisar. </>}O resultado fica no seu cronograma, para comparar com o próximo teste.</>
++          : <>Responda pelo menos {Math.ceil(sessao.ids.length / 2)} das {sessao.ids.length || TAMANHO_MINI} questões para o teste contar como feito. Ele continua no seu cronograma por alguns dias.</>}
++      </div>
++      <a className="botao botao--grande botao--principal" href={href('/cronograma')}>Voltar ao cronograma</a>
++      {erros > 0 && <span className="rs-cronograma__link"><a href={href('/revisao')}>Revisar os erros agora</a></span>}
++    </section>
++  )
++}
++
+ /**
+  * Fim de uma sessão do cronograma (reforma de 14/10/2026): diz se a meta de
+  * hoje foi feita, o que ainda falta hoje e o que vem amanhã, com um botão só.
+@@ -603,7 +651,7 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
+       <div className="rs-cronograma__proximo">
+         {fraseAdiantado(calculo) && <><b>{fraseAdiantado(calculo)}</b><br /></>}
+         {feita ? <>Pronto por hoje. Se quiser, <b>adiante o próximo dia</b>: o que fizer a mais sai dele. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
+-        {amanha && <><br />{chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
++        {amanha && <><br />{chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || NOME_TESTE.toLowerCase()}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ` e o ${NOME_TESTE.toLowerCase()}` : ''}</>}.</>}
+       </div>
+       <a className={'botao botao--grande ' + (feita ? 'botao--ouro' : 'botao--principal')} href={href(feita ? '/cronograma?adiantar=1' : '/cronograma')}>{feita ? 'Adiantar o próximo dia' : 'Continuar o cronograma'}</a>
+       {feita && <span className="rs-cronograma__link"><a href={href('/cronograma')}>Voltar ao cronograma</a> · <a href={href('/revisao')}>revisões (opcional)</a></span>}
+diff --git a/src/paginas/Revisao.tsx b/src/paginas/Revisao.tsx
+index a019997..2f45280 100644
+--- a/src/paginas/Revisao.tsx
++++ b/src/paginas/Revisao.tsx
+@@ -18,9 +18,12 @@ import { usarArmazenado } from '../estado/usarArmazenado'
+ import { FLASHCARDS_LIBERADO, recurso } from '../config'
+ import { CHAVE_REGISTROS, type RegistroFlashcard } from '../flashcards/progresso'
+ import '../estilos/paginas/Revisao.css'
++import '../estilos/paginas/CronogramaPainel.css'
++import '../estilos/paginas/CronogramaCalendario.css'
+ 
+ const DIA = 86400000
+ const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
++const SEMANA_SEG = ['seg', 'ter', 'qua', 'qui', 'sex', 'sáb', 'dom']
+ const TETOS: Array<number | null> = [15, 20, 30, 50, null]
+ const FORMATO_MES = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric', timeZone: FUSO_DIA })
+ const FORMATO_HOJE = new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', timeZone: FUSO_DIA })
+@@ -128,10 +131,24 @@ export function Revisao() {
+   const celulasMes = useMemo(() => {
+     const chaveMes = anoMes(mesExibido); const [ano, mes] = chaveMes.split('-').map(Number)
+     const diasNoMes = new Date(Date.UTC(ano, mes, 0)).getUTCDate()
+-    const celulas: (number | null)[] = Array.from({ length: diaDaSemana(`${chaveMes}-01`) }, () => null)
++    // Semana de segunda a domingo, como no calendário do cronograma.
++    const celulas: (number | null)[] = Array.from({ length: (diaDaSemana(`${chaveMes}-01`) + 6) % 7 }, () => null)
+     for (let d = 1; d <= diasNoMes; d++) celulas.push(inicioDaChave(`${chaveMes}-${String(d).padStart(2, '0')}`))
++    while (celulas.length % 7) celulas.push(null)
+     return celulas
+   }, [mesExibido])
++  const resumoMesRev = useMemo(() => {
++    let previstas = 0, feitas = 0, dias = 0
++    for (const data of celulasMes) {
++      if (data === null) continue
++      const k = chaveDia(data)
++      const carga = data >= inicioDia() ? plano.get(k)?.ids.length ?? 0 : 0
++      const f = data <= inicioDia() ? resumo.porDia.get(k) ?? 0 : 0
++      previstas += carga; feitas += f
++      if (carga || f) dias++
++    }
++    return { previstas, feitas, dias }
++  }, [celulasMes, plano, resumo])
+   const irParaMes = (delta: number) => definirMesExibido((atual) => inicioDaChave(`${somarMeses(atual, delta)}-01`))
+   const pendentes = [...plano.values()].reduce((n, d) => n + d.ids.length, 0)
+   const incertas = Object.values(contexto.respondidas).filter(r => r.confianca === 'duvida' || r.confianca === 'chute').length
+@@ -263,48 +280,76 @@ export function Revisao() {
+       </ol>
+     </section>
+ 
+-    <section className="cartao cartao__corpo rvx-calendario">
+-      <div className="entre">
+-        <div><p className="meta">CALENDÁRIO</p><h2>{capitalizar(FORMATO_MES.format(mesExibido))}</h2></div>
+-        <div className="calendario__nav">
+-          <button type="button" className="botao-icone" onClick={() => irParaMes(-1)} disabled={mesExibido <= mesMinimo} aria-label="Mês anterior"><Icone nome="esquerda" /></button>
+-          <button type="button" className="botao-icone" onClick={() => irParaMes(1)} disabled={mesExibido >= mesLimite} aria-label="Próximo mês"><Icone nome="direita" /></button>
++    {/* Calendário no estilo do calendário do cronograma (16/10/2026): por dia, quantas revisões vencem,
++        quantas foram feitas, hoje e as folgas do ritmo; tocar num dia mostra o que ele tem. */}
++    <section className="cartao rvx-calendario rc-calendario cp" aria-labelledby="rc-titulo">
++      <header className="cc-topo cc-topo--embutido">
++        <div className="cc-topo__titulo">
++          <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> Calendário da revisão</p>
++          <h2 id="rc-titulo" aria-live="polite">{capitalizar(FORMATO_MES.format(mesExibido))}</h2>
++          <p className="cc-topo__resumo">
++            {resumoMesRev.previstas > 0 && <span><b className="numerico">{resumoMesRev.previstas.toLocaleString('pt-BR')}</b> {resumoMesRev.previstas === 1 ? 'revisão prevista' : 'revisões previstas'}</span>}
++            {resumoMesRev.feitas > 0 && <span><b className="numerico">{resumoMesRev.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
++            {resumoMesRev.dias > 0 && <span>{resumoMesRev.dias} {resumoMesRev.dias === 1 ? 'dia' : 'dias'} com revisão</span>}
++          </p>
+         </div>
+-      </div>
+-      <div className="rvx-legenda" aria-hidden="true">
+-        <span><i className="rvx-legenda__feito" /> revisões feitas</span>
+-        <span>previstas <i className="rvx-nivel-1" /><i className="rvx-nivel-2" /><i className="rvx-nivel-3" /><i className="rvx-nivel-4" /> mais</span>
+-      </div>
+-      <div className="calendario__cabecalho">{DIAS_SEMANA.map(d => <span key={d}>{d}</span>)}</div>
+-      <div className="calendario rvx-mes" role="grid" aria-label="Calendário de revisões">
+-        {celulasMes.map((data, i) => {
+-          if (data === null) return <span key={`vazio-${i}`} className="calendario__vazio" aria-hidden="true" />
+-          const k = chaveDia(data)
+-          const passado = data < hoje
+-          const carga = plano.get(k)?.ids.length ?? 0
+-          const feitas = resumo.porDia.get(k) ?? 0
+-          const folga = ritmo.folgas.includes(diaDaSemana(k))
+-          const classe = passado ? (feitas ? 'rvx-dia--feito' : 'rvx-dia--vazio') : `rvx-nivel-${nivelCarga(carga)}`
+-          const rotulo = passado ? `${rotuloDia(data)}: ${feitas ? `${feitas} revisões feitas` : 'sem revisões'}` : `${rotuloDia(data)}: ${folga && !carga ? 'folga' : questoes(carga)}`
+-          return <button key={data} type="button" aria-label={rotulo} title={rotulo}
+-            className={`calendario__dia rvx-dia ${classe}${data === hoje ? ' rvx-dia--hoje' : ''}${selecionado === data ? ' calendario__dia--selecionado' : ''}`}
+-            disabled={passado} onClick={() => definirSelecionado(data)}>
+-            <strong>{Number(k.slice(8))}</strong>
+-            <small>{passado ? (feitas ? <><Icone nome="certo" tamanho={11} />{feitas}</> : '') : folga && !carga ? 'folga' : carga || ''}</small>
+-          </button>
+-        })}
+-      </div>
+-      <div className="revisao-detalhe rvx-detalhe">
+-        <p className="meta">{capitalizar(rotuloDia(selecionado))}{selecionado === hoje ? ' · hoje' : ''}</p>
+-        <h3>{dia?.ids.length ? `${questoes(dia.ids.length)} · ~${minutosPara(dia.ids.length)} min` : 'Nenhuma revisão programada'}</h3>
+-        {dia?.ids.length ? <>
+-          <p className="texto-2">{dia.inicio === hoje && dia.atrasadas ? `${dia.atrasadas} vencidas foram trazidas para hoje. ` : dia.inicio > hoje && dia.redistribuidas ? `${dia.redistribuidas} vieram de dias anteriores pelo seu ritmo. ` : ''}Acerto histórico nelas: {dia.tentativas ? Math.round(dia.acertos / dia.tentativas * 100) : 0}%.</p>
+-          <div className="chips">{[...dia.temas.entries()].sort((a, b) => b[1] - a[1]).map(([tema, n]) => <span key={tema}>{tema} · {n}</span>)}</div>
+-          <div className="linha linha--empilha-celular">
+-            <button className="botao botao--principal" onClick={() => iniciarIds(dia.ids)}>{dia.inicio === hoje ? 'Revisar as de hoje' : 'Adiantar este dia'}</button>
+-            {dia.ids.length > REVISOES_CINCO_MINUTOS && <button className="botao" onClick={() => iniciarIds(dia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>Só 5 minutos ({REVISOES_CINCO_MINUTOS})</button>}
++        <div className="cc-nav">
++          <button type="button" className="cc-nav__botao" onClick={() => irParaMes(-1)} disabled={mesExibido <= mesMinimo} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
++          <button type="button" className="cc-nav__hoje" onClick={() => { definirMesExibido(inicioMes(hoje)); definirSelecionado(hoje) }}>Hoje</button>
++          <button type="button" className="cc-nav__botao" onClick={() => irParaMes(1)} disabled={mesExibido >= mesLimite} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
++        </div>
++      </header>
++      <div className="cc-corpo rc-corpo">
++        <div className="cc-mes">
++          <ol className="cc-semana" aria-hidden="true">{SEMANA_SEG.map((d) => <li key={d}>{d}</li>)}</ol>
++          <ol key={mesExibido} className="cc-grade" aria-label="Calendário de revisões">
++            {celulasMes.map((data, i) => {
++              if (data === null) return <li key={`vazio-${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />
++              const k = chaveDia(data)
++              const passado = data < hoje
++              const carga = plano.get(k)?.ids.length ?? 0
++              const feitas = resumo.porDia.get(k) ?? 0
++              const folga = ritmo.folgas.includes(diaDaSemana(k))
++              const ehHoje = data === hoje
++              const estado = ehHoje ? 'hoje' : passado ? (feitas ? 'feito' : 'fora') : folga && !carga ? 'folga' : carga ? 'futuro' : 'livre'
++              const texto = ehHoje ? (carga ? `${carga} rev.` : feitas ? `${feitas} feitas` : '') : passado ? (feitas ? `${feitas} feitas` : '') : folga && !carga ? 'folga' : carga ? `${carga} rev.` : ''
++              const rotulo = passado ? `${rotuloDia(data)}: ${feitas ? `${feitas} revisões feitas` : 'sem revisões'}` : `${rotuloDia(data)}: ${folga && !carga ? 'folga' : carga ? questoes(carga) : 'nenhuma revisão'}${ehHoje && feitas ? `, ${feitas} feitas` : ''}`
++              return <li key={data} className={`cc-dia cc-dia--${estado} rc-nivel-${nivelCarga(carga)}${selecionado === data ? ' cc-dia--selecionado' : ''}`}>
++                <button type="button" aria-label={rotulo} aria-pressed={selecionado === data} title={rotulo} disabled={passado && !feitas} onClick={() => definirSelecionado(data)}>
++                  <span className="cc-dia__topo">
++                    <b className="cc-dia__num">{Number(k.slice(8))}</b>
++                    {(estado === 'feito' || (ehHoje && feitas > 0)) && <span className="cc-dia__selo cc-dia__selo--feito" aria-hidden="true"><Icone nome="certo" tamanho={11} /></span>}
++                    {ehHoje && <span className="cc-dia__hoje">hoje</span>}
++                  </span>
++                  <span className="cc-dia__rodape">{texto && <em data-curto={texto.match(/^\d+/)?.[0] ?? (texto === 'folga' ? '' : texto)}><span>{texto}</span></em>}</span>
++                  {!passado && carga > 0 && <span className="cc-dia__faixa rc-faixa" aria-hidden="true" />}
++                </button>
++              </li>
++            })}
++          </ol>
++          <div className="cc-legenda">
++            <ul className="cp-legenda cc-legenda__marcas" aria-label="Legenda">
++              <li><b className="cc-legenda__numero numerico">12</b>revisões que vencem</li>
++              <li><i className="cc-legenda__feito" />revisões feitas</li>
++              <li><i className="cc-legenda__hoje" />hoje</li>
++              <li><i className="cp-legenda__folga" />folga do ritmo</li>
++              <li className="rc-legenda-carga">poucas <i className="rc-nivel-1" /><i className="rc-nivel-2" /><i className="rc-nivel-3" /><i className="rc-nivel-4" /> muitas</li>
++            </ul>
+           </div>
+-        </> : <p className="texto-2">Escolha outro dia no calendário ou avance com novas questões.</p>}
++        </div>
++        <div className={'cc-detalhe rvx-detalhe' + (selecionado === hoje ? ' cc-detalhe--hoje' : '')} aria-live="polite">
++          <p className="cc-detalhe__data">{rotuloDia(selecionado)}{selecionado === hoje && <span className="cc-detalhe__agora">hoje</span>}</p>
++          <h3>{selecionado < hoje ? (resumo.porDia.get(chaveDia(selecionado)) ? `${questoes(resumo.porDia.get(chaveDia(selecionado))!)} revisadas` : 'Sem revisões') : dia?.ids.length ? `${questoes(dia.ids.length)} · ~${minutosPara(dia.ids.length)} min` : ritmo.folgas.includes(diaDaSemana(chaveDia(selecionado))) ? 'Folga do seu ritmo' : 'Nenhuma revisão programada'}</h3>
++          {selecionado < hoje ? <p className="cc-detalhe__sub">Revisões feitas neste dia. Cada uma conta para a sua sequência e os emblemas de revisão.</p>
++          : dia?.ids.length ? <>
++            <p className="cc-detalhe__sub">{dia.inicio === hoje && dia.atrasadas ? `${dia.atrasadas} vencidas foram trazidas para hoje. ` : dia.inicio > hoje && dia.redistribuidas ? `${dia.redistribuidas} vieram de dias anteriores pelo seu ritmo. ` : ''}Acerto histórico nelas: {dia.tentativas ? Math.round(dia.acertos / dia.tentativas * 100) : 0}%.{selecionado === hoje && feitasHoje > 0 ? ` Você já fez ${feitasHoje} hoje.` : ''}</p>
++            <ul className="cc-detalhe__lista">{[...dia.temas.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([tema, n]) => <li key={tema} className="cc-detalhe__item"><i aria-hidden="true" /><span><strong>{questoes(n)} de {tema}</strong></span><em>~{minutosPara(n)} min</em></li>)}</ul>
++            <div className="rc-acoes">
++              <button className="cp-botao" onClick={() => iniciarIds(dia.ids)}>{dia.inicio === hoje ? 'Revisar as de hoje' : 'Adiantar este dia'}<small>{questoes(dia.ids.length)} · ~{minutosPara(dia.ids.length)} min</small></button>
++              {dia.ids.length > REVISOES_CINCO_MINUTOS && <button className="botao" onClick={() => iniciarIds(dia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>Só 5 minutos ({REVISOES_CINCO_MINUTOS})</button>}
++            </div>
++          </> : <p className="cc-detalhe__sub">{ritmo.folgas.includes(diaDaSemana(chaveDia(selecionado))) ? 'O que venceria neste dia passa para o próximo dia de revisão.' : 'Escolha outro dia no calendário ou avance com novas questões.'}</p>}
++        </div>
+       </div>
+     </section>
+ 
