@@ -81,7 +81,7 @@ function Estante() {
       <header className="rs-topo">
         <p className="rs-topo__selo"><Icone nome="livro" tamanho={15} /> Biblioteca OrtoQuestões · Beta</p>
         <h1>Resumos que ensinam pelo que cai</h1>
-        <p>Capítulos dos livros de referência reescritos em português, na ordem em que as provas cobram, com as questões reais no meio do texto. Marque, anote e continue em qualquer aparelho.</p>
+        <p>Capítulos dos livros de referência reescritos em português, na ordem em que as provas cobram, com as questões reais no meio do texto. <b>Abertos para todos.</b> Marque, anote e continue em qualquer aparelho; resolver as questões citadas é do assinante.</p>
         <p className="rs-novidade"><i aria-hidden="true" /> Resumos novos estão sendo criados todas as semanas</p>
         <div className="rs-topo__acoes"><a className="botao" href={href('/resumos/caderno')}><Icone nome="lapis" tamanho={16} /> Meu caderno de estudo{marcas.length ? ` (${marcas.filter((m) => !m.marcador).length})` : ''}</a></div>
       </header>
@@ -117,14 +117,14 @@ function Estante() {
   )
 }
 
-function Livro({ c, fechado, premium, indice, leitura, marcas }: { c: ResumoCapitulo; fechado: boolean; premium: boolean; indice: Indice | null; leitura?: { progresso: number; concluidoEm?: number; bloco: string; em: number }; marcas: number }) {
+function Livro({ c, fechado, indice, leitura, marcas }: { c: ResumoCapitulo; fechado: boolean; premium?: boolean; indice: Indice | null; leitura?: { progresso: number; concluidoEm?: number; bloco: string; em: number }; marcas: number }) {
   const estado = leitura?.concluidoEm ? 'Concluído' : leitura?.em ? 'Em andamento' : 'Não iniciado'
   const historico = historicoCobranca(indice, c.questoes)
   return (
     <li className={'rs-livro' + (fechado ? ' rs-livro--fechado' : '')} style={{ ['--rs-area' as string]: corDaArea(c.especialidade) }}><a href={href(`/resumos/${c.id}`)}>
       <span className="rs-livro__lombada" aria-hidden="true" />
       <span className="rs-livro__corpo">
-        <small className="rs-livro__ref">{c.livro} · {c.edicao}{fechado ? <span className="rs-livro__cadeado"><Icone nome="cadeado" tamanho={13} /> Assinantes</span> : c.acesso === 'gratis' && !premium ? <span className="rs-livro__aberto">Aberto no plano gratuito</span> : null}</small>
+        <small className="rs-livro__ref">{c.livro} · {c.edicao}{fechado ? <span className="rs-livro__cadeado"><Icone nome="cadeado" tamanho={13} /> Assinantes</span> : null}</small>
         <strong>{c.titulo}</strong>
         <span className="rs-livro__resumo">{c.resumo}</span>
         <span className="rs-livro__meta">

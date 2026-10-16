@@ -5,8 +5,9 @@ Gera public/sitemap.xml e public/robots.txt.
 O aplicativo roda por hash (#/treinar, #/sobre) e o Google descarta o
 fragmento: para ele tudo isso é a raiz. O conteúdo que o buscador consegue
 ler e indexar está nas páginas estáticas de public/questoes/, geradas por
-gerar_paginas_seo.py — uma por assunto e uma por questão. Rode aquele script
-antes deste; no deploy os dois rodam em sequência.
+gerar_paginas_seo.py — uma por assunto e uma por questão —, nos guias, nas
+páginas de destino e nos resumos da Biblioteca (gerar_resumos_seo.py). Rode
+aqueles scripts antes deste; no deploy eles rodam em sequência.
 """
 
 from __future__ import annotations
@@ -26,6 +27,8 @@ PAGINAS_DESTINO = PAGINAS + PAGINAS_EXTRAS
 SITE = "https://ortoquestoes.com.br/"
 DIR_QUESTOES = DIR_PUBLICO / "questoes"
 DIR_GUIAS = DIR_PUBLICO / "guias"
+DIR_RESUMOS = DIR_PUBLICO / "resumos"
+INDICE_BIBLIOTECA = DIR_PUBLICO / "biblioteca" / "indice.json"
 ARQUIVO_GUIAS = DIR_GUIAS / "_seo.json"
 
 ROBOTS = f"""User-agent: *
@@ -92,6 +95,20 @@ def principal() -> int:
                 urls.append(entrada(f"{SITE}guias/{guia['arquivo']}", guia["atualizado_em"], "monthly", "0.7"))
         else:
             print("aviso: manifesto dos guias não existe — rode gerar_guias_seo.py antes", file=sys.stderr)
+
+    # Resumos da Biblioteca (gerar_resumos_seo.py): só as pastas geradas, com a
+    # data da biblioteca. Como nos guias, /resumos/ e /resumos/<id>/ são as
+    # canônicas (nunca .../index.html).
+    if (DIR_RESUMOS / "index.html").exists():
+        try:
+            data_resumos = json.loads(INDICE_BIBLIOTECA.read_text(encoding="utf-8"))["geradoEm"][:10]
+        except (OSError, ValueError, KeyError, TypeError):
+            data_resumos = data
+        urls.append(entrada(f"{SITE}resumos/", data_resumos, "weekly", "0.8"))
+        for pasta in sorted(p for p in DIR_RESUMOS.iterdir() if (p / "index.html").exists()):
+            urls.append(entrada(f"{SITE}resumos/{pasta.name}/", data_resumos, "monthly", "0.8"))
+    else:
+        print("aviso: public/resumos/ não existe — rode gerar_resumos_seo.py antes", file=sys.stderr)
 
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', *urls, "</urlset>"]

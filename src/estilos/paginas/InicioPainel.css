@@ -342,7 +342,7 @@
 .ip-atalho--arte:hover::before { transform: scale(1.05); }
 .ip-atalho--arte small { color: rgba(255, 255, 255, 0.78); }
 /* Resumos (Biblioteca): capa de couro com filete dourado e três lombadas na estante. */
-.ip-atalho--resumos { overflow: hidden; isolation: isolate; border-color: #6b4a2a; color: #fff;
+.ip-atalho--resumos { isolation: isolate; box-shadow: 0 0 0 1px rgba(255, 150, 60, 0.25), 0 8px 26px rgba(255, 110, 30, 0.28); border-color: #6b4a2a; color: #fff;
   background: radial-gradient(120% 160% at 100% 0%, rgba(227, 184, 96, 0.22) 0%, transparent 55%), linear-gradient(135deg, #3a2414 0%, #24160c 100%); }
 .ip-atalho--resumos::after { content: ""; position: absolute; inset: 5px; z-index: -1; border: 1px solid rgba(227, 184, 96, 0.35); border-radius: 12px; pointer-events: none; }
 .ip-atalho--resumos:hover { color: #fff; border-color: #e3b860; }
@@ -489,3 +489,5 @@
   .ip-caminho--convite .ip-trilha { height: 128px; }
   .ip-trilha__convite { left: 2.8rem; right: 0; font-size: var(--meta); }
 }
+/* No celular o fogo do atalho Resumos sobe menos, para não cobrir os atalhos de cima. */
+@media (max-width: 64rem) { .ip-atalho--resumos .chama-pixel { --chama-altura: 26px !important; --chama-lados: 10px !important; } }

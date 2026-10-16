@@ -4,6 +4,7 @@ import { Icone } from '../componentes/Icone'
 import { corDaArea } from '../dados/coresAreas'
 import { hojeBR } from '../util/dia'
 import { href } from '../util/rotas'
+import { ChamaPixel } from '../componentes/ChamaPixel'
 import { ordemDoDia, resumosDosSubtemas, usarIndiceBiblioteca } from './recomendar'
 import type { Leitura, ResumoCapitulo } from './tipos'
 import { usarBiblioteca } from './usarBiblioteca'
@@ -42,7 +43,7 @@ export function CaixaResumos({ subtemasHoje }: { subtemasHoje: Set<string> }) {
     <section className="cp-bloco" aria-labelledby="bib-caixa-titulo">
       <p className="cp-rotulo"><span id="bib-caixa-titulo">Resumos <span className="cp-tag">Beta</span></span><a className="bib-caixa__todos" href={href('/resumos')}>Ver a biblioteca</a></p>
       <div className="bib-caixa">
-        {combina && <a className={'bib-destaque' + (fechado(combina) ? ' bib-destaque--fechado' : '')} href={href(`/resumos/${combina.id}`)} style={estiloArea(combina)}>
+        {combina && <div className="bib-destaque-fogo"><ChamaPixel altura={30} lados={10} forca={0.9} raio={14} /><a className={'bib-destaque' + (fechado(combina) ? ' bib-destaque--fechado' : '')} href={href(`/resumos/${combina.id}`)} style={estiloArea(combina)}>
           <span className="bib-destaque__lombada" aria-hidden="true" />
           <span className="bib-destaque__corpo">
             <span className="bib-destaque__selo"><Icone nome="alvo" tamanho={13} /> Combina com o tema de hoje</span>
@@ -54,7 +55,7 @@ export function CaixaResumos({ subtemasHoje }: { subtemasHoje: Set<string> }) {
               <span className="bib-destaque__acao">{fechado(combina) ? <><Icone nome="cadeado" tamanho={13} /> Assinantes</> : leituras[combina.id]?.progresso ? 'Continuar' : 'Ler antes das questões'} <Icone nome="direita" tamanho={14} /></span>
             </span>
           </span>
-        </a>}
+        </a></div>}
         {outros.length > 0 && <ul className="bib-pilha" aria-label={combina ? 'Outros resumos' : 'Resumos para ler'}>
           {outros.map((c) => <li key={c.id}><a href={href(`/resumos/${c.id}`)} style={estiloArea(c)}>
             <span className="bib-pilha__lombada" aria-hidden="true" />

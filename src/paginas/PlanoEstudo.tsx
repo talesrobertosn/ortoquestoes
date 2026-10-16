@@ -511,7 +511,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
         <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
           ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} minutos={minutos} />
           : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar}
-            aviso={folgaHoje && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar as folgas?</span><button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : undefined} />}</div>
+            aviso={folgaHoje && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar as folgas?</span><button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoHoje && !(leituras[resumoHoje.id]?.concluidoEm) ? <a className="cp-hoje__resumo" href={href(`/resumos/${resumoHoje.id}`)}><Icone nome="livro" tamanho={16} /><span><strong>Antes das questões, leia o resumo</strong><small>{resumoHoje.titulo} · ~{resumoHoje.minutos} min · o que já caiu, ano a ano</small></span><Icone nome="direita" tamanho={15} /></a> : undefined} />}</div>
         {(hub?.mostrarDiagnostico || (hub?.esquecidos.length ?? 0) > 0) && <div className="cp-ordem-2">
           {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
           {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
@@ -519,10 +519,10 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
         {aberto && !temCalendario && <div className="cp-ordem-6"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
       </div>
       <div className="cp-col cp-col--lado">
+        {!calculo.provaPassou && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasHoje} /></div>}
         {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
         {temCalendario && <div className="cp-ordem-4"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
         {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} compacta={temCalendario} /></div>}
-        {!calculo.provaPassou && <div className="cp-ordem-5"><CaixaResumos subtemasHoje={subtemasHoje} /></div>}
         {!calculo.provaPassou && !temCalendario && <div className="cp-ordem-5">{aberto
           ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} aoVerCalendario={abrirCalendario} />
           : <div className="cp-previa-depois">

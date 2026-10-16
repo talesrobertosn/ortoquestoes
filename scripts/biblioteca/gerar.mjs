@@ -14,8 +14,9 @@ const ORIGEM = join(RAIZ, 'conteudo/biblioteca')
 const DESTINO = join(RAIZ, 'public/biblioteca')
 const conferir = process.argv.includes('--conferir')
 const RADARES = new Set(['confirmado', 'fundamento', 'clinico', 'oportunidade'])
-/** Regra do Tales (16/10/2026): no plano gratuito, até 5 resumos abertos; os demais aparecem, mas só assinantes abrem. */
-const MAXIMO_GRATIS = 5
+/** Regra do Tales (16/10/2026, revista no mesmo dia): todos os resumos ficam abertos (também para o Google);
+ * resolver as questões citadas é do assinante. O limite antigo de 5 grátis deixou de valer. */
+const MAXIMO_GRATIS = Infinity
 
 const indice = JSON.parse(await readFile(join(RAIZ, 'public/acervo/indice.json'), 'utf8'))
 const porId = new Map(indice.questoes.map((q) => [q.id, q]))

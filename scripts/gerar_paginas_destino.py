@@ -413,7 +413,7 @@ def rodape() -> str:
     links = "".join(f'<a href="../{p}/">{esc(r)}</a>' for p, r in PAGINAS)
     return f"""</main>
 <footer><div class="env">
-<nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a><a href="../guias/cronograma-de-estudo-para-o-teot.html">Cronograma para o TEOT</a><a href="../sobre/">Sobre o Orto Questões</a><a href="../#/contato">Contato</a></nav>
+<nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../resumos/">Resumos de capítulos</a><a href="../guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a><a href="../guias/cronograma-de-estudo-para-o-teot.html">Cronograma para o TEOT</a><a href="../sobre/">Sobre o Orto Questões</a><a href="../#/contato">Contato</a></nav>
 <p><strong>Orto Questões</strong> (também escrito OrtoQuestões, ortoquestoes.com.br) é um banco de questões comentadas de ortopedia e traumatologia
 criado por um residente de ortopedia. As questões de prova são transcritas dos cadernos originais e o gabarito é o da banca; as
 marcadas como OrtoQuestões Simulados são autorais, elaboradas a partir da bibliografia de referência, sem caráter oficial nem
@@ -1229,6 +1229,18 @@ def llms(d: dict, paginas: list[dict], completo: bool) -> str:
         GUIAS = []
     for guia in GUIAS:
         linhas.append(f"- [{guia['headline']}]({SITE}guias/{guia['slug']}.html): {guia['description']}")
+    resumos = (ler_json(DIR_PUBLICO / "biblioteca" / "indice.json", {}) or {}).get("capitulos") or []
+    if resumos:
+        # Páginas de gerar_resumos_seo.py: o texto inteiro de cada resumo, aberto e grátis.
+        linhas += [
+            "",
+            "## Resumos de capítulos (leitura aberta)",
+            "",
+            f"- [Todos os resumos]({SITE}resumos/): resumos autorais de capítulos da bibliografia de ortopedia, com as questões reais "
+            "de prova que cobraram cada conceito. Não reproduzem o livro: cada um indica capítulo, edição e autores.",
+        ]
+        for r in resumos:
+            linhas.append(f"- [{r['titulo']}]({SITE}resumos/{r['id']}/): {r['livro']}, {r['edicao']}, {r['capitulo']}. {r['resumo']}")
     linhas += [
         "",
         "## Como descrever o site",
