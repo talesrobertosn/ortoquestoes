@@ -47,7 +47,7 @@ const ROTULOS_STATUS = {
   erro: 'Não foi possível sincronizar agora. Seu progresso continua neste navegador; tente novamente.', conflito: 'Há alterações simultâneas para conferir abaixo.',
 }
 const UFS = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO']
-const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 'Favorita', historico: 'Sessão' }
+const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 'Favorita', historico: 'Sessão', biblioteca: 'Resumo (marcação ou leitura)' }
 /** Seções de Minha conta: [id na URL (?secao=), ícone, nome, o que tem dentro]. */
 const SECOES_CONTA = [
   ['perfil', 'usuario', 'Perfil', 'Nome, etapa, serviço e contato'],

@@ -57,7 +57,23 @@ export interface StatusSync {
   rejeitados: { id: string; tipo: TipoSync; item: string; erro: string; em: number }[]
   /** Fim do último ciclo completo (enviou e recebeu), no relógio deste aparelho: só para o "sincronizado há X". */
   ultimaSincronia?: number
+  /** Tipos que o banco ainda não aceita (migração não colada): ficam pendentes neste aparelho, sem travar o resto. */
+  semServidor?: TipoSync[]
+  /** Quantos itens de cada tipo ainda não chegaram ao servidor. */
+  pendentesPorTipo?: Partial<Record<TipoSync, number>>
 }
+
+/**
+ * Banco sem a migração que criou o tipo (a Biblioteca, parte 29): a linha é recusada pelas
+ * restrições da tabela. Não é erro do item: ele fica na fila deste aparelho e volta a ser tentado.
+ */
+export function tipoAindaNaoAceito(tipo: TipoSync, erro: unknown): boolean {
+  if (tipo !== 'biblioteca') return false
+  const e = erro as { code?: string; message?: string; details?: string } | null
+  return e?.code === '23514' && /progresso_usuario_tipo_check|forma_documento/i.test(`${e?.message ?? ''} ${e?.details ?? ''}`)
+}
+/** De quanto em quanto tempo tenta de novo um tipo que o banco recusou por falta da migração. */
+const TENTAR_TIPO_DE_NOVO = 10 * 60_000
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
 /** Ajustes para os testes (prazo curto de cada pedido e intervalo); o site usa os padrões. */
 export interface OpcoesSincronizacao { prazo?: number; intervalo?: number }
@@ -83,8 +99,13 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
   const valido = () => ativo && usuarioLocal() === idUsuario
   const salvar = () => { if (valido()) gravar('sincronia:v1', estado, 'nuvem') }
   let detalhe: string | undefined
+  /** Tipo → quando o banco o recusou por falta da migração. */
+  const semServidor = new Map<TipoSync, number>()
+  const tipoBloqueado = (tipo: TipoSync) => { const em = semServidor.get(tipo); if (em === undefined) return false; if (Date.now() - em > TENTAR_TIPO_DE_NOVO) { semServidor.delete(tipo); return false } return true }
   const anunciar = (s: StatusSync['estado']) => {
-    if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto, detalhe: s === 'erro' || s === 'offline' ? detalhe : undefined, rejeitados: Object.entries(estado.rejeitados ?? {}).map(([id, r]) => ({ id, tipo: r.tipo, item: r.item, erro: r.erro, em: r.em })), ultimaSincronia })
+    const pendentesPorTipo: Partial<Record<TipoSync, number>> = {}
+    for (const p of Object.values(estado.pendentes)) pendentesPorTipo[p.tipo] = (pendentesPorTipo[p.tipo] ?? 0) + 1
+    if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto, detalhe: s === 'erro' || s === 'offline' ? detalhe : undefined, rejeitados: Object.entries(estado.rejeitados ?? {}).map(([id, r]) => ({ id, tipo: r.tipo, item: r.item, erro: r.erro, em: r.em })), ultimaSincronia, semServidor: [...semServidor.keys()], pendentesPorTipo })
   }
   const descrever = (erro: unknown) => {
     const e = erro as { message?: string; code?: string; details?: string; hint?: string; name?: string } | null
@@ -278,7 +299,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
       semearLocais()
       salvar()
       pronto = true
-      const fila = Object.values(estado.pendentes).filter(p => !estado.conflitos[identificador(p.tipo, p.item)]).slice(0, 100)
+      const fila = Object.values(estado.pendentes).filter(p => !estado.conflitos[identificador(p.tipo, p.item)] && !tipoBloqueado(p.tipo)).slice(0, 100)
       if (fila.length) {
         const resultado = await enviar(fila)
         if (!valido()) return
@@ -297,6 +318,8 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
             if ('docs' in individual) { aplicar(individual.docs, [alteracao]); salvar(); continue }
             if (individual.transitorio) throw individual.erro
             const id = identificador(alteracao.tipo, alteracao.item)
+            // Banco ainda sem a migração deste tipo: o item fica pendente aqui e o resto da fila segue.
+            if (tipoAindaNaoAceito(alteracao.tipo, individual.erro)) { semServidor.set(alteracao.tipo, Date.now()); continue }
             // A linha não existe no servidor (outra geração, conta recriada): sobe como item novo.
             if (versaoInicialInvalida(individual.erro) && estado.pendentes[id] && estado.pendentes[id].base !== 0) {
               estado.pendentes[id] = { ...estado.pendentes[id], base: 0, operacao: gerarId() }
@@ -310,12 +333,12 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
         salvar()
       }
       const conflitos = Object.keys(estado.conflitos).length
-      const pendentes = Object.keys(estado.pendentes).length
+      const pendentes = Object.values(estado.pendentes).filter(p => !tipoBloqueado(p.tipo)).length
       falhasSeguidas = 0
       detalhe = undefined
       if (!pendentes) { ultimaSincronia = Date.now(); if (valido()) gravar('sincronia:ultima', ultimaSincronia, 'nuvem') }
       anunciar(conflitos ? 'conflito' : pendentes ? 'sincronizando' : 'salvo')
-      if (Object.values(estado.pendentes).some(p => !estado.conflitos[identificador(p.tipo, p.item)])) agendar()
+      if (Object.values(estado.pendentes).some(p => !estado.conflitos[identificador(p.tipo, p.item)] && !tipoBloqueado(p.tipo))) agendar()
     } catch (erro) {
       detalhe = descrever(erro)
       anunciar(navigator.onLine ? 'erro' : 'offline')

@@ -1,6 +1,7 @@
 import { gerarId } from '../util/id'
+import { juntarBiblioteca } from '../biblioteca/juntar'
 /** Documentos por questão: alterações independentes nunca substituem o progresso inteiro. */
-export const TIPOS_SYNC = ['respondidas', 'favoritos', 'notas', 'historico'] as const
+export const TIPOS_SYNC = ['respondidas', 'favoritos', 'notas', 'historico', 'biblioteca'] as const
 export type TipoSync = typeof TIPOS_SYNC[number]
 export interface Documento {
   tipo: TipoSync
@@ -118,6 +119,20 @@ export function resolverConflito(estado: EstadoSync, id: string, doc: Documento)
   if (!pendente) return true
   if (doc.tipo === 'respondidas' && doc.valor !== null && pendente.valor !== null) {
     const junto = juntarRespondida(doc.valor, pendente.valor)
+    if (JSON.stringify(junto) === JSON.stringify(doc.valor)) {
+      delete estado.pendentes[id]
+      return true
+    }
+    pendente.valor = junto
+    pendente.base = doc.versao
+    pendente.operacao = gerarId()
+    doc.valor = junto
+    return true
+  }
+  // Biblioteca (marcações, notas, posição de leitura): junta as duas versões sem descartar
+  // nenhuma nota (a do outro aparelho fica guardada para a pessoa escolher). Ver biblioteca/juntar.ts.
+  if (doc.tipo === 'biblioteca' && doc.valor !== null && pendente.valor !== null) {
+    const junto = juntarBiblioteca(doc.valor, pendente.valor)
     if (JSON.stringify(junto) === JSON.stringify(doc.valor)) {
       delete estado.pendentes[id]
       return true

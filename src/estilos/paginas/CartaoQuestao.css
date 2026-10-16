@@ -439,3 +439,12 @@
 @keyframes resultado-certo { 0% { transform: scale(0.4) rotate(-20deg); } 60% { transform: scale(1.25) rotate(4deg); } 100% { transform: none; } }
 @keyframes resultado-balanca { 20% { transform: translateX(-4px); } 45% { transform: translateX(3px); } 70% { transform: translateX(-2px); } 100% { transform: none; } }
 @keyframes alternativa-brilho { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--acerto) 45%, transparent); } 100% { box-shadow: 0 0 0 10px color-mix(in srgb, var(--acerto) 0%, transparent); } }
+
+/* Biblioteca: da questão para o trecho do resumo que a ensina (16/10/2026). */
+.estudar-assunto { display: flex; align-items: center; gap: 0.75rem; margin: 0.9rem 0; padding: 0.75rem 0.9rem; border: 1px solid color-mix(in srgb, var(--verdete) 35%, var(--traco)); border-radius: var(--raio-controle, 12px); background: color-mix(in srgb, var(--verdete) 6%, var(--superficie)); color: var(--texto); text-decoration: none; }
+.estudar-assunto:hover { border-color: var(--verdete); }
+.estudar-assunto > svg:first-child { flex: none; color: var(--verdete); }
+.estudar-assunto span { flex: 1; display: grid; gap: 0.1rem; min-width: 0; }
+.estudar-assunto strong { font-size: 0.92rem; }
+.estudar-assunto small { font-size: 0.78rem; color: var(--texto-2); }
+.estudar-assunto > svg:last-child { color: var(--verdete); }

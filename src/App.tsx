@@ -51,6 +51,7 @@ const SimuladoNacional = lazy(() => carregadores.SimuladoNacional().then(({ Simu
 const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
 const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
 const Resumao = lazy(() => carregadores.Resumao().then(({ Resumao }) => ({ default: Resumao })))
+const Resumos = lazy(() => carregadores.Resumos().then(({ Resumos }) => ({ default: Resumos })))
 const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
 const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
 const Ligas = lazy(() => carregadores.Ligas().then(({ Ligas }) => ({ default: Ligas })))
@@ -89,6 +90,7 @@ const TITULOS: Record<string, string> = {
   '/indicar': 'Indique e ganhe | Orto Questões',
   '/temas-que-mais-caem': 'Temas que mais caem | Orto Questões',
   '/resumao': 'Resumão da reta final | Orto Questões',
+  '/resumos': 'Biblioteca de resumos | Orto Questões',
   '/flashcards': 'Flashcards | Orto Questões',
   '/flashcards/desempenho': 'Desempenho nos flashcards | Orto Questões',
   '/flashcards/cronograma': 'Cronograma de flashcards | Orto Questões',
@@ -185,6 +187,10 @@ function paginaDaRota(rota: Rota): ReactNode {
     case 'resumao':
       pagina = <Resumao />
       break
+    // Biblioteca de resumos (16/10/2026): em testes, sem item no menu.
+    case 'resumos':
+      pagina = <Resumos segmentos={rota.segmentos} consulta={rota.consulta} />
+      break
     case 'indicar':
       pagina = <Indicar />
       break
@@ -204,7 +210,7 @@ function paginaDaRota(rota: Rota): ReactNode {
   // Páginas que mostram questões: por enquanto, só com conta (ver config.ts).
   // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
   // públicas do Google levam; responder pede a conta ali mesmo.
-  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || ehJogo(rota)) {
+  if (['treinar', 'sessao', 'resumo', 'resumos', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || ehJogo(rota)) {
     pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
   }
 
