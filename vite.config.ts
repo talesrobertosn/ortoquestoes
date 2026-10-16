@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import type { Plugin } from 'vite'
 import type { OutputBundle, OutputChunk } from 'rollup'
@@ -22,6 +22,18 @@ function fatiarAcervo(): Plugin {
     closeBundle() {
       const acervo = join(saida, 'acervo')
       if (!existsSync(join(acervo, 'temas'))) return
+      // Os arquivos-fonte são JSON indentado (legível no repositório e nos
+      // scripts). Publicados, vão compactos: o índice cai de 1,5 MB para 0,7 MB
+      // (10% a menos depois do gzip) e o celular gasta metade do tempo no
+      // JSON.parse. Mesmo conteúdo, só sem espaços.
+      const compactar = (pasta: string) => {
+        if (!existsSync(pasta)) return
+        for (const arquivo of readdirSync(pasta).filter((f) => f.endsWith('.json'))) {
+          const caminho = join(pasta, arquivo)
+          try { writeFileSync(caminho, JSON.stringify(JSON.parse(readFileSync(caminho, 'utf8')))) } catch { /* não é JSON válido: fica como está */ }
+        }
+      }
+      for (const pasta of [acervo, join(acervo, 'temas'), join(acervo, 'comentarios')]) compactar(pasta)
       const escrever = (pasta: string, dados: Record<string, unknown>) => {
         mkdirSync(join(acervo, pasta), { recursive: true })
         for (const [id, valor] of Object.entries(dados)) {
@@ -61,6 +73,30 @@ const PAGINAS_PRE_CARGA: Record<string, string> = {
   cronograma: 'src/paginas/PlanoEstudo.tsx',
   assinatura: 'src/paginas/Assinatura.tsx',
   ranking: 'src/paginas/Ranking.tsx',
+  // Demais páginas que recebem visita direta (links de e-mail, anúncios,
+  // atalhos do aplicativo instalado): sem estas, a página só começava a descer
+  // depois do código principal rodar.
+  'plano-de-estudo': 'src/paginas/PlanoEstudo.tsx',
+  conta: 'src/paginas/Conta.tsx',
+  entrar: 'src/paginas/Conta.tsx',
+  'simulado-nacional': 'src/paginas/SimuladoNacional.tsx',
+  resumao: 'src/paginas/Resumao.tsx',
+  favoritas: 'src/paginas/Favoritas.tsx',
+  erros: 'src/paginas/CadernoErros.tsx',
+  conquistas: 'src/paginas/Ranking.tsx',
+  'temas-que-mais-caem': 'src/paginas/TemasQueMaisCaem.tsx',
+  indicar: 'src/paginas/Indicar.tsx',
+  convite: 'src/paginas/Indicar.tsx',
+  ligas: 'src/paginas/Ligas.tsx',
+  flashcards: 'src/paginas/Flashcards.tsx',
+  termos: 'src/paginas/Termos.tsx',
+  'condicoes-assinatura': 'src/paginas/CondicoesAssinatura.tsx',
+  sobre: 'src/paginas/Apoio.tsx',
+  projeto: 'src/paginas/Apoio.tsx',
+  contato: 'src/paginas/Apoio.tsx',
+  // Mesmas exceções do App (e de util/preCarga.ts): subpágina e aba que trocam de componente.
+  'conta/assinatura': 'src/paginas/DetalhesAssinatura.tsx',
+  'ranking/flashcards': 'src/paginas/RankingCripta.tsx',
 }
 
 function preCargaPorRota(): Plugin {
@@ -93,7 +129,7 @@ function preCargaPorRota(): Plugin {
           const arquivos = arquivosDe(modulo)
           if (arquivos) mapa[rota] = arquivos
         }
-        const script = `<script>(function(){try{var m=${JSON.stringify(mapa)};var r=(location.hash.replace(/^#\\/?/,'').split(/[/?]/)[0])||'';var a=m[r];if(!a)return;var b=document.baseURI;a.js.forEach(function(f){var l=document.createElement('link');l.rel='modulepreload';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)});a.css.forEach(function(f){var l=document.createElement('link');l.rel='preload';l.as='style';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)})}catch(e){}})()</script>`
+        const script = `<script>(function(){try{var m=${JSON.stringify(mapa)};var h=location.hash.replace(/^#\\/?/,''),c=h.split('?'),s=c[0].split('/'),r=s[0]||'';if(r==='conta'&&s[1]==='assinatura')r='conta/assinatura';else if(r==='ranking'&&/(^|&)aba=(flashcards|cripta)(&|$)/.test(c[1]||''))r='ranking/flashcards';var a=m[r];if(!a)return;var b=document.baseURI;a.js.forEach(function(f){var l=document.createElement('link');l.rel='modulepreload';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)});a.css.forEach(function(f){var l=document.createElement('link');l.rel='preload';l.as='style';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)})}catch(e){}})()</script>`
         // O crossOrigin vazio igual ao do carregador do Vite: sem ele, o navegador
         // não reaproveita a pré-carga e baixa o CSS da página de novo.
         // Antes do CSS: script em linha depois de uma folha de estilo espera a
@@ -101,6 +137,25 @@ function preCargaPorRota(): Plugin {
         return html.replace('<script type="module"', script + '\n    <script type="module"')
       },
     },
+  }
+}
+
+/**
+ * Origem do Supabase para o preconnect do index.html (toda página consulta o
+ * aviso do site e a conta logo na abertura). O mesmo endereço padrão de
+ * src/conta/supabase.ts, trocado pela variável de ambiente quando ela existe.
+ */
+const SUPABASE_PADRAO = 'https://oojrfzfjmkgmjcgzczln.supabase.co'
+function origemSupabase(): Plugin {
+  let origem = new URL(SUPABASE_PADRAO).origin
+  return {
+    name: 'origem-supabase',
+    configResolved(config) {
+      const definida = loadEnv(config.mode, config.envDir ?? process.cwd(), 'VITE_').VITE_SUPABASE_URL?.trim()
+      try { if (definida) origem = new URL(definida).origin } catch { /* endereço inválido: fica o padrão */ }
+    },
+    // Antes do Vite ler o HTML: ele decodifica os href, e "%SU..." não é um escape válido.
+    transformIndexHtml: { order: 'pre', handler: (html) => html.replace(/%SUPABASE_ORIGEM%/g, origem) },
   }
 }
 
@@ -121,7 +176,7 @@ const base = process.env.BASE_ORTOQUESTOES ?? './'
 
 export default defineConfig({
   base,
-  plugins: [react(), preCargaPorRota(), fatiarAcervo()],
+  plugins: [react(), origemSupabase(), preCargaPorRota(), fatiarAcervo()],
   build: {
     target: 'es2020',
     assetsInlineLimit: 2048,

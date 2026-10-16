@@ -18,6 +18,7 @@ import './estilos/temporada.css'
 import './estilos/impressao.css'
 import { registrarServiceWorker } from './util/instalacao'
 import { capturarOrigem } from './conta/origem'
+import { iniciarPreCarga } from './util/preCarga'
 
 // Antes de qualquer troca de endereço: guarda de onde a pessoa chegou (link
 // marcado do anúncio, Instagram, Google…) para o cadastro levar junto.
@@ -36,21 +37,7 @@ if (raiz) {
 
 registrarServiceWorker()
 
-// Com a primeira tela pronta e o aparelho ocioso, o código do caminho mais
-// usado (montar sessão, responder, resumo) desce em segundo plano: tocar em
-// "Treinar" ou "Começar" deixa de esperar a rede. Quem ativou a economia de
-// dados no celular fica de fora.
-const economia = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData
-if (!economia) {
-  // O Safari ainda não tem requestIdleCallback.
-  const quandoOcioso = (tarefa: () => void) =>
-    typeof window.requestIdleCallback === 'function' ? window.requestIdleCallback(tarefa, { timeout: 6000 }) : setTimeout(tarefa, 3000)
-  window.addEventListener('load', () => quandoOcioso(() => {
-    // Falhar aqui não é problema: é só adiantamento (e a página, quando for
-    // aberta de verdade, trata o erro).
-    const ignorar = () => undefined
-    import('./paginas/Treinar').catch(ignorar)
-    import('./paginas/Sessao').catch(ignorar)
-    import('./paginas/Resumo').catch(ignorar)
-  }), { once: true })
-}
+// Pré-carga das páginas: ao tocar ou passar por cima de um link, e o caminho
+// mais provável (montar sessão, responder, resumo) quando o aparelho fica
+// ocioso. Quem ativou a economia de dados no celular fica de fora da segunda.
+iniciarPreCarga()

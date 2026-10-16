@@ -89,7 +89,7 @@ function EmAlta({ linhas }: { linhas: LinhaRanking[] }) {
     .slice(0, 3)
   if (!subindo.length) return null
   return <section className="sb" aria-labelledby="sb-titulo">
-    <img className="sb__fundo" src={recurso('ranking/salao/fundo.png')} alt="" draggable={false} aria-hidden="true" />
+    <img className="sb__fundo" src={recurso('ranking/salao/fundo.png')} alt="" draggable={false} aria-hidden="true" loading="lazy" decoding="async" />
     <span className="sb__brasas" aria-hidden="true">
       {BRASAS_ALTA.map((b, i) => <i key={i} style={{ left: `${b.l}%`, width: b.s, height: b.s, animationDuration: `${b.d}s`, animationDelay: `${b.a}s`, ['--dx' as string]: `${b.dx}px` }} />)}
     </span>

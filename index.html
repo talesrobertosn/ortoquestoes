@@ -64,6 +64,12 @@
       planos), não na inicial nem na maioria das outras.
     -->
     <link rel="preload" href="/src/marca/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <!--
+      Toda página fala com o Supabase logo na abertura (aviso do site, conta,
+      sincronização). A conexão segura (DNS, TCP, TLS: três voltas de rede no
+      celular) começa já, em paralelo com o código, e não depois dele.
+    -->
+    <link rel="preconnect" href="%SUPABASE_ORIGEM%" crossorigin />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Orto Questões" />
@@ -88,8 +94,14 @@
           if (claro) document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F1F3F2')
         } catch (e) {}
         // O índice de questões começa a descer junto com o código, e não só
-        // depois dele: no celular isso tira uma volta inteira da rede.
-        try { window.__indiceOrtoQuestoes = fetch('./acervo/indice.json', { cache: 'no-cache' }) } catch (e) {}
+        // depois dele: no celular isso tira uma volta inteira da rede. As
+        // páginas que não mostram questões (planos, termos, resumão...) não
+        // usam o índice: ali ele só disputaria a rede com o código da página.
+        try {
+          var rota = location.hash.replace(/^#\/?/, '').split(/[/?]/)[0]
+          var semIndice = ['assinatura', 'termos', 'condicoes-assinatura', 'ligas', 'indicar', 'convite', 'emails', 'resumao']
+          if (semIndice.indexOf(rota) < 0) window.__indiceOrtoQuestoes = fetch('./acervo/indice.json', { cache: 'no-cache' })
+        } catch (e) {}
       })()
     </script>
     <!--
@@ -134,8 +146,11 @@
       }
     </script>
     <style>
-      /* Só o conteúdo inicial: discreto, para não piscar como página quebrada. */
-      .pre-carga { max-width: 40rem; margin: 18vh auto 0; padding: 0 1rem; font: 15px/1.6 system-ui, sans-serif; color: #5b6664; text-align: center; }
+      /* Só o conteúdo inicial: discreto, para não piscar como página quebrada.
+         Espaço no alto como padding, não margin: a margem atravessava o body
+         (colapso de margens), e o body inteiro "pulava" 18vh quando o app
+         montava, um deslocamento de layout (CLS) em toda primeira visita. */
+      .pre-carga { max-width: 40rem; margin: 0 auto; padding: 18vh 1rem 0; font: 15px/1.6 system-ui, sans-serif; color: #5b6664; text-align: center; }
       .pre-carga h1 { font-size: 1.35rem; color: #1d2826; margin: 0 0 .5rem; }
       .pre-carga nav { display: flex; flex-wrap: wrap; gap: .4rem .9rem; justify-content: center; margin-top: 1.2rem; font-size: .85rem; }
       .pre-carga a { color: inherit; }

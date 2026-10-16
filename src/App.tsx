@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect, useRef, type ReactNode } from 'react'
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
 import { rotaDe, usarRota, type Rota } from './util/rotas'
+import { carregadores } from './util/preCarga'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
@@ -20,38 +21,39 @@ import { AvisoCookies } from './componentes/AvisoCookies'
 
 // Cada página é carregada apenas ao ser visitada. Além de reduzir o JavaScript
 // inicial, isso evita baixar o acervo completo para rotas administrativas,
-// termos, conta e planos.
-const Inicio = lazy(() => import('./paginas/Inicio').then(({ Inicio }) => ({ default: Inicio })))
-const Treinar = lazy(() => import('./paginas/Treinar').then(({ Treinar }) => ({ default: Treinar })))
-const Sessao = lazy(() => import('./paginas/Sessao').then(({ Sessao }) => ({ default: Sessao })))
-const Resumo = lazy(() => import('./paginas/Resumo').then(({ Resumo }) => ({ default: Resumo })))
-const QuestaoDireta = lazy(() => import('./paginas/QuestaoDireta').then(({ QuestaoDireta }) => ({ default: QuestaoDireta })))
-const Contato = lazy(() => import('./paginas/Apoio').then(({ Contato }) => ({ default: Contato })))
-const DadosLocais = lazy(() => import('./paginas/Apoio').then(({ DadosLocais }) => ({ default: DadosLocais })))
-const NaoEncontrada = lazy(() => import('./paginas/Apoio').then(({ NaoEncontrada }) => ({ default: NaoEncontrada })))
-const Sobre = lazy(() => import('./paginas/Apoio').then(({ Sobre }) => ({ default: Sobre })))
-const Favoritas = lazy(() => import('./paginas/Favoritas').then(({ Favoritas }) => ({ default: Favoritas })))
-const CadernoErros = lazy(() => import('./paginas/CadernoErros').then(({ CadernoErros }) => ({ default: CadernoErros })))
-const Progresso = lazy(() => import('./paginas/Progresso').then(({ Progresso }) => ({ default: Progresso })))
-const Revisao = lazy(() => import('./paginas/Revisao').then(({ Revisao }) => ({ default: Revisao })))
-const Ranking = lazy(() => import('./paginas/Ranking').then(({ Ranking }) => ({ default: Ranking })))
-const RankingCripta = lazy(() => import('./paginas/RankingCripta').then(({ RankingCripta }) => ({ default: RankingCripta })))
-const Conquistas = lazy(() => import('./paginas/Ranking').then(({ Conquistas }) => ({ default: Conquistas })))
-const Termos = lazy(() => import('./paginas/Termos').then(({ Termos }) => ({ default: Termos })))
-const CondicoesAssinatura = lazy(() => import('./paginas/CondicoesAssinatura').then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
-const Assinatura = lazy(() => import('./paginas/Assinatura').then(({ Assinatura }) => ({ default: Assinatura })))
-const Conta = lazy(() => import('./paginas/Conta').then(({ Conta }) => ({ default: Conta })))
-const DetalhesAssinatura = lazy(() => import('./paginas/DetalhesAssinatura').then(({ DetalhesAssinatura }) => ({ default: DetalhesAssinatura })))
-const Emails = lazy(() => import('./paginas/Emails').then(({ Emails }) => ({ default: Emails })))
-const SimuladoNacional = lazy(() => import('./paginas/SimuladoNacional').then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
-const PlanoEstudo = lazy(() => import('./paginas/PlanoEstudo').then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
-const TemasQueMaisCaem = lazy(() => import('./paginas/TemasQueMaisCaem').then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
-const Resumao = lazy(() => import('./paginas/Resumao').then(({ Resumao }) => ({ default: Resumao })))
-const Indicar = lazy(() => import('./paginas/Indicar').then(({ Indicar }) => ({ default: Indicar })))
-const ConviteRecebido = lazy(() => import('./paginas/Indicar').then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
-const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ default: Ligas })))
-const Flashcards = lazy(() => import('./paginas/Flashcards').then(({ Flashcards }) => ({ default: Flashcards })))
-const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
+// termos, conta e planos. Os carregadores vêm de util/preCarga, que adianta o
+// download quando o dedo chega num link ou o aparelho fica ocioso.
+const Inicio = lazy(() => carregadores.Inicio().then(({ Inicio }) => ({ default: Inicio })))
+const Treinar = lazy(() => carregadores.Treinar().then(({ Treinar }) => ({ default: Treinar })))
+const Sessao = lazy(() => carregadores.Sessao().then(({ Sessao }) => ({ default: Sessao })))
+const Resumo = lazy(() => carregadores.Resumo().then(({ Resumo }) => ({ default: Resumo })))
+const QuestaoDireta = lazy(() => carregadores.QuestaoDireta().then(({ QuestaoDireta }) => ({ default: QuestaoDireta })))
+const Contato = lazy(() => carregadores.Apoio().then(({ Contato }) => ({ default: Contato })))
+const DadosLocais = lazy(() => carregadores.Apoio().then(({ DadosLocais }) => ({ default: DadosLocais })))
+const NaoEncontrada = lazy(() => carregadores.Apoio().then(({ NaoEncontrada }) => ({ default: NaoEncontrada })))
+const Sobre = lazy(() => carregadores.Apoio().then(({ Sobre }) => ({ default: Sobre })))
+const Favoritas = lazy(() => carregadores.Favoritas().then(({ Favoritas }) => ({ default: Favoritas })))
+const CadernoErros = lazy(() => carregadores.CadernoErros().then(({ CadernoErros }) => ({ default: CadernoErros })))
+const Progresso = lazy(() => carregadores.Progresso().then(({ Progresso }) => ({ default: Progresso })))
+const Revisao = lazy(() => carregadores.Revisao().then(({ Revisao }) => ({ default: Revisao })))
+const Ranking = lazy(() => carregadores.Ranking().then(({ Ranking }) => ({ default: Ranking })))
+const RankingCripta = lazy(() => carregadores.RankingCripta().then(({ RankingCripta }) => ({ default: RankingCripta })))
+const Conquistas = lazy(() => carregadores.Ranking().then(({ Conquistas }) => ({ default: Conquistas })))
+const Termos = lazy(() => carregadores.Termos().then(({ Termos }) => ({ default: Termos })))
+const CondicoesAssinatura = lazy(() => carregadores.CondicoesAssinatura().then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
+const Assinatura = lazy(() => carregadores.Assinatura().then(({ Assinatura }) => ({ default: Assinatura })))
+const Conta = lazy(() => carregadores.Conta().then(({ Conta }) => ({ default: Conta })))
+const DetalhesAssinatura = lazy(() => carregadores.DetalhesAssinatura().then(({ DetalhesAssinatura }) => ({ default: DetalhesAssinatura })))
+const Emails = lazy(() => carregadores.Emails().then(({ Emails }) => ({ default: Emails })))
+const SimuladoNacional = lazy(() => carregadores.SimuladoNacional().then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
+const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
+const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
+const Resumao = lazy(() => carregadores.Resumao().then(({ Resumao }) => ({ default: Resumao })))
+const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
+const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
+const Ligas = lazy(() => carregadores.Ligas().then(({ Ligas }) => ({ default: Ligas })))
+const Flashcards = lazy(() => carregadores.Flashcards().then(({ Flashcards }) => ({ default: Flashcards })))
+const AdminAssinaturas = lazy(() => carregadores.AdminAssinaturas().then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
   // Igual ao <title> do index.html: o Google lê o título depois do JavaScript.
