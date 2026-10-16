@@ -1,0 +1,2252 @@
+diff --git a/docs/cronograma/PLANO.md b/docs/cronograma/PLANO.md
+index 3c2ffafa..e9008a6a 100644
+--- a/docs/cronograma/PLANO.md
++++ b/docs/cronograma/PLANO.md
+@@ -107,11 +107,33 @@ Linguagem visual fixa:
+ 46. [x] "Ajustar" no topo, no "Onde você está", e no cartão Hoje em dia de folga (antes só no rodapé). "Como o seu cronograma funciona" começa recolhido; o tour de 3 partes some após "Entendi" e só é lido/gravado no cronograma do assinante, então a vitrine não o consome e ele aparece sozinho quando a pessoa assina. (T5.5, branch claude/cronograma-ajustes, 15/10/2026)
+ 47. [x] Um número só de "faltam N dias": a montagem e o painel contam de meia-noite a meia-noite (`diasAte` em `planoEstudo.ts`), sem o `Math.ceil` que dava um dia a mais. (branch claude/cronograma-ajustes, 15/10/2026)
+ 
++48. [x] Adiantar de ponta a ponta (pedido do Tales, 16/10/2026): quem puxou questões dos próximos dias tem, no dia seguinte,
++    exatamente essas questões a menos. **O que estava errado:** o registro do dia (`opcoes.adiantados`) só era gravado se a
++    pessoa, depois de passar da meta, abrisse o cronograma ou a página inicial com o aparelho sincronizado. Quem terminava a
++    sessão e fechava o site (ou estudava no Treinar, ou num aparelho que não chegou a gravar) não tinha registro, e no dia
++    seguinte o extra voltava a se diluir pelo plano inteiro (meta de 62 em vez de 42 depois de 20 a mais). Agora o motor
++    refaz a meta dos últimos 7 dias sem registro (`inferirAdiantados` em `planoEstudo.ts`, com as respostas que existiam até
++    o fim de cada dia, em cache) e trata o que passou dela como adiantado; o registro gravado continua valendo primeiro.
++    A interface diz a regra com os números: "Você adiantou 30 questões; amanhã sua meta é 32 (era 62)" (painel Adiantar e
++    fim de sessão) e "Você adiantou 30 questões de hoje; hoje sua meta é 32 (era 62)" no dia seguinte (`dados/frasesAdiantar.ts`).
++    Teste: `fixtures/testar_adiantar_ponta_a_ponta.mjs` (botão, extra sem botão e sem registro, vários dias na ordem pulando a
++    folga, virada do dia às 23h50/0h10 de São Paulo com o aparelho em 4 fusos, dois aparelhos). A meta normal de D+1 pode
++    ficar 1 questão abaixo da mostrada em D (arredondamento da divisão pelos dias que faltam), nunca acima.
++49. [x] Calendário do mês (pedido do Tales, 16/10/2026): botão "Ver calendário" em "Esta semana" e "Ver no calendário" em
++    "Depois" (ou `#/cronograma?calendario=1`). Pop-up grande no computador, tela cheia no celular; grade seg–dom, navegação
++    do mês da criação até o da prova. Cada dia: áreas com a cor (nomes no computador, pontos no celular), questões, dia leve,
++    folga hachurada, feito (✓ e quantas), hoje, mini-simulado e início de passada (dourado tracejado), reta final (véu dourado)
++    e a prova. Tocar num dia abre o detalhe: resumão, questões por área com os assuntos, mini-simulado, extras e o tempo do
++    dia; hoje tem "Começar/Continuar"; os 3 próximos dias de estudo têm "Adiantar este dia" / "Adiantar até este dia" (o
++    mesmo pedido do painel Adiantar, que desconta na ordem). Código: `src/paginas/CronogramaCalendario.tsx` e
++    `src/estilos/paginas/CronogramaCalendario.css`. Capturas: `node fixtures/capturar_calendario.mjs` com o Vite aberto.
++
+ Como funciona por dentro: `opcoes.adiantados` (no `planos_estudo.opcoes`, sem SQL novo) guarda, por dia, a meta daquele dia e
+ o que a pessoa pediu para adiantar. No dia seguinte, o motor conta as primeiras respostas daquele dia, tira a meta e
+ desconta o resto dos dias seguintes; a meta normal é recalculada devolvendo essas questões, então o plano continua
+ agendando exatamente o que falta. O registro é gravado sozinho quando a pessoa passa da meta (página do cronograma,
+-página inicial e fim de sessão leem o mesmo cálculo). Teste: `fixtures/testar_cronograma_adiantar.mjs`.
++página inicial e fim de sessão leem o mesmo cálculo); se faltar (item 48), o motor refaz a meta do dia e chega ao mesmo
++número. Os dias são os de São Paulo (`src/util/dia.ts`), seja qual for o fuso do aparelho. Teste: `fixtures/testar_cronograma_adiantar.mjs`.
+ Modo demonstração: `#/cronograma?demo=1&pendente` e `#/cronograma?demo=1&feita`.
+ 
+ ## Como ficou (14/10/2026)
+diff --git a/fixtures/capturar_calendario.mjs b/fixtures/capturar_calendario.mjs
+new file mode 100644
+index 00000000..6fe77af2
+--- /dev/null
++++ b/fixtures/capturar_calendario.mjs
+@@ -0,0 +1,97 @@
++// Capturas do calendário do cronograma (16/10/2026), no modo demonstração: 1400×860 e 390×844, claro e escuro.
++// Uso: npx vite --port 5191 (em outro terminal) e depois node fixtures/capturar_calendario.mjs [computador-light|celular-dark|pendente...]
++// BASE=http://localhost:5191/ e SAIDA=/tmp/claude-0/capturas-calendario por padrão.
++import { chromium } from 'playwright'
++import { mkdir } from 'node:fs/promises'
++const SAIDA = process.env.SAIDA ?? '/tmp/claude-0/capturas-calendario'
++await mkdir(SAIDA, { recursive: true })
++const BASE = process.env.BASE ?? 'http://localhost:5191/'
++const nav = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
++const erros = []
++async function pagina(largura, altura, esquema) {
++  const ctx = await nav.newContext({ viewport: { width: largura, height: altura }, deviceScaleFactor: largura < 500 ? 2 : 1, colorScheme: esquema, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', isMobile: largura < 500, hasTouch: largura < 500 })
++  await ctx.addInitScript((t) => { localStorage.setItem('ortoquestoes:tema', JSON.stringify(t)); localStorage.setItem('ortoquestoes:cronograma:tour-v2', 'true') }, esquema === 'light' ? 'claro' : 'escuro')
++  const p = await ctx.newPage()
++  p.on('pageerror', (e) => erros.push(String(e)))
++  p.on('console', (m) => { if (m.type() === 'error') erros.push(m.text()) })
++  return p
++}
++const so = process.argv[2]
++for (const [nome, l, a] of [['computador', 1400, 860], ['celular', 390, 844]]) {
++  for (const esquema of ['light', 'dark']) {
++    if (so && so !== `${nome}-${esquema}`) continue
++    const p = await pagina(l, a, esquema)
++    const tema = esquema === 'light' ? 'claro' : 'escuro'
++    // Página do cronograma com o adiantar feito hoje (a frase "Você adiantou…").
++    await p.goto(`${BASE}#/cronograma?demo=1&feita`)
++    await p.waitForSelector('.cp-hoje', { timeout: 30000 })
++    await p.waitForTimeout(600)
++    const recusar = p.getByRole('button', { name: 'Recusar' })
++    if (await recusar.count()) await recusar.first().click().catch(() => {})
++    if (esquema === 'light') {
++      const adiantar = p.locator('#adiantar')
++      await adiantar.scrollIntoViewIfNeeded()
++      await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-0-adiantou.png` })
++      const botao = p.locator('.cc-abrir').first()
++      await botao.scrollIntoViewIfNeeded()
++      await p.waitForTimeout(200)
++      await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-1-botao.png` })
++    }
++    await p.locator('.cc-abrir').first().click()
++    await p.waitForSelector('.cc-janela')
++    await p.waitForTimeout(500)
++    await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-2-calendario.png` })
++    // Um dia futuro: o terceiro próximo dia de estudo.
++    const futuros = p.locator('.cc-dia--futuro > button')
++    if (await futuros.count() > 2) {
++      await futuros.nth(2).click()
++      await p.waitForTimeout(600)
++      if (nome === 'celular') await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-3-detalhe.png` })
++      else await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-3-detalhe.png` })
++    }
++    // Um dia passado.
++    const passado = p.locator('.cc-dia--feito > button, .cc-dia--parcial > button').first()
++    if (await passado.count()) { await passado.scrollIntoViewIfNeeded(); await passado.click(); await p.waitForTimeout(500); await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-4-passado.png` }) }
++    // Avança até o mês da prova (reta final e prova).
++    for (let i = 0; i < 4; i++) { const b = p.locator('.cc-nav__botao[aria-label="Próximo mês"]'); if (await b.isDisabled()) break; await b.click(); await p.waitForTimeout(350) }
++    await p.locator('.cc-topo').scrollIntoViewIfNeeded()
++    const prova = p.locator('.cc-dia--prova > button')
++    if (await prova.count()) { await prova.click(); await p.waitForTimeout(400) }
++    await p.locator('.cc-corpo').evaluate((e) => e.scrollTo(0, 0))
++    await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-5-prova.png` })
++    // Dezembro: reta final.
++    await p.locator('.cc-nav__botao[aria-label="Mês anterior"]').click(); await p.waitForTimeout(400)
++    const reta = p.locator('.cc-dia--reta > button').first()
++    if (await reta.count()) { await reta.click(); await p.waitForTimeout(400) }
++    await p.locator('.cc-corpo').evaluate((e) => e.scrollTo(0, 0))
++    await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-6-reta-final.png` })
++    // Largura: nada de rolagem horizontal.
++    const larg = await p.evaluate(() => ({ doc: document.documentElement.scrollWidth, janela: document.querySelector('.cc-janela').scrollWidth, vw: innerWidth }))
++    if (larg.janela > larg.vw + 1) erros.push(`${nome}: rolagem horizontal ${JSON.stringify(larg)}`)
++    await p.keyboard.press('Escape'); await p.waitForTimeout(200)
++    if (await p.locator('.cc-janela').count()) erros.push(`${nome}: Esc não fechou`)
++    await p.context().close()
++  }
++}
++// Dia com a meta pendente: hoje mostra "Começar"; adiantar um dia pelo calendário entra na sessão de hoje.
++for (const [nome, l, a] of [['computador', 1400, 860], ['celular', 390, 844]]) {
++  if (so && !so.startsWith('pendente')) continue
++  const p = await pagina(l, a, 'light')
++  await p.goto(`${BASE}#/cronograma?demo=1&pendente&calendario=1`)
++  await p.waitForSelector('.cc-janela', { timeout: 30000 })
++  await p.evaluate(() => [...document.querySelectorAll('button')].find((b) => b.textContent === 'Recusar')?.click())
++  await p.waitForTimeout(600)
++  await p.screenshot({ path: `${SAIDA}/${nome}-claro-7-hoje-pendente.png` })
++  const amanha = p.locator('.cc-dia--futuro > button').first()
++  await amanha.click(); await p.waitForTimeout(500)
++  await p.screenshot({ path: `${SAIDA}/${nome}-claro-8-adiantar-dia.png` })
++  await p.locator('.cc-detalhe .cp-botao--ouro').click()
++  await p.waitForTimeout(900)
++  if (await p.locator('.cc-janela').count()) erros.push(`${nome}: o calendário deveria fechar ao adiantar`)
++  await p.screenshot({ path: `${SAIDA}/${nome}-claro-9-depois-de-adiantar.png` })
++  const texto = await p.locator('.cp-hoje').innerText()
++  if (!/adiantadas/.test(texto)) erros.push(`${nome}: o cartão Hoje não mostra as adiantadas`)
++  await p.context().close()
++}
++await nav.close()
++console.log(erros.length ? erros.join('\n') : 'sem erros')
+diff --git a/fixtures/testar_adiantar_ponta_a_ponta.mjs b/fixtures/testar_adiantar_ponta_a_ponta.mjs
+new file mode 100644
+index 00000000..39ac5917
+--- /dev/null
++++ b/fixtures/testar_adiantar_ponta_a_ponta.mjs
+@@ -0,0 +1,156 @@
++// Adiantar de ponta a ponta (pedido do Tales, 16/10/2026): "quem puxou questões do dia seguinte (ou dos
++// dias seguintes) tem, no dia seguinte, menos questões para fazer, porque adiantou".
++// Prova, com o acervo real:
++// 1. adiantar pelo botão no dia D: em D+1 a meta cai exatamente o que foi adiantado;
++// 2. fazer além da meta sem o botão também conta, mesmo sem registro gravado (a pessoa fechou o site);
++// 3. adiantar vários dias: desconta na ordem dos dias, pulando a folga;
++// 4. virada do dia em São Paulo (23h50 e 0h10), com o aparelho em fusos diferentes;
++// 5. dois aparelhos: o registro gravado num vale no outro, e o outro chega ao mesmo número sem ele.
++// Roda o roteiro uma vez em cada fuso (São Paulo, UTC, Tóquio, Los Angeles) em processos filhos.
++import assert from 'node:assert/strict'
++import { build } from 'esbuild'
++import { spawnSync } from 'node:child_process'
++import { mkdtemp, readFile, rm } from 'node:fs/promises'
++import { tmpdir } from 'node:os'
++import { join } from 'node:path'
++import { fileURLToPath, pathToFileURL } from 'node:url'
++
++const FUSOS = ['America/Sao_Paulo', 'UTC', 'Asia/Tokyo', 'America/Los_Angeles']
++
++if (!process.env.OQ_FUSO_FILHO) {
++  for (const fuso of FUSOS) {
++    const r = spawnSync(process.execPath, [fileURLToPath(import.meta.url)], { env: { ...process.env, TZ: fuso, OQ_FUSO_FILHO: '1' }, encoding: 'utf8' })
++    if (r.status !== 0) { console.error(`Fuso ${fuso}:\n${r.stdout}\n${r.stderr}`); process.exit(1) }
++  }
++  console.log(`Adiantar de ponta a ponta: ok em ${FUSOS.length} fusos (botão, extra sem registro, vários dias, virada do dia, dois aparelhos).`)
++  process.exit(0)
++}
++
++const pasta = await mkdtemp(join(tmpdir(), 'oq-'))
++const arquivo = join(pasta, 'm.mjs')
++try {
++  await build({ stdin: { contents: `export * from './src/dados/planoEstudo'; export { opcoesComAdiantamento } from './src/conta/cronograma'; export * from './src/dados/frasesAdiantar'`, resolveDir: process.cwd() }, outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env': '{"BASE_URL":"/","DEV":false}' }, logLevel: 'error' })
++  const m = await import(pathToFileURL(arquivo))
++  const indice = JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))
++
++  // Instantes em São Paulo (UTC−3, sem horário de verão desde 2019), seja qual for o fuso do aparelho.
++  const sp = (dia, hora = 12, min = 0) => { const [a, mes, d] = dia.split('-').map(Number); return Date.UTC(a, mes - 1, d, hora + 3, min) }
++  const criado = new Date(sp('2026-10-06', 9)).toISOString()
++  const plano = (opcoes = {}) => ({ data_prova: '2027-01-10', intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: criado, incluir_simulados: true, opcoes })
++  const responder = (ids, quando, base = {}) => { const r = { ...base }; ids.forEach((id, k) => { const em = quando + k * 1000; r[id] = { c: true, q: em, historico: [{ em, correta: true }] } }); return r }
++  const chave = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
++  const diaDe = (c, k) => c.dias.find((d) => chave(d.data) === k)
++  const fila = (c, n) => c.dias.flatMap((d) => d.itens.flatMap((i) => i.ids)).slice(0, n)
++  const agendadas = (c) => c.dias.reduce((s, d) => s + d.total, 0)
++  const coerente = (c, rotulo) => {
++    const ids = c.dias.flatMap((d) => d.itens.flatMap((i) => i.ids))
++    assert.equal(new Set(ids).size, ids.length, `${rotulo}: questão repetida`)
++    assert.equal(agendadas(c), c.restante, `${rotulo}: o plano deveria agendar exatamente o que falta`)
++  }
++
++  // Quarta 14/10 (D) e quinta 15/10 (D+1).
++  const D = '2026-10-14', D1 = '2026-10-15'
++  const antes = m.calcularPlano(indice, {}, plano(), sp(D, 8))
++  const M = antes.metaDiaria
++  const previstaD1 = diaDe(antes, D1).meta
++  assert.ok(M > 30 && previstaD1 > 30, 'plano de teste com metas normais')
++
++  // ── 1. Botão "adiantar +30" em D, feito em D ──
++  const regBotao = m.opcoesComAdiantamento(plano(), antes, 30, sp(D, 10))
++  assert.deepEqual(regBotao.adiantados, [{ em: D, meta: M, pedido: 30 }], 'o registro de hoje leva a meta e o pedido')
++  const comPedido = m.calcularPlano(indice, {}, plano(regBotao), sp(D, 10))
++  assert.equal(comPedido.dias[0].total, M + 30, 'a sessão de hoje leva as 30 adiantadas')
++  assert.equal(diaDe(comPedido, D1).meta, previstaD1 - 30, 'amanhã já aparece com 30 a menos')
++  const r1 = responder(fila(comPedido, M + 30), sp(D, 14))
++  const fimD = m.calcularPlano(indice, r1, plano(regBotao), sp(D, 22))
++  assert.equal(fimD.faltaHoje, 0); assert.equal(fimD.extraHoje, 30); assert.equal(fimD.adiantarFalta, 0)
++  assert.equal(fimD.amanha.meta, previstaD1 - 30); assert.equal(fimD.amanha.adiantado, 30)
++  const noD1 = m.calcularPlano(indice, r1, plano(regBotao), sp(D1, 8))
++  assert.equal(noD1.adiantadoHoje, 30, 'em D+1 saem as 30 adiantadas')
++  assert.equal(noD1.metaDiaria, noD1.metaHojeSemAdiantar - 30, 'em D+1 a meta cai exatamente 30')
++  // O que foi mostrado ontem ("amanhã fica com X") é o que vale hoje; o arredondamento da meta normal só pode aliviar.
++  assert.ok(noD1.metaDiaria <= fimD.amanha.meta && noD1.metaDiaria >= fimD.amanha.meta - 1, `meta de D+1 (${noD1.metaDiaria}) diferente da mostrada em D (${fimD.amanha.meta})`)
++  assert.ok(noD1.metaHojeSemAdiantar <= previstaD1 && noD1.metaHojeSemAdiantar >= previstaD1 - 1)
++  coerente(noD1, 'botão')
++  // A interface diz a regra com os números.
++  assert.match(m.fraseAdiantado(fimD), new RegExp(`^Você adiantou 30 questões; .+ sua meta é ${previstaD1 - 30} \\(era ${previstaD1}\\)\\.$`))
++  assert.equal(m.fraseAdiantadoHoje(noD1), `Você adiantou 30 questões de hoje; hoje sua meta é ${noD1.metaDiaria} (era ${noD1.metaHojeSemAdiantar}).`)
++  assert.match(m.fraseAdiantado(comPedido), /^Você está adiantando 30 questões;/)
++
++  // ── 2. Além da meta sem o botão, sem registro gravado (fechou o site no fim da sessão) ──
++  const semRegistro = m.calcularPlano(indice, r1, plano(), sp(D1, 8))
++  assert.equal(semRegistro.adiantadoHoje, 30, 'o extra de ontem conta mesmo sem registro')
++  assert.equal(semRegistro.metaDiaria, noD1.metaDiaria, 'com e sem registro, a mesma meta')
++  coerente(semRegistro, 'sem registro')
++  // Com o registro gravado sozinho pela tela (sem pedido), igual.
++  const regAuto = m.opcoesComAdiantamento(plano(), m.calcularPlano(indice, r1, plano(), sp(D, 22)), undefined, sp(D, 22))
++  assert.deepEqual(regAuto.adiantados, [{ em: D, meta: M }])
++  assert.equal(m.calcularPlano(indice, r1, plano(regAuto), sp(D1, 8)).metaDiaria, noD1.metaDiaria)
++  // Fez menos que a meta: nada é adiantado e o atraso não vira "adiantado".
++  const pouco = m.calcularPlano(indice, responder(fila(antes, M - 10), sp(D, 14)), plano(), sp(D1, 8))
++  assert.equal(pouco.adiantadoHoje, 0)
++
++  // ── 3. Vários dias, na ordem, pulando a folga (domingo) ──
++  // Sexta 16/10: adiantar "2 dias" = sábado inteiro + segunda inteira (domingo é folga).
++  const SEX = '2026-10-16', SAB = '2026-10-17', DOM = '2026-10-18', SEG = '2026-10-19', TER = '2026-10-20'
++  const naSexta = m.calcularPlano(indice, {}, plano(), sp(SEX, 8))
++  const [p1, p2] = naSexta.dias.slice(1).filter((d) => d.meta > 0)
++  assert.equal(chave(p1.data), SAB); assert.equal(chave(p2.data), SEG, 'o domingo de folga fica de fora')
++  const dois = p1.meta + p2.meta
++  const regDois = m.opcoesComAdiantamento(plano(), naSexta, dois, sp(SEX, 9))
++  const sexta2 = m.calcularPlano(indice, {}, plano(regDois), sp(SEX, 9))
++  assert.equal(diaDe(sexta2, SAB).total, 0); assert.equal(diaDe(sexta2, SEG).total, 0)
++  assert.equal(diaDe(sexta2, DOM).adiantado, 0, 'nada sai da folga')
++  const rDois = responder(fila(sexta2, naSexta.metaDiaria + dois), sp(SEX, 13))
++  const sabado = m.calcularPlano(indice, rDois, plano(regDois), sp(SAB, 9))
++  assert.equal(sabado.metaDiaria, 0, 'sábado fica livre'); assert.equal(sabado.adiantadoHoje, sabado.metaHojeSemAdiantar)
++  assert.equal(diaDe(sabado, SEG).total, 0, 'segunda também, porque foi adiantada')
++  const segunda = m.calcularPlano(indice, rDois, plano(regDois), sp(SEG, 9))
++  assert.equal(segunda.metaDiaria, 0, 'segunda livre (o sábado ficou sem estudo e mesmo assim não volta)')
++  const terca = m.calcularPlano(indice, rDois, plano(regDois), sp(TER, 9))
++  assert.equal(terca.adiantadoHoje, 0, 'terça volta ao normal'); assert.ok(terca.metaDiaria > 30)
++  // Adiantou 1 dia e 10: sábado livre, segunda com 10 a menos (desconta em ordem).
++  const rMeio = responder(fila(naSexta, naSexta.metaDiaria + p1.meta + 10), sp(SEX, 13))
++  const sabMeio = m.calcularPlano(indice, rMeio, plano(), sp(SAB, 9))
++  assert.equal(sabMeio.metaDiaria, 0)
++  assert.equal(diaDe(sabMeio, SEG).adiantado, 10)
++  const segMeio = m.calcularPlano(indice, rMeio, plano(), sp(SEG, 9))
++  assert.equal(segMeio.adiantadoHoje, 10); assert.equal(segMeio.metaDiaria, segMeio.metaHojeSemAdiantar - 10)
++  coerente(segMeio, 'vários dias')
++
++  // ── 4. Virada do dia em São Paulo ──
++  // 23h50 de D conta para D (mesmo com o aparelho em Tóquio, já no dia seguinte); 0h10 de D+1 conta para D+1.
++  const rNoite = responder(fila(antes, M + 12), sp(D, 23, 50) - (M + 12) * 1000 + 1000)
++  const quaseMeiaNoite = m.calcularPlano(indice, rNoite, plano(), sp(D, 23, 58))
++  assert.equal(quaseMeiaNoite.feitasHoje, M + 12); assert.equal(quaseMeiaNoite.extraHoje, 12)
++  assert.equal(m.opcoesComAdiantamento(plano(), quaseMeiaNoite, undefined, sp(D, 23, 58)).adiantados[0].em, D, 'o registro das 23h58 é de D')
++  const madrugada = m.calcularPlano(indice, rNoite, plano(), sp(D1, 0, 5))
++  assert.equal(madrugada.feitasHoje, 0); assert.equal(madrugada.adiantadoHoje, 12, 'à 0h05 de D+1 as 12 a mais já saem')
++  const rMadrugada = responder(fila(madrugada, 5), sp(D1, 0, 10), rNoite)
++  const depois = m.calcularPlano(indice, rMadrugada, plano(), sp(D1, 0, 20))
++  assert.equal(depois.feitasHoje, 5, 'a 0h10 de D+1 conta para D+1')
++  assert.equal(depois.adiantadoHoje, 12)
++
++  // ── 5. Dois aparelhos ──
++  // MacBook faz M + 20 em D e grava o registro; o computador recebe as respostas pela sincronização.
++  const rMac = responder(fila(antes, M + 20), sp(D, 15))
++  const noMac = m.calcularPlano(indice, rMac, plano(), sp(D, 16))
++  const servidor = plano(m.opcoesComAdiantamento(plano(), noMac, undefined, sp(D, 16)))
++  // O computador, ainda sem as últimas respostas, vê a meta pela metade mas não apaga o registro (só grava com extra).
++  const noPcAtrasado = m.calcularPlano(indice, responder(fila(antes, 10), sp(D, 15)), servidor, sp(D, 16))
++  assert.equal(noPcAtrasado.extraHoje, 0)
++  // Depois de sincronizar, os dois mostram o mesmo hoje e amanhã.
++  const noPc = m.calcularPlano(indice, { ...rMac }, servidor, sp(D, 17))
++  assert.equal(noPc.amanha.meta, noMac.amanha.meta); assert.equal(noPc.extraHoje, 20)
++  // Em D+1, o computador (com o registro) e um celular que nunca viu o registro chegam à mesma meta.
++  const pcD1 = m.calcularPlano(indice, rMac, servidor, sp(D1, 8))
++  const celularD1 = m.calcularPlano(indice, rMac, plano(), sp(D1, 8))
++  assert.equal(pcD1.adiantadoHoje, 20); assert.equal(celularD1.adiantadoHoje, 20)
++  assert.equal(pcD1.metaDiaria, celularD1.metaDiaria)
++  // Gravar de novo em outro aparelho não muda nada (o registro só sobe a meta).
++  assert.equal(m.opcoesComAdiantamento(servidor, noPc, undefined, sp(D, 17)), null)
++
++  console.log(`ok (${process.env.TZ})`)
++} finally {
++  await rm(pasta, { recursive: true, force: true })
++}
+diff --git a/fixtures/testar_cronograma_adiantar.mjs b/fixtures/testar_cronograma_adiantar.mjs
+index bb25ff9d..72b4b77f 100644
+--- a/fixtures/testar_cronograma_adiantar.mjs
++++ b/fixtures/testar_cronograma_adiantar.mjs
+@@ -72,7 +72,10 @@ try {
+   const com = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-10-13', meta: metaOntem }] }), agora)
+   assert.equal(com.adiantadoHoje, 25, 'o que passou da meta ontem deveria sair de hoje')
+   assert.equal(com.metaDiaria, com.metaHojeSemAdiantar - 25)
+-  assert.ok(Math.abs(com.metaHojeSemAdiantar - sem.metaDiaria) <= 1, 'o resto do plano não deveria mudar')
++  // Sem o registro (a pessoa não abriu o cronograma depois de passar da meta), o motor refaz a
++  // meta de ontem e chega ao mesmo resultado: o extra não se dilui pelo plano.
++  assert.equal(sem.adiantadoHoje, 25, 'sem registro, o extra de ontem também deveria sair de hoje')
++  assert.equal(sem.metaDiaria, com.metaDiaria)
+   assert.equal(agendadas(com), com.restante)
+   conferirPlano(com, 'adiantado ontem')
+ 
+@@ -85,8 +88,10 @@ try {
+   assert.equal(agendadas(c6), c6.restante)
+ 
+   // 7. Registro antigo demais ou na reta final não vale.
+-  const c7 = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
++  const c7 = m.calcularPlano(indice, {}, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
+   assert.equal(c7.adiantadoHoje, 0)
++  const c7b = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
++  assert.equal(c7b.adiantadoHoje, sem.adiantadoHoje)
+ 
+   console.log('Adiantar no cronograma: ok')
+ } finally {
+diff --git a/package.json b/package.json
+index 165a1d68..a20c1f67 100644
+--- a/package.json
++++ b/package.json
+@@ -8,7 +8,7 @@
+     "build": "tsc -b && vite build",
+     "preview": "vite preview",
+     "typecheck": "tsc --noEmit",
+-    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_previsao_pix.mjs && node fixtures/testar_receita.mjs && node fixtures/testar_dia.mjs && node fixtures/testar_admin_secoes.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs && node fixtures/testar_texto_editorial.mjs && node fixtures/testar_reinicio.mjs && node fixtures/testar_sincronia_incremental.mjs && node fixtures/testar_simulado_resumao.mjs && node fixtures/testar_perfil_ficha.mjs && node fixtures/testar_conquistas.mjs && node fixtures/testar_revisao.mjs && node fixtures/testar_cronograma_sequencia_flashcards.mjs && node fixtures/testar_modelos_email.mjs && node fixtures/testar_pagina_vendas.mjs && node fixtures/testar_frases_inicio.mjs && node fixtures/testar_exportacao_painel.mjs && node fixtures/testar_rotulos_financeiro.mjs && node fixtures/testar_continuidade_flashcards.mjs && node fixtures/testar_sincronia_aparelhos.mjs",
++    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_previsao_pix.mjs && node fixtures/testar_receita.mjs && node fixtures/testar_dia.mjs && node fixtures/testar_admin_secoes.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs && node fixtures/testar_texto_editorial.mjs && node fixtures/testar_reinicio.mjs && node fixtures/testar_sincronia_incremental.mjs && node fixtures/testar_simulado_resumao.mjs && node fixtures/testar_perfil_ficha.mjs && node fixtures/testar_conquistas.mjs && node fixtures/testar_revisao.mjs && node fixtures/testar_cronograma_sequencia_flashcards.mjs && node fixtures/testar_modelos_email.mjs && node fixtures/testar_pagina_vendas.mjs && node fixtures/testar_frases_inicio.mjs && node fixtures/testar_exportacao_painel.mjs && node fixtures/testar_rotulos_financeiro.mjs && node fixtures/testar_continuidade_flashcards.mjs && node fixtures/testar_sincronia_aparelhos.mjs && node fixtures/testar_adiantar_ponta_a_ponta.mjs",
+     "test:compra": "node fixtures/testar_compra_planos.mjs",
+     "validar": "python3 scripts/validar_acervo.py",
+     "funcoes:colar": "node scripts/juntar-funcoes.mjs",
+diff --git a/scripts/gerar_amostras_inicio.py b/scripts/gerar_amostras_inicio.py
+new file mode 100644
+index 00000000..dc342b34
+--- /dev/null
++++ b/scripts/gerar_amostras_inicio.py
+@@ -0,0 +1,175 @@
++#!/usr/bin/env python3
++"""Gera as questões de amostra da página inicial do visitante ("Experimente agora").
++
++Pedido do Tales (16/10/2026): em vez de uma questão fixa, um rodízio de 10 questões
++(8 oficiais e 2 de OrtoQuestões Simulados), áreas variadas, temas que mais caem,
++enunciado curto, gabarito sem alerta e comentário enriquecido. Cada abertura da página
++mostra a próxima de uma ordem embaralhada guardada no aparelho.
++
++Tudo vem do acervo, sem edição: enunciado, alternativas, gabarito e imagem iguais aos de
++public/acervo/temas/<tema>.json; cada "porquê" é um trecho copiado (frases inteiras) do
++comentário em public/acervo/comentarios/<tema>.json, só sem a marcação de negrito.
++
++Saída:
++  src/dados/amostrasInicio.json          lista curta (id, origem, tema), carregada com a página
++  src/dados/amostrasInicio/<id>.json     a questão completa, carregada só quando é a da vez
++
++Uso: python3 scripts/gerar_amostras_inicio.py   (fixtures/testar_amostras_inicio.mjs confere)
++"""
++from __future__ import annotations
++
++import json
++import re
++import unicodedata
++from pathlib import Path
++
++RAIZ = Path(__file__).resolve().parent.parent
++ACERVO = RAIZ / 'public' / 'acervo'
++SAIDA_INDICE = RAIZ / 'src' / 'dados' / 'amostrasInicio.json'
++SAIDA_PASTA = RAIZ / 'src' / 'dados' / 'amostrasInicio'
++
++ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
++
++# Escolhidas a dedo entre as que passam nos critérios de vitrine (ver docstring).
++# Ordem sem importância: o rodízio embaralha.
++SELECIONADAS = [
++    'mao-0102',             # TEOT 2021 · túnel cubital x canal de Guyon
++    'ombro-cotovelo-0448',  # TARO 2026 · luxação anterior inveterada do ombro
++    'joelho-0186',          # TEOT 2025 · LCP e hiperextensão
++    'coluna-0090',          # TEOT 2023 · espondilolistese degenerativa
++    'pediatria-0502',       # TARO 2026 · DDQ, osteotomia de Steel (imagem)
++    'trauma-0757',          # TEOT 2025 · coronoide, O'Driscoll (imagem)
++    'quadril-0078',         # TEOT 2023 · fratura periprotética Vancouver B2
++    'pe-tornozelo-0205',    # TARO 2024 · complicação do hálux valgo
++    'tumores-0370',         # OrtoQuestões Simulados · escore de Mirels
++    'trauma-1225',          # OrtoQuestões Simulados · fratura da clavícula
++]
++
++MAX_ENUNCIADO = 240
++MAX_ALTERNATIVA = 110
++MAX_IMAGEM_BYTES = 150_000
++MIN_PORQUE = 150
++MAX_PORQUE = 330
++
++
++def sem_marcacao(texto: str) -> str:
++    texto = texto.replace('**', '')
++    texto = re.sub(r'(?<![\w*])\*(\S[^*]*?)\*(?![\w*])', r'\1', texto)
++    return re.sub(r'\s+', ' ', texto).strip()
++
++
++def normal(texto: str) -> str:
++    texto = unicodedata.normalize('NFKD', texto.lower())
++    texto = ''.join(c for c in texto if not unicodedata.combining(c))
++    return re.sub(r'[^a-z0-9]+', ' ', texto).strip()
++
++
++FIM_DE_FRASE = re.compile(r'(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ0-9“"(])')
++
++
++def frases(texto: str) -> list[str]:
++    return [f for f in FIM_DE_FRASE.split(texto) if f]
++
++
++def repete_a_alternativa(trecho: str, letra: str, alternativa: str) -> bool:
++    """O trecho só repete a resposta ("**B: 10 pontos; fixação profilática.**", "Recidiva.")."""
++    t, alt = normal(trecho), normal(alternativa)
++    if not t:
++        return True
++    if t.startswith('correta'):
++        return True
++    t_sem_letra = re.sub(rf'^{letra.lower()}\b ?', '', t)
++    return t_sem_letra == alt or (len(t_sem_letra) <= len(alt) + 12 and (t_sem_letra in alt or alt in t_sem_letra))
++
++
++def porque(comentario: str, letra: str, alternativa: str, correta: bool) -> str:
++    """Frases inteiras do comentário, do começo, até um resumo de leitura rápida."""
++    lista = frases(sem_marcacao(comentario))
++    if correta and len(lista) > 1 and repete_a_alternativa(lista[0], letra, alternativa):
++        lista = lista[1:]
++    escolhidas: list[str] = []
++    for frase in lista:
++        tamanho = len(' '.join(escolhidas + [frase]))
++        if escolhidas and (tamanho > MAX_PORQUE or len(' '.join(escolhidas)) >= MIN_PORQUE):
++            break
++        escolhidas.append(frase)
++    return ' '.join(escolhidas)
++
++
++def origem(q: dict) -> str:
++    if q.get('simulado'):
++        return ROTULO_SIMULADOS
++    return f"{q['prova']} {q['ano']}"
++
++
++def gerar() -> list[dict]:
++    indice = json.loads((ACERVO / 'indice.json').read_text(encoding='utf-8'))
++    temas = {t['slug']: t for t in indice['temas']}
++    cache: dict[str, tuple[dict, dict]] = {}
++    amostras = []
++    oficiais = simuladas = 0
++    for qid in SELECIONADAS:
++        slug = qid.rsplit('-', 1)[0]
++        if slug not in cache:
++            qs = json.loads((ACERVO / temas[slug]['arquivo']).read_text(encoding='utf-8'))['questoes']
++            cm = json.loads((ACERVO / 'comentarios' / f'{slug}.json').read_text(encoding='utf-8'))
++            cache[slug] = ({q['id']: q for q in qs}, cm)
++        questoes, comentarios = cache[slug]
++        q, c = questoes[qid], comentarios[qid]
++
++        # Critérios de vitrine: falha alta em vez de publicar uma amostra ruim.
++        assert not q['anulada'] and not q.get('gabaritoBibliografia') and not q.get('duplicataDe') and not q.get('tipo'), qid
++        assert not c.get('alerta') and not c.get('provavel'), f'{qid}: gabarito com alerta'
++        assert '**' in c['conceito'] and len(c['conceito']) >= 1500, f'{qid}: comentário não enriquecido'
++        assert len(q['enunciado']) <= MAX_ENUNCIADO, f'{qid}: enunciado longo'
++        assert all(len(a['texto']) <= MAX_ALTERNATIVA for a in q['alternativas']), f'{qid}: alternativa longa'
++        assert len(q['imagens']) <= 1, f'{qid}: mais de uma imagem'
++        if q.get('simulado'):
++            simuladas += 1
++        else:
++            assert q['prova'] in ('TEOT', 'TARO') and q['ano'], qid
++            oficiais += 1
++
++        imagem = None
++        if q['imagens']:
++            im = q['imagens'][0]
++            assert (RAIZ / 'public' / 'imagens' / im['arquivo']).stat().st_size <= MAX_IMAGEM_BYTES, f'{qid}: imagem pesada'
++            imagem = {k: im.get(k) for k in ('arquivo', 'legenda', 'largura', 'altura')}
++
++        alternativas = []
++        for a in q['alternativas']:
++            certa = a['letra'] == q['gabarito']
++            fonte = c['correta'] if certa else c['incorretas'][a['letra']]
++            alternativas.append({'letra': a['letra'], 'texto': a['texto'], 'porque': porque(fonte, a['letra'], a['texto'], certa)})
++
++        amostras.append({
++            'id': qid,
++            'origem': origem(q),
++            'simulado': bool(q.get('simulado')),
++            'tema': temas[slug]['nome'],
++            'temaSlug': slug,
++            'subtema': q['subtemas'][0] if q['subtemas'] else None,
++            'enunciado': q['enunciado'],
++            'imagem': imagem,
++            'alternativas': alternativas,
++            'gabarito': q['gabarito'],
++        })
++    assert (oficiais, simuladas) == (8, 2), (oficiais, simuladas)
++    return amostras
++
++
++def main() -> None:
++    amostras = gerar()
++    SAIDA_PASTA.mkdir(parents=True, exist_ok=True)
++    for antigo in SAIDA_PASTA.glob('*.json'):
++        antigo.unlink()
++    for a in amostras:
++        (SAIDA_PASTA / f"{a['id']}.json").write_text(json.dumps(a, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
++    resumo = [{'id': a['id'], 'origem': a['origem'], 'simulado': a['simulado'], 'tema': a['tema']} for a in amostras]
++    SAIDA_INDICE.write_text(json.dumps(resumo, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
++    for a in amostras:
++        print(f"{a['id']:<22} {a['origem']:<24} {a['tema']}")
++
++
++if __name__ == '__main__':
++    main()
+diff --git a/src/componentes/inicio/AmostraRespondivel.css b/src/componentes/inicio/AmostraRespondivel.css
+new file mode 100644
+index 00000000..d0cc71e2
+--- /dev/null
++++ b/src/componentes/inicio/AmostraRespondivel.css
+@@ -0,0 +1,10 @@
++/* Questão de amostra da vitrine: só o que é novo no rodízio (imagem e espera).
++   O resto do cartão continua em src/estilos/paginas/InicioPainel.css (.ip-amostra, .ip-alt). */
++.ip-amostra__imagem {
++  display: block; justify-self: center; width: auto; max-width: 100%; height: auto; max-height: 170px;
++  object-fit: contain; border-radius: 10px; background: #fff; box-shadow: inset 0 0 0 1px var(--traco);
++}
++.ip-amostra--carregando { min-height: 22rem; align-content: start; }
++.ip-amostra__esqueleto { display: grid; gap: 0.45rem; }
++.ip-amostra__esqueleto i { display: block; height: 2.6rem; border-radius: 12px; background: var(--superficie-2); }
++.ip-amostra__esqueleto i:first-child { height: 2.9rem; margin-bottom: 0.3rem; background: transparent; box-shadow: inset 0 -1.35rem 0 var(--superficie-2), inset 0 1.35rem 0 var(--superficie-2); }
+diff --git a/src/componentes/inicio/AmostraRespondivel.tsx b/src/componentes/inicio/AmostraRespondivel.tsx
+index d7d34d70..0379dbc2 100644
+--- a/src/componentes/inicio/AmostraRespondivel.tsx
++++ b/src/componentes/inicio/AmostraRespondivel.tsx
+@@ -1,44 +1,82 @@
+-import { useState } from 'react'
++import { useEffect, useState } from 'react'
+ import { href } from '../../util/rotas'
++import { recurso } from '../../config'
++import { type AmostraInicio, amostraDaVez, destinosDaAmostra } from '../../dados/rodizioAmostras'
+ import { Icone } from '../Icone'
++import './AmostraRespondivel.css'
+ 
+ /**
+  * Questão de amostra que o visitante responde ali mesmo, sem conta (proposta de 16/10/2026).
+- * É a questão aprovada como referência editorial (mao-0853, UFG 2017): enunciado,
+- * alternativas e gabarito iguais aos do acervo; cada porquê resume o comentário aprovado
+- * (docs/exemplos/mao-0853.json). Mostra o produto em vez de descrevê-lo.
++ * Rodízio de questões do acervo (8 oficiais e 2 de OrtoQuestões Simulados): cada abertura da
++ * página traz a próxima de uma ordem embaralhada guardada no aparelho (src/dados/rodizioAmostras.ts).
++ * Enunciado, alternativas, gabarito e imagem iguais aos do acervo; cada porquê é um trecho do
++ * comentário (scripts/gerar_amostras_inicio.py). Só a questão da vez é baixada.
+  */
+-const ALTERNATIVAS: Array<{ letra: string; texto: string; porque: string }> = [
+-  { letra: 'A', texto: 'maior espessura com maior tendência à retração.', porque: 'Ele é mais espesso e retrai mais logo após a retirada (contração primária), mas retrai menos durante a cicatrização, que é o que importa na mão.' },
+-  { letra: 'B', texto: 'não fechamento por primeira intenção da zona doadora.', porque: 'No enxerto total, a área doadora costuma ser fechada por sutura, justamente por primeira intenção. A frase combina com o enxerto parcial.' },
+-  { letra: 'C', texto: 'maior maleabilidade que o enxerto parcial, após a cicatrização.', porque: 'O enxerto total leva toda a derme, a estrutura mecânica da pele: contrai menos ao cicatrizar e acompanha a flexão dos dedos.' },
+-  { letra: 'D', texto: 'pele pigmentada após a cicatrização.', porque: 'Pigmentação pode acontecer, mas é variável e não exclusiva do enxerto total; não é a característica que o define.' },
+-]
+-const GABARITO = 'C'
++const CARREGAR = import.meta.glob<AmostraInicio>('../../dados/amostrasInicio/*.json', { import: 'default' })
++
++function carregar(id: string): Promise<AmostraInicio> {
++  const ler = CARREGAR[`../../dados/amostrasInicio/${id}.json`]
++  return ler ? ler() : Promise.reject(new Error(`Amostra ${id} não encontrada`))
++}
+ 
+ export function AmostraRespondivel() {
++  const [resumo] = useState(amostraDaVez)
++  const [amostra, definirAmostra] = useState<AmostraInicio | null>(null)
+   const [marcada, definirMarcada] = useState<string | null>(null)
++
++  useEffect(() => {
++    let ativo = true
++    carregar(resumo.id).then((a) => { if (ativo) definirAmostra(a) }, () => { /* fica o esqueleto; o resto da página segue */ })
++    return () => { ativo = false }
++  }, [resumo.id])
++
++  const origem = resumo.simulado ? `${resumo.origem} · feita por engenharia reversa da banca` : `${resumo.origem} · ${resumo.tema}`
++  const topo = (
++    <figcaption className="ip-amostra__topo">
++      <span className="ip-amostra__selo">Experimente agora</span>
++      <span className="ip-amostra__prova">{origem}</span>
++    </figcaption>
++  )
++
++  if (!amostra) {
++    return (
++      <figure className="ip-amostra ip-amostra--carregando" aria-label="Questão de amostra para responder" aria-busy="true">
++        {topo}
++        <span className="ip-amostra__esqueleto" aria-hidden="true"><i /><i /><i /><i /><i /></span>
++      </figure>
++    )
++  }
++
++  const { gabarito, alternativas } = amostra
+   const respondida = marcada !== null
+-  const acertou = marcada === GABARITO
+-  const escolhida = ALTERNATIVAS.find((a) => a.letra === marcada)
+-  const certa = ALTERNATIVAS.find((a) => a.letra === GABARITO)!
++  const acertou = marcada === gabarito
++  const escolhida = alternativas.find((a) => a.letra === marcada)
++  const certa = alternativas.find((a) => a.letra === gabarito)!
++  const destinos = destinosDaAmostra(amostra)
+ 
+   return (
+-    <figure className={`ip-amostra${respondida ? ' ip-amostra--respondida' : ''}`} aria-label="Questão de amostra para responder">
+-      <figcaption className="ip-amostra__topo">
+-        <span className="ip-amostra__selo">Experimente agora</span>
+-        <span className="ip-amostra__prova">UFG 2017 · Mão e punho</span>
+-      </figcaption>
+-      <p className="ip-amostra__enunciado">É uma das características do enxerto de pele total:</p>
++    <figure className={`ip-amostra${respondida ? ' ip-amostra--respondida' : ''}`} aria-label="Questão de amostra para responder" data-amostra={amostra.id}>
++      {topo}
++      <p className="ip-amostra__enunciado">{amostra.enunciado}</p>
++      {amostra.imagem && (
++        <img
++          className="ip-amostra__imagem"
++          src={recurso(`imagens/${amostra.imagem.arquivo}`)}
++          width={amostra.imagem.largura}
++          height={amostra.imagem.altura}
++          alt={amostra.imagem.legenda ?? 'Imagem da questão'}
++          decoding="async"
++        />
++      )}
+       <ol className="ip-amostra__alternativas" role="list">
+-        {ALTERNATIVAS.map(({ letra, texto }) => {
+-          const estado = !respondida ? '' : letra === GABARITO ? ' ip-alt--certa' : letra === marcada ? ' ip-alt--errada' : ' ip-alt--apagada'
++        {alternativas.map(({ letra, texto }) => {
++          const estado = !respondida ? '' : letra === gabarito ? ' ip-alt--certa' : letra === marcada ? ' ip-alt--errada' : ' ip-alt--apagada'
+           return (
+             <li key={letra}>
+               <button type="button" className={`ip-alt${estado}`} disabled={respondida} aria-pressed={marcada === letra} onClick={() => definirMarcada(letra)}>
+                 <b>{letra}</b><span>{texto}</span>
+-                {respondida && letra === GABARITO && <Icone nome="certo" tamanho={16} />}
+-                {respondida && letra === marcada && letra !== GABARITO && <Icone nome="errado" tamanho={16} />}
++                {respondida && letra === gabarito && <Icone nome="certo" tamanho={16} />}
++                {respondida && letra === marcada && letra !== gabarito && <Icone nome="errado" tamanho={16} />}
+               </button>
+             </li>
+           )
+@@ -48,14 +86,15 @@ export function AmostraRespondivel() {
+       {respondida && (
+         <div className="ip-amostra__comentario" aria-live="polite">
+           <p className={`ip-amostra__veredito ip-amostra__veredito--${acertou ? 'certo' : 'errado'}`}>
+-            {acertou ? 'Isso! A resposta é C.' : `Quase. Você marcou ${marcada}; a resposta é C.`}
++            {acertou ? `Isso! A resposta é ${gabarito}.` : `Quase. Você marcou ${marcada}; a resposta é ${gabarito}.`}
+           </p>
+-          <p><strong>Por que C:</strong> {certa.porque}</p>
++          <p><strong>Por que {gabarito}:</strong> {certa.porque}</p>
+           {escolhida && !acertou && <p><strong>Por que não {escolhida.letra}:</strong> {escolhida.porque}</p>}
+           <div className="ip-amostra__acoes">
+-            <a className="botao botao--ouro" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>Criar conta grátis e treinar</a>
+-            <a className="ip-amostra__link" href={href('/questao/mao-0853')}>Ler o comentário completo <Icone nome="direita" tamanho={14} /></a>
++            <a className="botao botao--ouro" href={href(destinos.maisComoEsta)}>Fazer mais questões como esta</a>
++            <a className="ip-amostra__link" href={href(destinos.comentario)}>Ler o comentário completo <Icone nome="direita" tamanho={14} /></a>
+           </div>
++          <p className="ip-amostra__dica">Para continuar, crie sua conta grátis. Depois do cadastro, você volta direto para cá.</p>
+         </div>
+       )}
+     </figure>
+diff --git a/src/conta/cronograma.ts b/src/conta/cronograma.ts
+index b966385e..6a7f7112 100644
+--- a/src/conta/cronograma.ts
++++ b/src/conta/cronograma.ts
+@@ -160,9 +160,9 @@ export async function salvarOpcoes(alterar: (atual: PlanoSalvo) => OpcoesPlano |
+  * para adiantar), ou null se nada mudou. É o que permite, amanhã, tirar da meta o que
+  * ela fez a mais hoje. Sem `pedido`, mantém o que já estava pedido.
+  */
+-export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPlano, 'metaDiaria' | 'extraHoje' | 'adiantarPedido' | 'naRetaFinal' | 'provaPassou'>, pedido?: number): OpcoesPlano | null {
++export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPlano, 'metaDiaria' | 'extraHoje' | 'adiantarPedido' | 'naRetaFinal' | 'provaPassou'>, pedido?: number, agora: Date | number = Date.now()): OpcoesPlano | null {
+   if (calculo.naRetaFinal || calculo.provaPassou) return null
+-  const hoje = hojeBR()
++  const hoje = hojeBR(agora)
+   const limite = somarDias(hoje, -30)
+   const lista = opcoesDe(plano).adiantados.filter((r) => r.em >= limite)
+   const atual = lista.find((r) => r.em === hoje)
+diff --git a/src/dados/amostrasInicio.json b/src/dados/amostrasInicio.json
+new file mode 100644
+index 00000000..20409b6f
+--- /dev/null
++++ b/src/dados/amostrasInicio.json
+@@ -0,0 +1,62 @@
++[
++  {
++    "id": "mao-0102",
++    "origem": "TEOT 2021",
++    "simulado": false,
++    "tema": "Mão e punho"
++  },
++  {
++    "id": "ombro-cotovelo-0448",
++    "origem": "TARO 2026",
++    "simulado": false,
++    "tema": "Ombro e cotovelo"
++  },
++  {
++    "id": "joelho-0186",
++    "origem": "TEOT 2025",
++    "simulado": false,
++    "tema": "Joelho"
++  },
++  {
++    "id": "coluna-0090",
++    "origem": "TEOT 2023",
++    "simulado": false,
++    "tema": "Coluna"
++  },
++  {
++    "id": "pediatria-0502",
++    "origem": "TARO 2026",
++    "simulado": false,
++    "tema": "Ortopedia pediátrica"
++  },
++  {
++    "id": "trauma-0757",
++    "origem": "TEOT 2025",
++    "simulado": false,
++    "tema": "Trauma adulto"
++  },
++  {
++    "id": "quadril-0078",
++    "origem": "TEOT 2023",
++    "simulado": false,
++    "tema": "Quadril"
++  },
++  {
++    "id": "pe-tornozelo-0205",
++    "origem": "TARO 2024",
++    "simulado": false,
++    "tema": "Pé e tornozelo"
++  },
++  {
++    "id": "tumores-0370",
++    "origem": "OrtoQuestões Simulados",
++    "simulado": true,
++    "tema": "Tumores ósseos e de partes moles"
++  },
++  {
++    "id": "trauma-1225",
++    "origem": "OrtoQuestões Simulados",
++    "simulado": true,
++    "tema": "Trauma adulto"
++  }
++]
+diff --git a/src/dados/amostrasInicio/coluna-0090.json b/src/dados/amostrasInicio/coluna-0090.json
+new file mode 100644
+index 00000000..229ab567
+--- /dev/null
++++ b/src/dados/amostrasInicio/coluna-0090.json
+@@ -0,0 +1,33 @@
++{
++  "id": "coluna-0090",
++  "origem": "TEOT 2023",
++  "simulado": false,
++  "tema": "Coluna",
++  "temaSlug": "coluna",
++  "subtema": "Espondilólise e espondilolistese",
++  "enunciado": "A espondilolistese degenerativa ocorre mais frequentemente no nível",
++  "imagem": null,
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "L2/L3.",
++      "porque": "L2/L3 é raro. Os níveis lombares altos têm menos carga e movimento e raramente desenvolvem espondilolistese degenerativa."
++    },
++    {
++      "letra": "B",
++      "texto": "L3/L4.",
++      "porque": "L3/L4 é o segundo lugar. Ocorre, mas com frequência muito menor que L4-L5."
++    },
++    {
++      "letra": "C",
++      "texto": "L4/L5.",
++      "porque": "É o nível típico da espondilolistese degenerativa, pelas facetas mais sagitalizadas e pela sobrecarga logo acima da L5 ancorada à pelve."
++    },
++    {
++      "letra": "D",
++      "texto": "L5/S1.",
++      "porque": "L5/S1 é o nível da ístmica e da displásica. A L5 é estabilizada pelos ligamentos iliolombares e encaixada na pelve, o que torna a forma degenerativa nesse nível menos comum."
++    }
++  ],
++  "gabarito": "C"
++}
+diff --git a/src/dados/amostrasInicio/joelho-0186.json b/src/dados/amostrasInicio/joelho-0186.json
+new file mode 100644
+index 00000000..e8767293
+--- /dev/null
++++ b/src/dados/amostrasInicio/joelho-0186.json
+@@ -0,0 +1,33 @@
++{
++  "id": "joelho-0186",
++  "origem": "TEOT 2025",
++  "simulado": false,
++  "tema": "Joelho",
++  "temaSlug": "joelho",
++  "subtema": "Lesão do ligamento cruzado posterior",
++  "enunciado": "Na restrição à hiperextensão do joelho, o ligamento cruzado posterior:",
++  "imagem": null,
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "Não age como restritor.",
++      "porque": "O LCP atua na restrição da hiperextensão, mas como restritor secundário, e não como primário."
++    },
++    {
++      "letra": "B",
++      "texto": "Age como restritor antes do ligamento cruzado anterior.",
++      "porque": "É o LCA que é tensionado primeiro na hiperextensão e rompe antes. O LCP entra depois."
++    },
++    {
++      "letra": "C",
++      "texto": "Age como restritor após ruptura do ligamento cruzado anterior.",
++      "porque": "Na hiperextensão, o LCP é um restritor secundário, que passa a atuar quando o LCA e a cápsula posterior falham."
++    },
++    {
++      "letra": "D",
++      "texto": "Age como restritor simultaneamente ao ligamento cruzado anterior.",
++      "porque": "Com o LCA íntegro, a contribuição do LCP para segurar a hiperextensão é pequena. Os dois não atuam em paralelo."
++    }
++  ],
++  "gabarito": "C"
++}
+diff --git a/src/dados/amostrasInicio/mao-0102.json b/src/dados/amostrasInicio/mao-0102.json
+new file mode 100644
+index 00000000..42cd3679
+--- /dev/null
++++ b/src/dados/amostrasInicio/mao-0102.json
+@@ -0,0 +1,33 @@
++{
++  "id": "mao-0102",
++  "origem": "TEOT 2021",
++  "simulado": false,
++  "tema": "Mão e punho",
++  "temaSlug": "mao",
++  "subtema": "Neuropatia ulnar e outras compressões",
++  "enunciado": "O sinal clínico que diferencia a síndrome do túnel cubital da síndrome do canal de GUYON é a",
++  "imagem": null,
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "presença da garra ulnar.",
++      "porque": "A garra ulnar aparece nas duas, e é até mais evidente na lesão baixa, pelo paradoxo ulnar."
++    },
++    {
++      "letra": "B",
++      "texto": "atrofia da musculatura intrínseca da mão.",
++      "porque": "A atrofia dos intrínsecos aparece nas duas, porque o ramo motor profundo é atingido nos dois níveis."
++    },
++    {
++      "letra": "C",
++      "texto": "alteração da sensibilidade dorsoulnar da mão.",
++      "porque": "O ramo cutâneo dorsal do ulnar sai antes do canal de Guyon, por isso a sensibilidade dorsoulnar se altera no túnel cubital e fica preservada no Guyon."
++    },
++    {
++      "letra": "D",
++      "texto": "alteração da sudorese na região palmar da mão",
++      "porque": "A alteração da sudorese palmar ocorre nos dois níveis e não ajuda a localizar a lesão."
++    }
++  ],
++  "gabarito": "C"
++}
+diff --git a/src/dados/amostrasInicio/ombro-cotovelo-0448.json b/src/dados/amostrasInicio/ombro-cotovelo-0448.json
+new file mode 100644
+index 00000000..dd275713
+--- /dev/null
++++ b/src/dados/amostrasInicio/ombro-cotovelo-0448.json
+@@ -0,0 +1,33 @@
++{
++  "id": "ombro-cotovelo-0448",
++  "origem": "TARO 2026",
++  "simulado": false,
++  "tema": "Ombro e cotovelo",
++  "temaSlug": "ombro-cotovelo",
++  "subtema": "Instabilidade anterior do ombro",
++  "enunciado": "A luxação anterior inveterada do ombro ocorre mais frequentemente de forma",
++  "imagem": null,
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "traumática em paciente acima de 50 anos.",
++      "porque": "Trauma costuma ser banal. No idoso, a história de trauma significativo geralmente falta, e o diagnóstico tardio vem justamente disso."
++    },
++    {
++      "letra": "B",
++      "texto": "traumática em pacientes abaixo de 50 anos.",
++      "porque": "Perfil de luxação reconhecida. Pacientes jovens com trauma claro procuram atendimento e são reduzidos logo, sem cronificar."
++    },
++    {
++      "letra": "C",
++      "texto": "atraumática em pacientes acima de 50 anos.",
++      "porque": "O quadro típico é do idoso com comorbidades que luxa com trauma mínimo ou não percebido e só tem o diagnóstico semanas depois."
++    },
++    {
++      "letra": "D",
++      "texto": "atraumática em pacientes abaixo de 50 anos.",
++      "porque": "Idade errada. A luxação atraumática do jovem é a instabilidade multidirecional, que se reduz sozinha e não fica inveterada."
++    }
++  ],
++  "gabarito": "C"
++}
+diff --git a/src/dados/amostrasInicio/pe-tornozelo-0205.json b/src/dados/amostrasInicio/pe-tornozelo-0205.json
+new file mode 100644
+index 00000000..661e7d69
+--- /dev/null
++++ b/src/dados/amostrasInicio/pe-tornozelo-0205.json
+@@ -0,0 +1,33 @@
++{
++  "id": "pe-tornozelo-0205",
++  "origem": "TARO 2024",
++  "simulado": false,
++  "tema": "Pé e tornozelo",
++  "temaSlug": "pe-tornozelo",
++  "subtema": "Hálux valgo",
++  "enunciado": "A complicação mais comum do tratamento cirúrgico do hálux valgo é",
++  "imagem": null,
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "rigidez.",
++      "porque": "A rigidez da articulação do dedão acontece, principalmente com dissecção extensa, mas é menos frequente que a recidiva."
++    },
++    {
++      "letra": "B",
++      "texto": "recidiva.",
++      "porque": "É a complicação mais frequente, quase sempre ligada a algum componente da deformidade que não foi corrigido."
++    },
++    {
++      "letra": "C",
++      "texto": "hipercorreção.",
++      "porque": "A hipercorreção (hálux varo) é temida, mas bem menos comum. Está ligada a liberações excessivas das estruturas laterais."
++    },
++    {
++      "letra": "D",
++      "texto": "necrose avascular.",
++      "porque": "A necrose avascular da cabeça do metatarso é muito lembrada em provas, mas é rara na prática."
++    }
++  ],
++  "gabarito": "B"
++}
+diff --git a/src/dados/amostrasInicio/pediatria-0502.json b/src/dados/amostrasInicio/pediatria-0502.json
+new file mode 100644
+index 00000000..b6bdee0f
+--- /dev/null
++++ b/src/dados/amostrasInicio/pediatria-0502.json
+@@ -0,0 +1,38 @@
++{
++  "id": "pediatria-0502",
++  "origem": "TARO 2026",
++  "simulado": false,
++  "tema": "Ortopedia pediátrica",
++  "temaSlug": "pediatria",
++  "subtema": "Displasia do desenvolvimento do quadril",
++  "enunciado": "A técnica para tratamento da displasia do desenvolvimento do quadril demonstrada na imagem a seguir é conhecida como",
++  "imagem": {
++    "arquivo": "pediatria/pediatria-0502-1.png",
++    "legenda": null,
++    "largura": 523,
++    "altura": 216
++  },
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "GANZ.",
++      "porque": "A osteotomia periacetabular de Ganz (bernense) faz cortes ao redor do acetábulo e preserva a coluna posterior, mantendo a bacia estável. É feita após o fechamento da trirradiada, e os cortes não correspondem ao esquema da imagem."
++    },
++    {
++      "letra": "B",
++      "texto": "STEEL.",
++      "porque": "A imagem mostra os três cortes da osteotomia tripla de Steel: no ilíaco acima do acetábulo, no ramo púbico superior e no ísquio. O fragmento acetabular livre é redirecionado sobre a cabeça femoral."
++    },
++    {
++      "letra": "C",
++      "texto": "CHIARI.",
++      "porque": "A osteotomia de Chiari é um corte único supra-acetabular com deslocamento medial do fragmento distal. A cobertura vem da cápsula interposta, e é um procedimento de salvamento, sem cortes no púbis e no ísquio."
++    },
++    {
++      "letra": "D",
++      "texto": "STAHELI.",
++      "porque": "O procedimento de Staheli é uma prateleira (shelf): um enxerto ósseo é colocado numa fenda acima da cápsula para aumentar o teto. Não há osteotomia do acetábulo."
++    }
++  ],
++  "gabarito": "B"
++}
+diff --git a/src/dados/amostrasInicio/quadril-0078.json b/src/dados/amostrasInicio/quadril-0078.json
+new file mode 100644
+index 00000000..5f42c2dd
+--- /dev/null
++++ b/src/dados/amostrasInicio/quadril-0078.json
+@@ -0,0 +1,33 @@
++{
++  "id": "quadril-0078",
++  "origem": "TEOT 2023",
++  "simulado": false,
++  "tema": "Quadril",
++  "temaSlug": "quadril",
++  "subtema": "Fraturas periprotéticas do quadril",
++  "enunciado": "A fratura periprotética do fêmur tipo B2 de VANCOUVER, após artroplastia de quadril, tem como tratamento preferencial a",
++  "imagem": null,
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "manutenção da haste e osteossíntese com placa bloqueada.",
++      "porque": "Manter a haste deixa o problema principal sem solução: ela continua solta, e a falha se repete."
++    },
++    {
++      "letra": "B",
++      "texto": "manutenção da haste e osteossíntese com placa bloqueada e fios de cerclagem.",
++      "porque": "Acrescentar cabos não devolve fixação a uma haste solta."
++    },
++    {
++      "letra": "C",
++      "texto": "revisão com troca por componente femoral mais longo cimentado.",
++      "porque": "O comprimento está certo, mas o cimento vazaria pela fratura e atrapalharia a consolidação. Por isso se prefere a haste não cimentada."
++    },
++    {
++      "letra": "D",
++      "texto": "revisão com troca por componente femoral mais longo não-cimentado.",
++      "porque": "A haste longa se fixa no osso íntegro abaixo da fratura, sem cimento entre os fragmentos."
++    }
++  ],
++  "gabarito": "D"
++}
+diff --git a/src/dados/amostrasInicio/trauma-0757.json b/src/dados/amostrasInicio/trauma-0757.json
+new file mode 100644
+index 00000000..2c5861af
+--- /dev/null
++++ b/src/dados/amostrasInicio/trauma-0757.json
+@@ -0,0 +1,38 @@
++{
++  "id": "trauma-0757",
++  "origem": "TEOT 2025",
++  "simulado": false,
++  "tema": "Trauma adulto",
++  "temaSlug": "trauma",
++  "subtema": "Fratura da cabeça do rádio e instabilidade do cotovelo",
++  "enunciado": "A fratura do processo coronoide demonstrada nas imagens a seguir pode ser classificada de acordo com O’DRISCOLL, como tipo:",
++  "imagem": {
++    "arquivo": "trauma/trauma-0757-1.jpeg",
++    "legenda": null,
++    "largura": 283,
++    "altura": 139
++  },
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "I, subtipo 1.",
++      "porque": "Ponta pequena. O tipo I subtipo 1 é a fratura da ponta com até 2 mm."
++    },
++    {
++      "letra": "B",
++      "texto": "I, subtipo 2.",
++      "porque": "Ponta maior. O tipo I subtipo 2 é a fratura da ponta acima de 2 mm, sem acometer a faceta anteromedial."
++    },
++    {
++      "letra": "C",
++      "texto": "II.",
++      "porque": "As imagens mostram a fratura da faceta anteromedial do coronoide, o tipo II de O'Driscoll, ligado à instabilidade posteromedial em varo."
++    },
++    {
++      "letra": "D",
++      "texto": "III.",
++      "porque": "Base. O tipo III envolve a base do coronoide, com mais de 50% da altura."
++    }
++  ],
++  "gabarito": "C"
++}
+diff --git a/src/dados/amostrasInicio/trauma-1225.json b/src/dados/amostrasInicio/trauma-1225.json
+new file mode 100644
+index 00000000..9931a5c7
+--- /dev/null
++++ b/src/dados/amostrasInicio/trauma-1225.json
+@@ -0,0 +1,33 @@
++{
++  "id": "trauma-1225",
++  "origem": "OrtoQuestões Simulados",
++  "simulado": true,
++  "tema": "Trauma adulto",
++  "temaSlug": "trauma",
++  "subtema": "Fratura da clavícula",
++  "enunciado": "Na fratura desviada do terço médio da clavícula, o tratamento cirúrgico, comparado ao conservador,",
++  "imagem": null,
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "reduz a pseudartrose, sem evidência clara de melhora da função final.",
++      "porque": "O Rockwood (capítulo 10, Clavicle Fractures) resume que há evidência consistente de menores taxas de consolidação viciosa e pseudartrose com a cirurgia primária, mas essencialmente nenhuma evidência de que ela melhore a função final do paciente."
++    },
++    {
++      "letra": "B",
++      "texto": "reduz a pseudartrose e melhora claramente a função final.",
++      "porque": "Exagera o benefício funcional. A redução da pseudartrose é real, mas o capítulo diz que há pouca ou nenhuma evidência de melhora da função final. O estudo canadense mostrou escores melhores, e uma revisão citada favoreceu a cirurgia pelo DASH, mas Tamaoki não encontrou diferença em DASH, dor ou retorno às atividades."
++    },
++    {
++      "letra": "C",
++      "texto": "não altera a pseudartrose, mas melhora claramente a função final.",
++      "porque": "Inverte os achados. O efeito mais consistente da cirurgia é justamente sobre a consolidação: menos pseudartrose (11% contra 0,8% aos 9 meses) e menos consolidação viciosa."
++    },
++    {
++      "letra": "D",
++      "texto": "não altera a pseudartrose nem a função final.",
++      "porque": "Nega um efeito bem demonstrado. A cirurgia reduz a pseudartrose de forma consistente, como mostram o Clavicle Trial e as revisões citadas. Dizer que não altera a pseudartrose contraria a evidência."
++    }
++  ],
++  "gabarito": "A"
++}
+diff --git a/src/dados/amostrasInicio/tumores-0370.json b/src/dados/amostrasInicio/tumores-0370.json
+new file mode 100644
+index 00000000..5d637609
+--- /dev/null
++++ b/src/dados/amostrasInicio/tumores-0370.json
+@@ -0,0 +1,33 @@
++{
++  "id": "tumores-0370",
++  "origem": "OrtoQuestões Simulados",
++  "simulado": true,
++  "tema": "Tumores ósseos e de partes moles",
++  "temaSlug": "tumores",
++  "subtema": "Metástases ósseas",
++  "enunciado": "Mulher de 61 anos com câncer de mama apresenta lesão lítica na região peritrocantérica do fêmur, ocupando metade da largura do osso, com dor moderada. Pelo escore de Mirels, a pontuação e a conduta recomendada são, respectivamente,",
++  "imagem": null,
++  "alternativas": [
++    {
++      "letra": "A",
++      "texto": "8 pontos; radioterapia.",
++      "porque": "Erra a soma e a conduta. Oito pontos ignoram que a região peritrocantérica vale 3, não 2. E, mesmo com 8, a conduta seria julgamento clínico, não radioterapia automática."
++    },
++    {
++      "letra": "B",
++      "texto": "10 pontos; fixação profilática.",
++      "porque": "Pela Tabela 25-1 do Rockwood, peritrocantérico (3), dor moderada (2), lesão lítica (3) e tamanho entre 1/3 e 2/3 da largura (2) somam 10 pontos. Com 9 ou mais, o risco de fratura é de 33% ou mais e a fixação profilática é recomendada."
++    },
++    {
++      "letra": "C",
++      "texto": "8 pontos; fixação profilática.",
++      "porque": "A conduta está certa, a soma não. A fixação profilática é indicada, mas a pontuação é 10: a localização peritrocantérica vale 3 pontos, mais que o restante do membro inferior."
++    },
++    {
++      "letra": "D",
++      "texto": "10 pontos; radioterapia.",
++      "porque": "A soma está certa, a conduta não. Com 10 pontos, o risco de fratura é de pelo menos 33%; radioterapia isolada é reservada para 7 pontos ou menos. Irradiar uma lesão lítica peritrocantérica com 10 pontos expõe a paciente a um risco de fratura de pelo menos 33% em 6 meses."
++    }
++  ],
++  "gabarito": "B"
++}
+diff --git a/src/dados/frasesAdiantar.ts b/src/dados/frasesAdiantar.ts
+new file mode 100644
+index 00000000..d77eb986
+--- /dev/null
++++ b/src/dados/frasesAdiantar.ts
+@@ -0,0 +1,32 @@
++import type { CalculoPlano } from './planoEstudo'
++import { diaCivil } from '../util/dia'
++
++/** Frases do adiantar, usadas no cronograma e no fim da sessão (módulo pequeno, sem a página inteira). */
++const DIA = 86_400_000
++const semanaDia = (d: Date) => d.toLocaleDateString('pt-BR', { weekday: 'long' }).replace('-feira', '')
++const diferencaDias = (d: Date) => Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() - diaCivil().getTime()) / DIA)
++
++/** "no sábado", "na segunda": o nome do dia com o artigo certo. */
++export const noDia = (d: Date) => `${d.getDay() === 0 || d.getDay() === 6 ? 'no' : 'na'} ${semanaDia(d)}`
++
++/**
++ * A regra do adiantar dita com os números (pedido do Tales, 16/10/2026): "Você adiantou 30
++ * questões; amanhã sua meta é 32 (era 62)." O primeiro dia que perdeu questões para o
++ * adiantamento de hoje, ou null se nada foi adiantado hoje.
++ */
++export function fraseAdiantado(calculo: Pick<CalculoPlano, 'extraHoje' | 'adiantarPedido' | 'dias'>): string | null {
++  const ja = Math.max(calculo.extraHoje, calculo.adiantarPedido)
++  const alvo = calculo.dias.slice(1).find((d) => d.adiantado > 0)
++  if (!ja || !alvo) return null
++  const quando = diferencaDias(alvo.data) === 1 ? 'amanhã' : noDia(alvo.data)
++  const verbo = calculo.adiantarPedido > calculo.extraHoje ? 'Você está adiantando' : 'Você adiantou'
++  const era = alvo.meta + alvo.adiantado
++  return `${verbo} ${ja} ${ja === 1 ? 'questão' : 'questões'}; ${quando} ${alvo.meta === 0 ? `fica livre (a meta era ${era})` : `sua meta é ${alvo.meta} (era ${era})`}.`
++}
++
++/** A mesma frase para quem chega no dia seguinte: "Você adiantou 30 questões de hoje; hoje sua meta é 32 (era 62)." */
++export function fraseAdiantadoHoje(calculo: Pick<CalculoPlano, 'adiantadoHoje' | 'metaDiaria' | 'metaHojeSemAdiantar'>): string | null {
++  const n = calculo.adiantadoHoje
++  if (!n) return null
++  return `Você adiantou ${n} ${n === 1 ? 'questão' : 'questões'} de hoje; hoje sua meta é ${calculo.metaDiaria} (era ${calculo.metaHojeSemAdiantar}).`
++}
+diff --git a/src/dados/planoEstudo.ts b/src/dados/planoEstudo.ts
+index 57cf5638..4e128a32 100644
+--- a/src/dados/planoEstudo.ts
++++ b/src/dados/planoEstudo.ts
+@@ -1,5 +1,5 @@
+ import type { Indice } from './tipos'
+-import { diaCivil, inicioDoDia } from '../util/dia'
++import { diaCivil, inicioDaChave, inicioDoDia, somarDias } from '../util/dia'
+ import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, type Nivel } from './incidencia'
+ 
+ /**
+@@ -215,7 +215,7 @@ export interface CalculoPlano {
+   projecao: { alvoPct: number; maisCaiPct: number; fimMaisCai: Date | null; cortadas: number; tetoAtivo: boolean }
+ }
+ 
+-export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora = new Date()): CalculoPlano {
++export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
+   // Hoje e o dia de criação são dias de São Paulo (src/util/dia.ts), como datas civis.
+   const hoje = diaCivil(agora)
+   const inicioHoje = inicioDoDia(agora)
+@@ -257,7 +257,6 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+     const slug = tema?.slug ?? String(i)
+     return { slug, nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, acertoEstimado, respondidas: t.respondidas, reforcado: acertoEstimado !== null && media !== null && acertoEstimado < media - 5, incidencia: pesoIncidenciaDoTema(slug) }
+   })
+-  const focosPendentes = focosQueFaltam(indice, respondidas)
+ 
+   const alvo = Math.max(0, Math.ceil((elegiveis - Math.min(plano.base_respondidas, elegiveis)) * COBERTURA[plano.intensidade]))
+   const feitas = Math.max(0, respondidasNoAcervo - plano.base_respondidas)
+@@ -286,58 +285,6 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   const ritmo = esperadoAteHoje > 0 ? Math.round(((feitasAntesDeHoje - esperadoAteHoje) / esperadoAteHoje) * 100) : 0
+ 
+   const opcoes = opcoesDe(plano)
+-  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos
+-  // e para os que mais caem na prova.
+-  const fator = (t: TemaPlano) => (1 + (t.acertoEstimado !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acertoEstimado) / 100) * 4)) : 0)) * t.incidencia
+-  const focos = focoPorQuestao(indice)
+-  const dominados = assuntosDominados(indice, respondidas)
+-  // Passada de cada questão pelo nível do assunto; assunto dominado (85%+ em 15+) vai para a 3ª.
+-  const passadaDe = (id: string): Passada => {
+-    const f = focos.get(id)
+-    if (!f || dominados.has(f.nome)) return 3
+-    return f.nivel >= 4 ? 1 : f.nivel === 3 ? 2 : 3
+-  }
+-  const livresPorTema = new Map<string, string[]>()
+-  for (const q of indice.questoes) {
+-    if (!entraNoPlano(q, simulados) || respondidas[q.id]) continue
+-    const slug = indice.temas[q.t]?.slug ?? String(q.t)
+-    const lista = livresPorTema.get(slug) ?? []
+-    lista.push(q.id)
+-    livresPorTema.set(slug, lista)
+-  }
+-  // Fila de cada tema: os assuntos que mais caem primeiro; área dominada fica só com a 1ª passada.
+-  const filaDoTema = new Map<string, string[]>()
+-  for (const [slug, lista] of livresPorTema) {
+-    const ordenada = ordenarPorFoco(lista, focos).sort((x, y) => passadaDe(x) - passadaDe(y))
+-    filaDoTema.set(slug, opcoes.dominadas.includes(slug) ? ordenada.filter((id) => passadaDe(id) === 1) : ordenada)
+-  }
+-  const pesos = temas.filter((t) => (filaDoTema.get(t.slug)?.length ?? 0) > 0).map((t) => ({ t, peso: (filaDoTema.get(t.slug)!.length) * fator(t) }))
+-  // Cotas proporcionais ao peso, limitadas ao que o tema tem; a sobra vai para quem ainda tem espaço.
+-  const cotaDe = new Map<string, number>()
+-  // Primeiro garante a 1ª passada (o que mais cai) de todas as áreas; se não couber tudo, divide pelo peso.
+-  const primeira = pesos.map((p) => ({ p, n: filaDoTema.get(p.t.slug)!.filter((id) => passadaDe(id) === 1).length }))
+-  const totalPrimeira = primeira.reduce((s2, x) => s2 + x.n, 0)
+-  if (totalPrimeira <= restante) for (const x of primeira) cotaDe.set(x.p.t.slug, x.n)
+-  let sobra = restante - [...cotaDe.values()].reduce((s2, n) => s2 + n, 0)
+-  // Plano menor que a 1ª passada: divide só a prioridade máxima entre as áreas.
+-  const limite = (slug: string) => totalPrimeira > restante ? primeira.find((x) => x.p.t.slug === slug)!.n : filaDoTema.get(slug)!.length
+-  for (let volta = 0; volta < 5 && sobra > 0; volta++) {
+-    const abertos = pesos.filter((p) => (cotaDe.get(p.t.slug) ?? 0) < limite(p.t.slug))
+-    const soma = abertos.reduce((s2, p) => s2 + p.peso, 0)
+-    if (!soma) break
+-    let usado = 0
+-    for (const p of abertos) {
+-      const atual = cotaDe.get(p.t.slug) ?? 0
+-      const mais = Math.min(limite(p.t.slug) - atual, Math.max(1, Math.round((sobra * p.peso) / soma)), sobra - usado)
+-      cotaDe.set(p.t.slug, atual + mais); usado += mais
+-    }
+-    sobra -= usado
+-    if (!usado) break
+-  }
+-  // Ordem das áreas: começar por (se escolhido), depois os mais fracos e os que mais caem.
+-  const ordemTemas = pesos.map((p) => p.t).filter((t) => (cotaDe.get(t.slug) ?? 0) > 0)
+-    .sort((x, y) => (y.slug === opcoes.comecarPor ? 1 : 0) - (x.slug === opcoes.comecarPor ? 1 : 0) || fator(y) - fator(x))
+-
+   // Dias até a reta final, cada um com o seu tipo e peso na meta.
+   const semanasDificeis = new Set(opcoes.semanasDificeis)
+   const chaveSegunda = (d: Date) => { const s2 = new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7)); return `${s2.getFullYear()}-${String(s2.getMonth() + 1).padStart(2, '0')}-${String(s2.getDate()).padStart(2, '0')}` }
+@@ -389,7 +336,12 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   // Adiantar: o que a pessoa fez além da meta num dia sai dos dias seguintes, a começar pelo próximo
+   // dia de estudo (até zerar a meta dele; o resto vai para o outro). Só vale para os registros guardados
+   // (dia e meta daquele dia); o de hoje usa o que ela já fez a mais ou o que pediu, o que for maior.
+-  const registros = opcoes.adiantados
++  // Dias recentes sem registro (a pessoa passou da meta e não abriu o cronograma nem a página
++  // inicial depois, ou estudou noutro aparelho e fechou): a meta daquele dia é refeita com as
++  // respostas que havia até o fim dele, e o que passou dela vale como adiantado, como se o
++  // registro tivesse sido gravado. Antes, esse extra se diluía pelo plano inteiro.
++  const inferidos = interno.soMeta ? [] : inferirAdiantados(indice, respondidas, plano, hoje, criado, inicioRetaFinal, primeirasPorDia)
++  const registros = [...opcoes.adiantados, ...inferidos]
+     .map((r) => ({ data: dataLocal(r.em), meta: Math.max(0, r.meta), pedido: Math.max(0, Math.min(400, r.pedido ?? 0)) }))
+     .filter((r) => r.data <= hoje && r.data >= criado && hoje.getTime() - r.data.getTime() <= 30 * DIA)
+     .sort((a, b) => a.data.getTime() - b.data.getTime())
+@@ -422,7 +374,62 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   const extraHoje = hoje >= inicioRetaFinal ? 0 : Math.max(0, feitasHoje - metaDiaria)
+   const adiantarPedido = hoje >= inicioRetaFinal ? 0 : registros.find((r) => r.data.getTime() === hoje.getTime())?.pedido ?? 0
+   const adiantarFalta = Math.max(0, Math.min(restante, adiantarPedido - extraHoje))
++  // Só a meta do dia (para refazer a meta de um dia passado, em inferirAdiantados).
++  if (interno.soMeta) return { metaDiaria, naRetaFinal: hoje >= inicioRetaFinal } as CalculoPlano
+   const creditos = alocar(baseDoDia(metaDiaNormal), Math.max(extraHoje, adiantarPedido))
++  const focosPendentes = focosQueFaltam(indice, respondidas)
++
++  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos
++  // e para os que mais caem na prova.
++  const fator = (t: TemaPlano) => (1 + (t.acertoEstimado !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acertoEstimado) / 100) * 4)) : 0)) * t.incidencia
++  const focos = focoPorQuestao(indice)
++  const dominados = assuntosDominados(indice, respondidas)
++  // Passada de cada questão pelo nível do assunto; assunto dominado (85%+ em 15+) vai para a 3ª.
++  const passadaDe = (id: string): Passada => {
++    const f = focos.get(id)
++    if (!f || dominados.has(f.nome)) return 3
++    return f.nivel >= 4 ? 1 : f.nivel === 3 ? 2 : 3
++  }
++  const livresPorTema = new Map<string, string[]>()
++  for (const q of indice.questoes) {
++    if (!entraNoPlano(q, simulados) || respondidas[q.id]) continue
++    const slug = indice.temas[q.t]?.slug ?? String(q.t)
++    const lista = livresPorTema.get(slug) ?? []
++    lista.push(q.id)
++    livresPorTema.set(slug, lista)
++  }
++  // Fila de cada tema: os assuntos que mais caem primeiro; área dominada fica só com a 1ª passada.
++  const filaDoTema = new Map<string, string[]>()
++  for (const [slug, lista] of livresPorTema) {
++    const ordenada = ordenarPorFoco(lista, focos).sort((x, y) => passadaDe(x) - passadaDe(y))
++    filaDoTema.set(slug, opcoes.dominadas.includes(slug) ? ordenada.filter((id) => passadaDe(id) === 1) : ordenada)
++  }
++  const pesos = temas.filter((t) => (filaDoTema.get(t.slug)?.length ?? 0) > 0).map((t) => ({ t, peso: (filaDoTema.get(t.slug)!.length) * fator(t) }))
++  // Cotas proporcionais ao peso, limitadas ao que o tema tem; a sobra vai para quem ainda tem espaço.
++  const cotaDe = new Map<string, number>()
++  // Primeiro garante a 1ª passada (o que mais cai) de todas as áreas; se não couber tudo, divide pelo peso.
++  const primeira = pesos.map((p) => ({ p, n: filaDoTema.get(p.t.slug)!.filter((id) => passadaDe(id) === 1).length }))
++  const totalPrimeira = primeira.reduce((s2, x) => s2 + x.n, 0)
++  if (totalPrimeira <= restante) for (const x of primeira) cotaDe.set(x.p.t.slug, x.n)
++  let sobra = restante - [...cotaDe.values()].reduce((s2, n) => s2 + n, 0)
++  // Plano menor que a 1ª passada: divide só a prioridade máxima entre as áreas.
++  const limite = (slug: string) => totalPrimeira > restante ? primeira.find((x) => x.p.t.slug === slug)!.n : filaDoTema.get(slug)!.length
++  for (let volta = 0; volta < 5 && sobra > 0; volta++) {
++    const abertos = pesos.filter((p) => (cotaDe.get(p.t.slug) ?? 0) < limite(p.t.slug))
++    const soma = abertos.reduce((s2, p) => s2 + p.peso, 0)
++    if (!soma) break
++    let usado = 0
++    for (const p of abertos) {
++      const atual = cotaDe.get(p.t.slug) ?? 0
++      const mais = Math.min(limite(p.t.slug) - atual, Math.max(1, Math.round((sobra * p.peso) / soma)), sobra - usado)
++      cotaDe.set(p.t.slug, atual + mais); usado += mais
++    }
++    sobra -= usado
++    if (!usado) break
++  }
++  // Ordem das áreas: começar por (se escolhido), depois os mais fracos e os que mais caem.
++  const ordemTemas = pesos.map((p) => p.t).filter((t) => (cotaDe.get(t.slug) ?? 0) > 0)
++    .sort((x, y) => (y.slug === opcoes.comecarPor ? 1 : 0) - (x.slug === opcoes.comecarPor ? 1 : 0) || fator(y) - fator(x))
+ 
+   // Blocos: em cada passada, as áreas se revezam em blocos de ~3 dias.
+   const tamanhoBloco = Math.max(20, Math.round(metaDiaNormal * DIAS_BLOCO * (1 - MISTURA)))
+@@ -575,6 +582,63 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+ 
+ const unicos = (lista: string[]) => [...new Set(lista)]
+ 
++/** Até quantos dias para trás um dia sem registro de adiantamento é refeito. */
++export const DIAS_INFERIR_ADIANTADO = 7
++const cacheMetaDoDia = new WeakMap<object, Map<string, number>>()
++
++/**
++ * A meta que um dia passado teve, refeita com as respostas que existiam até o fim dele
++ * (e os adiantamentos conhecidos até ali). Guardada em cache: as respostas de dias
++ * passados quase não mudam, e o cálculo roda a cada resposta.
++ */
++function metaDoDiaPassado(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, dia: Date): number {
++  const chave = chaveData(dia)
++  const fim = inicioDaChave(somarDias(chave, 1))
++  const ate: Record<string, RegistroMinimo> = {}
++  let n = 0, soma = 0
++  for (const [id, r] of Object.entries(respondidas)) {
++    const primeira = r?.historico?.[0]?.em ?? r?.q
++    if (primeira === undefined || primeira >= fim) continue
++    ate[id] = r; n++; soma = (soma + primeira) % 1e12
++  }
++  const { marcasDia: _m, ...opcoes } = plano.opcoes ?? {}
++  const assinatura = JSON.stringify([chave, plano.data_prova, plano.intensidade, plano.folgas, plano.base_respondidas, plano.criado_em, plano.incluir_simulados, opcoes, n, soma])
++  let cache = cacheMetaDoDia.get(indice)
++  if (!cache) { cache = new Map(); cacheMetaDoDia.set(indice, cache) }
++  const guardada = cache.get(assinatura)
++  if (guardada !== undefined) return guardada
++  const c = calcularPlano(indice, ate, plano, inicioDaChave(chave) + 12 * 3_600_000, { soMeta: true })
++  const meta = c.naRetaFinal ? Number.POSITIVE_INFINITY : c.metaDiaria
++  if (cache.size > 200) cache.clear()
++  cache.set(assinatura, meta)
++  return meta
++}
++
++/**
++ * Registros de adiantamento que faltam nos últimos dias: em cada dia de estudo sem
++ * registro, a meta é refeita (metaDoDiaPassado) e, se a pessoa passou dela, o dia
++ * ganha o registro { em, meta }. Em dia de folga a meta é zero. Vai do mais antigo ao
++ * mais novo, levando os já conhecidos, para que um dia adiantado alivie o seguinte.
++ */
++function inferirAdiantados(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, hoje: Date, criado: Date, inicioRetaFinal: Date, primeirasPorDia: Map<number, number>): RegistroAdiantado[] {
++  const reais = opcoesDe(plano).adiantados
++  const conhecidos = [...reais]
++  const novos: RegistroAdiantado[] = []
++  for (let k = DIAS_INFERIR_ADIANTADO; k >= 1; k--) {
++    const dia = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k)
++    if (dia < criado || dia >= inicioRetaFinal) continue
++    const em = chaveData(dia)
++    if (reais.some((r) => r.em === em)) continue
++    const feitas = primeirasPorDia.get(dia.getTime()) ?? 0
++    if (!feitas) continue
++    const meta = plano.folgas.includes(dia.getDay()) ? 0 : metaDoDiaPassado(indice, respondidas, { ...plano, opcoes: { ...(plano.opcoes ?? {}), adiantados: conhecidos.filter((r) => r.em < em) } }, dia)
++    if (feitas <= meta) continue
++    const registro = { em, meta }
++    novos.push(registro); conhecidos.push(registro)
++  }
++  return novos
++}
++
+ /** Assuntos que a pessoa já domina: 85% ou mais de acerto em 15 ou mais questões. Saem para a 3ª passada. */
+ export function assuntosDominados(indice: Indice, respondidas: Record<string, RegistroMinimo>): Set<string> {
+   const focos = focoPorQuestao(indice)
+diff --git a/src/dados/rodizioAmostras.ts b/src/dados/rodizioAmostras.ts
+new file mode 100644
+index 00000000..e617b9ce
+--- /dev/null
++++ b/src/dados/rodizioAmostras.ts
+@@ -0,0 +1,63 @@
++/**
++ * Rodízio das questões de amostra da vitrine do visitante ("Experimente agora").
++ * A lista sai de scripts/gerar_amostras_inicio.py (dados copiados do acervo). Como as
++ * frases do título: cada abertura da página traz a próxima de uma ordem embaralhada fixa,
++ * guardada no aparelho, e só depois de passar por todas uma questão se repete.
++ */
++import AMOSTRAS from './amostrasInicio.json'
++
++export interface ResumoAmostra { id: string; origem: string; simulado: boolean; tema: string }
++
++export interface AmostraInicio extends ResumoAmostra {
++  temaSlug: string
++  subtema: string | null
++  enunciado: string
++  imagem: { arquivo: string; legenda: string | null; largura: number; altura: number } | null
++  alternativas: Array<{ letra: string; texto: string; porque: string }>
++  gabarito: string
++}
++
++export const AMOSTRAS_INICIO: ResumoAmostra[] = AMOSTRAS
++
++const CHAVE = 'oq-amostra-inicio'
++
++/** Ordem embaralhada, mas fixa, para o rodízio não repetir antes de passar por todas. */
++const ORDEM = (() => {
++  const indices = AMOSTRAS_INICIO.map((_, i) => i)
++  let semente = 11
++  for (let i = indices.length - 1; i > 0; i--) {
++    semente = (semente * 9301 + 49297) % 233280
++    const j = Math.floor((semente / 233280) * (i + 1))
++    ;[indices[i], indices[j]] = [indices[j], indices[i]]
++  }
++  return indices
++})()
++
++/** A próxima amostra do rodízio; sem armazenamento (janela anônima), uma sorteada. */
++export function proximaAmostraInicio(): ResumoAmostra {
++  try {
++    const salvo = localStorage.getItem(CHAVE)
++    const anterior = salvo === null ? NaN : Number(salvo)
++    const posicao = Number.isInteger(anterior) && anterior >= 0 ? (anterior + 1) % ORDEM.length : Math.floor(Math.random() * ORDEM.length)
++    localStorage.setItem(CHAVE, String(posicao))
++    return AMOSTRAS_INICIO[ORDEM[posicao]]
++  } catch {
++    return AMOSTRAS_INICIO[Math.floor(Math.random() * AMOSTRAS_INICIO.length)]
++  }
++}
++
++/** Uma escolha por carregamento da página (o StrictMode e as remontagens não avançam o rodízio). */
++let daVez: ResumoAmostra | null = null
++export function amostraDaVez(): ResumoAmostra {
++  return (daVez ??= proximaAmostraInicio())
++}
++
++/** Endereços de criar conta que, depois do cadastro, voltam para esta questão ou para o treino do tema. */
++export function destinosDaAmostra(a: Pick<AmostraInicio, 'id' | 'temaSlug' | 'subtema' | 'simulado'>) {
++  const conta = (voltar: string) => `/conta?modo=criar&voltar=${encodeURIComponent(voltar)}`
++  const subtema = a.subtema ? `&subtemas=${encodeURIComponent(a.subtema)}` : ''
++  return {
++    comentario: conta(`/questao/${a.id}`),
++    maisComoEsta: conta(`/treinar?temas=${encodeURIComponent(a.temaSlug)}${subtema}&limite=10`),
++  }
++}
+diff --git a/src/estilos/paginas/CronogramaCalendario.css b/src/estilos/paginas/CronogramaCalendario.css
+new file mode 100644
+index 00000000..4e59aa3b
+--- /dev/null
++++ b/src/estilos/paginas/CronogramaCalendario.css
+@@ -0,0 +1,173 @@
++/* Calendário do cronograma (16/10/2026): o plano num mês de computador, de segunda a domingo.
++   Pop-up grande no computador (grade + detalhe ao lado); tela cheia no celular (detalhe embaixo).
++   Estados iguais aos do resto do cronograma: feito (verde ✓), hoje (dourado), folga (hachurado),
++   atrasado (laranja), marco (dourado tracejado), reta final (véu dourado). */
++
++.cc { position: fixed; inset: 0; z-index: 1100; display: grid; place-items: center; padding: 1rem; }
++.cc-veu { position: absolute; inset: 0; border: 0; padding: 0; background: rgba(8, 24, 22, 0.62); backdrop-filter: blur(4px); cursor: default; animation: cc-veu 0.2s ease-out; }
++.cc-janela { position: relative; display: grid; grid-template-rows: auto minmax(0, 1fr); width: min(1180px, 100%); max-height: calc(100dvh - 2rem); border-radius: 20px; background: var(--fundo); color: var(--texto); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); overflow: hidden; animation: cc-entra 0.26s cubic-bezier(0.2, 0.8, 0.2, 1); }
++@keyframes cc-veu { from { opacity: 0; } }
++@keyframes cc-entra { from { opacity: 0; transform: translateY(14px) scale(0.985); } }
++
++/* ── Topo: mês, resumo e navegação ── */
++.cc-topo { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 0.6rem 1rem; padding: 1rem 1.25rem 0.9rem; background: var(--superficie); border-bottom: 1px solid var(--traco); }
++.cc-topo__titulo { min-width: 0; }
++.cc-topo__selo { display: flex; align-items: center; gap: 0.35rem; margin: 0; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--verdete); }
++.cc-topo h2 { margin: 0.15rem 0 0; font-family: var(--fonte-marca); font-size: clamp(1.45rem, 3vw, 1.9rem); line-height: 1.1; letter-spacing: -0.01em; }
++.cc-topo__resumo { display: flex; flex-wrap: wrap; gap: 0.15rem 0.9rem; margin: 0.25rem 0 0; font-size: 0.8rem; color: var(--texto-2); }
++.cc-topo__resumo b { color: var(--texto); }
++.cc-nav { display: flex; align-items: center; gap: 0.35rem; }
++.cc-nav__botao, .cc-fechar { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--traco); background: var(--superficie-2); color: var(--texto); cursor: pointer; transition: background 0.15s, border-color 0.15s; }
++.cc-nav__botao:hover:not(:disabled), .cc-fechar:hover { border-color: var(--verdete); color: var(--verdete); }
++.cc-nav__botao:disabled { opacity: 0.35; cursor: default; }
++.cc-nav__hoje { min-height: 44px; padding: 0 1rem; border-radius: 999px; border: 1px solid var(--traco); background: var(--superficie-2); color: var(--verdete); font: inherit; font-size: 0.85rem; font-weight: 800; cursor: pointer; }
++.cc-nav__hoje:hover { border-color: var(--verdete); }
++.cc-fechar { margin-left: 0.4rem; }
++
++/* ── Corpo: grade e detalhe ── */
++.cc-corpo { display: grid; grid-template-columns: minmax(0, 1fr) 21rem; gap: 1.1rem; align-items: start; padding: 1rem 1.25rem 1.25rem; overflow-y: auto; overscroll-behavior: contain; }
++.cc-mes { display: grid; gap: 0.4rem; min-width: 0; }
++.cc-semana, .cc-grade { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
++.cc-semana li { padding: 0 0.4rem; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
++.cc-semana li:nth-child(n + 6) { color: color-mix(in srgb, var(--texto-2) 70%, transparent); }
++.cc-grade--frente { animation: cc-frente 0.24s ease-out; }
++.cc-grade--tras { animation: cc-tras 0.24s ease-out; }
++@keyframes cc-frente { from { opacity: 0; transform: translateX(18px); } }
++@keyframes cc-tras { from { opacity: 0; transform: translateX(-18px); } }
++
++.cc-dia { min-width: 0; }
++.cc-dia--vazio { min-height: 6.6rem; border-radius: 12px; background: color-mix(in srgb, var(--superficie-2) 40%, transparent); }
++.cc-dia > button { position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 0.25rem; width: 100%; height: 100%; min-height: 6.6rem; padding: 0.45rem 0.5rem 0.7rem; border: 1px solid var(--traco); border-radius: 12px; background: var(--superficie); color: inherit; font: inherit; text-align: left; cursor: pointer; overflow: hidden; transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease; }
++.cc-dia > button:hover:not(:disabled) { border-color: var(--traco-forte); transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
++.cc-dia > button:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
++.cc-dia > button:disabled { cursor: default; }
++.cc-dia__topo { display: flex; align-items: center; gap: 0.3rem; min-height: 1.3rem; }
++.cc-dia__num { font-family: var(--fonte-marca); font-size: 0.98rem; line-height: 1; }
++.cc-dia__hoje { margin-left: auto; padding: 0.08rem 0.4rem; border-radius: 999px; background: var(--cp-agora); color: #fff; font-size: 0.6rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
++.cc-dia__selo { display: grid; place-items: center; width: 1.05rem; height: 1.05rem; margin-left: auto; border-radius: 50%; font-size: 0.7rem; line-height: 1; }
++.cc-dia__selo--feito { background: var(--cp-feito); color: #fff; }
++.cc-dia__selo--marco { color: var(--ouro-texto); background: var(--ouro-veu); }
++.cc-dia__selo + .cc-dia__selo, .cc-dia__hoje + .cc-dia__selo { margin-left: 0.15rem; }
++.cc-dia__areas { display: grid; gap: 0.12rem; min-width: 0; }
++.cc-dia__area { display: flex; align-items: center; gap: 0.3rem; min-width: 0; font-size: 0.72rem; font-weight: 650; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
++.cc-dia__area i { flex: none; width: 0.55rem; height: 0.55rem; border-radius: 2px; }
++.cc-dia__area > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
++.cc-dia__area--mais { color: var(--texto-2); font-weight: 700; }
++.cc-dia__marco { display: block; font-size: 0.64rem; font-weight: 800; line-height: 1.2; color: var(--ouro-texto); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
++.cc-dia__rodape { display: flex; align-items: baseline; gap: 0.3rem; margin-top: auto; }
++.cc-dia__rodape em { font-style: normal; font-size: 0.72rem; font-weight: 800; color: var(--texto-2); white-space: nowrap; }
++.cc-dia__rodape s { font-size: 0.66rem; font-weight: 700; color: var(--texto-2); }
++.cc-dia__faixa { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; }
++
++/* Estados */
++.cc-dia--feito > button { background: color-mix(in srgb, var(--cp-feito) 7%, var(--superficie)); }
++.cc-dia--feito .cc-dia__rodape em, .cc-dia--adiantado .cc-dia__rodape em, .cc-dia--com-adiantado .cc-dia__rodape em { color: var(--cp-feito); }
++.cc-dia--feito .cc-dia__faixa, .cc-dia--parcial .cc-dia__faixa, .cc-dia--adiantado .cc-dia__faixa { opacity: 0.55; }
++.cc-dia--parcial .cc-dia__rodape em, .cc-dia--atrasado .cc-dia__rodape em { color: var(--cp-atrasado); }
++.cc-dia--atrasado > button { background: var(--superficie-2); }
++.cc-dia--hoje > button { background: var(--cp-agora-veu); border-color: var(--cp-agora); box-shadow: inset 0 0 0 1px var(--cp-agora); }
++.cc-dia--hoje .cc-dia__rodape em { color: var(--cp-agora); }
++.cc-dia--folga > button { background: repeating-linear-gradient(135deg, var(--superficie-2) 0 6px, color-mix(in srgb, var(--traco) 70%, transparent) 6px 12px); }
++.cc-dia--folga .cc-dia__rodape em { color: var(--texto-2); font-weight: 700; }
++.cc-dia--reta > button { background: color-mix(in srgb, #f4cf7c 16%, var(--superficie)); }
++.cc-dia--reta .cc-dia__rodape em { color: var(--ouro-texto); }
++.cc-dia--prova > button { background: linear-gradient(140deg, #f4cf7c, #c9952f); border: 2px dashed #8a6416; color: #3b2604; }
++.cc-dia--prova .cc-dia__rodape em { color: #3b2604; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
++.cc-dia--marco:not(.cc-dia--hoje):not(.cc-dia--prova) > button { border: 2px dashed var(--cp-marco); }
++.cc-dia--fora > button { opacity: 0.35; background: transparent; }
++.cc-dia--selecionado > button, .cc-dia--selecionado > button:hover:not(:disabled) { box-shadow: 0 0 0 2px var(--fundo), 0 0 0 4px var(--verdete); }
++
++.cc-legenda { margin-top: 0.35rem; }
++.cc-legenda__feito { background: var(--cp-feito); }
++.cc-legenda__hoje { background: var(--cp-agora-veu); border: 2px solid var(--cp-agora); }
++.cc-legenda__marco { border: 2px dashed var(--cp-marco); }
++.cc-legenda__reta { background: color-mix(in srgb, #f4cf7c 45%, var(--superficie)); }
++
++/* ── Detalhe do dia ── */
++.cc-detalhe { position: sticky; top: 0; display: grid; gap: 0.6rem; padding: 1rem 1.05rem 1.1rem; border-radius: 16px; background: var(--superficie); border: 1px solid var(--traco); border-top: 5px solid var(--cor-area, var(--verdete)); animation: cc-detalhe 0.22s ease-out; scroll-margin-top: 0.5rem; }
++@keyframes cc-detalhe { from { opacity: 0.4; transform: translateY(6px); } }
++.cc-detalhe--folga { border-top-color: var(--traco-forte); }
++.cc-detalhe--reta, .cc-detalhe--prova { border-top-color: #e0b04a; }
++.cc-detalhe--hoje { border-color: var(--cp-agora); }
++.cc-detalhe__data { display: flex; align-items: center; gap: 0.4rem; margin: 0; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
++.cc-detalhe__agora { padding: 0.06rem 0.45rem; border-radius: 999px; background: var(--cp-agora); color: #fff; font-size: 0.62rem; }
++.cc-detalhe h3 { margin: 0; font-family: var(--fonte-marca); font-size: 1.3rem; line-height: 1.15; }
++.cc-detalhe__sub { margin: 0; font-size: 0.84rem; line-height: 1.45; color: var(--texto-2); }
++.cc-verde { color: var(--cp-feito); }
++.cc-detalhe__progresso { position: relative; display: block; margin: 0; height: 1.4rem; border-radius: 999px; background: color-mix(in srgb, var(--cp-agora) 16%, var(--superficie-2)); overflow: hidden; }
++.cc-detalhe__progresso span { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: color-mix(in srgb, var(--cp-agora) 55%, transparent); }
++.cc-detalhe__progresso b { position: relative; display: block; padding: 0 0.7rem; font-size: 0.74rem; line-height: 1.4rem; }
++.cc-detalhe__lista { display: grid; margin: 0; padding: 0; list-style: none; }
++.cc-detalhe__item { display: grid; grid-template-columns: 0.7rem minmax(0, 1fr) auto; gap: 0.6rem; align-items: start; padding: 0.55rem 0; border-top: 1px solid var(--traco); }
++.cc-detalhe__item:first-child { border-top: 0; }
++.cc-detalhe__item > i { width: 0.7rem; height: 0.7rem; margin-top: 0.3rem; border-radius: 3px; background: var(--traco-forte); }
++.cc-detalhe__item strong { display: block; font-size: 0.9rem; line-height: 1.3; }
++.cc-detalhe__item small { display: block; margin-top: 0.1rem; font-size: 0.76rem; line-height: 1.35; color: var(--texto-2); }
++.cc-detalhe__item em { font-style: normal; font-size: 0.76rem; font-weight: 750; color: var(--texto-2); white-space: nowrap; }
++.cc-detalhe__item--extra { opacity: 0.8; }
++.cc-detalhe__item--extra > i { background: transparent; border: 2px dashed var(--traco-forte); }
++.cc-detalhe__item--marco > i { background: transparent; border: 2px dashed var(--cp-marco); }
++.cc-detalhe__item--marco strong { color: var(--ouro-texto); }
++.cc-detalhe__chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.3rem; }
++.cc-detalhe__chips span { padding: 0.12rem 0.5rem; border-radius: 999px; font-size: 0.7rem; font-weight: 650; background: var(--superficie-2); color: var(--texto-2); }
++.cc-detalhe__total { margin: 0; font-size: 0.84rem; color: var(--texto-2); }
++.cc-detalhe__total b { color: var(--texto); }
++.cc-detalhe__ok { display: flex; align-items: center; gap: 0.4rem; margin: 0; padding: 0.6rem 0.75rem; border-radius: var(--raio-controle); background: color-mix(in srgb, var(--cp-feito) 12%, var(--superficie)); color: var(--cp-feito); font-weight: 750; font-size: 0.86rem; }
++.cc-detalhe__nota { margin: 0; padding: 0.6rem 0.75rem; border-radius: var(--raio-controle); background: var(--superficie-2); font-size: 0.78rem; line-height: 1.45; color: var(--texto-2); }
++.cc-detalhe .cp-botao:disabled { opacity: 0.6; cursor: default; }
++
++/* Botão que abre o calendário (no cronograma). */
++.cc-abrir { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 44px; padding: 0 1rem; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--verdete) 40%, var(--traco)); background: var(--superficie); color: var(--verdete); font: inherit; font-size: 0.86rem; font-weight: 800; letter-spacing: 0; text-transform: none; cursor: pointer; transition: background 0.15s, border-color 0.15s, transform 0.15s; }
++.cc-abrir:hover { background: var(--verdete-veu); border-color: var(--verdete); }
++.cc-abrir:active { transform: translateY(1px); }
++.cc-abrir--largo { width: 100%; }
++
++/* ── Celular e tablet: tela cheia, detalhe embaixo da grade ── */
++@media (max-width: 52rem) {
++  .cc { padding: 0; place-items: stretch; }
++  .cc-janela { width: 100%; height: 100dvh; max-height: none; border-radius: 0; animation-name: cc-sobe; }
++  @keyframes cc-sobe { from { opacity: 0; transform: translateY(28px); } }
++  /* Topo compacto: mês e botões numa linha, o resumo embaixo. */
++  .cc-topo { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.25rem 0.5rem; align-items: center; padding: calc(0.6rem + env(safe-area-inset-top)) 0.75rem 0.6rem; }
++  .cc-topo__titulo { display: contents; }
++  .cc-topo__selo { display: none; }
++  .cc-topo h2 { grid-column: 1; grid-row: 1; margin: 0; font-size: 1.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
++  .cc-de { display: none; }
++  .cc-nav__botao, .cc-fechar { width: 42px; height: 42px; }
++  .cc-nav { grid-column: 2; grid-row: 1; gap: 0.25rem; }
++  .cc-nav__hoje { padding: 0 0.75rem; }
++  .cc-fechar { margin-left: 0.15rem; }
++  .cc-topo__resumo { grid-column: 1 / -1; grid-row: 2; margin: 0; font-size: 0.76rem; }
++  .cc-corpo { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 0.75rem 0.6rem calc(1.5rem + env(safe-area-inset-bottom)); }
++  .cc-detalhe { position: static; }
++}
++@media (max-width: 40rem) {
++  .cc-semana, .cc-grade { gap: 4px; }
++  .cc-semana li { padding: 0; text-align: center; font-size: 0.62rem; letter-spacing: 0.04em; }
++  .cc-dia--vazio { min-height: 4.4rem; }
++  .cc-dia > button { min-height: 4.4rem; align-items: center; gap: 0.2rem; padding: 0.35rem 0.1rem 0.55rem; border-radius: 10px; text-align: center; }
++  .cc-dia__topo { justify-content: center; min-height: 1.1rem; }
++  .cc-dia__num { font-size: 0.9rem; }
++  .cc-dia__hoje { display: none; }
++  .cc-dia__selo { position: absolute; top: 3px; right: 3px; width: 0.85rem; height: 0.85rem; margin: 0; font-size: 0.55rem; }
++  .cc-dia__selo + .cc-dia__selo { top: auto; bottom: 8px; }
++  .cc-dia__selo svg { width: 9px; height: 9px; }
++  /* No celular a célula mostra só a cor das áreas (pontos) e o número; o nome fica no detalhe. */
++  .cc-dia__areas { display: flex; justify-content: center; gap: 2px; }
++  .cc-dia__area { font-size: 0; gap: 0; }
++  .cc-dia__area i { width: 0.5rem; height: 0.5rem; border-radius: 50%; }
++  .cc-dia__area--mais, .cc-dia__marco { display: none; }
++  .cc-dia__rodape { justify-content: center; }
++  .cc-dia__rodape em > span { display: none; }
++  .cc-dia__rodape em::after { content: attr(data-curto); font-size: 0.68rem; }
++  .cc-dia__rodape s { display: none; }
++  .cc-dia--prova .cc-dia__rodape em::after { font-size: 0.58rem; }
++  .cc-dia__faixa { height: 4px; }
++  .cc-legenda { font-size: 0.68rem; }
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .cc-veu, .cc-janela, .cc-grade--frente, .cc-grade--tras, .cc-detalhe { animation: none; }
++  .cc-dia > button, .cc-abrir, .cc-nav__botao, .cc-fechar { transition: none; }
++  .cc-dia > button:hover:not(:disabled) { transform: none; }
++}
+diff --git a/src/paginas/CronogramaCalendario.tsx b/src/paginas/CronogramaCalendario.tsx
+new file mode 100644
+index 00000000..e37a5e74
+--- /dev/null
++++ b/src/paginas/CronogramaCalendario.tsx
+@@ -0,0 +1,398 @@
++import { useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from 'react'
++import { createPortal } from 'react-dom'
++import type { Indice } from '../dados/tipos'
++import { DIA_MINIMO, TAMANHO_MINI, ROTULO_PASSADA, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
++import { formatarTempo } from '../dados/hubCronograma'
++import { corDaArea } from '../dados/coresAreas'
++import { Icone } from '../componentes/Icone'
++import { chaveCivil, chaveDoDia, diaCivil } from '../util/dia'
++import '../estilos/paginas/CronogramaCalendario.css'
++
++/**
++ * Calendário do cronograma (pedido do Tales, 16/10/2026): o plano inteiro num mês de
++ * computador, de segunda a domingo, até a prova. Cada dia mostra a cor e o nome das
++ * áreas, quantas questões, a folga, o que já foi feito, hoje, os marcos (mini-simulado,
++ * passadas, reta final, prova). Tocar num dia abre o que estudar nele, com o botão de
++ * começar (hoje) ou de adiantar (os próximos dias, como no painel Adiantar).
++ * Os estados são os do resto do cronograma: feito (verde ✓), agora (dourado), a fazer,
++ * folga (hachurado), atrasado (laranja) e marco (dourado tracejado).
++ */
++
++const DIA = 86_400_000
++const SEMANA = ['seg', 'ter', 'qua', 'qui', 'sex', 'sáb', 'dom']
++/** Quantos dias de estudo dá para adiantar de uma vez pelo calendário (os mesmos do painel Adiantar). */
++const ADIANTAR_ATE = 3
++const MINUTOS_RESUMAO = 4
++
++type Fase = 'antes' | 'passado' | 'hoje' | 'conteudo' | 'revisao' | 'prova' | 'vespera' | 'dia-prova' | 'depois'
++interface DiaCalendario {
++  data: Date
++  chave: string
++  fase: Fase
++  folga: boolean
++  /** Do motor: hoje e os dias de estudo até a reta final. */
++  plano: DiaPlano | null
++  /** O que foi feito nesse dia (respostas, por área). */
++  feitas: number
++  areasFeitas: Array<{ slug: string; nome: string; n: number }>
++  marcos: string[]
++}
++
++const mesDe = (d: Date) => new Date(d.getFullYear(), d.getMonth(), 1)
++const nomeMes = (d: Date) => { const s = d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }); return s[0].toUpperCase() + s.slice(1) }
++const dataLonga = (d: Date) => d.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
++const faixa = (partes: Array<{ slug: string; n: number }>) => {
++  const total = partes.reduce((s, p) => s + p.n, 0)
++  if (!total) return 'transparent'
++  let acc = 0
++  return `linear-gradient(90deg, ${partes.map((p) => { const ini = (acc / total) * 100; acc += p.n; return `${corDaArea(p.slug)} ${ini}% ${(acc / total) * 100}%` }).join(', ')})`
++}
++const juntar = (nomes: string[]) => nomes.length <= 1 ? nomes.join('') : `${nomes.slice(0, -1).join(', ')} e ${nomes[nomes.length - 1]}`
++/** Nome curto da área para caber na célula ("Ombro e cotovelo" → "Ombro e cot."). */
++const curto = (nome: string, max = 13) => nome.length <= max ? nome : `${nome.slice(0, max - 2).trimEnd()}.`
++
++export interface AcoesCalendario {
++  /** Começa (ou continua) a sessão de hoje. */
++  aoComecar?: () => void
++  /** Sessão pela metade: o link para continuar. */
++  pendente?: { feitas: number; total: number } | null
++  /** Pede para adiantar n questões (o mesmo do painel Adiantar). */
++  aoAdiantar?: (n: number) => void
++  salvando?: boolean
++}
++
++export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar }: {
++  plano: PlanoSalvo
++  calculo: CalculoPlano
++  indice: Indice
++  respondidas: Record<string, { q?: number; historico?: Array<{ em: number }> }>
++  minutos: number
++  revisoesHoje?: number
++  acoes: AcoesCalendario
++  aoFechar: () => void
++}) {
++  const hoje = diaCivil()
++  const prova = new Date(calculo.vespera.getTime() + DIA)
++  const criado = diaCivil(Date.parse(plano.criado_em))
++  const primeiroMes = mesDe(criado < hoje ? criado : hoje)
++  const ultimoMes = mesDe(prova)
++  const [mes, definirMes] = useState(() => mesDe(hoje))
++  const [selecionado, definirSelecionado] = useState<string>(() => chaveCivil(hoje))
++  const [direcao, definirDirecao] = useState<'frente' | 'tras' | null>(null)
++  const fechar = useRef<HTMLButtonElement>(null)
++  const detalhe = useRef<HTMLElement>(null)
++
++  // O que foi feito em cada dia (todas as respostas, como na constância), por área.
++  const feitoPorDia = useMemo(() => {
++    const temaDe = new Map(indice.questoes.map((q) => [q.id, q.t]))
++    const mapa = new Map<string, { n: number; temas: Map<number, number> }>()
++    for (const [id, r] of Object.entries(respondidas)) {
++      const momentos = r.historico?.length ? r.historico.map((h) => h.em) : r.q !== undefined ? [r.q] : []
++      for (const em of momentos) {
++        const k = chaveDoDia(em)
++        const dia = mapa.get(k) ?? { n: 0, temas: new Map() }
++        dia.n++
++        const t = temaDe.get(id)
++        if (t !== undefined) dia.temas.set(t, (dia.temas.get(t) ?? 0) + 1)
++        mapa.set(k, dia)
++      }
++    }
++    return mapa
++  }, [indice, respondidas])
++
++  const porChave = useMemo(() => new Map(calculo.dias.map((d) => [chaveCivil(d.data), d])), [calculo])
++  const inicioPassada = useMemo(() => {
++    const m = new Map<string, Passada>()
++    for (const p of [2, 3] as Passada[]) { const d = calculo.inicioPassada[p]; if (d && d > hoje) m.set(chaveCivil(d), p) }
++    return m
++  }, [calculo]) // eslint-disable-line react-hooks/exhaustive-deps
++  const extra = plano.opcoes?.provaExtra && /^\d{4}-\d{2}-\d{2}$/.test(plano.opcoes.provaExtra.data) ? plano.opcoes.provaExtra : null
++
++  function montarDia(data: Date): DiaCalendario {
++    const chave = chaveCivil(data)
++    const folga = plano.folgas.includes(data.getDay())
++    const ehHoje = data.getTime() === hoje.getTime()
++    const fase: Fase = data < criado ? 'antes'
++      : data.getTime() === prova.getTime() ? 'dia-prova'
++      : data > prova ? 'depois'
++      : data.getTime() === calculo.vespera.getTime() ? 'vespera'
++      : data >= calculo.inicioModoProva ? 'prova'
++      : data >= calculo.inicioRetaFinal ? 'revisao'
++      : ehHoje ? 'hoje' : data < hoje ? 'passado' : 'conteudo'
++    const doPlano = porChave.get(chave) ?? null
++    const plano_ = ehHoje && doPlano ? { ...doPlano, itens: calculo.hoje?.itens ?? doPlano.itens, meta: calculo.metaDiaria, total: calculo.metaDiaria } : doPlano
++    const feito = feitoPorDia.get(chave)
++    const areasFeitas = feito ? [...feito.temas].map(([t, n]) => ({ slug: indice.temas[t]?.slug ?? String(t), nome: indice.temas[t]?.nome ?? '', n })).sort((a, b) => b.n - a.n) : []
++    const marcos: string[] = []
++    if (data.getTime() === calculo.inicioRetaFinal.getTime() && calculo.diasRetaFinal > 7) marcos.push('Começa a revisão forte')
++    if (data.getTime() === calculo.inicioModoProva.getTime()) marcos.push('Começa o modo prova')
++    const passada = inicioPassada.get(chave)
++    if (passada) marcos.push(`Começa a ${ROTULO_PASSADA[passada].nome}`)
++    if (extra && extra.data === chave) marcos.push(`Prova: ${extra.nome}`)
++    return { data, chave, fase, folga, plano: plano_, feitas: feito?.n ?? 0, areasFeitas, marcos }
++  }
++
++  // A grade do mês: semanas de segunda a domingo; os dias de fora do mês ficam vazios.
++  const grade = useMemo(() => {
++    const primeiro = mes
++    const recuo = (primeiro.getDay() + 6) % 7
++    const diasNoMes = new Date(mes.getFullYear(), mes.getMonth() + 1, 0).getDate()
++    const celulas: Array<DiaCalendario | null> = Array.from({ length: recuo }, () => null)
++    for (let i = 1; i <= diasNoMes; i++) celulas.push(montarDia(new Date(mes.getFullYear(), mes.getMonth(), i)))
++    while (celulas.length % 7) celulas.push(null)
++    return celulas
++  }, [mes, calculo, feitoPorDia, plano]) // eslint-disable-line react-hooks/exhaustive-deps
++
++  const diaSelecionado = useMemo(() => {
++    const [a, m, d] = selecionado.split('-').map(Number)
++    return montarDia(new Date(a, m - 1, d))
++  }, [selecionado, calculo, feitoPorDia, plano]) // eslint-disable-line react-hooks/exhaustive-deps
++
++  // Resumo do mês: dias de estudo, questões planejadas e feitas.
++  const resumoMes = useMemo(() => {
++    let estudo = 0, questoes = 0, feitas = 0, folgas = 0
++    for (const c of grade) {
++      if (!c || c.fase === 'antes' || c.fase === 'depois') continue
++      if (rotuloEstado(c).estado === 'folga') folgas++
++      if (c.plano && c.plano.tipo !== 'folga') { estudo++; questoes += c.plano.total }
++      if (c.fase === 'passado' || c.fase === 'hoje') feitas += c.feitas
++    }
++    return { estudo, questoes, feitas, folgas }
++  }, [grade])
++
++  // Teclado, rolagem da página e foco: Esc fecha; o fundo não rola; o foco volta para quem abriu.
++  useEffect(() => {
++    const antes = document.activeElement as HTMLElement | null
++    const overflow = document.body.style.overflow
++    document.body.style.overflow = 'hidden'
++    fechar.current?.focus()
++    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopPropagation(); aoFechar() } }
++    window.addEventListener('keydown', tecla)
++    return () => { window.removeEventListener('keydown', tecla); document.body.style.overflow = overflow; antes?.focus?.() }
++  }, [aoFechar])
++
++  const podeVoltar = mes > primeiroMes, podeAvancar = mes < ultimoMes
++  function irMes(delta: number) {
++    const novo = new Date(mes.getFullYear(), mes.getMonth() + delta, 1)
++    if (novo < primeiroMes || novo > ultimoMes) return
++    definirDirecao(delta > 0 ? 'frente' : 'tras'); definirMes(novo)
++  }
++  function escolher(d: DiaCalendario) {
++    definirSelecionado(d.chave)
++    // No celular o detalhe fica embaixo da grade: rola até ele.
++    if (window.matchMedia('(max-width: 52rem)').matches) {
++      const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
++      requestAnimationFrame(() => detalhe.current?.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' }))
++    }
++  }
++  function irHoje() { definirDirecao(null); definirMes(mesDe(hoje)); definirSelecionado(chaveCivil(hoje)) }
++
++  // Áreas do mês para a legenda.
++  const areasMes = new Map<string, string>()
++  for (const c of grade) for (const i of c?.plano?.itens ?? []) areasMes.set(i.slug, i.nome)
++
++  return createPortal(
++    <div className="cp cc" role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
++      <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={aoFechar} />
++      <div className="cc-janela">
++        <header className="cc-topo">
++          <div className="cc-topo__titulo">
++            <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> Calendário do cronograma · {plano.prova}</p>
++            <h2 id="cc-titulo" aria-live="polite">{nomeMes(mes).replace(/ de \d+$/, '')} <span className="cc-de">de </span>{mes.getFullYear()}</h2>
++            <p className="cc-topo__resumo">
++              {resumoMes.estudo > 0 && <span><b className="numerico">{resumoMes.estudo}</b> dias de estudo · <b className="numerico">{resumoMes.questoes.toLocaleString('pt-BR')}</b> questões</span>}
++              {resumoMes.feitas > 0 && <span><b className="numerico">{resumoMes.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
++              {resumoMes.folgas > 0 && <span>{resumoMes.folgas} {resumoMes.folgas === 1 ? 'folga' : 'folgas'}</span>}
++            </p>
++          </div>
++          <div className="cc-nav">
++            <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={!podeVoltar} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
++            <button type="button" className="cc-nav__hoje" onClick={irHoje}>Hoje</button>
++            <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={!podeAvancar} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
++            <button type="button" className="cc-fechar" ref={fechar} onClick={aoFechar} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>
++          </div>
++        </header>
++
++        <div className="cc-corpo">
++          <div className="cc-mes">
++            <ol className="cc-semana" aria-hidden="true">{SEMANA.map((s) => <li key={s}>{s}</li>)}</ol>
++            <ol key={mes.getTime()} className={'cc-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Dias de ${nomeMes(mes)}`}>
++              {grade.map((c, i) => c ? <Celula key={c.chave} dia={c} selecionado={c.chave === selecionado} aoEscolher={escolher} /> : <li key={`v${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />)}
++            </ol>
++            <ul className="cp-legenda cc-legenda" aria-label="Legenda">
++              {[...areasMes].map(([slug, nome]) => <li key={slug}><i style={{ background: corDaArea(slug) }} />{nome}</li>)}
++              <li><i className="cc-legenda__feito" />feito</li>
++              <li><i className="cc-legenda__hoje" />hoje</li>
++              <li><i className="cp-legenda__folga" />folga</li>
++              <li><i className="cc-legenda__marco" />marco</li>
++              <li><i className="cc-legenda__reta" />reta final</li>
++            </ul>
++          </div>
++          <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={aoFechar} />
++        </div>
++      </div>
++    </div>,
++    document.body,
++  )
++}
++
++function rotuloEstado(d: DiaCalendario): { estado: string; texto: string } {
++  if (d.fase === 'antes' || d.fase === 'depois') return { estado: 'fora', texto: '' }
++  if (d.fase === 'dia-prova') return { estado: 'prova', texto: 'Prova' }
++  if (d.folga && (d.fase === 'conteudo' || d.fase === 'passado' || d.fase === 'hoje') && !(d.fase === 'passado' && d.feitas > 0)) return { estado: 'folga', texto: 'folga' }
++  if (d.fase === 'hoje') {
++    const meta = d.plano?.meta ?? 0
++    return { estado: 'hoje', texto: meta > 0 ? `${meta} q` : 'hoje' }
++  }
++  if (d.fase === 'passado') {
++    if (d.feitas >= DIA_MINIMO) return { estado: 'feito', texto: `${d.feitas} feitas` }
++    if (d.feitas > 0) return { estado: 'parcial', texto: `${d.feitas} feitas` }
++    return { estado: 'atrasado', texto: 'sem estudo' }
++  }
++  if (d.fase === 'revisao') return { estado: 'reta', texto: 'revisão' }
++  if (d.fase === 'prova') return { estado: 'reta', texto: 'modo prova' }
++  if (d.fase === 'vespera') return { estado: 'reta', texto: 'véspera' }
++  const p = d.plano
++  if (!p) return { estado: 'futuro', texto: '' }
++  if (p.total === 0 && p.adiantado > 0 && !p.mini) return { estado: 'adiantado', texto: 'adiantado' }
++  return { estado: 'futuro', texto: p.total ? `${p.total} q${p.tipo === 'leve' ? ' · leve' : p.tipo === 'dificil' ? ' · mínimo' : ''}` : p.mini ? 'mini' : '' }
++}
++
++/** O rótulo da célula no celular, onde cabe só um número ou uma palavra curta. */
++function textoCurto(estado: string, texto: string): string {
++  if (estado === 'atrasado') return '–'
++  if (estado === 'folga' || estado === 'hoje' && texto === 'hoje') return ''
++  if (estado === 'adiantado') return 'livre'
++  if (estado === 'prova') return 'PROVA'
++  if (texto === 'revisão') return 'rev.'
++  if (texto === 'modo prova') return 'prova'
++  if (texto === 'véspera') return 'vésp.'
++  const n = texto.match(/^\d+/)?.[0]
++  return n ?? texto
++}
++
++function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selecionado: boolean; aoEscolher: (d: DiaCalendario) => void }) {
++  const { estado, texto } = rotuloEstado(d)
++  const passado = d.fase === 'passado' || (d.fase === 'hoje' && d.feitas > 0 && !d.plano?.itens.length)
++  const partes = passado ? d.areasFeitas.slice(0, 4) : (d.plano?.itens ?? []).map((i) => ({ slug: i.slug, nome: i.nome, n: i.n }))
++  const areas = [...partes].reduce<Array<{ slug: string; nome: string; n: number }>>((acc, p) => { const a = acc.find((x) => x.slug === p.slug); if (a) a.n += p.n; else acc.push({ ...p }); return acc }, []).sort((a, b) => b.n - a.n)
++  const mini = !!d.plano?.mini
++  const marco = mini || d.marcos.length > 0
++  const descricao = [dataLonga(d.data), texto, areas.length ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', mini ? 'mini-simulado' : '', ...d.marcos].filter(Boolean).join(', ')
++  return (
++    <li className={`cc-dia cc-dia--${estado}${marco ? ' cc-dia--marco' : ''}${d.plano?.adiantado ? ' cc-dia--com-adiantado' : ''}${selecionado ? ' cc-dia--selecionado' : ''}`}>
++      <button type="button" onClick={() => aoEscolher(d)} aria-label={descricao} aria-pressed={selecionado} disabled={estado === 'fora'}>
++        <span className="cc-dia__topo">
++          <b className="cc-dia__num">{d.data.getDate()}</b>
++          {estado === 'feito' && <span className="cc-dia__selo cc-dia__selo--feito" aria-hidden="true"><Icone nome="certo" tamanho={11} /></span>}
++          {estado === 'hoje' && <span className="cc-dia__hoje">hoje</span>}
++          {mini && <span className="cc-dia__selo cc-dia__selo--marco" aria-hidden="true" title="Mini-simulado">★</span>}
++        </span>
++        {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__areas">
++          {areas.slice(0, 2).map((a) => <span key={a.slug} className="cc-dia__area"><i style={{ background: corDaArea(a.slug) }} /><span>{curto(a.nome, 16)}</span></span>)}
++          {areas.length > 2 && <span className="cc-dia__area cc-dia__area--mais">+{areas.length - 2}</span>}
++        </span>}
++        {d.marcos.length > 0 && <span className="cc-dia__marco">{d.marcos[0]}</span>}
++        <span className="cc-dia__rodape">
++          {texto && <em data-curto={textoCurto(estado, texto)}><span>{texto}</span></em>}
++          {d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && <s className="numerico">{d.plano.total + d.plano.adiantado}</s>}
++        </span>
++        {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__faixa" style={{ background: faixa(areas) }} aria-hidden="true" />}
++      </button>
++    </li>
++  )
++}
++
++function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes, aoFechar }: {
++  ancora: RefObject<HTMLElement>
++  dia: DiaCalendario; calculo: CalculoPlano; plano: PlanoSalvo; minutos: number; revisoesHoje: number; acoes: AcoesCalendario; aoFechar: () => void
++}) {
++  const { estado } = rotuloEstado(d)
++  const p = d.plano
++  const principal = p?.itens.find((i) => !i.mistura) ?? p?.itens[0]
++  const linhas: Array<{ id: string; cor?: string; titulo: ReactNode; texto?: ReactNode; minutos?: number | null; chips?: string[]; opcional?: boolean }> = []
++  let titulo = ''
++  let sub: ReactNode = null
++  let acao: ReactNode = null
++
++  if (d.fase === 'dia-prova') { titulo = `Prova: ${plano.prova}`; sub = 'O dia que o plano inteiro prepara. Boa prova!' }
++  else if (d.fase === 'antes') { titulo = 'Antes do cronograma'; sub = 'O plano começou depois deste dia.' }
++  else if (d.fase === 'depois') { titulo = 'Depois da prova'; sub = 'O cronograma termina no dia da prova.' }
++  else if (d.fase === 'revisao' || d.fase === 'prova' || d.fase === 'vespera') {
++    titulo = d.fase === 'revisao' ? 'Reta final: revisão forte' : d.fase === 'prova' ? 'Reta final: modo prova' : 'Véspera da prova'
++    sub = d.fase === 'revisao' ? 'Sem conteúdo novo: uma fatia da prova por dia, com os seus erros, as dúvidas e o que mais cai.'
++      : d.fase === 'prova' ? 'Simulado cronometrado, os erros que importam e o resumão.'
++      : 'Aquecimento leve e descanso. Durma cedo.'
++    if (d.fase === 'revisao') linhas.push({ id: 'forte', titulo: `Revisão forte: ~${calculo.metaMedia} questões`, texto: 'As áreas do dia, dos seus erros e dúvidas primeiro', minutos: calculo.metaMedia * minutos })
++    if (d.fase === 'prova') linhas.push({ id: 'sim', titulo: 'Simulado cronometrado', texto: 'No horário e com a duração da prova' }, { id: 'erros', titulo: 'Os erros que importam', texto: 'O que mais cai e você errou' })
++    if (d.fase === 'vespera') linhas.push({ id: 'aq', titulo: 'Aquecimento leve', texto: 'Poucas questões, só para entrar no ritmo' })
++  } else if (d.fase === 'passado') {
++    titulo = d.folga && !d.feitas ? 'Folga' : d.feitas >= DIA_MINIMO ? 'Feito' : d.feitas > 0 ? 'Feito em parte' : 'Sem estudo'
++    sub = d.feitas ? `Você respondeu ${d.feitas} ${d.feitas === 1 ? 'questão' : 'questões'} neste dia${d.feitas >= DIA_MINIMO ? ', o bastante para manter a sequência' : ''}.` : d.folga ? 'Dia de descanso do seu plano.' : 'Nenhuma questão neste dia. O que ficou para trás já foi redistribuído pelos próximos dias.'
++    for (const a of d.areasFeitas.slice(0, 6)) linhas.push({ id: a.slug, cor: corDaArea(a.slug), titulo: `${a.n} de ${a.nome}` })
++  } else if (d.folga && (!p || p.tipo === 'folga')) {
++    titulo = 'Folga'
++    sub = d.fase === 'hoje' ? 'Dia de descanso no seu plano. Se quiser estudar, adiante o próximo dia de estudo no cartão Hoje.' : 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias.'
++  } else if (d.fase === 'hoje' && p && calculo.metaDiaria > 0 && calculo.faltaHoje === 0) {
++    // Hoje, com a meta feita: o que foi feito, por área, e o que passou da meta (sai dos próximos dias).
++    titulo = 'Meta de hoje feita'
++    const extra = calculo.extraHoje
++    sub = <>{calculo.feitasHoje} questões novas hoje: {calculo.metaDiaria} da meta{extra > 0 ? <> e <b className="cc-verde">+{extra} adiantadas</b>, que saem dos próximos dias</> : null}.</>
++    for (const a of d.areasFeitas.slice(0, 6)) linhas.push({ id: a.slug, cor: corDaArea(a.slug), titulo: `${a.n} de ${a.nome}` })
++    linhas.push({ id: 'extras', titulo: revisoesHoje > 0 ? `${revisoesHoje} ${revisoesHoje === 1 ? 'revisão' : 'revisões'} e flashcards` : 'Revisões e flashcards', texto: 'Se sobrar tempo; não contam na meta', opcional: true })
++  } else if (p) {
++    const livre = p.total === 0 && p.adiantado > 0 && !p.mini
++    titulo = livre ? 'Livre: você já adiantou' : principal ? principal.nome : p.mini ? 'Mini-simulado' : 'Dia de estudo'
++    const tipo = p.tipo === 'leve' ? 'Dia leve (plantão). ' : p.tipo === 'dificil' ? 'Semana difícil: só o dia mínimo. ' : ''
++    const passada = principal ? `${ROTULO_PASSADA[principal.passada].nome}: ${ROTULO_PASSADA[principal.passada].texto}.` : ''
++    sub = livre ? `As ${p.adiantado} questões deste dia você fez antes.` : <>{tipo}{passada}{p.adiantado > 0 ? <> <b className="cc-verde">−{p.adiantado} adiantadas</b> (eram {p.total + p.adiantado}).</> : null}</>
++    if (!livre && principal) linhas.push({ id: 'resumao', titulo: `Resumão de ${principal.nome.toLowerCase()}`, texto: 'As frases "Na prova", antes das questões', minutos: MINUTOS_RESUMAO })
++    for (const it of p.itens) linhas.push({ id: `${it.slug}-${it.mistura}`, cor: corDaArea(it.slug), titulo: <>{it.n} questões de {it.nome}{it.mistura && <span className="cp-tag">mistura</span>}</>, chips: it.assuntos.slice(0, 4), minutos: it.n * minutos })
++    if (p.mini) linhas.push({ id: 'mini', titulo: `Mini-simulado de ${TAMANHO_MINI} questões`, texto: 'Cronometrado, do que você já viu', minutos: TAMANHO_MINI * 1.5 })
++    if (!livre) linhas.push({ id: 'extras', titulo: d.fase === 'hoje' && revisoesHoje > 0 ? `${revisoesHoje} ${revisoesHoje === 1 ? 'revisão' : 'revisões'} e flashcards` : 'Revisões e flashcards', texto: 'Se sobrar tempo; não contam na meta', opcional: true })
++  }
++  for (const m of d.marcos) if (!titulo.includes(m)) linhas.unshift({ id: `marco-${m}`, titulo: m, texto: m.startsWith('Começa a') && m.includes('passada') ? 'Muda o nível de prioridade dos assuntos' : undefined })
++  const total = linhas.filter((l) => !l.opcional).reduce((s, l) => s + (l.minutos ?? 0), 0)
++
++  // Ações: hoje começa ou continua; os próximos dias de estudo podem ser adiantados (na ordem, como no painel).
++  if (d.fase === 'hoje') {
++    const falta = calculo.faltaHoje + calculo.adiantarFalta
++    if (acoes.pendente) acao = <a className="cp-botao" href="#/sessao" onClick={aoFechar}>Continuar: faltam {acoes.pendente.total - acoes.pendente.feitas} questões</a>
++    else if (calculo.hoje && falta > 0 && acoes.aoComecar) acao = <button type="button" className="cp-botao" onClick={() => { aoFechar(); acoes.aoComecar!() }}>{calculo.feitasHoje > 0 ? `Continuar: faltam ${falta} questões` : `Começar: ${falta} questões`}<small>~{formatarTempo(falta * minutos)}</small></button>
++    else if (calculo.metaDiaria > 0 && calculo.faltaHoje === 0) acao = <p className="cc-detalhe__ok"><Icone nome="certo" tamanho={16} /> Meta de hoje feita: {calculo.metaDiaria} questões.</p>
++  } else if (d.fase === 'conteudo' && p && acoes.aoAdiantar && calculo.restante > 0) {
++    const proximos = calculo.dias.slice(1).filter((x) => x.meta > 0)
++    const k = proximos.findIndex((x) => x.data.getTime() === d.data.getTime())
++    if (k >= 0 && k < ADIANTAR_ATE) {
++      const n = proximos.slice(0, k + 1).reduce((s, x) => s + x.meta, 0)
++      acao = <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoAdiantar!(n); setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ block: 'center' }), 200) }}>
++        {k === 0 ? `Adiantar este dia: ${n} questões` : `Adiantar até este dia: ${n} questões`}
++        <small>{k === 0 ? 'Entram na sua sessão de hoje' : `Os ${k + 1} próximos dias de estudo, na ordem`} · ~{formatarTempo(n * minutos)}</small>
++      </button>
++    } else if (k >= ADIANTAR_ATE) acao = <p className="cc-detalhe__nota">O adiantado sai dos dias em ordem, a começar pelo próximo. Pelo calendário dá para adiantar até {ADIANTAR_ATE} dias de estudo de uma vez.</p>
++  }
++
++  return (
++    <section ref={ancora} className={`cc-detalhe cc-detalhe--${estado}`} aria-live="polite" aria-labelledby="cc-detalhe-titulo" style={{ ['--cor-area' as string]: principal ? corDaArea(principal.slug) : undefined }}>
++      <p className="cc-detalhe__data">{dataLonga(d.data)}{d.fase === 'hoje' && <span className="cc-detalhe__agora">hoje</span>}</p>
++      <h3 id="cc-detalhe-titulo">{titulo}</h3>
++      {sub && <p className="cc-detalhe__sub">{sub}</p>}
++      {d.fase === 'hoje' && calculo.feitasHoje > 0 && calculo.faltaHoje > 0 && <p className="cc-detalhe__progresso"><span style={{ width: `${Math.min(100, (calculo.feitasHoje / Math.max(1, calculo.metaDiaria)) * 100)}%` }} /><b>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} feitas</b></p>}
++      {linhas.length > 0 && <ul className="cc-detalhe__lista">
++        {linhas.map((l) => (
++          <li key={l.id} className={l.opcional ? 'cc-detalhe__item cc-detalhe__item--extra' : l.id.startsWith('marco') ? 'cc-detalhe__item cc-detalhe__item--marco' : 'cc-detalhe__item'}>
++            <i style={{ background: l.cor }} aria-hidden="true" />
++            <span>
++              <strong>{l.titulo}</strong>
++              {l.texto && <small>{l.texto}</small>}
++              {l.chips && l.chips.length > 0 && <span className="cc-detalhe__chips">{l.chips.map((c) => <span key={c}>{c}</span>)}</span>}
++            </span>
++            {l.minutos ? <em>~{formatarTempo(l.minutos)}</em> : null}
++          </li>
++        ))}
++      </ul>}
++      {total > 0 && <p className="cc-detalhe__total">Seu dia: <b>~{formatarTempo(total)}</b></p>}
++      {acao}
++    </section>
++  )
++}
+diff --git a/src/paginas/CronogramaPainel.tsx b/src/paginas/CronogramaPainel.tsx
+index 66ef8ed7..88bf7f10 100644
+--- a/src/paginas/CronogramaPainel.tsx
++++ b/src/paginas/CronogramaPainel.tsx
+@@ -6,6 +6,8 @@ import { corDaArea } from '../dados/coresAreas'
+ import { posicaoDaArea } from '../dados/incidencia'
+ import { Icone } from '../componentes/Icone'
+ import { chaveCivil, diaCivil } from '../util/dia'
++import { fraseAdiantado } from '../dados/frasesAdiantar'
++export { fraseAdiantado, fraseAdiantadoHoje, noDia } from '../dados/frasesAdiantar'
+ 
+ /**
+  * A apresentação do cronograma (reforma de 14/10/2026, docs/cronograma/PLANO.md).
+@@ -192,7 +194,7 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
+   const opcoes: Array<{ id: string; n: number; rotulo: string; efeito: string }> = []
+   if (d1) {
+     for (const n of [10, 20, 30]) if (n < d1.meta) opcoes.push({ id: `+${n}`, n, rotulo: `+${n}`, efeito: `${nomeDia(d1.data)} fica com ${d1.meta - n}` })
+-    opcoes.push({ id: 'd1', n: d1.meta, rotulo: diferencaDias(d1.data) === 1 ? 'Amanhã inteiro' : `${semanaDia(d1.data)} inteira`, efeito: `${d1.meta} questões · ${nomeDia(d1.data)} livre` })
++    opcoes.push({ id: 'd1', n: d1.meta, rotulo: diferencaDias(d1.data) === 1 ? 'Amanhã inteiro' : `${semanaDia(d1.data)} ${d1.data.getDay() === 0 || d1.data.getDay() === 6 ? 'inteiro' : 'inteira'}`, efeito: `${d1.meta} questões · ${nomeDia(d1.data)} livre` })
+     if (d2) opcoes.push({ id: 'd2', n: d1.meta + d2.meta, rotulo: `2 dias`, efeito: `${d1.meta + d2.meta} questões · até ${semanaDia(d2.data)}` })
+   }
+   const pendente = Math.max(0, calculo.adiantarPedido - calculo.extraHoje)
+@@ -208,8 +210,8 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
+       {ja > 0 && <p className="cp-adiantar__estado" role="status">
+         <Icone nome="certo" tamanho={14} />
+         <span>
+-          <b>{ja} {ja === 1 ? 'questão adiantada' : 'questões adiantadas'}</b>
+-          {tocados.length > 0 && <> · {tocados.slice(0, 2).map((d) => `${nomeDia(d.data)}: ${d.meta + d.adiantado} → ${d.meta}`).join(' · ')}</>}
++          <b>{fraseAdiantado(calculo) ?? `${ja} ${ja === 1 ? 'questão adiantada' : 'questões adiantadas'}`}</b>
++          {tocados.length > 1 && <> · {tocados.slice(1, 3).map((d) => `${nomeDia(d.data)}: ${d.meta + d.adiantado} → ${d.meta}`).join(' · ')}</>}
+           {pendente > 0 && <> · faltam {pendente} para fechar</>}
+         </span>
+         {pendente > 0 && <button type="button" className="cp-adiantar__cancelar" disabled={salvando} onClick={aoCancelar}>Cancelar o que falta</button>}
+@@ -264,7 +266,7 @@ const diferencaDias = (d: Date) => Math.round((meiaNoite(d).getTime() - diaCivil
+ 
+ // ─── Esta semana ───────────────────────────────────────────────────────────
+ 
+-export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean }) {
++export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false, aoVerCalendario }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean; aoVerCalendario?: () => void }) {
+   const hoje = diaCivil()
+   const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
+   const opcoes = opcoesDe(plano)
+@@ -302,6 +304,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
+   return (
+     <section className="cp-bloco" aria-labelledby="cp-semana-titulo">
+       <p className="cp-rotulo"><span id="cp-semana-titulo">Esta semana</span><b>{curta(dias[0])} a {curta(dias[6])}</b></p>
++      {aoVerCalendario && <button type="button" className="cc-abrir cc-abrir--largo" onClick={aoVerCalendario}><Icone nome="calendario" tamanho={17} /> Ver calendário: o que estudar em cada dia</button>}
+       <div className="cp-semana">
+         <ol className="cp-dias">
+           {plano7.map((x) => (
+@@ -330,7 +333,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
+ 
+ interface SemanaDepois { inicio: Date; fim: Date; partes: Array<{ slug: string; nome: string; n: number; assuntos: string[] }>; total: number; passadaNova: Passada | null; minis: Date[] }
+ 
+-export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false }: { calculo: CalculoPlano; maximo?: number; detalhe?: ReactNode; plano?: PlanoSalvo; semMais?: boolean }) {
++export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false, aoVerCalendario }: { calculo: CalculoPlano; maximo?: number; detalhe?: ReactNode; plano?: PlanoSalvo; semMais?: boolean; aoVerCalendario?: () => void }) {
+   const extra = plano?.opcoes?.provaExtra && /^\d{4}-\d{2}-\d{2}$/.test(plano.opcoes.provaExtra.data) ? { nome: plano.opcoes.provaExtra.nome, data: new Date(`${plano.opcoes.provaExtra.data}T00:00:00`) } : null
+   const [tudo, definirTudo] = useState(false)
+   const hoje = diaCivil()
+@@ -383,6 +386,7 @@ export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false }:
+             <li className="cp-depois__marco cp-depois__marco--prova"><span className="cp-depois__data">{curta(prova)}</span><span><span className="cp-depois__faixa cp-depois__faixa--prova" /><strong>Prova</strong><small>Boa prova!</small></span></li>
+           </>}
+         </ol>
++        {aoVerCalendario && <button type="button" className="cc-abrir" onClick={aoVerCalendario}><Icone nome="calendario" tamanho={16} /> Ver no calendário</button>}
+         {semanas.length > maximo && !semMais && <button type="button" className="cp-depois__mais" onClick={() => definirTudo(!tudo)} aria-expanded={tudo}>{tudo ? 'Mostrar menos' : `Ver as ${semanas.length} semanas`}</button>}
+         {tudo && detalhe}
+       </div>
+diff --git a/src/paginas/PlanoEstudo.tsx b/src/paginas/PlanoEstudo.tsx
+index 1c963480..814b9e3b 100644
+--- a/src/paginas/PlanoEstudo.tsx
++++ b/src/paginas/PlanoEstudo.tsx
+@@ -1,4 +1,4 @@
+-import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
++import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+ import { conferirMetaCronograma } from '../conta/feitos'
+ import { chamarRpc, codigoErro } from '../servicos/supabase'
+ import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
+@@ -17,8 +17,9 @@ import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dad
+ import { idsRevisaoHoje } from '../estado/planoRevisao'
+ import { usarRitmoRevisao } from '../estado/preferencias'
+ import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, HojeRetaFinal, MapaRisco } from './CronogramaHub'
+-import { CartaoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
++import { CartaoHoje, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
+ import { corDaArea } from '../dados/coresAreas'
++import { CalendarioCronograma } from './CronogramaCalendario'
+ import '../estilos/paginas/CronogramaPainel.css'
+ import { Carregando } from '../componentes/Estados'
+ import { Icone } from '../componentes/Icone'
+@@ -305,7 +306,7 @@ export function PlanoEstudo() {
+       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
+       {!DEMO && <IndicadorSincronia preparando={preparando} />}
+       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
+-      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
++      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+     </div>
+   )
+ }
+@@ -395,7 +396,7 @@ export interface HubDados {
+   salvandoOpcoes: boolean
+ }
+ 
+-export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
++export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; indice?: Indice; respondidas?: Respondidas; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
+   // O tour só é lido e gravado no cronograma do assinante (aberto): a vitrine não toca nele,
+   // para ele aparecer sozinho na primeira visita depois de assinar.
+   const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
+@@ -406,6 +407,11 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
+   const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
+   const feitos = hub?.feitosDia ?? { data: '' }
++  // Calendário do mês (16/10/2026): só no cronograma do assinante; #/cronograma?calendario=1 abre direto.
++  const temCalendario = aberto && !!indice && !!respondidas
++  const [calendarioAberto, definirCalendarioAberto] = useState(() => temCalendario && typeof location !== 'undefined' && location.hash.includes('calendario=1'))
++  const abrirCalendario = temCalendario ? () => definirCalendarioAberto(true) : undefined
++  const fecharCalendario = useCallback(() => definirCalendarioAberto(false), [])
+ 
+   // ── A lista de hoje ──
+   const itensDia = calculo.hoje?.itens ?? []
+@@ -417,7 +423,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+   const lista: ItemChecklist[] = []
+   if (!calculo.provaPassou && !calculo.naRetaFinal) {
+     if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) || (hub?.resumaoLido ?? []).includes(principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`) } : undefined })
+-    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
++    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` ${fraseAdiantadoHoje(calculo)}` : ''
+     // A vitrine mostra o jeito do dia, sem os números (orientação de 14/10): quantas e quanto tempo é do assinante.
+     if (calculo.metaDiaria > 0 && !aberto) lista.push({
+       id: 'novas', titulo: 'Questões novas',
+@@ -430,7 +436,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+       minutos: calculo.metaDiaria * minutos, estado: metaFeita ? 'feito' : calculo.feitasHoje > 0 || pendente ? 'agora' : 'afazer',
+       progresso: { feitas: Math.min(calculo.feitasHoje, calculo.metaDiaria), total: calculo.metaDiaria },
+     })
+-    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `As ${calculo.adiantadoHoje} questões de hoje você fez antes. Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
++    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `Você adiantou ${calculo.adiantadoHoje} questões; hoje sua meta é 0 (era ${calculo.metaHojeSemAdiantar}). Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
+     const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
+     if (adiantando > 0 && aberto) lista.push({
+       id: 'adiantadas', titulo: `+${adiantando} adiantadas`,
+@@ -470,6 +476,8 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+     : principal ? porQueHoje(calculo, principal.slug, plano.prova) : calculo.restante === 0 ? 'Mantenha a revisão em dia e faça o Simulado Nacional do mês.' : ''
+ 
+   return <>
++    {calendarioAberto && temCalendario && <CalendarioCronograma plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
++      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} aoFechar={fecharCalendario} />}
+     {aberto && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
+     {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
+     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
+@@ -499,9 +507,9 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+       </div>
+       <div className="cp-col cp-col--lado">
+         {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
+-        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} /></div>}
++        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} aoVerCalendario={abrirCalendario} /></div>}
+         {!calculo.provaPassou && <div className="cp-ordem-5">{aberto
+-          ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} />
++          ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} aoVerCalendario={abrirCalendario} />
+           : <div className="cp-previa-depois">
+               <Degustacao className="pe-degustacao" titulo="O resto é do assinante" texto={<ul className="cp-vitrine-lista">
+                 <li>Amanhã e as semanas até a prova, com os marcos</li>
+diff --git a/src/paginas/Resumo.tsx b/src/paginas/Resumo.tsx
+index 860ecfbe..3fa7a6f2 100644
+--- a/src/paginas/Resumo.tsx
++++ b/src/paginas/Resumo.tsx
+@@ -15,6 +15,7 @@ import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
+ import { CONQUISTAS, CONQUISTAS_SEQUENCIA, proximaConquista } from '../estado/conquistas'
+ import { IconePixel } from '../componentes/IconePixel'
+ import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
++import { fraseAdiantado } from '../dados/frasesAdiantar'
+ import { recurso } from '../config'
+ import { href, navegar } from '../util/rotas'
+ import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
+@@ -600,6 +601,7 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
+       <h2 id="rs-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${calculo.faltaHoje} para a meta de hoje`}</h2>
+       <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
+       <div className="rs-cronograma__proximo">
++        {fraseAdiantado(calculo) && <><b>{fraseAdiantado(calculo)}</b><br /></>}
+         {feita ? <>Pronto por hoje. Se quiser, <b>adiante o próximo dia</b>: o que fizer a mais sai dele. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
+         {amanha && <><br />{chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
+       </div>

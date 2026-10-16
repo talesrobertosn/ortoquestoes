@@ -1,0 +1,2636 @@
+diff --git a/docs/cronograma/PLANO.md b/docs/cronograma/PLANO.md
+index 3c2ffafa..e9008a6a 100644
+--- a/docs/cronograma/PLANO.md
++++ b/docs/cronograma/PLANO.md
+@@ -107,11 +107,33 @@ Linguagem visual fixa:
+ 46. [x] "Ajustar" no topo, no "Onde você está", e no cartão Hoje em dia de folga (antes só no rodapé). "Como o seu cronograma funciona" começa recolhido; o tour de 3 partes some após "Entendi" e só é lido/gravado no cronograma do assinante, então a vitrine não o consome e ele aparece sozinho quando a pessoa assina. (T5.5, branch claude/cronograma-ajustes, 15/10/2026)
+ 47. [x] Um número só de "faltam N dias": a montagem e o painel contam de meia-noite a meia-noite (`diasAte` em `planoEstudo.ts`), sem o `Math.ceil` que dava um dia a mais. (branch claude/cronograma-ajustes, 15/10/2026)
+ 
++48. [x] Adiantar de ponta a ponta (pedido do Tales, 16/10/2026): quem puxou questões dos próximos dias tem, no dia seguinte,
++    exatamente essas questões a menos. **O que estava errado:** o registro do dia (`opcoes.adiantados`) só era gravado se a
++    pessoa, depois de passar da meta, abrisse o cronograma ou a página inicial com o aparelho sincronizado. Quem terminava a
++    sessão e fechava o site (ou estudava no Treinar, ou num aparelho que não chegou a gravar) não tinha registro, e no dia
++    seguinte o extra voltava a se diluir pelo plano inteiro (meta de 62 em vez de 42 depois de 20 a mais). Agora o motor
++    refaz a meta dos últimos 7 dias sem registro (`inferirAdiantados` em `planoEstudo.ts`, com as respostas que existiam até
++    o fim de cada dia, em cache) e trata o que passou dela como adiantado; o registro gravado continua valendo primeiro.
++    A interface diz a regra com os números: "Você adiantou 30 questões; amanhã sua meta é 32 (era 62)" (painel Adiantar e
++    fim de sessão) e "Você adiantou 30 questões de hoje; hoje sua meta é 32 (era 62)" no dia seguinte (`dados/frasesAdiantar.ts`).
++    Teste: `fixtures/testar_adiantar_ponta_a_ponta.mjs` (botão, extra sem botão e sem registro, vários dias na ordem pulando a
++    folga, virada do dia às 23h50/0h10 de São Paulo com o aparelho em 4 fusos, dois aparelhos). A meta normal de D+1 pode
++    ficar 1 questão abaixo da mostrada em D (arredondamento da divisão pelos dias que faltam), nunca acima.
++49. [x] Calendário do mês (pedido do Tales, 16/10/2026): botão "Ver calendário" em "Esta semana" e "Ver no calendário" em
++    "Depois" (ou `#/cronograma?calendario=1`). Pop-up grande no computador, tela cheia no celular; grade seg–dom, navegação
++    do mês da criação até o da prova. Cada dia: áreas com a cor (nomes no computador, pontos no celular), questões, dia leve,
++    folga hachurada, feito (✓ e quantas), hoje, mini-simulado e início de passada (dourado tracejado), reta final (véu dourado)
++    e a prova. Tocar num dia abre o detalhe: resumão, questões por área com os assuntos, mini-simulado, extras e o tempo do
++    dia; hoje tem "Começar/Continuar"; os 3 próximos dias de estudo têm "Adiantar este dia" / "Adiantar até este dia" (o
++    mesmo pedido do painel Adiantar, que desconta na ordem). Código: `src/paginas/CronogramaCalendario.tsx` e
++    `src/estilos/paginas/CronogramaCalendario.css`. Capturas: `node fixtures/capturar_calendario.mjs` com o Vite aberto.
++
+ Como funciona por dentro: `opcoes.adiantados` (no `planos_estudo.opcoes`, sem SQL novo) guarda, por dia, a meta daquele dia e
+ o que a pessoa pediu para adiantar. No dia seguinte, o motor conta as primeiras respostas daquele dia, tira a meta e
+ desconta o resto dos dias seguintes; a meta normal é recalculada devolvendo essas questões, então o plano continua
+ agendando exatamente o que falta. O registro é gravado sozinho quando a pessoa passa da meta (página do cronograma,
+-página inicial e fim de sessão leem o mesmo cálculo). Teste: `fixtures/testar_cronograma_adiantar.mjs`.
++página inicial e fim de sessão leem o mesmo cálculo); se faltar (item 48), o motor refaz a meta do dia e chega ao mesmo
++número. Os dias são os de São Paulo (`src/util/dia.ts`), seja qual for o fuso do aparelho. Teste: `fixtures/testar_cronograma_adiantar.mjs`.
+ Modo demonstração: `#/cronograma?demo=1&pendente` e `#/cronograma?demo=1&feita`.
+ 
+ ## Como ficou (14/10/2026)
+diff --git a/fixtures/capturar_calendario.mjs b/fixtures/capturar_calendario.mjs
+new file mode 100644
+index 00000000..6fe77af2
+--- /dev/null
++++ b/fixtures/capturar_calendario.mjs
+@@ -0,0 +1,97 @@
++// Capturas do calendário do cronograma (16/10/2026), no modo demonstração: 1400×860 e 390×844, claro e escuro.
++// Uso: npx vite --port 5191 (em outro terminal) e depois node fixtures/capturar_calendario.mjs [computador-light|celular-dark|pendente...]
++// BASE=http://localhost:5191/ e SAIDA=/tmp/claude-0/capturas-calendario por padrão.
++import { chromium } from 'playwright'
++import { mkdir } from 'node:fs/promises'
++const SAIDA = process.env.SAIDA ?? '/tmp/claude-0/capturas-calendario'
++await mkdir(SAIDA, { recursive: true })
++const BASE = process.env.BASE ?? 'http://localhost:5191/'
++const nav = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
++const erros = []
++async function pagina(largura, altura, esquema) {
++  const ctx = await nav.newContext({ viewport: { width: largura, height: altura }, deviceScaleFactor: largura < 500 ? 2 : 1, colorScheme: esquema, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', isMobile: largura < 500, hasTouch: largura < 500 })
++  await ctx.addInitScript((t) => { localStorage.setItem('ortoquestoes:tema', JSON.stringify(t)); localStorage.setItem('ortoquestoes:cronograma:tour-v2', 'true') }, esquema === 'light' ? 'claro' : 'escuro')
++  const p = await ctx.newPage()
++  p.on('pageerror', (e) => erros.push(String(e)))
++  p.on('console', (m) => { if (m.type() === 'error') erros.push(m.text()) })
++  return p
++}
++const so = process.argv[2]
++for (const [nome, l, a] of [['computador', 1400, 860], ['celular', 390, 844]]) {
++  for (const esquema of ['light', 'dark']) {
++    if (so && so !== `${nome}-${esquema}`) continue
++    const p = await pagina(l, a, esquema)
++    const tema = esquema === 'light' ? 'claro' : 'escuro'
++    // Página do cronograma com o adiantar feito hoje (a frase "Você adiantou…").
++    await p.goto(`${BASE}#/cronograma?demo=1&feita`)
++    await p.waitForSelector('.cp-hoje', { timeout: 30000 })
++    await p.waitForTimeout(600)
++    const recusar = p.getByRole('button', { name: 'Recusar' })
++    if (await recusar.count()) await recusar.first().click().catch(() => {})
++    if (esquema === 'light') {
++      const adiantar = p.locator('#adiantar')
++      await adiantar.scrollIntoViewIfNeeded()
++      await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-0-adiantou.png` })
++      const botao = p.locator('.cc-abrir').first()
++      await botao.scrollIntoViewIfNeeded()
++      await p.waitForTimeout(200)
++      await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-1-botao.png` })
++    }
++    await p.locator('.cc-abrir').first().click()
++    await p.waitForSelector('.cc-janela')
++    await p.waitForTimeout(500)
++    await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-2-calendario.png` })
++    // Um dia futuro: o terceiro próximo dia de estudo.
++    const futuros = p.locator('.cc-dia--futuro > button')
++    if (await futuros.count() > 2) {
++      await futuros.nth(2).click()
++      await p.waitForTimeout(600)
++      if (nome === 'celular') await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-3-detalhe.png` })
++      else await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-3-detalhe.png` })
++    }
++    // Um dia passado.
++    const passado = p.locator('.cc-dia--feito > button, .cc-dia--parcial > button').first()
++    if (await passado.count()) { await passado.scrollIntoViewIfNeeded(); await passado.click(); await p.waitForTimeout(500); await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-4-passado.png` }) }
++    // Avança até o mês da prova (reta final e prova).
++    for (let i = 0; i < 4; i++) { const b = p.locator('.cc-nav__botao[aria-label="Próximo mês"]'); if (await b.isDisabled()) break; await b.click(); await p.waitForTimeout(350) }
++    await p.locator('.cc-topo').scrollIntoViewIfNeeded()
++    const prova = p.locator('.cc-dia--prova > button')
++    if (await prova.count()) { await prova.click(); await p.waitForTimeout(400) }
++    await p.locator('.cc-corpo').evaluate((e) => e.scrollTo(0, 0))
++    await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-5-prova.png` })
++    // Dezembro: reta final.
++    await p.locator('.cc-nav__botao[aria-label="Mês anterior"]').click(); await p.waitForTimeout(400)
++    const reta = p.locator('.cc-dia--reta > button').first()
++    if (await reta.count()) { await reta.click(); await p.waitForTimeout(400) }
++    await p.locator('.cc-corpo').evaluate((e) => e.scrollTo(0, 0))
++    await p.screenshot({ path: `${SAIDA}/${nome}-${tema}-6-reta-final.png` })
++    // Largura: nada de rolagem horizontal.
++    const larg = await p.evaluate(() => ({ doc: document.documentElement.scrollWidth, janela: document.querySelector('.cc-janela').scrollWidth, vw: innerWidth }))
++    if (larg.janela > larg.vw + 1) erros.push(`${nome}: rolagem horizontal ${JSON.stringify(larg)}`)
++    await p.keyboard.press('Escape'); await p.waitForTimeout(200)
++    if (await p.locator('.cc-janela').count()) erros.push(`${nome}: Esc não fechou`)
++    await p.context().close()
++  }
++}
++// Dia com a meta pendente: hoje mostra "Começar"; adiantar um dia pelo calendário entra na sessão de hoje.
++for (const [nome, l, a] of [['computador', 1400, 860], ['celular', 390, 844]]) {
++  if (so && !so.startsWith('pendente')) continue
++  const p = await pagina(l, a, 'light')
++  await p.goto(`${BASE}#/cronograma?demo=1&pendente&calendario=1`)
++  await p.waitForSelector('.cc-janela', { timeout: 30000 })
++  await p.evaluate(() => [...document.querySelectorAll('button')].find((b) => b.textContent === 'Recusar')?.click())
++  await p.waitForTimeout(600)
++  await p.screenshot({ path: `${SAIDA}/${nome}-claro-7-hoje-pendente.png` })
++  const amanha = p.locator('.cc-dia--futuro > button').first()
++  await amanha.click(); await p.waitForTimeout(500)
++  await p.screenshot({ path: `${SAIDA}/${nome}-claro-8-adiantar-dia.png` })
++  await p.locator('.cc-detalhe .cp-botao--ouro').click()
++  await p.waitForTimeout(900)
++  if (await p.locator('.cc-janela').count()) erros.push(`${nome}: o calendário deveria fechar ao adiantar`)
++  await p.screenshot({ path: `${SAIDA}/${nome}-claro-9-depois-de-adiantar.png` })
++  const texto = await p.locator('.cp-hoje').innerText()
++  if (!/adiantadas/.test(texto)) erros.push(`${nome}: o cartão Hoje não mostra as adiantadas`)
++  await p.context().close()
++}
++await nav.close()
++console.log(erros.length ? erros.join('\n') : 'sem erros')
+diff --git a/fixtures/testar_adiantar_ponta_a_ponta.mjs b/fixtures/testar_adiantar_ponta_a_ponta.mjs
+new file mode 100644
+index 00000000..39ac5917
+--- /dev/null
++++ b/fixtures/testar_adiantar_ponta_a_ponta.mjs
+@@ -0,0 +1,156 @@
++// Adiantar de ponta a ponta (pedido do Tales, 16/10/2026): "quem puxou questões do dia seguinte (ou dos
++// dias seguintes) tem, no dia seguinte, menos questões para fazer, porque adiantou".
++// Prova, com o acervo real:
++// 1. adiantar pelo botão no dia D: em D+1 a meta cai exatamente o que foi adiantado;
++// 2. fazer além da meta sem o botão também conta, mesmo sem registro gravado (a pessoa fechou o site);
++// 3. adiantar vários dias: desconta na ordem dos dias, pulando a folga;
++// 4. virada do dia em São Paulo (23h50 e 0h10), com o aparelho em fusos diferentes;
++// 5. dois aparelhos: o registro gravado num vale no outro, e o outro chega ao mesmo número sem ele.
++// Roda o roteiro uma vez em cada fuso (São Paulo, UTC, Tóquio, Los Angeles) em processos filhos.
++import assert from 'node:assert/strict'
++import { build } from 'esbuild'
++import { spawnSync } from 'node:child_process'
++import { mkdtemp, readFile, rm } from 'node:fs/promises'
++import { tmpdir } from 'node:os'
++import { join } from 'node:path'
++import { fileURLToPath, pathToFileURL } from 'node:url'
++
++const FUSOS = ['America/Sao_Paulo', 'UTC', 'Asia/Tokyo', 'America/Los_Angeles']
++
++if (!process.env.OQ_FUSO_FILHO) {
++  for (const fuso of FUSOS) {
++    const r = spawnSync(process.execPath, [fileURLToPath(import.meta.url)], { env: { ...process.env, TZ: fuso, OQ_FUSO_FILHO: '1' }, encoding: 'utf8' })
++    if (r.status !== 0) { console.error(`Fuso ${fuso}:\n${r.stdout}\n${r.stderr}`); process.exit(1) }
++  }
++  console.log(`Adiantar de ponta a ponta: ok em ${FUSOS.length} fusos (botão, extra sem registro, vários dias, virada do dia, dois aparelhos).`)
++  process.exit(0)
++}
++
++const pasta = await mkdtemp(join(tmpdir(), 'oq-'))
++const arquivo = join(pasta, 'm.mjs')
++try {
++  await build({ stdin: { contents: `export * from './src/dados/planoEstudo'; export { opcoesComAdiantamento } from './src/conta/cronograma'; export * from './src/dados/frasesAdiantar'`, resolveDir: process.cwd() }, outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env': '{"BASE_URL":"/","DEV":false}' }, logLevel: 'error' })
++  const m = await import(pathToFileURL(arquivo))
++  const indice = JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))
++
++  // Instantes em São Paulo (UTC−3, sem horário de verão desde 2019), seja qual for o fuso do aparelho.
++  const sp = (dia, hora = 12, min = 0) => { const [a, mes, d] = dia.split('-').map(Number); return Date.UTC(a, mes - 1, d, hora + 3, min) }
++  const criado = new Date(sp('2026-10-06', 9)).toISOString()
++  const plano = (opcoes = {}) => ({ data_prova: '2027-01-10', intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: criado, incluir_simulados: true, opcoes })
++  const responder = (ids, quando, base = {}) => { const r = { ...base }; ids.forEach((id, k) => { const em = quando + k * 1000; r[id] = { c: true, q: em, historico: [{ em, correta: true }] } }); return r }
++  const chave = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
++  const diaDe = (c, k) => c.dias.find((d) => chave(d.data) === k)
++  const fila = (c, n) => c.dias.flatMap((d) => d.itens.flatMap((i) => i.ids)).slice(0, n)
++  const agendadas = (c) => c.dias.reduce((s, d) => s + d.total, 0)
++  const coerente = (c, rotulo) => {
++    const ids = c.dias.flatMap((d) => d.itens.flatMap((i) => i.ids))
++    assert.equal(new Set(ids).size, ids.length, `${rotulo}: questão repetida`)
++    assert.equal(agendadas(c), c.restante, `${rotulo}: o plano deveria agendar exatamente o que falta`)
++  }
++
++  // Quarta 14/10 (D) e quinta 15/10 (D+1).
++  const D = '2026-10-14', D1 = '2026-10-15'
++  const antes = m.calcularPlano(indice, {}, plano(), sp(D, 8))
++  const M = antes.metaDiaria
++  const previstaD1 = diaDe(antes, D1).meta
++  assert.ok(M > 30 && previstaD1 > 30, 'plano de teste com metas normais')
++
++  // ── 1. Botão "adiantar +30" em D, feito em D ──
++  const regBotao = m.opcoesComAdiantamento(plano(), antes, 30, sp(D, 10))
++  assert.deepEqual(regBotao.adiantados, [{ em: D, meta: M, pedido: 30 }], 'o registro de hoje leva a meta e o pedido')
++  const comPedido = m.calcularPlano(indice, {}, plano(regBotao), sp(D, 10))
++  assert.equal(comPedido.dias[0].total, M + 30, 'a sessão de hoje leva as 30 adiantadas')
++  assert.equal(diaDe(comPedido, D1).meta, previstaD1 - 30, 'amanhã já aparece com 30 a menos')
++  const r1 = responder(fila(comPedido, M + 30), sp(D, 14))
++  const fimD = m.calcularPlano(indice, r1, plano(regBotao), sp(D, 22))
++  assert.equal(fimD.faltaHoje, 0); assert.equal(fimD.extraHoje, 30); assert.equal(fimD.adiantarFalta, 0)
++  assert.equal(fimD.amanha.meta, previstaD1 - 30); assert.equal(fimD.amanha.adiantado, 30)
++  const noD1 = m.calcularPlano(indice, r1, plano(regBotao), sp(D1, 8))
++  assert.equal(noD1.adiantadoHoje, 30, 'em D+1 saem as 30 adiantadas')
++  assert.equal(noD1.metaDiaria, noD1.metaHojeSemAdiantar - 30, 'em D+1 a meta cai exatamente 30')
++  // O que foi mostrado ontem ("amanhã fica com X") é o que vale hoje; o arredondamento da meta normal só pode aliviar.
++  assert.ok(noD1.metaDiaria <= fimD.amanha.meta && noD1.metaDiaria >= fimD.amanha.meta - 1, `meta de D+1 (${noD1.metaDiaria}) diferente da mostrada em D (${fimD.amanha.meta})`)
++  assert.ok(noD1.metaHojeSemAdiantar <= previstaD1 && noD1.metaHojeSemAdiantar >= previstaD1 - 1)
++  coerente(noD1, 'botão')
++  // A interface diz a regra com os números.
++  assert.match(m.fraseAdiantado(fimD), new RegExp(`^Você adiantou 30 questões; .+ sua meta é ${previstaD1 - 30} \\(era ${previstaD1}\\)\\.$`))
++  assert.equal(m.fraseAdiantadoHoje(noD1), `Você adiantou 30 questões de hoje; hoje sua meta é ${noD1.metaDiaria} (era ${noD1.metaHojeSemAdiantar}).`)
++  assert.match(m.fraseAdiantado(comPedido), /^Você está adiantando 30 questões;/)
++
++  // ── 2. Além da meta sem o botão, sem registro gravado (fechou o site no fim da sessão) ──
++  const semRegistro = m.calcularPlano(indice, r1, plano(), sp(D1, 8))
++  assert.equal(semRegistro.adiantadoHoje, 30, 'o extra de ontem conta mesmo sem registro')
++  assert.equal(semRegistro.metaDiaria, noD1.metaDiaria, 'com e sem registro, a mesma meta')
++  coerente(semRegistro, 'sem registro')
++  // Com o registro gravado sozinho pela tela (sem pedido), igual.
++  const regAuto = m.opcoesComAdiantamento(plano(), m.calcularPlano(indice, r1, plano(), sp(D, 22)), undefined, sp(D, 22))
++  assert.deepEqual(regAuto.adiantados, [{ em: D, meta: M }])
++  assert.equal(m.calcularPlano(indice, r1, plano(regAuto), sp(D1, 8)).metaDiaria, noD1.metaDiaria)
++  // Fez menos que a meta: nada é adiantado e o atraso não vira "adiantado".
++  const pouco = m.calcularPlano(indice, responder(fila(antes, M - 10), sp(D, 14)), plano(), sp(D1, 8))
++  assert.equal(pouco.adiantadoHoje, 0)
++
++  // ── 3. Vários dias, na ordem, pulando a folga (domingo) ──
++  // Sexta 16/10: adiantar "2 dias" = sábado inteiro + segunda inteira (domingo é folga).
++  const SEX = '2026-10-16', SAB = '2026-10-17', DOM = '2026-10-18', SEG = '2026-10-19', TER = '2026-10-20'
++  const naSexta = m.calcularPlano(indice, {}, plano(), sp(SEX, 8))
++  const [p1, p2] = naSexta.dias.slice(1).filter((d) => d.meta > 0)
++  assert.equal(chave(p1.data), SAB); assert.equal(chave(p2.data), SEG, 'o domingo de folga fica de fora')
++  const dois = p1.meta + p2.meta
++  const regDois = m.opcoesComAdiantamento(plano(), naSexta, dois, sp(SEX, 9))
++  const sexta2 = m.calcularPlano(indice, {}, plano(regDois), sp(SEX, 9))
++  assert.equal(diaDe(sexta2, SAB).total, 0); assert.equal(diaDe(sexta2, SEG).total, 0)
++  assert.equal(diaDe(sexta2, DOM).adiantado, 0, 'nada sai da folga')
++  const rDois = responder(fila(sexta2, naSexta.metaDiaria + dois), sp(SEX, 13))
++  const sabado = m.calcularPlano(indice, rDois, plano(regDois), sp(SAB, 9))
++  assert.equal(sabado.metaDiaria, 0, 'sábado fica livre'); assert.equal(sabado.adiantadoHoje, sabado.metaHojeSemAdiantar)
++  assert.equal(diaDe(sabado, SEG).total, 0, 'segunda também, porque foi adiantada')
++  const segunda = m.calcularPlano(indice, rDois, plano(regDois), sp(SEG, 9))
++  assert.equal(segunda.metaDiaria, 0, 'segunda livre (o sábado ficou sem estudo e mesmo assim não volta)')
++  const terca = m.calcularPlano(indice, rDois, plano(regDois), sp(TER, 9))
++  assert.equal(terca.adiantadoHoje, 0, 'terça volta ao normal'); assert.ok(terca.metaDiaria > 30)
++  // Adiantou 1 dia e 10: sábado livre, segunda com 10 a menos (desconta em ordem).
++  const rMeio = responder(fila(naSexta, naSexta.metaDiaria + p1.meta + 10), sp(SEX, 13))
++  const sabMeio = m.calcularPlano(indice, rMeio, plano(), sp(SAB, 9))
++  assert.equal(sabMeio.metaDiaria, 0)
++  assert.equal(diaDe(sabMeio, SEG).adiantado, 10)
++  const segMeio = m.calcularPlano(indice, rMeio, plano(), sp(SEG, 9))
++  assert.equal(segMeio.adiantadoHoje, 10); assert.equal(segMeio.metaDiaria, segMeio.metaHojeSemAdiantar - 10)
++  coerente(segMeio, 'vários dias')
++
++  // ── 4. Virada do dia em São Paulo ──
++  // 23h50 de D conta para D (mesmo com o aparelho em Tóquio, já no dia seguinte); 0h10 de D+1 conta para D+1.
++  const rNoite = responder(fila(antes, M + 12), sp(D, 23, 50) - (M + 12) * 1000 + 1000)
++  const quaseMeiaNoite = m.calcularPlano(indice, rNoite, plano(), sp(D, 23, 58))
++  assert.equal(quaseMeiaNoite.feitasHoje, M + 12); assert.equal(quaseMeiaNoite.extraHoje, 12)
++  assert.equal(m.opcoesComAdiantamento(plano(), quaseMeiaNoite, undefined, sp(D, 23, 58)).adiantados[0].em, D, 'o registro das 23h58 é de D')
++  const madrugada = m.calcularPlano(indice, rNoite, plano(), sp(D1, 0, 5))
++  assert.equal(madrugada.feitasHoje, 0); assert.equal(madrugada.adiantadoHoje, 12, 'à 0h05 de D+1 as 12 a mais já saem')
++  const rMadrugada = responder(fila(madrugada, 5), sp(D1, 0, 10), rNoite)
++  const depois = m.calcularPlano(indice, rMadrugada, plano(), sp(D1, 0, 20))
++  assert.equal(depois.feitasHoje, 5, 'a 0h10 de D+1 conta para D+1')
++  assert.equal(depois.adiantadoHoje, 12)
++
++  // ── 5. Dois aparelhos ──
++  // MacBook faz M + 20 em D e grava o registro; o computador recebe as respostas pela sincronização.
++  const rMac = responder(fila(antes, M + 20), sp(D, 15))
++  const noMac = m.calcularPlano(indice, rMac, plano(), sp(D, 16))
++  const servidor = plano(m.opcoesComAdiantamento(plano(), noMac, undefined, sp(D, 16)))
++  // O computador, ainda sem as últimas respostas, vê a meta pela metade mas não apaga o registro (só grava com extra).
++  const noPcAtrasado = m.calcularPlano(indice, responder(fila(antes, 10), sp(D, 15)), servidor, sp(D, 16))
++  assert.equal(noPcAtrasado.extraHoje, 0)
++  // Depois de sincronizar, os dois mostram o mesmo hoje e amanhã.
++  const noPc = m.calcularPlano(indice, { ...rMac }, servidor, sp(D, 17))
++  assert.equal(noPc.amanha.meta, noMac.amanha.meta); assert.equal(noPc.extraHoje, 20)
++  // Em D+1, o computador (com o registro) e um celular que nunca viu o registro chegam à mesma meta.
++  const pcD1 = m.calcularPlano(indice, rMac, servidor, sp(D1, 8))
++  const celularD1 = m.calcularPlano(indice, rMac, plano(), sp(D1, 8))
++  assert.equal(pcD1.adiantadoHoje, 20); assert.equal(celularD1.adiantadoHoje, 20)
++  assert.equal(pcD1.metaDiaria, celularD1.metaDiaria)
++  // Gravar de novo em outro aparelho não muda nada (o registro só sobe a meta).
++  assert.equal(m.opcoesComAdiantamento(servidor, noPc, undefined, sp(D, 17)), null)
++
++  console.log(`ok (${process.env.TZ})`)
++} finally {
++  await rm(pasta, { recursive: true, force: true })
++}
+diff --git a/fixtures/testar_cronograma_adiantar.mjs b/fixtures/testar_cronograma_adiantar.mjs
+index bb25ff9d..72b4b77f 100644
+--- a/fixtures/testar_cronograma_adiantar.mjs
++++ b/fixtures/testar_cronograma_adiantar.mjs
+@@ -72,7 +72,10 @@ try {
+   const com = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-10-13', meta: metaOntem }] }), agora)
+   assert.equal(com.adiantadoHoje, 25, 'o que passou da meta ontem deveria sair de hoje')
+   assert.equal(com.metaDiaria, com.metaHojeSemAdiantar - 25)
+-  assert.ok(Math.abs(com.metaHojeSemAdiantar - sem.metaDiaria) <= 1, 'o resto do plano não deveria mudar')
++  // Sem o registro (a pessoa não abriu o cronograma depois de passar da meta), o motor refaz a
++  // meta de ontem e chega ao mesmo resultado: o extra não se dilui pelo plano.
++  assert.equal(sem.adiantadoHoje, 25, 'sem registro, o extra de ontem também deveria sair de hoje')
++  assert.equal(sem.metaDiaria, com.metaDiaria)
+   assert.equal(agendadas(com), com.restante)
+   conferirPlano(com, 'adiantado ontem')
+ 
+@@ -85,8 +88,10 @@ try {
+   assert.equal(agendadas(c6), c6.restante)
+ 
+   // 7. Registro antigo demais ou na reta final não vale.
+-  const c7 = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
++  const c7 = m.calcularPlano(indice, {}, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
+   assert.equal(c7.adiantadoHoje, 0)
++  const c7b = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
++  assert.equal(c7b.adiantadoHoje, sem.adiantadoHoje)
+ 
+   console.log('Adiantar no cronograma: ok')
+ } finally {
+diff --git a/fixtures/testar_orcamento_chunks.mjs b/fixtures/testar_orcamento_chunks.mjs
+new file mode 100644
+index 00000000..7c9e494b
+--- /dev/null
++++ b/fixtures/testar_orcamento_chunks.mjs
+@@ -0,0 +1,71 @@
++// Orçamento de tamanho do código (gzip). Faz um build de produção numa pasta
++// temporária (sem copiar public/) e confere que:
++//  - o código inicial (entrada + o que ela importa de saída + CSS global) não
++//    passou do orçamento: é o que todo celular baixa antes da primeira tela;
++//  - nenhuma página passou do teto por arquivo;
++//  - módulos pesados que só servem a algumas páginas não voltaram para a
++//    entrada (tabela de conquistas, motor dos flashcards, cronograma).
++// Se um aumento for de propósito, ajuste o número aqui e explique no commit.
++// Medições e contexto: docs/DESEMPENHO-SITE-16-10.md.
++import assert from 'node:assert/strict'
++import { mkdtemp, readdir, readFile, rm } from 'node:fs/promises'
++import { tmpdir } from 'node:os'
++import { join } from 'node:path'
++import { gzipSync } from 'node:zlib'
++import { build } from 'vite'
++
++const KB = 1024
++const ORCAMENTO = {
++  /** index-*.js (código do site que roda em toda página) */
++  entradaJs: 56 * KB,
++  /** index-*.css (estilos globais, bloqueiam a pintura) */
++  entradaCss: 34 * KB,
++  /** entrada + react + supabase + CSS global */
++  inicialTotal: 165 * KB,
++  /** qualquer outro arquivo .js (páginas e pedaços compartilhados) */
++  porArquivoJs: 120 * KB,
++}
++// Trechos de código que denunciam um módulo pesado de volta na entrada.
++const FORA_DA_ENTRADA = [
++  ['src/estado/conquistas.ts (tabela de conquistas)', 'Sequência atual'],
++  ['src/flashcards/motor/bestiario.ts', 'Golem de Gesso'],
++]
++
++const saida = await mkdtemp(join(tmpdir(), 'orto-orcamento-'))
++try {
++  const resultado = await build({
++    logLevel: 'silent',
++    build: { outDir: saida, emptyOutDir: true, copyPublicDir: false, write: true, sourcemap: false },
++  })
++  const pacote = (Array.isArray(resultado) ? resultado[0] : resultado).output
++  const entrada = pacote.find((p) => p.type === 'chunk' && p.isEntry)
++  assert.ok(entrada, 'build sem arquivo de entrada')
++  const gz = async (nome) => gzipSync(await readFile(join(saida, nome)), { level: 9 }).length
++  const cssEntrada = [...(entrada.viteMetadata?.importedCss ?? [])]
++  const entradaJs = await gz(entrada.fileName)
++  let entradaCss = 0
++  for (const c of cssEntrada) entradaCss += await gz(c)
++  let importados = 0
++  for (const i of entrada.imports) importados += await gz(i)
++  const inicial = entradaJs + entradaCss + importados
++  const fmt = (b) => `${(b / KB).toFixed(1)} KB`
++  console.log(`entrada JS ${fmt(entradaJs)} · CSS global ${fmt(entradaCss)} · bibliotecas ${fmt(importados)} · inicial ${fmt(inicial)}`)
++
++  assert.ok(entradaJs <= ORCAMENTO.entradaJs, `entrada JS ${fmt(entradaJs)} > orçamento ${fmt(ORCAMENTO.entradaJs)}`)
++  assert.ok(entradaCss <= ORCAMENTO.entradaCss, `CSS global ${fmt(entradaCss)} > orçamento ${fmt(ORCAMENTO.entradaCss)}`)
++  assert.ok(inicial <= ORCAMENTO.inicialTotal, `código inicial ${fmt(inicial)} > orçamento ${fmt(ORCAMENTO.inicialTotal)}`)
++
++  const codigoEntrada = await readFile(join(saida, entrada.fileName), 'utf8')
++  for (const [modulo, marca] of FORA_DA_ENTRADA) {
++    assert.ok(!codigoEntrada.includes(marca), `${modulo} voltou para o código inicial (importe sob demanda)`)
++  }
++
++  const arquivos = (await readdir(join(saida, 'assets'))).filter((f) => f.endsWith('.js'))
++  for (const f of arquivos) {
++    const tamanho = await gz(join('assets', f))
++    assert.ok(tamanho <= ORCAMENTO.porArquivoJs, `assets/${f} tem ${fmt(tamanho)} > teto ${fmt(ORCAMENTO.porArquivoJs)}`)
++  }
++  console.log(`orçamento de chunks ok (${arquivos.length} arquivos JS)`)
++} finally {
++  await rm(saida, { recursive: true, force: true })
++}
+diff --git a/index.html b/index.html
+index 634c847b..d29c577f 100644
+--- a/index.html
++++ b/index.html
+@@ -64,6 +64,12 @@
+       planos), não na inicial nem na maioria das outras.
+     -->
+     <link rel="preload" href="/src/marca/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin />
++    <!--
++      Toda página fala com o Supabase logo na abertura (aviso do site, conta,
++      sincronização). A conexão segura (DNS, TCP, TLS: três voltas de rede no
++      celular) começa já, em paralelo com o código, e não depois dele.
++    -->
++    <link rel="preconnect" href="%SUPABASE_ORIGEM%" crossorigin />
+     <meta name="apple-mobile-web-app-capable" content="yes" />
+     <meta name="mobile-web-app-capable" content="yes" />
+     <meta name="apple-mobile-web-app-title" content="Orto Questões" />
+@@ -88,8 +94,14 @@
+           if (claro) document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F1F3F2')
+         } catch (e) {}
+         // O índice de questões começa a descer junto com o código, e não só
+-        // depois dele: no celular isso tira uma volta inteira da rede.
+-        try { window.__indiceOrtoQuestoes = fetch('./acervo/indice.json', { cache: 'no-cache' }) } catch (e) {}
++        // depois dele: no celular isso tira uma volta inteira da rede. As
++        // páginas que não mostram questões (planos, termos, resumão...) não
++        // usam o índice: ali ele só disputaria a rede com o código da página.
++        try {
++          var rota = location.hash.replace(/^#\/?/, '').split(/[/?]/)[0]
++          var semIndice = ['assinatura', 'termos', 'condicoes-assinatura', 'ligas', 'indicar', 'convite', 'emails', 'resumao']
++          if (semIndice.indexOf(rota) < 0) window.__indiceOrtoQuestoes = fetch('./acervo/indice.json', { cache: 'no-cache' })
++        } catch (e) {}
+       })()
+     </script>
+     <!--
+@@ -134,8 +146,11 @@
+       }
+     </script>
+     <style>
+-      /* Só o conteúdo inicial: discreto, para não piscar como página quebrada. */
+-      .pre-carga { max-width: 40rem; margin: 18vh auto 0; padding: 0 1rem; font: 15px/1.6 system-ui, sans-serif; color: #5b6664; text-align: center; }
++      /* Só o conteúdo inicial: discreto, para não piscar como página quebrada.
++         Espaço no alto como padding, não margin: a margem atravessava o body
++         (colapso de margens), e o body inteiro "pulava" 18vh quando o app
++         montava, um deslocamento de layout (CLS) em toda primeira visita. */
++      .pre-carga { max-width: 40rem; margin: 0 auto; padding: 18vh 1rem 0; font: 15px/1.6 system-ui, sans-serif; color: #5b6664; text-align: center; }
+       .pre-carga h1 { font-size: 1.35rem; color: #1d2826; margin: 0 0 .5rem; }
+       .pre-carga nav { display: flex; flex-wrap: wrap; gap: .4rem .9rem; justify-content: center; margin-top: 1.2rem; font-size: .85rem; }
+       .pre-carga a { color: inherit; }
+diff --git a/package.json b/package.json
+index 165a1d68..98c132f2 100644
+--- a/package.json
++++ b/package.json
+@@ -8,7 +8,7 @@
+     "build": "tsc -b && vite build",
+     "preview": "vite preview",
+     "typecheck": "tsc --noEmit",
+-    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_previsao_pix.mjs && node fixtures/testar_receita.mjs && node fixtures/testar_dia.mjs && node fixtures/testar_admin_secoes.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs && node fixtures/testar_texto_editorial.mjs && node fixtures/testar_reinicio.mjs && node fixtures/testar_sincronia_incremental.mjs && node fixtures/testar_simulado_resumao.mjs && node fixtures/testar_perfil_ficha.mjs && node fixtures/testar_conquistas.mjs && node fixtures/testar_revisao.mjs && node fixtures/testar_cronograma_sequencia_flashcards.mjs && node fixtures/testar_modelos_email.mjs && node fixtures/testar_pagina_vendas.mjs && node fixtures/testar_frases_inicio.mjs && node fixtures/testar_exportacao_painel.mjs && node fixtures/testar_rotulos_financeiro.mjs && node fixtures/testar_continuidade_flashcards.mjs && node fixtures/testar_sincronia_aparelhos.mjs",
++    "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py && node fixtures/testar_cronograma_simulados.mjs && node fixtures/testar_hub_cronograma.mjs && node fixtures/testar_cronograma_reforma.mjs && node fixtures/testar_cronograma_adiantar.mjs && node fixtures/testar_previsao_pix.mjs && node fixtures/testar_receita.mjs && node fixtures/testar_dia.mjs && node fixtures/testar_admin_secoes.mjs && node fixtures/testar_simulados_areas.mjs && node fixtures/testar_flashcards.mjs && node fixtures/testar_aprendizagem.mjs && python3 fixtures/testar_cronograma_flashcards.py && node fixtures/testar_progressao_flashcards.mjs && node fixtures/testar_flashcards_desempenho.mjs && node fixtures/testar_diario_biblioteca.mjs && node fixtures/testar_estacoes_biblioteca.mjs && node fixtures/testar_ambiente_vivo.mjs && node fixtures/testar_paisagens.mjs && node fixtures/testar_texto_editorial.mjs && node fixtures/testar_reinicio.mjs && node fixtures/testar_sincronia_incremental.mjs && node fixtures/testar_simulado_resumao.mjs && node fixtures/testar_perfil_ficha.mjs && node fixtures/testar_conquistas.mjs && node fixtures/testar_revisao.mjs && node fixtures/testar_cronograma_sequencia_flashcards.mjs && node fixtures/testar_modelos_email.mjs && node fixtures/testar_pagina_vendas.mjs && node fixtures/testar_frases_inicio.mjs && node fixtures/testar_exportacao_painel.mjs && node fixtures/testar_rotulos_financeiro.mjs && node fixtures/testar_continuidade_flashcards.mjs && node fixtures/testar_sincronia_aparelhos.mjs && node fixtures/testar_adiantar_ponta_a_ponta.mjs && node fixtures/testar_orcamento_chunks.mjs",
+     "test:compra": "node fixtures/testar_compra_planos.mjs",
+     "validar": "python3 scripts/validar_acervo.py",
+     "funcoes:colar": "node scripts/juntar-funcoes.mjs",
+diff --git a/public/sw.js b/public/sw.js
+index a34fe6fc..7624a4d9 100644
+--- a/public/sw.js
++++ b/public/sw.js
+@@ -3,12 +3,23 @@
+  * funcionar com a rede ruim, sem nunca prender ninguém numa versão velha.
+  *
+  * - Páginas (index.html e as páginas públicas): rede primeiro; o cache só
+- *   entra quando não há conexão.
++ *   entra quando não há conexão. Assim o app aberto é sempre o publicado, e
++ *   os arquivos que ele pede (com hash no nome) são os dele.
+  * - assets/ (nome com hash, nunca muda): cache primeiro.
+- * - acervo/ e imagens/: rede primeiro, com cópia para uso offline.
++ * - acervo/ (índice, questões e comentários): rede com prazo. Com a rede boa,
++ *   vem sempre a versão publicada; se a rede demorar mais que PRAZO_ACERVO e
++ *   houver cópia guardada, a cópia responde na hora e a resposta da rede, quando
++ *   chegar, atualiza a cópia para a próxima vez (stale-while-revalidate só
++ *   quando a rede está lenta). Sem rede, a cópia.
++ * - Artes do site (imagens/, emblemas/, ranking/, pixel/, mascote/, marca/):
++ *   stale-while-revalidate. Mudam raramente; a cópia guardada responde na hora
++ *   e a rede a renova em segundo plano.
+  * - Outros domínios (Supabase, Mercado Pago): não passam por aqui.
+  */
+ const VERSAO = 'oq-v1'
++const PRAZO_ACERVO = 2500
++// Arquivos com hash que ninguém pede há tanto tempo são de versões antigas do site.
++const VALIDADE_ASSETS = 45 * 24 * 3600 * 1000
+ 
+ self.addEventListener('install', () => self.skipWaiting())
+ 
+@@ -16,9 +27,21 @@ self.addEventListener('activate', (evento) => {
+   evento.waitUntil((async () => {
+     for (const nome of await caches.keys()) if (nome !== VERSAO) await caches.delete(nome)
+     await self.clients.claim()
++    await podarAssetsAntigos().catch(() => undefined)
+   })())
+ })
+ 
++async function podarAssetsAntigos() {
++  const cache = await caches.open(VERSAO)
++  const agora = Date.now()
++  for (const pedido of await cache.keys()) {
++    if (!new URL(pedido.url).pathname.includes('/assets/')) continue
++    const resposta = await cache.match(pedido)
++    const data = Date.parse(resposta?.headers.get('date') ?? '')
++    if (Number.isFinite(data) && agora - data > VALIDADE_ASSETS) await cache.delete(pedido)
++  }
++}
++
+ async function redePrimeiro(pedido) {
+   const cache = await caches.open(VERSAO)
+   try {
+@@ -45,6 +68,41 @@ async function cachePrimeiro(pedido) {
+   return resposta
+ }
+ 
++/** Guarda a cópia sem segurar a resposta (a página não espera a gravação). */
++function guardar(evento, cache, pedido, resposta) {
++  if (resposta.ok) evento.waitUntil(cache.put(pedido, resposta.clone()).catch(() => undefined))
++  return resposta
++}
++
++/** Rede primeiro, mas sem esperar mais que `prazo` quando já existe cópia guardada. */
++async function redeComPrazo(evento, prazo) {
++  const pedido = evento.request
++  const cache = await caches.open(VERSAO)
++  const salva = await cache.match(pedido)
++  const daRede = fetch(pedido).then((resposta) => guardar(evento, cache, pedido, resposta))
++  if (!salva) return daRede
++  // A cópia guardada responde se a rede falhar ou demorar; a rede continua e renova a cópia.
++  evento.waitUntil(daRede.catch(() => undefined))
++  let temporizador
++  const espera = new Promise((resolver) => { temporizador = setTimeout(() => resolver(null), prazo) })
++  const vencedora = await Promise.race([daRede.then((r) => (r.ok ? r : null), () => null), espera])
++  clearTimeout(temporizador)
++  return vencedora ?? salva
++}
++
++/** Responde com a cópia guardada, se houver, e renova em segundo plano. */
++async function copiaEnquantoRenova(evento) {
++  const pedido = evento.request
++  const cache = await caches.open(VERSAO)
++  const salva = await cache.match(pedido)
++  const daRede = fetch(pedido).then((resposta) => guardar(evento, cache, pedido, resposta))
++  if (!salva) return daRede
++  evento.waitUntil(daRede.catch(() => undefined))
++  return salva
++}
++
++const ARTES = ['imagens/', 'emblemas/', 'ranking/', 'pixel/', 'mascote/', 'marca/']
++
+ self.addEventListener('fetch', (evento) => {
+   const pedido = evento.request
+   if (pedido.method !== 'GET') return
+@@ -52,5 +110,7 @@ self.addEventListener('fetch', (evento) => {
+   if (url.origin !== self.location.origin) return
+   const caminho = url.pathname.slice(new URL(self.registration.scope).pathname.length)
+   if (caminho.startsWith('assets/')) evento.respondWith(cachePrimeiro(pedido))
+-  else if (pedido.mode === 'navigate' || caminho.startsWith('acervo/') || caminho.startsWith('imagens/')) evento.respondWith(redePrimeiro(pedido))
++  else if (pedido.mode === 'navigate') evento.respondWith(redePrimeiro(pedido))
++  else if (caminho.startsWith('acervo/')) evento.respondWith(redeComPrazo(evento, PRAZO_ACERVO))
++  else if (ARTES.some((pasta) => caminho.startsWith(pasta)) && pedido.cache !== 'no-store' && pedido.cache !== 'reload') evento.respondWith(copiaEnquantoRenova(evento))
+ })
+diff --git a/scripts/medir_desempenho.mjs b/scripts/medir_desempenho.mjs
+new file mode 100644
+index 00000000..28012eed
+--- /dev/null
++++ b/scripts/medir_desempenho.mjs
+@@ -0,0 +1,387 @@
++// Medição reprodutível de desempenho do site (build de produção).
++//
++// Sobe dist/ num servidor local que compacta como o GitHub Pages (gzip), abre
++// cada rota num navegador limpo (sem cache, sem service worker) e mede:
++//   FCP, LCP, "pronto" (a página saiu do "Carregando" e tem conteúdo), tarefas
++//   longas (soma e maior), CLS, bytes baixados por tipo e número de pedidos.
++// Depois mede a troca de rota (clique num link já com o site aberto) e a
++// rolagem (quadros perdidos) nas páginas longas.
++//
++// Perfis: celular (390×844, CPU 4× mais lenta, rede "Fast 3G" do DevTools:
++// 1,6 Mbps, 562 ms de latência) e computador (1400×860, sem limitação).
++// O Supabase é falso (respostas fixas, como nos testes ponta a ponta), então o
++// número não depende da rede de fora; "logado" injeta uma sessão simulada.
++//
++// Uso:
++//   npm run build && node scripts/medir_desempenho.mjs [--saida arquivo.json]
++//        [--perfis celular,computador] [--rotas /,/treinar] [--repeticoes 1]
++//        [--sem-troca] [--sem-rolagem] [--cascata] [--http1]
++// --cascata imprime a linha do tempo dos pedidos de cada rota (caminho crítico).
++// CHROMIUM=/caminho muda o navegador (padrão /opt/pw-browsers/chromium).
++import { createServer } from 'node:http'
++import { createSecureServer } from 'node:http2'
++import { execFileSync } from 'node:child_process'
++import { mkdtempSync } from 'node:fs'
++import { tmpdir } from 'node:os'
++import { readFile, stat, writeFile } from 'node:fs/promises'
++import { existsSync, readdirSync, readFileSync } from 'node:fs'
++import { extname, join, normalize, resolve } from 'node:path'
++import { gzipSync } from 'node:zlib'
++import { chromium } from 'playwright'
++
++const args = process.argv.slice(2)
++const opcao = (nome, padrao) => { const i = args.indexOf(`--${nome}`); return i >= 0 ? args[i + 1] : padrao }
++const tem = (nome) => args.includes(`--${nome}`)
++const DIST = resolve(opcao('dist', 'dist'))
++const REPETICOES = Number(opcao('repeticoes', '1'))
++if (!existsSync(join(DIST, 'index.html'))) { console.error(`Sem build em ${DIST}: rode npm run build.`); process.exit(1) }
++
++// ---------------- Servidor estático com gzip ----------------
++const TIPOS = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.avif': 'image/avif', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ico': 'image/x-icon', '.webmanifest': 'application/manifest+json', '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg', '.txt': 'text/plain' }
++const COMPACTA = new Set(['.html', '.js', '.css', '.json', '.svg', '.webmanifest', '.txt', '.ico'])
++const cacheGzip = new Map()
++async function atenderArquivo(req, res) {
++  try {
++    let caminho = decodeURIComponent(new URL(req.url, 'http://x').pathname)
++    if (caminho.endsWith('/')) caminho += 'index.html'
++    const arquivo = normalize(join(DIST, caminho))
++    if (!arquivo.startsWith(DIST)) { res.writeHead(403).end(); return }
++    const info = await stat(arquivo).catch(() => null)
++    if (!info?.isFile()) { res.writeHead(404).end(); return }
++    const ext = extname(arquivo)
++    const cabecalhos = { 'content-type': TIPOS[ext] ?? 'application/octet-stream', 'cache-control': 'max-age=600' }
++    let corpo = await readFile(arquivo)
++    if (COMPACTA.has(ext) && /gzip/.test(req.headers['accept-encoding'] ?? '')) {
++      if (!cacheGzip.has(arquivo)) cacheGzip.set(arquivo, gzipSync(corpo, { level: 6 }))
++      corpo = cacheGzip.get(arquivo)
++      cabecalhos['content-encoding'] = 'gzip'
++    }
++    cabecalhos['content-length'] = corpo.length
++    res.writeHead(200, cabecalhos).end(corpo)
++  } catch { res.writeHead(500).end() }
++}
++// HTTP/2 com certificado próprio, como o site publicado (GitHub Pages/Fastly):
++// em HTTP/1.1 o navegador abre só 6 conexões por endereço, e a fila dos
++// arquivos pequenos dominaria a medida no celular. --http1 mede o pior caso.
++function criarServidor() {
++  if (tem('http1')) return { servidor: createServer(atenderArquivo), esquema: 'http' }
++  try {
++    const pasta = mkdtempSync(join(tmpdir(), 'orto-cert-'))
++    execFileSync('openssl', ['req', '-x509', '-newkey', 'rsa:2048', '-nodes', '-subj', '/CN=127.0.0.1', '-days', '2',
++      '-keyout', join(pasta, 'chave.pem'), '-out', join(pasta, 'cert.pem')], { stdio: 'ignore' })
++    const servidor = createSecureServer({ key: readFileSync(join(pasta, 'chave.pem')), cert: readFileSync(join(pasta, 'cert.pem')), allowHTTP1: true }, atenderArquivo)
++    return { servidor, esquema: 'https' }
++  } catch {
++    console.error('Sem openssl: medindo em HTTP/1.1.')
++    return { servidor: createServer(atenderArquivo), esquema: 'http' }
++  }
++}
++const { servidor, esquema } = criarServidor()
++await new Promise((r) => servidor.listen(0, '127.0.0.1', r))
++const BASE = `${esquema}://127.0.0.1:${servidor.address().port}/`
++
++// ---------------- Supabase falso ----------------
++const CONTA = '11111111-2222-4333-8444-555555555555'
++const usuarioFalso = { id: CONTA, aud: 'authenticated', role: 'authenticated', email: 'medicao@exemplo.com', email_confirmed_at: '2026-09-01T00:00:00Z', app_metadata: { provider: 'email' }, user_metadata: { nome: 'Medição' }, created_at: '2026-09-01T00:00:00Z' }
++const RPCS = {
++  obter_acesso_premium: [{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }],
++  obter_estado_conta: [{ status_assinatura: 'ativa', cancelar_ao_fim: false, fim_periodo: null }],
++  sinal_aparelho: [{ ativo: true, outro_aparelho: null }],
++  ler_progresso_desde: [],
++  sincronizar_progresso: [],
++  meus_feitos: { conquistas: [], dias: {}, indicados_assinantes: 0, indicados_30_dias: 0, simulado_edicoes: [], simulado_participacoes: [], ranking_semana: [], relatos_resolvidos: 0, comentarios_avaliados: 0, contra_corrente: 0, plano: null },
++}
++async function atenderSupabase(rota) {
++  const pedido = rota.request()
++  const url = new URL(pedido.url())
++  const cors = { 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': '*', 'access-control-expose-headers': '*' }
++  if (pedido.method() === 'OPTIONS') return rota.fulfill({ status: 204, headers: cors })
++  const json = (corpo, status = 200) => rota.fulfill({ status, headers: { ...cors, 'content-type': 'application/json' }, body: JSON.stringify(corpo) })
++  if (url.pathname.startsWith('/auth/v1/user')) return json(usuarioFalso)
++  if (url.pathname.startsWith('/auth/v1/')) return json({})
++  const rpc = url.pathname.match(/\/rpc\/([a-z_0-9]+)$/)?.[1]
++  if (rpc) return json(rpc in RPCS ? RPCS[rpc] : null)
++  return json([])
++}
++
++// ---------------- Perfis ----------------
++const PERFIS = {
++  celular: { viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, cpu: 4,
++    rede: { offline: false, latency: 562.5, downloadThroughput: (1.6 * 1000 * 1000 / 8) * 0.9, uploadThroughput: (750 * 1000 / 8) * 0.9 } },
++  computador: { viewport: { width: 1400, height: 860 }, deviceScaleFactor: 1, isMobile: false, hasTouch: false, cpu: 1, rede: null },
++}
++const ROTAS = [
++  { rota: '/', logado: false, nome: '#/ (visitante)' },
++  { rota: '/', logado: true, nome: '#/ (logado)' },
++  { rota: '/treinar', logado: true },
++  { rota: '/sessao', logado: true, sessaoRapida: true, nome: '#/sessao (sessão rápida)' },
++  { rota: '/revisao', logado: true },
++  { rota: '/cronograma', logado: true },
++  { rota: '/dados', logado: true, nome: '#/dados (desempenho)' },
++  { rota: '/ranking', logado: true },
++  { rota: '/assinatura', logado: false },
++  { rota: '/conta', logado: true },
++  { rota: '/resumao', logado: true },
++  { rota: '/simulado-nacional', logado: true },
++]
++const TROCAS = [['/', '/treinar'], ['/treinar', '/revisao'], ['/', '/cronograma'], ['/', '/assinatura'], ['/cronograma', '/dados'], ['/', '/ranking']]
++const ROLAGEM = ['/', '/assinatura', '/cronograma', '/resumao', '/ranking']
++
++const perfisEscolhidos = opcao('perfis', 'celular,computador').split(',')
++const rotasEscolhidas = opcao('rotas', null)?.split(',')
++
++// Observadores instalados antes de qualquer script da página.
++const OBSERVADORES = () => {
++  const m = { fcp: null, lcp: null, cls: 0, longas: [], pronto: null, deslocamentos: [] }
++  const descrever = (n) => { if (!n || !n.tagName) return '?'; const c = typeof n.className === 'string' ? n.className.trim().split(/\s+/).slice(0, 2).join('.') : ''; return n.tagName.toLowerCase() + (c ? '.' + c : '') }
++  window.__medidas = m
++  try {
++    new PerformanceObserver((l) => { for (const e of l.getEntries()) if (e.name === 'first-contentful-paint') m.fcp = e.startTime }).observe({ type: 'paint', buffered: true })
++    new PerformanceObserver((l) => { const e = l.getEntries(); if (e.length) m.lcp = e[e.length - 1].startTime }).observe({ type: 'largest-contentful-paint', buffered: true })
++    new PerformanceObserver((l) => { for (const e of l.getEntries()) if (!e.hadRecentInput) { m.cls += e.value; m.deslocamentos.push({ valor: Number(e.value.toFixed(4)), em: Math.round(e.startTime), nos: (e.sources || []).map((s) => descrever(s.node)) }) } }).observe({ type: 'layout-shift', buffered: true })
++    new PerformanceObserver((l) => { for (const e of l.getEntries()) m.longas.push(e.duration) }).observe({ type: 'longtask', buffered: true })
++  } catch { /* navegador sem algum tipo */ }
++  // "Pronto": a área principal tem conteúdo de verdade e nenhum "Carregando".
++  const conferir = () => {
++    if (m.pronto !== null) return
++    const principal = document.getElementById('conteudo-principal')
++    if (!principal || principal.querySelector('.espera-pixel, .estado--carregando, [aria-busy="true"]')) return
++    if ((principal.innerText || '').trim().length < 80) return
++    m.pronto = performance.now()
++  }
++  new MutationObserver(conferir).observe(document, { childList: true, subtree: true, characterData: true })
++}
++
++const SESSAO_AUTH = { access_token: `tok-${CONTA}`, refresh_token: 'r', token_type: 'bearer', expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 30 * 24 * 3600, user: usuarioFalso }
++
++async function novoContexto(navegador, perfil, logado) {
++  const p = PERFIS[perfil]
++  const contexto = await navegador.newContext({ viewport: p.viewport, deviceScaleFactor: p.deviceScaleFactor, isMobile: p.isMobile, hasTouch: p.hasTouch, serviceWorkers: 'block', locale: 'pt-BR', ignoreHTTPSErrors: true })
++  await contexto.route(/supabase\.co\//, atenderSupabase)
++  // Terceiros (pixel do Meta, etc.) ficam de fora: só entram com consentimento.
++  await contexto.route((url) => !url.href.startsWith(BASE) && !/supabase\.co\//.test(url.href) && !url.href.startsWith('data:') && !url.href.startsWith('blob:'), (r) => r.abort())
++  await contexto.addInitScript(([s, logar]) => {
++    try {
++      if (!sessionStorage.getItem('ortoquestoes:tema-sorteado')) sessionStorage.setItem('ortoquestoes:tema-sorteado', 'claro')
++      if (logar && !localStorage.getItem('sb-ortoquestoes-auth')) localStorage.setItem('sb-ortoquestoes-auth', s)
++    } catch { /* sem armazenamento */ }
++  }, [JSON.stringify(SESSAO_AUTH), logado])
++  await contexto.addInitScript(OBSERVADORES)
++  return contexto
++}
++
++async function limitar(pagina, perfil) {
++  const p = PERFIS[perfil]
++  const cdp = await pagina.context().newCDPSession(pagina)
++  await cdp.send('Network.enable')
++  await cdp.send('Network.setCacheDisabled', { cacheDisabled: false })
++  if (p.rede) await cdp.send('Network.emulateNetworkConditions', p.rede)
++  if (p.cpu > 1) await cdp.send('Emulation.setCPUThrottlingRate', { rate: p.cpu })
++  const pedidos = new Map()
++  cdp.on('Network.responseReceived', (e) => { const r = pedidos.get(e.requestId) ?? {}; r.tipo = e.type; r.url = e.response.url; pedidos.set(e.requestId, r) })
++  cdp.on('Network.loadingFinished', (e) => { const r = pedidos.get(e.requestId) ?? {}; r.bytes = e.encodedDataLength; r.fim = e.timestamp; pedidos.set(e.requestId, r) })
++  cdp.on('Network.requestWillBeSent', (e) => { if (!pedidos.has(e.requestId)) pedidos.set(e.requestId, { url: e.request.url, inicio: e.timestamp, prioridade: e.request.initialPriority }) })
++  return { cdp, pedidos }
++}
++
++function resumirBytes(pedidos) {
++  const soma = { js: 0, css: 0, img: 0, json: 0, fonte: 0, outros: 0, total: 0, pedidos: 0 }
++  for (const r of pedidos.values()) {
++    if (!r.url || !r.url.startsWith(BASE)) continue
++    const b = r.bytes ?? 0
++    soma.pedidos++
++    soma.total += b
++    const caminho = new URL(r.url).pathname
++    if (/\.js$/.test(caminho)) soma.js += b
++    else if (/\.css$/.test(caminho)) soma.css += b
++    else if (/\.(png|jpe?g|webp|avif|svg|gif|ico)$/.test(caminho)) soma.img += b
++    else if (/\.json$/.test(caminho)) soma.json += b
++    else if (/\.(woff2?|ttf)$/.test(caminho)) soma.fonte += b
++    else soma.outros += b
++  }
++  return soma
++}
++
++const esperar = (ms) => new Promise((r) => setTimeout(r, ms))
++async function esperarCalmaria(pedidos, maximo = 60_000, calma = 1500) {
++  const inicio = Date.now()
++  let ultimoTotal = -1; let desde = Date.now()
++  while (Date.now() - inicio < maximo) {
++    const pendentes = [...pedidos.values()].filter((r) => r.bytes === undefined).length
++    const total = pedidos.size
++    if (total !== ultimoTotal || pendentes > 0) { ultimoTotal = total; desde = Date.now() }
++    if (Date.now() - desde > calma) return
++    await esperar(200)
++  }
++}
++
++async function medirRota(navegador, perfil, item) {
++  const contexto = await novoContexto(navegador, perfil, item.logado)
++  const pagina = await contexto.newPage()
++  const erros = []
++  pagina.on('pageerror', (e) => erros.push(e.message))
++  const { pedidos } = await limitar(pagina, perfil)
++  const t0 = Date.now()
++  await pagina.goto(BASE + '#' + (item.sessaoRapida ? '/treinar' : item.rota), { waitUntil: 'load', timeout: 120_000 })
++  let medidaSessao = null
++  if (item.sessaoRapida) {
++    const botao = pagina.locator('.tr-heroi__rapida')
++    await botao.waitFor({ state: 'visible', timeout: 90_000 })
++    await pagina.waitForFunction(() => !document.querySelector('.tr-heroi__rapida')?.disabled, null, { timeout: 90_000 })
++    await esperarCalmaria(pedidos, 30_000, 800)
++    const antes = await pagina.evaluate(() => performance.now())
++    await botao.click()
++    await pagina.waitForSelector('.questao-impressa', { timeout: 90_000 })
++    medidaSessao = (await pagina.evaluate(() => performance.now())) - antes
++  }
++  await esperarCalmaria(pedidos)
++  // Uma volta de quadros para o LCP e o CLS assentarem.
++  await pagina.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))))
++  const m = await pagina.evaluate(() => window.__medidas)
++  const bytes = resumirBytes(pedidos)
++  if (tem('cascata')) {
++    // Linha do tempo dos pedidos (ms desde o primeiro), para achar o caminho crítico.
++    const lista = [...pedidos.values()].filter((r) => r.inicio)
++    const zero = Math.min(...lista.map((r) => r.inicio))
++    console.error(`--- cascata ${perfil} ${item.nome ?? item.rota} (pronto ${Math.round(m.pronto ?? -1)} ms desde a navegação)`)
++    for (const r of lista.sort((a, b) => a.inicio - b.inicio)) {
++      console.error(`${String(Math.round((r.inicio - zero) * 1000)).padStart(6)} → ${String(r.fim ? Math.round((r.fim - zero) * 1000) : '?').padStart(6)} ms ${String(Math.round((r.bytes ?? 0) / 1024)).padStart(4)} KB ${(r.prioridade ?? '').padEnd(8)} ${r.url.replace(BASE, '').slice(0, 90)}`)
++    }
++  }
++  await contexto.close()
++  return {
++    perfil, rota: item.nome ?? '#' + item.rota,
++    fcp: m.fcp, lcp: m.lcp, pronto: item.sessaoRapida ? medidaSessao : m.pronto, cls: Number(m.cls.toFixed(3)),
++    longasTotal: Math.round(m.longas.reduce((a, b) => a + b, 0)), longaMaior: Math.round(Math.max(0, ...m.longas)), longasN: m.longas.length,
++    ...bytes, erros, deslocamentos: m.deslocamentos.sort((a, b) => b.valor - a.valor).slice(0, 5), duracaoMs: Date.now() - t0,
++  }
++}
++
++async function medirTroca(navegador, perfil, [de, para]) {
++  const contexto = await novoContexto(navegador, perfil, true)
++  const pagina = await contexto.newPage()
++  const { pedidos } = await limitar(pagina, perfil)
++  await pagina.goto(BASE + '#' + de, { waitUntil: 'load', timeout: 120_000 })
++  await pagina.waitForFunction(() => window.__medidas?.pronto !== null, null, { timeout: 90_000 }).catch(() => null)
++  // Pessoa lendo a página por alguns segundos antes de tocar no menu: é quando
++  // uma pré-carga em segundo plano teria tempo de agir.
++  await esperarCalmaria(pedidos, 30_000, 1500)
++  await esperar(2500)
++  const antesBytes = resumirBytes(pedidos).total
++  // Simula o dedo: passa por cima (hover/toque) do link e clica; sem link visível, troca o endereço.
++  const ms = await pagina.evaluate(async (destino) => {
++    const m = window.__medidas
++    const link = [...document.querySelectorAll(`a[href="#${destino}"]`)].find((a) => a.offsetParent !== null)
++    const principal = () => document.getElementById('conteudo-principal')
++    const textoAntes = (principal()?.innerText || '').trim()
++    const t = performance.now()
++    m.pronto = null
++    if (link) {
++      link.dispatchEvent(new PointerEvent('pointerenter', { bubbles: false }))
++      link.dispatchEvent(new PointerEvent('pointerover', { bubbles: true }))
++      link.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true }))
++      link.click()
++    } else location.hash = '#' + destino
++    // Espera a área principal mudar para a página nova e ficar pronta.
++    await new Promise((r) => {
++      const conferir = () => {
++        const p = document.getElementById('conteudo-principal')
++        if (p && !p.querySelector('.espera-pixel, .estado--carregando, [aria-busy="true"]') && (p.innerText || '').trim().length >= 80 && (p.innerText || '').trim() !== textoAntes && location.hash.startsWith('#' + destino)) r()
++        else requestAnimationFrame(conferir)
++      }
++      requestAnimationFrame(conferir)
++    })
++    return performance.now() - t
++  }, para)
++  await esperarCalmaria(pedidos, 30_000, 800)
++  const bytesTroca = resumirBytes(pedidos).total - antesBytes
++  await contexto.close()
++  return { perfil, de: '#' + de, para: '#' + para, ms: Math.round(ms), bytesTroca }
++}
++
++async function medirRolagem(navegador, perfil, rota) {
++  const contexto = await novoContexto(navegador, perfil, rota !== '/assinatura')
++  const pagina = await contexto.newPage()
++  const { pedidos, cdp } = await limitar(pagina, perfil)
++  // Rede livre aqui: o que interessa é o quadro, não o download.
++  if (PERFIS[perfil].rede) await cdp.send('Network.emulateNetworkConditions', { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 })
++  await pagina.goto(BASE + '#' + rota, { waitUntil: 'load', timeout: 120_000 })
++  await pagina.waitForFunction(() => window.__medidas?.pronto !== null, null, { timeout: 90_000 }).catch(() => null)
++  await esperarCalmaria(pedidos, 30_000, 1000)
++  const r = await pagina.evaluate(async () => {
++    const altura = document.documentElement.scrollHeight - innerHeight
++    const quadros = []
++    let anterior = null
++    const inicio = performance.now()
++    const DURACAO = 4000
++    await new Promise((fim) => {
++      const passo = (agora) => {
++        if (anterior !== null) quadros.push(agora - anterior)
++        anterior = agora
++        const f = Math.min(1, (agora - inicio) / DURACAO)
++        // Vai até o fim e volta (ida e volta), como um polegar rolando.
++        window.scrollTo(0, altura * (f < 0.5 ? f * 2 : 2 - f * 2))
++        if (f < 1) requestAnimationFrame(passo); else fim()
++      }
++      requestAnimationFrame(passo)
++    })
++    const perdidos = quadros.reduce((s, d) => s + Math.max(0, Math.round(d / 16.67) - 1), 0)
++    return { altura, quadros: quadros.length, perdidos, pior: Math.round(Math.max(...quadros)) }
++  })
++  await contexto.close()
++  return { perfil, rota: '#' + rota, ...r }
++}
++
++const mediana = (xs) => { const v = xs.filter((x) => x !== null && x !== undefined).sort((a, b) => a - b); return v.length ? v[Math.floor(v.length / 2)] : null }
++
++const navegador = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
++const resultado = { em: new Date().toISOString(), rotas: [], trocas: [], rolagem: [] }
++try {
++  for (const perfil of perfisEscolhidos) {
++    for (const item of ROTAS) {
++      if (rotasEscolhidas && !rotasEscolhidas.includes(item.rota)) continue
++      const voltas = []
++      for (let i = 0; i < REPETICOES; i++) voltas.push(await medirRota(navegador, perfil, item))
++      const r = { ...voltas[0] }
++      for (const k of ['fcp', 'lcp', 'pronto', 'cls', 'longasTotal', 'longaMaior', 'total', 'js']) r[k] = mediana(voltas.map((v) => v[k]))
++      resultado.rotas.push(r)
++      console.error(`${perfil} ${r.rota}: pronto ${Math.round(r.pronto ?? -1)} ms, LCP ${Math.round(r.lcp ?? -1)}, longas ${r.longasTotal}/${r.longaMaior}, ${Math.round(r.total / 1024)} KB, ${r.pedidos} pedidos, CLS ${r.cls}${r.erros.length ? ' ERROS: ' + r.erros.join(' | ') : ''}`)
++    }
++    if (!tem('sem-troca')) for (const t of TROCAS) {
++      const r = await medirTroca(navegador, perfil, t).catch((e) => ({ perfil, de: '#' + t[0], para: '#' + t[1], ms: null, bytesTroca: 0, erro: e.message.split('\n')[0] }))
++      resultado.trocas.push(r)
++      console.error(`${perfil} troca ${r.de} → ${r.para}: ${r.ms} ms (${Math.round(r.bytesTroca / 1024)} KB)`)
++    }
++    if (!tem('sem-rolagem')) for (const rota of ROLAGEM) {
++      // Uma página que fecha no meio (falha do navegador) não derruba a medição inteira.
++      const r = await medirRolagem(navegador, perfil, rota).catch((e) => ({ perfil, rota: '#' + rota, perdidos: null, quadros: null, pior: null, erro: e.message.split('\n')[0] }))
++      resultado.rolagem.push(r)
++      console.error(`${perfil} rolagem #${rota}: ${r.perdidos} quadros perdidos de ${r.quadros} (pior ${r.pior} ms)`)
++    }
++  }
++} finally {
++  await navegador.close()
++  servidor.close()
++}
++
++// Tamanho dos pedaços do build (gzip), para acompanhar junto.
++resultado.chunks = readdirSync(join(DIST, 'assets')).filter((f) => /\.(js|css)$/.test(f))
++  .map((f) => ({ arquivo: f, gzip: gzipSync(readFileSync(join(DIST, 'assets', f)), { level: 6 }).length }))
++  .sort((a, b) => b.gzip - a.gzip)
++
++const saida = opcao('saida', null)
++if (saida) await writeFile(saida, JSON.stringify(resultado, null, 2))
++
++const kb = (b) => (b / 1024).toFixed(0)
++const ms = (x) => (x === null || x === undefined ? '—' : Math.round(x))
++console.log('| Perfil | Rota | FCP | LCP | Pronto | Tarefas longas (total/maior) | JS KB | CSS KB | Img KB | JSON KB | Total KB | Pedidos | CLS |')
++console.log('|---|---|---|---|---|---|---|---|---|---|---|---|---|')
++for (const r of resultado.rotas) console.log(`| ${r.perfil} | ${r.rota} | ${ms(r.fcp)} | ${ms(r.lcp)} | ${ms(r.pronto)} | ${r.longasTotal}/${r.longaMaior} | ${kb(r.js)} | ${kb(r.css)} | ${kb(r.img)} | ${kb(r.json)} | ${kb(r.total)} | ${r.pedidos} | ${r.cls} |`)
++if (resultado.trocas.length) {
++  console.log('\n| Perfil | Troca | ms | KB baixados na troca |\n|---|---|---|---|')
++  for (const t of resultado.trocas) console.log(`| ${t.perfil} | ${t.de} → ${t.para} | ${t.ms} | ${kb(t.bytesTroca)} |`)
++}
++if (resultado.rolagem.length) {
++  console.log('\n| Perfil | Rolagem | Quadros perdidos | Pior quadro (ms) |\n|---|---|---|---|')
++  for (const r of resultado.rolagem) console.log(`| ${r.perfil} | ${r.rota} | ${r.perdidos}/${r.quadros} | ${r.pior} |`)
++}
+diff --git a/src/App.tsx b/src/App.tsx
+index bf48b8d6..8f78f7cb 100644
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect, useRef, type ReactNode } from 'react'
+ import { EsperaPixel } from './componentes/EsperaPixel'
+ import { vigiarFilaZerada } from './conta/feitos'
+ import { rotaDe, usarRota, type Rota } from './util/rotas'
++import { carregadores } from './util/preCarga'
+ import { Cabecalho } from './componentes/Cabecalho'
+ import { Rodape } from './componentes/Rodape'
+ import { AvisoSite } from './componentes/AvisoSite'
+@@ -20,38 +21,39 @@ import { AvisoCookies } from './componentes/AvisoCookies'
+ 
+ // Cada página é carregada apenas ao ser visitada. Além de reduzir o JavaScript
+ // inicial, isso evita baixar o acervo completo para rotas administrativas,
+-// termos, conta e planos.
+-const Inicio = lazy(() => import('./paginas/Inicio').then(({ Inicio }) => ({ default: Inicio })))
+-const Treinar = lazy(() => import('./paginas/Treinar').then(({ Treinar }) => ({ default: Treinar })))
+-const Sessao = lazy(() => import('./paginas/Sessao').then(({ Sessao }) => ({ default: Sessao })))
+-const Resumo = lazy(() => import('./paginas/Resumo').then(({ Resumo }) => ({ default: Resumo })))
+-const QuestaoDireta = lazy(() => import('./paginas/QuestaoDireta').then(({ QuestaoDireta }) => ({ default: QuestaoDireta })))
+-const Contato = lazy(() => import('./paginas/Apoio').then(({ Contato }) => ({ default: Contato })))
+-const DadosLocais = lazy(() => import('./paginas/Apoio').then(({ DadosLocais }) => ({ default: DadosLocais })))
+-const NaoEncontrada = lazy(() => import('./paginas/Apoio').then(({ NaoEncontrada }) => ({ default: NaoEncontrada })))
+-const Sobre = lazy(() => import('./paginas/Apoio').then(({ Sobre }) => ({ default: Sobre })))
+-const Favoritas = lazy(() => import('./paginas/Favoritas').then(({ Favoritas }) => ({ default: Favoritas })))
+-const CadernoErros = lazy(() => import('./paginas/CadernoErros').then(({ CadernoErros }) => ({ default: CadernoErros })))
+-const Progresso = lazy(() => import('./paginas/Progresso').then(({ Progresso }) => ({ default: Progresso })))
+-const Revisao = lazy(() => import('./paginas/Revisao').then(({ Revisao }) => ({ default: Revisao })))
+-const Ranking = lazy(() => import('./paginas/Ranking').then(({ Ranking }) => ({ default: Ranking })))
+-const RankingCripta = lazy(() => import('./paginas/RankingCripta').then(({ RankingCripta }) => ({ default: RankingCripta })))
+-const Conquistas = lazy(() => import('./paginas/Ranking').then(({ Conquistas }) => ({ default: Conquistas })))
+-const Termos = lazy(() => import('./paginas/Termos').then(({ Termos }) => ({ default: Termos })))
+-const CondicoesAssinatura = lazy(() => import('./paginas/CondicoesAssinatura').then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
+-const Assinatura = lazy(() => import('./paginas/Assinatura').then(({ Assinatura }) => ({ default: Assinatura })))
+-const Conta = lazy(() => import('./paginas/Conta').then(({ Conta }) => ({ default: Conta })))
+-const DetalhesAssinatura = lazy(() => import('./paginas/DetalhesAssinatura').then(({ DetalhesAssinatura }) => ({ default: DetalhesAssinatura })))
+-const Emails = lazy(() => import('./paginas/Emails').then(({ Emails }) => ({ default: Emails })))
+-const SimuladoNacional = lazy(() => import('./paginas/SimuladoNacional').then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
+-const PlanoEstudo = lazy(() => import('./paginas/PlanoEstudo').then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
+-const TemasQueMaisCaem = lazy(() => import('./paginas/TemasQueMaisCaem').then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
+-const Resumao = lazy(() => import('./paginas/Resumao').then(({ Resumao }) => ({ default: Resumao })))
+-const Indicar = lazy(() => import('./paginas/Indicar').then(({ Indicar }) => ({ default: Indicar })))
+-const ConviteRecebido = lazy(() => import('./paginas/Indicar').then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
+-const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ default: Ligas })))
+-const Flashcards = lazy(() => import('./paginas/Flashcards').then(({ Flashcards }) => ({ default: Flashcards })))
+-const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
++// termos, conta e planos. Os carregadores vêm de util/preCarga, que adianta o
++// download quando o dedo chega num link ou o aparelho fica ocioso.
++const Inicio = lazy(() => carregadores.Inicio().then(({ Inicio }) => ({ default: Inicio })))
++const Treinar = lazy(() => carregadores.Treinar().then(({ Treinar }) => ({ default: Treinar })))
++const Sessao = lazy(() => carregadores.Sessao().then(({ Sessao }) => ({ default: Sessao })))
++const Resumo = lazy(() => carregadores.Resumo().then(({ Resumo }) => ({ default: Resumo })))
++const QuestaoDireta = lazy(() => carregadores.QuestaoDireta().then(({ QuestaoDireta }) => ({ default: QuestaoDireta })))
++const Contato = lazy(() => carregadores.Apoio().then(({ Contato }) => ({ default: Contato })))
++const DadosLocais = lazy(() => carregadores.Apoio().then(({ DadosLocais }) => ({ default: DadosLocais })))
++const NaoEncontrada = lazy(() => carregadores.Apoio().then(({ NaoEncontrada }) => ({ default: NaoEncontrada })))
++const Sobre = lazy(() => carregadores.Apoio().then(({ Sobre }) => ({ default: Sobre })))
++const Favoritas = lazy(() => carregadores.Favoritas().then(({ Favoritas }) => ({ default: Favoritas })))
++const CadernoErros = lazy(() => carregadores.CadernoErros().then(({ CadernoErros }) => ({ default: CadernoErros })))
++const Progresso = lazy(() => carregadores.Progresso().then(({ Progresso }) => ({ default: Progresso })))
++const Revisao = lazy(() => carregadores.Revisao().then(({ Revisao }) => ({ default: Revisao })))
++const Ranking = lazy(() => carregadores.Ranking().then(({ Ranking }) => ({ default: Ranking })))
++const RankingCripta = lazy(() => carregadores.RankingCripta().then(({ RankingCripta }) => ({ default: RankingCripta })))
++const Conquistas = lazy(() => carregadores.Ranking().then(({ Conquistas }) => ({ default: Conquistas })))
++const Termos = lazy(() => carregadores.Termos().then(({ Termos }) => ({ default: Termos })))
++const CondicoesAssinatura = lazy(() => carregadores.CondicoesAssinatura().then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
++const Assinatura = lazy(() => carregadores.Assinatura().then(({ Assinatura }) => ({ default: Assinatura })))
++const Conta = lazy(() => carregadores.Conta().then(({ Conta }) => ({ default: Conta })))
++const DetalhesAssinatura = lazy(() => carregadores.DetalhesAssinatura().then(({ DetalhesAssinatura }) => ({ default: DetalhesAssinatura })))
++const Emails = lazy(() => carregadores.Emails().then(({ Emails }) => ({ default: Emails })))
++const SimuladoNacional = lazy(() => carregadores.SimuladoNacional().then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
++const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
++const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
++const Resumao = lazy(() => carregadores.Resumao().then(({ Resumao }) => ({ default: Resumao })))
++const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
++const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
++const Ligas = lazy(() => carregadores.Ligas().then(({ Ligas }) => ({ default: Ligas })))
++const Flashcards = lazy(() => carregadores.Flashcards().then(({ Flashcards }) => ({ default: Flashcards })))
++const AdminAssinaturas = lazy(() => carregadores.AdminAssinaturas().then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
+ 
+ const TITULOS: Record<string, string> = {
+   // Igual ao <title> do index.html: o Google lê o título depois do JavaScript.
+diff --git a/src/componentes/AvisoSite.tsx b/src/componentes/AvisoSite.tsx
+index 94a4fe2f..7768e61e 100644
+--- a/src/componentes/AvisoSite.tsx
++++ b/src/componentes/AvisoSite.tsx
+@@ -4,19 +4,41 @@ import { Icone } from './Icone'
+ 
+ interface Aviso { id: number; texto: string; link: string | null; rotulo_link: string | null; tom: 'info' | 'destaque' | 'alerta' }
+ const CHAVE = 'oq-aviso-dispensado'
++const CHAVE_ULTIMO = 'oq-aviso-ultimo'
++
++function lerDispensado(): string {
++  try { return localStorage.getItem(CHAVE) ?? '' } catch { return '' }
++}
++function lerGuardado(): Aviso | null {
++  try {
++    const bruto = localStorage.getItem(CHAVE_ULTIMO)
++    const a = bruto ? JSON.parse(bruto) as Aviso : null
++    return a && typeof a.id === 'number' && typeof a.texto === 'string' ? a : null
++  } catch { return null }
++}
+ 
+ /**
+  * Faixa no topo do site, escrita pelo administrador no painel. Quem fecha não
+  * vê mais aquele aviso neste aparelho; um aviso novo volta a aparecer.
+  */
+ export function AvisoSite() {
+-  const [aviso, definirAviso] = useState<Aviso | null>(null)
++  // O último aviso visto já aparece na abertura: esperar o servidor para
++  // desenhar a faixa empurrava a página inteira para baixo (deslocamento de
++  // layout) a cada visita enquanto houvesse aviso. O servidor confirma logo
++  // depois, e troca ou tira a faixa se o aviso mudou.
++  const [aviso, definirAviso] = useState<Aviso | null>(() => {
++    const guardado = lerGuardado()
++    return guardado && String(guardado.id) !== lerDispensado() ? guardado : null
++  })
+   useEffect(() => {
+     let vivo = true
+-    chamarRpcPublica<Aviso[]>('obter_aviso_site').then(([a]) => {
+-      let dispensado = ''
+-      try { dispensado = localStorage.getItem(CHAVE) ?? '' } catch { /* sem armazenamento */ }
+-      if (vivo && a && String(a.id) !== dispensado) definirAviso(a)
++    chamarRpcPublica<Aviso[]>('obter_aviso_site').then((lista) => {
++      const a = lista?.[0] ?? null
++      try {
++        if (a) localStorage.setItem(CHAVE_ULTIMO, JSON.stringify(a))
++        else localStorage.removeItem(CHAVE_ULTIMO)
++      } catch { /* sem armazenamento */ }
++      if (vivo) definirAviso(a && String(a.id) !== lerDispensado() ? a : null)
+     }).catch(() => undefined)
+     return () => { vivo = false }
+   }, [])
+diff --git a/src/componentes/SalaoCampeoes.tsx b/src/componentes/SalaoCampeoes.tsx
+index 5e5f818c..f80a1f48 100644
+--- a/src/componentes/SalaoCampeoes.tsx
++++ b/src/componentes/SalaoCampeoes.tsx
+@@ -43,7 +43,7 @@ export function SalaoCampeoes({ lugares, titulo, subtitulo, chamada }: { lugares
+       <div className="sc__corpo">
+       <div className="sc__janela">
+         <div className="sc__mundo">
+-          <img className="sc__camada sc__fundo" src={img('fundo')} alt="" draggable={false} />
++          <img className="sc__camada sc__fundo" src={img('fundo')} alt="" draggable={false} decoding="async" />
+           <img className="sc__camada sc__vitral" src={img('vitral-luz')} alt="" draggable={false} aria-hidden="true" />
+           <span className="sc__raios" aria-hidden="true"><i /><i /><i /><i /><i /></span>
+           <img className="sc__estandarte" style={caixa(84, 8, 24, 74)} src={img('estandarte-esq')} alt="" draggable={false} />
+diff --git a/src/conta/ContextoConta.tsx b/src/conta/ContextoConta.tsx
+index b7f6f7a0..84b0d80c 100644
+--- a/src/conta/ContextoConta.tsx
++++ b/src/conta/ContextoConta.tsx
+@@ -13,7 +13,6 @@ import { tomarVoltar } from './passagem'
+ import { aplicarPerfilPendente } from './perfilPendente'
+ import { aplicarConviteRecebido, conferirMinhaIndicacao } from './indicacao'
+ import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
+-import { verificarMarcoEmail } from './emailsMarco'
+ import { ler } from '../estado/armazenamento'
+ import { vigiarSessaoEntreAparelhos } from '../estado/sessao'
+ 
+@@ -124,7 +123,9 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
+   useEffect(() => {
+     if (!sessao?.user.id || status.estado !== 'salvo' || status.pendentes > 0) return
+     const respondidas = Object.keys(ler<Record<string, unknown>>('respondidas', {})).length
+-    void verificarMarcoEmail(respondidas)
++    // Sob demanda: a tabela de conquistas (e o bestiário dos flashcards que ela
++    // consulta) pesava ~60 KB no código inicial só para esta checagem.
++    void import('./emailsMarco').then(({ verificarMarcoEmail }) => verificarMarcoEmail(respondidas)).catch(() => undefined)
+     void conferirMinhaIndicacao(sessao.user.id, respondidas)
+   }, [sessao?.user.id, status.estado, status.pendentes])
+   // Perfil preenchido no passo 2 do cadastro antes de confirmar o e-mail: entra na conta agora.
+diff --git a/src/conta/cronograma.ts b/src/conta/cronograma.ts
+index b966385e..6a7f7112 100644
+--- a/src/conta/cronograma.ts
++++ b/src/conta/cronograma.ts
+@@ -160,9 +160,9 @@ export async function salvarOpcoes(alterar: (atual: PlanoSalvo) => OpcoesPlano |
+  * para adiantar), ou null se nada mudou. É o que permite, amanhã, tirar da meta o que
+  * ela fez a mais hoje. Sem `pedido`, mantém o que já estava pedido.
+  */
+-export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPlano, 'metaDiaria' | 'extraHoje' | 'adiantarPedido' | 'naRetaFinal' | 'provaPassou'>, pedido?: number): OpcoesPlano | null {
++export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPlano, 'metaDiaria' | 'extraHoje' | 'adiantarPedido' | 'naRetaFinal' | 'provaPassou'>, pedido?: number, agora: Date | number = Date.now()): OpcoesPlano | null {
+   if (calculo.naRetaFinal || calculo.provaPassou) return null
+-  const hoje = hojeBR()
++  const hoje = hojeBR(agora)
+   const limite = somarDias(hoje, -30)
+   const lista = opcoesDe(plano).adiantados.filter((r) => r.em >= limite)
+   const atual = lista.find((r) => r.em === hoje)
+diff --git a/src/dados/acervo.ts b/src/dados/acervo.ts
+index d3ef343c..841b4ab5 100644
+--- a/src/dados/acervo.ts
++++ b/src/dados/acervo.ts
+@@ -249,13 +249,8 @@ function ehFavorita(contexto: ContextoLocal, id: string): boolean {
+   return conjunto.has(id)
+ }
+ 
+-function aplicaUm(
+-  indice: Indice,
+-  item: ItemIndice,
+-  filtros: Filtros,
+-  contexto: ContextoLocal,
+-  ignorar?: ChaveFaceta,
+-): boolean {
++/** Foco, cópias e anuladas: a parte do filtro que nenhuma faceta ignora. */
++function elegivel(indice: Indice, item: ItemIndice, filtros: Filtros): boolean {
+   if (!noFoco(item, filtros.areas, indice)) return false
+   // Cópias duplicadas continuam no índice para o histórico, mas nunca são sorteadas nem contadas,
+   // salvo quando a original fica fora do foco (a mesma questão numa prova de ortopedia e numa da mão).
+@@ -264,7 +259,27 @@ function aplicaUm(
+     if (!original || noFoco(original, filtros.areas, indice)) return false
+   }
+   if (!filtros.incluirAnuladas && item.an === 1) return false
++  return true
++}
++
++function aplicaUm(
++  indice: Indice,
++  item: ItemIndice,
++  filtros: Filtros,
++  contexto: ContextoLocal,
++  ignorar?: ChaveFaceta,
++): boolean {
++  return elegivel(indice, item, filtros) && aplicaFacetas(indice, item, filtros, contexto, ignorar)
++}
+ 
++/** As facetas escolhidas (assunto, prova, ano...), menos a que `ignorar` indicar. */
++function aplicaFacetas(
++  indice: Indice,
++  item: ItemIndice,
++  filtros: Filtros,
++  contexto: ContextoLocal,
++  ignorar?: ChaveFaceta,
++): boolean {
+   // Assunto é uma árvore: marcar um tema significa "o tema inteiro" e marcar
+   // subtemas significa "só estes". Os dois se somam, nunca se anulam.
+   if (ignorar !== 'assunto' && (filtros.temas.length > 0 || filtros.subtemas.length > 0)) {
+@@ -359,10 +374,13 @@ export function contar(
+     simulados: 0,
+   }
+ 
++  // A parte comum (foco, cópias, anuladas) é conferida uma vez por questão, e
++  // não uma vez por faceta: a contagem roda a cada filtro marcado e a cada tecla.
+   for (const item of indice.questoes) {
+-    if (aplicaUm(indice, item, filtros, contexto)) contagens.total++
++    if (!elegivel(indice, item, filtros)) continue
++    if (aplicaFacetas(indice, item, filtros, contexto)) contagens.total++
+ 
+-    if (aplicaUm(indice, item, filtros, contexto, 'situacao')) {
++    if (aplicaFacetas(indice, item, filtros, contexto, 'situacao')) {
+       const registro = contexto.respondidas[item.id]
+       contagens.porSituacao.todas = (contagens.porSituacao.todas ?? 0) + 1
+       if (!registro) {
+@@ -384,7 +402,7 @@ export function contar(
+       if (turmaAcertaVoceErrou(item.id, contexto)) contagens.porSituacao.turmaAcertaVoceErrou = (contagens.porSituacao.turmaAcertaVoceErrou ?? 0) + 1
+     }
+ 
+-    if (aplicaUm(indice, item, filtros, contexto, 'assunto')) {
++    if (aplicaFacetas(indice, item, filtros, contexto, 'assunto')) {
+       const tema = indice.temas[item.t]
+       if (tema) contagens.porTema[tema.slug] = (contagens.porTema[tema.slug] ?? 0) + 1
+       for (const i of item.s) {
+@@ -392,7 +410,7 @@ export function contar(
+         if (nome) contagens.porSubtema[nome] = (contagens.porSubtema[nome] ?? 0) + 1
+       }
+     }
+-    if (aplicaUm(indice, item, filtros, contexto, 'provas')) {
++    if (aplicaFacetas(indice, item, filtros, contexto, 'provas')) {
+       if (item.p !== null) {
+         const prova = indice.provas[item.p]
+         if (prova) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
+@@ -400,11 +418,11 @@ export function contar(
+         for (const prova of PROVAS_DOS_SIMULADOS) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
+       }
+     }
+-    if (item.sim === 1 && aplicaUm(indice, item, filtros, contexto, 'soSimulados')) contagens.simulados++
+-    if (aplicaUm(indice, item, filtros, contexto, 'anos') && item.a !== null) {
++    if (item.sim === 1 && aplicaFacetas(indice, item, filtros, contexto, 'soSimulados')) contagens.simulados++
++    if (aplicaFacetas(indice, item, filtros, contexto, 'anos') && item.a !== null) {
+       contagens.porAno[item.a] = (contagens.porAno[item.a] ?? 0) + 1
+     }
+-    if (aplicaUm(indice, item, filtros, contexto, 'dificuldades') && item.d) {
++    if (aplicaFacetas(indice, item, filtros, contexto, 'dificuldades') && item.d) {
+       contagens.porDificuldade[item.d] = (contagens.porDificuldade[item.d] ?? 0) + 1
+     }
+   }
+diff --git a/src/dados/frasesAdiantar.ts b/src/dados/frasesAdiantar.ts
+new file mode 100644
+index 00000000..d77eb986
+--- /dev/null
++++ b/src/dados/frasesAdiantar.ts
+@@ -0,0 +1,32 @@
++import type { CalculoPlano } from './planoEstudo'
++import { diaCivil } from '../util/dia'
++
++/** Frases do adiantar, usadas no cronograma e no fim da sessão (módulo pequeno, sem a página inteira). */
++const DIA = 86_400_000
++const semanaDia = (d: Date) => d.toLocaleDateString('pt-BR', { weekday: 'long' }).replace('-feira', '')
++const diferencaDias = (d: Date) => Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() - diaCivil().getTime()) / DIA)
++
++/** "no sábado", "na segunda": o nome do dia com o artigo certo. */
++export const noDia = (d: Date) => `${d.getDay() === 0 || d.getDay() === 6 ? 'no' : 'na'} ${semanaDia(d)}`
++
++/**
++ * A regra do adiantar dita com os números (pedido do Tales, 16/10/2026): "Você adiantou 30
++ * questões; amanhã sua meta é 32 (era 62)." O primeiro dia que perdeu questões para o
++ * adiantamento de hoje, ou null se nada foi adiantado hoje.
++ */
++export function fraseAdiantado(calculo: Pick<CalculoPlano, 'extraHoje' | 'adiantarPedido' | 'dias'>): string | null {
++  const ja = Math.max(calculo.extraHoje, calculo.adiantarPedido)
++  const alvo = calculo.dias.slice(1).find((d) => d.adiantado > 0)
++  if (!ja || !alvo) return null
++  const quando = diferencaDias(alvo.data) === 1 ? 'amanhã' : noDia(alvo.data)
++  const verbo = calculo.adiantarPedido > calculo.extraHoje ? 'Você está adiantando' : 'Você adiantou'
++  const era = alvo.meta + alvo.adiantado
++  return `${verbo} ${ja} ${ja === 1 ? 'questão' : 'questões'}; ${quando} ${alvo.meta === 0 ? `fica livre (a meta era ${era})` : `sua meta é ${alvo.meta} (era ${era})`}.`
++}
++
++/** A mesma frase para quem chega no dia seguinte: "Você adiantou 30 questões de hoje; hoje sua meta é 32 (era 62)." */
++export function fraseAdiantadoHoje(calculo: Pick<CalculoPlano, 'adiantadoHoje' | 'metaDiaria' | 'metaHojeSemAdiantar'>): string | null {
++  const n = calculo.adiantadoHoje
++  if (!n) return null
++  return `Você adiantou ${n} ${n === 1 ? 'questão' : 'questões'} de hoje; hoje sua meta é ${calculo.metaDiaria} (era ${calculo.metaHojeSemAdiantar}).`
++}
+diff --git a/src/dados/incidencia.ts b/src/dados/incidencia.ts
+index a80b0580..9f11c060 100644
+--- a/src/dados/incidencia.ts
++++ b/src/dados/incidencia.ts
+@@ -112,6 +112,19 @@ export function nivelPorQuestao(indice: Indice): Map<string, Nivel> {
+ 
+ const minusculo = (s: string) => s.toLocaleLowerCase('pt-BR')
+ 
++/**
++ * Nomes dos subtemas já em minúsculas, uma vez por acervo. toLocaleLowerCase
++ * com idioma é lento (passa pelo ICU), e a varredura o chamava para cada
++ * subtema de cada questão, em cada assunto: 0,4 s de CPU a cada cálculo do
++ * cronograma num computador, mais de 1,5 s num celular.
++ */
++const cacheSubtemas = new WeakMap<Indice, string[]>()
++function subtemasMinusculos(indice: Indice): string[] {
++  let lista = cacheSubtemas.get(indice)
++  if (!lista) { lista = indice.subtemas.map((s) => minusculo(s ?? '')); cacheSubtemas.set(indice, lista) }
++  return lista
++}
++
+ /** Questões válidas (sem cópias nem anuladas) de uma área, ou de um assunto dentro dela. */
+ const cacheIds = new WeakMap<Indice, Map<string, string[]>>()
+ 
+@@ -132,8 +145,9 @@ function varrerFoco(indice: Indice, area: AreaIncidencia, foco?: Foco): string[]
+   const tema = indice.temas.findIndex((t) => t.slug === area.slug)
+   if (tema < 0) return []
+   const exigidos = [area.subtema, foco ? (foco.noAcervo ?? foco.nome) : undefined].filter((s): s is string => !!s).map(minusculo)
++  const subtemas = subtemasMinusculos(indice)
+   return indice.questoes
+-    .filter((q) => q.t === tema && !q.dup && !q.ar && q.an !== 1 && exigidos.every((alvo) => q.s.some((s) => minusculo(indice.subtemas[s] ?? '') === alvo)))
++    .filter((q) => q.t === tema && !q.dup && !q.ar && q.an !== 1 && exigidos.every((alvo) => q.s.some((s) => (subtemas[s] ?? '') === alvo)))
+     .map((q) => q.id)
+ }
+ 
+diff --git a/src/dados/planoEstudo.ts b/src/dados/planoEstudo.ts
+index 57cf5638..4e128a32 100644
+--- a/src/dados/planoEstudo.ts
++++ b/src/dados/planoEstudo.ts
+@@ -1,5 +1,5 @@
+ import type { Indice } from './tipos'
+-import { diaCivil, inicioDoDia } from '../util/dia'
++import { diaCivil, inicioDaChave, inicioDoDia, somarDias } from '../util/dia'
+ import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, type Nivel } from './incidencia'
+ 
+ /**
+@@ -215,7 +215,7 @@ export interface CalculoPlano {
+   projecao: { alvoPct: number; maisCaiPct: number; fimMaisCai: Date | null; cortadas: number; tetoAtivo: boolean }
+ }
+ 
+-export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora = new Date()): CalculoPlano {
++export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
+   // Hoje e o dia de criação são dias de São Paulo (src/util/dia.ts), como datas civis.
+   const hoje = diaCivil(agora)
+   const inicioHoje = inicioDoDia(agora)
+@@ -257,7 +257,6 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+     const slug = tema?.slug ?? String(i)
+     return { slug, nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, acertoEstimado, respondidas: t.respondidas, reforcado: acertoEstimado !== null && media !== null && acertoEstimado < media - 5, incidencia: pesoIncidenciaDoTema(slug) }
+   })
+-  const focosPendentes = focosQueFaltam(indice, respondidas)
+ 
+   const alvo = Math.max(0, Math.ceil((elegiveis - Math.min(plano.base_respondidas, elegiveis)) * COBERTURA[plano.intensidade]))
+   const feitas = Math.max(0, respondidasNoAcervo - plano.base_respondidas)
+@@ -286,58 +285,6 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   const ritmo = esperadoAteHoje > 0 ? Math.round(((feitasAntesDeHoje - esperadoAteHoje) / esperadoAteHoje) * 100) : 0
+ 
+   const opcoes = opcoesDe(plano)
+-  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos
+-  // e para os que mais caem na prova.
+-  const fator = (t: TemaPlano) => (1 + (t.acertoEstimado !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acertoEstimado) / 100) * 4)) : 0)) * t.incidencia
+-  const focos = focoPorQuestao(indice)
+-  const dominados = assuntosDominados(indice, respondidas)
+-  // Passada de cada questão pelo nível do assunto; assunto dominado (85%+ em 15+) vai para a 3ª.
+-  const passadaDe = (id: string): Passada => {
+-    const f = focos.get(id)
+-    if (!f || dominados.has(f.nome)) return 3
+-    return f.nivel >= 4 ? 1 : f.nivel === 3 ? 2 : 3
+-  }
+-  const livresPorTema = new Map<string, string[]>()
+-  for (const q of indice.questoes) {
+-    if (!entraNoPlano(q, simulados) || respondidas[q.id]) continue
+-    const slug = indice.temas[q.t]?.slug ?? String(q.t)
+-    const lista = livresPorTema.get(slug) ?? []
+-    lista.push(q.id)
+-    livresPorTema.set(slug, lista)
+-  }
+-  // Fila de cada tema: os assuntos que mais caem primeiro; área dominada fica só com a 1ª passada.
+-  const filaDoTema = new Map<string, string[]>()
+-  for (const [slug, lista] of livresPorTema) {
+-    const ordenada = ordenarPorFoco(lista, focos).sort((x, y) => passadaDe(x) - passadaDe(y))
+-    filaDoTema.set(slug, opcoes.dominadas.includes(slug) ? ordenada.filter((id) => passadaDe(id) === 1) : ordenada)
+-  }
+-  const pesos = temas.filter((t) => (filaDoTema.get(t.slug)?.length ?? 0) > 0).map((t) => ({ t, peso: (filaDoTema.get(t.slug)!.length) * fator(t) }))
+-  // Cotas proporcionais ao peso, limitadas ao que o tema tem; a sobra vai para quem ainda tem espaço.
+-  const cotaDe = new Map<string, number>()
+-  // Primeiro garante a 1ª passada (o que mais cai) de todas as áreas; se não couber tudo, divide pelo peso.
+-  const primeira = pesos.map((p) => ({ p, n: filaDoTema.get(p.t.slug)!.filter((id) => passadaDe(id) === 1).length }))
+-  const totalPrimeira = primeira.reduce((s2, x) => s2 + x.n, 0)
+-  if (totalPrimeira <= restante) for (const x of primeira) cotaDe.set(x.p.t.slug, x.n)
+-  let sobra = restante - [...cotaDe.values()].reduce((s2, n) => s2 + n, 0)
+-  // Plano menor que a 1ª passada: divide só a prioridade máxima entre as áreas.
+-  const limite = (slug: string) => totalPrimeira > restante ? primeira.find((x) => x.p.t.slug === slug)!.n : filaDoTema.get(slug)!.length
+-  for (let volta = 0; volta < 5 && sobra > 0; volta++) {
+-    const abertos = pesos.filter((p) => (cotaDe.get(p.t.slug) ?? 0) < limite(p.t.slug))
+-    const soma = abertos.reduce((s2, p) => s2 + p.peso, 0)
+-    if (!soma) break
+-    let usado = 0
+-    for (const p of abertos) {
+-      const atual = cotaDe.get(p.t.slug) ?? 0
+-      const mais = Math.min(limite(p.t.slug) - atual, Math.max(1, Math.round((sobra * p.peso) / soma)), sobra - usado)
+-      cotaDe.set(p.t.slug, atual + mais); usado += mais
+-    }
+-    sobra -= usado
+-    if (!usado) break
+-  }
+-  // Ordem das áreas: começar por (se escolhido), depois os mais fracos e os que mais caem.
+-  const ordemTemas = pesos.map((p) => p.t).filter((t) => (cotaDe.get(t.slug) ?? 0) > 0)
+-    .sort((x, y) => (y.slug === opcoes.comecarPor ? 1 : 0) - (x.slug === opcoes.comecarPor ? 1 : 0) || fator(y) - fator(x))
+-
+   // Dias até a reta final, cada um com o seu tipo e peso na meta.
+   const semanasDificeis = new Set(opcoes.semanasDificeis)
+   const chaveSegunda = (d: Date) => { const s2 = new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7)); return `${s2.getFullYear()}-${String(s2.getMonth() + 1).padStart(2, '0')}-${String(s2.getDate()).padStart(2, '0')}` }
+@@ -389,7 +336,12 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   // Adiantar: o que a pessoa fez além da meta num dia sai dos dias seguintes, a começar pelo próximo
+   // dia de estudo (até zerar a meta dele; o resto vai para o outro). Só vale para os registros guardados
+   // (dia e meta daquele dia); o de hoje usa o que ela já fez a mais ou o que pediu, o que for maior.
+-  const registros = opcoes.adiantados
++  // Dias recentes sem registro (a pessoa passou da meta e não abriu o cronograma nem a página
++  // inicial depois, ou estudou noutro aparelho e fechou): a meta daquele dia é refeita com as
++  // respostas que havia até o fim dele, e o que passou dela vale como adiantado, como se o
++  // registro tivesse sido gravado. Antes, esse extra se diluía pelo plano inteiro.
++  const inferidos = interno.soMeta ? [] : inferirAdiantados(indice, respondidas, plano, hoje, criado, inicioRetaFinal, primeirasPorDia)
++  const registros = [...opcoes.adiantados, ...inferidos]
+     .map((r) => ({ data: dataLocal(r.em), meta: Math.max(0, r.meta), pedido: Math.max(0, Math.min(400, r.pedido ?? 0)) }))
+     .filter((r) => r.data <= hoje && r.data >= criado && hoje.getTime() - r.data.getTime() <= 30 * DIA)
+     .sort((a, b) => a.data.getTime() - b.data.getTime())
+@@ -422,7 +374,62 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+   const extraHoje = hoje >= inicioRetaFinal ? 0 : Math.max(0, feitasHoje - metaDiaria)
+   const adiantarPedido = hoje >= inicioRetaFinal ? 0 : registros.find((r) => r.data.getTime() === hoje.getTime())?.pedido ?? 0
+   const adiantarFalta = Math.max(0, Math.min(restante, adiantarPedido - extraHoje))
++  // Só a meta do dia (para refazer a meta de um dia passado, em inferirAdiantados).
++  if (interno.soMeta) return { metaDiaria, naRetaFinal: hoje >= inicioRetaFinal } as CalculoPlano
+   const creditos = alocar(baseDoDia(metaDiaNormal), Math.max(extraHoje, adiantarPedido))
++  const focosPendentes = focosQueFaltam(indice, respondidas)
++
++  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos
++  // e para os que mais caem na prova.
++  const fator = (t: TemaPlano) => (1 + (t.acertoEstimado !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acertoEstimado) / 100) * 4)) : 0)) * t.incidencia
++  const focos = focoPorQuestao(indice)
++  const dominados = assuntosDominados(indice, respondidas)
++  // Passada de cada questão pelo nível do assunto; assunto dominado (85%+ em 15+) vai para a 3ª.
++  const passadaDe = (id: string): Passada => {
++    const f = focos.get(id)
++    if (!f || dominados.has(f.nome)) return 3
++    return f.nivel >= 4 ? 1 : f.nivel === 3 ? 2 : 3
++  }
++  const livresPorTema = new Map<string, string[]>()
++  for (const q of indice.questoes) {
++    if (!entraNoPlano(q, simulados) || respondidas[q.id]) continue
++    const slug = indice.temas[q.t]?.slug ?? String(q.t)
++    const lista = livresPorTema.get(slug) ?? []
++    lista.push(q.id)
++    livresPorTema.set(slug, lista)
++  }
++  // Fila de cada tema: os assuntos que mais caem primeiro; área dominada fica só com a 1ª passada.
++  const filaDoTema = new Map<string, string[]>()
++  for (const [slug, lista] of livresPorTema) {
++    const ordenada = ordenarPorFoco(lista, focos).sort((x, y) => passadaDe(x) - passadaDe(y))
++    filaDoTema.set(slug, opcoes.dominadas.includes(slug) ? ordenada.filter((id) => passadaDe(id) === 1) : ordenada)
++  }
++  const pesos = temas.filter((t) => (filaDoTema.get(t.slug)?.length ?? 0) > 0).map((t) => ({ t, peso: (filaDoTema.get(t.slug)!.length) * fator(t) }))
++  // Cotas proporcionais ao peso, limitadas ao que o tema tem; a sobra vai para quem ainda tem espaço.
++  const cotaDe = new Map<string, number>()
++  // Primeiro garante a 1ª passada (o que mais cai) de todas as áreas; se não couber tudo, divide pelo peso.
++  const primeira = pesos.map((p) => ({ p, n: filaDoTema.get(p.t.slug)!.filter((id) => passadaDe(id) === 1).length }))
++  const totalPrimeira = primeira.reduce((s2, x) => s2 + x.n, 0)
++  if (totalPrimeira <= restante) for (const x of primeira) cotaDe.set(x.p.t.slug, x.n)
++  let sobra = restante - [...cotaDe.values()].reduce((s2, n) => s2 + n, 0)
++  // Plano menor que a 1ª passada: divide só a prioridade máxima entre as áreas.
++  const limite = (slug: string) => totalPrimeira > restante ? primeira.find((x) => x.p.t.slug === slug)!.n : filaDoTema.get(slug)!.length
++  for (let volta = 0; volta < 5 && sobra > 0; volta++) {
++    const abertos = pesos.filter((p) => (cotaDe.get(p.t.slug) ?? 0) < limite(p.t.slug))
++    const soma = abertos.reduce((s2, p) => s2 + p.peso, 0)
++    if (!soma) break
++    let usado = 0
++    for (const p of abertos) {
++      const atual = cotaDe.get(p.t.slug) ?? 0
++      const mais = Math.min(limite(p.t.slug) - atual, Math.max(1, Math.round((sobra * p.peso) / soma)), sobra - usado)
++      cotaDe.set(p.t.slug, atual + mais); usado += mais
++    }
++    sobra -= usado
++    if (!usado) break
++  }
++  // Ordem das áreas: começar por (se escolhido), depois os mais fracos e os que mais caem.
++  const ordemTemas = pesos.map((p) => p.t).filter((t) => (cotaDe.get(t.slug) ?? 0) > 0)
++    .sort((x, y) => (y.slug === opcoes.comecarPor ? 1 : 0) - (x.slug === opcoes.comecarPor ? 1 : 0) || fator(y) - fator(x))
+ 
+   // Blocos: em cada passada, as áreas se revezam em blocos de ~3 dias.
+   const tamanhoBloco = Math.max(20, Math.round(metaDiaNormal * DIAS_BLOCO * (1 - MISTURA)))
+@@ -575,6 +582,63 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
+ 
+ const unicos = (lista: string[]) => [...new Set(lista)]
+ 
++/** Até quantos dias para trás um dia sem registro de adiantamento é refeito. */
++export const DIAS_INFERIR_ADIANTADO = 7
++const cacheMetaDoDia = new WeakMap<object, Map<string, number>>()
++
++/**
++ * A meta que um dia passado teve, refeita com as respostas que existiam até o fim dele
++ * (e os adiantamentos conhecidos até ali). Guardada em cache: as respostas de dias
++ * passados quase não mudam, e o cálculo roda a cada resposta.
++ */
++function metaDoDiaPassado(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, dia: Date): number {
++  const chave = chaveData(dia)
++  const fim = inicioDaChave(somarDias(chave, 1))
++  const ate: Record<string, RegistroMinimo> = {}
++  let n = 0, soma = 0
++  for (const [id, r] of Object.entries(respondidas)) {
++    const primeira = r?.historico?.[0]?.em ?? r?.q
++    if (primeira === undefined || primeira >= fim) continue
++    ate[id] = r; n++; soma = (soma + primeira) % 1e12
++  }
++  const { marcasDia: _m, ...opcoes } = plano.opcoes ?? {}
++  const assinatura = JSON.stringify([chave, plano.data_prova, plano.intensidade, plano.folgas, plano.base_respondidas, plano.criado_em, plano.incluir_simulados, opcoes, n, soma])
++  let cache = cacheMetaDoDia.get(indice)
++  if (!cache) { cache = new Map(); cacheMetaDoDia.set(indice, cache) }
++  const guardada = cache.get(assinatura)
++  if (guardada !== undefined) return guardada
++  const c = calcularPlano(indice, ate, plano, inicioDaChave(chave) + 12 * 3_600_000, { soMeta: true })
++  const meta = c.naRetaFinal ? Number.POSITIVE_INFINITY : c.metaDiaria
++  if (cache.size > 200) cache.clear()
++  cache.set(assinatura, meta)
++  return meta
++}
++
++/**
++ * Registros de adiantamento que faltam nos últimos dias: em cada dia de estudo sem
++ * registro, a meta é refeita (metaDoDiaPassado) e, se a pessoa passou dela, o dia
++ * ganha o registro { em, meta }. Em dia de folga a meta é zero. Vai do mais antigo ao
++ * mais novo, levando os já conhecidos, para que um dia adiantado alivie o seguinte.
++ */
++function inferirAdiantados(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, hoje: Date, criado: Date, inicioRetaFinal: Date, primeirasPorDia: Map<number, number>): RegistroAdiantado[] {
++  const reais = opcoesDe(plano).adiantados
++  const conhecidos = [...reais]
++  const novos: RegistroAdiantado[] = []
++  for (let k = DIAS_INFERIR_ADIANTADO; k >= 1; k--) {
++    const dia = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k)
++    if (dia < criado || dia >= inicioRetaFinal) continue
++    const em = chaveData(dia)
++    if (reais.some((r) => r.em === em)) continue
++    const feitas = primeirasPorDia.get(dia.getTime()) ?? 0
++    if (!feitas) continue
++    const meta = plano.folgas.includes(dia.getDay()) ? 0 : metaDoDiaPassado(indice, respondidas, { ...plano, opcoes: { ...(plano.opcoes ?? {}), adiantados: conhecidos.filter((r) => r.em < em) } }, dia)
++    if (feitas <= meta) continue
++    const registro = { em, meta }
++    novos.push(registro); conhecidos.push(registro)
++  }
++  return novos
++}
++
+ /** Assuntos que a pessoa já domina: 85% ou mais de acerto em 15 ou mais questões. Saem para a 3ª passada. */
+ export function assuntosDominados(indice: Indice, respondidas: Record<string, RegistroMinimo>): Set<string> {
+   const focos = focoPorQuestao(indice)
+diff --git a/src/estilos/base.css b/src/estilos/base.css
+index 357de8c2..6fc6df2e 100644
+--- a/src/estilos/base.css
++++ b/src/estilos/base.css
+@@ -160,6 +160,15 @@ textarea {
+   padding: 1.25rem 0 3rem;
+ }
+ 
++/* Enquanto a página baixa (o guerreiro da espera ou o esqueleto), a área
++   principal ocupa a tela inteira: o rodapé fica abaixo da dobra e não "pula"
++   para baixo quando o conteúdo chega. Era o maior deslocamento de layout
++   (CLS) do site, em quase toda primeira visita. */
++.principal:has(.espera-pixel, .esqueleto, div[aria-busy="true"], section[aria-busy="true"]) {
++  min-height: 100vh;
++  min-height: 100svh;
++}
++
+ @media (min-width: 48rem) {
+   .principal {
+     padding: 2rem 0 4rem;
+diff --git a/src/estilos/paginas/CronogramaCalendario.css b/src/estilos/paginas/CronogramaCalendario.css
+new file mode 100644
+index 00000000..4e59aa3b
+--- /dev/null
++++ b/src/estilos/paginas/CronogramaCalendario.css
+@@ -0,0 +1,173 @@
++/* Calendário do cronograma (16/10/2026): o plano num mês de computador, de segunda a domingo.
++   Pop-up grande no computador (grade + detalhe ao lado); tela cheia no celular (detalhe embaixo).
++   Estados iguais aos do resto do cronograma: feito (verde ✓), hoje (dourado), folga (hachurado),
++   atrasado (laranja), marco (dourado tracejado), reta final (véu dourado). */
++
++.cc { position: fixed; inset: 0; z-index: 1100; display: grid; place-items: center; padding: 1rem; }
++.cc-veu { position: absolute; inset: 0; border: 0; padding: 0; background: rgba(8, 24, 22, 0.62); backdrop-filter: blur(4px); cursor: default; animation: cc-veu 0.2s ease-out; }
++.cc-janela { position: relative; display: grid; grid-template-rows: auto minmax(0, 1fr); width: min(1180px, 100%); max-height: calc(100dvh - 2rem); border-radius: 20px; background: var(--fundo); color: var(--texto); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); overflow: hidden; animation: cc-entra 0.26s cubic-bezier(0.2, 0.8, 0.2, 1); }
++@keyframes cc-veu { from { opacity: 0; } }
++@keyframes cc-entra { from { opacity: 0; transform: translateY(14px) scale(0.985); } }
++
++/* ── Topo: mês, resumo e navegação ── */
++.cc-topo { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 0.6rem 1rem; padding: 1rem 1.25rem 0.9rem; background: var(--superficie); border-bottom: 1px solid var(--traco); }
++.cc-topo__titulo { min-width: 0; }
++.cc-topo__selo { display: flex; align-items: center; gap: 0.35rem; margin: 0; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--verdete); }
++.cc-topo h2 { margin: 0.15rem 0 0; font-family: var(--fonte-marca); font-size: clamp(1.45rem, 3vw, 1.9rem); line-height: 1.1; letter-spacing: -0.01em; }
++.cc-topo__resumo { display: flex; flex-wrap: wrap; gap: 0.15rem 0.9rem; margin: 0.25rem 0 0; font-size: 0.8rem; color: var(--texto-2); }
++.cc-topo__resumo b { color: var(--texto); }
++.cc-nav { display: flex; align-items: center; gap: 0.35rem; }
++.cc-nav__botao, .cc-fechar { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--traco); background: var(--superficie-2); color: var(--texto); cursor: pointer; transition: background 0.15s, border-color 0.15s; }
++.cc-nav__botao:hover:not(:disabled), .cc-fechar:hover { border-color: var(--verdete); color: var(--verdete); }
++.cc-nav__botao:disabled { opacity: 0.35; cursor: default; }
++.cc-nav__hoje { min-height: 44px; padding: 0 1rem; border-radius: 999px; border: 1px solid var(--traco); background: var(--superficie-2); color: var(--verdete); font: inherit; font-size: 0.85rem; font-weight: 800; cursor: pointer; }
++.cc-nav__hoje:hover { border-color: var(--verdete); }
++.cc-fechar { margin-left: 0.4rem; }
++
++/* ── Corpo: grade e detalhe ── */
++.cc-corpo { display: grid; grid-template-columns: minmax(0, 1fr) 21rem; gap: 1.1rem; align-items: start; padding: 1rem 1.25rem 1.25rem; overflow-y: auto; overscroll-behavior: contain; }
++.cc-mes { display: grid; gap: 0.4rem; min-width: 0; }
++.cc-semana, .cc-grade { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
++.cc-semana li { padding: 0 0.4rem; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
++.cc-semana li:nth-child(n + 6) { color: color-mix(in srgb, var(--texto-2) 70%, transparent); }
++.cc-grade--frente { animation: cc-frente 0.24s ease-out; }
++.cc-grade--tras { animation: cc-tras 0.24s ease-out; }
++@keyframes cc-frente { from { opacity: 0; transform: translateX(18px); } }
++@keyframes cc-tras { from { opacity: 0; transform: translateX(-18px); } }
++
++.cc-dia { min-width: 0; }
++.cc-dia--vazio { min-height: 6.6rem; border-radius: 12px; background: color-mix(in srgb, var(--superficie-2) 40%, transparent); }
++.cc-dia > button { position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 0.25rem; width: 100%; height: 100%; min-height: 6.6rem; padding: 0.45rem 0.5rem 0.7rem; border: 1px solid var(--traco); border-radius: 12px; background: var(--superficie); color: inherit; font: inherit; text-align: left; cursor: pointer; overflow: hidden; transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease; }
++.cc-dia > button:hover:not(:disabled) { border-color: var(--traco-forte); transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
++.cc-dia > button:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
++.cc-dia > button:disabled { cursor: default; }
++.cc-dia__topo { display: flex; align-items: center; gap: 0.3rem; min-height: 1.3rem; }
++.cc-dia__num { font-family: var(--fonte-marca); font-size: 0.98rem; line-height: 1; }
++.cc-dia__hoje { margin-left: auto; padding: 0.08rem 0.4rem; border-radius: 999px; background: var(--cp-agora); color: #fff; font-size: 0.6rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
++.cc-dia__selo { display: grid; place-items: center; width: 1.05rem; height: 1.05rem; margin-left: auto; border-radius: 50%; font-size: 0.7rem; line-height: 1; }
++.cc-dia__selo--feito { background: var(--cp-feito); color: #fff; }
++.cc-dia__selo--marco { color: var(--ouro-texto); background: var(--ouro-veu); }
++.cc-dia__selo + .cc-dia__selo, .cc-dia__hoje + .cc-dia__selo { margin-left: 0.15rem; }
++.cc-dia__areas { display: grid; gap: 0.12rem; min-width: 0; }
++.cc-dia__area { display: flex; align-items: center; gap: 0.3rem; min-width: 0; font-size: 0.72rem; font-weight: 650; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
++.cc-dia__area i { flex: none; width: 0.55rem; height: 0.55rem; border-radius: 2px; }
++.cc-dia__area > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
++.cc-dia__area--mais { color: var(--texto-2); font-weight: 700; }
++.cc-dia__marco { display: block; font-size: 0.64rem; font-weight: 800; line-height: 1.2; color: var(--ouro-texto); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
++.cc-dia__rodape { display: flex; align-items: baseline; gap: 0.3rem; margin-top: auto; }
++.cc-dia__rodape em { font-style: normal; font-size: 0.72rem; font-weight: 800; color: var(--texto-2); white-space: nowrap; }
++.cc-dia__rodape s { font-size: 0.66rem; font-weight: 700; color: var(--texto-2); }
++.cc-dia__faixa { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; }
++
++/* Estados */
++.cc-dia--feito > button { background: color-mix(in srgb, var(--cp-feito) 7%, var(--superficie)); }
++.cc-dia--feito .cc-dia__rodape em, .cc-dia--adiantado .cc-dia__rodape em, .cc-dia--com-adiantado .cc-dia__rodape em { color: var(--cp-feito); }
++.cc-dia--feito .cc-dia__faixa, .cc-dia--parcial .cc-dia__faixa, .cc-dia--adiantado .cc-dia__faixa { opacity: 0.55; }
++.cc-dia--parcial .cc-dia__rodape em, .cc-dia--atrasado .cc-dia__rodape em { color: var(--cp-atrasado); }
++.cc-dia--atrasado > button { background: var(--superficie-2); }
++.cc-dia--hoje > button { background: var(--cp-agora-veu); border-color: var(--cp-agora); box-shadow: inset 0 0 0 1px var(--cp-agora); }
++.cc-dia--hoje .cc-dia__rodape em { color: var(--cp-agora); }
++.cc-dia--folga > button { background: repeating-linear-gradient(135deg, var(--superficie-2) 0 6px, color-mix(in srgb, var(--traco) 70%, transparent) 6px 12px); }
++.cc-dia--folga .cc-dia__rodape em { color: var(--texto-2); font-weight: 700; }
++.cc-dia--reta > button { background: color-mix(in srgb, #f4cf7c 16%, var(--superficie)); }
++.cc-dia--reta .cc-dia__rodape em { color: var(--ouro-texto); }
++.cc-dia--prova > button { background: linear-gradient(140deg, #f4cf7c, #c9952f); border: 2px dashed #8a6416; color: #3b2604; }
++.cc-dia--prova .cc-dia__rodape em { color: #3b2604; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
++.cc-dia--marco:not(.cc-dia--hoje):not(.cc-dia--prova) > button { border: 2px dashed var(--cp-marco); }
++.cc-dia--fora > button { opacity: 0.35; background: transparent; }
++.cc-dia--selecionado > button, .cc-dia--selecionado > button:hover:not(:disabled) { box-shadow: 0 0 0 2px var(--fundo), 0 0 0 4px var(--verdete); }
++
++.cc-legenda { margin-top: 0.35rem; }
++.cc-legenda__feito { background: var(--cp-feito); }
++.cc-legenda__hoje { background: var(--cp-agora-veu); border: 2px solid var(--cp-agora); }
++.cc-legenda__marco { border: 2px dashed var(--cp-marco); }
++.cc-legenda__reta { background: color-mix(in srgb, #f4cf7c 45%, var(--superficie)); }
++
++/* ── Detalhe do dia ── */
++.cc-detalhe { position: sticky; top: 0; display: grid; gap: 0.6rem; padding: 1rem 1.05rem 1.1rem; border-radius: 16px; background: var(--superficie); border: 1px solid var(--traco); border-top: 5px solid var(--cor-area, var(--verdete)); animation: cc-detalhe 0.22s ease-out; scroll-margin-top: 0.5rem; }
++@keyframes cc-detalhe { from { opacity: 0.4; transform: translateY(6px); } }
++.cc-detalhe--folga { border-top-color: var(--traco-forte); }
++.cc-detalhe--reta, .cc-detalhe--prova { border-top-color: #e0b04a; }
++.cc-detalhe--hoje { border-color: var(--cp-agora); }
++.cc-detalhe__data { display: flex; align-items: center; gap: 0.4rem; margin: 0; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
++.cc-detalhe__agora { padding: 0.06rem 0.45rem; border-radius: 999px; background: var(--cp-agora); color: #fff; font-size: 0.62rem; }
++.cc-detalhe h3 { margin: 0; font-family: var(--fonte-marca); font-size: 1.3rem; line-height: 1.15; }
++.cc-detalhe__sub { margin: 0; font-size: 0.84rem; line-height: 1.45; color: var(--texto-2); }
++.cc-verde { color: var(--cp-feito); }
++.cc-detalhe__progresso { position: relative; display: block; margin: 0; height: 1.4rem; border-radius: 999px; background: color-mix(in srgb, var(--cp-agora) 16%, var(--superficie-2)); overflow: hidden; }
++.cc-detalhe__progresso span { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: color-mix(in srgb, var(--cp-agora) 55%, transparent); }
++.cc-detalhe__progresso b { position: relative; display: block; padding: 0 0.7rem; font-size: 0.74rem; line-height: 1.4rem; }
++.cc-detalhe__lista { display: grid; margin: 0; padding: 0; list-style: none; }
++.cc-detalhe__item { display: grid; grid-template-columns: 0.7rem minmax(0, 1fr) auto; gap: 0.6rem; align-items: start; padding: 0.55rem 0; border-top: 1px solid var(--traco); }
++.cc-detalhe__item:first-child { border-top: 0; }
++.cc-detalhe__item > i { width: 0.7rem; height: 0.7rem; margin-top: 0.3rem; border-radius: 3px; background: var(--traco-forte); }
++.cc-detalhe__item strong { display: block; font-size: 0.9rem; line-height: 1.3; }
++.cc-detalhe__item small { display: block; margin-top: 0.1rem; font-size: 0.76rem; line-height: 1.35; color: var(--texto-2); }
++.cc-detalhe__item em { font-style: normal; font-size: 0.76rem; font-weight: 750; color: var(--texto-2); white-space: nowrap; }
++.cc-detalhe__item--extra { opacity: 0.8; }
++.cc-detalhe__item--extra > i { background: transparent; border: 2px dashed var(--traco-forte); }
++.cc-detalhe__item--marco > i { background: transparent; border: 2px dashed var(--cp-marco); }
++.cc-detalhe__item--marco strong { color: var(--ouro-texto); }
++.cc-detalhe__chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.3rem; }
++.cc-detalhe__chips span { padding: 0.12rem 0.5rem; border-radius: 999px; font-size: 0.7rem; font-weight: 650; background: var(--superficie-2); color: var(--texto-2); }
++.cc-detalhe__total { margin: 0; font-size: 0.84rem; color: var(--texto-2); }
++.cc-detalhe__total b { color: var(--texto); }
++.cc-detalhe__ok { display: flex; align-items: center; gap: 0.4rem; margin: 0; padding: 0.6rem 0.75rem; border-radius: var(--raio-controle); background: color-mix(in srgb, var(--cp-feito) 12%, var(--superficie)); color: var(--cp-feito); font-weight: 750; font-size: 0.86rem; }
++.cc-detalhe__nota { margin: 0; padding: 0.6rem 0.75rem; border-radius: var(--raio-controle); background: var(--superficie-2); font-size: 0.78rem; line-height: 1.45; color: var(--texto-2); }
++.cc-detalhe .cp-botao:disabled { opacity: 0.6; cursor: default; }
++
++/* Botão que abre o calendário (no cronograma). */
++.cc-abrir { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 44px; padding: 0 1rem; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--verdete) 40%, var(--traco)); background: var(--superficie); color: var(--verdete); font: inherit; font-size: 0.86rem; font-weight: 800; letter-spacing: 0; text-transform: none; cursor: pointer; transition: background 0.15s, border-color 0.15s, transform 0.15s; }
++.cc-abrir:hover { background: var(--verdete-veu); border-color: var(--verdete); }
++.cc-abrir:active { transform: translateY(1px); }
++.cc-abrir--largo { width: 100%; }
++
++/* ── Celular e tablet: tela cheia, detalhe embaixo da grade ── */
++@media (max-width: 52rem) {
++  .cc { padding: 0; place-items: stretch; }
++  .cc-janela { width: 100%; height: 100dvh; max-height: none; border-radius: 0; animation-name: cc-sobe; }
++  @keyframes cc-sobe { from { opacity: 0; transform: translateY(28px); } }
++  /* Topo compacto: mês e botões numa linha, o resumo embaixo. */
++  .cc-topo { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.25rem 0.5rem; align-items: center; padding: calc(0.6rem + env(safe-area-inset-top)) 0.75rem 0.6rem; }
++  .cc-topo__titulo { display: contents; }
++  .cc-topo__selo { display: none; }
++  .cc-topo h2 { grid-column: 1; grid-row: 1; margin: 0; font-size: 1.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
++  .cc-de { display: none; }
++  .cc-nav__botao, .cc-fechar { width: 42px; height: 42px; }
++  .cc-nav { grid-column: 2; grid-row: 1; gap: 0.25rem; }
++  .cc-nav__hoje { padding: 0 0.75rem; }
++  .cc-fechar { margin-left: 0.15rem; }
++  .cc-topo__resumo { grid-column: 1 / -1; grid-row: 2; margin: 0; font-size: 0.76rem; }
++  .cc-corpo { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 0.75rem 0.6rem calc(1.5rem + env(safe-area-inset-bottom)); }
++  .cc-detalhe { position: static; }
++}
++@media (max-width: 40rem) {
++  .cc-semana, .cc-grade { gap: 4px; }
++  .cc-semana li { padding: 0; text-align: center; font-size: 0.62rem; letter-spacing: 0.04em; }
++  .cc-dia--vazio { min-height: 4.4rem; }
++  .cc-dia > button { min-height: 4.4rem; align-items: center; gap: 0.2rem; padding: 0.35rem 0.1rem 0.55rem; border-radius: 10px; text-align: center; }
++  .cc-dia__topo { justify-content: center; min-height: 1.1rem; }
++  .cc-dia__num { font-size: 0.9rem; }
++  .cc-dia__hoje { display: none; }
++  .cc-dia__selo { position: absolute; top: 3px; right: 3px; width: 0.85rem; height: 0.85rem; margin: 0; font-size: 0.55rem; }
++  .cc-dia__selo + .cc-dia__selo { top: auto; bottom: 8px; }
++  .cc-dia__selo svg { width: 9px; height: 9px; }
++  /* No celular a célula mostra só a cor das áreas (pontos) e o número; o nome fica no detalhe. */
++  .cc-dia__areas { display: flex; justify-content: center; gap: 2px; }
++  .cc-dia__area { font-size: 0; gap: 0; }
++  .cc-dia__area i { width: 0.5rem; height: 0.5rem; border-radius: 50%; }
++  .cc-dia__area--mais, .cc-dia__marco { display: none; }
++  .cc-dia__rodape { justify-content: center; }
++  .cc-dia__rodape em > span { display: none; }
++  .cc-dia__rodape em::after { content: attr(data-curto); font-size: 0.68rem; }
++  .cc-dia__rodape s { display: none; }
++  .cc-dia--prova .cc-dia__rodape em::after { font-size: 0.58rem; }
++  .cc-dia__faixa { height: 4px; }
++  .cc-legenda { font-size: 0.68rem; }
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .cc-veu, .cc-janela, .cc-grade--frente, .cc-grade--tras, .cc-detalhe { animation: none; }
++  .cc-dia > button, .cc-abrir, .cc-nav__botao, .cc-fechar { transition: none; }
++  .cc-dia > button:hover:not(:disabled) { transform: none; }
++}
+diff --git a/src/main.tsx b/src/main.tsx
+index 6003cb99..92f56e6b 100644
+--- a/src/main.tsx
++++ b/src/main.tsx
+@@ -18,6 +18,7 @@ import './estilos/temporada.css'
+ import './estilos/impressao.css'
+ import { registrarServiceWorker } from './util/instalacao'
+ import { capturarOrigem } from './conta/origem'
++import { iniciarPreCarga } from './util/preCarga'
+ 
+ // Antes de qualquer troca de endereço: guarda de onde a pessoa chegou (link
+ // marcado do anúncio, Instagram, Google…) para o cadastro levar junto.
+@@ -36,21 +37,7 @@ if (raiz) {
+ 
+ registrarServiceWorker()
+ 
+-// Com a primeira tela pronta e o aparelho ocioso, o código do caminho mais
+-// usado (montar sessão, responder, resumo) desce em segundo plano: tocar em
+-// "Treinar" ou "Começar" deixa de esperar a rede. Quem ativou a economia de
+-// dados no celular fica de fora.
+-const economia = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData
+-if (!economia) {
+-  // O Safari ainda não tem requestIdleCallback.
+-  const quandoOcioso = (tarefa: () => void) =>
+-    typeof window.requestIdleCallback === 'function' ? window.requestIdleCallback(tarefa, { timeout: 6000 }) : setTimeout(tarefa, 3000)
+-  window.addEventListener('load', () => quandoOcioso(() => {
+-    // Falhar aqui não é problema: é só adiantamento (e a página, quando for
+-    // aberta de verdade, trata o erro).
+-    const ignorar = () => undefined
+-    import('./paginas/Treinar').catch(ignorar)
+-    import('./paginas/Sessao').catch(ignorar)
+-    import('./paginas/Resumo').catch(ignorar)
+-  }), { once: true })
+-}
++// Pré-carga das páginas: ao tocar ou passar por cima de um link, e o caminho
++// mais provável (montar sessão, responder, resumo) quando o aparelho fica
++// ocioso. Quem ativou a economia de dados no celular fica de fora da segunda.
++iniciarPreCarga()
+diff --git a/src/paginas/CronogramaCalendario.tsx b/src/paginas/CronogramaCalendario.tsx
+new file mode 100644
+index 00000000..e37a5e74
+--- /dev/null
++++ b/src/paginas/CronogramaCalendario.tsx
+@@ -0,0 +1,398 @@
++import { useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from 'react'
++import { createPortal } from 'react-dom'
++import type { Indice } from '../dados/tipos'
++import { DIA_MINIMO, TAMANHO_MINI, ROTULO_PASSADA, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
++import { formatarTempo } from '../dados/hubCronograma'
++import { corDaArea } from '../dados/coresAreas'
++import { Icone } from '../componentes/Icone'
++import { chaveCivil, chaveDoDia, diaCivil } from '../util/dia'
++import '../estilos/paginas/CronogramaCalendario.css'
++
++/**
++ * Calendário do cronograma (pedido do Tales, 16/10/2026): o plano inteiro num mês de
++ * computador, de segunda a domingo, até a prova. Cada dia mostra a cor e o nome das
++ * áreas, quantas questões, a folga, o que já foi feito, hoje, os marcos (mini-simulado,
++ * passadas, reta final, prova). Tocar num dia abre o que estudar nele, com o botão de
++ * começar (hoje) ou de adiantar (os próximos dias, como no painel Adiantar).
++ * Os estados são os do resto do cronograma: feito (verde ✓), agora (dourado), a fazer,
++ * folga (hachurado), atrasado (laranja) e marco (dourado tracejado).
++ */
++
++const DIA = 86_400_000
++const SEMANA = ['seg', 'ter', 'qua', 'qui', 'sex', 'sáb', 'dom']
++/** Quantos dias de estudo dá para adiantar de uma vez pelo calendário (os mesmos do painel Adiantar). */
++const ADIANTAR_ATE = 3
++const MINUTOS_RESUMAO = 4
++
++type Fase = 'antes' | 'passado' | 'hoje' | 'conteudo' | 'revisao' | 'prova' | 'vespera' | 'dia-prova' | 'depois'
++interface DiaCalendario {
++  data: Date
++  chave: string
++  fase: Fase
++  folga: boolean
++  /** Do motor: hoje e os dias de estudo até a reta final. */
++  plano: DiaPlano | null
++  /** O que foi feito nesse dia (respostas, por área). */
++  feitas: number
++  areasFeitas: Array<{ slug: string; nome: string; n: number }>
++  marcos: string[]
++}
++
++const mesDe = (d: Date) => new Date(d.getFullYear(), d.getMonth(), 1)
++const nomeMes = (d: Date) => { const s = d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }); return s[0].toUpperCase() + s.slice(1) }
++const dataLonga = (d: Date) => d.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
++const faixa = (partes: Array<{ slug: string; n: number }>) => {
++  const total = partes.reduce((s, p) => s + p.n, 0)
++  if (!total) return 'transparent'
++  let acc = 0
++  return `linear-gradient(90deg, ${partes.map((p) => { const ini = (acc / total) * 100; acc += p.n; return `${corDaArea(p.slug)} ${ini}% ${(acc / total) * 100}%` }).join(', ')})`
++}
++const juntar = (nomes: string[]) => nomes.length <= 1 ? nomes.join('') : `${nomes.slice(0, -1).join(', ')} e ${nomes[nomes.length - 1]}`
++/** Nome curto da área para caber na célula ("Ombro e cotovelo" → "Ombro e cot."). */
++const curto = (nome: string, max = 13) => nome.length <= max ? nome : `${nome.slice(0, max - 2).trimEnd()}.`
++
++export interface AcoesCalendario {
++  /** Começa (ou continua) a sessão de hoje. */
++  aoComecar?: () => void
++  /** Sessão pela metade: o link para continuar. */
++  pendente?: { feitas: number; total: number } | null
++  /** Pede para adiantar n questões (o mesmo do painel Adiantar). */
++  aoAdiantar?: (n: number) => void
++  salvando?: boolean
++}
++
++export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar }: {
++  plano: PlanoSalvo
++  calculo: CalculoPlano
++  indice: Indice
++  respondidas: Record<string, { q?: number; historico?: Array<{ em: number }> }>
++  minutos: number
++  revisoesHoje?: number
++  acoes: AcoesCalendario
++  aoFechar: () => void
++}) {
++  const hoje = diaCivil()
++  const prova = new Date(calculo.vespera.getTime() + DIA)
++  const criado = diaCivil(Date.parse(plano.criado_em))
++  const primeiroMes = mesDe(criado < hoje ? criado : hoje)
++  const ultimoMes = mesDe(prova)
++  const [mes, definirMes] = useState(() => mesDe(hoje))
++  const [selecionado, definirSelecionado] = useState<string>(() => chaveCivil(hoje))
++  const [direcao, definirDirecao] = useState<'frente' | 'tras' | null>(null)
++  const fechar = useRef<HTMLButtonElement>(null)
++  const detalhe = useRef<HTMLElement>(null)
++
++  // O que foi feito em cada dia (todas as respostas, como na constância), por área.
++  const feitoPorDia = useMemo(() => {
++    const temaDe = new Map(indice.questoes.map((q) => [q.id, q.t]))
++    const mapa = new Map<string, { n: number; temas: Map<number, number> }>()
++    for (const [id, r] of Object.entries(respondidas)) {
++      const momentos = r.historico?.length ? r.historico.map((h) => h.em) : r.q !== undefined ? [r.q] : []
++      for (const em of momentos) {
++        const k = chaveDoDia(em)
++        const dia = mapa.get(k) ?? { n: 0, temas: new Map() }
++        dia.n++
++        const t = temaDe.get(id)
++        if (t !== undefined) dia.temas.set(t, (dia.temas.get(t) ?? 0) + 1)
++        mapa.set(k, dia)
++      }
++    }
++    return mapa
++  }, [indice, respondidas])
++
++  const porChave = useMemo(() => new Map(calculo.dias.map((d) => [chaveCivil(d.data), d])), [calculo])
++  const inicioPassada = useMemo(() => {
++    const m = new Map<string, Passada>()
++    for (const p of [2, 3] as Passada[]) { const d = calculo.inicioPassada[p]; if (d && d > hoje) m.set(chaveCivil(d), p) }
++    return m
++  }, [calculo]) // eslint-disable-line react-hooks/exhaustive-deps
++  const extra = plano.opcoes?.provaExtra && /^\d{4}-\d{2}-\d{2}$/.test(plano.opcoes.provaExtra.data) ? plano.opcoes.provaExtra : null
++
++  function montarDia(data: Date): DiaCalendario {
++    const chave = chaveCivil(data)
++    const folga = plano.folgas.includes(data.getDay())
++    const ehHoje = data.getTime() === hoje.getTime()
++    const fase: Fase = data < criado ? 'antes'
++      : data.getTime() === prova.getTime() ? 'dia-prova'
++      : data > prova ? 'depois'
++      : data.getTime() === calculo.vespera.getTime() ? 'vespera'
++      : data >= calculo.inicioModoProva ? 'prova'
++      : data >= calculo.inicioRetaFinal ? 'revisao'
++      : ehHoje ? 'hoje' : data < hoje ? 'passado' : 'conteudo'
++    const doPlano = porChave.get(chave) ?? null
++    const plano_ = ehHoje && doPlano ? { ...doPlano, itens: calculo.hoje?.itens ?? doPlano.itens, meta: calculo.metaDiaria, total: calculo.metaDiaria } : doPlano
++    const feito = feitoPorDia.get(chave)
++    const areasFeitas = feito ? [...feito.temas].map(([t, n]) => ({ slug: indice.temas[t]?.slug ?? String(t), nome: indice.temas[t]?.nome ?? '', n })).sort((a, b) => b.n - a.n) : []
++    const marcos: string[] = []
++    if (data.getTime() === calculo.inicioRetaFinal.getTime() && calculo.diasRetaFinal > 7) marcos.push('Começa a revisão forte')
++    if (data.getTime() === calculo.inicioModoProva.getTime()) marcos.push('Começa o modo prova')
++    const passada = inicioPassada.get(chave)
++    if (passada) marcos.push(`Começa a ${ROTULO_PASSADA[passada].nome}`)
++    if (extra && extra.data === chave) marcos.push(`Prova: ${extra.nome}`)
++    return { data, chave, fase, folga, plano: plano_, feitas: feito?.n ?? 0, areasFeitas, marcos }
++  }
++
++  // A grade do mês: semanas de segunda a domingo; os dias de fora do mês ficam vazios.
++  const grade = useMemo(() => {
++    const primeiro = mes
++    const recuo = (primeiro.getDay() + 6) % 7
++    const diasNoMes = new Date(mes.getFullYear(), mes.getMonth() + 1, 0).getDate()
++    const celulas: Array<DiaCalendario | null> = Array.from({ length: recuo }, () => null)
++    for (let i = 1; i <= diasNoMes; i++) celulas.push(montarDia(new Date(mes.getFullYear(), mes.getMonth(), i)))
++    while (celulas.length % 7) celulas.push(null)
++    return celulas
++  }, [mes, calculo, feitoPorDia, plano]) // eslint-disable-line react-hooks/exhaustive-deps
++
++  const diaSelecionado = useMemo(() => {
++    const [a, m, d] = selecionado.split('-').map(Number)
++    return montarDia(new Date(a, m - 1, d))
++  }, [selecionado, calculo, feitoPorDia, plano]) // eslint-disable-line react-hooks/exhaustive-deps
++
++  // Resumo do mês: dias de estudo, questões planejadas e feitas.
++  const resumoMes = useMemo(() => {
++    let estudo = 0, questoes = 0, feitas = 0, folgas = 0
++    for (const c of grade) {
++      if (!c || c.fase === 'antes' || c.fase === 'depois') continue
++      if (rotuloEstado(c).estado === 'folga') folgas++
++      if (c.plano && c.plano.tipo !== 'folga') { estudo++; questoes += c.plano.total }
++      if (c.fase === 'passado' || c.fase === 'hoje') feitas += c.feitas
++    }
++    return { estudo, questoes, feitas, folgas }
++  }, [grade])
++
++  // Teclado, rolagem da página e foco: Esc fecha; o fundo não rola; o foco volta para quem abriu.
++  useEffect(() => {
++    const antes = document.activeElement as HTMLElement | null
++    const overflow = document.body.style.overflow
++    document.body.style.overflow = 'hidden'
++    fechar.current?.focus()
++    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopPropagation(); aoFechar() } }
++    window.addEventListener('keydown', tecla)
++    return () => { window.removeEventListener('keydown', tecla); document.body.style.overflow = overflow; antes?.focus?.() }
++  }, [aoFechar])
++
++  const podeVoltar = mes > primeiroMes, podeAvancar = mes < ultimoMes
++  function irMes(delta: number) {
++    const novo = new Date(mes.getFullYear(), mes.getMonth() + delta, 1)
++    if (novo < primeiroMes || novo > ultimoMes) return
++    definirDirecao(delta > 0 ? 'frente' : 'tras'); definirMes(novo)
++  }
++  function escolher(d: DiaCalendario) {
++    definirSelecionado(d.chave)
++    // No celular o detalhe fica embaixo da grade: rola até ele.
++    if (window.matchMedia('(max-width: 52rem)').matches) {
++      const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
++      requestAnimationFrame(() => detalhe.current?.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' }))
++    }
++  }
++  function irHoje() { definirDirecao(null); definirMes(mesDe(hoje)); definirSelecionado(chaveCivil(hoje)) }
++
++  // Áreas do mês para a legenda.
++  const areasMes = new Map<string, string>()
++  for (const c of grade) for (const i of c?.plano?.itens ?? []) areasMes.set(i.slug, i.nome)
++
++  return createPortal(
++    <div className="cp cc" role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
++      <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={aoFechar} />
++      <div className="cc-janela">
++        <header className="cc-topo">
++          <div className="cc-topo__titulo">
++            <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> Calendário do cronograma · {plano.prova}</p>
++            <h2 id="cc-titulo" aria-live="polite">{nomeMes(mes).replace(/ de \d+$/, '')} <span className="cc-de">de </span>{mes.getFullYear()}</h2>
++            <p className="cc-topo__resumo">
++              {resumoMes.estudo > 0 && <span><b className="numerico">{resumoMes.estudo}</b> dias de estudo · <b className="numerico">{resumoMes.questoes.toLocaleString('pt-BR')}</b> questões</span>}
++              {resumoMes.feitas > 0 && <span><b className="numerico">{resumoMes.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
++              {resumoMes.folgas > 0 && <span>{resumoMes.folgas} {resumoMes.folgas === 1 ? 'folga' : 'folgas'}</span>}
++            </p>
++          </div>
++          <div className="cc-nav">
++            <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={!podeVoltar} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
++            <button type="button" className="cc-nav__hoje" onClick={irHoje}>Hoje</button>
++            <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={!podeAvancar} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
++            <button type="button" className="cc-fechar" ref={fechar} onClick={aoFechar} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>
++          </div>
++        </header>
++
++        <div className="cc-corpo">
++          <div className="cc-mes">
++            <ol className="cc-semana" aria-hidden="true">{SEMANA.map((s) => <li key={s}>{s}</li>)}</ol>
++            <ol key={mes.getTime()} className={'cc-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Dias de ${nomeMes(mes)}`}>
++              {grade.map((c, i) => c ? <Celula key={c.chave} dia={c} selecionado={c.chave === selecionado} aoEscolher={escolher} /> : <li key={`v${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />)}
++            </ol>
++            <ul className="cp-legenda cc-legenda" aria-label="Legenda">
++              {[...areasMes].map(([slug, nome]) => <li key={slug}><i style={{ background: corDaArea(slug) }} />{nome}</li>)}
++              <li><i className="cc-legenda__feito" />feito</li>
++              <li><i className="cc-legenda__hoje" />hoje</li>
++              <li><i className="cp-legenda__folga" />folga</li>
++              <li><i className="cc-legenda__marco" />marco</li>
++              <li><i className="cc-legenda__reta" />reta final</li>
++            </ul>
++          </div>
++          <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={aoFechar} />
++        </div>
++      </div>
++    </div>,
++    document.body,
++  )
++}
++
++function rotuloEstado(d: DiaCalendario): { estado: string; texto: string } {
++  if (d.fase === 'antes' || d.fase === 'depois') return { estado: 'fora', texto: '' }
++  if (d.fase === 'dia-prova') return { estado: 'prova', texto: 'Prova' }
++  if (d.folga && (d.fase === 'conteudo' || d.fase === 'passado' || d.fase === 'hoje') && !(d.fase === 'passado' && d.feitas > 0)) return { estado: 'folga', texto: 'folga' }
++  if (d.fase === 'hoje') {
++    const meta = d.plano?.meta ?? 0
++    return { estado: 'hoje', texto: meta > 0 ? `${meta} q` : 'hoje' }
++  }
++  if (d.fase === 'passado') {
++    if (d.feitas >= DIA_MINIMO) return { estado: 'feito', texto: `${d.feitas} feitas` }
++    if (d.feitas > 0) return { estado: 'parcial', texto: `${d.feitas} feitas` }
++    return { estado: 'atrasado', texto: 'sem estudo' }
++  }
++  if (d.fase === 'revisao') return { estado: 'reta', texto: 'revisão' }
++  if (d.fase === 'prova') return { estado: 'reta', texto: 'modo prova' }
++  if (d.fase === 'vespera') return { estado: 'reta', texto: 'véspera' }
++  const p = d.plano
++  if (!p) return { estado: 'futuro', texto: '' }
++  if (p.total === 0 && p.adiantado > 0 && !p.mini) return { estado: 'adiantado', texto: 'adiantado' }
++  return { estado: 'futuro', texto: p.total ? `${p.total} q${p.tipo === 'leve' ? ' · leve' : p.tipo === 'dificil' ? ' · mínimo' : ''}` : p.mini ? 'mini' : '' }
++}
++
++/** O rótulo da célula no celular, onde cabe só um número ou uma palavra curta. */
++function textoCurto(estado: string, texto: string): string {
++  if (estado === 'atrasado') return '–'
++  if (estado === 'folga' || estado === 'hoje' && texto === 'hoje') return ''
++  if (estado === 'adiantado') return 'livre'
++  if (estado === 'prova') return 'PROVA'
++  if (texto === 'revisão') return 'rev.'
++  if (texto === 'modo prova') return 'prova'
++  if (texto === 'véspera') return 'vésp.'
++  const n = texto.match(/^\d+/)?.[0]
++  return n ?? texto
++}
++
++function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selecionado: boolean; aoEscolher: (d: DiaCalendario) => void }) {
++  const { estado, texto } = rotuloEstado(d)
++  const passado = d.fase === 'passado' || (d.fase === 'hoje' && d.feitas > 0 && !d.plano?.itens.length)
++  const partes = passado ? d.areasFeitas.slice(0, 4) : (d.plano?.itens ?? []).map((i) => ({ slug: i.slug, nome: i.nome, n: i.n }))
++  const areas = [...partes].reduce<Array<{ slug: string; nome: string; n: number }>>((acc, p) => { const a = acc.find((x) => x.slug === p.slug); if (a) a.n += p.n; else acc.push({ ...p }); return acc }, []).sort((a, b) => b.n - a.n)
++  const mini = !!d.plano?.mini
++  const marco = mini || d.marcos.length > 0
++  const descricao = [dataLonga(d.data), texto, areas.length ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', mini ? 'mini-simulado' : '', ...d.marcos].filter(Boolean).join(', ')
++  return (
++    <li className={`cc-dia cc-dia--${estado}${marco ? ' cc-dia--marco' : ''}${d.plano?.adiantado ? ' cc-dia--com-adiantado' : ''}${selecionado ? ' cc-dia--selecionado' : ''}`}>
++      <button type="button" onClick={() => aoEscolher(d)} aria-label={descricao} aria-pressed={selecionado} disabled={estado === 'fora'}>
++        <span className="cc-dia__topo">
++          <b className="cc-dia__num">{d.data.getDate()}</b>
++          {estado === 'feito' && <span className="cc-dia__selo cc-dia__selo--feito" aria-hidden="true"><Icone nome="certo" tamanho={11} /></span>}
++          {estado === 'hoje' && <span className="cc-dia__hoje">hoje</span>}
++          {mini && <span className="cc-dia__selo cc-dia__selo--marco" aria-hidden="true" title="Mini-simulado">★</span>}
++        </span>
++        {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__areas">
++          {areas.slice(0, 2).map((a) => <span key={a.slug} className="cc-dia__area"><i style={{ background: corDaArea(a.slug) }} /><span>{curto(a.nome, 16)}</span></span>)}
++          {areas.length > 2 && <span className="cc-dia__area cc-dia__area--mais">+{areas.length - 2}</span>}
++        </span>}
++        {d.marcos.length > 0 && <span className="cc-dia__marco">{d.marcos[0]}</span>}
++        <span className="cc-dia__rodape">
++          {texto && <em data-curto={textoCurto(estado, texto)}><span>{texto}</span></em>}
++          {d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && <s className="numerico">{d.plano.total + d.plano.adiantado}</s>}
++        </span>
++        {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__faixa" style={{ background: faixa(areas) }} aria-hidden="true" />}
++      </button>
++    </li>
++  )
++}
++
++function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes, aoFechar }: {
++  ancora: RefObject<HTMLElement>
++  dia: DiaCalendario; calculo: CalculoPlano; plano: PlanoSalvo; minutos: number; revisoesHoje: number; acoes: AcoesCalendario; aoFechar: () => void
++}) {
++  const { estado } = rotuloEstado(d)
++  const p = d.plano
++  const principal = p?.itens.find((i) => !i.mistura) ?? p?.itens[0]
++  const linhas: Array<{ id: string; cor?: string; titulo: ReactNode; texto?: ReactNode; minutos?: number | null; chips?: string[]; opcional?: boolean }> = []
++  let titulo = ''
++  let sub: ReactNode = null
++  let acao: ReactNode = null
++
++  if (d.fase === 'dia-prova') { titulo = `Prova: ${plano.prova}`; sub = 'O dia que o plano inteiro prepara. Boa prova!' }
++  else if (d.fase === 'antes') { titulo = 'Antes do cronograma'; sub = 'O plano começou depois deste dia.' }
++  else if (d.fase === 'depois') { titulo = 'Depois da prova'; sub = 'O cronograma termina no dia da prova.' }
++  else if (d.fase === 'revisao' || d.fase === 'prova' || d.fase === 'vespera') {
++    titulo = d.fase === 'revisao' ? 'Reta final: revisão forte' : d.fase === 'prova' ? 'Reta final: modo prova' : 'Véspera da prova'
++    sub = d.fase === 'revisao' ? 'Sem conteúdo novo: uma fatia da prova por dia, com os seus erros, as dúvidas e o que mais cai.'
++      : d.fase === 'prova' ? 'Simulado cronometrado, os erros que importam e o resumão.'
++      : 'Aquecimento leve e descanso. Durma cedo.'
++    if (d.fase === 'revisao') linhas.push({ id: 'forte', titulo: `Revisão forte: ~${calculo.metaMedia} questões`, texto: 'As áreas do dia, dos seus erros e dúvidas primeiro', minutos: calculo.metaMedia * minutos })
++    if (d.fase === 'prova') linhas.push({ id: 'sim', titulo: 'Simulado cronometrado', texto: 'No horário e com a duração da prova' }, { id: 'erros', titulo: 'Os erros que importam', texto: 'O que mais cai e você errou' })
++    if (d.fase === 'vespera') linhas.push({ id: 'aq', titulo: 'Aquecimento leve', texto: 'Poucas questões, só para entrar no ritmo' })
++  } else if (d.fase === 'passado') {
++    titulo = d.folga && !d.feitas ? 'Folga' : d.feitas >= DIA_MINIMO ? 'Feito' : d.feitas > 0 ? 'Feito em parte' : 'Sem estudo'
++    sub = d.feitas ? `Você respondeu ${d.feitas} ${d.feitas === 1 ? 'questão' : 'questões'} neste dia${d.feitas >= DIA_MINIMO ? ', o bastante para manter a sequência' : ''}.` : d.folga ? 'Dia de descanso do seu plano.' : 'Nenhuma questão neste dia. O que ficou para trás já foi redistribuído pelos próximos dias.'
++    for (const a of d.areasFeitas.slice(0, 6)) linhas.push({ id: a.slug, cor: corDaArea(a.slug), titulo: `${a.n} de ${a.nome}` })
++  } else if (d.folga && (!p || p.tipo === 'folga')) {
++    titulo = 'Folga'
++    sub = d.fase === 'hoje' ? 'Dia de descanso no seu plano. Se quiser estudar, adiante o próximo dia de estudo no cartão Hoje.' : 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias.'
++  } else if (d.fase === 'hoje' && p && calculo.metaDiaria > 0 && calculo.faltaHoje === 0) {
++    // Hoje, com a meta feita: o que foi feito, por área, e o que passou da meta (sai dos próximos dias).
++    titulo = 'Meta de hoje feita'
++    const extra = calculo.extraHoje
++    sub = <>{calculo.feitasHoje} questões novas hoje: {calculo.metaDiaria} da meta{extra > 0 ? <> e <b className="cc-verde">+{extra} adiantadas</b>, que saem dos próximos dias</> : null}.</>
++    for (const a of d.areasFeitas.slice(0, 6)) linhas.push({ id: a.slug, cor: corDaArea(a.slug), titulo: `${a.n} de ${a.nome}` })
++    linhas.push({ id: 'extras', titulo: revisoesHoje > 0 ? `${revisoesHoje} ${revisoesHoje === 1 ? 'revisão' : 'revisões'} e flashcards` : 'Revisões e flashcards', texto: 'Se sobrar tempo; não contam na meta', opcional: true })
++  } else if (p) {
++    const livre = p.total === 0 && p.adiantado > 0 && !p.mini
++    titulo = livre ? 'Livre: você já adiantou' : principal ? principal.nome : p.mini ? 'Mini-simulado' : 'Dia de estudo'
++    const tipo = p.tipo === 'leve' ? 'Dia leve (plantão). ' : p.tipo === 'dificil' ? 'Semana difícil: só o dia mínimo. ' : ''
++    const passada = principal ? `${ROTULO_PASSADA[principal.passada].nome}: ${ROTULO_PASSADA[principal.passada].texto}.` : ''
++    sub = livre ? `As ${p.adiantado} questões deste dia você fez antes.` : <>{tipo}{passada}{p.adiantado > 0 ? <> <b className="cc-verde">−{p.adiantado} adiantadas</b> (eram {p.total + p.adiantado}).</> : null}</>
++    if (!livre && principal) linhas.push({ id: 'resumao', titulo: `Resumão de ${principal.nome.toLowerCase()}`, texto: 'As frases "Na prova", antes das questões', minutos: MINUTOS_RESUMAO })
++    for (const it of p.itens) linhas.push({ id: `${it.slug}-${it.mistura}`, cor: corDaArea(it.slug), titulo: <>{it.n} questões de {it.nome}{it.mistura && <span className="cp-tag">mistura</span>}</>, chips: it.assuntos.slice(0, 4), minutos: it.n * minutos })
++    if (p.mini) linhas.push({ id: 'mini', titulo: `Mini-simulado de ${TAMANHO_MINI} questões`, texto: 'Cronometrado, do que você já viu', minutos: TAMANHO_MINI * 1.5 })
++    if (!livre) linhas.push({ id: 'extras', titulo: d.fase === 'hoje' && revisoesHoje > 0 ? `${revisoesHoje} ${revisoesHoje === 1 ? 'revisão' : 'revisões'} e flashcards` : 'Revisões e flashcards', texto: 'Se sobrar tempo; não contam na meta', opcional: true })
++  }
++  for (const m of d.marcos) if (!titulo.includes(m)) linhas.unshift({ id: `marco-${m}`, titulo: m, texto: m.startsWith('Começa a') && m.includes('passada') ? 'Muda o nível de prioridade dos assuntos' : undefined })
++  const total = linhas.filter((l) => !l.opcional).reduce((s, l) => s + (l.minutos ?? 0), 0)
++
++  // Ações: hoje começa ou continua; os próximos dias de estudo podem ser adiantados (na ordem, como no painel).
++  if (d.fase === 'hoje') {
++    const falta = calculo.faltaHoje + calculo.adiantarFalta
++    if (acoes.pendente) acao = <a className="cp-botao" href="#/sessao" onClick={aoFechar}>Continuar: faltam {acoes.pendente.total - acoes.pendente.feitas} questões</a>
++    else if (calculo.hoje && falta > 0 && acoes.aoComecar) acao = <button type="button" className="cp-botao" onClick={() => { aoFechar(); acoes.aoComecar!() }}>{calculo.feitasHoje > 0 ? `Continuar: faltam ${falta} questões` : `Começar: ${falta} questões`}<small>~{formatarTempo(falta * minutos)}</small></button>
++    else if (calculo.metaDiaria > 0 && calculo.faltaHoje === 0) acao = <p className="cc-detalhe__ok"><Icone nome="certo" tamanho={16} /> Meta de hoje feita: {calculo.metaDiaria} questões.</p>
++  } else if (d.fase === 'conteudo' && p && acoes.aoAdiantar && calculo.restante > 0) {
++    const proximos = calculo.dias.slice(1).filter((x) => x.meta > 0)
++    const k = proximos.findIndex((x) => x.data.getTime() === d.data.getTime())
++    if (k >= 0 && k < ADIANTAR_ATE) {
++      const n = proximos.slice(0, k + 1).reduce((s, x) => s + x.meta, 0)
++      acao = <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoAdiantar!(n); setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ block: 'center' }), 200) }}>
++        {k === 0 ? `Adiantar este dia: ${n} questões` : `Adiantar até este dia: ${n} questões`}
++        <small>{k === 0 ? 'Entram na sua sessão de hoje' : `Os ${k + 1} próximos dias de estudo, na ordem`} · ~{formatarTempo(n * minutos)}</small>
++      </button>
++    } else if (k >= ADIANTAR_ATE) acao = <p className="cc-detalhe__nota">O adiantado sai dos dias em ordem, a começar pelo próximo. Pelo calendário dá para adiantar até {ADIANTAR_ATE} dias de estudo de uma vez.</p>
++  }
++
++  return (
++    <section ref={ancora} className={`cc-detalhe cc-detalhe--${estado}`} aria-live="polite" aria-labelledby="cc-detalhe-titulo" style={{ ['--cor-area' as string]: principal ? corDaArea(principal.slug) : undefined }}>
++      <p className="cc-detalhe__data">{dataLonga(d.data)}{d.fase === 'hoje' && <span className="cc-detalhe__agora">hoje</span>}</p>
++      <h3 id="cc-detalhe-titulo">{titulo}</h3>
++      {sub && <p className="cc-detalhe__sub">{sub}</p>}
++      {d.fase === 'hoje' && calculo.feitasHoje > 0 && calculo.faltaHoje > 0 && <p className="cc-detalhe__progresso"><span style={{ width: `${Math.min(100, (calculo.feitasHoje / Math.max(1, calculo.metaDiaria)) * 100)}%` }} /><b>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} feitas</b></p>}
++      {linhas.length > 0 && <ul className="cc-detalhe__lista">
++        {linhas.map((l) => (
++          <li key={l.id} className={l.opcional ? 'cc-detalhe__item cc-detalhe__item--extra' : l.id.startsWith('marco') ? 'cc-detalhe__item cc-detalhe__item--marco' : 'cc-detalhe__item'}>
++            <i style={{ background: l.cor }} aria-hidden="true" />
++            <span>
++              <strong>{l.titulo}</strong>
++              {l.texto && <small>{l.texto}</small>}
++              {l.chips && l.chips.length > 0 && <span className="cc-detalhe__chips">{l.chips.map((c) => <span key={c}>{c}</span>)}</span>}
++            </span>
++            {l.minutos ? <em>~{formatarTempo(l.minutos)}</em> : null}
++          </li>
++        ))}
++      </ul>}
++      {total > 0 && <p className="cc-detalhe__total">Seu dia: <b>~{formatarTempo(total)}</b></p>}
++      {acao}
++    </section>
++  )
++}
+diff --git a/src/paginas/CronogramaPainel.tsx b/src/paginas/CronogramaPainel.tsx
+index 66ef8ed7..88bf7f10 100644
+--- a/src/paginas/CronogramaPainel.tsx
++++ b/src/paginas/CronogramaPainel.tsx
+@@ -6,6 +6,8 @@ import { corDaArea } from '../dados/coresAreas'
+ import { posicaoDaArea } from '../dados/incidencia'
+ import { Icone } from '../componentes/Icone'
+ import { chaveCivil, diaCivil } from '../util/dia'
++import { fraseAdiantado } from '../dados/frasesAdiantar'
++export { fraseAdiantado, fraseAdiantadoHoje, noDia } from '../dados/frasesAdiantar'
+ 
+ /**
+  * A apresentação do cronograma (reforma de 14/10/2026, docs/cronograma/PLANO.md).
+@@ -192,7 +194,7 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
+   const opcoes: Array<{ id: string; n: number; rotulo: string; efeito: string }> = []
+   if (d1) {
+     for (const n of [10, 20, 30]) if (n < d1.meta) opcoes.push({ id: `+${n}`, n, rotulo: `+${n}`, efeito: `${nomeDia(d1.data)} fica com ${d1.meta - n}` })
+-    opcoes.push({ id: 'd1', n: d1.meta, rotulo: diferencaDias(d1.data) === 1 ? 'Amanhã inteiro' : `${semanaDia(d1.data)} inteira`, efeito: `${d1.meta} questões · ${nomeDia(d1.data)} livre` })
++    opcoes.push({ id: 'd1', n: d1.meta, rotulo: diferencaDias(d1.data) === 1 ? 'Amanhã inteiro' : `${semanaDia(d1.data)} ${d1.data.getDay() === 0 || d1.data.getDay() === 6 ? 'inteiro' : 'inteira'}`, efeito: `${d1.meta} questões · ${nomeDia(d1.data)} livre` })
+     if (d2) opcoes.push({ id: 'd2', n: d1.meta + d2.meta, rotulo: `2 dias`, efeito: `${d1.meta + d2.meta} questões · até ${semanaDia(d2.data)}` })
+   }
+   const pendente = Math.max(0, calculo.adiantarPedido - calculo.extraHoje)
+@@ -208,8 +210,8 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
+       {ja > 0 && <p className="cp-adiantar__estado" role="status">
+         <Icone nome="certo" tamanho={14} />
+         <span>
+-          <b>{ja} {ja === 1 ? 'questão adiantada' : 'questões adiantadas'}</b>
+-          {tocados.length > 0 && <> · {tocados.slice(0, 2).map((d) => `${nomeDia(d.data)}: ${d.meta + d.adiantado} → ${d.meta}`).join(' · ')}</>}
++          <b>{fraseAdiantado(calculo) ?? `${ja} ${ja === 1 ? 'questão adiantada' : 'questões adiantadas'}`}</b>
++          {tocados.length > 1 && <> · {tocados.slice(1, 3).map((d) => `${nomeDia(d.data)}: ${d.meta + d.adiantado} → ${d.meta}`).join(' · ')}</>}
+           {pendente > 0 && <> · faltam {pendente} para fechar</>}
+         </span>
+         {pendente > 0 && <button type="button" className="cp-adiantar__cancelar" disabled={salvando} onClick={aoCancelar}>Cancelar o que falta</button>}
+@@ -264,7 +266,7 @@ const diferencaDias = (d: Date) => Math.round((meiaNoite(d).getTime() - diaCivil
+ 
+ // ─── Esta semana ───────────────────────────────────────────────────────────
+ 
+-export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean }) {
++export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false, aoVerCalendario }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean; aoVerCalendario?: () => void }) {
+   const hoje = diaCivil()
+   const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
+   const opcoes = opcoesDe(plano)
+@@ -302,6 +304,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
+   return (
+     <section className="cp-bloco" aria-labelledby="cp-semana-titulo">
+       <p className="cp-rotulo"><span id="cp-semana-titulo">Esta semana</span><b>{curta(dias[0])} a {curta(dias[6])}</b></p>
++      {aoVerCalendario && <button type="button" className="cc-abrir cc-abrir--largo" onClick={aoVerCalendario}><Icone nome="calendario" tamanho={17} /> Ver calendário: o que estudar em cada dia</button>}
+       <div className="cp-semana">
+         <ol className="cp-dias">
+           {plano7.map((x) => (
+@@ -330,7 +333,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
+ 
+ interface SemanaDepois { inicio: Date; fim: Date; partes: Array<{ slug: string; nome: string; n: number; assuntos: string[] }>; total: number; passadaNova: Passada | null; minis: Date[] }
+ 
+-export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false }: { calculo: CalculoPlano; maximo?: number; detalhe?: ReactNode; plano?: PlanoSalvo; semMais?: boolean }) {
++export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false, aoVerCalendario }: { calculo: CalculoPlano; maximo?: number; detalhe?: ReactNode; plano?: PlanoSalvo; semMais?: boolean; aoVerCalendario?: () => void }) {
+   const extra = plano?.opcoes?.provaExtra && /^\d{4}-\d{2}-\d{2}$/.test(plano.opcoes.provaExtra.data) ? { nome: plano.opcoes.provaExtra.nome, data: new Date(`${plano.opcoes.provaExtra.data}T00:00:00`) } : null
+   const [tudo, definirTudo] = useState(false)
+   const hoje = diaCivil()
+@@ -383,6 +386,7 @@ export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false }:
+             <li className="cp-depois__marco cp-depois__marco--prova"><span className="cp-depois__data">{curta(prova)}</span><span><span className="cp-depois__faixa cp-depois__faixa--prova" /><strong>Prova</strong><small>Boa prova!</small></span></li>
+           </>}
+         </ol>
++        {aoVerCalendario && <button type="button" className="cc-abrir" onClick={aoVerCalendario}><Icone nome="calendario" tamanho={16} /> Ver no calendário</button>}
+         {semanas.length > maximo && !semMais && <button type="button" className="cp-depois__mais" onClick={() => definirTudo(!tudo)} aria-expanded={tudo}>{tudo ? 'Mostrar menos' : `Ver as ${semanas.length} semanas`}</button>}
+         {tudo && detalhe}
+       </div>
+diff --git a/src/paginas/PlanoEstudo.tsx b/src/paginas/PlanoEstudo.tsx
+index 1c963480..814b9e3b 100644
+--- a/src/paginas/PlanoEstudo.tsx
++++ b/src/paginas/PlanoEstudo.tsx
+@@ -1,4 +1,4 @@
+-import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
++import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+ import { conferirMetaCronograma } from '../conta/feitos'
+ import { chamarRpc, codigoErro } from '../servicos/supabase'
+ import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
+@@ -17,8 +17,9 @@ import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dad
+ import { idsRevisaoHoje } from '../estado/planoRevisao'
+ import { usarRitmoRevisao } from '../estado/preferencias'
+ import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, HojeRetaFinal, MapaRisco } from './CronogramaHub'
+-import { CartaoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
++import { CartaoHoje, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
+ import { corDaArea } from '../dados/coresAreas'
++import { CalendarioCronograma } from './CronogramaCalendario'
+ import '../estilos/paginas/CronogramaPainel.css'
+ import { Carregando } from '../componentes/Estados'
+ import { Icone } from '../componentes/Icone'
+@@ -305,7 +306,7 @@ export function PlanoEstudo() {
+       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
+       {!DEMO && <IndicadorSincronia preparando={preparando} />}
+       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
+-      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
++      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+     </div>
+   )
+ }
+@@ -395,7 +396,7 @@ export interface HubDados {
+   salvandoOpcoes: boolean
+ }
+ 
+-export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
++export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; indice?: Indice; respondidas?: Respondidas; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
+   // O tour só é lido e gravado no cronograma do assinante (aberto): a vitrine não toca nele,
+   // para ele aparecer sozinho na primeira visita depois de assinar.
+   const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
+@@ -406,6 +407,11 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
+   const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
+   const feitos = hub?.feitosDia ?? { data: '' }
++  // Calendário do mês (16/10/2026): só no cronograma do assinante; #/cronograma?calendario=1 abre direto.
++  const temCalendario = aberto && !!indice && !!respondidas
++  const [calendarioAberto, definirCalendarioAberto] = useState(() => temCalendario && typeof location !== 'undefined' && location.hash.includes('calendario=1'))
++  const abrirCalendario = temCalendario ? () => definirCalendarioAberto(true) : undefined
++  const fecharCalendario = useCallback(() => definirCalendarioAberto(false), [])
+ 
+   // ── A lista de hoje ──
+   const itensDia = calculo.hoje?.itens ?? []
+@@ -417,7 +423,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+   const lista: ItemChecklist[] = []
+   if (!calculo.provaPassou && !calculo.naRetaFinal) {
+     if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) || (hub?.resumaoLido ?? []).includes(principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`) } : undefined })
+-    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
++    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` ${fraseAdiantadoHoje(calculo)}` : ''
+     // A vitrine mostra o jeito do dia, sem os números (orientação de 14/10): quantas e quanto tempo é do assinante.
+     if (calculo.metaDiaria > 0 && !aberto) lista.push({
+       id: 'novas', titulo: 'Questões novas',
+@@ -430,7 +436,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+       minutos: calculo.metaDiaria * minutos, estado: metaFeita ? 'feito' : calculo.feitasHoje > 0 || pendente ? 'agora' : 'afazer',
+       progresso: { feitas: Math.min(calculo.feitasHoje, calculo.metaDiaria), total: calculo.metaDiaria },
+     })
+-    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `As ${calculo.adiantadoHoje} questões de hoje você fez antes. Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
++    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `Você adiantou ${calculo.adiantadoHoje} questões; hoje sua meta é 0 (era ${calculo.metaHojeSemAdiantar}). Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
+     const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
+     if (adiantando > 0 && aberto) lista.push({
+       id: 'adiantadas', titulo: `+${adiantando} adiantadas`,
+@@ -470,6 +476,8 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+     : principal ? porQueHoje(calculo, principal.slug, plano.prova) : calculo.restante === 0 ? 'Mantenha a revisão em dia e faça o Simulado Nacional do mês.' : ''
+ 
+   return <>
++    {calendarioAberto && temCalendario && <CalendarioCronograma plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
++      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} aoFechar={fecharCalendario} />}
+     {aberto && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
+     {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
+     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
+@@ -499,9 +507,9 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
+       </div>
+       <div className="cp-col cp-col--lado">
+         {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
+-        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} /></div>}
++        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} aoVerCalendario={abrirCalendario} /></div>}
+         {!calculo.provaPassou && <div className="cp-ordem-5">{aberto
+-          ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} />
++          ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} aoVerCalendario={abrirCalendario} />
+           : <div className="cp-previa-depois">
+               <Degustacao className="pe-degustacao" titulo="O resto é do assinante" texto={<ul className="cp-vitrine-lista">
+                 <li>Amanhã e as semanas até a prova, com os marcos</li>
+diff --git a/src/paginas/Ranking.tsx b/src/paginas/Ranking.tsx
+index 5dd12942..a4812aef 100644
+--- a/src/paginas/Ranking.tsx
++++ b/src/paginas/Ranking.tsx
+@@ -89,7 +89,7 @@ function EmAlta({ linhas }: { linhas: LinhaRanking[] }) {
+     .slice(0, 3)
+   if (!subindo.length) return null
+   return <section className="sb" aria-labelledby="sb-titulo">
+-    <img className="sb__fundo" src={recurso('ranking/salao/fundo.png')} alt="" draggable={false} aria-hidden="true" />
++    <img className="sb__fundo" src={recurso('ranking/salao/fundo.png')} alt="" draggable={false} aria-hidden="true" loading="lazy" decoding="async" />
+     <span className="sb__brasas" aria-hidden="true">
+       {BRASAS_ALTA.map((b, i) => <i key={i} style={{ left: `${b.l}%`, width: b.s, height: b.s, animationDuration: `${b.d}s`, animationDelay: `${b.a}s`, ['--dx' as string]: `${b.dx}px` }} />)}
+     </span>
+diff --git a/src/paginas/Resumo.tsx b/src/paginas/Resumo.tsx
+index 860ecfbe..3fa7a6f2 100644
+--- a/src/paginas/Resumo.tsx
++++ b/src/paginas/Resumo.tsx
+@@ -15,6 +15,7 @@ import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
+ import { CONQUISTAS, CONQUISTAS_SEQUENCIA, proximaConquista } from '../estado/conquistas'
+ import { IconePixel } from '../componentes/IconePixel'
+ import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
++import { fraseAdiantado } from '../dados/frasesAdiantar'
+ import { recurso } from '../config'
+ import { href, navegar } from '../util/rotas'
+ import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
+@@ -600,6 +601,7 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
+       <h2 id="rs-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${calculo.faltaHoje} para a meta de hoje`}</h2>
+       <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
+       <div className="rs-cronograma__proximo">
++        {fraseAdiantado(calculo) && <><b>{fraseAdiantado(calculo)}</b><br /></>}
+         {feita ? <>Pronto por hoje. Se quiser, <b>adiante o próximo dia</b>: o que fizer a mais sai dele. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
+         {amanha && <><br />{chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
+       </div>
+diff --git a/src/util/preCarga.ts b/src/util/preCarga.ts
+new file mode 100644
+index 00000000..b5d85222
+--- /dev/null
++++ b/src/util/preCarga.ts
+@@ -0,0 +1,156 @@
++/**
++ * Pré-carga do código das páginas.
++ *
++ * Cada página desce sob demanda (ver App.tsx). No celular, isso quer dizer que
++ * tocar num link espera a rede antes de trocar de tela. Aqui o site adianta o
++ * download quando dá para prever o próximo passo:
++ *
++ * - dedo ou ponteiro chegando num link interno (passar o mouse por cima,
++ *   encostar o dedo, focar pelo teclado): o código da página começa a descer
++ *   antes do clique, que no celular chega 100 a 300 ms depois do toque;
++ * - aparelho ocioso depois que a página aberta terminou de carregar: o caminho
++ *   mais provável a partir dela (ver PROVAVEIS), sem nada para quem pediu
++ *   economia de dados.
++ *
++ * Os carregadores são os mesmos que o App passa ao React.lazy: o mesmo import()
++ * aponta para o mesmo arquivo, e o navegador não baixa nada duas vezes.
++ */
++type Carregador = () => Promise<unknown>
++
++export const carregadores = {
++  Inicio: () => import('../paginas/Inicio'),
++  Treinar: () => import('../paginas/Treinar'),
++  Sessao: () => import('../paginas/Sessao'),
++  Resumo: () => import('../paginas/Resumo'),
++  QuestaoDireta: () => import('../paginas/QuestaoDireta'),
++  Apoio: () => import('../paginas/Apoio'),
++  Favoritas: () => import('../paginas/Favoritas'),
++  CadernoErros: () => import('../paginas/CadernoErros'),
++  Progresso: () => import('../paginas/Progresso'),
++  Revisao: () => import('../paginas/Revisao'),
++  Ranking: () => import('../paginas/Ranking'),
++  RankingCripta: () => import('../paginas/RankingCripta'),
++  Termos: () => import('../paginas/Termos'),
++  CondicoesAssinatura: () => import('../paginas/CondicoesAssinatura'),
++  Assinatura: () => import('../paginas/Assinatura'),
++  Conta: () => import('../paginas/Conta'),
++  DetalhesAssinatura: () => import('../paginas/DetalhesAssinatura'),
++  Emails: () => import('../paginas/Emails'),
++  SimuladoNacional: () => import('../paginas/SimuladoNacional'),
++  PlanoEstudo: () => import('../paginas/PlanoEstudo'),
++  TemasQueMaisCaem: () => import('../paginas/TemasQueMaisCaem'),
++  Resumao: () => import('../paginas/Resumao'),
++  Indicar: () => import('../paginas/Indicar'),
++  Ligas: () => import('../paginas/Ligas'),
++  Flashcards: () => import('../paginas/Flashcards'),
++  AdminAssinaturas: () => import('../paginas/AdminAssinaturas'),
++} satisfies Record<string, Carregador>
++
++type Pagina = keyof typeof carregadores
++
++/** Primeiro trecho do endereço → página (o mesmo mapa do App). */
++const PAGINA_DA_ROTA: Record<string, Pagina> = {
++  '': 'Inicio', treinar: 'Treinar', sessao: 'Sessao', resumo: 'Resumo', questao: 'QuestaoDireta',
++  sobre: 'Apoio', projeto: 'Apoio', contato: 'Apoio', dados: 'Apoio',
++  favoritas: 'Favoritas', erros: 'CadernoErros', progresso: 'Progresso', revisao: 'Revisao',
++  ranking: 'Ranking', conquistas: 'Ranking', termos: 'Termos', 'condicoes-assinatura': 'CondicoesAssinatura',
++  assinatura: 'Assinatura', conta: 'Conta', entrar: 'Conta', emails: 'Emails',
++  'simulado-nacional': 'SimuladoNacional', cronograma: 'PlanoEstudo', 'plano-de-estudo': 'PlanoEstudo',
++  'temas-que-mais-caem': 'TemasQueMaisCaem', resumao: 'Resumao', indicar: 'Indicar', convite: 'Indicar',
++  ligas: 'Ligas', flashcards: 'Flashcards', admin: 'AdminAssinaturas',
++}
++
++/**
++ * O próximo passo mais comum a partir de cada página, baixado quando o aparelho
++ * fica ocioso. Curto de propósito: cada item é código que a pessoa talvez nem use.
++ */
++const PROVAVEIS: Record<string, Pagina[]> = {
++  '': ['Treinar', 'Sessao', 'Resumo'],
++  treinar: ['Sessao', 'Resumo'],
++  sessao: ['Resumo'],
++  resumo: ['Treinar', 'Sessao'],
++  revisao: ['Sessao', 'Resumo'],
++  cronograma: ['Sessao', 'Resumo'],
++  'plano-de-estudo': ['Sessao', 'Resumo'],
++  dados: ['Revisao'],
++  questao: ['Sessao'],
++  conta: ['Treinar'],
++  entrar: ['Treinar'],
++}
++
++/** Nas demais páginas, o caminho mais usado do site: montar sessão, responder, resumo. */
++const PADRAO: Pagina[] = ['Treinar', 'Sessao', 'Resumo']
++
++const pedidas = new Set<Pagina>()
++
++function economiaDeDados(): boolean {
++  const conexao = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection
++  return !!conexao?.saveData || conexao?.effectiveType === 'slow-2g' || conexao?.effectiveType === '2g'
++}
++
++function primeiroTrecho(hash: string): string | null {
++  if (!hash.startsWith('#/') && hash !== '#' && hash !== '') return null
++  return hash.replace(/^#\/?/, '').split(/[/?]/)[0] ?? ''
++}
++
++/** Adianta o código da página de um endereço ("#/treinar", "#/conta?x=1"). Falhar não é problema. */
++export function preCarregarRota(hash: string): void {
++  const trecho = primeiroTrecho(hash)
++  if (trecho === null) return
++  const pagina = PAGINA_DA_ROTA[trecho]
++  if (!pagina || pedidas.has(pagina)) return
++  pedidas.add(pagina)
++  // Se falhar (rede caiu), a página, quando aberta de verdade, tenta de novo e trata o erro.
++  carregadores[pagina]().catch(() => pedidas.delete(pagina))
++}
++
++function linkInterno(alvo: EventTarget | null): string | null {
++  const elemento = alvo instanceof Element ? alvo.closest('a[href^="#"]') : null
++  return elemento?.getAttribute('href') ?? null
++}
++
++/** Liga a pré-carga por intenção (ponteiro, toque, foco) e a do aparelho ocioso. */
++export function iniciarPreCarga(): void {
++  if (typeof window === 'undefined') return
++  const aoChegar = (evento: Event) => {
++    const destino = linkInterno(evento.target)
++    if (destino && destino !== window.location.hash) preCarregarRota(destino)
++  }
++  // Fase de captura e passivo: nunca atrasa o toque nem a rolagem.
++  for (const tipo of ['pointerover', 'touchstart', 'focusin'] as const) {
++    document.addEventListener(tipo, aoChegar, { capture: true, passive: true })
++  }
++
++  if (economiaDeDados()) return
++  // O Safari ainda não tem requestIdleCallback.
++  const quandoOcioso = (tarefa: () => void) =>
++    typeof window.requestIdleCallback === 'function' ? window.requestIdleCallback(tarefa, { timeout: 6000 }) : window.setTimeout(tarefa, 3000)
++  const adiantarProvaveis = () => {
++    const trecho = primeiroTrecho(window.location.hash) ?? ''
++    for (const pagina of PROVAVEIS[trecho] ?? PADRAO) {
++      if (pedidas.has(pagina)) continue
++      pedidas.add(pagina)
++      carregadores[pagina]().catch(() => pedidas.delete(pagina))
++    }
++  }
++  // Só depois que a página aberta terminou de chegar (sem o guerreiro da espera
++  // nem esqueleto na tela): no celular a banda é pouca, e adiantar a próxima
++  // página antes disso atrasava os dados e o código da página atual.
++  let agendada = false
++  const depoisDaPaginaPronta = () => {
++    if (agendada) return
++    agendada = true
++    const inicio = Date.now()
++    const conferir = () => {
++      const principal = document.getElementById('conteudo-principal')
++      const esperando = !principal || !!principal.querySelector('.espera-pixel, .esqueleto')
++      if (esperando && Date.now() - inicio < 15_000) { window.setTimeout(conferir, 400); return }
++      window.setTimeout(() => quandoOcioso(() => { agendada = false; adiantarProvaveis() }), 800)
++    }
++    conferir()
++  }
++  if (document.readyState === 'complete') depoisDaPaginaPronta()
++  else window.addEventListener('load', depoisDaPaginaPronta, { once: true })
++  // Trocou de página: o caminho provável muda junto.
++  window.addEventListener('hashchange', depoisDaPaginaPronta)
++}
+diff --git a/vite.config.ts b/vite.config.ts
+index ea7bc4f5..ca326757 100644
+--- a/vite.config.ts
++++ b/vite.config.ts
+@@ -1,4 +1,4 @@
+-import { defineConfig } from 'vite'
++import { defineConfig, loadEnv } from 'vite'
+ import react from '@vitejs/plugin-react'
+ import type { Plugin } from 'vite'
+ import type { OutputBundle, OutputChunk } from 'rollup'
+@@ -22,6 +22,18 @@ function fatiarAcervo(): Plugin {
+     closeBundle() {
+       const acervo = join(saida, 'acervo')
+       if (!existsSync(join(acervo, 'temas'))) return
++      // Os arquivos-fonte são JSON indentado (legível no repositório e nos
++      // scripts). Publicados, vão compactos: o índice cai de 1,5 MB para 0,7 MB
++      // (10% a menos depois do gzip) e o celular gasta metade do tempo no
++      // JSON.parse. Mesmo conteúdo, só sem espaços.
++      const compactar = (pasta: string) => {
++        if (!existsSync(pasta)) return
++        for (const arquivo of readdirSync(pasta).filter((f) => f.endsWith('.json'))) {
++          const caminho = join(pasta, arquivo)
++          try { writeFileSync(caminho, JSON.stringify(JSON.parse(readFileSync(caminho, 'utf8')))) } catch { /* não é JSON válido: fica como está */ }
++        }
++      }
++      for (const pasta of [acervo, join(acervo, 'temas'), join(acervo, 'comentarios')]) compactar(pasta)
+       const escrever = (pasta: string, dados: Record<string, unknown>) => {
+         mkdirSync(join(acervo, pasta), { recursive: true })
+         for (const [id, valor] of Object.entries(dados)) {
+@@ -61,6 +73,27 @@ const PAGINAS_PRE_CARGA: Record<string, string> = {
+   cronograma: 'src/paginas/PlanoEstudo.tsx',
+   assinatura: 'src/paginas/Assinatura.tsx',
+   ranking: 'src/paginas/Ranking.tsx',
++  // Demais páginas que recebem visita direta (links de e-mail, anúncios,
++  // atalhos do aplicativo instalado): sem estas, a página só começava a descer
++  // depois do código principal rodar.
++  'plano-de-estudo': 'src/paginas/PlanoEstudo.tsx',
++  conta: 'src/paginas/Conta.tsx',
++  entrar: 'src/paginas/Conta.tsx',
++  'simulado-nacional': 'src/paginas/SimuladoNacional.tsx',
++  resumao: 'src/paginas/Resumao.tsx',
++  favoritas: 'src/paginas/Favoritas.tsx',
++  erros: 'src/paginas/CadernoErros.tsx',
++  conquistas: 'src/paginas/Ranking.tsx',
++  'temas-que-mais-caem': 'src/paginas/TemasQueMaisCaem.tsx',
++  indicar: 'src/paginas/Indicar.tsx',
++  convite: 'src/paginas/Indicar.tsx',
++  ligas: 'src/paginas/Ligas.tsx',
++  flashcards: 'src/paginas/Flashcards.tsx',
++  termos: 'src/paginas/Termos.tsx',
++  'condicoes-assinatura': 'src/paginas/CondicoesAssinatura.tsx',
++  sobre: 'src/paginas/Apoio.tsx',
++  projeto: 'src/paginas/Apoio.tsx',
++  contato: 'src/paginas/Apoio.tsx',
+ }
+ 
+ function preCargaPorRota(): Plugin {
+@@ -104,6 +137,25 @@ function preCargaPorRota(): Plugin {
+   }
+ }
+ 
++/**
++ * Origem do Supabase para o preconnect do index.html (toda página consulta o
++ * aviso do site e a conta logo na abertura). O mesmo endereço padrão de
++ * src/conta/supabase.ts, trocado pela variável de ambiente quando ela existe.
++ */
++const SUPABASE_PADRAO = 'https://oojrfzfjmkgmjcgzczln.supabase.co'
++function origemSupabase(): Plugin {
++  let origem = new URL(SUPABASE_PADRAO).origin
++  return {
++    name: 'origem-supabase',
++    configResolved(config) {
++      const definida = loadEnv(config.mode, config.envDir ?? process.cwd(), 'VITE_').VITE_SUPABASE_URL?.trim()
++      try { if (definida) origem = new URL(definida).origin } catch { /* endereço inválido: fica o padrão */ }
++    },
++    // Antes do Vite ler o HTML: ele decodifica os href, e "%SU..." não é um escape válido.
++    transformIndexHtml: { order: 'pre', handler: (html) => html.replace(/%SUPABASE_ORIGEM%/g, origem) },
++  }
++}
++
+ /**
+  * Caminho de publicação.
+  *
+@@ -121,7 +173,7 @@ const base = process.env.BASE_ORTOQUESTOES ?? './'
+ 
+ export default defineConfig({
+   base,
+-  plugins: [react(), preCargaPorRota(), fatiarAcervo()],
++  plugins: [react(), origemSupabase(), preCargaPorRota(), fatiarAcervo()],
+   build: {
+     target: 'es2020',
+     assetsInlineLimit: 2048,
