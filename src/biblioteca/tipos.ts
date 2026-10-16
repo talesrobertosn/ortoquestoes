@@ -97,7 +97,17 @@ export interface Leitura {
   concluidoEm?: number
   /** Últimas aberturas (para "Continuar estudando" e o histórico). */
   aberturas?: number[]
+  /**
+   * Segundos de leitura ativa neste capítulo (aba visível, leitor aberto e a pessoa mexendo nele
+   * nos últimos 2 minutos; no máximo 60 por minuto). Alimenta os emblemas de tempo dos resumos.
+   */
+  segundos?: number
+  /** Dias de São Paulo (numeroDoDia) com pelo menos 1 minuto de leitura ativa; só os últimos DIAS_LEITURA_MAXIMO. */
+  dias?: number[]
 }
+
+/** Quantos dias de leitura cada capítulo guarda (o documento não cresce sem limite). */
+export const DIAS_LEITURA_MAXIMO = 120
 
 export interface Preferencias {
   tipo: 'pref'

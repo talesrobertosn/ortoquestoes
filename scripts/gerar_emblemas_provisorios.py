@@ -1549,6 +1549,228 @@ FORMAS.update({
     "fcDragoes": presas, "fcSemErrar": corrente, "fcLendarios": carta_lendaria,
 })
 
+# ---------- lote 4 (16/10/2026): Biblioteca de Resumos, no estilo dos easter eggs ----------
+# Pedido do Tales: os emblemas de quem lê os resumos com a mesma arte dos pequenos encontros
+# (scripts/eventos/gerar.py): objetos com mais detalhe (miolo, reflexo, fita, brilho), as cores
+# da marca (verde do site, creme, dourado) e o metal do nível nas peças de destaque.
+VERDE_TOMO = ["#062a24", "#0d5247", "#14655e", "#2f9a86", "#9fe3d2"]
+LOMBADA = ["#04241f", "#0a3f37", "#0d5247", "#1f7a6a", "#5cc9ad"]
+CREME = ["#4a3418", "#c9a86a", "#f2dfb4", "#fff3d6", "#ffffff"]
+TINTA = ["#05070d", "#141b2e", "#22304f", "#3e5a8a", "#9db8e8"]
+PENA_BRANCA = ["#3a3f44", "#aab4ba", "#e4ecee", "#ffffff", "#ffffff"]
+PENUGEM = ["#2a1608", "#6b4423", "#9a6a3c", "#c79a63", "#ecd2a4"]
+# Cores do marca-texto, as mesmas do leitor (amarelo, verde, rosa, azul, roxo): faixa e traço do texto.
+GRIFOS = [("#f8e27a", "#9c7a1a"), ("#a7ecb4", "#2f7a46"), ("#f7b6d0", "#9b3a62"), ("#a9d8f7", "#2b5f8a"), ("#d6bdf7", "#5b3a91")]
+LOMBADAS = [
+    ["#3b0a0a", "#7f1d1d", "#b3423a", "#e07a6a", "#ffd2c9"],
+    VERDE_TOMO,
+    ["#0b1a3d", "#1e3a8a", "#2b5fa8", "#60a5fa", "#dbeafe"],
+    ["#3d2804", "#946512", "#c9952f", "#f5cd6b", "#fff4cf"],
+    ["#2a0a3d", "#5b2a85", "#7b3fa0", "#b07fd6", "#f3e8ff"],
+    ["#3d1a06", "#a2531c", "#d06a1f", "#f2a95a", "#ffd9a8"],
+    ["#1f2427", "#3a4246", "#566166", "#7d8b90", "#b7c3c7"],
+]
+
+
+def fita_marcador(t: Tela, x: int, y0: int, y1: int, rampa: list[str]) -> None:
+    """Fita de marcar página, com a ponta em V."""
+    t.camada(poligono([(x, y0), (x + 3, y0), (x + 3, y1), (x + 1.5, y1 - 1.6), (x, y1)]), rampa)
+
+
+def bib_marcas(t: Tela, nivel: str, degrau: int) -> None:
+    """Marcações: a folha do resumo com trechos grifados (uma cor a mais por nível) e o marca-texto."""
+    t.camada(poligono([(4, 5), (18, 5), (22, 9), (22, 29), (4, 29)]), CREME)
+    t.camada(poligono([(18, 5), (18, 9), (22, 9)]), ["#4a3418", "#c9a86a", "#e4cf9f", "#e4cf9f", "#fff3d6"], contorno=False)  # canto dobrado
+    t.pintar(retangulo(6, 7, 12, 7), "#14655e")  # título do resumo
+    capitular = degrau >= 3
+    if capitular:  # capitular iluminada, como nos códices
+        t.camada(retangulo(6, 10, 10, 14), METAIS["ouro"])
+        t.pintar(retangulo(7, 11, 9, 13), "#14655e" if nivel == "esmeralda" else "#7b3fa0")
+        t.pintar({(8, 11), (8, 12), (7, 13), (8, 13), (9, 13)}, "#fff4cf")
+    grifadas = min(5, degrau + 1)
+    for i, y in enumerate((11, 14, 17, 20, 23, 26)):
+        x0 = 12 if (capitular and i <= 1) else 6
+        x1 = 15 if i % 3 == 2 else 19
+        if i < grifadas:
+            faixa, traco = GRIFOS[i]
+            t.pintar(retangulo(x0 - 1, y - 1, x1 + 1, y + 1), faixa)
+            t.pintar(retangulo(x0, y, x1, y), traco)
+        else:
+            t.pintar(retangulo(x0, y, x1, y), "#b39465")
+    # Marca-texto em diagonal: corpo no metal do nível, tampa e ponta chanfrada na cor do grifo.
+    faixa, traco = GRIFOS[min(4, grifadas - 1)]
+    t.camada(linha(18, 20, 26.5, 8.5, 3.6), METAIS[nivel])
+    t.pintar(linha(19.6, 16.6, 24.6, 9.8, 0.5), METAIS[nivel][4])
+    t.camada(linha(26.3, 8.6, 29, 4.6, 3.8), ["#1f2427", traco, faixa, "#ffffff", "#ffffff"])
+    t.camada(poligono([(14.6, 21.6), (17, 18.6), (19.6, 20.8), (16.4, 23.8)]), ["#1f2427", traco, faixa, faixa, "#ffffff"])
+
+
+def bib_notas(t: Tela, nivel: str, degrau: int) -> None:
+    """Notas na margem: a ficha com glosas em tinta vermelha, o tinteiro e a pena."""
+    t.camada(retangulo(3, 4, 21, 26), PERGAMINHO)
+    t.pintar(retangulo(4, 5, 20, 5), "#fff8e6")
+    t.pintar(retangulo(9, 6, 9, 25), "#d99a8a")  # a linha da margem
+    for y in (8, 11, 14, 17, 20, 23):
+        t.pintar(retangulo(11, y, 19 if y % 2 == 0 else 17, y), "#9c7a45")
+    notas = min(4, degrau + 1)
+    for i in range(notas):
+        y = 7 + i * 4
+        t.pintar({(4, y + 1), (5, y), (6, y + 1), (7, y)}, "#b3423a")  # glosa rabiscada na margem
+        t.pintar({(5, y + 2), (6, y + 2)}, "#d33a3a")
+    if degrau >= 2:
+        fita_marcador(t, 14, 1, 7, VERMELHO)
+    if degrau >= 3:  # lacre com o selo
+        t.camada(circulo(6.5, 23, 2.6), VERMELHO)
+        t.ponto(5, 22, hexa("#ffd2c9"))
+    # Tinteiro de vidro escuro com gargalo no metal do nível.
+    t.camada(poligono([(17, 29), (17, 23), (19, 21), (27, 21), (29, 23), (29, 29)]), TINTA)
+    t.pintar(retangulo(18, 24, 18, 27), "#6f8ccc")
+    t.ponto(19, 23, hexa("#cfe6f2"))  # reflexo no vidro
+    t.camada(retangulo(19, 18, 26, 20), METAIS[nivel])
+    t.pintar(retangulo(20, 18, 24, 18), METAIS[nivel][4])
+    # Pena branca saindo do tinteiro para o alto.
+    t.camada(poligono([(22.5, 19), (25, 9), (29, 2), (28, 9), (24.2, 19)]), PENA_BRANCA)
+    t.pintar(linha(23.3, 18.5, 28.4, 3.2, 0.5), "#9fb0b4")
+
+
+def bib_abertos(t: Tela, nivel: str, degrau: int) -> None:
+    """Resumos abertos: o tomo verde aberto, a página virando e a fita do marcador."""
+    # Capa por trás, no verde do site, com cantos no metal do nível.
+    t.camada(poligono([(2, 10), (16, 13), (30, 10), (30, 26), (16, 29), (2, 26)]), VERDE_TOMO)
+    for (x, y) in ((3, 25), (28, 25)):
+        t.camada(retangulo(x, y, x + 1, y + 1), METAIS[nivel], contorno=False)
+    # Páginas.
+    t.camada(poligono([(4, 8), (15.5, 11), (15.5, 26), (4, 23.5)]), CREME)
+    t.camada(poligono([(16.5, 11), (28, 8), (28, 23.5), (16.5, 26)]), CREME)
+    for k in range(4):
+        y = 13 + k * 2.6
+        t.pintar(linha(6, y - 1.3, 13.5, y + 0.6, 0.5), "#b39465")
+        t.pintar(linha(18.5, y + 0.6, 26, y - 1.3, 0.5), "#b39465")
+    t.pintar(retangulo(16, 11, 16, 26), "#9c7a45")
+    # A página virando, com a sombra na dobra.
+    t.camada(poligono([(16.5, 11), (22, 4), (25, 6.5), (19.5, 13)]), CREME)
+    t.pintar(linha(17.5, 11.5, 22.5, 5.5, 0.5), "#c9a86a")
+    fita_marcador(t, 14, 24, 31, VERMELHO)
+    if degrau >= 1:
+        fita_marcador(t, 18, 24, 30, ["#3d2804", "#946512", "#d9a23a", "#f5cd6b", "#fff4cf"])
+    t.brilho(6, 4, "#fff4cf")
+
+
+def bib_concluidos(t: Tela, nivel: str, degrau: int) -> None:
+    """Resumos concluídos: a prateleira, com 1, 3 e 7 tomos lidos e o aparador no metal do nível."""
+    quantos = (1, 3, 7)[min(degrau, 2)]
+    t.camada(retangulo(2, 27, 29, 29), MADEIRA)
+    t.pintar(retangulo(3, 27, 28, 27), "#d9a877")
+    if quantos == 1:
+        # Um tomo grande, de pé, com o selo de lido na capa e a fita do marcador.
+        t.camada(retangulo(9, 6, 20, 26), VERDE_TOMO)
+        t.camada(retangulo(9, 6, 11, 26), LOMBADA, contorno=False)
+        t.camada(retangulo(21, 8, 22, 26), CREME)
+        for y in (9, 23):
+            t.pintar(retangulo(12, y, 19, y), "#e2ad45")
+        t.camada(circulo(16, 15.5, 3.8), ["#3d2804", "#946512", "#d9a23a", "#f5cd6b", "#fff4cf"])
+        t.pintar({(14, 15), (15, 16), (16, 17), (17, 16), (18, 15), (18, 14)} - {(18, 14)} | {(17, 15), (18, 14)}, "#0d5247")
+        fita_marcador(t, 16, 25, 31, VERMELHO)
+        x = 23
+    else:
+        alturas = [19, 16, 21, 17, 20, 15, 18]
+        larg = 3 if quantos == 7 else 4
+        x = 5 if quantos == 7 else 8
+        for i in range(quantos):
+            h = alturas[i]
+            y0 = 27 - h
+            t.camada(retangulo(x, y0, x + larg - 1, 26), LOMBADAS[i % len(LOMBADAS)])
+            t.pintar(retangulo(x, y0 + 3, x + larg - 1, y0 + 3), "#e2ad45")
+            t.pintar(retangulo(x, 23, x + larg - 1, 23), "#e2ad45")
+            x += larg + 1
+        t.camada(estrela_forma(4.5 if quantos == 7 else 5.5, 6, 3.4, 1.4), METAIS["ouro"])
+    # Aparador de livros (metal do nível) à direita.
+    t.camada(poligono([(x, 26), (x, 15), (x + 2, 15), (x + 4, 26)]), METAIS[nivel])
+
+
+def bib_tempo(t: Tela, nivel: str, degrau: int) -> None:
+    """Tempo de leitura: a ampulheta em cima do tomo; a areia desce um pouco mais a cada nível."""
+    # Tomo deitado na base.
+    t.camada(retangulo(4, 24, 27, 29), VERDE_TOMO)
+    t.camada(retangulo(6, 25, 27, 27), CREME, contorno=False)
+    for x in range(8, 27, 3):
+        t.ponto(x, 26, hexa("#c9a86a"))
+    t.camada(retangulo(4, 24, 6, 29), LOMBADA, contorno=False)
+    t.pintar(retangulo(4, 28, 27, 28), "#0d5247")
+    # Ampulheta.
+    t.camada(retangulo(8, 2, 23, 4) | retangulo(8, 21, 23, 23), MADEIRA)
+    t.pintar(retangulo(9, 2, 22, 2) | retangulo(9, 21, 22, 21), "#d9a877")
+    vidro = poligono([(10, 5), (21, 5), (17, 12.5), (21, 20.5), (10, 20.5), (14, 12.5)])
+    t.camada(vidro, ["#2f3a3e", "#9fc3d6", "#cfe6f2", "#eef8fd", "#ffffff"])
+    areia = ["#7a4a12", "#c98a2e", "#e8b34f", "#f5d58a", "#fff1c2"]
+    queda = min(4, degrau)
+    topo = 7 + queda
+    if topo < 11.5:
+        t.camada(poligono([(11 + (topo - 6) * 0.5, topo), (20 - (topo - 6) * 0.5, topo), (16.6, 11.5), (14.4, 11.5)]), areia, contorno=False)
+    altura = 2 + queda * 1.6
+    t.camada(poligono([(15.5, 20 - altura), (20.2, 20), (10.8, 20)]), areia, contorno=False)
+    t.pintar(retangulo(15, 12, 15, 19 - int(altura)), "#e8b34f")
+    t.pintar({(12, 6), (12, 7), (13, 8)}, "#ffffff")
+    t.camada(retangulo(8, 5, 9, 20) | retangulo(22, 5, 23, 20), METAIS[nivel])
+    t.pintar(retangulo(8, 5, 8, 20), METAIS[nivel][4])
+
+
+def bib_dias(t: Tela, nivel: str, degrau: int) -> None:
+    """Dias de leitura: a folhinha com o cabeçalho verde, os dias riscados e a fita do marcador."""
+    t.camada(retangulo(5, 7, 26, 28), CREME)
+    t.camada(retangulo(5, 6, 26, 11), VERDE_TOMO)
+    t.pintar(retangulo(6, 7, 25, 7), "#5cc9ad")
+    # Livrinho no cabeçalho.
+    t.pintar(retangulo(13, 8, 15, 10) | retangulo(16, 8, 18, 10), "#fff3d6")
+    t.pintar(retangulo(15, 8, 16, 10), "#c9a86a")
+    for x in (9, 21):
+        t.camada(retangulo(x, 3, x + 1, 8), METAIS[nivel])
+    marcados = (3, 7, 11, 16, 16)[min(degrau, 4)]
+    k = 0
+    for lin in range(4):
+        for col in range(4):
+            x, y = 8 + col * 4, 13 + lin * 4
+            if k < marcados:  # dia lido: carimbo verde (dourado nos níveis altos)
+                t.pintar(retangulo(x, y, x + 2, y + 2), "#d9a23a" if degrau >= 3 else "#14655e")
+                t.ponto(x, y, hexa("#f5cd6b" if degrau >= 3 else "#5cc9ad"))
+                t.ponto(x + 2, y + 2, hexa("#946512" if degrau >= 3 else "#0d5247"))
+            else:
+                t.pintar(retangulo(x, y, x + 2, y + 2), "#e4cf9f")
+            k += 1
+    fita_marcador(t, 22, 26, 31, VERMELHO)
+
+
+def coruja_biblioteca(t: Tela, nivel: str, degrau: int) -> None:
+    """Secreta: a coruja de madrugada em cima da pilha de resumos, com a lua por trás."""
+    t.camada(circulo(24.5, 6.5, 4.6), ["#4a3f2c", "#e9dfc6", "#f6ebc8", "#fff8e6", "#ffffff"])
+    for (x, y) in circulo(26.8, 5.0, 3.7):  # lua crescente: recorta o disco
+        t.px[y][x] = None
+    t.camada(retangulo(4, 25, 27, 29), VERDE_TOMO)
+    t.camada(retangulo(6, 26, 27, 28), CREME, contorno=False)
+    t.camada(retangulo(6, 21, 25, 24), LOMBADAS[0])
+    t.camada(retangulo(8, 22, 25, 23), CREME, contorno=False)
+    # Corpo e cabeça.
+    t.camada(poligono([(9, 21), (8.5, 14), (11, 9), (21, 9), (23.5, 14), (23, 21)]), PENUGEM)
+    t.camada(poligono([(9.5, 10), (9, 5), (13, 8.5)]), PENUGEM)
+    t.camada(poligono([(22.5, 10), (23, 5), (19, 8.5)]), PENUGEM)
+    t.camada(poligono([(12, 20.5), (12.5, 15), (19.5, 15), (20, 20.5)]), CREME, contorno=False)
+    for (x, y) in ((14, 17), (17, 17), (15.5, 19)):
+        t.pintar({(int(x), int(y)), (int(x) + 1, int(y) + 1)}, "#c9a86a")
+    for cx in (13.2, 18.8):
+        t.camada(circulo(cx, 12, 2.6), ["#3d2804", "#f5cd6b", "#fde68a", "#fff4cf", "#ffffff"])
+        t.pintar(circulo(cx, 12.2, 1.1), "#1b1208")
+        t.ponto(int(cx) - 1, 11, hexa("#ffffff"))
+    t.pintar({(16, 13), (15, 14), (16, 14), (16, 15)}, "#d9822f")
+    t.pintar({(12, 22), (13, 22), (19, 22), (20, 22)}, "#d9822f")
+    t.brilho(5, 5, "#fff4cf")
+
+
+FORMAS.update({
+    "bibMarcas": bib_marcas, "bibNotas": bib_notas, "bibAbertos": bib_abertos, "bibConcluidos": bib_concluidos,
+    "bibTempo": bib_tempo, "bibDias": bib_dias, "secreta-coruja-biblioteca": coruja_biblioteca,
+})
+
+
 def desenhar(id_: str, familia: str, nivel: str, degrau: int) -> Tela:
     t = Tela()
     FORMAS.get(id_, FORMAS.get(familia, medalha))(t, nivel, degrau)

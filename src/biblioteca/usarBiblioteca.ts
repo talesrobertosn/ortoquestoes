@@ -3,7 +3,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { usarConta } from '../conta/ContextoConta'
 import { gerarId } from '../util/id'
 import type { Ancora } from './ancoras'
-import { CHAVE_BIBLIOTECA, ITEM_PREF, PREFERENCIAS_PADRAO, itemLeitura, itemMarca, type CorMarca, type DocBiblioteca, type Leitura, type Marca, type Preferencias } from './tipos'
+import { CHAVE_BIBLIOTECA, DIAS_LEITURA_MAXIMO, ITEM_PREF, PREFERENCIAS_PADRAO, itemLeitura, itemMarca, type CorMarca, type DocBiblioteca, type Leitura, type Marca, type Preferencias } from './tipos'
 
 /**
  * Os dados da pessoa na Biblioteca. Ficam na chave `biblioteca` (um mapa item → documento), que a
@@ -58,11 +58,18 @@ export function usarBiblioteca() {
     })
   }, [definir])
 
-  const salvarLeitura = useCallback((capitulo: string, mudanca: Partial<Omit<Leitura, 'tipo' | 'capitulo'>>) => {
+  /**
+   * Grava a posição. `tempo` (opcional, na mesma gravação): segundos de leitura ativa a somar e o dia
+   * (numeroDoDia) a acrescentar aos dias de leitura. Somado aqui, sobre o valor guardado, para nunca
+   * contar duas vezes nem apagar o que outro aparelho já somou.
+   */
+  const salvarLeitura = useCallback((capitulo: string, mudanca: Partial<Omit<Leitura, 'tipo' | 'capitulo' | 'segundos' | 'dias'>>, tempo?: { segundos: number; dia?: number } | null) => {
     definir((atual) => {
       const antes = atual?.[itemLeitura(capitulo)]
       const base: Leitura = antes?.tipo === 'leitura' ? antes : { tipo: 'leitura', capitulo, bloco: '', deslocamento: 0, progresso: 0, em: 0 }
       const nova: Leitura = { ...base, ...mudanca, progresso: Math.max(base.progresso, mudanca.progresso ?? 0), em: Date.now() }
+      if (tempo && tempo.segundos > 0) nova.segundos = Math.round((base.segundos ?? 0) + tempo.segundos)
+      if (tempo?.dia !== undefined && !base.dias?.includes(tempo.dia)) nova.dias = [...(base.dias ?? []), tempo.dia].sort((p, q) => p - q).slice(-DIAS_LEITURA_MAXIMO)
       if (JSON.stringify({ ...nova, em: 0 }) === JSON.stringify({ ...base, em: 0 })) return atual
       return { ...atual, [itemLeitura(capitulo)]: nova }
     })

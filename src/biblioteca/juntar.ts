@@ -1,4 +1,4 @@
-import type { DocBiblioteca, Leitura, Marca } from './tipos'
+import { DIAS_LEITURA_MAXIMO, type DocBiblioteca, type Leitura, type Marca } from './tipos'
 
 /**
  * Junta duas versões do mesmo item da Biblioteca, alteradas em aparelhos diferentes antes de
@@ -6,7 +6,8 @@ import type { DocBiblioteca, Leitura, Marca } from './tipos'
  * - marcação: vale a edição mais recente para cor, âncora e favorita; uma exclusão só vence se for
  *   posterior à última edição do outro lado; **nota**: se as duas mudaram para textos diferentes, a
  *   mais recente fica como nota e a outra vai para `notasDeOutroAparelho` (a pessoa decide). Nada some.
- * - leitura: vale a posição mais recente; progresso e conclusão ficam com o maior/primeiro.
+ * - leitura: vale a posição mais recente; progresso e conclusão ficam com o maior/primeiro; o tempo
+ *   de leitura fica com o maior e os dias de leitura se somam (união).
  * - preferências: vale a mais recente.
  */
 export function juntarBiblioteca(a: unknown, b: unknown): unknown {
@@ -43,5 +44,12 @@ function juntarLeitura(a: Leitura, b: Leitura): Leitura {
   const r: Leitura = { ...nova, progresso: Math.max(a.progresso, b.progresso), aberturas }
   if (concluido.length) r.concluidoEm = Math.min(...concluido)
   else delete r.concluidoEm
+  // Tempo: fica o maior (somar contaria duas vezes o que veio da mesma base). Dias: a união.
+  const segundos = Math.max(a.segundos ?? 0, b.segundos ?? 0)
+  if (segundos > 0) r.segundos = segundos
+  else delete r.segundos
+  const dias = [...new Set([...(a.dias ?? []), ...(b.dias ?? [])])].sort((p, q) => p - q).slice(-DIAS_LEITURA_MAXIMO)
+  if (dias.length) r.dias = dias
+  else delete r.dias
   return r
 }
