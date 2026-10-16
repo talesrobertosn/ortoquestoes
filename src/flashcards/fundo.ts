@@ -6,6 +6,13 @@
 import { navegar } from '../util/rotas'
 
 const CHAVE = 'flashcards:fundo'
+/** Central, desempenho e cronograma dos flashcards são páginas do site; o resto é o jogo em tela cheia. */
+const PAGINAS_DO_SITE: Array<string | undefined> = [undefined, 'desempenho', 'cronograma']
+
+/** Rotas do jogo dos flashcards: abrem como pop-up por cima do site. */
+export function ehRotaDoJogo(segmentos: string[]) {
+  return segmentos[0] === 'flashcards' && !PAGINAS_DO_SITE.includes(segmentos[1])
+}
 const PADRAO = '/flashcards'
 let fundo: string | null = null
 

@@ -1,13 +1,26 @@
 import { lazy, memo, Suspense, useEffect, useRef, useState } from 'react'
 import { climaDoCiclo, INTERVALO_CEU } from '../efeitos/cicloExterior'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
-import { criarAmbiente, pintarCena, type Cena, type Clima } from '../efeitos/pintura'
-import { pintarTabuleiro } from '../efeitos/tabuleiros'
+import { criarAmbiente, type Cena, type Clima } from '../efeitos/ambiente'
 import { CENAS_PINTADAS, PAISAGENS, carregarCenarioPintado, cenarioPintadoPronto, formatoPara, pintarCamadas, type CenaAmbientada, type Paisagem } from '../efeitos/cenariosPintados'
 
 // enfeites só da Biblioteca: vêm à parte, quem joga a Cripta não os baixa
 const EstacoesBiblioteca = lazy(() => import('./EstacoesBiblioteca').then((m) => ({ default: m.EstacoesBiblioteca })))
 const LeitoresBiblioteca = lazy(() => import('./LeitoresBiblioteca').then((m) => ({ default: m.LeitoresBiblioteca })))
+
+/**
+ * Pintura em código (efeitos/pintura.ts + tabuleiros.ts, ~100 kB) fora do pedaço principal do
+ * jogo (15/10/2026): a Arena pede o módulo junto com o acervo, na tela de carregamento, e ele
+ * já está pronto quando a mesa e as cenas sem arte pintada aparecem. Se ainda não chegou, a
+ * cena espera no degradê e a pintura entra com o mesmo esmaecer das cenas pintadas.
+ */
+type Pintor = typeof import('../efeitos/pintorCenas')
+let pintor: Pintor | null = null
+let carregandoPintor: Promise<Pintor> | null = null
+export function carregarPintura(): Promise<Pintor> {
+  carregandoPintor ??= import('../efeitos/pintorCenas').then((m) => (pintor = m)).catch((e) => { carregandoPintor = null; throw e })
+  return carregandoPintor
+}
 
 /** Desfoque barato e compatível com todos os navegadores: reduz e amplia de novo, com suavização. */
 function desfocar(src: HTMLCanvasElement, fator: number): HTMLCanvasElement {
@@ -137,8 +150,13 @@ export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: cl
         carregarCenarioPintado(nomePintado, formato).then(() => { if (vivo) { ultimo = ''; chegou = true; pintar() } })
         return
       }
+      if (!pintado && !pintor) {
+        alvo.width = 1; alvo.height = 1
+        carregarPintura().then(() => { if (vivo) { ultimo = ''; chegou = true; pintar() } }, () => {})
+        return
+      }
       if (pintado) { planos.luz = novo(); pintarCamadas(planos, pintado, w, h) }
-      else pintarCena(planos, cena)
+      else pintor!.pintarCena(planos, cena)
       const q = Math.min(2, window.devicePixelRatio || 1)
       const W = Math.round(w * q), H = Math.round(h * q)
       alvo.width = W; alvo.height = H
@@ -226,17 +244,19 @@ export const TampoMesa = memo(function TampoMesa({ cenario }: { cenario: TipoCen
   useEffect(() => {
     const c = ref.current
     if (!c) return
-    let espera = 0, ultimo = ''
+    let espera = 0, ultimo = '', vivo = true
     const pintar = () => {
+      if (!vivo) return
+      if (!pintor) { void carregarPintura().then(pintar, () => {}); return }
       const chave = `${c.clientWidth}x${c.clientHeight}`
       if (chave === ultimo) return
       ultimo = chave
-      pintarTabuleiro(c, cenario)
+      pintor.pintarTabuleiro(c, cenario)
     }
     pintar()
     const obs = new ResizeObserver(() => { window.clearTimeout(espera); espera = window.setTimeout(pintar, 120) })
     obs.observe(c)
-    return () => { obs.disconnect(); window.clearTimeout(espera) }
+    return () => { vivo = false; obs.disconnect(); window.clearTimeout(espera) }
   }, [cenario])
   return <canvas ref={ref} className="fc-mesa__tampo" aria-hidden="true" />
 })

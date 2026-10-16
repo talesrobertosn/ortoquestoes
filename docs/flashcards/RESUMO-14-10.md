@@ -54,9 +54,9 @@ Feito para o Tales e para qualquer agente que continue o trabalho, seja Claude, 
 1. **Bestiário:** em 15/10 ganharam folha nova o raptor (e variantes), o corvo, o morcego, o escaravelho, o Slime Sinovial e os três cavaleiros. Ainda no desenho antigo: mão, espectro, harpia, quimera, rei, leviatã e arconte.
 2. **Cenários procedurais:** Torre e Salão ainda não são pintados offline.
 3. **Dragão:** variantes escarlate e ancestral feitas em 15/10.
-4. **Contador da rota:** não aparece na tela quantos dos 10 flashcards do Mapa ou do Desvio ainda faltam.
+4. **Contador da rota:** feito em 16/10 (selo "Área N faltam" na mesa; veja CONTINUAR.md, Acabamento).
 5. **Conquistas dos flashcards:** ligadas ao sistema de emblemas do site em 15/10/2026 (veja [CONQUISTAS.md](CONQUISTAS.md) e a seção de 15/10 em `docs/emblemas.md`).
-6. **Áreas sobrando:** o baralho de demonstração usa as áreas "Trauma" e "Anatomia", fora do padrão. O ideal é corrigir isso na origem.
+6. **Áreas sobrando:** corrigido em 16/10 (Trauma adulto e Quadril, como no acervo).
 7. **Faixa "sala" da trilha:** emenda corrigida em 15/10 (degrau de 5,5 para 2,4 dB).
 8. **Som no celular:** precisa ser testado num aparelho físico.
 

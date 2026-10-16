@@ -18,6 +18,7 @@
 import { chromium } from 'playwright'
 import assert from 'node:assert/strict'
 import { mkdir } from 'node:fs/promises'
+import { existsSync } from 'node:fs'
 
 const base = process.env.ORTO_URL ?? 'http://localhost:5198/'
 const pasta = process.env.ORTO_CAPTURAS ?? '/tmp/ortoquestoes-continuidade'
@@ -104,7 +105,7 @@ const esperarServidor = async (condicao, rotulo) => {
   throw new Error(`o servidor não recebeu: ${rotulo}`)
 }
 
-const b = await chromium.launch({ executablePath: process.env.CHROMIUM_BIN, args: ['--no-sandbox'] })
+const b = await chromium.launch({ executablePath: process.env.CHROMIUM_BIN ?? (existsSync('/opt/pw-browsers/chromium') ? '/opt/pw-browsers/chromium' : undefined), args: ['--no-sandbox'] })
 try {
   // 1. cada aparelho com o seu Altar e o seu Bestiário (como era antes da sincronia)
   const notebook = await aparelho(b, 'notebook', {

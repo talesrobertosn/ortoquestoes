@@ -247,9 +247,9 @@ export class Palco {
       c.strokeStyle = o.cor
       // halo: traço largo e fraco por baixo do traço fino (no lugar do shadowBlur, que pesa)
       c.globalAlpha = a * 0.25; c.lineWidth = (o.largura * a + 1) * 4
-      c.beginPath(); c.arc(o.x, o.y, o.raio, 0, Math.PI * 2); c.stroke()
+      c.beginPath(); c.arc(o.x, o.y, Math.max(0, o.raio), 0, Math.PI * 2); c.stroke()
       c.globalAlpha = a; c.lineWidth = o.largura * a + 1
-      c.beginPath(); c.arc(o.x, o.y, o.raio, 0, Math.PI * 2); c.stroke()
+      c.beginPath(); c.arc(o.x, o.y, Math.max(0, o.raio), 0, Math.PI * 2); c.stroke()
     }
     // raios: traço largo e fraco (halo) e núcleo branco, piscando
     for (const r of this.raios) {
@@ -273,11 +273,11 @@ export class Palco {
       c.strokeStyle = g; c.lineCap = 'round'
       const alfa = c.globalAlpha
       c.globalAlpha = alfa * 0.3; c.lineWidth = k.largura * 3
-      c.beginPath(); c.arc(k.x, k.y, k.raio, comeco, fim); c.stroke()
+      c.beginPath(); c.arc(k.x, k.y, Math.max(0, k.raio), comeco, fim); c.stroke()
       c.globalAlpha = alfa
       for (const [larg, r] of [[k.largura, k.raio], [k.largura * 0.45, k.raio * 0.86]] as const) {
         c.lineWidth = larg
-        c.beginPath(); c.arc(k.x, k.y, r, comeco, fim); c.stroke()
+        c.beginPath(); c.arc(k.x, k.y, Math.max(0, r), comeco, fim); c.stroke()
       }
     }
     c.shadowBlur = 0

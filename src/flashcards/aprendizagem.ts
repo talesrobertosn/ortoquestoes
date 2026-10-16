@@ -189,10 +189,12 @@ export function calcularEstatisticas(cartas: Flashcard[], nomes: Record<string, 
     if (d.revisoes) p.diasAtivos++
   }
   const desde = Object.keys(diario).sort()[0] ?? null
+  // Com o índice do acervo, só as áreas padrão entram (ideia 81: nada de áreas soltas do baralho de demonstração).
+  const padrao = (area: string) => !Object.keys(nomes).length || Object.prototype.hasOwnProperty.call(nomes, area)
   return {
     unicos: Object.keys(registros).length, revisoes, pendentes, dominados, ultimaAvaliacao, periodo: p,
-    porArea: [...areas.values()].filter((x) => x.total > 0).sort((a, b) => b.estudados - a.estudados || b.total - a.total),
-    porAssunto: [...assuntos.values()].filter((x) => x.tentativas >= 3)
+    porArea: [...areas.values()].filter((x) => x.total > 0 && padrao(x.area)).sort((a, b) => b.estudados - a.estudados || b.total - a.total),
+    porAssunto: [...assuntos.values()].filter((x) => x.tentativas >= 3 && padrao(x.area))
       .sort((a, b) => a.acertos / a.tentativas - b.acertos / b.tentativas || b.tentativas - a.tentativas || a.assunto.localeCompare(b.assunto, 'pt-BR')),
     desde,
   }

@@ -143,7 +143,8 @@ export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, 
   const lado = contido && dx < 0 ? Math.ceil(-dx) : 0
   const acima = contido && dy < 0 ? Math.ceil(-dy) : 0
   const caixa: React.CSSProperties = { width: w * escala, height: h * escala }
-  if (lado) { caixa.marginLeft = lado; caixa.marginRight = lado }
+  // o CSS pode encolher o transbordo da direita no celular (a placa do adversário passa por cima da asa)
+  if (lado) { caixa.marginLeft = lado; caixa.marginRight = lado; (caixa as Record<string, unknown>)['--ator-lado'] = lado + 'px' }
   if (acima) caixa.marginTop = acima
   return (
     <div ref={ref} className={`fc-ator fc-ator--${quem}${assado ? ' fc-ator--assado' : ''}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={caixa}>
@@ -154,6 +155,17 @@ export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, 
     </div>
   )
 })
+
+/**
+ * Número curto para a barra de vida (16/10/2026): até 9.999 fica inteiro, sem ponto (1472, 2280);
+ * daí em diante, em milhares ("12,4 mil"). O valor exato segue no aria-valuenow.
+ */
+export function numeroCompacto(n: number) {
+  const v = Math.round(n)
+  if (Math.abs(v) < 10000) return String(v)
+  const mil = v / 1000
+  return `${(Math.abs(mil) < 100 ? Math.floor(mil * 10) / 10 : Math.floor(mil)).toLocaleString('pt-BR')} mil`
+}
 
 /** Barra de vida com moldura, faixa de dano residual e número legível. */
 export function BarraVida({ atual, maximo, tipo, rotulo }: { atual: number; maximo: number; tipo: 'inimigo' | 'heroi' | 'chefe'; rotulo: string }) {
@@ -166,7 +178,7 @@ export function BarraVida({ atual, maximo, tipo, rotulo }: { atual: number; maxi
         <i style={{ width: pct + '%' }} />
         <em aria-hidden="true" />
       </span>
-      <b>{atual}<small>/{maximo}</small></b>
+      <b>{numeroCompacto(atual)}<small>/{numeroCompacto(maximo)}</small></b>
     </div>
   )
 }

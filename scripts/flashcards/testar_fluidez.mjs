@@ -9,10 +9,11 @@
 import { chromium } from 'playwright'
 import assert from 'node:assert/strict'
 import { mkdir } from 'node:fs/promises'
+import { existsSync } from 'node:fs'
 const url = process.env.ORTO_URL ?? 'http://127.0.0.1:5199/#/flashcards/cripta'
 const pasta = process.env.ORTO_CAPTURAS ?? '/tmp/ortoquestoes-fluidez'
 await mkdir(pasta, { recursive: true })
-const b = await chromium.launch({ executablePath: process.env.CHROMIUM_BIN ?? '/usr/bin/chromium', args: ['--no-sandbox'] })
+const b = await chromium.launch({ executablePath: process.env.CHROMIUM_BIN ?? (existsSync('/opt/pw-browsers/chromium') ? '/opt/pw-browsers/chromium' : '/usr/bin/chromium'), args: ['--no-sandbox'] })
 try {
   for (const [formato, width, height] of [['paisagem', 1400, 860], ['retrato', 390, 844], ['deitado', 844, 390]]) {
     const toque = width < 900
@@ -39,7 +40,7 @@ try {
     await p.evaluate(() => { const t = window.__torneio; t.definir({ ...t.partida, vida: 999, vidaMax: 999 }) })
     const antes = await topoBotao()
     for (let k = 0; k < 3; k++) {
-      const errada = await p.evaluate(() => (window.__torneio.certaVisual + 1) % 4)
+      const errada = await p.evaluate(() => (window.__torneio.certaVisual + 1) % document.querySelectorAll('.fc-alternativa').length)
       await tocar(p.locator('.fc-alternativa').nth(errada)); await tocar(p.locator('.fc-alternativa').nth(errada))
       await p.waitForFunction(() => window.__torneio.partida.fase === 'resposta')
       for (const ms of [0, 120, 300]) { await p.waitForTimeout(ms); assert(Math.abs(await topoBotao() - antes) <= 6, `botão mudou de lugar ao responder (${formato})`) }
