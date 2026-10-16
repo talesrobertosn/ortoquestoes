@@ -170,6 +170,15 @@ completo: a seção de instabilidade glenoumeral desse arquivo.
   O item 8 do roteiro acima continua valendo para as questões novas; para as gêmeas, o motivo no
   mapa é o próprio fato carimbado. O comentário cita a prova e o ano em que o fato caiu.
 
+- **"Por que esta questão foi criada" (16/10/2026, pedido do Tales).** Todo simulado novo fecha o
+  `conceito` com um parágrafo curto (1 a 3 frases) em negrito "**Por que esta questão foi criada.**":
+  na gêmea, a prova e o ano em que o fato caiu e o giro usado ("No TARO 2015 caiu como se calcula o
+  delta P; aqui o mesmo fato volta pelo valor e pelo tempo"); na nova, o número, corte ou epônimo que
+  o capítulo destaca e por que tem cara de prova. Prova e ano exatamente como no acervo, conferindo o
+  gabarito da questão citada. Fica no fim do conceito porque é o último texto corrido antes das
+  alternativas na tela. Este item substitui, só para essa parte, a restrição abaixo de explicar por
+  que a questão existe. Primeiro lote: capítulo 17 (`trauma-1593` a `trauma-1606`).
+
 - **Comentário natural e útil (08/10/2026, ajuste do dono).** Sem piso de caracteres.
   Explicar a relação anatômica e a dúvida de cada alternativa com a extensão que
   elas pedem. Cortar repetição, títulos artificiais e explicações sobre por que a

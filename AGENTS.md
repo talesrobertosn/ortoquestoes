@@ -47,6 +47,10 @@ reversa). Faça em média **10 simulados** por capítulo (12 se precisar; até 3
 escreva **"Por que esta questão foi criada"**: em que prova e ano o fato caiu e como foi cobrado, ou por que o ponto
 tem cara de prova. Toda questão precisa de um motivo. Resumos seguem [docs/biblioteca/README.md](docs/biblioteca/README.md).
 
+Desde 16/10/2026 (pedido do Tales), cada simulado novo termina o `conceito` com um parágrafo curto
+"**Por que esta questão foi criada.**" (prova e ano em que o fato caiu, ou o motivo de ter cara de prova);
+ver a lição de mesmo nome no guia acima.
+
 Agentes externos (por exemplo, ChatGPT Codex) que forem criar simulados a partir de um capítulo devem
 seguir o roteiro passo a passo de [docs/prompts/codex-simulados.md](docs/prompts/codex-simulados.md).
 

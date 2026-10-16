@@ -2259,3 +2259,82 @@ entrega em [rockwood-transtrocanterica-entrega.md](rockwood-transtrocanterica-en
 - **Pendências:** a medida da parede lateral (3 cm e 135 graus, TEOT 2025) e a espessura limite
   (TEOT 2023) não estão no capítulo; TRONZO e SARMIENTO também não. Mortalidade em 1 ano com dois
   valores no capítulo.
+
+## Síndrome compartimental aguda (engenharia reversa em 16/10/2026; Rockwood cap. 17)
+
+**Recorte.** `mapear_banca.py --regex 'compartimen|fasciotom|volkmann|press[aã]o (intra)?compart|delta ?p|mioglobin|rabdomi' --subtema 'Síndrome compartimental'`
+deu 106 oficiais (101 de TEOT e TARO com 4 alternativas), mas a maioria é ruído (ENNEKING,
+compartimentos do joelho, extensores do punho, sarcomas). Sobram cerca de **40 itens do assunto**,
+de 2006 a 2026, com **cerca de 2 a 5 por ano desde 2021** (2023 teve cinco: `trauma-0419`, `0420`,
+`0432`, `0433`, `0434`). Também lidos, para estilo: ENARE R4 2023 a 2025, USP-SP 2024 e 2025, UFG 2017
+e 2020, CET-PR e SBOT-SP sem ano. Único simulado anterior do assunto: `trauma-1448` (cap. 42).
+
+**Fatos carimbados (com prova e ano):**
+- **Compartimento mais acometido e cateter**: perna anterior (TARO 2022 `trauma-0229`; anterior e
+  lateral no TARO 2011 `trauma-0872`; anterior e cateter anterior no TARO 2026 `trauma-0983`); coxa
+  anterior (TEOT 2025 `trauma-0767`, TARO 2017 `trauma-0099`, SBOT-SP sem ano); cateter nos
+  interósseos do pé (ENARE R4 2024 `trauma-1010`).
+- **Delta P e limiar**: diastólica menos intracompartimental (TARO 2015 `trauma-0150`; ENARE R4 2025
+  `trauma-1196`); 30 mmHg de pressão absoluta (TARO 2012 `trauma-0818`); 20 mmHg no hipotenso (sem ano
+  `trauma-0274`).
+- **Fatores de risco**: masculino e menor de 55 anos (TARO 2014 `trauma-0164`); proximal e masculino
+  (TEOT 2025 `trauma-0746`); diáfise da tíbia como a mais frequente (TARO 2013 `trauma-1092`); úmero
+  diafisário como a menos associada (sem ano `trauma-0306`).
+- **Fisiopatologia**: fibras tipo I oxidativas (TEOT 2022 `trauma-0195`); MATSEN e 30 minutos para o
+  nervo (TARO 2014, três vezes); 8 horas de isquemia irreversível (TARO 2023 `trauma-0434`).
+- **Diagnóstico**: exame físico seriado (TARO 2020 `trauma-0006`, repetido no SBOT-SP); agitação na
+  criança (TARO 2020 `trauma-0012`); sinais indicativos sem pulso (sem ano `trauma-0257`).
+- **Anatomia e sinais**: compartimentos da coxa (TARO 2023 `trauma-0419`) e septo posterior (TARO
+  2012 `trauma-0816`); dorsolateral do pé (TARO 2008 `trauma-1142`, sem gabarito); primeiro espaço
+  (TARO 2006, certo e errado).
+- **Fasciotomia**: posteromedial para os posteriores (TARO 2023 `trauma-0420`); pé da criança com
+  duas incisões dorsais sobre 2º e 4º metatarsos e nove compartimentos (TARO 2026 `trauma-0999`);
+  antebraço com todos os compartimentos (TARO 2024 `trauma-0668`); flexores mais acometidos (TARO
+  2007 `trauma-1117`, sem gabarito); antes da estabilização (CET-PR sem ano `trauma-0705`).
+- **Crônica de esforço**: anterior e lateral (TARO 2023 `trauma-0432`), exercício (TARO 2018), hérnia
+  fascial (TARO 2015). O capítulo 17 só define a síndrome de esforço.
+
+**Tendência.** Desde 2021 a banca alterna anatomia (qual compartimento, qual acesso), risco
+(idade, sexo, terço proximal) e números (delta P, horas). O caso clínico apareceu em 2026 (GLASGOW 3
+com cateter). Mão e pé entraram em 2025 e 2026 (USP-SP, TARO 2026).
+
+**Forma.** "Na síndrome compartimental aguda...", "Na síndrome compartimental da perna...";
+enunciado de cerca de 95 caracteres terminando em palavra; alternativas curtas (um compartimento,
+um número) ou pares 2 por 2 (sexo e idade; sexo e terço; compartimento e local do cateter; 7 ou 9
+compartimentos com uma ou duas incisões). Quase sem imagem.
+
+**Como o examinador pensa.** "O mais frequentemente acometido", "o preditor mais forte", "a partir
+de", "é obtido subtraindo-se". Cruza compartimento com cateter, sexo com idade e o número com a
+técnica. Distratores do mesmo capítulo: compartimento vizinho, número vizinho (20, 30, 40, 50 mmHg;
+2, 4, 6, 8 horas), a ordem da subtração invertida.
+
+**Divergências e lacunas.**
+- TARO 2023 `trauma-0434` (8 horas de isquemia irreversível) e TARO 2014 (MATSEN, 30 minutos) não têm
+  esses números no capítulo, que usa atraso até a fasciotomia acima de 6 horas e VOLKMANN com 6 horas.
+- TARO 2024 `trauma-0668` (descompressão de todos os compartimentos do antebraço) contra o capítulo
+  17, em que a volar costuma bastar e a dorsal entra se a pressão continuar alta.
+- TARO 2020 (exame físico seriado) contra o capítulo, que considera a clínica isolada inadequada e
+  recomenda monitorização contínua no paciente de risco (grau B).
+- TARO 2021 `trauma-0081` (baixa idade como preditor na criança): o capítulo traz prevalência de 48%
+  acima de 14 anos em acidente de trânsito; o comentário oficial já tem alerta.
+- Lacunas com cara de prova (cobertas no lote): delta P abaixo de 30 por 2 horas; planalto 12% contra
+  3% e SCHATZKER VI; fibular superficial a 10 cm; compartimento calcâneo; parestesia 13% e 98%;
+  revisão em 48 horas com a medial fechando; haste fresada não aumenta o risco; tração 6% por kg.
+
+**Destino.** Tema Trauma, subtema "Síndrome compartimental" (com diáfise da tíbia, planalto, calcâneo
+ou antebraço quando cabe). Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 17** (Acute Compartment Syndrome; Harvey, Bernstein e Duckworth):
+`trauma-1593` a `trauma-1606`, 14 questões sem figura, gabarito A3/B3/C4/D4, mediana do comentário
+de 4.288 caracteres. Desde 16/10/2026, cada comentário termina o conceito com "Por que esta questão
+foi criada" (pedido do Tales), citando prova e ano. O PDF tem 33 páginas: 1 a 32 são o capítulo 17;
+a 33 é a primeira página do capítulo 18 (Principles of Mangled Extremity Management), ignorada.
+- **Gêmeas:** delta P (TARO 2015, ENARE 2025, TARO 2012); cateter na coxa e no pé (TARO 2026, TEOT 2025,
+  ENARE 2024); fibras tipo I pelo espelho (TEOT 2022); posterior profundo pela tabela de sinais (TARO
+  2008 e 2006); juventude e diáfise da tíbia (TARO 2014 e 2013); incisão medial (TARO 2023); pé com o
+  compartimento calcâneo (TARO 2026); antebraço com túnel do carpo e flexores profundos (TARO 2007 e
+  2024); sinais tardios (TARO 2020, sem ano); 6 horas (TARO 2023, com a divergência explicada).
+- **Projeções:** planalto SCHATZKER VI; fibular superficial a 10 cm; feridas em 48 horas; fasciotomia
+  antes da fixação e haste fresada.
+- **Pendências:** síndrome crônica de esforço, criança (3 A, iatrogenia em 61% sem fratura), mão (10
+  compartimentos), deltoide e paciente encontrado caído (24 horas) ficaram fora do lote.
