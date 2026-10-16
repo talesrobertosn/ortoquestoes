@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react'
+import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
 import { haQuanto } from '../componentes/IndicadorSincronia'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
@@ -16,10 +16,10 @@ import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarLeitura, usarEtiquetas, usarRitmoRevisao } from '../estado/preferencias'
 import { usarTema } from '../estado/tema'
-import { dadosAceiteTermos } from '../conta/termos'
+import { dadosAceiteTermos, dataDaVersao, VERSAO_TERMOS } from '../conta/termos'
 import { AvisoTermos } from '../componentes/AvisoTermos'
 import { dadosOrigem } from '../conta/origem'
-import { eventoMeta } from '../conta/consentimento'
+import { abrirPreferenciasCookies, eventoMeta, PIXEL_META } from '../conta/consentimento'
 import { textoErro } from '../conta/erros'
 import { emailTrazido, esquecerEmailTrazido, guardarVoltar, rotaVoltar, tomarVoltar } from '../conta/passagem'
 import { gravarConfirmacaoPendente, lerConfirmacaoPendente, limparConfirmacaoPendente } from '../conta/confirmacaoPendente'
@@ -32,10 +32,12 @@ import { conquistaAtual, emblemaPorId } from '../estado/conquistas'
 import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { APELIDO_MAXIMO, usarPerfilRanking } from '../conta/perfilRanking'
-import { lerLocais, lerProvas, type ProvaInteresse } from '../conta/perfilEstudo'
+import { ANOS, SITUACOES, lerLocais, lerProvas, type ProvaInteresse } from '../conta/perfilEstudo'
 import { CampoServico, SERVICO_VARIOS } from '../componentes/CampoServico'
 import { CamposEtapa } from '../componentes/CamposEtapa'
 import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
+import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, type TipoAviso } from '../componentes/conta/PecasConta'
+import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
 import { fraseGratis } from '../config'
 
@@ -45,16 +47,57 @@ const ROTULOS_STATUS = {
 }
 const UFS = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO']
 const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 'Favorita', historico: 'Sessão' }
-const SECOES_CONTA = [['perfil', 'usuario', 'Perfil'], ['assinatura', 'medalha', 'Assinatura'], ['estudo', 'livro', 'Estudo'], ['ranking', 'trofeu', 'Ranking'], ['seguranca', 'cadeado', 'Segurança'], ['dados', 'baixar', 'Dados']] as const
+/** Seções de Minha conta: [id na URL (?secao=), ícone, nome, o que tem dentro]. */
+const SECOES_CONTA = [
+  ['perfil', 'usuario', 'Perfil', 'Nome, etapa, serviço e contato'],
+  ['assinatura', 'medalha', 'Assinatura e pagamentos', 'Plano, cobranças e garantia'],
+  ['preferencias', 'filtro', 'Preferências', 'Estudo, aparência e e-mails'],
+  ['ranking', 'trofeu', 'Ranking e privacidade', 'Apelido, emblemas e o que aparece'],
+  ['aparelhos', 'celular', 'Aparelhos e sincronização', 'Seu progresso em todo aparelho'],
+  ['seguranca', 'cadeado', 'Login e segurança', 'Senha e e-mail de acesso'],
+  ['dados', 'baixar', 'Dados e backup', 'Exportar e acompanhar o progresso'],
+  ['termos', 'livro', 'Termos e privacidade', 'Documentos, cookies e exclusão'],
+] as const
 type SecaoConta = (typeof SECOES_CONTA)[number][0]
+/** Endereços antigos que continuam valendo (ex.: "?secao=estudo" no menu e na página de planos). */
+const SECOES_ANTIGAS: Record<string, SecaoConta> = { estudo: 'preferencias' }
+function secaoDaConsulta(consulta?: URLSearchParams): SecaoConta | null {
+  const pedida = consulta?.get('secao') ?? ''
+  const id = SECOES_ANTIGAS[pedida] ?? pedida
+  return SECOES_CONTA.some(([s]) => s === id) ? id as SecaoConta : null
+}
+/** "Residente R3", "Ortopedista"… a partir do perfil salvo. */
+function rotuloEtapa(situacao: unknown, ano: unknown): string | null {
+  if (situacao === 'residente') { const a = ANOS.find(([v]) => v === ano)?.[1]; return a ? `Residente ${a}` : 'Residente de ortopedia' }
+  if (situacao === 'r4') return 'R4 ou fellowship'
+  return SITUACOES.find(([v]) => v === situacao)?.[1] ?? null
+}
+const MOVIMENTO_REDUZIDO = '(prefers-reduced-motion: reduce)'
+const CELULAR = '(max-width: 63.99rem)'
 
 export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao, recuperacao, encerrarRecuperacao, status, sincronizar, resolver, reenviarRejeitados, descartarRejeitados } = usarConta()
   const modoInicial = consulta?.get('modo')
-  const [secao, definirSecao] = useState<SecaoConta>(() => {
-    const pedida = consulta?.get('secao')
-    return SECOES_CONTA.some(([id]) => id === pedida) ? pedida as SecaoConta : 'perfil'
-  })
+  // A seção vem do endereço (#/conta?secao=ranking): o "voltar" do celular volta para a lista.
+  const aberta = secaoDaConsulta(consulta)
+  const secao: SecaoConta = aberta ?? 'perfil'
+  const corpoRef = useRef<HTMLDivElement>(null)
+  const primeiraSecao = useRef(true)
+  useEffect(() => {
+    const corpo = corpoRef.current
+    const inicio = primeiraSecao.current
+    primeiraSecao.current = false
+    if (!corpo || (inicio && !aberta)) return
+    const celular = window.matchMedia?.(CELULAR).matches
+    // No computador só rola se o começo da seção ficou para cima; no celular, sempre (a lista dá lugar à seção).
+    if (!celular && (inicio || corpo.getBoundingClientRect().top >= 0)) return
+    const suave = !window.matchMedia?.(MOVIMENTO_REDUZIDO).matches
+    corpo.scrollIntoView({ block: 'start', behavior: suave && !inicio ? 'smooth' : 'auto' })
+  }, [aberta])
+  // Resultado das ações (perfil salvo, senha alterada, erro ao salvar): aviso flutuante no pé da tela.
+  const [aviso, definirAviso] = useState<AvisoConta | null>(null)
+  const avisar = useCallback((texto: string, tipo: TipoAviso = 'ok') => definirAviso((a) => ({ texto, tipo, n: (a?.n ?? 0) + 1 })), [])
+  const fecharAviso = useCallback(() => definirAviso(null), [])
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
   )
@@ -104,12 +147,14 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   // null = ainda não sabemos (ou o banco não tem a preferência): o interruptor fica escondido.
   const [emailsConquistas, definirEmailsConquistas] = useState<boolean | null>(null)
   useEffect(() => { if (sessao?.user.id) void lerPreferenciaConquistas().then(definirEmailsConquistas) }, [sessao?.user.id])
+  const ERRO_PREFERENCIA = 'Não foi possível salvar a preferência de e-mail agora. Confira sua conexão e tente de novo.'
   const trocarEmailsConquistas = async (valor: boolean) => {
     definirEmailsConquistas(valor)
-    if (!await gravarPreferenciaConquistas(valor)) { definirEmailsConquistas(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
+    if (await gravarPreferenciaConquistas(valor)) return true
+    definirEmailsConquistas(!valor); avisar(ERRO_PREFERENCIA, 'erro'); return false
   }
   // Relatório mensal: só aparece para quem tem o plano (é quem recebe).
-  const { premium } = usarPremium()
+  const { premium, motivo } = usarPremium()
   const [relatorioMensal, definirRelatorioMensal] = useState<boolean | null>(null)
   useEffect(() => {
     if (!sessao?.user.id || !premium) return
@@ -117,19 +162,26 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   }, [sessao?.user.id, premium])
   const trocarRelatorioMensal = async (valor: boolean) => {
     definirRelatorioMensal(valor)
-    try { await chamarRpc('definir_preferencia_relatorio', { p_relatorio: valor }) }
-    catch { definirRelatorioMensal(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
+    try { await chamarRpc('definir_preferencia_relatorio', { p_relatorio: valor }); return true }
+    catch { definirRelatorioMensal(!valor); avisar(ERRO_PREFERENCIA, 'erro'); return false }
   }
+  // Nome do plano no selo do cabeçalho (só leitura; quem gerencia é ResumoAssinatura).
+  const [planoAtual, definirPlanoAtual] = useState<string | null>(null)
+  useEffect(() => {
+    if (!sessao?.user.id || !premium || motivo !== 'assinatura') return
+    chamarRpc<Array<{ plano: string | null }>>('obter_estado_conta', {}).then(([e]) => definirPlanoAtual(e?.plano ?? null)).catch(() => undefined)
+  }, [sessao?.user.id, premium, motivo])
   // Lembretes de estudo (3 e 7 dias sem aparecer): para todas as contas.
   const [lembretes, definirLembretes] = useState<boolean | null>(null)
+  const [preferenciasLidas, definirPreferenciasLidas] = useState(false)
   useEffect(() => {
     if (!sessao?.user.id) return
-    chamarRpc<boolean>('obter_preferencia_lembretes', {}).then((v) => definirLembretes(v !== false)).catch(() => undefined)
+    chamarRpc<boolean>('obter_preferencia_lembretes', {}).then((v) => definirLembretes(v !== false)).catch(() => undefined).finally(() => definirPreferenciasLidas(true))
   }, [sessao?.user.id])
   const trocarLembretes = async (valor: boolean) => {
     definirLembretes(valor)
-    try { await chamarRpc('definir_preferencia_lembretes', { p_lembretes: valor }) }
-    catch { definirLembretes(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
+    try { await chamarRpc('definir_preferencia_lembretes', { p_lembretes: valor }); return true }
+    catch { definirLembretes(!valor); avisar(ERRO_PREFERENCIA, 'erro'); return false }
   }
   // Cartas pessoais do Tales (parte 27): sem a parte colada, o interruptor não aparece.
   const [cartas, definirCartas] = useState<boolean | null>(null)
@@ -139,8 +191,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   }, [sessao?.user.id])
   const trocarCartas = async (valor: boolean) => {
     definirCartas(valor)
-    try { await chamarRpc('definir_preferencia_cartas', { p_cartas: valor }) }
-    catch { definirCartas(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
+    try { await chamarRpc('definir_preferencia_cartas', { p_cartas: valor }); return true }
+    catch { definirCartas(!valor); avisar(ERRO_PREFERENCIA, 'erro'); return false }
   }
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
@@ -165,6 +217,13 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [receberNovidades, definirReceberNovidades] = useState(Boolean(perfil.receber_novidades ?? false))
   const [aceitouTermos, definirAceitouTermos] = useState(false)
   const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
+  // Instante do último "Salvar perfil" que deu certo: o botão mostra "Salvo" por alguns segundos.
+  const [perfilSalvo, definirPerfilSalvo] = useState(0)
+  useEffect(() => {
+    if (!perfilSalvo) return
+    const t = window.setTimeout(() => definirPerfilSalvo(0), 2600)
+    return () => window.clearTimeout(t)
+  }, [perfilSalvo])
   const { perfil: perfilRanking, carregado: rankingCarregado, salvar: salvarPerfilRanking, nomeExibido: nomeExibidoRanking, nomeCadastro: nomeCadastroRanking } = usarPerfilRanking(sessao)
   const [apelidoRanking, definirApelidoRanking] = useState('')
   const [salvandoRanking, definirSalvandoRanking] = useState(false)
@@ -173,24 +232,25 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     definirSalvandoRanking(true)
     const erro = await salvarPerfilRanking({ apelido: texto.trim() || null })
     definirSalvandoRanking(false)
-    definirMensagem(erro ?? (texto.trim() ? 'Apelido salvo.' : 'Você volta a aparecer com o seu nome.'))
+    avisar(erro ?? (texto.trim() ? 'Apelido salvo.' : 'Você volta a aparecer com o seu nome.'), erro ? 'erro' : 'ok')
   }
   async function alterarParticipacao(participa: boolean) {
     definirSalvandoRanking(true)
     const erro = await salvarPerfilRanking({ participa })
     definirSalvandoRanking(false)
-    definirMensagem(erro ?? (participa ? 'Você voltou ao ranking.' : 'Você saiu do ranking.'))
+    avisar(erro ?? (participa ? 'Você voltou ao ranking.' : 'Você saiu do ranking.'), erro ? 'erro' : 'ok')
   }
   const respondidasConta = Object.keys(contexto.respondidas).length
   async function salvarPerfil() {
     if (!supabase || !sessao) return
     definirSalvandoPerfil(true)
     try {
-      if (!perfilCompleto()) return
+      if (!perfilCompleto((texto) => avisar(texto, 'erro'))) return
       const { error } = await supabase.auth.updateUser({ data: dadosPerfil() })
       if (error) throw error
-      definirMensagem('Perfil atualizado.')
-    } catch { definirMensagem('Não foi possível salvar o perfil agora.') }
+      avisar('Perfil atualizado.')
+      definirPerfilSalvo(Date.now())
+    } catch { avisar('Não foi possível salvar o perfil agora. Confira sua conexão e tente de novo.', 'erro') }
     finally { definirSalvandoPerfil(false) }
   }
   function perfilCompleto(avisar: (texto: string) => void = definirMensagem) {
@@ -358,23 +418,23 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     try {
       const { error } = await supabase.auth.updateUser({ email: novoEmail.trim() })
       if (error) throw error
-      definirMensagem('Enviamos a confirmação do novo e-mail. A alteração só vale depois de confirmar o link.')
+      avisar('Enviamos a confirmação do novo e-mail. A alteração só vale depois de confirmar o link.', 'info')
       definirNovoEmail('')
-    } catch (e) { definirMensagem(textoErro((e as { code?: string }).code)) }
+    } catch (e) { avisar(textoErro((e as { code?: string }).code), 'erro') }
     finally { definirOcupado(false) }
   }
   async function trocarSenha(e: FormEvent) {
     e.preventDefault()
     if (!supabase || ocupado || !sessao) return
-    if (novaSenha.length < 8) { definirMensagem('Use pelo menos 8 caracteres na nova senha.'); return }
-    if (novaSenha !== confirmacaoNovaSenha) { definirMensagem('As senhas não coincidem.'); return }
+    if (novaSenha.length < 8) { avisar('Use pelo menos 8 caracteres na nova senha.', 'erro'); return }
+    if (novaSenha !== confirmacaoNovaSenha) { avisar('As senhas não coincidem.', 'erro'); return }
     definirOcupado(true); definirMensagem('')
     try {
       const { error } = await supabase.auth.updateUser({ password: novaSenha })
       if (error) throw error
       definirNovaSenha(''); definirConfirmacaoNovaSenha('')
-      definirMensagem('Senha alterada com segurança.')
-    } catch (e) { definirMensagem(textoErro((e as { code?: string }).code)) }
+      avisar('Senha alterada com segurança.')
+    } catch (e) { avisar(textoErro((e as { code?: string }).code), 'erro') }
     finally { definirOcupado(false) }
   }
   function importar() {
@@ -386,7 +446,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       for (const [id, valor] of Object.entries(visitante)) if (!(id in conta) && !versoes[`${tipo}/${id}`]) conta[id] = valor
       gravar(tipo, deItens(tipo, conta))
     }
-    definirImportado(true); definirMensagem('Progresso de visitante importado. Os dados que já existiam na conta foram preservados.')
+    definirImportado(true); avisar('Progresso de visitante importado. Os dados que já existiam na conta foram preservados.')
   }
   const possuiVisitante = false
   const metricas = indice ? (() => {
@@ -498,8 +558,21 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       />}
     </div>
   }
-  const inicialNome = (nome.trim().charAt(0) || sessao.user.email?.charAt(0) || '?').toUpperCase()
+  const nomeCompleto = `${nome.trim()} ${sobrenome.trim()}`.trim()
+  const iniciais = ((nome.trim().charAt(0) + sobrenome.trim().charAt(0)) || sessao.user.email?.charAt(0) || '?').toUpperCase()
   const emblema = metricas ? conquistaAtual(metricas.respondidas) : null
+  const etapa = rotuloEtapa(perfil.situacao, perfil.ano_residencia)
+  const assinante = premium && motivo === 'assinatura'
+  const selo = assinante ? `Assinante${planoAtual ? ` · plano ${planoAtual}` : ''}`
+    : premium && motivo === 'cortesia' ? 'Acesso de cortesia'
+    : premium && motivo === 'administrador' ? 'Acesso de administrador'
+    : 'Plano gratuito'
+  const termosEmDia = perfil.termos_versao === VERSAO_TERMOS
+  const aceitoEm = typeof perfil.termos_aceitos_em === 'string' ? new Date(perfil.termos_aceitos_em) : null
+  // Perfil com alterações ainda não salvas (compara com o que está na conta).
+  const perfilAlterado = JSON.stringify([nome.trim(), sobrenome.trim(), nascimento, situacao, situacao === 'residente' ? anoResidencia : '', [...provas].sort(), servico.trim(), locaisLimpos(), whatsapp.trim(), cidade.trim(), uf, receberNovidades])
+    !== JSON.stringify([String(perfil.nome ?? '').trim(), String(perfil.sobrenome ?? '').trim(), String(perfil.nascimento ?? ''), String(perfil.situacao ?? ''), perfil.situacao === 'residente' ? String(perfil.ano_residencia ?? '') : '', [...lerProvas(perfil.provas_interesse)].sort(), String(perfil.servico ?? perfil.residencia ?? '').trim(), lerLocais(perfil.locais_trabalho), String(perfil.whatsapp ?? '').trim(), String(perfil.cidade ?? '').trim(), String(perfil.uf ?? ''), Boolean(perfil.receber_novidades ?? false)])
+  const textoSync = `${ROTULOS_STATUS[status.estado]}${status.estado === 'salvo' && status.ultimaSincronia ? ` ${haQuanto(status.ultimaSincronia)}` : ''}${status.pendentes > 0 ? ` · ${status.pendentes} ${status.pendentes === 1 ? 'pendente' : 'pendentes'}` : ''}`
   const sair = async () => {
     if (!supabase) return
     if (status.pendentes && !window.confirm('Ainda há alterações não sincronizadas. Elas ficarão neste navegador, disponíveis quando você entrar novamente nesta conta. Sair agora?')) return
@@ -508,35 +581,55 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       const { error } = await supabase.auth.signOut({ scope: 'local' })
       if (error) throw error
       definirMensagem('Você saiu da sua conta com segurança.')
-    } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
+    } catch { avisar('Não foi possível sair. Confira sua conexão e tente novamente.', 'erro') } finally { definirOcupado(false) }
   }
-  return <article className="empilha-2 conta-pagina ct">
-    <section className="ct-heroi">
+  const linkSecao = (id: SecaoConta) => href(`/conta?secao=${id}`)
+  /** Selo pequeno ao lado de cada seção na lista (o que pede atenção ou o estado atual). */
+  const seloSecao = (id: SecaoConta) => {
+    if (id === 'assinatura') return <span className={'ct-nav__selo' + (assinante ? ' ct-nav__selo--ouro' : '')}>{assinante ? 'Assinante' : 'Gratuito'}</span>
+    if (id === 'aparelhos') return <span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-label={ROTULOS_STATUS[status.estado]} />
+    if (id === 'termos' && !termosEmDia) return <span className="ct-nav__selo ct-nav__selo--aviso">Nova versão</span>
+    return null
+  }
+  const cabecalhoSecao = (icone: Parameters<typeof Icone>[0]['nome'], titulo: string, texto: string, classe = '') => <header className="ct-cartao__cabeca">
+    <span className={'ct-icone ' + classe}><Icone nome={icone} tamanho={18} /></span><div><h2>{titulo}</h2><p>{texto}</p></div>
+  </header>
+
+  return <article className="conta-pagina ct">
+    <section className="ct-heroi" aria-labelledby="ct-nome">
       <div className="ct-heroi__perfil">
-        <span className="ct-avatar" aria-hidden="true">{inicialNome}</span>
+        <span className={'ct-avatar' + (assinante ? ' ct-avatar--assinante' : '')} aria-hidden="true">
+          {iniciais}
+          {assinante && <span className="ct-avatar__coroa"><Icone nome="coroa" tamanho={13} /></span>}
+        </span>
         <div className="ct-heroi__nome">
-          <p className="ct-heroi__selo">Minha conta</p>
-          <h1>{nome.trim() ? `${nome.trim()} ${sobrenome.trim()}`.trim() : 'Sua conta'}</h1>
+          <p className="ct-heroi__rotulo">Minha conta</p>
+          <h1 id="ct-nome">{nomeCompleto || 'Sua conta'}</h1>
           <p className="ct-heroi__email">{sessao.user.email}</p>
-          <p className="ct-heroi__sync" role="status">
-            <span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" />
-            {ROTULOS_STATUS[status.estado]}{status.estado === 'salvo' && status.ultimaSincronia ? ` ${haQuanto(status.ultimaSincronia)}` : ''}{status.pendentes > 0 && ` · ${status.pendentes} ${status.pendentes === 1 ? 'pendente' : 'pendentes'}`}
-          </p>
-          {status.estado === 'erro' && status.detalhe && <p className="ct-heroi__erro">Motivo: {status.detalhe}</p>}
         </div>
       </div>
+      <ul className="ct-selos" aria-label="Resumo da conta">
+        <li><a className={'ct-selo' + (assinante ? ' ct-selo--ouro' : '')} href={linkSecao('assinatura')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={13} />{selo}</a></li>
+        {etapa && <li><a className="ct-selo" href={linkSecao('perfil')}><Icone nome="usuario" tamanho={13} />{etapa}</a></li>}
+        <li><a className="ct-selo ct-selo--sync" href={linkSecao('aparelhos')}><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /><span aria-live="polite">{textoSync}</span></a></li>
+      </ul>
       <div className="ct-heroi__acoes">
-        <button className="botao botao--vidro" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> Sincronizar</button>
-        <button className="botao botao--vidro" disabled={ocupado} onClick={() => void sair()}>Sair da conta</button>
-        {administrador && <a className="botao botao--vidro" href={href('/admin')}><Icone nome="grafico" tamanho={16} /> Painel do admin</a>}
+        <button className={'botao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar'}</button>
+        {administrador && <a className="botao" href={href('/admin')}><Icone nome="grafico" tamanho={16} /> Painel do admin</a>}
       </div>
-      <p className="ct-heroi__aparelho"><Icone nome="celular" tamanho={14} /> Conectada neste aparelho ({descreverAparelho()}). A conta fica aberta em um aparelho por vez.</p>
-      {metricas && <dl className="ct-heroi__numeros">
+      {metricas && <dl className="ct-numeros">
         <a href={href('/dados')}><dt>Questões respondidas</dt><dd>{metricas.respondidas.toLocaleString('pt-BR')}{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={22} titulo={`Emblema ${emblema.rotulo}`} /></span>}</dd></a>
         <a href={href('/revisao')}><dt>Revisões programadas</dt><dd>{metricas.pendentes.toLocaleString('pt-BR')}</dd></a>
         <a href={href('/dados')}><dt>Acerto acumulado</dt><dd>{metricas.acerto === null ? '0%' : `${metricas.acerto}%`}</dd></a>
       </dl>}
+      <nav className="ct-atalhos" aria-label="Atalhos">
+        <a href={href('/treinar')}><IconePixel nome="treinar" tamanho={32} /><span>Treinar</span></a>
+        <a href={href('/dados')}><IconePixel nome="desempenho" tamanho={32} /><span>Desempenho</span></a>
+        <a href={href('/ranking')}><IconePixel nome="ranking" tamanho={32} /><span>Ranking</span></a>
+        <a href={href(assinante ? '/conta/assinatura' : '/assinatura')}><IconePixel nome="planos" tamanho={32} /><span>{assinante ? 'Assinatura' : 'Planos'}</span></a>
+      </nav>
     </section>
+
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
 
     <AvisoTermos variante="cartao" />
@@ -554,95 +647,193 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       </div>
     </section>}
 
-    <div className="ct-corpo">
-    {/* Uma seção por vez: a navegação troca o que aparece, em vez de rolar uma página longa. */}
-    <nav className="ct-nav" aria-label="Seções da conta">
-      {SECOES_CONTA.map(([id, icone, rotulo]) => (
-        <a key={id} href={href(`/conta?secao=${id}`)} aria-current={secao === id ? 'page' : undefined} onClick={(e) => { e.preventDefault(); definirSecao(id) }}><Icone nome={icone} tamanho={16} /> {rotulo}</a>
-      ))}
-    </nav>
-    <div className="ct-grade">
-      {secao === 'perfil' && <section id="ct-perfil" className="ct-cartao ct-cartao--largo">
-        <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="usuario" tamanho={18} /></span><div><h2>Meu perfil</h2><p>Personaliza sua experiência. Seu contato nunca é exibido publicamente.</p></div></header>
-        <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
-        <label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
-        <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} />
-        <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} locais={locais} aoMudarLocais={definirLocais} />
-        <OpcaoServicoRanking sessao={sessao} compacta noPerfil />
-        <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
-        <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label></div>
-        <p className="texto-2">WhatsApp, cidade e UF são opcionais. Usamos seus dados de perfil para personalizar sua experiência e nunca exibimos seu contato publicamente.</p>
-        <button className="botao botao--principal" type="button" onClick={salvarPerfil} disabled={salvandoPerfil}>{salvandoPerfil ? 'Salvando…' : 'Salvar perfil'}</button>
-      </section>}
-      {secao === 'assinatura' && <div id="ct-assinatura" className="ct-ancora"><ResumoAssinatura /></div>}
-      {secao === 'estudo' && <section id="ct-estudo" className="ct-cartao">
-        <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="livro" tamanho={18} /></span><div><h2>Preferências de estudo</h2><p>Leitura, tema e meta de revisão.</p></div></header>
-        <div className="ct-opcao"><span className="ct-opcao__rotulo">Revisões por dia</span><div className="ct-seg" aria-label="Revisões por dia">{([15, 20, 30, 50, null] as const).map(limite => <button type="button" key={String(limite)} aria-pressed={ritmo.limite === limite} onClick={() => definirRitmo({ ...ritmo, limite })}>{limite === null ? 'Sem teto' : `${limite}/dia`}</button>)}</div></div>
-        <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
-        <div className="ct-opcao"><span className="ct-opcao__rotulo">Tema</span><div className="ct-seg">{([['claro', 'Claro'], ['escuro', 'Escuro']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}>{rotulo}</button>)}</div></div>
-        <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
-        <label className="ct-interruptor"><input type="checkbox" checked={mostrarEtiquetas} onChange={e => definirEtiquetas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Mostrar a etiqueta do assunto antes de responder</span></label>
-        {emailsConquistas !== null && <label className="ct-interruptor"><input type="checkbox" checked={emailsConquistas} onChange={e => void trocarEmailsConquistas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber e-mail de parabéns quando eu desbloquear um emblema</span></label>}
-        {relatorioMensal !== null && <label className="ct-interruptor"><input type="checkbox" checked={relatorioMensal} onChange={e => void trocarRelatorioMensal(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber os resumos de estudo por e-mail: a cada 15 dias, quantas questões você fez, o acerto e o próximo passo (assinantes também recebem o relatório do mês)</span></label>}
-        {lembretes !== null && <label className="ct-interruptor"><input type="checkbox" checked={lembretes} onChange={e => void trocarLembretes(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber lembretes de estudo quando eu ficar alguns dias sem aparecer</span></label>}
-        {cartas !== null && <label className="ct-interruptor"><input type="checkbox" checked={cartas} onChange={e => void trocarCartas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber, de vez em quando, uma mensagem pessoal do Tales sobre o meu estudo</span></label>}
-      </section>}
-      {secao === 'ranking' && <section id="ct-ranking" className="ct-cartao">
-        <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--ouro"><Icone nome="trofeu" tamanho={18} /></span><div><h2>Ranking</h2><p>Conta questões respondidas, não acerto.</p></div></header>
-        {!rankingCarregado ? <p className="texto-2">Carregando…</p> : <>
-          <div className={'ct-status' + (perfilRanking.participa && respondidasConta >= MINIMO_RANKING ? ' ct-status--ativo' : '')}>
-            <span className="ct-status__ponto" aria-hidden="true" />
-            {!perfilRanking.participa ? 'Você saiu do ranking'
-              : respondidasConta >= MINIMO_RANKING ? 'Você está no ranking'
-              : `Você entra no ranking ao responder ${MINIMO_RANKING} questões (faltam ${MINIMO_RANKING - respondidasConta})`}
+    {/* Computador: lista à esquerda e uma seção por vez. Celular: a lista é a tela inicial e cada seção abre por cima dela (o "voltar" do aparelho volta à lista). */}
+    <div ref={corpoRef} className={'ct-corpo' + (aberta ? ' ct-corpo--aberta' : '')}>
+      <nav className="ct-nav" aria-label="Seções da conta">
+        <ul>
+          {SECOES_CONTA.map(([id, icone, rotulo, descricao]) => <li key={id}>
+            <a href={linkSecao(id)} aria-current={secao === id ? 'page' : undefined} data-aberta={aberta === id || undefined}>
+              <span className="ct-nav__icone"><Icone nome={icone} tamanho={17} /></span>
+              <span className="ct-nav__texto"><strong>{rotulo}</strong><small>{descricao}</small></span>
+              {seloSecao(id)}
+              <Icone nome="direita" tamanho={16} />
+            </a>
+          </li>)}
+        </ul>
+        <button className="ct-nav__sair" type="button" disabled={ocupado} onClick={() => void sair()}><span className="ct-nav__icone"><Icone nome="esquerda" tamanho={17} /></span><span className="ct-nav__texto"><strong>Sair da conta</strong><small>Neste aparelho ({descreverAparelho()})</small></span></button>
+      </nav>
+
+      <div className="ct-painel" key={secao}>
+        <a className="ct-voltar" href={href('/conta')}><Icone nome="esquerda" tamanho={16} /> Minha conta</a>
+
+        {secao === 'perfil' && <section id="ct-perfil" className="ct-cartao">
+          {cabecalhoSecao('usuario', 'Perfil', 'Personaliza sua experiência. Seu contato nunca é exibido publicamente.')}
+          <fieldset className="ct-grupo">
+            <legend>Quem é você</legend>
+            <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" required minLength={2} autoComplete="given-name" value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" required minLength={2} autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
+            <label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
+          </fieldset>
+          <fieldset className="ct-grupo">
+            <legend>Etapa e provas</legend>
+            <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} />
+          </fieldset>
+          <fieldset className="ct-grupo">
+            <legend>Onde você atua</legend>
+            <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} locais={locais} aoMudarLocais={definirLocais} />
+            <OpcaoServicoRanking sessao={sessao} compacta noPerfil />
+          </fieldset>
+          <fieldset className="ct-grupo">
+            <legend>Contato <span className="meta">(opcional)</span></legend>
+            <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
+            <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label></div>
+            <p className="ct-nota">WhatsApp, cidade e UF são opcionais. Usamos seus dados de perfil para personalizar sua experiência e nunca exibimos seu contato publicamente.</p>
+          </fieldset>
+          <div className={'ct-salvar' + (perfilAlterado || salvandoPerfil ? ' ct-salvar--pendente' : '')}>
+            <p className={'ct-salvar__estado' + (perfilAlterado ? ' ct-salvar__estado--pendente' : '')} aria-live="polite">
+              {salvandoPerfil ? 'Salvando suas alterações…' : perfilSalvo ? <><Icone nome="certo" tamanho={14} /> Perfil salvo na sua conta.</> : perfilAlterado ? 'Há alterações ainda não salvas.' : 'Tudo salvo.'}
+            </p>
+            <button className={'botao botao--principal' + (perfilSalvo ? ' ct-botao--salvo' : '')} type="button" onClick={salvarPerfil} disabled={salvandoPerfil}>{salvandoPerfil ? 'Salvando…' : perfilSalvo ? <><Icone nome="certo" tamanho={16} /> Salvo</> : 'Salvar perfil'}</button>
           </div>
-          {perfilRanking.participa && <>
-            <label className="campo">Seu apelido no ranking
-              <input className="entrada" maxLength={APELIDO_MAXIMO} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={nomeCadastroRanking} />
-            </label>
-            <p className="ct-nome-ranking">Você aparece como: <strong>{nomeExibidoRanking}</strong></p>
+        </section>}
+
+        {secao === 'assinatura' && <div className="ct-pilha">
+          <div id="ct-assinatura" className="ct-ancora"><ResumoAssinatura /></div>
+          <section className="ct-cartao ct-cartao--suave">
+            {cabecalhoSecao('medalha', 'Pagamentos, renovação e garantia', 'Datas, cobranças e as escolhas da sua assinatura ficam em Dados da assinatura.', 'ct-icone--ouro')}
+            <ul className="ct-links">
+              <li><a href={href('/conta/assinatura')}><Icone nome="calendario" tamanho={17} /><span><strong>Dados da assinatura</strong><small>Próxima cobrança, última cobrança, impedir a renovação ou pedir o reembolso dentro da garantia.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+              <li><a href={href('/condicoes-assinatura')}><Icone nome="livro" tamanho={17} /><span><strong>Condições da assinatura</strong><small>Regras de cancelamento, garantia e reembolso.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+              <li><a href={href('/contato?assunto=assinatura')}><Icone nome="correio" tamanho={17} /><span><strong>Falar sobre uma cobrança</strong><small>Plano, renovação, cancelamento ou reembolso.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+            </ul>
+          </section>
+        </div>}
+
+        {secao === 'preferencias' && <div className="ct-pilha">
+          <section id="ct-estudo" className="ct-cartao">
+            {cabecalhoSecao('livro', 'Estudo', 'Meta de revisão e como as questões aparecem. Vale na hora.')}
+            <div className="ct-opcao"><span className="ct-opcao__rotulo">Revisões por dia</span><div className="ct-seg" aria-label="Revisões por dia">{([15, 20, 30, 50, null] as const).map(limite => <button type="button" key={String(limite)} aria-pressed={ritmo.limite === limite} onClick={() => definirRitmo({ ...ritmo, limite })}>{limite === null ? 'Sem teto' : `${limite}/dia`}</button>)}</div></div>
+            <InterruptorLocal ligado={mostrarEtiquetas} aoMudar={definirEtiquetas}>Mostrar a etiqueta do assunto antes de responder</InterruptorLocal>
+          </section>
+          <section className="ct-cartao">
+            {cabecalhoSecao('sol', 'Leitura e aparência', 'Tema, densidade e tamanho da fonte neste aparelho.')}
+            <div className="ct-opcao"><span className="ct-opcao__rotulo">Tema</span><div className="ct-seg ct-seg--tema">{([['claro', 'Claro', 'sol'], ['escuro', 'Escuro', 'lua']] as const).map(([valor, rotulo, icone]) => <button key={valor} type="button" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}><Icone nome={icone} tamanho={15} /> {rotulo}</button>)}</div></div>
+            <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
+            <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
+            <p className="ct-amostra" style={{ fontSize: `${fonte}%` }}>Prévia: é assim que o enunciado das questões aparece.</p>
+          </section>
+          <section className="ct-cartao">
+            {cabecalhoSecao('correio', 'E-mails e mensagens', 'Escolha o que chega no seu e-mail. Cada mudança é salva na hora.')}
+            {emailsConquistas === null && relatorioMensal === null && lembretes === null && cartas === null
+              ? <p className="ct-nota" role="status">{preferenciasLidas ? 'Não foi possível carregar as preferências de e-mail agora. Atualize a página para tentar de novo.' : <span className="ct-carregando">Carregando suas preferências…</span>}</p>
+              : <div className="ct-prefs">
+                {emailsConquistas !== null && <InterruptorSalvo ligado={emailsConquistas} aoMudar={trocarEmailsConquistas}>Receber e-mail de parabéns quando eu desbloquear um emblema</InterruptorSalvo>}
+                {relatorioMensal !== null && <InterruptorSalvo ligado={relatorioMensal} aoMudar={trocarRelatorioMensal}>Receber os resumos de estudo por e-mail: a cada 15 dias, quantas questões você fez, o acerto e o próximo passo (assinantes também recebem o relatório do mês)</InterruptorSalvo>}
+                {lembretes !== null && <InterruptorSalvo ligado={lembretes} aoMudar={trocarLembretes}>Receber lembretes de estudo quando eu ficar alguns dias sem aparecer</InterruptorSalvo>}
+                {cartas !== null && <InterruptorSalvo ligado={cartas} aoMudar={trocarCartas}>Receber, de vez em quando, uma mensagem pessoal do Tales sobre o meu estudo</InterruptorSalvo>}
+              </div>}
+          </section>
+        </div>}
+
+        {secao === 'ranking' && <section id="ct-ranking" className="ct-cartao">
+          {cabecalhoSecao('trofeu', 'Ranking e privacidade', 'Conta questões respondidas, não acerto.', 'ct-icone--ouro')}
+          {!rankingCarregado ? <p className="ct-nota" role="status"><span className="ct-carregando">Carregando…</span></p> : <>
+            <div className={'ct-status' + (perfilRanking.participa && respondidasConta >= MINIMO_RANKING ? ' ct-status--ativo' : '')}>
+              <span className="ct-status__ponto" aria-hidden="true" />
+              {!perfilRanking.participa ? 'Você saiu do ranking'
+                : respondidasConta >= MINIMO_RANKING ? 'Você está no ranking'
+                : `Você entra no ranking ao responder ${MINIMO_RANKING} questões (faltam ${MINIMO_RANKING - respondidasConta})`}
+            </div>
+            {perfilRanking.participa && <div className="ct-apelido">
+              <label className="campo">Seu apelido no ranking
+                <input className="entrada" maxLength={APELIDO_MAXIMO} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={nomeCadastroRanking} />
+              </label>
+              <p className="ct-nome-ranking">Você aparece como: <strong>{nomeExibidoRanking}</strong></p>
+            </div>}
+            <div className="linha">
+              {perfilRanking.participa ? <>
+                <button className="botao botao--principal" type="button" onClick={() => void salvarApelido(apelidoRanking)} disabled={salvandoRanking || apelidoRanking.trim() === (perfilRanking.apelido ?? '')}>{salvandoRanking ? 'Salvando…' : 'Salvar apelido'}</button>
+                {perfilRanking.apelido && <button className="botao botao--fantasma" type="button" onClick={() => { definirApelidoRanking(''); void salvarApelido('') }} disabled={salvandoRanking}>Usar meu nome</button>}
+                <button className="botao botao--fantasma" type="button" onClick={() => { if (window.confirm('Sair do ranking? Seu nome deixa de aparecer para os outros. Você pode voltar quando quiser.')) void alterarParticipacao(false) }} disabled={salvandoRanking}>Sair do ranking</button>
+              </> : <button className="botao botao--principal" type="button" onClick={() => void alterarParticipacao(true)} disabled={salvandoRanking}>{salvandoRanking ? 'Salvando…' : 'Voltar ao ranking'}</button>}
+              <a className="botao botao--fantasma" href={href('/ranking')}>Ver ranking</a>
+            </div>
+            <a className="ct-vitrine" href={href('/conquistas?escolher=1')}>
+              <span className="ct-vitrine__slots">{[0, 1, 2].map((i) => { const e = emblemaPorId(perfilRanking.emblemas[i] ?? ''); return <span key={i} className="ct-vitrine__slot">{e ? <Medalha conquista={e} tamanho={32} /> : <Icone nome="estrela" tamanho={16} />}</span> })}</span>
+              <span><strong>{perfilRanking.emblemas.length ? 'Trocar os emblemas do meu nome' : 'Escolher 3 emblemas para o meu nome'}</strong><small>Eles aparecem ao lado do seu nome no ranking.</small></span>
+              <Icone nome="direita" tamanho={16} />
+            </a>
+            <p className="ct-nota">Deixe o apelido em branco para aparecer com o seu nome e a inicial do sobrenome. E-mail, WhatsApp e cidade nunca aparecem.</p>
           </>}
-          <div className="linha">
-            {perfilRanking.participa ? <>
-              <button className="botao botao--principal" type="button" onClick={() => void salvarApelido(apelidoRanking)} disabled={salvandoRanking || apelidoRanking.trim() === (perfilRanking.apelido ?? '')}>Salvar apelido</button>
-              {perfilRanking.apelido && <button className="botao botao--fantasma" type="button" onClick={() => { definirApelidoRanking(''); void salvarApelido('') }} disabled={salvandoRanking}>Usar meu nome</button>}
-              <button className="botao botao--fantasma" type="button" onClick={() => { if (window.confirm('Sair do ranking? Seu nome deixa de aparecer para os outros. Você pode voltar quando quiser.')) void alterarParticipacao(false) }} disabled={salvandoRanking}>Sair do ranking</button>
-            </> : <button className="botao botao--principal" type="button" onClick={() => void alterarParticipacao(true)} disabled={salvandoRanking}>Voltar ao ranking</button>}
-            <a className="botao botao--fantasma" href={href('/ranking')}>Ver ranking</a>
+        </section>}
+
+        {secao === 'aparelhos' && <section className="ct-cartao">
+          {cabecalhoSecao('celular', 'Aparelhos e sincronização', 'Respostas, revisões, favoritas, anotações e histórico acompanham você em qualquer aparelho.')}
+          <div className={`ct-sincronia ct-sincronia--${status.estado}`} role="status">
+            <span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" />
+            <div>
+              <strong>{textoSync}</strong>
+              {status.estado === 'erro' && status.detalhe && <small>Motivo: {status.detalhe}</small>}
+            </div>
+            <button className={'botao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar agora'}</button>
           </div>
-          <a className="ct-vitrine" href={href('/conquistas?escolher=1')}>
-            <span className="ct-vitrine__slots">{[0, 1, 2].map((i) => { const e = emblemaPorId(perfilRanking.emblemas[i] ?? ''); return <span key={i} className="ct-vitrine__slot">{e ? <Medalha conquista={e} tamanho={32} /> : <Icone nome="estrela" tamanho={16} />}</span> })}</span>
-            <span><strong>{perfilRanking.emblemas.length ? 'Trocar os emblemas do meu nome' : 'Escolher 3 emblemas para o meu nome'}</strong><small>Eles aparecem ao lado do seu nome no ranking.</small></span>
-            <Icone nome="direita" tamanho={16} />
-          </a>
-          <p className="ct-nota">Deixe o apelido em branco para aparecer com o seu nome e a inicial do sobrenome. E-mail, WhatsApp e cidade nunca aparecem.</p>
-        </>}
-      </section>}
-      {secao === 'seguranca' && <section id="ct-seguranca" className="ct-cartao">
-        <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="alerta" tamanho={18} /></span><div><h2>Segurança</h2><p>Trocar o e-mail exige confirmação pelo novo endereço.</p></div></header>
-        <form className="empilha" onSubmit={e => void trocarSenha(e)}>
-          <label className="campo">Nova senha<input className="entrada" type="password" autoComplete="new-password" minLength={8} required value={novaSenha} onChange={e => definirNovaSenha(e.target.value)} /></label>
-          <label className="campo">Confirmar nova senha<input className="entrada" type="password" autoComplete="new-password" minLength={8} required value={confirmacaoNovaSenha} onChange={e => definirConfirmacaoNovaSenha(e.target.value)} /></label>
-          <p className="ct-nota">Use pelo menos 8 caracteres. A nova senha é enviada diretamente ao Supabase e não é salva no progresso.</p>
-          <button className="botao botao--principal" type="submit" disabled={ocupado || !novaSenha || !confirmacaoNovaSenha}>Alterar senha</button>
-        </form>
-        <label className="campo">Novo e-mail<input className="entrada" type="email" value={novoEmail} onChange={e => definirNovoEmail(e.target.value)} placeholder="novo@email.com" /></label>
-        <div className="linha"><button className="botao botao--principal" type="button" onClick={() => void trocarEmail()} disabled={ocupado || !novoEmail.trim()}>Trocar e-mail</button></div>
-        <p className="ct-nota">Conta criada em {new Date(sessao.user.created_at).toLocaleDateString('pt-BR')}. Quer apagar tudo? <a href={href('/contato?assunto=exclusao-conta')}>Solicitar exclusão da conta</a>.</p>
-      </section>}
-      {secao === 'dados' && <section id="ct-dados" className="ct-cartao">
-        <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="baixar" tamanho={18} /></span><div><h2>Dados e backup</h2><p>Exporte seu progresso ou comece do zero.</p></div></header>
-        <p className="texto-2">Respostas, revisões, favoritas, anotações e histórico ficam na sua conta e acompanham você em qualquer aparelho. A sessão em andamento fica neste dispositivo.</p>
-        <div className="linha"><a className="botao" href={href('/dados')}>Desempenho e backup</a><a className="botao botao--fantasma" href={href('/revisao')}>Minha revisão</a></div>
-      </section>}
-    </div>
+          <div className="ct-aparelho">
+            <span className="ct-icone"><Icone nome="celular" tamanho={18} /></span>
+            <div><strong>Este aparelho</strong><small>Conectada neste aparelho ({descreverAparelho()}). A conta fica aberta em um aparelho por vez.</small></div>
+          </div>
+          <p className="ct-nota">A sessão de questões em andamento fica neste dispositivo. {status.rejeitados.length > 0 && <a href="#itens-nao-enviados" onClick={(e) => { e.preventDefault(); document.getElementById('itens-nao-enviados')?.scrollIntoView({ block: 'start' }) }}>Ver itens não enviados</a>}</p>
+        </section>}
+
+        {secao === 'seguranca' && <section id="ct-seguranca" className="ct-cartao">
+          {cabecalhoSecao('cadeado', 'Login e segurança', 'Trocar o e-mail exige confirmação pelo novo endereço.')}
+          <form className="ct-grupo" onSubmit={e => void trocarSenha(e)}>
+            <p className="ct-grupo__titulo">Senha</p>
+            <label className="campo">Nova senha<input className="entrada" type="password" autoComplete="new-password" minLength={8} required value={novaSenha} onChange={e => definirNovaSenha(e.target.value)} /></label>
+            <label className="campo">Confirmar nova senha<input className="entrada" type="password" autoComplete="new-password" minLength={8} required value={confirmacaoNovaSenha} onChange={e => definirConfirmacaoNovaSenha(e.target.value)} /></label>
+            <p className="ct-nota">Use pelo menos 8 caracteres. A nova senha é enviada diretamente ao Supabase e não é salva no progresso.</p>
+            <button className="botao botao--principal" type="submit" disabled={ocupado || !novaSenha || !confirmacaoNovaSenha}>{ocupado && novaSenha ? 'Alterando…' : 'Alterar senha'}</button>
+          </form>
+          <div className="ct-grupo">
+            <p className="ct-grupo__titulo">E-mail de acesso</p>
+            <p className="ct-nota">Hoje: <strong>{sessao.user.email}</strong></p>
+            <label className="campo">Novo e-mail<input className="entrada" type="email" value={novoEmail} onChange={e => definirNovoEmail(e.target.value)} placeholder="novo@email.com" /></label>
+            <div className="linha"><button className="botao botao--principal" type="button" onClick={() => void trocarEmail()} disabled={ocupado || !novoEmail.trim()}>{ocupado && novoEmail.trim() ? 'Enviando…' : 'Trocar e-mail'}</button></div>
+          </div>
+          <p className="ct-nota">Conta criada em {new Date(sessao.user.created_at).toLocaleDateString('pt-BR')}.</p>
+        </section>}
+
+        {secao === 'dados' && <section id="ct-dados" className="ct-cartao">
+          {cabecalhoSecao('baixar', 'Dados e backup', 'Exporte seu progresso ou comece do zero.')}
+          <p className="texto-2">Respostas, revisões, favoritas, anotações e histórico ficam na sua conta e acompanham você em qualquer aparelho. A sessão em andamento fica neste dispositivo.</p>
+          <ul className="ct-links">
+            <li><a href={href('/dados')}><Icone nome="grafico" tamanho={17} /><span><strong>Desempenho e backup</strong><small>Seus números por tema e por prova, e o arquivo com todo o seu progresso.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+            <li><a href={href('/revisao')}><Icone nome="calendario" tamanho={17} /><span><strong>Minha revisão</strong><small>As questões que voltam para você revisar.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+          </ul>
+        </section>}
+
+        {secao === 'termos' && <section className="ct-cartao">
+          {cabecalhoSecao('livro', 'Termos e privacidade', 'Os documentos que valem para a sua conta e como exercer seus direitos.')}
+          <div className={'ct-status' + (termosEmDia ? ' ct-status--ativo' : ' ct-status--aviso')}>
+            <span className="ct-status__ponto" aria-hidden="true" />
+            {termosEmDia
+              ? `Você concordou com a versão de ${dataDaVersao(VERSAO_TERMOS)}${aceitoEm && !Number.isNaN(aceitoEm.getTime()) ? ` em ${aceitoEm.toLocaleDateString('pt-BR')}` : ''}.`
+              : 'Há uma versão nova dos Termos para ler. O aviso fica no topo desta página.'}
+          </div>
+          <ul className="ct-links">
+            <li><a href={href('/termos')}><Icone nome="livro" tamanho={17} /><span><strong>Termos de Uso e Privacidade</strong><small>Como o site funciona e como cuidamos dos seus dados.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+            <li><a href={href('/condicoes-assinatura')}><Icone nome="medalha" tamanho={17} /><span><strong>Condições da assinatura</strong><small>Planos, renovação, cancelamento e garantia.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+            {PIXEL_META && <li><button type="button" onClick={abrirPreferenciasCookies}><Icone nome="olho" tamanho={17} /><span><strong>Cookies</strong><small>Rever a sua escolha sobre os cookies de medição.</small></span><Icone nome="direita" tamanho={16} /></button></li>}
+            <li><a href={href('/contato?assunto=exclusao-conta')}><Icone nome="lixeira" tamanho={17} /><span><strong>Solicitar exclusão da conta</strong><small>Quer apagar tudo? O pedido é feito pelo suporte.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+          </ul>
+        </section>}
+      </div>
     </div>
 
-      {possuiVisitante && !importado && <section className="cartao cartao__corpo empilha"><h2>Você já estudou neste navegador</h2><p>Importe o progresso de visitante para esta conta. Só serão acrescentados itens que ainda não existem nela. Em um dispositivo compartilhado, importe apenas se esse progresso for seu.</p><button className="botao botao--principal" onClick={importar} disabled={!status.pronto}>Importar meu progresso de visitante</button></section>}
-      {status.conflitos.length > 0 && <section className="empilha"><h2>Confira as alterações simultâneas</h2><p>Este item mudou em outro dispositivo antes de sua alteração chegar. Escolha qual versão manter.</p>
-        {status.conflitos.map(doc => <div className="cartao cartao__corpo empilha" key={`${doc.tipo}/${doc.item}`}><h3>{ROTULOS_TIPO[doc.tipo]} · {doc.item}</h3>
-          <details><summary>Comparar versões</summary><p>Versão deste navegador</p><pre>{JSON.stringify(itens(doc.tipo, ler(doc.tipo, null))[doc.item] ?? null, null, 2)}</pre><p>Versão da conta</p><pre>{JSON.stringify(doc.valor, null, 2)}</pre></details>
-          <div className="linha"><button className="botao" onClick={() => resolver(doc, true)}>Manter deste navegador</button><button className="botao" onClick={() => resolver(doc, false)}>Usar versão da conta</button></div></div>)}
-      </section>}
+    {possuiVisitante && !importado && <section className="cartao cartao__corpo empilha"><h2>Você já estudou neste navegador</h2><p>Importe o progresso de visitante para esta conta. Só serão acrescentados itens que ainda não existem nela. Em um dispositivo compartilhado, importe apenas se esse progresso for seu.</p><button className="botao botao--principal" onClick={importar} disabled={!status.pronto}>Importar meu progresso de visitante</button></section>}
+    {status.conflitos.length > 0 && <section className="empilha"><h2>Confira as alterações simultâneas</h2><p>Este item mudou em outro dispositivo antes de sua alteração chegar. Escolha qual versão manter.</p>
+      {status.conflitos.map(doc => <div className="cartao cartao__corpo empilha" key={`${doc.tipo}/${doc.item}`}><h3>{ROTULOS_TIPO[doc.tipo]} · {doc.item}</h3>
+        <details><summary>Comparar versões</summary><p>Versão deste navegador</p><pre>{JSON.stringify(itens(doc.tipo, ler(doc.tipo, null))[doc.item] ?? null, null, 2)}</pre><p>Versão da conta</p><pre>{JSON.stringify(doc.valor, null, 2)}</pre></details>
+        <div className="linha"><button className="botao" onClick={() => resolver(doc, true)}>Manter deste navegador</button><button className="botao" onClick={() => resolver(doc, false)}>Usar versão da conta</button></div></div>)}
+    </section>}
+    <AvisoFlutuante aviso={aviso} aoFechar={fecharAviso} />
   </article>
 }
