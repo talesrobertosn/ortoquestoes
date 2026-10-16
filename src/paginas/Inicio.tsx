@@ -398,10 +398,10 @@ export function Inicio() {
           {revisarHoje > 0 && <b className="ip-atalho__contador numerico">{revisarHoje > 99 ? '99+' : revisarHoje}</b>}
         </a>
         {FLASHCARDS_NA_CAPA && <>
-          <a className="ip-atalho ip-atalho--arte" href={href('/flashcards/biblioteca')} style={{ '--arte': urlCss('flashcards/promo/cartao-biblioteca.png') } as CSSProperties}>
+          <a className="ip-atalho ip-atalho--arte" href={href('/flashcards/biblioteca')} style={{ '--arte': urlCss('pixel/inicio/atalho-biblioteca.png') } as CSSProperties}>
             <span><strong>Estudar flashcards</strong><small>Revisão espaçada</small></span>
           </a>
-          <a className="ip-atalho ip-atalho--arte ip-atalho--jogo" href={href('/flashcards/cripta')} style={{ '--arte': urlCss('flashcards/promo/cartao-cripta.png') } as CSSProperties}>
+          <a className="ip-atalho ip-atalho--arte ip-atalho--jogo" href={href('/flashcards/cripta')} style={{ '--arte': urlCss('pixel/inicio/atalho-cripta.png') } as CSSProperties}>
             <span><strong>Jogar o Torneio</strong><small>Flashcards · Beta</small></span>
           </a>
         </>}

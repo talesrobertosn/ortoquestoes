@@ -153,24 +153,44 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 .ip-seq__topo { display: flex; align-items: center; gap: 1rem; isolation: isolate; }
+/* Fogueira por estágios (scripts/gerar_fogueira_inicio.py): 4 quadros x 8 linhas de 32x36, ampliada 3x.
+   --linha escolhe o estágio; cada estágio tem a cor do brilho e dos dias feitos (--ip-fogo, --ip-fogo-2). */
+.ip-seq { --ip-fogo: 255, 176, 64; --ip-fogo-2: 242, 131, 42; }
+.ip-seq--cinzas { --ip-fogo: 150, 160, 165; --ip-fogo-2: 110, 118, 122; }
+.ip-seq--labareda { --ip-fogo: 255, 190, 70; --ip-fogo-2: 248, 120, 34; }
+.ip-seq--fogareu { --ip-fogo: 255, 222, 120; --ip-fogo-2: 255, 140, 40; }
+.ip-seq--azul { --ip-fogo: 110, 190, 255; --ip-fogo-2: 50, 110, 240; }
+.ip-seq--arcana { --ip-fogo: 200, 140, 255; --ip-fogo-2: 130, 60, 220; }
+.ip-seq--lendaria { --ip-fogo: 255, 220, 110; --ip-fogo-2: 220, 150, 30; }
 .ip-fogueira {
-  position: relative; flex: none; width: 72px; height: 84px;
-  background: var(--sprite) 0 0 / 288px 84px no-repeat; image-rendering: pixelated;
-  animation: ip-fogo-quadros 0.62s steps(4) infinite;
+  --q: 96px; --a: 108px;
+  position: relative; flex: none; width: var(--q); height: var(--a); margin: -0.4rem -0.3rem -0.2rem -0.5rem;
+  background-image: var(--sprite); background-repeat: no-repeat; background-size: calc(var(--q) * 4) calc(var(--a) * 8);
+  background-position: 0 calc(var(--linha, 0) * var(--a) * -1); image-rendering: pixelated;
+  animation: ip-fogo-quadros 0.66s steps(4) infinite;
 }
+.ip-fogueira--cinzas { animation-duration: 2.4s; }
+.ip-fogueira--azul, .ip-fogueira--arcana { animation-duration: 0.58s; }
+.ip-fogueira--lendaria { animation-duration: 0.8s; }
 .ip-fogueira::before {
-  content: ""; position: absolute; z-index: -1; left: 50%; top: 58%; width: 120px; height: 90px; transform: translate(-50%, -50%);
-  border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 176, 64, 0.45), rgba(255, 120, 40, 0.12) 60%, transparent);
+  content: ""; position: absolute; z-index: -1; left: 50%; top: 60%; width: 130%; height: 95%; transform: translate(-50%, -50%);
+  border-radius: 50%; background: radial-gradient(closest-side, rgba(var(--ip-fogo), 0.42), rgba(var(--ip-fogo-2), 0.12) 62%, transparent);
   animation: ip-brilho 2.4s ease-in-out infinite;
 }
-.ip-fogueira--apagada { background-size: 72px 84px; animation: none; }
-.ip-fogueira--apagada::before { display: none; }
+.ip-fogueira--faisca::before { width: 90%; height: 60%; top: 72%; }
+.ip-fogueira--fogareu::before, .ip-fogueira--azul::before, .ip-fogueira--arcana::before { width: 150%; height: 115%; }
+.ip-fogueira--lendaria::before { width: 175%; height: 135%; background: radial-gradient(closest-side, rgba(255, 236, 160, 0.55), rgba(255, 190, 60, 0.18) 60%, transparent); }
+.ip-fogueira--cinzas::before { display: none; }
+.ip-seq__estagio { color: rgba(255, 255, 255, 0.72); }
+.ip-seq__estagio b { color: rgb(var(--ip-fogo)); font-weight: 800; }
+.ip-seq--cinzas .ip-seq__estagio b { color: rgba(255, 255, 255, 0.8); }
 .ip-seq__numero { display: grid; line-height: 1.05; }
 .ip-seq__numero strong {
   font-size: clamp(2.5rem, 4.6vw, 3.1rem); font-weight: 850; letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
   background: linear-gradient(180deg, #fff6d6 10%, #f4cf7c 70%, #e3a64a); -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .ip-seq__numero span { color: #fff; font-size: 1.02rem; font-weight: 750; }
+.ip-seq__numero small + small { margin-top: 0.15rem; font-size: 0.74rem; color: rgba(255, 255, 255, 0.58); }
 .ip-seq__numero small { margin-top: 0.3rem; color: rgba(255, 255, 255, 0.7); font-size: var(--meta); }
 .ip-seq__hoje { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem 0.75rem; padding: 0.55rem 0.75rem; border-radius: 12px; background: rgba(255, 255, 255, 0.06); }
 .ip-seq__hoje-texto { display: inline-flex; align-items: center; gap: 0.35rem; color: rgba(255, 255, 255, 0.86); font-size: var(--meta); }
@@ -188,17 +208,19 @@
   display: grid; place-items: center; width: 100%; max-width: 2.7rem; aspect-ratio: 1; border-radius: 11px;
   background: rgba(255, 255, 255, 0.05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
-.ip-dia__icone { width: 24px; height: 24px; background: var(--sprite) calc(var(--pos) * -24px) 0 / 96px 24px no-repeat; image-rendering: pixelated; }
-.ip-dia--feito .ip-dia__ficha { background: linear-gradient(180deg, rgba(255, 196, 96, 0.3), rgba(242, 131, 42, 0.16)); box-shadow: inset 0 0 0 1px rgba(255, 210, 130, 0.5); }
-.ip-dia--feito .ip-dia__inicial { color: #ffe3a3; }
+/* Ícones dos dias (dias-estagios.png): 14x14 ampliados 2x; coluna = estado, linha = cor do estágio atual. */
+.ip-dia__icone { width: 28px; height: 28px; background-image: var(--sprite); background-repeat: no-repeat; background-size: 112px 196px; background-position: calc(var(--pos) * -28px) calc(var(--linha, 0) * -28px); image-rendering: pixelated; }
+.ip-dia--feito .ip-dia__ficha { background: linear-gradient(180deg, rgba(var(--ip-fogo), 0.3), rgba(var(--ip-fogo-2), 0.16)); box-shadow: inset 0 0 0 1px rgba(var(--ip-fogo), 0.55); }
+.ip-dia--feito .ip-dia__inicial { color: rgb(var(--ip-fogo)); }
 .ip-dia--parcial .ip-dia__ficha { background: rgba(255, 196, 96, 0.08); box-shadow: inset 0 0 0 1px rgba(255, 210, 130, 0.22); }
 .ip-dia--perdido .ip-dia__ficha { background: rgba(0, 0, 0, 0.22); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06); }
-.ip-dia--perdido .ip-dia__icone { opacity: 0.8; }
+.ip-dia--perdido .ip-dia__icone { opacity: 0.85; }
 .ip-dia--futuro .ip-dia__ficha { background: transparent; box-shadow: none; border: 1.5px dashed rgba(255, 255, 255, 0.2); }
 .ip-dia--futuro .ip-dia__inicial, .ip-dia--futuro .ip-dia__numero { color: rgba(255, 255, 255, 0.38); }
 .ip-dia--hoje .ip-dia__ficha, .ip-dia--hoje-feito .ip-dia__ficha { outline: 2px solid #ffe3a3; outline-offset: 2px; }
-.ip-dia--hoje .ip-dia__ficha { background: rgba(255, 227, 163, 0.08); animation: ip-hoje 2s ease-in-out infinite; }
-.ip-dia--hoje-feito .ip-dia__ficha { background: linear-gradient(180deg, rgba(255, 214, 120, 0.45), rgba(242, 131, 42, 0.25)); box-shadow: 0 0 16px rgba(255, 170, 60, 0.45); }
+.ip-dia--hoje .ip-dia__ficha { background: rgba(255, 227, 163, 0.08); animation: ip-hoje 1.8s ease-in-out infinite; }
+.ip-dia--hoje .ip-dia__icone { opacity: 0.9; }
+.ip-dia--hoje-feito .ip-dia__ficha { background: linear-gradient(180deg, rgba(var(--ip-fogo), 0.45), rgba(var(--ip-fogo-2), 0.25)); box-shadow: 0 0 16px rgba(var(--ip-fogo), 0.45); }
 .ip-dia--hoje .ip-dia__inicial, .ip-dia--hoje-feito .ip-dia__inicial { color: #ffe3a3; }
 .ip-dia--hoje .ip-dia__numero, .ip-dia--hoje-feito .ip-dia__numero { color: #fff; font-weight: 800; }
 
@@ -291,9 +313,9 @@
 .ip-foco__numeros dt, .ip-semana__numeros dt { color: var(--texto-2); font-size: 0.72rem; font-weight: 650; }
 .ip-foco__numeros dd, .ip-semana__numeros dd { margin: 0.05rem 0 0; font-size: 1.1rem; font-weight: 800; }
 
-@keyframes ip-fogo-quadros { to { background-position: -288px 0; } }
+@keyframes ip-fogo-quadros { from { background-position-x: 0; } to { background-position-x: calc(var(--q) * -4); } }
 @keyframes ip-brilho { 0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); } 50% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); } }
-@keyframes ip-hoje { 0%, 100% { box-shadow: inset 0 0 0 1px rgba(255, 227, 163, 0.25); } 50% { box-shadow: inset 0 0 0 1px rgba(255, 227, 163, 0.25), 0 0 14px rgba(255, 227, 163, 0.35); } }
+@keyframes ip-hoje { 0%, 100% { outline-color: rgba(255, 227, 163, 0.55); box-shadow: inset 0 0 0 1px rgba(255, 227, 163, 0.25); } 50% { outline-color: #ffe3a3; box-shadow: inset 0 0 0 1px rgba(255, 227, 163, 0.25), 0 0 16px rgba(255, 210, 120, 0.5); } }
 @keyframes ip-passo { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
 @media (prefers-reduced-motion: reduce) {
   .ip-fogueira, .ip-fogueira::before, .ip-dia--hoje .ip-dia__ficha, .ip-trilha__feito, .ip-trilha__voce img, .ip-seq__barra span { animation: none; }
@@ -313,7 +335,8 @@
 .ip-atalho__contador { margin-left: auto; padding: 0.15rem 0.55rem; border-radius: 999px; background: var(--verdete); color: var(--sobre-destaque); font-size: 0.8rem; font-weight: 800; white-space: nowrap; }
 /* Flashcards: a arte do jogo como fundo, escurecida para o texto ler bem. */
 .ip-atalho--arte { overflow: hidden; isolation: isolate; border-color: #3d5a4a; color: #fff; background: #12241c; }
-.ip-atalho--arte::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--arte) center / cover no-repeat; image-rendering: pixelated; transition: transform 0.4s var(--curva); }
+/* Fundos pintados por scripts/cenarios/atalhos_inicio.py: o foco (velas, cavaleiro) fica à direita, longe do texto. */
+.ip-atalho--arte::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--arte) right 40% / cover no-repeat; image-rendering: pixelated; transition: transform 0.4s var(--curva); }
 .ip-atalho--arte::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(10, 26, 20, 0.92) 0%, rgba(10, 26, 20, 0.7) 55%, rgba(10, 26, 20, 0.25) 100%); }
 .ip-atalho--arte:hover { color: #fff; border-color: #e3b860; }
 .ip-atalho--arte:hover::before { transform: scale(1.05); }
