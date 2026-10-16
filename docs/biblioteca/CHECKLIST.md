@@ -20,7 +20,8 @@ Plano gratuito: no máximo **5** resumos com `acesso: gratis` (o gerador confere
 | --- | --- | --- | --- |
 | 1 | Fratura do colo do fêmur | fratura_colo_femur.pdf (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 53) | [x] Feito em 16/10/2026: `rockwood10-53-colo-femur`, grátis |
 | 2 | Fratura transtrocantérica | transtrocanterica.pdf (Rockwood and Green's, 10ª ed., cap. 54) | [x] Feito em 16/10/2026: `rockwood10-54-transtrocanterica`, grátis |
-| 3 | Fratura da cabeça do rádio | tema_1_cabeca_do_radio.pdf (enviado em 16/10/2026) | [ ] **Bloqueado: o arquivo enviado é o capítulo 39 do Rockwood (Distal Humerus Fractures, úmero distal), não o da cabeça do rádio.** Pedir ao Tales o capítulo certo (no Rockwood 10ª ed., o de fraturas da cabeça e do colo do rádio) ou confirmar se quer o resumo do úmero distal com este arquivo. |
+| 3 | Fratura da cabeça do rádio, luxação do cotovelo e tríade terrível | cotovelo_deslocado.pdf (enviado em 16/10/2026, 62 páginas): Rockwood 10ª ed., cap. 40 · Elbow Dislocations and Terrible Triad Injuries (King, Beingessner, Pollock). Cobre luxação simples, cabeça do rádio, coronoide, tríade terrível, instabilidade posteromedial e ulna proximal | [x] Feito em 16/10/2026: `rockwood10-40-cotovelo-cabeca-radio`, grátis (3 de 5) |
+| 4 | Fratura do úmero distal | tema_1_cabeca_do_radio.pdf (enviado em 16/10/2026): na verdade é o cap. 39 do Rockwood (Distal Humerus Fractures) | [ ] Na fila (o nome do arquivo dizia cabeça do rádio; o capítulo certo da cabeça do rádio chegou depois, ver linha 3). |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo, se é grátis, e qualquer divergência entre o
 livro e um gabarito oficial que tenha ido para `alerta:`.
@@ -61,7 +62,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 17. [ ] Anatomia da coluna (Coluna)
 18. [ ] Fraturas do antebraço e punho na criança (Ortopedia pediátrica)
 19. [ ] Fraturas diafisárias do antebraço (Trauma adulto)
-20. [ ] Fratura da cabeça do rádio e instabilidade do cotovelo (Trauma adulto) — arquivo enviado era do úmero distal; aguardando o capítulo certo
+20. [x] Fratura da cabeça do rádio e instabilidade do cotovelo (Trauma adulto) — feito: `rockwood10-40-cotovelo-cabeca-radio` (também cobre olécrano e Monteggia posterior)
 21. [ ] Síndrome compartimental (Trauma adulto)
 22. [ ] Fraturas do fêmur e da perna na criança (Ortopedia pediátrica)
 23. [ ] Fraturas dos metacarpos e falanges (Trauma adulto)
@@ -99,7 +100,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 55. [ ] Lesões de nervos periféricos (Mão e punho)
 56. [ ] Instabilidade do carpo (Mão e punho)
 57. [ ] Lesões dos tendões extensores (Mão e punho)
-58. [ ] Fratura do úmero distal (Trauma adulto)
+58. [ ] Fratura do úmero distal (Trauma adulto) — capítulo recebido (Rockwood cap. 39, tema_1_cabeca_do_radio.pdf)
 59. [ ] Fraturas expostas (Trauma adulto)
 60. [ ] Pé torto congênito (Ortopedia pediátrica)
 61. [ ] Joelho da criança (Ortopedia pediátrica)
