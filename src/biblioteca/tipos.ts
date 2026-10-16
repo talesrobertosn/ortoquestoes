@@ -54,6 +54,8 @@ export interface ResumoCapitulo {
   questoes: string[]
   /** Questões de treino (OrtoQuestões Simulados) citadas. */
   treino: string[]
+  /** Subtemas do acervo que o resumo ensina (o cronograma e a questão sugerem a leitura por eles). */
+  subtemas?: string[]
 }
 
 export interface IndiceBiblioteca { geradoEm: string; capitulos: ResumoCapitulo[] }

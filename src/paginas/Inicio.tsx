@@ -9,6 +9,7 @@ import { AteAProva } from '../componentes/AteAProva'
 import { PodioPrevia } from '../componentes/PodioPrevia'
 import { Icone } from '../componentes/Icone'
 import { IconePixel } from '../componentes/IconePixel'
+import { bibliotecaVisivel } from '../biblioteca/recomendar'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../componentes/CaixasAssinante'
@@ -405,6 +406,10 @@ export function Inicio() {
             <span><strong>Jogar o Torneio</strong><small>Flashcards · Beta</small></span>
           </a>
         </>}
+        {bibliotecaVisivel() && <a className="ip-atalho ip-atalho--resumos" href={href('/resumos')}>
+          <span className="ip-atalho__livros" aria-hidden="true"><i /><i /><i /></span>
+          <span><strong>Resumos</strong><small>Biblioteca · Beta</small></span>
+        </a>}
       </nav>
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />

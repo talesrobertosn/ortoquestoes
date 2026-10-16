@@ -1,7 +1,8 @@
 # Biblioteca OrtoQuestões (resumos de capítulos)
 
 Rota: `#/resumos` (estante), `#/resumos/<capítulo>` (leitor), `#/resumos/caderno` (Meu caderno de estudo).
-Criada em 16/10/2026. **Em testes: sem item no menu** (pedido do Tales). O que já está pronto e o que falta
+Criada em 16/10/2026. **Publicada em beta** no menu suspenso ("Resumos · Beta"), com atalho na página inicial,
+caixa no cronograma e convite no fim das questões. O que já está pronto e o que falta
 estão no fim deste arquivo. A fila de temas e o que já foi enviado estão em [CHECKLIST.md](CHECKLIST.md).
 
 ## Regras do dono (Tales)
@@ -111,6 +112,7 @@ Legenda da figura no original (a imagem só aparece com licença).
 | Leitor | `src/paginas/LeitorResumo.tsx` | Tela cheia; rolagem ou páginas (colunas CSS); temas claro/sépia/escuro; fonte, entrelinha, largura, justificar, serifa; índice, busca (CSS Highlight API), marcador de página, notas, concentração, teclado (i, n, /, f, setas, Esc). A posição é (bloco, fração), não pixel. |
 | Estante e caderno | `src/paginas/Resumos.tsx` | Continuar estudando, filtros por especialidade e busca; caderno com filtros (capítulo, área, cor, texto, nota, favorito), revisão em sequência e exportação em Markdown. |
 | Da questão para o livro | `src/biblioteca/EstudarAssunto.tsx` em `CartaoQuestao` | "Estudar este assunto na Biblioteca" abre o parágrafo que explica, destacado. Enquanto `BIBLIOTECA_PUBLICA = false` (config.ts), só aparece para quem já abriu `#/resumos`. |
+| Fora da Biblioteca | `src/biblioteca/recomendar.ts`, `CaixaResumos.tsx` | O resumo "combina" com um assunto quando ensina um dos subtemas do acervo (`subtemas` no índice: os que têm ao menos ¼ das questões de prova citadas, ou `subtemas: A; B` no cabeçalho). Cronograma: item "Resumo do capítulo" em "Se sobrar tempo" e caixa "Resumos" na coluna lateral (o que combina com hoje em destaque). Questão: convite com capa no fim (citada → trecho; mesmo subtema → resumo). Página inicial: atalho "Resumos". |
 | Acesso | `acesso` do capítulo + `usarPremium` | Igual ao Resumão: a regra vale na interface; o conteúdo é estático. Para proteger no servidor seria preciso servir o capítulo por função autenticada (pendência). |
 
 "Salvo na conta" só aparece quando não há nenhum item da Biblioteca na fila; sem conexão aparece
@@ -141,4 +143,3 @@ ficam no aparelho (sem travar as respostas das questões e sem ir para "não env
 - Figuras: nenhuma licença confirmada ainda. O visualizador (ampliar, zoom) está pronto para `imagem`
   com `licenca: autorizada`.
 - Proteção no servidor dos resumos de assinante (hoje só na interface, como o Resumão).
-- Lançamento: `BIBLIOTECA_PUBLICA = true`, item no `MenuGeral` e destaque na página inicial.

@@ -116,7 +116,15 @@ function analisar(texto, arquivo) {
   // Radar honesto: "cobrança confirmada" exige questão de prova real citada na seção.
   for (const s of secoes) if (s.radar === 'confirmado' && !s.blocos.some((b) => b.tipo === 'questoes' && (b.central.length || b.relacionadas.length))) erros.push(`${arquivo} › ${s.titulo}: radar=confirmado sem questão de prova real (use fundamento, clinico ou oportunidade)`)
   for (const s of secoes) for (const b of s.blocos) if (b.t && /\*\*[^*]*$/.test(b.t.replace(/\*\*[^*]+\*\*/g, ''))) erros.push(`${arquivo}: negrito sem fechar em "${semMarcas(b.t).slice(0, 60)}"`)
-  return { capitulo, resumo: { id: capitulo.id, versao: capitulo.versao, titulo: capitulo.titulo, especialidade: capitulo.especialidade, livro: capitulo.livro, edicao: capitulo.edicao, capitulo: capitulo.capitulo, resumo: capitulo.resumo, acesso: capitulo.acesso, minutos: capitulo.minutos, secoes: secoes.map((s) => ({ id: s.id, titulo: s.titulo, radar: s.radar })), questoes: [...questoes], treino: [...treino] } }
+  // Assuntos do acervo que o resumo ensina (para o cronograma e a página da questão sugerirem a leitura):
+  // os subtemas com pelo menos um quarto das questões de prova citadas, ou os do cabeçalho (subtemas: A; B).
+  const contagem = new Map()
+  for (const id of questoes) for (const s of porId.get(id)?.s ?? []) contagem.set(s, (contagem.get(s) ?? 0) + 1)
+  const subtemas = meta.subtemas
+    ? meta.subtemas.split(';').map((x) => x.trim()).filter(Boolean)
+    : [...contagem].filter(([, n]) => n >= 2 && n >= questoes.size / 4).sort((a, b) => b[1] - a[1]).map(([s]) => indice.subtemas[s])
+  for (const s of subtemas) if (!indice.subtemas.includes(s)) erros.push(`${arquivo}: subtema "${s}" não existe no acervo`)
+  return { capitulo, resumo: { id: capitulo.id, versao: capitulo.versao, titulo: capitulo.titulo, especialidade: capitulo.especialidade, livro: capitulo.livro, edicao: capitulo.edicao, capitulo: capitulo.capitulo, resumo: capitulo.resumo, acesso: capitulo.acesso, minutos: capitulo.minutos, secoes: secoes.map((s) => ({ id: s.id, titulo: s.titulo, radar: s.radar })), questoes: [...questoes], treino: [...treino], subtemas } }
 }
 
 const arquivos = (await readdir(ORIGEM)).filter((a) => a.endsWith('.md') && !a.startsWith('_')).sort()
