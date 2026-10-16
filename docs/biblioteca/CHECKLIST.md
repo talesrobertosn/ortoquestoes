@@ -29,7 +29,7 @@ Desde 16/10/2026 **todos os resumos são abertos** (`acesso: gratis`, com págin
 | 9 | Síndrome compartimental aguda | sind_compartimental.pdf (16/10/2026, 33 páginas): Rockwood 10ª ed., cap. 17 · Acute Compartment Syndrome (Harvey, Bernstein, Duckworth) nas pp. 1–32; **p. 33 é a primeira página do cap. 18 (Principles of Mangled Extremity Management)**, ignorada | [x] Feito em 16/10/2026: `rockwood10-17-sindrome-compartimental` (simulados `trauma-1593` a `trauma-1606` em `treino=`; alertas: TARO 2023 8 h, TARO 2024 antebraço, SBOT-SP/TARO 2020 exame seriado, TARO 2021 baixa idade, TARO 2014 Matsen, TARO 2012 e sem ano pressão absoluta, USP-SP 2026 mão) |
 | 10 | Fraturas da escápula | escapula_.pdf (16/10/2026, 40 páginas): Rockwood 10ª ed., cap. 33 (Bartoníček) nas pp. 1–39; p. 40 é o início do cap. 34 | [x] Feito em 16/10/2026: `rockwood10-33-fratura-escapula` (só resumo; as questões já existiam) |
 | 11 | Fraturas da clavícula | claviculas.pdf (16/10/2026, 59 páginas): Rockwood 10ª ed., cap. 34 (Woltz, McKee) | [x] Feito em 16/10/2026: `rockwood10-34-fratura-clavicula` (só resumo) |
-| 12 | Fraturas e luxações do tálus | calcaneus_fracutres.pdf (16/10/2026, 65 páginas): **é o cap. 66 do Rockwood (tálus), não o de calcâneo** | [ ] 12 simulados prontos (fora do acervo), aguardando o Tales confirmar tálus ou mandar o calcâneo |
+| 12 | Fraturas e luxações do tálus | calcaneus_fracutres.pdf e, de novo, talus.pdf (16/10/2026, 65 páginas, mesmo conteúdo): Rockwood 10ª ed., cap. 66 · Fractures and Dislocations of the Talus (Sanders, Inculet); **não é o capítulo de calcâneo** | [x] Feito em 16/10/2026: `rockwood10-66-talus` (simulados `trauma-1607` a `trauma-1618` e os de anatomia `pe-tornozelo-0395` e `0422` em `treino=`; alertas: TARO 2008 maléolo medial, TARO 2018 CANALE em flexão plantar máxima, TARO 2018 processo lateral na criança em inversão) |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo e qualquer divergência entre o
 livro e um gabarito oficial que tenha ido para `alerta:`.
@@ -90,7 +90,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 37. [ ] Displasias esqueléticas e síndromes (Ortopedia pediátrica)
 38. [ ] Paralisia cerebral (Ortopedia pediátrica)
 39. [ ] Escoliose idiopática (Coluna)
-40. [ ] Fraturas do tálus e do calcâneo (Trauma adulto)
+40. [ ] Fraturas do tálus e do calcâneo (Trauma adulto) (tálus feito: `rockwood10-66-talus`; falta o calcâneo)
 41. [ ] Fratura da diáfise do fêmur (Trauma adulto)
 42. [ ] Condrossarcoma (Tumores ósseos e de partes moles)
 43. [ ] Princípios de osteossíntese (Conceitos básicos)
