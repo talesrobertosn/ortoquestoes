@@ -28,6 +28,10 @@ estão no fim deste arquivo. A fila de temas e o que já foi enviado estão em [
 
 ## Como fazer um capítulo novo (passo a passo)
 
+> Pedido do Tales (16/10/2026): quando ele pedir resumo **e** questões, faça primeiro os OrtoQuestões
+> Simulados do capítulo (média de 10, cada um com "Por que esta questão foi criada" no comentário; ver AGENTS.md)
+> e depois o resumo, citando os simulados novos em `treino=`.
+
 1. **Ler o PDF inteiro.** Os PDFs do Tales costumam vir com cada página duplicada e girada; extraia uma
    cópia do texto assim (ajuste o caminho):
    ```bash
