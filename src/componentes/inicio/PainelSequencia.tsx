@@ -5,14 +5,18 @@ import type { QuaseLa } from '../../estado/conquistas'
 import { href } from '../../util/rotas'
 import { Icone } from '../Icone'
 import { Medalha } from '../Medalha'
+import { estagioDaSequencia, textoProximoEstagio } from './estagiosFogueira'
 
 /**
- * Sequência de dias e "quase lá", no topo do painel (16/10/2026). A fogueira e os
- * ícones dos dias são pixel art feita do zero por scripts/gerar_pixel_inicio.py.
+ * Sequência de dias e "quase lá", no topo do painel (16/10/2026). A fogueira cresce e
+ * muda de cor com os dias seguidos (estagiosFogueira.ts); ela e os ícones dos dias são
+ * pixel art feita do zero por scripts/gerar_fogueira_inicio.py. As imagens entram por
+ * urlCss() (endereço absoluto): url() relativo em variável CSS some no site publicado.
  */
 export type EstadoDia = 'feito' | 'parcial' | 'perdido' | 'hoje-feito' | 'hoje' | 'futuro'
 export interface DiaSequencia { chave: string; inicial: string; nome: string; numero: number; total: number; estado: EstadoDia }
 
+/** Coluna do ícone em dias-estagios.png; a linha é a cor do estágio atual. */
 const ICONE: Partial<Record<EstadoDia, number>> = { feito: 0, 'hoje-feito': 1, hoje: 2, parcial: 2, perdido: 3 }
 const LEGENDA: Record<EstadoDia, string> = {
   feito: 'meta da sequência feita', 'hoje-feito': 'hoje, meta feita', hoje: 'hoje, ainda falta',
@@ -22,18 +26,22 @@ const LEGENDA: Record<EstadoDia, string> = {
 export function PainelSequencia({ streak, dias, quaseLa, conquistadas, totalConquistas }: {
   streak: Streak; dias: DiaSequencia[]; quaseLa: QuaseLa[]; conquistadas: number; totalConquistas: number
 }) {
-  const acesa = streak.atual > 0 || streak.metaHojeAtingida
+  const fogo = estagioDaSequencia(streak.atual)
+  const proximo = textoProximoEstagio(streak.atual)
+  const linhaDias = Math.max(1, fogo.indice) - 1
   const hoje = Math.min(META_STREAK_DIARIA, streak.hojeContagem)
   const faltam = META_STREAK_DIARIA - hoje
   const recorde = streak.recorde > streak.atual
   return (
-    <aside className="ip-seq" aria-label="Sua sequência e próximas conquistas">
+    <aside className={`ip-seq ip-seq--${fogo.estagio.id}`} aria-label="Sua sequência e próximas conquistas">
       <div className="ip-seq__topo">
-        <span className={`ip-fogueira${acesa ? '' : ' ip-fogueira--apagada'}`} role="img" aria-label={acesa ? 'Fogueira acesa' : 'Fogueira apagada'}
-          style={{ '--sprite': urlCss(acesa ? 'pixel/inicio/fogueira.png' : 'pixel/inicio/fogueira-apagada.png') } as CSSProperties} />
+        <span className={`ip-fogueira ip-fogueira--${fogo.estagio.id}`} role="img" data-estagio={fogo.estagio.id}
+          aria-label={fogo.indice === 0 ? 'Fogueira apagada' : `Fogueira acesa: ${fogo.estagio.nome}`}
+          style={{ '--sprite': urlCss('pixel/inicio/fogueira-estagios.png'), '--linha': fogo.indice } as CSSProperties} />
         <div className="ip-seq__numero">
           <strong>{streak.atual}</strong>
           <span>{streak.atual === 1 ? 'dia seguido' : 'dias seguidos'}</span>
+          <small className="ip-seq__estagio"><b>{fogo.estagio.nome}</b>{proximo ? ` · ${proximo}` : ' · o estágio máximo'}</small>
           <small>{recorde ? `Seu recorde: ${streak.recorde} dias` : streak.atual >= 3 ? 'É o seu recorde. Continue!' : 'Acenda e mantenha a chama.'}</small>
         </div>
       </div>
@@ -52,7 +60,7 @@ export function PainelSequencia({ streak, dias, quaseLa, conquistadas, totalConq
           <li key={d.chave} className={`ip-dia ip-dia--${d.estado}`} title={`${d.nome}: ${d.total} ${d.total === 1 ? 'questão' : 'questões'} (${LEGENDA[d.estado]})`}>
             <small className="ip-dia__inicial">{d.estado.startsWith('hoje') ? 'Hoje' : d.inicial}</small>
             <span className="ip-dia__ficha">
-              {ICONE[d.estado] !== undefined && <span className="ip-dia__icone" style={{ '--pos': ICONE[d.estado], '--sprite': urlCss('pixel/inicio/dias.png') } as CSSProperties} />}
+              {ICONE[d.estado] !== undefined && <span className="ip-dia__icone" style={{ '--pos': ICONE[d.estado], '--linha': linhaDias, '--sprite': urlCss('pixel/inicio/dias-estagios.png') } as CSSProperties} />}
             </span>
             <small className="ip-dia__numero numerico">{d.numero}</small>
             <span className="ip-invisivel">{d.nome}: {LEGENDA[d.estado]}</span>

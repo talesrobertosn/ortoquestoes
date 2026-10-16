@@ -203,6 +203,22 @@ questão ou dado mudou.
    dado suficiente, um convite), "Sua semana" (questões, acerto, dias ativos, gráfico e últimas
    sessões) e "O que a prova mais cobra" (ao lado dos recursos do assinante).
 
+5. **Fogueira que evolui com a sequência (16/10/2026, à noite).** A fogueira deixou de ser só
+   acesa ou apagada: são oito estágios, pela quantidade de dias seguidos, cada um com chama maior
+   e cor mais rara: Cinzas (0), Faísca (1 a 2), Fogueira (3 a 6), Labareda (7 a 13), Fogaréu
+   (14 a 29), Chama azul (30 a 59), Chama arcana (60 a 99) e Chama lendária (100 ou mais). O
+   cartão diz o estágio e quanto falta para o próximo ("Labareda · faltam 5 dias para o
+   Fogaréu"); o brilho, os dias feitos da semana e os ícones dos dias tomam a cor do estágio. A
+   arte (4 quadros por estágio, ícones em 7 cores) sai de `scripts/gerar_fogueira_inicio.py`, e
+   os limites ficam também em `src/componentes/inicio/estagiosFogueira.ts` (o teste
+   `fixtures/testar_imagens_inicio.mjs` confere que os dois batem). Os atalhos "Estudar
+   flashcards" e "Jogar o Torneio" ganharam fundos próprios no estilo do jogo
+   (`scripts/cenarios/atalhos_inicio.py`: a Biblioteca ao entardecer e a entrada da Cripta com o
+   cavaleiro), com o foco à direita, longe do texto. Toda imagem em variável CSS entra por
+   `urlCss()`. Ponta a ponta no build de produção: `node fixtures/e2e_fogueira_inicio.mjs` (oito
+   sequências em computador e celular, tema claro e escuro, imagens carregando de verdade e
+   movimento reduzido sem animação).
+
 Testado com três contas simuladas além do visitante: assinante com cronograma, conta gratuita e
 assinante sem cronograma, em 1400×860, 390×844 e 844×390 (e o tema escuro). Capturas em
 `/tmp/claude-0/proposta-inicio/final/`.
