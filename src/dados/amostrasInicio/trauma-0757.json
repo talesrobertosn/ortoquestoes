@@ -1,0 +1,38 @@
+{
+  "id": "trauma-0757",
+  "origem": "TEOT 2025",
+  "simulado": false,
+  "tema": "Trauma adulto",
+  "temaSlug": "trauma",
+  "subtema": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+  "enunciado": "A fratura do processo coronoide demonstrada nas imagens a seguir pode ser classificada de acordo com O’DRISCOLL, como tipo:",
+  "imagem": {
+    "arquivo": "trauma/trauma-0757-1.jpeg",
+    "legenda": null,
+    "largura": 283,
+    "altura": 139
+  },
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "I, subtipo 1.",
+      "porque": "Ponta pequena. O tipo I subtipo 1 é a fratura da ponta com até 2 mm."
+    },
+    {
+      "letra": "B",
+      "texto": "I, subtipo 2.",
+      "porque": "Ponta maior. O tipo I subtipo 2 é a fratura da ponta acima de 2 mm, sem acometer a faceta anteromedial."
+    },
+    {
+      "letra": "C",
+      "texto": "II.",
+      "porque": "As imagens mostram a fratura da faceta anteromedial do coronoide, o tipo II de O'Driscoll, ligado à instabilidade posteromedial em varo."
+    },
+    {
+      "letra": "D",
+      "texto": "III.",
+      "porque": "Base. O tipo III envolve a base do coronoide, com mais de 50% da altura."
+    }
+  ],
+  "gabarito": "C"
+}

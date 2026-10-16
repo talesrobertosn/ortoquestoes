@@ -1,0 +1,33 @@
+{
+  "id": "tumores-0370",
+  "origem": "OrtoQuestões Simulados",
+  "simulado": true,
+  "tema": "Tumores ósseos e de partes moles",
+  "temaSlug": "tumores",
+  "subtema": "Metástases ósseas",
+  "enunciado": "Mulher de 61 anos com câncer de mama apresenta lesão lítica na região peritrocantérica do fêmur, ocupando metade da largura do osso, com dor moderada. Pelo escore de Mirels, a pontuação e a conduta recomendada são, respectivamente,",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "8 pontos; radioterapia.",
+      "porque": "Erra a soma e a conduta. Oito pontos ignoram que a região peritrocantérica vale 3, não 2. E, mesmo com 8, a conduta seria julgamento clínico, não radioterapia automática."
+    },
+    {
+      "letra": "B",
+      "texto": "10 pontos; fixação profilática.",
+      "porque": "Pela Tabela 25-1 do Rockwood, peritrocantérico (3), dor moderada (2), lesão lítica (3) e tamanho entre 1/3 e 2/3 da largura (2) somam 10 pontos. Com 9 ou mais, o risco de fratura é de 33% ou mais e a fixação profilática é recomendada."
+    },
+    {
+      "letra": "C",
+      "texto": "8 pontos; fixação profilática.",
+      "porque": "A conduta está certa, a soma não. A fixação profilática é indicada, mas a pontuação é 10: a localização peritrocantérica vale 3 pontos, mais que o restante do membro inferior."
+    },
+    {
+      "letra": "D",
+      "texto": "10 pontos; radioterapia.",
+      "porque": "A soma está certa, a conduta não. Com 10 pontos, o risco de fratura é de pelo menos 33%; radioterapia isolada é reservada para 7 pontos ou menos. Irradiar uma lesão lítica peritrocantérica com 10 pontos expõe a paciente a um risco de fratura de pelo menos 33% em 6 meses."
+    }
+  ],
+  "gabarito": "B"
+}
