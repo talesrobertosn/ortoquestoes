@@ -1,0 +1,33 @@
+{
+  "id": "trauma-1225",
+  "origem": "OrtoQuestões Simulados",
+  "simulado": true,
+  "tema": "Trauma adulto",
+  "temaSlug": "trauma",
+  "subtema": "Fratura da clavícula",
+  "enunciado": "Na fratura desviada do terço médio da clavícula, o tratamento cirúrgico, comparado ao conservador,",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "reduz a pseudartrose, sem evidência clara de melhora da função final.",
+      "porque": "O Rockwood (capítulo 10, Clavicle Fractures) resume que há evidência consistente de menores taxas de consolidação viciosa e pseudartrose com a cirurgia primária, mas essencialmente nenhuma evidência de que ela melhore a função final do paciente."
+    },
+    {
+      "letra": "B",
+      "texto": "reduz a pseudartrose e melhora claramente a função final.",
+      "porque": "Exagera o benefício funcional. A redução da pseudartrose é real, mas o capítulo diz que há pouca ou nenhuma evidência de melhora da função final. O estudo canadense mostrou escores melhores, e uma revisão citada favoreceu a cirurgia pelo DASH, mas Tamaoki não encontrou diferença em DASH, dor ou retorno às atividades."
+    },
+    {
+      "letra": "C",
+      "texto": "não altera a pseudartrose, mas melhora claramente a função final.",
+      "porque": "Inverte os achados. O efeito mais consistente da cirurgia é justamente sobre a consolidação: menos pseudartrose (11% contra 0,8% aos 9 meses) e menos consolidação viciosa."
+    },
+    {
+      "letra": "D",
+      "texto": "não altera a pseudartrose nem a função final.",
+      "porque": "Nega um efeito bem demonstrado. A cirurgia reduz a pseudartrose de forma consistente, como mostram o Clavicle Trial e as revisões citadas. Dizer que não altera a pseudartrose contraria a evidência."
+    }
+  ],
+  "gabarito": "A"
+}

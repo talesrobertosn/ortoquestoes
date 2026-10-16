@@ -1,0 +1,38 @@
+{
+  "id": "pediatria-0502",
+  "origem": "TARO 2026",
+  "simulado": false,
+  "tema": "Ortopedia pediátrica",
+  "temaSlug": "pediatria",
+  "subtema": "Displasia do desenvolvimento do quadril",
+  "enunciado": "A técnica para tratamento da displasia do desenvolvimento do quadril demonstrada na imagem a seguir é conhecida como",
+  "imagem": {
+    "arquivo": "pediatria/pediatria-0502-1.png",
+    "legenda": null,
+    "largura": 523,
+    "altura": 216
+  },
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "GANZ.",
+      "porque": "A osteotomia periacetabular de Ganz (bernense) faz cortes ao redor do acetábulo e preserva a coluna posterior, mantendo a bacia estável. É feita após o fechamento da trirradiada, e os cortes não correspondem ao esquema da imagem."
+    },
+    {
+      "letra": "B",
+      "texto": "STEEL.",
+      "porque": "A imagem mostra os três cortes da osteotomia tripla de Steel: no ilíaco acima do acetábulo, no ramo púbico superior e no ísquio. O fragmento acetabular livre é redirecionado sobre a cabeça femoral."
+    },
+    {
+      "letra": "C",
+      "texto": "CHIARI.",
+      "porque": "A osteotomia de Chiari é um corte único supra-acetabular com deslocamento medial do fragmento distal. A cobertura vem da cápsula interposta, e é um procedimento de salvamento, sem cortes no púbis e no ísquio."
+    },
+    {
+      "letra": "D",
+      "texto": "STAHELI.",
+      "porque": "O procedimento de Staheli é uma prateleira (shelf): um enxerto ósseo é colocado numa fenda acima da cápsula para aumentar o teto. Não há osteotomia do acetábulo."
+    }
+  ],
+  "gabarito": "B"
+}

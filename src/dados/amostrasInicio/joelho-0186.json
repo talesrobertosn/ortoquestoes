@@ -1,0 +1,33 @@
+{
+  "id": "joelho-0186",
+  "origem": "TEOT 2025",
+  "simulado": false,
+  "tema": "Joelho",
+  "temaSlug": "joelho",
+  "subtema": "Lesão do ligamento cruzado posterior",
+  "enunciado": "Na restrição à hiperextensão do joelho, o ligamento cruzado posterior:",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "Não age como restritor.",
+      "porque": "O LCP atua na restrição da hiperextensão, mas como restritor secundário, e não como primário."
+    },
+    {
+      "letra": "B",
+      "texto": "Age como restritor antes do ligamento cruzado anterior.",
+      "porque": "É o LCA que é tensionado primeiro na hiperextensão e rompe antes. O LCP entra depois."
+    },
+    {
+      "letra": "C",
+      "texto": "Age como restritor após ruptura do ligamento cruzado anterior.",
+      "porque": "Na hiperextensão, o LCP é um restritor secundário, que passa a atuar quando o LCA e a cápsula posterior falham."
+    },
+    {
+      "letra": "D",
+      "texto": "Age como restritor simultaneamente ao ligamento cruzado anterior.",
+      "porque": "Com o LCA íntegro, a contribuição do LCP para segurar a hiperextensão é pequena. Os dois não atuam em paralelo."
+    }
+  ],
+  "gabarito": "C"
+}

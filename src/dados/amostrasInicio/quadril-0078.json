@@ -1,0 +1,33 @@
+{
+  "id": "quadril-0078",
+  "origem": "TEOT 2023",
+  "simulado": false,
+  "tema": "Quadril",
+  "temaSlug": "quadril",
+  "subtema": "Fraturas periprotéticas do quadril",
+  "enunciado": "A fratura periprotética do fêmur tipo B2 de VANCOUVER, após artroplastia de quadril, tem como tratamento preferencial a",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "manutenção da haste e osteossíntese com placa bloqueada.",
+      "porque": "Manter a haste deixa o problema principal sem solução: ela continua solta, e a falha se repete."
+    },
+    {
+      "letra": "B",
+      "texto": "manutenção da haste e osteossíntese com placa bloqueada e fios de cerclagem.",
+      "porque": "Acrescentar cabos não devolve fixação a uma haste solta."
+    },
+    {
+      "letra": "C",
+      "texto": "revisão com troca por componente femoral mais longo cimentado.",
+      "porque": "O comprimento está certo, mas o cimento vazaria pela fratura e atrapalharia a consolidação. Por isso se prefere a haste não cimentada."
+    },
+    {
+      "letra": "D",
+      "texto": "revisão com troca por componente femoral mais longo não-cimentado.",
+      "porque": "A haste longa se fixa no osso íntegro abaixo da fratura, sem cimento entre os fragmentos."
+    }
+  ],
+  "gabarito": "D"
+}
