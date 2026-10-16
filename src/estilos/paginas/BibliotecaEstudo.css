@@ -76,3 +76,13 @@
 @media (max-width: 480px) { .fc-estudo__hora b { display: none; } .fc-estudo__hora { flex: none; } }
 @media (max-width: 640px) { .fc-estudo__dica-tecla { display: none; } }
 @media (max-height: 500px) { .fc-estudo__hora small { display: none; } .fc-estudo__hora b { font-size: 12px; } }
+
+/* -------- auditoria 16/10/2026 */
+/* no toque não há barra de espaço: o lembrete da tecla some do botão de virar */
+@media (hover: none) and (pointer: coarse) { .fc-modal .fc-principal__texto small.fc-estudo__tecla { display: none; } }
+/* celular deitado: o botão de virar passava 14 px da borda direita e o texto quebrava sob o lembrete */
+@media (orientation: landscape) and (max-height: 520px) {
+  .fc-modal .fc-estudo__botoes .fc-principal { margin-left: 0; height: 56px; padding: 0 10px 0 40px !important; border-width: 12px !important; border-image-width: 12px !important; }
+  .fc-modal .fc-estudo__botoes .fc-principal::before { left: -10px; width: 46px; height: 46px; }
+  .fc-modal .fc-estudo__botoes .fc-principal__texto span { font-size: 16px; letter-spacing: .05em; white-space: nowrap; }
+}

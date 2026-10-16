@@ -508,7 +508,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
             <button type="button" className="fc-botao-pequeno fc-estudo__so-virar" onClick={() => { tocar('confirmar'); virar() }}>Virar sem responder · espaço</button>
           </>
         ) : (
-          <button type="button" className="fc-principal fc-principal--largo pronto" onClick={() => { tocar('confirmar'); virar() }}><span className="fc-principal__texto"><span>Virar o flashcard</span><small>espaço</small></span></button>
+          <button type="button" className="fc-principal fc-principal--largo pronto" onClick={() => { tocar('confirmar'); virar() }}><span className="fc-principal__texto"><span>Virar o flashcard</span><small className="fc-estudo__tecla">espaço</small></span></button>
         )}
       </div>
     </div>

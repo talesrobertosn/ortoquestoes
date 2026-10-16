@@ -199,9 +199,12 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
   const [vinda, definirVinda] = useState<number | undefined>()
   useEffect(() => {
     let vivo = true
-    // enquanto o acervo chega, o primeiro andar já vai baixando (herói e Golem de Gesso; a floresta vem pelo Cenario abaixo)
-    precarregarAtor('heroi', 'heroi-1')
-    precarregarAtor('golem')
+    // enquanto o acervo chega, o primeiro andar já vai baixando (herói e Golem de Gesso; a floresta vem pelo Cenario abaixo).
+    // Na Biblioteca não: ninguém luta antes de trocar de aba, e o celular baixava ~370 kB de batalha à toa (auditoria 16/10).
+    if (!abrirEstudo) {
+      precarregarAtor('heroi', 'heroi-1')
+      precarregarAtor('golem')
+    }
     // A sincronia do progresso (duas chamadas ao servidor) não segura a entrada por mais de 2,5 s:
     // ela continua em segundo plano e as próximas reposições do baralho já usam o resultado.
     const sincronia = Promise.race([sincronizarProgresso(), new Promise((ok) => window.setTimeout(ok, 2500))])
@@ -224,12 +227,12 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
   }, [])
   if (!pronto) {
     return (
-      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={sairDoJogo}>
+      <ModalJogo titulo={abrirEstudo ? 'Biblioteca de Flashcards' : NOME_MODO[modo]} aoPedirFechar={sairDoJogo}>
         <div className="fc-arena fc-carregando" role="status">
-          <Cenario cena="campo" reduzido />
+          <Cenario cena={abrirEstudo ? 'biblioteca' : 'campo'} reduzido />
           <div className="fc-carregando__caixa">
             <span className="fc-carregando__baralho" aria-hidden="true"><i /><i /><i /></span>
-            <strong>{modo === 'torre' ? 'Subindo a escadaria' : 'Descendo à Cripta'}</strong>
+            <strong>{abrirEstudo ? 'Abrindo a Biblioteca' : modo === 'torre' ? 'Subindo a escadaria' : 'Descendo à Cripta'}</strong>
             <small>Milhares de flashcards das provas reais e dos simulados</small>
           </div>
         </div>
@@ -350,7 +353,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo, vinda }: { modo: Modo; abrirEs
     return () => window.clearTimeout(t)
   }, [])
   // Pré-carregamento do caminho: o adversário e a cena deste andar já, os do próximo andar quando o navegador folgar.
+  // Na Biblioteca, só quando a pessoa passa para a Batalha.
   useEffect(() => {
+    if (modo !== 'batalha') return
     precarregarAtor(adversarioEmCena.sprite as Personagem, adversarioEmCena.variante)
     precarregarAtor('heroi', partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined)
     const proximo = inimigoDoAndar(partida.andar + 1, partida.sementeBase, partida.modo).inimigo
@@ -363,7 +368,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo, vinda }: { modo: Modo; abrirEs
     const ocioso = (window as unknown as { requestIdleCallback?: (f: () => void, o?: { timeout: number }) => number }).requestIdleCallback
     const t = window.setTimeout(() => (ocioso ? ocioso(depois, { timeout: 4000 }) : depois()), 2500)
     return () => window.clearTimeout(t)
-  }, [partida.andar, partida.sementeBase, partida.modo, partida.estagio, adversarioEmCena.sprite, adversarioEmCena.variante, adversarioEmCena.chefe])
+  }, [modo, partida.andar, partida.sementeBase, partida.modo, partida.estagio, adversarioEmCena.sprite, adversarioEmCena.variante, adversarioEmCena.chefe])
   const chefeEmCena = modo === 'batalha' && adversarioEmCena.chefe
   const trilha = modo === 'estudo' ? 'biblioteca'
     : partida.fase === 'loja' ? 'loja' : partida.fase === 'sabio' || partida.fase === 'sala' ? 'sabio'
@@ -1313,7 +1318,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo, vinda }: { modo: Modo; abrirEs
   const classes = ['fc-arena', `fc-arena--${modo}`, `fc-arena--${faixaTela}`, `fc-arena--fase-${partida.fase}`, reduzido ? 'fc-arena--reduzida' : '', mostrado.vida <= 25 && modo === 'batalha' ? 'fc-arena--perigo' : ''].filter(Boolean).join(' ')
 
   return (
-    <ModalJogo titulo={NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar} transicao={`${modo}:${cenarioVisivel}:${['loja','sabio','sala','fim'].includes(partida.fase) ? partida.fase : 'jogo'}`}>
+    <ModalJogo titulo={modo === 'estudo' ? 'Biblioteca de Flashcards' : NOME_MODO[partida.modo]} aoPedirFechar={pedirFechar} transicao={`${modo}:${cenarioVisivel}:${['loja','sabio','sala','fim'].includes(partida.fase) ? partida.fase : 'jogo'}`}>
       <div className={classes} data-cenario={cenarioVisivel} data-modo={partida.modo} data-parada={parada ? 'true' : undefined}>
         <Cenario cena={paisagemDaParada(partida, modo === 'batalha', cenarioVisivel)} reduzido={reduzido} clima={modo === 'estudo' ? 'dia' : climaDoAndar(partida.andar)} />
         <Suspense fallback={null}>
