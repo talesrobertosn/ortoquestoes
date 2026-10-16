@@ -1,4 +1,4 @@
-import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
 import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
@@ -17,8 +17,9 @@ import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dad
 import { idsRevisaoHoje } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, HojeRetaFinal, MapaRisco } from './CronogramaHub'
-import { CartaoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
+import { CartaoHoje, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
 import { corDaArea } from '../dados/coresAreas'
+import { CalendarioCronograma } from './CronogramaCalendario'
 import '../estilos/paginas/CronogramaPainel.css'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
@@ -305,7 +306,7 @@ export function PlanoEstudo() {
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
     </div>
   )
 }
@@ -395,7 +396,7 @@ export interface HubDados {
   salvandoOpcoes: boolean
 }
 
-export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
+export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; indice?: Indice; respondidas?: Respondidas; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
   // O tour só é lido e gravado no cronograma do assinante (aberto): a vitrine não toca nele,
   // para ele aparecer sozinho na primeira visita depois de assinar.
   const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
@@ -406,6 +407,11 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
   const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
   const feitos = hub?.feitosDia ?? { data: '' }
+  // Calendário do mês (16/10/2026): só no cronograma do assinante; #/cronograma?calendario=1 abre direto.
+  const temCalendario = aberto && !!indice && !!respondidas
+  const [calendarioAberto, definirCalendarioAberto] = useState(() => temCalendario && typeof location !== 'undefined' && location.hash.includes('calendario=1'))
+  const abrirCalendario = temCalendario ? () => definirCalendarioAberto(true) : undefined
+  const fecharCalendario = useCallback(() => definirCalendarioAberto(false), [])
 
   // ── A lista de hoje ──
   const itensDia = calculo.hoje?.itens ?? []
@@ -417,7 +423,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
     if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) || (hub?.resumaoLido ?? []).includes(principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`) } : undefined })
-    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` Você já adiantou ${calculo.adiantadoHoje} delas: a meta era ${calculo.metaHojeSemAdiantar}.` : ''
+    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` ${fraseAdiantadoHoje(calculo)}` : ''
     // A vitrine mostra o jeito do dia, sem os números (orientação de 14/10): quantas e quanto tempo é do assinante.
     if (calculo.metaDiaria > 0 && !aberto) lista.push({
       id: 'novas', titulo: 'Questões novas',
@@ -430,7 +436,7 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
       minutos: calculo.metaDiaria * minutos, estado: metaFeita ? 'feito' : calculo.feitasHoje > 0 || pendente ? 'agora' : 'afazer',
       progresso: { feitas: Math.min(calculo.feitasHoje, calculo.metaDiaria), total: calculo.metaDiaria },
     })
-    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `As ${calculo.adiantadoHoje} questões de hoje você fez antes. Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
+    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `Você adiantou ${calculo.adiantadoHoje} questões; hoje sua meta é 0 (era ${calculo.metaHojeSemAdiantar}). Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
     const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
     if (adiantando > 0 && aberto) lista.push({
       id: 'adiantadas', titulo: `+${adiantando} adiantadas`,
@@ -470,6 +476,8 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
     : principal ? porQueHoje(calculo, principal.slug, plano.prova) : calculo.restante === 0 ? 'Mantenha a revisão em dia e faça o Simulado Nacional do mês.' : ''
 
   return <>
+    {calendarioAberto && temCalendario && <CalendarioCronograma plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
+      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} aoFechar={fecharCalendario} />}
     {aberto && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
     {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
@@ -499,9 +507,9 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
       </div>
       <div className="cp-col cp-col--lado">
         {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
-        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} /></div>}
+        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} aoVerCalendario={abrirCalendario} /></div>}
         {!calculo.provaPassou && <div className="cp-ordem-5">{aberto
-          ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} />
+          ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} aoVerCalendario={abrirCalendario} />
           : <div className="cp-previa-depois">
               <Degustacao className="pe-degustacao" titulo="O resto é do assinante" texto={<ul className="cp-vitrine-lista">
                 <li>Amanhã e as semanas até a prova, com os marcos</li>

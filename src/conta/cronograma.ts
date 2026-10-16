@@ -160,9 +160,9 @@ export async function salvarOpcoes(alterar: (atual: PlanoSalvo) => OpcoesPlano |
  * para adiantar), ou null se nada mudou. É o que permite, amanhã, tirar da meta o que
  * ela fez a mais hoje. Sem `pedido`, mantém o que já estava pedido.
  */
-export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPlano, 'metaDiaria' | 'extraHoje' | 'adiantarPedido' | 'naRetaFinal' | 'provaPassou'>, pedido?: number): OpcoesPlano | null {
+export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPlano, 'metaDiaria' | 'extraHoje' | 'adiantarPedido' | 'naRetaFinal' | 'provaPassou'>, pedido?: number, agora: Date | number = Date.now()): OpcoesPlano | null {
   if (calculo.naRetaFinal || calculo.provaPassou) return null
-  const hoje = hojeBR()
+  const hoje = hojeBR(agora)
   const limite = somarDias(hoje, -30)
   const lista = opcoesDe(plano).adiantados.filter((r) => r.em >= limite)
   const atual = lista.find((r) => r.em === hoje)

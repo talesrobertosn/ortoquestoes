@@ -1,5 +1,5 @@
 import type { Indice } from './tipos'
-import { diaCivil, inicioDoDia } from '../util/dia'
+import { diaCivil, inicioDaChave, inicioDoDia, somarDias } from '../util/dia'
 import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, type Nivel } from './incidencia'
 
 /**
@@ -215,7 +215,7 @@ export interface CalculoPlano {
   projecao: { alvoPct: number; maisCaiPct: number; fimMaisCai: Date | null; cortadas: number; tetoAtivo: boolean }
 }
 
-export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora = new Date()): CalculoPlano {
+export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
   // Hoje e o dia de criação são dias de São Paulo (src/util/dia.ts), como datas civis.
   const hoje = diaCivil(agora)
   const inicioHoje = inicioDoDia(agora)
@@ -257,7 +257,6 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     const slug = tema?.slug ?? String(i)
     return { slug, nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, acertoEstimado, respondidas: t.respondidas, reforcado: acertoEstimado !== null && media !== null && acertoEstimado < media - 5, incidencia: pesoIncidenciaDoTema(slug) }
   })
-  const focosPendentes = focosQueFaltam(indice, respondidas)
 
   const alvo = Math.max(0, Math.ceil((elegiveis - Math.min(plano.base_respondidas, elegiveis)) * COBERTURA[plano.intensidade]))
   const feitas = Math.max(0, respondidasNoAcervo - plano.base_respondidas)
@@ -286,58 +285,6 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const ritmo = esperadoAteHoje > 0 ? Math.round(((feitasAntesDeHoje - esperadoAteHoje) / esperadoAteHoje) * 100) : 0
 
   const opcoes = opcoesDe(plano)
-  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos
-  // e para os que mais caem na prova.
-  const fator = (t: TemaPlano) => (1 + (t.acertoEstimado !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acertoEstimado) / 100) * 4)) : 0)) * t.incidencia
-  const focos = focoPorQuestao(indice)
-  const dominados = assuntosDominados(indice, respondidas)
-  // Passada de cada questão pelo nível do assunto; assunto dominado (85%+ em 15+) vai para a 3ª.
-  const passadaDe = (id: string): Passada => {
-    const f = focos.get(id)
-    if (!f || dominados.has(f.nome)) return 3
-    return f.nivel >= 4 ? 1 : f.nivel === 3 ? 2 : 3
-  }
-  const livresPorTema = new Map<string, string[]>()
-  for (const q of indice.questoes) {
-    if (!entraNoPlano(q, simulados) || respondidas[q.id]) continue
-    const slug = indice.temas[q.t]?.slug ?? String(q.t)
-    const lista = livresPorTema.get(slug) ?? []
-    lista.push(q.id)
-    livresPorTema.set(slug, lista)
-  }
-  // Fila de cada tema: os assuntos que mais caem primeiro; área dominada fica só com a 1ª passada.
-  const filaDoTema = new Map<string, string[]>()
-  for (const [slug, lista] of livresPorTema) {
-    const ordenada = ordenarPorFoco(lista, focos).sort((x, y) => passadaDe(x) - passadaDe(y))
-    filaDoTema.set(slug, opcoes.dominadas.includes(slug) ? ordenada.filter((id) => passadaDe(id) === 1) : ordenada)
-  }
-  const pesos = temas.filter((t) => (filaDoTema.get(t.slug)?.length ?? 0) > 0).map((t) => ({ t, peso: (filaDoTema.get(t.slug)!.length) * fator(t) }))
-  // Cotas proporcionais ao peso, limitadas ao que o tema tem; a sobra vai para quem ainda tem espaço.
-  const cotaDe = new Map<string, number>()
-  // Primeiro garante a 1ª passada (o que mais cai) de todas as áreas; se não couber tudo, divide pelo peso.
-  const primeira = pesos.map((p) => ({ p, n: filaDoTema.get(p.t.slug)!.filter((id) => passadaDe(id) === 1).length }))
-  const totalPrimeira = primeira.reduce((s2, x) => s2 + x.n, 0)
-  if (totalPrimeira <= restante) for (const x of primeira) cotaDe.set(x.p.t.slug, x.n)
-  let sobra = restante - [...cotaDe.values()].reduce((s2, n) => s2 + n, 0)
-  // Plano menor que a 1ª passada: divide só a prioridade máxima entre as áreas.
-  const limite = (slug: string) => totalPrimeira > restante ? primeira.find((x) => x.p.t.slug === slug)!.n : filaDoTema.get(slug)!.length
-  for (let volta = 0; volta < 5 && sobra > 0; volta++) {
-    const abertos = pesos.filter((p) => (cotaDe.get(p.t.slug) ?? 0) < limite(p.t.slug))
-    const soma = abertos.reduce((s2, p) => s2 + p.peso, 0)
-    if (!soma) break
-    let usado = 0
-    for (const p of abertos) {
-      const atual = cotaDe.get(p.t.slug) ?? 0
-      const mais = Math.min(limite(p.t.slug) - atual, Math.max(1, Math.round((sobra * p.peso) / soma)), sobra - usado)
-      cotaDe.set(p.t.slug, atual + mais); usado += mais
-    }
-    sobra -= usado
-    if (!usado) break
-  }
-  // Ordem das áreas: começar por (se escolhido), depois os mais fracos e os que mais caem.
-  const ordemTemas = pesos.map((p) => p.t).filter((t) => (cotaDe.get(t.slug) ?? 0) > 0)
-    .sort((x, y) => (y.slug === opcoes.comecarPor ? 1 : 0) - (x.slug === opcoes.comecarPor ? 1 : 0) || fator(y) - fator(x))
-
   // Dias até a reta final, cada um com o seu tipo e peso na meta.
   const semanasDificeis = new Set(opcoes.semanasDificeis)
   const chaveSegunda = (d: Date) => { const s2 = new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7)); return `${s2.getFullYear()}-${String(s2.getMonth() + 1).padStart(2, '0')}-${String(s2.getDate()).padStart(2, '0')}` }
@@ -389,7 +336,12 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   // Adiantar: o que a pessoa fez além da meta num dia sai dos dias seguintes, a começar pelo próximo
   // dia de estudo (até zerar a meta dele; o resto vai para o outro). Só vale para os registros guardados
   // (dia e meta daquele dia); o de hoje usa o que ela já fez a mais ou o que pediu, o que for maior.
-  const registros = opcoes.adiantados
+  // Dias recentes sem registro (a pessoa passou da meta e não abriu o cronograma nem a página
+  // inicial depois, ou estudou noutro aparelho e fechou): a meta daquele dia é refeita com as
+  // respostas que havia até o fim dele, e o que passou dela vale como adiantado, como se o
+  // registro tivesse sido gravado. Antes, esse extra se diluía pelo plano inteiro.
+  const inferidos = interno.soMeta ? [] : inferirAdiantados(indice, respondidas, plano, hoje, criado, inicioRetaFinal, primeirasPorDia)
+  const registros = [...opcoes.adiantados, ...inferidos]
     .map((r) => ({ data: dataLocal(r.em), meta: Math.max(0, r.meta), pedido: Math.max(0, Math.min(400, r.pedido ?? 0)) }))
     .filter((r) => r.data <= hoje && r.data >= criado && hoje.getTime() - r.data.getTime() <= 30 * DIA)
     .sort((a, b) => a.data.getTime() - b.data.getTime())
@@ -422,7 +374,62 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const extraHoje = hoje >= inicioRetaFinal ? 0 : Math.max(0, feitasHoje - metaDiaria)
   const adiantarPedido = hoje >= inicioRetaFinal ? 0 : registros.find((r) => r.data.getTime() === hoje.getTime())?.pedido ?? 0
   const adiantarFalta = Math.max(0, Math.min(restante, adiantarPedido - extraHoje))
+  // Só a meta do dia (para refazer a meta de um dia passado, em inferirAdiantados).
+  if (interno.soMeta) return { metaDiaria, naRetaFinal: hoje >= inicioRetaFinal } as CalculoPlano
   const creditos = alocar(baseDoDia(metaDiaNormal), Math.max(extraHoje, adiantarPedido))
+  const focosPendentes = focosQueFaltam(indice, respondidas)
+
+  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos
+  // e para os que mais caem na prova.
+  const fator = (t: TemaPlano) => (1 + (t.acertoEstimado !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acertoEstimado) / 100) * 4)) : 0)) * t.incidencia
+  const focos = focoPorQuestao(indice)
+  const dominados = assuntosDominados(indice, respondidas)
+  // Passada de cada questão pelo nível do assunto; assunto dominado (85%+ em 15+) vai para a 3ª.
+  const passadaDe = (id: string): Passada => {
+    const f = focos.get(id)
+    if (!f || dominados.has(f.nome)) return 3
+    return f.nivel >= 4 ? 1 : f.nivel === 3 ? 2 : 3
+  }
+  const livresPorTema = new Map<string, string[]>()
+  for (const q of indice.questoes) {
+    if (!entraNoPlano(q, simulados) || respondidas[q.id]) continue
+    const slug = indice.temas[q.t]?.slug ?? String(q.t)
+    const lista = livresPorTema.get(slug) ?? []
+    lista.push(q.id)
+    livresPorTema.set(slug, lista)
+  }
+  // Fila de cada tema: os assuntos que mais caem primeiro; área dominada fica só com a 1ª passada.
+  const filaDoTema = new Map<string, string[]>()
+  for (const [slug, lista] of livresPorTema) {
+    const ordenada = ordenarPorFoco(lista, focos).sort((x, y) => passadaDe(x) - passadaDe(y))
+    filaDoTema.set(slug, opcoes.dominadas.includes(slug) ? ordenada.filter((id) => passadaDe(id) === 1) : ordenada)
+  }
+  const pesos = temas.filter((t) => (filaDoTema.get(t.slug)?.length ?? 0) > 0).map((t) => ({ t, peso: (filaDoTema.get(t.slug)!.length) * fator(t) }))
+  // Cotas proporcionais ao peso, limitadas ao que o tema tem; a sobra vai para quem ainda tem espaço.
+  const cotaDe = new Map<string, number>()
+  // Primeiro garante a 1ª passada (o que mais cai) de todas as áreas; se não couber tudo, divide pelo peso.
+  const primeira = pesos.map((p) => ({ p, n: filaDoTema.get(p.t.slug)!.filter((id) => passadaDe(id) === 1).length }))
+  const totalPrimeira = primeira.reduce((s2, x) => s2 + x.n, 0)
+  if (totalPrimeira <= restante) for (const x of primeira) cotaDe.set(x.p.t.slug, x.n)
+  let sobra = restante - [...cotaDe.values()].reduce((s2, n) => s2 + n, 0)
+  // Plano menor que a 1ª passada: divide só a prioridade máxima entre as áreas.
+  const limite = (slug: string) => totalPrimeira > restante ? primeira.find((x) => x.p.t.slug === slug)!.n : filaDoTema.get(slug)!.length
+  for (let volta = 0; volta < 5 && sobra > 0; volta++) {
+    const abertos = pesos.filter((p) => (cotaDe.get(p.t.slug) ?? 0) < limite(p.t.slug))
+    const soma = abertos.reduce((s2, p) => s2 + p.peso, 0)
+    if (!soma) break
+    let usado = 0
+    for (const p of abertos) {
+      const atual = cotaDe.get(p.t.slug) ?? 0
+      const mais = Math.min(limite(p.t.slug) - atual, Math.max(1, Math.round((sobra * p.peso) / soma)), sobra - usado)
+      cotaDe.set(p.t.slug, atual + mais); usado += mais
+    }
+    sobra -= usado
+    if (!usado) break
+  }
+  // Ordem das áreas: começar por (se escolhido), depois os mais fracos e os que mais caem.
+  const ordemTemas = pesos.map((p) => p.t).filter((t) => (cotaDe.get(t.slug) ?? 0) > 0)
+    .sort((x, y) => (y.slug === opcoes.comecarPor ? 1 : 0) - (x.slug === opcoes.comecarPor ? 1 : 0) || fator(y) - fator(x))
 
   // Blocos: em cada passada, as áreas se revezam em blocos de ~3 dias.
   const tamanhoBloco = Math.max(20, Math.round(metaDiaNormal * DIAS_BLOCO * (1 - MISTURA)))
@@ -574,6 +581,63 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 }
 
 const unicos = (lista: string[]) => [...new Set(lista)]
+
+/** Até quantos dias para trás um dia sem registro de adiantamento é refeito. */
+export const DIAS_INFERIR_ADIANTADO = 7
+const cacheMetaDoDia = new WeakMap<object, Map<string, number>>()
+
+/**
+ * A meta que um dia passado teve, refeita com as respostas que existiam até o fim dele
+ * (e os adiantamentos conhecidos até ali). Guardada em cache: as respostas de dias
+ * passados quase não mudam, e o cálculo roda a cada resposta.
+ */
+function metaDoDiaPassado(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, dia: Date): number {
+  const chave = chaveData(dia)
+  const fim = inicioDaChave(somarDias(chave, 1))
+  const ate: Record<string, RegistroMinimo> = {}
+  let n = 0, soma = 0
+  for (const [id, r] of Object.entries(respondidas)) {
+    const primeira = r?.historico?.[0]?.em ?? r?.q
+    if (primeira === undefined || primeira >= fim) continue
+    ate[id] = r; n++; soma = (soma + primeira) % 1e12
+  }
+  const { marcasDia: _m, ...opcoes } = plano.opcoes ?? {}
+  const assinatura = JSON.stringify([chave, plano.data_prova, plano.intensidade, plano.folgas, plano.base_respondidas, plano.criado_em, plano.incluir_simulados, opcoes, n, soma])
+  let cache = cacheMetaDoDia.get(indice)
+  if (!cache) { cache = new Map(); cacheMetaDoDia.set(indice, cache) }
+  const guardada = cache.get(assinatura)
+  if (guardada !== undefined) return guardada
+  const c = calcularPlano(indice, ate, plano, inicioDaChave(chave) + 12 * 3_600_000, { soMeta: true })
+  const meta = c.naRetaFinal ? Number.POSITIVE_INFINITY : c.metaDiaria
+  if (cache.size > 200) cache.clear()
+  cache.set(assinatura, meta)
+  return meta
+}
+
+/**
+ * Registros de adiantamento que faltam nos últimos dias: em cada dia de estudo sem
+ * registro, a meta é refeita (metaDoDiaPassado) e, se a pessoa passou dela, o dia
+ * ganha o registro { em, meta }. Em dia de folga a meta é zero. Vai do mais antigo ao
+ * mais novo, levando os já conhecidos, para que um dia adiantado alivie o seguinte.
+ */
+function inferirAdiantados(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, hoje: Date, criado: Date, inicioRetaFinal: Date, primeirasPorDia: Map<number, number>): RegistroAdiantado[] {
+  const reais = opcoesDe(plano).adiantados
+  const conhecidos = [...reais]
+  const novos: RegistroAdiantado[] = []
+  for (let k = DIAS_INFERIR_ADIANTADO; k >= 1; k--) {
+    const dia = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k)
+    if (dia < criado || dia >= inicioRetaFinal) continue
+    const em = chaveData(dia)
+    if (reais.some((r) => r.em === em)) continue
+    const feitas = primeirasPorDia.get(dia.getTime()) ?? 0
+    if (!feitas) continue
+    const meta = plano.folgas.includes(dia.getDay()) ? 0 : metaDoDiaPassado(indice, respondidas, { ...plano, opcoes: { ...(plano.opcoes ?? {}), adiantados: conhecidos.filter((r) => r.em < em) } }, dia)
+    if (feitas <= meta) continue
+    const registro = { em, meta }
+    novos.push(registro); conhecidos.push(registro)
+  }
+  return novos
+}
 
 /** Assuntos que a pessoa já domina: 85% ou mais de acerto em 15 ou mais questões. Saem para a 3ª passada. */
 export function assuntosDominados(indice: Indice, respondidas: Record<string, RegistroMinimo>): Set<string> {

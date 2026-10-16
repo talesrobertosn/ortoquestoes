@@ -15,6 +15,7 @@ import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
 import { CONQUISTAS, CONQUISTAS_SEQUENCIA, proximaConquista } from '../estado/conquistas'
 import { IconePixel } from '../componentes/IconePixel'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
+import { fraseAdiantado } from '../dados/frasesAdiantar'
 import { recurso } from '../config'
 import { href, navegar } from '../util/rotas'
 import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
@@ -600,6 +601,7 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
       <h2 id="rs-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${calculo.faltaHoje} para a meta de hoje`}</h2>
       <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
       <div className="rs-cronograma__proximo">
+        {fraseAdiantado(calculo) && <><b>{fraseAdiantado(calculo)}</b><br /></>}
         {feita ? <>Pronto por hoje. Se quiser, <b>adiante o próximo dia</b>: o que fizer a mais sai dele. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
         {amanha && <><br />{chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
       </div>

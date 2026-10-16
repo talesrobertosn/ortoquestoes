@@ -107,11 +107,33 @@ Linguagem visual fixa:
 46. [x] "Ajustar" no topo, no "Onde você está", e no cartão Hoje em dia de folga (antes só no rodapé). "Como o seu cronograma funciona" começa recolhido; o tour de 3 partes some após "Entendi" e só é lido/gravado no cronograma do assinante, então a vitrine não o consome e ele aparece sozinho quando a pessoa assina. (T5.5, branch claude/cronograma-ajustes, 15/10/2026)
 47. [x] Um número só de "faltam N dias": a montagem e o painel contam de meia-noite a meia-noite (`diasAte` em `planoEstudo.ts`), sem o `Math.ceil` que dava um dia a mais. (branch claude/cronograma-ajustes, 15/10/2026)
 
+48. [x] Adiantar de ponta a ponta (pedido do Tales, 16/10/2026): quem puxou questões dos próximos dias tem, no dia seguinte,
+    exatamente essas questões a menos. **O que estava errado:** o registro do dia (`opcoes.adiantados`) só era gravado se a
+    pessoa, depois de passar da meta, abrisse o cronograma ou a página inicial com o aparelho sincronizado. Quem terminava a
+    sessão e fechava o site (ou estudava no Treinar, ou num aparelho que não chegou a gravar) não tinha registro, e no dia
+    seguinte o extra voltava a se diluir pelo plano inteiro (meta de 62 em vez de 42 depois de 20 a mais). Agora o motor
+    refaz a meta dos últimos 7 dias sem registro (`inferirAdiantados` em `planoEstudo.ts`, com as respostas que existiam até
+    o fim de cada dia, em cache) e trata o que passou dela como adiantado; o registro gravado continua valendo primeiro.
+    A interface diz a regra com os números: "Você adiantou 30 questões; amanhã sua meta é 32 (era 62)" (painel Adiantar e
+    fim de sessão) e "Você adiantou 30 questões de hoje; hoje sua meta é 32 (era 62)" no dia seguinte (`dados/frasesAdiantar.ts`).
+    Teste: `fixtures/testar_adiantar_ponta_a_ponta.mjs` (botão, extra sem botão e sem registro, vários dias na ordem pulando a
+    folga, virada do dia às 23h50/0h10 de São Paulo com o aparelho em 4 fusos, dois aparelhos). A meta normal de D+1 pode
+    ficar 1 questão abaixo da mostrada em D (arredondamento da divisão pelos dias que faltam), nunca acima.
+49. [x] Calendário do mês (pedido do Tales, 16/10/2026): botão "Ver calendário" em "Esta semana" e "Ver no calendário" em
+    "Depois" (ou `#/cronograma?calendario=1`). Pop-up grande no computador, tela cheia no celular; grade seg–dom, navegação
+    do mês da criação até o da prova. Cada dia: áreas com a cor (nomes no computador, pontos no celular), questões, dia leve,
+    folga hachurada, feito (✓ e quantas), hoje, mini-simulado e início de passada (dourado tracejado), reta final (véu dourado)
+    e a prova. Tocar num dia abre o detalhe: resumão, questões por área com os assuntos, mini-simulado, extras e o tempo do
+    dia; hoje tem "Começar/Continuar"; os 3 próximos dias de estudo têm "Adiantar este dia" / "Adiantar até este dia" (o
+    mesmo pedido do painel Adiantar, que desconta na ordem). Código: `src/paginas/CronogramaCalendario.tsx` e
+    `src/estilos/paginas/CronogramaCalendario.css`. Capturas: `node fixtures/capturar_calendario.mjs` com o Vite aberto.
+
 Como funciona por dentro: `opcoes.adiantados` (no `planos_estudo.opcoes`, sem SQL novo) guarda, por dia, a meta daquele dia e
 o que a pessoa pediu para adiantar. No dia seguinte, o motor conta as primeiras respostas daquele dia, tira a meta e
 desconta o resto dos dias seguintes; a meta normal é recalculada devolvendo essas questões, então o plano continua
 agendando exatamente o que falta. O registro é gravado sozinho quando a pessoa passa da meta (página do cronograma,
-página inicial e fim de sessão leem o mesmo cálculo). Teste: `fixtures/testar_cronograma_adiantar.mjs`.
+página inicial e fim de sessão leem o mesmo cálculo); se faltar (item 48), o motor refaz a meta do dia e chega ao mesmo
+número. Os dias são os de São Paulo (`src/util/dia.ts`), seja qual for o fuso do aparelho. Teste: `fixtures/testar_cronograma_adiantar.mjs`.
 Modo demonstração: `#/cronograma?demo=1&pendente` e `#/cronograma?demo=1&feita`.
 
 ## Como ficou (14/10/2026)

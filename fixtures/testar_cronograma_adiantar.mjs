@@ -72,7 +72,10 @@ try {
   const com = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-10-13', meta: metaOntem }] }), agora)
   assert.equal(com.adiantadoHoje, 25, 'o que passou da meta ontem deveria sair de hoje')
   assert.equal(com.metaDiaria, com.metaHojeSemAdiantar - 25)
-  assert.ok(Math.abs(com.metaHojeSemAdiantar - sem.metaDiaria) <= 1, 'o resto do plano não deveria mudar')
+  // Sem o registro (a pessoa não abriu o cronograma depois de passar da meta), o motor refaz a
+  // meta de ontem e chega ao mesmo resultado: o extra não se dilui pelo plano.
+  assert.equal(sem.adiantadoHoje, 25, 'sem registro, o extra de ontem também deveria sair de hoje')
+  assert.equal(sem.metaDiaria, com.metaDiaria)
   assert.equal(agendadas(com), com.restante)
   conferirPlano(com, 'adiantado ontem')
 
@@ -85,8 +88,10 @@ try {
   assert.equal(agendadas(c6), c6.restante)
 
   // 7. Registro antigo demais ou na reta final não vale.
-  const c7 = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
+  const c7 = m.calcularPlano(indice, {}, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
   assert.equal(c7.adiantadoHoje, 0)
+  const c7b = m.calcularPlano(indice, r5, plano({ adiantados: [{ em: '2026-08-01', meta: 10 }] }), agora)
+  assert.equal(c7b.adiantadoHoje, sem.adiantadoHoje)
 
   console.log('Adiantar no cronograma: ok')
 } finally {

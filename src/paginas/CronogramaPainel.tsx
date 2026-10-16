@@ -6,6 +6,8 @@ import { corDaArea } from '../dados/coresAreas'
 import { posicaoDaArea } from '../dados/incidencia'
 import { Icone } from '../componentes/Icone'
 import { chaveCivil, diaCivil } from '../util/dia'
+import { fraseAdiantado } from '../dados/frasesAdiantar'
+export { fraseAdiantado, fraseAdiantadoHoje, noDia } from '../dados/frasesAdiantar'
 
 /**
  * A apresentação do cronograma (reforma de 14/10/2026, docs/cronograma/PLANO.md).
@@ -192,7 +194,7 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
   const opcoes: Array<{ id: string; n: number; rotulo: string; efeito: string }> = []
   if (d1) {
     for (const n of [10, 20, 30]) if (n < d1.meta) opcoes.push({ id: `+${n}`, n, rotulo: `+${n}`, efeito: `${nomeDia(d1.data)} fica com ${d1.meta - n}` })
-    opcoes.push({ id: 'd1', n: d1.meta, rotulo: diferencaDias(d1.data) === 1 ? 'Amanhã inteiro' : `${semanaDia(d1.data)} inteira`, efeito: `${d1.meta} questões · ${nomeDia(d1.data)} livre` })
+    opcoes.push({ id: 'd1', n: d1.meta, rotulo: diferencaDias(d1.data) === 1 ? 'Amanhã inteiro' : `${semanaDia(d1.data)} ${d1.data.getDay() === 0 || d1.data.getDay() === 6 ? 'inteiro' : 'inteira'}`, efeito: `${d1.meta} questões · ${nomeDia(d1.data)} livre` })
     if (d2) opcoes.push({ id: 'd2', n: d1.meta + d2.meta, rotulo: `2 dias`, efeito: `${d1.meta + d2.meta} questões · até ${semanaDia(d2.data)}` })
   }
   const pendente = Math.max(0, calculo.adiantarPedido - calculo.extraHoje)
@@ -208,8 +210,8 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
       {ja > 0 && <p className="cp-adiantar__estado" role="status">
         <Icone nome="certo" tamanho={14} />
         <span>
-          <b>{ja} {ja === 1 ? 'questão adiantada' : 'questões adiantadas'}</b>
-          {tocados.length > 0 && <> · {tocados.slice(0, 2).map((d) => `${nomeDia(d.data)}: ${d.meta + d.adiantado} → ${d.meta}`).join(' · ')}</>}
+          <b>{fraseAdiantado(calculo) ?? `${ja} ${ja === 1 ? 'questão adiantada' : 'questões adiantadas'}`}</b>
+          {tocados.length > 1 && <> · {tocados.slice(1, 3).map((d) => `${nomeDia(d.data)}: ${d.meta + d.adiantado} → ${d.meta}`).join(' · ')}</>}
           {pendente > 0 && <> · faltam {pendente} para fechar</>}
         </span>
         {pendente > 0 && <button type="button" className="cp-adiantar__cancelar" disabled={salvando} onClick={aoCancelar}>Cancelar o que falta</button>}
@@ -264,7 +266,7 @@ const diferencaDias = (d: Date) => Math.round((meiaNoite(d).getTime() - diaCivil
 
 // ─── Esta semana ───────────────────────────────────────────────────────────
 
-export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean }) {
+export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvando, simples = false, aoVerCalendario }: { calculo: CalculoPlano; plano: PlanoSalvo; constancia: Constancia | null; aoSemanaDificil?: (ativar: boolean) => void; salvando?: boolean; simples?: boolean; aoVerCalendario?: () => void }) {
   const hoje = diaCivil()
   const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
   const opcoes = opcoesDe(plano)
@@ -302,6 +304,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
   return (
     <section className="cp-bloco" aria-labelledby="cp-semana-titulo">
       <p className="cp-rotulo"><span id="cp-semana-titulo">Esta semana</span><b>{curta(dias[0])} a {curta(dias[6])}</b></p>
+      {aoVerCalendario && <button type="button" className="cc-abrir cc-abrir--largo" onClick={aoVerCalendario}><Icone nome="calendario" tamanho={17} /> Ver calendário: o que estudar em cada dia</button>}
       <div className="cp-semana">
         <ol className="cp-dias">
           {plano7.map((x) => (
@@ -330,7 +333,7 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
 
 interface SemanaDepois { inicio: Date; fim: Date; partes: Array<{ slug: string; nome: string; n: number; assuntos: string[] }>; total: number; passadaNova: Passada | null; minis: Date[] }
 
-export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false }: { calculo: CalculoPlano; maximo?: number; detalhe?: ReactNode; plano?: PlanoSalvo; semMais?: boolean }) {
+export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false, aoVerCalendario }: { calculo: CalculoPlano; maximo?: number; detalhe?: ReactNode; plano?: PlanoSalvo; semMais?: boolean; aoVerCalendario?: () => void }) {
   const extra = plano?.opcoes?.provaExtra && /^\d{4}-\d{2}-\d{2}$/.test(plano.opcoes.provaExtra.data) ? { nome: plano.opcoes.provaExtra.nome, data: new Date(`${plano.opcoes.provaExtra.data}T00:00:00`) } : null
   const [tudo, definirTudo] = useState(false)
   const hoje = diaCivil()
@@ -383,6 +386,7 @@ export function Depois({ calculo, maximo = 5, detalhe, plano, semMais = false }:
             <li className="cp-depois__marco cp-depois__marco--prova"><span className="cp-depois__data">{curta(prova)}</span><span><span className="cp-depois__faixa cp-depois__faixa--prova" /><strong>Prova</strong><small>Boa prova!</small></span></li>
           </>}
         </ol>
+        {aoVerCalendario && <button type="button" className="cc-abrir" onClick={aoVerCalendario}><Icone nome="calendario" tamanho={16} /> Ver no calendário</button>}
         {semanas.length > maximo && !semMais && <button type="button" className="cp-depois__mais" onClick={() => definirTudo(!tudo)} aria-expanded={tudo}>{tudo ? 'Mostrar menos' : `Ver as ${semanas.length} semanas`}</button>}
         {tudo && detalhe}
       </div>
