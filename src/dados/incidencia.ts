@@ -112,6 +112,19 @@ export function nivelPorQuestao(indice: Indice): Map<string, Nivel> {
 
 const minusculo = (s: string) => s.toLocaleLowerCase('pt-BR')
 
+/**
+ * Nomes dos subtemas já em minúsculas, uma vez por acervo. toLocaleLowerCase
+ * com idioma é lento (passa pelo ICU), e a varredura o chamava para cada
+ * subtema de cada questão, em cada assunto: 0,4 s de CPU a cada cálculo do
+ * cronograma num computador, mais de 1,5 s num celular.
+ */
+const cacheSubtemas = new WeakMap<Indice, string[]>()
+function subtemasMinusculos(indice: Indice): string[] {
+  let lista = cacheSubtemas.get(indice)
+  if (!lista) { lista = indice.subtemas.map((s) => minusculo(s ?? '')); cacheSubtemas.set(indice, lista) }
+  return lista
+}
+
 /** Questões válidas (sem cópias nem anuladas) de uma área, ou de um assunto dentro dela. */
 const cacheIds = new WeakMap<Indice, Map<string, string[]>>()
 
@@ -132,8 +145,9 @@ function varrerFoco(indice: Indice, area: AreaIncidencia, foco?: Foco): string[]
   const tema = indice.temas.findIndex((t) => t.slug === area.slug)
   if (tema < 0) return []
   const exigidos = [area.subtema, foco ? (foco.noAcervo ?? foco.nome) : undefined].filter((s): s is string => !!s).map(minusculo)
+  const subtemas = subtemasMinusculos(indice)
   return indice.questoes
-    .filter((q) => q.t === tema && !q.dup && !q.ar && q.an !== 1 && exigidos.every((alvo) => q.s.some((s) => minusculo(indice.subtemas[s] ?? '') === alvo)))
+    .filter((q) => q.t === tema && !q.dup && !q.ar && q.an !== 1 && exigidos.every((alvo) => q.s.some((s) => (subtemas[s] ?? '') === alvo)))
     .map((q) => q.id)
 }
 

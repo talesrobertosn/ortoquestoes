@@ -249,13 +249,8 @@ function ehFavorita(contexto: ContextoLocal, id: string): boolean {
   return conjunto.has(id)
 }
 
-function aplicaUm(
-  indice: Indice,
-  item: ItemIndice,
-  filtros: Filtros,
-  contexto: ContextoLocal,
-  ignorar?: ChaveFaceta,
-): boolean {
+/** Foco, cópias e anuladas: a parte do filtro que nenhuma faceta ignora. */
+function elegivel(indice: Indice, item: ItemIndice, filtros: Filtros): boolean {
   if (!noFoco(item, filtros.areas, indice)) return false
   // Cópias duplicadas continuam no índice para o histórico, mas nunca são sorteadas nem contadas,
   // salvo quando a original fica fora do foco (a mesma questão numa prova de ortopedia e numa da mão).
@@ -264,7 +259,27 @@ function aplicaUm(
     if (!original || noFoco(original, filtros.areas, indice)) return false
   }
   if (!filtros.incluirAnuladas && item.an === 1) return false
+  return true
+}
 
+function aplicaUm(
+  indice: Indice,
+  item: ItemIndice,
+  filtros: Filtros,
+  contexto: ContextoLocal,
+  ignorar?: ChaveFaceta,
+): boolean {
+  return elegivel(indice, item, filtros) && aplicaFacetas(indice, item, filtros, contexto, ignorar)
+}
+
+/** As facetas escolhidas (assunto, prova, ano...), menos a que `ignorar` indicar. */
+function aplicaFacetas(
+  indice: Indice,
+  item: ItemIndice,
+  filtros: Filtros,
+  contexto: ContextoLocal,
+  ignorar?: ChaveFaceta,
+): boolean {
   // Assunto é uma árvore: marcar um tema significa "o tema inteiro" e marcar
   // subtemas significa "só estes". Os dois se somam, nunca se anulam.
   if (ignorar !== 'assunto' && (filtros.temas.length > 0 || filtros.subtemas.length > 0)) {
@@ -359,10 +374,13 @@ export function contar(
     simulados: 0,
   }
 
+  // A parte comum (foco, cópias, anuladas) é conferida uma vez por questão, e
+  // não uma vez por faceta: a contagem roda a cada filtro marcado e a cada tecla.
   for (const item of indice.questoes) {
-    if (aplicaUm(indice, item, filtros, contexto)) contagens.total++
+    if (!elegivel(indice, item, filtros)) continue
+    if (aplicaFacetas(indice, item, filtros, contexto)) contagens.total++
 
-    if (aplicaUm(indice, item, filtros, contexto, 'situacao')) {
+    if (aplicaFacetas(indice, item, filtros, contexto, 'situacao')) {
       const registro = contexto.respondidas[item.id]
       contagens.porSituacao.todas = (contagens.porSituacao.todas ?? 0) + 1
       if (!registro) {
@@ -384,7 +402,7 @@ export function contar(
       if (turmaAcertaVoceErrou(item.id, contexto)) contagens.porSituacao.turmaAcertaVoceErrou = (contagens.porSituacao.turmaAcertaVoceErrou ?? 0) + 1
     }
 
-    if (aplicaUm(indice, item, filtros, contexto, 'assunto')) {
+    if (aplicaFacetas(indice, item, filtros, contexto, 'assunto')) {
       const tema = indice.temas[item.t]
       if (tema) contagens.porTema[tema.slug] = (contagens.porTema[tema.slug] ?? 0) + 1
       for (const i of item.s) {
@@ -392,7 +410,7 @@ export function contar(
         if (nome) contagens.porSubtema[nome] = (contagens.porSubtema[nome] ?? 0) + 1
       }
     }
-    if (aplicaUm(indice, item, filtros, contexto, 'provas')) {
+    if (aplicaFacetas(indice, item, filtros, contexto, 'provas')) {
       if (item.p !== null) {
         const prova = indice.provas[item.p]
         if (prova) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
@@ -400,11 +418,11 @@ export function contar(
         for (const prova of PROVAS_DOS_SIMULADOS) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
       }
     }
-    if (item.sim === 1 && aplicaUm(indice, item, filtros, contexto, 'soSimulados')) contagens.simulados++
-    if (aplicaUm(indice, item, filtros, contexto, 'anos') && item.a !== null) {
+    if (item.sim === 1 && aplicaFacetas(indice, item, filtros, contexto, 'soSimulados')) contagens.simulados++
+    if (aplicaFacetas(indice, item, filtros, contexto, 'anos') && item.a !== null) {
       contagens.porAno[item.a] = (contagens.porAno[item.a] ?? 0) + 1
     }
-    if (aplicaUm(indice, item, filtros, contexto, 'dificuldades') && item.d) {
+    if (aplicaFacetas(indice, item, filtros, contexto, 'dificuldades') && item.d) {
       contagens.porDificuldade[item.d] = (contagens.porDificuldade[item.d] ?? 0) + 1
     }
   }

@@ -43,7 +43,7 @@ export function SalaoCampeoes({ lugares, titulo, subtitulo, chamada }: { lugares
       <div className="sc__corpo">
       <div className="sc__janela">
         <div className="sc__mundo">
-          <img className="sc__camada sc__fundo" src={img('fundo')} alt="" draggable={false} />
+          <img className="sc__camada sc__fundo" src={img('fundo')} alt="" draggable={false} decoding="async" />
           <img className="sc__camada sc__vitral" src={img('vitral-luz')} alt="" draggable={false} aria-hidden="true" />
           <span className="sc__raios" aria-hidden="true"><i /><i /><i /><i /><i /></span>
           <img className="sc__estandarte" style={caixa(84, 8, 24, 74)} src={img('estandarte-esq')} alt="" draggable={false} />

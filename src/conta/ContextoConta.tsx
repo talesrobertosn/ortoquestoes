@@ -13,7 +13,6 @@ import { tomarVoltar } from './passagem'
 import { aplicarPerfilPendente } from './perfilPendente'
 import { aplicarConviteRecebido, conferirMinhaIndicacao } from './indicacao'
 import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
-import { verificarMarcoEmail } from './emailsMarco'
 import { ler } from '../estado/armazenamento'
 import { vigiarSessaoEntreAparelhos } from '../estado/sessao'
 
@@ -124,7 +123,9 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!sessao?.user.id || status.estado !== 'salvo' || status.pendentes > 0) return
     const respondidas = Object.keys(ler<Record<string, unknown>>('respondidas', {})).length
-    void verificarMarcoEmail(respondidas)
+    // Sob demanda: a tabela de conquistas (e o bestiário dos flashcards que ela
+    // consulta) pesava ~60 KB no código inicial só para esta checagem.
+    void import('./emailsMarco').then(({ verificarMarcoEmail }) => verificarMarcoEmail(respondidas)).catch(() => undefined)
     void conferirMinhaIndicacao(sessao.user.id, respondidas)
   }, [sessao?.user.id, status.estado, status.pendentes])
   // Perfil preenchido no passo 2 do cadastro antes de confirmar o e-mail: entra na conta agora.

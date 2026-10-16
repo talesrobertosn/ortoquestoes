@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import type { Plugin } from 'vite'
 import type { OutputBundle, OutputChunk } from 'rollup'
@@ -22,6 +22,18 @@ function fatiarAcervo(): Plugin {
     closeBundle() {
       const acervo = join(saida, 'acervo')
       if (!existsSync(join(acervo, 'temas'))) return
+      // Os arquivos-fonte são JSON indentado (legível no repositório e nos
+      // scripts). Publicados, vão compactos: o índice cai de 1,5 MB para 0,7 MB
+      // (10% a menos depois do gzip) e o celular gasta metade do tempo no
+      // JSON.parse. Mesmo conteúdo, só sem espaços.
+      const compactar = (pasta: string) => {
+        if (!existsSync(pasta)) return
+        for (const arquivo of readdirSync(pasta).filter((f) => f.endsWith('.json'))) {
+          const caminho = join(pasta, arquivo)
+          try { writeFileSync(caminho, JSON.stringify(JSON.parse(readFileSync(caminho, 'utf8')))) } catch { /* não é JSON válido: fica como está */ }
+        }
+      }
+      for (const pasta of [acervo, join(acervo, 'temas'), join(acervo, 'comentarios')]) compactar(pasta)
       const escrever = (pasta: string, dados: Record<string, unknown>) => {
         mkdirSync(join(acervo, pasta), { recursive: true })
         for (const [id, valor] of Object.entries(dados)) {
@@ -61,6 +73,27 @@ const PAGINAS_PRE_CARGA: Record<string, string> = {
   cronograma: 'src/paginas/PlanoEstudo.tsx',
   assinatura: 'src/paginas/Assinatura.tsx',
   ranking: 'src/paginas/Ranking.tsx',
+  // Demais páginas que recebem visita direta (links de e-mail, anúncios,
+  // atalhos do aplicativo instalado): sem estas, a página só começava a descer
+  // depois do código principal rodar.
+  'plano-de-estudo': 'src/paginas/PlanoEstudo.tsx',
+  conta: 'src/paginas/Conta.tsx',
+  entrar: 'src/paginas/Conta.tsx',
+  'simulado-nacional': 'src/paginas/SimuladoNacional.tsx',
+  resumao: 'src/paginas/Resumao.tsx',
+  favoritas: 'src/paginas/Favoritas.tsx',
+  erros: 'src/paginas/CadernoErros.tsx',
+  conquistas: 'src/paginas/Ranking.tsx',
+  'temas-que-mais-caem': 'src/paginas/TemasQueMaisCaem.tsx',
+  indicar: 'src/paginas/Indicar.tsx',
+  convite: 'src/paginas/Indicar.tsx',
+  ligas: 'src/paginas/Ligas.tsx',
+  flashcards: 'src/paginas/Flashcards.tsx',
+  termos: 'src/paginas/Termos.tsx',
+  'condicoes-assinatura': 'src/paginas/CondicoesAssinatura.tsx',
+  sobre: 'src/paginas/Apoio.tsx',
+  projeto: 'src/paginas/Apoio.tsx',
+  contato: 'src/paginas/Apoio.tsx',
 }
 
 function preCargaPorRota(): Plugin {
@@ -105,6 +138,25 @@ function preCargaPorRota(): Plugin {
 }
 
 /**
+ * Origem do Supabase para o preconnect do index.html (toda página consulta o
+ * aviso do site e a conta logo na abertura). O mesmo endereço padrão de
+ * src/conta/supabase.ts, trocado pela variável de ambiente quando ela existe.
+ */
+const SUPABASE_PADRAO = 'https://oojrfzfjmkgmjcgzczln.supabase.co'
+function origemSupabase(): Plugin {
+  let origem = new URL(SUPABASE_PADRAO).origin
+  return {
+    name: 'origem-supabase',
+    configResolved(config) {
+      const definida = loadEnv(config.mode, config.envDir ?? process.cwd(), 'VITE_').VITE_SUPABASE_URL?.trim()
+      try { if (definida) origem = new URL(definida).origin } catch { /* endereço inválido: fica o padrão */ }
+    },
+    // Antes do Vite ler o HTML: ele decodifica os href, e "%SU..." não é um escape válido.
+    transformIndexHtml: { order: 'pre', handler: (html) => html.replace(/%SUPABASE_ORIGEM%/g, origem) },
+  }
+}
+
+/**
  * Caminho de publicação.
  *
  * O padrão é RELATIVO ("./"), e essa escolha resolve um problema de uma vez:
@@ -121,7 +173,7 @@ const base = process.env.BASE_ORTOQUESTOES ?? './'
 
 export default defineConfig({
   base,
-  plugins: [react(), preCargaPorRota(), fatiarAcervo()],
+  plugins: [react(), origemSupabase(), preCargaPorRota(), fatiarAcervo()],
   build: {
     target: 'es2020',
     assetsInlineLimit: 2048,

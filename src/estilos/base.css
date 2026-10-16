@@ -160,6 +160,15 @@ textarea {
   padding: 1.25rem 0 3rem;
 }
 
+/* Enquanto a página baixa (o guerreiro da espera ou o esqueleto), a área
+   principal ocupa a tela inteira: o rodapé fica abaixo da dobra e não "pula"
+   para baixo quando o conteúdo chega. Era o maior deslocamento de layout
+   (CLS) do site, em quase toda primeira visita. */
+.principal:has(.espera-pixel, .esqueleto, div[aria-busy="true"], section[aria-busy="true"]) {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
 @media (min-width: 48rem) {
   .principal {
     padding: 2rem 0 4rem;
