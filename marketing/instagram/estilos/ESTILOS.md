@@ -321,3 +321,10 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 
 ## Treine grátis: aprovado em 12/10/2026
 - **Story de propaganda (1 tela):** MacBook e iPhone com telas reais, os quatro recursos do plano gratuito, o botão dourado "Treine grátis" e um espaço livre para a figurinha de link com utm, que abre direto em "criar conta". É a exceção autorizada à regra dos stories sem figurinha. [Modelo](treine-gratis/modelo.html) e [guia](TREINE-GRATIS.md).
+
+## Embarque, Exame de DNA e Créditos finais: aprovados em 16/10/2026
+- **Embarque (feed, 3 slides):** painel de partidas, a imagem da questão numa janela de avião, alternativas como bilhetes e a resposta num cartão de embarque. Bom para nervo ou tendão que atravessa ou perfura algo. [Modelo](embarque/modelo.html).
+- **Exame de DNA (stories, 3 telas):** "quem é o pai do ...?", laudo "POSITIVO" e os candidatos que não são o pai. Bom para perguntas de origem, contribuição principal, inervação ou irrigação. [Modelo](exame-dna/modelo.html).
+- **Créditos finais (stories de propaganda, 3 telas):** o que é grátis, o que vem com a assinatura (Cronograma primeiro) e a chamada "Treine grátis" com espaço para a figurinha de link. [Modelo](creditos-finais/modelo.html).
+
+[Guia de escolha, roteiro, acabamento e revisão](EMBARQUE-DNA-CREDITOS.md). Usar por cópia direta, porque os estilos não estão no sorteador.
