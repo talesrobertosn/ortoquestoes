@@ -1,3 +1,5 @@
+> **16/10/2026 — Easter eggs e encontros:** implementação em `codex/easter-eggs-eventos-20261016`, base atualizada `b1521885`. Ver [gatilhos, decisões, testes e passagem](../EASTER-EGGS-E-EVENTOS.md). Publicação autorizada por Tales; nenhuma mudança médica ou SQL. Questões comuns podem receber visitas; provas continuam bloqueadas.
+
 # Como continuar a Cripta (para qualquer agente: Claude Code, Codex ou outro)
 
 **Último ajuste visual e de áudio (13/10/2026):** [Polimento do beta](POLIMENTO-AUDIO-OPINIAO.md): opinião redesenhada, controle vertical com início em 20%, camadas do cenário alinhadas, capa integrada e proposta documentada de herói adulto.

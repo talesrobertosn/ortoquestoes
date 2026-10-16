@@ -28,12 +28,12 @@ export function MapaPerdido() {
     <article className="empilha-2 limite-leitura">
       <section className="mapa-perdido">
         <p className="mapa-perdido__codigo">404</p>
-        <p className="mapa-perdido__titulo">Esta trilha não existe</p>
+        <p className="mapa-perdido__titulo">Fratura no caminho</p>
         <svg className="mapa-perdido__trilha" viewBox="0 0 300 90" aria-hidden="true">
-          <path d="M10 70 C 60 10, 110 90, 160 40 S 250 20, 290 60" fill="none" stroke="#f4cf7c" strokeWidth="4" strokeDasharray="10 9" />
-          <path d="M276 42l14 14M290 42l-14 14" stroke="#d9605a" strokeWidth="5" strokeLinecap="square" />
+          <path d="M10 70 C 60 10, 90 80, 125 50 M160 40 S 250 20, 290 60" fill="none" stroke="#f4cf7c" strokeWidth="4" strokeDasharray="10 9" />
+          <path d="M130 28l12 14-10 11 14 13M119 20l43 45M109 32l43 45" fill="none" stroke="#d9ad69" strokeWidth="5" strokeLinecap="square" />
         </svg>
-        <p>O endereço pode ter mudado. Volte para o início ou continue de onde parou.</p>
+        <p>Este link perdeu a continuidade. Vamos imobilizar o problema: volte ao início ou retome seu estudo.</p>
       </section>
       <div className="linha linha--empilha-celular">
         <a className="botao botao--principal botao--grande" href={href('/')}>Voltar ao início</a>

@@ -1,5 +1,5 @@
 import { ehRotaDoJogo, lembrarFundo, rotaDoFundo } from './flashcards/fundo'
-import { lazy, Suspense, useEffect, useRef, type ReactNode } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from 'react'
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
 import { rotaDe, usarRota, type Rota } from './util/rotas'
@@ -23,6 +23,8 @@ import { AvisoCookies } from './componentes/AvisoCookies'
 // inicial, isso evita baixar o acervo completo para rotas administrativas,
 // termos, conta e planos. Os carregadores vêm de util/preCarga, que adianta o
 // download quando o dedo chega num link ou o aparelho fica ocioso.
+const Encontros = lazy(() => import('./eventos/Encontros'))
+
 const Inicio = lazy(() => carregadores.Inicio().then(({ Inicio }) => ({ default: Inicio })))
 const Treinar = lazy(() => carregadores.Treinar().then(({ Treinar }) => ({ default: Treinar })))
 const Sessao = lazy(() => carregadores.Sessao().then(({ Sessao }) => ({ default: Sessao })))
@@ -215,6 +217,8 @@ function ehJogo(rota: Rota) {
 }
 
 export function App() {
+  const [encontrosProntos, prepararEncontros] = useState(false)
+  useEffect(() => { const t = setTimeout(() => prepararEncontros(true), 2500); return () => clearTimeout(t) }, [])
   const rota = usarRota()
   const [primeiro, segundo] = rota.segmentos
   const { densidade, fonte } = usarLeitura()
@@ -285,6 +289,7 @@ export function App() {
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
       <HospedeConfirmacao />
+      {encontrosProntos && <Suspense fallback={null}><Encontros /></Suspense>}
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import { PreferenciaEncontros } from '../eventos/PreferenciaEncontros'
 import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
 import { haQuanto } from '../componentes/IndicadorSincronia'
 import { usarConta } from '../conta/ContextoConta'
@@ -719,6 +720,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             <div className="ct-opcao"><span className="ct-opcao__rotulo">Tema</span><div className="ct-seg ct-seg--tema">{([['claro', 'Claro', 'sol'], ['escuro', 'Escuro', 'lua']] as const).map(([valor, rotulo, icone]) => <button key={valor} type="button" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}><Icone nome={icone} tamanho={15} /> {rotulo}</button>)}</div></div>
             <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
             <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
+            <PreferenciaEncontros />
             <p className="ct-amostra" style={{ fontSize: `${fonte}%` }}>Prévia: é assim que o enunciado das questões aparece.</p>
           </section>
           <section className="ct-cartao">

@@ -1,3 +1,4 @@
+import { DATA_TEOT } from '../dados/calendarioProvas'
 import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
@@ -37,7 +38,7 @@ const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
 const PROVAS = ['TEOT', 'TARO', 'ENARE R4', 'Outra prova']
 /** Próxima prova teórica do TEOT e do TEPOT: vem preenchida por padrão. */
-const DATA_TEOT = '2027-01-10'
+// A data também é usada pelos lembretes discretos de véspera.
 /** Semanas que o não assinante vê na prévia do próprio cronograma. */
 const SEMANAS_PREVIA = 2
 const curta = (d: Date) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })

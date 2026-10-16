@@ -1,3 +1,4 @@
+import { GatoBiblioteca } from '../../eventos/GatoBiblioteca'
 import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { registrarEstudo } from '../aprendizagem'
 import { gravar, ler } from '../../estado/armazenamento'
@@ -155,7 +156,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
     <div className="fc-biblioteca">
       <header className="fc-biblioteca__cabeca">
         <div>
-          <h2>Biblioteca de flashcards</h2>
+          <h2>Biblioteca de flashcards <GatoBiblioteca /></h2>
           <p><OrigemDoAcervo cartas={cartas} /> Escolha o que revisar.</p>
         </div>
         <button type="button" className="fc-botao-pequeno fc-biblioteca__mostrar" aria-expanded={filtrosAbertos} onClick={() => definirFiltrosAbertos((v) => !v)}>
