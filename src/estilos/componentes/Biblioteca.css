@@ -1,0 +1,79 @@
+/* Biblioteca fora dela: caixa do cronograma e convite no fim da questão (16/10/2026).
+   A cor da lombada é a da área (--bib-area); o resto segue a paleta do site (verdete e ouro). */
+
+/* ---------- Caixa do cronograma ---------- */
+.bib-caixa__todos { font-size: 0.78rem; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--verdete); text-decoration: none; }
+.bib-caixa__todos:hover { text-decoration: underline; }
+.bib-caixa { display: grid; gap: 0.6rem; padding: 0.8rem; border: 1px solid var(--traco); border-radius: var(--raio-cartao); background: var(--superficie); }
+.bib-caixa__nota { display: flex; gap: 0.4rem; align-items: flex-start; margin: 0.1rem 0.15rem 0; font-size: 0.74rem; line-height: 1.4; color: var(--texto-2); }
+.bib-caixa__nota svg { flex: none; margin-top: 0.1rem; color: var(--ouro-texto, #8a6416); }
+
+.bib-destaque { display: grid; grid-template-columns: 9px minmax(0, 1fr); overflow: hidden; border: 1px solid color-mix(in srgb, var(--bib-area) 35%, var(--traco)); border-radius: 5px 14px 14px 5px; color: inherit; text-decoration: none;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bib-area) 9%, var(--superficie)) 0%, var(--superficie) 70%); box-shadow: 0 1px 2px rgba(18, 24, 26, 0.05), 0 8px 20px rgba(18, 24, 26, 0.06);
+  transition: transform var(--duracao-rapida, .15s), box-shadow var(--duracao-rapida, .15s), border-color var(--duracao-rapida, .15s); }
+.bib-destaque:hover { transform: translateY(-2px); border-color: var(--bib-area); box-shadow: 0 2px 6px rgba(18, 24, 26, 0.06), 0 14px 28px rgba(18, 24, 26, 0.1); }
+.bib-destaque__lombada, .bib-pilha__lombada { background: linear-gradient(180deg, var(--bib-area), color-mix(in srgb, var(--bib-area) 55%, #000)); box-shadow: inset -2px 0 0 rgba(255, 255, 255, 0.18); }
+.bib-destaque--fechado .bib-destaque__lombada { background: linear-gradient(180deg, #c9a24c, #8a6416); }
+.bib-destaque__corpo { display: grid; gap: 0.3rem; padding: 0.75rem 0.85rem 0.7rem; }
+.bib-destaque__selo { display: inline-flex; align-items: center; gap: 0.3rem; justify-self: start; padding: 0.1rem 0.5rem; border-radius: 999px; background: var(--ouro-veu, #f7eed8); color: var(--ouro-texto, #8a6416); font-size: 0.68rem; font-weight: 800; }
+.bib-destaque strong { font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.12rem; line-height: 1.2; }
+.bib-destaque small { font-size: 0.72rem; color: var(--texto-2); }
+.bib-destaque__rodape { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.3rem 0.6rem; margin-top: 0.15rem; font-size: 0.74rem; color: var(--texto-2); }
+.bib-destaque__acao { display: inline-flex; align-items: center; gap: 0.25rem; font-weight: 800; color: var(--verdete); white-space: nowrap; }
+.bib-destaque--fechado .bib-destaque__acao { color: var(--ouro-texto, #8a6416); }
+.bib-barra { display: block; height: 4px; border-radius: 999px; background: color-mix(in srgb, var(--bib-area) 14%, var(--superficie-2, #eef0ee)); overflow: hidden; }
+.bib-barra span { display: block; height: 100%; border-radius: inherit; background: var(--bib-area); }
+
+.bib-pilha { display: grid; gap: 0.35rem; margin: 0; padding: 0; list-style: none; }
+.bib-pilha a { display: grid; grid-template-columns: 6px minmax(0, 1fr) auto; align-items: center; gap: 0.65rem; overflow: hidden; padding-right: 0.7rem; border: 1px solid var(--traco); border-radius: 4px 10px 10px 4px; color: inherit; text-decoration: none; transition: border-color var(--duracao-rapida, .15s), background var(--duracao-rapida, .15s); }
+.bib-pilha a:hover { border-color: color-mix(in srgb, var(--bib-area) 55%, var(--traco)); background: color-mix(in srgb, var(--bib-area) 5%, var(--superficie)); }
+.bib-pilha__lombada { align-self: stretch; }
+.bib-pilha__texto { display: grid; gap: 0.05rem; min-width: 0; padding: 0.5rem 0; }
+.bib-pilha strong { overflow: hidden; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 0.95rem; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.bib-pilha small { font-size: 0.7rem; color: var(--texto-2); }
+.bib-pilha a > svg { color: var(--texto-2); }
+
+/* ---------- Convite no fim da questão ---------- */
+.bib-convite { position: relative; display: grid; grid-template-columns: 7.4rem minmax(0, 1fr); gap: 1.25rem; align-items: center; margin: 1.25rem 0; padding: 1.15rem 1.25rem; overflow: hidden; isolation: isolate;
+  border: 1px solid color-mix(in srgb, var(--ouro, #c9a24c) 40%, var(--traco)); border-radius: 18px;
+  background: radial-gradient(120% 140% at 0% 0%, color-mix(in srgb, var(--bib-area) 12%, var(--superficie)) 0%, var(--superficie) 55%), var(--superficie);
+  box-shadow: 0 1px 2px rgba(18, 24, 26, 0.05), 0 12px 30px rgba(18, 24, 26, 0.07); }
+.bib-convite::after { content: ""; position: absolute; inset: 0 0 auto; height: 3px; z-index: -1; background: linear-gradient(90deg, var(--bib-area), var(--ouro, #c9a24c)); }
+
+.bib-convite__capa { position: relative; display: grid; grid-template-columns: 10px minmax(0, 1fr); aspect-ratio: 3 / 4; border-radius: 3px 8px 8px 3px; overflow: hidden; color: #fff; text-decoration: none; transform: rotate(-3deg);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 4px 6px 0 -1px color-mix(in srgb, var(--superficie) 70%, #d9d4c6), 4px 6px 0 0 rgba(0, 0, 0, 0.12), 0 14px 26px rgba(18, 24, 26, 0.22);
+  transition: transform .35s var(--curva, ease); }
+.bib-convite:hover .bib-convite__capa { transform: rotate(0deg) translateY(-3px); }
+.bib-convite__capa-lombada { background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(255, 255, 255, 0.12) 60%, rgba(0, 0, 0, 0.2)), color-mix(in srgb, var(--bib-area) 70%, #000); }
+.bib-convite__capa-frente { display: flex; flex-direction: column; gap: 0.35rem; padding: 0.7rem 0.6rem; background: linear-gradient(160deg, color-mix(in srgb, var(--bib-area) 88%, #fff) 0%, color-mix(in srgb, var(--bib-area) 75%, #000) 100%); }
+.bib-convite__capa-livro { font-size: 0.5rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.85; line-height: 1.25; }
+.bib-convite__capa-filete { width: 1.6rem; height: 2px; border-radius: 2px; background: #e7c77d; }
+.bib-convite__capa-titulo { font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 0.86rem; font-weight: 700; line-height: 1.15; text-wrap: balance; }
+.bib-convite__capa-numero { margin-top: auto; font-size: 0.55rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #f1dca8; }
+
+.bib-convite__texto { display: grid; gap: 0.45rem; min-width: 0; }
+.bib-convite__selo { display: inline-flex; align-items: center; gap: 0.35rem; white-space: pre; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ouro-texto, #8a6416); }
+.bib-convite__selo b { padding: 0.02rem 0.4rem; border-radius: 999px; background: var(--verdete-veu); color: var(--verdete); font-size: 0.62rem; letter-spacing: 0.04em; }
+.bib-convite__titulo { margin: 0; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.32rem; line-height: 1.2; color: var(--texto); }
+.bib-convite__frase { margin: 0; font-size: 0.92rem; line-height: 1.55; color: var(--texto-2); }
+.bib-convite__frase strong { color: var(--texto); }
+.bib-convite__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin-top: 0.25rem; }
+.bib-convite__botao { display: inline-flex; align-items: center; gap: 0.45rem; text-decoration: none; }
+.bib-convite__acoes small { font-size: 0.76rem; color: var(--texto-2); }
+
+@media (max-width: 34rem) {
+  .bib-convite { grid-template-columns: 4.6rem minmax(0, 1fr); gap: 0.55rem 0.9rem; padding: 1rem; }
+  .bib-convite__texto { display: contents; }
+  .bib-convite__capa { grid-row: 1 / span 2; align-self: start; }
+  .bib-convite__selo { align-self: end; font-size: 0.66rem; }
+  .bib-convite__selo-marca { display: none; }
+  .bib-convite__titulo { align-self: start; font-size: 1.1rem; }
+  .bib-convite__frase, .bib-convite__acoes { grid-column: 1 / -1; }
+  .bib-convite__frase { font-size: 0.88rem; }
+  .bib-convite__capa-frente { padding: 0.45rem 0.4rem; gap: 0.25rem; }
+  .bib-convite__capa-livro { font-size: 0.4rem; }
+  .bib-convite__capa-titulo { font-size: 0.64rem; }
+  .bib-convite__capa-numero { font-size: 0.48rem; }
+  .bib-convite__botao { flex: 1 1 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { .bib-convite__capa, .bib-destaque { transition: none; } .bib-convite__capa { transform: none; } }

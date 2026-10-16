@@ -56,6 +56,14 @@ Projeto de vários dias, feito com Claude e com ChatGPT. Antes de mexer em qualq
 flashcards, leia [docs/flashcards/README.md](docs/flashcards/README.md): decisões do dono, formatos,
 desenho da Batalha, arquitetura, roteiro e o protótipo em `prototipos/flashcards/`.
 
+## Biblioteca de resumos (#/resumos, beta desde 16/10/2026)
+
+Antes de criar ou mexer num resumo, leia [docs/biblioteca/README.md](docs/biblioteca/README.md) e o
+checklist [docs/biblioteca/CHECKLIST.md](docs/biblioteca/CHECKLIST.md). Regras do Tales: **todo resumo sai
+de um capítulo de livro ou artigo que ele enviou** (nunca de memória); no plano gratuito, no máximo 5
+resumos abertos; as questões reais são citadas no meio do texto, com botão para resolver. Conteúdo em
+`conteudo/biblioteca/*.md`, gerado com `node scripts/biblioteca/gerar.mjs`.
+
 ## SQL para o Supabase (orientação do dono, 08/10/2026)
 
 Toda migração nova também vai para `supabase/colar-no-painel/` e, ao entregar, o SQL completo é

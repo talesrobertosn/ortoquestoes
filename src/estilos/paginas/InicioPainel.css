@@ -322,7 +322,7 @@
 }
 
 /* ---------- Atalhos ---------- */
-.ip-atalhos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.75rem; }
+.ip-atalhos { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 0.75rem; }
 .ip-atalho {
   position: relative; display: flex; align-items: center; gap: 0.8rem; min-height: 4.6rem; padding: 0.85rem 1rem;
   border: var(--borda); border-radius: 16px; background: var(--superficie); color: var(--texto); text-decoration: none; box-shadow: var(--ip-sombra);
@@ -341,6 +341,18 @@
 .ip-atalho--arte:hover { color: #fff; border-color: #e3b860; }
 .ip-atalho--arte:hover::before { transform: scale(1.05); }
 .ip-atalho--arte small { color: rgba(255, 255, 255, 0.78); }
+/* Resumos (Biblioteca): capa de couro com filete dourado e três lombadas na estante. */
+.ip-atalho--resumos { overflow: hidden; isolation: isolate; border-color: #6b4a2a; color: #fff;
+  background: radial-gradient(120% 160% at 100% 0%, rgba(227, 184, 96, 0.22) 0%, transparent 55%), linear-gradient(135deg, #3a2414 0%, #24160c 100%); }
+.ip-atalho--resumos::after { content: ""; position: absolute; inset: 5px; z-index: -1; border: 1px solid rgba(227, 184, 96, 0.35); border-radius: 12px; pointer-events: none; }
+.ip-atalho--resumos:hover { color: #fff; border-color: #e3b860; }
+.ip-atalho--resumos small { color: rgba(255, 238, 205, 0.8); }
+.ip-atalho__livros { display: flex; align-items: flex-end; gap: 3px; flex: none; height: 40px; padding: 0 2px; border-bottom: 3px solid #8a6416; }
+.ip-atalho__livros i { display: block; width: 9px; border-radius: 2px 2px 0 0; box-shadow: inset -2px 0 0 rgba(0, 0, 0, 0.25), inset 0 6px 0 -4px rgba(227, 184, 96, 0.9); transition: transform var(--duracao-rapida) var(--curva); }
+.ip-atalho__livros i:nth-child(1) { height: 30px; background: #2f7d62; }
+.ip-atalho__livros i:nth-child(2) { height: 37px; background: #b5523a; }
+.ip-atalho__livros i:nth-child(3) { height: 26px; background: #3d6aa8; transform-origin: bottom left; transform: rotate(14deg) translateX(2px); }
+.ip-atalho--resumos:hover .ip-atalho__livros i:nth-child(2) { transform: translateY(-4px); }
 .ip-atalho--jogo::after { background: linear-gradient(90deg, rgba(30, 12, 6, 0.92) 0%, rgba(30, 12, 6, 0.68) 55%, rgba(30, 12, 6, 0.15) 100%); }
 
 /* ---------- Cartões do meio: quase lá, foco, semana ---------- */
@@ -400,13 +412,14 @@
 @keyframes ip-chama { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06, 1.1); } }
 @media (prefers-reduced-motion: reduce) {
   .ip-entra, .ip-barra > span, .ip-semana__coluna span, .ip-blocos span.cheio, .ip-amostra__comentario { animation: none; }
-  .ip-atalho, .ip-atalho--arte::before, .ip-alt, .ip-tema { transition: none; }
+  .ip-atalho, .ip-atalho--arte::before, .ip-atalho__livros i, .ip-alt, .ip-tema { transition: none; }
 }
 
 /* ---------- Telas menores ---------- */
 @media (max-width: 64rem) {
   .ip-pilares { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .ip-atalhos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ip-atalhos { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ip-atalho--resumos:nth-child(odd) { grid-column: 1 / -1; }
 }
 @media (max-width: 60rem) {
   .ip-heroi { grid-template-columns: 1fr; border-radius: 20px; }
@@ -443,6 +456,8 @@
   .ip-atalhos { gap: 0.55rem; }
   .ip-atalho { flex-direction: column; align-items: flex-start; gap: 0.45rem; min-height: 0; padding: 0.8rem; }
   .ip-atalho--arte { justify-content: flex-end; min-height: 6.2rem; }
+  .ip-atalho--resumos { flex-direction: row; align-items: center; gap: 0.8rem; }
+  .ip-atalho__livros { height: 32px; }
   .ip-atalho img { width: 32px; height: 32px; }
   .ip-atalho strong { font-size: 0.95rem; }
   .ip-temas__lista { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.45rem; }

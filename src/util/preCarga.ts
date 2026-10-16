@@ -40,6 +40,7 @@ export const carregadores = {
   PlanoEstudo: () => import('../paginas/PlanoEstudo'),
   TemasQueMaisCaem: () => import('../paginas/TemasQueMaisCaem'),
   Resumao: () => import('../paginas/Resumao'),
+  Resumos: () => import('../paginas/Resumos'),
   Indicar: () => import('../paginas/Indicar'),
   Ligas: () => import('../paginas/Ligas'),
   Flashcards: () => import('../paginas/Flashcards'),
@@ -56,7 +57,7 @@ const PAGINA_DA_ROTA: Record<string, Pagina> = {
   ranking: 'Ranking', conquistas: 'Ranking', termos: 'Termos', 'condicoes-assinatura': 'CondicoesAssinatura',
   assinatura: 'Assinatura', conta: 'Conta', entrar: 'Conta', emails: 'Emails',
   'simulado-nacional': 'SimuladoNacional', cronograma: 'PlanoEstudo', 'plano-de-estudo': 'PlanoEstudo',
-  'temas-que-mais-caem': 'TemasQueMaisCaem', resumao: 'Resumao', indicar: 'Indicar', convite: 'Indicar',
+  'temas-que-mais-caem': 'TemasQueMaisCaem', resumao: 'Resumao', resumos: 'Resumos', indicar: 'Indicar', convite: 'Indicar',
   ligas: 'Ligas', flashcards: 'Flashcards', admin: 'AdminAssinaturas',
 }
 

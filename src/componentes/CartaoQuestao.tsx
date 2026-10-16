@@ -20,6 +20,7 @@ import { RelatarErro } from './RelatarErro'
 import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
 import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
 import { usarTempoVisivel } from '../util/tempoVisivel'
+import { EstudarAssunto } from '../biblioteca/EstudarAssunto'
 import '../estilos/paginas/CartaoQuestao.css'
 
 interface Props {
@@ -542,6 +543,7 @@ export function CartaoQuestao({
             )}
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} />
+            <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 

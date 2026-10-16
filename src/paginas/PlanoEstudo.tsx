@@ -33,6 +33,9 @@ import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } fr
 import { juntarMarcas, marcasDoPlano, opcoesComMarcas, type MarcasDia } from '../conta/marcasDia'
 import { ler } from '../estado/armazenamento'
 import { IndicadorSincronia } from '../componentes/IndicadorSincronia'
+import { CaixaResumos } from '../biblioteca/CaixaResumos'
+import { resumosDosSubtemas, subtemasDasQuestoes, usarIndiceBiblioteca } from '../biblioteca/recomendar'
+import { usarBiblioteca } from '../biblioteca/usarBiblioteca'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
@@ -432,9 +435,18 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   const folgaHoje = calculo.tipoHoje === 'folga'
   const metaFeita = calculo.metaDiaria > 0 && calculo.faltaHoje === 0
   const corHoje = corDaArea(principal?.slug ?? calculo.dias.find((d) => d.itens.length)?.itens[0]?.slug)
+  // O resumo da Biblioteca que ensina os assuntos de hoje (pelos subtemas das questões do dia).
+  const biblioteca = usarIndiceBiblioteca()
+  const { leituras } = usarBiblioteca()
+  const subtemasHoje = useMemo(() => subtemasDasQuestoes(indice, (calculo.hoje?.itens ?? []).flatMap((i) => i.ids)), [indice, calculo.hoje])
+  const resumoHoje = resumosDosSubtemas(biblioteca, subtemasHoje)[0] ?? null
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
     if (principal) lista.push({ id: 'resumao', titulo: 'Resumão do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: lidoHoje(resumaoHoje, principal.slug) || (hub?.resumaoLido ?? []).includes(principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumao?tema=${principal.slug}`) } : undefined })
+    if (resumoHoje) {
+      const l = leituras[resumoHoje.id]
+      lista.push({ id: 'resumo-biblioteca', titulo: 'Resumo do capítulo', texto: <>{resumoHoje.titulo}: o capítulo na ordem em que a prova cobra, com as questões que já caíram no texto.{l?.progresso && !l.concluidoEm ? ` ${l.progresso}% lido.` : ''}</>, minutos: Math.max(1, Math.round(resumoHoje.minutos * (1 - (l?.progresso ?? 0) / 100))), estado: l?.concluidoEm || (l?.progresso ?? 0) >= 95 ? 'feito' : 'afazer', acao: { rotulo: l?.progresso ? 'Continuar' : 'Ler', href: href(`/resumos/${resumoHoje.id}`) }, opcional: true, icone: 'livro' })
+    }
     const jaAdiantado = calculo.adiantadoHoje > 0 ? ` ${fraseAdiantadoHoje(calculo)}` : ''
     // A vitrine mostra o jeito do dia, sem os números (orientação de 14/10): quantas e quanto tempo é do assinante.
     if (calculo.metaDiaria > 0 && !aberto) lista.push({
@@ -510,6 +522,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
         {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
         {temCalendario && <div className="cp-ordem-4"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
         {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} compacta={temCalendario} /></div>}
+        {!calculo.provaPassou && <div className="cp-ordem-5"><CaixaResumos subtemasHoje={subtemasHoje} /></div>}
         {!calculo.provaPassou && !temCalendario && <div className="cp-ordem-5">{aberto
           ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} aoVerCalendario={abrirCalendario} />
           : <div className="cp-previa-depois">

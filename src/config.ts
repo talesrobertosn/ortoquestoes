@@ -59,6 +59,13 @@ export const EXIGIR_CONTA_PARA_QUESTOES = true
  * travas abaixo seguem existindo para desligar cada parte; o publicar.yml liga todas.
  */
 export const FLASHCARDS_LIBERADO = true
+
+/**
+ * Biblioteca de resumos (#/resumos): beta no menu suspenso desde 16/10/2026 (pedido do Tales).
+ * Com true, o atalho "Estudar este assunto" aparece nas questões citadas em algum resumo.
+ * Com false, só para quem já abriu #/resumos.
+ */
+export const BIBLIOTECA_PUBLICA = true
 export const FLASHCARDS_NO_MENU = import.meta.env.DEV || import.meta.env?.VITE_FLASHCARDS === '1'
 /**
  * Travas de cada parte do beta (todas ligadas no publicar.yml desde 13/10/2026):
