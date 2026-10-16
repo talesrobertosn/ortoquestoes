@@ -373,7 +373,7 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
     const tipo = p.tipo === 'leve' ? 'Dia leve (plantão). ' : p.tipo === 'dificil' ? 'Semana difícil: só o dia mínimo. ' : ''
     const passada = principal ? `${ROTULO_PASSADA[principal.passada].nome}: ${ROTULO_PASSADA[principal.passada].texto}.` : ''
     sub = livre ? `As ${p.adiantado} questões deste dia você fez antes.` : <>{tipo}{passada}{p.adiantado > 0 ? <> <b className="cc-verde">−{p.adiantado} adiantadas</b> (eram {p.total + p.adiantado}).</> : null}</>
-    if (!livre && principal) linhas.push({ id: 'resumao', titulo: `Resumão de ${principal.nome.toLowerCase()}`, texto: 'As frases "Na prova", antes das questões', minutos: MINUTOS_RESUMAO })
+    if (!livre && principal) linhas.push({ id: 'resumao', titulo: `Frases que caem de ${principal.nome.toLowerCase()}`, texto: 'As frases "Na prova", antes das questões', minutos: MINUTOS_RESUMAO })
     for (const it of p.itens) linhas.push({ id: `${it.slug}-${it.mistura}`, cor: corDaArea(it.slug), titulo: <>{it.n} questões de {it.nome}{it.mistura && <span className="cp-tag">mistura</span>}</>, chips: it.assuntos.slice(0, 4), minutos: it.n * minutos })
     if (p.mini) linhas.push({ id: 'mini', titulo: `Mini-simulado de ${TAMANHO_MINI} questões`, texto: 'Cronometrado, do que você já viu', minutos: TAMANHO_MINI * 1.5 })
     if (!livre) linhas.push({ id: 'extras', titulo: d.fase === 'hoje' && revisoesHoje > 0 ? `${revisoesHoje} ${revisoesHoje === 1 ? 'revisão' : 'revisões'} e flashcards` : 'Revisões e flashcards', texto: 'Se sobrar tempo; não contam na meta', opcional: true })

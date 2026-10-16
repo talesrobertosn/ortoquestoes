@@ -2,7 +2,7 @@ import { ehRotaDoJogo, lembrarFundo, rotaDoFundo } from './flashcards/fundo'
 import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from 'react'
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
-import { rotaDe, usarRota, type Rota } from './util/rotas'
+import { navegar, rotaDe, usarRota, type Rota } from './util/rotas'
 import { carregadores } from './util/preCarga'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
@@ -50,7 +50,6 @@ const Emails = lazy(() => carregadores.Emails().then(({ Emails }) => ({ default:
 const SimuladoNacional = lazy(() => carregadores.SimuladoNacional().then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
 const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
 const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
-const Resumao = lazy(() => carregadores.Resumao().then(({ Resumao }) => ({ default: Resumao })))
 const Resumos = lazy(() => carregadores.Resumos().then(({ Resumos }) => ({ default: Resumos })))
 const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
 const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
@@ -89,7 +88,7 @@ const TITULOS: Record<string, string> = {
   '/ligas': 'Liga da residência | Orto Questões',
   '/indicar': 'Indique e ganhe | Orto Questões',
   '/temas-que-mais-caem': 'Temas que mais caem | Orto Questões',
-  '/resumao': 'Resumão da reta final | Orto Questões',
+  '/resumos/frases': 'Frases que caem | Biblioteca | Orto Questões',
   '/resumos': 'Biblioteca de resumos | Orto Questões',
   '/flashcards': 'Flashcards | Orto Questões',
   '/flashcards/desempenho': 'Desempenho nos flashcards | Orto Questões',
@@ -184,10 +183,11 @@ function paginaDaRota(rota: Rota): ReactNode {
     case 'temas-que-mais-caem':
       pagina = <TemasQueMaisCaem />
       break
+    // O Resumão virou adendo da Biblioteca (16/10/2026): o endereço antigo leva às frases.
     case 'resumao':
-      pagina = <Resumao />
+      pagina = <Redirecionar destino={`/resumos/frases${rota.consulta.toString() ? `?${rota.consulta}` : ''}`} />
       break
-    // Biblioteca de resumos (16/10/2026): em testes, sem item no menu.
+    // Biblioteca de resumos (16/10/2026), com as frases que caem (antigo Resumão) em #/resumos/frases.
     case 'resumos':
       pagina = <Resumos segmentos={rota.segmentos} consulta={rota.consulta} />
       break
@@ -298,4 +298,10 @@ export function App() {
       {encontrosProntos && <Suspense fallback={null}><Encontros /></Suspense>}
     </div>
   )
+}
+
+/** Endereço antigo que mudou de lugar: troca a rota sem deixar o antigo no histórico. */
+function Redirecionar({ destino }: { destino: string }) {
+  useEffect(() => { navegar(destino, true) }, [destino])
+  return null
 }

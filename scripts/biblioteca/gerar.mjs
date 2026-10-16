@@ -124,6 +124,7 @@ function analisar(texto, arquivo) {
     ? meta.subtemas.split(';').map((x) => x.trim()).filter(Boolean)
     : [...contagem].filter(([, n]) => n >= 2 && n >= questoes.size / 4).sort((a, b) => b[1] - a[1]).map(([s]) => indice.subtemas[s])
   for (const s of subtemas) if (!indice.subtemas.includes(s)) erros.push(`${arquivo}: subtema "${s}" não existe no acervo`)
+  capitulo.subtemas = subtemas
   return { capitulo, resumo: { id: capitulo.id, versao: capitulo.versao, titulo: capitulo.titulo, especialidade: capitulo.especialidade, livro: capitulo.livro, edicao: capitulo.edicao, capitulo: capitulo.capitulo, resumo: capitulo.resumo, acesso: capitulo.acesso, minutos: capitulo.minutos, secoes: secoes.map((s) => ({ id: s.id, titulo: s.titulo, radar: s.radar })), questoes: [...questoes], treino: [...treino], subtemas } }
 }
 

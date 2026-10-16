@@ -58,7 +58,7 @@ function comNegrito(texto: string, termos: string[] = []): ReactNode {
 }
 
 /**
- * Resumão da véspera: a frase "Na prova" dos comentários, só dos assuntos de
+ * Frases que caem (adendo da Biblioteca em #/resumos/frases; até 16/10/2026 era o Resumão, em #/resumao): a frase "Na prova" dos comentários, só dos assuntos de
  * prioridade alta e máxima, área por área. Para ler em minutos na reta final,
  * sem fazer questão. Cada frase leva à questão de onde saiu; cada assunto e
  * cada área levam ao treino. Busca, filtro de prioridade, tamanho da letra e
@@ -91,7 +91,7 @@ export function Resumao() {
     if (premium) enviarMarcas({ em: hojeBR(), resumao: [slug] }).catch(() => undefined)
   }
 
-  // Vindo do cronograma (#/resumao?tema=joelho): abre e rola até a área do dia. O roteador
+  // Vindo do cronograma (#/resumos/frases?tema=joelho): abre e rola até a área do dia. O roteador
   // é por hash, então nada de âncora "#rz-joelho": a área é aberta e rolada pelo código.
   // Lê a rota viva, para reagir quando só a consulta muda (de ?tema=joelho para ?tema=mao).
   const temaPedido = usarRota().consulta.get('tema')
@@ -151,11 +151,11 @@ export function Resumao() {
 
   if (erro) return (
     <div className="aviso-formulario aviso-formulario--erro rz-erro" role="alert">
-      <span>Não foi possível carregar o resumão. Confira a conexão.</span>
+      <span>Não foi possível carregar as frases. Confira a conexão.</span>
       <button type="button" className="botao" onClick={() => definirTentativa((n) => n + 1)}>Tentar de novo</button>
     </div>
   )
-  if (!dados) return <Carregando linhas={6} rotulo="Carregando o resumão" />
+  if (!dados) return <Carregando linhas={6} rotulo="Carregando as frases" />
 
   const alternarLida = (slug: string) => {
     const lendo = !lidasValidas.includes(slug)
@@ -239,9 +239,9 @@ export function Resumao() {
       <section className="rz-heroi">
         <span className="rz-heroi__icone" aria-hidden="true"><IconePixel nome="revisao" tamanho={56} /></span>
         <div>
-          <p className="rz-heroi__selo"><Icone nome="livro" tamanho={15} /> Reta final</p>
-          <h1>Resumão</h1>
-          <p>A frase <b>"Na prova"</b> dos comentários, só dos assuntos que <b>mais caem</b>, da área com mais questões para a com menos. São {dados.total.toLocaleString('pt-BR')} frases curtas para ler em minutos na semana da prova e na véspera. Cada frase leva à questão de onde saiu; cada assunto, ao treino dele.</p>
+          <p className="rz-heroi__selo"><a href={href('/resumos')}><Icone nome="esquerda" tamanho={14} /> Biblioteca</a> · Adendo dos resumos</p>
+          <h1>Frases que caem</h1>
+          <p>A frase <b>"Na prova"</b> dos comentários, só dos assuntos que <b>mais caem</b>, da área com mais questões para a com menos. São {dados.total.toLocaleString('pt-BR')} frases curtas para reler em minutos antes das questões e na véspera. Cada frase leva à questão de onde saiu; cada assunto, ao treino dele. Para entender o porquê, abra o <a href={href('/resumos')}>resumo do capítulo</a>.</p>
           {premium && (
             <div className="rz-heroi__progresso">
               <span className="rz-heroi__barra" aria-hidden="true"><span style={{ width: `${progresso}%` }} /></span>
@@ -255,7 +255,7 @@ export function Resumao() {
       <div className="rz-ferramentas" role="search">
         <label className="rz-busca">
           <Icone nome="busca" tamanho={17} />
-          <span className="so-leitor">Buscar no resumão</span>
+          <span className="so-leitor">Buscar nas frases</span>
           <input type="search" value={busca} onChange={(e) => definirBusca(e.target.value)} placeholder={premium ? 'Buscar: escafoide, Bado, Salter…' : 'Buscar na área de amostra'} enterKeyHint="search" />
           {busca && <button type="button" className="rz-busca__limpar" onClick={() => definirBusca('')} aria-label="Limpar a busca"><Icone nome="fechar" tamanho={15} /></button>}
         </label>
@@ -289,14 +289,14 @@ export function Resumao() {
       {premium && !buscando && progresso === 100 && (
         <section className="rz-concluido">
           <Icone nome="trofeu" tamanho={22} />
-          <div><strong>Resumão lido inteiro.</strong><span>Agora teste a memória: um simulado mostra o que ficou.</span></div>
+          <div><strong>Frases lidas de ponta a ponta.</strong><span>Agora teste a memória: um simulado mostra o que ficou.</span></div>
           <a className="botao botao--principal" href={href('/simulado-nacional')}>Simulado Nacional</a>
         </section>
       )}
       <VoltarAoTopo />
 
       {!premium && dados.areas.length > AREAS_AMOSTRA && (
-        <Degustacao titulo={`Mais ${dados.areas.length - AREAS_AMOSTRA} áreas no resumão`} texto={<p>O resumão completo faz parte da reta final do cronograma do assinante: todas as áreas, com as frases dos assuntos que mais caem, busca e marcação de leitura.</p>} acao="Liberar o resumão completo">
+        <Degustacao titulo={`Mais ${dados.areas.length - AREAS_AMOSTRA} áreas nas frases que caem`} texto={<p>As frases completas fazem parte do cronograma do assinante: todas as áreas, com os assuntos que mais caem, busca e marcação de leitura.</p>} acao="Liberar todas as frases">
           <div className="rz-areas">{dados.areas.slice(AREAS_AMOSTRA, AREAS_AMOSTRA + 3).map((a, i) => <div key={a.slug} className="rz-area rz-area--guardada"><span className="rz-area__num numerico">{i + 1 + AREAS_AMOSTRA}</span><strong>{a.nome}</strong></div>)}</div>
         </Degustacao>
       )}

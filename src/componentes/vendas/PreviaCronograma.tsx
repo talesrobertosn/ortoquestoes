@@ -117,7 +117,7 @@ export function PreviaCronograma({ conta }: { conta: boolean }) {
           {a1 && a2 && <div className="vd-dia" aria-label="Um dia do cronograma">
             <p className="vd-dia__rotulo">Um dia do cronograma</p>
             <ol>
-              <li><span>1</span><div><strong>Resumão do tema</strong><small>As frases "Na prova" de {a1.nome.toLowerCase()}</small></div><em>4 min</em></li>
+              <li><span>1</span><div><strong>Frases que caem do tema</strong><small>As frases "Na prova" de {a1.nome.toLowerCase()}</small></div><em>4 min</em></li>
               <li><span>2</span><div><strong>{ritmo} questões novas</strong><small>{ritmo - mistura} de {a1.nome.toLowerCase()} e {mistura} de {a2.nome.toLowerCase()} para misturar</small></div><em>~{minutos} min</em></li>
               <li><span>3</span><div><strong>Revisões do dia</strong><small>Erros e dúvidas que voltam no tempo certo</small></div><em>à parte</em></li>
             </ol>

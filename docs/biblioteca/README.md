@@ -113,7 +113,8 @@ Legenda da figura no original (a imagem só aparece com licença).
 | Estante e caderno | `src/paginas/Resumos.tsx` | Continuar estudando, filtros por especialidade e busca; caderno com filtros (capítulo, área, cor, texto, nota, favorito), revisão em sequência e exportação em Markdown. |
 | Da questão para o livro | `src/biblioteca/EstudarAssunto.tsx` em `CartaoQuestao` | "Estudar este assunto na Biblioteca" abre o parágrafo que explica, destacado. Enquanto `BIBLIOTECA_PUBLICA = false` (config.ts), só aparece para quem já abriu `#/resumos`. |
 | Fora da Biblioteca | `src/biblioteca/recomendar.ts`, `CaixaResumos.tsx` | O resumo "combina" com um assunto quando ensina um dos subtemas do acervo (`subtemas` no índice: os que têm ao menos ¼ das questões de prova citadas, ou `subtemas: A; B` no cabeçalho). Cronograma: item "Resumo do capítulo" em "Se sobrar tempo" e caixa "Resumos" na coluna lateral (o que combina com hoje em destaque). Questão: convite com capa no fim (citada → trecho; mesmo subtema → resumo). Página inicial: atalho "Resumos". |
-| Acesso | `acesso` do capítulo + `usarPremium` | Igual ao Resumão: a regra vale na interface; o conteúdo é estático. Para proteger no servidor seria preciso servir o capítulo por função autenticada (pendência). |
+| Frases que caem (antigo Resumão) | `src/paginas/Resumao.tsx` em `#/resumos/frases`, `src/biblioteca/FrasesDoTema.tsx` | Desde 16/10/2026 o Resumão é adendo da Biblioteca: `#/resumao` redireciona para `#/resumos/frases` (com `?tema=`), saiu do menu e do rodapé, e cada resumo termina com um adendo pequeno (5 frases, "mostrar mais") das frases dos seus `subtemas` (`public/acervo/resumao.json`). Quem não assina vê 2. |
+| Acesso | `acesso` do capítulo + `usarPremium` | Igual às frases que caem: a regra vale na interface; o conteúdo é estático. Para proteger no servidor seria preciso servir o capítulo por função autenticada (pendência). |
 
 "Salvo na conta" só aparece quando não há nenhum item da Biblioteca na fila; sem conexão aparece
 "Alterações locais pendentes"; banco sem a parte 29 aparece "Falha na sincronização" e as marcações
@@ -142,4 +143,4 @@ ficam no aparelho (sem travar as respostas das questões e sem ir para "não env
   (`Flashcard.questao`) e usar `public/biblioteca/questoes.json`, como faz "Estudar este assunto".
 - Figuras: nenhuma licença confirmada ainda. O visualizador (ampliar, zoom) está pronto para `imagem`
   com `licenca: autorizada`.
-- Proteção no servidor dos resumos de assinante (hoje só na interface, como o Resumão).
+- Proteção no servidor dos resumos de assinante (hoje só na interface, como as frases que caem).

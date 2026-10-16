@@ -319,3 +319,29 @@
 
 /* Tela larga com painel aberto: o texto recua para o lado e continua inteiro à vista. */
 @media (min-width: 75rem) { .lr--com-painel:not(.lr--paginado) .lr-rolagem { padding-right: 380px; } .lr--com-painel .lr-restante { right: 394px; } }
+
+/* Adendo "Frases que caem" (o antigo Resumão), no pé da estante. */
+.rs-adendo { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 0.85rem 1rem; border: 1px dashed color-mix(in srgb, var(--ouro, #c9a24c) 60%, var(--traco)); border-radius: 14px; background: color-mix(in srgb, var(--ouro-veu, #f7eed8) 55%, var(--superficie)); color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
+.rs-adendo:hover { border-style: solid; border-color: var(--ouro, #c9a24c); transform: translateY(-1px); }
+.rs-adendo__selo { padding: 0.15rem 0.55rem; border-radius: 999px; background: var(--ouro-texto, #8a6416); color: #fff; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.rs-adendo__texto { display: grid; gap: 0.15rem; }
+.rs-adendo__texto strong { font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.05rem; }
+.rs-adendo__texto small { font-size: 0.8rem; line-height: 1.4; color: var(--texto-2); }
+.rs-adendo > svg { color: var(--ouro-texto, #8a6416); }
+@media (max-width: 34rem) { .rs-adendo { grid-template-columns: minmax(0, 1fr) auto; } .rs-adendo__selo { grid-column: 1 / -1; justify-self: start; } }
+
+/* Adendo "Frases que caem neste tema" no fim do resumo (16/10/2026). Usa as cores do tema de leitura. */
+.lr-adendo { margin-top: 2.6rem; padding: 1.1rem 1.2rem 1rem; border: 1px solid var(--lr-linha); border-left: 4px solid var(--lr-ouro); border-radius: 6px 14px 14px 6px; background: color-mix(in srgb, var(--lr-ouro-veu) 55%, var(--lr-papel)); font-family: var(--fonte-texto, system-ui); }
+.lr-adendo__selo { margin: 0; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--lr-ouro); }
+.lr-adendo__titulo { margin: 0.15rem 0 0.2rem; font-family: var(--lr-serifa); font-size: 1.25rem; line-height: 1.25; color: var(--lr-texto); }
+.lr-adendo__sub { margin: 0 0 0.7rem; font-size: 0.82rem; color: var(--lr-suave); }
+.lr-adendo__lista { display: grid; gap: 0.55rem; margin: 0; padding: 0; list-style: none; }
+.lr-adendo__lista li { display: grid; gap: 0.15rem; padding-bottom: 0.55rem; border-bottom: 1px dashed var(--lr-linha); font-size: 0.92rem; line-height: 1.5; color: var(--lr-texto); }
+.lr-adendo__lista li:last-child { border-bottom: 0; padding-bottom: 0; }
+.lr-adendo__lista a { display: inline-flex; align-items: center; gap: 0.2rem; justify-self: start; font-size: 0.74rem; font-weight: 700; color: var(--lr-acento); text-decoration: none; }
+.lr-adendo__lista a:hover, .lr-adendo__todas:hover { text-decoration: underline; }
+.lr-adendo__mais { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; margin: 0.7rem 0 0; font-size: 0.8rem; color: var(--lr-suave); }
+.lr-adendo__mais a { font-weight: 700; color: var(--lr-ouro); }
+.lr-adendo__todas { display: inline-flex; align-items: center; gap: 0.25rem; margin-top: 0.75rem; font-size: 0.8rem; font-weight: 800; color: var(--lr-acento); text-decoration: none; }
+.lr-adendo__ver { display: inline-flex; align-items: center; gap: 0.25rem; margin-top: 0.6rem; padding: 0.3rem 0.7rem; border: 1px solid var(--lr-linha); border-radius: 999px; background: var(--lr-papel); color: var(--lr-texto); font: inherit; font-size: 0.78rem; font-weight: 700; cursor: pointer; }
+.lr-adendo__ver:hover { border-color: var(--lr-ouro); }

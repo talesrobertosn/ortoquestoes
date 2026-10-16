@@ -3,6 +3,7 @@ import { carregarCapitulo, pedacos, questoesReais, textoPuro, textosDoCapitulo }
 import { criarAncora, faixasDoBloco, resolverAncora, type Ancora, type AncoraResolvida } from '../biblioteca/ancoras'
 import { CORES, ehTexto, type Bloco, type Capitulo, type CorMarca, type Marca, type Preferencias, type Radar } from '../biblioteca/tipos'
 import { usarBiblioteca, usarEstadoSalvamento } from '../biblioteca/usarBiblioteca'
+import { FrasesDoTema } from '../biblioteca/FrasesDoTema'
 import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
 import { Icone } from '../componentes/Icone'
@@ -463,6 +464,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
               </section>
             )
           })}
+          {capitulo.subtemas?.length ? <FrasesDoTema subtemas={capitulo.subtemas} /> : null}
           <footer className="lr-fim" data-bloco="fim">
             <div className="lr-fim__cartao">
               <Icone nome="certo" tamanho={22} />
