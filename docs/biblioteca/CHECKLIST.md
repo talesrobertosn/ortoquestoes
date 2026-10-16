@@ -20,7 +20,7 @@ Plano gratuito: no máximo **5** resumos com `acesso: gratis` (o gerador confere
 | --- | --- | --- | --- |
 | 1 | Fratura do colo do fêmur | fratura_colo_femur.pdf (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 53) | [x] Feito em 16/10/2026: `rockwood10-53-colo-femur`, grátis |
 | 2 | Fratura transtrocantérica | transtrocanterica.pdf (Rockwood and Green's, 10ª ed., cap. 54) | [x] Feito em 16/10/2026: `rockwood10-54-transtrocanterica`, grátis |
-| 3 | Fratura da cabeça do rádio, luxação do cotovelo e tríade terrível | cotovelo_deslocado.pdf (enviado em 16/10/2026, 62 páginas): Rockwood 10ª ed., cap. 40 · Elbow Dislocations and Terrible Triad Injuries (King, Beingessner, Pollock). Cobre luxação simples, cabeça do rádio, coronoide e tríade terrível | [ ] Próximo a fazer. |
+| 3 | Fratura da cabeça do rádio, luxação do cotovelo e tríade terrível | cotovelo_deslocado.pdf (enviado em 16/10/2026, 62 páginas): Rockwood 10ª ed., cap. 40 · Elbow Dislocations and Terrible Triad Injuries (King, Beingessner, Pollock). Cobre luxação simples, cabeça do rádio, coronoide, tríade terrível, instabilidade posteromedial e ulna proximal | [x] Feito em 16/10/2026: `rockwood10-40-cotovelo-cabeca-radio`, grátis (3 de 5) |
 | 4 | Fratura do úmero distal | tema_1_cabeca_do_radio.pdf (enviado em 16/10/2026): na verdade é o cap. 39 do Rockwood (Distal Humerus Fractures) | [ ] Na fila (o nome do arquivo dizia cabeça do rádio; o capítulo certo da cabeça do rádio chegou depois, ver linha 3). |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo, se é grátis, e qualquer divergência entre o
@@ -62,7 +62,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 17. [ ] Anatomia da coluna (Coluna)
 18. [ ] Fraturas do antebraço e punho na criança (Ortopedia pediátrica)
 19. [ ] Fraturas diafisárias do antebraço (Trauma adulto)
-20. [ ] Fratura da cabeça do rádio e instabilidade do cotovelo (Trauma adulto) — capítulo recebido (Rockwood cap. 40, cotovelo_deslocado.pdf); próximo a fazer
+20. [x] Fratura da cabeça do rádio e instabilidade do cotovelo (Trauma adulto) — feito: `rockwood10-40-cotovelo-cabeca-radio` (também cobre olécrano e Monteggia posterior)
 21. [ ] Síndrome compartimental (Trauma adulto)
 22. [ ] Fraturas do fêmur e da perna na criança (Ortopedia pediátrica)
 23. [ ] Fraturas dos metacarpos e falanges (Trauma adulto)
