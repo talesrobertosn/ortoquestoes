@@ -1,0 +1,574 @@
+---
+id: rockwood10-33-fratura-escapula
+versao: 1
+titulo: Fratura da escápula
+especialidade: trauma
+acesso: gratis
+livro: Rockwood and Green's Fractures in Adults
+edicao: 10ª edição (2025)
+capitulo: Capítulo 33 · Scapular Fractures
+autores: Jan Bartoníček
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (escapula_.pdf, 40 páginas)
+subtemas: Fratura da escápula; Fraturas do úmero proximal e da escápula
+resumo: Complexo suspensor superior e ombro flutuante, colo anatômico e cirúrgico, ângulo glenopolar e critérios de cirurgia, Ideberg-Goss, dissociação escapulotorácica e via de Judet: a escápula explicada pelo que a prova cobra.
+---
+
+# Como ler este capítulo {radar=fundamento}
+
+Este resumo foi escrito a partir do capítulo 33 do Rockwood and Green (10ª edição), escrito por **Jan Bartoníček**, na ordem em que as provas cobram o tema. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo.
+
+O capítulo tem uma particularidade que muda a leitura: o autor tem uma das maiores séries do mundo (**519 fraturas da escápula**, 383 com tomografia e reconstrução 3D, 153 operadas) e usa essa experiência para **contestar conceitos clássicos** que as provas continuam cobrando. O exemplo mais forte é o **ombro flutuante**: o que a literatura chamou de "fratura do colo com fratura da clavícula" seria, na maioria das vezes, uma fratura do **corpo** mal lida na radiografia. Sempre que o gabarito oficial seguir o conceito clássico e o capítulo disser outra coisa, o resumo avisa num alerta.
+
+A escápula raramente quebra porque é bem protegida: um envelope muscular grosso, mobilidade sobre a parede do tórax e o próprio tórax elástico por baixo. Quando quebra, a energia costuma ter sido alta e o paciente costuma ter outras lesões. Por isso o capítulo inteiro gira em torno de três perguntas:
+
+- **A glenoide perdeu a ligação com o resto do esqueleto?** É o centro do debate do ombro flutuante e do complexo suspensor superior.
+- **O desvio é grande o bastante para mudar a mecânica do ombro?** Ângulo glenopolar, angulação e translação da borda lateral, degrau articular.
+- **O paciente aguenta e precisa de uma cirurgia longa, em decúbito quase ventral?** Idade, demanda, pele, politrauma.
+
+> Na prova: o tema se resolve com cinco ideias. **Goss descreveu o anel do complexo suspensor superior**, e a lesão dupla do anel é instável. **Ângulo glenopolar menor que 20°**, **angulação da borda lateral maior que 40°** e **translação maior que 20 mm** sugerem cirurgia nas extra-articulares. **Degrau de 4 a 5 mm** com **25% a 30%** da superfície, ou subluxação persistente, operam a glenoide. **Ideberg-Goss** classifica a glenoide. E, na **via de Judet**, o infraespinal rebatido demais estira o **nervo supraescapular**.
+
+# Complexo suspensor superior, ombro flutuante e colo da escápula {radar=confirmado}
+
+## O anel de Goss
+
+O **complexo suspensor superior do ombro** (em inglês, SSSC) foi definido por **Goss**. É um **anel de osso e partes moles** formado por:
+
+- **processo glenoidal** (a glenoide);
+- **processo coracoide**;
+- **ligamentos coracoclaviculares** e **coracoacromial**;
+- **clavícula lateral**;
+- **articulação acromioclavicular**;
+- **acrômio**.
+
+O anel é sustentado por **dois pilares** (struts). O **superior** é o **terço médio da clavícula**; o **inferior** é a **junção da parte lateral do corpo da escápula com a espinha**. Goss dividiu o conjunto em três unidades: a ponte clavícula, acromioclavicular e acrômio; a junção da glenoide, do coracoide e do acrômio com o corpo; e a ligação clavícula, ligamentos coracoclaviculares e coracoide.
+
+A função do anel, nas palavras de Goss, é manter uma relação estável entre a escápula, o membro superior e o esqueleto axial, permitindo o pouco movimento que existe na acromioclavicular e nos ligamentos coracoclaviculares. A regra que dele deriva é simples: **uma ruptura isolada do anel costuma ser estável**; **duas rupturas** (ou uma ruptura com fratura de um pilar) criam uma situação **potencialmente instável**, que pode levar a retardo de consolidação, pseudartrose ou consolidação viciosa.
+
+!figura 33-2
+Complexo suspensor superior do ombro, vista anterior da escápula direita: acrômio, acromioclavicular, clavícula, coracoide, ligamentos coracoacromial e coracoclavicular, colo e borda lateral da escápula.
+!fim
+
+!questoes central=ombro-cotovelo-0401,trauma-0126 treino=trauma-1302
+conceito: O anel de Goss é formado por glenoide, coracoide, ligamentos coracoclaviculares e coracoacromial, clavícula lateral, acromioclavicular e acrômio; os pilares são o terço médio da clavícula (superior) e a junção do corpo lateral com a espinha (inferior). Duas rupturas do anel deixam o ombro instável.
+como: O TECOC pediu quais estruturas compõem o anel, com distratores que misturam peças de fora (ligamento coracoumeral, ligamento transverso do úmero, espinha da escápula). O TARO 2013 pediu qual combinação torna o anel instável: fratura do colo com lesão do ligamento acromioclavicular (duas rupturas).
+armadilha: Ligamento coracoumeral: aparece na figura do anel, mas liga o coracoide ao úmero e não faz parte do complexo.
+armadilha: Fratura do coracoide com lesão do trapezoide (TARO 2013): coracoide e ligamentos coracoclaviculares formam uma mesma unidade de Goss (a ligação clavícula, ligamentos coracoclaviculares e coracoide); não são dois pontos distantes do anel.
+alerta: No TARO 2013 (trauma-0126), o gabarito oficial foi colo da escápula com lesão do ligamento acromioclavicular, que segue Goss (a acromioclavicular é o segundo ponto do anel). O capítulo, ao descrever o colo cirúrgico, diz que o que decide a estabilidade são os ligamentos **coracoclavicular e coracoacromial** (numa passagem escreve "coracoclavicular e acromioclavicular"). Pelo raciocínio do autor, a ruptura do coracoclavicular (do qual o trapezoide faz parte) também pesaria; na prova, responda Goss.
+!fim
+
+## A história do ombro flutuante
+
+O conceito nasceu mais estrito do que é usado hoje:
+
+- **Ganz e Noesberger** descreveram primeiro a lesão como fratura do **colo da escápula** com fratura da **clavícula** e **ruptura dos ligamentos coracoclaviculares e coracoacromiais**.
+- **Herscovici** criou o termo **ombro flutuante** (floating shoulder) e o definiu como **fratura ipsilateral da diáfise da clavícula e do colo da escápula**: a clavícula quebra medial à inserção do ligamento coracoclavicular.
+- **Goss** trouxe o conceito do anel: a fratura do colo da glenoide somada a outra ruptura do complexo (por exemplo, o terço médio da clavícula) produz a situação instável, o ombro flutuante.
+
+Com o tempo, a definição foi reduzida a "colo mais clavícula", **sem olhar os ligamentos**. O resultado, diz o autor, é que quase toda fratura do corpo ou do colo com fratura da clavícula passou a ser chamada de ombro flutuante.
+
+!questoes central=trauma-0156,trauma-0822 treino=trauma-1342
+conceito: Na definição clássica de Herscovici, ombro flutuante é a fratura da diáfise da clavícula com a fratura do colo da escápula, do mesmo lado; Ganz e Noesberger exigiam também a ruptura dos ligamentos coracoclaviculares e coracoacromiais.
+como: O TARO 2014 pediu a associação clássica (clavícula com escápula). O TARO 2012 pediu a lesão do ombro flutuante e deu como certa "cavidade glenoidal e ligamentos coracoclaviculares", isto é, a glenoide solta pela ruptura ligamentar.
+armadilha: Rotura dos ligamentos coracoclaviculares com fratura da clavícula, sem fratura da escápula: não há segmento glenoidal solto.
+armadilha: Acrômio e intervalo dos rotadores, coracoumeral, glenoumeral superior: estruturas fora do anel.
+!fim
+
+## Por que tanta "fratura do colo" não é do colo
+
+Este é o ponto mais autoral do capítulo. Na radiografia AP, uma fratura **transversa em duas partes da porção infraespinal do corpo** parece uma fratura do colo com **medialização da glenoide**. A tomografia 3D mostra outra coisa: a glenoide está no lugar (a clavícula intacta mantém a distância até o esterno) e quem se desloca é a parte de baixo do corpo, **para lateral**, puxada pelo **subescapular, infraespinal e redondo maior**, que continuam presos à cabeça do úmero apoiada na glenoide. Por isso o autor diz que o termo "medialização da glenoide" **não é correto** na maioria dos casos.
+
+A confusão veio das classificações. **Ada e Miller** criaram o tipo **IIC**, "fratura do colo inferior à espinha", e Goss o chamou de fratura do colo infraglenoidal; para o autor, ambos são **fraturas do corpo em duas partes**. Uma pista na radiografia: a **distância coracoclavicular está normal**, o que mostra ligamentos íntegros.
+
+!figura 33-26
+Erro comum de interpretação: a radiografia AP sugere fratura do colo com medialização, mas a distância coracoclavicular está normal; a reconstrução 3D mostra fratura do corpo em duas partes, com a porção infraespinal desviada para lateral pelo manguito.
+!fim
+
+!questoes treino=trauma-1310,trauma-1311
+conceito: O tipo IIC de Ada e Miller é, na tomografia, uma fratura transversa em duas partes do corpo; a aparente medialização da glenoide é a lateralização da porção infraespinal pelo manguito.
+!fim
+
+## As três fraturas do colo e para onde vai a glenoide
+
+As fraturas do colo são **extra-articulares** do ângulo lateral e separam a glenoide do corpo. São raras: **6%** das fraturas da série. O autor distingue três tipos pelo traço e pela forma do fragmento:
+
+!tabela Fraturas do colo da escápula
+| Tipo | Por onde passa o traço | O que o fragmento leva | Desvio típico |
+| --- | --- | --- | --- |
+| **Colo anatômico** (muito raro) | Da incisura coracoglenoidal (lateral à base do coracoide) pela espinoglenoidal até a borda lateral, 3 a 4 cm abaixo da glenoide | Só a fossa e uma ponta da borda lateral; só a cabeça longa do bíceps e a do tríceps presas | **Distal e em valgo**; espaço subacromial alargado; **ângulo glenopolar aumenta** (até 70°) |
+| **Colo cirúrgico** (o mais frequente dos três) | Da incisura da escápula (medial ao coracoide), abaixo da espinoglenoidal, até a borda lateral, 3 a 7 cm abaixo da glenoide | A fossa **e o coracoide** | Depende dos ligamentos do coracoide (abaixo) |
+| **Transespinhal** (raro) | Começa medial à incisura da escápula, cruza o centro da espinha e sai na borda lateral, 4 a 6 cm abaixo da glenoide | Fossa, colo, coracoide, acrômio e espinha lateral | **Varo**, mais marcado na borda lateral; associa-se com frequência à fratura da diáfise da clavícula |
+!fim
+
+O colo cirúrgico tem subtipos conforme os ligamentos presos ao coracoide, e é aqui que a prova cobra a direção do desvio:
+
+- **Estável:** coracoclavicular e coracoacromial íntegros; desvio mínimo, distâncias coracoclavicular e coracoacromial normais.
+- **Instável em rotação:** rompe o **coracoacromial**; a distância coracoacromial alarga, a coracoclavicular fica normal, e o ápice do coracoide gira para distal e medial pelos músculos presos a ele.
+- **Totalmente instável (ligamentar):** rompem **coracoclavicular e coracoacromial**; as duas distâncias aumentam, sobretudo a **coracoclavicular**, e o fragmento glenoidal gira e desvia para **distal e medial**, puxado pelos músculos presos ao coracoide.
+- **Totalmente instável (ósseo):** a **base do coracoide** se separa do colo, com os ligamentos íntegros; as distâncias ficam normais e, como no colo anatômico, o fragmento vai para **distal e em valgo**, porque os músculos do coracoide não o puxam mais.
+
+> Na prova: **colo anatômico, distal e valgo**. **Colo cirúrgico com ligamentos rotos, distal e medial**, com a distância coracoclavicular aumentada. **Transespinhal, varo**.
+
+!figura 33-13
+Subtipos da fratura do colo cirúrgico: estável (ligamentos do coracoide íntegros), instável em rotação (coracoacromial roto), totalmente instável ligamentar (os dois rotos) e totalmente instável ósseo (base do coracoide separada, ligamentos íntegros).
+!fim
+
+!questoes central=trauma-0448,trauma-0320 treino=trauma-1319,trauma-1320,trauma-1321,trauma-1322
+conceito: No colo anatômico, a glenoide desvia para distal e em valgo e o ângulo glenopolar aumenta; no colo cirúrgico com ruptura dos ligamentos coracoclavicular e coracoacromial, ela é puxada pelos músculos do coracoide para distal e medial.
+como: O TECOC perguntou o desvio da glenoide no ombro flutuante com fratura do colo anatômico (distal e valgo). O TEOT 2023 perguntou o desvio com ruptura dos ligamentos coracoclaviculares e acromioclaviculares (distal e medial).
+armadilha: Proximal: o peso do membro e os músculos levam a glenoide para baixo; nenhum dos tipos desvia para cima.
+armadilha: Distal e lateral: lateral é a porção infraespinal do corpo na fratura em duas partes, não a glenoide.
+!fim
+
+## O conceito do autor
+
+O argumento anatômico é este. A clavícula fraturada, a luxação esternoclavicular ou a acromioclavicular desfazem a ligação óssea da escápula com o tronco, mas a posição do corpo em relação à coluna e às costelas pouco muda, porque é controlada pelos **músculos escapuloaxiais**, sobretudo o **trapézio**. **Williams** mostrou que **fratura da diáfise da clavícula com fratura do colo cirúrgico, sozinhas, não produzem ombro flutuante**: é preciso romper também os **ligamentos coracoclavicular e coracoacromial**.
+
+A glenoide só se separa do corpo por fratura do **colo anatômico** ou do **colo cirúrgico**. Daí a definição do autor: ombro flutuante é a lesão em que a **glenoide perdeu toda conexão osteoligamentar** com o resto da escápula e com o esqueleto axial. Isso só acontece em duas situações:
+
+- **fratura desviada do colo anatômico** (Arts e Louette já a chamavam de variante de ombro flutuante, mesmo sem clavícula);
+- **fratura totalmente instável do colo cirúrgico**.
+
+A **fratura da diáfise da clavícula é irrelevante** para o desvio e a estabilidade do fragmento glenoidal, e fixá-la pouco muda a posição da glenoide.
+
+Os números da série explicam a confusão. Entre 519 fraturas, houve só **6 do colo anatômico e 13 do colo cirúrgico** (2,5%), e a fratura da diáfise da clavícula acompanhou o colo cirúrgico **uma única vez**; só **um** colo cirúrgico era totalmente instável. Já a fratura da diáfise da clavícula esteve em **16%** de todos os casos, em **24%** das fraturas do corpo e em **32%** das fraturas infraespinais em duas partes (as "fraturas do colo infraglenoidal"). O "ombro flutuante" frequente da literatura é, em boa parte, **corpo com clavícula**.
+
+A lesão do complexo suspensor **sem** fratura do colo é outra história: lesões duplas ou triplas que envolvem acrômio, espinha lateral, base do coracoide e luxação acromioclavicular influem no desvio desses fragmentos e, quando instáveis, são operadas pelos mesmos princípios.
+
+!questoes central=trauma-0023,trauma-0782 relacionadas=trauma-1139 treino=trauma-1340,trauma-1341
+conceito: Para o autor, ombro flutuante verdadeiro é a glenoide sem nenhuma conexão osteoligamentar: fratura desviada do colo anatômico ou fratura totalmente instável do colo cirúrgico; a fratura da clavícula, sozinha, não decide.
+como: O TARO 2019 pediu a lesão mais frequente do complexo suspensor e deu como certa clavícula com colo da escápula. O TECOC pediu um critério de cirurgia no ombro flutuante e deu como certa a anteversão da glenoide de 45°. O TARO 2008 perguntou se o ombro flutuante é indicação absoluta de fixar a clavícula (sem gabarito oficial registrado no acervo).
+armadilha: Ângulo glenopolar de 40° (TECOC): está dentro da faixa normal (35° a 51°), não indica cirurgia.
+armadilha: Encurtamento da clavícula de 1,5 cm: o capítulo não usa a clavícula como critério para operar a escápula.
+alerta: No TARO 2019 (trauma-0023), o gabarito oficial foi "clavícula e colo da escápula". O capítulo não diz qual lesão dupla é a mais frequente e mostra que a fratura verdadeira do colo com fratura da clavícula é raríssima (uma vez em 519); o que é comum é a clavícula com a fratura do **corpo**, lida como colo. Na prova, responda o conceito clássico.
+alerta: No TECOC (trauma-0782), o gabarito oficial foi a anteversão da glenoide de 45°. O capítulo não traz nenhum critério de versão da glenoide; os critérios que ele usa são ângulo glenopolar, angulação e translação da borda lateral (seção seguinte).
+alerta: No TARO 2008 (trauma-1139), sem gabarito registrado: o capítulo não considera o ombro flutuante indicação absoluta de fixar a clavícula; diz que fixar só a clavícula pouco corrige a escápula e que os resultados das várias estratégias quase não diferiram.
+!fim
+
+## Tratar o ombro flutuante
+
+As séries trataram de tudo um pouco: as duas fraturas sem cirurgia, só a clavícula, ou as duas. Salvo exceções, **os resultados não diferiram**. Quem defende fixar **só a clavícula** argumenta que isso reduz o colo ou o corpo, e mostra o ângulo glenopolar antes e depois; o autor rebate que o ângulo na radiografia não mostra o desvio tridimensional, que a escápula forma **calo muito rápido** (reduzir dias depois já é difícil) e que viu desvios persistentes depois da fixação isolada da clavícula; **Oh** relatou duas falhas dessa estratégia. Labler e Leung tiveram bons resultados fixando **as duas**. E parte da vantagem relatada com a placa na clavícula pode vir apenas de permitir uma **reabilitação mais precoce**.
+
+Na prática do autor, quando há fratura desviada do colo anatômico ou cirúrgico, a escápula é operada pela **via de Judet**. Quando há também fratura da clavícula, ele **fixa a clavícula depois** de reduzir e estabilizar o corpo ou o colo, por uma incisão oblíqua separada ("em colar"), que poupa os nervos supraclaviculares, com placa de reconstrução de 3,5 mm ou placa pré-moldada anterolateral.
+
+!questoes treino=trauma-1338
+conceito: O autor fixa a clavícula depois de reduzir e estabilizar o colo ou o corpo da escápula; fixar só a clavícula não reduz de forma confiável a escápula.
+!fim
+
+# Medir o desvio e indicar a cirurgia {radar=confirmado}
+
+## O ângulo glenopolar e os outros três critérios
+
+Nas fraturas extra-articulares do colo e do corpo, a decisão se baseia no desvio dos fragmentos da **borda lateral** e na relação da glenoide com o corpo. São quatro medidas, feitas nas incidências de Neer ou, com mais precisão, na reconstrução 3D:
+
+- **Desvio mediolateral** da borda lateral (a falsa "medialização da glenoide"): na **Neer I** (AP verdadeira da escápula) ou na vista anterior da 3D.
+- **Angulação** dos fragmentos da borda lateral: na **Neer II** (perfil da escápula, ou incidência em Y) ou na vista lateral da 3D.
+- **Translação** anteroposterior dos fragmentos da borda lateral: nas mesmas vistas da angulação.
+- **Ângulo glenopolar** (GPA): ângulo agudo entre a linha que une os **polos superior e inferior da glenoide** e a linha do **polo superior da glenoide ao ângulo inferior** da escápula. Segundo Tuček, o valor padrão na Neer I é **41°** (faixa de **35° a 51°**). Mede-se nas fraturas infraespinais do corpo e em todos os tipos de fratura do colo.
+
+O capítulo faz duas ressalvas sobre o ângulo glenopolar. A medida e seus valores normais e críticos **não foram padronizados**, e o valor crítico habitual para operar, **20° ou menos**, **não tem apoio universal** na literatura. E, na fratura do **colo anatômico**, o ângulo **aumenta** (pode chegar a 70°), em vez de diminuir.
+
+!figura 33-7
+Ângulo glenopolar: entre a linha dos polos superior e inferior da glenoide e a linha do polo superior da glenoide ao centro do ângulo inferior da escápula.
+!fim
+
+## Os critérios relativos de cirurgia
+
+O capítulo resume as indicações num fluxograma (Figura 33-19) e num quadro do algoritmo do autor. São **relativas**: pesam junto com outras lesões, idade, condição física e pele.
+
+!tabela Indicações relativas de cirurgia (Figura 33-19 e Algoritmo 33-1)
+| Grupo | Favorece a cirurgia | Favorece o conservador |
+| --- | --- | --- |
+| **Intra-articular** | Degrau ou diástase **maior que 4 mm** em jovem ativo; ou menor que 4 mm com a **articulação subluxada** | Menor que 4 mm com articulação estável; idoso, debilitado ou sedentário |
+| **Extra-articular** (colo e corpo) | **Ângulo glenopolar menor que 20° ou maior que 60°**, **angulação maior que 40°** no perfil, **translação maior que 20 mm**, em jovem ativo | Ângulo glenopolar entre 20° e 60°, angulação menor que 40°, translação menor que 20 mm |
+| **Lesões associadas** (coracoide, acrômio, espinha, acromioclavicular) | Desvio **maior que 10 mm** em jovem ativo | Desvio menor que 10 mm, ou nenhuma lesão associada |
+!fim
+
+No quadro do algoritmo 33-1, o desvio mediolateral dos fragmentos da borda lateral aparece como **15 a 20 mm**; na Figura 33-19, a translação mediolateral é **maior que 20 mm** (medida no corpo, na parte alta da fossa infraespinal).
+
+O sentido das medidas é mecânico: restaurar o alinhamento da glenoide com o corpo (o ângulo glenopolar) devolve o **ritmo escapuloumeral** e o trajeto normal dos músculos do manguito; restaurar a superfície anterior do corpo devolve o deslizamento sobre o tórax.
+
+!questoes central=trauma-0050,trauma-0263,trauma-0779,trauma-0967,trauma-0687,trauma-0530 relacionadas=trauma-1129,trauma-1178 treino=trauma-1307,trauma-1309,trauma-1331,trauma-1332
+conceito: Nas fraturas extra-articulares do colo e do corpo, favorecem a cirurgia o ângulo glenopolar menor que 20° (ou maior que 60°), a angulação da borda lateral maior que 40° no perfil e a translação maior que 20 mm; o ângulo glenopolar normal é de cerca de 41° (35° a 51°).
+como: É a pergunta mais repetida do tema. O TARO 2018 e uma prova sem ano pediram o ângulo glenopolar (menor que 20°), com distratores como "normal de 20 a 30°" e "referência no acrômio". O TECOC cobrou três vezes a angulação no perfil (45° entre os fragmentos), com o ângulo glenopolar de 30° ou 35° e a medialização de 5 ou 17 mm como distratores. O SBOT-SP pediu a translação em porcentagem. O TARO 2007 e o TARO 2006 perguntaram o limite de 40° (sem gabarito oficial registrado no acervo; pelo capítulo, 40° é o corte da angulação).
+armadilha: Ângulo glenopolar de 30° ou 35°: está na faixa entre 20° e 60°, que favorece o conservador.
+armadilha: Referência no acrômio: as linhas do ângulo glenopolar usam os polos da glenoide e o ângulo inferior da escápula.
+armadilha: Desvio mediolateral de 3 mm ou 5 mm: muito abaixo dos 15 a 20 mm do capítulo.
+alerta: No SBOT-SP (trauma-0530), o gabarito oficial foi translação de **100%** dos fragmentos da borda lateral. O capítulo não usa porcentagem: o critério dele é translação **maior que 20 mm**.
+alerta: No TECOC (trauma-0687 e trauma-0779), o gabarito é a angulação de 45°; o corte do capítulo é **maior que 40°**. Entre as alternativas (15°, 30°, 45°, 60°), 45° é a primeira acima do limite, e o gabarito é compatível.
+alerta: No TECOC (trauma-0967), a medialização de 17 mm (alternativa C) cai dentro da faixa de 15 a 20 mm do algoritmo 33-1, mas abaixo dos 20 mm da Figura 33-19; o gabarito oficial (angulação de 45°) é o único critério que o capítulo sustenta sem ambiguidade.
+alerta: No TARO 2006 (trauma-1178), sem gabarito registrado, a frase diz que angulação acima de 40° converte a compressão do manguito em cisalhamento. O capítulo usa 40° como critério, mas não descreve esse mecanismo; ele fala em restaurar o trajeto dos músculos do manguito e o ritmo escapuloumeral.
+!fim
+
+## Quando não operar e como conduzir
+
+Há consenso de que **toda fratura sem desvio** é conservadora. O conservador também vale para fraturas desviadas, intra ou extra-articulares, quando o estado geral ou as partes moles não permitem cirurgia. No algoritmo do autor, o **politraumatizado ou com partes moles ruins** aguarda a melhora e é **reavaliado**; o idoso ou doente vai para o conservador; o paciente em boa condição com desvio importante vai para a cirurgia.
+
+O protocolo conservador:
+
+- analgesia e **tipoia por 2 semanas**;
+- **passivos** depois disso, buscando amplitude passiva completa em **1 mês**;
+- amplitude **ativa** completa no **segundo mês**;
+- **fortalecimento** do manguito e dos periescapulares a partir do **terceiro mês**; no **quarto mês**, sem restrições;
+- exceções com imobilização mais longa, **5 a 6 semanas**: **fraturas-luxações da glenoide** e fraturas da **espinha** e do **coracoide**, que têm mais risco de pseudartrose.
+
+Por muito tempo, a cirurgia ficou restrita às fraturas desviadas da glenoide. Isso mudou com estudos de resultados ruins das fraturas extra-articulares desviadas tratadas sem cirurgia (dor, limitação, lesão do manguito). As séries conservadoras recentes apontam na mesma direção: Romero viu problemas com ângulo glenopolar final **menor que 20°**; Bozkurt achou correlação positiva entre o Constant e o ângulo glenopolar; em Van Nort, todos tinham ângulo acima de 20° e todos foram bem; Königshausen, em glenoides desviadas (Goss II a V), viu resultado melhor com desvio **menor que 3 mm** e pior **acima de 5 mm**; politrauma, escore de gravidade alto e fraturas de costelas pioraram os resultados.
+
+Duas revisões resumem a literatura, ambas com dados heterogêneos:
+
+- **Zlowodski** (520 fraturas, 22 séries): **80% das fraturas da glenoide foram operadas** (82% de bons e excelentes); **80% das fraturas isoladas do corpo foram tratadas sem cirurgia** (86% bons e excelentes); 83% das fraturas do colo não articulares, sem cirurgia (77% bons e excelentes).
+- **Lantry** (243 fraturas operadas, 17 séries): a indicação na glenoide foi desvio de 4 a 10 mm, mais comumente 5 mm; infecção em **4,2%**, lesão do nervo supraescapular em **2,4%**, retirada do material em **7,1%**; bons e excelentes em 83%.
+
+!questoes treino=trauma-1334,trauma-1335,trauma-1348
+conceito: O conservador usa tipoia por 2 semanas e mobilização progressiva; fraturas-luxações da glenoide, espinha e coracoide pedem 5 a 6 semanas. No politraumatizado, aguarda-se a melhora e reavalia-se.
+!fim
+
+# Fraturas da glenoide {radar=confirmado}
+
+## Ideberg modificada por Goss
+
+**Ideberg** analisou radiografias de 338 fraturas e descreveu cinco tipos; **Goss** modificou a classificação e acrescentou o mecanismo de cada tipo (a posição da cabeça do úmero no momento do trauma). Ela separa as fraturas da **borda** (tipo I) das fraturas **centrais** da fossa (tipos II a VI). Para o autor, é a que melhor reflete as fraturas reais e virou a classificação mais usada das fraturas intra-articulares da escápula.
+
+!tabela Ideberg-Goss (como a Figura 33-9 desenha)
+| Tipo | Traço |
+| --- | --- |
+| **Ia** | Borda **anterior** |
+| **Ib** | Borda **posterior** |
+| **II** | Traço transverso ou oblíquo que separa a **glenoide inferior** e sai pela **borda lateral** do corpo |
+| **III** | Traço que sai pela **borda superior** da escápula; o fragmento leva a **metade superior da glenoide e o coracoide** |
+| **IV** | Traço horizontal que atravessa o corpo até a **borda medial** |
+| **Va** | II + IV |
+| **Vb** | III + IV |
+| **Vc** | II + III + IV |
+| **VI** | **Cominuta** |
+!fim
+
+!figura 33-9
+Classificação de Goss das fraturas da glenoide: Ia borda anterior, Ib borda posterior, II glenoide inferior, III glenoide superior com o coracoide, IV traço horizontal até a borda medial, Va a Vc combinações e VI cominuta.
+!fim
+
+!questoes central=trauma-1082,trauma-0963,trauma-0777 treino=trauma-1312
+conceito: Na Ideberg-Goss, o tipo I é a fratura da borda (Ia anterior, Ib posterior); o tipo III separa o terço superior da glenoide com o coracoide e sai pela borda superior; o II sai pela borda lateral; o IV cruza o corpo até a borda medial; o VI é cominuto.
+como: O TARO 2015 pediu o tipo da fratura do terço superior com o coracoide (III). Uma prova sem ano mostrou a imagem de uma fratura da borda anterior para classificar (Ia). O TECOC perguntou o tipo que resulta da cabeça batendo no centro da concavidade (gabarito IV).
+armadilha: Tipo II: também separa parte da glenoide, mas o fragmento é o inferior e o traço sai pela borda lateral.
+armadilha: Tipo IA ou IB no impacto central: as fraturas da borda vêm da luxação, quando a cabeça sai e arranca a borda.
+alerta: No TECOC (trauma-0777), o gabarito oficial foi o tipo IV para a cabeça que bate no centro da concavidade. O capítulo diz que Goss descreveu o mecanismo de cada tipo pela posição da cabeça, mas não detalha esses mecanismos; o que ele mostra, na série do autor, é que o impacto direto da cabeça em **abdução** produz a fratura da **glenoide inferior**. Responda pelo Goss que a banca usa.
+!fim
+
+## A AO/OTA (14) e por que o autor a critica
+
+Na versão de 2018 da OTA/AO, a escápula é o osso **14**, dividido em processos (A), corpo (B) e segmento articular (F):
+
+- **14A:** processos; **A1 coracoide**, **A2 acrômio**, **A3 espinha**.
+- **14B:** corpo; **B1** sai da circunferência do corpo em **dois pontos ou menos**; **B2** em **três ou mais**.
+- **14F:** fossa glenoidal; **F0** extra-articular pelo osso subcondral (fratura do **colo da glenoide**); **F1** simples (F1.1 borda anterior, F1.2 borda posterior, F1.3 transversa ou oblíqua curta); **F2** multifragmentária (F2.1 fossa; **F2.2** fratura-luxação central).
+
+As críticas do autor: a AO **eliminou o colo** como grupo próprio (o colo anatômico foi para a glenoide e o cirúrgico sumiu); classificar a glenoide pelo **trajeto do traço** diz pouco, porque o que importa é o **tamanho e o desvio** do fragmento; e a **fratura-luxação central** (F2.2), com as bordas intactas, não existe na prática: os próprios autores não a acharam em 120 casos, e é improvável que a cabeça, muito maior, parta uma superfície quase plana preservando a periferia. As classificações antigas, além disso, foram feitas em radiografias, com poucos casos operados para conferir.
+
+!questoes treino=trauma-1313
+conceito: Na OTA/AO, 14B2 é a fratura do corpo que sai da circunferência em três ou mais pontos, e 14F0 é a fratura extra-articular do colo da glenoide.
+!fim
+
+## A classificação do autor: cinco padrões
+
+Na série do autor, a glenoide foi **25%** de todas as fraturas da escápula, em cinco padrões:
+
+!tabela Fraturas da glenoide na série do autor
+| Padrão | Frequência entre as da glenoide | Ideia central |
+| --- | --- | --- |
+| **Glenoide superior** | **17%** | Fratura intra-articular da **base do coracoide**; o fragmento leva em geral o terço proximal (até dois terços); traço pode subir até o ângulo superior; desvio leve em varo e anteversão pelos músculos do coracoide; associa-se a lesão do acrômio e da espinha lateral |
+| **Borda anterior (anteroinferior)** | **32%** | Associada à **luxação anterior**; três tipos: borda periférica, saliência anteroinferior (overhang) e fenda vertical |
+| **Borda posterior** | **4%** (a mais rara) | Associada à **subluxação ou luxação posterior**; na glenoide direita, entre 6 e 10 horas |
+| **Glenoide inferior** | **32%** (a mais comum, empatada) | Um a dois terços distais da fossa com parte da borda lateral, quase sempre com traços no corpo; **impacto direto da cabeça em abdução**, típica de ciclistas e motociclistas; muito grave |
+| **Glenoide inteira** | **16%** | Toda a superfície separada do corpo entre os colos anatômico e cirúrgico, em dois ou três fragmentos; a mais grave |
+!fim
+
+!figura 33-11
+Tipos de fratura da glenoide na reconstrução 3D (escápula direita): normal, glenoide superior, borda anterior, borda posterior, glenoide inferior e glenoide total.
+!fim
+
+!questoes treino=trauma-1314,trauma-1315,trauma-1308
+conceito: Na série do autor, a fratura da glenoide inferior vem do impacto direto da cabeça em abdução e é abordada pela via de Judet; a mais rara é a da borda posterior, associada à subluxação ou luxação posterior.
+!fim
+
+## Quando operar a glenoide
+
+O objetivo é devolver **congruência e estabilidade**. A indicação aceita hoje é **degrau ou diástase de pelo menos 4 a 5 mm** com **pelo menos 25% a 30% da superfície articular** envolvidos, ou **subluxação persistente** da cabeça. O que mais importa é a chamada **área circular** (os dois terços inferiores da fossa, principal superfície de contato com a cabeça), sobretudo o **quadrante anteroinferior**. O **polo superior**, que leva cerca de **20%** da superfície, **não é tão crítico**. Fraturas sem desvio, pouco desviadas ou da borda com fragmento pequeno vão bem sem cirurgia. Na série do autor, **46%** (59 de 128) das fraturas da glenoide foram operadas.
+
+Por padrão:
+
+- **Glenoide superior:** tolera-se um pouco mais de incongruência; opera-se com desvio articular **maior que 4 mm** ou **risco de impacto do coracoide** (6 de 22 operadas). A fixação é difícil pela tração dos músculos do coracoide: parafusos de tração (canulados) **pelo coracoide até a glenoide** ou o colo.
+- **Borda anteroinferior:** as **periféricas** são conservadoras (artroscopia no jovem); a **saliência anteroinferior** desviada, sobretudo com instabilidade, é fixada; a **fenda vertical de toda a metade anterior** exige **redução aberta e fixação** (13 de 41 operadas). Parafusos de tração ou placa pequena, pela via deltopeitoral.
+- **Borda posterior:** se indicada, via posterossuperior ou artroscopia; as cinco da série foram conservadoras.
+- **Glenoide inferior:** trata-se a glenoide e o corpo, ambos pela **via de Judet** (34 de 50 operadas). Abre-se a cápsula paralela à borda posterior para ver e palpar a redução; fragmento longo é reduzido com dois parafusos-"joystick" no colo aproximados por uma pinça; fragmentos pequenos, com parafusos de 2,0 ou 2,4 mm.
+- **Glenoide inteira:** a fossa é reconstruída como um conjunto e depois fixada ao colo ou ao corpo por placas (6 de 10 operadas, todas por Judet, com resultados muito bons).
+
+A **artroscopia** serve sobretudo às fraturas da **borda anterior ou posterior**, menos às da glenoide superior; as da **glenoide inferior**, que se propagam ao corpo, **não** são adequadas.
+
+> Na prova: glenoide opera com **4 a 5 mm** e **25% a 30%**, ou com **subluxação persistente**. O polo superior é o menos crítico.
+
+!questoes central=trauma-0974,trauma-0998,trauma-0444 treino=trauma-1316,trauma-1317,trauma-1318,trauma-1333
+conceito: A glenoide é operada com degrau de 4 a 5 mm envolvendo 25% a 30% da superfície ou com subluxação persistente da cabeça; a artroscopia serve às bordas anterior e posterior.
+como: Uma prova sem ano pediu a indicação e deu desvio de 3 mm, polo superior e 12% da superfície como distratores. O TARO 2026 pediu onde a artroscopia é mais indicada (anterior ou posterior). O TECOC perguntou por que os parafusos da fratura IA devem ficar abaixo do equador (nervo supraescapular).
+armadilha: Acometimento do polo superior: é o fragmento menos crítico para a estabilidade.
+armadilha: Desvio de 3 mm: abaixo do corte de 4 a 5 mm.
+armadilha: Fratura inferior na artroscopia: propaga-se ao corpo e pede a via de Judet.
+alerta: No TECOC (trauma-0444), o gabarito oficial foi o nervo supraescapular. O capítulo não traz a regra do equador, mas concorda com o nervo em risco: ao pôr parafusos no fragmento glenoidal, ele pede cuidado com as estruturas neurovasculares da **incisura espinoglenoidal**, por onde passa o supraescapular.
+!fim
+
+# Dissociação escapulotorácica {radar=confirmado}
+
+## O que é
+
+É uma lesão **rara, grave e de alta energia**: o sistema osteoligamentar da escápula se desconecta do esqueleto axial em vários níveis, os **músculos escapuloaxiais** se separam, e há lesão dos **grandes vasos** do membro, do **plexo braquial** e das partes moles do tórax e do ombro, quase sempre com a **pele intacta**. Por isso alguns autores a chamam de **amputação interna do quarto superior** (internal forequarter amputation). A mortalidade relatada é de **11%**, pelas lesões intratorácicas.
+
+O mecanismo é uma **distração lateral violenta** (ou um desvio rotacional) da cintura escapular: o membro fica preso num objeto fixo enquanto o corpo segue em alta velocidade, ou é puxado por uma máquina pesada. A **radiografia de tórax** é importante justamente para ver a relação da escápula com a coluna. Na Figura 33-27, o caso mostra fraturas do **coracoide**, do **acrômio** e do **ângulo inferior**, com o espaço toracoescapular alargado.
+
+## Zelle: a classificação que a prova cobra
+
+!tabela Classificação de Zelle da dissociação escapulotorácica
+| Tipo | Lesões |
+| --- | --- |
+| **1** | Só musculoesquelética |
+| **2A** | Musculoesquelética com lesão **vascular** |
+| **2B** | Musculoesquelética com déficit **neurológico incompleto** do membro |
+| **3** | Musculoesquelética com déficit **neurológico incompleto e lesão vascular** |
+| **4** | Musculoesquelética com **avulsão completa do plexo braquial** |
+!fim
+
+## O tratamento gira em torno do nervo
+
+O foco é a lesão **neurovascular**. Mas a rede colateral em volta do ombro é extensa e pode suprir o vaso lesado, e reparar o vaso num plexo completamente perdido é **questionável**; o reparo neurológico também é controverso. **Zelle** mostrou que a **extensão da lesão do plexo** é o que mais prediz o resultado: lesões parciais foram melhor; **todos** os pacientes com lesão completa terminaram com amputação ou membro sem função. Ele recomenda **amputação imediata acima do cotovelo** quando a função do membro não pode ser restaurada, com resultados funcionais melhores e menos complicações. Na série do autor, houve 2 casos (**0,4%**) e mais um fora da coorte: um morreu e os outros dois tiveram resultado muito ruim.
+
+> Na prova: **Zelle 2B é neurológico incompleto**, **3 soma o vascular**, **4 é avulsão completa**. Com plexo completo e função irrecuperável, **amputação acima do cotovelo**.
+
+!questoes central=ombro-cotovelo-0245,trauma-0982,trauma-0194,ombro-cotovelo-0372,trauma-0702 treino=trauma-1343,trauma-1344,trauma-1345,trauma-1270,trauma-1351
+conceito: A dissociação escapulotorácica é uma amputação interna por distração lateral violenta; Zelle classifica pelo que se soma à lesão musculoesquelética (2A vascular, 2B neurológico incompleto, 3 os dois, 4 avulsão completa), e a extensão da lesão do plexo decide o prognóstico.
+como: O TEOT 2024 pediu o tipo 2B de Zelle (neurológico incompleto). O TARO 2026 pediu a conduta na lesão completa do plexo sem função restaurável (amputação acima do cotovelo). O TEOT 2022 pediu o valor da distância entre a borda medial da escápula e a coluna que confirma o diagnóstico (1,5 vez a do outro lado). Duas provas perguntaram a lesão óssea associada e deram como certa a fratura da clavícula desviada.
+armadilha: Tipo 2A na pergunta do 2B: o 2A é a lesão vascular.
+armadilha: Exploração do plexo ou artrodese na lesão completa: o capítulo, com Zelle, recomenda a amputação quando a função não volta.
+alerta: No TEOT 2022 (trauma-0194), o gabarito oficial foi 1,5 vez a distância do lado oposto. O capítulo não traz esse número; só diz que a radiografia de tórax é a que mostra a relação da escápula com a coluna.
+alerta: No TEOT/TARO sem ano (ombro-cotovelo-0372) e no CET-PR (trauma-0702), o gabarito associa a dissociação à **fratura da clavícula** desviada. O capítulo não faz essa associação: descreve a desconexão "em vários níveis", e o exemplo que ele mostra tem fraturas do coracoide, do acrômio e do ângulo inferior.
+alerta: No quadro de Zelle do capítulo, o tipo neurológico incompleto aparece impresso só como "2" (depois do "2A"); é o 2B da classificação, como cobrou o TEOT 2024.
+!fim
+
+# Processos: coracoide, acrômio e espinha lateral {radar=confirmado}
+
+## Por que quase nunca é avulsão
+
+As fraturas dos processos e dos ângulos são **20%** de todas as fraturas da escápula. A literatura costuma chamá-las de **avulsão**, mas o autor mostrou que a maioria resulta de **impacto direto** (da cabeça do úmero ou de um objeto), e que as fraturas do coracoide, em particular, não poderiam ser produzidas por tração. A contração muscular violenta existe (choque elétrico, convulsão), mas dá outros padrões: compressão do corpo, glenoide e avulsão da inserção de um músculo. Há ainda as fraturas **por estresse**: do coracoide em atletas, do acrômio e da espinha na insuficiência do manguito com subida da cabeça.
+
+Acrômio, espinha lateral e coracoide se associam muitas vezes à **luxação acromioclavicular**, menos à fratura da clavícula lateral; fratura da diáfise da clavícula é raríssima nesse grupo. Quase todas comprometem o **complexo suspensor**, e o desvio depende do quanto o anel foi rompido.
+
+## Coracoide
+
+O autor divide as fraturas do coracoide em **ápice** (tipo I), **bico** (tipo II, distal à inserção do ligamento coracoclavicular), **base extra-articular** (tipo III) e **cominutas** do processo inteiro (tipo IV). A base que se estende até a borda superior ou o ângulo superior costuma vir em varo, às vezes com desvio medial. A base **intra-articular** é a fratura da glenoide superior, vista acima.
+
+Na literatura citada, a classificação usada é a de **Ogawa**. Van Doesburg reuniu 110 fraturas do coracoide: **tipo I em 78%** e tipo II em 13%. No tipo I, **76%** tinham lesões múltiplas do complexo suspensor e 87% foram operados; no tipo II, só 14% tinham lesão do complexo, só 36% foram operados, e cinco de nove tratados sem cirurgia ficaram com pseudartrose **assintomática**.
+
+O dado prático do autor: de **39** fraturas do coracoide, operou 13, mas fixou o coracoide **diretamente só em 2**. Nas outras, operou a lesão associada (luxação acromioclavicular seis vezes, ângulo do acrômio, colo cirúrgico, glenoide anterior), e, em **todas** as luxações acromioclaviculares, a fixação da acromioclavicular **reduziu indiretamente o coracoide**, que consolidou. Quando se fixa: **base** com parafusos de tração de **3,5 mm** (técnica de Hill), **bico** com parafusos de tração canulados com arruela, e **ápice desviado é excisado**, com reinserção do tendão conjunto.
+
+!figura 33-15
+Classificação das fraturas do coracoide: tipo I ápice, tipo II bico, tipo III base e tipo IV cominuta.
+!fim
+
+## Acrômio e espinha lateral
+
+Acrômio e espinha lateral são **uma só estrutura**, e o limite convencional entre eles é o **ângulo acromial**. A **espinha medial**, que nasce do corpo e forma o pilar espinal, entra nas fraturas do **corpo** na classificação do autor. Pela linha de fratura (Ogawa modificada), há três grupos:
+
+- **acrômio:** fragmentos do ápice, da borda lateral ou de toda a metade anterior, com traço transverso, em geral atrás da faceta acromioclavicular;
+- **ângulo acromial:** grupo de transição, traço transverso-oblíquo junto ao ângulo, fragmento grande com o acrômio inteiro;
+- **espinha lateral:** traço variável; o fragmento angula em **varo**, e cortical grossa, superfície de fratura estreita e tração muscular explicam as **pseudartroses relativamente frequentes**.
+
+Como o tratamento conservador do acrômio e da espinha lateral desviados pode dar **pseudartrose dolorosa**, recomenda-se operar os desviados (10 de 39 na série): cerclagem, parafusos de tração ou placa de reconstrução; placa em malha bloqueada de 2,7 mm nas multifragmentárias; fragmentos pequenos da borda do acrômio, excisados.
+
+## Quando operar os processos
+
+Não há consenso. Os únicos critérios exatos são os de **Anavian** e **Hill**: desvio **maior que 1 cm**, sozinho ou com **lesão dupla do complexo suspensor**. O autor acrescenta que, na prática, a lesão associada (sobretudo a **luxação acromioclavicular**) costuma ser a verdadeira razão para operar. Os ângulos superior (6) e inferior (22) da série foram todos tratados sem cirurgia; Chang recomenda operar o ângulo inferior desviado pelo risco de pseudartrose dolorosa.
+
+!questoes central=trauma-0200,trauma-1293 relacionadas=trauma-0134,ombro-cotovelo-0341,trauma-0058 treino=trauma-1306,trauma-1326,trauma-1327,trauma-1328,trauma-1329,trauma-1330,trauma-1263
+conceito: As fraturas dos processos quase sempre vêm de impacto direto e comprometem o complexo suspensor; opera-se com desvio maior que 1 cm ou lesão dupla do anel, e na fratura do coracoide com luxação acromioclavicular a fixação da acromioclavicular reduz indiretamente o coracoide.
+como: O TEOT 2022 pediu o tipo de Kuhn da fratura do acrômio com desvio inferior que estreita o espaço subacromial (III). O SBOT-SP pediu a classificação de Ogawa do coracoide (sem gabarito oficial registrado no acervo). O TARO 2015 perguntou em que fratura a luxação acromioclavicular tipo III mantém os coracoclaviculares íntegros (coracoide). O TARO 2011 e o TARO 2018 perguntaram a incidência que mostra a base do coracoide (Stryker).
+armadilha: Fratura do coracoide como avulsão pelo tendão conjunto, pelo peitoral menor ou pelos coracoclaviculares: o autor mostra que a maioria vem de impacto direto.
+alerta: No TEOT 2022 (trauma-0200), o gabarito oficial usa a classificação de **Kuhn**, que o capítulo não apresenta; ele usa a de Ogawa modificada (acrômio, ângulo acromial, espinha lateral), que é pelo traço e não pelo efeito no espaço subacromial.
+alerta: No SBOT-SP (trauma-1293), sem gabarito registrado: pelo capítulo, o tipo I de Ogawa é o mais frequente (78% na revisão de Van Doesburg) e é o que mais se associa a lesão do complexo suspensor, o que só faz sentido com o traço atrás (proximal) da inserção dos coracoclaviculares; a alternativa A é a compatível. O capítulo, porém, não define os tipos de Ogawa pela posição do traço.
+alerta: No TARO 2011 (ombro-cotovelo-0341) e no TARO 2018 (trauma-0058), o gabarito oficial foi a incidência de **Stryker**. O capítulo não cita a Stryker: diz que alguns autores recomendam a axilar e outras incidências especiais para coracoide e acrômio, mas que elas **não substituem a tomografia**, que mostra também as fraturas sem desvio dos processos.
+!fim
+
+# Vias de acesso e técnica de fixação {radar=confirmado}
+
+## A via de Judet
+
+A **via posterior de Judet** expõe toda a fossa infraespinal, as bordas lateral e medial, a espinha, os colos anatômico e cirúrgico e as bordas posterior e inferior da glenoide. É a via universal para fraturas do **corpo**, do **colo**, da **glenoide inferior** e suas combinações. O paciente fica em **decúbito semiventral** sobre o lado são, com o membro inteiro livre no campo.
+
+Na modificação do autor, são três fases:
+
+- **Pele:** incisão **em bumerangue** da borda posterior do acrômio, ao longo da **espinha**, até o **ângulo espinomedial**, descendo pela **borda medial** até o ângulo inferior; levanta-se um retalho sem abrir a fáscia comum do deltoide e do infraespinal.
+- **Deltoide:** identifica-se a borda posterior do deltoide; a fáscia comum é aberta em **T**; a **porção espinal do deltoide** é solta da espinha até a borda posterior do acrômio e rebatida para **laterodistal**.
+- **Infraespinal:** antes de soltá-lo, abre-se o intervalo entre **infraespinal e redondo menor** e se **ligam os vasos circunflexos da escápula**, que perfuram o redondo menor **3 a 4 cm abaixo da borda inferior da glenoide**. Depois o infraespinal é **solto da espinha, das bordas, do ângulo inferior e da fossa** e rebatido para **proximal**, com cuidado para **não tracionar demais o feixe neurovascular supraescapular**, visível na **incisura espinoglenoidal**.
+
+No fechamento, o infraespinal é reinserido no ângulo inferior (de preferência pela fáscia) e o deltoide, na espinha.
+
+A tendência é dissecar menos. Soltar o deltoide é bem tolerado; mobilizar todo o infraespinal dá mais dor e reabilitação mais longa. Por isso há três opções limitadas: só uma **janela lateral** entre infraespinal e redondo menor (sem soltar o deltoide); soltar o deltoide e abrir janelas **lateral e medial** (no ângulo espinomedial); ou soltar o infraespinal todo (ou só sua parte inferior).
+
+!figura 33-20
+Via de Judet, dissecção anatômica: fáscia comum do infraespinal e do deltoide, deltoide espinal rebatido, intervalo entre infraespinal e redondo menor com os vasos circunflexos da escápula, e o infraespinal rebatido para cima com o feixe supraescapular à vista.
+!fim
+
+## As outras vias
+
+- **Posterossuperior:** fraturas isoladas da borda posterior da glenoide, da espinha ou do acrômio; solta-se o deltoide da espinha e corta-se o tendão do infraespinal junto à cápsula; pode somar osteotomia do acrômio ou da espinha.
+- **Dupont-Evrard (posterolateral):** expõe a **borda lateral** pelo intervalo entre **infraespinal e redondo menor**; a desvantagem é **não poder ser ampliada**.
+- **Deltopeitoral:** fraturas da **borda anteroinferior** da glenoide e do **coracoide**.
+- **Gauder:** duas incisões limitadas (Dupont-Evrard mais o ângulo espinomedial), só para alguns padrões do corpo e para cirurgiões muito experientes.
+
+!questoes central=trauma-0415,trauma-0977,ombro-cotovelo-0306 treino=trauma-1304,trauma-1336,trauma-1337
+conceito: Na via de Judet, a incisão segue a espinha e a borda medial, o deltoide espinal é solto e rebatido, os vasos circunflexos da escápula são ligados no intervalo infraespinal-redondo menor, e o infraespinal é solto da escápula e rebatido para proximal; a tração excessiva estira o nervo supraescapular na incisura espinoglenoidal.
+como: O TARO 2023 pediu a estrutura lesada pela tração excessiva do infraespinal (nervo supraescapular). O TECOC pediu uma etapa do acesso clássico (liberar a origem do infraespinal), com desinserção do redondo menor, incisão na borda lateral e deltoide lateral como distratores, e, em outra questão, reconhecer a via de Judet numa imagem.
+armadilha: Nervo axilar: passa pelo espaço quadrangular, abaixo do redondo menor; não é o que estira quando o infraespinal sobe.
+armadilha: Destacar o deltoide lateral: o que se solta é a porção espinal (posterior), presa à espinha.
+armadilha: Incisão pela borda lateral: é a ideia da Dupont-Evrard, não da Judet.
+!fim
+
+## Implantes e redução
+
+- **Implantes pequenos:** 3,5 mm (parafusos corticais e placas em T, L ou semitubulares) e **2,7 mm** (preferidos pelo autor); parafusos canulados no coracoide; miniparafusos de 2,4 e 2,0 mm na glenoide e nos fragmentos intermediários da borda lateral.
+- **Limpar o foco:** a escápula **consolida muito bem e rápido**; como a cirurgia é feita dias depois, é preciso tirar hematoma e calo inicial.
+- **Radioscopia:** não substitui uma boa exposição, mas ajuda nas cominutas do ângulo lateral e do colo, para afastar parafuso intra-articular.
+- **Corpo:** a **borda lateral é a estrutura-chave e se fixa primeiro**. A contratura muscular encavala e encurta a borda; reduz-se com dois ganchos ou puxando parafusos postos nos fragmentos. Nas oblíquas instáveis, o **"fio de Kirschner perdido"** funciona como pino intramedular. Placa de reconstrução de 2,7 ou 3,5 mm: **2 + 2** (dois parafusos em cada fragmento) na fratura simples; **3 + 3** com fragmentos intermediários.
+- **Ângulo espinomedial:** soltar o infraespinal o desestabiliza; com desvio **menor que 5 mm** e pilar lateral **estavelmente fixado**, tolera-se algum movimento; senão, placa de 2,7 mm, parafusos bloqueados ou cerclagem.
+- **Dois pilares:** fixa-se primeiro o lateral, o que costuma melhorar o espinal.
+- **Colo:** em geral duas placas ou placa e parafusos; a fixação da borda lateral é completada por placa na face posterior do colo ou parafusos corticais da espinha para o fragmento glenoidal; cuidado com a **incisura espinoglenoidal**. O **transespinhal** quase sempre exige fixar **os dois pilares**.
+
+!questoes treino=trauma-1324,trauma-1325
+conceito: No corpo, a borda lateral é fixada primeiro, com 2 + 2 na fratura simples; o ângulo espinomedial pode ficar sem fixação se o desvio for menor que 5 mm e o pilar lateral estiver estável.
+!fim
+
+## Pós-operatório e resultados
+
+Tipoia; dreno até 48 horas; radiografias em Neer I e II. Revisão com 2 semanas e radiografias com 6 semanas, 3 meses, 6 meses e 1 ano. A escápula consolida em **6 a 8 semanas**, e a **pseudartrose depois da cirurgia é raríssima**. Passivos desde o **primeiro dia**, por cerca de 6 semanas; ativos com 4 a 5 semanas; se a amplitude estiver ruim com **6 semanas**, examina-se sob anestesia e manipula-se; resistidos com cerca de 8 semanas; sem restrições com **3 meses**. Nas fraturas complexas, a cirurgia costuma ser feita na **segunda ou terceira semana** e pode durar **3 a 4 horas** em decúbito ventral ou semiventral.
+
+As séries cirúrgicas são boas: Cole, 84 fraturas do corpo ou do colo pela via de Judet, todas consolidadas (três viciosas), sem infecção; Schandelmaier, glenoides Ideberg II a V acompanhadas de 5 a 23 anos, Constant de 94% do lado são; Anavian, 33 glenoides complexas, com lesão do supraescapular na incisura espinoglenoidal achada no acesso em 8; Cole, acima de 65 anos, todos voltaram às atividades.
+
+!questoes treino=trauma-1339
+conceito: A escápula consolida em 6 a 8 semanas; amplitude insatisfatória com 6 semanas leva a exame e manipulação sob anestesia.
+!fim
+
+# Epidemiologia, mecanismo, lesões associadas e imagem {radar=confirmado}
+
+## Quem fratura e como
+
+As fraturas da escápula são **0,4% a 0,9%** de todas as fraturas e cerca de **3% a 5%** das fraturas da cintura escapular. Predominam em **homens de 20 a 50 anos**, em geral unilaterais; bilaterais e expostas são raras. São comuns no **politraumatizado**.
+
+Os mecanismos básicos, que podem se combinar:
+
+- **golpe direto** na escápula (acidente de trânsito, queda de altura, objeto pesado): atinge sobretudo o **corpo** e a parte alta (acrômio, espinha);
+- **impacto da cabeça do úmero** na glenoide ou nos processos (por exemplo, golpe no cotovelo): o padrão depende do vetor e da posição do braço;
+- **luxação** da cabeça: a anterior arranca a borda anteroinferior (comum); a posterior, raramente, a borda posterior;
+- **contração muscular violenta** (choque elétrico, convulsão), rara.
+
+Nem toda fratura é de alta energia. O capítulo descreve três grupos: **alta energia** (politrauma verdadeiro), **média energia** (queda de bicicleta ou moto devagar, com a cintura escapular dominando) e **baixa energia** no **idoso** (queda da própria altura ou da escada), em geral lesão isolada.
+
+## As lesões associadas
+
+As fraturas **isoladas** são a minoria: **14% a 33%** (Thompson achou só 1,8%). A lesão associada mais frequente é a **fratura de costelas** (**27% a 65%**), o que se espera pela posição sobre o gradil. Depois vêm lesões do tórax e pulmão (pneumotórax, hemotórax, enfisema, contusão: **16% a 67%**), da cintura escapular (clavícula, úmero proximal, acromioclavicular: **8% a 47%**) e da cabeça (**10% a 42%**). Há séries com até **20%** de lesões pélvicas, e Thompson descreveu lesão de grandes vasos do ombro em **10%**; lembrar também plexo braquial, rins e aorta. A **mortalidade** é de **2% a 11%**, por lesão intratorácica grave ou falência de órgãos.
+
+No exame, a fratura da escápula do politraumatizado muitas vezes é achada **por acaso** na radiografia ou na tomografia do tórax, e pode esperar, salvo se for exposta. Achou uma lesão da cintura (por exemplo, a clavícula), procure as outras; palpe a axila e o pulso axilar; teste a sensibilidade do ombro, porque o déficit pode indicar lesão do plexo, sobretudo do **nervo axilar**.
+
+!questoes central=trauma-0907 relacionadas=trauma-1144 treino=trauma-1299,trauma-1305
+conceito: A fratura da escápula é rara (0,4% a 0,9% das fraturas), predomina em homens de 20 a 50 anos e quase sempre vem com outras lesões; a mais frequente é a fratura de costelas, e a mortalidade é de 2% a 11%.
+como: Uma prova sem ano pediu a fratura mais associada (costela), com clavícula, úmero proximal e esterno como distratores. O TARO 2009 perguntou em qual tipo de fratura da escápula as lesões associadas são mais frequentes (sem gabarito oficial registrado no acervo).
+armadilha: Clavícula: é comum (8% a 47% das lesões da cintura), mas bem menos que as costelas (até 65%).
+alerta: No TARO 2009 (trauma-1144), sem gabarito registrado: o capítulo não compara as lesões associadas por tipo de fratura. Ele diz que o golpe direto de alta energia atinge mais o corpo e que as fraturas complexas e dos dois pilares são de alta energia, o que favorece o corpo, mas sem número.
+!fim
+
+## A sequência de imagem
+
+- **AP de toda a cintura escapular** (escápula, clavícula inteira, acromioclavicular, esternoclavicular e úmero proximal): visão geral, insuficiente para o padrão.
+- **Neer I**, a **AP verdadeira da escápula**: espaço glenoumeral, desvio da glenoide em relação à borda lateral e **ângulo glenopolar**.
+- **Neer II**, o **perfil da escápula (Y)**: translação, angulação e encavalamento das fraturas do corpo, sobretudo da borda lateral.
+- **Radiografia de tórax:** pulmões e parede, primeira pista no politrauma e base para ver a relação da escápula com a coluna (dissociação).
+- **Tomografia:** é hoje o **exame padrão**. Os cortes axiais avaliam a fossa e mostram fraturas sem desvio do coracoide e do acrômio; as reconstruções 2D coronais, a superfície articular (sobretudo na base do coracoide); a **3D** define o padrão, com **subtração** de costelas, clavícula e úmero. Vista **posterior** para o corpo e a espinha, **anterior** para o colo (diferencia anatômico de cirúrgico), e **lateral com subtração da cabeça do úmero** para a glenoide.
+- Ressonância e ultrassom: só excepcionalmente, para partes moles.
+
+!questoes relacionadas=ombro-cotovelo-0045 treino=trauma-1307,trauma-1308
+conceito: Neer I (AP verdadeira) mede o ângulo glenopolar; Neer II (perfil em Y) mede angulação e translação da borda lateral; a tomografia com reconstrução 3D e subtração é o padrão.
+como: O TARO 2015 perguntou a posição normal da cabeça do úmero no perfil da escápula (central). O capítulo usa o perfil para as fraturas do corpo e não descreve a leitura da cabeça, mas a incidência é a mesma.
+!fim
+
+# Complicações {radar=confirmado}
+
+## Do tratamento conservador
+
+- **Consolidação viciosa:** é a **complicação mais comum** do conservador. A extra-articular viciosa muda a relação glenoide-corpo e o trajeto do manguito; o fragmento proeminente dói; a face anterior irregular atrapalha o deslizamento sobre o tórax. A glenoide viciosa dá incongruência, instabilidade e artrose.
+- **Pseudartrose:** sobretudo depois do conservador. A da **espinha lateral** é relativamente comum, e a angulada estreita o espaço subacromial e causa **impacto**. A do **acrômio** é menos frequente e deve ser diferenciada do **os acromiale**. No coracoide, é mais do **bico** que da base. No corpo e no colo, sobretudo na porção infraespinal. Na glenoide com fragmentos grandes, todos os três casos de Königshausen evoluíram para artrose.
+- **Lesão do nervo supraescapular:** na fratura do **colo**, o nervo pode ficar **preso no traço**; manifesta-se por **atrofia do infraespinal**. O autor o encontrou preso em três fraturas do colo cirúrgico.
+- **Pseudartrose de costela:** causa rara de dor crônica, tratada com fixação.
+
+## Da cirurgia
+
+Lesão do supraescapular (**2,4%** em Lantry, difícil de separar do trauma inicial), redução ruim e **parafuso intra-articular** (pouco frequente; radioscopia generosa no fim ajuda). Hematoma e **infecção**, com taxa **alta, 4,2%**: hematoma se drena, a superficial vai com antibiótico, a profunda pede desbridamento e às vezes retirada do material. Rigidez que persiste além de **6 semanas** pede manipulação. Falha da fixação, pseudartrose, incongruência residual, instabilidade, **ossificação heterotópica** (num caso comprimindo o axilar), **material proeminente** (acrômio, espinha, clavícula) e **artrose pós-traumática em 1,9%**.
+
+!questoes central=trauma-0920 treino=trauma-1303,trauma-1346,trauma-1347
+conceito: A consolidação viciosa é a complicação mais comum do tratamento conservador das fraturas da escápula; a pseudartrose aparece sobretudo na espinha lateral e deve ser diferenciada do os acromiale no acrômio.
+como: O SBOT-SP pediu a principal complicação do conservador, com pseudartrose, lesão do supraescapular e artrose como distratores.
+armadilha: Pseudartrose: existe, sobretudo na espinha lateral, mas é bem menos comum que a viciosa; a escápula consolida rápido.
+!fim
+
+# Anatomia aplicada: arquitetura, músculos e nervo supraescapular {radar=confirmado}
+
+## Osso grosso e osso fino
+
+O corpo da escápula é um triângulo com três bordas (superior, medial e lateral) e três ângulos (superior, inferior e lateral). O ângulo lateral engrossa até formar a **glenoide**, ligada ao corpo pelo **colo**, que não tem limite anatômico exato; o **coracoide** nasce da face superior do colo, e a **espinha** termina no **acrômio**.
+
+Contra a luz, a massa óssea é muito desigual. O osso mais grosso está na **glenoide**, no **colo** (com a base do coracoide) e na **borda lateral**. Dois **pilares** levam a carga da glenoide: o **pilar lateral**, que liga a borda inferior da glenoide ao ângulo inferior, e o **pilar espinal**, que sai do centro da glenoide e segue para medial na base da espinha. Unidos pela borda medial, mais fina, eles formam o **corpo biomecânico**. O ângulo superior e a fossa supraespinal vizinha são só um apêndice para músculos: **não transmitem compressão da glenoide**.
+
+Os pontos fracos explicam os traços: o osso mais fino é o centro da **fossa infraespinal**; o ponto mais fraco da circunferência do corpo biomecânico é o **ângulo espinomedial**, por onde passa um dos traços principais na **maioria** das fraturas do corpo; o centro da espinha é outro ponto fraco.
+
+## Músculos e vasos
+
+São **18 músculos**, mas só três nascem das fossas (subescapular, supraespinal e infraespinal). Eles formam dois sistemas: o **escapuloaxial** (prende a escápula à coluna e ao tórax e a mantém entre T1 e T9, sobretudo pelo trapézio) e o **escapulobraquial** (controla a glenoumeral).
+
+O **nervo supraescapular** nasce da porção supraclavicular do plexo braquial e, com os vasos supraescapulares, passa pela **incisura da escápula**, corre no fundo da fossa supraespinal sob o músculo (dá ramos ao supraespinal e à parte alta do infraespinal), contorna a base da espinha pela **incisura espinoglenoidal**, sob o ligamento espinoglenoidal, e termina no infraespinal. A **artéria circunflexa da escápula** contorna a borda lateral cerca de **3 cm abaixo da glenoide**, atravessa o redondo menor e se anastomosa com a supraescapular na incisura espinoglenoidal.
+
+!figura 33-3
+Trajeto do feixe neurovascular supraescapular na face posterior da escápula direita, com o nervo axilar, a artéria circunflexa da escápula e a cabeça longa do tríceps.
+!fim
+
+!questoes relacionadas=ombro-cotovelo-0134,mao-1523 treino=trauma-1300,trauma-1301
+conceito: O nervo supraescapular passa pela incisura da escápula e contorna a base da espinha pela incisura espinoglenoidal; a artéria circunflexa da escápula contorna a borda lateral cerca de 3 cm abaixo da glenoide. O ponto mais fraco do corpo biomecânico é o ângulo espinomedial.
+como: Uma prova sem ano mostrou a incisura da escápula para reconhecer o nervo supraescapular. A USP-SP 2026 pediu os limites do espaço que a circunflexa da escápula atravessa (cabeça longa do tríceps, redondo menor e redondo maior); o capítulo descreve o trajeto pela borda lateral e pelo redondo menor, sem nomear o espaço triangular.
+!fim
+
+# Fraturas do corpo e fraturas complexas {radar=fundamento}
+
+## A classificação anatômica do autor
+
+O autor propõe uma classificação baseada em 519 fraturas, com tomografia e achados cirúrgicos, em cinco grupos que respeitam a anatomia: **glenoide** (25%), **colo** (6%), **corpo** (47%), **processos e ângulos** (20%) e **complexas** (3%), mais a **dissociação escapulotorácica** como grupo à parte (0,4%). A Tabela 33-1 do capítulo, que reúne esses tipos, não veio com conteúdo no arquivo enviado.
+
+## Os três padrões do corpo
+
+O traço principal passa por um ou pelos dois pilares; fraturas isoladas da borda superior e dos ângulos não entram aqui.
+
+- **Pilar espinal (6% das do corpo):** traço pelo centro da espinha até a borda medial; o pilar lateral fica intacto e o desvio é mínimo. Todas foram tratadas sem cirurgia.
+- **Pilar lateral (78% das do corpo e 36% de todas as fraturas da escápula: a mais frequente):** só a parte infraespinal; em duas partes, três partes ou cominutas. A mais comum é a de **duas partes**, com traço **transverso da metade superior da borda lateral ao ângulo espinomedial**: é a que se chamou, de forma incorreta, de fratura infraglenoidal do colo. Cerca de **32%** delas vêm com fratura da clavícula.
+- **Dois pilares (16%):** alta energia, muitas vezes cominutas; o traço do pilar espinal vai perto do ângulo espinomedial até o ângulo superior, ou pelo centro fraco da espinha. O pilar espinal desvia menos que o lateral.
+
+O autor operou **25%** das fraturas do corpo (61 de 243: 52 do pilar lateral e 9 dos dois pilares), sobretudo em jovens ativos, pela Judet com o mínimo de mobilização do infraespinal.
+
+!figura 33-14
+Fraturas do corpo da escápula: pilar espinal, pilar lateral e dois pilares (fratura cominuta do corpo anatômico).
+!fim
+
+!questoes treino=trauma-1323
+conceito: A fratura mais frequente de toda a escápula é a do pilar lateral, em geral em duas partes, com traço da metade superior da borda lateral ao ângulo espinomedial.
+!fim
+
+## Fraturas complexas
+
+São de alta energia, em jovens com bom osso, com traços por vários elementos (corpo, colo, glenoide, processos); Tscherne e Christ já as separavam em 1975. As **extra-articulares** parecem fraturas dos dois pilares, mas soltam também um processo (espinha lateral, acrômio ou coracoide) do fragmento glenoidal. As **intra-articulares** são as mais graves: a glenoide se parte em geral em duas (inferior, presa ao pilar lateral, e superior, com o coracoide). Na série, foram 18 (6 extra e 12 intra-articulares), metade operada. Raramente cabem no conservador; operam-se as desviadas, sobretudo as articulares, em paciente ativo e colaborativo, depois de tratar as lesões mais graves do politrauma.
+
+# Resumo das controvérsias {radar=fundamento}
+
+O autor fecha com três mensagens. A primeira: o padrão exato da fratura só é definido com **reconstrução 3D padronizada com subtração** dos ossos vizinhos. A segunda: a **classificação** continua sendo um problema, sem uma aceita por todos. A terceira, a mais provocativa: o **ombro flutuante**, ou lesão do complexo suspensor, é um tema **superestimado** e cheio de pontos obscuros, que pede revisão do conceito. Como cada cirurgião vê poucas fraturas da escápula, ele defende concentrá-las em **centros especializados**.
+
+> Na prova: as bancas ainda cobram o ombro flutuante clássico (clavícula com colo) e os critérios numéricos. Saiba o clássico para marcar e o conceito do autor para entender por que a radiografia engana.
