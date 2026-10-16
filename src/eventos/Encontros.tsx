@@ -168,7 +168,7 @@ export default function Encontros() {
     window.addEventListener(AVISO_EVENTOS, preferencia); window.addEventListener('storage', armazenou); window.addEventListener('hashchange', rota)
     window.addEventListener('ortoquestoes:plano', plano); document.addEventListener('visibilitychange', ocultar)
     try {
-      if (eventosLigados() && !sessionStorage.getItem('oq:eventos:console')) { console.info('Orto Questões · Plantão do navegador: por aqui também tem gente curiosa. Bom estudo!'); sessionStorage.setItem('oq:eventos:console', '1') }
+      if (permitido(contexto()) && !sessionStorage.getItem('oq:eventos:console')) { console.info('Orto Questões · Plantão do navegador: por aqui também tem gente curiosa. Bom estudo!'); sessionStorage.setItem('oq:eventos:console', '1') }
     } catch { /* o console também é dispensável */ }
     return () => {
       clearTimeout(teste); clearTimeout(fim); clearInterval(intervalo); ocupada.current = false; definirVisita(null); definirArquivo(false)

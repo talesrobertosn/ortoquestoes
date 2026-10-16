@@ -15432,10 +15432,12 @@
   },
   "mao-0255": {
    "questaoSha256": "313054b87a68e5c21ca815a4c51accf39414749794ce0d26918c3c450e1f02f9",
-   "comentarioSha256": "370998306d0a9e816c6baaaa4abcc4ee5071e17e3779b09a40142d99d7034978",
+   "comentarioSha256": "b21fdc05ff39ce2abe19845bb3e0f14ffdf194fe978b40bf1361723bd7d4e0c8",
    "estado": "na_branch",
-   "data": "2026-10-03",
-   "fontes": []
+   "data": "2026-10-16",
+   "fontes": [
+    "Green's Operative Hand Surgery, 8ª edição, capítulo de doenças vasculares da mão (síndrome do martelo hipotenar)."
+   ]
   },
   "mao-0256": {
    "questaoSha256": "b34bdce93ce9fab5e61065c9125a7b53058d3505f2f40df41ad4fdca6ad06421",
@@ -25788,6 +25790,57 @@
    "data": "2026-10-16",
    "fontes": [
     "AO Surgery Reference. Cortical lag screw insertion. https://surgeryreference.aofoundation.org/orthopedic-trauma/basic-technique/cortical-lag-screws"
+   ]
+  },
+  "joelho-0236": {
+   "questaoSha256": "c0c2c0a373e64863eb0e0baa37f543961dbe32ce7ae9f315f0ddd9b4a74944d3",
+   "comentarioSha256": "ff4bdaa537fbfb81db19eca36f1c784b0908df9e2b65c3379db6ee712d338842",
+   "estado": "na_branch",
+   "data": "2026-10-16",
+   "fontes": [
+    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+    "Hoppenfeld S. Propedêutica Ortopédica: Coluna e Extremidades. Atheneu."
+   ]
+  },
+  "joelho-0276": {
+   "questaoSha256": "8d7691fa4f786eb2e35523beb531c7a2bbcbd46677de7b1cb640139dbfc85321",
+   "comentarioSha256": "be5c2886de67e64975620587a6f8b549f0dff1a744dd30eedc43237f34691e2b",
+   "estado": "na_branch",
+   "data": "2026-10-16",
+   "fontes": [
+    "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p.2524 (referência indicada na prova TARO 2013, questão 76)",
+    "Shelbourne KD, Trumper RV. Preventing anterior knee pain after anterior cruciate ligament reconstruction. Am J Sports Med. 1997;25(1):41-47."
+   ]
+  },
+  "joelho-0278": {
+   "questaoSha256": "558509edde71bfec9c55f10dd5a11e3064e9620af5a83df8cc1c5bbaeff689ab",
+   "comentarioSha256": "a07fdcf79b01d5c7c9409e61a5f7ff1fff83566aabe919aa3f59c7e541fa8f03",
+   "estado": "na_branch",
+   "data": "2026-10-16",
+   "fontes": [
+    "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 917.",
+    "Kirkley A, Birmingham TB, Litchfield RB, et al. A randomized trial of arthroscopic surgery for osteoarthritis of the knee. N Engl J Med. 2008;359(11):1097-1107.",
+    "Siemieniuk RAC, Harris IA, Agoritsas T, et al. Arthroscopic surgery for degenerative knee arthritis and meniscal tears: a clinical practice guideline. BMJ. 2017;357:j1982."
+   ]
+  },
+  "joelho-0282": {
+   "questaoSha256": "18d25f4eb70b623f0cb473848d8b9889ec55088d170a08256236611ab6d14ba2",
+   "comentarioSha256": "de24e34e4d59d0601ce11f70d241e76c932d8e02aba6d3bf812c76130e3ea218",
+   "estado": "na_branch",
+   "data": "2026-10-16",
+   "fontes": [
+    "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2255.",
+    "Sanders TG, Medynski MA, Feller JF, Lawhorn KW. Bone contusion patterns of the knee at MR imaging: footprint of the mechanism of injury. Radiographics. 2000;20 Spec No:S135-S151."
+   ]
+  },
+  "trauma-1079": {
+   "questaoSha256": "9715b2f23bc168efbbc70edfadea1082f74d0cb5a174c23ab58187b9caec23a8",
+   "comentarioSha256": "54c6d3d26acc5813d68805c1173746df7a3f42693cbdb3ce3fe9d96b1fa90a1d",
+   "estado": "na_branch",
+   "data": "2026-10-16",
+   "fontes": [
+    "Campbell's Operative Orthopaedics, 14ª edição, capítulo de lesões meniscais (cistos meniscais).",
+    "Campbell SE, Sanders TG, Morrison WB. MR imaging of meniscal cysts: incidence, location, and clinical significance. AJR Am J Roentgenol, 2001."
    ]
   }
  },

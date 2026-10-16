@@ -1,3 +1,6 @@
+import { usarDiaAtual } from '../util/usarDiaAtual'
+import { usarConta } from '../conta/ContextoConta'
+import { DATA_TEOT } from '../dados/calendarioProvas'
 /**
  * Cronograma dos flashcards, reprojetado em 15/10/2026 (pedido do Tales: "transformar em algo
  * palpável de verdade, não aleatório"). Segue os princípios de docs/cronograma/PLANO.md:
@@ -7,7 +10,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Icone } from '../componentes/Icone'
 import { corDaArea } from '../dados/coresAreas'
-import { EVENTO_DADOS, gravar, ler } from '../estado/armazenamento'
+import { EVENTO_DADOS, chaveCompleta, gravar, ler } from '../estado/armazenamento'
 import {
   CHAVE_PLANO, RITMOS, calcularCronograma, migrarPlano, rotuloTempo,
   type AssuntoDoPlano, type Cronograma, type DiaDoPlano, type FatiaDoDia, type PlanoFlashcards,
@@ -36,6 +39,9 @@ export const linkSessaoCronograma = (extra = 0) => `/flashcards/biblioteca?categ
 
 /** Acervo, registros e plano, recalculados quando os dados mudam (outra aba, sincronização, sessão). */
 export function usarCronograma() {
+  const dia = usarDiaAtual()
+  const { sessao } = usarConta()
+  const conta = sessao?.user.id ?? null
   const [cartas, definirCartas] = useState<Flashcard[] | null>(null)
   const [versao, definirVersao] = useState(0)
   useEffect(() => { let vivo = true; void carregarAcervo().then((c) => { if (vivo) definirCartas(c) }); return () => { vivo = false } }, [])
@@ -44,12 +50,13 @@ export function usarCronograma() {
       const chave = (e as CustomEvent<{ chave?: string }>).detail?.chave
       if (!chave || chave === CHAVE_REGISTROS || chave === CHAVE_PLANO) definirVersao((v) => v + 1)
     }
-    window.addEventListener(EVENTO_DADOS, mudou)
-    return () => window.removeEventListener(EVENTO_DADOS, mudou)
+    const outraAba = (e: StorageEvent) => { if (e.key === null || e.key === chaveCompleta(CHAVE_PLANO) || e.key === chaveCompleta(CHAVE_REGISTROS)) definirVersao(v => v + 1) }
+    window.addEventListener(EVENTO_DADOS, mudou); window.addEventListener('storage', outraAba)
+    return () => { window.removeEventListener(EVENTO_DADOS, mudou); window.removeEventListener('storage', outraAba) }
   }, [])
-  const salvo = useMemo(() => migrarPlano(ler<unknown>(CHAVE_PLANO, null)), [versao]) // eslint-disable-line react-hooks/exhaustive-deps
-  const registros = useMemo(() => ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}), [versao]) // eslint-disable-line react-hooks/exhaustive-deps
-  const crono = useMemo(() => (cartas ? calcularCronograma(salvo, cartas, registros) : null), [cartas, salvo, registros])
+  const salvo = useMemo(() => migrarPlano(ler<unknown>(CHAVE_PLANO, null)), [versao, conta]) // eslint-disable-line react-hooks/exhaustive-deps
+  const registros = useMemo(() => ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}), [versao, conta]) // eslint-disable-line react-hooks/exhaustive-deps
+  const crono = useMemo(() => (cartas ? calcularCronograma(salvo, cartas, registros) : null), [cartas, salvo, registros, dia])
   const nomes = useMemo(() => {
     const r: Record<string, string> = {}
     const ind = cartas ? indiceDoAcervo() : null
@@ -254,13 +261,15 @@ function Semana({ c }: { c: Cronograma }) {
       <h2 id="cfc-semana" className="cfc-etapa"><span>Esta semana</span></h2>
       <ol className="cfc-semana">
         {c.semana.map((d) => {
-          const estado = d.hoje ? (c.sessaoHoje.length ? 'hoje' : 'feito') : !d.estudo ? 'folga' : d.novos ? 'a-fazer' : 'livre'
+          const folgaSemEstudo = d.hoje && !d.estudo && !c.sessaoHoje.length && !c.novosFeitosHoje && !c.revisoesFeitasHoje
+          const feito = d.hoje && !c.sessaoHoje.length && !folgaSemEstudo
+          const estado = folgaSemEstudo ? 'folga' : d.hoje ? (c.sessaoHoje.length ? 'hoje' : 'feito') : !d.estudo ? 'folga' : d.novos ? 'a-fazer' : 'livre'
           const cor = d.assuntos[0] ? corDaArea(d.assuntos[0].areaId) : undefined
           return (
             <li key={d.dia} data-estado={estado} style={cor ? { ['--area' as string]: cor } : undefined}>
               <span className="cfc-semana__dia">{DIAS_CURTOS[diaDaSemana(d.dia)]} <small>{Number(d.dia.slice(8))}</small></span>
-              <b className="numerico">{d.hoje ? (c.sessaoHoje.length ? n(c.novosHoje.length) : <Icone nome="certo" tamanho={16} />) : d.estudo ? (d.novos ? n(d.novos) : '–') : ''}</b>
-              <span className="cfc-semana__assunto">{d.hoje && !c.sessaoHoje.length ? 'feito' : !d.estudo ? 'folga' : d.assuntos.map((f) => f.assunto).join(' · ') || (d.novos ? '' : 'revisões')}</span>
+              <b className="numerico">{folgaSemEstudo ? '' : d.hoje ? (c.sessaoHoje.length ? n(c.novosHoje.length) : <Icone nome="certo" tamanho={16} />) : d.estudo ? (d.novos ? n(d.novos) : '–') : ''}</b>
+              <span className="cfc-semana__assunto">{feito ? 'feito' : !d.estudo ? 'folga' : d.assuntos.map((f) => f.assunto).join(' · ') || (d.novos ? '' : 'revisões')}</span>
             </li>
           )
         })}
@@ -316,7 +325,7 @@ function Ajustes({ atual, nomes, cartas, registros, aoSalvar, aoCancelar }: {
   const [diasSemana, definirDias] = useState<number[]>(atual.diasSemana.length ? atual.diasSemana : [0, 1, 2, 3, 4, 5, 6])
   const [areas, definirAreas] = useState<string[]>(atual.areas)
   const [comData, definirComData] = useState(!!atual.data && atual.data > hoje)
-  const [data, definirData] = useState(atual.data && atual.data > hoje ? atual.data : '2027-01-10' > hoje ? '2027-01-10' : somarDias(hoje, 90))
+  const [data, definirData] = useState(atual.data && atual.data > hoje ? atual.data : DATA_TEOT > hoje ? DATA_TEOT : somarDias(hoje, 90))
   const rascunho: PlanoFlashcards = { ...atual, versao: 2, ritmo, diasSemana: diasSemana.length === 7 ? [] : [...diasSemana].sort(), areas, data: comData ? data : null }
   // simulador: a previsão muda na hora, antes de salvar
   const previa = useMemo(() => calcularCronograma(rascunho, cartas, registros), [cartas, registros, ritmo, diasSemana.join(), areas.join(), comData, data]) // eslint-disable-line react-hooks/exhaustive-deps

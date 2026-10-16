@@ -6,6 +6,8 @@ import { formatarTempo } from '../dados/hubCronograma'
 import { corDaArea } from '../dados/coresAreas'
 import { Icone } from '../componentes/Icone'
 import { chaveCivil, chaveDoDia, diaCivil } from '../util/dia'
+import { faseNoCalendario, limitesCalendario, limitarData, mesCivil, selecaoNoMes, type FaseCalendario } from '../dados/calendarioCronograma'
+import { usarDiaAtual } from '../util/usarDiaAtual'
 import '../estilos/paginas/CronogramaCalendario.css'
 
 /**
@@ -18,17 +20,16 @@ import '../estilos/paginas/CronogramaCalendario.css'
  * folga (hachurado), atrasado (laranja) e marco (dourado tracejado).
  */
 
-const DIA = 86_400_000
 const SEMANA = ['seg', 'ter', 'qua', 'qui', 'sex', 'sáb', 'dom']
 /** Quantos dias de estudo dá para adiantar de uma vez pelo calendário (os mesmos do painel Adiantar). */
 const ADIANTAR_ATE = 3
 const MINUTOS_RESUMAO = 4
 
-type Fase = 'antes' | 'passado' | 'hoje' | 'conteudo' | 'revisao' | 'prova' | 'vespera' | 'dia-prova' | 'depois'
 interface DiaCalendario {
   data: Date
   chave: string
-  fase: Fase
+  fase: FaseCalendario
+  ehHoje: boolean
   folga: boolean
   /** Do motor: hoje e os dias de estudo até a reta final. */
   plano: DiaPlano | null
@@ -38,7 +39,7 @@ interface DiaCalendario {
   marcos: string[]
 }
 
-const mesDe = (d: Date) => new Date(d.getFullYear(), d.getMonth(), 1)
+const mesDe = mesCivil
 const nomeMes = (d: Date) => { const s = d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }); return s[0].toUpperCase() + s.slice(1) }
 const dataLonga = (d: Date) => d.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
 const faixa = (partes: Array<{ slug: string; n: number }>) => {
@@ -71,13 +72,24 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   acoes: AcoesCalendario
   aoFechar: () => void
 }) {
-  const hoje = diaCivil()
-  const prova = new Date(calculo.vespera.getTime() + DIA)
+  const chaveHoje = usarDiaAtual()
+  const hoje = diaCivil(chaveHoje)
+  const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
-  const primeiroMes = mesDe(criado < hoje ? criado : hoje)
-  const ultimoMes = mesDe(prova)
-  const [mes, definirMes] = useState(() => mesDe(hoje))
-  const [selecionado, definirSelecionado] = useState<string>(() => chaveCivil(hoje))
+  const { inicio, primeiroMes, ultimoMes, inicial } = limitesCalendario(criado, hoje, prova)
+  const [mes, definirMes] = useState(() => mesDe(inicial))
+  const [selecionado, definirSelecionado] = useState<string>(() => chaveCivil(inicial))
+  const ontem = useRef(chaveHoje)
+  const janela = useRef<HTMLDivElement>(null)
+  const fecharAtual = useRef(aoFechar)
+  fecharAtual.current = aoFechar
+  useEffect(() => {
+    const seguiaHoje = selecionado === ontem.current
+    ontem.current = chaveHoje
+    const atual = limitarData(seguiaHoje ? hoje : diaCivil(selecionado), inicio, prova)
+    definirSelecionado(chaveCivil(atual))
+    definirMes(m => seguiaHoje ? mesDe(atual) : limitarData(m, primeiroMes, ultimoMes))
+  }, [chaveHoje, plano.data_prova, plano.criado_em]) // preserva a navegação manual entre atualizações do plano
   const [direcao, definirDirecao] = useState<'frente' | 'tras' | null>(null)
   const fechar = useRef<HTMLButtonElement>(null)
   const detalhe = useRef<HTMLElement>(null)
@@ -105,20 +117,14 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     const m = new Map<string, Passada>()
     for (const p of [2, 3] as Passada[]) { const d = calculo.inicioPassada[p]; if (d && d > hoje) m.set(chaveCivil(d), p) }
     return m
-  }, [calculo]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [calculo, chaveHoje]) // eslint-disable-line react-hooks/exhaustive-deps
   const extra = plano.opcoes?.provaExtra && /^\d{4}-\d{2}-\d{2}$/.test(plano.opcoes.provaExtra.data) ? plano.opcoes.provaExtra : null
 
   function montarDia(data: Date): DiaCalendario {
     const chave = chaveCivil(data)
     const folga = plano.folgas.includes(data.getDay())
     const ehHoje = data.getTime() === hoje.getTime()
-    const fase: Fase = data < criado ? 'antes'
-      : data.getTime() === prova.getTime() ? 'dia-prova'
-      : data > prova ? 'depois'
-      : data.getTime() === calculo.vespera.getTime() ? 'vespera'
-      : data >= calculo.inicioModoProva ? 'prova'
-      : data >= calculo.inicioRetaFinal ? 'revisao'
-      : ehHoje ? 'hoje' : data < hoje ? 'passado' : 'conteudo'
+    const fase = faseNoCalendario(data, criado, hoje, prova, calculo.inicioRetaFinal, calculo.inicioModoProva, calculo.vespera)
     const doPlano = porChave.get(chave) ?? null
     const plano_ = ehHoje && doPlano ? { ...doPlano, itens: calculo.hoje?.itens ?? doPlano.itens, meta: calculo.metaDiaria, total: calculo.metaDiaria } : doPlano
     const feito = feitoPorDia.get(chave)
@@ -129,7 +135,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     const passada = inicioPassada.get(chave)
     if (passada) marcos.push(`Começa a ${ROTULO_PASSADA[passada].nome}`)
     if (extra && extra.data === chave) marcos.push(`Prova: ${extra.nome}`)
-    return { data, chave, fase, folga, plano: plano_, feitas: feito?.n ?? 0, areasFeitas, marcos }
+    return { data, chave, fase, ehHoje, folga, plano: plano_, feitas: feito?.n ?? 0, areasFeitas, marcos }
   }
 
   // A grade do mês: semanas de segunda a domingo; os dias de fora do mês ficam vazios.
@@ -141,12 +147,12 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     for (let i = 1; i <= diasNoMes; i++) celulas.push(montarDia(new Date(mes.getFullYear(), mes.getMonth(), i)))
     while (celulas.length % 7) celulas.push(null)
     return celulas
-  }, [mes, calculo, feitoPorDia, plano]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [mes, calculo, feitoPorDia, plano, chaveHoje]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const diaSelecionado = useMemo(() => {
     const [a, m, d] = selecionado.split('-').map(Number)
     return montarDia(new Date(a, m - 1, d))
-  }, [selecionado, calculo, feitoPorDia, plano]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [selecionado, calculo, feitoPorDia, plano, chaveHoje]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // Resumo do mês: dias de estudo, questões planejadas e feitas.
   const resumoMes = useMemo(() => {
@@ -155,7 +161,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
       if (!c || c.fase === 'antes' || c.fase === 'depois') continue
       if (rotuloEstado(c).estado === 'folga') folgas++
       if (c.plano && c.plano.tipo !== 'folga') { estudo++; questoes += c.plano.total }
-      if (c.fase === 'passado' || c.fase === 'hoje') feitas += c.feitas
+      if (c.data <= hoje) feitas += c.feitas
     }
     return { estudo, questoes, feitas, folgas }
   }, [grade])
@@ -166,16 +172,25 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     const overflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     fechar.current?.focus()
-    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopPropagation(); aoFechar() } }
+    const tecla = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { e.stopPropagation(); fecharAtual.current(); return }
+      if (e.key !== 'Tab' || !janela.current) return
+      const itens = [...janela.current.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], input, select, textarea, [tabindex="0"]')].filter(el => el.getClientRects().length > 0)
+      const primeiro = itens[0], ultimo = itens[itens.length - 1]
+      if (!primeiro) return
+      if (e.shiftKey && (document.activeElement === primeiro || !janela.current.contains(document.activeElement))) { e.preventDefault(); ultimo.focus() }
+      else if (!e.shiftKey && (document.activeElement === ultimo || !janela.current.contains(document.activeElement))) { e.preventDefault(); primeiro.focus() }
+    }
     window.addEventListener('keydown', tecla)
     return () => { window.removeEventListener('keydown', tecla); document.body.style.overflow = overflow; antes?.focus?.() }
-  }, [aoFechar])
+  }, [])
 
   const podeVoltar = mes > primeiroMes, podeAvancar = mes < ultimoMes
   function irMes(delta: number) {
     const novo = new Date(mes.getFullYear(), mes.getMonth() + delta, 1)
     if (novo < primeiroMes || novo > ultimoMes) return
     definirDirecao(delta > 0 ? 'frente' : 'tras'); definirMes(novo)
+    definirSelecionado(chaveCivil(selecaoNoMes(selecionado, novo, inicio, prova)))
   }
   function escolher(d: DiaCalendario) {
     definirSelecionado(d.chave)
@@ -185,7 +200,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
       requestAnimationFrame(() => detalhe.current?.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' }))
     }
   }
-  function irHoje() { definirDirecao(null); definirMes(mesDe(hoje)); definirSelecionado(chaveCivil(hoje)) }
+  function irHoje() { definirDirecao(null); definirMes(mesDe(inicial)); definirSelecionado(chaveCivil(inicial)) }
 
   // Áreas do mês para a legenda.
   const areasMes = new Map<string, string>()
@@ -194,7 +209,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   return createPortal(
     <div className="cp cc" role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
       <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={aoFechar} />
-      <div className="cc-janela">
+      <div className="cc-janela" ref={janela}>
         <header className="cc-topo">
           <div className="cc-topo__titulo">
             <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> Calendário do cronograma · {plano.prova}</p>
@@ -207,7 +222,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
           </div>
           <div className="cc-nav">
             <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={!podeVoltar} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
-            <button type="button" className="cc-nav__hoje" onClick={irHoje}>Hoje</button>
+            <button type="button" className="cc-nav__hoje" onClick={irHoje}>{hoje > prova ? 'Dia da prova' : 'Hoje'}</button>
             <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={!podeAvancar} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
             <button type="button" className="cc-fechar" ref={fechar} onClick={aoFechar} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>
           </div>
@@ -280,12 +295,12 @@ function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selec
   const marco = mini || d.marcos.length > 0
   const descricao = [dataLonga(d.data), texto, areas.length ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', mini ? 'mini-simulado' : '', ...d.marcos].filter(Boolean).join(', ')
   return (
-    <li className={`cc-dia cc-dia--${estado}${marco ? ' cc-dia--marco' : ''}${d.plano?.adiantado ? ' cc-dia--com-adiantado' : ''}${selecionado ? ' cc-dia--selecionado' : ''}`}>
-      <button type="button" onClick={() => aoEscolher(d)} aria-label={descricao} aria-pressed={selecionado} disabled={estado === 'fora'}>
+    <li className={`cc-dia cc-dia--${estado}${marco ? ' cc-dia--marco' : ''}${d.plano?.adiantado ? ' cc-dia--com-adiantado' : ''}${selecionado ? ' cc-dia--selecionado' : ''}${d.ehHoje ? ' cc-dia--atual' : ''}`}>
+      <button type="button" onClick={() => aoEscolher(d)} aria-label={descricao} aria-pressed={selecionado} aria-current={d.ehHoje ? 'date' : undefined} disabled={estado === 'fora'}>
         <span className="cc-dia__topo">
           <b className="cc-dia__num">{d.data.getDate()}</b>
           {estado === 'feito' && <span className="cc-dia__selo cc-dia__selo--feito" aria-hidden="true"><Icone nome="certo" tamanho={11} /></span>}
-          {estado === 'hoje' && <span className="cc-dia__hoje">hoje</span>}
+          {d.ehHoje && <span className="cc-dia__hoje">hoje</span>}
           {mini && <span className="cc-dia__selo cc-dia__selo--marco" aria-hidden="true" title="Mini-simulado">★</span>}
         </span>
         {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__areas">
@@ -374,7 +389,7 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
 
   return (
     <section ref={ancora} className={`cc-detalhe cc-detalhe--${estado}`} aria-live="polite" aria-labelledby="cc-detalhe-titulo" style={{ ['--cor-area' as string]: principal ? corDaArea(principal.slug) : undefined }}>
-      <p className="cc-detalhe__data">{dataLonga(d.data)}{d.fase === 'hoje' && <span className="cc-detalhe__agora">hoje</span>}</p>
+      <p className="cc-detalhe__data">{dataLonga(d.data)}{d.ehHoje && <span className="cc-detalhe__agora">hoje</span>}</p>
       <h3 id="cc-detalhe-titulo">{titulo}</h3>
       {sub && <p className="cc-detalhe__sub">{sub}</p>}
       {d.fase === 'hoje' && calculo.feitasHoje > 0 && calculo.faltaHoje > 0 && <p className="cc-detalhe__progresso"><span style={{ width: `${Math.min(100, (calculo.feitasHoje / Math.max(1, calculo.metaDiaria)) * 100)}%` }} /><b>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} feitas</b></p>}

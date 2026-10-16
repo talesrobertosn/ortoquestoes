@@ -182,3 +182,7 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 86. [x] Visitas aleatórias com cooldown, preferência em Minha conta, movimento reduzido e bloqueio de provas. Questão comum sem resposta pode recebê-las, conforme decisão mais recente de Tales. Sem SQL nem vantagem no ranking. [Relatório](EASTER-EGGS-E-EVENTOS.md).
 
 Entrega das ideias 85–86: [PR #326](https://github.com/talesrobertosn/ortoquestoes/pull/326), com capturas e testes completos.
+
+87. [x] Calendários: revisão da virada de dia e sincronia da previsão dos Flashcards; datas civis, histórico, seleção e acessibilidade do calendário de questões e .ics. [Relatório](cronograma/REVISAO-CALENDARIOS-16-10.md).
+
+Entrega da revisão 87: [PR #327](https://github.com/talesrobertosn/ortoquestoes/pull/327).

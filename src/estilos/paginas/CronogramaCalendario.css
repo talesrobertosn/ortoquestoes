@@ -171,3 +171,6 @@
   .cc-dia > button, .cc-abrir, .cc-nav__botao, .cc-fechar { transition: none; }
   .cc-dia > button:hover:not(:disabled) { transform: none; }
 }
+
+/* Hoje continua visível em folga, reta final, véspera e prova. */
+.cc-dia--atual > button { border-color: var(--cp-agora); box-shadow: inset 0 0 0 1px var(--cp-agora); }
