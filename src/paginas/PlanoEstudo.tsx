@@ -718,7 +718,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
             <label className="campo">Data da prova<input className="entrada" type="date" min={amanhaIso()} value={data} onChange={(e) => definirData(e.target.value)} /></label>
           </div>
           {DATA_TEOT > hojeBR() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
-            <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT 2027</strong> · prova teórica em 10 de janeiro de 2027</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
+            <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT {DATA_TEOT.slice(0, 4)}</strong> · prova teórica em {diaCivil(DATA_TEOT).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
           </button>}
           {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{diasAte(data)} dias</b> até a prova.</p>}
           <details className="pe-form__mais" open={!!provaExtra.nome}>
