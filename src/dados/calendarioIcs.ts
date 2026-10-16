@@ -36,7 +36,11 @@ export function gerarIcs(calculo: CalculoPlano, plano: PlanoSalvo, hora: number,
     [calculo.inicioRetaFinal, 'começa a reta final', 'Revisão forte e modo prova, sem conteúdo novo.', 'reta'],
     [calculo.inicioModoProva, 'começa o modo prova', 'Siga o roteiro de hoje no cronograma.', 'modo-prova'],
     [calculo.vespera, 'véspera da prova', 'Revisão leve, documentos separados e tempo para descansar.', 'vespera'],
-  ] as const) if (dia >= hoje) evento(dia, `Orto Questões: ${titulo}`, texto, `cronograma-${id}-${data(dia)}`)
+  ] as const) {
+    // No plano curto, reta final e modo prova começam juntos: um marco só, sem dois alarmes.
+    if (id === 'reta' && dia.getTime() === calculo.inicioModoProva.getTime()) continue
+    if (dia >= hoje) evento(dia, `Orto Questões: ${titulo}`, texto, `cronograma-${id}-${data(dia)}`)
+  }
   const extra = plano.opcoes?.provaExtra
   if (extra?.nome && /^\d{4}-\d{2}-\d{2}$/.test(extra.data)) evento(diaCivil(extra.data), `Prova: ${extra.nome}`, 'Boa prova!', `cronograma-prova-extra-${extra.data.replace(/-/g, '')}`, false)
   const prova = diaCivil(plano.data_prova)

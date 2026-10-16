@@ -53,6 +53,7 @@ registro salvo. Só a apresentação recalcula com os dados atuais.
 - hora final à meia-noite passa corretamente para o dia seguinte;
 - inclui os marcos futuros já existentes no plano: revisão forte, modo prova e
   véspera. Não recria lembretes de transições passadas;
+- em planos curtos, reta final e modo prova começam juntos: exporta um marco só, sem duplicar alarmes;
 - prova e prova extra continuam sem alarme de estudo. Os compromissos de estudo
   mantêm o horário escolhido. A exportação não grava nem altera o plano.
 
