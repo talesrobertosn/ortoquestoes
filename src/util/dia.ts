@@ -26,10 +26,22 @@ let formatoHora: Intl.DateTimeFormat | null = null
 
 const instanteDe = (data: Date | number) => typeof data === 'number' ? data : data.getTime()
 
+// O fuso de São Paulo sempre teve deslocamento de horas cheias (−3, e −2 no antigo
+// horário de verão): o dia só vira na hora cheia. A chave fica guardada por hora,
+// e o cronograma, a constância e os calendários (milhares de chamadas por cálculo)
+// deixam de formatar a mesma data de novo.
+const chavePorHora = new Map<number, string>()
+
 /** "AAAA-MM-DD": o dia de São Paulo em que cai o instante. */
 export function chaveDoDia(data: Date | number = Date.now()): string {
+  const ms = instanteDe(data)
+  const hora = Math.floor(ms / HORA_MS)
+  const guardada = chavePorHora.get(hora)
+  if (guardada !== undefined) return guardada
   formatoDia ??= new Intl.DateTimeFormat('en-CA', { timeZone: FUSO_DIA, year: 'numeric', month: '2-digit', day: '2-digit' })
-  return formatoDia.format(instanteDe(data))
+  const chave = formatoDia.format(ms)
+  if (Number.isFinite(hora)) { if (chavePorHora.size > 20_000) chavePorHora.clear(); chavePorHora.set(hora, chave) }
+  return chave
 }
 
 /** A chave de hoje em São Paulo. */
@@ -61,8 +73,8 @@ export const diasEntre = (de: string, ate: string) => numeroDoDia(ate) - numeroD
 /** Dia da semana em São Paulo (0 = domingo … 6 = sábado), de um instante ou de uma chave. */
 export function diaDaSemana(data: Date | number | string = Date.now()): number {
   const chave = typeof data === 'string' ? data : chaveDoDia(data)
-  const [ano, mes, dia] = partesDaChave(chave)
-  return new Date(Date.UTC(ano, mes - 1, dia)).getUTCDay()
+  // 01/01/1970 foi uma quinta (4). O número do dia evita um Date por chamada.
+  return (((numeroDoDia(chave) + 4) % 7) + 7) % 7
 }
 
 /** Quanto o relógio de São Paulo está à frente (ou atrás, negativo) de UTC no instante. */

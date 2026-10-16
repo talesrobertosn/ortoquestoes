@@ -401,7 +401,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   // Fila de cada tema: os assuntos que mais caem primeiro; área dominada fica só com a 1ª passada.
   const filaDoTema = new Map<string, string[]>()
   for (const [slug, lista] of livresPorTema) {
-    const ordenada = ordenarPorFoco(lista, focos).sort((x, y) => passadaDe(x) - passadaDe(y))
+    const ordenada = ordenarPorFoco(lista, focos, passadaDe)
     filaDoTema.set(slug, opcoes.dominadas.includes(slug) ? ordenada.filter((id) => passadaDe(id) === 1) : ordenada)
   }
   const pesos = temas.filter((t) => (filaDoTema.get(t.slug)?.length ?? 0) > 0).map((t) => ({ t, peso: (filaDoTema.get(t.slug)!.length) * fator(t) }))
@@ -700,11 +700,12 @@ function hashId(id: string): number {
  * mais caem, um assunto de cada vez (na ordem do ranking), e dentro de cada
  * assunto uma ordem sorteada, mas sempre a mesma.
  */
-export function ordenarPorFoco(ids: string[], focos: Map<string, { nivel: number; ordem: number }>): string[] {
-  return [...ids].sort((a, b) => {
-    const fa = focos.get(a), fb = focos.get(b)
-    return (fb?.nivel ?? 0) - (fa?.nivel ?? 0) || (fa?.ordem ?? 1e6) - (fb?.ordem ?? 1e6) || hashId(a) - hashId(b)
-  })
+export function ordenarPorFoco(ids: string[], focos: Map<string, { nivel: number; ordem: number }>, antes?: (id: string) => number): string[] {
+  // As chaves de cada questão são calculadas uma vez (antes, o mapa e o hash rodavam a cada comparação).
+  // `antes` ordena primeiro por outro critério (a passada), mantendo esta ordem dentro dele.
+  const chaves = ids.map((id) => { const f = focos.get(id); return { id, a: antes ? antes(id) : 0, n: f?.nivel ?? 0, o: f?.ordem ?? 1e6, h: hashId(id) } })
+  chaves.sort((x, y) => x.a - y.a || y.n - x.n || x.o - y.o || x.h - y.h)
+  return chaves.map((c) => c.id)
 }
 
 function ordemDoTema(indice: Indice, livres: string[]): string[] {

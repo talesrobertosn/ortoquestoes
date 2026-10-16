@@ -306,3 +306,19 @@ a.cp-extra:hover, button.cp-extra:hover { border-color: color-mix(in srgb, var(-
 
 /* Vitrine para quem não assina (14/10/2026). */
 .cp-vitrine-lista { margin: 0.4rem 0 0; padding-left: 1.1rem; text-align: left; font-size: var(--corpo-menor); line-height: 1.5; }
+
+/* Reorganização de 16/10/2026: Adiantar fechado numa linha antes da meta feita;
+   recolhidos em duas colunas embaixo do calendário. */
+.cp-adiantar--fechado { padding: 0; }
+.cp-adiantar__abrir { width: 100%; padding: 0.7rem 0.8rem; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; border-radius: inherit; }
+.cp-adiantar__abrir > div { flex: 1; min-width: 0; }
+.cp-adiantar__abrir > svg:last-child { flex: none; color: var(--verdete); transition: transform .15s; }
+.cp-adiantar__abrir:hover { background: color-mix(in srgb, var(--verdete) 6%, transparent); }
+.cp-adiantar__abrir:hover > svg:last-child { transform: translateY(2px); }
+.cp-adiantar__abrir:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }
+.cp-semana--compacta { display: grid; gap: 0.6rem; }
+.cp-recolhidos--grade { margin-top: 0; }
+@media (min-width: 56rem) {
+  .cp-recolhidos--grade { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 0.6rem 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) { .cp-adiantar__abrir > svg:last-child { transition: none; } }

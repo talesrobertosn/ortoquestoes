@@ -17,7 +17,9 @@ import { CartaoHoje, type ItemChecklist } from './CronogramaPainel'
  * Simulados e a explicação completa de como tudo funciona.
  */
 
-const curta = (d: Date) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
+const FORMATO_CURTA = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit' })
+const FORMATO_DIA = new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: 'numeric', month: 'numeric' })
+const curta = (d: Date) => FORMATO_CURTA.format(d)
 const DIA = 86_400_000
 const SEMANA_CURTA = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
 
@@ -158,7 +160,7 @@ export function CartaoConstancia({ constancia: c, elogio: e }: { constancia: Con
       </dl>
       <ol className="pe-dias" aria-label="Últimos 14 dias">
         {c.ultimos.map((d) => (
-          <li key={d.dia.getTime()} className={`pe-dia pe-dia--${d.estado}`} title={`${d.dia.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'numeric' })}: ${ROTULO_DIA[d.estado]}${d.n ? `, ${d.n} questões` : ''}`}>
+          <li key={d.dia.getTime()} className={`pe-dia pe-dia--${d.estado}`} title={`${FORMATO_DIA.format(d.dia)}: ${ROTULO_DIA[d.estado]}${d.n ? `, ${d.n} questões` : ''}`}>
             <span aria-hidden="true">{SEMANA_CURTA[d.dia.getDay()]}</span>
           </li>
         ))}
