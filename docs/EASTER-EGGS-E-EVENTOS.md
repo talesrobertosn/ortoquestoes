@@ -2,6 +2,7 @@
 
 Implementados sobre `origin/claude/pdfs-questoes-tp64dr`, base `b1521885`, no worktree
 `/workspace/ortoquestoes-eventos-20261016`, branch `codex/easter-eggs-eventos-20261016`.
+Entrega: [PR #326](https://github.com/talesrobertosn/ortoquestoes/pull/326), implementação `0724d252911618445c74f520d0d827167a616912`.
 Tales autorizou implementar e publicar em 16/10. O roteiro original está em
 [prompts/easter-eggs-e-eventos.md](prompts/easter-eggs-e-eventos.md).
 

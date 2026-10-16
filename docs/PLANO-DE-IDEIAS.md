@@ -180,3 +180,5 @@ Pedido do Tales em 14/10: mudar o humor da fase conforme a pessoa acerta ou erra
 
 85. [x] Easter eggs discretos: código, Tinel na marca, marcos pessoais, madrugada, datas, Arquivo do Preceptor, gato, martelinho, console, 404 e selo local. [Gatilhos e testes](EASTER-EGGS-E-EVENTOS.md).
 86. [x] Visitas aleatórias com cooldown, preferência em Minha conta, movimento reduzido e bloqueio de provas. Questão comum sem resposta pode recebê-las, conforme decisão mais recente de Tales. Sem SQL nem vantagem no ranking. [Relatório](EASTER-EGGS-E-EVENTOS.md).
+
+Entrega das ideias 85–86: [PR #326](https://github.com/talesrobertosn/ortoquestoes/pull/326), com capturas e testes completos.

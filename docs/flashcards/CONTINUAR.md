@@ -1,4 +1,4 @@
-> **16/10/2026 — Easter eggs e encontros:** implementação em `codex/easter-eggs-eventos-20261016`, base atualizada `b1521885`. Ver [gatilhos, decisões, testes e passagem](../EASTER-EGGS-E-EVENTOS.md). Publicação autorizada por Tales; nenhuma mudança médica ou SQL. Questões comuns podem receber visitas; provas continuam bloqueadas.
+> **16/10/2026 — Easter eggs e encontros:** [PR #326](https://github.com/talesrobertosn/ortoquestoes/pull/326), implementação em `codex/easter-eggs-eventos-20261016`, base atualizada `b1521885`. Ver [gatilhos, decisões, testes e passagem](../EASTER-EGGS-E-EVENTOS.md). Publicação autorizada por Tales; nenhuma mudança médica ou SQL. Questões comuns podem receber visitas; provas continuam bloqueadas.
 
 # Como continuar a Cripta (para qualquer agente: Claude Code, Codex ou outro)
 
