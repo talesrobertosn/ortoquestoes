@@ -1,7 +1,16 @@
 /** Regras puras: relógio, histórico e sorteio entram por argumento. Nunca gravam progresso. */
 import { chaveDoDia, diaDaSemana, diasEntre, FUSO_DIA } from '../util/dia'
 
-export const INTERVALO_EVENTOS = 6 * 60_000
+/**
+ * No máximo UMA surpresa por hora neste navegador, somando todas (sorteio, datas, marcos, selo,
+ * recorde e o "Virou reflexo" do duplo clique, que pode acontecer sem querer ao selecionar texto).
+ * Pedido do Tales em 16/10/2026; antes eram seis minutos. A marca de tempo é global
+ * (memoria.ts → ultimaAparicao). Exceção deliberada: gestos que a pessoa faz de propósito para
+ * achar o segredo (cinco toques na logo, o código no teclado e o carinho no gato) sempre
+ * respondem, com dez segundos entre eles, porque ignorar o gesto pareceria defeito. Eles também
+ * contam como aparição: depois deles, a próxima visita automática espera a hora inteira.
+ */
+export const INTERVALO_EVENTOS = 60 * 60_000
 export const ESPERA_INICIAL = 90_000
 export const MARCOS = [1_000, 5_000, 10_000] as const
 export const CODIGO = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
@@ -15,6 +24,12 @@ export interface Contexto {
   modal: boolean; sessao?: { simulado?: boolean; limiteSegundos?: number | null; nacional?: string; concluidaEm?: number | null } | null
   nascimento?: string; criadaEm?: string; dataTeot: string
   vistos: Record<string, number>; reduzido: boolean
+}
+/** A última aparição (de qualquer surpresa) já passou de uma hora? Relógio que voltou não trava para sempre. */
+export function liberadoPeloRelogio(agora: number, ultima: number): boolean {
+  if (!Number.isFinite(ultima) || ultima <= 0) return true
+  if (ultima - agora > INTERVALO_EVENTOS) return true
+  return agora - ultima >= INTERVALO_EVENTOS
 }
 export function permitido(c: Contexto): boolean {
   if (!c.ligado || !c.visivel || c.modal) return false
@@ -54,11 +69,12 @@ export function candidatos(c: Contexto): Evento[] {
   lista.push(evento('confete', 'Uma pequena festa, sem motivo', 'Às vezes cabe comemorar só por estar aqui. Bom ter sua companhia.', 'presente', 'confete'))
   const biscoitos = ['O assunto que hoje parece confuso pode fazer sentido na próxima revisão.', 'Faça caber uma pausa entre um capítulo e outro.', 'Aprender também é dar tempo para a ideia assentar.', 'Uma boa pergunta acompanha a gente depois de fechar o livro.']
   lista.push(evento('biscoito', 'Biscoito da sorte', biscoitos[Math.floor(c.agora / INTERVALO_EVENTOS) % biscoitos.length], 'biscoito'))
-  // Datas têm prioridade; madrugada pode repetir após 18 min. Demais visitas, no máximo uma por dia.
+  // Datas têm prioridade; cada visita, no máximo uma por dia (madrugada pode voltar depois de 18 min,
+  // mas o limite global de uma hora por navegador vem antes disso em escolher()).
   return lista.filter(e => !c.vistos[`${hoje}:${e.id}`] || (e.id === 'madrugada' && c.agora - c.vistos[`${hoje}:${e.id}`] >= 18 * 60_000))
 }
 export function escolher(c: Contexto, sorteio: number): Evento | null {
-  if (!permitido(c) || c.rota === '/flashcards/biblioteca' || c.agora - c.iniciou < ESPERA_INICIAL || c.agora - c.ultimo < INTERVALO_EVENTOS) return null
+  if (!permitido(c) || c.rota === '/flashcards/biblioteca' || c.agora - c.iniciou < ESPERA_INICIAL || !liberadoPeloRelogio(c.agora, c.ultimo)) return null
   if (!Number.isFinite(sorteio) || sorteio < 0 || sorteio >= .18) return null
   const opcoes = candidatos(c)
   const especial = opcoes.find(e => ['aniversario', 'aniversario-conta', 'ortopedista', 'vespera', 'ano-novo'].includes(e.id))
