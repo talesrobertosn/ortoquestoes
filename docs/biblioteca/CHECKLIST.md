@@ -21,7 +21,8 @@ Plano gratuito: no máximo **5** resumos com `acesso: gratis` (o gerador confere
 | 1 | Fratura do colo do fêmur | fratura_colo_femur.pdf (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 53) | [x] Feito em 16/10/2026: `rockwood10-53-colo-femur`, grátis |
 | 2 | Fratura transtrocantérica | transtrocanterica.pdf (Rockwood and Green's, 10ª ed., cap. 54) | [x] Feito em 16/10/2026: `rockwood10-54-transtrocanterica`, grátis |
 | 3 | Fratura da cabeça do rádio, luxação do cotovelo e tríade terrível | cotovelo_deslocado.pdf (enviado em 16/10/2026, 62 páginas): Rockwood 10ª ed., cap. 40 · Elbow Dislocations and Terrible Triad Injuries (King, Beingessner, Pollock). Cobre luxação simples, cabeça do rádio, coronoide, tríade terrível, instabilidade posteromedial e ulna proximal | [x] Feito em 16/10/2026: `rockwood10-40-cotovelo-cabeca-radio`, grátis (3 de 5) |
-| 4 | Fratura do úmero distal | tema_1_cabeca_do_radio.pdf (enviado em 16/10/2026): na verdade é o cap. 39 do Rockwood (Distal Humerus Fractures) | [ ] Na fila (o nome do arquivo dizia cabeça do rádio; o capítulo certo da cabeça do rádio chegou depois, ver linha 3). |
+| 4 | Luxação do joelho e lesão multiligamentar | joelho_dislocation.pdf (enviado em 16/10/2026, 63 páginas): Rockwood 10ª ed., cap. 61 · Knee Dislocations (Stannard, Richards) | [x] Feito em 16/10/2026: `rockwood10-61-luxacao-joelho`, grátis (4 de 5) |
+| 5 | Fratura do úmero distal | tema_1_cabeca_do_radio.pdf (enviado em 16/10/2026): na verdade é o cap. 39 do Rockwood (Distal Humerus Fractures) | [ ] Na fila (o nome do arquivo dizia cabeça do rádio; o capítulo certo da cabeça do rádio chegou depois, ver linha 3). |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo, se é grátis, e qualquer divergência entre o
 livro e um gabarito oficial que tenha ido para `alerta:`.
@@ -48,7 +49,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 3. [ ] Anatomia da mão e punho (Mão e punho)
 4. [ ] Genuvaro, genuvalgo e torções (Ortopedia pediátrica)
 5. [ ] Fraturas da coluna toracolombar (Trauma adulto)
-6. [ ] Luxação do joelho e lesões ligamentares (Trauma adulto)
+6. [x] Luxação do joelho e lesões ligamentares (Trauma adulto) — feito: `rockwood10-61-luxacao-joelho`
 7. [ ] Anatomia do ombro (Ombro e cotovelo)
 8. [ ] Anatomia do quadril (Quadril)
 9. [ ] Côndilo lateral, epicôndilo medial e rádio proximal na criança (Ortopedia pediátrica)
