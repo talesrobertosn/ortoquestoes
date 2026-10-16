@@ -50,6 +50,19 @@ Revise, termine, teste e abra o PR. **Nunca publique a pasta `.wip-16-10-b/`.**
 | Easter eggs e eventos aleatórios (lista na seção "Fila combinada" do documento anterior) | `easter-eggs-eventos.patch` | Parcial e **sem commit do agente**: mudanças em `App.tsx`, `Conta.tsx` (opção de desligar), `armazenamento.ts`, `CenasPixel.tsx`, `recursos.css`, `PLANO-DE-IDEIAS.md` e o doc `docs/EASTER-EGGS-E-EVENTOS.md`. Leia o doc para ver o que está feito e o que falta. Regras: nunca no meio de uma questão nem em simulado; somem sozinhos; opção de desligar em Minha conta; reduced-motion; sem vantagem no ranking; sem SQL; código sob demanda (o orçamento de `fixtures/testar_orcamento_chunks.mjs` vale). |
 | Três posts do Instagram | `posts-instagram.patch` | **Desaprovados pelo Tales** ("muito texto, muita informação, muito carrossel"; e o Cofre já foi usado 6 vezes na semana). O patch tem a versão desaprovada (`marketing/kit/fila/post-31.json` a `post-33.json`); refazer do zero nesse formato: |
 
+**Cronograma, o que já está feito no patch** (relato do agente): calendário do mês dentro de
+`#/cronograma` (ao lado do cartão Hoje no computador, depois de Amanhã no celular), com todas as
+marcas, legenda, toque no dia com o botão certo e "Abrir em tela cheia"; `#/revisao` com o mesmo
+calendário (revisões que vencem e feitas por dia); "Teste do cronograma" ligado à interface (conta
+como feito só no fim, com pelo menos metade respondida; "mini-simulado" trocado em todo texto
+visível); teste novo `fixtures/testar_teste_cronograma.mjs`; casos de borda corrigidos (meta com
+teto de 150 por dia, "A prova passou" com "Escolher a próxima prova", trilho invertido, reta final
+sem conteúdo novo), registrados nos itens 50 a 53 de `docs/cronograma/PLANO.md`. Falta trazer a
+base (PR #323), rodar os testes e **refazer as capturas e olhá-las** (as da sessão ficaram no
+rascunho do contêiner e se perdem).
+**Decisões para o Tales:** a conta gratuita continua sem calendário (aparece só na lista "O resto
+é do assinante"); o teto de **150 questões por dia** foi escolhido pelo agente e pode mudar.
+
 **Como refazer os posts (orientação do Tales, 16/10/2026):**
 - Feed: carrossel de no máximo **3 lâminas** (questão com imagem e alternativas curtas; resposta
   numa frase de até ~15 palavras; convite de uma linha + "ortoquestoes.com.br"). Questão de
