@@ -2043,3 +2043,219 @@ de luxação crônica volar-ulnar do polegar (45-51) não ilustra MCF dorsal com
 A hemi-hamato reconstrói base volar da falange média, apesar de um lapso isolado
 no texto. `areasAdicionais` mantém estes simulados nos filtros base e mão com um
 único ID; não reclassifica as provas oficiais nem outros lotes.
+
+## Fratura do colo do fêmur (engenharia reversa em 16/10/2026; Rockwood cap. 53)
+
+**Recorte.** Subtemas "Fratura do colo do fêmur" e "Fratura transtrocantérica" (Trauma) mais regex de
+colo do fêmur, GARDEN, PAUWELS, AO 31-A e 31-B, DHS, haste cefalomedular, tip-apex, parafusos
+canulados, hemiartroplastia, basocervical, subcapital, parede lateral e fêmur proximal, nos temas
+Trauma, Quadril, Ortopedia geral e Osteometabólicas. Dos 84 candidatos (80 de TEOT/TARO com quatro
+alternativas), **31 são de colo do fêmur** depois de tirar subtrocantérica (13), transtrocantérica
+(16), artroplastia, osteotomias, osteonecrose, DXA e itens de outras regiões. O colo cai quase todo
+ano: 2026 (1), 2024 (5, contando as duas cópias da HARDINGE), 2023 (3), 2022 (3), 2021 (2), 2019 (2),
+2017 (1), 2015 (2), 2013 (2), 2012 (1), 2011 (1), 2007 (3 sem gabarito), 2006 (1) e 6 sem ano.
+Enunciado mediano de 106 caracteres, alternativa de 28; 62 terminam em palavra e 18 em dois-pontos;
+5 com "respectivamente" e 25 com alternativas em par; 4 com imagem (duas delas a mesma figura de
+WARD e ADAM); 4 casos clínicos. Gabarito do recorte inteiro: A17, B12, C18, D22. Simulados já
+existentes no recorte: `trauma-1246` (estresse do colo, cap. 24), `osteometabolicas-0105` e `0118`
+(zoledrônico e mortalidade em 1 ano, cap. 4). Nenhum lote dedicado ao capítulo 53.
+
+**Fatos carimbados (com prova e ano):**
+- **Índice de alinhamento de GARDEN**: 160 graus no AP e 180 no perfil (TARO 2013, `quadril-0331`);
+  é o índice que usa as trabéculas, aceitável 160 a 180 no AP (TARO 2021, `trauma-0064`); 160 a
+  180 no perfil (TARO 2022, `trauma-0242`); imagens de LOWELL e GARDEN, respectivamente (TARO 2026,
+  `quadril-0328`). Quatro provas em treze anos: é o fato mais reciclado do capítulo.
+- **Redução e PAUWELS**: varo de 10 graus e inclinação posterior de 25 graus devem ser corrigidos
+  para valgo leve e menos de 20 graus de inclinação posterior antes de fixar (sem ano,
+  `trauma-0899`); o tipo 3 de PAUWELS é comum nos jovens e o ângulo é com a horizontal (sem ano,
+  `trauma-0278`); o risco de necrose é menor com redução "impactada em valgo" (TARO 2011,
+  `trauma-0863`).
+- **Classificação de GARDEN**: tipo III com cabeça em varo e extensão (TEOT 2023, `trauma-0334`).
+- **Mecanismo**: rotação externa produz cominuição posterior (TARO 2019, `trauma-0037`).
+- **Epidemiologia e lesões associadas**: mulher branca com IMC abaixo de 18,5 (TARO 2017,
+  `trauma-0101`); fraturas associadas de membro superior, rádio distal e úmero proximal, com mais
+  mortalidade no úmero (TARO 2023, `trauma-0422`); segunda fratura do quadril em 2 anos em cerca de
+  5% dos homens, mais de 70% do mesmo tipo (TARO 2024, `trauma-0670`); tríade da mulher atleta e
+  fatores de estresse por sexo (TARO 2024, `trauma-0677`; TEOT 2024, `trauma-0564`); IRC fratura
+  mais o colo (TEOT 2022, `osteometabolicas-0019`).
+- **Colo e diáfise ipsilaterais**: 3% a 10%, basocervical (TARO 2019, `trauma-0022`); basocervical
+  sem desvio é o padrão mais comum (TARO 2024, `trauma-0671`); haste cefalomedular nas 32A3 com
+  31B1.2 (TEOT 2022, `trauma-0196`); placa aberta na diáfise quando há colo ipsilateral (TARO 2015,
+  `trauma-0130`); implantes separados dão bons resultados (sem ano, `trauma-0280`).
+- **Complicação e reoperação**: no idoso fixado, a reoperação vem mais da falha da osteossíntese do
+  que da necrose (TARO 2015, `trauma-0340` e `trauma-0953`, cópia).
+- **Via e estrutura em risco**: HARDINGE, dissecção acima de 3 a 5 cm do trocanter lesa o glúteo
+  superior (TEOT 2024, `trauma-0574` e `quadril-0127`, cópia).
+- **Tração pré-operatória**: prejudicial porque, com rotação interna, reduz a perfusão da cabeça
+  (sem ano, `trauma-0260`).
+- **Estresse do colo**: traço superior (tensão) exige cirurgia precoce (TARO 2012, `trauma-0827`;
+  TARO 2013, `quadril-0332`); FULLERTON e SNOWDY (TARO 2007, sem gabarito).
+- **Anatomia**: triângulo de WARD e arco de ADAM em imagem (TARO 2023, `quadril-0097` e
+  `trauma-0439`); circunflexa lateral não é a principal fonte da cabeça (sem ano, `quadril-0070`).
+- **Artroplastia**: ATQ imediata no idoso com acetábulo e colo associados (TARO 2021, `trauma-0078`);
+  PAF com colo desviado aos 40 anos: ATQ (sem ano, `trauma-0901`); bipolar contra unipolar (TARO 2006,
+  certo ou errado).
+
+**Tendência.** De 2021 para cá a banca concentrou-se em três blocos: a qualidade da redução
+(índice de GARDEN em 2021, 2022 e 2026, com imagem em 2026), as lesões associadas e a segunda
+fratura (2023 e 2024) e a fratura ipsilateral colo e diáfise (2019, 2022, 2024). A anatomia de via
+(HARDINGE) e a imagem do fêmur proximal (WARD e ADAM) apareceram em 2023 e 2024. Sumiram as
+perguntas de implante da era do DHS no colo (2007) e as de prótese bipolar (2006).
+
+**Forma.** "Na fratura do colo do fêmur..." (ou "do colo femoral") é a abertura de metade dos
+itens; "No tratamento..." e "Na avaliação..." vêm depois. Enunciado de 90 a 130 caracteres, quase
+sempre terminando em palavra. Pares 2 por 2 em um terço: "5% nos homens, e em mais de 70%";
+"superiores, principalmente rádio e úmero, e a mortalidade maior com o úmero"; "LOWELL, cujos
+valores aceitáveis são 160-180". Imagem só para o índice de alinhamento e para a anatomia
+trabecular. Caso clínico raro (dois, sem ano, ambos de conduta).
+
+**Como o examinador pensa.** Pergunta um número do livro ligado a uma decisão (160 e 180; 20 graus;
+5% e 70%; 3% a 10%), um "mais frequente" (basocervical; falha da osteossíntese; rádio e úmero) ou
+uma estrutura em risco (glúteo superior). Nos pares cruza valor com incidência (AP e perfil), número
+com proporção (5% e 70%) e nervo com distância. Os distratores vêm do mesmo capítulo em outro
+contexto: LOWELL contra GARDEN, 128 a 135 (ângulo cervicodiafisário) contra 160 a 180, varo contra
+valgo, mediocervical contra basocervical, glúteo inferior contra superior, necrose contra falha da
+fixação. Gabarito do colo puxando para C e D.
+
+**Divergências e lacunas.**
+- O TARO 2011 (`trauma-0863`) dá a redução "impactada em valgo" como a de menor risco de necrose.
+  O capítulo 53 separa as duas coisas: a redução em valgo é a mais estável e tem menos falha de
+  fixação; o risco de necrose é menor com redução anatômica, e tanto o varo quanto o valgo o
+  aumentam. Nos simulados, cobrar a distinção e citar a banca no comentário.
+- O TEOT 2023 (`trauma-0334`) descreve o GARDEN III em "varo e extensão". O capítulo descreve o tipo
+  I impactado em valgo e retroversão e o III como angulação das trabéculas sem translação; não fala
+  em extensão. A gêmea cobre o tipo I pelo capítulo.
+- O TEOT 2024 (HARDINGE) fala em 3 a 5 cm acima do trocanter; o capítulo diz que o risco ao nervo
+  glúteo superior aumenta acima de 5 cm. Cobrar a via e o nervo, não a distância.
+- O TARO 2024 (`trauma-0671`, basocervical sem desvio como padrão mais comum na diáfise) não tem
+  apoio no capítulo 53, que só dá 2% a 9% e o alerta de que a fratura sem desvio passa despercebida.
+- O TARO 2019 dá 3% a 10% de colo nas fraturas da diáfise; o capítulo dá 2% a 9%.
+- O capítulo traz dois números para a proporção de estresse no colo (3% na seção de sinais, 5% na
+  seção de estresse): não perguntar esse número.
+- Lacunas com cara de prova (todas cobertas no lote): inclinação posterior de PALM e o corte de 20
+  graus; critério de LOWELL; varo de 20 graus com 55% de falha; placa antideslizamento medial de
+  MIR e COLLINGE pela via de SMITH-PETERSEN; ramo profundo da circunflexa medial a 1,5 cm da crista
+  e 82% da perfusão; anastomose da glútea inferior; metade lateral do colo extracapsular; eixo do
+  quadril e ângulo cervicodiafisário; basocervical em 2% a 3% tratada como extracapsular; AP em
+  rotação interna e TC de cortes finos (TORNETTA); RM na fratura oculta e falso-negativo da
+  cintilografia em 48 a 72 horas; 7% de pseudartrose e 5,8% de necrose na não desviada; 30% a 50% de
+  falha e pseudartrose na desviada do idoso; FAITH (necrose 9% contra 5%); ATQ para o idoso ativo e
+  hemiartroplastia cimentada para o idoso frágil; cimentada com menos fratura periprotética e mais
+  embolia; encurtamento de 5 e 10 mm; necrose no segundo ano; osteotomia valgizante para 150 graus
+  com placa-lâmina; enxerto de MEYER (quadrado femoral); desvio secundário de 19% a 46% no
+  tratamento não cirúrgico.
+
+**Destino.** Tema Trauma, subtema "Fratura do colo do fêmur"; as de colo com diáfise levam também
+"Fratura da diáfise do fêmur", como a banca faz. Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 53** (Femoral Neck Fractures; Griffin, Lane, Moppett e Seymour):
+`trauma-1539` a `trauma-1567`, 29 questões, 4 figuras (LOWELL, inclinação posterior de PALM,
+GARDEN I e PAUWELS III), gabarito A6/B7/C8/D8, mediana do comentário de 3.225 caracteres. Plano em
+[rockwood-colo-femur-plano.md](rockwood-colo-femur-plano.md) e entrega em
+[rockwood-colo-femur-entrega.md](rockwood-colo-femur-entrega.md).
+- **Gêmeas dos carimbados:** LOWELL em imagem e varo de 20 graus com 55% (índice de GARDEN e
+  redução); GARDEN I em valgo e retroversão (espelho do tipo III); PAUWELS III em imagem no jovem;
+  valgo contra anatômica (divergência do TARO 2011); ligamento iliofemoral e cominuição posterior
+  (TARO 2019); circunflexa medial a 1,5 cm e 82%; tração e glútea inferior; eixo do quadril (TARO
+  2017); 4% e 10% nas mulheres (TARO 2023 e 2024); TORNETTA e haste cefalomedular no colo com
+  diáfise (TARO 2019, 2024, TEOT 2022); 30% a 50% de falha (TARO 2015); ATQ contra hemiartroplastia
+  (TARO 2021); HARDINGE e luxação (TEOT 2024).
+- **Projeções e lacunas:** inclinação posterior de 20 graus; placa medial de MIR e COLLINGE por
+  SMITH-PETERSEN; metade lateral extracapsular; basocervical 2% a 3% com DHS; RM e cintilografia em
+  48 a 72 horas; 7% e 5,8% na não desviada; FAITH; cimentada (menos fratura, mais embolia);
+  encurtamento 5 e 10 mm; necrose no segundo ano; osteotomia para 150 graus com placa-lâmina;
+  enxerto de MEYER; 19% a 46% de desvio sem cirurgia.
+- **Pendências:** a banca cobra o GARDEN III em varo e extensão e a HARDINGE com 3 a 5 cm, que o
+  capítulo não sustenta; ficaram registradas aqui, sem questão. Estresse do colo e mortalidade em 1
+  ano já existiam (`trauma-1246`, `osteometabolicas-0118`).
+
+## Fratura transtrocantérica (engenharia reversa em 16/10/2026; Rockwood cap. 54)
+
+**Recorte.** O mesmo recorte do colo (acima). **16 itens de transtrocantérica** de TEOT e TARO:
+2025 (1), 2023 (3, contando a imagem de WARD e ADAM compartilhada com o colo), 2022 (1), 2021 (1),
+2020 (1), 2018 (1), 2011 (1), 2010 (1), 2009, 2008, 2007 e 2006 (1 cada, sem gabarito ou certo e
+errado) e 2 sem ano. Cai quase todo ano desde 2020, uma por prova. Mais 13 de subtrocantérica (cap.
+55, fora deste lote), que mostram o mesmo gosto: forças deformantes, implante e colapso em varo.
+Nenhum simulado dedicado ao capítulo 54; `quadril-0274` (Parkinson) é de outro livro.
+
+**Fatos carimbados (com prova e ano):**
+- **Parede lateral** (tendência forte, uma por ano): fragilidade da parede lateral leva a
+  medialização do fêmur com diminuição do offset (TEOT 2021, `trauma-0216`); o maior preditor de
+  fratura da parede lateral com DHS é a sua espessura (TEOT 2023, `trauma-0331`); espessura medida
+  3 cm abaixo do tubérculo inominado, em 135 graus (TEOT 2025, `trauma-0749`); traço reverso
+  contraindica a placa-parafuso de 130 graus (TARO 2008, `trauma-1141`, sem gabarito; TARO 2006,
+  certo e errado, `trauma-1174`).
+- **Lesões associadas**: rádio distal ipsilateral é a mais comum (TARO 2020, `trauma-0011`; TARO
+  2022, `trauma-0228`).
+- **Força deformante**: com lesão da cápsula, a diáfise é desviada pelo adutor (TARO 2018,
+  `trauma-0056`); nas subtrocantéricas, iliopsoas, glúteo médio e rotadores curtos (TARO 2014, 2018,
+  2025, sem ano).
+- **Trocanter menor isolado**: avulsão isolada do trocanter menor sugere metástase oculta (TARO
+  2023, `trauma-0417`).
+- **Anatomia em imagem**: triângulo de WARD e arco de ADAM (TARO 2023, `trauma-0439`); calcar
+  anterolateral é o distrator errado (sem ano, `quadril-0070`).
+- **Cut-out e prognóstico**: o principal fator predisponente é a posição do parafuso (sem ano,
+  `trauma-0961`); redução com cortical medial neutra ou positiva é fator de bom prognóstico, com
+  índice de BAUMGAERTNER acima de 25 mm como distrator (sem ano, `trauma-0279`).
+- **Implante por tipo**: TRONZO V com haste cefalomedular bloqueada (TARO 2010, `trauma-0887`);
+  ponto de entrada trocantérico evita fratura iatrogênica (TARO 2011, `trauma-0870`); osteotomia de
+  SARMIENTO (TARO 2009, sem gabarito).
+
+**Tendência.** Desde 2020 a banca pergunta uma coisa por prova e alterna entre parede lateral
+(2021, 2023, 2025, só TEOT) e epidemiologia (2020, 2022, 2023, só TARO). O cut-out e a posição do
+parafuso estão nas provas sem ano e no capítulo com números (TAD de 25 mm, posição inferior e
+central), mas ainda não caíram com data recente: é a projeção mais provável. As classificações
+antigas (TRONZO, EVANS, BOYD e GRIFFIN) sumiram; o capítulo só usa AO 31-A1, A2 e A3.
+
+**Forma.** "Na fratura transtrocanteriana..." ou "transtrocantérica" (a banca usa as duas grafias);
+enunciado de 80 a 120 caracteres terminando em palavra; alternativas curtas (um músculo, uma
+estrutura, um implante) ou pares 2 por 2 (medialização ou lateralização com aumento ou diminuição
+do offset; 3 cm ou 6 cm com 135 ou 150 graus). Sem imagem própria (a única é a figura trabecular de
+2023). Sem caso clínico.
+
+**Como o examinador pensa.** "A mais comumente associada", "o maior preditor", "a fragilidade
+acarreta", "o principal fator predisponente". Cruza sentido (medialização ou lateralização) com
+efeito (offset), medida (3 ou 6 cm) com ângulo (135 ou 150), lado (ipsilateral ou contralateral)
+com osso (rádio ou úmero). Distratores do mesmo capítulo: trocanter maior contra menor, calcar
+contra traço reverso contra fratura contralateral, iliopsoas e glúteo médio contra adutor, placa de
+95 contra 135 graus. Gabarito sem concentração (A4, B5, C2, D3 nos 14 com gabarito).
+
+**Divergências e lacunas.**
+- O capítulo não define a parede lateral pela medida de 3 cm e 135 graus (TEOT 2025) nem pela
+  espessura limite (TEOT 2023); define-a anatomicamente (cortical lateral até onde a coluna cortical
+  se estreita e passa ao trocanter maior) e pela consequência (A3 perde o apoio lateral, o fêmur
+  medializa). As gêmeas cobrem a definição, a medialização com números e o implante.
+- TRONZO e SARMIENTO não estão no capítulo; a gêmea do TRONZO V é o A3 com haste.
+- Mortalidade em 1 ano aparece como 20% a 25% na introdução e 28% a 38% nos resultados: não
+  perguntar. O sem ano `trauma-0279` (cortical medial neutra ou positiva) não tem frase equivalente
+  no capítulo, que fala em redução em valgo leve com pequena abertura medial aceitável.
+- Lacunas com cara de prova (cobertas no lote): AO A1, A2 e A3 com o tipo mais frequente e a
+  parede lateral; trocanter maior com desvio acima de 1 cm; segunda fratura associada (úmero
+  proximal ipsilateral, 1%); AP em 10 graus de rotação interna; 24 horas e 10% de mortalidade;
+  medialização acima de 50% e 5 mm; haste curta até 3 cm e sempre bloqueada; registro norueguês
+  (reoperação igual na A1, menor na A2 e A3); índice de GARDEN 170 no AP e 180 no perfil; ângulo
+  da placa 130 a 135; ponta inferior ou central e central; TAD de 25 mm e o dobro do diâmetro;
+  ponta a 5 mm e cano curto para parafuso de 80 mm; cut-out 3% a 5% por redução e posição; cut-in
+  de 2%; quebra da haste no orifício do parafuso por pseudartrose; dinamização de 3 a 6 meses;
+  necrose de 1% a 2% por implante alto; fratura na ponta da haste de 0,7% a 1,7% com dor na coxa.
+
+**Destino.** Tema Trauma, subtema "Fratura transtrocantérica". Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 54** (Trochanteric Hip Fractures; Heetveld e Flikweert):
+`trauma-1568` a `trauma-1592`, 25 questões, 5 figuras (A3 reversa, medialização com DHS, varo com
+parafuso superior, cut-in e quebra da haste), gabarito A7/B6/C6/D6, mediana do comentário de 3.157
+caracteres. Plano em [rockwood-transtrocanterica-plano.md](rockwood-transtrocanterica-plano.md) e
+entrega em [rockwood-transtrocanterica-entrega.md](rockwood-transtrocanterica-entrega.md).
+- **Gêmeas dos carimbados:** A3 com haste em imagem (TRONZO V, traço reverso); calcar posteromedial
+  e trabéculas de tensão (WARD e ADAM); adutores e iliopsoas (TARO 2018); trocanter maior acima de
+  1 cm e trocanter menor patológico (TARO 2023); úmero proximal ipsilateral e 4% (TARO 2020 e
+  2022); medialização em imagem e com números (TEOT 2021, 2023); posição do parafuso, ângulo da
+  placa, TAD e cut-out (sem ano `trauma-0961` e `trauma-0279`); varo com parafuso superior (TARO
+  2011).
+- **Projeções e lacunas:** A1, A2 e A3 com o tipo mais frequente; AP em 10 graus de rotação
+  interna; 24 horas e 10%; registro norueguês; haste curta até 3 cm e bloqueada; GARDEN 170 e 180;
+  ponta a 5 mm e cano curto; cut-in de 2%; quebra da haste no orifício do parafuso; dinamização de
+  3 a 6 meses; necrose de 1% a 2% por implante alto; fratura na ponta da haste com dor na coxa.
+- **Pendências:** a medida da parede lateral (3 cm e 135 graus, TEOT 2025) e a espessura limite
+  (TEOT 2023) não estão no capítulo; TRONZO e SARMIENTO também não. Mortalidade em 1 ano com dois
+  valores no capítulo.

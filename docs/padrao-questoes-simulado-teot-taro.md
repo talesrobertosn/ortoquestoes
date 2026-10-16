@@ -271,3 +271,15 @@ toda questão de simulado feita a partir de agora.
   a partir da bibliografia, visando o aprendizado, e que não é questão oficial.
 
 - **Conferência de tabelas anatômicas versus exame físico (11/10/2026).** Uma tabela de exame pode contradizer a prancha anatômica de nervos ou trocar as cabeças de um músculo. Para um lote só de anatomia, conferir origem, inserção e nervo diretamente nas pranchas e tabelas anatômicas; não importar a associação clínica como gabarito. Registrar a divergência no mapa e excluir o atributo que continuar duvidoso. Setas em tendões muito finos podem ser substituídas por perguntas textuais quando a distinção visual não ficar inequívoca.
+
+- **PDF com páginas "deitadas" e conteúdo duplicado lado a lado (16/10/2026, cap. 53).** O
+  recorte do capítulo veio com cada página A4 contendo duas cópias rotacionadas do mesmo
+  conteúdo. O `extrair_capitulo.py` duplicaria todo o texto. Solução: conferir as duas primeiras
+  páginas com `pdftoppm -r 40`, olhar os blocos com `page.get_text("blocks")` para achar a faixa
+  da primeira cópia e extrair só com `clip` (pymupdf), sem duplicar imagens (mesmo xref). Olhar o
+  mosaico antes de recortar: as figuras podem sair na orientação correta mesmo com o texto rodado.
+- **Projeção entre capítulos vizinhos (16/10/2026, caps. 53 e 54).** Um fato carimbado num
+  capítulo (índice de GARDEN no colo: 160 e 180) pode ser levado ao capítulo vizinho com os
+  valores dele (na trocantérica, ótimo de 170 no AP e 180 no perfil). A gêmea por projeção precisa
+  explicar no comentário por que o número muda (o valgo leve protege a montagem), para não
+  parecer contradição com a oficial.
