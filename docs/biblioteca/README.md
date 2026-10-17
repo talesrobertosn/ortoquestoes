@@ -5,6 +5,9 @@ Criada em 16/10/2026. **Publicada em beta** no menu suspenso ("Resumos · Beta")
 caixa no cronograma e convite no fim das questões. O que já está pronto e o que falta
 estão no fim deste arquivo. A fila de temas e o que já foi enviado estão em [CHECKLIST.md](CHECKLIST.md).
 
+> Roteiro de ponta a ponta (PDF → simulados → resumo → site), com o significado de cada pedido curto do Tales e o
+> jeito de escrever: [PILOTO-AUTOMATICO.md](PILOTO-AUTOMATICO.md).
+
 ## Regras do dono (Tales)
 
 1. **Todo resumo sai de um capítulo de livro ou artigo que o Tales enviou.** Nada de resumo "de memória"
