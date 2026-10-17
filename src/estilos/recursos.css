@@ -469,13 +469,14 @@
 
 /* Busca do menu: páginas, trechos dos resumos, assuntos, flashcards e questões. */
 .mn-busca { position: relative; margin-bottom: 1rem; }
-.mn-busca__campo { display: flex; align-items: center; gap: 0.55rem; padding: 0 0.4rem 0 0.9rem; min-height: 3rem; border: 1.5px solid var(--borda); border-radius: 999px; background: var(--superficie); color: var(--texto-2); transition: border-color 0.15s, box-shadow 0.15s; }
-.mn-busca__campo:focus-within { border-color: var(--verdete); box-shadow: 0 0 0 4px var(--verdete-veu); color: var(--verdete); }
+.mn-busca__campo { display: flex; align-items: center; gap: 0.55rem; padding: 0 0.4rem 0 0.9rem; min-height: 3rem; border: 1.5px solid color-mix(in srgb, var(--verdete) 30%, var(--traco)); border-radius: 999px; background: var(--superficie-2); color: var(--verdete); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06); transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s; }
+.mn-busca__campo:hover { border-color: color-mix(in srgb, var(--verdete) 55%, var(--traco)); }
+.mn-busca__campo:focus-within { border-color: var(--verdete); background: var(--superficie); box-shadow: 0 0 0 4px color-mix(in srgb, var(--verdete) 20%, transparent); }
 .mn-busca__campo input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--texto); font: inherit; font-size: 1rem; padding: 0.7rem 0; }
 .mn-busca__campo input::-webkit-search-cancel-button { display: none; }
 .mn-busca__limpar { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border: 0; border-radius: 50%; background: var(--superficie-2); color: var(--texto-2); cursor: pointer; }
 .mn-busca__limpar:hover { color: var(--texto); }
-.mn-busca__lista { margin: 0.5rem 0 0; padding: 0.35rem; list-style: none; display: grid; gap: 0.1rem; max-height: min(26rem, 60vh); overflow-y: auto; border: 1px solid var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); }
+.mn-busca__lista { margin: 0.5rem 0 0; padding: 0.35rem; list-style: none; display: grid; gap: 0.1rem; max-height: min(26rem, 60vh); overflow-y: auto; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); }
 .mn-busca__item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; padding: 0.55rem 0.65rem; border-radius: var(--raio-controle); color: var(--texto); text-decoration: none; }
 [aria-selected="true"] > .mn-busca__item { background: var(--verdete-veu); }
 .mn-busca__icone { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: var(--raio-controle); background: var(--superficie-2); color: var(--verdete); }
