@@ -2449,3 +2449,305 @@ questão foi criada".
   isolado (TARO 2008) não têm frase equivalente no capítulo; ficaram explicados no comentário, sem
   questão própria. Tálus extruso, cabeça do tálus, retardo e pseudartrose, artrose, prótese total do
   tálus e artrodese de BLAIR ficaram fora para manter a média de 10 a 12 do pedido de 16/10/2026.
+
+## Luxação do joelho e lesão multiligamentar (engenharia reversa em 17/10/2026; Rockwood cap. 61)
+
+**Recorte.** `mapear_banca.py` com regex de luxação do joelho, multiligamentar, SCHENCK, KENNEDY,
+tornozelo-braquial, artéria poplítea, canto posterolateral, popliteofibular, fibular comum, covinha,
+irredutível, arqueado e STENER, subtemas "Luxação do joelho" e "Canto posterolateral", temas Trauma e
+Joelho, com `--todas-as-provas`: 87 oficiais, 74 de TEOT/TARO com quatro alternativas. O subtema
+"Luxação do joelho e lesões ligamentares" do tema Trauma reúne todo o joelho (artroplastia, menisco,
+osteotomia), então a leitura separou cerca de 30 itens do capítulo 61, quase todos com cópia no tema
+Joelho. Cai desde 2006, e de 2021 a 2025 todo ano, com duas a quatro questões por ano somando TEOT e TARO. Enunciado
+curto (mediana de 92 caracteres), alternativas de 30, final em palavra ou dois-pontos; pares 2 por 2 em
+cerca de um quarto; nenhuma imagem sobre a luxação em si; um caso clínico (TEOT 2022, escoriação na
+tuberosidade e cruzado posterior). Simulados já existentes no recorte: só os de anatomia do Netter
+(`joelho-0350` HUMPHREY e WRISBERG, `0354` colateral tibial, `0355` popliteofibular, `0358` poplíteo
+oblíquo, `0373` fibular comum no colo, `0378` genicular média). Nenhum lote do capítulo 61 antes deste.
+
+**Fatos carimbados (com prova e ano):**
+- **SCHENCK**: KD II por descrição (TARO 2016, `trauma-0125`) e ao contrário (TEOT 2021, `trauma-0222`);
+  KD IIC (TEOT 2025, `trauma-0745`); luxação sem os dois cruzados (TARO 2006, certo ou errado).
+- **Artéria poplítea e ITB**: valor preditivo negativo de 100% acima de 0,9 (TEOT/TARO sem ano,
+  `trauma-0298`); 0,91 é normal (CET-PR, `trauma-0704`); sem pulso após a redução, exploração (TARO
+  2007, sem gabarito); direção com mais lesão da poplítea, anterior (TARO 2025, `trauma-0802`);
+  supracondiliana com menos risco que a luxação (TARO 2021, `trauma-0067`).
+- **Canto posterolateral**: dial a 30 e 90 graus (TARO 2025, `trauma-1030`) e 10 graus a 90 graus (TARO
+  2011, `joelho-0222`); poplíteo restringe a rotação externa (TARO 2024, `trauma-1040`); popliteofibular
+  estático (TARO 2012); sinal arqueado (TARO 2022, `trauma-0225`); técnica de LAPRADE em figura (TEOT
+  2023); estruturas a reconstruir (TARO 2009, sem gabarito).
+- **Cruzado posterior**: frouxidão posterior residual após a reconstrução (TARO 2013, 2016 e 2023;
+  divergente em 2018, sem a opção na lista); inlay entre gastrocnêmio medial e semimembranáceo (TARO
+  2021, `trauma-1080`); feixes e posição de tensão (TEOT 2022); meniscofemorais (TEOT 2024).
+- **Luxação irredutível**: cápsula e colateral tibial (TARO 2017, `trauma-0105`); sulco medial e cápsula
+  (TEOT 2023, `trauma-1072`).
+- **Nervo**: fibular comum com cruzado posterior e canto (TEOT 2021, `joelho-0060`).
+- **Conduta**: reconstrução precoce dos cruzados e idade abaixo de 40 (TARO 2019, `trauma-0034`);
+  colateral medial desinserido no fêmur como indicação tardia (SBOT-SP, `trauma-0557`); estresse em varo
+  3 mm (CET-PR) e valgo de 10 graus em extensão (SBOT-SP); principal causa, acidente automotivo (TARO
+  2014); extensor rompido mais na luxação posterior (TARO 2010).
+
+**Tendência.** De 2021 em diante a banca pergunta classificação (SCHENCK com sufixo), mecanismo
+vascular, exame do canto (dial) e técnica (inlay, LAPRADE). Sumiram as perguntas de certo ou errado
+(2006) e de conduta vascular sem gabarito (2007).
+
+**Forma.** "Na luxação do joelho...", "Na luxação de joelho tipo KD...", "Na avaliação clínica de
+paciente com lesão ligamentar do joelho...", "Na estabilidade do joelho...". Alternativas curtas
+(direções, tipos KD, estruturas), pares de lado com local (medial ou lateral com fêmur ou tíbia) e de
+ângulo com lesão. Epônimos em caixa alta: SCHENCK, LAPRADE, WRISBERG, SEGOND.
+
+**Como o examinador pensa.** Pergunta o tipo da classificação, a direção da luxação, a estrutura
+interposta ou restritora, o número de corte (0,9, 100%, 3 mm, 10 graus) e "o mais comum". Os
+distratores são o tipo vizinho de SCHENCK, o lado oposto (lateral no lugar de medial), a outra direção
+e o restritor de outro movimento. Gabarito do recorte espalhado (A, B, C e D próximos).
+
+**Divergências e lacunas.**
+- TARO 2025 (poplítea mais lesada na luxação anterior), TARO 2010 (extensor na posterior), TARO 2019
+  (40 anos) e TEOT 2025 (cruzado posterior na hiperextensão): o capítulo não traz a afirmação da banca;
+  ficaram em `alerta:` no resumo e não viraram simulado.
+- TARO 2018 (`joelho-0013`, perda de movimento) contra 2013, 2016 e 2023 (instabilidade residual): a
+  gêmea cobrou o dado do capítulo (gaveta posterior normal em só 46%).
+- Lacunas com cara de prova: STENER do joelho; ordem da reconstrução; colateral medial do fêmur com 6 a
+  8 semanas; reparo contra reconstrução do canto (37% contra 9%; 40% contra 6%) e consenso de 2 a 3
+  semanas; gaveta posterior com estresse (8 e 12 mm); fatores de risco e prognóstico do nervo fibular;
+  fixador com pinos anteromedial na tíbia e a mais de um palmo da patela; ITB seriado em 4 a 6, 24 e
+  48 horas; garrote a 300 mmHg por 120 minutos contraindicado; bomba de artroscopia e síndrome
+  compartimental; ossificação heterotópica de 13% a 37% com o cruzado posterior como fator.
+
+**Destino.** Tema Trauma, subtema "Luxação do joelho e lesões ligamentares", o mesmo das oficiais.
+
+**Aproveitamento do capítulo 61** (Knee Dislocations; Stannard e Richards): `trauma-1619` a
+`trauma-1630`, 12 questões, sem figuras (as do capítulo são de terceiros com permissão), sem caso
+clínico, gabarito A3/B3/C3/D3, mediana do comentário de 4.314 caracteres, cada uma com "Por que esta
+questão foi criada".
+- **Gêmeas dos carimbados:** corte do ITB e angiotomografia (sem ano e CET-PR); fixação da poplítea e
+  do fibular comum em par artéria e nervo (TARO 2025 e TEOT 2021); KD III-LN (TARO 2016, TEOT 2021 e
+  2025); dial predominante a 30 graus (TARO 2011 e 2025); direção da luxação irredutível (TARO 2017 e
+  TEOT 2023); colateral medial do fêmur com 6 a 8 semanas (SBOT-SP); reconstrução do canto em 2 a 3
+  semanas (TARO 2009); gaveta posterior que menos normaliza (TARO 2013, 2016, 2023); fatores do nervo
+  fibular (TEOT 2021); gaveta posterior em estresse com 12 mm (CET-PR e SBOT-SP).
+- **Lacunas:** STENER do joelho; ordem da reconstrução (cruzado posterior primeiro, anterior por
+  último).
+- **Pendências:** fixador externo (pinos), garrote, bomba de artroscopia, ossificação heterotópica,
+  trombose, luxação exposta e resultado da imobilização ficaram fora para manter a média de 10 a 12.
+
+## Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (engenharia reversa em 17/10/2026; Rockwood cap. 60)
+
+**Recorte.** `mapear_banca.py` com regex de patela, quadricipital, aparelho e mecanismo extensor,
+INSALL, BLUMENSAAT, bipartida, LPFM, OSGOOD e SINDING, subtemas "patela" e "quadricipital", temas
+Trauma, Joelho, Pediatria, Ortopedia geral e Conceitos básicos: 153 candidatos (146 de TEOT/TARO com
+quatro alternativas); uma segunda busca por quadríceps e tuberosidade acrescentou só a de torque do
+TARO 2007. Muitos são de instabilidade femoropatelar crônica (TA-GT, DEJOUR, FULKERSON, ELMSLIE-TRILLAT),
+osteocondrite, haste suprapatelar e artroplastia, que não são deste capítulo. Depois da leitura, **49
+itens únicos** são do assunto (fora as cópias entre joelho e trauma): 13 de fratura da patela, 11 de
+luxação aguda e estabilizadores, 23 de rupturas tendíneas e tendinopatia e 2 de biomecânica. Caem
+todos os anos, em geral duas questões por prova, com pico em 2024 (6). Enunciado mediano de 96
+caracteres; termina em palavra ou dois-pontos; uma imagem (TEOT 2024, patela bipartida) e um caso
+clínico (o mesmo). Gabarito dos itens com resposta: A13, B12, C9, D8. As fraturas da tuberosidade da
+tíbia caem como tema pediátrico (WATSON-JONES e OGDEN, TARO 2025, 2015, 2012; idade e sexo, TARO 2024;
+recorrente tibial anterior e síndrome compartimental, TEOT 2024) e não estão no capítulo do adulto.
+Simulados já existentes: `trauma-1234` (elevação da perna estendida e tratamento não cirúrgico, cap. 10)
+e os de anatomia do Netter (`joelho-0344` e `joelho-0345`, facetas da patela). Nenhum lote dedicado.
+
+**Fatos carimbados (com prova e ano):**
+- **Idade e local da ruptura do tendão patelar**: menos de 40 anos, com extensão ao retináculo e perda
+  completa da extensão (TEOT 2025, `joelho-0181`, par 2 por 2); menos de 40 anos no polo inferior da
+  patela (TARO 2016, `joelho-0028`); jovens atletas (TARO 2013, `joelho-0273`); polo inferior (TARO 2012,
+  `joelho-0210`); proximal com avulsão óssea (TARO 2009, `joelho-0103` e cópia); mais comum em menores
+  de 40 anos (sem ano, `joelho-0083`).
+- **Mecanismo**: contração excêntrica com joelho fletido (TARO 2010, `joelho-0230`); excêntrica com o pé
+  apoiado (TARO 2014, `joelho-0042`, quadríceps; TARO 2023, `joelho-0118`, patelar).
+- **Quadríceps e fatores sistêmicos**: uremia, diabetes e hiperparatireoidismo (TARO 2015, `joelho-0031`);
+  esteroides (TARO 2020, `joelho-0004`); bilateral em homens acima de 40 anos (TARO 2011, `joelho-0218`);
+  osteotendínea no idoso e musculotendínea no jovem (TARO 2019, `joelho-0008`); zona hipovascular a 1 a 2
+  cm do polo superior (TARO 2018, `joelho-0011`; TARO 2025, `joelho-0205`).
+- **Técnicas do crônico**: SCUDERI, retalho proximal invertido (TARO 2008, três cópias); CODIVILLA, V
+  invertido (TARO 2016, `joelho-0030`; TEOT 2023 em imagem, `joelho-0055`); MANDELBAUM no patelar crônico
+  (TEOT 2024, `joelho-0140`); cerclagem de proteção do patelar a 30 graus (sem ano, `joelho-0173`).
+- **Fratura, exame e imagem**: pouco derrame com defeito palpável indica lesão retinacular (TARO 2021,
+  `trauma-0069`); traço vertical e marginal na axial de MERCHANT (TEOT 2021, `trauma-0212`); transversa
+  no perfil (TARO 2014, `trauma-0153`); vertical por trauma direto em flexão com extensor íntegro (TARO
+  2019, `trauma-0032`); teste de carga salina (TARO 2022, `trauma-0240`); patela bipartida superolateral e
+  bilateral (TARO 2024, `trauma-0661`; TEOT 2024 em imagem, `trauma-0570`); mecanismo indireto com traço
+  transverso (sem ano, `trauma-0297`); indicação cirúrgica com incongruência de 3 mm (sem ano, `trauma-0307`).
+- **Luxação aguda**: lesão osteocondral na borda inferomedial da patela (TARO 2026, `joelho-0262`);
+  contusão do côndilo lateral e da faceta medial na RM (sem ano, `joelho-0232`); fratura osteocondral no
+  adolescente (TEOT 2022, `joelho-0057`); LPFM como fator de recidiva (TARO 2011 e 2015); VMO e LPFM entre
+  0 e 20 graus (TARO 2024, `joelho-0161`); luxação intra-articular (TARO 2017 e 2023, horizontal e vertical).
+- **Associadas**: LCA em até 25% na ruptura do tendão patelar do atleta (TARO 2024, `joelho-0156`).
+- **Biomecânica**: carga patelofemoral na descida de escadas (TARO 2012, `joelho-0214`); torque máximo do
+  quadríceps (TARO 2007, `joelho-0279`, sem gabarito).
+
+**Tendência.** As rupturas tendíneas são o bloco mais reciclado (idade, local e mecanismo desde 2009) e
+voltaram em par 2 por 2 no TEOT 2025. A fratura da patela ganhou exame físico e imagem desde 2019 (axial,
+retináculo, carga salina, bipartida em imagem e caso clínico em 2024). A luxação aguda migrou para a
+lesão osteocondral e a ressonância (2022 e 2026). Banda de tensão (TARO 2006 e 2009) e técnica de fixação
+não voltaram com gabarito.
+
+**Forma.** "A ruptura do tendão...", "Na fratura da patela...", "Na luxação aguda traumática da
+patela...", "No tratamento da ruptura crônica...". Alternativas curtas (uma idade, um local, uma
+incidência, um epônimo) ou pares (idade com retináculo; excêntrica ou concêntrica com pé apoiado ou não;
+inferior ou superior com medial ou lateral). Epônimos em caixa alta: SCUDERI, CODIVILLA, MANDELBAUM,
+KRACKOW, MERCHANT, INSALL.
+
+**Como o examinador pensa.** Pergunta o perfil do paciente (idade, doença sistêmica), o local da ruptura,
+o mecanismo e o nome da técnica do crônico; na fratura, o que o exame e cada incidência mostram. Distratores
+do mesmo capítulo: o outro tendão (quadricipital contra patelar), a outra idade, contração concêntrica,
+a borda superolateral da bipartida no lugar da inferomedial da luxação, o perfil no lugar da axial,
+SCUDERI contra CODIVILLA. Gabarito do recorte sem concentração forte (A e B um pouco mais).
+
+**Divergências e lacunas.**
+- **INSALL-SALVATI no capítulo 60:** uma frase do texto diz que razão menor que 1 sugere patela alta e
+  ruptura do tendão patelar, e maior que 1, patela baixa e ruptura do quadricipital; a legenda da figura
+  60-3 (tendão/patela acima de 1,2 indica lesão do tendão patelar) e a seção das fraturas dos polos (polo
+  superior com patela baixa e índice reduzido; polo inferior com patela alta e índice aumentado) dizem o
+  contrário, que é o padrão. Não cobrar o valor de corte; cobrar alta contra baixa.
+- **Desvio da fratura:** o capítulo define desviada como separação acima de 3 mm ou degrau articular
+  acima de 2 mm, mas indica tratamento não cirúrgico com incongruência articular menor que 3 mm e cirurgia
+  acima de 3 mm. A sem ano (`trauma-0307`) cobrou 3 mm de incongruência e 2 mm de desvio; perguntar só os
+  3 mm da indicação.
+- **TARO 2009 (`joelho-0103`, proximal com avulsão óssea):** o capítulo diz que a maioria rompe na inserção
+  do polo inferior "como avulsão", sem falar em fragmento ósseo; coerente com o gabarito, mas não cobrar a
+  presença de osso.
+- **Não estão no capítulo:** zona hipovascular de 1 a 2 cm (TARO 2018 e 2025); MANDELBAUM (TEOT 2024);
+  SCUDERI pelo nome (o retalho parcial rebatido é descrito sem epônimo); LCA em 25% no tendão patelar do
+  atleta (TARO 2024; o capítulo só manda procurar o LCA); LPFM como principal fator de recidiva (o
+  capítulo diz principal restritor); sinal de BASSETT; luxação intra-articular; tuberosidade da tíbia na
+  criança.
+- **Lacunas com cara de prova:** LCP em 25% das fraturas operadas por golpe direto; 150 mL no teste de
+  carga salina; bipartida em 8% e quase sempre bilateral; vertical em 20%, faceta lateral; transversas
+  desviadas sem cominução em 52%; até 35% das transversas sem desvio; axial com joelho a 45 graus e raio a
+  30 graus; vascularização retrógrada (entra pelo terço médio anterior e polo distal); seis artérias
+  (genicular suprema da femoral superficial no canal de HUNTER, quatro geniculares, recorrente tibial
+  anterior 1 cm abaixo da tibiofibular proximal); LPFM com mais de metade da contenção medial, do bordo
+  superomedial da patela ao fêmur entre o epicôndilo e o tubérculo adutor; WIBERG I a III e JAEGERHUT;
+  deslocamento da patela de 45 graus à extensão, até 50% mais força, últimos 15 graus com o dobro do
+  torque; patelofemoral de 3 a 7 vezes o peso; banda de tensão com fios de 1,6 mm a 5 mm da cortical
+  anterior; parafuso canulado com 50% menos implantes sintomáticos; reoperação de 33,6% (DY); retirada de
+  material até 40%; fragmento proximal de pelo menos três quartos; patelectomia total com perda de 49% da
+  força (SUTTON) e avanço do VMO (GÜNAL); exposta em 6% a 9%, infecção até 10,7%; pseudartrose até 15%;
+  artrose de 50% a 75%; luxação aguda de 29 por 100.000 entre 10 e 17 anos, recidiva de 15% a 44%,
+  cartilagem lesada em até 95%, RM se hemartrose grande; reparo tendíneo nas primeiras 2 a 3 semanas;
+  retração de até 5 cm; cerclagem 1 cm atrás da tuberosidade a 30 graus; patela alta e baixa na
+  radiografia; esporte em 4 a 6 meses; manipulação se não chegar a 90 graus em 8 semanas.
+
+**Destino.** Tema Trauma, subtema "Fratura da patela e lesão do aparelho extensor", o mesmo das cópias
+oficiais em trauma (`trauma-1049`, `trauma-1058`, `trauma-1020`). Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 60** (Patellar Fractures and Dislocations and Extensor Mechanism Injuries;
+Lim, Chalmers e Scolaro): `trauma-1643` a `trauma-1654`, 12 questões, sem figura (as do livro não têm
+licença), sem caso clínico, gabarito A3/B3/C3/D3, mediana do comentário de 4.490 caracteres, cada
+comentário fechado com "Por que esta questão foi criada".
+- **Gêmeas dos carimbados:** hemartrose que impede o exame, com punção e anestésico (TARO 2021);
+  axial a 45 e 30 graus (TEOT 2021, TARO 2014); carga salina com 150 mL (TARO 2022); bipartida em 8% e
+  bilateral (TARO 2024, TEOT 2024); luxação lateral com borda inferomedial e côndilo lateral (TARO 2026,
+  sem ano, TEOT 2022); quadricipital acima de 40 anos com parte da extensão, espelho do TEOT 2025 (TARO
+  2016 e 2013); cerclagem a 30 graus (sem ano); retração de 5 cm com CODIVILLA contra SCUDERI (TARO 2016,
+  TEOT 2023, TARO 2008).
+- **Novas e por projeção:** banda de tensão comprimindo a superfície articular com a flexão (TARO 2006 e
+  2009, sem gabarito; TARO 2022 e 2023 em conceitos básicos); LCP em 25% das fraturas por golpe direto
+  (número vizinho do TARO 2024); deslocamento da patela de 45 graus à extensão (TARO 2007 e 2012);
+  patela baixa no quadricipital e alta no patelar.
+- **Pendências:** vascularização retrógrada, WIBERG, patelectomia parcial e total, cesta (basket plate),
+  periprotética, pseudartrose, artrose e avulsão da tuberosidade no adulto ficaram fora para manter a
+  média de 10 a 12.
+
+## Fratura do fêmur distal (engenharia reversa em 17/10/2026; Rockwood cap. 58)
+
+**Recorte.** `mapear_banca.py` com regex de fêmur distal, supracondiliana, intercondiliana, HOFFA,
+côndilo femoral, LISS, haste retrógrada, 33A/B/C, periprotética acima de ATJ, lâmina e DCS, subtema
+"Fratura do fêmur distal", tema Trauma: 33 oficiais (32 de TEOT/TARO com quatro alternativas), mais
+uma busca no texto de todos os temas. Depois da leitura, **cerca de 20 itens são de fêmur distal**:
+TARO 2026 (1), TEOT 2025 (1, mais o joelho flutuante), TEOT 2023 (1), TEOT 2022 (1, joelho
+flutuante), TARO 2022 (1), TARO 2021 (1), TARO 2018 (1), TARO 2016 (2), TARO 2013 (1), TARO 2011 (1),
+TARO 2008 e TARO 2006 (sem gabarito no acervo), 4 sem ano, CET-PR, SBOT-SP e ENARE R4 2024 (2,
+cinco alternativas). O restante do recorte é osteocondrite, LCA, coluna e úmero distal. Enunciado
+mediano de 95 caracteres, alternativa de 29; nove terminam em dois-pontos; nenhuma imagem de fêmur
+distal; um caso clínico (ENARE). Simulados já existentes: `conceitos-basicos-0331`, `0332` e `0392`
+(placa em ponte do fêmur distal, do capítulo 1). Nenhum lote dedicado ao capítulo 58.
+
+**Fatos carimbados (com prova e ano):**
+- **Forças deformantes:** quadríceps, posteriores da coxa e adutores encurtam e levam ao varo (sem
+  ano, `trauma-0262`); gastrocnêmio e ápice posterior (sem ano, `trauma-0295`); varo com angulação
+  posterior do fragmento distal (CET-PR, `trauma-0700`); fragmento distal na consolidação viciosa
+  (TARO 2008, `trauma-1138`, sem gabarito).
+- **Ligamento associado:** incomum, LCA o mais atingido (TARO 2018, `trauma-0048`; sem ano,
+  `trauma-0913`); fragmento osteocondral do LCA reparado na fixação (ENARE 2024, `trauma-1004`).
+- **Vascular:** risco poplíteo menor que na luxação do joelho e na tíbia proximal (TARO 2021,
+  `trauma-0067`); fixador externo antes do reparo vascular (TARO 2026, `trauma-0986`).
+- **Classificação AO e implante:** haste contraindicada na 33C1 (TARO 2022, `trauma-0241`, ver
+  divergência); 33-B3 com parafusos de compressão (TARO 2013, `trauma-1088`); consolidação viciosa do
+  côndilo medial em rotação medial, flexão e varo (TEOT 2025, `trauma-0747`).
+- **Técnica e complicações:** placa bloqueada lateral em rotação interna de 10 graus (TEOT 2023,
+  `trauma-0335`); perda de movimento como complicação mais comum (TARO 2016, `trauma-0120`);
+  desalinhamento acima de 5 a 10 graus (SBOT-SP, `trauma-0554`); desvantagens da haste retrógrada
+  (sem ano, `trauma-0315`, com EXCETO).
+- **Epidemiologia e joelho flutuante:** jovens homens e idosas (TARO 2011, `trauma-0850`); exposta em
+  cerca de 60% no joelho flutuante (TARO 2016, `trauma-0115`); nervo fibular na tração (TEOT 2022,
+  `trauma-0199`); exposta da tíbia e intra-articular como pior evolução (TEOT 2025, `trauma-0748`).
+- **Periprotética:** haste retrógrada como opção e RORABECK (sem ano, `joelho-0090`); SU tipo II
+  (ENARE 2024, `trauma-1016`).
+
+**Tendência.** Uma questão por prova desde 2021, alternando técnica (rotação da placa em 2023,
+sequência vascular em 2026), classificação e implante (2022, 2025) e associadas (2018, 2021). As
+perguntas antigas de epidemiologia (2011) e de complicação (2016) sumiram. HOFFA, haste retrógrada
+em detalhe, dupla placa, prótese de fêmur distal e pós-operatório ainda não caíram no TEOT/TARO.
+
+**Forma.** "Na fratura supracondiliana do fêmur...", "Na fratura da extremidade distal do fêmur...",
+"No tratamento da fratura...". Pares 2 por 2 em 13 dos 32 (comum ou incomum com LCA ou LCP; maior ou
+menor que luxação e tíbia; interna ou externa com 10 ou 30 graus; reparo ou fixação com externa ou
+interna). Gabarito do recorte: A7, B9, C10, D5.
+
+**Como o examinador pensa.** Pergunta o "mais comum" (ligamento, complicação), a ordem de uma
+conduta (fixador e vaso), o tipo AO ligado a um implante e um número técnico (10 graus, 5 a 10
+graus). Os distratores trocam o lado (LCA e LCP, varo e valgo, interna e externa), invertem a ordem
+(reparo antes da fixação; sóleo em cima e hiato embaixo no ENARE) ou usam o número vizinho (30 graus).
+
+**Divergências e lacunas.**
+- TARO 2022 (`trauma-0241`, haste contraindicada na 33C1): a tabela 58-1 indica haste retrógrada
+  no tipo C após fixar a articulação e a figura 58-29 mostra uma C1 tratada com haste; a haste não
+  aparece no tipo B. O comentário oficial já marca a alternativa C (33B2) como defensável. A gêmea
+  (`trauma-1640`) cobrou o capítulo e explicou a banca.
+- TARO 2016 (`trauma-0120`, perda de movimento como complicação mais comum): o capítulo chama a
+  rigidez de complicação comum, mas cita a revisão de KOSO com a pseudartrose como a mais frequente
+  (4,7%). A gêmea (`trauma-1642`) perguntou os números de prevenção, não o "mais comum".
+- TEOT 2023 (`trauma-0335`, rotação interna de 10 graus): o capítulo não fala em rotação da placa;
+  o texto dá 15 graus de inclinação da face lateral e a figura 58-4C, 10 graus (25 graus na medial
+  nos dois). Não cobrar o número lateral.
+- Sem ano (`trauma-0898`, flexão do joelho de 35 a 50 graus para o ponto de entrada da haste
+  retrógrada, tema da diáfise): o capítulo 58 apoia o joelho a 20 ou 30 graus no posicionamento e não
+  dá outro intervalo.
+- TARO 2006 (`trauma-1181`, exposição posteromedial, certo ou errado sem gabarito): o capítulo diz
+  que a ferida é quase sempre anterior, proximal à patela.
+- Incisão da haste: 4 a 5 cm no texto e 3 a 4 cm na legenda da figura 58-26; não cobrar.
+- Lacunas com cara de prova: zona supracondiliana nos 15 cm distais; valgo anatômico de 6 a 7 graus
+  (2 a 10); HOFFA em 38% a 40% das intercondilianas; vasos no hiato a 10 a 12 cm e cruzando a linha
+  média a 18,8 cm do tubérculo adutor; placa com 8 ou mais furos acima do foco e no máximo 50% dos
+  furos ocupados; oito corticais de cada lado; lag before you lock; ponta da lâmina de 95 graus 5 a
+  10 mm aquém da cortical medial e entrada 1,5 a 2,5 cm acima da articulação; fixação em 24 a 48 h e
+  fixador se o atraso passar de 24 a 36 h; mortalidade com atraso acima de 2 dias no idoso; carga
+  tipo A em 3 a 6 semanas e articular em 10 a 12; ponte cortical em qualquer incidência aos 4 meses
+  (STROTMAN); retirada do material após 18 a 24 meses; falhas por material (aço na zona de trabalho,
+  titânio LISS na diáfise, VA-LCP na junção distal); FCL; dupla placa mais rígida que haste e placa;
+  prótese de fêmur distal no idoso 33C; infecção até 3% a 5%; pseudartrose com obesidade, exposta,
+  diabetes, infecção e placa de aço; periprotética 0,3% a 2,5% após primária.
+
+**Destino.** Tema Trauma, subtema "Fratura do fêmur distal", o mesmo das oficiais. Entram no filtro
+TEOT/TARO.
+
+**Aproveitamento do capítulo 58** (Distal Femur Fractures; Collinge e Roward): `trauma-1631` a
+`trauma-1642`, 12 questões, sem figura (as figuras do livro não têm licença), 1 caso clínico,
+gabarito A3/B3/C3/D3, mediana do comentário de 4.603 caracteres, cada comentário fechado com "Por
+que esta questão foi criada".
+- **Gêmeas dos carimbados:** forças deformantes em par (sem ano e CET-PR); conduta na ruptura
+  intrassubstancial do LCA (TARO 2018, sem ano, ENARE 2024); hiato do adutor e arco do sóleo, com a
+  inversão do ENARE (TARO 2021 e 2026); exposta em 5% a 10% com ferida anterior (TARO 2006); HOFFA
+  coronal com parafusos de anterior para posterior (TARO 2013); parafuso longo na cortical medial e
+  AP rodado de 20 a 25 graus (TEOT 2023); ponto de entrada da haste retrógrada (sem ano); tipo AO sem
+  haste, 33B2 (TARO 2022 e 2013); periprotética com componente solto (sem ano e ENARE 2024); rigidez
+  com 3 semanas e 90 graus (TARO 2016).
+- **Lacunas:** vasos no hiato a 10 a 12 cm na via medial; fio guia distal paralelo à articulação no
+  AP (5 a 8 graus de valgo da placa).
+- **Pendências:** prótese de fêmur distal, dupla placa e haste com placa, falhas por material, FCL,
+  oito corticais e 50% dos furos, prazos de fixação e mortalidade no idoso, retirada do material e
+  tratamento da pseudartrose ficaram para o resumo, para manter a média de 10 a 12.

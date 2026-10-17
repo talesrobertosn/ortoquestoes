@@ -1,6 +1,6 @@
 ---
 id: rockwood10-61-luxacao-joelho
-versao: 1
+versao: 2
 titulo: Luxação do joelho e lesão multiligamentar
 especialidade: trauma
 acesso: gratis
@@ -58,7 +58,7 @@ Quem tem doença arterial periférica pode ter índice baixo sem lesão aguda; n
 
 > Na prova: ITB **acima de 0,9** é normal e permite observar com **exames seriados** (na admissão, com 4 a 6 horas, 24 horas e 48 horas). ITB **abaixo de 0,9** pede **angiotomografia**.
 
-!questoes central=trauma-0298,trauma-0704
+!questoes central=trauma-0298,trauma-0704 treino=trauma-1619
 conceito: Na luxação do joelho, ITB acima de 0,9 tem valor preditivo negativo de 100% para lesão arterial importante; 0,91 está na faixa normal (0,91 a 1,3).
 como: O TEOT/TARO pediu o número do valor preditivo negativo; o CET-PR deu um ITB de 0,91, bem no limite, e ofereceu três condutas invasivas para quem achasse que o valor era anormal.
 armadilha: "Anormal e indica-se arteriografia": o corte é 0,9; 0,91 já é normal.
@@ -69,7 +69,7 @@ armadilha: Valores intermediários (40%, 60%, 80%): o estudo citado mostrou 100%
 
 A **angiotomografia** virou o exame de triagem: o contraste entra por uma veia do braço, a radiação é **um quarto** da arteriografia convencional e a sensibilidade e a especificidade ficam perto de 100%. A desvantagem é o contraste: se o paciente já recebeu contraste em tomografias de abdome e pelve, costuma-se esperar **4 a 6 horas**. A **arteriografia convencional**, antigo padrão-ouro, tem sensibilidade de 95%, especificidade de 93% e 5% a 7% de falso-positivos; é invasiva e cara, e hoje é usada sobretudo na sala pelo cirurgião vascular. Muitas lesões não ocluem a artéria: **lesões da íntima** são comuns, podem ser benignas e se acompanham com exames clínicos seriados.
 
-!questoes central=trauma-0802
+!questoes central=trauma-0802 treino=trauma-1620
 conceito: A lesão da poplítea na luxação anterior é por tração (estiramento da artéria fixa); na posterior, por compressão direta da tíbia.
 como: O TARO 2025 perguntou em que direção de luxação a lesão da poplítea é mais comum, com as quatro direções como alternativas.
 alerta: O gabarito oficial do TARO 2025 foi a luxação anterior. O Rockwood não diz qual direção lesa mais a poplítea; ele explica que a tração se associa à luxação anterior e a compressão, à posterior. A resposta da banca segue a ideia clássica de que a hiperextensão (luxação anterior) estira a artéria fixa; guarde o gabarito e o mecanismo do livro.
@@ -77,7 +77,7 @@ alerta: O gabarito oficial do TARO 2025 foi a luxação anterior. O Rockwood nã
 
 ## Tempo, fixador e fasciotomia
 
-Não restabelecer a perfusão em **6 a 8 horas** pode levar a até **86% de amputação**. Depois de reconhecida, a lesão deve ser **revascularizada** (para evitar claudicação e novos eventos isquêmicos), e **nenhum reparo ou reconstrução ligamentar** deve ser feito, nem agudo nem tardio, **sem uma árvore arterial íntegra**. O **fixador externo** é auxiliar essencial quando há reparo vascular: é colocado logo antes da ponte, para que a anastomose cicatrize sem episódios de subluxação. Depois de revascularizar, examine os compartimentos; quando necessário, a fasciotomia dos quatro compartimentos é feita com **duas incisões de 15 a 20 cm**, medial e lateral, com uma ponte de pele de **pelo menos 7 cm**.
+Não restabelecer a perfusão em **6 a 8 horas** pode levar a até **86% de amputação**. Depois de reconhecida, a lesão deve ser **revascularizada** (para evitar claudicação e novos eventos isquêmicos), e **nenhum reparo ou reconstrução ligamentar** deve ser feito, nem agudo nem tardio, **sem uma árvore arterial íntegra**. O **fixador externo** é auxiliar essencial quando há reparo vascular: é colocado logo antes da ponte, para que a anastomose cicatrize sem episódios de subluxação. Depois de revascularizar, examine os compartimentos; quando necessário, a fasciotomia dos quatro compartimentos é feita com **duas incisões de 15 a 20 cm**, medial e lateral, com uma ponte de pele de **pelo menos 7 cm**. Para o reparo arterial, o membro fica um pouco fletido e em rotação externa, para o cirurgião vascular chegar à artéria por via posteromedial; antes do reparo, uma radioscopia rápida com estresse em varo, valgo e gaveta posterior já registra o padrão de instabilidade. Depois da fasciotomia, o paciente volta à sala a cada **48 a 72 horas** para nova limpeza; as feridas são fechadas quando possível, com enxerto de pele parcial ou com a técnica da "sandália romana" (alças vasculares cruzadas presas por grampos e apertadas aos poucos).
 
 No algoritmo dos autores, lesão vascular que limita o fluxo e síndrome compartimental são **emergências**; lesão nervosa (indicação relativa), lesão do aparelho extensor e luxação exposta são **urgências**.
 
@@ -100,7 +100,7 @@ O exemplo do próprio capítulo: **KD III-MC** é a ruptura dos dois cruzados e 
 
 > Na prova: o número romano conta **ligamentos**; as letras contam o que veio junto (M ou L para o lado do colateral, **C** para artéria, **N** para nervo).
 
-!questoes central=trauma-0125,trauma-0222,trauma-0745 relacionadas=joelho-0309
+!questoes central=trauma-0125,trauma-0222,trauma-0745 relacionadas=joelho-0309 treino=trauma-1621
 conceito: KD II é a lesão dos dois cruzados com os colaterais íntegros; o sufixo C acrescenta lesão arterial, então KD IIC são os dois cruzados com a artéria poplítea.
 como: O TARO 2016 e o TEOT 2021 pediram a definição do KD II (por descrição e ao contrário); o TEOT 2025 pediu o KD IIC, misturando nas alternativas o KD III (um colateral) com e sem a artéria. No TARO 2006 (certo ou errado, sem gabarito oficial registrado no acervo), a afirmação de que a luxação rompe necessariamente os dois cruzados é desmentida pelo próprio KD I, a luxação com o cruzado posterior funcionando.
 armadilha: "Um colateral e um cruzado": lembra o KD I (cruzado posterior funcionando, colateral variável), não o KD II.
@@ -115,7 +115,7 @@ O canto posterolateral raramente se lesa sozinho (**menos de 2%** das lesões ag
 - **Tendão do poplíteo**: o músculo nasce na face posteromedial da tíbia proximal, vira tendão (cerca de 54 mm), passa pelo **hiato poplíteo**, entra na articulação e se insere no sulco poplíteo do côndilo lateral, **à frente e abaixo** da origem do colateral fibular (18,5 mm). É um **rotador interno dinâmico** da tíbia e estabiliza o menisco lateral.
 - **Ligamento popliteofibular**: continuação do tendão do poplíteo até a fíbula, em **Y** (divisões anterior e posterior; a **posterior é a mais forte** e é a que se reconstrói). É um estabilizador **estático** contra **varo, rotação externa e translação posterior** da tíbia.
 
-Completam o canto o **ligamento fabelofibular** (borda distal do braço capsular do bíceps; a fabela é óssea em 10% a 20% dos joelhos), a cápsula posterolateral, o **bíceps femoral** e o **trato iliotibial** (que tem três camadas e cuja camada superficial raramente se rompe nessas lesões). O braço direto da cabeça curta do bíceps pode arrancar a cabeça da fíbula, um achado comum nas luxações **anteromediais** e nas lesões graves em varo.
+Completam o canto o **ligamento fabelofibular** (borda distal do braço capsular do bíceps; a fabela é óssea em 10% a 20% dos joelhos), a cápsula posterolateral, o **bíceps femoral** e o **trato iliotibial** (que tem três camadas e cuja camada superficial raramente se rompe nessas lesões). O braço direto da cabeça curta do bíceps pode arrancar a cabeça da fíbula, um achado comum nas luxações **anteromediais** e nas lesões graves em varo. O fabelofibular fica mais tenso em **extensão completa**, e a **artéria genicular inferior lateral** corre pela cápsula posterior na borda superior do menisco lateral, passando entre o popliteofibular e o fabelofibular no alto do estiloide da fíbula: é um vaso que aparece na dissecção do canto.
 
 !figura 61-14
 Anatomia posterolateral do joelho: colateral lateral, ligamento popliteofibular, tendão do poplíteo e cabeça lateral do gastrocnêmio.
@@ -150,7 +150,7 @@ A base biomecânica do teste está no capítulo. Cortar o canto com o **cruzado 
 
 > Na prova: rotação externa aumentada **só a 30°** sugere canto posterolateral isolado; **a 30° e a 90°**, canto **e** cruzado posterior.
 
-!questoes central=trauma-1030,joelho-0222 relacionadas=joelho-0308
+!questoes central=trauma-1030,joelho-0222 relacionadas=joelho-0308 treino=trauma-1622
 conceito: Rotação externa aumentada a 30° e a 90° de flexão indica lesão combinada do cruzado posterior e do canto posterolateral.
 como: O TARO 2025 deu o teste positivo nos dois ângulos; o TARO 2011, a diferença de 10° com o joelho a 90°. No TARO 2006 (certo ou errado, sem gabarito oficial registrado no acervo), a afirmação de que o cruzado posterior isolado aumenta a rotação a 30° e a 90° contraria a biomecânica do capítulo: o aumento em todos os ângulos exige o canto lesado junto.
 armadilha: Canto posterolateral isolado: aumenta a rotação sobretudo a 30°, menos a 90°.
@@ -165,7 +165,13 @@ Os padrões variam: em 89 pacientes com os dois cruzados rotos, o colateral fibu
 
 Aqui o capítulo é taxativo. Reparar sozinho o lado lateral **falha demais**: num estudo prospectivo com 57 pacientes, a falha foi de **37% no reparo** contra **9% na reconstrução**; em outro, com 28 pacientes, **40%** contra **6%**. Um estudo do grupo MOON (2019, 34 pacientes, 6 anos) mostrou resultados relatados pelo paciente equivalentes, mas nenhum desses estudos é randomizado. A conclusão atual: **reconstruir na maioria**, deixando o reparo para **avulsões ósseas** que aceitam fixação.
 
-O consenso Delphi de 2019 (27 especialistas) concluiu que a lesão aguda do canto deve ser **reconstruída em 2 a 3 semanas**, que se reconstroem **só as estruturas rotas** (se todas estiverem, reconstrução anatômica completa) e que procedimentos **híbridos** (reconstruir as principais e reparar as secundárias, como bíceps, cápsula e trato iliotibial) dão bons resultados. Reconstruir **cedo** foi melhor que tarde: 72% contra 44% de resultados bons ou excelentes, com "tardio" definido como mais de 3 semanas.
+O consenso Delphi de 2019 (27 especialistas) concluiu que a lesão aguda do canto deve ser **reconstruída em 2 a 3 semanas**, que se reconstroem **só as estruturas rotas** (se todas estiverem, reconstrução anatômica completa) e que procedimentos **híbridos** (reconstruir as principais e reparar as secundárias, como bíceps, cápsula e trato iliotibial) dão bons resultados. Reconstruir **cedo** foi melhor que tarde: 72% contra 44% de resultados bons ou excelentes, com "tardio" definido como mais de 3 semanas. Na técnica dos autores, a ruptura no meio do ligamento é reparada quando dá, mas **sempre com uma reconstrução** junto; as avulsões proximais do colateral fibular e do poplíteo também tiveram resultados muito ruins com reparo isolado e recebem reforço. As fitas sintéticas de reforço podem reabrir essa discussão, por permitirem mover cedo sem afrouxar o reparo.
+
+!questoes treino=trauma-1626
+conceito: No canto posterolateral agudo, reconstruir (não só reparar) e fazê-lo em 2 a 3 semanas; o reparo isolado fica para a avulsão óssea fixável.
+como: A banca pediu as estruturas a reconstruir (TARO 2009) e usou o colateral lateral desinserido como distrator da cirurgia tardia (SBOT-SP); o simulado cruza a conduta com o prazo do consenso.
+armadilha: Esperar 6 a 8 semanas: é o prazo de cicatrização do colateral medial avulsionado do fêmur, não do lado lateral.
+!fim
 
 ## A técnica dos autores e a de LaPrade
 
@@ -211,6 +217,17 @@ armadilha: Menisco medial: os meniscofemorais são do menisco lateral.
 armadilha: Translação anterior: eles acompanham o cruzado posterior e seguram a translação posterior.
 !fim
 
+## A cápsula posterior e o cisto de Baker
+
+A cápsula posterior nasce na margem proximal dos côndilos femorais e se prende abaixo do planalto; medialmente continua com o colateral medial superficial e o oblíquo posterior. Entre a **cabeça medial do gastrocnêmio** e a inserção direta do **semimembranáceo** costuma haver um defeito de tamanho variável na cápsula posteromedial, provável origem do **cisto de Baker**. O **ligamento poplíteo oblíquo** é um espessamento da cápsula que nasce medialmente da confluência de uma expansão do semimembranáceo com um braço do oblíquo posterior, mede cerca de 48 mm e se alarga de 9,5 para 16,4 mm até a inserção lateral, na fabela e na tíbia posterior logo lateral ao cruzado posterior; em 20 joelhos dissecados, nunca se prendeu ao côndilo femoral lateral.
+
+!questoes central=joelho-0256
+conceito: O cisto de Baker sai do defeito da cápsula posteromedial entre a cabeça medial do gastrocnêmio e o semimembranáceo.
+como: O TEOT/TARO (sem ano) ofereceu as cabeças medial e lateral do gastrocnêmio combinadas com o semimembranáceo ou com o sóleo.
+armadilha: Cabeça lateral do gastrocnêmio: o defeito capsular que o capítulo descreve é posteromedial.
+armadilha: Sóleo: não entra no defeito capsular que o capítulo descreve, que fica entre o gastrocnêmio medial e o semimembranáceo.
+!fim
+
 ## Função
 
 O cruzado posterior dá a maior parte da restrição à translação posterior em todos os ângulos e **95%** dela entre 30° e 90°. É restritor **secundário** do varo (só aumenta o varo se o canto também estiver cortado), do valgo e das rotações. Um detalhe que a prova pode usar: num estudo em cadáver, o **ligamento poplíteo oblíquo** foi o principal restritor ligamentar da **hiperextensão**; cortá-lo aumentou a hiperextensão tanto quanto, ou mais que, cortar os dois cruzados juntos.
@@ -237,6 +254,8 @@ armadilha: Semitendíneo e grácil: são tendões da pata de ganso, anteriores e
 
 Os autores fazem **duplo feixe** com aloenxerto de **tendão calcâneo** (Aquiles), fixação suspensória e os túneis femorais por dentro do côndilo medial. A regra de tensão é a dos feixes: **anterolateral a 90° de flexão**, **posteromedial em extensão completa**. Transtibial e inlay dão resultados parecidos **se o túnel tibial sair baixo, 1,5 a 2 cm abaixo da linha articular**: assim o enxerto transtibial fica na mesma posição do inlay e se elimina a curva aguda (**killer turn**) que alonga ou rompe o enxerto. O inlay fica para o obeso com luxação de baixíssima energia e para KD IV em que a via medial já está aberta.
 
+Sobre **duplo contra feixe único**: há forte evidência de laboratório a favor do duplo feixe, e metanálises recentes sugerem vantagem clínica (menos translação nas radiografias com estresse, menos rotação externa a 90° e mais IKDC objetivo normal ou quase normal), mas a maioria dos especialistas ainda não considera a evidência clínica suficiente para preferir uma técnica. O duplo feixe vira feixe único quando se reconstrói só o anterolateral.
+
 Para não lesar o feixe neurovascular: perfurar com o joelho a **90° de flexão** (o feixe cai para trás), usar guia ou cureta para que o fio não avance demais e conferir na radioscopia.
 
 ## O que costuma sobrar depois
@@ -245,7 +264,7 @@ Numa série de 35 reconstruções combinadas dos dois cruzados, o Lachman e o pi
 
 > Na prova: o problema mais comum depois de reconstruir o cruzado posterior é a **frouxidão posterior residual**.
 
-!questoes central=joelho-0027,joelho-0269,trauma-1048 relacionadas=joelho-0013
+!questoes central=joelho-0027,joelho-0269,trauma-1048 relacionadas=joelho-0013 treino=trauma-1628
 conceito: A reconstrução do cruzado posterior restaura bem menos a gaveta posterior do que a do cruzado anterior restaura o Lachman; a frouxidão posterior residual é o problema mais comum.
 como: O TARO cobrou a mesma ideia em 2013, 2016 e 2023, com perda de flexão, dor, lesão nervosa e instabilidade posterolateral como distratores.
 armadilha: Perda de flexão: a rigidez existe, mas, quando a instabilidade residual está entre as alternativas, é ela que a banca considera a mais comum.
@@ -299,7 +318,7 @@ Medem, com objetividade, a diferença de frouxidão entre os lados. Os autores f
 
 A legenda da figura de estresse em valgo acrescenta o dado que caiu na prova: abertura medial de **mais de 10° em extensão completa** indica lesão do cruzado anterior, do posterior, do colateral medial e do canto posteromedial. A lógica é que, em extensão, a cápsula posterior e os cruzados ajudam a segurar o valgo; se o joelho abre **mesmo estendido**, a lesão passou do colateral.
 
-!questoes central=joelho-0172,trauma-0556
+!questoes central=joelho-0172,trauma-0556 treino=trauma-1630
 conceito: No estresse em varo, cerca de 3 mm a mais que o outro lado indica colateral fibular isolado (acima de 4 mm, o canto junto); no valgo, abertura de mais de 10° em extensão indica cruzados, colateral medial e canto posteromedial.
 como: O CET-PR deu 3 mm (o 2,7 mm de LaPrade arredondado) e ofereceu combinações com o poplíteo e o popliteofibular; o SBOT-SP perguntou a posição do joelho em que a abertura de 10° tem esse significado.
 armadilha: Colateral fibular com todas as estruturas do canto: exige mais de 4 mm.
@@ -351,7 +370,7 @@ Quando chega reduzido, a pergunta é se ele luxou e se ainda "luxa". O exame é 
 
 Procure uma **depressão na pele medial** (covinha, ou "dimple"): ela indica luxação **irredutível**, que exige **redução aberta**. Acontece na luxação **posterolateral** com valgo extremo: o **côndilo femoral medial atravessa a cápsula** em direção anteromedial, como um botão numa casa, e as partes moles mediais ficam presas na articulação. A estrutura interposta **mais comum é a cápsula medial**; o **colateral medial** também pode encarcerar. A cirurgia é **de emergência**, por artrotomia na linha média com retalhos amplos ou por incisão medial reta direto sobre o retináculo perfurado; depois da redução, confirme na radioscopia que a articulação ficou reduzida e estável.
 
-!questoes central=trauma-0105,trauma-1072
+!questoes central=trauma-0105,trauma-1072 treino=trauma-1623
 conceito: Na luxação irredutível (posterolateral), o côndilo medial atravessa a cápsula medial, e a cápsula e o colateral medial ficam interpostos; a covinha medial na pele é o sinal.
 como: O TARO 2017 pediu as estruturas interpostas, com estruturas laterais (colateral fibular, trato iliotibial, bíceps) e a pata de ganso como distratores; o TEOT 2023 deu a covinha e pediu o que se interpõe.
 armadilha: Cápsula e colateral fibular: o encarceramento é medial, onde está o côndilo que perfura.
@@ -362,19 +381,19 @@ armadilha: Menisco medial ou fragmento osteocondral: podem bloquear uma reduçã
 Luxação irredutível do joelho: covinha na pele medial e, logo ao incisar, a superfície do côndilo femoral medial atravessando o retináculo medial.
 !fim
 
-Os resultados da luxação irredutível tratada com técnica moderna e movimento precoce podem ser bons: numa série de 21 casos crônicos, o arco médio foi de 127° em 6,9 anos.
+Depois da redução, os autores liberam o arco de movimento cedo e planejam as reconstruções conforme o padrão de lesão. Os resultados da luxação irredutível tratada com técnica moderna e movimento precoce podem ser bons: numa série de 21 casos crônicos, o arco médio foi de 127° em 6,9 anos.
 
 # O nervo fibular comum {radar=confirmado}
 
 O nervo fibular comum é extremamente vulnerável porque também está **preso**: em cima, no **colo da fíbula**, e embaixo, no **septo intermuscular**. A lesão é quase sempre por **tração**, ao longo de um segmento longo do nervo, e se associa sobretudo à **lesão do canto posterolateral**. Fica **profundo e posterior ao tendão do bíceps** e contorna a cabeça da fíbula **1,5 a 2 cm abaixo** da ponta do estiloide, no colo.
 
-- Frequência: paralisia fibular em cerca de **25%** em grandes séries; lesão neurológica em geral **até 40%**; lesão completa motora e sensitiva em **19%** em algumas séries.
+- Frequência: paralisia fibular em cerca de **25%** em grandes séries; lesão neurológica em geral **até 40%**; lesão completa motora e sensitiva em **19%** em algumas séries. Numa amostra de 357 joelhos multiligamentares, 19% tiveram paralisia nervosa, com **pior arco final** e menor retorno ao trabalho.
 - Fatores de risco: **sexo masculino**, **índice de massa corporal alto** e **fratura da cabeça da fíbula**.
 - Recuperação: cerca de **metade** se recupera, a maioria das parciais. Na série da Mayo (27 pacientes), **38%** das paralisias completas recuperaram dorsiflexão contra a gravidade, contra **83%** das parciais. Numa revisão de 214 paralisias, **38,4%** das completas tiveram recuperação funcional (força de pelo menos 3) e **87,3%** das parciais recuperaram força plena. **Idade mais jovem** foi o único fator preditivo de recuperação.
 
 As paralisias densas obrigam a usar órtese tornozelo-pé para sempre ou a operar para devolver a dorsiflexão (transferências). O que não pode faltar desde o início: **órtese e mobilização do pé e do tornozelo**, porque o **equino** que se instala atrapalha a marcha e pode impedir transferências futuras. A fratura da cabeça da fíbula, muitas vezes associada à lesão do nervo, pede intervenção precoce (parafuso longo de 4,5 mm com arruela, de 80 a 100 mm).
 
-!questoes central=joelho-0060 treino=joelho-0373
+!questoes central=joelho-0060 treino=joelho-0373,trauma-1629
 conceito: Na lesão do cruzado posterior com o canto posterolateral, o nervo mais lesado é o fibular comum, preso no colo da fíbula e estirado em varo.
 como: O TEOT 2021 deu as quatro opções vizinhas (tibial, fibular comum, profundo e superficial); a lesão acontece antes da divisão, no tronco comum.
 armadilha: Fibular profundo ou superficial: são ramos depois do colo; a tração pega o tronco comum.
@@ -408,9 +427,16 @@ A pata de ganso e os isquiotibiais mediais são **estabilizadores dinâmicos**; 
 
 ## Padrões e a lesão de Stener do joelho
 
-Numa série de 63 luxações, o colateral medial estava lesado em **44%**, quase sempre por **avulsão distal**. Na ressonância de 27 luxações, alguma estrutura do canto posteromedial estava lesada em **81%** e o colateral superficial em **63%**. Distinguir a lesão **isolada do colateral** da lesão do **canto posteromedial** é a chave: a do canto em geral precisa de cirurgia, e a do colateral na **tíbia** também pode se beneficiar.
+Numa série de 63 luxações, o colateral medial estava lesado em **44%**, quase sempre por **avulsão distal**. Na ressonância de 27 luxações, alguma estrutura do canto posteromedial estava lesada em **81%** e o colateral superficial em **63%**. Em 93 pacientes operados por instabilidade rotatória anteromedial sintomática, o **oblíquo posterior** estava lesado em **99%**, as expansões do semimembranáceo em 70%, o colateral superficial em 33% e o profundo em 25%. Distinguir a lesão **isolada do colateral** da lesão do **canto posteromedial** é a chave: a do canto em geral precisa de cirurgia, e a do colateral na **tíbia** também pode se beneficiar.
 
-A **lesão tipo Stener**: o colateral superficial é arrancado da tíbia e a **pata de ganso se interpõe** entre ele e o osso, como os adutores no polegar. O ligamento não consegue cicatrizar no lugar, e o reparo agudo é indicado. No extremo, a **"lesão de Stener definitiva"** prende o colateral sob uma fratura da borda do planalto medial: solta-se o ligamento, repara-se e fixa-se a fratura.
+A **lesão tipo Stener**: o colateral superficial é arrancado da tíbia e a **pata de ganso se interpõe** entre ele e o osso, como os adutores no polegar. O ligamento não consegue cicatrizar no lugar, e o reparo agudo é indicado. No extremo, a **"lesão de Stener definitiva"** prende o colateral sob uma fratura da borda do planalto medial: solta-se o ligamento, repara-se e fixa-se a fratura. Na técnica dos autores, a avulsão distal é abordada por incisão medial de 4 a 6 cm na borda posteromedial da tíbia, os tendões da pata são afastados e o colateral é fixado com âncoras em ponte de suturas, tensionado em rotação neutra e 30° de flexão; o pivô central e o lado lateral ficam para um segundo tempo. A avulsão proximal é localizada na radioscopia em perfil (logo à frente do cruzamento da linha da cortical posterior do fêmur com a linha de Blumensaat) e fixada com parafuso e arruela dentada.
+
+!questoes treino=trauma-1624
+conceito: Na lesão tipo Stener do joelho, a pata de ganso fica entre o colateral medial superficial arrancado da tíbia e o osso; o reparo é agudo.
+como: A banca cobrou a interposição medial da luxação irredutível (cápsula); o simulado separa as duas interposições e as condutas.
+armadilha: Cápsula medial: é a interposição da luxação irredutível, não da lesão tipo Stener.
+armadilha: Órtese articulada: é para a ruptura parcial isolada do colateral superficial, que cicatriza no lugar.
+!fim
 
 !figura 61-30
 Ressonância coronal mostrando a lesão tipo Stener distal do colateral medial.
@@ -425,7 +451,7 @@ Trinta e cinco especialistas, pelo método Delphi (consenso com 75% de concordâ
 - cruzado anterior com canto posteromedial: se, depois de **4 a 8 semanas** de órtese, sobrar **menos de 3 mm** de frouxidão em valgo, reconstrói-se só o cruzado anterior, tardiamente; com **mais de 3 mm**, reconstroem-se os dois;
 - **três ligamentos** (cruzado anterior, posterior e canto posteromedial): reconstrução **aguda**.
 
-Para o lado medial, reparo e reconstrução tiveram resultados satisfatórios numa revisão, mas numa série de 73 joelhos luxados a falha foi de **20% no reparo** contra **4% na reconstrução**. A maioria decide pela **localização da lesão, frouxidão residual e lesões associadas**.
+Para o lado medial, reparo e reconstrução tiveram resultados satisfatórios numa revisão, mas numa série de 73 joelhos luxados a falha foi de **20% no reparo** contra **4% na reconstrução**. A maioria decide pela **localização da lesão, frouxidão residual e lesões associadas**. As grandes rupturas mediais, com desinserção meniscocapsular e lesão distal do colateral e do canto posteromedial, tiveram melhores resultados quando reparadas em **10 a 14 dias**, com reconstrução simultânea do colateral.
 
 # Tratamento {radar=confirmado}
 
@@ -433,14 +459,14 @@ Até pouco tempo, o tratamento era **imobilizar 8 a 12 semanas**. Hoje a cirurgi
 
 ## Sem cirurgia
 
-- **Indicações (relativas):** doenças ou lesões graves que impedem uma cirurgia extensa ou a anestesia; imaturidade esquelética (muitas vezes ainda se opera).
+- **Indicações (relativas):** doenças ou lesões graves que impedem uma cirurgia extensa ou a anestesia; imaturidade esquelética (muitas vezes ainda se opera, mas as montagens com vários túneis tibiais aumentam muito o risco de distúrbio do crescimento).
 - **Contraindicações relativas:** luxação **exposta**, **lesão vascular**, luxação **irredutível**, **síndrome compartimental** e frouxidão multiligamentar com **subluxação** da articulação.
 
 Reduz-se, observa-se o vaso, o nervo e os compartimentos e, com o joelho concêntrico, imobiliza-se **em extensão completa** com gesso ou tala longa por **pelo menos 3 semanas**, com um coxim atrás da tíbia se o cruzado posterior estiver muito lesado (para a tíbia não cair para trás). A imobilização pode ir até **6 semanas**; **mais de 6 semanas não é recomendado**. A ideia é "titular" a rigidez: o bastante para o joelho ficar reduzido, sem perder um arco funcional.
 
 ## Fixador externo
 
-É **essencial** com **reparo vascular**; útil (não obrigatório) com feridas extensas que exigem várias limpezas e para proteger um reparo do quadríceps ou do tendão patelar. Os autores **não recomendam o fixador de rotina** depois da redução: infecção de pino é comum e pode colonizar o envelope de partes moles que vai receber os enxertos. Os pinos devem ficar **fora da articulação**: na tíbia, **anteromedial e abaixo** dos futuros túneis dos cruzados; no fêmur, **anterolateral e a mais de um palmo** acima do polo superior da patela (para não entrar na bolsa suprapatelar e para poupar o quadríceps). O risco de trombose com fixador transarticular foi de 2,1%, parecido com o de quem não usa.
+É **essencial** com **reparo vascular**; útil (não obrigatório) com feridas extensas que exigem várias limpezas e para proteger um reparo do quadríceps ou do tendão patelar. Os autores **não recomendam o fixador de rotina** depois da redução: infecção de pino é comum e pode colonizar o envelope de partes moles que vai receber os enxertos. Os pinos devem ficar **fora da articulação**: na tíbia, **anteromedial e abaixo** dos futuros túneis dos cruzados; no fêmur, **anterolateral e a mais de um palmo** acima do polo superior da patela (para não entrar na bolsa suprapatelar e para poupar o quadríceps). O risco de trombose com fixador transarticular foi de 2,1%, parecido com o de quem não usa. No protocolo em etapas com fixador, o resultado funcional final foi igual ao de quem não usou, mas com **mais artrofibrose**; numa série de 136 luxações, o fixador aumentou o risco de rigidez, embora os joelhos mais graves (Schenck mais alto) tendam a ficar rígidos de qualquer forma.
 
 ## Quando operar
 
@@ -450,9 +476,9 @@ O capítulo divide em **emergente** (vaso, compartimento, irredutível, exposta)
 - **Alça de balde desviada** não deixa fazer exercícios de arco antes da cirurgia e deve ser tratada logo.
 - **Tardia (mais de 4 semanas):** pele ou edema ruins, reparo vascular ou lesões associadas que impedem a reconstrução precoce. E uma indicação específica: **cruzados rotos com o colateral medial avulsionado do fêmur**, que tem altíssima chance de **cicatrizar em 6 a 8 semanas**; depois, reconstroem-se só os cruzados.
 
-A literatura sobre o momento é contraditória. Uma revisão mostrou cirurgia precoce com melhor Lysholm e mais IKDC bom ou excelente (**47% contra 31%**); outra, mais instabilidade anterior, mais perda de flexão acima de 10° e mais manipulações no grupo agudo. A metanálise de 2022 (14 estudos, **1.172 pacientes**) mostrou que a reconstrução precoce (menos de 3 semanas) teve **menos lesão de menisco e cartilagem** e Lysholm maior, **sem diferença de artrofibrose**, atribuída à reabilitação moderna com movimento precoce. A conclusão do capítulo: com os dados atuais, a **cirurgia precoce** dá a melhor chance de bom resultado, mas lesões associadas podem obrigar a esperar.
+A literatura sobre o momento é contraditória. Uma revisão mostrou cirurgia precoce com melhor Lysholm e mais IKDC bom ou excelente (**47% contra 31%**); outra, mais instabilidade anterior, mais perda de flexão acima de 10° e mais manipulações no grupo agudo. A metanálise de 2022 (14 estudos, **1.172 pacientes**) mostrou que a reconstrução precoce (menos de 3 semanas) teve **menos lesão de menisco e cartilagem** e Lysholm maior, **sem diferença de artrofibrose**, atribuída à reabilitação moderna com movimento precoce. As definições variam (tardio já foi mais de 3, 4 ou 6 semanas), e há viés: quem foi operado tarde em geral operou porque continuava com sintomas. O estudo randomizado STAR deve responder melhor. A conclusão do capítulo: com os dados atuais, a **cirurgia precoce** dá a melhor chance de bom resultado, mas lesões associadas podem obrigar a esperar.
 
-!questoes central=trauma-0557,trauma-0034
+!questoes central=trauma-0557,trauma-0034 treino=trauma-1625
 conceito: A reconstrução precoce (até 3 a 4 semanas) é a recomendação geral; a exceção clássica para adiar é o colateral medial avulsionado do fêmur, que cicatriza em 6 a 8 semanas.
 como: O SBOT-SP pediu a indicação de reconstrução tardia, trocando o lado (medial ou lateral) e o local da avulsão (fêmur ou tíbia); o TARO 2019 pediu os fatores de bom prognóstico, combinando reconstrução precoce de um ou dos dois cruzados com idade acima ou abaixo de 40 anos.
 armadilha: Colateral medial desinserido da tíbia: pode virar lesão tipo Stener, que pede cirurgia aguda.
@@ -472,6 +498,12 @@ Na escolha do enxerto, a maioria evita tirar autoenxerto de um joelho já tão a
 
 Adiar o cruzado anterior deixa a reabilitação inicial concentrada no cruzado posterior e permite manipular o joelho que está perdendo movimento no segundo tempo. A **fixação suspensória** é a preferida porque permite **retensionar** os enxertos à medida que os outros ligamentos são feitos e não depende da qualidade do osso esponjoso (só de uma cortical íntegra). As posições de tensão são: cruzado posterior anterolateral a 90° e posteromedial em extensão; colateral medial superficial e canto posterolateral a **20° a 30°**; oblíquo posterior em **extensão completa**; cruzado anterior em extensão completa.
 
+!questoes treino=trauma-1627
+conceito: Cruzado posterior primeiro (a pedra fundamental), depois os cantos, começando pelo mais instável, e cruzado anterior por último ou cerca de 6 semanas depois.
+como: Nenhuma prova real do conjunto analisado cobrou a ordem; o simulado usa o par primeiro e último.
+armadilha: Cruzado anterior primeiro: é a lógica da lesão isolada, não do joelho luxado.
+!fim
+
 O roteiro da sala começa sempre com o **exame neurovascular com o paciente acordado** (atenção ao fibular), o extensor (elevação da perna estendida) e a dor ao estiramento passivo (compartimento). Depois vem o exame sob anestesia dos dois joelhos, a documentação com radioscopia sob estresse e a artroscopia diagnóstica, que mostra o **sinal do "drive-through"** (espaço aberto no lado lesado). Duas cautelas: **não insuflar o garrote** se não for necessário (lesões da íntima e reparos vasculares; insuflar a 300 mmHg ou mais por 120 minutos ou mais é contraindicado) e usar a **bomba de artroscopia com cautela**, porque o líquido pode vazar para os compartimentos da perna; palpe a perna durante toda a cirurgia.
 
 ## O protocolo dos autores
@@ -488,7 +520,7 @@ Desenho das reconstruções preferidas pelos autores (cruzado anterior, cruzado 
 
 ## Reabilitação
 
-Não há protocolo universal. Um dos protocolos citados começa o arco no **primeiro dia** com carga parcial na primeira semana; outro mantém **sem carga por 6 semanas**, busca arco completo em 6 semanas, evita exercício isolado de isquiotibiais por 4 meses e libera o retorno com **9 meses**. A imobilização depois da cirurgia aguda aumentou a perda de flexão (mais de 10°) e de extensão (mais de 5°), os resultados ruins e o afastamento do trabalho. Muitos hoje fazem **arco passivo de 0° a 90° desde o primeiro dia**.
+Não há protocolo universal. Um dos protocolos citados começa o arco no **primeiro dia** com carga parcial na primeira semana; outro mantém **sem carga por 6 semanas**, busca arco completo em 6 semanas, evita exercício isolado de isquiotibiais por 4 meses e libera o retorno com **9 meses**. A imobilização depois da cirurgia aguda aumentou a perda de flexão (mais de 10°) e de extensão (mais de 5°), os resultados ruins e o afastamento do trabalho. Muitos hoje fazem **arco passivo de 0° a 90° desde o primeiro dia**. Num estudo de 2002, a reabilitação funcional (flexão até 60° liberada após 48 horas) deu Lysholm e Tegner melhores que 6 semanas de imobilização. Num pequeno ensaio randomizado (36 pacientes), começar o arco no primeiro dia ou depois de 3 semanas não mudou significativamente as manipulações sob anestesia (1 contra 4), num estudo provavelmente com pouco poder.
 
 # Cruzado anterior {radar=confirmado}
 
@@ -515,7 +547,7 @@ Na luxação, o cruzado anterior rompe no meio em 32%, sai do fêmur sem osso em
 | Lesão do feixe neurovascular no túnel | Perfurar a 90° de flexão, guia ou cureta, radioscopia; cirurgião vascular disponível |
 | Trombose | Profilaxia por 6 semanas (aspirina ou heparina de baixo peso); varfarina 6 a 12 semanas no alto risco |
 | Ossificação heterotópica | 13% a 37%; risco maior com reconstrução do cruzado posterior; profilaxia de rotina não é recomendada |
-| Rigidez e artrofibrose | 21,5% em 121 joelhos; risco com luxação e reconstrução de 3 ou mais ligamentos |
+| Rigidez e artrofibrose | 21,5% em 121 joelhos (contratura em flexão de 10°, flexão ativa abaixo de 120° ou necessidade de manipulação ou liberação); risco com luxação e reconstrução de 3 ou mais ligamentos; operar cedo ou tarde não foi fator de risco |
 | Artrose | Cerca de 25% em 10 anos depois de lesões KD III ou mais graves |
 !fim
 
@@ -527,7 +559,7 @@ Se aparecer sangramento arterial: avisar a anestesia, **parar a reconstrução**
 
 Na série citada, a trombose sintomática foi de **2%** (3 de 134 pacientes, todos de alto risco por obesidade ou tabagismo). Antibiótico venoso é recomendado quando se usa aloenxerto ou muito material. A infecção profunda aguda é tratada com limpezas seriadas mantendo enxertos e implantes; a que aparece **depois de 3 semanas** provavelmente está estabelecida e pode exigir retirar enxertos e material.
 
-A **ossificação heterotópica** apareceu em **34%** (30 de 101 luxações) numa série e em **37%** de 57 noutra, com pior arco de movimento. Quando estabelecida, o joelho fica rígido e a manipulação pode não ajudar; a ressecção costuma funcionar, de preferência depois de passada a fase ativa (cerca de **3 meses**).
+A **ossificação heterotópica** apareceu em **34%** (30 de 101 luxações) numa série e em **37%** de 57 noutra, com pior arco de movimento. A lesão de partes moles também prediz a ossificação, e quem a tem vai mais vezes para manipulação ou liberação artroscópica. Anti-inflamatórios e radioterapia foram propostos como profilaxia, mas faltam estudos de nível I. Quando estabelecida, o joelho fica rígido e a manipulação pode não ajudar; a ressecção costuma funcionar, de preferência depois de passada a fase ativa (cerca de **3 meses**).
 
 ## Frouxo e móvel é melhor que firme e rígido
 
