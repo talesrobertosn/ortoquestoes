@@ -8,7 +8,7 @@ interface EmailEnviado { id: number; tipo: string; marco: number | null; assunto
 const MIGRACAO = '202609290200_painel_admin_2.sql'
 const TIPO_EMAIL: Record<string, string> = { marco: 'Parabéns automático', parabens: 'Carta enviada por você', carta: 'Carta pessoal', alerta_admin: 'Alerta para você', relatorio: 'Resumo de estudo', lembrete: 'Lembrete', relato_resolvido: 'Aviso de relato resolvido' }
 
-/** Painel › Operações › Lembretes e e-mails: e-mails automáticos e os últimos envios (antes ficavam em Ajustes). */
+/** Painel › E-mails › Lembretes e automáticos: e-mails automáticos e os últimos envios (antes ficavam em Ajustes). */
 export function AdminEmails() {
   const [emails, definirEmails] = useState<ConfigEmails | null>(null)
   const [enviados, definirEnviados] = useState<EmailEnviado[] | null>(null)
@@ -38,7 +38,7 @@ export function AdminEmails() {
     {falhaSalvar && <p role="alert" className="adm-nota adm-mensagem adm-mensagem--erro">{falhaSalvar}</p>}
     <label className="ct-interruptor"><input type="checkbox" checked={emails.marcos_automaticos} onChange={e => void salvarEmails({ ...emails, marcos_automaticos: e.target.checked })} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Enviar parabéns automáticos pelos emblemas</span></label>
     <label className="ct-interruptor"><input type="checkbox" checked={emails.alertas_admin} onChange={e => void salvarEmails({ ...emails, alertas_admin: e.target.checked })} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Me avisar por e-mail quando um pagamento der erro ou alguém escrever que um comentário não ajudou</span></label>
-    <p className="adm-nota">Todos os e-mails para as pessoas saem como carta: só texto, sem logo, assinados “Um abraço, Tales, do Orto Questões”. Para escrever a alguém, abra a ficha em Pessoas › Usuários (parte Carta e ações); para um grupo, Pessoas › Cartas.</p>
+    <p className="adm-nota">Todos os e-mails para as pessoas saem como carta: só texto, sem logo, assinados “Um abraço, Tales, do Orto Questões”. Para escrever a alguém, abra a ficha em Pessoas › Usuários (parte Carta e ações); para um grupo, E-mails › Cartas pessoais.</p>
     <h3 className="adm-subtitulo">Últimos envios{falhas > 0 && <span className="adm-selo adm-selo--ruim">{falhas} com falha</span>}</h3>
     {!enviados?.length ? <p className="adm-vazio">Nenhum e-mail enviado ainda.</p> : <ul className="adm-mini">
       {enviados.slice(0, 30).map(e => <li key={e.id}><span className="adm-mini__nome">{e.assunto ?? TIPO_EMAIL[e.tipo]}<small>{TIPO_EMAIL[e.tipo] ?? e.tipo}{e.usuario ? ` · ${e.usuario}` : ''}</small>{e.status === 'falhou' && <small className="adm-erro-email">{motivoFalhaEmail(e.erro)}</small>}</span><span className={'adm-selo ' + (e.status === 'enviado' ? 'adm-selo--ok' : e.status === 'falhou' ? 'adm-selo--ruim' : 'adm-selo--neutro')}>{e.status === 'enviado' ? dataHora(e.enviado_em) : e.status}</span></li>)}
