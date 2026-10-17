@@ -12,7 +12,7 @@ const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-admin-secoe
 const arquivo = join(pasta, 's.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/componentes/admin/secoes'\nexport * from './src/componentes/admin/ganhos'`, resolveDir: process.cwd(), loader: 'ts' },
+    stdin: { contents: `export * from './src/componentes/admin/secoes'\nexport * from './src/componentes/admin/ganhos'\nexport * from './src/componentes/admin/agora'\nexport { pedacosAtividade, areaDaQuestao } from './src/componentes/admin/formatos'`, resolveDir: process.cwd(), loader: 'ts' },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', logLevel: 'error',
   })
   const m = await import(pathToFileURL(arquivo))
@@ -98,7 +98,69 @@ try {
   assert.equal(f.total, 342)
   assert.equal(f.cartao.quantidade, 2)
 
-  console.log('Painel do administrador: 6 seções, endereços antigos, estado na URL e ganhos ok.')
+  // ---------- Agora › torre de controle (agora.ts) ----------
+  // Mesmo relógio: 17/10/2026 15h em Brasília. Ontem é 16/10 inteiro.
+  const iso = (h) => new Date(agora.getTime() + h * 3_600_000).toISOString()
+  const pessoa = (id, extra) => ({ id_usuario: id, nome: `Pessoa ${id}`, email: `${id}@x.com`, criado_em: iso(-24 * 40), ultimo_login: null, ultima_atividade: null, respondidas: 100, respondidas_7d: 10, plano_vigente: null, administrador: false, respondidas_hoje: 0, tentativas_hoje: 0, pagina: null, pagina_em: null, visto_em: null, ...extra })
+  const pessoas = [
+    pessoa('a', { respondidas_hoje: 5, tentativas_hoje: 7, ultima_atividade: iso(-1), pagina: '/sessao · 3 de 10', pagina_em: iso(-1), visto_em: iso(-1) }),      // estudou: 5 questões
+    pessoa('b', { ultima_atividade: iso(-50), visto_em: iso(-2), pagina: '/cronograma', pagina_em: iso(-2) }),                                                    // entrou sem estudar
+    pessoa('c', { criado_em: iso(-2), respondidas: 0, respondidas_7d: 0 }),                                                                                         // cadastrou hoje
+    pessoa('d', { respondidas_hoje: 0, ultima_atividade: iso(-20), respondidas_7d: 30 }),                                                                           // respondeu ontem (12h em Brasília... 19h de ontem)
+    pessoa('e', { pagina: '/resumos/rockwood10-17-sindrome-compartimental · 40%', pagina_em: iso(-3), visto_em: iso(-3) }),                                        // só leu um resumo
+    pessoa('f', { plano_vigente: 'anual' }),                                                                                                                       // nada hoje
+  ]
+  const sinais = [{ id_usuario: 'f', planos_vezes: 0, planos_ultima: null, condicoes_ultima: null, flashcards_unicos: 20, flashcards_7d: 12, flashcards_ultima: iso(-4), cripta_andar: 3, locais_trabalho: null }] // f usou flashcards hoje
+  const serie = [{ dia: '2026-10-16', cadastros: 3, ativos: 9, respostas: 120 }, { dia: '2026-10-17', cadastros: 1, ativos: 2, respostas: 40 }]
+  const assinaturas = [
+    { id_usuario: 'f', plano: 'anual', status: 'ativa', meio: 'pix', criada_em: iso(-2), inicio_periodo: iso(-2), fim_periodo: iso(24 * 365), ultima_cobranca_em: iso(-2) },  // nova hoje
+    { id_usuario: 'd', plano: 'mensal', status: 'cancelada', meio: 'cartao', criada_em: iso(-24 * 20), fim_periodo: iso(24 * 10), cancelar_ao_fim: true, cancelada_em: iso(-5) },  // cancelou hoje
+    { id_usuario: 'b', plano: 'semestral', status: 'pendente', meio: 'pix', criada_em: iso(-30) },                                                                             // Pix pendente (ontem)
+    { id_usuario: 'a', plano: 'mensal', status: 'ativa', meio: 'cartao', criada_em: iso(-24 * 100), fim_periodo: iso(24 * 10) },
+  ]
+  const cobrancas = [
+    { id_usuario: 'f', plano: 'anual', meio: 'pix', valor: 349, em: iso(-2), id_pagamento: '1', situacao: 'paga' },
+    { id_usuario: 'a', plano: 'mensal', meio: 'cartao', valor: '39.9', em: iso(-26), id_pagamento: '2', situacao: 'paga' },   // ontem 13h
+    { id_usuario: 'd', plano: 'mensal', meio: 'cartao', valor: 39.9, em: iso(-27), id_pagamento: '3', situacao: 'reembolsada' },
+  ]
+  const q = m.quadroDoDia({ usuarios: pessoas, sinais, serie, resumo: { usuarios: 6, novos_7d: 1, ativos_hoje: 2, ativos_7d: 5, ativos_30d: 6, respondidas_hoje: 40, respondidas_7d: 300, assinantes_vigentes: 2 }, funil: { cadastrados: 6, confirmaram: 5 }, assinaturas, cobrancas, agora: agora.getTime() })
+  assert.equal(q.hoje, '2026-10-17'); assert.equal(q.ontem, '2026-10-16')
+  assert.deepEqual(q.estudaram.map(f => f.pessoa.id_usuario), ['a', 'e', 'f'], 'estudaram hoje: questões, resumo e flashcards, da atividade mais recente para a mais antiga')
+  assert.deepEqual(q.estudaram.map(f => [f.questoes, f.tentativas, f.flashcards, f.resumo?.capitulo ?? null, f.resumo?.extra ?? null]), [[5, 7, false, null, null], [0, 0, false, 'rockwood10-17-sindrome-compartimental', '40%'], [0, 0, true, null, null]])
+  assert.deepEqual(q.entraram.map(e => e.pessoa.id_usuario), ['b'], 'entrou hoje sem estudar')
+  assert.deepEqual(q.recemCadastrados.map(u => u.id_usuario), ['c'])
+  assert.deepEqual(q.maisAtivosSemana.map(u => u.id_usuario), ['d', 'a', 'b', 'e', 'f'])
+  assert.deepEqual(q.numeros.cadastros, { hoje: 1, ontem: 3 })
+  assert.deepEqual(q.numeros.entraram, { hoje: 4, ontem: null })
+  assert.deepEqual(q.numeros.estudaram, { hoje: 3, ontem: null })
+  assert.deepEqual(q.numeros.pessoasQuestoes, { hoje: 2, ontem: 9 })
+  assert.deepEqual(q.numeros.cincoOuMais, { hoje: 1, ontem: null })
+  assert.deepEqual(q.numeros.questoes, { hoje: 40, ontem: 120 })
+  assert.deepEqual(q.numeros.flashcards, { hoje: 1, ontem: null })
+  assert.deepEqual(q.numeros.resumosAbertos, { hoje: 1, ontem: null })
+  assert.equal(q.numeros.confirmaramEmail, 5)
+  assert.deepEqual(q.numeros.pagaram, { hoje: 1, ontem: 1 })
+  assert.deepEqual(q.numeros.valorPago, { hoje: 349, ontem: 39.9 })
+  assert.deepEqual(q.pagaram.map(x => [x.id_usuario, x.nome, x.meio, x.valor]), [['f', 'Pessoa f', 'pix', 349]])
+  assert.deepEqual(q.numeros.novasAssinaturas, { hoje: 1, ontem: 0 })
+  assert.deepEqual(q.numeros.cancelamentos, { hoje: 1, ontem: 0 })
+  assert.deepEqual(q.numeros.pixPendentes, { hoje: 1, ontem: null })
+  assert.deepEqual(q.pixPendentes.map(x => [x.id_usuario, x.plano, x.valor]), [['b', 'semestral', 179.9]], 'Pix pendente sem valor gravado: o preço do plano')
+  // Sem a lista de pessoas nem cobranças, nada é inventado: fica "ainda não medido" (null).
+  const vazio = m.quadroDoDia({ usuarios: null, sinais: null, serie: null, resumo: null, funil: null, assinaturas: null, cobrancas: null, agora: agora.getTime() })
+  assert.deepEqual(vazio.numeros.estudaram, { hoje: null, ontem: null })
+  assert.deepEqual(vazio.numeros.pagaram, { hoje: null, ontem: null })
+  assert.equal(vazio.numeros.confirmaramEmail, null)
+  assert.equal(vazio.estudaram.length, 0)
+  // A frase do que a pessoa está fazendo, em pedaços (área pelo prefixo da questão).
+  assert.equal(m.areaDaQuestao('trauma-0412'), 'Trauma adulto')
+  assert.equal(m.areaDaQuestao('ombro-cotovelo-0012'), 'Ombro e cotovelo')
+  assert.deepEqual(m.pedacosAtividade({ pagina: '/sessao · 3 de 10', questao: 'trauma-0412' }), { nome: 'Respondendo questões', area: 'Trauma adulto', questao: 'trauma-0412', extra: '3 de 10' })
+  assert.deepEqual(m.pedacosAtividade({ pagina: '/flashcards/cripta · andar 7', questao: null }), { nome: 'Torneio de Flashcards: batalha na Cripta', area: null, questao: null, extra: 'andar 7' })
+  assert.equal(m.pedacosAtividade({ pagina: null }).nome, 'Página ainda não registrada')
+  assert.deepEqual(m.BLOCOS_AGORA.map(b => b[0]).slice(0, 2), ['agora-online', 'agora-numeros'])
+
+  console.log('Painel do administrador: 6 seções, endereços antigos, estado na URL, ganhos e a torre de controle de Agora ok.')
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
