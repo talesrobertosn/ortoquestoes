@@ -30,6 +30,8 @@ Desde 16/10/2026 **todos os resumos são abertos** (`acesso: gratis`, com págin
 | 10 | Fraturas da escápula | escapula_.pdf (16/10/2026, 40 páginas): Rockwood 10ª ed., cap. 33 (Bartoníček) nas pp. 1–39; p. 40 é o início do cap. 34 | [x] Feito em 16/10/2026: `rockwood10-33-fratura-escapula` (só resumo; as questões já existiam) |
 | 11 | Fraturas da clavícula | claviculas.pdf (16/10/2026, 59 páginas): Rockwood 10ª ed., cap. 34 (Woltz, McKee) | [x] Feito em 16/10/2026: `rockwood10-34-fratura-clavicula` (só resumo) |
 | 12 | Fraturas e luxações do tálus | calcaneus_fracutres.pdf e, de novo, talus.pdf (16/10/2026, 65 páginas, mesmo conteúdo): Rockwood 10ª ed., cap. 66 · Fractures and Dislocations of the Talus (Sanders, Inculet); **não é o capítulo de calcâneo** | [x] Feito em 16/10/2026: `rockwood10-66-talus` (simulados `trauma-1607` a `trauma-1618` e os de anatomia `pe-tornozelo-0395` e `0422` em `treino=`; alertas: TARO 2008 maléolo medial, TARO 2018 CANALE em flexão plantar máxima, TARO 2018 processo lateral na criança em inversão) |
+| 13 | Fraturas e luxações do carpo | dois_capitulos_mao (3 arquivos, 16/10/2026): Rockwood 10ª ed., cap. 44 · Carpus Fractures and Dislocations | [x] Feito em 17/10/2026: `rockwood10-44-carpo` (só resumo; simulados `mao-1669` a `mao-1693` já existiam, em `treino=`; 13 alertas, entre eles TARO 2024 Herbert D4, USP-SP 2025 pseudartrose 10–15%, Einstein 2026 crônica em 6 semanas) |
+| 14 | Fraturas e luxações da mão | dois_capitulos_mao (mesmos arquivos): Rockwood 10ª ed., cap. 45 · Hand Fractures and Dislocations | [x] Feito em 17/10/2026: `rockwood10-45-fraturas-mao` (só resumo; simulados `mao-1694` a `mao-1718` e `trauma-1230` em `treino=`; 14 alertas, entre eles Burkhalter 40°, mallet ósseo 25% × um terço, Doyle e Green fora do capítulo) |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo e qualquer divergência entre o
 livro e um gabarito oficial que tenha ido para `alerta:`.
@@ -73,7 +75,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 20. [x] Fratura da cabeça do rádio e instabilidade do cotovelo (Trauma adulto) — feito: `rockwood10-40-cotovelo-cabeca-radio` (também cobre olécrano e Monteggia posterior)
 21. [x] Síndrome compartimental (Trauma adulto) — feito: `rockwood10-17-sindrome-compartimental`
 22. [ ] Fraturas do fêmur e da perna na criança (Ortopedia pediátrica)
-23. [ ] Fraturas dos metacarpos e falanges (Trauma adulto)
+23. [x] Fraturas dos metacarpos e falanges (Trauma adulto) — feito: `rockwood10-45-fraturas-mao`
 24. [ ] Estadiamento, biópsia e margens (Tumores ósseos e de partes moles)
 25. [ ] Metástases ósseas (Tumores ósseos e de partes moles)
 26. [ ] Omartrose e artroplastia do ombro (Ombro e cotovelo)
@@ -106,7 +108,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 53. [ ] Fraturas por estresse (Trauma adulto)
 54. [ ] Tíbia vara (Blount) (Ortopedia pediátrica)
 55. [ ] Lesões de nervos periféricos (Mão e punho)
-56. [ ] Instabilidade do carpo (Mão e punho)
+56. [x] Instabilidade do carpo (Mão e punho) — feito: `rockwood10-44-carpo`
 57. [ ] Lesões dos tendões extensores (Mão e punho)
 58. [ ] Fratura do úmero distal (Trauma adulto) — capítulo recebido (Rockwood cap. 39, tema_1_cabeca_do_radio.pdf)
 59. [ ] Fraturas expostas (Trauma adulto)
