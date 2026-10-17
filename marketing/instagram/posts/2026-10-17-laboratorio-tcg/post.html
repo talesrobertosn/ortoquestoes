@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Laboratório do TCG e raspadinha de Southwick</title>
+<!-- Feed, estilo "laboratório de patologia": questão tumores-0309 (TARO 2026), gabarito D (tumor de células gigantes),
+     imagem real da questão (radiografias, ressonância e lâmina). Stories, estilo "raspadinha": questão pediatria-0120
+     (TARO 2022), gabarito C (Southwick). Nenhum desenho de anatomia: a anatomia vem só das imagens das questões.
+     "Faltam N dias" calculado para 17/10/2026 (prova teórica do TEOT e do TEPOT em 10/01/2027): atualize se postar outro dia.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-17-laboratorio-tcg/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; }
+section.story { height: 1920px; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+
+/* ============ FEED: laboratório de patologia ============ */
+.lab { color: #eaf4f6; background: radial-gradient(circle at 50% 36%, #1c3d4a 0, #0d1d25 55%, #081218 100%); }
+.lab::before { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(127,226,214,.05) 1px, transparent 1px) 0 0 / 100% 54px, linear-gradient(90deg, rgba(127,226,214,.05) 1px, transparent 1px) 0 0 / 54px 100%; }
+.lab > * { position: relative; z-index: 1; }
+.etiqueta { position: absolute; top: 48px; left: 48px; display: flex; gap: 14px; align-items: center; }
+.etiqueta b { padding: 10px 20px; border-radius: 10px; font: 800 26px Jakarta; letter-spacing: .12em; color: #0d1d25; background: #7fe2d6; }
+.etiqueta span { font: 700 26px Inter; letter-spacing: .1em; text-transform: uppercase; color: #9cc4c9; }
+.pag { position: absolute; right: 48px; top: 56px; font: 700 24px Inter; color: #6d8f96; }
+.ocular { position: absolute; left: 50%; top: 130px; width: 680px; height: 680px; margin-left: -340px; border-radius: 50%; overflow: hidden;
+  box-shadow: 0 0 0 18px #13262f, 0 0 0 22px #2f5562, 0 0 0 24px #0b161c, 0 30px 90px rgba(0,0,0,.7), 0 0 140px rgba(127,226,214,.18); }
+.ocular img { position: absolute; height: 120%; top: -10%; right: -6%; filter: saturate(1.08) contrast(1.04); }
+.ocular::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle, transparent 58%, rgba(0,0,0,.55) 100%); }
+.mira { position: absolute; left: 50%; top: 130px; width: 680px; height: 680px; margin-left: -340px; pointer-events: none; }
+.mira::before, .mira::after { content: ''; position: absolute; background: rgba(255,255,255,.55); }
+.mira::before { left: 50%; top: 40px; bottom: 40px; width: 2px; }
+.mira::after { top: 50%; left: 40px; right: 40px; height: 2px; }
+.escala { position: absolute; left: 50%; top: 740px; transform: translateX(-50%); display: flex; align-items: center; gap: 12px; font: 700 22px Inter; color: #fff; text-shadow: 0 2px 6px #000; }
+.escala i { display: block; width: 120px; height: 6px; background: #fff; border-radius: 3px; }
+.f1-texto { position: absolute; left: 56px; right: 56px; top: 860px; text-align: center; }
+.f1-texto small { display: block; font: 700 26px Inter; letter-spacing: .12em; text-transform: uppercase; color: #7fe2d6; }
+.f1-texto h1 { margin-top: 12px; font: 800 74px/1.02 Jakarta; letter-spacing: -.04em; }
+.frascos { position: absolute; left: 48px; right: 48px; top: 1098px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.frasco { padding: 18px 12px 20px; border-radius: 18px 18px 26px 26px; text-align: center; background: linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.04)); box-shadow: inset 0 0 0 2px rgba(255,255,255,.18); }
+.frasco b { display: block; margin: 0 auto 8px; width: 52px; height: 52px; line-height: 52px; border-radius: 50%; font: 800 28px Jakarta; color: #0d1d25; background: #f2a7c3; }
+.frasco span { font: 700 25px/1.15 Jakarta; letter-spacing: -.01em; }
+.comente { position: absolute; left: 0; right: 0; top: 1290px; text-align: center; font: 700 26px Inter; color: #9cc4c9; }
+
+.painel-img { margin: 130px 48px 0; padding: 14px; border-radius: 22px; background: #000; box-shadow: 0 20px 60px rgba(0,0,0,.6); }
+.painel-img img { display: block; width: 100%; border-radius: 12px; }
+.laudo-cab { margin: 44px 48px 0; display: flex; align-items: center; gap: 22px; }
+.laudo-cab .letra { flex: none; width: 120px; height: 120px; border-radius: 28px; display: grid; place-items: center; font: 800 76px Jakarta; color: #0d1d25; background: #7fe2d6; box-shadow: 0 0 40px rgba(127,226,214,.45); }
+.laudo-cab small { display: block; font: 700 24px Inter; letter-spacing: .12em; text-transform: uppercase; color: #7fe2d6; }
+.laudo-cab strong { display: block; margin-top: 6px; font: 800 60px/1 Jakarta; letter-spacing: -.035em; }
+.pistas { margin: 40px 48px 0; display: grid; gap: 18px; }
+.pista { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 18px; padding: 22px 26px; border-radius: 18px; background: rgba(255,255,255,.07); box-shadow: inset 0 0 0 2px rgba(127,226,214,.18); font: 600 34px/1.25 Inter; }
+.pista i { font-style: normal; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; font: 800 30px Jakarta; color: #0d1d25; background: #f2a7c3; }
+.prova-f { margin: 36px 48px 0; padding: 26px 30px; border-radius: 18px; background: #f2a7c3; color: #2b0d1b; font: 700 32px/1.3 Inter; }
+.prova-f strong { font-weight: 800; }
+
+.contagem { margin: 170px 56px 0; text-align: center; }
+.contagem small { font: 700 28px Inter; letter-spacing: .16em; text-transform: uppercase; color: #7fe2d6; }
+.contagem h2 { margin-top: 16px; font: 800 82px/1 Jakarta; letter-spacing: -.04em; }
+.data { display: flex; justify-content: center; gap: 18px; margin-top: 36px; }
+.data div { min-width: 220px; padding: 24px 34px 20px; border-radius: 24px; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 2px rgba(127,226,214,.3); }
+.data b { display: block; font: 800 84px/1 Jakarta; letter-spacing: -.04em; color: #fff; }
+.data span { display: block; margin-top: 8px; font: 700 22px Inter; letter-spacing: .14em; text-transform: uppercase; color: #9cc4c9; }
+.faltam { margin-top: 26px; font: 700 34px Inter; color: #f2a7c3; }
+.cron { margin: 70px 70px 0; padding: 36px 40px; border-radius: 28px; text-align: left; background: rgba(255,255,255,.07); box-shadow: inset 0 0 0 2px rgba(255,255,255,.1); font: 500 36px/1.4 Inter; color: #d6e8ea; }
+.cron strong { color: #fff; font-weight: 800; }
+.cta-f { margin: 60px auto 0; display: table; padding: 26px 56px; border-radius: 99px; font: 800 48px Jakarta; letter-spacing: -.02em; color: #0d1d25; background: linear-gradient(#a6f3e9, #5fcfc1); box-shadow: 0 20px 50px rgba(127,226,214,.35); }
+.cta-sub { margin-top: 18px; text-align: center; font: 700 30px Inter; color: #d6e8ea; }
+.rodape { position: absolute; left: 48px; right: 48px; bottom: 44px; display: flex; justify-content: space-between; align-items: center; color: #eaf4f6; }
+.rodape small { font: 600 26px Inter; color: #9cc4c9; }
+
+/* ============ STORIES: raspadinha ============ */
+.rasp { color: #2a1240; background: radial-gradient(circle at 20% 10%, #ffcf4a 0, transparent 35%), radial-gradient(circle at 90% 90%, #ff7ab6 0, transparent 40%), linear-gradient(160deg, #7a2cc4, #3c0f74); }
+.rasp::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle, rgba(255,255,255,.18) 2px, transparent 3px) 0 0 / 44px 44px; }
+.rasp > * { position: relative; z-index: 1; }
+.bilhete-r { position: absolute; left: 60px; right: 60px; top: 240px; bottom: 140px; border-radius: 40px; background: #fff8e8; box-shadow: 0 0 0 10px #ffcf4a, 0 0 0 14px #2a1240, 0 40px 90px rgba(0,0,0,.45); overflow: hidden; }
+.bilhete-r::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 18px; background: repeating-linear-gradient(90deg, #ff4f8b 0 30px, #ffcf4a 30px 60px, #4fd1ff 60px 90px); }
+.r-topo { margin: 56px 50px 0; display: flex; justify-content: space-between; align-items: center; }
+.r-topo b { font: 800 50px/1 Jakarta; letter-spacing: -.03em; color: #7a2cc4; }
+.r-topo span { padding: 10px 20px; border-radius: 99px; font: 800 24px Jakarta; letter-spacing: .08em; color: #fff; background: #ff4f8b; }
+.r-sub { margin: 10px 50px 0; font: 700 26px Inter; letter-spacing: .08em; text-transform: uppercase; color: #8a6fa6; }
+.r-img { margin: 30px 50px 0; padding: 16px; border-radius: 24px; background: #fff; box-shadow: inset 0 0 0 3px #f1e3c4; }
+.r-img img { display: block; width: 100%; }
+.r-enun { margin: 28px 50px 0; font: 800 46px/1.15 Jakarta; letter-spacing: -.025em; }
+.r-ops { margin: 26px 50px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.r-op { display: flex; align-items: center; gap: 16px; padding: 20px 22px; border-radius: 20px; background: #fff; box-shadow: inset 0 0 0 3px #f1e3c4; font: 800 34px Jakarta; letter-spacing: .02em; }
+.r-op b { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; font: 800 30px Jakarta; color: #fff; background: #7a2cc4; }
+.r-op.certa { background: #e6ffe9; box-shadow: inset 0 0 0 4px #1fae5b; }
+.r-op.certa b { background: #1fae5b; }
+.r-op.fora { opacity: .4; }
+.raspar { position: relative; margin: 30px 50px 0; height: 230px; border-radius: 26px; overflow: hidden; }
+.prata { position: absolute; inset: 0; display: grid; place-items: center; text-align: center;
+  background: repeating-linear-gradient(45deg, rgba(255,255,255,.25) 0 6px, transparent 6px 14px), linear-gradient(135deg, #e9edf2, #9aa3ae 45%, #d7dce2 55%, #8b939d); box-shadow: inset 0 0 0 4px rgba(0,0,0,.08); }
+.prata strong { font: 800 46px Jakarta; letter-spacing: -.02em; color: #4a5260; }
+.prata em { display: block; margin-top: 6px; font: 700 40px Caveat; font-style: normal; color: #4a5260; }
+.premio { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; background: #fff1c4; }
+.premio small { font: 800 24px Inter; letter-spacing: .14em; text-transform: uppercase; color: #b06a00; }
+.premio strong { display: block; margin-top: 4px; font: 800 72px/1 Jakarta; letter-spacing: -.03em; color: #2a1240; }
+.lasca { position: absolute; background: linear-gradient(135deg, #e9edf2, #9aa3ae 50%, #c9cfd6); }
+.r-explica { margin: 26px 50px 0; font: 600 34px/1.35 Inter; color: #3d2756; }
+.r-explica strong { color: #2a1240; font-weight: 800; }
+.r-pe { position: absolute; left: 50px; right: 50px; bottom: 44px; display: flex; justify-content: space-between; align-items: center; color: #2a1240; }
+.r-pe small { font: 700 26px Inter; color: #8a6fa6; }
+.chamada-r { position: absolute; left: 0; right: 0; top: 1750px; text-align: center; font: 800 34px Jakarta; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.4); }
+
+.r3-titulo { margin: 80px 50px 0; text-align: center; }
+.r3-titulo small { font: 800 26px Inter; letter-spacing: .16em; text-transform: uppercase; color: #ff4f8b; }
+.r3-titulo h2 { margin-top: 14px; font: 800 70px/1.05 Jakarta; letter-spacing: -.04em; color: #2a1240; }
+.r3-data { display: flex; justify-content: center; gap: 16px; margin-top: 44px; }
+.r3-data div { min-width: 210px; padding: 20px 30px 16px; border-radius: 22px; text-align: center; background: #7a2cc4; color: #fff; }
+.r3-data b { display: block; font: 800 78px/1 Jakarta; letter-spacing: -.04em; }
+.r3-data span { display: block; margin-top: 6px; font: 800 22px Inter; letter-spacing: .14em; text-transform: uppercase; color: #ffcf4a; }
+.r3-faltam { margin-top: 22px; text-align: center; font: 800 36px Jakarta; color: #ff4f8b; }
+.r3-cron { margin: 50px 50px 0; padding: 34px 36px; border-radius: 28px; background: #fff; box-shadow: inset 0 0 0 3px #f1e3c4; font: 500 36px/1.4 Inter; color: #3d2756; }
+.r3-cron strong { color: #2a1240; font-weight: 800; }
+.botao-r { display: table; margin: 60px auto 0; padding: 28px 64px; border-radius: 99px; font: 800 56px Jakarta; letter-spacing: -.02em; color: #2a1240; background: linear-gradient(#ffe27a, #ffb800); box-shadow: 0 0 0 5px #2a1240, 0 18px 40px rgba(122,44,196,.35); }
+.r3-sub { margin-top: 18px; text-align: center; font: 700 32px Inter; color: #3d2756; }
+.r3-seta { display: block; margin: 12px auto 0; width: 54px; height: 54px; color: #7a2cc4; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+<symbol id="baixo" viewBox="0 0 24 24"><path d="M12 4v14M5 12l7 7 7-7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<!-- ================= FEED ================= -->
+<section id="f1-lamina" class="lab">
+  <div class="etiqueta"><b>LÂMINA</b><span>TARO 2026</span></div>
+  <span class="pag">1/3</span>
+  <div class="ocular"><img src="../../../../public/imagens/tumores/tumores-0309-1.webp" alt=""></div>
+  <div class="mira"></div>
+  <div class="escala"><i></i>HE</div>
+  <div class="f1-texto">
+    <small>Mulher, 40 anos · fratura do rádio distal</small>
+    <h1>Qual tumor está nessa lâmina?</h1>
+  </div>
+  <div class="frascos">
+    <div class="frasco"><b>A</b><span>osteo&shy;ssarcoma</span></div>
+    <div class="frasco"><b>B</b><span>condro&shy;blastoma</span></div>
+    <div class="frasco"><b>C</b><span>condro&shy;ssarcoma</span></div>
+    <div class="frasco"><b>D</b><span>tumor de células gigantes</span></div>
+  </div>
+  <p class="comente">Comente a sua letra e arraste para o laudo</p>
+</section>
+
+<section id="f2-laudo" class="lab">
+  <div class="etiqueta"><b>LAUDO</b><span>tumores · TARO 2026</span></div>
+  <span class="pag">2/3</span>
+  <div class="painel-img"><img src="../../../../public/imagens/tumores/tumores-0309-1.webp" alt=""></div>
+  <div class="laudo-cab"><div class="letra">D</div><div><small>Diagnóstico</small><strong>Tumor de células gigantes</strong></div></div>
+  <div class="pistas">
+    <div class="pista"><i>1</i><span>Adulto de 40 anos, com a fise fechada</span></div>
+    <div class="pista"><i>2</i><span>Lesão lítica até o osso subcondral do rádio distal</span></div>
+    <div class="pista"><i>3</i><span>Células gigantes espalhadas por igual na lâmina</span></div>
+  </div>
+  <p class="prova-f"><strong>Para a prova:</strong> adulto, epífise, lise até o subcondral e células gigantes uniformes: pense em TCG.</p>
+</section>
+
+<section id="f3-prova" class="lab">
+  <div class="etiqueta"><b>PRÓXIMO EXAME</b><span>TEOT e TEPOT</span></div>
+  <span class="pag">3/3</span>
+  <div class="contagem">
+    <small>A prova está chegando</small>
+    <h2>Fique pronto para o dia</h2>
+    <div class="data"><div><b>10</b><span>janeiro</span></div><div><b>2027</b><span>prova teórica</span></div></div>
+    <p class="faltam">Faltam 85 dias</p>
+  </div>
+  <p class="cron">Com o nosso <strong>cronograma</strong>, você faz o maior número de questões possível <strong>sem se esgotar</strong>. Nós planejamos tudo para você.</p>
+  <div class="cta-f">Treine grátis</div>
+  <p class="cta-sub">Crie sua conta grátis agora mesmo e conheça outras questões</p>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><small>ortoquestoes.com.br</small></div>
+</section>
+
+<!-- ================= STORIES: raspadinha ================= -->
+<section id="s1-raspadinha" class="story rasp">
+  <div class="bilhete-r">
+    <div class="r-topo"><b>Raspadinha da prova</b><span>TARO 2022</span></div>
+    <p class="r-sub">Epifisiólise proximal do fêmur</p>
+    <div class="r-img"><img src="../../../../public/imagens/pediatria/pediatria-0120-1.jpeg" alt=""></div>
+    <p class="r-enun">O ângulo demonstrado na imagem é o de</p>
+    <div class="r-ops">
+      <div class="r-op"><b>A</b>KLEIN</div>
+      <div class="r-op"><b>B</b>DREHMANN</div>
+      <div class="r-op"><b>C</b>SOUTHWICK</div>
+      <div class="r-op"><b>D</b>TRETHOWAN</div>
+    </div>
+    <div class="raspar"><div class="prata"><div><strong>Raspe no próximo story</strong><em>escolha a sua letra antes</em></div></div></div>
+    <div class="r-pe"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><small>pediatria</small></div>
+  </div>
+</section>
+
+<section id="s2-premio" class="story rasp">
+  <div class="bilhete-r">
+    <div class="r-topo"><b>Raspadinha da prova</b><span>Resultado</span></div>
+    <p class="r-sub">Epifisiólise proximal do fêmur</p>
+    <div class="r-img"><img src="../../../../public/imagens/pediatria/pediatria-0120-1.jpeg" alt=""></div>
+    <div class="r-ops">
+      <div class="r-op fora"><b>A</b>KLEIN</div>
+      <div class="r-op fora"><b>B</b>DREHMANN</div>
+      <div class="r-op certa"><b>C</b>SOUTHWICK</div>
+      <div class="r-op fora"><b>D</b>TRETHOWAN</div>
+    </div>
+    <div class="raspar">
+      <div class="premio"><div><small>Você raspou</small><strong>C · Southwick</strong></div></div>
+      <i class="lasca" style="left:-10px;top:-14px;width:150px;height:60px;transform:rotate(-8deg);border-radius:0 0 30px 0"></i>
+      <i class="lasca" style="right:-20px;top:-6px;width:120px;height:44px;transform:rotate(12deg);border-radius:0 0 0 30px"></i>
+      <i class="lasca" style="right:-12px;bottom:-18px;width:190px;height:64px;transform:rotate(-6deg);border-radius:30px 0 0 0"></i>
+      <i class="lasca" style="left:-14px;bottom:-10px;width:90px;height:52px;transform:rotate(10deg);border-radius:0 30px 0 0"></i>
+    </div>
+    <p class="r-explica"><strong>Ângulo epifisário-diafisário no perfil em rã</strong>, comparado com o lado normal: mede a gravidade do escorregamento.</p>
+    <p class="r-explica" style="margin-top:14px;font-size:30px">Klein e Trethowan são do AP. Drehmann é sinal clínico.</p>
+    <div class="r-pe"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><small>ortoquestoes.com.br</small></div>
+  </div>
+</section>
+
+<section id="s3-treine" class="story rasp">
+  <div class="bilhete-r" style="bottom:500px">
+    <div class="r3-titulo"><small>A prova está chegando</small><h2>Fique pronto.<br>Prepare-se.</h2></div>
+    <div class="r3-data"><div><b>10</b><span>janeiro</span></div><div><b>2027</b><span>TEOT · TEPOT</span></div></div>
+    <p class="r3-faltam">Faltam 85 dias</p>
+    <p class="r3-cron">Com o nosso <strong>cronograma</strong>, você faz o maior número de questões possível <strong>sem se cansar tanto</strong>. Nós planejamos tudo para você.</p>
+    <div class="botao-r">Treine grátis</div>
+    <p class="r3-sub">Crie sua conta grátis agora mesmo</p>
+  </div>
+  <svg style="position:absolute;left:509px;top:1460px;width:62px;height:62px;color:#fff;z-index:2"><use href="#baixo"/></svg>
+  <p class="chamada-r">ortoquestoes.com.br</p>
+</section>
+</body></html>
