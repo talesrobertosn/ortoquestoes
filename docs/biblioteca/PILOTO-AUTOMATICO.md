@@ -24,6 +24,13 @@ Os detalhes técnicos estão nos guias citados; aqui está a ordem, as decisões
 Nunca pergunte "quer que eu faça?" para algo que está nesta tabela. Pergunte só se o PDF não for um capítulo
 (ou estiver ilegível) ou se o pedido contradizer uma regra de ouro abaixo.
 
+**Ordem dos temas (Tales, 17/10/2026):** ele segue a lista do site "Trauma adulto" ordenada por número de questões de
+prova (prioridade máxima → alta → média → baixa). Em 17/10/2026 estava no **anel pélvico** (mandou junto o acetábulo).
+Os próximos dessa lista que ainda não têm resumo: planalto tibial, fraturas por estresse, úmero distal, diáfise da
+tíbia, subtrocantérica, fraturas expostas, coluna cervical alta, luxação do quadril e cabeça femoral, luxação
+acromioclavicular, rádio distal, tornozelo e, depois, os de prioridade baixa. Quando ele mandar um capítulo fora dessa
+ordem, faça normalmente; a ordem serve para saber o que esperar e para conferir se o PDF é o tema certo.
+
 ## 2. Regras de ouro (nunca quebrar)
 
 1. Todo resumo e todo simulado saem **só do capítulo que o Tales enviou** nesta sessão. Sem PDF, peça o PDF.
