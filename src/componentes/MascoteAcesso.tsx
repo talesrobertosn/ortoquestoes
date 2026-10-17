@@ -12,7 +12,7 @@ const QUADRO = { w: 136, h: 108 }
 const ANIMACOES = { parado: { linha: 0, quadros: 4, ms: 260 }, golpe: { linha: 2, quadros: 6, ms: 70 }, vitoria: { linha: 5, quadros: 4, ms: 160 } }
 type Anim = keyof typeof ANIMACOES
 
-export function MascoteAcesso({ escala = 2 }: { escala?: number }) {
+export function MascoteAcesso({ escala = 2, className = '' }: { escala?: number; className?: string }) {
   const [estagio] = useState(() => 1 + Math.floor(Math.random() * 6))
   const [anim, definirAnim] = useState<Anim>('parado')
   useEffect(() => {
@@ -36,7 +36,7 @@ export function MascoteAcesso({ escala = 2 }: { escala?: number }) {
     animation: `mascote-quadros ${a.quadros * a.ms}ms steps(${a.quadros}) infinite`,
   } as CSSProperties
   return (
-    <button type="button" className="mascote-acesso" onClick={() => definirAnim('golpe')} aria-label="Cavaleiro do Orto Questões" title="Oi! Bom estudo.">
+    <button type="button" className={`mascote-acesso ${className}`} onClick={() => definirAnim('golpe')} aria-label="Cavaleiro do Orto Questões" title="Oi! Bom estudo.">
       <span className="mascote-acesso__sombra" aria-hidden="true" />
       <span key={anim} className="mascote-acesso__folha" style={estilo} aria-hidden="true" />
     </button>
