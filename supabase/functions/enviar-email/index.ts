@@ -1,7 +1,7 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
-import { MARCOS, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, type CampanhaLembrete, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
-import { perfilDosDados, problemaGrave, renderizarCarta, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta } from '../_shared/cartas.ts'
+import { MARCOS, automaticoBloqueado, ehTransacional, emailAutomatico, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, marcoComCarta, tipoAutomaticoValido, type CampanhaLembrete, type DadosRelatorio, type Marco, type TipoAutomatico } from '../_shared/modelo-email.ts'
+import { cadenciaBloqueia, perfilDosDados, problemaGrave, renderizarCarta, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -39,6 +39,20 @@ import { perfilDosDados, problemaGrave, renderizarCarta, type DadosCartaBanco, t
  *                      confirmado, quem não quer cartas, convite sem o aceite de
  *                      novidades (Termos 17.5.3), o mesmo tipo em 30 dias e quem recebeu
  *                      qualquer e-mail nas últimas 48 horas; leva List-Unsubscribe.
+ *   automatico         (17/10/2026) um dos seis automáticos novos, por acontecimento. Campos:
+ *                      tipo ("boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto",
+ *                      "pagamento_aprovado", "obrigado_tempo"), e, conforme o tipo, dias_fora,
+ *                      dias_para_prova, prova, plano, inicio_periodo, fim_periodo, meio,
+ *                      renovacao, reembolso, referencia. A própria pessoa chama os quatro
+ *                      primeiros (o site, logo depois do acontecimento); o servidor (webhook do
+ *                      Mercado Pago ou gerenciar-plano, com o cabeçalho x-segredo e id_usuario)
+ *                      chama os dois últimos. Idempotente por pessoa e tipo (ou pessoa e
+ *                      referência) pela tabela de envios, como o marco. Os não transacionais
+ *                      respeitam o teto de cadência (48 h / 3 em 14 dias): resposta "adiado".
+ *
+ * Cadência (PLANO.md, 17/10/2026): lotes de lembretes e relatórios pulam quem recebeu
+ * qualquer e-mail não transacional nas últimas 48 h ou 3 nos últimos 14 dias; a pessoa
+ * volta a aparecer no próximo lote.
  *
  * Desde 15/10/2026 todo e-mail para a pessoa sai em forma de carta (só texto,
  * assinado pelo Tales). Os envios gravam modelo, versão e origem no histórico
@@ -174,8 +188,11 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     : await banco('rpc/destinatarios_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_mes: mes, p_limite: limite }) })
   if (!r.ok) throw new Error('consulta_destinatarios_falhou')
   const destinatarios = (await r.json() as Array<{ id_usuario: string }>).map((d) => d.id_usuario)
-  let enviados = 0, falhas = 0
+  let enviados = 0, falhas = 0, adiados = 0
   for (const id of destinatarios) {
+    // Cadência: quem recebeu e-mail há menos de 48 h (ou 3 em 14 dias) fica para o próximo lote.
+    const anteriores = await anterioresDe(id).catch(() => [] as EnvioAnterior[])
+    if (cadenciaBloqueia(anteriores, new Date(), 'relatorio')) { adiados++; continue }
     const reserva = await registrar({ id_usuario: id, tipo: 'relatorio', referencia: mes, status: 'enviando' })
     let linha: { id: number } | undefined
     if (reserva.ok) [linha] = await reserva.json() as Array<{ id: number }>
@@ -198,8 +215,10 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     }
     await esperar(600)
   }
-  return { mes, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
+  return { mes, enviados, falhas, adiados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
 }
+
+const TIPO_DA_CAMPANHA: Record<CampanhaLembrete, TipoCarta> = { nunca: 'nunca_comecou', tres_dias: 'pausa', sete_dias: 'sumiu', renovacao_pix: 'pix_3_dias', renovacao_pix_hoje: 'pix_hoje' }
 
 const CAMPANHAS: readonly CampanhaLembrete[] = ['nunca', 'tres_dias', 'sete_dias', 'renovacao_pix', 'renovacao_pix_hoje']
 const ehPix = (c: CampanhaLembrete) => c === 'renovacao_pix' || c === 'renovacao_pix_hoje'
@@ -217,8 +236,11 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
     : await banco('rpc/destinatarios_lembrete', { method: 'POST', body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) })
   if (!r.ok) throw new Error('consulta_destinatarios_falhou')
   const destinatarios = await r.json() as Array<{ id_usuario: string; referencia: string; email: string; nome: string | null; respondidas: number; dias_fora?: number; dias_restantes?: number; plano?: string; fim_periodo?: string }>
-  let enviados = 0, falhas = 0
+  let enviados = 0, falhas = 0, adiados = 0
   for (const d of destinatarios) {
+    // Cadência (o "Pix termina hoje" é transacional e nunca é adiado).
+    const anteriores = await anterioresDe(d.id_usuario).catch(() => [] as EnvioAnterior[])
+    if (cadenciaBloqueia(anteriores, new Date(), TIPO_DA_CAMPANHA[campanha])) { adiados++; continue }
     const reserva = await registrar({ id_usuario: d.id_usuario, tipo: 'lembrete', referencia: d.referencia, status: 'enviando', enviado_por: por })
     let linha: { id: number } | undefined
     if (reserva.ok) [linha] = await reserva.json() as Array<{ id: number }>
@@ -237,7 +259,9 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
         campanha, nome: d.nome, respondidas: Number(numeros?.respondidas ?? d.respondidas), diasFora: Number(d.dias_fora ?? 0),
         diasRestantes: Number(d.dias_restantes ?? 3), fimEm: d.fim_periodo ?? null, plano: d.plano ?? null,
         acertos: Number(numeros?.acertos ?? 0), respondidas7d: Number(numeros?.respondidas_7d ?? 0),
-        site: site(), linkDescadastro: descadastro, referencia: d.referencia, anteriores: await anterioresDe(d.id_usuario).catch(() => []),
+        site: site(), linkDescadastro: descadastro, referencia: d.referencia, anteriores,
+        // O perfil completo (parte 27) deixa a carta citar a área em que a pessoa estava e os fatos pessoais.
+        perfil: await perfilCompleto(d.id_usuario).catch(() => null),
       })
       await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro)
       await atualizarEnvio(linha.id, { status: 'enviado', assunto: e.assunto }, { modelo: e.modelo, versao: e.versao, origem: por ? 'lote' : 'automatico' })
@@ -248,18 +272,111 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
     }
     await esperar(600)
   }
-  return { campanha, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
+  return { campanha, enviados, falhas, adiados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
 }
 
 async function registrar(corpo: Record<string, unknown>) {
   return banco('emails_enviados', { method: 'POST', body: JSON.stringify(corpo) })
 }
 
+/** Dia de hoje em São Paulo ("2026-10-17"), para referências de envios que podem repetir em dias diferentes. */
+const diaDeHoje = () => new Date(Date.now() - 3 * 3600_000).toISOString().slice(0, 10)
+
+interface PedidoAutomatico {
+  tipo?: string; referencia?: string; dias_fora?: number; dias_para_prova?: number; prova?: string
+  plano?: string; inicio_periodo?: string; fim_periodo?: string; meio?: string; renovacao?: boolean; reembolso?: boolean
+}
+
+/**
+ * Um dos seis automáticos novos (17/10/2026). Idempotente por pessoa e referência
+ * (ou pessoa e tipo, para os que saem uma vez só), pela tabela de envios: confere
+ * antes de reservar a linha. Respeita quem desligou as cartas (menos nos
+ * transacionais), o e-mail confirmado e o teto de cadência.
+ */
+async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: PedidoAutomatico, por: string | null) {
+  if (!emailConfigurado()) return { resultado: 'email_nao_configurado' }
+  const transacional = ehTransacional(tipo)
+  // Quem é a pessoa e o que ela permite (parte 27); sem ela, os dados antigos.
+  let pessoa: { email: string | null; nome: string | null; confirmado?: boolean; quer_cartas: boolean; administrador?: boolean } | null = null
+  const r = await banco('rpc/dados_carta_envio', { method: 'POST', body: JSON.stringify({ p_id: id, p_modelo: tipo }) })
+  if (r.ok) pessoa = await r.json()
+  else {
+    const antigo = await dadosUsuario(id)
+    pessoa = antigo ? { email: antigo.email, nome: antigo.nome, confirmado: true, quer_cartas: antigo.quer_conquistas } : null
+  }
+  if (!pessoa?.email) return { resultado: 'sem_email' }
+  if (pessoa.confirmado === false) return { resultado: 'email_nao_confirmado' }
+  if (!transacional && !pessoa.quer_cartas) return { resultado: 'nao_quer' }
+
+  const dados = await dadosUsuario(id)
+  const respondidas = Number(dados?.respondidas ?? 0)
+  const perfil = await perfilCompleto(id).catch(() => null)
+  // O acontecimento aconteceu mesmo? (A pessoa chama o site; o servidor confere o que dá.)
+  let diasFora = Number(pedido.dias_fora ?? 0)
+  if (tipo === 'voltou') {
+    const parado = perfil?.diasParado ?? null
+    if (parado !== null && parado >= 10) diasFora = parado
+    if (diasFora < 10) return { resultado: 'ainda_nao' }
+  }
+  if (tipo === 'primeiras_10' && respondidas < 10) return { resultado: 'ainda_nao' }
+  let diasParaProva = Number(pedido.dias_para_prova ?? 0) || null, prova = typeof pedido.prova === 'string' ? pedido.prova.slice(0, 30) : null
+  if (tipo === 'cronograma_pronto') {
+    const p = await banco(`planos_estudo?usuario_id=eq.${id}&select=data_prova,prova&limit=1`)
+    const [plano] = p.ok ? await p.json() as Array<{ data_prova: string; prova: string | null }> : []
+    if (!plano?.data_prova) return { resultado: 'sem_cronograma' }
+    diasParaProva = Math.max(1, Math.ceil((new Date(`${plano.data_prova}T12:00:00-03:00`).getTime() - Date.now()) / 86_400_000))
+    prova = plano.prova ?? prova
+  }
+
+  // Idempotência: uma vez por pessoa e referência (os que saem uma vez só usam o próprio tipo).
+  const umaVez = tipo === 'boas_vindas_dia0' || tipo === 'primeiras_10' || tipo === 'cronograma_pronto'
+  const sufixo = typeof pedido.referencia === 'string' && /^[a-zA-Z0-9_:.-]{1,60}$/.test(pedido.referencia) ? pedido.referencia : tipo === 'voltou' ? diaDeHoje() : ''
+  const referencia = umaVez ? tipo : `${tipo}:${sufixo || diaDeHoje()}`
+  const existe = await banco(`emails_enviados?id_usuario=eq.${id}&referencia=eq.${encodeURIComponent(referencia)}&status=in.(enviado,enviando)&select=id&limit=1`)
+  if (existe.ok && (await existe.json() as unknown[]).length) return { resultado: 'ja_enviado', tipo }
+
+  const anteriores = await anterioresDe(id).catch(() => [] as EnvioAnterior[])
+  const bloqueio = automaticoBloqueado(tipo, anteriores)
+  if (bloqueio) return { resultado: 'adiado', tipo, motivo: bloqueio }
+
+  const meio = pedido.meio === 'pix' ? 'pix' : pedido.meio === 'cartao' ? 'cartao' : null
+  const e = emailAutomatico({
+    tipo, nome: pessoa.nome ?? dados?.nome ?? null, respondidas, site: site(), perfil, anteriores, referencia,
+    linkDescadastro: transacional ? null : await linkDescadastro(id, 'cartas'),
+    diasFora, diasParaProva, provaCronograma: prova,
+    pagamento: tipo === 'pagamento_aprovado' ? { plano: pedido.plano ?? null, inicioEm: pedido.inicio_periodo ?? null, fimEm: pedido.fim_periodo ?? null, meio, renovacao: !!pedido.renovacao } : undefined,
+    encerramento: tipo === 'obrigado_tempo' ? { reembolso: !!pedido.reembolso, fimEm: pedido.fim_periodo ?? null } : undefined,
+  })
+  // Reserva a linha antes de enviar (dois pedidos juntos: o segundo encontra a reserva).
+  const base = { id_usuario: id, referencia, assunto: e.assunto, status: 'enviando', enviado_por: por }
+  let reserva = await registrar({ ...base, tipo: 'carta', modelo: e.modelo, versao: e.versao, origem: 'automatico' })
+  if (!reserva.ok) reserva = await registrar({ ...base, tipo: 'parabens' })
+  if (!reserva.ok) return { resultado: 'sql_pendente' }
+  const [linha] = await reserva.json() as Array<{ id: number }>
+  try {
+    await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, transacional ? undefined : await linkDescadastro(id, 'cartas'))
+    if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado' }) })
+    return { resultado: 'enviado', tipo, para: pessoa.email }
+  } catch (falha) {
+    if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+    return { resultado: 'falhou', tipo }
+  }
+}
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; quinzena?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string; assunto?: string; corpo?: string; modelo?: string; versao?: string; origem?: string }
+    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; quinzena?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string; assunto?: string; corpo?: string; modelo?: string; versao?: string; origem?: string } & PedidoAutomatico
+
+    // Automáticos disparados pelo servidor (webhook do Mercado Pago, gerenciar-plano): segredo + id da pessoa.
+    if (corpo.acao === 'automatico' && req.headers.get('x-segredo')) {
+      if (!await segredoValido(req.headers.get('x-segredo')!)) return json({ erro: 'acesso_negado' }, 403, req)
+      const tipo = tipoAutomaticoValido(corpo.tipo)
+      if (!tipo) return json({ erro: 'tipo_invalido' }, 400, req)
+      if (!corpo.id_usuario || !/^[0-9a-f-]{36}$/.test(corpo.id_usuario)) return json({ erro: 'usuario_invalido' }, 400, req)
+      return json(await enviarAutomatico(corpo.id_usuario, tipo, corpo, null), 200, req)
+    }
 
     if (corpo.acao === 'descadastrar') {
       const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : corpo.tipo === 'lembretes' ? 'lembretes' : corpo.tipo === 'cartas' ? 'cartas' : 'conquistas'
@@ -362,6 +479,16 @@ Deno.serve(async (req) => {
       }
     }
 
+    // Automáticos disparados pelo site, pela própria pessoa, logo depois do acontecimento.
+    if (corpo.acao === 'automatico') {
+      const tipo = tipoAutomaticoValido(corpo.tipo)
+      if (!tipo) return json({ erro: 'tipo_invalido' }, 400, req)
+      // Os que falam de pagamento só saem pelo servidor (ou por um administrador, para teste).
+      if ((tipo === 'pagamento_aprovado' || tipo === 'obrigado_tempo') && !await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
+      const alvo = corpo.id_usuario && /^[0-9a-f-]{36}$/.test(corpo.id_usuario) && await ehAdministrador(usuario.id) ? corpo.id_usuario : usuario.id
+      return json(await enviarAutomatico(alvo, tipo, corpo, alvo === usuario.id ? null : usuario.id), 200, req)
+    }
+
     if (corpo.acao === 'marco') {
       if (!emailConfigurado()) return json({ resultado: 'email_nao_configurado' }, 200, req)
       const config = await banco('configuracao_emails?id=eq.true&select=marcos_automaticos')
@@ -369,9 +496,13 @@ Deno.serve(async (req) => {
       const dados = await dadosUsuario(usuario.id)
       if (!dados?.email) return json({ resultado: 'sem_email' }, 200, req)
       if (!dados.quer_conquistas) return json({ resultado: 'nao_quer' }, 200, req)
-      const marco = marcoAtingido(Number(dados.respondidas))
+      // Só os marcos com carta (100, 250, 500, 1.000, 2.000).
+      const marco = marcoComCarta(Number(dados.respondidas))
       if (!marco) return json({ resultado: 'ainda_nao' }, 200, req)
       if (Number(dados.respondidas) > marco.minimo + folga(marco)) return json({ resultado: 'longe_do_marco', marco: marco.minimo }, 200, req)
+      // Cadência: se recebeu outro e-mail há pouco, o site tenta de novo mais tarde.
+      const bloqueio = cadenciaBloqueia(await anterioresDe(usuario.id).catch(() => [] as EnvioAnterior[]), new Date(), 'marco')
+      if (bloqueio) return json({ resultado: 'adiado', marco: marco.minimo, motivo: bloqueio }, 200, req)
       // A trava do banco (um e-mail por marco) evita duplicata com dois pedidos juntos.
       const reserva = await registrar({ id_usuario: usuario.id, tipo: 'marco', marco: marco.minimo, status: 'enviando' })
       let linha: { id: number } | undefined
