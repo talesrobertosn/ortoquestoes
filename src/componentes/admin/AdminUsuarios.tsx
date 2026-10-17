@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Icone } from '../Icone'
-import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corresponde, data, haQuanto, haQuantoTempo, normalizar, rotuloPagina, somarAcertos } from './formatos'
+import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corDe, corresponde, data, haQuanto, haQuantoTempo, iniciais, normalizar, rotuloPagina, somarAcertos } from './formatos'
 import { href } from '../../util/rotas'
 import { AdminFichaUsuario } from './AdminFichaUsuario'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
@@ -115,9 +115,6 @@ const acertoDe = (u: LinhaUsuario) => acertoReal(u) ?? acertoAposRevisao(u)
 const POR_PAGINA = 50
 /** Espera depois da última tecla antes de refiltrar a lista. */
 const ESPERA_BUSCA_MS = 250
-const iniciais = (u: LinhaUsuario) => (u.nome ?? u.email ?? '?').split(/[\s@.]+/).filter(Boolean).slice(0, 2).map(p => p[0]?.toUpperCase()).join('')
-/** Cor fixa por pessoa, para reconhecer de relance. */
-const corDe = (id: string) => `hsl(${[...id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 360, 7)} 45% 42%)`
 const hojeDe = (u: LinhaUsuario) => u.respondidas_hoje ?? (ativoHoje(u) ? null : 0)
 const ORDEM_LEGENDA: CategoriaPessoa[] = ['assinante', 'comum', 'planos', 'admin']
 /** Legenda discreta das cores dos cartões. */
@@ -293,36 +290,6 @@ export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFi
         Mostrar mais {Math.min(POR_PAGINA, visiveis.length - desenhados.length)} <small>({visiveis.length - desenhados.length} restante{visiveis.length - desenhados.length === 1 ? '' : 's'})</small>
       </button>
     </div>}
-    {aberto && <AdminFichaUsuario usuario={aberto} aoFechar={() => definirAberto(null)} />}
-  </section>
-}
-
-/**
- * Ao vivo (Agora): quem está com o site aberto e à vista agora, o que está vendo (página, questão,
- * resumo e quanto já leu) e quantas questões fez hoje. É o único lugar do painel com essa lista;
- * a lista de Usuários mantém só o filtro "Online agora". Toque numa pessoa para abrir a ficha.
- */
-export function AoVivo({ usuarios, atualizadoEm }: { usuarios: LinhaUsuario[]; atualizadoEm: number | null }) {
-  const { sessao } = usarConta()
-  const sinaisQ = usarRpc<SinalUsuario[]>(sessao?.user.id, 'sinais_usuarios_admin', {}, { atualizarCada: 60_000 })
-  const sinais = useMemo(() => indexarSinais(Array.isArray(sinaisQ.dados) ? sinaisQ.dados : []), [sinaisQ.dados])
-  const [aberto, definirAberto] = useState<LinhaUsuario | null>(null)
-  const aoVivo = useMemo(() => usuarios.filter(u => u.online).sort((a, b) => (b.pagina_em ?? '').localeCompare(a.pagina_em ?? '')), [usuarios])
-  return <section className="adm-aovivo" aria-labelledby="adm-aovivo-titulo">
-    <header>
-      <h3 id="adm-aovivo-titulo"><span className="adm-online" aria-hidden="true" />Online agora <span className="adm-aovivo__total numerico">{aoVivo.length}</span></h3>
-      <small>com o site aberto e à vista · atualiza sozinho a cada 15 s · última leitura {haQuantoTempo(new Date(atualizadoEm ?? Date.now()).toISOString())}</small>
-    </header>
-    {aoVivo.length === 0 ? <p className="adm-vazio">Ninguém com o site aberto agora. Quem abrir aparece aqui, com a página, a questão ou o resumo.</p> : <>
-      <LegendaCores />
-      <ul>{aoVivo.map(u => { const cat = categoriaPessoa(u, sinais.get(u.id_usuario)); return <li key={u.id_usuario}>
-        <button type="button" className={`adm-cor--${cat}`} onClick={() => definirAberto(u)} aria-label={`${u.nome ?? u.email ?? 'Usuário'} (${ROTULOS_CATEGORIA[cat].toLowerCase()}): abrir ficha`}>
-          <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}</span>
-          <span className="adm-aovivo__quem"><strong title={u.nome ?? u.email ?? undefined}>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong><OQueVe u={u} linha /></span>
-          <span className="adm-aovivo__hoje"><strong className="numerico">{u.respondidas_hoje ?? '—'}</strong><small>hoje</small></span>
-        </button>
-      </li> })}</ul>
-    </>}
     {aberto && <AdminFichaUsuario usuario={aberto} aoFechar={() => definirAberto(null)} />}
   </section>
 }
