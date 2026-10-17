@@ -162,7 +162,7 @@
 .acesso__marca { margin: 0; font-family: var(--fonte-marca); font-size: 1.15rem; font-weight: 500; letter-spacing: -0.01em; }
 .acesso__marca span { font-weight: 800; }
 .acesso__vitrine h1 {
-  margin: 2.5rem 0 0;
+  margin: 1.5rem 0 0;
   color: var(--sobre-heroi);
   font-size: clamp(1.7rem, 3.4vw, 2.4rem);
   line-height: 1.15;
@@ -230,6 +230,13 @@
 .acesso__rotulo-senha { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
 .acesso__senha { position: relative; display: block; }
 .acesso__senha .entrada { width: 100%; padding-right: 3rem; }
+/* Campos com ícone à esquerda (e-mail, cadeado) e foco com halo verde. */
+.acesso__entrada { position: relative; display: block; }
+.acesso__entrada > svg { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); color: var(--texto-2); pointer-events: none; transition: color 0.15s; }
+.acesso__entrada .entrada { width: 100%; min-height: 50px; padding-left: 2.6rem; border-radius: 12px; background: var(--superficie-2); transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s; }
+.acesso__entrada .entrada:focus { background: var(--superficie); border-color: var(--verdete); box-shadow: 0 0 0 4px color-mix(in srgb, var(--verdete) 18%, transparent); outline: 0; }
+.acesso__entrada:focus-within > svg { color: var(--verdete); }
+.acesso__form .campo__rotulo { font-size: var(--meta); font-weight: 650; color: var(--texto); }
 .acesso__olho {
   position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
   display: inline-flex; align-items: center; justify-content: center;
@@ -245,7 +252,37 @@
 .acesso__confere--nao { color: var(--erro); }
 .acesso__form .campo--checkbox { display: flex; align-items: flex-start; gap: 0.6rem; }
 .acesso__form .campo--checkbox input { margin-top: 0.3rem; }
-.botao.acesso__enviar { width: 100%; min-height: 50px; font-size: 1.02rem; border-radius: var(--raio-controle); margin-top: 0.25rem; }
+.botao.acesso__enviar { width: 100%; min-height: 52px; font-size: 1.04rem; border-radius: 12px; margin-top: 0.35rem; gap: 0.5rem;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--verdete) 88%, #fff), var(--verdete) 55%, color-mix(in srgb, var(--verdete) 80%, #000));
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--verdete) 28%, transparent); transition: transform 0.12s, box-shadow 0.15s, filter 0.15s; }
+.botao.acesso__enviar:hover:not(:disabled) { transform: translateY(-1px); filter: brightness(1.05); box-shadow: 0 12px 26px color-mix(in srgb, var(--verdete) 34%, transparent); }
+.botao.acesso__enviar svg { transition: transform 0.15s; }
+.botao.acesso__enviar:hover svg { transform: translateX(3px); }
+/* Vitrine: provas em selos, uma questão de exemplo e emblemas em pixel art. */
+.acesso__provas { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.acesso__provas li { padding: 0.25rem 0.6rem; border-radius: 999px; background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); font-size: 0.74rem; font-weight: 750; letter-spacing: 0.04em; }
+.acesso__amostra { margin: 0.4rem 0 0; padding: 1rem 1.1rem 0.85rem; border-radius: 16px; background: color-mix(in srgb, #fff 94%, transparent); color: #1b2a28; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28); transform: rotate(-1.2deg); max-width: 26rem; }
+.acesso__amostra-selo { display: inline-flex; align-items: center; gap: 0.3rem; margin: 0 0 0.5rem; padding: 0.15rem 0.55rem; border-radius: 999px; background: #fdf1cf; color: #7a5404; font-size: 0.72rem; font-weight: 800; }
+.acesso__amostra-enunciado { margin: 0 0 0.6rem; font-weight: 650; font-size: 0.92rem; line-height: 1.4; }
+.acesso__amostra ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3rem; }
+.acesso__amostra li { display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.65rem; border-radius: 10px; border: 1px solid #e3e8e6; font-size: 0.85rem; }
+.acesso__amostra li.acesso__amostra-certa { border-color: #2f9e6e; background: #e8f6ef; color: #145c3f; font-weight: 700; }
+.acesso__amostra figcaption { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.6rem; color: #5a6b68; font-size: 0.74rem; }
+.acesso__emblemas { display: flex; gap: 0.5rem; margin-top: 0.25rem; }
+.acesso__emblemas img { image-rendering: pixelated; filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); transition: transform 0.2s; }
+.acesso__emblemas img:nth-child(odd) { transform: translateY(-3px); }
+@media (prefers-reduced-motion: no-preference) { .acesso__amostra { animation: acesso-flutua 6s ease-in-out infinite; } }
+/* Na tela larga os benefícios viram uma linha compacta para a vitrine não passar da altura do formulário. */
+@media (min-width: 52.01rem) {
+  .acesso__vitrine { gap: 0.85rem; }
+  .acesso__beneficios { margin-top: 0.35rem; gap: 0.5rem; font-size: var(--corpo-menor); }
+  .acesso__beneficios li span { width: 1.9rem; height: 1.9rem; }
+  .acesso__amostra { padding: 0.85rem 1rem 0.75rem; }
+  .acesso__amostra li { padding: 0.32rem 0.6rem; }
+  .acesso__emblemas { display: none; }
+  .acesso__rodape { padding-top: 0.75rem; }
+}
+@keyframes acesso-flutua { 0%, 100% { transform: rotate(-1.2deg) translateY(0); } 50% { transform: rotate(-1.2deg) translateY(-5px); } }
 .acesso__alternativa { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); text-align: center; }
 /* Cadastro em dois passos: o passo 2 (perfil, opcional) depois de criar a conta. */
 .acesso__passo { margin: 0 0 0.35rem !important; color: var(--verdete) !important; font-size: var(--meta); font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; }
@@ -266,7 +303,7 @@
 @media (max-width: 40rem) {
   .acesso .acesso__vitrine { gap: 0.35rem; padding: 1.25rem 1.25rem 1.35rem; }
   .acesso .acesso__vitrine h1 { margin-top: 0; font-size: 1.35rem; }
-  .acesso__marca, .acesso__lide, .acesso__beneficios { display: none; }
+  .acesso__marca, .acesso__lide, .acesso__beneficios, .acesso__amostra, .acesso__emblemas, .acesso__provas { display: none; }
   .acesso__rodape { margin: 0.2rem 0 0; padding-top: 0; font-size: var(--meta); }
 }
 @media (max-width: 52rem) {
