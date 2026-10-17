@@ -14,6 +14,7 @@ import { aplicarPerfilPendente } from './perfilPendente'
 import { aplicarConviteRecebido, conferirMinhaIndicacao } from './indicacao'
 import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
 import { ler } from '../estado/armazenamento'
+import type { RegistroQuestao } from '../estado/revisao'
 import { vigiarSessaoEntreAparelhos } from '../estado/sessao'
 
 const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false, rejeitados: [] }
@@ -39,6 +40,12 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   const [status, definirStatus] = useState<StatusSync>(STATUS_INICIAL)
   const sync = useRef<ReturnType<typeof iniciarSincronizacao> | null>(null)
   const usuarioAtual = useRef<string | null>(null)
+  // A pessoa chegou por um link de confirmação do cadastro: a carta "Boas-vindas no dia da
+  // confirmação" sai no primeiro login depois dele (emailsAutomaticos), assim que a sessão existir.
+  const confirmouAgora = useRef(false)
+  // Quando esta sessão começou e para quem já conferimos a volta (uma vez por conta e sessão).
+  const inicioSessao = useRef(Date.now())
+  const retornoConferido = useRef<string | null>(null)
   useEffect(() => {
     if (!supabase) { definirUsuarioLocal(null); return }
     let ativo = true
@@ -63,6 +70,8 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
         aguardandoRetorno = false
         if (ok && retorno.recuperacao) definirRecuperacao(true)
         if (!ok) definirAvisoConta(textoErroLink('otp_expired', retorno.recuperacao))
+        // Link de confirmação (type=email ou signup) aceito: a boas-vindas do dia sai quando a sessão entrar.
+        if (ok && !retorno.recuperacao && (retorno.tokenHash?.type === 'email' || retorno.tokenHash?.type === 'signup')) confirmouAgora.current = true
         // Cadastro confirmado: volta para onde a pessoa pediu a conta (planos, treinar...).
         irPara(ok ? (retorno.recuperacao ? '/conta' : tomarVoltar() ?? '/') : retorno.recuperacao ? '/conta?modo=recuperar' : '/conta')
         definirCarregando(false)
@@ -104,6 +113,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
         const destinoGoogle = doGoogle && proxima ? concluirGoogle(cliente, proxima.user) : null
         // Link de confirmação do cadastro (?conta=confirmar&code=): mesma volta guardada no cadastro.
         const destinoCadastro = !doGoogle && !deRecuperacao && proxima ? tomarVoltar() : null
+        if (!doGoogle && !deRecuperacao && proxima && url.searchParams.get('conta') === 'confirmar') confirmouAgora.current = true
         url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = destinoGoogle ?? destinoCadastro ?? (falhou && deRecuperacao ? '/conta?modo=recuperar' : '/conta')
         window.history.replaceState(null, '', url.href)
         window.dispatchEvent(new HashChangeEvent('hashchange'))
@@ -122,12 +132,25 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   // Tudo enviado ao servidor: é a hora de ver se um emblema novo pede e-mail de parabéns.
   useEffect(() => {
     if (!sessao?.user.id || status.estado !== 'salvo' || status.pendentes > 0) return
-    const respondidas = Object.keys(ler<Record<string, unknown>>('respondidas', {})).length
+    const mapa = ler<Record<string, RegistroQuestao>>('respondidas', {})
+    const respondidas = Object.keys(mapa).length
     // Sob demanda: a tabela de conquistas (e o bestiário dos flashcards que ela
     // consulta) pesava ~60 KB no código inicial só para esta checagem.
     void import('./emailsMarco').then(({ verificarMarcoEmail }) => verificarMarcoEmail(respondidas)).catch(() => undefined)
     void conferirMinhaIndicacao(sessao.user.id, respondidas)
+    // "Que bom te ver de volta": uma vez por conta e sessão, com o progresso já sincronizado
+    // (a última resposta pode ter sido em outro aparelho). Nenhum erro de e-mail sobe daqui.
+    if (retornoConferido.current !== sessao.user.id) {
+      retornoConferido.current = sessao.user.id
+      void import('./emailsAutomaticos').then(({ conferirRetorno }) => conferirRetorno(mapa, inicioSessao.current)).catch(() => undefined)
+    }
   }, [sessao?.user.id, status.estado, status.pendentes])
+  // Chegou pelo link de confirmação e a sessão entrou: boas-vindas no dia da confirmação (uma vez; o servidor também confere).
+  useEffect(() => {
+    if (!sessao?.user.id || !confirmouAgora.current) return
+    confirmouAgora.current = false
+    void import('./emailsAutomaticos').then(({ avisarConfirmacao }) => avisarConfirmacao()).catch(() => undefined)
+  }, [sessao?.user.id])
   // Perfil preenchido no passo 2 do cadastro antes de confirmar o e-mail: entra na conta agora.
   useEffect(() => {
     if (!supabase || !sessao?.user) return

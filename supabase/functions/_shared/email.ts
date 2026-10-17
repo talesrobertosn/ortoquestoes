@@ -46,6 +46,29 @@ export function site() {
   return (Deno.env.get('APP_ORIGIN') ?? 'https://ortoquestoes.com.br').replace(/\/+$/, '') + '/'
 }
 
+/**
+ * Pede à função `enviar-email` um dos automáticos disparados pelo SERVIDOR (17/10/2026):
+ * "pagamento_aprovado" (webhook do Mercado Pago e gerenciar-plano, ao sincronizar a
+ * cobrança) e "obrigado_tempo" (cancelamento ou reembolso). Autentica com o cabeçalho
+ * x-segredo (EMAIL_SEGREDO); a função é idempotente por pessoa e referência. Nunca lança
+ * erro: um e-mail que não sai não pode derrubar um pagamento nem um cancelamento. Devolve
+ * o resultado da função ou null.
+ */
+export async function pedirAutomaticoServidor(idUsuario: string, tipo: 'pagamento_aprovado' | 'obrigado_tempo', extra: Record<string, unknown> = {}): Promise<string | null> {
+  try {
+    const segredo = Deno.env.get('EMAIL_SEGREDO'), base = Deno.env.get('SUPABASE_URL'), anon = Deno.env.get('SUPABASE_ANON_KEY') ?? ''
+    if (!segredo || !base || !idUsuario || !emailConfigurado()) return null
+    const r = await fetch(`${base}/functions/v1/enviar-email`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', apikey: anon, Authorization: `Bearer ${anon}`, 'x-segredo': segredo },
+      body: JSON.stringify({ acao: 'automatico', tipo, id_usuario: idUsuario, ...extra }),
+    })
+    const dados = await r.json().catch(() => ({})) as { resultado?: string; erro?: string }
+    return dados.resultado ?? dados.erro ?? null
+  } catch {
+    return null
+  }
+}
+
 async function hmac(texto: string) {
   const segredo = Deno.env.get('EMAIL_SEGREDO')
   if (!segredo) throw new Error('email_nao_configurado')

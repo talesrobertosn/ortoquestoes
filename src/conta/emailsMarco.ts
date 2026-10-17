@@ -1,6 +1,7 @@
 import { conquistaAtual } from '../estado/conquistas'
 import { gravar, ler } from '../estado/armazenamento'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
+import { avisarPrimeirasDez } from './emailsAutomaticos'
 
 /**
  * E-mail de parabéns ao atingir um emblema de volume. O site só avisa o
@@ -11,6 +12,8 @@ const CHAVE = 'emails:marco-avisado'
 let ultimaTentativa = 0
 
 export async function verificarMarcoEmail(totalRespondidas: number) {
+  // Primeiras 10 questões (17/10/2026): mesma hora, mesma trava de "uma vez" (emailsAutomaticos).
+  void avisarPrimeirasDez(totalRespondidas).catch(() => undefined)
   const marco = conquistaAtual(totalRespondidas)
   if (!marco || ler<number>(CHAVE, 0) >= marco.minimo) return
   // Uma tentativa a cada 5 minutos no máximo: a sincronização avisa várias vezes seguidas.

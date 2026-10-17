@@ -1,7 +1,7 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
-import { alertarAdministradores } from '../_shared/email.ts'
-import { sincronizarPix } from '../_shared/pix.ts'
+import { alertarAdministradores, pedirAutomaticoServidor } from '../_shared/email.ts'
+import { sincronizarPix, type PedidoPix } from '../_shared/pix.ts'
 
 const planos = {
   mensal: { frequency: 1, transaction_amount: 39.90 },
@@ -50,11 +50,44 @@ function alteracaoDaCobranca(status: string, pagamento: PagamentoMercadoPago, st
   return null
 }
 
-async function assinaturaPorExterno(idExterno: string) {
-  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status`)
+interface AssinaturaResumo { id: string; status: string; id_usuario: string | null; plano: string | null; inicio_periodo: string | null; fim_periodo: string | null; ultima_cobranca_id: string | null }
+async function assinaturaPorExterno(idExterno: string): Promise<AssinaturaResumo | null> {
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status,id_usuario,plano,inicio_periodo,fim_periodo,ultima_cobranca_id`)
   if (!resposta.ok) throw new Error('consulta_assinatura_falhou')
-  const assinaturas = await resposta.json() as Array<{ id: string; status: string }>
+  const assinaturas = await resposta.json() as AssinaturaResumo[]
   return assinaturas[0] ?? null
+}
+
+/**
+ * Cartas automáticas do pagamento (17/10/2026), depois de a assinatura já estar gravada:
+ * "Pagamento aprovado" (recibo gentil; renovação quando já havia cobrança anterior) e
+ * "Obrigado pelo tempo de assinatura" (reembolso, estorno ou cancelamento). A função
+ * enviar-email é idempotente por referência (o id do pagamento); um e-mail que não sai
+ * não muda o resultado do evento.
+ */
+async function cartaDaCobranca(status: string, pagamento: PagamentoMercadoPago, antes: AssinaturaResumo) {
+  if (!antes.id_usuario) return
+  if (status === 'approved') {
+    const depois = await assinaturaPorExterno(String(pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id ?? '')).catch(() => null)
+    await pedirAutomaticoServidor(antes.id_usuario, 'pagamento_aprovado', {
+      referencia: `pg:${pagamento.id}`, plano: depois?.plano ?? antes.plano, inicio_periodo: depois?.inicio_periodo ?? antes.inicio_periodo,
+      fim_periodo: depois?.fim_periodo ?? antes.fim_periodo, meio: pagamento.payment_method_id === 'pix' ? 'pix' : 'cartao',
+      renovacao: !!antes.ultima_cobranca_id && antes.ultima_cobranca_id !== String(pagamento.id),
+    })
+  } else if (status === 'refunded' || status === 'charged_back' || status === 'cancelled') {
+    await pedirAutomaticoServidor(antes.id_usuario, 'obrigado_tempo', { referencia: `fim:${pagamento.id}`, reembolso: status !== 'cancelled', fim_periodo: new Date().toISOString() })
+  }
+}
+
+/** O mesmo para o Pix: o recibo quando o pagamento é aprovado; o obrigado quando é devolvido. */
+async function cartaDoPix(status: string, pedido: PedidoPix, pagamento: PagamentoMercadoPago) {
+  if (status === 'approved') {
+    const r = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(`pix:${pedido.id}`)}&select=plano,inicio_periodo,fim_periodo`)
+    const [a] = r.ok ? await r.json() as Array<{ plano: string | null; inicio_periodo: string | null; fim_periodo: string | null }> : []
+    await pedirAutomaticoServidor(pedido.id_usuario, 'pagamento_aprovado', { referencia: `pg:${pagamento.id}`, plano: a?.plano ?? pedido.plano, inicio_periodo: a?.inicio_periodo ?? null, fim_periodo: a?.fim_periodo ?? null, meio: 'pix', renovacao: false })
+  } else if (status === 'refunded' || status === 'charged_back') {
+    await pedirAutomaticoServidor(pedido.id_usuario, 'obrigado_tempo', { referencia: `fim:${pagamento.id}`, reembolso: true, fim_periodo: new Date().toISOString() })
+  }
 }
 
 async function sincronizarPreapproval(idRecurso: string) {
@@ -107,14 +140,16 @@ async function aplicarCobranca(idAssinatura: string, pagamento: PagamentoMercado
   })
   if (!resposta.ok) throw new Error('atualizacao_cobranca_falhou')
   await marcarEvento(idEvento, 'processado')
+  await cartaDaCobranca(String(pagamento.status ?? ''), pagamento, atual).catch(() => undefined)
 }
 
 async function processarPagamento(idRecurso: string, idEvento: string) {
   const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
   const pagamento = await consultarPagamento(token, idRecurso)
   if (pagamento.payment_method_id === 'pix' && pagamento.external_reference?.startsWith('pix:')) {
-    await sincronizarPix(pagamento)
-    return marcarEvento(idEvento, 'processado')
+    const resultado = await sincronizarPix(pagamento)
+    await marcarEvento(idEvento, 'processado')
+    return cartaDoPix(resultado.status, resultado.pedido, pagamento).catch(() => undefined)
   }
   const idAssinatura = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id
   if (!idAssinatura) return marcarEvento(idEvento, 'ignorado')
