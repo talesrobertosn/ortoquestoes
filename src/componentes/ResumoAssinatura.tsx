@@ -106,7 +106,7 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
       {(garantia || (ativo && !estado?.cancelar_ao_fim)) && <div className="conta-assinatura__escolhas" aria-label="Opções da assinatura">
         {garantia && <section className="conta-assinatura__escolha">
           <h3>Desistir da compra e pedir reembolso integral</h3>
-          <p>Disponível até sete dias após a última cobrança. Se o Mercado Pago confirmar o reembolso, esta assinatura termina, o acesso volta ao gratuito e seu histórico continua salvo.</p>
+          <p>Disponível até <strong>{data(new Date(new Date(estado!.ultima_cobranca_em!).getTime() + 7 * 864e5).toISOString())}</strong>, sete dias depois da última cobrança ({data(estado?.ultima_cobranca_em ?? null)}), inclusive quando ela foi uma renovação automática do cartão. Se o Mercado Pago confirmar o reembolso, esta assinatura termina, o acesso volta ao gratuito e seu histórico continua salvo.</p>
           <button className="botao botao--principal" type="button" disabled={processando} onClick={() => { definirAcaoPendente('reembolsar'); definirMensagem('') }}>Desistir e solicitar reembolso integral</button>
         </section>}
         {ativo && !estado?.cancelar_ao_fim && <section className="conta-assinatura__escolha">

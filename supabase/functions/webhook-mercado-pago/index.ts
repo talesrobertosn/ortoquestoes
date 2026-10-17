@@ -1,6 +1,7 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
-import { alertarAdministradores } from '../_shared/email.ts'
+import { alertarAdministradores, emailConfigurado, enviarEmail, site } from '../_shared/email.ts'
+import { renderizarCarta } from '../_shared/cartas.ts'
 import { sincronizarPix } from '../_shared/pix.ts'
 
 const planos = {
@@ -50,10 +51,12 @@ function alteracaoDaCobranca(status: string, pagamento: PagamentoMercadoPago, st
   return null
 }
 
+interface AssinaturaAtual { id: string; status: string; id_usuario: string; plano: string; ultima_cobranca_em: string | null }
+
 async function assinaturaPorExterno(idExterno: string) {
-  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status`)
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status,id_usuario,plano,ultima_cobranca_em`)
   if (!resposta.ok) throw new Error('consulta_assinatura_falhou')
-  const assinaturas = await resposta.json() as Array<{ id: string; status: string }>
+  const assinaturas = await resposta.json() as AssinaturaAtual[]
   return assinaturas[0] ?? null
 }
 
@@ -107,6 +110,45 @@ async function aplicarCobranca(idAssinatura: string, pagamento: PagamentoMercado
   })
   if (!resposta.ok) throw new Error('atualizacao_cobranca_falhou')
   await marcarEvento(idEvento, 'processado')
+  if (ehRenovacao(atual, pagamento)) await avisarRenovacao(atual, pagamento).catch((erro) => console.error('aviso_renovacao_falhou', String(erro)))
+}
+
+/**
+ * Renovação automática do cartão: cobrança aprovada pelo menos 20 dias depois da anterior (a
+ * primeira cobrança e os avisos repetidos do mesmo pagamento ficam de fora). O mesmo pagamento
+ * não gera dois avisos porque, no segundo, a data gravada já é a dele.
+ */
+function ehRenovacao(atual: AssinaturaAtual, pagamento: PagamentoMercadoPago) {
+  if (pagamento.status !== 'approved' || !pagamento.date_approved || !atual.ultima_cobranca_em || atual.status !== 'ativa') return false
+  return Date.parse(pagamento.date_approved) - Date.parse(atual.ultima_cobranca_em) > 20 * 864e5
+}
+
+const dataBr = (d: Date) => d.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' })
+
+/**
+ * Aviso de renovação (15/10/2026, pedido do Tales): quem renovou sem querer fica sabendo na hora
+ * e tem até 7 dias para desistir com reembolso integral, pelo botão em Detalhes da assinatura.
+ * É correspondência sobre a própria compra, por isso sai mesmo para quem desligou novidades.
+ */
+async function avisarRenovacao(atual: AssinaturaAtual, pagamento: PagamentoMercadoPago) {
+  if (!emailConfigurado()) return
+  const r = await banco('rpc/dados_email_usuario', { method: 'POST', body: JSON.stringify({ p_id: atual.id_usuario }) })
+  if (!r.ok) throw new Error('consulta_usuario_falhou')
+  const [pessoa] = await r.json() as Array<{ email: string | null; nome: string | null }>
+  if (!pessoa?.email) return
+  const nome = pessoa.nome?.trim().split(/\s+/)[0]
+  const cobrado = new Date(pagamento.date_approved!)
+  const prazo = new Date(cobrado.getTime() + 7 * 864e5)
+  const valor = Number(pagamento.transaction_amount ?? 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+  const plano = atual.plano === 'mensal' ? 'mensal' : atual.plano === 'semestral' ? 'semestral' : 'anual'
+  const corpo = [
+    nome ? `Oi, ${nome}, tudo bem?` : 'Oi, tudo bem?',
+    `Seu plano ${plano} do Orto Questões renovou hoje, ${dataBr(cobrado)}, no cartão (${valor}). O acesso continua normalmente, sem você precisar fazer nada.`,
+    `Se a renovação não era o que você queria, sem problema: até ${dataBr(prazo)} você pode desistir e receber o valor integral de volta, com um botão, sem precisar justificar. É só abrir ${site()}#/conta/assinatura e tocar em "Desistir e solicitar reembolso integral". Se preferir só não renovar da próxima vez, no mesmo lugar há a opção de cancelar as próximas renovações.`,
+    'Qualquer dúvida, é só responder este e-mail.',
+  ].join('\n\n')
+  const carta = renderizarCarta({ assunto: `Seu plano ${plano} renovou`, corpo })
+  await enviarEmail(pessoa.email, carta.assunto, carta.html, carta.texto)
 }
 
 async function processarPagamento(idRecurso: string, idEvento: string) {
