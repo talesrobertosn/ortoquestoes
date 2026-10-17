@@ -12,8 +12,9 @@ const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-admin-secoe
 const arquivo = join(pasta, 's.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/componentes/admin/secoes'\nexport * from './src/componentes/admin/ganhos'\nexport * from './src/componentes/admin/agora'\nexport { pedacosAtividade, areaDaQuestao } from './src/componentes/admin/formatos'`, resolveDir: process.cwd(), loader: 'ts' },
+    stdin: { contents: `export * from './src/componentes/admin/secoes'\nexport * from './src/componentes/admin/ganhos'\nexport * from './src/componentes/admin/agora'\nexport { pedacosAtividade, areaDaQuestao } from './src/componentes/admin/formatos'\nexport * as catalogo from './src/componentes/admin/todasCartas'`, resolveDir: process.cwd(), loader: 'ts' },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', logLevel: 'error',
+    define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false', 'import.meta.env': '{}' },
   })
   const m = await import(pathToFileURL(arquivo))
   const ler = (texto) => m.lerUrl(new URLSearchParams(texto))
@@ -24,12 +25,14 @@ try {
   const partes = m.SECOES.flatMap(s => s.abas.map(a => a.id))
   assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas seções')
   // Nenhuma parte some na reorganização.
-  for (const parte of ['agora', 'usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'cartas', 'ajustes'])
+  for (const parte of ['agora', 'usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'cartas', 'todas', 'ajustes'])
     assert.ok(partes.includes(parte), parte)
   assert.equal(m.secaoDe('crescimento'), 'pessoas')
   assert.equal(m.secaoDe('simulados'), 'conteudo')
   assert.equal(m.secaoDe('lembretes'), 'emails')
   assert.equal(m.secaoDe('cartas'), 'emails')
+  assert.equal(m.secaoDe('todas'), 'emails', 'Todas as cartas fica em E-mails')
+  assert.deepEqual(m.definicaoDe('emails').abas.map(a => a.rotulo), ['Lembretes e automáticos', 'Cartas pessoais', 'Todas as cartas'])
   assert.equal(m.secaoDe('pagamentos'), 'financeiro')
   // "Pagamentos" (aba cobrancas) é o dinheiro recebido; "Avisos de pagamento" mantém o endereço ?aba=pagamentos dos e-mails.
   assert.equal(m.secaoDe('cobrancas'), 'financeiro')
@@ -44,7 +47,7 @@ try {
     'aba=opinioes': 'opinioes', 'aba=crescimento': 'crescimento', 'aba=financeiro': 'financeiro', 'aba=assinaturas': 'assinaturas',
     'aba=pagamentos': 'pagamentos', 'aba=cobrancas': 'cobrancas', 'aba=avisos': 'pagamentos', 'aba=configuracoes': 'ajustes', 'aba=avaliacoes': 'conteudo', 'aba=relatos': 'conteudo',
     'aba=receita': 'financeiro', 'aba=pessoas': 'usuarios', 'aba=operacoes': 'lembretes', 'aba=emails': 'lembretes', 'aba=cartas': 'cartas',
-    'aba=simulados': 'simulados', 'aba=lembretes': 'lembretes', 'aba=ajustes': 'ajustes', 'aba=qualquer-coisa': 'agora',
+    'aba=simulados': 'simulados', 'aba=lembretes': 'lembretes', 'aba=todas': 'todas', 'aba=ajustes': 'ajustes', 'aba=qualquer-coisa': 'agora',
   }
   for (const [consulta, aba] of Object.entries(mapa)) assert.equal(ler(consulta).aba, aba, consulta)
   // Os e-mails de alerta levam à vista certa de Conteúdo.
@@ -61,7 +64,7 @@ try {
   assert.equal(ida('aba=hoje'), '/admin')
   // Só endereço antigo é reescrito (sem criar histórico); o atual fica como está.
   for (const antigo of ['aba=geral', 'aba=hoje', 'aba=configuracoes', 'aba=avaliacoes', 'aba=receita', 'aba=operacoes', 'aba=emails', 'aba=xyz']) assert.ok(m.urlAntiga(new URLSearchParams(antigo)), antigo)
-  for (const atual of ['', 'aba=agora', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=cartas', 'aba=ajustes', 'aba=simulados', 'aba=conteudo&vista=relatos']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
+  for (const atual of ['', 'aba=agora', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=cartas', 'aba=todas', 'aba=ajustes', 'aba=simulados', 'aba=conteudo&vista=relatos']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
   // A primeira parte de cada seção é a que abre por padrão.
   assert.deepEqual(m.SECOES.map(s => m.abaPadrao(s.id)), ['agora', 'usuarios', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
 
@@ -160,7 +163,39 @@ try {
   assert.equal(m.pedacosAtividade({ pagina: null }).nome, 'Página ainda não registrada')
   assert.deepEqual(m.BLOCOS_AGORA.map(b => b[0]).slice(0, 2), ['agora-online', 'agora-numeros'])
 
-  console.log('Painel do administrador: 6 seções, endereços antigos, estado na URL, ganhos e a torre de controle de Agora ok.')
+  // ---------- E-mails › Todas as cartas (17/10/2026) ----------
+  // Todo tipo do motor está no catálogo (a carta de estudo aberta nas 9 faixas), cada modelo tem gatilho,
+  // pessoa fictícia e uma amostra que o motor consegue escrever; "sortear" troca a versão; a busca acha pelo texto.
+  {
+    const cat = m.catalogo
+    const modelos = cat.modelosDoCatalogo()
+    const tipos = new Set(modelos.map(x => x.tipo))
+    assert.equal(tipos.size, 24, 'os 24 tipos do motor (18 antigos e 6 novos)')
+    assert.equal(modelos.filter(x => x.tipo === 'ativo').length, 9, 'as 9 faixas')
+    assert.equal(modelos.length, 24 - 1 + 9)
+    assert.equal(new Set(modelos.map(x => x.id)).size, modelos.length, 'id repetido')
+    for (const grupo of ['situacao', 'faixa', 'convite', 'pessoal', 'automatico', 'novo']) assert.ok(modelos.some(x => x.grupo === grupo), grupo)
+    assert.equal(modelos.filter(x => x.grupo === 'novo').length, 6)
+    for (const x of modelos) {
+      assert.ok(x.rotulo && x.descricao && x.gatilho.quando.length >= 10 && x.gatilho.paraQuem.length >= 10 && x.pessoa, `${x.id}: faltou rótulo, descrição, gatilho ou pessoa`)
+      assert.ok(x.versoes >= 5 && x.versoes <= 7, `${x.id}: ${x.versoes} versões`)
+      const carta = cat.amostraDe(x, cat.sementeInicial(x))
+      assert.equal(carta.tipo, x.tipo, x.id)
+      if (x.faixa) assert.equal(carta.faixa, x.faixa)
+      assert.ok(carta.assunto && carta.corpo.includes('P.S.:'), x.id)
+      // Sortear: outra semente dá outra versão (há sempre 5 ou mais).
+      let k = 0
+      const outra = cat.amostraDe(x, cat.outraSemente(x, carta.versao, () => (k += 0.137) % 1))
+      assert.notEqual(outra.versao, carta.versao, `${x.id}: sortear não trocou a versão`)
+      assert.ok(cat.combinaBusca(x, carta, x.rotulo.slice(0, 8)), 'busca pelo rótulo')
+      assert.ok(cat.combinaBusca(x, carta, carta.assunto.split(' ').slice(-1)[0]), 'busca pelo assunto')
+    }
+    assert.equal(modelos.filter(x => x.transacional).map(x => x.tipo).sort().join(','), 'obrigado_tempo,pagamento_aprovado,pix_hoje')
+    assert.ok(!cat.combinaBusca(modelos[0], null, 'xyzw-nada-disso'))
+    assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'voltou'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
+  }
+
+  console.log('Painel do administrador: 6 seções, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }

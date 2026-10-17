@@ -114,3 +114,17 @@ leve → fecho → P.S.
 6. Testes: lista proibida, nenhuma % abaixo de 50%, nenhum número abaixo de 10 questões, 6 a 12 linhas,
    um P.S., no máximo um link. `scripts/amostras-cartas.mjs` regenera MODELOS.md.
 7. Página "Todas as cartas" no painel.
+
+## 7. Fase 2 (17/10/2026, feita)
+
+- Motor: o P.S. nunca repete uma ideia que o corpo já tem (`psRepeteCorpo`); duas frases seguidas
+  não repetem a palavra forte e o fecho troca de frase quando repetiria (`frasesSeguidasRepetem`).
+- Painel: E-mails › Todas as cartas (`src/componentes/admin/AdminTodasCartas.tsx`), com os 24 tipos
+  (a carta de estudo aberta nas 9 faixas), gatilho, para quem, amostra viva pelo motor no navegador,
+  "Sortear outra versão", busca e filtro por grupo.
+- Gatilhos dos seis automáticos novos: no site (`src/conta/emailsAutomaticos.ts`) e no servidor
+  (`pedirAutomaticoServidor`, webhook do Mercado Pago e gerenciar-plano). Teste:
+  `fixtures/testar_gatilhos_email.mjs`.
+- Fica para a parte 31 (SQL): as RPCs devolverem cidade, nascimento, resumos lidos, data da prova do
+  cronograma e último login; os nove e-mails novos com SQL; o índice único por pessoa e referência; e
+  `emails_48h` ignorando os transacionais novos.

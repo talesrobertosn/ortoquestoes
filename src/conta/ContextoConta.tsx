@@ -42,7 +42,8 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   const usuarioAtual = useRef<string | null>(null)
   // A pessoa chegou por um link de confirmação do cadastro: a carta "Boas-vindas no dia da
   // confirmação" sai no primeiro login depois dele (emailsAutomaticos), assim que a sessão existir.
-  const confirmouAgora = useRef(false)
+  // Estado (e não ref): o efeito abaixo precisa rodar de novo quando a confirmação chega depois da sessão.
+  const [confirmouAgora, definirConfirmouAgora] = useState(false)
   // Quando esta sessão começou e para quem já conferimos a volta (uma vez por conta e sessão).
   const inicioSessao = useRef(Date.now())
   const retornoConferido = useRef<string | null>(null)
@@ -71,7 +72,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
         if (ok && retorno.recuperacao) definirRecuperacao(true)
         if (!ok) definirAvisoConta(textoErroLink('otp_expired', retorno.recuperacao))
         // Link de confirmação (type=email ou signup) aceito: a boas-vindas do dia sai quando a sessão entrar.
-        if (ok && !retorno.recuperacao && (retorno.tokenHash?.type === 'email' || retorno.tokenHash?.type === 'signup')) confirmouAgora.current = true
+        if (ok && !retorno.recuperacao && (retorno.tokenHash?.type === 'email' || retorno.tokenHash?.type === 'signup')) definirConfirmouAgora(true)
         // Cadastro confirmado: volta para onde a pessoa pediu a conta (planos, treinar...).
         irPara(ok ? (retorno.recuperacao ? '/conta' : tomarVoltar() ?? '/') : retorno.recuperacao ? '/conta?modo=recuperar' : '/conta')
         definirCarregando(false)
@@ -113,7 +114,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
         const destinoGoogle = doGoogle && proxima ? concluirGoogle(cliente, proxima.user) : null
         // Link de confirmação do cadastro (?conta=confirmar&code=): mesma volta guardada no cadastro.
         const destinoCadastro = !doGoogle && !deRecuperacao && proxima ? tomarVoltar() : null
-        if (!doGoogle && !deRecuperacao && proxima && url.searchParams.get('conta') === 'confirmar') confirmouAgora.current = true
+        if (!doGoogle && !deRecuperacao && proxima && url.searchParams.get('conta') === 'confirmar') definirConfirmouAgora(true)
         url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = destinoGoogle ?? destinoCadastro ?? (falhou && deRecuperacao ? '/conta?modo=recuperar' : '/conta')
         window.history.replaceState(null, '', url.href)
         window.dispatchEvent(new HashChangeEvent('hashchange'))
@@ -147,10 +148,10 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   }, [sessao?.user.id, status.estado, status.pendentes])
   // Chegou pelo link de confirmação e a sessão entrou: boas-vindas no dia da confirmação (uma vez; o servidor também confere).
   useEffect(() => {
-    if (!sessao?.user.id || !confirmouAgora.current) return
-    confirmouAgora.current = false
+    if (!sessao?.user.id || !confirmouAgora) return
+    definirConfirmouAgora(false)
     void import('./emailsAutomaticos').then(({ avisarConfirmacao }) => avisarConfirmacao()).catch(() => undefined)
-  }, [sessao?.user.id])
+  }, [sessao?.user.id, confirmouAgora])
   // Perfil preenchido no passo 2 do cadastro antes de confirmar o e-mail: entra na conta agora.
   useEffect(() => {
     if (!supabase || !sessao?.user) return

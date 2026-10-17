@@ -13,6 +13,7 @@ import { AdminLembretes } from '../componentes/admin/AdminLembretes'
 import { AdminRelatorioMensal } from '../componentes/admin/AdminRelatorioMensal'
 import { AdminEmails } from '../componentes/admin/AdminEmails'
 import { AdminCartas } from '../componentes/admin/AdminCartas'
+import { AdminTodasCartas } from '../componentes/admin/AdminTodasCartas'
 import { AdminSimulados } from '../componentes/admin/AdminSimulados'
 import { SECOES, abaPadrao, definicaoDe, lerUrl, secaoDe, urlAntiga, urlDe, type Aba, type EstadoUrl, type Secao } from '../componentes/admin/secoes'
 import { AdminUsuarios, estaOnline, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
@@ -269,6 +270,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
 
           {aba === 'lembretes' && <><AdminLembretes /><AdminRelatorioMensal /><AdminEmails /></>}
           {aba === 'cartas' && <AdminCartas usuarios={usuarios} />}
+          {aba === 'todas' && <AdminTodasCartas />}
 
           {aba === 'ajustes' && <AdminConfiguracoes />}
         </div>

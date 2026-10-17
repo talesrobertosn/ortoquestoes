@@ -12,7 +12,7 @@ import type { VistaConteudo } from './AdminConteudo'
  * Financeiro · ganhos (resumo, previsão, histórico, base, mês a mês), assinaturas, pagamentos recebidos
  *              (aba 'cobrancas') e avisos de pagamento (aba 'pagamentos', endereço mantido pelos e-mails de alerta)
  * Conteúdo   · relatos e avaliações, editor de questões, opiniões dos flashcards, simulados
- * E-mails    · lembretes, relatório e e-mails automáticos; cartas pessoais em lote
+ * E-mails    · lembretes, relatório e e-mails automáticos; cartas pessoais em lote; todas as cartas (catálogo vivo)
  * Ajustes    · recursos pagos, limite gratuito, pagamentos e aviso no topo do site
  */
 export type Secao = 'agora' | 'pessoas' | 'financeiro' | 'conteudo' | 'emails' | 'ajustes'
@@ -21,7 +21,7 @@ export type Aba =
   | 'usuarios' | 'crescimento'
   | 'financeiro' | 'assinaturas' | 'cobrancas' | 'pagamentos'
   | 'conteudo' | 'questoes' | 'opinioes' | 'simulados'
-  | 'lembretes' | 'cartas'
+  | 'lembretes' | 'cartas' | 'todas'
   | 'ajustes'
 
 export interface DefinicaoSecao { id: Secao; rotulo: string; icone: NomeIcone; abas: Array<{ id: Aba; rotulo: string }> }
@@ -31,7 +31,7 @@ export const SECOES: DefinicaoSecao[] = [
   { id: 'pessoas', rotulo: 'Pessoas', icone: 'grupo', abas: [{ id: 'usuarios', rotulo: 'Usuários' }, { id: 'crescimento', rotulo: 'Crescimento' }] },
   { id: 'financeiro', rotulo: 'Financeiro', icone: 'grafico', abas: [{ id: 'financeiro', rotulo: 'Ganhos' }, { id: 'assinaturas', rotulo: 'Assinaturas' }, { id: 'cobrancas', rotulo: 'Pagamentos' }, { id: 'pagamentos', rotulo: 'Avisos de pagamento' }] },
   { id: 'conteudo', rotulo: 'Conteúdo', icone: 'livro', abas: [{ id: 'conteudo', rotulo: 'Para revisar' }, { id: 'questoes', rotulo: 'Editar questões' }, { id: 'opinioes', rotulo: 'Opiniões dos flashcards' }, { id: 'simulados', rotulo: 'Simulados' }] },
-  { id: 'emails', rotulo: 'E-mails', icone: 'correio', abas: [{ id: 'lembretes', rotulo: 'Lembretes e automáticos' }, { id: 'cartas', rotulo: 'Cartas pessoais' }] },
+  { id: 'emails', rotulo: 'E-mails', icone: 'correio', abas: [{ id: 'lembretes', rotulo: 'Lembretes e automáticos' }, { id: 'cartas', rotulo: 'Cartas pessoais' }, { id: 'todas', rotulo: 'Todas as cartas' }] },
   { id: 'ajustes', rotulo: 'Ajustes', icone: 'filtro', abas: [{ id: 'ajustes', rotulo: 'Ajustes do site' }] },
 ]
 
