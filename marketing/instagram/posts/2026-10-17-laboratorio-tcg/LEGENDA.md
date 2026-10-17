@@ -2,14 +2,14 @@
 
 Gerar: `node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-17-laboratorio-tcg/post.html`
 
-"Faltam 85 dias" vale para 17/10/2026 (prova teórica do TEOT e do TEPOT em 10/01/2027), e as telas do Cronograma em `telas/` foram capturadas no mesmo dia (mostram "Faltam 85 dias"). Se postar em outro dia, troque o número no `post.html` (procure "Faltam") e recapture as telas:
+"Faltam 85 dias" vale para 17/10/2026 (prova teórica do TEOT e do TEPOT em 10/01/2027), e as telas do Cronograma (`marketing/kit/telas/t-*-cronograma-17-10.png`) foram capturadas no mesmo dia (mostram "Faltam 85 dias"). Se postar em outro dia, troque o número no `post.html` (procure "Faltam") e recapture as telas:
 
 ```
 npm run build && npx vite preview --port 4175   # em outro terminal
 E='.cp-tour,.aviso-termos,.status-sincronia,[class*=sincron],[class*=sync]'
 ESCONDER="$E" TEMA=escuro LARGURA=1100 ALTURA=688 ESCALA=2 node marketing/instagram/telas.mjs 'lap-cronograma=cronograma@main'
 ESCONDER="$E" TEMA=escuro node marketing/instagram/telas.mjs 'cel-cronograma=cronograma@main'
-cp marketing/instagram/telas/t-*-cronograma.png marketing/instagram/posts/2026-10-17-laboratorio-tcg/telas/
+# copie para marketing/kit/telas/ com um nome novo (ex.: t-lap-cronograma-DD-MM.png) e troque data-mac e data-tela no post.html
 ```
 
 ## Ordem e horários

@@ -3,7 +3,7 @@
 <!-- Feed, estilo "laboratório de patologia": questão tumores-0309 (TARO 2026), gabarito D (tumor de células gigantes),
      imagem real da questão (radiografias, ressonância e lâmina), com pinos numerados à moda do modelo padrão.
      Stories, estilo "raspadinha": questão pediatria-0120 (TARO 2022), gabarito C (Southwick).
-     Telas reais do Cronograma capturadas em 17/10/2026 com telas.mjs (conta de exemplo, "Tela ilustrativa"), em telas/.
+     Telas reais do Cronograma capturadas em 17/10/2026 com telas.mjs (conta de exemplo, "Tela ilustrativa"), em marketing/kit/telas/*-17-10.png.
      Nenhum desenho de anatomia: a anatomia vem só das imagens das questões.
      "Faltam N dias" calculado para 17/10/2026 (prova teórica do TEOT e do TEPOT em 10/01/2027): procure "Faltam" e atualize se postar outro dia.
      node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-17-laboratorio-tcg/post.html -->
@@ -224,8 +224,8 @@ section.story { height: 1920px; }
 <section id="f3-prova" class="lab">
   <div class="cab"><div class="etq"><b>PRÓXIMO EXAME</b><span>TEOT e TEPOT</span></div><span class="pag">3/3</span></div>
   <div class="f3-topo"><small>A prova está chegando</small><h2>10 de janeiro <em>de 2027</em></h2><p><b>Faltam 85 dias.</b> Fique pronto, prepare-se.</p></div>
-  <div class="mac" data-mac="t-lap-cronograma" style="--w:760px; left:70px; top:400px"></div>
-  <div class="iphone" data-tela="t-cel-cronograma" style="--w:250px; left:770px; top:360px; transform: rotate(4deg)"></div>
+  <div class="mac" data-mac="t-lap-cronograma-17-10" style="--w:760px; left:70px; top:400px"></div>
+  <div class="iphone" data-tela="t-cel-cronograma-17-10" style="--w:250px; left:770px; top:360px; transform: rotate(4deg)"></div>
   <span class="nota-tela" style="right:64px; top:898px">Tela ilustrativa</span>
   <p class="f3-texto">Com o nosso <strong>cronograma</strong>, você faz o maior número de questões possível <strong>sem se esgotar</strong>. Nós planejamos tudo para você.</p>
   <div class="f3-cta"><div class="botao">Treine grátis<svg><use href="#seta"/></svg></div><p>Crie sua conta grátis agora mesmo e conheça outras questões</p></div>
@@ -283,7 +283,7 @@ section.story { height: 1920px; }
     <div class="r3-data"><div><b>10</b><span>janeiro</span></div><div><b>2027</b><span>TEOT · TEPOT</span></div><p>Faltam<br>85 dias</p></div>
     <div class="r3-palco">
       <p class="r3-cron"><span class="selo">Cronograma</span><br>Você faz o maior número de questões possível <strong>sem se cansar tanto</strong>. <strong>Nós planejamos tudo para você.</strong></p>
-      <div class="iphone" data-tela="t-cel-cronograma" style="--w:290px; left:600px; top:0; transform: rotate(4deg)"></div>
+      <div class="iphone" data-tela="t-cel-cronograma-17-10" style="--w:290px; left:600px; top:0; transform: rotate(4deg)"></div>
       <span class="nota-tela" style="left:50px; top:600px; font-size:20px; color:rgba(42,18,64,.5)">Tela ilustrativa</span>
     </div>
     <div class="botao-r">Treine grátis</div>
@@ -293,7 +293,7 @@ section.story { height: 1920px; }
   <p style="position:absolute;left:0;right:0;top:1770px;text-align:center;font:800 32px Jakarta;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4)">ortoquestoes.com.br</p>
 </section>
 <script>
-document.querySelectorAll('[data-tela]').forEach(e => { e.appendChild(document.getElementById('fone').content.cloneNode(true)); e.querySelector('img').src = 'telas/' + e.dataset.tela + '.png' })
-document.querySelectorAll('[data-mac]').forEach(e => { e.appendChild(document.getElementById('mac').content.cloneNode(true)); e.querySelector('img').src = 'telas/' + e.dataset.mac + '.png' })
+document.querySelectorAll('[data-tela]').forEach(e => { e.appendChild(document.getElementById('fone').content.cloneNode(true)); e.querySelector('img').src = '../../../kit/telas/' + e.dataset.tela + '.png' })
+document.querySelectorAll('[data-mac]').forEach(e => { e.appendChild(document.getElementById('mac').content.cloneNode(true)); e.querySelector('img').src = '../../../kit/telas/' + e.dataset.mac + '.png' })
 </script>
 </body></html>
