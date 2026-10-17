@@ -41,6 +41,8 @@ import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, ty
 import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
 import { fraseGratis, recurso } from '../config'
+import { guardarVitrine, sortearVitrine } from '../conta/vitrineAcesso'
+import { MascoteAcesso } from '../componentes/MascoteAcesso'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -102,6 +104,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
   )
+  // A vitrine muda a cada visita e ao trocar entre entrar e criar conta (ver conta/vitrineAcesso.ts).
+  const modoVitrine = modo === 'criar' ? 'criar' : 'entrar'
+  const [vitrine] = useState(() => ({ entrar: sortearVitrine('entrar'), criar: sortearVitrine('criar') }))
+  useEffect(() => { guardarVitrine(vitrine[modoVitrine]) }, [vitrine, modoVitrine])
   // Destino de quem chegou por um convite (planos, treinar, questão avulsa): vale
   // para entrar, para o cadastro e para a volta do Google. Ver conta/passagem.ts.
   const voltar = rotaVoltar(consulta?.get('voltar'))
@@ -472,19 +478,18 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Só e-mail e senha. Depois é confirmar o e-mail.' : modo === 'recuperar' ? 'Informe seu e-mail e enviaremos um link para criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
     return <div className="acesso">
       <aside className="acesso__vitrine">
+        <MascoteAcesso escala={1.5} />
         <p className="acesso__marca"><span>Orto</span> Questões</p>
-        <h1>{modo === 'criar' ? 'Sua preparação, organizada do primeiro ao último dia.' : 'Que bom ter você de volta.'}</h1>
-        <p className="acesso__lide">Questões das provas oficiais com comentário e referência, revisão que se monta sozinha e resumos na ordem em que a prova cobra.</p>
+        <h1 key={vitrine[modoVitrine].titulo}>{vitrine[modoVitrine].titulo}</h1>
+        <p className="acesso__lide">{vitrine[modoVitrine].lide}</p>
         <ul className="acesso__provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
         {/* Uma questão de exemplo, como ela aparece no site (TEOT 2024, via de Hardinge). */}
-        <figure className="acesso__amostra" aria-label="Exemplo de questão comentada">
-          <p className="acesso__amostra-selo"><Icone nome="alvo" tamanho={13} /> TEOT 2024 · Já caiu</p>
-          <p className="acesso__amostra-enunciado">Na via de Hardinge, dissecar mais de 5 cm acima do trocânter coloca em risco o nervo</p>
-          <ul>
-            <li>ciático</li>
-            <li className="acesso__amostra-certa"><Icone nome="certo" tamanho={14} /> glúteo superior</li>
-            <li>femoral</li>
-          </ul>
+        <figure className="acesso__amostra" key={vitrine[modoVitrine].amostra.enunciado} aria-label="Exemplo de questão comentada">
+          <p className="acesso__amostra-selo"><Icone nome="alvo" tamanho={13} /> {vitrine[modoVitrine].amostra.prova} · Já caiu</p>
+          <p className="acesso__amostra-enunciado">{vitrine[modoVitrine].amostra.enunciado}</p>
+          <ul>{vitrine[modoVitrine].ordem.map((i) => i === 0
+            ? <li key="c" className="acesso__amostra-certa"><Icone nome="certo" tamanho={14} /> {vitrine[modoVitrine].amostra.certa}</li>
+            : <li key={i}>{vitrine[modoVitrine].amostra.erradas[i - 1]}</li>)}</ul>
           <figcaption><Icone nome="livro" tamanho={13} /> Comentário com o porquê de cada alternativa</figcaption>
         </figure>
         <ul className="acesso__beneficios">
@@ -492,7 +497,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <li><span><Icone nome="calendario" tamanho={18} /></span>Revisão espaçada montada para você</li>
           <li><span><Icone nome="raio" tamanho={18} /></span>Sequência de dias, ranking e emblemas</li>
         </ul>
-        <div className="acesso__emblemas" aria-hidden="true">{['acertos-50', 'aproveitamento-70', 'bib-dias-7', 'assuntos-30'].map((e) => <img key={e} src={recurso(`emblemas/${e}.png`)} alt="" width={40} height={40} loading="lazy" />)}</div>
+        <div className="acesso__emblemas" aria-hidden="true">{vitrine[modoVitrine].emblemas.map((e) => <img key={e} src={recurso(`emblemas/${e}.png`)} alt="" width={40} height={40} loading="lazy" />)}</div>
         <p className="acesso__rodape">Comece grátis, sem cartão de crédito. Entre de qualquer aparelho e continue de onde parou. {fraseGratis('rodape')}</p>
       </aside>
       <section className="acesso__cartao">
