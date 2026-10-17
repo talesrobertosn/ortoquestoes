@@ -2652,6 +2652,101 @@ comentário fechado com "Por que esta questão foi criada".
   periprotética, pseudartrose, artrose e avulsão da tuberosidade no adulto ficaram fora para manter a
   média de 10 a 12.
 
+## Fratura da diáfise do fêmur (engenharia reversa em 17/10/2026; Rockwood cap. 57)
+
+**Recorte.** `mapear_banca.py` com regex de diáfise do fêmur, haste anterógrada e retrógrada, fossa
+piriforme, fresagem, embolia gordurosa, WINQUIST, controle de dano, colo com diáfise, bloqueio,
+dinamização, trocanter menor, pudendo, tração esquelética, BLUMENSAAT e joelho flutuante, subtema
+"Fratura da diáfise do fêmur": 102 oficiais (93 de TEOT/TARO com quatro alternativas), a maioria
+falsos positivos de piriforme (anatomia e semiologia do quadril). Depois da leitura, **cerca de 30
+itens são de diáfise do fêmur no adulto**: TEOT 2025 (joelho flutuante), TEOT 2024 (2: ponto de
+entrada; arma de fogo), TARO 2024 (padrão do colo associado), TARO 2023 (fraturas associadas), TEOT
+2022 (joelho flutuante e fibular), TARO 2022 (pino de tração), TARO 2021 (2: comprimento
+contralateral; retrógrada no obeso), TARO 2019 (2: colo associado; dois parafusos de bloqueio),
+TARO 2017 (2: haste fresada; compartimento anterior), TARO 2016 (exposta no joelho flutuante), TARO
+2015 (placa com colo ipsilateral), TARO 2013 (2: LCA parcial; AINE e pseudartrose), TARO 2012 (hastes flexíveis na criança), TARO
+2011 (vantagem trocantérica), TARO 2010 (patela baixa), TARO 2006 (4 certo ou errado, sem gabarito),
+SBOT-SP (fraturas associadas) e 6 TEOT/TARO sem ano (exposta anterior ou lateral, colo com implantes
+separados, gastrocnêmio, flexão de 35 a 50 graus, acessos de OSBORNE e BOSWORTH em imagem, pino anterior
+e ossificação; 4,5 vezes da não fresada, este como cópia). Mais o adolescente com fise aberta, cobrado
+em pediatria (TEOT 2021, TEOT 2023, TARO 2026). Cai quase todo ano. Enunciado mediano de 100
+caracteres, alternativa de 26; termina em palavra (76) ou dois-pontos (14); pares em cerca de um
+quarto; gabarito do recorte A19, B17, C30, D23. Simulados já existentes: `conceitos-basicos-0369`,
+`0370`, `0373` a `0376` e `0402` (tração, fresagem, dinamização, troca de haste, pudendo, do capítulo
+1, 10 e 12/13), `trauma-1247` (estresse), `trauma-1530` (acetábulo e retrógrada), `trauma-1554` e
+`trauma-1555` (protocolo de TORNETTA; haste de reconstrução), e, aplicados em paralelo no mesmo dia,
+`trauma-1631` (forças na supracondiliana) e `trauma-1639` (ponto de entrada retrógrado no perfil), do
+capítulo 58.
+
+**Fatos carimbados (com prova e ano):**
+- **Lesões associadas:** tíbia e fíbula, depois costelas e esterno (TARO 2023, `trauma-1053`; SBOT-SP,
+  `trauma-0937`); LCA parcial no joelho (TARO 2013, `trauma-1096`); exposição anterior ou lateral (sem
+  ano, `trauma-0261`).
+- **Colo ipsilateral:** 3% a 10%, basocervical (TARO 2019, `trauma-0022`); basocervical sem desvio
+  (TARO 2024, `trauma-0671`); placa (TARO 2015, `trauma-0130`) e implantes separados (sem ano,
+  `trauma-0280`).
+- **Ponto de entrada anterógrado:** glúteo superior e circunflexa medial na piriforme (TEOT 2024,
+  `trauma-0578`); vantagem trocantérica (TARO 2011, `trauma-0870`); fise aberta, entrada trocantérica e
+  necrose (TEOT 2021, TEOT 2023, TARO 2026).
+- **Retrógrada:** patela baixa (TARO 2010, `trauma-0885`); obeso (TARO 2021, `trauma-0083`); 35 a 50
+  graus (sem ano, `trauma-0898`).
+- **Técnica e biomecânica:** pino transfemoral de medial para lateral (TARO 2022, `trauma-0236`); dois
+  parafusos controlam rotação e encurtamento (TARO 2019, `conceitos-basicos-0018`); haste fresada na
+  estabilidade relativa (TARO 2017, `trauma-0098`); comprimento pelo contralateral (TARO 2021,
+  `trauma-0074`); arma de fogo de baixa energia, haste (TEOT 2024, `trauma-0568`).
+
+**Tendência.** De 2021 para cá: ponto de entrada (2024), fraturas associadas (2023, 2024), retrógrada
+no obeso, comprimento e joelho flutuante. Controle de dano, rotação e pseudartrose ainda não caíram
+no TEOT/TARO do acervo; embolia gordurosa não aparece como tal (o capítulo 57 só discute fresagem e
+SDRA).
+
+**Como o examinador pensa.** Pergunta "a mais comum", o ponto de entrada e o que ele lesa, a
+indicação ou contraindicação, e o número com decisão. Pares cruzam nervo com artéria, sentido com
+estrutura, frequência com local. Distratores: o segundo da lista (costelas, intracraniana), o nervo
+vizinho (glúteo inferior, circunflexa lateral), o item da coluna oposta (gravidez contra patela baixa).
+
+**Divergências e lacunas.**
+- TARO 2011 (`trauma-0870`, gabarito B: trocantérico "evita fratura iatrogênica do fêmur proximal"): o
+  capítulo 57 dá como vantagens da entrada trocantérica o acesso mais fácil (obeso), menos tempo e
+  radiação e, em teoria, menos lesão do glúteo médio e da circunflexa; diz que a discordância entre
+  ponto e curva da haste causa fratura iatrogênica nas duas entradas. A gêmea cobrou o erro do ponto
+  piriforme.
+- TARO 2013 (`trauma-1095`, AINE): o capítulo não discute anti-inflamatório; dá como preditores a
+  fratura exposta e a haste não fresada (e a carga tardia).
+- TARO 2017 (`trauma-0099`, compartimento anterior): o capítulo não ordena os compartimentos; a
+  gêmea cobrou a fasciotomia.
+- Frequência do colo associado: 1% a 9% numa parte e 1% a 10% em outra; despercebido em 20% a 50% e,
+  na tabela 57-3, 30% a 57%. Não cobrar o número exato.
+- Circulação: a artéria nutrícia nutre o "terço interno" numa frase e os "dois terços internos" em
+  outra. Não cobrar a fração.
+- Menisco: uma série tem lateral 28% contra medial 26%, outra medial 20% contra lateral 12%.
+- Troca de haste: o capítulo 57 manda aumentar 1 a 3 mm; o simulado `conceitos-basicos-0376` (outro
+  capítulo) diz 1 a 2 mm.
+- Lacunas com cara de prova (no resumo): 250 Nm; pulmão como órgão mais lesado; transfusão em 40%;
+  ITB menor que 0,90; WINQUIST e OTA 32; raio de curvatura de 120 cm e haste mais reta; parafuso de
+  5 a 6 mm e furo acima de 50%; Bone e EAST em 24 horas, dias 2 a 4 e IL-6; bilaterais com 7,3% a
+  9,6%; perfil do trocanter menor; 5 cm de diáfise para a retrógrada; ossificação 36% contra 9% e
+  traumatismo craniano como principal fator; retirada da haste.
+
+**Destino.** Tema Trauma, subtema "Fratura da diáfise do fêmur" (mais "Fratura do colo do fêmur",
+"Síndrome compartimental" ou "Luxação do joelho e lesões ligamentares" quando o fato é misto).
+
+**Aproveitamento do capítulo 57** (Femoral Shaft Fractures; Adams e Jeray): `trauma-1655` a
+`trauma-1668`, 14 questões, sem figura, 1 caso clínico, gabarito A3/B3/C4/D4, comentário mediano de
+cerca de 4 mil caracteres, cada um fechado com "Por que esta questão foi criada".
+- **Gêmeas:** associadas, órgão e osso (TARO 2023, SBOT-SP); colo primeiro e retrógrada (TARO 2015,
+  sem ano, TARO 2019 e 2024); glúteo superior e TRENDELENBURG (TEOT 2024); ponto piriforme anterior e
+  lateral (TARO 2011); fise aberta (TEOT 2021, TEOT 2023, TARO 2026); gravidez e patela baixa (TARO
+  2010 e 2021); pino tibial de lateral para medial (TARO 2022); fasciotomia lateral (TARO 2017);
+  suporte da perna sadia (TEOT 2022); pseudartrose não ístmica (TARO 2006 e 2013); LCA parcial e exame
+  após a fixação (TARO 2013).
+- **Lacunas:** colo descoberto depois da haste (caso clínico); perfil do trocanter menor e 15 graus;
+  conversão do fixador em menos de 2 semanas.
+- **Substituição:** `trauma-1661` e `trauma-1663` nasceram como ponto de entrada retrógrado e forças
+  deformantes distais; como `trauma-1639` e `trauma-1631` (capítulo 58) foram aplicados ao mesmo
+  tempo com o mesmo fato, o conteúdo dos dois ids foi trocado no lugar pelo pino tibial e pela
+  fasciotomia da coxa (lote_c).
+
 ## Fratura do fêmur distal (engenharia reversa em 17/10/2026; Rockwood cap. 58)
 
 **Recorte.** `mapear_banca.py` com regex de fêmur distal, supracondiliana, intercondiliana, HOFFA,
