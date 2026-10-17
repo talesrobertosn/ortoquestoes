@@ -422,8 +422,8 @@
   /* Espaço para a barra de seções não cobrir o fim da página. */
   .adm { padding-bottom: calc(var(--altura-barra-movel) + env(safe-area-inset-bottom, 0px)); }
   .adm-nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: var(--z-barra); padding: .25rem .25rem calc(.25rem + env(safe-area-inset-bottom, 0px)); border-top: var(--borda); background: var(--superficie); box-shadow: 0 -6px 18px rgba(18, 24, 26, .06); }
-  .adm-nav ul { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .15rem; max-width: 36rem; margin-inline: auto; }
-  .adm-nav__item { flex-direction: column; justify-content: center; gap: .15rem; min-height: 3.25rem; padding: .2rem .1rem; font-size: .72rem; text-align: center; }
+  .adm-nav ul { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .15rem; max-width: 40rem; margin-inline: auto; }
+  .adm-nav__item { flex-direction: column; justify-content: center; gap: .15rem; min-height: 3.25rem; padding: .2rem 0; font-size: .68rem; letter-spacing: -.01em; text-align: center; }
   .adm-nav__item[aria-current="page"] { background: var(--verdete-veu); color: var(--verdete-tinta); }
   .adm-nav__rotulo { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .adm-nav__numero { display: none; }
@@ -647,4 +647,54 @@ button.adm-estudo__item:focus-visible { outline: 2px solid var(--foco); outline-
   .adm-tabela-cartoes .adm-cob__pessoa { max-width: none; flex-wrap: wrap; justify-content: flex-end; }
   .adm-tabela-cartoes .adm-cob__acoes { justify-content: flex-end; gap: .25rem; border-top: var(--borda); margin-top: .3rem; padding-top: .35rem; }
   .adm-tabela-cartoes .adm-cob__acoes:empty { display: none; }
+}
+
+/* ---------- Painel de observação (17/10/2026): Agora e Ganhos ---------- */
+.adm-nav__numero--vivo { background: color-mix(in srgb, var(--acerto) 16%, var(--superficie)); color: var(--acerto); }
+.adm-nav__item[aria-current="page"] .adm-nav__numero--vivo { background: color-mix(in srgb, var(--sobre-destaque) 22%, transparent); color: inherit; }
+.adm-aovivo h3 { gap: .1rem; }
+.adm-aovivo__total { display: inline-grid; place-items: center; min-width: 1.7rem; height: 1.7rem; margin-left: .45rem; padding: 0 .45rem; border-radius: var(--raio-pill); background: var(--acerto); color: var(--sobre-destaque); font-size: .85rem; }
+.adm-aovivo .adm-legenda-cores { margin: 0 0 .5rem; }
+.adm-aovivo > .adm-vazio { margin: 0; }
+.adm-estudo__numeros--seis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.adm-atencao { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem; padding: .7rem .9rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.adm-atencao__titulo { display: inline-flex; align-items: center; gap: .35rem; margin: 0; font-size: .95rem; color: var(--texto); }
+.adm-atencao__itens { display: flex; flex-wrap: wrap; gap: .45rem; flex: 1 1 auto; }
+.adm-atencao__item { display: inline-flex; align-items: center; gap: .45rem; min-height: 40px; padding: .3rem .75rem; border: var(--borda); border-radius: var(--raio-pill); background: var(--superficie-2); color: var(--texto-2); font: inherit; font-size: var(--corpo-menor); cursor: pointer; text-align: left; }
+.adm-atencao__item strong { color: var(--texto); font-size: 1rem; font-variant-numeric: tabular-nums; }
+.adm-atencao__item:hover { border-color: var(--verdete); }
+.adm-atencao__item:focus-visible { outline: 2px solid var(--foco); outline-offset: 2px; }
+.adm-atencao__item--alerta { border-color: color-mix(in srgb, var(--erro) 55%, var(--traco)); background: var(--erro-veu); color: var(--texto); }
+.adm-atencao__item--alerta strong { color: var(--erro); }
+.adm-atencao__item--aviso { border-color: var(--aviso); background: var(--aviso-veu); color: var(--texto); }
+.adm-atencao__item--aviso strong { color: var(--aviso-texto); }
+
+.adm-ganhos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; }
+/* A receita do mês abre o quadro, em largura dupla; hoje ao lado; 7 dias, ano e desde o começo embaixo. */
+.adm-ganhos > :first-child { grid-column: span 2; }
+.adm-ganhos > :first-child strong { font-size: clamp(1.6rem, 2.6vw, 2.2rem); }
+.adm-ganhos .adm-fin-numero strong { font-size: clamp(1.2rem, 1.8vw, 1.6rem); white-space: nowrap; }
+.adm-fin-fechamento { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: .5rem 1.2rem; padding: .85rem 1.1rem; border-radius: var(--raio-cartao); border: 1px dashed color-mix(in srgb, var(--verdete) 45%, var(--traco)); background: var(--verdete-veu); }
+.adm-fin-fechamento > div { display: grid; gap: .1rem; }
+.adm-fin-fechamento span { color: var(--texto-2); font-size: var(--meta); font-weight: 700; }
+.adm-fin-fechamento strong { font-size: 1.7rem; line-height: 1.1; color: var(--verdete); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.adm-fin-fechamento p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; }
+.adm-fin-fechamento p b { color: var(--texto); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.adm-fin-resumo { grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); }
+.adm-fin-resumo .adm-link { justify-self: start; padding: 0; min-height: 0; font-size: .78rem; }
+.adm-fin-fechamento + .adm-grafico, .adm-fin-fechamento + * { margin-top: .35rem; }
+.adm-fin-receber--linha { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+@media (max-width: 55.99rem) {
+  .adm-fin-resumo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .adm-estudo__numeros--seis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .adm-fin-receber.adm-fin-receber--linha { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .adm-fin-fechamento { grid-template-columns: 1fr; }
+}
+@media (max-width: 40rem) {
+  .adm-ganhos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+  .adm-atencao { padding: .65rem; }
+  .adm-atencao__item { width: 100%; border-radius: var(--raio-controle); }
+  .adm-fin-fechamento strong { font-size: 1.45rem; }
 }

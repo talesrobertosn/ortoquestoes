@@ -16,7 +16,7 @@ const MIGRACAO = '202609290200_painel_admin_2.sql'
 const dataCurta = (iso: string) => { const [, m, d] = iso.split('-'); return `${d}/${m}` }
 const dataLonga = (iso: string) => new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: 'short' })
 
-/** Painel › Pessoas › Crescimento: só métricas. Os lembretes por e-mail (ação) foram para Operações. */
+/** Painel › Pessoas › Crescimento: só métricas. Os lembretes por e-mail (ação) foram para E-mails. */
 export function AdminCrescimento({ usuarios, assinaturas }: { usuarios: LinhaUsuario[] | null; assinaturas: AssinaturaBase[] }) {
   const [dias, definirDias] = useState(30)
   const [serie, definirSerie] = useState<Dia[] | null>(null)

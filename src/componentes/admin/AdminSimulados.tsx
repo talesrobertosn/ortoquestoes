@@ -28,7 +28,7 @@ const contarPorTema = (itens: CandidataEdicao[]) => {
   return [...contagem].sort((a, b) => b[1] - a[1]).map(([t, n]) => `${t} ${n}`).join(' · ')
 }
 
-/** Painel › Operações › Simulados: Simulado Nacional do mês e simulado de véspera (antes ficavam em Ajustes). */
+/** Painel › Conteúdo › Simulados: Simulado Nacional do mês e simulado de véspera (antes ficavam em Ajustes). */
 export function AdminSimulados() {
   const [edicoes, definirEdicoes] = useState<Edicao[] | null>(null)
   const [montada, definirMontada] = useState<{ edicao: string; itens: CandidataEdicao[] } | null>(null)

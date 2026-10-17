@@ -25,7 +25,7 @@ interface Linha {
 }
 
 /**
- * Receita › Pagamentos (aba "cobrancas"): o dinheiro que entrou, uma linha por cobrança, da mais nova para a mais
+ * Financeiro › Pagamentos (aba "cobrancas"): o dinheiro que entrou, uma linha por cobrança, da mais nova para a mais
  * antiga, com os totais do período. Sai das mesmas contas do Financeiro (receita.ts), então os
  * totais batem; as devolvidas aparecem riscadas e não somam. Taxa e valor líquido não aparecem
  * porque o banco não guarda a taxa do Mercado Pago (está no extrato dele).
