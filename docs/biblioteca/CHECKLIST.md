@@ -1,6 +1,6 @@
 # Biblioteca: checklist de temas
 
-Para continuar com qualquer agente. **Antes de fazer um tema, leia [README.md](README.md)**: regras do Tales,
+Para continuar com qualquer agente. **Antes de fazer um tema, leia [PILOTO-AUTOMATICO.md](PILOTO-AUTOMATICO.md)** (o roteiro inteiro) e [README.md](README.md): regras do Tales,
 passo a passo (extrair o PDF, engenharia reversa das questões, escrever, gerar, conferir), formato de
 autoria e testes. O resumo de referência, que mostra o nível esperado, é
 [`conteudo/biblioteca/rockwood10-53-colo-femur.md`](../../conteudo/biblioteca/rockwood10-53-colo-femur.md).

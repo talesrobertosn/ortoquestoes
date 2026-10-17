@@ -39,6 +39,9 @@ e consulte e atualize os mapas da banca em
 Antes de cada capítulo, faça a engenharia reversa do assunto (seção "Engenharia reversa por tema" de
 [docs/padrao-questoes-simulado-teot-taro.md](docs/padrao-questoes-simulado-teot-taro.md)) e escreva o lote a partir dela.
 
+Roteiro completo e autônomo (pedido do Tales, 17/10/2026: basta ele dizer "faça resumo disso"):
+[docs/biblioteca/PILOTO-AUTOMATICO.md](docs/biblioteca/PILOTO-AUTOMATICO.md).
+
 Pedido do dono (16/10/2026) sobre capítulos novos: ele pode pedir **só o resumo**, **só as questões** ou
 **os dois**. Nos dois, faça **primeiro os OrtoQuestões Simulados e depois o resumo** (que cita os simulados novos em
 `treino=`). Antes de escrever qualquer um, leia as questões que já caíram e os simulados que já existem (engenharia
