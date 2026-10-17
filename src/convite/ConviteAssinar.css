@@ -1,6 +1,6 @@
 /* Convite gentil para assinar (ConviteAssinar.tsx). */
 .ca-fundo { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; padding: 1rem; background: rgba(8, 18, 16, 0.55); backdrop-filter: blur(3px); animation: ca-aparece 0.25s ease-out; }
-.ca-janela { position: relative; width: min(46rem, 100%); max-height: calc(100dvh - 2rem); overflow: auto; display: grid; grid-template-columns: 17rem minmax(0, 1fr); border-radius: 22px; background: var(--superficie); color: var(--texto); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); animation: ca-sobe 0.35s cubic-bezier(.2, .9, .3, 1.2); }
+.ca-janela { position: relative; width: min(46rem, 100%); max-height: calc(100dvh - 2rem); overflow: auto; display: grid; grid-template-columns: 19rem minmax(0, 1fr); border-radius: 22px; background: var(--superficie); color: var(--texto); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); animation: ca-sobe 0.35s cubic-bezier(.2, .9, .3, 1.2); }
 .ca-janela__fechar { position: absolute; top: 0.6rem; right: 0.6rem; z-index: 2; display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border: 0; border-radius: 50%; background: var(--superficie-2); color: var(--texto-2); cursor: pointer; }
 .ca-janela__fechar:hover { color: var(--texto); }
 
@@ -8,12 +8,9 @@
 .ca-arte { position: relative; overflow: hidden; min-height: 22rem; background: linear-gradient(180deg, #14233f 0%, #24406b 45%, #3f7a78 78%, #6aa889 100%); }
 .ca-arte__lua { position: absolute; top: 9%; right: 14%; width: 2.6rem; height: 2.6rem; border-radius: 50%; background: #fdf3c4; box-shadow: 0 0 30px rgba(253, 243, 196, 0.55), inset -8px -4px 0 #e9d78f; }
 .ca-arte__estrela { position: absolute; width: 4px; height: 4px; background: #fff; box-shadow: 0 0 6px #fff; animation: ca-pisca 2.4s ease-in-out infinite; }
-.ca-arte__calendario { position: absolute; left: 1.1rem; top: 32%; width: 9.2rem; padding: 0.6rem 0.65rem 0.55rem; border-radius: 12px; background: #fffaf0; color: #23312f; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35); transform: rotate(-4deg); animation: ca-flutua 5s ease-in-out infinite; }
+.ca-arte__calendario { position: absolute; left: 0.9rem; right: 0.9rem; top: 30%; margin: 0; padding: 0.55rem 0.55rem 0.45rem; border-radius: 12px; background: #fffaf0; color: #23312f; box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4); transform: rotate(-3deg); animation: ca-flutua 5s ease-in-out infinite; }
+.ca-arte__calendario img { display: block; width: 100%; height: auto; border-radius: 6px; }
 .ca-arte__calendario p { margin: 0 0 0.35rem; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #2c6f63; }
-.ca-arte__calendario ol { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; margin: 0; padding: 0; list-style: none; }
-.ca-arte__calendario li { aspect-ratio: 1; border-radius: 3px; background: color-mix(in srgb, var(--ca-cor) 28%, #fff); border-bottom: 3px solid var(--ca-cor); }
-.ca-arte__calendario li.feito { background: var(--ca-cor); }
-.ca-arte__calendario li.hoje { outline: 2px solid #e2a514; outline-offset: 1px; animation: ca-pulsa 1.6s ease-in-out infinite; }
 .ca-arte__calendario small { display: flex; align-items: center; gap: 0.25rem; margin-top: 0.4rem; font-size: 0.62rem; font-weight: 700; color: #5a6b68; }
 .ca-arte__chao { position: absolute; left: 0; right: 0; bottom: 0; height: 18px; background: repeating-linear-gradient(90deg, #2e5a43 0 16px, #355f48 16px 32px); box-shadow: 0 -4px 0 #4f8a62; }
 .ca-arte .mascote-acesso.ca-arte__mascote { right: 0.4rem; bottom: 14px; }
@@ -43,8 +40,8 @@
 
 @media (max-width: 40rem) {
   .ca-janela { grid-template-columns: 1fr; }
-  .ca-arte { min-height: 10.5rem; }
-  .ca-arte__calendario { top: 1rem; left: 1rem; width: 8.4rem; }
+  .ca-arte { min-height: 12.5rem; }
+  .ca-arte__calendario { top: 1rem; left: 0.7rem; right: 9.5rem; padding: 0.4rem 0.4rem 0.35rem; }
   .ca-arte .mascote-acesso.ca-arte__mascote { display: block; right: 0.6rem; }
   .ca-corpo { padding: 1.1rem 1.1rem 1rem; }
   .ca-acoes .botao { flex: 1 1 100%; }
@@ -56,5 +53,5 @@
 @keyframes ca-flutua { 0%, 100% { translate: 0 0; } 50% { translate: 0 -5px; } }
 @keyframes ca-pisca { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
 @keyframes ca-pulsa { 0%, 100% { outline-color: #e2a514; } 50% { outline-color: transparent; } }
-@media (prefers-reduced-motion: reduce) { .ca-fundo, .ca-janela, .ca-pequeno, .ca-pequeno__mascote, .ca-arte__calendario, .ca-arte__estrela, .ca-arte__calendario li.hoje { animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { .ca-fundo, .ca-janela, .ca-pequeno, .ca-pequeno__mascote, .ca-arte__calendario, .ca-arte__estrela { animation: none !important; } }
 .ca-arte .mascote-acesso.ca-arte__mascote { display: block; }

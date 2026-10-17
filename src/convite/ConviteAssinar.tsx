@@ -126,11 +126,12 @@ export default function ConviteAssinar({ caminho }: { caminho: string }) {
         <div className="ca-arte" aria-hidden="true">
           <span className="ca-arte__lua" />
           {[12, 28, 46, 63, 81, 90].map((x, i) => <span key={x} className="ca-arte__estrela" style={{ left: `${x}%`, top: `${12 + (i % 3) * 11}%`, animationDelay: `${i * 0.4}s` }} />)}
-          <div className="ca-arte__calendario">
-            <p>Seu plano</p>
-            <ol>{Array.from({ length: 14 }, (_, i) => <li key={i} className={i < 5 ? 'feito' : i === 5 ? 'hoje' : ''} style={{ ['--ca-cor' as string]: ['#e05d5d', '#3d8bd9', '#2fa58c', '#d9a23d', '#8a63d2'][i % 5] }} />)}</ol>
-            <small><Icone nome="relogio" tamanho={11} /> hoje · ~1h</small>
-          </div>
+          {/* Print real do calendário do cronograma (Tales, 17/10/2026): duas semanas feitas e o dia de hoje. */}
+          <figure className="ca-arte__calendario">
+            <p>Seu cronograma</p>
+            <img src={recurso('convite/calendario-real.webp')} width={760} height={279} alt="" loading="lazy" draggable={false} />
+            <small><Icone nome="certo" tamanho={11} /> dias feitos · o de hoje já pronto</small>
+          </figure>
           <MascoteAcesso escala={1.4} className="ca-arte__mascote" />
           <span className="ca-arte__chao" />
         </div>
