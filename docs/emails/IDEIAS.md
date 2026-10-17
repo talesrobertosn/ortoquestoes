@@ -59,9 +59,13 @@ em [PLANO.md](PLANO.md).
   do cronograma e último login; os nove e-mails novos com SQL (seção 4 do PLANO); um índice único
   por pessoa e referência para as cartas automáticas; e `emails_48h` passando a ignorar os
   transacionais novos.
-- [ ] **Ligar o site e o webhook** aos seis automáticos (onde chamar cada um está no relatório da
-  entrega de 17/10/2026 e no cabeçalho de `supabase/functions/enviar-email/index.ts`).
-- [ ] **Página "Todas as cartas"** no painel, com amostra viva de cada tipo e "sortear outra versão".
+- [x] **Ligar o site e o webhook** aos seis automáticos (fase 2, 17/10/2026): `src/conta/emailsAutomaticos.ts`
+  (boas-vindas do dia, primeiras 10, voltou, cronograma pronto) e `pedirAutomaticoServidor` em
+  `_shared/email.ts` (pagamento aprovado e obrigado pelo tempo, pelo webhook e por gerenciar-plano).
+- [x] **Página "Todas as cartas"** no painel (E-mails › Todas as cartas), com amostra viva de cada tipo,
+  gatilho, para quem, busca, filtro por grupo e "sortear outra versão".
+- [x] **P.S. que não repete o corpo e fecho que não repete a palavra forte** da frase anterior
+  ("fiquei feliz" / "Fico feliz"): regras no motor e nos testes (fase 2).
 
 ## Descartado
 

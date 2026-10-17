@@ -3,7 +3,8 @@
 // as situações, faixas e fatos: a lista proibida de docs/emails/TOM.md; nenhuma porcentagem abaixo
 // de 50%; nenhum número de questões abaixo de 10; 6 a 12 linhas de corpo; exatamente um P.S.; no
 // máximo um link; nada de "undefined/null/NaN/0 questões"; assuntos com até 55 caracteres e com o
-// nome; o teto de cadência (48 h / 3 em 14 dias); e os seis automáticos novos.
+// nome; o P.S. não repete uma ideia do corpo e duas frases seguidas não repetem a palavra forte;
+// o teto de cadência (48 h / 3 em 14 dias); e os seis automáticos novos.
 import assert from 'node:assert/strict'
 import { build } from 'esbuild'
 import { mkdtemp, rm } from 'node:fs/promises'
@@ -38,6 +39,20 @@ try {
     /\bobrigad[ao] por (ter )?assinad[ao]/i, /(?<!cabeça )(?<!mente )\b(des)?cansad[ao]\b/i, /\bpreparad[ao]\b/i, /\bmesmo cansad/i,
   ]
   const tomOk = (texto, contexto) => { for (const re of TOM_PROIBIDO) assert.ok(!re.test(texto), `${contexto}: expressão proibida (${re}):\n${texto}`) }
+  // Redundância (fase 2, 17/10/2026): (a) o P.S. não repete uma ideia que já está no corpo
+  // (responder, sono, comentário das alternativas, serviço, relatar, café, ranking, resumo…);
+  // (b) duas frases seguidas não repetem a mesma palavra forte ("fiquei feliz" / "Fico feliz").
+  const IDEIAS = [/respond/i, /\bsono\b|dormir/i, /comentário das alternativas|alternativas erradas/i, /serviço|hospital|santa casa/i, /relat(ar|o)\b/i, /\bcafé\b/i, /ranking/i, /resumos? da biblioteca|leu o resumo|lendo os resumos/i, /dez minutos/i, /\bcolega\b/i, /aniversário/i, /seguidos/i, /madrugada/i, /\bfeliz\b/i, /tor[cç]/i, /\bleio\b/i]
+  const FORTES = [/\bfeliz\b/i, /\borgulho\b/i, /\bbonit[ao]\b/i, /\badmir/i, /\btor[cç]/i, /\bcarinho\b/i, /\bparab[ée]ns\b/i]
+  const semRedundancia = (texto, contexto) => {
+    const corpoSemPS = texto.split('\n').filter((l) => !/^P\.S\.:/.test(l) && !/^Um abraço,|^Tales, do Orto|^--|^Se preferir não receber/.test(l)).join('\n')
+    const ps = (texto.match(/^P\.S\.:.*$/m) ?? [''])[0].replace(/^P\.S\.:\s*/, '')
+    for (const re of IDEIAS) assert.ok(!(re.test(ps) && re.test(corpoSemPS)), `${contexto}: o P.S. repete uma ideia do corpo (${re}):\n${texto}`)
+    assert.equal(m.psRepeteCorpo(ps, corpoSemPS), false, `${contexto}: psRepeteCorpo achou repetição:\n${texto}`)
+    const frases = corpoSemPS.split(/(?<=[.!?])\s+|\n+/).map((f) => f.trim()).filter(Boolean)
+    for (let i = 1; i < frases.length; i++) for (const re of FORTES) assert.ok(!(re.test(frases[i]) && re.test(frases[i - 1])), `${contexto}: duas frases seguidas com a mesma palavra forte (${re}):\n"${frases[i - 1]}" / "${frases[i]}"`)
+    assert.equal(m.frasesSeguidasRepetem(corpoSemPS), null, `${contexto}: frasesSeguidasRepetem:\n${texto}`)
+  }
 
   let conferidas = 0
   /** Confere uma carta pronta (do motor) e devolve o e-mail renderizado. */
@@ -65,6 +80,7 @@ try {
     assert.ok(!/<img|<table|background:#146b61|<button/i.test(e.html), `${contexto}: HTML com cara de propaganda`)
     assert.ok(!/R\$\s?\d/.test(e.texto), `${contexto}: preço`)
     tomOk(tudo, contexto)
+    semRedundancia(carta.corpo, contexto)
     // Acerto só com 30 questões e 50% ou mais; nunca na mesma carta em que a área a melhorar entra.
     if (perfil) {
       const acerto = m.acertoCitavel(perfil)
@@ -284,6 +300,7 @@ try {
     assert.ok(e.texto.includes('Um abraço,\nTales, do Orto Questões'), contexto)
     assert.equal((e.texto.match(/P\.S\.:/g) ?? []).length, 1, `${contexto}: um P.S.\n${e.texto}`)
     tomOk(`${e.assunto}\n${e.texto}`, contexto)
+    semRedundancia(e.texto, contexto)
   }
   const marco = auto.emailMarco({ nome: 'Ana Paula', marco: auto.MARCOS[3], respondidas: 510, acertos: 370, erros: 130, respondidas7d: 80, site: SITE, linkDescadastro: desc, hoje: HOJE })
   assert.ok(/500/.test(marco.assunto + marco.texto) && marco.texto.includes(desc), 'marco')
@@ -404,7 +421,19 @@ try {
   }
   assert.ok(conferidas >= 5000, `poucas cartas conferidas (${conferidas})`)
 
-  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length} automáticos novos), ${conferidas} cartas conferidas: lista proibida do TOM, nenhuma porcentagem abaixo de 50% (${baixos} cartas), nenhum número de questões abaixo de 10, 6 a 12 linhas, um P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias) e tom em ${sorteios} sorteios.`)
+  // 14. As duas funções de redundância, nos exemplos que motivaram a regra.
+  assert.equal(m.psRepeteCorpo('P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.', 'Se quiser me contar o que aconteceu nessas semanas, é só responder. Eu leio tudo.'), true)
+  assert.equal(m.psRepeteCorpo('P.S.: cuida do sono. Ele conta como estudo.', 'Vi que você estuda até de madrugada. Já estive aí, e lembro com carinho que o sono também é estudo.'), true)
+  assert.equal(m.psRepeteCorpo('P.S.: toma um café por mim antes da próxima sessão.', 'Se quiser me contar como foi, é só responder.'), false)
+  assert.equal(m.frasesSeguidasRepetem('Vi as 35 questões desta última semana, e fiquei feliz. Fico feliz de acompanhar o seu caminho.'), 'feliz')
+  assert.equal(m.frasesSeguidasRepetem('Vi as 35 questões desta última semana, e fiquei feliz. Estou torcendo por você.'), null)
+  assert.equal(m.frasesSeguidasRepetem('Vi as 35 questões desta última semana, e fiquei feliz.\n\nFico feliz de acompanhar o seu caminho.'), 'feliz')
+  // Um perfil que puxa "fiquei feliz" (ritmo da semana, ranking) em milhares de sorteios nunca sai com dois "feliz" seguidos nem com P.S. repetido.
+  const puxaFeliz = rico(72, { semana: 80, posicaoRanking: 8 })
+  for (const tipo of ['ativo', 'convite_50', 'voltou', 'marco', 'opiniao', 'obrigado_assinatura'])
+    for (let s = 1; s <= 200; s++) semRedundancia(gerar({ ...puxaFeliz, diasParado: tipo === 'voltou' ? 15 : 0 }, { tipo, semente: s, marco: 250 }).corpo, `${tipo} puxa-feliz #${s}`)
+
+  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length} automáticos novos), ${conferidas} cartas conferidas: lista proibida do TOM, nenhuma porcentagem abaixo de 50% (${baixos} cartas), nenhum número de questões abaixo de 10, 6 a 12 linhas, um P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias), P.S. sem repetir o corpo, nenhuma palavra forte em frases seguidas e tom em ${sorteios} sorteios.`)
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }

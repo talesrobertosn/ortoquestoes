@@ -9,7 +9,8 @@
 //  3. Pessoas › Usuários sem repetir os números de hoje nem o "ao vivo";
 //  4. Financeiro › Ganhos: hoje, 7 dias, mês, ano, desde o começo e a previsão de fechamento;
 //  5. endereços antigos (?aba=hoje, receita, operacoes, configuracoes) abrindo no lugar novo;
-//  6. capturas no computador (1366 px) e no celular (390 px), claro e escuro.
+//  6. E-mails › Todas as cartas (17/10/2026): 32 cartões escritos pelo motor no navegador, filtro, busca, sortear, prévia;
+//  7. capturas no computador (1366 px) e no celular (390 px), claro e escuro.
 //
 // Uso: node fixtures/e2e_painel_admin.mjs   (CHROMIUM=/caminho para outro navegador)
 // Capturas em $CAPTURAS (padrão: pasta temporária).
@@ -118,7 +119,9 @@ function usuarioFalso(id) {
 }
 
 // ---------------- Site e navegador ----------------
-const site = await createServer({ server: { port: 5300 + Math.floor(Math.random() * 500), strictPort: false }, logLevel: 'error' })
+// fs.allow com o caminho real de node_modules: num worktree com atalho, as fontes ficavam fora da lista do Vite.
+const { realpathSync } = await import('node:fs')
+const site = await createServer({ server: { port: 5300 + Math.floor(Math.random() * 500), strictPort: false, fs: { allow: [process.cwd(), realpathSync('node_modules')] } }, logLevel: 'error' })
 await site.listen()
 const BASE = site.resolvedUrls.local[0]
 const navegador = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
@@ -244,8 +247,49 @@ try {
   // Conteúdo, E-mails e Ajustes abrem.
   await pc.p.locator('.adm-nav__item', { hasText: 'E-mails' }).click()
   await pc.p.waitForTimeout(800)
-  assert.deepEqual(await pc.p.locator('.adm-parte span').allInnerTexts(), ['Lembretes e automáticos', 'Cartas pessoais'])
+  assert.deepEqual(await pc.p.locator('.adm-parte span').allInnerTexts(), ['Lembretes e automáticos', 'Cartas pessoais', 'Todas as cartas'])
   await foto(pc.p, 'emails-1366')
+  // E-mails › Todas as cartas (17/10/2026): o catálogo vivo, escrito pelo motor no navegador.
+  await pc.p.locator('.adm-parte', { hasText: 'Todas as cartas' }).click()
+  await pc.p.waitForSelector('.tc-cartao', { timeout: 15_000 })
+  await pc.p.waitForFunction(() => location.hash === '#/admin?aba=todas', null, { timeout: 5_000 })
+  assert.equal(await pc.p.locator('.tc-cartao').count(), 32, '24 tipos com a carta de estudo aberta nas 9 faixas')
+  const todas = await pc.p.locator('.tc').innerText()
+  for (const t of ['32 modelos', '24 tipos', 'versões escritas à mão', 'Plano da reescrita', 'docs/emails/PLANO.md', 'Quando sai', 'Para quem', 'Amostra para', 'Sortear outra versão', 'Boas-vindas no dia da confirmação', 'Pagamento aprovado', 'Transacional', 'Estudando, acerto 90% ou mais', 'Tales, do Orto Questões', 'P.S.:'])
+    assert.ok(todas.includes(t), `Todas as cartas sem "${t}": ${todas.slice(0, 400)}`)
+  assert.equal(await pc.p.locator('.tc [role="alert"]').count(), 0, 'alguma amostra não foi escrita')
+  // Toda carta tem assunto, um P.S. e a assinatura; nenhuma cita preço.
+  const cartoes = await pc.p.locator('.tc-cartao').allInnerTexts()
+  for (const c of cartoes) { assert.match(c, /Assunto/); assert.equal((c.match(/P\.S\.:/g) ?? []).length, 1, c.slice(0, 80)); assert.ok(!/R\$/.test(c)) }
+  // Filtro por grupo e busca por texto.
+  await pc.p.locator('.tc .adm-chip', { hasText: /^Novos/ }).click()
+  assert.equal(await pc.p.locator('.tc-cartao').count(), 6)
+  await pc.p.locator('.tc .adm-chip', { hasText: /^Faixas/ }).click()
+  assert.equal(await pc.p.locator('.tc-cartao').count(), 9)
+  await pc.p.locator('.tc .adm-chip', { hasText: /^Todas/ }).click()
+  await pc.p.locator('.tc input[type="search"]').fill('reembolso')
+  assert.ok((await pc.p.locator('.tc-cartao').count()) >= 1 && (await pc.p.locator('.tc-cartao').count()) < 32)
+  assert.match(await pc.p.locator('.tc-cartao').first().innerText(), /Obrigado pelo tempo|reembolso/i)
+  await pc.p.locator('.tc input[type="search"]').fill('')
+  assert.equal(await pc.p.locator('.tc-cartao').count(), 32)
+  // Sortear outra versão troca o texto do cartão (e só dele).
+  const primeiro = pc.p.locator('.tc-cartao').first()
+  const segundo = pc.p.locator('.tc-cartao').nth(1)
+  const antesPrimeiro = await primeiro.locator('.tc-amostra__versao').innerText(), antesSegundo = await segundo.locator('.tc-amostra__versao').innerText()
+  await primeiro.getByRole('button', { name: 'Sortear outra versão' }).click()
+  await pc.p.waitForTimeout(200)
+  assert.notEqual(await primeiro.locator('.tc-amostra__versao').innerText(), antesPrimeiro, 'sortear não trocou a versão')
+  assert.equal(await segundo.locator('.tc-amostra__versao').innerText(), antesSegundo, 'sortear mexeu em outro cartão')
+  // "Ver como chega" abre a prévia exata (iframe com o HTML que sai).
+  await primeiro.getByRole('button', { name: 'Ver como chega' }).click()
+  await pc.p.waitForSelector('.tc .ce-previa iframe', { timeout: 5_000 })
+  await primeiro.getByRole('button', { name: 'Fechar prévia' }).click()
+  assert.ok(await pc.p.evaluate(() => document.documentElement.scrollWidth <= 1366), 'Todas as cartas rola de lado no computador')
+  await foto(pc.p, 'todas-cartas-1366')
+  await pc.p.evaluate(() => { document.documentElement.dataset.tema = 'escuro' })
+  await pc.p.waitForTimeout(300)
+  await foto(pc.p, 'todas-cartas-1366-escuro')
+  await pc.p.evaluate(() => { document.documentElement.dataset.tema = 'claro' })
   await pc.p.locator('.adm-nav__item', { hasText: 'Conteúdo' }).click()
   await pc.p.waitForTimeout(500)
   assert.ok((await pc.p.locator('.adm-parte span').allInnerTexts()).includes('Simulados'))
@@ -294,6 +338,13 @@ try {
   await abrir(cel.p, '?aba=usuarios')
   await cel.p.waitForSelector('.adm-usuarios')
   await foto(cel.p, 'pessoas-390')
+  // Todas as cartas no celular: um cartão por linha, sem rolagem de lado, botões alcançáveis.
+  await abrir(cel.p, '?aba=todas')
+  await cel.p.waitForSelector('.tc-cartao', { timeout: 15_000 })
+  assert.equal(await cel.p.locator('.tc-cartao').count(), 32)
+  assert.ok(await cel.p.evaluate(() => document.documentElement.scrollWidth) <= 390, 'Todas as cartas rola de lado no celular')
+  assert.ok(await cel.p.evaluate(() => [...document.querySelectorAll('.tc-cartao')].every(c => c.getBoundingClientRect().width <= 390 - 2 * 12)), 'cartão mais largo que a tela')
+  await foto(cel.p, 'todas-cartas-390')
   await cel.c.close()
 
   assert.deepEqual(erros, [], 'erros na página: ' + erros.join(' | '))

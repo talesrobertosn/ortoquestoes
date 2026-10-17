@@ -1,0 +1,30 @@
+/* E-mails › Todas as cartas (17/10/2026): o catálogo vivo de todos os tipos de carta. */
+.tc-links { line-height: 1.6; }
+.tc-links a { display: inline-flex; align-items: center; gap: .2rem; color: var(--verdete); font-weight: 650; }
+.tc-filtros { display: grid; gap: .75rem; }
+.tc-busca { max-width: 32rem; }
+.tc-grade { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr)); align-items: start; }
+.tc-cartao { display: grid; gap: .7rem; min-width: 0; padding: 1rem 1.1rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie-2, var(--superficie)); }
+.tc-cartao__cabeca { display: grid; gap: .4rem; }
+.tc-cartao__cabeca h3 { margin: 0; font-size: 1.05rem; line-height: 1.3; overflow-wrap: anywhere; }
+.tc-cartao__selos { display: flex; flex-wrap: wrap; gap: .35rem; }
+.tc-cartao__descricao { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.tc-gatilho { display: grid; gap: .45rem; margin: 0; padding: .6rem .75rem; border-radius: var(--raio-controle, 10px); background: var(--verdete-veu); font-size: var(--corpo-menor); }
+.tc-gatilho div { display: grid; gap: .1rem; }
+.tc-gatilho dt { display: inline-flex; align-items: center; gap: .3rem; font-weight: 700; color: var(--verdete-tinta, var(--verdete)); }
+.tc-gatilho dd { margin: 0; color: var(--texto); overflow-wrap: anywhere; }
+.tc-amostra { display: grid; gap: .45rem; padding: .75rem .85rem; border: var(--borda); border-radius: var(--raio-controle, 10px); background: var(--superficie); }
+.tc-amostra__pessoa { display: flex; align-items: center; gap: .3rem; flex-wrap: wrap; margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.tc-amostra__assunto { margin: 0; padding-bottom: .4rem; border-bottom: var(--borda); font-size: var(--corpo-menor); overflow-wrap: anywhere; }
+.tc-amostra__assunto span { display: inline-block; min-width: 3.6rem; color: var(--texto-2); }
+.tc-amostra__corpo { display: grid; gap: .55rem; font-family: var(--fonte-texto); font-size: .95rem; line-height: 1.5; color: var(--texto); }
+.tc-amostra__corpo p { margin: 0; overflow-wrap: anywhere; }
+.tc-amostra__assinatura { color: var(--texto-2); }
+.tc-amostra__versao { font-variant-numeric: tabular-nums; }
+.tc-cartao__acoes { display: flex; flex-wrap: wrap; gap: .5rem .75rem; align-items: center; }
+.tc-cartao__acoes .botao { display: inline-flex; align-items: center; gap: .4rem; }
+.tc .ce-previa iframe { height: 26rem; }
+@media (max-width: 40rem) {
+  .tc-cartao { padding: .85rem .9rem; }
+  .tc-gatilho, .tc-amostra { padding: .6rem .7rem; }
+}

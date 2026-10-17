@@ -532,8 +532,11 @@ export interface Ctx {
   tempo: () => string
   dica: () => string
   fecho: () => string | null
-  /** O P.S., sempre presente: a linha mais humana da carta. */
-  ps: () => string
+  /**
+   * O P.S., sempre presente: a linha mais humana da carta. Com `corpo` (o texto já
+   * escrito), evita um P.S. que repita uma ideia que o corpo já tem (psRepeteCorpo).
+   */
+  ps: (corpo?: string) => string
   /** Benefícios reais da assinatura, os mais ligados ao perfil primeiro. */
   beneficios: (k: number, curto?: boolean) => string[]
   /** "há 3 dias", "ontem", "hoje". */
@@ -697,6 +700,64 @@ const CHAVES_FECHO = ['respond', 'torc', 'acompanh', 'conte comigo', 'bons estud
 /** Minúsculas e sem cedilha, para "torço" e "torcida" contarem como a mesma ideia. */
 const simples = (t: string) => t.toLowerCase().replace(/ç/g, 'c')
 
+/**
+ * Ideias que um P.S. pode carregar. O P.S. é a linha mais humana da carta e não
+ * pode repetir o que o corpo já disse ("é só responder. Eu leio tudo" seguido de
+ * "se responder, sou eu que leio"). Cada expressão aqui é uma ideia; o P.S. só
+ * entra se nenhuma das ideias dele já estiver no corpo.
+ */
+export const IDEIAS_PS: readonly RegExp[] = [
+  /respond/, /\bsono\b|dormir|dormi/, /relat(ar|o)\b/, /dez minutos|no intervalo/, /semana apertar|do jeito que voce deixou|do jeito que você deixou/,
+  /comentario das alternativas|comentário das alternativas|alternativas erradas/, /\bcafe\b|\bcafé\b/, /\berrar\b|errar aqui/, /\bcolega\b|estudar junto/,
+  /ranking/, /aniversario|aniversário/, /seguidos/, /madrugada/, /a noite|à noite/, /resumo/, /\bservico\b|\bserviço\b|hospital|santa casa/,
+  /faltam .{1,12} dias|dias para (o|a) /, /\bfeliz\b/, /torc/, /automatico|automático/, /mantem (o|isto|o site) de pe|mantém (o|isto|o site) de pé/,
+  /\bleio\b/,
+]
+/** As ideias (índices em IDEIAS_PS) presentes num texto. */
+function ideiasDe(texto: string): Set<number> {
+  const t = simples(texto)
+  const achadas = new Set<number>()
+  IDEIAS_PS.forEach((re, i) => { if (re.test(t)) achadas.add(i) })
+  return achadas
+}
+/** O P.S. repete uma ideia que o corpo já tem? */
+export function psRepeteCorpo(ps: string, corpo: string): boolean {
+  const doCorpo = ideiasDe(corpo)
+  for (const i of ideiasDe(ps.replace(/^P\.S\.:\s*/, ''))) if (doCorpo.has(i)) return true
+  return false
+}
+
+/**
+ * Palavras fortes: duas frases seguidas não podem repetir a mesma ("Vi as 35
+ * questões… e fiquei feliz." seguida de "Fico feliz de acompanhar o seu caminho.").
+ * O fecho, em especial, não repete a palavra forte da observação anterior.
+ */
+export const PALAVRAS_FORTES: readonly RegExp[] = [/\bfeliz\b/, /\borgulho\b/, /\bbonit[ao]\b/, /\badmir/, /\btorc/, /\bcarinho\b/, /\bparab[ée]ns\b/, /\bconstancia\b/]
+function fortesDe(texto: string): Set<number> {
+  const t = simples(texto)
+  const achadas = new Set<number>()
+  PALAVRAS_FORTES.forEach((re, i) => { if (re.test(t)) achadas.add(i) })
+  return achadas
+}
+function repetemForte(a: string, b: string): boolean {
+  const deA = fortesDe(a)
+  for (const i of fortesDe(b)) if (deA.has(i)) return true
+  return false
+}
+/** Frases do texto, na ordem (ponto, exclamação, interrogação ou quebra de linha). */
+export function frasesDe(texto: string): string[] {
+  return texto.replace(/^P\.S\.:\s*/gm, '').split(/(?<=[.!?])\s+|\n+/).map((f) => f.trim()).filter((f) => f.length > 0)
+}
+/** Duas frases seguidas com a mesma palavra forte? Devolve a palavra (como texto) ou null. */
+export function frasesSeguidasRepetem(texto: string): string | null {
+  const frases = frasesDe(texto)
+  for (let i = 1; i < frases.length; i++) {
+    const comuns = [...fortesDe(frases[i])].filter((k) => fortesDe(frases[i - 1]).has(k))
+    if (comuns.length) return PALAVRAS_FORTES[comuns[0]].source.replace(/\\b|\[ao\]/g, '')
+  }
+  return null
+}
+
 /** P.S. genéricos, humanos, para quando nenhum fato sobra. */
 const PS_HUMANOS = [
   'P.S.: se responder este e-mail, sou eu que leio. Pode escrever.',
@@ -773,7 +834,7 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
     dica: () => um(...DICAS[tomDaFaixa(faixa)]),
     // "Torço pela sua aprovação" só para quem tem prova pela frente.
     fecho: () => (rnd() < 0.15 ? null : um(...FECHOS.filter((f) => !(f.includes('aprovação') && (fatos.prova === 'atualizacao' || fatos.etapa === 'ortopedista'))))),
-    ps: () => {
+    ps: (corpo = '') => {
       const candidatos: Array<[string | null, string]> = []
       if (fatos.aniversario && !usados.has('aniversario')) candidatos.push(['aniversario', fatos.aniversario === 'hoje' ? 'P.S.: e parabéns pelo aniversário. Que o ano que começa traga a aprovação e dias mais leves.' : 'P.S.: vi que o seu aniversário está chegando. Deixo o parabéns adiantado, com carinho.'])
       if (fatos.ranking && !usados.has('ranking')) candidatos.push(['ranking', `P.S.: vi que você está em ${fatos.ranking}º no ranking geral. Fiquei feliz de ver o seu nome lá.`])
@@ -787,13 +848,16 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
         candidatos.push(['melhorArea', mostrarAcerto() ? `P.S.: ${em} com ${fatos.melhorArea.pct}% de acerto. Parabéns, de verdade.` : `P.S.: ${em} está ficando muito forte no seu estudo. Parabéns, de verdade.`])
       }
       if (fatos.resumos && !usados.has('resumos')) candidatos.push(['resumos', fatos.resumos.titulo ? `P.S.: vi que você leu "${fatos.resumos.titulo}" na Biblioteca. Fazer as questões do tema logo depois é o que mais fixa.` : 'P.S.: vi que você anda lendo os resumos da Biblioteca. Fazer as questões do tema logo depois é o que mais fixa.'])
+      // Nenhum P.S. repete uma ideia que o corpo já disse ("é só responder" duas vezes).
+      const novos = candidatos.filter(([, texto]) => !psRepeteCorpo(texto, corpo))
+      const humanos = PS_HUMANOS.filter((texto) => !psRepeteCorpo(texto, corpo))
       // Metade das vezes, um fato (se ainda couber uma observação); senão, um P.S. humano.
-      if (candidatos.length && nObs() < MAXIMO_OBS && rnd() < 0.5) {
-        const [chave, texto] = candidatos[Math.floor(rnd() * candidatos.length)]
+      if (novos.length && nObs() < MAXIMO_OBS && rnd() < 0.5) {
+        const [chave, texto] = novos[Math.floor(rnd() * novos.length)]
         if (chave) { usados.add(chave); if (chave === 'melhorArea' && mostrarAcerto()) usados.add('acerto') }
         return texto
       }
-      return um(...PS_HUMANOS)
+      return um(...(humanos.length ? humanos : PS_HUMANOS))
     },
     beneficios: (k, curto = false) => {
       // [como item de lista, curto para o meio da frase, peso pelo perfil]
@@ -827,6 +891,32 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
 
 const SAUDACOES_NOME = ['{n}, tudo bem?', 'Oi, {n}, tudo bem?', 'Olá, {n}, tudo bem?', '{n}, tudo bem por aí?', 'Oi, {n}, espero que esteja tudo bem por aí.']
 const SAUDACOES = ['Oi, tudo bem?', 'Olá, tudo bem?', 'Tudo bem por aí?', 'Oi, espero que esteja tudo bem por aí.']
+
+/**
+ * Os fechos do corpo: nenhum repete o que o texto já disse ("é só responder", "torcendo",
+ * "acompanhando") nem a palavra forte do parágrafo vizinho ("fiquei feliz" / "Fico feliz").
+ * Quando o fecho sorteado pela versão quebra uma das regras, outro fecho entra no lugar;
+ * se nenhum servir, a carta segue sem ele.
+ */
+function ajustarFechos(brutos: string[], rnd: () => number, fatos: Fatos): string[] {
+  // "Torço pela sua aprovação" só para quem tem prova pela frente (como em ctx.fecho).
+  const semProva = fatos.prova === 'atualizacao' || fatos.etapa === 'ortopedista'
+  const repeteChave = (fecho: string, outros: string[]) => {
+    const chave = CHAVES_FECHO.find((k) => simples(fecho).includes(k))
+    return !!chave && outros.some((y) => simples(y).includes(chave))
+  }
+  const resultado: string[] = []
+  brutos.forEach((x, i) => {
+    if (!FECHOS.includes(x)) { resultado.push(x); return }
+    const outros = brutos.filter((_, j) => j !== i)
+    const vizinhos = [brutos[i - 1], brutos[i + 1]].filter((y): y is string => !!y && !FECHOS.includes(y))
+    const serve = (f: string) => !repeteChave(f, outros) && !vizinhos.some((y) => repetemForte(y, f))
+    if (serve(x)) { resultado.push(x); return }
+    const alternativas = FECHOS.filter((f) => f !== x && serve(f) && !(semProva && f.includes('aprovação')))
+    if (alternativas.length) resultado.push(alternativas[Math.floor(rnd() * alternativas.length)])
+  })
+  return resultado
+}
 
 export function modeloDe(tipo: TipoCarta, faixa: Faixa | null): string {
   return tipo === 'ativo' && faixa ? `ativo:${faixa}` : tipo
@@ -919,30 +1009,31 @@ export function gerarCarta(p: PerfilCarta, op: OpcoesCarta = {}): Carta {
     const lista = novas.length ? novas : possiveis
     const v = lista[Math.floor(rnd() * lista.length)]
     const brutos = v.corpo(ctx).filter((x): x is string => typeof x === 'string' && x.trim() !== '').map((x) => x.trim())
-    // O fecho não repete o que o texto já disse ("é só responder", "torcendo", "acompanhando").
-    const paragrafos = brutos.filter((x, i) => {
-      if (!FECHOS.includes(x)) return true
-      const chave = CHAVES_FECHO.find((k) => simples(x).includes(k))
-      return !chave || !brutos.some((y, j) => j !== i && simples(y).includes(chave))
-    })
+    const paragrafos = ajustarFechos(brutos, rnd, ctx.fatos)
     const saudacao = v.saudacao ? v.saudacao(ctx) : ctx.nome ? ctx.um(...SAUDACOES_NOME).replace('{n}', ctx.nome) : ctx.um(...SAUDACOES)
     // P.S. em toda carta: o da versão, ou um do motor quando a versão não escreveu o seu.
     let ps = paragrafos.find((x) => /^P\.S\.:/.test(x)) ?? null
     const semPS = paragrafos.filter((x) => !/^P\.S\.:/.test(x))
-    if (!ps) ps = v.ps ? v.ps(ctx) : ctx.ps()
     // A espinha pede de 6 a 12 linhas: completa com uma frase sobre tempo ou um fecho quando faltar.
-    const linhasDe = (lista: string[]) => contarLinhas([saudacao, ...lista, ps!].join('\n\n'))
+    const linhasDe = (lista: string[]) => contarLinhas([saudacao, ...lista, ps ?? 'P.S.: x'].join('\n\n'))
     const reforcos = [() => ctx.tempo(), () => ctx.fecho(), () => ctx.dica()]
     for (const reforco of reforcos) {
       if (linhasDe(semPS) >= LINHAS.minimo) break
       const extra = reforco()
-      if (extra && !semPS.includes(extra)) semPS.push(extra)
+      // O fecho acrescentado não repete a palavra forte do parágrafo anterior ("fiquei feliz" / "Fico feliz").
+      if (extra && !semPS.includes(extra) && !(FECHOS.includes(extra) && semPS.length && repetemForte(semPS[semPS.length - 1], extra))) semPS.push(extra)
     }
+    // O P.S. não repete uma ideia que o corpo já tem: o da versão cede ao do motor quando repete.
+    const textoCorpo = [saudacao, ...semPS].join('\n\n')
+    if (!ps) ps = v.ps ? v.ps(ctx) : null
+    if (!ps || psRepeteCorpo(ps, textoCorpo)) ps = ctx.ps(textoCorpo)
     const assuntos = v.assuntos(ctx).filter((x): x is string => typeof x === 'string' && x.trim() !== '').map((x) => x.trim()).filter((a) => !problemaNoAssunto(a))
     const assunto = assuntos[Math.floor(rnd() * assuntos.length)]
     const corpo = [saudacao, ...semPS, ps].join('\n\n')
     const linhas = contarLinhas(corpo)
     if (!assunto || problemaNoTexto(corpo) || contarLinks(corpo) > 1 || contarPS(corpo) !== 1 || linhas < LINHAS.minimo || linhas > LINHAS.maximo) continue
+    // Duas frases seguidas com a mesma palavra forte ou um P.S. que repete o corpo: sorteia de novo.
+    if (frasesSeguidasRepetem(corpo) || psRepeteCorpo(ps, textoCorpo)) continue
     return {
       tipo, faixa: tipo === 'ativo' || tipo === 'convite_50' ? faixa : null, modelo, versao: `${modelo}#${v.id}`, assunto, corpo,
       personalizacao: [...ctx.usados].map((c) => ROTULO_FATO[c as keyof Fatos] ?? (c === 'acerto' ? 'acerto' : c)),
