@@ -2846,3 +2846,82 @@ que esta questão foi criada".
 - **Pendências:** prótese de fêmur distal, dupla placa e haste com placa, falhas por material, FCL,
   oito corticais e 50% dos furos, prazos de fixação e mortalidade no idoso, retirada do material e
   tratamento da pseudartrose ficaram para o resumo, para manter a média de 10 a 12.
+
+## Fratura do planalto tibial (engenharia reversa em 17/10/2026; Rockwood cap. 62)
+
+**Recorte.** `mapear_banca.py` com regex de platô, planalto, SCHATZKER, MOORE, LOBENHOFFER, três
+colunas e côndilo tibial, subtema "Fratura do planalto tibial", tema trauma: 23 oficiais de TEOT e
+TARO (um falso positivo, `trauma-0237`, AOSPINE com "platô vertebral"; e `trauma-1056`, TEOT 2024,
+que é edema ósseo do LCA, mantida com a cópia `joelho-0138` marcada como duplicata). Fora do filtro:
+SBOT-SP `trauma-0558` (gravura de HOHL e MOORE, tipo III), CET-PR `trauma-0703` (placa
+anticisalhamento), ENARE R4 2024 `trauma-1014` (SCHATZKER II) e 2025 `trauma-1195` (via
+posterolateral). Simulados já existentes do tema: `trauma-1598` (síndrome compartimental no
+SCHATZKER VI), `conceitos-basicos-0353` (congruência no acetábulo e alinhamento com estabilidade no
+planalto) e `0403` (técnica pass-through); de anatomia, `joelho-0343` (GERDY) e `0351` (menisco lateral).
+
+**Frequência.** Cai quase todo ano desde 2018 (2018, 2019, 2020 duas, 2021 duas, 2022 duas, 2023,
+2024 três), além de 2007 a 2015 e quatro sem ano. Prioridade alta.
+
+**Fatos carimbados.**
+- **Lesão associada mais frequente = menisco lateral** (TARO 2009 sem gabarito, TARO 2018, TARO 2021,
+  TARO 2023 e `trauma-0313` sem ano); ligamento mais lesado = **LCA** (`trauma-0960`, sem ano). O
+  capítulo confirma (GARDNER: menisco lateral 91%, LCA 77%, canto posterolateral 68%, menisco medial
+  44%), mas também cita DELAMARTER, com o LCM como o mais lesado nas radiografias sob estresse.
+- **SCHATZKER:** depressão pura = III (sem ano), osso osteoporótico = depressão central (TEOT 2022), IV
+  por varo com lesão do complexo lateral (TEOT 2024), IV com maior risco vascular (TARO 2013).
+- **KFURI e SCHATZKER** (TARO 2020 e TARO 2024, mesmo texto): limite posterior da cabeça da fíbula e
+  limite posterior da inserção do LCM. **Não está no capítulo 62.**
+- **Cisalhamento posteromedial:** flexão, varo e rotação interna do côndilo femoral medial (TARO 2019,
+  igual ao capítulo); subluxação anterior da tíbia (TARO 2020, gabarito C; o capítulo não descreve).
+- **Vias:** posterolateral entre gastrocnêmio lateral e bíceps (TARO 2015, ENARE 2025); LOBENHOFFER
+  com osteotomia da cabeça da fíbula (sem ano); anterolateral estendida com osteotomia do epicôndilo
+  lateral, LCL e poplíteo (TEOT 2021, fora do capítulo). Ordem na AO C: medial pela posteromedial,
+  depois lateral (TARO 2011, sem gabarito; o capítulo sustenta a alternativa A).
+- **Artrose mais rara no planalto** que no calcâneo, acetábulo e pilão (TARO 2013), igual ao capítulo.
+- Antigas sem gabarito: ligamentotaxia (TARO 2008; o capítulo fala de tração e fixador transarticular,
+  sem usar o termo) e perfil da radioscopia com lateral convexo e medial côncavo (TARO 2007; o capítulo
+  sustenta A). Anatomia: TARO 2012 (`joelho-0212`), planalto lateral mais alto e convexo.
+
+**Forma.** Enunciado mediano de 99 caracteres, alternativas de 30; termina em palavra (16) ou
+dois-pontos (6); sem caso clínico e sem imagem no TEOT/TARO; 7 pares 2 por 2 (varo ou valgo com
+complexo medial ou lateral; anterior ou posterior da fíbula e do LCM; flexão ou extensão com rotação).
+Aberturas "Na fratura do planalto tibial..." (12) e "A fratura...". Gabarito oficial puxado para A
+(8 A, 5 B, 2 C, 4 D). Reciclagem quase literal: menisco lateral cinco vezes; KFURI duas.
+
+**Divergências (para `alerta:` do resumo).**
+- `trauma-0910` (sem ano, LOBENHOFFER = osteotomia da cabeça da fíbula): o capítulo chama de
+  "abordagem de LOBENHOFFER" uma via posteromedial sem soltar o gastrocnêmio medial; a via
+  transfibular aparece citando o artigo de LOBENHOFFER de 2011, sem o epônimo no texto.
+- `trauma-0007` (TARO 2020, subluxação anterior) e `trauma-0223` (TEOT 2021, osteotomia do epicôndilo
+  lateral): fora do capítulo. `trauma-1036` e `trauma-0018` (KFURI): fora do capítulo.
+- `trauma-0960` (LCA) e `trauma-0052` (menisco): o capítulo dá suporte; DELAMARTER é o único dado a
+  favor do LCM e é de radiografia sob estresse.
+- Números do próprio capítulo: distância dos pinos 14 mm (estudo das reflexões capsulares) e 15 mm
+  (planejamento); cobrar 14 mm com distratores longe.
+
+**Lacunas com cara de prova.** Incidência caudal de 10 a 15 graus (MOORE e HARVEY 14 graus); LUO pela
+regra do traço cortical; HOHL e MOORE com as taxas neurovasculares (12%, 30%, cerca de 50%); via
+posteromedial entre pata de ganso e gastrocnêmio medial; trifurcação na abertura da membrana
+interóssea a cerca de 49 mm; placa antideslizante no ápice; cimento de fosfato de cálcio mais rígido
+e quebradiço (parafusos antes); fixador a 14 mm contra artrite séptica (até 10%); hiperextensão em varo
+de FIROOZABADI; WAHLQUIST 67% de síndrome compartimental; STARK 53% no IV contra 18% no VI; fixador
+temporário desnecessário nos SCHATZKER I a III; infecção histórica de 73% a 87% por incisão única;
+MRSA como germe mais comum.
+
+**Destino.** Tema Trauma, subtema "Fratura do planalto tibial". Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 62** (Tibial Plateau Fractures; Maniar e Horwitz): `trauma-1669` a
+`trauma-1681`, 13 questões, sem figura e sem caso clínico, gabarito A3/B3/C3/D4, mediana do
+comentário de 4.273 caracteres, cada comentário fechado com "Por que esta questão foi criada".
+- **Gêmeas dos carimbados:** menisco lateral e LCA em par (cinco provas); LCM e LCA presos ao fragmento
+  no SCHATZKER IV (TEOT 2024, TARO 2013); HOHL e MOORE V com cerca de 50% neurovascular (SBOT-SP, TARO
+  2013); LUO zero coluna (sem ano, TEOT 2022); trifurcação na via posterolateral (TARO 2015, ENARE 2025,
+  sem ano); placa antideslizante no ápice (CET-PR, TARO 2019); medial primeiro e incisões a 180 graus
+  (TARO 2011); lateral um pouco mais alto e hiper-redução (TARO 2012, TARO 2007); artrose ligada ao
+  malalinhamento e à meniscectomia (TARO 2013); instabilidade em valgo óssea, com o LCM como dobradiça
+  (TARO 2009 e 2018).
+- **Lacunas:** via posteromedial (espelho da posterolateral); cimento de fosfato de cálcio com
+  parafusos antes; pinos a 14 mm contra artrite séptica.
+- **Pendências:** hiperextensão em varo, WAHLQUIST, incidência caudal e fixador temporário nas
+  laterais ficaram para o resumo. Lição: o capítulo não traz KFURI e SCHATZKER nem a via anterolateral
+  estendida; questões desses pontos precisam de outra fonte enviada pelo Tales.
