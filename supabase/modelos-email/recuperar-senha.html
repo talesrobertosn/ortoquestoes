@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Sua nova senha</title>
+</head>
+<body style="margin:0; padding:0; background-color:#ffffff;">
+<!-- Pré-cabeçalho: o texto que aparece ao lado do assunto na caixa de entrada. -->
+<div style="display:none; max-height:0; overflow:hidden; opacity:0;">Acontece com todo mundo. Um toque e você escolhe uma senha nova.</div>
+<div style="max-width:560px; padding:16px 14px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.55; color:#222222;">
+  <p style="margin:0 0 14px 0;">{{ if .Data.nome }}{{ .Data.nome }}, tudo bem?{{ else }}Oi, tudo bem?{{ end }}</p>
+  <p style="margin:0 0 14px 0;">Esqueceu a senha? Acontece com todo mundo, principalmente com quem tem o dia tomado pelo hospital. Este e-mail resolve isso em um toque.</p>
+  <p style="margin:0 0 20px 0;">
+    <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=recovery" target="_blank" style="display:inline-block; padding:12px 22px; background-color:#14655e; color:#ffffff; border-radius:8px; font-weight:bold; text-decoration:none; font-size:15px;">Escolher uma senha nova</a>
+  </p>
+  <p style="margin:0 0 14px 0; font-size:13px; line-height:1.5; color:#5b686c;">Se o botão não abrir, copie e cole este endereço no navegador:<br>
+    <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=recovery" target="_blank" style="color:#14655e; word-break:break-all;">{{ .SiteURL }}/?token_hash={{ .TokenHash }}&amp;type=recovery</a></p>
+  <p style="margin:0 0 14px 0;">O link vale por pouco tempo, por segurança. Se ele expirar, é só pedir outro na tela de entrada; não tem problema nenhum.</p>
+  <p style="margin:0 0 14px 0;">Tudo o que você fez no site continua guardado do jeito que você deixou: as questões, o Caderno de erros, a fila da Revisão. Trocar a senha não mexe em nada disso.</p>
+  <p style="margin:0 0 14px 0;">Um abraço,<br>Tales, do Orto Questões</p>
+  <p style="margin:0 0 14px 0;">P.S.: se você não pediu uma senha nova, pode ignorar este e-mail. Sua senha atual continua valendo, e ninguém entra na sua conta sem este link.</p>
+  <p style="margin:28px 0 0 0; font-size:12px; line-height:1.4; color:#888888;">Você recebeu este e-mail porque alguém pediu uma senha nova para este endereço no Orto Questões.</p>
+</div>
+</body>
+</html>
