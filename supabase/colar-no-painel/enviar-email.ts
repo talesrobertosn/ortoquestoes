@@ -2764,6 +2764,68 @@ var DICAS = {
 var FECHOS = ["Se n\xE3o for a hora, tudo bem tamb\xE9m. Eu continuo por aqui.", "Se eu puder ajudar em qualquer coisa, \xE9 s\xF3 responder este e-mail.", "Estou torcendo por voc\xEA.", "Conte comigo no que precisar.", "Fico feliz de acompanhar o seu caminho.", "Tor\xE7o muito pela sua aprova\xE7\xE3o.", "Bons estudos por a\xED, e cuide-se.", "Vai dar certo. E eu estou por aqui."];
 var CHAVES_FECHO = ["respond", "torc", "acompanh", "conte comigo", "bons estudos", "n\xE3o for a hora", "por aqui"];
 var simples = (t) => t.toLowerCase().replace(/ç/g, "c");
+var IDEIAS_PS = [
+  /respond/,
+  /\bsono\b|dormir|dormi/,
+  /relat(ar|o)\b/,
+  /dez minutos|no intervalo/,
+  /semana apertar|do jeito que voce deixou|do jeito que você deixou/,
+  /comentario das alternativas|comentário das alternativas|alternativas erradas/,
+  /\bcafe\b|\bcafé\b/,
+  /\berrar\b|errar aqui/,
+  /\bcolega\b|estudar junto/,
+  /ranking/,
+  /aniversario|aniversário/,
+  /seguidos/,
+  /madrugada/,
+  /a noite|à noite/,
+  /resumo/,
+  /\bservico\b|\bserviço\b|hospital|santa casa/,
+  /faltam .{1,12} dias|dias para (o|a) /,
+  /\bfeliz\b/,
+  /torc/,
+  /automatico|automático/,
+  /mantem (o|isto|o site) de pe|mantém (o|isto|o site) de pé/,
+  /\bleio\b/
+];
+function ideiasDe(texto) {
+  const t = simples(texto);
+  const achadas = /* @__PURE__ */ new Set();
+  IDEIAS_PS.forEach((re, i) => {
+    if (re.test(t)) achadas.add(i);
+  });
+  return achadas;
+}
+function psRepeteCorpo(ps, corpo) {
+  const doCorpo = ideiasDe(corpo);
+  for (const i of ideiasDe(ps.replace(/^P\.S\.:\s*/, ""))) if (doCorpo.has(i)) return true;
+  return false;
+}
+var PALAVRAS_FORTES = [/\bfeliz\b/, /\borgulho\b/, /\bbonit[ao]\b/, /\badmir/, /\btorc/, /\bcarinho\b/, /\bparab[ée]ns\b/, /\bconstancia\b/];
+function fortesDe(texto) {
+  const t = simples(texto);
+  const achadas = /* @__PURE__ */ new Set();
+  PALAVRAS_FORTES.forEach((re, i) => {
+    if (re.test(t)) achadas.add(i);
+  });
+  return achadas;
+}
+function repetemForte(a, b) {
+  const deA = fortesDe(a);
+  for (const i of fortesDe(b)) if (deA.has(i)) return true;
+  return false;
+}
+function frasesDe(texto) {
+  return texto.replace(/^P\.S\.:\s*/gm, "").split(/(?<=[.!?])\s+|\n+/).map((f) => f.trim()).filter((f) => f.length > 0);
+}
+function frasesSeguidasRepetem(texto) {
+  const frases = frasesDe(texto);
+  for (let i = 1; i < frases.length; i++) {
+    const comuns = [...fortesDe(frases[i])].filter((k) => fortesDe(frases[i - 1]).has(k));
+    if (comuns.length) return PALAVRAS_FORTES[comuns[0]].source.replace(/\\b|\[ao\]/g, "");
+  }
+  return null;
+}
 var PS_HUMANOS = [
   "P.S.: se responder este e-mail, sou eu que leio. Pode escrever.",
   "P.S.: cuida do sono. Ele conta como estudo, e ningu\xE9m avisa isso na resid\xEAncia.",
@@ -2859,7 +2921,7 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado) {
     dica: () => um(...DICAS[tomDaFaixa(faixa)]),
     // "Torço pela sua aprovação" só para quem tem prova pela frente.
     fecho: () => rnd() < 0.15 ? null : um(...FECHOS.filter((f) => !(f.includes("aprova\xE7\xE3o") && (fatos.prova === "atualizacao" || fatos.etapa === "ortopedista")))),
-    ps: () => {
+    ps: (corpo = "") => {
       const candidatos = [];
       if (fatos.aniversario && !usados.has("aniversario")) candidatos.push(["aniversario", fatos.aniversario === "hoje" ? "P.S.: e parab\xE9ns pelo anivers\xE1rio. Que o ano que come\xE7a traga a aprova\xE7\xE3o e dias mais leves." : "P.S.: vi que o seu anivers\xE1rio est\xE1 chegando. Deixo o parab\xE9ns adiantado, com carinho."]);
       if (fatos.ranking && !usados.has("ranking")) candidatos.push(["ranking", `P.S.: vi que voc\xEA est\xE1 em ${fatos.ranking}\xBA no ranking geral. Fiquei feliz de ver o seu nome l\xE1.`]);
@@ -2873,15 +2935,17 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado) {
         candidatos.push(["melhorArea", mostrarAcerto() ? `P.S.: ${em} com ${fatos.melhorArea.pct}% de acerto. Parab\xE9ns, de verdade.` : `P.S.: ${em} est\xE1 ficando muito forte no seu estudo. Parab\xE9ns, de verdade.`]);
       }
       if (fatos.resumos && !usados.has("resumos")) candidatos.push(["resumos", fatos.resumos.titulo ? `P.S.: vi que voc\xEA leu "${fatos.resumos.titulo}" na Biblioteca. Fazer as quest\xF5es do tema logo depois \xE9 o que mais fixa.` : "P.S.: vi que voc\xEA anda lendo os resumos da Biblioteca. Fazer as quest\xF5es do tema logo depois \xE9 o que mais fixa."]);
-      if (candidatos.length && nObs() < MAXIMO_OBS && rnd() < 0.5) {
-        const [chave, texto] = candidatos[Math.floor(rnd() * candidatos.length)];
+      const novos = candidatos.filter(([, texto]) => !psRepeteCorpo(texto, corpo));
+      const humanos = PS_HUMANOS.filter((texto) => !psRepeteCorpo(texto, corpo));
+      if (novos.length && nObs() < MAXIMO_OBS && rnd() < 0.5) {
+        const [chave, texto] = novos[Math.floor(rnd() * novos.length)];
         if (chave) {
           usados.add(chave);
           if (chave === "melhorArea" && mostrarAcerto()) usados.add("acerto");
         }
         return texto;
       }
-      return um(...PS_HUMANOS);
+      return um(...humanos.length ? humanos : PS_HUMANOS);
     },
     beneficios: (k, curto = false) => {
       const lista2 = [
@@ -2909,6 +2973,30 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado) {
 }
 var SAUDACOES_NOME = ["{n}, tudo bem?", "Oi, {n}, tudo bem?", "Ol\xE1, {n}, tudo bem?", "{n}, tudo bem por a\xED?", "Oi, {n}, espero que esteja tudo bem por a\xED."];
 var SAUDACOES = ["Oi, tudo bem?", "Ol\xE1, tudo bem?", "Tudo bem por a\xED?", "Oi, espero que esteja tudo bem por a\xED."];
+function ajustarFechos(brutos, rnd, fatos) {
+  const semProva = fatos.prova === "atualizacao" || fatos.etapa === "ortopedista";
+  const repeteChave = (fecho, outros) => {
+    const chave = CHAVES_FECHO.find((k) => simples(fecho).includes(k));
+    return !!chave && outros.some((y) => simples(y).includes(chave));
+  };
+  const resultado = [];
+  brutos.forEach((x, i) => {
+    if (!FECHOS.includes(x)) {
+      resultado.push(x);
+      return;
+    }
+    const outros = brutos.filter((_, j) => j !== i);
+    const vizinhos = [brutos[i - 1], brutos[i + 1]].filter((y) => !!y && !FECHOS.includes(y));
+    const serve = (f) => !repeteChave(f, outros) && !vizinhos.some((y) => repetemForte(y, f));
+    if (serve(x)) {
+      resultado.push(x);
+      return;
+    }
+    const alternativas = FECHOS.filter((f) => f !== x && serve(f) && !(semProva && f.includes("aprova\xE7\xE3o")));
+    if (alternativas.length) resultado.push(alternativas[Math.floor(rnd() * alternativas.length)]);
+  });
+  return resultado;
+}
 function modeloDe(tipo, faixa) {
   return tipo === "ativo" && faixa ? `ativo:${faixa}` : tipo;
 }
@@ -2989,27 +3077,26 @@ function gerarCarta(p, op = {}) {
     const lista2 = novas.length ? novas : possiveis;
     const v = lista2[Math.floor(rnd() * lista2.length)];
     const brutos = v.corpo(ctx).filter((x) => typeof x === "string" && x.trim() !== "").map((x) => x.trim());
-    const paragrafos = brutos.filter((x, i) => {
-      if (!FECHOS.includes(x)) return true;
-      const chave = CHAVES_FECHO.find((k) => simples(x).includes(k));
-      return !chave || !brutos.some((y, j) => j !== i && simples(y).includes(chave));
-    });
+    const paragrafos = ajustarFechos(brutos, rnd, ctx.fatos);
     const saudacao = v.saudacao ? v.saudacao(ctx) : ctx.nome ? ctx.um(...SAUDACOES_NOME).replace("{n}", ctx.nome) : ctx.um(...SAUDACOES);
     let ps = paragrafos.find((x) => /^P\.S\.:/.test(x)) ?? null;
     const semPS = paragrafos.filter((x) => !/^P\.S\.:/.test(x));
-    if (!ps) ps = v.ps ? v.ps(ctx) : ctx.ps();
-    const linhasDe = (lista3) => contarLinhas([saudacao, ...lista3, ps].join("\n\n"));
+    const linhasDe = (lista3) => contarLinhas([saudacao, ...lista3, ps ?? "P.S.: x"].join("\n\n"));
     const reforcos = [() => ctx.tempo(), () => ctx.fecho(), () => ctx.dica()];
     for (const reforco of reforcos) {
       if (linhasDe(semPS) >= LINHAS.minimo) break;
       const extra = reforco();
-      if (extra && !semPS.includes(extra)) semPS.push(extra);
+      if (extra && !semPS.includes(extra) && !(FECHOS.includes(extra) && semPS.length && repetemForte(semPS[semPS.length - 1], extra))) semPS.push(extra);
     }
+    const textoCorpo = [saudacao, ...semPS].join("\n\n");
+    if (!ps) ps = v.ps ? v.ps(ctx) : null;
+    if (!ps || psRepeteCorpo(ps, textoCorpo)) ps = ctx.ps(textoCorpo);
     const assuntos = v.assuntos(ctx).filter((x) => typeof x === "string" && x.trim() !== "").map((x) => x.trim()).filter((a) => !problemaNoAssunto(a));
     const assunto = assuntos[Math.floor(rnd() * assuntos.length)];
     const corpo = [saudacao, ...semPS, ps].join("\n\n");
     const linhas = contarLinhas(corpo);
     if (!assunto || problemaNoTexto(corpo) || contarLinks(corpo) > 1 || contarPS(corpo) !== 1 || linhas < LINHAS.minimo || linhas > LINHAS.maximo) continue;
+    if (frasesSeguidasRepetem(corpo) || psRepeteCorpo(ps, textoCorpo)) continue;
     return {
       tipo,
       faixa: tipo === "ativo" || tipo === "convite_50" ? faixa : null,

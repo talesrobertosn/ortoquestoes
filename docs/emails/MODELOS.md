@@ -9,38 +9,38 @@ Todas as cartas saem só em texto, na voz de um amigo que já passou pela resid�
 
 | Situação | Versões completas | Variedade medida |
 |---|---|---|
-| Estudando, faixa até 10% | 6 | 393 textos e 12 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 10 a 20% | 6 | 380 textos e 12 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 20 a 30% | 6 | 388 textos e 11 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 30 a 40% | 6 | 399 textos e 10 assuntos diferentes em 400 sorteios |
-| Estudando, faixa na média (40 a 60%) | 7 | 394 textos e 8 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 60 a 70% | 6 | 387 textos e 9 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 70 a 80% | 6 | 395 textos e 12 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 80 a 90% | 6 | 385 textos e 9 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 90% ou mais | 6 | 374 textos e 8 assuntos diferentes em 400 sorteios |
-| Criou a conta e não começou | 6 | 390 textos e 12 assuntos diferentes em 400 sorteios |
-| Boas-vindas | 6 | 391 textos e 8 assuntos diferentes em 400 sorteios |
+| Estudando, faixa até 10% | 6 | 394 textos e 12 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 10 a 20% | 6 | 382 textos e 12 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 20 a 30% | 6 | 384 textos e 11 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 30 a 40% | 6 | 398 textos e 10 assuntos diferentes em 400 sorteios |
+| Estudando, faixa na média (40 a 60%) | 7 | 395 textos e 8 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 60 a 70% | 6 | 386 textos e 9 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 70 a 80% | 6 | 396 textos e 12 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 80 a 90% | 6 | 379 textos e 9 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 90% ou mais | 6 | 366 textos e 8 assuntos diferentes em 400 sorteios |
+| Criou a conta e não começou | 6 | 386 textos e 12 assuntos diferentes em 400 sorteios |
+| Boas-vindas | 6 | 385 textos e 8 assuntos diferentes em 400 sorteios |
 | Começando | 6 | 396 textos e 7 assuntos diferentes em 400 sorteios |
 | Começou e parou | 6 | 396 textos e 7 assuntos diferentes em 400 sorteios |
-| Pausa curta (3 a 6 dias) | 5 | 392 textos e 6 assuntos diferentes em 400 sorteios |
-| Sumiu | 6 | 393 textos e 10 assuntos diferentes em 400 sorteios |
-| Obrigado pela assinatura | 6 | 390 textos e 5 assuntos diferentes em 400 sorteios |
+| Pausa curta (3 a 6 dias) | 5 | 391 textos e 6 assuntos diferentes em 400 sorteios |
+| Sumiu | 6 | 391 textos e 10 assuntos diferentes em 400 sorteios |
+| Obrigado pela assinatura | 6 | 388 textos e 5 assuntos diferentes em 400 sorteios |
 | Convite para assinar (mais de 20 questões) | 7 | 389 textos e 9 assuntos diferentes em 400 sorteios |
-| Convite pessoal (mais de 50 questões) | 7 | 389 textos e 9 assuntos diferentes em 400 sorteios |
+| Convite pessoal (mais de 50 questões) | 7 | 387 textos e 9 assuntos diferentes em 400 sorteios |
 | Reta final | 6 | 389 textos e 8 assuntos diferentes em 400 sorteios |
 | Marco de questões (100, 250, 500, 1.000, 2.000) | 6 | 397 textos e 7 assuntos diferentes em 400 sorteios |
-| Pedir opinião | 5 | 386 textos e 5 assuntos diferentes em 400 sorteios |
-| Pedir para indicar | 5 | 380 textos e 6 assuntos diferentes em 400 sorteios |
-| Apresentar o cronograma | 5 | 395 textos e 7 assuntos diferentes em 400 sorteios |
-| Pix: faltam 3 dias | 5 | 314 textos e 6 assuntos diferentes em 400 sorteios |
-| Pix: termina hoje | 5 | 328 textos e 5 assuntos diferentes em 400 sorteios |
-| Resumo de estudo | 5 | 234 textos e 5 assuntos diferentes em 400 sorteios |
+| Pedir opinião | 5 | 384 textos e 5 assuntos diferentes em 400 sorteios |
+| Pedir para indicar | 5 | 376 textos e 6 assuntos diferentes em 400 sorteios |
+| Apresentar o cronograma | 5 | 396 textos e 7 assuntos diferentes em 400 sorteios |
+| Pix: faltam 3 dias | 5 | 312 textos e 6 assuntos diferentes em 400 sorteios |
+| Pix: termina hoje | 5 | 329 textos e 5 assuntos diferentes em 400 sorteios |
+| Resumo de estudo | 5 | 233 textos e 5 assuntos diferentes em 400 sorteios |
 | Boas-vindas no dia da confirmação | 5 | 79 textos e 8 assuntos diferentes em 400 sorteios |
-| Primeiras 10 questões | 5 | 374 textos e 6 assuntos diferentes em 400 sorteios |
-| Que bom te ver de volta | 5 | 377 textos e 5 assuntos diferentes em 400 sorteios |
-| Cronograma pronto | 5 | 361 textos e 6 assuntos diferentes em 400 sorteios |
+| Primeiras 10 questões | 5 | 370 textos e 6 assuntos diferentes em 400 sorteios |
+| Que bom te ver de volta | 5 | 379 textos e 5 assuntos diferentes em 400 sorteios |
+| Cronograma pronto | 5 | 358 textos e 6 assuntos diferentes em 400 sorteios |
 | Pagamento aprovado | 5 | 50 textos e 7 assuntos diferentes em 400 sorteios |
-| Obrigado pelo tempo de assinatura | 5 | 196 textos e 5 assuntos diferentes em 400 sorteios |
+| Obrigado pelo tempo de assinatura | 5 | 228 textos e 5 assuntos diferentes em 400 sorteios |
 
 ## Uma carta para cada faixa de acerto
 
@@ -106,7 +106,7 @@ P.S.: toma um café por mim antes da próxima sessão.
 *Versão ativo:20-30#v4 · personalizada com: horário de estudo, ritmo da semana*
 
 ```text
-Diego, tudo bem?
+Olá, Diego, tudo bem?
 
 Reparei que você estuda até de madrugada. Já estive aí, e lembro com carinho que o sono também é estudo.
 
@@ -118,12 +118,12 @@ A Revisão fica aqui: ortoquestoes.com.br/#/revisao
 
 Vi as 35 questões desta última semana, e fiquei feliz.
 
-Fico feliz de acompanhar o seu caminho.
+Se não for a hora, tudo bem também. Eu continuo por aqui.
 
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: a parte do site em que eu mais caprichei foi o comentário das alternativas erradas. Vale ler até o fim.
+P.S.: toma um café por mim antes da próxima sessão.
 ```
 
 ### Faixa 30 a 40%: Marina Teles
@@ -175,7 +175,7 @@ Cinco questões no ônibus, cinco no café, cinco antes de dormir. No fim da sem
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.
+P.S.: a parte do site em que eu mais caprichei foi o comentário das alternativas erradas. Vale ler até o fim.
 ```
 
 ### Faixa 60 a 70%: Beatriz Lins
@@ -283,7 +283,7 @@ Gosto muito de ver gente estudando sem prova marcada, só pelo prazer de se mant
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: se responder este e-mail, sou eu que leio. Pode escrever.
+P.S.: cuida do sono. Ele conta como estudo, e ninguém avisa isso na residência.
 ```
 
 ## Situações
@@ -385,7 +385,7 @@ Fico feliz de acompanhar o seu caminho.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: toma um café por mim antes da próxima sessão.
+P.S.: a parte do site em que eu mais caprichei foi o comentário das alternativas erradas. Vale ler até o fim.
 ```
 
 ### Sumiu
@@ -487,7 +487,7 @@ Se não for a hora, tudo bem também. Eu continuo por aqui.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.
+P.S.: a parte do site em que eu mais caprichei foi o comentário das alternativas erradas. Vale ler até o fim.
 ```
 
 ### Convite pessoal (mais de 50), outra pessoa
@@ -604,7 +604,7 @@ Rafael, R2, de Curitiba.
 *Versão indicar#v4 · personalizada com: etapa, área mais estudada, prova de interesse*
 
 ```text
-Oi, Rafael, tudo bem?
+Rafael, tudo bem por aí?
 
 Obrigado por estar por aqui. Estudar no meio do R2 não é pouca coisa. Eu lembro bem desse ano.
 
@@ -612,12 +612,12 @@ Reparei que tem bastante questão de joelho no seu histórico. Tema clássico, b
 
 Um pedido: se o site te ajuda, conta para um colega? Pelo seu link, vocês dois ganham 7 dias do plano completo quando a pessoa responde 20 questões: ortoquestoes.com.br/#/indicar
 
-Pouco e todo dia rende mais do que muito de vez em quando. A memória gosta de repetição, não de maratona.
+Estou torcendo por você.
 
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo mais leve.
+P.S.: toma um café por mim antes da próxima sessão.
 ```
 
 ### Apresentar o cronograma
@@ -641,7 +641,7 @@ Fico feliz de acompanhar o seu caminho.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: errar aqui é barato. É na prova que custa. Aproveita que aqui é treino.
+P.S.: toma um café por mim antes da próxima sessão.
 ```
 
 ## Automáticos (em forma de carta)
@@ -778,7 +778,7 @@ Se tiver qualquer dúvida sobre o pagamento, me responde aqui.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: não precisa responder, mas se responder eu fico feliz.
+P.S.: dormir bem na véspera de um dia cheio também é estudar. Eu demorei a aprender isso.
 
 --
 
@@ -979,7 +979,7 @@ O tempo que a gente mais perde não é estudando, é decidindo o que estudar. De
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.
+P.S.: toma um café por mim antes da próxima sessão.
 
 --
 
