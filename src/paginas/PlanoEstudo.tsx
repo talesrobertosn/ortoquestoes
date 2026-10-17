@@ -506,6 +506,11 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
 
     <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} aoAjustar={aberto ? aoAjustar : undefined} />
 
+    {/* Prioridade da página (Tales, 17/10/2026): o calendário grande vem logo abaixo de "Onde você está";
+        o detalhe de hoje, a coluna lateral e os recolhidos ficam depois. */}
+    {temCalendario && <CalendarioCronograma embutido plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
+      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} />}
+
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">
         <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
@@ -538,9 +543,6 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
             </div>}</div>}
       </div>
     </div>
-
-    {temCalendario && <CalendarioCronograma embutido plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
-      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} />}
 
         {aberto && hub && <div className="cp-recolhidos cp-recolhidos--grade">
           <Recolhido titulo="Constância: os últimos 14 dias" icone="fogo"><CartaoConstancia constancia={hub.constancia} elogio={hub.elogio} /></Recolhido>
