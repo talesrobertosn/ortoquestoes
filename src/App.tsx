@@ -24,6 +24,7 @@ import { AvisoCookies } from './componentes/AvisoCookies'
 // termos, conta e planos. Os carregadores vêm de util/preCarga, que adianta o
 // download quando o dedo chega num link ou o aparelho fica ocioso.
 const Encontros = lazy(() => import('./eventos/Encontros'))
+const ConviteAssinar = lazy(() => import('./convite/ConviteAssinar'))
 
 const Inicio = lazy(() => carregadores.Inicio().then(({ Inicio }) => ({ default: Inicio })))
 const Treinar = lazy(() => carregadores.Treinar().then(({ Treinar }) => ({ default: Treinar })))
@@ -296,6 +297,7 @@ export function App() {
       <AvisoCookies />
       <HospedeConfirmacao />
       {encontrosProntos && <Suspense fallback={null}><Encontros /></Suspense>}
+      {encontrosProntos && <Suspense fallback={null}><ConviteAssinar caminho={rota.caminho} /></Suspense>}
     </div>
   )
 }
