@@ -34,6 +34,7 @@ Desde 16/10/2026 **todos os resumos são abertos** (`acesso: gratis`, com págin
 | 14 | Fraturas e luxações da mão | dois_capitulos_mao (mesmos arquivos): Rockwood 10ª ed., cap. 45 · Hand Fractures and Dislocations | [x] Feito em 17/10/2026: `rockwood10-45-fraturas-mao` (só resumo; simulados `mao-1694` a `mao-1718` e `trauma-1230` em `treino=`; 14 alertas, entre eles Burkhalter 40°, mallet ósseo 25% × um terço, Doyle e Green fora do capítulo) |
 | 15 | Fratura do fêmur distal | femur_questao_e_resumos.pdf (16/10/2026, 65 páginas): Rockwood 10ª ed., cap. 58 · Distal Femur Fractures (Collinge, Roward) nas pp. 41–64; **pp. 1–40 são o cap. 57, Femoral Shaft Fractures (Adams, Jeray)**, feito à parte (linha própria), e a p. 65 é o início do cap. 59 | [x] Feito em 17/10/2026: `rockwood10-58-femur-distal` (simulados `trauma-1631` a `trauma-1642` e `conceitos-basicos-0331`, `0332` e `0392` em `treino=`; alertas: TARO 2022 haste contraindicada na 33C1, TARO 2016 rigidez como a mais comum, TEOT 2023 rotação interna de 10 graus, TARO 2011 sexo, sem ano 35 a 50 graus para a haste) |
 | 16 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor | questoes__resumo_de_joelho_patela_mecanismo_extensor_e_luxacao_joelho.pdf (16/10/2026, 52 páginas): Rockwood 10ª ed., cap. 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries (Lim, Chalmers, Scolaro) nas pp. 1 a 20; **pp. 21 a 52 são o cap. 61, Knee Dislocations** (ver linha 4) | [x] Feito em 17/10/2026: `rockwood10-60-patela-mecanismo-extensor` (simulados `trauma-1643` a `trauma-1654` e `trauma-1234` em `treino=`; alertas: sem ano 2 mm contra 3 mm na indicação cirúrgica, TARO 2011 e 2015 LPFM como principal fator de recidiva, TARO 2009 tendão patelar proximal com avulsão óssea) |
+| 17 | Fratura da diáfise do fêmur | femur_questao_e_resumos.pdf (16/10/2026, mesmo arquivo da linha 15): Rockwood 10ª ed., cap. 57 · Femoral Shaft Fractures (Adams, Jeray) nas pp. 1 a 40 | [x] Feito em 17/10/2026: `rockwood10-57-diafise-femur` (simulados `trauma-1655` a `trauma-1668` e os existentes `trauma-1554`, `1555`, `1530`, `1631`, `1639`, `conceitos-basicos-0369`, `0370`, `0373` a `0376` e `0402` em `treino=`; alertas: TARO 2019 3% a 10% do colo associado, TARO 2011 vantagem trocantérica, TARO 2017 compartimento anterior, TARO 2013 AINE, TARO 2016 e TEOT 2025 joelho flutuante fora do capítulo, 1 a 3 mm contra 1 a 2 mm na troca de haste) |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo e qualquer divergência entre o
 livro e um gabarito oficial que tenha ido para `alerta:`.
@@ -95,7 +96,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 38. [ ] Paralisia cerebral (Ortopedia pediátrica)
 39. [ ] Escoliose idiopática (Coluna)
 40. [ ] Fraturas do tálus e do calcâneo (Trauma adulto) (tálus feito: `rockwood10-66-talus`; falta o calcâneo)
-41. [ ] Fratura da diáfise do fêmur (Trauma adulto)
+41. [x] Fratura da diáfise do fêmur (Trauma adulto) — feito: `rockwood10-57-diafise-femur`
 42. [ ] Condrossarcoma (Tumores ósseos e de partes moles)
 43. [ ] Princípios de osteossíntese (Conceitos básicos)
 44. [ ] Espondilólise e espondilolistese (Coluna)
