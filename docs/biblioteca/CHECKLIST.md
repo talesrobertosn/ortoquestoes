@@ -32,6 +32,7 @@ Desde 16/10/2026 **todos os resumos são abertos** (`acesso: gratis`, com págin
 | 12 | Fraturas e luxações do tálus | calcaneus_fracutres.pdf e, de novo, talus.pdf (16/10/2026, 65 páginas, mesmo conteúdo): Rockwood 10ª ed., cap. 66 · Fractures and Dislocations of the Talus (Sanders, Inculet); **não é o capítulo de calcâneo** | [x] Feito em 16/10/2026: `rockwood10-66-talus` (simulados `trauma-1607` a `trauma-1618` e os de anatomia `pe-tornozelo-0395` e `0422` em `treino=`; alertas: TARO 2008 maléolo medial, TARO 2018 CANALE em flexão plantar máxima, TARO 2018 processo lateral na criança em inversão) |
 | 13 | Fraturas e luxações do carpo | dois_capitulos_mao (3 arquivos, 16/10/2026): Rockwood 10ª ed., cap. 44 · Carpus Fractures and Dislocations | [x] Feito em 17/10/2026: `rockwood10-44-carpo` (só resumo; simulados `mao-1669` a `mao-1693` já existiam, em `treino=`; 13 alertas, entre eles TARO 2024 Herbert D4, USP-SP 2025 pseudartrose 10–15%, Einstein 2026 crônica em 6 semanas) |
 | 14 | Fraturas e luxações da mão | dois_capitulos_mao (mesmos arquivos): Rockwood 10ª ed., cap. 45 · Hand Fractures and Dislocations | [x] Feito em 17/10/2026: `rockwood10-45-fraturas-mao` (só resumo; simulados `mao-1694` a `mao-1718` e `trauma-1230` em `treino=`; 14 alertas, entre eles Burkhalter 40°, mallet ósseo 25% × um terço, Doyle e Green fora do capítulo) |
+| 15 | Fratura do fêmur distal | femur_questao_e_resumos.pdf (16/10/2026, 65 páginas): Rockwood 10ª ed., cap. 58 · Distal Femur Fractures (Collinge, Roward) nas pp. 41–64; **pp. 1–40 são o cap. 57, Femoral Shaft Fractures (Adams, Jeray)**, e a p. 65 é o início do cap. 59 | [x] Feito em 17/10/2026: `rockwood10-58-femur-distal` (simulados `trauma-1631` a `trauma-1642` e `conceitos-basicos-0331`, `0332` e `0392` em `treino=`; alertas: TARO 2022 haste contraindicada na 33C1, TARO 2016 rigidez como a mais comum, TEOT 2023 rotação interna de 10 graus, TARO 2011 sexo, sem ano 35 a 50 graus para a haste) |
 
 Ao terminar um tema: marque aqui, anote o id do capítulo e qualquer divergência entre o
 livro e um gabarito oficial que tenha ido para `alerta:`.
@@ -144,7 +145,7 @@ Os primeiros 120 (a lista completa sai do comando acima):
 89. [ ] Outros temas do ombro e cotovelo (Ombro e cotovelo)
 90. [ ] Ruptura dos tendões patelar e quadricipital (Joelho)
 91. [ ] Hérnia de disco e mielopatia cervical (Coluna)
-92. [ ] Fratura do fêmur distal (Trauma adulto)
+92. [x] Fratura do fêmur distal (Trauma adulto) — feito: `rockwood10-58-femur-distal`
 93. [ ] Epifisiólise proximal do fêmur (Ortopedia pediátrica)
 94. [ ] Artrite séptica (Conceitos básicos)
 95. [ ] Rizartrose e artrose da mão (Mão e punho)
