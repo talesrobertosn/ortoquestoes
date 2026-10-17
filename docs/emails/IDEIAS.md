@@ -1,9 +1,30 @@
-# Cartas: brainstorm julgado (15/10/2026)
+# Cartas: brainstorm julgado (15/10/2026; atualizado em 17/10/2026)
 
-Ideias pensadas para os e-mails pessoais, com a decisão de cada uma. `[x]` feito nesta entrega,
-`[ ]` vale fazer depois, ~~riscado~~ descartado (com o motivo).
+Ideias pensadas para os e-mails pessoais, com a decisão de cada uma. `[x]` feito,
+`[ ]` vale fazer depois, ~~riscado~~ descartado (com o motivo). O plano da reescrita completa está
+em [PLANO.md](PLANO.md).
 
 ## Feito
+
+- [x] **Reescrita completa na voz nova** (17/10/2026, PLANO.md): amigo que já passou pela
+  residência; espinha fixa (momento → o que eu vi → ideia sobre tempo → convite leve → fecho →
+  P.S.); 6 a 12 linhas; 5 a 7 versões por situação e faixa, todas reescritas do zero.
+- [x] **Quatro fatos novos** no motor: resumos lidos, dias para a prova (cronograma), serviço ou
+  cidade, aniversário. Até três observações por carta (eram duas; o P.S. com fato conta).
+- [x] **Regra dos 10**: nenhum número de questões abaixo de 10 ("os primeiros passos"); acerto só com
+  30 questões e 50% ou mais; área a melhorar só com 40 questões na área e sem número.
+- [x] **Teto de cadência** no motor: 48 h entre e-mails e 3 em 14 dias; transacionais fora. Os lotes
+  pulam a pessoa; o site recebe "adiado".
+- [x] **Marcos 250 e 2.000** (agora 100, 250, 500, 1.000, 2.000), com o que o número vale em horas.
+- [x] **Automáticos na voz nova**: a pausa cita a área que a pessoa estava estudando e a Revisão; o
+  Pix sem urgência ("nada se perde"); o resumo quinzenal como história; o relato resolvido citando a
+  alternativa (**Resposta-carta ao relato**, que estava em "Para depois").
+- [x] **Seis automáticos novos sem SQL** (ação `automatico` de `enviar-email`): boas-vindas no dia da
+  confirmação, primeiras 10 questões, que bom te ver de volta, cronograma pronto, pagamento aprovado
+  (recibo gentil) e obrigado pelo tempo de assinatura.
+- [x] **Confirmação de cadastro e senha nova** na voz das cartas (`supabase/modelos-email/`).
+- [x] **Assinar com o nome do serviço**: "do Hospital X" / "da Santa Casa" quando o artigo é claro;
+  "do seu serviço" quando o nome é livre (`servicoComArtigo`), sem precisar de lista curada.
 
 - [x] **Uma voz por faixa de acerto** (9 faixas): quem acerta 8% recebe acolhimento e uma dica de
   presente ("todo mundo que passou começou assim"), quem está na média ouve que é a fase em que mais
@@ -28,17 +49,19 @@ Ideias pensadas para os e-mails pessoais, com a decisão de cada uma. `[x]` feit
 
 - [ ] **Carta de aniversário de conta** (1 ano de Orto Questões): curta, sem convite. Precisa de um
   agendador diário; baixo risco, alto carinho.
-- [ ] **Resposta-carta ao relato**: quando o relato vira correção, a carta cita a alternativa e o
-  trecho do comentário que mudou. Hoje já existe o aviso; dá para deixar mais pessoal.
 - [ ] **Ver quem respondeu**: se as respostas forem para um endereço do domínio, um webhook de
   entrada do Resend poderia marcar "respondeu" no histórico. Útil para medir sem rastrear abertura.
 - [ ] **Agendar o lote para 7h ou 12h** (os horários em que o residente lê, segundo as orientações
   de marketing). Hoje o envio é na hora do clique.
 - [ ] **Carta de volta do simulado nacional**: depois do Simulado do mês, uma carta curta com a
   posição. Depende de o resultado sair no banco no mesmo dia.
-- [ ] **Assinar com o nome do serviço** quando a pessoa contou o serviço ("um abraço para o pessoal
-  do seu serviço"). Ficou de fora por causa do artigo (do/da) em nomes livres; dá para fazer com uma
-  lista curada de serviços conhecidos (`servicosConhecidos.ts`).
+- [ ] **Parte 31 (SQL)**: as RPCs ainda não devolvem cidade, nascimento, resumos lidos, data da prova
+  do cronograma e último login; os nove e-mails novos com SQL (seção 4 do PLANO); um índice único
+  por pessoa e referência para as cartas automáticas; e `emails_48h` passando a ignorar os
+  transacionais novos.
+- [ ] **Ligar o site e o webhook** aos seis automáticos (onde chamar cada um está no relatório da
+  entrega de 17/10/2026 e no cabeçalho de `supabase/functions/enviar-email/index.ts`).
+- [ ] **Página "Todas as cartas"** no painel, com amostra viva de cada tipo e "sortear outra versão".
 
 ## Descartado
 
@@ -50,7 +73,7 @@ Ideias pensadas para os e-mails pessoais, com a decisão de cada uma. `[x]` feit
   de forma confiável para cada faixa; inventar número quebra a confiança.
 - ~~Dizer há quanto tempo a pessoa está no plano gratuito~~: pedido do dono; soa como cobrança.
 - ~~Mandar convite em lote para quem não aceitou novidades~~: os Termos (14.3) prometem o contrário.
-- ~~Mais de duas observações pessoais na mesma carta~~: a partir da terceira, deixa de parecer
-  atenção e passa a parecer vigilância.
+- ~~Mais de três observações pessoais na mesma carta~~: a partir da quarta, deixa de parecer
+  atenção e passa a parecer vigilância (eram duas até 17/10/2026; o PLANO subiu para três).
 - ~~Uma carta por dia útil automática para todos os grupos~~: o dono quer só clicar; mas mandar sem
   ninguém olhar o histórico é o caminho mais curto para virar spam. O botão continua sendo dele.

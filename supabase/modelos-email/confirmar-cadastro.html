@@ -4,83 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
-<title>Confirme seu e-mail</title>
+<title>Confirme o seu e-mail</title>
 </head>
-<body style="margin:0; padding:0; background-color:#f1f3f2;">
+<body style="margin:0; padding:0; background-color:#ffffff;">
 <!-- Pré-cabeçalho: o texto que aparece ao lado do assunto na caixa de entrada. -->
-<div style="display:none; max-height:0; overflow:hidden; opacity:0;">Falta um toque para liberar sua conta no Orto Questões.</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1f3f2;">
-  <tr>
-    <td align="center" style="padding:32px 16px;">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;">
-        <tr>
-          <td align="center" style="padding:0 0 20px 0; font-family:-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:20px; font-weight:700; color:#14655e;">
-            Orto Questões
-          </td>
-        </tr>
-        <tr>
-          <td style="background-color:#ffffff; border:1px solid #dce2e0; border-radius:12px; padding:36px 36px 40px 36px; font-family:-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#12181a;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td align="center" style="padding:0 0 12px 0;">
-                  <img src="https://ortoquestoes.com.br/ranking/mensageiro.png" width="58" height="72" alt="" style="display:block; border:0; image-rendering:pixelated;">
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="padding:0 0 20px 0;">
-                  <span style="display:inline-block; padding:5px 12px; background-color:#f4cf7c; color:#1b1208; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">Missão: confirmar o e-mail</span>
-                </td>
-              </tr>
-            </table>
-            <h1 style="margin:0 0 16px 0; font-size:24px; line-height:1.3; font-weight:700; color:#12181a;">
-              {{ if .Data.nome }}Olá, {{ .Data.nome }}!{{ else }}Olá!{{ end }}
-            </h1>
-            <p style="margin:0 0 16px 0; font-size:16px; line-height:1.6;">
-              Que bom ter você no <strong>Orto Questões</strong>. Falta só um toque para ativar sua conta: confirmar que este e-mail é seu.
-            </p>
-            <p style="margin:0 0 12px 0; font-size:16px; line-height:1.6;">Com a conta ativa, você passa a ter:</p>
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px 0;">
-              <tr>
-                <td valign="top" style="padding:0 10px 8px 0; font-size:16px; line-height:1.6; color:#14655e; font-weight:700;">&#10003;</td>
-                <td style="padding:0 0 8px 0; font-size:16px; line-height:1.6;">Questões das provas oficiais, comentadas alternativa por alternativa</td>
-              </tr>
-              <tr>
-                <td valign="top" style="padding:0 10px 8px 0; font-size:16px; line-height:1.6; color:#14655e; font-weight:700;">&#10003;</td>
-                <td style="padding:0 0 8px 0; font-size:16px; line-height:1.6;">Seu desempenho acompanhado por tema e por prova, com revisão programada</td>
-              </tr>
-              <tr>
-                <td valign="top" style="padding:0 10px 0 0; font-size:16px; line-height:1.6; color:#14655e; font-weight:700;">&#10003;</td>
-                <td style="padding:0; font-size:16px; line-height:1.6;">Ranking, emblemas e progresso salvo em qualquer dispositivo</td>
-              </tr>
-            </table>
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 12px auto;">
-              <tr>
-                <td align="center" bgcolor="#14655e" style="border-radius:8px;">
-                  <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=email" target="_blank" style="display:inline-block; padding:15px 34px; font-family:-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:17px; font-weight:700; color:#ffffff; text-decoration:none; border-radius:8px;">Confirmar meu e-mail</a>
-                </td>
-              </tr>
-            </table>
-            <p style="margin:0 0 28px 0; font-size:13px; line-height:1.5; color:#5b686c; text-align:center;">Funciona em qualquer navegador ou celular. Você já entra direto no site.</p>
-            <p style="margin:0 0 8px 0; font-size:14px; line-height:1.6; color:#5b686c;">Se o botão não funcionar, copie e cole este endereço no navegador:</p>
-            <p style="margin:0 0 28px 0; font-size:13px; line-height:1.5; word-break:break-all;">
-              <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=email" target="_blank" style="color:#14655e; text-decoration:underline;">{{ .SiteURL }}/?token_hash={{ .TokenHash }}&amp;type=email</a>
-            </p>
-            <hr style="border:none; border-top:1px solid #dce2e0; margin:0 0 20px 0;">
-            <p style="margin:0 0 20px 0; font-size:14px; line-height:1.6; color:#5b686c;">
-              Se você não criou uma conta no Orto Questões, pode ignorar esta mensagem com tranquilidade. Nenhuma conta será ativada sem essa confirmação.
-            </p>
-            <p style="margin:0; font-size:16px; line-height:1.6;">Bons estudos,<br><strong>Equipe Orto Questões</strong></p>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" style="padding:20px 16px 0 16px; font-family:-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:12px; line-height:1.6; color:#5b686c;">
-            Você recebeu este e-mail porque este endereço foi usado para criar uma conta no Orto Questões.<br>
-            Questões de ortopedia para TEOT, TARO, ENARE R4 e outras provas.
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div style="display:none; max-height:0; overflow:hidden; opacity:0;">Um toque para confirmar o e-mail, e você já entra no site.</div>
+<div style="max-width:560px; padding:16px 14px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.55; color:#222222;">
+  <p style="margin:0 0 14px 0;">{{ if .Data.nome }}{{ .Data.nome }}, tudo bem?{{ else }}Oi, tudo bem?{{ end }}</p>
+  <p style="margin:0 0 14px 0;">Que bom ter você no Orto Questões. Eu sou o Tales, ortopedista, e fiz o site que eu queria ter tido quando estudava para o TEOT: as questões das provas de verdade, cada uma com a explicação de todas as alternativas, não só da certa.</p>
+  <p style="margin:0 0 14px 0;">Falta um toque para liberar a sua conta: confirmar que este e-mail é seu. O botão abaixo já te leva para dentro do site, em qualquer navegador ou celular.</p>
+  <p style="margin:0 0 20px 0;">
+    <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=email" target="_blank" style="display:inline-block; padding:12px 22px; background-color:#14655e; color:#ffffff; border-radius:8px; font-weight:bold; text-decoration:none; font-size:15px;">Confirmar meu e-mail</a>
+  </p>
+  <p style="margin:0 0 14px 0; font-size:13px; line-height:1.5; color:#5b686c;">Se o botão não abrir, copie e cole este endereço no navegador:<br>
+    <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=email" target="_blank" style="color:#14655e; word-break:break-all;">{{ .SiteURL }}/?token_hash={{ .TokenHash }}&amp;type=email</a></p>
+  <p style="margin:0 0 14px 0;">O que você vai encontrar lá dentro: questões por tema e por prova, a Revisão, que aprende com o que te pega e traz de volta na hora certa, e o Desempenho, que mostra onde você está crescendo. Você senta e estuda; o site decide o resto.</p>
+  <p style="margin:0 0 14px 0;">Se eu pudesse te dar um único conselho para os primeiros dez minutos: cinco questões de um tema que você gosta, lendo o comentário inteiro, inclusive das alternativas erradas. É ali que mora a pegadinha da banca.</p>
+  <p style="margin:0 0 14px 0;">Um abraço,<br>Tales, do Orto Questões</p>
+  <p style="margin:0 0 14px 0;">P.S.: se você não criou uma conta no Orto Questões, pode ignorar esta mensagem com tranquilidade. Nenhuma conta é ativada sem essa confirmação.</p>
+  <p style="margin:28px 0 0 0; font-size:12px; line-height:1.4; color:#888888;">Você recebeu este e-mail porque este endereço foi usado para criar uma conta no Orto Questões, o site de questões de ortopedia para o TEOT, o TARO e o R4.</p>
+</div>
 </body>
 </html>

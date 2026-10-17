@@ -1,7 +1,10 @@
-# E-mail de confirmação de cadastro (configurar no painel do Supabase)
+# E-mails de confirmação de cadastro e de senha nova (configurar no painel do Supabase)
 
-Duas configurações que ficam no painel do Supabase, fora do código, e que mais pesam na taxa de
-quem cria a conta e nunca confirma. Fazer uma vez.
+Estes dois e-mails saem do Supabase Auth, fora do código, por isso ficam em
+`supabase/modelos-email/` e precisam ser colados no painel uma vez. Desde 17/10/2026 os dois
+seguem a voz das cartas (docs/emails/PLANO.md): texto simples, assinatura "Um abraço, / Tales, do
+Orto Questões", um P.S., sem logo e sem lista de benefícios, para chegarem na caixa de entrada
+principal, não em Promoções.
 
 ## 1. Enviar pelo Resend (SMTP próprio)
 
@@ -14,7 +17,7 @@ Painel do Supabase > Authentication > Emails > SMTP Settings > Enable custom SMT
 | Campo | Valor |
 |---|---|
 | Sender email | `contato@ortoquestoes.com.br` (o mesmo domínio verificado no Resend) |
-| Sender name | `Orto Questões` |
+| Sender name | `Tales, do Orto Questões` |
 | Host | `smtp.resend.com` |
 | Port | `465` |
 | Username | `resend` |
@@ -22,27 +25,30 @@ Painel do Supabase > Authentication > Emails > SMTP Settings > Enable custom SMT
 
 Depois, em Authentication > Rate Limits, subir "Rate limit for sending emails" (por exemplo 100 por hora).
 
-## 2. Link que funciona em qualquer navegador
+## 2. Colar os dois modelos (passo a passo)
 
-Hoje o link de confirmação usa o fluxo PKCE: se a pessoa abre o e-mail no celular e o link cai no
-navegador do aplicativo de e-mail (e não no navegador onde se cadastrou), o e-mail é confirmado,
-mas ela não entra direto. O site já mostra "E-mail confirmado! Agora é só entrar", mas o ideal é
-o link já entrar sozinho. O site entende o formato `?token_hash=...&type=email` em qualquer
-navegador (`src/conta/retornoAuth.ts`).
+Os dois modelos usam o formato `?token_hash=...&type=...`, que o site entende em qualquer
+navegador (`src/conta/retornoAuth.ts`): quem abre o e-mail no celular, dentro do aplicativo do
+Gmail, já entra direto, sem precisar voltar ao navegador em que se cadastrou.
 
-Painel do Supabase > Authentication > Emails > Templates > **Confirm signup**:
+1. Painel do Supabase > Authentication > Emails > Templates.
+2. Aba **Confirm signup**:
+   - Subject: `Confirme o seu e-mail no Orto Questões`
+   - Message body: apagar o conteúdo e colar o arquivo inteiro de
+     [`supabase/modelos-email/confirmar-cadastro.html`](../supabase/modelos-email/confirmar-cadastro.html).
+   - Salvar.
+3. Aba **Reset password** (recuperação de senha):
+   - Subject: `Sua senha nova no Orto Questões`
+   - Message body: apagar o conteúdo e colar o arquivo inteiro de
+     [`supabase/modelos-email/recuperar-senha.html`](../supabase/modelos-email/recuperar-senha.html).
+   - Salvar.
+4. Authentication > URL Configuration: o **Site URL** precisa ser `https://ortoquestoes.com.br`,
+   sem barra no fim (os modelos já põem a barra). Conferir que `https://ortoquestoes.com.br/**`
+   está nas Redirect URLs.
+5. Testar: criar uma conta de teste com um e-mail próprio, abrir o link no celular (dentro do
+   aplicativo do Gmail) e conferir que o site entra direto. Depois pedir "esqueci a senha" na tela
+   de entrada e conferir que o segundo e-mail chega com o nome e que o botão abre a tela de senha nova.
 
-- Subject: `Confirme seu e-mail no Orto Questões`
-- Message body: colar o conteúdo inteiro de
-  [`supabase/modelos-email/confirmar-cadastro.html`](../supabase/modelos-email/confirmar-cadastro.html).
-
-É o modelo antigo (tabelas, saudação com o nome, benefícios, link reserva), com três mudanças: o
-link usa `{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=email` no lugar de
-`{{ .ConfirmationURL }}`; entrou o mensageiro em pixel art com o selo "Missão: confirmar o
-e-mail", igual ao pop-up do site; e um pré-cabeçalho, o texto que aparece ao lado do assunto na
-caixa de entrada.
-
-Em Authentication > URL Configuration, o **Site URL** precisa ser `https://ortoquestoes.com.br`, sem barra no fim (o modelo já põe a barra).
-
-Depois de salvar, criar uma conta de teste com um e-mail próprio, abrir o link no celular (dentro
-do aplicativo do Gmail) e conferir que o site entra direto.
+O nome da pessoa entra em `{{ .Data.nome }}` (o site grava `nome` nos metadados ao cadastrar); sem
+nome, a saudação vira "Oi, tudo bem?". Os dois modelos não têm imagem, tabela nem botão de cor
+forte além do único botão de ação, de propósito: é o que mantém o e-mail com cara de carta.
