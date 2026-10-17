@@ -38,7 +38,7 @@ const esperar = (ms: number) => new Promise(r => window.setTimeout(r, ms))
 const diaDeHoje = () => new Date().toISOString().slice(0, 10)
 
 /**
- * Pessoas › Cartas: cartas pessoais em lote, por grupo. Cada pessoa recebe uma carta
+ * E-mails › Cartas pessoais: cartas pessoais em lote, por grupo. Cada pessoa recebe uma carta
  * escrita para ela (o mesmo motor da ficha). Antes de enviar dá para ver o histórico
  * de cada uma, abrir a prévia, sortear outra versão, editar, desmarcar e tirar quem
  * recebeu e-mail recente. O servidor confere de novo cada trava.

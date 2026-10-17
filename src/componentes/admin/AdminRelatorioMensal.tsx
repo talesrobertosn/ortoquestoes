@@ -10,7 +10,7 @@ function mesAnterior() {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
 }
 
-/** Painel › Operações › Lembretes e e-mails: relatório mensal dos assinantes (antes ficava em Ajustes). */
+/** Painel › E-mails › Lembretes e automáticos: relatório mensal dos assinantes (antes ficava em Ajustes). */
 export function AdminRelatorioMensal() {
   const [mes, definirMes] = useState(mesAnterior)
   const [resumo, definirResumo] = useState<ResumoRelatorio | null>(null)
