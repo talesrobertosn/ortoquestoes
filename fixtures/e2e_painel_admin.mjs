@@ -3,7 +3,9 @@
 // Sobe o site (vite) apontando para um Supabase falso que o próprio teste atende (context.route), com a
 // conta marcada como administradora (eh_administrador) e dados de exemplo nas RPCs do painel. Confere:
 //  1. as seis seções na navegação, com o número de online em Agora;
-//  2. Agora: "Online agora" com o que cada pessoa está vendo, o dia de hoje e o que pede atenção, uma vez só;
+//  2. Agora como torre de controle: "Online agora" com uma linha por pessoa e o que cada uma está vendo em texto
+//     completo (nenhum nome ou atividade cortado com reticências), filtros e busca, os números do dia, as listas
+//     completas (estudaram hoje, entraram, recém-cadastrados, mais ativos, dinheiro hoje) e o que pede atenção;
 //  3. Pessoas › Usuários sem repetir os números de hoje nem o "ao vivo";
 //  4. Financeiro › Ganhos: hoje, 7 dias, mês, ano, desde o começo e a previsão de fechamento;
 //  5. endereços antigos (?aba=hoje, receita, operacoes, configuracoes) abrindo no lugar novo;
@@ -31,7 +33,7 @@ const agora = Date.now()
 const iso = (ms) => new Date(ms).toISOString()
 const nomes = ['Ana Ribeiro', 'Bruno Costa', 'Carla Mendes', 'Diego Alves', 'Elisa Prado', 'Fábio Nunes', 'Gabriela Lima', 'Henrique Sá', 'Isabela Rocha', 'João Pires', 'Karina Melo', 'Lucas Teixeira', 'Marina Duarte', 'Nicolas Faria']
 const paginas = [
-  ['/sessao · 3 de 10', 'mao-0853'], ['/resumos/rockwood10-17-sindrome-compartimental · 40%', null], ['/flashcards/cripta', null], ['/cronograma', null],
+  ['/sessao · 3 de 10', 'mao-0853'], ['/resumos/rockwood10-17-sindrome-compartimental · 40% lido', null], ['/flashcards/cripta · andar 7', null], ['/cronograma', null],
 ]
 const usuarios = nomes.map((nome, i) => {
   const online = i < 4
@@ -57,9 +59,10 @@ const assinatura = (i, plano, meio, status, inicioDias, extra = {}) => {
   }
 }
 const assinaturas = [
-  assinatura(3, 'anual', 'cartao', 'ativa', 40), assinatura(5, 'anual', 'pix', 'ativa', 3), assinatura(12, 'anual', 'cartao', 'ativa', 0.2),
+  assinatura(3, 'anual', 'cartao', 'ativa', 40), assinatura(5, 'anual', 'pix', 'ativa', 3), assinatura(12, 'anual', 'cartao', 'ativa', 0.01),
   assinatura(6, 'mensal', 'cartao', 'ativa', 20), assinatura(10, 'semestral', 'pix', 'ativa', 160), assinatura(9, 'mensal', 'cartao', 'cancelada', 50, { cancelar_ao_fim: true, cancelada_em: iso(agora - 10 * DIA) }),
   assinatura(2, 'mensal', 'pix', 'pendente', 1),
+  assinatura(7, 'mensal', 'cartao', 'cancelada', 15, { cancelar_ao_fim: true, cancelada_em: iso(agora - 30 * MIN) }),
 ]
 const precos = { mensal: 39.9, semestral: 199, anual: 349 }
 const cobrancasReais = assinaturas.filter(a => a.status !== 'pendente').map(a => ({ id_usuario: a.id_usuario, plano: a.plano, meio: a.meio, valor: precos[a.plano], em: a.ultima_cobranca_em, id_pagamento: String(1e9 + Math.floor(Math.random() * 1e6)), situacao: 'paga', usuario: a.usuario, nome: a.nome }))
@@ -80,7 +83,10 @@ const rpcs = {
   listar_usuarios_admin: () => usuarios,
   cobrancas_admin: () => cobrancasReais,
   serie_diaria_admin: (a) => serie.slice(-(a.p_dias ?? 30)),
-  sinais_usuarios_admin: () => [],
+  sinais_usuarios_admin: () => [
+    { id_usuario: u(1).id_usuario, planos_vezes: 3, planos_ultima: iso(agora - 2 * HORA), condicoes_ultima: null, flashcards_unicos: 0, flashcards_7d: 0, flashcards_ultima: null, cripta_andar: null, locais_trabalho: null },
+    { id_usuario: u(2).id_usuario, planos_vezes: 0, planos_ultima: null, condicoes_ultima: null, flashcards_unicos: 40, flashcards_7d: 25, flashcards_ultima: iso(agora - 10 * MIN), cripta_andar: 7, locais_trabalho: null },
+  ],
   funil_admin: () => [{ cadastrados: 14, confirmaram: 12, responderam: 11, passaram_50: 8, passaram_500: 3, assinaram: 5 }],
   retencao_admin: () => [],
   resumo_lembretes_admin: () => [],
@@ -88,6 +94,10 @@ const rpcs = {
   obter_config_emails_admin: () => [{ marcos_automaticos: true, alertas_admin: true }],
   obter_config_comercial_admin: () => [{ paywall_ativo: true, limite_diario_gratis: 20, pagamentos_ativos: true, atualizado_em: iso(agora) }],
   obter_config_premium_admin: () => [],
+  // A ficha de uma pessoa (objetos JSON, não listas): o bastante para abrir sem erro.
+  detalhe_usuario_admin: () => ({ respostas: [], sessoes: [], favoritas: 2, anotacoes: 0, oculto_ranking: false, cortesia: null, aparelho: { descricao: 'iPhone', entrou_em: iso(agora - 3 * DIA), visto_em: iso(agora - 15_000) }, emails_conquistas: true, emails: [], perfil: { situacao: 'r2', servico: 'HC-FMUSP', cidade: 'São Paulo', uf: 'SP', confirmado: true } }),
+  atividade_usuario_admin: () => ({ por_dia: [], horas: [], visitas: [], agora: { pagina: '/sessao · 3 de 10', questao: 'mao-0853', pagina_em: iso(agora - MIN), visto_em: iso(agora - 15_000), online: true }, conta: { nascimento: null, whatsapp: null, novidades: true, confirmado_em: iso(agora - 3 * DIA), ultimo_login: iso(agora - HORA), provedor: 'email' } }),
+  ficha_extra_usuario_admin: () => ({ perfil: null, planos: null, flashcards: { progresso: null, servidor: null, cripta: null } }),
 }
 const pedidos = []
 async function atender(rota) {
@@ -119,8 +129,13 @@ try {
     await c.route(`${SUPABASE}/**`, atender)
     const sessaoAuth = { access_token: `tok-${CONTA}`, refresh_token: 'r', token_type: 'bearer', expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 30 * 24 * 3600, user: usuarioFalso(CONTA) }
     await c.addInitScript((s) => {
-      if (!localStorage.getItem('sb-ortoquestoes-auth')) localStorage.setItem('sb-ortoquestoes-auth', s)
-      localStorage.setItem('oq-cookies', JSON.stringify({ escolha: 'recusado', versao: 1, em: new Date().toISOString() }))
+      // Também roda nos iframes isolados (prévia da carta na ficha), onde não há localStorage.
+      try {
+        if (!localStorage.getItem('sb-ortoquestoes-auth')) localStorage.setItem('sb-ortoquestoes-auth', s)
+        localStorage.setItem('oq-cookies', JSON.stringify({ escolha: 'recusado', versao: 1, em: new Date().toISOString() }))
+        // Sem escolha o site sorteia o tema; as capturas "claro" precisam ser claras.
+        localStorage.setItem('ortoquestoes:tema', JSON.stringify('claro'))
+      } catch { /* iframe sandbox */ }
     }, JSON.stringify(sessaoAuth))
     const p = await c.newPage()
     p.on('pageerror', e => erros.push(e.message))
@@ -139,21 +154,77 @@ try {
   const secoes = await pc.p.locator('.adm-nav__rotulo').allInnerTexts()
   assert.deepEqual(secoes, ['Agora', 'Pessoas', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
   assert.match(await pc.p.locator('.adm-nav__item[aria-current="page"]').innerText(), /Agora\s*4/)
-  // Online agora: os 4 do exemplo, cada um com o que está vendo.
-  await pc.p.waitForSelector('.adm-aovivo li button')
-  assert.equal(await pc.p.locator('.adm-aovivo li button').count(), 4)
-  assert.match(await pc.p.locator('.adm-aovivo').innerText(), /mao-0853/)
-  assert.match(await pc.p.locator('.adm-aovivo').innerText(), /Lendo o resumo/)
-  // "Online agora" e "Pessoas que estudaram" aparecem uma vez só na página.
-  assert.equal(await pc.p.getByText('Online agora', { exact: false }).count(), 1)
+  // Online agora: os 4 do exemplo, uma linha por pessoa, com o que cada um está vendo em texto completo.
+  await pc.p.waitForSelector('.adm-vivo .adm-pessoa')
+  assert.equal(await pc.p.locator('.adm-vivo .adm-pessoa').count(), 4)
+  const vivo = await pc.p.locator('.adm-vivo').innerText()
+  for (const t of ['Ana Ribeiro', 'Respondendo questões · Mão e punho · mao-0853 · 3 de 10', 'Lendo o resumo', '40% lido', 'Torneio de Flashcards: batalha na Cripta · andar 7', 'Cronograma', 'nesta página', 'online há', 'Ver ficha', 'Enviar carta', 'Assinante · anual', 'Não assinante', 'Viu os planos hoje · 3×'])
+    assert.ok(vivo.includes(t), `Online agora sem "${t}"`)
+  // Nada cortado: nenhum nome, selo ou atividade com reticências ativas nem texto escondido por overflow.
+  const cortados = () => pc.p.evaluate(() => {
+    const ruins = []
+    for (const el of document.querySelectorAll('.adm-agora *')) {
+      const cs = getComputedStyle(el)
+      // Rótulos só para leitor de tela (.so-leitor) são escondidos de propósito.
+      const temTexto = [...el.childNodes].some(n => n.nodeType === 3 && n.textContent.trim())
+      if (!temTexto || el.classList.contains('so-leitor')) continue
+      if (cs.textOverflow === 'ellipsis' && (cs.overflowX === 'hidden' || cs.overflow === 'hidden')) ruins.push('ellipsis: ' + el.className)
+      if ((cs.overflowX === 'hidden' || cs.overflow === 'hidden') && el.scrollWidth > el.clientWidth + 1) ruins.push('escondido: ' + el.className + ' "' + el.textContent.slice(0, 40) + '"')
+    }
+    return ruins
+  })
+  assert.deepEqual(await cortados(), [], 'texto cortado em Agora (1366 px)')
+  assert.ok(await pc.p.evaluate(() => document.documentElement.scrollWidth <= 1366), 'rolagem de lado no computador')
+  // Filtros e busca da lista ao vivo.
+  await pc.p.locator('.adm-vivo .adm-chip', { hasText: /^Assinantes/ }).click()
+  assert.equal(await pc.p.locator('.adm-vivo .adm-pessoa').count(), 1)
+  assert.match(await pc.p.locator('.adm-vivo .adm-pessoa').innerText(), /Diego Alves/)
+  await pc.p.locator('.adm-vivo .adm-chip', { hasText: 'Viu os planos' }).click()
+  assert.match(await pc.p.locator('.adm-vivo .adm-pessoa').innerText(), /Bruno Costa/)
+  await pc.p.locator('.adm-vivo .adm-chip', { hasText: 'Todos' }).click()
+  await pc.p.locator('.adm-vivo input[type="search"]').fill('carla')
+  assert.equal(await pc.p.locator('.adm-vivo .adm-pessoa').count(), 1)
+  await pc.p.locator('.adm-vivo input[type="search"]').fill('')
+  assert.equal(await pc.p.locator('.adm-vivo .adm-pessoa').count(), 4)
+  // Sumário fixo com os blocos, e cada bloco existe uma vez só.
+  const sumario = await pc.p.locator('.adm-sumario a').allInnerTexts()
+  assert.deepEqual(sumario, ['Online agora', 'Números do dia', 'Pede atenção', 'Estudaram hoje', 'Entraram hoje', 'Recém-cadastrados', 'Mais ativos na semana', 'Dinheiro hoje', 'Biblioteca hoje'])
+  for (const id of ['agora-online', 'agora-numeros', 'agora-atencao', 'agora-estudaram', 'agora-entraram', 'agora-cadastros', 'agora-semana', 'agora-dinheiro', 'agora-biblioteca']) assert.equal(await pc.p.locator(`#${id}`).count(), 1, id)
+  assert.equal(await pc.p.locator('.adm-vivo').count(), 1)
   assert.equal(await pc.p.getByText('Pessoas que estudaram', { exact: true }).count(), 1)
+  // Números do dia: contas, cadastros, confirmaram o e-mail, questões (com ontem), dinheiro.
+  const numeros = await pc.p.locator('#agora-numeros').innerText()
+  for (const t of ['Contas no total', '14', 'Cadastros hoje', 'Confirmaram o e-mail', '12', 'Entraram hoje', 'Fizeram 5 ou mais questões', 'Questões respondidas', 'ontem', 'Usaram flashcards', 'Resumos abertos hoje', 'Assinantes com acesso', 'Pagaram hoje', 'Novas assinaturas hoje', 'Cancelamentos hoje', 'Pix pendentes', 'ainda não medido'])
+    assert.ok(numeros.includes(t), `Números do dia sem "${t}"`)
+  // Estudaram hoje: as 7 pessoas do dia, com o que cada uma fez (questões, flashcards, resumo), em lista completa.
+  const estudaram = await pc.p.locator('#agora-estudaram').innerText()
+  assert.equal(await pc.p.locator('#agora-estudaram .adm-pessoa').count(), 7)
+  for (const t of ['Fábio Nunes', '70 questões', 'flashcards hoje (25 na semana) · andar 7 no Torneio', 'leu o resumo', 'última atividade às', 'Ver ficha']) assert.ok(estudaram.includes(t), `Estudaram hoje sem "${t}"`)
+  await pc.p.locator('#agora-estudaram .adm-chip', { hasText: 'Mais questões' }).click()
+  assert.match(await pc.p.locator('#agora-estudaram .adm-pessoa').first().innerText(), /Fábio Nunes/)
+  await pc.p.locator('#agora-estudaram input[type="search"]').fill('elisa')
+  assert.equal(await pc.p.locator('#agora-estudaram .adm-pessoa').count(), 1)
+  await pc.p.locator('#agora-estudaram input[type="search"]').fill('')
+  // Recém-cadastrados (3), mais ativos na semana (todos com questões na semana, 9), dinheiro com nomes.
+  assert.equal(await pc.p.locator('#agora-cadastros .adm-pessoa').count(), 3)
+  assert.match(await pc.p.locator('#agora-cadastros').innerText(), /Chegou hoje às|Chegou ontem às|já fez 4 questões|ainda não começou/)
+  assert.equal(await pc.p.locator('#agora-semana .adm-pessoa').count(), 9)
+  assert.match(await pc.p.locator('#agora-semana .adm-pessoa').first().innerText(), /1º\s*330 questões na semana/)
+  const dinheiro = await pc.p.locator('#agora-dinheiro').innerText()
+  for (const t of ['Pagaram hoje', 'Marina Duarte', 'Anual · Cartão · R$', 'Novas assinaturas hoje', 'Cancelamentos hoje', 'Henrique Sá', 'Pix pendentes', 'Carla Mendes', 'Mensal · Pix']) assert.ok(dinheiro.includes(t), `Dinheiro hoje sem "${t}"`)
   assert.match(await pc.p.locator('.adm-atencao').innerText(), /1\s*avisos de pagamento com problema/)
+  // Ver ficha abre a ficha da pessoa; Enviar carta abre direto em "Carta e ações".
+  await pc.p.locator('.adm-vivo .adm-pessoa').first().getByRole('button', { name: 'Enviar carta' }).click()
+  await pc.p.waitForSelector('.adm-ficha[role="dialog"]', { timeout: 5_000 })
+  assert.equal(await pc.p.locator('.adm-ficha .fx-aba[aria-current="page"]').innerText(), 'Carta e ações')
+  await pc.p.keyboard.press('Escape')
+  await pc.p.waitForTimeout(300)
   await foto(pc.p, 'agora-1366')
 
   // Pessoas › Usuários: sem números de hoje repetidos nem "ao vivo".
   await pc.p.locator('.adm-nav__item', { hasText: 'Pessoas' }).click()
   await pc.p.waitForSelector('.adm-usuarios')
-  assert.equal(await pc.p.locator('.adm-aovivo, .adm-kpis-usuarios').count(), 0)
+  assert.equal(await pc.p.locator('.adm-vivo, .adm-kpis-usuarios').count(), 0)
   await foto(pc.p, 'pessoas-1366')
   await pc.p.locator('.adm-parte', { hasText: 'Crescimento' }).click()
   await pc.p.waitForTimeout(800)
@@ -199,9 +270,22 @@ try {
   // ---------- Celular ----------
   const cel = await contexto(390, 844, true)
   await abrir(cel.p)
-  await cel.p.waitForSelector('.adm-aovivo li')
+  await cel.p.waitForSelector('.adm-vivo .adm-pessoa')
   const largura = await cel.p.evaluate(() => document.documentElement.scrollWidth)
   assert.ok(largura <= 390, `rolagem de lado no celular (${largura}px)`)
+  // No celular a linha vira níveis, ainda sem nada cortado.
+  const cortadosCel = await cel.p.evaluate(() => {
+    const ruins = []
+    for (const el of document.querySelectorAll('.adm-agora *')) {
+      const cs = getComputedStyle(el)
+      if (![...el.childNodes].some(n => n.nodeType === 3 && n.textContent.trim()) || el.classList.contains('so-leitor')) continue
+      if (cs.textOverflow === 'ellipsis' && (cs.overflowX === 'hidden' || cs.overflow === 'hidden')) ruins.push('ellipsis: ' + el.className)
+      if ((cs.overflowX === 'hidden' || cs.overflow === 'hidden') && el.scrollWidth > el.clientWidth + 1) ruins.push('escondido: ' + el.className)
+    }
+    return ruins
+  })
+  assert.deepEqual(cortadosCel, [], 'texto cortado em Agora (390 px)')
+  assert.ok((await cel.p.locator('.adm-vivo').innerText()).includes('Torneio de Flashcards: batalha na Cripta · andar 7'))
   await foto(cel.p, 'agora-390')
   await abrir(cel.p, '?aba=financeiro')
   await cel.p.waitForSelector('.adm-ganhos')

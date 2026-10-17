@@ -105,7 +105,8 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
     prazoMs: 20_000,
   })
   // Cobranças gravadas no banco (parte 23): Financeiro e Cobranças leem da mesma consulta. Sem a RPC, tudo pelo preço dos planos.
-  const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: aba === 'financeiro' || aba === 'cobrancas' })
+  // Agora também lê as cobranças: "Pagaram hoje" com nomes e valores.
+  const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: aba === 'financeiro' || aba === 'cobrancas' || aba === 'agora' })
   const cobrancasReais = cobrancasQ.erro ? null : cobrancasQ.dados ?? null
   const avisoReais = !cobrancasQ.erro ? null : funcaoAusente(cobrancasQ.erro)
     ? `Para usar os valores gravados no banco (Pix pelo valor pago, cartão pelo valor contratado), cole no Supabase a ${PARTE_COBRANCAS}. Enquanto isso, os valores são estimados pelos planos.`
@@ -244,7 +245,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
         <div id="adm-painel" className="empilha-2" role={variasPartes ? 'tabpanel' : undefined} aria-labelledby={variasPartes ? `adm-parte-${aba}` : undefined}>
           {erroNovo && (aba === 'agora' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
 
-          {aba === 'agora' && <AdminAgora conta={conta} resumo={resumo} usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} errosPagamento={errosPagamento} pendenciasConteudo={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
+          {aba === 'agora' && <AdminAgora conta={conta} resumo={resumo} usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} assinaturas={reais} cobrancas={cobrancasQ.dados === undefined && !cobrancasQ.erro ? null : cobrancasReais} avisoCobrancas={avisoReais} errosPagamento={errosPagamento} pendenciasConteudo={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
 
           {aba === 'usuarios' && (usuarios
             ? <AdminUsuarios usuarios={usuarios} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} aoVerAgora={() => trocarAba('agora')} />

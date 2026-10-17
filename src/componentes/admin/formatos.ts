@@ -160,14 +160,39 @@ export function resumoDaPagina(pagina: string | null | undefined): string | null
   const m = (pagina ?? '').split(' · ')[0].match(/^\/resumos\/([a-z0-9-]{3,80})$/)
   return m && m[1] !== 'caderno' && m[1] !== 'frases' ? m[1] : null
 }
+/** Só o nome da página, sem o complemento ("Respondendo questões"). */
+function nomeDaRota(rota: string): string {
+  const capitulo = resumoDaPagina(rota)
+  return capitulo ? `Lendo o resumo: ${tituloResumo(capitulo)}` : PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota.startsWith('/flashcards') ? 'Flashcards' : rota)
+}
 /** "/sessao · 3 de 10" vira "Respondendo questões (3 de 10)". */
 export function rotuloPagina(pagina: string | null | undefined): string {
   if (!pagina) return 'sem registro'
   const [rota, extra] = pagina.split(' · ')
-  const capitulo = resumoDaPagina(rota)
-  const nome = capitulo ? `Lendo o resumo: ${tituloResumo(capitulo)}` : PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota.startsWith('/flashcards') ? 'Flashcards' : rota)
+  const nome = nomeDaRota(rota)
   return extra ? `${nome} (${extra})` : nome
 }
+/** Área da questão pelo prefixo do id ("trauma-0412" → "Trauma adulto"), com os nomes da taxonomia. */
+const AREAS: Record<string, string> = {
+  mao: 'Mão e punho', 'ombro-cotovelo': 'Ombro e cotovelo', quadril: 'Quadril', joelho: 'Joelho', coluna: 'Coluna', 'pe-tornozelo': 'Pé e tornozelo',
+  trauma: 'Trauma adulto', pediatria: 'Ortopedia pediátrica', tumores: 'Tumores ósseos e de partes moles', 'conceitos-basicos': 'Conceitos básicos',
+  'ortopedia-geral': 'Ortopedia geral', osteometabolicas: 'Osteometabólicas',
+}
+export const areaDaQuestao = (id: string | null | undefined): string | null => id ? AREAS[id.replace(/-\d+$/, '')] ?? null : null
+/**
+ * O que a pessoa está fazendo agora, em pedaços para o monitor ao vivo escrever a frase inteira
+ * ("Respondendo questões · Trauma adulto · trauma-0412 · 3 de 10"; "Lendo o resumo: … · 40% lido").
+ */
+export function pedacosAtividade(u: { pagina?: string | null; questao?: string | null }): { nome: string; area: string | null; questao: string | null; extra: string | null } {
+  if (!u.pagina) return { nome: 'Página ainda não registrada', area: null, questao: null, extra: null }
+  const [rota, extra] = u.pagina.split(' · ')
+  return { nome: nomeDaRota(rota), area: areaDaQuestao(u.questao), questao: u.questao ?? null, extra: extra ?? null }
+}
+/** Iniciais e cor fixa por pessoa, para reconhecer de relance nas listas do painel. */
+export const iniciais = (u: { nome?: string | null; email?: string | null }) => (u.nome ?? u.email ?? '?').split(/[\s@.]+/).filter(Boolean).slice(0, 2).map(p => p[0]?.toUpperCase()).join('')
+export const corDe = (id: string) => `hsl(${[...id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 360, 7)} 45% 42%)`
+/** "14:32" no relógio de São Paulo. */
+export const hora = (valor: string | number | null | undefined) => valor ? new Date(valor).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' }) : '—'
 /** "agora", "há 4 min", "há 2 h", ou a data. */
 export function haQuantoTempo(valor: string | null | undefined): string {
   if (!valor) return 'nunca'
