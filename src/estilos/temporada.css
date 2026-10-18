@@ -19,6 +19,8 @@
 /* Cartão de jogo. */
 .px-cartao,
 .treinar-pagina .tr-etapa,
+.treinar-pagina .tn-bloco,
+.treinar-pagina .tn-salvo,
 .pe .cartao,
 .dp .cartao {
   border: 2px solid var(--px-borda) !important;

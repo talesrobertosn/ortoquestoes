@@ -304,6 +304,7 @@ function aplicaFacetas(
   if (ignorar !== 'comImagem' && filtros.comImagem && item.img !== 1) return false
   if (ignorar !== 'comComentario' && filtros.comComentario && item.c !== 1) return false
   if (ignorar !== 'soSimulados' && filtros.soSimulados && item.sim !== 1) return false
+  if (ignorar !== 'soSimulados' && filtros.semSimulados && item.sim === 1) return false
 
   if (ignorar !== 'situacao' && filtros.situacao !== 'todas') {
     const registro = contexto.respondidas[item.id]
