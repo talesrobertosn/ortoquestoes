@@ -28,3 +28,5 @@ Kit de posts (15/10/2026): [marketing/kit/README.md](marketing/kit/README.md) tr
 Em 16/10/2026, Tales aprovou como modelo o trio **Embarque** (feed: cartão de embarque), **Exame de DNA** (stories de questão: "quem é o pai?") e **Créditos finais** (stories de propaganda com tudo o que o site tem e "Treine grátis"). Veja [o guia](marketing/instagram/estilos/EMBARQUE-DNA-CREDITOS.md).
 
 Em 16/10/2026, Tales definiu o **modelo padrão** de posts (stories e feed): o lançamento da Biblioteca de Resumos, com telas reais do site editadas (MacBook e iPhone, lupas com moldura dourada e pinos numerados), cor dominante verde ou branca. Quando ele pedir "no modelo padrão", use este. Veja [o guia](marketing/instagram/estilos/MODELO-PADRAO.md).
+
+Em 18/10/2026, Tales aprovou para o arsenal o **Laboratório de patologia** (feed: lâmina na ocular, laudo com pinos) e a **Raspadinha da prova** (stories). Veja [o guia](marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).

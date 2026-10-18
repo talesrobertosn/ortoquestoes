@@ -115,3 +115,16 @@ Tales pediu para salvar como modelo o post de 16/10: **Embarque** (feed de 3 sli
 
 ## Modelo padrão (16/10/2026)
 Tales aprovou o post da Biblioteca de Resumos como **modelo padrão**: "quando eu pedir no modelo padrão, seja esse". Telas reais do site editadas (aparelhos, lupas e pinos numerados), cor dominante verde ou branca, tonalidades ajustáveis. [Guia e modelo executável](../../marketing/instagram/estilos/MODELO-PADRAO.md).
+
+## Antes de criar e antes de entregar (orientação de 17/10/2026)
+Pedido do Tales: antes de fazer qualquer post, ler este diretório de marketing inteiro (este arquivo, `marketing/instagram/README.md`, `estilos/ESTILOS.md`, os guias dos modelos aprovados, `marketing/kit/README.md` e `marketing/kit/assets.md`). Antes de enviar, fazer uma revisão de design rigorosa: o padrão é um design "fenomenal", nunca um design qualquer. Gerar, abrir cada PNG no tamanho real e conferir:
+- nada cortado, sobreposto ou encostando (carimbos, rótulos, "Tela ilustrativa", rodapé);
+- espaço bem distribuído, sem buraco vazio nem aperto; hierarquia clara (gancho grande, apoio menor);
+- imagem da questão nítida (evitar ampliar imagem pequena) e, quando ajudar, pinos numerados ou lupa ligando a imagem à explicação, como no modelo padrão;
+- números coerentes entre si (por exemplo, "faltam N dias" no texto e na tela capturada: recapture as telas no dia com `telas.mjs`);
+- stories com o que importa entre 250 px e 1580 px de altura; a figurinha de link só no story de propaganda, num espaço livre;
+- acentos, contador de slides, marca e site.
+Corrigir e gerar de novo até ficar impecável; só então enviar.
+
+## Laboratório de patologia e Raspadinha da prova (aprovados em 18/10/2026)
+Tales aprovou os temas do post de 17/10 para o arsenal: **Laboratório de patologia** (feed) e **Raspadinha da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).

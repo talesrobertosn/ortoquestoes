@@ -23,6 +23,8 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | joelho-0189 | Lesão meniscal radial (TEOT 2025) | posts/2026-10-14-editorial-menisco-radial |
 | ombro-cotovelo-0632 | Nervo musculocutâneo perfurando o coracobraquial (Simulados, anatomia do braço) | posts/2026-10-16-embarque-musculocutaneo (feed) |
 | mao-1666 | Arco palmar profundo, ramo profundo da radial (Simulados, anatomia da mão) | posts/2026-10-16-embarque-musculocutaneo (stories) |
+| tumores-0309 | Tumor de células gigantes no rádio distal, com lâmina (TARO 2026) | posts/2026-10-17-laboratorio-tcg (feed) |
+| pediatria-0120 | Ângulo de Southwick na epifisiólise (TARO 2022) | posts/2026-10-17-laboratorio-tcg (stories) |
 | mao-0430 | Kienböck com ulna minus, encurtamento do rádio de 2 mm (TARO 2025) | posts/2026-10-18-kienbock-nivelamento (feed e stories) |
 | mao-0546 | Kienböck, carpectomia da fileira proximal no Lichtman IIIB (TEOT 2023) | posts/2026-10-18-kienbock-nivelamento (feed 3 e story 3) |
 | pe-tornozelo-0185 | Sóleo em vista lateral da perna (TEOT 2024) | posts/2026-10-18-paredao-album (feed) |
