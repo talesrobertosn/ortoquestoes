@@ -22,11 +22,11 @@ https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaig
 
 Revele o diagnóstico.
 
-Adolescente de 15 anos com dor no ombro e uma radiografia do TARO 2024. Comente a sua letra antes de arrastar: a foto está revelando no segundo slide.
+Adolescente de 15 anos com dor no ombro, numa radiografia do TARO 2024. Qual é a principal hipótese? Comente a sua letra antes de arrastar: a foto revela a resposta no segundo slide.
 
-Para a prova: lesão lítica epifisária, bem delimitada, em adolescente com a fise aberta: condroblastoma.
+A prova teórica do TEOT e do TEPOT é em 10 de janeiro de 2027. Fique pronto, prepare-se. Com o nosso cronograma, você faz o maior número de questões possível sem se cansar tanto: nós planejamos tudo para você.
 
-A prova teórica do TEOT e do TEPOT é em 10 de janeiro de 2027. Salve para revisar e marque quem está estudando com você. Treine grátis com as questões das provas oficiais comentadas: o caminho está no nosso perfil, @ortoquestoes.
+Conheça outras questões das provas oficiais, comentadas. Treine grátis e crie sua conta agora mesmo: o caminho está no perfil, @ortoquestoes.
 
 #ortopedia #residenciamedica #teot #tumoresosseos #ortoquestoes
 
