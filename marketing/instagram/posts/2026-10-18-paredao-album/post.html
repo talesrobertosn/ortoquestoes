@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Paredão da anatomia e álbum da prova</title>
+<!-- Feed, estilo "paredão" (reality show): questão pe-tornozelo-0185 (TEOT 2024), gabarito A (sóleo).
+     Stories, estilo "álbum de figurinhas": questão joelho-0206 (TARO 2025), gabarito D (Rosenberg).
+     No enunciado da joelho-0206 o acervo traz o resto da referência ("Alegre: Artmed, 2013."), que fica fora da arte;
+     a fonte da figura aparece por extenso. Sem percentuais de votação inventados. Nenhum desenho de anatomia.
+     Telas do Cronograma: marketing/kit/telas/*-18-10.png (capturadas em 18/10/2026: "Faltam 84 dias").
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-18-paredao-album/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; }
+section.story { height: 1920px; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+
+/* ================= FEED: paredão ================= */
+:root { --palco: #0B0A1F; --rosa: #FF3D7F; --amarelo: #FFD84A; --lilas: #B9A8FF; --ciano: #4FE3FF; }
+.palco { color: #F6F3FF; background: radial-gradient(ellipse 80% 40% at 50% 108%, rgba(255,61,127,.35), transparent 70%), linear-gradient(#17123A, #0B0A1F 60%); }
+.palco::before { content: ''; position: absolute; inset: -10% -10% 30%; pointer-events: none; opacity: .55;
+  background: conic-gradient(from 168deg at 18% -6%, transparent 0deg, rgba(185,168,255,.45) 6deg, transparent 14deg), conic-gradient(from 172deg at 82% -6%, transparent 0deg, rgba(79,227,255,.35) 6deg, transparent 14deg), conic-gradient(from 176deg at 50% -8%, transparent 0deg, rgba(255,216,74,.28) 5deg, transparent 10deg); filter: blur(2px); }
+.palco::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 160px; pointer-events: none; background: repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 2px, transparent 2px 90px), linear-gradient(transparent, rgba(0,0,0,.35)); transform: perspective(500px) rotateX(55deg); transform-origin: bottom; }
+.palco > * { position: relative; z-index: 1; }
+.topo { position: absolute; left: 52px; right: 52px; top: 46px; display: flex; justify-content: space-between; align-items: center; }
+.vivo { display: flex; align-items: center; gap: 14px; }
+.vivo b { display: inline-flex; align-items: center; gap: 10px; padding: 9px 18px; border-radius: 10px; font: 800 24px Jakarta; letter-spacing: .1em; color: #fff; background: var(--rosa); box-shadow: 0 0 30px rgba(255,61,127,.55); }
+.vivo b::before { content: ''; width: 12px; height: 12px; border-radius: 50%; background: #fff; }
+.vivo span { font: 800 26px Jakarta; letter-spacing: .14em; color: var(--amarelo); text-shadow: 0 0 18px rgba(255,216,74,.5); }
+.topo .pag { font: 700 24px Inter; color: #9C94C9; letter-spacing: .06em; }
+
+.telao { position: absolute; left: 52px; top: 140px; width: 446px; padding: 14px; border-radius: 30px; background: linear-gradient(145deg, #2A2460, #120F2C); box-shadow: 0 0 0 2px rgba(185,168,255,.35), 0 30px 70px rgba(0,0,0,.6), 0 0 80px rgba(185,168,255,.18); }
+.telao .img { position: relative; border-radius: 18px; overflow: hidden; background: #fff; }
+.telao img { display: block; width: 100%; }
+.telao .cam { position: absolute; left: 14px; top: 14px; padding: 6px 12px; border-radius: 8px; font: 800 18px Jakarta; letter-spacing: .1em; color: #fff; background: rgba(11,10,31,.82); }
+.telao .cam::before { content: ''; display: inline-block; width: 10px; height: 10px; margin-right: 8px; border-radius: 50%; background: var(--rosa); vertical-align: 1px; }
+.coluna { position: absolute; left: 528px; right: 52px; top: 150px; }
+.coluna h1 { font: 800 76px/.98 Jakarta; letter-spacing: -.045em; }
+.coluna h1 em { font-style: normal; color: var(--amarelo); }
+.coluna .enun { margin-top: 18px; font: 500 27px/1.38 Inter; color: #C9C2EE; }
+.coluna .enun b { color: var(--ciano); font-weight: 800; }
+.emparedados { display: grid; gap: 16px; margin-top: 30px; }
+.emp { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 18px; padding: 20px 20px; border-radius: 22px; background: linear-gradient(110deg, rgba(255,255,255,.12), rgba(255,255,255,.04)); box-shadow: inset 0 0 0 1.5px rgba(185,168,255,.3); }
+.emp i { font-style: normal; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; font: 800 32px Jakarta; color: #160F33; background: conic-gradient(from 210deg, var(--amarelo), var(--rosa), var(--lilas), var(--ciano), var(--amarelo)); box-shadow: 0 0 0 4px #17123A, 0 0 0 6px rgba(255,255,255,.25); }
+.emp strong { display: block; font: 800 34px/1.05 Jakarta; letter-spacing: -.02em; }
+.emp small { display: block; margin-top: 4px; font: 700 18px Inter; letter-spacing: .14em; text-transform: uppercase; color: var(--rosa); }
+.voto { position: absolute; left: 52px; right: 52px; top: 1086px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 26px 34px; border-radius: 28px; color: #160F33; background: linear-gradient(100deg, var(--amarelo), #FFB83D); box-shadow: 0 20px 50px rgba(255,184,61,.3); }
+.voto strong { font: 800 46px/1 Jakarta; letter-spacing: -.03em; }
+.voto span { display: flex; gap: 10px; }
+.voto span i { font-style: normal; display: grid; place-items: center; width: 62px; height: 62px; border-radius: 16px; font: 800 32px Jakarta; color: #fff; background: #160F33; }
+.dica { position: absolute; left: 52px; right: 52px; bottom: 40px; display: flex; justify-content: space-between; font: 700 24px Inter; color: #9C94C9; }
+.dica b { color: #fff; }
+
+/* resultado */
+.vencedor { position: absolute; left: 52px; right: 52px; top: 130px; display: grid; grid-template-columns: 300px 1fr; gap: 34px; align-items: center; padding: 34px; border-radius: 34px; background: linear-gradient(135deg, rgba(255,216,74,.2), rgba(255,61,127,.14)); box-shadow: inset 0 0 0 2px rgba(255,216,74,.55), 0 30px 80px rgba(0,0,0,.45), 0 0 120px rgba(255,216,74,.18); }
+.avatar { position: relative; width: 300px; height: 300px; border-radius: 50%; overflow: hidden; background: #fff; box-shadow: 0 0 0 8px #17123A, 0 0 0 12px var(--amarelo), 0 0 60px rgba(255,216,74,.6); }
+.avatar img { position: absolute; width: 760px; left: -40px; top: -400px; }
+.coroa { position: absolute; left: 116px; top: 108px; z-index: 2; padding: 8px 18px; border-radius: 99px; font: 800 22px Jakarta; letter-spacing: .12em; color: #160F33; background: var(--amarelo); box-shadow: 0 8px 20px rgba(0,0,0,.35); }
+.vencedor small { font: 800 24px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--amarelo); }
+.vencedor h2 { margin-top: 8px; font: 800 96px/.95 Jakarta; letter-spacing: -.05em; }
+.vencedor h2 em { font-style: normal; color: var(--amarelo); }
+.porque { margin-top: 18px; display: grid; gap: 8px; font: 500 26px/1.3 Inter; color: #E5E0FF; }
+.porque b { color: #fff; font-weight: 800; }
+.elim-tit { position: absolute; left: 52px; top: 590px; font: 800 26px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--rosa); }
+.eliminados { position: absolute; left: 52px; right: 52px; top: 646px; display: grid; gap: 18px; }
+.elim { position: relative; display: grid; grid-template-columns: 70px 1fr; align-items: center; gap: 20px; padding: 26px 28px; border-radius: 24px; background: rgba(255,255,255,.06); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.12); }
+.elim i { font-style: normal; display: grid; place-items: center; width: 70px; height: 70px; border-radius: 50%; font: 800 34px Jakarta; color: #8A82B8; background: #231D4D; filter: grayscale(1); }
+.elim strong { display: block; font: 800 36px/1.05 Jakarta; letter-spacing: -.02em; color: #DCD6FA; }
+.elim span { display: block; margin-top: 6px; font: 500 27px/1.3 Inter; color: #A9A1D6; }
+.carimbo { position: absolute; right: 26px; top: 50%; transform: translateY(-50%) rotate(-7deg); padding: 8px 18px; border: 4px solid var(--rosa); border-radius: 12px; font: 800 24px Jakarta; letter-spacing: .12em; color: var(--rosa); background: rgba(11,10,31,.6); }
+.prova-p { position: absolute; left: 52px; right: 52px; top: 1150px; padding: 24px 30px; border-radius: 24px; font: 600 30px/1.35 Inter; color: #160F33; background: linear-gradient(100deg, var(--ciano), #A9F2FF); }
+.prova-p strong { font-weight: 800; }
+
+/* final */
+.final { position: absolute; left: 52px; right: 52px; top: 120px; text-align: center; }
+.final small { font: 800 26px Inter; letter-spacing: .18em; text-transform: uppercase; color: var(--rosa); }
+.final h2 { margin-top: 12px; font: 800 80px/1 Jakarta; letter-spacing: -.045em; }
+.final h2 em { font-style: normal; color: var(--amarelo); }
+.final p { margin-top: 16px; font: 600 30px Inter; color: #C9C2EE; }
+.final p b { color: #fff; }
+.nota-tela { position: absolute; font: 500 18px Inter; color: rgba(255,255,255,.45); z-index: 6; }
+.cron-txt { position: absolute; left: 70px; right: 70px; top: 950px; text-align: center; font: 500 32px/1.38 Inter; color: #DCD6FA; }
+.cron-txt strong { color: #fff; font-weight: 800; }
+.cta { position: absolute; left: 0; right: 0; top: 1090px; text-align: center; }
+.botao { display: inline-flex; align-items: center; gap: 16px; padding: 24px 56px; border-radius: 99px; font: 800 46px Jakarta; letter-spacing: -.02em; color: #160F33; background: linear-gradient(#FFE88A, #FFC23D); box-shadow: 0 18px 44px rgba(255,194,61,.35), inset 0 3px 0 rgba(255,255,255,.6); }
+.botao svg { width: 44px; height: 44px; }
+.cta p { margin-top: 16px; font: 700 28px Inter; color: #fff; }
+.rodape { position: absolute; left: 52px; right: 52px; bottom: 36px; display: flex; justify-content: space-between; align-items: center; color: #fff; }
+.rodape small { font: 600 24px Inter; color: #9C94C9; }
+
+/* aparelhos (do modelo Treine grátis) */
+.iphone { --w: 400px; position: absolute; width: var(--w); padding: calc(var(--w) * .034); border-radius: calc(var(--w) * .17);
+  background: linear-gradient(145deg, #7b7f84 0%, #3b3e42 18%, #1d1e20 55%, #46494d 100%);
+  box-shadow: 0 0 0 1.5px #8d9196 inset, 0 0 0 calc(var(--w) * .008) #0d0d0e inset, 0 60px 120px rgba(0,0,0,.6), 0 20px 40px rgba(0,0,0,.4); z-index: 4; }
+.iphone .tela { position: relative; border-radius: calc(var(--w) * .138); overflow: hidden; aspect-ratio: 390 / 844; background: #0f1917; }
+.iphone .tela img { width: 100%; height: calc(100% - var(--w) * .115); margin-top: calc(var(--w) * .115); object-fit: cover; object-position: top; display: block; }
+.iphone .tela::before { content: '9:41'; position: absolute; left: 11%; top: calc(var(--w) * .045); font: 700 calc(var(--w) * .042) Inter; color: #fff; z-index: 2; }
+.iphone .tela::after { content: ''; position: absolute; right: 9%; top: calc(var(--w) * .05); width: calc(var(--w) * .07); height: calc(var(--w) * .032); border-radius: 4px; border: 1.5px solid rgba(255,255,255,.85); background: linear-gradient(90deg, #fff 70%, transparent 70%) content-box; padding: 1.5px; z-index: 2; }
+.iphone .ilha { position: absolute; top: calc(var(--w) * .03); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .27); height: calc(var(--w) * .078); border-radius: 999px; background: #000; z-index: 2; }
+.iphone .bt { position: absolute; width: calc(var(--w) * .012); border-radius: 3px; background: linear-gradient(90deg, #2a2c2f, #6b6f73); }
+.iphone .bt.d { right: calc(var(--w) * -.009); top: 26%; height: 11%; }
+.iphone .bt.e1 { left: calc(var(--w) * -.009); top: 20%; height: 5%; }
+.iphone .bt.e2 { left: calc(var(--w) * -.009); top: 28%; height: 8%; }
+.iphone .brilho { position: absolute; inset: calc(var(--w) * .034); border-radius: calc(var(--w) * .138); background: linear-gradient(115deg, rgba(255,255,255,.10), transparent 35%); pointer-events: none; z-index: 3; }
+.mac { --w: 900px; position: absolute; width: var(--w); z-index: 3; filter: drop-shadow(0 50px 70px rgba(0,0,0,.55)); }
+.mac .tampa { position: relative; padding: calc(var(--w) * .022) calc(var(--w) * .022) calc(var(--w) * .028); border-radius: calc(var(--w) * .032) calc(var(--w) * .032) calc(var(--w) * .008) calc(var(--w) * .008);
+  background: #0b0c0d; box-shadow: 0 0 0 2px #45484c, inset 0 0 0 1px #1d1f21; }
+.mac .tela { position: relative; aspect-ratio: 1100 / 688; overflow: hidden; border-radius: calc(var(--w) * .006); background: #0f1917; }
+.mac .tela img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.mac .notch { position: absolute; top: calc(var(--w) * .022); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .1); height: calc(var(--w) * .02); background: #0b0c0d; border-radius: 0 0 calc(var(--w) * .008) calc(var(--w) * .008); z-index: 2; }
+.mac .tampa::after { content: ''; position: absolute; inset: calc(var(--w) * .022); background: linear-gradient(120deg, rgba(255,255,255,.08), transparent 30%); pointer-events: none; z-index: 3; border-radius: calc(var(--w) * .006); }
+.mac .base { position: relative; width: 112%; margin-left: -6%; height: calc(var(--w) * .028); border-radius: 2px 2px calc(var(--w) * .03) calc(var(--w) * .03) / 2px 2px calc(var(--w) * .022) calc(var(--w) * .022);
+  background: linear-gradient(180deg, #e4e6e9 0%, #b9bcc0 45%, #8d9094 80%, #5d6064 100%); }
+.mac .base::before { content: ''; position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 15%; height: 45%; background: linear-gradient(180deg, #8e9195, #b5b8bc); border-radius: 0 0 calc(var(--w) * .012) calc(var(--w) * .012); }
+
+/* ================= STORIES: álbum de figurinhas ================= */
+.album { color: #1C2B23; background: radial-gradient(circle at 15% 8%, #FFE07A 0, transparent 30%), radial-gradient(circle at 90% 95%, #46C08A 0, transparent 40%), linear-gradient(160deg, #0E6B4F, #08402F); }
+.album::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 30px, transparent 30px 60px); }
+.album > * { position: relative; z-index: 1; }
+.pagina { position: absolute; left: 56px; right: 56px; top: 250px; height: 1430px; border-radius: 34px; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 0%, #FFFDF5, #F6EFD9 70%), #F6EFD9; box-shadow: 0 0 0 8px #F2C94C, 0 0 0 12px #08402F, 0 40px 90px rgba(0,0,0,.45); }
+.pagina::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle, rgba(14,107,79,.08) 2px, transparent 3px) 0 0 / 34px 34px; }
+.pagina > * { position: relative; }
+.faixa { display: flex; justify-content: space-between; align-items: center; padding: 26px 40px; color: #fff; background: linear-gradient(90deg, #0E6B4F, #138A63); }
+.faixa b { font: 800 40px/1 Jakarta; letter-spacing: -.02em; }
+.faixa b em { font-style: normal; color: #FFE07A; }
+.faixa span { padding: 8px 16px; border-radius: 99px; font: 800 22px Jakarta; letter-spacing: .1em; color: #0E3D2E; background: #FFE07A; }
+.slot { position: relative; margin: 40px auto 0; width: 760px; padding: 22px 22px 0; border-radius: 26px; background: #fff; box-shadow: 0 0 0 3px #E8DDBE, 0 20px 40px rgba(14,61,46,.18); transform: rotate(-1.5deg); }
+.slot .foto { position: relative; border-radius: 14px; overflow: hidden; }
+.slot .foto img { display: block; width: 100%; }
+.holo { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: soft-light; background: linear-gradient(115deg, transparent 20%, rgba(255,255,255,.7) 32%, rgba(255,140,220,.5) 40%, rgba(120,220,255,.5) 48%, transparent 60%); }
+.slot .num { position: absolute; left: 36px; top: 36px; z-index: 2; padding: 6px 14px; border-radius: 10px; font: 800 22px Jakarta; letter-spacing: .06em; color: #fff; background: rgba(14,61,46,.88); }
+.placa { margin: 18px -22px 0; padding: 18px 22px 20px; border-radius: 0 0 26px 26px; text-align: center; background: linear-gradient(#0E6B4F, #0A5640); color: #fff; }
+.placa small { display: block; font: 800 20px Inter; letter-spacing: .16em; text-transform: uppercase; color: #9FE3C6; }
+.placa strong { display: block; margin-top: 4px; font: 800 64px/1 Jakarta; letter-spacing: .02em; }
+.placa .vazio { color: rgba(255,255,255,.35); letter-spacing: .3em; }
+.fonte { margin: 16px 40px 0; text-align: center; font: 500 18px Inter; color: #7C8A80; }
+.pergunta { margin: 26px 48px 0; font: 800 50px/1.05 Jakarta; letter-spacing: -.035em; text-align: center; }
+.pergunta em { font-style: normal; color: #0E8A60; }
+.enun-a { margin: 14px 60px 0; text-align: center; font: 500 26px/1.38 Inter; color: #4F5E55; }
+.repetidas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 48px 0; }
+.rep { position: relative; padding: 16px 8px 14px; border-radius: 16px; text-align: center; background: #fff; box-shadow: 0 0 0 2.5px #E8DDBE, 0 8px 16px rgba(14,61,46,.12); }
+.rep:nth-child(odd) { transform: rotate(-3deg); } .rep:nth-child(even) { transform: rotate(2.5deg); }
+.rep b { display: block; margin: 0 auto 8px; width: 46px; height: 46px; line-height: 46px; border-radius: 50%; font: 800 26px Jakarta; color: #fff; background: #0E6B4F; }
+.rep span { font: 800 23px Jakarta; letter-spacing: .02em; }
+.rep.certa { box-shadow: 0 0 0 4px #F2C94C, 0 10px 24px rgba(242,201,76,.5); }
+.rep.certa b { background: #E2A700; }
+.rep.fora { opacity: .4; }
+.cola { margin: 26px 48px 0; text-align: center; font: 700 44px Caveat; color: #0E6B4F; }
+.rara { position: absolute; right: -16px; top: -22px; z-index: 3; width: 150px; height: 150px; border-radius: 50%; display: grid; place-items: center; text-align: center; transform: rotate(12deg);
+  background: conic-gradient(from 0deg, #FFE07A, #FF9AD5, #8FE3FF, #B8FFB0, #FFE07A); box-shadow: 0 10px 24px rgba(0,0,0,.3), inset 0 0 0 6px rgba(255,255,255,.55); font: 800 22px/1.05 Jakarta; letter-spacing: .06em; color: #2A1240; }
+.explica { margin: 26px 56px 0; padding: 24px 28px; border-radius: 22px; background: #fff; box-shadow: 0 0 0 2.5px #E8DDBE; font: 500 29px/1.38 Inter; color: #34433A; }
+.explica strong { color: #0E3D2E; font-weight: 800; }
+.explica + .explica { margin-top: 14px; font-size: 26px; }
+.rod-a { position: absolute; left: 40px; right: 40px; bottom: 30px; display: flex; justify-content: space-between; align-items: center; color: #1C2B23; }
+.rod-a small { font: 700 22px Inter; color: #7C8A80; }
+.grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 30px 48px 0; }
+.fig { position: relative; height: 170px; border-radius: 18px; display: grid; place-items: center; text-align: center; padding: 12px; }
+.fig.ok { background: linear-gradient(145deg, #138A63, #0A5640); color: #fff; box-shadow: 0 0 0 4px #fff, 0 10px 20px rgba(14,61,46,.25); }
+.fig.ok:nth-child(2) { background: linear-gradient(145deg, #E2A700, #B57F00); transform: rotate(2deg); }
+.fig.ok:nth-child(4) { background: linear-gradient(145deg, #4C7DF0, #2C55B8); transform: rotate(-2deg); }
+.fig.ok strong { font: 800 30px/1.1 Jakarta; }
+.fig.ok small { display: block; margin-top: 6px; font: 700 17px Inter; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+.fig.falta { border: 3px dashed #C9BC94; color: #A89A70; font: 800 26px/1.15 Jakarta; }
+.fig.falta i { font-style: normal; display: block; font-size: 50px; line-height: 1; }
+.a3-tit { margin: 36px 48px 0; text-align: center; }
+.a3-tit small { font: 800 24px Inter; letter-spacing: .16em; text-transform: uppercase; color: #0E8A60; }
+.a3-tit h2 { margin-top: 10px; font: 800 70px/1.02 Jakarta; letter-spacing: -.04em; }
+.a3-tit h2 em { font-style: normal; color: #0E8A60; }
+.a3-data { margin-top: 18px; font: 800 34px Jakarta; color: #C2410C; }
+.a3-cron { margin: 30px 56px 0; text-align: center; font: 500 32px/1.4 Inter; color: #34433A; }
+.a3-cron strong { color: #0E3D2E; font-weight: 800; }
+.botao-a { display: table; margin: 30px auto 0; padding: 26px 66px; border-radius: 99px; font: 800 54px Jakarta; letter-spacing: -.02em; color: #2A1A00; background: linear-gradient(#FFE88A, #F2B705); box-shadow: 0 0 0 5px #0E3D2E, 0 18px 40px rgba(14,61,46,.3); }
+.a3-sub { margin-top: 14px; text-align: center; font: 700 30px Inter; color: #34433A; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+<symbol id="seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="baixo" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+<template id="fone"><div class="tela"><img alt=""></div><div class="ilha"></div><div class="brilho"></div><span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span></template>
+<template id="mac"><div class="tampa"><div class="tela"><img alt=""></div><div class="notch"></div></div><div class="base"></div></template>
+
+<!-- ================= FEED ================= -->
+<section id="f1-paredao" class="palco">
+  <div class="topo"><div class="vivo"><b>AO VIVO</b><span>PAREDÃO DA ANATOMIA</span></div><span class="pag">TEOT 2024 · 1/3</span></div>
+  <div class="telao"><div class="img"><img src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0185-1.jpeg" alt=""><span class="cam">CÂMERA 1</span></div></div>
+  <div class="coluna">
+    <h1>Quem fica <em>na perna?</em></h1>
+    <p class="enun"><b>TEOT 2024:</b> O músculo indicado na figura a seguir é o:</p>
+    <div class="emparedados">
+      <div class="emp"><i>A</i><div><strong>solear.</strong><small>emparedado</small></div></div>
+      <div class="emp"><i>B</i><div><strong>poplíteo.</strong><small>emparedado</small></div></div>
+      <div class="emp"><i>C</i><div><strong>fibular curto.</strong><small>emparedado</small></div></div>
+      <div class="emp"><i>D</i><div><strong>fibular longo.</strong><small>emparedado</small></div></div>
+    </div>
+  </div>
+  <div class="voto"><strong>Vote nos comentários</strong><span><i>A</i><i>B</i><i>C</i><i>D</i></span></div>
+  <div class="dica"><span><b>Um fica.</b> Três saem.</span><span>o resultado está ao lado →</span></div>
+</section>
+
+<section id="f2-resultado" class="palco">
+  <div class="topo"><div class="vivo"><b>RESULTADO</b><span>PAREDÃO DA ANATOMIA</span></div><span class="pag">TEOT 2024 · 2/3</span></div>
+  <div class="vencedor">
+    <div class="avatar"><img src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0185-1.jpeg" alt=""></div>
+    <div><small>Fica na perna</small><h2><em>A</em> · Sóleo</h2>
+      <div class="porque"><span><b>Posterior aos fibulares</b>, abaixo do gastrocnêmio lateral</span><span><b>Monoarticular:</b> flexão plantar</span><span><b>Inervação:</b> tibial</span></div></div>
+  </div>
+  <p class="elim-tit">Eliminados da noite</p>
+  <div class="eliminados">
+    <div class="elim"><i>B</i><div><strong>Poplíteo</strong><span>pequeno e profundo, atrás do joelho</span></div><span class="carimbo">FORA</span></div>
+    <div class="elim"><i>C</i><div><strong>Fibular curto</strong><span>compartimento lateral, origem distal da fíbula</span></div><span class="carimbo">FORA</span></div>
+    <div class="elim"><i>D</i><div><strong>Fibular longo</strong><span>compartimento lateral, anterior ao sóleo</span></div><span class="carimbo">FORA</span></div>
+  </div>
+  <p class="prova-p"><strong>Para a prova:</strong> músculo posterior visto de lado, abaixo do gastrocnêmio: sóleo.</p>
+</section>
+
+<section id="f3-final" class="palco">
+  <div class="topo"><div class="vivo"><b>A GRANDE FINAL</b><span>TEOT · TEPOT</span></div><span class="pag">3/3</span></div>
+  <div class="final"><small>A prova está chegando</small><h2>10 de janeiro <em>de 2027</em></h2><p><b>Faltam 84 dias.</b> Fique pronto, prepare-se.</p></div>
+  <div class="mac" data-mac="t-lap-cronograma-18-10" style="--w:760px; left:66px; top:410px"></div>
+  <div class="iphone" data-tela="t-cel-cronograma-18-10" style="--w:250px; left:770px; top:370px; transform: rotate(4deg)"></div>
+  <span class="nota-tela" style="right:62px; top:906px">Tela ilustrativa</span>
+  <p class="cron-txt">Com o nosso <strong>cronograma</strong>, você faz o maior número de questões possível <strong>sem se esgotar</strong>. Nós planejamos tudo para você.</p>
+  <div class="cta"><div class="botao">Treine grátis<svg><use href="#seta"/></svg></div><p>Crie sua conta grátis agora mesmo e conheça outras questões</p></div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><small>ortoquestoes.com.br</small></div>
+</section>
+
+<!-- ================= STORIES: álbum de figurinhas ================= -->
+<section id="s1-figurinha" class="story album">
+  <div class="pagina">
+    <div class="faixa"><b>Álbum da <em>prova</em></b><span>TARO 2025</span></div>
+    <div class="slot"><div class="foto"><img src="../../../../public/imagens/joelho/joelho-0206-1.jpeg" alt=""><div class="holo"></div></div><span class="num">Nº 0206</span>
+      <div class="placa"><small>Incidência de</small><strong class="vazio">??????</strong></div></div>
+    <p class="fonte">Fonte da figura: Leite e Faloppa, Propedêutica Ortopédica e Traumatológica.</p>
+    <p class="pergunta">Que figurinha é <em>essa?</em></p>
+    <p class="enun-a">Em relação à propedêutica por imagem do joelho, a imagem a seguir corresponde à incidência radiográfica de</p>
+    <div class="repetidas">
+      <div class="rep"><b>A</b><span>INSALL</span></div>
+      <div class="rep"><b>B</b><span>MERCHANT</span></div>
+      <div class="rep"><b>C</b><span>HUGHSTON</span></div>
+      <div class="rep"><b>D</b><span>ROSENBERG</span></div>
+    </div>
+    <p class="cola">escolha a sua e cole no próximo story</p>
+    <div class="rod-a"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><small>1 de 3</small></div>
+  </div>
+</section>
+
+<section id="s2-colada" class="story album">
+  <div class="pagina">
+    <div class="faixa"><b>Álbum da <em>prova</em></b><span>Colada!</span></div>
+    <div class="slot" style="transform:rotate(1deg)"><div class="foto"><img src="../../../../public/imagens/joelho/joelho-0206-1.jpeg" alt=""><div class="holo"></div></div><span class="num">Nº 0206</span><span class="rara">FIGU&shy;RINHA<br>RARA</span>
+      <div class="placa"><small>Incidência de</small><strong>ROSENBERG</strong></div></div>
+    <div class="repetidas">
+      <div class="rep fora"><b>A</b><span>INSALL</span></div>
+      <div class="rep fora"><b>B</b><span>MERCHANT</span></div>
+      <div class="rep fora"><b>C</b><span>HUGHSTON</span></div>
+      <div class="rep certa"><b>D</b><span>ROSENBERG</span></div>
+    </div>
+    <p class="explica"><strong>PA em pé, com carga</strong>, joelho fletido a cerca de 45° e feixe angulado: mostra o espaço tibiofemoral posterior, onde o desgaste aparece cedo.</p>
+    <p class="explica"><strong>Insall, Merchant e Hughston</strong> são incidências axiais da patelofemoral.</p>
+    <div class="rod-a"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><small>2 de 3</small></div>
+  </div>
+</section>
+
+<section id="s3-complete" class="story album">
+  <div class="pagina" style="height:1250px">
+    <div class="faixa"><b>Álbum da <em>prova</em></b><span>10/01/2027</span></div>
+    <div class="a3-tit"><small>Faltam 84 dias</small><h2>Complete o álbum<br><em>até a prova.</em></h2></div>
+    <div class="grade">
+      <div class="fig ok"><div><strong>Joelho</strong><small>colada</small></div></div>
+      <div class="fig ok"><div><strong>Mão e punho</strong><small>colada</small></div></div>
+      <div class="fig falta"><div><i>?</i>Tumores</div></div>
+      <div class="fig ok"><div><strong>Coluna</strong><small>colada</small></div></div>
+      <div class="fig falta"><div><i>?</i>Trauma</div></div>
+      <div class="fig falta"><div><i>?</i>Quadril</div></div>
+    </div>
+    <p class="a3-cron">Com o nosso <strong>cronograma</strong>, você faz o maior número de questões possível <strong>sem se cansar tanto</strong>. Nós planejamos tudo para você.</p>
+    <div class="botao-a">Treine grátis</div>
+    <p class="a3-sub">Crie sua conta grátis agora mesmo</p>
+  </div>
+  <svg style="position:absolute;left:513px;top:1520px;width:54px;height:54px;color:#fff;z-index:2"><use href="#baixo"/></svg>
+  <p style="position:absolute;left:0;right:0;top:1662px;text-align:center;font:800 32px Jakarta;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4)">ortoquestoes.com.br</p>
+</section>
+<script>
+document.querySelectorAll('[data-tela]').forEach(e => { e.appendChild(document.getElementById('fone').content.cloneNode(true)); e.querySelector('img').src = '../../../kit/telas/' + e.dataset.tela + '.png' })
+document.querySelectorAll('[data-mac]').forEach(e => { e.appendChild(document.getElementById('mac').content.cloneNode(true)); e.querySelector('img').src = '../../../kit/telas/' + e.dataset.mac + '.png' })
+</script>
+</body></html>

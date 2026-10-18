@@ -25,3 +25,5 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | mao-1666 | Arco palmar profundo, ramo profundo da radial (Simulados, anatomia da mão) | posts/2026-10-16-embarque-musculocutaneo (stories) |
 | mao-0430 | Kienböck com ulna minus, encurtamento do rádio de 2 mm (TARO 2025) | posts/2026-10-18-kienbock-nivelamento (feed e stories) |
 | mao-0546 | Kienböck, carpectomia da fileira proximal no Lichtman IIIB (TEOT 2023) | posts/2026-10-18-kienbock-nivelamento (feed 3 e story 3) |
+| pe-tornozelo-0185 | Sóleo em vista lateral da perna (TEOT 2024) | posts/2026-10-18-paredao-album (feed) |
+| joelho-0206 | Incidência de Rosenberg (TARO 2025) | posts/2026-10-18-paredao-album (stories) |
