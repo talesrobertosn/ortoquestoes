@@ -3487,6 +3487,30 @@ async function alertarAdministradores(titulo, linhas, aba, referencia) {
   }
 }
 
+// supabase/functions/_shared/preferencias.ts
+var PREFERENCIAS_PADRAO = { conquistas: true, relatorio_mensal: true, lembretes: true, cartas: true };
+var COLUNA = {
+  conquistas: "conquistas",
+  relatorio: "relatorio_mensal",
+  lembretes: "lembretes",
+  cartas: "cartas"
+};
+function preferenciasDaLinha(linha) {
+  if (!linha) return { ...PREFERENCIAS_PADRAO };
+  return {
+    conquistas: linha.conquistas !== false,
+    relatorio_mensal: linha.relatorio_mensal !== false,
+    lembretes: linha.lembretes !== false,
+    cartas: linha.cartas !== false
+  };
+}
+var desligouTudo = (p) => !p.conquistas && !p.relatorio_mensal && !p.lembretes && !p.cartas;
+function permiteEnvio(p, categoria) {
+  if (!p) return false;
+  if (desligouTudo(p)) return false;
+  return p[COLUNA[categoria]];
+}
+
 // supabase/functions/enviar-email/index.ts
 var folga = (m) => Math.max(60, Math.round(m.minimo * 0.05));
 async function dadosUsuario(id) {
@@ -3494,6 +3518,16 @@ async function dadosUsuario(id) {
   if (!r.ok) throw new Error("consulta_usuario_falhou");
   const [linha] = await r.json();
   return linha ?? null;
+}
+async function podeReceber(id, categoria) {
+  try {
+    const r = await banco(`preferencias_email?id_usuario=eq.${id}&select=conquistas,relatorio_mensal,lembretes,cartas&limit=1`);
+    if (!r.ok) return false;
+    const [linha] = await r.json();
+    return permiteEnvio(preferenciasDaLinha(linha), categoria);
+  } catch {
+    return false;
+  }
 }
 async function ehAdministrador(id) {
   const r = await banco(`administradores?id_usuario=eq.${encodeURIComponent(id)}&select=id_usuario`);
@@ -3591,8 +3625,12 @@ async function enviarRelatorios(mesPedido, limitePedido, quinzenal = false) {
   const r = quinzenal ? await banco("rpc/destinatarios_relatorio_quinzenal", { method: "POST", body: JSON.stringify({ p_ref: mes, p_limite: limite }) }) : await banco("rpc/destinatarios_relatorio_mensal", { method: "POST", body: JSON.stringify({ p_mes: mes, p_limite: limite }) });
   if (!r.ok) throw new Error("consulta_destinatarios_falhou");
   const destinatarios = (await r.json()).map((d) => d.id_usuario);
-  let enviados = 0, falhas = 0, adiados = 0;
+  let enviados = 0, falhas = 0, adiados = 0, recusados = 0;
   for (const id of destinatarios) {
+    if (!await podeReceber(id, "relatorio")) {
+      recusados++;
+      continue;
+    }
     const anteriores = await anterioresDe(id).catch(() => []);
     if (cadenciaBloqueia(anteriores, /* @__PURE__ */ new Date(), "relatorio")) {
       adiados++;
@@ -3621,7 +3659,7 @@ async function enviarRelatorios(mesPedido, limitePedido, quinzenal = false) {
     }
     await esperar(600);
   }
-  return { mes, enviados, falhas, adiados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
+  return { mes, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
 }
 var TIPO_DA_CAMPANHA = { nunca: "nunca_comecou", tres_dias: "pausa", sete_dias: "sumiu", renovacao_pix: "pix_3_dias", renovacao_pix_hoje: "pix_hoje" };
 var CAMPANHAS = ["nunca", "tres_dias", "sete_dias", "renovacao_pix", "renovacao_pix_hoje"];
@@ -3632,8 +3670,12 @@ async function enviarLembretes(campanha, limitePedido, por) {
   const r = ehPix(campanha) ? await banco("rpc/destinatarios_renovacao_pix", { method: "POST", body: JSON.stringify({ p_etapa: campanha === "renovacao_pix_hoje" ? "hoje" : "tres_dias", p_limite: limite }) }) : await banco("rpc/destinatarios_lembrete", { method: "POST", body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) });
   if (!r.ok) throw new Error("consulta_destinatarios_falhou");
   const destinatarios = await r.json();
-  let enviados = 0, falhas = 0, adiados = 0;
+  let enviados = 0, falhas = 0, adiados = 0, recusados = 0;
   for (const d of destinatarios) {
+    if (!await podeReceber(d.id_usuario, "lembretes")) {
+      recusados++;
+      continue;
+    }
     const anteriores = await anterioresDe(d.id_usuario).catch(() => []);
     if (cadenciaBloqueia(anteriores, /* @__PURE__ */ new Date(), TIPO_DA_CAMPANHA[campanha])) {
       adiados++;
@@ -3679,7 +3721,7 @@ async function enviarLembretes(campanha, limitePedido, por) {
     }
     await esperar(600);
   }
-  return { campanha, enviados, falhas, adiados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
+  return { campanha, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
 }
 async function registrar(corpo) {
   return banco("emails_enviados", { method: "POST", body: JSON.stringify(corpo) });
@@ -3698,6 +3740,7 @@ async function enviarAutomatico(id, tipo, pedido, por) {
   if (!pessoa?.email) return { resultado: "sem_email" };
   if (pessoa.confirmado === false) return { resultado: "email_nao_confirmado" };
   if (!transacional && !pessoa.quer_cartas) return { resultado: "nao_quer" };
+  if (!await podeReceber(id, "cartas")) return { resultado: "nao_quer" };
   const dados = await dadosUsuario(id);
   const respondidas = Number(dados?.respondidas ?? 0);
   const perfil = await perfilCompleto(id).catch(() => null);
@@ -3850,6 +3893,7 @@ Deno.serve(async (req) => {
       if (corpo.acao === "previa_relato") return json({ assunto: e.assunto, html: e.html, para: dados.email }, 200, req);
       if (relato.status !== "resolvido") return json({ erro: "relato_nao_resolvido" }, 409, req);
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
+      if (!await podeReceber(relato.id_usuario, "cartas")) return json({ erro: "pessoa_nao_quer_emails" }, 409, req);
       try {
         await enviarEmail(dados.email, e.assunto, e.html, e.texto);
         await banco(`relatos_erro?id=eq.${idRelato}`, { method: "PATCH", body: JSON.stringify({ avisado_em: (/* @__PURE__ */ new Date()).toISOString() }) });
@@ -3873,7 +3917,7 @@ Deno.serve(async (req) => {
       if (config.ok && (await config.json())[0]?.marcos_automaticos === false) return json({ resultado: "desativado" }, 200, req);
       const dados = await dadosUsuario(usuario.id);
       if (!dados?.email) return json({ resultado: "sem_email" }, 200, req);
-      if (!dados.quer_conquistas) return json({ resultado: "nao_quer" }, 200, req);
+      if (!dados.quer_conquistas || !await podeReceber(usuario.id, "conquistas")) return json({ resultado: "nao_quer" }, 200, req);
       const marco2 = marcoComCarta(Number(dados.respondidas));
       if (!marco2) return json({ resultado: "ainda_nao" }, 200, req);
       if (Number(dados.respondidas) > marco2.minimo + folga(marco2)) return json({ resultado: "longe_do_marco", marco: marco2.minimo }, 200, req);
@@ -3936,7 +3980,7 @@ ${texto}`);
         pessoa = antigo ? { email: antigo.email, quer_cartas: antigo.quer_conquistas } : null;
       }
       if (!pessoa?.email) return json({ erro: "usuario_sem_email" }, 404, req);
-      if (!pessoa.quer_cartas) return json({ erro: "pessoa_nao_quer_emails" }, 409, req);
+      if (!pessoa.quer_cartas || !await podeReceber(corpo.id_usuario, "cartas")) return json({ erro: "pessoa_nao_quer_emails" }, 409, req);
       if (lote) {
         if (pessoa.administrador) return json({ erro: "administrador" }, 409, req);
         if (!pessoa.confirmado) return json({ erro: "email_nao_confirmado" }, 409, req);
@@ -3968,7 +4012,7 @@ ${texto}`);
       if (!pronto2) return json({ erro: "usuario_sem_email" }, 404, req);
       if (corpo.acao === "previa") return json({ assunto: pronto2.email.assunto, html: pronto2.email.html, quer_conquistas: pronto2.dados.quer_conquistas }, 200, req);
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
-      if (!pronto2.dados.quer_conquistas) return json({ erro: "pessoa_nao_quer_emails" }, 409, req);
+      if (!pronto2.dados.quer_conquistas || !await podeReceber(corpo.id_usuario, "cartas")) return json({ erro: "pessoa_nao_quer_emails" }, 409, req);
       try {
         await enviarEmail(pronto2.dados.email, pronto2.email.assunto, pronto2.email.html, pronto2.email.texto, carta ? void 0 : await linkDescadastro(corpo.id_usuario));
         await registrar({ id_usuario: corpo.id_usuario, tipo: "parabens", marco: pronto2.marco.minimo, assunto: pronto2.email.assunto, enviado_por: usuario.id });

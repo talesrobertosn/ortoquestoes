@@ -112,7 +112,7 @@ export function AdminConteudo({ vista: vistaExterna = 'suspeitas', aoMudarVista,
       await carregarRelatos()
     } catch (f) {
       const motivo = f instanceof Error ? f.message : ''
-      definirAviso({ texto: motivo === 'acao_invalida' ? 'A Function enviar-email ainda é a versão antiga. Atualize-a no Supabase para poder avisar.' : `Não foi possível enviar: ${motivo || 'erro desconhecido'}.`, erro: true })
+      definirAviso({ texto: motivo === 'acao_invalida' ? 'A Function enviar-email ainda é a versão antiga. Atualize-a no Supabase para poder avisar.' : motivo === 'pessoa_nao_quer_emails' ? 'Esta pessoa desligou os e-mails do site, então o aviso não foi enviado.' : `Não foi possível enviar: ${motivo || 'erro desconhecido'}.`, erro: true })
     }
   }
 
