@@ -2,7 +2,8 @@
 
 Estes dois e-mails saem do Supabase Auth, fora do código, por isso ficam em
 `supabase/modelos-email/` e precisam ser colados no painel uma vez. Desde 17/10/2026 os dois
-seguem a voz das cartas (docs/emails/PLANO.md) e assinam "Um abraço, / Tales, do Orto Questões".
+falam em nome do grupo, não do Tales (pedido de 18/10/2026: "tratar mais como um grupo e não uma pessoa;
+precisa ser mais fofo"), e assinam "Com carinho, / Equipe Orto Questões".
 Desde 18/10/2026, a pedido do Tales, voltaram ao visual em cartão (fundo cinza-claro, cartão branco,
 um botão verde e uma caixa de dica ou de segurança), que ele achou mais bonito.
 
@@ -17,7 +18,7 @@ Painel do Supabase > Authentication > Emails > SMTP Settings > Enable custom SMT
 | Campo | Valor |
 |---|---|
 | Sender email | `contato@ortoquestoes.com.br` (o mesmo domínio verificado no Resend) |
-| Sender name | `Tales, do Orto Questões` |
+| Sender name | `Equipe Orto Questões` |
 | Host | `smtp.resend.com` |
 | Port | `465` |
 | Username | `resend` |
@@ -33,12 +34,12 @@ Gmail, já entra direto, sem precisar voltar ao navegador em que se cadastrou.
 
 1. Painel do Supabase > Authentication > Emails > Templates.
 2. Aba **Confirm signup**:
-   - Subject: `Confirme o seu e-mail no Orto Questões`
+   - Subject: `Falta só um toque para a sua conta ficar pronta`
    - Message body: apagar o conteúdo e colar o arquivo inteiro de
      [`supabase/modelos-email/confirmar-cadastro.html`](../supabase/modelos-email/confirmar-cadastro.html).
    - Salvar.
 3. Aba **Reset password** (recuperação de senha):
-   - Subject: `Sua senha nova no Orto Questões`
+   - Subject: `Vamos criar a sua senha nova?`
    - Message body: apagar o conteúdo e colar o arquivo inteiro de
      [`supabase/modelos-email/recuperar-senha.html`](../supabase/modelos-email/recuperar-senha.html).
    - Salvar.
