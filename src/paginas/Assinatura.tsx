@@ -17,7 +17,7 @@ import { chaveDia } from '../estado/limiteDiario'
 import { usarAssinante } from '../conta/plano'
 import {
   AREAS_QUE_CAEM, ASSUNTOS_QUE_MAIS_CAEM, PLANOS_PIPOCA, PLANO_ANUAL, PLANO_MENSAL, PLANO_SEMESTRAL, centavos, dadosDaPessoa, degrauAnual,
-  elogioHeroi, fatiaDasDuasPrimeiras, numero, pct, porDia, porMes, tituloHeroi, type Plano,
+  elogioHeroi, fatiaDasDuasPrimeiras, numero, pct, porDia, porMes, saudacaoAssinante, tituloHeroi, type Plano,
 } from '../dados/vendas'
 import { CartoesPlanos } from '../componentes/vendas/CartoesPlanos'
 import { PreviaCronograma } from '../componentes/vendas/PreviaCronograma'
@@ -204,13 +204,14 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const pessoa = useMemo(() => sessao ? dadosDaPessoa(sessao.user.user_metadata, metricas?.respostas_total, metricas?.sequencia, locais) : null, [sessao, metricas, locais])
   const titulo = tituloHeroi(pessoa)
   const elogio = elogioHeroi(pessoa)
+  const saudacao = saudacaoAssinante(pessoa)
   usarRevelar(raiz, comAcessoPago)
 
   return (
     <div className="vd" ref={raiz}>
       {!comAcessoPago && <section className={'vd-heroi' + (pessoa && pessoa.respondidas > 0 ? ' vd-heroi--pessoa' : '')} ref={heroi} aria-labelledby="vd-titulo">
         <div className="vd-heroi__texto">
-          <p className="vd-selo"><Simbolo tamanho={15} variante="traco" /> Planos do Orto Questões</p>
+          <p className="tr-heroi__selo">Planos do Orto Questões</p>
           <h1 id="vd-titulo">{titulo.linha1} <em>{titulo.linha2}</em></h1>
           <p className="vd-heroi__lide">
             {pessoa?.prova ? `Você diz a data do ${pessoa.prova}` : 'Você diz a data da prova'} e quanto tempo tem. O cronograma monta a lista de cada dia pelo que mais cai, e você só abre e faz: entre uma cirurgia e outra, no plantão ou à noite em casa.
@@ -222,9 +223,10 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             ? <>
               <img src={recurso('pixel/simulado.png')} alt="" width={56} height={56} draggable={false} />
               <dl className="vd-ficha">
-                <div><dt>Questões respondidas</dt><dd>{numero(pessoa.respondidas)}</dd></div>
-                {pessoa.acerto !== null && <div><dt>Acerto</dt><dd>{pessoa.acerto}%</dd></div>}
-                {pessoa.areaForte && <div><dt>Ponto forte</dt><dd>{pessoa.areaForte}</dd></div>}
+                <div className="vd-ficha__numero"><dt>Questões respondidas</dt><dd>{numero(pessoa.respondidas)}</dd></div>
+                {pessoa.acerto !== null && <div className="vd-ficha__numero"><dt>Acerto</dt><dd>{pessoa.acerto}%</dd></div>}
+                {/* O ponto forte já aparece no elogio; a ficha não repete (no máximo 3 observações por tela). */}
+                {pessoa.areaForte && !elogio && <div><dt>Ponto forte</dt><dd>{pessoa.areaForte}</dd></div>}
                 {(pessoa.prova || pessoa.etapa) && <div><dt>{pessoa.prova ? 'Prova' : 'Etapa'}</dt><dd>{[pessoa.prova, pessoa.etapa].filter(Boolean).join(' · ')}</dd></div>}
               </dl>
             </>
@@ -250,13 +252,14 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
 
       {comAcessoPago && (
         <section className="vd-ativo" aria-labelledby="vd-titulo-minha">
-          <span className="vd-ativo__icone"><Icone nome="certo" tamanho={22} /></span>
-          <div>
+          <div className="vd-ativo__texto">
+            <p className="tr-heroi__selo">Assinante</p>
             <h1 id="vd-titulo-minha">Minha assinatura</h1>
+            {saudacao && <p className="vd-ativo__ola">{saudacao}</p>}
             {!metricas ? (falhouConsulta
               ? <p role="alert">Não foi possível carregar os dados da assinatura agora. <button type="button" className="botao--vinculo" onClick={() => definirTentativa((n) => n + 1)}>Tentar de novo</button></p>
               : <p role="status">Carregando assinatura…</p>) : <>
-            <h2>{semRenovacao ? 'Acesso pago sem renovação automática' : `Seu plano ${metricas.plano} está ativo`}</h2>
+            <h2>{semRenovacao ? 'Acesso pago sem renovação automática' : (metricas.plano ? `Seu plano ${metricas.plano} está ativo` : 'Sua assinatura está ativa')}</h2>
             <p>{semRenovacao ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {fimTexto ?? 'o fim do período atual'}.</p>
             <dl className="vd-ativo__dados">
               <div><dt>Plano</dt><dd>{metricas.plano ? `Plano ${metricas.plano}` : 'Assinante'}</dd></div>
@@ -265,8 +268,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             </dl>
             </>}
             <div className="linha">
-              <a className="botao botao--principal" href={href('/cronograma')}>Abrir o cronograma</a>
-              <a className="botao" href={href('/conta/assinatura')}>Gerenciar renovação ou pedir reembolso</a>
+              <a className="botao vd-botao-destaque" href={href('/cronograma')}>Abrir o cronograma <Icone nome="direita" tamanho={16} /></a>
+              <a className="tr-heroi__link" href={href('/conta/assinatura')}>Gerenciar renovação ou pedir reembolso</a>
             </div>
             {metricas && renovarPix && <p className="vd-ativo__renovar"><strong>Faltam {diasRestantes} {diasRestantes === 1 ? 'dia' : 'dias'}. Renove agora pelo Pix sem perder nada:</strong> os dias que restam continuam valendo e o novo período começa em {fimAtualTexto}, quando o atual termina.</p>}
           </div>
@@ -507,7 +510,7 @@ function SecaoCronograma({ conta, assinante }: { conta: boolean; assinante: bool
       <ol className="vd-passos">
         {PASSOS_CRONOGRAMA.map((p, i) => (
           <li key={p.titulo} className="vd-passo" data-revelar>
-            <span className="vd-passo__num">{i + 1}</span>
+            <span className="px-numero vd-passo__num">{i + 1}</span>
             <h3>{p.titulo}</h3>
             <p>{p.texto}</p>
             <ul>{p.itens.map((item) => <li key={item}><Icone nome="certo" tamanho={14} /> {item}</li>)}</ul>
@@ -587,7 +590,7 @@ function SecaoSimulados() {
         </Cabeca>
         <ol className="vd-engenharia__passos">
           {ENGENHARIA.map((e, i) => (
-            <li key={e.titulo} data-revelar><span>{i + 1}</span><div><h3>{e.titulo}</h3><p>{e.texto}</p></div></li>
+            <li key={e.titulo} data-revelar><span className="px-numero">{i + 1}</span><div><h3>{e.titulo}</h3><p>{e.texto}</p></div></li>
           ))}
         </ol>
         <p className="vd-nota" data-revelar>Não são questões oficiais nem cópia de prova sigilosa: cada uma traz o aviso na tela. Servem também para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril.</p>
@@ -660,15 +663,15 @@ function SecaoRecursos({ servico }: { servico: string | null }) {
 function SecaoGarantia() {
   return (
     <section className="vd-garantia" aria-labelledby="vd-titulo-garantia">
-      <div className="vd-garantia__selo" aria-hidden="true" data-revelar><strong>7</strong><span>dias</span></div>
+      <div className="vd-garantia__selo" aria-hidden="true" data-revelar><strong>7</strong><span>dias de garantia</span></div>
       <div className="vd-garantia__texto">
         <p className="vd-sobre">Risco zero para experimentar</p>
         <h2 id="vd-titulo-garantia">Não gostou? Um botão e o dinheiro volta.</h2>
         <p>Até 7 dias depois de cada cobrança, no Pix ou no cartão, você desiste sem justificar e sem falar com ninguém. Funciona assim:</p>
         <ol className="vd-garantia__passos">
-          <li><span>1</span><p>Em <a href={href('/conta/assinatura')}><strong>Minha conta › Assinatura</strong></a>, toque em <strong>Desistir e solicitar reembolso integral</strong> e confirme.</p></li>
-          <li><span>2</span><p>O pedido vai na hora para o Mercado Pago, e o site confere com ele que o reembolso foi feito. Seu acesso pago só termina depois dessa confirmação.</p></li>
-          <li><span>3</span><p><strong>No Pix</strong>, o valor volta para a conta de onde saiu o pagamento; costuma ser rápido, no prazo do Mercado Pago e do seu banco. <strong>No cartão</strong>, o estorno aparece na fatura conforme o prazo do emissor, muitas vezes na seguinte.</p></li>
+          <li><span className="px-numero">1</span><p>Em <a href={href('/conta/assinatura')}><strong>Minha conta › Assinatura</strong></a>, toque em <strong>Desistir e solicitar reembolso integral</strong> e confirme.</p></li>
+          <li><span className="px-numero">2</span><p>O pedido vai na hora para o Mercado Pago, e o site confere com ele que o reembolso foi feito. Seu acesso pago só termina depois dessa confirmação.</p></li>
+          <li><span className="px-numero">3</span><p><strong>No Pix</strong>, o valor volta para a conta de onde saiu o pagamento; costuma ser rápido, no prazo do Mercado Pago e do seu banco. <strong>No cartão</strong>, o estorno aparece na fatura conforme o prazo do emissor, muitas vezes na seguinte.</p></li>
         </ol>
         <p className="vd-nota">Se o Mercado Pago não confirmar o pedido automático, o suporte faz o atendimento manual, valendo a data em que você pediu. Suas respostas, revisões e desempenho ficam guardados em qualquer caso.</p>
       </div>

@@ -97,7 +97,7 @@ const NOMES_AREAS: Record<string, string> = Object.fromEntries(contagem.areas.ma
  */
 export function dadosDaPessoa(meta: Record<string, unknown> | null | undefined, respondidasServidor: number | null | undefined, sequencia: number | null | undefined, locais: Record<string, Registro>): DadosPessoa {
   const m = meta ?? {}
-  const nome = String(m.nome ?? '').trim().split(/\s+/)[0] ?? ''
+  const nome = primeiroNome(m.nome)
   const lista = Object.entries(locais)
   const respondidas = Math.max(respondidasServidor ?? 0, lista.length)
   let certas = 0, corrigidas = 0
@@ -112,7 +112,8 @@ export function dadosDaPessoa(meta: Record<string, unknown> | null | undefined, 
     par[1]++
     if (r.c) par[0]++
   }
-  const geral = corrigidas >= 20 ? Math.round((certas / corrigidas) * 100) : null
+  // Acerto só com 30 respostas corrigidas e 50% ou mais (regras de tato de docs/emails/TOM.md).
+  const geral = corrigidas >= 30 ? Math.round((certas / corrigidas) * 100) : null
   const forte = Object.entries(porArea)
     .filter(([, [c, t]]) => t >= 15 && c / t >= 0.6)
     .sort((x, y) => y[1][0] / y[1][1] - x[1][0] / x[1][1] || y[1][1] - x[1][1])[0]
@@ -131,8 +132,17 @@ export function dadosDaPessoa(meta: Record<string, unknown> | null | undefined, 
   }
 }
 
+/** O primeiro nome, como nas cartas (supabase/functions/_shared/cartas.ts): sem e-mail, número ou apelido estranho. */
+export function primeiroNome(nome: unknown): string {
+  const primeiro = String(nome ?? '').trim().split(/\s+/)[0] ?? ''
+  if (!primeiro || /[@\d_]/.test(primeiro) || primeiro.length < 2 || primeiro.length > 20) return ''
+  return primeiro.charAt(0).toLocaleUpperCase('pt-BR') + primeiro.slice(1).toLocaleLowerCase('pt-BR')
+}
+
 /** Título do topo: com o nome e o que a pessoa já fez, ou a versão para quem chega. */
 export function tituloHeroi(d: DadosPessoa | null): { linha1: string; linha2: string } {
+  // Regra dos 10: abaixo de dez questões, nada de número, só "os primeiros passos".
+  if (d?.nome && d.respondidas > 0 && d.respondidas < 10) return { linha1: `${d.nome}, você já deu os primeiros passos.`, linha2: 'Agora deixe o plano decidir os próximos.' }
   if (d?.nome && d.respondidas > 0) {
     return { linha1: `${d.nome}, você já respondeu ${numero(d.respondidas)} ${d.respondidas === 1 ? 'questão' : 'questões'}.`, linha2: 'Agora deixe o plano decidir a próxima.' }
   }
@@ -140,14 +150,22 @@ export function tituloHeroi(d: DadosPessoa | null): { linha1: string; linha2: st
   return { linha1: 'A residência já ocupa o seu dia.', linha2: 'O que estudar, deixe com a gente.' }
 }
 
+/** "Minha assinatura" com o nome e o que a pessoa já fez (regra dos 10; sem nome, nada). */
+export function saudacaoAssinante(d: DadosPessoa | null): string | null {
+  if (!d?.nome) return null
+  const feito = d.respondidas >= 10 ? ` Já são ${numero(d.respondidas)} questões feitas.` : ''
+  return `${d.nome}, que bom ter você por aqui.${feito} O próximo dia de estudo já está pronto no cronograma.`
+}
+
 /** O elogio do topo, só com o que é verdade e bom de ouvir. */
 export function elogioHeroi(d: DadosPessoa | null): string | null {
   if (!d || d.respondidas === 0) return null
+  // No máximo duas observações aqui: o título já fala das questões (até três por tela, TOM.md).
   const partes: string[] = []
   if (d.sequencia >= 2) partes.push(`${d.sequencia} dias seguidos de estudo`)
-  if (d.acerto !== null) partes.push(`${d.acerto}% de acerto`)
-  if (d.areaForte) partes.push(`${d.areaForte} como ponto forte`)
+  if (d.areaForte) partes.push(partes.length ? `com ${d.areaForte.toLocaleLowerCase('pt-BR')} como ponto forte` : `${d.areaForte} como ponto forte`)
+  if (d.acerto !== null && partes.length < 2) partes.push(`${d.acerto}% de acerto`)
   if (!partes.length) return 'Dá para ver que você é de quem não desiste.'
-  const lista = partes.length === 1 ? partes[0] : `${partes.slice(0, -1).join(', ')} e ${partes[partes.length - 1]}`
+  const lista = partes.length === 1 ? partes[0] : partes[1].startsWith('com ') ? `${partes[0]}, ${partes[1]}` : `${partes[0]} e ${partes[1]}`
   return `${lista[0].toUpperCase()}${lista.slice(1)}: dá para ver que você é de quem não desiste.`
 }
