@@ -1,8 +1,8 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
-import { MARCOS, automaticoBloqueado, ehTransacional, emailAutomatico, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, marcoComCarta, tipoAutomaticoValido, type CampanhaLembrete, type DadosRelatorio, type Marco, type TipoAutomatico } from '../_shared/modelo-email.ts'
+import { CAMPANHAS_DIARIAS, MARCOS, automaticoBloqueado, ehCampanhaDiaria, ehTransacional, emailAutomatico, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, marcoComCarta, tipoAutomaticoValido, type CampanhaLembrete, type DadosRelatorio, type Marco, type TipoAutomatico, type TipoCampanhaDiaria } from '../_shared/modelo-email.ts'
 import { permiteEnvio, preferenciasDaLinha, type CategoriaEmail } from '../_shared/preferencias.ts'
-import { cadenciaBloqueia, perfilDosDados, problemaGrave, renderizarCarta, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
+import { cadenciaBloqueia, perfilDosDados, problemaGrave, renderizarCarta, type DadosCampanha, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -50,6 +50,16 @@ import { cadenciaBloqueia, perfilDosDados, problemaGrave, renderizarCarta, type 
  *                      chama os dois últimos. Idempotente por pessoa e tipo (ou pessoa e
  *                      referência) pela tabela de envios, como o marco. Os não transacionais
  *                      respeitam o teto de cadência (48 h / 3 em 14 dias): resposta "adiado".
+ *   campanhas_diarias  (parte 31, 18/10/2026) o agendador diário (cabeçalho x-segredo) ou um
+ *                      administrador: para cada campanha (ou só a de "campanha"), lê as candidatas
+ *                      no banco (rpc candidatos_<tipo>, até "limite" por campanha, padrão 20, máximo
+ *                      80) e manda cada uma pelo mesmo caminho do "automatico" (enviarAutomatico:
+ *                      idempotência por referência, cadência, e-mail confirmado e podeReceber).
+ *                      Campanhas: assinou_sem_cronograma, assinante_parado_7, simulado_resultado,
+ *                      vespera_prova, depois_prova, aniversario, um_ano, indicacao_deu_certo e
+ *                      resumo_do_tema (esta antes registra o catálogo de biblioteca/indice.json).
+ *                      "simular": true só conta quem receberia, sem enviar. Sem a parte 31, cada
+ *                      campanha responde "sql_pendente".
  *
  * Quem desligou os e-mails (18/10/2026): todo envio para a pessoa passa antes por
  * podeReceber, que lê a preferência de agora (preferencias.ts). Nos lotes a pessoa é
@@ -308,7 +318,12 @@ const diaDeHoje = () => new Date(Date.now() - 3 * 3600_000).toISOString().slice(
 interface PedidoAutomatico {
   tipo?: string; referencia?: string; dias_fora?: number; dias_para_prova?: number; prova?: string
   plano?: string; inicio_periodo?: string; fim_periodo?: string; meio?: string; renovacao?: boolean; reembolso?: boolean
+  /** Campanhas diárias (parte 31): o que o banco devolveu em "dados". */
+  dados_campanha?: DadosCampanha
 }
+
+/** Os tipos que saem uma vez só por pessoa: a referência é o próprio tipo. */
+const UMA_VEZ: readonly string[] = ['boas_vindas_dia0', 'primeiras_10', 'cronograma_pronto', 'assinou_sem_cronograma']
 
 /**
  * Um dos seis automáticos novos (17/10/2026). Idempotente por pessoa e referência
@@ -353,8 +368,15 @@ async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: Pedido
     prova = plano.prova ?? prova
   }
 
+  if (tipo === 'vespera_prova' && !diasParaProva) diasParaProva = 1
+  if ((tipo === 'vespera_prova' || tipo === 'depois_prova') && !prova) {
+    const p = await banco(`planos_estudo?usuario_id=eq.${id}&select=prova&limit=1`)
+    const [plano] = p.ok ? await p.json() as Array<{ prova: string | null }> : []
+    prova = plano?.prova ?? null
+  }
+
   // Idempotência: uma vez por pessoa e referência (os que saem uma vez só usam o próprio tipo).
-  const umaVez = tipo === 'boas_vindas_dia0' || tipo === 'primeiras_10' || tipo === 'cronograma_pronto'
+  const umaVez = UMA_VEZ.includes(tipo)
   const sufixo = typeof pedido.referencia === 'string' && /^[a-zA-Z0-9_:.-]{1,60}$/.test(pedido.referencia) ? pedido.referencia : tipo === 'voltou' ? diaDeHoje() : ''
   const referencia = umaVez ? tipo : `${tipo}:${sufixo || diaDeHoje()}`
   const existe = await banco(`emails_enviados?id_usuario=eq.${id}&referencia=eq.${encodeURIComponent(referencia)}&status=in.(enviado,enviando)&select=id&limit=1`)
@@ -368,16 +390,28 @@ async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: Pedido
   const e = emailAutomatico({
     tipo, nome: pessoa.nome ?? dados?.nome ?? null, respondidas, site: site(), perfil, anteriores, referencia,
     linkDescadastro: transacional ? null : await linkDescadastro(id, 'cartas'),
-    diasFora, diasParaProva, provaCronograma: prova,
+    diasFora, diasParaProva, provaCronograma: prova, campanha: pedido.dados_campanha ?? null,
     pagamento: tipo === 'pagamento_aprovado' ? { plano: pedido.plano ?? null, inicioEm: pedido.inicio_periodo ?? null, fimEm: pedido.fim_periodo ?? null, meio, renovacao: !!pedido.renovacao } : undefined,
     encerramento: tipo === 'obrigado_tempo' ? { reembolso: !!pedido.reembolso, fimEm: pedido.fim_periodo ?? null } : undefined,
   })
   // Reserva a linha antes de enviar (dois pedidos juntos: o segundo encontra a reserva).
   const base = { id_usuario: id, referencia, assunto: e.assunto, status: 'enviando', enviado_por: por }
   let reserva = await registrar({ ...base, tipo: 'carta', modelo: e.modelo, versao: e.versao, origem: 'automatico' })
-  if (!reserva.ok) reserva = await registrar({ ...base, tipo: 'parabens' })
-  if (!reserva.ok) return { resultado: 'sql_pendente' }
-  const [linha] = await reserva.json() as Array<{ id: number }>
+  let linha: { id: number } | undefined
+  if (reserva.status === 409) {
+    // O índice único da parte 31 (pessoa e referência): já há uma linha. Se ela falhou, retoma a mesma
+    // (o filtro status=falhou garante que só um pedido consegue); senão, já foi ou está indo.
+    const retomada = await banco(`emails_enviados?id_usuario=eq.${id}&tipo=eq.carta&referencia=eq.${encodeURIComponent(referencia)}&status=eq.falhou`, {
+      method: 'PATCH', body: JSON.stringify({ status: 'enviando', erro: null, enviado_em: new Date().toISOString(), assunto: e.assunto, modelo: e.modelo, versao: e.versao }),
+    })
+    if (retomada.ok) [linha] = await retomada.json() as Array<{ id: number }>
+    if (!linha) return { resultado: 'ja_enviado', tipo }
+  } else {
+    // Sem a parte 27 (colunas modelo/versao/origem), grava como antes.
+    if (!reserva.ok) reserva = await registrar({ ...base, tipo: 'parabens' })
+    if (!reserva.ok) return { resultado: 'sql_pendente' }
+    ;[linha] = await reserva.json() as Array<{ id: number }>
+  }
   try {
     await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, transacional ? undefined : await linkDescadastro(id, 'cartas'))
     if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado' }) })
@@ -388,11 +422,86 @@ async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: Pedido
   }
 }
 
+/** Uma candidata de candidatos_<tipo> (parte 31). */
+interface Candidata { id_usuario: string; referencia: string; dados: Record<string, unknown> | null }
+
+/** O que cada campanha leva da linha do banco para a carta e para enviarAutomatico. */
+function pedidoDaCampanha(tipo: TipoCampanhaDiaria, c: Candidata): PedidoAutomatico {
+  const d = c.dados ?? {}
+  const num = (v: unknown) => (v === null || v === undefined || !Number.isFinite(Number(v)) ? null : Number(v))
+  const texto = (v: unknown) => (typeof v === 'string' && v.trim() ? v.trim().slice(0, 120) : null)
+  // A referência do banco é "tipo" ou "tipo:sufixo"; enviarAutomatico monta de novo a partir do sufixo.
+  const sufixo = c.referencia.startsWith(`${tipo}:`) ? c.referencia.slice(tipo.length + 1) : undefined
+  const pedido: PedidoAutomatico = { tipo, referencia: sufixo }
+  if (tipo === 'assinante_parado_7') pedido.dias_fora = num(d.dias_fora) ?? undefined
+  if (tipo === 'vespera_prova' || tipo === 'depois_prova') pedido.prova = texto(d.prova) ?? undefined
+  if (tipo === 'simulado_resultado') pedido.dados_campanha = { simulado: { titulo: texto(d.titulo), acertos: num(d.acertos), total: num(d.total), posicao: num(d.posicao), participantes: num(d.participantes) } }
+  if (tipo === 'um_ano') pedido.dados_campanha = { anos: num(d.anos) }
+  if (tipo === 'indicacao_deu_certo') pedido.dados_campanha = { cortesia: d.cortesia === true }
+  if (tipo === 'resumo_do_tema') pedido.dados_campanha = { resumo: { id: texto(d.id), titulo: texto(d.titulo), especialidade: texto(d.especialidade) } }
+  return pedido
+}
+
+/**
+ * Registra no banco os resumos publicados (biblioteca/indice.json do site), para o
+ * "Saiu um resumo do seu tema" saber o que é novo. Uma falha não impede a campanha:
+ * ela só não acha resumo novo.
+ */
+async function sincronizarCatalogo(): Promise<number | null> {
+  try {
+    const r = await fetch(`${site()}biblioteca/indice.json`, { headers: { accept: 'application/json' } })
+    if (!r.ok) return null
+    const indice = await r.json() as { capitulos?: Array<{ id?: string; titulo?: string; especialidade?: string }> }
+    const capitulos = (indice.capitulos ?? []).map((c) => ({ id: c.id, titulo: c.titulo, especialidade: c.especialidade }))
+    if (!capitulos.length) return null
+    const g = await banco('rpc/registrar_catalogo_biblioteca', { method: 'POST', body: JSON.stringify({ p_capitulos: capitulos }) })
+    return g.ok ? Number(await g.json()) : null
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Campanhas diárias (parte 31). Para cada campanha, as candidatas do banco (que já tiram
+ * administrador, e-mail não confirmado, quem desligou as cartas, quem recebeu a mesma
+ * referência e quem está no teto de cadência) seguem pelo mesmo enviarAutomatico dos
+ * automáticos, que confere tudo de novo na hora (podeReceber, idempotência, cadência).
+ */
+async function enviarCampanhas(pedida: string | undefined, limitePedido: number | undefined, simular: boolean) {
+  if (!emailConfigurado() && !simular) return { erro: 'email_nao_configurado' }
+  const limite = Math.max(1, Math.min(Number(limitePedido) || 20, 80))
+  const lista: readonly TipoCampanhaDiaria[] = pedida ? (ehCampanhaDiaria(pedida) ? [pedida] : []) : CAMPANHAS_DIARIAS
+  if (!lista.length) return { erro: 'campanha_invalida' }
+  const resultado: Record<string, Record<string, number> | { erro: string }> = {}
+  let catalogo: number | null = null
+  // A função tem tempo limitado: perto de 110 s, para e deixa o resto para a próxima rodada (nada se repete).
+  const inicio = Date.now(), noTempo = () => Date.now() - inicio < 110_000
+  let interrompida = false
+  for (const tipo of lista) {
+    if (!noTempo()) { interrompida = true; break }
+    if (tipo === 'resumo_do_tema') catalogo = await sincronizarCatalogo()
+    const r = await banco(`rpc/candidatos_${tipo}`, { method: 'POST', body: JSON.stringify({ p_limite: limite }) })
+    if (!r.ok) { resultado[tipo] = { erro: 'sql_pendente' }; continue }
+    const candidatas = await r.json() as Candidata[]
+    const contagem: Record<string, number> = { candidatas: candidatas.length }
+    for (const c of candidatas) {
+      if (!noTempo()) { interrompida = true; break }
+      if (!/^[0-9a-f-]{36}$/.test(c.id_usuario)) continue
+      if (simular) { contagem.simuladas = (contagem.simuladas ?? 0) + 1; continue }
+      const envio = await enviarAutomatico(c.id_usuario, tipo, pedidoDaCampanha(tipo, c), null).catch(() => ({ resultado: 'falhou' }))
+      contagem[envio.resultado] = (contagem[envio.resultado] ?? 0) + 1
+      if (envio.resultado === 'enviado' || envio.resultado === 'falhou') await esperar(600)
+    }
+    resultado[tipo] = contagem
+  }
+  return { campanhas: resultado, limite, catalogo_novos: catalogo, interrompida }
+}
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; quinzena?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string; assunto?: string; corpo?: string; modelo?: string; versao?: string; origem?: string } & PedidoAutomatico
+    const corpo = await req.json() as { acao?: string; simular?: boolean; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; quinzena?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string; assunto?: string; corpo?: string; modelo?: string; versao?: string; origem?: string } & PedidoAutomatico
 
     // Automáticos disparados pelo servidor (webhook do Mercado Pago, gerenciar-plano): segredo + id da pessoa.
     if (corpo.acao === 'automatico' && req.headers.get('x-segredo')) {
@@ -401,6 +510,12 @@ Deno.serve(async (req) => {
       if (!tipo) return json({ erro: 'tipo_invalido' }, 400, req)
       if (!corpo.id_usuario || !/^[0-9a-f-]{36}$/.test(corpo.id_usuario)) return json({ erro: 'usuario_invalido' }, 400, req)
       return json(await enviarAutomatico(corpo.id_usuario, tipo, corpo, null), 200, req)
+    }
+
+    // Campanhas diárias pelo agendador (parte 31): autenticado pelo segredo, sem usuário.
+    if (corpo.acao === 'campanhas_diarias' && req.headers.get('x-segredo')) {
+      if (!await segredoValido(req.headers.get('x-segredo')!)) return json({ erro: 'acesso_negado' }, 403, req)
+      return json(await enviarCampanhas(corpo.campanha, corpo.limite, corpo.simular === true), 200, req)
     }
 
     if (corpo.acao === 'descadastrar') {
@@ -505,10 +620,18 @@ Deno.serve(async (req) => {
       }
     }
 
+    // Campanhas diárias pelo painel (administrador): para mandar fora de hora ou só contar ("simular").
+    if (corpo.acao === 'campanhas_diarias') {
+      if (!await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
+      return json(await enviarCampanhas(corpo.campanha, corpo.limite, corpo.simular === true), 200, req)
+    }
+
     // Automáticos disparados pelo site, pela própria pessoa, logo depois do acontecimento.
     if (corpo.acao === 'automatico') {
       const tipo = tipoAutomaticoValido(corpo.tipo)
       if (!tipo) return json({ erro: 'tipo_invalido' }, 400, req)
+      // As campanhas diárias saem pelo agendador; a própria pessoa não as pede (um administrador pode, para teste).
+      if (ehCampanhaDiaria(tipo) && !await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
       // Os que falam de pagamento só saem pelo servidor (ou por um administrador, para teste).
       if ((tipo === 'pagamento_aprovado' || tipo === 'obrigado_tempo') && !await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
       const alvo = corpo.id_usuario && /^[0-9a-f-]{36}$/.test(corpo.id_usuario) && await ehAdministrador(usuario.id) ? corpo.id_usuario : usuario.id

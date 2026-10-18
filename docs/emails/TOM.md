@@ -96,4 +96,5 @@ fora só a confirmação de cadastro e a senha nova, que a pessoa pede na hora. 
 - Mais de um link, mais de um P.S., mais de três observações, assunto com mais de 55 caracteres.
 
 O teste `fixtures/testar_modelos_email.mjs` confere tudo isso em milhares de sorteios de todas as
-situações, faixas e fatos, inclusive os seis automáticos novos, e o teto de cadência.
+situações, faixas e fatos, inclusive os seis automáticos novos e as nove campanhas diárias da parte 31
+(aniversário curto, sem convite e sem link; nota do simulado só quando é motivo de orgulho), e o teto de cadência.

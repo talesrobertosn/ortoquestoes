@@ -29,7 +29,7 @@ Todas as cartas saem só em texto, na voz de um amigo que já passou pela resid�
 | Convite pessoal (mais de 50 questões) | 7 | 387 textos e 9 assuntos diferentes em 400 sorteios |
 | Reta final | 6 | 389 textos e 8 assuntos diferentes em 400 sorteios |
 | Marco de questões (100, 250, 500, 1.000, 2.000) | 6 | 397 textos e 7 assuntos diferentes em 400 sorteios |
-| Pedir opinião | 5 | 384 textos e 5 assuntos diferentes em 400 sorteios |
+| Pedir opinião | 5 | 385 textos e 5 assuntos diferentes em 400 sorteios |
 | Pedir para indicar | 5 | 376 textos e 6 assuntos diferentes em 400 sorteios |
 | Apresentar o cronograma | 5 | 396 textos e 7 assuntos diferentes em 400 sorteios |
 | Pix: faltam 3 dias | 5 | 312 textos e 6 assuntos diferentes em 400 sorteios |
@@ -41,6 +41,15 @@ Todas as cartas saem só em texto, na voz de um amigo que já passou pela resid�
 | Cronograma pronto | 5 | 358 textos e 6 assuntos diferentes em 400 sorteios |
 | Pagamento aprovado | 5 | 50 textos e 7 assuntos diferentes em 400 sorteios |
 | Obrigado pelo tempo de assinatura | 5 | 228 textos e 5 assuntos diferentes em 400 sorteios |
+| Assinou e não montou o cronograma | 5 | 344 textos e 7 assuntos diferentes em 400 sorteios |
+| Assinante parado há 7 dias | 5 | 334 textos e 6 assuntos diferentes em 400 sorteios |
+| Resultado do Simulado Nacional | 5 | 342 textos e 6 assuntos diferentes em 400 sorteios |
+| Véspera da prova | 5 | 266 textos e 6 assuntos diferentes em 400 sorteios |
+| Depois da prova: como foi? | 5 | 297 textos e 5 assuntos diferentes em 400 sorteios |
+| Aniversário | 5 | 132 textos e 6 assuntos diferentes em 400 sorteios |
+| Um ano de Orto Questões | 5 | 321 textos e 5 assuntos diferentes em 400 sorteios |
+| Sua indicação deu certo | 5 | 317 textos e 6 assuntos diferentes em 400 sorteios |
+| Saiu um resumo do seu tema | 5 | 365 textos e 5 assuntos diferentes em 400 sorteios |
 
 ## Uma carta para cada faixa de acerto
 
@@ -1061,4 +1070,259 @@ Um abraço,
 Tales, do Orto Questões
 
 P.S.: obrigado, de verdade. Cada pessoa que assinou um dia ajudou a manter isto de pé.
+```
+
+## Campanhas diárias (parte 31, 18/10/2026)
+
+O banco escolhe quem recebe (`candidatos_<tipo>`, já sem administrador, e-mail não confirmado, quem desligou as cartas, quem recebeu a mesma referência e quem está no teto de cadência) e o agendador manda às 7h pela ação `campanhas_diarias`, pelo mesmo caminho dos automáticos.
+
+### Assinou e não montou o cronograma
+
+Três dias depois de assinar, sem cronograma. Fernanda, TEOT.
+
+**Assunto:** Fernanda, seu plano pode trabalhar por você
+
+```text
+Fernanda, tudo bem por aí?
+
+Que bom ter você no plano. Passando para lembrar, com calma, de uma coisa que faz a assinatura render muito mais: montar o cronograma até a prova.
+
+Vi que o TEOT está no seu horizonte, e fico na torcida.
+
+O cronograma é o que transforma isso em rotina: o que mais cai primeiro, a revisão no lugar certo e a reta final já desenhada. Se um dia faltar, ele se ajusta sozinho.
+
+Dois minutos, aqui: ortoquestoes.com.br/#/cronograma
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Assinante parado há 7 dias
+
+Bruno assina e está há 9 dias sem responder.
+
+**Assunto:** Bruno, passando para dar um oi
+
+```text
+Bruno, tudo bem?
+
+Passando só para dar um oi. Vi que a última semana foi sem questões, e quis lembrar que está tudo bem: o plano é seu, no seu ritmo.
+
+Imagino que a rotina esteja puxada por aí: hospital de dia, estudo quando sobra.
+
+Se ajudar, me conta o que atrapalhou: plantão, cansaço, falta de vontade, qualquer coisa. Às vezes um ajuste pequeno no cronograma resolve, e eu gosto de ajudar a achar esse ajuste.
+
+Quando quiser voltar, a Revisão está pronta: ortoquestoes.com.br/#/revisao
+
+O tempo que a gente mais perde não é estudando, é decidindo o que estudar. Deixar essa decisão pronta devolve uns quinze minutos por dia.
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo mais leve.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Resultado do Simulado Nacional
+
+Júlia acertou 41 de 60 e ficou em 12º (posição só para quem assina, até 30º).
+
+**Assunto:** Júlia, uma ideia para depois do simulado
+
+```text
+Olá, Júlia, tudo bem?
+
+Imagino que a rotina esteja puxada por aí: hospital de dia, estudo quando sobra.
+
+Vi que você fez o Simulado Nacional desta edição. Você acertou 41 de 60 questões e ficou em 12º lugar entre quem entregou no tempo.
+
+Uma ideia de quem já fez muito simulado: em vez de refazer a prova inteira, pegue as questões que te pegaram e leia o comentário de todas as alternativas. É revisão sob medida, e cabe no intervalo.
+
+A correção fica aqui: ortoquestoes.com.br/#/simulado-nacional
+
+Se quiser me contar como foi a experiência, é só responder. Cada resposta ajuda a próxima edição.
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: 21 dias seguidos de estudo. Que constância bonita.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Véspera da prova
+
+Pedro, TEOT amanhã pelo cronograma.
+
+**Assunto:** Pedro, estou na torcida por você amanhã
+
+```text
+Pedro, tudo bem?
+
+Amanhã é o TEOT, e eu queria que este e-mail fosse uma coisa só: um lembrete de que você chegou até aqui.
+
+Chegar à véspera estudando com a rotina que a residência impõe já diz muito sobre você.
+
+Para hoje, nada de questão nova. Se a ansiedade bater, cinco minutos olhando as frases que caem e chega. O resto do dia é para descansar.
+
+E amanhã, no intervalo, come alguma coisa e bebe água. Parece bobagem, mas faz diferença no último bloco.
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: depois da prova, se quiser me contar como foi, eu leio cada resposta.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Depois da prova: como foi?
+
+Pedro, o TEOT foi há 2 dias.
+
+**Assunto:** Pedro, uma pergunta sobre a prova
+
+```text
+Olá, Pedro, tudo bem?
+
+O TEOT passou. Antes de mais nada: parabéns por ter chegado lá, com tudo o que a rotina pede.
+
+Tenho uma pergunta só: como foi estar lá, durante a prova? Não o resultado, a sensação. Isso diz muito sobre o que vem pela frente, e sobre o que o site pode melhorar.
+
+Se a próxima etapa já tiver data, o cronograma pode ser refeito com ela quando você quiser. Sem pressa nenhuma.
+
+Fico por aqui, esperando notícias.
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: vi que você estuda bastante à noite. Admiro muito quem encontra tempo depois de um dia inteiro.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Aniversário
+
+Júlia faz aniversário hoje. Curta, sem convite, sem link.
+
+**Assunto:** Júlia, hoje é dia de comemorar
+
+```text
+Olá, Júlia, tudo bem?
+
+Vi que hoje é o seu aniversário, e quis te mandar um abraço daqui.
+
+Na correria da residência, a gente às vezes esquece de parar e reparar no caminho. Então hoje eu reparo por você: estudar com a rotina que você tem já é uma conquista.
+
+Que este ano traga descanso, gente querida por perto e boas notícias.
+
+Feliz aniversário.
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: 21 dias seguidos de estudo. Que constância bonita.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Um ano de Orto Questões
+
+A conta da Beatriz faz um ano hoje.
+
+**Assunto:** Beatriz, uma data que eu quis lembrar
+
+```text
+Olá, Beatriz, tudo bem?
+
+Há um ano você criou a sua conta por aqui. Não é uma data que aparece no calendário de ninguém, mas eu quis lembrar.
+
+O que eu mais gosto de ver nessas datas é o caminho: quem chegou sem saber por onde começar e hoje abre o site já sabendo o que fazer.
+
+No seu caso, são 290 questões nesse caminho.
+
+Dez minutos no intervalo já contam. Não precisa ser uma sessão grande para valer.
+
+Se quiser me contar como foi esse tempo, o que ajudou e o que faltou, é só responder. Eu leio tudo.
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: mão e punho com 77% de acerto. Parabéns, de verdade.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Sua indicação deu certo
+
+O amigo que o Rafael indicou passou de 20 questões.
+
+**Assunto:** Rafael, obrigado por espalhar a palavra
+
+```text
+Rafael, tudo bem por aí?
+
+Passando para agradecer: quem você indicou chegou a 20 questões, e isso quer dizer que pegou o ritmo.
+
+É o tipo de notícia que eu mais gosto de receber, porque mostra que o site ajudou alguém a encaixar o estudo na rotina, e que foi você quem mostrou o caminho.
+
+Dez minutos no intervalo já contam. Não precisa ser uma sessão grande para valer.
+
+Se quiser indicar mais alguém que está na mesma prova, o seu link continua valendo: ortoquestoes.com.br/#/indicar
+
+Se não for a hora, tudo bem também. Eu continuo por aqui.
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: 5 dias seguidos de estudo. Que constância bonita.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Saiu um resumo do seu tema
+
+Beatriz estuda mais mão; saiu o resumo de fraturas da mão (só para quem aceitou novidades).
+
+**Assunto:** Beatriz, lembrei de você nesta semana
+
+```text
+Beatriz, tudo bem por aí?
+
+Lembrei de você nesta semana, quando saiu o resumo "Fraturas da mão" de mão e punho.
+
+Reparei que tem bastante questão de mão no seu histórico. Área bem da hora, essa.
+
+O jeito que mais rende: ler o resumo e fazer as questões do tema na mesma sessão. O que foi lido vira resposta certa mais rápido.
+
+Fica aqui: ortoquestoes.com.br/#/resumos/rockwood10-45-fraturas-mao
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: este e-mail só vai para quem aceitou receber novidades. Se preferir parar, o link no fim desliga.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
 ```

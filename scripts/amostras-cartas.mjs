@@ -1,5 +1,6 @@
 // Gera docs/emails/MODELOS.md: amostras das cartas para pessoas fictícias, em todas as faixas
-// de acerto e situações (inclusive os seis automáticos novos de 17/10/2026), mais a contagem de
+// de acerto e situações (inclusive os seis automáticos novos de 17/10/2026 e as nove campanhas diárias
+// da parte 31), mais a contagem de
 // variações. Rodar: node scripts/amostras-cartas.mjs
 import { build } from 'esbuild'
 import { mkdtemp, rm, writeFile, mkdir } from 'node:fs/promises'
@@ -121,6 +122,18 @@ try {
   novo('Cronograma pronto', 'No dia em que monta o plano. Pedro, TEOT a 87 dias.', { tipo: 'cronograma_pronto', nome: 'Pedro Alves', respondidas: 260, diasParaProva: 87, provaCronograma: 'TEOT', perfil: FAIXAS['70-80'] })
   novo('Pagamento aprovado', 'Recibo gentil (webhook do Mercado Pago): plano, período, o que libera, link do cronograma. Sem valor.', { tipo: 'pagamento_aprovado', nome: 'Fernanda Luz', respondidas: 260, pagamento: EXTRAS.pagamento, referencia: 'pg:123' })
   novo('Obrigado pelo tempo de assinatura', 'Cancelamento ou reembolso: porta aberta.', { tipo: 'obrigado_tempo', nome: 'Fernanda Luz', respondidas: 260, encerramento: EXTRAS.encerramento, perfil: { ...pessoa('Fernanda Luz', 71), areas: [{ slug: 'mao', total: 60, certas: 50 }] } })
+
+  linhas.push('## Campanhas diárias (parte 31, 18/10/2026)', '', 'O banco escolhe quem recebe (`candidatos_<tipo>`, já sem administrador, e-mail não confirmado, quem desligou as cartas, quem recebeu a mesma referência e quem está no teto de cadência) e o agendador manda às 7h pela ação `campanhas_diarias`, pelo mesmo caminho dos automáticos.', '')
+  const julia = FAIXAS['80-90'], pedro = FAIXAS['70-80'], beatriz = FAIXAS['60-70']
+  novo('Assinou e não montou o cronograma', 'Três dias depois de assinar, sem cronograma. Fernanda, TEOT.', { tipo: 'assinou_sem_cronograma', nome: 'Fernanda Luz', respondidas: 120, perfil: { ...pessoa('Fernanda Luz', 71), respondidas: 120, assinante: true, provas: ['teot'] } })
+  novo('Assinante parado há 7 dias', 'Bruno assina e está há 9 dias sem responder.', { tipo: 'assinante_parado_7', nome: 'Bruno', respondidas: 230, diasFora: 9, perfil: { ...pessoa('Bruno', 64), respondidas: 230, assinante: true, areas: [{ slug: 'joelho', total: 90, certas: 60 }] } })
+  novo('Resultado do Simulado Nacional', 'Júlia acertou 41 de 60 e ficou em 12º (posição só para quem assina, até 30º).', { tipo: 'simulado_resultado', nome: 'Júlia Prado', respondidas: 1450, perfil: julia, campanha: { simulado: { titulo: 'Simulado Nacional de setembro', acertos: 41, total: 60, posicao: 12, participantes: 180 } } })
+  novo('Véspera da prova', 'Pedro, TEOT amanhã pelo cronograma.', { tipo: 'vespera_prova', nome: 'Pedro Alves', respondidas: 290, provaCronograma: 'TEOT', perfil: { ...pedro, diasParaProva: 1 } })
+  novo('Depois da prova: como foi?', 'Pedro, o TEOT foi há 2 dias.', { tipo: 'depois_prova', nome: 'Pedro Alves', respondidas: 290, provaCronograma: 'TEOT', perfil: { ...pedro, diasParaProva: null } })
+  novo('Aniversário', 'Júlia faz aniversário hoje. Curta, sem convite, sem link.', { tipo: 'aniversario', nome: 'Júlia Prado', respondidas: 1450, perfil: julia })
+  novo('Um ano de Orto Questões', 'A conta da Beatriz faz um ano hoje.', { tipo: 'um_ano', nome: 'Beatriz Lins', respondidas: 290, perfil: { ...beatriz, diasConta: 365 }, campanha: { anos: 1 } })
+  novo('Sua indicação deu certo', 'O amigo que o Rafael indicou passou de 20 questões.', { tipo: 'indicacao_deu_certo', nome: 'Rafael Couto', respondidas: 290, perfil: FAIXAS['40-60'], campanha: { cortesia: true } })
+  novo('Saiu um resumo do seu tema', 'Beatriz estuda mais mão; saiu o resumo de fraturas da mão (só para quem aceitou novidades).', { tipo: 'resumo_do_tema', nome: 'Beatriz Lins', respondidas: 290, perfil: beatriz, campanha: { resumo: { id: 'rockwood10-45-fraturas-mao', titulo: 'Fraturas da mão', especialidade: 'mao' } } })
 
   await mkdir('docs/emails', { recursive: true })
   await writeFile('docs/emails/MODELOS.md', linhas.join('\n'))

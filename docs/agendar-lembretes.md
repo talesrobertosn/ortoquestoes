@@ -63,3 +63,27 @@ No Supabase (Integrations › Cron), crie o agendamento `resumo-quinzenal`:
 - Cabeçalhos: `Content-Type: application/json` e `x-segredo: <o valor do segredo EMAIL_SEGREDO>`
 - Corpo: `{"acao": "relatorios_quinzenais", "limite": 80}`
   (sem "quinzena", a função usa a última que terminou: no dia 16, os dias 1 a 15; no dia 1º, do 16 ao fim do mês anterior)
+
+# Campanhas diárias de e-mail (parte 31, 18/10/2026)
+
+Nove cartas que saem sozinhas quando acontece algo na vida da pessoa: assinou e não montou o
+cronograma, assinante parado há 7 dias, resultado do Simulado Nacional, véspera e depois da prova do
+cronograma, aniversário, um ano de conta, indicação que deu certo e resumo novo do tema (detalhes em
+[emails/PLANO.md](emails/PLANO.md), seção 8). O banco escolhe quem recebe; a função manda, conferindo de
+novo quem desligou os e-mails, o e-mail confirmado, a referência já enviada e o teto de cadência.
+
+## Sozinho, todo dia às 7h
+
+Depois de colar a parte 31 e publicar a função `enviar-email`, cole no SQL Editor
+`supabase/colar-no-painel/sql-202610181200-parte31-agendamento.sql`, trocando `<PROJETO>`, `<ANON_KEY>`
+e `<EMAIL_SEGREDO>` (precisa das extensões pg_cron e pg_net). Ou, pela tela (Integrations › Cron):
+
+- Nome: `emails-campanhas-diarias`
+- Quando: `0 10 * * *` (7h de Brasília, em UTC)
+- Tipo: chamada HTTP `POST` para a função `enviar-email`
+- Cabeçalhos: `Content-Type: application/json` e `x-segredo: <o valor do segredo EMAIL_SEGREDO>`
+- Corpo: `{"acao": "campanhas_diarias", "limite": 20}`
+
+Para ver quem receberia, sem mandar nada: `{"acao": "campanhas_diarias", "simular": true}`. Para uma
+campanha só: `"campanha": "aniversario"` (ou outra). Rodar duas vezes no mesmo dia não manda nada em
+dobro: cada carta tem uma referência única por pessoa.
