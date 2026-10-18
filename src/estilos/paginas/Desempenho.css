@@ -1,0 +1,259 @@
+/* Seu desempenho (/dados), refeita em 18/10/2026 na identidade do Treinar (temporada pixel).
+   Placar escuro no topo com o acerto em ouro; capítulos "onde você está", "como evoluiu"
+   e "o que fazer agora". Gráficos pela skill dataviz: um tom por série, validado no claro
+   e no escuro (scripts/validate_palette.js da skill), grade fina e sólida, tabela equivalente. */
+.ds {
+  /* Cor de dados: verdete com mais croma (o --verdete puro lê cinza no gráfico) e o ouro de ênfase. */
+  --ds-serie: #008a78;
+  --ds-enfase: #b8790a;
+  --ds-trilho: color-mix(in srgb, var(--ds-serie) 13%, var(--superficie));
+  --ds-grade: var(--traco);
+  display: grid; gap: var(--e-6);
+}
+:root[data-tema="escuro"] .ds { --ds-serie: #22a593; --ds-enfase: #bf8822; --ds-trilho: color-mix(in srgb, var(--ds-serie) 18%, var(--superficie)); }
+.ds-num { font-variant-numeric: tabular-nums; }
+
+/* ---------- Placar ---------- */
+.ds-heroi {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, 25rem); gap: var(--e-5) var(--e-7); align-items: center;
+  padding: clamp(1.4rem, 3.6vw, 2.5rem) clamp(1.2rem, 3.6vw, 2.5rem) calc(clamp(1.4rem, 3.6vw, 2.5rem) + 1.75rem);
+  border-radius: var(--raio-cartao); background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media);
+}
+.ds-heroi__texto { display: grid; justify-items: start; min-width: 0; }
+.ds-heroi .tr-heroi__selo { display: inline-flex; align-items: center; gap: 0.35rem; }
+.ds-heroi h1 { margin: 0; font-family: var(--fonte-marca); color: var(--sobre-heroi); font-size: clamp(2rem, 4.2vw, 2.9rem); letter-spacing: -0.035em; line-height: 1.02; text-wrap: balance; }
+.ds-heroi__texto > p:not(.tr-heroi__selo):not(.ds-heroi__exemplo):not(.ds-heroi__sync) { margin: var(--e-3) 0 0; max-width: 46ch; color: var(--sobre-heroi-2); text-wrap: pretty; }
+.ds-heroi__exemplo { margin: var(--e-3) 0 0; padding: 0.1rem 0.5rem; background: var(--px-ouro); color: var(--px-tinta); font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 2px 2px 0 var(--px-ouro-sombra); }
+.botao.ds-heroi__criar {
+  margin-top: var(--e-4); border: 0; border-radius: 4px; background: var(--px-ouro); color: var(--px-tinta);
+  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra); transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.botao.ds-heroi__criar:hover { background: #ffdf95; color: var(--px-tinta); transform: translate(-1px, -1px); }
+.botao.ds-heroi__criar:active { transform: translate(1px, 1px); }
+.ds-heroi__sync { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; margin: var(--e-3) 0 0; font-size: var(--meta); color: var(--sobre-heroi-2); }
+.ds-heroi__sync .botao--vinculo { color: var(--sobre-heroi); }
+.ds-heroi__rejeitados { color: var(--px-ouro); font-weight: 700; }
+
+/* Números de apoio: sessões, erros e favoritas, em vidro sobre o céu. */
+.ds-heroi__extras { display: flex; flex-wrap: wrap; gap: var(--e-2); margin: var(--e-5) 0 0; }
+.ds-heroi__extras > div { display: grid; gap: 1px; min-width: 7.5rem; padding: var(--e-2) var(--e-4); border-radius: 4px; background: rgba(7, 35, 32, 0.45); box-shadow: inset 0 0 0 1px var(--heroi-traco); }
+.ds-heroi__extras dt { font-size: var(--meta); color: var(--sobre-heroi-2); }
+.ds-heroi__extras dd { margin: 0; font-family: var(--fonte-pixel-titulo); font-size: 1.75rem; line-height: 1; color: var(--px-ouro); }
+.ds-heroi__extras a { color: inherit; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.ds-heroi__extras a:hover { color: #ffe3a3; }
+.ds-heroi__texto > .tr-heroi__link { margin-top: var(--e-4); }
+
+/* Bilhete do placar: o acerto em ouro e, embaixo, respondidas e sequência. */
+.ds-placar {
+  display: grid; gap: var(--e-4); padding: var(--e-5);
+  border-radius: 6px; background: linear-gradient(180deg, #0b2f2b, #082522); color: var(--sobre-heroi);
+  box-shadow: 0 0 0 2px #072320, 5px 5px 0 rgba(0, 0, 0, 0.28);
+}
+:root[data-tema="escuro"] .ds-placar { background: linear-gradient(180deg, #0d1c1a, #0a1513); box-shadow: 0 0 0 2px #2b3b38, 5px 5px 0 rgba(0, 0, 0, 0.45); }
+.ds-placar__acerto { display: grid; gap: var(--e-2); padding-bottom: var(--e-4); border-bottom: 2px dashed var(--heroi-traco); }
+.ds-placar__rotulo { margin: 0; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9fe3d4; }
+.ds-placar__valor { display: flex; align-items: baseline; gap: 2px; margin: 0; color: var(--px-ouro); font-family: var(--fonte-pixel-titulo); line-height: 0.8; text-shadow: 3px 3px 0 var(--px-ouro-sombra); }
+.ds-placar__valor strong { font-weight: 400; font-size: clamp(4.6rem, 9vw, 6rem); line-height: 0.62; }
+.ds-placar__valor { padding-top: var(--e-2); }
+.ds-placar__valor span { font-size: 2.6rem; }
+.ds-placar__apoio { margin: 0; font-size: var(--meta); color: var(--sobre-heroi-2); }
+.ds-placar .ds-medidor { --ds-serie: var(--px-ouro); --ds-trilho: rgba(244, 207, 124, 0.16); height: 10px; }
+.ds-placar__dados { display: grid; grid-template-columns: 1fr 1fr; gap: var(--e-3); margin: 0; }
+.ds-placar__dados > div { display: grid; align-content: start; gap: 2px; min-width: 0; }
+.ds-placar__dados dt { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sobre-heroi-2); }
+.ds-placar__dados dd { display: flex; align-items: baseline; gap: var(--e-2); margin: 0; font-family: var(--fonte-pixel-titulo); font-size: 2.4rem; line-height: 1; color: var(--sobre-heroi); }
+.ds-placar__dados dd small { font-family: var(--fonte-texto); font-size: var(--corpo-menor); font-weight: 650; color: var(--sobre-heroi-2); }
+.ds-placar__medalha { display: inline-flex; align-self: center; }
+.ds-placar__nota { font-size: var(--meta); color: var(--sobre-heroi-2); }
+
+/* ---------- Período ---------- */
+.ds-periodo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--e-3) var(--e-5); padding: var(--e-4) var(--e-5); background: var(--superficie); }
+.ds-periodo__texto { display: grid; gap: 2px; min-width: 0; }
+.ds-periodo__texto strong { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--verdete); }
+.ds-periodo__texto span { color: var(--texto-2); font-size: var(--corpo-menor); }
+.ds-periodo__controles { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2); }
+.ds-seg { display: flex; gap: 4px; padding: 4px; border-radius: 8px; background: var(--superficie-2); border: var(--borda); }
+.ds-seg button {
+  min-height: 38px; padding: 0 var(--e-3); border: 0; border-radius: 5px; background: none;
+  color: var(--texto-2); font: inherit; font-size: var(--corpo-menor); font-weight: 650; white-space: nowrap; cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.ds-seg button:hover { color: var(--texto); }
+.ds-seg button[aria-pressed="true"] { background: var(--verdete); color: var(--sobre-destaque); box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 55%, #000); }
+.ds-seg button:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }
+.ds-periodo__data .entrada { min-height: 46px; border-radius: 6px; }
+
+/* ---------- Capítulos ---------- */
+.ds-capitulo { display: grid; gap: var(--e-4); }
+.ds-capitulo__cabeca { display: grid; gap: var(--e-1); }
+.ds-capitulo__selo { justify-self: start; margin: 0; padding: 0.1rem 0.5rem; background: #0b2b27; color: #9fe3d4; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 2px 2px 0 #072320; }
+.ds-capitulo__cabeca h2 { margin: 0; font-family: var(--fonte-marca); font-size: clamp(1.45rem, 2.6vw, 1.8rem); letter-spacing: -0.025em; line-height: 1.15; text-wrap: balance; }
+
+.ds-grade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-4); align-items: start; }
+.ds-grade--onde { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); }
+.ds-coluna { display: grid; gap: var(--e-4); min-width: 0; }
+
+.ds-cartao { display: grid; gap: var(--e-4); align-content: start; min-width: 0; padding: clamp(1.1rem, 2.6vw, 1.5rem); background: var(--superficie); }
+.ds-cartao__cabeca { display: grid; gap: var(--e-1); }
+.ds-cartao__cabeca h3 { display: flex; align-items: center; gap: var(--e-2); margin: 0; font-family: var(--fonte-marca); font-size: 1.18rem; letter-spacing: -0.015em; line-height: 1.2; }
+.ds-cartao__cabeca h3::before { content: ""; flex: none; width: 0.6rem; height: 0.6rem; background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); }
+.ds-cartao__cabeca p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); max-width: 62ch; text-wrap: pretty; }
+.ds-vazio { margin: 0; color: var(--texto-2); }
+
+/* Medidor: barra de 0–100 % com a ponta arredondada e a base reta, sobre um trilho do mesmo tom. */
+.ds-medidor { display: block; height: 8px; border-radius: 0 4px 4px 0; background: var(--ds-trilho); overflow: hidden; }
+.ds-medidor > span { display: block; height: 100%; border-radius: 0 4px 4px 0; background: var(--ds-serie); }
+.ds-medidor--fina { height: 6px; }
+
+/* Por tema. */
+.ds-temas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: var(--e-2) var(--e-4); }
+.ds-tema {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 6px var(--e-3);
+  padding: var(--e-3) var(--e-2); border-radius: 6px; color: var(--texto); text-decoration: none;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.ds-tema:hover { background: var(--superficie-2); color: var(--texto); }
+.ds-tema:hover .ds-tema__nome { text-decoration: underline; text-underline-offset: 3px; }
+.ds-tema:focus-visible { outline: 2px solid var(--verdete); outline-offset: 1px; }
+.ds-tema__nome { font-weight: 650; line-height: 1.25; }
+.ds-tema__pct { font-family: var(--fonte-marca); font-weight: 800; font-size: 1.1rem; }
+.ds-tema .ds-medidor { grid-column: 1 / -1; }
+.ds-tema__meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2); color: var(--texto-2); font-size: var(--meta); }
+.ds-status { display: inline-flex; align-items: center; gap: 3px; padding: 0 6px; border-radius: 3px; font-weight: 700; font-size: 0.72rem; }
+.ds-status--bom { color: var(--acerto-texto); background: var(--acerto-veu); }
+.ds-status--baixo { color: var(--erro-texto); background: var(--erro-veu); }
+
+/* Ponto forte e ponto a reforçar. */
+.ds-destaques { display: grid; gap: var(--e-2); }
+.ds-destaque {
+  display: grid; gap: 2px; padding: var(--e-3) var(--e-4); border-radius: 6px; text-decoration: none; color: var(--texto);
+  border: var(--borda); border-left: 6px solid; transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.ds-destaque small { display: inline-flex; align-items: center; gap: 4px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.ds-destaque strong { font-size: 1.05rem; line-height: 1.25; }
+.ds-destaque span { font-size: var(--meta); color: var(--texto-2); }
+.ds-destaque--bom { border-left-color: var(--acerto); background: var(--acerto-veu); }
+.ds-destaque--bom small { color: var(--acerto-texto); }
+.ds-destaque--baixo { border-left-color: var(--erro); background: var(--erro-veu); }
+.ds-destaque--baixo small { color: var(--erro-texto); }
+.ds-destaque:hover { color: var(--texto); transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--px-sombra); }
+
+/* Por prova. */
+.ds-provas { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--e-3); }
+.ds-prova { display: grid; gap: 6px; padding: var(--e-3); border-radius: 6px; background: var(--superficie-2); }
+.ds-prova--minha { background: var(--verdete-veu); box-shadow: inset 0 0 0 2px var(--verdete); }
+.ds-prova__topo { display: flex; justify-content: space-between; gap: var(--e-2); flex-wrap: wrap; font-size: var(--corpo-menor); }
+.ds-prova__topo b { font-family: var(--fonte-marca); font-size: 1rem; }
+.ds-prova__selo { display: inline-flex; align-items: center; gap: 3px; margin-left: var(--e-2); font-size: var(--meta); color: var(--verdete); font-weight: 700; }
+.ds-prova small { color: var(--texto-2); font-size: var(--meta); }
+
+/* Confiança. */
+.ds-confianca { display: grid; gap: var(--e-3); }
+.ds-confianca__linha { display: grid; grid-template-columns: 7rem minmax(0, 1fr) 9.5rem; align-items: center; gap: var(--e-4); }
+.ds-confianca__rotulo { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 650; }
+.ds-confianca__rotulo svg { color: var(--verdete); }
+.ds-confianca .ds-medidor { height: 12px; }
+.ds-confianca__valor strong { font-family: var(--fonte-marca); font-size: 1.1rem; }
+.ds-confianca__valor small { color: var(--texto-2); font-size: var(--meta); }
+
+/* Seus números: uma faixa de leitura, sem caixa em cada número. */
+.ds-numeros__lista {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: 0; margin: 0;
+  border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); box-shadow: 5px 5px 0 var(--px-sombra); overflow: hidden;
+}
+.ds-numero { display: grid; align-content: start; gap: 3px; padding: var(--e-4); box-shadow: 1px 1px 0 var(--traco); }
+.ds-numero dt { color: var(--texto-2); font-size: var(--meta); font-weight: 650; }
+.ds-numero dd { margin: 0; font-family: var(--fonte-marca); font-size: 1.6rem; font-weight: 750; letter-spacing: -0.02em; line-height: 1.1; }
+.ds-numero small { color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+.ds-numero .ds-medidor { margin-top: var(--e-1); }
+
+/* ---------- Gráficos ---------- */
+.ds-grafico { display: grid; gap: var(--e-2); margin: 0; min-width: 0; }
+.ds-grafico__area { border-radius: 4px; }
+.ds-grafico__area:focus-visible { outline: 2px solid var(--verdete); outline-offset: 4px; }
+.ds-grafico svg { display: block; overflow: visible; }
+.ds-grafico__grade { stroke: var(--ds-grade); stroke-width: 1; shape-rendering: crispEdges; }
+.ds-grafico__base { stroke: var(--traco-forte); stroke-width: 1; shape-rendering: crispEdges; }
+.ds-grafico__tique { fill: var(--texto-2); font-size: 11px; font-variant-numeric: tabular-nums; }
+.ds-grafico__tique--ativo { fill: var(--texto); font-weight: 700; }
+.ds-grafico__tique--forte { fill: var(--texto); font-weight: 700; font-size: 12px; }
+.ds-grafico__valor { fill: var(--texto); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ds-grafico__faixa { fill: var(--superficie-2); }
+.ds-grafico__coluna { fill: var(--ds-serie); }
+.ds-grafico__coluna--destaque { fill: var(--ds-enfase); }
+.ds-grafico__coluna--apagada { opacity: 0.28; }
+.ds-grafico__linha { fill: none; stroke: var(--ds-serie); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.ds-grafico__ponto { fill: var(--ds-serie); stroke: var(--superficie); stroke-width: 2; }
+.ds-grafico__ponto--ativo { fill: var(--ds-enfase); }
+.ds-grafico__mira { stroke: var(--traco-forte); stroke-width: 1; }
+.ds-grafico__leitura { min-height: 2.6em; padding: var(--e-2) var(--e-3); border-radius: 4px; background: var(--superficie-2); color: var(--texto); font-size: var(--corpo-menor); font-variant-numeric: tabular-nums; }
+
+.ds-tabela summary { cursor: pointer; color: var(--verdete); font-size: var(--corpo-menor); font-weight: 650; }
+.ds-tabela summary:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }
+.ds-tabela .rolagem-x { margin-top: var(--e-2); max-height: 20rem; overflow-y: auto; }
+.ds-tabela__tabela th[scope="row"] { font-weight: 600; text-align: left; white-space: nowrap; }
+.ds-tabela__tabela td { white-space: nowrap; }
+.ds-variacao { color: var(--texto-2); font-weight: 600; }
+
+/* ---------- O que fazer agora ---------- */
+.ds-agora { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 20rem); gap: var(--e-5); align-items: center; padding: clamp(1.1rem, 2.6vw, 1.5rem); background: var(--superficie); }
+.ds-passos { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--e-2); }
+.ds-passo { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-3); padding: var(--e-2) 0; border-bottom: 1px dashed var(--traco); }
+.ds-passo:last-child { border-bottom: 0; }
+.ds-passo div { display: grid; gap: 2px; min-width: 0; }
+.ds-passo strong { line-height: 1.3; }
+.ds-passo div span { color: var(--texto-2); font-size: var(--corpo-menor); }
+.ds-passo__acao {
+  display: inline-flex; align-items: center; gap: 4px; min-height: 40px; padding: 0 var(--e-3); border-radius: 4px;
+  border: 2px solid var(--verdete); color: var(--verdete); font-weight: 700; font-size: var(--corpo-menor); text-decoration: none; white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+.ds-passo__acao:hover { background: var(--verdete); color: var(--sobre-destaque); }
+.ds-passo__acao:active { transform: translateY(1px); }
+.botao.ds-agora__treinar {
+  display: flex; align-items: center; gap: var(--e-3); min-height: 72px; padding: var(--e-3) var(--e-5) var(--e-3) var(--e-3); text-align: left;
+  border: 0; border-radius: 4px; background: var(--px-ouro); color: var(--px-tinta);
+  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.botao.ds-agora__treinar:hover { background: #ffdf95; color: var(--px-tinta); transform: translate(-1px, -1px); }
+.botao.ds-agora__treinar:active { transform: translate(1px, 1px); }
+.ds-agora__treinar svg { flex: none; padding: 0.45rem; width: 2.5rem; height: 2.5rem; background: var(--px-tinta); color: var(--px-ouro); }
+.ds-agora__treinar span { display: grid; line-height: 1.25; }
+.ds-agora__treinar strong { font-size: 1.1rem; }
+.ds-agora__treinar small { font-size: var(--meta); font-weight: 600; opacity: 0.8; }
+
+.ds-guardado { margin: 0; }
+.ds-risco { border-radius: 6px; }
+.ds-embreve { display: inline-block; margin-left: 0.4rem; padding: 0.15rem 0.6rem; border-radius: 4px; background: var(--aviso-veu); color: var(--aviso-texto); font-size: 0.72rem; font-weight: 800; vertical-align: middle; letter-spacing: 0.03em; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ds * { transition: none !important; }
+}
+
+/* ---------- Telas menores ---------- */
+@media (max-width: 60rem) {
+  .ds-heroi, .ds-grade, .ds-grade--onde, .ds-agora { grid-template-columns: minmax(0, 1fr); }
+}
+/* No celular o placar sobe para logo depois do título: os números principais vêm primeiro. */
+@media (max-width: 60rem) {
+  .ds-heroi { gap: 0; justify-items: start; }
+  .ds-heroi__texto { display: contents; }
+  .ds-placar { order: 1; justify-self: stretch; margin-top: var(--e-5); }
+  .ds-heroi__extras, .ds-heroi__texto > .tr-heroi__link { order: 2; }
+}
+@media (max-width: 40rem) {
+  .ds { gap: var(--e-5); }
+  .ds-numero:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .ds-heroi__extras { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+  .ds-heroi__extras > div { min-width: 0; padding: var(--e-2) var(--e-3); }
+  .ds-periodo { padding: var(--e-4); }
+  .ds-periodo__controles, .ds-seg, .ds-periodo__data, .ds-periodo__data .entrada { width: 100%; }
+  .ds-seg button { flex: 1 1 0; min-width: 0; padding: 0 2px; font-size: 0.8rem; }
+  .ds-confianca__linha { grid-template-columns: minmax(0, 1fr) auto; gap: 6px var(--e-3); }
+  .ds-confianca .ds-medidor { grid-column: 1 / -1; grid-row: 2; }
+  .ds-passo { grid-template-columns: auto minmax(0, 1fr); }
+  .ds-passo__acao { grid-column: 2; justify-self: start; }
+  .ds-numeros__lista { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
