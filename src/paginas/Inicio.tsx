@@ -50,6 +50,19 @@ import '../estilos/paginas/InicioPainel.css'
  *   e a sequência ao lado, atalhos, "quase lá" e o resto mais abaixo.
  */
 
+/**
+ * Primeiro nome, como os e-mails (primeiroNome em supabase/functions/_shared/cartas.ts):
+ * vazio quando o cadastro não traz um nome que dê para chamar a pessoa.
+ */
+function primeiroNome(nome?: string | null): string {
+  const primeiro = (nome ?? '').trim().split(/\s+/)[0] ?? ''
+  if (!primeiro || /[@\d_]/.test(primeiro) || primeiro.length < 2 || primeiro.length > 20) return ''
+  return primeiro.charAt(0).toLocaleUpperCase('pt-BR') + primeiro.slice(1).toLocaleLowerCase('pt-BR')
+}
+
+/** Tato dos e-mails (docs/emails/TOM.md): abaixo de 10 questões não se mostra o número. */
+const MINIMO_PARA_NUMERO = 10
+
 /** "Hoje", "Ontem" ou a data curta: a lista de sessões lê melhor assim. */
 function quandoFoi(instante: number): string {
   const dia = chaveDia(new Date(instante))
@@ -201,7 +214,8 @@ export function Inicio() {
   const sessaoEmAndamento =
     sessao && !sessao.concluidaEm && Object.keys(sessao.respostas).length < sessao.ids.length
 
-  const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
+  // Primeiro nome, sem título nem gênero presumido (adendo do dono, 18/10/2026).
+  const nome = primeiroNome(String(conta?.user.user_metadata?.nome ?? ''))
   const revisarHoje = contagens?.porSituacao.revisarHoje ?? 0
   const streak = useMemo(() => calcularStreak(contexto.respondidas), [contexto.respondidas])
   const respondidasTotal = Object.keys(contexto.respondidas).length
@@ -224,7 +238,7 @@ export function Inicio() {
   // A jornada do cronograma já está no painel: o cartão grande só aparece para quem não tem
   // (convite ou "montar") e na reta final, que tem texto próprio.
   const cronogramaNoPainel = Boolean(cronograma.premium && calculo && !calculo.naRetaFinal && !calculo.provaPassou)
-  const titulo = nome ? cabecalhoDoDia.comNome(`${conta?.user.user_metadata?.situacao === 'ortopedista' ? 'Dr. ' : ''}${nome}`) : cabecalhoDoDia.semNome
+  const titulo = nome ? cabecalhoDoDia.comNome(nome) : cabecalhoDoDia.semNome
 
   const acao: ProximaAcao | null = !contagens ? null
     : sessaoEmAndamento ? {
@@ -273,7 +287,7 @@ export function Inicio() {
       <div className="ip ip--vitrine">
         <section className="ip-heroi ip-heroi--vitrine ip-entra" aria-labelledby="ip-vitrine-titulo">
           <div className="ip-heroi__texto">
-            <p className="ip-selo"><span className="ponto-vivo" aria-hidden="true" /> Provas oficiais comentadas</p>
+            <p className="tr-heroi__selo ip-heroi__selo">Provas oficiais comentadas</p>
             {/* A frase do título muda a cada abertura (rodízio de src/dados/frasesInicio.ts); a proposta de valor vem logo abaixo, fixa. */}
             <h1 id="ip-vitrine-titulo">{cabecalhoDoDia.semNome}</h1>
             <p className="ip-heroi__proposta">As provas de ortopedia, <em>comentadas como uma aula</em>.</p>
@@ -297,7 +311,8 @@ export function Inicio() {
         <ConviteLimiteDoDia />
 
         <section className="ip-pilares ip-entra" aria-labelledby="ip-pilares-titulo" style={{ '--i': 1 } as CSSProperties}>
-          <h2 id="ip-pilares-titulo" className="ip-invisivel">O que o Orto Questões faz por você</h2>
+          <h2 id="ip-pilares-titulo" className="ip-pilares__titulo">O que o Orto Questões faz por você</h2>
+          <div className="ip-pilares__grade">
           {[
             { arte: 'treinar' as const, titulo: 'Questões oficiais comentadas', texto: 'Cada alternativa explicada, a certa e as erradas, com o conceito por trás.' },
             { arte: 'revisao' as const, titulo: 'Revisão no dia certo', texto: 'Errou, a questão volta logo. Acertou com certeza, só daqui a semanas.' },
@@ -306,10 +321,13 @@ export function Inicio() {
           ].map((p) => (
             <article key={p.titulo} className="ip-pilar">
               <IconePixel nome={p.arte} tamanho={44} />
-              <h3>{p.titulo}</h3>
-              <p>{p.texto}</p>
+              <div>
+                <h3>{p.titulo}</h3>
+                <p>{p.texto}</p>
+              </div>
             </article>
           ))}
+          </div>
         </section>
 
         {temAcervo && <>
@@ -353,7 +371,7 @@ export function Inicio() {
     <div className="ip ip--painel">
       <section className="ip-heroi ip-heroi--painel ip-entra" aria-labelledby="ip-painel-titulo">
         <div className="ip-heroi__texto">
-          <p className="ip-selo">Seu dia de estudo</p>
+          <p className="tr-heroi__selo ip-heroi__selo">Seu dia de estudo</p>
           <h1 id="ip-painel-titulo">{titulo}</h1>
           <p className="ip-heroi__lide">{calculo && !calculo.provaPassou
             ? <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a prova. {cabecalhoDoDia.incentivo}</>
@@ -443,27 +461,33 @@ export function Inicio() {
               <a className="ip-hoje__item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=dominadas`)}>
                 <IconePixel nome="ranking" tamanho={32} />
                 <span><strong>Dominadas</strong><small>Ciclo de revisão completo</small></span>
-                <b className="numerico">{(contagens!.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
+                {(contagens!.porSituacao.dominadas ?? 0) >= MINIMO_PARA_NUMERO
+                  ? <b className="numerico">{(contagens!.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
+                  : <b className="ip-hoje__seta"><Icone nome="direita" tamanho={16} /></b>}
               </a>
             </div>
           </section>
 
           <section className="ip-cartao ip-foco" aria-labelledby="ip-foco-titulo">
-            <header className="ip-cartao__cabeca"><h2 id="ip-foco-titulo">Onde você mais erra</h2></header>
+            <header className="ip-cartao__cabeca"><h2 id="ip-foco-titulo">Onde uma sessão rende mais</h2></header>
             {temaFragil ? (() => {
               const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
               return <>
                 <p className="ip-foco__tema">{temaFragil[0]}</p>
-                <div className="ip-foco__medida">
-                  <span className="ip-barra ip-barra--fina ip-barra--acerto" role="img" aria-label={`${acerto}% de acerto`}><span style={{ width: `${Math.max(4, acerto)}%` }} /></span>
-                  <small><b className="numerico">{acerto}%</b> de acerto</small>
-                </div>
-                <dl className="ip-foco__numeros">
-                  <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>
-                  <div><dt>Erros</dt><dd className="numerico">{(temaFragil[1].tentativas - temaFragil[1].acertos).toLocaleString('pt-BR')}</dd></div>
-                  <div><dt>Revisões</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>
-                </dl>
-                <p className="ip-foco__texto">De todos os temas que você já treinou, é onde uma sessão curta rende mais pontos na prova.</p>
+                {/* Tato dos e-mails: o tema mais frágil é oportunidade; acerto só a partir de 50%, contagens só a partir de 10, sem "erros". */}
+                {acerto >= 50 && (
+                  <div className="ip-foco__medida">
+                    <span className="ip-barra ip-barra--fina ip-barra--acerto" role="img" aria-label={`${acerto}% de acerto`}><span style={{ width: `${acerto}%` }} /></span>
+                    <small><b className="numerico">{acerto}%</b> de acerto, com espaço para subir</small>
+                  </div>
+                )}
+                {(temaFragil[1].tentativas >= MINIMO_PARA_NUMERO || temaFragil[1].pendentes >= MINIMO_PARA_NUMERO) && (
+                  <dl className="ip-foco__numeros">
+                    {temaFragil[1].tentativas >= MINIMO_PARA_NUMERO && <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>}
+                    {temaFragil[1].pendentes >= MINIMO_PARA_NUMERO && <div><dt>Para rever</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>}
+                  </dl>
+                )}
+                <p className="ip-foco__texto">De todos os temas que você já treinou, este é a melhor oportunidade: uma sessão curta aqui rende mais pontos na prova.</p>
                 <a className="botao ip-botao-contorno" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
               </>
             })() : <>
@@ -478,15 +502,25 @@ export function Inicio() {
               <a href={href('/dados')}>Desempenho <Icone nome="direita" tamanho={14} /></a>
             </header>
             <dl className="ip-semana__numeros">
-              <div><dt>Questões</dt><dd className="numerico">{semana.total.toLocaleString('pt-BR')}</dd></div>
-              <div><dt>Acerto</dt><dd className="numerico">{semana.acerto === null ? '—' : `${semana.acerto}%`}</dd></div>
+              <div><dt>Questões</dt><dd className={`numerico${semana.total > 0 && semana.total < MINIMO_PARA_NUMERO ? ' ip-semana__palavra' : ''}`}>{semana.total >= MINIMO_PARA_NUMERO ? semana.total.toLocaleString('pt-BR') : semana.total > 0 ? 'Primeiros passos' : '—'}</dd></div>
+              <div><dt>Acerto</dt><dd className="numerico">{semana.acerto !== null && semana.acerto >= 50 && semana.total >= MINIMO_PARA_NUMERO ? `${semana.acerto}%` : '—'}</dd></div>
               <div><dt>Dias ativos</dt><dd className="numerico">{semana.diasAtivos} de 7</dd></div>
             </dl>
+            {semana.total > 0 && (
+              <p className="ip-semana__frase">{semana.diasAtivos >= 3
+                ? <>{nome ? `${nome}, você` : 'Você'} estudou em <strong>{semana.diasAtivos} dos últimos 7 dias</strong>. É essa constância que fixa.</>
+                : <>{nome ? `${nome}, os` : 'Os'} primeiros passos da semana já estão aqui. Um pouco por dia leva longe.</>}</p>
+            )}
             <ol className="ip-semana__grafico" aria-label="Questões respondidas por dia">
               {semana.dias.map((dia, i) => (
                 <li key={dia.chave} className={dia.hoje ? 'hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}`}>
-                  <span className="ip-semana__coluna"><span style={{ height: `${dia.total ? Math.max(8, (dia.total / semana.maximo) * 100) : 0}%`, '--i': i } as CSSProperties} /></span>
-                  <small>{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>
+                  <span className="ip-semana__coluna" style={{ '--h': `${dia.total ? Math.max(8, (dia.total / semana.maximo) * 100) : 0}%` } as CSSProperties}>
+                    <span style={{ '--i': i } as CSSProperties} />
+                    {/* Rótulo só onde ajuda a ler (hoje e o dia de pico) e só a partir de 10. */}
+                    {dia.total >= MINIMO_PARA_NUMERO && (dia.hoje || dia.total === semana.maximo) && <b className="ip-semana__valor numerico" aria-hidden="true">{dia.total}</b>}
+                  </span>
+                  <small aria-hidden="true">{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>
+                  <span className="ip-invisivel">{dia.nomeCompleto}: {dia.total} {dia.total === 1 ? 'questão' : 'questões'}</span>
                 </li>
               ))}
             </ol>
@@ -498,7 +532,8 @@ export function Inicio() {
                     <li key={h.id}>
                       <span className="ip-sessoes__quando">{quandoFoi(h.concluidaEm)}</span>
                       <span className="ip-sessoes__nome">{h.descricao}</span>
-                      <span className={`ip-sessoes__acerto ip-sessoes__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'baixo'}`}>{acerto === null ? '—' : `${acerto}%`}</span>
+                      {/* Abaixo de 50% não se mostra a porcentagem (tato dos e-mails). */}
+                      <span className={`ip-sessoes__acerto ip-sessoes__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'vazio'}`}>{acerto === null ? '—' : acerto >= 50 ? `${acerto}%` : 'Feita'}</span>
                     </li>
                   )
                 })}
