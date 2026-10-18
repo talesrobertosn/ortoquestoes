@@ -1,0 +1,281 @@
+/*
+ * Navegação do site (18/10/2026): cabeçalho, barra de baixo do celular e
+ * rodapé num só lugar. Antes as regras se espalhavam por base, premium e
+ * recursos e se sobrescreviam; aqui cada uma existe uma vez.
+ * Identidade da temporada pixel: cantos retos nos marcadores, ouro com
+ * contorno de tinta e sombra em degrau no botão Planos e no selo Beta.
+ */
+
+/* ---------- Cabeçalho -------------------------------------------------- */
+
+.cabecalho {
+  position: sticky; top: 0; z-index: var(--z-sticky);
+  background: color-mix(in srgb, var(--superficie) 90%, transparent);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom: 1px solid var(--traco);
+}
+.cabecalho__interno { display: flex; align-items: center; gap: 1.25rem; min-height: 64px; }
+
+.cabecalho__marca {
+  display: inline-flex; align-items: center; flex: 0 0 auto;
+  color: var(--texto); text-decoration: none; border-radius: var(--raio-controle);
+  transition: color var(--duracao) var(--curva);
+}
+.cabecalho__marca:hover { color: var(--verdete); }
+.cabecalho__selo { display: inline-flex; }
+
+.cabecalho__nav { display: flex; align-items: stretch; align-self: stretch; }
+.cabecalho__acoes { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
+
+/* Link do topo: texto calmo; a página atual ganha cor, peso e o marcador
+   verde com pontas em degrau, encostado na linha do cabeçalho. */
+.nav-link {
+  position: relative; display: inline-flex; align-items: center; gap: 0.4rem;
+  min-height: 40px; padding: 0 0.75rem; border-radius: var(--raio-controle);
+  color: var(--texto-2); text-decoration: none; white-space: nowrap;
+  font-size: var(--corpo-menor); font-weight: 600;
+  transition: color var(--duracao) var(--curva), background-color var(--duracao) var(--curva), transform var(--duracao-rapida) var(--curva);
+}
+.nav-link:hover { color: var(--texto); }
+.nav-link:focus-visible { outline: 2px solid var(--verdete); outline-offset: -2px; }
+
+.cabecalho__nav-principal .nav-link { min-height: 100%; border-radius: 0; }
+.cabecalho__nav-principal .nav-link::after {
+  content: ""; position: absolute; left: 0.75rem; right: 0.75rem; bottom: -1px; height: 3px;
+  background: var(--traco-forte, var(--traco)); opacity: 0; transform: scaleX(0.6);
+  clip-path: polygon(2px 0, calc(100% - 2px) 0, calc(100% - 2px) 1px, 100% 1px, 100% 100%, 0 100%, 0 1px, 2px 1px);
+  transition: opacity var(--duracao) var(--curva), transform var(--duracao) var(--curva);
+}
+.cabecalho__nav-principal .nav-link:hover::after { opacity: 1; transform: scaleX(1); }
+.cabecalho__nav-principal .nav-link[aria-current="page"] { color: var(--texto); font-weight: 700; }
+.cabecalho__nav-principal .nav-link[aria-current="page"]::after { background: var(--verdete); opacity: 1; transform: scaleX(1); }
+.cabecalho__nav-principal .nav-link:focus-visible { outline-offset: -6px; border-radius: var(--raio-controle); }
+
+.nav-link__icone { display: none; color: var(--texto-2); transition: color var(--duracao) var(--curva); }
+.nav-link[aria-current="page"] .nav-link__icone { color: var(--verdete); }
+.nav-link--ranking .nav-link__icone { color: #c9952f; }
+
+/* Menu: separado dos destinos por um traço fino; o ícone fica sempre. */
+.nav-link--menu { margin-left: 0.5rem; border: 0; background: none; font: inherit; font-size: var(--corpo-menor); font-weight: 650; color: var(--verdete); cursor: pointer; }
+.nav-link--menu::before { content: ""; position: absolute; left: -0.5rem; top: 50%; width: 1px; height: 1.25rem; background: var(--traco); transform: translateY(-50%); }
+.cabecalho__nav-principal .nav-link--menu:hover { color: var(--verdete-tinta); }
+.nav-link--menu[aria-expanded="true"] { color: var(--verdete-tinta); }
+
+/* Selo Beta: etiqueta reta em pixel (topo, Ranking, Revisão, atalhos). */
+.selo-beta {
+  display: inline-block; margin-left: 0.3rem; padding: 0.1rem 0.3rem 0.05rem;
+  border-radius: 2px; background: var(--ouro-veu); color: var(--ouro-texto);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ouro) 45%, transparent);
+  font-family: var(--fonte-pixel); font-size: 0.62rem; font-weight: 700; line-height: 1.2; letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+/* Planos: o único botão de ouro do topo, com contorno de tinta e degrau. */
+.nav-link--planos {
+  min-height: 34px; margin-right: 4px; padding: 0 0.85rem; border-radius: 0;
+  background: var(--px-ouro); color: var(--px-tinta); font-weight: 750;
+  box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra);
+}
+.nav-link--planos:hover { color: var(--px-tinta); background: #ffdf95; transform: translate(-1px, -1px); }
+.nav-link--planos:active { transform: translate(1px, 1px); box-shadow: 0 0 0 2px var(--px-tinta), 1px 1px 0 2px var(--px-ouro-sombra); }
+.nav-link--planos[aria-current="page"] { background: #ffdf95; }
+.nav-link--planos:focus-visible { outline: 2px solid var(--verdete); outline-offset: 5px; }
+
+/* Conta: avatar quadrado com cantos suaves; quem não entrou vê o contorno verde. */
+.nav-link--conta { min-height: 40px; padding: 0 0.85rem 0 0.35rem; border: 1px solid var(--traco); background: var(--superficie); color: var(--texto); }
+.nav-link--conta:hover { border-color: color-mix(in srgb, var(--verdete) 45%, var(--traco)); background: var(--superficie-2); }
+.nav-link--conta:not(.nav-link--logado) { padding-left: 0.7rem; color: var(--verdete); border-color: color-mix(in srgb, var(--verdete) 45%, var(--traco)); }
+.nav-link--conta[aria-current="page"] { border-color: var(--verdete); }
+.avatar-mini {
+  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto;
+  width: 1.75rem; height: 1.75rem; border-radius: 6px;
+  background: var(--verdete); color: var(--sobre-destaque);
+  font-family: var(--fonte-pixel-titulo); font-size: 1.15rem; font-weight: 400; line-height: 1;
+}
+
+.cabecalho__rotulo-conta { max-width: 10rem; overflow: hidden; text-overflow: ellipsis; }
+.cabecalho__tema { width: 40px; height: 40px; border-radius: var(--raio-controle); transition: background-color var(--duracao) var(--curva), color var(--duracao) var(--curva); }
+
+/* Esconde só para a vista: o nome continua no link para quem usa leitor de tela. */
+@media (max-width: 68rem) {
+  .cabecalho__rotulo-conta { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .nav-link--conta, .nav-link--conta:not(.nav-link--logado) { width: 40px; padding: 0; justify-content: center; }
+  .cabecalho__marca .marca-horizontal__texto { display: none; }
+  .cabecalho__nav-principal .nav-link { padding-inline: 0.6rem; }
+  .cabecalho__nav-principal .nav-link::after { left: 0.6rem; right: 0.6rem; }
+}
+@media (min-width: 75rem) {
+  .cabecalho__interno { gap: 1.5rem; }
+  .cabecalho__nav-principal { margin-inline: auto; }
+  .cabecalho__acoes { margin-left: 0; }
+}
+/* Ícones nos links só quando sobra espaço para eles com Planos e Entrar ao lado. */
+@media (min-width: 85rem) { .nav-link__icone { display: inline-flex; } }
+@media (max-width: 56rem) {
+  .nav-link--secundario { display: none; }
+  .cabecalho__interno { gap: 0.5rem; }
+  .cabecalho__nav-principal .nav-link { padding-inline: 0.5rem; }
+  .cabecalho__nav-principal .nav-link::after { left: 0.5rem; right: 0.5rem; }
+  .cabecalho__acoes { gap: 0.35rem; }
+}
+/* No celular os destinos descem para a barra de baixo; em cima ficam a marca
+   por extenso, Planos (para quem não assina), a conta e o tema. */
+@media (max-width: 40rem) {
+  .cabecalho__interno { min-height: 56px; }
+  .cabecalho__nav-principal { display: none; }
+  .cabecalho__marca .marca-horizontal__texto { display: inline; }
+  .cabecalho__acoes { gap: 0.4rem; }
+  .nav-link--planos { min-height: 30px; padding-inline: 0.65rem; font-size: 0.78rem; }
+}
+@media (max-width: 22.5rem) { .cabecalho__marca .marca-horizontal__texto { display: none; } }
+
+/* ---------- Barra de baixo (celular) ----------------------------------- */
+
+.navegacao-mobile { display: none; }
+@media (max-width: 40rem) {
+  /* Mesma altura de antes (3,9rem + área segura): outras páginas contam com ela. */
+  body { padding-bottom: calc(3.9rem + env(safe-area-inset-bottom)); }
+  .navegacao-mobile {
+    position: fixed; z-index: var(--z-cabecalho); left: 0; right: 0; bottom: 0;
+    display: flex;
+    padding: 0 max(0.25rem, env(safe-area-inset-right)) env(safe-area-inset-bottom) max(0.25rem, env(safe-area-inset-left));
+    border-top: 1px solid var(--traco);
+    background: color-mix(in srgb, var(--superficie) 97%, transparent);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    backdrop-filter: saturate(1.4) blur(12px);
+    box-shadow: 0 -8px 24px color-mix(in srgb, var(--verdete) 7%, transparent);
+  }
+  /* Itens com largura pelo conteúdo: os nomes longos (Flashcards,
+     Cronograma, Desempenho) recebem mais espaço e cabem inteiros. */
+  .navegacao-mobile > a, .navegacao-mobile__menu {
+    position: relative; flex: 1 1 auto; min-width: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+    height: 3.9rem; padding: 0 1px; border: 0; background: none;
+    color: var(--texto-2); text-decoration: none; font: inherit; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .navegacao-mobile__rotulo {
+    font-size: clamp(0.56rem, 2.72vw, 0.7rem); font-weight: 600; line-height: 1.1;
+    letter-spacing: -0.015em; white-space: nowrap;
+  }
+  .navegacao-mobile__icone {
+    position: relative; display: grid; place-items: center;
+    width: min(2.75rem, 100%); height: 1.85rem; border-radius: 999px;
+    transition: background-color var(--duracao) var(--curva), color var(--duracao) var(--curva), transform var(--duracao-rapida) var(--curva);
+  }
+  .navegacao-mobile > a:active .navegacao-mobile__icone, .navegacao-mobile__menu:active .navegacao-mobile__icone { transform: scale(0.94); }
+  .navegacao-mobile__ranking .navegacao-mobile__icone { color: #c9952f; }
+
+  /* Página atual: pílula verde atrás do ícone, nome em negrito e o marcador
+     reto da temporada na borda de cima. */
+  .navegacao-mobile [aria-current="page"], .navegacao-mobile__menu[aria-expanded="true"] { color: var(--verdete); }
+  .navegacao-mobile [aria-current="page"] .navegacao-mobile__rotulo { font-weight: 800; }
+  .navegacao-mobile [aria-current="page"] .navegacao-mobile__icone,
+  .navegacao-mobile__menu[aria-expanded="true"] .navegacao-mobile__icone { background: var(--verdete-veu); color: var(--verdete); }
+  .navegacao-mobile [aria-current="page"]::before {
+    content: ""; position: absolute; top: -1px; left: 50%; width: 2rem; height: 3px; transform: translateX(-50%);
+    background: var(--verdete);
+    clip-path: polygon(0 0, 100% 0, 100% 2px, calc(100% - 2px) 2px, calc(100% - 2px) 100%, 2px 100%, 2px 2px, 0 2px);
+  }
+  .navegacao-mobile a.navegacao-mobile__ranking[aria-current="page"] { color: #8a5f12; }
+  :root[data-tema="escuro"] .navegacao-mobile a.navegacao-mobile__ranking[aria-current="page"] { color: #e0b862; }
+  .navegacao-mobile__ranking[aria-current="page"] .navegacao-mobile__icone { color: #a8761a; }
+  .navegacao-mobile__ranking[aria-current="page"]::before { background: #c9952f; }
+}
+.navegacao-mobile > a:focus-visible, .navegacao-mobile__menu:focus-visible { outline: 2px solid var(--verdete); outline-offset: -3px; border-radius: var(--raio-controle); }
+/* Beta dos flashcards na barra: um pixel de ouro no canto do ícone. */
+.selo-beta--ponto {
+  position: absolute; top: 2px; right: calc(50% - 1rem); width: 0.5rem; height: 0.5rem; margin: 0; padding: 0;
+  border-radius: 0; background: var(--ouro); box-shadow: 0 0 0 2px var(--superficie);
+}
+
+/* ---------- Rodapé ----------------------------------------------------- */
+
+.rodape {
+  margin-top: 3rem; padding: 2.5rem 0 1.25rem;
+  background: var(--superficie-2); border-top: 1px solid var(--traco);
+  color: var(--texto-2); font-size: var(--corpo-menor);
+}
+
+/* Convite do Instagram em pixel art: placa escura de jogo com a câmera em pixels, como o relógio do gratuito. */
+.rodape-insta {
+  display: flex; align-items: center; gap: 1rem; margin: 6px 6px 2.5rem;
+  padding: 0.9rem 1.1rem; background: #1b1208; color: #f7ecd2; text-decoration: none;
+  box-shadow: 0 0 0 3px #f4cf7c, 0 0 0 6px #1b1208, 6px 6px 0 6px rgba(0, 0, 0, 0.25);
+  background-image: radial-gradient(rgba(244, 207, 124, 0.08) 1px, transparent 1px); background-size: 8px 8px;
+  transition: transform 0.12s steps(2, end);
+}
+.rodape-insta:hover { transform: translate(-2px, -2px); color: #f7ecd2; }
+.rodape-insta__icone { flex: 0 0 auto; display: block; image-rendering: pixelated; }
+.rodape-insta__texto { display: grid; gap: 0.2rem; min-width: 0; flex: 1 1 auto; }
+.rodape-insta__selo { justify-self: start; padding: 0.05rem 0.45rem; background: #c99a3b; color: #1b1208; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.rodape-insta__texto strong { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.6rem; line-height: 1; letter-spacing: 0.02em; color: #f4cf7c; text-shadow: 0 2px 0 #6b4a0c; }
+.rodape-insta__texto > span:last-child { color: #cdbb94; font-size: var(--corpo-menor); }
+.rodape-insta__botao {
+  display: inline-flex; align-items: center; gap: 0.3rem; flex: 0 0 auto;
+  padding: 0.55rem 1rem; background: #f4cf7c; color: #1b1208; font-family: var(--fonte-pixel); font-weight: 700; letter-spacing: 0.04em;
+  box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px #6b4a0c;
+}
+
+/* Marca à esquerda, três colunas curtas à direita. */
+.rodape-grade { display: grid; grid-template-columns: minmax(15rem, 1.3fr) repeat(3, minmax(0, 1fr)); gap: 2rem 2.5rem; }
+.rodape-marca { display: grid; align-content: start; justify-items: start; gap: 0.6rem; }
+.rodape-marca__logo { display: inline-flex; color: var(--texto); text-decoration: none; margin-bottom: 0.15rem; }
+.rodape-marca p { margin: 0; max-width: 32ch; color: var(--texto-2); line-height: 1.5; text-wrap: pretty; }
+.rodape-marca .rodape-marca__autor { color: var(--texto); font-weight: 600; }
+.rodape-marca__insta { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 32px; color: #a3276f; font-weight: 700; text-decoration: none; }
+.rodape-marca__insta:hover { text-decoration: underline; text-underline-offset: 3px; }
+:root[data-tema="escuro"] .rodape-marca__insta { color: #f07ab5; }
+
+.rodape-coluna { display: grid; align-content: start; gap: 0.7rem; min-width: 0; }
+.rodape-coluna__titulo { margin: 0; color: var(--texto); font-family: var(--fonte-marca); font-size: var(--corpo-menor); font-weight: 750; }
+.rodape-coluna__links { display: grid; gap: 0.15rem; }
+.rodape-coluna a {
+  width: fit-content; padding: 0.2rem 0; color: var(--texto-2); text-decoration: none;
+  transition: color var(--duracao) var(--curva);
+}
+.rodape-coluna a:hover { color: var(--verdete); text-decoration: underline; text-underline-offset: 3px; }
+.rodape-coluna a.rodape-coluna__destaque { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--verdete); font-weight: 750; }
+
+/* Linha de baixo: termos, condições e cookies, e o nome da marca. */
+.rodape-base {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1.5rem;
+  margin-top: 2.25rem; padding-top: 1rem; border-top: 1px solid var(--traco);
+  font-size: var(--meta);
+}
+.rodape-legal { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.rodape-legal a, .rodape-legal__botao {
+  display: inline-flex; align-items: center; min-height: 32px; padding: 0; border: 0; background: none;
+  color: var(--texto); font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+}
+.rodape-legal a:hover, .rodape-legal__botao:hover { color: var(--verdete); text-decoration: underline; text-underline-offset: 3px; }
+.rodape-base__frase { margin: 0 0 0 auto; color: var(--texto); font-weight: 600; }
+.rodape-base__nome { flex-basis: 100%; margin: 0; color: var(--texto-2); }
+.rodape a:focus-visible, .rodape button:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; border-radius: 4px; }
+
+@media (max-width: 52rem) {
+  .rodape-grade { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .rodape-marca { grid-column: 1 / -1; }
+}
+@media (max-width: 40rem) {
+  .rodape { margin-top: 2rem; padding-top: 1.75rem; }
+  .rodape-insta { flex-wrap: wrap; padding: 1rem; gap: 0.85rem; margin-bottom: 2rem; }
+  .rodape-insta__icone { width: 3rem; height: 3rem; }
+  .rodape-insta__texto { flex-basis: calc(100% - 4rem); }
+  .rodape-insta__botao { flex: 1 1 100%; justify-content: center; }
+  /* Cada grupo vira um bloco de duas colunas: metade da altura, alvo de toque de 40px. */
+  .rodape-grade { grid-template-columns: 1fr; gap: 1.5rem; }
+  .rodape-coluna { gap: 0.25rem; }
+  .rodape-coluna__links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; }
+  .rodape-coluna a { display: inline-flex; align-items: center; min-height: 40px; padding: 0; }
+  .rodape-base { display: grid; justify-content: stretch; margin-top: 1.5rem; }
+  .rodape-base__frase { margin: 0; }
+  .rodape-legal { gap: 0 1.25rem; }
+  .rodape-legal a, .rodape-legal__botao { min-height: 40px; }
+}
+
+/* O foco por teclado nunca fica escondido atrás do topo fixo nem da barra de baixo. */
+html { scroll-padding-top: calc(64px + 0.75rem); }
+@media (max-width: 40rem) { html { scroll-padding: calc(56px + 0.75rem) 0 calc(3.9rem + env(safe-area-inset-bottom) + 0.75rem); } }
+.navegacao-mobile > a, .navegacao-mobile__menu, .nav-link { touch-action: manipulation; }
+@media (prefers-reduced-motion: reduce) { .nav-link--planos:hover, .rodape-insta:hover { transform: none; } }

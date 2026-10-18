@@ -315,54 +315,6 @@
   .acesso__beneficios li span { width: 1.9rem; height: 1.9rem; border-radius: var(--raio-controle); }
 }
 
-/* ---------- Cabeçalho -------------------------------------------------- */
-
-.cabecalho {
-  background: color-mix(in srgb, var(--superficie) 84%, transparent);
-  backdrop-filter: saturate(1.5) blur(14px);
-  -webkit-backdrop-filter: saturate(1.5) blur(14px);
-  border-bottom: 1px solid color-mix(in srgb, var(--traco) 80%, transparent);
-}
-.nav-link__icone { display: none; }
-.nav-link--planos { min-height: 38px; padding-inline: .95rem; background: var(--superficie); color: var(--verdete); border: 1px solid color-mix(in srgb, var(--verdete) 38%, var(--traco)); font-weight: 700; }
-.nav-link--planos:hover, .nav-link--planos[aria-current="page"] { background: var(--verdete-veu); color: var(--verdete-tinta); border-color: var(--verdete); }
-.nav-link--planos:focus-visible { outline: 2px solid var(--verdete); outline-offset: 3px; }
-@media (max-width: 40rem) { .nav-link--planos { min-height: 34px; padding-inline: .7rem; font-size: .78rem; } }
-@media (min-width: 56rem) {
-  .cabecalho__interno { min-height: 68px; gap: 1rem; }
-  .cabecalho__nav-principal {
-    gap: 2px;
-    padding: 4px;
-    border-radius: 999px;
-    background: var(--superficie-2);
-    border: var(--borda);
-  }
-  .cabecalho__nav-principal .nav-link { min-height: 38px; padding: 0 .6rem; font-weight: 600; }
-  .cabecalho__nav-principal .nav-link:hover { background: color-mix(in srgb, var(--superficie) 70%, transparent); }
-  .cabecalho__nav-principal .nav-link[aria-current="page"] {
-    background: var(--superficie);
-    color: var(--verdete);
-    box-shadow: 0 1px 3px rgba(18, 24, 26, 0.1), 0 0 0 1px var(--traco);
-  }
-  :root[data-tema="escuro"] .cabecalho__nav-principal .nav-link[aria-current="page"] { background: var(--verdete-veu); box-shadow: none; }
-  .nav-link__icone { display: none; }
-  .nav-link[aria-current="page"] .nav-link__icone { opacity: 1; }
-  .nav-link--conta { min-height: 40px; padding: 0 0.9rem 0 0.4rem; border: var(--borda); background: var(--superficie); }
-  .nav-link--conta:not(.nav-link--logado) { padding-left: 0.8rem; background: var(--verdete); color: var(--sobre-destaque); border-color: var(--verdete); }
-  .nav-link--conta:not(.nav-link--logado):hover { background: var(--verdete-tinta); color: var(--sobre-destaque); }
-  .nav-link--logado { background: var(--superficie); }
-  .nav-link--logado .avatar-mini { width: 1.75rem; height: 1.75rem; font-size: 0.8rem; }
-}
-@media (min-width: 75rem) {
-  /* Com o botão Menu dentro da pílula, centralizar em posição absoluta a fazia
-     encostar em Planos; no fluxo, ela fica no meio do espaço que sobra. */
-  .cabecalho__interno { gap: 1.5rem; }
-  .cabecalho__nav-principal { margin-inline: auto; }
-  .cabecalho__acoes { margin-left: 0; }
-  .cabecalho__nav-principal .nav-link { padding-inline: .9rem; }
-  .nav-link__icone { display: inline-flex; opacity: .8; }
-}
-
 /* ---------- Início ----------------------------------------------------- */
 
 /* Cartões em geral: raio maior e sombra suave. */
@@ -623,60 +575,6 @@
 
 /* Período do desempenho. */
 
-/* ---------- Rodapé ----------------------------------------------------- */
-
-.rodape { margin-top: 3rem; padding: 2.25rem 0 1.5rem; background: var(--superficie); border-top: var(--borda); }
-/* Convite do Instagram em pixel art: placa escura de jogo com a câmera em pixels, como o relógio do gratuito. */
-.rodape-insta {
-  display: flex; align-items: center; gap: 1rem; margin: 6px;
-  padding: 0.9rem 1.1rem; background: #1b1208; color: #f7ecd2; text-decoration: none;
-  box-shadow: 0 0 0 3px #f4cf7c, 0 0 0 6px #1b1208, 6px 6px 0 6px rgba(0, 0, 0, 0.25);
-  background-image: radial-gradient(rgba(244, 207, 124, 0.08) 1px, transparent 1px); background-size: 8px 8px;
-  transition: transform 0.12s steps(2, end);
-}
-.rodape-insta:hover { transform: translate(-2px, -2px); color: #f7ecd2; }
-.rodape-insta__icone { flex: 0 0 auto; display: block; image-rendering: pixelated; }
-.rodape-insta__texto { display: grid; gap: 0.2rem; min-width: 0; flex: 1 1 auto; }
-.rodape-insta__selo { justify-self: start; padding: 0.05rem 0.45rem; background: #c99a3b; color: #1b1208; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
-.rodape-insta__texto strong { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.6rem; line-height: 1; letter-spacing: 0.02em; color: #f4cf7c; text-shadow: 0 2px 0 #6b4a0c; }
-.rodape-insta__texto > span:last-child { color: #cdbb94; font-size: var(--corpo-menor); }
-.rodape-insta__botao {
-  display: inline-flex; align-items: center; gap: 0.3rem; flex: 0 0 auto;
-  padding: 0.55rem 1rem; background: #f4cf7c; color: #1b1208; font-family: var(--fonte-pixel); font-weight: 700; letter-spacing: 0.04em;
-  box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px #6b4a0c;
-}
-@media (max-width: 40rem) {
-  .rodape-insta { flex-wrap: wrap; }
-  .rodape-insta__botao { flex: 1 1 100%; justify-content: center; }
-}
-
-.rodape-grade { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; margin-top: 2.25rem; }
-.rodape-marca__logo { display: inline-flex; color: var(--texto); text-decoration: none; }
-.rodape-marca p { margin: 0.75rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); max-width: 34ch; }
-.rodape-marca .rodape-marca__autor { color: var(--texto); font-weight: 600; }
-.rodape-marca .rodape-marca__nome { font-size: .85rem; color: var(--texto-2); }
-.rodape-coluna { display: grid; align-content: start; gap: 0.55rem; }
-.rodape-coluna__titulo { margin: 0 0 0.25rem; font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
-.rodape-coluna a { width: fit-content; color: var(--texto); text-decoration: none; font-size: var(--corpo-menor); }
-.rodape-coluna a:hover { color: var(--verdete); text-decoration: underline; }
-.rodape-coluna__botao { width: fit-content; padding: 0; border: 0; background: none; font: inherit; color: var(--texto); font-size: var(--corpo-menor); cursor: pointer; text-align: left; }
-.rodape-coluna__botao:hover { color: var(--verdete); text-decoration: underline; }
-.rodape-coluna__insta { display: inline-flex; align-items: center; gap: 0.35rem; color: #a3276f !important; font-weight: 700; }
-:root[data-tema="escuro"] .rodape-coluna__insta { color: #f07ab5 !important; }
-.rodape-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1rem; margin-top: 2rem; padding-top: 1.1rem; border-top: var(--borda); color: var(--texto-2); font-size: var(--meta); }
-
-@media (max-width: 46rem) {
-  .rodape { padding-top: 1.5rem; }
-  .rodape-insta { flex-wrap: wrap; padding: 1rem; gap: 0.85rem; }
-  .rodape-insta__icone { width: 3rem; height: 3rem; }
-  .rodape-insta__texto { flex-basis: calc(100% - 4rem); }
-  .rodape-insta__botao { width: 100%; justify-content: center; }
-  .rodape-grade { grid-template-columns: 1fr 1fr; gap: 1.5rem 1rem; }
-  .rodape-marca { grid-column: 1 / -1; }
-  /* Alvo de toque de 40px: com 24px era fácil acertar o link do lado. */
-  .rodape-coluna { gap: 0; }
-  .rodape-coluna a, .rodape-coluna__botao { display: inline-flex; align-items: center; min-height: 40px; }
-}
 
 /* ==========================================================================
    Planos: página de venda
@@ -806,28 +704,6 @@
 .convite__tempo { position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background: rgba(255, 227, 163, .7); transform-origin: left; animation: convite-tempo linear forwards; }
 @keyframes convite-tempo { from { transform: scaleX(1); } to { transform: scaleX(0); } }
 @media (prefers-reduced-motion: reduce) { .convite, .convite__balao, .convite__digitando i, .convite__tempo { animation: none; } .convite--saindo { transition: none; } }
-/* Até 40rem a barra de baixo já leva Início, Treinar, Revisão e Desempenho:
-   repetir links aqui em cima só deixava um "Treinar" solto ao lado do
-   símbolo. No lugar deles volta o nome da marca. Entre 40 e 56rem o
-   cabeçalho ainda mostra os links, então a marca fica só no símbolo e a
-   conta só no ícone. Sem isso o cabeçalho passava da largura da tela. */
-@media (max-width: 40rem) {
-  .cabecalho__nav-principal { display: none; }
-  .cabecalho__acoes { margin-left: auto; }
-  .cabecalho__rotulo-conta { display: none; }
-  .nav-link--conta { padding: 0; width: 38px; justify-content: center; }
-  .cabecalho__marca .marca-horizontal__texto { display: inline; }
-  .cabecalho__interno { gap: .75rem; }
-}
-@media (max-width: 22.5rem) { .cabecalho__marca .marca-horizontal__texto { display: none; } }
-@media (min-width: 40.01rem) and (max-width: 56rem) {
-  .cabecalho__marca .marca-horizontal__texto { display: none; }
-  .cabecalho__rotulo-conta { display: none; }
-  .nav-link--conta { padding: 0; width: 38px; justify-content: center; }
-  .cabecalho__interno { gap: .75rem; }
-  .nav-link { padding: 0 .55rem; }
-}
-@media (max-width: 27rem) { .nav-link--oculta-estreito { display: none; } }
 
 /* Resumo: o gratuito do dia terminou. */
 .dia-cumprido { display: flex; align-items: flex-start; gap: 1rem; padding: clamp(1rem, 3vw, 1.4rem); border-radius: var(--raio-grande); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie) 70%); border: 1px solid color-mix(in srgb, var(--verdete) 30%, var(--traco)); }
@@ -968,9 +844,6 @@
 .jc__caixa.pw .jc__fechar { background: rgba(255, 255, 255, 0.9); color: #0d2623; }
 .pw-oferta__cta, .pw-oferta__cta:visited { color: #fff !important; }
 .pw-oferta__preco b { font-variant-numeric: tabular-nums; }
-.rodape-grade { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
-.rodape-coluna a.rodape-coluna__destaque { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 800; color: var(--verdete); }
-@media (max-width: 52rem) { .rodape-grade { grid-template-columns: 1fr 1fr; } .rodape-marca { grid-column: 1 / -1; } }
 
 /* ---- Convite diário para compartilhar: missão em pixel art, no canto (computador) ou subindo de baixo (celular) ---- */
 .cd {
