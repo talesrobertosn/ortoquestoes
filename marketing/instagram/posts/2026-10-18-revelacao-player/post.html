@@ -207,6 +207,92 @@ section.story { height: 1920px; }
 .s3-botao .botao-p { font-size: 44px; padding: 16px 46px 16px 18px; }
 .s3-botao .botao-p i { width: 70px; height: 70px; }
 .s3-botao span { font: 600 27px Inter; color: rgba(255,255,255,.9); }
+
+/* ===== acabamento 18/10: bordas suaves e recorte limpo da radiografia ===== */
+.escura { background: radial-gradient(ellipse 75% 45% at 50% -10%, rgba(232,57,46,.36), transparent 70%), radial-gradient(ellipse 70% 40% at 50% 115%, rgba(232,57,46,.16), transparent 70%), radial-gradient(ellipse at 50% 50%, #140B09, #090505 80%); }
+.rotulo b::before { width: 10px; height: 10px; box-shadow: 0 0 18px 6px rgba(232,57,46,.55); }
+.filme { left: 40px; right: 40px; top: 128px; height: 640px; border-radius: 36px; background: linear-gradient(#1B1210, #140D0B); box-shadow: 0 40px 80px rgba(0,0,0,.65), inset 0 0 0 1.5px rgba(255,255,255,.05); }
+.filme::before, .filme::after { left: 18px; right: 18px; height: 56px; background: linear-gradient(#090505, #090505) 0 0 / 0 0, radial-gradient(closest-side, transparent 0, transparent 0); }
+.furos { position: absolute; left: 34px; right: 34px; height: 30px; display: flex; justify-content: space-between; }
+.furos i { width: 30px; height: 22px; border-radius: 7px; background: #070404; box-shadow: inset 0 2px 3px rgba(0,0,0,.8), 0 1px 0 rgba(255,255,255,.05); }
+.furos.cima { top: 22px; } .furos.baixo { bottom: 22px; }
+.borda-txt { left: 64px; right: 64px; font-size: 16px; letter-spacing: .24em; color: #D88A55; opacity: .8; }
+.borda-txt.cima { top: 60px; } .borda-txt.baixo { bottom: 60px; }
+.quadro { left: 64px; right: 64px; top: 92px; bottom: 92px; border-radius: 22px; box-shadow: 0 0 0 1.5px rgba(255,255,255,.06), 0 20px 40px rgba(0,0,0,.5); }
+.quadro img { width: 107%; left: -3%; top: -48px; }
+.vinheta { background: radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(0,0,0,.5)), linear-gradient(120deg, rgba(255,255,255,.05), transparent 30%); }
+.f1-texto { top: 812px; }
+.f1-texto h1 { font-size: 92px; }
+.f1-texto p { font-size: 28px; color: #D1C3BC; }
+.contato { top: 1062px; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.cx { padding: 20px 20px 22px; border-radius: 22px; background: linear-gradient(160deg, rgba(255,255,255,.07), rgba(255,255,255,.02)); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.08), 0 14px 30px rgba(0,0,0,.35); min-height: 152px; }
+.cx::after { display: none; }
+.cx small { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; letter-spacing: 0; font: 800 20px Jakarta; color: #fff; background: rgba(232,57,46,.85); }
+.cx span { margin-top: 14px; font: 600 25px/1.18 Inter; }
+.dica { bottom: 46px; }
+
+.bandeja { left: 40px; right: 40px; top: 124px; height: 760px; border-radius: 40px; background: linear-gradient(#2A100D, #160807); box-shadow: inset 0 0 0 8px rgba(70,24,19,.9), inset 0 30px 60px rgba(0,0,0,.55), 0 40px 80px rgba(0,0,0,.6); }
+.bandeja::before { inset: 8px; border-radius: 32px; }
+.foto { left: 64px; top: 64px; width: 600px; padding: 22px 22px 86px; border-radius: 14px; box-shadow: 0 30px 60px rgba(0,0,0,.55), 0 4px 10px rgba(0,0,0,.3); }
+.foto .img { height: 470px; border-radius: 8px; }
+.foto .img img { width: 116%; left: -3.4%; top: -32px; }
+.foto figcaption { bottom: 20px; font-size: 42px; }
+.notas { left: 700px; right: 62px; top: 90px; gap: 30px; }
+.nota { border-radius: 14px; padding: 20px 22px; box-shadow: 0 16px 30px rgba(0,0,0,.45), inset 0 -3px 0 rgba(0,0,0,.05); }
+.resposta { top: 924px; }
+.resposta i { border-width: 3px; box-shadow: 0 0 30px rgba(232,57,46,.3); }
+.outras { top: 1046px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; font: 400 22px/1.3 Inter; }
+.outras span { display: block; padding: 16px 18px 18px; border-radius: 18px; background: linear-gradient(160deg, rgba(255,255,255,.07), rgba(255,255,255,.02)); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.07); }
+.outras b { display: block; margin-bottom: 4px; font: 700 22px Inter; }
+.prova-c { bottom: 40px; border-top: 0; padding: 20px 24px; border-radius: 20px; background: rgba(232,57,46,.12); box-shadow: inset 0 0 0 1.5px rgba(232,57,46,.35); }
+
+.visor { border-radius: 34px; padding: 34px 38px 30px; background: linear-gradient(160deg, #1A0D0B, #0E0706); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.07), 0 0 80px rgba(232,57,46,.16), 0 30px 60px rgba(0,0,0,.5); }
+.botao-c { box-shadow: 0 0 60px rgba(232,57,46,.4), 0 16px 30px rgba(0,0,0,.4), inset 0 2px 0 rgba(255,255,255,.35); }
+
+/* f1: sem resquício das perfurações antigas; letras cabem no cartão */
+.filme::before, .filme::after { content: none; }
+.cx { padding: 20px 16px 22px; }
+.cx span { font-size: 23.5px; letter-spacing: -.01em; }
+/* f3: CTA num cartão suave, respiro equilibrado */
+.timer { top: 136px; }
+.cta-c { left: 40px; right: 40px; top: 968px; padding: 34px 40px; border-radius: 40px; background: linear-gradient(160deg, rgba(255,255,255,.07), rgba(255,255,255,.02)); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.08), 0 30px 60px rgba(0,0,0,.4); }
+.cta-c p { font-size: 28px; }
+.nota-tela { border-radius: 99px; padding: 8px 18px; background: rgba(255,255,255,.05); }
+.rodape { bottom: 52px; }
+
+/* ===== acabamento 18/10: stories ===== */
+.capa { border-radius: 44px; box-shadow: 0 50px 100px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.08); }
+.capa::after { content: ''; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.1); background: linear-gradient(135deg, rgba(255,255,255,.08), transparent 30%); }
+.p-topo .seta-baixo, .p-topo .pontos { width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,.1); display: grid; place-items: center; }
+.p-topo .seta-baixo { padding: 14px; }
+.p-topo .pontos { display: flex; justify-content: center; align-items: center; }
+.p-topo .pontos i { width: 7px; height: 7px; }
+.barra .trilho { height: 10px; border-radius: 99px; }
+.barra .trilho i { border-radius: 99px; background: linear-gradient(90deg, #FFD3B0, #fff); }
+.barra .trilho i::after { right: -13px; top: -8px; width: 26px; height: 26px; box-shadow: 0 0 0 6px rgba(255,255,255,.18), 0 4px 10px rgba(0,0,0,.4); }
+.coracao { width: 72px; height: 72px; padding: 16px; border-radius: 50%; background: rgba(255,255,255,.1); }
+.controles .play { box-shadow: 0 0 0 12px rgba(255,255,255,.1), 0 20px 50px rgba(0,0,0,.5); }
+
+.mini { padding: 24px; border-radius: 40px; grid-template-columns: 260px 1fr; gap: 30px; background: linear-gradient(160deg, rgba(255,255,255,.09), rgba(255,255,255,.03)); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.1), 0 30px 60px rgba(0,0,0,.3); }
+.mini .art { border-radius: 26px; }
+.mini h3 { font-size: 44px; }
+.mini p { font-size: 24px; line-height: 1.3; }
+.lista { top: 900px; }
+.lista small { display: block; margin: 0 0 16px 8px; }
+.faixa-l { grid-template-columns: 76px 1fr 40px; padding: 18px 26px 18px 18px; margin-bottom: 14px; border-bottom: 0; border-radius: 30px; background: rgba(255,255,255,.07); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.08); }
+.faixa-l b { width: 76px; height: 76px; border-radius: 22px; font-size: 30px; background: rgba(255,255,255,.14); }
+.faixa-l span { font-size: 42px; }
+.legenda-p { top: 1500px; display: flex; justify-content: center; }
+.legenda-p span { padding: 16px 30px; border-radius: 99px; font-size: 25px; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.1); }
+
+.letra-t .art { border-radius: 30px; }
+.letra { top: 466px; gap: 18px; }
+.creditos-p { top: 832px; padding: 30px 34px; border-radius: 36px; background: linear-gradient(160deg, rgba(255,255,255,.09), rgba(255,255,255,.03)); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.1), 0 30px 60px rgba(0,0,0,.25); }
+.s3-cta { top: 1064px; padding: 24px; border-radius: 40px; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.16), 0 30px 60px rgba(0,0,0,.3); }
+.s3-cta .cv { border-radius: 28px; }
+.s3-botao { top: 1366px; gap: 16px; }
+.s3-botao .botao-p { box-shadow: 0 0 0 10px rgba(255,178,122,.14), 0 24px 50px rgba(255,178,122,.3); }
+.s3-site { position: absolute; left: 0; right: 0; top: 1556px; text-align: center; font: 700 28px Jakarta; color: rgba(255,255,255,.85); }
 </style></head><body>
 <svg width="0" height="0" style="position:absolute"><defs>
 <symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
@@ -229,6 +315,7 @@ section.story { height: 1920px; }
 <section id="f1-negativo" class="escura">
   <div class="rotulo"><b>Câmara escura</b><span>TARO 2024 · 1/3</span></div>
   <div class="filme">
+    <div class="furos cima"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="furos baixo"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <div class="borda-txt cima"><span>OQ 400</span><span>▸ 18</span><span>TARO 2024</span><span>▸ 18A</span></div>
     <div class="quadro"><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt=""><div class="vinheta"></div></div>
     <div class="borda-txt baixo"><span>▸ 19</span><span>OMBRO · 15 ANOS</span><span>▸ 19A</span><span>OQ 400</span></div>
@@ -255,7 +342,7 @@ section.story { height: 1920px; }
     </div>
   </div>
   <div class="resposta"><i>B</i><h2>Condroblastoma.</h2></div>
-  <p class="outras"><b>Osteossarcoma:</b> agressivo e metafisário. <b>Osteoma osteoide:</b> nicho cortical pequeno. <b>TCG:</b> adulto jovem, com a fise fechada.</p>
+  <p class="outras"><span><b>Osteossarcoma:</b> agressivo e metafisário.</span><span><b>Osteoma osteoide:</b> nicho cortical pequeno.</span><span><b>TCG:</b> adulto jovem, com a fise fechada.</span></p>
   <p class="prova-c"><b>Para a prova</b>lesão lítica epifisária em adolescente com fise aberta: condroblastoma.</p>
 </section>
 
@@ -294,7 +381,7 @@ section.story { height: 1920px; }
     <div class="faixa-l"><b>C</b><span>DUCHENNE.</span><i></i></div>
     <div class="faixa-l"><b>D</b><span>ANDRE-THOMAS.</span><i></i></div>
   </div>
-  <p class="legenda-p">Guarde a sua letra. A resposta toca mais tarde, nos stories.</p>
+  <p class="legenda-p"><span>Guarde a sua letra. A resposta toca mais tarde, nos stories.</span></p>
 </section>
 
 <section id="s3-letra" class="story player">
@@ -311,7 +398,7 @@ section.story { height: 1920px; }
   <div class="s3-cta"><div class="cv"><b>84</b><span>dias até a prova</span></div>
     <div><small>Sua playlist até 10/01/2027</small><h3>Fique pronto. Prepare-se.</h3><p>Com o nosso <b>cronograma</b>, você faz o maior número de questões possível <b>sem se cansar tanto</b>. Nós planejamos tudo para você.</p></div></div>
   <div class="s3-botao"><div class="botao-p"><i><svg><use href="#play"/></svg></i>Treine grátis</div><span>Crie sua conta grátis agora mesmo</span></div>
-  <p style="position:absolute;left:0;right:0;top:1520px;text-align:center;font:700 28px Jakarta;color:rgba(255,255,255,.85);z-index:2">ortoquestoes.com.br</p>
+  <p class="s3-site">ortoquestoes.com.br</p>
 </section>
 </body>
 <script>
