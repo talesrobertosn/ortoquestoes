@@ -1,5 +1,5 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--pasta DIR]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--com-dados] [--roteiro ARQ.mjs] [--pasta DIR]
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
 // Sobe o site (vite) com um Supabase falso (conta assinante de exemplo) e grava celular (390) e computador (1440), dobra e página inteira.
 
@@ -100,6 +100,10 @@ const { mkdirSync } = await import('node:fs')
 mkdirSync(TELAS, { recursive: true })
 // --com-dados: 420 respostas de exemplo nos últimos 40 dias (65% de acerto), para desempenho, ranking e cronograma.
 const COM_DADOS = args.includes('--com-dados')
+// --roteiro ARQ.mjs: o arquivo exporta default async (pagina, foto) e fotografa cada passo de um fluxo
+// (foto('sufixo') salva a dobra como <prefixo>-<sufixo>-<cel|pc>.png).
+const iRoteiro = args.indexOf('--roteiro')
+const roteiro = iRoteiro >= 0 ? (await import(new URL(args[iRoteiro + 1], `file://${process.cwd()}/`).href)).default : null
 let respondidasExemplo = null
 if (COM_DADOS) {
   const { readFileSync } = await import('node:fs')
@@ -132,8 +136,11 @@ for (const [nome, vp, esc] of [['cel', { width: 390, height: 844 }, 2], ['pc', {
   const p = await contexto.newPage()
   p.on('pageerror', (e) => erros.push(`${nome}: ${e.message}`))
   await p.goto(`${BASE}#${ROTA}`); await p.waitForTimeout(4000); await p.addStyleTag({ content: ESCONDER }); await p.waitForTimeout(400)
-  await p.screenshot({ path: TELAS + `${PREF}-${nome}.png`, fullPage: true })
-  await p.screenshot({ path: TELAS + `${PREF}-${nome}-dobra.png` })
+  if (roteiro) await roteiro(p, (sufixo, opcoes = {}) => p.screenshot({ path: TELAS + `${PREF}-${sufixo}-${nome}.png`, ...opcoes }), nome)
+  else {
+    await p.screenshot({ path: TELAS + `${PREF}-${nome}.png`, fullPage: true })
+    await p.screenshot({ path: TELAS + `${PREF}-${nome}-dobra.png` })
+  }
   await contexto.close()
 }
 console.log(erros.length ? erros : 'sem erros', '→', TELAS + PREF + '-{cel,pc}[-dobra].png')
