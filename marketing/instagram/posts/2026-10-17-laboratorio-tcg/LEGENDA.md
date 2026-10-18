@@ -2,7 +2,7 @@
 
 Gerar: `node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-17-laboratorio-tcg/post.html`
 
-"Faltam 85 dias" vale para 17/10/2026 (prova teórica do TEOT e do TEPOT em 10/01/2027), e as telas do Cronograma (`marketing/kit/telas/t-*-cronograma-17-10.png`) foram capturadas no mesmo dia (mostram "Faltam 85 dias"). Se postar em outro dia, troque o número no `post.html` (procure "Faltam") e recapture as telas:
+"Faltam 85 dias" vale para 17/10/2026 (em 18/10 são 84) (prova teórica do TEOT e do TEPOT em 10/01/2027), e as telas do Cronograma (`marketing/kit/telas/t-*-cronograma-17-10.png`) foram capturadas no mesmo dia (mostram "Faltam 85 dias"). Se postar em outro dia, troque o número no `post.html` (procure "Faltam") e recapture as telas:
 
 ```
 npm run build && npx vite preview --port 4175   # em outro terminal

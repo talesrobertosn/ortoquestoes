@@ -330,3 +330,9 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 - **Créditos finais (stories de propaganda, 3 telas):** o que é grátis, o que vem com a assinatura (Cronograma primeiro) e a chamada "Treine grátis" com espaço para a figurinha de link. [Modelo](creditos-finais/modelo.html).
 
 [Guia de escolha, roteiro, acabamento e revisão](EMBARQUE-DNA-CREDITOS.md). Usar por cópia direta, porque os estilos não estão no sorteador.
+
+## Laboratório de patologia e Raspadinha da prova: aprovados em 18/10/2026
+- **Laboratório de patologia (feed, 3 slides):** a lâmina real na ocular do microscópio, o laudo com pinos dourados sobre a imagem da questão e o slide da prova com o Cronograma real. [Modelo](laboratorio/modelo.html).
+- **Raspadinha da prova (stories, 3 telas):** bilhete de raspadinha com a questão, a área raspada com a resposta e a chamada "Treine grátis" com o Cronograma. [Modelo](raspadinha/modelo.html).
+
+[Guia, roteiro, acabamento e revisão](LABORATORIO-E-RASPADINHA.md). Usar por cópia direta.

@@ -125,3 +125,6 @@ Pedido do Tales: antes de fazer qualquer post, ler este diretório de marketing 
 - stories com o que importa entre 250 px e 1580 px de altura; a figurinha de link só no story de propaganda, num espaço livre;
 - acentos, contador de slides, marca e site.
 Corrigir e gerar de novo até ficar impecável; só então enviar.
+
+## Laboratório de patologia e Raspadinha da prova (aprovados em 18/10/2026)
+Tales aprovou os temas do post de 17/10 para o arsenal: **Laboratório de patologia** (feed) e **Raspadinha da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).
