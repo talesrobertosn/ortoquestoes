@@ -7,7 +7,7 @@ import { AvaliarComentario } from './AvaliarComentario'
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
-import { ROTULO_SIMULADOS } from '../config'
+import { DESCRICAO_PROVA, ROTULO_SIMULADOS } from '../config'
 import { FiguraAmpliavel } from './FiguraAmpliavel'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
@@ -312,7 +312,7 @@ export function CartaoQuestao({
           <div className="qz-topo__info">
             {numero && total ? <h1 className="qz-numero">Questão {numero}<small> de {total}</small></h1> : <h1 className="qz-numero">Questão</h1>}
             {(questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
-            {questao.simulado && <span className="qz-origem qz-origem--simulado">{ROTULO_SIMULADOS}</span>}
+            {questao.simulado && <span className="qz-origem qz-origem--simulado" title={questao.prova && DESCRICAO_PROVA[questao.prova] ? `${ROTULO_SIMULADOS} no padrão do ${questao.prova}: ${DESCRICAO_PROVA[questao.prova]}` : undefined}>{ROTULO_SIMULADOS}</span>}
             {questao.gabaritoBibliografia && <span className="qz-origem" title="A banca não divulgou o gabarito desta prova. A resposta foi definida pelo Orto Questões a partir da bibliografia.">Gabarito não oficial</span>}
             {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}
           </div>
@@ -381,6 +381,10 @@ export function CartaoQuestao({
               {questao.dificuldade && <span className="qz-chip qz-chip--dificuldade">{ROTULO_DIFICULDADE[questao.dificuldade]}</span>}
             </>}
           </div>
+        )}
+
+        {questao.simulado && questao.prova && DESCRICAO_PROVA[questao.prova] && (
+          <p className="meta qz-descricao-prova">{ROTULO_SIMULADOS} no padrão do <strong>{questao.prova}</strong>, o {DESCRICAO_PROVA[questao.prova]}.</p>
         )}
 
         <div className="questao__enunciado"><TextoEmLinha texto={questao.enunciado} /></div>
@@ -619,7 +623,7 @@ export function CartaoQuestao({
         {questao.simulado && (
           <p className="meta qz-nota-simulado">
             <strong>{ROTULO_SIMULADOS}</strong>: questão autoral do site, feita por engenharia reversa do padrão
-            {questao.prova ? ` da prova ${questao.prova}` : ' das provas anteriores'} a partir da bibliografia de referência,
+            {questao.prova ? ` da prova ${questao.prova}${DESCRICAO_PROVA[questao.prova] ? ` (${DESCRICAO_PROVA[questao.prova]})` : ''}` : ' das provas anteriores'} a partir da bibliografia de referência,
             para o aprendizado. Não é questão oficial de prova nem foi elaborada, revisada ou endossada por instituição organizadora.
           </p>
         )}
