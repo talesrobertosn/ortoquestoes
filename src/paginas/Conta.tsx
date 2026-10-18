@@ -40,7 +40,9 @@ import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, type TipoAviso } from '../componentes/conta/PecasConta'
 import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
-import { fraseGratis } from '../config'
+import { fraseGratis, recurso } from '../config'
+import { guardarVitrine, sortearVitrine } from '../conta/vitrineAcesso'
+import { MascoteAcesso } from '../componentes/MascoteAcesso'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -102,6 +104,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
   )
+  // A vitrine muda a cada visita e ao trocar entre entrar e criar conta (ver conta/vitrineAcesso.ts).
+  const modoVitrine = modo === 'criar' ? 'criar' : 'entrar'
+  const [vitrine] = useState(() => ({ entrar: sortearVitrine('entrar'), criar: sortearVitrine('criar') }))
+  useEffect(() => { guardarVitrine(vitrine[modoVitrine]) }, [vitrine, modoVitrine])
   // Destino de quem chegou por um convite (planos, treinar, questão avulsa): vale
   // para entrar, para o cadastro e para a volta do Google. Ver conta/passagem.ts.
   const voltar = rotaVoltar(consulta?.get('voltar'))
@@ -472,15 +478,26 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Só e-mail e senha. Depois é confirmar o e-mail.' : modo === 'recuperar' ? 'Informe seu e-mail e enviaremos um link para criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
     return <div className="acesso">
       <aside className="acesso__vitrine">
+        <MascoteAcesso escala={1.5} />
         <p className="acesso__marca"><span>Orto</span> Questões</p>
-        <h1>{modo === 'criar' ? 'Sua preparação, organizada do primeiro ao último dia.' : 'Que bom ter você de volta.'}</h1>
-        <p className="acesso__lide">Questões das provas oficiais de TEOT, TARO, ENARE R4, TECOC (ombro e cotovelo) e outras provas, com comentário e referência.</p>
+        <h1 key={vitrine[modoVitrine].titulo}>{vitrine[modoVitrine].titulo}</h1>
+        <p className="acesso__lide">{vitrine[modoVitrine].lide}</p>
+        <ul className="acesso__provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
+        {/* Uma questão de exemplo, como ela aparece no site (TEOT 2024, via de Hardinge). */}
+        <figure className="acesso__amostra" key={vitrine[modoVitrine].amostra.enunciado} aria-label="Exemplo de questão comentada">
+          <p className="acesso__amostra-selo"><Icone nome="alvo" tamanho={13} /> {vitrine[modoVitrine].amostra.prova} · Já caiu</p>
+          <p className="acesso__amostra-enunciado">{vitrine[modoVitrine].amostra.enunciado}</p>
+          <ul>{vitrine[modoVitrine].ordem.map((i) => i === 0
+            ? <li key="c" className="acesso__amostra-certa"><Icone nome="certo" tamanho={14} /> {vitrine[modoVitrine].amostra.certa}</li>
+            : <li key={i}>{vitrine[modoVitrine].amostra.erradas[i - 1]}</li>)}</ul>
+          <figcaption><Icone nome="livro" tamanho={13} /> Comentário com o porquê de cada alternativa</figcaption>
+        </figure>
         <ul className="acesso__beneficios">
           <li><span><Icone nome="grafico" tamanho={18} /></span>Desempenho por tema e por prova</li>
           <li><span><Icone nome="calendario" tamanho={18} /></span>Revisão espaçada montada para você</li>
-          <li><span><Icone nome="estrela" tamanho={18} /></span>Favoritas e anotações nas questões</li>
           <li><span><Icone nome="raio" tamanho={18} /></span>Sequência de dias, ranking e emblemas</li>
         </ul>
+        <div className="acesso__emblemas" aria-hidden="true">{vitrine[modoVitrine].emblemas.map((e) => <img key={e} src={recurso(`emblemas/${e}.png`)} alt="" width={40} height={40} loading="lazy" />)}</div>
         <p className="acesso__rodape">Comece grátis, sem cartão de crédito. Entre de qualquer aparelho e continue de onde parou. {fraseGratis('rodape')}</p>
       </aside>
       <section className="acesso__cartao">
@@ -515,10 +532,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
         {!recuperacao && modo !== 'recuperar' && <BotaoGoogle />}
         <form className="empilha acesso__form" onSubmit={enviar} noValidate={criando}>
-          {!recuperacao && <label className="campo" data-campo="email"><span className="campo__rotulo">E-mail {obrig}</span><input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : inv('email'))} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" />{erroDe('email')}</label>}
+          {!recuperacao && <label className="campo" data-campo="email"><span className="campo__rotulo">E-mail {obrig}</span><span className="acesso__entrada"><Icone nome="correio" tamanho={17} /><input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : inv('email'))} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></span>{erroDe('email')}</label>}
           {(recuperacao || modo !== 'recuperar') && <div className="campo" data-campo="senha">
-            <span className="acesso__rotulo-senha"><label htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'} {obrig}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="acesso__link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
-            <span className="acesso__senha">
+            <span className="acesso__rotulo-senha"><label className="campo__rotulo" htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'} {obrig}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="acesso__link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
+            <span className="acesso__senha acesso__entrada">
+              <Icone nome="cadeado" tamanho={17} />
               <input id="acesso-senha" className={'entrada' + (erroForm?.codigo === 'invalid_credentials' ? ' entrada--invalida' : inv('senha'))} aria-invalid={erroForm?.codigo === 'invalid_credentials' || undefined} type={verSenha ? 'text' : 'password'} autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} />
               <button type="button" className="acesso__olho" onClick={() => definirVerSenha(v => !v)} aria-label={verSenha ? 'Ocultar senha' : 'Mostrar senha'} aria-pressed={verSenha}><Icone nome={verSenha ? 'olho-riscado' : 'olho'} tamanho={18} /></button>
             </span>
@@ -526,8 +544,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             {erroDe('senha')}
           </div>}
           {pedeConfirmacao && <div className="campo" data-campo="confirmacao">
-            <label htmlFor="acesso-confirmacao">Confirmar senha {obrig}</label>
-            <input id="acesso-confirmacao" className={`entrada${(confirmacao && !senhasConferem) || errosCadastro.confirmacao ? ' entrada--invalida' : ''}`} type={verSenha ? 'text' : 'password'} autoComplete="new-password" required value={confirmacao} onChange={e => definirConfirmacao(e.target.value)} aria-describedby="acesso-confere" />
+            <label className="campo__rotulo" htmlFor="acesso-confirmacao">Confirmar senha {obrig}</label>
+            <span className="acesso__entrada"><Icone nome="cadeado" tamanho={17} /><input id="acesso-confirmacao" className={`entrada${(confirmacao && !senhasConferem) || errosCadastro.confirmacao ? ' entrada--invalida' : ''}`} type={verSenha ? 'text' : 'password'} autoComplete="new-password" required value={confirmacao} onChange={e => definirConfirmacao(e.target.value)} aria-describedby="acesso-confere" /></span>
             {confirmacao && <span id="acesso-confere" className={`acesso__confere ${senhasConferem ? 'acesso__confere--ok' : 'acesso__confere--nao'}`} role="status"><Icone nome={senhasConferem ? 'certo' : 'errado'} tamanho={14} />{senhasConferem ? 'As senhas coincidem' : 'As senhas ainda não coincidem'}</span>}
           </div>}
           {!recuperacao && modo === 'criar' && <>
@@ -544,7 +562,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
               <button type="button" onClick={() => trocarModo('recuperar')}>Criar uma senha nova</button>
             </span>}
           </div>}
-          <button className="botao botao--principal acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
+          <button className="botao botao--principal acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}{!ocupado && <Icone nome="direita" tamanho={18} />}</button>
         </form>
         {modo === 'entrar' && !recuperacao && <p className="acesso__alternativa">Não recebeu a confirmação? <button type="button" className="acesso__link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
         {!recuperacao && modo === 'criar' && <p className="meta">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome). Você pode sair do ranking quando quiser.</p>}

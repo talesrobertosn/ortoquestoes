@@ -31,7 +31,7 @@ algo em poucos segundos e dar vontade de responder.
   comentadas.
 - Não citar nomes de cursos preparatórios; "SBQ" vira "Fellowship de Quadril".
 - Telas com dados de exemplo levam a nota "Tela ilustrativa".
-- **Stories sem figurinha:** nada de quiz, enquete, sim/não, caixa de pergunta nem link. O Instagram
+- **Stories sem figurinha** (exceção de 18/10/2026, pedido do Tales: o story de pergunta pode deixar um espaço para a enquete Sim/Não, marcado com cantos dourados, como em `posts/2026-10-18-kienbock-nivelamento`): fora isso, nada de quiz, enquete, sim/não, caixa de pergunta nem link. O Instagram
   entrega menos o story que tira o usuário do aplicativo. O story é uma imagem simples para baixar e
   postar; a pergunta vai escrita e a resposta sai no story seguinte.
 - **Sem desenho de anatomia:** nada de SVG ou CSS que imite osso, articulação, músculo, nervo ou vaso.

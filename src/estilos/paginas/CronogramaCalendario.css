@@ -203,3 +203,18 @@
 .cc--embutido .cc-dia--hoje > button { animation: cc-hoje-brilha 2.6s ease-in-out infinite; }
 @keyframes cc-hoje-brilha { 0%, 100% { box-shadow: inset 0 0 0 1px var(--cp-agora), 0 0 0 0 color-mix(in srgb, var(--cp-agora) 45%, transparent); } 50% { box-shadow: inset 0 0 0 1px var(--cp-agora), 0 0 0 6px color-mix(in srgb, var(--cp-agora) 0%, transparent), 0 0 18px color-mix(in srgb, var(--cp-agora) 55%, transparent); } }
 @media (prefers-reduced-motion: reduce) { .cc--embutido .cc-dia--hoje > button { animation: none; } }
+
+/* Calendário grande no topo do cronograma (17/10/2026): no computador as células crescem e mostram mais. */
+@media (min-width: 64rem) {
+  .cc--embutido .cc-corpo { grid-template-columns: minmax(0, 1fr) 22rem; padding: 1.1rem 1.5rem 1.5rem; }
+  .cc--embutido .cc-grade { gap: 8px; }
+  .cc--embutido .cc-dia--vazio, .cc--embutido .cc-dia > button { min-height: 8.2rem; }
+  .cc--embutido .cc-dia > button { padding: 0.55rem 0.6rem 0.8rem; }
+  .cc--embutido .cc-dia__area { font-size: 0.78rem; }
+  .cc--embutido .cc-dia__rodape em { font-size: 0.8rem; }
+  .cc--embutido .cc-topo h2, .cc--embutido .cc-topo__mes { font-size: clamp(1.8rem, 2.6vw, 2.4rem); }
+}
+/* No celular o mês cabe inteiro ("Outubro 2026"), sem reticências. */
+@media (max-width: 40rem) {
+  .cc--embutido .cc-topo h2 { font-size: 1.45rem; white-space: normal; overflow: visible; }
+}

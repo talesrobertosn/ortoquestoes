@@ -1,6 +1,7 @@
 import { conquistaAtual } from '../estado/conquistas'
 import { gravar, ler } from '../estado/armazenamento'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
+import { avisarPrimeirasDez } from './emailsAutomaticos'
 
 /**
  * E-mail de parabéns ao atingir um emblema de volume. O site só avisa o
@@ -11,6 +12,8 @@ const CHAVE = 'emails:marco-avisado'
 let ultimaTentativa = 0
 
 export async function verificarMarcoEmail(totalRespondidas: number) {
+  // Primeiras 10 questões (17/10/2026): mesma hora, mesma trava de "uma vez" (emailsAutomaticos).
+  void avisarPrimeirasDez(totalRespondidas).catch(() => undefined)
   const marco = conquistaAtual(totalRespondidas)
   if (!marco || ler<number>(CHAVE, 0) >= marco.minimo) return
   // Uma tentativa a cada 5 minutos no máximo: a sincronização avisa várias vezes seguidas.
@@ -19,8 +22,9 @@ export async function verificarMarcoEmail(totalRespondidas: number) {
   try {
     const { resultado } = await chamarFuncao<{ resultado: string }>('enviar-email', { acao: 'marco' })
     // "ainda_nao": o servidor ainda não recebeu as respostas; "falhou": o envio não saiu
-    // (Resend fora ou mal configurado). Nos dois casos tenta de novo mais tarde.
-    if (resultado !== 'ainda_nao' && resultado !== 'falhou') gravar(CHAVE, marco.minimo)
+    // (Resend fora ou mal configurado); "adiado": a pessoa recebeu outro e-mail há pouco
+    // (teto de cadência). Nos três casos tenta de novo mais tarde.
+    if (resultado !== 'ainda_nao' && resultado !== 'falhou' && resultado !== 'adiado') gravar(CHAVE, marco.minimo)
   } catch { /* função não publicada ou sem rede: tenta mais tarde */ }
 }
 

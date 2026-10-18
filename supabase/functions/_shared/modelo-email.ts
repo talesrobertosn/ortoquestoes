@@ -5,9 +5,22 @@
  * motor das cartas do painel, com várias versões por situação; a semente é fixa
  * por pessoa e envio, para uma nova tentativa sair igual.
  *
+ * Reescrito em 17/10/2026 (docs/emails/PLANO.md): tudo na voz nova; o lembrete de
+ * pausa cita a área que a pessoa estava estudando e a Revisão; o Pix sai sem
+ * urgência; o relatório conta uma história; o aviso de relato resolvido cita a
+ * alternativa; e entram seis automáticos novos, disparados por acontecimento
+ * (`emailAutomatico`): boas-vindas no dia da confirmação, primeiras 10 questões,
+ * voltou depois de 10 dias, cronograma pronto, pagamento aprovado e obrigado pelo
+ * tempo de assinatura.
+ *
+ * Parte 31 (18/10/2026): as nove campanhas diárias (assinou e não montou o cronograma,
+ * assinante parado há 7 dias, resultado do Simulado Nacional, véspera e depois da prova,
+ * aniversário, um ano de Orto Questões, indicação que deu certo e resumo novo do tema) saem
+ * pela mesma `emailAutomatico`, com os dados que o banco manda em `campanha`.
+ *
  * Só funções puras (sem Deno nem rede): a Edge Function e os testes usam o mesmo arquivo.
  */
-import { escolherTipo, gerarCarta, primeiroNome, tipoCombina, questoes, renderizarCarta, sementeDe, type Carta, type DadosRelatorioCarta, type EnvioAnterior, type PerfilCarta } from './cartas.ts'
+import { MARCOS_CARTA, TIPOS_AUTOMATICOS_NOVOS, TIPOS_CAMPANHAS_DIARIAS, TIPOS_TRANSACIONAIS, cadenciaBloqueia, escolherTipo, gerarCarta, primeiroNome, tipoCombina, questoes, renderizarCarta, sementeDe, type Carta, type DadosCampanha, type DadosRelatorioCarta, type EnvioAnterior, type OpcoesCarta, type PerfilCarta, type TipoCarta } from './cartas.ts'
 
 export interface Marco {
   minimo: number
@@ -32,6 +45,12 @@ export function marcoAtingido(total: number): Marco | null {
   for (const m of MARCOS) if (total >= m.minimo) atual = m
   return atual
 }
+/** O marco que ganha carta (100, 250, 500, 1.000, 2.000), se a pessoa já chegou a algum. */
+export function marcoComCarta(total: number): Marco | null {
+  let atual: Marco | null = null
+  for (const m of MARCOS) if (total >= m.minimo && MARCOS_CARTA.includes(m.minimo)) atual = m
+  return atual
+}
 export function proximoMarco(total: number): Marco | null {
   return MARCOS.find((m) => total < m.minimo) ?? null
 }
@@ -52,6 +71,7 @@ export interface DadosMarco {
   /** E-mails anteriores da pessoa, para não repetir a versão. */
   anteriores?: readonly EnvioAnterior[]
   semente?: number
+  hoje?: Date
 }
 
 /** O e-mail pronto, com o modelo e a versão para o histórico. */
@@ -70,10 +90,10 @@ function perfilDe(d: { nome: string | null; respondidas: number; acertos?: numbe
   }
 }
 
-/** Parabéns automático ao passar de um marco (50, 100, 250...). */
+/** Parabéns automático ao passar de um marco (100, 250, 500, 1.000, 2.000). */
 export function emailMarco(d: DadosMarco): EmailPronto {
   const carta = gerarCarta(perfilDe(d, d.perfil), {
-    tipo: 'marco', marco: d.marco.minimo, anteriores: d.anteriores, site: d.site,
+    tipo: 'marco', marco: d.marco.minimo, anteriores: d.anteriores, site: d.site, hoje: d.hoje,
     semente: d.semente ?? sementeDe(`marco:${d.marco.minimo}:${d.nome ?? ''}:${d.respondidas}`),
   })
   return pronto(carta, d.linkDescadastro, 'Se preferir não receber mais os e-mails de conquistas')
@@ -86,10 +106,10 @@ export function emailMarco(d: DadosMarco): EmailPronto {
 export function emailCarta(d: DadosMarco): EmailPronto {
   const nome = primeiroNome(d.nome)
   const recado = d.recado?.trim()
-  const padrao = d.respondidas > 0
-    ? `Passando para te dar parabéns: você já passou de ${questoes(d.respondidas)} no Orto Questões, e fiquei muito feliz de ver. Constância é o que mais faz diferença na prova, e você está construindo a sua com muita dedicação.`
+  const padrao = d.respondidas >= 10
+    ? `Passando para te dar parabéns: você já passou de ${questoes(d.respondidas)} no Orto Questões, e fiquei muito feliz de ver. Constância é o que mais faz diferença na prova, e você está construindo a sua nos intervalos que a rotina deixa.`
     : 'Passando para dar um oi e dizer que fico feliz de ter você por aqui. Sua conta está pronta, e quando quiser começar, cinco questões já bastam para pegar o jeito.'
-  const corpo = [nome ? `Oi, ${nome}, tudo bem?` : 'Oi, tudo bem?', recado || padrao].join('\n\n')
+  const corpo = [nome ? `${nome}, tudo bem?` : 'Oi, tudo bem?', recado || padrao, 'Se eu puder ajudar em qualquer coisa, é só responder este e-mail.', 'P.S.: se responder, sou eu que leio.'].join('\n\n')
   const e = renderizarCarta({ assunto: nome ? `${nome}, um recado sobre o seu estudo` : 'Um recado sobre o seu estudo', corpo })
   return { ...e, modelo: null, versao: null }
 }
@@ -178,14 +198,13 @@ export interface DadosLembrete {
   diasRestantes?: number
   fimEm?: string | null
   plano?: string | null
-  /** Renovação do Pix: desempenho da pessoa, para o quadro de números. */
+  /** Renovação do Pix: desempenho da pessoa, para "nada se perde". */
   acertos?: number
   respondidas7d?: number
 }
 
-
 /** Lembretes (reengajamento e renovação do Pix), em forma de carta. */
-export function emailLembrete(d: DadosLembrete & { perfil?: PerfilCarta | null; anteriores?: readonly EnvioAnterior[]; semente?: number; referencia?: string }): EmailPronto {
+export function emailLembrete(d: DadosLembrete & { perfil?: PerfilCarta | null; anteriores?: readonly EnvioAnterior[]; semente?: number; referencia?: string; hoje?: Date }): EmailPronto {
   const tipo = ({ nunca: 'nunca_comecou', tres_dias: 'pausa', sete_dias: 'sumiu', renovacao_pix: 'pix_3_dias', renovacao_pix_hoje: 'pix_hoje' } as const)[d.campanha]
   const perfil = perfilDe({ nome: d.nome, respondidas: d.respondidas, acertos: d.acertos, respondidas7d: d.respondidas7d,
     erros: d.acertos !== undefined && d.respondidas > 0 ? Math.max(0, d.respondidas - d.acertos) : undefined }, d.perfil)
@@ -193,7 +212,7 @@ export function emailLembrete(d: DadosLembrete & { perfil?: PerfilCarta | null; 
   if (d.campanha === 'tres_dias' || d.campanha === 'sete_dias') perfil.diasParado = Math.max(1, d.diasFora)
   const carta = gerarCarta(perfil, {
     // Se a pessoa mudou de situação desde que a lista foi montada, vale a carta da situação nova.
-    tipo: tipoCombina(tipo, perfil) ? tipo : escolherTipo(perfil, d.anteriores).tipo, anteriores: d.anteriores, site: d.site,
+    tipo: tipoCombina(tipo, perfil) ? tipo : escolherTipo(perfil, d.anteriores, d.hoje).tipo, anteriores: d.anteriores, site: d.site, hoje: d.hoje,
     semente: d.semente ?? sementeDe(`${d.campanha}:${d.referencia ?? ''}:${d.nome ?? ''}`),
     pix: { diasRestantes: d.diasRestantes ?? 3, fimEm: d.fimEm ?? null, plano: d.plano ?? null },
   })
@@ -201,7 +220,7 @@ export function emailLembrete(d: DadosLembrete & { perfil?: PerfilCarta | null; 
 }
 
 /** Resumo quinzenal (todos que estudaram) ou relatório do mês (assinantes), em forma de carta. */
-export function emailRelatorio(d: DadosRelatorio & { perfil?: PerfilCarta | null; anteriores?: readonly EnvioAnterior[]; semente?: number }): EmailPronto {
+export function emailRelatorio(d: DadosRelatorio & { perfil?: PerfilCarta | null; anteriores?: readonly EnvioAnterior[]; semente?: number; hoje?: Date }): EmailPronto {
   const a = analisarMes(d)
   const quinzena = nomeQuinzena(d.mes)
   const mes = nomeMes(d.mes).split(' ')[0]
@@ -218,9 +237,84 @@ export function emailRelatorio(d: DadosRelatorio & { perfil?: PerfilCarta | null
     simulado: d.simulado,
   }
   const carta = gerarCarta(perfilDe({ nome: d.nome, respondidas: Number(d.total_acumulado) || 0 }, d.perfil), {
-    tipo: 'relatorio', relatorio, anteriores: d.anteriores, site: d.site, semente: d.semente ?? sementeDe(`relatorio:${d.mes}:${d.nome ?? ''}`),
+    tipo: 'relatorio', relatorio, anteriores: d.anteriores, site: d.site, hoje: d.hoje, semente: d.semente ?? sementeDe(`relatorio:${d.mes}:${d.nome ?? ''}`),
   })
   return pronto(carta, d.linkDescadastro, 'Se preferir não receber mais os resumos de estudo')
+}
+
+// ---------------------------------------------------------------------------
+// Automáticos novos (17/10/2026), disparados por um acontecimento
+// ---------------------------------------------------------------------------
+
+export type TipoCampanhaDiaria = 'assinou_sem_cronograma' | 'assinante_parado_7' | 'simulado_resultado' | 'vespera_prova' | 'depois_prova'
+  | 'aniversario' | 'um_ano' | 'indicacao_deu_certo' | 'resumo_do_tema'
+export type TipoAutomatico = 'boas_vindas_dia0' | 'primeiras_10' | 'voltou' | 'cronograma_pronto' | 'pagamento_aprovado' | 'obrigado_tempo' | TipoCampanhaDiaria
+/** Os seis automáticos por acontecimento (17/10/2026) e as nove campanhas diárias (parte 31). */
+export const TIPOS_AUTOMATICOS: readonly TipoAutomatico[] = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS] as readonly TipoAutomatico[]
+export const CAMPANHAS_DIARIAS: readonly TipoCampanhaDiaria[] = TIPOS_CAMPANHAS_DIARIAS as readonly TipoCampanhaDiaria[]
+/** Campanha diária: só o agendador (x-segredo) ou um administrador pedem; a própria pessoa, não. */
+export const ehCampanhaDiaria = (t?: string | null): t is TipoCampanhaDiaria => (CAMPANHAS_DIARIAS as readonly string[]).includes(t ?? '')
+export const tipoAutomaticoValido = (t?: string | null): TipoAutomatico | null => (TIPOS_AUTOMATICOS as readonly string[]).includes(t ?? '') ? t as TipoAutomatico : null
+/** Transacional: sai mesmo dentro do teto de cadência e mesmo para quem desligou as cartas. */
+export const ehTransacional = (t: TipoCarta | string) => TIPOS_TRANSACIONAIS.includes(t)
+
+export interface DadosAutomatico {
+  tipo: TipoAutomatico
+  nome: string | null
+  respondidas: number
+  site: string
+  /** Link de descadastro (os transacionais saem sem). */
+  linkDescadastro?: string | null
+  perfil?: PerfilCarta | null
+  anteriores?: readonly EnvioAnterior[]
+  semente?: number
+  hoje?: Date
+  /** "voltou": dias fora. */
+  diasFora?: number | null
+  /** "cronograma_pronto": dias para a prova e a prova escolhida. */
+  diasParaProva?: number | null
+  provaCronograma?: string | null
+  /** "pagamento_aprovado": plano, período e meio (nunca o valor). */
+  pagamento?: OpcoesCarta['pagamento']
+  /** "obrigado_tempo": reembolso ou cancelamento, e até quando vale o acesso. */
+  encerramento?: OpcoesCarta['encerramento']
+  /** Referência do acontecimento (id do pagamento, data do login) para a semente ficar estável. */
+  referencia?: string | null
+  /** Campanhas diárias (parte 31): resultado do simulado, anos de conta, resumo novo, cortesia da indicação. */
+  campanha?: DadosCampanha | null
+}
+
+/**
+ * Um dos automáticos (os seis por acontecimento e as nove campanhas diárias). Quem chama (a Edge Function) garante a idempotência
+ * por pessoa e tipo (ou pessoa e referência) com a tabela de envios, e respeita a cadência
+ * para os que não são transacionais (`cadenciaBloqueia`).
+ */
+export function emailAutomatico(d: DadosAutomatico): EmailPronto {
+  const perfil = perfilDe({ nome: d.nome, respondidas: d.respondidas }, d.perfil)
+  if (d.tipo === 'voltou') perfil.diasParado = Math.max(10, Math.round(Number(d.diasFora) || 10))
+  // Assinante parado: a campanha só sai a partir de 7 dias sem responder.
+  if (d.tipo === 'assinante_parado_7') perfil.diasParado = Math.max(7, Math.round(Number(d.diasFora ?? perfil.diasParado) || 7))
+  // Véspera e depois da prova: a prova que a pessoa pôs no cronograma ("o TEOT").
+  if ((d.tipo === 'vespera_prova' || d.tipo === 'depois_prova') && d.provaCronograma) perfil.provaCronograma = d.provaCronograma
+  if (d.tipo === 'vespera_prova') perfil.diasParaProva = 1
+  if (d.tipo === 'cronograma_pronto') {
+    if (d.diasParaProva) perfil.diasParaProva = d.diasParaProva
+    if (d.provaCronograma) perfil.provaCronograma = d.provaCronograma
+  }
+  const carta = gerarCarta(perfil, {
+    tipo: d.tipo, anteriores: d.anteriores, site: d.site, hoje: d.hoje,
+    semente: d.semente ?? sementeDe(`${d.tipo}:${d.referencia ?? ''}:${d.nome ?? ''}:${d.respondidas}`),
+    pagamento: d.pagamento, encerramento: d.encerramento, campanha: d.campanha ?? undefined,
+    // Transacionais nunca são barrados; os demais respeitam a cadência (gerarCarta recusa).
+    ignorarCadencia: ehTransacional(d.tipo),
+  })
+  const descadastro = ehTransacional(d.tipo) ? null : d.linkDescadastro ?? null
+  return pronto(carta, descadastro, 'Se preferir não receber mais estas cartas')
+}
+
+/** Motivo para não mandar um automático agora (cadência), ou null. Transacionais nunca são barrados. */
+export function automaticoBloqueado(tipo: TipoAutomatico, anteriores: readonly EnvioAnterior[], hoje = new Date()): string | null {
+  return cadenciaBloqueia(anteriores, hoje, tipo)
 }
 
 export interface DadosRelatoResolvido {
@@ -231,6 +325,8 @@ export interface DadosRelatoResolvido {
   /** O que foi feito, escrito pelo administrador (opcional). */
   nota: string | null
   site: string
+  /** A alternativa a que o relato se referia ("C"), quando se sabe; senão o motor tenta achar no texto. */
+  alternativa?: string | null
 }
 
 /** Rótulo da questão pelo id: "Trauma adulto, questão 44". */
@@ -239,10 +335,19 @@ export function rotuloQuestao(id: string): string {
   return prefixo && TEMAS[prefixo] ? `${TEMAS[prefixo]}, questão ${Number(numero)}` : id
 }
 
+/** A letra da alternativa citada no relato ou na nota ("letra C", "alternativa B", "opção D"), se houver. */
+export function alternativaCitada(...textos: Array<string | null | undefined>): string | null {
+  for (const t of textos) {
+    const m = (t ?? '').match(/\b(?:letra|alternativa|op[çc][aã]o|gabarito)\s+(?:é\s+|era\s+|a\s+|para\s+(?:a\s+)?)?["“']?([A-Ea-e])\b["”']?/)
+    if (m) return m[1].toUpperCase()
+  }
+  return null
+}
 
 /**
  * Aviso de que um relato de erro foi resolvido. Uma resposta a quem escreveu,
- * não uma campanha: sem link de descadastro. Tom: agradecer e reconhecer (docs/emails/TOM.md).
+ * não uma campanha: sem link de descadastro, fora do teto de cadência. Cita a
+ * alternativa e o que mudou no comentário, quando se sabe. Tom: agradecer e reconhecer.
  */
 export function emailRelatoResolvido(d: DadosRelatoResolvido): { assunto: string; html: string; texto: string } {
   const nome = primeiroNome(d.nome)
@@ -251,12 +356,17 @@ export function emailRelatoResolvido(d: DadosRelatoResolvido): { assunto: string
   const relato = d.relato.trim().replace(/\s+/g, ' ')
   const trecho = relato.length > 240 ? relato.slice(0, 240).replace(/\s\S*$/, '') + '…' : relato
   const nota = d.nota?.trim() || null
+  const alternativa = (d.alternativa ?? '').trim().toUpperCase().match(/^[A-E]$/) ? d.alternativa!.trim().toUpperCase() : alternativaCitada(nota, relato)
   const corpo = [
-    nome ? `Oi, ${nome}, tudo bem?` : 'Oi, tudo bem?',
+    nome ? `${nome}, tudo bem?` : 'Oi, tudo bem?',
     `Muito obrigado por ter avisado do problema em ${rotulo}: "${trecho}"`,
-    `Conferi com cuidado, e ela já está corrigida no site.${nota ? ` O que foi feito: ${nota}` : ''}`,
-    'Gente atenta como você deixa o banco de questões melhor para todo mundo que está estudando. Fiquei muito grato.',
+    alternativa
+      ? `Conferi com cuidado, e você tinha razão sobre a alternativa ${alternativa}. A questão já está corrigida no site${nota ? `, e o que mudou foi isto: ${nota}` : ', e o comentário foi ajustado para explicar o ponto'}.`
+      : `Conferi com cuidado, e a questão já está corrigida no site.${nota ? ` O que mudou: ${nota}` : ' O comentário foi ajustado para deixar o ponto claro.'}`,
+    'Gente atenta como você deixa o banco de questões melhor para todo mundo que está estudando com pouco tempo e precisa confiar no que lê. Fiquei muito grato.',
     `Se quiser ver como ficou: ${link.replace(/^https?:\/\//, '')}`,
+    'P.S.: se encontrar outra coisa estranha, o botão de relatar continua lá. Eu leio cada relato.',
   ].join('\n\n')
-  return renderizarCarta({ assunto: `Obrigado pelo aviso sobre ${rotulo}`, corpo })
+  const assunto = nome ? `${nome}, obrigado pelo aviso sobre a questão` : `Obrigado pelo aviso sobre ${rotulo}`
+  return renderizarCarta({ assunto: assunto.length <= 55 ? assunto : 'Obrigado pelo aviso sobre a questão', corpo })
 }

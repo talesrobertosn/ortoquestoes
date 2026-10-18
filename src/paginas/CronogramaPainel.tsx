@@ -485,8 +485,8 @@ export function Recolhido({ titulo, icone, children, aberto = false }: { titulo:
 export function TourCronograma({ aoFechar }: { aoFechar: () => void }) {
   const passos = [
     { titulo: 'Onde você está', texto: 'Quantos dias faltam, em que fase do plano você está e o que vem depois dela.' },
-    { titulo: 'Hoje', texto: 'A lista do dia, com o tempo de cada parte e um botão só, que diz exatamente o que faz.' },
     { titulo: 'O calendário', texto: 'Logo abaixo, o plano inteiro mês a mês até a prova. Cada cor é uma área; toque num dia para ver o que estudar nele e, nos próximos dias, adiantar.' },
+    { titulo: 'Hoje', texto: 'Depois do calendário, a lista do dia, com o tempo de cada parte e um botão só, que diz exatamente o que faz.' },
   ]
   return (
     <section className="cp-tour" aria-labelledby="cp-tour-titulo">

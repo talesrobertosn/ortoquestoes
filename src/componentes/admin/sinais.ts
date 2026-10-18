@@ -55,7 +55,7 @@ export function indexarSinais(lista: SinalUsuario[] | null | undefined): Map<str
 }
 
 /**
- * Cor do cartão da pessoa no painel (Pessoas › Usuários e "Ao vivo"): administrador (azul),
+ * Cor do cartão da pessoa no painel (Pessoas › Usuários e Agora › Online agora): administrador (azul),
  * assinante (verde), quem não assina mas abriu a página de planos nos últimos 30 dias (amarelo)
  * e o resto (branco). Administrador vem pelo papel da conta, nunca por nome.
  */

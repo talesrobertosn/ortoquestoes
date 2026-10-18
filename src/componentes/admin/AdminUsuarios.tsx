@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Icone } from '../Icone'
-import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corresponde, data, haQuanto, haQuantoTempo, normalizar, rotuloPagina, somarAcertos } from './formatos'
+import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corDe, corresponde, data, haQuanto, haQuantoTempo, iniciais, normalizar, rotuloPagina, somarAcertos } from './formatos'
 import { href } from '../../util/rotas'
 import { AdminFichaUsuario } from './AdminFichaUsuario'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
@@ -95,7 +95,7 @@ export const ativoHoje = (u: LinhaUsuario) => !!u.ultima_atividade && diaSP(u.ul
 /** Cadastro nos últimos 14 dias. */
 const novo = (u: LinhaUsuario) => Date.now() - new Date(u.criado_em).getTime() < 14 * 86_400_000
 /** Chegou há pelo menos 2 dias, nos últimos 30, fez menos de 10 questões e não estudou nos últimos 2 dias: pede um empurrão. */
-const novoParado = (u: LinhaUsuario) => {
+export const novoParado = (u: LinhaUsuario) => {
   const idade = Date.now() - new Date(u.criado_em).getTime()
   const parado = !u.ultima_atividade || Date.now() - new Date(u.ultima_atividade).getTime() > 2 * 86_400_000
   return idade > 2 * 86_400_000 && idade < 30 * 86_400_000 && u.respondidas < 10 && parado
@@ -115,9 +115,6 @@ const acertoDe = (u: LinhaUsuario) => acertoReal(u) ?? acertoAposRevisao(u)
 const POR_PAGINA = 50
 /** Espera depois da última tecla antes de refiltrar a lista. */
 const ESPERA_BUSCA_MS = 250
-const iniciais = (u: LinhaUsuario) => (u.nome ?? u.email ?? '?').split(/[\s@.]+/).filter(Boolean).slice(0, 2).map(p => p[0]?.toUpperCase()).join('')
-/** Cor fixa por pessoa, para reconhecer de relance. */
-const corDe = (id: string) => `hsl(${[...id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 360, 7)} 45% 42%)`
 const hojeDe = (u: LinhaUsuario) => u.respondidas_hoje ?? (ativoHoje(u) ? null : 0)
 const ORDEM_LEGENDA: CategoriaPessoa[] = ['assinante', 'comum', 'planos', 'admin']
 /** Legenda discreta das cores dos cartões. */
@@ -160,9 +157,9 @@ function usarAdiado<T>(valor: T, ms: number): T {
 
 /**
  * A lista vem do painel, que é o único dono de `listar_usuarios_admin` (com cache e
- * "ao vivo" a cada 30 s enquanto esta aba está aberta e visível).
+ * "ao vivo" a cada 15 s enquanto esta parte ou Agora está aberta e visível).
  */
-export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'todos', aoMudarFiltro }: { usuarios: LinhaUsuario[]; atualizadoEm: number | null; filtro?: FiltroUsuarios; aoMudarFiltro?: (filtro: FiltroUsuarios) => void }) {
+export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFiltro, aoVerAgora }: { usuarios: LinhaUsuario[]; filtro?: FiltroUsuarios; aoMudarFiltro?: (filtro: FiltroUsuarios) => void; aoVerAgora?: () => void }) {
   const { sessao } = usarConta()
   // Consulta leve à parte: quem abriu os planos, flashcards e locais. Sem a parte 25 colada, fica vazia.
   const sinaisQ = usarRpc<SinalUsuario[]>(sessao?.user.id, 'sinais_usuarios_admin', {}, { atualizarCada: 60_000 })
@@ -170,7 +167,7 @@ export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'tod
   const comSinais = Array.isArray(sinaisQ.dados)
   const [busca, definirBusca] = useState('')
   const buscaAdiada = usarAdiado(busca, ESPERA_BUSCA_MS)
-  // O filtro vem do endereço (F5 e Voltar mantêm); a ordem inicial acompanha quem chegou por um atalho da Visão geral.
+  // O filtro vem do endereço (F5 e Voltar mantêm); a ordem inicial acompanha quem chegou por um atalho de Agora.
   const [filtro, definirFiltroLocal] = useState<Filtro>(filtroUrl)
   useEffect(() => { definirFiltroLocal(filtroUrl) }, [filtroUrl])
   const definirFiltro = (novo: Filtro) => { definirFiltroLocal(novo); aoMudarFiltro?.(novo); if (novo === 'planos') definirOrdem('planos') }
@@ -179,16 +176,10 @@ export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'tod
 
   const contagem = useMemo(() => Object.fromEntries(FILTROS.map(([f]) => [f, usuarios.filter(u => passaFiltro(u, f, sinais)).length])) as Record<Filtro, number>, [usuarios, sinais])
 
+  // Os números de hoje (online, estudaram, questões, contas novas) ficam só em Agora; aqui, o somatório da lista.
   const totais = useMemo(() => {
     const soma = somarAcertos(usuarios)
-    const hoje = hojeSP()
-    return {
-      respondidas: usuarios.reduce((s, u) => s + u.respondidas, 0), real: acertoReal(soma), revisao: acertoAposRevisao(soma),
-      online: usuarios.filter(u => u.online).length, ativosHoje: usuarios.filter(ativoHoje).length,
-      questoesHoje: usuarios.reduce((s, u) => s + (u.respondidas_hoje ?? 0), 0), tentativasHoje: usuarios.reduce((s, u) => s + (u.tentativas_hoje ?? 0), 0),
-      novosHoje: usuarios.filter(u => diaSP(u.criado_em) === hoje).length,
-      comDadosHoje: usuarios.some(u => u.respondidas_hoje !== undefined),
-    }
+    return { respondidas: usuarios.reduce((s, u) => s + u.respondidas, 0), real: acertoReal(soma), revisao: acertoAposRevisao(soma) }
   }, [usuarios])
 
   const visiveis = useMemo(() => {
@@ -214,7 +205,6 @@ export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'tod
   const desenhados = visiveis.length > limite ? visiveis.slice(0, limite) : visiveis
 
   const maior = useMemo(() => usuarios.reduce((m, u) => Math.max(m, u.respondidas), 1), [usuarios])
-  const aoVivo = useMemo(() => usuarios.filter(u => u.online).sort((a, b) => (b.pagina_em ?? '').localeCompare(a.pagina_em ?? '')), [usuarios])
 
   return <section className="empilha adm-secao" aria-labelledby="adm-titulo-usuarios">
     <div className="adm-secao__cabeca">
@@ -224,24 +214,8 @@ export function AdminUsuarios({ usuarios, atualizadoEm, filtro: filtroUrl = 'tod
       </div>
     </div>
 
-    <div className="adm-kpis-usuarios">
-      <div className="adm-kpi-u adm-kpi-u--vivo"><span><span className="adm-online" aria-hidden="true" />Online agora</span><strong>{totais.online}</strong></div>
-      <div className="adm-kpi-u"><span>Estudaram hoje</span><strong>{totais.ativosHoje}</strong></div>
-      {totais.comDadosHoje && <div className="adm-kpi-u"><span>Questões hoje</span><strong>{totais.questoesHoje.toLocaleString('pt-BR')}</strong><small>{totais.tentativasHoje.toLocaleString('pt-BR')} tentativas</small></div>}
-      <div className="adm-kpi-u"><span>Contas novas hoje</span><strong>{totais.novosHoje}</strong></div>
-    </div>
     <LegendaCores />
-
-    {aoVivo.length > 0 && <section className="adm-aovivo" aria-labelledby="adm-aovivo-titulo">
-      <header><h3 id="adm-aovivo-titulo"><span className="adm-online" aria-hidden="true" />Ao vivo</h3><small>atualiza sozinho a cada 15 s · última leitura {haQuantoTempo(new Date(atualizadoEm ?? Date.now()).toISOString())}</small></header>
-      <ul>{aoVivo.map(u => { const cat = categoriaPessoa(u, sinais.get(u.id_usuario)); return <li key={u.id_usuario}>
-        <button type="button" className={`adm-cor--${cat}`} onClick={() => definirAberto(u)} aria-label={`${u.nome ?? u.email ?? 'Usuário'} (${ROTULOS_CATEGORIA[cat].toLowerCase()}): abrir ficha`}>
-          <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}</span>
-          <span className="adm-aovivo__quem"><strong title={u.nome ?? u.email ?? undefined}>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong><OQueVe u={u} linha /></span>
-          <span className="adm-aovivo__hoje"><strong className="numerico">{u.respondidas_hoje ?? '—'}</strong><small>hoje</small></span>
-        </button>
-      </li> })}</ul>
-    </section>}
+    {aoVerAgora && <p className="adm-nota">Quem está online agora, o que está vendo e os números de hoje ficam em <button type="button" className="adm-link" onClick={aoVerAgora}>Agora <Icone nome="direita" tamanho={13} /></button></p>}
 
     <div className="adm-filtros" role="group" aria-label="Filtrar usuários">
       {FILTROS.map(([valor, rotulo]) => <button key={valor} type="button" className={'adm-chip' + (valor === 'planos' ? ' adm-chip--planos' : '')} aria-pressed={filtro === valor} onClick={() => definirFiltro(valor)}>{rotulo}<span>{contagem[valor]}</span></button>)}

@@ -79,11 +79,36 @@ async function sincronizarPix(pagamento) {
   return { pedido, status: await atualizacao.json() };
 }
 
+// supabase/functions/_shared/cartas.ts
+var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto", "pagamento_aprovado", "obrigado_tempo"];
+var TIPOS_CAMPANHAS_DIARIAS = ["assinou_sem_cronograma", "assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema"];
+
+// supabase/functions/_shared/modelo-email.ts
+var TIPOS_AUTOMATICOS = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS];
+
+// supabase/functions/_shared/email.ts
+var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
+async function pedirAutomaticoServidor(idUsuario, tipo, extra = {}) {
+  try {
+    const segredo = Deno.env.get("EMAIL_SEGREDO"), base = Deno.env.get("SUPABASE_URL"), anon = Deno.env.get("SUPABASE_ANON_KEY") ?? "";
+    if (!segredo || !base || !idUsuario || !emailConfigurado()) return null;
+    const r = await fetch(`${base}/functions/v1/enviar-email`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", apikey: anon, Authorization: `Bearer ${anon}`, "x-segredo": segredo },
+      body: JSON.stringify({ acao: "automatico", tipo, id_usuario: idUsuario, ...extra })
+    });
+    const dados = await r.json().catch(() => ({}));
+    return dados.resultado ?? dados.erro ?? null;
+  } catch {
+    return null;
+  }
+}
+
 // supabase/functions/gerenciar-plano/index.ts
 async function assinaturaDoUsuario(idUsuario, acao) {
   const filtro = acao === "cancelar" ? "status=eq.ativa" : "status=in.(ativa,cancelada,pendente,falha_pagamento,pausada)";
   const ordenacao = acao === "reembolsar" ? "ultima_cobranca_em.desc.nullslast" : "atualizada_em.desc";
-  const resposta = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&${filtro}&order=${ordenacao}&limit=1&select=id,id_externo,status,ultima_cobranca_id,ultima_cobranca_em`);
+  const resposta = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&${filtro}&order=${ordenacao}&limit=1&select=id,id_externo,status,ultima_cobranca_id,ultima_cobranca_em,plano,inicio_periodo,fim_periodo`);
   if (!resposta.ok) throw new Error("consulta_assinatura_falhou");
   const [assinatura] = await resposta.json();
   return assinatura ?? null;
@@ -95,12 +120,18 @@ async function atualizarAssinatura(id, alteracao) {
   });
   if (!resposta.ok) throw new Error("atualizacao_assinatura_falhou");
 }
-async function sincronizarCobranca(token, assinatura) {
+async function reciboDaCobranca(idUsuario, assinatura, idPagamento, meio, renovacao) {
+  const r = await banco(`assinaturas?id=eq.${encodeURIComponent(assinatura.id)}&select=plano,inicio_periodo,fim_periodo`);
+  const [a] = r.ok ? await r.json() : [];
+  await pedirAutomaticoServidor(idUsuario, "pagamento_aprovado", { referencia: `pg:${idPagamento}`, plano: a?.plano ?? assinatura.plano, inicio_periodo: a?.inicio_periodo ?? assinatura.inicio_periodo, fim_periodo: a?.fim_periodo ?? assinatura.fim_periodo, meio, renovacao });
+}
+async function sincronizarCobranca(token, assinatura, idUsuario) {
   if (assinatura.id_externo.startsWith("pix:")) {
     if (!assinatura.ultima_cobranca_id) return false;
     const pagamento2 = await consultarPagamento(token, assinatura.ultima_cobranca_id);
     if (pagamento2.external_reference !== assinatura.id_externo) throw new Error("pagamento_pix_divergente");
-    await sincronizarPix(pagamento2);
+    const resultado = await sincronizarPix(pagamento2);
+    if (resultado.status === "approved") await reciboDaCobranca(idUsuario, assinatura, String(pagamento2.id), "pix", false).catch(() => void 0);
     return pagamento2.status === "approved";
   }
   const fatura = await buscarUltimaFaturaAprovada(token, assinatura.id_externo);
@@ -116,6 +147,7 @@ async function sincronizarCobranca(token, assinatura) {
       ...ativar ? { status: "ativa" } : {}
     });
   }
+  await reciboDaCobranca(idUsuario, assinatura, String(pagamento.id), "cartao", !!assinatura.ultima_cobranca_id && assinatura.ultima_cobranca_id !== String(pagamento.id)).catch(() => void 0);
   return true;
 }
 Deno.serve(async (req) => {
@@ -130,9 +162,10 @@ Deno.serve(async (req) => {
     if (!assinatura) return json({ erro: "assinatura_nao_encontrada" }, 404, req);
     const token = Deno.env.get("MERCADO_PAGO_ACCESS_TOKEN");
     if (acao === "sincronizar_cobranca") {
-      const encontrada = await sincronizarCobranca(token, assinatura);
+      const encontrada = await sincronizarCobranca(token, assinatura, usuario.id);
       return json({ ok: true, cobranca_encontrada: encontrada }, 200, req);
     }
+    const obrigado = (reembolso, fimEm) => pedirAutomaticoServidor(usuario.id, "obrigado_tempo", { referencia: `fim:${assinatura.id}`, reembolso, fim_periodo: fimEm }).catch(() => void 0);
     if (acao === "reembolsar") {
       if (assinatura.status !== "ativa" && assinatura.status !== "cancelada") return json({ erro: "assinatura_nao_reembolsavel" }, 409, req);
       if (!assinatura.ultima_cobranca_id || !assinatura.ultima_cobranca_em) return json({ erro: "cobranca_aprovada_nao_encontrada" }, 409, req);
@@ -175,6 +208,7 @@ Deno.serve(async (req) => {
     if (assinatura.id_externo.startsWith("pix:")) {
       if (acao === "reembolsar") {
         await sincronizarPix(await consultarPagamento(token, assinatura.ultima_cobranca_id));
+        await obrigado(true, (/* @__PURE__ */ new Date()).toISOString());
       }
       return json({ ok: true, garantia: acao === "reembolsar" }, 200, req);
     }
@@ -189,6 +223,7 @@ Deno.serve(async (req) => {
     }
     const agora = (/* @__PURE__ */ new Date()).toISOString();
     await atualizarAssinatura(assinatura.id, acao === "reembolsar" ? { status: "reembolsada", cancelar_ao_fim: true, fim_periodo: agora, cancelada_em: agora } : { cancelar_ao_fim: true, cancelada_em: agora });
+    await obrigado(acao === "reembolsar", acao === "reembolsar" ? agora : assinatura.fim_periodo);
     return json({ ok: true, garantia: acao === "reembolsar" }, 200, req);
   } catch (erro) {
     const codigo = erro instanceof Error && erro.message === "autenticacao_necessaria" ? 401 : 502;

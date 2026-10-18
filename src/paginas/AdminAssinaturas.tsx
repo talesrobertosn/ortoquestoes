@@ -13,9 +13,11 @@ import { AdminLembretes } from '../componentes/admin/AdminLembretes'
 import { AdminRelatorioMensal } from '../componentes/admin/AdminRelatorioMensal'
 import { AdminEmails } from '../componentes/admin/AdminEmails'
 import { AdminCartas } from '../componentes/admin/AdminCartas'
+import { AdminTodasCartas } from '../componentes/admin/AdminTodasCartas'
 import { AdminSimulados } from '../componentes/admin/AdminSimulados'
 import { SECOES, abaPadrao, definicaoDe, lerUrl, secaoDe, urlAntiga, urlDe, type Aba, type EstadoUrl, type Secao } from '../componentes/admin/secoes'
-import { AdminUsuarios, ativoHoje, estaOnline, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
+import { AdminUsuarios, estaOnline, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
+import { AdminAgora, type ResumoAdmin } from '../componentes/admin/AdminAgora'
 import { AdminFinanceiro } from '../componentes/admin/AdminFinanceiro'
 import { AdminCobrancas } from '../componentes/admin/AdminCobrancas'
 import { AdminExportar } from '../componentes/admin/AdminExportar'
@@ -28,11 +30,6 @@ import { real } from '../dados/planos'
 import { usarLidos } from '../componentes/admin/lidos'
 import { usarRpc } from '../componentes/admin/usarRpc'
 import { usarContadoresAdmin } from '../componentes/admin/contadores'
-import { haQuantoTempo, registrarTitulosResumos, resumoDaPagina, tituloResumo } from '../componentes/admin/formatos'
-import { carregarIndiceBiblioteca } from '../biblioteca/conteudo'
-import { Comparacao } from '../componentes/admin/Comparacao'
-import { diaSP, estudoDeHoje, type DiaSerie, type EstudoHoje } from '../componentes/admin/estudoHoje'
-import type { SinalUsuario } from '../componentes/admin/sinais'
 import {
   STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
 } from '../componentes/admin/formatos'
@@ -58,13 +55,7 @@ interface LinhaAssinatura {
   meio?: string | null
 }
 type LinhaEvento = EventoPagamento
-interface Resumo {
-  online_agora: number
-  usuarios: number; novos_7d: number
-  ativos_hoje: number; ativos_7d: number; ativos_30d: number
-  respondidas_hoje: number; respondidas_7d: number
-  assinantes_vigentes: number
-}
+type Resumo = ResumoAdmin
 
 const MIGRACAO = '202609290100_painel_admin.sql'
 
@@ -76,7 +67,10 @@ const inicioDe = (a: LinhaAssinatura) => a.criada_em ?? a.inicio_periodo ?? a.ul
 /** Partes cujo número é um alerta (vermelho); ele também sobe para a seção. */
 const ALERTAS: Aba[] = ['pagamentos', 'conteudo']
 
-/** Painel do administrador: cinco seções (Hoje, Pessoas, Receita, Conteúdo, Operações), cada uma com as suas partes. */
+/**
+ * Painel do administrador como painel de observação (17/10/2026): seis seções (Agora, Pessoas, Financeiro,
+ * Conteúdo, E-mails, Ajustes), cada uma com as suas partes; cada número mora num lugar só.
+ */
 export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const { sessao } = usarConta()
   // Lido do endereço a cada render: Voltar, F5 e links externos (hashchange) já chegam aqui pelo App.
@@ -92,7 +86,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const [idEditar, definirIdEditar] = useState<string | null>(url.id)
   useEffect(() => { if (aba === 'conteudo') definirVista(url.vista) }, [aba, url.vista])
   useEffect(() => { if (aba === 'questoes' && url.id) definirIdEditar(url.id) }, [aba, url.id])
-  // Cada seção lembra a última parte aberta: voltar a Receita reabre Pagamentos, se era lá.
+  // Cada seção lembra a última parte aberta: voltar a Financeiro reabre Pagamentos, se era lá.
   const [ultimaParte, definirUltimaParte] = useState<Partial<Record<Secao, Aba>>>({})
   useEffect(() => { definirUltimaParte(antes => antes[secao] === aba ? antes : { ...antes, [secao]: aba }) }, [secao, aba])
   // Cada consulta tem um dono só e fica em cache (usarRpc): trocar de seção não pede de novo,
@@ -100,19 +94,20 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const conta = sessao?.user.id
   const assinaturasQ = usarRpc<LinhaAssinatura[]>(conta, 'listar_assinaturas_admin')
   const eventosQ = usarRpc<LinhaEvento[]>(conta, 'listar_eventos_pagamento_admin')
-  const resumoQ = usarRpc<Resumo[]>(conta, 'resumo_admin', {}, { atualizarCada: aba === 'hoje' ? 20_000 : undefined })
+  const resumoQ = usarRpc<Resumo[]>(conta, 'resumo_admin', {}, { atualizarCada: aba === 'agora' ? 20_000 : undefined })
   const contadoresQ = usarContadoresAdmin(conta)
   // Sem a RPC leve (parte 22 ainda não colada), o número de contas sai da própria lista.
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
-    // Hoje, Pessoas › Usuários e Crescimento mostram a lista; Assinaturas, Cobranças e Avisos usam para abrir a ficha.
-    ativo: ['hoje', 'usuarios', 'crescimento', 'assinaturas', 'cobrancas', 'pagamentos'].includes(aba) || semContadores,
-    // "Ao vivo" em Hoje e em Pessoas › Usuários, com a aba do navegador visível (antes era só em Usuários, a cada 30 s).
-    atualizarCada: aba === 'usuarios' || aba === 'hoje' ? 15_000 : undefined,
+    // Agora, Pessoas › Usuários, Crescimento e Cartas mostram a lista; Assinaturas, Pagamentos e Avisos usam para abrir a ficha.
+    ativo: ['agora', 'usuarios', 'crescimento', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos'].includes(aba) || semContadores,
+    // "Ao vivo" em Agora e em Pessoas › Usuários, com a aba do navegador visível.
+    atualizarCada: aba === 'usuarios' || aba === 'agora' ? 15_000 : undefined,
     prazoMs: 20_000,
   })
   // Cobranças gravadas no banco (parte 23): Financeiro e Cobranças leem da mesma consulta. Sem a RPC, tudo pelo preço dos planos.
-  const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: aba === 'financeiro' || aba === 'cobrancas' })
+  // Agora também lê as cobranças: "Pagaram hoje" com nomes e valores.
+  const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: aba === 'financeiro' || aba === 'cobrancas' || aba === 'agora' })
   const cobrancasReais = cobrancasQ.erro ? null : cobrancasQ.dados ?? null
   const avisoReais = !cobrancasQ.erro ? null : funcaoAusente(cobrancasQ.erro)
     ? `Para usar os valores gravados no banco (Pix pelo valor pago, cartão pelo valor contratado), cole no Supabase a ${PARTE_COBRANCAS}. Enquanto isso, os valores são estimados pelos planos.`
@@ -134,7 +129,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const registrarPendencias = useCallback((valor: number) => definirPendenciasAoVivo({ valor, em: Date.now() }), [])
   const pendenciasConteudo = pendenciasAoVivo && pendenciasAoVivo.em >= (contadoresQ.atualizadoEm ?? 0) ? pendenciasAoVivo.valor : contadoresQ.dados?.conteudo ?? null
   const lidosPagamento = usarLidos('pagamento')
-  // Compras de teste do dono ficam fora das estatísticas; a lista completa continua em Receita › Assinaturas.
+  // Compras de teste do dono ficam fora das estatísticas; a lista completa continua em Financeiro › Assinaturas.
   const reais = useMemo(() => assinaturas?.filter(a => !contaDeTeste(a)) ?? null, [assinaturas])
   const testes = (assinaturas?.length ?? 0) - (reais?.length ?? 0)
   const usuariosReais = useMemo(() => usuarios?.filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
@@ -182,6 +177,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
     usuarios: contadoresQ.dados?.usuarios ?? usuarios?.length, assinaturas: reais?.filter(vigente).length,
     pagamentos: errosPagamento || undefined, conteudo: pendenciasConteudo || undefined,
   }
+  const onlineAgora = usuarios ? usuarios.filter(u => u.online).length : contadoresQ.dados?.online ?? undefined
   const alertasDa = (s: Secao) => definicaoDe(s).abas.reduce((soma, a) => soma + (ALERTAS.includes(a.id) ? contadores[a.id] ?? 0 : 0), 0)
   const definicao = definicaoDe(secao)
   const variasPartes = definicao.abas.length > 1
@@ -220,7 +216,8 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
         <ul>
           {SECOES.map(s => {
             const alertas = alertasDa(s.id)
-            const numero = s.id === 'pessoas' ? contadores.usuarios : undefined
+            // Agora mostra quantos estão online (o mesmo número do quadro, refeito a cada 10 s); Pessoas, quantas contas.
+            const numero = s.id === 'agora' ? onlineAgora : s.id === 'pessoas' ? contadores.usuarios : undefined
             const destino = destinoDaSecao(s.id)
             return <li key={s.id}>
               <a className="adm-nav__item" href={href(urlDe({ ...url, vista, id: idEditar, aba: destino, filtro: 'todos' }))}
@@ -229,7 +226,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
                 <span className="adm-nav__icone"><Icone nome={s.icone} tamanho={20} />{alertas > 0 && <i className="adm-nav__ponto" aria-hidden="true" />}</span>
                 <span className="adm-nav__rotulo">{s.rotulo}</span>
                 {alertas > 0 ? <b className="adm-nav__numero adm-nav__numero--alerta">{alertas}<span className="so-leitor"> para ver</span></b>
-                  : numero ? <b className="adm-nav__numero">{numero}</b> : null}
+                  : numero ? <b className={'adm-nav__numero' + (s.id === 'agora' ? ' adm-nav__numero--vivo' : '')}>{numero}{s.id === 'agora' && <span className="so-leitor"> online</span>}</b> : null}
               </a>
             </li>
           })}
@@ -247,14 +244,13 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
         </div>
 
         <div id="adm-painel" className="empilha-2" role={variasPartes ? 'tabpanel' : undefined} aria-labelledby={variasPartes ? `adm-parte-${aba}` : undefined}>
-          {erroNovo && (aba === 'hoje' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
+          {erroNovo && (aba === 'agora' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
 
-          {aba === 'hoje' && <Hoje conta={conta} resumo={resumo} usuarios={usuarios} assinaturas={reais ?? []} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
+          {aba === 'agora' && <AdminAgora conta={conta} resumo={resumo} usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} assinaturas={reais} cobrancas={cobrancasQ.dados === undefined && !cobrancasQ.erro ? null : cobrancasReais} avisoCobrancas={avisoReais} errosPagamento={errosPagamento} pendenciasConteudo={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
 
           {aba === 'usuarios' && (usuarios
-            ? <AdminUsuarios usuarios={usuarios} atualizadoEm={usuariosQ.atualizadoEm} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} />
+            ? <AdminUsuarios usuarios={usuarios} filtro={url.filtro} aoMudarFiltro={filtro => irPara({ filtro })} aoVerAgora={() => trocarAba('agora')} />
             : !usuariosQ.erro && <p role="status">Carregando usuários…</p>)}
-          {aba === 'cartas' && <AdminCartas usuarios={usuarios} />}
           {aba === 'crescimento' && <AdminCrescimento usuarios={usuariosReais} assinaturas={reais ?? []} />}
 
           {aba === 'financeiro' && (cobrancasQ.dados === undefined && !cobrancasQ.erro
@@ -270,115 +266,17 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
           {aba === 'conteudo' && <AdminConteudo vista={vista} aoMudarVista={nova => { definirVista(nova); irPara({ vista: nova }) }} aoMudarPendencias={registrarPendencias} aoEditar={editarQuestao} />}
           {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} aoAbrir={id => { definirIdEditar(id); irPara({ id }) }} />}
           {aba === 'opinioes' && <AdminOpinioesFlashcards />}
+          {aba === 'simulados' && <AdminSimulados />}
 
           {aba === 'lembretes' && <><AdminLembretes /><AdminRelatorioMensal /><AdminEmails /></>}
-          {aba === 'simulados' && <AdminSimulados />}
+          {aba === 'cartas' && <AdminCartas usuarios={usuarios} />}
+          {aba === 'todas' && <AdminTodasCartas />}
+
           {aba === 'ajustes' && <AdminConfiguracoes />}
         </div>
       </div>
     </div>}
   </article>
-}
-
-/** Seção Hoje: números do dia e o que pede atenção, cada um com atalho para a parte certa. */
-function Hoje({ conta, resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara, verUsuarios }: {
-  conta: string | undefined; resumo: Resumo | null; usuarios: LinhaUsuario[] | null; assinaturas: LinhaAssinatura[]
-  errosPagamento: number; mensagens: number | null; irPara: (aba: Aba) => void; verUsuarios: (filtro: FiltroUsuarios) => void
-}) {
-  // Recalculados só quando a lista muda (antes, a cada render do painel).
-  const { hoje, novos, semana } = useMemo(() => {
-    const lista = usuarios ?? []
-    return {
-      hoje: lista.filter(ativoHoje).sort((a, b) => new Date(b.ultima_atividade ?? 0).getTime() - new Date(a.ultima_atividade ?? 0).getTime()),
-      novos: lista.filter(u => Date.now() - new Date(u.criado_em).getTime() < 14 * 86_400_000).sort((a, b) => new Date(b.criado_em).getTime() - new Date(a.criado_em).getTime()),
-      semana: lista.filter(u => u.respondidas_7d > 0).sort((a, b) => b.respondidas_7d - a.respondidas_7d).slice(0, 5),
-    }
-  }, [usuarios])
-  const vigentes = useMemo(() => assinaturas.filter(vigente), [assinaturas])
-  const novasAssinaturas = useMemo(() => [...assinaturas].sort((a, b) => new Date(inicioDe(b)).getTime() - new Date(inicioDe(a)).getTime()).slice(0, 4), [assinaturas])
-  const n = (valor: number | undefined) => valor === undefined ? '—' : valor.toLocaleString('pt-BR')
-  // Estudo de hoje x ontem (São Paulo): série diária (7 dias, o mínimo da RPC) e sinais de flashcards, das consultas que já existem.
-  const serieQ = usarRpc<DiaSerie[]>(conta, 'serie_diaria_admin', { p_dias: 7 }, { atualizarCada: 120_000 })
-  const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {})
-  const estudo = useMemo(() => estudoDeHoje({
-    serie: Array.isArray(serieQ.dados) ? serieQ.dados : null, usuarios,
-    sinais: Array.isArray(sinaisQ.dados) ? sinaisQ.dados : null,
-  }), [serieQ.dados, usuarios, sinaisQ.dados])
-
-  return <div className="empilha-2">
-    <NaBiblioteca usuarios={usuarios} />
-    <EstudoDeHoje estudo={estudo} carregando={serieQ.carregando && !serieQ.dados} verUsuarios={verUsuarios} />
-    <section className="adm-kpis" aria-label="Números principais">
-      <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--online" onClick={() => irPara('usuarios')}><span><i className="adm-online" aria-hidden="true" /> Online agora</span><strong>{usuarios ? usuarios.filter(u => u.online).length.toLocaleString('pt-BR') : n(resumo?.online_agora)}</strong><small>com o site aberto e à vista agora</small></button>
-      <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--destaque" onClick={() => verUsuarios('novos')}><span>Usuários cadastrados</span><strong>{n(resumo?.usuarios)}</strong><small>{resumo ? `+${resumo.novos_7d} nos últimos 7 dias · ver quem chegou` : 'rode a migração nova'}</small></button>
-      <button type="button" className="adm-kpi adm-kpi--botao" onClick={() => verUsuarios('hoje')}><span>Ativos hoje</span><strong>{n(resumo?.ativos_hoje)}</strong><small>toque para ver os nomes</small></button>
-      <button type="button" className="adm-kpi adm-kpi--botao" onClick={() => verUsuarios('ativos')}><span>Ativos na semana</span><strong>{n(resumo?.ativos_7d)}</strong><small>{resumo ? `${n(resumo.ativos_30d)} nos últimos 30 dias · ver nomes` : ''}</small></button>
-      <div className="adm-kpi"><span>Questões respondidas</span><strong>{n(resumo?.respondidas_hoje)}</strong><small>{resumo ? `hoje · ${n(resumo.respondidas_7d)} na semana` : 'hoje'}</small></div>
-      <div className="adm-kpi"><span>Assinantes com acesso</span><strong>{vigentes.length}</strong><small>{assinaturas.length} assinatura(s) no histórico</small></div>
-      <button type="button" className={'adm-kpi adm-kpi--botao' + (errosPagamento ? ' adm-kpi--alerta' : '')} onClick={() => irPara('pagamentos')}><span>Avisos de pagamento com problema</span><strong>{errosPagamento}</strong><small>{errosPagamento ? 'toque para revisar' : 'tudo certo'}</small></button>
-      <button type="button" className={'adm-kpi adm-kpi--botao' + (mensagens ? ' adm-kpi--alerta' : '')} onClick={() => irPara('conteudo')}><span>Conteúdo para revisar</span><strong>{mensagens ?? '—'}</strong><small>relatos de erro e "não ajudou" com texto</small></button>
-    </section>
-
-    <div className="adm-duas">
-      <section className="adm-secao empilha">
-        <div className="adm-secao__cabeca"><h2>Estudaram hoje <span className="adm-contagem">{hoje.length}</span></h2><button type="button" className="adm-link" onClick={() => verUsuarios('hoje')}>Ver todos <Icone nome="direita" tamanho={14} /></button></div>
-        {!usuarios ? <p className="adm-vazio">Disponível depois da migração nova.</p> : hoje.length === 0 ? <p className="adm-vazio">Ninguém respondeu questões hoje ainda.</p> : <ol className="adm-mini">
-          {hoje.slice(0, 8).map(u => <li key={u.id_usuario}><span className="adm-mini__nome"><span>{u.online && <i className="adm-online" aria-label="Online agora" />}{u.nome ?? u.email}</span><small>{[u.servico, haQuanto(u.ultima_atividade)].filter(Boolean).join(' · ')}</small></span><span className="adm-mini__valor numerico">{u.respondidas_7d}<small>na semana</small></span></li>)}
-        </ol>}
-      </section>
-      <section className="adm-secao empilha">
-        <div className="adm-secao__cabeca"><h2>Recém-cadastrados <span className="adm-contagem">{novos.length}</span></h2><button type="button" className="adm-link" onClick={() => verUsuarios('novos_parados')}>Quem parou <Icone nome="direita" tamanho={14} /></button></div>
-        {!usuarios ? <p className="adm-vazio">Disponível depois da migração nova.</p> : novos.length === 0 ? <p className="adm-vazio">Ninguém se cadastrou nas últimas duas semanas.</p> : <ol className="adm-mini">
-          {novos.slice(0, 8).map(u => <li key={u.id_usuario}><span className="adm-mini__nome">{u.nome ?? u.email}<small>{[u.servico, `chegou ${haQuanto(u.criado_em)}`].filter(Boolean).join(' · ')}</small></span><span className={'adm-selo ' + (u.respondidas === 0 ? 'adm-selo--ruim' : u.respondidas < 10 ? 'adm-selo--neutro' : 'adm-selo--ok')}>{u.respondidas === 0 ? 'não começou' : `${u.respondidas} questões`}</span></li>)}
-        </ol>}
-      </section>
-    </div>
-
-    <div className="adm-duas">
-      <section className="adm-secao empilha">
-        <div className="adm-secao__cabeca"><h2>Mais ativos na semana</h2><button type="button" className="adm-link" onClick={() => irPara('usuarios')}>Ver todos <Icone nome="direita" tamanho={14} /></button></div>
-        {!usuarios ? <p className="adm-vazio">Disponível depois da migração nova.</p> : semana.length === 0 ? <p className="adm-vazio">Ninguém respondeu questões nos últimos 7 dias.</p> : <ol className="adm-mini">
-          {semana.map(u => <li key={u.id_usuario}><span className="adm-mini__nome">{u.nome ?? u.email}</span><span className="adm-mini__valor numerico">{u.respondidas_7d}</span></li>)}
-        </ol>}
-      </section>
-      <section className="adm-secao empilha">
-        <div className="adm-secao__cabeca"><h2>Assinaturas recentes</h2><button type="button" className="adm-link" onClick={() => irPara('assinaturas')}>Ver todas <Icone nome="direita" tamanho={14} /></button></div>
-        {novasAssinaturas.length === 0 ? <p className="adm-vazio">Nenhuma assinatura ainda.</p> : <ol className="adm-mini">
-          {novasAssinaturas.map(a => <li key={`${a.id_usuario}:${a.ultima_atualizacao}`}><span className="adm-mini__nome">{a.nome ?? a.usuario}<small>{rotuloPlano(a.plano)} · {rotuloMeio(meioDe(a))} · {situacaoAssinatura(a).rotulo}</small></span><span className="adm-mini__valor">{haQuanto(inicioDe(a))}</span></li>)}
-        </ol>}
-      </section>
-    </div>
-  </div>
-}
-
-/** Faixa do topo: estudaram, fizeram questões, questões e flashcards hoje, comparados a ontem. */
-function EstudoDeHoje({ estudo, carregando, verUsuarios }: { estudo: EstudoHoje; carregando: boolean; verUsuarios: (filtro: FiltroUsuarios) => void }) {
-  const n = (v: number | null | undefined) => v === null || v === undefined ? '—' : v.toLocaleString('pt-BR')
-  const dataCurta = (dia: string) => dia.split('-').reverse().slice(0, 2).join('/')
-  return <section className="adm-estudo" aria-labelledby="adm-estudo-titulo">
-    <header className="adm-estudo__cabeca">
-      <h2 id="adm-estudo-titulo">Estudo de hoje</h2>
-      <small>{dataCurta(estudo.hoje)}, horário de São Paulo · comparado com ontem ({dataCurta(estudo.ontem)}, dia inteiro){carregando ? ' · carregando…' : ''}</small>
-    </header>
-    <div className="adm-estudo__numeros">
-      <button type="button" className="adm-estudo__item adm-estudo__item--destaque" onClick={() => verUsuarios('hoje')}>
-        <span>Pessoas que estudaram</span><strong>{n(estudo.estudaram)}</strong>
-        <small>questões ou flashcards{estudo.pessoasQuestoes ? ` · ontem ${n(estudo.pessoasQuestoes.ontem)} fizeram questões` : ''}</small>
-      </button>
-      <div className="adm-estudo__item">
-        <span>Fizeram questões</span><strong>{n(estudo.pessoasQuestoes?.hoje)}</strong>
-        {estudo.pessoasQuestoes ? <Comparacao atual={estudo.pessoasQuestoes.hoje} anterior={estudo.pessoasQuestoes.ontem} base="ontem" /> : <small>série diária indisponível</small>}
-      </div>
-      <div className="adm-estudo__item">
-        <span>Questões respondidas</span><strong>{n(estudo.questoes?.hoje)}</strong>
-        {estudo.questoes ? <Comparacao atual={estudo.questoes.hoje} anterior={estudo.questoes.ontem} base="ontem" /> : <small>série diária indisponível</small>}
-      </div>
-      <div className="adm-estudo__item">
-        <span>Usaram flashcards</span><strong>{n(estudo.flashcards)}</strong>
-        <small>{estudo.flashcards === null ? 'cole a parte 25 para ver' : 'sem comparação: o painel guarda só o último uso'}</small>
-      </div>
-    </div>
-  </section>
 }
 
 type FiltroAssinatura = 'vigentes' | 'todas' | 'pendente' | 'falha_pagamento' | 'encerradas'
@@ -390,7 +288,7 @@ const FILTROS_ASSINATURA: Array<[FiltroAssinatura, string]> = [
 const PERIODOS: Array<[Periodo, string]> = [['tudo', 'Desde sempre'], ['7', 'Últimos 7 dias'], ['30', 'Últimos 30 dias'], ['90', 'Últimos 3 meses'], ['365', 'Último ano']]
 const TOM_SELO = { ok: 'adm-selo--ok', aviso: 'adm-selo--aviso', ruim: 'adm-selo--ruim', neutro: 'adm-selo--neutro' } as const
 
-/** Receita › Assinaturas: quem paga, por qual meio e plano, e até quando vale o acesso. Nomes de rotulos.ts. */
+/** Financeiro › Assinaturas: quem paga, por qual meio e plano, e até quando vale o acesso. Nomes de rotulos.ts. */
 function Assinaturas({ linhas, usuarios }: { linhas: LinhaAssinatura[]; usuarios: LinhaUsuario[] | null }) {
   const [filtro, definirFiltro] = useState<FiltroAssinatura>('vigentes')
   const [periodo, definirPeriodo] = useState<Periodo>('tudo')
@@ -509,7 +407,7 @@ function Pagamentos({ eventos, usuarios, recarregar, lidos, marcar }: { eventos:
   return <section className="empilha adm-secao" aria-labelledby="adm-titulo-pagamentos">
     <div className="adm-secao__cabeca"><div>
       <h2 id="adm-titulo-pagamentos">Avisos de pagamento</h2>
-      <p>Cada vez que um pagamento ou uma assinatura muda, o Mercado Pago avisa o site, e o site aplica a mudança (últimos {eventos.length} avisos). "Ignorado" é normal: são avisos que não mudam nada. Só "Precisa de atenção" pede ação. O dinheiro recebido está em Receita › Pagamentos.</p>
+      <p>Cada vez que um pagamento ou uma assinatura muda, o Mercado Pago avisa o site, e o site aplica a mudança (últimos {eventos.length} avisos). "Ignorado" é normal: são avisos que não mudam nada. Só "Precisa de atenção" pede ação. O dinheiro recebido está em Financeiro › Pagamentos.</p>
     </div></div>
     <div className="adm-filtros" role="group" aria-label="Filtrar pagamentos">
       {(['erro', 'todos', 'processado', 'ignorado', 'recebido'] as const).map(valor => <button key={valor} type="button" className="adm-chip" aria-pressed={status === valor} onClick={() => definirStatus(valor)}>{valor === 'todos' ? 'Todos' : STATUS_EVENTO[valor]}<span>{valor === 'todos' ? eventos.length : eventos.filter(e => e.status_processamento === valor).length}</span></button>)}
@@ -548,38 +446,5 @@ function Pagamentos({ eventos, usuarios, recarregar, lidos, marcar }: { eventos:
       })}
     </ul>}
     {ficha && <AdminFichaUsuario usuario={ficha} abaInicial="pagamentos" aoFechar={() => definirFicha(null)} />}
-  </section>
-}
-
-/**
- * Quem está na Biblioteca de resumos (pedido do Tales, 16/10/2026): agora (online, com o resumo aberto e
- * quanto já leu) e hoje (a última página registrada foi um resumo). Vem do sinal do aparelho, sem SQL novo.
- */
-function NaBiblioteca({ usuarios }: { usuarios: LinhaUsuario[] | null }) {
-  const [, definirTitulos] = useState(0)
-  useEffect(() => { carregarIndiceBiblioteca().then((i) => { registrarTitulosResumos(i.capitulos); definirTitulos((n) => n + 1) }).catch(() => undefined) }, [])
-  const { agora, hoje, porTema } = useMemo(() => {
-    const naBib = (u: LinhaUsuario) => (u.pagina ?? '').startsWith('/resumos')
-    const lista = (usuarios ?? []).filter(naBib)
-    const agora = lista.filter((u) => u.online).sort((a, b) => (b.pagina_em ?? '').localeCompare(a.pagina_em ?? ''))
-    const hoje = lista.filter((u) => !u.online && u.pagina_em && diaSP(u.pagina_em) === diaSP(Date.now()))
-    const porTema = new Map<string, number>()
-    for (const u of [...agora, ...hoje]) { const c = resumoDaPagina(u.pagina); if (c) porTema.set(c, (porTema.get(c) ?? 0) + 1) }
-    return { agora, hoje, porTema: [...porTema].sort((a, b) => b[1] - a[1]) }
-  }, [usuarios])
-  if (!usuarios) return null
-  const linha = (u: LinhaUsuario) => {
-    const c = resumoDaPagina(u.pagina)
-    const extra = (u.pagina ?? '').split(' · ')[1]
-    const onde = c ? tituloResumo(c) : u.pagina === '/resumos/caderno' ? 'Caderno de estudo' : u.pagina === '/resumos/frases' ? 'Frases que caem' : 'Estante (escolhendo um resumo)'
-    return <li key={u.id_usuario}><span className="adm-mini__nome"><span>{u.online && <i className="adm-online" aria-label="Online agora" />}{u.nome ?? u.email}</span><small>{[onde, extra, u.online ? null : haQuantoTempo(u.pagina_em)].filter(Boolean).join(' · ')}</small></span></li>
-  }
-  return <section className="adm-secao empilha" aria-labelledby="adm-bib-titulo">
-    <div className="adm-secao__cabeca"><h2 id="adm-bib-titulo">Na Biblioteca de resumos <span className="adm-contagem">{agora.length} agora</span></h2></div>
-    {agora.length === 0 && hoje.length === 0 ? <p className="adm-vazio">Ninguém com um resumo aberto agora. Quem abrir aparece aqui, com o tema e quanto já leu.</p> : <>
-      {porTema.length > 0 && <p className="adm-nota">{porTema.map(([c, n]) => `${tituloResumo(c)}: ${n}`).join(' · ')}</p>}
-      {agora.length > 0 && <><h3 className="adm-mini__titulo">Lendo agora</h3><ol className="adm-mini">{agora.map(linha)}</ol></>}
-      {hoje.length > 0 && <><h3 className="adm-mini__titulo">Hoje (a última página foi um resumo)</h3><ol className="adm-mini">{hoje.slice(0, 12).map(linha)}</ol></>}
-    </>}
   </section>
 }

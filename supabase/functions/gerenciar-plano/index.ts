@@ -1,6 +1,7 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { buscarUltimaFaturaAprovada, consultarMercadoPago, consultarPagamento } from '../_shared/cobranca-mercado-pago.ts'
 import { sincronizarPix } from '../_shared/pix.ts'
+import { pedirAutomaticoServidor } from '../_shared/email.ts'
 
 interface Assinatura {
   id: string
@@ -8,12 +9,15 @@ interface Assinatura {
   status: string
   ultima_cobranca_id: string | null
   ultima_cobranca_em: string | null
+  plano: string | null
+  inicio_periodo: string | null
+  fim_periodo: string | null
 }
 
 async function assinaturaDoUsuario(idUsuario: string, acao: 'cancelar' | 'reembolsar' | 'sincronizar_cobranca') {
   const filtro = acao === 'cancelar' ? 'status=eq.ativa' : 'status=in.(ativa,cancelada,pendente,falha_pagamento,pausada)'
   const ordenacao = acao === 'reembolsar' ? 'ultima_cobranca_em.desc.nullslast' : 'atualizada_em.desc'
-  const resposta = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&${filtro}&order=${ordenacao}&limit=1&select=id,id_externo,status,ultima_cobranca_id,ultima_cobranca_em`)
+  const resposta = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&${filtro}&order=${ordenacao}&limit=1&select=id,id_externo,status,ultima_cobranca_id,ultima_cobranca_em,plano,inicio_periodo,fim_periodo`)
   if (!resposta.ok) throw new Error('consulta_assinatura_falhou')
   const [assinatura] = await resposta.json() as Assinatura[]
   return assinatura ?? null
@@ -26,12 +30,24 @@ async function atualizarAssinatura(id: string, alteracao: Record<string, unknown
   if (!resposta.ok) throw new Error('atualizacao_assinatura_falhou')
 }
 
-async function sincronizarCobranca(token: string, assinatura: Assinatura) {
+/**
+ * Recibo "Pagamento aprovado" (17/10/2026) depois de a cobrança estar gravada. A função
+ * enviar-email é idempotente pelo id do pagamento (o webhook pode ter pedido antes), e um
+ * e-mail que não sai não muda a resposta desta ação.
+ */
+async function reciboDaCobranca(idUsuario: string, assinatura: Assinatura, idPagamento: string, meio: 'pix' | 'cartao', renovacao: boolean) {
+  const r = await banco(`assinaturas?id=eq.${encodeURIComponent(assinatura.id)}&select=plano,inicio_periodo,fim_periodo`)
+  const [a] = r.ok ? await r.json() as Array<{ plano: string | null; inicio_periodo: string | null; fim_periodo: string | null }> : []
+  await pedirAutomaticoServidor(idUsuario, 'pagamento_aprovado', { referencia: `pg:${idPagamento}`, plano: a?.plano ?? assinatura.plano, inicio_periodo: a?.inicio_periodo ?? assinatura.inicio_periodo, fim_periodo: a?.fim_periodo ?? assinatura.fim_periodo, meio, renovacao })
+}
+
+async function sincronizarCobranca(token: string, assinatura: Assinatura, idUsuario: string) {
   if (assinatura.id_externo.startsWith('pix:')) {
     if (!assinatura.ultima_cobranca_id) return false
     const pagamento = await consultarPagamento(token, assinatura.ultima_cobranca_id)
     if (pagamento.external_reference !== assinatura.id_externo) throw new Error('pagamento_pix_divergente')
-    await sincronizarPix(pagamento)
+    const resultado = await sincronizarPix(pagamento)
+    if (resultado.status === 'approved') await reciboDaCobranca(idUsuario, assinatura, String(pagamento.id), 'pix', false).catch(() => undefined)
     return pagamento.status === 'approved'
   }
   const fatura = await buscarUltimaFaturaAprovada(token, assinatura.id_externo)
@@ -49,6 +65,7 @@ async function sincronizarCobranca(token: string, assinatura: Assinatura) {
       ...(ativar ? { status: 'ativa' } : {}),
     })
   }
+  await reciboDaCobranca(idUsuario, assinatura, String(pagamento.id), 'cartao', !!assinatura.ultima_cobranca_id && assinatura.ultima_cobranca_id !== String(pagamento.id)).catch(() => undefined)
   return true
 }
 
@@ -65,9 +82,13 @@ Deno.serve(async (req) => {
     const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
 
     if (acao === 'sincronizar_cobranca') {
-      const encontrada = await sincronizarCobranca(token, assinatura)
+      const encontrada = await sincronizarCobranca(token, assinatura, usuario.id)
       return json({ ok: true, cobranca_encontrada: encontrada }, 200, req)
     }
+    // "Obrigado pelo tempo de assinatura" (17/10/2026): sai depois de o cancelamento ou o
+    // reembolso estarem confirmados; idempotente pela assinatura; nunca muda a resposta.
+    const obrigado = (reembolso: boolean, fimEm: string | null) =>
+      pedirAutomaticoServidor(usuario.id, 'obrigado_tempo', { referencia: `fim:${assinatura.id}`, reembolso, fim_periodo: fimEm }).catch(() => undefined)
 
     if (acao === 'reembolsar') {
       if (assinatura.status !== 'ativa' && assinatura.status !== 'cancelada') return json({ erro: 'assinatura_nao_reembolsavel' }, 409, req)
@@ -115,6 +136,7 @@ Deno.serve(async (req) => {
     if (assinatura.id_externo.startsWith('pix:')) {
       if (acao === 'reembolsar') {
         await sincronizarPix(await consultarPagamento(token, assinatura.ultima_cobranca_id!))
+        await obrigado(true, new Date().toISOString())
       }
       return json({ ok: true, garantia: acao === 'reembolsar' }, 200, req)
     }
@@ -131,6 +153,8 @@ Deno.serve(async (req) => {
     await atualizarAssinatura(assinatura.id, acao === 'reembolsar'
       ? { status: 'reembolsada', cancelar_ao_fim: true, fim_periodo: agora, cancelada_em: agora }
       : { cancelar_ao_fim: true, cancelada_em: agora })
+    // No cancelamento o acesso segue até o fim do período pago; no reembolso termina agora.
+    await obrigado(acao === 'reembolsar', acao === 'reembolsar' ? agora : assinatura.fim_periodo)
     return json({ ok: true, garantia: acao === 'reembolsar' }, 200, req)
   } catch (erro) {
     const codigo = erro instanceof Error && erro.message === 'autenticacao_necessaria' ? 401 : 502

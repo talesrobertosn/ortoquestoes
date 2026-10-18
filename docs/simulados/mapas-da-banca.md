@@ -2846,3 +2846,331 @@ que esta questão foi criada".
 - **Pendências:** prótese de fêmur distal, dupla placa e haste com placa, falhas por material, FCL,
   oito corticais e 50% dos furos, prazos de fixação e mortalidade no idoso, retirada do material e
   tratamento da pseudartrose ficaram para o resumo, para manter a média de 10 a 12.
+
+## Fratura do planalto tibial (engenharia reversa em 17/10/2026; Rockwood cap. 62)
+
+**Recorte.** `mapear_banca.py` com regex de platô, planalto, SCHATZKER, MOORE, LOBENHOFFER, três
+colunas e côndilo tibial, subtema "Fratura do planalto tibial", tema trauma: 23 oficiais de TEOT e
+TARO (um falso positivo, `trauma-0237`, AOSPINE com "platô vertebral"; e `trauma-1056`, TEOT 2024,
+que é edema ósseo do LCA, mantida com a cópia `joelho-0138` marcada como duplicata). Fora do filtro:
+SBOT-SP `trauma-0558` (gravura de HOHL e MOORE, tipo III), CET-PR `trauma-0703` (placa
+anticisalhamento), ENARE R4 2024 `trauma-1014` (SCHATZKER II) e 2025 `trauma-1195` (via
+posterolateral). Simulados já existentes do tema: `trauma-1598` (síndrome compartimental no
+SCHATZKER VI), `conceitos-basicos-0353` (congruência no acetábulo e alinhamento com estabilidade no
+planalto) e `0403` (técnica pass-through); de anatomia, `joelho-0343` (GERDY) e `0351` (menisco lateral).
+
+**Frequência.** Cai quase todo ano desde 2018 (2018, 2019, 2020 duas, 2021 duas, 2022 duas, 2023,
+2024 três), além de 2007 a 2015 e quatro sem ano. Prioridade alta.
+
+**Fatos carimbados.**
+- **Lesão associada mais frequente = menisco lateral** (TARO 2009 sem gabarito, TARO 2018, TARO 2021,
+  TARO 2023 e `trauma-0313` sem ano); ligamento mais lesado = **LCA** (`trauma-0960`, sem ano). O
+  capítulo confirma (GARDNER: menisco lateral 91%, LCA 77%, canto posterolateral 68%, menisco medial
+  44%), mas também cita DELAMARTER, com o LCM como o mais lesado nas radiografias sob estresse.
+- **SCHATZKER:** depressão pura = III (sem ano), osso osteoporótico = depressão central (TEOT 2022), IV
+  por varo com lesão do complexo lateral (TEOT 2024), IV com maior risco vascular (TARO 2013).
+- **KFURI e SCHATZKER** (TARO 2020 e TARO 2024, mesmo texto): limite posterior da cabeça da fíbula e
+  limite posterior da inserção do LCM. **Não está no capítulo 62.**
+- **Cisalhamento posteromedial:** flexão, varo e rotação interna do côndilo femoral medial (TARO 2019,
+  igual ao capítulo); subluxação anterior da tíbia (TARO 2020, gabarito C; o capítulo não descreve).
+- **Vias:** posterolateral entre gastrocnêmio lateral e bíceps (TARO 2015, ENARE 2025); LOBENHOFFER
+  com osteotomia da cabeça da fíbula (sem ano); anterolateral estendida com osteotomia do epicôndilo
+  lateral, LCL e poplíteo (TEOT 2021, fora do capítulo). Ordem na AO C: medial pela posteromedial,
+  depois lateral (TARO 2011, sem gabarito; o capítulo sustenta a alternativa A).
+- **Artrose mais rara no planalto** que no calcâneo, acetábulo e pilão (TARO 2013), igual ao capítulo.
+- Antigas sem gabarito: ligamentotaxia (TARO 2008; o capítulo fala de tração e fixador transarticular,
+  sem usar o termo) e perfil da radioscopia com lateral convexo e medial côncavo (TARO 2007; o capítulo
+  sustenta A). Anatomia: TARO 2012 (`joelho-0212`), planalto lateral mais alto e convexo.
+
+**Forma.** Enunciado mediano de 99 caracteres, alternativas de 30; termina em palavra (16) ou
+dois-pontos (6); sem caso clínico e sem imagem no TEOT/TARO; 7 pares 2 por 2 (varo ou valgo com
+complexo medial ou lateral; anterior ou posterior da fíbula e do LCM; flexão ou extensão com rotação).
+Aberturas "Na fratura do planalto tibial..." (12) e "A fratura...". Gabarito oficial puxado para A
+(8 A, 5 B, 2 C, 4 D). Reciclagem quase literal: menisco lateral cinco vezes; KFURI duas.
+
+**Divergências (para `alerta:` do resumo).**
+- `trauma-0910` (sem ano, LOBENHOFFER = osteotomia da cabeça da fíbula): o capítulo chama de
+  "abordagem de LOBENHOFFER" uma via posteromedial sem soltar o gastrocnêmio medial; a via
+  transfibular aparece citando o artigo de LOBENHOFFER de 2011, sem o epônimo no texto.
+- `trauma-0007` (TARO 2020, subluxação anterior) e `trauma-0223` (TEOT 2021, osteotomia do epicôndilo
+  lateral): fora do capítulo. `trauma-1036` e `trauma-0018` (KFURI): fora do capítulo.
+- `trauma-0960` (LCA) e `trauma-0052` (menisco): o capítulo dá suporte; DELAMARTER é o único dado a
+  favor do LCM e é de radiografia sob estresse.
+- Números do próprio capítulo: distância dos pinos 14 mm (estudo das reflexões capsulares) e 15 mm
+  (planejamento); cobrar 14 mm com distratores longe.
+
+**Lacunas com cara de prova.** Incidência caudal de 10 a 15 graus (MOORE e HARVEY 14 graus); LUO pela
+regra do traço cortical; HOHL e MOORE com as taxas neurovasculares (12%, 30%, cerca de 50%); via
+posteromedial entre pata de ganso e gastrocnêmio medial; trifurcação na abertura da membrana
+interóssea a cerca de 49 mm; placa antideslizante no ápice; cimento de fosfato de cálcio mais rígido
+e quebradiço (parafusos antes); fixador a 14 mm contra artrite séptica (até 10%); hiperextensão em varo
+de FIROOZABADI; WAHLQUIST 67% de síndrome compartimental; STARK 53% no IV contra 18% no VI; fixador
+temporário desnecessário nos SCHATZKER I a III; infecção histórica de 73% a 87% por incisão única;
+MRSA como germe mais comum.
+
+**Destino.** Tema Trauma, subtema "Fratura do planalto tibial". Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 62** (Tibial Plateau Fractures; Maniar e Horwitz): `trauma-1669` a
+`trauma-1681`, 13 questões, sem figura e sem caso clínico, gabarito A3/B3/C3/D4, mediana do
+comentário de 4.273 caracteres, cada comentário fechado com "Por que esta questão foi criada".
+- **Gêmeas dos carimbados:** menisco lateral e LCA em par (cinco provas); LCM e LCA presos ao fragmento
+  no SCHATZKER IV (TEOT 2024, TARO 2013); HOHL e MOORE V com cerca de 50% neurovascular (SBOT-SP, TARO
+  2013); LUO zero coluna (sem ano, TEOT 2022); trifurcação na via posterolateral (TARO 2015, ENARE 2025,
+  sem ano); placa antideslizante no ápice (CET-PR, TARO 2019); medial primeiro e incisões a 180 graus
+  (TARO 2011); lateral um pouco mais alto e hiper-redução (TARO 2012, TARO 2007); artrose ligada ao
+  malalinhamento e à meniscectomia (TARO 2013); instabilidade em valgo óssea, com o LCM como dobradiça
+  (TARO 2009 e 2018).
+- **Lacunas:** via posteromedial (espelho da posterolateral); cimento de fosfato de cálcio com
+  parafusos antes; pinos a 14 mm contra artrite séptica.
+- **Pendências:** hiperextensão em varo, WAHLQUIST, incidência caudal e fixador temporário nas
+  laterais ficaram para o resumo. Lição: o capítulo não traz KFURI e SCHATZKER nem a via anterolateral
+  estendida; questões desses pontos precisam de outra fonte enviada pelo Tales.
+
+## Fraturas do tornozelo (engenharia reversa em 17/10/2026; Rockwood cap. 65)
+
+**Recorte.** Subtemas "Fratura do tornozelo" (trauma), "Fraturas do tornozelo e do pilão tibial" e "Lesão da
+sindesmose" (pé e tornozelo), mais regex (maléolo, sindesmose, MAISONNEUVE, LAUGE, WEBER, deltoide,
+tibiofibular, VOLKMANN, CHAPUT, espaço claro, mortalha) nos temas trauma, pé e tornozelo e conceitos
+básicos, tirando pilão, artrodese, entorse, pé plano e as fraturas da criança (TILLAUX fica na pediatria).
+Cerca de 40 oficiais úteis, de TARO 2006 a TEOT 2025, com uma ou duas por ano desde 2020 e quatro no
+TEOT 2022. Cópias: `trauma-0207` = `trauma-0171`; `pe-tornozelo-0087` = `trauma-0300`; `trauma-0798` =
+`pe-tornozelo-0247` (igual ao `trauma-1033`, TARO 2025); `pe-tornozelo-0051` = `pe-tornozelo-0295`.
+
+**Fatos carimbados.**
+- **LAUGE-HANSEN** é o centro: SER IV e WEBER B em imagem (TEOT 2022); SER II em imagem (CET-PR); ordem
+  da SER e primeiro elemento a falhar, o tibiofibular anterior (TARO 2007 e 2006, sem gabarito); SAD II
+  com depressão do plafond medial (TEOT 2021 e sem ano); WEBER A = SAD com fratura vertical do medial
+  (TEOT 2025); pronação-abdução com fíbula cominuta (TARO 2012; TARO 2008 sem gabarito); MAISONNEUVE =
+  pronação-rotação externa (TARO 2020); VOLKMANN = maléolo posterior (SBOT-SP).
+- **Ligamentos:** tibiofibular posteroinferior preservado na trimaleolar (TARO 2021); posterior mais forte
+  que o anterior (TARO 2006, sem gabarito); deltoide: tibiotalar posterior profundo o mais forte (TARO 2014,
+  duas cópias), superficial contra eversão e abdução (sem ano); tálus para lateral no estresse em eversão
+  com deltoide e sindesmose rotos (TARO 2010).
+- **Imagem:** mortalha a 15 graus (TEOT 2022); sobreposição tibiofibular e ângulo talocrural em imagem
+  (TEOT 2022); sinal da bola quebrado = fíbula curta (TEOT 2023); espaço tibiofibular de 3 mm como boa
+  redução (TARO 2015); RAMSEY e HAMILTON, 1 mm e 42% (TEOT 2025, subtema biomecânica).
+- **Estabilidade e sindesmose:** estresse em neutro e rotação externa do antepé (sem ano; TARO 2009 sem
+  gabarito); teste intraoperatório com tração e rotação externa (TEOT 2022); rotação lateral do tálus e
+  PILLINGS testam a sindesmose (TARO 2018, TARO 2024).
+- **Vias:** posterolateral entre fibulares e flexor longo do hálux (TEOT 2022; TARO 2014 no pilão);
+  fibular superficial na lateral (CET-PR); duas vias para a 44B2.3 trimaleolar (TARO 2025 e sem ano, figura
+  do próprio Rockwood 10ª ed.).
+- **ENARE:** 44A1.2 conservadora; WEBER C bimaleolar com placa; 44C2.1 com placa, deltoide e sindesmose.
+
+**Forma.** Enunciado mediano de cerca de 95 caracteres, alternativas de cerca de 30; termina em palavra ou
+dois-pontos; pares 2 por 2 frequentes (mecanismo de LAUGE-HANSEN com WEBER; incidência com rotação;
+tração ou compressão com rotação interna ou externa); imagem no TEOT 2022 (três questões) e no TARO
+2025. Aberturas "Na fratura do tornozelo...", "Na fratura...". Gabarito oficial puxado para D.
+
+**Divergências (para `alerta:` do resumo).**
+- `trauma-1015` (ENARE 2024, 44C2.1): o gabarito sutura o deltoide e usa placa um terço de tubo; o
+  capítulo considera o reparo do deltoide desnecessário e sugere ponte com placa de compressão dinâmica
+  na fíbula cominuta.
+- `trauma-0149` (TARO 2015): a sobreposição de 7 mm (C) também é normal pela tabela 65-2; a banca deu o
+  espaço claro de 3 mm (D), o parâmetro que o capítulo considera mais confiável.
+- Fora do capítulo: PILLINGS (TARO 2024), EDWARDS e DeLEE (TARO 2008), número da distância intermaleolar
+  (TARO 2009), BASSETT (TEOT 2022). O capítulo cita só SIMMONDS ou THOMPSON no exame.
+- Números do próprio capítulo: carga protegida do diabético "até 8 semanas" no texto e "8 a 10 semanas"
+  na tabela 65-4; a tabela 65-2 põe na coluna "normal" os cortes da sindesmose que o texto usa como sinal de
+  lesão (espaço claro acima de 5 mm, sobreposição abaixo de 5 mm); perguntar só o inequívoco.
+
+**Lacunas com cara de prova.** BARTONÍČEK e HARAGUCHI (tabela 65-3, duplo contorno, conduta por tipo);
+indicações de parafuso AP contra placa posterior; corte de 20% no perfil para pedir tomografia; YABLON (o
+tálus segue a fíbula) e TORNETTA (um quarto instável com só o medial fixado); teste da marcha; EGOL 66%
+de estresse positivo; botão de sutura nas metanálises; má redução 44% fechada e 15% aberta (SAGI); haste
+da fíbula em 20 graus de rotação externa; parafuso medial no terço anterior (FEMINO) e conferido no AP;
+diabético com neuropatia; flictena hemorrágica e 10 dias; sem profilaxia de rotina; WILLETT 25% de falha
+do gesso de contato; OTTAWA; segunda fratura mais comum do membro inferior.
+
+**Destino.** Tema Trauma, subtema "Fratura do tornozelo". Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 65** (Ankle Fractures; White e Carter): `trauma-1682` a `trauma-1693`, 12
+questões, sem figura e sem caso clínico, gabarito A3/B3/C3/D3, mediana do comentário de 4.316
+caracteres, cada comentário fechado com "Por que esta questão foi criada".
+- **Gêmeas dos carimbados:** RAMSEY e HAMILTON com a variável invertida (TEOT 2025); SER IV instável e
+  WEBER B (TEOT 2022, TARO 2007 e 2006); SAD II com placa de suporte começando pelo medial (TEOT 2021 e
+  2025); pronação-abdução cominuta em ponte (TARO 2012 e 2008); MAISONNEUVE e a conduta (TARO 2020);
+  posteroinferior preso ao fragmento posterior e a fixação que estabiliza a sindesmose (TARO 2021,
+  SBOT-SP); espaço claro medial e o parâmetro mais confiável da sindesmose (TEOT 2022, TARO 2015, TEOT
+  2023); estresse em neutro e a razão (sem ano, TARO 2009).
+- **Lacunas:** BARTONÍČEK 3 com duplo contorno e via posteromedial; botão de sutura contra parafuso;
+  diabético com neuroartropatia e carga protegida; parafuso medial no terço anterior conferido no AP.
+- **Fronteira:** o pilão (cap. 64, `trauma-1694` a `trauma-1705`) ficou com flictenas, CHAPUT e VOLKMANN
+  no pilão e via anterior; a diáfise da tíbia (cap. 63) com o maléolo posterior da fratura espiral distal
+  (`trauma-1710`). Lição: o capítulo 65 quase não traz números da luxação-fratura nem classificação de
+  lesão isolada da sindesmose; perguntas desses pontos precisam de outra fonte.
+
+## Fratura do pilão tibial (engenharia reversa em 17/10/2026; Rockwood cap. 64)
+
+**Recorte.** `mapear_banca.py` com regex de pilão, plafond, RÜEDI, ALLGÖWER, CHAPUT e TILLAUX e subtema
+"pilão tibial" (pega "Fratura do pilão tibial" de trauma e "Fraturas do tornozelo e do pilão tibial" de
+pé e tornozelo), com `--todas-as-provas`: 48 no recorte, 38 de TEOT/TARO com quatro alternativas. Do
+pilão de verdade, 21; o resto é tornozelo (LAUGE-HANSEN, trimaleolar), TILLAUX da criança, artroplastia e
+pilão da interfalângica (`mao-0823`). Duplicata: `trauma-0299` é cópia de `pe-tornozelo-0086` (citar a
+segunda). Nenhum simulado do pilão existia; `trauma-1598` (síndrome compartimental) usa o pilão como
+distrator.
+
+**Frequência.** TARO 2012, 2014, 2016, 2018, 2023, 2024 e 2026, TEOT 2022, além de TARO 2006 a 2009
+(sem gabarito) e cinco sem ano. Prioridade média, uma questão a cada um ou dois anos.
+
+**Fatos carimbados.**
+- **Vias (o bloco que mais cai):** posterolateral entre fibulares e flexor longo do hálux (TARO 2014,
+  TEOT 2022; SBOT-SP com outra resposta); maior área da tíbia distal pela anteromedial (sem ano, duas
+  cópias); anteromedial lateral à crista em direção à base do navicular (sem ano); anterolateral alinhada
+  ao quarto raio (sem ano); feixe afastado lateralmente na via anterior (TARO 2020); nervos tibial e sural
+  no desvio posteromedial (TARO 2012).
+- **Mecanismo e associadas:** cominuição anterior por carga axial com dorsiflexão (TARO 2016); artéria
+  tibial anterior como a mais lesada (TARO 2023, igual ao capítulo: 9 de 14).
+- **Partes moles:** histologia da flictena, retenção de células epidérmicas na serosa (TARO 2026, igual
+  ao capítulo); desbridamento da flictena (TARO 2006, certo ou errado, sem gabarito).
+- **Classificação e prognóstico:** RÜEDI III pior (TARO 2009, sem gabarito; o livro sustenta C); AO B3 =
+  depressão multifragmentária (TARO 2018); cominuição articular como pior prognóstico (TEOT 2022).
+- **Tratamento:** estagiado com ligamentotaxia e fixador transarticular no 43C3 (TARO 2024, caso
+  clínico); fíbula de traço simples não evita o varo (sem ano); não fixar a fíbula quando o encurtamento
+  ajuda a fechar ferida medial (SBOT-SP).
+- **Resultado:** artrose nos dois primeiros anos (TARO 2008, sem gabarito; o livro sustenta A); artrose
+  mais rara no planalto que no pilão (TARO 2013).
+
+**Forma.** Enunciado mediano de 94 caracteres, alternativas de 27; termina em palavra (25) ou
+dois-pontos (9); um caso clínico (TARO 2024); 12 pares (nervo com nervo, mecanismo com posição do pé,
+intervalo entre dois tendões, início e destino da incisão). Aberturas "Na fratura do pilão tibial..." e
+"Nas fraturas do pilão tibial...". Gabarito oficial puxado para B e C (5 A, 11 B, 12 C, 4 D no recorte
+inteiro).
+
+**Divergências (para `alerta:` do resumo).**
+- `trauma-0719` (SBOT-SP): posterolateral "entre FLH e FLD" contra o capítulo e contra TARO 2014 e TEOT
+  2022 (fibulares e FLH).
+- `pe-tornozelo-0006` (TARO 2020): "lateralmente com o extensor longo dos dedos"; o capítulo diz que o
+  feixe vai lateral com o extensor longo do hálux (alternativa ausente).
+- `trauma-0821` (TARO 2012): tibial e sural; o capítulo sustenta o tibial (túnel do tarso), não discute
+  o sural nesse desvio.
+- `pe-tornozelo-0086` (sem ano): a anterior direta, que o capítulo diz mostrar o plafond inteiro, não
+  está nas alternativas; a anteromedial modificada mostra centro e medial.
+- `trauma-0047` (TARO 2018): o capítulo não detalha B1 a B3.
+- Os quatro princípios clássicos de RÜEDI e ALLGÖWER não aparecem listados no capítulo 64; ele traz a
+  versão atual (fíbula na coluna lateral, articulação antes da diáfise, enxerto só com falha, placa pelo
+  lado da compressão e pelas colunas).
+
+**Lacunas com cara de prova.** Posição do pé na carga axial pelo espelho (flexão plantar = posterior);
+conduta das flictenas; 10 dias e retorno das rugas; tomografia depois do fixador (muda o plano em 64%);
+fragmento constante no 43B e conversão do 43C em 43B pelo VOLKMANN; CHAPUT anterolateral e VOLKMANN
+posterolateral; valgo com fíbula cominuta e placa lateral; pino no calcâneo no fixador e no colo do tálus
+no distrator (o calcâneo distrai a subtalar); pontes de pele de 7 cm (mínimo 5 cm) e incisões a 120
+graus; ângulo de saída de 110 graus da anterior estendida; necrose superficial como a complicação de
+ferida mais comum; pseudartrose metafisária em varo com encurtamento medial; garrote a 325 mmHg por 2 a
+2,5 horas; pontos por 4 a 6 semanas.
+
+**Destino.** Tema Trauma, subtema "Fratura do pilão tibial". Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 64** (Tibial Pilon Fractures; Sanders e Flanagan): `trauma-1694` a
+`trauma-1705`, 12 questões, sem figura e sem caso clínico, gabarito A3/B3/C3/D3, mediana do comentário
+de cerca de 5 mil caracteres, cada comentário fechado com "Por que esta questão foi criada".
+- **Gêmeas dos carimbados:** posição do pé (TARO 2016, espelho); flictena pela conduta (TARO 2026 e
+  2006); AO 43B e 43C pelo fragmento constante (TARO 2018); RÜEDI II (TARO 2009, TEOT 2022); CHAPUT e
+  VOLKMANN pela posição (TARO 2021, epônimos da sindesmose); tomografia e 10 dias com rugas (TARO 2024);
+  valgo, fíbula cominuta e placa lateral (sem ano, colapso em varo); feixe com o extensor longo do hálux
+  na via anterior (TARO 2020); artrose nos dois primeiros anos (TARO 2008).
+- **Lacunas:** reconstrução de posterior para anterior (43C vira 43B); pinos do fixador e do distrator.
+- **Fronteira:** os caps. 63 (diáfise da tíbia, `trauma-1706` em diante) e 65 (tornozelo, `trauma-1682`
+  a `trauma-1693`) foram feitos em paralelo; para não repetir o simulado do tornozelo sobre o ligamento
+  preso ao maléolo posterior (`trauma-1687`), a questão de CHAPUT e VOLKMANN pergunta a posição dos
+  fragmentos, e não o ligamento. Lição: o pilão e o tornozelo dividem a via posterolateral e os
+  epônimos da sindesmose; combinar a fronteira antes de escrever.
+
+## Fratura da diáfise da tíbia e da fíbula (engenharia reversa em 17/10/2026; Rockwood cap. 63)
+
+**Recorte.** `mapear_banca.py --subtema 'Fratura da diáfise da tíbia' --tema trauma`: 21 oficiais de TEOT e
+TARO (TARO 2007 a 2026, TEOT 2023 a 2025, três sem ano), mais as do mesmo assunto em outros subtemas,
+achadas com regex de tíbia, perna, GUSTILO, MESS, SARMIENTO, TSCHERNE e pseudartrose: síndrome
+compartimental na tíbia (TEOT 2025 `trauma-0746`, TARO 2026 `0983`, 2022 `0229`, 2014 `0164`, 2013
+`1092`, 2009 `1153` sem gabarito), expostas (TARO 2015 `0139`, 2013 `1093`, 2012 `0824`, 2023 `0435`,
+2016 `0116`, 2010 `0877`, 2007 `1131` sem gabarito), pseudartrose da tíbia (TEOT 2022
+`conceitos-basicos-0067`, cópia `0090`), CORA (SBOT-SP `conceitos-basicos-0095`, cópia TEOT 2023
+`trauma-0940`) e as de certo ou errado do TARO 2006 sem gabarito (`trauma-1156`, `1168` a `1173`).
+Duplicatas: `trauma-0049` (TARO 2018) é cópia de `trauma-0890` (TARO 2010). Simulados já existentes:
+`trauma-1236` (HOOPER interrompido), `1593`, `1597`, `1598`, `1605` (síndrome compartimental),
+`conceitos-basicos-0338`, `0362` (cunha no gesso), `0365` (PTB), `0373` (não fresada), `0375`
+(dinamização), `0376` (troca de haste), `0404` (bloqueio contra valgo e procurvato) e `0406` (placa
+unicortical).
+
+**Frequência.** Cai quase todo ano (2017, 2018 duas, 2019, 2022, 2023 quatro, 2024 duas, 2025, 2026),
+mais as provas antigas e as de síndrome compartimental e exposta que usam a tíbia como cenário.
+Prioridade alta.
+
+**Fatos carimbados.**
+- **Haste na fratura proximal (o bloco mais cobrado):** ponto de entrada medial demais = valgo (TARO
+  2018 `1083`, TEOT 2024 `0575`); infrapatelar = valgo e antecurvato (TEOT 2023 `1075`); angulação e
+  desvio do fragmento proximal = valgo e anterior (TARO 2024 `0675`); KRETTEK no lado côncavo, de
+  anterior para posterior (TARO 2023 `0427`). O capítulo confirma tudo e acrescenta o varo pelo
+  ponto lateral demais na suprapatelar.
+- **Suprapatelar:** indicação principal = fratura proximal (TARO 2019 `1085`); diferença = ponto mais
+  fácil no AP, com "menor dor" como distrator (TARO 2023 `0441`). Igual ao capítulo.
+- **SARMIENTO:** fíbula íntegra = deformidade angular (TARO 2010 e 2018, mesmo texto); princípio =
+  partes moles (TARO 2013 `1097`); PTB até o polo inferior, estabilidade rotacional (sem ano `0896`,
+  dado fora do capítulo).
+- **AO 42:** A2.1 (TARO 2022 `0224`), B2.1 (sem ano `0305`).
+- **Lesões associadas:** maléolo posterior por cisalhamento coronal no quarto distal (sem ano `0904`);
+  joelho flutuante com pior evolução na exposta da tíbia e intra-articular do joelho (TEOT 2025 `0748`,
+  igual ao capítulo; o resumo do fêmur o tinha como fora do capítulo 57).
+- **Complicações:** dor na inserção da haste como queixa mais comum (TARO 2017 `0088`); fibular comum
+  como lesão neurológica (TARO 2015 `0137`); quebra dos parafusos distais (TARO 2011 `0865`).
+- **Exposta e amputação:** artéria isolada não é IIIC (TARO 2015); isquemia acima de 6 h (TARO 2013)
+  contra MESS de 7 ou mais (TARO 2012), quase o mesmo texto com gabaritos diferentes.
+- **Síndrome compartimental:** proximal e masculino (TEOT 2025), masculino abaixo de 55 (TARO 2014),
+  diáfise da tíbia como a mais frequente (TARO 2013).
+- **Placa:** MIPO na 42C3 = anterolateral e fibular superficial (TARO 2026 `0996`).
+
+**Forma.** Enunciado mediano de 132 caracteres, alternativa de 26; termina em palavra (17) ou
+dois-pontos (4); um caso clínico (TARO 2026), sem imagem; cinco pares 2 por 2 (varo ou valgo com
+anterior ou posterior; côncava ou convexa com direção; via com estrutura em risco; terço com sexo).
+Aberturas "Na fratura..." e "Na osteossíntese intramedular...". Gabarito oficial equilibrado (A5, B4,
+C5, D6). Reciclagem quase literal: SARMIENTO com fíbula íntegra (2010 e 2018), ponto medial e valgo
+(2018 e 2024), amputação (2012 e 2013).
+
+**Divergências (para `alerta:` do resumo).**
+- `trauma-0865` (TARO 2011, gabarito "dinamização"): o capítulo liga a vida da montagem à resistência
+  e ao diâmetro dos parafusos, que acompanham o diâmetro da haste (alternativa A).
+- `trauma-0824` (TARO 2012, gabarito MESS de 7 ou mais): o capítulo diz que os escores não são usados
+  na prática; a indicação absoluta é a isquemia quente acima de 6 h (gabarito do TARO 2013, `1093`).
+- `trauma-0116` (TARO 2016, TSCHERNE 3 numa exposta): o capítulo descreve TSCHERNE só nas fechadas e
+  não cita a síndrome compartimental no C3.
+- Fora do capítulo: borda do PTB (`0896`), CORA (`conceitos-basicos-0095`), compartimento mais acometido
+  e local do cateter (TARO 2022 e 2026, cap. 17), MASQUELET (o capítulo descreve o espaçador sem o
+  epônimo), pontuação AO de partes moles (TARO 2007).
+- Sem gabarito: TARO 2007 `1128` (sequência na diástase; o capítulo sustenta bloqueio distal,
+  compressão e bloqueio proximal); TARO 2006 `1172` (valgo e recurvato; o capítulo diz ápice
+  anterior), `1173` (haste com mais pseudartrose que placa na metáfise; o capítulo diz mais
+  malalinhamento, pseudartrose semelhante), `1170` (corte de um terço; o capítulo dá 30% e 50% na
+  espiral), `1168` (neuropatia; não listada), `1156` e `1169` (sustentadas).
+
+**Lacunas com cara de prova.** Fio-guia distal lateral ao centro do pilão e centrado no perfil; furo
+de bloqueio até a metade do diâmetro; pelo menos três parafusos proximais e dois distais; luxação
+tibiofibular proximal (1,5%, fíbula íntegra, 29% de síndrome compartimental, parafuso); GUSTILO com
+segmentar = IIIA; OTA-OFC com cinco atributos; tabela de desvio aceitável (5 graus, 10 a 12 mm);
+conversão do fixador em haste em até 14 dias; fixador circular contra haste na exposta grave (mais
+complicações, mesma infecção profunda); NURD (0 a 5 = 2%, acima de 12 = 61%); pseudartrose aos 6
+meses; S. aureus em 64%; fíbula isolada (bota com carga; golpe lateral e lado medial do joelho;
+fratura proximal e varo); vascularização medular de 91,4% e nutrícia da tibial posterior.
+
+**Destino.** Tema Trauma, subtema "Fratura da diáfise da tíbia" (com "Fraturas expostas",
+"Síndrome compartimental" ou "Fratura da diáfise do fêmur" quando cabe). Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 63** (Tibia and Fibula Shaft Fractures; Butler, Boulton e O'Toole):
+`trauma-1706` a `trauma-1719`, 14 questões, sem figura e sem caso clínico, gabarito A3/B3/C4/D4,
+mediana do comentário de 4.460 caracteres, cada comentário fechado com "Por que esta questão foi
+criada".
+- **Gêmeas dos carimbados:** ponto de entrada certo e AP verdadeiro (TARO 2018, TEOT 2024); varo e
+  ápice anterior na suprapatelar (espelho do TEOT 2023 e do TARO 2024); o que dificulta cada via
+  (TARO 2019 e 2023); maléolo posterior e tomografia (sem ano); GUSTILO segmentar e artéria fibular
+  (TARO 2015); isquemia quente acima de 6 h (TARO 2012 e 2013); limites de SARMIENTO (TARO 2010, 2013 e
+  2018); traço longo e esporte de baixa energia (TEOT 2025, TARO 2014); joelho flutuante IIA com
+  haste nos dois ossos (TEOT 2025); fibular comum e feixe tibial anterior nos parafusos (TARO 2015);
+  safeno e fibular superficial na placa percutânea (TARO 2026); dor anterior sem diferença entre as
+  vias e retirada com alívio inconsistente (TARO 2017 e 2023).
+- **Lacunas:** fio-guia distal; fíbula isolada.
+- **Fronteira:** pilão (cap. 64, `trauma-1694` a `1705`) e tornozelo (cap. 65, `trauma-1682` a `1693`)
+  foram feitos em paralelo; o simulado da espiral distal (`trauma-1710`) pergunta a lesão do maléolo
+  posterior e o exame antes da haste, sem repetir os do tornozelo sobre o fragmento posterior
+  (`trauma-1687`, `1688`), e o MAISONNEUVE ficou só no texto (é do `trauma-1686`). Lição: o capítulo
+  63 é o lugar da síndrome compartimental e da exposta aplicadas à tíbia; os dados de compartimento
+  mais acometido e de cateter ficam no capítulo 17.

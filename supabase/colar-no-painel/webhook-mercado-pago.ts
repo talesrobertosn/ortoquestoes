@@ -37,6 +37,10 @@ async function consultarMercadoPago(token, caminho) {
 var consultarFatura = (token, id) => consultarMercadoPago(token, `authorized_payments/${encodeURIComponent(id)}`);
 var consultarPagamento = (token, id) => consultarMercadoPago(token, `v1/payments/${encodeURIComponent(id)}`);
 
+// supabase/functions/_shared/cartas.ts
+var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto", "pagamento_aprovado", "obrigado_tempo"];
+var TIPOS_CAMPANHAS_DIARIAS = ["assinou_sem_cronograma", "assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema"];
+
 // supabase/functions/_shared/modelo-email.ts
 var esc = (texto) => texto.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 function emailAlerta(titulo, linhas, link) {
@@ -55,6 +59,7 @@ ${linhas.join("\n")}
 
 ${link}` };
 }
+var TIPOS_AUTOMATICOS = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS];
 
 // supabase/functions/_shared/email.ts
 var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
@@ -82,6 +87,21 @@ async function enviarEmail(para, assunto, html, texto, descadastro) {
 }
 function site() {
   return (Deno.env.get("APP_ORIGIN") ?? "https://ortoquestoes.com.br").replace(/\/+$/, "") + "/";
+}
+async function pedirAutomaticoServidor(idUsuario, tipo, extra = {}) {
+  try {
+    const segredo = Deno.env.get("EMAIL_SEGREDO"), base = Deno.env.get("SUPABASE_URL"), anon = Deno.env.get("SUPABASE_ANON_KEY") ?? "";
+    if (!segredo || !base || !idUsuario || !emailConfigurado()) return null;
+    const r = await fetch(`${base}/functions/v1/enviar-email`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", apikey: anon, Authorization: `Bearer ${anon}`, "x-segredo": segredo },
+      body: JSON.stringify({ acao: "automatico", tipo, id_usuario: idUsuario, ...extra })
+    });
+    const dados = await r.json().catch(() => ({}));
+    return dados.resultado ?? dados.erro ?? null;
+  } catch {
+    return null;
+  }
 }
 async function emailsAdministradores() {
   const resposta = await banco("rpc/emails_administradores", { method: "POST", body: "{}" });
@@ -197,10 +217,35 @@ function alteracaoDaCobranca(status, pagamento, statusAtual) {
   return null;
 }
 async function assinaturaPorExterno(idExterno) {
-  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status`);
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status,id_usuario,plano,inicio_periodo,fim_periodo,ultima_cobranca_id`);
   if (!resposta.ok) throw new Error("consulta_assinatura_falhou");
   const assinaturas = await resposta.json();
   return assinaturas[0] ?? null;
+}
+async function cartaDaCobranca(status, pagamento, antes) {
+  if (!antes.id_usuario) return;
+  if (status === "approved") {
+    const depois = await assinaturaPorExterno(String(pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id ?? "")).catch(() => null);
+    await pedirAutomaticoServidor(antes.id_usuario, "pagamento_aprovado", {
+      referencia: `pg:${pagamento.id}`,
+      plano: depois?.plano ?? antes.plano,
+      inicio_periodo: depois?.inicio_periodo ?? antes.inicio_periodo,
+      fim_periodo: depois?.fim_periodo ?? antes.fim_periodo,
+      meio: pagamento.payment_method_id === "pix" ? "pix" : "cartao",
+      renovacao: !!antes.ultima_cobranca_id && antes.ultima_cobranca_id !== String(pagamento.id)
+    });
+  } else if (status === "refunded" || status === "charged_back" || status === "cancelled") {
+    await pedirAutomaticoServidor(antes.id_usuario, "obrigado_tempo", { referencia: `fim:${pagamento.id}`, reembolso: status !== "cancelled", fim_periodo: (/* @__PURE__ */ new Date()).toISOString() });
+  }
+}
+async function cartaDoPix(status, pedido, pagamento) {
+  if (status === "approved") {
+    const r = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(`pix:${pedido.id}`)}&select=plano,inicio_periodo,fim_periodo`);
+    const [a] = r.ok ? await r.json() : [];
+    await pedirAutomaticoServidor(pedido.id_usuario, "pagamento_aprovado", { referencia: `pg:${pagamento.id}`, plano: a?.plano ?? pedido.plano, inicio_periodo: a?.inicio_periodo ?? null, fim_periodo: a?.fim_periodo ?? null, meio: "pix", renovacao: false });
+  } else if (status === "refunded" || status === "charged_back") {
+    await pedirAutomaticoServidor(pedido.id_usuario, "obrigado_tempo", { referencia: `fim:${pagamento.id}`, reembolso: true, fim_periodo: (/* @__PURE__ */ new Date()).toISOString() });
+  }
 }
 async function sincronizarPreapproval(idRecurso) {
   const token = Deno.env.get("MERCADO_PAGO_ACCESS_TOKEN");
@@ -251,13 +296,15 @@ async function aplicarCobranca(idAssinatura, pagamento, idEvento) {
   });
   if (!resposta.ok) throw new Error("atualizacao_cobranca_falhou");
   await marcarEvento(idEvento, "processado");
+  await cartaDaCobranca(String(pagamento.status ?? ""), pagamento, atual).catch(() => void 0);
 }
 async function processarPagamento(idRecurso, idEvento) {
   const token = Deno.env.get("MERCADO_PAGO_ACCESS_TOKEN");
   const pagamento = await consultarPagamento(token, idRecurso);
   if (pagamento.payment_method_id === "pix" && pagamento.external_reference?.startsWith("pix:")) {
-    await sincronizarPix(pagamento);
-    return marcarEvento(idEvento, "processado");
+    const resultado = await sincronizarPix(pagamento);
+    await marcarEvento(idEvento, "processado");
+    return cartaDoPix(resultado.status, resultado.pedido, pagamento).catch(() => void 0);
   }
   const idAssinatura = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id;
   if (!idAssinatura) return marcarEvento(idEvento, "ignorado");

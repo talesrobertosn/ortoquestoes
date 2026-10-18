@@ -187,6 +187,10 @@ export default defineConfig({
         manualChunks(id) {
           if (id.includes('node_modules/@supabase/')) return 'supabase'
           if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) return 'react'
+          // O motor das cartas e as versões escritas à mão (compartilhados com as Edge
+          // Functions) só servem ao painel: num arquivo próprio, as páginas de
+          // administração ficam dentro do orçamento por arquivo.
+          if (id.includes('supabase/functions/_shared/cartas')) return 'cartas'
         },
       },
     },
