@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Câmara escura e player da prova</title>
+<!-- Feed, estilo "câmara escura" (revelação fotográfica): questão tumores-0318 (TARO 2024), gabarito B (condroblastoma).
+     Stories, estilo "player de música": questão mao-0433 (TARO 2025), gabarito B (Bouvier).
+     Imagens reais das questões, sem marcação nova. Telas do Cronograma: marketing/kit/telas/*-18-10.png ("Faltam 84 dias").
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-18-revelacao-player/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; font-style: italic; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; }
+section.story { height: 1920px; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+
+/* ================= FEED: câmara escura ================= */
+:root { --luz: #E8392E; --papel: #F4EEE4; --tinta: #1A1210; --cinza: #A99791; }
+.escura { color: var(--papel); background: radial-gradient(ellipse 70% 45% at 50% -8%, rgba(232,57,46,.42), transparent 70%), radial-gradient(ellipse 60% 40% at 50% 112%, rgba(232,57,46,.18), transparent 70%), #0C0706; }
+.escura::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .5; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E"); }
+.escura > * { position: relative; z-index: 1; }
+.rotulo { position: absolute; left: 64px; right: 64px; top: 56px; display: flex; justify-content: space-between; align-items: center; font: 700 22px Inter; letter-spacing: .28em; text-transform: uppercase; color: var(--cinza); }
+.rotulo b { display: inline-flex; align-items: center; gap: 12px; color: var(--papel); font-weight: 700; }
+.rotulo b::before { content: ''; width: 12px; height: 12px; border-radius: 50%; background: var(--luz); box-shadow: 0 0 14px 4px rgba(232,57,46,.7); }
+
+/* negativo 35 mm */
+.filme { position: absolute; left: 0; right: 0; top: 126px; height: 660px; background: #17100E; box-shadow: 0 30px 60px rgba(0,0,0,.6); }
+.filme::before, .filme::after { content: ''; position: absolute; left: 0; right: 0; height: 64px; background: radial-gradient(ellipse 13px 16px at 50% 50%, #0C0706 98%, transparent 100%) 0 50% / 54px 64px repeat-x; }
+.filme::before { top: 0; } .filme::after { bottom: 0; }
+.borda-txt { position: absolute; left: 70px; right: 70px; font: 700 17px Inter; letter-spacing: .2em; color: #D9783B; opacity: .85; display: flex; justify-content: space-between; }
+.borda-txt.cima { top: 70px; } .borda-txt.baixo { bottom: 70px; }
+.quadro { position: absolute; left: 120px; right: 120px; top: 100px; bottom: 100px; border-radius: 10px; overflow: hidden; background: #000; box-shadow: 0 0 0 3px #2A1D19; }
+.quadro img { position: absolute; width: 104%; left: -3.4%; top: -6%; }
+.vinheta { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, transparent 60%, rgba(0,0,0,.45)); }
+.f1-texto { position: absolute; left: 64px; right: 64px; top: 830px; }
+.f1-texto h1 { font: italic 700 88px/1 Playfair; letter-spacing: -.02em; }
+.f1-texto h1 em { color: var(--luz); font-style: italic; }
+.f1-texto p { margin-top: 18px; max-width: 900px; font: 400 27px/1.42 Inter; color: #CDBFB8; }
+.f1-texto p b { color: var(--papel); font-weight: 700; }
+.contato { position: absolute; left: 64px; right: 64px; top: 1088px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.cx { position: relative; padding: 18px 16px 16px; border-radius: 6px; background: #1A1210; box-shadow: inset 0 0 0 1.5px #3A2A25; }
+.cx small { display: block; font: 700 18px Inter; letter-spacing: .2em; color: #D9783B; }
+.cx span { display: block; margin-top: 8px; font: 600 26px/1.15 Inter; color: var(--papel); }
+.cx::after { content: ''; position: absolute; right: 12px; top: 12px; width: 8px; height: 8px; border-radius: 50%; background: #3A2A25; }
+.dica { position: absolute; left: 64px; right: 64px; bottom: 44px; display: flex; justify-content: space-between; font: 600 23px Inter; color: var(--cinza); }
+.dica b { color: var(--papel); font-weight: 700; }
+
+/* revelação */
+.bandeja { position: absolute; left: 40px; right: 40px; top: 120px; height: 820px; border-radius: 26px; background: linear-gradient(#2A0F0C, #170807); box-shadow: inset 0 0 0 10px #3B1612, inset 0 20px 60px rgba(0,0,0,.6), 0 30px 70px rgba(0,0,0,.6); overflow: hidden; }
+.bandeja::before { content: ''; position: absolute; inset: 10px; border-radius: 18px; background: radial-gradient(ellipse at 30% 20%, rgba(232,57,46,.28), transparent 60%), repeating-linear-gradient(170deg, rgba(255,255,255,.025) 0 8px, transparent 8px 22px); }
+.foto { position: absolute; left: 70px; top: 70px; width: 600px; padding: 24px 24px 90px; background: var(--papel); box-shadow: 0 24px 50px rgba(0,0,0,.55); transform: rotate(-3deg); }
+.foto .img { position: relative; height: 470px; overflow: hidden; background: #000; }
+.foto .img img { position: absolute; width: 104%; left: -3.4%; top: -6%; }
+.foto .img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(232,57,46,.08), transparent 40%); }
+.foto figcaption { position: absolute; left: 24px; right: 24px; bottom: 22px; font: 700 44px Caveat; color: #2A2320; }
+.notas { position: absolute; left: 700px; right: 70px; top: 100px; display: grid; gap: 26px; }
+.nota { padding: 18px 20px; background: #FFF7D6; color: #3A2B12; transform: rotate(2deg); box-shadow: 0 12px 24px rgba(0,0,0,.45); font: 700 34px/1.05 Caveat; }
+.nota:nth-child(2) { transform: rotate(-2.5deg); background: #FDE7E2; }
+.nota:nth-child(3) { transform: rotate(1.5deg); background: #E6F2E9; }
+.nota small { display: block; margin-bottom: 6px; font: 800 15px Inter; letter-spacing: .16em; text-transform: uppercase; color: #8A6E3A; }
+.resposta { position: absolute; left: 64px; right: 64px; top: 968px; display: flex; align-items: baseline; gap: 24px; }
+.resposta i { font-style: normal; display: grid; place-items: center; flex: none; width: 96px; height: 96px; border-radius: 50%; border: 4px solid var(--luz); font: 800 52px Jakarta; color: var(--luz); transform: rotate(-6deg); }
+.resposta h2 { font: italic 700 92px/1 Playfair; letter-spacing: -.02em; }
+.outras { position: absolute; left: 64px; right: 64px; top: 1110px; font: 400 25px/1.5 Inter; color: #C8B9B2; }
+.outras b { color: var(--papel); font-weight: 700; }
+.prova-c { position: absolute; left: 64px; right: 64px; bottom: 44px; padding-top: 18px; border-top: 1.5px solid #3A2A25; font: 500 25px/1.4 Inter; color: #E8DCD5; }
+.prova-c b { color: var(--luz); letter-spacing: .14em; text-transform: uppercase; font: 800 20px Inter; margin-right: 10px; }
+
+/* contagem */
+.timer { position: absolute; left: 64px; top: 140px; width: 560px; }
+.timer small { font: 700 22px Inter; letter-spacing: .28em; text-transform: uppercase; color: var(--cinza); }
+.visor { margin-top: 22px; padding: 30px 34px 26px; border-radius: 24px; background: #120A09; box-shadow: inset 0 0 0 2px #3A2A25, 0 0 60px rgba(232,57,46,.18); }
+.visor b { display: block; font: 800 190px/.9 Jakarta; letter-spacing: -.06em; color: var(--luz); text-shadow: 0 0 34px rgba(232,57,46,.65); font-variant-numeric: tabular-nums; }
+.visor span { display: block; margin-top: 10px; font: 700 26px Inter; letter-spacing: .2em; text-transform: uppercase; color: #E8DCD5; }
+.timer h2 { margin-top: 40px; font: italic 700 76px/1.02 Playfair; letter-spacing: -.02em; }
+.timer h2 em { color: var(--luz); }
+.timer p { margin-top: 24px; font: 400 32px/1.45 Inter; color: #CDBFB8; }
+.timer p b { color: var(--papel); font-weight: 700; }
+.nota-tela { position: absolute; font: 500 18px Inter; color: rgba(255,255,255,.42); z-index: 6; }
+.cta-c { position: absolute; left: 64px; right: 64px; top: 1010px; display: flex; align-items: center; gap: 30px; }
+.botao-c { flex: none; display: inline-flex; align-items: center; gap: 16px; padding: 26px 50px; border-radius: 99px; font: 800 44px Jakarta; letter-spacing: -.02em; color: #fff; background: linear-gradient(#F0473C, #B8231A); box-shadow: 0 0 50px rgba(232,57,46,.45), inset 0 2px 0 rgba(255,255,255,.35); }
+.botao-c svg { width: 40px; height: 40px; }
+.cta-c p { font: 600 27px/1.35 Inter; color: #E8DCD5; }
+.rodape { position: absolute; left: 64px; right: 64px; bottom: 40px; display: flex; justify-content: space-between; align-items: center; color: var(--papel); }
+.rodape small { font: 600 23px Inter; color: var(--cinza); letter-spacing: .04em; }
+
+/* iPhone (do modelo Treine grátis) */
+.iphone { --w: 400px; position: absolute; width: var(--w); padding: calc(var(--w) * .034); border-radius: calc(var(--w) * .17);
+  background: linear-gradient(145deg, #7b7f84 0%, #3b3e42 18%, #1d1e20 55%, #46494d 100%);
+  box-shadow: 0 0 0 1.5px #8d9196 inset, 0 0 0 calc(var(--w) * .008) #0d0d0e inset, 0 60px 120px rgba(0,0,0,.6), 0 20px 40px rgba(0,0,0,.4); z-index: 4; }
+.iphone .tela { position: relative; border-radius: calc(var(--w) * .138); overflow: hidden; aspect-ratio: 390 / 844; background: #0f1917; }
+.iphone .tela img { width: 100%; height: calc(100% - var(--w) * .115); margin-top: calc(var(--w) * .115); object-fit: cover; object-position: top; display: block; }
+.iphone .tela::before { content: '9:41'; position: absolute; left: 11%; top: calc(var(--w) * .045); font: 700 calc(var(--w) * .042) Inter; color: #fff; z-index: 2; }
+.iphone .tela::after { content: ''; position: absolute; right: 9%; top: calc(var(--w) * .05); width: calc(var(--w) * .07); height: calc(var(--w) * .032); border-radius: 4px; border: 1.5px solid rgba(255,255,255,.85); background: linear-gradient(90deg, #fff 70%, transparent 70%) content-box; padding: 1.5px; z-index: 2; }
+.iphone .ilha { position: absolute; top: calc(var(--w) * .03); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .27); height: calc(var(--w) * .078); border-radius: 999px; background: #000; z-index: 2; }
+.iphone .bt { position: absolute; width: calc(var(--w) * .012); border-radius: 3px; background: linear-gradient(90deg, #2a2c2f, #6b6f73); }
+.iphone .bt.d { right: calc(var(--w) * -.009); top: 26%; height: 11%; }
+.iphone .bt.e1 { left: calc(var(--w) * -.009); top: 20%; height: 5%; }
+.iphone .bt.e2 { left: calc(var(--w) * -.009); top: 28%; height: 8%; }
+.iphone .brilho { position: absolute; inset: calc(var(--w) * .034); border-radius: calc(var(--w) * .138); background: linear-gradient(115deg, rgba(255,255,255,.10), transparent 35%); pointer-events: none; z-index: 3; }
+
+/* ================= STORIES: player de música ================= */
+.player { color: #fff; background: #120D0B; }
+.fundo-blur { position: absolute; inset: -120px; background-size: cover; background-position: center; filter: blur(70px) saturate(1.4) brightness(.55); transform: scale(1.1); }
+.player::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,13,11,.15), rgba(18,13,11,.55) 55%, rgba(18,13,11,.92)); }
+.player > *:not(.fundo-blur) { z-index: 1; }
+.player::after { z-index: 0; } .fundo-blur { z-index: 0; }
+.p-topo { position: absolute; left: 72px; right: 72px; top: 262px; display: flex; justify-content: space-between; align-items: center; }
+.p-topo .seta-baixo { width: 44px; height: 44px; color: rgba(255,255,255,.85); }
+.p-topo div { text-align: center; }
+.p-topo small { display: block; font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.65); }
+.p-topo strong { display: block; margin-top: 6px; font: 700 26px Inter; }
+.p-topo .pontos { display: flex; gap: 6px; } .p-topo .pontos i { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.85); }
+.capa { position: absolute; left: 72px; right: 72px; top: 360px; aspect-ratio: 1; border-radius: 28px; overflow: hidden; box-shadow: 0 40px 90px rgba(0,0,0,.6); }
+.capa img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.faixa-info { position: absolute; left: 72px; right: 72px; top: 1330px; display: flex; justify-content: space-between; align-items: flex-end; }
+.faixa-info h2 { font: 800 62px/1.02 Jakarta; letter-spacing: -.035em; }
+.faixa-info p { margin-top: 8px; font: 500 30px Inter; color: rgba(255,255,255,.7); }
+.coracao { width: 52px; height: 52px; color: #fff; }
+.barra { position: absolute; left: 72px; right: 72px; top: 1488px; }
+.barra .trilho { height: 8px; border-radius: 4px; background: rgba(255,255,255,.25); }
+.barra .trilho i { display: block; height: 100%; border-radius: 4px; background: #fff; position: relative; }
+.barra .trilho i::after { content: ''; position: absolute; right: -10px; top: -6px; width: 20px; height: 20px; border-radius: 50%; background: #fff; }
+.barra .tempos { display: flex; justify-content: space-between; margin-top: 12px; font: 600 22px Inter; color: rgba(255,255,255,.6); }
+.controles { position: absolute; left: 72px; right: 72px; top: 1560px; display: flex; justify-content: space-between; align-items: center; }
+.controles svg { width: 56px; height: 56px; color: #fff; }
+.controles .play { width: 130px; height: 130px; border-radius: 50%; background: #fff; display: grid; place-items: center; color: #120D0B; }
+.controles .play svg { width: 60px; height: 60px; color: #120D0B; }
+.controles .fraco { opacity: .7; width: 44px; height: 44px; }
+
+/* fila */
+.fila-t { position: absolute; left: 72px; right: 72px; top: 262px; }
+.fila-t small { font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.65); }
+.fila-t h2 { margin-top: 10px; font: 800 64px/1.02 Jakarta; letter-spacing: -.035em; }
+.fila-t p { margin-top: 16px; font: 400 29px/1.4 Inter; color: rgba(255,255,255,.78); }
+.mini { position: absolute; left: 72px; right: 72px; top: 560px; display: grid; grid-template-columns: 300px 1fr; gap: 34px; align-items: center; }
+.mini .art { aspect-ratio: 1; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 50px rgba(0,0,0,.5); }
+.mini .art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mini small { font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: #FFB27A; }
+.mini h3 { margin-top: 8px; font: 800 46px/1.05 Jakarta; letter-spacing: -.03em; }
+.mini p { margin-top: 8px; font: 500 26px Inter; color: rgba(255,255,255,.65); }
+.lista { position: absolute; left: 72px; right: 72px; top: 930px; }
+.lista small { font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.65); }
+.faixa-l { display: grid; grid-template-columns: 84px 1fr 40px; align-items: center; gap: 24px; padding: 28px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+.faixa-l b { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 14px; font: 800 32px Jakarta; background: rgba(255,255,255,.12); }
+.faixa-l span { font: 700 44px Jakarta; letter-spacing: -.01em; }
+.faixa-l i { font-style: normal; display: flex; flex-direction: column; gap: 6px; align-items: center; }
+.faixa-l i::before, .faixa-l i::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,.55); box-shadow: 0 12px 0 rgba(255,255,255,.55); }
+.faixa-l i::after { display: none; }
+.faixa-l.certa { margin: 0 -24px; padding: 22px 24px; border-radius: 22px; border-bottom: 0; background: rgba(255,178,122,.16); box-shadow: inset 0 0 0 2px rgba(255,178,122,.6); }
+.faixa-l.certa b { background: #FFB27A; color: #2A140A; }
+.faixa-l.certa span { color: #FFB27A; }
+.faixa-l.fora { opacity: .42; }
+.eq { display: flex; gap: 5px; align-items: flex-end; height: 34px; }
+.eq u { width: 7px; border-radius: 3px; background: #FFB27A; }
+.legenda-p { position: absolute; left: 72px; right: 72px; top: 1600px; font: 600 26px Inter; color: rgba(255,255,255,.75); text-align: center; }
+
+/* letra sincronizada */
+.letra-t { position: absolute; left: 72px; right: 72px; top: 262px; display: flex; align-items: center; gap: 26px; }
+.letra-t .art { flex: none; width: 150px; height: 150px; border-radius: 16px; overflow: hidden; box-shadow: 0 16px 34px rgba(0,0,0,.5); }
+.letra-t .art img { width: 100%; height: 100%; object-fit: cover; }
+.letra-t small { font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: #FFB27A; }
+.letra-t h2 { margin-top: 6px; font: 800 66px/1 Jakarta; letter-spacing: -.035em; }
+.letra-t p { margin-top: 8px; font: 500 26px Inter; color: rgba(255,255,255,.65); }
+.letra { position: absolute; left: 72px; right: 72px; top: 470px; display: grid; gap: 22px; }
+.letra p { font: 800 50px/1.12 Jakarta; letter-spacing: -.03em; color: rgba(255,255,255,.34); }
+.letra p.agora { color: #fff; }
+.letra p.agora em { font-style: normal; color: #FFB27A; }
+.creditos-p { position: absolute; left: 72px; right: 72px; top: 840px; padding: 26px 30px; border-radius: 26px; background: rgba(0,0,0,.35); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.1); }
+.creditos-p small { font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+.creditos-p p { margin-top: 10px; font: 400 27px/1.42 Inter; color: rgba(255,255,255,.85); }
+.creditos-p p b { color: #fff; font-weight: 700; }
+
+/* playlist CTA */
+.pl-capa { position: absolute; left: 50%; top: 262px; width: 520px; height: 520px; margin-left: -260px; border-radius: 28px; overflow: hidden; box-shadow: 0 40px 90px rgba(0,0,0,.6);
+  background: radial-gradient(circle at 25% 20%, #FF8A5B 0, transparent 50%), radial-gradient(circle at 80% 85%, #7A3CF0 0, transparent 55%), linear-gradient(135deg, #2B0F0A, #160B2B); }
+.pl-capa div { position: absolute; left: 40px; right: 40px; bottom: 40px; }
+.pl-capa small { font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.8); }
+.pl-capa b { display: block; margin-top: 10px; font: 800 150px/.85 Jakarta; letter-spacing: -.06em; }
+.pl-capa span { display: block; margin-top: 12px; font: 800 40px/1.05 Jakarta; letter-spacing: -.02em; }
+.pl-capa .sim-capa { position: absolute; left: 40px; top: 40px; width: 60px; height: 60px; }
+.pl-info { position: absolute; left: 72px; right: 72px; top: 830px; text-align: center; }
+.pl-info h2 { font: 800 60px/1.04 Jakarta; letter-spacing: -.035em; }
+.pl-info p { margin-top: 16px; font: 400 30px/1.42 Inter; color: rgba(255,255,255,.8); }
+.pl-info p b { color: #fff; font-weight: 700; }
+.pl-acoes { position: absolute; left: 72px; right: 72px; top: 1150px; display: flex; justify-content: center; }
+.botao-p { display: inline-flex; align-items: center; gap: 22px; padding: 22px 54px 22px 26px; border-radius: 99px; font: 800 50px Jakarta; letter-spacing: -.02em; color: #1A0D08; background: #FFB27A; box-shadow: 0 20px 50px rgba(255,178,122,.35); }
+.botao-p i { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; background: #1A0D08; }
+.botao-p i svg { width: 40px; height: 40px; color: #FFB27A; }
+.pl-sub { position: absolute; left: 72px; right: 72px; top: 1290px; text-align: center; font: 600 30px Inter; color: rgba(255,255,255,.85); }
+.pl-seta { position: absolute; left: 513px; top: 1380px; width: 54px; height: 54px; color: #fff; }
+.pl-site { position: absolute; left: 0; right: 0; top: 1640px; text-align: center; font: 700 30px Jakarta; color: rgba(255,255,255,.85); }
+
+.s3-cta { position: absolute; left: 72px; right: 72px; top: 1074px; display: grid; grid-template-columns: 210px 1fr; gap: 28px; align-items: center; padding: 26px; border-radius: 28px; background: linear-gradient(120deg, rgba(255,138,91,.28), rgba(122,60,240,.22)); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.16); }
+.s3-cta .cv { aspect-ratio: 1; border-radius: 18px; display: grid; align-content: end; padding: 16px; background: radial-gradient(circle at 25% 20%, #FF8A5B 0, transparent 55%), radial-gradient(circle at 80% 85%, #7A3CF0 0, transparent 60%), linear-gradient(135deg, #2B0F0A, #160B2B); box-shadow: 0 16px 34px rgba(0,0,0,.45); }
+.s3-cta .cv b { font: 800 84px/.85 Jakarta; letter-spacing: -.05em; }
+.s3-cta .cv span { margin-top: 6px; font: 800 20px/1.1 Jakarta; }
+.s3-cta small { font: 700 19px Inter; letter-spacing: .2em; text-transform: uppercase; color: #FFB27A; }
+.s3-cta h3 { margin-top: 6px; font: 800 40px/1.05 Jakarta; letter-spacing: -.03em; }
+.s3-cta p { margin-top: 8px; font: 400 25px/1.38 Inter; color: rgba(255,255,255,.85); }
+.s3-cta p b { color: #fff; font-weight: 700; }
+.s3-botao { position: absolute; left: 0; right: 0; top: 1338px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.s3-botao .botao-p { font-size: 44px; padding: 16px 46px 16px 18px; }
+.s3-botao .botao-p i { width: 70px; height: 70px; }
+.s3-botao span { font: 600 27px Inter; color: rgba(255,255,255,.9); }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+<symbol id="seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="baixo" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+<symbol id="ant" viewBox="0 0 24 24"><path d="M18 6v12l-9-6zM6 6v12" fill="currentColor" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></symbol>
+<symbol id="prox" viewBox="0 0 24 24"><path d="M6 6v12l9-6zM18 6v12" fill="currentColor" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></symbol>
+<symbol id="alea" viewBox="0 0 24 24"><path d="M4 7h3c5 0 5 10 10 10h3M17 14l3 3-3 3M4 17h3c1.5 0 2.6-.9 3.5-2.2M13.5 9.2C14.4 7.9 15.5 7 17 7h3M17 4l3 3-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="rep" viewBox="0 0 24 24"><path d="M5 10V8a2 2 0 012-2h11M15 3l3 3-3 3M19 14v2a2 2 0 01-2 2H6M9 21l-3-3 3-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="cor" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+</defs></svg>
+<template id="fone"><div class="tela"><img alt=""></div><div class="ilha"></div><div class="brilho"></div><span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span></template>
+
+<!-- ================= FEED ================= -->
+<section id="f1-negativo" class="escura">
+  <div class="rotulo"><b>Câmara escura</b><span>TARO 2024 · 1/3</span></div>
+  <div class="filme">
+    <div class="borda-txt cima"><span>OQ 400</span><span>▸ 18</span><span>TARO 2024</span><span>▸ 18A</span></div>
+    <div class="quadro"><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt=""><div class="vinheta"></div></div>
+    <div class="borda-txt baixo"><span>▸ 19</span><span>OMBRO · 15 ANOS</span><span>▸ 19A</span><span>OQ 400</span></div>
+  </div>
+  <div class="f1-texto"><h1>Revele o <em>diagnóstico.</em></h1>
+    <p><b>TARO 2024:</b> Paciente masculino, 15 anos, com dor no ombro. Imagem de radiografia a seguir. A principal hipótese diagnóstica é</p></div>
+  <div class="contato">
+    <div class="cx"><small>A</small><span>osteossarcoma.</span></div>
+    <div class="cx"><small>B</small><span>condroblastoma.</span></div>
+    <div class="cx"><small>C</small><span>osteoma osteoide.</span></div>
+    <div class="cx"><small>D</small><span>tumor de células gigantes.</span></div>
+  </div>
+  <div class="dica"><span><b>Comente a sua letra.</b> Depois, arraste.</span><span>a foto está revelando →</span></div>
+</section>
+
+<section id="f2-revelacao" class="escura">
+  <div class="rotulo"><b>Revelação</b><span>TARO 2024 · 2/3</span></div>
+  <div class="bandeja">
+    <figure class="foto"><div class="img"><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt=""></div><figcaption>ombro D · 15 anos · TARO 2024</figcaption></figure>
+    <div class="notas">
+      <div class="nota"><small>Onde</small>na epífise da cabeça umeral</div>
+      <div class="nota"><small>Como</small>lítica, redonda, bem delimitada</div>
+      <div class="nota"><small>Quem</small>adolescente, com a fise aberta</div>
+    </div>
+  </div>
+  <div class="resposta"><i>B</i><h2>Condroblastoma.</h2></div>
+  <p class="outras"><b>Osteossarcoma:</b> agressivo e metafisário. <b>Osteoma osteoide:</b> nicho cortical pequeno. <b>TCG:</b> adulto jovem, com a fise fechada.</p>
+  <p class="prova-c"><b>Para a prova</b>lesão lítica epifisária em adolescente com fise aberta: condroblastoma.</p>
+</section>
+
+<section id="f3-timer" class="escura">
+  <div class="rotulo"><b>Próxima revelação</b><span>3/3</span></div>
+  <div class="timer">
+    <small>Prova teórica · TEOT e TEPOT</small>
+    <div class="visor"><b>84</b><span>dias até 10/01/2027</span></div>
+    <h2>Fique pronto. <em>Prepare-se.</em></h2>
+    <p>Com o nosso <b>cronograma</b>, você faz o maior número de questões possível <b>sem se esgotar</b>. Nós planejamos tudo para você.</p>
+  </div>
+  <div class="iphone" data-tela="t-cel-cronograma-18-10" style="--w:330px; left:690px; top:150px; transform: rotate(3deg)"></div>
+  <span class="nota-tela" style="left:740px; top:880px">Tela ilustrativa</span>
+  <div class="cta-c"><div class="botao-c">Treine grátis<svg><use href="#seta"/></svg></div><p>Crie sua conta grátis agora mesmo e conheça outras questões.</p></div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><small>ortoquestoes.com.br</small></div>
+</section>
+
+<!-- ================= STORIES: player ================= -->
+<section id="s1-tocando" class="story player">
+  <div class="fundo-blur" style="background-image:url(../../../../public/imagens/mao/mao-0433-1.jpeg)"></div>
+  <div class="p-topo"><svg class="seta-baixo"><use href="#chev"/></svg><div><small>Tocando da prova</small><strong>TARO 2025 · Mão</strong></div><span class="pontos"><i></i><i></i><i></i></span></div>
+  <div class="capa"><img src="../../../../public/imagens/mao/mao-0433-1.jpeg" alt=""></div>
+  <div class="faixa-info"><div><h2>Que manobra é essa?</h2><p>Semiologia da mão · garra ulnar</p></div><svg class="coracao"><use href="#cor"/></svg></div>
+  <div class="barra"><div class="trilho"><i style="width:42%"></i></div><div class="tempos"><span>pense</span><span>resposta no próximo story</span></div></div>
+  <div class="controles"><svg class="fraco"><use href="#alea"/></svg><svg><use href="#ant"/></svg><span class="play"><svg><use href="#play"/></svg></span><svg><use href="#prox"/></svg><svg class="fraco"><use href="#rep"/></svg></div>
+</section>
+
+<section id="s2-fila" class="story player">
+  <div class="fundo-blur" style="background-image:url(../../../../public/imagens/mao/mao-0433-1.jpeg)"></div>
+  <div class="fila-t"><small>A seguir na fila</small><h2>Escolha a sua faixa.</h2>
+    <p>Na semiologia da mão, a manobra clínica que corrige a garra ulnar demonstrada na imagem a seguir é descrita por:</p></div>
+  <div class="mini"><div class="art"><img src="../../../../public/imagens/mao/mao-0433-1.jpeg" alt=""></div><div><small>Tocando agora</small><h3>A garra e a manobra</h3><p>Imagem: Motta Filho e Barros Filho, Ortopedia e Traumatologia.</p></div></div>
+  <div class="lista"><small>4 faixas</small>
+    <div class="faixa-l"><b>A</b><span>JEANNE.</span><i></i></div>
+    <div class="faixa-l"><b>B</b><span>BOUVIER.</span><i></i></div>
+    <div class="faixa-l"><b>C</b><span>DUCHENNE.</span><i></i></div>
+    <div class="faixa-l"><b>D</b><span>ANDRE-THOMAS.</span><i></i></div>
+  </div>
+  <p class="legenda-p">Guarde a sua letra. A resposta toca no próximo story.</p>
+</section>
+
+<section id="s3-letra" class="story player">
+  <div class="fundo-blur" style="background-image:url(../../../../public/imagens/mao/mao-0433-1.jpeg)"></div>
+  <div class="letra-t"><div class="art"><img src="../../../../public/imagens/mao/mao-0433-1.jpeg" alt=""></div><div><small>Tocando agora</small><h2>B · Bouvier</h2><p>TARO 2025 · semiologia da mão</p></div></div>
+  <div class="letra">
+    <p>Bloqueie a hiperextensão da MF…</p>
+    <p class="agora">e o extensor passa a <em>estender as interfalângicas.</em></p>
+    <p>Positiva: procedimento estático.</p>
+    <p>Negativa: transferência dinâmica.</p>
+  </div>
+  <div class="creditos-p"><small>As outras faixas</small>
+    <p><b>Duchenne</b> é a própria garra. <b>Jeanne</b> é do polegar, com a MF hiperestendida na pinça. <b>André-Thomas</b> é a compensação pela flexão do punho.</p></div>
+  <div class="s3-cta"><div class="cv"><b>84</b><span>dias até a prova</span></div>
+    <div><small>Sua playlist até 10/01/2027</small><h3>Fique pronto. Prepare-se.</h3><p>Com o nosso <b>cronograma</b>, você faz o maior número de questões possível <b>sem se cansar tanto</b>. Nós planejamos tudo para você.</p></div></div>
+  <div class="s3-botao"><div class="botao-p"><i><svg><use href="#play"/></svg></i>Treine grátis</div><span>Crie sua conta grátis agora mesmo</span></div>
+  <svg style="position:absolute;left:515px;top:1500px;width:50px;height:50px;color:#fff;z-index:2"><use href="#baixo"/></svg>
+  <p style="position:absolute;left:0;right:0;top:1664px;text-align:center;font:700 28px Jakarta;color:rgba(255,255,255,.85);z-index:2">ortoquestoes.com.br</p>
+</section>
+</body>
+<script>
+document.querySelectorAll('[data-tela]').forEach(e => { e.appendChild(document.getElementById('fone').content.cloneNode(true)); e.querySelector('img').src = '../../../kit/telas/' + e.dataset.tela + '.png' })
+</script>
+</html>
