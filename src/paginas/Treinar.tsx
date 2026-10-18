@@ -62,9 +62,6 @@ const DESCRICAO_SITUACAO: Record<Situacao, string> = {
 }
 /** Padrão de quem chega sem filtro: Ortopedia, todos os temas, só as não respondidas, 20. */
 const PADRAO: Filtros = { ...FILTROS_VAZIOS, situacao: 'naoRespondidas', limite: 20 }
-/** "Montar em 3 toques": as situações e quantidades mais usadas, sem rolar a página. */
-const SITUACOES_RAPIDAS: Situacao[] = ['naoRespondidas', 'todas', 'erradas', 'revisarHoje']
-const QUANTIDADES_RAPIDAS = [10, 20, 30, 50]
 /** Situação em minúsculas, curta, para caber no botão de responder do celular. */
 const SITUACAO_CURTA: Record<Situacao, string> = {
   todas: 'todas',
@@ -94,7 +91,6 @@ const DURACOES: Array<[number, string]> = [
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const cronograma = usarCronogramaHoje()
-  const rotuloCronograma = cronograma.calculo ? 'Seguir o cronograma' : 'Montar meu cronograma'
   const { indice, carregando } = usarIndice()
   const { iniciarComAviso } = usarSessao()
   const { sessao: conta } = usarConta()
@@ -163,6 +159,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     () => (indice ? contar(indice, filtrosAdiados, contexto) : null),
     [indice, filtrosAdiados, contexto],
   )
+  // Quantas questões o recorte tem com e sem os OrtoQuestões Simulados (para a escolha da origem).
+  const origemContagem = useMemo(() => (indice ? contar(indice, { ...filtrosAdiados, soSimulados: false, semSimulados: false }, contexto) : null), [indice, filtrosAdiados, contexto])
   const arvore = useMemo(() => (indice ? arvoreAssuntos(indice) : []), [indice])
   const [salvos, definirSalvos] = usarArmazenado<FiltroSalvo[]>(CHAVE_SALVOS, [])
 
@@ -203,31 +201,23 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     return new Set(filtrar(indice, { ...FILTROS_VAZIOS, areas: filtros.areas, incluirAnuladas: true }).map((q) => q.p).filter((p): p is number => p !== null).map((p) => indice.provas[p]))
   }, [indice, porArea, filtros.areas])
 
-  function alternarArea(area: Area) {
-    const marcada = filtros.areas.includes(area)
-    // Sempre fica ao menos uma categoria marcada.
-    if (marcada && filtros.areas.length === 1) return
-    const areas = marcada ? filtros.areas.filter((a) => a !== area) : AREAS_TREINO.filter((a) => a === area || filtros.areas.includes(a))
-    atualizar({ areas, provas: [] })
+  /** Uma prova por vez, ou todas: os OrtoQuestões Simulados da prova escolhida já vêm misturados. */
+  function escolherArea(area: Area | 'todas') {
+    const presentes = porArea?.map((p) => p.area) ?? AREAS_TREINO
+    atualizar({ areas: area === 'todas' ? [...presentes] : [area], provas: [] })
+  }
+  /** De onde vêm as questões: tudo misturado (padrão), só das provas oficiais ou só os simulados. */
+  function escolherOrigem(origem: 'tudo' | 'oficiais' | 'simulados') {
+    atualizar({ soSimulados: origem === 'simulados', semSimulados: origem === 'oficiais' })
   }
 
   // Filtro que não tem nenhuma opção não vira campo vazio na tela.
   const temProva = gruposProva.length > 0
-  const totalSimulados = gerais?.simulados ?? 0
   // O convite dos simulados olha o acervo todo: hoje eles moram na categoria
   // Fellowship Quadril, e quem treina só ortopedia também precisa encontrá-los.
   const areasComSimulados = useMemo(() => (indice ? AREAS_TREINO.filter((a) => indice.questoes.some((q) => q.sim === 1 && (q.ar ?? 'base') === a)) : []), [indice])
   const simuladosAcervo = useMemo(() => (indice ? contar(indice, { ...FILTROS_VAZIOS, areas: AREAS_TREINO }, contexto).simulados : 0), [indice, contexto])
   const areasSimulado = useMemo(() => AREAS_TREINO.filter((a) => filtros.areas.includes(a) || areasComSimulados.includes(a)), [filtros.areas, areasComSimulados])
-  const soSimulados = filtros.soSimulados
-  // O botão de simulados mantém as categorias marcadas; só acrescenta as que têm
-  // simulados quando as marcadas não têm nenhum.
-  const simuladosNoRecorte = useMemo(() => {
-    if (!indice) return { n: 0, areas: filtros.areas }
-    const nasMarcadas = contar(indice, { ...filtros, soSimulados: true, provas: [] }, contexto).total
-    if (nasMarcadas > 0) return { n: nasMarcadas, areas: filtros.areas }
-    return { n: contar(indice, { ...filtros, soSimulados: true, areas: areasSimulado, provas: [] }, contexto).total, areas: areasSimulado }
-  }, [indice, filtros, areasSimulado, contexto])
   const temAno = (indice?.anos.length ?? 0) > 0
   const temComentario = useMemo(
     () => (indice?.questoes ?? []).some((q) => q.c === 1),
@@ -248,28 +238,14 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; preset: Partial<Filtros> }[] = [
     { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, preset: { situacao: 'revisarHoje' } },
-    { titulo: 'Questões novas', icone: 'alvo', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
-    { titulo: 'Que eu errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, preset: { situacao: 'erradas' } },
+    { titulo: 'Novas', icone: 'alvo', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
+    { titulo: 'Que errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, preset: { situacao: 'erradas' } },
     { titulo: 'Favoritas', icone: 'estrela', quantidade: gerais?.porSituacao.favoritas ?? 0, preset: { situacao: 'favoritas' } },
   ]
   const [filtrosProvaAbertos, definirFiltrosProvaAbertos] = useState(
     () => filtros.provas.length + filtros.anos.length + filtros.dificuldades.length > 0 || filtros.soSimulados,
   )
 
-  // No celular, Situação e Formato começam recolhidos mostrando o que está
-  // escolhido; o botão fixo de começar já funciona com o padrão.
-  const [telaLarga] = useState(() => typeof window === 'undefined' || window.matchMedia('(min-width: 52rem)').matches)
-  // "Quais questões" vem aberto também no celular: fechado, quem não percebia o <details>
-  // treinava "Todas" sem saber que dava para escolher só as novas ou as erradas.
-  const [situacaoAberta, definirSituacaoAberta] = useState(true)
-  const [formatoAberto, definirFormatoAberto] = useState(telaLarga)
-  // Girar o tablet ou alargar a janela abre os passos que no celular ficam recolhidos.
-  useEffect(() => {
-    const largura = window.matchMedia('(min-width: 52rem)')
-    const aoMudar = () => { if (largura.matches) { definirSituacaoAberta(true); definirFormatoAberto(true) } }
-    largura.addEventListener('change', aoMudar)
-    return () => largura.removeEventListener('change', aoMudar)
-  }, [])
   // Quantidade digitada: só limita ao total ao sair do campo (digitar "75" passava por "7").
   const [rascunhoQtd, definirRascunhoQtd] = useState<string | null>(null)
 
@@ -287,11 +263,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   /** Recorte dos OrtoQuestões Simulados já no modo prova, levando ao formato. */
   function montarSimulado() {
-    atualizar(areasSimulado.length === filtros.areas.length ? { soSimulados: true } : { soSimulados: true, areas: areasSimulado, provas: [] })
+    atualizar(areasSimulado.length === filtros.areas.length ? { soSimulados: true, semSimulados: false } : { soSimulados: true, semSimulados: false, areas: areasSimulado, provas: [] })
     definirSimulado(true)
-    definirFiltrosProvaAbertos(true)
-    definirFormatoAberto(true)
-    document.getElementById('etapa-formato')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    document.getElementById('tn-resumo')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   async function comecar() {
@@ -299,14 +273,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     const ids = montarSessao(indice, filtros, Date.now(), contexto)
     if (!(await iniciarComAviso(filtros, ids, simulado ? { simulado: true, limiteSegundos: minutos * 60 } : {}))) return
     navegar('/sessao')
-  }
-
-  /** Rola até um passo e o abre se estiver recolhido (botão, não âncora: as rotas usam o #). */
-  function irPara(alvo: string) {
-    if (alvo === 'etapa-2') definirSituacaoAberta(true)
-    if (alvo === 'etapa-3') definirFiltrosProvaAbertos(true)
-    if (alvo === 'etapa-formato') definirFormatoAberto(true)
-    window.requestAnimationFrame(() => document.getElementById(alvo)?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
   }
 
   function nomeTema(slug: string) { return indice?.temas.find((t) => t.slug === slug)?.nome ?? slug }
@@ -385,7 +351,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const nomesProva = gruposProva.filter((g) => g.provas.some((p) => filtros.provas.includes(p))).map((g) => g.rotulo)
   const resumoProva = [
     nomesProva.length ? nomesProva.join(', ') : 'Todas as provas',
-    filtros.soSimulados ? 'só simulados' : '',
+    filtros.soSimulados ? 'só simulados' : filtros.semSimulados ? 'só provas oficiais' : '',
     filtros.anos.length ? [...filtros.anos].sort((a, b) => b - a).join(', ') : 'todos os anos',
     filtros.dificuldades.length ? filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', ') : '',
   ].filter(Boolean).join(' · ')
@@ -406,15 +372,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     </>
   )
 
-  // Montar em 3 toques: O que · Quais · Quantas. O que mais estiver valendo aparece escrito.
-  const valorTema = selecionados === 0 ? '' : filtros.temas.length === 1 && !filtros.subtemas.length ? filtros.temas[0] : '__varios'
-  const temasDaCategoria = arvore.filter((t) => (gerais?.porTema[t.slug] ?? 0) > 0 || filtros.temas.includes(t.slug))
-  const totalTodosTemas = Object.values(contagens?.porTema ?? {}).reduce((soma, n) => soma + n, 0)
-  const situacoesTres = SITUACOES_RAPIDAS.includes(filtros.situacao) ? SITUACOES_RAPIDAS : [...SITUACOES_RAPIDAS, filtros.situacao]
-  const quantidadesTres = filtros.limite === null || QUANTIDADES_RAPIDAS.includes(filtros.limite) ? QUANTIDADES_RAPIDAS : [...QUANTIDADES_RAPIDAS, filtros.limite].sort((a, b) => a - b)
   const tambemValem = [
     nomesProva.join(', '),
-    filtros.soSimulados && selecionados ? 'só simulados' : '',
     [...filtros.anos].sort((a, b) => b - a).join(', '),
     filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', '),
     filtros.busca.trim() ? `busca "${filtros.busca.trim()}"` : '',
@@ -424,496 +383,364 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     filtros.embaralhar ? '' : 'na ordem da prova',
     simulado ? `modo prova, ${DURACOES.find(([v]) => v === minutos)?.[1] ?? `${minutos} min`}` : '',
   ].filter(Boolean)
+  const comecarBotao = (classe: string) => (
+    <button type="button" className={'botao botao--grande tr-comecar ' + classe} disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
+      {conteudoComecar}
+    </button>
+  )
+  const totalSituacao = contagens?.porSituacao[filtros.situacao] ?? 0
+  const areasPresentes = porArea?.map((p) => p.area) ?? []
+  const todasMarcadas = areasPresentes.length > 1 && areasPresentes.every((a) => filtros.areas.includes(a))
+  const origem: 'tudo' | 'oficiais' | 'simulados' = filtros.soSimulados ? 'simulados' : filtros.semSimulados ? 'oficiais' : 'tudo'
+  const nOrigem = { tudo: origemContagem?.total ?? 0, simulados: origemContagem?.simulados ?? 0, oficiais: (origemContagem?.total ?? 0) - (origemContagem?.simulados ?? 0) }
+  const nomeArea = todasMarcadas ? 'Todas as provas' : filtros.areas.length === 1 ? ROTULO_AREA[filtros.areas[0]] : `${filtros.areas.length} provas`
+
   return (
-    <div className="empilha-2 treinar-pagina">
-      <section className="tr-heroi">
-        <div className="tr-heroi__texto">
+    <div className="tn treinar-pagina">
+      <section className="tn-heroi" aria-labelledby="tn-titulo">
+        <div className="tn-heroi__texto">
           <p className="tr-heroi__selo">Montar sessão</p>
-          <h1>Treinar</h1>
-          <p>Escolha o que estudar, quais questões, e quantas. Sem tempo? Comece já com 10.</p>
-          {FLASHCARDS_NO_MENU && (
-            <span className="tr-heroi__flashcards">
-              <a className="tr-heroi__link tr-heroi__link--flashcards" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={15} /> Estudar flashcards</a>
-              <a className="tr-heroi__link tr-heroi__link--flashcards" href={href('/flashcards/cripta')}><Icone nome="raio" tamanho={15} /> Jogar o Torneio</a>
-              <a className="tr-heroi__link" href={href('/flashcards')}>Central de flashcards (beta)</a>
-            </span>
-          )}
-          <a className="tr-heroi__link" href={href('/cronograma')}><Icone nome="rota" tamanho={15} /> {cronograma.calculo?.hoje ? `${rotuloCronograma}: hoje, ${cronograma.calculo.hoje.nome} · ${cronograma.calculo.feitasHoje} de ${cronograma.calculo.metaDiaria}` : 'Prefere que alguém monte por você? Use o cronograma'}</a>
+          <h1 id="tn-titulo">Treinar</h1>
+          <p>Escolha a prova, o assunto e quais questões. Ou comece agora com 10.</p>
+          <a className="tr-heroi__link" href={href('/cronograma')}>
+            <Icone nome="rota" tamanho={15} />
+            {cronograma.calculo?.hoje ? <>Hoje no cronograma: {cronograma.calculo.hoje.nome} · {cronograma.calculo.feitasHoje} de {cronograma.calculo.metaDiaria}</> : 'Prefere um plano pronto? Use o cronograma'}
+          </a>
+          {FLASHCARDS_NO_MENU && <a className="tr-heroi__link tn-heroi__link2" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={15} /> Estudar flashcards</a>}
         </div>
-        <button type="button" className="botao botao--claro tr-heroi__rapida" onClick={() => sessaoRapida()} disabled={!indice}>
+        <button type="button" className="botao tn-heroi__rapida" onClick={() => sessaoRapida()} disabled={!indice}>
           <Icone nome="raio" tamanho={20} />
           <span><strong>Sessão rápida</strong><small>10 questões de todo o acervo</small></span>
         </button>
-        <div className="tr-rapidas" aria-label="Atalhos de 10 questões">
-          <span className="tr-rapidas__rotulo">Atalhos de 10:</span>
+        <div className="tn-heroi__atalhos" role="group" aria-label="Começar com 10">
           {rapidas.map((r) => (
-            <button key={r.titulo} type="button" className="tr-rapida" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}>
+            <button key={r.titulo} type="button" className="tn-vidro" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}>
               <Icone nome={r.icone} tamanho={16} />
               <span>{r.titulo}</span>
-              <b className="numerico">{r.quantidade}</b>
+              <b className="tn-num">{r.quantidade.toLocaleString('pt-BR')}</b>
             </button>
           ))}
         </div>
       </section>
 
-      {salvos.length > 0 && <section className="tr-salvos" aria-labelledby="tr-salvos-titulo">
-        <div className="tr-salvos__cabeca">
-          <h2 id="tr-salvos-titulo"><Icone nome="filtro" tamanho={16} /> Seus filtros salvos</h2>
-          {botaoSalvar('tr-salvos__salvar')}
-        </div>
-        <ul className="tr-salvos__lista">
-          {salvos.map((salvo) => (
-            <li key={salvo.id} className="tr-salvo">
-              <button type="button" className="tr-salvo__usar" aria-pressed={salvo.consulta === consultaAtual} onClick={() => aplicarSalvo(salvo)}>
-                <strong>{salvo.nome}</strong>
-                <small>{rotuloFiltro(consultaParaFiltros(new URLSearchParams(salvo.consulta.replace(/^\?/, ''))))}</small>
-              </button>
-              <button type="button" className="tr-salvo__acao" aria-label={`Renomear o filtro ${salvo.nome}`} title="Renomear" onClick={() => renomearSalvo(salvo)}><Icone nome="lapis" tamanho={16} /></button>
-              <button type="button" className="tr-salvo__acao" aria-label={`Apagar o filtro ${salvo.nome}`} title="Apagar" onClick={() => apagarSalvo(salvo)}><Icone nome="lixeira" tamanho={16} /></button>
-            </li>
-          ))}
-        </ul>
-        {salvos.length >= MAXIMO_SALVOS && !salvoAtual && <p className="tr-salvos__vazio">Chegou a {MAXIMO_SALVOS} filtros salvos: apague um para salvar outro.</p>}
-        {!conta && <p className="tr-salvos__vazio">Sem conta, os filtros salvos valem só enquanto esta aba estiver aberta.</p>}
-      </section>}
-
-      <section className="tr-tres" aria-labelledby="tr-tres-titulo">
-        <header className="tr-tres__cabeca">
-          <h2 id="tr-tres-titulo">Montar em 3 toques</h2>
-          <p>O que, quais e quantas. Já vem no padrão: é só tocar em responder.</p>
-        </header>
-        <div className="tr-tres__linha">
-          <label className="tr-tres__rotulo" htmlFor="tr-tres-tema"><b>1</b> O que</label>
-          <select
-            id="tr-tres-tema"
-            className="entrada tr-tres__tema"
-            value={valorTema}
-            onChange={(e) => { if (e.target.value !== '__varios') atualizar({ temas: e.target.value ? [e.target.value] : [], subtemas: [] }) }}
-          >
-            {valorTema === '__varios' && <option value="__varios" disabled>{rotuloOQue(filtros)} (escolhidos abaixo)</option>}
-            <option value="">{rotuloOQue({ ...filtros, temas: [], subtemas: [] })} · todos os temas ({totalTodosTemas})</option>
-            {temasDaCategoria.map((t) => {
-              const n = contagens?.porTema[t.slug] ?? 0
-              return <option key={t.slug} value={t.slug} disabled={n === 0 && valorTema !== t.slug}>{t.nome} ({n})</option>
-            })}
-          </select>
-        </div>
-        <div className="tr-tres__linha">
-          <span className="tr-tres__rotulo" id="tr-tres-quais"><b>2</b> Quais</span>
-          <div className="tr-pilulas" role="group" aria-labelledby="tr-tres-quais">
-            {situacoesTres.map((situacao) => (
-              <button
-                key={situacao}
-                type="button"
-                className="tr-pilula"
-                aria-pressed={filtros.situacao === situacao}
-                disabled={situacao !== 'todas' && situacao !== filtros.situacao && (contagens?.porSituacao[situacao] ?? 0) === 0}
-                onClick={() => atualizar({ situacao })}
-              >
-                {ROTULO_SITUACAO[situacao]}
-                <span className="numerico">{contagens?.porSituacao[situacao] ?? 0}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="tr-tres__linha">
-          <span className="tr-tres__rotulo" id="tr-tres-quantas"><b>3</b> Quantas</span>
-          <div className="tr-pilulas" role="group" aria-labelledby="tr-tres-quantas">
-            {quantidadesTres.map((n) => (
-              <button key={n} type="button" className="tr-pilula" aria-pressed={filtros.limite === n} disabled={total < n && filtros.limite !== n} onClick={() => atualizar({ limite: n })}>{n}</button>
-            ))}
-            <button type="button" className="tr-pilula" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
-          </div>
-        </div>
-        {tambemValem.length > 0 && (
-          <p className="tr-tres__extras"><Icone nome="filtro" tamanho={15} /> <span>Também valem: <b>{tambemValem.join(' · ')}</b>.</span></p>
-        )}
-        <div className="tr-tres__acoes">
-          <button type="button" className="botao botao--principal botao--grande tr-comecar" disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
-            {conteudoComecar}
-          </button>
-          <div className="tr-tres__secundarias">
-            <button type="button" className="botao botao--fantasma tr-tres__mais" onClick={() => irPara('etapa-1')}>Ajustar mais <Icone nome="baixo" tamanho={16} /></button>
-            {botaoSalvar('tr-tres__salvar')}
-          </div>
-        </div>
-      </section>
-
-      <nav className="tr-trilha" aria-label="Passos para montar a sessão">
-        {[
-          ['etapa-1', 'O que estudar', selecionados ? `${selecionados} ${selecionados === 1 ? 'assunto' : 'assuntos'}` : 'todos os assuntos'],
-          ['etapa-2', 'Quais questões', ROTULO_SITUACAO[filtros.situacao]],
-          ['etapa-3', 'Filtrar mais', 'opcional'],
-          ['etapa-formato', 'Quantas e como', `${filtros.limite ?? 'todas'} · ${simulado ? 'prova' : 'estudo'}`],
-        ].map(([alvo, titulo, resumo], i) => (
-          <button key={alvo} type="button" className="tr-trilha__passo" onClick={() => irPara(alvo)}>
-            <b>{i + 1}</b><span><strong>{titulo}</strong><small>{resumo}</small></span>
-          </button>
-        ))}
-      </nav>
-
-      {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. {fraseGratis('treinar')} <a href={href('/conta')}>Criar minha conta</a></p>}
-
-      <section className="tr-etapa" id="etapa-1">
-        <header className="tr-etapa__cabeca">
-          <span className="tr-etapa__numero">1</span>
-          <div>
-            <h2>O que estudar</h2>
-            <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'selecionado' : 'selecionados'}. Toque de novo para desmarcar.` : 'Marque um ou mais temas. Abra os subtemas para um recorte mais fino.'}</p>
-          </div>
-        </header>
-        {porArea && (
-          <>
-            <p className="tr-foco__titulo"><span className="tr-sub">A</span> Provas <small>Marque uma ou mais.</small></p>
-            <div className="tr-foco" role="group" aria-label="Categorias de prova">
-              {porArea.map(({ area }) => (
-                <button key={area} type="button" className="tr-foco__opcao" aria-pressed={filtros.areas.includes(area)} onClick={() => alternarArea(area)}>
-                  <strong>{ROTULO_AREA[area]}</strong>
-                  <small>{DESCRICAO_AREA[area]}</small>
+      {salvos.length > 0 && (
+        <section className="tn-salvos" aria-labelledby="tn-salvos-titulo">
+          <h2 id="tn-salvos-titulo" className="tn-rotulo"><Icone nome="filtro" tamanho={15} /> Seus filtros</h2>
+          <ul className="tn-salvos__lista">
+            {salvos.map((salvo) => (
+              <li key={salvo.id} className="tn-salvo">
+                <button type="button" className="tn-salvo__usar" aria-pressed={salvo.consulta === consultaAtual} onClick={() => aplicarSalvo(salvo)}>
+                  <strong>{salvo.nome}</strong>
+                  <small>{rotuloFiltro(consultaParaFiltros(new URLSearchParams(salvo.consulta.replace(/^\?/, ''))))}</small>
                 </button>
-              ))}
-              {simuladosAcervo > 0 && (
-                <button type="button" className="tr-foco__opcao tr-foco__opcao--simulados" aria-pressed={soSimulados}
-                  onClick={() => atualizar(soSimulados ? { soSimulados: false } : { soSimulados: true, areas: simuladosNoRecorte.areas, provas: [] })}>
-                  <strong>OrtoQuestões Simulados</strong>
-                  <small>Só as nossas, por engenharia reversa das provas oficiais</small>
-                </button>
-              )}
-            </div>
-          </>
-        )}
-        <p className="tr-foco__titulo"><span className="tr-sub">B</span> Temas <small>Sem marcar nenhum, entram todos.</small></p>
-        <SeletorArvore
-          variante="lista"
-          arvore={arvore}
-          temas={filtros.temas}
-          subtemas={filtros.subtemas}
-          porTema={contagens?.porTema ?? {}}
-          porSubtema={contagens?.porSubtema ?? {}}
-          aoMudar={(temas, subtemas) => atualizar({ temas, subtemas })}
-        />
-        <a className="tr-incidencia" href={href('/temas-que-mais-caem')}>
-          <Icone nome="grafico" tamanho={16} />
-          <span>Não sabe por onde começar? <b>Veja os temas que mais caem</b></span>
-          {!premium && <SeloAssinante />}
-        </a>
-        <p className="tr-foco__titulo"><span className="tr-sub">C</span> Palavra-chave <small>opcional: procura no texto das questões</small></p>
-        <div className="tr-busca">
-          <Icone nome="busca" tamanho={18} />
-          <label className="so-leitor" htmlFor="busca-acervo">Buscar no texto das questões</label>
-          <input
-            id="busca-acervo"
-            className="entrada"
-            type="search"
-            name="busca"
-            autoComplete="off"
-            placeholder="Ex.: Salter-Harris, Weber, manguito…"
-            value={buscaDigitada}
-            onChange={(e) => definirBuscaDigitada(e.target.value)}
-          />
-        </div>
-        {carregandoTextos && <span className="campo__auxilio">Carregando o texto das questões…</span>}
-      </section>
-
-      <details className="tr-etapa tr-etapa--recolhivel" id="etapa-2" open={situacaoAberta} onToggle={(e) => definirSituacaoAberta((e.currentTarget as HTMLDetailsElement).open)}>
-        <summary className="tr-etapa__cabeca">
-          <span className="tr-etapa__numero">2</span>
-          <div>
-            <h2>Quais questões</h2>
-            <p>{situacaoAberta ? 'Todas, só as novas, as que você errou ou as que vencem hoje.' : `${ROTULO_SITUACAO[filtros.situacao]} · ${(contagens?.porSituacao[filtros.situacao] ?? 0).toLocaleString('pt-BR')} questões`}</p>
-          </div>
-          <Icone nome="baixo" tamanho={18} />
-        </summary>
-        <div className="tr-pilulas" id="filtro-situacao">
-          {situacoesVisiveis.map((situacao) => (
-            <button
-              key={situacao}
-              type="button"
-              className="tr-pilula"
-              aria-pressed={filtros.situacao === situacao}
-              disabled={situacao !== 'todas' && situacao !== filtros.situacao && (contagens?.porSituacao[situacao] ?? 0) === 0}
-              onClick={() => atualizar({ situacao })}
-            >
-              {ROTULO_SITUACAO[situacao]}
-              <span className="numerico">{contagens?.porSituacao[situacao] ?? 0}</span>
-            </button>
-          ))}
-        </div>
-        <div className="tr-turma" role="group" aria-labelledby="tr-turma-titulo">
-          <p className="tr-turma__titulo" id="tr-turma-titulo"><Icone nome="grupo" tamanho={16} /> Pelo que a turma responde <SeloAssinante /></p>
-          <div className="tr-pilulas">
-            {SITUACOES_TURMA.map((situacao) => (
-              <button
-                key={situacao}
-                type="button"
-                className={'tr-pilula tr-pilula--turma' + (semTurma ? ' tr-pilula--bloqueada' : '')}
-                aria-pressed={filtros.situacao === situacao}
-                onClick={() => semTurma ? definirConviteTurma(true) : atualizar({ situacao: filtros.situacao === situacao ? 'todas' : situacao })}
-              >
-                {semTurma && <Icone nome="cadeado" tamanho={14} />}
-                {ROTULO_SITUACAO[situacao]}
-                {!semTurma && !turmaFalhou && <span className="numerico">{contexto.turma ? contagens?.porSituacao[situacao] ?? 0 : '…'}</span>}
-              </button>
+                <button type="button" className="tn-salvo__acao" aria-label={`Renomear o filtro ${salvo.nome}`} title="Renomear" onClick={() => renomearSalvo(salvo)}><Icone nome="lapis" tamanho={15} /></button>
+                <button type="button" className="tn-salvo__acao" aria-label={`Apagar o filtro ${salvo.nome}`} title="Apagar" onClick={() => apagarSalvo(salvo)}><Icone nome="lixeira" tamanho={15} /></button>
+              </li>
             ))}
-          </div>
-          {!semTurma && turmaFalhou && <p className="tr-dica">Não foi possível carregar agora como a turma respondeu. Tente de novo mais tarde.</p>}
-          {conviteTurma && semTurma && (
-            <ConvitePremium
-              variante="faixa"
-              icone="grupo"
-              titulo="Estude pelo que a turma erra"
-              texto={<p>Monte sessões com as questões que a maioria erra de primeira e com as que quase todo mundo acerta, mas você errou. Depois de cada resposta, veja quantos marcaram cada alternativa.</p>}
-            />
-          )}
-        </div>
-        <p className="tr-dica">
-          {DESCRICAO_SITUACAO[filtros.situacao]}
-          {SITUACOES_TURMA.includes(filtros.situacao) && contexto.turma && (contagens?.porSituacao[filtros.situacao] ?? 0) === 0 && ' Ainda não há questões assim no seu recorte: a turma precisa de pelo menos 3 respostas por questão.'}
-          {filtros.situacao === 'favoritas' && <> <a href={href('/favoritas')}>Ver a lista das favoritas</a></>}
-          {filtros.situacao === 'revisarHoje' && <> <a href={href('/revisao')}>Ajustar o ritmo</a></>}
-        </p>
-      </details>
-
-      {(temProva || temAno || totalSimulados > 0 || Object.keys(contagens?.porDificuldade ?? {}).length > 0) && (
-        <details
-          className="tr-etapa tr-etapa--recolhivel"
-          id="etapa-3"
-          open={filtrosProvaAbertos}
-          onToggle={(e) => definirFiltrosProvaAbertos((e.currentTarget as HTMLDetailsElement).open)}
-        >
-          <summary className="tr-etapa__cabeca">
-            <span className="tr-etapa__numero">3</span>
-            <div>
-              <h2>Filtrar mais <small className="tr-opcional">opcional</small></h2>
-              <p>{resumoProva}</p>
-            </div>
-            <Icone nome="baixo" tamanho={18} />
-          </summary>
-          {temProva && (
-            <div className="tr-grupo">
-              <span className="tr-grupo__rotulo">Prova</span>
-              <div className="tr-pilulas">
-                {gruposProva.map((grupo) => {
-                  const marcado = grupo.provas.some((p) => filtros.provas.includes(p))
-                  const quantidade = grupo.provas.reduce((soma, p) => soma + (contagens?.porProva[p] ?? 0), 0)
-                  // Provas que o foco escolhido não traz (ex.: as da mão no foco ortopedia) somem da lista.
-                  if (!marcado && provasDoFoco && !grupo.provas.some((p) => provasDoFoco.has(p))) return null
-                  return (
-                    <button
-                      key={grupo.rotulo}
-                      type="button"
-                      className="tr-pilula"
-                      aria-pressed={marcado}
-                      title={grupo.rotulo === 'TEOT/TARO' ? 'TEOT ou TARO: questões com a prova de origem ainda a confirmar' : undefined}
-                      onClick={() =>
-                        atualizar({
-                          provas: marcado
-                            ? filtros.provas.filter((x) => !grupo.provas.includes(x))
-                            : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))],
-                        })
-                      }
-                    >
-                      {grupo.rotulo}
-                      <span className="numerico">{quantidade}</span>
-                    </button>
-                  )
-                })}
-                {totalSimulados > 0 && (
-                  <button type="button" className="tr-pilula tr-pilula--simulados" aria-pressed={soSimulados} onClick={() => atualizar({ soSimulados: !soSimulados })}>
-                    Só OrtoQuestões Simulados
-                    <span className="numerico">{contagens?.simulados ?? 0}</span>
-                  </button>
-                )}
-              </div>
-            </div>
-          )}
-          {temAno && (
-            <div className="tr-grupo">
-              <span className="tr-grupo__rotulo">Ano</span>
-              <div className="tr-pilulas">
-                {[...(indice?.anos ?? [])].sort((a, b) => b - a).map((ano) => (
-                  <button
-                    key={ano}
-                    type="button"
-                    className="tr-pilula"
-                    aria-pressed={filtros.anos.includes(ano)}
-                    onClick={() =>
-                      atualizar({
-                        anos: filtros.anos.includes(ano)
-                          ? filtros.anos.filter((x) => x !== ano)
-                          : [...filtros.anos, ano],
-                      })
-                    }
-                  >
-                    {ano}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-          {Object.keys(contagens?.porDificuldade ?? {}).length > 0 && (
-            <div className="tr-grupo">
-              <span className="tr-grupo__rotulo">Dificuldade</span>
-              <div className="tr-pilulas">
-                {DIFICULDADES.map((d) => (
-                  <button
-                    key={d}
-                    type="button"
-                    className="tr-pilula"
-                    aria-pressed={filtros.dificuldades.includes(d)}
-                    onClick={() =>
-                      atualizar({
-                        dificuldades: filtros.dificuldades.includes(d)
-                          ? filtros.dificuldades.filter((x) => x !== d)
-                          : [...filtros.dificuldades, d],
-                      })
-                    }
-                  >
-                    {ROTULO_DIFICULDADE[d]}
-                    <span className="numerico">{contagens?.porDificuldade[d] ?? 0}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-        </details>
-      )}
-
-      <details className="tr-etapa tr-etapa--recolhivel" id="etapa-formato" open={formatoAberto} onToggle={(e) => definirFormatoAberto((e.currentTarget as HTMLDetailsElement).open)}>
-        <summary className="tr-etapa__cabeca">
-          <span className="tr-etapa__numero">4</span>
-          <div>
-            <h2>Quantas e como</h2>
-            <p>{formatoAberto ? 'O número de questões e se o gabarito vem a cada resposta ou só no fim.' : `${filtros.limite ?? 'Todas as'} questões · ${simulado ? 'modo prova' : 'modo estudo'}`}</p>
-          </div>
-          <Icone nome="baixo" tamanho={18} />
-        </summary>
-        <div className="tr-grupo">
-          <span className="tr-grupo__rotulo">Quantas questões</span>
-          <div className="tr-pilulas" id="filtro-limite">
-            {LIMITES.map((n) => (
-              <button key={n} type="button" className="tr-pilula" aria-pressed={filtros.limite === n} disabled={total < n} onClick={() => atualizar({ limite: n })}>
-                {n}
-              </button>
-            ))}
-            <button type="button" className="tr-pilula" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
-            <label className="tr-quantidade">
-              <span className="so-leitor">Quantidade personalizada</span>
-              <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={rascunhoQtd ?? filtros.limite ?? ''} placeholder="Outra" onChange={(e) => definirRascunhoQtd(e.target.value)} onBlur={() => { if (rascunhoQtd === null) return; const n = Math.floor(Number(rascunhoQtd)); atualizar({ limite: rascunhoQtd && n > 0 ? Math.max(1, Math.min(total || 1, n)) : null }); definirRascunhoQtd(null) }} onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }} />
-            </label>
-          </div>
-        </div>
-        <div className="tr-modos" role="radiogroup" aria-label="Como você quer estudar">
-          <button type="button" role="radio" aria-checked={!simulado} className="tr-modo" onClick={() => definirSimulado(false)}>
-            <Icone nome="livro" tamanho={20} />
-            <strong>Modo estudo</strong>
-            <span>Gabarito e comentário logo após cada resposta.</span>
-          </button>
-          <button type="button" role="radio" aria-checked={simulado} className="tr-modo" onClick={() => definirSimulado(true)}>
-            <Icone nome="relogio" tamanho={20} />
-            <strong>Modo prova</strong>
-            <span>Com cronômetro. Gabarito e comentários só ao entregar.</span>
-          </button>
-        </div>
-        {simulado && (
-          <div className="tr-grupo">
-            <span className="tr-grupo__rotulo">Tempo de prova</span>
-            <div className="tr-pilulas" id="filtro-duracao">
-              {DURACOES.map(([valor, rotulo]) => (
-                <button key={valor} type="button" className="tr-pilula" aria-pressed={minutos === valor} onClick={() => definirMinutos(valor)}>{rotulo}</button>
-              ))}
-            </div>
-          </div>
-        )}
-        <details className="tr-mais">
-          <summary>
-            Mais opções {opcoesAtivas > 0 && <span className="tr-mais__ativas">{opcoesAtivas} {opcoesAtivas === 1 ? 'ativa' : 'ativas'}</span>}
-            <small>Imagem, comentário, anuladas, ordem e etiquetas</small>
-          </summary>
-          <div className="tr-mais__lista">
-            {temImagem && (
-              <label className="caixa">
-                <input type="checkbox" checked={filtros.comImagem} onChange={(e) => atualizar({ comImagem: e.target.checked })} />
-                <span>Só questões com imagem no enunciado</span>
-              </label>
-            )}
-            {temComentario && (
-              <label className="caixa">
-                <input type="checkbox" checked={filtros.comComentario} onChange={(e) => atualizar({ comComentario: e.target.checked })} />
-                <span>Só questões com comentário</span>
-              </label>
-            )}
-            {temAnulada && (
-              <label className="caixa">
-                <input type="checkbox" checked={filtros.incluirAnuladas} onChange={(e) => atualizar({ incluirAnuladas: e.target.checked })} />
-                <span>Incluir questões anuladas (não contam no desempenho)</span>
-              </label>
-            )}
-            <label className="caixa">
-              <input type="checkbox" checked={filtros.embaralhar} onChange={(e) => atualizar({ embaralhar: e.target.checked })} />
-              <span>Embaralhar a ordem</span>
-            </label>
-            <label className="caixa">
-              <input type="checkbox" checked={!mostrarEtiquetas} onChange={(e) => definirEtiquetas(!e.target.checked)} />
-              <span>
-                Esconder as etiquetas de assunto até responder
-                <span className="campo__auxilio" style={{ marginTop: 0 }}>
-                  Ler "Salter-Harris" antes do enunciado já elimina metade das alternativas. Vale
-                  para todas as sessões e dá para trocar no meio, pela tecla E.
-                </span>
-              </span>
-            </label>
-          </div>
-        </details>
-      </details>
-
-      {total === 0 && (
-        <Estado titulo="Nenhuma questão atende a esse recorte.">
-          <p>
-            {filtros.busca.trim()
-              ? `Nenhuma questão contém "${filtros.busca.trim()}". A busca procura no enunciado, nas alternativas e nas etiquetas, e exige todas as palavras.`
-              : 'Tire um filtro por vez. O botão volta a habilitar assim que houver questões.'}
-          </p>
-        </Estado>
-      )}
-
-      {simuladosAcervo > 0 && (
-        <section className="tr-simulados" aria-labelledby="tr-simulados-titulo">
-          <div className="tr-simulados__texto">
-            <span className="tr-simulados__selo">Autorais</span>
-            <h2 id="tr-simulados-titulo">OrtoQuestões Simulados</h2>
-            <p>
-              <strong className="numerico">{simuladosAcervo}</strong> questões do site, no padrão das provas e todas
-              comentadas. Não são questões oficiais.
-            </p>
-          </div>
-          <div className="tr-simulados__acoes">
-            <button type="button" className="botao" onClick={() => sessaoRapida({ soSimulados: true, areas: areasSimulado })}>
-              <Icone nome="raio" tamanho={16} /> 10 questões
-            </button>
-            <button type="button" className="botao" onClick={montarSimulado}>
-              <Icone nome="relogio" tamanho={16} /> Fazer como prova
-            </button>
-          </div>
+          </ul>
+          {salvos.length >= MAXIMO_SALVOS && !salvoAtual && <p className="tn-nota">Chegou a {MAXIMO_SALVOS} filtros salvos: apague um para salvar outro.</p>}
+          {!conta && <p className="tn-nota">Sem conta, os filtros salvos valem só enquanto esta aba estiver aberta.</p>}
         </section>
       )}
 
-      <div className="tr-barra" role="region" aria-label="Resumo da sessão">
-        <div className="tr-barra__resumo">
-          <strong>{total === 0 ? 'Nenhuma questão' : `${quantidadeSessao} ${quantidadeSessao === 1 ? 'questão' : 'questões'}`}</strong>
-          <span>
-            {total > 0 && `cerca de ${estimativaMinutos} min · `}
-            {soSimulados ? 'OrtoQuestões Simulados · ' : ''}
-            {selecionados ? `${selecionados} ${selecionados === 1 ? 'assunto' : 'assuntos'}` : 'acervo misto'}
-            {desempenhoAnterior !== null ? ` · seu acerto: ${desempenhoAnterior}%` : ''}
-          </span>
+      {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. {fraseGratis('treinar')} <a href={href('/conta')}>Criar minha conta</a></p>}
+
+      <div className="tn-grade">
+        <div className="tn-montagem">
+          {porArea && (
+            <section className="tn-bloco" id="etapa-1" aria-labelledby="tn-prova-titulo">
+              <header className="tn-bloco__cabeca">
+                <span className="px-numero" aria-hidden="true">1</span>
+                <div>
+                  <h2 id="tn-prova-titulo">Para qual prova</h2>
+                  <p>Os OrtoQuestões Simulados da prova escolhida já entram misturados com as questões oficiais.</p>
+                </div>
+              </header>
+              <div className="tn-provas" role="radiogroup" aria-labelledby="tn-prova-titulo">
+                {porArea.map(({ area, n }) => (
+                  <button key={area} type="button" role="radio" className={`tn-prova tn-prova--${area}`} aria-checked={!todasMarcadas && filtros.areas.length === 1 && filtros.areas[0] === area} onClick={() => escolherArea(area)}>
+                    <strong>{ROTULO_AREA[area]}</strong>
+                    <small>{DESCRICAO_AREA[area]}</small>
+                    <span className="tn-prova__n tn-num">{n.toLocaleString('pt-BR')} questões</span>
+                  </button>
+                ))}
+                {porArea.length > 1 && (
+                  <button type="button" role="radio" className="tn-prova tn-prova--todas" aria-checked={todasMarcadas} onClick={() => escolherArea('todas')}>
+                    <strong>Todas as provas</strong>
+                    <small>Ortopedia, R4, quadril e cirurgia da mão juntos</small>
+                    <span className="tn-prova__n tn-num">{porArea.reduce((s, p) => s + p.n, 0).toLocaleString('pt-BR')} questões</span>
+                  </button>
+                )}
+              </div>
+              {(origemContagem?.simulados ?? 0) > 0 && (
+                <div className="tn-origem">
+                  <span className="tn-origem__rotulo" id="tn-origem-titulo">De onde vêm as questões</span>
+                  <div className="tn-segmentos" role="radiogroup" aria-labelledby="tn-origem-titulo">
+                    {([
+                      ['tudo', 'Provas + OrtoQuestões Simulados'],
+                      ['oficiais', 'Só das provas oficiais'],
+                      ['simulados', 'Só OrtoQuestões Simulados'],
+                    ] as const).map(([valor, rotulo]) => (
+                      <button key={valor} type="button" role="radio" className="tn-segmento" aria-checked={origem === valor} disabled={nOrigem[valor] === 0 && origem !== valor} onClick={() => escolherOrigem(valor)}>
+                        <span>{rotulo}</span>
+                        <small className="tn-num">{nOrigem[valor].toLocaleString('pt-BR')}</small>
+                      </button>
+                    ))}
+                  </div>
+                  <p className="tn-nota">OrtoQuestões Simulados são questões autorais do site, feitas por engenharia reversa das provas e comentadas. Não são questões oficiais.</p>
+                </div>
+              )}
+            </section>
+          )}
+
+          <section className="tn-bloco" id="etapa-assunto" aria-labelledby="tn-assunto-titulo">
+            <header className="tn-bloco__cabeca">
+              <span className="px-numero" aria-hidden="true">2</span>
+              <div>
+                <h2 id="tn-assunto-titulo">Assunto</h2>
+                <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'escolhido' : 'escolhidos'}. Toque de novo para desmarcar.` : 'Sem marcar nenhum, entram todos. Abra um tema para escolher subtemas.'}</p>
+              </div>
+            </header>
+            <div className="tr-busca tn-busca">
+              <Icone nome="busca" tamanho={18} />
+              <label className="so-leitor" htmlFor="busca-acervo">Buscar no texto das questões</label>
+              <input id="busca-acervo" className="entrada" type="search" name="busca" autoComplete="off" placeholder="Palavra no enunciado: Salter-Harris, Weber, manguito…" value={buscaDigitada} onChange={(e) => definirBuscaDigitada(e.target.value)} />
+            </div>
+            {carregandoTextos && <span className="campo__auxilio">Carregando o texto das questões…</span>}
+            <SeletorArvore
+              variante="lista"
+              arvore={arvore}
+              temas={filtros.temas}
+              subtemas={filtros.subtemas}
+              porTema={contagens?.porTema ?? {}}
+              porSubtema={contagens?.porSubtema ?? {}}
+              aoMudar={(temas, subtemas) => atualizar({ temas, subtemas })}
+            />
+            <a className="tn-incidencia" href={href('/temas-que-mais-caem')}>
+              <Icone nome="grafico" tamanho={16} />
+              <span>Não sabe por onde começar? <b>Veja os temas que mais caem</b></span>
+              {!premium && <SeloAssinante />}
+            </a>
+          </section>
+
+          <section className="tn-bloco" id="etapa-2" aria-labelledby="tn-quais-titulo">
+            <header className="tn-bloco__cabeca">
+              <span className="px-numero" aria-hidden="true">3</span>
+              <div>
+                <h2 id="tn-quais-titulo">Quais questões</h2>
+                <p>{DESCRICAO_SITUACAO[filtros.situacao]}</p>
+              </div>
+            </header>
+            <div className="tr-pilulas" id="filtro-situacao">
+              {situacoesVisiveis.map((situacao) => (
+                <button key={situacao} type="button" className="tr-pilula" aria-pressed={filtros.situacao === situacao}
+                  disabled={situacao !== 'todas' && situacao !== filtros.situacao && (contagens?.porSituacao[situacao] ?? 0) === 0}
+                  onClick={() => atualizar({ situacao })}>
+                  {ROTULO_SITUACAO[situacao]}
+                  <span className="numerico">{contagens?.porSituacao[situacao] ?? 0}</span>
+                </button>
+              ))}
+            </div>
+            <div className="tn-turma" role="group" aria-labelledby="tn-turma-titulo">
+              <p className="tn-turma__titulo" id="tn-turma-titulo"><Icone nome="grupo" tamanho={16} /> Pelo que a turma responde <SeloAssinante /></p>
+              <div className="tr-pilulas">
+                {SITUACOES_TURMA.map((situacao) => (
+                  <button key={situacao} type="button" className={'tr-pilula tr-pilula--turma' + (semTurma ? ' tr-pilula--bloqueada' : '')} aria-pressed={filtros.situacao === situacao}
+                    onClick={() => semTurma ? definirConviteTurma(true) : atualizar({ situacao: filtros.situacao === situacao ? 'todas' : situacao })}>
+                    {semTurma && <Icone nome="cadeado" tamanho={14} />}
+                    {ROTULO_SITUACAO[situacao]}
+                    {!semTurma && !turmaFalhou && <span className="numerico">{contexto.turma ? contagens?.porSituacao[situacao] ?? 0 : '…'}</span>}
+                  </button>
+                ))}
+              </div>
+              {!semTurma && turmaFalhou && <p className="tn-nota">Não foi possível carregar agora como a turma respondeu. Tente de novo mais tarde.</p>}
+              {conviteTurma && semTurma && (
+                <ConvitePremium variante="faixa" icone="grupo" titulo="Estude pelo que a turma erra"
+                  texto={<p>Monte sessões com as questões que a maioria erra de primeira e com as que quase todo mundo acerta, mas você errou. Depois de cada resposta, veja quantos marcaram cada alternativa.</p>} />
+              )}
+            </div>
+            {(SITUACOES_TURMA.includes(filtros.situacao) && contexto.turma && totalSituacao === 0) || filtros.situacao === 'favoritas' || filtros.situacao === 'revisarHoje' ? (
+              <p className="tn-nota">
+                {SITUACOES_TURMA.includes(filtros.situacao) && contexto.turma && totalSituacao === 0 && 'Ainda não há questões assim no seu recorte: a turma precisa de pelo menos 3 respostas por questão. '}
+                {filtros.situacao === 'favoritas' && <a href={href('/favoritas')}>Ver a lista das favoritas</a>}
+                {filtros.situacao === 'revisarHoje' && <a href={href('/revisao')}>Ajustar o ritmo da revisão</a>}
+              </p>
+            ) : null}
+          </section>
+
+          <details className="tn-bloco tn-mais" id="etapa-3" open={filtrosProvaAbertos} onToggle={(e) => definirFiltrosProvaAbertos((e.currentTarget as HTMLDetailsElement).open)}>
+            <summary className="tn-bloco__cabeca tn-mais__cabeca">
+              <span className="px-numero" aria-hidden="true">4</span>
+              <span className="tn-mais__texto">
+                <h2>Mais filtros <small className="tn-opcional">opcional</small>{opcoesAtivas > 0 && <span className="tn-mais__ativas">{opcoesAtivas} {opcoesAtivas === 1 ? 'opção' : 'opções'}</span>}</h2>
+                <p>{resumoProva}</p>
+              </span>
+              <Icone nome="baixo" tamanho={18} />
+            </summary>
+            <div className="tn-mais__corpo">
+              {temProva && (
+                <div className="tr-grupo">
+                  <span className="tr-grupo__rotulo">Prova de origem</span>
+                  <div className="tr-pilulas">
+                    {gruposProva.map((grupo) => {
+                      const marcado = grupo.provas.some((p) => filtros.provas.includes(p))
+                      const quantidade = grupo.provas.reduce((soma, p) => soma + (contagens?.porProva[p] ?? 0), 0)
+                      // Provas que a prova escolhida não traz (ex.: as da mão em ortopedia) somem da lista.
+                      if (!marcado && provasDoFoco && !grupo.provas.some((p) => provasDoFoco.has(p))) return null
+                      return (
+                        <button key={grupo.rotulo} type="button" className="tr-pilula" aria-pressed={marcado}
+                          title={grupo.rotulo === 'TEOT/TARO' ? 'TEOT ou TARO: questões com a prova de origem ainda a confirmar' : grupo.rotulo === 'SIMÃO' ? 'OrtoQuestões Simulados no padrão do SIMÃO, o simulado do exame de título de especialista em cirurgia da mão' : undefined}
+                          onClick={() => atualizar({ provas: marcado ? filtros.provas.filter((x) => !grupo.provas.includes(x)) : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))] })}>
+                          {grupo.rotulo}
+                          <span className="numerico">{quantidade}</span>
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
+              {temAno && (
+                <div className="tr-grupo">
+                  <span className="tr-grupo__rotulo">Ano</span>
+                  <div className="tr-pilulas">
+                    {[...(indice?.anos ?? [])].sort((a, b) => b - a).map((ano) => (
+                      <button key={ano} type="button" className="tr-pilula" aria-pressed={filtros.anos.includes(ano)}
+                        onClick={() => atualizar({ anos: filtros.anos.includes(ano) ? filtros.anos.filter((x) => x !== ano) : [...filtros.anos, ano] })}>
+                        {ano}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {Object.keys(contagens?.porDificuldade ?? {}).length > 0 && (
+                <div className="tr-grupo">
+                  <span className="tr-grupo__rotulo">Dificuldade</span>
+                  <div className="tr-pilulas">
+                    {DIFICULDADES.map((d) => (
+                      <button key={d} type="button" className="tr-pilula" aria-pressed={filtros.dificuldades.includes(d)}
+                        onClick={() => atualizar({ dificuldades: filtros.dificuldades.includes(d) ? filtros.dificuldades.filter((x) => x !== d) : [...filtros.dificuldades, d] })}>
+                        {ROTULO_DIFICULDADE[d]}
+                        <span className="numerico">{contagens?.porDificuldade[d] ?? 0}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <div className="tr-grupo">
+                <span className="tr-grupo__rotulo">Opções</span>
+                <div className="tn-opcoes">
+                  {temImagem && <label className="caixa"><input type="checkbox" checked={filtros.comImagem} onChange={(e) => atualizar({ comImagem: e.target.checked })} /><span>Só questões com imagem no enunciado</span></label>}
+                  {temComentario && <label className="caixa"><input type="checkbox" checked={filtros.comComentario} onChange={(e) => atualizar({ comComentario: e.target.checked })} /><span>Só questões com comentário</span></label>}
+                  {temAnulada && <label className="caixa"><input type="checkbox" checked={filtros.incluirAnuladas} onChange={(e) => atualizar({ incluirAnuladas: e.target.checked })} /><span>Incluir questões anuladas (não contam no desempenho)</span></label>}
+                  <label className="caixa"><input type="checkbox" checked={filtros.embaralhar} onChange={(e) => atualizar({ embaralhar: e.target.checked })} /><span>Embaralhar a ordem</span></label>
+                  <label className="caixa">
+                    <input type="checkbox" checked={!mostrarEtiquetas} onChange={(e) => definirEtiquetas(!e.target.checked)} />
+                    <span>
+                      Esconder as etiquetas de assunto até responder
+                      <span className="campo__auxilio tn-opcoes__ajuda">Ler "Salter-Harris" antes do enunciado já elimina metade das alternativas. Vale para todas as sessões e dá para trocar no meio, pela tecla E.</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          {total === 0 && (
+            <Estado titulo="Nenhuma questão atende a esse recorte.">
+              <p>
+                {filtros.busca.trim()
+                  ? `Nenhuma questão contém "${filtros.busca.trim()}". A busca procura no enunciado, nas alternativas e nas etiquetas, e exige todas as palavras.`
+                  : 'Tire um filtro por vez. O botão volta a habilitar assim que houver questões.'}
+              </p>
+            </Estado>
+          )}
         </div>
-        <a className="botao botao--ouro tr-barra__cronograma" href={href('/cronograma')} title={rotuloCronograma} aria-label={rotuloCronograma}><Icone nome="rota" tamanho={18} /><span>{rotuloCronograma}</span></a>
-        {botaoSalvar('tr-barra__salvar')}
-        <button type="button" className="botao botao--fantasma tr-barra__limpar" title="Voltar ao padrão: Ortopedia, não respondidas, 20" onClick={() => definirFiltros(filtrosPadrao())}>Limpar</button>
-        <button type="button" className="botao botao--principal botao--grande tr-comecar" disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
-          {conteudoComecar}
-        </button>
+
+        <aside className="tn-resumo" id="tn-resumo" aria-labelledby="tn-resumo-titulo">
+          <div className="tn-bilhete">
+            <header className="tn-bilhete__cabeca">
+              <p className="tr-heroi__selo" id="tn-resumo-titulo">Sua sessão</p>
+              <p className="tn-bilhete__total"><strong className="tn-num">{total === 0 ? 0 : quantidadeSessao}</strong> {quantidadeSessao === 1 ? 'questão' : 'questões'}</p>
+              <dl className="tn-bilhete__dados">
+                <div><dt>Prova</dt><dd>{nomeArea}</dd></div>
+                <div><dt>Origem</dt><dd>{origem === 'tudo' ? 'Provas + Simulados' : origem === 'oficiais' ? 'Só provas oficiais' : 'Só Simulados'}</dd></div>
+                <div><dt>Assunto</dt><dd>{selecionados ? rotuloOQue(filtros) : 'Todos'}</dd></div>
+                <div><dt>Quais</dt><dd>{ROTULO_SITUACAO[filtros.situacao]}</dd></div>
+                {total > 0 && <div><dt>Tempo</dt><dd>cerca de {estimativaMinutos} min</dd></div>}
+                {desempenhoAnterior !== null && <div><dt>Seu acerto</dt><dd className="tn-num">{desempenhoAnterior}%</dd></div>}
+              </dl>
+            </header>
+
+            <div className="tn-bilhete__grupo">
+              <span className="tn-bilhete__rotulo" id="tn-quantas">Quantas</span>
+              <div className="tn-quantas" role="group" aria-labelledby="tn-quantas" id="filtro-limite">
+                {LIMITES.map((n) => (
+                  <button key={n} type="button" className="tn-vidro tn-vidro--quadrado" aria-pressed={filtros.limite === n} disabled={total < n && filtros.limite !== n} onClick={() => atualizar({ limite: n })}>{n}</button>
+                ))}
+                <button type="button" className="tn-vidro tn-vidro--quadrado" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
+                <label className="tn-outra">
+                  <span className="so-leitor">Quantidade personalizada</span>
+                  <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={rascunhoQtd ?? (filtros.limite !== null && !LIMITES.includes(filtros.limite) ? filtros.limite : '')} placeholder="Outra" onChange={(e) => definirRascunhoQtd(e.target.value)} onBlur={() => { if (rascunhoQtd === null) return; const n = Math.floor(Number(rascunhoQtd)); atualizar({ limite: rascunhoQtd && n > 0 ? Math.max(1, Math.min(total || 1, n)) : null }); definirRascunhoQtd(null) }} onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }} />
+                </label>
+              </div>
+            </div>
+
+            <div className="tn-bilhete__grupo">
+              <span className="tn-bilhete__rotulo" id="tn-modo">Como</span>
+              <div className="tn-modos" role="radiogroup" aria-labelledby="tn-modo">
+                <button type="button" role="radio" aria-checked={!simulado} className="tn-modo" onClick={() => definirSimulado(false)}>
+                  <Icone nome="livro" tamanho={18} />
+                  <span><strong>Estudo</strong><small>Comentário a cada resposta</small></span>
+                </button>
+                <button type="button" role="radio" aria-checked={simulado} className="tn-modo" onClick={() => definirSimulado(true)}>
+                  <Icone nome="relogio" tamanho={18} />
+                  <span><strong>Prova</strong><small>Cronômetro e gabarito no fim</small></span>
+                </button>
+              </div>
+              {simulado && (
+                <div className="tn-quantas" id="filtro-duracao" role="group" aria-label="Tempo de prova">
+                  {DURACOES.map(([valor, rotulo]) => (
+                    <button key={valor} type="button" className="tn-vidro" aria-pressed={minutos === valor} onClick={() => definirMinutos(valor)}>{rotulo}</button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {tambemValem.length > 0 && (
+              <ul className="tn-valem" aria-label="Filtros que também valem">
+                {tambemValem.map((t) => <li key={t}>{t}</li>)}
+              </ul>
+            )}
+
+            {comecarBotao('tn-bilhete__comecar')}
+
+            <div className="tn-bilhete__acoes">
+              {botaoSalvar('tn-bilhete__acao')}
+              <button type="button" className="botao botao--fantasma tn-bilhete__acao" title="Voltar ao padrão: Ortopedia, não respondidas, 20" onClick={() => definirFiltros(filtrosPadrao())}>
+                <Icone nome="reiniciar" tamanho={16} /> Limpar
+              </button>
+            </div>
+          </div>
+
+          {simuladosAcervo > 0 && (
+            <section className="tn-simulados" aria-labelledby="tn-simulados-titulo">
+              <h2 id="tn-simulados-titulo">Treinar como prova</h2>
+              <p>Uma prova inteira só com OrtoQuestões Simulados, com cronômetro e gabarito no fim.</p>
+              <div className="tn-simulados__acoes">
+                <button type="button" className="botao botao--fantasma" onClick={montarSimulado}><Icone nome="relogio" tamanho={16} /> Montar a prova</button>
+                <button type="button" className="botao botao--fantasma" onClick={() => sessaoRapida({ soSimulados: true, areas: areasSimulado })}><Icone nome="raio" tamanho={16} /> 10 simulados</button>
+              </div>
+            </section>
+          )}
+        </aside>
+      </div>
+
+      <div className="tn-barra" role="region" aria-label="Começar a sessão">
+        <p className="tn-barra__resumo">
+          <strong>{total === 0 ? 'Nenhuma questão' : <><span className="tn-num">{quantidadeSessao}</span> {quantidadeSessao === 1 ? 'questão' : 'questões'}</>}</strong>
+          {total > 0 && <span>cerca de {estimativaMinutos} min · {simulado ? 'prova' : 'estudo'}</span>}
+        </p>
+        {comecarBotao('tn-barra__comecar')}
       </div>
     </div>
   )

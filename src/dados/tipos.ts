@@ -238,6 +238,8 @@ export interface Filtros {
   comComentario: boolean
   /** só as questões com a etiqueta OrtoQuestões Simulados */
   soSimulados: boolean
+  /** só as questões das provas oficiais, sem os OrtoQuestões Simulados */
+  semSimulados?: boolean
   incluirAnuladas: boolean
   embaralhar: boolean
   limite: number | null
