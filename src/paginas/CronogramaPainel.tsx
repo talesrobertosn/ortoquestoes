@@ -38,7 +38,10 @@ const faixaCores = (partes: Array<{ slug: string; n: number }>) => {
 
 // ─── Onde você está ────────────────────────────────────────────────────────
 
-export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; aoAjustar?: () => void }) {
+/** O botão do dia levado ao topo (atalho do mesmo botão do cartão Hoje). */
+export interface AcaoTopo { rotulo: string; detalhe?: string; aoClicar?: () => void; href?: string; ouro?: boolean }
+
+export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar, acao = null, rodape, nome = '', recados = [] }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; aoAjustar?: () => void; acao?: AcaoTopo | null; /** O resumo da semana (domingo e segunda), dentro do topo. */ rodape?: ReactNode; /** Primeiro nome da pessoa, no título (adendo do dono, 18/10/2026). */ nome?: string; /** Frases curtas com os dados dela: a meta de hoje, a área mais forte. */ recados?: ReactNode[] }) {
   const hoje = diaCivil()
   const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
@@ -71,12 +74,21 @@ export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { pl
 
   return (
     <section className="cp-onde" aria-labelledby="cp-onde-titulo">
-      <p className="cp-onde__selo">{previa ? 'Exemplo do cronograma' : 'Onde você está'} · {plano.prova}
-        {/* Trocar data, folga ou ritmo fica no topo: antes era preciso rolar a página inteira. */}
-        {aoAjustar && <button type="button" className="cp-onde__ajustar" onClick={aoAjustar} aria-label="Ajustar o cronograma: data, ritmo, folgas" title="Ajustar o cronograma: data, ritmo, folgas"><Icone nome="lapis" tamanho={14} /> Ajustar</button>}
-      </p>
-      <h1 id="cp-onde-titulo">{calculo.provaPassou ? 'Dia da prova' : <>Faltam <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
-      <p className="cp-onde__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal}</p>
+      <div className="cp-onde__cabeca">
+        <div className="cp-onde__texto">
+          <p className="tr-heroi__selo cp-onde__selo">{previa ? 'Exemplo do cronograma' : 'Onde você está'} · {plano.prova}</p>
+          <h1 id="cp-onde-titulo">{calculo.provaPassou ? (nome ? `${nome}, é o dia da prova` : 'Dia da prova') : <>{nome ? `${nome}, faltam` : 'Faltam'} <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
+          <p className="cp-onde__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal}</p>
+          {recados.length > 0 && <ul className="cp-onde__recados">{recados.map((r, i) => <li key={i}>{r}</li>)}</ul>}
+        </div>
+        <div className="cp-onde__acoes">
+          {acao && (acao.href
+            ? <a className={'cp-onde__rapida' + (acao.ouro ? ' cp-onde__rapida--ouro' : '')} href={acao.href} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></a>
+            : <button type="button" className={'cp-onde__rapida' + (acao.ouro ? ' cp-onde__rapida--ouro' : '')} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></button>)}
+          {/* Trocar data, folga ou ritmo fica no topo: antes era preciso rolar a página inteira. */}
+          {aoAjustar && <button type="button" className="cp-onde__ajustar" onClick={aoAjustar} aria-label="Ajustar o cronograma: data, ritmo, folgas" title="Ajustar o cronograma: data, ritmo, folgas"><Icone nome="lapis" tamanho={15} /> Ajustar</button>}
+        </div>
+      </div>
       {!calculo.provaPassou && <>
         <div className="cp-trilho" aria-hidden="true">
           <div className="cp-trilho__faixas" style={{ gridTemplateColumns: trechos.map((t) => `${Math.max(0.6, (t.ate.getTime() - t.de.getTime()) / DIA)}fr`).join(' ') + ' 0.5fr' }}>
@@ -92,7 +104,10 @@ export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar }: { pl
         </div>
         <p className="cp-trilho__resumo">{trechos.map((t) => t.nome).join(' → ')} → prova em {curta(prova)}. Você está em: {atual >= 0 ? trechos[atual].nome : 'conteúdo novo'}.</p>
       </>}
-      <p className="cp-onde__frase">{frase}</p>
+      <div className="cp-onde__pe">
+        <p className="cp-onde__frase">{frase}</p>
+        {rodape}
+      </div>
     </section>
   )
 }
@@ -442,9 +457,9 @@ export function ComoEstouIndo({ calculo, constancia, minutosQuestao }: { calculo
       <p className="cp-rotulo"><span id="cp-indo-titulo">Como você está indo</span></p>
       <div className="cp-indo">
         {constancia && <div><small>Constância</small><b className="numerico">{constancia.sequencia} {constancia.sequencia === 1 ? 'dia' : 'dias'}</b><span>seguidos com {DIA_MINIMO}+ questões</span></div>}
-        <div><small>Ritmo</small><b>{ritmo.t}</b><span>{ritmo.s}</span></div>
-        <div><small>Projeção</small><b className="numerico">{p.maisCaiPct}%</b><span>da prioridade máxima vista{p.fimMaisCai ? ` até ${curta(p.fimMaisCai)}` : ''}</span></div>
-        <div><small>Progresso</small><b className="numerico">{calculo.feitas.toLocaleString('pt-BR')}</b><span>de {calculo.alvo.toLocaleString('pt-BR')} questões do plano ({p.alvoPct}% previsto até a reta final)</span></div>
+        <div className={calculo.ritmo < -5 && calculo.esperadoAteHoje >= 20 ? 'cp-indo__ritmo--atras' : calculo.ritmo > 5 && calculo.esperadoAteHoje >= 20 ? 'cp-indo__ritmo--frente' : undefined}><small>Ritmo</small><b>{ritmo.t}</b><span>{ritmo.s}</span></div>
+        <div><small>Projeção</small><b className="numerico">{p.maisCaiPct}%</b><span className="cp-indo__medidor" aria-hidden="true"><span style={{ width: `${Math.min(100, Math.max(0, p.maisCaiPct))}%` }} /></span><span>da prioridade máxima vista{p.fimMaisCai ? ` até ${curta(p.fimMaisCai)}` : ''}</span></div>
+        <div><small>Progresso</small><b className="numerico">{calculo.feitas.toLocaleString('pt-BR')}</b><span className="cp-indo__medidor cp-indo__medidor--feito" aria-hidden="true"><span style={{ width: `${Math.min(100, (calculo.feitas / Math.max(1, calculo.alvo)) * 100)}%` }} /></span><span>de {calculo.alvo.toLocaleString('pt-BR')} questões do plano ({p.alvoPct}% previsto até a reta final)</span></div>
       </div>
       <p className="cp-indo__nota">Tempo estimado com o seu ritmo: ~{String(minutosQuestao).replace('.', ',')} min por questão.</p>
     </section>
@@ -474,7 +489,7 @@ export function Prontidao({ areas }: { areas: Prontidao[] }) {
 export function Recolhido({ titulo, icone, children, aberto = false }: { titulo: string; icone: Parameters<typeof Icone>[0]['nome']; children: ReactNode; aberto?: boolean }) {
   return (
     <details className="cp-recolhido" open={aberto}>
-      <summary><Icone nome={icone} tamanho={18} /> <span>{titulo}</span><Icone nome="baixo" tamanho={16} /></summary>
+      <summary><span className="cp-recolhido__icone" aria-hidden="true"><Icone nome={icone} tamanho={18} /></span><span>{titulo}</span><Icone nome="baixo" tamanho={16} /></summary>
       <div className="cp-recolhido__corpo">{children}</div>
     </details>
   )
@@ -490,9 +505,11 @@ export function TourCronograma({ aoFechar }: { aoFechar: () => void }) {
   ]
   return (
     <section className="cp-tour" aria-labelledby="cp-tour-titulo">
-      <h2 id="cp-tour-titulo">Seu cronograma em 3 partes</h2>
-      <ol>{passos.map((p, i) => <li key={p.titulo}><span className="numerico">{i + 1}</span><span><strong>{p.titulo}</strong><small>{p.texto}</small></span></li>)}</ol>
-      <button type="button" className="botao botao--principal" onClick={aoFechar}>Entendi</button>
+      <div className="cp-tour__cabeca">
+        <h2 id="cp-tour-titulo">Seu cronograma em 3 partes</h2>
+        <button type="button" className="botao botao--principal" onClick={aoFechar}>Entendi</button>
+      </div>
+      <ol>{passos.map((p, i) => <li key={p.titulo}><span className="px-numero" aria-hidden="true">{i + 1}</span><span><strong>{p.titulo}</strong><small>{p.texto}</small></span></li>)}</ol>
     </section>
   )
 }
@@ -502,9 +519,9 @@ export function TourCronograma({ aoFechar }: { aoFechar: () => void }) {
 export function ResumoSemana({ feitas, acerto, dias, fraca, proxima }: { feitas: number; acerto: number | null; dias: number; fraca: string | null; proxima: string | null }) {
   return (
     <section className="cp-resumo" aria-labelledby="cp-resumo-titulo">
-      <p className="cp-onde__selo">Resumo da semana</p>
-      <h2 id="cp-resumo-titulo">{feitas ? `${feitas} questões em ${dias} ${dias === 1 ? 'dia' : 'dias'}` : 'Semana sem estudo'}</h2>
-      <p>{acerto !== null ? <>Acerto de <b>{acerto}%</b>. </> : null}{fraca ? <>Área para olhar com carinho: <b>{fraca}</b>. </> : null}{proxima ? <>Nesta semana: <b>{proxima}</b>.</> : null}</p>
+      <p className="cp-resumo__selo">Resumo da semana</p>
+      <h2 id="cp-resumo-titulo">{feitas >= 10 ? <>{feitas} questões em {dias} {dias === 1 ? 'dia' : 'dias'}</> : feitas > 0 ? 'Os primeiros passos da semana' : 'Uma semana para recomeçar'}</h2>
+      <p>{acerto !== null && acerto >= 50 && feitas >= 10 ? <>Acerto de <b>{acerto}%</b>. </> : null}{fraca ? <>Onde ainda há pontos a ganhar: <b>{fraca}</b>. </> : null}{proxima ? <>Nesta semana: <b>{proxima}</b>.</> : null}</p>
     </section>
   )
 }

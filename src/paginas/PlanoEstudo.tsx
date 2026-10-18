@@ -1,5 +1,5 @@
 import { DATA_TEOT } from '../dados/calendarioProvas'
-import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
 import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
@@ -27,6 +27,7 @@ import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
+import '../estilos/paginas/Cronograma.css'
 import { usarDiaAtual } from '../util/usarDiaAtual'
 import { chaveCivil, chaveDoDia, diaCivil, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
@@ -307,13 +308,20 @@ export function PlanoEstudo() {
   }
 
   return (
-    <div className="empilha-2 pe cp">
+    <div className="empilha-2 pe cp cr">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
       <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
     </div>
   )
+}
+
+/** O primeiro nome, como nos e-mails (primeiroNome de supabase/functions/_shared/cartas.ts): vazio se não parecer um nome. */
+function primeiroNome(nome?: unknown): string {
+  const primeiro = String(nome ?? '').trim().split(/\s+/)[0] ?? ''
+  if (!primeiro || /[@\d_]/.test(primeiro) || primeiro.length < 2 || primeiro.length > 20) return ''
+  return primeiro.charAt(0).toLocaleUpperCase('pt-BR') + primeiro.slice(1).toLocaleLowerCase('pt-BR')
 }
 
 /** O que a pessoa marcou como feito hoje fora das questões (flashcards, mini-simulado). O resumão tem registro próprio (estado/resumaoLido). */
@@ -414,6 +422,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   // O resumão marca a área como lida hoje (botão "Li esta área" ou um minuto com ela aberta).
   const [resumaoHoje] = usarArmazenado<ResumaoHoje>(CHAVE_RESUMAO_HOJE, RESUMAO_HOJE_VAZIO)
   const minutos = hub?.minutosQuestao ?? MINUTOS_POR_QUESTAO
+  const { sessao: sessaoConta } = usarConta()
   const naRetaFinalComRoteiro = aberto && !!hub && (calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera')
   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
   const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
@@ -499,12 +508,26 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
     : calculo.tipoHoje === 'dificil' ? `Semana difícil: só o dia mínimo (${calculo.metaDiaria} questões), para não quebrar a sequência.`
     : principal ? porQueHoje(calculo, principal.slug, plano.prova) : calculo.restante === 0 ? 'Mantenha a revisão em dia e faça o Simulado Nacional do mês.' : ''
 
+  // O nome e duas frases com os dados da pessoa no topo (adendo do dono, 18/10/2026), com o tato
+  // dos e-mails (docs/emails/TOM.md): nada abaixo de 10 questões, nenhum acerto abaixo de 50%, sem cobrança.
+  const nome = primeiroNome(sessaoConta?.user.user_metadata?.nome)
+  const recados: ReactNode[] = []
+  if (aberto && !calculo.provaPassou) {
+    if (calculo.naRetaFinal) recados.push(<>Reta final: agora é revisar o que mais cai, sem conteúdo novo.</>)
+    else if (folgaHoje) recados.push(<>Hoje é dia de descanso. {calculo.amanha?.total ? <>Amanhã o plano segue com <b>{calculo.amanha.total >= 10 ? `${calculo.amanha.total} questões` : 'poucas questões'}</b>.</> : 'O plano segue no próximo dia de estudo.'}</>)
+    else if (metaFeita) recados.push(<>A meta de hoje está feita. O que vier agora adianta os próximos dias.</>)
+    else if (calculo.metaDiaria > 0) recados.push(<>A meta de hoje: <b>{calculo.metaDiaria >= 10 ? `${calculo.metaDiaria} questões` : 'poucas questões'}</b>, cerca de {formatarTempo(calculo.metaDiaria * minutos)}.</>)
+    const forte = (hub?.desempenho ?? []).filter((a) => a.respondidas >= 15 && a.acerto >= 50 && a.nome !== hub?.semana?.fraca).sort((a, b) => b.acerto - a.acerto)[0]
+    if (forte) recados.push(<>Sua área mais forte até aqui: <b>{forte.nome}</b>, com {forte.acerto}% de acerto.</>)
+  }
+
   return <>
     {aberto && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
-    {aberto && hub?.semana && <ResumoSemana {...hub.semana} />}
     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
 
-    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} aoAjustar={aberto ? aoAjustar : undefined} />
+    {/* O botão do dia também no topo: o calendário vem antes do cartão Hoje e o empurra para baixo. */}
+    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} aoAjustar={aberto ? aoAjustar : undefined} acao={naRetaFinalComRoteiro ? null : botao} nome={nome} recados={recados}
+      rodape={aberto && hub?.semana ? <ResumoSemana {...hub.semana} /> : undefined} />
 
     {/* Prioridade da página (Tales, 17/10/2026): o calendário grande vem logo abaixo de "Onde você está";
         o detalhe de hoje, a coluna lateral e os recolhidos ficam depois. */}
@@ -555,9 +578,9 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
           <ComoFuncionaCompleto aberto={false} plano={plano} />
         </div>}
 
-    {aberto && <div className="linha">
-      <a className="botao botao--fantasma" href={href('/temas-que-mais-caem')}><Icone nome="grafico" tamanho={16} /> Temas que mais caem</a>
-    </div>}
+    {aberto && <p className="cr-rodape">
+      <a className="cr-rodape__link" href={href('/temas-que-mais-caem')}><Icone nome="grafico" tamanho={16} /> Temas que mais caem</a>
+    </p>}
   </>
 }
 
@@ -623,7 +646,7 @@ function PreviaCronograma({ indice, respondidas }: { indice: Indice; respondidas
   }, [indice])
   const calculo = useMemo(() => calcularPlano(indice, respondidas, exemplo), [indice, respondidas, exemplo])
   return (
-    <div className="empilha-2 pe cp">
+    <div className="empilha-2 pe cp cr">
       <VisaoCronograma plano={exemplo} calculo={calculo} aberto={false} />
     </div>
   )
@@ -654,7 +677,8 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const [salvando, definirSalvando] = useState(false)
   const [erro, definirErro] = useState('')
   const [passo, definirPasso] = useState(0)
-  const { status } = usarConta()
+  const { status, sessao: sessaoConta } = usarConta()
+  const nome = primeiroNome(sessaoConta?.user.user_metadata?.nome)
   const sincronizado = !!previa || (status.pronto && status.pendentes === 0)
   const dataValida = /^\d{4}-\d{2}-\d{2}$/.test(data) && data > hojeBR()
   const minutos = useMemo(() => minutosPorQuestao(lerHistorico()), [])
@@ -733,12 +757,12 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const sim = simulacoes?.[intensidade]
 
   return (
-    <div className="empilha-2 pe">
+    <div className="empilha-2 pe cr-form">
       <section className="pe-heroi pe-heroi--convite pe-heroi--form">
         <div>
-          <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {atual ? 'Ajustar' : 'Seu estudo até a prova'}</p>
+          <p className="tr-heroi__selo">{atual ? 'Ajustar o cronograma' : 'Seu estudo até a prova'}</p>
           <h1 className="pe-heroi__nome">Cronograma</h1>
-          <p>Quatro perguntas e ele diz <strong>o que estudar em cada dia</strong>, começando pelo que mais cai, misturando as áreas e terminando com a <strong>reta final</strong>.{previa ? ' Veja a prévia do seu no fim.' : ''}</p>
+          <p>{nome ? `${nome}, quatro` : 'Quatro'} perguntas e ele diz <strong>o que estudar em cada dia</strong>, começando pelo que mais cai, misturando as áreas e terminando com a <strong>reta final</strong>.{previa ? ' Veja a prévia do seu no fim.' : ''}</p>
         </div>
       </section>
       <div className="pe-montar">
