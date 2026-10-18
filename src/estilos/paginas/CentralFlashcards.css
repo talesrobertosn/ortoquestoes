@@ -1,70 +1,10 @@
-/* Central dos flashcards (#/flashcards, desempenho e cronograma): página do site, com os tokens do site. */
+/* Páginas dos flashcards no site (#/flashcards, desempenho e cronograma), com os tokens do site e a temporada pixel. */
 .cf { --cf-tinta: #2b4a2c; }
 .cf h1, .cf h2 { text-wrap: balance; }
 .cf-selo { display: inline-flex; align-items: center; gap: 0.5rem; margin: 0; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--texto-2); }
 .cf-beta { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 999px; background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.72rem; letter-spacing: 0.06em; }
 .cf-nota { margin: 0; color: var(--texto-2); font-size: 0.86rem; }
-.cf-titulo { margin: 0 0 0.75rem; font-size: 1.2rem; }
 .cf-sub { margin: 1rem 0 0.5rem; font-size: 1rem; }
-
-.cf-abas { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.cf-abas a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: var(--toque); padding: 0 0.9rem; border: 1px solid var(--traco); border-radius: 999px; color: var(--texto); text-decoration: none; background: var(--superficie); font-weight: 600; font-size: 0.9rem; }
-.cf-abas a[aria-current="page"] { border-color: var(--verdete); background: var(--verdete-veu); color: var(--verdete-tinta); }
-
-/* herói com a arte */
-.cf-heroi { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1.5rem; align-items: center; padding: 1rem; border: 1px solid var(--traco); border-radius: var(--raio-cartao); background: var(--superficie); box-shadow: var(--sombra-media); }
-.cf-heroi__arte { display: block; overflow: hidden; border-radius: calc(var(--raio-cartao) - 4px); background: #1d2a1b; }
-.cf-heroi__arte img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
-.cf-heroi__texto { display: grid; gap: 0.75rem; min-width: 0; }
-.cf-heroi__texto h1 { margin: 0; font-size: clamp(1.5rem, 2.6vw, 2.1rem); line-height: 1.15; }
-.cf-heroi__texto p { margin: 0; }
-.cf-heroi__botoes { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-
-.cf-aviso, .cf-convite { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; padding: 0.8rem 1rem; border: 1px solid var(--aviso); border-radius: var(--raio); background: var(--aviso-veu); }
-.cf-aviso p, .cf-convite p { flex: 1 1 18rem; margin: 0; min-width: 0; }
-.cf-aviso > svg { flex: none; color: var(--aviso); }
-.cf-convite { border-color: var(--verdete); background: var(--verdete-veu); }
-.cf-convite__botoes { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-
-/* revisões de hoje */
-.cf-hoje { display: grid; gap: 1rem; padding: 1rem; border: 1px solid var(--traco); border-radius: var(--raio-cartao); background: var(--superficie); }
-.cf-hoje__cabeca h2 { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 0.25rem; font-size: 1.2rem; }
-.cf-hoje__cabeca p { margin: 0; color: var(--texto-2); }
-.cf-hoje__grade { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.6rem; }
-.cf-atalho { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 0.5rem; align-items: center; padding: 0.75rem; border: 1px solid var(--traco); border-radius: var(--raio); background: var(--superficie-2); color: var(--texto); text-decoration: none; }
-.cf-atalho span { font-weight: 600; font-size: 0.9rem; }
-.cf-atalho b { grid-column: 1 / -1; font-size: 1.6rem; line-height: 1.1; }
-.cf-atalho:hover { border-color: var(--verdete); }
-.cf-atalho--vazio { opacity: 0.55; }
-.cf-assunto { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
-.cf-assunto label { font-weight: 600; }
-.cf-assunto select { min-height: var(--toque); min-width: 0; max-width: 100%; flex: 1 1 12rem; padding: 0 0.6rem; border: 1px solid var(--traco-forte); border-radius: var(--raio-controle); background: var(--superficie); color: var(--texto); font: inherit; }
-.cf-hoje__plano { justify-self: start; }
-
-/* passos */
-.cf-passos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
-.cf-passos li { display: grid; gap: 0.3rem; padding: 1rem; border: 1px solid var(--traco); border-radius: var(--raio); background: var(--superficie); }
-.cf-passos b { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--verdete); color: #fff; }
-.cf-passos span { color: var(--texto-2); font-size: 0.9rem; }
-
-/* cartões ilustrados */
-.cf-modos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; }
-.cf-modo { display: grid; grid-template-rows: auto auto 1fr auto; gap: 0.35rem; padding: 0 0 1rem; overflow: hidden; border: 1px solid var(--traco); border-radius: var(--raio-cartao); background: var(--superficie); color: var(--texto); text-decoration: none; }
-.cf-modo img, .cf-modo__vaga { display: block; width: 100%; height: auto; aspect-ratio: 26 / 15; object-fit: cover; image-rendering: pixelated; background: #1d2a1b; }
-/* atrás do jogo as artes esperam (CentralFlashcards.tsx): a vaga guarda o lugar */
-.cf-heroi__arte:empty { aspect-ratio: 52 / 33; }
-.cf-modo strong, .cf-modo span, .cf-modo em { padding-inline: 1rem; }
-.cf-modo strong { margin-top: 0.4rem; font-size: 1.05rem; }
-.cf-modo span { color: var(--texto-2); font-size: 0.9rem; }
-.cf-modo em { display: inline-flex; align-items: center; gap: 0.3rem; font-style: normal; font-weight: 700; color: var(--verdete-tinta); }
-.cf-modo:hover { border-color: var(--verdete); box-shadow: var(--sombra-media); }
-
-.cf-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.6rem; margin: 0.75rem 0 0; padding: 0; list-style: none; }
-.cf-links a, .cf-links button { display: flex; gap: 0.6rem; align-items: flex-start; width: 100%; height: 100%; padding: 0.75rem; border: 1px solid var(--traco); border-radius: var(--raio); background: var(--superficie); color: var(--texto); font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
-.cf-links a:hover, .cf-links button:hover { border-color: var(--verdete); }
-.cf-links span { display: grid; gap: 0.15rem; min-width: 0; }
-.cf-links small { color: var(--texto-2); }
-.cf-links svg { flex: none; margin-top: 0.15rem; color: var(--verdete); }
 
 /* desempenho e cronograma */
 .cf-cabeca { display: grid; gap: 0.5rem; }
@@ -113,23 +53,8 @@
 .cf-opiniao__feito svg { color: var(--acerto); }
 
 @media (max-width: 56rem) {
-  .cf-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cf-numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-@media (max-width: 40rem) {
-  .cf-heroi { grid-template-columns: 1fr; padding: 0.75rem; }
-  .cf-heroi__arte { justify-self: stretch; }
-  .cf-aviso > svg { display: none; }
-  .cf-hoje__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .cf-passos, .cf-modos { grid-template-columns: 1fr; }
-  .cf-modo { grid-template-columns: 7.5rem 1fr; grid-template-rows: auto auto auto; padding: 0; column-gap: 0.25rem; }
-  .cf-modo img, .cf-modo__vaga { grid-row: 1 / 4; height: 100%; aspect-ratio: auto; }
-  .cf-modo strong, .cf-modo span, .cf-modo em { padding-inline: 0.5rem 0.75rem; }
-  .cf-modo em { padding-bottom: 0.6rem; }
-  .cf-links { grid-template-columns: 1fr; }
-  .cf-heroi__botoes .botao { flex: 1 1 100%; }
-}
-@media (prefers-reduced-motion: reduce) { .cf * { transition: none !important; } }
 
 /* ranking da Cripta (#/ranking?aba=cripta) */
 .rkc-lista { display: grid; gap: 0.3rem; margin: 0; padding: 0; list-style: none; }
@@ -139,38 +64,6 @@
 .rkc-lista em { font-style: normal; font-weight: 700; }
 .rkc-voce { outline: 2px solid var(--verdete); }
 .rkc-regras { display: grid; gap: 0.35rem; margin: 0; padding-left: 1.2rem; color: var(--texto-2); }
-
-/* Jornada dos flashcards: cenário pixelado, luz quente e leitura editorial. */
-.cf-heroi { position: relative; isolation: isolate; overflow: hidden; min-height: 460px; padding: clamp(24px,5vw,64px); border: 1px solid #ac8953; border-radius: 24px; background:#152f29; box-shadow:0 20px 48px #142c2826; }
-.cf-heroi__arte { position:absolute; inset:0; border-radius:0; z-index:-2; }
-.cf-heroi__arte img { width:100%; height:100%; object-fit:cover; object-position:70% 52%; }
-.cf-heroi::after { content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#142b25f5 0%,#142b25dd 30%,#142b2520 80%),linear-gradient(0deg,#10231b99,transparent 65%); }
-.cf-heroi__texto { grid-column:1 / -1; max-width:540px; color:#f5efd9; gap:20px; }
-.cf-heroi__texto h1 { font:700 clamp(32px,4vw,54px)/1.13 var(--fonte-marca); letter-spacing:-.02em; color:#fff5d5;text-shadow:0 3px 12px #0005; }
-.cf-heroi__texto > p:not(.cf-selo):not(.cf-nota) { font:400 19px/1.5 var(--fonte-texto); color:#eee9d8;max-width:43ch; }
-.cf-heroi .cf-selo,.cf-heroi .cf-nota { color:#e0dbba; }
-.cf-heroi .cf-beta { background:#d5b067; color:#26392c; }
-.cf-heroi__botoes .botao--principal { background:#f8efd9; color:#234d3c; border-color:#f8efd9; }
-.cf-modos { gap:20px; }
-.cf-modo { border-color:#b5a58266; box-shadow:0 8px 24px #1434270b;transition:transform .2s; }
-.cf-modo:hover { transform:translateY(-3px); }
-.cf-modo strong { font:700 20px/1.2 var(--fonte-marca); }
-.cf-links { grid-template-columns:repeat(3,minmax(0,1fr)); }
-@media(max-width:640px){
- .cf-heroi { min-height:590px; padding:28px 22px;align-items:end; }
- .cf-heroi__arte img { object-position:64% top; }
- .cf-heroi::after { background:linear-gradient(0deg,#132d26fa 0%,#132d26e8 48%,#132d2600 88%); }
- .cf-heroi__texto { gap:16px; }
- .cf-heroi__texto > p:not(.cf-selo):not(.cf-nota){font-size:20px;}
- .cf-heroi__botoes { flex-direction:column; }
- .cf-heroi__botoes .botao{justify-content:center;}
- .cf-links {grid-template-columns:1fr;}
-}
-@media(prefers-reduced-motion:reduce){.cf-modo {transition:none;}.cf-modo:hover{transform:none;}}
-.cf .cf-heroi::after { display:block; }
-@media(max-width:640px){.cf-heroi__botoes{flex-wrap:nowrap;}.cf-heroi__botoes .botao{flex:0 0 auto;width:100%;min-height:48px;}}
-/* O estilo global esconde os pseudo-elementos dos heróis; este véu preserva o contraste. */
-.cf .cf-heroi::after { display:block!important; pointer-events:none; }
 
 /* Opinião: formulário editorial com contraste, notas claras e rodapé acessível. */
 .jc__caixa.cf-opiniao { width:min(680px,calc(100vw - 32px)); max-height:calc(100dvh - 40px); padding:32px; border:1px solid #c4d1c3; border-radius:24px; background:var(--superficie); box-shadow:0 28px 90px #14322955; }
@@ -192,36 +85,11 @@
 .cf-opiniao .cf-form__botoes {padding-top:12px;border-top:1px solid var(--traco);justify-content:flex-end;}
 .cf-opiniao .jc__fechar {border-radius:50%;background:var(--superficie-2);}
 @media(max-width:640px){.jc__caixa.cf-opiniao{padding:24px 20px;max-height:calc(100dvh - 24px);width:calc(100vw - 24px);border-radius:20px;}.cf-opiniao__notas{grid-template-columns:1fr;gap:10px;}.cf-opiniao__cabeca h2{font-size:22px;}.cf-opiniao .cf-form__botoes{flex-direction:column;}.cf-opiniao .cf-form__botoes .botao{width:100%;justify-content:center;}}
-.cf-aviso { border-color: var(--traco); background: var(--superficie); border-radius: 18px; padding: 1.1rem 1.3rem; }
-.cf-aviso > svg { color: var(--verdete-tinta); }
-.cf-aviso p { color: var(--texto-2); font-size: .92rem; line-height: 1.55; }
-.cf-aviso strong { color: var(--texto); font-weight: 650; }
 @media(max-width:640px){.jc:has(.cf-opiniao){padding:12px;}}
 .cf-opiniao form { gap: 12px; }
 .cf-opiniao textarea { height: 80px; }
 .cf-opiniao .cf-form__botoes { position: sticky; bottom: -32px; background: var(--superficie); padding-bottom: 12px; }
 @media(max-width:640px){.cf-opiniao .cf-form__botoes{bottom:-24px;}}
-
-/* Central reorganizada (14/10/2026): revisões de hoje e cronograma lado a lado, cronograma em destaque. */
-.cf-painel { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 1rem; align-items: stretch; }
-.cf-painel .cf-hoje__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.cf-crono { display: grid; align-content: start; gap: 0.75rem; padding: 1.1rem; border: 1px solid var(--verdete); border-radius: var(--raio-cartao);
-  background: linear-gradient(160deg, var(--verdete-veu), var(--superficie) 70%); box-shadow: var(--sombra-media); }
-.cf-crono h2 { display: flex; align-items: center; gap: 0.5rem; margin: 0; font-size: 1.2rem; color: var(--verdete-tinta); }
-.cf-crono p { margin: 0; }
-.cf-crono__data { font-size: 1rem; }
-.cf-crono__meta { display: grid; grid-template-columns: 1fr auto; gap: 0.35rem; align-items: baseline; }
-.cf-crono__meta span { font-weight: 600; }
-.cf-crono__meta b { font-size: 1.6rem; line-height: 1; }
-.cf-crono__meta i { grid-column: 1 / -1; display: block; height: 10px; border-radius: 999px; background: var(--superficie-2); overflow: hidden; box-shadow: inset 0 0 0 1px var(--traco); }
-.cf-crono__meta em { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--verdete), var(--ouro, #d9a040)); }
-.cf-crono__botoes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
-.cf-crono--vazio { border-style: dashed; }
-.cf > .cf-aviso { border-color: var(--traco); background: var(--superficie); }
-@media (max-width: 860px) {
-  .cf-painel { grid-template-columns: minmax(0, 1fr); }
-  .cf-painel .cf-crono { order: -1; }
-}
 
 /* Meu desempenho (15/10/2026): evolução empilhada, áreas com a cor da área e pontos fracos. */
 .cfd-mini { display: block; height: 6px; margin: 0.2rem 0 0.1rem; border-radius: 999px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); overflow: hidden; }
@@ -280,5 +148,223 @@
   .cfd-fracos li .botao { grid-column: 1 / -1; justify-content: center; }
   .cfd-grafico__area { grid-template-rows: 7rem auto; }
 }
-/* botões do herói da central: três caminhos diretos */
-.cf-heroi__botoes .cf-heroi__crono { background: transparent; color: #f8efd9; border-color: #f8efd9aa; }
+
+/* ==========================================================================
+   Central dos flashcards (refeita em 18/10/2026), na temporada pixel do Treinar:
+   topo com o céu e a cidade da marca e a capa do jogo emoldurada; revisões de hoje
+   em placas com o número em pixel; o cronograma como a missão do dia (placa dourada);
+   passos em selo dourado; os modos num mosaico com as artes do jogo.
+   ========================================================================== */
+.cfh { display: grid; gap: var(--e-6); }
+.cfh .botao { border-radius: 4px; }
+.cf-titulo { margin: 0 0 var(--e-4); font-family: var(--fonte-marca); font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.2; }
+
+/* Abas das três páginas dos flashcards: um seletor de jogo. */
+.cf-abas { display: flex; width: fit-content; max-width: 100%; gap: 4px; padding: 4px; border: 2px solid var(--px-borda); border-radius: 8px; background: var(--superficie); box-shadow: 3px 3px 0 var(--px-sombra); }
+.cf-abas a {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--e-2); min-height: 40px; padding: 0 var(--e-4);
+  border-radius: 5px; color: var(--texto-2); font-size: var(--corpo-menor); font-weight: 650; text-decoration: none; white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.cf-abas a:hover { color: var(--texto); background: var(--superficie-2); }
+.cf-abas a[aria-current="page"] { background: var(--verdete); color: var(--sobre-destaque); box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 55%, #000); }
+.cf-abas__curto { display: none; }
+
+/* ---------- Topo ---------- */
+.cfh-heroi {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr); gap: var(--e-6); align-items: center;
+  padding: clamp(1.4rem, 3.6vw, 2.5rem) clamp(1.2rem, 3.6vw, 2.5rem) calc(clamp(1.4rem, 3.6vw, 2.5rem) + 1.75rem);
+  border-radius: var(--raio-cartao); background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media);
+}
+.cfh-heroi__texto { display: grid; justify-items: start; min-width: 0; }
+.cfh-heroi__texto .tr-heroi__selo { margin: 0 0 var(--e-3); }
+.cfh-heroi h1 { margin: 0; max-width: 14ch; font-family: var(--fonte-marca); color: var(--sobre-heroi); font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.035em; line-height: 1.02; text-wrap: balance; }
+.cfh-heroi__texto > p:not(.tr-heroi__selo) { margin: var(--e-3) 0 0; max-width: 48ch; color: var(--sobre-heroi-2); line-height: 1.55; text-wrap: pretty; }
+.cfh-heroi__texto > p.cfh-heroi__pessoal { margin-top: var(--e-4); padding: var(--e-2) var(--e-3); max-width: 52ch; border-left: 4px solid var(--px-ouro); background: rgba(7, 35, 32, 0.45); color: var(--sobre-heroi); font-size: var(--corpo-menor); line-height: 1.5; }
+.cfh-heroi__pessoal strong { color: var(--px-ouro); font-weight: 700; }
+.botao.cfh-heroi__estudar {
+  display: inline-flex; align-items: center; gap: var(--e-3); margin-top: var(--e-5); min-height: 66px;
+  padding: var(--e-3) var(--e-5) var(--e-3) var(--e-3); text-align: left; text-decoration: none;
+  border: 0; border-radius: 4px; background: var(--px-ouro); color: var(--px-tinta);
+  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.botao.cfh-heroi__estudar:hover { background: #ffdf95; color: var(--px-tinta); transform: translate(-1px, -1px); }
+.botao.cfh-heroi__estudar:active { transform: translate(1px, 1px); }
+.cfh-heroi__estudar svg { flex: none; padding: 0.45rem; width: 2.4rem; height: 2.4rem; background: var(--px-tinta); color: var(--px-ouro); }
+.cfh-heroi__estudar span { display: grid; line-height: 1.2; }
+.cfh-heroi__estudar strong { font-size: 1.1rem; }
+.cfh-heroi__estudar small { font-size: var(--meta); font-weight: 600; opacity: 0.8; font-variant-numeric: tabular-nums; }
+.cfh-heroi__atalhos { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2) var(--e-5); margin-top: var(--e-4); }
+.cfh-heroi__atalhos .tr-heroi__link { margin: 0; }
+.cfh-vidro {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--e-2); min-height: 44px; padding: 0 var(--e-4);
+  border-radius: 4px; background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); color: var(--sobre-heroi);
+  font-size: var(--corpo-menor); font-weight: 650; text-decoration: none;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.cfh-vidro:hover { background: rgba(255, 255, 255, 0.18); color: var(--sobre-heroi); }
+.cfh-vidro:active { transform: translateY(1px); }
+.cfh-heroi a:focus-visible { outline: 3px solid var(--px-ouro); outline-offset: 3px; }
+/* A capa do jogo como uma tela de cartucho, presa no céu. */
+.cfh-heroi__arte {
+  display: block; justify-self: end; width: 100%; max-width: 34rem; aspect-ratio: 52 / 33; overflow: hidden;
+  border-radius: 4px; background: #1d2a1b; box-shadow: 0 0 0 2px var(--px-tinta), 6px 6px 0 2px rgba(7, 35, 32, 0.6);
+}
+.cfh-heroi__arte img { display: block; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; }
+
+.cf-convite, .cf-aviso { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3) var(--e-5); padding: var(--e-4) var(--e-5); border-radius: 6px; }
+.cf-convite p, .cf-aviso p { flex: 1 1 20rem; margin: 0; min-width: 0; line-height: 1.55; }
+.cf-convite { border: 2px dashed color-mix(in srgb, var(--verdete) 55%, var(--traco)); background: var(--verdete-veu); }
+.cf-convite__botoes { display: flex; flex-wrap: wrap; gap: var(--e-2); }
+
+/* ---------- Hoje: revisões e cronograma lado a lado ---------- */
+.cf-painel { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: var(--e-5); align-items: stretch; }
+.cf-hoje, .cfh .cf-crono {
+  display: grid; align-content: start; gap: var(--e-4); min-width: 0; padding: clamp(1.1rem, 2.6vw, 1.6rem);
+  border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); box-shadow: 5px 5px 0 var(--px-sombra);
+}
+.cf-hoje__cabeca h2, .cfh .cf-crono h2 { display: flex; align-items: center; gap: var(--e-2); margin: 0; font-family: var(--fonte-marca); font-size: 1.3rem; letter-spacing: -0.02em; line-height: 1.2; color: var(--texto); }
+.cf-hoje__cabeca h2::before { content: ""; flex: none; width: 0.65rem; height: 0.65rem; background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); }
+.cf-hoje__cabeca p { margin: var(--e-1) 0 0; color: var(--texto-2); font-size: var(--corpo-menor); text-wrap: pretty; }
+.cf-hoje__grade { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--e-3); }
+.cf-atalho {
+  display: grid; align-content: space-between; gap: var(--e-2); min-width: 0; min-height: 7.4rem; padding: var(--e-3) var(--e-3) var(--e-3) var(--e-4);
+  border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); color: var(--texto); text-decoration: none;
+  box-shadow: 3px 3px 0 var(--px-sombra);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.cf-atalho__rotulo { display: flex; align-items: center; gap: 6px; font-size: var(--meta); font-weight: 700; line-height: 1.25; color: var(--texto-2); }
+.cf-atalho__rotulo svg { flex: none; }
+.cf-atalho b { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 2.7rem; line-height: 0.85; letter-spacing: 0.01em; color: var(--texto); font-variant-numeric: tabular-nums; }
+.cf-atalho small { display: inline-flex; align-items: center; gap: 4px; font-size: var(--meta); font-weight: 750; color: var(--verdete-tinta); }
+a.cf-atalho:hover { border-color: var(--verdete); transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--px-sombra); }
+a.cf-atalho:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--px-sombra); }
+a.cf-atalho:hover small svg { transform: translateX(2px); }
+.cf-atalho small svg { transition: transform 0.15s ease; }
+.cf-atalho--vazio { border-style: dashed; background: transparent; box-shadow: none; }
+.cf-atalho--vazio b { color: var(--texto-2); opacity: 0.55; }
+.cf-atalho--vazio small { color: var(--texto-2); font-weight: 600; }
+.cf-hoje { grid-template-rows: auto auto 1fr; }
+.cf-assunto { align-self: end; display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2) var(--e-3); padding-top: var(--e-4); border-top: 2px dashed var(--px-borda); }
+.cf-assunto label { font-size: var(--corpo-menor); font-weight: 700; }
+.cf-assunto select {
+  flex: 1 1 12rem; min-width: 0; max-width: 100%; min-height: 44px; padding: 0 var(--e-3);
+  border: 2px solid var(--px-borda); border-radius: 4px; background: var(--superficie-2); color: var(--texto); font: inherit;
+}
+.cf-assunto select:focus-visible { outline: 3px solid var(--verdete); outline-offset: 1px; }
+.cf-assunto .botao { min-height: 44px; }
+
+/* Cronograma: a missão do dia, numa placa dourada (como o dia de hoje no Cronograma). */
+.cfh .cf-crono { border-color: #c99a3b; background: color-mix(in srgb, var(--px-ouro) 16%, var(--superficie)); box-shadow: 5px 5px 0 rgba(201, 154, 59, 0.3); }
+.cfh .cf-crono h2 svg { color: var(--ouro-texto); }
+.cfh .cf-crono p { margin: 0; }
+.cfh .cf-crono .cf-nota { font-size: var(--meta); line-height: 1.5; }
+.cf-crono__meta { display: grid; grid-template-columns: 1fr auto; gap: var(--e-2); align-items: baseline; }
+.cf-crono__meta span { font-weight: 650; }
+.cf-crono__meta b { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 2rem; line-height: 0.9; font-variant-numeric: tabular-nums; }
+.cf-crono__meta i { grid-column: 1 / -1; display: block; height: 12px; overflow: hidden; background: var(--superficie); box-shadow: inset 0 0 0 2px var(--px-borda); }
+.cf-crono__meta em { display: block; height: 100%; background: repeating-linear-gradient(90deg, var(--verdete) 0 8px, color-mix(in srgb, var(--verdete) 70%, #7ee0c8) 8px 10px); }
+.cf-crono__botoes { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2); margin-top: auto; padding-top: var(--e-2); }
+.cfh .cf-crono--vazio { border-style: dashed; }
+
+/* ---------- Como funciona: três casas de uma trilha ---------- */
+.cf-passos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-5); margin: 0; padding: 0; list-style: none; }
+.cf-passos li { position: relative; display: flex; align-items: flex-start; gap: var(--e-3); padding: var(--e-4); border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); }
+.cf-passos li:not(:last-child)::after { content: ""; position: absolute; top: 1.85rem; right: calc(-1 * var(--e-5) - 2px); width: var(--e-5); height: 4px; background: var(--px-borda); }
+.cf-passos li > div { display: grid; gap: var(--e-1); min-width: 0; }
+.cf-passos strong { font-size: 1rem; line-height: 1.3; }
+.cf-passos li > div > span { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; text-wrap: pretty; }
+
+/* ---------- Por onde seguir: mosaico com as artes do jogo ---------- */
+.cf-modos { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--e-5); }
+.cf-modo {
+  display: grid; min-width: 0; overflow: hidden; color: var(--texto); text-decoration: none;
+  border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); box-shadow: 5px 5px 0 var(--px-sombra);
+  transition: transform 0.25s cubic-bezier(0.32, 0.72, 0, 1), box-shadow 0.25s cubic-bezier(0.32, 0.72, 0, 1), border-color 0.15s ease;
+}
+.cf-modo:hover { color: var(--texto); border-color: var(--verdete); transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--px-sombra); }
+.cf-modo:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--px-sombra); }
+.cf-modo:focus-visible, .cf-atalho:focus-visible, .cf-links a:focus-visible { outline: 3px solid var(--verdete); outline-offset: 3px; }
+.cf-modo:not(.cf-modo--biblioteca) { grid-template-columns: minmax(8rem, 0.85fr) minmax(0, 1.15fr); }
+.cf-modo--biblioteca { grid-row: span 2; grid-template-rows: minmax(15rem, 1fr) auto; }
+.cf-modo__arte { position: relative; display: block; min-height: 10rem; background: #1d2a1b; }
+.cf-modo__arte img, .cf-modo__vaga { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; }
+.cf-modo__selo { position: absolute; top: 10px; left: 10px; padding: 0.1rem 0.5rem; background: #0b2b27; color: #9fe3d4; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 2px 2px 0 #072320; }
+.cf-modo__corpo { display: grid; align-content: start; gap: var(--e-2); min-width: 0; padding: var(--e-4) var(--e-5) var(--e-5); }
+.cf-modo__corpo strong { font-family: var(--fonte-marca); font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1.2; }
+.cf-modo--biblioteca .cf-modo__corpo strong { font-size: 1.5rem; }
+.cf-modo__corpo > span:not(.cf-modo__meta) { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; text-wrap: pretty; }
+.cf-modo__corpo > em { display: inline-flex; align-items: center; gap: var(--e-2); padding-top: var(--e-2); font-style: normal; font-weight: 750; color: var(--verdete-tinta); }
+.cf-modo__corpo > em i { display: inline-grid; place-items: center; width: 26px; height: 26px; background: var(--verdete); color: var(--sobre-destaque); box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 55%, #000); transition: transform 0.25s cubic-bezier(0.32, 0.72, 0, 1); }
+.cf-modo--biblioteca .cf-modo__corpo > em i { background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra); }
+.cf-modo:hover .cf-modo__corpo > em i { transform: translateX(3px); }
+/* Medidor de progresso: barra em blocos, como a barra de vida do jogo (rótulo em texto, nunca só a cor). */
+.cf-modo__meta { display: grid; gap: var(--e-1); }
+.cf-modo__meta > i { display: block; height: 10px; overflow: hidden; background: var(--superficie-2); box-shadow: inset 0 0 0 2px var(--px-borda); }
+.cf-modo__meta > i em { display: block; height: 100%; background: repeating-linear-gradient(90deg, var(--verdete) 0 8px, color-mix(in srgb, var(--verdete) 70%, #7ee0c8) 8px 10px); }
+.cf-modo__meta small { color: var(--texto-2); font-size: var(--meta); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.cf-links { margin: var(--e-5) 0 0; padding: 0; list-style: none; }
+.cf-links a {
+  display: flex; align-items: center; gap: var(--e-3); padding: var(--e-3) var(--e-4);
+  border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); color: var(--texto); text-decoration: none;
+  box-shadow: 3px 3px 0 var(--px-sombra); transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.cf-links a:hover { color: var(--texto); border-color: var(--verdete); transform: translate(-1px, -1px); }
+.cf-links a > svg:first-child { color: var(--ouro-texto); }
+.cf-links a > svg:last-child { margin-left: auto; color: var(--texto-2); }
+.cf-links span { display: grid; gap: 2px; min-width: 0; }
+.cf-links small { color: var(--texto-2); font-size: var(--meta); }
+
+/* Opinião do beta: placa dourada pontilhada, como a dos simulados no Treinar. */
+.cf-aviso { border: 2px dashed color-mix(in srgb, var(--ouro) 55%, var(--traco)); background: var(--ouro-veu); }
+.cf-aviso > svg { flex: none; color: var(--ouro-texto); }
+.cf-aviso p { color: var(--texto-2); font-size: var(--corpo-menor); }
+.cf-aviso strong { color: var(--texto); font-weight: 700; }
+
+@media (max-width: 64rem) {
+  .cf-hoje__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 56rem) {
+  .cfh-heroi { grid-template-columns: minmax(0, 1fr); }
+  .cfh-heroi__arte { display: none; }
+  .cf-painel { grid-template-columns: minmax(0, 1fr); }
+  .cf-painel .cf-crono { order: -1; }
+  .cf-hoje__grade { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .cf-passos { grid-template-columns: minmax(0, 1fr); gap: var(--e-3); }
+  .cf-passos li:not(:last-child)::after { top: auto; bottom: calc(-1 * var(--e-3) - 2px); right: auto; left: calc(var(--e-4) + 1.05rem); width: 4px; height: var(--e-3); }
+  .cf-modos { grid-template-columns: minmax(0, 1fr); gap: var(--e-4); }
+  .cf-modo, .cf-modo:not(.cf-modo--biblioteca) { grid-row: auto; grid-template-rows: none; grid-template-columns: minmax(7.5rem, 0.7fr) minmax(0, 1.3fr); }
+}
+@media (max-width: 40rem) {
+  .cfh { gap: var(--e-5); }
+  .cf-abas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+  .cf-abas a { gap: 6px; padding: 0 var(--e-2); font-size: var(--meta); }
+  .cf-abas__longo { display: none; }
+  .cf-abas__curto { display: inline; }
+  .cfh-heroi { gap: var(--e-3); padding: var(--e-5) var(--e-4) calc(var(--e-5) + 1.5rem); }
+  .cfh-heroi h1 { font-size: 2rem; }
+  .cfh-heroi__texto > p:not(.tr-heroi__selo) { font-size: var(--corpo-menor); }
+  .botao.cfh-heroi__estudar { width: 100%; min-height: 58px; margin-top: var(--e-4); }
+  .cfh-heroi__atalhos { width: 100%; gap: var(--e-3); }
+  .cfh-vidro { flex: 1 1 auto; }
+  .cf-hoje__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-2); }
+  .cf-atalho { min-height: 6.4rem; }
+  .cf-atalho b { font-size: 2.3rem; }
+  .cf-assunto label { flex-basis: 100%; }
+  .cf-assunto .botao { flex: 0 0 auto; }
+  .cf-modo, .cf-modo:not(.cf-modo--biblioteca) { grid-template-columns: 7rem minmax(0, 1fr); }
+  .cf-modo__arte { min-height: 0; }
+  .cf-modo__selo { top: 6px; left: 6px; font-size: 0.66rem; }
+  .cf-modo__corpo { padding: var(--e-3) var(--e-4) var(--e-4); }
+  .cf-modo__corpo strong, .cf-modo--biblioteca .cf-modo__corpo strong { font-size: 1.1rem; }
+  .cf-modo__corpo > span:not(.cf-modo__meta) { font-size: var(--meta); }
+  .cf-aviso > svg { display: none; }
+  .cf-aviso .botao, .cf-convite__botoes .botao { flex: 1 1 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cf-abas a, .botao.cfh-heroi__estudar, .cfh-vidro, .cf-atalho, .cf-atalho small svg, .cf-modo, .cf-modo__corpo > em i, .cf-links a { transition: none; }
+  .cf-modo:hover, a.cf-atalho:hover, .cf-links a:hover { transform: none; }
+}
