@@ -2,6 +2,8 @@ import { SITE, recurso } from '../config'
 import { MarcaHorizontal } from '../marca/Simbolo'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
+import { usarConta } from '../conta/ContextoConta'
+import { primeiroNome } from './Cabecalho'
 import { abrirPreferenciasCookies, PIXEL_META } from '../conta/consentimento'
 
 const ESTUDAR = [
@@ -25,7 +27,10 @@ const PROJETO = [
   ['/sobre', 'O projeto'],
   ['/contato', 'Suporte e contato'],
   ['/assinatura', 'Planos'],
-  ['/termos', 'Termos de uso'],
+] as const
+/** Links legais: na linha de baixo, junto do ©, onde quem procura costuma olhar. */
+const LEGAL = [
+  ['/termos', 'Termos de uso e privacidade'],
   ['/condicoes-assinatura', 'Condições da assinatura'],
 ] as const
 
@@ -45,6 +50,8 @@ function CameraPixel() {
 /** comInstagram: o convite grande do Instagram só aparece na página inicial e na
  * do projeto; nas outras fica só o link discreto da coluna. */
 export function Rodape({ comInstagram = false }: { comInstagram?: boolean }) {
+  // Com o nome do cadastro, a despedida fala com a pessoa; sem ele, a frase de sempre.
+  const nome = primeiroNome(usarConta().sessao?.user.user_metadata?.nome)
   return (
     <footer className="rodape nao-imprime">
       <div className="conteudo">
@@ -60,32 +67,40 @@ export function Rodape({ comInstagram = false }: { comInstagram?: boolean }) {
 
         <div className="rodape-grade">
           <div className="rodape-marca">
-            <a href={href('/')} className="rodape-marca__logo" aria-label="Orto Questões, página inicial"><MarcaHorizontal altura={26} /></a>
+            <a href={href('/')} className="rodape-marca__logo" aria-label="Orto Questões, página inicial"><MarcaHorizontal altura={24} /></a>
             <p>Questões comentadas para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna.</p>
-            <p className="rodape-marca__nome">Orto Questões, também escrito OrtoQuestões · ortoquestoes.com.br</p>
             <p className="rodape-marca__autor">Feito por {SITE.autor}, para a comunidade de ortopedia.</p>
+            <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me" className="rodape-marca__insta"><Icone nome="instagram" tamanho={16} /> @{SITE.instagramUsuario}</a>
           </div>
           <nav className="rodape-coluna" aria-label="Estudar">
             <p className="rodape-coluna__titulo">Estudar</p>
-            {ESTUDAR.map(([destino, rotulo]) => <a key={destino} href={href(destino)}>{rotulo}</a>)}
-            <a href={recurso('questoes/')}>Questões por assunto</a>
-            <a href={recurso('guias/')}>Guias de preparação</a>
+            <div className="rodape-coluna__links">
+              {ESTUDAR.map(([destino, rotulo]) => <a key={destino} href={href(destino)}>{rotulo}</a>)}
+              <a href={recurso('questoes/')}>Questões por assunto</a>
+              <a href={recurso('guias/')}>Guias de preparação</a>
+            </div>
           </nav>
           <nav className="rodape-coluna" aria-label="Recursos do assinante">
             <p className="rodape-coluna__titulo">Assinante</p>
-            {ASSINANTE.map(([destino, rotulo], i) => <a key={destino} href={href(destino)} className={i === 0 ? 'rodape-coluna__destaque' : undefined}>{i === 0 && <Icone nome="rota" tamanho={15} />}{rotulo}</a>)}
+            <div className="rodape-coluna__links">
+              {ASSINANTE.map(([destino, rotulo], i) => <a key={destino} href={href(destino)} className={i === 0 ? 'rodape-coluna__destaque' : undefined}>{i === 0 && <Icone nome="rota" tamanho={15} />}{rotulo}</a>)}
+            </div>
           </nav>
           <nav className="rodape-coluna" aria-label="Projeto">
             <p className="rodape-coluna__titulo">Projeto</p>
-            {PROJETO.map(([destino, rotulo]) => <a key={destino} href={href(destino)}>{rotulo}</a>)}
-            {PIXEL_META && <button type="button" className="rodape-coluna__botao" onClick={abrirPreferenciasCookies}>Cookies</button>}
-            <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me" className="rodape-coluna__insta"><Icone nome="instagram" tamanho={16} /> @{SITE.instagramUsuario}</a>
+            <div className="rodape-coluna__links">
+              {PROJETO.map(([destino, rotulo]) => <a key={destino} href={href(destino)}>{rotulo}</a>)}
+            </div>
           </nav>
         </div>
 
         <div className="rodape-base">
-          <span>© {new Date().getFullYear()} {SITE.nome}</span>
-          <span>Estude com constância. A prova agradece.</span>
+          <nav className="rodape-legal" aria-label="Termos e privacidade">
+            {LEGAL.map(([destino, rotulo]) => <a key={destino} href={href(destino)}>{rotulo}</a>)}
+            {PIXEL_META && <button type="button" className="rodape-legal__botao" onClick={abrirPreferenciasCookies}>Cookies</button>}
+          </nav>
+          <p className="rodape-base__frase">{nome ? `${nome}, estude com constância. A prova agradece.` : 'Estude com constância. A prova agradece.'}</p>
+          <p className="rodape-base__nome">© {new Date().getFullYear()} {SITE.nome}, também escrito OrtoQuestões · ortoquestoes.com.br</p>
         </div>
       </div>
     </footer>

@@ -5,14 +5,15 @@ import { calcularStreak } from '../estado/streak'
 import { lerProvas, rotuloProva, type ProvaInteresse } from '../conta/perfilEstudo'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
+import { GraficoColunas, GraficoLinha, Medidor } from './GraficosDesempenho'
 import { FUSO_DIA, chaveDoDia, diaDaSemana, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 
 interface Evento { id: string; em: number; correta: boolean | null }
 
 const DIAS = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
 const pctDe = (parte: number, todo: number) => (todo ? Math.round((100 * parte) / todo) : null)
-const faixa = (p: number) => (p >= 70 ? 'bom' : p >= 50 ? 'medio' : 'baixo')
 const n = (v: number) => v.toLocaleString('pt-BR')
+const dataCurta = (em: number) => new Date(em).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: FUSO_DIA })
 
 /** Provas de preparação que contam tanto para o TEOT quanto para o TARO (origem a confirmar e CET-PR). */
 const PROVAS_GERAIS = ['TEOT/TARO', 'CET-PR']
@@ -30,8 +31,9 @@ const GRUPOS: Array<{ id: string; rotulo: string; interesse: ProvaInteresse[]; p
  * (com destaque para a prova de interesse do perfil), primeira tentativa
  * contra revisão, questões recuperadas, dia da semana e quanto do acervo
  * já foi visto. Tudo calculado no aparelho, a partir do histórico de respostas.
+ * A página distribui as partes em capítulos (onde você está, como evoluiu).
  */
-export function DesempenhoDetalhado({ indice, marcadas, limite, meta }: {
+export function usarDetalhes({ indice, marcadas, limite, meta }: {
   indice: Indice | null
   marcadas: Record<string, RegistroQuestao>
   limite: number
@@ -90,80 +92,124 @@ export function DesempenhoDetalhado({ indice, marcadas, limite, meta }: {
       dias28, respostas28, vistasTotal, validas, streak,
     }
   }, [indice, marcadas, limite, interesse.join(',')])
+  return { d, interesse }
+}
 
+export type Detalhes = ReturnType<typeof usarDetalhes>
+
+/** Os números de estudo: primeira tentativa, revisão, recuperação, acervo visto, ritmo e dias. */
+export function DetalhesNumeros({ detalhes: { d } }: { detalhes: Detalhes }) {
   if (!d.total) return null
   const acertoPrimeira = pctDe(d.primeiras.filter(e => e.correta).length, d.primeiras.length)
   const acertoRevisao = pctDe(d.repetidas.filter(e => e.correta).length, d.repetidas.length)
   const melhorDia = d.porDia.map((g, i) => ({ ...g, i })).filter(g => g.total >= 10).sort((a, b) => b.certas / b.total - a.certas / a.total)[0]
   const diaMaisAtivo = d.porDia.map((g, i) => ({ ...g, i })).sort((a, b) => b.total - a.total)[0]
-  const maiorSemana = Math.max(1, ...d.semanas.map(s => s.total))
-  const meu = d.grupos.find(g => g.meu)
-
+  const visto = pctDe(d.vistasTotal, d.validas) ?? 0
   return (
-    <>
-      <section className="cartao cartao__corpo dp-cartao">
-        <div className="dp-cartao__cabeca"><div><h2>Seus números</h2><p className="texto-2">No período escolhido, a partir do histórico de cada questão.</p></div></div>
-        <div className="dp-kpis">
-          <div className="dp-kpi"><span>Acerto na 1ª tentativa</span><strong>{acertoPrimeira === null ? '–' : `${acertoPrimeira}%`}</strong><small>{n(d.primeiras.length)} questões vistas pela primeira vez</small></div>
-          <div className="dp-kpi"><span>Acerto nas revisões</span><strong>{acertoRevisao === null ? '–' : `${acertoRevisao}%`}</strong><small>{acertoRevisao !== null && acertoPrimeira !== null ? `${acertoRevisao >= acertoPrimeira ? '+' : ''}${acertoRevisao - acertoPrimeira} pontos sobre a 1ª vez` : `${n(d.repetidas.length)} respostas repetidas`}</small></div>
-          <div className="dp-kpi"><span>Erros recuperados</span><strong>{pctDe(d.recuperadas, d.comErro) ?? 0}%</strong><small>{n(d.recuperadas)} de {n(d.comErro)} questões que você errou já foram acertadas depois</small></div>
-          <div className="dp-kpi"><span>Acervo visto</span><strong>{pctDe(d.vistasTotal, d.validas) ?? 0}%</strong><small>{n(d.vistasTotal)} de {n(d.validas)} questões</small></div>
-          <div className="dp-kpi"><span>Ritmo</span><strong>{d.dias28 ? n(Math.round(d.respostas28 / d.dias28)) : 0}</strong><small>questões por dia de estudo (últimas 4 semanas, {d.dias28} dia(s))</small></div>
-          <div className="dp-kpi"><span>Sequência</span><strong>{d.streak.atual} {d.streak.atual === 1 ? 'dia' : 'dias'}</strong><small>recorde de {d.streak.recorde} {d.streak.recorde === 1 ? 'dia' : 'dias'}</small></div>
-          {diaMaisAtivo?.total > 0 && <div className="dp-kpi"><span>Dia que mais estuda</span><strong>{DIAS[diaMaisAtivo.i]}</strong><small>{pctDe(diaMaisAtivo.total, d.total)}% das suas respostas</small></div>}
-          {melhorDia && <div className="dp-kpi"><span>Dia de melhor acerto</span><strong>{DIAS[melhorDia.i]}</strong><small>{pctDe(melhorDia.certas, melhorDia.total)}% de acerto em {n(melhorDia.total)} respostas</small></div>}
-        </div>
-      </section>
+    <section className="ds-numeros" aria-labelledby="ds-numeros-titulo">
+      <h3 id="ds-numeros-titulo" className="so-leitor">Seus números</h3>
+      <dl className="ds-numeros__lista">
+        <div className="ds-numero"><dt>Acerto na 1ª tentativa</dt><dd>{acertoPrimeira === null ? '–' : `${acertoPrimeira}%`}</dd><small>{n(d.primeiras.length)} questões vistas pela primeira vez</small></div>
+        <div className="ds-numero"><dt>Acerto nas revisões</dt><dd>{acertoRevisao === null ? '–' : `${acertoRevisao}%`}</dd><small>{acertoRevisao !== null && acertoPrimeira !== null ? `${acertoRevisao >= acertoPrimeira ? '+' : ''}${acertoRevisao - acertoPrimeira} pontos sobre a 1ª vez` : `${n(d.repetidas.length)} respostas repetidas`}</small></div>
+        <div className="ds-numero"><dt>Erros recuperados</dt><dd>{pctDe(d.recuperadas, d.comErro) ?? 0}%</dd><small>{n(d.recuperadas)} de {n(d.comErro)} questões que você errou já foram acertadas depois</small></div>
+        <div className="ds-numero"><dt>Acervo visto</dt><dd>{visto}%</dd><small>{n(d.vistasTotal)} de {n(d.validas)} questões</small><Medidor valor={visto} fina /></div>
+        <div className="ds-numero"><dt>Ritmo</dt><dd>{d.dias28 ? n(Math.round(d.respostas28 / d.dias28)) : 0}</dd><small>questões por dia de estudo (últimas 4 semanas, {d.dias28} dia(s))</small></div>
+        {diaMaisAtivo?.total > 0 && <div className="ds-numero"><dt>Dia que mais estuda</dt><dd>{DIAS[diaMaisAtivo.i]}</dd><small>{pctDe(diaMaisAtivo.total, d.total)}% das suas respostas</small></div>}
+        {melhorDia && <div className="ds-numero"><dt>Dia de melhor acerto</dt><dd>{DIAS[melhorDia.i]}</dd><small>{pctDe(melhorDia.certas, melhorDia.total)}% de acerto em {n(melhorDia.total)} respostas</small></div>}
+      </dl>
+    </section>
+  )
+}
 
-      <div className="dp-duas">
-        <section className="cartao cartao__corpo dp-cartao">
-          <div className="dp-cartao__cabeca"><div><h2>Semana a semana</h2><p className="texto-2">Últimas 8 semanas: respostas, dias de estudo e acerto.</p></div></div>
-          <div className="rolagem-x"><table className="tabela dp-tabela">
-            <thead><tr><th scope="col">Semana</th><th scope="col" className="numerico">Respostas</th><th scope="col" className="numerico">Dias</th><th scope="col">Acerto</th></tr></thead>
-            <tbody>{[...d.semanas].reverse().map((s, i, lista) => {
-              const p = pctDe(s.certas, s.total)
-              const anterior = lista[i + 1] ? pctDe(lista[i + 1].certas, lista[i + 1].total) : null
-              return <tr key={s.inicio}>
-                <th scope="row">{i === 0 ? 'Esta semana' : new Date(s.inicio).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: FUSO_DIA })}</th>
-                <td className="numerico"><span className="dp-mini-barra" style={{ width: `${(s.total / maiorSemana) * 100}%` }} aria-hidden="true" />{n(s.total)}</td>
-                <td className="numerico">{s.dias}</td>
-                <td>{p === null ? '–' : <span className={`dp-texto--${faixa(p)}`}><strong>{p}%</strong>{anterior !== null && p !== anterior && <small className="dp-variacao"> {p > anterior ? '▲' : '▼'} {Math.abs(p - anterior)}</small>}</span>}</td>
-              </tr>
-            })}</tbody>
-          </table></div>
-        </section>
-
-        <section className="cartao cartao__corpo dp-cartao">
-          <div className="dp-cartao__cabeca"><div><h2>Por prova</h2><p className="texto-2">{meu ? <>Sua prova de interesse ({interesse.map(rotuloProva).join(', ')}) aparece em destaque.</> : <>Marque sua prova em <a href={href('/conta?secao=perfil')}>Minha conta › Perfil</a> para ver o destaque.</>}</p></div></div>
-          <ul className="dp-provas">
-            {d.grupos.map(g => {
-              const p = pctDe(g.certas, g.respostas)
-              const visto = pctDe(g.vistas, g.total) ?? 0
-              return <li key={g.id} className={g.meu ? 'dp-prova dp-prova--minha' : 'dp-prova'}>
-                <div className="dp-prova__topo"><strong>{g.rotulo}{g.meu && <span className="dp-prova__selo"><Icone nome="alvo" tamanho={12} /> sua prova</span>}</strong><span className={p === null ? '' : `dp-texto--${faixa(p)}`}>{p === null ? 'sem respostas' : `${p}% de acerto`}</span></div>
-                <span className="dp-tema__trilho" aria-hidden="true"><span className="dp-faixa--bom" style={{ width: `${visto}%` }} /></span>
-                <small>{n(g.vistas)} de {n(g.total)} questões vistas ({visto}%) · {n(g.respostas)} respostas no período</small>
-              </li>
-            })}
-          </ul>
-        </section>
+/** Resultado por grupo de prova, com a prova de interesse do perfil em destaque. */
+export function DetalhesProvas({ detalhes: { d, interesse } }: { detalhes: Detalhes }) {
+  if (!d.total) return null
+  const meu = d.grupos.find(g => g.meu)
+  return (
+    <section className="px-cartao ds-cartao" aria-labelledby="ds-provas-titulo">
+      <div className="ds-cartao__cabeca">
+        <h3 id="ds-provas-titulo">Por prova</h3>
+        <p>{meu ? <>Sua prova de interesse ({interesse.map(rotuloProva).join(', ')}) aparece em destaque.</> : <>Marque sua prova em <a href={href('/conta?secao=perfil')}>Minha conta › Perfil</a> para ver o destaque.</>}</p>
       </div>
-
-      <section className="cartao cartao__corpo dp-cartao">
-        <div className="dp-cartao__cabeca"><div><h2>Dia da semana</h2><p className="texto-2">A altura da barra é quanto você responde (o número em cima); embaixo, o acerto do dia.</p></div></div>
-        <div className="dp-semana">
-          {d.porDia.map((g, i) => {
-            const p = pctDe(g.certas, g.total)
-            const maior = Math.max(1, ...d.porDia.map(x => x.total))
-            return <div key={i} className="dp-semana__dia" title={`${DIAS[i]}: ${n(g.total)} respostas${p === null ? '' : `, ${p}% de acerto`}`}>
-              <small className="dp-semana__total numerico">{n(g.total)}</small>
-              <span className="dp-semana__barra"><span className={p === null ? '' : `dp-faixa--${faixa(p)}`} style={{ height: `${g.total ? Math.max(6, (g.total / maior) * 100) : 0}%` }} /></span>
-              <strong>{p === null ? '–' : `${p}%`}</strong>
-              <small>{DIAS[i].slice(0, 3)}</small>
+      <ul className="ds-provas">
+        {d.grupos.map(g => {
+          const p = pctDe(g.certas, g.respostas)
+          const visto = pctDe(g.vistas, g.total) ?? 0
+          return <li key={g.id} className={g.meu ? 'ds-prova ds-prova--minha' : 'ds-prova'}>
+            <div className="ds-prova__topo">
+              <strong>{g.rotulo}{g.meu && <span className="ds-prova__selo"><Icone nome="alvo" tamanho={12} /> sua prova</span>}</strong>
+              <span className="ds-num">{p === null ? 'sem respostas' : <><b>{p}%</b> de acerto</>}</span>
             </div>
-          })}
-        </div>
-      </section>
-    </>
+            <Medidor valor={visto} fina />
+            <small>{n(g.vistas)} de {n(g.total)} questões vistas ({visto}%) · {n(g.respostas)} respostas no período</small>
+          </li>
+        })}
+      </ul>
+    </section>
+  )
+}
+
+/** Acerto semana a semana (linha) e a tabela com respostas, dias e variação. */
+export function DetalhesSemanas({ detalhes: { d } }: { detalhes: Detalhes }) {
+  if (!d.total) return null
+  const pontos = d.semanas.map((s, i) => {
+    const p = pctDe(s.certas, s.total)
+    const rotulo = i === d.semanas.length - 1 ? 'Esta semana' : `Semana de ${dataCurta(s.inicio)}`
+    return {
+      chave: String(s.inicio),
+      valor: p,
+      eixo: i === d.semanas.length - 1 ? 'Esta' : dataCurta(s.inicio),
+      descricao: p === null ? `${rotulo}: sem respostas.` : `${rotulo}: ${p}% de acerto em ${n(s.total)} ${s.total === 1 ? 'resposta' : 'respostas'}, ${s.dias} ${s.dias === 1 ? 'dia' : 'dias'} de estudo.`,
+    }
+  })
+  return (
+    <section className="px-cartao ds-cartao" aria-labelledby="ds-semanas-titulo">
+      <div className="ds-cartao__cabeca">
+        <h3 id="ds-semanas-titulo">Acerto semana a semana</h3>
+        <p>Últimas 8 semanas. Semana sem resposta deixa um vão na linha.</p>
+      </div>
+      <GraficoLinha pontos={pontos} rotulo="Acerto por semana nas últimas 8 semanas" />
+      <details className="ds-tabela">
+        <summary>Ver respostas, dias e acerto em tabela</summary>
+        <div className="rolagem-x"><table className="tabela ds-tabela__tabela">
+          <thead><tr><th scope="col">Semana</th><th scope="col" className="numerico">Respostas</th><th scope="col" className="numerico">Dias</th><th scope="col" className="numerico">Acerto</th></tr></thead>
+          <tbody>{[...d.semanas].reverse().map((s, i, lista) => {
+            const p = pctDe(s.certas, s.total)
+            const anterior = lista[i + 1] ? pctDe(lista[i + 1].certas, lista[i + 1].total) : null
+            return <tr key={s.inicio}>
+              <th scope="row">{i === 0 ? 'Esta semana' : dataCurta(s.inicio)}</th>
+              <td className="numerico">{n(s.total)}</td>
+              <td className="numerico">{s.dias}</td>
+              <td className="numerico">{p === null ? '–' : <><strong>{p}%</strong>{anterior !== null && p !== anterior && <small className="ds-variacao"> {p > anterior ? '▲' : '▼'} {Math.abs(p - anterior)}</small>}</>}</td>
+            </tr>
+          })}</tbody>
+        </table></div>
+      </details>
+    </section>
+  )
+}
+
+/** Quanto você responde em cada dia da semana (altura) e o acerto do dia (embaixo). */
+export function DetalhesDiaSemana({ detalhes: { d } }: { detalhes: Detalhes }) {
+  if (!d.total) return null
+  const colunas = d.porDia.map((g, i) => {
+    const p = pctDe(g.certas, g.total)
+    return {
+      chave: DIAS[i],
+      valor: g.total,
+      eixo: DIAS[i].slice(0, 3),
+      eixo2: p === null ? '–' : `${p}%`,
+      descricao: `${DIAS[i]}: ${n(g.total)} ${g.total === 1 ? 'resposta' : 'respostas'}${p === null ? '' : `, ${p}% de acerto`}.`,
+    }
+  })
+  const maisAtivo = d.porDia.reduce((m, g, i) => (g.total > d.porDia[m].total ? i : m), 0)
+  return (
+    <section className="px-cartao ds-cartao" aria-labelledby="ds-dias-titulo">
+      <div className="ds-cartao__cabeca">
+        <h3 id="ds-dias-titulo">Dia da semana</h3>
+        <p>A altura é quanto você responde (o número em cima); embaixo, o acerto do dia.</p>
+      </div>
+      <GraficoColunas colunas={colunas} rotulo="Respostas e acerto por dia da semana" valorNoTopo altura={110} padrao={maisAtivo} />
+    </section>
   )
 }

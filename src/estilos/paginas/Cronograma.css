@@ -1,0 +1,325 @@
+/* Cronograma refeito (18/10/2026) na identidade do novo Treinar: temporada pixel.
+   Topo com o céu e a cidade (onde você está, o atalho do dia em ouro e o resumo da semana),
+   o calendário grande logo depois, e o resto em cartões de borda firme e sombra "de jogo".
+   Tudo aqui vale só nesta página: .cr (o cronograma), .cc--cronograma (o calendário dele)
+   e .cr-form (montar ou ajustar). O calendário da revisão usa os mesmos arquivos e não muda. */
+
+.cr { --cr-cartao-borda: 2px solid var(--px-borda); --cr-cartao-sombra: 5px 5px 0 var(--px-sombra); --cr-ease: cubic-bezier(0.2, 0.8, 0.2, 1); }
+.empilha-2.cr > * + * { margin-top: var(--e-5); }
+.cr .numerico, .cr b, .cc--cronograma b { font-variant-numeric: tabular-nums; }
+
+/* Rótulo de seção: frase normal, sem caixa-alta gritando. */
+.cr .cp-rotulo { align-items: baseline; margin: 0 0.1rem; font-family: var(--fonte-marca); font-size: 1.08rem; font-weight: 800; letter-spacing: -0.015em; text-transform: none; color: var(--texto); }
+.cr .cp-rotulo b { font-family: var(--fonte-texto); font-size: var(--meta); font-weight: 650; color: var(--texto-2); }
+.cr .cp-bloco { gap: var(--e-3); }
+
+/* ── Primeira visita: as 3 partes numa faixa ── */
+.cr .cp-tour { display: grid; gap: var(--e-4); padding: var(--e-4) var(--e-5) var(--e-5); border-radius: 6px; background: color-mix(in srgb, var(--px-ouro) 10%, var(--superficie)); border: var(--cr-cartao-borda); box-shadow: var(--cr-cartao-sombra); }
+.cr .cp-tour__cabeca { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--e-3); }
+.cr .cp-tour h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.2rem; letter-spacing: -0.02em; }
+.cr .cp-tour .botao { min-height: 44px; }
+.cr .cp-tour ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4) var(--e-5); }
+.cr .cp-tour li { grid-template-columns: auto minmax(0, 1fr); gap: var(--e-3); align-items: start; }
+.cr .cp-tour li > span:first-child { width: 2.3rem; height: 2.3rem; border-radius: 0; font-size: 1.6rem; font-weight: 400; }
+.cr .cp-tour strong { font-size: 0.98rem; }
+.cr .cp-tour small { display: block; margin-top: 0.15rem; font-size: var(--meta); line-height: 1.45; text-wrap: pretty; }
+@media (max-width: 48rem) {
+  .cr .cp-tour { padding: var(--e-4); }
+  .cr .cp-tour ol { grid-template-columns: minmax(0, 1fr); gap: var(--e-3); }
+  .cr .cp-tour li > span:first-child { width: 2rem !important; height: 2rem !important; font-size: 1.35rem !important; }
+}
+
+/* ── Topo: onde você está ── */
+.cr .cp-onde { display: grid; gap: var(--e-4); padding: clamp(1.3rem, 3.4vw, 2.1rem) clamp(1.1rem, 3.4vw, 2.1rem) calc(clamp(1.3rem, 3.4vw, 2.1rem) + 1.75rem); }
+.cr .cp-onde__cabeca { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--e-4) var(--e-6); align-items: center; }
+.cr .cp-onde__texto { min-width: 0; }
+.cr .cp-onde__selo { display: inline-block; margin: 0 0 var(--e-2); font-size: 0.75rem; letter-spacing: 0.06em; color: #9fe3d4; }
+.cr .cp-onde h1 { margin: 0; font-size: clamp(2.6rem, 6.4vw, 3.9rem); line-height: 0.95; text-shadow: 0 3px 0 #072320; text-wrap: balance; }
+.cr .cp-onde h1 em { color: var(--px-ouro); }
+.cr .cp-onde__sub { margin: var(--e-2) 0 0; font-size: var(--corpo-menor); font-variant-numeric: tabular-nums; color: var(--sobre-heroi-2); }
+/* Os recados com os dados da pessoa: a meta de hoje e a área mais forte. */
+.cr .cp-onde__recados { display: grid; gap: var(--e-1); margin: var(--e-3) 0 0; padding: 0; list-style: none; }
+.cr .cp-onde__recados li { position: relative; padding-left: 1.1rem; max-width: 60ch; font-size: var(--corpo-menor); line-height: 1.45; color: #fff; text-wrap: pretty; }
+.cr .cp-onde__recados li::before { content: ""; position: absolute; left: 0; top: 0.5em; width: 0.45rem; height: 0.45rem; background: var(--px-ouro); box-shadow: 1px 1px 0 var(--px-ouro-sombra); }
+.cr .cp-onde__recados b { color: var(--px-ouro); }
+.cr .cp-onde__acoes { display: grid; justify-items: end; gap: var(--e-2); }
+
+/* O atalho do dia: o mesmo botão do cartão Hoje, em ouro, como a sessão rápida do Treinar. */
+.cr .cp-onde__rapida {
+  display: inline-flex; align-items: center; gap: var(--e-3); min-height: 62px; max-width: 22rem; padding: var(--e-2) var(--e-5) var(--e-2) var(--e-2);
+  border: 0; border-radius: 4px; background: var(--px-ouro); color: var(--px-tinta); font: inherit; text-align: left; text-decoration: none; cursor: pointer;
+  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra);
+  transition: transform 0.18s var(--cr-ease), background-color 0.18s var(--cr-ease), box-shadow 0.18s var(--cr-ease);
+}
+.cr .cp-onde__rapida:hover { background: #ffdf95; transform: translate(-1px, -1px); box-shadow: 0 0 0 2px var(--px-tinta), 5px 5px 0 2px var(--px-ouro-sombra); }
+.cr .cp-onde__rapida:active { transform: translate(2px, 2px); box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra); }
+.cr .cp-onde__rapida:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+.cr .cp-onde__rapida > svg { flex: none; width: 2.4rem; height: 2.4rem; padding: 0.45rem; background: var(--px-tinta); color: var(--px-ouro); }
+.cr .cp-onde__rapida span { display: grid; gap: 1px; min-width: 0; line-height: 1.2; }
+.cr .cp-onde__rapida strong { font-size: 1.05rem; font-weight: 800; }
+.cr .cp-onde__rapida small { font-size: var(--meta); font-weight: 600; opacity: 0.82; }
+.cr .cp-onde__ajustar {
+  margin: 0; min-height: 40px; padding: 0 var(--e-4); border-radius: 4px; font-size: var(--corpo-menor); font-weight: 650; letter-spacing: 0;
+  transition: background-color 0.18s var(--cr-ease), transform 0.18s var(--cr-ease);
+}
+.cr .cp-onde__ajustar:hover { background: rgba(255, 255, 255, 0.18); }
+.cr .cp-onde__ajustar:active { transform: translateY(1px); }
+.cr .cp-onde__ajustar:focus-visible { outline: 2px solid var(--px-ouro); outline-offset: 2px; }
+
+/* O trilho até a prova, em blocos de pixel. */
+.cr .cp-trilho { margin-top: var(--e-2); }
+.cr .cp-trilho__faixas { gap: 4px; }
+.cr .cp-trilho__faixa { height: 0.75rem; border-radius: 0; background: rgba(255, 255, 255, 0.16); }
+.cr .cp-trilho__faixa--feita { background: color-mix(in srgb, var(--px-ouro) 70%, transparent); }
+.cr .cp-trilho__faixa--atual { background: linear-gradient(90deg, color-mix(in srgb, var(--px-ouro) 70%, transparent), rgba(255, 255, 255, 0.24)); }
+.cr .cp-trilho__faixa--prova { background: repeating-linear-gradient(90deg, var(--px-ouro) 0 4px, transparent 4px 8px); }
+.cr .cp-trilho__voce { top: -0.4rem; width: 1.55rem; height: 1.55rem; border-radius: 0; border: 0; background: var(--px-ouro); box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra); animation: cr-voce 2.4s var(--cr-ease) infinite; }
+@keyframes cr-voce { 50% { transform: translateY(-2px); } }
+.cr .cp-trilho__nomes { margin-top: 0.55rem; font-size: 0.72rem; }
+.cr .cp-trilho__marcos { gap: var(--e-1) var(--e-4); margin-top: var(--e-2); font-size: 0.74rem; font-variant-numeric: tabular-nums; }
+.cr .cp-trilho__marcos b { color: var(--px-ouro); }
+
+/* Pé do topo: a frase da fase e o resumo da semana, lado a lado, em vidro escuro. */
+.cr .cp-onde__pe { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--e-3); align-items: stretch; }
+.cr .cp-onde__frase, .cr .cp-resumo { margin: 0; max-width: none; padding: var(--e-3) var(--e-4); border: 0; border-radius: 4px; background: rgba(7, 35, 32, 0.5); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12); color: #fff; }
+.cr .cp-onde__frase { align-self: start; font-size: var(--corpo-menor); line-height: 1.5; text-wrap: pretty; }
+.cr .cp-onde__frase b { color: var(--px-ouro); }
+.cr .cp-resumo { display: grid; gap: var(--e-1); }
+.cr .cp-resumo__selo { justify-self: start; margin: 0; padding: 1px 6px; background: var(--px-ouro); color: var(--px-tinta); font-family: var(--fonte-pixel); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+.cr .cp-resumo h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.1rem; letter-spacing: -0.015em; color: #fff; }
+.cr .cp-resumo p { margin: 0; font-size: var(--meta); line-height: 1.45; color: var(--sobre-heroi-2); }
+.cr .cp-resumo b { color: var(--px-ouro); }
+
+/* No computador o topo cabe numa dobra: título e recados à esquerda; atalho, fase e semana à direita; o trilho embaixo. */
+@media (min-width: 64rem) {
+  .cr .cp-onde { grid-template-columns: minmax(0, 1fr) minmax(20rem, 27rem); grid-template-areas: "texto acoes" "texto pe" "trilho trilho"; gap: var(--e-4) var(--e-6); align-items: start; }
+  .cr .cp-onde__cabeca { display: contents; }
+  .cr .cp-onde__texto { grid-area: texto; }
+  .cr .cp-onde__acoes { grid-area: acoes; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; }
+  .cr .cp-onde__pe { grid-area: pe; grid-template-columns: minmax(0, 1fr); }
+  .cr .cp-trilho { grid-area: trilho; margin-top: 0; }
+  .cr .cp-onde__acoes:empty { display: none; }
+  .cr .cp-onde:has(.cp-onde__acoes:empty) { grid-template-areas: "texto pe" "texto pe" "trilho trilho"; }
+}
+@media (max-width: 46rem) {
+  .cr .cp-onde__cabeca { grid-template-columns: minmax(0, 1fr); }
+  .cr .cp-onde__acoes { grid-row: 2; grid-template-columns: minmax(0, 1fr) auto; justify-items: stretch; align-items: center; }
+  .cr .cp-onde__rapida { max-width: none; width: 100%; }
+  .cr .cp-onde__acoes > .cp-onde__ajustar:only-child { justify-self: start; }
+}
+
+/* ── O calendário grande ── */
+.cc--cronograma.cc--embutido { margin-bottom: 0; scroll-margin-top: 5rem; }
+.cc--cronograma.cc--embutido .cc-janela { border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra); background: var(--fundo); }
+.cc--cronograma.cc--embutido .cc-topo { align-items: center; padding: var(--e-4) var(--e-5); background: var(--superficie); border-bottom: 2px solid var(--px-borda); }
+.cc--cronograma.cc--embutido .cc-topo::after { content: none; }
+.cc--cronograma.cc--embutido .cc-topo__selo { gap: var(--e-1); width: max-content; padding: 2px 8px; border-radius: 0; background: var(--verdete); color: #fff; font-family: var(--fonte-pixel); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; box-shadow: 2px 2px 0 var(--verdete-tinta); }
+.cc--cronograma.cc--embutido .cc-topo h2 { margin-top: var(--e-2); font-weight: 800; letter-spacing: -0.035em; line-height: 1; }
+.cc--cronograma .cc-de { color: var(--texto-2); font-weight: 600; }
+.cc--cronograma .cc-topo__resumo { gap: var(--e-1) var(--e-4); margin-top: var(--e-2); font-size: var(--meta); font-variant-numeric: tabular-nums; }
+.cc--cronograma .cc-nav { gap: var(--e-2); }
+.cc--cronograma .cc-nav__botao, .cc--cronograma .cc-nav__hoje { border-radius: 4px; border: 2px solid var(--px-borda); background: var(--superficie); box-shadow: 2px 2px 0 var(--px-sombra); transition: transform 0.18s var(--cr-ease), border-color 0.18s var(--cr-ease), box-shadow 0.18s var(--cr-ease); }
+.cc--cronograma .cc-nav__botao:hover:not(:disabled), .cc--cronograma .cc-nav__hoje:hover { border-color: var(--verdete); transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--px-sombra); }
+.cc--cronograma .cc-nav__botao:active:not(:disabled), .cc--cronograma .cc-nav__hoje:active { transform: translate(1px, 1px); box-shadow: none; }
+.cc--cronograma .cc-nav__botao:focus-visible, .cc--cronograma .cc-nav__hoje:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
+.cc--cronograma .cc-nav__botao:disabled { box-shadow: none; }
+
+.cc--cronograma .cc-semana li { font-size: var(--meta); font-weight: 700; letter-spacing: 0; text-transform: none; }
+.cc--cronograma .cc-grade { grid-auto-rows: auto; }
+.cc--cronograma .cc-dia > button { border-radius: 4px; transition: transform 0.18s var(--cr-ease), box-shadow 0.18s var(--cr-ease), border-color 0.18s var(--cr-ease); }
+.cc--cronograma .cc-dia > button:hover:not(:disabled) { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--px-sombra); }
+.cc--cronograma .cc-dia > button:active:not(:disabled) { transform: translate(1px, 1px); box-shadow: none; }
+.cc--cronograma .cc-dia--vazio { border-radius: 4px; background: transparent; }
+/* Dias antes do plano e fora do mês ficam baixos: a grade usa a altura com os dias que contam. */
+.cc--cronograma .cc-dia--vazio, .cc--cronograma .cc-dia--fora > button { min-height: 2.75rem !important; }
+.cc--cronograma .cc-dia--fora > button { padding-bottom: 0.45rem; opacity: 1; border-style: dashed; border-color: color-mix(in srgb, var(--traco) 70%, transparent); color: color-mix(in srgb, var(--texto-2) 60%, transparent); }
+.cc--cronograma .cc-dia__num { font-weight: 800; font-variant-numeric: tabular-nums; }
+.cc--cronograma .cc-dia__hoje { border-radius: 0; background: var(--px-ouro); color: var(--px-tinta); font-family: var(--fonte-pixel); letter-spacing: 0.04em; box-shadow: 1px 1px 0 var(--px-ouro-sombra); }
+.cc--cronograma .cc-dia__selo { border-radius: 2px; }
+.cc--cronograma .cc-dia__area i { border-radius: 1px; }
+.cc--cronograma .cc-dia__rodape em { font-variant-numeric: tabular-nums; }
+.cc--cronograma .cc-dia__faixa { height: 6px; }
+.cc--cronograma .cc-dia--hoje > button, .cc--cronograma .cc-dia--atual > button { border: 2px solid var(--cp-agora); box-shadow: 3px 3px 0 color-mix(in srgb, var(--cp-agora) 45%, transparent); animation: none; }
+.cc--cronograma .cc-dia--folga > button { background: repeating-linear-gradient(135deg, var(--superficie-2) 0 5px, color-mix(in srgb, var(--traco) 75%, transparent) 5px 10px); }
+.cc--cronograma .cc-dia--selecionado > button, .cc--cronograma .cc-dia--selecionado > button:hover:not(:disabled) { border-color: var(--verdete); box-shadow: 0 0 0 2px var(--verdete), 4px 4px 0 2px color-mix(in srgb, var(--verdete) 35%, transparent); transform: translate(-1px, -1px); }
+.cc--cronograma .cc-legenda { gap: var(--e-1) var(--e-4); margin-top: var(--e-2); }
+.cc--cronograma .cc-legenda i { border-radius: 1px; }
+
+/* Detalhe do dia: o bilhete ao lado da grade. */
+.cc--cronograma .cc-detalhe { gap: var(--e-3); padding: var(--e-4) var(--e-4) var(--e-5); border-radius: 6px; border: 2px solid var(--px-borda); border-top: 6px solid var(--cor-area, var(--verdete)); box-shadow: 4px 4px 0 var(--px-sombra); }
+.cc--cronograma .cc-detalhe--hoje { border-color: var(--cp-agora); border-top-color: var(--cor-area, var(--cp-agora)); }
+.cc--cronograma .cc-detalhe--folga { border-top-color: var(--traco-forte); }
+.cc--cronograma .cc-detalhe__data { font-size: var(--meta); letter-spacing: 0.02em; text-transform: none; font-weight: 700; }
+.cc--cronograma .cc-detalhe__data::first-letter { text-transform: uppercase; }
+.cc--cronograma .cc-detalhe__agora { border-radius: 0; background: var(--px-ouro); color: var(--px-tinta); font-family: var(--fonte-pixel); text-transform: uppercase; box-shadow: 1px 1px 0 var(--px-ouro-sombra); }
+.cc--cronograma .cc-detalhe h3 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.025em; text-wrap: balance; }
+.cc--cronograma .cc-detalhe__progresso { border-radius: 2px; }
+.cc--cronograma .cc-detalhe__progresso span { border-radius: 0; }
+.cc--cronograma .cc-detalhe__item > i { border-radius: 2px; }
+.cc--cronograma .cc-detalhe__chips span { border-radius: 3px; }
+.cc--cronograma .cc-detalhe__ok, .cc--cronograma .cc-detalhe__nota { border-radius: 4px; }
+
+@media (min-width: 64rem) {
+  .cc--cronograma.cc--embutido .cc-corpo { grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--e-5); padding: var(--e-5); }
+  .cc--cronograma.cc--embutido .cc-dia > button { min-height: 7.6rem; }
+  /* O nome da área quebra em duas linhas em vez de virar "Ortoped...". */
+  .cc--cronograma .cc-dia__areas { gap: 0.3rem; }
+  .cc--cronograma .cc-dia__area { align-items: flex-start; white-space: normal; font-size: 0.74rem; line-height: 1.15; }
+  .cc--cronograma .cc-dia__area i { margin-top: 0.18rem; }
+  .cc--cronograma .cc-dia__area > span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; hyphens: auto; }
+  .cc--cronograma .cc-dia__rodape em { font-size: 0.82rem; }
+}
+@media (max-width: 52rem) {
+  .cc--cronograma.cc--embutido .cc-janela { border-radius: 6px; }
+  .cc--cronograma.cc--embutido .cc-topo { padding: var(--e-3) var(--e-3) var(--e-3) var(--e-4); }
+}
+@media (max-width: 40rem) {
+  .cc--cronograma .cc-semana li { font-size: 0.7rem; }
+  .cc--cronograma .cc-dia--vazio, .cc--cronograma .cc-dia--fora > button { min-height: 2.3rem !important; }
+  .cc--cronograma .cc-dia > button { border-radius: 3px; }
+  /* O selo (feito, mini-simulado) vai para o canto e não encosta no número do dia. */
+  .cc--cronograma .cc-dia__selo { top: 2px; right: 2px; width: 0.72rem; height: 0.72rem; font-size: 0.5rem; }
+  .cc--cronograma .cc-dia__selo svg { width: 8px; height: 8px; }
+  .cc--cronograma .cc-dia--hoje > button, .cc--cronograma .cc-dia--atual > button { box-shadow: 2px 2px 0 color-mix(in srgb, var(--cp-agora) 45%, transparent); }
+  .cc--cronograma .cc-detalhe { box-shadow: 3px 3px 0 var(--px-sombra); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cc--cronograma .cc-dia > button, .cc--cronograma .cc-nav__botao, .cc--cronograma .cc-nav__hoje { transition: none; }
+  .cc--cronograma .cc-dia > button:hover:not(:disabled), .cc--cronograma .cc-dia--selecionado > button { transform: none; }
+}
+
+/* ── Colunas: hoje à esquerda, amanhã, resumos e números à direita ── */
+@media (min-width: 60rem) { .cr .cp-colunas { gap: var(--e-5); } .cr .cp-col { gap: var(--e-5); } }
+
+/* Hoje: cartão de jogo, sem moldura dourada (o ouro fica para o que é "agora"). */
+.cr .cp-hoje { gap: var(--e-4); padding: clamp(1.1rem, 2.6vw, 1.6rem); border-radius: 6px; border: var(--cr-cartao-borda); box-shadow: var(--cr-cartao-sombra); }
+.cr .cp-hoje__cabeca { gap: var(--e-3); }
+.cr .cp-hoje__cor { width: 6px; border-radius: 0; }
+.cr .cp-hoje h2 { font-family: var(--fonte-marca); font-size: clamp(1.4rem, 3.2vw, 1.75rem); font-weight: 800; letter-spacing: -0.03em; text-wrap: balance; }
+.cr .cp-hoje__porque { margin-top: var(--e-1); max-width: 62ch; text-wrap: pretty; }
+.cr .cp-chips li { border-radius: 3px; }
+.cr .cp-lista__item { padding: var(--e-3) 0.1rem; }
+.cr .cp-lista__marca { border-radius: 3px; font-variant-numeric: tabular-nums; }
+.cr .cp-lista__barra { height: 6px; border-radius: 0; }
+.cr .cp-lista__barra span { border-radius: 0; }
+.cr .cp-lista__acao { border-radius: 4px; border-width: 2px; border-color: var(--px-borda); background: var(--superficie); transition: border-color 0.18s var(--cr-ease), transform 0.18s var(--cr-ease); }
+.cr .cp-lista__acao:hover { border-color: var(--verdete); transform: translateY(-1px); }
+.cr .cp-hoje__total { padding-top: var(--e-3); border-top: 2px dashed var(--px-borda); font-variant-numeric: tabular-nums; }
+.cr .cp-hoje__ajustar { border-radius: 4px; border: 2px dashed var(--px-borda); background: transparent; }
+.cr .cp-hoje__teto { border-radius: 4px; }
+.cr .cp-hoje__resumo { margin: 0; border: 2px solid color-mix(in srgb, #ff8a2a 45%, var(--px-borda)); border-radius: 4px; background: color-mix(in srgb, #ff8a2a 8%, var(--superficie)); box-shadow: 3px 3px 0 color-mix(in srgb, #ff8a2a 22%, transparent); transition: transform 0.18s var(--cr-ease), box-shadow 0.18s var(--cr-ease); }
+.cr .cp-hoje__resumo:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 color-mix(in srgb, #ff8a2a 30%, transparent); }
+
+/* O botão do dia, de jogo: aperta para baixo. */
+.cr .cp-botao { border-radius: 4px; padding: 0.9rem 1rem; box-shadow: 0 0 0 2px var(--verdete-tinta), 4px 4px 0 2px var(--verdete-tinta); transition: transform 0.15s var(--cr-ease), box-shadow 0.15s var(--cr-ease), filter 0.15s var(--cr-ease); }
+.cr .cp-botao:hover { filter: brightness(1.08); }
+.cr .cp-botao:active { transform: translate(2px, 2px); box-shadow: 0 0 0 2px var(--verdete-tinta), 2px 2px 0 2px var(--verdete-tinta); }
+.cr .cp-botao:focus-visible { outline: 3px solid var(--px-ouro); outline-offset: 4px; }
+.cr .cp-botao--ouro { background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra); }
+.cr .cp-botao--ouro:active { box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra); }
+
+/* Adiantar: uma ficha tracejada dentro do Hoje, não um segundo cartão com degradê. */
+.cr .cp-adiantar { border-radius: 4px; border: 2px dashed color-mix(in srgb, var(--verdete) 35%, var(--px-borda)); background: color-mix(in srgb, var(--verdete) 4%, var(--superficie)); }
+.cr .cp-adiantar__icone { border-radius: 3px; }
+.cr .cp-adiantar--destaque { padding: var(--e-4); border: 2px dashed color-mix(in srgb, var(--px-ouro) 75%, var(--px-ouro-sombra)); background: color-mix(in srgb, var(--px-ouro) 11%, var(--superficie)); box-shadow: none; }
+.cr .cp-adiantar--destaque .cp-adiantar__icone { width: 2.3rem; height: 2.3rem; border-radius: 0; background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra); }
+.cr .cp-adiantar__opcoes { gap: var(--e-2); }
+.cr .cp-adiantar__opcao { gap: 2px; padding: var(--e-2) var(--e-3); border-radius: 4px; border: 2px solid var(--px-borda); background: var(--superficie); box-shadow: 3px 3px 0 var(--px-sombra); transition: transform 0.15s var(--cr-ease), box-shadow 0.15s var(--cr-ease), border-color 0.15s var(--cr-ease); }
+.cr .cp-adiantar__opcao:hover:not(:disabled) { border-color: var(--cp-adiantar); transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--px-sombra); }
+.cr .cp-adiantar__opcao:active:not(:disabled) { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--px-sombra); }
+.cr .cp-adiantar__opcao b { font-variant-numeric: tabular-nums; }
+.cr .cp-adiantar__opcao--dia { background: color-mix(in srgb, var(--cp-adiantar) 7%, var(--superficie)); }
+.cr .cp-adiantar__estado { border-radius: 4px; }
+.cr .cp-adiantar__cancelar { border-radius: 4px; }
+
+/* Se sobrar tempo: atalhos de fichas. */
+.cr .cp-extras { padding-top: var(--e-3); border-top: 2px dashed var(--px-borda); }
+.cr .cp-extras__titulo { font-family: var(--fonte-marca); font-size: var(--corpo-menor); letter-spacing: -0.01em; text-transform: none; color: var(--texto); }
+.cr .cp-extra { border-radius: 4px; border: 2px solid var(--px-borda); background: var(--superficie); }
+.cr a.cp-extra:hover, .cr button.cp-extra:hover { border-color: color-mix(in srgb, var(--verdete) 55%, var(--px-borda)); box-shadow: 3px 3px 0 var(--px-sombra); transform: translate(-1px, -1px); }
+.cr .cp-extra__icone { border-radius: 3px; }
+
+/* Avisos (diagnóstico, temas esquecidos) no mesmo cartão de jogo. */
+.cr .pe-aviso { border-radius: 6px; border-width: 2px; box-shadow: var(--cr-cartao-sombra); }
+.cr .pe-aviso__icone { border-radius: 3px; }
+
+/* Coluna da direita. */
+.cr .bib-caixa { padding: var(--e-3); border-radius: 6px; border: var(--cr-cartao-borda); box-shadow: var(--cr-cartao-sombra); }
+.cr .cp-amanha { padding: var(--e-4); border-radius: 6px; border: var(--cr-cartao-borda); box-shadow: var(--cr-cartao-sombra); }
+.cr .cp-amanha__cor { border-radius: 0; }
+.cr .cp-amanha__n b { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+.cr .cp-semana { padding: var(--e-4); border-radius: 6px; border: var(--cr-cartao-borda); box-shadow: var(--cr-cartao-sombra); }
+.cr .cp-semana--compacta .cp-dificil { padding-top: 0; border-top: 0; }
+.cr .cp-dificil .botao { min-height: 44px; }
+.cr .cp-dia { border-radius: 3px; }
+.cr .cp-dia__cor { border-radius: 0; }
+
+/* Como você está indo: quatro números, dois deles com o medidor do que já foi. */
+.cr .cp-indo { gap: var(--e-3); }
+.cr .cp-indo > div { gap: 3px; padding: var(--e-3) var(--e-4); border-radius: 6px; border: var(--cr-cartao-borda); box-shadow: 3px 3px 0 var(--px-sombra); }
+.cr .cp-indo small { font-size: var(--meta); font-weight: 700; letter-spacing: 0; text-transform: none; }
+.cr .cp-indo b { font-size: 1.55rem; font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; }
+.cr .cp-indo__ritmo--atras b { color: var(--cp-atrasado); }
+.cr .cp-indo__ritmo--frente b { color: var(--cp-feito); }
+.cr .cp-indo__medidor { display: block; height: 6px; margin: 3px 0 2px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); }
+.cr .cp-indo__medidor > span { display: block; height: 100%; background: var(--verdete); }
+.cr .cp-indo__medidor--feito > span { background: var(--cp-feito); }
+.cr .cp-indo__nota { margin: 0 0.1rem; }
+
+/* ── Recolhidos: fichas que abrem ── */
+.cr .cp-recolhidos { gap: var(--e-3); margin-top: 0; }
+@media (min-width: 56rem) { .cr .cp-recolhidos--grade { gap: var(--e-3) var(--e-5); } }
+.cr .cp-recolhido { border-radius: 6px; border: var(--cr-cartao-borda); box-shadow: 4px 4px 0 var(--px-sombra); transition: box-shadow 0.18s var(--cr-ease), transform 0.18s var(--cr-ease); }
+.cr .cp-recolhido:not([open]):hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--px-sombra); }
+.cr .cp-recolhido > summary { gap: var(--e-3); min-height: 56px; padding: var(--e-2) var(--e-4) var(--e-2) var(--e-2); border-radius: 4px; font-family: var(--fonte-marca); font-size: 1rem; font-weight: 750; letter-spacing: -0.01em; }
+.cr .cp-recolhido > summary:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
+.cr .cp-recolhido__icone { flex: none !important; display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 3px; background: var(--verdete-veu); color: var(--verdete); }
+.cr .cp-recolhido[open] > summary { border-bottom: 2px dashed var(--px-borda); border-radius: 4px 4px 0 0; }
+.cr .cp-recolhido__corpo { padding: var(--e-4); }
+.cr .cp-recolhido__corpo > .cartao { padding: 0 !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; background: transparent !important; }
+/* "Como funciona" virou uma ficha igual às outras. */
+.cr .pe-entenda > summary { min-height: 56px; }
+.cr .pe-entenda > summary svg { color: inherit; }
+.cr .pe-entenda .pe-entenda__lista { margin: 0; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: var(--e-3); }
+.cr .pe-entenda__lista li { border-radius: 4px; }
+.cr .pe-entenda__icone { border-radius: 3px; }
+.cr .pe-entenda[open] { grid-column: 1 / -1; }
+
+.cr-rodape { margin: 0; }
+.cr-rodape__link { display: inline-flex; align-items: center; gap: var(--e-2); min-height: 44px; color: var(--verdete); font-weight: 700; font-size: var(--corpo-menor); text-decoration: underline; text-underline-offset: 3px; }
+.cr-rodape__link:hover { color: var(--verdete-tinta); }
+
+/* Vitrine de quem não assina. */
+.cr .pe-aviso-previa { border-radius: 4px; border-width: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cr .cp-trilho__voce { animation: none; }
+  .cr .cp-onde__rapida, .cr .cp-botao, .cr .cp-adiantar__opcao, .cr .cp-recolhido, .cr .cp-hoje__resumo, .cr .cp-lista__acao { transition: none; }
+  .cr .cp-onde__rapida:hover, .cr .cp-recolhido:not([open]):hover, .cr .cp-adiantar__opcao:hover:not(:disabled), .cr .cp-hoje__resumo:hover { transform: none; }
+}
+
+/* ── Montar ou ajustar (o formulário em passos) ── */
+.cr-form .pe-heroi--form { grid-template-columns: minmax(0, 1fr); padding-bottom: calc(clamp(1.3rem, 3.4vw, 2.1rem) + 1.75rem); }
+.cr-form .pe-heroi--form p:not(.tr-heroi__selo) { max-width: 52ch; text-wrap: pretty; }
+.cr-form .pe-passos { gap: var(--e-2); }
+.cr-form .pe-passos__item { gap: var(--e-2); min-height: 48px; border-bottom-width: 4px; font-size: var(--meta); transition: color 0.18s var(--cr-ease, ease), border-color 0.18s var(--cr-ease, ease); }
+.cr-form .pe-passos__item:hover:not(:disabled) { color: var(--texto); }
+.cr-form .pe-passos__item:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
+.cr-form .pe-passos__item span { width: 1.6rem; height: 1.6rem; border-radius: 0; font-family: var(--fonte-pixel-titulo); font-size: 1.1rem; line-height: 1; }
+.cr-form .pe-passos__item--atual span { background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra); }
+.cr-form .pe-passos__item--feito span { background: var(--verdete); color: #fff; font-family: var(--fonte-texto); font-size: 0.8rem; }
+.cr-form .pe-form__titulo { font-family: var(--fonte-marca); font-size: 1.45rem; font-weight: 800; letter-spacing: -0.03em; }
+.cr-form .pe-form__mais, .cr-form .pe-data-atalho { border-radius: 4px; }
+.cr-form .pe-intensidade { transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
+.cr-form .pe-intensidade:hover:not([aria-checked="true"]) { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--px-sombra); }
+/* No celular o número vai em cima do nome do passo: os quatro cabem sem encostar. */
+@media (max-width: 40rem) {
+  .cr-form .pe-passos { gap: var(--e-1); }
+  .cr-form .pe-passos__item { flex-direction: column; gap: var(--e-1); padding: var(--e-1) 0 var(--e-2); font-size: 0.74rem; }
+}
+/* No computador a frase do bilhete fica em três linhas limpas, com a parte em ouro sozinha. */
+@media (min-width: 52.01rem) {
+  .cr-form .pe-ao-vivo__total { line-height: 1.25; }
+  .cr-form .pe-ao-vivo__total span { display: block; margin: 0.15rem 0; line-height: 0.95; }
+}
+@media (prefers-reduced-motion: reduce) { .cr-form .pe-intensidade:hover:not([aria-checked="true"]) { transform: none; } }

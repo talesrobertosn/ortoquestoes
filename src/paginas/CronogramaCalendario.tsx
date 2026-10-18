@@ -51,8 +51,6 @@ const faixa = (partes: Array<{ slug: string; n: number }>) => {
   return `linear-gradient(90deg, ${partes.map((p) => { const ini = (acc / total) * 100; acc += p.n; return `${corDaArea(p.slug)} ${ini}% ${(acc / total) * 100}%` }).join(', ')})`
 }
 const juntar = (nomes: string[]) => nomes.length <= 1 ? nomes.join('') : `${nomes.slice(0, -1).join(', ')} e ${nomes[nomes.length - 1]}`
-/** Nome curto da área para caber na célula ("Ombro e cotovelo" → "Ombro e cot."). */
-const curto = (nome: string, max = 13) => nome.length <= max ? nome : `${nome.slice(0, max - 2).trimEnd()}.`
 
 export interface AcoesCalendario {
   /** Começa (ou continua) a sessão de hoje. */
@@ -253,7 +251,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
         </div>
       </div>
   )
-  if (embutido) return <section className="cp cc cc--embutido" id="calendario" aria-labelledby="cc-titulo">{conteudo}</section>
+  if (embutido) return <section className="cp cc cc--embutido cc--cronograma" id="calendario" aria-labelledby="cc-titulo">{conteudo}</section>
   return createPortal(
     <div className="cp cc" role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
       <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={sair} />
@@ -316,7 +314,7 @@ function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selec
           {mini && <span className="cc-dia__selo cc-dia__selo--marco" aria-hidden="true" title="Mini-simulado">★</span>}
         </span>
         {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__areas">
-          {areas.slice(0, 2).map((a) => <span key={a.slug} className="cc-dia__area"><i style={{ background: corDaArea(a.slug) }} /><span>{curto(a.nome, 16)}</span></span>)}
+          {areas.slice(0, 2).map((a) => <span key={a.slug} className="cc-dia__area"><i style={{ background: corDaArea(a.slug) }} /><span>{a.nome}</span></span>)}
           {areas.length > 2 && <span className="cc-dia__area cc-dia__area--mais">+{areas.length - 2}</span>}
         </span>}
         {d.marcos.length > 0 && <span className="cc-dia__marco">{d.marcos[0]}</span>}

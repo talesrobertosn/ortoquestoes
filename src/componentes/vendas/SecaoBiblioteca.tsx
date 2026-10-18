@@ -13,6 +13,9 @@ const COMO = [
   { titulo: 'No meio do texto, o que já caiu', texto: 'Cada ponto cobrado mostra a prova e o ano, como a banca perguntou e onde ela tenta pegar. Quando o gabarito oficial diverge do livro, um alerta explica as duas posições.' },
 ]
 
+/** Quantos capítulos a estante mostra aqui; o resto fica a um clique, na Biblioteca. */
+const NA_ESTANTE = 8
+
 /** Seção "Biblioteca de resumos" da página de vendas (pedido do Tales, 16/10/2026): aberta para todos, explicada por inteiro. */
 export function SecaoBiblioteca() {
   const [capitulos, definir] = useState<ResumoCapitulo[]>([])
@@ -28,7 +31,7 @@ export function SecaoBiblioteca() {
       <div className="vd-bib__grade">
         <ol className="vd-bib__passos">
           {COMO.map((c, i) => (
-            <li key={c.titulo} data-revelar><span>{i + 1}</span><div><h3>{c.titulo}</h3><p>{c.texto}</p></div></li>
+            <li key={c.titulo} data-revelar><span className="px-numero">{i + 1}</span><div><h3>{c.titulo}</h3><p>{c.texto}</p></div></li>
           ))}
         </ol>
 
@@ -57,7 +60,8 @@ export function SecaoBiblioteca() {
         </div>
         {capitulos.length > 0 && <div className="vd-bib__estante" aria-label="Resumos publicados">
           <p className="vd-bib__estante-titulo">Já na estante <small>novos toda semana</small></p>
-          <ul>{capitulos.map((c) => <li key={c.id} style={{ ['--vd-area' as string]: corDaArea(c.especialidade) }}><a href={href(`/resumos/${c.id}`)}><i aria-hidden="true" /><span>{c.titulo}</span><small>~{c.minutos} min</small></a></li>)}</ul>
+          <ul>{capitulos.slice(0, NA_ESTANTE).map((c) => <li key={c.id} style={{ ['--vd-area' as string]: corDaArea(c.especialidade) }}><a href={href(`/resumos/${c.id}`)}><i aria-hidden="true" /><span>{c.titulo}</span><small>~{c.minutos} min</small></a></li>)}</ul>
+          {capitulos.length > NA_ESTANTE && <a className="vd-link vd-bib__todos" href={href('/resumos')}>Ver a estante inteira <Icone nome="direita" tamanho={14} /></a>}
         </div>}
       </div>
 

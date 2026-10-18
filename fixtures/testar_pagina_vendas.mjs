@@ -50,7 +50,11 @@ try {
   assert.equal(boa.etapa, 'R3')
   assert.equal(boa.servico, 'Hospital X')
   assert.equal(m.tituloHeroi(boa).linha1, 'Ana, você já respondeu 312 questões.')
-  assert.ok(m.elogioHeroi(boa).startsWith('6 dias seguidos de estudo, 72% de acerto e Joelho como ponto forte'))
+  // No máximo duas observações no elogio (o título já cita as questões): sequência e ponto forte primeiro.
+  assert.ok(m.elogioHeroi(boa).startsWith('6 dias seguidos de estudo, com joelho como ponto forte'))
+  assert.ok(m.elogioHeroi(m.dadosDaPessoa(meta, 312, 0, { ...respostas('joelho', 20, 18), ...respostas('trauma', 30, 18) })).startsWith('Joelho como ponto forte e 72% de acerto'))
+  // Acerto só com 30 respostas corrigidas.
+  assert.equal(m.dadosDaPessoa(meta, 25, 0, respostas('joelho', 25, 25)).acerto, null)
   const baixa = m.dadosDaPessoa({ nome: 'Bia' }, 40, 0, respostas('mao', 40, 12))
   assert.equal(baixa.acerto, null, 'Acerto abaixo de 50% não aparece')
   assert.equal(baixa.areaForte, null)
@@ -60,7 +64,11 @@ try {
   assert.equal(m.tituloHeroi(nova).linha1, 'Caio, a residência já ocupa o seu dia.')
   assert.equal(m.tituloHeroi(null).linha1, 'A residência já ocupa o seu dia.')
   assert.equal(m.elogioHeroi(nova), null)
-  assert.equal(m.tituloHeroi(m.dadosDaPessoa({ nome: 'Duda' }, 1, 0, {})).linha1, 'Duda, você já respondeu 1 questão.')
+  // Regra dos 10: abaixo de dez questões, sem número.
+  assert.equal(m.tituloHeroi(m.dadosDaPessoa({ nome: 'Duda' }, 1, 0, {})).linha1, 'Duda, você já deu os primeiros passos.')
+  assert.equal(m.tituloHeroi(m.dadosDaPessoa({ nome: 'Duda' }, 10, 0, {})).linha1, 'Duda, você já respondeu 10 questões.')
+  assert.equal(m.dadosDaPessoa({ nome: 'ana@x.com' }, 0, 0, {}).nome, '')
+  assert.equal(m.dadosDaPessoa({ nome: 'BRUNO souza' }, 0, 0, {}).nome, 'Bruno')
 
   // Regras da marca na página: nada do total de questões nem de promessa que não existe.
   const pagina = [
