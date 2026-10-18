@@ -30,6 +30,23 @@ function sincronizar(usuario, alteracoes) {
   }
   return [200, saida]
 }
+// Ranking de exemplo: 62 pessoas, a conta de exemplo em #9 (geral) ou #4 (semana).
+const NOMES_RANKING = ['Marina A.', 'Rafael T.', 'Camila S.', 'Pedro H.', 'Luísa M.', 'Gustavo R.', 'Beatriz F.', 'Thiago L.', 'Tales S.', 'Juliana C.', 'Henrique B.', 'Larissa P.', 'Vinícius O.', 'Natália G.', 'Eduardo V.', 'Fernanda K.', 'Rodrigo N.', 'Amanda D.', 'Felipe Q.', 'Isabela W.']
+function rankingExemplo(periodo, comNomes) {
+  const semana = periodo === 'semana'
+  const voce = semana ? 4 : 9
+  return Array.from({ length: 62 }, (_, i) => {
+    const posicao = i + 1
+    const nome = posicao === voce ? 'Tales S.' : NOMES_RANKING[(i + (semana ? 7 : 0)) % NOMES_RANKING.length].replace('Tales S.', 'Sérgio A.')
+    const total = Math.round((semana ? 612 : 4873) / (1 + i * 0.11) - i * (semana ? 1.3 : 7))
+    const apelido = comNomes ? nome : nome.split(/\s+/).map((p) => p[0]).join('. ') + '.'
+    return {
+      posicao, apelido, total, total_geral: semana ? total * 7 : total, eh_voce: comNomes && posicao === voce,
+      variacao: [2, 0, -1, 4, 0, 1, 0, -2, 3][i % 9], variacao_semana: [6, 1, 0, 2, 0, 5, 1, 0, 3][i % 9],
+      novo: posicao === 17, referencia_em: '2026-10-17', emblemas: null, sequencia: [12, 3, 0, 41, 7, 0, 21, 2, 9][i % 9], servico: null,
+    }
+  })
+}
 const rpcs = {
   sincronizar_progresso: (u, a) => sincronizar(u, a.alteracoes),
   ler_progresso_desde: (u, a) => [200, linhas.filter((l) => l.usuario_id === u && l.versao > a.p_cursor).sort((x, y) => x.versao - y.versao).slice(0, Math.min(a.p_limite ?? 500, 1000)).map(copia)],
@@ -37,6 +54,10 @@ const rpcs = {
   obter_estado_conta: () => [200, [{ status_assinatura: 'ativa', cancelar_ao_fim: false, fim_periodo: null }]],
   sinal_aparelho: () => [200, [{ ativo: true, outro_aparelho: null }]],
   autorizar_resposta: () => [200, [{ permitido: true, restantes: 999, limite: null, premium: true }]],
+  obter_ranking_com_movimento: (_u, a) => [200, rankingExemplo(a.periodo, true)],
+  obter_ranking_publico: (_u, a) => [200, rankingExemplo(a.periodo, true)],
+  obter_ranking_visitante: (_u, a) => [200, rankingExemplo(a.periodo, false)],
+  minha_posicao_ranking: (_u, a) => { const eu = rankingExemplo(a.periodo, true).find((l) => l.eh_voce); return [200, eu ? [{ posicao: eu.posicao, total: eu.total, total_geral: eu.total_geral }] : []] },
   meus_feitos: () => [200, { conquistas: [], dias: {}, indicados_assinantes: 0, indicados_30_dias: 0, simulado_edicoes: [], simulado_participacoes: [], ranking_semana: [], relatos_resolvidos: 0, comentarios_avaliados: 0, contra_corrente: 0, plano: null }],
 }
 async function atender(rota) {
@@ -50,6 +71,7 @@ async function atender(rota) {
   if (url.pathname.startsWith('/auth/v1/user')) return responder(200, usuarioFalso(usuario ?? CONTA))
   if (url.pathname.startsWith('/auth/v1/')) return responder(200, {})
   const rpc = url.pathname.match(/^\/rest\/v1\/rpc\/([a-z_]+)$/)?.[1]
+  if (rpc === 'obter_ranking_visitante') return responder(200, rankingExemplo(JSON.parse(pedido.postData() || '{}').periodo, false))
   if (!usuario) return responder(401, { code: '42501', message: 'permission denied' })
   if (rpc && rpcs[rpc]) { const [s, c] = rpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc) return responder(200, null)

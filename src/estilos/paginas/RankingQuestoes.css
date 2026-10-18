@@ -1,0 +1,215 @@
+/* Ranking de questões (refeito em 18/10/2026), na identidade da temporada pixel do Treinar.
+   Topo com o céu e a cidade da marca e a ficha do jogador ao lado; Top 3 e "Subindo rápido" no salão
+   noturno; a classificação como um placar único, denso e legível, com a barra relativa ao líder.
+   Tudo com o prefixo .rq para não mexer em Conquistas, Flashcards e Ligas, que dividem o Ranking.css. */
+.rq { display: grid; gap: var(--e-5); }
+.rq .numerico { font-variant-numeric: tabular-nums lining-nums; }
+
+/* ---------- Topo ---------- */
+.rq-heroi {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(17rem, 21rem); gap: var(--e-5) var(--e-7); align-items: center;
+  padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1.25rem, 4vw, 2.75rem) calc(clamp(1.5rem, 4vw, 2.5rem) + 1.75rem);
+  border: 2px solid var(--px-tinta); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra);
+  background: var(--heroi); color: var(--sobre-heroi);
+}
+.rq-heroi__tocha { position: absolute; top: 1rem; image-rendering: pixelated; animation: rk-tocha 0.6s steps(2) infinite; }
+.rq-heroi__tocha--esq { left: 0.8rem; }
+.rq-heroi__tocha--dir { right: 0.8rem; }
+.rq-heroi__texto { min-width: 0; padding-inline: clamp(0rem, 2vw, 1rem); }
+.rq-heroi__texto .tr-heroi__selo { margin-bottom: var(--e-3); }
+.rq-heroi h1 {
+  margin: 0; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: clamp(3.4rem, 9vw, 5.6rem); line-height: 0.85; letter-spacing: 0.02em;
+  color: var(--px-ouro); text-shadow: 0 4px 0 #072320;
+}
+.rq-heroi__lead { margin: var(--e-3) 0 0; max-width: 44ch; color: var(--sobre-heroi-2); line-height: 1.5; text-wrap: pretty; }
+
+/* Placar da arena: três números, numa linha só, até no celular. */
+.rq-placar { display: grid; grid-template-columns: auto auto minmax(0, max-content); gap: var(--e-2); max-width: 32rem; margin: var(--e-5) 0 0; }
+.rq-placar div { display: grid; gap: 0.15rem; min-width: 0; padding: 0.5rem 0.75rem 0.55rem; background: rgba(7, 35, 32, 0.55); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.3); }
+.rq-placar dt { font-size: 0.68rem; font-weight: 750; letter-spacing: 0.05em; text-transform: uppercase; color: #9fe3d4; white-space: nowrap; }
+.rq-placar dd { margin: 0; font-family: var(--fonte-texto); font-weight: 800; font-size: 1.35rem; line-height: 1.1; color: var(--px-ouro); }
+.rq-placar__nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.15rem !important; padding-top: 0.1rem; }
+
+/* Ficha do jogador: a placa escura com a posição em ouro, como o bilhete do Treinar. */
+.rq-ficha {
+  position: relative; display: grid; justify-items: start; gap: var(--e-2); min-width: 0;
+  padding: var(--e-5) var(--e-5) var(--e-4);
+  background: linear-gradient(180deg, rgba(4, 24, 22, 0.82), rgba(4, 24, 22, 0.66));
+  box-shadow: 0 0 0 2px var(--px-tinta), inset 0 0 0 1px rgba(244, 207, 124, 0.35), 5px 5px 0 2px #072320;
+}
+.rq-ficha::before { content: ""; position: absolute; top: -2px; left: var(--e-5); width: 3.5rem; height: 4px; background: var(--px-ouro); }
+.rq-ficha__rotulo { font-size: 0.75rem; font-weight: 750; letter-spacing: 0.05em; text-transform: uppercase; color: #9fe3d4; }
+.rq-ficha__linha { display: flex; align-items: center; gap: var(--e-3); }
+.rq-ficha__posicao {
+  font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 4.4rem; line-height: 0.82; letter-spacing: 0.01em;
+  color: var(--px-ouro); text-shadow: 0 4px 0 #072320; font-variant-numeric: tabular-nums;
+}
+.rq-ficha__posicao--texto { font-size: 2.9rem; }
+.rq-ficha__linha .rk-movimento { font-size: 0.85rem; padding: 0.28rem 0.55rem; }
+.rq-ficha__total { color: var(--sobre-heroi-2); font-size: var(--corpo-menor); }
+.rq-ficha__total b { color: #fff; font-weight: 800; }
+.rq-ficha__nota { color: var(--sobre-heroi-2); font-size: var(--meta); line-height: 1.4; }
+.rq-ficha .tr-heroi__link { margin-top: 0; }
+.botao.rq-ficha__botao {
+  justify-self: stretch; margin-top: var(--e-1); border: 0; border-radius: 0; background: var(--px-ouro); color: var(--px-tinta); font-weight: 800;
+  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra); transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.botao.rq-ficha__botao:hover { background: #ffdf95; color: var(--px-tinta); transform: translate(-1px, -1px); }
+.botao.rq-ficha__botao:active { transform: translate(1px, 1px); }
+
+/* Missão: quanto falta para a próxima posição, com o trilho do caminho já feito. */
+.rq .rk-missao {
+  display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: var(--e-1) var(--e-2); width: 100%; margin-top: var(--e-2);
+  padding: var(--e-3); border: 0; border-radius: 0; text-align: left;
+  background: rgba(244, 207, 124, 0.09); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.28);
+  color: var(--sobre-heroi); font-size: var(--corpo-menor); line-height: 1.4;
+}
+.rk-missao__icone { display: grid; place-items: center; width: 1.5rem; height: 1.5rem; background: var(--px-ouro); color: var(--px-tinta); }
+.rq .rk-missao svg { margin: 0; color: inherit; }
+.rq .rk-missao b { color: var(--px-ouro); }
+.rk-missao__trilho { grid-column: 1 / -1; height: 8px; margin-top: var(--e-1); background: rgba(0, 0, 0, 0.35); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.25); }
+.rk-missao__trilho span { display: block; height: 100%; background: repeating-linear-gradient(90deg, var(--px-ouro) 0 6px, #ffe3a3 6px 8px); }
+
+/* ---------- Período, liga e critério ---------- */
+.rq-barra { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--e-3) var(--e-4); }
+.rq-periodo { display: inline-flex; gap: 0.3rem; padding: 0.3rem; background: var(--superficie); border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 3px 3px 0 var(--px-sombra); }
+.rq-periodo__aba {
+  min-height: 40px; padding: 0 1.1rem; border: 0; border-radius: 3px; background: transparent; color: var(--texto-2);
+  font: inherit; font-weight: 700; cursor: pointer; transition: background-color 0.15s ease, color 0.15s ease;
+}
+.rq-periodo__aba:hover { color: var(--texto); background: var(--superficie-2); }
+.rq-periodo__aba[aria-selected="true"] { background: var(--verdete); color: var(--sobre-destaque); box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 50%, #000); }
+.rq-periodo__aba:focus-visible { outline: 3px solid var(--px-ouro); outline-offset: 2px; }
+.rq .rk-liga { border-radius: 6px; border: 2px solid color-mix(in srgb, var(--ouro) 55%, var(--px-borda)); box-shadow: 3px 3px 0 rgba(201, 154, 59, 0.25); transition: transform 0.15s ease, border-color 0.15s ease; }
+.rq .rk-liga:hover { transform: translate(-1px, -1px); }
+.rq .rk-criterio { flex-basis: 100%; }
+.rq .rk-criterio svg { flex: none; color: var(--verdete); }
+.rq .rk-visitante { border-radius: 6px; border: 2px dashed var(--px-borda); }
+
+/* O Top 3 e o "Subindo rápido" vêm com margem própria; aqui o espaçamento é o da grade. */
+.rq > .sc, .rq > .sb { margin: 0; }
+
+/* ---------- Classificação ---------- */
+.rq-tabela {
+  display: grid; min-width: 0; background: var(--superficie);
+  border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra);
+}
+.rq-tabela__cabeca { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--e-1) var(--e-4); padding: var(--e-4) var(--e-5) var(--e-3); }
+.rq-tabela__cabeca h2 { display: flex; align-items: center; gap: var(--e-2); margin: 0; font-size: 1.2rem; letter-spacing: -0.01em; }
+.rq-tabela__cabeca h2::before { content: ""; flex: none; width: 0.65rem; height: 0.65rem; background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); }
+.rq-tabela__faixa { color: var(--texto-2); font-size: var(--meta); font-weight: 600; }
+.rq .rk-referencia { padding: var(--e-3) var(--e-5); gap: var(--e-1) var(--e-4); background: var(--superficie-2); border-block: 1px solid var(--traco); font-size: var(--meta); }
+.rq .rk-referencia small { font-size: 0.72rem; }
+.rq .rk-referencia--inicio { margin: 0; border-radius: 0; }
+
+.rq-lista { list-style: none; margin: 0; padding: var(--e-1) 0; display: grid; }
+.rq-lista img { animation: none; }
+.rq-linha {
+  position: relative; display: grid; align-items: center; gap: 0 var(--e-3);
+  grid-template-columns: 2.4rem 3.4rem 2.4rem minmax(0, 1fr) minmax(7rem, 11rem);
+  grid-template-areas: "pos mov av quem placar";
+  min-height: 3.6rem; padding: var(--e-2) var(--e-5);
+  transition: background-color 0.15s ease;
+}
+.rq-linha + .rq-linha { border-top: 1px solid var(--traco); }
+.rq-linha:hover { background: var(--superficie-2); }
+.rq-linha__pos { grid-area: pos; justify-self: end; font-family: var(--fonte-pixel-titulo); font-size: 1.55rem; line-height: 1; color: var(--texto-2); }
+.rq-linha--top10 .rq-linha__pos { color: var(--texto); }
+.rq-linha__mov { grid-area: mov; display: flex; justify-content: flex-start; }
+.rq-linha__mov .rk-movimento { font-size: 0.72rem; }
+.rq-linha__avatar {
+  grid-area: av; display: grid; place-items: center; width: 2.4rem; height: 2.4rem;
+  background: var(--verdete-veu); color: var(--verdete); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.02em;
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--verdete) 30%, transparent);
+}
+.rq-linha__quem { grid-area: quem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.6rem; min-width: 0; }
+.rq-linha__nome { display: flex; align-items: center; gap: 0.4rem; min-width: 0; font-weight: 700; }
+.rq-linha__apelido { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rq-linha__nome .rk-servico { margin-left: 0; flex: none; }
+.rq-linha__selos { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; }
+.rq-linha__selos:empty { display: none; }
+.rq-linha__selos .emblemas-nome, .rq-linha__selos .fogueira { margin: 0; }
+.rq-voce { flex: none; padding: 0.05rem 0.4rem; background: var(--verdete); color: var(--sobre-destaque); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+
+/* Placar: o número em destaque e a barra relativa ao líder logo abaixo, fina e com ponta arredondada. */
+.rq-linha__placar { grid-area: placar; display: grid; justify-items: end; gap: 0.35rem; min-width: 0; }
+.rq-linha__placar b { font-weight: 800; font-size: 1.05rem; line-height: 1; color: var(--texto); }
+.rq-linha__barra { width: 100%; height: 6px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); }
+.rq-linha__barra span { display: block; height: 100%; background: color-mix(in srgb, var(--verdete) 75%, var(--superficie)); }
+.rq-linha--top10 .rq-linha__barra span { background: var(--verdete); }
+
+/* Você: a linha vira placa dourada, com a marca de jogo à esquerda. */
+.rq-linha--voce { z-index: 1; margin: var(--e-1) var(--e-2); padding-inline: calc(var(--e-5) - var(--e-2)); background: color-mix(in srgb, var(--px-ouro) 16%, var(--superficie)); box-shadow: 0 0 0 2px #c99a3b, 4px 4px 0 2px rgba(201, 154, 59, 0.3); }
+.rq-linha--voce + .rq-linha, .rq-linha + .rq-linha--voce { border-top-color: transparent; }
+.rq-linha--voce:hover { background: color-mix(in srgb, var(--px-ouro) 22%, var(--superficie)); }
+.rq-linha--voce .rq-linha__pos { color: var(--ouro-texto, #8a5a00); }
+.rq-linha--voce .rq-linha__avatar { background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta); }
+.rq-linha--voce .rq-linha__barra span { background: repeating-linear-gradient(90deg, #c99a3b 0 6px, var(--px-ouro) 6px 8px); }
+
+.rq .rk-mais { justify-self: center; margin: var(--e-3) 0 var(--e-4); border-radius: 4px; }
+
+/* ---------- Conquistas e regras ---------- */
+.rq .rk-bau { border: 2px solid var(--px-tinta); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra); transition: transform 0.15s ease; }
+.rq .rk-bau:hover { box-shadow: 5px 5px 0 var(--px-sombra), inset 0 0 0 2px var(--px-ouro); transform: translate(-1px, -1px); }
+.rq .rk-bau:focus-visible { outline: 3px solid var(--px-ouro); outline-offset: 3px; }
+.rq .rk-bau__cta { justify-self: start; border-radius: 0; }
+.rq .rk-bau .inv-slot { border-radius: 3px; }
+
+.rq .rk-regras { padding: var(--e-4) var(--e-5); background: var(--superficie); border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra); }
+.rq .rk-regras > summary { min-height: 44px; }
+.rq .rk-regras > summary:focus-visible { outline: 3px solid var(--px-ouro); outline-offset: 4px; }
+.rq .rk-regras ol { list-style: none; margin: var(--e-4) 0 var(--e-1); padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-4) var(--e-6); }
+.rq .rk-regras li { display: flex; gap: var(--e-3); align-items: flex-start; font-size: var(--corpo-menor); line-height: 1.5; color: var(--texto-2); }
+.rq .rk-regras li strong { color: var(--texto); }
+.rq .rk-regras .px-numero { width: 2rem !important; height: 2rem !important; font-size: 1.35rem !important; }
+
+/* ---------- Celular ---------- */
+@media (max-width: 52rem) {
+  .rq-heroi { grid-template-columns: minmax(0, 1fr); }
+  .rq-heroi__texto { padding-inline: 0; }
+}
+@media (max-width: 40rem) {
+  .rq { gap: var(--e-4); }
+  .rq-heroi { padding: var(--e-5) var(--e-4) calc(var(--e-5) + 1.5rem); gap: var(--e-4); }
+  .rq-heroi__tocha { display: none; }
+  .rq .rq-heroi h1 { margin: 0; font-size: 3.4rem; line-height: 0.85; }
+  .rq-linha__quem { display: grid; gap: 0.2rem; }
+  .rq-heroi__lead { display: none; }
+  .rq-placar { grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr); margin-top: var(--e-4); gap: 0.35rem; }
+  .rq-placar div { padding: 0.4rem 0.5rem; }
+  .rq-placar dt { font-size: 0.6rem; letter-spacing: 0.03em; white-space: normal; line-height: 1.15; }
+  .rq-placar dd { font-size: 1.1rem; }
+  .rq-placar__nome { font-size: 0.95rem !important; }
+  .rq-ficha { padding: var(--e-4); }
+  .rq-ficha__posicao { font-size: 3.8rem; }
+  .rq-ficha__posicao--texto { font-size: 2.4rem; }
+  .rq-barra { gap: var(--e-2); }
+  .rq-periodo { flex: 1 1 auto; }
+  .rq-periodo__aba { flex: 1; padding: 0 0.6rem; }
+  .rq .rk-liga { flex: 1 1 auto; justify-content: center; }
+  .rq-tabela__cabeca { padding: var(--e-3) var(--e-4) var(--e-2); }
+  .rq .rk-referencia { padding: var(--e-2) var(--e-4); }
+  .rq-linha {
+    grid-template-columns: 2.9rem 2.2rem minmax(0, 1fr) auto;
+    grid-template-areas: "pos av quem placar" "mov av quem placar";
+    gap: 0.15rem var(--e-2); min-height: 3.5rem; padding: var(--e-2) var(--e-3);
+  }
+  .rq-linha--voce { margin-inline: var(--e-1); padding-inline: calc(var(--e-3) - var(--e-1)); }
+  .rq-linha__pos { justify-self: center; align-self: end; font-size: 1.35rem; }
+  .rq-linha__mov { justify-content: center; align-self: start; }
+  .rq-linha__mov .rk-movimento { font-size: 0.66rem; padding: 0.12rem 0.32rem; }
+  .rq-linha__avatar { width: 2.2rem; height: 2.2rem; font-size: 0.72rem; }
+  .rq-linha__placar { width: 4.6rem; }
+  .rq-linha__placar b { font-size: 0.98rem; }
+  .rq-linha__barra { height: 5px; }
+  .rq .rk-regras { padding: var(--e-3) var(--e-4); }
+  .rq .rk-regras ol { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rq-heroi__tocha { animation: none; }
+  .rq-linha, .rq .rk-bau, .rq .rk-liga, .botao.rq-ficha__botao { transition: none; }
+}
+
+/* Frase calorosa da ficha (adendo do dono, 18/10/2026: o nome e os dados da pessoa). */
+.rq-ficha__frase { max-width: 30ch; color: #fff; font-size: var(--corpo-menor); font-weight: 600; line-height: 1.4; text-wrap: pretty; }
