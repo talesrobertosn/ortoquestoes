@@ -10,9 +10,9 @@ Gerar: `node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-18-
 |---|---|---|
 | 7h às 8h | Feed, carrossel de 3 | `f1-negativo`, `f2-revelacao`, `f3-timer` |
 | 7h às 8h | Stories da pergunta | `s1-tocando`, `s2-fila` |
-| 18h às 19h | Story da resposta e da chamada, com a figurinha de link abaixo da seta | `s3-letra` |
+| 18h às 19h | Story da resposta, com a chamada no próprio desenho | `s3-letra` |
 
-Figurinha de link do `s3-letra` (texto: "Treine grátis"). Abre "criar conta" e, depois do cadastro, a própria questão do story:
+Os três stories vão **sem figurinha** (regra dos stories de questão): a chamada "Treine grátis" fica escrita no `s3-letra` e o caminho é o perfil. Se quiser a figurinha de link, poste depois um story de propaganda separado (por exemplo, o modelo Treine grátis) com este link, que abre "criar conta" e depois a própria questão:
 
 ```
 https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaign=player-bouvier#/conta?modo=criar&voltar=%2Fquestao%2Fmao-0433
