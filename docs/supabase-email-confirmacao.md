@@ -2,8 +2,8 @@
 
 Estes dois e-mails saem do Supabase Auth, fora do código, por isso ficam em
 `supabase/modelos-email/` e precisam ser colados no painel uma vez. Desde 17/10/2026 os dois
-falam em nome do grupo, não do Tales (pedido de 18/10/2026: "tratar mais como um grupo e não uma pessoa;
-precisa ser mais fofo"), e assinam "Com carinho, / Equipe Orto Questões".
+falam com a voz do grupo ("a gente"), sem apresentar o Tales no texto (pedido de 18/10/2026: "tratar mais como um grupo e não uma pessoa;
+precisa ser mais fofo"), e assinam "Com carinho, / Tales, do Orto Questões".
 Desde 18/10/2026, a pedido do Tales, voltaram ao visual em cartão (fundo cinza-claro, cartão branco,
 um botão verde e uma caixa de dica ou de segurança), que ele achou mais bonito.
 
@@ -18,7 +18,7 @@ Painel do Supabase > Authentication > Emails > SMTP Settings > Enable custom SMT
 | Campo | Valor |
 |---|---|
 | Sender email | `contato@ortoquestoes.com.br` (o mesmo domínio verificado no Resend) |
-| Sender name | `Equipe Orto Questões` |
+| Sender name | `Tales, do Orto Questões` |
 | Host | `smtp.resend.com` |
 | Port | `465` |
 | Username | `resend` |
