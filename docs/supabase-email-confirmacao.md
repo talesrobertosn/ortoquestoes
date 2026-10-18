@@ -2,9 +2,9 @@
 
 Estes dois e-mails saem do Supabase Auth, fora do código, por isso ficam em
 `supabase/modelos-email/` e precisam ser colados no painel uma vez. Desde 17/10/2026 os dois
-seguem a voz das cartas (docs/emails/PLANO.md): texto simples, assinatura "Um abraço, / Tales, do
-Orto Questões", um P.S., sem logo e sem lista de benefícios, para chegarem na caixa de entrada
-principal, não em Promoções.
+seguem a voz das cartas (docs/emails/PLANO.md) e assinam "Um abraço, / Tales, do Orto Questões".
+Desde 18/10/2026, a pedido do Tales, voltaram ao visual em cartão (fundo cinza-claro, cartão branco,
+um botão verde e uma caixa de dica ou de segurança), que ele achou mais bonito.
 
 ## 1. Enviar pelo Resend (SMTP próprio)
 
