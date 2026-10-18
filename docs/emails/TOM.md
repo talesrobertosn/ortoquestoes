@@ -72,6 +72,16 @@ devolve o motivo em `bloqueio`; `gerarCarta` recusa com `cadencia_bloqueada: ...
 painel passa `ignorarCadencia`); os lotes pulam a pessoa e ela volta no próximo lote; o site recebe
 "adiado" e tenta de novo depois.
 
+## Quem desligou não recebe
+
+Nenhum e-mail sai para quem desligou a categoria dele em Minha conta › E-mails e mensagens (ou pelo
+link do rodapé), e com os quatro desligados nada sai. A preferência é lida na hora de cada envio
+(`podeReceber`, regra em `supabase/functions/_shared/preferencias.ts`): parabéns e marcos seguem
+"conquistas"; resumos e relatório, "relatorio_mensal"; lembretes e Pix, "lembretes"; cartas da ficha,
+lote, automáticos (inclusive o recibo e o obrigado pelo tempo) e relato resolvido, "cartas". Ficam de
+fora só a confirmação de cadastro e a senha nova, que a pessoa pede na hora. Teste:
+`fixtures/testar_descadastro_email.mjs`.
+
 ## O que nunca fazer
 
 - Expor número ruim: **abaixo de 50% de acerto, nenhuma porcentagem**. O tema a melhorar nunca leva número.

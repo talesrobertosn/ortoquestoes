@@ -1,6 +1,7 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
 import { MARCOS, automaticoBloqueado, ehTransacional, emailAutomatico, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, marcoComCarta, tipoAutomaticoValido, type CampanhaLembrete, type DadosRelatorio, type Marco, type TipoAutomatico } from '../_shared/modelo-email.ts'
+import { permiteEnvio, preferenciasDaLinha, type CategoriaEmail } from '../_shared/preferencias.ts'
 import { cadenciaBloqueia, perfilDosDados, problemaGrave, renderizarCarta, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
 
 /**
@@ -50,6 +51,11 @@ import { cadenciaBloqueia, perfilDosDados, problemaGrave, renderizarCarta, type 
  *                      referência) pela tabela de envios, como o marco. Os não transacionais
  *                      respeitam o teto de cadência (48 h / 3 em 14 dias): resposta "adiado".
  *
+ * Quem desligou os e-mails (18/10/2026): todo envio para a pessoa passa antes por
+ * podeReceber, que lê a preferência de agora (preferencias.ts). Nos lotes a pessoa é
+ * pulada ("recusados"); na ficha, no relato e no parabéns a resposta é 409
+ * pessoa_nao_quer_emails; nos automáticos e no marco, "nao_quer".
+ *
  * Cadência (PLANO.md, 17/10/2026): lotes de lembretes e relatórios pulam quem recebeu
  * qualquer e-mail não transacional nas últimas 48 h ou 3 nos últimos 14 dias; a pessoa
  * volta a aparecer no próximo lote.
@@ -72,6 +78,21 @@ async function dadosUsuario(id: string): Promise<DadosUsuario | null> {
   if (!r.ok) throw new Error('consulta_usuario_falhou')
   const [linha] = await r.json() as DadosUsuario[]
   return linha ?? null
+}
+
+/**
+ * A pessoa aceita e-mail desta categoria agora? Lido na hora de cada envio (a lista
+ * do lote pode ser de antes de ela desligar). Leitura que falha conta como não.
+ */
+async function podeReceber(id: string, categoria: CategoriaEmail): Promise<boolean> {
+  try {
+    const r = await banco(`preferencias_email?id_usuario=eq.${id}&select=conquistas,relatorio_mensal,lembretes,cartas&limit=1`)
+    if (!r.ok) return false
+    const [linha] = await r.json() as Array<Record<string, unknown>>
+    return permiteEnvio(preferenciasDaLinha(linha), categoria)
+  } catch {
+    return false
+  }
 }
 
 async function ehAdministrador(id: string) {
@@ -188,8 +209,9 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     : await banco('rpc/destinatarios_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_mes: mes, p_limite: limite }) })
   if (!r.ok) throw new Error('consulta_destinatarios_falhou')
   const destinatarios = (await r.json() as Array<{ id_usuario: string }>).map((d) => d.id_usuario)
-  let enviados = 0, falhas = 0, adiados = 0
+  let enviados = 0, falhas = 0, adiados = 0, recusados = 0
   for (const id of destinatarios) {
+    if (!await podeReceber(id, 'relatorio')) { recusados++; continue }
     // Cadência: quem recebeu e-mail há menos de 48 h (ou 3 em 14 dias) fica para o próximo lote.
     const anteriores = await anterioresDe(id).catch(() => [] as EnvioAnterior[])
     if (cadenciaBloqueia(anteriores, new Date(), 'relatorio')) { adiados++; continue }
@@ -215,7 +237,7 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     }
     await esperar(600)
   }
-  return { mes, enviados, falhas, adiados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
+  return { mes, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
 }
 
 const TIPO_DA_CAMPANHA: Record<CampanhaLembrete, TipoCarta> = { nunca: 'nunca_comecou', tres_dias: 'pausa', sete_dias: 'sumiu', renovacao_pix: 'pix_3_dias', renovacao_pix_hoje: 'pix_hoje' }
@@ -236,8 +258,9 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
     : await banco('rpc/destinatarios_lembrete', { method: 'POST', body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) })
   if (!r.ok) throw new Error('consulta_destinatarios_falhou')
   const destinatarios = await r.json() as Array<{ id_usuario: string; referencia: string; email: string; nome: string | null; respondidas: number; dias_fora?: number; dias_restantes?: number; plano?: string; fim_periodo?: string }>
-  let enviados = 0, falhas = 0, adiados = 0
+  let enviados = 0, falhas = 0, adiados = 0, recusados = 0
   for (const d of destinatarios) {
+    if (!await podeReceber(d.id_usuario, 'lembretes')) { recusados++; continue }
     // Cadência (o "Pix termina hoje" é transacional e nunca é adiado).
     const anteriores = await anterioresDe(d.id_usuario).catch(() => [] as EnvioAnterior[])
     if (cadenciaBloqueia(anteriores, new Date(), TIPO_DA_CAMPANHA[campanha])) { adiados++; continue }
@@ -272,7 +295,7 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
     }
     await esperar(600)
   }
-  return { campanha, enviados, falhas, adiados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
+  return { campanha, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
 }
 
 async function registrar(corpo: Record<string, unknown>) {
@@ -290,8 +313,8 @@ interface PedidoAutomatico {
 /**
  * Um dos seis automáticos novos (17/10/2026). Idempotente por pessoa e referência
  * (ou pessoa e tipo, para os que saem uma vez só), pela tabela de envios: confere
- * antes de reservar a linha. Respeita quem desligou as cartas (menos nos
- * transacionais), o e-mail confirmado e o teto de cadência.
+ * antes de reservar a linha. Respeita quem desligou as cartas (inclusive nos
+ * transacionais), o e-mail confirmado e o teto de cadência (este, menos nos transacionais).
  */
 async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: PedidoAutomatico, por: string | null) {
   if (!emailConfigurado()) return { resultado: 'email_nao_configurado' }
@@ -307,6 +330,8 @@ async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: Pedido
   if (!pessoa?.email) return { resultado: 'sem_email' }
   if (pessoa.confirmado === false) return { resultado: 'email_nao_confirmado' }
   if (!transacional && !pessoa.quer_cartas) return { resultado: 'nao_quer' }
+  // Também os transacionais (recibo, obrigado pelo tempo): quem desligou as cartas não recebe.
+  if (!await podeReceber(id, 'cartas')) return { resultado: 'nao_quer' }
 
   const dados = await dadosUsuario(id)
   const respondidas = Number(dados?.respondidas ?? 0)
@@ -468,6 +493,7 @@ Deno.serve(async (req) => {
       if (corpo.acao === 'previa_relato') return json({ assunto: e.assunto, html: e.html, para: dados.email }, 200, req)
       if (relato.status !== 'resolvido') return json({ erro: 'relato_nao_resolvido' }, 409, req)
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
+      if (!await podeReceber(relato.id_usuario, 'cartas')) return json({ erro: 'pessoa_nao_quer_emails' }, 409, req)
       try {
         await enviarEmail(dados.email, e.assunto, e.html, e.texto)
         await banco(`relatos_erro?id=eq.${idRelato}`, { method: 'PATCH', body: JSON.stringify({ avisado_em: new Date().toISOString() }) })
@@ -495,7 +521,7 @@ Deno.serve(async (req) => {
       if (config.ok && (await config.json() as Array<{ marcos_automaticos: boolean }>)[0]?.marcos_automaticos === false) return json({ resultado: 'desativado' }, 200, req)
       const dados = await dadosUsuario(usuario.id)
       if (!dados?.email) return json({ resultado: 'sem_email' }, 200, req)
-      if (!dados.quer_conquistas) return json({ resultado: 'nao_quer' }, 200, req)
+      if (!dados.quer_conquistas || !await podeReceber(usuario.id, 'conquistas')) return json({ resultado: 'nao_quer' }, 200, req)
       // Só os marcos com carta (100, 250, 500, 1.000, 2.000).
       const marco = marcoComCarta(Number(dados.respondidas))
       if (!marco) return json({ resultado: 'ainda_nao' }, 200, req)
@@ -564,7 +590,7 @@ Deno.serve(async (req) => {
         pessoa = antigo ? { email: antigo.email, quer_cartas: antigo.quer_conquistas } : null
       }
       if (!pessoa?.email) return json({ erro: 'usuario_sem_email' }, 404, req)
-      if (!pessoa.quer_cartas) return json({ erro: 'pessoa_nao_quer_emails' }, 409, req)
+      if (!pessoa.quer_cartas || !await podeReceber(corpo.id_usuario, 'cartas')) return json({ erro: 'pessoa_nao_quer_emails' }, 409, req)
       if (lote) {
         if (pessoa.administrador) return json({ erro: 'administrador' }, 409, req)
         if (!pessoa.confirmado) return json({ erro: 'email_nao_confirmado' }, 409, req)
@@ -600,7 +626,7 @@ Deno.serve(async (req) => {
       if (!pronto) return json({ erro: 'usuario_sem_email' }, 404, req)
       if (corpo.acao === 'previa') return json({ assunto: pronto.email.assunto, html: pronto.email.html, quer_conquistas: pronto.dados.quer_conquistas }, 200, req)
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
-      if (!pronto.dados.quer_conquistas) return json({ erro: 'pessoa_nao_quer_emails' }, 409, req)
+      if (!pronto.dados.quer_conquistas || !await podeReceber(corpo.id_usuario, 'cartas')) return json({ erro: 'pessoa_nao_quer_emails' }, 409, req)
       try {
         await enviarEmail(pronto.dados.email!, pronto.email.assunto, pronto.email.html, pronto.email.texto, carta ? undefined : await linkDescadastro(corpo.id_usuario))
         await registrar({ id_usuario: corpo.id_usuario, tipo: 'parabens', marco: pronto.marco.minimo, assunto: pronto.email.assunto, enviado_por: usuario.id })
