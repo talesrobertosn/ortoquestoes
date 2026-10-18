@@ -13,9 +13,14 @@
  * voltou depois de 10 dias, cronograma pronto, pagamento aprovado e obrigado pelo
  * tempo de assinatura.
  *
+ * Parte 31 (18/10/2026): as nove campanhas diárias (assinou e não montou o cronograma,
+ * assinante parado há 7 dias, resultado do Simulado Nacional, véspera e depois da prova,
+ * aniversário, um ano de Orto Questões, indicação que deu certo e resumo novo do tema) saem
+ * pela mesma `emailAutomatico`, com os dados que o banco manda em `campanha`.
+ *
  * Só funções puras (sem Deno nem rede): a Edge Function e os testes usam o mesmo arquivo.
  */
-import { MARCOS_CARTA, TIPOS_AUTOMATICOS_NOVOS, TIPOS_TRANSACIONAIS, cadenciaBloqueia, escolherTipo, gerarCarta, primeiroNome, tipoCombina, questoes, renderizarCarta, sementeDe, type Carta, type DadosRelatorioCarta, type EnvioAnterior, type OpcoesCarta, type PerfilCarta, type TipoCarta } from './cartas.ts'
+import { MARCOS_CARTA, TIPOS_AUTOMATICOS_NOVOS, TIPOS_CAMPANHAS_DIARIAS, TIPOS_TRANSACIONAIS, cadenciaBloqueia, escolherTipo, gerarCarta, primeiroNome, tipoCombina, questoes, renderizarCarta, sementeDe, type Carta, type DadosCampanha, type DadosRelatorioCarta, type EnvioAnterior, type OpcoesCarta, type PerfilCarta, type TipoCarta } from './cartas.ts'
 
 export interface Marco {
   minimo: number
@@ -241,8 +246,14 @@ export function emailRelatorio(d: DadosRelatorio & { perfil?: PerfilCarta | null
 // Automáticos novos (17/10/2026), disparados por um acontecimento
 // ---------------------------------------------------------------------------
 
-export type TipoAutomatico = 'boas_vindas_dia0' | 'primeiras_10' | 'voltou' | 'cronograma_pronto' | 'pagamento_aprovado' | 'obrigado_tempo'
-export const TIPOS_AUTOMATICOS: readonly TipoAutomatico[] = TIPOS_AUTOMATICOS_NOVOS as readonly TipoAutomatico[]
+export type TipoCampanhaDiaria = 'assinou_sem_cronograma' | 'assinante_parado_7' | 'simulado_resultado' | 'vespera_prova' | 'depois_prova'
+  | 'aniversario' | 'um_ano' | 'indicacao_deu_certo' | 'resumo_do_tema'
+export type TipoAutomatico = 'boas_vindas_dia0' | 'primeiras_10' | 'voltou' | 'cronograma_pronto' | 'pagamento_aprovado' | 'obrigado_tempo' | TipoCampanhaDiaria
+/** Os seis automáticos por acontecimento (17/10/2026) e as nove campanhas diárias (parte 31). */
+export const TIPOS_AUTOMATICOS: readonly TipoAutomatico[] = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS] as readonly TipoAutomatico[]
+export const CAMPANHAS_DIARIAS: readonly TipoCampanhaDiaria[] = TIPOS_CAMPANHAS_DIARIAS as readonly TipoCampanhaDiaria[]
+/** Campanha diária: só o agendador (x-segredo) ou um administrador pedem; a própria pessoa, não. */
+export const ehCampanhaDiaria = (t?: string | null): t is TipoCampanhaDiaria => (CAMPANHAS_DIARIAS as readonly string[]).includes(t ?? '')
 export const tipoAutomaticoValido = (t?: string | null): TipoAutomatico | null => (TIPOS_AUTOMATICOS as readonly string[]).includes(t ?? '') ? t as TipoAutomatico : null
 /** Transacional: sai mesmo dentro do teto de cadência e mesmo para quem desligou as cartas. */
 export const ehTransacional = (t: TipoCarta | string) => TIPOS_TRANSACIONAIS.includes(t)
@@ -269,16 +280,23 @@ export interface DadosAutomatico {
   encerramento?: OpcoesCarta['encerramento']
   /** Referência do acontecimento (id do pagamento, data do login) para a semente ficar estável. */
   referencia?: string | null
+  /** Campanhas diárias (parte 31): resultado do simulado, anos de conta, resumo novo, cortesia da indicação. */
+  campanha?: DadosCampanha | null
 }
 
 /**
- * Um dos seis automáticos novos. Quem chama (a Edge Function) garante a idempotência
+ * Um dos automáticos (os seis por acontecimento e as nove campanhas diárias). Quem chama (a Edge Function) garante a idempotência
  * por pessoa e tipo (ou pessoa e referência) com a tabela de envios, e respeita a cadência
  * para os que não são transacionais (`cadenciaBloqueia`).
  */
 export function emailAutomatico(d: DadosAutomatico): EmailPronto {
   const perfil = perfilDe({ nome: d.nome, respondidas: d.respondidas }, d.perfil)
   if (d.tipo === 'voltou') perfil.diasParado = Math.max(10, Math.round(Number(d.diasFora) || 10))
+  // Assinante parado: a campanha só sai a partir de 7 dias sem responder.
+  if (d.tipo === 'assinante_parado_7') perfil.diasParado = Math.max(7, Math.round(Number(d.diasFora ?? perfil.diasParado) || 7))
+  // Véspera e depois da prova: a prova que a pessoa pôs no cronograma ("o TEOT").
+  if ((d.tipo === 'vespera_prova' || d.tipo === 'depois_prova') && d.provaCronograma) perfil.provaCronograma = d.provaCronograma
+  if (d.tipo === 'vespera_prova') perfil.diasParaProva = 1
   if (d.tipo === 'cronograma_pronto') {
     if (d.diasParaProva) perfil.diasParaProva = d.diasParaProva
     if (d.provaCronograma) perfil.provaCronograma = d.provaCronograma
@@ -286,7 +304,7 @@ export function emailAutomatico(d: DadosAutomatico): EmailPronto {
   const carta = gerarCarta(perfil, {
     tipo: d.tipo, anteriores: d.anteriores, site: d.site, hoje: d.hoje,
     semente: d.semente ?? sementeDe(`${d.tipo}:${d.referencia ?? ''}:${d.nome ?? ''}:${d.respondidas}`),
-    pagamento: d.pagamento, encerramento: d.encerramento,
+    pagamento: d.pagamento, encerramento: d.encerramento, campanha: d.campanha ?? undefined,
     // Transacionais nunca são barrados; os demais respeitam a cadência (gerarCarta recusa).
     ignorarCadencia: ehTransacional(d.tipo),
   })

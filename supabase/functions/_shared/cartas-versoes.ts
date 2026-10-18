@@ -1918,10 +1918,471 @@ const obrigado_tempo: Versao[] = [
     ps: () => 'P.S.: se responder, sou eu que leio. E respondo.' },
 ]
 
+// ---------------------------------------------------------------------------
+// As nove campanhas diárias (parte 31, 18/10/2026): o banco escolhe quem recebe
+// (candidatos_<tipo>) e o agendador manda. Cada dado do acontecimento vem em c.campanha
+// e some se faltar: a carta continua de pé sem ele.
+// ---------------------------------------------------------------------------
+
+/** "o TEOT" pelo nome que a pessoa deu no cronograma; senão o que o motor já sabe ("a prova"). */
+const provaDela = (c: Ctx) => {
+  const nome = (c.p.provaCronograma ?? '').trim()
+  return nome && nome.length <= 30 && !/[@\d_]/.test(nome) ? `o ${nome}` : c.nomeProva
+}
+const daProvaDela = (c: Ctx) => provaDela(c).replace(/^o /, 'do ').replace(/^a /, 'da ')
+/** Véspera e depois da prova: a data do cronograma é o assunto da carta, então o fato já está gasto. */
+const usaProva = (c: Ctx): null => { if (c.fatos.cronograma) c.usados.add('cronograma'); return null }
+/** O aniversário é o assunto da carta: o fato fica gasto (nenhum P.S. repete o parabéns). */
+const usaAniversario = (c: Ctx): null => { if (c.fatos.aniversario) c.usados.add('aniversario'); return null }
+/** Uma semana ou mais fora (a campanha só sai a partir de 7 dias). */
+const semanaFora = (c: Ctx) => tempoFora(Math.max(7, Number(c.p.diasParado) || 7))
+
+/** "34 de 50" só quando é motivo de orgulho: metade ou mais e pelo menos 10 acertos (regra dos 10). */
+const notaSimulado = (c: Ctx) => {
+  const s = c.campanha.simulado
+  const a = Number(s?.acertos), t = Number(s?.total)
+  return Number.isInteger(a) && Number.isInteger(t) && t >= 10 && a >= 10 && a <= t && a * 2 >= t ? `${N(a)} de ${N(t)}` : null
+}
+/** Posição só entre os 30 primeiros (o banco só manda a posição de quem assina, como no site). */
+const posicaoSimulado = (c: Ctx) => {
+  const p = Number(c.campanha.simulado?.posicao)
+  return Number.isInteger(p) && p >= 1 && p <= 30 ? p : null
+}
+const resultadoSimulado = (c: Ctx): string | null => {
+  const nota = notaSimulado(c), pos = posicaoSimulado(c)
+  if (nota && pos) return `Você acertou ${nota} questões e ficou em ${pos}º lugar entre quem entregou no tempo.`
+  if (nota) return `Você acertou ${nota} questões.`
+  if (pos) return `Você ficou em ${pos}º lugar entre quem entregou no tempo.`
+  return null
+}
+
+/** Anos de conta: o que o banco mandou, ou o que dá para ver pela idade da conta (no mínimo um). */
+const anosConta = (c: Ctx) => Math.max(1, Math.round(Number(c.campanha.anos) || 0) || Math.round((Number(c.p.diasConta) || 0) / 365))
+const anosTexto = (c: Ctx) => {
+  const n = anosConta(c)
+  return n === 1 ? 'um ano' : n === 2 ? 'dois anos' : n === 3 ? 'três anos' : `${N(n)} anos`
+}
+
+/** O resumo novo da campanha: título (só se for limpo) e a área no meio da frase ("mão e punho"). */
+const AREA_EM: Record<string, string> = {
+  'mao': 'mão e punho', 'ombro-cotovelo': 'ombro e cotovelo', 'quadril': 'quadril', 'joelho': 'joelho', 'coluna': 'coluna',
+  'pe-tornozelo': 'pé e tornozelo', 'trauma': 'trauma', 'pediatria': 'ortopedia pediátrica', 'tumores': 'tumores',
+  'conceitos-basicos': 'conceitos básicos', 'osteometabolicas': 'doenças osteometabólicas',
+}
+const tituloResumo = (c: Ctx) => {
+  const t = (c.campanha.resumo?.titulo ?? '').trim()
+  return t.length >= 3 && t.length <= 90 && !/[{}<>"]/.test(t) ? t : null
+}
+const areaResumo = (c: Ctx) => {
+  const e = c.campanha.resumo?.especialidade
+  return e && AREA_EM[e] ? AREA_EM[e] : null
+}
+const oResumo = (c: Ctx) => (tituloResumo(c) ? `o resumo "${tituloResumo(c)}"` : 'um resumo novo')
+
+/** Assinou há 3 dias ou mais e ainda não montou o cronograma. */
+const assinou_sem_cronograma: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'dois minutos que devolvem horas', 'Dois minutos que devolvem horas'), nm(c, 'o cronograma está esperando', 'O cronograma está esperando')],
+    corpo: (c) => [
+      momento(c),
+      'Faz alguns dias que você assinou, e eu queria te contar da parte do plano que mais devolve tempo: o cronograma. Vi que ele ainda está em branco, e tudo bem, a primeira semana costuma ser corrida.',
+      `Leva uns dois minutos: você diz a data ${c.daProva}, quantos dias por semana dá para estudar e quais são as folgas. A partir daí, a lista de cada dia já fica pronta quando você sentar, com o que mais cai primeiro.`,
+      c.obs(1, ['prova', 'etapa', 'horario']),
+      `Fica aqui: ${c.link('cronograma')}`,
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: se a data da prova ainda não saiu, vale colocar uma estimativa. Dá para mudar depois, e o plano se refaz sozinho.' },
+  { id: 'v2', assuntos: (c) => [nm(c, 'uma ideia para a primeira semana', 'Uma ideia para a primeira semana'), nm(c, 'o que eu faria no seu lugar', 'O que eu faria no seu lugar')],
+    corpo: (c) => [
+      'Obrigado mais uma vez pela assinatura. Passaram uns dias, e eu quis te mandar a sugestão que daria a um amigo que acabou de entrar no plano.',
+      'Monte o cronograma antes de qualquer outra coisa. O tempo que mais se perde na preparação não é estudando, é decidindo o que estudar, e o cronograma tira essa decisão das suas costas.',
+      J(c.fato('prova'), c.fato('etapa')),
+      'Se um plantão bagunçar a semana, você marca o dia e ele redistribui o resto, sem quebrar o plano até a prova.',
+      `Para montar: ${c.link('cronograma')}`,
+    ] },
+  { id: 'v3', assuntos: (c) => [nm(c, 'a lista do dia pode vir pronta', 'A lista do dia pode vir pronta')],
+    corpo: (c) => [
+      momento(c),
+      'Uma pergunta rápida: como estão sendo os primeiros dias de plano? Pergunto porque reparei que o cronograma ainda está em branco, e ele é justamente a parte feita para quem tem pouco tempo.',
+      'Funciona assim: você coloca a data da prova e o ritmo que cabe na sua rotina, e todo dia a lista já está pronta quando você sai do hospital. Nada para planejar, nada para lembrar.',
+      c.tempo(),
+      `Se quiser experimentar: ${c.link('cronograma')}`,
+    ],
+    ps: () => 'P.S.: se preferir montar comigo, me responde com a data da prova e quantas horas tem por semana. Eu te ajudo.' },
+  { id: 'v4', assuntos: (c) => [nm(c, 'seu plano pode trabalhar por você', 'Seu plano pode trabalhar por você')],
+    corpo: (c) => [
+      'Que bom ter você no plano. Passando para lembrar, com calma, de uma coisa que faz a assinatura render muito mais: montar o cronograma até a prova.',
+      c.obs(1, ['prova', 'etapa', 'horario', 'maisEstudada']) ?? 'Sei que nos primeiros dias a gente sai abrindo tudo para ver como é, e isso é ótimo.',
+      'O cronograma é o que transforma isso em rotina: o que mais cai primeiro, a revisão no lugar certo e a reta final já desenhada. Se um dia faltar, ele se ajusta sozinho.',
+      `Dois minutos, aqui: ${c.link('cronograma')}`,
+      c.fecho(),
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, 'menos decidir, mais estudar', 'Menos decidir, mais estudar')],
+    corpo: (c) => [
+      momento(c),
+      'Quando eu estudava para o TEOT, o que mais me tirava tempo era abrir o material e passar quinze minutos escolhendo por onde começar.',
+      'Foi por isso que o cronograma entrou no plano: você diz a data da prova, e cada dia já chega decidido. Vi que o seu ainda está por montar, e queria te mostrar como é rápido.',
+      `Fica aqui: ${c.link('cronograma')}`,
+      'Se não fizer sentido agora, tudo bem também. O resto do plano continua todo seu.',
+    ] },
+]
+
+/** Assinante sem responder há 7 dias ou mais. */
+const assinante_parado_7: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'a semana apertou?', 'A semana apertou?'), nm(c, 'tudo certo por aí?', 'Tudo certo por aí?')],
+    corpo: (c) => [
+      `Faz ${semanaFora(c)} desde a sua última questão, e eu quis só saber se está tudo bem por aí.`,
+      'Semana de plantão, prova da residência, a vida acontecendo: eu sei como é. O plano continua aqui, e nada se perdeu.',
+      'Para voltar sem peso, uma sugestão: abra a Revisão e faça dez questões. Ela já separou as que pedem uma segunda olhada, então é só sentar e fazer.',
+      `A Revisão fica aqui: ${c.link('revisao')}`,
+      c.fecho(),
+    ] },
+  { id: 'v2', assuntos: (c) => [nm(c, 'o cronograma se ajusta', 'O cronograma se ajusta sozinho')],
+    corpo: (c) => [
+      momento(c),
+      `Reparei que faz ${semanaFora(c)} desde a sua última sessão. Quis te escrever antes que isso pese, porque não precisa pesar.`,
+      'Se você usa o cronograma, marque os dias que passaram como plantão: ele redistribui o que ficou para trás, sem quebrar o plano até a prova. Se ele ainda está por montar, hoje é um ótimo dia para isso, e leva dois minutos.',
+      `Fica aqui: ${c.link('cronograma')}`,
+      c.obs(1, ['melhorArea', 'maisEstudada', 'prova']),
+    ] },
+  { id: 'v3', assuntos: (c) => [nm(c, 'dez questões para recomeçar', 'Dez questões para recomeçar')],
+    corpo: (c) => [
+      `Faz ${semanaFora(c)} sem questão por aqui, e eu imagino que a rotina tenha apertado. Acontece com todo mundo que estuda trabalhando.`,
+      c.obs(1, ['maisEstudada', 'melhorArea', 'cronograma']) ?? `${guardado(c)}, e a fila da Revisão também.`,
+      'O jeito mais leve de voltar é o menor: dez questões da Revisão, no intervalo que der. Amanhã, mais dez. O embalo volta antes do que parece.',
+      `Para começar: ${c.link('revisao')}`,
+      c.fecho(),
+    ] },
+  { id: 'v4', assuntos: (c) => [nm(c, 'passando para dar um oi', 'Passando para dar um oi')],
+    corpo: (c) => [
+      'Passando só para dar um oi. Vi que a última semana foi sem questões, e quis lembrar que está tudo bem: o plano é seu, no seu ritmo.',
+      momento(c),
+      'Se ajudar, me conta o que atrapalhou: plantão, cansaço, falta de vontade, qualquer coisa. Às vezes um ajuste pequeno no cronograma resolve, e eu gosto de ajudar a achar esse ajuste.',
+      `Quando quiser voltar, a Revisão está pronta: ${c.link('revisao')}`,
+      c.tempo(),
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, 'seu lugar está guardado', 'Seu lugar está guardado')],
+    corpo: (c) => [
+      momento(c),
+      `Faz ${semanaFora(c)} desde a última questão, e eu quis te escrever do jeito que gostaria de ter recebido na residência: sem pressão nenhuma.`,
+      `${guardado(c)}, o Caderno de erros continua lá e a Revisão segue separando o que vale uma segunda olhada.`,
+      'Quando der, cinco questões já recolocam tudo em movimento. Não precisa ser hoje, nem ser muito.',
+      `Fica aqui: ${c.link('revisao')}`,
+    ],
+    ps: () => 'P.S.: se a prova mudou de data, vale atualizar o cronograma. Ele refaz o plano em segundos.' },
+]
+
+/** Resultado do Simulado Nacional, quando a edição fecha. */
+const simulado_resultado: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'seu resultado do Simulado Nacional', 'Seu resultado do Simulado Nacional'), posicaoSimulado(c) && nm(c, `${posicaoSimulado(c)}º no Simulado Nacional`, `${posicaoSimulado(c)}º no Simulado Nacional`)],
+    corpo: (c) => [
+      'O Simulado Nacional fechou, e o seu resultado já está no site. Antes de qualquer número: obrigado por ter feito. Sentar para uma prova inteira, no meio da rotina, já é treino de dia de prova.',
+      resultadoSimulado(c) ?? 'O que mais vale agora não é a nota, é o que ela mostra: os temas em que a prova te pegou são os que vão render mais nas próximas semanas.',
+      'Uma ideia para aproveitar: abra a correção e leia o comentário das questões que te pegaram, cinco por dia. Em uma semana, a prova inteira vira revisão.',
+      `O resultado fica aqui: ${c.link('simulado')}`,
+      c.fecho(),
+    ] },
+  { id: 'v2', assuntos: (c) => [nm(c, 'obrigado por fazer o simulado', 'Obrigado por fazer o simulado'), nm(c, 'o simulado fechou', 'O simulado fechou')],
+    corpo: (c) => [
+      momento(c),
+      'A edição do Simulado Nacional fechou, e quis te escrever porque sei o que é encaixar uma prova inteira numa semana de hospital.',
+      resultadoSimulado(c) ? J(resultadoSimulado(c), 'Fiquei feliz de ver.') : 'O número, seja qual for, é um retrato de hoje, não do dia da prova.',
+      'O melhor uso do resultado é simples: as questões que te pegaram viram a sua lista da semana, e a Revisão já começou a separar.',
+      `Correção e resultado: ${c.link('simulado')}`,
+    ] },
+  { id: 'v3', assuntos: (c) => [nm(c, 'o que o simulado mostrou', 'O que o simulado mostrou')],
+    corpo: (c) => [
+      'O Simulado Nacional terminou, e o resultado está pronto. Simulado é o treino que mais se parece com o dia da prova: o tempo apertado, o último bloco, a questão longa que aparece na hora errada.',
+      resultadoSimulado(c) ?? 'Mais do que a nota, vale olhar os temas: é ali que o simulado aponta onde cada hora de estudo vai render mais.',
+      c.obs(1, ['cronograma', 'prova', 'etapa']),
+      `Se quiser ver por tema: ${c.link('simulado')}`,
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: no mês que vem tem outra edição. Fazer todas é o jeito mais fácil de ver o quanto você cresce.' },
+  { id: 'v4', assuntos: (c) => [nm(c, 'uma ideia para depois do simulado', 'Uma ideia para depois do simulado')],
+    corpo: (c) => [
+      momento(c),
+      J('Vi que você fez o Simulado Nacional desta edição.', resultadoSimulado(c)),
+      'Uma ideia de quem já fez muito simulado: em vez de refazer a prova inteira, pegue as questões que te pegaram e leia o comentário de todas as alternativas. É revisão sob medida, e cabe no intervalo.',
+      `A correção fica aqui: ${c.link('simulado')}`,
+      'Se quiser me contar como foi a experiência, é só responder. Cada resposta ajuda a próxima edição.',
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, 'seu simulado, em uma linha', 'Seu simulado, em uma linha')],
+    corpo: (c) => [
+      'Uma linha sobre o seu Simulado Nacional: fazer já foi a parte mais difícil. Prova inteira, no tempo, com a rotina que a residência deixa, é treino de verdade.',
+      resultadoSimulado(c),
+      'Daqui, a sugestão é olhar a correção sem pressa e deixar a Revisão cuidar do resto. O que te pegou nesta edição é o que mais vai render nas próximas semanas.',
+      c.tempo(),
+      `Resultado: ${c.link('simulado')}`,
+    ] },
+]
+
+/** Véspera da prova (data do cronograma): descanso, nada de matéria nova. */
+const vespera_prova: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'amanhã é o dia', 'Amanhã é o dia'), nm(c, 'um recado para a véspera', 'Um recado para a véspera')],
+    corpo: (c) => [
+      J(usaProva(c), `Amanhã é ${provaDela(c)}, e eu quis te escrever hoje, com calma.`),
+      'O estudo que decide a prova já foi feito: nas questões de cada intervalo, nas sessões depois do hospital, em cada comentário lido até o fim. Hoje não é dia de matéria nova.',
+      'Se der vontade de revisar, abra só as frases que caem por uns vinte minutos, e pare. Depois, jantar com calma, separar documento e caneta, e deitar cedo. Dormir é estudar, principalmente hoje.',
+      'Vai com a cabeça descansada e confia no que você construiu.',
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: depois da prova, se quiser me contar como foi, eu vou gostar muito de saber.' },
+  { id: 'v2', assuntos: (c) => [nm(c, 'boa prova amanhã', 'Boa prova amanhã')],
+    corpo: (c) => [
+      J(usaProva(c), `Amanhã é ${provaDela(c)}. Lembro bem da véspera da minha: a vontade de abrir tudo de novo e a sensação de que faltava alguma coisa.`),
+      'Não falta. O que vale amanhã é o que você já tem, e o que mais protege isso agora é descanso: comer direito, deitar cedo e chegar com folga no local.',
+      c.dez ? `Foram ${Q(c.r)} até aqui. Isso não some numa noite.` : 'Cada hora de estudo até aqui continua com você. Isso não some numa noite.',
+      'Na prova, se uma questão travar, marque e siga. Volte nela no fim, com a cabeça mais leve.',
+      c.fecho(),
+    ] },
+  { id: 'v3', assuntos: (c) => [nm(c, 'hoje é dia de descansar', 'Hoje é dia de descansar')],
+    corpo: (c) => [
+      J(usaProva(c), `Vi no seu cronograma que ${provaDela(c)} é amanhã.`),
+      'Então a única tarefa de hoje é cuidar de você. Pode parecer estranho depois de tanto tempo estudando, mas descanso na véspera rende mais que qualquer revisão de última hora.',
+      'Três coisas simples: separar documento, caneta e o caminho até o local; comer algo leve; deitar cedo, mesmo sem sono.',
+      'Amanhã, leia cada enunciado até o fim. A banca adora esconder o detalhe na última linha, e isso você já treinou muito.',
+      c.fecho(),
+    ] },
+  { id: 'v4', assuntos: (c) => [nm(c, 'estou na torcida por você amanhã', 'Estou na torcida por você amanhã')],
+    corpo: (c) => [
+      J(usaProva(c), `Amanhã é ${provaDela(c)}, e eu queria que este e-mail fosse uma coisa só: um lembrete de que você chegou até aqui.`),
+      'Chegar à véspera estudando com a rotina que a residência impõe já diz muito sobre você.',
+      'Para hoje, nada de questão nova. Se a ansiedade bater, cinco minutos olhando as frases que caem e chega. O resto do dia é para descansar.',
+      'E amanhã, no intervalo, come alguma coisa e bebe água. Parece bobagem, mas faz diferença no último bloco.',
+    ],
+    ps: () => 'P.S.: depois da prova, se quiser me contar como foi, eu leio cada resposta.' },
+  { id: 'v5', assuntos: (c) => [nm(c, 'a véspera, com calma', 'A véspera, com calma')],
+    corpo: (c) => [
+      J(usaProva(c), `Amanhã é o dia ${daProvaDela(c)}, e eu escrevo só para dizer duas coisas.`),
+      'A primeira: o que você estudou está guardado, e uma boa noite de sono ajuda a memória a arrumar tudo. A segunda: a prova não mede quem você é, mede um dia.',
+      'Se quiser fazer alguma coisa hoje, que seja leve: uma caminhada, uma refeição tranquila, desligar o celular mais cedo.',
+      c.fecho(),
+      'Boa prova.',
+    ] },
+]
+
+/** Depois da prova (1 a 3 dias): como foi? Sem presumir o resultado. */
+const depois_prova: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'como foi a prova?', 'Como foi a prova?')],
+    corpo: (c) => [
+      J(usaProva(c), `${cap(provaDela(c))} passou, e eu fiquei pensando em você. Como foi?`),
+      'Pergunto de verdade, sem esperar resposta pronta. Às vezes a gente sai da prova achando que foi mal e vai bem, e às vezes o contrário. A sensação de hoje ainda não é o resultado.',
+      'Seja como for, o que você estudou continua seu, e tudo o que fez por aqui fica guardado.',
+      'Se quiser me contar, é só responder este e-mail. Eu leio tudo, e gosto muito de saber.',
+    ] },
+  { id: 'v2', assuntos: (c) => [nm(c, 'e aí, como foi?', 'E aí, como foi?')],
+    corpo: (c) => [
+      J(usaProva(c), `Passando para saber como foi ${provaDela(c)}. Espero que a véspera tenha sido tranquila e que as questões tenham parecido conhecidas.`),
+      'Agora é hora de descansar de verdade. Alguns dias sem questão nenhuma são merecidos.',
+      c.dez ? `Foram ${Q(c.r)} até aqui, e cada uma contou.` : 'Cada hora de estudo até aqui contou.',
+      'Quando sair o gabarito, se alguma questão ficar martelando, me escreve. Eu gosto de conversar sobre isso.',
+      c.fecho(),
+    ] },
+  { id: 'v3', assuntos: (c) => [nm(c, 'depois da prova, um respiro', 'Depois da prova, um respiro')],
+    corpo: (c) => [
+      J(usaProva(c), `Já passou ${provaDela(c)}, e eu quis te mandar um abraço antes de qualquer resultado.`),
+      'Sei como são os dias seguintes: a cabeça repassando questão por questão. Tenta deixar isso de lado agora. O que podia ser feito, você fez.',
+      'Se quiser, me conta como foi: o que caiu, o que surpreendeu, o que achou da prova. Cada relato me ajuda a deixar o site melhor para quem vem depois.',
+      'E descansa. Você merece alguns dias leves.',
+    ] },
+  { id: 'v4', assuntos: (c) => [nm(c, 'uma pergunta sobre a prova', 'Uma pergunta sobre a prova')],
+    corpo: (c) => [
+      J(usaProva(c), `${cap(provaDela(c))} passou. Antes de mais nada: parabéns por ter chegado lá, com tudo o que a rotina pede.`),
+      'Tenho uma pergunta só: como foi estar lá, durante a prova? Não o resultado, a sensação. Isso diz muito sobre o que vem pela frente, e sobre o que o site pode melhorar.',
+      'Se a próxima etapa já tiver data, o cronograma pode ser refeito com ela quando você quiser. Sem pressa nenhuma.',
+      'Fico por aqui, esperando notícias.',
+      c.fecho(),
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, 'os dias depois da prova', 'Os dias depois da prova')],
+    corpo: (c) => [
+      J(usaProva(c), 'Escrevo uns dias depois de propósito: passou a correria, e ainda dá para lembrar de tudo.'),
+      `Como foi ${provaDela(c)}? Fiquei com vontade de saber.`,
+      'Se foi bem, quero comemorar junto. Se foi difícil, quero ouvir, e talvez ajudar a pensar no próximo passo. Nos dois casos, o que você construiu estudando continua inteiro.',
+      'É só responder este e-mail, do jeito que quiser.',
+    ] },
+]
+
+/** Aniversário (data de nascimento do cadastro): curta, sem convite, sem link. */
+const aniversario: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'feliz aniversário', 'Feliz aniversário'), nm(c, 'hoje o dia é seu', 'Hoje o dia é seu')],
+    corpo: (c) => [
+      J(usaAniversario(c), 'Hoje é o seu aniversário, e eu não podia deixar passar. Parabéns, de coração.'),
+      'Que o ano que começa traga dias mais leves, plantões mais tranquilos e, quando chegar a hora, a aprovação que você está construindo.',
+      'Hoje não tem questão, não tem cronograma, não tem nada para fazer aqui. É dia de comemorar com quem você gosta.',
+      'O estudo espera, e fica do jeito que você deixou.',
+    ],
+    ps: () => 'P.S.: se for comemorar com bolo, guarda um pedaço por mim.' },
+  { id: 'v2', assuntos: (c) => [nm(c, 'um abraço de aniversário', 'Um abraço de aniversário')],
+    corpo: (c) => [
+      J(usaAniversario(c), 'Passando só para te desejar um feliz aniversário.'),
+      'Sei que a residência não para nem no dia do aniversário, então espero que hoje sobre pelo menos um tempinho só seu: uma refeição sem pressa, uma ligação para alguém querido, uma noite de sono inteira.',
+      c.dez ? `E já que aniversário é dia de balanço: ${Q(c.r)} respondidas até aqui. Isso é muito estudo, e merece ser lembrado hoje também.` : 'Fico contente de ter você por aqui neste ano.',
+      'Que o ano novo da sua vida seja generoso com você.',
+    ],
+    ps: () => 'P.S.: hoje, nada de questão. Amanhã a gente volta.' },
+  { id: 'v3', assuntos: (c) => [nm(c, 'parabéns pelo seu dia', 'Parabéns pelo seu dia')],
+    corpo: (c) => [
+      J(usaAniversario(c), 'Parabéns pelo seu dia.'),
+      'Escrevo curto de propósito, porque hoje não é dia de ler e-mail longo: é dia de comemorar.',
+      'Desejo um ano com mais tempo livre do que a residência costuma deixar, com gente boa por perto e com a prova indo do jeito que você merece.',
+      'E se em algum momento do ano o estudo pesar, lembra que eu estou por aqui.',
+    ],
+    ps: () => 'P.S.: aproveita o dia. O site fica do jeito que você deixou.' },
+  { id: 'v4', assuntos: (c) => [nm(c, 'hoje é dia de comemorar', 'Hoje é dia de comemorar')],
+    corpo: (c) => [
+      J(usaAniversario(c), 'Vi que hoje é o seu aniversário, e quis te mandar um abraço daqui.'),
+      'Na correria da residência, a gente às vezes esquece de parar e reparar no caminho. Então hoje eu reparo por você: estudar com a rotina que você tem já é uma conquista.',
+      'Que este ano traga descanso, gente querida por perto e boas notícias.',
+      c.fecho(),
+      'Feliz aniversário.',
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, 'um café por mim hoje', 'Um café por mim hoje')],
+    corpo: (c) => [
+      J(usaAniversario(c), 'Feliz aniversário. Hoje o café, o bolo e o descanso são por minha conta, pelo menos em pensamento.'),
+      'Fico contente de acompanhar o seu estudo por aqui, e mais ainda de poder te desejar um ano bom de verdade: com tempo para você, com sono em dia e com a prova correndo bem.',
+      'O site não vai a lugar nenhum. Hoje, o dia é seu.',
+      'Comemora com quem você gosta.',
+    ] },
+]
+
+/** Um ano (ou mais) de Orto Questões, no dia em que a conta faz aniversário. Sem convite. */
+const um_ano: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, `${anosTexto(c)} de Orto Questões`, `${cap(anosTexto(c))} de Orto Questões`)],
+    corpo: (c) => [
+      `Hoje faz ${anosTexto(c)} que você criou a sua conta no Orto Questões, e eu quis marcar a data com você.`,
+      c.dez ? `Nesse tempo foram ${Q(c.r)}, cada uma encaixada num intervalo da rotina. Isso é muito estudo de quem tem pouco tempo.` : 'Nesse tempo, os primeiros passos já foram dados, e começar é sempre a parte mais difícil.',
+      c.obs(1, ['melhorArea', 'maisEstudada', 'resumos', 'ranking']),
+      'Obrigado por ter confiado ao site uma parte tão importante da sua vida. Ele mudou muito nesse tempo, e boa parte do que mudou veio de quem estuda aqui e escreve para mim.',
+      c.fecho(),
+    ] },
+  { id: 'v2', assuntos: (c) => [nm(c, `hoje faz ${anosTexto(c)}`, `Hoje faz ${anosTexto(c)}`)],
+    corpo: (c) => [
+      `Uma data diferente hoje: a sua conta no Orto Questões faz ${anosTexto(c)}. É esse o tempo que a gente se conhece por aqui.`,
+      c.dez ? `Olhando para trás: ${jaFez(c)}, um Caderno de erros cheio de coisas que hoje você já sabe, e a Revisão trazendo de volta na hora certa.` : 'Olhando para trás, o mais importante já aconteceu: você escolheu um lugar para estudar.',
+      'Se eu pudesse te dar um presente nesta data, seria uma ideia: escolha o tema que mais te incomodava no começo e faça dez questões dele. É impressionante ver o quanto ele mudou.',
+      `Para o presente: ${c.link('treinar')}`,
+    ],
+    ps: () => 'P.S.: obrigado por estar aqui. Quem estuda e escreve para mim ajuda a construir o site.' },
+  { id: 'v3', assuntos: (c) => [nm(c, 'obrigado pelo tempo junto', 'Obrigado pelo tempo junto')],
+    corpo: (c) => [
+      momento(c),
+      `Hoje a sua conta faz ${anosTexto(c)}. Parece pouco no calendário, mas na residência é muita coisa: plantões, rodízios, provas, mudanças.`,
+      c.obs(2, ['melhorArea', 'maisEstudada', 'resumos', 'flashcards', 'sequencia']) ?? `${guardado(c)}, como um diário do seu estudo.`,
+      'Obrigado por cada sessão nesse tempo. Eu sigo melhorando questões e comentários toda semana, pensando em quem estuda como você.',
+      c.fecho(),
+    ] },
+  { id: 'v4', assuntos: (c) => [nm(c, 'uma data que eu quis lembrar', 'Uma data que eu quis lembrar')],
+    corpo: (c) => [
+      `Há ${anosTexto(c)} você criou a sua conta por aqui. Não é uma data que aparece no calendário de ninguém, mas eu quis lembrar.`,
+      'O que eu mais gosto de ver nessas datas é o caminho: quem chegou sem saber por onde começar e hoje abre o site já sabendo o que fazer.',
+      c.dez ? `No seu caso, são ${Q(c.r)} nesse caminho.` : null,
+      c.tempo(),
+      'Se quiser me contar como foi esse tempo, o que ajudou e o que faltou, é só responder. Eu leio tudo.',
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, `${anosTexto(c)} e contando`, `${cap(anosTexto(c))} e contando`)],
+    corpo: (c) => [
+      `Hoje são ${anosTexto(c)} de Orto Questões, e esta carta é só para dizer obrigado.`,
+      'Sei que estudar para prova de título é uma maratona, e que ninguém corre maratona sem dia ruim. Ficar por aqui nos dias bons e nos ruins é o que faz a diferença.',
+      c.obs(1),
+      'Que o próximo ano traga a prova que você está esperando e o tempo livre que a residência costuma roubar.',
+      c.fecho(),
+    ] },
+]
+
+/** Quem a pessoa indicou chegou a 20 questões. */
+const indicacao_deu_certo: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'sua indicação deu certo', 'Sua indicação deu certo'), nm(c, 'obrigado pela indicação', 'Obrigado pela indicação')],
+    corpo: (c) => [
+      'Uma notícia boa: a pessoa que você indicou já passou de 20 questões no Orto Questões. A indicação contou.',
+      'Indicar um site de estudo é emprestar um pouco da própria confiança, e eu levo isso a sério. Obrigado.',
+      c.campanha.cortesia ? 'Os dias de cortesia da indicação aparecem na sua página de indicações assim que você abrir.' : null,
+      `Fica aqui: ${c.link('indicar')}`,
+      c.fecho(),
+    ] },
+  { id: 'v2', assuntos: (c) => [nm(c, 'alguém começou por sua causa', 'Alguém começou por sua causa')],
+    corpo: (c) => [
+      momento(c),
+      'Quem você indicou para o Orto Questões já está estudando de verdade: passou de 20 questões. Quis te contar, porque foi você que abriu essa porta.',
+      'Estudar junto, mesmo de longe, deixa a preparação mais leve. Quem sabe vocês trocam uma questão difícil de vez em quando.',
+      c.campanha.cortesia ? `Os dias de cortesia que a indicação dá aparecem aqui: ${c.link('indicar')}` : `Se quiser ver as suas indicações: ${c.link('indicar')}`,
+    ],
+    ps: () => 'P.S.: obrigado pela confiança. É de indicação em indicação que o site cresce.' },
+  { id: 'v3', assuntos: (c) => [nm(c, 'uma boa notícia sobre a indicação', 'Uma boa notícia sobre a indicação')],
+    corpo: (c) => [
+      'Uma boa notícia: a sua indicação deu certo. A pessoa que entrou pelo seu convite já respondeu mais de 20 questões.',
+      'O site é um projeto independente, e quase tudo o que ele cresce vem de gente como você contando para quem está na mesma prova. Fico muito grato.',
+      c.obs(1, ['melhorArea', 'ranking', 'sequencia']),
+      c.campanha.cortesia ? `Os dias da indicação ficam na página de indicações: ${c.link('indicar')}` : `Suas indicações ficam aqui: ${c.link('indicar')}`,
+      c.fecho(),
+    ] },
+  { id: 'v4', assuntos: (c) => [nm(c, 'obrigado por espalhar a palavra', 'Obrigado por espalhar a palavra')],
+    corpo: (c) => [
+      'Passando para agradecer: quem você indicou chegou a 20 questões, e isso quer dizer que pegou o ritmo.',
+      'É o tipo de notícia que eu mais gosto de receber, porque mostra que o site ajudou alguém a encaixar o estudo na rotina, e que foi você quem mostrou o caminho.',
+      c.tempo(),
+      `Se quiser indicar mais alguém que está na mesma prova, o seu link continua valendo: ${c.link('indicar')}`,
+      c.fecho(),
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, 'a indicação contou', 'A indicação contou')],
+    corpo: (c) => [
+      momento(c),
+      'Uma linha só para dizer obrigado: a pessoa que você indicou já passou das 20 questões, então a indicação contou.',
+      c.campanha.cortesia ? 'Os dias de cortesia que vêm com ela aparecem na sua página de indicações.' : 'Fico contente de ver o site chegando a mais gente pelas suas mãos.',
+      `Fica aqui: ${c.link('indicar')}`,
+      'Se você conhece mais alguém estudando para a mesma prova, pode mandar o seu link. E se preferir não, tudo bem também.',
+    ] },
+]
+
+/** Saiu um resumo novo na área que a pessoa mais estuda (semanal, só quem aceitou novidades). */
+const resumo_do_tema: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'saiu um resumo do seu tema', 'Saiu um resumo do seu tema'), areaResumo(c) && nm(c, `um resumo novo de ${areaResumo(c)}`, `Um resumo novo de ${areaResumo(c)}`)],
+    corpo: (c) => [
+      areaResumo(c) ? `Saiu um resumo novo na Biblioteca, e lembrei de você: é de ${areaResumo(c)}, a área que você mais tem estudado.` : 'Saiu um resumo novo na Biblioteca, e lembrei de você: é do tema que você mais tem estudado.',
+      tituloResumo(c) ? `Chama "${tituloResumo(c)}". Como os outros, saiu de um capítulo de livro e traz no meio do texto as questões que já caíram, para resolver ali mesmo.` : 'Como os outros, ele saiu de um capítulo de livro e traz no meio do texto as questões que já caíram, para resolver ali mesmo.',
+      'Uma sugestão de uso: leia uma seção por vez, no intervalo, e faça as questões dela logo em seguida. É a combinação que mais fixa.',
+      `Para abrir: ${c.link('resumo')}`,
+      c.fecho(),
+    ] },
+  { id: 'v2', assuntos: (c) => [nm(c, 'um resumo novo para o seu tema', 'Um resumo novo para o seu tema')],
+    corpo: (c) => [
+      momento(c),
+      `Entrou na Biblioteca esta semana ${oResumo(c)}${areaResumo(c) ? `, de ${areaResumo(c)}` : ''}, e você foi uma das primeiras pessoas em quem pensei, porque é o tema que mais aparece no seu estudo.`,
+      'Ele foi feito para quem tem pouco tempo: o capítulo na ordem em que a prova cobra, com o que já caiu marcado ano a ano.',
+      `Fica aqui: ${c.link('resumo')}`,
+      'Se ler, me conta o que achou. É um formato novo, e a sua opinião vale muito.',
+    ] },
+  { id: 'v3', assuntos: (c) => [nm(c, 'para ler no intervalo', 'Para ler no intervalo')],
+    corpo: (c) => [
+      `Uma novidade pequena, mas com a sua cara: entrou na Biblioteca ${oResumo(c)}${areaResumo(c) ? `, de ${areaResumo(c)}` : ', do tema que você mais estuda'}.`,
+      'Se o tempo estiver curto, leia só a primeira seção hoje. O resumo guarda onde você parou, e no dia seguinte é só continuar.',
+      c.tempo(),
+      `Para abrir: ${c.link('resumo')}`,
+      c.fecho(),
+    ] },
+  { id: 'v4', assuntos: (c) => [nm(c, 'lembrei de você nesta semana', 'Lembrei de você nesta semana')],
+    corpo: (c) => [
+      J('Lembrei de você nesta semana, quando saiu', oResumo(c), areaResumo(c) ? `de ${areaResumo(c)}.` : 'no tema que você mais estuda.'),
+      c.obs(1, ['maisEstudada', 'melhorArea', 'resumos']),
+      'O jeito que mais rende: ler o resumo e fazer as questões do tema na mesma sessão. O que foi lido vira resposta certa mais rápido.',
+      `Fica aqui: ${c.link('resumo')}`,
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: este e-mail só vai para quem aceitou receber novidades. Se preferir parar, o link no fim desliga.' },
+  { id: 'v5', assuntos: (c) => [nm(c, 'uma leitura curta para a semana', 'Uma leitura curta para a semana')],
+    corpo: (c) => [
+      momento(c),
+      `Saiu ${oResumo(c)} na Biblioteca${areaResumo(c) ? `, em ${areaResumo(c)}` : ''}. Como esse é o tema que você mais estuda, achei que fosse gostar de saber primeiro.`,
+      'Um detalhe que eu gosto nos resumos: as questões reais aparecem no meio do texto, com botão para resolver. Ler e treinar viram uma coisa só.',
+      `Para abrir: ${c.link('resumo')}`,
+      c.fecho(),
+    ] },
+]
+
 export const VERSOES: Record<string, Versao[]> = {
   'ativo:0-10': ativo_0_10, 'ativo:10-20': ativo_10_20, 'ativo:20-30': ativo_20_30, 'ativo:30-40': ativo_30_40, 'ativo:40-60': ativo_40_60,
   'ativo:60-70': ativo_60_70, 'ativo:70-80': ativo_70_80, 'ativo:80-90': ativo_80_90, 'ativo:90-100': ativo_90_100,
   nunca_comecou, boas_vindas, comecando, comecou_parou, pausa, sumiu, obrigado_assinatura, convite_20, convite_50,
   reta_final, marco, opiniao, indicar, cronograma, pix_3_dias, pix_hoje, relatorio,
   boas_vindas_dia0, primeiras_10, voltou, cronograma_pronto, pagamento_aprovado, obrigado_tempo,
+  assinou_sem_cronograma, assinante_parado_7, simulado_resultado, vespera_prova, depois_prova, aniversario, um_ano, indicacao_deu_certo, resumo_do_tema,
 }
