@@ -146,7 +146,7 @@ decisão (quando operar, qual técnica, qual limite).
 | 19 | Moberg | defeitos de polpa do polegar até cerca de 2 cm | número |
 | 20 | Luxação congênita da cabeça do rádio | linha radiocapitelar não passa pelo capítulo; associações sindrômicas | afirmativas |
 | 21 | Parafusos na falange proximal | mínimo de parafusos e distância da borda | número |
-| 22 | Rizartrose | Grind provoca dor por compressão e rotação (ou subluxação, conferir) | exame |
+| 22 | Rizartrose | Grind: compressão axial e rotação (o que provoca subluxação são os testes de translação e de alavanca) | exame |
 | 23 | Fáscia palmar | banda central = extensão do palmar longo; ausente no polegar | anatomia |
 | 24 | Retalhos | braço lateral pela colateral radial posterior | afirmativas |
 | 25/99 | Mason II e III | lesões ligamentares associadas são comuns (lateral e medial) | fato |
@@ -173,7 +173,7 @@ decisão (quando operar, qual técnica, qual limite).
 | 46 | Doyle | IV C: fragmento acima de 50% com subluxação volar | classificação |
 | 47 | Enxerto ósseo vascularizado | defeitos acima de 6 a 8 cm | número |
 | 48 | Placa volar e FLP | Soong 2, distal à watershed, sem cobertura do PQ | caso longo |
-| 49 | SDCR | dor por estímulo normalmente indolor = alodinia (atenção ao enunciado) | definição |
+| 49 | SDCR | dor por estímulo normalmente indolor = alodinia; "reação anormalmente dolorosa" (texto do original) é hiperpatia pela IASP | definição |
 | 50 | AR e déficit de extensão | ruptura extensora, subluxação MCF, paralisia do NIP | lista |
 | 51 | Escápula alada na obstétrica | torácico longo (C5 a C7): lesão proximal | raciocínio |
 | 52 | Reimplante digital | AAS é a medicação mais usada | fato |
@@ -186,7 +186,7 @@ decisão (quando operar, qual técnica, qual limite).
 | 59 | Landsmeer | da bainha flexora volar à IFP até o extensor terminal | anatomia |
 | 60 | Madelung (Vickers) | gordura autóloga no defeito da fisiólise | técnica |
 | 61 | Sarcoma na falange média | margem: amputação do raio (ou no nível adequado, conferir) | oncologia |
-| 62 | Garcia-Elias | estágio 5 irredutível com cartilagem normal: tenodese | algoritmo |
+| 62 | Garcia-Elias | o que separa o estágio 4 (redutível: tenodese) do 5 (irredutível com cartilagem normal: artrodese intercárpica parcial) | algoritmo |
 | 63 | Cooney | clinodactilia com polidactilia = complexa | classificação |
 | 64 | Cistos | dorsal sobre o SL; pedículo até a origem evita recidiva | afirmativas |
 | 65 | Artrodese MCF | posição e consolidação | afirmativas |
@@ -215,7 +215,7 @@ decisão (quando operar, qual técnica, qual limite).
 | 89 | Escafoide conservador | fraturas em crianças | indicação |
 | 90 | Ulnar alto | NIA (ramo do pronador quadrado) para o ramo motor do ulnar | transferência |
 | 91 | LCU agudo | abertura sem ponto final firme | exame |
-| 92 | Monteggia | Bado I: anterior (o original diz anterolateral) | fato |
+| 92 | Monteggia | Bado I: ápice da ulna e cabeça do rádio anteriores (o original só oferecia direções combinadas) | fato |
 | 93 | Sindactilia polegar-indicador | separar cedo, entre 3 e 6 meses | conduta |
 | 94 | Leddy-Packer IV | fixar o osso e reinserir o FDP | caso longo |
 | 95 | Espaço de Parona | entre o pronador quadrado e os flexores | anatomia |
@@ -226,5 +226,58 @@ decisão (quando operar, qual técnica, qual limite).
 "Conferir" na tabela marca os pontos em que a resposta depende de um detalhe que deve ser confirmado no
 Green antes de virar fato no comentário.
 
-## Lições dos lotes (preencher a cada entrega)
-- (em andamento)
+## Lições dos lotes (18/10/2026, as 100 questões publicadas)
+
+As 98 questões únicas do SIMÃO 2026 viraram 100 OrtoQuestões Simulados: cada par repetido rendeu duas
+questões de ângulos diferentes. Estão em `mao-1719` a `mao-1810` (92) e `ombro-cotovelo-0645` a `0652`
+(8), com `prova: "SIMÃO"`. Gabarito final: A 25, B 25, C 25, D 25. As anotações completas de cada frente,
+com o que conferir no Green, estão em [simao-notas/](simao-notas/):
+
+| Frente | Assuntos | Notas |
+|---|---|---|
+| A | congênitas, embriologia, tumores e cistos, infecção, SDCR, queimadura, anestesia | [grupo-A.md](simao-notas/grupo-A.md) |
+| B | nervos, plexo, obstétrica, transferências, espasticidade, tetraplegia | [grupo-B.md](simao-notas/grupo-B.md) |
+| C | anatomia, retalhos, enxertos, microcirurgia, reimplante | [grupo-C.md](simao-notas/grupo-C.md) |
+| D | carpo, rádio distal, TFCC, cotovelo | [grupo-D.md](simao-notas/grupo-D.md) |
+| E | tendões, dedos, metacarpos e falanges, artrose e artrodese, mão reumatoide, Dupuytren, ligamentos | [grupo-E.md](simao-notas/grupo-E.md) |
+
+### O que aprendemos
+- **Cerca de um quarto do original tinha defeito**: mais de uma resposta defensável (2, 5, 81, 95),
+  definição trocada (49: o texto é de hiperpatia), espécie errada (75: Pasteurella, não Pseudomonas),
+  tipo inexistente na classificação (55: Kurtzman e Stern não tem tipo IV), número sem fonte (17, 42, 56),
+  epônimo grafado errado (31: Berrettini). Antes de escrever a partir de um original, **resolva a
+  questão pela bibliografia** e só depois reescreva.
+- **Classificações com numeração que varia entre autores** (Thomas II e III, capitato 1 a 4, Shinoda):
+  pergunte o que é estável (o tipo I de Thomas, o padrão mais comum do capitato, a conduta) e explique a
+  divergência no comentário.
+- **Números finos** (percentuais de variação anatômica, ângulos de artrodese, limites de isquemia, janela
+  do Dupuytren): o comentário dá a faixa e avisa que varia entre séries; a resposta não deve depender de
+  um número que o Green não traga.
+- **Casos longos**: a alternativa errada traz o diagnóstico certo com a conduta ou a justificativa errada.
+  É o formato que mais discrimina e o que mais vale imitar nas questões novas.
+- **Checagem de cópia**: nenhuma sequência de 7 palavras do original sobreviveu nos enunciados e nas
+  alternativas (verificado automaticamente). Nomes de transferências ("pronador redondo para o extensor
+  radial curto do carpo") são exceção inevitável.
+- **Formato do comentário**: aula a partir do zero, um parágrafo "Por que esta questão foi criada" e o
+  fecho "Na prova:". Mediana de cerca de 4.200 caracteres.
+
+### A conferir quando o Green chegar
+Cada nota de frente tem a lista. Os principais:
+- teste do EUC (punho em flexão ou extensão);
+- limite do Moberg (1,5 ou 2 cm);
+- janela de correção do Dupuytren e o tecido do ligamento de Cleland na dermofasciectomia;
+- Schmitt padrão B;
+- hook e trampolim na lesão foveal isolada;
+- escada da paralisia cerebral (o "primeiro nível");
+- perda de movimento após artrodese escafocapitato;
+- enxerto de nervo em 3 a 4 semanas no trauma grave;
+- Cooney (corte de 45°);
+- polidactilia central (dedo mais duplicado);
+- separação da sindactilia de borda (3 a 6 meses).
+
+### Receita para as próximas (a partir do Green)
+1. Escolha um capítulo do Green e liste o que o SIMÃO cobrou dele (tabela acima).
+2. Para cada fato cobrado, escreva uma questão nova em outro ângulo, no formato que a banca usa para o
+   assunto (epônimo, classificação, número ou caso).
+3. Use os distratores da família certa (epônimos vizinhos, números vizinhos, inversões).
+4. Lote com `PROVA = "SIMÃO"` e `AREA = "cirurgia-mao"`; `--conferir`; aplicar; validar.
