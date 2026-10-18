@@ -236,6 +236,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     return tentativas ? Math.round((acertos / tentativas) * 100) : null
   }, [contexto.respondidas])
 
+  const primeiroNome = String(conta?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
   const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; preset: Partial<Filtros> }[] = [
     { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, preset: { situacao: 'revisarHoje' } },
     { titulo: 'Novas', icone: 'alvo', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
@@ -401,7 +402,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         <div className="tn-heroi__texto">
           <p className="tr-heroi__selo">Montar sessão</p>
           <h1 id="tn-titulo">Treinar</h1>
-          <p>Escolha a prova, o assunto e quais questões. Ou comece agora com 10.</p>
+          <p>{fraseTreinar(primeiroNome, Object.keys(contexto.respondidas).length, desempenhoAnterior, gerais?.porSituacao.revisarHoje ?? 0)}</p>
           <a className="tr-heroi__link" href={href('/cronograma')}>
             <Icone nome="rota" tamanho={15} />
             {cronograma.calculo?.hoje ? <>Hoje no cronograma: {cronograma.calculo.hoje.nome} · {cronograma.calculo.feitasHoje} de {cronograma.calculo.metaDiaria}</> : 'Prefere um plano pronto? Use o cronograma'}
@@ -744,4 +745,13 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       </div>
     </div>
   )
+}
+
+/** Frase do topo: o primeiro nome e o que os dados da pessoa dizem, no tom dos e-mails. */
+function fraseTreinar(nome: string, respondidas: number, acerto: number | null, revisarHoje: number): string {
+  const abertura = nome ? `${nome}, ` : ''
+  if (revisarHoje >= 10) return `${abertura}${revisarHoje.toLocaleString('pt-BR')} questões estão no ponto de revisão hoje. Comece por elas ou monte a sua sessão.`
+  if (respondidas >= 10 && acerto !== null && acerto >= 50) return `${abertura}você já respondeu ${respondidas.toLocaleString('pt-BR')} questões e acerta ${acerto}%. Bora para a próxima sessão?`
+  if (respondidas >= 10) return `${abertura}você já respondeu ${respondidas.toLocaleString('pt-BR')} questões. Cada uma deixa a próxima mais fácil.`
+  return nome ? `${nome}, escolha a prova, o assunto e quais questões. Ou comece agora com 10.` : 'Escolha a prova, o assunto e quais questões. Ou comece agora com 10.'
 }
