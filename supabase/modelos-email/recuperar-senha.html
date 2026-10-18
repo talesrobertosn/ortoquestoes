@@ -4,24 +4,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
-<title>Sua nova senha</title>
+<title>Sua senha nova</title>
 </head>
-<body style="margin:0; padding:0; background-color:#ffffff;">
+<body style="margin:0; padding:0; background-color:#f1f3f2;">
 <!-- Pré-cabeçalho: o texto que aparece ao lado do assunto na caixa de entrada. -->
 <div style="display:none; max-height:0; overflow:hidden; opacity:0;">Acontece com todo mundo. Um toque e você escolhe uma senha nova.</div>
-<div style="max-width:560px; padding:16px 14px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.55; color:#222222;">
-  <p style="margin:0 0 14px 0;">{{ if .Data.nome }}{{ .Data.nome }}, tudo bem?{{ else }}Oi, tudo bem?{{ end }}</p>
-  <p style="margin:0 0 14px 0;">Esqueceu a senha? Acontece com todo mundo, principalmente com quem tem o dia tomado pelo hospital. Este e-mail resolve isso em um toque.</p>
-  <p style="margin:0 0 20px 0;">
-    <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=recovery" target="_blank" style="display:inline-block; padding:12px 22px; background-color:#14655e; color:#ffffff; border-radius:8px; font-weight:bold; text-decoration:none; font-size:15px;">Escolher uma senha nova</a>
-  </p>
-  <p style="margin:0 0 14px 0; font-size:13px; line-height:1.5; color:#5b686c;">Se o botão não abrir, copie e cole este endereço no navegador:<br>
-    <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=recovery" target="_blank" style="color:#14655e; word-break:break-all;">{{ .SiteURL }}/?token_hash={{ .TokenHash }}&amp;type=recovery</a></p>
-  <p style="margin:0 0 14px 0;">O link vale por pouco tempo, por segurança. Se ele expirar, é só pedir outro na tela de entrada; não tem problema nenhum.</p>
-  <p style="margin:0 0 14px 0;">Tudo o que você fez no site continua guardado do jeito que você deixou: as questões, o Caderno de erros, a fila da Revisão. Trocar a senha não mexe em nada disso.</p>
-  <p style="margin:0 0 14px 0;">Um abraço,<br>Tales, do Orto Questões</p>
-  <p style="margin:0 0 14px 0;">P.S.: se você não pediu uma senha nova, pode ignorar este e-mail. Sua senha atual continua valendo, e ninguém entra na sua conta sem este link.</p>
-  <p style="margin:28px 0 0 0; font-size:12px; line-height:1.4; color:#888888;">Você recebeu este e-mail porque alguém pediu uma senha nova para este endereço no Orto Questões.</p>
-</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1f3f2;">
+  <tr>
+    <td align="center" style="padding:32px 16px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;">
+        <tr>
+          <td align="center" style="padding:0 0 20px 0; font-family:-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:20px; font-weight:700; color:#14655e;">
+            Orto Questões
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color:#ffffff; border:1px solid #dce2e0; border-radius:12px; padding:40px 36px; font-family:-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#12181a;">
+            <h1 style="margin:0 0 16px 0; font-size:24px; line-height:1.3; font-weight:700; color:#12181a;">
+              {{ if .Data.nome }}{{ .Data.nome }}, vamos trocar a sua senha{{ else }}Vamos trocar a sua senha{{ end }}
+            </h1>
+            <p style="margin:0 0 16px 0; font-size:16px; line-height:1.6;">
+              Esqueceu a senha? Acontece com todo mundo, principalmente com quem tem o dia tomado pelo hospital. Este e-mail resolve isso em um toque.
+            </p>
+            <p style="margin:0 0 28px 0; font-size:16px; line-height:1.6;">
+              Tudo o que você fez no site continua guardado do jeito que você deixou: as questões, o Caderno de erros, a fila da Revisão. Trocar a senha não mexe em nada disso.
+            </p>
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 28px auto;">
+              <tr>
+                <td align="center" bgcolor="#14655e" style="border-radius:8px;">
+                  <a href="{{ .SiteURL }}/?conta=recuperar&token_hash={{ .TokenHash }}&type=recovery" target="_blank" style="display:inline-block; padding:14px 32px; font-family:-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:16px; font-weight:700; color:#ffffff; text-decoration:none; border-radius:8px;">Escolher uma senha nova</a>
+                </td>
+              </tr>
+            </table>
+            <p style="margin:0 0 8px 0; font-size:14px; line-height:1.6; color:#5b686c;">Se o botão não funcionar, copie e cole este endereço no navegador:</p>
+            <p style="margin:0 0 28px 0; font-size:13px; line-height:1.5; word-break:break-all;">
+              <a href="{{ .SiteURL }}/?conta=recuperar&token_hash={{ .TokenHash }}&type=recovery" target="_blank" style="color:#14655e; text-decoration:underline;">{{ .SiteURL }}/?conta=recuperar&amp;token_hash={{ .TokenHash }}&amp;type=recovery</a>
+            </p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px 0;">
+              <tr>
+                <td style="background-color:#f7f9f8; border:1px solid #dce2e0; border-radius:8px; padding:16px 18px; font-size:14px; line-height:1.6; color:#12181a;">
+                  <strong>Por segurança:</strong> este link vale por pouco tempo e só pode ser usado uma vez. Se ele expirar, é só pedir outro na tela de entrada. Ninguém do Orto Questões pede a sua senha.
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none; border-top:1px solid #dce2e0; margin:0 0 20px 0;">
+            <p style="margin:0 0 20px 0; font-size:14px; line-height:1.6; color:#5b686c;">
+              Não pediu uma senha nova? Pode ignorar este e-mail com tranquilidade: a sua senha atual continua valendo e nada muda na sua conta.
+            </p>
+            <p style="margin:0; font-size:16px; line-height:1.6;">Um abraço,<br><strong>Tales, do Orto Questões</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding:20px 16px 0 16px; font-family:-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:12px; line-height:1.6; color:#5b686c;">
+            Você recebeu este e-mail porque foi pedida uma senha nova para a conta ligada a este endereço no Orto Questões.<br>
+            Questões de ortopedia para TEOT, TARO, ENARE R4 e outras provas.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 </body>
 </html>
