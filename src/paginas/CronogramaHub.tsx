@@ -261,11 +261,13 @@ export function ComoFuncionaCompleto({ aberto, plano }: { aberto: boolean; plano
     { icone: 'lapis', titulo: 'Intensidade e ajustes', texto: <>Leve cobre metade das questões que faltam, firme 80% e completo todas; cada uma mostra o tempo por dia com o seu ritmo. Data, folgas, dias leves, área para começar e áreas dominadas mudam quando quiser, no botão "Ajustar" do topo (em "Onde você está").</> },
   ]
   return (
-    <details className="cartao cartao__corpo pe-entenda" open={aberto}>
-      <summary><Icone nome="interrogacao" tamanho={18} /> Como o seu cronograma funciona</summary>
-      <ul className="pe-entenda__lista">
-        {itens.map((i) => <li key={i.titulo}><span className="pe-entenda__icone" aria-hidden="true"><Icone nome={i.icone} tamanho={18} /></span><span><strong>{i.titulo}</strong><small>{i.texto}</small></span></li>)}
-      </ul>
+    <details className="cp-recolhido pe-entenda" open={aberto}>
+      <summary><span className="cp-recolhido__icone" aria-hidden="true"><Icone nome="interrogacao" tamanho={18} /></span><span>Como o seu cronograma funciona</span><Icone nome="baixo" tamanho={16} /></summary>
+      <div className="cp-recolhido__corpo">
+        <ul className="pe-entenda__lista">
+          {itens.map((i) => <li key={i.titulo}><span className="pe-entenda__icone" aria-hidden="true"><Icone nome={i.icone} tamanho={18} /></span><span><strong>{i.titulo}</strong><small>{i.texto}</small></span></li>)}
+        </ul>
+      </div>
     </details>
   )
 }
