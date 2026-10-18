@@ -82,3 +82,24 @@ export function guardarVitrine(v: Vitrine) {
     localStorage.setItem(CHAVE, JSON.stringify({ ...ultima, ...v.indices }))
   } catch { /* sem armazenamento: só sorteia */ }
 }
+
+/**
+ * Nome de quem já entrou neste aparelho (adendo do Tales, 18/10/2026: "citar o nome da pessoa sempre que possível").
+ * Guarda só o primeiro nome, junto do e-mail da conta: a tela de entrar cumprimenta pelo nome apenas enquanto o
+ * e-mail no campo for o mesmo (outra pessoa digitando outro e-mail não vê o nome de ninguém).
+ */
+const CHAVE_NOME = 'oq:vitrine-acesso:nome'
+
+export function lembrarNome(email: string, nome: string) {
+  const primeiro = nome.trim().split(/\s+/)[0]?.slice(0, 40) ?? ''
+  const conta = email.trim().toLowerCase()
+  if (!primeiro || !conta) return
+  try { localStorage.setItem(CHAVE_NOME, JSON.stringify({ email: conta, nome: primeiro })) } catch { /* sem armazenamento */ }
+}
+
+export function nomeLembrado(email: string): string {
+  try {
+    const dados = JSON.parse(localStorage.getItem(CHAVE_NOME) ?? 'null') as { email?: unknown; nome?: unknown } | null
+    return dados && typeof dados.nome === 'string' && dados.email === email.trim().toLowerCase() ? dados.nome : ''
+  } catch { return '' }
+}
