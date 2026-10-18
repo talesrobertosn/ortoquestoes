@@ -79,6 +79,13 @@ async function sincronizarPix(pagamento) {
   return { pedido, status: await atualizacao.json() };
 }
 
+// supabase/functions/_shared/cartas.ts
+var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto", "pagamento_aprovado", "obrigado_tempo"];
+var TIPOS_CAMPANHAS_DIARIAS = ["assinou_sem_cronograma", "assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema"];
+
+// supabase/functions/_shared/modelo-email.ts
+var TIPOS_AUTOMATICOS = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS];
+
 // supabase/functions/_shared/email.ts
 var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
 async function pedirAutomaticoServidor(idUsuario, tipo, extra = {}) {

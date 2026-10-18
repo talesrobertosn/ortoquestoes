@@ -6,11 +6,11 @@
  */
 import { SITE } from '../../config'
 import {
-  FAIXAS, ROTULO_FAIXA, TIPOS, TIPOS_AUTOMATICOS_NOVOS, TIPOS_TRANSACIONAIS, gerarCarta, sementeDe, versoesDe,
+  FAIXAS, ROTULO_FAIXA, TIPOS, TIPOS_AUTOMATICOS_NOVOS, TIPOS_CAMPANHAS_DIARIAS, TIPOS_TRANSACIONAIS, gerarCarta, sementeDe, versoesDe,
   type Carta, type Faixa, type OpcoesCarta, type PerfilCarta, type TipoCarta,
 } from './modelosEmail'
 
-export type GrupoCatalogo = 'situacao' | 'faixa' | 'convite' | 'pessoal' | 'automatico' | 'novo'
+export type GrupoCatalogo = 'situacao' | 'faixa' | 'convite' | 'pessoal' | 'automatico' | 'novo' | 'campanha'
 export const GRUPOS: Array<{ id: GrupoCatalogo; rotulo: string; descricao: string }> = [
   { id: 'situacao', rotulo: 'Situações', descricao: 'A carta que o motor escolhe sozinho pela situação da pessoa (ficha e lote).' },
   { id: 'faixa', rotulo: 'Faixas de acerto', descricao: 'Estudando: uma voz para cada faixa de acerto, com 30 questões ou mais.' },
@@ -18,9 +18,12 @@ export const GRUPOS: Array<{ id: GrupoCatalogo; rotulo: string; descricao: strin
   { id: 'pessoal', rotulo: 'Pessoais', descricao: 'Escritas pelo administrador a partir da ficha, com a espinha nova em volta.' },
   { id: 'automatico', rotulo: 'Automáticos', descricao: 'Saem sozinhas: lembretes, Pix, resumos e marcos.' },
   { id: 'novo', rotulo: 'Novos (17/10, sem SQL)', descricao: 'Os seis disparados por um acontecimento no site ou no pagamento.' },
+  { id: 'campanha', rotulo: 'Campanhas diárias (parte 31)', descricao: 'O banco escolhe quem recebe (candidatos_<tipo>) e o agendador manda, todo dia às 7h de Brasília, pela ação campanhas_diarias.' },
 ]
 
 export interface Gatilho { quando: string; paraQuem: string }
+/** As travas comuns das campanhas diárias (parte 31), conferidas no banco e de novo na função. */
+const TRAVAS = 'Só e-mail confirmado, sem administrador, com as cartas ligadas, sem a mesma referência e dentro da cadência (48 h / 3 em 14 dias).'
 /** Quando cada carta sai e para quem (a partir do PLANO.md e do cabeçalho de enviar-email/index.ts). */
 export const GATILHOS: Record<TipoCarta, Gatilho> = {
   nunca_comecou: { quando: 'Lembrete "Primeira missão" (botão em Lembretes) ou pela ficha; o motor escolhe sozinho quando a pessoa não respondeu nada.', paraQuem: 'Conta confirmada há pelo menos um dia e nenhuma questão respondida. Uma vez por pessoa.' },
@@ -47,6 +50,16 @@ export const GATILHOS: Record<TipoCarta, Gatilho> = {
   cronograma_pronto: { quando: 'O site avisa logo depois de a pessoa salvar o cronograma; o servidor confere o plano no banco. Uma vez por pessoa.', paraQuem: 'Quem acabou de montar o plano até a prova.' },
   pagamento_aprovado: { quando: 'Webhook do Mercado Pago (cartão e Pix) e gerenciar-plano ao sincronizar a cobrança, com x-segredo; transacional, idempotente pelo id do pagamento.', paraQuem: 'Quem acabou de ter um pagamento aprovado (compra ou renovação).' },
   obrigado_tempo: { quando: 'gerenciar-plano ao cancelar ou reembolsar, e webhook em refunded, charged_back ou cancelled; transacional.', paraQuem: 'Quem cancelou a assinatura ou pediu reembolso.' },
+  // Parte 31: campanhas diárias (candidatos_<tipo> no banco, ação campanhas_diarias de enviar-email, agendador às 7h).
+  assinou_sem_cronograma: { quando: 'Agendador diário (candidatos_assinou_sem_cronograma). Uma vez por pessoa.', paraQuem: `Assinatura paga vigente, a primeira feita de 3 a 30 dias atrás, e nenhum cronograma salvo. ${TRAVAS}` },
+  assinante_parado_7: { quando: 'Agendador diário (candidatos_assinante_parado_7). Uma por ausência (referência: o dia da última resposta).', paraQuem: `Assinatura paga vigente e a última resposta de 7 a 20 dias atrás. ${TRAVAS}` },
+  simulado_resultado: { quando: 'Agendador diário, até 3 dias depois de uma edição do Simulado Nacional fechar (candidatos_simulado_resultado). Uma por edição.', paraQuem: `Quem entregou o simulado da edição. A nota só aparece com 10 acertos e metade ou mais; a posição, só para quem assina e entre os 30 primeiros. ${TRAVAS}` },
+  vespera_prova: { quando: 'Agendador diário, na véspera da data da prova do cronograma (candidatos_vespera_prova). Uma por data.', paraQuem: `Quem tem cronograma com a prova amanhã. ${TRAVAS}` },
+  depois_prova: { quando: 'Agendador diário, de 1 a 3 dias depois da data da prova do cronograma (candidatos_depois_prova). Uma por data.', paraQuem: `Quem tinha a prova do cronograma nos últimos 3 dias. ${TRAVAS}` },
+  aniversario: { quando: 'Agendador diário, no dia do aniversário (candidatos_aniversario; 29/2 sai em 28/2 nos anos comuns). Uma por ano.', paraQuem: `Quem pôs a data de nascimento no cadastro. ${TRAVAS}` },
+  um_ano: { quando: 'Agendador diário, no dia em que a conta faz 1, 2, 3... anos (candidatos_um_ano). Uma por aniversário de conta.', paraQuem: `Contas que já responderam pelo menos uma questão. ${TRAVAS}` },
+  indicacao_deu_certo: { quando: 'Agendador diário (candidatos_indicacao_deu_certo): indicação confirmada nos últimos 14 dias, ou convidado com 20 questões nos últimos 90. Uma por amigo indicado.', paraQuem: `Quem indicou (o padrinho). ${TRAVAS}` },
+  resumo_do_tema: { quando: 'Agendador diário, no máximo uma por semana (candidatos_resumo_do_tema). O catálogo vem de biblioteca/indice.json, lido pela função a cada execução.', paraQuem: `Quem aceitou receber novidades e tem 10 questões ou mais na área do resumo publicado nos últimos 7 dias, que ainda não abriu. ${TRAVAS}` },
 }
 
 /** Um modelo do catálogo: um tipo, ou uma faixa de "ativo". */
@@ -119,10 +132,20 @@ const PESSOA_DO_TIPO: Partial<Record<TipoCarta, [string, PerfilCarta, Partial<Op
   cronograma_pronto: ['Pedro Alves montou o plano: TEOT a 87 dias', rica],
   pagamento_aprovado: ['Fernanda Luz, semestral no cartão', fernanda],
   obrigado_tempo: ['Fernanda Luz cancelou (acesso até o fim do período)', fernanda],
+  assinou_sem_cronograma: ['Fernanda Luz, TEOT, assinou há 4 dias e ainda sem cronograma', fernanda],
+  assinante_parado_7: ['Bruno, assinante, 230 questões, 9 dias sem responder', { ...pessoa('Bruno', 64), respondidas: 230, diasParado: 9, assinante: true, areas: [{ slug: 'joelho', total: 90, certas: 60 }] }],
+  simulado_resultado: ['Júlia Prado, acertou 41 de 60 no Simulado Nacional, 12ª', FICTICIOS['80-90'][1], { campanha: { simulado: { titulo: 'Simulado Nacional de outubro', acertos: 41, total: 60, posicao: 12, participantes: 180 } } }],
+  vespera_prova: ['Pedro Alves, TEOT amanhã pelo cronograma', { ...FICTICIOS['70-80'][1], diasParaProva: 1 }],
+  depois_prova: ['Pedro Alves, o TEOT foi há 2 dias', { ...FICTICIOS['70-80'][1], diasParaProva: null }],
+  aniversario: ['Rafael Couto faz aniversário hoje', { ...FICTICIOS['40-60'][1], nascimento: new Date(Date.now() - 3 * 3600_000).toISOString().slice(0, 10).replace(/^\d{4}/, '1995') }],
+  um_ano: ['Beatriz Lins, conta de um ano, ótima em mão', { ...FICTICIOS['60-70'][1], diasConta: 365 }, { campanha: { anos: 1 } }],
+  indicacao_deu_certo: ['Rafael Couto, o amigo indicado passou de 20 questões', FICTICIOS['40-60'][1], { campanha: { cortesia: true } }],
+  resumo_do_tema: ['Beatriz Lins, estuda mais mão, saiu "Fraturas da mão"', FICTICIOS['60-70'][1], { campanha: { resumo: { id: 'rockwood10-45-fraturas-mao', titulo: 'Fraturas da mão', especialidade: 'mao' } } }],
 }
 
 function grupoDe(tipo: TipoCarta): GrupoCatalogo {
   if ((TIPOS_AUTOMATICOS_NOVOS as readonly string[]).includes(tipo)) return 'novo'
+  if ((TIPOS_CAMPANHAS_DIARIAS as readonly string[]).includes(tipo)) return 'campanha'
   return TIPOS[tipo].grupo
 }
 

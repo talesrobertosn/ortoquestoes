@@ -10,7 +10,8 @@ const PLANO_REPO = 'https://github.com/talesrobertosn/ortoquestoes/blob/main/doc
 
 /**
  * E-mails › Todas as cartas (17/10/2026): o catálogo vivo de todos os tipos de carta (situações,
- * as 9 faixas, convites, pessoais, automáticos e os seis novos), agrupados, cada um com rótulo,
+ * as 9 faixas, convites, pessoais, automáticos, os seis novos e as nove campanhas diárias da
+ * parte 31), agrupados, cada um com rótulo,
  * descrição, quando sai, para quem, uma amostra gerada aqui mesmo pelo motor das cartas para uma
  * pessoa fictícia, "Sortear outra versão" e o número de versões. Nada é enviado desta página.
  */
@@ -87,7 +88,7 @@ export function AdminTodasCartas() {
             <button type="button" className="botao" onClick={() => sortear(m)} disabled={m.versoes <= 1 && !carta}><Icone nome="raio" tamanho={16} /> Sortear outra versão</button>
             {carta && <button type="button" className="adm-link" aria-expanded={aberto === m.id} onClick={() => definirAberto(aberto === m.id ? null : m.id)}>{aberto === m.id ? 'Fechar prévia' : 'Ver como chega'}</button>}
           </div>
-          {carta && aberto === m.id && <PreviaCarta assunto={carta.assunto} corpo={carta.corpo} descadastro={!m.transacional && (m.grupo === 'automatico' || m.grupo === 'novo' || m.grupo === 'convite')} />}
+          {carta && aberto === m.id && <PreviaCarta assunto={carta.assunto} corpo={carta.corpo} descadastro={!m.transacional && (m.grupo === 'automatico' || m.grupo === 'novo' || m.grupo === 'campanha' || m.grupo === 'convite')} />}
         </article>
       })}
     </div>}
