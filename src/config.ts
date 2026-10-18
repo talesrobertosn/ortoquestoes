@@ -45,6 +45,11 @@ export const SITE = {
  */
 export const ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
 
+/** O que é a prova de referência de um simulado, quando a sigla sozinha não diz (aparece na questão). */
+export const DESCRICAO_PROVA: Record<string, string> = {
+  'SIMÃO': 'Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão',
+}
+
 /**
  * Por enquanto, ver questões e montar sessões de treino exige conta. As páginas
  * com questões (treinar, sessão, questão, revisão, favoritas, caderno de erros,

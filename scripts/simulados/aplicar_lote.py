@@ -8,6 +8,8 @@ Cada lote é um módulo Python em <pasta> com:
   CAP = 32                      # capítulo (vai na legenda da figura)
   REF = "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 32 (...)"
   ARQ = "Rockwood_10e_cap32_....pdf"   # nome lógico do PDF de origem (o PDF não vai ao repositório)
+  PROVA = "SIMÃO"               # opcional: banca cujo padrão o simulado segue (aparece na questão)
+  AREA = "cirurgia-mao"         # opcional: área própria do simulado (sai do treino de ortopedia)
   LIVRO = "Rockwood and Green's Fractures in Adults, 10ª ed."   # opcional, para a legenda
   QUESTOES = [dict(sub=[...], pag=N, gab="X", enun="...", alts=[4 textos],
                    conceito='''...''', correta='''**X: ...** ...''', inc={"A": "...", ...},
@@ -69,6 +71,10 @@ for m, q in QS:
     for s in q["sub"]:
         if s not in tema["subtemas"]:
             erros.append(f"{rot}: subtema '{s}' não existe em {a.tema} (válidos: {'; '.join(tema['subtemas'])})")
+    if getattr(m, "AREA", None) not in (None, "cirurgia-mao", "fellowship-quadril"):
+        erros.append(f"{rot}: AREA do lote deve ser 'cirurgia-mao' ou 'fellowship-quadril'")
+    if getattr(m, "AREA", None) and q.get("areasAdicionais"):
+        erros.append(f"{rot}: questão com AREA própria não leva areasAdicionais")
     if "areasAdicionais" in q and q["areasAdicionais"] != ["cirurgia-mao"]:
         erros.append(f"{rot}: areasAdicionais deve ser ['cirurgia-mao']")
     textos = [q["enun"], *q["alts"], q["conceito"], q["correta"], *q["inc"].values()]
@@ -130,7 +136,8 @@ for m, q in QS:
                     "legenda": f"Fonte: {livro}, capítulo {getattr(m, 'CAP', '')}, {figura}.",
                     "largura": im.width, "altura": im.height}]
     T["questoes"].append({
-        "id": qid, "tema": tema["nome"], "subtemas": q["sub"], "prova": None, "simulado": True,
+        "id": qid, "tema": tema["nome"], "subtemas": q["sub"], "prova": getattr(m, "PROVA", None), "simulado": True,
+        **({"area": m.AREA} if getattr(m, "AREA", None) else {}),
         **({"areasAdicionais": q["areasAdicionais"]} if q.get("areasAdicionais") else {}),
         "ano": None, "dificuldade": None, "enunciado": q["enun"], "imagens": imagens,
         "alternativas": [{"letra": l, "texto": t} for l, t in zip("ABCD", q["alts"])],
