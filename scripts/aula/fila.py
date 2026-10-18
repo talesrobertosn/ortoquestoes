@@ -9,6 +9,7 @@
 #   --corrido:   texto corrido antigo, sem a estrutura editorial atual              -> prioridade 4
 # O total restante sai na saída de erro ("# restantes N").
 import json, sys, re, os
+import estado as E
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 R = os.path.join(RAIZ, 'public', 'acervo')
 prova = sys.argv[sys.argv.index('--prova') + 1] if '--prova' in sys.argv else None
@@ -21,6 +22,13 @@ C = json.load(open(os.path.join(R, 'comentarios', f'{tema}.json'), encoding='utf
 T = json.load(open(os.path.join(R, 'temas', f'{tema}.json'), encoding='utf-8'))
 Q = T.get('questoes', T)
 QD = {q['id']: q for q in Q}
+checkpoint = json.load(open(E.CHECKPOINT, encoding='utf-8')) if E.CHECKPOINT.exists() else {}
+concluidos = checkpoint.get('concluidos', {})
+
+def concluido_inalterado(k, q, v):
+    registro = concluidos.get(k, {})
+    return (registro.get('questaoSha256') == E.questao_fingerprint(q)
+            and registro.get('comentarioSha256') == E.fingerprint(v))
 
 def classe(v):
     if not (v.get('correta') or '').strip() and v.get('provavel'):
@@ -48,7 +56,8 @@ fila = [k for k, q in sorted(QD.items())
         and ((k not in C) if alvo == 'sem-comentario' else
              (k in C and not C[k].get('conferido') and q.get('prova') == 'TARO'
               and C[k].get('provavel') and 0 < len(C[k].get('conceito') or '') < 500
-              and (C[k].get('correta') or '').strip()) if alvo == 'taro-breve' else
+              and (C[k].get('correta') or '').strip()
+              and not concluido_inalterado(k, q, C[k])) if alvo == 'taro-breve' else
              (k in C and classe(C[k]) == alvo))]
 print('# restantes', len(fila), file=sys.stderr)
 for k in fila[pular:pular + n]:
