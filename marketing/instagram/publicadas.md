@@ -27,3 +27,5 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | pediatria-0120 | Ângulo de Southwick na epifisiólise (TARO 2022) | posts/2026-10-17-laboratorio-tcg (stories) |
 | mao-0430 | Kienböck com ulna minus, encurtamento do rádio de 2 mm (TARO 2025) | posts/2026-10-18-kienbock-nivelamento (feed e stories) |
 | mao-0546 | Kienböck, carpectomia da fileira proximal no Lichtman IIIB (TEOT 2023) | posts/2026-10-18-kienbock-nivelamento (feed 3 e story 3) |
+| tumores-0318 | Condroblastoma na cabeça umeral (TARO 2024) | posts/2026-10-18-revelacao-player (feed) |
+| mao-0433 | Manobra de Bouvier na garra ulnar (TARO 2025) | posts/2026-10-18-revelacao-player (stories) |
