@@ -12,7 +12,8 @@ const TAMANHO: Record<string, string> = { mensal: '1 mês', semestral: '6 meses'
  * Os três planos lado a lado, como os tamanhos de pipoca do cinema: o mensal
  * ancora o preço, o semestral fica no meio e o anual, maior, salta aos olhos.
  * No celular, o anual vem primeiro, inteiro, e os outros dois logo abaixo, lado
- * a lado, para comparar sem rolar de lado.
+ * a lado, para comparar sem rolar de lado. No computador, as linhas dos três
+ * cartões se alinham (subgrid): nome, preço, total, economia e botão na mesma altura.
  */
 export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoEscolher }: {
   local: 'topo' | 'final'
@@ -47,7 +48,7 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
                 : <span className="vd-plano__neutro">Sem fidelidade · cancele quando quiser</span>}
             </p>
             <p className="vd-plano__dia"><Icone nome="relogio" tamanho={14} /> {centavos(porDia(p))} por dia</p>
-            {p.destaque && <p className="vd-plano__degrau">{degrau.texto}</p>}
+            {p.destaque ? <p className="vd-plano__degrau">{degrau.texto}</p> : <span className="vd-plano__vazio" aria-hidden="true" />}
             {!conta && pagamentos
               ? <a className={classe} href={href(linkConta('criar', `/assinatura?plano=${p.id}`))} {...dados}>Assinar o {p.nome.toLowerCase()}</a>
               : <button className={classe} type="button" disabled={semCompra} onClick={() => aoEscolher(p)} {...dados}>{rotulo(p)}</button>}
