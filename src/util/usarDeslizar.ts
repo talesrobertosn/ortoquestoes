@@ -32,7 +32,7 @@ export function usarDeslizar({ area, palco, pronto, ativo, podeAvancar, podeVolt
     const mover = (dx: number, animar: boolean) => {
       const el = palco.current
       if (!el) return
-      el.style.transition = animar ? 'transform .22s cubic-bezier(.2,.8,.2,1), opacity .22s ease-out' : 'none'
+      el.style.transition = animar ? 'transform .2s cubic-bezier(.2,.8,.2,1), opacity .2s cubic-bezier(.2,.8,.2,1)' : 'none'
       el.style.transform = dx ? `translateX(${dx}px)` : ''
       el.style.opacity = dx ? String(Math.max(0.35, 1 - Math.abs(dx) / (window.innerWidth * 1.4))) : ''
     }
@@ -45,8 +45,17 @@ export function usarDeslizar({ area, palco, pronto, ativo, podeAvancar, podeVolt
       return false
     }
 
+    // Com texto selecionado (para grifar), arrastar ajusta a seleção: não é gesto de troca.
+    const selecionando = () => { const sel = window.getSelection(); return !!sel && !sel.isCollapsed && sel.toString().trim() !== '' }
+
+    // Elástico: o cartão segue o dedo quase 1:1 no começo e endurece ao se afastar.
+    const elastico = (dx: number, livre: boolean) => {
+      const limite = window.innerWidth * (livre ? 0.7 : 0.18)
+      return Math.sign(dx) * limite * (1 - Math.exp(-Math.abs(dx) / limite))
+    }
+
     const inicio = (e: TouchEvent) => {
-      if (!atual.current.ativo || e.touches.length !== 1 || ignorar(e.target)) { gesto = null; return }
+      if (!atual.current.ativo || e.touches.length !== 1 || ignorar(e.target) || selecionando()) { gesto = null; return }
       const toque = e.touches[0]
       gesto = { x: toque.clientX, y: toque.clientY, t: performance.now(), travado: null, dx: 0 }
     }
@@ -61,10 +70,11 @@ export function usarDeslizar({ area, palco, pronto, ativo, podeAvancar, podeVolt
         gesto.travado = Math.abs(dx) > Math.abs(dy) * 1.4 ? 'horizontal' : 'vertical'
       }
       if (gesto.travado !== 'horizontal') return
+      if (selecionando()) { gesto = null; mover(0, true); return }
       // Sem questão para aquele lado, o cartão resiste: mexe pouco e volta.
       const livre = dx < 0 ? atual.current.podeAvancar : atual.current.podeVoltar
-      gesto.dx = livre ? dx : dx * 0.25
-      mover(gesto.dx, false)
+      gesto.dx = dx
+      mover(elastico(dx, livre), false)
     }
 
     const fim = () => {
@@ -73,19 +83,33 @@ export function usarDeslizar({ area, palco, pronto, ativo, podeAvancar, podeVolt
       gesto = null
       if (travado !== 'horizontal') return
       const rapido = Math.abs(dx) / Math.max(1, performance.now() - t) > 0.45 && Math.abs(dx) > 40
-      const longe = Math.abs(dx) > Math.min(110, window.innerWidth * 0.28)
+      const longe = Math.abs(dx) > Math.min(96, window.innerWidth * 0.25)
       const indo = dx < 0 ? 'avancar' : 'voltar'
       const livre = indo === 'avancar' ? atual.current.podeAvancar : atual.current.podeVoltar
       if (!(rapido || longe) || !livre) { mover(0, true); return }
-      if (semMovimento) { mover(0, false); (indo === 'avancar' ? atual.current.aoAvancar : atual.current.aoVoltar)(); return }
-      mover(indo === 'avancar' ? -window.innerWidth : window.innerWidth, true)
+      // A página não repete a animação de entrada: quem anima esta troca é o gesto.
+      const el = palco.current
+      const marcar = () => {
+        if (!el) return
+        el.dataset.deslizou = '1'
+        window.setTimeout(() => { delete el.dataset.deslizou }, 400)
+      }
+      if (semMovimento) { mover(0, false); marcar(); (indo === 'avancar' ? atual.current.aoAvancar : atual.current.aoVoltar)(); return }
+      const w = window.innerWidth
+      if (el) {
+        el.style.transition = 'transform .14s cubic-bezier(.4,0,1,1), opacity .14s cubic-bezier(.4,0,1,1)'
+        el.style.transform = `translateX(${indo === 'avancar' ? -w * 0.6 : w * 0.6}px)`
+        el.style.opacity = '0'
+      }
       window.setTimeout(() => {
         // A próxima questão entra pelo lado oposto; se a troca não acontecer
         // (limite do dia, por exemplo), o mesmo cartão volta ao lugar.
-        mover(indo === 'avancar' ? window.innerWidth * 0.35 : -window.innerWidth * 0.35, false)
+        mover(indo === 'avancar' ? w * 0.18 : -w * 0.18, false)
+        if (el) el.style.opacity = '0.3'
+        marcar()
         ;(indo === 'avancar' ? atual.current.aoAvancar : atual.current.aoVoltar)()
         requestAnimationFrame(() => requestAnimationFrame(() => mover(0, true)))
-      }, 170)
+      }, 140)
     }
 
     const cancelar = () => { if (gesto) { gesto = null; mover(0, true) } }
