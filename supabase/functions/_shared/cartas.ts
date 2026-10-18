@@ -53,6 +53,9 @@ export type TipoCarta =
   | 'pix_3_dias' | 'pix_hoje' | 'relatorio'
   // Novos em 17/10/2026 (sem SQL): disparados por um acontecimento no site ou no pagamento.
   | 'boas_vindas_dia0' | 'primeiras_10' | 'voltou' | 'cronograma_pronto' | 'pagamento_aprovado' | 'obrigado_tempo'
+  // Parte 31 (18/10/2026): as campanhas diárias, escolhidas pelo banco (candidatos_<tipo>) e mandadas pelo agendador.
+  | 'assinou_sem_cronograma' | 'assinante_parado_7' | 'simulado_resultado' | 'vespera_prova' | 'depois_prova'
+  | 'aniversario' | 'um_ano' | 'indicacao_deu_certo' | 'resumo_do_tema'
 
 export interface InfoTipo { rotulo: string; descricao: string; grupo: 'situacao' | 'convite' | 'pessoal' | 'automatico' }
 export const TIPOS: Record<TipoCarta, InfoTipo> = {
@@ -80,11 +83,26 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   cronograma_pronto: { grupo: 'automatico', rotulo: 'Cronograma pronto', descricao: 'No dia em que a pessoa monta o plano até a prova.' },
   pagamento_aprovado: { grupo: 'automatico', rotulo: 'Pagamento aprovado', descricao: 'Recibo gentil: plano, período, o que libera, link do cronograma. Transacional.' },
   obrigado_tempo: { grupo: 'automatico', rotulo: 'Obrigado pelo tempo de assinatura', descricao: 'Cancelou ou pediu reembolso: porta aberta, sem cobrança.' },
+  assinou_sem_cronograma: { grupo: 'automatico', rotulo: 'Assinou e não montou o cronograma', descricao: 'Três dias depois de assinar, sem plano: o cronograma como as horas que o plano devolve.' },
+  assinante_parado_7: { grupo: 'automatico', rotulo: 'Assinante parado há 7 dias', descricao: 'Assina e está há uma semana sem responder: sem culpa, a Revisão e o cronograma que se ajusta.' },
+  simulado_resultado: { grupo: 'automatico', rotulo: 'Resultado do Simulado Nacional', descricao: 'Quando a edição fecha: obrigado por ter feito, o que o resultado mostra e o que fazer com ele.' },
+  vespera_prova: { grupo: 'automatico', rotulo: 'Véspera da prova', descricao: 'Na véspera da data do cronograma: dormir é estudar, nada de matéria nova, torcida.' },
+  depois_prova: { grupo: 'automatico', rotulo: 'Depois da prova: como foi?', descricao: 'De 1 a 3 dias depois da data do cronograma: pergunta como foi, sem presumir o resultado.' },
+  aniversario: { grupo: 'automatico', rotulo: 'Aniversário', descricao: 'No dia do aniversário (data de nascimento do cadastro): curta, sem convite.' },
+  um_ano: { grupo: 'automatico', rotulo: 'Um ano de Orto Questões', descricao: 'No dia em que a conta faz um ano (ou mais): o caminho até aqui, sem convite.' },
+  indicacao_deu_certo: { grupo: 'automatico', rotulo: 'Sua indicação deu certo', descricao: 'Quem a pessoa indicou chegou a 20 questões: obrigado pela confiança.' },
+  resumo_do_tema: { grupo: 'automatico', rotulo: 'Saiu um resumo do seu tema', descricao: 'Semanal, só para quem aceitou novidades: um resumo novo na área que a pessoa mais estuda.' },
 }
 /** Tipos que o administrador pode escolher na ficha (os automáticos ficam de fora). */
 export const TIPOS_MANUAIS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'sumiu', 'ativo', 'obrigado_assinatura', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma']
 /** Os seis automáticos novos (17/10/2026), disparados por acontecimento, sem SQL novo. */
 export const TIPOS_AUTOMATICOS_NOVOS: readonly TipoCarta[] = ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo']
+/**
+ * As nove campanhas diárias (parte 31, 18/10/2026): o banco escolhe quem recebe
+ * (`candidatos_<tipo>`) e o agendador manda pela ação `campanhas_diarias` de enviar-email,
+ * pelo mesmo caminho dos automáticos (idempotência por referência, cadência, preferência).
+ */
+export const TIPOS_CAMPANHAS_DIARIAS: readonly TipoCarta[] = ['assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema']
 /** Transacionais: resposta a algo que a pessoa fez ou pagou. Não entram no teto de cadência. */
 export const TIPOS_TRANSACIONAIS: readonly string[] = ['pix_hoje', 'pagamento_aprovado', 'obrigado_tempo', 'relato_resolvido', 'alerta_admin']
 
@@ -153,8 +171,22 @@ export interface OpcoesCarta {
   pagamento?: { plano: string | null; inicioEm: string | null; fimEm: string | null; meio?: 'pix' | 'cartao' | null; renovacao?: boolean }
   /** Encerramento (cancelou ou pediu reembolso). */
   encerramento?: { reembolso: boolean; fimEm: string | null }
+  /** Campanhas diárias (parte 31): o que o banco sabe do acontecimento. Cada campo some se faltar. */
+  campanha?: DadosCampanha
   /** Não recusar pela cadência (prévia no painel, testes). O envio de verdade respeita. */
   ignorarCadencia?: boolean
+}
+
+/** Dados de uma campanha diária, como `candidatos_<tipo>` devolve (parte 31). */
+export interface DadosCampanha {
+  /** Resultado do Simulado Nacional: acertos e total da pessoa; posição só para quem assina (como no site). */
+  simulado?: { titulo?: string | null; acertos?: number | null; total?: number | null; posicao?: number | null; participantes?: number | null } | null
+  /** Um ano de Orto Questões: quantos anos a conta faz hoje. */
+  anos?: number | null
+  /** Saiu um resumo do seu tema: o resumo novo e a área. */
+  resumo?: { id?: string | null; titulo?: string | null; especialidade?: string | null } | null
+  /** Indicação: os dias de cortesia de quem indicou ainda contam (até 12 amigos). */
+  cortesia?: boolean | null
 }
 
 export interface DadosRelatorioCarta {
@@ -464,7 +496,8 @@ export function fatosDe(p: PerfilCarta, hoje = new Date()): Fatos {
     const titulo = (rl.titulos ?? []).map((t) => String(t ?? '').trim()).find((t) => t.length >= 3 && t.length <= 80) ?? null
     f.resumos = { total: Math.round(Number(rl.total)), titulo }
   }
-  let diasProva = Number(p.diasParaProva)
+  // Sem o número (null), vale a data da prova do cronograma, quando houver.
+  let diasProva = p.diasParaProva === null || p.diasParaProva === undefined ? NaN : Number(p.diasParaProva)
   if (!Number.isFinite(diasProva) && p.provaData) diasProva = Math.ceil((new Date(p.provaData).getTime() - hoje.getTime()) / 86_400_000)
   if (Number.isFinite(diasProva) && diasProva >= 1 && diasProva <= 730) {
     const nome = (p.provaCronograma ?? '').trim()
@@ -483,10 +516,12 @@ export function fatosDe(p: PerfilCarta, hoje = new Date()): Fatos {
 // Contexto das versões: o que cada versão usa para escrever
 // ---------------------------------------------------------------------------
 
-export type Link = 'treinar' | 'revisao' | 'erros' | 'assinatura' | 'cronograma' | 'indicar' | 'flashcards' | 'dados' | 'conta' | 'resumos' | 'desempenho'
+export type Link = 'treinar' | 'revisao' | 'erros' | 'assinatura' | 'cronograma' | 'indicar' | 'flashcards' | 'dados' | 'conta' | 'resumos' | 'desempenho' | 'resumo' | 'simulado'
 const ROTAS: Record<Link, string> = {
   treinar: '#/treinar', revisao: '#/revisao', erros: '#/erros', assinatura: '#/assinatura', cronograma: '#/cronograma',
   indicar: '#/indicar', flashcards: '#/flashcards', dados: '#/dados', conta: '#/conta/assinatura', resumos: '#/resumos', desempenho: '#/desempenho',
+  // "resumo" abre o resumo da campanha (#/resumos/<id>) quando se sabe qual; senão, a Biblioteca.
+  resumo: '#/resumos', simulado: '#/simulado-nacional',
 }
 
 export interface Ctx {
@@ -518,6 +553,8 @@ export interface Ctx {
   relatorio?: DadosRelatorioCarta
   pagamento?: OpcoesCarta['pagamento']
   encerramento?: OpcoesCarta['encerramento']
+  /** Campanhas diárias (parte 31); objeto vazio quando não há. */
+  campanha: DadosCampanha
   /** Sorteia um item (ignora null, undefined, false e vazio). */
   um: <T>(...opcoes: Array<T | null | undefined | false | ''>) => T
   /** Verdadeiro com a probabilidade dada. */
@@ -711,7 +748,7 @@ export const IDEIAS_PS: readonly RegExp[] = [
   /comentario das alternativas|comentário das alternativas|alternativas erradas/, /\bcafe\b|\bcafé\b/, /\berrar\b|errar aqui/, /\bcolega\b|estudar junto/,
   /ranking/, /aniversario|aniversário/, /seguidos/, /madrugada/, /a noite|à noite/, /resumo/, /\bservico\b|\bserviço\b|hospital|santa casa/,
   /faltam .{1,12} dias|dias para (o|a) /, /\bfeliz\b/, /torc/, /automatico|automático/, /mantem (o|isto|o site) de pe|mantém (o|isto|o site) de pé/,
-  /\bleio\b/,
+  /\bleio\b/, /parab[eé]ns/,
 ]
 /** As ideias (índices em IDEIAS_PS) presentes num texto. */
 function ideiasDe(texto: string): Set<number> {
@@ -816,9 +853,14 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
   const ctx: Ctx = {
     p, tipo, faixa, nome: primeiroNome(p.nome), r, dez: r >= MINIMO_PARA_NUMERO, q: questoes(r), pct,
     get pctBom() { if (!mostrarAcerto()) return null; usados.add('acerto'); return pctBomValor },
-    fatos, hoje, diasTeot: diasAteTeot(hoje), diasProva, nomeProva, daProva: nomeProva.replace(/^o /, 'do ').replace(/^a /, 'da '), marco, pix: op.pix, relatorio: op.relatorio, pagamento: op.pagamento, encerramento: op.encerramento, usados,
+    fatos, hoje, diasTeot: diasAteTeot(hoje), diasProva, nomeProva, daProva: nomeProva.replace(/^o /, 'do ').replace(/^a /, 'da '), marco, pix: op.pix, relatorio: op.relatorio, pagamento: op.pagamento, encerramento: op.encerramento, campanha: op.campanha ?? {}, usados,
     um, chance: (x) => rnd() < x,
-    link: (rota) => { estado.link = rota; return (site + ROTAS[rota]).replace(/^https?:\/\//, '') },
+    link: (rota) => {
+      estado.link = rota
+      const id = op.campanha?.resumo?.id
+      const caminho = rota === 'resumo' && typeof id === 'string' && /^[a-z0-9-]{3,80}$/.test(id) ? `#/resumos/${id}` : ROTAS[rota]
+      return (site + caminho).replace(/^https?:\/\//, '')
+    },
     fato,
     obs: (k = 1, preferir = []) => {
       const limite = Math.min(MAXIMO_OBS, Math.max(1, k))
@@ -966,7 +1008,7 @@ export function tipoCombina(tipo: TipoCarta, p: PerfilCarta): boolean {
     case 'ativo': return acertoCitavel(p) !== null
     case 'marco': return r >= 100
     case 'primeiras_10': return r >= MINIMO_PARA_NUMERO
-    case 'boas_vindas': case 'comecando': case 'comecou_parou': case 'pausa': case 'sumiu': case 'convite_20': case 'convite_50': case 'voltou': return r > 0
+    case 'boas_vindas': case 'comecando': case 'comecou_parou': case 'pausa': case 'sumiu': case 'convite_20': case 'convite_50': case 'voltou': case 'assinante_parado_7': return r > 0
     default: return true
   }
 }
@@ -1118,7 +1160,7 @@ export interface EnvioHistorico extends EnvioAnterior { assunto?: string | null;
 
 /**
  * O que perfil_carta_admin, listar_cartas_admin e dados_carta_usuario devolvem por pessoa.
- * Os campos marcados "parte 31" ainda não vêm do banco: o motor só os usa quando chegarem.
+ * Os campos marcados "parte 31" só vêm depois que a parte 31 é colada; antes, somem.
  */
 export interface DadosCartaBanco {
   email?: string | null
@@ -1148,7 +1190,7 @@ export interface DadosCartaBanco {
   flashcards?: number | null
   viu_planos?: number | null
   emails?: { ultimo_em: string | null; n7: number; n30: number; lista: EnvioHistorico[]; antigos?: EnvioAnterior[] } | null
-  // Parte 31 (ainda não devolvidos pelas RPCs; ver docs/emails/PLANO.md)
+  // Parte 31 (18/10/2026): devolvidos por dados_cartas_interno depois que a parte 31 é colada.
   cidade?: string | null
   nascimento?: string | null
   resumos_lidos?: number | null

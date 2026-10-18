@@ -125,6 +125,65 @@ leve → fecho → P.S.
 - Gatilhos dos seis automáticos novos: no site (`src/conta/emailsAutomaticos.ts`) e no servidor
   (`pedirAutomaticoServidor`, webhook do Mercado Pago e gerenciar-plano). Teste:
   `fixtures/testar_gatilhos_email.mjs`.
-- Fica para a parte 31 (SQL): as RPCs devolverem cidade, nascimento, resumos lidos, data da prova do
+- Ficou para a parte 31 (SQL, feita: seção 8): as RPCs devolverem cidade, nascimento, resumos lidos, data da prova do
   cronograma e último login; os nove e-mails novos com SQL; o índice único por pessoa e referência; e
   `emails_48h` ignorando os transacionais novos.
+
+## 8. Parte 31 (18/10/2026, feita)
+
+O SQL que faltava e as nove campanhas diárias da seção 4. Arquivos:
+`supabase/colar-no-painel/sql-202610181200-parte31.sql` (espelho em
+`supabase/migrations/202610181200_campanhas_diarias_email.sql`) e, à parte, o agendamento
+`supabase/colar-no-painel/sql-202610181200-parte31-agendamento.sql` (precisa da URL do projeto, da chave
+anon e do segredo EMAIL_SEGREDO; não vai para migrations).
+
+- **Dados novos para o motor**: `dados_cartas_interno` (e com ela a ficha, os lotes e os automáticos)
+  devolve `cidade`, `nascimento` (cadastro), `ultimo_login`, `data_prova`, `prova_cronograma` e
+  `dias_para_prova` (cronograma) e `resumos_lidos` com `resumos_titulos` (Biblioteca: concluído ou 95% lido,
+  como o site conta "feito"). Só chaves novas no jsonb; nenhum tipo de retorno mudou, os grants ficam.
+- **Uma carta automática por pessoa e referência**: índice único `emails_enviados_carta_unica`
+  (tipo = 'carta' e referência não nula). Antes dele, a limpeza das duplicatas: fica a primeira enviada;
+  as outras falhadas são apagadas; as outras que saíram ficam no histórico com "#duplicada:<id>" na
+  referência. A função, ao bater no índice (409), retoma a linha que falhou em vez de criar outra.
+- **Cadência no banco sem os transacionais** (`email_transacional_interno`, a mesma lista de
+  `TIPOS_TRANSACIONAIS`): `emails_48h` e o novo `emails_14d` de `dados_carta_envio`, e as campanhas.
+- **Nove campanhas** (`candidatos_<tipo>`, só service_role; todas tiram e-mail não confirmado,
+  administrador, quem desligou as cartas ou tudo, quem já recebeu a mesma referência e quem está no teto
+  de 48 h / 3 em 14 dias):
+
+  | Campanha | Quem entra | Referência |
+  | --- | --- | --- |
+  | `assinou_sem_cronograma` | assinatura paga vigente, a primeira feita de 3 a 30 dias atrás, sem cronograma | uma vez por pessoa |
+  | `assinante_parado_7` | assinatura paga vigente e a última resposta de 7 a 20 dias atrás | o dia da última resposta |
+  | `simulado_resultado` | entregou uma edição do Simulado Nacional que fechou nos últimos 3 dias (nota só com 10 acertos e metade ou mais; posição só para quem assina e até 30º) | a edição |
+  | `vespera_prova` | a prova do cronograma é amanhã | a data |
+  | `depois_prova` | a prova do cronograma foi de 1 a 3 dias atrás | a data |
+  | `aniversario` | nascimento do cadastro hoje (29/2 em 28/2 nos anos comuns); curta, sem convite, sem link | o ano |
+  | `um_ano` | a conta faz 1, 2, 3... anos hoje e já respondeu alguma questão | os anos |
+  | `indicacao_deu_certo` | quem indicou, quando o amigo chega a 20 questões (confirmada nos últimos 14 dias, ou ainda não confirmada e de até 90 dias) | o amigo |
+  | `resumo_do_tema` | aceitou novidades, tem 10 questões ou mais na área do resumo publicado nos últimos 7 dias, que é a área que mais estuda, e ainda não abriu o resumo | a semana |
+
+  Nenhuma ficou de fora: o resultado do simulado está em `simulado_participacoes`, a indicação em
+  `indicacoes`. O único dado que não existia no banco era a data de publicação dos resumos (eles moram em
+  `conteudo/biblioteca/` e saem em `public/biblioteca/indice.json`, sem data): a tabela nova
+  `biblioteca_catalogo` guarda o que a função lê desse índice a cada rodada, e o que já existia na
+  primeira leitura fica sem data (não conta como novo). Assim nenhum resumo antigo vira "novidade".
+- **Motor**: os nove tipos em `TipoCarta`, `TIPOS` e `TIPOS_CAMPANHAS_DIARIAS` (cartas.ts), cinco versões
+  de cada em `cartas-versoes.ts`, escritas do zero na voz nova; `emailAutomatico` recebe os dados do
+  acontecimento em `campanha` (simulado, anos, resumo, cortesia da indicação). Um P.S. não repete
+  "parabéns" do corpo.
+- **Função**: ação `campanhas_diarias` em `enviar-email` (agendador com x-segredo, ou administrador;
+  `campanha` para uma só, `limite` por campanha, `simular` para só contar). Cada candidata segue por
+  `enviarAutomatico`, que confere tudo de novo na hora (podeReceber, e-mail confirmado, referência,
+  cadência); nenhum `enviarEmail` novo. A própria pessoa não pede campanha pela ação `automatico`.
+- **Painel**: E-mails › Todas as cartas ganha o grupo "Campanhas diárias (parte 31)", com gatilho e
+  para quem de cada uma.
+- **Testes**: `bash fixtures/testar_parte31.sh` (Postgres 16 local, stub do Supabase, todas as migrações,
+  a parte 31 colada duas vezes e 247 conferências: positivos e negativos de cada campanha, preferências,
+  cadência, administrador, e-mail não confirmado, referência já enviada, limpeza das duplicatas, índice,
+  permissões e os dados novos); `fixtures/testar_campanhas_email.mjs` (a ação com banco e Resend
+  simulados, no `npm test`); `fixtures/testar_modelos_email.mjs` (as nove em milhares de sorteios).
+- **Falta o dono fazer**: colar a parte 31; publicar a função `enviar-email`
+  (`supabase/colar-no-painel/enviar-email.ts`); ligar pg_cron e pg_net e colar o agendamento com os três
+  marcadores trocados (7h de Brasília, `0 10 * * *` em UTC). Para conferir antes, chamar a função com
+  `{"acao": "campanhas_diarias", "simular": true}`.

@@ -47,18 +47,21 @@ em [PLANO.md](PLANO.md).
 
 ## Para depois
 
-- [ ] **Carta de aniversário de conta** (1 ano de Orto Questões): curta, sem convite. Precisa de um
-  agendador diário; baixo risco, alto carinho.
+- [x] **Carta de aniversário de conta** (1 ano de Orto Questões): curta, sem convite. Feita na parte 31
+  (`um_ano`), com o agendador diário.
 - [ ] **Ver quem respondeu**: se as respostas forem para um endereço do domínio, um webhook de
   entrada do Resend poderia marcar "respondeu" no histórico. Útil para medir sem rastrear abertura.
-- [ ] **Agendar o lote para 7h ou 12h** (os horários em que o residente lê, segundo as orientações
-  de marketing). Hoje o envio é na hora do clique.
-- [ ] **Carta de volta do simulado nacional**: depois do Simulado do mês, uma carta curta com a
-  posição. Depende de o resultado sair no banco no mesmo dia.
-- [ ] **Parte 31 (SQL)**: as RPCs ainda não devolvem cidade, nascimento, resumos lidos, data da prova
-  do cronograma e último login; os nove e-mails novos com SQL (seção 4 do PLANO); um índice único
-  por pessoa e referência para as cartas automáticas; e `emails_48h` passando a ignorar os
-  transacionais novos.
+- [x] **Agendar o lote para 7h ou 12h** (os horários em que o residente lê, segundo as orientações
+  de marketing): as campanhas diárias da parte 31 saem às 7h de Brasília pelo pg_cron
+  (`sql-202610181200-parte31-agendamento.sql`; a segunda rodada às 12h é opcional). Os lotes do painel
+  continuam saindo na hora do clique.
+- [x] **Carta de volta do simulado nacional**: depois do Simulado do mês, uma carta curta com a
+  posição (só para quem assina, como no site, e até 30º) e a nota quando é motivo de orgulho. Feita na
+  parte 31 (`simulado_resultado`): o resultado já está em `simulado_participacoes`.
+- [x] **Parte 31 (SQL)** (18/10/2026, PLANO.md seção 8): as RPCs devolvem cidade, nascimento, resumos
+  lidos, data da prova do cronograma e último login; as nove campanhas com SQL (seção 4 do PLANO) e a
+  ação `campanhas_diarias`; o índice único por pessoa e referência para as cartas automáticas (com a
+  limpeza das duplicatas antigas); e `emails_48h` ignorando os transacionais.
 - [x] **Ligar o site e o webhook** aos seis automáticos (fase 2, 17/10/2026): `src/conta/emailsAutomaticos.ts`
   (boas-vindas do dia, primeiras 10, voltou, cronograma pronto) e `pedirAutomaticoServidor` em
   `_shared/email.ts` (pagamento aprovado e obrigado pelo tempo, pelo webhook e por gerenciar-plano).

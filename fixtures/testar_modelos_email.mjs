@@ -4,7 +4,8 @@
 // de 50%; nenhum número de questões abaixo de 10; 6 a 12 linhas de corpo; exatamente um P.S.; no
 // máximo um link; nada de "undefined/null/NaN/0 questões"; assuntos com até 55 caracteres e com o
 // nome; o P.S. não repete uma ideia do corpo e duas frases seguidas não repetem a palavra forte;
-// o teto de cadência (48 h / 3 em 14 dias); e os seis automáticos novos.
+// o teto de cadência (48 h / 3 em 14 dias); os seis automáticos novos; e as nove campanhas diárias
+// da parte 31 (com e sem os dados do acontecimento: simulado, anos de conta, resumo, indicação).
 import assert from 'node:assert/strict'
 import { build } from 'esbuild'
 import { mkdtemp, rm } from 'node:fs/promises'
@@ -174,7 +175,8 @@ try {
   // 4. Frases condicionais somem sem dado: ninguém fala de ranking, horário, área, prova, sequência, serviço, cidade, resumos ou aniversário sem saber.
   const SEM_DADO = [/ranking geral|º no ranking|posição no ranking/i, /à noite|madrugada|de manhã cedo|hora do almoço|à tarde/, /mão e punho|tumores|pé e tornozelo|ortopedia pediátrica/, /no seu horizonte|seu foco é o TEOT|está no seu radar/, /seguidos/, /sem limite/, /\bR[123]\b/, /Hospital|seu serviço/, /Campinas/, /resumos? da Biblioteca|leu o resumo/, /aniversário/, /87 dias/]
   for (const tipo of TODOS) {
-    if (tipo === 'reta_final' || tipo === 'nunca_comecou' || tipo === 'cronograma_pronto' || tipo === 'relatorio') continue // o resumo fala dos temas do período
+    // O resumo fala dos temas do período; a carta de aniversário fala do aniversário (o banco só a manda no dia).
+    if (tipo === 'reta_final' || tipo === 'nunca_comecou' || tipo === 'cronograma_pronto' || tipo === 'relatorio' || tipo === 'aniversario') continue
     for (let semente = 1; semente <= 50; semente++) {
       const carta = gerar(pobre(120, { nome: 'Lia' }), { tipo, semente, marco: 100 })
       for (const re of SEM_DADO) assert.ok(!re.test(carta.corpo), `${tipo} #${semente}: frase sem dado (${re}):\n${carta.corpo}`)
@@ -359,7 +361,11 @@ try {
   tomOk(cartaAntiga.texto, 'carta antiga')
 
   // 12. Os seis automáticos novos: cada um sai com os dados do acontecimento, transacionais sem descadastro e fora da cadência.
-  assert.deepEqual([...auto.TIPOS_AUTOMATICOS], ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo'])
+  const CAMPANHAS = ['assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema']
+  assert.deepEqual([...auto.TIPOS_AUTOMATICOS], ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo', ...CAMPANHAS])
+  assert.deepEqual([...auto.CAMPANHAS_DIARIAS], CAMPANHAS)
+  for (const t of CAMPANHAS) assert.ok(auto.ehCampanhaDiaria(t) && !auto.ehTransacional(t), t)
+  assert.equal(auto.ehCampanhaDiaria('voltou'), false)
   assert.equal(auto.tipoAutomaticoValido('voltou'), 'voltou')
   assert.equal(auto.tipoAutomaticoValido('marco'), null)
   const base = { nome: 'Ana Paula', respondidas: 12, site: SITE, linkDescadastro: desc, hoje: HOJE }
@@ -389,6 +395,59 @@ try {
   // "voltou" nunca diz menos de 10 dias; "primeiras_10" só com 10.
   assert.throws(() => auto.emailAutomatico({ ...base, tipo: 'primeiras_10', respondidas: 9 }), /tipo_nao_combina/)
   assert.ok(/duas semanas|1[0-9] dias/.test(auto.emailAutomatico({ ...base, tipo: 'voltou', respondidas: 50, diasFora: 15, semente: 2 }).texto))
+
+  // 12b. As nove campanhas diárias (parte 31): milhares de sorteios com os dados que o banco manda
+  //      (e sem eles), perfis ricos e pobres; nenhuma é transacional, todas levam descadastro e
+  //      respeitam a cadência; nota do simulado só com 10 acertos e metade ou mais, posição só até 30º.
+  {
+    const ANIV = { ...rico(72), nascimento: '1993-10-15' } // aniversário em HOJE
+    const casosCampanha = {
+      assinou_sem_cronograma: { perfis: [rico(72, { assinante: true, diasParaProva: null, provaCronograma: null }), pobre(30, { nome: 'Caio', assinante: true }), pobre(0, { nome: 'Rui', assinante: true })], esperado: /cronograma/i, link: '#/cronograma' },
+      assinante_parado_7: { perfis: [rico(72, { assinante: true, diasParado: 9 }), pobre(120, { nome: 'Bia', assinante: true, diasParado: 8 }), pobre(3, { nome: 'Leo', assinante: true, diasParado: 15 })], esperado: /semana|dias/i, link: /#\/(revisao|cronograma)/, extra: { diasFora: 9 } },
+      simulado_resultado: { perfis: [rico(72), pobre(40, { nome: 'Caio' }), pobre(0)], esperado: /Simulado Nacional|simulado/, link: '#/simulado-nacional', campanhas: [{ simulado: { acertos: 41, total: 60, posicao: 12, participantes: 180 } }, { simulado: { acertos: 20, total: 60, posicao: null } }, { simulado: { acertos: 8, total: 10, posicao: 45 } }, {}] },
+      vespera_prova: { perfis: [rico(72, { diasParaProva: 1 }), pobre(50, { nome: 'Lia', diasParaProva: 1, provaCronograma: 'TARO' }), pobre(0)], esperado: /amanhã/i, link: null },
+      depois_prova: { perfis: [rico(72, { diasParaProva: null }), pobre(50, { nome: 'Lia', provaCronograma: 'TARO' }), pobre(1)], esperado: /como foi|passou/i, link: null },
+      aniversario: { perfis: [ANIV, pobre(50, { nome: 'Lia', nascimento: '1994-10-15' }), pobre(0, { nascimento: '1990-10-15' })], esperado: /aniversário|parabéns/i, link: null },
+      um_ano: { perfis: [rico(72, { diasConta: 365 }), pobre(40, { nome: 'Caio', diasConta: 731 }), pobre(2, { diasConta: 366 })], esperado: /ano/i, link: null, campanhas: [{ anos: 1 }, { anos: 2 }, { anos: 3 }, {}] },
+      indicacao_deu_certo: { perfis: [rico(72), pobre(25, { nome: 'Caio' }), pobre(0)], esperado: /20 questões/, link: '#/indicar', campanhas: [{ cortesia: true }, { cortesia: false }, {}] },
+      resumo_do_tema: { perfis: [rico(72), pobre(60, { nome: 'Caio', areas: [{ slug: 'trauma', total: 60, certas: 30 }] }), pobre(12)], esperado: /resumo/i, link: /#\/resumos/, campanhas: [{ resumo: { id: 'rockwood10-45-fraturas-mao', titulo: 'Fraturas da mão', especialidade: 'mao' } }, { resumo: { id: 'x', titulo: null, especialidade: 'trauma' } }, {}] },
+    }
+    assert.deepEqual(Object.keys(casosCampanha), CAMPANHAS)
+    let campanhasConferidas = 0
+    for (const [tipo, caso] of Object.entries(casosCampanha)) {
+      const versoes = new Set()
+      for (const perfil of caso.perfis) for (const campanha of caso.campanhas ?? [{}]) for (let s = 1; s <= 60; s++) {
+        const e = auto.emailAutomatico({ ...base, nome: perfil.nome, respondidas: perfil.respondidas, perfil, tipo, semente: s, campanha, diasFora: caso.extra?.diasFora })
+        const contexto = `${tipo} #${s} (${perfil.respondidas} questões, ${JSON.stringify(campanha)})`
+        conferirAuto(e, contexto)
+        const corpo = e.texto.split('\n\nUm abraço,')[0] + '\n\n' + (e.texto.match(/^P\.S\.:.*$/m) ?? [''])[0]
+        conferir({ tipo, assunto: e.assunto, corpo: corpo.trim(), personalizacao: [] }, contexto, perfil)
+        assert.match(e.texto, caso.esperado, contexto)
+        assert.ok(e.texto.includes(desc), `${tipo} sem descadastro`)
+        assert.ok(e.modelo === tipo && e.versao.startsWith(`${tipo}#`), tipo)
+        if (caso.link) assert.ok(typeof caso.link === 'string' ? e.texto.includes(caso.link) : caso.link.test(e.texto), `${contexto}: sem o link certo\n${e.texto}`)
+        if (tipo === 'aniversario') assert.ok(m.contarLinks(e.texto.split('\n\n--')[0]) === 0, `aniversário com link:\n${e.texto}`)
+        if (tipo === 'simulado_resultado') {
+          const sim = campanha.simulado
+          if (!sim || sim.acertos < 10 || sim.acertos * 2 < sim.total) assert.ok(!/acertou \d/.test(e.texto), `${contexto}: nota que não é motivo de orgulho\n${e.texto}`)
+          if (!sim || !(sim.posicao <= 30)) assert.ok(!/\dº (lugar|no Simulado)/.test(e.texto + e.assunto), `${contexto}: posição fora dos 30 primeiros\n${e.texto}`)
+        }
+        if (tipo === 'resumo_do_tema' && campanha.resumo?.id === 'rockwood10-45-fraturas-mao') assert.ok(e.texto.includes('#/resumos/rockwood10-45-fraturas-mao'), `${contexto}: link do resumo`)
+        if (tipo === 'resumo_do_tema' && campanha.resumo?.id === 'x') assert.ok(!e.texto.includes('#/resumos/x'), `${contexto}: id inválido no link`)
+        if (tipo === 'um_ano' && campanha.anos === 2) assert.match(e.texto + e.assunto, /dois anos/i, contexto)
+        if (tipo === 'vespera_prova' && perfil.provaCronograma === 'TARO') assert.match(e.texto, /TARO/, contexto)
+        if (tipo === 'assinante_parado_7') assert.ok(!/\b(faz|há) (um dia|[1-6] dias)\b/i.test(e.texto), `${contexto}: parado há menos de uma semana\n${e.texto}`)
+        versoes.add(e.versao); campanhasConferidas++
+      }
+      const total = m.versoesDe(tipo, null).length
+      assert.ok(total >= 5 && total <= 7, `${tipo}: ${total} versões`)
+      assert.equal(versoes.size, total, `${tipo}: nem todas as versões saíram`)
+      // Não transacional: a cadência barra.
+      assert.throws(() => auto.emailAutomatico({ ...base, tipo, anteriores: [envio(10)], campanha: {} }), /cadencia_bloqueada/, `${tipo} passou pela cadência`)
+      assert.match(auto.automaticoBloqueado(tipo, [envio(24 * 3), envio(24 * 6), envio(24 * 10)], HOJE) ?? '', /14 dias/, `${tipo}: 3 em 14 dias`)
+    }
+    assert.ok(campanhasConferidas >= 3000, `poucas campanhas conferidas (${campanhasConferidas})`)
+  }
 
   // 13. Tom e porcentagens, em milhares de sorteios de todas as situações, faixas e fatos.
   const baixoComArea = (pct, extra = {}) => ({ ...rico(pct), areas: [{ slug: 'mao', total: 60, certas: 50 }, { slug: 'coluna', total: 60, certas: 6 }], ...extra })
@@ -433,7 +492,7 @@ try {
   for (const tipo of ['ativo', 'convite_50', 'voltou', 'marco', 'opiniao', 'obrigado_assinatura'])
     for (let s = 1; s <= 200; s++) semRedundancia(gerar({ ...puxaFeliz, diasParado: tipo === 'voltou' ? 15 : 0 }, { tipo, semente: s, marco: 250 }).corpo, `${tipo} puxa-feliz #${s}`)
 
-  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length} automáticos novos), ${conferidas} cartas conferidas: lista proibida do TOM, nenhuma porcentagem abaixo de 50% (${baixos} cartas), nenhum número de questões abaixo de 10, 6 a 12 linhas, um P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias), P.S. sem repetir o corpo, nenhuma palavra forte em frases seguidas e tom em ${sorteios} sorteios.`)
+  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length - auto.CAMPANHAS_DIARIAS.length} automáticos novos e ${auto.CAMPANHAS_DIARIAS.length} campanhas diárias), ${conferidas} cartas conferidas: lista proibida do TOM, nenhuma porcentagem abaixo de 50% (${baixos} cartas), nenhum número de questões abaixo de 10, 6 a 12 linhas, um P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias), P.S. sem repetir o corpo, nenhuma palavra forte em frases seguidas e tom em ${sorteios} sorteios.`)
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
