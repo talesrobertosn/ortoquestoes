@@ -33,6 +33,6 @@ A grande final é a prova teórica do TEOT e do TEPOT, em 10 de janeiro de 2027.
 
 ## Conferência
 
-- Feed: `pe-tornozelo-0185` (TEOT 2024). Enunciado e alternativas iguais ao acervo; gabarito A, solear (sóleo). Explicações do comentário.
-- Stories: `joelho-0206` (TARO 2025). Gabarito D, Rosenberg. O enunciado do acervo termina com um resto da referência ("Alegre: Artmed, 2013."), que ficou fora da arte; a fonte da figura aparece por extenso. Explicações do comentário.
+- Feed: `pe-tornozelo-0185` (TEOT 2024). Enunciado e alternativas iguais ao acervo; gabarito A, solear (sóleo). Explicações do comentário da gêmea trauma-1035 (o comentário da joelho-0206 chama Insall de axial; Insall é o perfil para a altura patelar).
+- Stories: `joelho-0206` (TARO 2025). Gabarito D, Rosenberg. O enunciado do acervo termina com um resto da referência ("Alegre: Artmed, 2013."), que ficou fora da arte; a fonte da figura aparece por extenso. Explicações do comentário da gêmea trauma-1035 (o comentário da joelho-0206 chama Insall de axial; Insall é o perfil para a altura patelar).
 - Sem percentual de votação inventado; nenhum desenho de anatomia; cronograma citado sem dizer que é grátis.
