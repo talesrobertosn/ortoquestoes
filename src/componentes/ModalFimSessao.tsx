@@ -44,7 +44,7 @@ export function ModalFimSessao({ total, acertos, simulado, nome = '', melhorTema
   const placas: Array<{ valor: string; rotulo: string }> = [
     { valor: porExtenso(total), rotulo: total === 1 ? 'questão' : 'questões' },
   ]
-  if (!simulado && acertos !== null && acertos > 0) placas.push({ valor: porExtenso(acertos, 'm'), rotulo: acertos === 1 ? 'acerto' : 'acertos' })
+  if (!simulado && acertos !== null && acertos > 0 && taxa !== null && taxa >= 50) placas.push({ valor: porExtenso(acertos, 'm'), rotulo: acertos === 1 ? 'acerto' : 'acertos' })
   if (!simulado && taxa !== null && taxa >= 50 && total >= 5) placas.push({ valor: `${taxa}%`, rotulo: 'de acerto' })
   return createPortal(
     <div className="cf-email__veu" role="presentation">
