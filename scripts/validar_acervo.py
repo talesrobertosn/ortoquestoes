@@ -145,6 +145,19 @@ def conferir_comentarios(
     return erros, avisos, total
 
 
+def tamanho_imagem(caminho: Path) -> tuple[int, int] | None:
+    """Largura e altura da imagem, ou None se não der para ler (Pillow ausente, formato estranho)."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return None
+    try:
+        with Image.open(caminho) as imagem:
+            return imagem.size
+    except Exception:  # noqa: BLE001
+        return None
+
+
 def principal() -> int:
     taxonomia = carregar_taxonomia()
     subtemas_validos = {s for t in taxonomia["temas"] for s in t["subtemas"]}
@@ -256,6 +269,15 @@ def principal() -> int:
                 caminho = DIR_IMAGENS / imagem.get("arquivo", "")
                 if not caminho.exists():
                     erros.append(f"{onde}: imagem ausente no disco: {imagem.get('arquivo')}")
+                elif imagem.get("largura") and imagem.get("altura"):
+                    # Tamanho diferente do registrado = o arquivo foi sobrescrito por outra
+                    # questão (ids renumerados que reaproveitaram o nome; ombro-cotovelo-0320, 18/10/2026).
+                    real = tamanho_imagem(caminho)
+                    if real and real != (imagem["largura"], imagem["altura"]):
+                        erros.append(
+                            f"{onde}: {imagem['arquivo']} tem {real[0]}x{real[1]}, mas a questão registra "
+                            f"{imagem['largura']}x{imagem['altura']} (imagem trocada?)"
+                        )
 
             if questao.get("ano") is None:
                 avisos.append(f"{onde}: sem ano")
