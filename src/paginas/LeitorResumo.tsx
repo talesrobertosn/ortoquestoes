@@ -14,6 +14,10 @@ import { usarPremium } from '../conta/premium'
 import { ConvitePremium } from '../componentes/Premium'
 import { usarSessao } from '../estado/sessao'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
+import { usarConta } from '../conta/ContextoConta'
+import { contasDisponiveis } from '../conta/supabase'
+import { calcularPorta, linkDaPorta, SECOES_ABERTAS } from '../biblioteca/porta'
+import { PortaLeitura } from '../biblioteca/PortaLeitura'
 import '../estilos/paginas/Resumos.css'
 
 const QuestaoDireta = lazy(() => import('./QuestaoDireta').then((m) => ({ default: m.QuestaoDireta })))
@@ -82,6 +86,10 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const { indice } = usarIndice()
   // Resumos abertos para todos (pedido do Tales, 16/10/2026); resolver as questões citadas é do assinante.
   const { premium } = usarPremium()
+  // Visitante (sem conta) lê as SECOES_ABERTAS primeiras partes; a conta grátis abre o resto (Tales, 19/10/2026).
+  const { sessao } = usarConta()
+  const porta = useMemo(() => calcularPorta(capitulo.secoes, contasDisponiveis && !sessao, blocoInicial), [capitulo.secoes, sessao, blocoInicial])
+  const secoesVisiveis = porta.fechado ? capitulo.secoes.slice(0, porta.abertas) : capitulo.secoes
   const bib = usarBiblioteca()
   const { preferencias: prefSalva, definirPreferencias } = bib
   // Primeira vez no leitor: o tema acompanha o do site (escuro abre escuro).
@@ -201,8 +209,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     if (abriu.current || !geometria.largura) return
     abriu.current = true
     medirPaginas()
-    const alvo = blocoInicial && elementoDoBloco(blocoInicial) ? blocoInicial : leitura?.bloco
-    if (alvo) requestAnimationFrame(() => irPara(alvo, blocoInicial ? 0 : leitura?.deslocamento ?? 0, !!blocoInicial))
+    // Link (?bloco=) para uma parte fechada ao visitante: abre direto na porta, que diz qual parte era.
+    const alvo = porta.pedida ? 'porta' : blocoInicial && elementoDoBloco(blocoInicial) ? blocoInicial : leitura?.bloco
+    if (alvo) requestAnimationFrame(() => irPara(alvo, blocoInicial ? 0 : leitura?.deslocamento ?? 0, !!blocoInicial && !porta.pedida))
     if (!blocoInicial && leitura?.bloco && (leitura.progresso ?? 0) > 2) {
       const secao = capitulo.secoes.find((s) => s.id === secaoDe.get(leitura.bloco) || `h-${s.id}` === leitura.bloco)
       definirAviso({ texto: `Continuando de onde você parou${secao ? `: ${secao.titulo}` : ''}.`, acao: { rotulo: 'Ir ao início', fazer: () => { const el = rolagem.current; if (el) { el.scrollTop = 0; el.scrollLeft = 0; definirPaginas((p) => ({ ...p, atual: 0 })) } } } })
@@ -232,9 +241,13 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     const tempo = retirarTempo(cronometro.current, forcar)
     if (!p && !tempo) return
     const pct = Math.round(progressoAtual())
-    bib.salvarLeitura(capitulo.id, p ? { bloco: p.bloco, deslocamento: Math.round(p.fracao * 100) / 100, progresso: pct, ...(pct >= 98 && !leitura?.concluidoEm ? { concluidoEm: Date.now() } : {}) } : {}, tempo)
-  }, [capitulo.id, leitura?.concluidoEm]) // eslint-disable-line react-hooks/exhaustive-deps
+    bib.salvarLeitura(capitulo.id, p ? { bloco: p.bloco, deslocamento: Math.round(p.fracao * 100) / 100, progresso: pct, ...(pct >= 98 && !leitura?.concluidoEm && !porta.fechado ? { concluidoEm: Date.now() } : {}) } : {}, tempo)
+  }, [capitulo.id, leitura?.concluidoEm, porta.fechado]) // eslint-disable-line react-hooks/exhaustive-deps
+  /** Com a porta, o fim do texto visível é a parte 6, não o fim do resumo: o progresso conta só a fração aberta. */
   function progressoAtual() {
+    return progressoDaTela() * (porta.fechado ? porta.abertas / capitulo.secoes.length : 1)
+  }
+  function progressoDaTela() {
     const el = rolagem.current
     if (!el) return 0
     const pg = paginasRef.current
@@ -474,8 +487,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
             <p className="lr-capa__ref">A partir de <cite>{capitulo.livro}</cite>, {capitulo.edicao}. {capitulo.capitulo}. {capitulo.autores}.</p>
             <p className="lr-capa__meta"><span>~{capitulo.minutos} min de leitura</span>{idsDoCapitulo.length > 0 && <span>{idsDoCapitulo.length} questões citadas</span>}{leitura?.concluidoEm && <span className="lr-capa__ok"><Icone nome="certo" tamanho={14} /> Concluído</span>}</p>
             <p className="lr-capa__dica">Selecione qualquer trecho para destacar ou anotar. Tudo fica salvo na sua conta.</p>
+            {porta.fechado && <p className="lr-capa__porta">Sem conta, você lê as {SECOES_ABERTAS} primeiras das {capitulo.secoes.length} partes. A leitura completa é grátis com a conta: <a href={href(linkDaPorta('criar', capitulo.id, porta))}>criar conta grátis</a>.</p>}
           </header>
-          {capitulo.secoes.map((s) => {
+          {secoesVisiveis.map((s) => {
             const reais = new Set(s.blocos.flatMap((b) => b.tipo === 'questoes' ? questoesReais(b) : []))
             return (
               <section key={s.id} className="lr-secao" id={`secao-${s.id}`} aria-labelledby={`t-${s.id}`}>
@@ -487,8 +501,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
               </section>
             )
           })}
-          {capitulo.subtemas?.length ? <FrasesDoTema subtemas={capitulo.subtemas} /> : null}
-          <footer className="lr-fim" data-bloco="fim">
+          {porta.fechado && <PortaLeitura capitulo={capitulo.id} numeroCapitulo={capitulo.capitulo.match(/\d+/)?.[0]} porta={porta} restantes={capitulo.secoes.slice(porta.abertas)} />}
+          {!porta.fechado && capitulo.subtemas?.length ? <FrasesDoTema subtemas={capitulo.subtemas} /> : null}
+          {porta.fechado ? <p className="lr-capa__ref">Texto autoral do OrtoQuestões, com as ideias e os números do capítulo; não substitui a leitura do original.</p> : <footer className="lr-fim" data-bloco="fim">
             <div className="lr-fim__cartao">
               <Icone nome="certo" tamanho={22} />
               <div><strong>{leitura?.concluidoEm ? 'Capítulo concluído' : 'Fim do resumo'}</strong><span>Agora, fixe com as questões: elas voltam na revisão no tempo certo.</span></div>
@@ -499,7 +514,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
               <a className="botao" href={href('/resumos')}>Outros resumos</a>
             </div>
             <p className="lr-capa__ref">Fonte: {capitulo.fonte}. Texto autoral do OrtoQuestões, com as ideias e os números do capítulo; não substitui a leitura do original.</p>
-          </footer>
+          </footer>}
         </article>
       </div>
 
@@ -508,7 +523,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
         <span className="numerico">{paginas.atual + 1} de {paginas.total} · ~{minutosRestantes} min restantes</span>
         <button type="button" className="lr-botao" onClick={() => mudarPagina(1)} disabled={paginas.atual >= paginas.total - 1} aria-label="Próxima página"><Icone nome="direita" tamanho={20} /></button>
       </nav>}
-      {!paginado && progresso > 1 && progresso < 99 && <p className="lr-restante numerico" aria-hidden="true">{Math.round(progresso)}% · ~{minutosRestantes} min restantes</p>}
+      {!paginado && !porta.fechado && progresso > 1 && progresso < 99 && <p className="lr-restante numerico" aria-hidden="true">{Math.round(progresso)}% · ~{minutosRestantes} min restantes</p>}
       {foco && <button type="button" className="lr-sair-foco" onClick={() => definirFoco(false)}>Sair da concentração</button>}
 
       {selecao && <MenuSelecao selecao={selecao} reassociando={!!reassociar} temQuestoes={!!questoesDaSecao(selecao.secao)} aoCor={(c) => destacar(c)} aoNota={() => destacar('amarelo', true)} aoCopiar={() => { copiar(selecao.texto); limparSelecao() }}
@@ -520,13 +535,13 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
       {painel && <aside className={`lr-painel lr-painel--${painel}`} aria-label={painel === 'indice' ? 'Índice' : painel === 'notas' ? 'Marcações e notas' : painel === 'busca' ? 'Buscar' : 'Aparência'}>
         <header className="lr-painel__topo"><strong>{painel === 'indice' ? 'Índice' : painel === 'notas' ? 'Marcações e notas' : painel === 'busca' ? 'Buscar no capítulo' : 'Aparência'}</strong><button type="button" className="lr-botao" onClick={() => definirPainel(null)} aria-label="Fechar"><Icone nome="fechar" tamanho={18} /></button></header>
-        {painel === 'indice' && <ol className="lr-indice">{capitulo.secoes.map((s) => <li key={s.id} className={progressoSecoes.has(s.id) ? 'lr-indice--lida' : ''}>
-          <button type="button" onClick={() => { irPara(`h-${s.id}`); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null) }}><span>{s.titulo}</span><i className={`lr-ponto lr-ponto--${s.radar}`} title={RADAR[s.radar].rotulo} /></button>
-        </li>)}</ol>}
+        {painel === 'indice' && <ol className="lr-indice">{capitulo.secoes.map((s, i) => { const fechada = i >= porta.abertas; return <li key={s.id} className={fechada ? 'lr-indice--fechada' : progressoSecoes.has(s.id) ? 'lr-indice--lida' : ''}>
+          <button type="button" onClick={() => { irPara(fechada ? 'porta' : `h-${s.id}`, 0, fechada); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null) }} aria-label={fechada ? `${s.titulo} (crie a conta grátis para ler)` : undefined}><span>{s.titulo}</span>{fechada && <span className="lr-indice__cadeado" title="Leitura completa grátis com conta"><Icone nome="cadeado" tamanho={14} /></span>}<i className={`lr-ponto lr-ponto--${s.radar}`} title={RADAR[s.radar].rotulo} /></button>
+        </li> })}</ol>}
         {painel === 'busca' && <div className="lr-busca">
           <input type="search" autoFocus value={busca} onChange={(e) => definirBusca(e.target.value)} placeholder="Ex.: Garden, Pauwels, cimentada" aria-label="Buscar no capítulo" />
           {busca.trim().length >= 2 && <p className="lr-busca__n">{resultados.length ? `${resultados.length} ${resultados.length === 1 ? 'trecho' : 'trechos'}` : 'Nada encontrado neste capítulo.'}</p>}
-          <ul>{resultados.slice(0, 60).map((r) => <li key={r.bloco}><button type="button" onClick={() => { irPara(r.bloco, 0, true); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null) }}><small>{r.secao}</small><span>…{r.antes}<mark>{r.achado}</mark>{r.depois}…</span></button></li>)}</ul>
+          <ul>{resultados.slice(0, 60).map((r) => <li key={r.bloco}><button type="button" onClick={() => { irPara(elementoDoBloco(r.bloco) ? r.bloco : 'porta', 0, true); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null) }}><small>{r.secao}</small><span>…{r.antes}<mark>{r.achado}</mark>{r.depois}…</span></button></li>)}</ul>
         </div>}
         {painel === 'notas' && <PainelNotas resolvidas={resolvidas} ordem={ordem} orfas={orfas} capitulo={capitulo} aoIr={(m, r) => { const t = r.trechos[0]; if (t) irPara(t.bloco, 0, true); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null); void m }}
           aoReassociar={(idM) => { definirReassociar(idM); definirPainel(null); definirAviso({ texto: 'Selecione no texto o trecho novo e toque em "Associar aqui".' }) }} aoApagar={(idM) => { bib.apagarMarca(idM); definirAviso({ texto: 'Marcação removida.', desfazer: () => bib.restaurarMarca(idM) }) }} />}

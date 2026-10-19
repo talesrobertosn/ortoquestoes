@@ -344,7 +344,10 @@ def pagina_resumo(capitulo: dict, data: str, nomes_area: dict[str, str], acervo:
         "acervo; resolvê-las, ver o gabarito da banca e o comentário de cada alternativa é na plataforma. No leitor do Orto Questões o "
         "mesmo resumo tem marcações, notas e as questões no meio do texto.</p>"
         f'<a class="acao" href="{link_app(cid, raiz)}">Abrir no leitor</a>'
-        f'<a class="acao clara" href="{criar_conta(cid, raiz)}">Criar conta grátis</a></div>'
+        f'<a class="acao clara" href="{criar_conta(cid, raiz)}">Criar conta grátis</a>'
+        # Desde 19/10/2026 o leitor do aplicativo abre só as 6 primeiras partes para quem não tem conta
+        # (src/biblioteca/porta.ts); esta página continua com o texto inteiro.
+        '<p class="meta">No leitor do aplicativo, quem não tem conta lê as 6 primeiras partes; a leitura completa é grátis com a conta.</p></div>'
     )
     corpo.append("<h2>Continue estudando</h2><ul class=\"temas\">")
     for o in outros:
@@ -397,7 +400,7 @@ def pagina_indice(capitulos: list[dict], data: str, nomes_area: dict[str, str], 
         f'<a class="acao" href="{raiz}#/resumos">Abrir a Biblioteca no aplicativo</a>'
         f'<a class="acao clara" href="{criar_conta(None, raiz)}">Criar conta grátis</a>'
     )
-    corpo.append('<p class="meta">No leitor do aplicativo: marcações, notas e as questões no meio do texto.</p>')
+    corpo.append('<p class="meta">No leitor do aplicativo: marcações, notas e as questões no meio do texto. A leitura completa no aplicativo é grátis com a conta.</p>')
     por_area: dict[str, list[dict]] = {}
     for c in capitulos:
         por_area.setdefault(c["especialidade"], []).append(c)

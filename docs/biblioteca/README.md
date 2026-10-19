@@ -17,6 +17,12 @@ estão no fim deste arquivo. A fila de temas e o que já foi enviado estão em [
    (`scripts/gerar_resumos_seo.py`, gerada no deploy). **Resolver as questões citadas é do assinante**: no leitor,
    "Fazer a questão" e "Treinar o capítulo" mostram o convite da assinatura para quem não assina.
    (O limite antigo de 5 grátis caiu; o campo `acesso` continua, caso um resumo precise voltar a ser fechado.)
+   **Porta para visitantes (Tales, 19/10/2026):** no leitor do app, quem não tem conta lê as **6 primeiras partes**
+   (seções de `secoes`, na ordem de leitura) de cada resumo; da 7ª em diante aparece o convite "Criar conta grátis
+   e continuar lendo", que volta para a 7ª parte (ou a parte pedida num `?bloco=`) depois de entrar. O índice mostra
+   todas as partes, com cadeado nas fechadas. Conta grátis ou assinante lê tudo. A página estática do Google
+   continua com o texto inteiro e só ganhou uma linha avisando. Lógica em `src/biblioteca/porta.ts`
+   (teste `fixtures/testar_porta_resumos.mjs`), painel em `src/biblioteca/PortaLeitura.tsx`.
 3. **Pode e deve citar as questões no meio do resumo**, com botão para fazer a questão (ela abre num
    painel, sem perder o lugar da leitura).
 4. Texto **autoral**, em português, na ordem em que a prova cobra; não traduzir o livro nem copiar trechos
