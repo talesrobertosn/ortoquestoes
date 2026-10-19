@@ -23,7 +23,7 @@ const GRUPOS: { titulo: string; lide: string; itens: Recurso[] }[] = [
     titulo: 'Estudar',
     lide: 'Questão de prova e o que errou de volta na hora certa.',
     itens: [
-      { titulo: 'Treinar', texto: 'Provas oficiais e OrtoQuestões Simulados, por prova, tema e ano.', destino: '/treinar', icone: 'livro' },
+      { titulo: 'Treinar', texto: 'Provas oficiais e OrtoQuestões Simulados (inclusive os do SIMÃO, de cirurgia da mão), por prova, tema e ano.', destino: '/treinar', icone: 'livro' },
       { titulo: 'Revisar hoje', texto: 'O que você errou ou acertou na dúvida volta no dia certo.', destino: '/revisao', icone: 'reiniciar' },
       { titulo: 'Caderno de erros e favoritas', texto: 'O que errou e o que marcou com estrela, pronto para refazer.', destino: '/erros', icone: 'estrela' },
       { titulo: 'Flashcards e o Torneio', texto: 'Cartões com revisão espaçada, calmos ou em forma de jogo.', destino: '/flashcards', icone: 'raio', beta: true },
