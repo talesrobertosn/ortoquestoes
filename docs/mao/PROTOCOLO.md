@@ -10,6 +10,32 @@ página.
 O comando pronto para colar na outra conta está em [docs/prompts/claude-mao-provas.md](../prompts/claude-mao-provas.md).
 O andamento fica em [PROGRESSO.md](PROGRESSO.md). Este arquivo explica o porquê de cada passo.
 
+## 0. Qual prova vira simulado e qual entra com o nome real (regra do Tales, 19/10/2026)
+
+Os arquivos misturam provas. A regra é uma só:
+
+| Banca | O que fazer |
+|---|---|
+| **SBCM** (prova de título da Sociedade Brasileira de Cirurgia da Mão) e **SIMÃO** | **OrtoQuestões Simulados**: questão reescrita com outras palavras, mesmo ano, `simulado: true`, `prova` = `"SBCM"` ou `"SIMÃO"` e `ano` da prova (seções 5 a 8) |
+| **Todas as outras** (ABC, Unesp, USP, UFG, PUC-SP, INTO, Einstein, FMRP, IAUPE, UERJ etc.) | **Questão oficial com o nome real**: texto original, `prova` = nome da instituição, `ano` real, `area: "cirurgia-mao"`, sem `simulado`. Não reescrever |
+
+Para as provas com nome real:
+
+1. **Muitas já estão no site.** Antes de acrescentar, casar com o acervo:
+   `python3 scripts/casar_prova.py CADERNO.pdf --prova "Unesp" --ano 2024` (relatório em `relatorios/`).
+   A questão que já existe não entra de novo; no máximo ganha prova, ano e gabarito oficial que faltavam
+   (`--aplicar`) e comentário, se estiver sem.
+2. As que faltam: `python3 scripts/adicionar_prova.py extrair CADERNO.pdf --prova "Unesp" --ano 2024` e
+   depois `aplicar` com o lote (com `"area": "cirurgia-mao"`, tema, resposta e comentário no padrão da
+   seção 7). Gabarito oficial preservado; sem gabarito, a resposta vem do livro e fica marcada como não
+   oficial. Divergência com o Green vai em `alerta`.
+3. Nome da prova exatamente como já está no acervo (conferir com `scripts/simulados/registro.py` ou no
+   filtro "Prova de origem" do site) para não criar duas grafias da mesma instituição.
+4. Registrar a importação em [docs/importacoes/cirurgia-mao-outubro-2026.md](../importacoes/cirurgia-mao-outubro-2026.md)
+   (ou num arquivo novo do mês) e no [PROGRESSO](PROGRESSO.md).
+5. O caderno original dessas provas também fica só na pasta local (regra 1 abaixo); no acervo entra a
+   questão, como nas provas oficiais que já estão no site.
+
 ## 1. Regras de ouro (nunca quebrar)
 
 1. **Livro, resumo e prova original nunca vão para o GitHub.** Ficam na pasta local
@@ -17,7 +43,7 @@ O andamento fica em [PROGRESSO.md](PROGRESSO.md). Este arquivo explica o porquê
    repositório que não esteja no `.gitignore`. Antes de cada commit: `git status` e conferir que só entraram
    `public/acervo/...`, `docs/mao/...` e lotes. Resumos **feitos por nós** podem ir para o repositório (é
    a Biblioteca do site); os resumos que o Tales mandar, não.
-2. **Nada de prova na íntegra.** Não copiar enunciado nem alternativa. Cada questão é reescrita com outro
+2. **Nada de SBCM ou SIMÃO na íntegra.** Nessas duas, não copiar enunciado nem alternativa (as outras bancas entram com o texto real, seção 0). Cada questão é reescrita com outro
    ângulo (seção 6). O script `copia` barra 7 palavras seguidas iguais ao original.
 3. **Toda afirmação sai do livro ou do resumo enviado**, nunca de memória. Se o fato não está na
    biblioteca, a questão fica "pendente: sem fonte" no PROGRESSO e não é publicada.

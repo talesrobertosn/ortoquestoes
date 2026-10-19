@@ -13,6 +13,10 @@ e publique aos poucos.
 
 PROVA DESTA VEZ: SIMÃO 2024   (arquivo em ~/OrtoQuestoes-Biblioteca/provas/)
 
+REGRA DAS BANCAS: só SBCM e SIMÃO viram OrtoQuestões Simulados (reescritas, mesmo ano). Questões de
+outras instituições (ABC, Unesp, USP etc.) entram com o nome e o texto reais, como prova oficial de
+cirurgia da mão, e muitas já estão no site: case antes com scripts/casar_prova.py (PROTOCOLO, seção 0).
+
 PASSO 1. LEIA ANTES DE QUALQUER COISA, POR INTEIRO:
   - CLAUDE.md e AGENTS.md
   - docs/mao/PROTOCOLO.md  (o roteiro inteiro: siga na ordem, sem pular etapa)

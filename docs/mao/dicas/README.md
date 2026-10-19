@@ -4,7 +4,7 @@ Pedido do Tales (19/10/2026): algumas questões vieram junto com um resumo. O re
 no repositório; aqui fica a nossa reescrita, em palavras próprias, para o Claude do computador principal
 responder e comentar depois com mais segurança.
 
-Um arquivo por prova e ano: `simao-2024.md`, `sbcm-2025.md` etc.
+Vale para qualquer banca (SBCM, SIMÃO ou as outras instituições). Um arquivo por prova e ano: `simao-2024.md`, `sbcm-2025.md` etc.
 
 ## O que cada arquivo tem
 
