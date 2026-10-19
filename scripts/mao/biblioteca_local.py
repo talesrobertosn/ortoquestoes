@@ -333,6 +333,15 @@ def cmd_questoes(a):
     arq = Path(a.arquivo).expanduser()
     if not arq.is_absolute():
         arq = p / arq
+    if arq.suffix.lower() == ".json":  # prova já separada (ex.: SIMAO-2023-questoes.json): só copia para .oq/provas
+        dados = json.load(open(arq, encoding="utf8"))
+        (p / ".oq/provas").mkdir(exist_ok=True)
+        dados["slug"] = a.slug
+        json.dump(dados, open(p / f".oq/provas/{a.slug}.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
+        qs = dados["questoes"]
+        print(f"{len(qs)} questões copiadas; com gabarito: {sum(1 for q in qs if q.get('gabarito_oficial'))}; "
+              f"com alerta: {[q['num'] for q in qs if q.get('alerta')]}")
+        return
     pags, _ = paginas_de(arq)
     t = "\n".join(pags)
     gab = {}
