@@ -153,7 +153,7 @@ conceito: A refratura do antebraço é típica da diáfise, do galho verde e do 
 como: O TARO 2018 perguntou o tipo de fratura que mais refratura (galho verde); o TEOT 2025 repetiu quase o mesmo texto cruzando sexo e tipo (masculino, após galho verde); o TARO 2007 perguntou intervalo, idade, nível e local.
 armadilha: Fratura completa: parece mais grave, mas é o galho verde que refratura mais, pela consolidação enganosa da cortical encurvada.
 armadilha: Sexo feminino: a refratura é três vezes mais comum no menino.
-alerta: O TARO 2007 (pediatria-0729) não tem gabarito oficial no acervo, e a resposta provável do site é a alternativa A (em média três meses). O capítulo diz outra coisa: o intervalo médio é de 6 meses (TREDWELL), a refratura é mais comum na diáfise que na metáfise e passa, na maioria, pelo foco original, e não na junção do calo com o osso normal. Pelo capítulo, a alternativa mais bem sustentada é a B (mais comum em crianças mais velhas, por volta de 12 anos).
+alerta: O TARO 2007 (pediatria-0729) não tem gabarito oficial. A resposta do site era a A (em média três meses), tirada de uma edição antiga; com este capítulo ela passou a ser a B (mais comum na criança mais velha, por volta de 12 anos): o intervalo médio é de 6 meses (TREDWELL), a refratura é mais comum na diáfise que na metáfise e passa, na maioria, pelo foco original, e não na junção do calo com o osso normal.
 !fim
 
 # O exame: rotação, nervos e lesões associadas {radar=confirmado}
