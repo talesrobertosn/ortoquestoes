@@ -625,8 +625,8 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
     }
     case 'horario':
       return {
-        noite: ['Vi que você estuda quase sempre à noite. Conheço bem essa rotina: o dia inteiro no hospital e o estudo esperando no fim dele.', 'Reparei que quase tudo seu sai à noite, quando o dia já acabou. Eu também estudava assim, e sei o que custa.', 'Vi que a noite é o seu horário de estudo. Respeito demais quem encontra esse tempo depois de um dia inteiro.'],
-        madrugada: ['Vi que muita questão sua sai de madrugada, provavelmente no plantão. Admiro a dedicação, e peço com carinho que cuide do sono também.', 'Reparei que você estuda até de madrugada. Já estive aí, e lembro com carinho que o sono também é estudo.'],
+        noite: ['Vi que você estuda quase sempre à noite. É uma rotina pesada: o dia inteiro no hospital e o estudo esperando no fim dele.', 'Reparei que quase tudo seu sai à noite, quando o dia já acabou. Sei o que isso custa, e admiro.', 'Vi que a noite é o seu horário de estudo. Respeito demais quem encontra esse tempo depois de um dia inteiro.'],
+        madrugada: ['Vi que muita questão sua sai de madrugada, provavelmente no plantão. Admiro a dedicação, e peço com carinho que cuide do sono também.', 'Reparei que você estuda até de madrugada. Peço com carinho: lembre que o sono também é estudo.'],
         manha: ['Reparei que você gosta de estudar cedo, antes de o dia começar. É um jeito bonito de proteger o estudo da rotina.', 'Vi que você estuda bastante de manhã cedo, antes de o hospital te engolir. Admiro essa disciplina.'],
         almoco: ['Vi que muita questão sua sai na hora do almoço. Que jeito esperto de encaixar o estudo no único intervalo do dia.', 'Reparei que você aproveita o horário do almoço para estudar. Isso é usar bem o pouco tempo que a residência deixa.'],
         tarde: ['Vi que você costuma estudar à tarde, num ritmo bem constante.', 'Reparei que a tarde é o seu horário de questões. Gosto de ver essa rotina.'],
@@ -641,8 +641,8 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
       }[f.prova!]
     case 'etapa':
       return {
-        r1: ['Sei que o R1 é um ano de muita novidade e pouco tempo, e mesmo assim você está aqui.', 'O R1 é o ano em que a gente aprende a sobreviver ao hospital. Estudar no meio disso tem muito valor.'],
-        r2: ['Sei que o R2 costuma ser o ano mais puxado de plantão, e mesmo assim você encontra tempo.', 'Estudar no meio do R2 não é pouca coisa. Eu lembro bem desse ano.'],
+        r1: ['Sei que o R1 é um ano de muita novidade e pouco tempo, e mesmo assim você está aqui.', 'O R1 é o ano de aprender a sobreviver ao hospital. Estudar no meio disso tem muito valor.'],
+        r2: ['Sei que o R2 costuma ser o ano mais puxado de plantão, e mesmo assim você encontra tempo.', 'Estudar no meio do R2 não é pouca coisa, e você está fazendo.'],
         r3: ['O R3 é o ano do TEOT, e sei como ele pesa. Cada questão agora conta muito.', 'Sei que o R3 é um ano intenso, com a prova no fim dele.'],
         r4: ['Na subespecialidade, o detalhe faz toda a diferença.', 'Estudar no R4 é escolher ir além, e eu admiro isso.'],
         mao: ['Residência de mão pede muito detalhe, e você está encarando com vontade.', 'Na mão, o detalhe é tudo, e dá para ver que você sabe disso.'],

@@ -10,8 +10,10 @@ Vale para todas as versões (`supabase/functions/_shared/cartas-versoes.ts`), pa
 
 ## A voz
 
-Um amigo que já passou pela residência: lembra do plantão, do cansaço e da falta de tempo, e
-escreve a partir disso. Frases curtas, português natural, primeira pessoa, sem gênero presumido,
+Um amigo que entende a rotina de quem estuda: o plantão, o cansaço e a falta de tempo, e
+escreve a partir disso. Regra do Tales (19/10/2026): nenhuma carta diz a profissão ou a etapa
+dele (nada de "sou ortopedista", "quando eu estudava para o TEOT", "na residência eu aprendi");
+sobre ele, só o nome. Frases curtas, português natural, primeira pessoa, sem gênero presumido,
 sem clichê de marketing. Toda carta abre com uma frase sobre o momento da pessoa (a prova que vem,
 o R2, o plantão quando o horário mostra madrugada, o tema que estava estudando) antes de qualquer
 número. Fecho afetuoso e a assinatura fixa "Um abraço, / Tales, do Orto Questões", seguida do P.S.

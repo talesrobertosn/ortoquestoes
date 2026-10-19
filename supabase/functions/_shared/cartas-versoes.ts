@@ -1,7 +1,8 @@
 /**
  * As versões das cartas, escritas à mão e reescritas do zero em 17/10/2026 a pedido do
- * Tales (docs/emails/PLANO.md): a voz é a de um amigo que já passou pela residência,
- * lembra do plantão, do cansaço e da falta de tempo, e escreve a partir disso.
+ * Tales (docs/emails/PLANO.md): a voz é a de um amigo que entende a rotina de quem estuda
+ * (plantão, cansaço, falta de tempo) e escreve a partir disso. Regra do Tales (19/10/2026):
+ * nenhuma versão diz a profissão ou a etapa dele; sobre ele, só o nome.
  *
  * Espinha de toda carta (o motor completa o que faltar):
  *   1. abertura com uma frase sobre o momento da pessoa (prova, etapa, horário, rotina);
@@ -90,7 +91,7 @@ const momento = (c: Ctx): string => {
   if (etapa) return etapa
   return c.um(
     'Imagino que a rotina esteja puxada por aí: hospital de dia, estudo quando sobra.',
-    'Sei como é estudar para prova de título com o dia já cheio. Eu passei por isso, e lembro do cansaço.',
+    'Sei como é estudar para prova de título com o dia já cheio. O cansaço conta, e cada questão feita nele vale mais.',
     'Espero que a semana esteja sendo leve, ou pelo menos possível. Residência raramente deixa ser mais do que isso.',
     'Passei para te escrever num intervalo meu, imaginando que você também lê isso num intervalo seu.',
   )
@@ -235,7 +236,7 @@ const ativo_20_30: Versao[] = [
     corpo: (c) => [
       momento(c),
       c.obs(1) ?? 'Passei para ver como estava o seu estudo, e fiquei feliz com o que vi: você continua aparecendo.',
-      'Queria te dizer uma coisa com carinho: o começo do estudo para prova de título é sempre assim, e é uma fase, não um veredito. Todo mundo que passou viveu isso, inclusive eu.',
+      'Queria te dizer uma coisa com carinho: o começo do estudo para prova de título é sempre assim, e é uma fase, não um veredito. Todo mundo que passou viveu isso.',
       `Uma sugestão, se fizer sentido: escolher o tema que mais te desafia e ficar só nele por uns dias. Concentrar ajuda a enxergar os padrões da banca, e poupa o tempo de decidir o que estudar. Dá para escolher aqui: ${c.link('treinar')}`,
       c.fecho(),
     ] },
@@ -382,7 +383,7 @@ const ativo_40_60: Versao[] = [
     corpo: (c) => [
       momento(c),
       `Olhando ${asSuas(c)}, pensei no que eu faria no seu lugar, e quis dividir.`,
-      'Eu escolheria um horário fixo, mesmo que curto, e protegeria ele como protejo uma cirurgia marcada. Trinta minutos num horário certo valem mais que duas horas espalhadas, principalmente para quem está no meio do caminho.',
+      'Eu escolheria um horário fixo, mesmo que curto, e protegeria ele como um compromisso marcado. Trinta minutos num horário certo valem mais que duas horas espalhadas, principalmente para quem está no meio do caminho.',
       c.obs(1),
       c.dica(),
       c.fecho(),
@@ -627,7 +628,7 @@ const nunca_comecou: Versao[] = [
   { id: 'v2', assuntos: (c) => [nm(c, 'que bom ter você por aqui', 'Que bom ter você por aqui'), nm(c, 'um oi de quem cuida do site', 'Um oi de quem cuida do site')],
     corpo: (c) => [
       momento(c),
-      'Passei para dar um oi. Sou eu que cuido do site, ortopedista também, e gosto de escrever para quem acabou de chegar.',
+      'Passei para dar um oi. Sou eu que cuido do site, e gosto de escrever para quem acabou de chegar.',
       'Fiz o Orto Questões para ser o lugar que eu queria ter tido quando estudava: abrir, fazer cinco questões no intervalo e já saber o que ler. Nenhuma decisão para tomar, só sentar e fazer.',
       'Quando tiver dez minutos livres, que tal cinco questões de um tema de que você goste? É o bastante para pegar o jeito. O resto o site organiza.',
       'E se travar em qualquer coisa, me responde aqui. Vou gostar de ajudar.',
@@ -659,10 +660,10 @@ const nunca_comecou: Versao[] = [
     ] },
   { id: 'v6', requer: (c) => (c.p.diasConta ?? 0) > 3, assuntos: (c) => [nm(c, 'sem pressa', 'Sem pressa'), nm(c, 'quando a rotina der folga', 'Quando a rotina der folga')],
     corpo: (c) => [
-      'Imagino que a rotina esteja puxada desde que você criou a conta. Plantão, aula, vida. Eu lembro bem.',
+      'Imagino que a rotina esteja puxada desde que você criou a conta. Plantão, aula, vida: é assim para quase todo mundo que estuda para prova de título.',
       'Sem pressa nenhuma. Quando der, um começo pequeno já basta: um tema, cinco questões, sem se preocupar com nada. O site guarda tudo, e a Revisão cuida do resto.',
       c.obs(1, ['prova', 'etapa']),
-      'O que eu aprendi na residência é que o estudo que funciona é o que cabe na rotina real, não na rotina ideal. Dez minutos de verdade valem mais que duas horas imaginárias.',
+      'Uma coisa vale para quase todo mundo: o estudo que funciona é o que cabe na rotina real, não na rotina ideal. Dez minutos de verdade valem mais que duas horas imaginárias.',
       c.fecho(),
     ] },
 ]
@@ -679,7 +680,7 @@ const boas_vindas: Versao[] = [
     ] },
   { id: 'v2', assuntos: (c) => [nm(c, 'que bom ter você por aqui', 'Que bom ter você por aqui')],
     corpo: (c) => [
-      'Que bom ter você por aqui. Sou eu que cuido do site, ortopedista também, e gosto de escrever para quem está chegando.',
+      'Que bom ter você por aqui. Sou eu que cuido do site, e gosto de escrever para quem está chegando.',
       J(momento(c), c.obs(1, ['prova', 'etapa', 'cronograma'])),
       `${c.dez ? `As suas primeiras ${Q(c.r)}` : 'As suas primeiras questões'} já estão salvas, e as que te pegaram vão voltar na Revisão no momento certo. Você só precisa sentar e fazer; o resto o site decide.`,
       `A Revisão fica aqui: ${c.link('revisao')}`,
@@ -797,7 +798,7 @@ const comecou_parou: Versao[] = [
   { id: 'v4', assuntos: (c) => [nm(c, 'o começo é sempre assim', 'O começo é sempre assim')],
     corpo: (c) => [
       momento(c),
-      'O começo é sempre assim: alguns dias de empolgação, depois a vida aperta. Acontece com todo mundo, e aconteceu comigo mais de uma vez na residência.',
+      'O começo é sempre assim: alguns dias de empolgação, depois a vida aperta. Acontece com todo mundo, e mais de uma vez.',
       `${guardado(c)}. Quando der, que tal voltar com cinco, de um tema de que você goste? Não precisa recuperar nada, só recomeçar pequeno.`,
       c.tempo(),
       c.fecho(),
@@ -1609,7 +1610,7 @@ const relatorio: Versao[] = [
 const boas_vindas_dia0: Versao[] = [
   { id: 'v1', assuntos: (c) => [nm(c, 'que bom ter você no Orto Questões', 'Que bom ter você no Orto Questões'), nm(c, 'os primeiros dez minutos', 'Os primeiros dez minutos')],
     corpo: (c) => [
-      'Que bom ter você no Orto Questões. Eu sou o Tales, ortopedista, e fiz o site que eu queria ter tido quando estudava para o TEOT: as questões das provas de verdade, cada uma com a explicação de todas as alternativas, não só da certa.',
+      'Que bom ter você no Orto Questões. Eu sou o Tales, e fiz o site com uma ideia simples: as questões das provas de verdade, cada uma com a explicação de todas as alternativas, não só da certa.',
       J(c.fato('prova'), c.fato('etapa')),
       'Se eu pudesse te dar um único conselho para os primeiros dez minutos: faça cinco questões de um tema que você gosta e leia o comentário inteiro, inclusive das alternativas erradas. É ali que mora a pegadinha da banca, e é ali que o estudo começa a render.',
       'O resto vem com calma. A Revisão aprende com o que você erra e traz de volta na hora certa; o Desempenho mostra onde você está crescendo. Você só precisa sentar e fazer.',
@@ -1618,7 +1619,7 @@ const boas_vindas_dia0: Versao[] = [
     ps: () => 'P.S.: este e-mail não é automático de verdade. Se responder, sou eu que leio.' },
   { id: 'v2', assuntos: (c) => [nm(c, 'oi, sou o Tales', 'Oi, sou o Tales'), nm(c, 'um oi de quem fez o site', 'Um oi de quem fez o site')],
     corpo: (c) => [
-      'Oi, sou o Tales. Sou ortopedista, passei pelo TEOT com a rotina que você conhece, e fiz este site para que estudar coubesse nos intervalos que a residência deixa.',
+      'Oi, sou o Tales. Fiz este site para que estudar coubesse nos intervalos que a rotina deixa.',
       J(c.fato('etapa'), c.fato('prova')),
       'O combinado é simples: você senta e estuda, o site decide o resto. Cada questão vem da prova real e explica todas as alternativas. A Revisão guarda o que te pegou e traz de volta na hora certa.',
       'Para hoje, sugiro só uma coisa: um tema de que você goste, cinco questões, comentário lido até o fim. Dez minutos.',
@@ -1627,7 +1628,7 @@ const boas_vindas_dia0: Versao[] = [
     ps: () => 'P.S.: se travar em qualquer coisa, me responde. Eu leio tudo.' },
   { id: 'v3', assuntos: (c) => [nm(c, 'sua conta está pronta', 'Sua conta está pronta'), nm(c, 'por onde começar hoje', 'Por onde começar hoje')],
     corpo: (c) => [
-      'Sua conta está pronta, e eu quis te escrever antes de qualquer coisa automática. Sou o Tales, ortopedista, e cuido do site pessoalmente.',
+      'Sua conta está pronta, e eu quis te escrever antes de qualquer coisa automática. Sou o Tales, e cuido do site pessoalmente.',
       J(momento(c)),
       'Uma coisa que eu gostaria que você soubesse: aqui, errar é barato. Cada questão que te pega vira uma explicação completa e volta na Revisão no momento certo. É na prova que errar custa; aqui, é treino.',
       'Para começar, não planeje nada. Abra um tema que você gosta e faça cinco. Depois me conta como foi, se quiser.',
@@ -1643,9 +1644,9 @@ const boas_vindas_dia0: Versao[] = [
       'E se qualquer coisa ficar confusa, me responde. Eu leio tudo.',
     ],
     ps: () => 'P.S.: a parte do site em que eu mais caprichei foi o comentário das alternativas erradas. Vale ler até o fim.' },
-  { id: 'v5', assuntos: (c) => [nm(c, 'o site que eu queria ter tido', 'O site que eu queria ter tido')],
+  { id: 'v5', assuntos: (c) => [nm(c, 'por que eu fiz o site', 'Por que eu fiz o site')],
     corpo: (c) => [
-      'Eu sou o Tales, ortopedista. Fiz o Orto Questões porque, quando estudava para o TEOT, perdia mais tempo decidindo o que estudar do que estudando. Queria um lugar em que eu abrisse e já soubesse o que fazer.',
+      'Eu sou o Tales. Fiz o Orto Questões porque muita gente perde mais tempo decidindo o que estudar do que estudando. Queria um lugar em que a pessoa abrisse e já soubesse o que fazer.',
       J(momento(c)),
       'É isso que o site tenta ser para você: questões das provas reais, cada alternativa explicada, a Revisão trazendo de volta o que te pegou. Você senta e faz; o resto está decidido.',
       'Para hoje, uma sugestão só: cinco questões de um tema que você gosta, com o comentário lido até o fim. Dez minutos bastam para sentir se o jeito do site combina com você.',
@@ -1720,7 +1721,7 @@ const voltou: Versao[] = [
     corpo: (c) => [
       `Senti sua falta por aqui, e hoje vi que você voltou. Faz ${tempoFora(c.p.diasParado)}, e imagino que a rotina tenha engolido o estudo. Acontece com todo mundo.`,
       c.obs(1, ['prova', 'etapa', 'cronograma', 'melhorArea']),
-      'O que eu aprendi na residência é que o estudo que funciona é o que cabe na rotina real. Então, para voltar, nada de maratona: dez minutos, a Revisão, e pronto.',
+      'Uma coisa vale para quase todo mundo: o estudo que funciona é o que cabe na rotina real. Então, para voltar, nada de maratona: dez minutos, a Revisão, e pronto.',
       `Fica aqui: ${c.link('revisao')}`,
       c.fecho(),
     ] },
@@ -2019,7 +2020,7 @@ const assinou_sem_cronograma: Versao[] = [
   { id: 'v5', assuntos: (c) => [nm(c, 'menos decidir, mais estudar', 'Menos decidir, mais estudar')],
     corpo: (c) => [
       momento(c),
-      'Quando eu estudava para o TEOT, o que mais me tirava tempo era abrir o material e passar quinze minutos escolhendo por onde começar.',
+      'O que mais tira tempo de quem estuda para prova de título é abrir o material e passar quinze minutos escolhendo por onde começar.',
       'Foi por isso que o cronograma entrou no plano: você diz a data da prova, e cada dia já chega decidido. Vi que o seu ainda está por montar, e queria te mostrar como é rápido.',
       `Fica aqui: ${c.link('cronograma')}`,
       'Se não fizer sentido agora, tudo bem também. O resto do plano continua todo seu.',
@@ -2031,7 +2032,7 @@ const assinante_parado_7: Versao[] = [
   { id: 'v1', assuntos: (c) => [nm(c, 'a semana apertou?', 'A semana apertou?'), nm(c, 'tudo certo por aí?', 'Tudo certo por aí?')],
     corpo: (c) => [
       `Faz ${semanaFora(c)} desde a sua última questão, e eu quis só saber se está tudo bem por aí.`,
-      'Semana de plantão, prova da residência, a vida acontecendo: eu sei como é. O plano continua aqui, e nada se perdeu.',
+      'Semana de plantão, prova da residência, a vida acontecendo: faz parte. O plano continua aqui, e nada se perdeu.',
       'Para voltar sem peso, uma sugestão: abra a Revisão e faça dez questões. Ela já separou as que pedem uma segunda olhada, então é só sentar e fazer.',
       `A Revisão fica aqui: ${c.link('revisao')}`,
       c.fecho(),
@@ -2063,7 +2064,7 @@ const assinante_parado_7: Versao[] = [
   { id: 'v5', assuntos: (c) => [nm(c, 'seu lugar está guardado', 'Seu lugar está guardado')],
     corpo: (c) => [
       momento(c),
-      `Faz ${semanaFora(c)} desde a última questão, e eu quis te escrever do jeito que gostaria de ter recebido na residência: sem pressão nenhuma.`,
+      `Faz ${semanaFora(c)} desde a última questão, e eu quis te escrever sem pressão nenhuma.`,
       `${guardado(c)}, o Caderno de erros continua lá e a Revisão segue separando o que vale uma segunda olhada.`,
       'Quando der, cinco questões já recolocam tudo em movimento. Não precisa ser hoje, nem ser muito.',
       `Fica aqui: ${c.link('revisao')}`,
@@ -2231,7 +2232,7 @@ const aniversario: Versao[] = [
   { id: 'v4', assuntos: (c) => [nm(c, 'hoje é dia de comemorar', 'Hoje é dia de comemorar')],
     corpo: (c) => [
       J(usaAniversario(c), 'Vi que hoje é o seu aniversário, e quis te mandar um abraço daqui.'),
-      'Na correria da residência, a gente às vezes esquece de parar e reparar no caminho. Então hoje eu reparo por você: estudar com a rotina que você tem já é uma conquista.',
+      'Na correria da rotina, é fácil esquecer de parar e reparar no caminho. Então hoje eu reparo por você: estudar com a rotina que você tem já é uma conquista.',
       'Que este ano traga descanso, gente querida por perto e boas notícias.',
       c.fecho(),
       'Feliz aniversário.',

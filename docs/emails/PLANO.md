@@ -11,8 +11,8 @@ presumido, "vou ser sincero"). As de baixo entram por cima delas.
 
 ## 1. As nove decisões
 
-1. **A voz é a de um amigo que já passou pela residência.** Lembra do plantão, do cansaço e da falta de
-   tempo, e escreve a partir disso. Toda carta abre com uma frase sobre o momento da pessoa antes de
+1. **A voz é a de um amigo que entende a rotina de quem estuda.** Fala do plantão, do cansaço e da falta de
+   tempo, e escreve a partir disso. Desde 19/10/2026, nunca diz a profissão ou a etapa do Tales. Toda carta abre com uma frase sobre o momento da pessoa antes de
    qualquer número.
 2. **Cartas maiores, com uma espinha fixa.** De 3–5 linhas para 6–9 (nunca mais de 12): abertura pessoal;
    o que eu vi no estudo dela; uma ideia prática sobre tempo ou facilidade; um convite leve (quando
