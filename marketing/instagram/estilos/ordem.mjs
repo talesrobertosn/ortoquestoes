@@ -18,7 +18,8 @@ const livre = (estilo) => !ultimoUso[estilo] || dias(ultimoUso[estilo], hoje) >=
 
 function proximo(fila) {
   const lista = ordem[fila]
-  const combinado = ordem.combinados.find((c) => c.fila === fila && !(ultimoUso[c.estilo] >= c.data))
+  // Só vale a partir do dia combinado, e até ser usado.
+  const combinado = ordem.combinados.find((c) => c.fila === fila && c.data <= hoje && !(ultimoUso[c.estilo] >= c.data))
   if (combinado) return { estilo: combinado.estilo, nota: `combinado para ${combinado.data}: ${combinado.nota}` }
   // Parte do último estilo da fila que foi usado e segue a volta.
   let inicio = -1, maisRecente = ''

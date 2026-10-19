@@ -346,7 +346,7 @@ export function Sessao() {
   }, [questoes, sessao, posicao])
 
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
-  const painelAberto = mapaAberto || atalhosAbertos || limiteAberto
+  const painelAberto = mapaAberto || atalhosAbertos || ajustesAbertos || limiteAberto
   const simulado = !!sessao?.simulado
   // Fim de sessão: ao responder a última, o pop-up abre no meio da tela (uma vez
   // por sessão); quem prefere ler o comentário antes ganha o botão flutuante.
@@ -726,9 +726,9 @@ export function Sessao() {
                 <span className="sx-aviso sx-aviso--dica" role="status"><kbd>←</kbd><kbd>→</kbd> trocam de questão</span>
               ) : elogio ? (
                 <span className="sx-aviso sx-aviso--elogio" aria-hidden="true"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" />{elogio}</span>
-              ) : combo >= 3 ? (
+              ) : preferencias.placar && combo >= 3 ? (
                 <span className="barra-sessao__combo sx-vivo__combo" title="Acertos seguidos nesta sessão"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {porExtenso(combo)} seguidas</span>
-              ) : !simulado && acertosSessao > 0 && acertosSessao * 2 >= respondidas ? (
+              ) : preferencias.placar && !simulado && acertosSessao > 0 && acertosSessao * 2 >= respondidas ? (
                 <span className="sx-vivo__placar"><Icone nome="certo" tamanho={13} /> {porExtenso(acertosSessao, 'm')} {acertosSessao === 1 ? 'acerto' : 'acertos'}</span>
               ) : nacional ? (
                 <span className={'sx-vivo__salvo' + (salvamento.situacao === 'sem-rede' ? ' sx-vivo__salvo--alerta' : '')} title={textoSalvamento(salvamento)}><Icone nome={salvamento.situacao === 'sem-rede' ? 'alerta' : 'certo'} tamanho={13} /> {salvamento.situacao === 'sem-rede' ? 'Sem conexão' : salvamento.situacao === 'salvo' ? 'Salvo' : 'Salvando…'}</span>

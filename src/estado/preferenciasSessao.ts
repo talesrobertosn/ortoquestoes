@@ -87,6 +87,11 @@ export function usarPomodoro(ligado: boolean, som: boolean) {
     definirAgora(Date.now())
   }, [])
 
+  // Esconder o Pomodoro também o pausa: escondido, ninguém veria o fim da fase nem ouviria o aviso.
+  useEffect(() => {
+    if (!ligado && correndo(estado)) mudar(pausar)
+  }, [ligado, estado, mudar])
+
   useEffect(() => {
     if (!ligado || !correndo(estado)) return
     const passo = () => {
