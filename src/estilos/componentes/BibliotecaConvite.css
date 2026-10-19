@@ -1,0 +1,276 @@
+/* Biblioteca: convite no fim da questão (16/10/2026; o livro em pixel art, 19/10/2026).
+   Arquivo próprio para não pesar no CSS global: só a tela da questão (carregada sob demanda) o importa. */
+
+/* ---------- Convite no fim da questão ---------- */
+/* O livro é pixel art feita em CSS (19/10/2026, pedido do Tales: "um livro bonito, com escrito Rockwood,
+   Fratura do tornozelo, Capítulo, que mexa, e que abra bonito ao clicar"). Tudo medido em --u, o "pixel"
+   do desenho: lombada com nervuras de ouro, capa na cor da área com moldura de ouro, folhas à mostra,
+   sombra em degraus no chão. Em repouso ele flutua devagar e de vez em quando espia (a capa entreabre);
+   no clique, a capa gira na lombada, as folhas viram em três quadros e o ouro cintila, e só então vai ao
+   resumo. Fora da tela a animação para; com "reduzir movimento", nada se mexe e o link vai direto. */
+.bib-convite {
+  --u: 4.5px;
+  --bib-tinta: #1b1208;
+  --bib-capa: color-mix(in srgb, var(--bib-area) 84%, #140d06);
+  --bib-capa-luz: color-mix(in srgb, var(--bib-area) 70%, #fff);
+  --bib-capa-funda: color-mix(in srgb, var(--bib-area) 52%, #140d06);
+  --bib-papel: #f6eedb;
+  --bib-papel-linha: #d8c69c;
+  --bib-palco: color-mix(in srgb, var(--bib-area) 9%, var(--superficie-2, #f3f4f1));
+  position: relative; display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 1.6rem; align-items: center;
+  margin: 1.25rem 0; padding: 0.7rem 1.6rem 0.7rem 0.7rem;
+  border: 1px solid var(--traco); border-radius: 14px; background: var(--superficie); color: var(--texto);
+}
+:root[data-tema="escuro"] .bib-convite {
+  --bib-tinta: #050807;
+  --bib-palco: color-mix(in srgb, var(--bib-area) 13%, var(--superficie-2, #1f2726));
+}
+
+/* ---------- O palco: o canto em que o livro flutua ---------- */
+.bib-convite__palco {
+  position: relative; display: grid; place-items: center; align-self: stretch; min-height: 16.5rem;
+  border-radius: 10px; background: var(--bib-palco);
+  /* Uma trama de pontos miúdos, como a grade de um desenho em pixel. */
+  background-image: radial-gradient(color-mix(in srgb, var(--bib-area) 22%, transparent) 1px, transparent 1.4px);
+  background-size: 18px 18px; background-position: 9px 9px;
+}
+.bib-convite__capa {
+  position: relative; display: block; width: calc(var(--u) * 36); height: calc(var(--u) * 47);
+  color: #fff; text-decoration: none; cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.bib-convite__flutua { position: absolute; inset: 0 0 auto; height: calc(var(--u) * 44); display: block; animation: bib-flutua 4.8s ease-in-out infinite; }
+.bib-convite__livro {
+  position: absolute; inset: 0; display: block;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.bib-convite__livro > span { position: absolute; display: block; }
+
+/* Contracapa e folhas à mostra (direita e embaixo), como num livro de capa dura visto de frente. */
+.bib-convite__contracapa {
+  left: 0; top: var(--u); width: calc(var(--u) * 36); height: calc(var(--u) * 43);
+  background: var(--bib-capa-funda); box-shadow: 0 0 0 2px var(--bib-tinta);
+}
+.bib-convite__miolo {
+  left: calc(var(--u) * 4); top: var(--u); width: calc(var(--u) * 31); height: calc(var(--u) * 42);
+  background: repeating-linear-gradient(to bottom, var(--bib-papel) 0 3px, var(--bib-papel-linha) 3px 4px);
+  box-shadow: inset 0 -2px 0 var(--bib-papel-linha);
+}
+.bib-convite__folha, .bib-convite__pagina {
+  position: absolute; left: 0; top: 0; width: calc(var(--u) * 29.5); height: calc(var(--u) * 40.5); display: block; z-index: 1;
+  transform-origin: left center; background: var(--bib-papel); box-shadow: inset -2px 0 0 var(--bib-papel-linha), inset 0 -2px 0 var(--bib-papel-linha);
+}
+/* A página de dentro e a folha de cima têm "texto" em pixel: um título na cor da área, linhas de
+   comprimentos diferentes e um quadro de ouro (o "Na prova" dos resumos). */
+.bib-convite__pagina { z-index: 0; }
+.bib-convite__pagina, .bib-convite__folha--3 {
+  background:
+    linear-gradient(var(--bib-area), var(--bib-area)) calc(var(--u) * 4) calc(var(--u) * 4) / calc(var(--u) * 12) var(--u) no-repeat,
+    linear-gradient(#b9a77c, #b9a77c) calc(var(--u) * 4) calc(var(--u) * 8) / calc(var(--u) * 18) 2px no-repeat,
+    linear-gradient(#b9a77c, #b9a77c) calc(var(--u) * 4) calc(var(--u) * 10) / calc(var(--u) * 15) 2px no-repeat,
+    linear-gradient(#b9a77c, #b9a77c) calc(var(--u) * 4) calc(var(--u) * 12) / calc(var(--u) * 19) 2px no-repeat,
+    linear-gradient(#b9a77c, #b9a77c) calc(var(--u) * 4) calc(var(--u) * 14) / calc(var(--u) * 11) 2px no-repeat,
+    linear-gradient(#e6c879, #e6c879) calc(var(--u) * 4) calc(var(--u) * 18) / calc(var(--u) * 19) calc(var(--u) * 5) no-repeat,
+    linear-gradient(#b9a77c, #b9a77c) calc(var(--u) * 4) calc(var(--u) * 26) / calc(var(--u) * 17) 2px no-repeat,
+    linear-gradient(#b9a77c, #b9a77c) calc(var(--u) * 4) calc(var(--u) * 28) / calc(var(--u) * 19) 2px no-repeat,
+    linear-gradient(#b9a77c, #b9a77c) calc(var(--u) * 4) calc(var(--u) * 30) / calc(var(--u) * 13) 2px no-repeat,
+    var(--bib-papel);
+}
+.bib-convite__folha--1 { background-color: #ece0c3; }
+.bib-convite__folha--2 { background-color: #f1e7cf; }
+
+/* Fita marcadora de página, de ouro, saindo por baixo das folhas. */
+.bib-convite__fita {
+  left: calc(var(--u) * 25); top: calc(var(--u) * 42); width: calc(var(--u) * 2.5); height: calc(var(--u) * 4.5); z-index: 2;
+  background: linear-gradient(to right, var(--px-ouro) 0 60%, #d9a43c 60%); box-shadow: 0 0 0 2px var(--bib-tinta);
+  clip-path: polygon(-2px -2px, calc(100% + 2px) -2px, calc(100% + 2px) calc(100% + 2px), 50% calc(100% - var(--u) * 1.2), -2px calc(100% + 2px));
+}
+
+/* Lombada: três tons em coluna e duas nervuras de ouro em cima e embaixo. */
+.bib-convite__capa-lombada {
+  left: 0; top: 0; width: calc(var(--u) * 4); height: calc(var(--u) * 43); z-index: 4;
+  background:
+    linear-gradient(to bottom, transparent calc(var(--u) * 4), var(--px-ouro) calc(var(--u) * 4) calc(var(--u) * 5), transparent calc(var(--u) * 5) calc(var(--u) * 6), var(--px-ouro) calc(var(--u) * 6) calc(var(--u) * 7), transparent calc(var(--u) * 7) calc(100% - var(--u) * 7), var(--px-ouro) calc(100% - var(--u) * 7) calc(100% - var(--u) * 6), transparent calc(100% - var(--u) * 6) calc(100% - var(--u) * 5), var(--px-ouro) calc(100% - var(--u) * 5) calc(100% - var(--u) * 4), transparent calc(100% - var(--u) * 4)),
+    linear-gradient(to right, var(--bib-capa-funda) 0 var(--u), var(--bib-capa-luz) var(--u) calc(var(--u) * 2), var(--bib-capa) calc(var(--u) * 2) calc(var(--u) * 3), var(--bib-capa-funda) calc(var(--u) * 3));
+  box-shadow: 0 0 0 2px var(--bib-tinta);
+}
+
+/* A tampa (capa da frente) gira na lombada; o verso tem a guarda em xadrez miúdo. */
+.bib-convite__tampa {
+  left: calc(var(--u) * 4); top: 0; width: calc(var(--u) * 30); height: calc(var(--u) * 42); z-index: 3;
+  transform-origin: left center; transform: perspective(900px) rotateY(0deg);
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  animation: bib-espia 7.5s ease-in-out 2s infinite;
+}
+.bib-convite__capa-frente { position: absolute; inset: 0; }
+.bib-convite__capa-frente {
+  display: flex; flex-direction: column; align-items: flex-start; gap: calc(var(--u) * 1.5);
+  padding: calc(var(--u) * 4) calc(var(--u) * 3) calc(var(--u) * 3.5) calc(var(--u) * 3.5);
+  background: var(--bib-capa);
+  box-shadow: 0 0 0 2px var(--bib-tinta), inset 0 2px 0 color-mix(in srgb, #fff 22%, transparent), inset -2px -2px 0 color-mix(in srgb, #000 22%, transparent);
+}
+.bib-convite__verso {
+  left: calc(var(--u) * 4); top: 0; width: calc(var(--u) * 30); height: calc(var(--u) * 42); z-index: 3;
+  /* O verso é a mesma tampa virada: só aparece quando ela passa dos 90 graus. */
+  transform-origin: left center; transform: perspective(900px) rotateY(0deg) translateX(100%) rotateY(180deg);
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  background: conic-gradient(#e7d8b2 25%, transparent 0 50%, #e7d8b2 0 75%, transparent 0) 0 0 / var(--u) var(--u), var(--bib-papel);
+  box-shadow: 0 0 0 2px var(--bib-tinta), inset 0 0 0 calc(var(--u) * 1.5) var(--bib-capa-funda);
+}
+/* Moldura de ouro com cantos em degrau (um "pixel" de ouro em cada canto). */
+.bib-convite__moldura {
+  position: absolute; inset: calc(var(--u) * 1.5); display: block; pointer-events: none;
+  border: 2px solid color-mix(in srgb, var(--px-ouro) 85%, var(--bib-capa));
+  background:
+    linear-gradient(var(--px-ouro), var(--px-ouro)) top left / var(--u) var(--u) no-repeat,
+    linear-gradient(var(--px-ouro), var(--px-ouro)) top right / var(--u) var(--u) no-repeat,
+    linear-gradient(var(--px-ouro), var(--px-ouro)) bottom left / var(--u) var(--u) no-repeat,
+    linear-gradient(var(--px-ouro), var(--px-ouro)) bottom right / var(--u) var(--u) no-repeat;
+  background-origin: border-box;
+}
+.bib-convite__capa-livro {
+  position: relative; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 0.95rem; line-height: 0.9; letter-spacing: 0.02em;
+  color: var(--px-ouro); text-shadow: 0 2px 0 color-mix(in srgb, var(--bib-tinta) 55%, transparent);
+}
+.bib-convite__capa-filete {
+  position: relative; display: block; width: calc(var(--u) * 7); height: 2px; background: var(--px-ouro);
+  box-shadow: calc(var(--u) * 8) 0 0 var(--px-ouro);
+}
+.bib-convite__capa-titulo {
+  position: relative; font-family: var(--fonte-marca); font-weight: 800; font-size: 1rem; line-height: 1.12; letter-spacing: -0.01em;
+  color: #fff; text-wrap: balance; overflow-wrap: anywhere; hyphens: auto; text-shadow: 0 2px 0 color-mix(in srgb, var(--bib-tinta) 45%, transparent);
+}
+.bib-convite__capa-titulo--longo {
+  font-size: 0.74rem; line-height: 1.15;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; overflow: hidden;
+}
+.bib-convite__capa-numero {
+  position: relative; margin-top: auto; padding: 1px calc(var(--u) * 1.5) 0;
+  font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.05rem; line-height: 1.1; letter-spacing: 0.03em; font-variant-numeric: tabular-nums;
+  background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--bib-tinta), 2px 2px 0 2px var(--px-ouro-sombra);
+}
+
+/* Sombra no chão em três degraus: encolhe quando o livro sobe. */
+.bib-convite__chao {
+  position: absolute; left: calc(var(--u) * 3); bottom: var(--u); display: block; width: calc(var(--u) * 32); height: var(--u);
+  background: color-mix(in srgb, var(--bib-tinta) 16%, transparent);
+  animation: bib-chao 4.8s ease-in-out infinite;
+}
+.bib-convite__chao::before, .bib-convite__chao::after {
+  content: ""; position: absolute; left: calc(var(--u) * 4); right: calc(var(--u) * 4); height: var(--u); background: inherit;
+}
+.bib-convite__chao::before { top: calc(var(--u) * -1); }
+.bib-convite__chao::after { top: var(--u); }
+:root[data-tema="escuro"] .bib-convite__chao { background: rgba(0, 0, 0, 0.42); }
+
+/* Brilhos de ouro em cruz de pixel: cintilam de vez em quando e estouram na abertura. */
+.bib-convite__brilho {
+  position: absolute; z-index: 2; width: var(--u); height: var(--u); pointer-events: none;
+  background: #fffaf0; opacity: 0; transform: scale(0.4);
+  box-shadow: 0 calc(var(--u) * -1) 0 var(--px-ouro), 0 var(--u) 0 var(--px-ouro), calc(var(--u) * -1) 0 0 var(--px-ouro), var(--u) 0 0 var(--px-ouro);
+  animation: bib-cintila 6s steps(4, end) infinite;
+}
+.bib-convite__brilho--a { top: 14%; left: 14%; animation-delay: 1.2s; }
+.bib-convite__brilho--b { top: 22%; right: 13%; animation-delay: 3.4s; }
+.bib-convite__brilho--c { bottom: 24%; left: 10%; animation-delay: 4.6s; }
+.bib-convite__brilho--d { top: 8%; right: 34%; animation-delay: 2.3s; }
+:root[data-tema="escuro"] .bib-convite__brilho { background: #fff6dc; }
+
+@keyframes bib-flutua { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(calc(var(--u) * -1.5)); } }
+@keyframes bib-chao { 0%, 100% { transform: scaleX(1); opacity: 1; } 50% { transform: scaleX(0.86); opacity: 0.7; } }
+@keyframes bib-espia {
+  0%, 82%, 100% { transform: perspective(900px) rotateY(0deg); }
+  86% { transform: perspective(900px) rotateY(-26deg); }
+  90% { transform: perspective(900px) rotateY(-6deg); }
+  93% { transform: perspective(900px) rotateY(-13deg); }
+  97% { transform: perspective(900px) rotateY(0deg); }
+}
+@keyframes bib-cintila { 0%, 80%, 100% { opacity: 0; transform: scale(0.4); } 86% { opacity: 1; transform: scale(1); } 92% { opacity: 0.8; transform: scale(1.25); } }
+
+/* ---------- Hover (computador): o livro inclina e sobe; a capa entreabre ---------- */
+@media (hover: hover) {
+  .bib-convite:not(.bib-convite--abrindo) .bib-convite__capa:hover .bib-convite__livro,
+  .bib-convite:not(.bib-convite--abrindo):has(.bib-convite__botao:hover) .bib-convite__livro { transform: perspective(900px) rotateY(9deg) rotateZ(-2deg) translateY(calc(var(--u) * -2)); }
+  .bib-convite:not(.bib-convite--abrindo) .bib-convite__capa:hover .bib-convite__tampa,
+  .bib-convite:not(.bib-convite--abrindo):has(.bib-convite__botao:hover) .bib-convite__tampa { animation: none; transform: perspective(900px) rotateY(-16deg); transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .bib-convite:not(.bib-convite--abrindo) .bib-convite__capa:hover .bib-convite__brilho--a,
+  .bib-convite:not(.bib-convite--abrindo) .bib-convite__capa:hover .bib-convite__brilho--b { animation-duration: 1.6s; }
+}
+
+/* ---------- Clique: a capa abre, as folhas viram, o ouro cintila (560 ms) ---------- */
+.bib-convite--abrindo .bib-convite__flutua { animation-play-state: paused; }
+.bib-convite--abrindo .bib-convite__livro { transition: none; animation: bib-livro-abre 0.56s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; }
+.bib-convite--abrindo .bib-convite__tampa { transition: none; animation: bib-tampa-abre 0.52s cubic-bezier(0.5, 0, 0.2, 1) forwards; }
+.bib-convite--abrindo .bib-convite__verso { animation: bib-verso-abre 0.52s cubic-bezier(0.5, 0, 0.2, 1) forwards; }
+.bib-convite--abrindo .bib-convite__folha--3 { animation: bib-folha-a 0.2s steps(3, end) 0.26s forwards; }
+.bib-convite--abrindo .bib-convite__folha--2 { animation: bib-folha-b 0.18s steps(3, end) 0.32s forwards; }
+.bib-convite--abrindo .bib-convite__folha--1 { animation: bib-folha-c 0.16s steps(3, end) 0.38s forwards; }
+.bib-convite--abrindo .bib-convite__chao { animation: bib-chao-abre 0.56s ease-out forwards; }
+.bib-convite--abrindo .bib-convite__brilho { animation: bib-brilho-abre 0.4s steps(4, end) 0.18s forwards; }
+.bib-convite--abrindo .bib-convite__brilho--b { animation-delay: 0.24s; }
+.bib-convite--abrindo .bib-convite__brilho--c { animation-delay: 0.3s; }
+.bib-convite--abrindo .bib-convite__brilho--d { animation-delay: 0.21s; }
+.bib-convite--abrindo .bib-convite__capa { cursor: progress; }
+
+@keyframes bib-livro-abre {
+  from { transform: none; }
+  to { transform: translateX(calc(var(--u) * 10)) translateY(calc(var(--u) * -2)) scale(1.05); }
+}
+@keyframes bib-tampa-abre {
+  from { transform: perspective(900px) rotateY(0deg); }
+  to { transform: perspective(900px) rotateY(-122deg); }
+}
+@keyframes bib-verso-abre {
+  from { transform: perspective(900px) rotateY(0deg) translateX(100%) rotateY(180deg); }
+  to { transform: perspective(900px) rotateY(-122deg) translateX(100%) rotateY(180deg); }
+}
+@keyframes bib-folha-a { from { z-index: 5; transform: perspective(900px) rotateY(0deg); } to { z-index: 5; transform: perspective(900px) rotateY(-112deg); } }
+@keyframes bib-folha-b { from { z-index: 6; transform: perspective(900px) rotateY(0deg); } to { z-index: 6; transform: perspective(900px) rotateY(-96deg); } }
+@keyframes bib-folha-c { from { z-index: 7; transform: perspective(900px) rotateY(0deg); } to { z-index: 7; transform: perspective(900px) rotateY(-78deg); } }
+@keyframes bib-chao-abre { to { transform: translateX(calc(var(--u) * 6)) scaleX(1.25); opacity: 0.8; } }
+@keyframes bib-brilho-abre { 0% { opacity: 0; transform: scale(0.4); } 50% { opacity: 1; transform: scale(1.5); } 100% { opacity: 1; transform: scale(1); } }
+
+/* Fora da tela, nada anima. */
+.bib-convite--longe .bib-convite__flutua, .bib-convite--longe .bib-convite__chao,
+.bib-convite--longe .bib-convite__tampa, .bib-convite--longe .bib-convite__brilho { animation-play-state: paused; }
+
+/* ---------- Texto ---------- */
+.bib-convite__texto { display: grid; gap: 0.55rem; min-width: 0; padding: 0.6rem 0; }
+.bib-convite__selo { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0; justify-self: start; white-space: pre; font-size: 0.8rem; font-weight: 700; color: var(--ouro-texto, #7a5710); }
+.bib-convite__selo-ponto { width: 0.55rem; height: 0.55rem; margin-right: 0.5rem; background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); }
+.bib-convite__selo b {
+  margin-left: 0.15rem; padding: 0.12rem 0.4rem 0; background: var(--verdete-veu); color: var(--verdete);
+  font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 0.95rem; line-height: 1; letter-spacing: 0.04em;
+}
+.bib-convite__titulo { margin: 0; font-family: var(--fonte-marca); font-weight: 800; font-size: 1.4rem; line-height: 1.2; letter-spacing: -0.015em; color: var(--texto); text-wrap: balance; }
+.bib-convite__frase { margin: 0; max-width: 34rem; font-size: 0.98rem; line-height: 1.55; color: var(--texto-2); text-wrap: pretty; }
+.bib-convite__frase strong { font-weight: 700; color: var(--texto); }
+.bib-convite__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.85rem 1.25rem; margin-top: 0.55rem; }
+.bib-convite a.bib-convite__botao {
+  display: inline-flex; align-items: center; gap: 0.55rem; min-height: 46px; padding: 0 1.2rem; margin-left: 2px;
+  border: 0; border-radius: 0; background: var(--px-ouro); color: var(--px-tinta); text-decoration: none;
+  font: 800 0.98rem var(--fonte-texto);
+  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra);
+  transition: transform 0.15s var(--curva, ease), box-shadow 0.15s var(--curva, ease), background-color 0.15s var(--curva, ease);
+}
+.bib-convite a.bib-convite__botao:hover { background: #ffdf95; border: 0; transform: translate(-1px, -1px); box-shadow: 0 0 0 2px var(--px-tinta), 5px 5px 0 2px var(--px-ouro-sombra); }
+.bib-convite a.bib-convite__botao:active,
+.bib-convite--abrindo a.bib-convite__botao { transform: translate(3px, 3px); box-shadow: 0 0 0 2px var(--px-tinta), 1px 1px 0 2px var(--px-ouro-sombra); }
+.bib-convite a.bib-convite__botao:focus-visible { outline: 3px solid var(--verdete); outline-offset: 5px; }
+:root[data-tema="escuro"] .bib-convite a.bib-convite__botao { box-shadow: 0 0 0 2px #000, 4px 4px 0 2px var(--px-ouro-sombra); }
+:root[data-tema="escuro"] .bib-convite a.bib-convite__botao:hover { box-shadow: 0 0 0 2px #000, 5px 5px 0 2px var(--px-ouro-sombra); }
+.bib-convite__acoes small { font-size: 0.82rem; color: var(--texto-2); font-variant-numeric: tabular-nums; }
+
+/* ---------- Celular: o livro em cima, no palco largo; o texto embaixo ---------- */
+@media (max-width: 40rem) {
+  .bib-convite { grid-template-columns: minmax(0, 1fr); gap: 0.4rem; padding: 0.6rem 0.6rem 1.1rem; }
+  .bib-convite { --u: 4px; }
+  .bib-convite__palco { min-height: 14rem; }
+  .bib-convite__texto { padding: 0.5rem 0.55rem 0; }
+  .bib-convite__titulo { font-size: 1.22rem; }
+  .bib-convite__frase { font-size: 0.95rem; }
+  .bib-convite__acoes { gap: 0.75rem; }
+  .bib-convite a.bib-convite__botao { flex: 1 1 100%; justify-content: center; min-height: 50px; margin-right: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bib-convite *, .bib-convite *::before, .bib-convite *::after { animation: none !important; transition: none !important; }
+}
