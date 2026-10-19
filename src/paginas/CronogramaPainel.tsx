@@ -41,7 +41,7 @@ const faixaCores = (partes: Array<{ slug: string; n: number }>) => {
 /** O botão do dia levado ao topo (atalho do mesmo botão do cartão Hoje). */
 export interface AcaoTopo { rotulo: string; detalhe?: string; aoClicar?: () => void; href?: string; ouro?: boolean }
 
-export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar, acao = null, rodape, nome = '', recados = [] }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; aoAjustar?: () => void; acao?: AcaoTopo | null; /** O resumo da semana (domingo e segunda), dentro do topo. */ rodape?: ReactNode; /** Primeiro nome da pessoa, no título (adendo do dono, 18/10/2026). */ nome?: string; /** Frases curtas com os dados dela: a meta de hoje, a área mais forte. */ recados?: ReactNode[] }) {
+export function OndeVoceEsta({ plano, calculo, previa = false, selo, aoAjustar, acao = null, rodape, nome = '', recados = [] }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; /** Troca o "Onde você está" do selo (o cenário fictício de quem não assina). */ selo?: string; aoAjustar?: () => void; acao?: AcaoTopo | null; /** O resumo da semana (domingo e segunda), dentro do topo. */ rodape?: ReactNode; /** Primeiro nome da pessoa, no título (adendo do dono, 18/10/2026). */ nome?: string; /** Frases curtas com os dados dela: a meta de hoje, a área mais forte. */ recados?: ReactNode[] }) {
   const hoje = diaCivil()
   const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
@@ -76,7 +76,7 @@ export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar, acao =
     <section className="cp-onde" aria-labelledby="cp-onde-titulo">
       <div className="cp-onde__cabeca">
         <div className="cp-onde__texto">
-          <p className="tr-heroi__selo cp-onde__selo">{previa ? 'Exemplo do cronograma' : 'Onde você está'} · {plano.prova}</p>
+          <p className="tr-heroi__selo cp-onde__selo">{selo ?? (previa ? 'Exemplo do cronograma' : 'Onde você está')} · {plano.prova}</p>
           <h1 id="cp-onde-titulo">{calculo.provaPassou ? (nome ? `${nome}, é o dia da prova` : 'Dia da prova') : <>{nome ? `${nome}, faltam` : 'Faltam'} <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
           <p className="cp-onde__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal}</p>
           {recados.length > 0 && <ul className="cp-onde__recados">{recados.map((r, i) => <li key={i}>{r}</li>)}</ul>}
