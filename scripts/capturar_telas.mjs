@@ -1,5 +1,5 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
 // --sn: o Simulado Nacional de outubro no Supabase falso (e o relógio do navegador no momento do cenário):
 //   antes (não inscrito) | inscrito | aberto | andamento | entregue (resultado e ranking) | encerrado | ausente (sem a parte 32: 404)
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
@@ -139,13 +139,15 @@ const snRpcs = {
       melhores_por_area: [{ area: 'Trauma adulto', apelido: 'Marina A.', certas: 10, total: 10 }, { area: 'Ortopedia pediátrica', apelido: 'Pedro H.', certas: 9, total: 9 }, { area: 'Mão e punho', apelido: 'Camila S.', certas: 6, total: 6 }, { area: 'Coluna', apelido: 'Luísa M.', certas: 3, total: 3 }] }]
   },
 }
+// --sem-assinatura: a conta de exemplo é gratuita (logada, sem plano): as consultas de assinatura dizem que não.
+const SEM_ASSINATURA = process.argv.includes('--sem-assinatura')
 const rpcs = {
   sincronizar_progresso: (u, a) => sincronizar(u, a.alteracoes),
   ler_progresso_desde: (u, a) => [200, linhas.filter((l) => l.usuario_id === u && l.versao > a.p_cursor).sort((x, y) => x.versao - y.versao).slice(0, Math.min(a.p_limite ?? 500, 1000)).map(copia)],
-  obter_acesso_premium: () => [200, [{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }]],
-  obter_estado_conta: () => [200, [{ status_assinatura: 'ativa', cancelar_ao_fim: false, fim_periodo: null }]],
+  obter_acesso_premium: () => [200, [{ premium: !SEM_ASSINATURA, motivo: SEM_ASSINATURA ? 'nenhum' : 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }]],
+  obter_estado_conta: () => [200, [{ status_assinatura: SEM_ASSINATURA ? null : 'ativa', cancelar_ao_fim: false, fim_periodo: null }]],
   sinal_aparelho: () => [200, [{ ativo: true, outro_aparelho: null }]],
-  autorizar_resposta: () => [200, [{ permitido: true, restantes: 999, limite: null, premium: true }]],
+  autorizar_resposta: () => [200, [{ permitido: true, restantes: SEM_ASSINATURA ? 20 : 999, limite: SEM_ASSINATURA ? 20 : null, premium: !SEM_ASSINATURA }]],
   obter_ranking_com_movimento: (_u, a) => [200, rankingExemplo(a.periodo, true)],
   obter_ranking_publico: (_u, a) => [200, rankingExemplo(a.periodo, true)],
   obter_ranking_visitante: (_u, a) => [200, rankingExemplo(a.periodo, false)],
