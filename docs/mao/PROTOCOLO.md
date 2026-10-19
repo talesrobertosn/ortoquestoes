@@ -75,7 +75,10 @@ python3 -I scripts/mao/biblioteca_local.py plano simao-2024                     
    (epônimo, classificação, número, anatomia, afirmativas "Sobre X", caso clínico), capítulo do Green e
    páginas onde está a resposta, tema e subtema do acervo, situação (`a fazer`). Agrupar em **lotes de 5
    por capítulo do Green**, para ler cada trecho do livro uma vez só.
-5. Conferir a lista do que **já existe** para não repetir: `python3 scripts/simulados/registro.py` e as
+5. **Dicas reescritas:** se existir `docs/mao/dicas/<prova-ano>.md` (resumo que veio com a prova,
+   reescrito em palavras nossas), ler antes de buscar no livro. A dica orienta a busca; a resposta e a
+   página saem do Green. Ver [dicas/README.md](dicas/README.md).
+6. Conferir a lista do que **já existe** para não repetir: `python3 scripts/simulados/registro.py` e as
    tabelas de [simao-engenharia-reversa.md](../simulados/simao-engenharia-reversa.md) (o SIMÃO 2026 já foi
    feito: `mao-1719` a `mao-1810` e `ombro-cotovelo-0645` a `0652`).
 
