@@ -12,7 +12,7 @@ export function DetalhesAssinatura() {
 
   return <article className="empilha-2 conta-pagina">
     <a className="conta-assinatura__voltar" href={href('/conta')}>← Voltar para Minha conta</a>
-    <header><h1>Dados da assinatura</h1><p>Consulte cobranças e datas. Se precisar, escolha entre impedir a próxima renovação ou pedir reembolso dentro da garantia.</p></header>
+    <header><h1>Dados da assinatura</h1><p>Consulte cobranças e datas. Você pode desligar a renovação automática sem cancelar a assinatura, ou pedir reembolso dentro da garantia de 7 dias.</p></header>
     <ResumoAssinatura detalhada />
   </article>
 }

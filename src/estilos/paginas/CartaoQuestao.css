@@ -939,3 +939,17 @@
 
 /* Grifo */
 .menu-grifo { border-radius: 999px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
+
+/* Largura cheia (19/10/2026, pedido do Tales): enunciado, alternativas, resposta e comentário
+   ocupam toda a largura do cartão, sem a coluna estreita que deixava o lado direito vazio. */
+.questao-impressa.qz-cartao .questao__enunciado,
+.pagina--foco .questao-impressa.qz-cartao .questao__enunciado,
+.qz-cartao .alternativas,
+.qz-cartao .alt-turma-resumo,
+.questao-impressa.qz-cartao .acao-responder,
+.qz-cartao .qz-resultado,
+.qz-cartao .resultado--neutro:not(.qz-resultado),
+.qz-cartao .qz-volta,
+.questao-impressa.qz-cartao .comentario,
+.qz-cartao .qz-extras.qz-faixa,
+.qz-cartao .qz-proxima { max-width: none; }

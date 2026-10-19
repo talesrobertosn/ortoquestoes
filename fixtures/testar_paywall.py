@@ -181,13 +181,14 @@ for trecho in (
 assert "statusAtual === 'cancelada'" in RESUMO_ASSINATURA
 assert "{ acao: 'sincronizar_cobranca' }" in RESUMO_ASSINATURA
 assert "!proximoEstado.ultima_cobranca_em" not in RESUMO_ASSINATURA
-for trecho in ("Falha no pagamento", "Encerrada e reembolsada", "Pendente", "Renovação cancelada", "Em dia"):
+for trecho in ("Falha no pagamento", "Encerrada e reembolsada", "Pendente", "Renovação automática desligada", "Em dia"):
     assert trecho in RESUMO_ASSINATURA, f"Mensagem de estado ausente: {trecho}"
 for trecho in (
     "Desistir e solicitar reembolso integral",
-    "Apenas impedir a próxima renovação",
+    "Desligar a renovação automática",
+    "não cancela</strong> a assinatura",
     "Confirmar pedido de reembolso",
-    "Confirmar fim das renovações",
+    "Sim, desligar a renovação",
     "gerenciar(acaoPendente)",
     "statusAtual === 'cancelada' && periodoPagoVigente",
 ):
