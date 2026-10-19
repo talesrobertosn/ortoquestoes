@@ -161,3 +161,19 @@ O cliente RPC tipado fica em `src/dados/apiSimuladoNacional.ts`, com uma funçã
   - Perguntas frequentes curtas.
   - Um único botão principal por estado.
 - **Página inicial:** um cartão ou botão "Simulado Nacional" no Início, alimentado por `sn_destaque_inicio`, com o estado da pessoa: começar, continuar, ver resultado ou "abre em N dias".
+
+## Adendo 2 (19/10): inscrição e datas de outubro (pedido do Tales: "abrir inscrição; não dá para entender quando vai ser nem como se inscreve")
+
+- **Inscrição:** a tabela `sn_inscricoes` guarda quem se inscreveu.
+  - Qualquer conta pode se inscrever, pelas funções `sn_inscrever` e `sn_cancelar_inscricao`.
+  - Começar a prova também inscreve a pessoa.
+  - Quem se inscreveu recebe o e-mail de lembrete (campanha `simulado_lembrete`) na véspera da abertura ("abre amanhã") e no dia ("abriu hoje").
+- **`aberto_a_todos`:** a edição pode ficar livre para qualquer conta grátis. **Outubro de 2026 é a edição de lançamento e fica aberta a todos** (decisão do Claude): serve para trazer gente nova, e quem não assina conhece o recurso.
+- **Datas de outubro (decisão do Claude):**
+  - as inscrições abrem quando a parte 32 entrar no ar;
+  - a prova fica disponível de **sábado, 25/10, às 8h** a **sexta, 31/10, às 23h59** (horário de Brasília);
+  - cada pessoa tem 2 horas a partir do momento em que começa;
+  - o ranking final sai em **01/11**.
+  
+  A janela de uma semana é para caber na rotina de plantão. A página mostra essas datas em destaque, com contagem regressiva.
+- **Página:** o topo responde de cara às três perguntas que o Tales não conseguiu responder: **quando** (as datas), **o que é** (50 questões oficiais, 2 horas, ranking nacional) e **como participar** (o botão "Quero participar" faz a inscrição, e no dia "Começar a prova").
