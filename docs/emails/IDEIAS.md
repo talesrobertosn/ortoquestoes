@@ -57,7 +57,7 @@ em [PLANO.md](PLANO.md).
   continuam saindo na hora do clique.
 - [x] **Carta de volta do simulado nacional**: depois do Simulado do mês, uma carta curta com a
   posição (só para quem assina, como no site, e até 30º) e a nota quando é motivo de orgulho. Feita na
-  parte 31 (`simulado_resultado`): o resultado já está em `simulado_participacoes`.
+  parte 31 (`simulado_resultado`); desde a parte 32 (Simulado Nacional 2.0) o resultado vem de `sn_participacoes`.
 - [x] **Parte 31 (SQL)** (18/10/2026, PLANO.md seção 8): as RPCs devolvem cidade, nascimento, resumos
   lidos, data da prova do cronograma e último login; as nove campanhas com SQL (seção 4 do PLANO) e a
   ação `campanhas_diarias`; o índice único por pessoa e referência para as cartas automáticas (com a

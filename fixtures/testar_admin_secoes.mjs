@@ -170,13 +170,13 @@ try {
     const cat = m.catalogo
     const modelos = cat.modelosDoCatalogo()
     const tipos = new Set(modelos.map(x => x.tipo))
-    assert.equal(tipos.size, 33, 'os 33 tipos do motor (18 antigos, 6 novos e 9 campanhas diárias)')
+    assert.equal(tipos.size, 34, 'os 34 tipos do motor (18 antigos, 6 novos e 10 campanhas diárias)')
     assert.equal(modelos.filter(x => x.tipo === 'ativo').length, 9, 'as 9 faixas')
-    assert.equal(modelos.length, 33 - 1 + 9)
+    assert.equal(modelos.length, 34 - 1 + 9)
     assert.equal(new Set(modelos.map(x => x.id)).size, modelos.length, 'id repetido')
     for (const grupo of ['situacao', 'faixa', 'convite', 'pessoal', 'automatico', 'novo', 'campanha']) assert.ok(modelos.some(x => x.grupo === grupo), grupo)
     assert.equal(modelos.filter(x => x.grupo === 'novo').length, 6)
-    assert.equal(modelos.filter(x => x.grupo === 'campanha').length, 9, 'as 9 campanhas diárias (parte 31)')
+    assert.equal(modelos.filter(x => x.grupo === 'campanha').length, 10, 'as 10 campanhas diárias (parte 31 e o lembrete do simulado, parte 32)')
     for (const x of modelos.filter(x => x.grupo === 'campanha')) assert.ok(/candidatos_|Agendador/.test(x.gatilho.quando) && /cadência/.test(x.gatilho.paraQuem), `${x.id}: gatilho da campanha`)
     for (const x of modelos) {
       assert.ok(x.rotulo && x.descricao && x.gatilho.quando.length >= 10 && x.gatilho.paraQuem.length >= 10 && x.pessoa, `${x.id}: faltou rótulo, descrição, gatilho ou pessoa`)

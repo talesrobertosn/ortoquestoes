@@ -2942,6 +2942,110 @@ var resumo_do_tema = [
     ]
   }
 ];
+var lembrete = (c) => c.campanha.lembrete ?? null;
+var abreAmanha = (c) => lembrete(c)?.tipo_lembrete === "abre_amanha";
+var abriuHoje = (c) => lembrete(c)?.tipo_lembrete === "abriu_hoje";
+var qualEdicao = (c) => lembrete(c)?.titulo ? ` (${lembrete(c)?.titulo})` : "";
+var deQualEdicao = (c) => {
+  const t = lembrete(c)?.titulo;
+  const mes = t?.match(/^Simulado Nacional\s*[·:-]\s*(.+)$/)?.[1];
+  return mes ? ` de ${mes.charAt(0).toLowerCase()}${mes.slice(1)}` : qualEdicao(c);
+};
+var HORAS_EXTENSO = ["", "uma hora", "duas horas", "tr\xEAs horas", "quatro horas", "cinco horas", "seis horas"];
+var duracaoSimulado = (c) => {
+  const m = Math.round(Number(lembrete(c)?.duracao_min));
+  if (!Number.isFinite(m) || m < 10) return null;
+  return m % 60 === 0 && m / 60 < HORAS_EXTENSO.length ? HORAS_EXTENSO[m / 60] : `${N(m)} minutos`;
+};
+var questoesSimulado = (c) => {
+  const t = Math.round(Number(lembrete(c)?.total));
+  return Number.isFinite(t) && t >= 10 ? `${N(t)} quest\xF5es` : null;
+};
+var fechaSimulado = (c) => {
+  const f = lembrete(c)?.fecha_em;
+  const d = f ? new Date(f) : null;
+  return d && Number.isFinite(d.getTime()) ? d.toLocaleDateString("pt-BR", { day: "numeric", month: "long", timeZone: "America/Sao_Paulo" }) : null;
+};
+var quandoSimulado = (c) => abreAmanha(c) ? "abre amanh\xE3" : abriuHoje(c) ? "j\xE1 est\xE1 no ar" : "est\xE1 chegando";
+var formatoSimulado = (c) => {
+  const q = questoesSimulado(c), h = duracaoSimulado(c);
+  const base = q && h ? `S\xE3o ${q} em ${h}` : q ? `S\xE3o ${q}` : h ? `A prova tem ${h}` : "\xC9 uma prova inteira";
+  return `${base}, com o rel\xF3gio correndo desde o come\xE7o, como no dia da prova.`;
+};
+var prazoSimulado = (c) => fechaSimulado(c) ? `D\xE1 para fazer at\xE9 ${fechaSimulado(c)}, no hor\xE1rio que for melhor para voc\xEA.` : null;
+var planoSimulado = (c) => lembrete(c)?.precisa_plano === true ? "Um detalhe: esta edi\xE7\xE3o \xE9 para quem assina. A p\xE1gina do simulado mostra como funciona." : null;
+var simulado_lembrete = [
+  {
+    id: "v1",
+    assuntos: (c) => [nm(c, `o Simulado Nacional ${quandoSimulado(c)}`, `O Simulado Nacional ${quandoSimulado(c)}`)],
+    corpo: (c) => [
+      momento(c),
+      `Passando para lembrar: o simulado em que voc\xEA se inscreveu${qualEdicao(c)} ${quandoSimulado(c)}.`,
+      J(formatoSimulado(c), prazoSimulado(c)),
+      "Uma ideia de quem j\xE1 fez muitos: escolha um hor\xE1rio em que ningu\xE9m vai te chamar, deixe \xE1gua por perto e fa\xE7a de uma vez. As respostas ficam salvas no servidor, ent\xE3o uma queda de internet n\xE3o apaga nada.",
+      planoSimulado(c),
+      `Para entrar: ${c.link("simulado")}`,
+      c.fecho()
+    ],
+    ps: () => "P.S.: o gabarito e os coment\xE1rios aparecem logo depois que voc\xEA entrega. Vale guardar um tempo para ler."
+  },
+  {
+    id: "v2",
+    assuntos: (c) => [nm(c, "um lembrete do simulado", "Um lembrete do simulado"), nm(c, `o simulado ${quandoSimulado(c)}`, `O simulado ${quandoSimulado(c)}`)],
+    corpo: (c) => [
+      `Voc\xEA se inscreveu no Simulado Nacional${deQualEdicao(c)}, e ele ${quandoSimulado(c)}. Quis te avisar com calma, antes da correria do dia.`,
+      formatoSimulado(c),
+      prazoSimulado(c),
+      "O que eu faria: olhar a escala da semana e marcar o simulado como se fosse plant\xE3o, com hora para come\xE7ar. Prova feita no meio de outras coisas rende menos do que prova feita inteira.",
+      planoSimulado(c),
+      `O simulado fica aqui: ${c.link("simulado")}`,
+      c.fecho()
+    ],
+    ps: () => "P.S.: se cair a internet ou a bateria, nada se perde. \xC9 s\xF3 abrir de novo, at\xE9 em outro aparelho."
+  },
+  {
+    id: "v3",
+    assuntos: (c) => [nm(c, `seu simulado ${quandoSimulado(c)}`, `Seu simulado ${quandoSimulado(c)}`)],
+    corpo: (c) => [
+      momento(c),
+      J(`O Simulado Nacional${deQualEdicao(c)} ${quandoSimulado(c)}.`, "\xC9 o treino que mais se parece com o dia da prova: o tempo apertado, o \xFAltimo bloco, a quest\xE3o longa que aparece na hora errada."),
+      formatoSimulado(c),
+      prazoSimulado(c),
+      planoSimulado(c),
+      `Quando quiser come\xE7ar: ${c.link("simulado")}`,
+      c.fecho()
+    ],
+    ps: () => "P.S.: depois de entregar, voc\xEA v\xEA na hora onde est\xE1 pronto e onde rende revisar. Esse retrato vale mais do que a nota."
+  },
+  {
+    id: "v4",
+    assuntos: (c) => [nm(c, "separei um recado sobre o simulado", "Um recado sobre o simulado")],
+    corpo: (c) => [
+      `Um recado curto: o Simulado Nacional${deQualEdicao(c)} ${quandoSimulado(c)}, e voc\xEA est\xE1 na lista.`,
+      formatoSimulado(c),
+      "Uma ideia pr\xE1tica: antes de come\xE7ar, leia as regras com calma e j\xE1 decida o que fazer com a quest\xE3o que travar. Marcar para rever e seguir costuma salvar o fim da prova.",
+      prazoSimulado(c),
+      planoSimulado(c),
+      `Para fazer: ${c.link("simulado")}`,
+      c.fecho()
+    ],
+    ps: () => "P.S.: o ranking leva em conta o tempo nos empates, mas o que mais importa \xE9 fazer inteiro, do jeito que vai ser na prova."
+  },
+  {
+    id: "v5",
+    assuntos: (c) => [nm(c, `o simulado em que voc\xEA se inscreveu ${quandoSimulado(c)}`, `O simulado ${quandoSimulado(c)}`)],
+    corpo: (c) => [
+      momento(c),
+      `S\xF3 para lembrar: o simulado em que voc\xEA se inscreveu${qualEdicao(c)} ${quandoSimulado(c)}.`,
+      J(formatoSimulado(c), "O gabarito s\xF3 aparece depois da entrega, como numa prova de verdade."),
+      prazoSimulado(c),
+      planoSimulado(c),
+      `O link: ${c.link("simulado")}`,
+      c.fecho()
+    ],
+    ps: () => "P.S.: se quiser me contar como foi, \xE9 s\xF3 responder este e-mail. Cada resposta ajuda a pr\xF3xima edi\xE7\xE3o."
+  }
+];
 var VERSOES = {
   "ativo:0-10": ativo_0_10,
   "ativo:10-20": ativo_10_20,
@@ -2983,7 +3087,8 @@ var VERSOES = {
   aniversario,
   um_ano,
   indicacao_deu_certo,
-  resumo_do_tema
+  resumo_do_tema,
+  simulado_lembrete
 };
 
 // supabase/functions/_shared/cartas.ts
@@ -2999,7 +3104,7 @@ var ROTULO_FAIXA = {
   "90-100": "90% ou mais"
 };
 var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto", "pagamento_aprovado", "obrigado_tempo"];
-var TIPOS_CAMPANHAS_DIARIAS = ["assinou_sem_cronograma", "assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema"];
+var TIPOS_CAMPANHAS_DIARIAS = ["assinou_sem_cronograma", "assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema", "simulado_lembrete"];
 var TIPOS_TRANSACIONAIS = ["pix_hoje", "pagamento_aprovado", "obrigado_tempo", "relato_resolvido", "alerta_admin"];
 var ASSINATURA = "Um abra\xE7o,\nTales, do Orto Quest\xF5es";
 var DATA_TEOT = "2027-01-10T12:00:00-03:00";
@@ -4424,6 +4529,16 @@ function pedidoDaCampanha(tipo, c) {
   if (tipo === "um_ano") pedido.dados_campanha = { anos: num(d.anos) };
   if (tipo === "indicacao_deu_certo") pedido.dados_campanha = { cortesia: d.cortesia === true };
   if (tipo === "resumo_do_tema") pedido.dados_campanha = { resumo: { id: texto(d.id), titulo: texto(d.titulo), especialidade: texto(d.especialidade) } };
+  if (tipo === "simulado_lembrete") pedido.dados_campanha = { lembrete: {
+    edicao: texto(d.edicao),
+    titulo: texto(d.titulo),
+    tipo_lembrete: d.tipo_lembrete === "abre_amanha" || d.tipo_lembrete === "abriu_hoje" ? d.tipo_lembrete : null,
+    abre_em: texto(d.abre_em),
+    fecha_em: texto(d.fecha_em),
+    total: num(d.total),
+    duracao_min: num(d.duracao_min),
+    precisa_plano: d.precisa_plano === true
+  } };
   return pedido;
 }
 async function sincronizarCatalogo() {
@@ -4473,6 +4588,9 @@ async function enviarCampanhas(pedida, limitePedido, simular) {
       }
       const envio = await enviarAutomatico(c.id_usuario, tipo, pedidoDaCampanha(tipo, c), null).catch(() => ({ resultado: "falhou" }));
       contagem[envio.resultado] = (contagem[envio.resultado] ?? 0) + 1;
+      if (tipo === "simulado_lembrete" && (envio.resultado === "enviado" || envio.resultado === "ja_enviado") && typeof c.dados?.edicao === "string") {
+        await banco("rpc/sn_marcar_lembrete", { method: "POST", body: JSON.stringify({ p_edicao: c.dados.edicao, p_usuario: c.id_usuario }) }).catch(() => null);
+      }
       if (envio.resultado === "enviado" || envio.resultado === "falhou") await esperar(600);
     }
     resultado[tipo] = contagem;

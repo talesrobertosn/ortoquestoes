@@ -4,7 +4,7 @@
 // de 50%; nenhum número de questões abaixo de 10; 6 a 12 linhas de corpo; exatamente um P.S.; no
 // máximo um link; nada de "undefined/null/NaN/0 questões"; assuntos com até 55 caracteres e com o
 // nome; o P.S. não repete uma ideia do corpo e duas frases seguidas não repetem a palavra forte;
-// o teto de cadência (48 h / 3 em 14 dias); os seis automáticos novos; e as nove campanhas diárias
+// o teto de cadência (48 h / 3 em 14 dias); os seis automáticos novos; e as dez campanhas diárias
 // da parte 31 (com e sem os dados do acontecimento: simulado, anos de conta, resumo, indicação).
 import assert from 'node:assert/strict'
 import { build } from 'esbuild'
@@ -361,7 +361,7 @@ try {
   tomOk(cartaAntiga.texto, 'carta antiga')
 
   // 12. Os seis automáticos novos: cada um sai com os dados do acontecimento, transacionais sem descadastro e fora da cadência.
-  const CAMPANHAS = ['assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema']
+  const CAMPANHAS = ['assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
   assert.deepEqual([...auto.TIPOS_AUTOMATICOS], ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo', ...CAMPANHAS])
   assert.deepEqual([...auto.CAMPANHAS_DIARIAS], CAMPANHAS)
   for (const t of CAMPANHAS) assert.ok(auto.ehCampanhaDiaria(t) && !auto.ehTransacional(t), t)
@@ -396,7 +396,7 @@ try {
   assert.throws(() => auto.emailAutomatico({ ...base, tipo: 'primeiras_10', respondidas: 9 }), /tipo_nao_combina/)
   assert.ok(/duas semanas|1[0-9] dias/.test(auto.emailAutomatico({ ...base, tipo: 'voltou', respondidas: 50, diasFora: 15, semente: 2 }).texto))
 
-  // 12b. As nove campanhas diárias (parte 31): milhares de sorteios com os dados que o banco manda
+  // 12b. As dez campanhas diárias (parte 31 e o lembrete do simulado da parte 32): milhares de sorteios com os dados que o banco manda
   //      (e sem eles), perfis ricos e pobres; nenhuma é transacional, todas levam descadastro e
   //      respeitam a cadência; nota do simulado só com 10 acertos e metade ou mais, posição só até 30º.
   {
@@ -404,13 +404,14 @@ try {
     const casosCampanha = {
       assinou_sem_cronograma: { perfis: [rico(72, { assinante: true, diasParaProva: null, provaCronograma: null }), pobre(30, { nome: 'Caio', assinante: true }), pobre(0, { nome: 'Rui', assinante: true })], esperado: /cronograma/i, link: '#/cronograma' },
       assinante_parado_7: { perfis: [rico(72, { assinante: true, diasParado: 9 }), pobre(120, { nome: 'Bia', assinante: true, diasParado: 8 }), pobre(3, { nome: 'Leo', assinante: true, diasParado: 15 })], esperado: /semana|dias/i, link: /#\/(revisao|cronograma)/, extra: { diasFora: 9 } },
-      simulado_resultado: { perfis: [rico(72), pobre(40, { nome: 'Caio' }), pobre(0)], esperado: /Simulado Nacional|simulado/, link: '#/simulado-nacional', campanhas: [{ simulado: { acertos: 41, total: 60, posicao: 12, participantes: 180 } }, { simulado: { acertos: 20, total: 60, posicao: null } }, { simulado: { acertos: 8, total: 10, posicao: 45 } }, {}] },
+      simulado_resultado: { perfis: [rico(72), pobre(40, { nome: 'Caio' }), pobre(0)], esperado: /Simulado Nacional|simulado/, link: '#/simulado-nacional', campanhas: [{ simulado: { acertos: 41, total: 50, posicao: 12, participantes: 180 } }, { simulado: { acertos: 20, total: 50, posicao: null } }, { simulado: { acertos: 8, total: 10, posicao: 45 } }, {}] },
       vespera_prova: { perfis: [rico(72, { diasParaProva: 1 }), pobre(50, { nome: 'Lia', diasParaProva: 1, provaCronograma: 'TARO' }), pobre(0)], esperado: /amanhã/i, link: null },
       depois_prova: { perfis: [rico(72, { diasParaProva: null }), pobre(50, { nome: 'Lia', provaCronograma: 'TARO' }), pobre(1)], esperado: /como foi|passou/i, link: null },
       aniversario: { perfis: [ANIV, pobre(50, { nome: 'Lia', nascimento: '1994-10-15' }), pobre(0, { nascimento: '1990-10-15' })], esperado: /aniversário|parabéns/i, link: null },
       um_ano: { perfis: [rico(72, { diasConta: 365 }), pobre(40, { nome: 'Caio', diasConta: 731 }), pobre(2, { diasConta: 366 })], esperado: /ano/i, link: null, campanhas: [{ anos: 1 }, { anos: 2 }, { anos: 3 }, {}] },
       indicacao_deu_certo: { perfis: [rico(72), pobre(25, { nome: 'Caio' }), pobre(0)], esperado: /20 questões/, link: '#/indicar', campanhas: [{ cortesia: true }, { cortesia: false }, {}] },
       resumo_do_tema: { perfis: [rico(72), pobre(60, { nome: 'Caio', areas: [{ slug: 'trauma', total: 60, certas: 30 }] }), pobre(12)], esperado: /resumo/i, link: /#\/resumos/, campanhas: [{ resumo: { id: 'rockwood10-45-fraturas-mao', titulo: 'Fraturas da mão', especialidade: 'mao' } }, { resumo: { id: 'x', titulo: null, especialidade: 'trauma' } }, {}] },
+      simulado_lembrete: { perfis: [rico(72), pobre(40, { nome: 'Caio' }), pobre(0)], esperado: /Simulado Nacional|simulado/i, link: '#/simulado-nacional', campanhas: [{ lembrete: { edicao: '2026-10', titulo: 'Simulado Nacional · Outubro de 2026', tipo_lembrete: 'abre_amanha', abre_em: '2026-10-16T03:00:00Z', fecha_em: '2026-11-01T02:59:59Z', total: 50, duracao_min: 120, precisa_plano: false } }, { lembrete: { edicao: '2026-10', titulo: 'Simulado Nacional · Outubro de 2026', tipo_lembrete: 'abriu_hoje', abre_em: '2026-10-15T03:00:00Z', fecha_em: '2026-11-01T02:59:59Z', total: 50, duracao_min: 120, precisa_plano: true } }, { lembrete: { edicao: '2026-11-vespera-teot', titulo: 'Véspera do TEOT', tipo_lembrete: 'abriu_hoje', total: 100, duracao_min: 240, precisa_plano: false } }, {}] },
     }
     assert.deepEqual(Object.keys(casosCampanha), CAMPANHAS)
     let campanhasConferidas = 0
@@ -431,6 +432,17 @@ try {
           const sim = campanha.simulado
           if (!sim || sim.acertos < 10 || sim.acertos * 2 < sim.total) assert.ok(!/acertou \d/.test(e.texto), `${contexto}: nota que não é motivo de orgulho\n${e.texto}`)
           if (!sim || !(sim.posicao <= 30)) assert.ok(!/\dº (lugar|no Simulado)/.test(e.texto + e.assunto), `${contexto}: posição fora dos 30 primeiros\n${e.texto}`)
+        }
+        if (tipo === 'simulado_lembrete') {
+          const l = campanha.lembrete
+          if (l?.tipo_lembrete === 'abre_amanha') assert.match(e.texto + e.assunto, /amanhã/i, `${contexto}: abre amanhã\n${e.texto}`)
+          if (l?.tipo_lembrete === 'abriu_hoje') assert.match(e.texto + e.assunto, /no ar|abriu|aberto/i, `${contexto}: abriu hoje\n${e.texto}`)
+          if (l?.tipo_lembrete) assert.ok(!/amanhã/i.test(e.texto + e.assunto) === (l.tipo_lembrete === 'abriu_hoje'), `${contexto}: confundiu amanhã e hoje\n${e.texto}`)
+          if (l?.total === 50) assert.match(e.texto, /50 questões/, `${contexto}: tamanho da prova`)
+          if (l?.duracao_min === 120) assert.match(e.texto, /duas horas/, `${contexto}: duração`)
+          if (l?.duracao_min === 240) assert.match(e.texto, /quatro horas/, `${contexto}: duração da véspera`)
+          if (l?.precisa_plano === false) assert.ok(!/assina|plano/i.test(e.texto.split('\n\nUm abraço,')[0]), `${contexto}: falou do plano sem precisar\n${e.texto}`)
+          if (l?.titulo === 'Véspera do TEOT') assert.match(e.texto + e.assunto, /Véspera do TEOT/, contexto)
         }
         if (tipo === 'resumo_do_tema' && campanha.resumo?.id === 'rockwood10-45-fraturas-mao') assert.ok(e.texto.includes('#/resumos/rockwood10-45-fraturas-mao'), `${contexto}: link do resumo`)
         if (tipo === 'resumo_do_tema' && campanha.resumo?.id === 'x') assert.ok(!e.texto.includes('#/resumos/x'), `${contexto}: id inválido no link`)

@@ -56,8 +56,10 @@ import { cadenciaBloqueia, perfilDosDados, problemaGrave, renderizarCarta, type 
  *                      80) e manda cada uma pelo mesmo caminho do "automatico" (enviarAutomatico:
  *                      idempotência por referência, cadência, e-mail confirmado e podeReceber).
  *                      Campanhas: assinou_sem_cronograma, assinante_parado_7, simulado_resultado,
- *                      vespera_prova, depois_prova, aniversario, um_ano, indicacao_deu_certo e
- *                      resumo_do_tema (esta antes registra o catálogo de biblioteca/indice.json).
+ *                      vespera_prova, depois_prova, aniversario, um_ano, indicacao_deu_certo,
+ *                      resumo_do_tema (esta antes registra o catálogo de biblioteca/indice.json) e,
+ *                      desde a parte 32, simulado_lembrete (quem se inscreveu no Simulado Nacional;
+ *                      depois do envio, rpc sn_marcar_lembrete marca a inscrição).
  *                      "simular": true só conta quem receberia, sem enviar. Sem a parte 31, cada
  *                      campanha responde "sql_pendente".
  *
@@ -439,6 +441,10 @@ function pedidoDaCampanha(tipo: TipoCampanhaDiaria, c: Candidata): PedidoAutomat
   if (tipo === 'um_ano') pedido.dados_campanha = { anos: num(d.anos) }
   if (tipo === 'indicacao_deu_certo') pedido.dados_campanha = { cortesia: d.cortesia === true }
   if (tipo === 'resumo_do_tema') pedido.dados_campanha = { resumo: { id: texto(d.id), titulo: texto(d.titulo), especialidade: texto(d.especialidade) } }
+  if (tipo === 'simulado_lembrete') pedido.dados_campanha = { lembrete: {
+    edicao: texto(d.edicao), titulo: texto(d.titulo), tipo_lembrete: d.tipo_lembrete === 'abre_amanha' || d.tipo_lembrete === 'abriu_hoje' ? d.tipo_lembrete : null,
+    abre_em: texto(d.abre_em), fecha_em: texto(d.fecha_em), total: num(d.total), duracao_min: num(d.duracao_min), precisa_plano: d.precisa_plano === true,
+  } }
   return pedido
 }
 
@@ -490,6 +496,10 @@ async function enviarCampanhas(pedida: string | undefined, limitePedido: number 
       if (simular) { contagem.simuladas = (contagem.simuladas ?? 0) + 1; continue }
       const envio = await enviarAutomatico(c.id_usuario, tipo, pedidoDaCampanha(tipo, c), null).catch(() => ({ resultado: 'falhou' }))
       contagem[envio.resultado] = (contagem[envio.resultado] ?? 0) + 1
+      // Lembrete do simulado (parte 32): marca a inscrição, para não voltar à lista (também quando já tinha saído).
+      if (tipo === 'simulado_lembrete' && (envio.resultado === 'enviado' || envio.resultado === 'ja_enviado') && typeof c.dados?.edicao === 'string') {
+        await banco('rpc/sn_marcar_lembrete', { method: 'POST', body: JSON.stringify({ p_edicao: c.dados.edicao, p_usuario: c.id_usuario }) }).catch(() => null)
+      }
       if (envio.resultado === 'enviado' || envio.resultado === 'falhou') await esperar(600)
     }
     resultado[tipo] = contagem
