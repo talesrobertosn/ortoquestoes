@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Checagem: é fratura?</title>
+<!-- Feed, estilo "checagem de fatos": questão trauma-0570 (TEOT 2024), gabarito A (patela bipartida).
+     Imagem real da questão, sem marcação nova (a lupa é só um recorte ampliado). Tela do Cronograma: marketing/kit/telas/t-cel-cronograma-19-10.png ("faltam 83 dias").
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-19-checagem-patela/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; font-style: italic; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; }
+:root { --papel: #F3EEE4; --tinta: #16201E; --cinza: #6B716C; --verde: #14655E; --verde-claro: #DCEBE6; --vermelho: #CF3A2E; --ok: #1E7F4A; --ouro: #C79A3E; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; color: var(--tinta); }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+
+/* papel com pontilhado leve */
+.papel { color: var(--tinta); background: radial-gradient(circle at 1px 1px, rgba(22,32,30,.07) 1.2px, transparent 1.6px) 0 0 / 28px 28px, radial-gradient(ellipse 80% 50% at 85% -5%, rgba(20,101,94,.10), transparent 70%), radial-gradient(ellipse 70% 45% at 0% 105%, rgba(207,58,46,.07), transparent 70%), var(--papel); }
+.papel::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .35; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .4 0 0 0 .25 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.topo { position: absolute; left: 64px; right: 64px; top: 54px; display: flex; justify-content: space-between; align-items: center; font: 700 21px Inter; letter-spacing: .24em; text-transform: uppercase; color: var(--cinza); }
+.selo { display: inline-flex; align-items: center; gap: 14px; padding: 10px 22px 10px 10px; border-radius: 99px; background: #fff; color: var(--tinta); letter-spacing: .16em; box-shadow: 0 6px 18px rgba(22,32,30,.08), inset 0 0 0 1.5px rgba(22,32,30,.06); }
+.selo i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--verde); color: #fff; }
+.selo i svg { width: 22px; height: 22px; }
+
+/* carimbo de tinta */
+.carimbo { position: absolute; display: inline-flex; flex-direction: column; align-items: center; padding: 14px 34px 12px; border: 7px solid currentColor; border-radius: 26px; font: 800 92px/1 Jakarta; letter-spacing: .05em; color: var(--vermelho); filter: url(#tinta); mix-blend-mode: multiply; opacity: .93; }
+.carimbo::before { content: ''; position: absolute; inset: 6px; border: 2.5px solid currentColor; border-radius: 17px; }
+.carimbo small { font: 800 20px Inter; letter-spacing: .3em; margin-bottom: 4px; }
+.carimbo.ok { color: var(--ok); }
+
+/* ===== 1: o boato ===== */
+.balao { position: absolute; left: 56px; top: 138px; width: 520px; padding: 22px 22px 18px; border-radius: 10px 40px 40px 40px; background: #fff; box-shadow: 0 30px 60px rgba(22,32,30,.14), 0 4px 12px rgba(22,32,30,.06); transform: rotate(-1.5deg); }
+.balao::before { content: ''; position: absolute; left: -16px; top: 0; border: 16px solid transparent; border-top-color: #fff; border-right-color: #fff; border-radius: 4px; }
+.enc { display: flex; align-items: center; gap: 10px; font: italic 500 22px Inter; color: #8A918C; }
+.enc svg { width: 30px; height: 22px; }
+.balao h3 { margin: 8px 4px 16px; font: 800 33px/1.15 Jakarta; letter-spacing: -.02em; }
+.balao h3 b { color: var(--vermelho); }
+.rx { position: relative; height: 640px; border-radius: 26px; overflow: hidden; background: #000; }
+.rx img { position: absolute; width: 110%; left: -4%; top: -26px; }
+.hora { margin-top: 10px; text-align: right; font: 500 21px Inter; color: #8A918C; }
+.hora svg { width: 30px; height: 18px; vertical-align: -2px; color: #53A8E0; margin-left: 4px; }
+.lado { position: absolute; left: 626px; right: 60px; top: 146px; }
+.lado small { font: 700 20px Inter; letter-spacing: .22em; text-transform: uppercase; color: var(--cinza); }
+.lado h1 { margin-top: 12px; font: italic 800 84px/.98 Playfair; letter-spacing: -.02em; }
+.lado h1 em { color: var(--vermelho); }
+.andamento { white-space: nowrap; display: inline-flex; align-items: center; gap: 12px; margin-top: 22px; padding: 12px 22px; border-radius: 99px; background: rgba(207,58,46,.1); color: var(--vermelho); font: 700 18px Inter; letter-spacing: .06em; text-transform: uppercase; }
+.andamento i { display: flex; gap: 6px; } .andamento i u { width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+.andamento i u:nth-child(2) { opacity: .6; } .andamento i u:nth-child(3) { opacity: .3; }
+.enunciado { margin-top: 26px; padding: 26px 28px; border-radius: 32px; background: #fff; box-shadow: 0 20px 40px rgba(22,32,30,.08), inset 0 0 0 1.5px rgba(22,32,30,.05); font: 400 25px/1.44 Inter; color: #2B3431; }
+.enunciado b { display: inline-block; margin-bottom: 8px; padding: 6px 14px; border-radius: 99px; background: var(--verde-claro); color: var(--verde); font: 800 18px Inter; letter-spacing: .14em; }
+.alts { position: absolute; left: 56px; right: 56px; top: 1004px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.alt { display: flex; align-items: center; gap: 18px; padding: 16px 20px; border-radius: 28px; background: #fff; box-shadow: 0 12px 26px rgba(22,32,30,.07), inset 0 0 0 1.5px rgba(22,32,30,.05); font: 600 29px Inter; }
+.alt b { flex: none; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 18px; background: var(--tinta); color: #fff; font: 800 28px Jakarta; }
+.dica { position: absolute; left: 64px; right: 64px; bottom: 50px; display: flex; justify-content: space-between; align-items: center; font: 600 24px Inter; color: var(--cinza); }
+.dica b { color: var(--tinta); }
+.dica span:last-child { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border-radius: 99px; background: var(--tinta); color: #fff; font-weight: 700; }
+.dica svg { width: 26px; height: 26px; }
+
+/* ===== 2: checamos ===== */
+.c-topo { position: absolute; left: 64px; right: 64px; top: 128px; }
+.c-topo small { font: 700 20px Inter; letter-spacing: .22em; text-transform: uppercase; color: var(--cinza); }
+.c-topo h1 { margin-top: 8px; font: italic 800 96px/1 Playfair; letter-spacing: -.02em; }
+.f2 .carimbo { right: 60px; top: 136px; transform: rotate(-7deg); font-size: 62px; padding: 12px 28px 10px; }
+.f2 .carimbo small { font-size: 17px; }
+.moldura { position: absolute; left: 56px; top: 300px; width: 420px; padding: 16px; border-radius: 36px; background: #fff; box-shadow: 0 30px 60px rgba(22,32,30,.14); transform: rotate(-1.5deg); }
+.moldura .rx { height: 560px; border-radius: 24px; }
+.moldura figcaption { margin: 12px 8px 2px; font: 600 20px Inter; color: var(--cinza); }
+.lupa { position: absolute; left: 540px; top: 296px; width: 300px; height: 300px; border-radius: 50%; overflow: hidden; background: #000; box-shadow: 0 0 0 10px var(--ouro), 0 0 0 13px #9E7A2C, 0 26px 50px rgba(22,32,30,.3); }
+.lupa img { position: absolute; width: 760px; left: -404px; top: -74px; }
+.lupa::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.22), transparent 40%); box-shadow: inset 0 0 30px rgba(0,0,0,.5); }
+.cabo { position: absolute; left: 812px; top: 560px; width: 40px; height: 150px; border-radius: 20px; background: linear-gradient(90deg, #6B4E1C, #C79A3E 45%, #7D5C22); transform: rotate(-40deg); transform-origin: top center; box-shadow: 0 16px 30px rgba(22,32,30,.25); }
+.lupa-leg { position: absolute; left: 870px; top: 392px; width: 160px; font: 700 16px/1.35 Inter; letter-spacing: .06em; text-transform: uppercase; color: #8A6A26; }
+.provas { position: absolute; left: 530px; right: 56px; top: 660px; display: grid; gap: 12px; }
+.prova { display: flex; align-items: center; gap: 16px; padding: 14px 20px 14px 14px; border-radius: 26px; background: #fff; box-shadow: 0 12px 26px rgba(22,32,30,.07), inset 0 0 0 1.5px rgba(22,32,30,.05); font: 500 23px/1.28 Inter; color: #2B3431; }
+.prova b { color: var(--tinta); }
+.pino { flex: none; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #F1D58E, var(--ouro) 60%, #8E6A24); color: #2A1E08; font: 800 22px Jakarta; box-shadow: 0 6px 12px rgba(142,106,36,.35); }
+.veredito { position: absolute; left: 56px; right: 56px; top: 946px; display: flex; align-items: center; gap: 22px; padding: 20px 30px 20px 20px; border-radius: 36px; background: var(--verde); color: #fff; box-shadow: 0 24px 50px rgba(20,101,94,.3); }
+.veredito i { flex: none; display: grid; place-items: center; width: 84px; height: 84px; border-radius: 26px; background: #fff; color: var(--verde); font: 800 46px Jakarta; font-style: normal; }
+.veredito h2 { font: italic 800 66px/1 Playfair; letter-spacing: -.02em; }
+.veredito small { margin-left: auto; text-align: right; font: 700 19px/1.35 Inter; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.75); }
+.outras { position: absolute; left: 56px; right: 56px; top: 1086px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.outras div { padding: 18px 20px; border-radius: 26px; background: rgba(255,255,255,.75); box-shadow: inset 0 0 0 1.5px rgba(22,32,30,.07); font: 400 21px/1.3 Inter; color: #3B4541; }
+.outras b { display: block; margin-bottom: 4px; font: 700 21px Inter; color: var(--tinta); }
+.outras b u { text-decoration: none; color: var(--vermelho); margin-right: 6px; }
+.na-prova { position: absolute; left: 56px; right: 56px; bottom: 44px; padding: 18px 24px; border-radius: 24px; background: rgba(199,154,62,.16); box-shadow: inset 0 0 0 1.5px rgba(199,154,62,.45); font: 500 22px/1.35 Inter; color: #3A3220; }
+.na-prova b { color: #8A6A26; font: 800 18px Inter; letter-spacing: .16em; text-transform: uppercase; margin-right: 10px; }
+
+/* ===== 3: fato confirmado ===== */
+.f3-txt { position: absolute; left: 64px; top: 344px; width: 600px; }
+.f3 .carimbo { left: 64px; top: 150px; transform: rotate(-6deg); font-size: 64px; padding: 12px 28px 10px; }
+.f3 .carimbo small { font-size: 17px; }
+.f3-txt small { font: 700 20px Inter; letter-spacing: .22em; text-transform: uppercase; color: var(--cinza); }
+.f3-txt h1 { margin-top: 12px; font: italic 800 74px/1.02 Playfair; letter-spacing: -.02em; }
+.f3-txt h1 em { color: var(--verde); }
+.f3-txt h2 { margin-top: 26px; font: 800 40px/1.1 Jakarta; letter-spacing: -.03em; }
+.f3-txt p { margin-top: 16px; font: 400 29px/1.45 Inter; color: #3B4541; }
+.f3-txt p b { color: var(--tinta); font-weight: 700; }
+.nota-tela { position: absolute; left: 768px; top: 902px; padding: 8px 18px; border-radius: 99px; background: rgba(22,32,30,.06); font: 500 18px Inter; color: var(--cinza); }
+.cta { position: absolute; left: 48px; right: 48px; top: 984px; display: flex; align-items: center; gap: 30px; padding: 30px 36px; border-radius: 40px; background: #fff; box-shadow: 0 30px 60px rgba(22,32,30,.12), inset 0 0 0 1.5px rgba(22,32,30,.05); }
+.botao { flex: none; display: inline-flex; align-items: center; gap: 16px; padding: 26px 48px; border-radius: 99px; font: 800 44px Jakarta; letter-spacing: -.02em; color: #fff; background: linear-gradient(#1B7A71, #0F524C); box-shadow: 0 18px 36px rgba(20,101,94,.35), inset 0 2px 0 rgba(255,255,255,.25); }
+.botao svg { width: 40px; height: 40px; }
+.cta p { font: 600 28px/1.35 Inter; color: #2B3431; }
+.rodape { position: absolute; left: 64px; right: 64px; bottom: 52px; display: flex; justify-content: space-between; align-items: center; }
+.rodape small { font: 600 24px Inter; color: var(--cinza); letter-spacing: .03em; }
+
+/* iPhone (do modelo Treine grátis) */
+.iphone { --w: 400px; position: absolute; width: var(--w); padding: calc(var(--w) * .034); border-radius: calc(var(--w) * .17);
+  background: linear-gradient(145deg, #7b7f84 0%, #3b3e42 18%, #1d1e20 55%, #46494d 100%);
+  box-shadow: 0 0 0 1.5px #8d9196 inset, 0 0 0 calc(var(--w) * .008) #0d0d0e inset, 0 60px 120px rgba(0,0,0,.6), 0 20px 40px rgba(0,0,0,.4); z-index: 4; }
+.iphone .tela { position: relative; border-radius: calc(var(--w) * .138); overflow: hidden; aspect-ratio: 390 / 844; background: #0f1917; }
+.iphone .tela img { width: 100%; height: calc(100% - var(--w) * .115); margin-top: calc(var(--w) * .115); object-fit: cover; object-position: top; display: block; }
+.iphone .tela::before { content: '9:41'; position: absolute; left: 11%; top: calc(var(--w) * .045); font: 700 calc(var(--w) * .042) Inter; color: #fff; z-index: 2; }
+.iphone .tela::after { content: ''; position: absolute; right: 9%; top: calc(var(--w) * .05); width: calc(var(--w) * .07); height: calc(var(--w) * .032); border-radius: 4px; border: 1.5px solid rgba(255,255,255,.85); background: linear-gradient(90deg, #fff 70%, transparent 70%) content-box; padding: 1.5px; z-index: 2; }
+.iphone .ilha { position: absolute; top: calc(var(--w) * .03); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .27); height: calc(var(--w) * .078); border-radius: 999px; background: #000; z-index: 2; }
+.iphone .bt { position: absolute; width: calc(var(--w) * .012); border-radius: 3px; background: linear-gradient(90deg, #2a2c2f, #6b6f73); }
+.iphone .bt.d { right: calc(var(--w) * -.009); top: 26%; height: 11%; }
+.iphone .bt.e1 { left: calc(var(--w) * -.009); top: 20%; height: 5%; }
+.iphone .bt.e2 { left: calc(var(--w) * -.009); top: 28%; height: 8%; }
+.iphone .brilho { position: absolute; inset: calc(var(--w) * .034); border-radius: calc(var(--w) * .138); background: linear-gradient(115deg, rgba(255,255,255,.10), transparent 35%); pointer-events: none; z-index: 3; }
+.iphone .tela { background: #fff; }
+.iphone .tela::before { color: #111; }
+.iphone .tela::after { border-color: rgba(0,0,0,.7); background: linear-gradient(90deg, #111 70%, transparent 70%) content-box; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<filter id="tinta" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="4" result="d"/>
+  <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="9" result="m"/><feColorMatrix in="m" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.9" result="mm"/><feComposite in="d" in2="mm" operator="in"/></filter>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+<symbol id="seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="enc" viewBox="0 0 30 22"><path d="M3 18c1-6 5-9 11-9h2V4l7 7-7 7v-5h-2c-4 0-7 1.5-11 5z M10 18c1-4 4-6 8-6h2V8l7 6-7 6v-4h-2c-3 0-5 .8-8 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+<symbol id="lido" viewBox="0 0 30 18"><path d="M2 9.5l5 5L17 4M12 14.5L22.5 4M12.5 14.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+<template id="fone"><div class="tela"><img alt=""></div><div class="ilha"></div><div class="brilho"></div><span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span></template>
+
+<section id="f1-boato" class="papel">
+  <div class="topo"><span class="selo"><i><svg><use href="#check"/></svg></i>Checagem OrtoQuestões</span><span>TEOT 2024 · 1/3</span></div>
+  <div class="balao">
+    <div class="enc"><svg><use href="#enc"/></svg>Encaminhada com frequência</div>
+    <h3><b>URGENTE:</b> fratura da patela! Repassem.</h3>
+    <div class="rx"><img src="../../../../public/imagens/trauma/trauma-0570-1.jpeg" alt=""></div>
+    <div class="hora">07:42<svg><use href="#lido"/></svg></div>
+  </div>
+  <div class="lado">
+    <small>Circulando no grupo</small>
+    <h1>É fratura <em>mesmo?</em></h1>
+    <span class="andamento"><i><u></u><u></u><u></u></i>Checagem em andamento</span>
+    <div class="enunciado"><b>TEOT 2024</b><br>Paciente masculino, 32 anos, vítima de trauma direto no joelho esquerdo há 1 hora, com pouca dor e com integridade do aparelho extensor. Na imagem radiográfica a seguir, o diagnóstico diferencial mais provável com relação à fratura da patela é</div>
+  </div>
+  <div class="alts">
+    <div class="alt"><b>A</b>patela bipartida.</div>
+    <div class="alt"><b>B</b>osteonecrose da patela.</div>
+    <div class="alt"><b>C</b>pseudoartrose da patela.</div>
+    <div class="alt"><b>D</b>osteocondrite dissecante da patela.</div>
+  </div>
+  <div class="dica"><span><b>Comente a sua letra</b> antes de arrastar.</span><span>a checagem saiu<svg><use href="#seta"/></svg></span></div>
+</section>
+
+<section id="f2-checamos" class="papel f2">
+  <div class="topo"><span class="selo"><i><svg><use href="#check"/></svg></i>Checagem OrtoQuestões</span><span>TEOT 2024 · 2/3</span></div>
+  <div class="c-topo"><small>O boato: "é fratura da patela"</small><h1>Checamos.</h1></div>
+  <div class="carimbo"><small>Veredito</small>ENGANOSO</div>
+  <figure class="moldura"><div class="rx"><img src="../../../../public/imagens/trauma/trauma-0570-1.jpeg" alt=""></div><figcaption>Joelho esquerdo · TEOT 2024</figcaption></figure>
+  <div class="cabo"></div>
+  <div class="lupa"><img src="../../../../public/imagens/trauma/trauma-0570-1.jpeg" alt=""></div>
+  <div class="lupa-leg">Polo superolateral, ampliado</div>
+  <div class="provas">
+    <div class="prova"><span class="pino">1</span><span><b>Bordas lisas, arredondadas</b> e corticadas.</span></div>
+    <div class="prova"><span class="pino">2</span><span><b>Polo superolateral:</b> Saupe III, o tipo mais comum.</span></div>
+    <div class="prova"><span class="pino">3</span><span><b>Pouca dor</b> e aparelho extensor íntegro.</span></div>
+  </div>
+  <div class="veredito"><i>A</i><h2>Patela bipartida.</h2><small>Variação<br>anatômica</small></div>
+  <div class="outras">
+    <div><b><u>B</u>Osteonecrose</b>rara e pós-cirúrgica.</div>
+    <div><b><u>C</u>Pseudoartrose</b>exige uma fratura prévia.</div>
+    <div><b><u>D</u>Osteocondrite</b>lesão na face articular.</div>
+  </div>
+  <p class="na-prova"><b>Na prova</b>na dúvida, compare com o outro joelho: a bipartida é bilateral em cerca de metade dos casos.</p>
+</section>
+
+<section id="f3-confirmado" class="papel f3">
+  <div class="topo"><span class="selo"><i><svg><use href="#check"/></svg></i>Checagem OrtoQuestões</span><span>3/3</span></div>
+  <div class="carimbo ok"><small>Fato</small>VERDADEIRO</div>
+  <div class="f3-txt">
+    <small>Prova teórica · TEOT e TEPOT</small>
+    <h1>A prova é em<br><em>10 de janeiro<br>de 2027.</em></h1>
+    <h2>Fique pronto. Prepare-se.</h2>
+    <p>Com o nosso <b>cronograma</b>, você faz o maior número de questões possível <b>sem se cansar tanto</b>. Nós planejamos tudo para você.</p>
+  </div>
+  <div class="iphone" data-tela="t-cel-cronograma-19-10" style="--w:330px; left:694px; top:150px; transform: rotate(3deg)"></div>
+  <span class="nota-tela">Tela ilustrativa</span>
+  <div class="cta"><div class="botao">Treine grátis<svg><use href="#seta"/></svg></div><p>Crie sua conta grátis agora mesmo e conheça outras questões.</p></div>
+  <div class="rodape"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><small>ortoquestoes.com.br</small></div>
+</section>
+</body>
+<script>
+document.querySelectorAll('[data-tela]').forEach(e => { e.appendChild(document.getElementById('fone').content.cloneNode(true)); e.querySelector('img').src = '../../../kit/telas/' + e.dataset.tela + '.png' })
+</script>
+</html>
