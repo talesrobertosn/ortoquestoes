@@ -143,7 +143,8 @@ const rpcs = {
   sincronizar_progresso: (u, a) => sincronizar(u, a.alteracoes),
   ler_progresso_desde: (u, a) => [200, linhas.filter((l) => l.usuario_id === u && l.versao > a.p_cursor).sort((x, y) => x.versao - y.versao).slice(0, Math.min(a.p_limite ?? 500, 1000)).map(copia)],
   obter_acesso_premium: () => [200, [{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }]],
-  obter_estado_conta: () => [200, [{ status_assinatura: 'ativa', cancelar_ao_fim: false, fim_periodo: null }]],
+  // ESTADO_CONTA='{"plano":"Mensal",...}' troca a assinatura de exemplo (telas de Minha conta).
+  obter_estado_conta: () => [200, [process.env.ESTADO_CONTA ? JSON.parse(process.env.ESTADO_CONTA) : { status_assinatura: 'ativa', cancelar_ao_fim: false, fim_periodo: null }]],
   sinal_aparelho: () => [200, [{ ativo: true, outro_aparelho: null }]],
   autorizar_resposta: () => [200, [{ permitido: true, restantes: 999, limite: null, premium: true }]],
   obter_ranking_com_movimento: (_u, a) => [200, rankingExemplo(a.periodo, true)],

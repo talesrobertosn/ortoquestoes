@@ -58,7 +58,7 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
       await chamarFuncao('gerenciar-plano', { acao })
       await atualizar()
       definirMensagem(acao === 'cancelar'
-        ? 'Renovação cancelada. O acesso pago continua até o fim do período já cobrado; não houve reembolso.'
+        ? 'Renovação automática desligada. Você continua assinante até o fim do período já pago; não haverá nova cobrança.'
         : 'Reembolso confirmado pelo Mercado Pago. O acesso voltou ao gratuito e seu histórico foi preservado.')
     } catch (erro) {
       const texto = erro instanceof Error ? erro.message : ''
@@ -89,6 +89,11 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
         <div><dt>Plano</dt><dd>{planoVisivel}</dd></div>
         <div><dt>Status</dt><dd>{statusExibido}</dd></div>
       </dl>
+      {!detalhada && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <p className={'conta-renovacao__resumo' + (renovacaoCancelada ? ' conta-renovacao__resumo--desligada' : '')}>
+        <span className="conta-renovacao__estado"><i aria-hidden="true" />Renovação automática {renovacaoCancelada ? 'desligada' : 'ligada'}</span>
+        <span>{renovacaoCancelada ? `Acesso até ${data(estado?.fim_periodo ?? null)}, sem nova cobrança.` : `Próxima cobrança em ${data(estado?.fim_periodo ?? null)}. Você pode desligar sem cancelar a assinatura.`}</span>
+        {!renovacaoCancelada && <a href={href('/conta/assinatura')}>Gerenciar renovação</a>}
+      </p>}
       {!ativo && !periodoPagoVigente && !detalhada && <a className="inicio-planos-atalho ct-planos" href={href('/assinatura')}>
         <span className="inicio-planos-atalho__icone"><IconePixel nome="planos" tamanho={48} /></span>
         <span className="inicio-planos-atalho__texto"><strong>Conheça os planos</strong><em>a partir de {A_PARTIR_DE}/mês · Pix ou cartão</em><small>Cronograma pelo que mais cai, Simulado Nacional e questões sem limite.</small></span>
@@ -100,28 +105,43 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
         <div><dt>{estado?.cancelar_ao_fim || ['cancelada', 'vencida', 'reembolsada'].includes(statusAtual) ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Data informada pelo provedor'}</dt><dd>{data(estado?.fim_periodo ?? null)}</dd></div>
         <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>
       </dl>
-      <p className="ct-nota">{renovacaoCancelada
+      {!(ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <p className="ct-nota">{renovacaoCancelada
         ? 'Este período não tem renovação automática: não haverá nova cobrança. A cobrança já feita não foi reembolsada; você mantém o acesso ilimitado até o término indicado. Seu histórico permanece salvo.'
-        : descricao?.explicacao ?? 'Você está na modalidade gratuita. Pode continuar estudando normalmente.'}</p>
-      {(garantia || (ativo && !estado?.cancelar_ao_fim)) && <div className="conta-assinatura__escolhas" aria-label="Opções da assinatura">
+        : descricao?.explicacao ?? 'Você está na modalidade gratuita. Pode continuar estudando normalmente.'}</p>}
+      {/* Renovação automática (19/10/2026, pedido do Tales): ligada ou desligada, à vista e separada
+          do reembolso. Desligar não cancela a assinatura: o acesso continua até o fim do período pago. */}
+      {(ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <section className={'conta-renovacao' + (renovacaoCancelada ? ' conta-renovacao--desligada' : '')} aria-label="Renovação automática">
+        <div className="conta-renovacao__topo">
+          <h3>Renovação automática</h3>
+          <span className="conta-renovacao__estado"><i aria-hidden="true" />{renovacaoCancelada ? 'Desligada' : 'Ligada'}</span>
+        </div>
+        {renovacaoCancelada ? <>
+          <p className="conta-renovacao__linha">Seu acesso continua ilimitado até <strong>{data(estado?.fim_periodo ?? null)}</strong>. Não haverá nova cobrança.</p>
+          <p className="conta-renovacao__nota">Quer continuar depois dessa data? É só assinar de novo em Planos; seu histórico fica salvo.</p>
+        </> : <>
+          <p className="conta-renovacao__linha">Próxima cobrança em <strong>{data(estado?.fim_periodo ?? null)}</strong>, no mesmo cartão.</p>
+          <ul className="conta-renovacao__garantias">
+            <li><Icone nome="certo" tamanho={15} /><span>Desligar <strong>não cancela</strong> a assinatura: você continua assinante até {data(estado?.fim_periodo ?? null)}.</span></li>
+            <li><Icone nome="certo" tamanho={15} /><span>Só a próxima cobrança deixa de acontecer.</span></li>
+            <li><Icone nome="certo" tamanho={15} /><span>Suas respostas, revisões e anotações continuam salvas.</span></li>
+          </ul>
+          <button className="botao conta-renovacao__botao" type="button" disabled={processando} onClick={() => { definirAcaoPendente('cancelar'); definirMensagem('') }}>Desligar a renovação automática</button>
+        </>}
+      </section>}
+      {garantia && <div className="conta-assinatura__escolhas" aria-label="Opções da assinatura">
         {garantia && <section className="conta-assinatura__escolha">
-          <h3>Desistir da compra e pedir reembolso integral</h3>
+          <h3>Garantia de 7 dias: desistir e pedir reembolso integral</h3>
           <p>Disponível até sete dias após a última cobrança. Se o Mercado Pago confirmar o reembolso, esta assinatura termina, o acesso volta ao gratuito e seu histórico continua salvo.</p>
           <button className="botao botao--principal" type="button" disabled={processando} onClick={() => { definirAcaoPendente('reembolsar'); definirMensagem('') }}>Desistir e solicitar reembolso integral</button>
         </section>}
-        {ativo && !estado?.cancelar_ao_fim && <section className="conta-assinatura__escolha">
-          <h3>Apenas impedir a próxima renovação</h3>
-          <p>Não há reembolso da cobrança já feita. Você continua com acesso ilimitado até o fim do período pago; depois volta ao gratuito.</p>
-          <button className="botao" type="button" disabled={processando} onClick={() => { definirAcaoPendente('cancelar'); definirMensagem('') }}>Impedir a próxima renovação</button>
-        </section>}
       </div>}
       {acaoPendente && <section className="conta-assinatura__confirmacao" aria-label="Confirmar escolha da assinatura">
-        <h3>{acaoPendente === 'reembolsar' ? 'Confirmar pedido de reembolso integral?' : 'Confirmar fim das renovações?'}</h3>
+        <h3>{acaoPendente === 'reembolsar' ? 'Confirmar pedido de reembolso integral?' : 'Desligar a renovação automática?'}</h3>
         <p>{acaoPendente === 'reembolsar'
           ? 'O pedido será enviado ao Mercado Pago. Somente após a confirmação do reembolso o acesso pago será encerrado; suas respostas e revisões continuarão salvas.'
-          : 'As cobranças futuras desta assinatura serão interrompidas. A cobrança atual não será reembolsada e o acesso pago continuará até o término do período.'}</p>
+          : `Você continua assinante, com acesso ilimitado, até ${data(estado?.fim_periodo ?? null)}. Só a próxima cobrança deixa de acontecer; a já feita não é reembolsada.`}</p>
         <div className="linha linha--empilha-celular">
-          <button className="botao botao--principal" type="button" disabled={processando} onClick={() => void gerenciar(acaoPendente)}>{acaoPendente === 'reembolsar' ? 'Confirmar pedido de reembolso' : 'Confirmar fim das renovações'}</button>
+          <button className="botao botao--principal" type="button" disabled={processando} onClick={() => void gerenciar(acaoPendente)}>{acaoPendente === 'reembolsar' ? 'Confirmar pedido de reembolso' : 'Sim, desligar a renovação'}</button>
           <button className="botao" type="button" disabled={processando} onClick={() => definirAcaoPendente(null)}>Voltar</button>
         </div>
       </section>}
