@@ -171,7 +171,7 @@ O cliente RPC tipado fica em `src/dados/apiSimuladoNacional.ts`, com uma funçã
 - **`aberto_a_todos`:** a edição pode ficar livre para qualquer conta grátis. **Outubro de 2026 é a edição de lançamento e fica aberta a todos** (decisão do Claude): serve para trazer gente nova, e quem não assina conhece o recurso.
 - **Datas de outubro (decisão do Claude):**
   - as inscrições abrem quando a parte 32 entrar no ar;
-  - a prova fica disponível de **sábado, 25/10, às 8h** a **sexta, 31/10, às 23h59** (horário de Brasília);
+  - a prova fica disponível de **sábado, 24/10, às 8h** a **sábado, 31/10, às 23h59** (corrigido: 25/10 era domingo) (horário de Brasília);
   - cada pessoa tem 2 horas a partir do momento em que começa;
   - o ranking final sai em **01/11**.
   

@@ -16,7 +16,7 @@ const maiuscula = (t: string) => t.replace(/^./, (c) => c.toUpperCase())
 export const TAMANHOS = [50, 80, 100, 120] as const
 export const MIN_QUESTOES = 10
 export const MAX_QUESTOES = 200
-/** A edição de lançamento: datas do contrato (25/10 08:00 → 31/10 23:59) e aberta a todos. */
+/** A edição de lançamento: datas do contrato (24/10 08:00 → 31/10 23:59) e aberta a todos. */
 export const MES_LANCAMENTO = '2026-10'
 
 /** "outubro de 2026" de '2026-10' (ou de '2026-10-vespera-…'). */
@@ -75,7 +75,7 @@ export function tituloPadrao(f: { mes: string; tipo: TipoEdicao; dataProva: stri
 
 /**
  * Datas sugeridas (hora de Brasília, formato datetime-local):
- * mensal do dia 1º 00:00 ao último dia 23:59; outubro de 2026 de 25/10 08:00 a 31/10 23:59;
+ * mensal do dia 1º 00:00 ao último dia 23:59; outubro de 2026 de 24/10 08:00 a 31/10 23:59;
  * véspera abre 7 dias antes da prova e fecha às 23:59 da véspera.
  */
 export function datasPadrao(f: { mes: string; tipo: TipoEdicao; dataProva: string }): { abre: string; fecha: string } {
@@ -84,7 +84,7 @@ export function datasPadrao(f: { mes: string; tipo: TipoEdicao; dataProva: strin
     const dia = (ms: number) => new Date(ms).toISOString().slice(0, 10)
     return { abre: `${dia(prova - 7 * 86_400_000)}T00:00`, fecha: `${dia(prova - 86_400_000)}T23:59` }
   }
-  if (f.mes === MES_LANCAMENTO) return { abre: '2026-10-25T08:00', fecha: '2026-10-31T23:59' }
+  if (f.mes === MES_LANCAMENTO) return { abre: '2026-10-24T08:00', fecha: '2026-10-31T23:59' }
   return { abre: inicioDoMes(f.mes).slice(0, 16), fecha: fimDoMes(f.mes).slice(0, 16) }
 }
 

@@ -34,9 +34,9 @@ try {
   // ---- Padrões do formulário
   const out = m.formularioPadrao('2026-10')
   assert.equal(out.titulo, 'Simulado Nacional · Outubro de 2026')
-  assert.equal(out.abre, '2026-10-25T08:00')
+  assert.equal(out.abre, '2026-10-24T08:00')
   assert.equal(out.fecha, '2026-10-31T23:59')
-  assert.equal(m.localParaIso(out.abre), '2026-10-25T08:00:00-03:00')
+  assert.equal(m.localParaIso(out.abre), '2026-10-24T08:00:00-03:00')
   assert.equal(m.localParaIso(out.fecha, true), '2026-10-31T23:59:59-03:00')
   assert.equal(out.abertoATodos, true, 'outubro de 2026 é a edição de lançamento, aberta a todos')
   assert.equal(out.destaqueInicio, true)
@@ -99,7 +99,7 @@ try {
     assert.ok(m.mensagemDoCodigo(codigo), `sem mensagem para ${codigo}`)
 
   // ---- Situação da edição
-  const ed = { publicado: true, abre_em: '2026-10-25T08:00:00-03:00', fecha_em: '2026-10-31T23:59:59-03:00' }
+  const ed = { publicado: true, abre_em: '2026-10-24T08:00:00-03:00', fecha_em: '2026-10-31T23:59:59-03:00' }
   const t = (iso) => Date.parse(iso)
   assert.equal(m.statusEdicao({ ...ed, publicado: false }, t('2026-10-26T12:00:00Z')), 'rascunho')
   assert.equal(m.statusEdicao(ed, t('2026-10-10T12:00:00Z')), 'agendada')
