@@ -188,6 +188,149 @@
   .cc--cronograma .cc-dia > button:hover:not(:disabled), .cc--cronograma .cc-dia--selecionado > button { transform: none; }
 }
 
+/* ── Calendário refeito (Tales, 19/10/2026): abre na semana; "Ver o mês inteiro" abre o mês na própria página ──
+   Cada dia da semana diz, com palavra e ícone (a cor nunca fala sozinha): o estado, o tipo de dia, as áreas
+   com o nome inteiro e quantas questões, e o número grande de questões novas (ou feitas, nos dias que passaram).
+   A barra embaixo é a divisão do dia entre as áreas, na mesma cor da legenda do cronograma. */
+
+/* Topo: título e controles na linha de cima, a frase que explica embaixo. */
+.cc--cronograma .cc-topo { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "titulo controles" "explica explica"; align-items: end; gap: var(--e-3) var(--e-5); }
+.cc--cronograma .cc-topo__titulo { grid-area: titulo; display: block; }
+.cc--cronograma .ccs-controles { grid-area: controles; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: var(--e-3); }
+.cc--cronograma .ccs-explica { grid-area: explica; max-width: 66ch; margin: 0; padding-top: var(--e-3); border-top: 2px dashed var(--px-borda); font-size: 0.95rem; line-height: 1.5; color: var(--texto-2); text-wrap: pretty; }
+.cc--cronograma .ccs-explica b { color: var(--texto); }
+.cc--cronograma .cc-topo h2 { outline: none; }
+.cc--cronograma .cc-topo h2:focus-visible { outline: 3px solid var(--verdete); outline-offset: 4px; }
+.cc--cronograma .ccs-titulo { text-wrap: balance; }
+
+/* O botão dourado que troca a vista: grande, em pixel, impossível de não ver. */
+.cc--cronograma .ccs-alternar { display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; min-height: 48px; margin: 2px 6px 6px 2px; padding: 0 1.25rem; border: 0; border-radius: 0; background: var(--px-ouro); color: var(--px-tinta); font: inherit; font-size: 1rem; font-weight: 800; letter-spacing: -0.01em; cursor: pointer; box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra); transition: transform 0.16s var(--cr-ease), box-shadow 0.16s var(--cr-ease), background-color 0.16s var(--cr-ease); }
+.cc--cronograma .ccs-alternar svg { flex: none; }
+.cc--cronograma .ccs-alternar:hover { background: #ffdf95; transform: translate(-1px, -1px); box-shadow: 0 0 0 2px var(--px-tinta), 5px 5px 0 2px var(--px-ouro-sombra); }
+.cc--cronograma .ccs-alternar:active { transform: translate(3px, 3px); box-shadow: 0 0 0 2px var(--px-tinta), 1px 1px 0 2px var(--px-ouro-sombra); }
+.cc--cronograma .ccs-alternar:focus-visible { outline: 3px solid var(--verdete); outline-offset: 5px; }
+.cc--cronograma .ccs-alternar--voltar { background: var(--superficie); color: var(--texto); box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px color-mix(in srgb, var(--px-ouro-sombra) 55%, transparent); }
+.cc--cronograma .ccs-alternar--voltar svg { color: var(--ouro-texto); }
+.cc--cronograma .ccs-alternar--voltar:hover { background: color-mix(in srgb, var(--px-ouro) 22%, var(--superficie)); }
+:root[data-tema="escuro"] .cc--cronograma .ccs-alternar { box-shadow: 0 0 0 2px #000, 4px 4px 0 2px #000; }
+:root[data-tema="escuro"] .cc--cronograma .ccs-alternar--voltar { box-shadow: 0 0 0 2px var(--px-ouro), 4px 4px 0 2px #000; }
+:root[data-tema="escuro"] .cc--cronograma .ccs-alternar--voltar svg { color: var(--px-ouro); }
+
+/* Corpo da semana: os sete dias numa fileira, o detalhe do dia embaixo. */
+.cc--cronograma.cc--embutido .cc-corpo--semana { grid-template-columns: minmax(0, 1fr); gap: var(--e-5); padding: var(--e-5); }
+.cc--cronograma .cc-corpo--semana .cc-detalhe { position: static; }
+.cc--cronograma .ccs-semana { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.cc--cronograma .ccs-semana--frente { animation: cc-frente 0.22s var(--cr-ease); }
+.cc--cronograma .ccs-semana--tras { animation: cc-tras 0.22s var(--cr-ease); }
+.cc--cronograma .ccs-dia { min-width: 0; display: flex; }
+.cc--cronograma .ccs-dia > button { position: relative; display: flex; flex-direction: column; gap: 0.6rem; width: 100%; min-height: 15.5rem; padding: 0.85rem 0.8rem 1.25rem; border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); color: inherit; font: inherit; text-align: left; cursor: pointer; overflow: hidden; box-shadow: 3px 3px 0 var(--px-sombra); transition: transform 0.16s var(--cr-ease), box-shadow 0.16s var(--cr-ease), border-color 0.16s var(--cr-ease); }
+.cc--cronograma .ccs-dia > button:hover:not(:disabled) { transform: translate(-1px, -1px); border-color: var(--traco-forte); box-shadow: 4px 4px 0 var(--px-sombra); }
+.cc--cronograma .ccs-dia > button:active:not(:disabled) { transform: translate(1px, 1px); box-shadow: 1px 1px 0 var(--px-sombra); }
+.cc--cronograma .ccs-dia > button:focus-visible { outline: 3px solid var(--verdete); outline-offset: 3px; }
+.cc--cronograma .ccs-dia > button:disabled { cursor: default; }
+
+.cc--cronograma .ccs-dia__data { display: flex; align-items: baseline; gap: 0.35rem; line-height: 1; }
+.cc--cronograma .ccs-dia__data small { font-size: 0.8rem; font-weight: 750; color: var(--texto-2); }
+.cc--cronograma .ccs-dia__data b { font-family: var(--fonte-marca); font-size: 1.85rem; font-weight: 800; letter-spacing: -0.03em; }
+.cc--cronograma .ccs-dia__meio { display: grid; gap: 0.6rem; align-content: start; min-width: 0; }
+.cc--cronograma .ccs-dia__etiquetas { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.45rem; }
+.cc--cronograma .ccs-dia__tipo { font-size: 0.76rem; font-weight: 650; color: var(--texto-2); }
+.cc--cronograma .ccs-selo { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.16rem 0.45rem; border-radius: 3px; background: var(--superficie-2); color: var(--texto-2); font-size: 0.74rem; font-weight: 800; line-height: 1.2; white-space: nowrap; }
+.cc--cronograma .ccs-selo svg { flex: none; }
+.cc--cronograma .ccs-selo--hoje, .cc--cronograma .ccs-selo--prova { background: var(--px-ouro); color: var(--px-tinta); box-shadow: 1px 1px 0 var(--px-ouro-sombra); }
+.cc--cronograma .ccs-selo--feito, .cc--cronograma .ccs-selo--adiantado { background: color-mix(in srgb, var(--cp-feito) 14%, var(--superficie)); color: var(--cp-feito); }
+.cc--cronograma .ccs-selo--parcial { background: color-mix(in srgb, var(--cp-atrasado) 12%, var(--superficie)); color: var(--cp-atrasado); }
+.cc--cronograma .ccs-selo--reta { background: color-mix(in srgb, var(--px-ouro) 30%, var(--superficie)); color: var(--ouro-texto); }
+.cc--cronograma .ccs-selo--mini { background: transparent; border: 1.5px dashed var(--cp-marco); color: var(--ouro-texto); }
+
+.cc--cronograma .ccs-dia__areas { display: grid; gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
+.cc--cronograma .ccs-dia__areas li { display: grid; grid-template-columns: 0.7rem minmax(0, 1fr) auto; gap: 0.4rem; align-items: start; font-size: 0.86rem; font-weight: 650; line-height: 1.22; }
+.cc--cronograma .ccs-dia__areas i { width: 0.7rem; height: 0.7rem; margin-top: 0.18rem; border-radius: 1px; }
+.cc--cronograma .ccs-dia__areas span { overflow-wrap: break-word; hyphens: manual; }
+.cc--cronograma .ccs-dia__areas em { font-variant-numeric: tabular-nums; font-style: normal; font-size: 0.8rem; font-weight: 750; color: var(--texto-2); }
+.cc--cronograma .ccs-dia__areas .ccs-dia__mais { display: block; font-size: 0.78rem; font-weight: 700; color: var(--texto-2); }
+.cc--cronograma .ccs-dia__marco { display: flex; align-items: flex-start; gap: 0.3rem; font-size: 0.76rem; font-weight: 800; line-height: 1.25; color: var(--ouro-texto); }
+.cc--cronograma .ccs-dia__marco svg { flex: none; margin-top: 0.1rem; }
+.cc--cronograma .ccs-dia__nota, .cc--cronograma .ccs-dia__fora { font-size: 0.8rem; line-height: 1.35; color: var(--texto-2); }
+.cc--cronograma .ccs-dia__numero { display: grid; justify-items: start; gap: 0.15rem; margin-top: auto; padding-top: 0.6rem; border-top: 2px dashed color-mix(in srgb, var(--px-borda) 80%, transparent); }
+.cc--cronograma .ccs-dia__numero b { font-family: var(--fonte-marca); font-size: 1.65rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+.cc--cronograma .ccs-dia__numero small { font-size: 0.76rem; font-weight: 700; color: var(--texto-2); }
+.cc--cronograma .ccs-dia__numero em { font-variant-numeric: tabular-nums; line-height: 1.25; font-style: normal; font-size: 0.76rem; font-weight: 750; color: var(--cp-feito); }
+.cc--cronograma .ccs-dia__numero s { font-size: 0.74rem; font-weight: 700; color: var(--texto-2); }
+.cc--cronograma .ccs-dia__barra { position: absolute; left: 0; right: 0; bottom: 0; display: flex; gap: 2px; height: 7px; }
+.cc--cronograma .ccs-dia__barra i { flex-basis: 0; height: 100%; }
+
+/* Estados de cada dia (os mesmos do resto do cronograma). */
+.cc--cronograma .ccs-dia--feito > button { background: color-mix(in srgb, var(--cp-feito) 6%, var(--superficie)); }
+.cc--cronograma .ccs-dia--feito .ccs-dia__numero b, .cc--cronograma .ccs-dia--adiantado .ccs-dia__numero b { color: var(--cp-feito); }
+.cc--cronograma .ccs-dia--parcial .ccs-dia__numero b { color: var(--cp-atrasado); }
+.cc--cronograma .ccs-dia--feito .ccs-dia__barra, .cc--cronograma .ccs-dia--parcial .ccs-dia__barra { opacity: 0.6; }
+.cc--cronograma .ccs-dia--atrasado > button { background: var(--superficie-2); }
+.cc--cronograma .ccs-dia--folga > button { background: repeating-linear-gradient(135deg, var(--superficie-2) 0 6px, color-mix(in srgb, var(--traco) 60%, transparent) 6px 12px); }
+.cc--cronograma .ccs-dia--reta > button { background: color-mix(in srgb, var(--px-ouro) 14%, var(--superficie)); }
+.cc--cronograma .ccs-dia--prova > button { background: linear-gradient(140deg, #f4cf7c, #d9a842); border: 2px dashed #8a6416; color: #3b2604; }
+.cc--cronograma .ccs-dia--prova .ccs-dia__data small, .cc--cronograma .ccs-dia--prova .ccs-dia__tipo { color: #4a3208; }
+.cc--cronograma .ccs-dia--prova .ccs-selo--prova { background: #3b2604; color: var(--px-ouro); box-shadow: none; }
+.cc--cronograma .ccs-dia--fora > button { min-height: 0; border-style: dashed; background: transparent; box-shadow: none; color: color-mix(in srgb, var(--texto-2) 75%, transparent); }
+.cc--cronograma .ccs-dia--atual > button { border-color: var(--cp-agora); background: var(--cp-agora-veu); box-shadow: 4px 4px 0 color-mix(in srgb, var(--cp-agora) 40%, transparent); }
+.cc--cronograma .ccs-dia--atual .ccs-dia__numero b { color: var(--cp-agora); }
+.cc--cronograma .ccs-dia--selecionado > button, .cc--cronograma .ccs-dia--selecionado > button:hover:not(:disabled) { border-color: var(--verdete); box-shadow: 0 0 0 2px var(--verdete), 5px 5px 0 2px color-mix(in srgb, var(--verdete) 30%, transparent); transform: translate(-2px, -2px); }
+.cc--cronograma .ccs-dia--atual.ccs-dia--selecionado > button { border-color: var(--cp-agora); }
+
+/* O detalhe do dia, embaixo da semana: no computador em duas colunas (o resumo e a lista do dia). */
+.cc--cronograma .cc-detalhe__cabeca, .cc--cronograma .cc-detalhe__fim { display: grid; gap: var(--e-3); align-content: start; min-width: 0; }
+@media (min-width: 56rem) {
+  .cc--cronograma .cc-corpo--semana .cc-detalhe:has(.cc-detalhe__lista) { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); grid-template-rows: auto 1fr; column-gap: var(--e-6); padding: var(--e-5) var(--e-6) var(--e-6); }
+  .cc--cronograma .cc-corpo--semana .cc-detalhe:has(.cc-detalhe__lista) .cc-detalhe__cabeca { grid-column: 1; grid-row: 1; }
+  .cc--cronograma .cc-corpo--semana .cc-detalhe:has(.cc-detalhe__lista) .cc-detalhe__fim { grid-column: 1; grid-row: 2; align-self: start; margin-top: var(--e-3); }
+  .cc--cronograma .cc-corpo--semana .cc-detalhe:has(.cc-detalhe__lista) .cc-detalhe__lista { grid-column: 2; grid-row: 1 / span 2; align-self: start; }
+  .cc--cronograma .cc-corpo--semana .cc-detalhe h3 { font-size: 1.7rem; }
+}
+
+/* A barra das áreas no mês: segmentos com 2 px entre eles, como na semana. */
+.cc--cronograma .cc-dia__faixa { display: flex; gap: 2px; }
+.cc--cronograma .cc-dia__faixa i { flex-basis: 0; height: 100%; }
+
+/* Abrir o mês: desenrola de cima para baixo (240 ms). */
+.cc--cronograma .ccm-entra { animation: ccm-entra 0.24s var(--cr-ease); }
+.cc--cronograma .ccs-entra { animation: ccs-entra 0.2s var(--cr-ease); }
+@keyframes ccm-entra { from { opacity: 0; clip-path: inset(0 0 70% 0); transform: translateY(-6px); } to { opacity: 1; clip-path: inset(0 0 0 0); transform: none; } }
+@keyframes ccs-entra { from { opacity: 0; transform: translateY(-4px); } }
+
+/* Tablet e celular: a semana vira uma lista de linhas largas, fáceis de tocar. */
+@media (max-width: 55.99rem) {
+  .cc--cronograma .ccs-semana { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .cc--cronograma .ccs-dia > button { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr) auto; grid-template-areas: "data meio numero"; align-items: start; gap: 0 0.85rem; min-height: 5.25rem; padding: 0.8rem 0.9rem 1.05rem 0.7rem; }
+  .cc--cronograma .ccs-dia__data { grid-area: data; flex-direction: column; align-items: center; gap: 0.2rem; align-self: stretch; padding-right: 0.7rem; border-right: 2px dashed color-mix(in srgb, var(--px-borda) 85%, transparent); }
+  .cc--cronograma .ccs-dia__data b { font-size: 1.7rem; }
+  .cc--cronograma .ccs-dia__data small { font-size: 0.74rem; }
+  .cc--cronograma .ccs-dia__meio { grid-area: meio; gap: 0.45rem; }
+  .cc--cronograma .ccs-dia__areas { gap: 0.3rem; }
+  .cc--cronograma .ccs-dia__areas li { font-size: 0.9rem; }
+  .cc--cronograma .ccs-dia__numero { grid-area: numero; justify-items: end; margin-top: 0; padding-top: 0; border-top: 0; text-align: right; }
+  .cc--cronograma .ccs-dia__numero b { font-size: 1.55rem; }
+  .cc--cronograma .ccs-dia__numero small, .cc--cronograma .ccs-dia__numero em { max-width: 4.8rem; line-height: 1.2; }
+  .cc--cronograma .ccs-dia__barra { height: 5px; }
+  .cc--cronograma .ccs-dia--fora > button, .cc--cronograma .ccs-dia--folga > button { min-height: 4.2rem; }
+  .cc--cronograma .ccs-dia--selecionado > button, .cc--cronograma .ccs-dia--selecionado > button:hover:not(:disabled) { transform: none; box-shadow: 0 0 0 2px var(--verdete), 3px 3px 0 2px color-mix(in srgb, var(--verdete) 30%, transparent); }
+}
+@media (max-width: 52rem) {
+  /* O topo empilha: título, a frase que explica e os controles (o botão dourado na largura toda). */
+  .cc--cronograma .cc-topo { grid-template-columns: minmax(0, 1fr); grid-template-areas: "titulo" "explica" "controles"; align-items: stretch; gap: var(--e-3); }
+  .cc--cronograma .cc-topo__selo { display: flex; }
+  .cc--cronograma .cc-topo h2 { margin-top: var(--e-2); font-size: 1.6rem; white-space: normal; overflow: visible; }
+  .cc--cronograma .ccs-explica { padding-top: 0; border-top: 0; font-size: 0.92rem; }
+  .cc--cronograma .ccs-controles { display: grid; grid-template-columns: minmax(0, 1fr); justify-content: stretch; gap: var(--e-3); }
+  .cc--cronograma .ccs-alternar { order: -1; width: calc(100% - 8px); }
+  .cc--cronograma .cc-nav { grid-column: auto; grid-row: auto; display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; }
+  .cc--cronograma.cc--embutido .cc-corpo--semana { padding: var(--e-4) var(--e-3) var(--e-4); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cc--cronograma .ccm-entra, .cc--cronograma .ccs-entra, .cc--cronograma .ccs-semana--frente, .cc--cronograma .ccs-semana--tras { animation: none; }
+  .cc--cronograma .ccs-dia > button, .cc--cronograma .ccs-alternar { transition: none; }
+  .cc--cronograma .ccs-dia > button:hover:not(:disabled), .cc--cronograma .ccs-dia--selecionado > button, .cc--cronograma .ccs-alternar:hover { transform: none; }
+}
+
 /* ── Colunas: hoje à esquerda, amanhã, resumos e números à direita ── */
 @media (min-width: 60rem) { .cr .cp-colunas { gap: var(--e-5); } .cr .cp-col { gap: var(--e-5); } }
 
