@@ -1,5 +1,5 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--com-dados] [--roteiro ARQ.mjs] [--pasta DIR]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--com-dados] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR]
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
 // Sobe o site (vite) com um Supabase falso (conta assinante de exemplo) e grava celular (390) e computador (1440), dobra e página inteira.
 
@@ -60,6 +60,56 @@ const rpcs = {
   minha_posicao_ranking: (_u, a) => { const eu = rankingExemplo(a.periodo, true).find((l) => l.eh_voce); return [200, eu ? [{ posicao: eu.posicao, total: eu.total, total_geral: eu.total_geral }] : []] },
   meus_feitos: () => [200, { conquistas: [], dias: {}, indicados_assinantes: 0, indicados_30_dias: 0, simulado_edicoes: [], simulado_participacoes: [], ranking_semana: [], relatos_resolvidos: 0, comentarios_avaliados: 0, contra_corrente: 0, plano: null }],
 }
+// --admin: a conta de exemplo é administradora; o painel do Simulado Nacional (sn_admin_*) responde com
+// edições de exemplo guardadas em memória (outubro no ar, novembro em rascunho), com questões reais do acervo.
+const ADMIN = process.argv.includes('--admin')
+let snEdicoes = null
+function snExemplo() {
+  if (snEdicoes) return snEdicoes
+  const { readFileSync } = require_('node:fs')
+  const indice = JSON.parse(readFileSync(new URL('../public/acervo/indice.json', import.meta.url), 'utf8'))
+  const oficiais = new Set(['TEOT', 'TARO', 'TEOT/TARO'].map((p) => indice.provas.indexOf(p)))
+  const porTema = new Map()
+  for (const t of indice.temas) {
+    const dados = JSON.parse(readFileSync(new URL(`../public/acervo/${t.arquivo}`, import.meta.url), 'utf8'))
+    const boas = new Set((Array.isArray(dados) ? dados : dados.questoes).filter((q) => /^[A-E]$/.test(q.gabarito ?? '') && !q.anulada && !q.figuraPendente).map((q) => q.id))
+    porTema.set(t.slug, indice.questoes.filter((q) => !q.dup && q.an !== 1 && q.sim !== 1 && oficiais.has(q.p) && boas.has(q.id)).map((q) => q.id))
+  }
+  const ids = []
+  for (let k = 0; ids.length < 50; k++) for (const lista of porTema.values()) if (lista[k * 7] && ids.length < 50) ids.push(lista[k * 7])
+  const base = { tipo: 'mensal', descricao: null, destaque_inicio: true, config: {}, duracao_min: 120, total: 50, media: null }
+  snEdicoes = [
+    { ...base, edicao: '2026-11', titulo: 'Simulado Nacional · Novembro de 2026', aberto_a_todos: false, abre_em: '2026-11-01T03:00:00Z', fecha_em: '2026-12-01T02:59:59Z', publicado: false, inscritos: 0, participantes: 0, entregas: 0, ids: ids.slice().reverse() },
+    { ...base, edicao: '2026-10', titulo: 'Simulado Nacional · Outubro de 2026', descricao: 'A edição de lançamento, aberta a todas as contas.', aberto_a_todos: true, abre_em: '2026-10-25T11:00:00Z', fecha_em: '2026-11-01T02:59:59Z', publicado: true, inscritos: 412, participantes: 187, entregas: 163, media: 61.4, ids },
+  ]
+  return snEdicoes
+}
+const snResumo = (e) => ({ ...e, total: e.ids.length })
+const snMudar = (edicao, mudar) => { const e = snExemplo().find((x) => x.edicao === edicao); if (!e) return [400, { code: 'P0001', message: 'edicao_invalida' }]; mudar(e); return [200, snResumo(e)] }
+const rpcsAdmin = {
+  eh_administrador: () => [200, true],
+  listar_assinaturas_admin: () => [200, []],
+  sn_admin_listar: () => [200, snExemplo().map(snResumo)],
+  sn_admin_salvar: (_u, a) => {
+    const lista = snExemplo()
+    const nova = { edicao: a.p_edicao, tipo: a.p_tipo, titulo: a.p_titulo, descricao: a.p_descricao || null, destaque_inicio: a.p_destaque_inicio, config: a.p_config, aberto_a_todos: a.p_aberto_a_todos,
+      abre_em: a.p_abre_em, fecha_em: a.p_fecha_em, duracao_min: a.p_duracao_min, publicado: a.p_publicar, inscritos: 0, participantes: 0, entregas: 0, media: null, ids: a.p_itens.map((i) => i.id_questao) }
+    snEdicoes = [nova, ...lista.filter((e) => e.edicao !== nova.edicao)]
+    return [200, snResumo(nova)]
+  },
+  sn_admin_config: (_u, a) => snMudar(a.p_edicao, (e) => { e.titulo = a.p_titulo ?? e.titulo; e.descricao = a.p_descricao ?? e.descricao; e.destaque_inicio = a.p_destaque_inicio ?? e.destaque_inicio; e.aberto_a_todos = a.p_aberto_a_todos ?? e.aberto_a_todos }),
+  sn_admin_datas: (_u, a) => snMudar(a.p_edicao, (e) => { e.abre_em = a.p_abre_em ?? e.abre_em; e.fecha_em = a.p_fecha_em ?? e.fecha_em }),
+  sn_admin_publicar: (_u, a) => snExemplo().find((x) => x.edicao === a.p_edicao)?.participantes ? [400, { code: 'P0001', message: 'edicao_com_participantes' }] : snMudar(a.p_edicao, (e) => { e.publicado = a.p_publicado }),
+  sn_admin_trocar_item: (_u, a) => snMudar(a.p_edicao, (e) => { e.ids[a.p_ordem - 1] = a.p_item.id_questao }),
+  sn_admin_estatisticas: (_u, a) => {
+    const e = snExemplo().find((x) => x.edicao === a.p_edicao)
+    const areas = [['Trauma adulto', 66], ['Ortopedia pediátrica', 58], ['Mão e punho', 63], ['Ombro e cotovelo', 71], ['Tumores', 49], ['Pé e tornozelo', 60], ['Coluna', 55], ['Joelho', 68], ['Conceitos básicos', 74], ['Quadril', 57], ['Osteometabólicas', 44]]
+    return [200, { inscritos: e.inscritos, participantes: e.participantes, entregas: e.entregas, no_tempo: Math.max(0, e.entregas - 4), media: e.media,
+      por_area: e.entregas ? areas.map(([area, pct]) => ({ area, certas: pct * 8, total: 800, media: pct })) : [],
+      mais_erradas: e.entregas ? e.ids.slice(3, 13).map((id, i) => ({ id_questao: id, ordem: 4 + i, erros: 141 - i * 9, total: 159 })) : [] }]
+  },
+}
+const require_ = (await import('node:module')).createRequire(import.meta.url)
 async function atender(rota) {
   const pedido = rota.request()
   const url = new URL(pedido.url())
@@ -73,6 +123,7 @@ async function atender(rota) {
   const rpc = url.pathname.match(/^\/rest\/v1\/rpc\/([a-z_]+)$/)?.[1]
   if (rpc === 'obter_ranking_visitante') return responder(200, rankingExemplo(JSON.parse(pedido.postData() || '{}').periodo, false))
   if (!usuario) return responder(401, { code: '42501', message: 'permission denied' })
+  if (ADMIN && rpc && rpcsAdmin[rpc]) { const [s, c] = rpcsAdmin[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc && rpcs[rpc]) { const [s, c] = rpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc) return responder(200, null)
   return responder(200, [])
@@ -139,6 +190,9 @@ for (const [nome, vp, esc] of [['cel', { width: 390, height: 844 }, 2], ['pc', {
     if (r && !sem) localStorage.setItem(`ortoquestoes:conta:${c}:respondidas`, r)
     if (f && !sem) localStorage.setItem(`ortoquestoes:conta:${c}:favoritos`, f)
   }, [JSON.stringify(sessaoAuth), TEMA, SEM_CONTA, respondidasExemplo ? JSON.stringify(respondidasExemplo) : null, CONTA, favoritosExemplo ? JSON.stringify(favoritosExemplo) : null])
+  // --agora ISO: fixa o relógio da página (ex.: o aviso do dia 25 no painel).
+  const iAgora = args.indexOf('--agora')
+  if (iAgora >= 0) await contexto.clock.setFixedTime(new Date(args[iAgora + 1]))
   const p = await contexto.newPage()
   p.on('pageerror', (e) => erros.push(`${nome}: ${e.message}`))
   await p.goto(`${BASE}#${ROTA}`); await p.waitForTimeout(4000); await p.addStyleTag({ content: ESCONDER }); await p.waitForTimeout(400)
