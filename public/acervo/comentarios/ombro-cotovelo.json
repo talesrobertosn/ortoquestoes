@@ -5280,19 +5280,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0522": {
-  "conceito": "**A ordem de reinervação após um reparo nervoso.** Depois que o nervo é reparado, os axônios crescem cerca de 1 mm por dia a partir do local da lesão. Os músculos são reinervados na ordem em que recebem seus ramos: o mais próximo da lesão volta primeiro, e o mais distante, por último. Conhecer essa ordem permite acompanhar a recuperação e perceber cedo quando ela parou.\n\n**A ordem dos ramos do mediano.** O mediano não dá ramos no braço. Abaixo do cotovelo, distribui-se assim, aproximadamente:\n1. **Pronador redondo**, frequentemente com ramos que nascem logo acima ou na altura do cotovelo.\n2. Flexor radial do carpo.\n3. Palmar longo.\n4. Flexor superficial dos dedos.\n5. Nervo interósseo anterior: flexor longo do polegar, flexor profundo do indicador e do médio, pronador quadrado.\n6. No punho, ramo recorrente para a musculatura tenar e os dois primeiros lumbricais.\n\n**Como usar isso na prática.**\n- Na lesão alta do mediano reparada, o primeiro sinal de recuperação motora esperado é a contração do pronador redondo, depois o flexor radial do carpo e assim por diante.\n- O sinal de Tinel avançando ao longo do trajeto acompanha os axônios em regeneração.\n- Se o pronador redondo não se recupera no prazo esperado, a reinervação pode estar falhando, e se considera reexploração ou transferências.\n- A musculatura tenar, por estar muito distante, muitas vezes não se recupera em lesões altas de adultos, e se planejam transferências tendíneas para oposição.\n\n| Nervo | Primeiro músculo após o cotovelo |\n|---|---|\n| Mediano | Pronador redondo |\n| Ulnar | Flexor ulnar do carpo |\n| Radial (antes do cotovelo) | Braquiorradial e extensor radial longo do carpo |\n\n> Lesão alta do mediano reparada: o pronador redondo é o primeiro a voltar.",
-  "correta": "**B: pronador redondo.** É o primeiro músculo inervado pelo mediano, com ramos que nascem na altura do cotovelo, às vezes um pouco acima. Numa lesão acima do cotovelo, os axônios em regeneração chegam a ele antes dos demais, e sua recuperação é o primeiro sinal motor de que o reparo está funcionando. Avalia-se pedindo pronação contra resistência com o cotovelo estendido, posição em que o pronador redondo é o principal responsável.",
   "incorretas": {
-   "A": "**O supinador é inervado pelo radial, por meio do nervo interósseo posterior.** Não tem relação com a recuperação do mediano. Uma lesão do mediano não afeta a supinação, que depende do supinador e do bíceps.",
-   "C": "**O flexor radial do carpo é inervado pelo mediano logo depois do pronador redondo.** Por isso é reinervado depois dele. É uma distratora próxima: faz parte do mesmo grupo muscular e recebe ramos na mesma região, mas um pouco mais distalmente.",
-   "D": "**O palmar longo também vem depois do pronador redondo e do flexor radial do carpo.** Além disso, está ausente em parte das pessoas, o que o torna um marcador pouco útil para acompanhar a reinervação."
+   "A": "**Supinador.** Sua inervação vem do nervo radial, pelo ramo profundo que continua como nervo interósseo posterior, não do mediano.",
+   "C": "**Flexor radial do carpo.** Também recebe inervação do mediano, mas seu ramo geralmente surge após o ramo para o pronador redondo.",
+   "D": "**Palmar longo.** É outro músculo inervado pelo mediano após o pronador redondo; além disso, pode estar ausente anatomicamente."
   },
   "referencias": [
-   "Sunderland S. Nerves and Nerve Injuries. 2ª ed. Edinburgh: Churchill Livingstone; 1978.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de lesões de nervos periféricos.",
-   "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. Nervo mediano no antebraço."
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7580294/",
+   "https://www.ncbi.nlm.nih.gov/books/NBK448084/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**A distância até o músculo importa na recuperação nervosa.** Após o reparo de uma lesão alta do mediano, os axônios precisam alcançar os ramos motores no antebraço. O ramo para o pronador redondo costuma ser o primeiro; o flexor radial do carpo e o palmar longo são inervados mais distalmente. Por isso, entre os músculos listados, a contração do pronador redondo é o primeiro sinal motor esperado de reinervação. A ordem dos demais ramos pode variar anatomicamente, e o tempo de recuperação também depende da distância da lesão, da qualidade do reparo e da gravidade da lesão.",
+  "correta": "**B, pronador redondo.** É o primeiro músculo do antebraço a receber ramo motor do mediano na sequência anatômica habitual. Em um estudo de dissecção, foi o primeiro músculo inervado em todos os antebraços examinados.",
+  "geradoEm": "2026-10-18",
   "conferido": false
  },
  "ombro-cotovelo-0523": {
@@ -5467,19 +5466,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0534": {
-  "conceito": "**Epicondilite lateral (cotovelo do tenista).** É a causa mais comum de dor lateral no cotovelo. Apesar do nome, é uma **tendinopatia degenerativa** (angiofibroblástica) da origem do **extensor radial curto do carpo** no epicôndilo lateral, e não uma inflamação aguda.\n\n**Quem é acometido.** Adultos entre 35 e 55 anos, trabalhadores manuais (construção civil, carpintaria) e esportistas de raquete. Apenas uma minoria são tenistas.\n\n**Quadro clínico.**\n- Dor lateral no cotovelo que piora ao **segurar objetos com força**, ao levantar objetos com a palma para baixo e ao torcer (abrir maçanetas, apertar a mão).\n- **Dor à palpação** logo à frente e abaixo do epicôndilo lateral.\n- **Testes**: dor à **extensão resistida do punho** com o cotovelo estendido (Cozen), dor à extensão resistida do dedo médio (Maudsley), dor ao alongamento passivo dos extensores (Mill).\n\n**Diagnóstico diferencial.** Síndrome do túnel radial (compressão do nervo interósseo posterior, dor mais distal), instabilidade posterolateral, artrose radiocapitelar, radiculopatia C6.\n\n**Tratamento.** Autolimitado na maioria em 6 a 12 meses. Modificação de atividades, órtese de contraforça, exercícios excêntricos, anti-inflamatórios tópicos. Infiltração com corticoide alivia a curto prazo, mas tem mais recidivas a longo prazo. Cirurgia (desbridamento do extensor radial curto) para casos refratários após cerca de 6 a 12 meses.\n\n| Epicondilite | Origem | Teste |\n|---|---|---|\n| Lateral (tenista) | Extensor radial curto do carpo | Extensão resistida do punho |\n| Medial (golfista) | Pronador redondo e flexor radial do carpo | Flexão e pronação resistidas |\n\n> Dor lateral no cotovelo ao pegar objetos e à extensão resistida do punho: epicondilite lateral.",
-  "correta": "**A: Epicondilite tipo \"tennis elbow\".** O trabalhador da construção civil com dor crônica na região lateral do cotovelo, que piora ao segurar objetos, e dor à extensão resistida do punho tem o quadro clássico da epicondilite lateral, tendinopatia da origem do extensor radial curto do carpo.",
   "incorretas": {
-   "B": "**A bursite olecraniana** causa aumento de volume na face posterior do cotovelo, sobre o olécrano, com dor local ou inflamação. Não causa dor lateral à extensão resistida do punho.",
-   "C": "**A síndrome do túnel do carpo** causa parestesias no território do mediano na mão, não dor lateral no cotovelo.",
-   "D": "**A tenossinovite de De Quervain** acomete o primeiro compartimento extensor do punho, com dor na estiloide radial e Finkelstein positivo.",
-   "E": "**A epicondilite medial (do golfista)** causa dor no epicôndilo medial, que piora com a flexão e a pronação resistidas do punho, e não com a extensão."
+   "B": "**Bursite olecraniana.** Costuma produzir aumento de volume e dor na face posterior do cotovelo, não dor lateral provocada pelo trabalho dos extensores.",
+   "C": "**Síndrome do túnel do carpo.** Predominam parestesias e sintomas na mão no território do mediano, sem explicar esse teste doloroso no cotovelo.",
+   "D": "**Tenossinovite de De Quervain.** A dor se concentra no lado radial do punho, na região do primeiro compartimento extensor.",
+   "E": "**Epicondilite medial, ou cotovelo do golfista.** A dor seria no epicôndilo medial e tenderia a aparecer com flexão do punho ou pronação resistidas."
   },
   "referencias": [
-   "Nirschl RP, Pettrone FA. Tennis elbow: the surgical treatment of lateral epicondylitis. J Bone Joint Surg Am. 1979;61(6):832-839.",
-   "Morrey BF, Sanchez-Sotelo J, Morrey ME, eds. Morrey's The Elbow and Its Disorders. Elsevier. Epicondilite lateral."
+   "https://orthoinfo.aaos.org/en/diseases--conditions/tennis-elbow-lateral-epicondylitis/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**O teste localiza a origem da dor.** Segurar um objeto com força exige que os extensores do punho estabilizem a mão. Se a origem desses tendões no epicôndilo lateral está dolorosa, a preensão e a extensão resistida do punho reproduzem os sintomas. Esse é o padrão da epicondilalgia lateral, também chamada de cotovelo do tenista, mesmo em quem nunca jogou tênis. O tendão do extensor radial curto do carpo é frequentemente envolvido. Dor medial sugeriria outra origem tendínea; dor sobre o olécrano, uma bursite posterior.",
+  "correta": "**A, epicondilite lateral.** A combinação de dor lateral no cotovelo ao agarrar e levantar objetos com dor provocada pela extensão resistida do punho aponta para a origem dos extensores no epicôndilo lateral.",
+  "geradoEm": "2026-10-18",
   "conferido": false
  },
  "ombro-cotovelo-0535": {
@@ -5533,19 +5531,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0538": {
-  "conceito": "**Flexoplastia de Steindler.** É uma cirurgia para restaurar a **flexão ativa do cotovelo** quando os flexores principais (bíceps e braquial) estão paralisados ou ausentes, como em lesões do plexo braquial, sequelas de poliomielite e artrogripose.\n\n**Técnica.** A origem da musculatura **flexopronadora** (pronador redondo, flexor radial do carpo, palmar longo, flexor superficial dos dedos, flexor ulnar do carpo) é desinserida do **epicôndilo medial** e transferida **proximalmente**, cerca de 5 cm, para a face **anterior** da extremidade distal do úmero. Com a origem mais alta e anterior, esses músculos ganham braço de alavanca para fletir o cotovelo.\n\n**Efeito de Steindler.** Para fletir o cotovelo, o paciente tende a pronar o antebraço e fletir o punho e os dedos ao mesmo tempo, porque os mesmos músculos são usados; é uma limitação conhecida.\n\n**Pré-requisitos.** Flexopronadores com força adequada (pelo menos grau 4), mão funcional e amplitude passiva do cotovelo.\n\n**Outras opções para restaurar a flexão do cotovelo.**\n- Transferência do **peitoral maior** (Clark), do **grande dorsal** (bipolar), do **tríceps** (Bunnell, Carroll).\n- Transferências de nervos (Oberlin: fascículo do ulnar para o ramo do bíceps).\n- Transferência muscular livre (grácil).\n\n**Artrogripose.** A transferência do tríceps e a de Steindler são opções para crianças com cotovelo rígido em extensão, que precisam de flexão para levar a mão à boca.\n\n> Steindler: transferência proximal da origem flexopronadora do epicôndilo medial para restaurar a flexão do cotovelo.",
-  "correta": "**E: Steindler.** A flexoplastia de Steindler transfere a origem da musculatura flexopronadora, incluindo o pronador redondo, do epicôndilo medial para a face anterior da extremidade distal do úmero. Assim, esses músculos passam a fletir o cotovelo. É usada em paralisias dos flexores do cotovelo, incluindo a artrogripose.",
   "incorretas": {
-   "A": "**Macintosh** é lembrado pela tenodese lateral extra-articular do joelho (reconstrução para instabilidade do LCA), não por cirurgias do cotovelo.",
-   "B": "**Chandler** é associado à osteonecrose da cabeça femoral (doença de Chandler) e não a transferências no cotovelo.",
-   "C": "**Bado** classificou as fraturas-luxações de Monteggia, sem relação com a flexoplastia.",
-   "D": "**Richmond** não está associado a esta técnica; a alternativa é um distrator."
+   "A": "**Machintoch.** Não é a denominação da transferência proximal da massa flexopronadora descrita no enunciado.",
+   "B": "**Chandler.** Não corresponde a essa flexoplastia.",
+   "C": "**Bado.** O nome é associado à classificação das fraturas-luxações de Monteggia, não a essa transferência muscular.",
+   "D": "**Richmond.** Não designa a técnica de reposicionamento da origem flexopronadora apresentada."
   },
   "referencias": [
-   "Morrey BF, Sanchez-Sotelo J, Morrey ME, eds. Morrey's The Elbow and Its Disorders. Elsevier. Transferências tendinosas para a flexão do cotovelo.",
-   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrogripose."
+   "https://pubmed.ncbi.nlm.nih.gov/31738738/",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC1939841/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**Steindler transforma flexopronadores em flexores do cotovelo.** Na flexoplastia, a origem comum da massa flexopronadora é deslocada proximalmente do epicôndilo medial para a face anterior do úmero. O novo ponto de fixação aumenta seu braço de alavanca para flexão do cotovelo. A técnica depende de flexopronadores funcionantes e de amplitude passiva suficiente; transferir músculos para um cotovelo rigidamente bloqueado não produziria flexão útil. Pode haver flexão simultânea do punho e dos dedos durante o esforço, pois os mesmos músculos participam desses movimentos. O enunciado destaca o pronador redondo, mas o procedimento clássico transfere a origem da massa flexopronadora, não apenas um tendão isolado.",
+  "correta": "**E, cirurgia de Steindler.** A pista decisiva é levar a origem flexopronadora do epicôndilo medial à face anterior do úmero para recuperar a flexão ativa.",
+  "geradoEm": "2026-10-18",
   "conferido": false
  },
  "ombro-cotovelo-0539": {
