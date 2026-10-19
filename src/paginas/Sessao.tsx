@@ -713,6 +713,8 @@ export function Sessao() {
           riscadas={sessao.riscadas[questaoAtual.id] ?? []}
           favorita={favoritos.includes(questaoAtual.id)}
           marcadaRevisao={sessao.revisar.includes(questaoAtual.id)}
+          aoProxima={avancar}
+          rotuloProxima={posicao + 1 < total ? 'Próxima questão' : 'Ver o resultado'}
           aoResponder={async (letra, correta, segundos, confianca) => {
             if (!conta) { definirPortaoContaAberto(true); return }
             if (autorizando.current) return
