@@ -197,3 +197,33 @@ Validação sem erros, build, testes do projeto e fixture de revisão passaram. 
 comentários e as 17 figuras foram verificados na interface; sete adaptações também
 em largura de celular, sem transbordamento. As referências públicas contêm livro e
 edição, sem nome de PDF, paginação recortada ou instruções de produção.
+
+## ENARE Cirurgia da Mão (2022, 2023 e 2025) e FMRP-USP 2024, recebidos em 19/10/2026
+
+Pedido do Tales: "tem também algumas do ENARE que não tínhamos no site, esse aqui você poderia pôr no site".
+Provas oficiais com o nome real (não são OrtoQuestões Simulados), `area: "cirurgia-mao"`, entraram só com a
+resposta oficial; o comentário fica para a fila do Claude local com o Green ([docs/mao/PROTOCOLO.md](../mao/PROTOCOLO.md)).
+
+- **Nome e ano.** O caderno é o "PRM Pré-requisito Cirurgia da Mão" do ENARE (EBSERH), 80 questões: 1 a 40 de
+  ortopedia e 41 a 80 de cirurgia plástica, cinco alternativas. Prova `ENARE Cirurgia da Mão`, ano de ingresso
+  (edição 2021/2022 = 2022; 2022/2023 = 2023; 2024/2025 = 2025), como no `ENARE R4 Ortopedia` já existente.
+  A parte de ortopedia segue o tema de cada questão; a de plástica entrou em `mao` (Cirurgia plástica geral,
+  Queimaduras, Cicatrização e enxertos de pele, Retalhos, Microcirurgia e os de mão propriamente ditos).
+- **ENARE 2025:** as questões 1 a 40 já estavam no site como `ENARE R4 Ortopedia 2025` (mesmo texto; o caderno do
+  R4 tem uma questão a mais no meio, por isso a numeração anda uma casa). Entraram só as 41 a 80, menos a 70.
+  O gabarito definitivo (foto enviada pelo Tales) bateu com as 40 que já estavam no site.
+- **Anuladas pela banca, não importadas** (exigem análise de todas as letras): 2022 questões 26 e 43; 2025 questão 70
+  (a 31 de 2025 é da parte já existente).
+- **ENARE 2023:** o arquivo de gabarito enviado é o **preliminar** (o definitivo não veio). Conferir quando chegar.
+- **ENARE 2024 (edição 2023/2024):** chegaram o gabarito e os recursos, mas não o caderno: não importada.
+- **FMRP-USP 2024** (seleção para 2024, Cirurgia da Mão, pré-requisito ortopedia ou plástica): 50 questões, quatro
+  alternativas, gabarito oficial. Figuras recortadas do caderno nas questões 16 (LEDDY e PACKER), 17 (plexo braquial;
+  as anotações à caneta do candidato, que entregavam a resposta, foram apagadas) e 19 (retalho anterolateral da coxa).
+- Os PDFs tinham marca d'água com dados pessoais de um candidato: nada disso foi copiado.
+
+| Prova | Questões | Ids |
+|---|---|---|
+| ENARE Cirurgia da Mão 2022 | 78 | coluna-0558, coluna-0559, conceitos-basicos-0411 ... tumores-0389 (vários temas) |
+| ENARE Cirurgia da Mão 2023 | 80 | coluna-0560, coluna-0561, coluna-0562 ... tumores-0392 (vários temas) |
+| FMRP-USP 2024 | 50 | conceitos-basicos-0416, mao-1932, mao-1933 ... ombro-cotovelo-0658 (vários temas) |
+| ENARE Cirurgia da Mão 2025 | 39 | mao-1893 a mao-1931 |
