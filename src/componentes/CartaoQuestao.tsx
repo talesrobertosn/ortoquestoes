@@ -25,6 +25,8 @@ import { usarTempoVisivel } from '../util/tempoVisivel'
 import { EstudarAssunto } from '../biblioteca/EstudarAssunto'
 import { semEco } from './ecoAlternativa'
 import { permutarQuestao } from '../dados/provaNacional'
+import { letraExibida, letraGuardada, reordenarComentario } from '../dados/ordemAlternativas'
+import { usarLetrasAcervo } from '../dados/letrasAcervo'
 import '../estilos/paginas/CartaoQuestao.css'
 
 interface Props {
@@ -38,7 +40,7 @@ interface Props {
   // A confiança é obrigatória de propósito: quando era opcional, os dois
   // pontos de chamada esqueceram de repassá-la e toda resposta virava
   // "seguro" no silêncio do valor padrão. O compilador agora cobra.
-  aoResponder: (letra: Letra | null, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => void | Promise<void>
+  aoResponder: (letra: Letra | null, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute', ordemExibida?: string | null) => void | Promise<void>
   aoRiscar: (letra: Letra) => void
   aoFavoritar: () => void
   aoRevisar: () => void
@@ -70,16 +72,49 @@ interface Props {
    */
   permutacao?: string | null
   /**
+   * Revisão com as alternativas embaralhadas (dados/ordemAlternativas.ts): a ordem da tela,
+   * no mesmo formato da `permutacao`. Diferente dela, tudo o que entra e sai do cartão
+   * (resposta, riscadas, aoResponder, aoRiscar) continua na letra ORIGINAL: o cartão traduz.
+   * A pessoa pode voltar à ordem da prova pelo aviso acima das alternativas.
+   */
+  ordemRevisao?: string | null
+  /**
    * Prova do Simulado Nacional em andamento: sem id, link, "copiar link", prova e ano,
    * anotações e histórico da questão (nada que leve ao gabarito ou à questão avulsa).
    */
   modoProva?: boolean
 }
 
-export function CartaoQuestao({ questao: questaoDoAcervo, permutacao, ...resto }: Props) {
-  // Com a permutação, o cartão inteiro trabalha com a questão na ordem da edição.
-  const questao = useMemo(() => (permutacao ? permutarQuestao(questaoDoAcervo, permutacao) : questaoDoAcervo), [questaoDoAcervo, permutacao])
-  return <CartaoQuestaoExibida questao={questao} {...resto} />
+export function CartaoQuestao({ questao: questaoDoAcervo, permutacao, ordemRevisao, resposta, riscadas, aoResponder, aoRiscar, ...resto }: Props) {
+  // "Ver na ordem da prova" vale só para esta questão, nesta visita.
+  const [naOrdemDaProva, definirNaOrdemDaProva] = useState(false)
+  useEffect(() => definirNaOrdemDaProva(false), [questaoDoAcervo.id, ordemRevisao])
+  const revisao = !permutacao && ordemRevisao && !naOrdemDaProva ? ordemRevisao : null
+  const ordem = permutacao ?? revisao
+  // Com a permutação, o cartão inteiro trabalha com a questão na ordem da tela.
+  const questao = useMemo(() => (ordem ? permutarQuestao(questaoDoAcervo, ordem) : questaoDoAcervo), [questaoDoAcervo, ordem])
+  // Na revisão embaralhada o que vem de fora está na letra original: traduz na entrada e na saída.
+  const respostaExibida = useMemo(
+    () => (revisao && resposta?.escolhida ? { ...resposta, escolhida: letraExibida(revisao, resposta.escolhida) as Letra } : resposta),
+    [revisao, resposta],
+  )
+  const riscadasExibidas = useMemo(() => (revisao ? riscadas.map((l) => letraExibida(revisao, l) as Letra) : riscadas), [revisao, riscadas])
+  const responder: Props['aoResponder'] = (letra, correta, segundos, confianca) =>
+    aoResponder(revisao && letra ? (letraGuardada(revisao, letra) as Letra) : letra, correta, segundos, confianca, revisao)
+  const riscar = (letra: Letra) => aoRiscar(revisao ? (letraGuardada(revisao, letra) as Letra) : letra)
+  const aviso = !permutacao && ordemRevisao ? { embaralhada: !naOrdemDaProva, alternar: () => definirNaOrdemDaProva((v) => !v) } : null
+  return (
+    <CartaoQuestaoExibida
+      questao={questao}
+      resposta={respostaExibida}
+      riscadas={riscadasExibidas}
+      aoResponder={responder}
+      aoRiscar={riscar}
+      ordemExibida={ordem}
+      avisoOrdem={aviso}
+      {...resto}
+    />
+  )
 }
 
 function CartaoQuestaoExibida({
@@ -101,7 +136,13 @@ function CartaoQuestaoExibida({
   aoProxima,
   rotuloProxima = 'Próxima questão',
   modoProva = false,
-}: Omit<Props, 'permutacao'>) {
+  ordemExibida = null,
+  avisoOrdem = null,
+}: Omit<Props, 'permutacao' | 'ordemRevisao'> & {
+  /** A ordem em que a questão está na tela (Simulado Nacional ou revisão), para traduzir comentário e turma. */
+  ordemExibida?: string | null
+  avisoOrdem?: { embaralhada: boolean; alternar: () => void } | null
+}) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
   // inteiro a cada render (a cada segundo no simulado, por causa do cronômetro).
@@ -127,7 +168,7 @@ function CartaoQuestaoExibida({
   const marcada = escolhida ?? resposta?.escolhida ?? null
   const travada = mostrarGabarito
   // Assinante: a porcentagem da turma aparece embaixo de cada alternativa, sem caixa à parte.
-  const turma = usarTurmaNasAlternativas(questao, mostrarGabarito && respondida && !modoLeitura && !dissertativa)
+  const turma = usarTurmaNasAlternativas(questao, mostrarGabarito && respondida && !modoLeitura && !dissertativa, ordemExibida)
   // O primeiro nome da pessoa no aviso do resultado, como nos e-mails. Sem nome, a frase funciona sem ele.
   const nome = primeiroNome(useContext(ContextoConta)?.sessao?.user.user_metadata?.nome)
 
@@ -207,11 +248,18 @@ function CartaoQuestaoExibida({
 
   const { mostrarEtiquetas, alternarEtiquetas } = usarEtiquetas()
   const { indice } = usarIndice()
-  const { comentario: comentarioIA, carregando: carregandoIA } = usarComentarioIA(
+  const { comentario: comentarioDoAcervo, carregando: carregandoIA } = usarComentarioIA(
     questao,
     indice,
     mostrarGabarito,
   )
+  // Alternativas em outra ordem: o comentário acompanha (letras citadas e análise de cada uma).
+  const letrasAcervo = usarLetrasAcervo()
+  const reordenado = useMemo(
+    () => (ordemExibida && comentarioDoAcervo ? reordenarComentario(comentarioDoAcervo, ordemExibida, letrasAcervo?.refs[questao.id]) : null),
+    [ordemExibida, comentarioDoAcervo, letrasAcervo, questao.id],
+  )
+  const comentarioIA = reordenado?.comentario ?? comentarioDoAcervo
 
   useEffect(() => {
     if (!atalhosAtivos) return
@@ -441,6 +489,16 @@ function CartaoQuestaoExibida({
           </div>
         )}
 
+        {avisoOrdem && !dissertativa && !modoLeitura && (
+          <p className={'qz-ordem nao-imprime' + (avisoOrdem.embaralhada ? ' qz-ordem--nova' : '')}>
+            <Icone nome="reiniciar" tamanho={14} />
+            <span>{avisoOrdem.embaralhada ? 'Revisão em ordem nova: raciocine, não lembre a letra.' : 'Na ordem da prova.'}</span>
+            <button type="button" className="qz-ordem__botao" onClick={avisoOrdem.alternar}>
+              {avisoOrdem.embaralhada ? 'Ver na ordem da prova' : 'Voltar à ordem nova'}
+            </button>
+          </p>
+        )}
+
         {!modoLeitura && <ul className={'alternativas' + (respondeuAgora && mostrarGabarito ? ' alternativas--agora' : '')}>
           {questao.alternativas.map((alternativa, i) => {
             const letra = alternativa.letra
@@ -582,13 +640,14 @@ function CartaoQuestaoExibida({
               </div>
             )}
 
-            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} />
+            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} letrasDaProva={reordenado?.letrasDaProva && ordemExibida ? ordemExibida : null} />
             <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
             <div className="bloco-comentario qz-bloco qz-comunidade" id={`qz-${questao.id}-comunidade`}>
               <p className="comentario__titulo qz-titulo-px">Comentários da comunidade{(questao.comentariosComunidade?.length ?? 0) > 0 && <span className="qz-contador">{questao.comentariosComunidade!.length}</span>}</p>
+              {ordemExibida && (questao.comentariosComunidade?.length ?? 0) > 0 && <p className="meta qz-ordem-legenda">As letras citadas aqui são as da prova: {legendaDaOrdem(ordemExibida)}.</p>}
               {(questao.comentariosComunidade?.length ?? 0) === 0 ? (
                 <p className="comentario__pendente">
                   Ninguém comentou esta ainda. Se você sabe por que a resposta é essa, escreva —
@@ -773,18 +832,26 @@ function Resultado({ questao, resposta, agora = false, nome = '' }: { questao: Q
  * si é tratado como qualquer explicação: precisa, com conceito-chave e
  * justificativa alternativa a alternativa.
  */
+/** "A aqui é a C da prova, B é a A…": só as letras que mudaram. */
+function legendaDaOrdem(ordem: string): string {
+  return [...ordem].map((original, i) => ({ nova: 'ABCDE'[i], original })).filter((x) => x.nova !== x.original).map((x) => `${x.nova} aqui é a ${x.original} da prova`).join(', ')
+}
+
 function ComentarioDaIA({
   questao,
   comentario,
   carregando,
   escolhida,
   rolarParaMarcada = false,
+  letrasDaProva = null,
 }: {
   questao: Questao
   comentario: ComentarioIA | null
   carregando: boolean
   escolhida: Letra | null
   rolarParaMarcada?: boolean
+  /** O texto mudou depois da última conferência das letras: as citadas no texto podem ser as da prova (a ordem da tela). */
+  letrasDaProva?: string | null
 }) {
   // Ao errar, leva uma vez até o começo do comentário (não até a análise da
   // letra marcada: com os comentários longos ela fica perto do fim da página e
@@ -854,6 +921,9 @@ function ComentarioDaIA({
 
       {comentario && (
         <>
+          {letrasDaProva && (
+            <p className="meta qz-ordem-legenda">Se o texto citar alguma letra, é a da prova: {legendaDaOrdem(letrasDaProva)}.</p>
+          )}
           {comentario.alerta && (
             <p className="aviso-ia aviso-ia--gabarito">
               <strong>Atenção ao gabarito desta questão.</strong> {comentario.alerta}

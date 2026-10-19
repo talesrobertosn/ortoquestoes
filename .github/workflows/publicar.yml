@@ -42,6 +42,10 @@ jobs:
         # Recontagem das provas oficiais a cada publicação: o ranking, o
         # cronograma e o resumão da reta final nunca ficam para trás quando o acervo muda.
         run: python3 scripts/gerar_incidencia.py && python3 scripts/gerar_resumao.py
+      - name: Atualizar as letras das alternativas
+        # Quais questões embaralham na revisão e onde o comentário cita a alternativa pela
+        # letra (scripts/letras_alternativas.py): sempre de acordo com os comentários publicados.
+        run: python3 scripts/letras_alternativas.py
       - name: Gerar páginas públicas e sitemap
         # Uma página estática por questão e por assunto, os guias, as páginas de
         # destino (banco de questões, TEOT, curso preparatório, provas, R1, simulados,

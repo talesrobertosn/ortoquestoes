@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestao } from '../dados/acervo'
 import type { Letra, Questao, Resposta } from '../dados/tipos'
@@ -18,6 +18,10 @@ import { ler } from '../estado/armazenamento'
 import type { EstadoSessao } from '../dados/tipos'
 import { edicaoEmDestaque } from '../dados/nacionalEmDestaque'
 import { snIniciar } from '../dados/apiSimuladoNacional'
+import { letraExibida, ordemParaRevisao } from '../dados/ordemAlternativas'
+import { usarLetrasAcervo } from '../dados/letrasAcervo'
+import { lerUltimaExibida, registrarExibida } from '../estado/ordemExibida'
+import { usarPreferenciasSessao } from '../estado/preferenciasSessao'
 
 const TOLERANCIA_MS = 5 * 60_000
 
@@ -84,7 +88,22 @@ export function QuestaoDireta({ id }: { id: string }) {
     }
   }, [indice, id])
 
-  if (questao === undefined || prova === 'conferindo') return <Carregando linhas={6} />
+  // Revisão em ordem nova, como na sessão: a ordem é decidida ao abrir a página e não muda até sair dela.
+  const { preferencias } = usarPreferenciasSessao()
+  const letrasAcervo = usarLetrasAcervo()
+  const [aberta] = useState(() => Date.now())
+  const ordemRevisao = useMemo(() => {
+    if (!questao || !preferencias.embaralhar || prova === 'em-prova') return null
+    return ordemParaRevisao(questao, {
+      letras: letrasAcervo ?? null,
+      registro: lerRespondidas()[questao.id],
+      desde: aberta,
+      semente: `direta:${aberta}`,
+      ultimaExibida: lerUltimaExibida(questao.id),
+    })
+  }, [questao, preferencias.embaralhar, letrasAcervo, aberta, prova])
+
+  if (questao === undefined || prova === 'conferindo' || (preferencias.embaralhar && letrasAcervo === undefined)) return <Carregando linhas={6} />
 
   if (prova === 'em-prova') {
     return (
@@ -128,11 +147,12 @@ export function QuestaoDireta({ id }: { id: string }) {
       <AvisoLimite estado={estadoLimite} />
       <CartaoQuestao
         questao={questao}
+        ordemRevisao={ordemRevisao}
         resposta={resposta}
         riscadas={riscadas}
         favorita={favoritos.includes(questao.id)}
         marcadaRevisao={false}
-        aoResponder={async (escolhida, correta, segundos, confianca) => {
+        aoResponder={async (escolhida, correta, segundos, confianca, ordemExibida) => {
           if (!conta) { definirPortaoContaAberto(true); return }
           if (autorizando.current) return
           autorizando.current = true
@@ -143,6 +163,7 @@ export function QuestaoDireta({ id }: { id: string }) {
             if (!permissao.permitido) { definirLimiteAberto(true); return }
             definirResposta({ escolhida, correta, segundos, confianca })
             registrarResposta(questao.id, correta, confianca, escolhida)
+            if (questao.gabarito) registrarExibida(questao.id, letraExibida(ordemExibida, questao.gabarito))
           } finally { autorizando.current = false }
         }}
         aoRiscar={(letra) =>

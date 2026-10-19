@@ -1,3 +1,4 @@
+import { letraGuardada } from '../dados/ordemAlternativas'
 import type { CSSProperties } from 'react'
 import type { Questao } from '../dados/tipos'
 import { MINIMO_TURMA, usarTurmaQuestao } from '../dados/turma'
@@ -21,14 +22,18 @@ export interface TurmaNasAlternativas {
  * Para o assinante: como a turma respondeu, para mostrar a porcentagem embaixo
  * de cada alternativa da própria questão. Nulo para quem não assina.
  */
-export function usarTurmaNasAlternativas(questao: Questao, ativo: boolean): TurmaNasAlternativas | null {
+/**
+ * `ordem`: as alternativas estão em outra ordem na tela (revisão embaralhada ou Simulado Nacional).
+ * A turma é contada na letra do acervo, então cada letra da tela busca a sua original.
+ */
+export function usarTurmaNasAlternativas(questao: Questao, ativo: boolean, ordem: string | null = null): TurmaNasAlternativas | null {
   const { logado, premium } = usarPremium()
   const valida = !!questao.gabarito && !questao.anulada
   const { dados } = usarTurmaQuestao(questao.id, ativo && logado && premium && valida)
   if (!ativo || !premium || !valida || !dados || dados.letras === null) return null
   const comLetra = dados.com_letra ?? 0
   const porLetra = comLetra >= MINIMO_TURMA && dados.respondentes >= MINIMO_TURMA
-    ? Object.fromEntries(questao.alternativas.map((a) => [a.letra, pct(dados.letras?.[a.letra] ?? 0, comLetra)]))
+    ? Object.fromEntries(questao.alternativas.map((a) => [a.letra, pct(dados.letras?.[letraGuardada(ordem, a.letra)] ?? 0, comLetra)]))
     : null
   const pior = porLetra ? Object.entries(porLetra).filter(([l]) => l !== questao.gabarito).sort((a, b) => b[1] - a[1])[0] : undefined
   return { respondentes: dados.respondentes, acertoPrimeira: pct(dados.acertos ?? 0, dados.respondentes), porLetra, pegadinha: pior && pior[1] >= 20 ? pior[0] : null }

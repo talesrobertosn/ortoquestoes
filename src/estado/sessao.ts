@@ -74,7 +74,7 @@ export function usarSessao() {
   )
 
   const responder = useCallback(
-    (id: string, escolhida: Letra | null, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => {
+    (id: string, escolhida: Letra | null, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute', ordemExibida?: string | null) => {
       // Persistência acontece fora do updater do React. Updaters podem ser
       // reexecutados ou descartados em celulares, o que fazia respostas
       // ficarem apenas no estado visual da sessão.
@@ -88,7 +88,9 @@ export function usarSessao() {
         if (!atual) return atual
         const resposta: Resposta = { escolhida, correta: atual.nacional ? null : correta, segundos, confianca }
         const pendentes = atual.nacional ? { pendentesNacional: [...new Set([...(atual.pendentesNacional ?? []), id])] } : {}
-        return { ...atual, respostas: { ...atual.respostas, [id]: resposta }, ...pendentes }
+        // A ordem em que ela apareceu, para o resumo mostrar as mesmas letras que a pessoa viu.
+        const ordens = ordemExibida ? { ordens: { ...(atual.ordens ?? {}), [id]: ordemExibida } } : {}
+        return { ...atual, respostas: { ...atual.respostas, [id]: resposta }, ...pendentes, ...ordens }
       })
     },
     [definirSessao],
