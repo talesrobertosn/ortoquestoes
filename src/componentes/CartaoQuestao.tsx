@@ -623,7 +623,7 @@ export function CartaoQuestao({
 
         {/* Uma faixa só: anotações, histórico e relatar erro lado a lado; o painel aberto desce para baixo dela. */}
         <div className="qz-extras qz-faixa nao-imprime">
-          <NotasQuestao key={questao.id} id={questao.id} />
+          <NotasQuestao key={`notas-${questao.id}`} id={questao.id} />
           {historicoDaQuestao.length > 0 && <details className="notas-questao qz-historico">
             <summary><Icone nome="relogio" tamanho={18} /> Histórico desta questão <span className="qz-contador">{historicoDaQuestao.length}</span></summary>
             <ol className="qz-linha-tempo">
@@ -636,7 +636,7 @@ export function CartaoQuestao({
               ))}
             </ol>
           </details>}
-          <RelatarErro key={questao.id} idQuestao={questao.id} />
+          <RelatarErro key={`relato-${questao.id}`} idQuestao={questao.id} />
         </div>
 
         {aoProxima && (respondida || !revelarResposta) && (
