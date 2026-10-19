@@ -948,3 +948,21 @@
 @media (prefers-reduced-motion: reduce) { .mascote-acesso__folha { animation: none !important; } }
 @media (max-width: 64rem) { .mascote-acesso { display: none; } }
 @media (min-width: 64.01rem) { .acesso__vitrine:has(.mascote-acesso) .acesso__rodape { padding-right: 8.5rem; } }
+
+/* Renovação automática (19/10/2026): ligada/desligada à vista, separada do reembolso. */
+.conta-renovacao { display: grid; gap: .7rem; margin: 1.25rem 0 .5rem; padding: 1.1rem 1.25rem 1.2rem; border: 1px solid color-mix(in srgb, var(--verdete) 35%, var(--traco)); border-radius: var(--raio-cartao, 16px); background: color-mix(in srgb, var(--verdete-veu) 55%, var(--superficie)); }
+.conta-renovacao--desligada { border-color: var(--traco); background: var(--superficie-2); }
+.conta-renovacao__topo { display: flex; align-items: center; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
+.conta-renovacao__topo h3 { margin: 0; font-size: 1.1rem; }
+.conta-renovacao__estado { display: inline-flex; align-items: center; gap: .45rem; padding: .3rem .8rem; border-radius: 999px; background: var(--verdete); color: var(--sobre-destaque); font-size: .85rem; font-weight: 700; }
+.conta-renovacao__estado i { width: .5rem; height: .5rem; border-radius: 999px; background: currentColor; }
+.conta-renovacao--desligada .conta-renovacao__estado, .conta-renovacao__resumo--desligada .conta-renovacao__estado { background: var(--superficie); color: var(--texto-2); box-shadow: inset 0 0 0 1px var(--traco-forte); }
+.conta-renovacao__linha { margin: 0; font-size: 1.02rem; }
+.conta-renovacao__nota { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.conta-renovacao__garantias { display: grid; gap: .35rem; margin: 0; padding: 0; list-style: none; color: var(--texto-2); font-size: var(--corpo-menor); }
+.conta-renovacao__garantias li { display: flex; align-items: flex-start; gap: .45rem; }
+.conta-renovacao__garantias svg { flex: none; margin-top: .15rem; color: var(--verdete); }
+.conta-renovacao__garantias strong { color: var(--texto); }
+.conta-renovacao__botao { justify-self: start; border-radius: 999px; }
+.conta-renovacao__resumo { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; margin: .9rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.conta-renovacao__resumo a { font-weight: 700; color: var(--verdete); }

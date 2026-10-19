@@ -554,7 +554,8 @@ export function Sessao() {
     aoAvancar: irAdiante, aoVoltar: () => irPara(posicao - 1),
   })
   // Em toda sessão nova (uma vez por sessão, não a cada recarregar), a dica
-  // aparece por uns 3 s: no celular, deslizar; no computador, as setas.
+  // aparece num aviso esmaecido no meio da tela por 5 s, ou até a pessoa tocar
+  // nele: no celular, arrastar para o lado; no computador, as setas do teclado.
   // O cartão só espia para o lado na primeiríssima vez.
   const chaveDica = sessao ? String(sessao.criadaEm ?? sessao.ids.join(',')) : ''
   const [dicaDeslizar, definirDicaDeslizar] = useState(false)
@@ -573,7 +574,7 @@ export function Sessao() {
     temporizadoresDica.current.forEach((t) => window.clearTimeout(t))
     temporizadoresDica.current = [
       window.setTimeout(() => { gravar('dica:sessao', chaveDica); gravar('dica:deslizar', true); definirDicaDeslizar(true); if (primeiraVez) espiarAtual.current() }, 900),
-      window.setTimeout(() => definirDicaDeslizar(false), 900 + 3200),
+      window.setTimeout(() => definirDicaDeslizar(false), 900 + 5000),
     ]
   }, [questoes, temVarias, chaveDica])
   useEffect(() => { if (posicao > 0) definirDicaDeslizar(false) }, [posicao])
@@ -588,7 +589,7 @@ export function Sessao() {
     temporizadorTeclado.current.forEach((t) => window.clearTimeout(t))
     temporizadorTeclado.current = [
       window.setTimeout(() => { gravar('dica:sessao', chaveDica); definirDicaTeclado(true) }, 900),
-      window.setTimeout(() => definirDicaTeclado(false), 900 + 3200),
+      window.setTimeout(() => definirDicaTeclado(false), 900 + 5000),
     ]
   }, [questoes, temVarias, chaveDica])
 
@@ -720,10 +721,6 @@ export function Sessao() {
             <div className="sx-vivo">
               {avisoTempo ? (
                 <span className="sx-aviso sx-aviso--tempo" aria-hidden="true"><Icone nome="relogio" tamanho={12} /> {avisoTempo}</span>
-              ) : dicaDeslizar && !painelAberto ? (
-                <span className="sx-aviso sx-aviso--dica" role="status"><Icone nome="esquerda" tamanho={12} /> Deslize para trocar <Icone nome="direita" tamanho={12} /></span>
-              ) : dicaTeclado && !painelAberto ? (
-                <span className="sx-aviso sx-aviso--dica" role="status"><kbd>←</kbd><kbd>→</kbd> trocam de questão</span>
               ) : elogio ? (
                 <span className="sx-aviso sx-aviso--elogio" aria-hidden="true"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" />{elogio}</span>
               ) : preferencias.placar && combo >= 3 ? (
@@ -943,6 +940,27 @@ export function Sessao() {
         <button type="button" className="sx-lado__ajustes" onClick={() => definirAjustesAbertos(true)}><Icone nome="ajustes" tamanho={15} /> Personalizar a tela</button>
       </aside>}
       </div>
+
+      {(dicaDeslizar || dicaTeclado) && !painelAberto && (
+        <button
+          type="button"
+          className="sx-dica-popup nao-imprime"
+          onClick={() => { definirDicaDeslizar(false); definirDicaTeclado(false) }}
+          aria-label={(dicaDeslizar ? 'Arraste para o lado para trocar de questão' : 'Use as setas do teclado para trocar de questão') + '. Toque para fechar.'}
+        >
+          {dicaDeslizar ? (
+            <>
+              <span className="sx-dica-popup__gesto" aria-hidden="true"><Icone nome="esquerda" tamanho={22} /><span className="sx-dica-popup__dedo" /><Icone nome="direita" tamanho={22} /></span>
+              <span className="sx-dica-popup__texto">Arraste para o lado para trocar de questão</span>
+            </>
+          ) : (
+            <>
+              <span className="sx-dica-popup__teclas" aria-hidden="true"><kbd>←</kbd><kbd>→</kbd></span>
+              <span className="sx-dica-popup__texto">Use as setas do teclado para trocar de questão</span>
+            </>
+          )}
+        </button>
+      )}
 
       <Painel
         titulo="Mapa de questões"
