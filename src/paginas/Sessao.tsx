@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from 'react'
 import { BotaoConcluirFlutuante, ModalFimSessao } from '../componentes/ModalFimSessao'
 import { usarDeslizar } from '../util/usarDeslizar'
 import { preCarregarComentario } from '../dados/comentarios'
@@ -157,6 +157,98 @@ function FaixaCronograma({ respondidasNaSessao }: { respondidasNaSessao: number 
   )
 }
 
+/**
+ * A casca fixa da sessão (acabamento de 19/10/2026). Mede o cabeçalho do site e a barra da
+ * sessão e publica em :root, enquanto a sessão está aberta:
+ *   --oq-cabecalho  altura do cabeçalho do site (a barra gruda logo abaixo dele);
+ *   --oq-topo-fixo  o que fica fixo em cima de verdade (cabeçalho visível + barra), para o
+ *                   scroll-margin-top do cartão e para as rolagens da própria sessão.
+ * No celular, o cabeçalho sai ao rolar para baixo e volta ao rolar para cima (só transform,
+ * classe oq-cabecalho-oculto em <html>). Não sai com um painel ou diálogo aberto, nem com o
+ * foco do teclado dentro dele, nem perto do topo da página.
+ */
+const CELULAR = '(max-width: 40rem)'
+function usarTopoFixo(barra: RefObject<HTMLDivElement | null>, pronto: boolean, travado: boolean) {
+  const travadoRef = useRef(travado)
+  travadoRef.current = travado
+  const mostrar = useRef<() => void>(() => {})
+  useEffect(() => {
+    const raiz = document.documentElement
+    raiz.classList.add('oq-sessao')
+    return () => {
+      raiz.classList.remove('oq-sessao', 'oq-cabecalho-oculto')
+      for (const v of ['--oq-cabecalho', '--oq-topo-fixo']) raiz.style.removeProperty(v)
+    }
+  }, [])
+  useEffect(() => {
+    const raiz = document.documentElement
+    const cabecalho = document.querySelector<HTMLElement>('.cabecalho')
+    const elBarra = barra.current
+    if (!pronto || !elBarra) return
+    const celular = window.matchMedia(CELULAR)
+    let oculto = false
+    let altCabecalho = 0
+    let altBarra = 0
+    const publicar = () => {
+      raiz.style.setProperty('--oq-cabecalho', `${altCabecalho}px`)
+      raiz.style.setProperty('--oq-topo-fixo', `${(oculto ? 0 : altCabecalho) + altBarra}px`)
+    }
+    const definirOculto = (sim: boolean) => {
+      if (sim === oculto) return
+      oculto = sim
+      raiz.classList.toggle('oq-cabecalho-oculto', sim)
+      publicar()
+    }
+    mostrar.current = () => definirOculto(false)
+    const medir = () => {
+      altCabecalho = cabecalho?.offsetHeight ?? 0
+      altBarra = elBarra.offsetHeight
+      publicar()
+    }
+    medir()
+    const observador = typeof ResizeObserver === 'function' ? new ResizeObserver(medir) : null
+    if (cabecalho) observador?.observe(cabecalho)
+    observador?.observe(elBarra)
+
+    let ultimoY = window.scrollY
+    let quadro = 0
+    const avaliar = () => {
+      quadro = 0
+      const y = window.scrollY
+      const dy = y - ultimoY
+      if (Math.abs(dy) < 6 && y > altCabecalho * 2) return
+      ultimoY = y
+      const focoNoCabecalho = !!cabecalho && cabecalho.contains(document.activeElement)
+      const dialogo = !!document.querySelector('[aria-modal="true"], dialog[open]')
+      if (!celular.matches || travadoRef.current || focoNoCabecalho || dialogo || y <= altCabecalho * 2) definirOculto(false)
+      else if (dy > 0) definirOculto(true)
+      else if (dy < 0) definirOculto(false)
+    }
+    const aoRolar = () => { if (!quadro) quadro = requestAnimationFrame(avaliar) }
+    const aoFocar = () => definirOculto(false)
+    const aoMudarTela = () => { if (!celular.matches) definirOculto(false) }
+    window.addEventListener('scroll', aoRolar, { passive: true })
+    cabecalho?.addEventListener('focusin', aoFocar)
+    celular.addEventListener?.('change', aoMudarTela)
+    return () => {
+      cancelAnimationFrame(quadro)
+      observador?.disconnect()
+      window.removeEventListener('scroll', aoRolar)
+      cabecalho?.removeEventListener('focusin', aoFocar)
+      celular.removeEventListener?.('change', aoMudarTela)
+      mostrar.current = () => {}
+      definirOculto(false)
+    }
+  }, [barra, pronto])
+  // Abriu um painel, o mapa ou um diálogo: o cabeçalho volta e fica.
+  useEffect(() => { if (travado) mostrar.current() }, [travado])
+}
+
+/** Altura do que está fixo em cima, lida da variável publicada (0 se ainda não medida). */
+function topoFixo(): number {
+  return parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--oq-topo-fixo')) || 0
+}
+
 const CHAVE_FIM_MOSTRADO = 'ortoquestoes:fim-mostrado'
 const CHAVE_ELOGIOS = 'ortoquestoes:elogio-sessao'
 
@@ -173,6 +265,7 @@ export function Sessao() {
   const [erro, definirErro] = useState<string | null>(null)
   const areaGestos = useRef<HTMLDivElement>(null)
   const palco = useRef<HTMLDivElement>(null)
+  const barra = useRef<HTMLDivElement>(null)
   // O menu "…" da navegação fecha ao tocar fora ou com Esc.
   const menuMais = useRef<HTMLDetailsElement>(null)
   const fecharMenu = () => { if (menuMais.current) menuMais.current.open = false }
@@ -270,6 +363,8 @@ export function Sessao() {
   }, [combo, idSessao, nome])
   useEffect(() => { definirElogio(null) }, [idSessao])
 
+  usarTopoFixo(barra, !!(sessao && questoes), painelAberto || portaoContaAberto || fim === 'aberto')
+
   // Destaques da sessão para o fim: o tema com mais acertos e o que mais pede revisão.
   const destaques = useMemo(() => {
     if (!sessao || simulado || !questoes) return { melhor: null, oportunidade: null }
@@ -346,8 +441,16 @@ export function Sessao() {
     return () => document.removeEventListener('keydown', aoTeclar)
   }, [sessao, posicao, irPara, irAdiante, painelAberto])
 
+  // Trocou de questão: o topo do cartão para logo abaixo da barra fixa (nunca embaixo dela).
+  // Só sobe: quem está no alto da página continua vendo os avisos de cima.
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'auto' })
+    const el = palco.current
+    if (!el) { window.scrollTo({ top: 0, behavior: 'auto' }); return }
+    const cabecalho = document.querySelector<HTMLElement>('.cabecalho')?.offsetHeight ?? 0
+    const barraAltura = barra.current?.offsetHeight ?? Math.max(0, topoFixo() - cabecalho)
+    // Rolar para cima traz o cabeçalho de volta: a conta usa a altura dele inteira.
+    const alvo = el.getBoundingClientRect().top + window.scrollY - cabecalho - barraAltura - 8
+    window.scrollTo({ top: Math.max(0, Math.min(window.scrollY, alvo)), behavior: 'auto' })
   }, [posicao])
 
   // Passar para o lado (18/10/2026): ao trocar pelos botões, setas ou mapa, a questão nova
@@ -503,7 +606,7 @@ export function Sessao() {
     navegar('/resumo')
   }
   return (
-    <div className="sessao-gestos" ref={areaGestos}>
+    <div className="sessao-gestos sx-sessao" ref={areaGestos}>
       <button
         type="button"
         className="seta-lateral seta-lateral--esquerda sx-seta nao-imprime"
@@ -524,7 +627,7 @@ export function Sessao() {
       >
         <Icone nome="direita" tamanho={22} />
       </button>
-      <div className="barra-sessao sx-barra nao-imprime">
+      <div className="barra-sessao sx-barra nao-imprime" ref={barra}>
         {sessao.origem === 'cronograma' && !simulado && <FaixaCronograma respondidasNaSessao={respondidas} />}
         <div className={'conteudo barra-sessao__interno sx-barra__interno' + (atualRespondida ? ' barra-sessao__interno--respondida' : '')}>
           <div className="sx-barra__linha">
@@ -551,7 +654,7 @@ export function Sessao() {
             </div>
             {restante !== null && (
               <span
-                className={'cronometro sx-cronometro' + (restante <= 300 ? ' cronometro--acabando' : '')}
+                className={'cronometro sx-cronometro sx-cronometro--barra' + (restante <= 300 ? ' cronometro--acabando' : '')}
                 role="timer"
                 aria-label={`Tempo restante do simulado: ${formatarDuracao(restante)}`}
               >
@@ -591,6 +694,8 @@ export function Sessao() {
           <TrilhaSessao ids={sessao.ids} respostas={sessao.respostas} posicao={posicao} simulado={simulado} aoIr={irPara} />
         </div>
       </div>
+      <div className="sx-corpo">
+      <div className="sx-principal">
       {conta && !assinante && !simulado && !avisoSaldoFechado && respondidas === 0 && saldoInicial !== null && saldoInicial > 0 && saldoInicial < total && (
         <p className="aviso-saldo nao-imprime" role="status">
           <Icone nome="relogio" tamanho={16} />
@@ -683,6 +788,51 @@ export function Sessao() {
           <Icone nome="direita" tamanho={16} />
         </button>
       </nav>
+      </div>
+
+      {/* Coluna lateral do computador largo (19/10/2026): o mapa, o placar vivo, o tempo do
+          simulado e os atalhos ficam à vista ao lado do cartão. Abaixo de 72rem some (display:
+          none, fora da árvore de acessibilidade) e o botão Mapa da barra volta. */}
+      <aside className="sx-lado nao-imprime" aria-label="Painel da sessão">
+        <section className="sx-lado__bloco sx-lado__bloco--topo">
+          <h2 className="sx-lado__titulo">{nome ? `${nome}, sua sessão` : 'Sua sessão'}</h2>
+          <p className="sx-lado__conta"><b className="numerico">{respondidas}</b> de {total} {respondidas === 1 ? 'respondida' : 'respondidas'}</p>
+          {combo >= 3 ? (
+            <p className="sx-lado__vivo sx-lado__vivo--combo"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {porExtenso(combo)} acertos seguidos</p>
+          ) : !simulado && acertosSessao > 0 && acertosSessao * 2 >= respondidas ? (
+            <p className="sx-lado__vivo"><Icone nome="certo" tamanho={13} /> {porExtenso(acertosSessao, 'm')} {acertosSessao === 1 ? 'acerto' : 'acertos'} até aqui</p>
+          ) : null}
+          {restante !== null && (
+            <p className="sx-lado__tempo">
+              <span>Tempo restante</span>
+              <span
+                className={'cronometro sx-cronometro' + (restante <= 300 ? ' cronometro--acabando' : '')}
+                role="timer"
+                aria-label={`Tempo restante do simulado: ${formatarDuracao(restante)}`}
+              >
+                {formatarDuracao(restante)}
+              </span>
+            </p>
+          )}
+        </section>
+        <section className="sx-lado__bloco" aria-labelledby="sx-lado-mapa">
+          <h3 className="sx-lado__subtitulo" id="sx-lado-mapa">Mapa <kbd>M</kbd></h3>
+          <MapaQuestoes
+            compacto
+            ids={sessao.ids}
+            respostas={sessao.respostas}
+            revisar={sessao.revisar}
+            revelar={!simulado}
+            posicao={posicao}
+            aoEscolher={irPara}
+          />
+        </section>
+        <details className="sx-lado__bloco sx-lado__atalhos" open>
+          <summary className="sx-lado__subtitulo">Atalhos de teclado <kbd>?</kbd></summary>
+          <Atalhos />
+        </details>
+      </aside>
+      </div>
 
       <Painel
         titulo="Mapa de questões"
