@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Checagem: stories</title>
+<!-- Stories, estilo "checagem de fatos": questão pediatria-0387 (TARO 2025), gabarito C (pé calcâneo valgo).
+     Imagem real da questão (Herring, Tachdjian's Pediatric Orthopaedics), sem marcação nova. Stories de questão sem figurinha.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-19-checagem-patela/stories.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; font-style: italic; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; }
+:root { --papel: #F3EEE4; --tinta: #16201E; --cinza: #6B716C; --verde: #14655E; --verde-claro: #DCEBE6; --vermelho: #CF3A2E; --ok: #1E7F4A; --ouro: #C79A3E; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; color: var(--tinta); }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+
+/* papel com pontilhado leve */
+.papel { color: var(--tinta); background: radial-gradient(circle at 1px 1px, rgba(22,32,30,.07) 1.2px, transparent 1.6px) 0 0 / 28px 28px, radial-gradient(ellipse 80% 50% at 85% -5%, rgba(20,101,94,.10), transparent 70%), radial-gradient(ellipse 70% 45% at 0% 105%, rgba(207,58,46,.07), transparent 70%), var(--papel); }
+.papel::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .35; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .4 0 0 0 .25 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.topo { position: absolute; left: 64px; right: 64px; top: 54px; display: flex; justify-content: space-between; align-items: center; font: 700 21px Inter; letter-spacing: .24em; text-transform: uppercase; color: var(--cinza); }
+.selo { display: inline-flex; align-items: center; gap: 14px; padding: 10px 22px 10px 10px; border-radius: 99px; background: #fff; color: var(--tinta); letter-spacing: .16em; box-shadow: 0 6px 18px rgba(22,32,30,.08), inset 0 0 0 1.5px rgba(22,32,30,.06); }
+.selo i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--verde); color: #fff; }
+.selo i svg { width: 22px; height: 22px; }
+
+/* carimbo de tinta */
+.carimbo { position: absolute; display: inline-flex; flex-direction: column; align-items: center; padding: 14px 34px 12px; border: 7px solid currentColor; border-radius: 26px; font: 800 92px/1 Jakarta; letter-spacing: .05em; color: var(--vermelho); filter: url(#tinta); mix-blend-mode: multiply; opacity: .93; }
+.carimbo::before { content: ''; position: absolute; inset: 6px; border: 2.5px solid currentColor; border-radius: 17px; }
+.carimbo small { font: 800 20px Inter; letter-spacing: .3em; margin-bottom: 4px; }
+.carimbo.ok { color: var(--ok); }
+section { height: 1920px; }
+.topo { top: 250px; left: 72px; right: 72px; }
+.dica-s { position: absolute; left: 0; right: 0; display: flex; justify-content: center; }
+.dica-s span { display: inline-flex; align-items: center; gap: 12px; padding: 18px 32px; border-radius: 99px; background: var(--tinta); color: #fff; font: 700 27px Inter; box-shadow: 0 18px 36px rgba(22,32,30,.2); }
+.dica-s svg { width: 28px; height: 28px; }
+
+/* ===== s1: o grupo ===== */
+.chat { position: absolute; left: 56px; right: 56px; top: 350px; border-radius: 56px; background: #fff; box-shadow: 0 40px 80px rgba(22,32,30,.14), inset 0 0 0 1.5px rgba(22,32,30,.05); overflow: hidden; }
+.chat-topo { display: flex; align-items: center; gap: 20px; padding: 28px 34px; border-bottom: 1.5px solid rgba(22,32,30,.07); }
+.chat-topo .av { display: grid; place-items: center; width: 76px; height: 76px; border-radius: 50%; background: linear-gradient(135deg, #1B7A71, #0F524C); color: #fff; font: 800 28px Jakarta; }
+.chat-topo b { display: block; font: 800 32px Jakarta; letter-spacing: -.02em; }
+.chat-topo small { display: block; margin-top: 4px; font: 500 22px Inter; color: #8A918C; }
+.chat-corpo { padding: 26px 30px 34px; display: grid; gap: 18px; background: radial-gradient(circle at 1px 1px, rgba(22,32,30,.05) 1.2px, transparent 1.6px) 0 0 / 26px 26px, #F7F5F0; }
+.msg { max-width: 820px; padding: 16px 22px 12px; border-radius: 10px 34px 34px 34px; background: #fff; box-shadow: 0 6px 16px rgba(22,32,30,.07); font: 400 31px/1.35 Inter; }
+.msg .quem { display: block; margin-bottom: 4px; font: 700 23px Inter; }
+.msg .h { display: block; text-align: right; margin-top: 4px; font: 500 20px Inter; color: #9AA09B; }
+.msg.eu { justify-self: end; border-radius: 34px 10px 34px 34px; background: #DCEFE7; }
+.msg .enc { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; font: italic 500 22px Inter; color: #8A918C; }
+.msg .enc svg { width: 30px; height: 22px; }
+.msg-img { width: 724px; padding: 12px 12px 10px; }
+.msg-img .rx { position: relative; border-radius: 26px; overflow: hidden; background: #000; }
+.msg-img .rx img { display: block; width: 100%; }
+.msg-img .h { padding: 0 10px; }
+.msg-img .quem { padding: 0 10px; }
+.s1-rodape { position: absolute; left: 72px; right: 72px; top: 1560px; display: flex; justify-content: space-between; align-items: center; }
+.andamento { white-space: nowrap; display: inline-flex; align-items: center; gap: 12px; padding: 16px 26px; border-radius: 99px; background: rgba(207,58,46,.1); color: var(--vermelho); font: 700 22px Inter; letter-spacing: .08em; text-transform: uppercase; }
+.andamento i { display: flex; gap: 6px; } .andamento i u { width: 10px; height: 10px; border-radius: 50%; background: currentColor; }
+.andamento i u:nth-child(2) { opacity: .6; } .andamento i u:nth-child(3) { opacity: .3; }
+.s1-rodape > span:last-child { font: 600 26px Inter; color: var(--cinza); }
+
+/* ===== s2: a sua letra ===== */
+.s2-t { position: absolute; left: 72px; right: 72px; top: 336px; }
+.s2-t small { font: 700 21px Inter; letter-spacing: .22em; text-transform: uppercase; color: var(--cinza); }
+.s2-t h1 { margin-top: 12px; font: italic 800 92px/.98 Playfair; letter-spacing: -.02em; }
+.s2-t h1 em { color: var(--vermelho); }
+.cartao-q { position: absolute; left: 56px; right: 56px; top: 506px; padding: 26px; border-radius: 48px; background: #fff; box-shadow: 0 30px 60px rgba(22,32,30,.12), inset 0 0 0 1.5px rgba(22,32,30,.05); }
+.cartao-q .rx { position: relative; height: 600px; border-radius: 30px; overflow: hidden; background: #000; }
+.cartao-q .rx img { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center bottom; }
+.cartao-q p { margin: 22px 10px 4px; font: 500 33px/1.35 Inter; color: #2B3431; }
+.cartao-q p b { display: inline-block; margin-right: 10px; padding: 6px 14px; border-radius: 99px; background: var(--verde-claro); color: var(--verde); font: 800 19px Inter; letter-spacing: .14em; vertical-align: 4px; }
+.fonte { display: block; margin: 8px 10px 0; font: 500 18px Inter; color: #9AA09B; }
+.opcoes { position: absolute; left: 56px; right: 56px; top: 1336px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.op { display: flex; align-items: center; gap: 18px; padding: 20px 22px; border-radius: 32px; background: #fff; box-shadow: 0 12px 26px rgba(22,32,30,.07), inset 0 0 0 1.5px rgba(22,32,30,.05); font: 600 30px/1.2 Inter; }
+.op b { flex: none; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 20px; background: var(--tinta); color: #fff; font: 800 30px Jakarta; }
+.s2-leg { top: 1602px; }
+.s2-leg span { background: #fff; color: var(--tinta); box-shadow: 0 12px 26px rgba(22,32,30,.08), inset 0 0 0 1.5px rgba(22,32,30,.06); font-weight: 600; }
+
+/* ===== s3: checamos + chamada ===== */
+.boato { position: absolute; left: 72px; top: 340px; display: inline-block; max-width: 640px; padding: 18px 26px 14px; border-radius: 10px 34px 34px 34px; background: #fff; box-shadow: 0 16px 34px rgba(22,32,30,.1); font: 400 31px/1.3 Inter; transform: rotate(-2deg); }
+.boato .enc { display: flex; align-items: center; gap: 10px; font: italic 500 21px Inter; color: #8A918C; }
+.boato .enc svg { width: 30px; height: 22px; }
+.boato s { text-decoration-color: var(--vermelho); text-decoration-thickness: 4px; }
+.s3 .carimbo { right: 70px; top: 330px; transform: rotate(-8deg); font-size: 66px; padding: 12px 28px 10px; }
+.s3 .carimbo small { font-size: 17px; }
+.veredito { position: absolute; left: 56px; right: 56px; top: 520px; display: flex; align-items: center; gap: 22px; padding: 22px 30px 22px 22px; border-radius: 40px; background: var(--verde); color: #fff; box-shadow: 0 24px 50px rgba(20,101,94,.3); }
+.veredito i { flex: none; display: grid; place-items: center; width: 92px; height: 92px; border-radius: 28px; background: #fff; color: var(--verde); font: 800 50px Jakarta; font-style: normal; }
+.veredito h2 { font: italic 800 70px/1 Playfair; letter-spacing: -.02em; }
+.arcos { position: absolute; left: 56px; right: 56px; top: 680px; padding: 26px 26px 18px; border-radius: 44px; background: #fff; box-shadow: 0 24px 50px rgba(22,32,30,.1), inset 0 0 0 1.5px rgba(22,32,30,.05); }
+.arcos > small { display: block; margin: 0 8px 14px; font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--cinza); }
+.arco { display: grid; grid-template-columns: 250px 1fr; gap: 20px; align-items: center; padding: 18px 20px; border-radius: 26px; margin-bottom: 10px; background: #F4F2EC; font: 400 25px/1.3 Inter; color: #3B4541; }
+.arco b { font: 800 27px/1.15 Jakarta; letter-spacing: -.02em; color: var(--tinta); }
+.arco strong { color: var(--tinta); }
+.arco.certo { background: var(--verde-claro); box-shadow: inset 0 0 0 2.5px var(--verde); }
+.arco.certo b { color: var(--verde); }
+.cta-s { position: absolute; left: 56px; right: 56px; top: 1098px; padding: 34px 36px 36px; border-radius: 48px; background: linear-gradient(160deg, #18302C, #0E1F1C); color: #fff; box-shadow: 0 40px 80px rgba(22,32,30,.3); }
+.cta-s .data { display: flex; align-items: center; gap: 18px; }
+.cta-s .data span { padding: 8px 18px; border-radius: 99px; border: 2.5px solid #7FD3A8; color: #7FD3A8; font: 800 19px Inter; letter-spacing: .18em; text-transform: uppercase; }
+.cta-s .data b { font: 800 34px Jakarta; letter-spacing: -.02em; }
+.cta-s h3 { margin-top: 18px; font: italic 800 58px/1 Playfair; letter-spacing: -.02em; }
+.cta-s h3 em { color: #7FD3A8; }
+.cta-s p { margin-top: 14px; font: 400 26px/1.42 Inter; color: rgba(255,255,255,.82); }
+.cta-s p b { color: #fff; font-weight: 700; }
+.botao-s { position: absolute; left: 0; right: 0; top: 1438px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.botao-s div { display: inline-flex; align-items: center; gap: 16px; padding: 26px 56px; border-radius: 99px; font: 800 48px Jakarta; letter-spacing: -.02em; color: #fff; background: linear-gradient(#1B7A71, #0F524C); box-shadow: 0 0 0 12px rgba(20,101,94,.12), 0 20px 40px rgba(20,101,94,.35), inset 0 2px 0 rgba(255,255,255,.25); }
+.botao-s svg { width: 44px; height: 44px; }
+.botao-s span { font: 600 27px Inter; color: #2B3431; }
+.site { position: absolute; left: 0; right: 0; top: 1640px; text-align: center; font: 700 28px Jakarta; color: var(--cinza); }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<filter id="tinta" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="4" result="d"/>
+  <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="9" result="m"/><feColorMatrix in="m" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.9" result="mm"/><feComposite in="d" in2="mm" operator="in"/></filter>
+<symbol id="seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="enc" viewBox="0 0 30 22"><path d="M3 18c1-6 5-9 11-9h2V4l7 7-7 7v-5h-2c-4 0-7 1.5-11 5z M10 18c1-4 4-6 8-6h2V8l7 6-7 6v-4h-2c-3 0-5 .8-8 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<section id="s1-grupo" class="papel">
+  <div class="topo"><span class="selo"><i><svg><use href="#check"/></svg></i>Checagem OrtoQuestões</span><span>TARO 2025</span></div>
+  <div class="chat">
+    <div class="chat-topo"><span class="av">R</span><div><b>Residência · R1 e R2</b><small>plantão de pediatria</small></div></div>
+    <div class="chat-corpo">
+      <div class="msg msg-img"><span class="quem" style="color:#C2410C">Rafa</span><div class="rx"><img src="../../../../public/imagens/pediatria/pediatria-0387-1.jpeg" alt=""></div><span class="h">07:12</span></div>
+      <div class="msg"><span class="enc"><svg><use href="#enc"/></svg>Encaminhada com frequência</span><span class="quem" style="color:#7C3AED">Bia</span>Pé torto congênito, certeza. Já pode gessar.<span class="h">07:13</span></div>
+      <div class="msg eu">Será? Vou checar antes.<span class="h">07:14</span></div>
+    </div>
+  </div>
+  <div class="s1-rodape"><span class="andamento"><i><u></u><u></u><u></u></i>Checagem em andamento</span><span>toque para continuar</span></div>
+</section>
+
+<section id="s2-letra" class="papel">
+  <div class="topo"><span class="selo"><i><svg><use href="#check"/></svg></i>Checagem OrtoQuestões</span><span>TARO 2025</span></div>
+  <div class="s2-t"><small>Antes do veredito</small><h1>Qual é a <em>sua letra?</em></h1></div>
+  <div class="cartao-q">
+    <div class="rx"><img src="../../../../public/imagens/pediatria/pediatria-0387-1.jpeg" alt=""></div>
+    <p><b>TARO 2025</b>A deformidade identificada na radiografia a seguir está associada a:</p>
+    <small class="fonte">Imagem: Herring, Tachdjian's Pediatric Orthopaedics.</small>
+  </div>
+  <div class="opcoes">
+    <div class="op"><b>A</b>hemimelia fibular.</div>
+    <div class="op"><b>B</b>pé torto congênito.</div>
+    <div class="op"><b>C</b>pé calcâneo valgo.</div>
+    <div class="op"><b>D</b>defeito de consolidação após fratura.</div>
+  </div>
+  <div class="dica-s s2-leg"><span>Guarde a sua letra. A checagem sai mais tarde, nos stories.</span></div>
+</section>
+
+<section id="s3-checamos" class="papel s3">
+  <div class="topo"><span class="selo"><i><svg><use href="#check"/></svg></i>Checagem OrtoQuestões</span><span>TARO 2025</span></div>
+  <div class="boato"><span class="enc"><svg><use href="#enc"/></svg>Encaminhada com frequência</span><s>Pé torto congênito, certeza.</s></div>
+  <div class="carimbo"><small>Veredito</small>ENGANOSO</div>
+  <div class="veredito"><i>C</i><h2>Pé calcâneo valgo.</h2></div>
+  <div class="arcos"><small>Tíbia arqueada no bebê: olhe o ápice</small>
+    <div class="arco certo"><b>Posteromedial</b><span><strong>Pé calcâneo valgo.</strong> Benigno: a curva corrige em grande parte. Fica o encurtamento.</span></div>
+    <div class="arco"><b>Anterolateral</b><span><strong>Neurofibromatose tipo 1</strong> e pseudartrose congênita.</span></div>
+    <div class="arco"><b>Anteromedial</b><span><strong>Hemimelia fibular.</strong></span></div>
+  </div>
+  <div class="cta-s">
+    <div class="data"><span>Verdadeiro</span><b>A prova é em 10/01/2027.</b></div>
+    <h3>Fique pronto. <em>Prepare-se.</em></h3>
+    <p>Com o nosso <b>cronograma</b>, você faz o maior número de questões possível <b>sem se cansar tanto</b>. Nós planejamos tudo para você.</p>
+  </div>
+  <div class="botao-s"><div>Treine grátis<svg><use href="#seta"/></svg></div><span>Crie sua conta grátis agora mesmo e conheça outras questões.</span></div>
+  <p class="site">ortoquestoes.com.br</p>
+</section>
+</body></html>

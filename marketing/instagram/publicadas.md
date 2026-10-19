@@ -31,3 +31,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0220 | Instabilidade cervical subaxial, angulação maior que 11 graus (TEOT 2021) | posts/2026-10-19-topografia-bingo (stories) |
 | mao-1802 | Polegar do esquiador, LCU da MCF: estresse a 30° sem ponto final firme (Simulados, padrão SIMÃO) | posts/2026-10-20-pista-de-esqui-polegar (feed e stories) |
 | trauma-0570 | Patela bipartida como diferencial da fratura da patela (TEOT 2024) | posts/2026-10-19-checagem-patela (feed) |
+| pediatria-0387 | Arqueamento posteromedial da tíbia e pé calcâneo valgo (TARO 2025) | posts/2026-10-19-checagem-patela (stories) |
