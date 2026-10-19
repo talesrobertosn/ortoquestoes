@@ -103,7 +103,7 @@ DELEE e colaboradores dividiram os descolamentos pelo grau de ossificação do n
 
 Quase todos são do tipo em **extensão**, com a epífise posterior à metáfise. O tipo em flexão, com a epífise anterior, é raro. STRICKER descreveu uma fratura transcondiliana no plano coronal (SALTER-HARRIS IV) numa criança de 3 anos, diagnosticada de início como côndilo lateral, sem distúrbio de crescimento 3 anos depois da redução aberta e fixação.
 
-!questoes relacionadas=pediatria-0378 treino=pediatria-0985
+!questoes relacionadas=pediatria-0378 treino=pediatria-1009
 conceito: A classificação de DELEE conta o núcleo do capítulo: o grupo A ocorre antes de ele aparecer (até 12 meses), o B com o núcleo já visível (12 meses a 3 anos) e o C com grande fragmento metafisário (3 a 7 anos).
 como: A prova do TECOC/SBCOC (sem ano) perguntou o primeiro centro de ossificação do cotovelo a aparecer, o capítulo; é esse núcleo que DELEE usa para separar o grupo A dos grupos B e C.
 armadilha: Tróclea como primeiro núcleo: ela só ossifica entre 7 e 10 anos, segundo o capítulo, bem depois do capítulo umeral.
@@ -117,7 +117,7 @@ O capítulo insiste: **pense sempre em maus-tratos** nessa lesão, principalment
 
 > Na prova: descolamento do úmero distal fora do parto, abaixo dos 2 anos, é **maus-tratos até prova em contrário**; peça **inventário esquelético** atrás de **canto metafisário**, **alça de balde**, **costelas** e fraturas em **fases diferentes**.
 
-!questoes relacionadas=pediatria-0383,pediatria-0066,pediatria-0362,pediatria-0160,pediatria-0478 treino=pediatria-0986
+!questoes relacionadas=pediatria-0383,pediatria-0066,pediatria-0362,pediatria-0160,pediatria-0478 treino=pediatria-1010
 conceito: As lesões que o capítulo manda procurar na suspeita de abuso (fraturas metafisárias em canto ou em alça de balde, fraturas de costela e fraturas em fases diferentes de consolidação) são as mesmas que a banca cobra como de alta especificidade para maus-tratos.
 como: O TARO 2025 pediu as fraturas de alta especificidade (metafisárias em alça de balde e costelas posteriores); o TARO 2015, a fratura de extremidade mais sugestiva (a do canto); o TEPOP 2024, costela posterior, escápula e canto metafisário; o TARO 2009, escápula, esterno ou metafisárias segundo KLEINMAN; e a prova sem ano mostrou a imagem de uma fratura do canto.
 armadilha: Fraturas diafisárias e de clavícula aparecem nos distratores como se fossem específicas; o capítulo fala em lesões metafisárias e de costela.
@@ -161,7 +161,7 @@ Se a fratura é antiga (**mais de 5 a 6 dias**) e a epífise **já não se move*
 
 A redução aberta foi relatada sobretudo por erro diagnóstico (a lesão tomada por côndilo lateral). MIZUNO defendeu a redução aberta primária, por via posterior com desinserção do tríceps do olécrano, por maus resultados com a redução fechada; não é a regra do capítulo.
 
-!questoes treino=pediatria-0988,pediatria-0989
+!questoes treino=pediatria-1012,pediatria-1013
 conceito: Fratura aguda desviada: redução sob anestesia corrigindo o medial em extensão, flexão com pronação e dois fios laterais, conferindo com artrografia; fratura com mais de 5 a 6 dias e epífise presa: tala para conforto e, se sobrar deformidade, osteotomia supracondiliana depois.
 como: Ponto ainda não cobrado de forma direta; a pronação na redução do desvio posteromedial é fato carimbado da supracondiliana, e este capítulo aplica a mesma manobra ao descolamento.
 armadilha: Fio medial percutâneo às cegas: o epicôndilo medial não é palpável no cotovelo edemaciado do bebê, e o nervo ulnar fica em risco.
@@ -180,13 +180,13 @@ O capítulo lista, em ordem: **consolidação viciosa em cúbito varo**, lesões
 
 **Osteonecrose.** Rara depois do descolamento, mas grave. YOO descreveu oito necroses da tróclea depois de descolamentos; seis tinham sido diagnosticados de início como côndilo medial, côndilo lateral ou luxação. Todos tiveram **dissolução rápida da tróclea em 3 a 6 semanas** e defeito em rabo de peixe medial ou central.
 
-!questoes relacionadas=pediatria-0532,pediatria-0652 treino=pediatria-0990
+!questoes relacionadas=pediatria-0532,pediatria-0652 treino=pediatria-1014
 conceito: O cúbito varo é a complicação principal do descolamento epifisário total e, como na supracondiliana, vem da consolidação viciosa com desvio medial e rotação do fragmento; é menos intenso porque as superfícies largas deixam o fragmento inclinar menos.
 como: Na supracondiliana, o TARO 2011 perguntou a causa mais frequente do cúbito varo (consolidação viciosa) e o TARO 2025 detalhou o mecanismo (consolidação viciosa por desvio medial e rotação da epífise umeral distal), com crescimento assimétrico por lesão fisária ou por osteonecrose da tróclea como distratores.
 armadilha: Osteonecrose da tróclea como causa principal do varo: ela existe e dá varo progressivo (tipo B), mas sobretudo depois de côndilo medial e descolamento total, e é rara; o varo comum é consolidação viciosa.
 !fim
 
-!questoes treino=pediatria-0987
+!questoes treino=pediatria-1011
 conceito: Lesão neurovascular é rara no descolamento epifisário total: fragmentos sem ponta, cobertos de cartilagem, pouco desviados e em direção posteromedial; o nervo em risco passa a ser o ulnar, pelo fio medial.
 como: Lacuna com cara de prova: a banca cobra muito, na supracondiliana, qual estrutura sofre conforme a direção do desvio.
 armadilha: Transpor para o descolamento o risco do mediano e da artéria braquial da supracondiliana com desvio posterolateral.
@@ -238,7 +238,7 @@ Na radiografia, a perda de movimento associa-se à **subluxação da cabeça do 
 
 Como a necrose é consequência direta da lesão dos vasos no trauma, **não há prevenção nem tratamento da necrose primária**; trata-se a sequela. Defeitos pequenos com pouco envolvimento articular podem ser **observados**. Opções descritas: **desbridamento artroscópico** e retirada de corpos livres (alívio transitório; numa série, 6 de 7 melhoraram de início e 5 precisaram de nova cirurgia), capsulotomia para a contratura, **artroplastia de interposição** na artrose avançada, **epifisiodese** da fise medial e/ou lateral restante para impedir que o entalhe progrida e evitar migração da ulna e impacto (indicação do autor: fise aberta, deformidade leve e radiocapitelar congruente) e **osteotomia supracondiliana com transposição do nervo ulnar** no varo, que corrige o ângulo de carregamento mais pela estética que pela função e pode aumentar a rigidez. Numa série de 14 pacientes, 40% mantinham dor no seguimento e só 13% tinham movimento normal; os com subluxação ou luxação da cabeça do rádio tiveram o pior arco.
 
-!questoes central=trauma-0191 relacionadas=pediatria-0710,pediatria-0699,pediatria-0768 treino=pediatria-0994
+!questoes central=trauma-0191 relacionadas=pediatria-0710,pediatria-0699,pediatria-0768 treino=pediatria-1018
 conceito: A osteonecrose tipo A (rabo de peixe) atinge só o ápice da tróclea e vem da supracondiliana distal e do côndilo lateral; a tipo B atinge a tróclea inteira, vem do côndilo medial e do descolamento fisário total e evolui com cúbito varo progressivo.
 como: O TEOT 2022 perguntou de quais fraturas a deformidade tipo B é sequela, com distratores que trocavam as fraturas do tipo A; o TEOT 2023 e o TEOT 2022 usaram a osteonecrose da tróclea e o rabo de peixe como distratores das complicações do côndilo lateral (neuropatia ulnar tardia e esporão lateral), e o TARO 2009 pôs o rabo de peixe entre as deformidades da consolidação viciosa do côndilo lateral.
 armadilha: Inverter os tipos: côndilo lateral e supracondiliana distal dão o defeito central (A); côndilo medial e descolamento total dão a necrose completa com varo (B).
@@ -283,7 +283,7 @@ Clinicamente e na radiografia, a fratura do côndilo medial é confundida, acima
 
 Na criança maior, com grande fragmento metafisário, o diagnóstico é evidente (figura 17-12A). Na menor, em que só o epicôndilo está ossificado, a fratura do côndilo medial passa por fratura isolada do epicôndilo (figura 17-12: diagnóstico de epicôndilo aos 6 anos, dor persistente e ossificação metafisária visível 3 meses depois). As luxações do cotovelo são raras antes da ossificação do côndilo medial. Abaixo de **8 a 10 anos**, com equimose medial importante e dúvida sobre o traço, faça **artrografia ou ressonância** (figura 17-9: menina de 7 anos com suspeita de epicôndilo; a artrografia mostrou o componente intra-articular).
 
-!questoes relacionadas=pediatria-0572,pediatria-0846,pediatria-0906 treino=pediatria-0991
+!questoes relacionadas=pediatria-0572,pediatria-0846,pediatria-0906 treino=pediatria-1015
 conceito: A fratura do epicôndilo medial é extra-articular e costuma acompanhar a luxação posterolateral do cotovelo; a do côndilo medial é intra-articular, dá coxim gorduroso positivo e instabilidade também em varo, e o cotovelo tende a subluxar para posteromedial.
 como: O TARO 2022, o TEOT 2021 (com imagem) e o CET-PR perguntaram a fratura mais associada à luxação do cotovelo da criança, sempre o epicôndilo medial; este capítulo usa o mesmo fato ao contrário para afastar a fratura do côndilo medial.
 armadilha: Tomar o fragmento ósseo medial de uma criança pequena por epicôndilo isolado: qualquer ossificação metafisária no fragmento sugere côndilo medial e pede artrografia ou ressonância.
@@ -309,7 +309,7 @@ Alguns autores modificam KILFOYLE em sem desvio (menos de 2 mm), desvio mínimo 
 A: padrões da fratura do côndilo medial; no MILCH I o traço termina na incisura troclear, no MILCH II mais lateralmente, no sulco capitulotroclear. B: classificação de KILFOYLE; tipo I incompleto, que pode abrir em dobradiça sem violar a articulação; tipo II entra na articulação com menos de 2 mm; tipo III entra na articulação com angulação, rotação e desvio articular.
 !fim
 
-!questoes relacionadas=pediatria-0629,pediatria-0832 treino=pediatria-0992
+!questoes relacionadas=pediatria-0629,pediatria-0832 treino=pediatria-1016
 conceito: A fratura do côndilo medial é o espelho da do côndilo lateral: comporta-se como SALTER-HARRIS IV e, sem tratamento, evolui para pseudartrose; a pseudartrose medial dá cúbito varo, a lateral dá cúbito valgo.
 como: O TARO 2018 perguntou a correspondência do MILCH I do côndilo lateral na classificação de SALTER-HARRIS (tipo IV); o TARO 2006, em certo ou errado, afirmou que o cúbito valgo progressivo é a sequela mais comum da pseudartrose do côndilo lateral.
 armadilha: Transpor o valgo do côndilo lateral para o medial: no lado medial, a perda do pilar faz o cotovelo cair em varo.
@@ -322,7 +322,7 @@ O fragmento metafisário leva o **epicôndilo medial intacto** com a **origem co
 
 **A irrigação.** O sangue do epicôndilo e da metáfise medial chega por fora da articulação, com os flexores. O do centro lateral da crista medial da tróclea atravessa a superfície da fise do côndilo medial; se o traço rompe esses pequenos vasos intra-articulares, a porção lateral da crista medial perde o sangue e surge o **rabo de peixe**.
 
-!questoes relacionadas=pediatria-0610 treino=pediatria-0984
+!questoes relacionadas=pediatria-0610 treino=pediatria-1008
 conceito: O fragmento do côndilo medial leva o epicôndilo com a origem dos flexores, que o rodam até a superfície de fratura ficar voltada para anteromedial e a articular para posterolateral; no côndilo lateral, o fragmento leva os extensores.
 como: O TARO 2017 perguntou qual músculo permanece preso ao fragmento na fratura do côndilo lateral (extensor radial longo do carpo); o capítulo 17 descreve o espelho medial, com os flexores.
 armadilha: Trocar os grupos musculares: extensores no côndilo lateral, flexores no medial.
@@ -348,7 +348,7 @@ armadilha: Trocar os grupos musculares: extensores no côndilo lateral, flexores
 Desvio do côndilo medial: a tração dos flexores do antebraço roda o fragmento, e a superfície de fratura fica voltada para anteromedial e a articular para posterolateral.
 !fim
 
-!questoes relacionadas=pediatria-0655,pediatria-0719 treino=pediatria-0993
+!questoes relacionadas=pediatria-0655,pediatria-0719 treino=pediatria-1017
 conceito: Na redução aberta do côndilo medial, o nervo ulnar é identificado e protegido e evita-se dissecar a face posterior do fragmento e a face medial da crista medial da tróclea, para não desvascularizar os núcleos da tróclea; é o espelho da regra do côndilo lateral.
 como: No côndilo lateral, o TARO 2011 perguntou a dissecção a evitar no acesso (posterior) e o TARO 2020 perguntou o que a dissecção posterolateral extensa aumenta (sem gabarito oficial no acervo; o capítulo 17 associa a desperiostização excessiva à osteonecrose).
 armadilha: Achar que proteger o nervo ulnar significa não dissecá-lo: o capítulo manda expô-lo o suficiente para identificá-lo e protegê-lo.
@@ -394,7 +394,7 @@ armadilha: Epicôndilo lateral numa criança de 6 anos: a apófise ainda nem oss
 
 A menos que o fragmento esteja **encarcerado na articulação**, o tratamento é **imobilização simples para conforto**. Pode haver **pseudartrose** do fragmento, mas esse achado radiográfico em geral **não afeta a função**. A única complicação maior descrita é o **encarceramento**, dentro do cotovelo ou entre o capítulo e a cabeça do rádio. Há pseudartroses osteocondrais da coluna lateral que representam **instabilidade ligamentar lateral crônica** (posterolateral): esses pacientes têm sintomas e limitação e se beneficiam de **reparo aberto**.
 
-!questoes treino=pediatria-0995
+!questoes treino=pediatria-1019
 conceito: Epicôndilo lateral: tratamento sem cirurgia, exceto se o fragmento estiver encarcerado na articulação; a pseudartrose em geral não muda a função, salvo quando representa instabilidade posterolateral crônica.
 como: Ainda não cobrado; um fato isolado e inequívoco do capítulo, com uma única indicação cirúrgica.
 armadilha: Indicar cirurgia por desvio em milímetros: o corte de 2 mm é das fraturas intra-articulares dos côndilos, não desta apófise extra-articular.

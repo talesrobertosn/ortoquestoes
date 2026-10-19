@@ -46,7 +46,7 @@ A regra do capítulo é que a luxação do cotovelo da criança **raramente vem 
 
 Vista do outro lado, a associação é a mesma: **quase 60% das fraturas do epicôndilo medial** nessa faixa etária vêm com luxação (a tabela 15-1 dá cerca de 50%, e as séries variam de 30% a 60%). Por isso, toda vez que houver fratura do epicôndilo medial, do coronoide ou do rádio proximal (especialmente colo muito desviado), é preciso testar a estabilidade do cotovelo; e toda vez que houver luxação, é preciso **localizar o epicôndilo medial** na radiografia de controle.
 
-!questoes central=pediatria-0572,pediatria-0846 relacionadas=pediatria-0906 treino=pediatria-1022
+!questoes central=pediatria-0572,pediatria-0846 relacionadas=pediatria-0906 treino=pediatria-1046
 conceito: Na luxação do cotovelo da criança, a fratura associada mais comum é a do epicôndilo medial (55% a 60% das fraturas associadas); a fratura do epicôndilo, por sua vez, vem com luxação em cerca de metade dos casos.
 como: O TARO 2022 perguntou a fratura mais associada às luxações posteriores (colo do rádio, cabeça do rádio, epicôndilo medial e coronoide); o TEOT 2021 mostrou a lesão em imagem; o CET-PR repetiu com olécrano, côndilo lateral e epicôndilo lateral como distratores.
 armadilha: Colo do rádio ou coronoide: também acompanham a luxação e merecem teste de estabilidade, mas vêm atrás do epicôndilo medial.
@@ -73,7 +73,7 @@ A lesão vem da **tração longitudinal com o cotovelo estendido e o antebraço 
 A lesão ocorre mais comumente quando se aplica tração longitudinal ao membro superior, geralmente com o antebraço pronado; pode haver rotura parcial da membrana subanular, permitindo que o ligamento anular subluxe para dentro da articulação radiocapitelar.
 !fim
 
-!questoes central=pediatria-0649,pediatria-0908 relacionadas=pediatria-0754 treino=pediatria-1031
+!questoes central=pediatria-0649,pediatria-0908 relacionadas=pediatria-0754 treino=pediatria-1055
 conceito: Na pronação dolorosa, o que se desloca é o ligamento anular, que escorrega para proximal sobre a cabeça do rádio e fica preso na radiocapitelar; acontece com tração no cotovelo estendido e o antebraço pronado, porque em pronação a borda lateral da cabeça é estreita e arredondada.
 como: O TARO 2011 deu como distratores a subluxação da radioulnar proximal, da capitulorradial e do colateral lateral; o CET-PR cruzou pronação ou supinação com extensão ou flexão; o TARO 2008 perguntou a direção do deslocamento do ligamento (medial, lateral, proximal ou distal).
 armadilha: "Subluxação da articulação capitulorradial" ou "radioulnar proximal": a cabeça do rádio não sai do lugar; quem se interpõe é o ligamento.
@@ -120,7 +120,7 @@ Técnica de redução por supinação: primeiro se supina o antebraço e depois 
 
 Se a criança não volta a usar o braço: com mais de **12 a 24 horas** de evolução, uma sinovite leve pode atrasar a melhora. Confirma-se o diagnóstico (radiografia, se ainda não feita, e reexame do membro todo); radiografia normal com flexão completa e prono-supinação livre garante que o ligamento voltou, e reavalia-se em 5 a 10 dias.
 
-!questoes treino=pediatria-1030
+!questoes treino=pediatria-1054
 conceito: A manobra inicial preferida é a hiperpronação com o cotovelo estendido (98% contra 86% de sucesso em MACIAS); se não houver melhora em 10 minutos, faz-se a supinação com flexão.
 armadilha: Gesso logo após a manobra que não funcionou: imobilização não faz parte do primeiro episódio; o gesso de 2 a 3 semanas é para recidivas que atrapalham a vida.
 !fim
@@ -133,7 +133,7 @@ No primeiro episódio, se a criança está confortável e usando o braço, **nã
 - Recidiva que prejudica a vida da criança: **gesso axilopalmar em supinação ou neutro por 2 a 3 semanas**.
 - **Cirurgia** quase nunca: só na subluxação crônica, irredutível e sintomática, com secção parcial do ligamento anular. Mesmo sem tratamento, quase todas reduzem sozinhas, sem sequela descrita.
 
-!questoes central=pediatria-0690 relacionadas=pediatria-0812 treino=pediatria-1029
+!questoes central=pediatria-0690 relacionadas=pediatria-0812 treino=pediatria-1053
 conceito: A pronação dolorosa tem idade média de 2 a 3 anos, predomina em meninas e no lado esquerdo, é rara depois dos 7 anos, e a recidiva é mais comum até os 2 anos, cessando por volta dos 4 a 5.
 como: O TARO 2014 perguntou a faixa da pronação dolorosa recorrente (1 a 2 anos, contra 3 a 4, 5 a 6 e 7 a 8). O TARO 2006 afirmou, em certo ou errado, maior incidência entre 6 e 8 anos.
 armadilha: 3 a 4 anos para a recorrente: a média do primeiro episódio é 2 a 3 anos, mas o risco de recidiva é maior até os 2.
@@ -181,7 +181,7 @@ A regra prática que fecha o raciocínio está no quadro de armadilhas: **toda c
 Ossificação do epicôndilo medial: o núcleo oval excêntrico, as margens escleróticas paralelas que surgem com a maturação, o núcleo escondido atrás da metáfise num AP levemente oblíquo, a posição posterior vista num perfil oblíquo e a linha da metáfise que imita um traço de fratura no AP.
 !fim
 
-!questoes central=pediatria-0648,pediatria-0682 relacionadas=pediatria-0839,pediatria-0668 treino=pediatria-0970
+!questoes central=pediatria-0648,pediatria-0682 relacionadas=pediatria-0839,pediatria-0668 treino=pediatria-0994
 conceito: O epicôndilo medial começa a ossificar entre 4 e 6 anos e é o último centro secundário do úmero distal a se fundir com a metáfise, por volta dos 15 anos; toda criança acima de 5 anos deve ter o núcleo visível.
 como: O TARO 2019, o TARO 2013 e o TARO 2008 perguntaram, com quase o mesmo texto, o último núcleo do úmero distal a se fundir (tróclea, capítulo, epicôndilo lateral, olécrano como distratores). O TARO 2012 pediu os núcleos ossificados aos 7 anos (epicôndilo medial, cabeça do rádio e capítulo).
 armadilha: Epicôndilo lateral ou tróclea como o último a se fundir: o capítulo 15 é explícito em que o último centro secundário do úmero distal a se fundir com a metáfise é o epicôndilo medial, por volta dos 15 anos.
@@ -205,7 +205,7 @@ Nas séries somadas de 317 luxações, **10%** tiveram sintomas neurológicos de
 - **Radial: muito raro.** WATSON-JONES descreveu dois casos, e os sintomas regrediram rapidamente após a redução; RASOOL relatou um terceiro.
 - **Mediano: o mais grave.** Cerca de **3%** das luxações, mais entre **5 e 12 anos**; pode ser lesado diretamente ou **encarcerado na articulação**, aparecer tarde ou depois de uma redução espontânea.
 
-!questoes central=pediatria-0586,pediatria-0547 treino=pediatria-1027
+!questoes central=pediatria-0586,pediatria-0547 treino=pediatria-1051
 conceito: Na luxação do cotovelo da criança, o ulnar é o nervo mais lesado (neuropraxia que costuma regredir), o radial é raro e regride após a redução, e o mediano é o mais grave por poder ficar encarcerado na articulação.
 como: O TARO 2021 perguntou o nervo mais frequentemente lesado (ulnar, contra mediano e os interósseos); o TARO 2023 cruzou raro ou frequente com resolução ou não após a redução para o radial.
 armadilha: Mediano como o mais frequente: é o mais grave, não o mais comum.
@@ -244,7 +244,7 @@ A lesão arterial é **incomum** na luxação posterior da criança: **8 em 317 
 - **arteriografia em geral desnecessária** (a lesão está no local da luxação); se precisar de imagem, **ultrassonografia vascular**;
 - lesão confirmada: **reparo direto ou enxerto venoso**, não ligadura (claudicação, intolerância ao frio, até amputação tardia).
 
-!questoes relacionadas=ombro-cotovelo-0508 treino=pediatria-1024
+!questoes relacionadas=ombro-cotovelo-0508 treino=pediatria-1048
 conceito: Pulso ausente na luxação do cotovelo pede redução urgente seguida de reavaliação vascular; a exploração fica para o comprometimento que persiste depois da redução ou para a luxação exposta.
 como: O TARO 2006 afirmou, em certo ou errado, que a ausência de pulsos distais contraindica a redução fechada.
 alerta: O TARO 2006 (ombro-cotovelo-0508) não tem gabarito no acervo; pelo capítulo, a afirmação é falsa: o comprometimento vascular é motivo para reduzir com urgência, e não contraindicação.
@@ -312,7 +312,7 @@ Em qualquer técnica, o antebraço fica **supinado**, a estabilidade é testada 
 Redução pelas técnicas de empurrar: no método de LAVINE, a criança fica no colo dos pais com o cotovelo sobre o encosto da cadeira, o polegar empurra o olécrano e a outra mão traciona o antebraço; na técnica de MEYN, o paciente fica em decúbito ventral com o braço pendente.
 !fim
 
-!questoes central=trauma-0959 treino=pediatria-1032
+!questoes central=trauma-0959 treino=pediatria-1056
 conceito: A tração de PARVIN é feita com o cotovelo fletido perto de 90 graus, tração no eixo do úmero e do antebraço e contraforça; o capítulo a prefere a partir dos 10 anos e reserva a técnica de empurrar o olécrano, com a criança no colo dos pais, para os de 9 anos ou menos.
 como: A prova TEOT/TARO sem ano cruzou decúbito dorsal ou ventral com cotovelo em flexão ou extensão para a manobra de PARVIN (gabarito: ventral e flexão).
 armadilha: Cotovelo em extensão: a hiperextensão é proibida; multiplica a força sobre o braquial e expõe o mediano.
@@ -351,7 +351,7 @@ A antiga imobilização de 3 semanas deu lugar à **mobilização precoce**. MUR
 - **Luxação recorrente:** rara (**2 de 317, 0,6%**), cerca de 80% em meninos. OSBORNE e COTTERILL atribuíram o defeito primário à **falha de reinserção das estruturas posterolaterais**, com defeitos osteocondrais no capítulo e na borda anterior da cabeça do rádio; a cirurgia mais aceita é a **reinserção da cápsula lateral** de OSBORNE e COTTERILL (gesso a 90 graus por 4 a 6 semanas). A **instabilidade rotatória posterolateral** (O'DRISCOLL) é testada com o paciente em supino, o braço acima da cabeça, compressão axial, valgo e supinação; os testes de flexão de braço em prono e da cadeira, com os antebraços supinados, reproduzem os sintomas no consultório.
 - **Luxação não reduzida:** rara na América do Norte. Até **3 semanas**, a redução fechada pode funcionar; depois, aberta por via posterior (SPEED), com alongamento do tríceps e descompressão ou transposição do ulnar; bons resultados se a redução concêntrica sai **em até 3 meses**. MAHAISAVARIYA teve melhor extensão **sem** alongar o tríceps.
 
-!questoes central=pediatria-0957 relacionadas=ombro-cotovelo-0495 treino=pediatria-1028
+!questoes central=pediatria-0957 relacionadas=ombro-cotovelo-0495 treino=pediatria-1052
 conceito: A complicação mais comum da luxação do cotovelo da criança é a perda de movimento, sobretudo de extensão; a recidiva é rara (0,6%), e imobilizar por mais de 2 semanas piora a extensão.
 como: A TEPOP 2024 perguntou qual das opções é complicação tardia da luxação posterior (diminuição do arco de movimento, contra lesões do ulnar, do mediano e da braquial, que são precoces). O TARO 2009 perguntou a estrutura que limita a pronação na luxação posterior inveterada.
 armadilha: Lesão do ulnar como complicação tardia: as lesões neurovasculares são precoces.
@@ -392,7 +392,7 @@ Luxação com encarceramento: no AP, luxação posterolateral com o epicôndilo 
 Menino de 13 anos com luxação posterolateral: no AP e no perfil a fratura não aparece, mas o núcleo do epicôndilo medial falta no lugar; a tomografia mostra o fragmento na articulação; após retirada e fixação com um parafuso com arruela na coluna medial, consolidação e retorno às atividades.
 !fim
 
-!questoes central=pediatria-0943 relacionadas=pediatria-0817 treino=pediatria-1023,pediatria-1025,pediatria-0967,pediatria-0991
+!questoes central=pediatria-0943 relacionadas=pediatria-0817 treino=pediatria-1047,pediatria-1049,pediatria-0991,pediatria-1015
 conceito: O fragmento do epicôndilo medial encarcerado na articulação é a única indicação absoluta de cirurgia; pode ser tentada a retirada fechada pela manobra de ROBERTS (valgo, supinação e extensão do punho e dos dedos, nas primeiras 24 horas, sucesso de cerca de 40%), mas a falha leva à extração aberta e fixação.
 como: A TEPOP 2024 pôs como certa a afirmação de que há consenso de cirurgia no encarceramento, com distratores sobre pseudartrose sintomática, desvio de 2 cm e instabilidade tardia por não excisar o fragmento. O TARO 2006 afirmou, em certo ou errado, que a manobra de redução é a causa da interposição intra-articular do fragmento.
 armadilha: "Redução aberta reservada para desvio acima de 2 cm": não há esse corte; o consenso é abaixo de 2 mm (sem cirurgia) e no encarceramento (cirurgia).
@@ -434,7 +434,7 @@ A tendência é operar mais: implantes melhores, técnica melhor, mais valor ao 
 Paciente em decúbito ventral com o ombro em rotação interna, braço sobre mesa de mão ou mesa radiotransparente; fio-guia canulado mantendo a redução com o nervo ulnar próximo; parafuso canulado de 4,5 mm com arruela fixando o epicôndilo.
 !fim
 
-!questoes treino=pediatria-1026
+!questoes treino=pediatria-1050
 conceito: O parafuso do epicôndilo medial deve morder o osso esponjoso da coluna medial; a fixação bicortical na cortical lateral põe em risco o nervo radial.
 armadilha: Nervo ulnar: é o nervo do acesso, exposto e protegido, não o ameaçado pela ponta do parafuso na cortical lateral.
 !fim

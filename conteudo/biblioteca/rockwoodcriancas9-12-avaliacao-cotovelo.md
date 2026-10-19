@@ -50,7 +50,7 @@ O mnemônico das aulas, **CRITOE** (capítulo, rádio, interno, tróclea, olécr
 
 Em geral, **as meninas ossificam antes**. Em algumas regiões, como o olécrano e o epicôndilo lateral, a diferença entre os sexos chega a 2 anos. O atlas de BRODEUR é a referência citada para os detalhes finos.
 
-!questoes central=pediatria-0378,pediatria-0668 treino=pediatria-0960,pediatria-0962
+!questoes central=pediatria-0378,pediatria-0668 treino=pediatria-0984,pediatria-0986
 conceito: O capítulo é o primeiro centro (por volta de 1 ano, igual nos dois sexos); depois vêm cabeça do rádio e epicôndilo medial, por volta dos 5 a 7 anos. Aos sete anos, os centros ossificados esperados são capítulo, cabeça do rádio e epicôndilo medial.
 como: A prova do TECOC/SBCOC Ombro e Cotovelo perguntou o primeiro centro a aparecer, com tróclea e os dois epicôndilos como distratores. O TARO 2012 pediu os núcleos ossificados numa criança de sete anos, em trios de centros.
 armadilha: Tróclea logo depois do capítulo: os dois formam a superfície articular, mas a tróclea só ossifica por volta dos 9 a 10 anos.
@@ -71,7 +71,7 @@ armadilha: Trios com olécrano, tróclea ou epicôndilo lateral aos sete anos: s
 
 **Olécrano.** A metáfise proximal da ulna avança aos poucos: ao nascer está a meio caminho entre o coronoide e a ponta; por volta dos 6 a 7 anos envolve 66% a 75% da superfície do capítulo. O centro secundário aparece por volta de **6,8 anos nas meninas e 8,8 nos meninos** numa série (a tabela de CHENG dá 8,7 e 10,5), como um centro oblíquo e oblongo, e pode ter dois núcleos, um **articular** e outro **de tração** (figura 12-8). O centro do olécrano pode persistir até a vida adulta.
 
-!questoes treino=pediatria-0970
+!questoes treino=pediatria-0994
 conceito: A tróclea só ossifica por volta dos 9 a 10 anos, por vários centros que parecem fragmentados; antes disso, um núcleo na posição da tróclea depois de luxação, com o epicôndilo medial fora do lugar, é o epicôndilo medial encarcerado.
 como: Ainda não caiu nas provas do acervo; o simulado junta a sequência de ossificação, cobrada todo ano, com a lesão mais associada à luxação do cotovelo da criança.
 armadilha: Aceitar o núcleo como tróclea normal numa criança de 6 anos: é cedo demais para ela.
@@ -85,7 +85,7 @@ A fusão acontece em duas etapas. Pouco antes do fim do crescimento, **capítulo
 Ossificação e fusão dos centros secundários do úmero distal: idades médias de início da ossificação (A) e de fusão entre os centros (B) em meninos e meninas, e a contribuição de cada centro para a arquitetura final do úmero distal (C).
 !fim
 
-!questoes central=pediatria-0648,pediatria-0682 relacionadas=pediatria-0839 treino=pediatria-0961
+!questoes central=pediatria-0648,pediatria-0682 relacionadas=pediatria-0839 treino=pediatria-0985
 conceito: Capítulo, tróclea e epicôndilo lateral se fundem num centro epifisário comum; o epicôndilo medial, separado por osso metafisário, é o último a se fundir com a metáfise, no fim da adolescência.
 como: O mesmo fato caiu no TARO 2008, no TARO 2013 e no TARO 2019 com texto quase igual ("o último centro de ossificação a fundir-se"), sempre com capítulo, tróclea, epicôndilo lateral e epicôndilo medial como alternativas, e o epicôndilo medial na última posição.
 armadilha: Epicôndilo lateral: é o último a aparecer, não o último a se fundir; ele se une rapidamente ao côndilo lateral.
@@ -127,7 +127,7 @@ Os outros dois ângulos do AP servem para o alinhamento e o ângulo de carregame
 Ângulos radiográficos do AP do cotovelo: A, ângulo de BAUMANN; B, ângulo úmero-ulnar; C, ângulo metáfiso-diafisário.
 !fim
 
-!questoes central=pediatria-0738 relacionadas=pediatria-0956 treino=pediatria-0964,pediatria-0965
+!questoes central=pediatria-0738 relacionadas=pediatria-0956 treino=pediatria-0988,pediatria-0989
 conceito: BAUMANN é o ângulo entre o eixo do úmero e a fise do côndilo lateral; o úmero-ulnar é a expressão radiográfica mais precisa do ângulo de carregamento; o metáfiso-diafisário usa a linha dos pontos mais largos da metáfise e é o menos preciso.
 como: O TARO 2007 juntou numa só questão os três ângulos do AP e a linha umeral anterior, trocando as linhas de cada um (BAUMANN com a superfície articular, metáfiso-diafisário com a placa epifisária do côndilo lateral). A questão está sem gabarito oficial no acervo; o capítulo sustenta a alternativa do úmero-ulnar como expressão do ângulo de carregamento. O TEPOP 2024 cobrou a linha umeral anterior e o BAUMANN como as medidas para avaliar a fratura supracondiliana.
 armadilha: BAUMANN com a superfície articular: na criança a superfície é cartilagem; a referência é a fise do capítulo.
@@ -160,7 +160,7 @@ armadilha: Metáfiso-diafisário com a fise do côndilo lateral: essa é a linha
 Linhas da radiografia em perfil do úmero distal: A, a gota de lágrima; B, a angulação do côndilo lateral com a diáfise; C, a linha umeral anterior; D, a linha do coronoide.
 !fim
 
-!questoes central=pediatria-0956 relacionadas=pediatria-0738 treino=pediatria-0963
+!questoes central=pediatria-0956 relacionadas=pediatria-0738 treino=pediatria-0987
 conceito: A linha umeral anterior normal cruza o terço médio do capítulo; se passa à frente dele, o úmero distal está angulado para trás. Abaixo dos 4 anos, o terço anterior pode ser normal.
 como: O TEPOP 2024 pôs a linha umeral anterior e o BAUMANN como as ferramentas para avaliar a fratura supracondiliana, entre afirmações sobre nervos e indicação cirúrgica. No TARO 2007, uma das alternativas falsas colocava a linha umeral anterior na porção anterior do centro do côndilo lateral.
 armadilha: Linha na porção anterior do capítulo como normal: só vale para parte dos menores de 4 anos (HERMAN).
@@ -204,7 +204,7 @@ O descolamento transfisário do úmero distal nos muito pequenos (**menos de 2 a
 
 Essas crianças muitas vezes são vítimas de **trauma não acidental** e correm risco não só de consolidação viciosa, mas de agressões mais graves no futuro. O diagnóstico preciso, o tratamento da fratura e a avaliação dos fatores humanos e sociais da lesão são essenciais.
 
-!questoes central=pediatria-0525 treino=pediatria-0968,pediatria-0986
+!questoes central=pediatria-0525 treino=pediatria-0992,pediatria-1010
 conceito: Lactente com cotovelo inchado e rádio e ulna desviados juntos para posteromedial em relação ao úmero: descolamento transfisário do úmero distal, confirmado por ultrassonografia ou ressonância; investigar maus-tratos.
 como: O TARO 2025 trouxe uma criança de 12 meses sem história clara de trauma, sem febre, com edema e pseudoparalisia, e a radiografia do cotovelo; os distratores eram pronação dolorosa, luxação do cotovelo e artrite séptica.
 armadilha: Luxação do cotovelo: é rara no lactente, porque a fise cede antes; e na luxação a cabeça do rádio perde a relação com o capítulo.
@@ -237,7 +237,7 @@ O centro do côndilo lateral se estende para a parte lateral da tróclea, cuja c
 
 Essa dupla origem pode explicar os vários centros de ossificação da tróclea e o seu aspecto fragmentado. Terminado o crescimento, os vasos metafisários e epifisários passam a se anastomosar livremente, e a artéria nutrícia central da diáfise chega às regiões epicondilares.
 
-!questoes central=pediatria-0719 relacionadas=trauma-0191 treino=pediatria-0969
+!questoes central=pediatria-0719 relacionadas=trauma-0191 treino=pediatria-0993
 conceito: Os vasos do côndilo lateral entram por trás, perto do ancôneo, na única área não articular e extracapsular; são terminais, e a dissecção posterior ameaça o fragmento. O vaso lateral da tróclea também é terminal e vulnerável às fraturas da fise ou da metáfise distal.
 como: O TARO 2020 perguntou o que a dissecção extensa posterolateral no acesso à fratura do côndilo lateral aumenta (a questão está sem gabarito oficial no acervo; o capítulo sustenta a osteonecrose). O TEOT 2022 cobrou as fraturas que deixam a deformidade tipo B da osteonecrose da tróclea, um tema que este capítulo explica pela anatomia, mas cuja classificação está nos capítulos de fratura.
 armadilha: Cúbito valgo, cúbito varo ou pseudartrose como consequência da dissecção posterior: são complicações do côndilo lateral, mas a que decorre da lesão dos vasos posteriores é a osteonecrose.
@@ -279,7 +279,7 @@ Os estudos discordam:
 - DONNELLY: fratura em só **17%**; o derrame persistente é que se correlacionou com fratura oculta.
 - AL-AUBAIDI e TORFING: na ressonância de 26 crianças com sinal positivo, só 6 tinham fratura, nenhuma com mudança de tratamento; a maioria (73%) tinha contusão óssea.
 
-!questoes treino=pediatria-0966,pediatria-0967
+!questoes treino=pediatria-0990,pediatria-0991
 conceito: O coxim posterior não aparece no perfil normal a 90 graus porque a fossa do olécrano é profunda; visível, indica derrame. Sem cápsula íntegra (luxação reduzida), o sinal pode faltar.
 como: Ainda não caiu nas provas do acervo; é o sinal indireto mais usado na emergência e tem mecanismo simples, com cara de par 2 por 2.
 armadilha: Coxim anterior visível como sempre anormal: ele aparece normalmente; anormal é quando está levantado.
@@ -300,7 +300,7 @@ A ressalva vem de BAKER e BORLAND: na criança com trauma fechado, movimento nor
 
 Um dado de anatomia do mesmo capítulo completa o quadro da extensão: as fibras longitudinais da **cápsula anterior** são fortes e ficam tensas com o cotovelo estendido. Na hiperextensão, essa cápsula força a ulna contra o úmero e transfere o fulcro da rotação para a ponta do olécrano, na região supracondiliana, um fator importante na gênese da fratura supracondiliana.
 
-!questoes treino=pediatria-0971
+!questoes treino=pediatria-0995
 conceito: A incapacidade de estender totalmente o cotovelo tem sensibilidade de 91% a 97% para fratura; extensão completa torna a fratura improvável, com a ressalva da fratura do olécrano e da reavaliação em 7 a 10 dias.
 como: Ainda não caiu nas provas do acervo; os números do capítulo são fortes e repetidos.
 armadilha: Movimento normal como critério absoluto: BAKER e BORLAND encontraram valor preditivo negativo de só 77%.
@@ -318,7 +318,7 @@ As crianças caem protegendo-se com o braço estendido, e por isso as fraturas d
 
 O capítulo fecha a epidemiologia com uma observação sobre o alinhamento: o ângulo de carregamento de cada criança pode predispor ao tipo de fratura, porque muda a transmissão da força na queda com o braço estendido. Segundo o texto, o **alinhamento em varo** associa-se mais à fratura do **côndilo lateral**, e o **alinhamento em valgo**, à fratura do **colo do rádio**.
 
-!questoes central=pediatria-0521 treino=pediatria-0977
+!questoes central=pediatria-0521 treino=pediatria-1001
 conceito: O ângulo de carregamento individual influencia o tipo de fratura na queda com o braço estendido; para este capítulo, varo favorece o côndilo lateral e valgo favorece o colo do rádio.
 como: O TARO 2026 perguntou o fator de risco para fratura do côndilo lateral em vez da supracondiliana, com obesidade, hipotireoidismo, idade mais precoce e ângulo de carregamento mais valgo como alternativas.
 armadilha: Idade mais precoce: as duas fraturas têm picos de idade parecidos; a supracondiliana tem mediana por volta dos 6 anos.

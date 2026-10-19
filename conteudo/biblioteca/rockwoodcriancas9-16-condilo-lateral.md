@@ -37,7 +37,7 @@ A fratura do côndilo lateral é menos comum que a supracondiliana. Diferente de
 
 **O que favorece o côndilo lateral em vez da supracondiliana.** O capítulo cita a **obesidade** e um **ângulo de carregamento em varo maior** como indicadores de maior probabilidade de fratura do côndilo lateral. A lógica mecânica conversa com o mecanismo de avulsão descrito adiante: o "pull-off" foi reproduzido em cadáver com força em varo (adução do antebraço) e cotovelo estendido. Essa frase do livro diverge de um gabarito recente, como mostra o alerta abaixo.
 
-!questoes central=pediatria-0521 treino=pediatria-0977
+!questoes central=pediatria-0521 treino=pediatria-1001
 conceito: Obesidade e ângulo de carregamento em varo maior são citados no capítulo como indicadores de fratura do côndilo lateral, e não supracondiliana; o côndilo lateral ocorre por volta dos 6 anos, a fise inteira até 2 a 3 anos e o côndilo medial entre 8 e 12.
 como: O TARO 2026 perguntou o fator de risco para fratura do côndilo lateral em detrimento da supracondiliana, com obesidade, hipotireoidismo, idade mais precoce e ângulo de carregamento mais valgo como alternativas.
 armadilha: Idade mais precoce: abaixo de 2 a 3 anos o que predomina é o descolamento de toda a fise distal.
@@ -54,7 +54,7 @@ O traço quase sempre começa na **metáfise posterolateral**, onde há um rasgo
 
 O **extensor radial longo e o extensor radial curto do carpo** continuam inseridos no fragmento distal, assim como os **ligamentos colaterais laterais** do cotovelo. Com desvio grande, as cápsulas anterior e posterior também se rasgam, mas a lesão de partes moles se concentra do lado lateral. Esses músculos são o motor que desloca e roda o fragmento, explicam a dor ao fletir o punho e contribuem para o retardo de consolidação. O braquiorradial, que nasce acima do rasgo, fica no úmero.
 
-!questoes central=pediatria-0610 treino=pediatria-0972
+!questoes central=pediatria-0610 treino=pediatria-0996
 conceito: O extensor radial longo e o curto do carpo e os colaterais laterais permanecem presos ao fragmento distal; o rasgo de partes moles fica entre o extensor radial longo e o braquiorradial.
 como: O TARO 2017 pediu o músculo que se mantém preso ao fragmento distal, com braquiorradial, extensor ulnar do carpo e extensor comum dos dedos como distratores.
 armadilha: Braquiorradial: nasce na crista supracondiliana, acima do rasgo, e fica no fragmento proximal.
@@ -93,7 +93,7 @@ A **incidência oblíqua interna** é a peça central. SONG e colaboradores comp
 
 **Outros exames.** Artrografia, ressonância e, mais recentemente, ultrassom ajudam a identificar as fraturas instáveis na fase aguda e a planejar o tratamento do desvio tardio, do retardo de consolidação e da consolidação viciosa. A ressonância é muito útil, sobretudo no retardo de consolidação, mas costuma exigir sedação na criança pequena; o ultrassom evita a sedação.
 
-!questoes central=pediatria-0696 treino=pediatria-0976
+!questoes central=pediatria-0696 treino=pediatria-1000
 conceito: Na criança de cerca de 6 anos com edema e dor lateral após queda, a fratura do côndilo lateral é a hipótese principal; a oblíqua interna mostra o desvio que o AP esconde (diferença em 75% das crianças) e é recomendada de rotina.
 como: O TEOT 2022 abriu uma série de quatro questões com a radiografia de uma menina de 6 anos e pediu o diagnóstico (côndilo lateral, contra tróclea, capítulo e epicôndilo lateral).
 armadilha: Fratura do capítulo: é rara na criança, típica do adolescente mais velho, e não leva a lasca metafisária.
@@ -117,7 +117,7 @@ A: descolamento total da fise distal do úmero numa criança de 2 anos; o côndi
 
 A figura 16-4 mostra o outro lado da armadilha: uma criança de 10 anos com radiografia de aparente fratura estável do côndilo lateral, em que a ressonância revelou fratura de toda a fise. O ultrassom distingue fraturas ocultas do cotovelo, incluindo o côndilo lateral e as separações transfisárias, sem a sedação da ressonância. O descolamento total da fise é assunto do capítulo 17.
 
-!questoes relacionadas=pediatria-0525 treino=pediatria-0968
+!questoes relacionadas=pediatria-0525 treino=pediatria-0992
 conceito: No descolamento total da fise distal, o núcleo do capítulo continua alinhado com o rádio e o antebraço desvia para posteromedial; na fratura do côndilo lateral, essa relação se perde e o desvio tende a ser lateral.
 como: O TARO 2025 mostrou a radiografia de um lactente de 12 meses, sem história clara de trauma e sem febre, com edema e pseudoparalisia, e pediu o diagnóstico (fratura fisária do úmero distal, contra pronação dolorosa, luxação e artrite séptica).
 armadilha: Luxação do cotovelo: na criança pequena, o desvio posteromedial do antebraço com o capítulo alinhado ao rádio é o descolamento da fise, não a luxação.
@@ -169,7 +169,7 @@ WEISS modificou a ideia de JAKOB juntando o desvio e a integridade da **dobradi�
 
 Na série de 158 fraturas tipos II e III, todas as tipo II tinham **menos de 4 mm** de desvio inicial e todas as tipo III, **mais de 4 mm**. A classificação prevê complicações: o tipo III teve **três vezes mais** complicações que o tipo II.
 
-!questoes treino=pediatria-0974
+!questoes treino=pediatria-0998
 conceito: WEISS I tem menos de 2 mm; II, mais de 2 mm com dobradiça cartilaginosa íntegra (sempre menos de 4 mm na série); III, mais de 2 mm com dobradiça rompida (mais de 4 mm e três vezes mais complicações).
 como: Não há questão de TEOT ou TARO sobre WEISS no acervo; a banca já usou JAKOB (TEOT 2022) e SONG (TEPOP 2024) para classificar o desvio.
 !fim
@@ -190,7 +190,7 @@ SONG propôs cinco estágios baseados na estabilidade, para refinar a indicaçã
 
 A tabela de **FINNBOGASON** (tabela 16-1) diz o mesmo para as fraturas sem desvio ou com desvio mínimo imobilizadas em gesso: **grupo A** (sem afastamento ou com afastamento pequeno na face radial ou radiodorsal, traço que não chega à cartilagem epifisária) é estável, com risco de desvio de 0; **grupo B** (o mesmo, mas com o traço visível até a cartilagem) tem risco indefinido (razão de risco de 0,17); **grupo C** (afastamento medial tão largo, ou quase, quanto o lateral) tem risco alto (0,42).
 
-!questoes central=pediatria-0942 treino=pediatria-0975
+!questoes central=pediatria-0942 treino=pediatria-0999
 conceito: SONG 1 a 3 têm até 2 mm (estável, indeterminado e instável, conforme o traço e o afastamento); 4 tem mais de 2 mm sem rotação; 5, mais de 2 mm com rotação.
 como: O TEPOP 2024 pediu o estágio de SONG da fratura instável com desvio maior que 2 mm sem rotação do fragmento (4, contra 2, 3 e 5).
 armadilha: Estágio 3: também é instável, mas tem até 2 mm; o que o define é o afastamento medial tão largo quanto o lateral.
@@ -221,7 +221,7 @@ Os passos-chave: estar sempre pronto para a redução aberta; anestesia geral co
 
 Os resultados sustentam a técnica. Numa comparação de fraturas com mais de 2 mm, a via percutânea teve menos tempo de sala e **menos complicações (13% contra 26%)**, com o mesmo tempo de consolidação. SONG obteve bons resultados em 46 de 63 fraturas instáveis, 53 delas tratadas com redução fechada; os três elementos essenciais foram interpretar bem o desvio (sobretudo posterolateral), conferir a redução em AP e **oblíqua interna** e mantê-la com **dois fios lisos paralelos**. Em fraturas JAKOB III, a manipulação percutânea teve sucesso em 75%, mas a técnica é difícil e não foi reproduzida em outro centro.
 
-!questoes central=pediatria-0698 treino=pediatria-0979
+!questoes central=pediatria-0698 treino=pediatria-1003
 conceito: Fratura completamente desviada e rodada (JAKOB III) pede redução aberta e fixação; a redução fechada, quando possível, é feita em extensão, supinação e estresse em varo, com punho estendido, e mantida com fios lisos divergentes.
 como: O TEOT 2022, na série da menina de 6 anos com fragmento rodado, pediu o tratamento mais indicado (redução cruenta e fixação, contra imobilização, redução incruenta com gesso e redução incruenta com fixação percutânea).
 armadilha: Redução incruenta e gesso: o capítulo não recomenda a redução fechada sem fixação na fratura desviada, porque ela não se mantém.
@@ -242,7 +242,7 @@ Os passos que caem:
 
 **Por que a face posterior é proibida.** Só uma pequena parte do côndilo lateral é extra-articular, e os vasos que nutrem a epífise penetram numa **pequena área posterior, não articular**. A dissecção posterior corta essa porta de entrada e causa **osteonecrose**. A tabela de armadilhas do capítulo põe, ao lado da necrose do capítulo, a prevenção: evitar toda dissecção posterior do fragmento desviado.
 
-!questoes central=pediatria-0655 relacionadas=pediatria-0719 treino=pediatria-0969,pediatria-0973
+!questoes central=pediatria-0655 relacionadas=pediatria-0719 treino=pediatria-0993,pediatria-0997
 conceito: Na redução aberta, a dissecção posterior é evitada porque os vasos da epífise do côndilo entram por uma pequena área posterior não articular; dissecá-la causa osteonecrose. A redução é julgada na superfície articular, porque a cortical lateral tem deformação plástica.
 como: O TARO 2011 perguntou qual dissecção evitar no acesso (posterior, contra distal, medial e anterior). O TARO 2020, sem gabarito no acervo, perguntou o que a dissecção posterolateral extensa aumenta (osteonecrose, contra cúbito varo, cúbito valgo e pseudartrose).
 armadilha: Dissecção anterior: é justamente a recomendada; a via de KOCHER mantém a dissecção anterior para ver a articulação.
@@ -253,7 +253,7 @@ armadilha: Pseudartrose: pode acompanhar a necrose da metáfise, mas a consequê
 
 **Fios lisos** são o método mais usado. Atravessar a fise com fio liso **não causa distúrbio de crescimento**: a área do fio é pequena perto da área da fise e só **20%** do crescimento do úmero vem da fise distal. O risco de parada de crescimento com o parafuso transfisário também é muito baixo, pelas mesmas razões. Fios **enterrados** têm mais migração, implante sintomático e protrusão pela pele (até 40%), com infecção tardia e custo maior; fios **expostos** têm infecção inicial semelhante ou um pouco maior. O capítulo prefere deixá-los fora da pele, retirados no consultório.
 
-!questoes relacionadas=pediatria-0614 treino=pediatria-0978
+!questoes relacionadas=pediatria-0614 treino=pediatria-1002
 conceito: Fio liso atravessando a fise não causa distúrbio de crescimento (só 20% do crescimento do úmero vem da fise distal); fios enterrados têm menos infecção superficial, mas mais migração e protrusão (até 40%), e os autores deixam os fios fora da pele.
 como: O TARO 2017 cobrou as porcentagens de crescimento das fises proximal e distal do úmero (80% e 20%), o número que explica por que o fio liso não lesa a fise distal. Não há questão de prova sobre fios enterrados contra expostos no acervo.
 armadilha: Dar à fise distal do úmero uma fatia grande do crescimento (30% ou 40%): o capítulo diz 20%, e é por isso que a parada fisária completa raramente deforma.
@@ -301,7 +301,7 @@ Há **dois tipos de deformidade em rabo de peixe**:
 - O **mais comum**, em **cunha de ângulo agudo**, atribuído à persistência de um espaço entre o núcleo do côndilo lateral e a ossificação medial da tróclea; a crista lateral da tróclea fica pouco desenvolvida, como uma pequena barra óssea. É ao mesmo tempo consolidação viciosa articular e pequeno distúrbio de crescimento. A maioria dos autores não encontrou grande déficit funcional; desbridamento artroscópico do retalho articular foi usado nos sintomáticos.
 - O segundo, uma **curva mais suave e arredondada**, associado à **osteonecrose** ou a uma parada maior da parte lateral da crista medial da tróclea.
 
-!questoes central=pediatria-0699 relacionadas=pediatria-0768,pediatria-0927,trauma-0191 treino=pediatria-0980,pediatria-0994
+!questoes central=pediatria-0699 relacionadas=pediatria-0768,pediatria-0927,trauma-0191 treino=pediatria-1004,pediatria-1018
 conceito: Após a fratura do côndilo lateral consolidada, a sequela mais comum é o esporão lateral (cerca de 75%, liso após gesso e irregular após cirurgia), e a deformidade angular mais frequente é o cúbito varo (até 40%); o valgo é raro sem pseudartrose; o rabo de peixe agudo vem do espaço entre o capítulo e a tróclea, o arredondado da necrose.
 como: O TEOT 2022, na série da menina de 6 anos, mostrou a radiografia do seguimento e pediu a complicação apresentada (esporão lateral, contra osteonecrose, fechamento fisário e rabo de peixe). O TARO 2009, sem gabarito no acervo, perguntou a deformidade mais frequente na consolidação viciosa (cúbito valgo, cúbito varo, rabo de peixe ou hiperextensão). Uma prova da SBOT-SP, também sem gabarito, mostrou uma radiografia do úmero distal com falha central em cunha, compatível com rabo de peixe, e perguntou a fratura a que a lesão se associa (o capítulo liga a forma aguda ao côndilo lateral). O TEOT 2022 perguntou de que fraturas é sequela a deformidade tipo B por necrose da tróclea.
 armadilha: Cúbito valgo como deformidade mais frequente da fratura consolidada: é o da pseudartrose; na fratura que consolida, predomina o varo.
@@ -344,7 +344,7 @@ A **sequela mais comum da pseudartrose com desvio é o cúbito valgo progressivo
 
 As lesões nervosas agudas são raras: um caso de paralisia transitória do radial após o trauma e dois casos de lesão do interósseo posterior após redução aberta, ambos com recuperação espontânea.
 
-!questoes central=pediatria-0710 relacionadas=pediatria-0832 treino=pediatria-0981
+!questoes central=pediatria-0710 relacionadas=pediatria-0832 treino=pediatria-1005
 conceito: A pseudartrose desviada do côndilo lateral migra para proximal e lateral e leva ao cúbito valgo progressivo; o estiramento do ulnar causa a paralisia tardia, com déficit motor antes do sensitivo, anos ou décadas depois; os autores preferem a transposição anterior subcutânea.
 como: O TEOT 2023 pediu a complicação da fratura do côndilo umeral relacionada à neuropatia tardia do ulnar (pseudartrose, contra osteonecrose da tróclea, esporão lateral e rabo de peixe). O TARO 2006, sem gabarito no acervo, afirmou que o cúbito valgo progressivo é a sequela mais comum da pseudartrose; o capítulo sustenta a afirmação.
 armadilha: Esporão lateral: é a sequela mais comum da fratura consolidada, mas não estira o ulnar; o ulnar tardio depende do valgo da pseudartrose ou da consolidação viciosa.
@@ -372,7 +372,7 @@ E separam três situações:
 
 Outros caminhos citados: SHIMADA recomenda a osteossíntese da pseudartrose na criança, com **enxerto essencial**, porque a união é fácil, o movimento se mantém e o ulnar fica protegido; TIEN faz fixação in situ com osteotomia supracondiliana em cúpula por incisão posterior única, para pseudartrose pouco desviada com **valgo de 20 graus ou mais**, contraindicada quando há grande desvio e rotação; para a pseudartrose tardia desviada, descreve-se o tratamento em dois tempos (transposição do ulnar, enxerto e fixação in situ; depois osteotomia do úmero distal).
 
-!questoes central=pediatria-0671 treino=pediatria-0982
+!questoes central=pediatria-0671 treino=pediatria-1006
 conceito: Pelos critérios de FLYNN, a pseudartrose estabelecida do côndilo lateral é fixada quando há grande fragmento metafisário, desvio menor que 1 cm da superfície articular e fise aberta, com parafuso e enxerto extra-articular, sem dissecção posterior.
 como: O TARO 2013 pediu o critério de FLYNN para a fixação da pseudartrose (grande fragmento metafisário, contra degrau articular, cúbito valgo com paralisia do ulnar e diástase maior que 1 cm).
 armadilha: Diástase maior que 1 cm: é o oposto do critério; FLYNN fixa quando o desvio é menor que 1 cm.
@@ -412,7 +412,7 @@ O edema costuma ser pequeno e o fragmento **bloqueia a flexão**. O fragmento gr
 
 **Complicação principal: osteonecrose**, que só ocorre quando o fragmento é **mantido**. A artrose pós-traumática pode ocorrer com o fragmento mantido ou excisado. Muitos perdem algum movimento, com ou sem cirurgia, nem sempre com importância funcional; os pais devem ser avisados antes.
 
-!questoes central=trauma-0812 relacionadas=trauma-1122,trauma-0987,trauma-1132 treino=pediatria-0983
+!questoes central=trauma-0812 relacionadas=trauma-1122,trauma-0987,trauma-1132 treino=pediatria-1007
 conceito: A fratura do capítulo é do adolescente; HAHN-STEINTHAL, a mais comum, leva osso esponjoso e pode ser reinserida com parafusos; KOCHER-LORENZ é quase só cartilagem; a complicação principal é a osteonecrose do fragmento mantido.
 como: O TARO 2012 e o TARO 2007 (este sem gabarito no acervo) pediram a complicação mais frequente do tratamento da fratura do capítulo, com necrose avascular, pseudartrose, limitação articular e instabilidade entre as opções. O TARO 2026 cobrou, em fratura do adulto, a classificação de BRYAN e MORREY, que tem HAHN-STEINTHAL e KOCHER-LORENZ como tipos I e II. O TARO 2008, sem gabarito, perguntou a fratura do capítulo na classificação AO.
 armadilha: Limitação articular: é frequente e os pais devem ser avisados, mas o capítulo chama a osteonecrose de complicação principal.

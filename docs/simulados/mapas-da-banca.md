@@ -3213,8 +3213,8 @@ diáfise-côndilo de 40 graus; LHCA de 51 graus; TRASH em menores de 10 anos; te
 confundido com a tróclea (figura 12-5); radiografia comparativa sem ganho (KISSOON); tomografia multidetector
 sem sedação.
 
-**Aproveitamento do capítulo 12** (Evaluation of the Injured Pediatric Elbow; Waters): `pediatria-0960` a
-`pediatria-0971`, 12 questões, sem figura, um caso clínico curto, gabarito A3/B3/C3/D3, mediana do comentário
+**Aproveitamento do capítulo 12** (Evaluation of the Injured Pediatric Elbow; Waters): `pediatria-0984` a
+`pediatria-0995`, 12 questões, sem figura, um caso clínico curto, gabarito A3/B3/C3/D3, mediana do comentário
 de 3,9 mil caracteres, todos com "Por que esta questão foi criada".
 - **Gêmeas:** segundo centro a aparecer (TECOC sem ano e TARO 2012); bloco epifisário comum sem o epicôndilo
   medial (TARO 2008, 2013 e 2019); linha umeral anterior no terço médio e angulação posterior (TARO 2007, TEPOP
@@ -3267,7 +3267,7 @@ ulnar; parada do crescimento rara.
 fraturas na criança" (o acervo não tem subtema próprio para a fratura em T). Entram no filtro TEOT/TARO.
 
 **Aproveitamento do capítulo 14** (T-Condylar Fractures of the Distal Humerus; Vuillermin e Waters):
-`pediatria-0996` a `pediatria-1007`, 12 questões, sem figura e sem caso clínico, gabarito A3/B3/C3/D3,
+`pediatria-1020` a `pediatria-1031`, 12 questões, sem figura e sem caso clínico, gabarito A3/B3/C3/D3,
 mediana do comentário de 4.340 caracteres, cada uma com "Por que esta questão foi criada".
 - **Gêmeas por projeção:** mecanismo e posição dos fragmentos (TARO 2015 e TARO 2010); THURSTON-HOLLAND
   pelo lado do diagnóstico diferencial (CET-PR, ENARE R4 2023); BRYAN-MORREY pela escala de vias e pela
@@ -3340,7 +3340,7 @@ no lugar da consolidação viciosa, arteriografia e exploração no lugar da red
 remodelação também em "Ossificação e crescimento"). Entram no filtro TEOT/TARO.
 
 **Aproveitamento do capítulo 13** (Supracondylar Fractures of the Distal Humerus; Skaggs e Flynn;
-Rockwood and Wilkins' Fractures in Children, 9ª ed.): `pediatria-1008` a `pediatria-1021`, 14 questões
+Rockwood and Wilkins' Fractures in Children, 9ª ed.): `pediatria-1032` a `pediatria-1045`, 14 questões
 sem figura e sem caso clínico, gabarito A3/B3/C4/D4, mediana do comentário de 4.288 caracteres, cada
 uma fechada com "Por que esta questão foi criada".
 - **Gêmeas:** posterolateral com mediano e artéria (espelho do TARO 2014 e 2019); periósteo íntegro e
@@ -3385,7 +3385,7 @@ relação radiocapitelar, tipo fisário com deformidade), caso clínico só no l
 o capítulo 17 também descreve neuropatia ulnar tardia em crianças com osteonecrose da tróclea; a
 alternativa B tem apoio no livro, embora a pseudartrose do côndilo lateral seja a causa clássica.
 
-**Aproveitamento do capítulo 17:** `pediatria-0984` a `pediatria-0995`, 12 questões, sem figura e sem
+**Aproveitamento do capítulo 17:** `pediatria-1008` a `pediatria-1019`, 12 questões, sem figura e sem
 caso clínico, gabarito A3/B3/C3/D3, mediana do comentário perto de 4,4 mil caracteres, todas com "Por que
 esta questão foi criada".
 - **Gêmeas:** rotação do fragmento medial pelos flexores (espelho do TARO 2017), maus-tratos e
@@ -3396,9 +3396,9 @@ esta questão foi criada".
   (TARO 2014, 2019, TEOT 2021).
 - **Lacunas:** DELEE grupo C; diagnóstico tardio após 5 a 6 dias (tala e osteotomia depois);
   epicôndilo lateral só operado se encarcerado.
-- **Fronteira com os capítulos feitos em paralelo:** o cap. 12 (`pediatria-0968`) já pergunta desvio
-  posteromedial e ultrassonografia, e o cap. 16 (`pediatria-0978`) a relação capítulo e rádio contra o
-  côndilo lateral; por isso os ids `0984` e `0987` tiveram o conteúdo trocado antes da publicação (rotação
+- **Fronteira com os capítulos feitos em paralelo:** o cap. 12 (`pediatria-0992`) já pergunta desvio
+  posteromedial e ultrassonografia, e o cap. 16 (`pediatria-1002`) a relação capítulo e rádio contra o
+  côndilo lateral; por isso os ids `1008` e `1011` tiveram o conteúdo trocado antes da publicação (rotação
   do côndilo medial e lesão neurovascular rara). Lição: em capítulos vizinhos aplicados juntos, rodar
   o registro de novo antes de aplicar e trocar o próprio conteúdo quando surgir gêmea.
 
@@ -3452,11 +3452,11 @@ pronação dolorosa: 2 a 3 anos, meninas, esquerdo, borda estreita e arredondada
 (98% contra 86%), ultrassom (3 mm de diferença); luxação divergente e translocação radioulnar; congênita: cabeça em
 cúpula e radiografia contralateral idêntica.
 
-**Aproveitamento do capítulo 15:** `pediatria-1022` a `pediatria-1032`, 11 questões, sem figura, um caso curto
+**Aproveitamento do capítulo 15:** `pediatria-1046` a `pediatria-1056`, 11 questões, sem figura, um caso curto
 (pulso ausente), gabarito A3/B2/C3/D3, mediana do comentário de cerca de 4,8 mil caracteres, cada um fechado com "Por
 que esta questão foi criada". Lição: os agentes dos caps. 12 e 17 fizeram em paralelo o epicôndilo encarcerado
-confundido com a tróclea (`pediatria-0970`), o coxim ausente na luxação reduzida (`0967`) e o côndilo medial contra o
-epicôndilo (`0991`); as versões deste capítulo sobre esses pontos foram trocadas antes de aplicar (pulso ausente e
+confundido com a tróclea (`pediatria-0994`), o coxim ausente na luxação reduzida (`0991`) e o côndilo medial contra o
+epicôndilo (`1015`); as versões deste capítulo sobre esses pontos foram trocadas antes de aplicar (pulso ausente e
 técnica por idade), para não criar gêmeas internas.
 
 ## Fratura do côndilo lateral e do capítulo na criança (Rockwood and Wilkins, 9ª ed., cap. 16)
@@ -3509,13 +3509,13 @@ varo até 40%; dois tipos de rabo de peixe; pseudartrose com 12 semanas; ulnar t
 transposição anterior subcutânea; FLYNN com desvio menor que 1 cm; TIEN com valgo de 20 graus; capítulo com 31% de
 lesão do rádio proximal e classificação de MURTHY.
 
-**Aproveitamento do capítulo 16:** `pediatria-0972` a `pediatria-0983`, 12 questões, sem figura e sem caso clínico,
+**Aproveitamento do capítulo 16:** `pediatria-0996` a `pediatria-1007`, 12 questões, sem figura e sem caso clínico,
 gabarito A3/B3/C3/D3, mediana do comentário de cerca de 4,2 mil caracteres, cada um fechado com "Por que esta questão
 foi criada". Gêmeas: extensores radiais no fragmento (TARO 2017), SONG estágio 2 (TEPOP 2024), fator associado ao
 côndilo lateral pelo livro (TARO 2026, com a divergência explicada), cúbito varo (TARO 2009), ulnar tardio (TEOT 2023 e
 TARO 2006), FLYNN pelo 1 cm (TARO 2013), HAHN-STEINTHAL (TARO 2026 e a necrose do TARO 2007 e 2012). Lacunas: WEISS,
 oblíqua interna, posição de redução fechada, deformação plástica da cortical lateral, fios enterrados.
-Lição: o agente do cap. 12 aplicou em paralelo os vasos do côndilo lateral (`pediatria-0969`) e o desvio posteromedial
-do descolamento fisário (`0968`); as versões deste capítulo sobre esses pontos (`0973` e `0978`) foram trocadas depois de
+Lição: o agente do cap. 12 aplicou em paralelo os vasos do côndilo lateral (`pediatria-0993`) e o desvio posteromedial
+do descolamento fisário (`0992`); as versões deste capítulo sobre esses pontos (`0997` e `1002`) foram trocadas depois de
 aplicadas, no próprio id, pela deformação plástica da cortical lateral e pelos fios enterrados contra expostos.
 Destino: tema Ortopedia pediátrica, subtema "Côndilo lateral, epicôndilo medial e rádio proximal na criança".

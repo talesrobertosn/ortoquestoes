@@ -35,7 +35,7 @@ As fraturas em T e em Y são **raras no esqueleto imaturo** e muitas vezes são 
 
 Na criança pequena, a incidência é baixa, mas provavelmente **subestimada**: a fratura é confundida com a do **côndilo lateral** ou com o **descolamento total da fise distal do úmero**, e só exames especiais (artrografia, RM) mostram o componente intercondiliano. O capítulo atribui os maus resultados dessa lesão rara a duas falhas: não reconhecer a natureza complexa da fratura e não tratá-la de forma abrangente.
 
-!questoes treino=pediatria-0997
+!questoes treino=pediatria-1021
 conceito: A fratura em T no esqueleto imaturo é do adolescente (média de 12,8 anos nas séries pediátricas), acomete o lado não dominante cerca de 2,5 vezes mais e se comporta como a fratura do adulto.
 armadilha: Pré-escolar: é a faixa da supracondiliana em extensão; na criança pequena a fratura em T é exceção e passa despercebida.
 !fim
@@ -59,7 +59,7 @@ O mecanismo em flexão ajuda a explicar a **raridade** da fratura na criança: a
 Padrões de mecanismo. A e B: o padrão em flexão, mais comum, com os fragmentos condilares à frente da diáfise distal. C e D: o padrão em extensão, com os fragmentos atrás da diáfise. As origens musculares nos côndilos fazem os fragmentos divergirem no plano coronal e fletirem no plano sagital.
 !fim
 
-!questoes treino=pediatria-0996
+!questoes treino=pediatria-1020
 conceito: No tipo em flexão, o mais comum, a queda sobre o cotovelo fletido faz a incisura troclear partir a tróclea e os côndilos ficam anteriores à diáfise; no tipo em extensão, ficam posteriores.
 armadilha: Extensão como o mais comum: é o mecanismo da supracondiliana; na fratura em T predomina a flexão.
 !fim
@@ -121,7 +121,7 @@ O diagnóstico tem de excluir os padrões comuns: a fratura **isolada do côndil
 
 O fragmento de THURSTON-HOLLAND não exclui a fratura em T: na figura 14-3, uma fratura em T sem desvio de uma criança de 6 anos tinha fragmentos de THURSTON-HOLLAND medial e lateral, e o traço intercondiliano só foi percebido depois de consolidado.
 
-!questoes relacionadas=pediatria-0909,pediatria-0921 treino=pediatria-0998
+!questoes relacionadas=pediatria-0909,pediatria-0921 treino=pediatria-1022
 conceito: O fragmento metafisário de THURSTON-HOLLAND aponta para fratura isolada de um côndilo ou descolamento fisário; a chave da fratura em T é o traço vertical que chega ao ápice da tróclea.
 como: O ENARE R4 2023 perguntou o tipo de Salter-Harris de uma fratura do rádio distal com fragmento de THURSTON-HOLLAND (tipo II); o CET-PR trouxe o mesmo fragmento numa questão de Salter-Harris em que a alternativa que o chamava de epifisário não era a resposta (o gabarito foi a redução aberta do tipo III desviado). O capítulo usa o sinal no diagnóstico diferencial da fratura em T.
 armadilha: Achar que o THURSTON-HOLLAND caracteriza a fratura em T: ele fala a favor das fraturas condilares e do descolamento fisário, e pode coexistir com a fratura em T.
@@ -137,7 +137,7 @@ Com suspeita depois de uma análise cuidadosa das radiografias, confirma-se com:
 
 A **artrografia intraoperatória** distingue os traços e mostra a qualidade da redução articular. É simples, tem baixa morbidade e pode mudar o tratamento e o resultado, por isso deve fazer parte da avaliação de uma lesão suspeita na criança pequena. Para saber se a superfície articular está íntegra, o capítulo lista artrografia, **ultrassonografia** e RM.
 
-!questoes treino=pediatria-0999
+!questoes treino=pediatria-1023
 conceito: Para confirmar a fratura em T após as radiografias: TC no adolescente (planejamento) e RM na criança pequena (cartilagem articular); estresse sob anestesia e artrografia são alternativas.
 armadilha: TC na criança pequena: não mostra a cartilagem, que é o que decide o diagnóstico.
 !fim
@@ -170,7 +170,7 @@ TONIOLO e WILKINS propuseram uma classificação simples para a fratura em T ped
 
 A ruptura da superfície articular ficou fora da classificação porque é rara na criança. Mesmo assim, o capítulo diz que é **imperativo** conhecer o alinhamento articular antes e depois do tratamento. Os autores usam TONIOLO e WILKINS na **criança pequena**, para dosar a agressividade do tratamento.
 
-!questoes treino=pediatria-1000
+!questoes treino=pediatria-1024
 conceito: TONIOLO e WILKINS: tipo I sem desvio ou desvio mínimo, tipo II desviada sem cominuição metafisária, tipo III desviada com cominuição metafisária; a ruptura articular não é critério.
 armadilha: Ruptura da cartilagem articular como critério: foi deixada de fora por ser rara na criança.
 !fim
@@ -183,7 +183,7 @@ A partir dos **12 anos**, classificação e tratamento seguem o adulto. As fratu
 Classificação AO das fraturas do úmero distal: extra-articulares, articulares parciais e articulares completas; o tratamento pode ser ajustado a partir da classificação.
 !fim
 
-!questoes relacionadas=trauma-1132 treino=pediatria-1001
+!questoes relacionadas=trauma-1132 treino=pediatria-1025
 conceito: Na AO, a fratura em T é articular completa (grupo C); no adolescente, quase sempre C1 e C2, com C3 rara; as fraturas de um côndilo só e de cisalhamento coronal são articulares parciais (grupo B).
 como: O TARO 2008 perguntou em que tipo AO fica a fratura do capítulo, com C1, B1, B2 e B3 como alternativas, para separar fratura articular parcial de completa.
 armadilha: Colocar a fratura em T no grupo B: no grupo B uma parte da superfície articular continua presa à diáfise; na fratura em T, nenhuma.
@@ -218,7 +218,7 @@ Como a lesão é rara, as recomendações vêm de casos isolados, pequenas séri
 
 O corte aos **8 anos** vem do periósteo: abaixo dessa idade ele é espesso, costuma estar íntegro e dá estabilidade, e a fratura pode ser só uma dobradiça periosteal com pouco desvio intercondiliano.
 
-!questoes treino=pediatria-1005
+!questoes treino=pediatria-1029
 conceito: No algoritmo dos autores, a fratura com desvio mínimo vai para gesso ou fios percutâneos abaixo de 8 anos e para redução fechada com parafusos canulados percutâneos acima de 8 anos; com desvio grande, acima de 8 anos, placas ortogonais.
 armadilha: Placas ortogonais para o desvio mínimo do mais velho: se a redução articular percutânea for anatômica, os parafusos canulados bastam.
 !fim
@@ -296,7 +296,7 @@ Todas as vias usam a mesma pele: incisão posterior longa e curvilínea, que pas
 
 **O que dizem as séries.** RE e colaboradores encontraram mais extensão com BRYAN-MORREY e com a osteotomia do que com a divisão do tríceps; REMIA, em nove fraturas em T operadas por BRYAN-MORREY, não encontrou diferença significativa de função ou movimento em relação à divisão.
 
-!questoes relacionadas=trauma-0211 treino=pediatria-1002,pediatria-1003
+!questoes relacionadas=trauma-0211 treino=pediatria-1026,pediatria-1027
 conceito: No adolescente, os autores usam a divisão do tríceps na C1, BRYAN-MORREY na C2 e reservam a osteotomia do olécrano para a C3 cominuta; BRYAN-MORREY é contraindicada na fratura exposta, em que o tríceps pode estar desvascularizado.
 como: O TEOT 2021 cobrou a indicação da via de BRYAN-MORREY no úmero distal do adulto, com fratura coronal do capítulo, osteotomia prévia do olécrano e lesão prévia do tríceps como distratores; a resposta foi a artroplastia total do cotovelo.
 armadilha: Osteotomia do olécrano como via de rotina do adolescente: é reservada para a C3, rara nessa idade.
@@ -329,7 +329,7 @@ Qualquer que seja a via, é **obrigatório ver toda a redução articular**. E *
 Sequência da reconstrução do úmero distal: primeiro os fragmentos articulares são reunidos com fios provisórios e depois com parafuso; fios fixam provisoriamente o úmero distal; uma placa um terço de tubo vai no lado medial e uma placa de reconstrução pélvica de 3,5 mm na borda posterolateral.
 !fim
 
-!questoes treino=pediatria-1004
+!questoes treino=pediatria-1028
 conceito: O primeiro passo é reconstruir a superfície articular com um parafuso transverso de compressão pelo eixo de rotação, convertendo a fratura em T numa supracondiliana; só depois se fixam as colunas.
 armadilha: Fixar uma coluna primeiro: prende o côndilo na posição errada e deixa degrau na tróclea.
 !fim
@@ -344,7 +344,7 @@ O que decide entre fios e placas é **a importância do movimento precoce**. Na 
 - o melhor é pôr as placas **a 90 graus uma da outra**, para uma montagem mais estável (figura 14-12: parafuso transcondilar e duas placas de reconstrução pélvica a 90 graus num menino de 16 anos);
 - as placas próprias do úmero distal do adulto muitas vezes não cabem ou ficam proeminentes na criança; no adolescente grande e maduro, podem ser usadas, com possível retirada depois.
 
-!questoes treino=pediatria-1007
+!questoes treino=pediatria-1031
 conceito: No adolescente, as colunas são fixadas com placas fortes, em geral de reconstrução pélvica, colocadas a 90 graus uma da outra; semitubulares finas podem quebrar.
 armadilha: Placa semitubular fina: é a placa que o capítulo diz poder falhar.
 !fim
@@ -404,7 +404,7 @@ Como o paciente é mais velho, **pouca remodelação** de uma consolidação vic
 
 Embora os relatos antigos não citassem complicações neurovasculares, o capítulo estima uma incidência parecida com a da supracondiliana, e um estudo recente documentou **16% de lesão neurológica pré-operatória** em adolescentes com essas fraturas, **predominantemente do nervo ulnar**, mas também do radial e do mediano. O ulnar é também o **mais em risco na cirurgia**, tanto na exposição dos fragmentos quanto na fixação, e lesões durante a fixação já foram documentadas. A **transposição do ulnar** deve ser considerada quando há **instabilidade do nervo na flexo-extensão** ou **risco de impacto do material** sobre ele; no fim da cirurgia, examina-se o nervo em flexão e extensão para garantir que a placa não o irrita.
 
-!questoes central=trauma-0267 relacionadas=trauma-1064 treino=pediatria-1006
+!questoes central=trauma-0267 relacionadas=trauma-1064 treino=pediatria-1030
 conceito: Rigidez é esperada qualquer que seja o tratamento; o nervo ulnar é o mais acometido pela fratura (16% de lesão neurológica pré-operatória em adolescentes, sobretudo ulnar) e o mais em risco na cirurgia.
 como: Uma prova sem ano (TEOT/TARO) perguntou a complicação neurológica mais comum do tratamento cirúrgico da fratura do úmero distal: neuropatia ulnar, contra mediano, musculocutâneo e interósseo posterior. O TARO 2022 perguntou quando a transposição anterior do ulnar estaria indicada de rotina após fixação com placas.
 armadilha: Parada do crescimento como complicação esperada: a fratura em T acontece no fim do crescimento, e o capítulo diz que ela não tem sido importante.

@@ -56,7 +56,7 @@ armadilha: Posterior e lateral: o desvio lateral existe e é o que põe em risco
 armadilha: No TEPOP 2024, as alternativas que dizem que o desvio posterolateral ameaça o ulnar e o posteromedial ameaça o mediano trocam os lados; o certo era a frase sobre a linha umeral anterior e o ângulo de BAUMANN.
 !fim
 
-!questoes central=pediatria-0691,pediatria-0639 relacionadas=trauma-1222,trauma-1217 treino=pediatria-1008
+!questoes central=pediatria-0691,pediatria-0639 relacionadas=trauma-1222,trauma-1217 treino=pediatria-1032
 conceito: A espícula proximal sai para o lado oposto ao do fragmento distal: desvio posteromedial ameaça o nervo radial; desvio posterolateral ameaça o mediano (interósseo anterior) e a artéria braquial.
 como: O TARO 2014 perguntou o nervo do desvio posteromedial (radial) e o TARO 2019, o mecanismo da lesão do interósseo anterior (extensão com desvio posterolateral, contra flexão e contra o desvio posteromedial). A prova R4 da SES-DF de 2022 julgou certo que o hematoma anterior e o desvio posterolateral alertam para lesão vascular e errado que o desvio posteromedial lesa o ulnar.
 armadilha: Nervo ulnar no desvio posteromedial: o ulnar é o nervo da fratura em flexão e da lesão iatrogênica pelo fio medial, não do desvio em extensão.
@@ -152,7 +152,7 @@ A classificação de **GARTLAND modificada** é a mais aceita e usada, com menos
 
 É a armadilha do capítulo: o perfil pode parecer bom (figura 13-24) e levar a tratar como tipo I, mas o **colapso da coluna medial** significa rotação no plano frontal (portanto, pelo menos tipo II), **perda do BAUMANN** e **varo**. Precisa de **redução e, em geral, fixação**. De Boeck: nenhuma de seis operadas teve cúbito varo, contra **4 de 7 (57%)** tratadas sem cirurgia. A redução exige **força em valgo importante com o cotovelo estendido**, às vezes tanta que se teme outra fratura; fios laterais bem colocados seguram. Bahk mostrou mais consolidação viciosa quando o traço tem obliquidade maior que 10 graus no plano coronal ou 20 graus no sagital.
 
-!questoes treino=pediatria-1018,pediatria-1021
+!questoes treino=pediatria-1042,pediatria-1045
 conceito: GARTLAND IV é a fratura instável em flexão e em extensão (sem dobradiça periosteal); a cominuição medial derruba o BAUMANN e leva ao varo, e precisa de redução e fixação mesmo com o perfil bom.
 como: A banca usa GARTLAND quase só como cenário (tipo III, sem pulso, com VOLKMANN, no cotovelo flutuante). O tipo IV e a cominuição medial ainda não caíram e têm cara de prova.
 armadilha: Cominuição medial com perfil normal tratada com gesso: 57% de cúbito varo na série de De Boeck.
@@ -232,7 +232,7 @@ Flexão com pronação tensiona o periósteo medial e posterior e corrige o varo
 Periósteo roto do lado lateral numa fratura supracondiliana com desvio posteromedial.
 !fim
 
-!questoes central=pediatria-0592,pediatria-0914,pediatria-0722 treino=pediatria-1009
+!questoes central=pediatria-0592,pediatria-0914,pediatria-0722 treino=pediatria-1033
 conceito: O periósteo rompe do lado da espícula e sobra do lado do desvio: posteromedial tem o lateral roto e reduz com flexão e pronação; posterolateral tem o medial roto e reduz com flexão e supinação.
 como: O TARO 2021 cruzou o lado roto com a rotação no desvio posteromedial (lateral e pronação); o TEOT 2025 pediu a manobra (flexão e pronação); o TARO 2010 perguntou a posição que dá mais estabilidade no tipo III conforme o desvio. Esta última está sem gabarito oficial no acervo; o capítulo sustenta pronação no desvio posteromedial.
 armadilha: Periósteo medial roto no posteromedial: é o lado íntegro; quem rompe é o lateral, por onde sai a espícula.
@@ -259,7 +259,7 @@ A redução é mantida em geral com **dois ou três fios de Kirschner laterais d
 
 **Os três erros de Sankar.** Em 322 fraturas, 2,9% perderam a fixação, todas tipo III fixadas com só dois fios, e todas com erro visível na fluoroscopia: **não pegar os dois fragmentos com dois ou mais fios**, **não obter fixação bicortical com dois ou mais fios** e **separação insuficiente no foco** (2 mm ou menos) (figura 13-54). Perdida a redução nas primeiras 1 a 2 semanas, a nova redução fechada costuma funcionar.
 
-!questoes treino=pediatria-1017
+!questoes treino=pediatria-1041
 conceito: Na Gartland III, três fios laterais separados pelo menos 13 mm (ou um terço da largura do úmero) no foco, pegando as duas colunas e as duas corticais.
 como: Ainda sem questão oficial; número ligado a decisão técnica, repetido três vezes no capítulo, com cara de prova.
 armadilha: Dois fios no tipo III: todas as perdas de Sankar foram de tipo III com dois fios.
@@ -278,7 +278,7 @@ A conclusão que o capítulo chama de inegável: se usar fio medial, **coloque p
 
 Na biomecânica, os estudos que deram vantagem aos cruzados usaram dois laterais colados; com separação no foco, dois laterais divergentes superaram os cruzados em extensão e varo (iguais em valgo), e três laterais equivalem aos cruzados mesmo com cominuição medial. Na clínica, perda da redução em 0 de 849 cruzados e 4 de 606 laterais (0,7%), e dois ensaios randomizados sem diferença. Fios mais grossos dão mais estabilidade. Na pesquisa americana, **70%** preferiam laterais; depois de um ensaio, oito cirurgiões que usavam cruzados em 59% passaram a usar em 15%.
 
-!questoes treino=pediatria-1016
+!questoes treino=pediatria-1040
 conceito: Fio medial só quando necessário, depois dos laterais e com o cotovelo estendido; em hiperflexão, o ulnar sobe sobre o epicôndilo medial (61% abaixo de 5 anos) e a lesão vai de 4% para 15%.
 como: Ainda sem questão oficial sobre fios cruzados; é o ponto mais discutido do capítulo, com números redondos.
 armadilha: Fio medial em hiperflexão porque é a posição em que a fratura fica reduzida: os laterais vão antes justamente para permitir estender o cotovelo.
@@ -298,7 +298,7 @@ Fios dobrados e cortados **1 a 2 cm** fora da pele, feltro estéril em volta, es
 - Retorno em 5 a 7 dias com radiografia (provavelmente desnecessário na maioria); **gesso e fios saem em 3 semanas**, no consultório; a radiografia de 3 semanas não mudou condutas em mais de 500 crianças.
 - Exercícios em casa e revisão de movimento por volta de 6 semanas.
 
-!questoes central=trauma-1220 relacionadas=pediatria-0666 treino=pediatria-1015
+!questoes central=trauma-1220 relacionadas=pediatria-0666 treino=pediatria-1039
 conceito: Depois dos fios, o gesso fica em 45 a 70 graus de flexão; flexão acima de 90 graus no cotovelo inchado eleva a pressão do compartimento volar e ameaça a braquial.
 como: A prova R4 da SES-DF de 2022 julgou errado imobilizar a 120 graus após os fios; o TARO 2012 perguntou com que tratamento a isquemia de VOLKMANN é mais comum na Gartland III (gesso com flexão do cotovelo).
 armadilha: 120 graus: é a flexão do tratamento antigo sem fios, que a fixação tornou desnecessária.
@@ -318,7 +318,7 @@ armadilha: 120 graus: é a flexão do tratamento antigo sem fios, que a fixaçã
 Irrigação intraóssea do úmero distal: os vasos da epífise do côndilo lateral entram pela face posterior; dois vasos irrigam o centro de ossificação da crista medial da tróclea, um lateral, que atravessa a fise, e um medial, que entra pela borda não articular.
 !fim
 
-!questoes treino=pediatria-1020
+!questoes treino=pediatria-1044
 conceito: Na redução aberta da supracondiliana em extensão, o acesso é anterior; o posterior é desaconselhado sobretudo pelo risco de osteonecrose da tróclea.
 como: A osteonecrose da tróclea caiu como sequela de fraturas do úmero distal (TEOT 2022) e em imagem (TEOT 2024); a projeção para a escolha do acesso da supracondiliana ainda não caiu.
 armadilha: Miosite ossificante como motivo para evitar a via posterior: é rara e não aumentou nem com redução aberta tardia.
@@ -351,7 +351,7 @@ Até **20%** das fraturas desviadas chegam com algum comprometimento vascular, e
 Algoritmo de conduta na fratura supracondiliana sem pulso.
 !fim
 
-!questoes central=pediatria-0731,pediatria-0772 relacionadas=trauma-1217 treino=pediatria-1012
+!questoes central=pediatria-0731,pediatria-0772 relacionadas=trauma-1217 treino=pediatria-1036
 conceito: Sem pulso ou com fluxo diminuído, a primeira medida é a redução fechada e a fixação, sem esperar arteriografia; mão rosada sem pulso após a redução é observada internada por pelo menos 48 horas.
 como: O TARO 2007 e o TARO 2009 perguntaram a primeira medida na Gartland III sem pulso e na fratura com fluxo distal diminuído, com arteriografia, imobilização neutra, redução aberta e exploração da braquial como distratores. As duas estão sem gabarito oficial no acervo; o capítulo sustenta redução fechada e fixação.
 armadilha: Arteriografia de urgência: atrasa a redução, que é o que mais devolve o fluxo, e não mudou a conduta nas séries do capítulo.
@@ -366,7 +366,7 @@ Pulso ausente com déficit do **mediano ou do interósseo anterior** indica les�
 
 Pelo acesso anterior (ou anteromedial transverso), de proximal para distal ao longo da braquial, identificando também o mediano. A artéria costuma parecer sumir no foco, coberta pelo braquial rasgado, presa por uma banda fascial ou pela adventícia aderida à espícula; a lesão é em geral no nível da **artéria supratroclear**, ramo que amarra o tronco contra a ponta do fragmento proximal (figura 13-50). Muitas vezes, soltar a banda resolve. Espasmo: lidocaína ou papaverina tópica, aquecimento e 10 a 15 minutos; bloqueio do gânglio estrelado pode prolongar a vasodilatação. Se não resolver e a colateral não bastar, há lesão da íntima: ressecar e interpor **veia invertida**, liberar a fáscia do antebraço se a isquemia foi longa e imobilizar em cerca de 60 graus com o antebraço neutro. A uroquinase não é mais usada. A ligadura da braquial na infância (para transplante renal) deixou pressão menor no braço em cerca de 25% e tolerância ao exercício um pouco menor em 67%, sem diferença de comprimento.
 
-!questoes central=pediatria-0932 treino=pediatria-1013
+!questoes central=pediatria-0932 treino=pediatria-1037
 conceito: Na Gartland III sem pulso e com lesão do mediano ou do interósseo anterior, a artéria braquial costuma estar presa no foco (7 de 7 em Mangat): explorar cedo e vigiar a síndrome compartimental, cuja dor pode estar mascarada.
 como: O SBOT-SP perguntou a conduta mais adequada na Gartland III sem pulso com lesão do mediano, com observação de 10 a 15 minutos, retirada dos fios, Doppler e exploração imediata como opções. Está sem gabarito oficial no acervo; o capítulo cita a recomendação de exploração precoce nessa combinação.
 armadilha: Esperar 10 a 15 minutos e retirar os fios: são passos do algoritmo da mão que ficou branca depois da redução, não da combinação sem pulso com lesão do mediano.
@@ -389,7 +389,7 @@ armadilha: Esperar 10 a 15 minutos e retirar os fios: são passos do algoritmo d
 
 Tirar todo curativo circular, **estender o cotovelo bem abaixo de 90 graus**, palpar o compartimento volar e estabilizar a fratura com fios para cuidar das partes moles; fasciotomia se confirmada. Mesmo atrasada, a fasciotomia tem algum valor. Blakey (23 contraturas isquêmicas encaminhadas em média 3 meses depois): na mão rosada sem pulso com dor persistente e crescente após a redução, a isquemia é crítica e a exploração é urgente.
 
-!questoes central=pediatria-0850 relacionadas=trauma-1218,trauma-0012 treino=pediatria-1014
+!questoes central=pediatria-0850 relacionadas=trauma-1218,trauma-0012 treino=pediatria-1038
 conceito: Na criança, os sinais mais precoces de síndrome compartimental são os três As (ansiedade, agitação e necessidade crescente de analgésico); o pulso presente não a exclui, e a lesão do mediano mascara a dor.
 como: O TEOT 2021 perguntou em que situação a síndrome compartimental é mais frequente na supracondiliana (extensão com lesão do mediano). O TARO 2020 pediu o sintoma mais relevante na criança (agitação), e a prova R4 da SES-DF de 2022 julgou errado que a ausência do pulso radial seja o principal sinal.
 armadilha: Ausência de pulso como sinal principal: a síndrome ocorre com pulso presente, e a falta de pulso é tardia ou vem da lesão vascular da própria fratura.
@@ -411,7 +411,7 @@ O **cúbito varo** (deformidade em coronha de espingarda, gunstock) é a sequela
 
 O capítulo é direto: a causa mais comum é **consolidação viciosa**, não crescimento assimétrico. A extremidade distal faz só **20%** do crescimento do úmero, cerca de **2 mm por ano aos 5 anos**, pouco demais para criar um varo nos 6 a 12 meses em que ele aparece. A necrose da tróclea ou da parte medial do fragmento distal pode dar varo progressivo, mas é rara (4 de 36 deformidades em Voss). Na figura 13-51, a combinação de rotação horizontal com inclinação coronal produz o varo. A prevenção é garantir o **BAUMANN na redução** e mantê-lo com **fixação estável**: Pirone viu varo em **7,9% com gesso contra 1,9% com fios**.
 
-!questoes central=pediatria-0652,pediatria-0532,pediatria-0843 relacionadas=pediatria-0521 treino=pediatria-1010,pediatria-1021
+!questoes central=pediatria-0652,pediatria-0532,pediatria-0843 relacionadas=pediatria-0521 treino=pediatria-1034,pediatria-1045
 conceito: O cúbito varo após supracondiliana vem de consolidação viciosa (varo, hiperextensão e rotação do fragmento distal), não de crescimento assimétrico; aparece com BAUMANN diminuído e capítulo atrás da linha umeral anterior.
 como: O TARO 2011 e o TARO 2025 perguntaram a causa (consolidação viciosa, contra lesão fisária, pseudartrose, necrose e crescimento assimétrico); o TEOT 2021 pediu a deformidade combinada (varo, extensão e rotação interna). O TARO 2026 cobrou o fator que favorece a fratura do côndilo lateral em vez da supracondiliana (ângulo de carregamento mais valgo), dado que é do capítulo 16.
 armadilha: Crescimento assimétrico por osteonecrose da tróclea: existe, mas é causa rara de varo progressivo.
@@ -440,7 +440,7 @@ Perfil de cúbito varo: sobreposição do úmero distal com o olécrano formando
 
 O cotovelo remodela pouco porque a fise distal faz pouco crescimento e porque varo e valgo estão **fora do plano de movimento** da articulação. A **hiperextensão**, no plano de flexão e extensão, pode remodelar, de forma lenta e inconsistente, sobretudo na criança muito pequena (figura 13-59). O impacto anterior também pode remodelar, e qualquer correção deve esperar pelo menos 1 ano. A remodelação da angulação posterior persistente é limitada.
 
-!questoes central=pediatria-0720 treino=pediatria-1011
+!questoes central=pediatria-0720 treino=pediatria-1035
 conceito: Na supracondiliana, só a hiperextensão tem algum potencial de remodelação; varo, valgo e rotação não remodelam. A extremidade distal faz só 20% do crescimento do úmero.
 como: O TARO 2020 perguntou qual deformidade da supracondiliana pode remodelar (varo, valgo, rotacional ou hiperextensão). Está sem gabarito oficial no acervo; o capítulo sustenta a hiperextensão.
 armadilha: Rotacional: pequenas rotações são toleradas porque o ombro compensa, não porque remodelam.
@@ -455,7 +455,7 @@ armadilha: Rotacional: pequenas rotações são toleradas porque o ombro compens
 - **Pseudartrose:** rara; a metáfise é bem vascularizada.
 - **Osteonecrose da tróclea:** a irrigação do centro de ossificação da tróclea tem duas fontes terminais; o ramo lateral atravessa a fise e pode ser lesado por traço muito distal, gerando a **deformidade em rabo de peixe** (fishtail). Os sintomas vêm meses ou anos depois (Glotzbecker: em média 4,7 anos, com travamento, bloqueio e dor em 80%). Fator de risco importante: **redução aberta por via posterior** (figura 13-53). Tratamento limitado: parada do crescimento das colunas medial e lateral, desbridamento artroscópico e retirada de corpos livres.
 
-!questoes relacionadas=trauma-0191 treino=pediatria-1020
+!questoes relacionadas=trauma-0191 treino=pediatria-1044
 conceito: A osteonecrose da tróclea pode seguir a supracondiliana com traço muito distal ou a redução aberta posterior e produz a deformidade em rabo de peixe, com sintomas mecânicos anos depois.
 como: O TEOT 2022 perguntou de que fraturas é sequela a deformidade tipo B da osteonecrose da tróclea, com a supracondiliana entre os distratores (o gabarito foi côndilo medial ou descolamento fisário).
 armadilha: O capítulo 13 descreve a deformidade em rabo de peixe após a supracondiliana, mas não divide a osteonecrose em tipos A e B; essa divisão vem dos capítulos do côndilo e do descolamento fisário.
@@ -470,7 +470,7 @@ Responde por cerca de **2%**. O mecanismo é a **queda direta sobre o cotovelo**
 - **É estável em extensão e instável em flexão** (o periósteo posterior rompe e o anterior sobra). Tipo I: gesso ou tala com o cotovelo fletido por conforto. Tipo II que reduz em extensão: **gesso com o cotovelo totalmente estendido** por 3 semanas, radiografias em 1 e 3 semanas. Instáveis (II e III): fios, mas não com o cotovelo hiperfletido; fio no fragmento distal, reduzir no AP, **girar o arco em C** (são rotacionalmente instáveis), reduzir em extensão ou pela manobra de empurrar e puxar (figura 13-66), passar os fios, gesso com menos de 90 graus.
 - **Redução aberta** em até 23% (31% numa série antiga) e em **60% quando o ulnar está lesado**; irredutibilidade ou rotação persistente sugerem interposição, talvez do ulnar. Acesso medial ou posterior, protegendo o ulnar e sem dissecar a face posterior do fragmento distal (tróclea).
 
-!questoes central=pediatria-0751 treino=pediatria-1019
+!questoes central=pediatria-0751 treino=pediatria-1043
 conceito: Na fratura em flexão, o fragmento distal vai para a frente, a fratura é estável em extensão (o tipo II estável vai para gesso em extensão) e o nervo mais lesado é o ulnar.
 como: O TARO 2008 perguntou o nervo mais lesado na fratura em flexão (ulnar, contra interósseo anterior, radial e mediano). Está sem gabarito oficial no acervo; o capítulo sustenta o ulnar (91% das neuropraxias desse tipo).
 armadilha: Interósseo anterior: é o nervo mais lesado na fratura em extensão, que é a regra; a flexão é a exceção.
