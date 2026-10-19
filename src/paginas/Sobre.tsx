@@ -97,7 +97,7 @@ export function Sobre() {
           <p className="tr-heroi__selo">O projeto</p>
           <h1 id="sb-titulo">{nome ? <>{nome}, o Orto Questões está de cara nova.</> : 'O Orto Questões está de cara nova.'}</h1>
           <p className="sb-heroi__lide">
-            O site inteiro ganhou o visual da temporada pixel, no claro e no escuro. O que você já usava
+            O site inteiro ganhou um visual novo, mais claro e mais fácil de usar, no tema claro e no escuro. O que você já usava
             continua no mesmo lugar, e chegou bastante coisa nova. Aqui embaixo está tudo o que tem hoje.
           </p>
           <p className="sb-heroi__lide sb-heroi__lide--menor">
