@@ -11,6 +11,7 @@ Referência aprovada: [docs/exemplos/mao-0853.json](docs/exemplos/mao-0853.json)
 **Capítulo enviado pelo Tales ("faça resumo disso", "questões e resumo", PDF sem comentário):** siga sozinho, sem pedir
 confirmação, o roteiro [docs/biblioteca/PILOTO-AUTOMATICO.md](docs/biblioteca/PILOTO-AUTOMATICO.md): o que cada pedido curto
 quer dizer, OrtoQuestões Simulados primeiro, resumo no mesmo jeito de escrever dos anteriores, conferir e publicar.
+Ligar o resumo a todas as questões do tema (convite "Leia o resumo" no fim de cada questão) conforme [docs/biblioteca/CAPITULO-RESUMO-E-QUESTOES.md](docs/biblioteca/CAPITULO-RESUMO-E-QUESTOES.md).
 Consultar o acervo atual, usar os scripts de aplicação/validação, preservar o
 gabarito e salvar em branches e PRs revisáveis conforme o pedido.
 

@@ -125,6 +125,8 @@ Modelos de nível: [`rockwood10-53-colo-femur.md`](../../conteudo/biblioteca/roc
 
 ## 7. Conferir
 
+Antes, ligue o resumo a todas as questões do tema (linha `subtemas:` completa e `python3 -I scripts/biblioteca/cobertura.py`): veja [CAPITULO-RESUMO-E-QUESTOES.md](CAPITULO-RESUMO-E-QUESTOES.md), seção 3.
+
 ```bash
 flock /tmp/claude-0/acervo.lock -c 'node scripts/biblioteca/gerar.mjs && python3 scripts/validar_acervo.py'
 npx tsc -b && npm test && node fixtures/testar_revisao.mjs
