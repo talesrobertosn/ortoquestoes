@@ -2,8 +2,9 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import type { EstadoSessao, Questao, Resposta } from '../dados/tipos'
-import type { ResultadoNacional } from '../dados/simuladoNacional'
 import { entregarSessaoNacional } from '../dados/entregaNacional'
+import { codigoErroSN } from '../dados/apiSimuladoNacional'
+import { esquecerEdicaoEmDestaque } from '../dados/nacionalEmDestaque'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
@@ -62,24 +63,31 @@ function manchete(pct: number | null, nome: string): { titulo: string; texto: st
   return { titulo: `Sessão de aprendizado${voce}.`, texto: 'Errar aqui é o que evita errar na prova. Leia os comentários das erradas com calma e refaça em seguida.' }
 }
 
-/** Simulado Nacional: entrega no servidor e leva ao resultado (nota, posição, prontidão). */
-function EntregaNacional({ sessao }: { sessao: EstadoSessao }) {
-  const [estado, definirEstado] = useState<'enviando' | 'ok' | 'erro'>('enviando')
-  const [resultado, definirResultado] = useState<ResultadoNacional | null>(null)
+/**
+ * Simulado Nacional: a prova acabou (entregue pela pessoa ou pelo relógio). Aqui só a entrega:
+ * corrige no servidor e leva ao resultado na página do simulado (nota, posição, correção).
+ */
+function EntregaNacional({ sessao, aoEntregar }: { sessao: EstadoSessao; aoEntregar: () => void }) {
+  const [estado, definirEstado] = useState<'enviando' | 'erro'>('enviando')
+  const [detalhe, definirDetalhe] = useState('')
   const enviar = useCallback(() => {
     definirEstado('enviando')
-    entregarSessaoNacional(sessao).then((r) => { definirResultado(r); definirEstado('ok') }).catch(() => definirEstado('erro'))
-  }, [sessao])
+    entregarSessaoNacional(sessao).then(() => aoEntregar()).catch((falha) => {
+      const codigo = codigoErroSN(falha)
+      definirDetalhe(codigo === 'nao_iniciado' ? 'O servidor não encontrou esta prova. Abra a página do simulado para ver a situação.' : 'Suas respostas estão guardadas neste aparelho e no servidor. Confira a conexão e tente de novo.')
+      definirEstado('erro')
+    })
+  }, [sessao, aoEntregar])
   useEffect(() => { enviar() }, [enviar])
   return (
-    <section className={`sn-entrega sn-entrega--${estado}`} role="status">
-      <Icone nome={estado === 'ok' ? 'trofeu' : estado === 'erro' ? 'alerta' : 'relogio'} tamanho={22} />
+    <section className={`sn-entrega sn-entrega--${estado}`} role="status" aria-live="polite">
+      <Icone nome={estado === 'erro' ? 'alerta' : 'relogio'} tamanho={22} />
       <div>
-        <strong>{estado === 'ok' ? `Simulado Nacional entregue: ${resultado?.acertos ?? 0} de ${resultado?.total ?? 0}` : estado === 'erro' ? 'A entrega não chegou ao servidor' : 'Entregando o Simulado Nacional…'}</strong>
-        <span>{estado === 'ok' ? 'Veja sua posição, o relatório de prontidão e o top 10 da edição.' : estado === 'erro' ? 'Suas respostas estão guardadas neste aparelho. Confira a conexão e tente de novo.' : 'Corrigindo com o gabarito da edição.'}</span>
+        <strong>{estado === 'erro' ? 'A entrega não chegou ao servidor' : 'Entregando o Simulado Nacional…'}</strong>
+        <span>{estado === 'erro' ? detalhe : 'Corrigindo com o gabarito da edição. Em seguida, o seu resultado.'}</span>
       </div>
-      {estado === 'ok' && <a className="botao botao--ouro" href={href('/simulado-nacional')}>Ver meu resultado</a>}
       {estado === 'erro' && <button type="button" className="botao" onClick={enviar}>Tentar de novo</button>}
+      {estado === 'erro' && <a className="botao botao--fantasma" href={href('/simulado-nacional')}>Ir para o simulado</a>}
     </section>
   )
 }
@@ -95,7 +103,7 @@ function letraMarcada(l: { questao?: Questao | null; resposta?: Resposta | null 
 
 export function Resumo() {
   const { indice } = usarIndice()
-  const { sessao, iniciarComAviso, finalizar } = usarSessao()
+  const { sessao, iniciarComAviso, finalizar, encerrar } = usarSessao()
   const { sessao: conta } = usarConta()
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
@@ -201,6 +209,15 @@ export function Resumo() {
     return { novas, combo, emblema, emblemaSequencia }
   }, [sessao, dados, marcadas, totalConta, streak.atual])
 
+  // A prova do Simulado Nacional não tem resumo local: entrega e vai ao resultado.
+  if (sessao?.nacional && sessao.concluidaEm) {
+    return (
+      <div className="empilha-2 rs">
+        <EntregaNacional sessao={sessao} aoEntregar={() => { esquecerEdicaoEmDestaque(); encerrar(); navegar('/simulado-nacional?entregue=1', true) }} />
+      </div>
+    )
+  }
+
   if (!sessao) {
     return (
       <Estado
@@ -284,7 +301,6 @@ export function Resumo() {
 
   return (
     <article className="empilha-2 rs">
-      {sessao.nacional && sessao.concluidaEm && <EntregaNacional sessao={sessao} />}
       <section className="rs-heroi">
         {mostrarBatalha && <span className="rs-tochas" aria-hidden="true"><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /></span>}
         {mostrarBatalha && <span className="espera-pixel__guerreiro rs-guerreiro" aria-hidden="true" style={{ backgroundImage: `url(${recurso('ranking/guerreiro.png')})` }} />}

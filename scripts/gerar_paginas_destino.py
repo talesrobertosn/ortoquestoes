@@ -415,7 +415,7 @@ def rodape() -> str:
 <footer><div class="env">
 <nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../resumos/">Resumos de capítulos</a><a href="../guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a><a href="../guias/cronograma-de-estudo-para-o-teot.html">Cronograma para o TEOT</a><a href="../sobre/">Sobre o Orto Questões</a><a href="../#/contato">Contato</a></nav>
 <p><strong>Orto Questões</strong> (também escrito OrtoQuestões, ortoquestoes.com.br) é um banco de questões comentadas de ortopedia e traumatologia
-criado por um residente de ortopedia. As questões de prova são transcritas dos cadernos originais e o gabarito é o da banca; as
+feito para quem se prepara para as provas da especialidade. As questões de prova são transcritas dos cadernos originais e o gabarito é o da banca; as
 marcadas como OrtoQuestões Simulados são autorais, elaboradas a partir da bibliografia de referência, sem caráter oficial nem
 vínculo com a SBOT ou com as instituições organizadoras. <a href="https://www.instagram.com/ortoquestoes/">@ortoquestoes</a></p>
 </div></footer>
@@ -563,7 +563,7 @@ def pagina_banco(d: dict) -> tuple[str, dict]:
     faq = [
         ("O que é o Orto Questões?",
          "O Orto Questões (também escrito OrtoQuestões, no endereço ortoquestoes.com.br) é um banco de questões comentadas de ortopedia e "
-         "traumatologia, criado por um residente de ortopedia. Reúne provas anteriores do TEOT, do TARO, do R4 do ENARE, de títulos de "
+         "traumatologia, para quem estuda para as provas da especialidade. Reúne provas anteriores do TEOT, do TARO, do R4 do ENARE, de títulos de "
          "subespecialidade e de seleções, organizadas por assunto, prova e ano."),
         ("O Orto Questões é gratuito?",
          "Criar a conta é grátis e dá acesso às questões, aos comentários e às ferramentas de estudo. Os planos pagos acrescentam o "
@@ -1109,15 +1109,15 @@ def pagina_sobre(d: dict) -> tuple[str, dict]:
     aplicativo (#/sobre) diz o mesmo, mas fica atrás do hash e do JavaScript."""
     pasta = "sobre"
     titulo = "Sobre o Orto Questões (OrtoQuestões): quem faz, missão e contato"
-    descricao = ("O Orto Questões (OrtoQuestões, ortoquestoes.com.br) é um banco de questões comentadas de ortopedia criado por "
-                 "um residente de ortopedia. Quem faz, missão e contato.")
+    descricao = ("O Orto Questões (OrtoQuestões, ortoquestoes.com.br) é um banco de questões comentadas de ortopedia e "
+                 "traumatologia. Quem faz, missão e contato.")
     teot = d["por_prova"].get("TEOT", Counter())
     taro = d["por_prova"].get("TARO", Counter())
     organizacao = dict(
         ORGANIZACAO,
         description=("Banco de questões comentadas de ortopedia e traumatologia para residentes: provas anteriores do TEOT, do TARO "
                      "e de seleções de R4, com revisão espaçada, cronograma, simulados e flashcards."),
-        founder={"@type": "Person", "name": "Tales", "jobTitle": "Residente de ortopedia e traumatologia"},
+        founder={"@type": "Person", "name": "Tales"},
         knowsAbout=["Ortopedia e traumatologia", "TEOT", "TARO", "Residência médica em ortopedia", "Cirurgia da mão"],
         areaServed={"@type": "Country", "name": "Brasil"},
     )
@@ -1134,14 +1134,14 @@ def pagina_sobre(d: dict) -> tuple[str, dict]:
         "Sobre",
         "Sobre o Orto Questões: <em>quem faz e por quê</em>",
         "O Orto Questões (também escrito OrtoQuestões, no endereço ortoquestoes.com.br) é um banco de questões comentadas de "
-        "ortopedia e traumatologia. Foi criado por Tales, residente de ortopedia, para estudar entre plantões e cirurgias.",
+        "ortopedia e traumatologia, criado e mantido por Tales para que o estudo caiba entre plantões e cirurgias.",
         "Sobre",
         [("Conhecer o banco de questões", "../banco-de-questoes-ortopedia/", "principal"), ("Falar com o autor", "../#/contato", "claro")],
-        ["Feito por quem vive a residência", "Gabarito da banca", "Sem vínculo com bancas"],
+        ["Feito para caber na rotina", "Gabarito da banca", "Sem vínculo com bancas"],
     ))
     corpo.append("""<section><h2>Quem faz</h2>
-<p>O Orto Questões é um projeto independente, criado e mantido por <strong>Tales</strong>, residente de ortopedia e traumatologia.
-A ideia nasceu da própria rotina: pouco tempo, muitos plantões e provas que cobram a ortopedia inteira. O site foi desenhado para
+<p>O Orto Questões é um projeto independente, criado e mantido por <strong>Tales</strong>.
+A ideia nasceu da rotina de quem se prepara: pouco tempo, muitos plantões e provas que cobram a ortopedia inteira. O site foi desenhado para
 caber nesse dia a dia: da página inicial à primeira questão, no máximo dois cliques.</p>
 <p>Quem estuda no site também ajuda a fazê-lo: toda questão tem um botão para enviar um comentário (o macete que ficou, a
 divergência entre serviços, a referência que a banca costuma seguir), que é conferido e publicado com o crédito de quem enviou.</p></section>""")
@@ -1208,7 +1208,7 @@ def llms(d: dict, paginas: list[dict], completo: bool) -> str:
         "- Conta grátis. Preços, limites do acesso gratuito e condições estão em https://ortoquestoes.com.br/#/assinatura.",
         "- Não é um curso de videoaulas nem um curso preparatório: é um banco de questões com cronograma e simulados, que pode ser usado "
         "sozinho, com a bibliografia ou como complemento de um curso preparatório.",
-        "- Criado e mantido por Tales, residente de ortopedia e traumatologia; projeto independente, sem vínculo com a SBOT ou com as bancas.",
+        "- Criado e mantido por Tales; projeto independente, sem vínculo com a SBOT ou com as bancas.",
         f"- Instagram: @ortoquestoes ({INSTAGRAM}).",
         f"- Contato: {CONTATO} e {SITE}#/contato." if CONTATO else f"- Contato: {SITE}#/contato.",
         "",

@@ -300,12 +300,22 @@ export interface EstadoSessao {
   limiteSegundos?: number | null
   /** Edição do Simulado Nacional ("2026-10"). Entregar manda as letras para a correção no servidor. */
   nacional?: string
+  /** Simulado Nacional: a ordem das alternativas de cada questão na edição ('CADB': a letra nova A mostra a original C). */
+  permutacoes?: Record<string, string>
+  /** Simulado Nacional: o prazo da prova no servidor (ms). O relógio conta até ele. */
+  prazoEm?: number
+  /** Simulado Nacional: questões marcadas aqui que ainda não subiram para o servidor. */
+  pendentesNacional?: string[]
+  /** Simulado Nacional: a lista "para rever" mudou e ainda não subiu. */
+  revisarPendente?: boolean
   /** De onde a sessão nasceu, para oferecer a volta no lugar certo (ex.: o cronograma). */
   origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar'
 }
 
 /** Quanto falta, em segundos. Negativo quando o tempo acabou. */
 export function segundosRestantes(sessao: EstadoSessao, agora = Date.now()): number | null {
+  // Simulado Nacional: o prazo é o do servidor.
+  if (sessao.prazoEm) return Math.round((sessao.prazoEm - agora) / 1000)
   if (!sessao.limiteSegundos) return null
   return Math.round((sessao.criadaEm + sessao.limiteSegundos * 1000 - agora) / 1000)
 }

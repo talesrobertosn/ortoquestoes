@@ -128,3 +128,6 @@ Corrigir e gerar de novo até ficar impecável; só então enviar.
 
 ## Laboratório de patologia e Raspadinha da prova (aprovados em 18/10/2026)
 Tales aprovou os temas do post de 17/10 para o arsenal: **Laboratório de patologia** (feed) e **Raspadinha da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).
+
+## Sobre o Tales (orientação de 19/10/2026)
+O site, os posts e os e-mails não dizem a profissão nem a etapa do Tales: nem "ortopedista", nem "residente", nem "feito por quem vive a especialidade". Quando for preciso falar do autor, basta o nome ("Tales, do Orto Questões"). Falar do público (residentes, ortopedistas que estudam) continua normal.

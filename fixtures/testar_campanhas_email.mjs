@@ -1,7 +1,7 @@
 // Campanhas diárias (parte 31, 18/10/2026): a ação `campanhas_diarias` da função enviar-email, com o
 // banco e o Resend simulados. Confere que:
 //   - só o agendador (x-segredo certo) ou um administrador chamam; a própria pessoa não pede campanha;
-//   - cada uma das nove campanhas lê candidatos_<tipo> e manda pelo mesmo enviarAutomatico (a carta
+//   - cada uma das dez campanhas lê candidatos_<tipo> e manda pelo mesmo enviarAutomatico (a carta
 //     certa, com descadastro, gravada como tipo "carta", modelo <tipo> e a referência do banco);
 //   - quem desligou as cartas não recebe (podeReceber, na hora), a cadência adia, quem já recebeu a
 //     referência não recebe de novo, e o envio que falhou é retomado na mesma linha (índice único);
@@ -39,13 +39,14 @@ try {
   const C = {
     assinou_sem_cronograma: [[pessoa(1, { assinante: true }), 'assinou_sem_cronograma', { assinou_em: horas(24 * 4) }]],
     assinante_parado_7: [[pessoa(2, { assinante: true, dias_parado: 9 }), 'assinante_parado_7:2026-10-09', { dias_fora: 9 }]],
-    simulado_resultado: [[pessoa(3), 'simulado_resultado:2026-09', { edicao: '2026-09', titulo: 'Simulado Nacional de setembro', acertos: 41, total: 60, posicao: 12, participantes: 180 }]],
+    simulado_resultado: [[pessoa(3), 'simulado_resultado:2026-09', { edicao: '2026-09', titulo: 'Simulado Nacional de setembro', acertos: 41, total: 50, posicao: 12, participantes: 180 }]],
     vespera_prova: [[pessoa(4, { prova: 'TEOT' }), 'vespera_prova:2026-10-19', { data_prova: '2026-10-19', prova: 'TEOT' }]],
     depois_prova: [[pessoa(5, { prova: 'TARO' }), 'depois_prova:2026-10-16', { data_prova: '2026-10-16', prova: 'TARO', dias_depois: 2 }]],
     aniversario: [[pessoa(6, { nascimento: '1994-' + new Date(AGORA - 3 * 3600_000).toISOString().slice(5, 10) }), 'aniversario:2026', {}]],
     um_ano: [[pessoa(7, { dias_conta: 731 }), 'um_ano:2', { anos: 2 }]],
     indicacao_deu_certo: [[pessoa(8), `indicacao_deu_certo:${id(80)}`, { confirmada: true, cortesia: true }]],
     resumo_do_tema: [[pessoa(9), 'resumo_do_tema:2026-s42', { id: 'rockwood10-45-fraturas-mao', titulo: 'Fraturas da mão', especialidade: 'mao' }]],
+    simulado_lembrete: [[pessoa(10), 'simulado_lembrete:2026-10', { edicao: '2026-10', titulo: 'Simulado Nacional · Outubro de 2026', tipo: 'mensal', tipo_lembrete: 'abriu_hoje', abre_em: horas(5), fecha_em: '2026-11-01T02:59:59Z', duracao_min: 120, total: 50, precisa_plano: false }]],
   }
   // Travas que a função confere de novo na hora (a lista do banco pode ser de antes):
   const desligou = pessoa(20, { prefs: { cartas: false } }) //       desligou as cartas depois da lista
@@ -63,7 +64,7 @@ try {
   inserir({ id_usuario: jaRecebeu, tipo: 'carta', modelo: 'um_ano', referencia: 'um_ano:1', enviado_em: horas(24 * 20) })
   inserir({ id_usuario: falhou, tipo: 'carta', modelo: 'um_ano', referencia: 'um_ano:3', status: 'falhou', erro: 'envio_recusado_500', enviado_em: horas(24 * 20) })
 
-  const enviados = [], rpcs = [], catalogos = []
+  const enviados = [], rpcs = [], catalogos = [], marcados = []
   let semParte31 = false
   const j = (d, s = 200) => new Response(JSON.stringify(d), { status: s, headers: { 'content-type': 'application/json' } })
   globalThis.fetch = async (entrada, op = {}) => {
@@ -85,6 +86,7 @@ try {
       return j(lista.slice(0, corpo.p_limite).map(([id_usuario, referencia, dados]) => ({ id_usuario, referencia, dados })))
     }
     if (rota === 'rpc/registrar_catalogo_biblioteca') { catalogos.push(corpo.p_capitulos); return j(1) }
+    if (rota === 'rpc/sn_marcar_lembrete') { marcados.push(corpo); return j(true) }
     const p = pessoas.get(corpo?.p_id ?? eq('id_usuario') ?? eq('usuario_id')) ?? pessoas.get(eq('usuario_id'))
     if (rota === 'rpc/dados_carta_envio') return j(p ? { email: p.email, nome: p.nome.split(' ')[0], confirmado: p.confirmado, quer_cartas: p.quer_cartas, administrador: false } : null)
     if (rota === 'rpc/dados_email_usuario') return j(p ? [{ email: p.email, nome: p.nome, respondidas: p.respondidas, acertos: 160, erros: 80, respondidas_7d: 20, dias_de_conta: 400, quer_conquistas: true }] : [])
@@ -128,9 +130,10 @@ try {
   // 2. Simular: conta, não manda.
   let r = await chamar({ acao: 'campanhas_diarias', simular: true }, segredo)
   assert.equal(r.status, 200)
-  assert.deepEqual(Object.keys(r.dados.campanhas), TIPOS, 'as nove campanhas, na ordem')
+  assert.deepEqual(Object.keys(r.dados.campanhas), TIPOS, 'as dez campanhas, na ordem')
   assert.equal(r.dados.campanhas.um_ano.simuladas, C.um_ano.length)
   assert.equal(enviados.length, 0, 'simular não manda')
+  assert.equal(marcados.length, 0, 'simular não marca o lembrete')
   for (const t of TIPOS) assert.ok(rpcs.includes(`candidatos_${t}`), `leu candidatos_${t}`)
 
   // 3. De verdade.
@@ -140,7 +143,8 @@ try {
   const c = r.dados.campanhas
   for (const t of TIPOS.filter((t) => t !== 'um_ano')) assert.deepEqual(c[t], { candidatas: 1, enviado: 1 }, `${t}: ${JSON.stringify(c[t])}`)
   assert.deepEqual(c.um_ano, { candidatas: 7, enviado: 2, nao_quer: 2, email_nao_confirmado: 1, adiado: 1, ja_enviado: 1 }, JSON.stringify(c.um_ano))
-  assert.equal(enviados.length, 10)
+  assert.equal(enviados.length, 11)
+  assert.deepEqual(marcados, [{ p_edicao: '2026-10', p_usuario: C.simulado_lembrete[0][0] }], 'marcou o lembrete enviado')
   assert.equal(catalogos.length, 1, 'registrou o catálogo da Biblioteca')
   assert.equal(catalogos[0].length, JSON.parse(indice).capitulos.length)
   assert.ok(catalogos[0].every((x) => x.id && x.titulo && x.especialidade), 'catálogo com id, título e área')
@@ -165,6 +169,8 @@ try {
   assert.match(texto('um_ano'), /dois anos/i)
   assert.match(texto('indicacao_deu_certo'), /#\/indicar/)
   assert.match(texto('simulado_resultado'), /#\/simulado-nacional/)
+  assert.match(texto('simulado_lembrete'), /#\/simulado-nacional/)
+  assert.match(texto('simulado_lembrete'), /no ar|abriu|aberto/i, 'lembrete: abriu hoje')
   assert.match(texto('assinou_sem_cronograma'), /#\/cronograma/)
   assert.ok(!/\b[1-6] dias\b/.test(texto('assinante_parado_7').split('Um abraço')[0].replace(/faltam \d+ dias|a \d+ dias/g, '')), 'parado: nunca menos de uma semana')
   // O envio que tinha falhado foi retomado na mesma linha (sem duplicar).

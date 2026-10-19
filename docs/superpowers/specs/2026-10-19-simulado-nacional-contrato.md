@@ -134,3 +134,46 @@ O cliente RPC tipado fica em `src/dados/apiSimuladoNacional.ts`, com uma funçã
 | B: banco | migration e partes 32, `fixtures/sql/testar_parte32.sql` e o script que roda, `src/dados/apiSimuladoNacional.ts`, `supabase/functions/**` (campanha `simulado_resultado`), e-mails ("de 50") |
 | C: página e prova | `src/paginas/SimuladoNacional.tsx`, o CSS dela, `src/dados/entregaNacional.ts`, o modo nacional em `Sessao.tsx`, `CartaoQuestao.tsx`, `estado/sessao.ts`, `Resumo.tsx`, `QuestaoDireta` (o aviso de prova em andamento) |
 | D: admin | `src/componentes/admin/AdminSimulados.tsx` e o CSS dele |
+
+## Adendo de 19/10: pedidos do Tales ("design mais explicativo e prático", "botão na página inicial", "configurar melhor o simulado no painel")
+
+- **Banco:**
+  - `sn_edicoes` ganha as colunas `descricao`, `destaque_inicio` (padrão true) e `config` jsonb, onde fica o registro do sorteio: provas, peso dos recentes, anos recentes, cotas e percentual de nível alto.
+  - `sn_admin_salvar` recebe `p_descricao`, `p_destaque_inicio` e `p_config` no fim da lista de parâmetros.
+  - Funções novas:
+    - `sn_admin_config(p_edicao, p_titulo, p_descricao, p_destaque_inicio)`: edita o texto e o destaque a qualquer momento;
+    - `sn_destaque_inicio()`: entrega o botão da página inicial.
+  - `sn_obter` passa a devolver também `descricao`, `destaque_inicio` e a parte pública de `config`.
+- **Sorteio:** `sortearEdicao` aceita, nas opções, `provas`, `pesoRecentes`, `anosRecentes`, `nivelAltoPct` e `cotas` (ajuste manual por área). Ficam disponíveis `ConfigSorteio` e `CONFIG_PADRAO`.
+- **Painel:** a montagem tem uma seção de configuração com:
+  - número de questões e duração;
+  - provas (TEOT, TARO, TEOT/TARO);
+  - peso dos recentes;
+  - percentual de nível alto;
+  - cotas por área, editáveis, com a soma conferida e o botão "voltar ao automático";
+  - título e descrição;
+  - "mostrar na página inicial";
+  - prévia de como a página vai aparecer.
+- **Página:** explicativa e prática.
+  - "Como funciona" em 4 passos com ícones.
+  - A distribuição por área como gráfico de barras simples.
+  - O que acontece com o tempo, com as respostas e com o ranking.
+  - Perguntas frequentes curtas.
+  - Um único botão principal por estado.
+- **Página inicial:** um cartão ou botão "Simulado Nacional" no Início, alimentado por `sn_destaque_inicio`, com o estado da pessoa: começar, continuar, ver resultado ou "abre em N dias".
+
+## Adendo 2 (19/10): inscrição e datas de outubro (pedido do Tales: "abrir inscrição; não dá para entender quando vai ser nem como se inscreve")
+
+- **Inscrição:** a tabela `sn_inscricoes` guarda quem se inscreveu.
+  - Qualquer conta pode se inscrever, pelas funções `sn_inscrever` e `sn_cancelar_inscricao`.
+  - Começar a prova também inscreve a pessoa.
+  - Quem se inscreveu recebe o e-mail de lembrete (campanha `simulado_lembrete`) na véspera da abertura ("abre amanhã") e no dia ("abriu hoje").
+- **`aberto_a_todos`:** a edição pode ficar livre para qualquer conta grátis. **Outubro de 2026 é a edição de lançamento e fica aberta a todos** (decisão do Claude): serve para trazer gente nova, e quem não assina conhece o recurso.
+- **Datas de outubro (decisão do Claude):**
+  - as inscrições abrem quando a parte 32 entrar no ar;
+  - a prova fica disponível de **sábado, 24/10, às 8h** a **sábado, 31/10, às 23h59** (corrigido: 25/10 era domingo) (horário de Brasília);
+  - cada pessoa tem 2 horas a partir do momento em que começa;
+  - o ranking final sai em **01/11**.
+  
+  A janela de uma semana é para caber na rotina de plantão. A página mostra essas datas em destaque, com contagem regressiva.
+- **Página:** o topo responde de cara às três perguntas que o Tales não conseguiu responder: **quando** (as datas), **o que é** (50 questões oficiais, 2 horas, ranking nacional) e **como participar** (o botão "Quero participar" faz a inscrição, e no dia "Começar a prova").

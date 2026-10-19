@@ -13,6 +13,42 @@ import { erroDeConexao, usarLimiteDiario } from '../estado/limiteDiario'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href } from '../util/rotas'
 import { gerarId } from '../util/id'
+import { CHAVE_SESSAO } from '../estado/sessao'
+import { ler } from '../estado/armazenamento'
+import type { EstadoSessao } from '../dados/tipos'
+import { edicaoEmDestaque } from '../dados/nacionalEmDestaque'
+import { snIniciar } from '../dados/apiSimuladoNacional'
+
+const TOLERANCIA_MS = 5 * 60_000
+
+/**
+ * A questão está numa prova do Simulado Nacional que a pessoa tem aberta (neste
+ * aparelho ou em outro)? Enquanto confere, o cartão não aparece: o gabarito e o
+ * comentário não podem piscar na tela. Sem resposta em 5 s, libera.
+ */
+function usarProvaComEstaQuestao(id: string, logado: boolean): 'conferindo' | 'livre' | 'em-prova' {
+  const [estado, definirEstado] = useState<'conferindo' | 'livre' | 'em-prova'>('conferindo')
+  useEffect(() => {
+    let vivo = true
+    const local = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
+    const aberta = (prazo: number) => !prazo || Date.now() < prazo + TOLERANCIA_MS
+    if (local?.nacional && !local.concluidaEm && local.ids.includes(id) && aberta(local.prazoEm ?? 0)) { definirEstado('em-prova'); return }
+    if (!logado) { definirEstado('livre'); return }
+    definirEstado('conferindo')
+    const prazo = window.setTimeout(() => { if (vivo) definirEstado('livre') }, 5000)
+    edicaoEmDestaque(true)
+      .then(async (ed) => {
+        // Só pergunta os itens a quem já começou (sn_iniciar retoma; nunca começa uma prova daqui).
+        if (!ed?.edicao || !ed.minha || ed.minha.entregue_em || !aberta(Date.parse(ed.minha.prazo_em))) return false
+        const inicio = await snIniciar(ed.edicao)
+        return inicio.itens.some((i) => i.id_questao === id)
+      })
+      .catch(() => false)
+      .then((naProva) => { if (vivo) { window.clearTimeout(prazo); definirEstado(naProva ? 'em-prova' : 'livre') } })
+    return () => { vivo = false; window.clearTimeout(prazo) }
+  }, [id, logado])
+  return estado
+}
 
 /** Link direto para uma questão: responde ali mesmo, sem abrir sessão. */
 export function QuestaoDireta({ id }: { id: string }) {
@@ -27,6 +63,7 @@ export function QuestaoDireta({ id }: { id: string }) {
   const [limiteAberto, definirLimiteAberto] = useState(false)
   const chaveResposta = useRef<string | null>(null)
   const autorizando = useRef(false)
+  const prova = usarProvaComEstaQuestao(id, !!conta)
 
   useEffect(() => {
     if (!indice) return
@@ -47,7 +84,21 @@ export function QuestaoDireta({ id }: { id: string }) {
     }
   }, [indice, id])
 
-  if (questao === undefined) return <Carregando linhas={6} />
+  if (questao === undefined || prova === 'conferindo') return <Carregando linhas={6} />
+
+  if (prova === 'em-prova') {
+    return (
+      <Estado
+        titulo="Esta questão está num simulado em andamento."
+        acoes={<>
+          <a className="botao botao--principal" href={href('/sessao')}>Voltar para a prova</a>
+          <a className="botao" href={href('/simulado-nacional')}>Ver o Simulado Nacional</a>
+        </>}
+      >
+        <p>Ela faz parte da prova do Simulado Nacional que você está fazendo. O gabarito e o comentário aparecem na correção, logo depois de entregar.</p>
+      </Estado>
+    )
+  }
 
   if (questao === null) {
     return (

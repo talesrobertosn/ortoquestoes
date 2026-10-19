@@ -461,8 +461,35 @@ export function ComoEstouIndo({ calculo, constancia, minutosQuestao }: { calculo
         <div><small>Projeção</small><b className="numerico">{p.maisCaiPct}%</b><span className="cp-indo__medidor" aria-hidden="true"><span style={{ width: `${Math.min(100, Math.max(0, p.maisCaiPct))}%` }} /></span><span>da prioridade máxima vista{p.fimMaisCai ? ` até ${curta(p.fimMaisCai)}` : ''}</span></div>
         <div><small>Progresso</small><b className="numerico">{calculo.feitas.toLocaleString('pt-BR')}</b><span className="cp-indo__medidor cp-indo__medidor--feito" aria-hidden="true"><span style={{ width: `${Math.min(100, (calculo.feitas / Math.max(1, calculo.alvo)) * 100)}%` }} /></span><span>de {calculo.alvo.toLocaleString('pt-BR')} questões do plano ({p.alvoPct}% previsto até a reta final)</span></div>
       </div>
+      <ContaDoDia calculo={calculo} />
       <p className="cp-indo__nota">Tempo estimado com o seu ritmo: ~{String(minutosQuestao).replace('.', ',')} min por questão.</p>
     </section>
+  )
+}
+
+/** Abaixo do ritmo: quanto o cronograma pedia (hoje e até ontem) e quanto a pessoa fez, com os números. */
+function ContaDoDia({ calculo }: { calculo: CalculoPlano }) {
+  const n = (v: number) => v.toLocaleString('pt-BR')
+  const q = (v: number) => `${n(v)} ${v === 1 ? 'questão' : 'questões'}`
+  const folga = calculo.hoje?.tipo === 'folga' || calculo.metaDiaria <= 0
+  const feitasAteOntem = Math.max(0, calculo.feitas - calculo.feitasHoje)
+  const diferenca = feitasAteOntem - calculo.esperadoAteHoje
+  const hoje = calculo.naRetaFinal
+    ? { classe: '', texto: <>Hoje: reta final, sem meta de questões novas. Você fez <b>{q(calculo.feitasHoje)}</b>.</> }
+    : folga
+      ? { classe: '', texto: <>Hoje é folga no cronograma{calculo.feitasHoje ? <>, e mesmo assim você fez <b>{q(calculo.feitasHoje)}</b></> : ''}.</> }
+      : calculo.feitasHoje >= calculo.metaDiaria
+        ? { classe: 'cp-conta__linha--ok', texto: <>Hoje você deveria fazer <b>{q(calculo.metaDiaria)}</b> e fez <b>{n(calculo.feitasHoje)}</b>. Meta do dia cumprida.</> }
+        : { classe: 'cp-conta__linha--falta', texto: <>Hoje você deveria fazer <b>{q(calculo.metaDiaria)}</b> e fez <b>{n(calculo.feitasHoje)}</b> até agora. Faltam <b>{n(calculo.metaDiaria - calculo.feitasHoje)}</b>.</> }
+  const ate = calculo.esperadoAteHoje <= 0 ? null
+    : diferenca < 0
+      ? { classe: 'cp-conta__linha--falta', texto: <>Até ontem, o cronograma previa <b>{q(calculo.esperadoAteHoje)}</b> e você fez <b>{n(feitasAteOntem)}</b>: <b>{q(-diferenca)}</b> de atraso.</> }
+      : { classe: 'cp-conta__linha--ok', texto: <>Até ontem, o cronograma previa <b>{q(calculo.esperadoAteHoje)}</b> e você fez <b>{n(feitasAteOntem)}</b>{diferenca > 0 ? <>: <b>{q(diferenca)}</b> à frente</> : ''}.</> }
+  return (
+    <div className="cp-conta" role="group" aria-label="Questões previstas e feitas">
+      <p className={'cp-conta__linha ' + hoje.classe}><Icone nome={hoje.classe === 'cp-conta__linha--falta' ? 'relogio' : 'certo'} tamanho={15} /><span>{hoje.texto}</span></p>
+      {ate && <p className={'cp-conta__linha ' + ate.classe}><Icone nome={ate.classe === 'cp-conta__linha--falta' ? 'alerta' : 'certo'} tamanho={15} /><span>{ate.texto}</span></p>}
+    </div>
   )
 }
 

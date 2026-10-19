@@ -1,0 +1,33 @@
+/* O cartão do Simulado Nacional no Início (19/10/2026): o bilhete escuro da temporada pixel,
+   com a data em ouro e um botão só, conforme o momento da pessoa. */
+.cs-nac {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--e-3) var(--e-5); align-items: center;
+  padding: var(--e-4) var(--e-5); background: #0b2b27; color: #dff5ef; border-radius: 6px;
+  box-shadow: 0 0 0 2px var(--px-tinta), 6px 6px 0 2px var(--px-sombra);
+}
+.cs-nac__arte { display: inline-grid; place-items: center; width: 4.25rem; height: 4.25rem; background: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-ouro); }
+.cs-nac__arte img { image-rendering: pixelated; }
+.cs-nac__texto { display: grid; gap: 0.25rem; min-width: 0; }
+.cs-nac__selo { margin: 0; font-family: var(--fonte-pixel); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #9fe3d4; }
+.cs-nac h2 { margin: 0; font-family: var(--fonte-marca); font-size: clamp(1.15rem, 2.4vw, 1.45rem); line-height: 1.15; letter-spacing: -0.015em; color: #fff; text-wrap: balance; }
+.cs-nac__texto p:not(.cs-nac__selo) { margin: 0; font-size: var(--corpo-menor); line-height: 1.45; color: #b8ddd5; }
+.cs-nac__erro { color: #ffb4a6 !important; font-weight: 650; }
+.cs-nac__acao { display: grid; justify-items: center; gap: var(--e-2); }
+.botao.cs-nac__botao {
+  display: inline-flex; align-items: center; gap: var(--e-2); min-height: 48px; padding: 0 var(--e-5); white-space: nowrap;
+  border: 0; border-radius: 4px; background: var(--px-ouro); color: var(--px-tinta); font-weight: 800;
+  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra);
+  transition: transform 0.15s cubic-bezier(.2, .8, .2, 1), background-color 0.15s ease;
+}
+.botao.cs-nac__botao:hover:not(:disabled) { background: #ffdf95; transform: translate(-1px, -1px); }
+.botao.cs-nac__botao:active:not(:disabled) { transform: translate(2px, 2px); }
+.cs-nac__inscrito { display: inline-flex; align-items: center; gap: var(--e-2); min-height: 48px; padding: 0 var(--e-4); background: var(--px-tinta); color: var(--px-ouro); font-weight: 700; font-size: var(--corpo-menor); text-decoration: none; box-shadow: 0 0 0 2px var(--px-ouro); }
+.cs-nac__mais { color: var(--px-ouro); font-size: var(--meta); font-weight: 650; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 48rem) {
+  .cs-nac { grid-template-columns: auto minmax(0, 1fr); padding: var(--e-4); }
+  .cs-nac__arte { width: 3.25rem; height: 3.25rem; }
+  .cs-nac__arte img { width: 40px; height: 40px; }
+  .cs-nac__acao { grid-column: 1 / -1; justify-items: stretch; }
+  .botao.cs-nac__botao, .cs-nac__inscrito { justify-content: center; white-space: normal; text-align: center; }
+  .cs-nac__mais { justify-self: center; }
+}

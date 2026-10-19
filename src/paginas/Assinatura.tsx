@@ -630,7 +630,7 @@ const limitesHabilitadosTexto = () => LIMITES_HABILITADOS ? `Gratuito: ${fraseGr
 
 function SecaoRecursos({ servico }: { servico: string | null }) {
   const recursos: Array<{ img: string; titulo: string; texto: string; destino: string }> = [
-    { img: 'pixel/ranking.png', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões em duas horas. Corrigida na hora, com a sua posição e o que falta, tema por tema, para você estar pronto.', destino: '/simulado-nacional' },
+    { img: 'pixel/ranking.png', titulo: 'Simulado Nacional, todo mês', texto: 'A mesma prova para todo o Brasil: 50 questões oficiais do TEOT e do TARO em duas horas, no peso do que mais cai. Corrigida na hora, com o comentário de cada questão, a sua posição e o que rende revisar, área por área.', destino: '/simulado-nacional' },
     { img: 'pixel/treinar.png', titulo: 'Frases que caem', texto: 'O que cai, em uma frase por assunto: as frases "Na prova" que você relê em minutos, junto dos resumos da Biblioteca.', destino: '/resumos/frases' },
     { img: 'pixel/liga.png', titulo: 'Liga da residência', texto: servico ? `Um ranking privado só seu e dos seus colegas. Crie a liga do ${servico}, mande o convite no grupo e estudem juntos.` : 'Um ranking privado do seu serviço. Crie a liga, mande o convite no grupo do WhatsApp e estudem juntos.', destino: '/ligas' },
     { img: 'pixel/relatorio.png', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, o acerto, os temas que subiram e o próximo passo.', destino: '/conta?secao=estudo' },

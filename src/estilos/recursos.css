@@ -57,28 +57,28 @@
 .tr-pilula--bloqueada svg { color: var(--ouro-texto); }
 
 /* ---- Heróis dos recursos (mesma linguagem do ranking) --------------------- */
-.sn-heroi, .pe-heroi, .lg-heroi, .lg-convite {
+.pe-heroi, .lg-heroi, .lg-convite {
   position: relative; overflow: hidden; isolation: isolate;
   padding: clamp(1.5rem, 4.5vw, 2.75rem);
   border-radius: var(--raio-cartao); color: var(--sobre-heroi); box-shadow: var(--sombra-media);
   background: var(--heroi);
 }
-.sn-heroi::before, .pe-heroi::before, .lg-heroi::before {
+.pe-heroi::before, .lg-heroi::before {
   content: ""; position: absolute; z-index: -1; width: 30rem; height: 30rem; left: -12rem; bottom: -20rem; border-radius: 50%;
   border: 1px solid var(--heroi-traco); box-shadow: 0 0 0 3rem rgba(255, 255, 255, 0.02), 0 0 0 6rem rgba(255, 255, 255, 0.015);
 }
-.sn-heroi h1, .pe-heroi h1, .lg-heroi h1, .lg-convite h1 { margin: 0 0 0.5rem; color: var(--sobre-heroi); font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.02em; line-height: 1.05; }
-.sn-heroi p, .pe-heroi p, .lg-heroi p, .lg-convite p { color: var(--sobre-heroi-2); }
-.sn-heroi__selo, .pe-heroi__selo, .lg-heroi__selo {
+.pe-heroi h1, .lg-heroi h1, .lg-convite h1 { margin: 0 0 0.5rem; color: var(--sobre-heroi); font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.02em; line-height: 1.05; }
+.pe-heroi p, .lg-heroi p, .lg-convite p { color: var(--sobre-heroi-2); }
+.pe-heroi__selo, .lg-heroi__selo {
   display: inline-flex; align-items: center; gap: 0.4rem; margin: 0 0 1rem !important;
   padding: 0.3rem 0.8rem; border-radius: 999px;
   background: rgba(232, 179, 79, 0.18); border: 1px solid rgba(255, 227, 163, 0.35);
   color: #ffe3a3 !important; font-size: var(--meta); font-weight: 700; letter-spacing: 0.03em;
 }
 
-/* ---- Simulado Nacional ---------------------------------------------------- */
+/* ---- Plano de estudo ------------------------------------------------------ */
 
-.sn-duas, .pe-duas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 1rem; }
+.pe-duas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 1rem; }
 
 /* ---- Plano até a prova ---------------------------------------------------- */
 

@@ -5,9 +5,10 @@ import { href } from '../util/rotas'
 import { Icone } from './Icone'
 import { IconePixel, type NomeIconePixel } from './IconePixel'
 import { SeloAssinante } from './Premium'
+import { usarNacionalAbertoATodos } from '../dados/nacionalEmDestaque'
 
 const RECURSOS: Array<{ icone: NomeIconePixel; titulo: string; texto: (mes: string) => string; destino: string }> = [
-  { icone: 'simulado', titulo: 'Simulado Nacional', texto: (mes) => `A prova de ${mes}: nota, posição e o que falta para você estar pronto.`, destino: '/simulado-nacional' },
+  { icone: 'simulado', titulo: 'Simulado Nacional', texto: (mes) => `A prova de ${mes}: 50 questões oficiais em 2 horas, com correção comentada e ranking nacional.`, destino: '/simulado-nacional' },
   { icone: 'liga', titulo: 'Liga da residência', texto: () => 'O ranking privado do seu serviço, com convite pelo WhatsApp.', destino: '/ligas' },
   { icone: 'turma', titulo: 'Como a turma respondeu', texto: () => 'Estude pelas questões que a maioria erra e pelas que você não pode errar.', destino: '/treinar?situacao=turmaErra&limite=20' },
   { icone: 'relatorio', titulo: 'Relatório do mês', texto: () => 'Todo dia 1º, sua evolução, os temas que subiram e o próximo passo.', destino: '/conta?secao=estudo' },
@@ -17,6 +18,8 @@ const RECURSOS: Array<{ icone: NomeIconePixel; titulo: string; texto: (mes: stri
 export function VitrineAssinante() {
   const { premium, logado } = usarPremium()
   const mes = nomeEdicao(edicaoDoMes()).split(' ')[0]
+  // Edição aberta a todos com conta grátis (outubro de 2026): o simulado sai do cadeado.
+  const nacionalAberto = usarNacionalAbertoATodos()
   return (
     <section className="pg-vitrine" aria-labelledby="pg-vitrine-titulo">
       <div className="pg-vitrine__cabeca">
@@ -28,7 +31,7 @@ export function VitrineAssinante() {
           <a key={r.destino} className="pg-recurso" href={href(r.destino)}>
             <span className="pg-recurso__topo">
               <span className="pg-recurso__icone pg-recurso__icone--pixel" aria-hidden="true"><IconePixel nome={r.icone} tamanho={40} /></span>
-              {!premium && <SeloAssinante />}
+              {!premium && !(nacionalAberto && r.destino === '/simulado-nacional') && <SeloAssinante />}
             </span>
             <strong>{r.titulo}</strong>
             <span className="pg-recurso__texto">{r.texto(mes)}</span>

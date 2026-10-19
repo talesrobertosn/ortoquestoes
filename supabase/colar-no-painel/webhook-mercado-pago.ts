@@ -39,7 +39,7 @@ var consultarPagamento = (token, id) => consultarMercadoPago(token, `v1/payments
 
 // supabase/functions/_shared/cartas.ts
 var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto", "pagamento_aprovado", "obrigado_tempo"];
-var TIPOS_CAMPANHAS_DIARIAS = ["assinou_sem_cronograma", "assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema"];
+var TIPOS_CAMPANHAS_DIARIAS = ["assinou_sem_cronograma", "assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema", "simulado_lembrete"];
 
 // supabase/functions/_shared/modelo-email.ts
 var esc = (texto) => texto.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -63,9 +63,9 @@ var TIPOS_AUTOMATICOS = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS]
 
 // supabase/functions/_shared/email.ts
 var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
-async function enviarEmail(para, assunto, html, texto, descadastro) {
+async function enviarEmail(para, assunto, html, texto, descadastro, responderPara) {
   const chave = Deno.env.get("RESEND_API_KEY"), remetente = Deno.env.get("EMAIL_REMETENTE");
-  const responder = Deno.env.get("EMAIL_RESPONDER_PARA")?.trim();
+  const responder = responderPara?.trim() || Deno.env.get("EMAIL_RESPONDER_PARA")?.trim();
   if (!chave || !remetente) throw new Error("email_nao_configurado");
   const resposta = await fetch("https://api.resend.com/emails", {
     method: "POST",
