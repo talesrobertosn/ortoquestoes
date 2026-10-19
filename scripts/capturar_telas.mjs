@@ -98,13 +98,15 @@ const SEM_CONTA = args.includes('--sem-conta')
 const TEMA = args.includes('--escuro') ? 'escuro' : 'claro'
 const { mkdirSync } = await import('node:fs')
 mkdirSync(TELAS, { recursive: true })
-// --com-dados: 420 respostas de exemplo nos últimos 40 dias (65% de acerto), para desempenho, ranking e cronograma.
+// --com-dados: 420 respostas de exemplo nos últimos 40 dias (65% de acerto), para desempenho, ranking e cronograma,
+// e 37 favoritas (30 respondidas, 7 novas) para /favoritas.
 const COM_DADOS = args.includes('--com-dados')
 // --roteiro ARQ.mjs: o arquivo exporta default async (pagina, foto) e fotografa cada passo de um fluxo
 // (foto('sufixo') salva a dobra como <prefixo>-<sufixo>-<cel|pc>.png).
 const iRoteiro = args.indexOf('--roteiro')
 const roteiro = iRoteiro >= 0 ? (await import(new URL(args[iRoteiro + 1], `file://${process.cwd()}/`).href)).default : null
 let respondidasExemplo = null
+let favoritosExemplo = null
 if (COM_DADOS) {
   const { readFileSync } = await import('node:fs')
   const indice = JSON.parse(readFileSync(new URL('../public/acervo/indice.json', import.meta.url), 'utf8'))
@@ -119,20 +121,24 @@ if (COM_DADOS) {
     const c = sorte() < 0.65
     respondidasExemplo[id] = { c, q: em, tentativas: 1, acertos: c ? 1 : 0, erros: c ? 0 : 1, sequencia: c ? 1 : 0, proximaRevisao: em + (c ? 10 : 1) * 86400000, confianca: c ? 'seguro' : 'duvida', historico: [{ em, correta: c, confianca: c ? 'seguro' : 'duvida' }] }
   }
+  // Favoritas de exemplo: 30 já respondidas (acertos e erros) e 7 ainda novas, para a página /favoritas.
+  const feitas = Object.keys(respondidasExemplo)
+  favoritosExemplo = [...feitas.filter((_, i) => i % 9 === 0).slice(0, 30), ...ids.filter((id) => !respondidasExemplo[id]).filter((_, i) => i % 97 === 0).slice(0, 7)]
 }
 const ESCONDER = '.aviso-termos, .aviso-cookies, [class*="AvisoTermos"], [class*="aviso-termos"], vite-error-overlay { display: none !important; }'
 for (const [nome, vp, esc] of [['cel', { width: 390, height: 844 }, 2], ['pc', { width: 1440, height: 900 }, 1]]) {
   const contexto = await navegador.newContext({ viewport: vp, deviceScaleFactor: esc, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', hasTouch: vp.width < 600 })
   await contexto.route(`${SUPABASE}/**`, atender)
   const sessaoAuth = { access_token: `tok-${CONTA}`, refresh_token: 'r', token_type: 'bearer', expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 30 * 24 * 3600, user: { ...usuarioFalso(CONTA), user_metadata: { nome: 'Tales', termos_versao: 999 } } }
-  await contexto.addInitScript(([s, t, sem, r, c]) => {
+  await contexto.addInitScript(([s, t, sem, r, c, f]) => {
     if (!sem) localStorage.setItem('sb-ortoquestoes-auth', s)
     localStorage.setItem('oq-cookies', JSON.stringify({ escolha: 'recusado', versao: 1 }))
     localStorage.setItem('oq:eventos:ligados:v1', '0')
     localStorage.setItem('ortoquestoes:tema', JSON.stringify(t))
     localStorage.setItem('oq-termos-adiado', String(Date.now()))
     if (r && !sem) localStorage.setItem(`ortoquestoes:conta:${c}:respondidas`, r)
-  }, [JSON.stringify(sessaoAuth), TEMA, SEM_CONTA, respondidasExemplo ? JSON.stringify(respondidasExemplo) : null, CONTA])
+    if (f && !sem) localStorage.setItem(`ortoquestoes:conta:${c}:favoritos`, f)
+  }, [JSON.stringify(sessaoAuth), TEMA, SEM_CONTA, respondidasExemplo ? JSON.stringify(respondidasExemplo) : null, CONTA, favoritosExemplo ? JSON.stringify(favoritosExemplo) : null])
   const p = await contexto.newPage()
   p.on('pageerror', (e) => erros.push(`${nome}: ${e.message}`))
   await p.goto(`${BASE}#${ROTA}`); await p.waitForTimeout(4000); await p.addStyleTag({ content: ESCONDER }); await p.waitForTimeout(400)
