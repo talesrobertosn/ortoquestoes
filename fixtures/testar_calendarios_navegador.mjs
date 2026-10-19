@@ -24,6 +24,11 @@ async function calendario(p, prova = '2027-01-10') {
   await p.locator('.cc--embutido .cc-janela').waitFor()
   await p.evaluate(async () => (await import('/src/estado/armazenamento.ts')).gravar('cronograma:tour-v2', true))
   await p.locator('.cc--embutido').scrollIntoViewIfNeeded()
+  // Desde 19/10/2026 o calendário abre na semana; o mês inteiro abre pelo botão dourado, na própria página.
+  assert.equal(await p.locator('.ccs-dia > button[aria-current="date"]').count(), 1, 'a semana mostra hoje')
+  await p.getByRole('button', { name: 'Ver o mês inteiro', exact: true }).click()
+  await p.locator('.cc-mes-grade').waitFor()
+  assert.equal(await p.evaluate(() => document.activeElement?.id), 'cc-titulo', 'o foco vai para o título do mês')
 }
 try {
   for (const [nome, w, h] of [['computador',1400,860],['celular',390,844]]) {

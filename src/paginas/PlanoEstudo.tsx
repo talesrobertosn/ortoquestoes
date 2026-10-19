@@ -531,7 +531,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
 
     {/* Prioridade da página (Tales, 17/10/2026): o calendário grande vem logo abaixo de "Onde você está";
         o detalhe de hoje, a coluna lateral e os recolhidos ficam depois. */}
-    {temCalendario && <CalendarioCronograma embutido plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
+    {temCalendario && <CalendarioCronograma embutido nome={nome} plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
       acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} />}
 
     <div className="cp-colunas">

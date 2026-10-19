@@ -44,12 +44,6 @@ const FORMATO_MES = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'num
 const FORMATO_LONGO = new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
 const nomeMes = (d: Date) => { const s = FORMATO_MES.format(d); return s[0].toUpperCase() + s.slice(1) }
 const dataLonga = (d: Date) => FORMATO_LONGO.format(d)
-const faixa = (partes: Array<{ slug: string; n: number }>) => {
-  const total = partes.reduce((s, p) => s + p.n, 0)
-  if (!total) return 'transparent'
-  let acc = 0
-  return `linear-gradient(90deg, ${partes.map((p) => { const ini = (acc / total) * 100; acc += p.n; return `${corDaArea(p.slug)} ${ini}% ${(acc / total) * 100}%` }).join(', ')})`
-}
 const juntar = (nomes: string[]) => nomes.length <= 1 ? nomes.join('') : `${nomes.slice(0, -1).join(', ')} e ${nomes[nomes.length - 1]}`
 
 export interface AcoesCalendario {
@@ -62,7 +56,28 @@ export interface AcoesCalendario {
   salvando?: boolean
 }
 
-export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar, embutido = false }: {
+export type VistaCalendario = 'semana' | 'mes'
+const CHAVE_VISTA = 'oq:cronograma:calendario:vista'
+function lerVista(): VistaCalendario {
+  try { return sessionStorage.getItem(CHAVE_VISTA) === 'mes' ? 'mes' : 'semana' } catch { return 'semana' }
+}
+function gravarVista(v: VistaCalendario) {
+  try { sessionStorage.setItem(CHAVE_VISTA, v) } catch { /* sem armazenamento: a escolha vale só nesta tela */ }
+}
+/** A segunda-feira da semana (o calendário vai de segunda a domingo), sem somar horas a uma meia-noite. */
+const segundaDe = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate() - (d.getDay() + 6) % 7)
+const maisDias = (d: Date, n: number) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n)
+const FORMATO_DIA_MES = new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'long' })
+const FORMATO_MES_CURTO = new Intl.DateTimeFormat('pt-BR', { month: 'short' })
+const mesCurto = (d: Date) => FORMATO_MES_CURTO.format(d).replace('.', '')
+/** "19 a 25 de outubro" ou "26 de outubro a 1 de novembro". */
+function faixaDaSemana(seg: Date): string {
+  const dom = maisDias(seg, 6)
+  if (seg.getMonth() === dom.getMonth()) return `${seg.getDate()} a ${FORMATO_DIA_MES.format(dom)}`
+  return `${FORMATO_DIA_MES.format(seg)} a ${FORMATO_DIA_MES.format(dom)}`
+}
+
+export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar, embutido = false, nome = '' }: {
   plano: PlanoSalvo
   calculo: CalculoPlano
   indice: Indice
@@ -74,16 +89,24 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   aoFechar?: () => void
   /** Na página do cronograma o calendário fica sempre aberto (pedido do Tales, 16/10/2026). */
   embutido?: boolean
+  /** O primeiro nome da pessoa, para a frase de abertura (vazio: a frase funciona sem ele). */
+  nome?: string
 }) {
   const chaveHoje = usarDiaAtual()
   const hoje = diaCivil(chaveHoje)
   const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
   const { inicio, primeiroMes, ultimoMes, inicial } = limitesCalendario(criado, hoje, prova)
+  const primeiraSemana = segundaDe(inicio), ultimaSemana = segundaDe(prova)
+  // Pedido do Tales (19/10/2026): abre na semana; um botão abre o mês inteiro na própria página.
+  const [vista, definirVista] = useState<VistaCalendario>(lerVista)
   const [mes, definirMes] = useState(() => mesDe(inicial))
+  const [semana, definirSemana] = useState(() => segundaDe(inicial))
   const [selecionado, definirSelecionado] = useState<string>(() => chaveCivil(inicial))
   const ontem = useRef(chaveHoje)
   const janela = useRef<HTMLDivElement>(null)
+  const titulo = useRef<HTMLHeadingElement>(null)
+  const trocouVista = useRef(false)
   const fecharAtual = useRef(aoFechar)
   fecharAtual.current = aoFechar
   const sair = () => aoFechar?.()
@@ -93,10 +116,25 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     const atual = limitarData(seguiaHoje ? hoje : diaCivil(selecionado), inicio, prova)
     definirSelecionado(chaveCivil(atual))
     definirMes(m => seguiaHoje ? mesDe(atual) : limitarData(m, primeiroMes, ultimoMes))
+    definirSemana(s => seguiaHoje ? segundaDe(atual) : limitarData(s, primeiraSemana, ultimaSemana))
   }, [chaveHoje, plano.data_prova, plano.criado_em]) // preserva a navegação manual entre atualizações do plano
   const [direcao, definirDirecao] = useState<'frente' | 'tras' | null>(null)
   const fechar = useRef<HTMLButtonElement>(null)
   const detalhe = useRef<HTMLElement>(null)
+
+  // Trocar de vista leva o foco ao título novo (quem usa leitor de tela ouve o que abriu).
+  useEffect(() => {
+    if (!trocouVista.current) return
+    titulo.current?.focus({ preventScroll: true })
+    const r = janela.current?.getBoundingClientRect()
+    if (r && (r.top < 0 || r.top > innerHeight * 0.6)) janela.current?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })
+  }, [vista])
+  function mudarVista(v: VistaCalendario) {
+    trocouVista.current = true
+    const sel = diaCivil(selecionado)
+    if (v === 'mes') definirMes(mesDe(sel)); else definirSemana(segundaDe(sel))
+    definirDirecao(null); definirVista(v); gravarVista(v)
+  }
 
   // O que foi feito em cada dia (todas as respostas, como na constância), por área.
   const feitoPorDia = useMemo(() => {
@@ -153,22 +191,25 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     return celulas
   }, [mes, calculo, feitoPorDia, plano, chaveHoje]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Os sete dias da semana visível, de segunda a domingo.
+  const dias7 = useMemo(() => Array.from({ length: 7 }, (_, i) => montarDia(maisDias(semana, i))), [semana, calculo, feitoPorDia, plano, chaveHoje]) // eslint-disable-line react-hooks/exhaustive-deps
+
   const diaSelecionado = useMemo(() => {
     const [a, m, d] = selecionado.split('-').map(Number)
     return montarDia(new Date(a, m - 1, d))
   }, [selecionado, calculo, feitoPorDia, plano, chaveHoje]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Resumo do mês: dias de estudo, questões planejadas e feitas.
-  const resumoMes = useMemo(() => {
+  // Resumo do trecho visível (mês ou semana): dias de estudo, questões planejadas e feitas.
+  const resumo = useMemo(() => {
     let estudo = 0, questoes = 0, feitas = 0, folgas = 0
-    for (const c of grade) {
+    for (const c of vista === 'mes' ? grade : dias7) {
       if (!c || c.fase === 'antes' || c.fase === 'depois') continue
       if (rotuloEstado(c).estado === 'folga') folgas++
       if (c.plano && c.plano.tipo !== 'folga') { estudo++; questoes += c.plano.total }
       if (c.data <= hoje) feitas += c.feitas
     }
     return { estudo, questoes, feitas, folgas }
-  }, [grade])
+  }, [grade, dias7, vista]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // Teclado, rolagem da página e foco: Esc fecha; o fundo não rola; o foco volta para quem abriu.
   useEffect(() => {
@@ -190,52 +231,79 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     return () => { window.removeEventListener('keydown', tecla); document.body.style.overflow = overflow; antes?.focus?.() }
   }, [embutido])
 
-  const podeVoltar = mes > primeiroMes, podeAvancar = mes < ultimoMes
+  const noMes = vista === 'mes'
+  const podeVoltar = noMes ? mes > primeiroMes : semana > primeiraSemana
+  const podeAvancar = noMes ? mes < ultimoMes : semana < ultimaSemana
   function irMes(delta: number) {
     const novo = new Date(mes.getFullYear(), mes.getMonth() + delta, 1)
     if (novo < primeiroMes || novo > ultimoMes) return
     definirDirecao(delta > 0 ? 'frente' : 'tras'); definirMes(novo)
     definirSelecionado(chaveCivil(selecaoNoMes(selecionado, novo, inicio, prova)))
   }
+  function irSemana(delta: number) {
+    const nova = maisDias(semana, 7 * delta)
+    if (nova < primeiraSemana || nova > ultimaSemana) return
+    definirDirecao(delta > 0 ? 'frente' : 'tras'); definirSemana(nova)
+    definirSelecionado(chaveCivil(limitarData(maisDias(diaCivil(selecionado), 7 * delta), inicio, prova)))
+  }
   function escolher(d: DiaCalendario) {
     definirSelecionado(d.chave)
-    // No celular o detalhe fica embaixo da grade: rola até ele (se ele não estiver à vista).
+    // O detalhe fica embaixo (no celular, e na semana em qualquer tela): rola até ele se não estiver à vista.
     const r = detalhe.current?.getBoundingClientRect()
-    if (window.matchMedia('(max-width: 52rem)').matches && (!r || r.top > innerHeight - 120 || r.top < 0)) {
+    const embaixo = !noMes || window.matchMedia('(max-width: 52rem)').matches
+    if (embaixo && (!r || r.top > innerHeight - 120 || r.top < 0)) {
       const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
       requestAnimationFrame(() => detalhe.current?.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' }))
     }
   }
-  function irHoje() { definirDirecao(null); definirMes(mesDe(inicial)); definirSelecionado(chaveCivil(inicial)) }
+  function irHoje() { definirDirecao(null); definirMes(mesDe(inicial)); definirSemana(segundaDe(inicial)); definirSelecionado(chaveCivil(inicial)) }
 
   // Áreas do mês para a legenda.
   const areasMes = new Map<string, string>()
   for (const c of grade) for (const i of c?.plano?.itens ?? []) areasMes.set(i.slug, i.nome)
 
+  const semanaDeHoje = segundaDe(inicial).getTime() === semana.getTime()
+  const seloSemana = semanaDeHoje ? (hoje > prova ? 'Semana da prova' : 'Esta semana') : semana > segundaDe(inicial) ? (semana.getTime() === maisDias(segundaDe(inicial), 7).getTime() ? 'Próxima semana' : 'Mais adiante') : (semana.getTime() === maisDias(segundaDe(inicial), -7).getTime() ? 'Semana passada' : 'Semanas atrás')
+  const explicacao = noMes
+    ? <>O mês inteiro do cronograma, até a prova em <b>{FORMATO_DIA_MES.format(prova)}</b>. A barra colorida de cada dia mostra as áreas; toque num dia para ver o que estudar.</>
+    : <>{nome ? `${nome}, esta` : 'Esta'} é a sua semana no cronograma. Cada dia mostra a área, quantas questões novas e o que você já fez. Toque num dia para ver o que estudar nele.</>
+  const corpoId = 'cc-corpo'
+  const rotuloAnterior = noMes ? 'Mês anterior' : 'Semana anterior'
+  const rotuloProximo = noMes ? 'Próximo mês' : 'Próxima semana'
+
   const conteudo = (
       <div className="cc-janela" ref={janela}>
         <header className="cc-topo">
           <div className="cc-topo__titulo">
-            <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> Calendário do cronograma · {plano.prova}</p>
-            <h2 id="cc-titulo" aria-live="polite">{nomeMes(mes).replace(/ de \d+$/, '')} <span className="cc-de">de </span>{mes.getFullYear()}</h2>
+            <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> {noMes ? 'O mês inteiro' : seloSemana} · {plano.prova}</p>
+            {noMes
+              ? <h2 id="cc-titulo" ref={titulo} tabIndex={-1} aria-live="polite">{nomeMes(mes).replace(/ de \d+$/, '')} <span className="cc-de">de </span>{mes.getFullYear()}</h2>
+              : <h2 id="cc-titulo" ref={titulo} tabIndex={-1} aria-live="polite" className="ccs-titulo">{faixaDaSemana(semana)}</h2>}
             <p className="cc-topo__resumo">
-              {resumoMes.estudo > 0 && <span><b className="numerico">{resumoMes.estudo}</b> dias de estudo · <b className="numerico">{resumoMes.questoes.toLocaleString('pt-BR')}</b> questões</span>}
-              {resumoMes.feitas > 0 && <span><b className="numerico">{resumoMes.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
-              {resumoMes.folgas > 0 && <span>{resumoMes.folgas} {resumoMes.folgas === 1 ? 'folga' : 'folgas'}</span>}
+              {resumo.estudo > 0 && <span><b className="numerico">{resumo.estudo}</b> {resumo.estudo === 1 ? 'dia' : 'dias'} de estudo · <b className="numerico">{resumo.questoes.toLocaleString('pt-BR')}</b> questões novas</span>}
+              {resumo.feitas > 0 && <span><b className="numerico">{resumo.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
+              {resumo.folgas > 0 && <span>{resumo.folgas} {resumo.folgas === 1 ? 'folga' : 'folgas'}</span>}
             </p>
           </div>
-          <div className="cc-nav">
-            <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={!podeVoltar} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
-            <button type="button" className="cc-nav__hoje" onClick={irHoje}>{hoje > prova ? 'Dia da prova' : 'Hoje'}</button>
-            <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={!podeAvancar} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
-            {!embutido && <button type="button" className="cc-fechar" ref={fechar} onClick={sair} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>}
+          <div className="ccs-controles">
+            <div className="cc-nav">
+              <button type="button" className="cc-nav__botao" onClick={() => noMes ? irMes(-1) : irSemana(-1)} disabled={!podeVoltar} aria-label={rotuloAnterior} title={rotuloAnterior}><Icone nome="esquerda" tamanho={18} /></button>
+              <button type="button" className="cc-nav__hoje" onClick={irHoje}>{hoje > prova ? 'Dia da prova' : 'Hoje'}</button>
+              <button type="button" className="cc-nav__botao" onClick={() => noMes ? irMes(1) : irSemana(1)} disabled={!podeAvancar} aria-label={rotuloProximo} title={rotuloProximo}><Icone nome="direita" tamanho={18} /></button>
+              {!embutido && <button type="button" className="cc-fechar" ref={fechar} onClick={sair} aria-label="Fechar o calendário"><Icone nome="fechar" tamanho={18} /></button>}
+            </div>
+            <button type="button" className={'ccs-alternar' + (noMes ? ' ccs-alternar--voltar' : '')} onClick={() => mudarVista(noMes ? 'semana' : 'mes')} aria-expanded={noMes} aria-controls={corpoId}>
+              <Icone nome={noMes ? 'cima' : 'calendario'} tamanho={18} />
+              {noMes ? 'Ver só a semana' : 'Ver o mês inteiro'}
+            </button>
           </div>
+          <p className="ccs-explica">{explicacao}</p>
         </header>
 
-        <div className="cc-corpo">
-          <div className="cc-mes">
+        <div id={corpoId} className={'cc-corpo' + (noMes ? ' cc-corpo--mes' : ' cc-corpo--semana') + (trocouVista.current ? (noMes ? ' ccm-entra' : ' ccs-entra') : '')} key={vista}>
+          {noMes ? <div className="cc-mes">
             <ol className="cc-semana" aria-hidden="true">{SEMANA.map((s) => <li key={s}>{s}</li>)}</ol>
-            <ol key={mes.getTime()} className={'cc-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Dias de ${nomeMes(mes)}`}>
+            <ol key={mes.getTime()} className={'cc-grade cc-mes-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Dias de ${nomeMes(mes)}`}>
               {grade.map((c, i) => c ? <Celula key={c.chave} dia={c} selecionado={c.chave === selecionado} aoEscolher={escolher} /> : <li key={`v${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />)}
             </ol>
             <ul className="cp-legenda cc-legenda" aria-label="Legenda">
@@ -247,17 +315,97 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
               <li><i className="cc-legenda__reta" />reta final</li>
             </ul>
           </div>
+          : <ol key={semana.getTime()} className={'ccs-semana' + (direcao ? ` ccs-semana--${direcao}` : '')} aria-label={`Semana de ${faixaDaSemana(semana)}`}>
+              {dias7.map((d) => <CelulaSemana key={d.chave} dia={d} selecionado={d.chave === selecionado} aoEscolher={escolher} metaRevisao={calculo.metaMedia} />)}
+            </ol>}
           <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={sair} />
         </div>
       </div>
   )
-  if (embutido) return <section className="cp cc cc--embutido cc--cronograma" id="calendario" aria-labelledby="cc-titulo">{conteudo}</section>
+  const classes = `cp cc cc--cronograma cc--vista-${vista}`
+  if (embutido) return <section className={`${classes} cc--embutido`} id="calendario" aria-labelledby="cc-titulo">{conteudo}</section>
   return createPortal(
-    <div className="cp cc" role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
+    <div className={classes} role="dialog" aria-modal="true" aria-labelledby="cc-titulo">
       <button type="button" className="cc-veu" aria-label="Fechar o calendário" tabIndex={-1} onClick={sair} />
       {conteudo}
     </div>,
     document.body,
+  )
+}
+
+/** Que tipo de dia é (o que o plano pede), sem repetir o estado. */
+function tipoDoDia(d: DiaCalendario): string {
+  if (d.fase === 'antes') return 'Antes do cronograma'
+  if (d.fase === 'depois') return 'Depois da prova'
+  if (d.fase === 'dia-prova') return 'Dia da prova'
+  if (d.fase === 'revisao') return 'Revisão forte'
+  if (d.fase === 'prova') return 'Modo prova'
+  if (d.fase === 'vespera') return 'Véspera da prova'
+  if (d.folga && !(d.fase === 'passado' && d.feitas > 0)) return 'Dia de descanso'
+  const p = d.plano
+  if (p?.tipo === 'leve') return 'Dia leve'
+  if (p?.tipo === 'dificil') return 'Dia mínimo'
+  return 'Dia de estudo'
+}
+
+/** O selo de estado de cada dia da semana: ícone e palavra (a cor nunca fala sozinha). */
+const SELO_ESTADO: Record<string, { texto: string; icone: Parameters<typeof Icone>[0]['nome'] }> = {
+  hoje: { texto: 'Hoje', icone: 'alvo' },
+  feito: { texto: 'Feito', icone: 'certo' },
+  parcial: { texto: 'Em parte', icone: 'relogio' },
+  atrasado: { texto: 'Sem estudo', icone: 'reiniciar' },
+  folga: { texto: 'Folga', icone: 'lua' },
+  prova: { texto: 'Prova', icone: 'bandeira' },
+  reta: { texto: 'Reta final', icone: 'fogo' },
+  adiantado: { texto: 'Adiantado', icone: 'raio' },
+}
+
+function CelulaSemana({ dia: d, selecionado, aoEscolher, metaRevisao }: { dia: DiaCalendario; selecionado: boolean; aoEscolher: (d: DiaCalendario) => void; metaRevisao: number }) {
+  const { estado, texto } = rotuloEstado(d)
+  const fora = estado === 'fora'
+  const passado = d.fase === 'passado' || (d.fase === 'hoje' && d.feitas > 0 && !d.plano?.itens.length)
+  const partes = passado ? d.areasFeitas : (d.plano?.itens ?? []).map((i) => ({ slug: i.slug, nome: i.nome, n: i.n }))
+  const areas = partes.reduce<Array<{ slug: string; nome: string; n: number }>>((acc, p) => { const a = acc.find((x) => x.slug === p.slug); if (a) a.n += p.n; else acc.push({ ...p }); return acc }, []).sort((a, b) => b.n - a.n)
+  const mostrarAreas = areas.length > 0 && estado !== 'folga'
+  const visiveis = areas.slice(0, 3)
+  const mini = !!d.plano?.mini
+  const ehHojeComMeta = estado === 'hoje' && (d.plano?.meta ?? 0) > 0
+  // O número grande do dia: questões novas planejadas, ou as feitas (dias que passaram).
+  let numero: string | null = null, rotulo = ''
+  if (estado === 'feito' || estado === 'parcial' || (passado && d.feitas > 0)) { numero = d.feitas.toLocaleString('pt-BR'); rotulo = d.feitas === 1 ? 'feita' : 'feitas' }
+  else if (ehHojeComMeta) { numero = String(d.plano!.meta); rotulo = 'questões novas' }
+  else if (estado === 'futuro' && d.plano && d.plano.total > 0) { numero = String(d.plano.total); rotulo = 'questões novas' }
+  else if (estado === 'reta' && d.fase === 'revisao' && metaRevisao > 0) { numero = `~${metaRevisao}`; rotulo = 'de revisão' }
+  // "A fazer" é o normal dos próximos dias: sem selo, para o olho ir ao que muda (hoje, feito, folga, prova).
+  const selo = fora || estado === 'futuro' ? null : SELO_ESTADO[estado]
+  const descricao = [dataLonga(d.data), selo?.texto, tipoDoDia(d), numero ? `${numero} ${rotulo}` : texto, mostrarAreas ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', mini ? 'mini-simulado' : '', ...d.marcos].filter(Boolean).join(', ')
+  const total = areas.reduce((s, a) => s + a.n, 0)
+  return (
+    <li className={`ccs-dia ccs-dia--${estado}${d.ehHoje ? ' ccs-dia--atual' : ''}${selecionado ? ' ccs-dia--selecionado' : ''}${mini || d.marcos.length ? ' ccs-dia--marco' : ''}`}>
+      <button type="button" onClick={() => aoEscolher(d)} aria-label={descricao} aria-pressed={selecionado} aria-current={d.ehHoje ? 'date' : undefined} disabled={fora}>
+        <span className="ccs-dia__data">
+          <small>{SEMANA[(d.data.getDay() + 6) % 7]}</small>
+          <b className="numerico">{d.data.getDate()}</b>
+          <small className="ccs-dia__mes">{mesCurto(d.data)}</small>
+        </span>
+        <span className="ccs-dia__meio">
+          <span className="ccs-dia__etiquetas">
+            {selo && <span className={`ccs-selo ccs-selo--${estado}`}><Icone nome={selo.icone} tamanho={13} />{selo.texto}</span>}
+            {!fora && <span className="ccs-dia__tipo">{tipoDoDia(d)}</span>}
+            {mini && <span className="ccs-selo ccs-selo--mini"><Icone nome="estrela" tamanho={12} />Mini-simulado</span>}
+          </span>
+          {fora && <span className="ccs-dia__fora">{tipoDoDia(d)}</span>}
+          {mostrarAreas && <ul className="ccs-dia__areas">
+            {visiveis.map((a) => <li key={a.slug}><i style={{ background: corDaArea(a.slug) }} aria-hidden="true" /><span>{a.nome}</span><em>{a.n}</em></li>)}
+            {areas.length > 3 && <li className="ccs-dia__mais">+ {areas.length - 3} {areas.length - 3 === 1 ? 'área' : 'áreas'}</li>}
+          </ul>}
+          {d.marcos.length > 0 && <span className="ccs-dia__marco"><Icone nome="bandeira" tamanho={12} />{d.marcos.join(' · ')}</span>}
+          {estado === 'adiantado' && <span className="ccs-dia__nota">Você já fez as questões deste dia</span>}
+        </span>
+        {numero && <span className="ccs-dia__numero"><b className="numerico">{numero}</b><small>{rotulo}</small>{ehHojeComMeta && d.feitas > 0 && <em>{Math.min(d.feitas, d.plano!.meta)} já feitas</em>}{d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && <s className="numerico" title="Antes de adiantar">{d.plano.total + d.plano.adiantado}</s>}</span>}
+        {mostrarAreas && total > 0 && <span className="ccs-dia__barra" aria-hidden="true">{areas.map((a) => <i key={a.slug} style={{ flexGrow: a.n, background: corDaArea(a.slug) }} />)}</span>}
+      </button>
+    </li>
   )
 }
 
@@ -322,7 +470,7 @@ function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selec
           {texto && <em data-curto={textoCurto(estado, texto)}><span>{texto}</span></em>}
           {d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && <s className="numerico">{d.plano.total + d.plano.adiantado}</s>}
         </span>
-        {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__faixa" style={{ background: faixa(areas) }} aria-hidden="true" />}
+        {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__faixa" aria-hidden="true">{areas.map((a) => <i key={a.slug} style={{ flexGrow: a.n, background: corDaArea(a.slug) }} />)}</span>}
       </button>
     </li>
   )
@@ -399,10 +547,12 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
 
   return (
     <section ref={ancora} className={`cc-detalhe cc-detalhe--${estado}`} aria-live="polite" aria-labelledby="cc-detalhe-titulo" style={{ ['--cor-area' as string]: principal ? corDaArea(principal.slug) : undefined }}>
-      <p className="cc-detalhe__data">{dataLonga(d.data)}{d.ehHoje && <span className="cc-detalhe__agora">hoje</span>}</p>
-      <h3 id="cc-detalhe-titulo">{titulo}</h3>
-      {sub && <p className="cc-detalhe__sub">{sub}</p>}
-      {d.fase === 'hoje' && calculo.feitasHoje > 0 && calculo.faltaHoje > 0 && <p className="cc-detalhe__progresso"><span style={{ width: `${Math.min(100, (calculo.feitasHoje / Math.max(1, calculo.metaDiaria)) * 100)}%` }} /><b>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} feitas</b></p>}
+      <div className="cc-detalhe__cabeca">
+        <p className="cc-detalhe__data">{dataLonga(d.data)}{d.ehHoje && <span className="cc-detalhe__agora">hoje</span>}</p>
+        <h3 id="cc-detalhe-titulo">{titulo}</h3>
+        {sub && <p className="cc-detalhe__sub">{sub}</p>}
+        {d.fase === 'hoje' && calculo.feitasHoje > 0 && calculo.faltaHoje > 0 && <p className="cc-detalhe__progresso"><span style={{ width: `${Math.min(100, (calculo.feitasHoje / Math.max(1, calculo.metaDiaria)) * 100)}%` }} /><b>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} feitas</b></p>}
+      </div>
       {linhas.length > 0 && <ul className="cc-detalhe__lista">
         {linhas.map((l) => (
           <li key={l.id} className={l.opcional ? 'cc-detalhe__item cc-detalhe__item--extra' : l.id.startsWith('marco') ? 'cc-detalhe__item cc-detalhe__item--marco' : 'cc-detalhe__item'}>
@@ -416,8 +566,10 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
           </li>
         ))}
       </ul>}
-      {total > 0 && <p className="cc-detalhe__total">Seu dia: <b>~{formatarTempo(total)}</b></p>}
-      {acao}
+      {(total > 0 || acao) && <div className="cc-detalhe__fim">
+        {total > 0 && <p className="cc-detalhe__total">Seu dia: <b>~{formatarTempo(total)}</b></p>}
+        {acao}
+      </div>}
     </section>
   )
 }
