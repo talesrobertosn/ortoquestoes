@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 19 | 1 | mao-1932 a mao-1950 | A 5, B 5, C 5, D 4 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 24 | 1 | mao-1932 a mao-1955 | A 6, B 6, C 6, D 6 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -117,7 +117,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 41 | IFP: causa mais comum da contratura em extensão | fato | cap. 10, p. 388, 389, 395, 403, 404 (a "causa mais comum" está no resumo do cap. 10) | mao / Deformidades dos dedos | 02 | mao-1939 | publicada |
 | 42 | Nervo cutâneo lateral do antebraço: origem e onde emerge | anatomia | cap. 26 | mao / Anatomia da mão e punho | 09 | | a fazer |
 | 43 | Paralisia obstétrica: achado e o que ele significa | par | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 10 | | a fazer |
-| 44 | GARCIA-ELIAS: estágio da lesão parcial reparável com ângulo normal | classificação | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
+| 44 | GARCIA-ELIAS: estágio da lesão parcial reparável com ângulo normal | classificação | cap. 13, p. 512 a 514 | mao / Instabilidade do carpo | 05 | mao-1951 | publicada |
 | 45 | Paralisia cerebral: punho em flexão e indicações | afirmativas | cap. 32 | mao / Transferências tendinosas e paralisias | 13 | | a fazer |
 | 46 | Retalho lateral do braço: artéria | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
 | 47 | Zona de atividade polarizante: molécula responsável | embriologia | cap. 35 | mao / Outras malformações congênitas | 15 | | a fazer |
@@ -131,7 +131,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 55 | Enxerto de pele na palma: espessura e mecanorreceptores | afirmativas | cap. 44 | mao / Cicatrização e enxertos de pele | 18 | | a fazer |
 | 56 | Sarcoma sinovial | afirmativas | cap. 59 | mao / Tumores da mão | 18 | | a fazer |
 | 57 | Vascularização lateral do braço (braquial profunda e colaterais) | afirmativas | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
-| 58 | Instabilidade carpal não dissociativa | afirmativas | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
+| 58 | Instabilidade carpal não dissociativa | afirmativas | cap. 13, p. 537 a 539 | mao / Instabilidade do carpo | 05 | mao-1952 | publicada |
 | 59 | VOCHE e MERLE: abdução do mínimo na paralisia ulnar | epônimo | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
 | 60 | Desfiladeiro torácico: compressão distal associada mais comum | fato | cap. 29 | mao / Neuropatia ulnar e outras compressões | 10 | | a fazer |
 | 61 | EATON e LITTLER: estágio pela descrição | classificação | cap. 11 | mao / Rizartrose e artrose da mão | 07 | | a fazer |
@@ -144,7 +144,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 68 | Grande dorsal e serrátil: tipo de retalho e artérias | par | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
 | 69 | Luxação do cotovelo: mecanismo mais comum | mecanismo | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 | | a fazer |
 | 70 | Anestesia em procedimento bilateral | afirmativas | cap. 1 | mao / Anestesia em cirurgia da mão | 13 | | a fazer |
-| 71 | Perilunar dorsal: ligamentos cuja lesão permite a luxação | anatomia | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
+| 71 | Perilunar dorsal: ligamentos cuja lesão permite a luxação | anatomia | cap. 13, p. 491, 492, 499, 500 | mao / Instabilidade do carpo | 05 | mao-1953 | publicada (o original apoiava a resposta no radioescafolunar, que o Green não considera ligamento verdadeiro; reescrita pela ruptura do SL dorsal no estágio I de Mayfield) |
 | 72 | Lesão baixa do mediano: músculo preservado | anatomia | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
 | 73 | Reimplante de dedo: sequência clássica | sequência | cap. 42 | mao / Amputações e reimplantes | 18 | | a fazer |
 | 74 | Pseudoartrose de metacarpo: tratamento | conduta | cap. 7, p. 263, 281, 282 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1936 | publicada |
@@ -155,10 +155,10 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 79 | Adulto: fraturas mais associadas à síndrome compartimental do membro superior | fato | cap. 51 | mao / Outros temas da mão | 17 | | a fazer |
 | 80 | Plexo braquial: quando fazer o eletrodiagnóstico | número | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 12 | | a fazer |
 | 81 | Artroscopia: o que se vê pelo portal 3-4 | anatomia | cap. 17 | mao / Artrose do punho e artroscopia | 06 | | a fazer |
-| 82 | Dissociação SL aguda (ANDERSSON): padrão mais comum | classificação | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
+| 82 | Dissociação SL aguda (ANDERSSON): padrão mais comum | classificação | cap. 13, p. 492, 514 | mao / Instabilidade do carpo | 05 | mao-1954 | publicada |
 | 83 | BURKHALTER: transferência precoce na paralisia radial | epônimo | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
 | 84 | ARUD crônica após consolidação viciosa | afirmativas | cap. 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 | | a fazer |
-| 85 | DCSS: de qual ligamento se origina | anatomia | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
+| 85 | DCSS: de qual ligamento se origina | anatomia | cap. 13, p. 491 a 493, 512 a 514 | mao / Instabilidade do carpo | 05 | mao-1955 | publicada |
 | 86 | Ângulo da gota de lágrima: o que representa e o ligamento inserido | par | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
 | 87 | Reabilitação do flexor: início do fortalecimento isolado | número | cap. 6, p. 225 a 227 | mao / Lesões dos tendões flexores | 03 | mao-1943 | publicada |
 | 88 | Biomecânica da fratura do escafoide e do perilunar | afirmativas | cap. 16, p. 678 | mao / Fraturas do escafoide e do carpo | 04 | mao-1949 | publicada |
