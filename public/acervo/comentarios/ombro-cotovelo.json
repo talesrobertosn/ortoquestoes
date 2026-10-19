@@ -5612,29 +5612,28 @@
   "conferido": false
  },
  "ombro-cotovelo-0543": {
-  "conceito": "**Lesões SLAP e a classificação de Snyder.** SLAP significa lesão do lábio superior, de anterior para posterior (superior labrum anterior to posterior). Acomete a região onde o tendão da cabeça longa do bíceps se insere no tubérculo supraglenoidal e no lábio superior (âncora bicipital). Ocorre por tração (arremessadores), por compressão em queda com o braço estendido ou associada a luxações.\n\n| Tipo | Descrição |\n|---|---|\n| I | Desgaste e fibrilação do lábio superior; âncora do bíceps firme |\n| II | Desinserção do lábio superior **e da âncora do bíceps** da glenoide (o mais comum) |\n| III | Ruptura em **alça de balde** do lábio superior; âncora do bíceps normal |\n| IV | Alça de balde do lábio que se estende para dentro do tendão do bíceps |\n\n**Tratamento.**\n- **Tipo I**: desbridamento.\n- **Tipo II**: reparo artroscópico com âncoras em jovens e atletas; em pacientes mais velhos, tenodese ou tenotomia do bíceps costuma ter melhores resultados.\n- **Tipo III**: ressecção do fragmento em alça de balde.\n- **Tipo IV**: depende da extensão no bíceps (reparo, ressecção ou tenodese).\n\n**Classificações estendidas.** Maffet e outros acrescentaram tipos V a X, que combinam a SLAP com lesões de Bankart (tipo V), retalhos, ligamento glenoumeral médio ou extensão circunferencial.\n\n> SLAP II = lábio superior e âncora do bíceps soltos. Alça de balde com bíceps normal = tipo III.",
-  "correta": "**B: Errado.** O item descreve a lesão SLAP **tipo III** (ruptura em alça de balde do lábio superior com inserção do bíceps normal). O paciente tem SLAP **tipo II**, em que o lábio superior e a âncora do tendão do bíceps se desinserem do tubérculo supraglenoidal. O tipo II é o mais comum e é o que se associa com mais frequência a luxações e a instabilidade.",
   "incorretas": {
-   "A": "**Marcar certo é trocar os tipos II e III de Snyder.** Para memorizar: os tipos ímpares (I e III) poupam o bíceps; os tipos pares (II e IV) envolvem o bíceps, seja pela desinserção da âncora (II), seja pela extensão da ruptura para dentro do tendão (IV)."
+   "A": "**Certo não se aplica.** A combinação alça de balde e inserção preservada do bíceps define a tipo III; a pergunta pede que se julgue um caso classificado como tipo II."
   },
   "referencias": [
-   "Snyder SJ, Karzel RP, Del Pizzo W, Ferkel RD, Friedman MJ. SLAP lesions of the shoulder. Arthroscopy. 1990;6(4):274-279.",
-   "Rockwood CA Jr, Matsen FA III, Wirth MA, Lippitt SB, eds. Rockwood and Matsen's The Shoulder. Elsevier. Lesões do lábio superior e do bíceps."
+   "https://pubmed.ncbi.nlm.nih.gov/2264894/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**O número da SLAP muda o papel da âncora bicipital.** Na classificação de Snyder, a tipo II é a desinserção do lábio superior com instabilidade de sua âncora do bíceps. Já a tipo III é uma ruptura em alça de balde do lábio superior com a âncora preservada. Se a alça se estende ao próprio tendão do bíceps, é tipo IV. O caso informa explicitamente tipo II; as lesões de Bankart e Hill-Sachs associadas à luxação anterior não transformam a SLAP em tipo III.",
+  "correta": "**B, errado.** O item descreve a SLAP tipo III, não a tipo II mostrada na ressonância. Na tipo II, o complexo lábio superior e âncora bicipital se desinsere da glenoide.",
+  "geradoEm": "2026-10-19",
   "conferido": false
  },
  "ombro-cotovelo-0544": {
-  "conceito": "**Instabilidade traumática e frouxidão ligamentar.** No exame do ombro instável, é preciso separar dois grupos de testes, porque eles mudam o diagnóstico e o tratamento.\n\n**Testes de instabilidade traumática anterior.**\n- **Apreensão**: abdução de 90 graus e rotação externa progressiva. O paciente sente que o ombro vai sair e reage com medo (não apenas dor).\n- **Recolocação (Jobe)**: na mesma posição, em decúbito dorsal, uma força posterior sobre a cabeça do úmero alivia a apreensão.\n- **Surpresa (release)**: retirar subitamente a força posterior faz a apreensão voltar.\n\n**Testes de frouxidão (laxidão).**\n- **Sinal do sulco**: tração inferior do braço ao longo do corpo; uma depressão abaixo do acrômio indica frouxidão inferior (intervalo rotador). Persistência em rotação externa reforça o achado.\n- **Gaveta anterior e posterior**: translação da cabeça do úmero na glenoide com o paciente relaxado.\n- **Gagey (hiperabdução)**: abdução passiva acima de 105 graus sugere frouxidão do ligamento glenoumeral inferior.\n- **Critérios de Beighton**: hiperfrouxidão generalizada.\n\n**Interpretação no caso.** Apreensão e recolocação positivas com gaveta e sulco negativos indicam instabilidade **traumática unidirecional anterior**, sem frouxidão constitucional. Corresponde ao grupo TUBS de Matsen (traumática, unidirecional, lesão de Bankart, tratamento cirúrgico), em oposição ao grupo AMBRI (atraumática, multidirecional, bilateral, reabilitação, capsuloplastia inferior).\n\n> Apreensão e recolocação positivas, sulco e gaveta negativos: instabilidade traumática sem hiperfrouxidão.",
-  "correta": "**A: Certo.** No caso, a gaveta e o sinal do sulco, que avaliam a frouxidão ligamentar, são negativos. Já a apreensão e a recolocação, que traduzem instabilidade traumática anterior, são positivas. O quadro é o de instabilidade traumática unidirecional anterior (grupo TUBS), coerente com a luxação durante o skate e com as lesões de Bankart e Hill-Sachs na ressonância.",
   "incorretas": {
-   "B": "**Marcar errado seria interpretar a gaveta e o sulco como testes de lesão traumática.** Esses testes medem a translação passiva e são positivos sobretudo nos ombros frouxos, constitucionalmente ou por lesão capsular extensa. A apreensão e a recolocação são os que traduzem a instabilidade sintomática pós-traumática."
+   "B": "**Errado não corresponde ao gabarito.** A história de luxação traumática e os testes provocativos positivos apoiam instabilidade anterior, embora os testes negativos de translação não sejam prova absoluta de ausência de frouxidão."
   },
   "referencias": [
-   "Matsen FA III, Harryman DT II, Sidles JA. Mechanics of glenohumeral instability. Clin Sports Med. 1991;10(4):783-788.",
-   "Rockwood CA Jr, Matsen FA III, Wirth MA, Lippitt SB, eds. Rockwood and Matsen's The Shoulder. Elsevier. Instabilidade glenoumeral."
+   "https://pubmed.ncbi.nlm.nih.gov/14977651/",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5685956/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**Sintoma de instabilidade não é o mesmo que translação passiva.** A apreensão provocada em abdução e rotação externa, aliviada pelo teste de recolocação, sustenta instabilidade anterior sintomática, coerente com luxação traumática e lesões de Bankart e Hill-Sachs. Gaveta e sinal do sulco negativos não demonstraram translação excessiva nas manobras descritas. Entretanto, nenhum par de testes negativos exclui sozinho hiperfrouxidão constitucional; para isso, seriam necessários exame global, comparação bilateral e outras manobras. A banca usa esses resultados como contraste entre os testes provocativos positivos e os de frouxidão negativos.",
+  "correta": "**A, certo (gabarito oficial).** Neste exame, apreensão e recolocação são positivas e gaveta e sulco são negativos, em concordância com o enunciado. A conclusão sobre ausência de hiperfrouxidão deve ser entendida como inferência da prova, não como exclusão definitiva.",
+  "geradoEm": "2026-10-19",
   "conferido": false
  },
  "ombro-cotovelo-0545": {
@@ -5651,29 +5650,28 @@
   "conferido": false
  },
  "ombro-cotovelo-0546": {
-  "conceito": "**Fatores de risco para falha do reparo artroscópico de Bankart.** O reparo artroscópico tem bons resultados na maioria dos pacientes, mas a recidiva é maior em perfis específicos. Balg e Boileau organizaram esses fatores no escore ISIS (Instability Severity Index Score).\n\n| Fator | Pontos |\n|---|---|\n| Idade de 20 anos ou menos | 2 |\n| Esporte competitivo | 2 |\n| Esporte de contato ou com braço acima da cabeça | 1 |\n| Hiperfrouxidão do ombro | 1 |\n| Hill-Sachs visível na radiografia AP em rotação externa | 2 |\n| Perda do contorno inferior da glenoide na radiografia AP | 2 |\n\n**Interpretação.** Escores acima de 6 indicam risco de recidiva em torno de 70% com o reparo artroscópico isolado, e os autores recomendam procedimentos ósseos (como o Latarjet).\n\n**Outros fatores importantes.**\n- **Perda óssea da glenoide** (acima de cerca de 13% a 20% da largura).\n- **Lesão de Hill-Sachs que engata** (\"off-track\", pelo conceito de trilha glenoidal de Itoi e Di Giacomo).\n- Número elevado de luxações prévias.\n- Lesão de HAGL (avulsão umeral do ligamento glenoumeral) não reconhecida.\n\n**Por que os esportes de contato.** O ombro é exposto repetidamente às forças que causaram a primeira luxação, e o tecido reparado é desafiado com maior frequência e energia.\n\n> Esporte de contato aumenta o risco de recidiva após o reparo artroscópico de Bankart.",
-  "correta": "**A: Certo.** A prática de esportes de contato é fator de risco reconhecido para falha do reparo artroscópico de Bankart e faz parte do escore ISIS. O ombro reparado fica exposto a impactos repetidos de alta energia na posição de abdução e rotação externa. Em atletas jovens de contato, sobretudo com perda óssea, muitos cirurgiões preferem o Latarjet.",
   "incorretas": {
-   "B": "**Marcar errado seria considerar apenas fatores anatômicos, como a perda óssea.** Eles são os mais importantes, mas fatores do paciente, como idade jovem, esporte competitivo e de contato e hiperfrouxidão, também aumentam a recidiva e entram nos escores de decisão."
+   "B": "**Errado ignora um fator do paciente.** Mesmo que a anatomia óssea pese muito, a modalidade esportiva influencia o risco de nova instabilidade."
   },
   "referencias": [
-   "Balg F, Boileau P. The instability severity index score: a simple pre-operative score to select patients for arthroscopic or open shoulder stabilisation. J Bone Joint Surg Br. 2007;89(11):1470-1477.",
-   "Di Giacomo G, Itoi E, Burkhart SS. Evolving concept of bipolar bone loss and the Hill-Sachs lesion: from \"engaging/non-engaging\" lesion to \"on-track/off-track\" lesion. Arthroscopy. 2014;30(1):90-98."
+   "https://pubmed.ncbi.nlm.nih.gov/17998184/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**Esporte de contato aumenta a exposição ao mecanismo de recidiva.** Após reparo artroscópico de Bankart, impactos e posições de risco podem desafiar novamente a estabilização. No escore ISIS de Balg e Boileau, participar de esporte de contato ou de atividade acima da cabeça com força é um dos fatores associados à recorrência. Idade jovem, competição, hiperfrouxidão e defeitos ósseos também entram na avaliação. O fator isolado não determina a cirurgia: a decisão exige medir perda óssea glenoidal, avaliar a lesão de Hill-Sachs e considerar demanda e histórico de episódios.",
+  "correta": "**A, certo.** Ser atleta de esporte de contato é fator de risco reconhecido para recorrência após estabilização artroscópica anterior; o item pergunta pelo fator, não exige que ele seja o único ou o mais importante.",
+  "geradoEm": "2026-10-19",
   "conferido": false
  },
  "ombro-cotovelo-0547": {
-  "conceito": "**Lesão de Hill-Sachs.** É uma fratura por impactação (afundamento) na região **posterolateral** da cabeça do úmero, produzida quando a cabeça luxa anteriormente e sua face posterolateral se choca contra a borda anterior da glenoide.\n\n**Mecanismo.** Na luxação anterior, a cabeça se desloca para frente e para baixo. A borda anterior da glenoide, dura, afunda o osso esponjoso da cabeça. Quanto mais tempo luxado e mais luxações, maior a lesão.\n\n**Frequência.** Muito comum: presente na maioria das luxações anteriores recidivantes.\n\n**Lesões ósseas recíprocas.**\n- **Hill-Sachs**: na cabeça umeral, posterolateral (luxação anterior).\n- **Bankart ósseo**: na borda anteroinferior da glenoide (luxação anterior).\n- **Hill-Sachs reverso (McLaughlin)**: na face **anteromedial** da cabeça, na luxação posterior.\n\n**Imagem.** Radiografia AP em rotação interna (a lesão aparece de perfil na face posterolateral), incidência de Stryker, tomografia e ressonância.\n\n**Importância.** Lesões grandes podem engatar na borda anterior da glenoide durante a abdução e rotação externa (\"engaging\" ou \"off-track\"), causando recidiva mesmo após um reparo de Bankart. Nesses casos, associa-se o **remplissage** (preenchimento da lesão com o infraespinal e a cápsula posterior) ou um procedimento ósseo.\n\n> Hill-Sachs: impactação posterolateral da cabeça do úmero na luxação anterior.",
-  "correta": "**A: Certo.** A lesão de Hill-Sachs é uma fratura por impactação na região posterolateral da cabeça do úmero, produzida pelo choque contra a borda anterior da glenoide durante a luxação anterior. Está presente na maioria das luxações recidivantes e, quando grande, pode engatar na glenoide e favorecer a recidiva, exigindo remplissage ou procedimento ósseo.",
   "incorretas": {
-   "B": "**Marcar errado seria confundir com a lesão de Hill-Sachs reversa (McLaughlin), que fica na face anteromedial da cabeça e ocorre na luxação posterior.** Outro erro é confundi-la com a lesão de Bankart, que fica na glenoide e não na cabeça do úmero."
+   "B": "**Errado confundiria estruturas ou mecanismos.** Bankart acomete a borda glenoidal anteroinferior; o defeito umeral de uma luxação posterior fica em outra região e é chamado de Hill-Sachs reversa."
   },
   "referencias": [
-   "Hill HA, Sachs MD. The grooved defect of the humeral head: a frequently unrecognized complication of dislocations of the shoulder joint. Radiology. 1940;35(6):690-700.",
-   "Rockwood CA Jr, Matsen FA III, Wirth MA, Lippitt SB, eds. Rockwood and Matsen's The Shoulder. Elsevier. Instabilidade glenoumeral."
+   "https://pubmed.ncbi.nlm.nih.gov/2590322/",
+   "https://pubmed.ncbi.nlm.nih.gov/22053324/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**O defeito fica no lado oposto à luxação.** Na luxação anterior, a cabeça umeral passa pela borda anterior da glenoide, que impacta sua região posterolateral. A depressão óssea resultante é a lesão de Hill-Sachs. Ela não deve ser confundida com a lesão de Bankart, no lábio e eventualmente no osso da borda anteroinferior glenoidal, nem com a Hill-Sachs reversa, que surge na cabeça umeral após luxação posterior. O tamanho e a relação do defeito com a perda óssea da glenoide importam para o risco de engate, mas o item pergunta apenas sua localização.",
+  "correta": "**A, certo.** Hill-Sachs é uma fratura por impactação na região posterolateral da cabeça do úmero, tipicamente associada à luxação anterior.",
+  "geradoEm": "2026-10-19",
   "conferido": false
  },
  "ombro-cotovelo-0548": {
