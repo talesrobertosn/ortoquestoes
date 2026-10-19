@@ -29,3 +29,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | mao-0546 | Kienböck, carpectomia da fileira proximal no Lichtman IIIB (TEOT 2023) | posts/2026-10-18-kienbock-nivelamento (feed 3 e story 3) |
 | coluna-0283 | Incidência pélvica e inclinação sacral, equilíbrio sagital (TARO 2026) | posts/2026-10-19-topografia-bingo (feed) |
 | trauma-0220 | Instabilidade cervical subaxial, angulação maior que 11 graus (TEOT 2021) | posts/2026-10-19-topografia-bingo (stories) |
+| mao-1802 | Polegar do esquiador, LCU da MCF: estresse a 30° sem ponto final firme (Simulados, padrão SIMÃO) | posts/2026-10-20-pista-de-esqui-polegar (feed e stories) |

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões: Pista de esqui</title>
+<!-- Post de 20/10/2026, estilo novo "Pista de esqui". Questão mao-1802 (OrtoQuestões Simulados, padrão SIMÃO, gabarito C).
+     Linguagem das placas de pista de esqui (círculo verde, quadrado azul, losango preto), neve e azul profundo, dourado da marca.
+     Nenhum desenho de anatomia: placas, postes, montanhas, neve e teleférico são só cenário.
+     PNGs: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-20-pista-de-esqui-polegar/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --marinho: #0A2540; --noite: #061A30; --azul: #1F5FBF; --verde: #1E9E57; --preto: #111417; --vermelho: #D7263D;
+  --ouro: #F4CF7C; --neve: #FFFFFF; --gelo: #EAF2F8; --nevoa: #C8DAEA; --cinza: #5B6F86; --madeira: #7A4E2A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: #fff; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px;
+  background:
+    radial-gradient(900px 600px at 85% 10%, rgba(80,140,210,.28), transparent 70%),
+    radial-gradient(700px 500px at 0% 0%, rgba(244,207,124,.10), transparent 70%),
+    linear-gradient(180deg, #051629 0%, #0A2A4D 40%, #154676 72%, #2E6BA6 100%); }
+section.feed { height: 1350px; }
+/* Neve caindo: três camadas de pontos */
+section::before { content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.7) 2.6px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,.45) 1.8px, transparent 2.2px),
+    radial-gradient(circle, rgba(255,255,255,.22) 1.3px, transparent 1.7px);
+  background-size: 263px 227px, 157px 181px, 97px 109px;
+  background-position: 41px 67px, 113px 29px, 17px 53px; }
+
+/* Montanhas (cenário, polígonos) e encosta nevada */
+.serra { position: absolute; left: 0; right: 0; z-index: 2; }
+.serra .m { position: absolute; inset: 0; }
+.serra .longe { background: linear-gradient(180deg, #3D6E9E, #24527F); clip-path: polygon(0 58%, 9% 40%, 17% 50%, 31% 10%, 43% 40%, 52% 30%, 63% 52%, 79% 16%, 90% 38%, 100% 30%, 100% 100%, 0 100%); }
+.serra .neve1 { background: rgba(255,255,255,.92); clip-path: polygon(26% 21%, 31% 10%, 36% 21%, 33.5% 19%, 31% 24%, 28.5% 19%); }
+.serra .neve3 { background: rgba(255,255,255,.92); clip-path: polygon(74% 26%, 79% 16%, 84% 26%, 81.5% 24%, 79% 29%, 76.5% 24%); }
+.serra .perto { background: linear-gradient(180deg, #163F69, #0D2A4A); clip-path: polygon(0 80%, 14% 56%, 24% 66%, 41% 34%, 55% 62%, 68% 46%, 86% 70%, 100% 54%, 100% 100%, 0 100%); }
+.serra .neve2 { background: rgba(255,255,255,.88); clip-path: polygon(36% 43%, 41% 34%, 46% 43%, 43.5% 41.5%, 41% 46%, 38.5% 41.5%); }
+.encosta { position: absolute; left: -20%; width: 140%; z-index: 3; border-radius: 50% 50% 0 0 / 140px 140px 0 0;
+  background:
+    repeating-linear-gradient(98deg, rgba(10,37,64,.045) 0 3px, transparent 3px 15px),
+    linear-gradient(180deg, #FFFFFF 0%, #EAF2F8 55%, #D3E3F1 100%);
+  box-shadow: 0 -10px 40px rgba(0,0,0,.18); }
+
+/* Topo e textos */
+.topo { position: absolute; top: 250px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; z-index: 8; }
+.feed .topo { top: 60px; left: 64px; right: 64px; }
+.marca { display: flex; align-items: center; gap: 14px; font: 38px Jakarta; letter-spacing: -.02em; color: #fff; }
+.feed .marca { font-size: 32px; } .feed .marca svg { width: 48px; height: 48px; }
+.marca svg { width: 58px; height: 58px; display: block; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.etq { display: inline-flex; align-items: center; gap: 12px; font: 800 22px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--nevoa); }
+.etq::before { content: ''; width: 34px; height: 3px; background: var(--ouro); border-radius: 2px; }
+.etq .n { color: rgba(255,255,255,.55); letter-spacing: .08em; margin-left: 4px; }
+.abs { position: absolute; z-index: 8; }
+h1 { font: 800 92px/1 Jakarta; letter-spacing: -.045em; text-wrap: balance; color: #fff; }
+h1 em, .sub em { font-style: normal; color: var(--ouro); }
+.sub { font: 500 32px/1.4 Inter; color: #CFE0EE; text-wrap: pretty; }
+.sub b { color: #fff; font-weight: 700; }
+
+/* Selo da questão (pílula dourada) */
+.selo { display: inline-flex; align-items: center; gap: 12px; padding: 11px 22px 11px 14px; border-radius: 999px; background: var(--ouro); color: var(--marinho); font: 800 22px Jakarta; letter-spacing: .06em; text-transform: uppercase; box-shadow: 0 12px 28px rgba(0,0,0,.3); white-space: nowrap; }
+.selo .simb { --s: 26px; }
+
+/* Símbolos de dificuldade das pistas */
+.simb { --s: 60px; display: inline-block; flex-shrink: 0; position: relative; }
+.simb.verde { width: var(--s); height: var(--s); border-radius: 50%; background: var(--verde); }
+.simb.azul { width: calc(var(--s) * .9); height: calc(var(--s) * .9); margin: calc(var(--s) * .05); border-radius: calc(var(--s) * .08); background: var(--azul); }
+.simb.preta { width: calc(var(--s) * .7); height: calc(var(--s) * .7); margin: calc(var(--s) * .15); background: var(--preto); border-radius: calc(var(--s) * .06); transform: rotate(45deg); }
+.simb.marinho { background: var(--marinho); }
+.dupla { display: inline-flex; gap: 0; flex-shrink: 0; }
+.dupla .simb { --s: 46px; margin-left: -2px; margin-right: -2px; }
+
+/* Placa de pista: branca, borda marinho, em postes de madeira */
+.placa { position: absolute; z-index: 6; background: #fff; color: var(--marinho); border: 8px solid var(--marinho); border-radius: 26px;
+  box-shadow: 0 0 0 4px rgba(255,255,255,.9), 0 34px 70px rgba(0,0,0,.42); }
+.poste { position: absolute; z-index: 5; width: 28px; border-radius: 6px;
+  background: linear-gradient(90deg, #4E3018 0%, #8A5A32 45%, #6A4222 100%); box-shadow: 0 10px 20px rgba(0,0,0,.3); }
+.seta-placa { position: absolute; z-index: 6; display: flex; align-items: center; gap: 16px; padding: 18px 70px 18px 28px; color: #fff; background: var(--azul);
+  font: 800 28px Jakarta; letter-spacing: .03em; text-transform: uppercase; clip-path: polygon(0 0, calc(100% - 46px) 0, 100% 50%, calc(100% - 46px) 100%, 0 100%); }
+.seta-placa.ouro { background: var(--ouro); color: var(--marinho); }
+
+/* Quadro do mapa das pistas (painel claro para texto longo) */
+.mapa { position: absolute; z-index: 6; background: #fff; color: var(--marinho); border-radius: 30px; border: 6px solid var(--marinho);
+  box-shadow: 0 0 0 4px rgba(255,255,255,.85), 0 40px 80px rgba(0,0,0,.4); }
+.mapa .cab { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px 34px; background: var(--marinho); color: #fff; border-radius: 22px 22px 0 0;
+  font: 800 23px Jakarta; letter-spacing: .14em; text-transform: uppercase; }
+.mapa .cab span { display: inline-flex; align-items: center; gap: 14px; }
+.mapa .cab .simb { --s: 30px; }
+.mapa .cab small { font: 700 20px Inter; letter-spacing: .04em; text-transform: none; color: var(--ouro); }
+.enun { font: 500 31px/1.42 Inter; color: #13283F; text-wrap: pretty; }
+.alts { display: grid; gap: 14px; }
+.alt { display: grid; grid-template-columns: 58px 1fr; gap: 20px; align-items: center; padding: 16px 22px 16px 16px; border-radius: 18px; background: var(--gelo); border: 2px solid #D6E3EF; }
+.alt .l { width: 58px; height: 58px; border-radius: 14px; background: var(--marinho); color: #fff; display: grid; place-items: center; font: 800 30px Jakarta; }
+.alt p { font: 500 26.5px/1.36 Inter; color: #13283F; }
+
+/* Faixa de chamada */
+.faixa { position: absolute; z-index: 8; display: flex; align-items: center; justify-content: center; gap: 16px; padding: 22px 30px; border-radius: 22px; background: var(--ouro); color: var(--marinho);
+  font: 800 31px Jakarta; letter-spacing: -.01em; box-shadow: 0 18px 40px rgba(0,0,0,.3); }
+.faixa svg { width: 34px; height: 34px; display: block; }
+
+/* Trechos (legenda do mapa) */
+.trecho { display: grid; grid-template-columns: 96px 1fr; gap: 22px; align-items: center; padding: 15px 0; border-top: 2px solid #E2EBF3; }
+.trecho:first-child { border-top: 0; }
+.trecho .ic { display: flex; justify-content: center; }
+.trecho b { display: block; font: 800 31px/1.12 Jakarta; letter-spacing: -.02em; color: var(--marinho); }
+.trecho span { display: block; margin-top: 6px; font: 500 23px/1.34 Inter; color: var(--cinza); }
+
+.na-prova { position: absolute; z-index: 8; display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; padding: 20px 26px; border-radius: 22px;
+  background: #0D2E52; border: 2.5px solid var(--ouro); box-shadow: 0 20px 44px rgba(0,0,0,.3); }
+.na-prova .t { font: 800 22px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--marinho); background: var(--ouro); padding: 10px 16px; border-radius: 12px; white-space: nowrap; }
+.na-prova p { font: 600 25px/1.38 Inter; color: #fff; }
+.na-prova p b { color: var(--ouro); font-weight: 800; }
+
+.site { position: absolute; left: 0; right: 0; text-align: center; font: 800 26px Jakarta; letter-spacing: .05em; z-index: 8; }
+.arraste { position: absolute; right: 64px; bottom: 52px; z-index: 8; display: flex; align-items: center; gap: 8px; font: 800 22px Jakarta; letter-spacing: .08em; color: var(--marinho); text-transform: uppercase; }
+.arraste svg { width: 26px; height: 26px; display: block; }
+
+/* Enquete: cantos dourados, nada dentro */
+.enquete { position: absolute; z-index: 8; }
+.enquete i { position: absolute; width: 64px; height: 64px; border: 0 solid rgba(244,207,124,.85); }
+.enquete i:nth-child(1) { left: 0; top: 0; border-width: 5px 0 0 5px; border-radius: 22px 0 0 0; }
+.enquete i:nth-child(2) { right: 0; top: 0; border-width: 5px 5px 0 0; border-radius: 0 22px 0 0; }
+.enquete i:nth-child(3) { left: 0; bottom: 0; border-width: 0 0 5px 5px; border-radius: 0 0 0 22px; }
+.enquete i:nth-child(4) { right: 0; bottom: 0; border-width: 0 5px 5px 0; border-radius: 0 0 22px 0; }
+.vote { position: absolute; z-index: 8; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 12px; font: 800 24px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--ouro); }
+.vote svg { width: 30px; height: 30px; display: block; }
+
+/* Teleférico (cenário) */
+.cabo { position: absolute; z-index: 4; height: 4px; background: linear-gradient(90deg, rgba(200,218,234,.25), rgba(200,218,234,.8)); transform-origin: left center; }
+.cabine { position: absolute; z-index: 5; width: 190px; }
+.cabine .haste { width: 8px; height: 70px; margin: 0 auto; background: #9FB5C9; border-radius: 4px; }
+.cabine .roda { width: 46px; height: 22px; margin: 0 auto -4px; background: #9FB5C9; border-radius: 12px; }
+.cabine .caixa { position: relative; height: 150px; border-radius: 34px 34px 26px 26px; background: linear-gradient(180deg, #FBE2A6, var(--ouro) 55%, #D9AE55); box-shadow: 0 24px 50px rgba(0,0,0,.4); padding: 26px 22px; display: flex; gap: 14px; }
+.cabine .janela { flex: 1; height: 62px; border-radius: 14px; background: linear-gradient(160deg, #2A5A8C, #0A2540); }
+.cabine .caixa::after { content: ''; position: absolute; left: 22px; right: 22px; bottom: 22px; height: 6px; border-radius: 3px; background: rgba(10,37,64,.25); }
+
+/* Pistas abertas/fechadas */
+.pista { display: grid; grid-template-columns: 58px 1fr auto; gap: 18px; align-items: center; padding: 16px 20px; border-radius: 18px; background: rgba(255,255,255,.08); border: 2px solid rgba(255,255,255,.16); }
+.pista .l { width: 58px; height: 58px; border-radius: 14px; background: rgba(255,255,255,.16); color: #fff; display: grid; place-items: center; font: 800 30px Jakarta; }
+.pista p { font: 500 24px/1.34 Inter; color: #D7E5F1; }
+.pista p b { color: #fff; font-weight: 700; }
+.pista .st { font: 800 18px Jakarta; letter-spacing: .14em; text-transform: uppercase; padding: 9px 14px; border-radius: 10px; white-space: nowrap; }
+.st.fechada { color: #fff; background: var(--vermelho); }
+.st.aberta { color: #fff; background: var(--verde); }
+.pista.certa { background: #fff; border-color: var(--verde); }
+.pista.certa .l { background: var(--verde); }
+.pista.certa p { color: #13283F; } .pista.certa p b { color: var(--marinho); }
+
+/* Estações do mapa (story 3) */
+.rota { position: absolute; z-index: 8; }
+.rota::before { content: ''; position: absolute; left: 34px; top: 40px; bottom: 40px; border-left: 5px dashed rgba(244,207,124,.7); }
+.est { position: relative; display: grid; grid-template-columns: 72px 1fr; gap: 24px; align-items: start; margin-bottom: 26px; }
+.est:last-child { margin-bottom: 0; }
+.est .nro { width: 72px; height: 72px; border-radius: 50%; background: var(--ouro); color: var(--marinho); display: grid; place-items: center; font: 800 34px Jakarta; box-shadow: 0 0 0 8px rgba(6,26,48,.9); }
+.est b { display: block; font: 800 34px/1.1 Jakarta; letter-spacing: -.02em; color: #fff; padding-top: 4px; }
+.est span { display: block; margin-top: 8px; font: 500 25px/1.36 Inter; color: #CFE0EE; }
+.est span em { font-style: normal; color: var(--ouro); font-weight: 700; }
+.chips { position: absolute; z-index: 8; display: flex; flex-wrap: wrap; gap: 12px; }
+.chip { display: inline-flex; align-items: center; gap: 12px; padding: 12px 20px; border-radius: 999px; background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.22); font: 700 24px Jakarta; color: #fff; white-space: nowrap; }
+.chip .simb { --s: 22px; }
+.chip.ouro { background: var(--ouro); color: var(--marinho); border-color: var(--ouro); }
+.botao { display: inline-flex; align-items: center; gap: 18px; padding: 24px 50px; border-radius: 999px; background: linear-gradient(180deg, #FBE2A6, var(--ouro)); color: var(--marinho); font: 800 50px Jakarta; letter-spacing: -.03em; box-shadow: 0 22px 60px rgba(244,207,124,.35), 0 0 0 8px rgba(244,207,124,.14); white-space: nowrap; }
+.botao svg { width: 46px; height: 46px; display: block; }
+.g { font-style: normal; margin-right: -.16em; }
+.cartao { position: absolute; z-index: 8; padding: 24px 28px; border-radius: 22px; background: #0B2440; border: 2px solid rgba(200,218,234,.22); box-shadow: 0 20px 44px rgba(0,0,0,.25); }
+.sombra { text-shadow: 0 2px 14px rgba(5,22,41,.9); }
+</style></head>
+<body>
+<template id="simbolo"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></svg></template>
+<template id="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></template>
+<template id="baixo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15M6 13l6 6 6-6"/></svg></template>
+<template id="balao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10H10l-4.5 4v-4H4z"/></svg></template>
+<template id="serra"><div class="m longe"></div><div class="m neve1"></div><div class="m neve3"></div><div class="m perto"></div><div class="m neve2"></div></template>
+
+<!-- ======================= FEED (1080x1350, carrossel) ======================= -->
+
+<!-- Feed 1: a placa da pista, gancho sem resposta -->
+<section id="feed-1" class="feed">
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="etq">Cirurgia da mão<span class="n">1/3</span></div></div>
+  <div class="abs" style="left:64px; top:156px"><span class="selo"><i class="simb preta marinho"></i>OrtoQuestões Simulados · SIMÃO</span></div>
+  <h1 class="abs" style="left:64px; right:64px; top:236px; font-size:104px">Caiu segurando <em>o bastão.</em></h1>
+  <div class="serra" data-serra style="top:700px; height:520px"></div>
+  <div class="poste" style="left:300px; top:700px; height:520px"></div>
+  <div class="poste" style="left:752px; top:700px; height:520px"></div>
+  <div class="placa" style="left:64px; right:64px; top:480px; padding:40px 44px 34px">
+    <div style="display:grid; grid-template-columns:150px 1fr; gap:34px; align-items:center">
+      <div style="display:flex; justify-content:center"><i class="simb preta" style="--s:150px"></i></div>
+      <p style="font:800 62px/1.04 Jakarta; letter-spacing:-.04em">Qual achado fecha a ruptura completa?</p>
+    </div>
+    <p style="margin-top:28px; padding-top:22px; border-top:3px solid #E2EBF3; font:800 22px Jakarta; letter-spacing:.16em; text-transform:uppercase; color:var(--cinza)">Polegar do esquiador · estresse em valgo</p>
+  </div>
+  <div class="seta-placa ouro" style="left:276px; top:960px">A questão no próximo slide</div>
+  <div class="encosta" style="top:1120px; height:300px"></div>
+  <div class="arraste">Arraste <i data-icone="seta"></i></div>
+</section>
+
+<!-- Feed 2: a questão inteira -->
+<section id="feed-2" class="feed">
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="etq">A questão<span class="n">2/3</span></div></div>
+  <div class="serra" data-serra style="top:880px; height:400px"></div>
+  <div class="mapa" style="left:48px; right:48px; top:150px">
+    <div class="cab"><span><i class="simb preta" style="background:#fff"></i>Pista SIMÃO</span><small>OrtoQuestões Simulados</small></div>
+    <div style="padding:30px 34px 34px">
+      <p class="enun">Uma esquiadora caiu segurando o bastão e tem dor ulnar na metacarpofalângica do polegar. A radiografia não mostra fratura. Qual achado do estresse em valgo indica ruptura completa do ligamento colateral ulnar próprio?</p>
+      <div class="alts" style="margin-top:28px">
+        <div class="alt"><span class="l">A</span><p>Dor intensa com abertura discreta e ponto final firme, igual nas duas posições de teste</p></div>
+        <div class="alt"><span class="l">B</span><p>Abertura apenas em extensão completa, com estabilidade em 30 graus de flexão</p></div>
+        <div class="alt"><span class="l">C</span><p>Abertura em 30 graus de flexão acima de cerca de 30 a 35 graus, ou 15 graus a mais que o lado oposto, sem ponto final definido</p></div>
+        <div class="alt"><span class="l">D</span><p>Edema e equimose ulnar com dor à palpação, sem instabilidade ao estresse</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="encosta" style="top:1180px; height:240px"></div>
+  <div class="faixa" style="left:48px; right:48px; bottom:56px"><i data-icone="balao"></i>Comente a sua letra antes de descer para o slide 3</div>
+</section>
+
+<!-- Feed 3: a resposta em trechos, Na prova e o que são os simulados -->
+<section id="feed-3" class="feed">
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="etq">Resposta<span class="n">3/3</span></div></div>
+  <h1 class="abs" style="left:64px; right:64px; top:146px; font-size:66px">Resposta <em>C:</em> abre demais, sem ponto final firme.</h1>
+  <div class="mapa" style="left:48px; right:48px; top:326px">
+    <div class="cab"><span>Do verde à preta dupla</span><small>a descida do raciocínio</small></div>
+    <div style="padding:6px 34px 8px">
+      <div class="trecho"><div class="ic"><i class="simb verde" style="--s:58px"></i></div><div><b>30° de flexão isola o colateral próprio</b><span>relaxa o colateral acessório e a placa volar</span></div></div>
+      <div class="trecho"><div class="ic"><i class="simb azul" style="--s:58px"></i></div><div><b>Abre mais de 30 a 35<i class="g">°</i>, ou 15° a mais</b><span>que o polegar do outro lado</span></div></div>
+      <div class="trecho"><div class="ic"><i class="simb preta" style="--s:58px"></i></div><div><b>Sem ponto final firme</b><span>o achado mais confiável: a amplitude normal varia muito</span></div></div>
+      <div class="trecho"><div class="ic"><span class="dupla"><i class="simb preta"></i><i class="simb preta"></i></span></div><div><b>Lesão de Stener: cirurgia</b><span>a aponeurose do adutor impede a cicatrização no lugar</span></div></div>
+    </div>
+  </div>
+  <div class="na-prova" style="left:48px; right:48px; top:864px"><span class="t">Na prova</span><p>30° de flexão, abertura <b>acima de 30 a 35°</b> (ou 15° a mais que o outro lado) e <b>sem ponto final firme</b> = ruptura completa do LCU do polegar.</p></div>
+  <div class="cartao" style="left:48px; right:48px; top:1026px; display:grid; grid-template-columns:auto 1fr; gap:24px; align-items:center">
+    <span class="selo" style="flex-direction:column; gap:6px; padding:16px 18px; border-radius:18px; font-size:19px; line-height:1.1; text-align:center"><i class="simb preta marinho" style="--s:30px"></i>SIMÃO</span>
+    <p style="font:500 23px/1.42 Inter; color:#CFE0EE"><b style="color:#fff">OrtoQuestões Simulados</b> são questões autorais no padrão das provas: feitas do que a banca cobrou, com outros detalhes, e comentadas. As do <b style="color:var(--ouro)">SIMÃO</b> são para o título de especialista em Cirurgia da Mão e para quem quer entrar na cirurgia da mão.</p>
+  </div>
+  <div class="serra" data-serra style="top:1110px; height:300px"></div>
+  <p class="site sombra" style="top:1266px; color:#fff">ortoquestoes.com.br <span style="color:var(--ouro)">·</span> <span style="color:var(--nevoa)">@ortoquestoes</span></p>
+</section>
+
+<!-- ======================= STORIES (1080x1920) ======================= -->
+
+<!-- Story 1: checkpoint do teleférico, pergunta Sim/Não com espaço da enquete -->
+<section id="story-1">
+  <div class="cabo" style="left:-40px; top:486px; width:1200px; transform:rotate(-7deg)"></div>
+  <div class="cabine" style="left:770px; top:358px; transform:rotate(-2deg)"><div class="roda"></div><div class="haste"></div><div class="caixa"><span class="janela"></span><span class="janela"></span></div></div>
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+  <div class="abs" style="left:80px; top:520px"><span class="selo"><i class="simb preta marinho"></i>Checkpoint do teleférico</span></div>
+  <p class="abs" style="left:80px; top:590px; font:700 27px Jakarta; letter-spacing:.04em; color:var(--nevoa)">Responda para subir.</p>
+  <h1 class="abs sombra" style="left:80px; right:80px; top:676px; font-size:90px">Abertura grande, mas com <em>ponto final firme:</em> é ruptura completa?</h1>
+  <p class="abs sub sombra" style="left:80px; right:80px; top:982px">Estresse em valgo na MCF, a 30° de flexão. <b>Sim ou Não?</b></p>
+  <p class="vote" style="top:1080px">Vote aqui <i data-icone="baixo"></i></p>
+  <!-- Espaço da figurinha de enquete (Sim / Não): nada desenhado dentro dos cantos. -->
+  <div class="enquete" style="left:150px; right:150px; top:1132px; height:300px"><i></i><i></i><i></i><i></i></div>
+  <div class="seta-placa" style="left:80px; top:1476px">A resposta sai no próximo story</div>
+  <div class="serra" data-serra style="top:1480px; height:320px"></div>
+  <div class="encosta" style="top:1690px; height:300px"></div>
+  <p class="abs" style="left:0; right:0; top:1740px; text-align:center; font:800 22px Jakarta; letter-spacing:.16em; text-transform:uppercase; color:var(--cinza)">OrtoQuestões Simulados · SIMÃO</p>
+</section>
+
+<!-- Story 2: a resposta -->
+<section id="story-2">
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="etq">Resposta</div></div>
+  <p class="abs" style="left:76px; top:330px; font:800 230px/1 Jakarta; letter-spacing:-.06em; color:var(--ouro)">Não.</p>
+  <h1 class="abs" style="left:80px; right:80px; top:580px; font-size:66px">Ponto final firme é ligamento contínuo. <em>Sem ponto final firme</em> é que fecha.</h1>
+  <p class="abs sub sombra" style="left:80px; right:80px; top:830px; font-size:29px">O ponto final é a batida que o examinador sente quando o ligamento íntegro, mesmo alongado, fica tenso. A falta dele é o achado mais confiável, porque <b>a amplitude normal do polegar varia muito</b> entre pessoas.</p>
+  <p class="abs" style="left:80px; top:1060px; font:800 23px Jakarta; letter-spacing:.16em; text-transform:uppercase; color:var(--nevoa)">Na questão do SIMÃO: gabarito C</p>
+  <div class="abs" style="left:80px; right:80px; top:1106px; display:grid; gap:12px">
+    <div class="pista certa"><span class="l">C</span><p><b>Abertura em 30 graus de flexão acima de cerca de 30 a 35 graus, ou 15 graus a mais que o lado oposto, sem ponto final definido</b></p><span class="st aberta">Aberta</span></div>
+    <div class="pista"><span class="l">A</span><p>Ponto final firme: entorse ou lesão parcial</p><span class="st fechada">Fechada</span></div>
+    <div class="pista"><span class="l">B</span><p>Estável em flexão: o colateral próprio funciona</p><span class="st fechada">Fechada</span></div>
+    <div class="pista"><span class="l">D</span><p>Edema e dor sem instabilidade: não definem ruptura</p><span class="st fechada">Fechada</span></div>
+  </div>
+  <div class="serra" data-serra style="top:1580px; height:260px"></div>
+  <div class="encosta" style="top:1740px; height:260px"></div>
+</section>
+
+<!-- Story 3: a mecânica dos OrtoQuestões Simulados -->
+<section id="story-3">
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="etq">Como funciona</div></div>
+  <h1 class="abs" style="left:80px; right:80px; top:330px; font-size:72px">O mapa dos <em>OrtoQuestões Simulados</em></h1>
+  <div class="rota" style="left:80px; right:80px; top:520px">
+    <div class="est"><span class="nro">1</span><div><b>Lemos o que a prova cobrou</b><span>Esta nasceu do que o <em>SIMÃO 2026</em> perguntou na questão 91.</span></div></div>
+    <div class="est"><span class="nro">2</span><div><b>Escrevemos de novo, não 100% igual</b><span>O mesmo fato cobrado, com outro ângulo e outros detalhes.</span></div></div>
+    <div class="est"><span class="nro">3</span><div><b>Comentamos tudo</b><span>O conceito, por que a certa é certa, por que cada errada é errada e a linha "Na prova".</span></div></div>
+    <div class="est"><span class="nro">4</span><div><b>Você treina</b><span>Misturadas às oficiais no Treinar, ou só elas: <em>Só OrtoQuestões Simulados</em>.</span></div></div>
+  </div>
+  <p class="abs" style="left:80px; top:1050px; font:800 22px Jakarta; letter-spacing:.16em; text-transform:uppercase; color:var(--nevoa)">Pistas abertas</p>
+  <div class="chips" style="left:80px; right:80px; top:1092px">
+    <span class="chip ouro"><i class="simb preta marinho"></i>SIMÃO · Cirurgia da mão</span>
+    <span class="chip"><i class="simb azul"></i>Padrão TEOT e TARO</span>
+    <span class="chip"><i class="simb verde"></i>Anatomia</span>
+    <span class="chip"><i class="simb azul"></i>Fellowship de Quadril</span>
+  </div>
+  <p class="abs sub sombra" style="left:80px; right:80px; top:1252px; font-size:27px">Cirurgia da mão é especialidade com prova própria. O <b>SIMÃO</b> serve para quem vai fazer a prova de título da <b>Sociedade Brasileira de Cirurgia da Mão</b> e para quem quer entrar na cirurgia da mão.</p>
+  <div class="serra" data-serra style="top:1650px; height:260px"></div>
+  <div class="encosta" style="top:1790px; height:200px"></div>
+  <div class="abs" style="left:0; right:0; top:1400px; display:flex; justify-content:center"><span class="botao">Treine grátis <i data-icone="seta"></i></span></div>
+  <p class="site sombra" style="top:1530px; color:#fff">ortoquestoes.com.br</p>
+  <p class="abs sombra" style="left:80px; right:80px; top:1590px; text-align:center; font:500 20px/1.35 Inter; color:rgba(207,224,238,.75)">Questões autorais do Orto Questões. Não são questões oficiais nem cópia de prova.</p>
+</section>
+
+<script>
+document.querySelectorAll('[data-marca]').forEach(e => e.prepend(document.getElementById('simbolo').content.cloneNode(true)))
+document.querySelectorAll('[data-icone]').forEach(e => e.appendChild(document.getElementById(e.dataset.icone).content.cloneNode(true)))
+document.querySelectorAll('[data-serra]').forEach(e => e.appendChild(document.getElementById('serra').content.cloneNode(true)))
+</script>
+</body></html>

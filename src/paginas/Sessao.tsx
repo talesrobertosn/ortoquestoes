@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from 'react'
 import { BotaoConcluirFlutuante, ModalFimSessao } from '../componentes/ModalFimSessao'
 import { usarDeslizar } from '../util/usarDeslizar'
 import { preCarregarComentario } from '../dados/comentarios'
@@ -28,6 +28,82 @@ import { obterPlano } from '../conta/cronograma'
 import { usarPremium } from '../conta/premium'
 import { calcularPlano } from '../dados/planoEstudo'
 import { corDaArea } from '../dados/coresAreas'
+import { primeiroNome } from '../componentes/Cabecalho'
+import type { Resposta } from '../dados/tipos'
+import { porExtenso } from '../util/extenso'
+
+type EstadoBloco = 'certa' | 'errada' | 'neutra' | 'feita' | 'vazia'
+const ROTULO_BLOCO: Record<EstadoBloco, string> = { certa: 'correta', errada: 'errada', neutra: 'anulada', feita: 'respondida', vazia: 'não respondida' }
+function estadoDoBloco(r: Resposta | undefined, simulado: boolean): EstadoBloco {
+  if (!r) return 'vazia'
+  if (simulado) return 'feita'
+  return r.correta === true ? 'certa' : r.correta === false ? 'errada' : 'neutra'
+}
+
+/** Até 40 questões, um bloco por questão; acima disso, cada bloco junta algumas (sem rolagem lateral). */
+const LIMITE_BLOCOS = 40
+
+/**
+ * A evolução da sessão (redesenho de 18/10/2026): trilha de blocos de pixel, um por questão,
+ * cada um com o resultado (certa em verdete, errada em coral, anulada neutra), a atual com
+ * contorno dourado. A cor nunca é o único sinal: cada bloco tem rótulo, e o contador fica ao lado.
+ * Os blocos levam à questão; pelo teclado, o mapa (M) faz o mesmo sem 40 paradas de Tab.
+ */
+function TrilhaSessao({ ids, respostas, posicao, simulado, aoIr }: {
+  ids: string[]; respostas: Record<string, Resposta>; posicao: number; simulado: boolean; aoIr: (i: number) => void
+}) {
+  const total = ids.length
+  const passo = Math.max(1, Math.ceil(total / LIMITE_BLOCOS))
+  const grupos: Array<[number, number]> = []
+  for (let i = 0; i < total; i += passo) grupos.push([i, Math.min(total, i + passo)])
+  return (
+    <div
+      className={'sx-trilha' + (grupos.length > 24 ? ' sx-trilha--densa' : '')}
+      role="group"
+      aria-label="Questões da sessão"
+      style={{ gridTemplateColumns: `repeat(${grupos.length}, minmax(0, 1fr))` }}
+    >
+      {grupos.map(([de, ate]) => {
+        const atual = posicao >= de && posicao < ate
+        if (passo === 1) {
+          const estado = estadoDoBloco(respostas[ids[de]], simulado)
+          return (
+            <button
+              key={ids[de]} type="button" tabIndex={-1}
+              className={`sx-bloco sx-bloco--${estado}${atual ? ' sx-bloco--atual' : ''}`}
+              aria-label={`Questão ${de + 1}, ${ROTULO_BLOCO[estado]}${atual ? ', atual' : ''}`}
+              aria-current={atual ? 'step' : undefined}
+              onClick={() => aoIr(de)}
+            />
+          )
+        }
+        const conta = { certa: 0, errada: 0, neutra: 0, feita: 0, vazia: 0 }
+        let primeiraVazia = -1
+        for (let i = de; i < ate; i++) {
+          const e = estadoDoBloco(respostas[ids[i]], simulado)
+          conta[e]++
+          if (e === 'vazia' && primeiraVazia < 0) primeiraVazia = i
+        }
+        const n = ate - de
+        const pc = (v: number) => `${(v / n) * 100}%`
+        const a = conta.certa, b = a + conta.errada, c = b + conta.neutra + conta.feita
+        const partes = simulado
+          ? [`${conta.feita} respondidas`, `${conta.vazia} sem resposta`]
+          : [`${conta.certa} certas`, `${conta.errada} erradas`, conta.neutra ? `${conta.neutra} anuladas` : '', `${conta.vazia} sem resposta`].filter(Boolean)
+        return (
+          <button
+            key={de} type="button" tabIndex={-1}
+            className={`sx-bloco sx-bloco--grupo${conta.vazia === n ? ' sx-bloco--vazia' : ''}${atual ? ' sx-bloco--atual' : ''}`}
+            style={{ ['--sx-a' as string]: pc(a), ['--sx-b' as string]: pc(b), ['--sx-c' as string]: pc(c) }}
+            aria-label={`Questões ${de + 1} a ${ate}: ${partes.join(', ')}${atual ? ', inclui a atual' : ''}`}
+            aria-current={atual ? 'step' : undefined}
+            onClick={() => aoIr(atual ? posicao : primeiraVazia >= 0 ? primeiraVazia : de)}
+          />
+        )
+      })}
+    </div>
+  )
+}
 
 /**
  * Na sessão do cronograma: a meta de hoje, na cor da área, sempre à vista (reforma de 14/10/2026).
@@ -81,7 +157,100 @@ function FaixaCronograma({ respondidasNaSessao }: { respondidasNaSessao: number 
   )
 }
 
+/**
+ * A casca fixa da sessão (acabamento de 19/10/2026). Mede o cabeçalho do site e a barra da
+ * sessão e publica em :root, enquanto a sessão está aberta:
+ *   --oq-cabecalho  altura do cabeçalho do site (a barra gruda logo abaixo dele);
+ *   --oq-topo-fixo  o que fica fixo em cima de verdade (cabeçalho visível + barra), para o
+ *                   scroll-margin-top do cartão e para as rolagens da própria sessão.
+ * No celular, o cabeçalho sai ao rolar para baixo e volta ao rolar para cima (só transform,
+ * classe oq-cabecalho-oculto em <html>). Não sai com um painel ou diálogo aberto, nem com o
+ * foco do teclado dentro dele, nem perto do topo da página.
+ */
+const CELULAR = '(max-width: 40rem)'
+function usarTopoFixo(barra: RefObject<HTMLDivElement | null>, pronto: boolean, travado: boolean) {
+  const travadoRef = useRef(travado)
+  travadoRef.current = travado
+  const mostrar = useRef<() => void>(() => {})
+  useEffect(() => {
+    const raiz = document.documentElement
+    raiz.classList.add('oq-sessao')
+    return () => {
+      raiz.classList.remove('oq-sessao', 'oq-cabecalho-oculto')
+      for (const v of ['--oq-cabecalho', '--oq-topo-fixo']) raiz.style.removeProperty(v)
+    }
+  }, [])
+  useEffect(() => {
+    const raiz = document.documentElement
+    const cabecalho = document.querySelector<HTMLElement>('.cabecalho')
+    const elBarra = barra.current
+    if (!pronto || !elBarra) return
+    const celular = window.matchMedia(CELULAR)
+    let oculto = false
+    let altCabecalho = 0
+    let altBarra = 0
+    const publicar = () => {
+      raiz.style.setProperty('--oq-cabecalho', `${altCabecalho}px`)
+      raiz.style.setProperty('--oq-topo-fixo', `${(oculto ? 0 : altCabecalho) + altBarra}px`)
+    }
+    const definirOculto = (sim: boolean) => {
+      if (sim === oculto) return
+      oculto = sim
+      raiz.classList.toggle('oq-cabecalho-oculto', sim)
+      publicar()
+    }
+    mostrar.current = () => definirOculto(false)
+    const medir = () => {
+      altCabecalho = cabecalho?.offsetHeight ?? 0
+      altBarra = elBarra.offsetHeight
+      publicar()
+    }
+    medir()
+    const observador = typeof ResizeObserver === 'function' ? new ResizeObserver(medir) : null
+    if (cabecalho) observador?.observe(cabecalho)
+    observador?.observe(elBarra)
+
+    let ultimoY = window.scrollY
+    let quadro = 0
+    const avaliar = () => {
+      quadro = 0
+      const y = window.scrollY
+      const dy = y - ultimoY
+      if (Math.abs(dy) < 6 && y > altCabecalho * 2) return
+      ultimoY = y
+      const focoNoCabecalho = !!cabecalho && cabecalho.contains(document.activeElement)
+      const dialogo = !!document.querySelector('[aria-modal="true"], dialog[open]')
+      if (!celular.matches || travadoRef.current || focoNoCabecalho || dialogo || y <= altCabecalho * 2) definirOculto(false)
+      else if (dy > 0) definirOculto(true)
+      else if (dy < 0) definirOculto(false)
+    }
+    const aoRolar = () => { if (!quadro) quadro = requestAnimationFrame(avaliar) }
+    const aoFocar = () => definirOculto(false)
+    const aoMudarTela = () => { if (!celular.matches) definirOculto(false) }
+    window.addEventListener('scroll', aoRolar, { passive: true })
+    cabecalho?.addEventListener('focusin', aoFocar)
+    celular.addEventListener?.('change', aoMudarTela)
+    return () => {
+      cancelAnimationFrame(quadro)
+      observador?.disconnect()
+      window.removeEventListener('scroll', aoRolar)
+      cabecalho?.removeEventListener('focusin', aoFocar)
+      celular.removeEventListener?.('change', aoMudarTela)
+      mostrar.current = () => {}
+      definirOculto(false)
+    }
+  }, [barra, pronto])
+  // Abriu um painel, o mapa ou um diálogo: o cabeçalho volta e fica.
+  useEffect(() => { if (travado) mostrar.current() }, [travado])
+}
+
+/** Altura do que está fixo em cima, lida da variável publicada (0 se ainda não medida). */
+function topoFixo(): number {
+  return parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--oq-topo-fixo')) || 0
+}
+
 const CHAVE_FIM_MOSTRADO = 'ortoquestoes:fim-mostrado'
+const CHAVE_ELOGIOS = 'ortoquestoes:elogio-sessao'
 
 export function Sessao() {
   const { indice } = usarIndice()
@@ -96,6 +265,7 @@ export function Sessao() {
   const [erro, definirErro] = useState<string | null>(null)
   const areaGestos = useRef<HTMLDivElement>(null)
   const palco = useRef<HTMLDivElement>(null)
+  const barra = useRef<HTMLDivElement>(null)
   // O menu "…" da navegação fecha ao tocar fora ou com Esc.
   const menuMais = useRef<HTMLDetailsElement>(null)
   const fecharMenu = () => { if (menuMais.current) menuMais.current.open = false }
@@ -170,6 +340,50 @@ export function Sessao() {
     return n
   }, [sessao, simulado])
 
+  // O nome da pessoa nas frases-chave (adendo do dono, 18/10/2026); sem nome, a frase funciona sem ele.
+  const nome = primeiroNome(conta?.user.user_metadata?.nome)
+  // Incentivo calmo nas sequências de 5 e 10 acertos: uma vez por nível em cada sessão.
+  const [elogio, definirElogio] = useState<string | null>(null)
+  const comboAnterior = useRef(combo)
+  const temporizadorElogio = useRef<number | undefined>(undefined)
+  useEffect(() => () => window.clearTimeout(temporizadorElogio.current), [])
+  useEffect(() => {
+    const antes = comboAnterior.current
+    comboAnterior.current = combo
+    // Só uma resposta nova conta: reabrir a sessão ou sincronizar outro aparelho não comemora.
+    if (combo !== antes + 1 || !idSessao) return
+    const nivel = combo >= 10 && antes < 10 ? 10 : combo >= 5 && antes < 5 ? 5 : 0
+    if (!nivel) return
+    const chave = `${CHAVE_ELOGIOS}:${idSessao}:${nivel}`
+    try { if (sessionStorage.getItem(chave)) return; sessionStorage.setItem(chave, '1') } catch { /* sem armazenamento: mostra */ }
+    const frase = nivel === 10 ? 'dez seguidas. Ritmo de prova.' : 'cinco seguidas.'
+    definirElogio(nome ? `${nome}, ${frase}` : frase.charAt(0).toUpperCase() + frase.slice(1))
+    window.clearTimeout(temporizadorElogio.current)
+    temporizadorElogio.current = window.setTimeout(() => definirElogio(null), 3600)
+  }, [combo, idSessao, nome])
+  useEffect(() => { definirElogio(null) }, [idSessao])
+
+  usarTopoFixo(barra, !!(sessao && questoes), painelAberto || portaoContaAberto || fim === 'aberto')
+
+  // Destaques da sessão para o fim: o tema com mais acertos e o que mais pede revisão.
+  const destaques = useMemo(() => {
+    if (!sessao || simulado || !questoes) return { melhor: null, oportunidade: null }
+    const porTema = new Map<string, { certas: number; erradas: number }>()
+    for (const q of questoes) {
+      const r = sessao.respostas[q.id]
+      if (!r || r.correta === null || !q.tema) continue
+      const t = porTema.get(q.tema) ?? { certas: 0, erradas: 0 }
+      if (r.correta) t.certas++; else t.erradas++
+      porTema.set(q.tema, t)
+    }
+    const lista = [...porTema.entries()]
+    const melhor = lista.filter(([, t]) => t.certas >= 2 && t.certas > t.erradas)
+      .sort((x, y) => y[1].certas - x[1].certas || x[1].erradas - y[1].erradas)[0]?.[0] ?? null
+    const oportunidade = lista.filter(([nomeTema, t]) => nomeTema !== melhor && t.erradas >= 2)
+      .sort((x, y) => y[1].erradas - x[1].erradas)[0]?.[0] ?? null
+    return { melhor, oportunidade }
+  }, [sessao, simulado, questoes])
+
   // Cronômetro do simulado. O relógio corre no mundo: fechar a aba não pausa
   // a prova, e reabrir mostra o tempo que sobrou de verdade.
   const [restante, definirRestante] = useState<number | null>(() =>
@@ -227,8 +441,34 @@ export function Sessao() {
     return () => document.removeEventListener('keydown', aoTeclar)
   }, [sessao, posicao, irPara, irAdiante, painelAberto])
 
+  // Trocou de questão: o topo do cartão para logo abaixo da barra fixa (nunca embaixo dela).
+  // Só sobe: quem está no alto da página continua vendo os avisos de cima.
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'auto' })
+    const el = palco.current
+    if (!el) { window.scrollTo({ top: 0, behavior: 'auto' }); return }
+    const cabecalho = document.querySelector<HTMLElement>('.cabecalho')?.offsetHeight ?? 0
+    const barraAltura = barra.current?.offsetHeight ?? Math.max(0, topoFixo() - cabecalho)
+    // Rolar para cima traz o cabeçalho de volta: a conta usa a altura dele inteira.
+    const alvo = el.getBoundingClientRect().top + window.scrollY - cabecalho - barraAltura - 8
+    window.scrollTo({ top: Math.max(0, Math.min(window.scrollY, alvo)), behavior: 'auto' })
+  }, [posicao])
+
+  // Passar para o lado (18/10/2026): ao trocar pelos botões, setas ou mapa, a questão nova
+  // entra pelo lado de onde veio, em 220 ms e só com transform/opacity. Depois de um
+  // deslize, quem anima é o gesto (usarDeslizar marca o palco), então aqui não repete.
+  const posicaoAnterior = useRef(posicao)
+  useEffect(() => {
+    const antes = posicaoAnterior.current
+    posicaoAnterior.current = posicao
+    const el = palco.current
+    if (!el || antes === posicao) return
+    if (el.dataset.deslizou) { delete el.dataset.deslizou; return }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || typeof el.animate !== 'function') return
+    const lado = posicao > antes ? 1 : -1
+    el.animate(
+      [{ transform: `translateX(${lado * 32}px)`, opacity: 0.25 }, { transform: 'translateX(0)', opacity: 1 }],
+      { duration: 220, easing: 'cubic-bezier(.2,.8,.2,1)' },
+    )
   }, [posicao])
 
   // O comentário desta questão e o da próxima descem enquanto a pessoa lê:
@@ -366,12 +606,10 @@ export function Sessao() {
     navegar('/resumo')
   }
   return (
-    <div className="sessao-gestos" ref={areaGestos}>
-      {dicaDeslizar && !painelAberto && <p className="dica-deslizar nao-imprime" role="status"><Icone nome="esquerda" tamanho={15} /> Deslize para trocar de questão <Icone nome="direita" tamanho={15} /></p>}
-      {dicaTeclado && !dicaDeslizar && !painelAberto && <p className="dica-deslizar dica-teclado nao-imprime" role="status">Use as setas <kbd>←</kbd> <kbd>→</kbd> do teclado para trocar de questão</p>}
+    <div className="sessao-gestos sx-sessao" ref={areaGestos}>
       <button
         type="button"
-        className="seta-lateral seta-lateral--esquerda nao-imprime"
+        className="seta-lateral seta-lateral--esquerda sx-seta nao-imprime"
         onClick={() => irPara(posicao - 1)}
         disabled={posicao === 0}
         aria-label="Questão anterior"
@@ -381,7 +619,7 @@ export function Sessao() {
       </button>
       <button
         type="button"
-        className="seta-lateral seta-lateral--direita nao-imprime"
+        className={'seta-lateral seta-lateral--direita sx-seta nao-imprime' + (atualRespondida ? ' sx-seta--pronta' : '')}
         onClick={irAdiante}
         disabled={posicao + 1 >= total}
         aria-label="Próxima questão"
@@ -389,73 +627,75 @@ export function Sessao() {
       >
         <Icone nome="direita" tamanho={22} />
       </button>
-      <div className="barra-sessao nao-imprime">
+      <div className="barra-sessao sx-barra nao-imprime" ref={barra}>
         {sessao.origem === 'cronograma' && !simulado && <FaixaCronograma respondidasNaSessao={respondidas} />}
-        <div className={'conteudo barra-sessao__interno' + (atualRespondida ? ' barra-sessao__interno--respondida' : '')}>
-          <span className="barra-sessao__texto barra-sessao__texto--pixel">
-            {respondidas} de {total}
-          </span>
-          {combo >= 3 && <span className="barra-sessao__combo" title="Acertos seguidos nesta sessão"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {combo}</span>}
-          {restante !== null && (
-            <span
-              className={'cronometro' + (restante <= 300 ? ' cronometro--acabando' : '')}
-              role="timer"
-              aria-label={`Tempo restante do simulado: ${formatarDuracao(restante)}`}
-            >
-              {formatarDuracao(restante)}
-            </span>
-          )}
-          {/* Barra de XP (temporada RPG): um bloco por questão. No modo prova o
-              gabarito fica escondido, então respondida aparece só como respondida. */}
-          <div
-            className={total <= 40 ? 'xp-blocos' : 'progresso'}
-            role="progressbar"
-            aria-valuemin={0}
-            aria-valuemax={total}
-            aria-valuenow={respondidas}
-            aria-label="Questões respondidas"
-            style={total <= 40 ? { gridTemplateColumns: `repeat(${total}, minmax(0, 1fr))` } : undefined}
-          >
-            {total <= 40
-              ? sessao!.ids.map((id, i) => {
-                  const r = sessao!.respostas[id]
-                  const estado = i === posicao ? 'atual' : !r ? 'vazio' : simulado ? 'feito' : r.correta === true ? 'certa' : r.correta === false ? 'errada' : 'feito'
-                  return <span key={id} className={`xp-bloco xp-bloco--${estado}`} />
-                })
-              : <div className="progresso__preenchido" style={{ width: `${total ? (respondidas / total) * 100 : 0}%` }} />}
-          </div>
-          <button
-            type="button"
-            className="botao barra-sessao__mapa"
-            onClick={() => definirMapaAberto(true)}
-            style={{ minHeight: 36 }}
-          >
-            <Icone nome="mapa" tamanho={16} />
-            <span className="barra-sessao__mapa-rotulo">Mapa</span>
-          </button>
-          {atualRespondida && (
+        <div className={'conteudo barra-sessao__interno sx-barra__interno' + (atualRespondida ? ' barra-sessao__interno--respondida' : '')}>
+          <div className="sx-barra__linha">
+            <p className="sx-contador">
+              <span className="barra-sessao__texto barra-sessao__texto--pixel">{respondidas} de {total}</span>
+              <span className="sx-contador__rotulo">{respondidas === 1 ? 'respondida' : 'respondidas'}</span>
+            </p>
+            {/* A linha viva: a dica de trocar de questão, o incentivo das sequências ou o placar da sessão.
+                Fica dentro da barra (antes, a dica flutuava por cima do "Escolha uma alternativa"). */}
+            {/* Região viva fixa: o leitor de tela ouve o incentivo mesmo que a plaquinha nasça e suma. */}
+            <span className="so-leitor" role="status" aria-live="polite">{elogio ?? ''}</span>
+            <div className="sx-vivo">
+              {dicaDeslizar && !painelAberto ? (
+                <span className="sx-aviso sx-aviso--dica" role="status"><Icone nome="esquerda" tamanho={12} /> Deslize para trocar <Icone nome="direita" tamanho={12} /></span>
+              ) : dicaTeclado && !painelAberto ? (
+                <span className="sx-aviso sx-aviso--dica" role="status"><kbd>←</kbd><kbd>→</kbd> trocam de questão</span>
+              ) : elogio ? (
+                <span className="sx-aviso sx-aviso--elogio" aria-hidden="true"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" />{elogio}</span>
+              ) : combo >= 3 ? (
+                <span className="barra-sessao__combo sx-vivo__combo" title="Acertos seguidos nesta sessão"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {porExtenso(combo)} seguidas</span>
+              ) : !simulado && acertosSessao > 0 && acertosSessao * 2 >= respondidas ? (
+                <span className="sx-vivo__placar"><Icone nome="certo" tamanho={13} /> {porExtenso(acertosSessao, 'm')} {acertosSessao === 1 ? 'acerto' : 'acertos'}</span>
+              ) : null}
+            </div>
+            {restante !== null && (
+              <span
+                className={'cronometro sx-cronometro sx-cronometro--barra' + (restante <= 300 ? ' cronometro--acabando' : '')}
+                role="timer"
+                aria-label={`Tempo restante do simulado: ${formatarDuracao(restante)}`}
+              >
+                {formatarDuracao(restante)}
+              </span>
+            )}
             <button
               type="button"
-              className="botao botao--principal barra-sessao__proxima"
-              onClick={avancar}
-              title={posicao + 1 < total ? 'Próxima questão (→)' : 'Concluir a sessão'}
+              className="botao barra-sessao__mapa sx-botao"
+              onClick={() => definirMapaAberto(true)}
             >
-              {posicao + 1 < total ? 'Próxima' : 'Concluir'}
-              <Icone nome="direita" tamanho={16} />
+              <Icone nome="mapa" tamanho={16} />
+              <span className="barra-sessao__mapa-rotulo">Mapa</span>
             </button>
-          )}
-          <button
-            type="button"
-            className="botao-icone barra-sessao__teclado"
-            onClick={() => definirAtalhosAbertos(true)}
-            aria-label="Ver atalhos de teclado"
-            title="Atalhos (?)"
-          >
-            <Icone nome="teclado" />
-          </button>
+            {atualRespondida && (
+              <button
+                type="button"
+                className="botao botao--principal barra-sessao__proxima sx-botao sx-botao--ouro"
+                onClick={avancar}
+                title={posicao + 1 < total ? 'Próxima questão (→)' : 'Concluir a sessão'}
+              >
+                {posicao + 1 < total ? 'Próxima' : 'Concluir'}
+                <Icone nome="direita" tamanho={16} />
+              </button>
+            )}
+            <button
+              type="button"
+              className="botao-icone barra-sessao__teclado sx-botao-icone"
+              onClick={() => definirAtalhosAbertos(true)}
+              aria-label="Ver atalhos de teclado"
+              title="Atalhos (?)"
+            >
+              <Icone nome="teclado" />
+            </button>
+          </div>
+          {/* No modo prova o gabarito fica escondido: respondida aparece só como respondida. */}
+          <TrilhaSessao ids={sessao.ids} respostas={sessao.respostas} posicao={posicao} simulado={simulado} aoIr={irPara} />
         </div>
       </div>
-
+      <div className="sx-corpo">
+      <div className="sx-principal">
       {conta && !assinante && !simulado && !avisoSaldoFechado && respondidas === 0 && saldoInicial !== null && saldoInicial > 0 && saldoInicial < total && (
         <p className="aviso-saldo nao-imprime" role="status">
           <Icone nome="relogio" tamanho={16} />
@@ -473,6 +713,8 @@ export function Sessao() {
           riscadas={sessao.riscadas[questaoAtual.id] ?? []}
           favorita={favoritos.includes(questaoAtual.id)}
           marcadaRevisao={sessao.revisar.includes(questaoAtual.id)}
+          aoProxima={avancar}
+          rotuloProxima={posicao + 1 < total ? 'Próxima questão' : 'Ver o resultado'}
           aoResponder={async (letra, correta, segundos, confianca) => {
             if (!conta) { definirPortaoContaAberto(true); return }
             if (autorizando.current) return
@@ -507,7 +749,7 @@ export function Sessao() {
       )}
       </div>
 
-      <nav className="nav-sessao nao-imprime" aria-label="Navegação da sessão">
+      <nav className="nav-sessao sx-nav nao-imprime" aria-label="Navegação da sessão">
         <button
           type="button"
           className="botao nav-sessao__anterior"
@@ -539,7 +781,7 @@ export function Sessao() {
         </details>
         <button
           type="button"
-          className="botao botao--principal nav-sessao__proxima"
+          className={"botao botao--principal nav-sessao__proxima" + (atualRespondida ? " sx-nav__proxima--pronta" : "")}
           onClick={avancar}
           disabled={posicao + 1 >= total && respondidas === 0}
         >
@@ -548,13 +790,58 @@ export function Sessao() {
           <Icone nome="direita" tamanho={16} />
         </button>
       </nav>
+      </div>
+
+      {/* Coluna lateral do computador largo (19/10/2026): o mapa, o placar vivo, o tempo do
+          simulado e os atalhos ficam à vista ao lado do cartão. Abaixo de 72rem some (display:
+          none, fora da árvore de acessibilidade) e o botão Mapa da barra volta. */}
+      <aside className="sx-lado nao-imprime" aria-label="Painel da sessão">
+        <section className="sx-lado__bloco sx-lado__bloco--topo">
+          <h2 className="sx-lado__titulo">{nome ? `${nome}, sua sessão` : 'Sua sessão'}</h2>
+          <p className="sx-lado__conta"><b className="numerico">{respondidas}</b> de {total} {respondidas === 1 ? 'respondida' : 'respondidas'}</p>
+          {combo >= 3 ? (
+            <p className="sx-lado__vivo sx-lado__vivo--combo"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {porExtenso(combo)} acertos seguidos</p>
+          ) : !simulado && acertosSessao > 0 && acertosSessao * 2 >= respondidas ? (
+            <p className="sx-lado__vivo"><Icone nome="certo" tamanho={13} /> {porExtenso(acertosSessao, 'm')} {acertosSessao === 1 ? 'acerto' : 'acertos'} até aqui</p>
+          ) : null}
+          {restante !== null && (
+            <p className="sx-lado__tempo">
+              <span>Tempo restante</span>
+              <span
+                className={'cronometro sx-cronometro' + (restante <= 300 ? ' cronometro--acabando' : '')}
+                role="timer"
+                aria-label={`Tempo restante do simulado: ${formatarDuracao(restante)}`}
+              >
+                {formatarDuracao(restante)}
+              </span>
+            </p>
+          )}
+        </section>
+        <section className="sx-lado__bloco" aria-labelledby="sx-lado-mapa">
+          <h3 className="sx-lado__subtitulo" id="sx-lado-mapa">Mapa <kbd>M</kbd></h3>
+          <MapaQuestoes
+            compacto
+            ids={sessao.ids}
+            respostas={sessao.respostas}
+            revisar={sessao.revisar}
+            revelar={!simulado}
+            posicao={posicao}
+            aoEscolher={irPara}
+          />
+        </section>
+        <details className="sx-lado__bloco sx-lado__atalhos" open>
+          <summary className="sx-lado__subtitulo">Atalhos de teclado <kbd>?</kbd></summary>
+          <Atalhos />
+        </details>
+      </aside>
+      </div>
 
       <Painel
         titulo="Mapa de questões"
         aberto={mapaAberto}
         aoFechar={() => definirMapaAberto(false)}
       >
-        <p className="meta" style={{ marginBottom: '0.75rem' }}>
+        <p className="meta sx-mapa__resumo">
           {respondidas} de {total} respondidas
         </p>
         <MapaQuestoes
@@ -578,7 +865,7 @@ export function Sessao() {
         <Atalhos />
       </Painel>
 
-      {fim === 'aberto' && <ModalFimSessao total={total} acertos={simulado ? null : acertosSessao} simulado={simulado} aoConcluir={concluir} aoLer={() => definirFim('lendo')} />}
+      {fim === 'aberto' && <ModalFimSessao total={total} acertos={simulado ? null : acertosSessao} simulado={simulado} nome={nome} melhorTema={destaques.melhor} oportunidade={destaques.oportunidade} aoConcluir={concluir} aoLer={() => definirFim('lendo')} />}
       {fim === 'lendo' && tudoRespondido && <BotaoConcluirFlutuante aoConcluir={concluir} simulado={simulado} />}
       <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
       <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => { definirLimiteAberto(false); if (resumoAoFechar) { definirResumoAoFechar(false); concluir() } }} />

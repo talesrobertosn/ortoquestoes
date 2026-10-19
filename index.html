@@ -17,7 +17,7 @@
     <meta name="author" content="Tales" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://ortoquestoes.com.br/" />
-    <meta name="theme-color" content="#101615" />
+    <meta name="theme-color" content="#F1F3F2" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Orto Questões" />
@@ -76,22 +76,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>
       // Aplica o tema antes da primeira pintura, para não haver piscada.
-      // Quem escolheu um tema fica nele; sem escolha, o site sorteia claro ou
-      // escuro a cada visita (o sorteio vale para a aba inteira, sem trocar no recarregar).
+      // O padrão do site é o claro; o escuro vale só para quem o escolheu
+      // (no botão do cabeçalho ou em Minha conta).
       (function () {
         try {
           // O app grava o tema em JSON ("escuro", com aspas); aceita os dois formatos.
           var t = (localStorage.getItem('ortoquestoes:tema') || '').replace(/"/g, '')
-          if (t !== 'claro' && t !== 'escuro') {
-            try { t = sessionStorage.getItem('ortoquestoes:tema-sorteado') || '' } catch (e) { t = '' }
-            if (t !== 'claro' && t !== 'escuro') {
-              t = Math.random() < 0.5 ? 'claro' : 'escuro'
-              try { sessionStorage.setItem('ortoquestoes:tema-sorteado', t) } catch (e) {}
-            }
-          }
+          if (t !== 'claro' && t !== 'escuro') t = 'claro'
           var claro = t === 'claro'
           document.documentElement.dataset.tema = claro ? 'claro' : 'escuro'
-          if (claro) document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F1F3F2')
+          if (!claro) document.querySelector('meta[name="theme-color"]').setAttribute('content', '#101615')
         } catch (e) {}
         // O índice de questões começa a descer junto com o código, e não só
         // depois dele: no celular isso tira uma volta inteira da rede. As
