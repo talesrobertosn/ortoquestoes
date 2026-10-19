@@ -10,10 +10,13 @@ Cada lote é um módulo Python em <pasta> com:
   ARQ = "Rockwood_10e_cap32_....pdf"   # nome lógico do PDF de origem (o PDF não vai ao repositório)
   PROVA = "SIMÃO"               # opcional: banca cujo padrão o simulado segue (aparece na questão)
   AREA = "cirurgia-mao"         # opcional: área própria do simulado (sai do treino de ortopedia)
+  ANO = 2024                    # opcional, só com PROVA: ano da prova que o simulado espelha ("SIMÃO · 2024")
   LIVRO = "Rockwood and Green's Fractures in Adults, 10ª ed."   # opcional, para a legenda
   QUESTOES = [dict(sub=[...], pag=N, gab="X", enun="...", alts=[4 textos],
                    conceito='''...''', correta='''**X: ...** ...''', inc={"A": "...", ...},
-                   img=("arquivo_sem_ext", "figura 32-11", (x0, y0, x1, y1)))]  # img e caixa opcionais
+                   img=("arquivo_sem_ext", "figura 32-11", (x0, y0, x1, y1)),  # img e caixa opcionais
+                   num=17,                       # opcional: número da questão na prova espelhada
+                   refs=["Green's ..., cap. 3, p. 107"])]  # opcional: referências desta questão (somam ao REF)
 
 A figura é lida de <pasta>/img/<arquivo>.png; a caixa recorta antes de salvar (para não entregar
 a resposta). --conferir só valida e mostra o resumo, sem gravar nada. Depois de aplicar, rode
@@ -71,6 +74,12 @@ for m, q in QS:
     for s in q["sub"]:
         if s not in tema["subtemas"]:
             erros.append(f"{rot}: subtema '{s}' não existe em {a.tema} (válidos: {'; '.join(tema['subtemas'])})")
+    if getattr(m, "ANO", None) is not None and (not getattr(m, "PROVA", None) or not isinstance(m.ANO, int) or not 1990 <= m.ANO <= 2100):
+        erros.append(f"{rot}: ANO precisa de PROVA e deve ser um ano (inteiro)")
+    if q.get("refs") is not None and (not isinstance(q["refs"], list) or not all(isinstance(r, str) and r.strip() for r in q["refs"])):
+        erros.append(f"{rot}: refs deve ser uma lista de textos")
+    if q.get("num") is not None and not isinstance(q["num"], int):
+        erros.append(f"{rot}: num deve ser o número (inteiro) da questão na prova espelhada")
     if getattr(m, "AREA", None) not in (None, "cirurgia-mao", "fellowship-quadril"):
         erros.append(f"{rot}: AREA do lote deve ser 'cirurgia-mao' ou 'fellowship-quadril'")
     if getattr(m, "AREA", None) and q.get("areasAdicionais"):
@@ -139,13 +148,13 @@ for m, q in QS:
         "id": qid, "tema": tema["nome"], "subtemas": q["sub"], "prova": getattr(m, "PROVA", None), "simulado": True,
         **({"area": m.AREA} if getattr(m, "AREA", None) else {}),
         **({"areasAdicionais": q["areasAdicionais"]} if q.get("areasAdicionais") else {}),
-        "ano": None, "dificuldade": None, "enunciado": q["enun"], "imagens": imagens,
+        "ano": getattr(m, "ANO", None), "dificuldade": None, "enunciado": q["enun"], "imagens": imagens,
         "alternativas": [{"letra": l, "texto": t} for l, t in zip("ABCD", q["alts"])],
         "gabarito": q["gab"], "comentario": None, "comentariosComunidade": [], "referencias": [],
         "anulada": False, "figuraPendente": False, "revisado": False, "subtemasPendentes": False,
-        "origem": {"arquivo": m.ARQ, "pagina": q["pag"], "numeroOriginal": None}})
+        "origem": {"arquivo": m.ARQ, "pagina": q["pag"], "numeroOriginal": q.get("num")}})
     C[qid] = {"conceito": q["conceito"], "correta": q["correta"], "incorretas": dict(sorted(q["inc"].items())),
-              "referencias": [m.REF], "geradoEm": a.data, "conferido": False}
+              "referencias": [r for r in [getattr(m, "REF", None), *q.get("refs", [])] if r], "geradoEm": a.data, "conferido": False}
 json.dump(T, open(tp, "w"), ensure_ascii=False, indent=2)
 open(tp, "a").write("\n")
 json.dump(C, open(cp, "w"), ensure_ascii=False, indent=1)

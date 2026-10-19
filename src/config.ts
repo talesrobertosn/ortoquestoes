@@ -48,6 +48,7 @@ export const ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
 /** O que é a prova de referência de um simulado, quando a sigla sozinha não diz (aparece na questão). */
 export const DESCRICAO_PROVA: Record<string, string> = {
   'SIMÃO': 'Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão',
+  'SBCM': 'Exame para Obtenção do Título de Especialista em Cirurgia da Mão da Sociedade Brasileira de Cirurgia da Mão',
 }
 
 /**

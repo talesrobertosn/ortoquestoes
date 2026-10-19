@@ -54,6 +54,12 @@ Desde 16/10/2026 (pedido do Tales), cada simulado novo termina o `conceito` com 
 "**Por que esta questão foi criada.**" (prova e ano em que o fato caiu, ou o motivo de ter cara de prova);
 ver a lição de mesmo nome no guia acima.
 
+Provas de Cirurgia da Mão (SIMÃO e prova de título da SBCM) viram OrtoQuestões Simulados com `prova` e `ano`
+da prova espelhada (ex.: "SIMÃO · 2024"), reescritas sem copiar e comentadas a partir dos livros locais (Green)
+com a página impressa: roteiro em [docs/mao/PROTOCOLO.md](docs/mao/PROTOCOLO.md), andamento em
+[docs/mao/PROGRESSO.md](docs/mao/PROGRESSO.md) (pedido do Tales, 19/10/2026). Só SBCM e SIMÃO viram simulado;
+as demais instituições (ABC, Unesp etc.) entram como prova oficial com o nome real, sem duplicar o que já está no site.
+
 Agentes externos (por exemplo, ChatGPT Codex) que forem criar simulados a partir de um capítulo devem
 seguir o roteiro passo a passo de [docs/prompts/codex-simulados.md](docs/prompts/codex-simulados.md).
 
