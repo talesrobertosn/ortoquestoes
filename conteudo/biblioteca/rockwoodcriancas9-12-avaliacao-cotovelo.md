@@ -9,7 +9,7 @@ edicao: 9ª edição
 capitulo: Capítulo 12 · Evaluation of the Injured Pediatric Elbow
 autores: Peter M. Waters
 fonte: Capítulo enviado pelo Tales em 19/10/2026 (a9fcba5c-222-1-75.pdf, páginas 1 a 14)
-subtemas: Ombro e cotovelo da criança
+subtemas: ;
 resumo: Centros de ossificação (capítulo primeiro, epicôndilo medial o último a fundir), BAUMANN e úmero-ulnar no AP, linha umeral anterior no terço médio do capítulo, sinal do coxim gorduroso, lesões TRASH e o descolamento transfisário do lactente.
 ---
 
