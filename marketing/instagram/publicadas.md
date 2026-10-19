@@ -27,3 +27,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | pediatria-0120 | Ângulo de Southwick na epifisiólise (TARO 2022) | posts/2026-10-17-laboratorio-tcg (stories) |
 | mao-0430 | Kienböck com ulna minus, encurtamento do rádio de 2 mm (TARO 2025) | posts/2026-10-18-kienbock-nivelamento (feed e stories) |
 | mao-0546 | Kienböck, carpectomia da fileira proximal no Lichtman IIIB (TEOT 2023) | posts/2026-10-18-kienbock-nivelamento (feed 3 e story 3) |
+| mao-1802 | Polegar do esquiador, LCU da MCF: estresse a 30° sem ponto final firme (Simulados, padrão SIMÃO) | posts/2026-10-20-pista-de-esqui-polegar (feed e stories) |

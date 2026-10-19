@@ -336,3 +336,6 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 - **Raspadinha da prova (stories, 3 telas):** bilhete de raspadinha com a questão, a área raspada com a resposta e a chamada "Treine grátis" com o Cronograma. [Modelo](raspadinha/modelo.html).
 
 [Guia, roteiro, acabamento e revisão](LABORATORIO-E-RASPADINHA.md). Usar por cópia direta.
+
+## Pista de esqui (20/10/2026, aguardando aprovação)
+- **Feed (3 slides) e stories (3 telas):** placas de pista de esqui (círculo verde, quadrado azul, losango preto), neve e azul profundo; o raciocínio desce do verde à preta dupla e as alternativas viram pistas abertas ou fechadas. O story 1 é o checkpoint do teleférico, com o espaço da enquete Sim/Não. Primeira entrega: `posts/2026-10-20-pista-de-esqui-polegar/`. [Guia](PISTA-DE-ESQUI.md).
