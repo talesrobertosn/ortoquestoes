@@ -8,6 +8,7 @@ import { Icone } from '../componentes/Icone'
 import { chaveCivil, chaveDoDia, diaCivil } from '../util/dia'
 import { faseNoCalendario, limitesCalendario, limitarData, mesCivil, selecaoNoMes, type FaseCalendario } from '../dados/calendarioCronograma'
 import { usarDiaAtual } from '../util/usarDiaAtual'
+import { diaCurto, textoAdiantadoDia, textoPuxar } from '../dados/frasesAdiantar'
 import '../estilos/paginas/CronogramaCalendario.css'
 
 /**
@@ -15,14 +16,13 @@ import '../estilos/paginas/CronogramaCalendario.css'
  * computador, de segunda a domingo, até a prova. Cada dia mostra a cor e o nome das
  * áreas, quantas questões, a folga, o que já foi feito, hoje, os marcos (mini-simulado,
  * passadas, reta final, prova). Tocar num dia abre o que estudar nele, com o botão de
- * começar (hoje) ou de adiantar (os próximos dias, como no painel Adiantar).
+ * começar (hoje) ou de fazer as questões dele (os próximos dias): desde 19/10/2026 o dia é
+ * puxado com as suas questões, o que for feito conta para ele e o resto continua lá.
  * Os estados são os do resto do cronograma: feito (verde ✓), agora (dourado), a fazer,
  * folga (hachurado), atrasado (laranja) e marco (dourado tracejado).
  */
 
 const SEMANA = ['seg', 'ter', 'qua', 'qui', 'sex', 'sáb', 'dom']
-/** Quantos dias de estudo dá para adiantar de uma vez pelo calendário (os mesmos do painel Adiantar). */
-const ADIANTAR_ATE = 3
 const MINUTOS_RESUMAO = 4
 
 interface DiaCalendario {
@@ -51,8 +51,10 @@ export interface AcoesCalendario {
   aoComecar?: () => void
   /** Sessão pela metade: o link para continuar. */
   pendente?: { feitas: number; total: number } | null
-  /** Pede para adiantar n questões (o mesmo do painel Adiantar). */
-  aoAdiantar?: (n: number) => void
+  /** Puxa um dia ("AAAA-MM-DD"): abre a sessão com as questões dele, que contam para ele. */
+  aoPuxar?: (dia: string) => void
+  /** Hoje terminado: o próximo dia de estudo para puxar (o mesmo botão do cartão Hoje). */
+  proximo?: DiaPlano | null
   salvando?: boolean
 }
 
@@ -358,6 +360,7 @@ const SELO_ESTADO: Record<string, { texto: string; icone: Parameters<typeof Icon
   prova: { texto: 'Prova', icone: 'bandeira' },
   reta: { texto: 'Reta final', icone: 'fogo' },
   adiantado: { texto: 'Adiantado', icone: 'raio' },
+  puxado: { texto: 'Adiantado', icone: 'raio' },
 }
 
 function CelulaSemana({ dia: d, selecionado, aoEscolher, metaRevisao }: { dia: DiaCalendario; selecionado: boolean; aoEscolher: (d: DiaCalendario) => void; metaRevisao: number }) {
@@ -375,9 +378,10 @@ function CelulaSemana({ dia: d, selecionado, aoEscolher, metaRevisao }: { dia: D
   if (estado === 'feito' || estado === 'parcial' || (passado && d.feitas > 0)) { numero = d.feitas.toLocaleString('pt-BR'); rotulo = d.feitas === 1 ? 'feita' : 'feitas' }
   else if (ehHojeComMeta) { numero = String(d.plano!.meta); rotulo = 'questões novas' }
   else if (estado === 'futuro' && d.plano && d.plano.total > 0) { numero = String(d.plano.total); rotulo = 'questões novas' }
+  else if (estado === 'puxado' && d.plano) { numero = String(d.plano.total); rotulo = 'faltam' }
   else if (estado === 'reta' && d.fase === 'revisao' && metaRevisao > 0) { numero = `~${metaRevisao}`; rotulo = 'de revisão' }
   // "A fazer" é o normal dos próximos dias: sem selo, para o olho ir ao que muda (hoje, feito, folga, prova).
-  const selo = fora || estado === 'futuro' ? null : SELO_ESTADO[estado]
+  const selo = fora || estado === 'futuro' ? null : estado === 'puxado' ? { ...SELO_ESTADO.puxado, texto } : SELO_ESTADO[estado]
   const descricao = [dataLonga(d.data), selo?.texto, tipoDoDia(d), numero ? `${numero} ${rotulo}` : texto, mostrarAreas ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', mini ? 'mini-simulado' : '', ...d.marcos].filter(Boolean).join(', ')
   const total = areas.reduce((s, a) => s + a.n, 0)
   return (
@@ -390,7 +394,7 @@ function CelulaSemana({ dia: d, selecionado, aoEscolher, metaRevisao }: { dia: D
         </span>
         <span className="ccs-dia__meio">
           <span className="ccs-dia__etiquetas">
-            {selo && <span className={`ccs-selo ccs-selo--${estado}`}><Icone nome={selo.icone} tamanho={13} />{selo.texto}</span>}
+            {selo && <span className={`ccs-selo ccs-selo--${estado}`}><Icone nome={selo.icone} tamanho={13} />{estado === 'puxado' ? <span>{selo.texto.split(' · ')[0]} <span className="cc-junto">· {selo.texto.split(' · ')[1]}</span></span> : selo.texto}</span>}
             {!fora && <span className="ccs-dia__tipo">{tipoDoDia(d)}</span>}
             {mini && <span className="ccs-selo ccs-selo--mini"><Icone nome="estrela" tamanho={12} />Mini-simulado</span>}
           </span>
@@ -402,7 +406,7 @@ function CelulaSemana({ dia: d, selecionado, aoEscolher, metaRevisao }: { dia: D
           {d.marcos.length > 0 && <span className="ccs-dia__marco"><Icone nome="bandeira" tamanho={12} />{d.marcos.join(' · ')}</span>}
           {estado === 'adiantado' && <span className="ccs-dia__nota">Você já fez as questões deste dia</span>}
         </span>
-        {numero && <span className="ccs-dia__numero"><b className="numerico">{numero}</b><small>{rotulo}</small>{ehHojeComMeta && d.feitas > 0 && <em>{Math.min(d.feitas, d.plano!.meta)} já feitas</em>}{d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && <s className="numerico" title="Antes de adiantar">{d.plano.total + d.plano.adiantado}</s>}</span>}
+        {numero && <span className="ccs-dia__numero"><b className="numerico">{numero}</b><small>{rotulo}</small>{ehHojeComMeta && d.feitas > 0 && <em>{Math.min(d.feitas, d.plano!.meta)} já feitas</em>}{d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && !d.plano.puxado && <s className="numerico" title="Antes de adiantar">{d.plano.total + d.plano.adiantado}</s>}</span>}
         {mostrarAreas && total > 0 && <span className="ccs-dia__barra" aria-hidden="true">{areas.map((a) => <i key={a.slug} style={{ flexGrow: a.n, background: corDaArea(a.slug) }} />)}</span>}
       </button>
     </li>
@@ -427,7 +431,10 @@ function rotuloEstado(d: DiaCalendario): { estado: string; texto: string } {
   if (d.fase === 'vespera') return { estado: 'reta', texto: 'véspera' }
   const p = d.plano
   if (!p) return { estado: 'futuro', texto: '' }
-  if (p.total === 0 && p.adiantado > 0 && !p.mini) return { estado: 'adiantado', texto: 'adiantado' }
+  if (p.total === 0 && (p.adiantado > 0 || !!p.puxado) && !p.mini) return { estado: 'adiantado', texto: 'adiantado' }
+  // Dia puxado e começado (19/10/2026): "Adiantado · 8 de 77"; o resto continua nele.
+  const adiantadoDia = textoAdiantadoDia(p)
+  if (adiantadoDia) return { estado: 'puxado', texto: adiantadoDia }
   return { estado: 'futuro', texto: p.total ? `${p.total} q${p.tipo === 'leve' ? ' · leve' : p.tipo === 'dificil' ? ' · mínimo' : ''}` : p.mini ? 'mini' : '' }
 }
 
@@ -436,6 +443,7 @@ function textoCurto(estado: string, texto: string): string {
   if (estado === 'atrasado') return '–'
   if (estado === 'folga' || estado === 'hoje' && texto === 'hoje') return ''
   if (estado === 'adiantado') return 'livre'
+  if (estado === 'puxado') return texto.replace(/^Adiantado · (\d+) de (\d+)$/, '$1/$2')
   if (estado === 'prova') return 'PROVA'
   if (texto === 'revisão') return 'rev.'
   if (texto === 'modo prova') return 'prova'
@@ -468,7 +476,7 @@ function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selec
         {d.marcos.length > 0 && <span className="cc-dia__marco">{d.marcos[0]}</span>}
         <span className="cc-dia__rodape">
           {texto && <em data-curto={textoCurto(estado, texto)}><span>{texto}</span></em>}
-          {d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && <s className="numerico">{d.plano.total + d.plano.adiantado}</s>}
+          {d.plano && d.plano.adiantado > 0 && d.plano.total > 0 && !d.plano.puxado && <s className="numerico">{d.plano.total + d.plano.adiantado}</s>}
         </span>
         {areas.length > 0 && estado !== 'folga' && <span className="cc-dia__faixa" aria-hidden="true">{areas.map((a) => <i key={a.slug} style={{ flexGrow: a.n, background: corDaArea(a.slug) }} />)}</span>}
       </button>
@@ -514,11 +522,14 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
     for (const a of d.areasFeitas.slice(0, 6)) linhas.push({ id: a.slug, cor: corDaArea(a.slug), titulo: `${a.n} de ${a.nome}` })
     linhas.push({ id: 'extras', titulo: revisoesHoje > 0 ? `${revisoesHoje} ${revisoesHoje === 1 ? 'revisão' : 'revisões'} e flashcards` : 'Revisões e flashcards', texto: 'Se sobrar tempo; não contam na meta', opcional: true })
   } else if (p) {
-    const livre = p.total === 0 && p.adiantado > 0 && !p.mini
+    const livre = p.total === 0 && (p.adiantado > 0 || !!p.puxado) && !p.mini
     titulo = livre ? 'Livre: você já adiantou' : principal ? principal.nome : p.mini ? 'Mini-simulado' : 'Dia de estudo'
     const tipo = p.tipo === 'leve' ? 'Dia leve (plantão). ' : p.tipo === 'dificil' ? 'Semana difícil: só o dia mínimo. ' : ''
     const passada = principal ? `${ROTULO_PASSADA[principal.passada].nome}: ${ROTULO_PASSADA[principal.passada].texto}.` : ''
-    sub = livre ? `As ${p.adiantado} questões deste dia você fez antes.` : <>{tipo}{passada}{p.adiantado > 0 ? <> <b className="cc-verde">−{p.adiantado} adiantadas</b> (eram {p.total + p.adiantado}).</> : null}</>
+    const adiantadoDia = textoAdiantadoDia(p)
+    sub = livre ? `As ${p.puxado?.total ?? p.adiantado} questões deste dia você fez antes.`
+      : adiantadoDia ? <><b className="cc-verde">{adiantadoDia} feitas.</b> Faltam {p.total}, que continuam aqui para você fazer quando quiser.</>
+      : <>{tipo}{passada}{p.adiantado > 0 ? <> <b className="cc-verde">−{p.adiantado} adiantadas</b> (eram {p.total + p.adiantado}).</> : null}</>
     if (!livre && principal) linhas.push({ id: 'resumao', titulo: `Frases que caem de ${principal.nome.toLowerCase()}`, texto: 'As frases "Na prova", antes das questões', minutos: MINUTOS_RESUMAO })
     for (const it of p.itens) linhas.push({ id: `${it.slug}-${it.mistura}`, cor: corDaArea(it.slug), titulo: <>{it.n} questões de {it.nome}{it.mistura && <span className="cp-tag">mistura</span>}</>, chips: it.assuntos.slice(0, 4), minutos: it.n * minutos })
     if (p.mini) linhas.push({ id: 'mini', titulo: `Mini-simulado de ${TAMANHO_MINI} questões`, texto: 'Cronometrado, do que você já viu', minutos: TAMANHO_MINI * 1.5 })
@@ -532,18 +543,22 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
     const falta = calculo.faltaHoje + calculo.adiantarFalta
     if (acoes.pendente) acao = <a className="cp-botao" href="#/sessao" onClick={aoFechar}>Continuar: faltam {acoes.pendente.total - acoes.pendente.feitas} questões</a>
     else if (calculo.hoje && falta > 0 && acoes.aoComecar) acao = <button type="button" className="cp-botao" onClick={() => { aoFechar(); acoes.aoComecar!() }}>{calculo.feitasHoje > 0 ? `Continuar: faltam ${falta} questões` : `Começar: ${falta} questões`}<small>~{formatarTempo(falta * minutos)}</small></button>
-    else if (calculo.metaDiaria > 0 && calculo.faltaHoje === 0) acao = <p className="cc-detalhe__ok"><Icone nome="certo" tamanho={16} /> Meta de hoje feita: {calculo.metaDiaria} questões.</p>
-  } else if (d.fase === 'conteudo' && p && acoes.aoAdiantar && calculo.restante > 0) {
-    const proximos = calculo.dias.slice(1).filter((x) => x.meta > 0)
-    const k = proximos.findIndex((x) => x.data.getTime() === d.data.getTime())
-    if (k >= 0 && k < ADIANTAR_ATE) {
-      const n = proximos.slice(0, k + 1).reduce((s, x) => s + x.meta, 0)
-      acao = <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoAdiantar!(n); setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ block: 'center' }), 200) }}>
-        {k === 0 ? `Adiantar este dia: ${n} questões` : `Adiantar até este dia: ${n} questões`}
-        <small>{k === 0 ? 'Entram na sua sessão de hoje' : `Os ${k + 1} próximos dias de estudo, na ordem`} · ~{formatarTempo(n * minutos)}</small>
-      </button>
-    } else if (k >= ADIANTAR_ATE) acao = <p className="cc-detalhe__nota">O adiantado sai dos dias em ordem, a começar pelo próximo. Pelo calendário dá para adiantar até {ADIANTAR_ATE} dias de estudo de uma vez.</p>
+    else {
+      const ok = calculo.metaDiaria > 0 && calculo.faltaHoje === 0 ? <p className="cc-detalhe__ok"><Icone nome="certo" tamanho={16} /> Meta de hoje feita: {calculo.metaDiaria} questões.</p> : null
+      // Hoje terminado (ou folga): o mesmo botão do cartão Hoje, para puxar o próximo dia de estudo.
+      const prox = acoes.proximo
+      const puxar = prox && acoes.aoPuxar ? (() => { const t = textoPuxar(prox); return <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoPuxar!(chaveCivil(prox.data)) }}>{t.rotulo}<small>{t.detalhe} · ~{formatarTempo(prox.total * minutos)}</small></button> })() : null
+      if (ok || puxar) acao = <>{ok}{puxar}</>
+    }
+  } else if (d.fase === 'conteudo' && p && p.tipo !== 'folga' && p.total > 0 && acoes.aoPuxar) {
+    // Um dia futuro: puxa as questões dele (pedido do Tales, 19/10/2026). Contam para ele, não para hoje.
+    const comecado = !!textoAdiantadoDia(p)
+    acao = <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoPuxar!(d.chave) }}>
+      {comecado ? <>Continuar <span className="cc-junto">{diaCurto(d.data)}</span></> : <>Fazer as questões de <span className="cc-junto">{diaCurto(d.data)}</span></>}
+      <small>{comecado ? `faltam ${p.total}` : `${p.total} ${p.total === 1 ? 'questão' : 'questões'}`} · ~{formatarTempo(p.total * minutos)} · contam para este dia, não para hoje</small>
+    </button>
   }
+  const dica = acoes.aoPuxar && (d.fase === 'hoje' || d.fase === 'conteudo') && calculo.restante > 0
 
   return (
     <section ref={ancora} className={`cc-detalhe cc-detalhe--${estado}`} aria-live="polite" aria-labelledby="cc-detalhe-titulo" style={{ ['--cor-area' as string]: principal ? corDaArea(principal.slug) : undefined }}>
@@ -566,9 +581,10 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
           </li>
         ))}
       </ul>}
-      {(total > 0 || acao) && <div className="cc-detalhe__fim">
+      {(total > 0 || acao || dica) && <div className="cc-detalhe__fim">
         {total > 0 && <p className="cc-detalhe__total">Seu dia: <b>~{formatarTempo(total)}</b></p>}
         {acao}
+        {dica && <p className="cc-detalhe__dica"><Icone nome="raio" tamanho={14} /> Toque num dia para adiantar as questões dele. O que você fizer conta para aquele dia, e o resto continua lá.</p>}
       </div>}
     </section>
   )
