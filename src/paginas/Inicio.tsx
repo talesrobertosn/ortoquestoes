@@ -13,6 +13,7 @@ import { bibliotecaVisivel } from '../biblioteca/recomendar'
 import { ChamaPixel } from '../componentes/ChamaPixel'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
+import { ChamadaSimuladoNacional } from '../componentes/ChamadaSimuladoNacional'
 import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
@@ -309,6 +310,7 @@ export function Inicio() {
         {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
         {vazio}
         <ConviteLimiteDoDia />
+        <ChamadaSimuladoNacional />
 
         <section className="ip-pilares ip-entra" aria-labelledby="ip-pilares-titulo" style={{ '--i': 1 } as CSSProperties}>
           <h2 id="ip-pilares-titulo" className="ip-pilares__titulo">O que o Orto Questões faz por você</h2>
@@ -435,6 +437,7 @@ export function Inicio() {
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
       <ConviteLimiteDoDia />
+      <ChamadaSimuladoNacional />
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
       {vazio}
 

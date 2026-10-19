@@ -1,5 +1,7 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--com-dados] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--com-dados] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
+// --sn: o Simulado Nacional de outubro no Supabase falso (e o relógio do navegador no momento do cenário):
+//   antes (não inscrito) | inscrito | aberto | andamento | entregue (resultado e ranking) | encerrado | ausente (sem a parte 32: 404)
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
 // Sobe o site (vite) com um Supabase falso (conta assinante de exemplo) e grava celular (390) e computador (1440), dobra e página inteira.
 
@@ -46,6 +48,96 @@ function rankingExemplo(periodo, comNomes) {
       novo: posicao === 17, referencia_em: '2026-10-17', emblemas: null, sequencia: [12, 3, 0, 41, 7, 0, 21, 2, 9][i % 9], servico: null,
     }
   })
+}
+// ---------------- Simulado Nacional falso (--sn) ----------------
+const argsSn = process.argv.slice(2)
+const SN = argsSn.includes('--sn') ? argsSn[argsSn.indexOf('--sn') + 1] : null
+const SN_ABRE = '2026-10-24T11:00:00Z', SN_FECHA = '2026-11-01T02:59:59Z'
+// O "agora" de cada cenário (horário de Brasília = UTC-3).
+const SN_AGORA = { antes: '2026-10-19T15:00:00Z', inscrito: '2026-10-19T15:00:00Z', aberto: '2026-10-26T17:00:00Z', andamento: '2026-10-26T17:00:00Z', entregue: '2026-10-26T17:00:00Z', encerrado: '2026-11-02T15:00:00Z', ausente: '2026-10-19T15:00:00Z' }
+let snEdicao = null
+if (SN && SN !== 'ausente') {
+  const { readFileSync } = await import('node:fs')
+  const indice = JSON.parse(readFileSync(new URL('../public/acervo/indice.json', import.meta.url), 'utf8'))
+  const cotas = { 'Trauma adulto': 10, 'Ortopedia pediátrica': 9, 'Mão e punho': 6, 'Ombro e cotovelo': 5, 'Tumores': 4, 'Pé e tornozelo': 4, 'Coluna': 3, 'Joelho': 3, 'Conceitos básicos': 3, 'Quadril': 2, 'Osteometabólicas': 1 }
+  const provas = new Set(['TEOT', 'TARO', 'TEOT/TARO'])
+  const itens = []
+  for (const tema of indice.temas) {
+    const n = cotas[tema.nome] ?? 0
+    if (!n) continue
+    const arquivo = JSON.parse(readFileSync(new URL(`../public/acervo/${tema.arquivo}`, import.meta.url), 'utf8'))
+    const doIndice = new Set(indice.questoes.filter((q) => indice.temas[q.t] === tema && provas.has(indice.provas[q.p]) && !q.an).map((q) => q.id))
+    const boas = arquivo.questoes.filter((q) => doIndice.has(q.id) && q.gabarito && q.alternativas?.length >= 4 && !q.anulada && !q.figuraPendente).slice(0, n)
+    for (const q of boas) itens.push({ id: q.id, area: tema.nome, gabarito: q.gabarito, nAlt: q.alternativas.length })
+  }
+  // Áreas com poucas candidatas no filtro: completa com Trauma adulto até 50.
+  if (itens.length < 50) {
+    const tema = indice.temas.find((t) => t.nome === 'Trauma adulto')
+    const arquivo = JSON.parse(readFileSync(new URL(`../public/acervo/${tema.arquivo}`, import.meta.url), 'utf8'))
+    const ja = new Set(itens.map((i) => i.id))
+    for (const q of arquivo.questoes) {
+      if (itens.length >= 50) break
+      if (!ja.has(q.id) && q.gabarito && q.alternativas?.length >= 4 && !q.anulada && !q.figuraPendente) itens.push({ id: q.id, area: tema.nome, gabarito: q.gabarito, nAlt: q.alternativas.length })
+    }
+  }
+  const LETRAS = 'ABCDE'
+  const ordem = itens.map((it, i) => ({ ...it, k: (i * 37) % itens.length })).sort((a, b) => a.k - b.k)
+  snEdicao = ordem.map((it, i) => {
+    const base = LETRAS.slice(0, it.nAlt).split('')
+    const desloca = (i % (it.nAlt - 1)) + 1
+    const permutacao = [...base.slice(desloca), ...base.slice(0, desloca)].join('')
+    const gabarito = LETRAS[permutacao.indexOf(it.gabarito)]
+    // Marcadas de exemplo: 38 certas, 9 erradas, 3 em branco.
+    const marcada = i < 38 ? gabarito : i < 47 ? LETRAS[(LETRAS.indexOf(gabarito) + 1) % it.nAlt] : null
+    return { ordem: i + 1, id_questao: it.id, area: it.area, permutacao, gabarito, marcada }
+  })
+}
+function snMinha() {
+  if (SN === 'andamento') return { iniciado_em: '2026-10-26T16:12:00Z', prazo_em: '2026-10-26T18:12:00Z', entregue_em: null, acertos: null, total: null, segundos: null, no_tempo: null, respondidas: 14 }
+  if (SN === 'entregue' || SN === 'encerrado') return { iniciado_em: '2026-10-26T14:30:00Z', prazo_em: '2026-10-26T16:30:00Z', entregue_em: '2026-10-26T16:02:00Z', acertos: 38, total: 50, segundos: 5520, no_tempo: true, respondidas: 47 }
+  return null
+}
+const snPorArea = () => Object.entries(snEdicao.reduce((m, i) => ({ ...m, [i.area]: (m[i.area] ?? 0) + 1 }), {})).map(([area, n]) => ({ area, n })).sort((a, b) => b.n - a.n)
+const snAusente = () => [404, { code: 'PGRST202', message: 'Could not find the function public.sn_obter without parameters in the schema cache' }]
+const snRpcs = {
+  sn_obter: (u) => SN === 'ausente' ? snAusente() : [200, {
+    edicao: '2026-10', tipo: 'mensal', titulo: 'Simulado Nacional · Outubro de 2026', descricao: null, destaque_inicio: true, aberto_a_todos: true,
+    config: { provas: ['TEOT', 'TARO', 'TEOT/TARO'] }, abre_em: SN_ABRE, fecha_em: SN_FECHA, duracao_min: 120, total: snEdicao.length, por_area: snPorArea(),
+    participantes: ['aberto', 'andamento', 'entregue', 'encerrado'].includes(SN) ? 214 : null, inscritos: 1240,
+    minha_inscricao: u && SN !== 'antes' ? '2026-10-19T14:00:00Z' : null, tambem_no_ar: [], minha: u ? snMinha() : null,
+    anteriores: u && (SN === 'entregue' || SN === 'encerrado') ? [{ edicao: '2026-10-antiga', titulo: 'Outubro de 2026 (versão anterior)', tipo: 'mensal', minha: { acertos: 31, total: 50, no_tempo: true } }] : [],
+    agora: SN_AGORA[SN],
+  }],
+  sn_destaque_inicio: (u) => SN === 'ausente' || SN === 'encerrado' ? snAusente() : [200, {
+    edicao: '2026-10', titulo: 'Simulado Nacional · Outubro de 2026', tipo: 'mensal', abre_em: SN_ABRE, fecha_em: SN_FECHA, total: 50, duracao_min: 120,
+    inscrito: !!u && SN !== 'antes', minha_situacao: !u ? null : SN === 'andamento' ? 'andamento' : SN === 'entregue' ? 'entregue' : null,
+  }],
+  sn_inscrever: () => [200, { inscrito_em: '2026-10-19T15:00:00Z', inscritos: 1241 }],
+  sn_cancelar_inscricao: () => [200, { inscrito_em: null, inscritos: 1240 }],
+  sn_iniciar: () => [200, { edicao: '2026-10', iniciado_em: snMinha()?.iniciado_em ?? SN_AGORA[SN], prazo_em: snMinha()?.prazo_em ?? '2026-10-26T19:00:00Z', duracao_min: 120,
+    itens: snEdicao.map(({ ordem, id_questao, permutacao }) => ({ ordem, id_questao, permutacao })),
+    respostas: Object.fromEntries(snEdicao.slice(0, 14).map((i) => [i.id_questao, i.marcada ?? 'A'])), revisar: [snEdicao[3].id_questao, snEdicao[8].id_questao] }],
+  sn_salvar: () => [200, { salvo_em: SN_AGORA[SN] }],
+  sn_entregar: () => [200, { acertos: 38, total: 50, segundos: 5520, no_tempo: true, por_area: {} }],
+  sn_resultado: () => {
+    const por = {}
+    for (const i of snEdicao) { por[i.area] ??= { certas: 0, total: 0 }; por[i.area].total++; if (i.marcada === i.gabarito) por[i.area].certas++ }
+    // Uma área mais fraca, para o "onde rende revisar".
+    const fraca = por['Ortopedia pediátrica']; if (fraca) fraca.certas = Math.min(fraca.certas, 3)
+    const medias = { 'Trauma adulto': 64, 'Ortopedia pediátrica': 58, 'Mão e punho': 61, 'Ombro e cotovelo': 66 }
+    return [200, { acertos: 38, total: 50, segundos: 5520, no_tempo: true, entregue_em: '2026-10-26T16:02:00Z', posicao: SN === 'encerrado' ? 14 : 12, colocados: SN === 'encerrado' ? 388 : 214,
+      percentil: 94, media: 61.4, media_segundos: 6100, por_area: Object.entries(por).map(([area, v]) => ({ area, ...v, media: medias[area] ?? 60 })), encerrada: SN === 'encerrado' }]
+  },
+  sn_gabarito: () => [200, snEdicao.map(({ ordem, id_questao, permutacao, gabarito, marcada }) => ({ ordem, id_questao, permutacao, gabarito, marcada }))],
+  sn_ranking: (u) => {
+    if (SN === 'ausente') return snAusente()
+    if (SN === 'antes' || SN === 'inscrito') return [200, { colocados: 0, top: [], voce: null, melhores_por_area: [] }]
+    const nomes = ['Marina A.', 'Rafael T.', 'Camila S.', 'Pedro H.', 'Luísa M.', 'Gustavo R.', 'Beatriz F.', 'Thiago L.', 'Juliana C.', 'Henrique B.']
+    const top = nomes.map((apelido, i) => ({ posicao: i + 1, apelido, acertos: 47 - Math.floor(i * 0.9), total: 50, segundos: 4200 + i * 310, eh_voce: false }))
+    const comVoce = u && (SN === 'entregue' || SN === 'encerrado')
+    return [200, { colocados: SN === 'encerrado' ? 388 : 214, top, voce: comVoce ? { posicao: SN === 'encerrado' ? 14 : 12, acertos: 38, total: 50, segundos: 5520 } : null,
+      melhores_por_area: [{ area: 'Trauma adulto', apelido: 'Marina A.', certas: 10, total: 10 }, { area: 'Ortopedia pediátrica', apelido: 'Pedro H.', certas: 9, total: 9 }, { area: 'Mão e punho', apelido: 'Camila S.', certas: 6, total: 6 }, { area: 'Coluna', apelido: 'Luísa M.', certas: 3, total: 3 }] }]
+  },
 }
 const rpcs = {
   sincronizar_progresso: (u, a) => sincronizar(u, a.alteracoes),
@@ -122,6 +214,12 @@ async function atender(rota) {
   if (url.pathname.startsWith('/auth/v1/')) return responder(200, {})
   const rpc = url.pathname.match(/^\/rest\/v1\/rpc\/([a-z_]+)$/)?.[1]
   if (rpc === 'obter_ranking_visitante') return responder(200, rankingExemplo(JSON.parse(pedido.postData() || '{}').periodo, false))
+  if (rpc && rpc.startsWith('sn_') && !(ADMIN && rpcsAdmin[rpc])) {
+    if (!SN) return responder(404, { code: 'PGRST202', message: `Could not find the function public.${rpc}` })
+    if (!snRpcs[rpc] || (!usuario && !['sn_obter', 'sn_destaque_inicio', 'sn_ranking'].includes(rpc))) return responder(401, { code: '42501', message: 'autenticacao_necessaria' })
+    const [st, corpo] = snRpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}'))
+    return responder(st, corpo)
+  }
   if (!usuario) return responder(401, { code: '42501', message: 'permission denied' })
   if (ADMIN && rpc && rpcsAdmin[rpc]) { const [s, c] = rpcsAdmin[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc && rpcs[rpc]) { const [s, c] = rpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
@@ -193,6 +291,7 @@ for (const [nome, vp, esc] of [['cel', { width: 390, height: 844 }, 2], ['pc', {
   // --agora ISO: fixa o relógio da página (ex.: o aviso do dia 25 no painel).
   const iAgora = args.indexOf('--agora')
   if (iAgora >= 0) await contexto.clock.setFixedTime(new Date(args[iAgora + 1]))
+  if (SN && iAgora < 0) await contexto.clock.setFixedTime(new Date(SN_AGORA[SN]))
   const p = await contexto.newPage()
   p.on('pageerror', (e) => erros.push(`${nome}: ${e.message}`))
   await p.goto(`${BASE}#${ROTA}`); await p.waitForTimeout(4000); await p.addStyleTag({ content: ESCONDER }); await p.waitForTimeout(400)
