@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | SIMAO-2023-questoes.json | 100 | 0 | 0 | | |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 5 | 1 | mao-1932 a mao-1936 | A 1, B 2, C 1, D 1 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -74,15 +74,15 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
-| 1 | Diáfise da falange proximal: para onde aponta o ápice e qual músculo deforma | fato com mecanismo | cap. 7 | mao / Fraturas dos metacarpos e falanges | 01 | | a fazer |
-| 2 | Falange média: traço mais frequente na diáfise | fato | cap. 7 | mao / Fraturas dos metacarpos e falanges | 01 | | a fazer |
+| 1 | Diáfise da falange proximal: para onde aponta o ápice e qual músculo deforma | fato com mecanismo | cap. 7, p. 268, 290, 299, 304 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1932 | publicada |
+| 2 | Falange média: traço mais frequente na diáfise | fato | cap. 7, p. 290, 291, 299 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1933 | publicada |
 | 3 | Madelung: ligamento de VICKERS, posição e ossos que une | epônimo e anatomia | cap. 38 | mao / Deficiências longitudinais e mão torta | 16 | | a fazer |
 | 4 | Canal de GUYON, zona III: tipo de déficit | anatomia aplicada | cap. 26 | mao / Neuropatia ulnar e outras compressões | 09 | | a fazer |
 | 5 | Artrose radiolunar isolada: causa mais comum | fato | cap. 12 | mao / Artrose do punho e artroscopia | 07 | | a fazer |
 | 6 | Rizartrose avançada: postura do polegar (adução e MCF) | fato | cap. 11 | mao / Rizartrose e artrose da mão | 07 | | a fazer |
-| 7 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7 | mao / Fraturas dos metacarpos e falanges | 01 | | a fazer |
+| 7 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 a 263 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1934 | publicada |
 | 8 | Mão reumatoide: ressecção da ulna distal (indicação, extensão, sinovectomia, ERC) | afirmativas | cap. 55 | mao / Mão reumatoide | 08 | | a fazer |
-| 9 | Colo do metacarpo: indicações cirúrgicas (pseudogarra, rotação, dedos radiais, encurtamento) | afirmativas | cap. 7 | mao / Fraturas dos metacarpos e falanges | 01 | | a fazer |
+| 9 | Colo do metacarpo: indicações cirúrgicas (pseudogarra, rotação, dedos radiais, encurtamento) | afirmativas | cap. 7, p. 263, 268 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1935 | publicada |
 | 10 | Braquidactilia na síndrome de APERT: com o que se associa | classificação | cap. 36 | mao / Outras malformações congênitas | 14 | | a fazer |
 | 11 | Medida da pressão compartimental: contraindicação | fato | cap. 51 | mao / Outros temas da mão | 17 | | a fazer |
 | 12 | Túnel do carpo leve na artrite reumatoide sem tenossinovite: conduta | conduta | cap. 55 | mao / Síndrome do túnel do carpo | 08 | | a fazer |
@@ -147,7 +147,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 71 | Perilunar dorsal: ligamentos cuja lesão permite a luxação | anatomia | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
 | 72 | Lesão baixa do mediano: músculo preservado | anatomia | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
 | 73 | Reimplante de dedo: sequência clássica | sequência | cap. 42 | mao / Amputações e reimplantes | 18 | | a fazer |
-| 74 | Pseudoartrose de metacarpo: tratamento | conduta | cap. 7 | mao / Fraturas dos metacarpos e falanges | 02 | | a fazer |
+| 74 | Pseudoartrose de metacarpo: tratamento | conduta | cap. 7, p. 263, 281, 282 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1936 | publicada |
 | 75 | Mão de APERT: quais dedos se fundem | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
 | 76 | Sindactilia: complicações pós-operatórias mais raras | fato | cap. 36 | mao / Sindactilia e polidactilia | 15 | | a fazer |
 | 77 | Risco de KIENBÖCK (VIEGAS, ZAPICO, variância, vascularização) | afirmativas | cap. 16 | mao / Doença de Kienböck | 04 | | a fazer |
@@ -162,7 +162,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 86 | Ângulo da gota de lágrima: o que representa e o ligamento inserido | par | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
 | 87 | Reabilitação do flexor: início do fortalecimento isolado | número | cap. 6 | mao / Lesões dos tendões flexores | 03 | | a fazer |
 | 88 | Biomecânica da fratura do escafoide e do perilunar | afirmativas | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
-| 89 | Falange proximal: desvios aceitáveis no tratamento conservador | número | cap. 7 | mao / Fraturas dos metacarpos e falanges | 01 | | a fazer |
+| 89 | Falange proximal: desvios aceitáveis no tratamento conservador | número | cap. 7 (p. 299 e 304 não trazem os graus) | mao / Fraturas dos metacarpos e falanges | 01 | | pendente: sem fonte (11 e 21 graus não estão no Green nem nos outros livros locais; o original troca coronal por perfil) |
 | 90 | LICHTMAN atualizada: em que se baseia | classificação | cap. 16 | mao / Doença de Kienböck | 04 | | a fazer |
 | 91 | Clinodactilia: deformidade que entra na classificação | classificação | cap. 36 | mao / Deformidades dos dedos | 15 | | a fazer |
 | 92 | SDCR: como se faz o diagnóstico | fato | cap. 53 | mao / Síndrome da dor complexa regional | 17 | | a fazer |
@@ -175,7 +175,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 99 | Classificação internacional da mão tetraplégica: grupo 4 | classificação | cap. 33 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
 | 100 | Mão reumatoide: VAUGHAN-JACKSON, MANNERFELT, IFD, capitato | afirmativas | cap. 55 | mao / Mão reumatoide | 08 | | a fazer |
 
-Lotes: 01 (1, 2, 7, 9, 89) · 02 (74, 19, 41, 21, 78) · 03 (97, 17, 87, 25, 24) · 04 (18, 22, 77, 88, 90) ·
+Lotes: 01 (1, 2, 7, 9, 74; a 89 ficou sem fonte) · 02 (19, 41, 21, 78) · 03 (97, 17, 87, 25, 24) · 04 (18, 22, 77, 88, 90) ·
 05 (44, 58, 71, 82, 85) · 06 (20, 30, 86, 84, 81) · 07 (5, 50, 6, 61, 66) · 08 (8, 12, 34, 100, 35) ·
 09 (4, 26, 38, 39, 42) · 10 (67, 60, 51, 93, 43) · 11 (53, 59, 72, 83, 95) · 12 (31, 80, 54, 99, 14) ·
 13 (45, 13, 36, 96, 70) · 14 (10, 23, 33, 62, 75) · 15 (76, 91, 94, 47, 98) · 16 (3, 27, 32, 40, 63) ·
