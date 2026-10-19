@@ -678,7 +678,7 @@ export function Sessao() {
     finalizar()
     navegar('/resumo')
   }
-  // Coluna lateral só com o que a pessoa deixou ligado em Ajustes da tela; sem nada, o cartão fica sozinho.
+  // Coluna lateral só com o que a pessoa deixou ligado em Personalizar; sem nada, o cartão fica sozinho.
   const comLado = preferencias.placar || preferencias.mapa || preferencias.atalhos || preferencias.pomodoro || !!nacional
   const classesSessao = ['sessao-gestos', 'sx-sessao', comLado ? 'sx-sessao--com-lado' : 'sx-sessao--sem-lado']
   if (!preferencias.mapa) classesSessao.push('sx-sessao--sem-mapa-lado')
@@ -774,12 +774,13 @@ export function Sessao() {
             </button>
             <button
               type="button"
-              className="botao-icone sx-botao-icone sx-ajustes"
+              className="botao sx-botao sx-ajustes"
               onClick={() => definirAjustesAbertos(true)}
-              aria-label="Ajustes da tela: mapa, Pomodoro e o que mais aparece"
-              title="Ajustes da tela"
+              aria-label="Personalizar a tela: mapa, Pomodoro e o que mais aparece"
+              title="Adicionar mapa, Pomodoro, placar e atalhos"
             >
-              <Icone nome="ajustes" />
+              <Icone nome="ajustes" tamanho={16} />
+              <span className="sx-ajustes__rotulo">Personalizar</span>
             </button>
           </div>
           {/* No modo prova o gabarito fica escondido: respondida aparece só como respondida. */}
@@ -939,7 +940,7 @@ export function Sessao() {
           <summary className="sx-lado__subtitulo">Atalhos de teclado <kbd>?</kbd></summary>
           <Atalhos />
         </details>}
-        <button type="button" className="sx-lado__ajustes" onClick={() => definirAjustesAbertos(true)}><Icone nome="ajustes" tamanho={15} /> Ajustes da tela</button>
+        <button type="button" className="sx-lado__ajustes" onClick={() => definirAjustesAbertos(true)}><Icone nome="ajustes" tamanho={15} /> Personalizar a tela</button>
       </aside>}
       </div>
 
@@ -965,7 +966,7 @@ export function Sessao() {
       </Painel>
 
       <Painel
-        titulo="Ajustes da tela"
+        titulo="Personalizar a tela"
         aberto={ajustesAbertos}
         aoFechar={() => definirAjustesAbertos(false)}
       >
@@ -997,11 +998,11 @@ const OPCOES_TELA: Array<[keyof PreferenciasSessao, string, string]> = [
   ['dicasTeclado', 'Dica de teclas embaixo das alternativas', 'A linha "Teclas 1–4 selecionam…" no computador.'],
 ]
 
-/** Ajustes da tela da sessão: cada peça liga e desliga, e a escolha fica salva neste aparelho. */
+/** Personalizar a tela da sessão: cada peça liga e desliga, e a escolha fica salva neste aparelho. */
 function AjustesTela({ preferencias, alternar }: { preferencias: PreferenciasSessao; alternar: (chave: keyof PreferenciasSessao) => void }) {
   return (
     <div className="sx-ajustes-lista">
-      <p className="meta">Deixe na tela só o que ajuda você. A escolha fica salva neste aparelho. A coluna ao lado aparece em telas largas; no celular, o Pomodoro fica na barra de cima.</p>
+      <p className="meta">A tela começa limpa, só com a questão. Ligue aqui o que ajuda você: fica salvo neste aparelho. Em telas largas, o placar, o mapa, o Pomodoro e os atalhos aparecem numa coluna ao lado; no celular, o Pomodoro fica na barra de cima.</p>
       {OPCOES_TELA.filter(([chave]) => chave !== 'somPomodoro' || preferencias.pomodoro).map(([chave, titulo, explicacao]) => (
         <label key={chave} className="sx-ajuste">
           <span className="sx-ajuste__texto"><b>{titulo}</b><small>{explicacao}</small></span>

@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { atualizar, correndo, estadoInicial, iniciar, pausar, reiniciar, trocarRitmo, validar, type EstadoPomodoro, type FasePomodoro } from '../util/pomodoro'
 
 // O que aparece na tela da sessão (19/10/2026, pedido do Tales: "dar opção de esconder o mapa e etc").
+// Regra do Tales: de entrada a tela é sempre limpa (só a questão); placar, mapa ao lado, Pomodoro,
+// atalhos e dica de teclas ficam como opção visível em "Personalizar", para a pessoa adicionar.
 // Fica só neste aparelho: é jeito de estudar, não dado de estudo.
 export interface PreferenciasSessao {
   placar: boolean
@@ -12,9 +14,9 @@ export interface PreferenciasSessao {
   somPomodoro: boolean
 }
 
-export const PREFERENCIAS_PADRAO: PreferenciasSessao = { placar: true, mapa: true, atalhos: true, dicasTeclado: true, pomodoro: false, somPomodoro: true }
+export const PREFERENCIAS_PADRAO: PreferenciasSessao = { placar: false, mapa: false, atalhos: false, dicasTeclado: false, pomodoro: false, somPomodoro: true }
 
-const CHAVE_PREFERENCIAS = 'oq:sessao:preferencias:v1'
+const CHAVE_PREFERENCIAS = 'oq:sessao:preferencias:v2'
 const CHAVE_POMODORO = 'oq:sessao:pomodoro:v1'
 
 function lerJson(chave: string): unknown {

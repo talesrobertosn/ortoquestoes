@@ -32,3 +32,6 @@ Em 16/10/2026, Tales definiu o **modelo padrão** de posts (stories e feed): o l
 Em 18/10/2026, Tales aprovou para o arsenal o **Laboratório de patologia** (feed: lâmina na ocular, laudo com pinos) e a **Raspadinha da prova** (stories). Veja [o guia](marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).
 
 Em 19/10/2026, Tales aprovou a **Caderneta de topografia** (feed) e o **Bingo da prova** (stories). Veja [o guia](marketing/instagram/estilos/CADERNETA-E-BINGO.md). Também pediu que os estilos sigam uma **ordem fixa de rodízio**, sem sortear nem repetir: rode `node marketing/instagram/estilos/ordem.mjs` antes de cada post ([regras](marketing/instagram/estilos/ORDEM.md)). Stories nunca levam figurinha de link (tira o alcance da página).
+
+## Telas do site
+Regra do Tales (19/10/2026): a tela começa **sempre limpa**, só com o essencial. O resto (mapa, Pomodoro, placar, atalhos, dicas) fica como **opção visível** para a pessoa adicionar, como o botão "Personalizar" da sessão; nunca ligado de entrada.
