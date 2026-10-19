@@ -23,6 +23,7 @@ import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
 import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
 import { usarTempoVisivel } from '../util/tempoVisivel'
 import { EstudarAssunto } from '../biblioteca/EstudarAssunto'
+import { semEco } from './ecoAlternativa'
 import '../estilos/paginas/CartaoQuestao.css'
 
 interface Props {
@@ -53,6 +54,15 @@ interface Props {
    * sessão começa do zero.
    */
   chaveTempo?: string
+  /**
+   * "Próxima questão" no pé do cartão, depois do comentário e das anotações:
+   * quem leu até o fim não precisa rolar de volta para a barra da sessão. O
+   * cartão não navega sozinho; o botão só aparece quando a página passa esta
+   * função, e só depois de responder (ou em simulado, onde o gabarito espera).
+   */
+  aoProxima?: () => void
+  /** Texto do botão; o padrão é "Próxima questão" (ex.: "Ver o resultado" na última). */
+  rotuloProxima?: string
 }
 
 export function CartaoQuestao({
@@ -71,6 +81,8 @@ export function CartaoQuestao({
   atalhosAtivos = true,
   revelarResposta = true,
   chaveTempo = '',
+  aoProxima,
+  rotuloProxima = 'Próxima questão',
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
@@ -430,6 +442,8 @@ export function CartaoQuestao({
                 marca = { texto: 'Sua resposta', icone: 'errado' }
               }
               if (eEscolhida && eGabarito) marca = { texto: 'Sua resposta, correta', icone: 'certo' }
+              // Nem marcada nem gabarito: recua (ladrilho e texto mais claros, ainda legíveis).
+              if (!eGabarito && !eEscolhida) classes.push('qz-alt--recua')
             } else if (marcada === letra || (mostrarGabarito && questao.anulada && resposta?.escolhida === letra)) {
               classes.push('alternativa--escolhida')
             }
@@ -546,7 +560,7 @@ export function CartaoQuestao({
             {questao.comentario && (
               <div className="bloco-comentario qz-bloco">
                 <p className="comentario__titulo qz-titulo-px">Comentário do autor</p>
-                <TextoEditorial texto={questao.comentario} />
+                <TextoEditorial texto={questao.comentario} realce />
               </div>
             )}
 
@@ -607,7 +621,8 @@ export function CartaoQuestao({
           </p>
         )}
 
-        <div className="qz-extras nao-imprime">
+        {/* Uma faixa só: anotações, histórico e relatar erro lado a lado; o painel aberto desce para baixo dela. */}
+        <div className="qz-extras qz-faixa nao-imprime">
           <NotasQuestao key={questao.id} id={questao.id} />
           {historicoDaQuestao.length > 0 && <details className="notas-questao qz-historico">
             <summary><Icone nome="relogio" tamanho={18} /> Histórico desta questão <span className="qz-contador">{historicoDaQuestao.length}</span></summary>
@@ -621,7 +636,17 @@ export function CartaoQuestao({
               ))}
             </ol>
           </details>}
+          <RelatarErro key={questao.id} idQuestao={questao.id} />
         </div>
+
+        {aoProxima && (respondida || !revelarResposta) && (
+          <div className="qz-proxima nao-imprime">
+            <button type="button" className="qz-proxima__botao" onClick={aoProxima}>
+              <span>{rotuloProxima}</span>
+              <span className="qz-proxima__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>
+            </button>
+          </div>
+        )}
 
         {/* Discreto, no pé da questão: a etiqueta no topo já identifica o simulado. */}
         {questao.simulado && (
@@ -633,7 +658,6 @@ export function CartaoQuestao({
         )}
 
         <div className="qz-rodape nao-imprime">
-          <RelatarErro key={questao.id} idQuestao={questao.id} />
           <EditarQuestaoAdmin idQuestao={questao.id} />
           {ultimaAcao && <button type="button" className="qz-rodape__link" onClick={desfazerUltimaAcao}><Icone nome="reiniciar" tamanho={16} /> Desfazer</button>}
           <span className="qz-rodape__id numerico">{questao.id}</span>
@@ -724,24 +748,6 @@ function Resultado({ questao, resposta, agora = false, nome = '' }: { questao: Q
   )
 }
 
-
-const normalizarEco = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
-
-/**
- * Muitos comentários abrem a explicação de cada alternativa repetindo o texto
- * dela em negrito ("**Torácica.**"). O cartão já mostra a alternativa no
- * cabeçalho, então essa primeira linha só ocupa espaço: sai quando é eco do
- * texto da alternativa e há explicação depois dela.
- */
-function semEco(texto: string, alternativa?: string): string {
-  if (!alternativa) return texto
-  const [primeiro, ...resto] = texto.split(/\n\s*\n|\n(?=- )/)
-  const eco = /^\*\*([^*]+)\*\*\s*$/.exec(primeiro.trim())
-  if (!eco || !resto.join('').trim()) return texto
-  const a = normalizarEco(eco[1]), b = normalizarEco(alternativa)
-  if (!a || !(b.startsWith(a) || a.startsWith(b) || b.includes(a))) return texto
-  return texto.slice(texto.indexOf(primeiro) + primeiro.length).replace(/^\s+/, '')
-}
 
 /**
  * Comentário escrito por inteligência artificial. A origem do texto fica
@@ -839,7 +845,7 @@ function ComentarioDaIA({
           {comentario.conceito && (
             <section className="cm-conceito" id={idParte('conceito')}>
               <p className="cm-rotulo"><Icone nome="alvo" tamanho={16} /> Conceito-chave</p>
-              <TextoEditorial texto={comentario.conceito} />
+              <TextoEditorial texto={comentario.conceito} realce />
             </section>
           )}
 
@@ -855,12 +861,12 @@ function ComentarioDaIA({
             comentario.correta.trim() && (
               <section className="cm-alt cm-alt--certa">
                 <p className="cm-rotulo"><Icone nome="certo" tamanho={16} /> Resposta comentada</p>
-                <TextoEditorial texto={comentario.correta} />
+                <TextoEditorial texto={comentario.correta} realce />
               </section>
             )
           ) : (<>
           {!referencia && <p className="cm-secao" id={idParte('alternativas')}>Alternativa por alternativa</p>}
-          {questao.anulada && comentario.correta.trim() && <TextoEditorial texto={comentario.correta} />}
+          {questao.anulada && comentario.correta.trim() && <TextoEditorial texto={comentario.correta} realce />}
           {referencia && <p className="cm-secao" id={idParte('correta')}>Por que a {referencia} {questao.gabaritoBibliografia ? 'é a resposta' : 'está certa'}</p>}
           <div className="cm-alternativas">
             {referencia && (
@@ -874,14 +880,15 @@ function ComentarioDaIA({
                   </span>
                 </header>
                 {comentario.correta.trim()
-                  ? <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(referencia))} />
+                  ? <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(referencia))} realce />
                   : <p className="comentario__pendente">O comentário desta questão está em preparação.</p>}
               </article>
             )}
 
             {referencia && erradas.length > 0 && <p className="cm-secao cm-secao--meio" id={idParte('alternativas')}>Por que as outras não servem</p>}
             {erradas.map((letra) => (
-              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra}>
+              // Nem marcada nem gabarito: a análise continua inteira, só com menos contraste.
+              <article className={'cm-alt' + (questao.anulada ? '' : escolhida === letra ? ' cm-alt--marcada' : escolhida ? ' cm-alt--discreta' : '')} key={letra}>
                 <header className="cm-alt__cabeca">
                   <span className="cm-alt__letra">{letra}</span>
                   <strong className="cm-alt__texto">{textoAlternativa(letra) ?? 'Alternativa'}</strong>
@@ -894,7 +901,7 @@ function ComentarioDaIA({
                   </span>
                 </header>
                 {comentario.incorretas[letra]?.trim()
-                  ? <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} />
+                  ? <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} realce />
                   : <p className="comentario__pendente">Sem análise desta alternativa.</p>}
               </article>
             ))}
