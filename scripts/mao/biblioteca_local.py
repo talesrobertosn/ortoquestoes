@@ -176,6 +176,11 @@ def classificar(arq, pags, e_pdf):
     n_alts = len(re.findall(r"(?m)^\s*[a-e]\s*[\)\.]\s+\S", tudo))
     n_q = len(re.findall(r"(?m)^\s*(?:quest[aã]o\s*)?\d{1,3}\s*[\)\.\-]\s+\S", tudo))
     caps = {m.group(1) for m in RE_CAP.finditer(" ".join(pags))}
+    pastas = {sem_acento(x) for x in arq.parent.parts}
+    if "livros" in pastas and e_pdf:
+        return "livro"
+    if "resumos" in pastas:
+        return "resumo composto" if len(caps) > 1 or len(re.findall(r"(?m)^#{1,2} ", " ".join(pags))) > 4 else "resumo simples"
     if re.search(r"gabarito", nome):
         return "gabarito"
     if re.search(r"prova|simao|sbcm|titulo|exame|questoes|simulado", nome) or (n_q >= 20 and n_alts >= 60):
