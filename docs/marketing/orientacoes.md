@@ -131,6 +131,9 @@ Corrigir e gerar de novo até ficar impecável; só então enviar.
 ## Laboratório de patologia e Raspadinha da prova (aprovados em 18/10/2026)
 Tales aprovou os temas do post de 17/10 para o arsenal: **Laboratório de patologia** (feed) e **Raspadinha da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).
 
+## Conversa do grupo R+ (aprovada em 19/10/2026)
+Tales aprovou o feed do post de 19/10 para o arsenal ("Ficou insano"): **Conversa do grupo R+**, 6 slides em forma de conversa dos residentes no plantão. [Guia e modelo executável](../../marketing/instagram/estilos/CONVERSA-DO-GRUPO.md).
+
 ## Caderneta de topografia e Bingo da prova (aprovados em 19/10/2026)
 Tales pediu para salvar como modelos o post de 19/10: **Caderneta de topografia** (feed) e **Bingo da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/CADERNETA-E-BINGO.md).
 
