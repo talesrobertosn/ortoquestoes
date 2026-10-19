@@ -4,7 +4,9 @@ import { dominada, INTERVALOS, type RegistroQuestao } from '../estado/revisao'
 import { TextoEditorial, TextoEmLinha, Referencias } from './TextoEditorial'
 import { NotasQuestao } from './NotasQuestao'
 import { AvaliarComentario } from './AvaliarComentario'
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { useContext, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { ContextoConta } from '../conta/ContextoConta'
+import { primeiroNome } from './Cabecalho'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
 import { DESCRICAO_PROVA, ROTULO_SIMULADOS } from '../config'
@@ -21,6 +23,7 @@ import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
 import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
 import { usarTempoVisivel } from '../util/tempoVisivel'
 import { EstudarAssunto } from '../biblioteca/EstudarAssunto'
+import { semEco } from './ecoAlternativa'
 import '../estilos/paginas/CartaoQuestao.css'
 
 interface Props {
@@ -51,6 +54,15 @@ interface Props {
    * sessão começa do zero.
    */
   chaveTempo?: string
+  /**
+   * "Próxima questão" no pé do cartão, depois do comentário e das anotações:
+   * quem leu até o fim não precisa rolar de volta para a barra da sessão. O
+   * cartão não navega sozinho; o botão só aparece quando a página passa esta
+   * função, e só depois de responder (ou em simulado, onde o gabarito espera).
+   */
+  aoProxima?: () => void
+  /** Texto do botão; o padrão é "Próxima questão" (ex.: "Ver o resultado" na última). */
+  rotuloProxima?: string
 }
 
 export function CartaoQuestao({
@@ -69,6 +81,8 @@ export function CartaoQuestao({
   atalhosAtivos = true,
   revelarResposta = true,
   chaveTempo = '',
+  aoProxima,
+  rotuloProxima = 'Próxima questão',
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
@@ -96,6 +110,8 @@ export function CartaoQuestao({
   const travada = mostrarGabarito
   // Assinante: a porcentagem da turma aparece embaixo de cada alternativa, sem caixa à parte.
   const turma = usarTurmaNasAlternativas(questao, mostrarGabarito && respondida && !modoLeitura && !dissertativa)
+  // O primeiro nome da pessoa no aviso do resultado, como nos e-mails. Sem nome, a frase funciona sem ele.
+  const nome = primeiroNome(useContext(ContextoConta)?.sessao?.user.user_metadata?.nome)
 
   useEffect(() => {
     definirEscolhida(null)
@@ -305,7 +321,7 @@ export function CartaoQuestao({
   const etiquetasVisiveis = mostrarEtiquetas || mostrarGabarito
 
   return (
-    <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`} ref={areaDaQuestao} onMouseUp={atualizarSelecao}>
+    <article className="cartao questao-impressa qz-cartao" aria-label={`Questão ${numero ?? ''}`} ref={areaDaQuestao} onMouseUp={atualizarSelecao}>
       {grifos.map((r, i) => <span key={i} className="grifo-overlay" style={{ left: r.left, top: r.top, width: r.width, height: r.height }} aria-hidden="true" />)}
       <div className="cartao__corpo">
         <div className="qz-topo">
@@ -411,7 +427,7 @@ export function CartaoQuestao({
           {questao.alternativas.map((alternativa, i) => {
             const letra = alternativa.letra
             const riscada = riscadas.includes(letra)
-            const classes = ['alternativa']
+            const classes = ['alternativa', 'qz-alt']
             let marca: { texto: string; icone: 'certo' | 'errado' } | null = null
 
             if (mostrarGabarito && !questao.anulada) {
@@ -426,6 +442,8 @@ export function CartaoQuestao({
                 marca = { texto: 'Sua resposta', icone: 'errado' }
               }
               if (eEscolhida && eGabarito) marca = { texto: 'Sua resposta, correta', icone: 'certo' }
+              // Nem marcada nem gabarito: recua (ladrilho e texto mais claros, ainda legíveis).
+              if (!eGabarito && !eEscolhida) classes.push('qz-alt--recua')
             } else if (marcada === letra || (mostrarGabarito && questao.anulada && resposta?.escolhida === letra)) {
               classes.push('alternativa--escolhida')
             }
@@ -438,7 +456,7 @@ export function CartaoQuestao({
             }
 
             return (
-              <li key={letra} className="alternativa-envelope">
+              <li key={letra} className={'alternativa-envelope' + (!travada ? ' qz-alt-linha--risco' : '')}>
                 <button
                   type="button"
                   className={classes.join(' ')}
@@ -463,8 +481,8 @@ export function CartaoQuestao({
                     </span>
                   )}
                   {marca && (
-                    <span className="alternativa__marca">
-                      <Icone nome={marca.icone} tamanho={16} />
+                    <span className={'alternativa__marca alternativa__marca--' + marca.icone}>
+                      <Icone nome={marca.icone} tamanho={14} />
                       {marca.texto}
                     </span>
                   )}
@@ -472,7 +490,7 @@ export function CartaoQuestao({
                 {!travada && (
                   <button
                     type="button"
-                    className="riscar nao-imprime"
+                    className="riscar qz-riscar nao-imprime"
                     onClick={() => executarAcao('risco', letra)}
                     aria-pressed={riscada}
                     aria-label={`${riscada ? 'Desfazer risco na' : 'Riscar'} alternativa ${letra}`}
@@ -513,7 +531,7 @@ export function CartaoQuestao({
             </div>
             <button
               type="button"
-              className="botao botao--principal botao--grande"
+              className="botao botao--principal botao--grande qz-responder"
               disabled={!escolhida || enviando}
               aria-busy={enviando}
               onClick={() => escolhida && void confirmar(escolhida)}
@@ -522,14 +540,14 @@ export function CartaoQuestao({
             </button>
             {erroEnvio && <p className="aviso-formulario aviso-formulario--erro" role="alert">Não foi possível registrar a resposta. Tente de novo; se continuar, mande um print desta mensagem. <small>({erroEnvio})</small></p>}
             <span className="campo__auxilio acao-responder__dica">Acerto com dúvida ou chute volta antes para revisão.</span>
-            <span className="meta so-teclado">
+            <span className="meta so-teclado qz-teclas">
               Teclas <kbd>1</kbd>–<kbd>{letrasDisponiveis.length}</kbd> selecionam,{' '}
               <kbd>S</kbd> <kbd>D</kbd> <kbd>C</kbd> mudam a confiança e <kbd>Enter</kbd> confirma
             </span>
           </div>
         ) : !modoLeitura && (
           <>
-            <Resultado questao={questao} resposta={resposta!} agora={respondeuAgora} />
+            <Resultado questao={questao} resposta={resposta!} agora={respondeuAgora} nome={nome} />
             {turma && <p className="alt-turma-resumo"><Icone nome="grupo" tamanho={15} /> {turma.porLetra
               ? <>Porcentagens da primeira resposta de {pessoas(turma.respondentes)}. {turma.acertoPrimeira}% acertaram de primeira{resposta!.correta === false && turma.acertoPrimeira >= 80 ? '; quase todo mundo acerta esta, vale reler o comentário' : resposta!.correta === true && turma.acertoPrimeira <= 40 ? '; você acertou uma que a maioria erra' : ''}.</>
               : <>A porcentagem da turma em cada alternativa aparece a partir de 3 pessoas{turma.respondentes ? ` (até agora, ${pessoas(turma.respondentes)})` : ''}.</>}</p>}
@@ -538,11 +556,11 @@ export function CartaoQuestao({
 
         {mostrarGabarito && (
           <div className="comentario">
-            {resposta && resposta.correta !== null && !dissertativa && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(registroDaQuestao) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : `Acerto seguro registrado. Ela volta em ${INTERVALOS.seguro.join(', ').replace(/, (\d+)$/, ' e $1')} dias, conforme você for acertando.`}</p>}
+            {resposta && resposta.correta !== null && !dissertativa && <p className="qz-volta"><Icone nome={resposta.correta === false ? 'reiniciar' : 'relogio'} tamanho={15} /><span>{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(registroDaQuestao) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : `Acerto seguro registrado. Ela volta em ${INTERVALOS.seguro.join(', ').replace(/, (\d+)$/, ' e $1')} dias, conforme você for acertando.`}</span></p>}
             {questao.comentario && (
-              <div className="bloco-comentario">
-                <p className="comentario__titulo">Comentário do autor</p>
-                <TextoEditorial texto={questao.comentario} />
+              <div className="bloco-comentario qz-bloco">
+                <p className="comentario__titulo qz-titulo-px">Comentário do autor</p>
+                <TextoEditorial texto={questao.comentario} realce />
               </div>
             )}
 
@@ -551,8 +569,8 @@ export function CartaoQuestao({
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
-            <div className="bloco-comentario">
-              <p className="comentario__titulo">Comentários da comunidade</p>
+            <div className="bloco-comentario qz-bloco qz-comunidade" id={`qz-${questao.id}-comunidade`}>
+              <p className="comentario__titulo qz-titulo-px">Comentários da comunidade{(questao.comentariosComunidade?.length ?? 0) > 0 && <span className="qz-contador">{questao.comentariosComunidade!.length}</span>}</p>
               {(questao.comentariosComunidade?.length ?? 0) === 0 ? (
                 <p className="comentario__pendente">
                   Ninguém comentou esta ainda. Se você sabe por que a resposta é essa, escreva —
@@ -603,8 +621,9 @@ export function CartaoQuestao({
           </p>
         )}
 
-        <div className="qz-extras nao-imprime">
-          <NotasQuestao key={questao.id} id={questao.id} />
+        {/* Uma faixa só: anotações, histórico e relatar erro lado a lado; o painel aberto desce para baixo dela. */}
+        <div className="qz-extras qz-faixa nao-imprime">
+          <NotasQuestao key={`notas-${questao.id}`} id={questao.id} />
           {historicoDaQuestao.length > 0 && <details className="notas-questao qz-historico">
             <summary><Icone nome="relogio" tamanho={18} /> Histórico desta questão <span className="qz-contador">{historicoDaQuestao.length}</span></summary>
             <ol className="qz-linha-tempo">
@@ -617,7 +636,17 @@ export function CartaoQuestao({
               ))}
             </ol>
           </details>}
+          <RelatarErro key={`relato-${questao.id}`} idQuestao={questao.id} />
         </div>
+
+        {aoProxima && (respondida || !revelarResposta) && (
+          <div className="qz-proxima nao-imprime">
+            <button type="button" className="qz-proxima__botao" onClick={aoProxima}>
+              <span>{rotuloProxima}</span>
+              <span className="qz-proxima__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>
+            </button>
+          </div>
+        )}
 
         {/* Discreto, no pé da questão: a etiqueta no topo já identifica o simulado. */}
         {questao.simulado && (
@@ -629,7 +658,6 @@ export function CartaoQuestao({
         )}
 
         <div className="qz-rodape nao-imprime">
-          <RelatarErro key={questao.id} idQuestao={questao.id} />
           <EditarQuestaoAdmin idQuestao={questao.id} />
           {ultimaAcao && <button type="button" className="qz-rodape__link" onClick={desfazerUltimaAcao}><Icone nome="reiniciar" tamanho={16} /> Desfazer</button>}
           <span className="qz-rodape__id numerico">{questao.id}</span>
@@ -647,7 +675,7 @@ export function CartaoQuestao({
           <Icone nome="riscar" tamanho={15} /> Grifar
         </button>
       )}
-      {grifos.length > 0 && !menuGrifo && <button type="button" className="botao botao--fantasma nao-imprime" style={{ position: 'absolute', right: '1rem', bottom: '1rem', zIndex: 3 }} onClick={() => definirGrifos(atual => atual.slice(0, -1))}>Desfazer último grifo</button>}
+      {grifos.length > 0 && !menuGrifo && <button type="button" className="botao botao--fantasma nao-imprime qz-desfazer-grifo" onClick={() => definirGrifos(atual => atual.slice(0, -1))}>Desfazer último grifo</button>}
     </article>
   )
 }
@@ -665,62 +693,61 @@ function formatarData(iso?: string | null) {
   return new Date(ano, mes - 1, dia).toLocaleDateString('pt-BR')
 }
 
-function Resultado({ questao, resposta, agora = false }: { questao: Questao; resposta: Resposta; agora?: boolean }) {
+function Resultado({ questao, resposta, agora = false, nome = '' }: { questao: Questao; resposta: Resposta; agora?: boolean; nome?: string }) {
   if (questao.anulada) {
     return (
-      <div className="resultado resultado--neutro" role="status">
-        <Icone nome="alerta" />
-        Questão anulada na prova original. Não entra no cálculo de desempenho.
+      <div className="resultado resultado--neutro qz-resultado" role="status">
+        <span className="qz-resultado__selo" aria-hidden="true"><Icone nome="alerta" /></span>
+        <span className="qz-resultado__texto">Questão anulada na prova original. Não entra no cálculo de desempenho.</span>
       </div>
     )
   }
   if (resposta.correta === null) {
     return (
-      <div className="resultado resultado--neutro" role="status">
-        <Icone nome="alerta" />
-        Sem gabarito confirmado. Não entra no cálculo de desempenho.
+      <div className="resultado resultado--neutro qz-resultado" role="status">
+        <span className="qz-resultado__selo" aria-hidden="true"><Icone nome="alerta" /></span>
+        <span className="qz-resultado__texto">Sem gabarito confirmado. Não entra no cálculo de desempenho.</span>
       </div>
     )
   }
   // Prova sem gabarito oficial: a resposta vem da bibliografia e já conta no desempenho.
-  const rotulo = questao.gabaritoBibliografia ? 'Resposta pela bibliografia' : 'Gabarito'
-  const nota = questao.gabaritoBibliografia && (
+  const bibliografia = !!questao.gabaritoBibliografia
+  const nota = bibliografia && (
     <small className="resultado__nota">
       A banca não divulgou o gabarito oficial desta prova. A resposta {questao.gabarito} foi definida pelo Orto Questões a partir da bibliografia
       e conta no seu desempenho e no ranking.
     </small>
   )
-  return resposta.correta ? (
-    <div className={'resultado resultado--acerto' + (agora ? ' resultado--agora' : '')} role="status">
-      <Icone nome="certo" />
-      <span>Você acertou. {rotulo}: {questao.gabarito}.{nota}</span>
-    </div>
-  ) : (
-    <div className={'resultado resultado--erro' + (agora ? ' resultado--agora' : '')} role="status">
-      <Icone nome="errado" />
-      <span>Você errou. {rotulo}: {questao.gabarito}, você marcou {resposta.escolhida}.{nota}</span>
+  const classe = (tipo: string) => `resultado resultado--${tipo} qz-resultado` + (agora ? ' resultado--agora' : '')
+  if (resposta.correta) {
+    return (
+      <div className={classe('acerto')} role="status">
+        <span className="qz-resultado__selo" aria-hidden="true">
+          <Icone nome="certo" />
+          {agora && <span className="qz-faisca">{[0, 1, 2, 3].map((i) => <i key={i} />)}</span>}
+        </span>
+        <span className="qz-resultado__texto">
+          <span className="qz-resultado__rotulo">Você acertou</span>
+          <strong className="qz-resultado__frase">{nome ? `Boa, ${nome}.` : 'Boa.'} {bibliografia ? 'Resposta pela bibliografia' : 'Gabarito'} {questao.gabarito}.</strong>
+          {nota}
+        </span>
+      </div>
+    )
+  }
+  const gabarito = `${bibliografia ? 'a resposta pela bibliografia' : 'o gabarito'} é ${questao.gabarito}.`
+  return (
+    <div className={classe('erro')} role="status">
+      <span className="qz-resultado__selo" aria-hidden="true"><Icone nome="errado" /></span>
+      <span className="qz-resultado__texto">
+        <span className="qz-resultado__rotulo">Para revisar</span>
+        <strong className="qz-resultado__frase">{nome ? `${nome}, ${gabarito}` : gabarito.charAt(0).toUpperCase() + gabarito.slice(1)}</strong>
+        <span className="qz-resultado__detalhe">Você marcou {resposta.escolhida}: o comentário mostra a diferença.</span>
+        {nota}
+      </span>
     </div>
   )
 }
 
-
-const normalizarEco = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
-
-/**
- * Muitos comentários abrem a explicação de cada alternativa repetindo o texto
- * dela em negrito ("**Torácica.**"). O cartão já mostra a alternativa no
- * cabeçalho, então essa primeira linha só ocupa espaço: sai quando é eco do
- * texto da alternativa e há explicação depois dela.
- */
-function semEco(texto: string, alternativa?: string): string {
-  if (!alternativa) return texto
-  const [primeiro, ...resto] = texto.split(/\n\s*\n|\n(?=- )/)
-  const eco = /^\*\*([^*]+)\*\*\s*$/.exec(primeiro.trim())
-  if (!eco || !resto.join('').trim()) return texto
-  const a = normalizarEco(eco[1]), b = normalizarEco(alternativa)
-  if (!a || !(b.startsWith(a) || a.startsWith(b) || b.includes(a))) return texto
-  return texto.slice(texto.indexOf(primeiro) + primeiro.length).replace(/^\s+/, '')
-}
 
 /**
  * Comentário escrito por inteligência artificial. A origem do texto fica
@@ -763,6 +790,23 @@ function ComentarioDaIA({
   const textoAlternativa = (letra: string) =>
     questao.alternativas.find((a) => a.letra === letra)?.texto
 
+  // "Neste comentário": atalhos para as partes que existem. Botões, não âncoras:
+  // o site usa o # da URL para as rotas.
+  const idParte = (parte: string) => `qz-${questao.id}-${parte}`
+  const partes: Array<[string, string]> = []
+  if (comentario?.conceito) partes.push(['conceito', 'Conceito-chave'])
+  if (comentario && questao.tipo !== 'dissertativa') {
+    if (referencia) partes.push(['correta', `Por que a ${referencia}`])
+    if (erradas.length) partes.push(['alternativas', referencia ? 'As outras' : 'Alternativas'])
+  }
+  if (comentario) partes.push(['comunidade', 'Comunidade'])
+  function irPara(parte: string) {
+    const alvo = document.getElementById(idParte(parte))
+    if (!alvo) return
+    const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    alvo.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' })
+  }
+
   return (
     <div className="bloco-comentario cm" ref={inicio}>
       <header className="cm-cabeca">
@@ -772,6 +816,15 @@ function ComentarioDaIA({
           <p className="cm-cabeca__sub">{questao.anulada ? 'O tema e a análise das alternativas de uma questão anulada.' : 'O conceito, por que a correta está certa e por que as outras não servem.'}</p>
         </div>
       </header>
+
+      {partes.length >= 3 && (
+        <nav className="cm-indice nao-imprime" aria-label="Neste comentário">
+          <span className="cm-indice__rotulo">Neste comentário</span>
+          {partes.map(([parte, rotulo]) => (
+            <button key={parte} type="button" className="cm-indice__item" onClick={() => irPara(parte)}>{rotulo}</button>
+          ))}
+        </nav>
+      )}
 
       {carregando && <p className="comentario__pendente">Carregando o comentário…</p>}
 
@@ -790,9 +843,9 @@ function ComentarioDaIA({
           )}
 
           {comentario.conceito && (
-            <section className="cm-conceito">
+            <section className="cm-conceito" id={idParte('conceito')}>
               <p className="cm-rotulo"><Icone nome="alvo" tamanho={16} /> Conceito-chave</p>
-              <TextoEditorial texto={comentario.conceito} />
+              <TextoEditorial texto={comentario.conceito} realce />
             </section>
           )}
 
@@ -808,40 +861,47 @@ function ComentarioDaIA({
             comentario.correta.trim() && (
               <section className="cm-alt cm-alt--certa">
                 <p className="cm-rotulo"><Icone nome="certo" tamanho={16} /> Resposta comentada</p>
-                <TextoEditorial texto={comentario.correta} />
+                <TextoEditorial texto={comentario.correta} realce />
               </section>
             )
           ) : (<>
-          <p className="cm-secao">Alternativa por alternativa</p>
-          {questao.anulada && comentario.correta.trim() && <TextoEditorial texto={comentario.correta} />}
+          {!referencia && <p className="cm-secao" id={idParte('alternativas')}>Alternativa por alternativa</p>}
+          {questao.anulada && comentario.correta.trim() && <TextoEditorial texto={comentario.correta} realce />}
+          {referencia && <p className="cm-secao" id={idParte('correta')}>Por que a {referencia} {questao.gabaritoBibliografia ? 'é a resposta' : 'está certa'}</p>}
           <div className="cm-alternativas">
             {referencia && (
               <article className="cm-alt cm-alt--certa">
                 <header className="cm-alt__cabeca">
                   <span className="cm-alt__letra">{referencia}</span>
                   <strong className="cm-alt__texto">{textoAlternativa(referencia) ?? 'Alternativa correta'}</strong>
-                  <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> {questao.gabarito && !questao.gabaritoBibliografia ? 'Correta' : 'Resposta pela bibliografia'}</span>
-                  {escolhida === referencia && <span className="cm-selo">Sua resposta</span>}
+                  <span className="cm-alt__selos">
+                    <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> {questao.gabarito && !questao.gabaritoBibliografia ? 'Gabarito' : 'Resposta pela bibliografia'}</span>
+                    {escolhida === referencia && <span className="cm-selo cm-selo--sua">Sua escolha</span>}
+                  </span>
                 </header>
                 {comentario.correta.trim()
-                  ? <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(referencia))} />
+                  ? <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(referencia))} realce />
                   : <p className="comentario__pendente">O comentário desta questão está em preparação.</p>}
               </article>
             )}
 
+            {referencia && erradas.length > 0 && <p className="cm-secao cm-secao--meio" id={idParte('alternativas')}>Por que as outras não servem</p>}
             {erradas.map((letra) => (
-              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra}>
+              // Nem marcada nem gabarito: a análise continua inteira, só com menos contraste.
+              <article className={'cm-alt' + (questao.anulada ? '' : escolhida === letra ? ' cm-alt--marcada' : escolhida ? ' cm-alt--discreta' : '')} key={letra}>
                 <header className="cm-alt__cabeca">
                   <span className="cm-alt__letra">{letra}</span>
                   <strong className="cm-alt__texto">{textoAlternativa(letra) ?? 'Alternativa'}</strong>
-                  {questao.anulada
-                    ? <span className="cm-selo cm-selo--neutro">Análise</span>
-                    : escolhida === letra
-                    ? <span className="cm-selo cm-selo--erro"><Icone nome="errado" tamanho={13} /> Sua resposta</span>
-                    : <span className="cm-selo cm-selo--neutro">Incorreta</span>}
+                  <span className="cm-alt__selos">
+                    {questao.anulada
+                      ? <span className="cm-selo cm-selo--neutro">Análise</span>
+                      : escolhida === letra
+                      ? <span className="cm-selo cm-selo--erro"><Icone nome="errado" tamanho={13} /> Sua escolha</span>
+                      : <span className="cm-selo cm-selo--neutro">Incorreta</span>}
+                  </span>
                 </header>
                 {comentario.incorretas[letra]?.trim()
-                  ? <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} />
+                  ? <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} realce />
                   : <p className="comentario__pendente">Sem análise desta alternativa.</p>}
               </article>
             ))}

@@ -12,7 +12,7 @@ const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-te-'))
 const arquivo = join(pasta, 't.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/componentes/TextoEditorial'; export { createElement } from 'react'; export { renderToStaticMarkup } from 'react-dom/server'`, resolveDir: process.cwd(), loader: 'ts' },
+    stdin: { contents: `export * from './src/componentes/TextoEditorial'; export { semEco } from './src/componentes/ecoAlternativa'; export { createElement } from 'react'; export { renderToStaticMarkup } from 'react-dom/server'`, resolveDir: process.cwd(), loader: 'ts' },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', jsx: 'automatic', loader: { '.css': 'empty' }, external: ['react', 'react-dom', 'react/*', 'react-dom/*'],
     define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' }, logLevel: 'error',
   })
@@ -41,6 +41,37 @@ try {
   // Linha que continua o grupo (1ª célula vazia) leva o nome do grupo para o cartão.
   assert.match(html('| Eixo | Achado | Pontos |\n|---|---|---|\n| Morfologia | Sem alteração | 0 |\n| | Compressão | 1 |'), /<td data-grupo="Morfologia"><\/td><td data-rotulo="Achado">Compressão<\/td>/)
 
+  // Modo realce (só o cartão da questão): desligado, a saída é a de sempre.
+  const comRealce = (texto) => m.renderToStaticMarkup(m.createElement(m.TextoEditorial, { texto, realce: true }))
+  assert.doesNotMatch(html('**Na prova:** senil tem **osteoclasto diminuído**.'), /te-prova|te-forte/)
+  assert.match(html('**curto**'), /<strong>curto<\/strong>/)
+  // Abertura de parágrafo que fecha em ponto é mini-título; até 4 palavras é ênfase curta; o resto, longo.
+  assert.match(comRealce('**As fraturas da zona III.** Têm pior prognóstico.'), /<strong class="te-forte te-forte--abertura">As fraturas da zona III\.<\/strong>/)
+  assert.match(comRealce('**Na prova**: texto'), /te-prova/)
+  assert.match(comRealce('Texto com **rotação interna** no meio.'), /te-forte--curto">rotação interna/)
+  assert.match(comRealce('Texto com **esclerose do semilunar sem colapso articular** no meio.'), /te-forte--longo/)
+  // "Na prova:" vira quadro com rótulo e o rótulo sai do texto (primeira letra maiúscula).
+  const prova = comRealce('**Na prova:** senil tem **osteoclasto diminuído**.')
+  assert.match(prova, /<aside class="te-prova"><span class="te-prova__rotulo">Na prova<\/span><p>Senil tem /)
+  assert.match(comRealce('**Na prova**: a zona segura.'), /<p>A zona segura\.<\/p>/)
+  assert.match(comRealce('**Pegadinha da frase composta.** A primeira parte.'), /te-prova__rotulo">Pegadinha da banca<\/span><p><strong[^>]*>Pegadinha da frase composta\.<\/strong>/)
+
+  // semEco: a abertura que repete a alternativa sai; frase de verdade fica.
+  assert.equal(m.semEco('**II.** Esclerose do semilunar, sem colapso.', 'II.'), 'Esclerose do semilunar, sem colapso.')
+  assert.equal(m.semEco('**Inibe a ação dos osteoclastos.** O osteoclasto engole a droga.', 'inibe a ação dos osteoclastos.'), 'O osteoclasto engole a droga.')
+  assert.equal(m.semEco('**Correta: D (corpo vertebral na transição toracolombar).** Na tuberculose da coluna.', 'corpo vertebral na transição toracolombar'), 'Na tuberculose da coluna.')
+  assert.equal(m.semEco('**A: anterior; mantida.** O capítulo define.', 'anterior; mantida.'), 'O capítulo define.')
+  assert.equal(m.semEco('**Torácica.**\n\nA coluna torácica é a mais acometida.', 'Torácica'), 'A coluna torácica é a mais acometida.')
+  assert.equal(m.semEco('Torácica: porque o corpo vertebral é maior.', 'Torácica'), 'Porque o corpo vertebral é maior.')
+  // Não é eco: frase com a alternativa como sujeito, negrito que continua a frase, "II" diante de "III", texto só com o eco.
+  assert.equal(m.semEco('A **tróclea** pode ser acometida.', 'a tróclea.'), 'A **tróclea** pode ser acometida.')
+  assert.equal(m.semEco('**Bacia é possível, mas rara.** A sacroilíaca.', 'bacia.'), '**Bacia é possível, mas rara.** A sacroilíaca.')
+  assert.equal(m.semEco('**Grácil e semimembranáceo** ficam na face medial.', 'grácil e semimembranáceo.'), '**Grácil e semimembranáceo** ficam na face medial.')
+  assert.equal(m.semEco('**Na coluna**: a medula vermelha persiste.', 'na coluna.'), 'A medula vermelha persiste.')
+  assert.equal(m.semEco('**10%** subestima o envolvimento.', '10% dos casos.'), '**10%** subestima o envolvimento.')
+  assert.equal(m.semEco('**III.** Colapso.', 'II.'), '**III.** Colapso.')
+  assert.equal(m.semEco('**L5.**', 'L5'), '**L5.**')
+
   // O acervo inteiro: nada quebra e nenhum *itálico* aparece cru.
   let total = 0, tabelas = 0
   const sobras = []
@@ -51,6 +82,7 @@ try {
         if (!texto) continue
         total++
         const saida = html(texto)
+        comRealce(texto)
         if (saida.includes('te-tabela')) tabelas++
         const cru = saida.replace(/<[^>]+>/g, '').match(/(^|[\s(])\*[^*\s][^*]*?[^*\s]\*(?=[\s).,;:]|$)/)
         if (cru) sobras.push(`${id}: ${cru[0].trim()}`)

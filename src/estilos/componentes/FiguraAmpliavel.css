@@ -1,0 +1,85 @@
+/* Figura da questão (FiguraAmpliavel): moldura pixel com a lupa à vista e a
+   janela em tela cheia com zoom (pinça, roda, clique, + e −). Só o cartão da
+   questão usa este componente; a base (.questao__figura, .janela-imagem) segue em base.css. */
+
+/* ---------- A figura na página ---------- */
+.questao__figura:has(> .figura-ampliavel) {
+  border: 2px solid var(--px-borda); border-radius: 4px; overflow: visible;
+  background: var(--superficie-2); box-shadow: 4px 4px 0 var(--px-sombra);
+}
+.figura-ampliavel { position: relative; display: block; width: 100%; border-radius: 2px 2px 0 0; overflow: hidden; }
+.questao__figura:has(> .figura-ampliavel):not(:has(figcaption)) .figura-ampliavel { border-radius: 2px; }
+.figura-ampliavel img { margin-inline: auto; }
+.figura-ampliavel:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+
+/* A lupa: uma placa pixel no canto, sempre visível (não só no hover), alvo de 44 px. */
+.figura-lupa {
+  position: absolute; right: 0.5rem; bottom: 0.5rem;
+  display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; padding: 0 0.75rem 0 0.65rem;
+  background: var(--px-ouro); color: var(--px-tinta);
+  box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra);
+  font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.15rem; line-height: 1; letter-spacing: 0.03em;
+  pointer-events: none;
+  transition: transform var(--duracao-rapida) var(--curva), box-shadow var(--duracao-rapida) var(--curva);
+}
+.figura-lupa svg { flex: none; }
+@media (hover: hover) {
+  .figura-ampliavel:hover .figura-lupa { transform: translate(-1px, -1px); box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra); }
+}
+.figura-ampliavel:active .figura-lupa { transform: translate(2px, 2px); box-shadow: 0 0 0 2px var(--px-tinta), 1px 1px 0 2px var(--px-ouro-sombra); }
+:root[data-tema="escuro"] .figura-lupa { box-shadow: 0 0 0 2px #000, 3px 3px 0 2px var(--px-ouro-sombra); }
+.questao__figura:has(> .figura-ampliavel) figcaption { border-top: 2px dotted var(--px-borda); padding: 0.5rem 0.7rem; line-height: 1.45; }
+@media (max-width: 30rem) { .figura-lupa__texto { display: none; } .figura-lupa { padding: 0; width: 44px; justify-content: center; } }
+@media print { .figura-lupa { display: none; } }
+
+/* ---------- A janela em tela cheia ---------- */
+.janela-imagem.jz {
+  z-index: var(--z-janela, 1000);
+  display: grid; grid-template-rows: auto minmax(0, 1fr) auto auto; grid-template-columns: minmax(0, 1fr);
+  place-items: stretch; place-content: stretch; gap: 0.5rem;
+  padding: max(0.6rem, env(safe-area-inset-top)) 0.6rem max(0.8rem, env(safe-area-inset-bottom));
+  background: rgba(8, 12, 12, 0.97);
+  overscroll-behavior: contain;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .janela-imagem.jz { animation: jz-entra 0.16s var(--curva) both; }
+}
+@keyframes jz-entra { from { opacity: 0; } }
+
+.jz-barra { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.jz-zoom { display: inline-flex; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.28); background: rgba(255, 255, 255, 0.06); }
+.jz-botao {
+  display: inline-grid; place-items: center; min-width: 48px; height: 48px; padding: 0 0.6rem; border: 0; border-radius: 0;
+  background: transparent; color: #f2f4f3; cursor: pointer;
+  font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.7rem; line-height: 1;
+  transition: background-color var(--duracao-rapida) var(--curva);
+}
+.jz-zoom .jz-botao + .jz-botao { box-shadow: inset 2px 0 0 rgba(255, 255, 255, 0.18); }
+.jz-botao svg { display: block; }
+.jz-botao--nivel { min-width: 4.4rem; font-size: 1.2rem; font-variant-numeric: tabular-nums; }
+.jz-botao:hover:not(:disabled) { background: rgba(255, 255, 255, 0.14); }
+.jz-botao:disabled { color: rgba(242, 244, 243, 0.62); cursor: default; }
+.jz-botao:focus-visible { outline: 3px solid var(--pixel-ouro, #f4cf7c); outline-offset: -3px; }
+.jz-fechar { background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px #000, 3px 3px 0 2px var(--px-ouro-sombra); }
+.jz-fechar:hover:not(:disabled) { background: #ffdf95; }
+.jz-fechar:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+
+.jz-palco {
+  position: relative; display: flex; align-items: center; justify-content: center; min-height: 0; overflow: hidden;
+  touch-action: none; user-select: none; -webkit-user-select: none; cursor: zoom-in;
+}
+.jz-palco--ampliada { cursor: grab; }
+.jz-palco--ampliada.jz-palco--gesto { cursor: grabbing; }
+.jz-imagem {
+  display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;
+  transform-origin: center center; will-change: transform;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.16), 0 20px 60px rgba(0, 0, 0, 0.5);
+  -webkit-user-drag: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .jz-palco:not(.jz-palco--gesto) .jz-imagem { transition: transform 0.18s var(--curva); }
+}
+.jz .janela-imagem__legenda { color: #e6ebe9; }
+.jz-dica { color: rgba(242, 244, 243, 0.8); opacity: 1; }
+.jz-dica--mouse { display: none; }
+@media (hover: hover) and (pointer: fine) { .jz-dica--toque { display: none; } .jz-dica--mouse { display: inline; } }
