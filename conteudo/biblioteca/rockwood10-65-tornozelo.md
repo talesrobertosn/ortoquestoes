@@ -9,7 +9,7 @@ edicao: 10ª edição (2025)
 capitulo: Capítulo 65 · Ankle Fractures
 autores: Timothy O. White e Tom Carter
 fonte: Capítulo enviado pelo Tales em 17/10/2026 (3_temas_tibia_sht_pilon_ankle-51-91.pdf, 41 páginas; o capítulo 65 ocupa as páginas 11 a 41, e as anteriores são dos capítulos da diáfise da tíbia e do pilão tibial)
-subtemas: Fratura do tornozelo
+subtemas: Fratura do tornozelo; Fraturas do tornozelo e do pilão tibial
 resumo: LAUGE-HANSEN (SER IV instável, SAD II com impacto medial, pronação-abdução cominuta, MAISONNEUVE), DANIS-WEBER, RAMSEY e HAMILTON (1 mm, 42%), espaço claro medial e sindesmose, estresse em neutro e teste da marcha, tibiofibular posteroinferior e VOLKMANN, BARTONÍČEK e HARAGUCHI, parafuso ou botão de sutura, maléolo medial e diabético.
 ---
 

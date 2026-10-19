@@ -9,7 +9,7 @@ edicao: 10ª edição (2025)
 capitulo: Capítulo 64 · Tibial Pilon Fractures
 autores: Roy W. Sanders e Christopher D. Flanagan
 fonte: Capítulo enviado pelo Tales em 17/10/2026 (3_temas_tibia_sht_pilon_ankle-1-50.pdf, pp. 39 a 50, e 3_temas_tibia_sht_pilon_ankle-51-91.pdf, pp. 1 a 10)
-subtemas: Fratura do pilão tibial
+subtemas: Fratura do pilão tibial; Fraturas do tornozelo e do pilão tibial
 resumo: Carga axial e posição do pé, flictena serosa e hemorrágica, RÜEDI e ALLGÖWER, AO 43, CHAPUT e VOLKMANN, três colunas e fíbula, fixador transarticular e tomografia, 10 dias e rugas, vias anterior, anteromedial, anterolateral e posterolateral, artrose nos dois primeiros anos.
 ---
 
