@@ -430,6 +430,9 @@ def cmd_copia(a):
 
 
 def main():
+    for fluxo in (sys.stdout, sys.stderr):  # Windows: console em cp1252 quebraria em caracteres fora da tabela
+        if hasattr(fluxo, "reconfigure"):
+            fluxo.reconfigure(encoding="utf8", errors="replace")
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     def novo(nome, f):
