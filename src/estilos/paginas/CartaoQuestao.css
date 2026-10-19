@@ -769,3 +769,173 @@
 .qz-cartao .qz-faixa > .relato { border: 0; border-radius: 0; box-shadow: none; margin: 0; }
 .qz-cartao .qz-faixa .relato__tipo { border-radius: 3px; border-width: 2px; }
 .qz-cartao .qz-faixa .relato .botao { border-radius: 3px; }
+
+/* =====================================================================
+   Acabamento suave (19/10/2026, pedido do Tales: "está tudo muito quadrado,
+   deixar a tela mais limpa, mais parecido com antes").
+   Volta o desenho de antes da temporada pixel: cantos arredondados, borda
+   fina, sombra macia, letras em círculo e títulos na fonte do texto.
+   Fica do pixel: o ouro do Próxima e do Simulados, a frase "Boa, Tales",
+   o índice "Neste comentário" e o quadro "Na prova".
+   Vem por último para valer sobre as regras de cima sem apagá-las.
+   ===================================================================== */
+.qz-cartao {
+  --px-sombra: transparent;
+  --px-borda: var(--traco);
+  --qz-raio: 14px;
+}
+.questao-impressa.qz-cartao { border: 1px solid var(--traco); border-radius: var(--raio-cartao); box-shadow: var(--sombra-media); }
+@media (max-width: 40rem) { .questao-impressa.qz-cartao { box-shadow: var(--sombra); } }
+
+/* Topo */
+.qz-cartao .qz-numero { font-family: var(--fonte-texto); font-weight: 750; font-size: 1.3rem; letter-spacing: -0.01em; }
+.qz-cartao .qz-numero small { font-weight: 500; font-size: 0.82em; }
+.qz-origem, .qz-chip--origem,
+:root[data-tema="escuro"] .qz-origem, :root[data-tema="escuro"] .qz-chip--origem {
+  padding: 0.28rem 0.7rem; border-radius: 999px; background: var(--texto); color: var(--superficie); box-shadow: none;
+  font-family: var(--fonte-texto); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.02em; text-transform: none;
+}
+.qz-origem--simulado, .qz-chip--origem.qz-chip--simulado,
+:root[data-tema="escuro"] .qz-origem--simulado, :root[data-tema="escuro"] .qz-chip--origem.qz-chip--simulado {
+  background: var(--px-ouro); color: var(--px-tinta); box-shadow: none;
+}
+.qz-ferramentas { gap: 2px; padding: 3px; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie-2); box-shadow: none; }
+.qz-ferramenta { width: 38px; height: 38px; border-radius: 999px; }
+.qz-ferramenta + .qz-ferramenta { border-left: 0; }
+.qz-ferramenta:hover { background: var(--superficie); }
+.qz-ferramenta[aria-pressed="true"], .qz-ferramenta--ativa { background: var(--superficie); color: var(--verdete); box-shadow: 0 1px 3px rgba(18, 24, 26, 0.12); }
+.qz-ferramenta--ouro, .qz-ferramenta--ouro[aria-pressed="true"],
+:root[data-tema="escuro"] .qz-ferramenta--ouro, :root[data-tema="escuro"] .qz-ferramenta--ouro[aria-pressed="true"] { background: color-mix(in srgb, var(--px-ouro) 30%, var(--superficie)); color: var(--sx-ouro-texto, #8a5a0c); box-shadow: none; }
+.qz-ferramenta:focus-visible { outline-offset: 1px; }
+.qz-chip { padding: 0.25rem 0.7rem; border-radius: 999px; border: 1px solid var(--traco); font-weight: 600; }
+.qz-chip--tema { border-color: transparent; }
+
+/* Alternativas */
+.qz-cartao .qz-alt { border: 1px solid var(--traco); border-radius: var(--qz-raio); box-shadow: none; }
+@media (hover: hover) {
+  .qz-cartao .qz-alt:hover:not(:disabled):not(.alternativa--escolhida) { transform: none; box-shadow: var(--sombra); border-color: color-mix(in srgb, var(--verdete) 45%, var(--traco)); }
+}
+.qz-cartao .qz-alt:active:not(:disabled) { transform: none; box-shadow: none; }
+.qz-cartao .qz-alt .alternativa__letra {
+  width: 2rem; height: 2rem; margin: 0.6rem 0 0.6rem 0.75rem; border-radius: 999px;
+  background: transparent; box-shadow: inset 0 0 0 1.5px var(--traco-forte); color: var(--texto-2);
+  font-family: var(--fonte-texto); font-weight: 700; font-size: 0.88rem;
+}
+.qz-cartao .qz-alt.alternativa--escolhida,
+.qz-cartao .qz-alt.alternativa--escolhida:hover:not(:disabled),
+:root[data-tema="escuro"] .qz-cartao .qz-alt.alternativa--escolhida,
+:root[data-tema="escuro"] .qz-cartao .qz-alt.alternativa--escolhida:hover:not(:disabled) {
+  border-color: var(--verdete); background: var(--verdete-veu); box-shadow: 0 0 0 1px var(--verdete); transform: none;
+}
+.qz-cartao .qz-alt.alternativa--escolhida .alternativa__letra { background: var(--verdete); color: var(--sobre-destaque); box-shadow: none; }
+.qz-cartao .qz-alt.alternativa--certa,
+.qz-cartao .qz-alt.alternativa--certa:hover:not(:disabled) { border-color: var(--acerto); box-shadow: 0 0 0 1px var(--acerto); }
+.qz-cartao .qz-alt.alternativa--certa .alternativa__letra { box-shadow: none; }
+.qz-cartao .qz-alt.alternativa--errada,
+.qz-cartao .qz-alt.alternativa--errada:hover:not(:disabled),
+:root[data-tema="escuro"] .qz-cartao .qz-alt.alternativa--errada,
+:root[data-tema="escuro"] .qz-cartao .qz-alt.alternativa--errada:hover:not(:disabled) { border-color: color-mix(in srgb, var(--erro) 60%, var(--traco)); box-shadow: none; }
+.qz-cartao .qz-alt.alternativa--errada .alternativa__letra { box-shadow: none; }
+.qz-cartao .qz-alt.qz-alt--recua .alternativa__letra { box-shadow: inset 0 0 0 1.5px var(--traco); }
+.qz-cartao .qz-alt .alternativa__marca { border-radius: 999px; }
+.qz-cartao .qz-riscar { border-radius: 999px; }
+.qz-cartao .alternativa-envelope:has(.alternativa--escolhida) .qz-riscar { transform: translateY(-50%); }
+.alternativa__turma b { font-family: var(--fonte-texto); font-weight: 750; font-size: 1.05rem; }
+
+/* Confiança em pílula e o Responder */
+.qz-cartao .acao-responder .confianca { gap: 2px; padding: 3px; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie-2); box-shadow: none; }
+.qz-cartao .acao-responder .confianca .opcao-segmento { min-height: 40px; border-radius: 999px; }
+.qz-cartao .acao-responder .confianca .opcao-segmento + .opcao-segmento { border-left: 0; }
+.qz-cartao .acao-responder .confianca .opcao-segmento:hover:not([aria-pressed="true"]) { background: transparent; color: var(--texto); }
+.qz-cartao .acao-responder .confianca .opcao-segmento[aria-pressed="true"] { background: var(--superficie); color: var(--verdete); box-shadow: 0 1px 3px rgba(18, 24, 26, 0.14), inset 0 0 0 1.5px var(--verdete); }
+.qz-cartao .acao-responder .botao.qz-responder,
+.qz-cartao .acao-responder .botao.botao--grande,
+:root[data-tema="escuro"] .qz-cartao .acao-responder .botao.qz-responder:not(:disabled),
+:root[data-tema="escuro"] .qz-cartao .acao-responder .botao.botao--grande:not(:disabled) {
+  border-radius: 999px; background: var(--verdete); color: var(--sobre-destaque); font-weight: 700;
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--verdete) 28%, transparent);
+}
+.qz-cartao .acao-responder .botao.qz-responder:hover:not(:disabled),
+.qz-cartao .acao-responder .botao.botao--grande:hover:not(:disabled) { background: color-mix(in srgb, var(--verdete) 88%, #000); transform: none; box-shadow: 0 8px 20px color-mix(in srgb, var(--verdete) 32%, transparent); }
+.qz-cartao .acao-responder .botao.qz-responder:active:not(:disabled),
+.qz-cartao .acao-responder .botao.botao--grande:active:not(:disabled) { transform: translateY(1px); box-shadow: 0 3px 8px color-mix(in srgb, var(--verdete) 24%, transparent); }
+.qz-cartao .acao-responder .botao.qz-responder:disabled { border-radius: 999px; background: var(--superficie-2); color: var(--texto-2); outline: 1px solid var(--traco); outline-offset: -1px; box-shadow: none; }
+.qz-cartao .acao-responder .botao.qz-responder[aria-busy="true"] { background: var(--verdete); color: var(--sobre-destaque); box-shadow: none; outline: 0; }
+.qz-teclas kbd { border: 1px solid var(--traco-forte); border-bottom-width: 2px; border-radius: 6px; font-family: var(--fonte-texto); font-weight: 650; font-size: 0.78rem; }
+@media (max-width: 40rem) {
+  .qz-cartao .acao-responder .botao.qz-responder, .qz-cartao .acao-responder .botao.botao--grande { width: 100%; }
+  .qz-cartao .acao-responder--pronta { border: 1px solid var(--traco); border-radius: 18px; }
+}
+
+/* Resultado */
+.qz-cartao .qz-resultado { border-width: 1px; border-radius: var(--qz-raio); }
+.qz-cartao .resultado--acerto.qz-resultado, .qz-cartao .resultado--erro.qz-resultado,
+:root[data-tema="escuro"] .qz-cartao .resultado--erro.qz-resultado { box-shadow: none; }
+.qz-resultado__selo { border-radius: 999px; width: 2.3rem; height: 2.3rem; }
+.qz-cartao .resultado--acerto .qz-resultado__selo, .qz-cartao .resultado--erro .qz-resultado__selo { box-shadow: none; }
+.qz-resultado__rotulo { font-family: var(--fonte-texto); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase; }
+.qz-faisca i { border-radius: 999px; box-shadow: none; }
+.qz-cartao .resultado--neutro:not(.qz-resultado) { border: 1px dashed var(--traco-forte); border-radius: var(--qz-raio); }
+
+/* Comentário */
+.questao-impressa.qz-cartao .comentario { border-top: 1px solid var(--traco); }
+.qz-cartao .qz-titulo-px, .qz-cartao .cm-rotulo, .qz-cartao .cm-secao { font-family: var(--fonte-texto); font-weight: 750; font-size: 1.08rem; letter-spacing: -0.005em; }
+.qz-cartao .qz-titulo-px::before, .qz-cartao .cm-secao::before { width: 0.5rem; height: 0.5rem; border-radius: 999px; box-shadow: none; }
+.qz-cartao .cm-secao::after { border-top: 1px solid var(--traco); }
+.cm-cabeca__icone { border-radius: 12px; box-shadow: none; }
+.cm-cabeca__titulo { font-family: var(--fonte-texto); font-weight: 750; font-size: 1.35rem; letter-spacing: -0.01em; }
+.cm-indice__item { border: 1px solid var(--traco); border-radius: 999px; box-shadow: none; }
+.cm-indice__item:hover { transform: none; box-shadow: none; background: var(--verdete-veu); border-color: color-mix(in srgb, var(--verdete) 40%, var(--traco)); }
+.cm-indice__item:active { transform: none; box-shadow: none; }
+.qz-cartao .cm-conceito { border-width: 1px; border-left-width: 4px; border-radius: var(--qz-raio); }
+.qz-cartao .cm-alt { border-width: 1px; border-radius: var(--qz-raio); }
+.qz-cartao .cm-alt--certa, .qz-cartao .cm-alt--marcada,
+:root[data-tema="escuro"] .qz-cartao .cm-alt--marcada { box-shadow: none; }
+.qz-cartao .cm-alt.cm-alt--discreta { border: 1px solid var(--traco); }
+.qz-cartao .cm-alt__letra { border-radius: 999px; font-family: var(--fonte-texto); font-weight: 700; font-size: 0.85rem; box-shadow: inset 0 0 0 1.5px var(--traco-forte); }
+.qz-cartao .cm-alt--certa .cm-alt__letra, .qz-cartao .cm-alt--marcada .cm-alt__letra { box-shadow: none; }
+.qz-cartao .cm-alt--discreta .cm-alt__letra { box-shadow: inset 0 0 0 1.5px var(--traco); }
+.qz-cartao .cm-selo { border-radius: 999px; box-shadow: inset 0 0 0 1px var(--traco); }
+.qz-cartao .cm-selo--certa, .qz-cartao .cm-selo--erro, .qz-cartao .cm-selo--sua { box-shadow: none; }
+.qz-cartao .comentario .aviso-ia { border-radius: 12px; border-width: 1px; border-left-width: 4px; }
+.qz-cartao .contribuicao { border-width: 1px; border-left-width: 4px; border-radius: 12px; }
+.qz-cartao .referencias { border-top: 1px solid var(--traco); }
+.qz-cartao .te-prova, :root[data-tema="escuro"] .qz-cartao .te-prova { border-width: 1px; border-radius: var(--qz-raio); box-shadow: none; }
+.qz-cartao .te-prova__rotulo, :root[data-tema="escuro"] .qz-cartao .te-prova__rotulo {
+  padding: 0.25rem 0.7rem; border-radius: 999px; box-shadow: 0 0 0 3px var(--superficie);
+  font-family: var(--fonte-texto); font-weight: 750; font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase;
+}
+.qz-cartao .te-prova__rotulo::before { border-radius: 999px; font-size: 0.7rem; }
+.qz-cartao .te-nota { border-width: 1px; border-radius: 12px; }
+.qz-cartao .te-nota::before { border-radius: 999px; box-shadow: none; }
+
+/* Avaliação, turma, biblioteca */
+.av { border: 1px solid var(--traco); border-radius: var(--qz-raio); }
+.av__botao, .av__motivos button { border: 1px solid var(--traco); border-radius: 999px; box-shadow: none; }
+.av__erro { border-radius: 12px; }
+.tu { border: 1px solid var(--traco); border-radius: var(--qz-raio); }
+.tu--convite { border: 1px dashed #c99a3b; box-shadow: none; }
+.tu-demo { border: 1px solid var(--traco); border-radius: 8px; }
+.tu-demo b { border-radius: 999px; font-family: var(--fonte-texto); font-weight: 700; font-size: 0.72rem; }
+.qz-cartao .bib-convite { border-width: 1px; border-radius: var(--qz-raio); box-shadow: none; }
+
+/* Pé: anotações, histórico e relatar erro */
+.notas-questao { border: 1px solid var(--traco); border-radius: var(--qz-raio); }
+.qz-cartao .qz-extras.qz-faixa { gap: 1px; background: var(--traco); border: 1px solid var(--traco); border-radius: var(--qz-raio); box-shadow: none; }
+.qz-cartao .qz-faixa > .notas-questao[open] > summary { border-bottom: 1px solid var(--traco); }
+.qz-cartao .qz-faixa .relato__tipo { border-radius: 999px; border-width: 1px; }
+.qz-cartao .qz-faixa .relato .botao { border-radius: 999px; }
+.qz-contador { border-radius: 999px; box-shadow: none; font-family: var(--fonte-texto); font-weight: 750; font-size: 0.72rem; }
+.qz-linha-tempo li { border-radius: 999px; box-shadow: inset 0 0 0 1px var(--traco); }
+.qz-rodape { border-top: 1px solid var(--traco); }
+
+/* Próxima questão: o ouro fica, em pílula e sem o degrau */
+.qz-cartao .qz-proxima__botao, :root[data-tema="escuro"] .qz-cartao .qz-proxima__botao {
+  padding: 0 0.45rem 0 1.4rem; border-radius: 999px; box-shadow: 0 6px 18px rgba(201, 154, 59, 0.32);
+}
+.qz-cartao .qz-proxima__seta { border-radius: 999px; }
+.qz-cartao .qz-proxima__botao:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(201, 154, 59, 0.38); }
+.qz-cartao .qz-proxima__botao:active { transform: translateY(1px); box-shadow: 0 3px 10px rgba(201, 154, 59, 0.3); }
+
+/* Grifo */
+.menu-grifo { border-radius: 999px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }

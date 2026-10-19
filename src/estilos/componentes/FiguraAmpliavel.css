@@ -83,3 +83,14 @@
 .jz-dica { color: rgba(242, 244, 243, 0.8); opacity: 1; }
 .jz-dica--mouse { display: none; }
 @media (hover: hover) and (pointer: fine) { .jz-dica--toque { display: none; } .jz-dica--mouse { display: inline; } }
+
+/* Acabamento suave (19/10/2026): moldura e "Ampliar" arredondados, como o resto do cartão. */
+.qz-cartao .questao__figura:has(> .figura-ampliavel) { border: 1px solid var(--traco); border-radius: 14px; box-shadow: none; overflow: hidden; }
+.qz-cartao .questao__figura:has(> .figura-ampliavel) figcaption { border-top: 1px solid var(--traco); }
+.qz-cartao .figura-ampliavel, .qz-cartao .questao__figura:has(> .figura-ampliavel):not(:has(figcaption)) .figura-ampliavel { border-radius: 0; }
+.figura-lupa, :root[data-tema="escuro"] .figura-lupa { border-radius: 999px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); font-family: var(--fonte-texto); font-weight: 700; font-size: 0.85rem; letter-spacing: 0; }
+@media (hover: hover) { .figura-ampliavel:hover .figura-lupa { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); } }
+.figura-ampliavel:active .figura-lupa { transform: none; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
+.jz-zoom { border-radius: 999px; overflow: hidden; }
+.jz-zoom .jz-botao { font-family: var(--fonte-texto); font-weight: 700; font-size: 1.2rem; }
+.jz-fechar { border-radius: 999px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35); }

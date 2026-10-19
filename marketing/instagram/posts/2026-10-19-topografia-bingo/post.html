@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões: equilíbrio sagital e bingo cervical</title>
+<!-- Post de 19/10/2026. Feed "Caderneta de topografia" (coluna-0283, TARO 2026) e stories "Bingo da prova" (trauma-0220, TEOT 2021).
+     Telas reais: TEMA=escuro LARGURA=1100 ALTURA=688 ESCALA=2 node marketing/instagram/telas.mjs 'lap-sagital=questao/coluna-0283>B@.questao__enunciado'
+                  TEMA=escuro node marketing/instagram/telas.mjs 'cel-sagital=questao/coluna-0283>B@.questao__enunciado' 'cel-cervical=questao/trauma-0220>C@.questao__enunciado'
+     PNGs:  node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-19-topografia-bingo/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Serifa; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serifa; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; font-style: italic; }
+:root { --papel: #F6F1E4; --tinta: #1C2A39; --tinta2: #4A5868; --vermelho: #C0392B; --azul: #2C6CB0; --ouro: #F4CF7C; --verde: #14655E;
+  --feltro: #0B3D34; --feltro2: #062620; --creme: #FBF6EA; --cinza: #A9BBB7; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; margin-bottom: 40px; }
+.abs { position: absolute; }
+.mono { font-family: 'DejaVu Sans Mono', monospace; }
+
+/* ======================= FEED: Caderneta de topografia ======================= */
+.topo { height: 1350px; color: var(--tinta); background-color: var(--papel);
+  background-image:
+    linear-gradient(rgba(44,108,176,.13) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, rgba(44,108,176,.13) 1.5px, transparent 1.5px),
+    linear-gradient(rgba(44,108,176,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(44,108,176,.06) 1px, transparent 1px);
+  background-size: 180px 180px, 180px 180px, 36px 36px, 36px 36px; background-position: 0 0; }
+.topo::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(1200px 900px at 50% 40%, transparent 55%, rgba(120,95,50,.16) 100%); }
+.cab { position: absolute; top: 56px; left: 72px; right: 72px; display: flex; justify-content: space-between; align-items: baseline;
+  padding-bottom: 14px; border-bottom: 2.5px solid var(--tinta); font: 700 20px 'DejaVu Sans Mono', monospace; letter-spacing: .08em; text-transform: uppercase; z-index: 5; }
+.cab span:last-child { color: var(--vermelho); }
+.rod { position: absolute; bottom: 48px; left: 72px; right: 72px; display: flex; justify-content: space-between; align-items: center; z-index: 5; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 44px; height: 44px; display: block; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.arraste { display: flex; align-items: center; gap: 8px; font: 700 20px 'DejaVu Sans Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta2); }
+.arraste svg { width: 24px; height: 24px; }
+.topo h1 { font: 700 82px/1.02 Serifa; letter-spacing: -.025em; text-wrap: balance; }
+.topo h1 i { font-weight: 500; color: var(--vermelho); }
+.topo h2 { font: 700 60px/1.05 Serifa; letter-spacing: -.02em; text-wrap: balance; }
+.topo h2 i { font-weight: 500; color: var(--vermelho); }
+.rotulo { font: 700 19px 'DejaVu Sans Mono', monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta2); }
+/* Figura da questão com marcações */
+.figura { position: absolute; background: #fff; padding: 14px; border-radius: 20px; box-shadow: 0 0 0 2px var(--tinta), 10px 12px 0 rgba(28,42,57,.14); z-index: 3; }
+.figura .alvo { position: relative; }
+.figura img { display: block; width: 100%; border-radius: 8px; }
+.anel { position: absolute; width: 11%; aspect-ratio: 1; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid; box-shadow: 0 0 0 4px rgba(255,255,255,.85); }
+.anel.a { border-color: var(--azul); } .anel.b { border-color: var(--vermelho); }
+.pino { position: absolute; width: 56px; height: 56px; border-radius: 50%; transform: translate(-50%, -50%); color: #fff; font: 700 30px/56px Serifa; text-align: center; box-shadow: 0 0 0 5px #fff, 0 6px 14px rgba(0,0,0,.25); z-index: 4; }
+.pino.a { background: var(--azul); } .pino.b { background: var(--vermelho); } .pino.t { background: var(--tinta); font: 700 26px/56px Jakarta; }
+.carimbo { position: absolute; padding: 12px 22px; border: 4px solid var(--vermelho); border-radius: 10px; color: var(--vermelho); font: 800 30px Jakarta; letter-spacing: .12em; text-transform: uppercase; transform: rotate(-8deg); opacity: .9; z-index: 4; }
+.nota { font: 500 30px/1.4 Inter; color: var(--tinta2); text-wrap: pretty; }
+.nota b { color: var(--tinta); font-weight: 700; }
+.leitura { display: grid; gap: 22px; }
+.leitura div { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: center; }
+.leitura .pino { position: static; transform: none; }
+.leitura p { font: 600 38px/1.1 Serifa; }
+.leitura p small { display: block; margin-top: 4px; font: 700 19px 'DejaVu Sans Mono', monospace; letter-spacing: .08em; color: var(--tinta2); text-transform: uppercase; }
+/* Slide 2: questão */
+.enun { font: 500 34px/1.38 Serifa; color: var(--tinta); text-wrap: pretty; }
+.alts { display: grid; gap: 16px; }
+.alt { display: grid; grid-template-columns: 54px 1fr; gap: 18px; align-items: center; padding: 22px 22px; min-height: 117px; border-radius: 16px; background: rgba(255,255,255,.72); border: 2px solid rgba(28,42,57,.22); }
+.alt .l { width: 54px; height: 54px; border-radius: 50%; border: 2.5px solid var(--tinta); display: grid; place-items: center; font: 800 26px Jakarta; }
+.alt p { font: 500 27px/1.3 Inter; }
+.chamada { display: flex; align-items: center; gap: 14px; font: 700 30px Jakarta; letter-spacing: -.01em; color: var(--vermelho); }
+.chamada svg { width: 34px; height: 34px; }
+/* Slide 3: fichas técnicas */
+.fichas { display: grid; gap: 20px; }
+.ficha { position: relative; display: grid; grid-template-columns: 150px 1fr; gap: 26px; padding: 26px 30px; border-radius: 18px; background: #fff; border: 2px solid var(--tinta); box-shadow: 8px 10px 0 rgba(28,42,57,.12); }
+.ficha .sig { font: 800 64px/1 Serifa; letter-spacing: -.02em; }
+.ficha .sig small { display: block; margin-top: 10px; font: 700 16px 'DejaVu Sans Mono', monospace; letter-spacing: .08em; color: var(--tinta2); text-transform: uppercase; }
+.ficha b { display: block; font: 700 33px/1.1 Serifa; }
+.ficha p { margin-top: 10px; font: 500 24px/1.38 Inter; color: var(--tinta2); padding-right: 210px; }
+.selo { position: absolute; right: 26px; top: 26px; padding: 8px 14px; border-radius: 8px; font: 800 18px 'DejaVu Sans Mono', monospace; letter-spacing: .08em; text-transform: uppercase; transform: rotate(-4deg); }
+.selo.fixo { background: var(--tinta); color: var(--papel); }
+.selo.pos { border: 3px solid var(--vermelho); color: var(--vermelho); }
+.ficha.ip { border-color: var(--azul); box-shadow: 8px 10px 0 rgba(44,108,176,.18); } .ficha.ip .sig { color: var(--azul); }
+.ficha.ss .sig { color: var(--vermelho); }
+/* Slide 4: leitura da figura */
+.passo { display: grid; grid-template-columns: 56px 1fr; gap: 18px; }
+.passo .pino { position: static; transform: none; }
+.passo b { display: block; font: 700 36px/1.1 Serifa; }
+.passo p { margin-top: 8px; font: 500 25px/1.4 Inter; color: var(--tinta2); }
+.passo p em { font-style: normal; font-weight: 700; color: var(--tinta); }
+/* Slide 5: por que não */
+.linhas { display: grid; gap: 16px; }
+.lin { display: grid; grid-template-columns: 62px 1fr; gap: 22px; align-items: start; padding: 22px 26px; border-radius: 16px; background: rgba(255,255,255,.75); border: 2px solid rgba(28,42,57,.2); }
+.lin .l { width: 62px; height: 62px; border-radius: 50%; display: grid; place-items: center; font: 800 30px Jakarta; border: 3px solid var(--tinta2); color: var(--tinta2); }
+.lin s { display: block; font: 600 29px/1.2 Serifa; color: var(--tinta2); text-decoration-color: var(--vermelho); text-decoration-thickness: 3px; }
+.lin p { margin-top: 8px; font: 500 24px/1.38 Inter; color: var(--tinta2); }
+.lin p b { color: var(--tinta); }
+.lin.ok { background: #fff; border-color: var(--azul); box-shadow: 8px 10px 0 rgba(44,108,176,.16); }
+.lin.ok .l { background: var(--azul); border-color: var(--azul); color: #fff; }
+.lin.ok strong { display: block; font: 700 31px/1.2 Serifa; color: var(--tinta); }
+.prova { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; padding: 24px 28px; border-radius: 16px; background: var(--tinta); color: var(--papel); }
+.prova span { font: 800 18px 'DejaVu Sans Mono', monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--ouro); writing-mode: horizontal-tb; }
+.prova p { font: 500 26px/1.38 Inter; } .prova p b { color: #fff; font-weight: 800; }
+/* Slide 6: convite (aparelhos do modelo Treine grátis) */
+.iphone { --w: 400px; position: absolute; width: var(--w); padding: calc(var(--w) * .034); border-radius: calc(var(--w) * .17);
+  background: linear-gradient(145deg, #7b7f84 0%, #3b3e42 18%, #1d1e20 55%, #46494d 100%);
+  box-shadow: 0 0 0 1.5px #8d9196 inset, 0 0 0 calc(var(--w) * .008) #0d0d0e inset, 0 50px 90px rgba(0,0,0,.35), 0 16px 30px rgba(0,0,0,.25); z-index: 4; }
+.iphone .tela { position: relative; border-radius: calc(var(--w) * .138); overflow: hidden; aspect-ratio: 390 / 844; background: #121a18; }
+.iphone .tela img { width: 100%; height: calc(100% - var(--w) * .115); margin-top: calc(var(--w) * .115); object-fit: cover; object-position: 50% var(--y, 0%); display: block; }
+.iphone .tela::before { content: '9:41'; position: absolute; left: 11%; top: calc(var(--w) * .045); font: 700 calc(var(--w) * .042) Inter; color: #fff; z-index: 2; }
+.iphone .tela::after { content: ''; position: absolute; right: 9%; top: calc(var(--w) * .05); width: calc(var(--w) * .07); height: calc(var(--w) * .032); border-radius: 4px; border: 1.5px solid #fff; background: linear-gradient(90deg, #fff 70%, transparent 70%) content-box; padding: 1.5px; z-index: 2; opacity: .85; }
+.iphone .ilha { position: absolute; top: calc(var(--w) * .03); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .27); height: calc(var(--w) * .078); border-radius: 999px; background: #000; z-index: 2; }
+.iphone .bt { position: absolute; width: calc(var(--w) * .012); border-radius: 3px; background: linear-gradient(90deg, #2a2c2f, #6b6f73); }
+.iphone .bt.d { right: calc(var(--w) * -.009); top: 26%; height: 11%; }
+.iphone .bt.e1 { left: calc(var(--w) * -.009); top: 20%; height: 5%; }
+.iphone .bt.e2 { left: calc(var(--w) * -.009); top: 28%; height: 8%; }
+.iphone .brilho { position: absolute; inset: calc(var(--w) * .034); border-radius: calc(var(--w) * .138); background: linear-gradient(115deg, rgba(255,255,255,.10), transparent 35%); pointer-events: none; z-index: 3; }
+.mac { --w: 900px; position: absolute; width: var(--w); z-index: 3; filter: drop-shadow(0 40px 50px rgba(28,42,57,.3)); }
+.mac .tampa { position: relative; padding: calc(var(--w) * .022) calc(var(--w) * .022) calc(var(--w) * .028); border-radius: calc(var(--w) * .032) calc(var(--w) * .032) calc(var(--w) * .008) calc(var(--w) * .008);
+  background: #0b0c0d; box-shadow: 0 0 0 2px #45484c, inset 0 0 0 1px #1d1f21; }
+.mac .tela { position: relative; aspect-ratio: 1280 / 800; overflow: hidden; border-radius: calc(var(--w) * .006); background: #0f1917; }
+.mac .tela img { width: 100%; height: 100%; object-fit: cover; object-position: 50% var(--y, 0%); display: block; }
+.mac .notch { position: absolute; top: calc(var(--w) * .022); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .1); height: calc(var(--w) * .02); background: #0b0c0d; border-radius: 0 0 calc(var(--w) * .008) calc(var(--w) * .008); z-index: 2; }
+.mac .tampa::after { content: ''; position: absolute; inset: calc(var(--w) * .022); background: linear-gradient(120deg, rgba(255,255,255,.08), transparent 30%); pointer-events: none; z-index: 3; border-radius: calc(var(--w) * .006); }
+.mac .base { position: relative; width: 112%; margin-left: -6%; height: calc(var(--w) * .028); border-radius: 2px 2px calc(var(--w) * .03) calc(var(--w) * .03) / 2px 2px calc(var(--w) * .022) calc(var(--w) * .022);
+  background: linear-gradient(180deg, #e4e6e9 0%, #b9bcc0 45%, #8d9094 80%, #5d6064 100%); }
+.mac .base::before { content: ''; position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 15%; height: 45%; background: linear-gradient(180deg, #8e9195, #b5b8bc); border-radius: 0 0 calc(var(--w) * .012) calc(var(--w) * .012); }
+.nota-tela { position: absolute; font: 500 18px Inter; color: rgba(28,42,57,.5); z-index: 6; }
+.botao { display: inline-flex; align-items: center; gap: 16px; padding: 22px 40px; border-radius: 999px; background: var(--tinta); color: var(--papel); font: 800 42px Jakarta; letter-spacing: -.03em; box-shadow: 0 0 0 6px rgba(28,42,57,.12); white-space: nowrap; }
+.botao svg { width: 40px; height: 40px; color: var(--ouro); }
+.site { font: 800 40px Jakarta; letter-spacing: -.01em; color: var(--tinta); }
+.site span { color: var(--vermelho); }
+
+/* ======================= STORIES: Bingo da prova ======================= */
+.bingo { height: 1920px; color: var(--creme);
+  background:
+    radial-gradient(900px 760px at 50% 44%, rgba(30,120,98,.55), transparent 70%),
+    radial-gradient(1400px 1100px at 50% 50%, transparent 55%, rgba(0,0,0,.45) 100%),
+    linear-gradient(180deg, #0d4338 0%, var(--feltro) 45%, var(--feltro2) 100%); }
+.bingo::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: radial-gradient(rgba(255,255,255,.05) 1px, transparent 1.2px), radial-gradient(rgba(0,0,0,.12) 1px, transparent 1.2px);
+  background-size: 7px 7px, 9px 9px; background-position: 0 0, 3px 4px; }
+.bingo .marca { position: absolute; left: 0; right: 0; justify-content: center; color: var(--creme); font-size: 32px; z-index: 5; }
+.bingo .marca svg { width: 48px; height: 48px; }
+.tag { position: absolute; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 14px; padding: 12px 26px; border-radius: 999px;
+  border: 2px solid rgba(244,207,124,.55); color: var(--ouro); font: 800 23px Jakarta; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; z-index: 5; }
+.tag i { width: 10px; height: 10px; border-radius: 50%; background: var(--ouro); }
+.bingo h1 { position: absolute; left: 80px; right: 80px; text-align: center; font: 800 84px/1.04 Jakarta; letter-spacing: -.045em; text-wrap: balance; z-index: 5; }
+.bingo h1 em { font-style: normal; color: var(--ouro); }
+.bingo .sub { position: absolute; left: 100px; right: 100px; text-align: center; font: 500 34px/1.38 Inter; color: #CFE0DA; text-wrap: balance; z-index: 5; }
+.bingo .sub b { color: #fff; font-weight: 700; } .bingo .sub em { font-style: normal; color: var(--ouro); font-weight: 700; }
+/* Bola de bingo */
+.bola { --d: 280px; --cor: #2C6CB0; position: absolute; width: var(--d); height: var(--d); border-radius: 50%; z-index: 4;
+  background:
+    radial-gradient(circle at 34% 28%, rgba(255,255,255,.95) 0 8%, rgba(255,255,255,0) 26%),
+    radial-gradient(circle at 50% 50%, transparent 0 60%, rgba(0,0,0,.18) 100%),
+    linear-gradient(180deg, var(--cor) 0 21%, #FFFDF6 21% 79%, var(--cor) 79% 100%);
+  box-shadow: inset -18px -24px 40px rgba(0,0,0,.28), inset 10px 12px 26px rgba(255,255,255,.35), 0 30px 50px rgba(0,0,0,.45); }
+.bola::after { content: ''; position: absolute; left: 50%; bottom: -7%; width: 70%; height: 10%; transform: translateX(-50%); border-radius: 50%; background: rgba(0,0,0,.35); filter: blur(10px); z-index: -1; }
+.bola .disco { position: absolute; inset: 22%; border-radius: 50%; background: #fff; box-shadow: 0 0 0 calc(var(--d) * .018) var(--cor), inset 0 4px 10px rgba(0,0,0,.08);
+  display: grid; place-items: center; color: #15201c; font: 800 calc(var(--d) * .25) / 1 Jakarta; letter-spacing: -.05em; }
+.bola .disco small { position: relative; top: -.55em; margin-left: .03em; font-size: .5em; letter-spacing: 0; }
+.bola .letra { position: absolute; left: 50%; top: 4%; transform: translateX(-50%); font: 800 calc(var(--d) * .1) Jakarta; color: #fff; letter-spacing: .04em; }
+.bola.azul { --cor: #2C6CB0; } .bola.verm { --cor: #C0392B; } .bola.roxa { --cor: #6B4FBF; } .bola.laranja { --cor: #D9822B; }
+.bola.fora { filter: grayscale(.8) brightness(.88); }
+.bola.fora::before { content: ''; position: absolute; left: 6%; right: 6%; top: 50%; height: 7px; background: #E5533F; border-radius: 4px; transform: rotate(-35deg); z-index: 3; box-shadow: 0 2px 6px rgba(0,0,0,.4); }
+.brilhoz { position: absolute; border-radius: 50%; background: radial-gradient(circle, rgba(244,207,124,.45), transparent 65%); z-index: 3; }
+/* Cartela (story 2) */
+.cartela { position: absolute; left: 80px; right: 80px; border-radius: 30px; background: var(--creme); color: #15201c; padding: 40px 44px 44px; z-index: 5;
+  box-shadow: 0 40px 80px rgba(0,0,0,.45), 0 0 0 10px rgba(251,246,234,.12); }
+.cartela .cab2 { display: flex; justify-content: space-between; align-items: center; padding-bottom: 16px; margin-bottom: 22px; border-bottom: 3px dashed rgba(21,32,28,.25); font: 800 22px Jakarta; letter-spacing: .18em; text-transform: uppercase; color: var(--verde); }
+.cartela .cab2 span:last-child { color: #8a6a24; }
+.cartela .enun { font: 500 35px/1.36 Inter; color: #15201c; }
+.cartela .fig { margin: 26px auto 0; width: 600px; padding: 14px; border-radius: 18px; background: #fff; box-shadow: 0 0 0 2px rgba(21,32,28,.15); }
+.cartela .fig img { display: block; width: 100%; }
+.casas { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 26px; }
+.casa { display: grid; grid-template-columns: 60px 1fr; gap: 18px; align-items: center; padding: 20px 22px; border-radius: 18px; background: #fff; border: 2.5px solid rgba(21,32,28,.18); }
+.casa .l { width: 60px; height: 60px; border-radius: 50%; background: #15201c; color: var(--creme); display: grid; place-items: center; font: 800 28px Jakarta; }
+.casa p { font: 800 46px Jakarta; letter-spacing: -.03em; }
+.casa p small { font: 600 26px Inter; letter-spacing: 0; color: #4f5d58; margin-left: 6px; }
+/* Story 3: sorteio */
+.motivos { position: absolute; left: 80px; right: 80px; display: grid; gap: 18px; z-index: 5; }
+.motivo { display: grid; grid-template-columns: 124px 1fr; gap: 26px; align-items: center; padding: 16px 26px 16px 18px; border-radius: 24px; background: rgba(255,255,255,.07); border: 1.5px solid rgba(255,255,255,.14); }
+.motivo .bola { position: relative; --d: 124px; }
+.motivo b { display: block; font: 800 32px/1.15 Jakarta; letter-spacing: -.02em; color: #fff; }
+.motivo p { margin-top: 6px; font: 500 25px/1.36 Inter; color: #CFE0DA; }
+.faixa { position: absolute; left: 80px; right: 80px; display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; padding: 24px 30px; border-radius: 22px; background: var(--ouro); color: #15201c; z-index: 5; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+.faixa span { font: 800 20px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: #6a4a10; }
+.faixa p { font: 600 30px/1.32 Inter; } .faixa p b { font-weight: 800; }
+.dica { position: absolute; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 12px; font: 700 26px Jakarta; letter-spacing: .02em; color: #CFE0DA; z-index: 5; }
+.dica svg { width: 30px; height: 30px; color: var(--ouro); }
+.siteg { position: absolute; left: 0; right: 0; text-align: center; font: 800 58px Jakarta; letter-spacing: -.03em; color: #fff; z-index: 5; }
+.siteg span { color: var(--ouro); }
+.bingo .nota-tela { color: rgba(255,255,255,.45); }
+.botaog { position: absolute; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 18px; padding: 26px 50px; border-radius: 999px; background: linear-gradient(180deg, #FBE2A6, var(--ouro)); color: #0b2a24; font: 800 50px Jakarta; letter-spacing: -.03em; white-space: nowrap; box-shadow: 0 22px 60px rgba(244,207,124,.35), 0 0 0 8px rgba(244,207,124,.14); z-index: 5; }
+.botaog svg { width: 44px; height: 44px; }
+</style></head>
+<body>
+<template id="simbolo"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></svg></template>
+<template id="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></template>
+<template id="balao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10H10l-4.5 4v-4H4z"/></svg></template>
+<template id="relogio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></template>
+<template id="fone"><div class="tela"><img alt=""></div><div class="ilha"></div><div class="brilho"></div><span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span></template>
+<template id="mac"><div class="tampa"><div class="tela"><img alt=""></div><div class="notch"></div></div><div class="base"></div></template>
+
+<!-- ======================= FEED (1080x1350) ======================= -->
+
+<!-- Feed 1: capa -->
+<section id="feed-1" class="topo">
+  <div class="cab"><span>Caderneta de campo · Equilíbrio sagital</span><span>Fl. 01/06</span></div>
+  <h1 class="abs" style="left:72px; right:72px; top:136px">Incidência, inclinação, versão. <i>A prova embaralha os nomes de propósito.</i></h1>
+  <div class="figura" style="left:556px; top:490px; width:452px"><div class="alvo"><img src="img/coluna-0283-1.png" alt="">
+    <span class="anel a" style="left:52.9%; top:56.2%"></span><span class="anel b" style="left:47.7%; top:48.9%"></span>
+    <span class="pino a" style="left:66%; top:62%">α</span><span class="pino b" style="left:33%; top:44%">β</span></div></div>
+  <div class="carimbo" style="left:410px; top:1060px">TARO 2026</div>
+  <div class="abs" style="left:72px; top:530px; width:430px">
+    <p class="rotulo">Medição pendente</p>
+    <div class="leitura" style="margin-top:26px">
+      <div><span class="pino a">α</span><p>= ?<small>ângulo azul</small></p></div>
+      <div><span class="pino b">β</span><p>= ?<small>ângulo vermelho</small></p></div>
+    </div>
+    <p class="nota" style="margin-top:40px">Dois ângulos na figura. A banca pediu <b>o nome de cada um</b>, na ordem.</p>
+  </div>
+  <div class="rod"><div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div><div class="arraste">Arraste <span data-seta></span></div></div>
+</section>
+
+<!-- Feed 2: a questão -->
+<section id="feed-2" class="topo">
+  <div class="cab"><span>Questão · TARO 2026 · Coluna</span><span>Fl. 02/06</span></div>
+  <p class="enun abs" style="left:72px; right:72px; top:128px">Com relação à biomecânica da coluna vertebral, alguns parâmetros são essenciais na avaliação do equilíbrio sagital. Na avaliação em perfil com o paciente em ortostase, os ângulos alfa e beta na imagem a seguir correspondem, respectivamente, a</p>
+  <div class="figura" style="left:72px; top:410px; width:400px"><div class="alvo"><img src="img/coluna-0283-1.png" alt=""></div></div>
+  <div class="alts abs" style="left:510px; right:72px; top:410px; gap:22px">
+    <div class="alt"><span class="l">A</span><p>inclinação pélvica e incidência pélvica.</p></div>
+    <div class="alt"><span class="l">B</span><p>incidência pélvica e inclinação sacral.</p></div>
+    <div class="alt"><span class="l">C</span><p>inclinação sacral e inclinação pélvica.</p></div>
+    <div class="alt"><span class="l">D</span><p>ângulo de deslizamento e inclinação da pélvica.</p></div>
+  </div>
+  <div class="chamada abs" style="left:72px; top:1040px"><span data-balao></span>Comente a sua letra antes de arrastar.</div>
+  <div class="rod"><div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div><div class="arraste">Resposta adiante <span data-seta></span></div></div>
+</section>
+
+<!-- Feed 3: as fichas -->
+<section id="feed-3" class="topo">
+  <div class="cab"><span>Antes da resposta · Três parâmetros</span><span>Fl. 03/06</span></div>
+  <h2 class="abs" style="left:72px; right:72px; top:136px">Três ângulos, dois tipos. <i>Um deles é da pessoa, não da postura.</i></h2>
+  <div class="fichas abs" style="left:72px; right:72px; top:330px">
+    <div class="ficha ip"><div class="sig">IP<small>Incidência pélvica</small></div><div><b>Incidência pélvica</b><p>Entre a <strong>perpendicular ao platô sacral</strong> (no ponto médio) e a linha até o <strong>centro das cabeças femorais</strong>.</p></div><span class="selo fixo">Morfológico</span></div>
+    <div class="ficha ss"><div class="sig">SS<small>Inclinação sacral</small></div><div><b>Inclinação sacral</b><p>Entre o <strong>platô sacral</strong> e a <strong>horizontal</strong>.</p></div><span class="selo pos">Posicional</span></div>
+    <div class="ficha"><div class="sig">PT<small>Versão pélvica</small></div><div><b>Versão pélvica</b><p>Entre a linha do platô às cabeças femorais e a <strong>vertical</strong>. Aumenta na retroversão compensatória.</p></div><span class="selo pos">Posicional</span></div>
+  </div>
+  <p class="nota abs" style="left:72px; right:72px; top:1010px"><b>Morfológico:</b> fixo no adulto, não muda com a postura. <b>Posicional:</b> muda quando a pelve gira.</p>
+  <div class="rod"><div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div><div class="arraste">Arraste <span data-seta></span></div></div>
+</section>
+
+<!-- Feed 4: lendo a figura -->
+<section id="feed-4" class="topo">
+  <div class="cab"><span>Leitura da figura</span><span>Fl. 04/06</span></div>
+  <h2 class="abs" style="left:72px; right:72px; top:136px">Siga as linhas: <i>azul até o fêmur, vermelha até a horizontal.</i></h2>
+  <div class="figura" style="left:72px; top:330px; width:520px"><div class="alvo"><img src="img/coluna-0283-1.png" alt="">
+    <span class="anel a" style="left:52.9%; top:56.2%"></span><span class="anel b" style="left:47.7%; top:48.9%"></span>
+    <span class="pino a" style="left:66%; top:62%">1</span><span class="pino b" style="left:33%; top:44%">2</span></div></div>
+  <div class="abs" style="left:620px; right:72px; top:380px; display:grid; gap:44px">
+    <div class="passo"><span class="pino a">1</span><div><b>α = incidência pélvica</b><p>Da <em>perpendicular ao platô</em> até a linha que desce ao <em>centro da cabeça femoral</em>.</p></div></div>
+    <div class="passo"><span class="pino b">2</span><div><b>β = inclinação sacral</b><p>Do <em>platô sacral</em> até a <em>horizontal</em>.</p></div></div>
+  </div>
+  <div class="carimbo" style="left:660px; top:860px; transform: rotate(-6deg)">Gabarito: B</div>
+  <p class="nota abs" style="left:72px; right:72px; top:1100px">Repare: α parte da <b>perpendicular</b> ao platô; β usa o <b>próprio platô</b>.</p>
+  <div class="rod"><div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div><div class="arraste">Arraste <span data-seta></span></div></div>
+</section>
+
+<!-- Feed 5: por que não -->
+<section id="feed-5" class="topo">
+  <div class="cab"><span>Conferência das alternativas</span><span>Fl. 05/06</span></div>
+  <h2 class="abs" style="left:72px; right:72px; top:136px">Por que as outras <i>não fecham a conta.</i></h2>
+  <div class="linhas abs" style="left:72px; right:72px; top:290px">
+    <div class="lin ok"><span class="l">B</span><div><strong>incidência pélvica e inclinação sacral.</strong><p>α é a <b>IP</b>; β é a <b>SS</b>.</p></div></div>
+    <div class="lin"><span class="l">A</span><div><s>inclinação pélvica e incidência pélvica.</s><p>Não corresponde aos ângulos marcados: α é a <b>IP</b>.</p></div></div>
+    <div class="lin"><span class="l">C</span><div><s>inclinação sacral e inclinação pélvica.</s><p>Dois parâmetros <b>posicionais</b>, sem a IP.</p></div></div>
+    <div class="lin"><span class="l">D</span><div><s>ângulo de deslizamento e inclinação da pélvica.</s><p>O ângulo de deslizamento mede a <b>cifose lombossacra</b> na espondilolistese; não está na figura.</p></div></div>
+  </div>
+  <div class="prova abs" style="left:72px; right:72px; top:930px"><span>Na prova</span><p>α e β = <b>incidência pélvica e inclinação sacral</b>. A IP não muda com a postura.</p></div>
+  <div class="rod"><div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div><div class="arraste">Arraste <span data-seta></span></div></div>
+</section>
+
+<!-- Feed 6: convite -->
+<section id="feed-6" class="topo">
+  <div class="cab"><span>Fim da medição</span><span>Fl. 06/06</span></div>
+  <h1 class="abs" style="left:72px; right:72px; top:132px; font-size:76px">Entre no site e treine grátis. <i>As questões do TEOT e do TARO, comentadas como esta.</i></h1>
+  <div class="mac" data-mac="t-lap-sagital" style="--w:760px; left:72px; top:470px"></div>
+  <div class="iphone" data-fone="t-cel-sagital" style="--w:250px; left:770px; top:500px; transform: rotate(3deg)"></div>
+  <p class="nota-tela" style="left:72px; top:1000px">Tela ilustrativa</p>
+  <div class="abs" style="left:72px; right:72px; top:1050px; display:flex; align-items:center; justify-content:space-between">
+    <span class="botao">ortoquestoes.com.br <span data-seta></span></span>
+    <span class="nota" style="font-size:26px; text-align:right">Conta grátis.<br><b>O caminho está no perfil.</b></span>
+  </div>
+  <div class="rod"><div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div><div class="arraste">@ortoquestoes</div></div>
+</section>
+
+<!-- ======================= STORIES (1080x1920) ======================= -->
+
+<!-- Story 1 (7h): gancho -->
+<section id="story-1" class="bingo">
+  <div class="marca" data-simbolo style="top:250px"><b>Orto</b><span>Questões</span></div>
+  <div class="tag" style="top:350px"><i></i>Bingo da prova · TEOT 2021<i></i></div>
+  <h1 style="top:450px">Um desses números deixa a <em>cervical instável.</em></h1>
+  <div class="bola azul" style="left:200px; top:760px"><span class="letra">A</span><div class="disco"><span>3,5<small>°</small></span></div></div>
+  <div class="bola verm" style="left:600px; top:740px"><span class="letra">B</span><div class="disco"><span>7<small>°</small></span></div></div>
+  <div class="bola roxa" style="left:210px; top:1090px"><span class="letra">C</span><div class="disco"><span>11<small>°</small></span></div></div>
+  <div class="bola laranja" style="left:610px; top:1110px"><span class="letra">D</span><div class="disco"><span>20<small>°</small></span></div></div>
+  <p class="sub" style="top:1450px">Qual você canta? <b>A pergunta inteira está no próximo story.</b></p>
+</section>
+
+<!-- Story 2 (7h): a questão na cartela -->
+<section id="story-2" class="bingo">
+  <div class="tag" style="top:250px"><i></i>Cartela · TEOT 2021<i></i></div>
+  <div class="cartela" style="top:340px">
+    <div class="cab2"><span>Coluna cervical subaxial</span><span>Trauma</span></div>
+    <p class="enun">Nas lesões traumáticas da coluna cervical subaxial, o valor do ângulo apresentado na imagem a seguir, a partir do qual indica instabilidade é de</p>
+    <div class="fig"><img src="img/trauma-0220-1.jpeg" alt=""></div>
+    <div class="casas">
+      <div class="casa"><span class="l">A</span><p>3,5<small>graus</small></p></div>
+      <div class="casa"><span class="l">B</span><p>7<small>graus</small></p></div>
+      <div class="casa"><span class="l">C</span><p>11<small>graus</small></p></div>
+      <div class="casa"><span class="l">D</span><p>20<small>graus</small></p></div>
+    </div>
+  </div>
+  <div class="dica" style="top:1500px"><span data-relogio></span>Responda de cabeça. O sorteio sai ao meio-dia.</div>
+</section>
+
+<!-- Story 3 (12h): o sorteio -->
+<section id="story-3" class="bingo">
+  <div class="tag" style="top:250px"><i></i>Sorteio · Gabarito C<i></i></div>
+  <div class="brilhoz" style="left:315px; top:300px; width:450px; height:450px"></div>
+  <div class="bola roxa" style="--d:300px; left:390px; top:350px"><span class="letra">C</span><div class="disco"><span>11<small>°</small></span></div></div>
+  <h1 style="top:690px; font-size:64px">Mais de <em>11° de angulação</em> entre vértebras vizinhas: instável.</h1>
+  <div class="motivos" style="top:880px">
+    <div class="motivo"><div class="bola azul fora"><div class="disco"><span>3,5</span></div></div><div><b>3,5 é milímetro, não grau</b><p>É o limite da translação sagital.</p></div></div>
+    <div class="motivo"><div class="bola verm fora"><div class="disco"><span>7<small>°</small></span></div></div><div><b>7° fica abaixo do limite</b><p>Angulações dessa ordem ainda podem ser fisiológicas.</p></div></div>
+    <div class="motivo"><div class="bola laranja fora"><div class="disco"><span>20</span></div></div><div><b>20 é porcentagem</b><p>Translação em proporção ao corpo vertebral.</p></div></div>
+  </div>
+  <div class="faixa" style="top:1420px"><span>Na prova</span><p>White e Panjabi: <b>&gt; 3,5 mm</b> de translação ou <b>&gt; 11°</b> de angulação.</p></div>
+</section>
+
+<!-- Story 4 (18h): convite, sem figurinha -->
+<section id="story-4" class="bingo">
+  <div class="marca" data-simbolo style="top:250px"><b>Orto</b><span>Questões</span></div>
+  <h1 style="top:360px">Acertou o número? <em>Agora treine as outras.</em></h1>
+  <div class="bola roxa" style="--d:200px; left:120px; top:700px; transform: rotate(-12deg)"><div class="disco"><span>11<small>°</small></span></div></div>
+  <div class="bola azul" style="--d:150px; left:800px; top:1060px; transform: rotate(10deg)"><div class="disco"><span>3,5</span></div></div>
+  <div class="iphone" data-fone="t-cel-cervical" style="--w:330px; left:375px; top:620px; transform: rotate(2deg)"></div>
+  <p class="nota-tela" style="left:740px; top:1330px">Tela ilustrativa</p>
+  <div class="botaog" style="top:1370px">Treine grátis <span data-seta></span></div>
+  <p class="siteg" style="top:1500px">ortoquestoes<span>.com.br</span></p>
+</section>
+
+<script>
+const sim = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('[data-simbolo]').forEach(e => e.insertAdjacentHTML('afterbegin', sim))
+for (const nome of ['seta', 'balao', 'relogio'])
+  document.querySelectorAll('[data-' + nome + ']').forEach(e => e.innerHTML = document.getElementById(nome).innerHTML)
+document.querySelectorAll('[data-fone]').forEach(e => { e.appendChild(document.getElementById('fone').content.cloneNode(true)); e.querySelector('img').src = 'telas/' + e.dataset.fone + '.png' })
+document.querySelectorAll('[data-mac]').forEach(e => { e.appendChild(document.getElementById('mac').content.cloneNode(true)); e.querySelector('img').src = 'telas/' + e.dataset.mac + '.png' })
+</script>
+</body></html>

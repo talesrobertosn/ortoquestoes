@@ -31,6 +31,8 @@ import { corDaArea } from '../dados/coresAreas'
 import { primeiroNome } from '../componentes/Cabecalho'
 import type { Resposta } from '../dados/tipos'
 import { porExtenso } from '../util/extenso'
+import { usarPomodoro, usarPreferenciasSessao, type PreferenciasSessao } from '../estado/preferenciasSessao'
+import { PomodoroBloco, PomodoroPilula } from '../componentes/PomodoroSessao'
 import { confirmar } from '../componentes/Confirmar'
 import { usarSalvamentoNacional, type EstadoSalvamento } from '../estado/salvamentoNacional'
 import { alertaDeTempo, montarSessaoNacional, resumoParaEntregar } from '../dados/provaNacional'
@@ -293,6 +295,9 @@ export function Sessao() {
   const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
   const [mapaAberto, definirMapaAberto] = useState(false)
   const [atalhosAbertos, definirAtalhosAbertos] = useState(false)
+  const [ajustesAbertos, definirAjustesAbertos] = useState(false)
+  const { preferencias, alternar } = usarPreferenciasSessao()
+  const pomodoro = usarPomodoro(preferencias.pomodoro, preferencias.somPomodoro)
   const [dicaTeclado, definirDicaTeclado] = useState(false)
   const [portaoContaAberto, definirPortaoContaAberto] = useState(false)
   const [erro, definirErro] = useState<string | null>(null)
@@ -341,7 +346,7 @@ export function Sessao() {
   }, [questoes, sessao, posicao])
 
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
-  const painelAberto = mapaAberto || atalhosAbertos || limiteAberto
+  const painelAberto = mapaAberto || atalhosAbertos || ajustesAbertos || limiteAberto
   const simulado = !!sessao?.simulado
   // Fim de sessão: ao responder a última, o pop-up abre no meio da tela (uma vez
   // por sessão); quem prefere ler o comentário antes ganha o botão flutuante.
@@ -673,8 +678,13 @@ export function Sessao() {
     finalizar()
     navegar('/resumo')
   }
+  // Coluna lateral só com o que a pessoa deixou ligado em Personalizar; sem nada, o cartão fica sozinho.
+  const comLado = preferencias.placar || preferencias.mapa || preferencias.atalhos || preferencias.pomodoro || !!nacional
+  const classesSessao = ['sessao-gestos', 'sx-sessao', comLado ? 'sx-sessao--com-lado' : 'sx-sessao--sem-lado']
+  if (!preferencias.mapa) classesSessao.push('sx-sessao--sem-mapa-lado')
+  if (!preferencias.dicasTeclado) classesSessao.push('sx-sessao--sem-teclas')
   return (
-    <div className="sessao-gestos sx-sessao" ref={areaGestos}>
+    <div className={classesSessao.join(' ')} ref={areaGestos}>
       <button
         type="button"
         className="seta-lateral seta-lateral--esquerda sx-seta nao-imprime"
@@ -716,9 +726,9 @@ export function Sessao() {
                 <span className="sx-aviso sx-aviso--dica" role="status"><kbd>←</kbd><kbd>→</kbd> trocam de questão</span>
               ) : elogio ? (
                 <span className="sx-aviso sx-aviso--elogio" aria-hidden="true"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" />{elogio}</span>
-              ) : combo >= 3 ? (
+              ) : preferencias.placar && combo >= 3 ? (
                 <span className="barra-sessao__combo sx-vivo__combo" title="Acertos seguidos nesta sessão"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {porExtenso(combo)} seguidas</span>
-              ) : !simulado && acertosSessao > 0 && acertosSessao * 2 >= respondidas ? (
+              ) : preferencias.placar && !simulado && acertosSessao > 0 && acertosSessao * 2 >= respondidas ? (
                 <span className="sx-vivo__placar"><Icone nome="certo" tamanho={13} /> {porExtenso(acertosSessao, 'm')} {acertosSessao === 1 ? 'acerto' : 'acertos'}</span>
               ) : nacional ? (
                 <span className={'sx-vivo__salvo' + (salvamento.situacao === 'sem-rede' ? ' sx-vivo__salvo--alerta' : '')} title={textoSalvamento(salvamento)}><Icone nome={salvamento.situacao === 'sem-rede' ? 'alerta' : 'certo'} tamanho={13} /> {salvamento.situacao === 'sem-rede' ? 'Sem conexão' : salvamento.situacao === 'salvo' ? 'Salvo' : 'Salvando…'}</span>
@@ -733,6 +743,7 @@ export function Sessao() {
                 {formatarDuracao(restante)}
               </span>
             )}
+            {preferencias.pomodoro && <PomodoroPilula controle={pomodoro} />}
             <button
               type="button"
               className="botao barra-sessao__mapa sx-botao"
@@ -760,6 +771,16 @@ export function Sessao() {
               title="Atalhos (?)"
             >
               <Icone nome="teclado" />
+            </button>
+            <button
+              type="button"
+              className="botao sx-botao sx-ajustes"
+              onClick={() => definirAjustesAbertos(true)}
+              aria-label="Personalizar a tela: mapa, Pomodoro e o que mais aparece"
+              title="Adicionar mapa, Pomodoro, placar e atalhos"
+            >
+              <Icone nome="ajustes" tamanho={16} />
+              <span className="sx-ajustes__rotulo">Personalizar</span>
             </button>
           </div>
           {/* No modo prova o gabarito fica escondido: respondida aparece só como respondida. */}
@@ -871,8 +892,8 @@ export function Sessao() {
       {/* Coluna lateral do computador largo (19/10/2026): o mapa, o placar vivo, o tempo do
           simulado e os atalhos ficam à vista ao lado do cartão. Abaixo de 72rem some (display:
           none, fora da árvore de acessibilidade) e o botão Mapa da barra volta. */}
-      <aside className="sx-lado nao-imprime" aria-label="Painel da sessão">
-        <section className="sx-lado__bloco sx-lado__bloco--topo">
+      {comLado && <aside className="sx-lado nao-imprime" aria-label="Painel da sessão">
+        {(preferencias.placar || nacional) && <section className="sx-lado__bloco sx-lado__bloco--topo">
           <h2 className="sx-lado__titulo">{nacional ? (nome ? `${nome}, sua prova` : 'Sua prova') : nome ? `${nome}, sua sessão` : 'Sua sessão'}</h2>
           <p className="sx-lado__conta"><b className="numerico">{respondidas}</b> de {total} {respondidas === 1 ? 'respondida' : 'respondidas'}</p>
           {combo >= 3 ? (
@@ -894,9 +915,17 @@ export function Sessao() {
           )}
           {nacional && <p className={'sx-lado__salvo' + (salvamento.situacao === 'sem-rede' ? ' sx-lado__salvo--alerta' : '')}><Icone nome={salvamento.situacao === 'sem-rede' ? 'alerta' : 'certo'} tamanho={13} /> {textoSalvamento(salvamento)}</p>}
           {nacional && <p className="sx-lado__nota">Sem gabarito até entregar. Pode trocar de aparelho: entre na mesma conta e continue.</p>}
-        </section>
-        <section className="sx-lado__bloco" aria-labelledby="sx-lado-mapa">
-          <h3 className="sx-lado__subtitulo" id="sx-lado-mapa">Mapa <kbd>M</kbd></h3>
+        </section>}
+        {preferencias.pomodoro && <section className="sx-lado__bloco" aria-labelledby="sx-lado-pomodoro">
+          <h3 className="sx-lado__subtitulo" id="sx-lado-pomodoro">Pomodoro
+            <button type="button" className="sx-lado__esconder" onClick={() => alternar('pomodoro')} aria-label="Esconder o Pomodoro" title="Esconder"><Icone nome="olho-riscado" tamanho={15} /></button>
+          </h3>
+          <PomodoroBloco controle={pomodoro} />
+        </section>}
+        {preferencias.mapa && <section className="sx-lado__bloco" aria-labelledby="sx-lado-mapa">
+          <h3 className="sx-lado__subtitulo" id="sx-lado-mapa">Mapa <kbd>M</kbd>
+            <button type="button" className="sx-lado__esconder" onClick={() => alternar('mapa')} aria-label="Esconder o mapa" title="Esconder"><Icone nome="olho-riscado" tamanho={15} /></button>
+          </h3>
           <MapaQuestoes
             compacto
             ids={sessao.ids}
@@ -906,12 +935,13 @@ export function Sessao() {
             posicao={posicao}
             aoEscolher={irPara}
           />
-        </section>
-        <details className="sx-lado__bloco sx-lado__atalhos" open>
+        </section>}
+        {preferencias.atalhos && <details className="sx-lado__bloco sx-lado__atalhos">
           <summary className="sx-lado__subtitulo">Atalhos de teclado <kbd>?</kbd></summary>
           <Atalhos />
-        </details>
-      </aside>
+        </details>}
+        <button type="button" className="sx-lado__ajustes" onClick={() => definirAjustesAbertos(true)}><Icone nome="ajustes" tamanho={15} /> Personalizar a tela</button>
+      </aside>}
       </div>
 
       <Painel
@@ -936,6 +966,14 @@ export function Sessao() {
       </Painel>
 
       <Painel
+        titulo="Personalizar a tela"
+        aberto={ajustesAbertos}
+        aoFechar={() => definirAjustesAbertos(false)}
+      >
+        <AjustesTela preferencias={preferencias} alternar={alternar} />
+      </Painel>
+
+      <Painel
         titulo="Atalhos de teclado"
         aberto={atalhosAbertos}
         aoFechar={() => definirAtalhosAbertos(false)}
@@ -947,6 +985,30 @@ export function Sessao() {
       {fim === 'lendo' && tudoRespondido && <BotaoConcluirFlutuante aoConcluir={concluir} simulado={simulado} />}
       <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
       <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => { definirLimiteAberto(false); if (resumoAoFechar) { definirResumoAoFechar(false); concluir() } }} />
+    </div>
+  )
+}
+
+const OPCOES_TELA: Array<[keyof PreferenciasSessao, string, string]> = [
+  ['placar', 'Placar da sessão', 'Quantas você respondeu e os acertos seguidos, ao lado da questão.'],
+  ['mapa', 'Mapa ao lado', 'A grade das questões fica à vista. Desligado, ele abre pelo botão Mapa ou pela tecla M.'],
+  ['pomodoro', 'Pomodoro', 'Blocos de foco (25 ou 50 minutos) com pausa, que continuam ao trocar de questão.'],
+  ['somPomodoro', 'Som no fim do foco e da pausa', 'Duas notas curtas quando a fase termina.'],
+  ['atalhos', 'Atalhos de teclado ao lado', 'A lista fica fechada embaixo da coluna; a tecla ? mostra sempre.'],
+  ['dicasTeclado', 'Dica de teclas embaixo das alternativas', 'A linha "Teclas 1–4 selecionam…" no computador.'],
+]
+
+/** Personalizar a tela da sessão: cada peça liga e desliga, e a escolha fica salva neste aparelho. */
+function AjustesTela({ preferencias, alternar }: { preferencias: PreferenciasSessao; alternar: (chave: keyof PreferenciasSessao) => void }) {
+  return (
+    <div className="sx-ajustes-lista">
+      <p className="meta">A tela começa limpa, só com a questão. Ligue aqui o que ajuda você: fica salvo neste aparelho. Em telas largas, o placar, o mapa, o Pomodoro e os atalhos aparecem numa coluna ao lado; no celular, o Pomodoro fica na barra de cima.</p>
+      {OPCOES_TELA.filter(([chave]) => chave !== 'somPomodoro' || preferencias.pomodoro).map(([chave, titulo, explicacao]) => (
+        <label key={chave} className="sx-ajuste">
+          <span className="sx-ajuste__texto"><b>{titulo}</b><small>{explicacao}</small></span>
+          <input type="checkbox" role="switch" className="sx-ajuste__chave" checked={preferencias[chave]} onChange={() => alternar(chave)} />
+        </label>
+      ))}
     </div>
   )
 }

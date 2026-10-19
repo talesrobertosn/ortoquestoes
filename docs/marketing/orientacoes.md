@@ -105,6 +105,8 @@ Em propaganda, comece entregando algo útil, de preferência uma questão real c
 Tales aprovou o **VAR da questão** (feed e stories): visual de transmissão esportiva em que cada alternativa é revisada como um lance, anulado ou gol validado. É bom para questões de pares ou combinações de itens. [Guia completo e modelo executável](../../marketing/instagram/estilos/VAR-DA-QUESTAO.md).
 
 ## Story de propaganda com figurinha de link (orientação de 12/10/2026)
+**Atualização de 19/10/2026 (Tales): não usar mais a figurinha de link.** Ela tira o alcance da página. O story de convite leva só o site escrito na imagem ("ortoquestoes.com.br") e a frase "o caminho está no perfil". O texto abaixo fica como histórico.
+
 A pedido do Tales, o story de propaganda pode trazer um botão "Treine grátis" e um espaço livre para a figurinha de link, que leva direto para criar a conta. É a exceção à regra "stories sem figurinha", que continua valendo para os stories de questão. O link é sempre marcado (utm) para o Admin mostrar de onde veio o cadastro, por exemplo `https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaign=treine-gratis#/conta?modo=criar&voltar=%2Ftreinar`. Troque o `utm_campaign` a cada story para comparar. Tales aprovou como modelo ("esse é um modelo bom"): [guia](../../marketing/instagram/estilos/TREINE-GRATIS.md) e [modelo executável](../../marketing/instagram/estilos/treine-gratis/modelo.html).
 
 ## Página de vendas (16/10/2026)
@@ -128,6 +130,12 @@ Corrigir e gerar de novo até ficar impecável; só então enviar.
 
 ## Laboratório de patologia e Raspadinha da prova (aprovados em 18/10/2026)
 Tales aprovou os temas do post de 17/10 para o arsenal: **Laboratório de patologia** (feed) e **Raspadinha da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).
+
+## Caderneta de topografia e Bingo da prova (aprovados em 19/10/2026)
+Tales pediu para salvar como modelos o post de 19/10: **Caderneta de topografia** (feed) e **Bingo da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/CADERNETA-E-BINGO.md).
+
+## Ordem de rodízio dos estilos (orientação de 19/10/2026)
+Os estilos aprovados seguem uma **ordem fixa**, sem sorteio e sem repetir: antes de cada post, rode `node marketing/instagram/estilos/ordem.mjs` e use o estilo indicado para o feed e para os stories (o que foi combinado com o Tales para o dia passa na frente). [Regras e ordem atual](../../marketing/instagram/estilos/ORDEM.md).
 
 ## Sobre o Tales (orientação de 19/10/2026)
 O site, os posts e os e-mails não dizem a profissão nem a etapa do Tales: nem "ortopedista", nem "residente", nem "feito por quem vive a especialidade". Quando for preciso falar do autor, basta o nome ("Tales, do Orto Questões"). Falar do público (residentes, ortopedistas que estudam) continua normal.
