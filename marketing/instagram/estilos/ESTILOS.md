@@ -343,3 +343,6 @@ Feed **Caderneta de topografia** (figura com ângulos ou parâmetros de nomes pa
 
 ## Pista de esqui (20/10/2026, aguardando aprovação)
 - **Feed (3 slides) e stories (3 telas):** placas de pista de esqui (círculo verde, quadrado azul, losango preto), neve e azul profundo; o raciocínio desce do verde à preta dupla e as alternativas viram pistas abertas ou fechadas. O story 1 é o checkpoint do teleférico, com o espaço da enquete Sim/Não. Primeira entrega: `posts/2026-10-20-pista-de-esqui-polegar/`. [Guia](PISTA-DE-ESQUI.md).
+
+## Conversa do grupo R+: aprovada em 19/10/2026
+- **Conversa do grupo R+ (feed, 6 slides):** print de conversa dos residentes no plantão: a imagem do caso, o enunciado oficial encaminhado, a enquete com as alternativas, o zoom com as pistas, o veredito e a chamada com a prévia de link do Cronograma. [Modelo](conversa-de-grupo/modelo.html) e [guia](CONVERSA-DO-GRUPO.md).
