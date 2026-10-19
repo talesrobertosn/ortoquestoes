@@ -198,7 +198,7 @@ comentários e as 17 figuras foram verificados na interface; sete adaptações t
 em largura de celular, sem transbordamento. As referências públicas contêm livro e
 edição, sem nome de PDF, paginação recortada ou instruções de produção.
 
-## ENARE Cirurgia da Mão (2022, 2023 e 2025) e FMRP-USP 2024, recebidos em 19/10/2026
+## ENARE Cirurgia da Mão (2022, 2023 e 2025), recebidos em 19/10/2026
 
 Pedido do Tales: "tem também algumas do ENARE que não tínhamos no site, esse aqui você poderia pôr no site".
 Provas oficiais com o nome real (não são OrtoQuestões Simulados), `area: "cirurgia-mao"`, entraram só com a
@@ -216,14 +216,13 @@ resposta oficial; o comentário fica para a fila do Claude local com o Green ([d
   (a 31 de 2025 é da parte já existente).
 - **ENARE 2023:** o arquivo de gabarito enviado é o **preliminar** (o definitivo não veio). Conferir quando chegar.
 - **ENARE 2024 (edição 2023/2024):** chegaram o gabarito e os recursos, mas não o caderno: não importada.
-- **FMRP-USP 2024** (seleção para 2024, Cirurgia da Mão, pré-requisito ortopedia ou plástica): 50 questões, quatro
-  alternativas, gabarito oficial. Figuras recortadas do caderno nas questões 16 (LEDDY e PACKER), 17 (plexo braquial;
-  as anotações à caneta do candidato, que entregavam a resposta, foram apagadas) e 19 (retalho anterolateral da coxa).
+- **FMRP-USP 2024: retirada no mesmo dia** (pedido do Tales: o caderno era foto de livro; ele vai buscar o PDF).
+  As 50 questões chegaram a ser publicadas e foram apagadas com `scripts/apagar_questoes.py`, junto das figuras.
+  Ao reimportar a partir do PDF, conferir de novo as figuras 16, 17 e 19 (a 17 vinha com anotações à caneta).
 - Os PDFs tinham marca d'água com dados pessoais de um candidato: nada disso foi copiado.
 
 | Prova | Questões | Ids |
 |---|---|---|
 | ENARE Cirurgia da Mão 2022 | 78 | coluna-0558, coluna-0559, conceitos-basicos-0411 ... tumores-0389 (vários temas) |
 | ENARE Cirurgia da Mão 2023 | 80 | coluna-0560, coluna-0561, coluna-0562 ... tumores-0392 (vários temas) |
-| FMRP-USP 2024 | 50 | conceitos-basicos-0416, mao-1932, mao-1933 ... ombro-cotovelo-0658 (vários temas) |
 | ENARE Cirurgia da Mão 2025 | 39 | mao-1893 a mao-1931 |

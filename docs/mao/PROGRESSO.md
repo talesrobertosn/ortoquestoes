@@ -37,7 +37,7 @@ As respostas e as páginas do Green apontadas pela correção estão em [dicas/]
 | SBCM 2024 | 100 | 0 (44 inferida) | correção Mão Expert |
 
 **Fila de comentários de provas oficiais (entraram só com a resposta em 19/10/2026):** ENARE Cirurgia da Mão
-2022, 2023 e 2025 e FMRP-USP 2024 (ids em [docs/importacoes/cirurgia-mao-outubro-2026.md](../importacoes/cirurgia-mao-outubro-2026.md)).
+2022, 2023 e 2025 (ids em [docs/importacoes/cirurgia-mao-outubro-2026.md](../importacoes/cirurgia-mao-outubro-2026.md)).
 Comentar no padrão, com o Green, depois das provas da SBCM e do SIMÃO (texto oficial, sem reescrever).
 
 Faltam: SIMÃO 2025 e as provas da SBCM de 2021 e 2025 (se existirem). O SIMÃO 2026 já está publicado.
