@@ -20,12 +20,12 @@ function aplicar(tema: Tema) {
 
 export function usarTema() {
   // Quem escolheu um tema (em Minha conta ou no botão do cabeçalho) fica nele
-  // para sempre. Sem escolha, vale o sorteio feito no index.html antes da
-  // primeira pintura (claro ou escuro a cada visita), que não é gravado.
+  // para sempre. Sem escolha, vale o claro, aplicado no index.html antes da
+  // primeira pintura.
   const [tema, definir] = useState<Tema>(() => {
     const salvo = ler<Tema | null>('tema', null)
     if (salvo === 'claro' || salvo === 'escuro') return salvo
-    return document.documentElement.dataset.tema === 'claro' ? 'claro' : 'escuro'
+    return document.documentElement.dataset.tema === 'escuro' ? 'escuro' : 'claro'
   })
 
   useEffect(() => {

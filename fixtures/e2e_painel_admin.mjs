@@ -136,7 +136,7 @@ try {
       try {
         if (!localStorage.getItem('sb-ortoquestoes-auth')) localStorage.setItem('sb-ortoquestoes-auth', s)
         localStorage.setItem('oq-cookies', JSON.stringify({ escolha: 'recusado', versao: 1, em: new Date().toISOString() }))
-        // Sem escolha o site sorteia o tema; as capturas "claro" precisam ser claras.
+        // Sem escolha o site abre no claro; a linha abaixo garante as capturas "claro" mesmo assim.
         localStorage.setItem('ortoquestoes:tema', JSON.stringify('claro'))
       } catch { /* iframe sandbox */ }
     }, JSON.stringify(sessaoAuth))
