@@ -77,6 +77,7 @@ try {
   assert.ok(num, 'há questões numéricas')
   assert.equal(m.ordemParaRevisao(q(num, 4, 'A'), base), 'DCBA', 'numérica inverte')
   assert.equal(m.ordemParaRevisao(q(num, 4, 'A'), { ...base, ultimaExibida: { l: 'D', em: 100 } }), null, 'depois de invertida, volta à da prova')
+  assert.equal(m.ordemParaRevisao(q(num, 5, 'C'), base), null, 'cinco numéricas com a certa no meio: inverter não muda a certa, fica na ordem da prova')
 
   // ---- Comentário reordenado: em TODO o acervo, cada letra conferida vira a nova e o resto do texto não muda
   const questoes = new Map()
@@ -114,6 +115,17 @@ try {
   const comQualquer = questoes.get(idQualquer)?.comentarioIA ?? comentarios.get(idQualquer)
   const editado = m.reordenarComentario({ ...comQualquer, correta: comQualquer.correta + ' (texto novo)' }, 'DCBA', refsQualquer)
   assert.equal(editado.letrasDaProva, true, 'texto mudou: avisa que as letras citadas são as da prova')
+  // Comentário sem letra conferida: só avisa se passar a citar uma alternativa (ex.: editado pelo painel).
+  let semRefs = 0
+  for (const [id, x] of questoes) {
+    if (letras.fixas[id] || letras.refs[id] || (x.alternativas?.length ?? 0) < 3) continue
+    const com = x.comentarioIA ?? comentarios.get(id)
+    if (!com) continue
+    assert.equal(m.reordenarComentario(com, 'DCBA', undefined).letrasDaProva, false, `${id}: sem letra citada, sem aviso`)
+    semRefs++
+    if (semRefs === 1) assert.equal(m.reordenarComentario({ ...com, correta: '**Correta: C (x).** ' + com.correta }, 'DCBA', undefined).letrasDaProva, true, 'editado para citar "Correta: C": avisa')
+  }
+  assert.ok(semRefs > 1000, `comentários sem letra conferidos: ${semRefs}`)
 
   // ---- Toda questão que embaralha cita letras só onde o letras.json conferiu (nenhuma "C é a correta" solta)
   const solta = /\*\*(?:Correta|Provável correta)\s*:\s*\**[A-E](?![\w-])/

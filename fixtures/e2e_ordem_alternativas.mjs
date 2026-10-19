@@ -3,9 +3,13 @@
 // Uso: node fixtures/e2e_ordem_alternativas.mjs [id] (padrão mao-0011: gabarito D, o conceito cita "a alternativa C")
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import { chromium } from 'playwright'
 
 const BASE = process.env.BASE ?? 'http://localhost:4175/'
+// As capturas vão para fora do repositório (SAIDA muda a pasta).
+const foto = (nome) => join(process.env.SAIDA ?? tmpdir(), nome)
 const id = process.argv[2] ?? 'mao-0011'
 const tema = id.replace(/-\d+$/, '')
 const dados = JSON.parse(await readFile(`public/acervo/temas/${tema}.json`, 'utf8'))
@@ -58,7 +62,7 @@ assert.equal([...ordem].sort().join(''), 'ABCDE'.slice(0, exibidas.length), `tod
 assert.notEqual(ordem, 'ABCDE'.slice(0, exibidas.length), 'ordem diferente da prova')
 const certaNaTela = exibidas[ordem.indexOf(gabarito)].letra
 assert.notEqual(certaNaTela, gabarito, `a certa (${gabarito} na prova) está em outra letra: ${certaNaTela}`)
-await pagina.screenshot({ path: 'relatorios/ordem-alternativas-1-revisao.png', fullPage: false })
+await pagina.screenshot({ path: foto('ordem-alternativas-1-revisao.png'), fullPage: false })
 
 // Responde a certa pela letra da tela.
 await pagina.locator('ul.alternativas button.alternativa').nth('ABCDE'.indexOf(certaNaTela)).click()
@@ -81,7 +85,7 @@ for (const [campo, , letra] of refs) {
   if (conceito.includes('alternativa ' + nova)) citadas++
 }
 if (refs.some(([c]) => c === 'conceito')) assert.ok(citadas > 0, 'o conceito cita a alternativa pela letra da tela')
-await pagina.locator('.cm').screenshot({ path: 'relatorios/ordem-alternativas-2-comentario.png' })
+await pagina.locator('.cm').screenshot({ path: foto('ordem-alternativas-2-comentario.png') })
 const ultima = await pagina.evaluate((i) => JSON.parse(localStorage.getItem('ortoquestoes:conta:11111111-1111-1111-1111-111111111111:alternativas:ultimas') ?? '{}')[i], id)
 assert.equal(ultima?.l, certaNaTela, 'guarda a letra em que a certa apareceu')
 
@@ -91,7 +95,7 @@ await pagina.waitForTimeout(400)
 const naProva = await lerAlternativas()
 assert.equal(naProva.map((a) => originalDe(a.texto)).join(''), 'ABCDE'.slice(0, naProva.length), 'na ordem da prova')
 assert.equal((await pagina.locator('.cm-alt--certa .cm-alt__letra').textContent()).trim(), gabarito, 'comentário volta à letra da prova')
-await pagina.screenshot({ path: 'relatorios/ordem-alternativas-3-prova.png' })
+await pagina.screenshot({ path: foto('ordem-alternativas-3-prova.png') })
 
 // Recarregar depois de responder: a resposta de hoje continua marcada, na letra certa da ordem que aparecer.
 await pagina.reload()
@@ -129,7 +133,7 @@ assert.equal(salva.respostas[id].escolhida, erradaOriginal, `sessão guarda a le
 assert.equal(salva.ordens[id], ordemSessao, 'sessão guarda a ordem em que a questão apareceu')
 await pagina.goto(BASE + '#/resumo')
 await pagina.waitForTimeout(2500)
-await pagina.screenshot({ path: 'relatorios/ordem-alternativas-4-resumo.png', fullPage: true })
+await pagina.screenshot({ path: foto('ordem-alternativas-4-resumo.png'), fullPage: true })
 const chips = await pagina.locator('.rs-chip').allTextContents()
 assert.ok(chips.some((t) => t.includes('Marcou ' + erradaNaTela)), `resumo: marcou ${erradaNaTela} (a letra da tela) — ${chips.join(' | ')}`)
 assert.ok(chips.some((t) => t.includes('Gabarito ' + 'ABCDE'[ordemSessao.indexOf(gabarito)])), 'resumo: gabarito na letra da tela')

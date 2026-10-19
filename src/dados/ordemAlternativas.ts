@@ -117,6 +117,8 @@ export function ordemParaRevisao(questao: QuestaoParaOrdem, opcoes: OpcoesOrdem)
   const ultima = opcoes.ultimaExibida && opcoes.ultimaExibida.em < opcoes.desde ? opcoes.ultimaExibida.l : questao.gabarito
   if (letras.numeros.includes(questao.id)) {
     const invertida = [...identidade].reverse().join('')
+    // Cinco alternativas com a certa no meio (C): inverter não a tira do lugar. Fica na ordem da prova.
+    if (questao.gabarito && letraExibida(invertida, questao.gabarito) === questao.gabarito) return null
     // Alterna: se da última vez a certa estava na posição da ordem invertida, volta a da prova.
     if (questao.gabarito && ultima === letraExibida(invertida, questao.gabarito) && ultima !== questao.gabarito) return null
     return invertida
@@ -143,6 +145,12 @@ export function assinaturaComentario(c: ComentarioIA): string {
   }
   return (h >>> 0).toString(16).padStart(8, '0')
 }
+
+/**
+ * Sem posições conferidas no letras.json, o comentário não deveria citar alternativa pela letra.
+ * Se cita (texto editado depois, inclusive pelo painel), a tela avisa em vez de deixar a letra errada.
+ */
+const CITA_ALTERNATIVA = /(?:[Cc]orreta|[Ii]ncorreta|[Aa]lternativas?|[Ll]etras?|[Oo]p[çc][ãa]o|[Gg]abarito|[Rr]esposta)[\s*:(]{1,4}[A-E](?![\w-])/
 
 export interface ComentarioReordenado {
   comentario: ComentarioIA
@@ -179,7 +187,7 @@ export function reordenarComentario(
       }
       for (const [campo, chars] of porCampo) campos[campo] = chars.join('')
     } else letrasDaProva = true
-  }
+  } else letrasDaProva = Object.values(campos).some((t) => CITA_ALTERNATIVA.test(t))
   for (const [l, t] of Object.entries(campos)) {
     if (l.startsWith('i')) incorretas[letraExibida(ordem, l.slice(1)) as Letra] = t
   }

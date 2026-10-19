@@ -112,6 +112,7 @@ export function CartaoQuestao({ questao: questaoDoAcervo, permutacao, ordemRevis
       aoRiscar={riscar}
       ordemExibida={ordem}
       avisoOrdem={aviso}
+      questaoOriginal={questaoDoAcervo}
       {...resto}
     />
   )
@@ -138,7 +139,10 @@ function CartaoQuestaoExibida({
   modoProva = false,
   ordemExibida = null,
   avisoOrdem = null,
+  questaoOriginal,
 }: Omit<Props, 'permutacao' | 'ordemRevisao'> & {
+  /** A questão na ordem do acervo: o que sai do site (contribuição de comentário) usa as letras da prova. */
+  questaoOriginal: Questao
   /** A ordem em que a questão está na tela (Simulado Nacional ou revisão), para traduzir comentário e turma. */
   ordemExibida?: string | null
   avisoOrdem?: { embaralhada: boolean; alternar: () => void } | null
@@ -183,6 +187,9 @@ function CartaoQuestaoExibida({
     definirRevelada(false)
     definirTextoDissertativa(lerRascunho(questao.id))
   }, [questao.id])
+
+  // A ordem mudou (ver na ordem da prova, ou de volta): a mesma letra agora é outra alternativa.
+  useEffect(() => definirEscolhida(null), [ordemExibida])
 
   const letrasDisponiveis = useMemo(
     () => questao.alternativas.map((a) => a.letra),
@@ -683,7 +690,7 @@ function CartaoQuestaoExibida({
               )}
               {mostrarGabarito && (
                 <div className="linha nao-imprime" style={{ marginTop: '0.75rem' }}>
-                  <ContribuirComentario questao={questao} />
+                  <ContribuirComentario questao={questaoOriginal} />
                 </div>
               )}
             </div>
