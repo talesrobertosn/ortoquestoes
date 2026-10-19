@@ -13,7 +13,7 @@ try {
   await build({
     stdin: {
       contents: [
-        `export { situacaoEdicao, prazoEdicao, segundosRestantesProva, resumirCorrecao, evolucaoHistorico } from './src/dados/simuladoNacional'`,
+        `export { situacao, prazoEdicao, segundosRestantes, resumirCorrecao, evolucaoHistorico } from './src/dados/simuladoNacional'`,
         `export { filtrarResumao, termosDaBusca, normalizarBusca, proximaNaoLida, contarFrases, minutosDeLeitura, consultaTreinoAssunto } from './src/dados/resumao'`,
       ].join('\n'),
       resolveDir: process.cwd(), loader: 'ts',
@@ -23,18 +23,19 @@ try {
   })
   const m = await import(pathToFileURL(arquivo))
   const t = (iso) => Date.parse(iso)
-  const ed = { abre_em: '2026-11-01T03:00:00Z', fecha_em: '2026-12-01T02:59:59Z', duracao_min: 120, minha: null }
+  const ed = { abre_em: '2026-11-01T03:00:00Z', fecha_em: '2026-12-01T02:59:59Z', minha: null }
 
   // Situação: antes de abrir não é "encerrada" (bug antigo), depois de fechar é.
-  assert.equal(m.situacaoEdicao(ed, t('2026-10-29T12:00:00Z')), 'em-breve')
-  assert.equal(m.situacaoEdicao(ed, t('2026-11-10T12:00:00Z')), 'aberta')
-  assert.equal(m.situacaoEdicao(ed, t('2026-12-02T12:00:00Z')), 'encerrada')
-  const comecou = { ...ed, minha: { iniciado_em: '2026-11-10T12:00:00Z', entregue_em: null } }
-  assert.equal(m.situacaoEdicao(comecou, t('2026-11-10T13:00:00Z')), 'andamento')
-  assert.equal(m.situacaoEdicao(comecou, t('2026-11-10T14:01:00Z')), 'tempo-esgotado')
-  assert.equal(m.situacaoEdicao({ ...comecou, minha: { ...comecou.minha, entregue_em: '2026-11-10T13:30:00Z' } }, t('2026-11-11T00:00:00Z')), 'entregue')
-  assert.equal(m.segundosRestantesProva('2026-11-10T12:00:00Z', 120, t('2026-11-10T13:00:00Z')), 3600)
-  assert.equal(m.segundosRestantesProva('2026-11-10T12:00:00Z', 120, t('2026-11-10T15:00:00Z')), 0)
+  assert.equal(m.situacao(ed, t('2026-10-29T12:00:00Z')), 'em-breve')
+  assert.equal(m.situacao(ed, t('2026-11-10T12:00:00Z')), 'aberta')
+  assert.equal(m.situacao(ed, t('2026-12-02T12:00:00Z')), 'encerrada')
+  // O prazo da prova vem do servidor (início + duração).
+  const comecou = { ...ed, minha: { prazo_em: '2026-11-10T14:00:00Z', entregue_em: null } }
+  assert.equal(m.situacao(comecou, t('2026-11-10T13:00:00Z')), 'andamento')
+  assert.equal(m.situacao(comecou, t('2026-11-10T14:01:00Z')), 'tempo-esgotado')
+  assert.equal(m.situacao({ ...comecou, minha: { ...comecou.minha, entregue_em: '2026-11-10T13:30:00Z' } }, t('2026-11-11T00:00:00Z')), 'entregue')
+  assert.equal(m.segundosRestantes('2026-11-10T14:00:00Z', t('2026-11-10T13:00:00Z')), 3600)
+  assert.equal(m.segundosRestantes('2026-11-10T14:00:00Z', t('2026-11-10T15:00:00Z')), 0)
 
   // Prazo: abre/encerra, dias arredondados como a data ao lado, horas e minutos no fim.
   assert.equal(m.prazoEdicao(ed, t('2026-10-29T03:00:01Z')), 'abre em 3 dias')
