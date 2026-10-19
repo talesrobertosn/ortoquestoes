@@ -5450,19 +5450,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0533": {
-  "conceito": "**Ruptura do manguito rotador: quando reparar.** A decisão depende da idade, do mecanismo (traumático ou degenerativo), do tamanho e da retração da lesão, da qualidade muscular e da função.\n\n**Fatores favoráveis ao reparo.**\n- Paciente relativamente jovem e ativo (abaixo de cerca de 60 a 65 anos).\n- Lesão **traumática aguda** ou agudização de lesão crônica.\n- Retração pequena (estágio 1 de Patte, perto da inserção).\n- **Infiltração gordurosa baixa** (Goutallier 0 a 2).\n- Perda de força e função significativa.\n\n**Classificação de Goutallier (infiltração gordurosa na tomografia ou ressonância).**\n\n| Estágio | Descrição |\n|---|---|\n| 0 | Músculo normal |\n| 1 | Algumas estrias de gordura |\n| 2 | Mais músculo que gordura |\n| 3 | Músculo e gordura em quantidades iguais |\n| 4 | Mais gordura que músculo |\n\nEstágios 3 e 4 indicam degeneração muscular avançada, com pior resultado e maior taxa de nova ruptura após o reparo.\n\n**O caso.** Paciente de 50 anos, ativo, com ruptura do supraespinal após esforço, com **retração pequena (1 cm)** e **Goutallier II**, sintomático há 6 meses: excelente candidato ao **reparo cirúrgico** (geralmente artroscópico), antes que a lesão aumente e a musculatura degenere.\n\n**Tratamento conservador.** Indicado em lesões parciais, em pacientes mais velhos e pouco ativos, ou em lesões degenerativas com boa função. Em lesões completas sintomáticas em pacientes jovens, a tendência é a progressão.\n\n> Ruptura do supraespinal em paciente ativo, com pouca retração e pouca gordura: reparo cirúrgico.",
-  "correta": "**E: Cirurgia de reparo do manguito rotador.** O paciente de 50 anos, ativo, tem ruptura completa do supraespinal, sintomática há 6 meses, com retração pequena e infiltração gordurosa Goutallier II. São condições favoráveis ao reparo, que tende a ter bons resultados e evita a progressão da lesão e a degeneração muscular.",
   "incorretas": {
-   "A": "**Imobilização com tipoia por 6 semanas** não cicatriza uma ruptura completa do tendão e leva à rigidez.",
-   "B": "**Anti-inflamatórios e fisioterapia** podem ser tentados em lesões parciais ou em pacientes de baixa demanda. Neste paciente jovem e ativo, com ruptura completa e 6 meses de sintomas, o tratamento conservador provavelmente falharia e permitiria a progressão da lesão.",
-   "C": "**Opioides** não são tratamento para a lesão e têm riscos importantes (dependência, efeitos adversos). Não resolvem a ruptura.",
-   "D": "**Infiltrações com corticoide ou ortobiológicos** podem aliviar a dor temporariamente, mas não reparam o tendão rompido. O corticoide repetido pode até prejudicar a qualidade do tendão."
+   "A": "**Tipoia por seis semanas.** Imobilização isolada não restaura a continuidade tendínea e pode agravar a rigidez; não aborda a perda funcional persistente.",
+   "B": "**Anti-inflamatórios e fisioterapia.** A reabilitação pode melhorar dor e função, inclusive em algumas rupturas completas. É uma opção clínica legítima, mas a banca priorizou o reparo diante da persistência dos sintomas e da pequena retração.",
+   "C": "**Opioides.** Podem mascarar a dor, sem corrigir o déficit mecânico, e acrescentam riscos relevantes; não são o tratamento da ruptura.",
+   "D": "**Infiltração.** Pode aliviar sintomas em situações selecionadas, mas não repara o tendão nem substitui a análise da função e da reparabilidade."
   },
+  "alerta": "O gabarito oficial é E. O enunciado não informa se a ruptura é de espessura total nem descreve tratamento conservador prévio; esses dados influenciam a decisão real. A indicação de reparo é plausível pelo déficit funcional persistente, pequena retração e infiltração gordurosa limitada, mas não é obrigatória para toda ruptura com essas características.",
   "referencias": [
-   "Goutallier D, Postel JM, Bernageau J, Lavau L, Voisin MC. Fatty muscle degeneration in cuff ruptures: pre- and postoperative evaluation by CT scan. Clin Orthop Relat Res. 1994;(304):78-83.",
-   "Rockwood CA Jr, Matsen FA III, Wirth MA, Lippitt SB, eds. Rockwood and Matsen's The Shoulder. Elsevier. Lesões do manguito rotador."
+   "https://www.aaos.org/globalassets/quality-and-practice-resources/rotator-cuff/rotator-cuff-2025/rotator-cuff-cpg.pdf"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**Reparabilidade não é sinônimo de indicação automática.** Aos 50 anos, com perda funcional por seis meses, retração de apenas 1 cm e Goutallier II, o tendão ainda parece passível de reparo e o músculo não apresenta infiltração gordurosa avançada. Por isso a banca favorece o reparo cirúrgico. Na prática, é preciso confirmar a espessura e a extensão da ruptura, a intensidade do déficit, a demanda do paciente e o que já foi tentado. A diretriz da AAOS reconhece melhora com fisioterapia mesmo em rupturas completas sintomáticas, embora algumas aumentem e desenvolvam atrofia ao longo dos anos. Assim, não se deve afirmar que o tratamento conservador necessariamente falhará neste caso.",
+  "correta": "**E, reparo do manguito rotador (gabarito oficial).** É a alternativa que trata diretamente a ruptura em um paciente relativamente jovem, ainda sintomático e com fatores de reparabilidade favoráveis. A ressalva acima impede transformar esses dados, isoladamente, em indicação cirúrgica universal.",
+  "geradoEm": "2026-10-18",
   "conferido": false
  },
  "ombro-cotovelo-0534": {
@@ -5481,37 +5481,36 @@
   "conferido": false
  },
  "ombro-cotovelo-0535": {
-  "alerta": "Em pacientes idosos com fraturas em 4 partes, os estudos mais recentes mostram melhores resultados funcionais e menos dependência da consolidação das tuberosidades com a artroplastia reversa (alternativa E), que se tornou a preferência de muitos cirurgiões acima de 65 a 70 anos. A hemiartroplastia continua sendo uma opção, especialmente em pacientes mais jovens com boa qualidade óssea. O gabarito oficial (D) foi mantido.",
-  "conceito": "**Fraturas da extremidade proximal do úmero: classificação de Neer.** Considera quatro segmentos (cabeça, tubérculo maior, tubérculo menor e diáfise). Um segmento é considerado uma \"parte\" se estiver desviado mais de 1 cm ou angulado mais de 45 graus.\n\n**Fratura em 4 partes.** Os quatro segmentos estão desviados. A cabeça fica isolada, sem inserções de partes moles, com **alto risco de necrose avascular**, especialmente quando o fragmento da cabeça não tem extensão medial (calcar) e a dobradiça medial está rompida (critérios de Hertel).\n\n**Opções de tratamento.**\n- **Tratamento conservador**: aceitável em idosos de baixíssima demanda, com resultados funcionais modestos, mas às vezes semelhantes aos cirúrgicos em ensaios clínicos (PROFHER).\n- **Fixação com placa bloqueada**: preferida em pacientes mais jovens e com bom osso, quando é possível reconstruir a cabeça; em idosos osteoporóticos, tem altas taxas de falha, perda de redução, penetração dos parafusos e necrose.\n- **Hemiartroplastia (artroplastia parcial)**: substitui a cabeça e depende da **consolidação das tuberosidades** na posição correta para funcionar; resultados variáveis.\n- **Artroplastia reversa**: não depende tanto do manguito e das tuberosidades; resultados funcionais mais previsíveis em idosos, tornando-se a preferência em pacientes acima de cerca de 65 a 70 anos.\n\n| Opção | Melhor para |\n|---|---|\n| Placa bloqueada | Jovens, bom osso, fratura reconstruível |\n| Hemiartroplastia | Pacientes mais jovens, tuberosidades reparáveis |\n| Reversa | Idosos, osteoporose, manguito ou tuberosidades comprometidos |\n| Conservador | Baixa demanda, alto risco cirúrgico |\n\n> Fratura em 4 partes no idoso osteoporótico: artroplastia (parcial ou, cada vez mais, reversa).",
-  "correta": "**D: Artroplastia parcial do ombro (gabarito oficial).** Na fratura em 4 partes em paciente osteoporótica de 65 anos, a fixação com placa tem alto risco de falha e necrose da cabeça, e a artroplastia é a opção mais adequada. A banca escolheu a hemiartroplastia; atualmente, muitos cirurgiões preferem a artroplastia reversa nessa faixa etária, conforme a ressalva acima.",
   "incorretas": {
-   "A": "**Imobilização com tipoia por 6 semanas** pode ser opção em pacientes de baixíssima demanda ou sem condições cirúrgicas, mas, em uma paciente de 65 anos com fratura em 4 partes, os resultados funcionais costumam ser limitados.",
-   "B": "**Redução fechada com órtese** não consegue reduzir e manter uma fratura em 4 partes, com fragmentos desviados e a cabeça isolada.",
-   "C": "**Fixação interna com placa e parafusos** em osso osteoporótico com fratura em 4 partes tem altas taxas de perda de redução, penetração dos parafusos e necrose avascular da cabeça.",
-   "E": "**A artroplastia reversa** é a opção preferida por muitos cirurgiões em idosos com fraturas em 4 partes, com resultados mais previsíveis. É defensável e motivou a ressalva; a banca, porém, considerou a hemiartroplastia."
+   "A": "**Tipoia.** Pode ser apropriada em alguns pacientes ou padrões de fratura, sobretudo conforme demanda e risco cirúrgico; o enunciado, porém, descreve uma fratura em quatro partes que a banca tratou como candidata a artroplastia.",
+   "B": "**Redução fechada e órtese.** Não oferecem controle confiável dos quatro fragmentos de uma fratura proximal complexa como estratégia definitiva habitual.",
+   "C": "**Placa e parafusos.** Seriam considerados se a fratura fosse reconstruível; a osteoporose e a fragmentação aumentam o risco de falha da fixação, mas não constituem contraindicação absoluta.",
+   "E": "**Artroplastia reversa.** É uma alternativa tecnicamente defensável e apoiada por ensaios em pacientes mais velhos com fraturas complexas; não foi a letra registrada como correta nesta prova."
   },
+  "alerta": "Mantido o gabarito oficial D, artroplastia parcial. A fratura em quatro partes numa paciente osteoporótica de 65 anos não torna a hemiartroplastia superior à reversa de modo inequívoco. Ensaio randomizado com pacientes a partir de 65 anos encontrou melhor função com artroplastia reversa quando a fratura não era passível de osteossíntese. A escolha individual depende da reconstruibilidade, das tuberosidades, do manguito, da função prévia e dos riscos cirúrgicos.",
   "referencias": [
-   "Neer CS 2nd. Displaced proximal humeral fractures. I. Classification and evaluation. J Bone Joint Surg Am. 1970;52(6):1077-1089.",
-   "Sebastiá-Forcada E, Cebrián-Gómez R, Lizaur-Utrilla A, Gil-Guillén V. Reverse shoulder arthroplasty versus hemiarthroplasty for acute proximal humeral fractures: a blinded, randomized, controlled, prospective study. J Shoulder Elbow Surg. 2014;23(10):1419-1426."
+   "https://pubmed.ncbi.nlm.nih.gov/38960139/",
+   "https://pubmed.ncbi.nlm.nih.gov/33301926/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**O nome da operação não resolve a fratura sozinho.** Em fratura proximal do úmero em quatro partes, é preciso avaliar se a cabeça pode ser reconstruída e fixada com estabilidade no osso disponível. Se não for possível, consideram-se artroplastias. A hemiartroplastia substitui a cabeça, mas sua função depende muito da consolidação das tuberosidades e do manguito. A reversa usa o deltoide para elevar o braço e tende a oferecer resultado mais previsível em idosos selecionados com fraturas complexas. A idade de 65 anos, por si só, não decide entre essas técnicas, e o enunciado não fornece todos os elementos necessários para uma indicação individual definitiva.",
+  "correta": "**D, artroplastia parcial (gabarito oficial).** Representa a opção escolhida pela banca para a fratura complexa com osteoporose. Deve ser lida com a ressalva de que a artroplastia reversa também é forte candidata na prática contemporânea.",
+  "geradoEm": "2026-10-18",
   "conferido": false
  },
  "ombro-cotovelo-0536": {
-  "alerta": "O teste do pivot shift lateral de O'Driscoll, usado para diagnosticar a instabilidade rotatória posterolateral do cotovelo, é feito com **supinação** (rotação externa) do antebraço, **valgo** e compressão axial, enquanto o cotovelo é fletido a partir da extensão. A combinação que corresponde ao teste é a alternativa E (valgo e rotação externa). O gabarito oficial registrado (C, varo e rotação interna) não corresponde à descrição clássica e foi mantido no sistema com esta ressalva.",
-  "conceito": "**Instabilidade rotatória posterolateral do cotovelo (IRPL).** É a forma mais comum de instabilidade crônica do cotovelo, descrita por O'Driscoll. Resulta da insuficiência do **ligamento colateral ulnar lateral (LCUL)**, geralmente após luxação do cotovelo ou cirurgias laterais (como o tratamento cirúrgico da epicondilite).\n\n**Mecanismo.** Sem o LCUL, o rádio e a ulna, juntos, rodam externamente (supinação) em relação ao úmero, e a cabeça do rádio subluxa posteriormente em relação ao capítulo.\n\n**Quadro clínico.** Dor lateral, estalidos, sensação de falseio ou de que o cotovelo \"sai do lugar\" ao se apoiar para levantar da cadeira, ao fazer flexões ou ao estender o cotovelo com o antebraço supinado.\n\n**Testes.**\n- **Pivot shift lateral (O'Driscoll)**: paciente em decúbito dorsal, braço elevado acima da cabeça. O examinador aplica **supinação** do antebraço, **estresse em valgo** e **compressão axial**, enquanto flete o cotovelo a partir da extensão. Com o cotovelo estendido, a cabeça do rádio subluxa (proeminência posterolateral); ao fletir cerca de 40 graus, reduz com um ressalto. Em pacientes acordados, frequentemente só se obtém apreensão.\n- **Gaveta posterolateral**.\n- **Teste de apoio na cadeira** e **flexão de braço (push-up)**: dor ou apreensão ao empurrar o corpo com os antebraços supinados.\n\n**Tratamento.** Reconstrução do LCUL com enxerto tendíneo (palmar longo) nos casos sintomáticos.\n\n> Pivot shift lateral do cotovelo: supinação (rotação externa), valgo e compressão axial.",
-  "correta": "**C: Varo e rotação interna (gabarito oficial).** O gabarito registrado aponta essa combinação, mas o teste do pivot shift lateral de O'Driscoll, que diagnostica a instabilidade rotatória posterolateral, é feito com supinação (rotação externa) do antebraço, valgo e compressão axial. A combinação compatível com a descrição clássica é a alternativa E, conforme a ressalva acima.",
   "incorretas": {
-   "A": "**Varo e supinação**: a supinação faz parte do teste, mas o estresse aplicado é em valgo, e não em varo.",
-   "B": "**Valgo e pronação**: o estresse em valgo é correto, mas a pronação estabiliza a articulação radiocapitelar e impede a subluxação posterolateral, tornando o teste negativo.",
-   "D": "**Valgo e rotação interna**: a rotação interna (pronação) também reduz a cabeça do rádio e não reproduz a instabilidade posterolateral.",
-   "E": "**Valgo e rotação externa** corresponde ao teste clássico de O'Driscoll (valgo, supinação e compressão axial) e é a combinação coerente com a literatura."
+   "A": "**Varo e supinação.** Inclui a supinação, mas não o estresse em valgo do teste clássico.",
+   "B": "**Valgo e pronação.** Inclui o valgo, mas troca a supinação pela pronação.",
+   "D": "**Valgo e rotação interna.** Também não reproduz a supinação necessária à manobra descrita por O'Driscoll.",
+   "E": "**Valgo e rotação externa.** Se rotação externa aqui representa supinação do antebraço, é a combinação compatível com o pivot shift lateral clássico associado à compressão axial, apesar de não ser o gabarito registrado."
   },
+  "alerta": "Mantido o gabarito oficial C por fidelidade à prova. Na descrição original do teste de pivot shift lateral de O'Driscoll, aplica-se supinação do antebraço, estresse em valgo e compressão axial durante a flexão do cotovelo. Isso corresponde à alternativa E, não a varo com rotação interna. A divergência deve ser conhecida pelo estudante.",
   "referencias": [
-   "O'Driscoll SW, Bell DF, Morrey BF. Posterolateral rotatory instability of the elbow. J Bone Joint Surg Am. 1991;73(3):440-446.",
-   "Morrey BF, Sanchez-Sotelo J, Morrey ME, eds. Morrey's The Elbow and Its Disorders. Elsevier. Instabilidade do cotovelo."
+   "https://pubmed.ncbi.nlm.nih.gov/2002081/"
   ],
-  "geradoEm": "2026-10-05",
+  "conceito": "**Distinguir o gabarito da manobra descrita.** A instabilidade rotatória posterolateral pode aparecer após luxação e envolve o complexo ligamentar lateral. No pivot shift lateral clássico, o examinador mantém o antebraço supinado, aplica valgo e compressão axial e flete o cotovelo a partir da extensão. A cabeça radial subluxa e depois reduz, ou surge apreensão no paciente acordado. A combinação da literatura é a da letra E. Neste item, a banca registrou C; não há motivo para ensinar varo e rotação interna como se fossem a execução clássica desse teste.",
+  "correta": "**C, varo e rotação interna (gabarito oficial mantido).** Essa combinação não coincide com o pivot shift lateral original. Para reconhecer a manobra na prática e em outras provas, use supinação, valgo e carga axial, isto é, a alternativa E deste enunciado.",
+  "geradoEm": "2026-10-18",
   "conferido": false
  },
  "ombro-cotovelo-0537": {
