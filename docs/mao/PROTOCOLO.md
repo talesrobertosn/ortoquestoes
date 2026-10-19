@@ -131,20 +131,29 @@ Para cada questão original:
 
 ## 6. Reescrever sem copiar (OrtoQuestões Simulados)
 
-Mesmas regras do SIMÃO 2026 (seção "Como reescrever sem copiar" de
-[simao-engenharia-reversa.md](../simulados/simao-engenharia-reversa.md)):
+**Ajuste do Tales (19/10/2026):** a questão nova fica **muito parecida com a original**, a mesma pergunta,
+o mesmo fato, a mesma resposta, a mesma prova e o **mesmo ano** (`ANO` do lote). Só se **trocam as
+palavras**: sinônimos, outra ordem na frase, outra ordem das alternativas. Isso substitui, para estas provas,
+a regra antiga de "mudar o ângulo" do SIMÃO 2026.
 
-1. **Manter o fato cobrado e mudar o ângulo:** pediu a artéria do retalho, a nova dá a artéria e pede o
-   retalho; pediu o tipo pela descrição, a nova dá o tipo e pede a característica.
-2. **Trocar o cenário** do caso clínico (idade, dedo, mecanismo), preservando a decisão.
-3. **Reescrever todas as alternativas**, trocar pelo menos um distrator, mudar a ordem; distratores da
-   família certa (epônimos vizinhos, números vizinhos, inversões dorsal e volar).
+1. **Mesma pergunta, outras palavras:** "O retalho inguinal é nutrido por qual artéria?" no lugar de "O
+   retalho inguinal é suprido pela artéria:". Nomes técnicos (artérias, epônimos, transferências) ficam
+   como são.
+2. **Caso clínico:** mesmos dados que decidem (idade, dedo, achado), contados com outras palavras.
+3. **Alternativas:** as mesmas ideias, com redação própria e em outra ordem; pode trocar um distrator
+   claramente defeituoso por outro da mesma família. A letra do gabarito pode mudar (equilibrar no lote).
 4. Formato do site: quatro alternativas (A a D; se o original tiver cinco, fica com quatro), sem
    "assinale", sem EXCETO ou INCORRETA, sem lacuna "____" (usar "respectivamente"), sem travessão, sem
    itálico, sem marca-texto. Epônimos em CAIXA ALTA.
 5. Gabarito equilibrado no lote e no fim da prova (A, B, C e D parecidos).
 6. Questão repetida dentro da mesma prova vira **duas questões de ângulos diferentes**.
-7. Rodar `copia` em todo lote antes de aplicar.
+7. Rodar `copia` em todo lote antes de aplicar: nenhuma sequência de 7 palavras iguais ao original (nomes
+   técnicos longos inevitáveis são a exceção; anote no PROGRESSO).
+
+**Provas que vêm dentro de resumos:** às vezes as questões estão só no fim de um resumo. As questões
+originais já separadas por prova e ano ficam em `~/OrtoQuestoes-Biblioteca/provas/` (por exemplo
+`SIMAO-2024-questoes.json`, no mesmo formato do comando `questoes`); a parte de texto do resumo continua em
+`resumos/`. Nesse caso, copie o JSON para `.oq/provas/<slug>.json` e pule o comando `questoes`.
 
 ## 7. O comentário (o mais importante: pode gastar)
 

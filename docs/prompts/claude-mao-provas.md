@@ -31,7 +31,7 @@ PASSO 3. PARA CADA LOTE DE 5 (PROTOCOLO, seções 4 a 8):
   a) git pull origin claude/pdfs-questoes-tp64dr
   b) Para cada questão: ache as páginas (plano, buscar, ler), LEIA DE VERDADE o trecho que decide e o
      entorno que explica o porquê (seção 4), resolva a questão pelo livro e anote a página impressa.
-  c) Reescreva a questão com outro ângulo, sem copiar (seção 6), e escreva o comentário no padrão
+  c) Reescreva a questão quase igual, mesma pergunta e mesmo ano, trocando as palavras (seção 6), e escreva o comentário no padrão
      editorial (seção 7): aula do tema do zero, cada alternativa com parágrafo próprio inclusive a correta,
      citações "(Green, cap. N, p. X)" no texto, "Por que esta questão foi criada." e "Na prova:".
      Qualidade vem antes de economia: pode gastar no comentário.
