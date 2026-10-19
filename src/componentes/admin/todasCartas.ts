@@ -59,6 +59,7 @@ export const GATILHOS: Record<TipoCarta, Gatilho> = {
   aniversario: { quando: 'Agendador diário, no dia do aniversário (candidatos_aniversario; 29/2 sai em 28/2 nos anos comuns). Uma por ano.', paraQuem: `Quem pôs a data de nascimento no cadastro. ${TRAVAS}` },
   um_ano: { quando: 'Agendador diário, no dia em que a conta faz 1, 2, 3... anos (candidatos_um_ano). Uma por aniversário de conta.', paraQuem: `Contas que já responderam pelo menos uma questão. ${TRAVAS}` },
   indicacao_deu_certo: { quando: 'Agendador diário (candidatos_indicacao_deu_certo): indicação confirmada nos últimos 14 dias, ou convidado com 20 questões nos últimos 90. Uma por amigo indicado.', paraQuem: `Quem indicou (o padrinho). ${TRAVAS}` },
+  simulado_lembrete: { quando: 'Agendador diário (candidatos_simulado_lembrete, parte 32): a edição abre nas próximas 24 horas ou abriu nas últimas 24. Uma por edição; depois do envio, a inscrição fica marcada.', paraQuem: `Quem se inscreveu na edição e ainda não começou a prova. Se a edição pede o plano e a pessoa não assina, a carta avisa, sem preço. ${TRAVAS}` },
   resumo_do_tema: { quando: 'Agendador diário, no máximo uma por semana (candidatos_resumo_do_tema). O catálogo vem de biblioteca/indice.json, lido pela função a cada execução.', paraQuem: `Quem aceitou receber novidades e tem 10 questões ou mais na área do resumo publicado nos últimos 7 dias, que ainda não abriu. ${TRAVAS}` },
 }
 
@@ -134,13 +135,14 @@ const PESSOA_DO_TIPO: Partial<Record<TipoCarta, [string, PerfilCarta, Partial<Op
   obrigado_tempo: ['Fernanda Luz cancelou (acesso até o fim do período)', fernanda],
   assinou_sem_cronograma: ['Fernanda Luz, TEOT, assinou há 4 dias e ainda sem cronograma', fernanda],
   assinante_parado_7: ['Bruno, assinante, 230 questões, 9 dias sem responder', { ...pessoa('Bruno', 64), respondidas: 230, diasParado: 9, assinante: true, areas: [{ slug: 'joelho', total: 90, certas: 60 }] }],
-  simulado_resultado: ['Júlia Prado, acertou 41 de 60 no Simulado Nacional, 12ª', FICTICIOS['80-90'][1], { campanha: { simulado: { titulo: 'Simulado Nacional de outubro', acertos: 41, total: 60, posicao: 12, participantes: 180 } } }],
+  simulado_resultado: ['Júlia Prado, acertou 41 de 50 no Simulado Nacional, 12ª', FICTICIOS['80-90'][1], { campanha: { simulado: { titulo: 'Simulado Nacional de outubro', acertos: 41, total: 50, posicao: 12, participantes: 180 } } }],
   vespera_prova: ['Pedro Alves, TEOT amanhã pelo cronograma', { ...FICTICIOS['70-80'][1], diasParaProva: 1 }],
   depois_prova: ['Pedro Alves, o TEOT foi há 2 dias', { ...FICTICIOS['70-80'][1], diasParaProva: null }],
   aniversario: ['Rafael Couto faz aniversário hoje', { ...FICTICIOS['40-60'][1], nascimento: new Date(Date.now() - 3 * 3600_000).toISOString().slice(0, 10).replace(/^\d{4}/, '1995') }],
   um_ano: ['Beatriz Lins, conta de um ano, ótima em mão', { ...FICTICIOS['60-70'][1], diasConta: 365 }, { campanha: { anos: 1 } }],
   indicacao_deu_certo: ['Rafael Couto, o amigo indicado passou de 20 questões', FICTICIOS['40-60'][1], { campanha: { cortesia: true } }],
   resumo_do_tema: ['Beatriz Lins, estuda mais mão, saiu "Fraturas da mão"', FICTICIOS['60-70'][1], { campanha: { resumo: { id: 'rockwood10-45-fraturas-mao', titulo: 'Fraturas da mão', especialidade: 'mao' } } }],
+  simulado_lembrete: ['Pedro Alves se inscreveu no simulado de outubro, que abre amanhã', FICTICIOS['70-80'][1], { campanha: { lembrete: { edicao: '2026-10', titulo: 'Simulado Nacional · Outubro de 2026', tipo_lembrete: 'abre_amanha', fecha_em: '2026-11-01T02:59:59Z', total: 50, duracao_min: 120, precisa_plano: false } } }],
 }
 
 function grupoDe(tipo: TipoCarta): GrupoCatalogo {

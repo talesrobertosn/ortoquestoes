@@ -34,14 +34,14 @@ const LEGAL = [
   ['/condicoes-assinatura', 'Condições da assinatura'],
 ] as const
 
-/** Câmera do Instagram em pixel art (12 x 12), nas cores da temporada. */
+/** Câmera do Instagram em pixel art (12 x 12), nas cores da temporada; fica num quadro de céu com o sol da manhã. */
 function CameraPixel() {
   const px: Array<[number, number, string]> = []
   for (let x = 1; x <= 10; x++) { px.push([x, 1, '#f4cf7c'], [x, 10, '#f4cf7c']) }
   for (let y = 2; y <= 9; y++) { px.push([1, y, '#f4cf7c'], [10, y, '#f4cf7c']) }
   for (const [x, y] of [[4, 4], [5, 4], [6, 4], [7, 4], [4, 7], [5, 7], [6, 7], [7, 7], [4, 5], [4, 6], [7, 5], [7, 6]]) px.push([x, y, '#e1573a'])
   px.push([8, 3, '#e1573a'])
-  return <svg className="rodape-insta__icone" viewBox="0 0 12 12" width={48} height={48} shapeRendering="crispEdges" aria-hidden="true">
+  return <svg className="rodape-insta__icone" viewBox="0 0 12 12" width={60} height={60} shapeRendering="crispEdges" aria-hidden="true">
     <rect x={2} y={2} width={8} height={8} fill="#3b2410" />
     {px.map(([x, y, cor], i) => <rect key={i} x={x} y={y} width={1} height={1} fill={cor} />)}
   </svg>
@@ -55,14 +55,14 @@ export function Rodape({ comInstagram = false }: { comInstagram?: boolean }) {
   return (
     <footer className="rodape nao-imprime">
       <div className="conteudo">
-        {comInstagram && <a className="rodape-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
-          <CameraPixel />
+        {comInstagram && <a className="rodape-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me" aria-label={`Siga @${SITE.instagramUsuario} no Instagram: uma questão comentada toda manhã (abre em nova aba)`}>
+          <span className="rodape-insta__arte" aria-hidden="true"><CameraPixel /></span>
           <span className="rodape-insta__texto">
-            <span className="rodape-insta__selo">Missão bônus</span>
-            <strong>Siga @{SITE.instagramUsuario}</strong>
-            <span>Questão comentada, macetes de prova, acervo novo e os bastidores do projeto.</span>
+            <span className="rodape-insta__selo">No Instagram</span>
+            <strong>Uma questão comentada toda manhã</strong>
+            <span>No feed, a questão, a resposta e o porquê de cada alternativa. Nos stories, macetes de prova e o acervo novo.</span>
           </span>
-          <span className="rodape-insta__botao">Seguir <Icone nome="direita" tamanho={16} /></span>
+          <span className="rodape-insta__botao"><Icone nome="instagram" tamanho={18} /> Siga @{SITE.instagramUsuario}</span>
         </a>}
 
         <div className="rodape-grade">

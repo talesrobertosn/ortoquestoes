@@ -33,6 +33,18 @@ import type { Resposta } from '../dados/tipos'
 import { porExtenso } from '../util/extenso'
 import { usarPomodoro, usarPreferenciasSessao, type PreferenciasSessao } from '../estado/preferenciasSessao'
 import { PomodoroBloco, PomodoroPilula } from '../componentes/PomodoroSessao'
+import { confirmar } from '../componentes/Confirmar'
+import { usarSalvamentoNacional, type EstadoSalvamento } from '../estado/salvamentoNacional'
+import { alertaDeTempo, montarSessaoNacional, resumoParaEntregar } from '../dados/provaNacional'
+import { codigoErroSN, snIniciar } from '../dados/apiSimuladoNacional'
+
+/** O salvamento da prova do Simulado Nacional, numa linha curta. */
+function textoSalvamento(e: EstadoSalvamento): string {
+  if (e.situacao === 'salvando' || e.situacao === 'pendente') return 'Salvando no servidor…'
+  if (e.situacao === 'sem-rede') return 'Sem conexão: as respostas ficam aqui e sobem quando a rede voltar'
+  if (e.situacao === 'encerrado') return 'Tempo da prova encerrado'
+  return e.salvoEm ? `Salvo no servidor às ${new Date(e.salvoEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : 'Respostas salvas no servidor'
+}
 
 type EstadoBloco = 'certa' | 'errada' | 'neutra' | 'feita' | 'vazia'
 const ROTULO_BLOCO: Record<EstadoBloco, string> = { certa: 'correta', errada: 'errada', neutra: 'anulada', feita: 'respondida', vazia: 'não respondida' }
@@ -256,7 +268,28 @@ const CHAVE_ELOGIOS = 'ortoquestoes:elogio-sessao'
 
 export function Sessao() {
   const { indice } = usarIndice()
-  const { sessao, responder, irPara, alternarRevisar, alternarRiscada, finalizar } = usarSessao()
+  const { sessao, responder, irPara, alternarRevisar, alternarRiscada, finalizar, definirSessao } = usarSessao()
+  // Prova do Simulado Nacional: alternativas na ordem da edição, salvamento no servidor, sem gabarito.
+  const nacional = sessao?.nacional && !sessao.concluidaEm ? sessao.nacional : null
+  const salvamento = usarSalvamentoNacional(sessao, definirSessao)
+  // Ao abrir (e ao voltar para a aba), traz o que foi marcado em outro aparelho.
+  useEffect(() => {
+    if (!nacional) return
+    let vivo = true
+    const atualizar = () => {
+      snIniciar(nacional).then((inicio) => {
+        if (!vivo) return
+        definirSessao((atual) => (atual?.nacional === nacional && !atual.concluidaEm ? montarSessaoNacional(inicio, atual, atual.filtros) : atual))
+      }).catch((falha) => {
+        // Já entregue (pelo relógio, em outro aparelho): o resultado está na página do simulado.
+        if (vivo && codigoErroSN(falha) === 'ja_entregue') { definirSessao(() => null); navegar('/simulado-nacional', true) }
+      })
+    }
+    atualizar()
+    const aoVoltar = () => { if (document.visibilityState === 'visible') atualizar() }
+    document.addEventListener('visibilitychange', aoVoltar)
+    return () => { vivo = false; document.removeEventListener('visibilitychange', aoVoltar) }
+  }, [nacional, definirSessao])
   const { sessao: conta } = usarConta()
   const { favoritos, alternar: alternarFavorito } = usarFavoritos()
   const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
@@ -398,18 +431,37 @@ export function Sessao() {
   // recriado a cada resposta ou troca de questão.
   const criadaEm = sessao?.criadaEm ?? 0
   const limiteSegundos = sessao?.limiteSegundos ?? 0
+  const prazoEm = sessao?.prazoEm ?? 0
   const encerrada = !!sessao?.concluidaEm
   useEffect(() => {
-    if (!limiteSegundos || encerrada) return
-    const medir = () => definirRestante(Math.round((criadaEm + limiteSegundos * 1000 - Date.now()) / 1000))
+    if ((!limiteSegundos && !prazoEm) || encerrada) return
+    // O Simulado Nacional conta até o prazo do servidor; os outros, do início mais o limite.
+    const fim = prazoEm || criadaEm + limiteSegundos * 1000
+    const medir = () => definirRestante(Math.round((fim - Date.now()) / 1000))
     medir()
     const relogio = window.setInterval(medir, 1000)
     return () => window.clearInterval(relogio)
-  }, [criadaEm, limiteSegundos, encerrada])
+  }, [criadaEm, limiteSegundos, prazoEm, encerrada])
+
+  // Prova do Simulado Nacional: um aviso calmo com 15 e com 5 minutos (uma vez cada).
+  const avisados = useRef<number[]>([])
+  const [avisoTempo, definirAvisoTempo] = useState<string | null>(null)
+  useEffect(() => { avisados.current = []; definirAvisoTempo(null) }, [nacional])
+  useEffect(() => {
+    if (!nacional) return
+    const marco = alertaDeTempo(restante, avisados.current)
+    if (!marco) return
+    // Abrir a prova já perto do fim não repete o aviso dos 15.
+    avisados.current = marco === 5 ? [15, 5] : [15]
+    definirAvisoTempo(marco === 15 ? 'Faltam 15 minutos. Dá tempo de rever as marcadas.' : 'Faltam 5 minutos. O que estiver marcado entra na entrega.')
+    const t = window.setTimeout(() => definirAvisoTempo(null), 9000)
+    return () => window.clearTimeout(t)
+  }, [restante, nacional])
 
   // Acabou a cota grátis de hoje: seguir para uma questão ainda não respondida
   // abre o convite; fechar leva ao resumo da sessão.
-  const limiteZerado = !!(estadoLimite?.paywallAtivo && !estadoLimite.ilimitado && estadoLimite.restantes === 0)
+  // A prova do Simulado Nacional não gasta o limite diário.
+  const limiteZerado = !sessao?.nacional && !!(estadoLimite?.paywallAtivo && !estadoLimite.ilimitado && estadoLimite.restantes === 0)
   const irAdiante = useCallback(() => {
     if (!sessao) return
     const proxima = sessao.ids[posicao + 1]
@@ -606,12 +658,28 @@ export function Sessao() {
     else concluir()
   }
 
-  function concluir() {
+  async function concluir() {
+    // Simulado Nacional: antes de entregar, quantas ficaram em branco e marcadas para rever.
+    if (sessao!.nacional) {
+      const { brancas, revisar: paraRever, total: n } = resumoParaEntregar(sessao!)
+      const situacaoProva = [
+        brancas === 0 ? `As ${n} estão respondidas` : `${brancas} de ${n} ${brancas === 1 ? 'está' : 'estão'} em branco`,
+        paraRever ? `${paraRever} ${paraRever === 1 ? 'está marcada' : 'estão marcadas'} para rever` : '',
+      ].filter(Boolean).join(' e ')
+      const sim = await confirmar({
+        titulo: 'Entregar a prova agora?',
+        texto: `${situacaoProva}. Depois de entregar, as respostas não mudam mais. Na hora, você vê a nota, a correção comentada e a sua posição.`,
+        sim: 'Entregar a prova',
+        nao: 'Voltar à prova',
+      })
+      if (!sim) return
+      await salvamento.salvarAgora().catch(() => {})
+    }
     finalizar()
     navegar('/resumo')
   }
   // Coluna lateral só com o que a pessoa deixou ligado em Ajustes da tela; sem nada, o cartão fica sozinho.
-  const comLado = preferencias.placar || preferencias.mapa || preferencias.atalhos || preferencias.pomodoro
+  const comLado = preferencias.placar || preferencias.mapa || preferencias.atalhos || preferencias.pomodoro || !!nacional
   const classesSessao = ['sessao-gestos', 'sx-sessao', comLado ? 'sx-sessao--com-lado' : 'sx-sessao--sem-lado']
   if (!preferencias.mapa) classesSessao.push('sx-sessao--sem-mapa-lado')
   if (!preferencias.dicasTeclado) classesSessao.push('sx-sessao--sem-teclas')
@@ -648,9 +716,11 @@ export function Sessao() {
             {/* A linha viva: a dica de trocar de questão, o incentivo das sequências ou o placar da sessão.
                 Fica dentro da barra (antes, a dica flutuava por cima do "Escolha uma alternativa"). */}
             {/* Região viva fixa: o leitor de tela ouve o incentivo mesmo que a plaquinha nasça e suma. */}
-            <span className="so-leitor" role="status" aria-live="polite">{elogio ?? ''}</span>
+            <span className="so-leitor" role="status" aria-live="polite">{avisoTempo ?? elogio ?? ''}</span>
             <div className="sx-vivo">
-              {dicaDeslizar && !painelAberto ? (
+              {avisoTempo ? (
+                <span className="sx-aviso sx-aviso--tempo" aria-hidden="true"><Icone nome="relogio" tamanho={12} /> {avisoTempo}</span>
+              ) : dicaDeslizar && !painelAberto ? (
                 <span className="sx-aviso sx-aviso--dica" role="status"><Icone nome="esquerda" tamanho={12} /> Deslize para trocar <Icone nome="direita" tamanho={12} /></span>
               ) : dicaTeclado && !painelAberto ? (
                 <span className="sx-aviso sx-aviso--dica" role="status"><kbd>←</kbd><kbd>→</kbd> trocam de questão</span>
@@ -660,6 +730,8 @@ export function Sessao() {
                 <span className="barra-sessao__combo sx-vivo__combo" title="Acertos seguidos nesta sessão"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {porExtenso(combo)} seguidas</span>
               ) : !simulado && acertosSessao > 0 && acertosSessao * 2 >= respondidas ? (
                 <span className="sx-vivo__placar"><Icone nome="certo" tamanho={13} /> {porExtenso(acertosSessao, 'm')} {acertosSessao === 1 ? 'acerto' : 'acertos'}</span>
+              ) : nacional ? (
+                <span className={'sx-vivo__salvo' + (salvamento.situacao === 'sem-rede' ? ' sx-vivo__salvo--alerta' : '')} title={textoSalvamento(salvamento)}><Icone nome={salvamento.situacao === 'sem-rede' ? 'alerta' : 'certo'} tamanho={13} /> {salvamento.situacao === 'sem-rede' ? 'Sem conexão' : salvamento.situacao === 'salvo' ? 'Salvo' : 'Salvando…'}</span>
               ) : null}
             </div>
             {restante !== null && (
@@ -685,9 +757,9 @@ export function Sessao() {
                 type="button"
                 className="botao botao--principal barra-sessao__proxima sx-botao sx-botao--ouro"
                 onClick={avancar}
-                title={posicao + 1 < total ? 'Próxima questão (→)' : 'Concluir a sessão'}
+                title={posicao + 1 < total ? 'Próxima questão (→)' : nacional ? 'Entregar a prova' : 'Concluir a sessão'}
               >
-                {posicao + 1 < total ? 'Próxima' : 'Concluir'}
+                {posicao + 1 < total ? 'Próxima' : nacional ? 'Entregar' : 'Concluir'}
                 <Icone nome="direita" tamanho={16} />
               </button>
             )}
@@ -734,9 +806,13 @@ export function Sessao() {
           favorita={favoritos.includes(questaoAtual.id)}
           marcadaRevisao={sessao.revisar.includes(questaoAtual.id)}
           aoProxima={avancar}
-          rotuloProxima={posicao + 1 < total ? 'Próxima questão' : 'Ver o resultado'}
+          rotuloProxima={posicao + 1 < total ? 'Próxima questão' : nacional ? 'Entregar a prova' : 'Ver o resultado'}
+          permutacao={nacional ? sessao.permutacoes?.[questaoAtual.id] ?? null : null}
+          modoProva={!!nacional}
           aoResponder={async (letra, correta, segundos, confianca) => {
             if (!conta) { definirPortaoContaAberto(true); return }
+            // Prova do Simulado Nacional: a letra (a nova, da edição) vai para o servidor; a correção é de lá.
+            if (nacional) { responder(questaoAtual.id, letra, null, segundos, confianca); return }
             if (autorizando.current) return
             autorizando.current = true
             try {
@@ -794,8 +870,8 @@ export function Sessao() {
             <button type="button" role="menuitem" onClick={() => { fecharMenu(); definirMapaAberto(true) }}>
               Mapa de questões
             </button>
-            <button type="button" role="menuitem" onClick={() => { fecharMenu(); concluir() }} disabled={respondidas === 0}>
-              {simulado ? 'Entregar o simulado' : 'Encerrar e ver resumo'}
+            <button type="button" role="menuitem" onClick={() => { fecharMenu(); void concluir() }} disabled={respondidas === 0 && !nacional}>
+              {nacional ? 'Entregar a prova' : simulado ? 'Entregar o simulado' : 'Encerrar e ver resumo'}
             </button>
           </div>
         </details>
@@ -806,7 +882,7 @@ export function Sessao() {
           disabled={posicao + 1 >= total && respondidas === 0}
         >
           {posicao + 1 < total && <kbd className="nav-sessao__tecla" aria-hidden="true">→</kbd>}
-          {posicao + 1 < total ? 'Próxima' : 'Concluir'}
+          {posicao + 1 < total ? 'Próxima' : nacional ? 'Entregar' : 'Concluir'}
           <Icone nome="direita" tamanho={16} />
         </button>
       </nav>
@@ -816,8 +892,8 @@ export function Sessao() {
           simulado e os atalhos ficam à vista ao lado do cartão. Abaixo de 72rem some (display:
           none, fora da árvore de acessibilidade) e o botão Mapa da barra volta. */}
       {comLado && <aside className="sx-lado nao-imprime" aria-label="Painel da sessão">
-        {preferencias.placar && <section className="sx-lado__bloco sx-lado__bloco--topo">
-          <h2 className="sx-lado__titulo">{nome ? `${nome}, sua sessão` : 'Sua sessão'}</h2>
+        {(preferencias.placar || nacional) && <section className="sx-lado__bloco sx-lado__bloco--topo">
+          <h2 className="sx-lado__titulo">{nacional ? (nome ? `${nome}, sua prova` : 'Sua prova') : nome ? `${nome}, sua sessão` : 'Sua sessão'}</h2>
           <p className="sx-lado__conta"><b className="numerico">{respondidas}</b> de {total} {respondidas === 1 ? 'respondida' : 'respondidas'}</p>
           {combo >= 3 ? (
             <p className="sx-lado__vivo sx-lado__vivo--combo"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {porExtenso(combo)} acertos seguidos</p>
@@ -836,6 +912,8 @@ export function Sessao() {
               </span>
             </p>
           )}
+          {nacional && <p className={'sx-lado__salvo' + (salvamento.situacao === 'sem-rede' ? ' sx-lado__salvo--alerta' : '')}><Icone nome={salvamento.situacao === 'sem-rede' ? 'alerta' : 'certo'} tamanho={13} /> {textoSalvamento(salvamento)}</p>}
+          {nacional && <p className="sx-lado__nota">Sem gabarito até entregar. Pode trocar de aparelho: entre na mesma conta e continue.</p>}
         </section>}
         {preferencias.pomodoro && <section className="sx-lado__bloco" aria-labelledby="sx-lado-pomodoro">
           <h3 className="sx-lado__subtitulo" id="sx-lado-pomodoro">Pomodoro

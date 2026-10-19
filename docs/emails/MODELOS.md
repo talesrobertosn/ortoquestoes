@@ -3,7 +3,7 @@
 > Gerado por `node scripts/amostras-cartas.mjs` em 2026-10-17. Pessoas e números fictícios.
 > Cada amostra é uma das versões possíveis: no painel, "Sortear outra versão" troca o texto.
 
-Todas as cartas saem só em texto, na voz de um amigo que já passou pela residência (docs/emails/PLANO.md): abertura com o momento da pessoa, o que eu vi no estudo dela (até 3 observações), uma ideia sobre tempo e praticidade, convite leve quando couber, fecho e um P.S. De 6 a 12 linhas, assinatura fixa "Um abraço, / Tales, do Orto Questões", no máximo um link, nenhum preço, nenhum número de questões abaixo de 10, acerto só com 30 questões e de 50% para cima.
+Todas as cartas saem só em texto, na voz de um amigo que entende a rotina de quem estuda (docs/emails/PLANO.md): abertura com o momento da pessoa, o que eu vi no estudo dela (até 3 observações), uma ideia sobre tempo e praticidade, convite leve quando couber, fecho e um P.S. De 6 a 12 linhas, assinatura fixa "Um abraço, / Tales, do Orto Questões", no máximo um link, nenhum preço, nenhum número de questões abaixo de 10, acerto só com 30 questões e de 50% para cima.
 
 ## Quantas variações
 
@@ -50,6 +50,7 @@ Todas as cartas saem só em texto, na voz de um amigo que já passou pela resid�
 | Um ano de Orto Questões | 5 | 321 textos e 5 assuntos diferentes em 400 sorteios |
 | Sua indicação deu certo | 5 | 317 textos e 6 assuntos diferentes em 400 sorteios |
 | Saiu um resumo do seu tema | 5 | 365 textos e 5 assuntos diferentes em 400 sorteios |
+| Lembrete do Simulado Nacional | 5 | 200 textos e 5 assuntos diferentes em 400 sorteios |
 
 ## Uma carta para cada faixa de acerto
 
@@ -65,7 +66,7 @@ Pessoas assinantes que já receberam o agradecimento (por isso a carta é a da f
 ```text
 Caio, tudo bem?
 
-O R1 é o ano em que a gente aprende a sobreviver ao hospital. Estudar no meio disso tem muito valor.
+O R1 é o ano de aprender a sobreviver ao hospital. Estudar no meio disso tem muito valor.
 
 Queria te contar uma coisa: todo mundo que passou na prova de título começou achando as questões impossíveis. A banca gosta de detalhe de classificação, de exceção, de nome próprio. Faz parte do caminho, e não diz nada sobre o seu futuro.
 
@@ -91,7 +92,7 @@ P.S.: a parte do site em que eu mais caprichei foi o comentário das alternativa
 ```text
 Olá, Lívia, tudo bem?
 
-O R1 é o ano em que a gente aprende a sobreviver ao hospital. Estudar no meio disso tem muito valor.
+O R1 é o ano de aprender a sobreviver ao hospital. Estudar no meio disso tem muito valor.
 
 Sabe o que eu vejo quando olho o seu estudo? Alguém que já respondeu 290 questões e segue em frente, mesmo com sono. É isso que mais conta lá na frente.
 
@@ -117,7 +118,7 @@ P.S.: toma um café por mim antes da próxima sessão.
 ```text
 Olá, Diego, tudo bem?
 
-Reparei que você estuda até de madrugada. Já estive aí, e lembro com carinho que o sono também é estudo.
+Reparei que você estuda até de madrugada. Peço com carinho: lembre que o sono também é estudo.
 
 Só para dizer que eu vi o seu esforço: 290 questões já respondidas. Isso é muita dedicação para quem tem o dia tomado.
 
@@ -171,7 +172,7 @@ P.S.: toma um café por mim antes da próxima sessão.
 ```text
 Olá, Rafael, tudo bem?
 
-Estudar no meio do R2 não é pouca coisa. Eu lembro bem desse ano.
+Estudar no meio do R2 não é pouca coisa, e você está fazendo.
 
 Parabéns pela constância. 290 questões já respondidas, e dá para ver que você aparece mesmo nas semanas difíceis.
 
@@ -615,7 +616,7 @@ Rafael, R2, de Curitiba.
 ```text
 Rafael, tudo bem por aí?
 
-Obrigado por estar por aqui. Estudar no meio do R2 não é pouca coisa. Eu lembro bem desse ano.
+Obrigado por estar por aqui. Estudar no meio do R2 não é pouca coisa, e você está fazendo.
 
 Reparei que tem bastante questão de joelho no seu histórico. Tema clássico, bom de ter afiado. Sei que o TARO está no seu radar.
 
@@ -691,7 +692,7 @@ Campanha "Primeira missão".
 ```text
 Oi, Ana, espero que esteja tudo bem por aí.
 
-Sei como é estudar para prova de título com o dia já cheio. Eu passei por isso, e lembro do cansaço.
+Sei como é estudar para prova de título com o dia já cheio. O cansaço conta, e cada questão feita nele vale mais.
 
 Uma curiosidade sobre o site: cada questão tem a explicação de todas as alternativas, não só da certa. É ali que mais se aprende, e é a parte em que eu mais caprichei.
 
@@ -838,7 +839,7 @@ Foi mais do que no período anterior (50 questões). Que bom sinal, porque const
 
 Destaque para joelho, que cresceu 17 pontos. Isso é comentário lido com atenção.
 
-Reparei que quase tudo seu sai à noite, quando o dia já acabou. Eu também estudava assim, e sei o que custa.
+Reparei que quase tudo seu sai à noite, quando o dia já acabou. Sei o que isso custa, e admiro.
 
 Uma ideia para o próximo passo: dez questões de tumores por semana, que é onde cada sessão vai render mais. ortoquestoes.com.br/#/treinar
 
@@ -1132,9 +1133,69 @@ P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo 
 Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
 ```
 
+### Lembrete do Simulado Nacional
+
+Pedro se inscreveu no simulado de outubro, que abre amanhã (50 questões, duas horas).
+
+**Assunto:** Pedro, separei um recado sobre o simulado
+
+```text
+Olá, Pedro, tudo bem?
+
+Um recado curto: o Simulado Nacional de outubro de 2026 abre amanhã, e você está na lista.
+
+São 50 questões em duas horas, com o relógio correndo desde o começo, como no dia da prova.
+
+Uma ideia prática: antes de começar, leia as regras com calma e já decida o que fazer com a questão que travar. Marcar para rever e seguir costuma salvar o fim da prova.
+
+Dá para fazer até 31 de outubro, no horário que for melhor para você.
+
+Para fazer: ortoquestoes.com.br/#/simulado-nacional
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: o ranking leva em conta o tempo nos empates, mas o que mais importa é fazer inteiro, do jeito que vai ser na prova.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Lembrete do Simulado Nacional, abriu hoje
+
+Caio se inscreveu, a edição abriu hoje e pede o plano (a carta avisa, sem preço).
+
+**Assunto:** Caio, separei um recado sobre o simulado
+
+```text
+Olá, Caio, tudo bem?
+
+Um recado curto: o Simulado Nacional de outubro de 2026 já está no ar, e você está na lista.
+
+São 50 questões em duas horas, com o relógio correndo desde o começo, como no dia da prova.
+
+Uma ideia prática: antes de começar, leia as regras com calma e já decida o que fazer com a questão que travar. Marcar para rever e seguir costuma salvar o fim da prova.
+
+Dá para fazer até 31 de outubro, no horário que for melhor para você.
+
+Um detalhe: esta edição é para quem assina. A página do simulado mostra como funciona.
+
+Para fazer: ortoquestoes.com.br/#/simulado-nacional
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: o ranking leva em conta o tempo nos empates, mas o que mais importa é fazer inteiro, do jeito que vai ser na prova.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
 ### Resultado do Simulado Nacional
 
-Júlia acertou 41 de 60 e ficou em 12º (posição só para quem assina, até 30º).
+Júlia acertou 41 de 50 e ficou em 12º (posição só para quem assina, até 30º).
 
 **Assunto:** Júlia, uma ideia para depois do simulado
 
@@ -1143,7 +1204,7 @@ Olá, Júlia, tudo bem?
 
 Imagino que a rotina esteja puxada por aí: hospital de dia, estudo quando sobra.
 
-Vi que você fez o Simulado Nacional desta edição. Você acertou 41 de 60 questões e ficou em 12º lugar entre quem entregou no tempo.
+Vi que você fez o Simulado Nacional desta edição. Você acertou 41 de 50 questões e ficou em 12º lugar entre quem entregou no tempo.
 
 Uma ideia de quem já fez muito simulado: em vez de refazer a prova inteira, pegue as questões que te pegaram e leia o comentário de todas as alternativas. É revisão sob medida, e cabe no intervalo.
 
@@ -1226,7 +1287,7 @@ Olá, Júlia, tudo bem?
 
 Vi que hoje é o seu aniversário, e quis te mandar um abraço daqui.
 
-Na correria da residência, a gente às vezes esquece de parar e reparar no caminho. Então hoje eu reparo por você: estudar com a rotina que você tem já é uma conquista.
+Na correria da rotina, é fácil esquecer de parar e reparar no caminho. Então hoje eu reparo por você: estudar com a rotina que você tem já é uma conquista.
 
 Que este ano traga descanso, gente querida por perto e boas notícias.
 

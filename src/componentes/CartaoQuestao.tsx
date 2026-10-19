@@ -24,6 +24,7 @@ import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
 import { usarTempoVisivel } from '../util/tempoVisivel'
 import { EstudarAssunto } from '../biblioteca/EstudarAssunto'
 import { semEco } from './ecoAlternativa'
+import { permutarQuestao } from '../dados/provaNacional'
 import '../estilos/paginas/CartaoQuestao.css'
 
 interface Props {
@@ -63,9 +64,25 @@ interface Props {
   aoProxima?: () => void
   /** Texto do botão; o padrão é "Próxima questão" (ex.: "Ver o resultado" na última). */
   rotuloProxima?: string
+  /**
+   * Prova do Simulado Nacional: a ordem das alternativas da edição ('CADB': a letra nova A
+   * mostra a original C). As letras que o cartão mostra e devolve em aoResponder são as novas.
+   */
+  permutacao?: string | null
+  /**
+   * Prova do Simulado Nacional em andamento: sem id, link, "copiar link", prova e ano,
+   * anotações e histórico da questão (nada que leve ao gabarito ou à questão avulsa).
+   */
+  modoProva?: boolean
 }
 
-export function CartaoQuestao({
+export function CartaoQuestao({ questao: questaoDoAcervo, permutacao, ...resto }: Props) {
+  // Com a permutação, o cartão inteiro trabalha com a questão na ordem da edição.
+  const questao = useMemo(() => (permutacao ? permutarQuestao(questaoDoAcervo, permutacao) : questaoDoAcervo), [questaoDoAcervo, permutacao])
+  return <CartaoQuestaoExibida questao={questao} {...resto} />
+}
+
+function CartaoQuestaoExibida({
   questao,
   numero,
   total,
@@ -83,7 +100,8 @@ export function CartaoQuestao({
   chaveTempo = '',
   aoProxima,
   rotuloProxima = 'Próxima questão',
-}: Props) {
+  modoProva = false,
+}: Omit<Props, 'permutacao'>) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
   // inteiro a cada render (a cada segundo no simulado, por causa do cronômetro).
@@ -327,7 +345,7 @@ export function CartaoQuestao({
         <div className="qz-topo">
           <div className="qz-topo__info">
             {numero && total ? <h1 className="qz-numero">Questão {numero}<small> de {total}</small></h1> : <h1 className="qz-numero">Questão</h1>}
-            {(questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {!modoProva && (questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.simulado && <span className="qz-origem qz-origem--simulado" title={questao.prova && DESCRICAO_PROVA[questao.prova] ? `${ROTULO_SIMULADOS} no padrão do ${questao.prova}: ${DESCRICAO_PROVA[questao.prova]}` : undefined}>{ROTULO_SIMULADOS}</span>}
             {questao.gabaritoBibliografia && <span className="qz-origem" title="A banca não divulgou o gabarito desta prova. A resposta foi definida pelo Orto Questões a partir da bibliografia.">Gabarito não oficial</span>}
             {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}
@@ -374,7 +392,7 @@ export function CartaoQuestao({
             >
               <Icone nome="bandeira" tamanho={18} />
             </button>
-            <button
+            {!modoProva && <button
               type="button"
               className={'qz-ferramenta' + (copiado ? ' qz-ferramenta--ativa' : '')}
               onClick={copiarLink}
@@ -382,14 +400,14 @@ export function CartaoQuestao({
               title={copiado ? 'Link copiado' : 'Copiar link'}
             >
               <Icone nome={copiado ? 'certo' : 'link'} tamanho={18} />
-            </button>
+            </button>}
             {mostrarGabarito && <button type="button" className={'qz-ferramenta' + (modoLeitura ? ' qz-ferramenta--ativa' : '')} onClick={() => definirModoLeitura(atual => !atual)} aria-pressed={modoLeitura} aria-label={modoLeitura ? 'Mostrar alternativas' : 'Ler comentário sem alternativas'} title={modoLeitura ? 'Mostrar alternativas (L)' : 'Modo leitura (L)'}><Icone nome="livro" tamanho={18} /></button>}
           </div>
         </div>
 
-        {(etiquetasVisiveis || questao.prova || questao.ano) && (
+        {(etiquetasVisiveis || (!modoProva && (questao.prova || questao.ano))) && (
           <div className={'qz-etiquetas' + (etiquetasVisiveis ? '' : ' qz-etiquetas--so-origem')}>
-            {(questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {!modoProva && (questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.simulado && <span className="qz-chip qz-chip--origem qz-chip--simulado">{ROTULO_SIMULADOS}</span>}
             {etiquetasVisiveis && <>
               <span className="qz-chip qz-chip--tema">{questao.tema}</span>
@@ -418,7 +436,7 @@ export function CartaoQuestao({
         {questao.imagens.length > 0 && (
           <div className="questao__figuras">
             {questao.imagens.map((imagem) => (
-              <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? `Figura da questão ${questao.id}`} largura={imagem.largura} altura={imagem.altura} prioridade />
+              <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? (modoProva ? 'Figura da questão' : `Figura da questão ${questao.id}`)} largura={imagem.largura} altura={imagem.altura} prioridade />
             ))}
           </div>
         )}
@@ -520,8 +538,8 @@ export function CartaoQuestao({
         ) : !revelarResposta ? (
           <div className="resultado resultado--neutro" role="status">
             {marcada
-              ? `Resposta marcada: ${marcada}. Pode trocar até o fim do simulado.`
-              : 'Marque uma alternativa. O gabarito aparece quando o simulado terminar.'}
+              ? `Resposta marcada: ${marcada}. Pode trocar até ${modoProva ? 'entregar a prova' : 'o fim do simulado'}.`
+              : modoProva ? 'Marque uma alternativa. O gabarito e o comentário aparecem depois de entregar.' : 'Marque uma alternativa. O gabarito aparece quando o simulado terminar.'}
           </div>
         ) : !respondida ? (
           <div className={'linha nao-imprime acao-responder' + (escolhida ? ' acao-responder--pronta' : '')}>
@@ -622,7 +640,7 @@ export function CartaoQuestao({
         )}
 
         {/* Uma faixa só: anotações, histórico e relatar erro lado a lado; o painel aberto desce para baixo dela. */}
-        <div className="qz-extras qz-faixa nao-imprime">
+        {!modoProva && <div className="qz-extras qz-faixa nao-imprime">
           <NotasQuestao key={`notas-${questao.id}`} id={questao.id} />
           {historicoDaQuestao.length > 0 && <details className="notas-questao qz-historico">
             <summary><Icone nome="relogio" tamanho={18} /> Histórico desta questão <span className="qz-contador">{historicoDaQuestao.length}</span></summary>
@@ -637,7 +655,7 @@ export function CartaoQuestao({
             </ol>
           </details>}
           <RelatarErro key={`relato-${questao.id}`} idQuestao={questao.id} />
-        </div>
+        </div>}
 
         {aoProxima && (respondida || !revelarResposta) && (
           <div className="qz-proxima nao-imprime">
@@ -660,7 +678,7 @@ export function CartaoQuestao({
         <div className="qz-rodape nao-imprime">
           <EditarQuestaoAdmin idQuestao={questao.id} />
           {ultimaAcao && <button type="button" className="qz-rodape__link" onClick={desfazerUltimaAcao}><Icone nome="reiniciar" tamanho={16} /> Desfazer</button>}
-          <span className="qz-rodape__id numerico">{questao.id}</span>
+          {!modoProva && <span className="qz-rodape__id numerico">{questao.id}</span>}
         </div>
       </div>
       {menuGrifo && (

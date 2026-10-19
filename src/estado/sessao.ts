@@ -81,11 +81,14 @@ export function usarSessao() {
       const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
       // O modo simulado também registra cada resposta imediatamente. A prova
       // pode esconder o gabarito, mas nunca deve esconder o salvamento.
-      if (salvo && !salvo.respostas[id]) registrarRespondida(id, correta, confianca, escolhida)
+      // Simulado Nacional: nada vai para o histórico local antes da entrega (o caderno de erros e a
+      // revisão mostrariam o que está certo no meio da prova); a resposta sobe para o servidor.
+      if (salvo && !salvo.nacional && !salvo.respostas[id]) registrarRespondida(id, correta, confianca, escolhida)
       definirSessao((atual) => {
         if (!atual) return atual
-        const resposta: Resposta = { escolhida, correta, segundos, confianca }
-        return { ...atual, respostas: { ...atual.respostas, [id]: resposta } }
+        const resposta: Resposta = { escolhida, correta: atual.nacional ? null : correta, segundos, confianca }
+        const pendentes = atual.nacional ? { pendentesNacional: [...new Set([...(atual.pendentesNacional ?? []), id])] } : {}
+        return { ...atual, respostas: { ...atual.respostas, [id]: resposta }, ...pendentes }
       })
     },
     [definirSessao],
@@ -109,7 +112,7 @@ export function usarSessao() {
         const revisar = atual.revisar.includes(id)
           ? atual.revisar.filter((x) => x !== id)
           : [...atual.revisar, id]
-        return { ...atual, revisar }
+        return { ...atual, revisar, ...(atual.nacional ? { revisarPendente: true } : {}) }
       })
     },
     [definirSessao],
@@ -287,6 +290,8 @@ export function descreverFiltros(filtros: Filtros): string {
 }
 
 function registrarHistorico(sessao: EstadoSessao) {
+  // O Simulado Nacional entra no histórico depois da entrega, com a nota do servidor (registrarEntregaNacional).
+  if (sessao.nacional) return
   // As que vieram de outro aparelho já entraram no histórico de lá.
   const respostas = Object.values(sessao.respostas).filter((r) => !r.outroAparelho)
   if (!respostas.length && Object.keys(sessao.respostas).length) return
@@ -310,6 +315,36 @@ function registrarHistorico(sessao: EstadoSessao) {
   // (outra tentativa ou o "Concluir" dela). Fica o registro mais recente.
   const historico = ler<ResumoHistorico[]>(CHAVE_HISTORICO, [])
     .filter((h) => !(h.id === resumo.id && h.criadaEm === resumo.criadaEm))
+  gravar(CHAVE_HISTORICO, [resumo, ...historico].slice(0, 50))
+}
+
+/**
+ * Depois da entrega do Simulado Nacional: as respostas entram no histórico local
+ * (com a letra do acervo e a correção do servidor, para a revisão e o caderno de
+ * erros) e a prova entra no histórico de sessões. Uma vez por edição neste aparelho.
+ */
+export function registrarEntregaNacional(
+  sessao: EstadoSessao | null,
+  edicao: string,
+  entrega: { acertos: number; total: number; segundos: number },
+  gabarito: Array<{ id_questao: string; permutacao: string; gabarito: string; marcada: string | null }>,
+) {
+  const chave = `nacional:registrado:${edicao}`
+  if (ler<boolean>(chave, false)) return
+  gravar(chave, true)
+  const local = sessao?.nacional === edicao ? sessao : null
+  for (const item of gabarito) {
+    if (!item.marcada) continue
+    const original = item.permutacao ? item.permutacao['ABCDE'.indexOf(item.marcada)] : item.marcada
+    registrarRespondida(item.id_questao, item.marcada === item.gabarito, local?.respostas[item.id_questao]?.confianca ?? 'seguro', (original ?? item.marcada) as Letra)
+  }
+  const criadaEm = local?.criadaEm ?? Date.now() - entrega.segundos * 1000
+  const resumo: ResumoHistorico = {
+    id: `nacional-${edicao}`, criadaEm, concluidaEm: local?.concluidaEm ?? Date.now(), total: entrega.total,
+    respondidas: gabarito.filter((g) => g.marcada).length, acertos: entrega.acertos, segundos: entrega.segundos,
+    descricao: `Simulado Nacional · ${nomeEdicao(edicao)}`, ...(local?.limiteSegundos ? { limite: local.limiteSegundos } : {}),
+  }
+  const historico = ler<ResumoHistorico[]>(CHAVE_HISTORICO, []).filter((h) => h.id !== resumo.id)
   gravar(CHAVE_HISTORICO, [resumo, ...historico].slice(0, 50))
 }
 

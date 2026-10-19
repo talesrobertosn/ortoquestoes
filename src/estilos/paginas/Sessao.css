@@ -487,8 +487,7 @@ html.oq-sessao .sx-barra { top: var(--oq-cabecalho, 56px); }
 .sx-lado__atalhos .atalhos__linha { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr); gap: 0.5rem; align-items: baseline; }
 .sx-lado__atalhos .atalhos__linha kbd { justify-self: start; font-size: 0.7rem; color: var(--texto); }
 
-/* =====================================================================
-   Acabamento suave da sessão (19/10/2026, pedido do Tales: "tá tudo muito
+/* ==============================================================   Acabamento suave da sessão (19/10/2026, pedido do Tales: "tá tudo muito
    quadrado, deixar a tela mais limpa, mais parecido com antes").
    Cantos arredondados, borda fina, sombra macia e números na fonte do texto,
    como antes da temporada pixel. Fica: a trilha colorida, o ouro do Próxima
@@ -680,3 +679,13 @@ html.oq-sessao .sx-barra { top: var(--oq-cabecalho, 56px); }
 .fim-sessao__placa dd.fim-sessao__valor--palavra { font-size: 1.3rem; }
 .pomo__relogio, .pomo-pilula .numerico { font-family: var(--fonte-texto); font-variant-numeric: tabular-nums; }
 .sx-lado__subtitulo kbd { font-family: var(--fonte-texto); font-weight: 650; border-radius: 6px; }
+/* Prova do Simulado Nacional (19/10/2026): aviso calmo de tempo e o salvamento no servidor. */
+.sx-aviso--tempo { background: var(--px-tinta); color: #ffe3a3; box-shadow: 0 0 0 2px var(--px-ouro), 3px 3px 0 2px rgba(0, 0, 0, 0.22); white-space: normal; }
+.sx-vivo__salvo { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; font-weight: 650; color: var(--texto-2); }
+.sx-vivo__salvo svg { flex: none; color: var(--acerto); }
+.sx-vivo__salvo--alerta svg { color: var(--ouro-texto, var(--texto-2)); }
+.sx-lado__salvo { display: flex; align-items: flex-start; gap: 0.35rem; margin: 0.6rem 0 0; font-size: var(--meta); color: var(--texto-2); line-height: 1.35; }
+.sx-lado__salvo svg { flex: none; margin-top: 0.1rem; color: var(--acerto); }
+.sx-lado__salvo--alerta svg { color: var(--ouro-texto, var(--texto-2)); }
+.sx-lado__nota { margin: 0.4rem 0 0; font-size: var(--meta); color: var(--texto-2); line-height: 1.4; }
+.sx-aviso--tempo { border-radius: 999px; box-shadow: none; }

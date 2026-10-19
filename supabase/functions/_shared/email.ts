@@ -18,9 +18,10 @@ export const emailConfigurado = () => !!Deno.env.get('RESEND_API_KEY') && !!Deno
  * protege a reputação do domínio) e fica de fora da carta enviada a uma pessoa
  * só pela ficha, que é correspondência pessoal. Ver docs/emails/ENTREGABILIDADE.md.
  */
-export async function enviarEmail(para: string | string[], assunto: string, html: string, texto: string, descadastro?: string) {
+export async function enviarEmail(para: string | string[], assunto: string, html: string, texto: string, descadastro?: string, responderPara?: string) {
   const chave = Deno.env.get('RESEND_API_KEY'), remetente = Deno.env.get('EMAIL_REMETENTE')
-  const responder = Deno.env.get('EMAIL_RESPONDER_PARA')?.trim()
+  // responderPara (suporte, 19/10/2026): a resposta vai para quem escreveu, não para o endereço padrão.
+  const responder = responderPara?.trim() || Deno.env.get('EMAIL_RESPONDER_PARA')?.trim()
   if (!chave || !remetente) throw new Error('email_nao_configurado')
   const resposta = await fetch('https://api.resend.com/emails', {
     method: 'POST',

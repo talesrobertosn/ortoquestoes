@@ -56,6 +56,8 @@ export type TipoCarta =
   // Parte 31 (18/10/2026): as campanhas diárias, escolhidas pelo banco (candidatos_<tipo>) e mandadas pelo agendador.
   | 'assinou_sem_cronograma' | 'assinante_parado_7' | 'simulado_resultado' | 'vespera_prova' | 'depois_prova'
   | 'aniversario' | 'um_ano' | 'indicacao_deu_certo' | 'resumo_do_tema'
+  // Parte 32 (19/10/2026): o lembrete de quem se inscreveu no Simulado Nacional (candidatos_simulado_lembrete).
+  | 'simulado_lembrete'
 
 export interface InfoTipo { rotulo: string; descricao: string; grupo: 'situacao' | 'convite' | 'pessoal' | 'automatico' }
 export const TIPOS: Record<TipoCarta, InfoTipo> = {
@@ -92,17 +94,19 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   um_ano: { grupo: 'automatico', rotulo: 'Um ano de Orto Questões', descricao: 'No dia em que a conta faz um ano (ou mais): o caminho até aqui, sem convite.' },
   indicacao_deu_certo: { grupo: 'automatico', rotulo: 'Sua indicação deu certo', descricao: 'Quem a pessoa indicou chegou a 20 questões: obrigado pela confiança.' },
   resumo_do_tema: { grupo: 'automatico', rotulo: 'Saiu um resumo do seu tema', descricao: 'Semanal, só para quem aceitou novidades: um resumo novo na área que a pessoa mais estuda.' },
+  simulado_lembrete: { grupo: 'automatico', rotulo: 'Lembrete do Simulado Nacional', descricao: 'Para quem se inscreveu: a edição abre amanhã (ou abriu hoje), quantas questões, quanto tempo e até quando dá para fazer.' },
 }
 /** Tipos que o administrador pode escolher na ficha (os automáticos ficam de fora). */
 export const TIPOS_MANUAIS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'sumiu', 'ativo', 'obrigado_assinatura', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma']
 /** Os seis automáticos novos (17/10/2026), disparados por acontecimento, sem SQL novo. */
 export const TIPOS_AUTOMATICOS_NOVOS: readonly TipoCarta[] = ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo']
 /**
- * As nove campanhas diárias (parte 31, 18/10/2026): o banco escolhe quem recebe
+ * As dez campanhas diárias (nove da parte 31, 18/10/2026, e o lembrete do Simulado Nacional da
+ * parte 32, 19/10/2026): o banco escolhe quem recebe
  * (`candidatos_<tipo>`) e o agendador manda pela ação `campanhas_diarias` de enviar-email,
  * pelo mesmo caminho dos automáticos (idempotência por referência, cadência, preferência).
  */
-export const TIPOS_CAMPANHAS_DIARIAS: readonly TipoCarta[] = ['assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema']
+export const TIPOS_CAMPANHAS_DIARIAS: readonly TipoCarta[] = ['assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
 /** Transacionais: resposta a algo que a pessoa fez ou pagou. Não entram no teto de cadência. */
 export const TIPOS_TRANSACIONAIS: readonly string[] = ['pix_hoje', 'pagamento_aprovado', 'obrigado_tempo', 'relato_resolvido', 'alerta_admin']
 
@@ -187,6 +191,13 @@ export interface DadosCampanha {
   resumo?: { id?: string | null; titulo?: string | null; especialidade?: string | null } | null
   /** Indicação: os dias de cortesia de quem indicou ainda contam (até 12 amigos). */
   cortesia?: boolean | null
+  /** Lembrete do Simulado Nacional (parte 32): a edição em que a pessoa se inscreveu. */
+  lembrete?: {
+    edicao?: string | null; titulo?: string | null; tipo_lembrete?: 'abre_amanha' | 'abriu_hoje' | null
+    abre_em?: string | null; fecha_em?: string | null; total?: number | null; duracao_min?: number | null
+    /** A edição pede o plano e a pessoa não assina (a carta avisa, sem preço). */
+    precisa_plano?: boolean | null
+  } | null
 }
 
 export interface DadosRelatorioCarta {
@@ -625,8 +636,8 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
     }
     case 'horario':
       return {
-        noite: ['Vi que você estuda quase sempre à noite. Conheço bem essa rotina: o dia inteiro no hospital e o estudo esperando no fim dele.', 'Reparei que quase tudo seu sai à noite, quando o dia já acabou. Eu também estudava assim, e sei o que custa.', 'Vi que a noite é o seu horário de estudo. Respeito demais quem encontra esse tempo depois de um dia inteiro.'],
-        madrugada: ['Vi que muita questão sua sai de madrugada, provavelmente no plantão. Admiro a dedicação, e peço com carinho que cuide do sono também.', 'Reparei que você estuda até de madrugada. Já estive aí, e lembro com carinho que o sono também é estudo.'],
+        noite: ['Vi que você estuda quase sempre à noite. É uma rotina pesada: o dia inteiro no hospital e o estudo esperando no fim dele.', 'Reparei que quase tudo seu sai à noite, quando o dia já acabou. Sei o que isso custa, e admiro.', 'Vi que a noite é o seu horário de estudo. Respeito demais quem encontra esse tempo depois de um dia inteiro.'],
+        madrugada: ['Vi que muita questão sua sai de madrugada, provavelmente no plantão. Admiro a dedicação, e peço com carinho que cuide do sono também.', 'Reparei que você estuda até de madrugada. Peço com carinho: lembre que o sono também é estudo.'],
         manha: ['Reparei que você gosta de estudar cedo, antes de o dia começar. É um jeito bonito de proteger o estudo da rotina.', 'Vi que você estuda bastante de manhã cedo, antes de o hospital te engolir. Admiro essa disciplina.'],
         almoco: ['Vi que muita questão sua sai na hora do almoço. Que jeito esperto de encaixar o estudo no único intervalo do dia.', 'Reparei que você aproveita o horário do almoço para estudar. Isso é usar bem o pouco tempo que a residência deixa.'],
         tarde: ['Vi que você costuma estudar à tarde, num ritmo bem constante.', 'Reparei que a tarde é o seu horário de questões. Gosto de ver essa rotina.'],
@@ -641,8 +652,8 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
       }[f.prova!]
     case 'etapa':
       return {
-        r1: ['Sei que o R1 é um ano de muita novidade e pouco tempo, e mesmo assim você está aqui.', 'O R1 é o ano em que a gente aprende a sobreviver ao hospital. Estudar no meio disso tem muito valor.'],
-        r2: ['Sei que o R2 costuma ser o ano mais puxado de plantão, e mesmo assim você encontra tempo.', 'Estudar no meio do R2 não é pouca coisa. Eu lembro bem desse ano.'],
+        r1: ['Sei que o R1 é um ano de muita novidade e pouco tempo, e mesmo assim você está aqui.', 'O R1 é o ano de aprender a sobreviver ao hospital. Estudar no meio disso tem muito valor.'],
+        r2: ['Sei que o R2 costuma ser o ano mais puxado de plantão, e mesmo assim você encontra tempo.', 'Estudar no meio do R2 não é pouca coisa, e você está fazendo.'],
         r3: ['O R3 é o ano do TEOT, e sei como ele pesa. Cada questão agora conta muito.', 'Sei que o R3 é um ano intenso, com a prova no fim dele.'],
         r4: ['Na subespecialidade, o detalhe faz toda a diferença.', 'Estudar no R4 é escolher ir além, e eu admiro isso.'],
         mao: ['Residência de mão pede muito detalhe, e você está encarando com vontade.', 'Na mão, o detalhe é tudo, e dá para ver que você sabe disso.'],

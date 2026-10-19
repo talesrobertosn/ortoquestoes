@@ -136,3 +136,6 @@ Tales pediu para salvar como modelos o post de 19/10: **Caderneta de topografia*
 
 ## Ordem de rodízio dos estilos (orientação de 19/10/2026)
 Os estilos aprovados seguem uma **ordem fixa**, sem sorteio e sem repetir: antes de cada post, rode `node marketing/instagram/estilos/ordem.mjs` e use o estilo indicado para o feed e para os stories (o que foi combinado com o Tales para o dia passa na frente). [Regras e ordem atual](../../marketing/instagram/estilos/ORDEM.md).
+
+## Sobre o Tales (orientação de 19/10/2026)
+O site, os posts e os e-mails não dizem a profissão nem a etapa do Tales: nem "ortopedista", nem "residente", nem "feito por quem vive a especialidade". Quando for preciso falar do autor, basta o nome ("Tales, do Orto Questões"). Falar do público (residentes, ortopedistas que estudam) continua normal.

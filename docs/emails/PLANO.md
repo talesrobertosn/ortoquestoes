@@ -11,8 +11,8 @@ presumido, "vou ser sincero"). As de baixo entram por cima delas.
 
 ## 1. As nove decisões
 
-1. **A voz é a de um amigo que já passou pela residência.** Lembra do plantão, do cansaço e da falta de
-   tempo, e escreve a partir disso. Toda carta abre com uma frase sobre o momento da pessoa antes de
+1. **A voz é a de um amigo que entende a rotina de quem estuda.** Fala do plantão, do cansaço e da falta de
+   tempo, e escreve a partir disso. Desde 19/10/2026, nunca diz a profissão ou a etapa do Tales. Toda carta abre com uma frase sobre o momento da pessoa antes de
    qualquer número.
 2. **Cartas maiores, com uma espinha fixa.** De 3–5 linhas para 6–9 (nunca mais de 12): abertura pessoal;
    o que eu vi no estudo dela; uma ideia prática sobre tempo ou facilidade; um convite leve (quando
@@ -162,7 +162,9 @@ anon e do segredo EMAIL_SEGREDO; não vai para migrations).
   | `um_ano` | a conta faz 1, 2, 3... anos hoje e já respondeu alguma questão | os anos |
   | `indicacao_deu_certo` | quem indicou, quando o amigo chega a 20 questões (confirmada nos últimos 14 dias, ou ainda não confirmada e de até 90 dias) | o amigo |
   | `resumo_do_tema` | aceitou novidades, tem 10 questões ou mais na área do resumo publicado nos últimos 7 dias, que é a área que mais estuda, e ainda não abriu o resumo | a semana |
+  | `simulado_lembrete` (parte 32, 19/10/2026) | inscrito numa edição do Simulado Nacional que abre nas próximas 24 h ("abre amanhã") ou abriu nas últimas 24 h ("abriu hoje"), sem ter começado; a função marca a inscrição depois do envio (`sn_marcar_lembrete`) | a edição |
 
+  Desde a parte 32, o resultado do simulado vem de `sn_participacoes` e o lembrete de `sn_inscricoes`.
   Nenhuma ficou de fora: o resultado do simulado está em `simulado_participacoes`, a indicação em
   `indicacoes`. O único dado que não existia no banco era a data de publicação dos resumos (eles moram em
   `conteudo/biblioteca/` e saem em `public/biblioteca/indice.json`, sem data): a tabela nova
