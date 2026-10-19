@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 10 | 1 | mao-1932 a mao-1941 | A 2, B 3, C 3, D 2 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 14 | 1 | mao-1932 a mao-1945 | A 3, B 4, C 4, D 3 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -90,15 +90,15 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 14 | MACS na paralisia cerebral: nível pela descrição | classificação | cap. 32 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
 | 15 | Cisto sinovial: componente predominante do conteúdo | fato | cap. 59 | mao / Cistos sinoviais e gangliões | 18 | | a fazer |
 | 16 | Cabeça do rádio, HOTCHKISS tipo II (a correção ressalva) | classificação | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
-| 17 | Flexor na zona 1: quando cabe a reinserção ou sutura primária (coto distal) | número | cap. 6 | mao / Lesões dos tendões flexores | 03 | | a fazer |
+| 17 | Flexor na zona 1: quando cabe a reinserção ou sutura primária (coto distal) | número | cap. 6, p. 216, 219 | mao / Lesões dos tendões flexores | 03 | mao-1942 | publicada |
 | 18 | Escafoide: ordem de frequência por região | fato | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
 | 19 | Pseudobotoeira: estruturas contraídas na flexão da IFP | mecanismo | cap. 5, p. 198 a 201; cap. 10, p. 388, 389 | mao / Lesões ligamentares dos dedos | 02 | mao-1937 | publicada |
 | 20 | Rádio distal consolidado: de onde vêm as queixas residuais | fato | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
 | 21 | Botoeira crônica: estágio com contratura fixa e da banda lateral | classificação | cap. 5 (arquivo "4- T. extensor"), p. 199 a 202 | mao / Lesões dos tendões extensores | 02 | mao-1938 | publicada |
 | 22 | Escafoide: fator que aumenta a pseudoartrose | fato | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
 | 23 | Polidactilia central: dedo mais acometido | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
-| 24 | Ponta do dedo, ALLEN: zona proximal à lúnula | classificação | cap. 49 | mao / Amputações e reimplantes | 03 | | a fazer |
-| 25 | Hematoma subungueal com retirada da unha: o que fazer com a lâmina | conduta | cap. 9 | mao / Lesões ligamentares dos dedos | 03 | | a fazer |
+| 24 | Ponta do dedo, ALLEN: zona proximal à lúnula | classificação | cap. 49, p. 1907 a 1911; cap. 9, p. 365 | mao / Amputações e reimplantes | 03 | mao-1945 | publicada |
+| 25 | Hematoma subungueal com retirada da unha: o que fazer com a lâmina | conduta | cap. 9, p. 365 a 367 | mao / Lesões ligamentares dos dedos | 03 | mao-1944 | publicada |
 | 26 | Túnel do carpo: fibras que o eletrodiagnóstico avalia | fato | cap. 26 | mao / Síndrome do túnel do carpo | 09 | | a fazer |
 | 27 | Mão torta ulnar: associação mais comum | fato | cap. 38 | mao / Deficiências longitudinais e mão torta | 16 | | a fazer |
 | 28 | Carcinoma espinocelular: lesão precursora | fato | cap. 58 | mao / Tumores da mão | 17 | | a fazer |
@@ -160,7 +160,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 84 | ARUD crônica após consolidação viciosa | afirmativas | cap. 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 | | a fazer |
 | 85 | DCSS: de qual ligamento se origina | anatomia | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
 | 86 | Ângulo da gota de lágrima: o que representa e o ligamento inserido | par | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
-| 87 | Reabilitação do flexor: início do fortalecimento isolado | número | cap. 6 | mao / Lesões dos tendões flexores | 03 | | a fazer |
+| 87 | Reabilitação do flexor: início do fortalecimento isolado | número | cap. 6, p. 225 a 227 | mao / Lesões dos tendões flexores | 03 | mao-1943 | publicada |
 | 88 | Biomecânica da fratura do escafoide e do perilunar | afirmativas | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
 | 89 | Falange proximal: desvios aceitáveis no tratamento conservador | número | cap. 7 (p. 299 e 304 não trazem os graus) | mao / Fraturas dos metacarpos e falanges | 01 | | pendente: sem fonte (11 e 21 graus não estão no Green nem nos outros livros locais; o original troca coronal por perfil) |
 | 90 | LICHTMAN atualizada: em que se baseia | classificação | cap. 16 | mao / Doença de Kienböck | 04 | | a fazer |
