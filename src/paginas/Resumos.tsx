@@ -12,6 +12,9 @@ import { LeitorResumo } from './LeitorResumo'
 import { gravar } from '../estado/armazenamento'
 import { usarPremium } from '../conta/premium'
 import { corDaArea } from '../dados/coresAreas'
+import { usarConta } from '../conta/ContextoConta'
+import { contasDisponiveis } from '../conta/supabase'
+import { SECOES_ABERTAS } from '../biblioteca/porta'
 import '../estilos/paginas/Resumos.css'
 
 /** Adendo da Biblioteca: as frases "Na prova" (o antigo Resumão), em #/resumos/frases. */
@@ -68,6 +71,8 @@ function Estante() {
   const { indice } = usarIndice()
   const { leituras, marcas } = usarBiblioteca()
   const { premium } = usarPremium()
+  const { sessao } = usarConta()
+  const visitante = contasDisponiveis && !sessao
   const [busca, definirBusca] = useState('')
   const [area, definirArea] = useState<string | null>(null)
   if (dados === undefined) return <Carregando linhas={6} rotulo="Abrindo a biblioteca" />
@@ -81,7 +86,8 @@ function Estante() {
       <header className="rs-topo">
         <p className="rs-topo__selo"><Icone nome="livro" tamanho={15} /> Biblioteca OrtoQuestões · Beta</p>
         <h1>Resumos que ensinam pelo que cai</h1>
-        <p>Capítulos dos livros de referência reescritos em português, na ordem em que as provas cobram, com as questões reais no meio do texto. <b>Abertos para todos.</b> Marque, anote e continue em qualquer aparelho; resolver as questões citadas é do assinante.</p>
+        <p>Capítulos dos livros de referência reescritos em português, na ordem em que as provas cobram, com as questões reais no meio do texto. <b>Leitura grátis.</b> Marque, anote e continue em qualquer aparelho; resolver as questões citadas é do assinante.</p>
+        {visitante && <p className="rs-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Leitura completa grátis com conta.</b> Sem conta, cada resumo abre as {SECOES_ABERTAS} primeiras partes. <a href={href('/conta?modo=criar&voltar=%2Fresumos')}>Criar conta grátis</a></span></p>}
         <p className="rs-novidade"><i aria-hidden="true" /> Resumos novos estão sendo criados todas as semanas</p>
         <div className="rs-topo__acoes"><a className="botao" href={href('/resumos/caderno')}><Icone nome="lapis" tamanho={16} /> Meu caderno de estudo{marcas.length ? ` (${marcas.filter((m) => !m.marcador).length})` : ''}</a></div>
       </header>
