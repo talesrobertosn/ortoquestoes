@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 5 | 1 | mao-1932 a mao-1936 | A 1, B 2, C 1, D 1 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 10 | 1 | mao-1932 a mao-1941 | A 2, B 3, C 3, D 2 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -92,9 +92,9 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 16 | Cabeça do rádio, HOTCHKISS tipo II (a correção ressalva) | classificação | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
 | 17 | Flexor na zona 1: quando cabe a reinserção ou sutura primária (coto distal) | número | cap. 6 | mao / Lesões dos tendões flexores | 03 | | a fazer |
 | 18 | Escafoide: ordem de frequência por região | fato | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
-| 19 | Pseudobotoeira: estruturas contraídas na flexão da IFP | mecanismo | cap. 8 | mao / Lesões ligamentares dos dedos | 02 | | a fazer |
+| 19 | Pseudobotoeira: estruturas contraídas na flexão da IFP | mecanismo | cap. 5, p. 198 a 201; cap. 10, p. 388, 389 | mao / Lesões ligamentares dos dedos | 02 | mao-1937 | publicada |
 | 20 | Rádio distal consolidado: de onde vêm as queixas residuais | fato | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
-| 21 | Botoeira crônica: estágio com contratura fixa e da banda lateral | classificação | cap. 5 (arquivo "4- T. extensor") | mao / Lesões dos tendões extensores | 02 | | a fazer |
+| 21 | Botoeira crônica: estágio com contratura fixa e da banda lateral | classificação | cap. 5 (arquivo "4- T. extensor"), p. 199 a 202 | mao / Lesões dos tendões extensores | 02 | mao-1938 | publicada |
 | 22 | Escafoide: fator que aumenta a pseudoartrose | fato | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
 | 23 | Polidactilia central: dedo mais acometido | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
 | 24 | Ponta do dedo, ALLEN: zona proximal à lúnula | classificação | cap. 49 | mao / Amputações e reimplantes | 03 | | a fazer |
@@ -114,7 +114,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 38 | Túnel cubital: sinal da excursão lateral do dedo médio | epônimo | cap. 26 | mao / Neuropatia ulnar e outras compressões | 09 | | a fazer |
 | 39 | Ramo profundo do ulnar no Guyon: músculos acometidos | anatomia | cap. 26 | mao / Neuropatia ulnar e outras compressões | 09 | | a fazer |
 | 40 | Luxação congênita da cabeça do rádio: lado e direção mais comuns | fato | cap. 38 | mao / Outras malformações congênitas | 16 | | a fazer |
-| 41 | IFP: causa mais comum da contratura em extensão | fato | cap. 10 | mao / Deformidades dos dedos | 02 | | a fazer |
+| 41 | IFP: causa mais comum da contratura em extensão | fato | cap. 10, p. 388, 389, 395, 403, 404 (a "causa mais comum" está no resumo do cap. 10) | mao / Deformidades dos dedos | 02 | mao-1939 | publicada |
 | 42 | Nervo cutâneo lateral do antebraço: origem e onde emerge | anatomia | cap. 26 | mao / Anatomia da mão e punho | 09 | | a fazer |
 | 43 | Paralisia obstétrica: achado e o que ele significa | par | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 10 | | a fazer |
 | 44 | GARCIA-ELIAS: estágio da lesão parcial reparável com ângulo normal | classificação | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
@@ -151,7 +151,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 75 | Mão de APERT: quais dedos se fundem | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
 | 76 | Sindactilia: complicações pós-operatórias mais raras | fato | cap. 36 | mao / Sindactilia e polidactilia | 15 | | a fazer |
 | 77 | Risco de KIENBÖCK (VIEGAS, ZAPICO, variância, vascularização) | afirmativas | cap. 16 | mao / Doença de Kienböck | 04 | | a fazer |
-| 78 | Tenotomia de FOWLER: estrutura que precisa estar íntegra | epônimo | cap. 5 (arquivo "4- T. extensor") | mao / Lesões dos tendões extensores | 02 | | a fazer |
+| 78 | Tenotomia de FOWLER: estrutura que precisa estar íntegra | epônimo | cap. 5, p. 195 a 198 | mao / Lesões dos tendões extensores | 02 | mao-1940 | publicada (o original tinha duas respostas: o tendão terminal também precisa estar em continuidade; reescrita pergunta o que evita a botoeira) |
 | 79 | Adulto: fraturas mais associadas à síndrome compartimental do membro superior | fato | cap. 51 | mao / Outros temas da mão | 17 | | a fazer |
 | 80 | Plexo braquial: quando fazer o eletrodiagnóstico | número | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 12 | | a fazer |
 | 81 | Artroscopia: o que se vê pelo portal 3-4 | anatomia | cap. 17 | mao / Artrose do punho e artroscopia | 06 | | a fazer |
@@ -170,12 +170,12 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 94 | Banda de constrição | afirmativas | cap. 36 | mao / Outras malformações congênitas | 15 | | a fazer |
 | 95 | Paralisia radial: primeiro músculo do antebraço a voltar | fato | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
 | 96 | Tenossinovite do polegar comunicando com o mínimo: espaço | anatomia | cap. 2 | mao / Infecções da mão | 13 | | a fazer |
-| 97 | Martelo: deformidade secundária | fato | cap. 5 (arquivo "4- T. extensor") | mao / Lesões dos tendões extensores | 03 | | a fazer |
+| 97 | Martelo: deformidade secundária | fato | cap. 5, p. 190, 196, 198 | mao / Lesões dos tendões extensores | 02 | mao-1941 | publicada |
 | 98 | Nervo mediano: folheto embrionário de origem | embriologia | cap. 35 | mao / Outras malformações congênitas | 15 | | a fazer |
 | 99 | Classificação internacional da mão tetraplégica: grupo 4 | classificação | cap. 33 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
 | 100 | Mão reumatoide: VAUGHAN-JACKSON, MANNERFELT, IFD, capitato | afirmativas | cap. 55 | mao / Mão reumatoide | 08 | | a fazer |
 
-Lotes: 01 (1, 2, 7, 9, 74; a 89 ficou sem fonte) · 02 (19, 41, 21, 78) · 03 (97, 17, 87, 25, 24) · 04 (18, 22, 77, 88, 90) ·
+Lotes: 01 (1, 2, 7, 9, 74; a 89 ficou sem fonte) · 02 (19, 21, 41, 78, 97) · 03 (17, 87, 25, 24) · 04 (18, 22, 77, 88, 90) ·
 05 (44, 58, 71, 82, 85) · 06 (20, 30, 86, 84, 81) · 07 (5, 50, 6, 61, 66) · 08 (8, 12, 34, 100, 35) ·
 09 (4, 26, 38, 39, 42) · 10 (67, 60, 51, 93, 43) · 11 (53, 59, 72, 83, 95) · 12 (31, 80, 54, 99, 14) ·
 13 (45, 13, 36, 96, 70) · 14 (10, 23, 33, 62, 75) · 15 (76, 91, 94, 47, 98) · 16 (3, 27, 32, 40, 63) ·
