@@ -76,7 +76,8 @@ def pasta_segura(p):
 # ---------- extração ----------
 
 def paginas_pdf(arq):
-    r = subprocess.run(["pdftotext", "-layout", "-enc", "UTF-8", str(arq), "-"], capture_output=True, text=True)
+    r = subprocess.run(["pdftotext", "-layout", "-enc", "UTF-8", str(arq), "-"], capture_output=True, text=True,
+                       encoding="utf8", errors="replace")
     if r.returncode != 0:
         print(f"  aviso: pdftotext falhou em {arq.name}: {r.stderr.strip()[:120]}", file=sys.stderr)
         return []
@@ -239,7 +240,7 @@ def cmd_inventario(a):
 
 def cmd_indexar(a):
     p = pasta_segura(a.pasta)
-    inv = {i["arquivo"]: i["tipo"] for i in json.load(open(p / ".oq/inventario.json"))} if (p / ".oq/inventario.json").exists() else {}
+    inv = {i["arquivo"]: i["tipo"] for i in json.load(open(p / ".oq/inventario.json", encoding="utf8"))} if (p / ".oq/inventario.json").exists() else {}
     if not inv:
         print("aviso: sem inventário; rode 'inventario' antes para conferir os tipos.", file=sys.stderr)
     n = 0
