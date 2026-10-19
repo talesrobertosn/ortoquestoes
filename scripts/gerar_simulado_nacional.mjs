@@ -1,46 +1,109 @@
-// Sorteia as questões de uma edição do Simulado Nacional a partir do acervo em
-// public/acervo e imprime o SQL que a publica (o mesmo sorteio do painel).
-// Uso: node scripts/gerar_simulado_nacional.mjs 2026-10 [--abre-agora]
+// Sorteia uma edição mensal do Simulado Nacional 2.0 a partir do acervo em
+// public/acervo, com o mesmo sorteio e os mesmos filtros do painel
+// (src/dados/simuladoNacional.ts), e imprime os itens em JSON e a chamada SQL
+// `select sn_admin_salvar(...)` que grava a edição (parte 32).
+//
+// Uso: node scripts/gerar_simulado_nacional.mjs 2026-10 [--abre-agora] [--usadas arquivo.json] [--rascunho] [--so-json]
+//        [--total 50] [--peso-recentes 2] [--nivel-alto 60]
+//   --abre-agora   abre em now() em vez do dia 1º às 00:00 de São Paulo
+//   --usadas       JSON com os ids já usados: ["mao-0001", ...] ou [{ "id_questao": "..." }, ...]
+//                  (ficam de fora e só entram se faltar questão)
+//   --rascunho     grava sem publicar (p_publicar = false)
+//   --so-json      imprime só o JSON dos itens
+//   --total        quantas questões (padrão 50, de 10 a 200)
+//   --peso-recentes peso das provas dos últimos 5 anos (padrão 2)
+//   --nivel-alto   % de cada área nos assuntos de nível 3–4 (padrão 60)
+// A distribuição por área vai para a saída de erro, para conferir sem sujar o SQL.
 import { build } from 'esbuild'
-import { readFileSync } from 'fs'
+import { readFileSync, rmSync } from 'fs'
 import { tmpdir } from 'os'
 import { join } from 'path'
 
-const edicao = process.argv[2]
-if (!/^\d{4}-\d{2}$/.test(edicao ?? '')) { console.error('Informe a edição, ex.: 2026-10'); process.exit(1) }
-const abreAgora = process.argv.includes('--abre-agora')
+const args = process.argv.slice(2)
+const edicao = args[0]
+if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(edicao ?? '')) {
+  console.error('Uso: node scripts/gerar_simulado_nacional.mjs AAAA-MM [--abre-agora] [--usadas arquivo.json] [--rascunho] [--so-json] [--total N] [--peso-recentes N] [--nivel-alto PCT]')
+  process.exit(1)
+}
+const abreAgora = args.includes('--abre-agora')
+const rascunho = args.includes('--rascunho')
+const soJson = args.includes('--so-json')
+/** Valor numérico de uma opção, conferido entre min e max. */
+function numero(nome, min, max) {
+  const i = args.indexOf(nome)
+  if (i < 0) return undefined
+  const n = Number(args[i + 1])
+  if (!Number.isFinite(n) || n < min || n > max) { console.error(`${nome} precisa de um número entre ${min} e ${max}`); process.exit(1) }
+  return n
+}
+const totalPedido = numero('--total', 10, 200)
+const pesoRecentes = numero('--peso-recentes', 1, 10)
+const nivelAltoPct = numero('--nivel-alto', 0, 100)
+const iUsadas = args.indexOf('--usadas')
+let usadas = new Set()
+if (iUsadas >= 0) {
+  const caminho = args[iUsadas + 1]
+  if (!caminho) { console.error('--usadas precisa do caminho de um arquivo JSON'); process.exit(1) }
+  const lista = JSON.parse(readFileSync(caminho, 'utf8'))
+  usadas = new Set((Array.isArray(lista) ? lista : []).map((x) => (typeof x === 'string' ? x : x.id_questao ?? x.id)).filter(Boolean))
+}
 
 const saida = join(tmpdir(), `simulado-nacional-${process.pid}.mjs`)
 await build({ entryPoints: ['src/dados/simuladoNacional.ts'], outfile: saida, bundle: true, format: 'esm', platform: 'node', logLevel: 'warning' })
-const { escolherEdicao, fimDaEdicao, QUESTOES_EDICAO, DURACAO_EDICAO_MIN } = await import(saida)
+const sn = await import(saida)
+rmSync(saida, { force: true })
 
-const PROVAS = new Set(['TEOT/TARO', 'TEOT', 'TARO'])
+// O índice não tem gabarito nem alternativas: vêm dos arquivos dos temas,
+// já sem as anuladas e as com figura pendente (o mesmo que o painel faz).
 const indice = JSON.parse(readFileSync('public/acervo/indice.json', 'utf8'))
-const elegiveis = new Map(indice.questoes
-  .filter((q) => !q.dup && q.an !== 1 && q.sim !== 1 && q.p !== null && PROVAS.has(indice.provas[q.p]))
-  .map((q) => [q.id, indice.temas[q.t]]))
-
-const candidatas = []
+const gabarito = new Map()
+const nAlt = new Map()
 for (const tema of indice.temas) {
   const { questoes } = JSON.parse(readFileSync(`public/acervo/${tema.arquivo}`, 'utf8'))
   for (const q of questoes) {
-    if (!elegiveis.has(q.id) || q.anulada || q.figuraPendente || !/^[A-E]$/.test(q.gabarito ?? '')) continue
-    candidatas.push({ id: q.id, tema: tema.nome, gabarito: q.gabarito })
+    if (q.anulada || q.figuraPendente) continue
+    gabarito.set(q.id, q.gabarito)
+    nAlt.set(q.id, Array.isArray(q.alternativas) ? q.alternativas.length : undefined)
   }
 }
-const itens = escolherEdicao(candidatas, edicao, QUESTOES_EDICAO)
+const candidatas = sn.candidatasDoIndice(indice, (id) => gabarito.get(id), (id) => nAlt.get(id))
+const total = totalPedido === undefined ? sn.QUESTOES_MENSAL : Math.round(totalPedido)
+const sorteados = sn.sortearEdicao(candidatas, edicao, { total, usadas, pesoRecentes, nivelAltoPct })
+const cotas = sn.cotasPorArea(candidatas, total, { pesoRecentes })
+
+const itens = sorteados.map((it) => ({
+  ordem: it.ordem, id_questao: it.id, area: it.area, foco: it.foco,
+  gabarito_original: it.gabarito, permutacao: it.permutacao,
+}))
+
 const [ano, mes] = edicao.split('-').map(Number)
 const nomeMes = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'][mes - 1]
 const titulo = `Simulado Nacional · ${nomeMes[0].toUpperCase() + nomeMes.slice(1)} de ${ano}`
-const abre = abreAgora ? 'now()' : `'${ano}-${String(mes).padStart(2, '0')}-01T03:00:00Z'`
-const q = (t) => `'${String(t).replace(/'/g, "''")}'`
 
-console.log(`-- ${titulo}: ${itens.length} questões de ${candidatas.length} elegíveis.`)
-console.log(`insert into public.simulado_edicoes (edicao, titulo, abre_em, fecha_em, duracao_min)`)
-console.log(`values (${q(edicao)}, ${q(titulo)}, ${abre}, ${q(fimDaEdicao(edicao))}, ${DURACAO_EDICAO_MIN})`)
-console.log(`on conflict (edicao) do nothing;`)
-console.log(`insert into public.simulado_itens (edicao, ordem, id_questao, gabarito, tema)`)
-console.log(`select ${q(edicao)}, x.ordem, x.id, x.gabarito, x.tema from (values`)
-console.log(itens.map((it, i) => `  (${i + 1}, ${q(it.id)}, ${q(it.gabarito)}, ${q(it.tema)})`).join(',\n'))
-console.log(`) as x(ordem, id, gabarito, tema)`)
-console.log(`where not exists (select 1 from public.simulado_itens i where i.edicao = ${q(edicao)});`)
+// Conferência na saída de erro.
+const repetidas = sorteados.filter((it) => usadas.has(it.id)).length
+const porAno = new Map()
+for (const it of sorteados) if (it.ano !== null) porAno.set(it.ano, (porAno.get(it.ano) ?? 0) + 1)
+const [anoMaisComum, nAno] = [...porAno].sort((a, b) => b[1] - a[1])[0] ?? [null, 0]
+console.error(`${titulo}: ${sorteados.length} questões de ${candidatas.length} candidatas${usadas.size ? `, ${repetidas} repetidas de ${usadas.size} usadas` : ''}.`)
+console.error('Área                              Parte  Alvo  Sorteadas  Níveis 3–4')
+for (const c of cotas) {
+  const da = sorteados.filter((it) => it.area === c.area)
+  console.error(`  ${c.area.padEnd(32)} ${c.pct.toFixed(1).padStart(5)}%  ${String(c.alvo).padStart(4)}  ${String(da.length).padStart(9)}  ${String(da.filter((it) => it.nivel >= 3).length).padStart(10)}`)
+}
+console.error(`Ano mais frequente: ${anoMaisComum} (${nAno} questões; teto ${Math.ceil(total / 3)}).`)
+
+if (soJson) {
+  console.log(JSON.stringify(itens, null, 2))
+} else {
+  const q = (t) => `'${String(t).replace(/'/g, "''")}'`
+  const abre = abreAgora ? 'now()' : `${q(sn.inicioDoMes(edicao))}::timestamptz`
+  console.log(`-- ${titulo}: ${itens.length} questões de ${candidatas.length} candidatas (parte 32).`)
+  console.log(`-- Distribuição: ${cotas.map((c) => `${c.area} ${c.alvo}`).join(' · ')}`)
+  console.log('select public.sn_admin_salvar(')
+  console.log(`  ${q(edicao)}, 'mensal', ${q(titulo)},`)
+  console.log(`  ${abre}, ${q(sn.fimDoMes(edicao))}::timestamptz, ${sn.DURACAO_MENSAL_MIN},`)
+  console.log(`  ${q(JSON.stringify(itens, null, 2))}::jsonb,`)
+  console.log(`  ${rascunho ? 'false' : 'true'}`)
+  console.log(');')
+}
