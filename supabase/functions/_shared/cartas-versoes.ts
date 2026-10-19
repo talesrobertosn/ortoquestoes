@@ -2378,6 +2378,103 @@ const resumo_do_tema: Versao[] = [
     ] },
 ]
 
+/** Lembrete do Simulado Nacional (parte 32): a edição em que a pessoa se inscreveu abre amanhã ou abriu hoje. */
+const lembrete = (c: Ctx) => c.campanha.lembrete ?? null
+const abreAmanha = (c: Ctx) => lembrete(c)?.tipo_lembrete === 'abre_amanha'
+const abriuHoje = (c: Ctx) => lembrete(c)?.tipo_lembrete === 'abriu_hoje'
+/** " (Simulado Nacional · Outubro de 2026)", para o meio da frase. */
+const qualEdicao = (c: Ctx) => (lembrete(c)?.titulo ? ` (${lembrete(c)?.titulo})` : '')
+/** Depois de "Simulado Nacional": " de outubro de 2026" (título padrão) ou " (Véspera do TEOT)". */
+const deQualEdicao = (c: Ctx) => {
+  const t = lembrete(c)?.titulo
+  const mes = t?.match(/^Simulado Nacional\s*[·:-]\s*(.+)$/)?.[1]
+  return mes ? ` de ${mes.charAt(0).toLowerCase()}${mes.slice(1)}` : qualEdicao(c)
+}
+const HORAS_EXTENSO = ['', 'uma hora', 'duas horas', 'três horas', 'quatro horas', 'cinco horas', 'seis horas']
+const duracaoSimulado = (c: Ctx) => {
+  const m = Math.round(Number(lembrete(c)?.duracao_min))
+  if (!Number.isFinite(m) || m < 10) return null
+  return m % 60 === 0 && m / 60 < HORAS_EXTENSO.length ? HORAS_EXTENSO[m / 60] : `${N(m)} minutos`
+}
+const questoesSimulado = (c: Ctx) => {
+  const t = Math.round(Number(lembrete(c)?.total))
+  return Number.isFinite(t) && t >= 10 ? `${N(t)} questões` : null
+}
+/** "31 de outubro", no horário de Brasília. */
+const fechaSimulado = (c: Ctx) => {
+  const f = lembrete(c)?.fecha_em
+  const d = f ? new Date(f) : null
+  return d && Number.isFinite(d.getTime()) ? d.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', timeZone: 'America/Sao_Paulo' }) : null
+}
+/** Quando: "abre amanhã" / "já está no ar" / sem dado, "está chegando". */
+const quandoSimulado = (c: Ctx) => (abreAmanha(c) ? 'abre amanhã' : abriuHoje(c) ? 'já está no ar' : 'está chegando')
+const formatoSimulado = (c: Ctx): string => {
+  const q = questoesSimulado(c), h = duracaoSimulado(c)
+  const base = q && h ? `São ${q} em ${h}` : q ? `São ${q}` : h ? `A prova tem ${h}` : 'É uma prova inteira'
+  return `${base}, com o relógio correndo desde o começo, como no dia da prova.`
+}
+const prazoSimulado = (c: Ctx) => (fechaSimulado(c) ? `Dá para fazer até ${fechaSimulado(c)}, no horário que for melhor para você.` : null)
+/** Só quando a edição pede o plano e a pessoa não assina; sem preço. */
+const planoSimulado = (c: Ctx) => (lembrete(c)?.precisa_plano === true ? 'Um detalhe: esta edição é para quem assina. A página do simulado mostra como funciona.' : null)
+
+const simulado_lembrete: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, `o Simulado Nacional ${quandoSimulado(c)}`, `O Simulado Nacional ${quandoSimulado(c)}`)],
+    corpo: (c) => [
+      momento(c),
+      `Passando para lembrar: o simulado em que você se inscreveu${qualEdicao(c)} ${quandoSimulado(c)}.`,
+      J(formatoSimulado(c), prazoSimulado(c)),
+      'Uma ideia de quem já fez muitos: escolha um horário em que ninguém vai te chamar, deixe água por perto e faça de uma vez. As respostas ficam salvas no servidor, então uma queda de internet não apaga nada.',
+      planoSimulado(c),
+      `Para entrar: ${c.link('simulado')}`,
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: o gabarito e os comentários aparecem logo depois que você entrega. Vale guardar um tempo para ler.' },
+  { id: 'v2', assuntos: (c) => [nm(c, 'um lembrete do simulado', 'Um lembrete do simulado'), nm(c, `o simulado ${quandoSimulado(c)}`, `O simulado ${quandoSimulado(c)}`)],
+    corpo: (c) => [
+      `Você se inscreveu no Simulado Nacional${deQualEdicao(c)}, e ele ${quandoSimulado(c)}. Quis te avisar com calma, antes da correria do dia.`,
+      formatoSimulado(c),
+      prazoSimulado(c),
+      'O que eu faria: olhar a escala da semana e marcar o simulado como se fosse plantão, com hora para começar. Prova feita no meio de outras coisas rende menos do que prova feita inteira.',
+      planoSimulado(c),
+      `O simulado fica aqui: ${c.link('simulado')}`,
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: se cair a internet ou a bateria, nada se perde. É só abrir de novo, até em outro aparelho.' },
+  { id: 'v3', assuntos: (c) => [nm(c, `seu simulado ${quandoSimulado(c)}`, `Seu simulado ${quandoSimulado(c)}`)],
+    corpo: (c) => [
+      momento(c),
+      J(`O Simulado Nacional${deQualEdicao(c)} ${quandoSimulado(c)}.`, 'É o treino que mais se parece com o dia da prova: o tempo apertado, o último bloco, a questão longa que aparece na hora errada.'),
+      formatoSimulado(c),
+      prazoSimulado(c),
+      planoSimulado(c),
+      `Quando quiser começar: ${c.link('simulado')}`,
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: depois de entregar, você vê na hora onde está pronto e onde rende revisar. Esse retrato vale mais do que a nota.' },
+  { id: 'v4', assuntos: (c) => [nm(c, 'separei um recado sobre o simulado', 'Um recado sobre o simulado')],
+    corpo: (c) => [
+      `Um recado curto: o Simulado Nacional${deQualEdicao(c)} ${quandoSimulado(c)}, e você está na lista.`,
+      formatoSimulado(c),
+      'Uma ideia prática: antes de começar, leia as regras com calma e já decida o que fazer com a questão que travar. Marcar para rever e seguir costuma salvar o fim da prova.',
+      prazoSimulado(c),
+      planoSimulado(c),
+      `Para fazer: ${c.link('simulado')}`,
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: o ranking leva em conta o tempo nos empates, mas o que mais importa é fazer inteiro, do jeito que vai ser na prova.' },
+  { id: 'v5', assuntos: (c) => [nm(c, `o simulado em que você se inscreveu ${quandoSimulado(c)}`, `O simulado ${quandoSimulado(c)}`)],
+    corpo: (c) => [
+      momento(c),
+      `Só para lembrar: o simulado em que você se inscreveu${qualEdicao(c)} ${quandoSimulado(c)}.`,
+      J(formatoSimulado(c), 'O gabarito só aparece depois da entrega, como numa prova de verdade.'),
+      prazoSimulado(c),
+      planoSimulado(c),
+      `O link: ${c.link('simulado')}`,
+      c.fecho(),
+    ],
+    ps: () => 'P.S.: se quiser me contar como foi, é só responder este e-mail. Cada resposta ajuda a próxima edição.' },
+]
+
 export const VERSOES: Record<string, Versao[]> = {
   'ativo:0-10': ativo_0_10, 'ativo:10-20': ativo_10_20, 'ativo:20-30': ativo_20_30, 'ativo:30-40': ativo_30_40, 'ativo:40-60': ativo_40_60,
   'ativo:60-70': ativo_60_70, 'ativo:70-80': ativo_70_80, 'ativo:80-90': ativo_80_90, 'ativo:90-100': ativo_90_100,
@@ -2385,4 +2482,5 @@ export const VERSOES: Record<string, Versao[]> = {
   reta_final, marco, opiniao, indicar, cronograma, pix_3_dias, pix_hoje, relatorio,
   boas_vindas_dia0, primeiras_10, voltou, cronograma_pronto, pagamento_aprovado, obrigado_tempo,
   assinou_sem_cronograma, assinante_parado_7, simulado_resultado, vespera_prova, depois_prova, aniversario, um_ano, indicacao_deu_certo, resumo_do_tema,
+  simulado_lembrete,
 }

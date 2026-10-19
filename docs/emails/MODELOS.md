@@ -50,6 +50,7 @@ Todas as cartas saem só em texto, na voz de um amigo que já passou pela resid�
 | Um ano de Orto Questões | 5 | 321 textos e 5 assuntos diferentes em 400 sorteios |
 | Sua indicação deu certo | 5 | 317 textos e 6 assuntos diferentes em 400 sorteios |
 | Saiu um resumo do seu tema | 5 | 365 textos e 5 assuntos diferentes em 400 sorteios |
+| Lembrete do Simulado Nacional | 5 | 200 textos e 5 assuntos diferentes em 400 sorteios |
 
 ## Uma carta para cada faixa de acerto
 
@@ -1132,9 +1133,69 @@ P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo 
 Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
 ```
 
+### Lembrete do Simulado Nacional
+
+Pedro se inscreveu no simulado de outubro, que abre amanhã (50 questões, duas horas).
+
+**Assunto:** Pedro, separei um recado sobre o simulado
+
+```text
+Olá, Pedro, tudo bem?
+
+Um recado curto: o Simulado Nacional de outubro de 2026 abre amanhã, e você está na lista.
+
+São 50 questões em duas horas, com o relógio correndo desde o começo, como no dia da prova.
+
+Uma ideia prática: antes de começar, leia as regras com calma e já decida o que fazer com a questão que travar. Marcar para rever e seguir costuma salvar o fim da prova.
+
+Dá para fazer até 31 de outubro, no horário que for melhor para você.
+
+Para fazer: ortoquestoes.com.br/#/simulado-nacional
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: o ranking leva em conta o tempo nos empates, mas o que mais importa é fazer inteiro, do jeito que vai ser na prova.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
+### Lembrete do Simulado Nacional, abriu hoje
+
+Caio se inscreveu, a edição abriu hoje e pede o plano (a carta avisa, sem preço).
+
+**Assunto:** Caio, separei um recado sobre o simulado
+
+```text
+Olá, Caio, tudo bem?
+
+Um recado curto: o Simulado Nacional de outubro de 2026 já está no ar, e você está na lista.
+
+São 50 questões em duas horas, com o relógio correndo desde o começo, como no dia da prova.
+
+Uma ideia prática: antes de começar, leia as regras com calma e já decida o que fazer com a questão que travar. Marcar para rever e seguir costuma salvar o fim da prova.
+
+Dá para fazer até 31 de outubro, no horário que for melhor para você.
+
+Um detalhe: esta edição é para quem assina. A página do simulado mostra como funciona.
+
+Para fazer: ortoquestoes.com.br/#/simulado-nacional
+
+Um abraço,
+Tales, do Orto Questões
+
+P.S.: o ranking leva em conta o tempo nos empates, mas o que mais importa é fazer inteiro, do jeito que vai ser na prova.
+
+--
+
+Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
+```
+
 ### Resultado do Simulado Nacional
 
-Júlia acertou 41 de 60 e ficou em 12º (posição só para quem assina, até 30º).
+Júlia acertou 41 de 50 e ficou em 12º (posição só para quem assina, até 30º).
 
 **Assunto:** Júlia, uma ideia para depois do simulado
 
@@ -1143,7 +1204,7 @@ Olá, Júlia, tudo bem?
 
 Imagino que a rotina esteja puxada por aí: hospital de dia, estudo quando sobra.
 
-Vi que você fez o Simulado Nacional desta edição. Você acertou 41 de 60 questões e ficou em 12º lugar entre quem entregou no tempo.
+Vi que você fez o Simulado Nacional desta edição. Você acertou 41 de 50 questões e ficou em 12º lugar entre quem entregou no tempo.
 
 Uma ideia de quem já fez muito simulado: em vez de refazer a prova inteira, pegue as questões que te pegaram e leia o comentário de todas as alternativas. É revisão sob medida, e cabe no intervalo.
 

@@ -247,7 +247,7 @@ export function emailRelatorio(d: DadosRelatorio & { perfil?: PerfilCarta | null
 // ---------------------------------------------------------------------------
 
 export type TipoCampanhaDiaria = 'assinou_sem_cronograma' | 'assinante_parado_7' | 'simulado_resultado' | 'vespera_prova' | 'depois_prova'
-  | 'aniversario' | 'um_ano' | 'indicacao_deu_certo' | 'resumo_do_tema'
+  | 'aniversario' | 'um_ano' | 'indicacao_deu_certo' | 'resumo_do_tema' | 'simulado_lembrete'
 export type TipoAutomatico = 'boas_vindas_dia0' | 'primeiras_10' | 'voltou' | 'cronograma_pronto' | 'pagamento_aprovado' | 'obrigado_tempo' | TipoCampanhaDiaria
 /** Os seis automáticos por acontecimento (17/10/2026) e as nove campanhas diárias (parte 31). */
 export const TIPOS_AUTOMATICOS: readonly TipoAutomatico[] = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS] as readonly TipoAutomatico[]
