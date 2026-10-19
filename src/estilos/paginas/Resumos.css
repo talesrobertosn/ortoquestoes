@@ -313,6 +313,10 @@
 .rs-novidade { display: inline-flex; align-items: center; gap: 0.4rem; width: fit-content; padding: 0.3rem 0.75rem; border-radius: 999px; background: var(--ouro-veu, #f7eed8); color: var(--ouro-texto, #8a6416); font-size: 0.8rem; font-weight: 750; }
 .rs-novidade i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: lr-pulso 1.6s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .rs-novidade i { animation: none; } }
+.rs-porta { display: flex; align-items: flex-start; gap: 0.45rem; margin: 0; max-width: 46rem; font-size: 0.9rem; color: var(--texto-2); }
+.rs-porta svg { flex: none; margin-top: 0.2rem; color: var(--ouro-texto, #8a6416); }
+.rs-porta b { color: var(--texto); }
+.rs-porta a { font-weight: 700; color: var(--verdete); white-space: nowrap; }
 .rs-livro__lombada { background: linear-gradient(180deg, var(--rs-area, var(--verdete)), color-mix(in srgb, var(--rs-area, var(--verdete)) 55%, #000)); }
 .rs-proximos { display: grid; gap: 0.3rem; margin: 0; padding: 0; list-style: none; }
 .rs-proximos li { display: flex; align-items: center; gap: 0.5rem; padding: 0.55rem 0.8rem; border: 1px dashed var(--traco); border-radius: 12px; font-size: 0.86rem; color: var(--texto-2); }
