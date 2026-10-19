@@ -2,7 +2,7 @@
 // no editor do painel do Supabase sem usar o terminal. Rodar: npm run funcoes:colar
 import { build } from 'esbuild'
 
-const FUNCOES = ['enviar-email', 'webhook-mercado-pago', 'criar-checkout', 'criar-pix', 'gerenciar-plano']
+const FUNCOES = ['enviar-email', 'webhook-mercado-pago', 'criar-checkout', 'criar-pix', 'gerenciar-plano', 'suporte']
 const CABECALHO = '// @ts-nocheck\n// Arquivo gerado por scripts/juntar-funcoes.mjs: a função inteira num arquivo só, para colar no editor do painel do Supabase.\n'
 
 for (const nome of FUNCOES) {

@@ -6,8 +6,8 @@ em [PLANO.md](PLANO.md).
 
 ## Feito
 
-- [x] **Reescrita completa na voz nova** (17/10/2026, PLANO.md): amigo que já passou pela
-  residência; espinha fixa (momento → o que eu vi → ideia sobre tempo → convite leve → fecho →
+- [x] **Reescrita completa na voz nova** (17/10/2026, PLANO.md): amigo que entende a rotina de quem
+  estuda (sem dizer a profissão ou a etapa do Tales, regra de 19/10/2026); espinha fixa (momento → o que eu vi → ideia sobre tempo → convite leve → fecho →
   P.S.); 6 a 12 linhas; 5 a 7 versões por situação e faixa, todas reescritas do zero.
 - [x] **Quatro fatos novos** no motor: resumos lidos, dias para a prova (cronograma), serviço ou
   cidade, aniversário. Até três observações por carta (eram duas; o P.S. com fato conta).

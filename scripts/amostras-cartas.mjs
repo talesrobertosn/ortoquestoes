@@ -45,7 +45,7 @@ try {
   const linhas = ['# Cartas: amostras e variações', '',
     '> Gerado por `node scripts/amostras-cartas.mjs` em ' + HOJE.toISOString().slice(0, 10) + '. Pessoas e números fictícios.',
     '> Cada amostra é uma das versões possíveis: no painel, "Sortear outra versão" troca o texto.', '',
-    'Todas as cartas saem só em texto, na voz de um amigo que já passou pela residência (docs/emails/PLANO.md): abertura com o momento da pessoa, o que eu vi no estudo dela (até 3 observações), uma ideia sobre tempo e praticidade, convite leve quando couber, fecho e um P.S. De 6 a 12 linhas, assinatura fixa "Um abraço, / Tales, do Orto Questões", no máximo um link, nenhum preço, nenhum número de questões abaixo de 10, acerto só com 30 questões e de 50% para cima.', '']
+    'Todas as cartas saem só em texto, na voz de um amigo que entende a rotina de quem estuda (docs/emails/PLANO.md): abertura com o momento da pessoa, o que eu vi no estudo dela (até 3 observações), uma ideia sobre tempo e praticidade, convite leve quando couber, fecho e um P.S. De 6 a 12 linhas, assinatura fixa "Um abraço, / Tales, do Orto Questões", no máximo um link, nenhum preço, nenhum número de questões abaixo de 10, acerto só com 30 questões e de 50% para cima.', '']
 
   // Variedade: textos distintos em 400 sorteios para cada faixa e situação.
   const contar = (perfil, tipo) => {
