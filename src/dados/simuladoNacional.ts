@@ -437,51 +437,15 @@ export function evolucaoHistorico(historico: EdicaoHistorico[]): Array<EdicaoHis
 }
 
 /* ------------------------------------------------------------------------
- * LEGADO: o Simulado Nacional antigo (tabelas simulado_*). Fica só enquanto a
- * página, o painel, a sessão e o Resumo atuais não passam para a API nova
- * (partes C e D do plano); depois sai. Não use em código novo.
+ * LEGADO: o sorteio antigo, usado só pelo painel atual (AdminSimulados.tsx),
+ * que está sendo refeito (parte D do plano). A página, a sessão e o Resumo já
+ * usam a API nova (parte C). Sai junto com o painel antigo. Não use em código novo.
  * ---------------------------------------------------------------------- */
 
 /** @deprecated use QUESTOES_MENSAL. */
 export const QUESTOES_EDICAO = QUESTOES_MENSAL
 /** @deprecated use DURACAO_MENSAL_MIN. */
 export const DURACAO_EDICAO_MIN = DURACAO_MENSAL_MIN
-
-/** @deprecated formato da RPC antiga; o novo vem de apiSimuladoNacional.ts. */
-export interface EdicaoNacional {
-  edicao: string | null
-  titulo: string
-  abre_em: string
-  fecha_em: string
-  duracao_min: number
-  total: number
-  por_tema: Record<string, number>
-  participantes: number
-  aberto: boolean
-  minha: { iniciado_em: string; entregue_em: string | null; acertos: number | null; total: number | null; segundos: number | null; no_tempo: boolean | null } | null
-  anteriores: Array<{ edicao: string; titulo: string }>
-}
-
-/** @deprecated formato da RPC antiga. */
-export interface LinhaTopNacional { posicao: number; apelido: string; acertos: number; total: number; segundos: number; eh_voce: boolean }
-/** @deprecated formato da RPC antiga. */
-export interface TemaNacional { tema: string; certas: number; total: number; media: number | null }
-/** @deprecated formato da RPC antiga. */
-export interface ResultadoNacional {
-  entregue: boolean
-  premium?: boolean
-  acertos?: number
-  total?: number
-  segundos?: number
-  no_tempo?: boolean
-  entregue_em?: string
-  participantes?: number
-  media?: number | null
-  posicao?: number | null
-  percentil?: number | null
-  temas?: TemaNacional[] | null
-  top?: LinhaTopNacional[]
-}
 
 /** @deprecated use CandidataNacional. */
 export interface CandidataEdicao { id: string; tema: string; gabarito: string }
@@ -559,18 +523,4 @@ export function escolherVespera(candidatas: CandidataVespera[], edicao: string, 
     escolhidas.push(...lista.slice(0, cotas[i].n).map(({ id, tema: t, gabarito }) => ({ id, tema: t, gabarito })))
   })
   return embaralhar(escolhidas, semente ^ 0x9e3779b9)
-}
-
-/** @deprecated use Situacao. */
-export type SituacaoEdicao = Situacao
-/** @deprecated use situacao (prazo vindo do servidor). */
-export function situacaoEdicao(ed: Pick<EdicaoNacional, 'abre_em' | 'fecha_em' | 'duracao_min' | 'minha'>, agora = Date.now()): SituacaoEdicao {
-  const minha = ed.minha
-  const prazo = minha ? new Date(Date.parse(minha.iniciado_em) + ed.duracao_min * 60_000).toISOString() : ''
-  return situacao({ abre_em: ed.abre_em, fecha_em: ed.fecha_em, minha: minha ? { prazo_em: prazo, entregue_em: minha.entregue_em } : null }, agora)
-}
-
-/** @deprecated use segundosRestantes(prazo_em). */
-export function segundosRestantesProva(iniciadoEm: string, duracaoMin: number, agora = Date.now()): number {
-  return Math.max(0, Math.round((Date.parse(iniciadoEm) + duracaoMin * 60_000 - agora) / 1000))
 }

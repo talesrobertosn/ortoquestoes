@@ -16,6 +16,7 @@ import { JanelaCentral, usarTelaLarga } from './JanelaCentral'
 import { Painel } from './Painel'
 import { SeloAssinante } from './Premium'
 import { A_PARTIR_DE } from '../dados/planos'
+import { usarNacionalAbertoATodos } from '../dados/nacionalEmDestaque'
 
 interface Item {
   destino: string
@@ -50,7 +51,7 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
     titulo: 'Rumo à prova',
     itens: [
       { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'A contagem dos assuntos nas provas oficiais', icone: 'grafico', assinante: true },
-      { destino: '/simulado-nacional', rotulo: 'Simulado Nacional', texto: 'Uma prova por mês, com nota e posição', icone: 'alvo', assinante: true },
+      { destino: '/simulado-nacional', rotulo: 'Simulado Nacional', texto: '50 questões oficiais, 2 horas, ranking nacional', icone: 'alvo', assinante: true },
     ],
   },
   {
@@ -107,6 +108,8 @@ export function MenuGeral({ aberto, aoFechar, caminho }: { aberto: boolean; aoFe
 function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => void }) {
   const { sessao } = usarConta()
   const { premium } = usarPremium()
+  // A edição em destaque do Simulado Nacional pode ser aberta a todos (outubro de 2026): sem cadeado.
+  const nacionalAberto = usarNacionalAbertoATodos()
   const administrador = usarAdministrador(sessao?.user.id)
   const [sessaoLocal] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
   const feitas = sessaoLocal ? Object.keys(sessaoLocal.respostas).length : 0
@@ -167,7 +170,7 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
             <p className="mn-grupo__titulo">{grupo.titulo}</p>
             <ul>
               {grupo.itens.map((item) => {
-                const bloqueado = item.assinante && !premium
+                const bloqueado = item.assinante && !premium && !(nacionalAberto && item.destino === '/simulado-nacional')
                 // Relatório do mês é só por e-mail: quem não assina vai para os planos.
                 const destino = bloqueado && item.rotulo === 'Relatório do mês' ? '/assinatura' : item.destino
                 const atual = item.destino === caminho || (item.destino !== '/conta' && caminho.startsWith(item.destino + '/'))
