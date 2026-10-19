@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 14 | 1 | mao-1932 a mao-1945 | A 3, B 4, C 4, D 3 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 19 | 1 | mao-1932 a mao-1950 | A 5, B 5, C 5, D 4 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -91,11 +91,11 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 15 | Cisto sinovial: componente predominante do conteúdo | fato | cap. 59 | mao / Cistos sinoviais e gangliões | 18 | | a fazer |
 | 16 | Cabeça do rádio, HOTCHKISS tipo II (a correção ressalva) | classificação | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
 | 17 | Flexor na zona 1: quando cabe a reinserção ou sutura primária (coto distal) | número | cap. 6, p. 216, 219 | mao / Lesões dos tendões flexores | 03 | mao-1942 | publicada |
-| 18 | Escafoide: ordem de frequência por região | fato | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
+| 18 | Escafoide: ordem de frequência por região | fato | cap. 16, p. 677 a 680 | mao / Fraturas do escafoide e do carpo | 04 | mao-1946 | publicada |
 | 19 | Pseudobotoeira: estruturas contraídas na flexão da IFP | mecanismo | cap. 5, p. 198 a 201; cap. 10, p. 388, 389 | mao / Lesões ligamentares dos dedos | 02 | mao-1937 | publicada |
 | 20 | Rádio distal consolidado: de onde vêm as queixas residuais | fato | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
 | 21 | Botoeira crônica: estágio com contratura fixa e da banda lateral | classificação | cap. 5 (arquivo "4- T. extensor"), p. 199 a 202 | mao / Lesões dos tendões extensores | 02 | mao-1938 | publicada |
-| 22 | Escafoide: fator que aumenta a pseudoartrose | fato | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
+| 22 | Escafoide: fator que aumenta a pseudoartrose | fato | cap. 16, p. 678 a 682 | mao / Fraturas do escafoide e do carpo | 04 | mao-1947 | publicada |
 | 23 | Polidactilia central: dedo mais acometido | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
 | 24 | Ponta do dedo, ALLEN: zona proximal à lúnula | classificação | cap. 49, p. 1907 a 1911; cap. 9, p. 365 | mao / Amputações e reimplantes | 03 | mao-1945 | publicada |
 | 25 | Hematoma subungueal com retirada da unha: o que fazer com a lâmina | conduta | cap. 9, p. 365 a 367 | mao / Lesões ligamentares dos dedos | 03 | mao-1944 | publicada |
@@ -150,7 +150,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 74 | Pseudoartrose de metacarpo: tratamento | conduta | cap. 7, p. 263, 281, 282 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1936 | publicada |
 | 75 | Mão de APERT: quais dedos se fundem | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
 | 76 | Sindactilia: complicações pós-operatórias mais raras | fato | cap. 36 | mao / Sindactilia e polidactilia | 15 | | a fazer |
-| 77 | Risco de KIENBÖCK (VIEGAS, ZAPICO, variância, vascularização) | afirmativas | cap. 16 | mao / Doença de Kienböck | 04 | | a fazer |
+| 77 | Risco de KIENBÖCK (VIEGAS, ZAPICO, variância, vascularização) | afirmativas | cap. 16, p. 727 a 729 | mao / Doença de Kienböck | 04 | mao-1948 | publicada |
 | 78 | Tenotomia de FOWLER: estrutura que precisa estar íntegra | epônimo | cap. 5, p. 195 a 198 | mao / Lesões dos tendões extensores | 02 | mao-1940 | publicada (o original tinha duas respostas: o tendão terminal também precisa estar em continuidade; reescrita pergunta o que evita a botoeira) |
 | 79 | Adulto: fraturas mais associadas à síndrome compartimental do membro superior | fato | cap. 51 | mao / Outros temas da mão | 17 | | a fazer |
 | 80 | Plexo braquial: quando fazer o eletrodiagnóstico | número | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 12 | | a fazer |
@@ -161,9 +161,9 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 85 | DCSS: de qual ligamento se origina | anatomia | cap. 13 | mao / Instabilidade do carpo | 05 | | a fazer |
 | 86 | Ângulo da gota de lágrima: o que representa e o ligamento inserido | par | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
 | 87 | Reabilitação do flexor: início do fortalecimento isolado | número | cap. 6, p. 225 a 227 | mao / Lesões dos tendões flexores | 03 | mao-1943 | publicada |
-| 88 | Biomecânica da fratura do escafoide e do perilunar | afirmativas | cap. 16 | mao / Fraturas do escafoide e do carpo | 04 | | a fazer |
+| 88 | Biomecânica da fratura do escafoide e do perilunar | afirmativas | cap. 16, p. 678 | mao / Fraturas do escafoide e do carpo | 04 | mao-1949 | publicada |
 | 89 | Falange proximal: desvios aceitáveis no tratamento conservador | número | cap. 7 (p. 299 e 304 não trazem os graus) | mao / Fraturas dos metacarpos e falanges | 01 | | pendente: sem fonte (11 e 21 graus não estão no Green nem nos outros livros locais; o original troca coronal por perfil) |
-| 90 | LICHTMAN atualizada: em que se baseia | classificação | cap. 16 | mao / Doença de Kienböck | 04 | | a fazer |
+| 90 | LICHTMAN atualizada: em que se baseia | classificação | cap. 16, p. 729 a 733 | mao / Doença de Kienböck | 04 | mao-1950 | publicada |
 | 91 | Clinodactilia: deformidade que entra na classificação | classificação | cap. 36 | mao / Deformidades dos dedos | 15 | | a fazer |
 | 92 | SDCR: como se faz o diagnóstico | fato | cap. 53 | mao / Síndrome da dor complexa regional | 17 | | a fazer |
 | 93 | Nervo sural no tornozelo: relação com o tendão calcâneo | anatomia | cap. 30 | mao / Lesões de nervos periféricos | 10 | | a fazer |
