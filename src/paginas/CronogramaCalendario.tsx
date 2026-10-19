@@ -9,6 +9,8 @@ import { chaveCivil, chaveDoDia, diaCivil } from '../util/dia'
 import { faseNoCalendario, limitesCalendario, limitarData, mesCivil, selecaoNoMes, type FaseCalendario } from '../dados/calendarioCronograma'
 import { usarDiaAtual } from '../util/usarDiaAtual'
 import { diaCurto, textoAdiantadoDia, textoPuxar } from '../dados/frasesAdiantar'
+import { SeloFicticio, TravaCalendario } from './CronogramaFicticio'
+import { semanaAbertaNoFicticio } from '../dados/vistaCronograma'
 import '../estilos/paginas/CronogramaCalendario.css'
 
 /**
@@ -79,7 +81,7 @@ function faixaDaSemana(seg: Date): string {
   return `${FORMATO_DIA_MES.format(seg)} a ${FORMATO_DIA_MES.format(dom)}`
 }
 
-export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar, embutido = false, nome = '' }: {
+export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar, embutido = false, nome = '', ficticio = false }: {
   plano: PlanoSalvo
   calculo: CalculoPlano
   indice: Indice
@@ -93,6 +95,8 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   embutido?: boolean
   /** O primeiro nome da pessoa, para a frase de abertura (vazio: a frase funciona sem ele). */
   nome?: string
+  /** Cenário fictício de quem não assina: só a semana de hoje fica aberta; o mês e as outras semanas mostram a trava. */
+  ficticio?: boolean
 }) {
   const chaveHoje = usarDiaAtual()
   const hoje = diaCivil(chaveHoje)
@@ -101,7 +105,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   const { inicio, primeiroMes, ultimoMes, inicial } = limitesCalendario(criado, hoje, prova)
   const primeiraSemana = segundaDe(inicio), ultimaSemana = segundaDe(prova)
   // Pedido do Tales (19/10/2026): abre na semana; um botão abre o mês inteiro na própria página.
-  const [vista, definirVista] = useState<VistaCalendario>(lerVista)
+  const [vista, definirVista] = useState<VistaCalendario>(() => (ficticio ? 'semana' : lerVista()))
   const [mes, definirMes] = useState(() => mesDe(inicial))
   const [semana, definirSemana] = useState(() => segundaDe(inicial))
   const [selecionado, definirSelecionado] = useState<string>(() => chaveCivil(inicial))
@@ -135,7 +139,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     trocouVista.current = true
     const sel = diaCivil(selecionado)
     if (v === 'mes') definirMes(mesDe(sel)); else definirSemana(segundaDe(sel))
-    definirDirecao(null); definirVista(v); gravarVista(v)
+    definirDirecao(null); definirVista(v); if (!ficticio) gravarVista(v)
   }
 
   // O que foi feito em cada dia (todas as respostas, como na constância), por área.
@@ -266,7 +270,11 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
 
   const semanaDeHoje = segundaDe(inicial).getTime() === semana.getTime()
   const seloSemana = semanaDeHoje ? (hoje > prova ? 'Semana da prova' : 'Esta semana') : semana > segundaDe(inicial) ? (semana.getTime() === maisDias(segundaDe(inicial), 7).getTime() ? 'Próxima semana' : 'Mais adiante') : (semana.getTime() === maisDias(segundaDe(inicial), -7).getTime() ? 'Semana passada' : 'Semanas atrás')
-  const explicacao = noMes
+  // Cenário fictício: o mês e as outras semanas ficam no lugar da trava (o assinante vê tudo).
+  const travado = ficticio && (noMes || !semanaAbertaNoFicticio(semana, segundaDe(inicial)))
+  const explicacao = ficticio && !noMes
+    ? <>{nome ? `${nome}, esta` : 'Esta'} seria a sua semana no cronograma. Cada dia mostra a área, quantas questões novas e o que já foi feito. Toque num dia para ver o que estudar nele.</>
+    : noMes
     ? <>O mês inteiro do cronograma, até a prova em <b>{FORMATO_DIA_MES.format(prova)}</b>. A barra colorida de cada dia mostra as áreas; toque num dia para ver o que estudar.</>
     : <>{nome ? `${nome}, esta` : 'Esta'} é a sua semana no cronograma. Cada dia mostra a área, quantas questões novas e o que você já fez. Toque num dia para ver o que estudar nele.</>
   const corpoId = 'cc-corpo'
@@ -275,17 +283,18 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
 
   const conteudo = (
       <div className="cc-janela" ref={janela}>
+        {ficticio && <p className="cf-cal-aviso"><SeloFicticio /><span>{nome ? `${nome}, assim` : "Assim"} seria o seu calendário se você assinasse. Os dias feitos são de exemplo.</span></p>}
         <header className="cc-topo">
           <div className="cc-topo__titulo">
             <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> {noMes ? 'O mês inteiro' : seloSemana} · {plano.prova}</p>
             {noMes
               ? <h2 id="cc-titulo" ref={titulo} tabIndex={-1} aria-live="polite">{nomeMes(mes).replace(/ de \d+$/, '')} <span className="cc-de">de </span>{mes.getFullYear()}</h2>
               : <h2 id="cc-titulo" ref={titulo} tabIndex={-1} aria-live="polite" className="ccs-titulo">{faixaDaSemana(semana)}</h2>}
-            <p className="cc-topo__resumo">
+            {!travado && <p className="cc-topo__resumo">
               {resumo.estudo > 0 && <span><b className="numerico">{resumo.estudo}</b> {resumo.estudo === 1 ? 'dia' : 'dias'} de estudo · <b className="numerico">{resumo.questoes.toLocaleString('pt-BR')}</b> questões novas</span>}
               {resumo.feitas > 0 && <span><b className="numerico">{resumo.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
               {resumo.folgas > 0 && <span>{resumo.folgas} {resumo.folgas === 1 ? 'folga' : 'folgas'}</span>}
-            </p>
+            </p>}
           </div>
           <div className="ccs-controles">
             <div className="cc-nav">
@@ -299,11 +308,12 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
               {noMes ? 'Ver só a semana' : 'Ver o mês inteiro'}
             </button>
           </div>
-          <p className="ccs-explica">{explicacao}</p>
+          {!travado && <p className="ccs-explica">{explicacao}</p>}
         </header>
 
         <div id={corpoId} className={'cc-corpo' + (noMes ? ' cc-corpo--mes' : ' cc-corpo--semana') + (trocouVista.current ? (noMes ? ' ccm-entra' : ' ccs-entra') : '')} key={vista}>
-          {noMes ? <div className="cc-mes">
+          {travado ? <TravaCalendario mes={mesCurto(noMes ? mes : semana).toUpperCase()} onde={noMes ? 'mes' : 'semana'} aoVoltar={() => { if (noMes) mudarVista('semana'); irHoje() }} />
+          : noMes ? <div className="cc-mes">
             <ol className="cc-semana" aria-hidden="true">{SEMANA.map((s) => <li key={s}>{s}</li>)}</ol>
             <ol key={mes.getTime()} className={'cc-grade cc-mes-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Dias de ${nomeMes(mes)}`}>
               {grade.map((c, i) => c ? <Celula key={c.chave} dia={c} selecionado={c.chave === selecionado} aoEscolher={escolher} /> : <li key={`v${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />)}
@@ -320,7 +330,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
           : <ol key={semana.getTime()} className={'ccs-semana' + (direcao ? ` ccs-semana--${direcao}` : '')} aria-label={`Semana de ${faixaDaSemana(semana)}`}>
               {dias7.map((d) => <CelulaSemana key={d.chave} dia={d} selecionado={d.chave === selecionado} aoEscolher={escolher} metaRevisao={calculo.metaMedia} />)}
             </ol>}
-          <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={sair} />
+          {!travado && <Detalhe ancora={detalhe} dia={diaSelecionado} calculo={calculo} plano={plano} minutos={minutos} revisoesHoje={revisoesHoje} acoes={acoes} aoFechar={sair} />}
         </div>
       </div>
   )

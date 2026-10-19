@@ -1,0 +1,152 @@
+/* Cenário fictício do cronograma (19/10/2026): faixa, etiqueta do calendário, trava do mês com a
+   folha de calendário em pixel e o convite. Arquivo próprio, carregado só pela página do cronograma. */
+
+/* ---------- Etiqueta "Cenário fictício" ---------- */
+.cf-selo {
+  display: inline-flex; align-items: center; gap: 0.35rem; flex: none;
+  padding: 0.22rem 0.6rem; border: 2px solid var(--px-tinta); border-radius: 4px;
+  background: var(--px-ouro); color: var(--px-tinta); box-shadow: 2px 2px 0 var(--px-ouro-sombra);
+  font-size: var(--meta); font-weight: 800; line-height: 1.2; white-space: nowrap;
+}
+.cf-selo svg { flex: none; }
+
+/* ---------- A faixa do topo ---------- */
+.cf-faixa {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-3) var(--e-4);
+  padding: var(--e-3) var(--e-4); border: 2px solid var(--px-tinta); border-radius: 6px;
+  background: color-mix(in srgb, var(--px-ouro) 26%, var(--superficie)); color: var(--texto);
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--px-ouro-sombra) 55%, transparent);
+}
+.cf-faixa__texto { margin: 0; font-size: var(--corpo-menor); line-height: 1.45; }
+.cf-faixa__texto strong { font-weight: 800; }
+.cf-faixa__texto span { color: var(--texto-2); }
+.cf-faixa__botao { white-space: nowrap; }
+:root[data-tema="escuro"] .cf-faixa { background: color-mix(in srgb, var(--px-ouro) 12%, var(--superficie)); border-color: color-mix(in srgb, var(--px-ouro) 55%, #000); }
+@media (max-width: 52rem) {
+  .cf-faixa { grid-template-columns: minmax(0, 1fr); justify-items: start; }
+  .cf-faixa__botao { justify-self: stretch; justify-content: center; }
+}
+
+/* ---------- Aviso do calendário ---------- */
+.cc-janela:has(> .cf-cal-aviso) { grid-template-rows: auto auto minmax(0, 1fr); }
+.cf-cal-aviso {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; margin: 0; padding: 0.75rem 1.25rem 0.1rem;
+  background: var(--superficie); font-size: var(--meta); font-weight: 650; color: var(--texto-2);
+}
+@media (max-width: 52rem) { .cf-cal-aviso { padding: 0.7rem 0.75rem 0.1rem; } }
+
+/* ---------- Trava do mês ---------- */
+.cf-trava {
+  grid-column: 1 / -1; display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: var(--e-5); align-items: center;
+  padding: var(--e-4); border: 2px solid var(--px-tinta); border-radius: 8px; background: var(--superficie);
+  box-shadow: 4px 4px 0 var(--px-sombra);
+}
+:root[data-tema="escuro"] .cf-trava { border-color: var(--px-borda); }
+.cf-trava__palco {
+  display: grid; place-items: center; min-height: 14rem; border-radius: 6px;
+  background: color-mix(in srgb, var(--px-ouro) 14%, var(--superficie-2));
+  background-image: radial-gradient(color-mix(in srgb, var(--px-ouro-sombra) 22%, transparent) 1px, transparent 1.4px);
+  background-size: 18px 18px; background-position: 9px 9px;
+}
+.cf-trava__texto h3 { margin: 0; font-family: var(--fonte-marca); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.15; letter-spacing: -0.01em; }
+.cf-trava__texto p { margin: var(--e-2) 0 0; max-width: 34rem; line-height: 1.5; }
+.cf-trava__acoes { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-3); margin-top: var(--e-4); }
+@media (max-width: 40rem) {
+  .cf-trava { grid-template-columns: minmax(0, 1fr); gap: var(--e-4); }
+  .cf-trava__palco { min-height: 11rem; }
+  .cf-trava__acoes .botao { flex: 1 1 100%; justify-content: center; }
+}
+
+/* A folha de calendário em pixel: tudo medido em --u. Argolas de ouro, topo verde com o mês (texto
+   real), a grade dos dias com hoje em ouro e domingo hachurado, e o cadeado na frente. */
+.cf-folha {
+  --u: 4px;
+  --cf-tinta: #1b1208;
+  --cf-papel: #fbf6ea;
+  --cf-linha: #e4d7b8;
+  position: relative; display: block; width: calc(var(--u) * 34); height: calc(var(--u) * 42);
+  text-decoration: none; cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+:root[data-tema="escuro"] .cf-folha { --cf-tinta: #050807; }
+.cf-folha__flutua {
+  position: absolute; inset: 0 0 auto; height: calc(var(--u) * 38); display: block;
+  animation: cf-flutua 4.6s ease-in-out infinite; transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.cf-folha__flutua > span { position: absolute; display: block; }
+.cf-folha__topo {
+  left: 0; top: calc(var(--u) * 2); width: calc(var(--u) * 34); height: calc(var(--u) * 9);
+  display: grid !important; place-items: center; background: var(--verdete); color: #fff;
+  box-shadow: 0 0 0 2px var(--cf-tinta); font: 400 calc(var(--u) * 6) / 1 "Jersey 10", var(--fonte-marca); letter-spacing: 0.06em;
+}
+:root[data-tema="escuro"] .cf-folha__topo { background: #14655e; }
+.cf-folha__argolas { left: calc(var(--u) * 7); top: 0; width: calc(var(--u) * 20); height: calc(var(--u) * 4); z-index: 1; }
+.cf-folha__argolas i {
+  position: absolute; top: 0; width: calc(var(--u) * 2); height: calc(var(--u) * 4);
+  background: var(--px-ouro); box-shadow: 0 0 0 2px var(--cf-tinta);
+}
+.cf-folha__argolas i:last-child { right: 0; }
+.cf-folha__grade {
+  left: 0; top: calc(var(--u) * 11); width: calc(var(--u) * 34); height: calc(var(--u) * 27);
+  display: grid !important; grid-template-columns: repeat(7, 1fr); gap: var(--u); padding: calc(var(--u) * 2);
+  box-sizing: border-box; background: var(--cf-papel); box-shadow: 0 0 0 2px var(--cf-tinta);
+}
+.cf-folha__grade i { display: block; background: var(--cf-linha); }
+.cf-folha__grade i.cf-folha__hoje { background: var(--px-ouro); box-shadow: 0 0 0 1px var(--cf-tinta); }
+.cf-folha__grade i.cf-folha__folga { background: repeating-linear-gradient(45deg, var(--cf-linha) 0 2px, transparent 2px 4px); }
+.cf-cadeado { left: calc(var(--u) * 10); top: calc(var(--u) * 17); width: calc(var(--u) * 14); height: calc(var(--u) * 18); z-index: 2; }
+.cf-cadeado__arco {
+  position: absolute; left: calc(var(--u) * 3); top: 0; width: calc(var(--u) * 8); height: calc(var(--u) * 9);
+  box-sizing: border-box; border: calc(var(--u) * 2) solid var(--cf-tinta); border-bottom: 0; border-radius: calc(var(--u) * 4) calc(var(--u) * 4) 0 0;
+  transform-origin: calc(var(--u) * 7) 100%; transition: transform 0.35s cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+.cf-cadeado__corpo {
+  position: absolute; left: 0; top: calc(var(--u) * 7); width: calc(var(--u) * 14); height: calc(var(--u) * 11);
+  background: var(--px-ouro); box-shadow: 0 0 0 2px var(--cf-tinta), inset calc(var(--u) * -2) calc(var(--u) * -2) 0 #d9a93f;
+}
+.cf-cadeado__corpo i { position: absolute; left: calc(var(--u) * 6); top: calc(var(--u) * 3); width: calc(var(--u) * 2); height: calc(var(--u) * 4); background: var(--cf-tinta); }
+.cf-folha__chao {
+  position: absolute; left: calc(var(--u) * 5); bottom: 0; width: calc(var(--u) * 24); height: calc(var(--u) * 2);
+  background: color-mix(in srgb, var(--cf-tinta) 22%, transparent); animation: cf-chao 4.6s ease-in-out infinite;
+}
+@keyframes cf-flutua { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(calc(var(--u) * -2)); } }
+@keyframes cf-chao { 0%, 100% { transform: scaleX(1); opacity: 1; } 50% { transform: scaleX(0.82); opacity: 0.7; } }
+/* De tempos em tempos o arco do cadeado dá um pulinho, como quem quer abrir. */
+.cf-folha .cf-cadeado__arco { animation: cf-espia 6.5s ease-in-out infinite; }
+@keyframes cf-espia { 0%, 86%, 100% { transform: translateY(0); } 90% { transform: translateY(calc(var(--u) * -1.5)); } 94% { transform: translateY(0); } }
+/* Mouse por cima do painel: a folha levanta e inclina. */
+.cf-trava:hover .cf-folha__flutua, .cf-folha:focus-visible .cf-folha__flutua { animation-play-state: paused; transform: translateY(calc(var(--u) * -3)) rotate(-4deg); }
+/* Clique: o arco gira e o cadeado abre, só então vai aos planos. */
+.cf-folha--abrindo .cf-cadeado__arco, .cf-folha:active .cf-cadeado__arco, .cf-trava:has(.botao--ouro:active) .cf-cadeado__arco { animation: none; transform: translateY(calc(var(--u) * -3)) rotate(-28deg); }
+.cf-folha--abrindo .cf-folha__flutua { animation: none; transform: translateY(calc(var(--u) * -4)) scale(1.04); }
+.cf-folha--parada .cf-folha__flutua, .cf-folha--parada .cf-folha__chao, .cf-folha--parada .cf-cadeado__arco { animation-play-state: paused; }
+
+/* ---------- Convite (no lugar de uma sessão do plano de exemplo) ---------- */
+.cf-convite {
+  position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: var(--e-4);
+  background: color-mix(in srgb, #000 45%, transparent); animation: cf-aparece 0.18s ease-out;
+}
+.cf-convite__caixa {
+  position: relative; width: min(30rem, 100%); max-height: calc(100dvh - 2rem); overflow: auto; box-sizing: border-box;
+  padding: var(--e-5); border: 2px solid var(--px-tinta); border-radius: 8px; background: var(--superficie); color: var(--texto);
+  box-shadow: 6px 6px 0 var(--px-ouro-sombra); animation: cf-sobe 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+:root[data-tema="escuro"] .cf-convite__caixa { border-color: var(--px-borda); }
+.cf-convite__caixa h2 { margin: var(--e-3) 0 0; padding-right: 2rem; font-family: var(--fonte-marca); font-size: 1.35rem; line-height: 1.2; }
+.cf-convite__caixa > p { margin: var(--e-2) 0 0; line-height: 1.5; }
+.cf-convite__acoes { display: grid; gap: var(--e-2); margin-top: var(--e-4); }
+.cf-convite__acoes .botao { justify-content: center; }
+.cf-convite__nota { font-size: var(--meta); color: var(--texto-2); }
+.cf-convite__fechar {
+  position: absolute; top: var(--e-3); right: var(--e-3); display: grid; place-items: center; width: 40px; height: 40px;
+  border: 0; border-radius: 6px; background: transparent; color: var(--texto-2); cursor: pointer;
+}
+.cf-convite__fechar:hover { background: var(--superficie-2); color: var(--texto); }
+@keyframes cf-aparece { from { opacity: 0; } }
+@keyframes cf-sobe { from { opacity: 0; transform: translateY(12px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .cf-folha__flutua, .cf-folha__chao, .cf-folha .cf-cadeado__arco, .cf-convite, .cf-convite__caixa { animation: none; }
+  .cf-folha__flutua, .cf-cadeado__arco { transition: none; }
+  .cf-trava:hover .cf-folha__flutua { transform: none; }
+}
+:root[data-tema="escuro"] .cf-trava__palco { background-color: color-mix(in srgb, var(--px-ouro) 6%, var(--superficie-2)); }
