@@ -12,12 +12,13 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, diasAte, idsDoDiaPlano, incluiSimulados, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, marcarReservadas, opcoesComPuxado, proximoDiaParaPuxar, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, HojeRetaFinal, MapaRisco } from './CronogramaHub'
+import { diaCurto, textoPuxar } from '../dados/frasesAdiantar'
 import { CartaoHoje, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
 import { corDaArea } from '../dados/coresAreas'
 import { CalendarioCronograma } from './CronogramaCalendario'
@@ -92,7 +93,9 @@ export function PlanoEstudo() {
   const premium = acesso.premium || DEMO, logado = acesso.logado, carregado = acesso.carregado || DEMO
   const { indice } = usarIndice()
   const [respondidasReais] = usarArmazenado<Respondidas>('respondidas', {})
-  const respondidas = useMemo(() => (DEMO && indice ? respondidasDemo(indice) : respondidasReais), [respondidasReais, indice])
+  // Só no modo demo: as respostas de exemplo de um dia puxado (`demo=1&puxado`).
+  const [extrasDemo, definirExtrasDemo] = useState<Respondidas>({})
+  const respondidas = useMemo(() => (DEMO && indice ? { ...respondidasDemo(indice), ...extrasDemo } : respondidasReais), [respondidasReais, indice, extrasDemo])
   const { sessao, iniciarComAviso } = usarSessao()
   const salvoNoServidor = usarPlanoSalvo(premium && !DEMO)
   const [planoDemo_, definirPlanoDemo] = useState<PlanoSalvo | null>(() => (DEMO ? planoDemo() : null))
@@ -126,6 +129,21 @@ export function PlanoEstudo() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas, dia])
   useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
+  // Demo `demo=1&puxado`: o próximo dia de estudo puxado, com 8 questões dele feitas hoje (para ver o calendário).
+  const demoPuxou = useRef(false)
+  useEffect(() => {
+    if (!DEMO || demoPuxou.current || !calculo || !plano || !location.hash.includes('puxado')) return
+    demoPuxou.current = true
+    const dia = calculo.dias.slice(1).find((d) => d.tipo !== 'folga' && d.total > 8)
+    if (!dia) return
+    const chave = chaveCivil(dia.data)
+    const ids = idsParaPuxar(calculo, chave)
+    const opcoes = opcoesComPuxado(plano, chave, ids, hojeBR())
+    if (!opcoes) return
+    const agora = Date.now()
+    definirExtrasDemo(Object.fromEntries(ids.slice(0, 8).map((id, k) => [id, { c: k % 4 !== 0, q: agora - k * 60_000, historico: [{ em: agora - k * 60_000, correta: k % 4 !== 0 }] } as unknown as RegistroQuestao])))
+    definirPlano({ ...plano, opcoes })
+  }, [calculo, plano]) // eslint-disable-line react-hooks/exhaustive-deps
   // O que foi feito hoje fora das questões, neste aparelho e nos outros (conta/marcasDia.ts).
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const marcasLocais = useMemo(() => marcasDoAparelho(feitosDia, resumaoLocal), [feitosDia, resumaoLocal, dia])
@@ -148,6 +166,15 @@ export function PlanoEstudo() {
     const t = setTimeout(() => document.getElementById('adiantar')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250)
     return () => clearTimeout(t)
   }, [irAoAdiantar, !!calculo]) // eslint-disable-line react-hooks/exhaustive-deps
+  // Vindo do fim da sessão ("Puxar as questões de amanhã"): #/cronograma?puxar=AAAA-MM-DD abre a sessão daquele dia.
+  const pedidoPuxar = typeof location !== 'undefined' ? location.hash.match(/puxar=(\d{4}-\d{2}-\d{2})/)?.[1] ?? null : null
+  const puxouDoLink = useRef(false)
+  useEffect(() => {
+    if (!pedidoPuxar || puxouDoLink.current || !calculo || !plano || !sincronizado) return
+    puxouDoLink.current = true
+    void puxarDia(pedidoPuxar)
+  }, [pedidoPuxar, !!calculo, !!plano, sincronizado]) // eslint-disable-line react-hooks/exhaustive-deps
+
   // O histórico mora no armazenamento local: lido uma vez por mudança nas respostas, não a cada render.
   const minutosQuestao = useMemo(() => minutosPorQuestao(lerHistorico()), [respondidas])
   const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
@@ -191,13 +218,49 @@ export function PlanoEstudo() {
     const atuais = DEMO ? respondidas : ler<Respondidas>('respondidas', {})
     if (!DEMO && atuais !== respondidas) { c = calcularPlano(indice, atuais, p); if (!c.hoje) return }
     const itens = c.hoje!.itens.length ? c.hoje!.itens : [{ slug: c.hoje!.slug, n: c.hoje!.n, mistura: false }]
-    const ids = idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), atuais, incluiSimulados(p))
+    // Hoje foi puxado num dia anterior: a sessão é a que ficou guardada para ele. Senão, a de sempre,
+    // sem as questões presas aos próximos dias puxados.
+    const ids = c.puxados[hojeBR()] && c.dias[0]
+      ? idsDaSessaoDoDia(c.dias[0], atuais).slice(0, 100)
+      : idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), { ...atuais, ...marcarReservadas(c) }, incluiSimulados(p))
     if (!ids.length) return
     const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
     if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma' }))) return
     navegar('/sessao')
   }
 
+  /**
+   * Puxar um dia (pedido do Tales, 19/10/2026): prende ao dia as questões que o plano dá a ele,
+   * grava no plano e abre a sessão com as que faltam dele. O que a pessoa fizer conta para aquele
+   * dia, não para a meta de hoje, e o resto continua lá.
+   */
+  async function puxarDia(dia: string) {
+    if (!indice || !calculo || !plano) return
+    const ids = idsParaPuxar(calculo, dia)
+    if (!ids.length) return
+    let novo = plano
+    const opcoes = opcoesComPuxado(plano, dia, ids, hojeBR())
+    if (opcoes) {
+      novo = { ...plano, opcoes }
+      definirPlano(novo)
+      if (!DEMO) {
+        // Grava antes de abrir a sessão: o fim da sessão e os outros aparelhos já contam as respostas para o dia certo.
+        definirSalvandoOpcoes(true); definirErro('')
+        try { const salvo = await salvarOpcoes((atual) => opcoesComPuxado(atual, dia, ids, hojeBR())); if (salvo) novo = salvo }
+        catch { definirPlano(plano); definirErro('Não foi possível guardar as questões desse dia agora. Confira a conexão e tente de novo.'); return }
+        finally { definirSalvandoOpcoes(false) }
+      }
+    }
+    if (!DEMO) { definirPreparando(true); await aguardarSincronia(8000); definirPreparando(false) }
+    const atuais = DEMO ? respondidas : ler<Respondidas>('respondidas', {})
+    const c = calcularPlano(indice, atuais, novo)
+    const doDia = c.dias.find((d) => chaveCivil(d.data) === dia)
+    const sessaoIds = doDia ? idsDaSessaoDoDia(doDia, atuais) : ids.filter((id) => !atuais[id])
+    if (!sessaoIds.length) return
+    const temas = [...new Set((doDia?.itens ?? []).map((i) => i.slug))]
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma' }))) return
+    navegar('/sessao')
+  }
   /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
   async function comecarIds(ids: string[], origem: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar', temas: string[] = []) {
     if (!ids.length) return
@@ -312,7 +375,7 @@ export function PlanoEstudo() {
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
     </div>
   )
 }
@@ -415,7 +478,7 @@ export interface HubDados {
   salvandoOpcoes: boolean
 }
 
-export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, aoComecar, aoAdiantar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; indice?: Indice; respondidas?: Respondidas; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
+export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, aoComecar, aoAdiantar, aoPuxar, pendente = null, hub = null, aoAjustar }: { plano: PlanoSalvo; calculo: CalculoPlano; indice?: Indice; respondidas?: Respondidas; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; /** Puxar um dia ("AAAA-MM-DD"): abre a sessão com as questões dele. */ aoPuxar?: (dia: string) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void }) {
   // O tour só é lido e gravado no cronograma do assinante (aberto): a vitrine não toca nele,
   // para ele aparecer sozinho na primeira visita depois de assinar.
   const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
@@ -495,6 +558,20 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
     botao = { rotulo: so ? `Continuar: faltam ${n} adiantadas` : calculo.feitasHoje > 0 ? `Continuar: faltam ${n} questões` : `Começar: ${n} questões`, detalhe: `${principal ? `${principal.nome}${mistura.length ? ` + ${mistura.map((m) => m.nome).join(' e ')}` : ''}` : 'Do cronograma'}${calculo.adiantarFalta > 0 && !so ? `, com ${calculo.adiantarFalta} adiantadas` : ''} · ~${formatarTempo(n * minutos)}`, aoClicar: aoComecar }
   }
   else if (calculo.miniHoje && !feitos.mini && hub) botao = { rotulo: 'Fazer o mini-simulado', detalhe: `${TAMANHO_MINI} questões · ~45 min`, aoClicar: hub.aoMini }
+  // Hoje terminado (ou folga): o botão passa a puxar o próximo dia de estudo (pedido do Tales, 19/10/2026),
+  // para quem não sabe que dá para tocar no dia no calendário.
+  const proximoPuxar = aberto && aoPuxar && !pendente ? proximoDiaParaPuxar(calculo) : null
+  let acaoTopo = botao
+  if (!botao && proximoPuxar) {
+    const t = textoPuxar(proximoPuxar)
+    const aoClicar = () => aoPuxar!(chaveCivil(proximoPuxar.data))
+    botao = { rotulo: t.rotulo, detalhe: `${t.detalhe} · ~${formatarTempo(proximoPuxar.total * minutos)} · contam para ${diaCurto(proximoPuxar.data).split(',')[0]}`, aoClicar, ouro: true }
+    // No topo cabe pouco: o mesmo botão, com a data embaixo.
+    const comecado = !!proximoPuxar.puxado?.feitas
+    const amanha = t.rotulo.includes('amanhã')
+    const semana = diaCurto(proximoPuxar.data).split(',')[0]
+    acaoTopo = { rotulo: comecado ? `Continuar ${semana}` : amanha ? 'Puxar amanhã' : `Puxar ${semana}`, detalhe: `${diaCurto(proximoPuxar.data)} · ${t.detalhe}`, aoClicar, ouro: true }
+  }
   // Meta feita: o destaque passa a ser o painel de adiantar (e as revisões ficam como extra, sem cobrança).
   const podeAdiantar = aberto && !!aoAdiantar && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
   const painelAdiantar = podeAdiantar && hub ? <PainelAdiantar calculo={calculo} minutos={minutos} destaque={!botao} salvando={hub.salvandoOpcoes} aoAdiantar={aoAdiantar!} aoCancelar={hub.aoCancelarAdiantar} /> : null
@@ -526,13 +603,13 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
 
     {/* O botão do dia também no topo: o calendário vem antes do cartão Hoje e o empurra para baixo. */}
-    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} aoAjustar={aberto ? aoAjustar : undefined} acao={naRetaFinalComRoteiro ? null : botao} nome={nome} recados={recados}
+    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} aoAjustar={aberto ? aoAjustar : undefined} acao={naRetaFinalComRoteiro ? null : acaoTopo} nome={nome} recados={recados}
       rodape={aberto && hub?.semana ? <ResumoSemana {...hub.semana} /> : undefined} />
 
     {/* Prioridade da página (Tales, 17/10/2026): o calendário grande vem logo abaixo de "Onde você está";
         o detalhe de hoje, a coluna lateral e os recolhidos ficam depois. */}
     {temCalendario && <CalendarioCronograma embutido nome={nome} plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
-      acoes={{ aoComecar, pendente, aoAdiantar: podeAdiantar ? aoAdiantar : undefined, salvando: hub?.salvandoOpcoes }} />}
+      acoes={{ aoComecar, pendente, aoPuxar: podeAdiantar ? aoPuxar : undefined, proximo: proximoPuxar, salvando: hub?.salvandoOpcoes }} />}
 
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">

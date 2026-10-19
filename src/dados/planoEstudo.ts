@@ -60,6 +60,13 @@ export interface OpcoesPlano {
   adiantados?: RegistroAdiantado[]
   /** O que foi feito hoje fora das questões, em qualquer aparelho (ver conta/marcasDia.ts). */
   marcasDia?: { em: string; resumao?: string[]; flashcards?: boolean; mini?: boolean }
+  /**
+   * Dias puxados (pedido do Tales, 19/10/2026): "AAAA-MM-DD" do dia futuro → as questões
+   * que o plano dava a ele quando a pessoa tocou em "Fazer as questões de …". Elas ficam
+   * presas àquele dia: o que ela fizer antes conta para ele (não para a meta do dia em que
+   * fez) e o resto continua lá. Ver opcoesComPuxado.
+   */
+  puxados?: Record<string, string[]>
 }
 
 export interface RegistroAdiantado { em: string; meta: number; pedido?: number }
@@ -79,7 +86,7 @@ export const TAMANHO_MINI = 30
 /** Minutos por questão quando ainda não há histórico. */
 export const MINUTOS_POR_QUESTAO = 1.5
 
-export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia'>> => ({
+export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados'>> => ({
   diasLeves: plano?.opcoes?.diasLeves ?? [],
   qtdLeve: Math.max(5, Math.min(40, plano?.opcoes?.qtdLeve ?? QTD_LEVE_PADRAO)),
   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],
@@ -159,6 +166,8 @@ export interface DiaPlano {
   data: Date; tipo: TipoDia; meta: number; itens: ItemDia[]; total: number; passada: Passada | null; mini: boolean
   /** Questões deste dia que a pessoa já adiantou (fez antes): saem da meta dele. */
   adiantado: number
+  /** Dia puxado (opcoes.puxados): quantas questões ficaram presas a ele e quantas já foram feitas. */
+  puxado?: { total: number; feitas: number } | null
 }
 export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number; focos: string[]; assuntos: AssuntoSemana[]; posicaoArea: number | null; depois: string[] }>; total: number; atual: boolean }
 export interface CalculoPlano {
@@ -213,6 +222,10 @@ export interface CalculoPlano {
   semanasTotal: number
   /** Projeção no ritmo do plano: % do alvo, % do que mais cai e quando o que mais cai termina. */
   projecao: { alvoPct: number; maisCaiPct: number; fimMaisCai: Date | null; cortadas: number; tetoAtivo: boolean }
+  /** Os dias puxados que ainda valem (hoje em diante), com todas as questões presas a cada um. */
+  puxados: Record<string, string[]>
+  /** As questões ainda por fazer dos dias puxados depois de hoje: a sessão de hoje não as usa. */
+  reservados: string[]
 }
 
 export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
@@ -227,6 +240,22 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const inicioModoProva = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - DIAS_MODO_PROVA)
   const vespera = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - 1)
   const fimEstudo = inicioRetaFinal > hoje ? inicioRetaFinal : prova
+
+  // Dias puxados: cada questão presa ao seu dia (puxadoDe, também dos dias que já passaram, para
+  // não contar como "a mais" no dia em que foi feita) e os que ainda valem (de hoje até a reta final).
+  const puxadoDe = new Map<string, number>()
+  const puxados = new Map<number, { chave: string; ids: string[] }>()
+  const brutos = Object.entries(plano.opcoes?.puxados ?? {}).filter(([k, ids]) => /^\d{4}-\d{2}-\d{2}$/.test(k) && Array.isArray(ids)).sort(([a], [b]) => a.localeCompare(b))
+  if (brutos.length) {
+    const doPlano = new Set(indice.questoes.filter((q) => entraNoPlano(q, simulados)).map((q) => q.id))
+    for (const [k, lista] of brutos) {
+      const data = dataLocal(k)
+      const ids = unicos(lista.filter((id) => typeof id === 'string' && doPlano.has(id) && !puxadoDe.has(id)))
+      if (!ids.length) continue
+      for (const id of ids) puxadoDe.set(id, data.getTime())
+      if (data >= hoje && data < inicioRetaFinal && !plano.folgas.includes(data.getDay())) puxados.set(data.getTime(), { chave: k, ids })
+    }
+  }
 
   // Acervo por tema: quantas faltam e o acerto de cada um.
   const porTema = new Map<number, { faltam: number; certas: number; erradas: number; respondidas: number }>()
@@ -272,6 +301,8 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     const primeira = r?.historico?.[0]?.em ?? r?.q
     if (primeira === undefined) continue
     const dia = primeira >= inicioHoje ? hoje.getTime() : diaCivil(primeira).getTime()
+    // Questão de um dia puxado, feita antes dele: conta para aquele dia, não para este.
+    if ((puxadoDe.get(q.id) ?? 0) > dia) continue
     primeirasPorDia.set(dia, (primeirasPorDia.get(dia) ?? 0) + 1)
   }
   const feitasHoje = primeirasPorDia.get(hoje.getTime()) ?? 0
@@ -307,8 +338,15 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     calendario.push({ data: d, tipo, mini: tipo === 'estudo' && ehMini(d) })
   }
   // Meta de um dia normal: o que falta, menos o que os dias leves e difíceis levam, dividido pelos dias normais (mini vale meio).
+  // Dias puxados: a carga deles é fixa (as questões presas a eles que ainda contam a partir de hoje).
+  const respondidaAntes = (id: string) => { const r = respondidas[id]; if (!r) return false; const p = r.historico?.[0]?.em ?? r.q; return p === undefined || p < inicioHoje }
+  const contaPuxado = new Map<number, { total: number; feitas: number; antes: number; livres: string[] }>()
+  for (const [t, { ids }] of puxados) contaPuxado.set(t, { total: ids.length, feitas: ids.filter((id) => respondidas[id]).length, antes: ids.filter(respondidaAntes).length, livres: ids.filter((id) => !respondidas[id]) })
+  let cargaPuxada = 0
+  for (const [t, c] of contaPuxado) cargaPuxada += t === hoje.getTime() ? c.total - c.antes : c.livres.length
   let fixos = 0, pesoNormal = 0
   for (const c of calendario) {
+    if (puxados.has(c.data.getTime())) continue
     if (c.tipo === 'leve') fixos += opcoes.qtdLeve
     else if (c.tipo === 'dificil') fixos += DIA_MINIMO
     else if (c.tipo === 'estudo') pesoNormal += c.mini ? 0.5 : 1
@@ -328,7 +366,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     : Math.max(1, Math.ceil(alvo / Math.max(1, diasDeEstudoCriacao.length)))
   // A meta normal; `devolver` são questões que dias de hoje em diante já não pedem (foram adiantadas antes de hoje).
   const normalCom = (devolver: number) => {
-    const precisa = pesoNormal > 0 ? Math.ceil(Math.max(0, restante + feitasHoje - fixos + devolver) / pesoNormal) : Math.max(0, restante + feitasHoje)
+    const precisa = pesoNormal > 0 ? Math.ceil(Math.max(0, restante + feitasHoje - fixos - cargaPuxada + devolver) / pesoNormal) : Math.max(0, restante + feitasHoje - cargaPuxada)
     const teto = precisa > Math.ceil(metaPlanejada * TETO_ATRASO)
     return { normal: teto ? Math.ceil(metaPlanejada * TETO_ATRASO) : precisa, teto }
   }
@@ -352,7 +390,10 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     for (const r of lista) {
       let resto = r.data.getTime() === hoje.getTime() ? deHoje : Math.max(0, (primeirasPorDia.get(r.data.getTime()) ?? 0) - r.meta)
       for (let d = proximo(r.data); resto > 0 && d < fimEstudo; d = proximo(d)) {
-        const livre = Math.max(0, metaBase(d) - (mapa.get(d.getTime()) ?? 0))
+        // Dia puxado: só recebe o que falta para a meta normal dele (se ela subiu depois de puxar).
+        const pux = contaPuxado.get(d.getTime())
+        const teto = pux ? Math.max(0, metaBase(d) - pux.total) : metaBase(d)
+        const livre = Math.max(0, teto - (mapa.get(d.getTime()) ?? 0))
         const t = Math.min(resto, livre)
         if (t) { mapa.set(d.getTime(), (mapa.get(d.getTime()) ?? 0) + t); resto -= t }
       }
@@ -360,15 +401,18 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     return mapa
   }
   const baseDoDia = (normal: number) => { const m = metaDoTipoCom(normal); return (d: Date) => { const tipo = tipoDe(d); return tipo === 'estudo' ? m(tipo, ehMini(d)) : m(tipo, false) } }
-  const devolvido = (mapa: Map<number, number>) => [...mapa].reduce((s2, [t, n]) => s2 + (t >= hoje.getTime() ? n : 0), 0)
+  const devolvido = (mapa: Map<number, number>) => [...mapa].reduce((s2, [t, n]) => s2 + (t >= hoje.getTime() && !contaPuxado.has(t) ? n : 0), 0)
   const passo1 = alocar(baseDoDia(normalCom(0).normal), 0)
   const { normal: metaDiaNormal, teto: tetoAtivo } = normalCom(devolvido(passo1))
   const metaDoTipo = metaDoTipoCom(metaDiaNormal)
   const anteriores = alocar(baseDoDia(metaDiaNormal), 0)
   const tipoHoje = calendario[0]?.tipo ?? tipoDe(hoje)
   const miniHoje = !!calendario[0]?.mini
-  const metaHojeSemAdiantar = hoje >= inicioRetaFinal ? 0 : Math.min(restante + feitasHoje, metaDoTipo(tipoHoje, miniHoje))
-  const adiantadoHoje = Math.min(metaHojeSemAdiantar, anteriores.get(hoje.getTime()) ?? 0)
+  // Hoje puxado num dia anterior: a meta é o dia guardado; o que já foi feito dele vale como adiantado.
+  const puxadoHoje = contaPuxado.get(hoje.getTime())
+  const creditoHoje = anteriores.get(hoje.getTime()) ?? 0
+  const metaHojeSemAdiantar = hoje >= inicioRetaFinal ? 0 : puxadoHoje ? puxadoHoje.total + creditoHoje : Math.min(restante + feitasHoje, metaDoTipo(tipoHoje, miniHoje))
+  const adiantadoHoje = puxadoHoje ? creditoHoje + puxadoHoje.antes : Math.min(metaHojeSemAdiantar, creditoHoje)
   const metaDiaria = metaHojeSemAdiantar - adiantadoHoje
   const faltaHoje = Math.max(0, metaDiaria - feitasHoje)
   const extraHoje = hoje >= inicioRetaFinal ? 0 : Math.max(0, feitasHoje - metaDiaria)
@@ -391,8 +435,9 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     return f.nivel >= 4 ? 1 : f.nivel === 3 ? 2 : 3
   }
   const livresPorTema = new Map<string, string[]>()
+  const presas = new Set([...puxados.values()].flatMap((p) => p.ids))
   for (const q of indice.questoes) {
-    if (!entraNoPlano(q, simulados) || respondidas[q.id]) continue
+    if (!entraNoPlano(q, simulados) || respondidas[q.id] || presas.has(q.id)) continue
     const slug = indice.temas[q.t]?.slug ?? String(q.t)
     const lista = livresPorTema.get(slug) ?? []
     lista.push(q.id)
@@ -410,10 +455,12 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   // Primeiro garante a 1ª passada (o que mais cai) de todas as áreas; se não couber tudo, divide pelo peso.
   const primeira = pesos.map((p) => ({ p, n: filaDoTema.get(p.t.slug)!.filter((id) => passadaDe(id) === 1).length }))
   const totalPrimeira = primeira.reduce((s2, x) => s2 + x.n, 0)
-  if (totalPrimeira <= restante) for (const x of primeira) cotaDe.set(x.p.t.slug, x.n)
-  let sobra = restante - [...cotaDe.values()].reduce((s2, n) => s2 + n, 0)
+  // As questões presas aos dias puxados já têm dia: a fila divide só o resto.
+  const restanteFila = Math.max(0, restante - [...contaPuxado.values()].reduce((s2, c2) => s2 + c2.livres.length, 0))
+  if (totalPrimeira <= restanteFila) for (const x of primeira) cotaDe.set(x.p.t.slug, x.n)
+  let sobra = restanteFila - [...cotaDe.values()].reduce((s2, n) => s2 + n, 0)
   // Plano menor que a 1ª passada: divide só a prioridade máxima entre as áreas.
-  const limite = (slug: string) => totalPrimeira > restante ? primeira.find((x) => x.p.t.slug === slug)!.n : filaDoTema.get(slug)!.length
+  const limite = (slug: string) => totalPrimeira > restanteFila ? primeira.find((x) => x.p.t.slug === slug)!.n : filaDoTema.get(slug)!.length
   for (let volta = 0; volta < 5 && sobra > 0; volta++) {
     const abertos = pesos.filter((p) => (cotaDe.get(p.t.slug) ?? 0) < limite(p.t.slug))
     const soma = abertos.reduce((s2, p) => s2 + p.peso, 0)
@@ -448,12 +495,24 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   // Simulação dia a dia: ~70% do bloco atual e ~30% do próximo bloco de outra área.
   const nomeFoco = (id: string) => focos.get(id)?.nome ?? 'Outros assuntos'
   const tirar = (bloco: { ids: string[] }, n: number) => bloco.ids.splice(0, n)
+  const temaDe = presas.size ? new Map(indice.questoes.filter((q) => presas.has(q.id)).map((q) => [q.id, q.t])) : new Map<string, number>()
   const dias: DiaPlano[] = []
   for (const [i, c] of calendario.entries()) {
+    const conta = contaPuxado.get(c.data.getTime())
     const adiantado = i === 0 ? adiantadoHoje : Math.min(metaDoTipo(c.tipo, c.mini), creditos.get(c.data.getTime()) ?? 0)
-    const meta = i === 0 ? faltaHoje + adiantarFalta : metaDoTipo(c.tipo, c.mini) - adiantado
+    const meta = i === 0 ? faltaHoje + adiantarFalta : conta ? conta.livres.length : metaDoTipo(c.tipo, c.mini) - adiantado
     const itens: ItemDia[] = []
     let capacidade = meta
+    // Dia puxado: primeiro as questões presas a ele, por área (a maior é a do dia; as outras, a mistura).
+    if (conta && capacidade > 0) {
+      const grupos = new Map<number, string[]>()
+      for (const id of conta.livres.slice(0, capacidade)) { const t = temaDe.get(id) ?? -1; grupos.set(t, [...(grupos.get(t) ?? []), id]) }
+      ;[...grupos].sort((a2, b2) => b2[1].length - a2[1].length).forEach(([t, ids], k) => {
+        const tema = indice.temas[t]
+        itens.push({ slug: tema?.slug ?? String(t), nome: tema?.nome ?? String(t), n: ids.length, assuntos: unicos(ids.map(nomeFoco)), mistura: k > 0, passada: Math.min(...ids.map(passadaDe)) as Passada, ids })
+        capacidade -= ids.length
+      })
+    }
     const adicionar = (bloco: { t: TemaPlano; passada: Passada; ids: string[] }, n: number, mistura: boolean) => {
       const ids = tirar(bloco, Math.min(n, capacidade))
       if (!ids.length) return
@@ -502,7 +561,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
       // Se a área do dia acabou no meio e a seguinte entrou com mais questões, ela vem primeiro.
       itens.sort((a2, b2) => Number(a2.mistura) - Number(b2.mistura) || (a2.mistura ? 0 : b2.n - a2.n))
     }
-    dias.push({ data: c.data, tipo: c.tipo, meta, itens, total: itens.reduce((s2, it) => s2 + it.n, 0), passada: itens[0]?.passada ?? null, mini: c.mini, adiantado })
+    dias.push({ data: c.data, tipo: c.tipo, meta, itens, total: itens.reduce((s2, it) => s2 + it.n, 0), passada: itens[0]?.passada ?? null, mini: c.mini, adiantado, puxado: conta ? { total: conta.total, feitas: conta.feitas } : null })
   }
   const cortadas = blocos.reduce((s2, b2) => s2 + b2.ids.length, 0)
 
@@ -547,7 +606,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const hojeTarefa = diaHoje && principalHoje && faltaHoje + adiantarFalta > 0
     ? { slug: principalHoje.slug, nome: principalHoje.nome, n: Math.min(faltaHoje + adiantarFalta, 100), focos: principalHoje.assuntos.slice(0, 3), itens: diaHoje.itens, mini: diaHoje.mini, tipo: diaHoje.tipo }
     : null
-  const amanha = dias.slice(1).find((d) => d.total > 0 || d.mini || d.adiantado > 0) ?? null
+  const amanha = dias.slice(1).find((d) => d.total > 0 || d.mini || d.adiantado > 0 || !!d.puxado) ?? null
 
   // Passadas: a de hoje e o primeiro dia de cada uma.
   const inicioPassada: Partial<Record<Passada, Date>> = {}
@@ -580,6 +639,8 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     naRetaFinal: hoje >= inicioRetaFinal && hoje < prova,
     provaPassou: hoje >= prova,
     metaDiaNormal, tipoHoje, miniHoje, dias, amanha, passadaAtual, inicioPassada, semanaNumero, semanasTotal, projecao,
+    puxados: Object.fromEntries([...puxados.values()].map((p) => [p.chave, p.ids])),
+    reservados: [...contaPuxado].filter(([t]) => t > hoje.getTime()).flatMap(([, c2]) => c2.livres),
   }
 }
 
@@ -776,8 +837,11 @@ export function idsDoDiaPlano(indice: Indice, itens: Array<{ slug: string; n: nu
     ids.forEach((id) => usados.add(id))
     return { mistura: it.mistura, ids }
   })
-  const principal = partes.filter((p) => !p.mistura).flatMap((p) => p.ids)
-  const mistura = partes.filter((p) => p.mistura).flatMap((p) => p.ids)
+  return espalharMistura(partes.filter((p) => !p.mistura).flatMap((p) => p.ids), partes.filter((p) => p.mistura).flatMap((p) => p.ids))
+}
+
+/** A mistura espalhada pela sessão: uma a cada k da área principal, começando um pouco depois do início. */
+function espalharMistura(principal: string[], mistura: string[]): string[] {
   if (!mistura.length) return principal
   // Uma da mistura a cada k da principal, começando um pouco depois do início.
   const resultado: string[] = []
@@ -788,4 +852,53 @@ export function idsDoDiaPlano(indice: Indice, itens: Array<{ slug: string; n: nu
     else if (p < principal.length) resultado.push(principal[p++])
   }
   return resultado
+}
+
+// ─── Puxar um dia (pedido do Tales, 19/10/2026) ─────────────────────────────
+
+/**
+ * As questões que puxar o dia ("AAAA-MM-DD") prende a ele: as que o plano dá ao dia agora,
+ * ou as que já estavam presas se ele foi puxado antes. Hoje, folga e reta final: nada.
+ */
+export function idsParaPuxar(calculo: Pick<CalculoPlano, 'dias' | 'puxados'>, dia: string): string[] {
+  if (calculo.puxados[dia]) return calculo.puxados[dia]
+  const k = calculo.dias.findIndex((d) => chaveData(d.data) === dia)
+  if (k <= 0) return []
+  const d = calculo.dias[k]
+  return d.tipo === 'folga' ? [] : d.itens.flatMap((i) => i.ids)
+}
+
+/** Até quantos dias para trás o registro de um dia puxado fica guardado (o bastante para refazer a conta dos dias recentes). */
+export const DIAS_GUARDAR_PUXADO = 7
+
+/**
+ * As opções com o dia puxado, ou null se nada muda (dia já puxado, de hoje ou sem questões).
+ * Os registros de dias que passaram há mais de uma semana saem.
+ */
+export function opcoesComPuxado(plano: Pick<PlanoSalvo, 'opcoes'>, dia: string, ids: string[], hoje: string): OpcoesPlano | null {
+  const atuais = plano.opcoes?.puxados ?? {}
+  if (!ids.length || atuais[dia]?.length || dia <= hoje) return null
+  const limite = somarDias(hoje, -DIAS_GUARDAR_PUXADO)
+  const mantidos = Object.fromEntries(Object.entries(atuais).filter(([k, v]) => k >= limite && Array.isArray(v) && v.length))
+  return { ...(plano.opcoes ?? {}), puxados: { ...mantidos, [dia]: [...ids] } }
+}
+
+/** A sessão de um dia do plano com as questões dele que ainda faltam (a mistura espalhada, como na de hoje). */
+export function idsDaSessaoDoDia(dia: Pick<DiaPlano, 'itens'>, respondidas: Record<string, unknown>): string[] {
+  const livres = (mistura: boolean) => dia.itens.filter((i) => i.mistura === mistura).flatMap((i) => i.ids).filter((id) => !respondidas[id])
+  return espalharMistura(livres(false), livres(true))
+}
+
+/** As reservadas aos dias puxados marcadas como "não usar", para juntar às respondidas ao montar a sessão de hoje. */
+export function marcarReservadas(calculo: Pick<CalculoPlano, 'reservados'>): Record<string, RegistroMinimo> {
+  return Object.fromEntries(calculo.reservados.map((id) => [id, { c: null }]))
+}
+
+/**
+ * Hoje terminado (ou folga): o próximo dia de estudo com questões para puxar, já pulando as
+ * folgas e os dias que ficaram livres. Se ele já foi começado, é o que falta dele.
+ */
+export function proximoDiaParaPuxar(calculo: Pick<CalculoPlano, 'dias' | 'faltaHoje' | 'adiantarFalta' | 'naRetaFinal' | 'provaPassou'>): DiaPlano | null {
+  if (calculo.naRetaFinal || calculo.provaPassou || calculo.faltaHoje + calculo.adiantarFalta > 0) return null
+  return calculo.dias.slice(1).find((d) => d.tipo !== 'folga' && d.total > 0) ?? null
 }

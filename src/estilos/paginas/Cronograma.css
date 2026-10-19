@@ -466,3 +466,7 @@
   .cr-form .pe-ao-vivo__total span { display: block; margin: 0.15rem 0; line-height: 0.95; }
 }
 @media (prefers-reduced-motion: reduce) { .cr-form .pe-intensidade:hover:not([aria-checked="true"]) { transform: none; } }
+
+/* Dia puxado e começado no calendário da semana (19/10/2026). */
+.cc--cronograma .ccs-selo--puxado { white-space: normal; text-align: left; background: color-mix(in srgb, var(--cp-feito) 14%, var(--superficie)); color: var(--cp-feito); font-variant-numeric: tabular-nums; }
+.cc--cronograma .ccs-dia--puxado .ccs-dia__numero b { color: var(--cp-feito); }
