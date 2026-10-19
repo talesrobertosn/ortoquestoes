@@ -130,3 +130,9 @@ Corrigir e gerar de novo até ficar impecável; só então enviar.
 
 ## Laboratório de patologia e Raspadinha da prova (aprovados em 18/10/2026)
 Tales aprovou os temas do post de 17/10 para o arsenal: **Laboratório de patologia** (feed) e **Raspadinha da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).
+
+## Caderneta de topografia e Bingo da prova (aprovados em 19/10/2026)
+Tales pediu para salvar como modelos o post de 19/10: **Caderneta de topografia** (feed) e **Bingo da prova** (stories). [Guia e modelos executáveis](../../marketing/instagram/estilos/CADERNETA-E-BINGO.md).
+
+## Ordem de rodízio dos estilos (orientação de 19/10/2026)
+Os estilos aprovados seguem uma **ordem fixa**, sem sorteio e sem repetir: antes de cada post, rode `node marketing/instagram/estilos/ordem.mjs` e use o estilo indicado para o feed e para os stories (o que foi combinado com o Tales para o dia passa na frente). [Regras e ordem atual](../../marketing/instagram/estilos/ORDEM.md).

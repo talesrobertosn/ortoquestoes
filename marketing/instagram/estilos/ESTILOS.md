@@ -3,8 +3,8 @@
 > **Modelo padrão (16/10/2026):** quando o Tales pedir "no modelo padrão", use o [MODELO-PADRAO.md](MODELO-PADRAO.md) (telas reais editadas, verde ou branco), em vez de sortear.
 
 Os formatos de 4/10/2026 (o trio de estudo e o mapa de metrô das novidades) viraram estilos fixos da marca. Para variar a grade,
-sorteie um estilo a cada post novo (aleatório, sem repetir o último) e acompanhe com o story semeador
-do mesmo estilo.
+escolha o estilo pela **ordem de rodízio** ([ORDEM.md](ORDEM.md), `node marketing/instagram/estilos/ordem.mjs`; pedido do
+Tales em 19/10/2026: seguir uma ordem, sem sorteio). O `sortear.mjs` fica só para criar a pasta do estilo já escolhido.
 
 ```
 node marketing/instagram/estilos/sortear.mjs                 # sorteia e mostra a ficha
@@ -336,3 +336,7 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 - **Raspadinha da prova (stories, 3 telas):** bilhete de raspadinha com a questão, a área raspada com a resposta e a chamada "Treine grátis" com o Cronograma. [Modelo](raspadinha/modelo.html).
 
 [Guia, roteiro, acabamento e revisão](LABORATORIO-E-RASPADINHA.md). Usar por cópia direta.
+
+## Caderneta de topografia e Bingo da prova: aprovados em 19/10/2026
+
+Feed **Caderneta de topografia** (figura com ângulos ou parâmetros de nomes parecidos, 6 slides em papel quadriculado) e stories **Bingo da prova** (questão em que um número decide, 4 telas em feltro verde). [Guia e modelos executáveis](CADERNETA-E-BINGO.md).
