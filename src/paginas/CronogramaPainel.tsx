@@ -41,7 +41,7 @@ const faixaCores = (partes: Array<{ slug: string; n: number }>) => {
 /** O botão do dia levado ao topo (atalho do mesmo botão do cartão Hoje). */
 export interface AcaoTopo { rotulo: string; detalhe?: string; aoClicar?: () => void; href?: string; ouro?: boolean }
 
-export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar, acao = null, rodape, nome = '', recados = [] }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; aoAjustar?: () => void; acao?: AcaoTopo | null; /** O resumo da semana (domingo e segunda), dentro do topo. */ rodape?: ReactNode; /** Primeiro nome da pessoa, no título (adendo do dono, 18/10/2026). */ nome?: string; /** Frases curtas com os dados dela: a meta de hoje, a área mais forte. */ recados?: ReactNode[] }) {
+export function OndeVoceEsta({ plano, calculo, previa = false, selo, aoAjustar, acao = null, rodape, nome = '', recados = [] }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; /** Troca o "Onde você está" do selo (o cenário fictício de quem não assina). */ selo?: string; aoAjustar?: () => void; acao?: AcaoTopo | null; /** O resumo da semana (domingo e segunda), dentro do topo. */ rodape?: ReactNode; /** Primeiro nome da pessoa, no título (adendo do dono, 18/10/2026). */ nome?: string; /** Frases curtas com os dados dela: a meta de hoje, a área mais forte. */ recados?: ReactNode[] }) {
   const hoje = diaCivil()
   const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
@@ -76,7 +76,7 @@ export function OndeVoceEsta({ plano, calculo, previa = false, aoAjustar, acao =
     <section className="cp-onde" aria-labelledby="cp-onde-titulo">
       <div className="cp-onde__cabeca">
         <div className="cp-onde__texto">
-          <p className="tr-heroi__selo cp-onde__selo">{previa ? 'Exemplo do cronograma' : 'Onde você está'} · {plano.prova}</p>
+          <p className="tr-heroi__selo cp-onde__selo">{selo ?? (previa ? 'Exemplo do cronograma' : 'Onde você está')} · {plano.prova}</p>
           <h1 id="cp-onde-titulo">{calculo.provaPassou ? (nome ? `${nome}, é o dia da prova` : 'Dia da prova') : <>{nome ? `${nome}, faltam` : 'Faltam'} <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
           <p className="cp-onde__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal}</p>
           {recados.length > 0 && <ul className="cp-onde__recados">{recados.map((r, i) => <li key={i}>{r}</li>)}</ul>}
@@ -222,17 +222,18 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
 }) {
   const [abertoManual, definirAbertoManual] = useState(() => typeof location !== 'undefined' && location.hash.includes('adiantar=1'))
   // Os próximos dias que ainda têm meta, com quanto cada um pede.
-  const proximos = calculo.dias.slice(1).filter((d) => d.meta > 0).slice(0, 3)
+  const proximos = calculo.dias.slice(1).filter((d) => d.meta > 0 && !d.puxado).slice(0, 3)
   const ja = Math.max(calculo.extraHoje, calculo.adiantarPedido)
   const tocados = calculo.dias.slice(1).filter((d) => d.adiantado > 0)
   if (!proximos.length && !tocados.length) return null
   const nomeDia = (d: Date) => diferencaDias(d) === 1 ? 'amanhã' : semanaDia(d)
-  const d1 = proximos[0], d2 = proximos[1]
+  const d1 = proximos[0]
   const opcoes: Array<{ id: string; n: number; rotulo: string; efeito: string }> = []
   if (d1) {
     for (const n of [10, 20, 30]) if (n < d1.meta) opcoes.push({ id: `+${n}`, n, rotulo: `+${n}`, efeito: `${nomeDia(d1.data)} fica com ${d1.meta - n}` })
-    opcoes.push({ id: 'd1', n: d1.meta, rotulo: diferencaDias(d1.data) === 1 ? 'Amanhã inteiro' : `${semanaDia(d1.data)} ${d1.data.getDay() === 0 || d1.data.getDay() === 6 ? 'inteiro' : 'inteira'}`, efeito: `${d1.meta} questões · ${nomeDia(d1.data)} livre` })
-    if (d2) opcoes.push({ id: 'd2', n: d1.meta + d2.meta, rotulo: `2 dias`, efeito: `${d1.meta + d2.meta} questões · até ${semanaDia(d2.data)}` })
+    // O dia inteiro não sai mais daqui (19/10/2026): ele é puxado com as questões dele, pelo botão do
+    // cartão Hoje ou tocando no dia no calendário, e o que faltar continua no dia.
+    if (!opcoes.length) opcoes.push({ id: 'd1', n: d1.meta, rotulo: `+${d1.meta}`, efeito: `${nomeDia(d1.data)} fica livre` })
   }
   const pendente = Math.max(0, calculo.adiantarPedido - calculo.extraHoje)
   // Antes da meta feita o painel fica fechado numa linha (a página pedia muita leitura de uma vez);
@@ -241,8 +242,8 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
   const cabeca = <>
     <span className="cp-adiantar__icone" aria-hidden="true"><Icone nome={aberto ? 'direita' : 'raio'} tamanho={18} /></span>
     <div>
-      <strong>{destaque ? 'Quer adiantar?' : 'Sobrou energia? Adiante'}</strong>
-      <small>O que você fizer além da meta de hoje sai dos próximos dias, começando por {d1 ? nomeDia(d1.data) : 'amanhã'}.</small>
+      <strong>{destaque ? 'Quer adiantar algumas?' : 'Sobrou energia? Adiante'}</strong>
+      <small>O que passar da meta de hoje sai dos próximos dias, começando por {d1 ? nomeDia(d1.data) : 'amanhã'}. Um dia inteiro: toque nele no calendário.</small>
     </div>
   </>
   if (!aberto) return (
@@ -264,7 +265,7 @@ export function PainelAdiantar({ calculo, minutos, destaque, salvando, aoAdianta
       </p>}
       {opcoes.length > 0 && <div className="cp-adiantar__opcoes" role="group" aria-label="Quanto adiantar">
         {opcoes.map((o) => (
-          <button key={o.id} type="button" className={'cp-adiantar__opcao' + (o.id.startsWith('d') ? ' cp-adiantar__opcao--dia' : '') + (o.id === 'd1' && !d2 ? ' cp-adiantar__opcao--sozinha' : '')} disabled={salvando} onClick={() => aoAdiantar(o.n)}>
+          <button key={o.id} type="button" className={'cp-adiantar__opcao' + (o.id.startsWith('d') ? ' cp-adiantar__opcao--dia' : '')} disabled={salvando} onClick={() => aoAdiantar(o.n)}>
             <b>{o.rotulo}</b>
             <small>{o.efeito}</small>
             <em>~{formatarTempo(o.n * minutos)}</em>

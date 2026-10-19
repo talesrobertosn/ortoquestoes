@@ -3175,6 +3175,167 @@ criada".
   63 é o lugar da síndrome compartimental e da exposta aplicadas à tíbia; os dados de compartimento
   mais acometido e de cateter ficam no capítulo 17.
 
+## Fraturas da diáfise do rádio e da ulna na criança (engenharia reversa em 19/10/2026; Rockwood and Wilkins cap. 9)
+
+**Recorte.** `mapear_banca.py --subtema 'Fraturas do antebraço e punho na criança' --tema pediatria`: 37
+oficiais (32 de TEOT e TARO com quatro alternativas), TARO 2006 a 2026 e TEOT 2021 a 2025, mais as do
+mesmo assunto em outros subtemas, achadas com regex de antebraço, galho verde, deformidade plástica,
+refratura, sinostose e haste: BLOUNT (TARO 2021 `pediatria-0584`), deformidade plástica na ulna (TARO
+2013 `0674`), sinostose após MONTEGGIA (TARO 2012 `0664`), agitação na síndrome compartimental da criança
+(TARO 2020 `trauma-0012`) e pico de incidência (PUC-SP 2019 `mao-1050`). O subtema mistura assuntos de
+outros capítulos (metacarpo, capitato, BENNETT pediátrico, colo do rádio, LETTS, fises distais), que
+ficam fora deste. Nenhum simulado de ortopedia pediátrica existia antes deste lote.
+
+**Frequência.** Cai quase todo ano no TARO (2007 a 2019 quase sem falha, 2021, 2022, 2024 a 2026) e
+voltou ao TEOT em 2021, 2024 e 2025. Prioridade alta dentro da pediatria.
+
+**Fatos carimbados.**
+- **Galho verde e rotação (o bloco mais repetido):** ápice volar por supinação (TARO 2026 `0523`),
+  pronação produzindo ápice dorsal (TARO 2010 `0723`), cortical em tensão no "desvio dorsal" (TARO 2009
+  `0773`), posição de redução (TARO 2008 `0747`), supinação máxima mantendo a cortical (TARO 2006
+  `0829`), hiperpronação e níveis diferentes (TARO 2017 `0612`). Os de 2006 a 2010 não têm gabarito.
+- **Deformidade plástica:** osso mais acometido (ulna, TARO 2013), indicação por angulação e idade
+  (TARO 2012), força e tempo (20 a 30 kg, 2 a 3 minutos, TARO 2014), conduta com limitação da rotação
+  (redução incruenta e gesso, TARO 2016), indicação na criança menor de 6 anos (TARO 2019).
+- **Refratura:** galho verde (TARO 2018 `0632`), sexo masculino após galho verde (TEOT 2025 `0919`,
+  quase o mesmo texto), intervalo e local (TARO 2007 `0729`, sem gabarito).
+- **Exame:** tuberosidade bicipital e referência distal (TARO 2025 `0527`), sinal de OK e interósseo
+  anterior (TARO 2022 `0566`).
+- **Mecanismo:** transição médio-distal do rádio e diáfise da ulna como segmentos vulneráveis (TARO 2015
+  `0598`).
+- **Remodelação e função:** menor quanto mais proximal (TARO 2006 `0830`), arco de 50 e 50 (TARO 2006
+  `0828`), ambas sem gabarito.
+- **Complicação mais comum:** consolidação viciosa no terço distal e na extremidade do rádio (TEOT 2021
+  `0849`, TEOT 2025 `0917`), do lado metafisário (cap. 8).
+
+**Forma.** Enunciado mediano de 106 caracteres, alternativa de 24; termina em palavra (29 de 32); sem
+imagem e sem caso clínico; sete pares 2 por 2 (sexo com tipo de fratura, força com tempo, angulação com
+idade, rádio com ulna, varo ou valgo com fragmento, referência proximal com distal). Aberturas "Na
+fratura..." e "A fratura...". Gabarito concentrado em C e D (A3, B5, C7, D9). Reciclagem quase literal:
+refratura (2018 e 2025).
+
+**Divergências (para `alerta:` do resumo).**
+- `pediatria-0527` (TARO 2025, gabarito tuberosidade com tabaqueira): o capítulo traz a relação
+  tuberosidade e estiloide de EVANS, mas a frase que liga a tuberosidade a uma referência da mão é de
+  RANG, com a eminência tenar (alternativa B).
+- `pediatria-0612` (TARO 2017, níveis diferentes): o capítulo liga as "forças de hiperpronação
+  importantes" também à fratura isolada com luxação radioulnar (alternativa D).
+- `pediatria-0665` (TARO 2012, mais de 20 graus acima de 4 anos): o capítulo traz VORLAT e DE BOECK,
+  mais de 10 graus acima de 6 anos.
+- `pediatria-0636` (TARO 2019, limitação de 30 graus da rotação): critério fora do capítulo.
+- Sem gabarito: `0729` (o capítulo dá 6 meses e o foco original; a resposta provável do site, três
+  meses, não é a do livro), `0829` (se for ápice dorsal, o capítulo sustenta "certo"), `0827`
+  (VOLKMANN, fora do capítulo).
+
+**Lacunas com cara de prova.** Limites de 20, 15 e 10 graus por terço; translação total com menos de 1
+cm; critério de adulto com menos de 2 anos de crescimento; ESIN de 1,5 a 2,5 mm, três diâmetros além do
+foco e retirada com 1 ano; abrir após 20 a 30 minutos; rádio fixado primeiro nos dois ossos e ulna
+primeiro no osso único; entradas distais (primeiro compartimento e ramo superficial do radial; LISTER e
+extensor longo do polegar); regra dos 3 do gesso com cotovelo estendido; retardo às 12 semanas e
+pseudartrose aos 6 meses; flexor profundo preso na ulna; sinostose diafisária ligada à placa; os três As;
+"biópsia do gramado" e desbridamento no centro cirúrgico.
+
+**Destino.** Tema Ortopedia pediátrica, subtema "Fraturas do antebraço e punho na criança". Entram no
+filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 9** (Diaphyseal Radius and Ulna Fractures; Mehlman e Wall, 9ª ed.):
+`pediatria-0960` a `pediatria-0971`, 12 questões, sem figura e sem caso clínico, gabarito A2/B3/C3/D4,
+mediana do comentário de 4.600 caracteres, cada comentário fechado com "Por que esta questão foi
+criada".
+- **Gêmeas dos carimbados:** galho verde de ápice dorsal, mecanismo e manobra (espelho do TARO 2026);
+  tuberosidade em supinação e pronação (TARO 2025); padrão da deformidade plástica (TARO 2013) e limite
+  de VORLAT e DE BOECK (TARO 2012 e 2019); refratura com intervalo e local (TARO 2007, 2018, TEOT 2025);
+  mediano e sinal de OK (TARO 2022); complicação mais comum na diáfise (TEOT 2021 e 2025); sinostose
+  diafisária e placa (TARO 2012).
+- **Lacunas:** limites por terço, ESIN (diâmetro e retirada), 20 a 30 minutos antes de abrir, MONTEGGIA
+  como armadilha da fratura do cassetete.
+- **Fronteira:** o cap. 8 (rádio e ulna distais) foi feito em paralelo e ficou com metáfise e fise
+  distais, GALEAZZI pediátrico e TFCC. Lição: no subtema "Fraturas do antebraço e punho na criança" a
+  banca não diz o nível; a resposta da diáfise (perda da redução, rigidez, refratura, 20, 15 e 10 graus)
+  não é a da metáfise (consolidação viciosa, remodelação maior).
+
+## Fraturas do rádio e da ulna distais na criança (engenharia reversa em 19/10/2026; Rockwood and Wilkins cap. 8)
+
+**Recorte.** `mapear_banca.py --subtema 'Fraturas do antebraço e punho na criança' --todas-as-provas` (47
+questões, que o cap. 9 dividiu comigo pela fronteira diáfise × metáfise e fise distais) e regex de rádio
+distal, punho, ulna distal, GALEAZZI, toro, ginasta, THURSTON, radioulnar distal, fibrocartilagem,
+estiloide, gesso, remodelação, baioneta e pronador em `--tema pediatria`, mais criança com rádio, ulna ou
+punho nos outros temas. Úteis para o cap. 8: cerca de 25, de TARO 2006 a TARO 2026, TEOT 2021 e 2025,
+TEPOP 2024, ENARE 2023, CET-PR e PUC-SP 2019 (`mao-1056`). Fora do capítulo: escafoide da criança
+(`pediatria-0241`, `trauma-0093`), metacarpo, capitato, BENNETT pediátrico, colo do rádio, MONTEGGIA.
+
+**Frequência.** Pelo menos uma por ano no TARO desde 2014 (2014, 2015, 2018, 2021, 2022, 2023, 2025,
+2026) e no TEOT em 2021 e 2025; prioridade alta dentro da pediatria.
+
+**Fatos carimbados.**
+- **Galho verde e rotação:** ápice volar por supinação (TARO 2026 `0523`); pronação faz ápice dorsal
+  (TARO 2010 `0723`); cortical anterior em tensão no desvio dorsal (TARO 2009 `0773`); redução do desvio
+  dorsal em pronação e flexão (TARO 2008 `0747`). Os três antigos sem gabarito, todos sustentados.
+  Dividido com o cap. 9 (o simulado `pediatria-0960` cobre a diáfise; por isso o cap. 8 não fez gêmea).
+- **Periósteo e baioneta:** irredutível com deslocamento volar = periósteo dorsal e extensores (TARO 2021
+  `0594`); periósteo na baioneta de ápice volar (TEPOP 2024 `0944`); estrutura lesada na baioneta
+  reversa (TARO 2022 `0574`).
+- **Fise:** THURSTON-HOLLAND = SALTER-HARRIS II (ENARE 2023 `0921`); tipo III por compressão e avulsão
+  radiocárpica volar (TARO 2018 `0628`); descolamento mais comum no rádio distal (TARO 2014 `0689`);
+  redução tardia e 7 dias (TARO 2008 `0750`, sem gabarito); contribuição de 75% a 80% (TARO 2008
+  `0766`, sem gabarito).
+- **Complicação mais comum = consolidação viciosa** (TEOT 2025 `0917`, TEOT 2021 `0849`).
+- **Urgência = síndrome aguda do túnel do carpo** (TARO 2015 `0604`); sinal de OK (TARO 2022 `0566`).
+- **GALEAZZI:** conservador em gesso axilopalmar, raramente cirúrgico (TEPOP 2024 `0940`); quando
+  suspeitar (TARO 2025 `0528`).
+- **Ginasta:** lesão fisária por estresse no antebraço (TARO 2021 `0585`).
+- **Epidemiologia:** sexo e lado (TARO 2023 `0554`).
+
+**Forma.** Enunciado curto (cerca de 100 caracteres), abertura "Na fratura...", final em palavra; pares 2 por
+2 frequentes (sexo × lado, íntegro × rompido, rotação × frequência da cirurgia, compressão ou rotação ×
+avulsão volar ou dorsal); certo ou errado só no TARO 2006; sem imagem no recorte do cap. 8.
+
+**Divergências (para `alerta:` do resumo).**
+- `pediatria-0554` (TARO 2023): gabarito masculino e lado dominante; o capítulo diz não dominante no
+  menino.
+- `pediatria-0944` (TEPOP 2024): gabarito periósteo volar íntegro e dorsal rompido na baioneta de ápice
+  volar; o capítulo (figura 8-9) dá dorsal íntegro e volar rompido, e a combinação do gabarito é a da
+  baioneta volar (figura 8-2).
+- `pediatria-0574` (TARO 2022): gabarito tendões flexores na baioneta reversa; a figura 8-2 diz que o
+  fragmento proximal atravessa os extensores.
+- `pediatria-0528` (TARO 2025): gabarito rádio com estiloide da ulna; o capítulo define o GALEAZZI da
+  criança por rádio com luxação da radioulnar ou com fratura da fise distal da ulna, e trata a avulsão
+  do estiloide como lesão da fibrocartilagem.
+- `pediatria-0940` (TEPOP 2024): gabarito supinação; o capítulo imobiliza na rotação de estabilidade,
+  pronação no tipo de supinação e supinação no de pronação.
+- Fora do capítulo: ranking do descolamento epifisário (TARO 2014), sinal de OK (TARO 2022), ressonância
+  imediata (PUC-SP 2019).
+- Números do próprio capítulo: 7 dias no texto e 5 dias na tabela de contraindicações para não
+  remanipular a fise; força da redução do GALEAZZI "de volar para dorsal" no foco do ápice volar, contra
+  "de dorsal para volar" no fragmento distal do galho verde de ápice volar; 2 mm no texto e 1 mm no método
+  dos autores para operar a fratura articular; 90% e 60% a 80% para a contribuição da fise distal ao
+  crescimento do rádio. Perguntar só o inequívoco.
+
+**Lacunas com cara de prova.** Toro (compressão, transição metáfise-diáfise, tala removível por 3 semanas);
+manobra da baioneta (hiperextensão primeiro, pesos atrapalham); índice do gesso de 0,7; gesso curto igual ao
+longo; perda de redução em 20% a 30% e translação acima de 50%; tabela 8-1; malrotação não remodela;
+parada de 4% no rádio e 10% a 55% na ulna (55% no equivalente de GALEAZZI); barra abaixo de 45%; HAFNER e
+variância (80/20, 2,5 mm dobra a carga); TFCC periférica a mais comum; fio pelo estiloide com pequena
+incisão (ramo sensitivo do radial); cotovelo flutuante com fixação das duas; pressões de 40 e 30 mm Hg e
+zetaplastia do ligamento transverso; gangrena gasosa em ferida pequena; cunha de abertura no gesso.
+
+**Destino.** Tema Ortopedia pediátrica, subtema "Fraturas do antebraço e punho na criança" (mais "Lesões
+fisárias" nas questões de fise).
+
+**Aproveitamento do capítulo 8** (Fractures of the Distal Radius and Ulna; Hennrikus e Bae): `pediatria-0972`
+a `pediatria-0983`, 12 questões, sem figura, um caso clínico curto, gabarito A3/B3/C3/D3, mediana do
+comentário de cerca de 4,45 mil caracteres, cada comentário fechado com "Por que esta questão foi criada".
+- **Gêmeas:** irredutível com desvio dorsal (espelho do TARO 2021); perda de redução em 20% a 30% (origem da
+  consolidação viciosa do TEOT 2025 e 2021); remodelação sagital (TARO 2006); fise tardia em caso clínico
+  (TARO 2008); GALEAZZI em pronação por 6 semanas (TEPOP 2024, TARO 2025); mediano com fio percutâneo
+  (TARO 2015); ginasta e variância positiva (TARO 2021); parada do rádio × ulna (TARO 2014, TEOT 2025).
+- **Lacunas:** toro; primeiro tempo da redução da baioneta (ligado ao TEPOP 2024); índice do gesso; TFCC
+  periférica.
+- **Fronteira:** o cap. 9 (`pediatria-0960` a `pediatria-0971`) ficou com galho verde diafisário,
+  deformidade plástica, refratura, haste e sinostose. A gêmea do galho verde de ápice dorsal foi trocada
+  pelo toro ao reler o registro, porque `pediatria-0960` já cobria o mesmo fato na diáfise. Lição: os dois
+  resumos usam a mesma linha `subtemas:`, e as questões reais do galho verde ficam citadas nos dois.
+
 ## Avaliação do cotovelo da criança (Rockwood and Wilkins 9ª ed., cap. 12, 19/10/2026)
 
 **Recorte.** Questões de ossificação do cotovelo, linhas e ângulos radiográficos, sinal do coxim gorduroso,

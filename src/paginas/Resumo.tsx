@@ -16,7 +16,8 @@ import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
 import { CONQUISTAS, CONQUISTAS_SEQUENCIA, proximaConquista } from '../estado/conquistas'
 import { IconePixel } from '../componentes/IconePixel'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
-import { fraseAdiantado } from '../dados/frasesAdiantar'
+import { fraseAdiantado, textoPuxar } from '../dados/frasesAdiantar'
+import { proximoDiaParaPuxar } from '../dados/planoEstudo'
 import { recurso } from '../config'
 import { href, navegar } from '../util/rotas'
 import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
@@ -611,6 +612,9 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
   const amanha = calculo.amanha
   const nomesAmanha = amanha ? [...new Set(amanha.itens.map((i) => i.nome))].join(' e ') : ''
   const quandoAmanha = amanha ? amanha.data.toLocaleDateString('pt-BR', { weekday: 'long' }).replace('-feira', '') : ''
+  // Meta feita: o botão puxa o próximo dia de estudo direto (pedido do Tales, 19/10/2026).
+  const proximo = feita ? proximoDiaParaPuxar(calculo) : null
+  const puxar = proximo ? textoPuxar(proximo) : null
   return (
     <section className={'rs-cronograma' + (feita ? ' rs-cronograma--feita' : '')} aria-labelledby="rs-cron-titulo">
       <span className="rs-cronograma__selo" aria-hidden="true">{feita ? <Icone nome="certo" tamanho={28} /> : <span className="numerico">{calculo.faltaHoje}</span>}</span>
@@ -618,10 +622,10 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
       <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
       <div className="rs-cronograma__proximo">
         {fraseAdiantado(calculo) && <><b>{fraseAdiantado(calculo)}</b><br /></>}
-        {feita ? <>Pronto por hoje. Se quiser, <b>adiante o próximo dia</b>: o que fizer a mais sai dele. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
+        {feita ? <>Pronto por hoje. Se quiser, <b>puxe as questões do próximo dia</b>: o que fizer conta para ele, e o resto continua lá. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
         {amanha && <><br />{chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
       </div>
-      <a className={'botao botao--grande ' + (feita ? 'botao--ouro' : 'botao--principal')} href={href(feita ? '/cronograma?adiantar=1' : '/cronograma')}>{feita ? 'Adiantar o próximo dia' : 'Continuar o cronograma'}</a>
+      <a className={'botao botao--grande ' + (feita ? 'botao--ouro' : 'botao--principal')} href={href(proximo ? `/cronograma?puxar=${chaveCivil(proximo.data)}` : feita ? '/cronograma?adiantar=1' : '/cronograma')}>{puxar ? `${puxar.rotulo} · ${puxar.detalhe}` : feita ? 'Adiantar o próximo dia' : 'Continuar o cronograma'}</a>
       {feita && <span className="rs-cronograma__link"><a href={href('/cronograma')}>Voltar ao cronograma</a> · <a href={href('/revisao')}>revisões (opcional)</a></span>}
     </section>
   )

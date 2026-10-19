@@ -1,0 +1,181 @@
+/* Porta do leitor para visitantes (19/10/2026). Arquivo próprio, carregado só com o leitor dos resumos.
+   O livrinho é pixel art em CSS, medido em --u (o "pixel" do desenho), como o livro da Biblioteca
+   (BibliotecaConvite.css): capa verde com moldura de ouro, folhas à mostra, fita de ouro e um fecho
+   com cadeado. As cores do texto seguem o tema do leitor (--lr-*: claro, sépia, escuro). */
+.pl {
+  --u: 4px;
+  --pl-tinta: #1b1208;
+  --pl-capa: #1f6a5e;
+  --pl-capa-funda: #0f3f38;
+  --pl-capa-luz: #3f9585;
+  --pl-papel: #f6eedb;
+  --pl-papel-linha: #d8c69c;
+  --pl-palco: color-mix(in srgb, var(--lr-acento) 9%, var(--lr-papel));
+  position: relative; display: grid; grid-template-columns: 12.5rem minmax(0, 1fr); gap: 1.6rem; align-items: start;
+  margin: 2.6rem 0 1.5rem; padding: 0.7rem 1.6rem 1.4rem 0.7rem;
+  border: 2px solid var(--pl-tinta); background: var(--lr-papel); color: var(--lr-texto);
+  box-shadow: 6px 6px 0 color-mix(in srgb, var(--lr-acento) 30%, transparent);
+  font-family: var(--fonte-texto, system-ui); font-size: 1rem; line-height: 1.5; hyphens: manual; -webkit-hyphens: manual; text-align: left;
+  break-inside: avoid; scroll-margin-top: 80px;
+}
+.lr--escuro .pl { --pl-tinta: #050807; border-color: #39433f; box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.45); }
+
+/* ---------- O palco e o livro ---------- */
+.pl-palco {
+  position: relative; display: grid; place-items: center; align-self: stretch; min-height: 15rem;
+  background: var(--pl-palco);
+  background-image: radial-gradient(color-mix(in srgb, var(--lr-acento) 22%, transparent) 1px, transparent 1.4px);
+  background-size: 16px 16px; background-position: 8px 8px;
+}
+.pl-livro {
+  position: relative; display: block; width: calc(var(--u) * 32); height: calc(var(--u) * 42);
+  text-decoration: none; cursor: pointer; -webkit-tap-highlight-color: transparent;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.pl-livro > span, .pl-livro__flutua > span { position: absolute; display: block; }
+.pl-livro__flutua { inset: 0 0 auto; height: calc(var(--u) * 38); animation: pl-flutua 4.6s ease-in-out infinite; transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); }
+
+/* Folhas à mostra à direita e embaixo, em linhas de papel. */
+.pl-livro__folhas {
+  left: calc(var(--u) * 3); top: var(--u); width: calc(var(--u) * 27); height: calc(var(--u) * 36);
+  background: repeating-linear-gradient(to bottom, var(--pl-papel) 0 3px, var(--pl-papel-linha) 3px 4px);
+  box-shadow: 0 0 0 2px var(--pl-tinta);
+}
+/* Fita de ouro saindo por cima, presa entre as folhas: marca onde a leitura parou. */
+.pl-livro__fita {
+  left: calc(var(--u) * 19); top: calc(var(--u) * -4); width: calc(var(--u) * 3); height: calc(var(--u) * 9); z-index: 1;
+  background: linear-gradient(to right, var(--px-ouro, #f4cf7c) 0 60%, #d9a43c 60%); box-shadow: 0 0 0 2px var(--pl-tinta);
+  transform-origin: 50% 100%; animation: pl-fita 4.6s ease-in-out infinite;
+}
+.pl-livro .pl-livro__capa {
+  left: 0; top: 0; width: calc(var(--u) * 28); height: calc(var(--u) * 36); z-index: 2;
+  display: flex; flex-direction: column; align-items: flex-start; gap: calc(var(--u) * 1.5);
+  padding: calc(var(--u) * 5) calc(var(--u) * 3) calc(var(--u) * 3.5) calc(var(--u) * 5); box-sizing: border-box;
+  background:
+    linear-gradient(to right, var(--pl-capa-funda) 0 var(--u), var(--pl-capa-luz) var(--u) calc(var(--u) * 2), transparent calc(var(--u) * 2)),
+    var(--pl-capa);
+  box-shadow: 0 0 0 2px var(--pl-tinta), inset 0 2px 0 rgba(255, 255, 255, 0.2), inset -2px -2px 0 rgba(0, 0, 0, 0.22);
+  transform-origin: left center; transform: perspective(700px) rotateY(0deg);
+  transition: transform 0.45s cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+.pl-livro__moldura {
+  position: absolute; inset: calc(var(--u) * 1.5) calc(var(--u) * 1.5) calc(var(--u) * 1.5) calc(var(--u) * 3); pointer-events: none;
+  border: 2px solid color-mix(in srgb, var(--px-ouro, #f4cf7c) 85%, var(--pl-capa));
+}
+.pl-livro__parte {
+  position: relative; font-family: var(--fonte-pixel-titulo, var(--fonte-marca)); font-weight: 400; font-size: calc(var(--u) * 6.5); line-height: 0.85; white-space: nowrap;
+  color: var(--px-ouro, #f4cf7c); text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4); font-variant-numeric: tabular-nums;
+}
+.pl-livro__filete { position: relative; width: calc(var(--u) * 6); height: 2px; background: var(--px-ouro, #f4cf7c); box-shadow: calc(var(--u) * 7) 0 0 var(--px-ouro, #f4cf7c); }
+.pl-livro__resto { position: relative; font-family: var(--fonte-marca); font-weight: 800; font-size: calc(var(--u) * 3.6); line-height: 1.1; color: #fff; }
+.pl-livro__cap { position: relative; margin-top: auto; font-family: var(--fonte-pixel-titulo, var(--fonte-marca)); font-size: calc(var(--u) * 3.6); white-space: nowrap; color: color-mix(in srgb, #fff 78%, var(--pl-capa)); }
+
+/* Fecho: a tira de ouro que prende a capa às folhas, com o cadeado em pixel. */
+.pl-livro__fecho {
+  right: calc(var(--u) * 0); top: calc(var(--u) * 14); width: calc(var(--u) * 7); height: calc(var(--u) * 7); z-index: 3;
+  transform-origin: 100% 50%; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+.pl-livro__argola {
+  position: absolute; left: 0; top: calc(var(--u) * 2); width: calc(var(--u) * 7); height: calc(var(--u) * 3);
+  background: var(--px-ouro, #f4cf7c); box-shadow: 0 0 0 2px var(--pl-tinta), inset 0 -2px 0 #c08a2a;
+}
+.pl-livro__cadeado {
+  position: absolute; left: calc(var(--u) * 1); top: calc(var(--u) * 2.5); width: calc(var(--u) * 5); height: calc(var(--u) * 4.5);
+  background:
+    linear-gradient(var(--pl-tinta), var(--pl-tinta)) 50% 55% / var(--u) calc(var(--u) * 1.6) no-repeat,
+    #e3b24f;
+  box-shadow: 0 0 0 2px var(--pl-tinta);
+}
+.pl-livro__cadeado::before {
+  content: ""; position: absolute; left: var(--u); top: calc(var(--u) * -2.5); width: calc(var(--u) * 3); height: calc(var(--u) * 2.5);
+  box-sizing: border-box; border: 2px solid var(--pl-tinta); border-bottom: 0; background: transparent;
+  box-shadow: inset 0 0 0 2px #e3b24f;
+  transform-origin: 0 100%; transition: transform 0.25s ease 0.1s;
+}
+.pl-livro__chao {
+  left: calc(var(--u) * 4); bottom: 0; width: calc(var(--u) * 24); height: calc(var(--u) * 2);
+  background: color-mix(in srgb, var(--pl-tinta) 22%, transparent);
+  box-shadow: calc(var(--u) * 2) 0 0 color-mix(in srgb, var(--pl-tinta) 12%, transparent), calc(var(--u) * -2) 0 0 color-mix(in srgb, var(--pl-tinta) 12%, transparent);
+  animation: pl-chao 4.6s ease-in-out infinite;
+}
+.pl-livro__brilho { width: var(--u); height: var(--u); z-index: 4; background: var(--px-ouro, #f4cf7c); box-shadow: 0 0 0 1px var(--pl-tinta); opacity: 0; }
+.pl-livro__brilho--a { left: calc(var(--u) * -3); top: calc(var(--u) * 6); }
+.pl-livro__brilho--b { right: calc(var(--u) * -3); top: calc(var(--u) * 2); }
+.pl-livro__brilho--c { right: calc(var(--u) * -1); top: calc(var(--u) * 28); }
+
+/* Mouse por cima: o livro levanta e inclina; o cadeado se adianta. */
+@media (hover: hover) {
+  .pl-livro:hover, .pl:has(.pl-botao:hover) .pl-livro { transform: translateY(calc(var(--u) * -2)) rotate(-3deg); }
+  .pl-livro:hover .pl-livro__fecho, .pl:has(.pl-botao:hover) .pl-livro__fecho { transform: scale(1.08); }
+}
+/* Clique: o cadeado abre, o fecho solta, a capa entreabre e o ouro cintila. */
+.pl--abrindo .pl-livro__flutua { animation: none; transform: translateY(calc(var(--u) * -2)); }
+.pl--abrindo .pl-livro__cadeado::before { transform: rotate(-35deg) translateY(-2px); }
+.pl--abrindo .pl-livro__fecho { transform: translateX(calc(var(--u) * 3)) rotate(25deg); opacity: 0; transition: transform 0.3s ease 0.15s, opacity 0.2s ease 0.3s; }
+.pl--abrindo .pl-livro__capa { transform: perspective(700px) rotateY(-38deg); transition-delay: 0.2s; }
+.pl--abrindo .pl-livro__brilho { animation: pl-brilho 0.5s steps(3) 0.2s both; }
+.pl--abrindo .pl-livro__brilho--b { animation-delay: 0.28s; }
+.pl--abrindo .pl-livro__brilho--c { animation-delay: 0.36s; }
+
+.pl--longe .pl-livro__flutua, .pl--longe .pl-livro__fita, .pl--longe .pl-livro__chao { animation-play-state: paused; }
+
+@keyframes pl-flutua { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(calc(var(--u) * -1.5)); } }
+@keyframes pl-chao { 0%, 100% { transform: scaleX(1); opacity: 1; } 50% { transform: scaleX(0.88); opacity: 0.7; } }
+@keyframes pl-fita { 0%, 70%, 100% { transform: rotate(0deg); } 78% { transform: rotate(-7deg); } 86% { transform: rotate(5deg); } 93% { transform: rotate(-2deg); } }
+@keyframes pl-brilho { 0% { opacity: 0; transform: scale(0.5); } 50% { opacity: 1; transform: scale(1.6); } 100% { opacity: 0; transform: scale(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .pl-livro__flutua, .pl-livro__fita, .pl-livro__chao { animation: none; }
+  .pl-livro, .pl-livro__flutua, .pl-livro__capa, .pl-livro__fecho, .pl-livro__cadeado::before { transition: none; }
+}
+
+/* ---------- O texto ---------- */
+.pl-texto { padding-top: 0.7rem; min-width: 0; }
+.pl .pl-texto h2 { margin: 0 0 0.6rem; font-family: var(--fonte-marca); font-size: 1.45rem; line-height: 1.15; letter-spacing: -0.01em; text-wrap: balance; color: var(--lr-texto); }
+.pl .pl-pedida {
+  display: block; margin: 0 0 0.7rem; padding: 0.45rem 0.65rem;
+  background: var(--lr-ouro-veu); color: var(--lr-texto); font-size: 0.92rem;
+}
+.pl-pedida svg { display: inline-block; vertical-align: -2px; margin-right: 0.3rem; color: var(--lr-ouro); }
+.pl .pl-pedida, .pl .pl-frase, .pl .pl-rotulo { text-align: left; }
+.pl .pl-frase { margin: 0 0 1rem; font-size: 1.02rem; }
+.pl .pl-rotulo { margin: 0 0 0.4rem; font-size: 0.86rem; font-weight: 700; color: var(--lr-suave); }
+.pl-lista { margin: 0 0 1.25rem; padding: 0; list-style: none; display: grid; gap: 0.45rem; }
+.pl-lista li { display: flex; gap: 0.55rem; align-items: flex-start; font-size: 0.97rem; }
+.pl-lista svg { flex: none; margin-top: 0.15rem; color: var(--lr-acento); }
+.pl-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem 1.2rem; }
+.pl .pl-botao {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.15rem;
+  background: var(--px-ouro, #f4cf7c); color: var(--px-tinta, #1b1208); font-weight: 800; font-size: 1rem; text-decoration: none; text-align: center;
+  box-shadow: 0 0 0 2px var(--px-tinta, #1b1208), 4px 4px 0 2px var(--px-ouro-sombra, #6b4a0c);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease; touch-action: manipulation;
+}
+.pl .pl-botao:hover, .pl .pl-botao:focus-visible { background: #ffdf95; color: var(--px-tinta, #1b1208); }
+.pl-botao:active { transform: translate(3px, 3px); box-shadow: 0 0 0 2px var(--px-tinta, #1b1208), 1px 1px 0 2px var(--px-ouro-sombra, #6b4a0c); }
+.pl-botao:focus-visible, .pl-entrar:focus-visible { outline: 3px solid var(--lr-acento); outline-offset: 4px; }
+.pl-entrar { font-weight: 700; color: var(--lr-acento); text-decoration: underline; text-underline-offset: 3px; min-height: 44px; display: inline-flex; align-items: center; }
+.pl-entrar:hover { text-decoration-thickness: 2px; }
+.pl-depois { margin-top: 1.2rem; font-size: 0.9rem; color: var(--lr-suave); }
+.pl-depois summary { cursor: pointer; font-weight: 700; min-height: 32px; display: flex; align-items: center; gap: 0.4rem; list-style: none; }
+.pl-depois summary::-webkit-details-marker { display: none; }
+.pl-depois summary::before { content: ""; width: 0; height: 0; border-left: 6px solid currentColor; border-block: 5px solid transparent; transition: transform 0.15s ease; }
+.pl-depois[open] summary::before { transform: rotate(90deg); }
+.pl-depois summary:focus-visible { outline: 2px solid var(--lr-acento); outline-offset: 2px; }
+.pl-depois ol { margin: 0.4rem 0 0; padding-left: 1.6rem; display: grid; gap: 0.2rem; font-variant-numeric: tabular-nums; }
+.pl-depois--pedida { color: var(--lr-texto); font-weight: 700; }
+
+/* Índice do leitor: as partes fechadas para o visitante, com o cadeado. */
+.lr-indice--fechada button { color: var(--lr-suave); }
+.lr-indice button .lr-indice__cadeado { flex: none; display: inline-flex; color: var(--lr-ouro); }
+.lr-capa__porta { margin: 0.5rem 0 0; font-family: var(--fonte-texto, system-ui); font-size: 0.82rem; color: var(--lr-suave); }
+.lr-capa__porta a { color: var(--lr-acento); font-weight: 700; }
+
+@media (max-width: 40rem) {
+  .pl { grid-template-columns: 1fr; gap: 0.6rem; padding: 0.6rem 0.6rem 1.2rem; box-shadow: 4px 4px 0 color-mix(in srgb, var(--lr-acento) 30%, transparent); }
+  .pl-palco { min-height: 10.5rem; }
+  .pl-livro { --u: 3.4px; }
+  .pl-texto { padding: 0.2rem 0.5rem 0; }
+  .pl .pl-texto h2 { font-size: 1.3rem; }
+  .pl .pl-botao { width: 100%; }
+  .pl-acoes { justify-content: center; }
+}

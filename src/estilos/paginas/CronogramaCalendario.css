@@ -218,3 +218,11 @@
 @media (max-width: 40rem) {
   .cc--embutido .cc-topo h2 { font-size: 1.45rem; white-space: normal; overflow: visible; }
 }
+
+/* Dia puxado e começado (19/10/2026): "Adiantado · 8 de 77"; o resto continua nele. */
+.cc-dia--puxado > button { background: color-mix(in srgb, var(--cp-feito) 5%, var(--superficie)); }
+.cc-dia--puxado .cc-dia__rodape em { color: var(--cp-feito); font-variant-numeric: tabular-nums; }
+.cc-detalhe__fim .cp-botao + .cp-botao, .cc-detalhe__ok + .cp-botao { margin-top: 0.1rem; }
+.cc-detalhe__dica { display: flex; align-items: flex-start; gap: 0.4rem; margin: 0; font-size: 0.78rem; line-height: 1.45; color: var(--texto-2); }
+.cc-detalhe__dica svg { flex: none; margin-top: 0.12rem; color: var(--ouro-texto); }
+.cc-junto { white-space: nowrap; }
