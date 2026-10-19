@@ -10,7 +10,7 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { usarSessao } from '../estado/sessao'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
-import { Degustacao, SeloAssinante } from '../componentes/Premium'
+import { SeloAssinante } from '../componentes/Premium'
 import { IconePixel } from '../componentes/IconePixel'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/TemasQueMaisCaem.css'
@@ -61,14 +61,18 @@ function progresso(m: Marca): string | null {
   return m.acerto !== null && m.acerto >= 50 ? `${base}, ${m.acerto}% de acerto` : base
 }
 
-/** Linhas de enchimento da prévia: texto neutro, nunca o conteúdo real. */
-const GUARDADO = ['Assunto guardado para assinantes', 'Outro assunto do ranking', 'Assunto muito cobrado', 'Mais um assunto campeão', 'Assunto da lista completa']
-const AREAS_GUARDADAS = ['Área guardada', 'Outra área do ranking', 'Área da lista completa', 'Mais uma área', 'Área guardada para assinantes', 'Área do ranking', 'Mais uma área guardada', 'Outra área']
-
-/** Quantos itens o não assinante vê antes do desfoque. */
-const PREVIA_TOP = 3
-/** Áreas no gráfico da prévia (as mesmas três que o pódio antigo já mostrava). */
-const PREVIA_AREAS = 3
+/**
+ * Prévia de quem não assina ("mostrando mas não mostrando", Tales, 19/10/2026): o ranking das áreas
+ * fica todo aberto (é informação geral) e, de cada área, os 2 assuntos de prioridade máxima que mais
+ * caem aparecem inteiros. Os outros aparecem só como lugar e prioridade, sem nome e sem treino.
+ */
+const PREVIA_ASSUNTOS = 2
+const chave = (area: string, foco: string) => `${area}|${foco}`
+const porCobranca = (a: Foco, b: Foco) => (b.n ?? 0) - (a.n ?? 0)
+/** Os assuntos da área do mais cobrado para o menos: prioridade primeiro, depois questões de prova. */
+const emOrdem = (area: AreaIncidencia) => NIVEIS.flatMap((n) => area.focos.filter((f) => f.nivel === n).sort(porCobranca))
+const LIBERADOS = new Set(AREAS.flatMap((a) => a.focos.filter((f) => f.nivel === 4).sort(porCobranca).slice(0, PREVIA_ASSUNTOS).map((f) => chave(a.id, f.nome))))
+const CRIAR_CONTA = '/conta?modo=criar&voltar=%2Ftemas-que-mais-caem'
 
 const NIVEIS: Nivel[] = [4, 3, 2, 1]
 const EXPLICA_NIVEL: Record<Nivel, string> = {
@@ -91,7 +95,7 @@ function SeloNivel({ nivel }: { nivel: Nivel }) {
 }
 
 export function TemasQueMaisCaem() {
-  const { premium, logado, carregado } = usarPremium()
+  const { premium, logado, carregado, pagamentos_ativos } = usarPremium()
   const { sessao: sessaoConta } = usarConta()
   const { indice } = usarIndice()
   const [respondidas] = usarArmazenado<Respondidas>('respondidas', {})
@@ -110,12 +114,27 @@ export function TemasQueMaisCaem() {
   }
 
   const nome = logado ? primeiroNome(sessaoConta?.user.user_metadata?.nome) : ''
-  return <><Ranking indice={indice} respondidas={respondidas} treinar={treinar} aberto={premium} logado={logado} nome={nome} /><VoltarAoTopo /></>
+  return <><Ranking indice={indice} respondidas={respondidas} treinar={treinar} aberto={premium} logado={logado} nome={nome} vendasAbertas={!logado || !carregado || pagamentos_ativos} /><VoltarAoTopo /></>
 }
 
-interface PropsRanking { indice: Indice; respondidas: Respondidas; treinar: (area: AreaIncidencia, foco?: Foco) => void; aberto: boolean; logado: boolean; nome: string }
+interface PropsRanking { indice: Indice; respondidas: Respondidas; treinar: (area: AreaIncidencia, foco?: Foco) => void; aberto: boolean; logado: boolean; nome: string; vendasAbertas: boolean }
 
-function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRanking) {
+/** O convite da prévia: diz o que fica para o assinante e leva aos planos, sem preço. */
+function Convite({ titulo, texto, vendasAbertas }: { titulo: string; texto: string; vendasAbertas: boolean }) {
+  return (
+    <div className="tq-convite">
+      <span className="tq-cadeado" aria-hidden="true"><span className="tq-cadeado__arco" /><span className="tq-cadeado__corpo" /></span>
+      <div className="tq-convite__texto">
+        <p className="tq-convite__titulo">{titulo}</p>
+        <p>{texto}</p>
+      </div>
+      <a className="botao tq-ouro tq-convite__botao" href={href('/assinatura')}>Conhecer os planos</a>
+      {!vendasAbertas && <small className="tq-convite__nota">As assinaturas abrem em breve.</small>}
+    </div>
+  )
+}
+
+function Ranking({ indice, respondidas, treinar, aberto, logado, nome, vendasAbertas }: PropsRanking) {
   // Questões de cada área e de cada assunto, calculadas uma vez por acervo.
   const mapa = useMemo(() => new Map(AREAS.map((a) => [a.id, { area: idsDoFoco(indice, a), focos: new Map(a.focos.map((f) => [f.nome, idsDoFoco(indice, a, f)])) }])), [indice])
   const [areaId, setAreaId] = useState(AREAS[0]?.id ?? '')
@@ -123,11 +142,10 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
   const [verTodos, setVerTodos] = useState<Record<string, boolean>>({})
   const detalheRef = useRef<HTMLDivElement>(null)
 
-  const area = (aberto ? areaPorId(areaId) : undefined) ?? AREAS[0]
+  const area = areaPorId(areaId) ?? AREAS[0]
   const nAreas = AREAS.filter((a) => !a.subtema).length
   const nAssuntos = AREAS.reduce((s, a) => s + a.focos.length, 0)
   const maxPct = Math.max(...AREAS.map((a) => a.pct ?? 0), 1)
-  const areasVisiveis = AREAS.slice(0, aberto ? AREAS.length : PREVIA_AREAS)
 
   // Camada pessoal: só com conta e só com o que a pessoa realmente fez.
   const topTreinados = TOP_ASSUNTOS.filter((t) => (mapa.get(t.area)?.focos.get(t.nome) ?? []).some((id) => respondidas[id])).length
@@ -159,15 +177,50 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
   const maximosTreinados = maximos.filter((f) => (dados.focos.get(f.nome) ?? []).some((id) => respondidas[id])).length
   const nomeAreaMin = area.nome.toLocaleLowerCase('pt-BR')
   const fraseArea = logado && maximos.length
-    ? maximosTreinados > 0
+    ? !aberto
+      ? `${nome ? `${nome}, comece` : 'Comece'} pelos assuntos abertos abaixo: são os que mais caem em ${nomeAreaMin}.`
+      : maximosTreinados > 0
       ? `${nome ? `${nome}, você` : 'Você'} já treinou ${maximosTreinados === maximos.length ? 'todos os' : `${maximosTreinados} dos`} ${maximos.length} assuntos que mais caem em ${nomeAreaMin}.`
       : `${nome ? `${nome}, os` : 'Os'} ${maximos.length} assuntos de prioridade máxima são o melhor ponto de partida em ${nomeAreaMin}.`
     : null
   const todosGrupos = NIVEIS.map((n) => ({ n, focos: area.focos.filter((f) => f.nivel === n).sort((a, b) => (b.n ?? 0) - (a.n ?? 0)) }))
-    .filter((g) => g.focos.length).slice(0, aberto ? 4 : 1)
+    .filter((g) => g.focos.length)
   // As duas prioridades de cima aparecem logo; média e baixa abrem com um toque.
   const grupos = verTodos[area.id] ? todosGrupos : todosGrupos.filter((g) => g.n >= 3)
   const escondidos = todosGrupos.filter((g) => !grupos.includes(g)).reduce((s, g) => s + g.focos.length, 0)
+  // Prévia: a lista da área em ordem; os liberados aparecem inteiros, o resto só como lugar e prioridade.
+  const ordemArea = emOrdem(area)
+  const livre = (f: Foco) => LIBERADOS.has(chave(area.id, f.nome))
+  const gruposPrevia = NIVEIS.map((n) => {
+    const doNivel = ordemArea.map((f, i) => ({ f, lugar: i + 1 })).filter(({ f }) => f.nivel === n)
+    return { n, total: doNivel.length, livres: doNivel.filter(({ f }) => livre(f)).map(({ f }) => f), fechados: doNivel.filter(({ f }) => !livre(f)) }
+  }).filter((g) => g.total)
+  const nFechadosArea = ordemArea.filter((f) => !livre(f)).length
+    const nFechadosTop = TOP_ASSUNTOS.filter((t) => !LIBERADOS.has(chave(t.area, t.nome))).length
+
+  /** O botão de treino: assinante e conta grátis treinam; o visitante cria a conta antes. */
+  function acaoTreino(a: AreaIncidencia, f: Foco, ids: string[], rotulo: string, curto: boolean) {
+    if (!logado) return <a className="tq-acao" href={href(CRIAR_CONTA)} aria-label={`Criar conta para treinar ${rotulo}`}><span>Treinar{!curto && <span className="tq-acao__mais"> este assunto</span>}</span><Icone nome="direita" tamanho={14} /></a>
+    if (!ids.length) return <span className="tq-foco__sem">Em breve</span>
+    return <button type="button" className="tq-acao" onClick={() => treinar(a, f)} aria-label={curto ? `Treinar ${rotulo}` : `Treinar este assunto: ${rotulo}`}><span>Treinar{!curto && <span className="tq-acao__mais"> este assunto</span>}</span><Icone nome="direita" tamanho={14} /></button>
+  }
+
+  function linhaFoco(f: Foco) {
+    const ids = dados.focos.get(f.nome) ?? []
+    const mf = marca(ids, respondidas)
+    const feito = logado && mf.feitas > 0
+    const texto = logado ? progresso(mf) : null
+    return (
+      <li key={f.nome} className={'tq-foco' + (feito ? ' tq-foco--feito' : '')}>
+        <span className="tq-foco__marca" aria-hidden="true">{feito ? <Icone nome="certo" tamanho={14} /> : null}</span>
+        <span className="tq-foco__nome">
+          <strong>{f.nome}</strong>
+          <small className="tq-num">{f.n ? `${questoes(f.n)} de prova` : 'Sem contagem'}{feito && texto ? <> · <span className="tq-foco__feito">{texto}</span></> : ''}{feito ? <span className="so-leitor"> · você já treinou este assunto</span> : null}</small>
+        </span>
+        {acaoTreino(area, f, ids, f.nome, false)}
+      </li>
+    )
+  }
 
   const trauma = areaPorId('trauma'), pediatria = areaPorId('pediatria')
   const somaPesadas = Math.round(((trauma?.pct ?? 0) + (pediatria?.pct ?? 0)) * 10) / 10
@@ -181,7 +234,7 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
           <p className="tq-heroi__lead">O que as provas oficiais mais cobraram, área por área.</p>
           <p>Contamos uma por uma as <b className="numerico">{num(BASE_CONTAGEM)}</b> questões das provas oficiais (TEOT, TARO, TECOC e ENARE) que estão no acervo e separamos por área e por assunto: {nAreas} áreas, {num(nAssuntos)} assuntos.</p>
           {fraseTopo && <p className="tq-heroi__pessoal"><Icone nome="alvo" tamanho={15} /> {fraseTopo}</p>}
-          {!aberto && <p className="tq-heroi__previa"><Icone nome="cadeado" tamanho={14} /> Você está vendo uma prévia. O ranking completo é do assinante.</p>}
+          {!aberto && <p className="tq-heroi__previa"><Icone nome="cadeado" tamanho={14} /><span><b>Prévia:</b> {nome ? `${nome}, você` : 'você'} vê os {PREVIA_ASSUNTOS} assuntos que mais caem de cada área. Assinando, vê todos e treina cada um.</span></p>}
         </div>
         <ol className="tq-passos" aria-label="Como usar esta página">
           <li><span className="px-numero" aria-hidden="true">1</span><span><strong>Escolha a área</strong><small>A barra mostra quanto ela pesa na prova.</small></span></li>
@@ -204,7 +257,7 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
             <span className="px-numero" aria-hidden="true">1</span>
             <div>
               <h2 id="tq-areas-titulo">Ranking das áreas</h2>
-              <p className="texto-2">Quanto cada área ocupa das {num(BASE_CONTAGEM)} questões de prova contadas. {aberto ? 'Toque numa área para ver os assuntos dela.' : ''}</p>
+              <p className="texto-2">Quanto cada área ocupa das {num(BASE_CONTAGEM)} questões de prova contadas. Toque numa área para ver os assuntos dela.</p>
             </div>
           </header>
           <button type="button" className="tq-alternar" aria-pressed={tabela} onClick={() => setTabela((t) => !t)}>
@@ -215,10 +268,10 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
                 <caption className="so-leitor">Questões de prova por área, da que mais cai para a que menos cai</caption>
                 <thead><tr><th scope="col">Lugar</th><th scope="col">Área</th><th scope="col">Questões de prova</th><th scope="col">Da prova</th></tr></thead>
                 <tbody>
-                  {areasVisiveis.map((a, i) => (
-                    <tr key={a.id} aria-current={aberto && a.id === area.id ? 'true' : undefined}>
+                  {AREAS.map((a, i) => (
+                    <tr key={a.id} aria-current={a.id === area.id ? 'true' : undefined}>
                       <td className="tq-num">{i + 1}º</td>
-                      <th scope="row">{aberto ? <button type="button" className="tq-tabela__area" onClick={() => escolher(a.id)}>{a.nome}</button> : a.nome}</th>
+                      <th scope="row"><button type="button" className="tq-tabela__area" onClick={() => escolher(a.id)}>{a.nome}</button></th>
                       <td className="tq-num">{a.n !== undefined ? num(a.n) : '—'}</td>
                       <td className="tq-num">{a.pct !== undefined ? `${num(a.pct)}%` : '—'}</td>
                     </tr>
@@ -226,7 +279,7 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
                 </tbody>
               </table>
             : <ol className="tq-barras">
-                {areasVisiveis.map((a, i) => {
+                {AREAS.map((a, i) => {
                   const atual = a.id === area.id
                   const corpo = <>
                     <span className="tq-barra__lugar numerico">{i + 1}º</span>
@@ -236,25 +289,11 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
                   </>
                   return (
                     <li key={a.id}>
-                      {aberto
-                        ? <button type="button" className={'tq-barra' + (atual ? ' tq-barra--atual' : '')} aria-pressed={atual} aria-controls="tq-detalhe" onClick={() => escolher(a.id)}>{corpo}</button>
-                        : <div className={'tq-barra tq-barra--fixa' + (atual ? ' tq-barra--atual' : '')}>{corpo}</div>}
+                      <button type="button" className={'tq-barra' + (atual ? ' tq-barra--atual' : '')} aria-pressed={atual} aria-controls="tq-detalhe" onClick={() => escolher(a.id)}>{corpo}</button>
                     </li>
                   )
                 })}
               </ol>}
-          {!aberto && <Degustacao className="tq-degustacao" titulo={`As outras ${AREAS.length - PREVIA_AREAS} áreas, em ordem`} texto={<p>Da quarta área que mais cai à que menos cai, com todos os assuntos de cada uma e o seu progresso.</p>} acao="Liberar o ranking das áreas">
-            <ol className="tq-barras">
-              {Array.from({ length: Math.min(5, AREAS.length - PREVIA_AREAS) }, (_, i) => (
-                <li key={i}><div className="tq-barra tq-barra--fixa">
-                  <span className="tq-barra__lugar numerico">{PREVIA_AREAS + i + 1}º</span>
-                  <span className="tq-barra__nome"><strong>{AREAS_GUARDADAS[i]}</strong><small>000 questões</small></span>
-                  <span className="tq-barra__trilho"><span className="tq-barra__marca" style={{ width: `${45 - i * 6}%` }} /></span>
-                  <span className="tq-barra__pct numerico">0%</span>
-                </div></li>
-              ))}
-            </ol>
-          </Degustacao>}
         </div>
 
         <div className="tq-detalhe" id="tq-detalhe" ref={detalheRef} tabIndex={-1} aria-labelledby="tq-detalhe-titulo">
@@ -271,38 +310,34 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
           </header>
           {fraseArea && <p className="tq-detalhe__pessoal">{fraseArea}</p>}
 
-          {grupos.map((g) => (
-            <div key={g.n} className="tq-grupo">
-              <div className="tq-grupo__cabeca"><SeloNivel nivel={g.n} /><small className="tq-num">{g.focos.length} {g.focos.length === 1 ? 'assunto' : 'assuntos'}</small></div>
-              <ul className="tq-focos">
-                {g.focos.map((f) => {
-                  const ids = dados.focos.get(f.nome) ?? []
-                  const mf = marca(ids, respondidas)
-                  const feito = logado && mf.feitas > 0
-                  const texto = logado ? progresso(mf) : null
+          {aberto
+            ? grupos.map((g) => (
+                <div key={g.n} className="tq-grupo">
+                  <div className="tq-grupo__cabeca"><SeloNivel nivel={g.n} /><small className="tq-num">{g.focos.length} {g.focos.length === 1 ? 'assunto' : 'assuntos'}</small></div>
+                  <ul className="tq-focos">{g.focos.map((f) => linhaFoco(f))}</ul>
+                </div>
+              ))
+            : <>
+                {gruposPrevia.map((g) => {
+                  const primeiro = g.fechados[0]?.lugar, ultimo = g.fechados[g.fechados.length - 1]?.lugar
                   return (
-                    <li key={f.nome} className={'tq-foco' + (feito ? ' tq-foco--feito' : '')}>
-                      <span className="tq-foco__marca" aria-hidden="true">{feito ? <Icone nome="certo" tamanho={14} /> : null}</span>
-                      <span className="tq-foco__nome">
-                        <strong>{f.nome}</strong>
-                        <small className="tq-num">{f.n ? `${questoes(f.n)} de prova` : 'Sem contagem'}{feito && texto ? <> · <span className="tq-foco__feito">{texto}</span></> : ''}{feito ? <span className="so-leitor"> · você já treinou este assunto</span> : null}</small>
-                      </span>
-                      {!aberto
-                        ? <a className="tq-acao" href={href('/assinatura')}><Icone nome="cadeado" tamanho={14} /> Treinar</a>
-                        : ids.length > 0
-                          ? <button type="button" className="tq-acao" onClick={() => treinar(area, f)} aria-label={`Treinar este assunto: ${f.nome}`}><span>Treinar<span className="tq-acao__mais"> este assunto</span></span><Icone nome="direita" tamanho={14} /></button>
-                          : <span className="tq-foco__sem">Em breve</span>}
-                    </li>
+                    <div key={g.n} className="tq-grupo">
+                      <div className="tq-grupo__cabeca"><SeloNivel nivel={g.n} /><small className="tq-num">{g.total} {g.total === 1 ? 'assunto' : 'assuntos'}{!g.livres.length && primeiro ? ` · ${primeiro === ultimo ? `${primeiro}º lugar` : `do ${primeiro}º ao ${ultimo}º`}` : ''}</small></div>
+                      {g.livres.length > 0 && <ul className="tq-focos">{g.livres.map((f) => linhaFoco(f))}</ul>}
+                      {g.fechados.length > 0 && <ol className={`tq-lugares tq-lugares--${g.n}`} aria-label={`${g.livres.length ? 'Os outros ' : ''}${g.fechados.length} ${g.fechados.length === 1 ? 'assunto' : 'assuntos'} de ${ROTULO_NIVEL[g.n].toLocaleLowerCase('pt-BR')}, reservados ao assinante`}>
+                        {g.fechados.map(({ f, lugar }) => <li key={f.nome}><span className="tq-num">{lugar}º</span><Icone nome="cadeado" tamanho={11} /></li>)}
+                      </ol>}
+                    </div>
                   )
                 })}
-              </ul>
-            </div>
-          ))}
-          {escondidos > 0 && <button type="button" className="tq-alternar tq-mais" onClick={() => setVerTodos((v) => ({ ...v, [area.id]: true }))}>
+                {nFechadosArea > 0 && <Convite vendasAbertas={vendasAbertas}
+                  titulo={`Os outros ${nFechadosArea} assuntos de ${nomeAreaMin}, em ordem de cobrança, são do assinante`}
+                  texto="Cada um com o nome, as questões de prova e o treino em um toque." />}
+              </>}
+          {aberto && escondidos > 0 && <button type="button" className="tq-alternar tq-mais" onClick={() => setVerTodos((v) => ({ ...v, [area.id]: true }))}>
             <Icone nome="baixo" tamanho={15} /> Ver os outros {escondidos} assuntos (prioridade média e baixa)
           </button>}
-          {!aberto && <p className="tq-guardado"><Icone nome="cadeado" tamanho={14} /> Os assuntos de prioridade alta, média e baixa ficam guardados para assinantes.</p>}
-          {aberto && mArea.total > 0 && <button type="button" className="botao tq-area__treinar" onClick={() => treinar(area)}><Icone nome="raio" tamanho={15} /> Treinar a área inteira</button>}
+          {aberto && mArea.total > 0 && <button type="button" className="botao tq-ouro tq-area__treinar" onClick={() => treinar(area)}><Icone nome="raio" tamanho={15} /> Treinar a área inteira</button>}
         </div>
       </section>
 
@@ -316,8 +351,14 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
           {!aberto && <SeloAssinante />}
         </header>
         <ol className="tq-top__lista">
-          {TOP_ASSUNTOS.slice(0, aberto ? TOP_ASSUNTOS.length : PREVIA_TOP).map((t, i) => {
+          {TOP_ASSUNTOS.map((t, i) => {
             const a = areaPorId(t.area)!
+            if (!aberto && !LIBERADOS.has(chave(t.area, t.nome))) return (
+              <li key={`${t.area}-${t.nome}`} className="tq-top__item tq-top__item--fechado">
+                <span className="tq-top__posicao tq-num">{i + 1}</span>
+                <span className="tq-top__nome"><strong><Icone nome="cadeado" tamanho={13} /> Assunto do assinante</strong><small className="tq-num">{a.nome} · {questoes(t.n)} de prova</small></span>
+              </li>
+            )
             const foco = a.focos.find((f) => f.nome === t.nome)!
             const ids = mapa.get(a.id)?.focos.get(foco.nome) ?? []
             const m = marca(ids, respondidas)
@@ -326,26 +367,14 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome }: PropsRa
               <li key={`${t.area}-${t.nome}`} className={'tq-top__item' + (feito ? ' tq-top__item--feito' : '')}>
                 <span className="tq-top__posicao tq-num">{i + 1}</span>
                 <span className="tq-top__nome"><strong>{t.rotulo}</strong><small className="tq-num">{feito && <span className="tq-top__visto" aria-hidden="true"><Icone nome="certo" tamanho={13} /></span>}{a.nome} · {questoes(t.n)} de prova{feito && progresso(m) ? ` · ${progresso(m)}` : ''}{feito ? <span className="so-leitor"> · você já treinou este assunto</span> : null}</small></span>
-                {!aberto
-                  ? <a className="tq-acao" href={href('/assinatura')}><Icone nome="cadeado" tamanho={14} /> Treinar</a>
-                  : ids.length > 0
-                    ? <button type="button" className="tq-acao" onClick={() => treinar(a, foco)} aria-label={`Treinar ${t.rotulo}`}><span>Treinar</span><Icone nome="direita" tamanho={14} /></button>
-                    : <span className="tq-foco__sem">Em breve</span>}
+                {acaoTreino(a, foco, ids, t.rotulo, true)}
               </li>
             )
           })}
         </ol>
-        {!aberto && <Degustacao className="tq-degustacao" titulo={`Os outros ${TOP_ASSUNTOS.length - PREVIA_TOP} assuntos campeões`} texto={<p>A lista completa, com treino de cada assunto em um toque, fica guardada para assinantes.</p>} acao="Ver o ranking completo">
-          <ol className="tq-top__lista" start={PREVIA_TOP + 1}>
-            {Array.from({ length: 6 }, (_, i) => (
-              <li key={i} className="tq-top__item">
-                <span className="tq-top__posicao tq-num">{PREVIA_TOP + i + 1}</span>
-                <span className="tq-top__nome"><strong>{GUARDADO[i % GUARDADO.length]}</strong><small>Área do assunto · 40 questões de prova</small></span>
-                <span className="tq-acao">Treinar</span>
-              </li>
-            ))}
-          </ol>
-        </Degustacao>}
+        {!aberto && nFechadosTop > 0 && <Convite vendasAbertas={vendasAbertas}
+          titulo={`Os outros ${nFechadosTop} assuntos desta lista são do assinante`}
+          texto="Aqui você já vê os que também estão na prévia de cada área. Assinando, vê o nome de todos e treina cada um." />}
       </section>
 
       <section className="tq-proximo" aria-label="Próximos passos">
