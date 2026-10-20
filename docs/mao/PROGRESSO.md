@@ -69,6 +69,32 @@ Copiar para cada prova nova (ex.: `## SIMÃO 2024`):
 |---|---|---|---|---|---|---|---|
 | 1 | | | | | | | a fazer |
 
+## Revisão das questões já publicadas (pedido do Tales, 20/10/2026)
+
+"Deixar as questões mais parecidas com as originais, todas elas": cada lote publicado ganha um
+`lotes/simao-2023/revisao_NN.py` (na biblioteca, fora do git) que carrega o `lote_NN.py`, aproxima enunciado e
+alternativas da prova (passando no `copia`), acrescenta a citação literal do Green com capítulo e página e faz o
+"Por que esta questão foi criada." começar por "Inspirada na questão N do SIMÃO 2023". Aplicar com
+`bash ~/OrtoQuestoes-Biblioteca/.oq/revisar.sh NN "questões" "ids"` (usa `aplicar_lote.py` com `id=`, que revisa no lugar).
+
+| Revisão | Questões | Ids | Situação |
+|---|---|---|---|
+| 01 | 1, 2, 7, 9, 74 | mao-1932 a 1936 | revisada |
+| 02 | 19, 21, 41, 78, 97 | mao-1937 a 1941 | revisada |
+| 03 | 17, 87, 25, 24 | mao-1942 a 1945 | revisada |
+| 04 | 18, 22, 77, 88, 90 | mao-1946 a 1950 | revisada |
+| 05 | 44, 58, 71, 82, 85 | mao-1951 a 1955 | revisada (71 volta à pergunta original, resposta da banca: Green cap. 13, p. 500, padrão reverso) |
+| 06 | 20, 30, 86, 84, 81 | mao-1956 a 1960 | revisada (81 volta às alternativas da prova) |
+| 07 | 5, 50, 6, 61, 66 | mao-1961 a 1965 | revisada |
+| 08 | 8, 12, 34, 100, 35 | mao-1966 a 1970 | revisada (34 volta à pergunta da prova) |
+| 09 | 4, 26, 39, 42, 67 | mao-1971 a 1975 | a fazer |
+| 10 | 60, 51, 93, 43 | mao-1976 a 1979 | a fazer |
+| 11 | 53, 59, 72, 83, 95 | mao-1980 a 1984 | a fazer |
+| 12 | 31, 80, 54, 99, 14 | mao-1985 a 1989 | a fazer |
+| 13 | 45, 13, 36, 96, 70 | mao-1990 a 1994 | a fazer |
+
+Depois das revisões: lotes 14 a 20 do SIMÃO 2023 já no padrão novo (redação próxima, citação literal).
+
 ## SIMÃO 2023
 
 Separada de `Prova  Simão 2023 - sem resposta.pdf` (100 questões; a 12 conferida à mão pela dica). Resposta da
