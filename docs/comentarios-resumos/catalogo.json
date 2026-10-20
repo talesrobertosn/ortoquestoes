@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1852,
+  "pendente": 1842,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 21,
   "pendente-inspecao-imagem": 182,
-  "revisada": 181
+  "revisada": 191
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -255,10 +255,10 @@
    "titulo": "Fratura supracondiliana do úmero na criança",
    "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
    "estados": {
-    "pendente": 29,
+    "pendente": 19,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 1,
-    "revisada": 24
+    "revisada": 34
    }
   },
   "rockwoodcriancas9-14-fratura-em-t": {
@@ -31938,7 +31938,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31953,7 +31953,83 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "265f0c67d607687f2dda02d3bfec25831b7cb462fc72e27a91fc91a73c7a3887"
+   "questaoSha256": "265f0c67d607687f2dda02d3bfec25831b7cb462fc72e27a91fc91a73c7a3887",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Mecanismo, direção do desvio e estruturas em risco"
+      ],
+      "blocos": [
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+     },
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Fixação: fios laterais, fio medial e cuidados depois"
+      ],
+      "blocos": [
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "c779980fcb3f047bb3a7497909be3b4fde92b287b14322a96fb004bfa16f89f2"
+     }
+    ],
+    "questaoSha256": "265f0c67d607687f2dda02d3bfec25831b7cb462fc72e27a91fc91a73c7a3887",
+    "comentarioSha256": "3760fafa4bd0f9df51a6922fb733321723b72725c297fa08303b15d3fc69d917"
+   }
   },
   "pediatria-1033": {
    "tema": "pediatria",
@@ -31962,7 +32038,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31977,7 +32053,45 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "68954df7647f923d017bc6f43c12eb5d25cd3b94242cf307a5d0813d44c929da"
+   "questaoSha256": "68954df7647f923d017bc6f43c12eb5d25cd3b94242cf307a5d0813d44c929da",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Redução fechada: técnica, periósteo e rotação"
+      ],
+      "blocos": [
+       "reducao-fechada-tecnica-periosteo-e-rotacao-a4c3a4fd",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-43f75607",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f4436304",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-79feecaf",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-4d860e8c",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-49f3da74",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-d4136367",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f0bbe362",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-77776755",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-a9673dd6",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-b1951499",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-b55d02ec",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-fca4eee7",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-6f036543",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "7310d74b47cbdd9b3bd47348c34e3b9aa9cde7e05e6b484e697e188f1fd50553"
+     }
+    ],
+    "questaoSha256": "68954df7647f923d017bc6f43c12eb5d25cd3b94242cf307a5d0813d44c929da",
+    "comentarioSha256": "2beabc39f02a285edb730fbc30f81da6b302a2a10cdaadae9011e887dd1b16f1"
+   }
   },
   "pediatria-1034": {
    "tema": "pediatria",
@@ -31986,7 +32100,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32001,7 +32115,56 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "522721bf32fe6e68e63c3f6bdb305555b19fe4d4e3813e7f673f66afbd8de632"
+   "questaoSha256": "522721bf32fe6e68e63c3f6bdb305555b19fe4d4e3813e7f673f66afbd8de632",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Exame clínico e imagem",
+       "Cúbito varo"
+      ],
+      "blocos": [
+       "exame-clinico-e-imagem-8d983767",
+       "exame-clinico-e-imagem-ec5c2a40",
+       "exame-clinico-e-imagem-cfaf64ed",
+       "exame-clinico-e-imagem-c6cc4496",
+       "exame-clinico-e-imagem-eb8b368f",
+       "exame-clinico-e-imagem-dd609bf2",
+       "exame-clinico-e-imagem-fb5ba67e",
+       "exame-clinico-e-imagem-f2129dc6",
+       "exame-clinico-e-imagem-874e203a",
+       "exame-clinico-e-imagem-efc89a96",
+       "exame-clinico-e-imagem-8cad811b",
+       "exame-clinico-e-imagem-95ca44a3",
+       "exame-clinico-e-imagem-47355d98",
+       "exame-clinico-e-imagem-3e2479ab",
+       "cubito-varo-02a36370",
+       "cubito-varo-1a120757",
+       "cubito-varo-9bc337d3",
+       "cubito-varo-7d2226a9",
+       "cubito-varo-7ec96b6d",
+       "cubito-varo-fd2a5e7e",
+       "cubito-varo-5f1b1eb1",
+       "cubito-varo-5b7c0897",
+       "cubito-varo-01df2fd8",
+       "cubito-varo-c47dcdd8",
+       "cubito-varo-afa22f7d",
+       "cubito-varo-89dd8dce"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "1bcce6a3d0e119079cf6c145df9e644db3f47fe380cce8e617c92f614ec11508"
+     }
+    ],
+    "questaoSha256": "522721bf32fe6e68e63c3f6bdb305555b19fe4d4e3813e7f673f66afbd8de632",
+    "comentarioSha256": "6e29c43b03d517c6c077715090c77192321685b367d654f68b3518dac95f2f06"
+   }
   },
   "pediatria-1035": {
    "tema": "pediatria",
@@ -32011,7 +32174,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32026,7 +32189,50 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "41ae637c4a6c999ae8f3d2fea0bc81a22413738dedbc9a9951e98c53947a0357"
+   "questaoSha256": "41ae637c4a6c999ae8f3d2fea0bc81a22413738dedbc9a9951e98c53947a0357",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Tratamento: tipo, momento e o fim do gesso em flexão",
+       "O que remodela"
+      ],
+      "blocos": [
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-6a799e3c",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-7b19d268",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-d567e5d4",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-980760b0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1315b451",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3fb8e9f2",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-32dc2f79",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-22f5033a",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1320d411",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-e72363b7",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-abb4bfdb",
+       "o-que-remodela-acc7c25f",
+       "o-que-remodela-10858a70"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "bb55e67512c17decd60f4fd8c380420328161f217df5b8b01f5c9bfb5f6a77dd"
+     }
+    ],
+    "questaoSha256": "41ae637c4a6c999ae8f3d2fea0bc81a22413738dedbc9a9951e98c53947a0357",
+    "comentarioSha256": "b56d7173f0e8f1faa71c8921cad202b7f94d464d426b9371a9f3a9123a977c61"
+   }
   },
   "pediatria-1036": {
    "tema": "pediatria",
@@ -32035,7 +32241,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32050,7 +32256,61 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "0c20fc781821b763b7e5639f2fb0943e3b6716f69162a1321901f9708ebf20f4"
+   "questaoSha256": "0c20fc781821b763b7e5639f2fb0943e3b6716f69162a1321901f9708ebf20f4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "A mão sem pulso",
+       "Síndrome compartimental"
+      ],
+      "blocos": [
+       "a-mao-sem-pulso-046891d4",
+       "a-mao-sem-pulso-49b55356",
+       "a-mao-sem-pulso-5556fd04",
+       "a-mao-sem-pulso-c734e9ee",
+       "a-mao-sem-pulso-12045389",
+       "a-mao-sem-pulso-5801482c",
+       "a-mao-sem-pulso-561dffc7",
+       "a-mao-sem-pulso-f4f3b89d",
+       "a-mao-sem-pulso-b65d5756",
+       "a-mao-sem-pulso-6b94a0c6",
+       "a-mao-sem-pulso-24574aaa",
+       "a-mao-sem-pulso-9ba2822a",
+       "a-mao-sem-pulso-9c6d88bd",
+       "a-mao-sem-pulso-a6c4af84",
+       "a-mao-sem-pulso-be54c437",
+       "a-mao-sem-pulso-3cbb0905",
+       "a-mao-sem-pulso-47fe0b6b",
+       "a-mao-sem-pulso-4ec07ae0",
+       "a-mao-sem-pulso-e9a4fa79",
+       "sindrome-compartimental-9b6de2bd",
+       "sindrome-compartimental-b1ba06cc",
+       "sindrome-compartimental-dae17124",
+       "sindrome-compartimental-4a487435",
+       "sindrome-compartimental-6878dc8a",
+       "sindrome-compartimental-9b2517ff",
+       "sindrome-compartimental-11861475",
+       "sindrome-compartimental-dd5b1e68",
+       "sindrome-compartimental-52880eb5",
+       "sindrome-compartimental-744d234f",
+       "sindrome-compartimental-156d424b",
+       "sindrome-compartimental-c2479823"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "3161e021ef3de2eb4d650c8e046e57aa0d13141739bc80e1ffb75e9886edfac0"
+     }
+    ],
+    "questaoSha256": "0c20fc781821b763b7e5639f2fb0943e3b6716f69162a1321901f9708ebf20f4",
+    "comentarioSha256": "673edcfa0d6f65affc178f1b837d9ce4abcb5ecf46820755e941b128d5131140"
+   }
   },
   "pediatria-1037": {
    "tema": "pediatria",
@@ -32059,7 +32319,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32074,7 +32334,73 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "7fd06f23220fe81afd7ba95379a54b70d62c0a81bd0b4771d0441ef459f89824"
+   "questaoSha256": "7fd06f23220fe81afd7ba95379a54b70d62c0a81bd0b4771d0441ef459f89824",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Mecanismo, direção do desvio e estruturas em risco",
+       "A mão sem pulso",
+       "Síndrome compartimental"
+      ],
+      "blocos": [
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d",
+       "a-mao-sem-pulso-046891d4",
+       "a-mao-sem-pulso-49b55356",
+       "a-mao-sem-pulso-5556fd04",
+       "a-mao-sem-pulso-c734e9ee",
+       "a-mao-sem-pulso-12045389",
+       "a-mao-sem-pulso-5801482c",
+       "a-mao-sem-pulso-561dffc7",
+       "a-mao-sem-pulso-f4f3b89d",
+       "a-mao-sem-pulso-b65d5756",
+       "a-mao-sem-pulso-6b94a0c6",
+       "a-mao-sem-pulso-24574aaa",
+       "a-mao-sem-pulso-9ba2822a",
+       "a-mao-sem-pulso-9c6d88bd",
+       "a-mao-sem-pulso-a6c4af84",
+       "a-mao-sem-pulso-be54c437",
+       "a-mao-sem-pulso-3cbb0905",
+       "a-mao-sem-pulso-47fe0b6b",
+       "a-mao-sem-pulso-4ec07ae0",
+       "a-mao-sem-pulso-e9a4fa79",
+       "sindrome-compartimental-9b6de2bd",
+       "sindrome-compartimental-b1ba06cc",
+       "sindrome-compartimental-dae17124",
+       "sindrome-compartimental-4a487435",
+       "sindrome-compartimental-6878dc8a",
+       "sindrome-compartimental-9b2517ff",
+       "sindrome-compartimental-11861475",
+       "sindrome-compartimental-dd5b1e68",
+       "sindrome-compartimental-52880eb5",
+       "sindrome-compartimental-744d234f",
+       "sindrome-compartimental-156d424b",
+       "sindrome-compartimental-c2479823"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "2f81cbcc5e694ec74c9db5f07462ac1ab58c5aee4a0d9b21ee03ef8bb54f2e01"
+     }
+    ],
+    "questaoSha256": "7fd06f23220fe81afd7ba95379a54b70d62c0a81bd0b4771d0441ef459f89824",
+    "comentarioSha256": "f6e35e573c29366c6c2d3941930f96b69ff17c1ec2fc54808b172e0a9ae65c09"
+   }
   },
   "pediatria-1038": {
    "tema": "pediatria",
@@ -32083,7 +32409,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32098,7 +32424,56 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "398521a595b1402f054d27ee23ee534a916ae4b0d0431dca1925eaa842668862"
+   "questaoSha256": "398521a595b1402f054d27ee23ee534a916ae4b0d0431dca1925eaa842668862",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Exame clínico e imagem",
+       "Síndrome compartimental"
+      ],
+      "blocos": [
+       "exame-clinico-e-imagem-8d983767",
+       "exame-clinico-e-imagem-ec5c2a40",
+       "exame-clinico-e-imagem-cfaf64ed",
+       "exame-clinico-e-imagem-c6cc4496",
+       "exame-clinico-e-imagem-eb8b368f",
+       "exame-clinico-e-imagem-dd609bf2",
+       "exame-clinico-e-imagem-fb5ba67e",
+       "exame-clinico-e-imagem-f2129dc6",
+       "exame-clinico-e-imagem-874e203a",
+       "exame-clinico-e-imagem-efc89a96",
+       "exame-clinico-e-imagem-8cad811b",
+       "exame-clinico-e-imagem-95ca44a3",
+       "exame-clinico-e-imagem-47355d98",
+       "exame-clinico-e-imagem-3e2479ab",
+       "sindrome-compartimental-9b6de2bd",
+       "sindrome-compartimental-b1ba06cc",
+       "sindrome-compartimental-dae17124",
+       "sindrome-compartimental-4a487435",
+       "sindrome-compartimental-6878dc8a",
+       "sindrome-compartimental-9b2517ff",
+       "sindrome-compartimental-11861475",
+       "sindrome-compartimental-dd5b1e68",
+       "sindrome-compartimental-52880eb5",
+       "sindrome-compartimental-744d234f",
+       "sindrome-compartimental-156d424b",
+       "sindrome-compartimental-c2479823"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "665b1946d87f461ef1064e30786cfbaa25962c103f66ce4e1295085055cb8013"
+     }
+    ],
+    "questaoSha256": "398521a595b1402f054d27ee23ee534a916ae4b0d0431dca1925eaa842668862",
+    "comentarioSha256": "04c452c2be40bf27a9014598bd9fbd25bbd6ddb1e76ac80033c5a4d78cc6a1f2"
+   }
   },
   "pediatria-1039": {
    "tema": "pediatria",
@@ -32107,7 +32482,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32122,7 +32497,77 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "be24a618c04b90ac289857ee802a08700bd84609a1fd6a861c9c8d9e3f648116"
+   "questaoSha256": "be24a618c04b90ac289857ee802a08700bd84609a1fd6a861c9c8d9e3f648116",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Tratamento: tipo, momento e o fim do gesso em flexão",
+       "Fixação: fios laterais, fio medial e cuidados depois"
+      ],
+      "blocos": [
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-6a799e3c",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-7b19d268",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-d567e5d4",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-980760b0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1315b451",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3fb8e9f2",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-32dc2f79",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-22f5033a",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1320d411",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-e72363b7",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-abb4bfdb",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "0810f1c8b96d9ecc62975f64c84296194d2d23267fc4a8873fbd708d69e80d68"
+     }
+    ],
+    "questaoSha256": "be24a618c04b90ac289857ee802a08700bd84609a1fd6a861c9c8d9e3f648116",
+    "comentarioSha256": "552559e5bfad3ce59ec34eb6ec6a5efb2f4e00f7358e3c3fa447295bd1a50dd5"
+   }
   },
   "pediatria-1040": {
    "tema": "pediatria",
@@ -32131,7 +32576,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32146,7 +32591,58 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "40429c5cdcbabf2ce046e1db79f66fcbb4001cf274d3ba436b4d164e54e2341f"
+   "questaoSha256": "40429c5cdcbabf2ce046e1db79f66fcbb4001cf274d3ba436b4d164e54e2341f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Fixação: fios laterais, fio medial e cuidados depois"
+      ],
+      "blocos": [
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "c779980fcb3f047bb3a7497909be3b4fde92b287b14322a96fb004bfa16f89f2"
+     }
+    ],
+    "questaoSha256": "40429c5cdcbabf2ce046e1db79f66fcbb4001cf274d3ba436b4d164e54e2341f",
+    "comentarioSha256": "4b8bc0cb0d33df39d803c8cd7ab928a03e76bffa88fa8d2d16c386a571c240e2"
+   }
   },
   "pediatria-1041": {
    "tema": "pediatria",
@@ -32155,7 +32651,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32170,7 +32666,58 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "7cd4f5f06cc13e60caf39f3e7aee8c1173697ccbb79a213058f2e5aa8106060f"
+   "questaoSha256": "7cd4f5f06cc13e60caf39f3e7aee8c1173697ccbb79a213058f2e5aa8106060f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Fixação: fios laterais, fio medial e cuidados depois"
+      ],
+      "blocos": [
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "c779980fcb3f047bb3a7497909be3b4fde92b287b14322a96fb004bfa16f89f2"
+     }
+    ],
+    "questaoSha256": "7cd4f5f06cc13e60caf39f3e7aee8c1173697ccbb79a213058f2e5aa8106060f",
+    "comentarioSha256": "eee3e2ae5a8a20266d4a550c0abbca990ecbee8f3e06148d61d49bf35dc0397d"
+   }
   },
   "pediatria-1042": {
    "tema": "pediatria",
