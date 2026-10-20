@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1901,
+  "pendente": 1881,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 8,
   "pendente-inspecao-imagem": 186,
-  "revisada": 141
+  "revisada": 161
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -247,17 +247,17 @@
    "titulo": "Avaliação do cotovelo da criança traumatizada",
    "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
    "estados": {
-    "pendente": 7,
-    "revisada": 20
+    "pendente": 4,
+    "revisada": 23
    }
   },
   "rockwoodcriancas9-13-supracondiliana": {
    "titulo": "Fratura supracondiliana do úmero na criança",
    "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
    "estados": {
-    "pendente": 41,
+    "pendente": 40,
     "pendente-inspecao-imagem": 1,
-    "revisada": 13
+    "revisada": 14
    }
   },
   "rockwoodcriancas9-14-fratura-em-t": {
@@ -273,27 +273,27 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
    "estados": {
-    "pendente": 85,
+    "pendente": 68,
     "pendente-inspecao-imagem": 8,
-    "revisada": 12
+    "revisada": 29
    }
   },
   "rockwoodcriancas9-16-condilo-lateral": {
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
    "estados": {
-    "pendente": 67,
+    "pendente": 48,
     "pendente-inspecao-imagem": 7,
-    "revisada": 13
+    "revisada": 32
    }
   },
   "rockwoodcriancas9-17-fise-distal-umero": {
    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
    "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
    "estados": {
-    "pendente": 20,
+    "pendente": 12,
     "pendente-inspecao-imagem": 4,
-    "revisada": 16
+    "revisada": 24
    }
   },
   "wilkins9-08-radio-ulna-distal-crianca": {
@@ -22676,7 +22676,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -22708,7 +22708,48 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "190fbe16e03e0405388f7a595c2786370e20fcadf5b39cc295df34c0dfaa6d8d"
+   "questaoSha256": "190fbe16e03e0405388f7a595c2786370e20fcadf5b39cc295df34c0dfaa6d8d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Quem quebra o quê no úmero distal",
+       "O fragmento: anatomia, mecanismo e desvio"
+      ],
+      "blocos": [
+       "quem-quebra-o-que-no-umero-distal-eef5fa83",
+       "quem-quebra-o-que-no-umero-distal-3b51dc86",
+       "quem-quebra-o-que-no-umero-distal-1b53f009",
+       "quem-quebra-o-que-no-umero-distal-941b6b37",
+       "quem-quebra-o-que-no-umero-distal-d9b0756e",
+       "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
+       "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
+       "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
+       "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
+       "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
+       "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
+       "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
+       "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
+       "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
+       "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
+       "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
+       "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
+       "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "4648d927e59b198c612ab5840fd9de5ab3356798512284b0f7b2bbe9e5f8abb1"
+     }
+    ],
+    "questaoSha256": "190fbe16e03e0405388f7a595c2786370e20fcadf5b39cc295df34c0dfaa6d8d",
+    "comentarioSha256": "be0133aaf0a887ca0a37e2cb4281252c5616ccebbcdc203d48a98b57829d8156"
+   }
   },
   "pediatria-0522": {
    "tema": "pediatria",
@@ -23478,7 +23519,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -23502,7 +23543,42 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "0c35bfb87a7d7ec25bf9e6db19253a37a9e97afe3b7d6013d38942067f0e5ebf"
+   "questaoSha256": "0c35bfb87a7d7ec25bf9e6db19253a37a9e97afe3b7d6013d38942067f0e5ebf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "O fragmento: anatomia, mecanismo e desvio"
+      ],
+      "blocos": [
+       "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
+       "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
+       "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
+       "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
+       "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
+       "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
+       "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
+       "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
+       "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
+       "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
+       "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
+       "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
+       "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "1b1d107b12f6dcae8d769c4c961c2c95d6196b195b81b0775964b753b17e53b2"
+     }
+    ],
+    "questaoSha256": "0c35bfb87a7d7ec25bf9e6db19253a37a9e97afe3b7d6013d38942067f0e5ebf",
+    "comentarioSha256": "c4bc059a6f1b33427ede61ee4b1113daf0e121d378f4b3b9ff15528d96500204"
+   }
   },
   "pediatria-0611": {
    "tema": "pediatria",
@@ -23690,7 +23766,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -23713,7 +23789,64 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "e8d351e4621555a9602b2df1bb0590d8207a09030396f8104679f8e895d00fc4"
+   "questaoSha256": "e8d351e4621555a9602b2df1bb0590d8207a09030396f8104679f8e895d00fc4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "O fragmento: anatomia, mecanismo e desvio",
+       "Classificações"
+      ],
+      "blocos": [
+       "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
+       "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
+       "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
+       "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
+       "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
+       "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
+       "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
+       "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
+       "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
+       "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
+       "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
+       "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
+       "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929",
+       "classificacoes-4e13cd16",
+       "classificacoes-fe6e317c",
+       "classificacoes-48565c30",
+       "classificacoes-58985ad8",
+       "classificacoes-582acfa1",
+       "classificacoes-c2db79fd",
+       "classificacoes-34411dcc",
+       "classificacoes-c1dc58fe",
+       "classificacoes-99d551a0",
+       "classificacoes-209218c3",
+       "classificacoes-17c8676a",
+       "classificacoes-c060b71e",
+       "classificacoes-d949e30d",
+       "classificacoes-68cb5ce6",
+       "classificacoes-40b6f2df",
+       "classificacoes-651d222a",
+       "classificacoes-ae54b70d",
+       "classificacoes-275160d7",
+       "classificacoes-41fd5951",
+       "classificacoes-573b431b",
+       "classificacoes-9726b032"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "251f2da02f07d643bacca07b3c0fbdb3453d12a4b08a11069020c8f44c14fee5"
+     }
+    ],
+    "questaoSha256": "e8d351e4621555a9602b2df1bb0590d8207a09030396f8104679f8e895d00fc4",
+    "comentarioSha256": "95ace057f19a174f1d1e670e4515c36f425a6cc5efffa839930757053d7de661"
+   }
   },
   "pediatria-0632": {
    "tema": "pediatria",
@@ -24004,7 +24137,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24028,7 +24161,55 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "9b23b3d44bfe38a47e132102bfa4123c285d8edceb95eabb3fab401dfdbc8434"
+   "questaoSha256": "9b23b3d44bfe38a47e132102bfa4123c285d8edceb95eabb3fab401dfdbc8434",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Tratamento"
+      ],
+      "blocos": [
+       "tratamento-9a3e9a18",
+       "tratamento-bb0643c9",
+       "tratamento-1fe20239",
+       "tratamento-a3c92c02",
+       "tratamento-da22f007",
+       "tratamento-f26f6977",
+       "tratamento-035135f8",
+       "tratamento-5d4c3bac",
+       "tratamento-0bfbf3c6",
+       "tratamento-82438e1a",
+       "tratamento-b73e4e3a",
+       "tratamento-28400503",
+       "tratamento-c78f9b2a",
+       "tratamento-068bd5f7",
+       "tratamento-428e16a7",
+       "tratamento-10d375db",
+       "tratamento-b2e5c022",
+       "tratamento-89c54e56",
+       "tratamento-577a247e",
+       "tratamento-4bca4308",
+       "tratamento-dba1a6be",
+       "tratamento-0ba8da1d",
+       "tratamento-90748fd8",
+       "tratamento-bda172ef",
+       "tratamento-f18060b9",
+       "tratamento-45123ff1"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "e3d8e114aca9288a296249a0d4f41970f6446fcdd32f57325e35000c3058aa5c"
+     }
+    ],
+    "questaoSha256": "9b23b3d44bfe38a47e132102bfa4123c285d8edceb95eabb3fab401dfdbc8434",
+    "comentarioSha256": "869415c9e145eed4cc6c00abd3ebdb5ccf98dcfc5befd48dc984427b63c07d3e"
+   }
   },
   "pediatria-0656": {
    "tema": "pediatria",
@@ -24701,7 +24882,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24724,7 +24905,100 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "7413b5bb40a8fbf57d9839df5e17be372c9479966d2670b7b4d8b4f4d2067e54"
+   "questaoSha256": "7413b5bb40a8fbf57d9839df5e17be372c9479966d2670b7b4d8b4f4d2067e54",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Complicações da fratura consolidada",
+       "Retardo de consolidação, pseudartrose e o nervo ulnar"
+      ],
+      "blocos": [
+       "complicacoes-da-fratura-consolidada-9447140f",
+       "complicacoes-da-fratura-consolidada-36e7d648",
+       "complicacoes-da-fratura-consolidada-365c31e8",
+       "complicacoes-da-fratura-consolidada-7aae0679",
+       "complicacoes-da-fratura-consolidada-23882487",
+       "complicacoes-da-fratura-consolidada-92150513",
+       "complicacoes-da-fratura-consolidada-2f72d567",
+       "complicacoes-da-fratura-consolidada-aef3ff0b",
+       "complicacoes-da-fratura-consolidada-f8be5067",
+       "complicacoes-da-fratura-consolidada-65fce0cd",
+       "complicacoes-da-fratura-consolidada-9df48203",
+       "complicacoes-da-fratura-consolidada-61ac4d48",
+       "complicacoes-da-fratura-consolidada-b1484741",
+       "complicacoes-da-fratura-consolidada-34cf5643",
+       "complicacoes-da-fratura-consolidada-50f3608e",
+       "complicacoes-da-fratura-consolidada-5eb2af87",
+       "complicacoes-da-fratura-consolidada-85f7cd9c",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "b02c0f1a4917932b8e67fd0a031e586101f4b2e4cd1454abdea2d8a1adafd35d"
+     },
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Osteonecrose da tróclea"
+      ],
+      "blocos": [
+       "osteonecrose-da-troclea-7449514b",
+       "osteonecrose-da-troclea-4ee68ef7",
+       "osteonecrose-da-troclea-065f757d",
+       "osteonecrose-da-troclea-448c5ee3",
+       "osteonecrose-da-troclea-cef90e2c",
+       "osteonecrose-da-troclea-48064f9a",
+       "osteonecrose-da-troclea-c179bb5a",
+       "osteonecrose-da-troclea-21e2ec7a",
+       "osteonecrose-da-troclea-f32973a1",
+       "osteonecrose-da-troclea-e4f1fbfa",
+       "osteonecrose-da-troclea-579ac27d",
+       "osteonecrose-da-troclea-8289f8d0",
+       "osteonecrose-da-troclea-5407da7f",
+       "osteonecrose-da-troclea-d21b3dd2",
+       "osteonecrose-da-troclea-e84be102",
+       "osteonecrose-da-troclea-1606edb0",
+       "osteonecrose-da-troclea-090fda80",
+       "osteonecrose-da-troclea-5374fa5e",
+       "osteonecrose-da-troclea-aa096872"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "b4f258cc86184b5ba438dcc86098f142f7ef428d1dd50e695c73176fca357e6b"
+     }
+    ],
+    "questaoSha256": "7413b5bb40a8fbf57d9839df5e17be372c9479966d2670b7b4d8b4f4d2067e54",
+    "comentarioSha256": "df6069102e714f602184a8adfe80bcc1e725461dd33a0385a6f0260e6dc7b8f0"
+   }
   },
   "pediatria-0712": {
    "tema": "pediatria",
@@ -24751,7 +25025,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24783,7 +25057,97 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "b17305b687eeec4dce905ab2471e22c50de88e35a9ac73b94d518091608f68de"
+   "questaoSha256": "b17305b687eeec4dce905ab2471e22c50de88e35a9ac73b94d518091608f68de",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Tratamento",
+       "Complicações da fratura consolidada",
+       "Osteonecrose",
+       "Retardo de consolidação, pseudartrose e o nervo ulnar"
+      ],
+      "blocos": [
+       "tratamento-9a3e9a18",
+       "tratamento-bb0643c9",
+       "tratamento-1fe20239",
+       "tratamento-a3c92c02",
+       "tratamento-da22f007",
+       "tratamento-f26f6977",
+       "tratamento-035135f8",
+       "tratamento-5d4c3bac",
+       "tratamento-0bfbf3c6",
+       "tratamento-82438e1a",
+       "tratamento-b73e4e3a",
+       "tratamento-28400503",
+       "tratamento-c78f9b2a",
+       "tratamento-068bd5f7",
+       "tratamento-428e16a7",
+       "tratamento-10d375db",
+       "tratamento-b2e5c022",
+       "tratamento-89c54e56",
+       "tratamento-577a247e",
+       "tratamento-4bca4308",
+       "tratamento-dba1a6be",
+       "tratamento-0ba8da1d",
+       "tratamento-90748fd8",
+       "tratamento-bda172ef",
+       "tratamento-f18060b9",
+       "tratamento-45123ff1",
+       "complicacoes-da-fratura-consolidada-9447140f",
+       "complicacoes-da-fratura-consolidada-36e7d648",
+       "complicacoes-da-fratura-consolidada-365c31e8",
+       "complicacoes-da-fratura-consolidada-7aae0679",
+       "complicacoes-da-fratura-consolidada-23882487",
+       "complicacoes-da-fratura-consolidada-92150513",
+       "complicacoes-da-fratura-consolidada-2f72d567",
+       "complicacoes-da-fratura-consolidada-aef3ff0b",
+       "complicacoes-da-fratura-consolidada-f8be5067",
+       "complicacoes-da-fratura-consolidada-65fce0cd",
+       "complicacoes-da-fratura-consolidada-9df48203",
+       "complicacoes-da-fratura-consolidada-61ac4d48",
+       "complicacoes-da-fratura-consolidada-b1484741",
+       "complicacoes-da-fratura-consolidada-34cf5643",
+       "complicacoes-da-fratura-consolidada-50f3608e",
+       "complicacoes-da-fratura-consolidada-5eb2af87",
+       "complicacoes-da-fratura-consolidada-85f7cd9c",
+       "osteonecrose-0d063d12",
+       "osteonecrose-a69a308c",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "b8e90fab7a66909a4f21b5e19674c43da45ff99e5332e49294d29f7aa17877b9"
+     }
+    ],
+    "questaoSha256": "b17305b687eeec4dce905ab2471e22c50de88e35a9ac73b94d518091608f68de",
+    "comentarioSha256": "47e2d4601c14ee7b0558245c542ac16e503a710301deb93d529d370b0d9ed627"
+   }
   },
   "pediatria-0720": {
    "tema": "pediatria",
@@ -28047,7 +28411,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28063,7 +28427,42 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "634e30ac15beb010f25bae70c5210e3eadf17a1e38d9c1e8df3437e3d9cb7176"
+   "questaoSha256": "634e30ac15beb010f25bae70c5210e3eadf17a1e38d9c1e8df3437e3d9cb7176",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "O fragmento: anatomia, mecanismo e desvio"
+      ],
+      "blocos": [
+       "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
+       "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
+       "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
+       "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
+       "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
+       "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
+       "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
+       "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
+       "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
+       "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
+       "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
+       "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
+       "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "1b1d107b12f6dcae8d769c4c961c2c95d6196b195b81b0775964b753b17e53b2"
+     }
+    ],
+    "questaoSha256": "634e30ac15beb010f25bae70c5210e3eadf17a1e38d9c1e8df3437e3d9cb7176",
+    "comentarioSha256": "b67c8b075249e25ef594efefd21e5b9a8ecc0c7353b231db79adf1f2d90208db"
+   }
   },
   "pediatria-0997": {
    "tema": "pediatria",
@@ -28072,7 +28471,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28088,7 +28487,55 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "350463354a7f0afd2253315a20a048d6b1e25d29646d106c5740b655d81c8c4a"
+   "questaoSha256": "350463354a7f0afd2253315a20a048d6b1e25d29646d106c5740b655d81c8c4a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Tratamento"
+      ],
+      "blocos": [
+       "tratamento-9a3e9a18",
+       "tratamento-bb0643c9",
+       "tratamento-1fe20239",
+       "tratamento-a3c92c02",
+       "tratamento-da22f007",
+       "tratamento-f26f6977",
+       "tratamento-035135f8",
+       "tratamento-5d4c3bac",
+       "tratamento-0bfbf3c6",
+       "tratamento-82438e1a",
+       "tratamento-b73e4e3a",
+       "tratamento-28400503",
+       "tratamento-c78f9b2a",
+       "tratamento-068bd5f7",
+       "tratamento-428e16a7",
+       "tratamento-10d375db",
+       "tratamento-b2e5c022",
+       "tratamento-89c54e56",
+       "tratamento-577a247e",
+       "tratamento-4bca4308",
+       "tratamento-dba1a6be",
+       "tratamento-0ba8da1d",
+       "tratamento-90748fd8",
+       "tratamento-bda172ef",
+       "tratamento-f18060b9",
+       "tratamento-45123ff1"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "e3d8e114aca9288a296249a0d4f41970f6446fcdd32f57325e35000c3058aa5c"
+     }
+    ],
+    "questaoSha256": "350463354a7f0afd2253315a20a048d6b1e25d29646d106c5740b655d81c8c4a",
+    "comentarioSha256": "6336e113d15d57df52d74bfb2073216e9e2963f001d773743782b67e8f6b561e"
+   }
   },
   "pediatria-0998": {
    "tema": "pediatria",
@@ -28097,7 +28544,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28113,7 +28560,50 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "2247d7d8d46d919e56498750c95a9caf2f051c1c334196383c8f0ff130e32552"
+   "questaoSha256": "2247d7d8d46d919e56498750c95a9caf2f051c1c334196383c8f0ff130e32552",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Classificações"
+      ],
+      "blocos": [
+       "classificacoes-4e13cd16",
+       "classificacoes-fe6e317c",
+       "classificacoes-48565c30",
+       "classificacoes-58985ad8",
+       "classificacoes-582acfa1",
+       "classificacoes-c2db79fd",
+       "classificacoes-34411dcc",
+       "classificacoes-c1dc58fe",
+       "classificacoes-99d551a0",
+       "classificacoes-209218c3",
+       "classificacoes-17c8676a",
+       "classificacoes-c060b71e",
+       "classificacoes-d949e30d",
+       "classificacoes-68cb5ce6",
+       "classificacoes-40b6f2df",
+       "classificacoes-651d222a",
+       "classificacoes-ae54b70d",
+       "classificacoes-275160d7",
+       "classificacoes-41fd5951",
+       "classificacoes-573b431b",
+       "classificacoes-9726b032"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "09f6a4eb812c702429ece8e27ea2a2fd54a296f8e69709062d2b7984a9f120ea"
+     }
+    ],
+    "questaoSha256": "2247d7d8d46d919e56498750c95a9caf2f051c1c334196383c8f0ff130e32552",
+    "comentarioSha256": "0cd76b98d2c93ecf12fda909554c6cb2554ccde634df625304dddc3114af9371"
+   }
   },
   "pediatria-0999": {
    "tema": "pediatria",
@@ -28122,7 +28612,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28138,7 +28628,50 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "756c6c8c4aa6b83bdead06cb41e65c033f86af82753cdb733fefb55dab0ac709"
+   "questaoSha256": "756c6c8c4aa6b83bdead06cb41e65c033f86af82753cdb733fefb55dab0ac709",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Classificações"
+      ],
+      "blocos": [
+       "classificacoes-4e13cd16",
+       "classificacoes-fe6e317c",
+       "classificacoes-48565c30",
+       "classificacoes-58985ad8",
+       "classificacoes-582acfa1",
+       "classificacoes-c2db79fd",
+       "classificacoes-34411dcc",
+       "classificacoes-c1dc58fe",
+       "classificacoes-99d551a0",
+       "classificacoes-209218c3",
+       "classificacoes-17c8676a",
+       "classificacoes-c060b71e",
+       "classificacoes-d949e30d",
+       "classificacoes-68cb5ce6",
+       "classificacoes-40b6f2df",
+       "classificacoes-651d222a",
+       "classificacoes-ae54b70d",
+       "classificacoes-275160d7",
+       "classificacoes-41fd5951",
+       "classificacoes-573b431b",
+       "classificacoes-9726b032"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "09f6a4eb812c702429ece8e27ea2a2fd54a296f8e69709062d2b7984a9f120ea"
+     }
+    ],
+    "questaoSha256": "756c6c8c4aa6b83bdead06cb41e65c033f86af82753cdb733fefb55dab0ac709",
+    "comentarioSha256": "680e6d7b4e1ac809d717cd9e0ae39c25628af389a4f6522a8783cd683abaed5c"
+   }
   },
   "pediatria-1000": {
    "tema": "pediatria",
@@ -28147,7 +28680,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28163,7 +28696,42 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "b5840003f2be8143d8dfd9564d8739bb2ac59d4c495a27048e58cb1502e8790b"
+   "questaoSha256": "b5840003f2be8143d8dfd9564d8739bb2ac59d4c495a27048e58cb1502e8790b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Diagnóstico: o exame e a oblíqua interna"
+      ],
+      "blocos": [
+       "diagnostico-o-exame-e-a-obliqua-interna-e288400a",
+       "diagnostico-o-exame-e-a-obliqua-interna-1f7aadf3",
+       "diagnostico-o-exame-e-a-obliqua-interna-9af46fcb",
+       "diagnostico-o-exame-e-a-obliqua-interna-ae0b9893",
+       "diagnostico-o-exame-e-a-obliqua-interna-b918d823",
+       "diagnostico-o-exame-e-a-obliqua-interna-8803c6fb",
+       "diagnostico-o-exame-e-a-obliqua-interna-0b6f8bf1",
+       "diagnostico-o-exame-e-a-obliqua-interna-9ff32e0b",
+       "diagnostico-o-exame-e-a-obliqua-interna-a4ec161c",
+       "diagnostico-o-exame-e-a-obliqua-interna-a7182721",
+       "diagnostico-o-exame-e-a-obliqua-interna-05b3e295",
+       "diagnostico-o-exame-e-a-obliqua-interna-7f92e443",
+       "diagnostico-o-exame-e-a-obliqua-interna-538ab2b6"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "5990ebd4b6c5a1ad38a5be19ab84527bcb7e044ec51eb54b0d17a3ff0825a8f3"
+     }
+    ],
+    "questaoSha256": "b5840003f2be8143d8dfd9564d8739bb2ac59d4c495a27048e58cb1502e8790b",
+    "comentarioSha256": "832e92e9fb4c421fd854c07cfdee6645d93fffc4e5d3d0ea52d7abc4a1442d41"
+   }
   },
   "pediatria-1001": {
    "tema": "pediatria",
@@ -28172,7 +28740,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28196,7 +28764,34 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "802e3514a7b147bca76dc24ad2746686aa5d892eac5cd0250ff2896101b00b1c"
+   "questaoSha256": "802e3514a7b147bca76dc24ad2746686aa5d892eac5cd0250ff2896101b00b1c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Quem quebra o quê no úmero distal"
+      ],
+      "blocos": [
+       "quem-quebra-o-que-no-umero-distal-eef5fa83",
+       "quem-quebra-o-que-no-umero-distal-3b51dc86",
+       "quem-quebra-o-que-no-umero-distal-1b53f009",
+       "quem-quebra-o-que-no-umero-distal-941b6b37",
+       "quem-quebra-o-que-no-umero-distal-d9b0756e"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "536c0155ad4aced623af5e1071fb85fd992712ed025cf7e866c68c4488985913"
+     }
+    ],
+    "questaoSha256": "802e3514a7b147bca76dc24ad2746686aa5d892eac5cd0250ff2896101b00b1c",
+    "comentarioSha256": "ac06b9ee456632f0fcabfe4b4fc6905f2e1e812a3862dde265e5fec8169a60ee"
+   }
   },
   "pediatria-1002": {
    "tema": "pediatria",
@@ -28205,7 +28800,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28221,7 +28816,55 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "4625bddaf62deca5f49e1564405f036eb2d9afba62933e2a2e6a9f2afe903cd8"
+   "questaoSha256": "4625bddaf62deca5f49e1564405f036eb2d9afba62933e2a2e6a9f2afe903cd8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Tratamento"
+      ],
+      "blocos": [
+       "tratamento-9a3e9a18",
+       "tratamento-bb0643c9",
+       "tratamento-1fe20239",
+       "tratamento-a3c92c02",
+       "tratamento-da22f007",
+       "tratamento-f26f6977",
+       "tratamento-035135f8",
+       "tratamento-5d4c3bac",
+       "tratamento-0bfbf3c6",
+       "tratamento-82438e1a",
+       "tratamento-b73e4e3a",
+       "tratamento-28400503",
+       "tratamento-c78f9b2a",
+       "tratamento-068bd5f7",
+       "tratamento-428e16a7",
+       "tratamento-10d375db",
+       "tratamento-b2e5c022",
+       "tratamento-89c54e56",
+       "tratamento-577a247e",
+       "tratamento-4bca4308",
+       "tratamento-dba1a6be",
+       "tratamento-0ba8da1d",
+       "tratamento-90748fd8",
+       "tratamento-bda172ef",
+       "tratamento-f18060b9",
+       "tratamento-45123ff1"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "e3d8e114aca9288a296249a0d4f41970f6446fcdd32f57325e35000c3058aa5c"
+     }
+    ],
+    "questaoSha256": "4625bddaf62deca5f49e1564405f036eb2d9afba62933e2a2e6a9f2afe903cd8",
+    "comentarioSha256": "4dce4510c4d9a9106d63709f7465bc6aabe80ef4b46576be1e2032c142671d53"
+   }
   },
   "pediatria-1003": {
    "tema": "pediatria",
@@ -28230,7 +28873,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28246,7 +28889,55 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "d58f76374404e15ee007c0f453ca69b845e66edea1d4e0f205b9ca8c1295b0d4"
+   "questaoSha256": "d58f76374404e15ee007c0f453ca69b845e66edea1d4e0f205b9ca8c1295b0d4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Tratamento"
+      ],
+      "blocos": [
+       "tratamento-9a3e9a18",
+       "tratamento-bb0643c9",
+       "tratamento-1fe20239",
+       "tratamento-a3c92c02",
+       "tratamento-da22f007",
+       "tratamento-f26f6977",
+       "tratamento-035135f8",
+       "tratamento-5d4c3bac",
+       "tratamento-0bfbf3c6",
+       "tratamento-82438e1a",
+       "tratamento-b73e4e3a",
+       "tratamento-28400503",
+       "tratamento-c78f9b2a",
+       "tratamento-068bd5f7",
+       "tratamento-428e16a7",
+       "tratamento-10d375db",
+       "tratamento-b2e5c022",
+       "tratamento-89c54e56",
+       "tratamento-577a247e",
+       "tratamento-4bca4308",
+       "tratamento-dba1a6be",
+       "tratamento-0ba8da1d",
+       "tratamento-90748fd8",
+       "tratamento-bda172ef",
+       "tratamento-f18060b9",
+       "tratamento-45123ff1"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "e3d8e114aca9288a296249a0d4f41970f6446fcdd32f57325e35000c3058aa5c"
+     }
+    ],
+    "questaoSha256": "d58f76374404e15ee007c0f453ca69b845e66edea1d4e0f205b9ca8c1295b0d4",
+    "comentarioSha256": "1822cfcff4f9624cc0982474d0bfa470fd50615f6a3eb450bf57d68a13ad2572"
+   }
   },
   "pediatria-1004": {
    "tema": "pediatria",
@@ -28255,7 +28946,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28271,7 +28962,46 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "1ae928984570e86e59b196e6419bf954006a102ed49e2783253ad39b6e22d947"
+   "questaoSha256": "1ae928984570e86e59b196e6419bf954006a102ed49e2783253ad39b6e22d947",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Complicações da fratura consolidada"
+      ],
+      "blocos": [
+       "complicacoes-da-fratura-consolidada-9447140f",
+       "complicacoes-da-fratura-consolidada-36e7d648",
+       "complicacoes-da-fratura-consolidada-365c31e8",
+       "complicacoes-da-fratura-consolidada-7aae0679",
+       "complicacoes-da-fratura-consolidada-23882487",
+       "complicacoes-da-fratura-consolidada-92150513",
+       "complicacoes-da-fratura-consolidada-2f72d567",
+       "complicacoes-da-fratura-consolidada-aef3ff0b",
+       "complicacoes-da-fratura-consolidada-f8be5067",
+       "complicacoes-da-fratura-consolidada-65fce0cd",
+       "complicacoes-da-fratura-consolidada-9df48203",
+       "complicacoes-da-fratura-consolidada-61ac4d48",
+       "complicacoes-da-fratura-consolidada-b1484741",
+       "complicacoes-da-fratura-consolidada-34cf5643",
+       "complicacoes-da-fratura-consolidada-50f3608e",
+       "complicacoes-da-fratura-consolidada-5eb2af87",
+       "complicacoes-da-fratura-consolidada-85f7cd9c"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "df70416996cc4982a52ba67e3fb8cdca373749cb912272374a5fe209e940eb13"
+     }
+    ],
+    "questaoSha256": "1ae928984570e86e59b196e6419bf954006a102ed49e2783253ad39b6e22d947",
+    "comentarioSha256": "706485b64e88bb45239c3ac4ec7294e92501a71651ccd4fc15bd4e1916db153e"
+   }
   },
   "pediatria-1005": {
    "tema": "pediatria",
@@ -28280,7 +29010,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28296,7 +29026,49 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "105f31d480e10e4f8b0002987ef9654ee393dc2e561e15150c2e95938ce8e6d9"
+   "questaoSha256": "105f31d480e10e4f8b0002987ef9654ee393dc2e561e15150c2e95938ce8e6d9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Retardo de consolidação, pseudartrose e o nervo ulnar"
+      ],
+      "blocos": [
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "c968ed4e9be150db48fcd86bc988773e6064472dc113e6581815bf29cf60b209"
+     }
+    ],
+    "questaoSha256": "105f31d480e10e4f8b0002987ef9654ee393dc2e561e15150c2e95938ce8e6d9",
+    "comentarioSha256": "9d527478a166a622008a3861ed484efd69aa889c433800895f69e6f6018e0af1"
+   }
   },
   "pediatria-1006": {
    "tema": "pediatria",
@@ -28305,7 +29077,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28321,7 +29093,49 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "af294fcae19460a029dbf6202ddbfd620977b924dc49f66510adfb1eebb819b9"
+   "questaoSha256": "af294fcae19460a029dbf6202ddbfd620977b924dc49f66510adfb1eebb819b9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-16-condilo-lateral",
+      "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+      "secoes": [
+       "Retardo de consolidação, pseudartrose e o nervo ulnar"
+      ],
+      "blocos": [
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+       "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+      ],
+      "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+      "trechosSha256": "c968ed4e9be150db48fcd86bc988773e6064472dc113e6581815bf29cf60b209"
+     }
+    ],
+    "questaoSha256": "af294fcae19460a029dbf6202ddbfd620977b924dc49f66510adfb1eebb819b9",
+    "comentarioSha256": "21dd18fb948916f4328822c930d30ab751ac442b22ebc1ca812c9124bab51fd3"
+   }
   },
   "pediatria-1007": {
    "tema": "pediatria",
@@ -28356,7 +29170,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28373,7 +29187,65 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "a08dc93fad933ff24dad45d364bc1a55e3513bad267ad1e03c88a18617535433"
+   "questaoSha256": "a08dc93fad933ff24dad45d364bc1a55e3513bad267ad1e03c88a18617535433",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Fratura do côndilo medial"
+      ],
+      "blocos": [
+       "fratura-do-condilo-medial-26aed577",
+       "fratura-do-condilo-medial-97e495f8",
+       "fratura-do-condilo-medial-f094448d",
+       "fratura-do-condilo-medial-bb9240e3",
+       "fratura-do-condilo-medial-aececaae",
+       "fratura-do-condilo-medial-b9127181",
+       "fratura-do-condilo-medial-71c05757",
+       "fratura-do-condilo-medial-138a2e7f",
+       "fratura-do-condilo-medial-12e22a02",
+       "fratura-do-condilo-medial-a3777695",
+       "fratura-do-condilo-medial-ea87e909",
+       "fratura-do-condilo-medial-ff36cff3",
+       "fratura-do-condilo-medial-2b767636",
+       "fratura-do-condilo-medial-8240b0b1",
+       "fratura-do-condilo-medial-352fb1d3",
+       "fratura-do-condilo-medial-5752e73a",
+       "fratura-do-condilo-medial-869ae839",
+       "fratura-do-condilo-medial-111c3714",
+       "fratura-do-condilo-medial-0a7ec8d9",
+       "fratura-do-condilo-medial-2cd19de2",
+       "fratura-do-condilo-medial-0bbe3295",
+       "fratura-do-condilo-medial-0ce13163",
+       "fratura-do-condilo-medial-d06c4075",
+       "fratura-do-condilo-medial-e0378cf6",
+       "fratura-do-condilo-medial-a43e8291",
+       "fratura-do-condilo-medial-9616d6d3",
+       "fratura-do-condilo-medial-3148b36a",
+       "fratura-do-condilo-medial-d323a5de",
+       "fratura-do-condilo-medial-b4d52bd3",
+       "fratura-do-condilo-medial-a70ee5da",
+       "fratura-do-condilo-medial-fca9f900",
+       "fratura-do-condilo-medial-7324f8a1",
+       "fratura-do-condilo-medial-e440006c",
+       "fratura-do-condilo-medial-284c8825",
+       "fratura-do-condilo-medial-d686e75f",
+       "fratura-do-condilo-medial-d1a39f42"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "044cb4cca39dabf4abd0906dbc5b789207cd511e6233804e1688c1c0ed24358e"
+     }
+    ],
+    "questaoSha256": "a08dc93fad933ff24dad45d364bc1a55e3513bad267ad1e03c88a18617535433",
+    "comentarioSha256": "2cd4cfbaa01d3d4cd32e8eac3ea5c2d2156f03ae5369f2a3eb252a5df7445397"
+   }
   },
   "pediatria-1009": {
    "tema": "pediatria",
@@ -28383,7 +29255,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28398,7 +29270,62 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "0ae32726cab1713f19ccd6a519f795163af489f4c5d4a62765fa91d49db6d360"
+   "questaoSha256": "0ae32726cab1713f19ccd6a519f795163af489f4c5d4a62765fa91d49db6d360",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Descolamento epifisário total do úmero distal: quem tem e como reconhecer"
+      ],
+      "blocos": [
+       "descolamento-epifisario-total-do-umero-distal-qu-d22afc63",
+       "descolamento-epifisario-total-do-umero-distal-qu-e902b402",
+       "descolamento-epifisario-total-do-umero-distal-qu-7e1f3892",
+       "descolamento-epifisario-total-do-umero-distal-qu-322a3acd",
+       "descolamento-epifisario-total-do-umero-distal-qu-ec1ee667",
+       "descolamento-epifisario-total-do-umero-distal-qu-9ca53ab2",
+       "descolamento-epifisario-total-do-umero-distal-qu-998b543f",
+       "descolamento-epifisario-total-do-umero-distal-qu-e9c4b844",
+       "descolamento-epifisario-total-do-umero-distal-qu-10644d50",
+       "descolamento-epifisario-total-do-umero-distal-qu-5dc58f4b",
+       "descolamento-epifisario-total-do-umero-distal-qu-bb9240e3",
+       "descolamento-epifisario-total-do-umero-distal-qu-859c9054",
+       "descolamento-epifisario-total-do-umero-distal-qu-b3a03041",
+       "descolamento-epifisario-total-do-umero-distal-qu-42648094",
+       "descolamento-epifisario-total-do-umero-distal-qu-2be9d010",
+       "descolamento-epifisario-total-do-umero-distal-qu-d1b84719",
+       "descolamento-epifisario-total-do-umero-distal-qu-13b5efb3",
+       "descolamento-epifisario-total-do-umero-distal-qu-ce127d92",
+       "descolamento-epifisario-total-do-umero-distal-qu-955c88b3",
+       "descolamento-epifisario-total-do-umero-distal-qu-b55ca15c",
+       "descolamento-epifisario-total-do-umero-distal-qu-783ae770",
+       "descolamento-epifisario-total-do-umero-distal-qu-73f57b32",
+       "descolamento-epifisario-total-do-umero-distal-qu-1ab6bebd",
+       "descolamento-epifisario-total-do-umero-distal-qu-9dd1c460",
+       "descolamento-epifisario-total-do-umero-distal-qu-62bc130e",
+       "descolamento-epifisario-total-do-umero-distal-qu-cc4500c1",
+       "descolamento-epifisario-total-do-umero-distal-qu-f048c1aa",
+       "descolamento-epifisario-total-do-umero-distal-qu-5a9674bf",
+       "descolamento-epifisario-total-do-umero-distal-qu-5cd3c48c",
+       "descolamento-epifisario-total-do-umero-distal-qu-436a28b1",
+       "descolamento-epifisario-total-do-umero-distal-qu-0e104b21",
+       "descolamento-epifisario-total-do-umero-distal-qu-823d9a75",
+       "descolamento-epifisario-total-do-umero-distal-qu-5d72fa91"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "062bc3289716a9a75251a439c4f64101669d23389fa423e300842a9dbee90355"
+     }
+    ],
+    "questaoSha256": "0ae32726cab1713f19ccd6a519f795163af489f4c5d4a62765fa91d49db6d360",
+    "comentarioSha256": "24753374c736c119f625b756f505e66d608541da2ef7354e11705df7dab34141"
+   }
   },
   "pediatria-1010": {
    "tema": "pediatria",
@@ -29135,7 +30062,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29152,7 +30079,40 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "215a3e42dd6fabc4ce9023c0022a67c1a0b3486155262795f29acb027d890eb5"
+   "questaoSha256": "215a3e42dd6fabc4ce9023c0022a67c1a0b3486155262795f29acb027d890eb5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Fratura do epicôndilo lateral"
+      ],
+      "blocos": [
+       "fratura-do-epicondilo-lateral-fa97a6c8",
+       "fratura-do-epicondilo-lateral-723b58d6",
+       "fratura-do-epicondilo-lateral-a9ccf232",
+       "fratura-do-epicondilo-lateral-f0d82e2c",
+       "fratura-do-epicondilo-lateral-3816efa4",
+       "fratura-do-epicondilo-lateral-1bce3944",
+       "fratura-do-epicondilo-lateral-326b0147",
+       "fratura-do-epicondilo-lateral-4d2e8ee9",
+       "fratura-do-epicondilo-lateral-3148b36a",
+       "fratura-do-epicondilo-lateral-c3e8f59d",
+       "fratura-do-epicondilo-lateral-13b6bf7f"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "7f00a34314c1725d52e23a2135ed9740ab4cfeb8c2a0f123c164be3d106529ea"
+     }
+    ],
+    "questaoSha256": "215a3e42dd6fabc4ce9023c0022a67c1a0b3486155262795f29acb027d890eb5",
+    "comentarioSha256": "bf236e32baca9b651b4638cc4c2f72c2eac893f145871a7940646d8ed96bef2e"
+   }
   },
   "pediatria-1020": {
    "tema": "pediatria",
