@@ -94,7 +94,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    acervo (lista em `.oq/simao2026-lista.txt`). Só o comentário muda; enunciado, alternativas, gabarito e id ficam.
    Aplicar: `aplicar_lote.py ~/OrtoQuestoes-Biblioteca/lotes/simao-2026 mao revisao_NN` (os 8 de cotovelo,
    ombro-cotovelo-0645 a 0652, num arquivo à parte com o tema ombro-cotovelo).
-   Feito: revisões 01 a 16 (mao-1719 a mao-1798). Próximo: revisão 17 (mao-1799 a mao-1803).
+   Feito: revisões 01 a 17 (mao-1719 a mao-1803). Próximo: revisão 18 (mao-1804 a mao-1808).
    Atalho: `bash ~/OrtoQuestoes-Biblioteca/.oq/revisar2026.sh NN AAAA BBBB` aplica, valida, atualiza a linha
    acima e faz commit local (cópia em docs/mao/ferramentas/). Push e PR a cada 2 a 4 revisões (AGENTS.md,
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
