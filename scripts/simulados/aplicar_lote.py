@@ -108,6 +108,9 @@ for m, q in QS:
     if q.get("img") and not (PASTA / "img" / f"{q['img'][0]}.png").exists():
         erros.append(f"{rot}: figura {q['img'][0]}.png não encontrada")
 
+repetidos = [i for i, n in Counter(q["id"] for _, q in QS if q.get("id")).items() if n > 1]
+if repetidos:
+    erros.append(f"ids de revisão repetidos no lote: {', '.join(repetidos)}")
 gabs = Counter(q["gab"] for _, q in QS)
 print(f"{len(QS)} questões | gabarito {dict(sorted(gabs.items()))} | "
       f"comentário mediana {statistics.median(tamanhos):.0f} (mín {min(tamanhos)}, máx {max(tamanhos)}) | "
@@ -141,7 +144,7 @@ for m, q in QS:
         n += 1
         qid = f"{a.tema}-{n:04d}"
     primeiro = primeiro or qid
-    imagens = []
+    imagens = T["questoes"][pos[qid]].get("imagens", []) if q.get("id") else []  # revisão sem img= mantém a figura
     if q.get("img"):
         arquivo, figura, *caixa = q["img"]
         im = Image.open(PASTA / "img" / f"{arquivo}.png").convert("RGB")
