@@ -7244,19 +7244,63 @@
   "conferido": false
  },
  "pediatria-0547": {
-  "conceito": "**A luxação do cotovelo na criança.** É menos comum que na adolescência e no adulto, porque a criança pequena tende a fraturar a região supracondiliana antes de luxar. O pico é entre **10 e 15 anos**, quando as fises estão perto de fechar. Quase todas são **posteriores** ou posterolaterais, por queda com o braço estendido.\n\n**A associação com a fratura do epicôndilo medial.** Em cerca de **30% a 50%** das luxações, o **epicôndilo medial** é arrancado pelo ligamento colateral medial e pela massa flexora-pronadora. O fragmento pode ficar **encarcerado** dentro da articulação após a redução, o que deve ser procurado sempre (articulação não congruente na radiografia de controle).\n\n**Os nervos lesados.**\n| Nervo | Situação |\n|---|---|\n| **Ulnar** | O **mais comum**: passa atrás do epicôndilo medial; lesado pela tração no valgo e pela avulsão ou encarceramento do epicôndilo |\n| **Mediano** | Raro, mas grave: pode ficar **encarcerado** na articulação após a redução |\n| Radial e interósseos | Raros na luxação |\n\n**O encarceramento do mediano.** Mais traiçoeiro: o nervo pode ficar preso dentro da articulação, ou em um sulco ósseo do úmero (o sinal de **Matev**, uma depressão na cortical medial visível meses depois). A dor desproporcional e o déficit progressivo do mediano após a redução indicam exploração.\n\n**O tratamento.** **Redução fechada** sob sedação, teste da estabilidade, radiografia para excluir fragmentos encarcerados, imobilização curta (até 2 a 3 semanas) e mobilização precoce, porque a rigidez é o problema mais comum. A fixação do epicôndilo medial é indicada quando ele está **encarcerado** e, discutivelmente, nos desvios grandes ou em atletas de arremesso.\n\n**A diferença com a fratura supracondiliana.** Na supracondiliana em extensão, o nervo mais lesado é o **interósseo anterior** (desvio posterolateral); na luxação do cotovelo, é o **ulnar**, pela relação com o epicôndilo medial.",
-  "correta": "**Correta: A (rara e os sintomas usualmente resolvem após a redução).** A lesão do nervo radial na luxação do cotovelo da criança é rara e, quando ocorre, costuma ser neuropraxia por estiramento, com recuperação espontânea após a redução.",
+  "conceito": "**A lesão radial é rara na luxação do cotovelo da criança.** O capítulo descreve poucos casos, com sintomas que regrediram rapidamente depois da redução. Isso contrasta com a maior frequência de sintomas ulnares e com a preocupação do mediano poder ficar preso na articulação.\n\nÉ necessário examinar e registrar todos os nervos antes e depois da redução. A tendência de recuperação não é uma garantia individual: persistência, surgimento ou piora de déficit exige reavaliar se há interposição ou outra lesão. O enunciado pede a descrição usual das séries, que combina raridade e resolução após alinhar a articulação.",
+  "correta": "**A: rara e usualmente resolve após a redução.** São os dois atributos apresentados para os poucos casos de lesão radial discutidos. A resposta descreve a tendência, sem dispensar seguimento.",
   "incorretas": {
-   "B": "A lesão é rara, mas quase sempre é **neuropraxia**, com recuperação espontânea; a persistência é exceção.",
-   "C": "A lesão do radial é **rara** na luxação do cotovelo; o nervo mais lesado é o **ulnar**.",
-   "D": "A lesão do radial é **rara** e costuma **resolver** após a redução."
+   "B": "**A raridade está correta, mas a evolução usual está invertida.** Os casos citados apresentaram regressão rápida após reduzir. Não se deve transformar a possibilidade de persistência num desfecho habitual.",
+   "C": "**A recuperação está de acordo com os relatos, mas a frequência não.** O radial é muito menos descrito que ulnar e mediano na luxação pediátrica. O fato de todos serem examinados não significa incidências semelhantes.",
+   "D": "**Erra frequência e evolução.** A fonte descreve poucos casos e melhora após a redução. Um déficit que não segue essa tendência precisa de reavaliação; não é a descrição usual solicitada."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 15",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas do cotovelo."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Nervos e artéria na luxação."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Nervos e artéria na luxação"
+     ],
+     "blocos": [
+      "nervos-e-arteria-na-luxacao-91694afa",
+      "nervos-e-arteria-na-luxacao-8f5697da",
+      "nervos-e-arteria-na-luxacao-76444fa1",
+      "nervos-e-arteria-na-luxacao-927e9cfe",
+      "nervos-e-arteria-na-luxacao-9349ac14",
+      "nervos-e-arteria-na-luxacao-604ccf7b",
+      "nervos-e-arteria-na-luxacao-fc98dd47",
+      "nervos-e-arteria-na-luxacao-e700fa85",
+      "nervos-e-arteria-na-luxacao-ec1544ad",
+      "nervos-e-arteria-na-luxacao-9e68675a",
+      "nervos-e-arteria-na-luxacao-741159f4",
+      "nervos-e-arteria-na-luxacao-c322ab8d",
+      "nervos-e-arteria-na-luxacao-343dad3b",
+      "nervos-e-arteria-na-luxacao-11998181",
+      "nervos-e-arteria-na-luxacao-5b7dad41",
+      "nervos-e-arteria-na-luxacao-dd8d287c",
+      "nervos-e-arteria-na-luxacao-877e7582",
+      "nervos-e-arteria-na-luxacao-180f56e0",
+      "nervos-e-arteria-na-luxacao-9c67a51e",
+      "nervos-e-arteria-na-luxacao-72056999",
+      "nervos-e-arteria-na-luxacao-7c77727a",
+      "nervos-e-arteria-na-luxacao-584aebf5",
+      "nervos-e-arteria-na-luxacao-0d677891"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "ab20f38c8f15fb27947a6342fe8eb21a5a56fe0e26da34ba9c898611ec17e24d"
+    }
+   ],
+   "questaoSha256": "f0c0e1facfde3b3b91a24ffa7e0c8f54a8e94869eccbff738776acf531b5d5c3",
+   "comentarioSha256": "659d9622abc300840470c5e4db5574d7c024ab6de57e97b0188d7ab782745e65"
+  }
  },
  "pediatria-0549": {
   "conceito": "**A fratura da metáfise proximal da tíbia (fratura de Cozen).** É uma fratura aparentemente simples, típica de crianças de **3 a 6 anos**, muitas vezes em **galho verde** ou incompleta, com abertura da cortical **medial**. O seu problema é o **valgo progressivo** que aparece nos meses seguintes, mesmo quando a fratura foi bem reduzida: o **fenômeno de Cozen**.\n\n**As causas propostas para o valgo.**\n| Teoria | Explicação |\n|---|---|\n| **Hipercrescimento medial** | A hiperemia da consolidação estimula mais a fise do lado medial da tíbia |\n| **Interposição de partes moles** | **Pata de ganso** (sartório, grácil e semitendíneo), periósteo ou colateral medial presos no foco medial, impedindo o fechamento |\n| **Fíbula íntegra** | Funciona como tirante lateral e limita o crescimento lateral |\n| Redução incompleta | O foco medial fica aberto (valgo residual) |\n\n**A evolução natural.** O valgo aparece nos primeiros **6 a 12 meses**, atinge o máximo em até **18 a 24 meses** e, na maioria das crianças, **corrige espontaneamente** de forma parcial ou completa ao longo de vários anos, à medida que a tíbia cresce e remodela.\n\n**O tratamento.**\n- **Avisar os pais** desde o início que o valgo pode surgir, mesmo com tratamento correto.\n- Redução fechada sob anestesia, com o joelho em **extensão** e força em **varo**, fechando a cortical medial; gesso inguinopodálico moldado em varo.\n- Se a cortical medial não fecha, suspeitar de **interposição** (pata de ganso, periósteo): a exploração e a liberação podem ser necessárias.\n- No valgo estabelecido, **observar** por pelo menos 18 a 24 meses; se não corrigir e for grave, **hemiepifisiodese medial** (placa em 8) ou osteotomia (com risco de recidiva). A osteotomia precoce é **evitada**, porque o valgo tende a voltar.\n\n**O mecanismo e a cortical em tensão.** A fratura de Cozen ocorre por força em **valgo** sobre a tíbia proximal. Pela mecânica, a força em valgo coloca a **cortical medial em tensão** (ela se abre) e a **lateral em compressão** (ela entorta sem romper), produzindo o galho verde com abertura medial. A banca, porém, indicou como resposta o valgo com fratura em tensão da cortical **lateral**.",
@@ -7555,18 +7599,90 @@
   "conferido": false
  },
  "pediatria-0572": {
-  "conceito": "**A luxação do cotovelo na criança.** É menos comum que na adolescência e no adulto, porque a criança pequena tende a fraturar a região supracondiliana antes de luxar. O pico é entre **10 e 15 anos**, quando as fises estão perto de fechar. Quase todas são **posteriores** ou posterolaterais, por queda com o braço estendido.\n\n**A associação com a fratura do epicôndilo medial.** Em cerca de **30% a 50%** das luxações, o **epicôndilo medial** é arrancado pelo ligamento colateral medial e pela massa flexora-pronadora. O fragmento pode ficar **encarcerado** dentro da articulação após a redução, o que deve ser procurado sempre (articulação não congruente na radiografia de controle).\n\n**Os nervos lesados.**\n| Nervo | Situação |\n|---|---|\n| **Ulnar** | O **mais comum**: passa atrás do epicôndilo medial; lesado pela tração no valgo e pela avulsão ou encarceramento do epicôndilo |\n| **Mediano** | Raro, mas grave: pode ficar **encarcerado** na articulação após a redução |\n| Radial e interósseos | Raros na luxação |\n\n**O encarceramento do mediano.** Mais traiçoeiro: o nervo pode ficar preso dentro da articulação, ou em um sulco ósseo do úmero (o sinal de **Matev**, uma depressão na cortical medial visível meses depois). A dor desproporcional e o déficit progressivo do mediano após a redução indicam exploração.\n\n**O tratamento.** **Redução fechada** sob sedação, teste da estabilidade, radiografia para excluir fragmentos encarcerados, imobilização curta (até 2 a 3 semanas) e mobilização precoce, porque a rigidez é o problema mais comum. A fixação do epicôndilo medial é indicada quando ele está **encarcerado** e, discutivelmente, nos desvios grandes ou em atletas de arremesso.\n\n**A diferença com a fratura supracondiliana.** Na supracondiliana em extensão, o nervo mais lesado é o **interósseo anterior** (desvio posterolateral); na luxação do cotovelo, é o **ulnar**, pela relação com o epicôndilo medial.",
-  "correta": "**Correta: C (do epicôndilo medial).** Na luxação posterior do cotovelo da criança, a fratura mais associada é a avulsão do epicôndilo medial (em 30% a 50%), pelo ligamento colateral medial e pela massa flexora-pronadora.",
+  "conceito": "**A luxação posterior pediátrica frequentemente vem acompanhada de fratura.** O **epicôndilo medial** é o fragmento associado mais comum: o colateral ulnar pode arrancar a apófise durante a força em valgo. Cerca de metade das fraturas desse epicôndilo se associa a luxação, com variação entre séries.\n\nA consequência prática é procurar o núcleo no lugar antes e depois de reduzir. O fragmento pode ficar dentro da articulação e bloquear a redução ou deixar incongruência. Coronoide e rádio proximal também se fraturam e exigem atenção, mas não superam o epicôndilo medial na associação descrita. Frequência de todas as fraturas do cotovelo é diferente de frequência entre as que acompanham luxação.",
+  "correta": "**C: epicôndilo medial.** É a associação predominante, coerente com a avulsão do ponto de origem medial durante a luxação. Localizá-lo nas imagens de controle é parte obrigatória da avaliação.",
   "incorretas": {
-   "A": "A fratura do **colo do rádio** pode acompanhar a luxação (lesões de Jeffery), mas é menos frequente que a do epicôndilo medial.",
-   "B": "A cabeça do rádio é em boa parte cartilaginosa na criança; quem fratura é o colo, e com menos frequência.",
-   "D": "A fratura do **coronoide** é comum na luxação do adulto, mas rara na criança."
+   "A": "**O colo do rádio pode acompanhar a luxação e um grande desvio deve levantar suspeita de instabilidade.** Ainda assim, não é a fratura associada mais frequente. Seu reconhecimento também importa pelo risco de complicações como sinostose.",
+   "B": "**A cabeça radial pode se lesar, porém o capítulo a coloca atrás do epicôndilo medial nessa comparação.** A participação no complexo articular não basta para torná-la a associação predominante.",
+   "D": "**O coronoide é uma associação relevante e pode participar da instabilidade.** No adolescente, sua faceta anteromedial merece atenção. A pergunta pede a mais frequente na criança, que continua sendo o epicôndilo medial."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 15"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Luxação do cotovelo na criança: quem, quando e o que vem junto; Fratura do epicôndilo medial: diagnóstico e encarceramento.",
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, seção Complicações da luxação (sinostose com fratura do colo radial)."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Luxação do cotovelo na criança: quem, quando e o que vem junto",
+      "Fratura do epicôndilo medial: diagnóstico e encarceramento"
+     ],
+     "blocos": [
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-66a266fa",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-46ce9cd3",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-d2370a7b",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-bcae8f6d",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-0456e1ef",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-f8e278f6",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-ecf7483c",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-89370dc1",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-140ea056",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-8d9f3860",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-0743b53e",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-7e9542af",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-7727c46b",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-ae4d1c25",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-5fe2aae3",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-29fe6eb7",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-0a789f86",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-2f0d36af",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-8214df1b",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-5af08218",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-3fc9484a",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-8102296a",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-02937e66",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-b78723f4",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-721e8535",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-5e596305"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "bd25cc72f8407b10ee22af5eede2dfba60ee8bbaece982bf24e93b5589611def"
+    },
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Complicações da luxação"
+     ],
+     "blocos": [
+      "complicacoes-da-luxacao-ff7dbd8d",
+      "complicacoes-da-luxacao-5ea1bd50",
+      "complicacoes-da-luxacao-5d81c720",
+      "complicacoes-da-luxacao-64c88bd1",
+      "complicacoes-da-luxacao-55d9fe24",
+      "complicacoes-da-luxacao-67e5b8cf",
+      "complicacoes-da-luxacao-fc9081c6",
+      "complicacoes-da-luxacao-af0c8cc0"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "2497eabaee4d5869c1e0be48c954563d373d0a84fabad95c2a98cd89b45faa26"
+    }
+   ],
+   "questaoSha256": "27da32ba72eecb249277f70ce38267c283bf8b4074e6863ce35c1c108ad5bac5",
+   "comentarioSha256": "5fca3866175d6f5e208c7797d36a906fcac40aa87e1b1c7e25150ee160b95b72"
+  }
  },
  "pediatria-0574": {
   "conceito": "Na **fratura completa do rádio distal** da criança, os fragmentos podem **cavalgar** um sobre o outro: é a deformidade **em baioneta**, com encurtamento. Na criança abaixo de 10 anos, até essa posição costuma **remodelar** bem.\n\n**O risco do fragmento proximal**: a ponta afiada da diáfise (a espícula) pode **perfurar as partes moles** à sua frente. Quando ela fica do lado **volar**, ameaça:\n\n**os tendões flexores**, que podem ser lesados ou ficar **interpostos** entre os fragmentos, impedindo a redução;\n\n**o nervo mediano**, com risco de síndrome do túnel do carpo aguda;\n\n**a pele**, transformando a fratura em exposta.\n\n**O termo \"baioneta reversa\"** não é padronizado; a estrutura em risco depende de o fragmento proximal ficar volar ou dorsal. A banca indicou os **tendões flexores**.\n\n**Quando a redução fechada falha**: interposição do **pronador quadrado**, do periósteo ou de tendões; nesses casos, redução aberta.\n\n**Os tendões extensores** ficam no lado dorsal; o **nervo sensitivo radial** fica lateral e pouco exposto ao fragmento proximal.\n\n**A fratura completa do rádio distal com cavalgamento.**\n| Aspecto | Conduta |\n|---|---|\n| Criança com mais de 2 anos de crescimento | A baioneta com bom alinhamento angular e rotacional pode ser aceita: remodela |\n| Redução | Sob sedação ou anestesia, exagerando a deformidade para \"destravar\" os fragmentos e depois corrigindo |\n| Falha da redução fechada | Interposição de **pronador quadrado**, periósteo ou **tendões flexores**: redução aberta |\n| Instabilidade | Fios percutâneos e gesso bem moldado |\n\n**Por que os tendões flexores.** Quando o fragmento proximal (diafisário) se desloca para a face **volar**, a sua ponta avança entre as estruturas anteriores do punho, onde estão os tendões **flexores** e o nervo mediano. Os tendões podem ser lesados ou ficar **interpostos**, impedindo a redução fechada.",
@@ -7703,19 +7819,63 @@
   "conferido": false
  },
  "pediatria-0586": {
-  "conceito": "**A luxação do cotovelo na criança.** É menos comum que na adolescência e no adulto, porque a criança pequena tende a fraturar a região supracondiliana antes de luxar. O pico é entre **10 e 15 anos**, quando as fises estão perto de fechar. Quase todas são **posteriores** ou posterolaterais, por queda com o braço estendido.\n\n**A associação com a fratura do epicôndilo medial.** Em cerca de **30% a 50%** das luxações, o **epicôndilo medial** é arrancado pelo ligamento colateral medial e pela massa flexora-pronadora. O fragmento pode ficar **encarcerado** dentro da articulação após a redução, o que deve ser procurado sempre (articulação não congruente na radiografia de controle).\n\n**Os nervos lesados.**\n| Nervo | Situação |\n|---|---|\n| **Ulnar** | O **mais comum**: passa atrás do epicôndilo medial; lesado pela tração no valgo e pela avulsão ou encarceramento do epicôndilo |\n| **Mediano** | Raro, mas grave: pode ficar **encarcerado** na articulação após a redução |\n| Radial e interósseos | Raros na luxação |\n\n**O encarceramento do mediano.** Mais traiçoeiro: o nervo pode ficar preso dentro da articulação, ou em um sulco ósseo do úmero (o sinal de **Matev**, uma depressão na cortical medial visível meses depois). A dor desproporcional e o déficit progressivo do mediano após a redução indicam exploração.\n\n**O tratamento.** **Redução fechada** sob sedação, teste da estabilidade, radiografia para excluir fragmentos encarcerados, imobilização curta (até 2 a 3 semanas) e mobilização precoce, porque a rigidez é o problema mais comum. A fixação do epicôndilo medial é indicada quando ele está **encarcerado** e, discutivelmente, nos desvios grandes ou em atletas de arremesso.\n\n**A diferença com a fratura supracondiliana.** Na supracondiliana em extensão, o nervo mais lesado é o **interósseo anterior** (desvio posterolateral); na luxação do cotovelo, é o **ulnar**, pela relação com o epicôndilo medial.",
-  "correta": "**Correta: A (ulnar).** O nervo ulnar passa atrás do epicôndilo medial, que é avulsionado em boa parte das luxações do cotovelo da criança; a tração no valgo e o fragmento lesam o nervo.",
+  "conceito": "**Mais frequente e mais grave não significam a mesma coisa.** Na luxação pediátrica, o **ulnar é o nervo mais lesado**, em geral por neuropraxia de estiramento, às vezes associada ao epicôndilo medial desviado. O **mediano** é menos frequente, mas pode ficar encarcerado e produzir um problema mais grave. O radial é muito raro nas séries apresentadas.\n\nO capítulo reuniu 317 luxações com sintomas neurológicos em cerca de 10% após a redução, predominando o ulnar isolado ou combinado. Esses dados exigem exame anterior e posterior à manobra, porque um déficit novo ou pior merece avaliação específica. A regra de frequência não autoriza observar passivamente uma lesão com suspeita de aprisionamento.",
+  "correta": "**A: ulnar.** É o predominante nas lesões descritas, por sua relação posterior ao epicôndilo medial e pela tensão ou interposição nessa região. O exame deve distinguir neuropraxia que evolui bem de sinais de encarceramento.",
   "incorretas": {
-   "B": "O **mediano** pode ser lesado e até ficar **encarcerado** na articulação, mas isso é raro.",
-   "C": "O **interósseo anterior** é o nervo típico da fratura **supracondiliana** com desvio posterolateral, e não da luxação.",
-   "D": "O **interósseo posterior** é o nervo típico da lesão de **Monteggia**, e não da luxação do cotovelo."
+   "B": "**O mediano merece atenção pelo risco de encarceramento, mas não é o mais frequente.** Ele pode ficar preso na articulação ou junto ao epicôndilo e exigir liberação. A alternativa troca gravidade potencial por frequência.",
+   "C": "**O interósseo anterior não é o nervo predominante das séries de luxação apresentadas.** Seu destaque em outras fraturas do cotovelo, como a supracondiliana, não pode ser transferido automaticamente para esta população. Aqui, a fonte identifica o ulnar.",
+   "D": "**O interósseo posterior também não é o predominante na luxação do capítulo.** O resumo discute ulnar, mediano e radial e aponta raridade das lesões radiais. Escolher um ramo sem respeitar a série e o mecanismo altera a comparação."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 15",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas do cotovelo."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Nervos e artéria na luxação."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Nervos e artéria na luxação"
+     ],
+     "blocos": [
+      "nervos-e-arteria-na-luxacao-91694afa",
+      "nervos-e-arteria-na-luxacao-8f5697da",
+      "nervos-e-arteria-na-luxacao-76444fa1",
+      "nervos-e-arteria-na-luxacao-927e9cfe",
+      "nervos-e-arteria-na-luxacao-9349ac14",
+      "nervos-e-arteria-na-luxacao-604ccf7b",
+      "nervos-e-arteria-na-luxacao-fc98dd47",
+      "nervos-e-arteria-na-luxacao-e700fa85",
+      "nervos-e-arteria-na-luxacao-ec1544ad",
+      "nervos-e-arteria-na-luxacao-9e68675a",
+      "nervos-e-arteria-na-luxacao-741159f4",
+      "nervos-e-arteria-na-luxacao-c322ab8d",
+      "nervos-e-arteria-na-luxacao-343dad3b",
+      "nervos-e-arteria-na-luxacao-11998181",
+      "nervos-e-arteria-na-luxacao-5b7dad41",
+      "nervos-e-arteria-na-luxacao-dd8d287c",
+      "nervos-e-arteria-na-luxacao-877e7582",
+      "nervos-e-arteria-na-luxacao-180f56e0",
+      "nervos-e-arteria-na-luxacao-9c67a51e",
+      "nervos-e-arteria-na-luxacao-72056999",
+      "nervos-e-arteria-na-luxacao-7c77727a",
+      "nervos-e-arteria-na-luxacao-584aebf5",
+      "nervos-e-arteria-na-luxacao-0d677891"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "ab20f38c8f15fb27947a6342fe8eb21a5a56fe0e26da34ba9c898611ec17e24d"
+    }
+   ],
+   "questaoSha256": "2b76cc82dd9e1cb65be568b517e45b3eb958e9b2204c1017722e0ce7a2a93d64",
+   "comentarioSha256": "d7d18e23472e86b835b05587be2fb1270c04f4338ca8ed189fad89bc0118b6d3"
+  }
  },
  "pediatria-0587": {
   "conceito": "**A coluna cervical da criança.** Até cerca de **8 a 10 anos**, a coluna cervical tem características próprias: a **cabeça é proporcionalmente grande**, os **ligamentos são frouxos**, as **facetas são horizontais** e os corpos vertebrais estão **incompletamente ossificados** e em forma de cunha. Por isso, o fulcro do movimento fica mais **alto** (C2-C3), e as lesões da criança pequena se concentram na cervical alta (occipital a C3). Depois dos 10 anos, o padrão se aproxima do adulto, com lesões em C5-C6.\n\n**As variantes normais que imitam lesões.**\n| Variante | Como imita uma lesão |\n|---|---|\n| **Pseudossubluxação** de C2-C3 (e C3-C4) | Deslizamento anterior de até cerca de 4 mm, normal até os 8 anos; a **linha de Swischuk** ajuda a distinguir |\n| **Acunhamento** do corpo de **C3** | O corpo de C3 parece mais baixo na frente, por **ossificação incompleta**: simula **fratura por compressão** |\n| **Sincondroses** abertas (dentocentral, no odontoide) | Parecem traços de fratura; a dentocentral fecha entre 3 e 6 anos |\n| **Espaço pré-dental** maior | Até 4 a 5 mm na criança (3 mm no adulto) |\n| Ausência da **lordose** cervical | Pode parecer espasmo por lesão |\n| Partes moles pré-vertebrais amplas | Variam com o choro e a expiração |\n\n**O acunhamento de C3.** O corpo vertebral cervical da criança ossifica a partir de um centro que, nos primeiros anos, é **mais estreito na frente**. Em **C3**, isso é especialmente comum, e o corpo aparece em cunha anterior. A diferença com a fratura: a variante não tem dor localizada correspondente, não tem edema de partes moles pré-vertebrais e não muda na radiografia dinâmica; a ressonância mostra o osso normal.\n\n**A conduta na dúvida.** Diante de trauma, a criança deve ser avaliada com cuidado antes de liberar a imobilização. Lembrar também da **SCIWORA** (lesão medular sem anormalidade radiográfica), mais comum na criança pela elasticidade da coluna, que exige ressonância.\n\n**Por que C1-C2 na criança pequena.** Abaixo de **8 anos**, a coluna cervical é **mais móvel**: os ligamentos e as cápsulas são **frouxos**, as **facetas** são mais **horizontais** (permitindo translação), os músculos do pescoço são fracos e a **cabeça é proporcionalmente grande**. O fulcro do movimento fica alto, em **C2-C3**, e a maior parte da energia do trauma se concentra no segmento **occipitocervical e atlantoaxial**. É por isso que as lesões da criança pequena são altas (luxação occipitoatlantal, fraturas da sincondrose do odontoide, instabilidade C1-C2) e as do adolescente, baixas.",
@@ -8940,19 +9100,75 @@
   }
  },
  "pediatria-0649": {
-  "conceito": "**A pronação dolorosa (cotovelo da babá, subluxação da cabeça do rádio).** É a lesão do cotovelo **mais comum** da criança pequena, entre **1 e 4 anos** (pico por volta de 2 a 3 anos), mais em meninas e no lado esquerdo.\n\n**O mecanismo.** **Tração longitudinal** súbita do membro superior com o cotovelo **estendido** e o antebraço em **pronação**: a criança é puxada pela mão (ao atravessar a rua, ao ser levantada, numa brincadeira de girar). Na criança pequena, o **ligamento anular** é frouxo e a cabeça do rádio é pouco desenvolvida (o colo e a cabeça têm diâmetros parecidos). Com a tração, o ligamento anular **escorrega** sobre a cabeça do rádio e fica **interposto** entre a cabeça e o capítulo. Não é uma luxação da articulação: é a **subluxação do ligamento anular**.\n\n**O quadro.** A criança chora no momento e depois **não usa o braço**, mantendo-o ao lado do corpo, com o cotovelo levemente fletido e o antebraço em **pronação**. Não há deformidade nem edema importante. A **radiografia é normal** e não é necessária quando a história é típica.\n\n**A redução.**\n| Manobra | Como |\n|---|---|\n| **Hiperpronação** | Com o cotovelo fletido a 90°, prona-se o antebraço além do normal; a mais eficaz e menos dolorosa |\n| Supinação e flexão | Supina-se o antebraço e flete-se o cotovelo, com o polegar sobre a cabeça do rádio |\n\nEm geral, sente-se um **clique** sobre a cabeça do rádio, e a criança volta a usar o braço em minutos. Se não voltar, deve-se repetir a manobra, radiografar (para excluir fratura) e reavaliar.\n\n**A recidiva.** Ocorre em cerca de 5% a 30%; os pais devem ser orientados a não puxar a criança pelo braço. A partir dos 5 anos, com o crescimento da cabeça do rádio, o problema desaparece.",
-  "correta": "**Correta: C (do ligamento anular do rádio).** Na pronação dolorosa, a tração do braço estendido e pronado faz o ligamento anular, ainda frouxo, escorregar sobre a cabeça do rádio e se interpor entre ela e o capítulo.",
+  "conceito": "**Na pronação dolorosa, quem escorrega é o ligamento anular.** A tração com cotovelo estendido e antebraço pronado permite que ele passe parcialmente sobre a cabeça do rádio e se interponha na radiocapitelar. Pode romper parte da membrana subanular que o prende ao colo. Não se trata, na descrição do capítulo, de uma luxação verdadeira da cabeça radial.\n\nA criança pequena deixa de usar o braço, mantém o antebraço pronado e resiste dolorosamente à supinação. Em quadro típico, não há deformidade nem derrame importante. A redução procura devolver o ligamento à posição; uma radiografia pode ser normal porque o problema principal é de partes moles.",
+  "correta": "**C: ligamento anular do rádio.** Sua subluxação e interposição explicam o nome técnico do quadro. A estrutura não deve ser confundida com o deslocamento da própria articulação.",
   "incorretas": {
-   "A": "A **radioulnar proximal** não se subluxa de fato; quem escorrega é o ligamento anular sobre a cabeça do rádio.",
-   "B": "A **capitulorradial** não está luxada; o ligamento anular é que fica interposto entre a cabeça e o capítulo.",
-   "D": "O **colateral lateral** não é a estrutura envolvida; a lesão é do ligamento anular."
+   "A": "**A radioulnar proximal não está verdadeiramente subluxada no mecanismo apresentado.** A cabeça do rádio mantém sua relação estrutural; o ligamento que a circunda escorrega. Chamar a lesão de luxação articular muda o alvo da redução.",
+   "B": "**O ligamento fica preso na radiocapitelar, mas isso não significa que a articulação inteira tenha subluxado.** A alternativa confunde o local da interposição com a estrutura que se deslocou. O objeto é o ligamento anular.",
+   "D": "**O colateral lateral faz parte da estabilidade lateral, porém não é a estrutura que se interpõe nesse quadro.** A fonte descreve o anular deslizando sobre a cabeça radial. A semelhança regional não torna os dois ligamentos intercambiáveis."
   },
+  "conferido": false,
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott. 5th ed., p. 1484 (referência indicada na prova TARO 2011, questão 36)",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de lesões do cotovelo."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Pronação dolorosa (cotovelo da babá)."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Pronação dolorosa (cotovelo da babá)"
+     ],
+     "blocos": [
+      "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+      "pronacao-dolorosa-cotovelo-da-baba-b699a01e",
+      "pronacao-dolorosa-cotovelo-da-baba-d278b922",
+      "pronacao-dolorosa-cotovelo-da-baba-187884c5",
+      "pronacao-dolorosa-cotovelo-da-baba-b2ef5f88",
+      "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
+      "pronacao-dolorosa-cotovelo-da-baba-e5dfc9bd",
+      "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
+      "pronacao-dolorosa-cotovelo-da-baba-709a83e2",
+      "pronacao-dolorosa-cotovelo-da-baba-392fc59e",
+      "pronacao-dolorosa-cotovelo-da-baba-b817dedc",
+      "pronacao-dolorosa-cotovelo-da-baba-ab653109",
+      "pronacao-dolorosa-cotovelo-da-baba-2a02edc4",
+      "pronacao-dolorosa-cotovelo-da-baba-077fb00d",
+      "pronacao-dolorosa-cotovelo-da-baba-e56e735f",
+      "pronacao-dolorosa-cotovelo-da-baba-7c96573d",
+      "pronacao-dolorosa-cotovelo-da-baba-aac221f7",
+      "pronacao-dolorosa-cotovelo-da-baba-9aaaee4e",
+      "pronacao-dolorosa-cotovelo-da-baba-379369a7",
+      "pronacao-dolorosa-cotovelo-da-baba-2a30365e",
+      "pronacao-dolorosa-cotovelo-da-baba-248c5465",
+      "pronacao-dolorosa-cotovelo-da-baba-e4165878",
+      "pronacao-dolorosa-cotovelo-da-baba-e2eb66b2",
+      "pronacao-dolorosa-cotovelo-da-baba-14e1a039",
+      "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
+      "pronacao-dolorosa-cotovelo-da-baba-570ea5eb",
+      "pronacao-dolorosa-cotovelo-da-baba-74eefc00",
+      "pronacao-dolorosa-cotovelo-da-baba-4a1a035e",
+      "pronacao-dolorosa-cotovelo-da-baba-3889fec1",
+      "pronacao-dolorosa-cotovelo-da-baba-a9402b9c",
+      "pronacao-dolorosa-cotovelo-da-baba-9e371cc5",
+      "pronacao-dolorosa-cotovelo-da-baba-d39868a6",
+      "pronacao-dolorosa-cotovelo-da-baba-9e3ca770",
+      "pronacao-dolorosa-cotovelo-da-baba-af3b48b7",
+      "pronacao-dolorosa-cotovelo-da-baba-f132fe30"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "c086669e1e4e8de195de2b233d03308bfbc49ec4002fb6bc3817801e36c5380e"
+    }
+   ],
+   "questaoSha256": "5c282019525d47d7f3532f5fc181bbc40bc179ce740b95884b725a11a4b445e3",
+   "comentarioSha256": "ad78783bb0f98f985670a68f91aa3b871e36b694e9698ce420797525f164277d"
+  }
  },
  "pediatria-0650": {
   "conceito": "**As fraturas de transição do tornozelo.** A fise distal da tíbia não fecha toda de uma vez: o fechamento começa no **centro**, avança para **medial** e termina na parte **anterolateral**, ao longo de cerca de **18 meses** (entre 12 e 15 anos nas meninas, 14 e 18 nos meninos). Nesse período, a parte lateral ainda aberta é o ponto fraco, e surgem as **fraturas de transição**: a de **Tillaux** e a **triplanar**.\n\n**A fratura triplanar.** O traço passa em **três planos**:\n- **sagital**: vertical pela **epífise**, até a articulação;\n- **axial** (transverso): horizontal pela **fise** ainda aberta lateralmente;\n- **coronal**: vertical pela **metáfise posterior** da tíbia.\n\n**O que cada incidência mostra.**\n| Incidência | Aspecto |\n|---|---|\n| **AP** (e mortalha) | Traço sagital pela epífise: aparência de **Salter-Harris III** |\n| **Perfil** | Traço coronal pela metáfise posterior: aparência de **Salter-Harris II** |\n| Combinação | Em três dimensões, comporta-se como um **Salter-Harris IV** |\n\n**Os tipos.** A triplanar pode ter **dois, três ou quatro fragmentos**, conforme os traços se cruzam; a de dois fragmentos com fíbula íntegra é a mais comum. O mecanismo é a **rotação externa** do pé.\n\n**A tomografia e o tratamento.** A **tomografia** é obrigatória para medir o degrau articular e planejar. A regra é: **desvio articular maior que 2 mm** (degrau ou diástase) indica redução **anatômica**, fechada ou aberta, com fixação por **parafusos** (epifisários e metafisários, paralelos à fise). Como a fise está quase fechada, o risco de deformidade por parada de crescimento é baixo, e o objetivo principal é a **congruência articular**, para evitar artrose.\n\n**Por que a sequência de fechamento explica a lesão.** Durante os cerca de 18 meses de fechamento da fise distal da tíbia, a parte **central e medial** já está fundida e a parte **anterolateral** ainda está aberta. A força em **rotação externa** encontra uma fise parcialmente fechada: o traço atravessa a epífise (sagital), corre pela fise ainda aberta (axial) e sai pela metáfise (coronal). Se a fise estivesse toda aberta, a lesão seria uma Salter-Harris I ou II; se estivesse toda fechada, seria uma fratura do adulto. É por isso que as fraturas de **transição** (triplanar e Tillaux) só ocorrem no adolescente perto da maturidade.",
@@ -9861,19 +10077,75 @@
   "conferido": false
  },
  "pediatria-0690": {
-  "conceito": "**A pronação dolorosa (cotovelo da babá).** É a lesão de cotovelo **mais comum** na criança pequena. Na verdade, não é uma luxação: é uma **subluxação da cabeça do rádio**, em que o **ligamento anular** desliza para cima e fica **interposto** entre a cabeça do rádio e o capítulo.\n\n**O mecanismo.** Uma **tração longitudinal** súbita no braço com o cotovelo **estendido** e o antebraço **pronado**. Exemplos: puxar a criança pela mão para não cair, levantá-la pelos braços, girá-la segurando as mãos.\n\n**Por que acontece na criança pequena.**\n- A **cabeça do rádio** é pequena e pouco mais larga que o colo, e o ligamento anular desliza com facilidade.\n- O ligamento anular é **frouxo** e fino na inserção distal.\n- Com o crescimento, a cabeça do rádio aumenta e o ligamento se firma. Depois dos **5 anos**, a lesão fica rara.\n\n**A idade.** Ocorre geralmente entre **1 e 4 anos**, com pico por volta dos **2 a 3 anos**. A **recorrência** é frequente, em cerca de um quarto dos casos ou mais, e é **mais comum nas crianças mais novas**, entre **1 e 2 anos**, cujo ligamento é mais frouxo.\n\n**O quadro clínico.** A criança chora no momento da tração e depois **não usa o braço**, que fica junto ao corpo, com o cotovelo levemente fletido e o antebraço **pronado**. Não há edema nem deformidade. Ela resiste à supinação.\n\n**O tratamento: a redução.**\n- **Hiperpronação**: com o cotovelo fletido, prona-se o antebraço com força. Tem **maior taxa de sucesso** na primeira tentativa e é menos dolorosa.\n- **Supinação e flexão**: supina-se o antebraço e flete-se o cotovelo.\n- Em ambas, o examinador costuma sentir um **estalido** sobre a cabeça do rádio.\n- Após a redução, a criança volta a usar o braço em minutos. Não há necessidade de imobilizar.\n\n**Quando pedir radiografia.** Se a história não for típica, se houver **edema**, **dor localizada** ou se a criança não voltar a usar o braço após a redução. Nesses casos, deve-se pensar em **fratura** (supracondiliana, do colo do rádio, do côndilo lateral).\n\n**Orientação aos pais.** Explicar o mecanismo e **evitar puxar a criança pelas mãos**. Isso reduz a recorrência.",
-  "correta": "**Correta: A (1 a 2 anos de idade).** A pronação dolorosa é mais frequente entre 1 e 4 anos, e a **recorrência** é mais comum nas crianças mais novas, entre **1 e 2 anos**, cujo ligamento anular é mais frouxo e a cabeça do rádio é menor.",
+  "conceito": "**Idade média do primeiro episódio e faixa de maior recorrência são perguntas diferentes.** A pronação dolorosa ocorre tipicamente em crianças pequenas, com média de 2 a 3 anos. O capítulo, porém, destaca **maior risco de recidiva até os 2 anos**, favorecendo a faixa de 1 a 2 anos entre as opções.\n\nCom a maturação, as inserções do anular e da membrana subanular se fortalecem; as recidivas tendem a cessar por volta de 4 a 5 anos, e o quadro é raro depois de 7. Os responsáveis devem evitar tração pelo antebraço e levantar pelas axilas. Recorrência não significa necessariamente descuido da família, pois pode ocorrer mesmo com orientação adequada.",
+  "correta": "**A: 1 a 2 anos.** É a faixa que corresponde ao maior risco de recorrência até 2 anos descrito. Não se deve escolher a idade média de todos os episódios quando a pergunta especifica recorrente.",
   "incorretas": {
-   "B": "Entre **3 e 4 anos**, a pronação dolorosa ainda ocorre, mas a **recorrência** é menos frequente que nas crianças de 1 a 2 anos.",
-   "C": "Entre **5 e 6 anos**, a cabeça do rádio já é maior e o ligamento anular mais firme. A lesão se torna rara.",
-   "D": "Entre **7 e 8 anos**, a pronação dolorosa é **muito rara**. Uma dor no cotovelo nessa idade sugere outro diagnóstico, como fratura."
+   "B": "**3 a 4 anos se aproxima da faixa de apresentações gerais, mas não é o pico de recidiva indicado.** A maturação progressiva reduz a vulnerabilidade do ligamento. A opção confunde dois recortes epidemiológicos.",
+   "C": "**5 a 6 anos é mais tardio que o grupo de maior recorrência.** O capítulo descreve fortalecimento das inserções e término usual das recidivas por volta de 4 a 5 anos. Isso não impede exceções, mas afasta essa faixa como a mais comum.",
+   "D": "**7 a 8 anos é ainda menos compatível.** A pronação dolorosa é rara depois de 7, enquanto a recorrência predomina nos menores. Um quadro atípico nessa idade exige atenção ao diagnóstico diferencial."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children, 7th Ed., p. 617 (referência indicada na prova TARO 2014, questão 14)",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Pronação dolorosa (cotovelo da babá)."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Pronação dolorosa (cotovelo da babá)"
+     ],
+     "blocos": [
+      "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+      "pronacao-dolorosa-cotovelo-da-baba-b699a01e",
+      "pronacao-dolorosa-cotovelo-da-baba-d278b922",
+      "pronacao-dolorosa-cotovelo-da-baba-187884c5",
+      "pronacao-dolorosa-cotovelo-da-baba-b2ef5f88",
+      "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
+      "pronacao-dolorosa-cotovelo-da-baba-e5dfc9bd",
+      "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
+      "pronacao-dolorosa-cotovelo-da-baba-709a83e2",
+      "pronacao-dolorosa-cotovelo-da-baba-392fc59e",
+      "pronacao-dolorosa-cotovelo-da-baba-b817dedc",
+      "pronacao-dolorosa-cotovelo-da-baba-ab653109",
+      "pronacao-dolorosa-cotovelo-da-baba-2a02edc4",
+      "pronacao-dolorosa-cotovelo-da-baba-077fb00d",
+      "pronacao-dolorosa-cotovelo-da-baba-e56e735f",
+      "pronacao-dolorosa-cotovelo-da-baba-7c96573d",
+      "pronacao-dolorosa-cotovelo-da-baba-aac221f7",
+      "pronacao-dolorosa-cotovelo-da-baba-9aaaee4e",
+      "pronacao-dolorosa-cotovelo-da-baba-379369a7",
+      "pronacao-dolorosa-cotovelo-da-baba-2a30365e",
+      "pronacao-dolorosa-cotovelo-da-baba-248c5465",
+      "pronacao-dolorosa-cotovelo-da-baba-e4165878",
+      "pronacao-dolorosa-cotovelo-da-baba-e2eb66b2",
+      "pronacao-dolorosa-cotovelo-da-baba-14e1a039",
+      "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
+      "pronacao-dolorosa-cotovelo-da-baba-570ea5eb",
+      "pronacao-dolorosa-cotovelo-da-baba-74eefc00",
+      "pronacao-dolorosa-cotovelo-da-baba-4a1a035e",
+      "pronacao-dolorosa-cotovelo-da-baba-3889fec1",
+      "pronacao-dolorosa-cotovelo-da-baba-a9402b9c",
+      "pronacao-dolorosa-cotovelo-da-baba-9e371cc5",
+      "pronacao-dolorosa-cotovelo-da-baba-d39868a6",
+      "pronacao-dolorosa-cotovelo-da-baba-9e3ca770",
+      "pronacao-dolorosa-cotovelo-da-baba-af3b48b7",
+      "pronacao-dolorosa-cotovelo-da-baba-f132fe30"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "c086669e1e4e8de195de2b233d03308bfbc49ec4002fb6bc3817801e36c5380e"
+    }
+   ],
+   "questaoSha256": "1c2fc162472c91af66a5fd37ba1dc706df4dda825a4983683342e5f1e2b15e16",
+   "comentarioSha256": "b1dff6028752675785c574f65e3d3ad1ab860a3eb39ae57bf618dcaaff1f14ab"
+  }
  },
  "pediatria-0691": {
   "conceito": "**O nervo ameaçado fica do lado da espícula proximal, oposto ao desvio distal.** Na supracondiliana com desvio posteromedial, o fragmento distal vai para medial e o proximal perfura lateralmente as partes moles. O **radial**, localizado lateralmente, é a estrutura característica em risco.\n\nNo desvio posterolateral, o proximal se projeta medialmente e ameaça o mediano, seu ramo interósseo anterior e a artéria braquial. Na fratura em flexão, a associação predominante é com o ulnar. Essas relações ajudam a orientar o exame, mas não substituem verificar todos os nervos e a perfusão antes e depois do tratamento.",
@@ -11526,20 +11798,76 @@
   "conferido": false
  },
  "pediatria-0754": {
-  "conceito": "**Pronação dolorosa (cotovelo da babá, subluxação da cabeça do rádio).** É a lesão mais comum do cotovelo em crianças pequenas, entre 1 e 4 anos.\n\n**Mecanismo.** **Tração longitudinal** do braço com o cotovelo estendido e o antebraço pronado (puxar a criança pela mão, levantá-la pelos braços, girá-la segurando as mãos).\n\n**Anatomia da lesão.** O **ligamento anular** envolve o colo do rádio. Na criança pequena, a cabeça do rádio é pouco desenvolvida e a fixação distal do ligamento é frágil. Com a tração, a cabeça do rádio desliza parcialmente para fora do anel, e o **ligamento anular escorrega proximalmente**, ficando **interposto entre a cabeça do rádio e o capítulo** (articulação radiocapitelar).\n\n**Quadro clínico.** Criança que para de usar o braço, mantendo-o junto ao corpo, com o cotovelo levemente fletido e o antebraço pronado; chora ao tentar supinar. Não há edema nem deformidade importantes. A radiografia é normal e só é necessária se a história ou o exame forem atípicos.\n\n**Redução.**\n- **Hiperpronação** do antebraço (mais eficaz e menos dolorosa em vários estudos), ou\n- **Supinação** seguida de **flexão** do cotovelo, com o polegar sobre a cabeça do rádio.\n- Sente-se um estalido, e a criança volta a usar o braço em poucos minutos.\n\n**Orientação aos pais.** Evitar tracionar a criança pelos braços; recidivas são comuns até cerca de 5 anos, quando o ligamento e a cabeça do rádio amadurecem.\n\n> Pronação dolorosa: o ligamento anular desliza proximalmente e fica preso na articulação radiocapitelar.",
-  "correta": "**C: proximal (resposta pela bibliografia).** Na pronação dolorosa, a tração longitudinal faz a cabeça do rádio deslizar distalmente pelo anel, e o ligamento anular escorrega proximalmente, ficando interposto entre a cabeça do rádio e o capítulo. A redução por hiperpronação ou supinação e flexão devolve o ligamento à posição normal.",
+  "conceito": "**O anular se desloca para proximal, passando parcialmente sobre a cabeça do rádio.** Sob tração em pronação e extensão, a membrana subanular pode ceder e o ligamento se interpõe na radiocapitelar. A direção descreve seu caminho em relação ao colo e à cabeça; não é uma translação medial ou lateral da cabeça radial.\n\nA distinção evita tratar a pronação dolorosa como luxação radioulnar proximal verdadeira. A radiografia pode ser normal e, em apresentações típicas, o tratamento é uma manobra que devolve o ligamento ao seu lugar. Sem chave oficial registrada, a resposta bibliográfica é C.",
+  "correta": "**C: proximal.** É o sentido pelo qual o ligamento passa sobre a cabeça radial e fica preso na articulação. A referência é o trajeto do ligamento, não a posição global do antebraço.",
   "incorretas": {
-   "A": "**Deslocamento medial** do ligamento anular não é o mecanismo; o ligamento se desloca no eixo longitudinal, para cima.",
-   "B": "**Deslocamento lateral** também não descreve a lesão; o problema é a migração proximal do ligamento sobre a cabeça do rádio.",
-   "D": "**Deslocamento distal** é o movimento da **cabeça do rádio** em relação ao ligamento durante a tração; o ligamento, por sua vez, fica proximal a ela."
+   "A": "**Medial não é a direção do deslizamento descrito.** O ligamento sobe sobre a cabeça em sentido proximal. A opção troca esse percurso por uma translação para o lado ulnar.",
+   "B": "**Lateral também não corresponde ao trajeto do anular.** A lesão acontece porque ele escorrega para proximal e se interpõe. Estar na região lateral do cotovelo não define a direção do deslocamento.",
+   "D": "**Distal é o sentido oposto ao descrito.** A membrana junto ao colo pode romper e permitir que o ligamento passe sobre a cabeça, para a articulação proximalmente. A resposta não é para onde ele retorna ao reduzir."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., p. 696",
-   "Schunk JE. Radial head subluxation: epidemiology and treatment of 87 episodes. Ann Emerg Med. 1990;19(9):1019-1023."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Pronação dolorosa (cotovelo da babá)."
   ],
   "provavel": "C",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Pronação dolorosa (cotovelo da babá)"
+     ],
+     "blocos": [
+      "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+      "pronacao-dolorosa-cotovelo-da-baba-b699a01e",
+      "pronacao-dolorosa-cotovelo-da-baba-d278b922",
+      "pronacao-dolorosa-cotovelo-da-baba-187884c5",
+      "pronacao-dolorosa-cotovelo-da-baba-b2ef5f88",
+      "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
+      "pronacao-dolorosa-cotovelo-da-baba-e5dfc9bd",
+      "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
+      "pronacao-dolorosa-cotovelo-da-baba-709a83e2",
+      "pronacao-dolorosa-cotovelo-da-baba-392fc59e",
+      "pronacao-dolorosa-cotovelo-da-baba-b817dedc",
+      "pronacao-dolorosa-cotovelo-da-baba-ab653109",
+      "pronacao-dolorosa-cotovelo-da-baba-2a02edc4",
+      "pronacao-dolorosa-cotovelo-da-baba-077fb00d",
+      "pronacao-dolorosa-cotovelo-da-baba-e56e735f",
+      "pronacao-dolorosa-cotovelo-da-baba-7c96573d",
+      "pronacao-dolorosa-cotovelo-da-baba-aac221f7",
+      "pronacao-dolorosa-cotovelo-da-baba-9aaaee4e",
+      "pronacao-dolorosa-cotovelo-da-baba-379369a7",
+      "pronacao-dolorosa-cotovelo-da-baba-2a30365e",
+      "pronacao-dolorosa-cotovelo-da-baba-248c5465",
+      "pronacao-dolorosa-cotovelo-da-baba-e4165878",
+      "pronacao-dolorosa-cotovelo-da-baba-e2eb66b2",
+      "pronacao-dolorosa-cotovelo-da-baba-14e1a039",
+      "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
+      "pronacao-dolorosa-cotovelo-da-baba-570ea5eb",
+      "pronacao-dolorosa-cotovelo-da-baba-74eefc00",
+      "pronacao-dolorosa-cotovelo-da-baba-4a1a035e",
+      "pronacao-dolorosa-cotovelo-da-baba-3889fec1",
+      "pronacao-dolorosa-cotovelo-da-baba-a9402b9c",
+      "pronacao-dolorosa-cotovelo-da-baba-9e371cc5",
+      "pronacao-dolorosa-cotovelo-da-baba-d39868a6",
+      "pronacao-dolorosa-cotovelo-da-baba-9e3ca770",
+      "pronacao-dolorosa-cotovelo-da-baba-af3b48b7",
+      "pronacao-dolorosa-cotovelo-da-baba-f132fe30"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "c086669e1e4e8de195de2b233d03308bfbc49ec4002fb6bc3817801e36c5380e"
+    }
+   ],
+   "questaoSha256": "2cb630879e64b1721470ed2dfc7721b2401a44bf916cced499f1c60640f383bd",
+   "comentarioSha256": "e2afc1a848cd930cefbcd7853d1d74ecb420f1a24c81e16128fa3349ce0d6755"
+  }
  },
  "pediatria-0755": {
   "conceito": "**SCIWORA: lesão medular sem alteração radiográfica.** O termo foi criado por Pang e Wilberger (1982) para descrever crianças com lesão medular traumática e radiografias (e tomografias) normais.\n\n**Por que é típica de crianças.** A coluna da criança é muito mais **elástica** que a medula:\n- Ligamentos e cápsulas frouxos.\n- Facetas mais horizontais, que permitem deslizamento.\n- Corpos vertebrais em cunha anterior e placas terminais cartilaginosas.\n- Cabeça proporcionalmente grande e musculatura cervical fraca.\n\nA coluna pode se deformar transitoriamente além do que a medula suporta (a coluna estica cerca de 5 cm, a medula, menos de 1 cm) e depois voltar ao lugar, sem fratura ou luxação visível. A medula fica lesada por estiramento, contusão ou isquemia.\n\n**Características.**\n- Mais comum em crianças **abaixo de 8 anos**, em que as lesões tendem a ser mais altas (cervical alta) e mais graves.\n- Até metade apresenta **início tardio** dos sintomas (horas a dias após o trauma), às vezes com sintomas transitórios iniciais (parestesias) que regridem e depois retornam.\n- A **ressonância magnética** é essencial: mostra edema, hemorragia ou lesões ligamentares; ressonância normal indica melhor prognóstico.\n\n**Conduta.** Imobilização (colar por cerca de 12 semanas), evitar esportes de contato, seguimento neurológico. Com a era da ressonância, muitas lesões antes chamadas SCIWORA mostram alterações; alguns autores usam SCIWONA (sem alteração neuroimagem).\n\n> SCIWORA: lesão medular sem alteração radiográfica, característica da criança pela elasticidade da coluna.",
@@ -14082,18 +14410,67 @@
   "conferido": false
  },
  "pediatria-0906": {
-  "conceito": "**Luxação do cotovelo na criança.** É menos comum do que no adulto, porque na criança a fise costuma ceder antes do ligamento, e por isso a fratura supracondiliana é muito mais frequente. Quando a luxação ocorre, em geral após queda com a mão espalmada e o cotovelo em extensão, com componente de valgo, ela é quase sempre **posterior ou posterolateral**, e acomete mais o pré-adolescente e o adolescente (por volta dos 10 aos 15 anos).\n\n**A lesão óssea mais associada: o epicôndilo medial.** O epicôndilo medial é uma apófise de tração onde se inserem o ligamento colateral medial e a massa flexora-pronadora. No mecanismo em valgo da luxação, esses tecidos tracionam e **avulsionam o epicôndilo medial**, que se torna a fratura associada mais frequente; ele acompanha uma parcela importante das luxações do cotovelo na criança, e, no sentido inverso, boa parte das fraturas do epicôndilo medial ocorre junto com luxação do cotovelo.\n\n**O fragmento que entra na articulação.** Durante a luxação ou na redução, o epicôndilo avulsionado pode ficar **encarcerado na articulação**, entre a tróclea e a ulna. Na radiografia pós-redução, isso aparece como articulação incongruente, alargada medialmente, ou como ausência do epicôndilo no seu lugar habitual. O fragmento encarcerado exige retirada da articulação e, em geral, fixação.\n\n**Atenção ao núcleo de ossificação.** O epicôndilo medial ossifica por volta dos 5 a 7 anos e fecha tarde. Pela sequência de ossificação do cotovelo (capítulo, cabeça do rádio, epicôndilo medial, tróclea, olécrano, epicôndilo lateral), se a tróclea aparece ossificada e o epicôndilo medial não está no seu lugar, ele provavelmente está encarcerado na articulação.\n\n**Outras associações.** Fraturas do colo do rádio, do processo coronoide e do côndilo lateral também ocorrem, mas com menor frequência. Lesões nervosas são incomuns; o ulnar é o mais acometido, pela relação com o epicôndilo medial.\n\n> **Na prova:** a fratura mais associada à luxação do cotovelo na criança é a avulsão do epicôndilo medial, que pode ficar encarcerada na articulação.",
-  "correta": "**A: do epicôndilo medial do úmero.** A avulsão do epicôndilo medial é a lesão óssea mais associada à luxação do cotovelo na criança. O mecanismo em valgo tensiona o ligamento colateral medial e a massa flexora-pronadora, que se inserem nessa apófise ainda não fundida, e ela é arrancada. Um ponto prático decisivo é procurar o fragmento na radiografia pós-redução: ele pode ficar encarcerado na articulação, entre a tróclea e a ulna, situação que exige retirada e fixação.",
+  "conceito": "**Na criança, a fratura que mais acompanha a luxação é a do epicôndilo medial.** Essa apófise recebe a origem do colateral ulnar e da massa flexopronadora. Na luxação, o valgo pode arrancá-la; o fragmento pode permanecer fora ou se encarcerar entre as superfícies articulares.\n\nO diagnóstico não termina quando o cotovelo parece reduzido. É necessário conferir congruência e localizar o epicôndilo medial no lugar habitual. Se ele falta, deve-se procurar um fragmento intra-articular. Uma lesão condilar lateral é comum entre fraturas pediátricas em geral, mas essa classificação de frequência não é a mesma das fraturas associadas à luxação.",
+  "correta": "**A: epicôndilo medial.** É a resposta sustentada pela associação predominante das séries do capítulo. Sua pesquisa ativa evita deixar um fragmento encarcerado após a redução.",
   "incorretas": {
-   "B": "**Fratura do olécrano é associação menos frequente.** O olécrano pode fraturar em quedas com o cotovelo fletido ou por avulsão do tríceps, e também em lesões combinadas, mas não é a fratura mais comum junto à luxação do cotovelo na criança. O mecanismo da luxação, com valgo e extensão, concentra a tensão no lado medial, onde está o epicôndilo medial.",
-   "C": "**O côndilo lateral se associa mais a um mecanismo de varo e não é o mais frequente na luxação.** A fratura do côndilo lateral é a segunda fratura mais comum do cotovelo da criança, mas costuma ocorrer isoladamente, por avulsão em varo ou compressão em valgo, com traço que atravessa a fise e entra na articulação. Pode acompanhar luxações, porém com frequência bem menor do que a avulsão do epicôndilo medial.",
-   "D": "**O epicôndilo lateral raramente fratura.** É o último núcleo de ossificação do cotovelo a aparecer e a fratura isolada dessa apófise é incomum. Não é a associação característica da luxação do cotovelo, que tensiona sobretudo o lado medial. A alternativa troca medial por lateral para testar a lógica do mecanismo em valgo."
+   "B": "**Olécrano pode fraturar em luxações e faz parte do exame, mas não é a associação mais comum.** A fonte o lista entre as menos frequentes que a avulsão medial. Não se deve escolher apenas por ser uma estrutura proeminente na luxação posterior.",
+   "C": "**O côndilo lateral é uma fratura importante e relativamente comum do cotovelo infantil.** Entretanto, isso não o torna a mais associada à luxação. A comparação pedida favorece o epicôndilo medial, que é uma apófise distinta.",
+   "D": "**O epicôndilo lateral também pode se lesar, porém é uma associação menos frequente.** O lado medial recebe a avulsão característica pelo colateral ulnar. Trocar os epicôndilos muda o mecanismo que explica a resposta."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Luxação do cotovelo na criança: quem, quando e o que vem junto; Fratura do epicôndilo medial: diagnóstico e encarceramento."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Luxação do cotovelo na criança: quem, quando e o que vem junto",
+      "Fratura do epicôndilo medial: diagnóstico e encarceramento"
+     ],
+     "blocos": [
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-66a266fa",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-46ce9cd3",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-d2370a7b",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-bcae8f6d",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-0456e1ef",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-f8e278f6",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-ecf7483c",
+      "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-89370dc1",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-140ea056",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-8d9f3860",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-0743b53e",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-7e9542af",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-7727c46b",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-ae4d1c25",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-5fe2aae3",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-29fe6eb7",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-0a789f86",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-2f0d36af",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-8214df1b",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-5af08218",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-3fc9484a",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-8102296a",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-02937e66",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-b78723f4",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-721e8535",
+      "fratura-do-epicondilo-medial-diagnostico-e-encar-5e596305"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "bd25cc72f8407b10ee22af5eede2dfba60ee8bbaece982bf24e93b5589611def"
+    }
+   ],
+   "questaoSha256": "90923afb45cca145eaae3281bea55a0fb33692ba20a56f965ac1a3cdc8b6144c",
+   "comentarioSha256": "2a34777d5e826de5f1ac79d0b962512766541229dd2bbc2f5beb9eabbd047531"
+  }
  },
  "pediatria-0907": {
   "conceito": "**Fratura da diáfise do fêmur na criança: a idade guia o tratamento.** As opções mudam conforme a idade, o peso, o padrão da fratura e a estabilidade, e as diretrizes costumam ser organizadas assim:\n\n| Idade | Tratamento habitual |\n|---|---|\n| Até 6 meses | suspensório de Pavlik ou imobilização simples |\n| 6 meses a 5 anos | gesso pelvipodálico imediato ou após tração |\n| 5 a 11 anos | hastes intramedulares flexíveis (TENS) nas fraturas estáveis; placa submuscular em ponte ou fixador externo nas instáveis |\n| Acima de 11 anos ou peso elevado | haste intramedular rígida com entrada lateral no trocanter; placa em casos selecionados |\n\n**Fratura estável e instável em comprimento.** Fraturas transversas ou oblíquas curtas são estáveis em comprimento: os fragmentos se apoiam um no outro e não encurtam com a carga. Fraturas **oblíquas longas, espirais longas e cominutivas** são instáveis em comprimento: sem contato cortical que impeça o deslizamento, elas encurtam e angulam.\n\n**Por que as hastes flexíveis falham nas instáveis.** As hastes elásticas estabilizam pelo efeito de três pontos dentro do canal, mas não bloqueiam o comprimento nem a rotação. Em fraturas instáveis, sobretudo em crianças mais pesadas (acima de cerca de 45 a 50 kg) ou mais velhas, as hastes flexíveis se associam a encurtamento, desvio angular, consolidação viciosa e migração das hastes. Por isso, para uma fratura oblíqua longa instável num menino de 7 anos, prefere-se um método que controle o comprimento.\n\n**A placa submuscular em ponte.** É uma placa longa, introduzida por pequenas incisões e deslizada por baixo do vasto lateral, fixada com parafusos acima e abaixo do foco sem abri-lo. Funciona como ponte: mantém comprimento, alinhamento e rotação, preserva o hematoma e as partes moles e permite consolidação com calo. É indicada nas fraturas instáveis em comprimento entre 5 e 11 anos (e em casos selecionados em outras idades), com bons resultados.\n\n**E a haste rígida pela fossa piriforme?** Na criança, a entrada pela fossa piriforme ameaça a irrigação da cabeça femoral, que depende da artéria circunflexa femoral medial e de seus ramos retinaculares posterossuperiores; há risco de osteonecrose. Por isso, quando se usa haste rígida em adolescentes, a entrada é lateral no trocanter maior.\n\n> **Na prova:** fratura femoral instável em comprimento (oblíqua longa, cominutiva) entre 5 e 11 anos: placa submuscular em ponte (ou fixador externo); hastes flexíveis ficam para as estáveis.",
@@ -14111,19 +14488,75 @@
   "conferido": false
  },
  "pediatria-0908": {
-  "conceito": "**Pronação dolorosa: subluxação da cabeça do rádio.** É a lesão mais comum do cotovelo na criança pequena, típica entre 1 e 4 anos. Popularmente chamada de \"cotovelo de babá\", acontece quando alguém puxa a criança pela mão ou pelo antebraço.\n\n**O mecanismo.** A tração longitudinal com o cotovelo em **extensão** e o antebraço em **pronação** faz o ligamento anular, que abraça o colo do rádio, deslizar proximalmente sobre a cabeça do rádio e ficar interposto entre ela e o capítulo. Dois fatores favorecem a lesão nessa idade:\n\n- a cabeça do rádio ainda não tem a forma alargada do adulto, e o ligamento anular é mais frouxo;\n- em pronação, a porção da cabeça do rádio voltada para o ligamento é mais estreita, facilitando o escorregamento.\n\n**Quadro clínico.** A criança chora no momento do puxão e passa a não usar o braço, que fica junto ao corpo, com o cotovelo levemente fletido e o antebraço em pronação. Não há deformidade nem edema importante. A dor surge ao tentar supinar o antebraço. A radiografia é normal e só é necessária quando a história não é típica ou há suspeita de fratura.\n\n**Redução.** Duas manobras funcionam:\n\n1. **supinação com flexão:** o examinador supina o antebraço e flete o cotovelo, com o polegar sobre a cabeça do rádio, onde se sente um estalido;\n2. **hiperpronação:** pronação forçada do antebraço, com taxa de sucesso igual ou maior e menos dolorosa em alguns estudos.\n\nEm poucos minutos a criança volta a usar o braço. A recidiva é comum até cerca dos 5 anos, quando a anatomia amadurece; orienta-se a família a não puxar a criança pelos braços.\n\n> **Na prova:** pronação dolorosa ocorre por tração longitudinal com cotovelo em extensão e antebraço em pronação; o ligamento anular desliza sobre a cabeça do rádio.",
-  "correta": "**B: pronação e extensão.** A pronação dolorosa ocorre quando a criança é puxada pela mão com o cotovelo estendido e o antebraço pronado. Nessa posição, a porção mais estreita da cabeça do rádio fica voltada para o ligamento anular, que, mais frouxo na criança pequena, desliza proximalmente sobre a cabeça e fica interposto entre ela e o capítulo. Por isso a criança mantém o antebraço em pronação e sente dor ao supinar, e a redução se faz com supinação e flexão ou com hiperpronação.",
+  "conceito": "**O mecanismo típico combina tração longitudinal, extensão e pronação.** Nessa posição, a borda da cabeça do rádio voltada para a parte principal do anular é estreita e arredondada, permitindo que o ligamento escorregue proximalmente e fique preso na radiocapitelar. Em supinação, essa borda é mais larga e quadrada e dificulta o deslocamento.\n\nA descrição do mecanismo não deve ser confundida com as manobras de redução: hiperpronação e supinação com flexão podem ser utilizadas para recolocar o ligamento. Tampouco é obrigatório haver relato clássico de puxão em todo caso; história atípica ou edema importante exige considerar fratura antes de manipular.",
+  "correta": "**B: pronação e extensão.** A combinação favorece o deslizamento do anular sob tração no membro da criança pequena. A geometria da cabeça explica a importância da rotação.",
   "incorretas": {
-   "A": "**A supinação é parte da redução, não do mecanismo.** Com o antebraço em supinação, a cabeça do rádio apresenta ao ligamento anular seu diâmetro maior, o que dificulta o deslizamento. Na manobra de redução, justamente, o examinador supina o antebraço e flete o cotovelo para devolver o ligamento à sua posição. A extensão está certa, mas a rotação do antebraço está invertida.",
-   "C": "**Erra os dois componentes.** Supinação e flexão é exatamente a manobra clássica de redução da pronação dolorosa, e não a posição em que ela acontece. A lesão exige tração longitudinal com o cotovelo em extensão e o antebraço em pronação. A alternativa confunde o mecanismo com o tratamento.",
-   "D": "**Acerta a pronação e erra a posição do cotovelo.** A tração longitudinal que provoca a subluxação acontece com o cotovelo estendido, quando a criança é suspensa ou puxada pela mão. Com o cotovelo fletido, a tração não se transmite da mesma forma à articulação radiocapitelar. A hiperpronação com o cotovelo fletido, por sua vez, é uma das manobras de redução."
+   "A": "**A extensão está correta, mas a supinação tende a segurar o ligamento pela borda mais larga.** Ela também pode fazer parte da redução, o que não a transforma na posição típica de produção da lesão.",
+   "C": "**As duas posições não reproduzem o mecanismo clássico.** A fonte descreve pronação e cotovelo estendido. Supinação com flexão é uma alternativa de redução, contexto diferente do enunciado.",
+   "D": "**A pronação está correta, porém o mecanismo mais comum ocorre com cotovelo estendido.** A flexão pode aparecer em manobras terapêuticas e em apresentações clínicas, mas não substitui a posição do trauma descrito."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª ed."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Pronação dolorosa (cotovelo da babá)."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Pronação dolorosa (cotovelo da babá)"
+     ],
+     "blocos": [
+      "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+      "pronacao-dolorosa-cotovelo-da-baba-b699a01e",
+      "pronacao-dolorosa-cotovelo-da-baba-d278b922",
+      "pronacao-dolorosa-cotovelo-da-baba-187884c5",
+      "pronacao-dolorosa-cotovelo-da-baba-b2ef5f88",
+      "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
+      "pronacao-dolorosa-cotovelo-da-baba-e5dfc9bd",
+      "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
+      "pronacao-dolorosa-cotovelo-da-baba-709a83e2",
+      "pronacao-dolorosa-cotovelo-da-baba-392fc59e",
+      "pronacao-dolorosa-cotovelo-da-baba-b817dedc",
+      "pronacao-dolorosa-cotovelo-da-baba-ab653109",
+      "pronacao-dolorosa-cotovelo-da-baba-2a02edc4",
+      "pronacao-dolorosa-cotovelo-da-baba-077fb00d",
+      "pronacao-dolorosa-cotovelo-da-baba-e56e735f",
+      "pronacao-dolorosa-cotovelo-da-baba-7c96573d",
+      "pronacao-dolorosa-cotovelo-da-baba-aac221f7",
+      "pronacao-dolorosa-cotovelo-da-baba-9aaaee4e",
+      "pronacao-dolorosa-cotovelo-da-baba-379369a7",
+      "pronacao-dolorosa-cotovelo-da-baba-2a30365e",
+      "pronacao-dolorosa-cotovelo-da-baba-248c5465",
+      "pronacao-dolorosa-cotovelo-da-baba-e4165878",
+      "pronacao-dolorosa-cotovelo-da-baba-e2eb66b2",
+      "pronacao-dolorosa-cotovelo-da-baba-14e1a039",
+      "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
+      "pronacao-dolorosa-cotovelo-da-baba-570ea5eb",
+      "pronacao-dolorosa-cotovelo-da-baba-74eefc00",
+      "pronacao-dolorosa-cotovelo-da-baba-4a1a035e",
+      "pronacao-dolorosa-cotovelo-da-baba-3889fec1",
+      "pronacao-dolorosa-cotovelo-da-baba-a9402b9c",
+      "pronacao-dolorosa-cotovelo-da-baba-9e371cc5",
+      "pronacao-dolorosa-cotovelo-da-baba-d39868a6",
+      "pronacao-dolorosa-cotovelo-da-baba-9e3ca770",
+      "pronacao-dolorosa-cotovelo-da-baba-af3b48b7",
+      "pronacao-dolorosa-cotovelo-da-baba-f132fe30"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "c086669e1e4e8de195de2b233d03308bfbc49ec4002fb6bc3817801e36c5380e"
+    }
+   ],
+   "questaoSha256": "f1c37d63ecd1420ed9eee009a7b992f1a54e84e87adc4415da88c1eafb4e3375",
+   "comentarioSha256": "1bf287259c26b063c787874cd9d824976593bafa27354184969bcec114ec401e"
+  }
  },
  "pediatria-0909": {
   "conceito": "**A classificação de Salter-Harris.** Descreve as fraturas que acometem a fise, pelo trajeto do traço em relação à fise, à epífise e à metáfise. Ajuda a prever o risco de distúrbio de crescimento e a escolher o tratamento.\n\n| Tipo | Trajeto do traço | Risco de distúrbio de crescimento |\n|---|---|---|\n| I | atravessa só a fise, pela zona hipertrófica | baixo, em geral |\n| II | fise e sai pela metáfise, com fragmento metafisário (Thurston-Holland) | baixo, em geral; é o tipo mais comum |\n| III | fise e sai pela epífise, entrando na articulação | maior; fratura articular |\n| IV | atravessa epífise, fise e metáfise | alto; risco de ponte óssea |\n| V | compressão da fise | alto; diagnóstico muitas vezes retrospectivo |\n\n**Onde a fise rompe.** As fraturas fisárias costumam atravessar a **zona hipertrófica**, a camada de células grandes e matriz menos resistente, próxima à metáfise. A **zona germinativa** (de repouso), junto à epífise, contém as células que geram o crescimento; como em geral fica do lado epifisário, preservada, os tipos I e II costumam ter bom prognóstico de crescimento. Fraturas que lesam a camada germinativa, ou criam ponte entre epífise e metáfise, são as que mais causam parada do crescimento.\n\n**Tipos III e IV: articulares e de redução anatômica.** O traço atravessa a superfície articular e a camada germinativa. Por isso, quando há desvio, o objetivo é duplo: restaurar a superfície articular e realinhar a fise para evitar ponte óssea. Isso exige **redução anatômica, muitas vezes aberta, e fixação interna**, de preferência com parafusos paralelos à fise, sem atravessá-la. São exemplos a fratura de Tillaux (III) e muitas fraturas do côndilo lateral do úmero (IV).\n\n**O fragmento de Thurston-Holland.** É o fragmento triangular **metafisário** que caracteriza o tipo II. O periósteo costuma ficar íntegro do lado desse fragmento, o que ajuda na redução fechada.\n\n> **Na prova:** Salter-Harris III e IV desviadas pedem redução aberta anatômica e fixação; o fragmento de Thurston-Holland é metafisário (tipo II); o tipo IV tem alto risco de distúrbio de crescimento.",
