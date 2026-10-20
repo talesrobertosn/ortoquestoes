@@ -28,7 +28,16 @@ def dados():
     return qs, cs, bib, caps, ler(RAIZ / 'public/biblioteca/questoes.json')
 
 def fingerprint_questao(q):
-    return sha({k: q.get(k) for k in ('enunciado','alternativas','gabarito','gabaritoBibliografia','imagens','anulada','tipo','respostaEsperada')})
+    corpo = {k: q.get(k) for k in ('enunciado','alternativas','gabarito','gabaritoBibliografia','imagens','anulada','tipo','respostaEsperada')}
+    if q.get('imagens'):
+        raiz_imagens = (RAIZ / 'public/imagens').resolve()
+        imagens = {}
+        for imagem in q['imagens']:
+            arquivo = imagem['arquivo']
+            p = (raiz_imagens / arquivo).resolve()
+            imagens[arquivo] = hashlib.sha256(p.read_bytes()).hexdigest() if p.is_relative_to(raiz_imagens) and p.is_file() else 'ausente'
+        corpo['imagensSha256'] = imagens
+    return sha(corpo)
 
 def fingerprint_comentario(c):
     return sha({k:v for k,v in c.items() if k != 'baseResumo'})

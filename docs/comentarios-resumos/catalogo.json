@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 2001,
+  "pendente": 1996,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 1,
-  "pendente-inspecao-imagem": 193,
-  "revisada": 41
+  "pendente-inspecao-imagem": 188,
+  "revisada": 51
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -98,12 +98,12 @@
    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
    "estados": {
     "duplicada": 4,
-    "pendente": 142,
+    "pendente": 137,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 1,
-    "pendente-inspecao-imagem": 23,
-    "revisada": 41
+    "pendente-inspecao-imagem": 18,
+    "revisada": 51
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -687,7 +687,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "00f3c323c13d70be65af90d4ef314be6bb9f84af8609e04d8bda17a5a4707297"
+   "questaoSha256": "06f3d7c1f110702b4631ce568a8860b80571a41caefa439c393a0689279a0f3d"
   },
   "coluna-0051": {
    "tema": "coluna",
@@ -729,7 +729,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "ce93d24b67888b7c64ff7a45ece11b08eac4dc6299c2c90552afa18eb129bda9"
+   "questaoSha256": "6f8b2938b6a6456a9a320c434bf7434107774df4f09cb3e001c5163d7660b4c1"
   },
   "coluna-0064": {
    "tema": "coluna",
@@ -859,7 +859,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "44cca8d7668e83f96f68161fcb840db9f56dafec40befed380f3b34c1b92bc06"
+   "questaoSha256": "47dffeaa7ffad59c17663f3c5eb4313f2a6d6077489b4828f409d44a3adf1da2"
   },
   "coluna-0082": {
    "tema": "coluna",
@@ -1160,7 +1160,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "f27d9fde148afa12fe9e2f77d574c4630952a1d906e0fba5251fc9e55b78b446"
+   "questaoSha256": "ffcf59ff85816906f2fce046bc0cc6e4dd52d19eca500343bc3f2deb51a81d86"
   },
   "coluna-0165": {
    "tema": "coluna",
@@ -1184,7 +1184,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "d8299e0672e74780142ef306586c08069d299cf622b9637d5a81c28e5c7707aa"
+   "questaoSha256": "3e3015a8ecd8904fc36b3c9bc999811bfd468e71168a2b46e07a48012c99b8ef"
   },
   "coluna-0177": {
    "tema": "coluna",
@@ -1297,7 +1297,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "0862ed34be0cb436c035ec73005bada62fe9e6b76e938494375df9734f901a21"
+   "questaoSha256": "22ea9014d11b31577823ba074d54e6a7646b5cb90d319ca3725aecfc39fc39ed"
   },
   "coluna-0226": {
    "tema": "coluna",
@@ -1467,7 +1467,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "f7d31ebb750de48fb6ccfda2be1398de537ec3c7e621034241ea6d6267f77277"
+   "questaoSha256": "b106565acea9273e8d6e1cfb88a744a5bda62864c9694003d1164612477b1308"
   },
   "coluna-0266": {
    "tema": "coluna",
@@ -1540,7 +1540,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "e29e5a34df232241b99d8f91fd267e8183051ac55ca9fa11680416b560dae634"
+   "questaoSha256": "78f79597ae53300356cdd706e17a1268d1136bdc2114690c275eda7975d7c766"
   },
   "coluna-0288": {
    "tema": "coluna",
@@ -2273,7 +2273,7 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "4a970e5cd4674d7796893003f1e113eeb45a398797760b20cdcca1eb1e738c7c"
+   "questaoSha256": "0d40af0ed57b8477b3dadee1f3e0879111b19edf02e939b1e11c220df279c108"
   },
   "coluna-0372": {
    "tema": "coluna",
@@ -2411,7 +2411,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "d57e92bca2fa4a502f1711c1def5cb503539c9952156b5de6889a77f9495ca61"
+   "questaoSha256": "28c94ee47a5acafd33767a0e55eddb73eafe097e0ca3d1e3f8dec6ba5032ed85"
   },
   "coluna-0378": {
    "tema": "coluna",
@@ -2428,7 +2428,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "6e273f8379fcbbf66724c2acecf8614eef6a3474f430feb2632e197d5738bdba"
+   "questaoSha256": "cbfe3557b96eaa60f01000b4ebde5263af8f4d0915f3e1d120f28b2f98ecce5c"
   },
   "coluna-0380": {
    "tema": "coluna",
@@ -2470,7 +2470,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "16320a5ecda08bb5f516e90a43199591808b63486be77e69331cd442715e6121"
+   "questaoSha256": "a856b98fb113eeb7e8f33e9025668d53feeb56afbad918d4c099337e1270b28d"
   },
   "coluna-0388": {
    "tema": "coluna",
@@ -2585,7 +2585,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "ca0c92281fbf4c5c9f167929ee48d0a67e7e055737582d16e0e09c375dfd48ea"
+   "questaoSha256": "f628d4516eb4412ebb21876764fa6d139b811d7c44e5cdf7da9feeb9dc9fb425"
   },
   "coluna-0436": {
    "tema": "coluna",
@@ -3172,7 +3172,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "cd753cfd1de7dbeabd378d454b5c09d01126f453fef5578ec75969829341b07f"
+   "questaoSha256": "b989efb4731e565220a476d3ab1822fece4e4789cc7fbdc24ed75aac34508ddd"
   },
   "coluna-0516": {
    "tema": "coluna",
@@ -3247,7 +3247,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "118ce5dd94c5c2f568c3d1c4fb38619ab4eb0461a9891a6ce8c9934a8d5c44ab"
+   "questaoSha256": "956d6d106a9b25f8f3eb12aa97dfe6e9eddc1ace2e00b32a2735e11b45a0e824"
   },
   "coluna-0519": {
    "tema": "coluna",
@@ -3272,7 +3272,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "0749a470ede347b9c485d60147288a03a96d7c616b0b1a576804af20e31bd0ed"
+   "questaoSha256": "59bff78f1905512f06adf6fbd78f2fd5fc8a88b64a0ace151233869507df1f3c"
   },
   "coluna-0520": {
    "tema": "coluna",
@@ -3464,7 +3464,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "09dbb30a65fe40cd6b32a12144ab748636b8b7ff721212492fd0add5ebd96f2b"
+   "questaoSha256": "fd277b01a00c921191ba2e0e13d6b69e0cae83838680ead22c31a6c4879d62ec"
   },
   "coluna-0528": {
    "tema": "coluna",
@@ -3514,7 +3514,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "311667d9666fd79ede529780150bf48e96e1587367cdc5de650115db286fa89a"
+   "questaoSha256": "4531b1a515225db906aca1ba537835a76f1bb67b976866cf7d781ce96710bc58"
   },
   "coluna-0530": {
    "tema": "coluna",
@@ -3563,7 +3563,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "f42e4c7bb833e7fb4906da882d3f5faff26f52ce38c1ca908ca365229a609235"
+   "questaoSha256": "8fcc24f87ff102dedfde834902c794acfad844b4ec3ab7942423153c082ed733"
   },
   "coluna-0532": {
    "tema": "coluna",
@@ -3663,7 +3663,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "cbb9814d642fb44b2a1545d831427882b6e95a78a750538a78e88acb8a5a1027"
+   "questaoSha256": "8f9775899ae982ccbe7379c3966adfe58105f3076ff8fa27ec9128870564cd4d"
   },
   "coluna-0536": {
    "tema": "coluna",
@@ -4077,7 +4077,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "be900eb3b3d4162a6b09283abf91e322f1f99892b20759619687103853c4df73"
+   "questaoSha256": "a76e9cc81f5f8d4ff018603c9a92021479185a030e2368c6024133e7f6579377"
   },
   "coluna-0553": {
    "tema": "coluna",
@@ -4382,7 +4382,7 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "0ebc8102d65f886397ac5b680cf9fad838435195db315c3ea734d4b972e8de5a"
+   "questaoSha256": "3bef4c5ebab4843459fff62282584ac52cf6dc4fe616ed7ceb6f5f43f3587a60"
   },
   "conceitos-basicos-0087": {
    "tema": "conceitos-basicos",
@@ -4638,7 +4638,7 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "c0fcb6a3fa40f3eb33d2b8a0c94024625d264ce7e767e9ead52f7bfb74e25cd3"
+   "questaoSha256": "a32c7582fa0bb41130b78ef4bf35d33bc4ff44680e5a3fe621b090434368ce9e"
   },
   "conceitos-basicos-0331": {
    "tema": "conceitos-basicos",
@@ -4663,7 +4663,7 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "4e9204f1d11201a428ce115072dee40851fb2d3e5947e257e62d60a9b3a1411d"
+   "questaoSha256": "bafb1abea2651ec4f07f53cb931adf27fee10ede2ff3cc5f7aab8eaf48f1eb9d"
   },
   "conceitos-basicos-0332": {
    "tema": "conceitos-basicos",
@@ -4791,7 +4791,7 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "8fad887d8d37b9ae21ad8ddaa5757e3af200dfa30385f2b96dbcddabd98d50a3"
+   "questaoSha256": "efc1348f73a50eaeebddd6155314c9c01cbd5f34b12c9a04dde1a7b63aafdf02"
   },
   "conceitos-basicos-0365": {
    "tema": "conceitos-basicos",
@@ -5001,7 +5001,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "a29cee05b272c10dcde9c95067a4d72355534a30018d84905f8bccaa99c2701e"
+   "questaoSha256": "031bf79814155d7a29163bd63b1f2a3ac336932be4302114b00c0387b95a689c"
   },
   "conceitos-basicos-0392": {
    "tema": "conceitos-basicos",
@@ -5484,7 +5484,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "824059ed5ce7f4f254bf20fbc82ec2a54ad16d598a3a5dda70fb861dd6a54089"
+   "questaoSha256": "a6df49302302222b00baa4d27fd03e999e2be02fedb45f194970e9d726df1d06"
   },
   "joelho-0046": {
    "tema": "joelho",
@@ -5500,7 +5500,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "87b9f59879694fa5d2cd36e81e747f3970dee8bf9d51c72404b891657e1777ce"
+   "questaoSha256": "26dff1e6d4a6df5a860f7fba80aeef469e9ead903e061e6c04e0b7f5f6a0ef43"
   },
   "joelho-0047": {
    "tema": "joelho",
@@ -5524,7 +5524,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "60e3106c2a688bc0a7b3b590d128efa604296682f19da519ccc9eb818c91ac90"
+   "questaoSha256": "0ab6108e9c8e4ee9c4ca96bad901beb093559697714418b34fb19463f28881a4"
   },
   "joelho-0055": {
    "tema": "joelho",
@@ -5540,7 +5540,7 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "159955288f5b34d08d8e3fbf3aa6daed411c09ffc81734288c74a572385ca437"
+   "questaoSha256": "d1ef000566572c9de92955d5d31a65a1af7788411681f0f360606d7b91ebf22f"
   },
   "joelho-0057": {
    "tema": "joelho",
@@ -5774,7 +5774,7 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "560710ca1beb92dc5339ffe3ff118e9ed36bf31506373021be55e52719acb40c"
+   "questaoSha256": "731c62d205f38d7f8799fa9acae6b89d329f1a78cc676a4f0cbe252ac575f5fb"
   },
   "joelho-0101": {
    "tema": "joelho",
@@ -5798,7 +5798,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "26fb8457d278fd782a8cb5bf6dde45d00653f28d67c13dbfbee88668eeb2c7ef"
+   "questaoSha256": "bc2b22179fe0c7dfe4a635bd08bc28f94f997038c954cb4c94ac3047948c3dad"
   },
   "joelho-0102": {
    "tema": "joelho",
@@ -6949,7 +6949,7 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "797888b31a8000d9841acf3bbf61611c1467c4b181127171b87480a4676d1b2b"
+   "questaoSha256": "a4f4cb100829e0d5ed3f9ca90e8b54451fbca388a7d47e534d1453e72ff956d9"
   },
   "joelho-0351": {
    "tema": "joelho",
@@ -6973,7 +6973,7 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "0e091eadd1421093a7c4286ed322f283b5969b7152111da4d668402ded7bb114"
+   "questaoSha256": "ac662cfe5bcc615bde9752ebaabb5716ee2126d454c1e4dbbe775d0ecdb686bf"
   },
   "joelho-0354": {
    "tema": "joelho",
@@ -6997,7 +6997,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "084708aa18be68661f69bca8b446e5e9d00223efcc177d9d1109538b5f2d8731"
+   "questaoSha256": "f4d11f4de320987214f6a575a0c30874600b0aae8db6c4364921ab80bfb0156c"
   },
   "joelho-0355": {
    "tema": "joelho",
@@ -7069,7 +7069,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "37c8e0cb7d663331794d2166b75a1f134d4478f16c21b1700b5bb01007796820"
+   "questaoSha256": "3fcc2529bd68d17d87d33a903507268afcca9fb63b4bc80ebe36cb09513b6b6e"
   },
   "mao-0013": {
    "tema": "mao",
@@ -7734,7 +7734,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "9dd72b5d17f3ea034ccefe5f0bc01ab9cfcbc750c5d2e4decaacb38261f24363"
+   "questaoSha256": "a1393b50ac04a058706967bab98526e8ff93ffdcc54e1b8de189a1df1f86b848"
   },
   "mao-0239": {
    "tema": "mao",
@@ -8162,7 +8162,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "8d3939a6f793b90f4f7df75286159d6502eb68632b164bec72d25742623791f1"
+   "questaoSha256": "a979068dc9ca73ea7259334ee53fae830eed27da8090c6b7581517dc44b08abb"
   },
   "mao-0448": {
    "tema": "mao",
@@ -8610,7 +8610,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "d0f3011da5527edc7383c307c55f2360d7f9606833a40ab75b84a9a1b28b3562"
+   "questaoSha256": "34e6f9315ec9081d3206941b039b954aef25e597fad69d53df24c2fc7bf7d296"
   },
   "mao-0587": {
    "tema": "mao",
@@ -10257,7 +10257,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "db6657922fd005d619d783b635a51f0b6386348107b0f88ca55e4ee3f8dc51f1"
+   "questaoSha256": "815c6eaa0cadaf54e467b532a5226cf378d6e592bfc5a1c2dd165d04bed29066"
   },
   "mao-0820": {
    "tema": "mao",
@@ -10274,7 +10274,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "367d3513c25a65c4d6ec0fb92ed4119fe442ef312427aeb4714e92b2df5dfa43"
+   "questaoSha256": "795cb1bfba21f0e98185df19146f149b698de6b9b2df26945839ee7a57f902a4"
   },
   "mao-0823": {
    "tema": "mao",
@@ -10315,7 +10315,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "35d296b8ae7e83e8269eb6495f4fa0077a1610acd849cf33bdcc39fef9eb6c5f"
+   "questaoSha256": "5d3997c528b05b63899000a16d362789a807bc2c1cdfc8ac0d4fc10feb90a2b9"
   },
   "mao-0828": {
    "tema": "mao",
@@ -10356,7 +10356,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "8eb22c0e085275585c0852c3d3123bdb29fec9d53a078fc8d8d5d106ad06fa7f"
+   "questaoSha256": "f66aa10363f1c07d6837e47dcade9eb1f76096d7d6151875c435378004ded8ff"
   },
   "mao-0830": {
    "tema": "mao",
@@ -10421,7 +10421,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "15c47cbc14f5b78d0bf3c41438d602acca1da0fd0cf61e2c3d212852e8eb05f3"
+   "questaoSha256": "781e0fb9bd8e40907676d7742d5437b17214676503192d3173cbc3529255180f"
   },
   "mao-0850": {
    "tema": "mao",
@@ -13288,7 +13288,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "fa675e901c59d1a5c3ec6b742547bea11cccef66f43cefc86ec16266d38240aa"
+   "questaoSha256": "065fe5c86aa3d52d242d6c6cf5623988197bb77165f15b58fde5a1e6c5c4c3ec"
   },
   "mao-1300": {
    "tema": "mao",
@@ -13531,7 +13531,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "6b9ce5f528914c2deebc8e0c5443521101c4eb1596767320e3be005a2d8ab007"
+   "questaoSha256": "278e1d886ec1d5591b8604db0bbcd854bc57ea615112535b2d33f0a6ec3df2a0"
   },
   "mao-1365": {
    "tema": "mao",
@@ -13571,7 +13571,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "4d9d7cc7da05ff79865e1fda79f98c408d3d4b87da7d5aad757ed1a6b748a7a8"
+   "questaoSha256": "0ac5fe8ba59c2caf7e40fb6c73de538109126ec1a12b1b2d456c8f144fb94abb"
   },
   "mao-1393": {
    "tema": "mao",
@@ -13803,7 +13803,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "e7be453b32720aef7c202f215aab2eb9c641c4173a3cad641104517ee4cc5e09"
+   "questaoSha256": "80f200e4851b0303cb4a6aadfbe2eb9502314f812e1e57bcbeb85419f18eb6b6"
   },
   "mao-1492": {
    "tema": "mao",
@@ -14073,7 +14073,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b21d0bc1ec4edae3a48ff8cdaa9470a48f4c6aee1abab5e28418ab97dd7c18ac"
+   "questaoSha256": "637c79bd98858d2b37f30298a06c6cecb0360ee9f098a84a54a7528f40218b5b"
   },
   "mao-1512": {
    "tema": "mao",
@@ -14121,7 +14121,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "017b10bad0d75799c560085adb1a0114eaba181a4b1e6f8a6aebfdc0e4f87735"
+   "questaoSha256": "63e9dae604b0d052b3aff76c9d6489895310b559a0362a33e8f7709dee735d01"
   },
   "mao-1523": {
    "tema": "mao",
@@ -14281,7 +14281,7 @@
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental"
    ],
-   "questaoSha256": "f4cd8dbe2a652b27240fe63b5f79becbc42dbb068b928c372313230447737292"
+   "questaoSha256": "d716d4a80e1176cf880f0b4ef1364abde24ab574acb378053bfe85c9b5f83481"
   },
   "mao-1540": {
    "tema": "mao",
@@ -14353,7 +14353,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "763c4611f114ad3e6dfde0af32046ef8ae36a95322b8d510132c07f6545f09ef"
+   "questaoSha256": "85fb7279c170b8286d7fef0a2199525ad05d514a09a91b1a49b700cae8c0dc71"
   },
   "mao-1543": {
    "tema": "mao",
@@ -14449,7 +14449,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "f0a4b614a9a9dd0d5e2d2b7e120bf9781c68ddd616e5336b2951baaec85fc3cd"
+   "questaoSha256": "a56012e01f003fbbfb5de1744160b1d9d3d637c8a3e491bb31b762f795d1bb7e"
   },
   "mao-1574": {
    "tema": "mao",
@@ -14625,7 +14625,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "06b26d2b8e0678f0183772028015e11c3613721e9a8066e40f7a37d9799ca0cb"
+   "questaoSha256": "2e2548e6172d4c0042f5c34a11226a9bada9325a4f78fe2e63fcc2a96409e5d5"
   },
   "mao-1672": {
    "tema": "mao",
@@ -14769,7 +14769,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "467a7ba711fca783f7f060aa34839111437e3617afeaec2150c147fb1ed4ac2c"
+   "questaoSha256": "638cc38f17498228ad48e943adf0de7e943843d2f95ab4357205079eb5960a5d"
   },
   "mao-1678": {
    "tema": "mao",
@@ -14937,7 +14937,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "e0da9d78bc086739c6e6a2a3d610e2103099dd98672cce5f5715522634442696"
+   "questaoSha256": "e66c77df6f489aaf9da24e2990d187444a2802b57fdbde5ab6a40ff54e34afe2"
   },
   "mao-1685": {
    "tema": "mao",
@@ -14985,7 +14985,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "4f2ba36f805b0a3c1cbe26f448c2787b2a3a708578276aa474e91e58c8acfbcc"
+   "questaoSha256": "1c6bce3d10c0cee144e226a70ac881b3f07d758a40d890c43f185cfcdb16a3f3"
   },
   "mao-1687": {
    "tema": "mao",
@@ -15082,7 +15082,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "e2afc58bb7bd06fdd872450b1edaead3aa0fafc4cd14cda84e43a50766e03103"
+   "questaoSha256": "c4d052c01ff995dc9443978842c17f39b4b7a64c44783c51e5ebcc85402e18aa"
   },
   "mao-1691": {
    "tema": "mao",
@@ -15163,7 +15163,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15178,7 +15178,55 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "2e3da183fb19b070f7773a781809d369da135f7cdc6b6ac712abeca8c6bff52b"
+   "questaoSha256": "2e3da183fb19b070f7773a781809d369da135f7cdc6b6ac712abeca8c6bff52b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-af3c83a1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-08f8e80f",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-faab259b",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c7d0db01",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-4c61f2a6",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-79ba0847",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-3e5d74e8",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-1765b8af",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bd6a7476",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e4a7b598",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-755a9365",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-0119fbbe",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-8d417b8f",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-04567e40",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bdf35482",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-ebce09c0",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e184064e",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-5f078a51",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-313c1159",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-a6f82b13",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+     }
+    ],
+    "questaoSha256": "2e3da183fb19b070f7773a781809d369da135f7cdc6b6ac712abeca8c6bff52b",
+    "comentarioSha256": "0183fe818c2e764d7889f37ea934f95b7f0f45b4877249e82f676cbeb851887e"
+   }
   },
   "mao-1695": {
    "tema": "mao",
@@ -15187,7 +15235,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15202,7 +15250,55 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "11503640edad5eaf7a84a8b845d1fa091ce854f3b681bb9cd1f708d77df04f8e"
+   "questaoSha256": "11503640edad5eaf7a84a8b845d1fa091ce854f3b681bb9cd1f708d77df04f8e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-af3c83a1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-08f8e80f",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-faab259b",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c7d0db01",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-4c61f2a6",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-79ba0847",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-3e5d74e8",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-1765b8af",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bd6a7476",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e4a7b598",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-755a9365",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-0119fbbe",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-8d417b8f",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-04567e40",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bdf35482",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-ebce09c0",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e184064e",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-5f078a51",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-313c1159",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-a6f82b13",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+     }
+    ],
+    "questaoSha256": "11503640edad5eaf7a84a8b845d1fa091ce854f3b681bb9cd1f708d77df04f8e",
+    "comentarioSha256": "d6560b1139cfacdae4023c19983ce9dcc7c76ff794ded0098cb0ce389222d98d"
+   }
   },
   "mao-1696": {
    "tema": "mao",
@@ -15211,8 +15307,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -15226,7 +15322,55 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "9742ec1add1a7439c2cfb98d88ca3cdd05fefc8c0a750cbfd4cb96697502d742"
+   "questaoSha256": "de02044d7a63763477d5823d6fbe2e8aef203096e73fb104002daf32807a2e8e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-af3c83a1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-08f8e80f",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-faab259b",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c7d0db01",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-4c61f2a6",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-79ba0847",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-3e5d74e8",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-1765b8af",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bd6a7476",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e4a7b598",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-755a9365",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-0119fbbe",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-8d417b8f",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-04567e40",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bdf35482",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-ebce09c0",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e184064e",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-5f078a51",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-313c1159",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-a6f82b13",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+     }
+    ],
+    "questaoSha256": "de02044d7a63763477d5823d6fbe2e8aef203096e73fb104002daf32807a2e8e",
+    "comentarioSha256": "2183315f654722116e8585bf4c65c58301fed3247d7fb36a6f1a8fb22454d5e6"
+   }
   },
   "mao-1697": {
    "tema": "mao",
@@ -15236,7 +15380,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15251,7 +15395,33 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "6184303635588a225e9f63aae28593178d0b89cc7355328c8be57b89a26085b7"
+   "questaoSha256": "6184303635588a225e9f63aae28593178d0b89cc7355328c8be57b89a26085b7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Luxação da interfalângica distal"
+      ],
+      "blocos": [
+       "luxacao-da-interfalangica-distal-f8005ad7",
+       "luxacao-da-interfalangica-distal-0f4c467c",
+       "luxacao-da-interfalangica-distal-63896a09",
+       "luxacao-da-interfalangica-distal-489ba2c2"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "4dbca150ad74c3746b9784c1cfe0b07a30b92e02f553a263e03fa98a1d4426a0"
+     }
+    ],
+    "questaoSha256": "6184303635588a225e9f63aae28593178d0b89cc7355328c8be57b89a26085b7",
+    "comentarioSha256": "1ffd8459abec1d6126e3c71f0905cf2ed99415bd1573d5c859d6a8c7f6d227eb"
+   }
   },
   "mao-1698": {
    "tema": "mao",
@@ -15261,7 +15431,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15276,7 +15446,70 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "1808c8d5dcca0a8a34ef9a73a09321c6260b1b44b7397bac2173aac22f99dd77"
+   "questaoSha256": "1808c8d5dcca0a8a34ef9a73a09321c6260b1b44b7397bac2173aac22f99dd77",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+     }
+    ],
+    "questaoSha256": "1808c8d5dcca0a8a34ef9a73a09321c6260b1b44b7397bac2173aac22f99dd77",
+    "comentarioSha256": "0682bc33b4bc29101eacb81be281c1c7829c8f4a7a0211bc5117eb2927b956d3"
+   }
   },
   "mao-1699": {
    "tema": "mao",
@@ -15285,8 +15518,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -15300,7 +15533,56 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "7bd375a9eb848ce6e53a9ce353b5407c5f97e1a09dbff5dd45ce0d92325323f8"
+   "questaoSha256": "9a43f74e3b4dc52694719a5abd3e191fe275bc734ce8561b86357e3839a47db6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Desvios das falanges e a falange proximal"
+      ],
+      "blocos": [
+       "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+       "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+       "desvios-das-falanges-e-a-falange-proximal-b6035935",
+       "desvios-das-falanges-e-a-falange-proximal-9109692a",
+       "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+       "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+       "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+       "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+       "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+       "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+       "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+       "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+       "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+       "desvios-das-falanges-e-a-falange-proximal-1db07921",
+       "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+       "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+       "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+       "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+       "desvios-das-falanges-e-a-falange-proximal-617152de",
+       "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+       "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+       "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+       "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+       "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+       "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+       "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+       "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+     }
+    ],
+    "questaoSha256": "9a43f74e3b4dc52694719a5abd3e191fe275bc734ce8561b86357e3839a47db6",
+    "comentarioSha256": "cc70d0b137c8ca50a24a4dc88baa6b478f1acf8e1918a21d54e383f991937ecd"
+   }
   },
   "mao-1700": {
    "tema": "mao",
@@ -15309,7 +15591,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15324,7 +15606,54 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "26e8c3decd8b6dd6ee6b52ccf2de5a6de8445a424391cbccf0856b927e59d2b0"
+   "questaoSha256": "26e8c3decd8b6dd6ee6b52ccf2de5a6de8445a424391cbccf0856b927e59d2b0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+     }
+    ],
+    "questaoSha256": "26e8c3decd8b6dd6ee6b52ccf2de5a6de8445a424391cbccf0856b927e59d2b0",
+    "comentarioSha256": "9414ee73336463e0ad2c2385007ba8c0dfa8293f41a90ece86e920ea169802f9"
+   }
   },
   "mao-1701": {
    "tema": "mao",
@@ -15333,8 +15662,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -15348,7 +15677,54 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "d9cfb06e599be9222c390acbba63f9145f257453e9d3484e3c3b405c57bde247"
+   "questaoSha256": "892ceaa44789cb3faee6ed1e536a21ac17829e34107d33a8bd0742c28f9cd1a3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+     }
+    ],
+    "questaoSha256": "892ceaa44789cb3faee6ed1e536a21ac17829e34107d33a8bd0742c28f9cd1a3",
+    "comentarioSha256": "2114109100f88e399243b9749932eeedbc55977a7ed7a21d6203a1d5ad91b216"
+   }
   },
   "mao-1702": {
    "tema": "mao",
@@ -15357,8 +15733,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -15372,7 +15748,54 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b4dbb25b6949593a90160c019deb1ee3fc727d2222c617436d482951c322df3f"
+   "questaoSha256": "b1945cc264ffd7a925fe88b1f6bccd4c758c7d6cec77bdf4bf26ff32fe44441b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+     }
+    ],
+    "questaoSha256": "b1945cc264ffd7a925fe88b1f6bccd4c758c7d6cec77bdf4bf26ff32fe44441b",
+    "comentarioSha256": "021f35ce66692a733f238b679786e180d7a0343a05d0e10c137b9794423ddab6"
+   }
   },
   "mao-1703": {
    "tema": "mao",
@@ -15405,8 +15828,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -15420,7 +15843,54 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "3b6b73418a36af9108f6118657a040e98543528446f9d1115e84bd3e62b77e34"
+   "questaoSha256": "8e21d75f7d31d390362d23425e97524202cb328a4b823574c33d0fa05b947818",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+     }
+    ],
+    "questaoSha256": "8e21d75f7d31d390362d23425e97524202cb328a4b823574c33d0fa05b947818",
+    "comentarioSha256": "13800b21c049da24790b3473bd72d8234a65725be3da4bc5ed6e21b4c814a21c"
+   }
   },
   "mao-1705": {
    "tema": "mao",
@@ -15590,7 +16060,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "f85ece9d878f26c1c370a5e7cf9cfe79d94d24f537f1c4187de168461867a992"
+   "questaoSha256": "b2815b21e3b8e605d20c4618a8581f75d95d9505b7061c03ea9a2acc1bbcb87b"
   },
   "mao-1712": {
    "tema": "mao",
@@ -15710,7 +16180,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "024d0e542546cbf9e5c90d14bd75a2630511a442b48fa8f1a7e23b06ba1b8798"
+   "questaoSha256": "ec1456ea09c2f6c91c5f478f5ff7d02bac868945a25c3175733b1e762dbc5223"
   },
   "mao-1717": {
    "tema": "mao",
@@ -15734,7 +16204,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "3f3f581962ee6538b7b25a664c53924fe1fe4552ff005311bcbb9b5a1461c7fd"
+   "questaoSha256": "9bc72d9404ea6c185b6654a6e3ac64403734bb0122b4db2a914ec3e6dd14fe66"
   },
   "mao-1718": {
    "tema": "mao",
@@ -16594,7 +17064,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "28d677b7982da5b132bbee8a0819a5503009888ddaa29e0f8ac6964b483334f3"
+   "questaoSha256": "c68b5b83a2c54ee54c8695b79b0a40a8678a952ea390297ad38dab39bbb496bf"
   },
   "ombro-cotovelo-0071": {
    "tema": "ombro-cotovelo",
@@ -16734,7 +17204,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "d53a07aa593f933368c4ec8e1e7df296aab9ccab54b54026ade117306d8b424d"
+   "questaoSha256": "d582691aced878e1e2ca93c02669c336783f9cb850f6ed51e83cfb15d695640e"
   },
   "ombro-cotovelo-0118": {
    "tema": "ombro-cotovelo",
@@ -16775,7 +17245,7 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "20a5bce967dfedc8d7f85d453ce4bb2675686f792baed5af5d2ca4897fd66069"
+   "questaoSha256": "800c8efb239c1bdcc47f27f165d053fc2a59b47267fba8217270cefd342aeaff"
   },
   "ombro-cotovelo-0121": {
    "tema": "ombro-cotovelo",
@@ -16799,7 +17269,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "fc8469861d7c444ff7a26aa30d39aa559c3c56134a451d77f95eb1c0fbcb8ba1"
+   "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549"
   },
   "ombro-cotovelo-0125": {
    "tema": "ombro-cotovelo",
@@ -16823,7 +17293,7 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "5c6a4b06e282c3cdb1584a15e48e653aff93fda9fc924e13edd9cb06bf65686b"
+   "questaoSha256": "9bb61ff2b3d1f0180f651e483c15be5f23086e642cc955da93c63d21a216a22c"
   },
   "ombro-cotovelo-0128": {
    "tema": "ombro-cotovelo",
@@ -16847,7 +17317,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "f5a81fe47a3b846559d72fa5557db448a4b1b7bc49448ebf3a37edf8d32f3752"
+   "questaoSha256": "ad4f0b766d79188cf47ac010853d2b52eb6da279ce833c62539b409359ff2076"
   },
   "ombro-cotovelo-0134": {
    "tema": "ombro-cotovelo",
@@ -16873,7 +17343,7 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "4cf6123061339604c41f1b06cc6b2acb03a4c49bbaa6f18864099157490412db"
+   "questaoSha256": "bcc1d53bfb02c5c27a21c55abc628375d48d42ba057a4be805ecd8556a81bd9b"
   },
   "ombro-cotovelo-0170": {
    "tema": "ombro-cotovelo",
@@ -16931,7 +17401,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "6ef9566ba91b249ad5d8be1ec617dcd63616a8fcaf6cb627c9af6f81c3cce8a3"
+   "questaoSha256": "6fca73966825c1e89fa5f7bfa01d1b102087cdfdf2e8292d283a4fc0040d451f"
   },
   "ombro-cotovelo-0198": {
    "tema": "ombro-cotovelo",
@@ -17080,7 +17550,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "9cf394ffc419104cc515548c2528b13156b2d57f9a7cf95571d95636fd98f458"
+   "questaoSha256": "102c6d31202719586c615b3206be3c4ae855b96e3a69bc5f8458bb24c5dd771b"
   },
   "ombro-cotovelo-0250": {
    "tema": "ombro-cotovelo",
@@ -17104,7 +17574,7 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "e5166f912ca1aed8d161fa1f8ffcdf1ea3fda091831028977413abd8ee254fd9"
+   "questaoSha256": "04d544943fc36e9500a00c94af287fe1a9d6913cba104f550e621d382cf3542f"
   },
   "ombro-cotovelo-0255": {
    "tema": "ombro-cotovelo",
@@ -17128,7 +17598,7 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "96f1ba6ce4fc31d2943262c8a63de7fc13885ecdbad6489f90fff566b91d43af"
+   "questaoSha256": "166081f7f55e146d382e59159dabf6a5f44668a09e5fec5ca332995b22ab53af"
   },
   "ombro-cotovelo-0257": {
    "tema": "ombro-cotovelo",
@@ -17152,7 +17622,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "6c65b257de212e064ae5961275f69f505f3717dab8e05b38dc65b2fdc701f929"
+   "questaoSha256": "6cabc36ab5e2f41a923bb9ce3e00a3dbbe18dc1a9668c9a4b7ec60b98b831f3a"
   },
   "ombro-cotovelo-0296": {
    "tema": "ombro-cotovelo",
@@ -17193,7 +17663,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "129da5a533d268b1285ac1ae35d3bae8a73599709a99771e972895d20cb49c18"
+   "questaoSha256": "0c5f8219439a512d960768d1ea15e986d2b1780570e9e722fcef63ccaad89263"
   },
   "ombro-cotovelo-0305": {
    "tema": "ombro-cotovelo",
@@ -17217,7 +17687,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "e91244bbb24410c940e0b0a27111dc8999efa70688516b1529e3758b11df4cdd"
+   "questaoSha256": "0c9042d661bf9888098db5c995284730895938fdff39aad4cce14a8083d51c63"
   },
   "ombro-cotovelo-0306": {
    "tema": "ombro-cotovelo",
@@ -17241,7 +17711,7 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "2800520a0a7d26a711a91145e23fbe7d6411ec8d02720acc8e2dc5af7dcdec1d"
+   "questaoSha256": "a3152357098bff400af3b3549c0d1125db9b1c235cae31d41b5573e8c9bbd23a"
   },
   "ombro-cotovelo-0308": {
    "tema": "ombro-cotovelo",
@@ -17267,7 +17737,7 @@
     "rockwood10-36-umero-proximal",
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "6eae2dcef1e4b5ed20983efaa09bffd835596691773c9230d2a976aef6a7ff23"
+   "questaoSha256": "452f681d3d4ecdd323abef62747b6dd83d2a514b226cfcbb8af4759ae787041a"
   },
   "ombro-cotovelo-0321": {
    "tema": "ombro-cotovelo",
@@ -17754,7 +18224,7 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "79b0dfdedba1e4740608f45932e50ebc25f0e5d256771d457bd448ead9dbeff5"
+   "questaoSha256": "95885bb34e374bbb24f5e8834437569477c1711d2859219d3d6017afd7dcf8a0"
   },
   "ombro-cotovelo-0441": {
    "tema": "ombro-cotovelo",
@@ -17786,7 +18256,7 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "06f036fe1e963fa18f07c06854f4aa0f470c339ed41f0af8eb0ff5a933d66fec"
+   "questaoSha256": "0960a4e2c6ffbe36d38c69e492524d055bbd0192d4f83fffab73f51d5608f0ef"
   },
   "ombro-cotovelo-0442": {
    "tema": "ombro-cotovelo",
@@ -17835,7 +18305,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "64a6b90fc094209d36f74c4f25d0ffa24b9b2fac1aa48de2ee94009a330aec6b"
+   "questaoSha256": "70a53f51fe4df6eec6b1f03d7cc9371b11c2f764d6bacff3f8a006d1926effc3"
   },
   "ombro-cotovelo-0461": {
    "tema": "ombro-cotovelo",
@@ -19067,7 +19537,7 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "84b44e2ff6c346649a725266d834bf5a54ea61fb71f7a595cb8c59501140c4d9"
+   "questaoSha256": "a86259a520a37beaa79223b1af0bfafc56a3c29f37284091ff37166f0020b437"
   },
   "ombro-cotovelo-0616": {
    "tema": "ombro-cotovelo",
@@ -19167,7 +19637,7 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "58eeb783076b90f22d7b31f4a090a65685ef1f210b76261ef9d6a8218224bd0b"
+   "questaoSha256": "d8f5afb6d392b8af4a3447e1f726bad1cd9e98b43dda4f586a21358cd89b150b"
   },
   "ombro-cotovelo-0620": {
    "tema": "ombro-cotovelo",
@@ -19749,7 +20219,7 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "ec1f695701626f5b9da58e58567db0b64ca38ed0aa6ef29b225f4725014d67dc"
+   "questaoSha256": "d80493a3caa82d60dd3fcacb5f8974e0462e2a72fedd211652d45fabb07204d0"
   },
   "pe-tornozelo-0282": {
    "tema": "pe-tornozelo",
@@ -19797,7 +20267,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "69cdc2135592ac1480a996a7cde46f2eb3cd27cb0425a81682ea45e448de8254"
+   "questaoSha256": "0fdd4d7d44d475d6b4bdd1ebe005a4407894934d5feee6413f23041d537c0c6c"
   },
   "pe-tornozelo-0331": {
    "tema": "pe-tornozelo",
@@ -20217,7 +20687,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "61a927379eee18d910181ce0ac9e0e57337bf06ea91215f4e980678acbd0714e"
+   "questaoSha256": "fe3600b567a9bf3c5ad4a7966aa9713f305815a296fa44d5d45a702250308a05"
   },
   "pe-tornozelo-0422": {
    "tema": "pe-tornozelo",
@@ -20631,7 +21101,7 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "a3b1c7435f8d6b3fadf4b7331b5fe8d711fbc7d29bb7e75086e157d9315dc9cb"
+   "questaoSha256": "5a6dc7e0c74500adec578580c3b35a01b4568ce7e329bb079bc7fe1f8abb18eb"
   },
   "pediatria-0514": {
    "tema": "pediatria",
@@ -20814,7 +21284,7 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "51c419ff9defae941ca662a3b8d26ec2fe0e11ca17f5f032627c804c1aad97ea"
+   "questaoSha256": "b8c482dce7df333b485a143b02caa03831855f1462a067ce60fe658fbfdff8f5"
   },
   "pediatria-0527": {
    "tema": "pediatria",
@@ -22407,7 +22877,7 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "bbfdb84bbb9d256ab39978aff118a52cc6b78b86cfa205e3da1857cb0404d440"
+   "questaoSha256": "1095d73fe498cf51e41cb2e73a774ddaec6c12d8fe3bdf014ecdb590aa446750"
   },
   "pediatria-0697": {
    "tema": "pediatria",
@@ -22433,7 +22903,7 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "1856dae990bd393b1312e3252545a6f50beb8f32ab19c3b0310a0068b954e61c"
+   "questaoSha256": "e27dafff3d43ce3bba164d07558de2875dab3a7f6ff4e9927c735beb8ab77a0c"
   },
   "pediatria-0698": {
    "tema": "pediatria",
@@ -22458,7 +22928,7 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "0edcda9342f72572c2917c19361c2086ca233dc81a0c4b0c7928345a98b9504e"
+   "questaoSha256": "7aef0d37d64beaee56c887e77168afb018db8d5d593cc18fd9fc40580d41f638"
   },
   "pediatria-0699": {
    "tema": "pediatria",
@@ -22491,7 +22961,7 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "223d991388d99858d1b4f3c7e84241a0fe1652c2e5aa32d600300fee6ced3b51"
+   "questaoSha256": "7a05281dde657de7484b7d6390e6c6ed61509f14469b9b5e1bae83ada1601bf3"
   },
   "pediatria-0702": {
    "tema": "pediatria",
@@ -23554,7 +24024,7 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "87909633b65475d6387f06a704f2d29e037b9833042072be4974a83a53075634"
+   "questaoSha256": "0080c8b4304ea4599206872f47e49ddb5d07224c63a7eecff4fab5bd0cf1dd0e"
   },
   "pediatria-0849": {
    "tema": "pediatria",
@@ -23911,7 +24381,7 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "293f909857e0c62c6b9c7d929133168f50f94030989b91569b5c859468cadfab"
+   "questaoSha256": "75ee8ffb4dee87b4e1913d60e94c5a885e83cde20802b856578a668b4bf69bf6"
   },
   "pediatria-0926": {
    "tema": "pediatria",
@@ -23953,7 +24423,7 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "6af088745d250a9bbfa864f09f1dda281a88fbf82d2595a83c62481b8d5f0a2f"
+   "questaoSha256": "26ba136d331050866f65dc331b48f68e83e66e4be5d29fa96ba4996edda2fc59"
   },
   "pediatria-0929": {
    "tema": "pediatria",
@@ -24011,7 +24481,7 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "2b2765df70c1f5976ebbc5262909e5257f729754dddcc3c3e27e7f2b4b66a343"
+   "questaoSha256": "29d12cf221923893577e50b28549369ee966ff9d75bd76766bb1e125c02a560e"
   },
   "pediatria-0932": {
    "tema": "pediatria",
@@ -24077,7 +24547,7 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "4d53ac5355d9aed377154e3a92ffba925dd7acd66a7479b7e030ead507e1706f"
+   "questaoSha256": "b4b8597976e08bda5afad1b2a9f944e26169cc9bf748e5d9a9b991f0fc468c7c"
   },
   "pediatria-0940": {
    "tema": "pediatria",
@@ -24327,7 +24797,7 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "8bc8b6f7ba5b5b855c23df9f838449a50cd3b6210b23d9fe8de855beb395c5bd"
+   "questaoSha256": "c5b7a055472ca98f6aebb338134906e2db792103c3b8d1bc79bd506f69e832bc"
   },
   "pediatria-0960": {
    "tema": "pediatria",
@@ -26994,7 +27464,7 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "31958b9fcba3abeaf028a5eedade03575d713849c578ed8e771078d026e41e68"
+   "questaoSha256": "8a71ba5b10dd78ca5f13c7418356396cd3829568625ad78d03b3a5897ea844b2"
   },
   "quadril-0122": {
    "tema": "quadril",
@@ -27067,7 +27537,7 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "1285cf5460b800f50f14c7890ec9a1d082022c8de40dd148ce8c06acffda72a6"
+   "questaoSha256": "eb08648ea7ecc144bb0793f27f379493ef1b0f1dbacd96e526ad39fc8222c10f"
   },
   "quadril-0219": {
    "tema": "quadril",
@@ -27091,7 +27561,7 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "ac103c4de32708d9a765b38c3c179628d5542c45c470cc7f976ecd3837277394"
+   "questaoSha256": "94db4d2465fbcac8fa217a1fd2b65361feb4123210152ebed1997bb86d973be6"
   },
   "quadril-0224": {
    "tema": "quadril",
@@ -27115,7 +27585,7 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "36b52bfb2cdd43ac4cdc135708439b68288722e990607ced3b1c31953de76b50"
+   "questaoSha256": "b341a15a13fb4fcddad49ba7dde8e1453dd79cf493c72a6f4e9e4735eb4f447f"
   },
   "quadril-0229": {
    "tema": "quadril",
@@ -27333,7 +27803,7 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "1b2d0d64786badd0ef52f2cb919e2cb7ca8e94292131e17151a868e15cde019c"
+   "questaoSha256": "3851f76ef9d167e735a008a4a39a00077ee252d5594e861659fb1824c8c8df5c"
   },
   "quadril-0331": {
    "tema": "quadril",
@@ -27915,7 +28385,7 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "ea3c12cc3f9fe56aa1dea79195209b561e01778ba7c81c8ad8604f4a2937804a"
+   "questaoSha256": "588808af832ef6b23ce306f1163dcd18a0872cc9310aac4e8d46ef1162670387"
   },
   "quadril-0608": {
    "tema": "quadril",
@@ -27997,7 +28467,7 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "0cd8b9479bb1a9ae715ef6eda2e4d7612ab0506b880a97b1fc71d7436099e21a"
+   "questaoSha256": "3b4db9c8fda425ed54b1928f78f90d20b66fc65f15286a01028d62bfbc3facb8"
   },
   "quadril-0669": {
    "tema": "quadril",
@@ -28045,7 +28515,7 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "3617e62d195d6177be34a44067ce7d2f97910e1faa71f17b744296f33a282d5d"
+   "questaoSha256": "10d2a89eee71a78900de1596e3bd951e9ec134797193599b3e3935825e6d1301"
   },
   "trauma-0001": {
    "tema": "trauma",
@@ -29657,7 +30127,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "dd776055f8031d744c6efcc200f8bf3fe38ff9f5e2691ef0d278dedd95c0ee98"
+   "questaoSha256": "80ac386466b8e430fed7ce67ba5745d9bd794d521df8088dac13435ee9bdc1dd"
   },
   "trauma-0080": {
    "tema": "trauma",
@@ -31621,7 +32091,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "34c370caa364102a1e2c301bd5affae8433270af1c3e47628efd71c57a0e8d38"
+   "questaoSha256": "3ae07307447a4dcd4c37489d9e999cf70dcc193091a8bd89eeae9b4ee7c2872f"
   },
   "trauma-0177": {
    "tema": "trauma",
@@ -31645,7 +32115,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "65ecd3ba22158a86c76d0cac1658e18e47dc21c75c9731211bd6ce4461ecf6c2"
+   "questaoSha256": "73c6e1ae9d90f0396abf3638fcb2d1a76057256710ba02f97c238db83dc50473"
   },
   "trauma-0178": {
    "tema": "trauma",
@@ -31693,7 +32163,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b720413216c1ef4bfb19a19a1759ea20728c73c42c3e34d44d36df4d7008d6d8"
+   "questaoSha256": "76110b9f1a4970e033d40fc536bee61f3934d674c44a5500414b6fa8023efd55"
   },
   "trauma-0181": {
    "tema": "trauma",
@@ -31717,7 +32187,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "42db32d99595ec77aa9f918d853393afd6c1a4e9c2a8631cadfcd541583f57da"
+   "questaoSha256": "35966a18c1fff1247fd4aea2a1fff66f3b01373174df486e03626d3347d37598"
   },
   "trauma-0183": {
    "tema": "trauma",
@@ -31741,7 +32211,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "8b799addcb956e9735f74c285c8c79e8d3c7b66d423b542064167e23b15f7aa9"
+   "questaoSha256": "40c8aeb06011458d4e21688a1c04f406e017eea8e2e36439c08008604c3fb4bf"
   },
   "trauma-0184": {
    "tema": "trauma",
@@ -31765,7 +32235,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "d1f3976e58cabb56876448af7e7642e52cde4c8a5ef192f82409692fed2d5a4c"
+   "questaoSha256": "142b46ecb91cfd682a1b085fe3f9a9da97fd227852f813e1deb0d6ce2bf4cefa"
   },
   "trauma-0185": {
    "tema": "trauma",
@@ -31789,7 +32259,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "b4a55158f21b3915e22c34fea9d16bc898302e4ac5f08021c242a4953117ff50"
+   "questaoSha256": "48a2c49941cab005f453f1cb9150d1499b3428ff36ff7f0cd41423bebc62208d"
   },
   "trauma-0186": {
    "tema": "trauma",
@@ -31813,7 +32283,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "4350b361bf2abb2800c6feda31918084c9d8a48820d96e14a1454d724b7c989e"
+   "questaoSha256": "d20de38e923f51c0d1291ac331d7160c3c12cdb46b7f05b4873eb91c9a90fce0"
   },
   "trauma-0187": {
    "tema": "trauma",
@@ -31837,7 +32307,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "9e71a0692c59962daf282b3fc71bce57f254358b4c2a1def417ecc081b51ba30"
+   "questaoSha256": "0baaa32c142bb2d64203e15dcd788e94336911e5abe07b0dc7075c248bdc9fc7"
   },
   "trauma-0188": {
    "tema": "trauma",
@@ -32456,7 +32926,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "8a9a57ca2d2159daa1e31c397d0694ff473c8df8db438f224c6b83832109d90b"
+   "questaoSha256": "d82eaab66a1a09780a83a924553c2f3aed37967034380e0e1a228d51529f05d9"
   },
   "trauma-0221": {
    "tema": "trauma",
@@ -34105,7 +34575,7 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "c332cb58d4b4f7f9d194b02f7d2f42d015b8da8691568e501f346429bb0facf7"
+   "questaoSha256": "50a6a9f81a4e3704ce0f97c8d5d0a72b870a38eb79647376f7eacd01280a1abb"
   },
   "trauma-0313": {
    "tema": "trauma",
@@ -34202,7 +34672,7 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "797651626e759b23bc383488b85b4981fb88faac5a5d68ec94dd2145eb27d9cc"
+   "questaoSha256": "bcc367d038f5e46032a04303d1f70d686a883035f74d4a593dba339517466a31"
   },
   "trauma-0318": {
    "tema": "trauma",
@@ -34739,7 +35209,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "650653ccedd4879137f530f8d883c5dc93349285464c393aa198dc2ba5fa9a8e"
+   "questaoSha256": "50a507737c1f6536ee3ce73eb239e2962a05e792cd4390b51bb9b007903ca778"
   },
   "trauma-0345": {
    "tema": "trauma",
@@ -35251,7 +35721,7 @@
     "rockwood10-53-colo-femur",
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "84bd2b66b893981c33cf0879396fc37e48398fe4ecd2a8b2cf86a68b128567f3"
+   "questaoSha256": "293cb1514f0d5c1f8548d4e87aee56d0b36d4d96d429e9ce35e75d84ec5f7dd3"
   },
   "trauma-0440": {
    "tema": "trauma",
@@ -35468,7 +35938,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "afef773c10c3fbbe71ae85bcd8fb066bd20c060730de2ca75bcf0bdd5f8f557f"
+   "questaoSha256": "e766c796e652c660fac18e5345e7fd66ed7af6bd9fb4f734c3a72467823738d4"
   },
   "trauma-0451": {
    "tema": "trauma",
@@ -35620,7 +36090,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "65453bc1443f70353a08631d600cfeec4bc8c1f6061e388b0fdcb07a03247bb5"
+   "questaoSha256": "a480778a48ef4f666c67776fc9fac8d032f03f3d50996bfdbbb5998223e41712"
   },
   "trauma-0475": {
    "tema": "trauma",
@@ -35636,7 +36106,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "e3ef899086dedaf06d905ff7ccc2e76c15fcb1b04c5febbcc917601980ba3afe"
+   "questaoSha256": "2da0d2c2d8ecc4f47a361fd5a46078922e14c1af1c3bc99259633a25b160cae7"
   },
   "trauma-0476": {
    "tema": "trauma",
@@ -36077,7 +36547,7 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "14039ecef1cea1e0f9db4cc17addf897088a31fd18ddedf59112a56137a0c4cf"
+   "questaoSha256": "47874c97541637de8cf12184068ea1e7368eff7ac2310bd6be6202c7cd5f3366"
   },
   "trauma-0545": {
    "tema": "trauma",
@@ -36109,7 +36579,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "c084d54fc64755eafe3de56ceb7183bdb582498a0c9bdb4d0fc9483a7dda9709"
+   "questaoSha256": "4d7d44a56c9ed8c3b21ac41cadcf5e602ff8adc5b274d4411cc1de842d0751a5"
   },
   "trauma-0547": {
    "tema": "trauma",
@@ -36340,7 +36810,7 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "7b769e04e27d5d50e25754f59764d08e8d2fc65702d25ca875dfe8552bfe61a8"
+   "questaoSha256": "0f15b62fa98e868729ddf16f763c41d79710f8c58057ac26263d6a0d63df36fa"
   },
   "trauma-0560": {
    "tema": "trauma",
@@ -36420,7 +36890,7 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "966bd5b73cc45439c8a970bb103b81e8780db6b3bfcff22e05f60bf6d444418f"
+   "questaoSha256": "0448f58410d64ad57abe30aa961592946b89f731389ebafe49b76aa22ed2b4f1"
   },
   "trauma-0564": {
    "tema": "trauma",
@@ -36540,7 +37010,7 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "dd0fd4bc93fa28e8e84ca21131dee19bc2bc65d8add8d11d6c71b58379ec3958"
+   "questaoSha256": "fcb973e2660151087d36ae9bf62bd3160664a93f521d58fea7700f7e613b31f7"
   },
   "trauma-0571": {
    "tema": "trauma",
@@ -37098,7 +37568,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "6ad080d7cb05ff085c9885b0a025d81b23fd3bd37961ffc5918d04c0861906bb"
+   "questaoSha256": "34d95d982aace3ebef7b7bc646c17c9d92b0d9f0c18e5fcfd441b5534cad4c04"
   },
   "trauma-0679": {
    "tema": "trauma",
@@ -37441,7 +37911,7 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "7016206f8c96dae8e848e1bb91b303d5a59a2860c9253277bfbd9147e474b676"
+   "questaoSha256": "93d359e5d8e420accbbcdd84ca6c85c6da747d7f9c923719a527bd278803f159"
   },
   "trauma-0696": {
    "tema": "trauma",
@@ -37785,7 +38255,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "a76c162c36397380ed0cd679be872d7754d749fa3b2ac0d495a661070799ef8b"
+   "questaoSha256": "de4a0014a9b9bf147c91015a411b5bf4e3235a325f2c4f50a34b7c6d035950ad"
   },
   "trauma-0718": {
    "tema": "trauma",
@@ -38017,7 +38487,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "acb9e635df11cf11c36bca29e57080c4a7f68ad5af2ed7986b72d3911ca5a676"
+   "questaoSha256": "f82acd1dc862560e3f78abc366a8ab07c4571c4a779122265625b82827a49d78"
   },
   "trauma-0731": {
    "tema": "trauma",
@@ -38347,7 +38817,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "423fc1281dbfc2d10f86351f9bfba7384876a5996009c7b3454ca8aab702da37"
+   "questaoSha256": "ff10fc195a359656509c509b40751748e2fa2d1692b6c6d4fa6ed8af2393a57e"
   },
   "trauma-0756": {
    "tema": "trauma",
@@ -38395,7 +38865,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "895875392c2ac07e371500d14d547f0b6bb95908a5d14e67d507418a96e8ff7a"
+   "questaoSha256": "49550538ab0632089618d7a9db3ed0f8afd88b7873ed97454c8989acf455597f"
   },
   "trauma-0759": {
    "tema": "trauma",
@@ -38491,7 +38961,7 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "0c6b967d4ff0ff6d87fda1aa38f6df6c85e4bf66cde75f592ef9e61075d79135"
+   "questaoSha256": "40d94054ef4eb7b4adb650267ebd3ed6e37d281d4a44d95c7899714efc42b588"
   },
   "trauma-0764": {
    "tema": "trauma",
@@ -38515,7 +38985,7 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "bd0da3e3d0e448a18111bf6efdc5ef5fb99880b0e9d4c8ec4c52bc9e2f9a1fca"
+   "questaoSha256": "d305bff82c36f40c452b19d493af00413d366df726b06dff456f3237e47eaef5"
   },
   "trauma-0766": {
    "tema": "trauma",
@@ -38622,7 +39092,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "d9e1e9b5f78bc91e62df9f2419293fb766af1faf841051f15aeed0dd40116f17"
+   "questaoSha256": "2718ff4015efc35a2e34926a9e35016e3b18cffee90315c60efd0c6dc9560317"
   },
   "trauma-0771": {
    "tema": "trauma",
@@ -38688,7 +39158,7 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "87b951f8586b1000291c8651ff000269708f0135af205cb5cc000ecd2a526f33"
+   "questaoSha256": "733e15cc92e0166bfc6801d76cd31047b0d4f6565212b95ff47725a3220ccf44"
   },
   "trauma-0774": {
    "tema": "trauma",
@@ -38921,7 +39391,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "216031dcd68795e497f64bd3385534ac81ec75d7eec8c7f0ec06203b87c85230"
+   "questaoSha256": "a61dc72a8e72034ff8f3f4dbdee49a260005e257fc1f00bf1faf2612f4c98b79"
   },
   "trauma-0787": {
    "tema": "trauma",
@@ -38945,7 +39415,7 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "59ee128771c4f72363b95a1c2985d2c68ce2a6724461008ad959c8227b4da058"
+   "questaoSha256": "50ab053ff55d1cd82b2d8f7e290129b185a4aae42ee693191f9c44fac1ecbd18"
   },
   "trauma-0788": {
    "tema": "trauma",
@@ -38969,7 +39439,7 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "2674af157f4671a2cf062ea0c1c48cc39e0ea18e1faa6f2945714e344928a1c4"
+   "questaoSha256": "504455697f2e9c3f66e4d88a099470b4abdb9cac9e8bf84488e47516a25ab46c"
   },
   "trauma-0789": {
    "tema": "trauma",
@@ -38986,7 +39456,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "07d891dabd2ff13a75d22b2f1112c810d4bd84c64011fd65b8ad1ddcda5778aa"
+   "questaoSha256": "166f0763749d4f1c059807798dd2ab4d35175fbbcba3909b44710b435510b356"
   },
   "trauma-0790": {
    "tema": "trauma",
@@ -39002,7 +39472,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "b349672943fec4ed903dfdae083e7c38ef8edeb6d9f73bb6d60483d68453a2a8"
+   "questaoSha256": "bfa912943f1cf91948b0413d0e400954b88826a1f0399aa0ab61b1602e7b7cad"
   },
   "trauma-0791": {
    "tema": "trauma",
@@ -39018,7 +39488,7 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "e613f53e7c26f24a6da7543135647884b541a07d77a96cec06a1bf3131b4643f"
+   "questaoSha256": "64496cf852e0c4f1effe3ba00bde0f5d470ce2e1b75a3f545b287862f02079fa"
   },
   "trauma-0792": {
    "tema": "trauma",
@@ -39164,7 +39634,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "7c7acc80d15b663a0c0080fe737378d3dc184d266ff26a7f036095db2be80caf"
+   "questaoSha256": "b2f958018894cdc177ec390ad3db22278e24ce3e5885eb6d70c4cae64a7a4271"
   },
   "trauma-0799": {
    "tema": "trauma",
@@ -40983,7 +41453,7 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "3bf67f4ee5a6e112580beb4e8ff91332e953e5c28eb81780f90dbbd8c5038550"
+   "questaoSha256": "e85b0948cf25193a5ff45c062fe477e25012a669e535331dc4f1e934a6d06f31"
   },
   "trauma-0906": {
    "tema": "trauma",
@@ -41137,7 +41607,7 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "6b27830ac33ab5fe816a90ba90052079000e3ed6fd7847098a55ff5388a90893"
+   "questaoSha256": "25567da4beae0b165bc6df5c00d1fdfe4837880d072f0260a32152eb1b2f7731"
   },
   "trauma-0913": {
    "tema": "trauma",
@@ -41797,7 +42267,7 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "7a6dacd62c52ca28977a00708e8d59aeae322dfbd586c201e5510a8074dd345d"
+   "questaoSha256": "125cdad90b45b6f79494d8b5528780de91ec59860a1afe8e7a2387d5cbb8547f"
   },
   "trauma-0957": {
    "tema": "trauma",
@@ -41943,7 +42413,7 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "25d0858e9abf7e5efec46498e7e9b7e265c0299b58161ac3cf5f98917ab30a0d"
+   "questaoSha256": "484f0d4b96c72cbbb6ae307df5f0504557b97d80c0add4c8af5a857c7ce5709e"
   },
   "trauma-0964": {
    "tema": "trauma",
@@ -42175,7 +42645,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "ca39c1fc4256485a234f49bb9d2d21db69846a21fd207cfed3f84df7e47d7fd5"
+   "questaoSha256": "4ac709330ff64ba2edd1bd1e9c83f96cb920f0f4ee522e2874510781a67d5fbe"
   },
   "trauma-0976": {
    "tema": "trauma",
@@ -42191,7 +42661,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "a698277e06fad7bb586a5d7d61e6da48c0b28bf4e0fd19d607858b5348e509d6"
+   "questaoSha256": "3b5b1e51c2f894daa54e41ff6ba1d52fc15af8c3350034e0d6b2dd647ebf9797"
   },
   "trauma-0977": {
    "tema": "trauma",
@@ -42231,7 +42701,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "ee69954a865d2ed7ad9d865414bb4665dccd778fba4f9d560451b69efc0c1bbe"
+   "questaoSha256": "0ea7deeb5d7b768264146bfc17cbceb2e8c30917ed2c54373e98b79e85695886"
   },
   "trauma-0979": {
    "tema": "trauma",
@@ -42255,7 +42725,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "7fb2acdda183a48ce0e4177fdc97527dfcaf32d7293e4016ece1967a03bfa525"
+   "questaoSha256": "3321ced965bbda67deded76f200d727f94c11be39c13afaea5de90453d9f3932"
   },
   "trauma-0980": {
    "tema": "trauma",
@@ -42271,7 +42741,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "167f42820abd018554cbc82ed79ac046ea88c787111ec5bd971eb80cf8012c5c"
+   "questaoSha256": "00eb27b5d7f5fafa3aa12eb567fca413e81613600f1f0eaf246a2ebb1b729778"
   },
   "trauma-0981": {
    "tema": "trauma",
@@ -42538,7 +43008,7 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "3fb7c7a493a48870659f2b69dd32eb1892943a71d81c17b6ea60153368f30ebe"
+   "questaoSha256": "7812feb40b80d2005c0c87db1f658cfa6994366646f2f6c662c9c38e8e25bbaf"
   },
   "trauma-0992": {
    "tema": "trauma",
@@ -42554,7 +43024,7 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "b63e883a0a657cf1653d8abdc0d90fd0dbace3484c6d5032b4ce5d2fd0998fd4"
+   "questaoSha256": "f9b122a6ccb7e6635102398fb307db62a897dfda05412355b9d3c77a753f2686"
   },
   "trauma-0993": {
    "tema": "trauma",
@@ -42594,7 +43064,7 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "9085d54da3314b356ef69c0d9f889985cb94e00de17ec5e184504f31d825a44e"
+   "questaoSha256": "04cdf1a82fb13c9a509df79079f6555641ff59345cd2f55a145828375028725f"
   },
   "trauma-0996": {
    "tema": "trauma",
@@ -43143,7 +43613,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "024de7d37f4f9c1207e654bb6eeb05fc388b2a57762c2abec2813279f6b7f453"
+   "questaoSha256": "076263f30e98518717ba810ef90fe7d6406ae737ff4af203d5db5265f1f88de0"
   },
   "trauma-1024": {
    "tema": "trauma",
@@ -43192,7 +43662,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "38de301a108cc8f2c957fdf3899266a719e5f95e57df3c5a5b32e2ab795ad3e7"
+   "questaoSha256": "493424075bae5053fb0cb3815d5e17e162032ed46213267d6c28598c76e20adf"
   },
   "trauma-1027": {
    "tema": "trauma",
@@ -43322,7 +43792,7 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "317bc47abf7aa421fca034ab17509d6cb23cccfaf81974ebf4dbe31acdc5120b"
+   "questaoSha256": "992d50fbb6cda1a98235107785e81f56b95da4c81a64ec1bd7635ddb8f46175f"
   },
   "trauma-1034": {
    "tema": "trauma",
@@ -43362,7 +43832,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "1f24f1cd74af199415f8267318d8c46c641fe8897992bd381bd11af36c6549d6"
+   "questaoSha256": "75f6838e7c086f4945926b4e1ce7d63063cbecb098f405320344006bb505183b"
   },
   "trauma-1036": {
    "tema": "trauma",
@@ -43565,7 +44035,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "b7296c1065a9e1e21a39558b1ad9fa8b1e54883c12bc165e7683eb10d1472feb"
+   "questaoSha256": "09f5f0316f5af9ff6296d39d7e4af62057781c3f65582cf49b2af00ffb95d194"
   },
   "trauma-1047": {
    "tema": "trauma",
@@ -43865,7 +44335,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "a59abb3fd6749fb0e6190d87f25b03aca1f6b6fb58f8fca937d5e92784c6f4f2"
+   "questaoSha256": "cb2c0ff9f4ed49668c6c777dbff96291d7f5e5450a3dfbb22a4af393b5435603"
   },
   "trauma-1062": {
    "tema": "trauma",
@@ -44106,7 +44576,7 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "6e40e3b343afb87bcb0198429b7a312be0a2adeec3aabfe9a2081d7b135862d9"
+   "questaoSha256": "db1e02ed30b6aa44338231d455c6a3deb92d803f21133c999183343d8af0ad5a"
   },
   "trauma-1075": {
    "tema": "trauma",
@@ -44162,7 +44632,7 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "e1b6dd24e0c81a07e912c376da7241989dfbbc0d429cbb7806fb81fd94d0f686"
+   "questaoSha256": "8b7b47c49b5f895a2f87a6813933d221a39ac320afe09d1b4db5b73ea62637b1"
   },
   "trauma-1078": {
    "tema": "trauma",
@@ -44689,7 +45159,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "1ed8a4c82ec25b9052c6d5ff99d0c3c808f66cfa46740abac4aad4b4398e62c1"
+   "questaoSha256": "19ac3ad57b82d279f754508bbebb097bd4934a380759baccef220ee3f6dfa886"
   },
   "trauma-1099": {
    "tema": "trauma",
@@ -44713,7 +45183,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "be9a58af5049a857e77038e86457bb1a2225d44baede0b0ddf2c9660ce437aff"
+   "questaoSha256": "98c642a2b1bc92eca0c0e44c8d6239eb0b6a8a7baff863fdceb56d60f20f9655"
   },
   "trauma-1100": {
    "tema": "trauma",
@@ -44761,7 +45231,7 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "cbccb6cc98ac2b07b721a8231c14c6dceb7c03bdb53b30b61df9af4e7dcf9e67"
+   "questaoSha256": "787794f19a99682e2396ebd6672d5d598cb3b4eafcbb1745177287e32aa38541"
   },
   "trauma-1102": {
    "tema": "trauma",
@@ -46504,7 +46974,7 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "443ec3313b77994933abb4bcd57f62ba2fe3d2adb485d440f584f0cfdf1d58d1"
+   "questaoSha256": "9d27f1febc0492773f748ebd335feba362a9b0b6b24ca053fa29e3458522ad8d"
   },
   "trauma-1207": {
    "tema": "trauma",
@@ -46547,7 +47017,7 @@
     "rockwood10-37-diafise-umero",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "a6a6b2b5679ae75756f5b1ae26dcc875eb6787002dc376776ed00fe1e71e595d"
+   "questaoSha256": "3b1b4db70b0357f6eddbfbfa3196559ed4d0f53c061d5334932fe4473aad3ced"
   },
   "trauma-1209": {
    "tema": "trauma",
@@ -47377,7 +47847,7 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "ef2278292ccbd5170ed06904c9ee9117004cf152af5683ca433f03853c1f5e2b"
+   "questaoSha256": "01576699e1db4006585659a5ae0c8fb2073e19ccffbc92b244e654886b2c9ddb"
   },
   "trauma-1247": {
    "tema": "trauma",
@@ -47429,7 +47899,7 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "34f2c42483ae3e62406b8859ee3b28cfdc8434ba39347456d2fef77f9f9f1db2"
+   "questaoSha256": "d4104df25ba060ab7cbb26a360fe1ea48ec923c528cb141c7906d6300c87ca04"
   },
   "trauma-1249": {
    "tema": "trauma",
@@ -47479,7 +47949,7 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "1f5e63c09c6c75113aa44c45654122aa0559a2c10a2ba8a4e0b939ad3ef73253"
+   "questaoSha256": "8565a1ff70cf406389c9d26ebaa9975f1b61a427cad1313c19706dbe80ec9d36"
   },
   "trauma-1251": {
    "tema": "trauma",
@@ -47673,7 +48143,7 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "16030936f84476b4988f62613ed566485966fb65f00144fb61c42ef03598301e"
+   "questaoSha256": "ac45e083fad6ac2387605b3a509251487bb89f24b8f083bcdec06529da32c97e"
   },
   "trauma-1292": {
    "tema": "trauma",
@@ -48130,7 +48600,7 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "24c93b7619b7c89beed343413fc4409e1b00f5cb1747a3c3566bd46b7378f0f0"
+   "questaoSha256": "f97dc8754f8b258728de96db81780076a7468e2f78f0f888b3ce4e71fb7a46ad"
   },
   "trauma-1311": {
    "tema": "trauma",
@@ -48178,7 +48648,7 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "0e4e14e189bf67d40fad0673488a3eaf8bcb6e5c77930761446fdc27e7df0a5f"
+   "questaoSha256": "d9ef2a02733a369cf7410bce1c7fddb14dfae3bf0be6bd62bced7010003ea60e"
   },
   "trauma-1313": {
    "tema": "trauma",
@@ -48396,7 +48866,7 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "40991fef5df357690f644199143ea2173ac6658dcd9d8077402d937db0bb7ac1"
+   "questaoSha256": "bc681d551547bcad6cb05641c81f0731e31d80187dce2e1d9d3cb0855299c846"
   },
   "trauma-1322": {
    "tema": "trauma",
@@ -49627,7 +50097,7 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "dd17ffd392508af5003efd6e626f94a73f1404dfb36ac19f785a696c1058bdda"
+   "questaoSha256": "c9bffc302417bf7b554c675b8eb639b833eaffd171066ce00e26c8b0d6dfe506"
   },
   "trauma-1372": {
    "tema": "trauma",
@@ -50502,7 +50972,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "7d32f4eb7ebda8c1ac701524ff6f6d098ec011639d6911ff51df0540dd18f713"
+   "questaoSha256": "51aff883baa894d60e8638c45118ee560efe64fda8428024890e303580e99ee7"
   },
   "trauma-1427": {
    "tema": "trauma",
@@ -50574,7 +51044,7 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "c2244329408c466cbd143602622812e5d1de3b245ef6707540f5abbc82af6d1b"
+   "questaoSha256": "e51a44556527b1fa2ec3cba4eabdee427d654395ea23c9b0c7c45429e416812b"
   },
   "trauma-1430": {
    "tema": "trauma",
@@ -50655,7 +51125,7 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "eff19769d92836366d36d90c9f3816acc884d617c2d8e5dabcfe2ac4403e05d3"
+   "questaoSha256": "9ec470e0ad97819b978c7eafcb784eb3b2165a0bf9557121d1328029d538c5a0"
   },
   "trauma-1433": {
    "tema": "trauma",
@@ -50863,7 +51333,7 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "b28b846fcf227d7c656ce387ad4d8da371bdfd03772a041071b33f80dd30949e"
+   "questaoSha256": "17f564eb58282b286c36d039e154b762a87a78907872c925e9f87ce8857da070"
   },
   "trauma-1441": {
    "tema": "trauma",
@@ -51168,7 +51638,7 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "3f6b40cfe71f5b9e4657395575d84397bbe0a418e79010ae39c8feab9ddcc9f1"
+   "questaoSha256": "7146dff3f94dce3d434c886d90495de44843af3bfeb6a62e7271df993fcf28be"
   },
   "trauma-1453": {
    "tema": "trauma",
@@ -51192,7 +51662,7 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "74a2bcda67840a15cf82afffe6cfa8d2d0fe0776b64e07a940c3646f97695e59"
+   "questaoSha256": "d342d8ed7109308049dbd0f19a7d44ed071d3b1ce699439a806e985cddda4dc0"
   },
   "trauma-1454": {
    "tema": "trauma",
@@ -51290,7 +51760,7 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "5da286a1d99342298da5c3a21585cfd480490e4858e3f4e654e8e1005cb214e8"
+   "questaoSha256": "a409a9741983563548423e2b00843a2121d50ec9eb7b5642e10d70ed3fa78f6f"
   },
   "trauma-1458": {
    "tema": "trauma",
@@ -51611,7 +52081,7 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "8e679417f4bc61ad0ca496a01bda8e4c56b2fd10a52ae6c7dc7b80c89afbf6c3"
+   "questaoSha256": "0b9974b76dd30eeef8afcda847fd48ebd661cb326779c6cfaa637d4bdbb2a970"
   },
   "trauma-1500": {
    "tema": "trauma",
@@ -51908,7 +52378,7 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "952b226eb1f4b73230b400c5098aaae52561c4a20c94a7f02ee84419111dc27a"
+   "questaoSha256": "f5b81a56e4a88bf978f714cfd985ad6f79e3ffe50131e58aa8bd1e9e9c95b096"
   },
   "trauma-1512": {
    "tema": "trauma",
@@ -52007,7 +52477,7 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "14f5e83386a7d0d6488dab98ca4f97624ac8b02f4f5a9163b7804f5565fba9a4"
+   "questaoSha256": "ebd51e3fa7df81467d2d2308ffab43971095a8fa1accb41d26fc96bedd6c69fe"
   },
   "trauma-1516": {
    "tema": "trauma",
@@ -52104,7 +52574,7 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "0cce25e1cebc0a2f5f206187532cf1966ee39e3f8309433ebb04289866408889"
+   "questaoSha256": "0eecb3ff0d503c728da06257d8fd93f51922426beec6c40242be76aa44bfaf54"
   },
   "trauma-1520": {
    "tema": "trauma",
@@ -52128,7 +52598,7 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "164e4f4cefec905f015ebcf8957596f2af47e939ba4eb18cacdaac46c705c171"
+   "questaoSha256": "5f474bdd8835b421a5544a70b783a84ca44f198c89455e55528fdeabce53946f"
   },
   "trauma-1521": {
    "tema": "trauma",
@@ -52598,7 +53068,7 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "0c4dfae218f64363b9a2144faf7b3b35f774e50ca8b3d4ea6878d8a48b3e40f4"
+   "questaoSha256": "63b1d32639d76c6bcc54cbd33ddd9e15d2e5da57397f90788e2b57e1c4f286fd"
   },
   "trauma-1540": {
    "tema": "trauma",
@@ -52646,7 +53116,7 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "b4a973252d7c1ad2f77fbb094683b8c399553c14b8ce1e347743d50d7892d907"
+   "questaoSha256": "de3c997d3f77a89211eab879ea758e2fec8a225e469de574921b2f84ff7d9c12"
   },
   "trauma-1542": {
    "tema": "trauma",
@@ -52670,7 +53140,7 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "b0ee391051524df2778a33da578e064f6b623f77e66c0bac4feccc0dcd639f10"
+   "questaoSha256": "21826cae3e70e4fdb5b4ddc2da6295ea1246a756aca3803a0869bc4e1b2a4366"
   },
   "trauma-1543": {
    "tema": "trauma",
@@ -52694,7 +53164,7 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "a93dfe7fe3f11b56fddf86b5d0bb8fee98c0e24bf7339faf1376a59e10aff339"
+   "questaoSha256": "b2826170b78e11b2d4445dfc2f00c19d93080fa12087c6ddabb5bc714cadadcd"
   },
   "trauma-1544": {
    "tema": "trauma",
@@ -53347,7 +53817,7 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "bd756efe242cecb1fa9c41415e2129372e832371985051fbac88a9d6f33f8960"
+   "questaoSha256": "404cf0c5c5e18779991fe404043b61d307478d0578066f2ad8592bf1adb0926d"
   },
   "trauma-1569": {
    "tema": "trauma",
@@ -53587,7 +54057,7 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "c8e75d536baddb470e59faabb9e76e62bc7fd26b86bf027fbb3093cc3ff231eb"
+   "questaoSha256": "58affc3364b8081c0947fd942fa86b91e6671e1a5d6c6813c131ef7f6f4d9c65"
   },
   "trauma-1579": {
    "tema": "trauma",
@@ -53779,7 +54249,7 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "fdc1711005359f4dd91c1639e9d298cfcaabc26a371fb6ce4dba4f3c7288282b"
+   "questaoSha256": "fd7a3cda79b6be88fcf965c18bc567aa162d41b2a91877a59241b41f10142d59"
   },
   "trauma-1587": {
    "tema": "trauma",
@@ -53803,7 +54273,7 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "ae6359bead64b4022b43139e056a08a2218db35c7ebd9148ed2c1bc4fac714c1"
+   "questaoSha256": "1e228bc61b0250ca6f9b9fb331520cd9b77776e029b12d5c9c40a8a6f723b3cd"
   },
   "trauma-1588": {
    "tema": "trauma",
@@ -53827,7 +54297,7 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "c51982f67494c12f563b261a44b3f10b18fc575f182cd75309cfe7f35b6a36e2"
+   "questaoSha256": "8e857ec10a397e641c361974ab5a2528bf0d80a575d88047d3fe06e41d13febb"
   },
   "trauma-1589": {
    "tema": "trauma",
@@ -54363,7 +54833,7 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "3935fb26f13e0613cf418c50be2614a253746b390da993ec55b884eb30b557bf"
+   "questaoSha256": "04ba129e75247694387d3c74ea1ab096ced2f85f66f58a51de9ca31ad9a04049"
   },
   "trauma-1608": {
    "tema": "trauma",
@@ -54435,7 +54905,7 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "f57bad83ec75505ac2d113b9b68b49a9450fbc9f4b1728e0d49d4ffd3e872529"
+   "questaoSha256": "7bbd9386c8f6a95cf31731bc075df925bd8b06b5836144a8a192ac0b894bebd0"
   },
   "trauma-1611": {
    "tema": "trauma",

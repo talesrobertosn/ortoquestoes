@@ -29,6 +29,11 @@ def preparar(lote, qs, cs, caps):
             raise ValueError(f'{qid}: figura indispensável ausente')
         if set(item.get('imagensConferidas', [])) != {x['arquivo'] for x in q.get('imagens', [])}:
             raise ValueError(f'{qid}: imagens precisam de inspeção individual registrada')
+        raiz_imagens = (RAIZ / 'public/imagens').resolve()
+        for img in q.get('imagens', []):
+            caminho_imagem = (raiz_imagens / img['arquivo']).resolve()
+            if not caminho_imagem.is_relative_to(raiz_imagens) or not caminho_imagem.is_file():
+                raise ValueError(f'{qid}: arquivo da imagem ausente ou inválido')
         c = copy.deepcopy(item['comentario'])
         c.pop('baseResumo', None)
         if c.get('conferido'):

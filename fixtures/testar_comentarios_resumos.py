@@ -45,6 +45,21 @@ class Aplicacao(unittest.TestCase):
     def test_imagem_nao_inspecionada(self):
         self.q['imagens']=[{'arquivo':'figura.png'}]; self.item['questaoSha256']=fingerprint_questao(self.q)
         with self.assertRaisesRegex(ValueError,'inspeção individual'): self.aplicar()
+    def test_imagem_ausente_nao_e_aceita_como_conferida(self):
+        self.q['imagens']=[{'arquivo':'imagem-ausente-no-teste.png'}]
+        self.item['questaoSha256']=fingerprint_questao(self.q)
+        self.item['imagensConferidas']=['imagem-ausente-no-teste.png']
+        with self.assertRaisesRegex(ValueError,'arquivo da imagem ausente'): self.aplicar()
+
+    def test_conteudo_da_imagem_faz_parte_da_evidencia(self):
+        with TemporaryDirectory() as tmp, patch.object(catalogo,'RAIZ',Path(tmp)):
+            pasta=Path(tmp)/'public/imagens'; pasta.mkdir(parents=True)
+            img=pasta/'figura.png'; img.write_bytes(b'figura inspecionada')
+            q={'imagens':[{'arquivo':'figura.png'}]}
+            antes=fingerprint_questao(q)
+            img.write_bytes(b'outra figura no mesmo caminho')
+            self.assertNotEqual(antes,fingerprint_questao(q))
+
     def test_sem_fonte(self):
         self.item['fontes']=[]
         with self.assertRaisesRegex(ValueError,'falta fonte'): self.aplicar()
