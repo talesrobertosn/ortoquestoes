@@ -14,6 +14,8 @@ Preservar enunciado, opções e resposta oficial. Divergências vão em `alerta`
 
 ## Retomar o trabalho
 
+Checkpoint detalhado da passagem atual: [RETOMADA-2026-10-20.md](RETOMADA-2026-10-20.md). Conferir o catálogo e o remoto, pois o checkpoint não substitui o estado de publicação.
+
 1. Ler `AGENTS.md`, `docs/padrao-editorial-comentarios.md`, este protocolo e `ANDAMENTO.md`. O piloto está em `docs/mao/rockwood-piloto-comentario.md` e no lote `000-piloto.json`.
 2. Atualizar a branch publicada sem perder trabalho alheio; criar branch de trabalho. Não publicar livros, PDFs ou provas originais.
 3. Atualizar o catálogo:
