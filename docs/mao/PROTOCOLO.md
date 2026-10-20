@@ -204,6 +204,36 @@ primeiro lote de cada sessão. Em resumo:
 - `refs` da questão: as páginas usadas, por exemplo
   `"Green's Operative Hand Surgery, 8ª ed. (tradução), capítulo 12 (Dupuytren), p. 380 a 384"`.
 
+### 7.1 Autoridade do Green e tom de professor (pedido do Tales, 20/10/2026)
+
+O motivo de mandar o Green e os resumos é **o comentário passar autoridade**. Por isso, em toda questão:
+
+1. **Ler de verdade as páginas** antes de escrever (`ler "<arquivo do capítulo>" PAG PAG_FIM`), não só o resultado
+   do `buscar`. Anotar a página impressa de cada fato usado.
+2. **Citar o Green de forma explícita, como um professor faz em aula**, no meio do texto e não só no fim:
+   "No Green (8ª ed., cap. 55, p. 2063), os autores são diretos: ..."; "É o que o capítulo de fraturas
+   de metacarpo chama de ...". Pelo menos duas citações com capítulo e página por questão (no conceito e na
+   alternativa correta), e a página também nas alternativas erradas quando o motivo do erro vem do livro.
+3. **Uma ou duas citações literais curtas por questão**, entre aspas, de no máximo duas frases. Como a tradução
+   que temos é automática, quando o trecho em português ficar estranho, citar **o original em inglês** e dar o
+   sentido em português logo depois: "No original: \"Usually a near-full correction is obtained with
+   preoperative extensor lags of up to 35 degrees\" (Green, cap. 5, p. 201), ou seja, ...". Nada de copiar
+   parágrafos inteiros.
+4. **Se o capítulo ou a página não forem achados**, citar o que houver (o resumo, outro livro local, a correção
+   da prova como "segundo a correção da banca") e dizer isso com honestidade. Nunca inventar página.
+5. **Tom humano**: explicar como um professor conversando com o residente ("repare que", "o raciocínio é",
+   "a banca gosta de trocar"), ligando as ideias com porquês. Evitar frases secas em série, listas no lugar de
+   explicação e repetição de fórmulas. Continuam valendo: sem travessão, sem emoji, sem itálico.
+6. **Selo do ano, sempre**: todo lote tem `PROVA` ("SIMÃO" ou "SBCM", exatamente assim) e `ANO` (o ano da prova
+   espelhada), e um lote nunca mistura provas ou anos. É isso que aparece no site como "Inspirada no SIMÃO 2023"
+   e alimenta o filtro por ano e, depois, o cronograma e os temas que mais caem da cirurgia da mão. Por isso
+   tema e subtemas também precisam estar certos: até três subtemas da taxonomia, todos os que a questão
+   realmente cobra.
+7. **"Por que esta questão foi criada."** diz a prova, o ano e o número: "Inspirada na questão 35 do SIMÃO 2023,
+   que cobrou ...".
+8. **Lotes já publicados sem citação literal** (SIMÃO 2023 até onde já foi feito): ao terminar o SIMÃO 2023,
+   acrescentar as citações com `scripts/simulados/enriquecer.py` (só acrescenta texto, não muda gabarito nem id).
+
 ## 8. Lotes, publicação e retomada
 
 Cada lote tem **5 questões** do mesmo capítulo. Um lote é o ciclo inteiro:
