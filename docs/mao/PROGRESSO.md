@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 48 | 2 | mao-1932 a mao-1979 | A 12, B 12, C 12, D 12 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 63 | 2 | mao-1932 a mao-1994 | A 16, B 16, C 15, D 16 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -89,8 +89,8 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 10 | Braquidactilia na síndrome de APERT: com o que se associa | classificação | cap. 36 | mao / Outras malformações congênitas | 14 | | a fazer |
 | 11 | Medida da pressão compartimental: contraindicação | fato | cap. 51 | mao / Outros temas da mão | 17 | | a fazer |
 | 12 | Túnel do carpo leve na artrite reumatoide sem tenossinovite: conduta | conduta | cap. 55, p. 2050 (Tabela 55.4) | mao / Síndrome do túnel do carpo | 08 | mao-1967 | publicada |
-| 13 | Infecção crônica: unhas azuladas e baqueteamento | sinal | cap. 3 | mao / Infecções da mão | 13 | | a fazer |
-| 14 | MACS na paralisia cerebral: nível pela descrição | classificação | cap. 32 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
+| 13 | Infecção crônica: unhas azuladas e baqueteamento | sinal | cap. 3, p. 69 | mao / Infecções da mão | 13 | mao-1991 | publicada |
+| 14 | MACS na paralisia cerebral: nível pela descrição | classificação | cap. 32, p. 1245, 1246 (Tabela 32.3) | mao / Transferências tendinosas e paralisias | 12 | mao-1989 | publicada |
 | 15 | Cisto sinovial: componente predominante do conteúdo | fato | cap. 59 | mao / Cistos sinoviais e gangliões | 18 | | a fazer |
 | 16 | Cabeça do rádio, HOTCHKISS tipo II (a correção ressalva) | classificação | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
 | 17 | Flexor na zona 1: quando cabe a reinserção ou sutura primária (coto distal) | número | cap. 6, p. 216, 219 | mao / Lesões dos tendões flexores | 03 | mao-1942 | publicada |
@@ -107,12 +107,12 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 28 | Carcinoma espinocelular: lesão precursora | fato | cap. 58 | mao / Tumores da mão | 17 | | a fazer |
 | 29 | Tríade terrível: acesso para o coronoide | técnica | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 | | a fazer |
 | 30 | FERNANDEZ (rádio distal): mecanismo e fratura correspondente | classificação | cap. 15, p. 607, 608 | mao / Fratura do rádio distal | 06 | mao-1957 | publicada |
-| 31 | Plexo braquial: sinal de lesão pós-ganglionar | raciocínio | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 12 | | a fazer |
+| 31 | Plexo braquial: sinal de lesão pós-ganglionar | raciocínio | cap. 34, p. 1308, 1309 | mao / Plexo braquial e paralisia obstétrica | 12 | mao-1985 | publicada |
 | 32 | Mão em espelho (dimelia ulnar): características | afirmativas | cap. 38 | mao / Outras malformações congênitas | 16 | | a fazer |
 | 33 | Macrodactilia: diagnóstico, associação e tratamento | afirmativas | cap. 36 | mao / Outras malformações congênitas | 14 | | a fazer |
 | 34 | Pseudogota: local mais comum do depósito de pirofosfato | fato | cap. 56, p. 2115; cap. 55, p. 2043 | mao / Mão reumatoide | 08 | mao-1968 | publicada |
 | 35 | Dupuytren: grupo de fatores de risco | lista | cap. 4, p. 148, 149 | mao / Doença de Dupuytren | 08 | mao-1970 | publicada |
-| 36 | Tenossinovite flexora (PANG): fator de mau prognóstico | fato | cap. 2 | mao / Infecções da mão | 13 | | a fazer |
+| 36 | Tenossinovite flexora (PANG): fator de mau prognóstico | fato | cap. 2, p. 21, 33 | mao / Infecções da mão | 13 | mao-1992 | publicada |
 | 37 | Osteoblastoma no punho: osso e exame de escolha (correção: não está no Green) | par | cap. 59 (conferir fonte) | mao / Tumores da mão | 18 | | a fazer |
 | 38 | Túnel cubital: sinal da excursão lateral do dedo médio | epônimo | cap. 28 (arquivo 26): sinal não descrito | mao / Neuropatia ulnar e outras compressões | 09 |  | pendente: sem fonte (Egawa só aparece pelo nome no resumo do cap. 28; nenhum livro local define o sinal) |
 | 39 | Ramo profundo do ulnar no Guyon: músculos acometidos | anatomia | cap. 28 (arquivo 26), p. 1103 | mao / Neuropatia ulnar e outras compressões | 09 | mao-1973 | publicada |
@@ -121,7 +121,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 42 | Nervo cutâneo lateral do antebraço: origem e onde emerge | anatomia | cap. 30, p. 1151; cap. 28, p. 1113 | mao / Anatomia da mão e punho | 09 | mao-1974 | publicada |
 | 43 | Paralisia obstétrica: achado e o que ele significa | par | cap. 40, p. 1561 a 1563 | mao / Plexo braquial e paralisia obstétrica | 10 | mao-1979 | publicada |
 | 44 | GARCIA-ELIAS: estágio da lesão parcial reparável com ângulo normal | classificação | cap. 13, p. 512 a 514 | mao / Instabilidade do carpo | 05 | mao-1951 | publicada |
-| 45 | Paralisia cerebral: punho em flexão e indicações | afirmativas | cap. 32 | mao / Transferências tendinosas e paralisias | 13 | | a fazer |
+| 45 | Paralisia cerebral: punho em flexão e indicações | afirmativas | cap. 32, p. 1251 | mao / Transferências tendinosas e paralisias | 13 | mao-1990 | publicada |
 | 46 | Retalho lateral do braço: artéria | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
 | 47 | Zona de atividade polarizante: molécula responsável | embriologia | cap. 35 | mao / Outras malformações congênitas | 15 | | a fazer |
 | 48 | MONTEGGIA posterior: padrão mais comum | classificação | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
@@ -129,13 +129,13 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 50 | Artrodese total do punho: indicações e complicações | afirmativas | cap. 12, p. 453, 460 a 465 | mao / Artrose do punho e artroscopia | 07 | mao-1962 | publicada |
 | 51 | Lesão nervosa: regeneração, ENMG, SUNDERLAND, TINEL | afirmativas | cap. 30, p. 1152, 1153, 1157 | mao / Lesões de nervos periféricos | 10 | mao-1977 | publicada |
 | 52 | Camptodactilia na artrogripose | afirmativas | cap. 39 | mao / Outras malformações congênitas | 17 | | a fazer |
-| 53 | Paralisia radial: vantagem do flexor superficial sobre o FUC para os dedos | transferência | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
-| 54 | Tetraplegia: quando operar o membro superior | número | cap. 33 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
+| 53 | Paralisia radial: vantagem do flexor superficial sobre o FUC para os dedos | transferência | cap. 31, p. 1191, 1228, 1229 | mao / Transferências tendinosas e paralisias | 11 | mao-1980 | publicada |
+| 54 | Tetraplegia: quando operar o membro superior | número | cap. 33, p. 1265, 1266 | mao / Transferências tendinosas e paralisias | 12 | mao-1987 | publicada |
 | 55 | Enxerto de pele na palma: espessura e mecanorreceptores | afirmativas | cap. 44 | mao / Cicatrização e enxertos de pele | 18 | | a fazer |
 | 56 | Sarcoma sinovial | afirmativas | cap. 59 | mao / Tumores da mão | 18 | | a fazer |
 | 57 | Vascularização lateral do braço (braquial profunda e colaterais) | afirmativas | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
 | 58 | Instabilidade carpal não dissociativa | afirmativas | cap. 13, p. 537 a 539 | mao / Instabilidade do carpo | 05 | mao-1952 | publicada |
-| 59 | VOCHE e MERLE: abdução do mínimo na paralisia ulnar | epônimo | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
+| 59 | VOCHE e MERLE: abdução do mínimo na paralisia ulnar | epônimo | cap. 31, p. 1223, 1224 | mao / Transferências tendinosas e paralisias | 11 | mao-1981 | publicada |
 | 60 | Desfiladeiro torácico: compressão distal associada mais comum | fato | cap. 29, p. 1132, 1133 | mao / Neuropatia ulnar e outras compressões | 10 | mao-1976 | publicada |
 | 61 | EATON e LITTLER: estágio pela descrição | classificação | cap. 11, p. 423, 424 | mao / Rizartrose e artrose da mão | 07 | mao-1964 | publicada |
 | 62 | Polidactilia central: ordem de frequência dos dedos | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
@@ -146,9 +146,9 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 67 | Ramo sensitivo do radial (WARTENBERG): anatomia e manobra | afirmativas | cap. 28 (arquivo 26), p. 1113 | mao / Neuropatia ulnar e outras compressões | 09 | mao-1975 | publicada |
 | 68 | Grande dorsal e serrátil: tipo de retalho e artérias | par | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
 | 69 | Luxação do cotovelo: mecanismo mais comum | mecanismo | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 | | a fazer |
-| 70 | Anestesia em procedimento bilateral | afirmativas | cap. 1 | mao / Anestesia em cirurgia da mão | 13 | | a fazer |
+| 70 | Anestesia em procedimento bilateral | afirmativas | cap. 1, p. 2 | mao / Anestesia em cirurgia da mão | 13 | mao-1994 | publicada |
 | 71 | Perilunar dorsal: ligamentos cuja lesão permite a luxação | anatomia | cap. 13, p. 491, 492, 499, 500 | mao / Instabilidade do carpo | 05 | mao-1953 | publicada (o original apoiava a resposta no radioescafolunar, que o Green não considera ligamento verdadeiro; reescrita pela ruptura do SL dorsal no estágio I de Mayfield) |
-| 72 | Lesão baixa do mediano: músculo preservado | anatomia | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
+| 72 | Lesão baixa do mediano: músculo preservado | anatomia | cap. 31, p. 1191, 1192 | mao / Transferências tendinosas e paralisias | 11 | mao-1982 | publicada |
 | 73 | Reimplante de dedo: sequência clássica | sequência | cap. 42 | mao / Amputações e reimplantes | 18 | | a fazer |
 | 74 | Pseudoartrose de metacarpo: tratamento | conduta | cap. 7, p. 263, 281, 282 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1936 | publicada |
 | 75 | Mão de APERT: quais dedos se fundem | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
@@ -156,10 +156,10 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 77 | Risco de KIENBÖCK (VIEGAS, ZAPICO, variância, vascularização) | afirmativas | cap. 16, p. 727 a 729 | mao / Doença de Kienböck | 04 | mao-1948 | publicada |
 | 78 | Tenotomia de FOWLER: estrutura que precisa estar íntegra | epônimo | cap. 5, p. 195 a 198 | mao / Lesões dos tendões extensores | 02 | mao-1940 | publicada (o original tinha duas respostas: o tendão terminal também precisa estar em continuidade; reescrita pergunta o que evita a botoeira) |
 | 79 | Adulto: fraturas mais associadas à síndrome compartimental do membro superior | fato | cap. 51 | mao / Outros temas da mão | 17 | | a fazer |
-| 80 | Plexo braquial: quando fazer o eletrodiagnóstico | número | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 12 | | a fazer |
+| 80 | Plexo braquial: quando fazer o eletrodiagnóstico | número | cap. 34, p. 1309, 1310 | mao / Plexo braquial e paralisia obstétrica | 12 | mao-1986 | publicada |
 | 81 | Artroscopia: o que se vê pelo portal 3-4 | anatomia | cap. 17, p. 765 | mao / Artrose do punho e artroscopia | 06 | mao-1960 | publicada (pelo 3-4 veem-se vários ligamentos; reescrita pela primeira estrutura vista, o Testut) |
 | 82 | Dissociação SL aguda (ANDERSSON): padrão mais comum | classificação | cap. 13, p. 492, 514 | mao / Instabilidade do carpo | 05 | mao-1954 | publicada |
-| 83 | BURKHALTER: transferência precoce na paralisia radial | epônimo | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
+| 83 | BURKHALTER: transferência precoce na paralisia radial | epônimo | cap. 31, p. 1228, 1229 | mao / Transferências tendinosas e paralisias | 11 | mao-1983 | publicada |
 | 84 | ARUD crônica após consolidação viciosa | afirmativas | cap. 14, p. 577, 578 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-1959 | publicada (divergência: a correção marca a discrepância do antebraço; o Green sustenta literalmente o desvio coronal, que ficou como resposta) |
 | 85 | DCSS: de qual ligamento se origina | anatomia | cap. 13, p. 491 a 493, 512 a 514 | mao / Instabilidade do carpo | 05 | mao-1955 | publicada |
 | 86 | Ângulo da gota de lágrima: o que representa e o ligamento inserido | par | cap. 15, p. 604; cap. 13, p. 491 | mao / Fratura do rádio distal | 06 | mao-1958 | publicada |
@@ -171,11 +171,11 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 92 | SDCR: como se faz o diagnóstico | fato | cap. 53 | mao / Síndrome da dor complexa regional | 17 | | a fazer |
 | 93 | Nervo sural no tornozelo: relação com o tendão calcâneo | anatomia | cap. 30, p. 1166 a 1168 | mao / Lesões de nervos periféricos | 10 | mao-1978 | publicada |
 | 94 | Banda de constrição | afirmativas | cap. 36 | mao / Outras malformações congênitas | 15 | | a fazer |
-| 95 | Paralisia radial: primeiro músculo do antebraço a voltar | fato | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
-| 96 | Tenossinovite do polegar comunicando com o mínimo: espaço | anatomia | cap. 2 | mao / Infecções da mão | 13 | | a fazer |
+| 95 | Paralisia radial: primeiro músculo do antebraço a voltar | fato | cap. 31, p. 1227, 1228 (Quadro 31.1) | mao / Transferências tendinosas e paralisias | 11 | mao-1984 | publicada |
+| 96 | Tenossinovite do polegar comunicando com o mínimo: espaço | anatomia | cap. 2, p. 33 a 35 | mao / Infecções da mão | 13 | mao-1993 | publicada |
 | 97 | Martelo: deformidade secundária | fato | cap. 5, p. 190, 196, 198 | mao / Lesões dos tendões extensores | 02 | mao-1941 | publicada |
 | 98 | Nervo mediano: folheto embrionário de origem | embriologia | cap. 35 | mao / Outras malformações congênitas | 15 | | a fazer |
-| 99 | Classificação internacional da mão tetraplégica: grupo 4 | classificação | cap. 33 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
+| 99 | Classificação internacional da mão tetraplégica: grupo 4 | classificação | cap. 33, p. 1268 (Tabela 33.3), 1286 | mao / Transferências tendinosas e paralisias | 12 | mao-1988 | publicada |
 | 100 | Mão reumatoide: VAUGHAN-JACKSON, MANNERFELT, IFD, capitato | afirmativas | cap. 55, p. 2044, 2050, 2052, 2057, 2061 | mao / Mão reumatoide | 08 | mao-1969 | publicada |
 
 Lotes: 01 (1, 2, 7, 9, 74; a 89 ficou sem fonte) · 02 (19, 21, 41, 78, 97) · 03 (17, 87, 25, 24) · 04 (18, 22, 77, 88, 90) ·
