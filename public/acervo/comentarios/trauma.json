@@ -112,15 +112,52 @@
   "conferido": false
  },
  "trauma-0012": {
+  "conceito": "**Na criança, a evolução do comportamento pode denunciar a síndrome compartimental antes dos sinais clássicos.** O capítulo destaca ansiedade, **agitação** e aumento da necessidade de analgésico, os três As. Dor progressiva e resistência ao movimento passivo dos dedos também importam, mas a criança pode ter dificuldade de localizar e expressar o sintoma.\n\nPulso pode permanecer presente, e parestesia ou paralisia não devem ser aguardadas para investigar. Lesão mediana pode ainda mascarar a dor do compartimento volar. A agitação não é diagnóstica isoladamente: sua relevância está no contexto e na piora em relação ao comportamento esperado, exigindo reavaliação do membro e das imobilizações.",
+  "correta": "**B: agitação.** Entre as alternativas, integra o conjunto precoce destacado para crianças. Deve ser relacionada à ansiedade, demanda analgésica crescente e avaliação clínica, sem atribuir todo desconforto à rotina pós-trauma.",
   "incorretas": {
-   "A": "A dor é central no adulto, mas a criança não consegue descrevê-la de forma confiável.",
-   "C": "A criança raramente descreve parestesia, e ela já é um sinal mais tardio.",
-   "D": "A ausência de pulso é um sinal tardio."
+   "A": "**Dor é importante, especialmente quando cresce ou surge ao movimento passivo.** A pergunta enfatiza o sinal pediátrico de maior destaque, em que comportamento e consumo analgésico podem ser mais informativos. Escolher B não significa ignorar dor.",
+   "C": "**Parestesia faz parte dos sinais clássicos, mas pode ser difícil de avaliar e aparecer tarde.** Esperar alteração sensitiva para suspeitar perde a oportunidade de reconhecer a evolução inicial por comportamento e dor.",
+   "D": "**Ausência de pulso não é requisito e não é o melhor sinal precoce.** A pressão compartimental pode prejudicar a musculatura com pulso radial preservado. Ela também pode coexistir com lesão arterial da fratura, problema relacionado, porém distinto."
   },
-  "conceito": "Na **síndrome compartimental da criança**, o exame clássico do adulto falha: a criança **não descreve** a dor desproporcional, não colabora com o estiramento passivo e às vezes não fala.\n\n**Os três \"A\"**: os sinais mais confiáveis na criança são\n\n**ansiedade**;\n\n**agitação**;\n\n**aumento da necessidade de analgésicos**.\n\nUma criança que fica cada vez mais **agitada** e pede mais remédio para dor precisa ser reavaliada **na hora**.\n\n**As causas típicas**: fratura **supracondiliana** do úmero, fraturas do **antebraço** e da **tíbia**, gesso apertado e infiltração de soro.\n\n**A conduta**: abrir o gesso e o algodão **até a pele**; se não melhorar, medir a pressão do compartimento ou indicar a **fasciotomia**.\n\n**Os sinais tardios**: parestesia, paralisia e **ausência de pulso**. Esperar por eles significa perder o músculo.\n\n**Na prova**: na criança, o sinal mais relevante da síndrome compartimental é a **agitação**, parte dos três \"A\".",
-  "correta": "A criança não relata a dor de forma confiável; a agitação, junto com ansiedade e mais analgésico, é o alerta precoce.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Síndrome compartimental."
+  ],
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Síndrome compartimental"
+     ],
+     "blocos": [
+      "sindrome-compartimental-9b6de2bd",
+      "sindrome-compartimental-b1ba06cc",
+      "sindrome-compartimental-dae17124",
+      "sindrome-compartimental-4a487435",
+      "sindrome-compartimental-6878dc8a",
+      "sindrome-compartimental-9b2517ff",
+      "sindrome-compartimental-11861475",
+      "sindrome-compartimental-dd5b1e68",
+      "sindrome-compartimental-52880eb5",
+      "sindrome-compartimental-744d234f",
+      "sindrome-compartimental-156d424b",
+      "sindrome-compartimental-c2479823"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "ef4cb581ced80e15a4fe95146db8711e8831dd210e5806dbb7a7b33534d35799"
+    }
+   ],
+   "questaoSha256": "9c4d5e649dbf01c33820ee370989eee45d7d8f1671301face66e291cd7afb0bf",
+   "comentarioSha256": "2afd3add29460d763f70283d6b4072d7d0060fe717cd80ef7e40219f41a69587"
+  }
  },
  "trauma-0013": {
   "incorretas": {
@@ -12693,82 +12730,467 @@
   "conferido": false
  },
  "trauma-1217": {
-  "conceito": "**Direção do desvio e lesões associadas na fratura supracondiliana do úmero.** Na fratura em extensão, a mais comum (cerca de 95%), o fragmento distal vai para trás e o fragmento **proximal** se desloca para a frente, onde pode lesar as estruturas anteriores do cotovelo. A direção do desvio no plano coronal indica quem está em risco.\n\n| Desvio do fragmento distal | Fragmento proximal vai para | Estruturas em risco |\n|---|---|---|\n| **Posterolateral** | Anteromedial | **Artéria braquial** e **nervo mediano** (interósseo anterior) |\n| Posteromedial | Anterolateral | **Nervo radial** |\n| Flexão (distal anterior) | Posterior | **Nervo ulnar** |\n\n**Sinais de alerta para lesão vascular.**\n- **Equimose ou hematoma anterior** no cotovelo e o sinal da **ruga (pucker sign)**: indica que a ponta do fragmento proximal perfurou o músculo braquial e chegou ao subcutâneo, com alto risco de lesão da artéria e do nervo.\n- Desvio **posterolateral**.\n- Pulso radial ausente.\n- Edema intenso.\n\n**Mão sem pulso.**\n- **Rosada (bem perfundida)**: redução fechada e fixação urgentes; geralmente o pulso volta. Se não volta, observação cuidadosa ou exploração conforme a perfusão.\n- **Branca (mal perfundida)**: emergência; redução imediata e, se a perfusão não retornar, exploração da artéria braquial.\n\n> Desvio posterolateral e hematoma anterior: risco para artéria braquial e nervo mediano.",
-  "correta": "**A: Certo.** O hematoma na região anterior do cotovelo indica que o fragmento proximal atravessou o músculo braquial e chegou próximo à pele, e o desvio posterolateral leva esse fragmento em direção anteromedial, onde passam a artéria braquial e o nervo mediano. Os dois achados, junto com o pulso radial ausente, são sinais de alerta para lesão vascular.",
+  "conceito": "**No desvio posterolateral, a espícula proximal ameaça o feixe medial.** O fragmento distal vai lateralmente e o proximal projeta-se para anterior e medial, onde passam artéria braquial e mediano. Hematoma anterior indica lesão local de partes moles e aumenta a preocupação, especialmente com grande edema e pulso ausente como no caso.\n\nPulso ausente exige avaliar perfusão, não apenas registrar um número. A redução e a fixação urgentes podem devolver fluxo; persistência de má perfusão exige exploração. A ausência de déficit nervoso não protege a artéria, pois vaso e nervo podem ter graus diferentes de comprometimento. O item pede reconhecer sinais de alerta, sem afirmar que todo hematoma prove transecção arterial.",
+  "correta": "**A: certo.** Hematoma anterior e direção posterolateral são compatíveis com risco da braquial. No paciente descrito, a ausência de pulso e o edema importante reforçam a necessidade de tratamento e reavaliação vascular sem atraso.",
   "incorretas": {
-   "B": "**Marcar errado seria trocar as direções: o desvio posteromedial é o que ameaça o nervo radial.** No desvio posterolateral, o fragmento proximal vai para o lado medial, onde estão a artéria braquial e o nervo mediano, e é esse padrão que se associa à lesão vascular."
+   "B": "**Negar o alerta ignora a anatomia do desvio.** A projeção medial do proximal pode tensionar a braquial mesmo sem déficit mediano. Reconhecer risco não significa presumir que a artéria já esteja rompida; significa investigar perfusão e restaurar alinhamento prontamente."
   },
+  "conferido": false,
   "referencias": [
-   "Campbell CC, Waters PM, Emans JB, Kasser JR, Millis MB. Neurovascular injury and displacement in type III supracondylar humerus fractures. J Pediatr Orthop. 1995;15(1):47-52.",
-   "Howard A, Mulpuri K, Abel MF, et al. The treatment of pediatric supracondylar humerus fractures. J Am Acad Orthop Surg. 2012;20(5):320-327."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco; Exame clínico e imagem; A mão sem pulso."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Mecanismo, direção do desvio e estruturas em risco",
+      "Exame clínico e imagem",
+      "A mão sem pulso"
+     ],
+     "blocos": [
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d",
+      "exame-clinico-e-imagem-8d983767",
+      "exame-clinico-e-imagem-ec5c2a40",
+      "exame-clinico-e-imagem-cfaf64ed",
+      "exame-clinico-e-imagem-c6cc4496",
+      "exame-clinico-e-imagem-eb8b368f",
+      "exame-clinico-e-imagem-dd609bf2",
+      "exame-clinico-e-imagem-fb5ba67e",
+      "exame-clinico-e-imagem-f2129dc6",
+      "exame-clinico-e-imagem-874e203a",
+      "exame-clinico-e-imagem-efc89a96",
+      "exame-clinico-e-imagem-8cad811b",
+      "exame-clinico-e-imagem-95ca44a3",
+      "exame-clinico-e-imagem-47355d98",
+      "exame-clinico-e-imagem-3e2479ab",
+      "a-mao-sem-pulso-046891d4",
+      "a-mao-sem-pulso-49b55356",
+      "a-mao-sem-pulso-5556fd04",
+      "a-mao-sem-pulso-c734e9ee",
+      "a-mao-sem-pulso-12045389",
+      "a-mao-sem-pulso-5801482c",
+      "a-mao-sem-pulso-561dffc7",
+      "a-mao-sem-pulso-f4f3b89d",
+      "a-mao-sem-pulso-b65d5756",
+      "a-mao-sem-pulso-6b94a0c6",
+      "a-mao-sem-pulso-24574aaa",
+      "a-mao-sem-pulso-9ba2822a",
+      "a-mao-sem-pulso-9c6d88bd",
+      "a-mao-sem-pulso-a6c4af84",
+      "a-mao-sem-pulso-be54c437",
+      "a-mao-sem-pulso-3cbb0905",
+      "a-mao-sem-pulso-47fe0b6b",
+      "a-mao-sem-pulso-4ec07ae0",
+      "a-mao-sem-pulso-e9a4fa79"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "b4b53519fc89dd05677d870e89260865ede80e82b74e7815bc3e4ea61700ebc1"
+    }
+   ],
+   "questaoSha256": "168cc7cd57bcd2f64882b9841f727d3be2bd34cc985d6cf0c98579358543069a",
+   "comentarioSha256": "c6623669c094509c31bb7d475a4d74c04e4752fba61ccd14716476c2d5c01da5"
+  }
  },
  "trauma-1218": {
-  "conceito": "**Síndrome compartimental na criança.** É o aumento da pressão dentro de um compartimento fechado por fáscia, que compromete a perfusão dos músculos e nervos. No cotovelo da criança, o antebraço volar é o compartimento mais atingido, e a sequela clássica é a **contratura isquêmica de Volkmann**.\n\n**Sinais clínicos.**\n- **Dor desproporcional** à lesão e **dor à extensão passiva dos dedos** (estiramento dos flexores): os sinais mais precoces e confiáveis.\n- Compartimento tenso e endurecido.\n- Na criança, que nem sempre descreve a dor, os **3 As** de Bae: **ansiedade**, **agitação** e **aumento da necessidade de analgésico**.\n- Parestesia, paresia, palidez e **ausência de pulso** são **sinais tardios**. O pulso costuma estar **presente** na síndrome compartimental, porque a pressão compartimental geralmente fica abaixo da pressão arterial sistólica.\n\n| Sinal | Fase |\n|---|---|\n| Dor desproporcional, dor à extensão passiva | Precoce |\n| Ansiedade, agitação, mais analgésico (criança) | Precoce |\n| Parestesia e paresia | Intermediária a tardia |\n| Ausência de pulso | Tardia (ou indica lesão arterial) |\n\n**Diagnóstico.** Clínico; a medida da pressão intracompartimental ajuda em pacientes que não colaboram (diferença entre pressão diastólica e compartimental menor que 30 mmHg indica fasciotomia).\n\n**No caso.** O pulso radial ausente aponta principalmente para **lesão ou compressão da artéria braquial** pela fratura, não para síndrome compartimental. Mas a isquemia e sua reperfusão aumentam o risco de síndrome compartimental depois.\n\n> Pulso ausente não é o sinal principal da síndrome compartimental; dor desproporcional e dor à extensão passiva são.",
-  "correta": "**B: Errado.** A ausência de pulso é um sinal **tardio** e inconstante da síndrome compartimental; na maioria dos casos, o pulso está presente. Os principais sinais são a dor desproporcional e a dor à extensão passiva dos dedos, além, na criança, de ansiedade, agitação e aumento da necessidade de analgésico. No caso, o pulso ausente sugere sobretudo lesão ou compressão da artéria braquial pela fratura.",
+  "conceito": "**Pulso radial não mede diretamente a perfusão muscular dentro do compartimento.** A síndrome compartimental pode ocorrer com pulso palpável ou detectável ao Doppler. Por outro lado, a ausência de pulso na supracondiliana pode decorrer de lesão, espasmo ou aprisionamento arterial, sem ser o sinal principal de pressão compartimental elevada.\n\nNa criança, os sinais precoces destacados são ansiedade, agitação e necessidade crescente de analgésico, além de dor progressiva e resistência à mobilização passiva dos dedos. A lesão do mediano pode diminuir a expressão dolorosa. No caso, o pulso ausente exige avaliação vascular urgente, mas não substitui a vigilância dos compartimentos nem permite diagnosticar ou excluir a síndrome sozinho.",
+  "correta": "**B: errado.** Ausência de pulso é um achado vascular relevante, porém não o principal sinal precoce de síndrome compartimental na criança. Os dois problemas podem coexistir e precisam ser avaliados separadamente.",
   "incorretas": {
-   "A": "**Marcar certo é usar o raciocínio dos \"5 Ps\" (dor, palidez, parestesia, paralisia e ausência de pulso) como se todos fossem precoces.** Esperar a perda do pulso para diagnosticar a síndrome compartimental significa perder a janela de tratamento e arriscar a contratura de Volkmann."
+   "A": "**Considerar o item certo criaria uma falsa regra de segurança.** Se só a perda do pulso fosse valorizada, uma criança com pulso preservado e pressão compartimental crescente poderia ter diagnóstico atrasado. O comportamento, a dor e o consumo de analgésico têm maior utilidade precoce na descrição do capítulo."
   },
+  "conferido": false,
   "referencias": [
-   "Bae DS, Kadiyala RK, Waters PM. Acute compartment syndrome in children: contemporary diagnosis, treatment, and outcome. J Pediatr Orthop. 2001;21(5):680-688.",
-   "Mubarak SJ, Carroll NC. Volkmann's contracture in children: aetiology and prevention. J Bone Joint Surg Br. 1979;61-B(3):285-293."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções A mão sem pulso; Síndrome compartimental."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "A mão sem pulso",
+      "Síndrome compartimental"
+     ],
+     "blocos": [
+      "a-mao-sem-pulso-046891d4",
+      "a-mao-sem-pulso-49b55356",
+      "a-mao-sem-pulso-5556fd04",
+      "a-mao-sem-pulso-c734e9ee",
+      "a-mao-sem-pulso-12045389",
+      "a-mao-sem-pulso-5801482c",
+      "a-mao-sem-pulso-561dffc7",
+      "a-mao-sem-pulso-f4f3b89d",
+      "a-mao-sem-pulso-b65d5756",
+      "a-mao-sem-pulso-6b94a0c6",
+      "a-mao-sem-pulso-24574aaa",
+      "a-mao-sem-pulso-9ba2822a",
+      "a-mao-sem-pulso-9c6d88bd",
+      "a-mao-sem-pulso-a6c4af84",
+      "a-mao-sem-pulso-be54c437",
+      "a-mao-sem-pulso-3cbb0905",
+      "a-mao-sem-pulso-47fe0b6b",
+      "a-mao-sem-pulso-4ec07ae0",
+      "a-mao-sem-pulso-e9a4fa79",
+      "sindrome-compartimental-9b6de2bd",
+      "sindrome-compartimental-b1ba06cc",
+      "sindrome-compartimental-dae17124",
+      "sindrome-compartimental-4a487435",
+      "sindrome-compartimental-6878dc8a",
+      "sindrome-compartimental-9b2517ff",
+      "sindrome-compartimental-11861475",
+      "sindrome-compartimental-dd5b1e68",
+      "sindrome-compartimental-52880eb5",
+      "sindrome-compartimental-744d234f",
+      "sindrome-compartimental-156d424b",
+      "sindrome-compartimental-c2479823"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "3161e021ef3de2eb4d650c8e046e57aa0d13141739bc80e1ffb75e9886edfac0"
+    }
+   ],
+   "questaoSha256": "e852835f3da642b294ba4a7464e5c17ad9ad30be2c4d66f10ef129ecc43eaf47",
+   "comentarioSha256": "bacb35ea246413d4580b7d433bc57992166920c9ac036c36b01a773cdb331a9b"
+  }
  },
  "trauma-1219": {
-  "conceito": "**Momento da cirurgia na fratura supracondiliana com desvio.** A fratura tipo III de Gartland (desvio completo) é tratada com redução fechada e fixação percutânea com fios de Kirschner. A pergunta é: precisa ser de madrugada?\n\n**Quando operar com urgência.**\n- **Membro mal perfundido** (mão branca, fria, sem enchimento capilar).\n- **Síndrome compartimental** instalada ou iminente.\n- **Fratura exposta**.\n- **Pele ameaçada** (sinal da ruga, pucker sign, com tenda de pele).\n- Lesão nervosa que surge ou piora após a manipulação (discutível).\n- Fratura flutuante do cotovelo (supracondiliana com fratura do antebraço), pelo maior risco compartimental.\n\n**Quando é possível adiar.** Se o pulso radial está presente, a perfusão capilar está normal e não há sinais de síndrome compartimental, de exposição ou de pele ameaçada, a fratura pode ser **imobilizada em tala com o cotovelo em flexão leve (cerca de 20 a 40 graus)**, com o membro elevado, e a cirurgia **programada** para as horas seguintes, no período diurno, com equipe e estrutura adequadas. Estudos mostram que esse adiamento não aumenta as complicações, desde que haja vigilância neurovascular.\n\n**Cuidados durante a espera.** Reavaliações frequentes do pulso, da perfusão, da dor e da necessidade de analgésicos. Não fletir demais o cotovelo, porque a flexão com edema aumenta o risco vascular e compartimental.\n\n> Supracondiliana sem comprometimento neurovascular nem pele ameaçada: imobilizar e operar de forma programada.",
-  "correta": "**A: Certo.** Fraturas supracondilianas desviadas com pulso radial presente e perfusão capilar normal, sem síndrome compartimental, exposição ou pele ameaçada, podem ser imobilizadas provisoriamente em tala, com leve flexão e o membro elevado, e operadas de forma programada, com vigilância neurovascular. O atraso controlado não aumenta as complicações nos estudos.",
+  "conceito": "**A programação da cirurgia depende da perfusão e dos sinais de risco, não apenas de Gartland.** Uma fratura desviada com pulso presente, mão bem perfundida e sem alterações preocupantes de partes moles pode ser imobilizada e operada em programação breve. O capítulo cita cirurgiões que aceitam tratar na manhã seguinte pacientes selecionados que chegam à noite.\n\nIsso não se aplica automaticamente ao caso-base, que descreve pulso ausente e edema muito importante. Também não autoriza adiar quando há compartimento tenso, ruga, equimose anterior relevante, fratura desviada do antebraço ou má perfusão. O item formula uma situação hipotética de pulso e perfusão preservados; sua aceitação exige manter essas condições e a ausência de outros sinais de risco.",
+  "correta": "**A: certo, com seleção clínica.** A presença de pulso e boa perfusão permite programação em determinados pacientes estáveis. A conclusão não transforma o paciente do enunciado, sem pulso, num caso que possa aguardar da mesma maneira.",
   "incorretas": {
-   "B": "**Marcar errado seria tratar toda fratura tipo III como emergência absoluta.** A urgência existe quando a perfusão está comprometida, há sinais de síndrome compartimental, exposição ou pele em risco. Fora dessas situações, a cirurgia programada é segura e aceita pelas diretrizes."
+   "B": "**Seria excessivo exigir cirurgia emergencial para toda fratura desviada, independentemente do exame.** O capítulo admite espera breve em pacientes escolhidos. O erro inverso também deve ser evitado: pulso presente isoladamente não neutraliza edema grave ou outros sinais que pedem tratamento sem atraso."
   },
+  "conferido": false,
   "referencias": [
-   "Howard A, Mulpuri K, Abel MF, et al. The treatment of pediatric supracondylar humerus fractures. J Am Acad Orthop Surg. 2012;20(5):320-327.",
-   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Fraturas do cotovelo."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Tratamento: tipo, momento e o fim do gesso em flexão; A mão sem pulso."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Tratamento: tipo, momento e o fim do gesso em flexão",
+      "A mão sem pulso"
+     ],
+     "blocos": [
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-6a799e3c",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-7b19d268",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-d567e5d4",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-980760b0",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1315b451",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3fb8e9f2",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-32dc2f79",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-22f5033a",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1320d411",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-e72363b7",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-abb4bfdb",
+      "a-mao-sem-pulso-046891d4",
+      "a-mao-sem-pulso-49b55356",
+      "a-mao-sem-pulso-5556fd04",
+      "a-mao-sem-pulso-c734e9ee",
+      "a-mao-sem-pulso-12045389",
+      "a-mao-sem-pulso-5801482c",
+      "a-mao-sem-pulso-561dffc7",
+      "a-mao-sem-pulso-f4f3b89d",
+      "a-mao-sem-pulso-b65d5756",
+      "a-mao-sem-pulso-6b94a0c6",
+      "a-mao-sem-pulso-24574aaa",
+      "a-mao-sem-pulso-9ba2822a",
+      "a-mao-sem-pulso-9c6d88bd",
+      "a-mao-sem-pulso-a6c4af84",
+      "a-mao-sem-pulso-be54c437",
+      "a-mao-sem-pulso-3cbb0905",
+      "a-mao-sem-pulso-47fe0b6b",
+      "a-mao-sem-pulso-4ec07ae0",
+      "a-mao-sem-pulso-e9a4fa79"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "ed3e74cb689c61513ef927d375497b520e6967b2f5adb06e8e42637da0a0657b"
+    }
+   ],
+   "questaoSha256": "5b30734541f2cb75ab3c441a9a8e11143fdea0ea66acafbf28187a47428473b6",
+   "comentarioSha256": "f2af41ffb21d24a8c087bdf579fe8e23da3f29fe12bcf327a685198ed63b230c"
+  }
  },
  "trauma-1220": {
-  "conceito": "**Posição de imobilização após fixação da fratura supracondiliana.** Depois da redução e fixação com fios de Kirschner, a estabilidade é dada pelos fios, e o gesso ou a tala servem apenas para conforto e proteção.\n\n**Posição recomendada.** Flexão do cotovelo de cerca de **60 a 90 graus** (geralmente menos de 90 graus), com o antebraço em posição neutra ou leve pronação. Evitar a flexão acentuada.\n\n**Por que não fletir a 120 graus.**\n- Com o cotovelo inchado, a flexão acentuada comprime a artéria braquial na prega do cotovelo e aumenta a pressão no compartimento volar do antebraço.\n- O risco de **síndrome compartimental** e de **contratura isquêmica de Volkmann** aumenta muito.\n- O pulso radial pode desaparecer com flexão acima de 90 graus em cotovelos edemaciados.\n\n**Contexto histórico.** A imobilização em flexão máxima (acima de 120 graus, técnica de Blount) era usada no **tratamento fechado sem fios**, porque a flexão tensionava o tríceps e o periósteo posterior e mantinha a redução. Com a fixação percutânea, essa posição perigosa deixou de ser necessária.\n\n| Situação | Flexão do cotovelo |\n|---|---|\n| Após fixação com fios | Cerca de 60 a 90 graus |\n| Tratamento fechado sem fios (histórico) | Flexão acentuada, com alto risco vascular |\n| Imobilização provisória pré-operatória | Cerca de 20 a 40 graus |\n\n> Após fixar com fios, imobilizar o cotovelo abaixo de 90 graus, nunca em 120 graus.",
-  "correta": "**B: Errado.** Após a estabilização com fios de Kirschner, a fratura já está mecanicamente contida, e a imobilização deve ser feita com o cotovelo em cerca de 60 a 90 graus de flexão, sem ultrapassar 90 graus. A flexão de 120 graus, com o cotovelo edemaciado, comprime a artéria braquial e aumenta o risco de síndrome compartimental e de contratura de Volkmann.",
+  "conceito": "**A fixação com fios permite abandonar a hiperflexão como forma de segurar a redução.** Após estabilizar a supracondiliana, o gesso é preferido em cerca de 45 a 70 graus, com menos flexão se houver muito edema. Os fios, e não o grau de flexão do gesso, devem fornecer estabilidade.\n\nManter 120 graus pode piorar o fluxo e elevar pressão do compartimento volar. O capítulo indica fixar toda fratura que só mantém redução acima de 90 graus, precisamente para evitar essa dependência. A hiperflexão usada temporariamente em etapas da redução não deve ser transferida para a imobilização definitiva do cotovelo inchado.",
+  "correta": "**B: errado.** Cento e vinte graus não é a posição ideal depois dos fios. A preferência é menor flexão, em geral 45 a 70 graus, respeitando edema e perfusão.",
   "incorretas": {
-   "A": "**Marcar certo é aplicar ao caso fixado com fios o raciocínio do tratamento fechado antigo, sem fios.** A flexão máxima servia para manter a redução quando não havia fixação interna. Com os fios, ela não traz benefício e só aumenta o risco vascular."
+   "A": "**Aceitar o item confundiria posição de uma manobra com cuidado pós-operatório.** O implante já estabiliza o osso; insistir na hiperflexão acrescenta risco às partes moles. A alternativa reproduz o princípio antigo de manter redução sem fixação e não o objetivo após os fios."
   },
+  "conferido": false,
   "referencias": [
-   "Howard A, Mulpuri K, Abel MF, et al. The treatment of pediatric supracondylar humerus fractures. J Am Acad Orthop Surg. 2012;20(5):320-327.",
-   "Mubarak SJ, Carroll NC. Volkmann's contracture in children: aetiology and prevention. J Bone Joint Surg Br. 1979;61-B(3):285-293."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Tratamento: tipo, momento e o fim do gesso em flexão; Fixação: fios laterais, fio medial e cuidados depois; Síndrome compartimental."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Tratamento: tipo, momento e o fim do gesso em flexão",
+      "Fixação: fios laterais, fio medial e cuidados depois",
+      "Síndrome compartimental"
+     ],
+     "blocos": [
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-6a799e3c",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-7b19d268",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-d567e5d4",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-980760b0",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1315b451",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3fb8e9f2",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-32dc2f79",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-22f5033a",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1320d411",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-e72363b7",
+      "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-abb4bfdb",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19",
+      "sindrome-compartimental-9b6de2bd",
+      "sindrome-compartimental-b1ba06cc",
+      "sindrome-compartimental-dae17124",
+      "sindrome-compartimental-4a487435",
+      "sindrome-compartimental-6878dc8a",
+      "sindrome-compartimental-9b2517ff",
+      "sindrome-compartimental-11861475",
+      "sindrome-compartimental-dd5b1e68",
+      "sindrome-compartimental-52880eb5",
+      "sindrome-compartimental-744d234f",
+      "sindrome-compartimental-156d424b",
+      "sindrome-compartimental-c2479823"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "db3c03e7a4238fe936cbfae45a30a115bb4db12c730c157e276c78205f16363d"
+    }
+   ],
+   "questaoSha256": "bfa3ff576d4a2b56b361a2ca355683a73cdad5255fa029c8d64345b96c3ab832",
+   "comentarioSha256": "ecbe7ff71baf29349bc24a787ecf8280283f82165972ba9b72b04eb4527a5152"
+  }
  },
  "trauma-1221": {
-  "conceito": "**Lesões nervosas na fratura supracondiliana do úmero.** Ocorrem em cerca de 10% a 20% das fraturas desviadas. A grande maioria é **neuropraxia** (bloqueio da condução sem ruptura do nervo), por estiramento ou contusão pelo fragmento.\n\n**Nervos mais lesados.**\n- **Nervo interósseo anterior** (ramo do mediano): o mais frequente nas fraturas em extensão com desvio posterolateral. Perda da flexão da interfalângica do polegar e da distal do indicador, sem alteração sensitiva (teste do sinal de OK).\n- **Nervo radial**: desvio posteromedial.\n- **Nervo ulnar**: fraturas em flexão e, sobretudo, **lesão iatrogênica** por fio medial.\n\n**Conduta.**\n- Lesão nervosa presente **antes** da redução, com fratura fechada: **observação**. A recuperação espontânea ocorre na maioria dos casos em 2 a 6 meses.\n- Se não houver sinais de recuperação em cerca de 3 a 6 meses, eletroneuromiografia e eventual exploração.\n- Exploração imediata em situações específicas: fratura exposta, necessidade de exploração vascular (aproveita-se para ver o nervo), suspeita de nervo encarcerado no foco quando a redução não é obtida.\n\n**Lesão iatrogênica do ulnar.** Pode ocorrer com o fio medial, sobretudo com o cotovelo em flexão (o nervo se anterioriza). Se surgir após a fixação, remove-se o fio medial e reposiciona-se a fixação.\n\n> Lesão nervosa na supracondiliana: quase sempre neuropraxia; observar, sem exploração imediata.",
-  "correta": "**A: Certo.** As lesões nervosas associadas às fraturas supracondilianas são, em sua grande maioria, neuropraxias, com recuperação espontânea em alguns meses. Por isso, não há indicação de exploração cirúrgica imediata em fratura fechada com lesão nervosa presente desde o trauma. A exploração fica para casos sem recuperação após 3 a 6 meses ou situações específicas, como fratura exposta e exploração vascular.",
+  "conceito": "**A maioria das lesões nervosas associadas à supracondiliana fechada é neuropraxia e pode ser observada.** O capítulo relata recuperação ao longo de meses e reserva investigação ou exploração para falta de evolução esperada, especialmente após 3 a 6 meses. Não há indicação de abrir um nervo rotineiramente só porque existe déficit desde o trauma.\n\nHá exceções: fratura irredutível com déficit pode ter nervo preso; ausência de pulso com lesão mediana sugere comprometimento do feixe e recomenda exploração precoce. Uma lesão nova após fio também exige avaliação própria. O item é aceito como regra geral da neuropraxia, sem virar uma proibição absoluta de explorar. No caso-base, não há déficit nervoso descrito; o pulso ausente continua exigindo tratamento vascular adequado independentemente da regra neurológica.",
+  "correta": "**A: certo como princípio geral.** Não se indica exploração imediata rotineira de toda lesão nervosa, pois a recuperação espontânea é frequente. A decisão deve mudar se houver sinais de aprisionamento, comprometimento vascular associado ou evolução inadequada.",
   "incorretas": {
-   "B": "**Marcar errado seria tratar a lesão nervosa como urgência cirúrgica.** A exploração precoce não melhora os resultados na neuropraxia e aumenta os riscos. A exceção importante é a lesão do ulnar que aparece após a colocação do fio medial, que exige retirada do fio."
+   "B": "**Marcar errado implicaria exigir exploração imediata pela simples presença de déficit, o que o capítulo não recomenda.** As exceções não anulam a regra de observação das neuropraxias. O correto é reconhecer ambas, evitando tanto operar todo déficit quanto ignorar um nervo preso."
   },
+  "conferido": false,
   "referencias": [
-   "Babal JC, Mehlman CT, Klein G. Nerve injuries associated with pediatric supracondylar humeral fractures: a meta-analysis. J Pediatr Orthop. 2010;30(3):253-263.",
-   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Fraturas do cotovelo."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Lesões nervosas: frequência, exame e conduta; A mão sem pulso."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "alerta": "Gabarito A preservado como regra geral, sem caráter absoluto. Fratura irredutível com déficit e ausência de pulso associada à lesão mediana são exceções que podem exigir exploração precoce. A conduta vascular do caso-base deve ser avaliada separadamente.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Lesões nervosas: frequência, exame e conduta",
+      "A mão sem pulso"
+     ],
+     "blocos": [
+      "lesoes-nervosas-frequencia-exame-e-conduta-0aa48273",
+      "lesoes-nervosas-frequencia-exame-e-conduta-c85b81bf",
+      "lesoes-nervosas-frequencia-exame-e-conduta-0728a0e6",
+      "lesoes-nervosas-frequencia-exame-e-conduta-b0eb7804",
+      "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31",
+      "lesoes-nervosas-frequencia-exame-e-conduta-de5f0f94",
+      "lesoes-nervosas-frequencia-exame-e-conduta-84cd80ba",
+      "lesoes-nervosas-frequencia-exame-e-conduta-f30679b8",
+      "lesoes-nervosas-frequencia-exame-e-conduta-8e857a72",
+      "lesoes-nervosas-frequencia-exame-e-conduta-a911dd5c",
+      "lesoes-nervosas-frequencia-exame-e-conduta-26fca161",
+      "lesoes-nervosas-frequencia-exame-e-conduta-c053f0be",
+      "lesoes-nervosas-frequencia-exame-e-conduta-7fcb874d",
+      "a-mao-sem-pulso-046891d4",
+      "a-mao-sem-pulso-49b55356",
+      "a-mao-sem-pulso-5556fd04",
+      "a-mao-sem-pulso-c734e9ee",
+      "a-mao-sem-pulso-12045389",
+      "a-mao-sem-pulso-5801482c",
+      "a-mao-sem-pulso-561dffc7",
+      "a-mao-sem-pulso-f4f3b89d",
+      "a-mao-sem-pulso-b65d5756",
+      "a-mao-sem-pulso-6b94a0c6",
+      "a-mao-sem-pulso-24574aaa",
+      "a-mao-sem-pulso-9ba2822a",
+      "a-mao-sem-pulso-9c6d88bd",
+      "a-mao-sem-pulso-a6c4af84",
+      "a-mao-sem-pulso-be54c437",
+      "a-mao-sem-pulso-3cbb0905",
+      "a-mao-sem-pulso-47fe0b6b",
+      "a-mao-sem-pulso-4ec07ae0",
+      "a-mao-sem-pulso-e9a4fa79"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "b22e5313b807f3c2869dd04ae5d07aa13e542634e3efadcbb53f7d54c32fa768"
+    }
+   ],
+   "questaoSha256": "a0a03516576e77c2a5267b66dba501ad155bd106ddcb24133ec6d4e35bb37203",
+   "comentarioSha256": "717d1e2dce096e250569beac51c356a2b02c99dd9adc91f495d378c30d2060b1"
+  }
  },
  "trauma-1222": {
-  "conceito": "**Desvio coronal da fratura supracondiliana e o nervo em risco.** Na fratura em extensão, o fragmento distal vai para trás. No plano coronal, ele pode ir para medial ou lateral, e o fragmento **proximal**, que fica na frente, vai para o lado oposto, lesando o que estiver em seu caminho.\n\n| Desvio do fragmento distal | Fragmento proximal | Nervo em risco |\n|---|---|---|\n| **Posteromedial** | Anterolateral | **Radial** |\n| Posterolateral | Anteromedial | Mediano (interósseo anterior) e artéria braquial |\n| Flexão (anterior) | Posterior | Ulnar |\n\n**Como memorizar.** O fragmento proximal \"espeta\" o lado oposto ao desvio do distal. Desvio posteromedial: a ponta proximal vai para lateral, onde passa o nervo radial (entre o braquial e o braquiorradial). Desvio posterolateral: a ponta vai para medial, onde estão o mediano e a artéria braquial.\n\n**O nervo ulnar.** É o menos lesado pela fratura em extensão, porque fica atrás do epicôndilo medial, longe do fragmento proximal. Sua lesão ocorre principalmente:\n- Nas **fraturas em flexão** (raras, cerca de 2% a 5%).\n- Por **lesão iatrogênica** com fio medial.\n\n> Desvio posteromedial: nervo radial. Desvio posterolateral: mediano e artéria braquial.",
-  "correta": "**B: Errado.** Nas fraturas em extensão com desvio **posteromedial**, o fragmento proximal se desloca para anterolateral e lesa, em geral, o **nervo radial**. O nervo ulnar é lesado sobretudo nas fraturas em flexão e por fios mediais (lesão iatrogênica). (O texto \"Área livre\" no fim do item é resquício da diagramação.)",
+  "conceito": "**O padrão posteromedial em extensão ameaça o radial.** O distal vai para medial e a ponta proximal se projeta lateralmente, oposta ao deslocamento. É essa espícula, não o lado para onde o distal foi, que orienta o risco nervoso característico. No posterolateral, ficam em risco o mediano e a braquial.\n\nO ulnar é o nervo mais associado à fratura em flexão e também corre risco iatrogênico na passagem de fio medial, especialmente com hiperflexão. São contextos diferentes. A investigação deve testar todos os nervos, mas conhecer a associação típica impede aceitar uma troca anatômica como regra.",
+  "correta": "**B: errado.** A associação habitual do posteromedial em extensão é com radial, não ulnar. A frase troca os nervos de padrões distintos.",
   "incorretas": {
-   "A": "**Marcar certo é associar a palavra \"medial\" ao nervo ulnar, que fica no lado medial do cotovelo.** O raciocínio correto é pensar no fragmento proximal: no desvio posteromedial do fragmento distal, o proximal vai para o lado lateral, onde passa o radial."
+   "A": "**Afirmar o item ignoraria a projeção lateral do segmento proximal.** O ulnar deve ser lembrado na flexão e na fixação medial, enquanto o radial é a estrutura característica ameaçada pela espícula lateral do padrão descrito. O exame completo continua obrigatório mesmo quando o risco típico é conhecido."
   },
+  "conferido": false,
   "referencias": [
-   "Campbell CC, Waters PM, Emans JB, Kasser JR, Millis MB. Neurovascular injury and displacement in type III supracondylar humerus fractures. J Pediatr Orthop. 1995;15(1):47-52.",
-   "Babal JC, Mehlman CT, Klein G. Nerve injuries associated with pediatric supracondylar humeral fractures: a meta-analysis. J Pediatr Orthop. 2010;30(3):253-263."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco; Fixação: fios laterais, fio medial e cuidados depois; Fratura supracondiliana em flexão."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Mecanismo, direção do desvio e estruturas em risco",
+      "Fixação: fios laterais, fio medial e cuidados depois",
+      "Fratura supracondiliana em flexão"
+     ],
+     "blocos": [
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
+      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19",
+      "fratura-supracondiliana-em-flexao-a21a51b5",
+      "fratura-supracondiliana-em-flexao-9a522012",
+      "fratura-supracondiliana-em-flexao-2ad80c88",
+      "fratura-supracondiliana-em-flexao-d6eeef9c",
+      "fratura-supracondiliana-em-flexao-034a15ed",
+      "fratura-supracondiliana-em-flexao-d4613b25"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "43b51d36fb6b70cbbd02378510531d8bb4fef9b8e0cc91234ac027d83125c5ee"
+    }
+   ],
+   "questaoSha256": "edeb67ac333ec0b4dcbc8a0dc6abdf705f6d7e5e31705071f9a751b76fce3d99",
+   "comentarioSha256": "ec57d6c6279a8fd47588c7de55a8923d57127128c103e02fb48e41d575b6e3d3"
+  }
  },
  "trauma-1223": {
   "conceito": "**Fratura do colo do tálus: anatomia que explica a gravidade.** O tálus é recoberto por cartilagem em cerca de 60% da superfície e não tem inserções musculares. Sua irrigação é frágil e chega por poucas portas: a artéria do canal do tarso (ramo da tibial posterior), a artéria do seio do tarso (do sistema fibular e dorsal do pé) e ramos deltoides que entram pela face medial do corpo. A fratura do colo, causada em geral por dorsiflexão forçada do pé contra a tíbia (acidentes automobilísticos, quedas), pode romper esses vasos, e o risco de osteonecrose do corpo cresce com o desvio.\n\n**A classificação de Hawkins (modificada por Canale e Kelly).**\n\n| Tipo | Achado | Articulações afetadas |\n|---|---|---|\n| I | sem desvio | nenhuma |\n| II | subluxação ou luxação da subtalar | subtalar |\n| III | luxação da subtalar e do tornozelo (corpo extruído, em geral posteromedial) | subtalar e tornozelo |\n| IV | tipo III com luxação talonavicular | subtalar, tornozelo e talonavicular |\n\nO risco de osteonecrose aumenta de tipo para tipo. O sinal de Hawkins, uma rarefação subcondral no domo do tálus visível em 6 a 8 semanas, indica revascularização e é bom sinal.\n\n**Como o fragmento desvia.** Na fratura do colo, a cabeça e o colo distal (fragmento distal), presos ao pé, tendem a se deslocar em **dorsiflexão** em relação ao corpo, e a face dorsomedial do colo costuma ser a mais cominuída. Essa cominuição medial faz o colo encurtar desse lado e o fragmento distal rodar em **varo** (adução e supinação). Se a redução não restaura o comprimento medial, a consolidação ocorre em varo, a consolidação viciosa mais comum após essa fratura.\n\n**Consequências do varo.** O pé consolidado em varo fica rígido em inversão: o paciente pisa com a borda lateral, perde a eversão da subtalar e sobrecarrega o quinto metatarso e a face lateral do pé. Por isso a redução deve restaurar o comprimento da coluna medial, muitas vezes com dupla via de acesso (medial e lateral) e, se necessário, enxerto na cominuição medial.\n\n> **Na prova:** na fratura do colo do tálus, o desvio mais comum é dorsiflexão e varo do fragmento distal, pela cominuição dorsomedial; o varo é a consolidação viciosa típica.",

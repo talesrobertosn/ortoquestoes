@@ -2971,15 +2971,49 @@
   "conferido": false
  },
  "ombro-cotovelo-0332": {
+  "conceito": "**A sequência de O'Driscoll descreve uma progressão de lateral para medial.** A ruptura começa pelo complexo ligamentar lateral, passa pela cápsula anterior e chega aos ligamentos mediais. Nesse modelo, o **complexo medial é a última estrutura** a ceder quando a luxação se completa. A sequência explica por que diferentes graus de instabilidade podem preservar parte das restrições mediais.\n\nO resumo pediátrico apresenta também uma teoria concorrente, em que a força em valgo lesa primeiro o colateral medial ou arranca o epicôndilo e a luxação progride depois. Portanto, a resposta da questão corresponde ao modelo sequencial de O'Driscoll, não a uma afirmação de que toda luxação real necessariamente rompa as estruturas nessa ordem. A existência de mais de um mecanismo deve ser reconhecida.",
+  "correta": "**C: complexo ligamentar medial.** É a etapa final da sequência lateral, cápsula anterior e medial cobrada pela banca. O enunciado usa a lógica desse modelo, preservada na resposta oficial.",
   "incorretas": {
-   "A": "**Etapa intermediária.** A cápsula anterior rompe no estágio 2, antes do medial.",
-   "B": "**É o primeiro.** O complexo lateral, sobretudo o colateral ulnar lateral, é a primeira estrutura a romper.",
-   "D": "**Não é o marco final.** O anular estabiliza a cabeça do rádio na incisura e pode lesar-se junto com o complexo lateral, mas não é a última estrutura da sequência."
+   "A": "**A cápsula anterior é uma etapa intermediária.** Sua ruptura permite a progressão após a lesão lateral, mas o modelo só termina com o comprometimento medial. A opção antecipa a etapa final.",
+   "B": "**O complexo lateral é o ponto inicial na sequência de O'Driscoll.** É essencial para a estabilidade, mas não o último a romper no modelo perguntado. A alternativa inverte começo e fim.",
+   "D": "**O ligamento anular não é a etapa final identificada nessa sequência.** O modelo nomeia complexo lateral, cápsula anterior e complexo medial. A opção não representa a perda final das restrições mediais."
   },
-  "conceito": "**O círculo de Horii.** O'Driscoll descreveu a luxação **posterolateral** do cotovelo como um processo em sequência. Numa queda sobre a mão, com o cotovelo semifletido, a carga **axial**, o **valgo** e a **supinação** fazem a ulna rodar em relação ao úmero, e as estruturas cedem de **lateral para medial**, contornando a articulação como um anel.\n\n**Os estágios.** **Estágio 1**: ruptura do **colateral ulnar lateral** (LUCL), com subluxação rotatória posterolateral que se reduz sozinha. **Estágio 2**: cedem as **cápsulas** anterior e posterior, e o cotovelo fica numa luxação incompleta, **empoleirada**, com o coronoide sobre a tróclea. **Estágio 3**: lesão do **complexo medial**, com luxação completa; **3A**, só o feixe posterior do medial, estável em valgo após redução em pronação; **3B**, também o feixe anterior, instável em valgo; **3C**, desinserção de todas as partes moles do úmero distal. Em alguns casos o feixe anterior do medial resiste e serve de eixo para a luxação.\n\n**Por que isso importa.** O **último** a romper é o complexo **medial**, e o primeiro, o **lateral**. Por isso, no cotovelo instável após redução, o reparo começa pelo **lateral**: reinserção do LUCL no epicôndilo lateral, que muitas vezes basta. O medial só é reparado se o cotovelo continua instável após o lateral e a reconstrução óssea. A redução é mantida melhor em **pronação**, que fecha o lado lateral lesado.\n\n**As lesões ósseas associadas.** Coronoide, cabeça do rádio e capítulo. A combinação de luxação, fratura da cabeça do rádio e do coronoide é a **tríade terrível**, tratada com fixação do coronoide, fixação ou prótese da cabeça e reparo do LUCL.\n\n**Na prova:** a luxação posterolateral vai de **lateral para medial**; o **medial** é o **último** a romper.",
-  "correta": "**O complexo ligamentar medial.** É a etapa final do círculo de Horii, depois de terem cedido o complexo lateral e as cápsulas.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Mecanismo e exame da luxação posterior."
+  ],
+  "alerta": "A chave C corresponde à sequência de O'Driscoll. O capítulo pediátrico também descreve teoria que inicia pelo valgo e lesão medial; não extrapolar a ordem da questão para todos os mecanismos de luxação.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Mecanismo e exame da luxação posterior"
+     ],
+     "blocos": [
+      "mecanismo-e-exame-da-luxacao-posterior-2a23d40b",
+      "mecanismo-e-exame-da-luxacao-posterior-3f5d29ca",
+      "mecanismo-e-exame-da-luxacao-posterior-eefc73d9",
+      "mecanismo-e-exame-da-luxacao-posterior-b4737dbf",
+      "mecanismo-e-exame-da-luxacao-posterior-55ac6030",
+      "mecanismo-e-exame-da-luxacao-posterior-f9c74b5b",
+      "mecanismo-e-exame-da-luxacao-posterior-a935d2bf",
+      "mecanismo-e-exame-da-luxacao-posterior-12e22a02"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "28f2ddf94a247dba9bdfe626ba27c727612029c415f33ce53963a6fed0fa4feb"
+    }
+   ],
+   "questaoSha256": "80015809463e02379f79e753996f9607a8cd519be894fe7339c10e599a4c42f0",
+   "comentarioSha256": "5a1c2d97c68f9571ed1c640dc360fa21786d6c4d919ed17201b7cb9270b3a9f2"
+  }
  },
  "ombro-cotovelo-0333": {
   "incorretas": {
@@ -5091,17 +5125,62 @@
   "conferido": false
  },
  "ombro-cotovelo-0508": {
+  "conceito": "**Comprometimento vascular é motivo para reduzir a luxação com urgência e reavaliar o membro.** A deformidade pode estirar ou comprimir a braquial e as partes moles. A redução frequentemente melhora essa relação e devolve fluxo; por isso, pulso ausente não é uma contraindicação automática à tentativa fechada.\n\nO exame deve ser documentado antes e depois. Se o comprometimento persistir, é necessária exploração urgente e eventual reparo. Luxação exposta exige cirurgia para tratar a ferida e avaliar a artéria. Mesmo uma mão quente ou com bom enchimento não garante tronco arterial intacto, e a observação precisa ser seriada. Sem gabarito oficial registrado, a resposta bibliográfica é B.",
+  "correta": "**B: errado, pela bibliografia.** A ausência de pulso torna prioritário restaurar o alinhamento e reexaminar a circulação. Contraindicar a redução só por esse achado inverteria a conduta descrita.",
   "incorretas": {
-   "A": "**Confunde urgência com contraindicação.** Seria correto dizer que a persistência de isquemia ou de ausência de pulso após a redução requer investigação e possível reparo vascular imediato, não que impeça reduzir o cotovelo."
+   "A": "**Considerar certo deixaria o membro deformado enquanto o feixe continua ameaçado.** A indicação de exploração depende da persistência do comprometimento e do contexto, não de uma proibição geral da redução fechada. Na luxação exposta ou irredutível, a via aberta pode ser necessária por razões adicionais."
   },
-  "conceito": "**Pulso ausente não impede a redução.** A luxação do cotovelo pode estirar, comprimir ou lesar a artéria braquial. Antes de qualquer manobra, documentam-se perfusão da mão, pulsos radial e ulnar e função dos nervos mediano, ulnar e radial. A redução fechada deve ser feita com urgência, porque uma artéria apenas acotovelada pode voltar a permitir fluxo quando a articulação recupera seu alinhamento.\n\n**O que vem depois.** Repetem-se imediatamente os exames vascular e neurológico, além de confirmar a congruência por radiografias. Pulso ausente após a redução, mão fria, enchimento capilar ruim, hematoma expansivo ou sangramento exigem avaliação vascular urgente e, conforme o quadro, exploração ou exame de imagem arterial. Uma mão aparentemente bem perfundida não exclui lesão arterial, pois pode existir circulação colateral.\n\n**A distinção decisiva.** A falta de pulso é sinal de gravidade que acelera a redução e a investigação vascular; não é contraindicação à tentativa de redução fechada. A exceção prática é uma lesão complexa cuja manipulação seja insegura ou uma redução impossível, situação para manejo cirúrgico, e não uma regra baseada apenas no pulso.",
-  "correta": "**Errado.** A ausência de pulsos distais impõe redução urgente, seguida de nova avaliação vascular; não proíbe a redução fechada.",
+  "conferido": false,
   "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, p. 770."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Nervos e artéria na luxação."
   ],
   "provavel": "B",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Nervos e artéria na luxação"
+     ],
+     "blocos": [
+      "nervos-e-arteria-na-luxacao-91694afa",
+      "nervos-e-arteria-na-luxacao-8f5697da",
+      "nervos-e-arteria-na-luxacao-76444fa1",
+      "nervos-e-arteria-na-luxacao-927e9cfe",
+      "nervos-e-arteria-na-luxacao-9349ac14",
+      "nervos-e-arteria-na-luxacao-604ccf7b",
+      "nervos-e-arteria-na-luxacao-fc98dd47",
+      "nervos-e-arteria-na-luxacao-e700fa85",
+      "nervos-e-arteria-na-luxacao-ec1544ad",
+      "nervos-e-arteria-na-luxacao-9e68675a",
+      "nervos-e-arteria-na-luxacao-741159f4",
+      "nervos-e-arteria-na-luxacao-c322ab8d",
+      "nervos-e-arteria-na-luxacao-343dad3b",
+      "nervos-e-arteria-na-luxacao-11998181",
+      "nervos-e-arteria-na-luxacao-5b7dad41",
+      "nervos-e-arteria-na-luxacao-dd8d287c",
+      "nervos-e-arteria-na-luxacao-877e7582",
+      "nervos-e-arteria-na-luxacao-180f56e0",
+      "nervos-e-arteria-na-luxacao-9c67a51e",
+      "nervos-e-arteria-na-luxacao-72056999",
+      "nervos-e-arteria-na-luxacao-7c77727a",
+      "nervos-e-arteria-na-luxacao-584aebf5",
+      "nervos-e-arteria-na-luxacao-0d677891"
+     ],
+     "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+     "trechosSha256": "ab20f38c8f15fb27947a6342fe8eb21a5a56fe0e26da34ba9c898611ec17e24d"
+    }
+   ],
+   "questaoSha256": "7093b35f86941610b18b4c6d769cfd0c412099ea69fc83d7d2b8443bb61e63ff",
+   "comentarioSha256": "0bd3fe74fafb7909000d7fc0de7a45a720aeca572fdb317cb8d6f16a54883dc7"
+  }
  },
  "ombro-cotovelo-0509": {
   "incorretas": {
