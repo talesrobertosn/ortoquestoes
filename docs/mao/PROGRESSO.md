@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 29 | 1 | mao-1932 a mao-1960 | A 7, B 7, C 8, D 7 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 34 | 1 | mao-1932 a mao-1965 | A 9, B 9, C 8, D 8 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -78,8 +78,8 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 2 | Falange média: traço mais frequente na diáfise | fato | cap. 7, p. 290, 291, 299 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1933 | publicada |
 | 3 | Madelung: ligamento de VICKERS, posição e ossos que une | epônimo e anatomia | cap. 38 | mao / Deficiências longitudinais e mão torta | 16 | | a fazer |
 | 4 | Canal de GUYON, zona III: tipo de déficit | anatomia aplicada | cap. 26 | mao / Neuropatia ulnar e outras compressões | 09 | | a fazer |
-| 5 | Artrose radiolunar isolada: causa mais comum | fato | cap. 12 | mao / Artrose do punho e artroscopia | 07 | | a fazer |
-| 6 | Rizartrose avançada: postura do polegar (adução e MCF) | fato | cap. 11 | mao / Rizartrose e artrose da mão | 07 | | a fazer |
+| 5 | Artrose radiolunar isolada: causa mais comum | fato | cap. 12, p. 454, 457, 458 | mao / Artrose do punho e artroscopia | 07 | mao-1961 | publicada |
+| 6 | Rizartrose avançada: postura do polegar (adução e MCF) | fato | cap. 11, p. 422, 423 | mao / Rizartrose e artrose da mão | 07 | mao-1963 | publicada |
 | 7 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 a 263 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1934 | publicada |
 | 8 | Mão reumatoide: ressecção da ulna distal (indicação, extensão, sinovectomia, ERC) | afirmativas | cap. 55 | mao / Mão reumatoide | 08 | | a fazer |
 | 9 | Colo do metacarpo: indicações cirúrgicas (pseudogarra, rotação, dedos radiais, encurtamento) | afirmativas | cap. 7, p. 263, 268 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1935 | publicada |
@@ -123,7 +123,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 47 | Zona de atividade polarizante: molécula responsável | embriologia | cap. 35 | mao / Outras malformações congênitas | 15 | | a fazer |
 | 48 | MONTEGGIA posterior: padrão mais comum | classificação | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
 | 49 | Úmero distal: vias de acesso | afirmativas | cap. 18 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
-| 50 | Artrodese total do punho: indicações e complicações | afirmativas | cap. 12 | mao / Artrose do punho e artroscopia | 07 | | a fazer |
+| 50 | Artrodese total do punho: indicações e complicações | afirmativas | cap. 12, p. 453, 460 a 465 | mao / Artrose do punho e artroscopia | 07 | mao-1962 | publicada |
 | 51 | Lesão nervosa: regeneração, ENMG, SUNDERLAND, TINEL | afirmativas | cap. 30 | mao / Lesões de nervos periféricos | 10 | | a fazer |
 | 52 | Camptodactilia na artrogripose | afirmativas | cap. 39 | mao / Outras malformações congênitas | 17 | | a fazer |
 | 53 | Paralisia radial: vantagem do flexor superficial sobre o FUC para os dedos | transferência | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
@@ -134,12 +134,12 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 58 | Instabilidade carpal não dissociativa | afirmativas | cap. 13, p. 537 a 539 | mao / Instabilidade do carpo | 05 | mao-1952 | publicada |
 | 59 | VOCHE e MERLE: abdução do mínimo na paralisia ulnar | epônimo | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
 | 60 | Desfiladeiro torácico: compressão distal associada mais comum | fato | cap. 29 | mao / Neuropatia ulnar e outras compressões | 10 | | a fazer |
-| 61 | EATON e LITTLER: estágio pela descrição | classificação | cap. 11 | mao / Rizartrose e artrose da mão | 07 | | a fazer |
+| 61 | EATON e LITTLER: estágio pela descrição | classificação | cap. 11, p. 423, 424 | mao / Rizartrose e artrose da mão | 07 | mao-1964 | publicada |
 | 62 | Polidactilia central: ordem de frequência dos dedos | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
 | 63 | Sinostose radioulnar proximal | afirmativas | cap. 38 | mao / Outras malformações congênitas | 16 | | a fazer |
 | 64 | Retalhos: pedículo de cada um (braço lateral, chinês, escapular, inguinal) | afirmativas | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
 | 65 | Cabeça do rádio: centro da zona segura | número | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
-| 66 | Rizartrose: osteotomia do primeiro metacarpo | afirmativas | cap. 11 | mao / Rizartrose e artrose da mão | 07 | | a fazer |
+| 66 | Rizartrose: osteotomia do primeiro metacarpo | afirmativas | cap. 11, p. 423 a 426, 429, 432 | mao / Rizartrose e artrose da mão | 07 | mao-1965 | publicada |
 | 67 | Ramo sensitivo do radial (WARTENBERG): anatomia e manobra | afirmativas | cap. 26 | mao / Neuropatia ulnar e outras compressões | 10 | | a fazer |
 | 68 | Grande dorsal e serrátil: tipo de retalho e artérias | par | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
 | 69 | Luxação do cotovelo: mecanismo mais comum | mecanismo | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 | | a fazer |
