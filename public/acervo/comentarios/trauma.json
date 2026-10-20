@@ -2392,15 +2392,66 @@
   "conferido": false
  },
  "trauma-0168": {
+  "conceito": "**A borda volar da base da falange média é o contraforte contra subluxação dorsal da IFP.** Quanto maior a perda desse apoio, maior a possibilidade de a base escorregar e deixar de deslizar congruentemente sobre a cabeça proximal. O tamanho do fragmento precisa ser avaliado junto ao arco em que a redução se mantém.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, divide as lesões em estáveis com menos de 30%, tênues entre 30% e 50% que mantêm redução com menos de 30° de flexão, e instáveis acima de 50% ou com necessidade de mais de 30° de flexão. O algoritmo e figuras também chamam atenção para risco crescente acima de **40%**. Esses cortes não são todos definições da mesma variável.\n\nO texto relaciona fragmentos maiores à perda do colateral e da placa volar, enquanto 40% aparece como limiar de alerta para instabilidade. O sinal do V no perfil e a avaliação dinâmica mostram perda de congruência. Não se deve usar um percentual isolado para ignorar que uma articulação já subluxa ou só se mantém muito fletida.\n\n**Leia “Estabilidade pelo tamanho do fragmento volar”**, na seção da fratura-luxação da IFP do resumo da Biblioteca.",
+  "correta": "A banca escolheu **fratura cominutiva**, por exclusão das outras opções, mas cominuição sozinha não é uma indicação de tratamento conservador. O resumo considera congruência, porcentagem de superfície e arco de estabilidade; no pilão cominutivo e articular completo, o resultado sem estabilização é desfavorável. Assim, B deve ser entendida como o gabarito desta questão incompleta, sem autorizar tratar toda base cominuída apenas com tala.",
   "incorretas": {
-   "A": "A subluxação dorsal mostra instabilidade e indica cirurgia.",
-   "C": "A fratura articular completa é instável.",
-   "D": "O acometimento maior que 40% deixa a articulação instável e é cirúrgico."
+   "A": "Subluxação dorsal demonstra perda de congruência e do apoio volar. Não se pode considerá-la uma situação estável apenas por ser reduzível em determinada posição. O tratamento precisa recuperar e manter relação articular no arco permitido. A alternativa não oferece as condições de estabilidade que justificariam movimento protegido sem estabilização adicional.",
+   "C": "Uma fratura articular completa pode envolver toda a base e, no padrão de pilão, apresentar depressão e cominuição. O resumo descreve mau resultado sem estabilização nesses padrões e preferência por tração dinâmica conforme a geometria. A alternativa não demonstra uma articulação congruente e estável para tratamento não operatório. O nome “completa” muda a extensão do dano articular.",
+   "D": "Acima de cerca de 40% a 50% aumenta o risco de perda do contraforte e instabilidade. O percentual deve ser associado à avaliação dinâmica, e não usado para presumir estabilidade. A opção foi escolhida entre as indicações de maior preocupação cirúrgica no material da banca. Ela não caracteriza por si um padrão seguro para tratamento conservador."
   },
-  "conceito": "A **articulação interfalângica proximal** é a que **mais enrijece** na mão. Na fratura da **base da falange média**, o objetivo é ter uma articulação **congruente** que permita **movimento precoce**.\n\n**Quando o tratamento é cirúrgico**: fratura **instável**:\n\n**fragmento volar** com mais de **40%** da superfície articular: a placa volar fica presa ao fragmento, e a falange média escorrega para trás;\n\n**subluxação dorsal** da falange média;\n\n**fratura articular completa** (pilão da base), instável.\n\n**Quando não operar**: na fratura **cominutiva**, a reconstrução aberta de muitos fragmentos pequenos costuma **falhar** e enrijecer a articulação. O melhor é a **tração dinâmica** (fixador externo dinâmico, de Suzuki ou similar), que alinha os fragmentos pela **ligamentotaxia** e deixa a articulação mexer desde cedo.\n\n**Os fragmentos pequenos** (menos de 30%) com articulação congruente: **bloqueio de extensão** com tala e movimento precoce.\n\n**Na prova**: o tratamento não cirúrgico da base da falange média está indicado na **fratura cominutiva**.",
-  "correta": "Na fratura cominutiva, a tração dinâmica alinha os fragmentos e permite mexer cedo; a reconstrução aberta costuma falhar.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Fratura-luxação da IFP e base da falange média."
+  ],
+  "conferido": false,
+  "alerta": "Gabarito B, por exclusão. O resumo não usa cominuição isolada como indicação conservadora: depende de congruência e estabilidade; o pilão articular completo cominutivo vai mal sem estabilização. A pergunta não fornece dados suficientes para transformar B em uma recomendação clínica geral.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Fratura-luxação da IFP e base da falange média"
+     ],
+     "blocos": [
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+    }
+   ],
+   "questaoSha256": "7370e833b8d9877f6dd24e708521ed660ad77fe1957e8433114ba6a20a1c29b4",
+   "comentarioSha256": "3f6e449172d87d5d6fd8000a8452d6c3a1b0bb256cee7498e1514b18de704de9"
+  }
  },
  "trauma-0169": {
   "incorretas": {
@@ -5553,15 +5604,66 @@
   "conferido": false
  },
  "trauma-0553": {
+  "conceito": "**A borda volar da base da falange média é o contraforte contra subluxação dorsal da IFP.** Quanto maior a perda desse apoio, maior a possibilidade de a base escorregar e deixar de deslizar congruentemente sobre a cabeça proximal. O tamanho do fragmento precisa ser avaliado junto ao arco em que a redução se mantém.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, divide as lesões em estáveis com menos de 30%, tênues entre 30% e 50% que mantêm redução com menos de 30° de flexão, e instáveis acima de 50% ou com necessidade de mais de 30° de flexão. O algoritmo e figuras também chamam atenção para risco crescente acima de **40%**. Esses cortes não são todos definições da mesma variável.\n\nO texto relaciona fragmentos maiores à perda do colateral e da placa volar, enquanto 40% aparece como limiar de alerta para instabilidade. O sinal do V no perfil e a avaliação dinâmica mostram perda de congruência. Não se deve usar um percentual isolado para ignorar que uma articulação já subluxa ou só se mantém muito fletida.\n\n**Leia “Estabilidade pelo tamanho do fragmento volar”**, na seção da fratura-luxação da IFP do resumo da Biblioteca.",
+  "correta": "O gabarito B corresponde ao limiar de **40%** usado em figuras e algoritmo do resumo para risco crescente de instabilidade. A leitura deve ser complementada pelo arco em que a redução se mantém. Há ainda uma imprecisão anatômica no enunciado: o fragmento volar discutido nessa fratura-luxação é da **base da falange média**, que articula com a cabeça da proximal. O número não deve ser usado para apagar essa distinção.",
   "incorretas": {
-   "A": "**Ainda estável.** Com cerca de 20%, os colaterais seguem presos à falange média e a articulação é estável.",
-   "C": "**Já francamente instável.** Com 60%, a instabilidade é evidente, mas o limite em que ela começa é menor.",
-   "D": "**Muito além do limite.** Com 80% a articulação é grosseiramente instável; o limiar é bem menor."
+   "A": "Vinte por cento está abaixo da faixa de risco escolhida pela banca e se situa entre os fragmentos menores, frequentemente estáveis quando a avaliação confirma congruência. Isso não significa que toda lesão de 20% seja automaticamente normal. A questão pede o limiar de alerta de 40%, e não qualquer porcentagem de acometimento.",
+   "C": "Sessenta por cento representa comprometimento ainda maior e é compatível com instabilidade, mas não é o **limiar a partir do qual** o risco é destacado pelo algoritmo citado. Escolher apenas um número maior não responde à pergunta sobre o ponto inicial de alerta. A diferença entre limiar e situação já avançada é o detalhe decisivo.",
+   "D": "Oitenta por cento corresponde a uma perda articular muito mais extensa que a fronteira de 40% usada pela banca. Pode integrar um padrão grave, mas não define o menor valor pedido. O tratamento não deve esperar chegar a esse tamanho para reconhecer subluxação ou necessidade de flexão excessiva. A avaliação dinâmica também continua necessária."
   },
-  "conceito": "**A estabilidade da interfalângica proximal.** A IFP é uma dobradiça muito congruente. Contra a subluxação **dorsal** da falange média, ela depende de um batente ósseo: a **borda volar** da base da falange média, onde se prende a **placa volar**, e dos **ligamentos colaterais** acessórios. Nas fraturas-luxações **dorsais** por hiperextensão, o traço arranca justamente esse fragmento volar.\n\n**Quanto pode faltar.** A resposta clássica é um gradiente. Com fragmento envolvendo **menos de cerca de 30%** da superfície articular, a lesão é **estável**: boa parte dos colaterais segue presa à falange média. Entre **30 e 50%**, a estabilidade é **tênue** e depende da posição: estável em flexão, subluxa em extensão. Acima de **cerca de 40 a 50%**, os colaterais ficam presos ao fragmento, e a falange média **subluxa dorsalmente** mesmo em flexão: é **instável**. A banca usou **40%** como o limite a partir do qual a articulação se torna instável.\n\n**Como tratar cada faixa.** **Estável**: órtese de **bloqueio da extensão** e mobilização ativa precoce. **Tênue**: bloqueio da extensão na angulação em que a articulação se mantém reduzida, liberando progressivamente. **Instável**: redução e **fixação** do fragmento (parafusos, cerclagem), **fixador dinâmico** (tração de Suzuki), **artroplastia da placa volar** ou reconstrução da base com **enxerto de hamato** (hemi-hamato), quando o fragmento é cominuído.\n\n**O sinal que importa na radiografia.** No **perfil verdadeiro** da IFP, as superfícies articulares devem ser concêntricas. O **sinal do V** (a abertura em V entre a cabeça da falange proximal e a base da média, no dorso) indica subluxação residual, que não pode ser aceita.\n\n**Na prova:** fratura-luxação dorsal da IFP: fragmento volar **abaixo de 30%** estável; **30 a 50%** tênue; para a banca, **a partir de 40%** instável.",
-  "correta": "**40%.** A partir de cerca de 40% da superfície articular volar comprometida, a falange média perde o batente e subluxa dorsalmente, tornando a articulação instável.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Fratura-luxação da IFP e base da falange média."
+  ],
+  "conferido": false,
+  "alerta": "O gabarito é B, 40%, como limiar de risco do algoritmo descrito. O fragmento volar relevante é da base da falange média; o enunciado o localiza de forma imprecisa na superfície distal da falange proximal. Estabilidade também depende da congruência e da flexão necessária para manter redução.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Fratura-luxação da IFP e base da falange média"
+     ],
+     "blocos": [
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+    }
+   ],
+   "questaoSha256": "349b43a153c2f7e502ae09b85a09df86955119549c68ead814535b09edb55bcd",
+   "comentarioSha256": "c7e6061e47f33bfa6bd50513856031f58d1c6d668bb8152f4d5e6d1c04468cc9"
+  }
  },
  "trauma-0554": {
   "incorretas": {
@@ -6326,15 +6428,82 @@
   "conferido": false
  },
  "trauma-0697": {
+  "conceito": "**Consolidação viciosa é união do metacarpo em alinhamento inadequado.** Pode haver rotação, angulação ou encurtamento residual. O resumo do Rockwood & Green, 10ª edição, capítulo 45, a destaca como a complicação mais comum das fraturas metacarpais em geral. No traço transverso, angulação e rotação preocupam; no espiral, rotação e encurtamento.\n\nO problema funcional depende do desvio. O cruzamento dos dedos altera a preensão e não é compensado por uma radiografia aparentemente aceitável. Angulação de ápice dorsal pode causar pseudogarra e déficit de extensão. A avaliação clínica, comparando com a outra mão, é indispensável para relacionar imagem e função.\n\nO resumo descreve osteotomia transversa para rotação e cunhas para angulação, conforme necessidade de preservar comprimento. Também distingue pseudartrose, que é rara e pode se associar a perda óssea ou distração, de aderência tendínea, mais relacionada a abordagens abertas. Esses problemas não são sinônimos e não têm necessariamente a mesma frequência em todos os subgrupos operatórios.\n\n**Leia “Complicações dos metacarpos”**, na seção dos metacarpos do resumo da Biblioteca.",
+  "correta": "A alternativa C é **consolidação viciosa**, alinhada ao destaque do resumo para os metacarpos em geral. O osso pode consolidar e ainda deixar rotação ou angulação que prejudiquem a preensão e o equilíbrio extensor. A pergunta delimita tratamento cirúrgico; a fonte consultada não fornece uma estratificação numérica de cada técnica. Por isso a resposta é preservada sem inventar uma taxa pós-operatória específica.",
   "incorretas": {
-   "A": "**Pouco frequente.** A infecção ocorre sobretudo com fios percutâneos, mas não é a principal complicação.",
-   "B": "**Rara.** A boa vascularização e o efeito de tala tornam a pseudartrose incomum.",
-   "D": "**Real, mas menos frequente.** A aderência dos extensores ocorre com placas dorsais, mas a consolidação viciosa é mais importante."
+   "A": "Infecção pode ocorrer, incluindo infecção de pino ou em lesões expostas, mas o resumo não a coloca como a complicação geral predominante dos metacarpos. O risco muda conforme partes moles e tratamento. Uma complicação potencialmente grave não deve ser escolhida apenas por essa gravidade. O destaque da fonte e o gabarito são consolidação viciosa.",
+   "B": "Pseudartrose é falha de união, diferente de consolidação com deformidade. O resumo a descreve como rara nos metacarpos, associada a fatores como perda óssea ou distração do foco. Portanto, ela não substitui a complicação mais comum apontada. É essencial distinguir qualidade do alinhamento de ocorrência da consolidação.",
+   "D": "Aderência tendínea é uma complicação relevante das abordagens abertas e pode limitar movimento. Isso explica cuidados com periósteo e partes moles e a importância de terapia. Contudo, o resumo destaca consolidação viciosa no conjunto das fraturas metacarpais, e o gabarito escolhe C. Sem dados estratificados por técnica, não se deve criar um ranking específico diferente para todo procedimento aberto."
   },
-  "conceito": "**Os metacarpos consolidam bem.** A vascularização é boa, os metacarpos **vizinhos** e os ligamentos intermetacarpais funcionam como **tala** natural, e a pseudartrose é **rara**. O desafio não é consolidar, mas consolidar **na posição certa**. Por isso a **consolidação viciosa** é a principal complicação, tanto no tratamento conservador quanto no cirúrgico.\n\n**As três deformidades.** **Rotacional**: a mais grave, sem tolerância. Poucos graus de rotação no metacarpo produzem **cruzamento dos dedos** na flexão (a \"tesoura\"), com grande prejuízo funcional. Avalia-se pedindo ao paciente para **fletir os dedos** juntos: todos devem apontar para o **tubérculo do escafoide**, e as unhas devem estar alinhadas. **Angular**: com ápice **dorsal**, pelos interósseos. A tolerância aumenta do lado **radial** para o **ulnar**, pela maior mobilidade das carpometacarpais ulnares: no **colo**, aceita-se até cerca de 10 a 15 graus no segundo e terceiro e até 40 a 50 graus no quinto (a fratura do boxeador); na **diáfise**, menos. **Encurtamento**: até cerca de 5 mm é bem tolerado; mais que isso causa **perda da proeminência** da cabeça e **pseudogarra** (lag extensor).\n\n**Quando operar.** Deformidade **rotacional**, angulação além do tolerado, encurtamento importante, fraturas **múltiplas**, fraturas **expostas**, e fraturas articulares com desvio. Técnicas: **fios de Kirschner** (percutâneos, intramedulares ou transversos), **parafusos** interfragmentários nas oblíquas longas, **placas** e **parafusos intramedulares** sem cabeça, que permitem mobilização precoce.\n\n**As outras complicações.** **Aderência** dos extensores sobre a placa, **rigidez** da MF (imobilizar em flexão, a posição de segurança), infecção (com fios) e dor pelo material.\n\n**Na prova:** a principal complicação das fraturas do metacarpo é a **consolidação viciosa**, sobretudo a **rotacional** (dedos cruzando); a pseudartrose é rara.",
-  "correta": "**Consolidação viciosa.** Os metacarpos consolidam com facilidade, e a complicação que mais pesa é consolidar desalinhado, especialmente em rotação.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+  ],
+  "conferido": false,
+  "alerta": "O gabarito é C. O resumo chama consolidação viciosa de complicação mais comum dos metacarpos em geral e destaca aderências nas cirurgias abertas; não fornece frequências comparativas separadas para cada técnica operatória.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "0f70e1431c3f4d79dd27f768060bd74190085088240a447bc426b2c7b787e375",
+   "comentarioSha256": "1dc3e9123d3b0f3925f884265adb1aee3a4ada005ba688e1e0e7039bf63b10f1"
+  }
  },
  "trauma-0698": {
   "conceito": "**A fratura do escafoide.** É a fratura **mais comum do carpo**, em adultos jovens, geralmente do sexo masculino. O mecanismo é a **queda sobre a mão espalmada**, com o punho em **hiperextensão** e **desvio radial**. O escafoide fica entre o rádio e o capitato, e a força se concentra na sua **cintura**.\n\n**As lesões associadas.** Na mesma queda, a força que quebra o escafoide pode lesar estruturas vizinhas:\n\n| Lesão associada | Comentário |\n|---|---|\n| **Fratura do rádio distal**, em especial do **processo estiloide** (fratura do chofer) | A associação **mais descrita** na literatura; mecanismo comum de hiperextensão com desvio radial |\n| **Luxação perilunar** (transescafoperilunar) | A forma mais comum das luxações perilunares é a que passa pelo escafoide |\n| Lesão do **ligamento escafossemilunar** | Pode coexistir, sobretudo nas fraturas do polo proximal |\n| Fratura da **cabeça do rádio** | Por transmissão da carga ao longo do antebraço |\n| Fratura do capitato | Síndrome escafocapitato |\n\n**Sempre examine o punho e o cotovelo.** Na queda sobre a mão estendida, a carga sobe pelo antebraço. Por isso, uma fratura do escafoide pode acompanhar lesões do **rádio distal** e, mais raramente, da **cabeça do rádio** e do cotovelo.\n\n**Sobre esta questão.** O gabarito registrado é a fratura do **rádio proximal**. A literatura, porém, descreve como associação mais frequente a fratura do **rádio distal**, especialmente do processo estiloide. Este acervo traz a mesma resposta em outras duas questões (trauma-0275 e trauma-0908), o que pode refletir a convenção da fonte usada pela banca.\n\n**O diagnóstico e o tratamento da fratura do escafoide.**\n- Dor na **tabaqueira anatômica** e no tubérculo do escafoide; radiografias incluindo a **incidência do escafoide** (PA em desvio ulnar).\n- Com radiografia normal e suspeita clínica: imobilizar e repetir em 10 a 14 dias, ou fazer **ressonância** ou tomografia.\n- **Sem desvio, na cintura**: gesso ou **fixação percutânea** com parafuso (retorno mais rápido).\n- **Polo proximal** ou **com desvio** (mais de 1 mm): **fixação**.\n- As complicações: **pseudoartrose** e **necrose** do polo proximal, pela irrigação retrógrada.",

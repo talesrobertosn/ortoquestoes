@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1950,
+  "pendente": 1940,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 8,
   "pendente-inspecao-imagem": 187,
-  "revisada": 91
+  "revisada": 101
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -98,12 +98,12 @@
    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
    "estados": {
     "duplicada": 4,
-    "pendente": 91,
+    "pendente": 81,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 8,
     "pendente-inspecao-imagem": 17,
-    "revisada": 91
+    "revisada": 101
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -10723,7 +10723,7 @@
    ],
    "prova": "UFG",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -10738,7 +10738,55 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "421254c500a2915d6392c47d613b3ca234f1282f1a2b54ed86d76362c97601a7"
+   "questaoSha256": "421254c500a2915d6392c47d613b3ca234f1282f1a2b54ed86d76362c97601a7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-af3c83a1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-08f8e80f",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-faab259b",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c7d0db01",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-4c61f2a6",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-79ba0847",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-3e5d74e8",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-1765b8af",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bd6a7476",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e4a7b598",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-755a9365",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-0119fbbe",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-8d417b8f",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-04567e40",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bdf35482",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-ebce09c0",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e184064e",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-5f078a51",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-313c1159",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-a6f82b13",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+     }
+    ],
+    "questaoSha256": "421254c500a2915d6392c47d613b3ca234f1282f1a2b54ed86d76362c97601a7",
+    "comentarioSha256": "8cf26fc0f133f4a1d4db25b022846ffee5bc09a1b9da2d63eccce174f3111696"
+   }
   },
   "mao-0910": {
    "tema": "mao",
@@ -10820,7 +10868,7 @@
    ],
    "prova": "UFG",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -10835,7 +10883,50 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "fa9068c63c7f0c75261c54cb1b1219d0a419c97560ab780b82aaa245278fb8ba"
+   "questaoSha256": "fa9068c63c7f0c75261c54cb1b1219d0a419c97560ab780b82aaa245278fb8ba",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+      ],
+      "blocos": [
+       "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f0b3c62d",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--5e47b491",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--ffe4052c",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--19bc2a68",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--3b06c67f",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c4eb7ed3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--18d69bf3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--6c2d666f",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--d98425d3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
+     }
+    ],
+    "questaoSha256": "fa9068c63c7f0c75261c54cb1b1219d0a419c97560ab780b82aaa245278fb8ba",
+    "comentarioSha256": "37d893a417a8003cfcee61ea5d2c194f88196dc8bb42ca0b5ff8f0160cea568f"
+   }
   },
   "mao-0912": {
    "tema": "mao",
@@ -11550,7 +11641,7 @@
    ],
    "prova": "UFG",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11565,7 +11656,54 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "15789cffcd446926c45c1ae2ba32ff7eca96e7da9fc6a5c15dfd3bc6e54248d0"
+   "questaoSha256": "15789cffcd446926c45c1ae2ba32ff7eca96e7da9fc6a5c15dfd3bc6e54248d0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+     }
+    ],
+    "questaoSha256": "15789cffcd446926c45c1ae2ba32ff7eca96e7da9fc6a5c15dfd3bc6e54248d0",
+    "comentarioSha256": "905549d48725360d0d1b59203739e615a84765e674be4bb5b92eb3234b811615"
+   }
   },
   "mao-1029": {
    "tema": "mao",
@@ -12076,7 +12214,7 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12091,7 +12229,56 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "a532ebe544eda6736e080340a8eda77f3352b257684371c9c384418da2040f35"
+   "questaoSha256": "a532ebe544eda6736e080340a8eda77f3352b257684371c9c384418da2040f35",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Desvios das falanges e a falange proximal"
+      ],
+      "blocos": [
+       "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+       "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+       "desvios-das-falanges-e-a-falange-proximal-b6035935",
+       "desvios-das-falanges-e-a-falange-proximal-9109692a",
+       "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+       "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+       "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+       "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+       "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+       "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+       "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+       "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+       "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+       "desvios-das-falanges-e-a-falange-proximal-1db07921",
+       "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+       "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+       "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+       "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+       "desvios-das-falanges-e-a-falange-proximal-617152de",
+       "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+       "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+       "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+       "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+       "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+       "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+       "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+       "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+     }
+    ],
+    "questaoSha256": "a532ebe544eda6736e080340a8eda77f3352b257684371c9c384418da2040f35",
+    "comentarioSha256": "fb99404412afe15942272485f71e878c1644f329f72470a34f3e1fc93b838d30"
+   }
   },
   "mao-1066": {
    "tema": "mao",
@@ -13412,7 +13599,7 @@
    ],
    "prova": "UERJ",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -13427,7 +13614,48 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "e97c06c38a9296ff5d10062c6029d7fde6baa1bbcbc4f133db1030220727b3f8"
+   "questaoSha256": "e97c06c38a9296ff5d10062c6029d7fde6baa1bbcbc4f133db1030220727b3f8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Interfalângica proximal: luxações e banda central"
+      ],
+      "blocos": [
+       "interfalangica-proximal-luxacoes-e-banda-central-4c7f4435",
+       "interfalangica-proximal-luxacoes-e-banda-central-556671ca",
+       "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d",
+       "interfalangica-proximal-luxacoes-e-banda-central-d8e60806",
+       "interfalangica-proximal-luxacoes-e-banda-central-508c4bcb",
+       "interfalangica-proximal-luxacoes-e-banda-central-a32d040c",
+       "interfalangica-proximal-luxacoes-e-banda-central-8f87fd12",
+       "interfalangica-proximal-luxacoes-e-banda-central-811e2679",
+       "interfalangica-proximal-luxacoes-e-banda-central-3aba11e5",
+       "interfalangica-proximal-luxacoes-e-banda-central-81b83900",
+       "interfalangica-proximal-luxacoes-e-banda-central-6a0d295f",
+       "interfalangica-proximal-luxacoes-e-banda-central-0758ff49",
+       "interfalangica-proximal-luxacoes-e-banda-central-cfd70f88",
+       "interfalangica-proximal-luxacoes-e-banda-central-e6cf58b5",
+       "interfalangica-proximal-luxacoes-e-banda-central-3e5d6f33",
+       "interfalangica-proximal-luxacoes-e-banda-central-2c34e421",
+       "interfalangica-proximal-luxacoes-e-banda-central-4e6490a4",
+       "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
+       "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
+     }
+    ],
+    "questaoSha256": "e97c06c38a9296ff5d10062c6029d7fde6baa1bbcbc4f133db1030220727b3f8",
+    "comentarioSha256": "23c52febcca41d9283551b4ef02c0d46cf80fedb2f9d125701f4d774e8911bf9"
+   }
   },
   "mao-1237": {
    "tema": "mao",
@@ -14502,7 +14730,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -14517,7 +14745,48 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "a2be7bd371e1d874d652910336d69b401acd733e6100db62f98dbb79e3578dad"
+   "questaoSha256": "a2be7bd371e1d874d652910336d69b401acd733e6100db62f98dbb79e3578dad",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Interfalângica proximal: luxações e banda central"
+      ],
+      "blocos": [
+       "interfalangica-proximal-luxacoes-e-banda-central-4c7f4435",
+       "interfalangica-proximal-luxacoes-e-banda-central-556671ca",
+       "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d",
+       "interfalangica-proximal-luxacoes-e-banda-central-d8e60806",
+       "interfalangica-proximal-luxacoes-e-banda-central-508c4bcb",
+       "interfalangica-proximal-luxacoes-e-banda-central-a32d040c",
+       "interfalangica-proximal-luxacoes-e-banda-central-8f87fd12",
+       "interfalangica-proximal-luxacoes-e-banda-central-811e2679",
+       "interfalangica-proximal-luxacoes-e-banda-central-3aba11e5",
+       "interfalangica-proximal-luxacoes-e-banda-central-81b83900",
+       "interfalangica-proximal-luxacoes-e-banda-central-6a0d295f",
+       "interfalangica-proximal-luxacoes-e-banda-central-0758ff49",
+       "interfalangica-proximal-luxacoes-e-banda-central-cfd70f88",
+       "interfalangica-proximal-luxacoes-e-banda-central-e6cf58b5",
+       "interfalangica-proximal-luxacoes-e-banda-central-3e5d6f33",
+       "interfalangica-proximal-luxacoes-e-banda-central-2c34e421",
+       "interfalangica-proximal-luxacoes-e-banda-central-4e6490a4",
+       "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
+       "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
+     }
+    ],
+    "questaoSha256": "a2be7bd371e1d874d652910336d69b401acd733e6100db62f98dbb79e3578dad",
+    "comentarioSha256": "7f301f08812c1adc2b8cfeac32c80a9363831c59dea1d49092d2c28adb420ca0"
+   }
   },
   "mao-1520": {
    "tema": "mao",
@@ -14711,7 +14980,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -14726,7 +14995,48 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "f317c30136f20648d21dfa0fd66751e236e3e2dd2fee9618f33ccb834eef706c"
+   "questaoSha256": "f317c30136f20648d21dfa0fd66751e236e3e2dd2fee9618f33ccb834eef706c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Interfalângica proximal: luxações e banda central"
+      ],
+      "blocos": [
+       "interfalangica-proximal-luxacoes-e-banda-central-4c7f4435",
+       "interfalangica-proximal-luxacoes-e-banda-central-556671ca",
+       "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d",
+       "interfalangica-proximal-luxacoes-e-banda-central-d8e60806",
+       "interfalangica-proximal-luxacoes-e-banda-central-508c4bcb",
+       "interfalangica-proximal-luxacoes-e-banda-central-a32d040c",
+       "interfalangica-proximal-luxacoes-e-banda-central-8f87fd12",
+       "interfalangica-proximal-luxacoes-e-banda-central-811e2679",
+       "interfalangica-proximal-luxacoes-e-banda-central-3aba11e5",
+       "interfalangica-proximal-luxacoes-e-banda-central-81b83900",
+       "interfalangica-proximal-luxacoes-e-banda-central-6a0d295f",
+       "interfalangica-proximal-luxacoes-e-banda-central-0758ff49",
+       "interfalangica-proximal-luxacoes-e-banda-central-cfd70f88",
+       "interfalangica-proximal-luxacoes-e-banda-central-e6cf58b5",
+       "interfalangica-proximal-luxacoes-e-banda-central-3e5d6f33",
+       "interfalangica-proximal-luxacoes-e-banda-central-2c34e421",
+       "interfalangica-proximal-luxacoes-e-banda-central-4e6490a4",
+       "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
+       "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
+     }
+    ],
+    "questaoSha256": "f317c30136f20648d21dfa0fd66751e236e3e2dd2fee9618f33ccb834eef706c",
+    "comentarioSha256": "a2badb004620592d2d6448f590c59ea04ed3f7a7805dc457d304086907e30d54"
+   }
   },
   "mao-1539": {
    "tema": "mao",
@@ -33487,7 +33797,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -33502,7 +33812,54 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "7370e833b8d9877f6dd24e708521ed660ad77fe1957e8433114ba6a20a1c29b4"
+   "questaoSha256": "7370e833b8d9877f6dd24e708521ed660ad77fe1957e8433114ba6a20a1c29b4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+     }
+    ],
+    "questaoSha256": "7370e833b8d9877f6dd24e708521ed660ad77fe1957e8433114ba6a20a1c29b4",
+    "comentarioSha256": "3f6e449172d87d5d6fd8000a8452d6c3a1b0bb256cee7498e1514b18de704de9"
+   }
   },
   "trauma-0169": {
    "tema": "trauma",
@@ -38504,7 +38861,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -38519,7 +38876,54 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "349b43a153c2f7e502ae09b85a09df86955119549c68ead814535b09edb55bcd"
+   "questaoSha256": "349b43a153c2f7e502ae09b85a09df86955119549c68ead814535b09edb55bcd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+     }
+    ],
+    "questaoSha256": "349b43a153c2f7e502ae09b85a09df86955119549c68ead814535b09edb55bcd",
+    "comentarioSha256": "c7e6061e47f33bfa6bd50513856031f58d1c6d668bb8152f4d5e6d1c04468cc9"
+   }
   },
   "trauma-0554": {
    "tema": "trauma",
@@ -39780,7 +40184,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39795,7 +40199,70 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "0f70e1431c3f4d79dd27f768060bd74190085088240a447bc426b2c7b787e375"
+   "questaoSha256": "0f70e1431c3f4d79dd27f768060bd74190085088240a447bc426b2c7b787e375",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+     }
+    ],
+    "questaoSha256": "0f70e1431c3f4d79dd27f768060bd74190085088240a447bc426b2c7b787e375",
+    "comentarioSha256": "1dc3e9123d3b0f3925f884265adb1aee3a4ada005ba688e1e0e7039bf63b10f1"
+   }
   },
   "trauma-0698": {
    "tema": "trauma",

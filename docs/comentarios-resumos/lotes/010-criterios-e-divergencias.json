@@ -1,0 +1,582 @@
+{
+ "mao-0907": {
+  "questaoSha256": "421254c500a2915d6392c47d613b3ca234f1282f1a2b54ed86d76362c97601a7",
+  "comentarioAnteriorSha256": "5fcc1efeec1ba967d05bf1788902ce62c27ea9cbf3430938135b0b50f40dac8d",
+  "comentario": {
+   "conceito": "**O problema não é apenas o tamanho do fragmento.** No martelo ósseo, o extensor terminal avulsiona um fragmento da base dorsal da falange distal. O paciente perde a extensão ativa da ponta, e a radiografia de perfil deve avaliar tanto o fragmento quanto a relação entre a falange distal e a cabeça da falange média.\n\nA subluxação volar mostra que a articulação perdeu congruência. A falange distal não está simplesmente fletida: sua base se deslocou em relação à superfície articular proximal. Esse achado pesa na decisão de estabilizar a lesão, pois manter uma articulação subluxada pode deixar deformidade e comprometimento funcional.\n\n**Percentual articular e estabilidade são relacionados, mas não são sinônimos.** Fragmentos maiores aumentam a preocupação com subluxação, porém um número isolado não substitui a avaliação do perfil e da redução. O resumo também discute bons resultados de tratamento conservador em algumas fraturas grandes, razão para não ensinar que todo fragmento acima de uma porcentagem exige a mesma operação.\n\nQuando há congruência e estabilidade, a imobilização contínua da articulação interfalângica distal (IFD) em extensão é uma opção; a articulação interfalângica proximal (IFP) não precisa ser imobilizada por causa de uma lesão terminal isolada. Quando a redução não se mantém, as técnicas de fixação precisam recuperar a articulação, além de posicionar o fragmento.\n\n**Leia a seção “Falange distal: tufo, martelo ósseo, jersey e Seymour”** no resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca, para conferir o mecanismo e suas implicações.\n\nO resumo também inclui a **lesão epifisária** entre os padrões de martelo ósseo na criança. Ela precisa ser distinguida de Seymour, em que há fratura fisária associada à lesão ungueal e possível exposição. Reconhecer uma causa infantil não significa considerar todos os dedos em martelo uma mesma lesão, nem aplicar um prazo cirúrgico universal.",
+   "correta": "A separação traumática da epífise é uma causa possível do padrão de martelo na criança, contemplada no resumo entre os tipos da base dorsal. A alternativa C reconhece esse mecanismo. É necessário examinar também o leito ungueal e a posição da unha, pois uma Seymour pode ter aparência semelhante e exigir manejo de fratura exposta. A resposta não deve apagar essa distinção.",
+   "incorretas": {
+    "A": "Quatro semanas de evolução, isoladamente, não tornam toda lesão operatória. O resumo decide sobretudo por congruência, subluxação e possibilidade de manter redução e proteção. Uma articulação estável não passa automaticamente a exigir cirurgia porque atingiu uma data. A alternativa substitui a análise do padrão por um prazo universal que a fonte não estabelece.",
+    "B": "O período de duas a quatro semanas não corresponde ao protocolo de seis semanas contínuas de extensão descrito para o martelo ósseo estável no resumo. O tratamento deve ainda distinguir lesão óssea e puramente tendínea, sem transferir tempos indiscriminadamente. A opção oferece um intervalo curto como regra geral. A informação mais segura é proteger o mecanismo pelo tempo adequado ao padrão e sem perder a posição.",
+    "D": "O resumo não estabelece uma taxa universal de 75% de artrose em todas as lesões com fratura. Ele discute resultados de grupos diferentes, incluindo subluxação e fragmentos maiores, sem autorizar essa extrapolação. Porcentagem de uma população específica não se transforma em destino obrigatório de toda fratura associada. O número da alternativa não tem suporte no trecho consultado."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Falange distal: tufo, martelo ósseo, jersey e Seymour."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+    ],
+    "blocos": [
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-af3c83a1",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-08f8e80f",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-faab259b",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c7d0db01",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-4c61f2a6",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-79ba0847",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-3e5d74e8",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-1765b8af",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bd6a7476",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e4a7b598",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-755a9365",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-0119fbbe",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-8d417b8f",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-04567e40",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bdf35482",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-ebce09c0",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e184064e",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-5f078a51",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-313c1159",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-a6f82b13",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+   }
+  ]
+ },
+ "mao-0911": {
+  "questaoSha256": "fa9068c63c7f0c75261c54cb1b1219d0a419c97560ab780b82aaa245278fb8ba",
+  "comentarioAnteriorSha256": "cd624ad44742967494d889d6f1d63396bf55b74136197eccc111ef08695adc5d",
+  "comentario": {
+   "conceito": "**Na luxação dorsal complexa da MCF do indicador, o bloqueio principal é a placa volar interposta.** A hiperextensão rompe a placa volar em sua região proximal, junto ao colo do metacarpo. Na forma simples, a falange ainda conserva contato com o dorso da cabeça e a redução pode ser obtida sem cirurgia. Na complexa, a cabeça atravessa os tecidos volares e a placa fica entre ela e a falange.\n\nKaplan descreveu um laço de estruturas que apertam o colo: lumbrical de um lado, flexor do outro, ligamento natatório distal e transverso superficial proximal. Essas estruturas participam da deformidade, mas o obstáculo intra-articular característico é a **placa volar**. Um sesamoide visível no espaço articular reforça a suspeita de interposição.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, alerta para evitar tração e hiperextensão na redução, que podem converter um padrão simples em complexo. Quando a redução aberta é necessária, a via dorsal permite abordar a placa com menor exposição dos feixes digitais; a via volar exige atenção a esses feixes e pode incluir liberação da A1.\n\n**Leia “Luxação metacarpofalângica: simples, complexa e o laço de Kaplan”**, no resumo da Biblioteca, para distinguir os componentes do laço da estrutura interposta.\n\nNa MCF do polegar, o resumo mantém a preocupação com interposição e redução, mas não detalha separadamente todos os padrões de bloqueio como faz para os dedos. A questão usa a aponeurose do abdutor curto como o elemento que não integra o bloqueio clássico. Essa relação não deve ser confundida com Stener, que envolve a aponeurose do adutor e o LCU.",
+   "correta": "A aponeurose do **abdutor curto** é a estrutura excluída pelo gabarito. O bloqueio clássico discutido envolve tecidos volares, como a placa volar com sesamoide, e pode incluir o tendão flexor em determinados padrões do polegar. A definição de Stener, por sua vez, usa a aponeurose do **adutor**, não do abdutor curto. A alternativa D não deve ser escolhida apenas pela semelhança dos nomes.",
+   "incorretas": {
+    "A": "Um sesamoide pode acompanhar a placa volar interposta e aparecer dentro do espaço articular. Esse achado é usado no resumo como sinal de luxação complexa. Portanto, não é o elemento a excluir entre as opções. O osso pequeno funciona como marcador do tecido deslocado, e não como uma estrutura irrelevante só por seu tamanho.",
+    "B": "A placa volar é a principal estrutura interposta na descrição clássica de luxação complexa da MCF. Ela pode ficar entre cabeça e falange e impedir a recuperação da congruência. Por isso não deve ser excluída. A redução precisa considerar a posição desse tecido, evitando manobras que agravem sua interposição.",
+    "C": "O tendão flexor pode participar do bloqueio em padrões de luxação do polegar; o resumo registra inclusive divergência entre bancas que escolhem placa volar ou flexor longo para o bloqueio principal. Isso não permite chamar o flexor de estrutura universalmente ausente do problema. A pergunta procura a exclusão, cujo gabarito é a aponeurose do abdutor curto."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
+   ],
+   "conferido": false,
+   "alerta": "O resumo não detalha a irredutibilidade do polegar separadamente de todos os demais padrões da MCF e registra que bancas diferentes apontam placa volar ou flexor longo como bloqueio principal. O gabarito D desta questão exclui a aponeurose do abdutor curto, sem transformar os outros bloqueios em causas universais."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+    ],
+    "blocos": [
+     "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--f0b3c62d",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--5e47b491",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--ffe4052c",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--19bc2a68",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--3b06c67f",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--c4eb7ed3",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--18d69bf3",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--6c2d666f",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--d98425d3",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
+   }
+  ]
+ },
+ "mao-1027": {
+  "questaoSha256": "15789cffcd446926c45c1ae2ba32ff7eca96e7da9fc6a5c15dfd3bc6e54248d0",
+  "comentarioAnteriorSha256": "af4c1043a46f060b409e9cf4e003778984d1d4161ff60398e8146213d4d365e5",
+  "comentario": {
+   "conceito": "**A borda volar da base da falange média é o contraforte contra subluxação dorsal da IFP.** Quanto maior a perda desse apoio, maior a possibilidade de a base escorregar e deixar de deslizar congruentemente sobre a cabeça proximal. O tamanho do fragmento precisa ser avaliado junto ao arco em que a redução se mantém.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, divide as lesões em estáveis com menos de 30%, tênues entre 30% e 50% que mantêm redução com menos de 30° de flexão, e instáveis acima de 50% ou com necessidade de mais de 30° de flexão. O algoritmo e figuras também chamam atenção para risco crescente acima de **40%**. Esses cortes não são todos definições da mesma variável.\n\nO texto relaciona fragmentos maiores à perda do colateral e da placa volar, enquanto 40% aparece como limiar de alerta para instabilidade. O sinal do V no perfil e a avaliação dinâmica mostram perda de congruência. Não se deve usar um percentual isolado para ignorar que uma articulação já subluxa ou só se mantém muito fletida.\n\n**Leia “Estabilidade pelo tamanho do fragmento volar”**, na seção da fratura-luxação da IFP do resumo da Biblioteca.",
+   "correta": "O gabarito C escolhe **40%**. Esse valor aparece no resumo em figuras e algoritmo como um limiar de risco de instabilidade. Há, porém, uma diferença: o texto associa a perda do colateral e da placa volar a fragmentos acima de **50%**. Assim, os 40% da banca devem ser preservados como resposta oficial, sem apresentar as duas afirmações do capítulo como se fossem exatamente iguais.",
+   "incorretas": {
+    "A": "Vinte por cento representa um fragmento menor que os limiares discutidos para perda importante do contraforte e inserções. O resumo coloca lesões com menos de 30% na faixa geralmente estável, desde que a avaliação confirme congruência. Isso não autoriza escolher 20% como o tamanho que leva a inserção pedida pela banca. Tamanho e comportamento dinâmico devem continuar associados.",
+    "B": "Trinta por cento marca a entrada na faixa intermediária da classificação de estabilidade descrita. Não é o valor de 40% escolhido pela banca para a pergunta sobre o fragmento com inserção colateral. A faixa tênue exige avaliar a flexão necessária para manter redução. A alternativa confunde uma fronteira de classificação com o valor específico exigido no enunciado.",
+    "D": "Cinquenta por cento se aproxima da descrição textual do capítulo para o fragmento que leva colateral e placa volar. Por isso não é correto tratá-la como um número sem fundamento anatômico. A banca, entretanto, escolheu 40%, valor associado no próprio resumo ao algoritmo de instabilidade. A divergência deve ser conhecida, preservando o gabarito C sem ensinar que a fonte é unívoca."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Fratura-luxação da IFP e base da falange média."
+   ],
+   "conferido": false,
+   "alerta": "Gabarito oficial: C, 40%. O resumo informa que o texto do capítulo relaciona perda do colateral e da placa volar a mais de 50%; 40% aparece em figuras e algoritmo como limiar de instabilidade. As afirmações têm contextos distintos e não devem ser fundidas em uma regra única."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Fratura-luxação da IFP e base da falange média"
+    ],
+    "blocos": [
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+   }
+  ]
+ },
+ "mao-1062": {
+  "questaoSha256": "a532ebe544eda6736e080340a8eda77f3352b257684371c9c384418da2040f35",
+  "comentarioAnteriorSha256": "037756b58a580b335a078dada2f7d6760b05fe305d93dc320bd0798e0f88aa1c",
+  "comentario": {
+   "conceito": "**A rigidez é a complicação predominante das fraturas das falanges, sobretudo após cirurgia.** A falange proximal e a média ficam intimamente relacionadas aos tendões e às cápsulas articulares. Trauma de partes moles, fratura articular, cicatriz cirúrgica e imobilização prolongada podem reduzir o deslizamento dos tendões e contrair a articulação. O resultado prático é perda de movimento, frequentemente percebida como limitação da flexão.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, explica que aderência do extensor pode bloquear flexão ativa e passiva e comprometer extensão ativa. Fixar o osso sem permitir mobilização adequada não resolve toda a função do dedo: a estabilidade precisa servir à recuperação do movimento. Por isso o capítulo enfatiza fixação estável, preservação de partes moles e terapia da mão.\n\nConsolidação viciosa, encurtamento, rotação e pseudartrose também podem prejudicar o resultado, mas são problemas diferentes. Rotação provoca cruzamento dos dedos e exige atenção mesmo quando o osso parece pouco angulado. A pergunta não pede a complicação que mais exige correção óssea; pede a mais frequente depois da cirurgia.\n\n**Leia “Consolidação viciosa e rigidez”**, na seção das falanges do resumo “Fraturas e luxações da mão”, para relacionar adesão tendínea, contratura e prevenção.",
+   "correta": "O gabarito B é **consolidação viciosa**, isto é, união com rotação, angulação ou encurtamento residual. Ela é uma complicação importante e pode exigir correção quando altera função. A ressalva é que o resumo do Rockwood chama **rigidez** de evento adverso mais comum nas falanges e não oferece essa palavra entre as alternativas. Preserva-se a resposta da banca sem atribuir ao livro o mesmo ranking.",
+   "incorretas": {
+    "A": "Infecção é uma complicação possível, sobretudo quando há exposição e lesão de partes moles, mas não é o evento mais comum das falanges destacado no resumo. A fonte prioriza rigidez e também discute consolidação viciosa. Não se deve escolher um evento por gravidade sem evidência de sua frequência. Nesta prova, o gabarito oficial aponta B.",
+    "C": "Pseudartrose é falta de consolidação, diferente de consolidação em posição inadequada. O resumo não a apresenta como o evento mais frequente nas falanges. A pergunta contrapõe complicações de naturezas diferentes, e a resposta oficial é consolidação viciosa. A distinção entre não consolidar e consolidar com deformidade deve permanecer clara.",
+    "D": "Lesão tendínea pode acompanhar o trauma, mas a restrição pós-tratamento também pode surgir de **aderência** de um tendão íntegro, sem nova ruptura. O resumo usa essas aderências para explicar rigidez, que é o evento adverso mais comum descrito. A opção não substitui automaticamente rigidez nem supera o gabarito B. São conceitos relacionados, porém não equivalentes."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false,
+   "alerta": "O gabarito oficial é B, consolidação viciosa. O resumo do Rockwood descreve rigidez como evento adverso mais comum da falange proximal e destaca consolidação viciosa entre os eventos importantes. Rigidez não consta das opções; não atribuir ao livro o ranking exato da banca."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-1225": {
+  "questaoSha256": "e97c06c38a9296ff5d10062c6029d7fde6baa1bbcbc4f133db1030220727b3f8",
+  "comentarioAnteriorSha256": "63f6984d6e69294ed57a3a8d3e83e595621f9e3097ddd7e1cb8c6eb07464dc70",
+  "comentario": {
+   "conceito": "**Elson investiga como a força extensora chega à falange média e à distal.** Com a IFP a 90° na borda da mesa, o paciente tenta estendê-la contra resistência. O examinador avalia a IFD: se a banda central está íntegra, ela transmite força à base dorsal da falange média e a IFD permanece relativamente frouxa. Se a banda central rompe, o tendão terminal e as bandas laterais são recrutados, e a IFD fica rígida e estende.\n\nPor isso, observar extensão distal nesse contexto não prova integridade da banda central; pode indicar precisamente sua falha. É necessário distinguir o resultado do teste das posições usadas no tratamento. A lesão aguda da banda central é protegida com IFP em extensão e IFD livre para flexão ativa.\n\nA radiografia normal não afasta uma lesão tendínea fechada. A anatomia e o exame dirigido permitem procurar uma ruptura que pode evoluir com deformidade em botoeira. O teste não deve ser reduzido a pedir extensão da ponta sem posicionar a IFP e avaliar a resistência e a rigidez distal.\n\n**Leia “Teste de Elson”**, na seção “Interfalângica proximal: luxações e banda central” do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+   "correta": "**a) Teste.** Realizar o teste de Elson: colocar a IFP a 90° na borda da mesa e pedir extensão da IFP contra resistência, avaliando a resposta da IFD. A banda central íntegra transmite força à falange média e deixa a IFD relativamente frouxa; na ruptura, a IFD fica rígida e tende a estender pela transmissão ao sistema lateral e terminal. Dor e edema podem dificultar o exame e precisam ser considerados.\n\n**b) Proteção.** No tratamento conservador descrito, manter apenas a IFP em extensão por 4 a 6 semanas, deixando IFD e MCF livres para movimento ativo. A flexão ativa da IFD é estimulada. Não confundir a postura diagnóstica a 90° com a posição da tala.\n\n**c) Evolução.** A lesão inicial pode não apresentar ainda a deformidade em botoeira estabelecida. Com o tempo sem proteção adequada, a alteração do equilíbrio extensor pode tornar a postura deformada e a perda de movimento mais evidentes. O resumo descreve a preocupação com botoeira tardia, mas não fixa três semanas como prazo universal para sua instalação. Na consulta tardia, reavaliar mobilidade e se já há contratura, sem supor que toda paciente terá exatamente o mesmo exame.",
+   "incorretas": {},
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Interfalângica proximal: luxações e banda central."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Interfalângica proximal: luxações e banda central"
+    ],
+    "blocos": [
+     "interfalangica-proximal-luxacoes-e-banda-central-4c7f4435",
+     "interfalangica-proximal-luxacoes-e-banda-central-556671ca",
+     "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d",
+     "interfalangica-proximal-luxacoes-e-banda-central-d8e60806",
+     "interfalangica-proximal-luxacoes-e-banda-central-508c4bcb",
+     "interfalangica-proximal-luxacoes-e-banda-central-a32d040c",
+     "interfalangica-proximal-luxacoes-e-banda-central-8f87fd12",
+     "interfalangica-proximal-luxacoes-e-banda-central-811e2679",
+     "interfalangica-proximal-luxacoes-e-banda-central-3aba11e5",
+     "interfalangica-proximal-luxacoes-e-banda-central-81b83900",
+     "interfalangica-proximal-luxacoes-e-banda-central-6a0d295f",
+     "interfalangica-proximal-luxacoes-e-banda-central-0758ff49",
+     "interfalangica-proximal-luxacoes-e-banda-central-cfd70f88",
+     "interfalangica-proximal-luxacoes-e-banda-central-e6cf58b5",
+     "interfalangica-proximal-luxacoes-e-banda-central-3e5d6f33",
+     "interfalangica-proximal-luxacoes-e-banda-central-2c34e421",
+     "interfalangica-proximal-luxacoes-e-banda-central-4e6490a4",
+     "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
+     "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
+   }
+  ]
+ },
+ "mao-1512": {
+  "questaoSha256": "a2be7bd371e1d874d652910336d69b401acd733e6100db62f98dbb79e3578dad",
+  "comentarioAnteriorSha256": "a9b5007daa2e834acc0b1bbb3d443db27d76e155e653319f17e0dfa148008d77",
+  "comentario": {
+   "conceito": "**Elson investiga como a força extensora chega à falange média e à distal.** Com a IFP a 90° na borda da mesa, o paciente tenta estendê-la contra resistência. O examinador avalia a IFD: se a banda central está íntegra, ela transmite força à base dorsal da falange média e a IFD permanece relativamente frouxa. Se a banda central rompe, o tendão terminal e as bandas laterais são recrutados, e a IFD fica rígida e estende.\n\nPor isso, observar extensão distal nesse contexto não prova integridade da banda central; pode indicar precisamente sua falha. É necessário distinguir o resultado do teste das posições usadas no tratamento. A lesão aguda da banda central é protegida com IFP em extensão e IFD livre para flexão ativa.\n\nA radiografia normal não afasta uma lesão tendínea fechada. A anatomia e o exame dirigido permitem procurar uma ruptura que pode evoluir com deformidade em botoeira. O teste não deve ser reduzido a pedir extensão da ponta sem posicionar a IFP e avaliar a resistência e a rigidez distal.\n\n**Leia “Teste de Elson”**, na seção “Interfalângica proximal: luxações e banda central” do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+   "correta": "A extensão distal no posicionamento descrito demonstra que as **bandas laterais** conseguem transmitir força ao mecanismo terminal. Ela não confirma integridade da banda central; no Elson completo, IFD rígida em extensão favorece justamente ruptura central. A alternativa C é a conclusão compatível com a transmissão lateral. A redação simplifica a manobra ao pedir extensão da IFD; a avaliação formal inclui extensão da IFP contra resistência.",
+   "incorretas": {
+    "A": "O teste de Elson descrito na fonte avalia a distribuição de força entre banda central e sistema lateral-terminal. A observação de extensão distal não demonstra isoladamente integridade do ligamento retinacular oblíquo. A opção atribui a um ligamento específico uma conclusão que a manobra não fornece. O raciocínio deve acompanhar o trajeto extensor efetivamente recrutado.",
+    "B": "O resumo não usa essa resposta para demonstrar integridade do ligamento retinacular transverso. O achado mostra transmissão pelo sistema lateral e terminal, e precisa ser interpretado em relação à banda central. Não se deve converter um movimento observado em prova de integridade de toda estrutura próxima. A alternativa ultrapassa a conclusão permitida pelo teste.",
+    "D": "A extensão rígida da IFD com IFP a 90° não prova que a banda central esteja íntegra. No teste formal, ela favorece **ruptura** central e recrutamento das bandas laterais e do tendão terminal. A alternativa inverte a interpretação. A capacidade de estender a ponta não equivale à integridade de toda a cadeia extensora proximal."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Interfalângica proximal: luxações e banda central."
+   ],
+   "conferido": false,
+   "alerta": "A redação descreve uma versão simplificada da manobra. O Elson formal usa tentativa de extensão da IFP a 90° contra resistência e avaliação da rigidez/extensão da IFD. O gabarito C reconhece a transmissão pelas bandas laterais; não deve ser lido como prova de banda central íntegra."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Interfalângica proximal: luxações e banda central"
+    ],
+    "blocos": [
+     "interfalangica-proximal-luxacoes-e-banda-central-4c7f4435",
+     "interfalangica-proximal-luxacoes-e-banda-central-556671ca",
+     "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d",
+     "interfalangica-proximal-luxacoes-e-banda-central-d8e60806",
+     "interfalangica-proximal-luxacoes-e-banda-central-508c4bcb",
+     "interfalangica-proximal-luxacoes-e-banda-central-a32d040c",
+     "interfalangica-proximal-luxacoes-e-banda-central-8f87fd12",
+     "interfalangica-proximal-luxacoes-e-banda-central-811e2679",
+     "interfalangica-proximal-luxacoes-e-banda-central-3aba11e5",
+     "interfalangica-proximal-luxacoes-e-banda-central-81b83900",
+     "interfalangica-proximal-luxacoes-e-banda-central-6a0d295f",
+     "interfalangica-proximal-luxacoes-e-banda-central-0758ff49",
+     "interfalangica-proximal-luxacoes-e-banda-central-cfd70f88",
+     "interfalangica-proximal-luxacoes-e-banda-central-e6cf58b5",
+     "interfalangica-proximal-luxacoes-e-banda-central-3e5d6f33",
+     "interfalangica-proximal-luxacoes-e-banda-central-2c34e421",
+     "interfalangica-proximal-luxacoes-e-banda-central-4e6490a4",
+     "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
+     "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
+   }
+  ]
+ },
+ "mao-1535": {
+  "questaoSha256": "f317c30136f20648d21dfa0fd66751e236e3e2dd2fee9618f33ccb834eef706c",
+  "comentarioAnteriorSha256": "d9c7538d956363b08f58f8d2a92c5a3f3538a5daf51d6a13b3d34109a4f7e5bd",
+  "comentario": {
+   "conceito": "**Elson investiga como a força extensora chega à falange média e à distal.** Com a IFP a 90° na borda da mesa, o paciente tenta estendê-la contra resistência. O examinador avalia a IFD: se a banda central está íntegra, ela transmite força à base dorsal da falange média e a IFD permanece relativamente frouxa. Se a banda central rompe, o tendão terminal e as bandas laterais são recrutados, e a IFD fica rígida e estende.\n\nPor isso, observar extensão distal nesse contexto não prova integridade da banda central; pode indicar precisamente sua falha. É necessário distinguir o resultado do teste das posições usadas no tratamento. A lesão aguda da banda central é protegida com IFP em extensão e IFD livre para flexão ativa.\n\nA radiografia normal não afasta uma lesão tendínea fechada. A anatomia e o exame dirigido permitem procurar uma ruptura que pode evoluir com deformidade em botoeira. O teste não deve ser reduzido a pedir extensão da ponta sem posicionar a IFP e avaliar a resistência e a rigidez distal.\n\n**Leia “Teste de Elson”**, na seção “Interfalângica proximal: luxações e banda central” do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+   "correta": "O **teste de Elson** é indicado para investigar a banda central na lesão da zona III. Seu mecanismo depende de avaliar extensão da IFP contra resistência, com IFP a 90°, e a resposta da IFD. Isso permite reconhecer a falha central mesmo quando a radiografia não mostra fratura. A alternativa D corresponde ao exame descrito no resumo.",
+   "incorretas": {
+    "A": "A botoeira pode ser uma consequência **tardia** da ruptura da banda central; não é necessário haver deformidade completa imediatamente. Na fase aguda podem predominar dor e edema, tornando o exame dirigido importante. O resumo enfatiza proteger a banda central para evitar essa evolução. A opção transforma uma possível sequela em um sinal imediato obrigatório ou usual.",
+    "B": "A IFP é mantida em extensão, mas a IFD deve permanecer **livre** para movimento ativo, especialmente flexão. Imobilizar ambas indiscriminadamente elimina a mobilização distal que o protocolo busca preservar. A posição do teste, a posição da tala e as articulações que ficam livres são informações diferentes. A alternativa amplia a proteção além do que a fonte descreve.",
+    "C": "O resumo informa que a IFP **pode** ser pinada em reparos selecionados; não afirma que o fio transarticular seja obrigatório em toda cirurgia. A escolha depende da lesão e da estabilidade do reparo. Transformar um recurso de proteção em exigência universal é mais forte que a recomendação disponível. O uso de fio não define sozinho o diagnóstico nem o tratamento de todos os casos."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Interfalângica proximal: luxações e banda central."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Interfalângica proximal: luxações e banda central"
+    ],
+    "blocos": [
+     "interfalangica-proximal-luxacoes-e-banda-central-4c7f4435",
+     "interfalangica-proximal-luxacoes-e-banda-central-556671ca",
+     "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d",
+     "interfalangica-proximal-luxacoes-e-banda-central-d8e60806",
+     "interfalangica-proximal-luxacoes-e-banda-central-508c4bcb",
+     "interfalangica-proximal-luxacoes-e-banda-central-a32d040c",
+     "interfalangica-proximal-luxacoes-e-banda-central-8f87fd12",
+     "interfalangica-proximal-luxacoes-e-banda-central-811e2679",
+     "interfalangica-proximal-luxacoes-e-banda-central-3aba11e5",
+     "interfalangica-proximal-luxacoes-e-banda-central-81b83900",
+     "interfalangica-proximal-luxacoes-e-banda-central-6a0d295f",
+     "interfalangica-proximal-luxacoes-e-banda-central-0758ff49",
+     "interfalangica-proximal-luxacoes-e-banda-central-cfd70f88",
+     "interfalangica-proximal-luxacoes-e-banda-central-e6cf58b5",
+     "interfalangica-proximal-luxacoes-e-banda-central-3e5d6f33",
+     "interfalangica-proximal-luxacoes-e-banda-central-2c34e421",
+     "interfalangica-proximal-luxacoes-e-banda-central-4e6490a4",
+     "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
+     "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
+   }
+  ]
+ },
+ "trauma-0168": {
+  "questaoSha256": "7370e833b8d9877f6dd24e708521ed660ad77fe1957e8433114ba6a20a1c29b4",
+  "comentarioAnteriorSha256": "fd7d7d8fdd6eba8827c7994a34ab9d4fedbf0a687b308171afd918b9b5e5a50a",
+  "comentario": {
+   "conceito": "**A borda volar da base da falange média é o contraforte contra subluxação dorsal da IFP.** Quanto maior a perda desse apoio, maior a possibilidade de a base escorregar e deixar de deslizar congruentemente sobre a cabeça proximal. O tamanho do fragmento precisa ser avaliado junto ao arco em que a redução se mantém.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, divide as lesões em estáveis com menos de 30%, tênues entre 30% e 50% que mantêm redução com menos de 30° de flexão, e instáveis acima de 50% ou com necessidade de mais de 30° de flexão. O algoritmo e figuras também chamam atenção para risco crescente acima de **40%**. Esses cortes não são todos definições da mesma variável.\n\nO texto relaciona fragmentos maiores à perda do colateral e da placa volar, enquanto 40% aparece como limiar de alerta para instabilidade. O sinal do V no perfil e a avaliação dinâmica mostram perda de congruência. Não se deve usar um percentual isolado para ignorar que uma articulação já subluxa ou só se mantém muito fletida.\n\n**Leia “Estabilidade pelo tamanho do fragmento volar”**, na seção da fratura-luxação da IFP do resumo da Biblioteca.",
+   "correta": "A banca escolheu **fratura cominutiva**, por exclusão das outras opções, mas cominuição sozinha não é uma indicação de tratamento conservador. O resumo considera congruência, porcentagem de superfície e arco de estabilidade; no pilão cominutivo e articular completo, o resultado sem estabilização é desfavorável. Assim, B deve ser entendida como o gabarito desta questão incompleta, sem autorizar tratar toda base cominuída apenas com tala.",
+   "incorretas": {
+    "A": "Subluxação dorsal demonstra perda de congruência e do apoio volar. Não se pode considerá-la uma situação estável apenas por ser reduzível em determinada posição. O tratamento precisa recuperar e manter relação articular no arco permitido. A alternativa não oferece as condições de estabilidade que justificariam movimento protegido sem estabilização adicional.",
+    "C": "Uma fratura articular completa pode envolver toda a base e, no padrão de pilão, apresentar depressão e cominuição. O resumo descreve mau resultado sem estabilização nesses padrões e preferência por tração dinâmica conforme a geometria. A alternativa não demonstra uma articulação congruente e estável para tratamento não operatório. O nome “completa” muda a extensão do dano articular.",
+    "D": "Acima de cerca de 40% a 50% aumenta o risco de perda do contraforte e instabilidade. O percentual deve ser associado à avaliação dinâmica, e não usado para presumir estabilidade. A opção foi escolhida entre as indicações de maior preocupação cirúrgica no material da banca. Ela não caracteriza por si um padrão seguro para tratamento conservador."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Fratura-luxação da IFP e base da falange média."
+   ],
+   "conferido": false,
+   "alerta": "Gabarito B, por exclusão. O resumo não usa cominuição isolada como indicação conservadora: depende de congruência e estabilidade; o pilão articular completo cominutivo vai mal sem estabilização. A pergunta não fornece dados suficientes para transformar B em uma recomendação clínica geral."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Fratura-luxação da IFP e base da falange média"
+    ],
+    "blocos": [
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+   }
+  ]
+ },
+ "trauma-0553": {
+  "questaoSha256": "349b43a153c2f7e502ae09b85a09df86955119549c68ead814535b09edb55bcd",
+  "comentarioAnteriorSha256": "c9ab65d998eac108f7f5d1e3330ff7e5f889cd195c20fedbe0da00ac5a0bb66b",
+  "comentario": {
+   "conceito": "**A borda volar da base da falange média é o contraforte contra subluxação dorsal da IFP.** Quanto maior a perda desse apoio, maior a possibilidade de a base escorregar e deixar de deslizar congruentemente sobre a cabeça proximal. O tamanho do fragmento precisa ser avaliado junto ao arco em que a redução se mantém.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, divide as lesões em estáveis com menos de 30%, tênues entre 30% e 50% que mantêm redução com menos de 30° de flexão, e instáveis acima de 50% ou com necessidade de mais de 30° de flexão. O algoritmo e figuras também chamam atenção para risco crescente acima de **40%**. Esses cortes não são todos definições da mesma variável.\n\nO texto relaciona fragmentos maiores à perda do colateral e da placa volar, enquanto 40% aparece como limiar de alerta para instabilidade. O sinal do V no perfil e a avaliação dinâmica mostram perda de congruência. Não se deve usar um percentual isolado para ignorar que uma articulação já subluxa ou só se mantém muito fletida.\n\n**Leia “Estabilidade pelo tamanho do fragmento volar”**, na seção da fratura-luxação da IFP do resumo da Biblioteca.",
+   "correta": "O gabarito B corresponde ao limiar de **40%** usado em figuras e algoritmo do resumo para risco crescente de instabilidade. A leitura deve ser complementada pelo arco em que a redução se mantém. Há ainda uma imprecisão anatômica no enunciado: o fragmento volar discutido nessa fratura-luxação é da **base da falange média**, que articula com a cabeça da proximal. O número não deve ser usado para apagar essa distinção.",
+   "incorretas": {
+    "A": "Vinte por cento está abaixo da faixa de risco escolhida pela banca e se situa entre os fragmentos menores, frequentemente estáveis quando a avaliação confirma congruência. Isso não significa que toda lesão de 20% seja automaticamente normal. A questão pede o limiar de alerta de 40%, e não qualquer porcentagem de acometimento.",
+    "C": "Sessenta por cento representa comprometimento ainda maior e é compatível com instabilidade, mas não é o **limiar a partir do qual** o risco é destacado pelo algoritmo citado. Escolher apenas um número maior não responde à pergunta sobre o ponto inicial de alerta. A diferença entre limiar e situação já avançada é o detalhe decisivo.",
+    "D": "Oitenta por cento corresponde a uma perda articular muito mais extensa que a fronteira de 40% usada pela banca. Pode integrar um padrão grave, mas não define o menor valor pedido. O tratamento não deve esperar chegar a esse tamanho para reconhecer subluxação ou necessidade de flexão excessiva. A avaliação dinâmica também continua necessária."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Fratura-luxação da IFP e base da falange média."
+   ],
+   "conferido": false,
+   "alerta": "O gabarito é B, 40%, como limiar de risco do algoritmo descrito. O fragmento volar relevante é da base da falange média; o enunciado o localiza de forma imprecisa na superfície distal da falange proximal. Estabilidade também depende da congruência e da flexão necessária para manter redução."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Fratura-luxação da IFP e base da falange média"
+    ],
+    "blocos": [
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+   }
+  ]
+ },
+ "trauma-0697": {
+  "questaoSha256": "0f70e1431c3f4d79dd27f768060bd74190085088240a447bc426b2c7b787e375",
+  "comentarioAnteriorSha256": "b97e07e61a92b94bdaed936e0413d7965b6accb5f3a1f7872ca9b3a35710d2c2",
+  "comentario": {
+   "conceito": "**Consolidação viciosa é união do metacarpo em alinhamento inadequado.** Pode haver rotação, angulação ou encurtamento residual. O resumo do Rockwood & Green, 10ª edição, capítulo 45, a destaca como a complicação mais comum das fraturas metacarpais em geral. No traço transverso, angulação e rotação preocupam; no espiral, rotação e encurtamento.\n\nO problema funcional depende do desvio. O cruzamento dos dedos altera a preensão e não é compensado por uma radiografia aparentemente aceitável. Angulação de ápice dorsal pode causar pseudogarra e déficit de extensão. A avaliação clínica, comparando com a outra mão, é indispensável para relacionar imagem e função.\n\nO resumo descreve osteotomia transversa para rotação e cunhas para angulação, conforme necessidade de preservar comprimento. Também distingue pseudartrose, que é rara e pode se associar a perda óssea ou distração, de aderência tendínea, mais relacionada a abordagens abertas. Esses problemas não são sinônimos e não têm necessariamente a mesma frequência em todos os subgrupos operatórios.\n\n**Leia “Complicações dos metacarpos”**, na seção dos metacarpos do resumo da Biblioteca.",
+   "correta": "A alternativa C é **consolidação viciosa**, alinhada ao destaque do resumo para os metacarpos em geral. O osso pode consolidar e ainda deixar rotação ou angulação que prejudiquem a preensão e o equilíbrio extensor. A pergunta delimita tratamento cirúrgico; a fonte consultada não fornece uma estratificação numérica de cada técnica. Por isso a resposta é preservada sem inventar uma taxa pós-operatória específica.",
+   "incorretas": {
+    "A": "Infecção pode ocorrer, incluindo infecção de pino ou em lesões expostas, mas o resumo não a coloca como a complicação geral predominante dos metacarpos. O risco muda conforme partes moles e tratamento. Uma complicação potencialmente grave não deve ser escolhida apenas por essa gravidade. O destaque da fonte e o gabarito são consolidação viciosa.",
+    "B": "Pseudartrose é falha de união, diferente de consolidação com deformidade. O resumo a descreve como rara nos metacarpos, associada a fatores como perda óssea ou distração do foco. Portanto, ela não substitui a complicação mais comum apontada. É essencial distinguir qualidade do alinhamento de ocorrência da consolidação.",
+    "D": "Aderência tendínea é uma complicação relevante das abordagens abertas e pode limitar movimento. Isso explica cuidados com periósteo e partes moles e a importância de terapia. Contudo, o resumo destaca consolidação viciosa no conjunto das fraturas metacarpais, e o gabarito escolhe C. Sem dados estratificados por técnica, não se deve criar um ranking específico diferente para todo procedimento aberto."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+   ],
+   "conferido": false,
+   "alerta": "O gabarito é C. O resumo chama consolidação viciosa de complicação mais comum dos metacarpos em geral e destaca aderências nas cirurgias abertas; não fornece frequências comparativas separadas para cada técnica operatória."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+    ],
+    "blocos": [
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+   }
+  ]
+ }
+}
