@@ -3,10 +3,10 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1873,
+  "pendente": 1863,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 10,
+  "pendente-fonte": 20,
   "pendente-inspecao-imagem": 182,
   "revisada": 171
  },
@@ -99,10 +99,10 @@
    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
    "estados": {
     "duplicada": 4,
-    "pendente": 81,
+    "pendente": 71,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 8,
+    "pendente-fonte": 18,
     "pendente-inspecao-imagem": 17,
     "revisada": 101
    }
@@ -8581,8 +8581,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 45 descreve risco de subluxação acima de um terço e indicação pela subluxação, não corte cirúrgico isolado de 25% (B oficial). As opções de mais de 25% e mais de 35% se sobrepõem. Falta fonte primária que fundamente o limiar da banca e a preferência técnica por tamanho isolado; preservar B sem converter a afirmação em regra do resumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -8596,7 +8596,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "cb1c1e8d2f772d7427d5e28bbcda5001dae580ae4d7b0bb9ef5775b6a251a9fe"
+   "questaoSha256": "cb1c1e8d2f772d7427d5e28bbcda5001dae580ae4d7b0bb9ef5775b6a251a9fe",
+   "pendencia": "O resumo 45 descreve risco de subluxação acima de um terço e indicação pela subluxação, não corte cirúrgico isolado de 25% (B oficial). As opções de mais de 25% e mais de 35% se sobrepõem. Falta fonte primária que fundamente o limiar da banca e a preferência técnica por tamanho isolado; preservar B sem converter a afirmação em regra do resumo."
   },
   "mao-0586": {
    "tema": "mao",
@@ -12435,8 +12436,8 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 45 descreve inserções e ruptura de placa volar/colaterais na luxação dorsal da IFP, mas não especifica os locais habituais de falha proximal do colateral e distal da placa cobrados no par de alternativas. É necessária fonte anatômica que diferencie as duas extremidades de ruptura.",
    "temComentario": true,
    "citacoes": [
     {
@@ -12450,7 +12451,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "39d2a42fca9072d4a7b9f10aa74fe8ee7b11589e4478ae11a009a2b971574509"
+   "questaoSha256": "39d2a42fca9072d4a7b9f10aa74fe8ee7b11589e4478ae11a009a2b971574509",
+   "pendencia": "O resumo 45 descreve inserções e ruptura de placa volar/colaterais na luxação dorsal da IFP, mas não especifica os locais habituais de falha proximal do colateral e distal da placa cobrados no par de alternativas. É necessária fonte anatômica que diferencie as duas extremidades de ruptura."
   },
   "mao-1071": {
    "tema": "mao",
@@ -12970,8 +12972,8 @@
    ],
    "prova": "PUC-SP",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 45 descreve os estabilizadores da IFP e sua ruptura, mas não fundamenta a predominância de falha proximal dos ligamentos colaterais sobre as outras localizações. A alternativa B oficial exige conferir esse local típico na fonte primária.",
    "temComentario": true,
    "citacoes": [
     {
@@ -12985,7 +12987,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b43cb7908786f3a77408650f4cf0cbadcdaa242963aabf6285c48f55c4439155"
+   "questaoSha256": "b43cb7908786f3a77408650f4cf0cbadcdaa242963aabf6285c48f55c4439155",
+   "pendencia": "O resumo 45 descreve os estabilizadores da IFP e sua ruptura, mas não fundamenta a predominância de falha proximal dos ligamentos colaterais sobre as outras localizações. A alternativa B oficial exige conferir esse local típico na fonte primária."
   },
   "mao-1135": {
    "tema": "mao",
@@ -13674,8 +13677,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O caso é lesão cortante aberta do extensor terminal, sem fragmento ósseo; o resumo 45 trata principalmente de martelo ósseo e não resolve a indicação de reparo da lesão aberta versus órtese por 6–8 semanas. Falta fonte primária para avaliar B oficial e C sem transferir automaticamente a conduta da lesão óssea fechada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -13689,7 +13692,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "689b0a44f1b766f33baf027d0a618b7262a9beedbdd2f4f7aa4507717491a60d"
+   "questaoSha256": "689b0a44f1b766f33baf027d0a618b7262a9beedbdd2f4f7aa4507717491a60d",
+   "pendencia": "O caso é lesão cortante aberta do extensor terminal, sem fragmento ósseo; o resumo 45 trata principalmente de martelo ósseo e não resolve a indicação de reparo da lesão aberta versus órtese por 6–8 semanas. Falta fonte primária para avaliar B oficial e C sem transferir automaticamente a conduta da lesão óssea fechada."
   },
   "mao-1259": {
    "tema": "mao",
@@ -14005,8 +14009,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 45 identifica checkreins como prolongamentos proximais da placa volar, mas não detalha a continuidade com A2 e C1 nem sua ausência com colaterais. Falta fonte anatômica para julgar individualmente as quatro alternativas; não inferir os vínculos das polias por analogia.",
    "temComentario": true,
    "citacoes": [
     {
@@ -14020,7 +14024,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "8d492f77bcc879e7860433a4cfdf44778605bb8dbc6d37fab82f8accecf6926b"
+   "questaoSha256": "8d492f77bcc879e7860433a4cfdf44778605bb8dbc6d37fab82f8accecf6926b",
+   "pendencia": "O resumo 45 identifica checkreins como prolongamentos proximais da placa volar, mas não detalha a continuidade com A2 e C1 nem sua ausência com colaterais. Falta fonte anatômica para julgar individualmente as quatro alternativas; não inferir os vínculos das polias por analogia."
   },
   "mao-1346": {
    "tema": "mao",
@@ -14667,8 +14672,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 45 sustenta ápice dorsal e o tensionamento dos colaterais em Jahss, mas não define a cortical de cominuição metafisária nem a direção predominante da rotação ulnar/radial cobradas em B/C. Falta fonte para revisar essas afirmações individualmente, embora D oficial tenha apoio para o mecanismo de Jahss.",
    "temComentario": true,
    "citacoes": [
     {
@@ -14682,7 +14687,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "a81f610f5d5c27a8e9f46a3b586044ef6740713dd2c3d9af6d9da56d403e318e"
+   "questaoSha256": "a81f610f5d5c27a8e9f46a3b586044ef6740713dd2c3d9af6d9da56d403e318e",
+   "pendencia": "O resumo 45 sustenta ápice dorsal e o tensionamento dos colaterais em Jahss, mas não define a cortical de cominuição metafisária nem a direção predominante da rotação ulnar/radial cobradas em B/C. Falta fonte para revisar essas afirmações individualmente, embora D oficial tenha apoio para o mecanismo de Jahss."
   },
   "mao-1504": {
    "tema": "mao",
@@ -15078,8 +15084,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 45 não fundamenta o déficit residual aceitável de 10 graus, a classificação de Doyle III nem o tempo específico da lesão tendínea sem osso. Suas seis semanas referem-se ao martelo ósseo sem subluxação. Falta fonte que sustente A oficial e permita discutir B/C sem extrapolar entre lesões.",
    "temComentario": true,
    "citacoes": [
     {
@@ -15093,7 +15099,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "61c95a2f9a923f00b23a85be5a23829c27f8e792795d4ad431f1cbb01fff2c0f"
+   "questaoSha256": "61c95a2f9a923f00b23a85be5a23829c27f8e792795d4ad431f1cbb01fff2c0f",
+   "pendencia": "O resumo 45 não fundamenta o déficit residual aceitável de 10 graus, a classificação de Doyle III nem o tempo específico da lesão tendínea sem osso. Suas seis semanas referem-se ao martelo ósseo sem subluxação. Falta fonte que sustente A oficial e permita discutir B/C sem extrapolar entre lesões."
   },
   "mao-1541": {
    "tema": "mao",
@@ -41555,8 +41562,8 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão exige subtipos de Doyle IV por porcentagem articular; o resumo 45 não usa Doyle e classifica o martelo ósseo por subluxação e lesão epifisária. É necessária a classificação primária com o intervalo que inclui 30%, preservando B oficial sem simular cobertura.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41570,7 +41577,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "bdc54cc24997d5bf2342ff122b15ecf1c966cbbc4438d3886ee7a83d80ad4bb7"
+   "questaoSha256": "bdc54cc24997d5bf2342ff122b15ecf1c966cbbc4438d3886ee7a83d80ad4bb7",
+   "pendencia": "A questão exige subtipos de Doyle IV por porcentagem articular; o resumo 45 não usa Doyle e classifica o martelo ósseo por subluxação e lesão epifisária. É necessária a classificação primária com o intervalo que inclui 30%, preservando B oficial sem simular cobertura."
   },
   "trauma-0472": {
    "tema": "trauma",
@@ -46400,8 +46408,8 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 45 relata divergência entre bancos sobre o bloqueio da luxação MCF do polegar: placa volar em outra questão e flexor longo nesta. Ele descreve a interposição da MCF genericamente e não fundamenta de modo específico o flexor longo como bloqueio no polegar nem distingue adutor/extensores. Falta fonte primária da luxação complexa do polegar para discutir B oficial sem transformar uma possibilidade em exclusividade.",
    "temComentario": true,
    "citacoes": [
     {
@@ -46415,7 +46423,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "2c5348ec82e1c1ff4970bb835c17c5519d921a7013d0bc2a32a558de9b53dabf"
+   "questaoSha256": "2c5348ec82e1c1ff4970bb835c17c5519d921a7013d0bc2a32a558de9b53dabf",
+   "pendencia": "O resumo 45 relata divergência entre bancos sobre o bloqueio da luxação MCF do polegar: placa volar em outra questão e flexor longo nesta. Ele descreve a interposição da MCF genericamente e não fundamenta de modo específico o flexor longo como bloqueio no polegar nem distingue adutor/extensores. Falta fonte primária da luxação complexa do polegar para discutir B oficial sem transformar uma possibilidade em exclusividade."
   },
   "trauma-0872": {
    "tema": "trauma",
@@ -50878,8 +50887,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 45 apresenta forças deformantes e tratamento da Bennett, mas não descreve a sequência da manobra que combine compressão lateral/medial com pronação/supinação na redução. Falta fonte da técnica para fundamentar A e distinguir todos os pares sem confundir força deformante com sua correção.",
    "temComentario": true,
    "citacoes": [
     {
@@ -50893,7 +50902,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b34c7d5eab2c69c2a652275954868e947c4632ddd6a17ccc6ef0ad39198ca726"
+   "questaoSha256": "b34c7d5eab2c69c2a652275954868e947c4632ddd6a17ccc6ef0ad39198ca726",
+   "pendencia": "O resumo 45 apresenta forças deformantes e tratamento da Bennett, mas não descreve a sequência da manobra que combine compressão lateral/medial com pronação/supinação na redução. Falta fonte da técnica para fundamentar A e distinguir todos os pares sem confundir força deformante com sua correção."
   },
   "trauma-1101": {
    "tema": "trauma",

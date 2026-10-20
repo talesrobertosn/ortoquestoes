@@ -5,10 +5,10 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1873 |
+| pendente | 1863 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 10 |
+| pendente-fonte | 20 |
 | pendente-inspecao-imagem | 182 |
 | revisada | 171 |
 
