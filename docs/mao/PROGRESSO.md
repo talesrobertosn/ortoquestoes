@@ -89,7 +89,12 @@ padrão novo. Próximo trabalho, nesta ordem:
    teste de Egawa sem descrevê-lo (38).
 5. (feito) Fim do SIMÃO 2023: gabarito A 25, B 24, C 24, D 24; lições e divergências no fim de
    docs/simulados/simao-engenharia-reversa.md.
-6. **SIMÃO 2026: refazer os comentários** (ver o parágrafo acima, na fila).
+6. **SIMÃO 2026: refazer os comentários** (em andamento). Método: `~/OrtoQuestoes-Biblioteca/lotes/simao-2026/`
+   com `_comentario.py` (cópia em docs/mao/ferramentas/) e um `revisao_NN.py` por grupo de 5 ids, na ordem do
+   acervo (lista em `.oq/simao2026-lista.txt`). Só o comentário muda; enunciado, alternativas, gabarito e id ficam.
+   Aplicar: `aplicar_lote.py ~/OrtoQuestoes-Biblioteca/lotes/simao-2026 mao revisao_NN` (os 8 de cotovelo,
+   ombro-cotovelo-0645 a 0652, num arquivo à parte com o tema ombro-cotovelo).
+   Feito: revisão 01 (mao-1719 a mao-1723). Próximo: revisão 02 (mao-1724 a mao-1728).
 7. SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
 
 **Como foi feito até aqui (repetir igual):**
