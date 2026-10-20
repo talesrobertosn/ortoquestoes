@@ -587,7 +587,7 @@ function CartaoQuestaoExibida({
             )}
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} />
-            <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} />
+            <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} baseResumo={comentarioIA?.baseResumo} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 

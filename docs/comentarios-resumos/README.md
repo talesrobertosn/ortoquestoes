@@ -47,7 +47,7 @@ Preservar enunciado, opções e resposta oficial. Divergências vão em `alerta`
    git diff --check
    ```
    Enunciado e gabarito precisam permanecer intactos. O build produz os avulsos `acervo/c/<id>.json` a partir de `comentarios/<tema>.json`; não editar avulsos à mão. Como o comentário já existia, o índice não precisa de regeneração; para comentário novo, conferir se o campo `cia` já era verdadeiro e regenerar o índice se necessário, dentro do lock.
-10. Conferir visualmente o primeiro exemplo de apresentação e casos especiais em computador/celular. O selo de fonte deve abrir o trecho usado; o convite da Biblioteca ao fim da questão continua disponível. Commit só dos arquivos próprios; PR para `claude/pdfs-questoes-tp64dr`, checks, merge, deploy e conferência do avulso em produção. Não declarar publicado só porque houve push.
+10. Conferir visualmente o primeiro exemplo de apresentação e casos especiais em computador/celular. O selo de fonte deve abrir o trecho usado; o convite da Biblioteca ao fim da questão continua disponível e prioriza a fonte registrada no comentário sobre sugestões genéricas por subtema. Commit só dos arquivos próprios; PR para `claude/pdfs-questoes-tp64dr`, checks, merge, deploy e conferência do avulso em produção. Não declarar publicado só porque houve push.
 
 ## Estados e evidência
 
