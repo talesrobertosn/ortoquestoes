@@ -85,6 +85,19 @@ de um capítulo de livro ou artigo que ele enviou** (nunca de memória); no plan
 resumos abertos; as questões reais são citadas no meio do texto, com botão para resolver. Conteúdo em
 `conteudo/biblioteca/*.md`, gerado com `node scripts/biblioteca/gerar.mjs`.
 
+## Comentários baseados em resumos (pedido de 20/10/2026)
+
+Para revisar questões dos temas com resumo, classificar a fonte ou retomar a fila, leia
+[docs/comentarios-resumos/README.md](docs/comentarios-resumos/README.md) e
+[docs/comentarios-resumos/ANDAMENTO.md](docs/comentarios-resumos/ANDAMENTO.md).
+O inventário completo está em `docs/comentarios-resumos/catalogo.json`; atualize com
+`python3 scripts/comentarios-resumos/catalogo.py atualizar`. Correspondência de subtema é
+candidatura, não revisão concluída. Só atribuir `baseResumo` após conferir individualmente
+conceito e todas as alternativas com os trechos usados. O selo é “Comentário baseado em resumo”.
+Preservar gabaritos, registrar ambiguidades e fonte insuficiente; não inventar página impressa.
+Publicar em lotes, sem nova confirmação, e continuar até tratar a fila inteira. Novos capítulos
+que o Tales enviar depois constituem a próxima fase, com fonte primária e páginas conferidas.
+
 ## SQL para o Supabase (orientação do dono, 08/10/2026)
 
 Toda migração nova também vai para `supabase/colar-no-painel/` e, ao entregar, o SQL completo é
