@@ -4781,19 +4781,63 @@
   "conferido": false
  },
  "pediatria-0378": {
-  "conceito": "**O cotovelo infantil é um quebra-cabeça de centros de ossificação.** Ao nascer, a extremidade distal do úmero é quase toda cartilaginosa. Seis centros secundários de ossificação aparecem ao longo da infância, e conhecer quando cada um **aparece** e quando **se funde** é essencial para não confundir um centro normal com uma fratura (ou o contrário).\n\n**A ordem de aparecimento: CRITOE.**\n\n| Centro | Aparece (aproximado) |\n|---|---|\n| **C**apítulo | 1 a 2 anos |\n| **R**ádio (cabeça) | 3 a 5 anos |\n| Epicôndilo **I**nterno (medial) | 5 a 7 anos |\n| **T**róclea | 7 a 9 anos |\n| **O**lécrano | 9 a 11 anos |\n| Epicôndilo **E**xterno (lateral) | 10 a 12 anos |\n\nAs meninas costumam ficar um a dois anos à frente dos meninos.\n\n**A fusão segue outra lógica.** O mnemônico CRITOE vale para o **aparecimento**, e não para a fusão. Na adolescência:\n1. **Capítulo, tróclea e epicôndilo lateral** se fundem **entre si**, formando uma epífise única (por volta dos 10 a 12 anos).\n2. Essa epífise comum se funde à **metáfise** do úmero (por volta dos 12 a 14 anos).\n3. O **epicôndilo medial**, que é uma **apófise** separada (origem dos flexores-pronadores e do ligamento colateral medial), é o **último a se fundir**, por volta dos **14 a 17 anos** (às vezes mais tarde em meninos).\n\n**Por que isso importa clinicamente.**\n- **Fratura do epicôndilo medial**: por ser a última apófise a fechar, ela permanece vulnerável até o fim da adolescência, sobretudo em arremessadores (cotovelo da liga infantil) e nas luxações do cotovelo.\n- **Encarceramento do epicôndilo** na articulação após luxação: se a tróclea aparece ossificada na radiografia, o epicôndilo medial (que aparece antes dela) **tem que estar visível** no seu lugar; se não estiver, pode estar dentro da articulação.\n- **Radiografia comparativa** do outro cotovelo ajuda quando há dúvida.",
-  "correta": "**Correta: B (do capítulo).** O capítulo é o primeiro centro de ossificação do cotovelo a aparecer, por volta de 1 a 2 anos, a letra **C** do mnemônico CRITOE.",
+  "conceito": "**O cotovelo infantil ossifica por etapas.** Ao nascer, parte importante das extremidades do úmero, rádio e ulna ainda é cartilagem, invisível na radiografia simples. Os centros secundários aparecem progressivamente; reconhecer a ordem evita interpretar uma estrutura normal como fratura ou deixar de perceber um centro deslocado.\n\nO **capítulo é o primeiro**, em torno de 1 ano, com variação individual. Depois aparecem cabeça do rádio e epicôndilo medial; olécrano, tróclea e epicôndilo lateral pertencem ao grupo tardio. Na tabela do capítulo, o epicôndilo lateral é o último a aparecer. Isso é diferente de fusão: o epicôndilo medial é o último a se unir à metáfise, apesar de surgir antes do lateral.",
+  "correta": "**B: capítulo.** Seu núcleo aparece por volta de 1 ano e antecede os outros centros do cotovelo. O resumo admite variação até 18 a 24 meses; portanto, a ordem ajuda mais que transformar a idade média num prazo rígido para cada criança.",
   "incorretas": {
-   "A": "A **tróclea** é o quarto centro a aparecer (T de CRITOE), entre 7 e 9 anos.",
-   "C": "O **epicôndilo lateral** é o **último** a aparecer (E de CRITOE), por volta dos 10 a 12 anos.",
-   "D": "O **epicôndilo medial** é o terceiro a aparecer (I de CRITOE), entre 5 e 7 anos, e o último a se fundir."
+   "A": "**A tróclea aparece tardiamente, por volta de 9 a 10 anos.** Pode surgir por múltiplos núcleos irregulares, com aparência fragmentada normal. Apesar de integrar a superfície articular junto do capítulo, não ossifica ao mesmo tempo que ele.",
+   "C": "**O epicôndilo lateral é o último a aparecer, não o primeiro.** Na tabela apresentada, surge aproximadamente aos 10 anos nas meninas e 12 nos meninos. Ele se funde rapidamente ao côndilo lateral; aparecimento tardio e fusão tardia não são sinônimos.",
+   "D": "**O epicôndilo medial surge depois do capítulo e próximo da cabeça do rádio.** Seu destaque é ser o último centro a se fundir com a metáfise distal do úmero. A alternativa troca a ordem de aparecimento pela ordem de fusão."
   },
   "referencias": [
-   "A Segmental Approach to Imaging of Sports-Related Injuries of the Pediatric Elbow. PMCID: PMC3435948.",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "68d84669af0bd21ef8473231b69d834722b7a2cb95450a3e373b8098acb65bbe",
+   "comentarioSha256": "6f44f3f53520a1d1bf7475ffb5d03ea2ecef68b7c9d364daf98f81c014909018"
+  }
  },
  "pediatria-0379": {
   "conceito": "**O torcicolo muscular congênito.** É a causa **mais comum** de torcicolo no lactente e é **indolor**. Resulta da **fibrose** do músculo esternocleidomastoideo (ECM), provavelmente por uma síndrome compartimental intrauterina ou de parto: o músculo fica encurtado.\n\n**A apresentação.**\n- **Cabeça inclinada para o mesmo lado** do ECM acometido e **queixo rodado para o lado oposto** (o ECM inclina a cabeça para o seu lado e gira a face para o lado contrário).\n- **Nódulo** ou massa (a \"oliva\" ou pseudotumor) palpável no ventre do ECM, que aparece nas **primeiras semanas** de vida (geralmente entre 2 e 4 semanas) e regride em alguns meses.\n- **Plagiocefalia** e assimetria facial podem se desenvolver se não tratado.\n- Associações: **displasia do desenvolvimento do quadril** (cerca de 10% a 20%), metatarso aduto, parto difícil ou pélvico (doenças do \"aperto\" intrauterino).\n\n**O diagnóstico diferencial (torcicolo não muscular).**\n| Causa | Pista |\n|---|---|\n| Anomalias **ósseas** (Klippel-Feil, hemivértebra) | Rigidez, radiografia alterada |\n| Torcicolo **ocular** (paralisia do IV nervo) | Corrige quando um olho é tapado |\n| Subluxação rotatória C1-C2 (Grisel) | **Doloroso**, após infecção ou trauma |\n| Tumor de fossa posterior, síndrome de Sandifer (refluxo) | Sinais neurológicos ou relação com alimentação |\n\n**O tratamento.** O **alongamento** passivo e o posicionamento resolvem mais de **90%** dos casos no primeiro ano. A cirurgia (liberação do ECM, uni ou bipolar) fica para o torcicolo persistente após **1 ano**, com restrição significativa da rotação ou assimetria facial progressiva.\n\n**A síndrome de Klippel-Feil.** É a **fusão congênita** de duas ou mais vértebras cervicais, por falha da segmentação entre a 3ª e a 8ª semana. A tríade clássica (pescoço **curto**, linha de implantação **baixa** dos cabelos e **limitação** da mobilidade cervical) aparece em menos da metade. Pode causar **torcicolo indolor** (sobretudo com hemivértebras ou fusões assimétricas), que **não** responde a alongamentos, porque a causa é óssea.\n\n**As associações (é preciso investigar).** **Escoliose** congênita, deformidade de **Sprengel** (em cerca de um terço), anomalias **renais** (ultrassonografia), **surdez**, cardiopatias, sincinesia (movimentos em espelho das mãos).\n\n**O risco.** Os segmentos móveis entre as fusões sofrem **hipermobilidade** e degeneração, com risco de **instabilidade** e lesão medular após trauma menor; esportes de contato devem ser discutidos com a família.",
@@ -6781,18 +6825,48 @@
   "conferido": false
  },
  "pediatria-0525": {
-  "conceito": "**O que as radiografias mostram.** No AP e no perfil do cotovelo de um lactente de 12 meses, o rádio e a ulna estão deslocados **juntos, em bloco**, em relação ao úmero distal, para medial e posterior. A relação entre o rádio e o capítulo (que nessa idade mal começou a ossificar) está preservada, e a ulna continua alinhada com o rádio.\n\n**Por que não é luxação.** Na luxação do cotovelo, o rádio e a ulna deslocam-se em relação ao úmero, mas a cabeça do rádio perde a relação com o capítulo. No **descolamento epifisário transfisário** do úmero distal, toda a epífise cartilaginosa (com o capítulo e a tróclea) vai junto com o antebraço, e por isso a relação radiocapitelar se mantém. Além disso, a luxação do cotovelo é **raríssima** em menores de 3 anos, porque a fise é o elo mais fraco.\n\n**Quem tem essa lesão.**\n- Lactentes e crianças **menores de 3 anos**, nas quais a fise distal do úmero é larga e cartilaginosa.\n- Causas principais: **trauma de parto** e **maus-tratos**. Uma história vaga, sem trauma relatado, num bebê com fratura deve levantar a suspeita de abuso e motivar a investigação (inventário esquelético, fundo de olho, notificação).\n\n**Como confirmar.** A **ultrassonografia** mostra a epífise cartilaginosa deslocada; a artrografia intraoperatória delimita o contorno articular; a ressonância é opção em casos duvidosos.\n\n**Tratamento.** Redução fechada (corrigindo o desvio medial para evitar o cúbito varo) e fixação percutânea com fios de Kirschner, com artrografia para guiar. O cúbito varo é a sequela mais comum quando o desvio não é corrigido.\n\n**Diferenciais das alternativas.**\n- **Pronação dolorosa**: radiografia normal, sem edema.\n- **Artrite séptica**: febre, derrame e provas inflamatórias elevadas, radiografia sem desvio ósseo.",
-  "correta": "**Correta: D (fratura fisária do úmero distal).** Num lactente sem história de trauma, com edema e pseudoparalisia, o desvio do rádio e da ulna em bloco em relação ao úmero, com a relação radiocapitelar preservada, indica descolamento transfisário do úmero distal.",
+  "conceito": "**O cotovelo do lactente pode parecer luxado quando a lesão atravessa a fise.** Aos 12 meses, a epífise distal do úmero ainda é predominantemente cartilaginosa. Na separação transfisária, rádio, ulna e bloco epifisário podem deslocar-se juntos em relação à metáfise, enquanto a radiografia mostra pouco da epífise.\n\nNas incidências apresentadas, há perda do alinhamento do antebraço com a metáfise distal do úmero; o pequeno núcleo distal não permite avaliar toda a superfície cartilaginosa. Em conjunto com idade, edema e pseudoparalisia, o achado favorece **fratura fisária distal do úmero**. Ultrassonografia ou RM ajudam a demonstrar a epífise. A falta de história clara exige avaliação cuidadosa de possível trauma não acidental, sem concluir sua causa apenas pela imagem. Ausência de febre isoladamente também não exclui infecção.",
+  "correta": "**D: fratura fisária do úmero distal.** A idade e o desalinhamento radiográfico são compatíveis com separação do bloco epifisário ainda cartilaginoso. O movimento aparente de rádio e ulna em relação ao úmero pode simular luxação, razão para confirmar a relação da epífise por ultrassom ou RM quando necessário.",
   "incorretas": {
-   "A": "Na **pronação dolorosa**, a radiografia é normal e não há edema importante; o braço fica pendente e pronado.",
-   "B": "A **luxação do cotovelo** é raríssima antes dos 3 anos, e nela a cabeça do rádio perde a relação com o capítulo, o que não ocorre aqui.",
-   "C": "A **artrite séptica** cursa com febre e derrame, e a radiografia não mostra desvio dos ossos do antebraço em relação ao úmero."
+   "A": "**Pronação dolorosa não explica este conjunto de edema importante e desalinhamento radiográfico.** O resumo descreve radiografia normal e ausência de edema relevante nesse diagnóstico. A criança não deve ser encaminhada simplesmente a uma manobra de pronação dolorosa diante desses achados.",
+   "B": "**A luxação é uma aparência enganosa no lactente.** Nessa idade, a fise pode ceder antes da articulação. A separação transfisária desloca o conjunto distal e preserva a relação entre antebraço e epífise cartilaginosa; na luxação verdadeira, a relação radiocapitelar se perde.",
+   "C": "**Artrite séptica pode causar dor, edema e pseudoparalisia, e a falta de febre não a exclui sozinha.** Entretanto, ela não explica o deslocamento do antebraço em relação à metáfise como uma separação fisária. A alteração estrutural da imagem, junto da idade, é o dado que favorece a alternativa D."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn), Cap. 18"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção As lesões que a radiografia esconde."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "As lesões que a radiografia esconde"
+     ],
+     "blocos": [
+      "as-lesoes-que-a-radiografia-esconde-7e866d45",
+      "as-lesoes-que-a-radiografia-esconde-218c010c",
+      "as-lesoes-que-a-radiografia-esconde-1920433c",
+      "as-lesoes-que-a-radiografia-esconde-74fb220d",
+      "as-lesoes-que-a-radiografia-esconde-0a04df77",
+      "as-lesoes-que-a-radiografia-esconde-a01f2923",
+      "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+      "as-lesoes-que-a-radiografia-esconde-1542b255"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "afac64e119d43028186b44bed45430b34d373ad51a454f8bc8985e3c6453c82c"
+    }
+   ],
+   "questaoSha256": "b8c482dce7df333b485a143b02caa03831855f1462a067ce60fe658fbfdff8f5",
+   "comentarioSha256": "42fb883ed1906b87cf08bacf91093e7aef2504b686bc2bc2d10d2d6ef1b448b3"
+  }
  },
  "pediatria-0526": {
   "conceito": "**O colágeno tipo I.** É a principal proteína do osso, da pele, dos tendões, da esclera e da dentina. Cada molécula é uma **tripla hélice** formada por três cadeias: duas **alfa-1** (gene **COL1A1**) e uma **alfa-2** (gene **COL1A2**).\n\n**Por que a glicina é tão importante.** Na hélice, a sequência de aminoácidos se repete no padrão **Gly-X-Y**: a cada três posições, há uma **glicina**. Muitas vezes, X é **prolina** e Y é **hidroxiprolina**. A glicina é o **menor aminoácido**, e só ela cabe no **centro apertado** da tripla hélice, onde as três cadeias se encontram.\n\n**Os dois tipos de defeito.**\n\n| Defeito | Mecanismo | Gravidade |\n|---|---|---|\n| **Quantitativo** | Um alelo não produz cadeia (alelo nulo): metade do colágeno, mas **normal** | **Leve** (tipo I de Sillence) |\n| **Qualitativo** | **Substituição de uma glicina** por um aminoácido maior: colágeno **anormal** | Moderado a **letal** (tipos II, III e IV) |\n\n**O efeito dominante negativo.** Quando a glicina é substituída, a cadeia defeituosa **entra na hélice** e estraga a molécula inteira. É pior ter colágeno anormal que pouco colágeno.\n\n**A posição da mutação importa.** A hélice se dobra da extremidade **C-terminal** para a N-terminal. Substituições mais próximas da extremidade **C-terminal** tendem a ser **mais graves**, porque perturbam a montagem desde o início.\n\n**Formas recessivas e outras.** Existem formas de OI por defeitos em proteínas que **processam** o colágeno, como **CRTAP**, **P3H1** (LEPRE1) e **PPIB**, ou por outros mecanismos ósseos (**IFITM5** no tipo V e **SERPINF1** no tipo VI).\n\n**Os achados radiográficos.**\n- **Osteopenia** difusa.\n- **Corticais finas** e ossos longos **gráceis** (finos), com **trabéculas finas** e esparsas.\n- **Fraturas múltiplas** em diferentes fases de consolidação, e **encurvamentos**.\n- **Vértebras bicôncavas** (em \"boca de peixe\") e achatadas, por microfraturas.\n- **Ossos wormianos** no crânio.\n- **Calcificações em pipoca** nas metáfises nas formas graves.\n- **Protrusão acetabular** e invaginação basilar.\n- No **tipo V**: **calo hiperplásico** e calcificação da membrana interóssea do antebraço.\n\nA **ossificação** em si acontece no tempo normal. O problema é a **qualidade** da matriz, e não o momento em que ela se forma.\n\n**O tratamento.**\n- **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas.\n- **Hastes telescópicas** (Fassier-Duval) corrigem e previnem as deformidades dos ossos longos.\n- Reabilitação para manter a força e a mobilidade.\n\n**A osteogênese imperfeita tipo V e o gene IFITM5.** O tipo V não é causado por defeito do colágeno tipo I. Ele resulta de uma mutação **dominante** no gene **IFITM5** (que codifica a proteína BRIL, da mineralização). Suas marcas registradas são:\n- **Calo hiperplásico**: depois de uma fratura ou osteotomia, forma-se um calo **enorme e exuberante**, que pode ser confundido com um **osteossarcoma**. É o que a imagem mostra na tíbia.\n- **Calcificação da membrana interóssea** do antebraço, com limitação da prono-supinação.\n- **Luxação da cabeça do rádio**.\n- Banda **densa** na metáfise, abaixo da fise.\n- Esclera normal e dentes normais.",
@@ -8468,19 +8542,63 @@
   "conferido": false
  },
  "pediatria-0648": {
-  "conceito": "**Os centros de ossificação do cotovelo.** O cotovelo da criança tem **seis** centros secundários, que **aparecem** em uma ordem previsível, lembrada pela sigla **CRITOE**:\n| Centro | Aparecimento (aproximado) |\n|---|---|\n| **C**apítulo | 1 ano |\n| Cabeça do **R**ádio | 3 a 5 anos |\n| Epicôndilo medial (**I**nterno) | 5 a 7 anos |\n| **T**róclea | 7 a 9 anos |\n| **O**lécrano | 8 a 10 anos |\n| Epicôndilo lateral (**E**xterno) | 10 a 12 anos |\n\n**A fusão.** A ordem de fusão é diferente da de aparecimento. O **capítulo**, a **tróclea** e o **epicôndilo lateral** se fundem entre si (formando a epífise distal do úmero) e com a metáfise por volta dos **12 a 14 anos**. O **epicôndilo medial**, embora apareça cedo (5 a 7 anos), é uma **apófise** separada e é o **último** a se fundir ao úmero, por volta dos **15 a 17 anos** (às vezes depois). A cabeça do rádio e o olécrano se fundem por volta dos 14 a 16 anos.\n\n**Por que importa.**\n- O epicôndilo medial **aberto** por muito tempo é o ponto fraco na **luxação do cotovelo** do adolescente e no **cotovelo do arremessador** (apofisite e avulsão).\n- A regra **CRITOE** ajuda a detectar um **fragmento encarcerado**: se a tróclea aparece na radiografia e o epicôndilo medial não está no lugar esperado, ele pode estar **dentro da articulação** após uma luxação.\n- As meninas são mais adiantadas que os meninos em cerca de 1 a 2 anos.\n\n**A armadilha do epicôndilo medial encarcerado.** Na luxação do cotovelo, o epicôndilo medial pode ser arrancado e ficar **preso dentro da articulação** após a redução. Na radiografia, ele pode ser confundido com o centro da **tróclea**. A sigla CRITOE ajuda: se aparece um centro na posição da tróclea em uma criança que ainda não tem idade para isso (menos de 7 a 9 anos), ou se o epicôndilo medial não está no lugar esperado, deve-se suspeitar de **encarceramento**, que exige redução cirúrgica. A comparação com o cotovelo contralateral resolve a dúvida.",
-  "correta": "**Correta: D (do epicôndilo medial).** O epicôndilo medial é uma apófise separada que, embora apareça cedo, é o último centro a se fundir ao úmero distal, por volta dos 15 a 17 anos.",
+  "conceito": "**A ordem de fusão não repete a ordem de aparecimento.** No fim do crescimento, capítulo, tróclea e epicôndilo lateral se unem primeiro entre si, formando um centro epifisário comum. Esse bloco depois se funde à metáfise distal do úmero. O epicôndilo medial permanece separado, com osso metafisário entre ele e o bloco articular, e é o **último a se fundir à metáfise**, podendo persistir separado até o fim da adolescência.\n\nIsso explica duas respostas diferentes: o capítulo aparece primeiro, e o epicôndilo lateral aparece por último; entretanto, quem se funde por último é o medial. Na leitura radiográfica, encontrar um centro ainda separado deve ser interpretado conforme a maturação e a localização, sem equiparar toda linha de separação a uma fratura.",
+  "correta": "**D: epicôndilo medial.** Ele não participa inicialmente do bloco comum formado por capítulo, tróclea e epicôndilo lateral. Permanece separado por osso metafisário e completa a fusão mais tarde, no fim da adolescência.",
   "incorretas": {
-   "A": "A **tróclea** se funde com o capítulo e o epicôndilo lateral, formando a epífise distal, por volta dos 12 a 14 anos.",
-   "B": "O **capítulo** é o primeiro centro a aparecer e se funde junto com a tróclea e o epicôndilo lateral.",
-   "C": "O **epicôndilo lateral** é o último a **aparecer**, mas se funde cedo com o capítulo e a tróclea."
+   "A": "**A tróclea participa do bloco epifisário comum antes da fusão final com a metáfise.** Seu aparecimento tardio não significa que ela será o último núcleo separado do úmero distal. Esse papel cabe ao epicôndilo medial.",
+   "B": "**O capítulo é o primeiro a aparecer e depois se une à tróclea e ao epicôndilo lateral.** A pergunta trata da última fusão, não do primeiro aparecimento. O capítulo não permanece separado da metáfise por mais tempo que o medial.",
+   "C": "**O epicôndilo lateral aparece por último, mas se une rapidamente ao côndilo lateral.** Ele integra o bloco comum com capítulo e tróclea. Confundir a última ossificação com a última fusão leva a trocar lateral por medial."
   },
   "referencias": [
-   "Herring JA. Tachdjian’s pediatric orthopaedics. 5º ed. Philadelphia: Saunders, 2014. 5 Ed. 16 Pg (referência indicada na prova TARO 2019, questão 95)",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas do cotovelo."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "2021bb7758f9f1c70874ba94c6444b84bbbe36b15f11f256074eb0763b305e0b",
+   "comentarioSha256": "2a23141732c659ac2ba5b91cd40e4ec4e9905e422726e23d1ad41c6ce36a0b15"
+  }
  },
  "pediatria-0649": {
   "conceito": "**A pronação dolorosa (cotovelo da babá, subluxação da cabeça do rádio).** É a lesão do cotovelo **mais comum** da criança pequena, entre **1 e 4 anos** (pico por volta de 2 a 3 anos), mais em meninas e no lado esquerdo.\n\n**O mecanismo.** **Tração longitudinal** súbita do membro superior com o cotovelo **estendido** e o antebraço em **pronação**: a criança é puxada pela mão (ao atravessar a rua, ao ser levantada, numa brincadeira de girar). Na criança pequena, o **ligamento anular** é frouxo e a cabeça do rádio é pouco desenvolvida (o colo e a cabeça têm diâmetros parecidos). Com a tração, o ligamento anular **escorrega** sobre a cabeça do rádio e fica **interposto** entre a cabeça e o capítulo. Não é uma luxação da articulação: é a **subluxação do ligamento anular**.\n\n**O quadro.** A criança chora no momento e depois **não usa o braço**, mantendo-o ao lado do corpo, com o cotovelo levemente fletido e o antebraço em **pronação**. Não há deformidade nem edema importante. A **radiografia é normal** e não é necessária quando a história é típica.\n\n**A redução.**\n| Manobra | Como |\n|---|---|\n| **Hiperpronação** | Com o cotovelo fletido a 90°, prona-se o antebraço além do normal; a mais eficaz e menos dolorosa |\n| Supinação e flexão | Supina-se o antebraço e flete-se o cotovelo, com o polegar sobre a cabeça do rádio |\n\nEm geral, sente-se um **clique** sobre a cabeça do rádio, e a criança volta a usar o braço em minutos. Se não voltar, deve-se repetir a manobra, radiografar (para excluir fratura) e reavaliar.\n\n**A recidiva.** Ocorre em cerca de 5% a 30%; os pais devem ser orientados a não puxar a criança pelo braço. A partir dos 5 anos, com o crescimento da cabeça do rádio, o problema desaparece.",
@@ -8764,19 +8882,63 @@
   "conferido": false
  },
  "pediatria-0668": {
-  "conceito": "**Os seis centros de ossificação secundários do cotovelo.** Eles aparecem numa ordem **previsível**, lembrada pelo mnemônico **CRITOE**:\n\n| Centro | Aparece (aproximado) | Funde (aproximado) |\n|---|---|---|\n| **C**apítulo | 1 ano | 12 a 14 anos |\n| **R**adial (cabeça) | 3 a 5 anos | 14 a 16 anos |\n| **I**nterno (epicôndilo medial) | 5 a 7 anos | **15 a 17 anos (o último)** |\n| **T**róclea | 7 a 9 anos | 12 a 14 anos |\n| **O**lécrano | 9 a 11 anos | 14 a 16 anos |\n| **E**xterno (epicôndilo lateral) | 10 a 11 anos | 12 a 14 anos |\n\nNas meninas, todos aparecem e fundem cerca de 1 a 2 anos antes.\n\n**A ordem de fusão é diferente da ordem de aparecimento.**\n1. Primeiro, o **capítulo**, a **tróclea** e o **epicôndilo lateral** se unem entre si e formam uma única epífise distal, que se funde à metáfise por volta dos 12 a 14 anos.\n2. Depois, a **cabeça do rádio** e o **olécrano**, por volta dos 14 a 16 anos.\n3. Por último, o **epicôndilo medial**, por volta dos **15 a 17 anos**. Ele é uma **apófise extra-articular** e fica separado da epífise principal.\n\n**Por que isso é importante.**\n- **O encarcerado**: o epicôndilo medial é o centro mais avulsionado. Na luxação do cotovelo, ele pode ficar **preso dentro da articulação**. Pela regra do CRITOE, se a tróclea está ossificada e o epicôndilo medial não aparece no lugar, ele pode estar **dentro da articulação**.\n- O epicôndilo medial **aberto até os 15 a 17 anos** explica por que o adolescente arremessador tem apofisite e avulsão medial (little leaguer's elbow).\n- Conhecer as idades evita confundir um centro normal com uma fratura, e uma fratura com um centro ainda não ossificado. Na dúvida, compara-se com o cotovelo contralateral.",
-  "correta": "**Correta: D (epicôndilo medial, cabeça do rádio e capítulo).** Pela sequência CRITOE, aos **7 anos** já apareceram o **capítulo** (cerca de 1 ano), a **cabeça do rádio** (3 a 5 anos) e o **epicôndilo medial** (5 a 7 anos). A tróclea (7 a 9), o olécrano (9 a 11) e o epicôndilo lateral (10 a 11) ainda não ossificaram.",
+  "conceito": "**Aos 7 anos, a resposta esperada envolve os centros de aparecimento precoce.** O capítulo surge em torno de 1 ano; cabeça do rádio e epicôndilo medial aparecem depois, próximos do início da idade escolar. Olécrano, tróclea e epicôndilo lateral, em geral, pertencem às etapas seguintes.\n\nAs idades têm variação individual e entre os sexos. A tabela de Cheng citada no resumo dá 5 anos para o epicôndilo medial das meninas e 7,5 para os meninos; outras séries também variam, sobretudo para o olécrano. Assim, o trio da prova expressa a **sequência típica**, e não a obrigação de visualizar todos esses núcleos em toda criança exatamente no aniversário de 7 anos. O desenho e a posição também importam: centros irregulares podem ser variantes normais.",
+  "correta": "**D: epicôndilo medial, cabeça do rádio e capítulo.** São os três centros precoces, antes do grupo formado por olécrano, tróclea e epicôndilo lateral. Essa é a combinação compatível com a sequência solicitada, respeitando a variação das idades de aparecimento.",
   "incorretas": {
-   "A": "O **epicôndilo lateral** (10 a 11 anos), o **olécrano** (9 a 11) e a **tróclea** (7 a 9) são os últimos centros a aparecer. Aos 7 anos, ainda não estão presentes.",
-   "B": "O **epicôndilo medial** e o **capítulo** já existem aos 7 anos, mas o **olécrano** só aparece por volta dos 9 a 11 anos.",
-   "C": "A **cabeça do rádio** já existe aos 7 anos, mas o **epicôndilo lateral** (10 a 11) e a **tróclea** (7 a 9) ainda não ossificaram."
+   "A": "**Reúne justamente os centros tardios.** Olécrano e tróclea aparecem depois dos três centros iniciais, e o epicôndilo lateral encerra a sequência. O conjunto não representa o padrão esperado aos 7 anos, mesmo reconhecendo a variação individual de cada núcleo.",
+   "B": "**Capítulo e epicôndilo medial são compatíveis com o grupo precoce, mas o olécrano ocupa o lugar da cabeça do rádio.** Há séries com aparecimento mais cedo do olécrano em meninas, porém a ordem típica cobrada inclui a cabeça radial antes dele. Uma idade possível isoladamente não define o melhor trio.",
+   "C": "**A cabeça do rádio é precoce, mas tróclea e epicôndilo lateral são tardios.** A tróclea costuma começar por volta de 9 a 10 anos, e o epicôndilo lateral aparece por último. Misturar um núcleo inicial com dois tardios não reproduz a sequência da idade escolar."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "0c74ccd30c13c341b08b01714d03f6a4f9690151e9e7b1a0c248dfc70026d241",
+   "comentarioSha256": "211aa30ff720994463e74b892a90c07ec0b6b1c5bf96704e82a959edcbfdc49c"
+  }
  },
  "pediatria-0669": {
   "conceito": "**A pseudoartrose congênita da tíbia (PCT).** É uma doença rara em que um segmento da tíbia, geralmente na **junção do terço médio com o distal**, é displásico e fraco. A tíbia se encurva e, cedo ou tarde, **fratura e não consolida**. A **neurofibromatose tipo 1** está presente em cerca de **metade ou mais** dos casos. Por outro lado, só uma pequena parcela dos pacientes com NF1 tem PCT.\n\n**O tecido doente.** Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação. A ressecção completa desse tecido é parte fundamental da cirurgia.\n\n**O encurvamento da tíbia na criança: a direção diz o diagnóstico.**\n\n| Direção | Diagnóstico | Prognóstico |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento **fisiológico** congênito, com pé calcaneovalgo | **Bom**: corrige espontaneamente; deixa **discrepância** |\n| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |\n\n**Como lembrar.** **A**nterolateral é **a** ruim (a pseudoartrose). Posteromedial é a \"boa\", que só deixa a perna mais curta. Anteromedial acompanha a ausência da fíbula, com covinha cutânea sobre a tíbia.\n\n**Tratamento.**\n- **Antes da fratura:** proteger a tíbia com uma **órtese** (tipo concha, AFO/KAFO) para evitar a fratura. **Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.\n- **Depois da fratura:** a cirurgia é desafiadora. Ela inclui:\n  - **ressecção** do tecido hamartomatoso;\n  - estabilização com **haste intramedular** (de Williams, por exemplo) ou fixador circular de **Ilizarov**;\n  - **enxerto** ósseo autólogo; o enxerto vascularizado de fíbula é uma opção;\n  - a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.\n- A recidiva de fratura é comum, e a haste costuma ser mantida até a maturidade.\n- Após várias falhas, a **amputação de Syme** com prótese é uma opção funcional legítima.",
@@ -8972,19 +9134,63 @@
   "conferido": false
  },
  "pediatria-0682": {
-  "conceito": "**Os seis centros de ossificação secundários do cotovelo.** Eles aparecem numa ordem **previsível**, lembrada pelo mnemônico **CRITOE**:\n\n| Centro | Aparece (aproximado) | Funde (aproximado) |\n|---|---|---|\n| **C**apítulo | 1 ano | 12 a 14 anos |\n| **R**adial (cabeça) | 3 a 5 anos | 14 a 16 anos |\n| **I**nterno (epicôndilo medial) | 5 a 7 anos | **15 a 17 anos (o último)** |\n| **T**róclea | 7 a 9 anos | 12 a 14 anos |\n| **O**lécrano | 9 a 11 anos | 14 a 16 anos |\n| **E**xterno (epicôndilo lateral) | 10 a 11 anos | 12 a 14 anos |\n\nNas meninas, todos aparecem e fundem cerca de 1 a 2 anos antes.\n\n**A ordem de fusão é diferente da ordem de aparecimento.**\n1. Primeiro, o **capítulo**, a **tróclea** e o **epicôndilo lateral** se unem entre si e formam uma única epífise distal, que se funde à metáfise por volta dos 12 a 14 anos.\n2. Depois, a **cabeça do rádio** e o **olécrano**, por volta dos 14 a 16 anos.\n3. Por último, o **epicôndilo medial**, por volta dos **15 a 17 anos**. Ele é uma **apófise extra-articular** e fica separado da epífise principal.\n\n**Por que isso é importante.**\n- **O encarcerado**: o epicôndilo medial é o centro mais avulsionado. Na luxação do cotovelo, ele pode ficar **preso dentro da articulação**. Pela regra do CRITOE, se a tróclea está ossificada e o epicôndilo medial não aparece no lugar, ele pode estar **dentro da articulação**.\n- O epicôndilo medial **aberto até os 15 a 17 anos** explica por que o adolescente arremessador tem apofisite e avulsão medial (little leaguer's elbow).\n- Conhecer as idades evita confundir um centro normal com uma fratura, e uma fratura com um centro ainda não ossificado. Na dúvida, compara-se com o cotovelo contralateral.",
-  "correta": "**Correta: D (epicôndilo medial).** O epicôndilo medial é o **último** centro de ossificação secundário do cotovelo a se fundir com a metáfise, por volta dos 15 a 17 anos. Ele é uma apófise extra-articular, separada da epífise distal formada pelo capítulo, pela tróclea e pelo epicôndilo lateral.",
+  "conceito": "**Fundir-se à metáfise é uma etapa posterior ao aparecimento do núcleo secundário.** No úmero distal, capítulo, tróclea e epicôndilo lateral formam um bloco epifisário comum antes da união desse bloco com a metáfise. O epicôndilo medial permanece separado e é o último a completar essa união.\n\nA cabeça do rádio e o olécrano se unem às respectivas metáfises aproximadamente na época de fusão do bloco distal do úmero, entre 14 e 16 anos, segundo o resumo. O medial pode só fundir no fim da adolescência. Essas faixas são referências de maturação e têm variação; o dado decisivo da questão é a relação temporal, não uma idade fixa. O último a aparecer no cotovelo é o epicôndilo lateral, informação diferente da solicitada.",
+  "correta": "**D: epicôndilo medial.** Sua separação do bloco epifisário comum do úmero distal persiste até uma fase mais tardia. Por isso, ele encerra a sequência de fusão à metáfise descrita no capítulo.",
   "incorretas": {
-   "A": "O **capítulo** é o **primeiro** a aparecer (cerca de 1 ano). Ele se funde cedo, com a tróclea e o epicôndilo lateral, por volta dos 12 a 14 anos.",
-   "B": "O **olécrano** se funde por volta dos 14 a 16 anos, **antes** do epicôndilo medial.",
-   "C": "O **epicôndilo lateral** é o último a **aparecer**, mas está entre os **primeiros a se fundir**, junto com o capítulo e a tróclea."
+   "A": "**O capítulo participa do bloco epifisário comum com tróclea e epicôndilo lateral.** Esse conjunto se une à metáfise antes da fusão final do epicôndilo medial. O fato de o capítulo aparecer primeiro não o torna o último a fundir.",
+   "B": "**O olécrano pode manter seu núcleo separado por bastante tempo, mas não é a resposta da sequência apresentada.** O resumo situa sua fusão à metáfise ulnar aproximadamente na época do bloco distal do úmero, entre 14 e 16 anos; o medial pode permanecer separado até o fim da adolescência.",
+   "C": "**O epicôndilo lateral é o último a aparecer e se funde rapidamente ao côndilo lateral.** Ele integra o bloco comum e não fica separado até a etapa final atribuída ao medial. O distrator troca duas sequências distintas."
   },
   "referencias": [
-   "Rockwood and Green’s fractures in Childrens, 7th Ed., p. 478 (referência indicada na prova TARO 2013, questão 70)",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "fe995add0c66ebdd53178cfcff2157a89b8c92c4c33c42f208e692d6d64494fd",
+   "comentarioSha256": "8b0ec14aee8241b2f79d5f4b3412d43d7ed64d6c9fcdfccf06e3f9fc1eae0341"
+  }
  },
  "pediatria-0683": {
   "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**As fases da doença e a histologia.** A evolução da doença segue uma sequência previsível, que tem correspondência clínica, radiográfica e histológica:\n| Fase | Achados |\n|---|---|\n| **Necrose** (inicial) | Morte das células ósseas: **lacunas vazias** (ausência de osteócitos) ou osteócitos com **núcleo picnótico**; medula necrótica. Na radiografia: epífise menor, mais **densa** (esclerose), alargamento do espaço articular |\n| **Fragmentação** | Revascularização com **reabsorção** do osso morto por osteoclastos: a epífise se divide em fragmentos; colapso; sinal do crescente (fratura subcondral) |\n| **Reossificação** (reparação) | Osso novo preenche a epífise, de forma organizada |\n| **Residual** (sequela) | Forma final da cabeça, que pode ser esférica ou achatada (Stulberg) |\n\n**A necrose em detalhe.** Os osteócitos ficam em pequenas cavidades da matriz óssea (lacunas). Quando o suprimento sanguíneo é interrompido, eles morrem: primeiro o **núcleo se condensa** (picnose), depois a célula desaparece e a lacuna fica **vazia**. A matriz óssea, porém, não muda de forma imediatamente; por isso a radiografia demora para mostrar alterações, e a epífise parece mais **densa** (o osso morto não é reabsorvido e o osso vivo ao redor fica osteopênico). A cartilagem articular continua viva, nutrida pelo líquido sinovial, e até **espessa**.\n\n**A ressonância** mostra a necrose antes da radiografia, e a **cintilografia** mostra a falta de captação na epífise.\n\n**A ordem das fases (Waldenström)** ajuda a resolver questões: necrose (inicial), fragmentação, reossificação e residual.\n\n**A fratura subcondral (sinal do crescente).** É uma linha radiotransparente sob a superfície da cabeça, mais visível no perfil, que aparece no fim da fase de necrose. Salter e Thompson mostraram que a **extensão** da fratura subcondral corresponde à **extensão da necrose** e prevê precocemente o tamanho final do acometimento:\n- **grupo A**: fratura em **menos da metade** da cabeça (equivale a Catterall I e II), melhor prognóstico;\n- **grupo B**: fratura em **mais da metade** da cabeça (Catterall III e IV), pior prognóstico.\n\nA vantagem é ser uma classificação **precoce** (antes da fragmentação); a limitação é que a fratura subcondral só é vista em uma parte dos pacientes e por pouco tempo.",
@@ -9834,19 +10040,69 @@
   "conferido": false
  },
  "pediatria-0738": {
-  "conceito": "**Por que medir ângulos no cotovelo da criança.** O cotovelo infantil é em grande parte cartilaginoso, e os centros de ossificação aparecem em idades diferentes. As linhas e ângulos radiográficos permitem reconhecer desvios sutis em fraturas (sobretudo a supracondiliana) e avaliar a qualidade da redução, prevenindo o cúbito varo.\n\n**As medidas e o que cada uma usa.**\n\n| Medida | Como se traça | Normal e uso |\n|---|---|---|\n| **Ângulo de Baumann** (AP) | Eixo da diáfise do úmero e a linha da **fise do côndilo lateral** (capítulo) | Cerca de 70 a 75° (ou 15 a 20° pelo complemento); compara-se com o outro lado; alteração indica varo ou valgo |\n| Ângulo metáfise-diafisário (AP) | Eixo da diáfise e a linha transversal que une os pontos mais largos da **metáfise** distal | Cerca de 90°; útil quando o capítulo ainda não ossificou |\n| **Ângulo úmero-ulnar** (AP) | Eixo do úmero e eixo da ulna, com o cotovelo em extensão | É a expressão radiográfica do **ângulo de carregamento** (valgo fisiológico de 5 a 15°) |\n| **Linha umeral anterior** (perfil) | Tangente à cortical anterior do úmero, prolongada | Deve cruzar o **terço médio** do capítulo; passando anterior a ele, indica desvio em extensão |\n| Linha radiocapitelar | Eixo do colo e da cabeça do rádio | Deve passar pelo capítulo em qualquer incidência; se não passa, há luxação da cabeça radial (Monteggia) |\n\n**Detalhes que a banca troca.**\n- Baumann usa a **fise do côndilo lateral**, não a superfície articular.\n- O metáfise-diafisário usa a **metáfise**, não a fise do côndilo lateral (esse é o Baumann).\n- A linha umeral anterior passa no **terço médio** do capítulo, e não na porção anterior.\n- Na fratura supracondiliana em extensão (Gartland II e III), o capítulo desloca-se para trás e a linha umeral anterior passa à frente dele ou o tangencia anteriormente.",
-  "correta": "**Resposta provável: C.** O ângulo úmero-ulnar, formado pelos eixos do úmero e da ulna na radiografia em AP com o cotovelo estendido, é a expressão radiográfica do ângulo de carregamento.",
+  "conceito": "**Linhas e ângulos têm referências diferentes e só são interpretáveis em incidências adequadas.** No AP, Baumann é formado pelo eixo do úmero e pela fise do côndilo lateral. O metáfiso-diafisário usa o eixo umeral e a linha dos pontos mais largos da metáfise. O **úmero-ulnar** relaciona os eixos longitudinais do úmero e da ulna e é a expressão mais precisa do ângulo de carregamento.\n\nNo perfil, a linha da cortical anterior do úmero deve cruzar o terço médio do capítulo. Há uma exceção importante: nos menores de 4 anos, a passagem pelo terço anterior pode ser normal em parte das crianças. Se a linha passa à frente do núcleo, é o segmento distal que se angulou para trás. Não há gabarito oficial registrado; a resposta bibliográfica é C, com a ressalva etária da alternativa D.",
+  "correta": "**C, pela bibliografia.** O ângulo úmero-ulnar expressa radiograficamente a relação entre braço e antebraço porque é construído com os eixos dos dois ossos. O capítulo o aponta como o mais preciso para o verdadeiro carregamento.",
   "incorretas": {
-   "A": "O ângulo de Baumann é formado pelo eixo da diáfise e pela linha da **fise do côndilo lateral**, e não pela superfície articular.",
-   "B": "Essa é a descrição do ângulo de **Baumann**. O ângulo metáfise-diafisário usa a linha transversal da **metáfise** distal.",
-   "D": "A linha umeral anterior deve cruzar o **terço médio** do centro de ossificação do capítulo. Passando na porção anterior, indica desvio posterior do capítulo, como na fratura supracondiliana em extensão."
+   "A": "**A segunda linha de Baumann é a fise lateral, não a superfície articular.** Essa distinção é decisiva na criança, em que parte da articulação é cartilagem invisível na radiografia. A opção muda a construção do ângulo e não reproduz a definição adotada.",
+   "B": "**A placa fisária do côndilo lateral pertence a Baumann.** O metáfiso-diafisário usa a linha dos pontos de maior largura da metáfise. As duas medidas compartilham o eixo do úmero, mas não a referência distal.",
+   "D": "**Como regra geral, a linha deve cruzar o terço médio, não o anterior.** A passagem anterior pode ser normal em parte dos menores de 4 anos, portanto a frase tem uma interpretação válida nessa faixa específica. Sem delimitar essa exceção, não representa o padrão geral solicitado; C é a afirmação sustentada sem essa restrição."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., p. 537."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Linhas e ângulos da radiografia."
   ],
+  "conferido": false,
   "provavel": "C",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "alerta": "Não há gabarito oficial registrado. A bibliografia favorece C. A alternativa D não é uma regra geral, mas pode descrever uma variante normal em parte das crianças com menos de 4 anos; não interpretar todo cruzamento anterior como fratura nessa idade.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Linhas e ângulos da radiografia"
+     ],
+     "blocos": [
+      "linhas-e-angulos-da-radiografia-3676b995",
+      "linhas-e-angulos-da-radiografia-4f46cd3b",
+      "linhas-e-angulos-da-radiografia-e1c833db",
+      "linhas-e-angulos-da-radiografia-8cbf1fde",
+      "linhas-e-angulos-da-radiografia-31fa609b",
+      "linhas-e-angulos-da-radiografia-f0727290",
+      "linhas-e-angulos-da-radiografia-de8dc999",
+      "linhas-e-angulos-da-radiografia-7cbbcae9",
+      "linhas-e-angulos-da-radiografia-fd82cc21",
+      "linhas-e-angulos-da-radiografia-b86846bc",
+      "linhas-e-angulos-da-radiografia-f6d6e1e9",
+      "linhas-e-angulos-da-radiografia-a8d7b42a",
+      "linhas-e-angulos-da-radiografia-1aa3e6c6",
+      "linhas-e-angulos-da-radiografia-9df8ac29",
+      "linhas-e-angulos-da-radiografia-568bffbc",
+      "linhas-e-angulos-da-radiografia-aaf24f22",
+      "linhas-e-angulos-da-radiografia-67b73396",
+      "linhas-e-angulos-da-radiografia-e70a341c",
+      "linhas-e-angulos-da-radiografia-875d3977",
+      "linhas-e-angulos-da-radiografia-a652b775",
+      "linhas-e-angulos-da-radiografia-09f90a66",
+      "linhas-e-angulos-da-radiografia-b665eac5",
+      "linhas-e-angulos-da-radiografia-d294bff7",
+      "linhas-e-angulos-da-radiografia-22e1822a",
+      "linhas-e-angulos-da-radiografia-adbebc39",
+      "linhas-e-angulos-da-radiografia-8a71aa7e",
+      "linhas-e-angulos-da-radiografia-35e5f6e9"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+    }
+   ],
+   "questaoSha256": "6b4f7726126acd2c970ea5321025f65899fcb970cb80b1078d0750e191fb524f",
+   "comentarioSha256": "149413ef7c64471fe06775327f4e67cde3bf305919fbadcf183fda5318105c5e"
+  }
  },
  "pediatria-0739": {
   "conceito": "**Prognóstico na doença de Legg-Calvé-Perthes.** O Perthes é a necrose idiopática do núcleo de ossificação da cabeça femoral na criança. O osso necrótico é reabsorvido e substituído; durante esse processo, a cabeça fica mole e pode se deformar. O resultado a longo prazo, isto é, se haverá **artrose** na vida adulta, depende de **como a cabeça termina**.\n\n**Preditores precoces x resultado final.**\n\n| Momento | Fator | O que indica |\n|---|---|---|\n| Início | **Idade** (abaixo de 6 anos, melhor; acima de 8, pior) | Tempo de remodelação disponível |\n| Fragmentação | **Pilar lateral de Herring** (A, B, B/C, C), Catterall (extensão) | Risco de colapso e deformidade |\n| Fragmentação | Sinais de \"cabeça em risco\" (Catterall): sinal de Gage, calcificação lateral, subluxação lateral, horizontalização da fise, cistos metafisários | Tendência à extrusão |\n| **Maturidade** | **Forma final da cabeça e congruência (Stulberg)** | **Risco real de artrose** |\n\n**A classificação de Stulberg.** Stulberg, Cooperman e Wallensten acompanharam pacientes por décadas e relacionaram a forma final à artrose:\n- **I e II**: cabeça **esférica** (congruência esférica): praticamente sem artrose.\n- **III e IV**: cabeça **ovoide ou achatada** com acetábulo adaptado (congruência asférica): artrose leve a moderada na meia-idade.\n- **V**: cabeça achatada com acetábulo normal (incongruência asférica): artrose precoce.\n\n**A lógica da questão.** Idade, extensão e sinais radiográficos são **preditores** de como a cabeça vai ficar. O **fator que de fato determina** o mau resultado é a **deformidade residual** (incongruência) da cabeça femoral. Por isso, o tratamento busca **contenção** durante a fase vulnerável, para que a cabeça remodele esférica.\n\n> No Perthes, o pior prognóstico é a deformidade residual da cabeça (Stulberg); idade e extensão são preditores dessa deformidade.",
@@ -11403,20 +11659,64 @@
   "conferido": false
  },
  "pediatria-0839": {
-  "conceito": "**O cotovelo infantil é um quebra-cabeça de centros de ossificação.** Ao nascer, a extremidade distal do úmero é quase toda cartilaginosa. Seis centros secundários de ossificação aparecem ao longo da infância, e conhecer quando cada um **aparece** e quando **se funde** é essencial para não confundir um centro normal com uma fratura (ou o contrário).\n\n**A ordem de aparecimento: CRITOE.**\n\n| Centro | Aparece (aproximado) |\n|---|---|\n| **C**apítulo | 1 a 2 anos |\n| **R**ádio (cabeça) | 3 a 5 anos |\n| Epicôndilo **I**nterno (medial) | 5 a 7 anos |\n| **T**róclea | 7 a 9 anos |\n| **O**lécrano | 9 a 11 anos |\n| Epicôndilo **E**xterno (lateral) | 10 a 12 anos |\n\nAs meninas costumam ficar um a dois anos à frente dos meninos.\n\n**A fusão segue outra lógica.** O mnemônico CRITOE vale para o **aparecimento**, e não para a fusão. Na adolescência:\n1. **Capítulo, tróclea e epicôndilo lateral** se fundem **entre si**, formando uma epífise única (por volta dos 10 a 12 anos).\n2. Essa epífise comum se funde à **metáfise** do úmero (por volta dos 12 a 14 anos).\n3. O **epicôndilo medial**, que é uma **apófise** separada (origem dos flexores-pronadores e do ligamento colateral medial), é o **último a se fundir**, por volta dos **14 a 17 anos** (às vezes mais tarde em meninos).\n\n**Por que isso importa clinicamente.**\n- **Fratura do epicôndilo medial**: por ser a última apófise a fechar, ela permanece vulnerável até o fim da adolescência, sobretudo em arremessadores (cotovelo da liga infantil) e nas luxações do cotovelo.\n- **Encarceramento do epicôndilo** na articulação após luxação: se a tróclea aparece ossificada na radiografia, o epicôndilo medial (que aparece antes dela) **tem que estar visível** no seu lugar; se não estiver, pode estar dentro da articulação.\n- **Radiografia comparativa** do outro cotovelo ajuda quando há dúvida.",
-  "correta": "**Resposta provável: D (epicôndilo medial).** O epicôndilo medial é uma apófise independente que se funde por último, entre os 14 e os 17 anos, depois que capítulo, tróclea e epicôndilo lateral já se uniram entre si e à metáfise.",
+  "conceito": "**O centro epifisário comum do úmero distal não inclui inicialmente o epicôndilo medial.** Capítulo, tróclea e epicôndilo lateral se unem entre si perto do fim do crescimento; depois, esse bloco se funde à metáfise. O medial continua separado por osso metafisário e é o último a se fundir, por vezes apenas no fim da adolescência.\n\nA distinção resolve a confusão habitual: o lateral é o último a aparecer, mas o medial é o último a fundir. A ordem de aparecimento diz quando o núcleo fica visível; a ordem de fusão diz quando deixa de existir a separação fisária. Não há gabarito oficial registrado para esta questão: a resposta abaixo é bibliográfica, sustentada pelo resumo, sem substituir uma chave da banca.",
+  "correta": "**D, pela bibliografia: epicôndilo medial.** É o núcleo que permanece separado após a união entre capítulo, tróclea e epicôndilo lateral. Sua fusão tardia à metáfise corresponde exatamente ao que o enunciado pergunta.",
   "incorretas": {
-   "A": "O **capítulo** é o primeiro centro a **aparecer**, mas se funde com a tróclea e o epicôndilo lateral antes do epicôndilo medial.",
-   "B": "A **tróclea** se une ao capítulo e ao epicôndilo lateral numa epífise comum, que se funde à metáfise antes do epicôndilo medial.",
-   "C": "O **epicôndilo lateral** é o último a **aparecer** (CRITOE), mas se funde rapidamente ao capítulo; não é o último a fundir. Essa troca entre aparecimento e fusão é a pegadinha da questão."
+   "A": "**O capítulo se une à tróclea e ao epicôndilo lateral no bloco comum.** Esse bloco funde à metáfise antes do epicôndilo medial. Portanto, o primeiro centro a aparecer não é o último a completar a fusão.",
+   "B": "**A tróclea aparece mais tarde que o capítulo, mas integra com ele o bloco comum.** Não permanece isolada até a última etapa de fusão. O medial é o centro excluído desse bloco e, por isso, a resposta sustentada.",
+   "C": "**O epicôndilo lateral aparece por último, porém se funde rapidamente ao côndilo lateral.** Seu aparecimento tardio não significa fusão final tardia. A pergunta exige distinguir esse evento da união do epicôndilo medial à metáfise."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., p. 532.",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
+  "conferido": false,
   "provavel": "D",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "14c67fcfbb04d17765add924d5dd442ac9b699dddee892977755576ff69968b3",
+   "comentarioSha256": "b3d386f7d65fa46bf9a05296f289e2f1827c60725ada4849048acab3cb6a058b"
+  }
  },
  "pediatria-0840": {
   "conceito": "**A tuberosidade anterior da tíbia e sua fise.** A tuberosidade se desenvolve como uma **extensão anterior** da fise proximal da tíbia, em forma de língua, com um **centro de ossificação secundário** próprio (que aparece por volta dos 8 a 12 anos) e que depois se une à epífise proximal. Pouco antes do fechamento (13 a 16 anos), a placa da tuberosidade tem fibrocartilagem, mais frágil à tração do tendão patelar.\n\n**A classificação de Ogden (modificação de Watson-Jones).**\n\n| Tipo | Extensão do traço | Correspondência aproximada |\n|---|---|---|\n| **I** | Pela **ponta distal** da tuberosidade, através da placa da apófise (centro secundário) | **Avulsão fisária**, padrão Salter-Harris **I** |\n| II | Até a **junção** da tuberosidade com a epífise proximal | Avulsão maior pela placa |\n| III | **Atravessa a epífise** e entra na **articulação** | Salter-Harris **III** (intra-articular) |\n| IV | Segue pela **fise proximal inteira** até a cortical posterior | Salter-Harris I ou II da fise proximal |\n| V | Combinação em Y do III com o IV | |\n\nCada tipo é subdividido em **A** (fragmento único) e **B** (cominuído ou com maior desvio).\n\n**Por que o tipo I corresponde ao Salter-Harris I.** No tipo I, o fragmento distal da tuberosidade é arrancado **pela placa de crescimento da apófise**, sem traço através da epífise ou da metáfise: é uma separação fisária pura.\n\n**Tratamento.**\n- Tipo I sem desvio e com extensão ativa preservada: **gesso cilíndrico** em extensão.\n- Fraturas **desviadas**, com falha do mecanismo extensor, ou intra-articulares (tipo III): **redução aberta e fixação** com parafusos.\n- Atenção à **síndrome compartimental** (artéria recorrente tibial anterior) e às lesões meniscais no tipo III.",
@@ -13549,158 +13849,627 @@
   "conferido": false
  },
  "pediatria-0984": {
-  "conceito": "**Por que a ordem importa.** O cotovelo da criança tem seis centros secundários de ossificação. Antes de cada um aparecer, a região correspondente é cartilagem e não aparece na radiografia. Quem não conhece a ordem e a idade de cada centro confunde um núcleo normal com fragmento de fratura ou, pior, deixa passar um fragmento verdadeiro porque o toma por centro normal. Por isso o capítulo abre a avaliação do cotovelo pela anatomia do crescimento.\n\n**A ordem do capítulo.** O estudo de CHENG, com 1.577 crianças, encontrou a mesma sequência nos dois sexos:\n\n| Ordem | Centro | Meninas (anos) | Meninos (anos) |\n|---|---|---|---|\n| 1 | capítulo | 1,0 | 1,0 |\n| 2 | cabeça do rádio | 5,0 | 6,0 |\n| 3 | epicôndilo medial | 5,0 | 7,5 |\n| 4 | olécrano | 8,7 | 10,5 |\n| 5 | tróclea | 9,0 | 10,7 |\n| 6 | epicôndilo lateral | 10,0 | 12,0 |\n\nO mnemônico usado nas aulas, CRITOE (capítulo, rádio, interno ou epicôndilo medial, tróclea, olécrano, externo ou epicôndilo lateral), acerta o começo e o fim. Na tabela do capítulo o olécrano vem um pouco antes da tróclea, mas a diferença entre os dois é pequena. O que a prova cobra são as pontas da sequência e o segundo lugar, que é sempre a cabeça do rádio.\n\n**Cabeça do rádio e epicôndilo medial aparecem quase juntos.** O texto diz que a cabeça do rádio começa a ossificar mais ou menos na mesma época do epicôndilo medial, por volta dos 5 a 6 anos (figura 12-4), e que o centro está presente em pelo menos metade das meninas aos 3,8 anos e dos meninos por volta dos 4,5 anos. Na média da tabela, porém, a cabeça do rádio vem antes nos meninos (6,0 contra 7,5 anos) e empata nas meninas. Na ordem oficial ela é a segunda.\n\n**Detalhes que geram pseudofratura.** O centro da cabeça do rádio começa elíptico, com a fise mais larga do lado lateral por causa da obliquidade da metáfise, e pode ser bipartido ou irregular. Nada disso é fratura.\n\n> **Na prova:** capítulo primeiro (por volta de 1 ano), cabeça do rádio em segundo, epicôndilo lateral por último.\n\n**Por que esta questão foi criada.** O primeiro centro a aparecer (capítulo) caiu na prova do TECOC/SBCOC Ombro e Cotovelo (sem ano), e os núcleos presentes aos sete anos caíram no TARO 2012. Esta gêmea anda um passo na mesma sequência e pergunta o segundo centro, usando como distratores os centros vizinhos da tabela.",
-  "correta": "**C: da cabeça do rádio.** Na sequência descrita no capítulo (capítulo, cabeça do rádio, epicôndilo medial, olécrano, tróclea e epicôndilo lateral), a cabeça do rádio é o segundo centro: em média aos 5 anos nas meninas e aos 6 anos nos meninos (tabela 12-1). Ela surge mais ou menos junto com o epicôndilo medial, e por isso a figura 12-4 mostra os dois centros na mesma radiografia de uma criança de 5 a 6 anos, com a fise proximal do rádio mais larga do lado lateral, um achado normal. Saber que ela é o segundo centro ajuda a datar a radiografia: uma criança de 4 a 6 anos costuma ter capítulo e cabeça do rádio visíveis, e o epicôndilo medial começando.",
+  "conceito": "**O capítulo inaugura a sequência e a cabeça do rádio vem a seguir.** Na tabela do resumo, a ordem é capítulo, cabeça do rádio, epicôndilo medial, olécrano, tróclea e epicôndilo lateral. As meninas geralmente apresentam os núcleos antes dos meninos, com exceção do capítulo, que aparece em torno de 1 ano em ambos.\n\nA cabeça do rádio e o epicôndilo medial surgem em idades próximas. A tabela apresenta 5 anos para ambos nas meninas e 6 e 7,5 anos, respectivamente, nos meninos. Por isso, a sequência é um guia de desenvolvimento e não exige uma distância fixa entre todos os aparecimentos. O resumo também destaca que olécrano e tróclea têm ordem e idades que variam entre séries; isso não modifica o primeiro par cobrado aqui.\n\n**Por que esta questão foi criada.** A ordem dos primeiros centros permite interpretar o cotovelo ainda cartilaginoso, respeitando a proximidade e a variação das idades de aparecimento.",
+  "correta": "**C: cabeça do rádio.** Ela ocupa a segunda posição na sequência apresentada, depois do capítulo e antes do epicôndilo medial. A proximidade cronológica dos dois centros seguintes ao capítulo não altera a ordem indicada pela tabela.",
   "incorretas": {
-   "A": "**A tróclea é tardia.** Ela começa a ossificar por volta dos 9 a 10 anos (9,0 nas meninas e 10,7 nos meninos na tabela), muitas vezes por vários centros irregulares que dão um aspecto fragmentado (figura 12-5). É a quinta da sequência. O aspecto fragmentado é justamente uma fonte de pseudofratura e não deve ser confundido com necrose da tróclea. Colocá-la logo depois do capítulo é a confusão de quem lembra que o capítulo e a tróclea formam a superfície articular do úmero distal, mas os dois ossificam com quase uma década de diferença.",
-   "B": "**O olécrano também é tardio.** O centro secundário do olécrano aparece por volta dos 8,7 anos nas meninas e 10,5 nos meninos na tabela (o texto cita outra série com 6,8 e 8,8 anos), às vezes como dois centros, um articular e outro de tração (figura 12-8). Antes disso, a metáfise proximal da ulna avança aos poucos: ao nascer ela chega à metade da distância entre o coronoide e a ponta do olécrano. É o quarto centro na ordem do capítulo, não o segundo.",
-   "D": "**O epicôndilo medial vem logo depois, e não logo antes.** É o distrator mais forte, porque os dois centros aparecem por volta da mesma idade (5 a 6 anos, figura 12-4). Na média da tabela, porém, o epicôndilo medial empata com a cabeça do rádio nas meninas (5,0 anos) e vem depois nos meninos (7,5 contra 6,0 anos), e por isso a sequência oficial o coloca em terceiro. Ele é famoso por outro motivo: é o último centro a se fundir com a metáfise, no fim da adolescência, o que a banca já cobrou várias vezes."
+   "A": "**A tróclea pertence ao grupo tardio, em torno de 9 a 10 anos.** Entre o capítulo e ela já aparecem cabeça do rádio e epicôndilo medial, além do olécrano na tabela adotada. Ser parte da superfície articular não implica ossificar imediatamente depois do capítulo.",
+   "B": "**O olécrano aparece depois da cabeça do rádio e do epicôndilo medial.** Suas idades variam entre séries e entre sexos, mas ele não é o segundo núcleo da sequência. A questão pede ordem, e não uma idade isolada possível.",
+   "D": "**O epicôndilo medial aparece próximo da cabeça do rádio, porém ocupa a posição seguinte a ela.** Sua fusão à metáfise é muito tardia, o que é outra sequência. Para o aparecimento logo após o capítulo, a referência é a cabeça radial."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "2236bf4e6296846831dfb1f2fa634086e48088f8b1e59fe93130c9e5d0c67fc7",
+   "comentarioSha256": "220a44802d8948aaf24220c2f88478dbeeebaac3abfff9797884c30ea471b48b"
+  }
  },
  "pediatria-0985": {
-  "conceito": "**Dois tempos de fusão.** No úmero distal a fusão acontece em duas etapas. Primeiro, perto do fim do crescimento, o capítulo, a tróclea e o epicôndilo lateral se fundem entre si e formam um único centro epifisário (figura 12-7). Depois, esse centro comum se funde com a metáfise. O epicôndilo medial fica fora desse bloco: ele é separado do centro comum por osso metafisário que avança entre os dois e só se une à metáfise no fim da adolescência, sendo o último a se fundir.\n\n**Por que o epicôndilo medial fica de fora.** Ele é uma apófise extra-articular, onde se origina a musculatura flexopronadora e o ligamento colateral medial. Não participa da superfície articular. O capítulo, a tróclea e o epicôndilo lateral, ao contrário, compõem a epífise articular e o côndilo lateral (a figura 12-9C mostra a contribuição de cada centro para a forma final do úmero distal). O centro do côndilo lateral se estende para a crista lateral da tróclea e o epicôndilo lateral, o último a aparecer (por volta dos 10 anos), funde-se rapidamente com o côndilo lateral.\n\n**A cronologia da fusão.** A fusão das epífises proximais do rádio e do olécrano com as respectivas metáfises ocorre mais ou menos na mesma época em que a epífise comum do úmero distal se funde com a metáfise, entre os 14 e 16 anos. O epicôndilo medial pode só se fundir no fim da adolescência.\n\n| Etapa | O que se funde | Quando |\n|---|---|---|\n| 1 | capítulo + tróclea + epicôndilo lateral formam o centro comum | pouco antes do fim do crescimento |\n| 2 | centro comum + metáfise; cabeça do rádio e olécrano + metáfises | 14 a 16 anos |\n| 3 | epicôndilo medial + metáfise | fim da adolescência (último) |\n\n> **Na prova:** o epicôndilo medial é o único centro do úmero distal que não entra na epífise comum, e por isso é o último a se fundir.\n\n**Por que esta questão foi criada.** O último centro a se fundir (epicôndilo medial) caiu no TARO 2008, no TARO 2013 e no TARO 2019, quase com o mesmo texto. Esta gêmea pergunta o outro lado do mesmo fato: quais centros formam o bloco que se funde antes, deixando o epicôndilo medial de fora.",
-  "correta": "**A: capítulo, tróclea e epicôndilo lateral.** É a descrição literal do capítulo: pouco antes do término do crescimento, esses três centros se fundem e formam um único centro epifisário, que depois se une à metáfise distal do úmero. O osso metafisário separa esse bloco do epicôndilo medial, extra-articular (figura 12-7). Todos os três estão ligados à superfície articular ou ao côndilo lateral: o centro do côndilo lateral (capítulo) se estende para a crista lateral da tróclea, e o epicôndilo lateral, pequeno e tardio, une-se rapidamente a ele.",
+  "conceito": "**O úmero distal forma um centro epifisário comum antes de encerrar o crescimento.** Esse bloco reúne **capítulo, tróclea e epicôndilo lateral**. Mais tarde, ele se funde à metáfise. O epicôndilo medial permanece à parte, separado por osso metafisário, e é o último a se fundir.\n\nA superfície articular é representada pelo capítulo e pela tróclea; o epicôndilo lateral se une ao conjunto. O medial, apesar de aparecer relativamente cedo, não entra nessa união inicial. Conhecer esse desenvolvimento evita supor que todos os centros do úmero distal se fundam simultaneamente ou que o núcleo mais tardio a aparecer também seja o último separado.\n\n**Por que esta questão foi criada.** A formação do bloco epifisário explica por que o último centro a aparecer não é o último a se fundir, distinção recorrente nas provas citadas no resumo.",
+  "correta": "**A: capítulo, tróclea e epicôndilo lateral.** São os três componentes que se unem entre si para formar o bloco comum antes de sua fusão à metáfise. O epicôndilo medial continua separado e se funde depois.",
   "incorretas": {
-   "B": "**Troca o epicôndilo lateral pelo medial.** É o erro mais comum, porque o epicôndilo medial aparece cedo (por volta dos 5 a 7 anos) e é grande na radiografia. Mas ele é justamente o centro que fica de fora do bloco: é separado da epífise comum por osso metafisário e é o último a se fundir com a metáfise, no fim da adolescência. Essa separação explica por que ele pode ser arrancado isoladamente como apófise de tração, sem traço articular.",
-   "C": "**Junta os dois epicôndilos e deixa a tróclea de fora.** A tróclea é parte essencial da epífise articular e se funde com o capítulo; ela não fica isolada. Os dois epicôndilos têm destinos diferentes: o lateral entra no centro comum e o medial não. A simetria entre os dois epicôndilos é intuitiva, mas não corresponde ao que o capítulo descreve.",
-   "D": "**Exclui o capítulo, que é o núcleo do bloco.** O capítulo é o primeiro centro a aparecer (por volta de 1 ano) e é o eixo do côndilo lateral; a tróclea lateral e o epicôndilo lateral se juntam a ele. Uma combinação com o epicôndilo medial e sem o capítulo inverte a lógica: retira o centro principal e inclui o único que nunca participa da epífise comum."
+   "B": "**Capítulo e tróclea estão corretos, mas o epicôndilo medial substitui indevidamente o lateral.** O medial fica separado do bloco por osso metafisário e é o último a se fundir à metáfise. Ele não compõe a união inicial descrita.",
+   "C": "**Capítulo e epicôndilo lateral participam, mas falta a tróclea.** Colocar o epicôndilo medial em seu lugar modifica a anatomia do bloco comum. O medial permanece à parte durante essa fase.",
+   "D": "**Tróclea e epicôndilo lateral participam, mas o terceiro centro é o capítulo.** O epicôndilo medial não integra o bloco inicial. Sua presença nesta opção e a ausência do capítulo tornam o conjunto incorreto."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "5cebe8306744d3fcb1115fddcdcad1726d1c550df90d96a75ce8ccd738b2fbfb",
+   "comentarioSha256": "fa23420d9a456d6d441c519865abbeebbd84143d126dd033a7300962b36295d4"
+  }
  },
  "pediatria-0986": {
-  "conceito": "**Meninas na frente.** O capítulo afirma que, em geral, a ossificação do úmero distal é mais rápida nas meninas. Em algumas regiões, como o olécrano e o epicôndilo lateral, a diferença entre os sexos chega a 2 anos. O estudo de CHENG (1.577 crianças) confirmou: a sequência é igual nos dois sexos, mas a ossificação dos meninos atrasa cerca de 2 anos em todos os centros, exceto no capítulo, que aparece por volta de 1 ano em ambos (tabela 12-1).\n\n**Os números da tabela.**\n\n| Centro | Meninas | Meninos | Diferença |\n|---|---|---|---|\n| capítulo | 1,0 | 1,0 | nenhuma |\n| cabeça do rádio | 5,0 | 6,0 | 1 ano |\n| epicôndilo medial | 5,0 | 7,5 | 2,5 anos |\n| olécrano | 8,7 | 10,5 | quase 2 anos |\n| tróclea | 9,0 | 10,7 | quase 2 anos |\n| epicôndilo lateral | 10,0 | 12,0 | 2 anos |\n\n**Para que serve na prática.** Ao ler a radiografia de uma criança, o examinador precisa saber se a ausência de um centro é normal para a idade e o sexo. Num menino de 7 anos, por exemplo, o epicôndilo medial pode ainda não estar ossificado, enquanto numa menina da mesma idade ele já deveria aparecer. Se um núcleo aparece fora do lugar e o centro esperado sumiu, a hipótese de fragmento desviado (como o epicôndilo medial encarcerado) ganha força. O capítulo também lembra que o capítulo, quando aparece, pode demorar até 18 a 24 meses em algumas crianças.\n\n**O mesmo padrão no resto do esqueleto.** A maturação mais precoce das meninas é regra geral, e o pico das lesões da fise distal do úmero também vem antes nelas (4 a 5 anos nas meninas e 5 a 8 anos nos meninos, segundo o capítulo).\n\n> **Na prova:** meninas ossificam antes; o capítulo (por volta de 1 ano) é igual nos dois sexos; nos demais centros os meninos atrasam cerca de 2 anos.\n\n**Por que esta questão foi criada.** O TARO 2012 perguntou quais núcleos estão ossificados numa criança de sete anos, uma pergunta que depende da idade e do sexo. Esta questão cobre a lacuna que aquela deixa: a diferença entre os sexos e o único centro sem atraso, um dado em destaque na tabela do capítulo e com cara de par 2 por 2.",
-  "correta": "**B: feminino; capítulo.** A ossificação das meninas é mais rápida que a dos meninos, e o atraso de cerca de 2 anos dos meninos aparece em todos os centros, exceto no capítulo, que surge por volta de 1 ano nos dois sexos (tabela 12-1, dados de CHENG). As duas partes estão no mesmo parágrafo do capítulo, que descreve a sequência idêntica nos dois sexos (capítulo, cabeça do rádio, epicôndilo medial, olécrano, tróclea e epicôndilo lateral) e o atraso dos meninos.",
+  "conceito": "**As meninas geralmente apresentam os centros de ossificação do cotovelo antes dos meninos.** O estudo de Cheng, com 1.577 crianças, encontrou a mesma sequência nos dois sexos, mas um atraso aproximado de 2 anos nos meninos, exceto para o **capítulo**, cuja referência foi cerca de 1 ano em ambos. Trata-se de tendência de uma série, com variação entre centros e entre indivíduos.\n\nO capítulo é o primeiro núcleo; cabeça do rádio e epicôndilo medial vêm depois; olécrano, tróclea e epicôndilo lateral compõem as etapas tardias. Para o epicôndilo lateral, a tabela apresenta 10 anos nas meninas e 12 nos meninos, ilustrando a diferença. O dimorfismo na maturação é relevante para não exigir de toda criança os mesmos núcleos na mesma idade.\n\n**Por que esta questão foi criada.** A questão relaciona a variação normal por sexo à exceção do primeiro centro, evitando aplicar uma única idade rígida a todos os núcleos.",
+  "correta": "**B: feminino e capítulo.** As meninas ossificam mais cedo na comparação apresentada. O capítulo é a exceção ao atraso aproximado masculino, com idade de referência semelhante, em torno de 1 ano, nos dois sexos.",
   "incorretas": {
-   "A": "**O centro está certo, o sexo não.** O capítulo de fato não difere entre os sexos, mas são as meninas que ossificam antes. Inverter o sexo é o erro de quem lembra que os meninos sofrem mais fraturas do cotovelo e associa isso, sem razão, a um esqueleto mais adiantado. A frequência de fratura e a velocidade de ossificação são coisas diferentes.",
-   "C": "**Erra os dois dados.** Os meninos ossificam depois, e o epicôndilo lateral é justamente um dos centros com a maior diferença entre os sexos (10 anos nas meninas e 12 nos meninos), citado no texto como exemplo de diferença que pode chegar a 2 anos. Ele é também o último centro a aparecer e nem sempre é visível, o que o torna uma escolha ruim para \"centro sem atraso\".",
-   "D": "**O sexo está certo, o centro não.** As meninas ossificam antes, mas o epicôndilo lateral não é o centro poupado: a diferença entre os sexos nele é de 2 anos. O centro que aparece na mesma idade nos dois sexos é o capítulo. A confusão vem de o epicôndilo lateral ser o último da sequência nos dois sexos; ser o último na ordem não significa aparecer na mesma idade."
+   "A": "**O capítulo é a exceção correta, mas o sexo está invertido.** A tendência descrita é aparecimento mais precoce nas meninas, não nos meninos. A igualdade aproximada do capítulo não elimina a diferença nos outros centros.",
+   "C": "**Erra o sexo e a exceção.** Os meninos têm aparecimento geralmente mais tardio; o epicôndilo lateral exemplifica essa diferença, em torno de 12 anos nos meninos e 10 nas meninas. O centro sem esse atraso aproximado é o capítulo.",
+   "D": "**O feminino está correto, mas o epicôndilo lateral não é a exceção.** A tabela mostra diferença de cerca de 2 anos nesse núcleo. É o capítulo que aparece com referência semelhante nos dois sexos."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "d6f1d239fa7fdfa18d26e95c405339cef88e9335cabf2f07de416d69a00111ee",
+   "comentarioSha256": "90a97cee78150503d70c52c4c94a47480e931ea47ec3d94ef2b25fd8bf89ef78"
+  }
  },
  "pediatria-0987": {
-  "conceito": "**O que é a linha umeral anterior.** No perfil verdadeiro do cotovelo, traça-se uma linha ao longo da cortical anterior da diáfise distal do úmero. Normalmente ela atravessa o terço médio do centro de ossificação do capítulo (figura 12-18C). O úmero distal da criança é inclinado para a frente: no perfil, o eixo do côndilo lateral forma cerca de 40 graus com o eixo da diáfise (o ângulo diáfise-côndilo, figura 12-18B). A linha umeral anterior é a forma mais simples de verificar se essa inclinação está preservada.\n\n**O que muda na fratura.** Na fratura supracondiliana em extensão, o fragmento distal se inclina para trás. O capítulo vai para trás em relação à diáfise, e a linha passa a cruzar o terço anterior do capítulo ou a passar inteiramente à frente dele. O capítulo descreve isso como sinal de angulação posterior do úmero distal. Num grande estudo de fraturas supracondilianas pouco desviadas, a linha umeral anterior foi o fator mais confiável para detectar ou excluir uma fratura oculta.\n\n**A exceção da idade.** HERMAN mostrou que a posição da linha varia com a idade: em quase metade das crianças com menos de 4 anos ela passa normalmente pelo terço anterior do capítulo, que ainda é pequeno. Nas crianças mais velhas, passa com mais regularidade pelo terço médio. Por isso o enunciado fala da criança em idade escolar; no lactente, uma linha no terço anterior pode ser normal.\n\n**As outras linhas do perfil.**\n\n| Linha | Normal | Alteração |\n|---|---|---|\n| umeral anterior | terço médio do capítulo | anterior ao terço médio: angulação posterior |\n| do coronoide | toca de leve a parte anterior do côndilo lateral | côndilo atrás da linha: desvio posterior |\n| ângulo diáfise-côndilo | cerca de 40 graus | menor na extensão do fragmento |\n| gota de lágrima | bem definida no perfil verdadeiro | apagada em perfil oblíquo |\n\n> **Na prova:** linha umeral anterior no terço médio do capítulo; anterior a isso, o úmero distal está angulado para trás (extensão). Abaixo dos 4 anos, o terço anterior pode ser normal.\n\n**Por que esta questão foi criada.** O TARO 2007 trouxe como alternativa falsa a linha umeral anterior passando na porção anterior do centro do côndilo lateral, e o TEPOP 2024 cobrou a linha umeral anterior e o ângulo de BAUMANN como as medidas para avaliar a fratura supracondiliana. Esta gêmea pergunta a posição normal e o significado do desvio, num par 2 por 2.",
-  "correta": "**D: médio; posterior.** A linha traçada na cortical anterior do úmero distal deve cruzar o terço médio do centro do capítulo (figura 12-18C). Se ela passa pela porção anterior do centro ou à frente dele, o capítulo foi para trás: há angulação posterior do úmero distal, como na fratura supracondiliana em extensão. O capítulo destaca que essa linha foi o critério mais confiável para detectar fraturas supracondilianas pouco desviadas, com a ressalva de HERMAN para os menores de 4 anos.",
+  "conceito": "**A linha umeral anterior avalia o alinhamento sagital no perfil verdadeiro.** Ela prolonga a cortical anterior da diáfise distal e, na criança escolar, deve cruzar o **terço médio do capítulo**. Se o capítulo se desloca ou se angula para trás, a linha fica relativamente à frente dele, mostrando **angulação posterior do úmero distal**.\n\nÉ importante imaginar qual estrutura mudou: a cortical define a linha; o fragmento distal foi para posterior. Por isso uma linha anterior ao capítulo não significa angulação anterior. Há ressalva nos menores de 4 anos: em quase metade, a passagem pelo terço anterior pode ser normal. O enunciado especifica idade escolar, na qual o cruzamento pelo terço médio é mais regular. Incidência oblíqua também prejudica a interpretação.\n\n**Por que esta questão foi criada.** A relação geométrica entre cortical e capítulo ajuda a interpretar a deformidade, com a ressalva etária que impede falsos diagnósticos nos pequenos.",
+  "correta": "**D: terço médio e angulação posterior.** No padrão normal escolar, a linha cruza o meio do capítulo. Quando passa à frente do núcleo, é o úmero distal que ficou posterior à projeção da cortical anterior, padrão descrito na supracondiliana em extensão.",
   "incorretas": {
-   "A": "**Erra os dois dados.** A passagem pelo terço anterior é normal em quase metade das crianças menores de 4 anos, mas não na criança em idade escolar, em que o normal é o terço médio. E quando a linha passa à frente do capítulo, o capítulo está deslocado para trás, ou seja, o úmero distal está angulado posteriormente, e não anteriormente. Angulação anterior do fragmento distal é o padrão da rara fratura em flexão, em que o capítulo vai para a frente e a linha cruza o terço posterior ou passa atrás dele.",
-   "B": "**O significado está certo, a posição normal não.** Linha à frente do capítulo indica, sim, angulação posterior. Mas o normal na criança em idade escolar é o terço médio. O terço anterior é a armadilha de HERMAN: normal só para parte das crianças menores de 4 anos. Foi exatamente essa a alternativa falsa do TARO 2007 (\"deve passar na porção anterior do centro de ossificação\").",
-   "C": "**A posição normal está certa, o significado não.** O terço médio é o normal. Mas a linha passa à frente do capítulo quando o capítulo vai para trás, o que é angulação posterior (extensão), o padrão de quase todas as fraturas supracondilianas. Para a linha ficar atrás do centro, o fragmento distal precisaria se inclinar para a frente, como na fratura em flexão."
+   "A": "**As duas relações estão erradas para a criança escolar.** O terço anterior pode ser normal em parte dos menores de 4 anos, mas o esperado aqui é o médio. Além disso, linha à frente do capítulo indica angulação posterior, não anterior.",
+   "B": "**O sentido posterior da angulação está correto, mas o terço normal está errado.** A referência escolar é o terço médio. A variante de passagem anterior descrita nos menores de 4 anos não deve substituir a regra para a idade indicada.",
+   "C": "**O terço médio está correto, mas o sentido da deformidade foi invertido.** Se o capítulo fica atrás da linha cortical, o fragmento distal está angulado para posterior. O nome da linha, anterior, não determina o sentido da angulação patológica."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Linhas e ângulos da radiografia."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Linhas e ângulos da radiografia"
+     ],
+     "blocos": [
+      "linhas-e-angulos-da-radiografia-3676b995",
+      "linhas-e-angulos-da-radiografia-4f46cd3b",
+      "linhas-e-angulos-da-radiografia-e1c833db",
+      "linhas-e-angulos-da-radiografia-8cbf1fde",
+      "linhas-e-angulos-da-radiografia-31fa609b",
+      "linhas-e-angulos-da-radiografia-f0727290",
+      "linhas-e-angulos-da-radiografia-de8dc999",
+      "linhas-e-angulos-da-radiografia-7cbbcae9",
+      "linhas-e-angulos-da-radiografia-fd82cc21",
+      "linhas-e-angulos-da-radiografia-b86846bc",
+      "linhas-e-angulos-da-radiografia-f6d6e1e9",
+      "linhas-e-angulos-da-radiografia-a8d7b42a",
+      "linhas-e-angulos-da-radiografia-1aa3e6c6",
+      "linhas-e-angulos-da-radiografia-9df8ac29",
+      "linhas-e-angulos-da-radiografia-568bffbc",
+      "linhas-e-angulos-da-radiografia-aaf24f22",
+      "linhas-e-angulos-da-radiografia-67b73396",
+      "linhas-e-angulos-da-radiografia-e70a341c",
+      "linhas-e-angulos-da-radiografia-875d3977",
+      "linhas-e-angulos-da-radiografia-a652b775",
+      "linhas-e-angulos-da-radiografia-09f90a66",
+      "linhas-e-angulos-da-radiografia-b665eac5",
+      "linhas-e-angulos-da-radiografia-d294bff7",
+      "linhas-e-angulos-da-radiografia-22e1822a",
+      "linhas-e-angulos-da-radiografia-adbebc39",
+      "linhas-e-angulos-da-radiografia-8a71aa7e",
+      "linhas-e-angulos-da-radiografia-35e5f6e9"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+    }
+   ],
+   "questaoSha256": "9719ad7737f816a225626cc2a61afaf706ec387c08f3ac55e718ff2620b52f33",
+   "comentarioSha256": "e9415b6ca11a41f979dcdb9a551f1aabd1865c4fb19e062ecb2722eda01f25bd"
+  }
  },
  "pediatria-0988": {
-  "conceito": "**O principal marco do AP.** No AP do cotovelo da criança, o marco mais importante é a inclinação da fise entre o centro do côndilo lateral (capítulo) e a metáfise distal do úmero. O ângulo formado entre essa linha fisária e o eixo longo do úmero é o ângulo de BAUMANN (figura 12-17A). ACTON e MCNALLY encontraram três formas diferentes de medi-lo nos livros e recomendaram sempre usar a inclinação da fise do capítulo, como BAUMANN descreveu, sugerindo até o nome \"ângulo diáfise-fise\" para evitar confusão.\n\n**Para que serve.** É um ângulo constante quando se comparam os dois lados com o raio perpendicular ao úmero, e por isso mede bem qualquer desvio em varo ou valgo do úmero distal (o colapso medial que leva ao cúbito varo). Tem boa correlação com o ângulo de carregamento clínico, mas não é igual a ele nas crianças mais velhas, e fica difícil de medir no adolescente, quando o centro do côndilo lateral começa a se fundir com os outros.\n\n**Cuidados na técnica.** Inclinar o tubo no sentido craniocaudal ou de um lado para o outro até 30 graus muda o ângulo menos de 5 graus; acima de 20 graus de inclinação cefalocaudal, a medida fica imprecisa. A rotação do fragmento distal ou de todo o úmero também altera a projeção (CAMP): o úmero deve estar paralelo ao chassi e o raio perpendicular. Feito assim, inclusive na incidência de JONES, é uma boa medida.\n\n**Os três ângulos do AP.**\n\n| Ângulo | Linhas | Utilidade |\n|---|---|---|\n| BAUMANN | eixo do úmero e fise do côndilo lateral | desvio do úmero distal; boa correlação com o carregamento |\n| úmero-ulnar | eixo do úmero e eixo da ulna | o mais preciso para o ângulo de carregamento |\n| metáfiso-diafisário | eixo do úmero e linha da maior largura da metáfise | o menos preciso dos três |\n\n> **Na prova:** BAUMANN = eixo do úmero com a fise do capítulo (côndilo lateral), no AP.\n\n**Por que esta questão foi criada.** No TARO 2007, a avaliação radiográfica do cotovelo trouxe duas alternativas falsas sobre ângulos: o BAUMANN formado com a superfície articular e o metáfiso-diafisário formado com a placa epifisária do côndilo lateral. Esta gêmea cobra a definição certa, usando como distratores as linhas que formam os outros ângulos.",
-  "correta": "**B: fise do côndilo lateral.** O ângulo de BAUMANN é o ângulo entre o eixo longo do úmero e a linha da fise entre o centro de ossificação do côndilo lateral e a metáfise (figura 12-17A). O centro do côndilo lateral se estende para a crista lateral da tróclea, e a linha fisária dele é bem visível no AP. O capítulo recomenda medir sempre por essa linha, como BAUMANN descreveu, e chamar a medida de ângulo diáfise-fise para não confundir com outras variações publicadas.",
+  "conceito": "**Baumann é um ângulo diáfise-fise medido no AP.** Uma linha acompanha o eixo longitudinal do úmero; a outra acompanha a **fise do côndilo lateral**, junto ao centro do capítulo. A medida descreve a inclinação do úmero distal e ajuda a reconhecer desvio angular. Não se usa como referência a superfície articular distal, em grande parte cartilaginosa na criança.\n\nO posicionamento importa: o úmero deve ficar paralelo ao chassi e o raio perpendicular. A rotação pode modificar a projeção e a medida. Outros ângulos têm linhas diferentes: o metáfiso-diafisário usa os pontos mais largos da metáfise; o úmero-ulnar usa os eixos dos dois ossos e representa com maior precisão o ângulo de carregamento. Identificar as duas linhas evita chamar medidas distintas pelo mesmo nome.\n\n**Por que esta questão foi criada.** A definição das duas linhas permite diferenciar Baumann dos outros ângulos do AP e evita depender apenas de nomes.",
+  "correta": "**B: fise do côndilo lateral.** É a linha que, junto do eixo umeral, forma Baumann na descrição original adotada pelo capítulo. A referência fisária permite medir a inclinação distal em uma articulação ainda parcialmente cartilaginosa.",
   "incorretas": {
-   "A": "**A linha transepicondilar não forma o BAUMANN.** Os epicôndilos ossificam tarde (o medial por volta dos 5 a 7 anos e o lateral por volta dos 10 a 12) e são apófises extra-articulares; uma linha entre eles seria impossível de traçar na criança pequena. O BAUMANN usa a fise do capítulo, que existe desde o primeiro ano de vida. A linha transepicondilar é usada em avaliações de rotação e de artroplastia no adulto, não neste ângulo.",
-   "C": "**É a linha do ângulo metáfiso-diafisário.** A linha que une os pontos mais largos da metáfise distal, cruzada com o eixo da diáfise, forma o ângulo metáfiso-diafisário (figura 12-17C), o menos preciso dos três ângulos do AP para o alinhamento. É a troca exata que o TARO 2007 usou como alternativa falsa, ao descrever o metáfiso-diafisário com a placa epifisária do côndilo lateral.",
-   "D": "**A superfície articular foi a alternativa falsa do TARO 2007.** Na criança, a superfície articular distal é em grande parte cartilagem e não aparece na radiografia, por isso não serve de referência. O ângulo de BAUMANN usa a fise do côndilo lateral, que é visível. ACTON e MCNALLY mostraram que essa variação de técnica existe nos livros e recomendaram abandoná-la."
+   "A": "**A linha transepicondilar une os epicôndilos e não é a linha fisária de Baumann.** Usá-la no lugar da fise produz outra construção geométrica. A pergunta exige a referência junto ao côndilo lateral, não uma linha entre os dois epicôndilos.",
+   "C": "**A maior largura metafisária pertence ao ângulo metáfiso-diafisário.** Ele também usa o eixo do úmero, o que favorece a confusão, mas sua segunda linha une os pontos mais largos da metáfise. Em Baumann, essa segunda referência é a fise lateral.",
+   "D": "**A superfície articular distal não é a referência de Baumann na criança.** A articulação contém cartilagem não visível na radiografia simples. O capítulo recomenda a inclinação da fise do capítulo, distinguindo-a da projeção de uma superfície articular."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Linhas e ângulos da radiografia."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Linhas e ângulos da radiografia"
+     ],
+     "blocos": [
+      "linhas-e-angulos-da-radiografia-3676b995",
+      "linhas-e-angulos-da-radiografia-4f46cd3b",
+      "linhas-e-angulos-da-radiografia-e1c833db",
+      "linhas-e-angulos-da-radiografia-8cbf1fde",
+      "linhas-e-angulos-da-radiografia-31fa609b",
+      "linhas-e-angulos-da-radiografia-f0727290",
+      "linhas-e-angulos-da-radiografia-de8dc999",
+      "linhas-e-angulos-da-radiografia-7cbbcae9",
+      "linhas-e-angulos-da-radiografia-fd82cc21",
+      "linhas-e-angulos-da-radiografia-b86846bc",
+      "linhas-e-angulos-da-radiografia-f6d6e1e9",
+      "linhas-e-angulos-da-radiografia-a8d7b42a",
+      "linhas-e-angulos-da-radiografia-1aa3e6c6",
+      "linhas-e-angulos-da-radiografia-9df8ac29",
+      "linhas-e-angulos-da-radiografia-568bffbc",
+      "linhas-e-angulos-da-radiografia-aaf24f22",
+      "linhas-e-angulos-da-radiografia-67b73396",
+      "linhas-e-angulos-da-radiografia-e70a341c",
+      "linhas-e-angulos-da-radiografia-875d3977",
+      "linhas-e-angulos-da-radiografia-a652b775",
+      "linhas-e-angulos-da-radiografia-09f90a66",
+      "linhas-e-angulos-da-radiografia-b665eac5",
+      "linhas-e-angulos-da-radiografia-d294bff7",
+      "linhas-e-angulos-da-radiografia-22e1822a",
+      "linhas-e-angulos-da-radiografia-adbebc39",
+      "linhas-e-angulos-da-radiografia-8a71aa7e",
+      "linhas-e-angulos-da-radiografia-35e5f6e9"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+    }
+   ],
+   "questaoSha256": "d97b65df9bd70b2a95a0d4ad41c5ba7727fb0d01aa85acb612e295ef769a5f74",
+   "comentarioSha256": "93aae1836c60f9f65015cc1fe8477c7711d4289bc0e82dc030fb38ce25a8cbad"
+  }
  },
  "pediatria-0989": {
-  "conceito": "**O ângulo de carregamento.** É o valgo fisiológico do cotovelo estendido e supinado: o antebraço desvia-se para fora em relação ao braço. A sequela mais conhecida das fraturas do úmero distal da criança, o cúbito varo, é a perda desse valgo. Por isso o alinhamento do úmero distal precisa ser medido na radiografia, e o capítulo descreve três ângulos no AP.\n\n**Os três ângulos.**\n- **Úmero-ulnar:** linhas que dividem ao meio, no sentido longitudinal, a diáfise do úmero e a diáfise da ulna (figura 12-17B). Como mede diretamente o eixo do braço contra o eixo do antebraço, é o mais preciso para o verdadeiro ângulo de carregamento.\n- **BAUMANN:** eixo do úmero com a fise do côndilo lateral (figura 12-17A). Tem boa correlação com o carregamento clínico, mas não é igual a ele nas crianças mais velhas e é difícil de medir no adolescente, quando o côndilo lateral começa a se fundir.\n- **Metáfiso-diafisário:** eixo do úmero com a linha que une os pontos mais largos da metáfise (figura 12-17C). É o menos preciso dos três.\n\n**Por que o úmero-ulnar ganha.** O carregamento é a relação entre dois segmentos, braço e antebraço. O BAUMANN e o metáfiso-diafisário medem só a orientação do úmero distal; o úmero-ulnar mede o resultado final, incluindo a articulação. O BAUMANN, em compensação, é o preferido para acompanhar a redução da fratura, porque mede o fragmento distal mesmo com o cotovelo fletido.\n\n**Ângulos do perfil, que não medem carregamento.** O ângulo umerocapitelar lateral (de SHANK, média de 51 graus, figura 12-19) mede a inclinação anterior do capítulo no perfil e se relaciona com a flexão, não com o varo e o valgo.\n\n> **Na prova:** úmero-ulnar é o mais preciso para o carregamento; BAUMANN tem boa correlação; metáfiso-diafisário é o menos preciso.\n\n**Por que esta questão foi criada.** No TARO 2007, a alternativa que a bibliografia sustenta numa questão sobre a avaliação radiográfica do cotovelo da criança dizia que o ângulo úmero-ulnar corresponde à expressão radiográfica do ângulo de carregamento. Esta gêmea transforma essa frase numa pergunta direta, com os outros ângulos como distratores.",
-  "correta": "**D: úmero-ulnar.** O capítulo diz que, dos ângulos medidos no AP, o úmero-ulnar é o mais preciso para determinar o verdadeiro ângulo de carregamento do cotovelo. Ele é formado pelas linhas que dividem ao meio a diáfise do úmero e a da ulna (figura 12-17B) e, por isso, mede diretamente a relação entre o braço e o antebraço, que é o que o ângulo de carregamento representa.",
+  "conceito": "**O ângulo de carregamento descreve a relação entre braço e antebraço no plano coronal.** Na radiografia AP, o **úmero-ulnar**, formado pelos eixos longitudinais do úmero e da ulna, é a expressão mais precisa desse alinhamento segundo o capítulo. Ele mede diretamente a relação entre os dois segmentos.\n\nBaumann usa o eixo umeral e a fise do côndilo lateral: avalia a inclinação distal e tem boa correlação com o carregamento, porém não é uma medida idêntica, sobretudo nas crianças maiores. O metáfiso-diafisário usa a linha da maior largura metafisária e é o menos preciso dos três ângulos do AP comparados. Já o umerocapitelar lateral é medido no perfil e trata da relação sagital entre diáfise e capítulo. Comparar utilidade e incidência evita trocar uma boa medida de alinhamento distal pela melhor medida do carregamento.\n\n**Por que esta questão foi criada.** A questão diferencia a medida mais precisa do carregamento de outras medidas úteis do úmero distal, incluindo uma que pertence ao perfil.",
+  "correta": "**D: úmero-ulnar.** Usa os eixos do úmero e da ulna no AP e, portanto, representa diretamente a relação entre braço e antebraço. É apontado como o mais preciso para o verdadeiro ângulo de carregamento.",
   "incorretas": {
-   "A": "**É o menos preciso dos três.** O metáfiso-diafisário usa a linha que une os pontos mais largos da metáfise distal (figura 12-17C). Foi proposto para guiar o tratamento da fratura supracondiliana, mas o capítulo o classifica como o menos preciso dos três ângulos do AP. A metáfise é larga e irregular, e pequenas diferenças de rotação mudam os pontos de referência.",
-   "B": "**Boa correlação, mas não é o mais preciso.** O BAUMANN mede a fise do côndilo lateral contra o eixo do úmero e tem boa correlação com o carregamento clínico, por isso é o ângulo mais usado no controle da redução. Mas o capítulo afirma que ele não é igual ao ângulo de carregamento nas crianças mais velhas e fica difícil de medir no adolescente, quando o côndilo lateral começa a se fundir. É o distrator mais forte, porque é o ângulo mais famoso do cotovelo da criança.",
-   "C": "**É um ângulo do perfil, não do AP.** O ângulo umerocapitelar lateral (média de 51 graus, sem variação com idade, sexo ou lado) mede a relação entre a diáfise e o capítulo no perfil, isto é, a inclinação anterior do úmero distal. Está ligado à flexão; alguns estudos o associam à perda de flexão na maturidade, e um valor acima de 69 graus deve ser aceito com reserva. Não informa nada sobre varo e valgo."
+   "A": "**O metáfiso-diafisário é o menos preciso entre os três ângulos do AP comparados.** Sua referência distal é a linha dos pontos mais largos da metáfise, não o eixo do antebraço. Por isso não supera o úmero-ulnar na representação do carregamento.",
+   "B": "**Baumann é útil para desvio angular do úmero distal e se correlaciona com o carregamento, mas não é idêntico a ele.** Sua segunda linha é a fise lateral, não o eixo da ulna. O capítulo atribui maior precisão ao úmero-ulnar para a finalidade específica perguntada.",
+   "C": "**O umerocapitelar lateral é uma medida do perfil.** Relaciona diáfise e capítulo no plano sagital, enquanto o carregamento é avaliado no AP pela relação entre úmero e ulna. A alternativa troca o plano e o objetivo da medida."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Linhas e ângulos da radiografia."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Linhas e ângulos da radiografia"
+     ],
+     "blocos": [
+      "linhas-e-angulos-da-radiografia-3676b995",
+      "linhas-e-angulos-da-radiografia-4f46cd3b",
+      "linhas-e-angulos-da-radiografia-e1c833db",
+      "linhas-e-angulos-da-radiografia-8cbf1fde",
+      "linhas-e-angulos-da-radiografia-31fa609b",
+      "linhas-e-angulos-da-radiografia-f0727290",
+      "linhas-e-angulos-da-radiografia-de8dc999",
+      "linhas-e-angulos-da-radiografia-7cbbcae9",
+      "linhas-e-angulos-da-radiografia-fd82cc21",
+      "linhas-e-angulos-da-radiografia-b86846bc",
+      "linhas-e-angulos-da-radiografia-f6d6e1e9",
+      "linhas-e-angulos-da-radiografia-a8d7b42a",
+      "linhas-e-angulos-da-radiografia-1aa3e6c6",
+      "linhas-e-angulos-da-radiografia-9df8ac29",
+      "linhas-e-angulos-da-radiografia-568bffbc",
+      "linhas-e-angulos-da-radiografia-aaf24f22",
+      "linhas-e-angulos-da-radiografia-67b73396",
+      "linhas-e-angulos-da-radiografia-e70a341c",
+      "linhas-e-angulos-da-radiografia-875d3977",
+      "linhas-e-angulos-da-radiografia-a652b775",
+      "linhas-e-angulos-da-radiografia-09f90a66",
+      "linhas-e-angulos-da-radiografia-b665eac5",
+      "linhas-e-angulos-da-radiografia-d294bff7",
+      "linhas-e-angulos-da-radiografia-22e1822a",
+      "linhas-e-angulos-da-radiografia-adbebc39",
+      "linhas-e-angulos-da-radiografia-8a71aa7e",
+      "linhas-e-angulos-da-radiografia-35e5f6e9"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+    }
+   ],
+   "questaoSha256": "c4326fc8287f12acc960fe1d298a0d75859295d1a0fd7895edc740bc30d32762",
+   "comentarioSha256": "5f3e4fb3b35ff60e899b7468996c59ef1e9a75fab4ddc284ee4090b7d26cdc1c"
+  }
  },
  "pediatria-0990": {
-  "conceito": "**Onde ficam os coxins.** Na parte proximal da cápsula do cotovelo, entre a cápsula fibrosa e a camada sinovial, há dois grandes coxins de gordura (figura 12-13). Um ocupa a fossa coronóidea, na frente do úmero distal; o outro ocupa a fossa do olécrano, atrás. São intracapsulares, mas extrassinoviais. Um terceiro acúmulo de gordura recobre o músculo supinador, em volta do rádio proximal.\n\n**Por que um aparece e o outro não.** A fossa do olécrano é profunda: com o cotovelo fletido a 90 graus, o coxim posterior fica inteiramente escondido dentro dela e não aparece na radiografia normal (figura 12-21A). A fossa coronóidea é rasa: parte do coxim anterior se projeta à frente das margens ósseas e é vista normalmente como uma faixa triangular radiotransparente na frente do úmero distal.\n\n**O sinal do coxim gorduroso.** Quando um derrame distende a cápsula (fratura intra-articular oculta, luxação reduzida espontaneamente ou até infecção), o coxim posterior é empurrado para fora da fossa e passa a ser visível; o anterior é levantado e se afasta do osso, ganhando a forma de vela (figura 12-21B). O deslocamento de um ou dos dois é o sinal clássico do coxim gorduroso.\n\n| Coxim | Fossa | Normal no perfil a 90 graus | Com derrame |\n|---|---|---|---|\n| posterior (olecraniano) | profunda | invisível | aparece |\n| anterior (coronóideo) | rasa | faixa triangular junto ao osso | levantado, em vela |\n| do supinador | sobre o rádio proximal | pode abaular levemente | deslocado na fratura do colo (positivo só em 50%) |\n\n**O que o achado significa.** SKAGGS e MIRZAYAN encontraram fratura em 76% das crianças com coxim posterior elevado e radiografia inicial sem fratura visível, e recomendaram tratar essas crianças como fratura sem desvio. Outros estudos acharam números bem menores (17% de DONNELLY; apenas 6 de 26 na ressonância de AL-AUBAIDI e TORFING, a maioria com contusão óssea). O coxim anterior é mais sensível a derrames pequenos, e um coxim anterior normal teve valor preditivo negativo de 98% (BLUMBERG).\n\n> **Na prova:** o coxim posterior não aparece no perfil normal porque a fossa do olécrano é profunda; se aparece, há derrame e possível fratura oculta.\n\n**Por que esta questão foi criada.** O sinal do coxim gorduroso é o achado radiográfico mais usado na avaliação do cotovelo da criança e ainda não caiu nas provas do acervo. O capítulo dá o mecanismo em uma frase (fossa profunda atrás, rasa na frente), um fato pontual com cara de par 2 por 2.",
-  "correta": "**A: posterior, porque a fossa do olécrano é profunda.** O capítulo explica que, como a fossa do olécrano é profunda, o coxim posterior fica totalmente contido nela e não é visível na radiografia em perfil normal do cotovelo fletido a 90 graus. Ele só aparece quando um derrame distende a cápsula e o empurra para fora. Por isso o coxim posterior visível é o sinal que mais chama a atenção para uma fratura oculta.",
+  "conceito": "**Os coxins são deslocados pelo conteúdo da articulação.** O posterior fica dentro da fossa do olécrano, que é profunda. Num perfil com cotovelo fletido a 90 graus, permanece oculto. O anterior fica na fossa coronóidea, mais rasa, e uma pequena faixa triangular pode ser vista normalmente à frente do úmero distal.\n\nQuando o derrame distende a cápsula íntegra, o posterior sai da fossa e aparece, enquanto o anterior se eleva. Isso é um sinal indireto, não um diagnóstico do tipo de fratura: pode acompanhar fratura oculta, luxação reduzida e infecção. A posição do exame importa, pois na extensão o olécrano empurra o coxim posterior para fora da fossa mesmo sem esse mecanismo de derrame.\n\n**Por que esta questão foi criada.** A anatomia das fossas explica a diferença entre coxim anterior normalmente visível e posterior deslocado pelo derrame.",
+  "correta": "**A: posterior, pela profundidade da fossa do olécrano.** Com 90 graus de flexão, o coxim fica recolhido na fossa e não aparece no perfil normal. Sua visualização nessa posição sugere deslocamento, frequentemente relacionado ao derrame.",
   "incorretas": {
-   "B": "**O coxim está certo, a razão não.** É mesmo o posterior que não aparece, mas porque a fossa do olécrano é profunda. Uma fossa rasa faria o contrário: deixaria a gordura projetar-se para fora do osso e aparecer, como acontece na frente. Quem associa \"rasa\" ao coxim invisível inverte o raciocínio de que a profundidade da fossa esconde a gordura.",
-   "C": "**Erra os dois dados.** O coxim anterior aparece normalmente, e a fossa coronóidea é rasa. A alternativa troca o lado e a anatomia: atribui à fossa coronóidea a profundidade que é da fossa do olécrano. Só um coxim anterior levantado e afastado do osso, em forma de vela, é anormal.",
-   "D": "**A anatomia está certa, mas explica o coxim que aparece.** A fossa coronóidea é rasa e, justamente por isso, o coxim anterior se projeta à frente das margens ósseas e é visto normalmente como uma faixa triangular radiotransparente. A alternativa usa um fato verdadeiro para o coxim errado. O anterior visível só é patológico quando está levantado; o capítulo lembra que ele é até mais sensível a derrames pequenos do que o posterior."
+   "B": "**Identifica o coxim correto, mas inverte a profundidade da fossa.** A fossa olecraniana é profunda, permitindo esconder o coxim posterior. Uma fossa rasa não explica o seu desaparecimento na radiografia normal.",
+   "C": "**O coxim anterior pode ser normalmente visível e a fossa coronóidea é rasa.** A alternativa erra o coxim e a anatomia. No anterior, a anormalidade é sua elevação pelo derrame, não simplesmente existir uma faixa visível.",
+   "D": "**A fossa coronóidea é rasa, mas isso favorece visualizar o coxim anterior.** Parte dele se projeta à frente da margem óssea. O coxim normalmente oculto no perfil a 90 graus é o posterior, alojado na fossa profunda."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção O sinal do coxim gorduroso."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "O sinal do coxim gorduroso"
+     ],
+     "blocos": [
+      "o-sinal-do-coxim-gorduroso-dd0398cb",
+      "o-sinal-do-coxim-gorduroso-8040da34",
+      "o-sinal-do-coxim-gorduroso-200db2d0",
+      "o-sinal-do-coxim-gorduroso-c78fc6f4",
+      "o-sinal-do-coxim-gorduroso-0544c1f8",
+      "o-sinal-do-coxim-gorduroso-b7bb16ad",
+      "o-sinal-do-coxim-gorduroso-8a541421",
+      "o-sinal-do-coxim-gorduroso-f48bdfda",
+      "o-sinal-do-coxim-gorduroso-0fdec553",
+      "o-sinal-do-coxim-gorduroso-f267b75d",
+      "o-sinal-do-coxim-gorduroso-83cd049d",
+      "o-sinal-do-coxim-gorduroso-13d152db",
+      "o-sinal-do-coxim-gorduroso-bf083803",
+      "o-sinal-do-coxim-gorduroso-3a01c1cc",
+      "o-sinal-do-coxim-gorduroso-306d1211",
+      "o-sinal-do-coxim-gorduroso-a0b4b82d",
+      "o-sinal-do-coxim-gorduroso-ad2f6620"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "d349c2170783692ba22b8445e480899c24d14b0b5913768cd5ad4dd5f012d6ef"
+    }
+   ],
+   "questaoSha256": "3be6400fc901c76ac79b31d63bf10f561deca18194af6938e87293ec867c8625",
+   "comentarioSha256": "793d942bf8cce77529c6edd2febacfb0a6adc33bf7a83b150ff591dd03c8e9fc"
+  }
  },
  "pediatria-0991": {
-  "conceito": "**A condição para o sinal existir.** O coxim gorduroso só é deslocado se o derrame ficar preso dentro da articulação e distender a cápsula. Para isso, a cápsula precisa estar íntegra. Na luxação do cotovelo, a cápsula se rompe; quando a luxação se reduz sozinha antes da radiografia, o sangue extravasa para os tecidos moles e a cápsula não se distende. Resultado: o coxim não se desloca, e uma lesão grave aparece com radiografia aparentemente inocente.\n\n**Falsos-negativos e falsos-positivos.** MURPHY e SIEGEL descreveram as variações que o capítulo manda ter em mente:\n\n| Situação | Erro | Mecanismo |\n|---|---|---|\n| luxação reduzida espontaneamente | falso-negativo | cápsula rompida não segura o derrame |\n| cotovelo em extensão | falso-positivo | o olécrano entra na fossa e desloca o coxim posterior |\n| fratura extra-articular do úmero distal | falso-positivo | sangramento subperiosteal levanta a parte proximal do coxim posterior sem derrame |\n| derrame pequeno | coxim anterior mais sensível | o anterior pode se deslocar sem o posterior |\n\n**A ligação com as lesões TRASH.** WATERS descreveu as lesões TRASH (do inglês \"a aparência radiográfica parecia inofensiva\"): lesões osteocondrais intra-articulares graves, sobretudo em crianças com menos de 10 anos e trauma de alta energia, muitas vezes associadas a luxação do cotovelo que se reduziu sozinha. Edema maior do que a radiografia justifica numa criança pequena deve levar a exame adicional (ultrassonografia, artrografia ou ressonância).\n\n**O peso do achado.** Mesmo quando presente, o sinal não equivale a fratura: os estudos variam de 17% a 76% de fraturas ocultas. Na ausência, o examinador não pode se tranquilizar se a história e o exame sugerem lesão grave.\n\n> **Na prova:** sem cápsula íntegra não há sinal do coxim; a luxação reduzida espontaneamente é o falso-negativo clássico.\n\n**Por que esta questão foi criada.** O capítulo dá uma regra com mecanismo claro (o coxim depende da cápsula íntegra), ainda não cobrada nas provas do acervo. A luxação do cotovelo da criança cai com frequência (TEOT 2021, TARO 2021, TARO 2022 e TARO 2023), e esta questão junta o tema conhecido ao sinal radiográfico que pode enganar nele.",
-  "correta": "**C: a cápsula está rompida.** O capítulo afirma que, para os coxins se deslocarem, a cápsula precisa estar íntegra, o que explica a ausência de deslocamento numa luxação que se reduziu espontaneamente com ruptura capsular. O derrame não fica contido, a cápsula não se distende e o coxim posterior continua escondido na fossa do olécrano. É uma das situações em que a radiografia parece inofensiva e a lesão não é.",
+  "conceito": "**O sinal do coxim depende de a cápsula conseguir conter o derrame.** Com a cápsula íntegra, o líquido distende a articulação, eleva o coxim anterior e faz o posterior sair da fossa do olécrano. Na luxação que se reduz espontaneamente, a cápsula pode estar rompida: o líquido não fica contido da mesma forma e o sinal pode faltar apesar de uma lesão relevante.\n\nAssim, ausência de coxim deslocado não exclui luxação prévia nem fratura associada. Há outras limitações: derrames pequenos podem deslocar só o anterior; extensão do cotovelo e sangramento subperiosteal de fratura extra-articular podem produzir aparência positiva sem o mecanismo habitual. A leitura precisa combinar posição, integridade capsular e contexto clínico.\n\n**Por que esta questão foi criada.** A questão ensina por que um sinal indireto negativo não exclui uma lesão quando o mecanismo que o produz foi interrompido.",
+  "correta": "**C: cápsula rompida.** É o mecanismo destacado para a luxação reduzida espontaneamente. Sem contenção, não se produz necessariamente a distensão que deslocaria a gordura. O sinal negativo não torna a lesão benigna.",
   "incorretas": {
-   "A": "**Derrame pequeno desloca o coxim anterior primeiro, mas não explica este caso.** O capítulo diz que o coxim anterior é mais sensível a derrames pequenos e pode se deslocar sozinho. Na luxação, porém, o sangramento costuma ser grande; o problema não é o volume, e sim a falta de um continente. Com a cápsula rompida, mesmo um grande sangramento não distende a articulação.",
-   "B": "**A flexão é a posição certa do exame.** O perfil é feito com o cotovelo fletido a 90 graus justamente para que o coxim posterior fique escondido na fossa do olécrano e só apareça se houver derrame. O erro de posição é a extensão: nela o olécrano entra na fossa e desloca o coxim posterior, produzindo um falso-positivo, o contrário do que o enunciado pede.",
-   "D": "**O sangramento subperiosteal causa o erro oposto.** Na fratura extra-articular do úmero distal, o sangue sob o periósteo pode levantar a parte proximal do coxim posterior mesmo sem derrame, criando um falso-positivo (figura 12-21E). Ele faz o coxim aparecer, e não desaparecer. É um distrator verdadeiro em outro contexto, da mesma lista de variações de MURPHY e SIEGEL."
+   "A": "**Derrame pequeno pode produzir alteração discreta, especialmente só do coxim anterior.** Isso explica uma limitação de sensibilidade, mas não é o mecanismo específico descrito para a luxação reduzida. Nessa situação, a ruptura capsular pode impedir a retenção do derrame.",
+   "B": "**A flexão a 90 graus é a posição de referência para o perfil e para julgar o coxim posterior.** Não explica o falso-negativo da luxação reduzida. Na extensão, ao contrário, o olécrano pode empurrar o coxim e gerar um falso-positivo.",
+   "D": "**O sangramento subperiosteal pode levantar a parte proximal do coxim posterior em fratura extra-articular.** Portanto, está relacionado a uma aparência positiva sem derrame articular, não à ausência do sinal após a ruptura capsular da luxação."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção O sinal do coxim gorduroso."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "O sinal do coxim gorduroso"
+     ],
+     "blocos": [
+      "o-sinal-do-coxim-gorduroso-dd0398cb",
+      "o-sinal-do-coxim-gorduroso-8040da34",
+      "o-sinal-do-coxim-gorduroso-200db2d0",
+      "o-sinal-do-coxim-gorduroso-c78fc6f4",
+      "o-sinal-do-coxim-gorduroso-0544c1f8",
+      "o-sinal-do-coxim-gorduroso-b7bb16ad",
+      "o-sinal-do-coxim-gorduroso-8a541421",
+      "o-sinal-do-coxim-gorduroso-f48bdfda",
+      "o-sinal-do-coxim-gorduroso-0fdec553",
+      "o-sinal-do-coxim-gorduroso-f267b75d",
+      "o-sinal-do-coxim-gorduroso-83cd049d",
+      "o-sinal-do-coxim-gorduroso-13d152db",
+      "o-sinal-do-coxim-gorduroso-bf083803",
+      "o-sinal-do-coxim-gorduroso-3a01c1cc",
+      "o-sinal-do-coxim-gorduroso-306d1211",
+      "o-sinal-do-coxim-gorduroso-a0b4b82d",
+      "o-sinal-do-coxim-gorduroso-ad2f6620"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "d349c2170783692ba22b8445e480899c24d14b0b5913768cd5ad4dd5f012d6ef"
+    }
+   ],
+   "questaoSha256": "617ebedb8ef3d90a10a73b577062c03d6299d2c6cabd4095f922bbec1736e505",
+   "comentarioSha256": "a4f9f020bdb1fdafd77c3185e7d0ad19866a6c171f8c419d7be13df913b3da89"
+  }
  },
  "pediatria-0992": {
-  "conceito": "**O problema do cotovelo sem osso visível.** Abaixo dos 2 anos, quase toda a epífise distal do úmero é cartilagem: o capítulo começa a ossificar por volta de 1 ano e pode atrasar até 18 a 24 meses. Na radiografia, a epífise inteira é invisível. Se ela se separa da metáfise pela fise, o que se vê é só o rádio e a ulna deslocados em relação ao úmero, o que lembra uma luxação.\n\n**Por que é descolamento e não luxação.** O capítulo afirma: na criança com menos de 2 anos, a radiografia que mostra desvio posteromedial do rádio e da ulna em relação à metáfise distal do úmero e à epífise não ossificada deve levantar a suspeita de lesão transfisária. Nessa idade, a fise é o elo mais fraco e a luxação verdadeira do cotovelo é rara. Na luxação, a cabeça do rádio perde a relação com o capítulo; no descolamento, a epífise vai junto com o antebraço e a relação radiocapitelar é preservada (quando o capítulo já aparece). O desvio costuma ser posteromedial.\n\n**Como confirmar.** Ultrassonografia ou ressonância magnética fazem o diagnóstico, porque mostram a cartilagem que a radiografia não vê. A artrografia, geralmente no centro cirúrgico, também delimita a epífise. A tomografia mostra osso, que nessa idade quase não existe na epífise, e exige sedação na criança pequena.\n\n**O contexto: maus-tratos.** O capítulo insiste que essas crianças muitas vezes são vítimas de trauma não acidental e correm risco não só de consolidação viciosa, mas de agressões mais graves no futuro. Diagnóstico preciso, tratamento da fratura e avaliação dos fatores humanos e sociais da lesão são essenciais. Por isso o descolamento transfisário não ossificado está na lista das lesões TRASH de WATERS.\n\n> **Na prova:** lactente, cotovelo inchado, rádio e ulna desviados juntos para posteromedial: descolamento transfisário do úmero distal; confirmar com ultrassonografia ou ressonância e pensar em maus-tratos.\n\n**Por que esta questão foi criada.** No TARO 2025, uma criança de 12 meses sem história clara de trauma, com edema e pseudoparalisia do cotovelo, tinha fratura fisária do úmero distal na radiografia, com pronação dolorosa, luxação e artrite séptica como distratores. Esta gêmea pergunta o mesmo diagnóstico pelo sinal radiográfico que o capítulo descreve e acrescenta o exame de confirmação.",
-  "correta": "**C: descolamento transfisário do úmero distal; ultrassonografia.** O capítulo descreve exatamente esse sinal (desvio posteromedial do rádio e da ulna em relação à metáfise distal e à epífise não ossificada, em menores de 2 anos) como sugestivo de lesão transfisária, e diz que a ultrassonografia ou a ressonância fazem o diagnóstico. A ultrassonografia é rápida, sem radiação e sem sedação, e mostra a epífise cartilaginosa deslocada junto com o antebraço.",
+  "conceito": "**No lactente, a epífise distal do úmero pode estar quase toda invisível por ser cartilaginosa.** Uma separação transfisária desloca o conjunto distal, e a radiografia mostra rádio e ulna desviados em relação à metáfise umeral. Nos menores de 2 anos, o desvio posteromedial desse conjunto deve levantar a suspeita de **descolamento transfisário**, em vez de ser interpretado automaticamente como luxação.\n\nA **ultrassonografia ou a ressonância** podem demonstrar a epífise cartilaginosa e confirmar a lesão. O diagnóstico tem consequência além da redução: o capítulo alerta para a associação com trauma não acidental e para a necessidade de avaliar a história e o contexto de proteção da criança. Não se deve atribuir maus-tratos apenas pela imagem, mas tampouco ignorar essa possibilidade.\n\n**Por que esta questão foi criada.** O deslocamento conjunto do antebraço no lactente direciona a investigação para uma lesão fisária oculta pela cartilagem.",
+  "correta": "**C: descolamento transfisário e ultrassonografia.** A idade e o deslocamento conjunto de rádio e ulna em relação à metáfise apontam para a separação da epífise distal. O ultrassom avalia a cartilagem que a radiografia não mostra; a RM também é indicada pelo resumo.",
   "incorretas": {
-   "A": "**O exame é bom, o diagnóstico não.** A ultrassonografia é de fato útil, mas o padrão descrito, num lactente, é de descolamento transfisário. A luxação do cotovelo é rara nessa idade porque a fise cede antes dos ligamentos; ela é mais frequente entre 10 e 19 anos, segundo o capítulo. Confundir as duas é o erro clássico, que leva a manobras de redução de luxação num cotovelo que, na verdade, tem fratura.",
-   "B": "**Erra o diagnóstico e o exame.** Além de a luxação ser rara no lactente, a tomografia não é o exame de escolha: mostra osso, e a epífise dessa idade é cartilagem; além disso, na criança pequena pode exigir sedação. O capítulo reserva a tomografia para outro cenário, como o planejamento da fratura em T do adolescente.",
-   "D": "**O diagnóstico está certo, o exame não.** A lesão é mesmo o descolamento transfisário, mas a tomografia não mostra bem a epífise cartilaginosa do lactente, que é o que precisa ser visto. Ultrassonografia ou ressonância magnética fazem o diagnóstico, segundo o capítulo. A tomografia acrescentaria radiação e, muitas vezes, sedação, sem resolver a dúvida."
+   "A": "**O exame é útil, mas a hipótese principal está errada.** No lactente com esse padrão de deslocamento, a lesão da fise deve ser lembrada antes de chamar a imagem de luxação. Na luxação verdadeira, a cabeça do rádio perde sua relação com o capítulo; na separação fisária, é o bloco distal que se desloca.",
+   "B": "**A alternativa associa a hipótese menos adequada ao exame que não é a escolha destacada para essa dúvida.** A epífise cartilaginosa exige ultrassom ou RM. A tomografia pode detalhar osso, mas não substitui a avaliação da cartilagem na suspeita transfisária do lactente.",
+   "D": "**A hipótese de descolamento está correta, mas o exame preferido na combinação é ultrassonografia.** O resumo também oferece a RM para demonstrar a epífise cartilaginosa. A TC tem destaque no planejamento ósseo de outras lesões, como a fratura em T do adolescente."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção As lesões que a radiografia esconde."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "As lesões que a radiografia esconde"
+     ],
+     "blocos": [
+      "as-lesoes-que-a-radiografia-esconde-7e866d45",
+      "as-lesoes-que-a-radiografia-esconde-218c010c",
+      "as-lesoes-que-a-radiografia-esconde-1920433c",
+      "as-lesoes-que-a-radiografia-esconde-74fb220d",
+      "as-lesoes-que-a-radiografia-esconde-0a04df77",
+      "as-lesoes-que-a-radiografia-esconde-a01f2923",
+      "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+      "as-lesoes-que-a-radiografia-esconde-1542b255"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "afac64e119d43028186b44bed45430b34d373ad51a454f8bc8985e3c6453c82c"
+    }
+   ],
+   "questaoSha256": "db52d2bc83ec4a9d9c82d64a8efe9db76a0ca6e003f957d38cccbbe909e855a8",
+   "comentarioSha256": "840ed487374d09325342227137b53f2dd3d9a98dcf5ad21e970f6cff02a9eb4a"
+  }
  },
  "pediatria-0993": {
-  "conceito": "**Três regras que decidem por onde os vasos entram.** O capítulo explica que a entrada dos vasos na epífise em desenvolvimento é governada por três restrições: não há comunicação entre os vasos metafisários e os centros de ossificação; os vasos não atravessam a superfície articular; e não perfuram a cápsula, a não ser na interface com o osso. O côndilo lateral só é não articular nas origens dos músculos e dos ligamentos colaterais. Assim, apenas uma pequena área posterior do côndilo lateral é ao mesmo tempo não articular e extracapsular (figura 12-11).\n\n**O trajeto.** Os estudos de HARALDSSON mostraram que os vasos do côndilo lateral entram pela face posterior, logo lateral à origem da cápsula e proximal à cartilagem articular, perto da origem do músculo ancôneo. Atravessam a cartilagem ainda não ossificada até o núcleo, num trajeto longo na criança pequena (figura 12-12A). Comunicam-se entre si dentro do núcleo, mas não com a metáfise nem com a cartilagem: na prática, são vasos terminais.\n\n**A tróclea.** O centro do côndilo lateral se estende para a crista lateral da tróclea, que recebe sangue desses mesmos vasos. A porção medial da tróclea é toda articular e intracapsular, e seus vasos precisam atravessar a periferia da fise. HARALDSSON descreveu dois: um lateral, na face posterior da metáfise, que é terminal e muito vulnerável a fraturas que passam pela fise ou pela metáfise muito distal; e um medial, que entra pela borda não articular da crista medial. Essa dupla origem pode explicar os vários centros que dão à tróclea o aspecto fragmentado.\n\n**A consequência cirúrgica.** Como o sangue do côndilo lateral chega por trás, a dissecção posterior na redução aberta da fratura do côndilo lateral ameaça a irrigação do fragmento. Da mesma forma, o vaso terminal da tróclea explica a osteonecrose da tróclea depois de fraturas que cruzam a fise ou a metáfise distal.\n\n> **Na prova:** os vasos do côndilo lateral entram por trás, na pequena área não articular e extracapsular perto do ancôneo; dissecção posterior ameaça o fragmento.\n\n**Por que esta questão foi criada.** No TARO 2020, a dissecção extensa posterolateral no acesso à fratura do côndilo lateral foi associada ao aumento da osteonecrose (a bibliografia sustenta essa resposta), e o TEOT 2022 cobrou as sequelas da osteonecrose da tróclea. Esta questão cobra a anatomia que explica as duas: a entrada posterior dos vasos do côndilo lateral.",
-  "correta": "**B: posterior, junto à origem do ancôneo.** Segundo HARALDSSON, citado no capítulo, os vasos do côndilo lateral entram na face posterior, logo lateral à origem da cápsula e proximal à cartilagem articular, perto da origem do ancôneo (figuras 12-11 e 12-12A). É a única pequena área do côndilo lateral que é ao mesmo tempo não articular e extracapsular, porque os vasos não atravessam a cartilagem articular nem perfuram a cápsula. Daí a regra cirúrgica de evitar dissecção posterior ao abordar a fratura do côndilo lateral.",
+  "conceito": "**O côndilo lateral infantil depende de uma pequena porta posterior de entrada vascular.** A maior parte de sua superfície é articular ou fica dentro da cápsula. Os vasos entram pela área ao mesmo tempo não articular e extracapsular da face posterior, lateralmente à origem da cápsula e perto da origem do **ancôneo**. Atravessam a cartilagem não ossificada até o núcleo.\n\nEsses vasos se comunicam dentro do núcleo, mas não estabelecem comunicação com a metáfise nesse estágio; funcionam como vasos terminais. A consequência cirúrgica é preservar as partes moles posteriores do fragmento: dissecção extensa nessa região pode interromper seu suprimento e causar osteonecrose. Não se deve imaginar que a rede arterial externa rica do cotovelo garanta fontes alternativas suficientes dentro do núcleo imaturo.\n\n**Por que esta questão foi criada.** A localização dos vasos fundamenta a preservação das partes moles posteriores na cirurgia do côndilo lateral.",
+  "correta": "**B: face posterior, junto à origem do ancôneo.** É a região não articular e extracapsular por onde os vasos alcançam o núcleo do côndilo lateral. A posição explica o risco vascular da dissecção posterolateral extensa.",
   "incorretas": {
-   "A": "**A face anterior é articular e intracapsular.** Na frente do côndilo lateral estão a superfície articular do capítulo e a fossa radial, dentro da cápsula; o braquial se insere na ulna, não no côndilo. Os vasos não penetram a cartilagem articular nem perfuram a cápsula, então não há porta de entrada anterior. A artéria braquial passa na fossa cubital, mas a irrigação intraóssea do úmero distal vem sobretudo das anastomoses que correm por trás.",
-   "C": "**É área não articular, mas não é a porta descrita.** O côndilo lateral é não articular nas origens musculares e do ligamento colateral, e o colateral lateral se origina no epicôndilo lateral, não se insere nele. O capítulo, porém, localiza a entrada dos vasos na pequena região posterior que é ao mesmo tempo não articular e extracapsular, perto do ancôneo, e não pela face lateral do ligamento.",
-   "D": "**A crista medial é a porta de um dos vasos da tróclea.** HARALDSSON descreveu dois vasos para o núcleo medial da tróclea, e o medial entra pela borda não articular da crista medial. Isso é verdadeiro, mas é a irrigação da tróclea medial, não do côndilo lateral. A troca entre os dois sistemas é a pegadinha."
+   "A": "**A entrada principal descrita não é anterior junto ao braquial.** O suprimento do núcleo depende da pequena área posterior preservada de cartilagem articular e de cápsula. Uma rede anterior do cotovelo não equivale a uma porta anterior para esse núcleo.",
+   "C": "**A proximidade de estruturas laterais não substitui a localização posterior específica.** A opção desloca a entrada para a inserção do colateral lateral; o resumo a situa na face posterior, perto do ancôneo, por onde os vasos atravessam a cartilagem até o centro de ossificação.",
+   "D": "**A crista medial se relaciona ao suprimento da tróclea, não à entrada do côndilo lateral perguntada.** O resumo descreve uma fonte medial para a porção troclear. Usar essa região para o côndilo lateral confunde territórios vasculares distintos."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção A irrigação do úmero distal."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "A irrigação do úmero distal"
+     ],
+     "blocos": [
+      "a-irrigacao-do-umero-distal-1352c1b3",
+      "a-irrigacao-do-umero-distal-130360a3",
+      "a-irrigacao-do-umero-distal-202717ee",
+      "a-irrigacao-do-umero-distal-17f9d1d8",
+      "a-irrigacao-do-umero-distal-a8056aad",
+      "a-irrigacao-do-umero-distal-ace611db",
+      "a-irrigacao-do-umero-distal-9607f0e9",
+      "a-irrigacao-do-umero-distal-869597bd",
+      "a-irrigacao-do-umero-distal-c494d1ed",
+      "a-irrigacao-do-umero-distal-ee409116",
+      "a-irrigacao-do-umero-distal-cba1e0a2",
+      "a-irrigacao-do-umero-distal-59ab2b7b"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "ad5dccf535d05ea169874ba6bdca60b11546c297ea87ddb911a945df81e0dd2c"
+    }
+   ],
+   "questaoSha256": "4e5cf28b8190f53dd0631f62e3b6e4b985ce6ea82735fb38a499e5bbcea7c7b7",
+   "comentarioSha256": "d67616e4486ed2ee1b74d7bfc7c0a970d58140ef42d993e959444a01b1fd28e0"
+  }
  },
  "pediatria-0994": {
-  "conceito": "**A idade decide.** O epicôndilo medial começa a ossificar por volta dos 5 a 6 anos (5,0 nas meninas e 7,5 nos meninos na tabela 12-1); a tróclea, só por volta dos 9 a 10 anos. Numa criança de 6 anos, portanto, não se espera ver o centro da tróclea. Um núcleo ósseo dentro da articulação, na posição da tróclea, logo depois de uma luxação, num AP em que o epicôndilo medial sumiu do lugar habitual, é o epicôndilo medial que foi arrancado e ficou preso na articulação.\n\n**A figura do capítulo.** A figura 12-5 junta os dois cenários de propósito: em A, a tróclea normal de uma criança de cerca de 9 anos, ossificando por dois centros que lhe dão aspecto fragmentado (que não deve ser confundido com necrose); em B, radiografias depois de uma redução fechada com o epicôndilo medial encarcerado na articulação. O texto pede que se lembre como é a tróclea normal justamente para não confundir um epicôndilo encarcerado com ossificação normal.\n\n**Por que o epicôndilo vai para dentro.** Ele é uma apófise de tração extra-articular, onde se originam a musculatura flexopronadora e o ligamento colateral medial. Na luxação, a força em valgo arranca o epicôndilo, e o fragmento pode ser puxado para dentro da articulação. O encarceramento do epicôndilo medial está na lista das lesões TRASH de WATERS, as que parecem inofensivas na radiografia.\n\n**Como conferir.** Ver se cada centro visível corresponde à idade e ao lugar esperados; procurar o epicôndilo medial na sua posição habitual; comparar com o outro lado nos casos raros em que a dúvida persiste. O capítulo lembra que radiografias comparativas de rotina não melhoram o diagnóstico (KISSOON), mas podem ajudar em casos selecionados.\n\n> **Na prova:** a tróclea só ossifica por volta dos 9 a 10 anos; antes disso, um núcleo na posição da tróclea depois de luxação, com o epicôndilo medial ausente, é o epicôndilo medial encarcerado.\n\n**Por que esta questão foi criada.** A fratura do epicôndilo medial é a lesão mais associada à luxação do cotovelo da criança (TEOT 2021, TARO 2022 e CET-PR, sem ano), e o TARO 2006 cobrou a interposição intra-articular do fragmento. A sequência dos centros de ossificação também cai com frequência. Esta questão junta os dois fatos num caso curto, que é o raciocínio que o capítulo ensina com a figura 12-5.",
-  "correta": "**D: epicôndilo medial encarcerado.** Aos 6 anos o epicôndilo medial já costuma estar ossificado e a tróclea ainda não (ela começa por volta dos 9 a 10 anos). Se o epicôndilo não está no lugar habitual e aparece um núcleo na posição da tróclea depois de uma luxação, esse núcleo é o epicôndilo medial arrancado e preso na articulação (figura 12-5B). O capítulo pede justamente que se conheça a aparência normal da tróclea para não tomar um epicôndilo encarcerado por ossificação normal.",
+  "conceito": "**Uma estrutura óssea na topografia da tróclea precisa ser compatível com a idade.** A tróclea costuma ossificar por volta de 9 a 10 anos e pode ter múltiplos centros normais. Aos 6 anos, um núcleo nessa posição depois de luxação não deve ser aceito automaticamente como tróclea normal, sobretudo quando o epicôndilo medial desapareceu de seu lugar.\n\nA combinação sugere **epicôndilo medial encarcerado na articulação**: o centro é deslocado e passa a ocupar uma posição que pode imitar a tróclea. O raciocínio integra idade, localização e inventário dos núcleos esperados. Um fragmento não é identificado só por onde apareceu; procurar de qual lugar ele saiu evita deixar uma lesão associada passar despercebida após reduzir a luxação.\n\n**Por que esta questão foi criada.** A questão aplica a sequência de ossificação à busca de um epicôndilo medial encarcerado após luxação.",
+  "correta": "**D: epicôndilo medial encarcerado.** Ele está ausente do local esperado e há um núcleo intra-articular na posição troclear depois da luxação. A idade é precoce para a tróclea normalmente ossificada, tornando coerente a migração do centro medial.",
   "incorretas": {
-   "A": "**Cedo demais para a tróclea.** O centro da tróclea aparece por volta dos 9 anos nas meninas e quase 11 nos meninos; aos 6 anos ainda não deveria ser visto. Quando aparece, costuma ser irregular e fragmentado, o que já causa confusão. Aceitar o núcleo como tróclea normal é o erro que o capítulo quer evitar, e ele vem acompanhado de um segundo sinal de alarme: o epicôndilo medial faltando no seu lugar.",
-   "B": "**O capítulo fica do lado lateral.** O capítulo ossifica por volta de 1 ano e articula-se com a cabeça do rádio, na face lateral. Um fragmento osteocondral dele seria visto do lado lateral, e o capítulo continuaria presente no lugar. Lesões osteocondrais existem (são lesões TRASH, sobretudo em menores de 10 anos com trauma de alta energia), mas não explicam a ausência do epicôndilo medial.",
-   "C": "**O epicôndilo lateral ainda não ossificou.** Ele é o último centro a aparecer, por volta dos 10 a 12 anos, e nem sempre é visível. Numa criança de 6 anos, não existe núcleo ósseo dele para ser desviado. Além disso, fraturas nessa região são raríssimas, segundo o capítulo, e a separação ampla do centro em relação ao côndilo lateral é normal no adolescente."
+   "A": "**Aos 6 anos, é cedo para atribuir o achado à tróclea normal na sequência apresentada.** Além disso, a ausência do epicôndilo medial exige explicação. A associação dos dois sinais é mais informativa que chamar o núcleo isoladamente de uma variante.",
+   "B": "**Um fragmento osteocondral do capítulo não explica diretamente o desaparecimento do centro medial.** Lesões osteocondrais podem acompanhar luxações, mas a combinação específica de núcleo na posição da tróclea e epicôndilo medial ausente corresponde ao encarceramento desse epicôndilo.",
+   "C": "**O epicôndilo lateral é um centro tardio, o último a aparecer.** A estrutura que falta no enunciado é a medial, e é ela que deve ser procurada dentro da articulação. Trocar por lateral perde a relação entre o local vazio e o núcleo deslocado."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 12 (Evaluation of the Injured Pediatric Elbow; Peter M. Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "Os centros de ossificação"
+     ],
+     "blocos": [
+      "os-centros-de-ossificacao-4ca3d3d8",
+      "os-centros-de-ossificacao-c5dc87aa",
+      "os-centros-de-ossificacao-6ba9367e",
+      "os-centros-de-ossificacao-4700c9c1",
+      "os-centros-de-ossificacao-907a48a5",
+      "os-centros-de-ossificacao-28bbb1d9",
+      "os-centros-de-ossificacao-3b934ed5",
+      "os-centros-de-ossificacao-b7e37565",
+      "os-centros-de-ossificacao-7c16325b",
+      "os-centros-de-ossificacao-4645b9cb",
+      "os-centros-de-ossificacao-72057f73",
+      "os-centros-de-ossificacao-e0d10148",
+      "os-centros-de-ossificacao-dc5297fc",
+      "os-centros-de-ossificacao-917077a5",
+      "os-centros-de-ossificacao-e90d1e9b",
+      "os-centros-de-ossificacao-a722505d",
+      "os-centros-de-ossificacao-afcdc396",
+      "os-centros-de-ossificacao-dc6c33c7",
+      "os-centros-de-ossificacao-76c80b66",
+      "os-centros-de-ossificacao-aebf51f5",
+      "os-centros-de-ossificacao-00113b71",
+      "os-centros-de-ossificacao-87c6852a",
+      "os-centros-de-ossificacao-79e17682"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+    }
+   ],
+   "questaoSha256": "a0a1a25b1c131c1504241d1f724857c4d4319986a296c63626ba7b5404d51a14",
+   "comentarioSha256": "1ff7a9b5c89f609c1e38c1f6d9805cf9b5beae8387d0fea8601ea547896b17ca"
+  }
  },
  "pediatria-0995": {
   "conceito": "**Quem precisa de radiografia.** Como a exposição acumulada à radiação preocupa na criança e radiografias sem indicação geram custo, o capítulo revisa os estudos que tentam selecionar quem precisa de radiografia depois de um trauma do cotovelo. O achado que melhor separa os grupos é a extensão completa do cotovelo.\n\n**Os números.**\n- **APPELBOAM** (estudo multicêntrico prospectivo, 780 crianças): das 289 que estendiam totalmente o cotovelo, só 12 (4%) tinham fratura, todas identificadas na primeira avaliação; das 491 que não estendiam, 210 (43%) tinham fratura. O teste de extensão pode dispensar a radiografia, desde que o médico esteja seguro de que não há fratura do olécrano e que a criança possa voltar se os sintomas não melhorarem em 7 a 10 dias.\n- Outros estudos confirmaram sensibilidade alta, de 91% a 97%, da incapacidade de estender o cotovelo como preditor de fratura em crianças e adultos.\n- **DARRACQ:** limitação do movimento ativo com 100% de sensibilidade para fratura ou derrame; movimento ativo preservado com 97% de especificidade para ausência de fratura.\n- **VINSON:** o teste de movimento em quatro direções (extensão completa, flexão a 90 graus, pronação e supinação completas) teve 99% de sensibilidade para lesão radiográfica e 100% para lesão cirúrgica.\n\n**A ressalva.** BAKER e BORLAND alertaram que, na criança com trauma fechado, movimento normal não exclui lesão significativa e não deveria ser usado como triagem (valor preditivo negativo de apenas 77% na série deles). Por isso a ultrassonografia vem sendo usada cada vez mais na emergência para decidir quem precisa de radiografia formal.\n\n**Por que a extensão.** O derrame articular e a dor de uma fratura intra-articular ou supracondiliana limitam primeiro a extensão completa, porque a cápsula anterior fica tensa no fim da extensão. Uma criança que estende totalmente o cotovelo raramente tem fratura significativa, com a exceção da fratura do olécrano, que o próprio teste ressalva.\n\n> **Na prova:** a incapacidade de estender totalmente o cotovelo é o achado de alta sensibilidade para fratura; extensão completa torna a fratura improvável, exceto no olécrano.\n\n**Por que esta questão foi criada.** O capítulo dá números fortes e repetidos (sensibilidade de 91% a 97%, 4% contra 43% de fratura), e a pergunta sobre o exame clínico que indica radiografia tem cara de prova, embora ainda não tenha caído nas provas do acervo.",
@@ -14157,18 +14926,104 @@
   }
  },
  "pediatria-1022": {
-  "conceito": "**O problema diagnóstico.** Clinicamente, a fratura em T é confundida sobretudo com a **supracondiliana em extensão**: cotovelo em extensão e edema maciço, quase idênticos. Na radiografia, o problema muda com a idade, como ensina o capítulo 14 do Rockwood and Wilkins (9ª ed.).\n\n- **Na criança maior**, a dúvida é com a supracondiliana **cominutiva** sem extensão intercondiliana. Às vezes o diagnóstico só fica claro depois de uma redução parcial, quando os traços verticais que partem a tróclea aparecem.\n- **Na criança pequena**, é mais difícil: a superfície articular é **cartilaginosa** e não aparece na radiografia, e a raridade da lesão faz com que ninguém pense nela.\n\n**O diagnóstico diferencial que o capítulo pede.** É preciso excluir os padrões comuns: a fratura **isolada do côndilo lateral ou do medial** e a **separação completa da fise distal do úmero**. Nessas fraturas, um sinal importante é a presença de um fragmento metafisário de **THURSTON-HOLLAND**, medial ou lateral. Já a **chave da fratura em T** é a presença de um **traço vertical que desce até o ápice da tróclea**: é ele que mostra que o bloco articular foi partido ao meio.\n\n| Lesão | O que a radiografia mostra |\n| --- | --- |\n| Côndilo lateral ou medial isolado | fragmento metafisário de THURSTON-HOLLAND do lado do côndilo; o outro côndilo segue preso à diáfise |\n| Descolamento total da fise distal | todo o bloco distal desviado, com fragmento de THURSTON-HOLLAND |\n| **Fratura em T** | **traço vertical até o ápice da tróclea**, separando os côndilos entre si |\n\nO fragmento de THURSTON-HOLLAND é a ponta de metáfise que acompanha a epífise numa fratura fisária de Salter-Harris tipo II. A figura 14-3 do capítulo mostra uma armadilha: numa fratura em T tipo I sem desvio de uma criança de 6 anos havia **fragmentos de THURSTON-HOLLAND medial e lateral**, e o traço intercondiliano só foi percebido depois da consolidação. Ou seja, o fragmento metafisário não exclui a fratura em T; o que a define é o traço que chega à tróclea.\n\n**Na dúvida, imagem.** Com suspeita após as radiografias, confirma-se com **TC no adolescente**, **RM na criança pequena** ou radiografias em estresse em varo e valgo sob anestesia; a **artrografia** intraoperatória ajuda a ver os traços e a qualidade da redução articular.\n\n> **Na prova:** fratura em T = **traço vertical até o ápice da tróclea**; THURSTON-HOLLAND fala a favor de côndilo isolado ou descolamento fisário.\n\n**Por que esta questão foi criada.** O fragmento de THURSTON-HOLLAND caiu no CET-PR e no ENARE R4 2023, ligado à fratura de Salter-Harris tipo II. Aqui o mesmo sinal reaparece pelo outro lado, como o achado que aponta para fratura do côndilo ou descolamento fisário, contra o traço vertical na tróclea que o capítulo chama de chave da fratura em T.",
-  "correta": "**B: o traço vertical até o ápice da tróclea.** O capítulo é literal: o diferencial-chave da fratura em T é a presença de um **traço vertical que se estende até o ápice da tróclea**. Esse traço é a parte intercondiliana da lesão: ele parte o bloco articular em dois e separa a coluna medial da lateral. Sem ele, o que se tem é uma supracondiliana (às vezes cominutiva), uma fratura de um côndilo só ou um descolamento fisário. Na criança maior, o traço pode ficar escondido até que a redução parcial alinhe os fragmentos; na criança pequena, como a tróclea é cartilaginosa, pode ser preciso TC, RM, artrografia ou estresse sob anestesia para mostrá-lo.",
+  "conceito": "**A fratura em T divide o bloco articular entre os côndilos.** O traço sobe desde a tróclea e se associa à separação supracondiliana. Por isso, o achado que a caracteriza é o **traço vertical até o ápice da tróclea**, e não apenas um sinal indireto de lesão do cotovelo. Na criança pequena, a cartilagem pode ocultar parte do traço, exigindo RM ou artrografia para esclarecer a articulação.\n\nO fragmento metafisário de Thurston-Holland pode acompanhar fraturas condilares e separações fisárias. Ele também pode coexistir com uma fratura em T, como no caso descrito no resumo; portanto, não define nem exclui sozinho esse padrão. O coxim posterior deslocado indica alteração da cápsula ou derrame em contextos diversos. A relação radiocapitelar avalia rádio e capítulo, mas a distinção entre os padrões umerais aqui depende do trajeto da fratura.\n\n**Por que esta questão foi criada.** O diagnóstico exige separar o traço que define a fratura de sinais indiretos e de fragmentos que podem coexistir com outros padrões.",
+  "correta": "**B: traço vertical até o ápice da tróclea.** Ele demonstra o componente intercondiliano que divide o bloco distal. É o sinal direto que separa a fratura em T de uma supracondiliana sem extensão articular ou de uma lesão isolada de um côndilo.",
   "incorretas": {
-   "A": "**É sinal de fratura, não do tipo de fratura.** O coxim gorduroso posterior visível no perfil indica derrame articular e, depois de um trauma, sugere uma fratura intra-articular oculta. Ele aparece na fratura em T, mas também na supracondiliana, na do côndilo lateral e em outras lesões do cotovelo. Por isso não serve para diferenciar uma da outra. O capítulo 14 não usa esse sinal como diferencial; a diferenciação depende do desenho do traço.",
-   "C": "**Fala da cabeça do rádio, não do úmero.** A linha radiocapitelar (o eixo do rádio passando pelo capítulo em qualquer incidência) serve para reconhecer a luxação da cabeça do rádio, como na lesão de MONTEGGIA. O capítulo 14 não a usa para separar fratura em T, fratura condilar e descolamento fisário: todas são fraturas do úmero, e o que as distingue é o desenho do traço no úmero distal. O distrator é um sinal verdadeiro do cotovelo infantil usado no lugar errado.",
-   "D": "**É o sinal do diagnóstico oposto.** O capítulo cita o fragmento metafisário de THURSTON-HOLLAND, medial ou lateral, como sinal importante das fraturas **isoladas dos côndilos** e da **separação completa da fise distal**, as lesões que precisam ser excluídas. É a ponta de metáfise que acompanha a epífise numa Salter-Harris tipo II. Ele não caracteriza a fratura em T e, na figura 14-3, aparece até numa fratura em T, o que mostra que não serve para defini-la. O que a define é o traço vertical que chega ao ápice da tróclea."
+   "A": "**O coxim posterior visível é um sinal indireto, não a geometria de uma fratura em T.** Com o cotovelo a 90 graus, o derrame pode deslocá-lo da fossa olecraniana; fratura oculta, luxação reduzida e infecção podem produzir esse achado. Ele não identifica qual traço atravessa o úmero.",
+   "C": "**Desvio radiocapitelar descreve a relação da cabeça do rádio com o capítulo.** Não demonstra por si só a divisão intercondiliana da tróclea. A questão exige identificar um padrão de fratura do úmero distal, definido pelo traço vertical, e não apenas uma alteração do alinhamento articular.",
+   "D": "**Thurston-Holland é um fragmento metafisário e não o sinal definidor da fratura em T.** O capítulo o usa no diferencial com fraturas condilares e separação fisária, mas mostra que ele pode coexistir com T. O componente decisivo continua sendo o traço que alcança a tróclea."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 14 (T-Condylar Fractures of the Distal Humerus; Vuillermin e Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 14: T-Condylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura em T (intercondiliana) do úmero distal na criança, Biblioteca OrtoQuestões, seções O que é e quem tem a fratura em T; Imagem e diagnóstico diferencial.",
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seções O sinal do coxim gorduroso; As lesões que a radiografia esconde."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-14-fratura-em-t",
+     "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+     "secoes": [
+      "O que é e quem tem a fratura em T",
+      "Imagem e diagnóstico diferencial"
+     ],
+     "blocos": [
+      "o-que-e-e-quem-tem-a-fratura-em-t-72e8f462",
+      "o-que-e-e-quem-tem-a-fratura-em-t-2ea333a9",
+      "o-que-e-e-quem-tem-a-fratura-em-t-9e374787",
+      "o-que-e-e-quem-tem-a-fratura-em-t-906a221d",
+      "o-que-e-e-quem-tem-a-fratura-em-t-9040db5b",
+      "o-que-e-e-quem-tem-a-fratura-em-t-4fdd4680",
+      "imagem-e-diagnostico-diferencial-bedf49c5",
+      "imagem-e-diagnostico-diferencial-87d164df",
+      "imagem-e-diagnostico-diferencial-f69ecdcb",
+      "imagem-e-diagnostico-diferencial-a512cdee",
+      "imagem-e-diagnostico-diferencial-649c7a83",
+      "imagem-e-diagnostico-diferencial-fc614288",
+      "imagem-e-diagnostico-diferencial-8cdca2d2",
+      "imagem-e-diagnostico-diferencial-17e23690",
+      "imagem-e-diagnostico-diferencial-e628d27f",
+      "imagem-e-diagnostico-diferencial-ed5223b9",
+      "imagem-e-diagnostico-diferencial-79fbbdd9",
+      "imagem-e-diagnostico-diferencial-991d4306",
+      "imagem-e-diagnostico-diferencial-900ae362",
+      "imagem-e-diagnostico-diferencial-62dbe5e6",
+      "imagem-e-diagnostico-diferencial-1f5d326e",
+      "imagem-e-diagnostico-diferencial-3fedcd4f"
+     ],
+     "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+     "trechosSha256": "0e613e12bd917b0a000a574fb5e2e3e7fb41a01788d1d4dc29e38b336a9d8b99"
+    },
+    {
+     "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "titulo": "Avaliação do cotovelo da criança traumatizada",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+     "secoes": [
+      "As lesões que a radiografia esconde",
+      "O sinal do coxim gorduroso"
+     ],
+     "blocos": [
+      "as-lesoes-que-a-radiografia-esconde-7e866d45",
+      "as-lesoes-que-a-radiografia-esconde-218c010c",
+      "as-lesoes-que-a-radiografia-esconde-1920433c",
+      "as-lesoes-que-a-radiografia-esconde-74fb220d",
+      "as-lesoes-que-a-radiografia-esconde-0a04df77",
+      "as-lesoes-que-a-radiografia-esconde-a01f2923",
+      "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+      "as-lesoes-que-a-radiografia-esconde-1542b255",
+      "o-sinal-do-coxim-gorduroso-dd0398cb",
+      "o-sinal-do-coxim-gorduroso-8040da34",
+      "o-sinal-do-coxim-gorduroso-200db2d0",
+      "o-sinal-do-coxim-gorduroso-c78fc6f4",
+      "o-sinal-do-coxim-gorduroso-0544c1f8",
+      "o-sinal-do-coxim-gorduroso-b7bb16ad",
+      "o-sinal-do-coxim-gorduroso-8a541421",
+      "o-sinal-do-coxim-gorduroso-f48bdfda",
+      "o-sinal-do-coxim-gorduroso-0fdec553",
+      "o-sinal-do-coxim-gorduroso-f267b75d",
+      "o-sinal-do-coxim-gorduroso-83cd049d",
+      "o-sinal-do-coxim-gorduroso-13d152db",
+      "o-sinal-do-coxim-gorduroso-bf083803",
+      "o-sinal-do-coxim-gorduroso-3a01c1cc",
+      "o-sinal-do-coxim-gorduroso-306d1211",
+      "o-sinal-do-coxim-gorduroso-a0b4b82d",
+      "o-sinal-do-coxim-gorduroso-ad2f6620"
+     ],
+     "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+     "trechosSha256": "c738cfc56f118d5464d0eba8e5bf69e3254e9732d66a3961ff420a828458bb69"
+    }
+   ],
+   "questaoSha256": "f5ddf56896ebcb1a982255fea29bb1aeaa7db8eab07540329bd71f8fd8291ad5",
+   "comentarioSha256": "b6e2b9af0b87bfb56adf3ab668c2e018bf6f0e8cca65b663d4fab6bb74ce1e04"
+  }
  },
  "pediatria-1023": {
   "conceito": "**A escolha do exame depende de quanto da articulação já ossificou.** A fratura em T divide o úmero distal entre os côndilos; o traço vertical que alcança o ápice da tróclea é a chave radiográfica. No adolescente, a **tomografia computadorizada (TC)** detalha os fragmentos ósseos e auxilia principalmente o planejamento da redução e da fixação.\n\nNa criança pequena, parte importante da superfície articular é cartilagem. Uma separação óssea aparente pode coexistir com uma dobradiça cartilaginosa ainda íntegra. A **ressonância magnética (RM)** permite avaliar essa cartilagem e tem papel diagnóstico. A artrografia intraoperatória também distingue os traços e verifica a redução; radiografias em estresse sob anestesia são outra possibilidade. A pergunta cobra a combinação preferida por idade, sem tornar os demais exames universalmente proibidos.\n\n**Por que esta questão foi criada.** A distinção entre planejamento ósseo e diagnóstico da cartilagem liga a escolha do exame ao desenvolvimento do cotovelo infantil.",
@@ -14394,18 +15249,66 @@
   }
  },
  "pediatria-1027": {
-  "conceito": "**Como é a via.** BRYAN e MORREY descreveram uma via que **poupa o tríceps**: em vez de dividir o músculo ou serrar o olécrano, todo o mecanismo extensor é **refletido para lateral**, expondo o úmero distal inteiro. O capítulo 14 do Rockwood and Wilkins (9ª ed.) descreve os passos.\n\n- A parte medial do tríceps é elevada do úmero ao longo do septo intermuscular até a cápsula posterior; **na criança e no adolescente, por elevação subperiosteal**.\n- A fáscia superficial do antebraço é incisada distalmente por cerca de **6 cm**, até o periósteo da face medial da ulna proximal.\n- Periósteo e fáscia são levantados **em uma camada única**, de medial para lateral e de distal para proximal, mantendo a continuidade entre tríceps, periósteo e fáscia.\n- O ponto mais fraco do retalho é a **junção medial** entre a inserção do tríceps e a fáscia superficial e o periósteo da ulna. A elevação sobre a **apófise** do olécrano também é delicada: um furo (botoeira) ali encurta e enfraquece o retalho e ameaça a inserção do tríceps.\n- No fim, a inserção do tríceps é **reparada** no osso com suturas transósseas ou âncoras.\n\n**A contraindicação.** O capítulo é explícito: a via é **contraindicada na fratura exposta**. Nela, parte do tríceps pode ficar **sem circulação** pelo próprio trauma, e a dissecção extensa necessária para refletir o mecanismo extensor aumenta esse risco. Vale lembrar que as fraturas em T são lesões de alta energia; numa série recente de adolescentes com fratura intra-articular do úmero distal, **quase um quarto era exposta**, em geral com a ferida na face **posterior**, exatamente onde fica o tríceps.\n\n**Quando os autores a usam.** No adolescente, BRYAN-MORREY é a via preferida para a fratura **AO C2**. REMIA, que operou nove fraturas em T por essa via, não encontrou diferença significativa de função ou movimento em relação à divisão do tríceps, e RE encontrou mais extensão com ela do que com a divisão.\n\n> **Na prova:** BRYAN-MORREY = reflexão do tríceps em camada única com o periósteo; **contraindicada na fratura exposta** (tríceps desvascularizado).\n\n**Por que esta questão foi criada.** No TEOT 2021 caiu a indicação da via de BRYAN-MORREY no úmero distal (a artroplastia total do cotovelo, no adulto). Esta gêmea pergunta o espelho, a contraindicação que o capítulo pediátrico dá para a mesma via.",
-  "correta": "**A: exposta.** O capítulo contraindica a via de BRYAN-MORREY na **fratura exposta**, porque parte do tríceps pode já estar desvascularizada pelo trauma inicial, e a dissecção para refletir o mecanismo extensor aumenta o risco de necrose desse músculo. O mecanismo é de circulação: a via depende de um retalho único de tríceps, fáscia e periósteo que precisa estar vivo para ser reinserido no olécrano. Na fratura exposta do cotovelo, a ferida costuma ser posterior, onde fica justamente o tríceps, e a fratura em T é lesão de alta energia, com quase um quarto de expostas numa série recente de adolescentes.",
+  "conceito": "**Bryan-Morrey expõe o úmero distal pela reflexão do mecanismo extensor.** Tríceps, fáscia e periósteo são elevados em camada única para lateral; na criança, a elevação é subperiosteal. Ao final, o mecanismo extensor precisa ser reinserido com suturas transósseas ou âncoras. O capítulo chama atenção para a junção medial do tríceps com fáscia e periósteo e para o risco de criar uma botoeira sobre a apófise.\n\nNa preferência dos autores, a via é usada nas fraturas C2 do adolescente e é **contraindicada na fratura exposta**. A escolha também depende da visualização necessária: divisão do tríceps costuma bastar na C1, enquanto a osteotomia do olécrano é reservada principalmente à C3 cominuta. O nervo ulnar deve ser identificado e protegido em qualquer acesso posterior, com seu estado documentado antes da operação.\n\n**Por que esta questão foi criada.** A pergunta diferencia a contraindicação explicitada no capítulo dos fatores que apenas mudam o planejamento da exposição.",
+  "correta": "**A: fratura exposta.** É a contraindicação expressa no resumo para Bryan-Morrey. Trata-se de uma via que eleva e depois reinsere o mecanismo extensor; sua indicação não deve ser generalizada para todo úmero distal apenas por permitir exposição articular. O resumo não fornece uma explicação vascular detalhada dessa contraindicação.",
   "incorretas": {
-   "B": "**A fise aberta muda a técnica, não proíbe a via.** Na criança e no adolescente, o capítulo descreve a elevação do tríceps como **subperiosteal** e alerta que a elevação sobre a apófise do olécrano é delicada, porque uma botoeira ali encurta e enfraquece o retalho. É um cuidado técnico, não uma contraindicação: a via é a preferida dos autores para a fratura C2 do adolescente, que muitas vezes ainda tem fises abertas.",
-   "C": "**A cominuição articular pede outra via, mas não contraindica esta.** Quando a superfície articular está muito fragmentada (C3), os autores preferem a **osteotomia do olécrano**, que dá a melhor exposição da articulação. Isso é escolha da melhor via, não proibição de BRYAN-MORREY. A palavra \"contraindicada\" no enunciado pede a situação em que a via causa dano, e essa situação é a exposta, com o tríceps já sem circulação.",
-   "D": "**O nervo ulnar é tratado em todas as vias posteriores.** Em qualquer via posterior do cotovelo, o nervo ulnar é identificado, descomprimido, mobilizado e protegido durante toda a cirurgia, e no fim decide-se se ele fica no lugar ou é transposto. Uma lesão prévia do ulnar exige documentação cuidadosa antes da cirurgia (o capítulo insiste nisso, para que o déficit não seja atribuído ao ato operatório), mas não contraindica a reflexão do tríceps."
+   "B": "**A fise aberta não é apresentada como contraindicação geral.** O próprio capítulo descreve a aplicação pediátrica da via, com elevação subperiosteal. A maturidade e a anatomia interferem no planejamento, mas não equivalem à contraindicação expressa para a fratura exposta.",
+   "C": "**A cominuição muda a necessidade de exposição, mas não é a contraindicação enunciada para essa via.** Os autores preferem Bryan-Morrey na C2 e reservam osteotomia principalmente à C3 cominuta. Se a cominuição exigir mais visão, a via pode mudar; isso é diferente de proibir Bryan-Morrey diante de qualquer fragmentação articular.",
+   "D": "**Déficit ulnar prévio exige documentação e proteção do nervo, não corresponde à contraindicação expressa.** O resumo orienta identificá-lo, mobilizá-lo com cuidado e avaliar estabilidade ou conflito com a placa. Não fornece base para transformar toda lesão prévia do ulnar numa proibição dessa via."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 14 (T-Condylar Fractures of the Distal Humerus; Vuillermin e Waters)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 14: T-Condylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura em T (intercondiliana) do úmero distal na criança, Biblioteca OrtoQuestões, seções Redução aberta: indicações e vias de acesso; Complicações."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-14-fratura-em-t",
+     "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Redução aberta: indicações e vias de acesso",
+      "Complicações"
+     ],
+     "blocos": [
+      "reducao-aberta-indicacoes-e-vias-de-acesso-0f53d6a4",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-07475cf9",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-5d3e8114",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-7033395e",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-af4f660d",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-1cad8364",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-a88fa001",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-44870ff3",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-a91c16b5",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-d11791d6",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-9b2a699f",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-7e2cc347",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-1152d24c",
+      "reducao-aberta-indicacoes-e-vias-de-acesso-01372126",
+      "complicacoes-7ab5b751",
+      "complicacoes-91fbc481",
+      "complicacoes-cb2c0548",
+      "complicacoes-23119045",
+      "complicacoes-d2ac5d62",
+      "complicacoes-90956356",
+      "complicacoes-02e95725",
+      "complicacoes-8be1602d",
+      "complicacoes-93fc7d43",
+      "complicacoes-2896840e",
+      "complicacoes-a5c3fd88"
+     ],
+     "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+     "trechosSha256": "6198896d35ef30aa959c86c9a59c31ae08abff0c1bc860b7a4bfbb6cdf3d634b"
+    }
+   ],
+   "questaoSha256": "a5a75f4f8e20b6019eb9422601e3be51c6069ad43ff8506d4c090a5e36a33a7c",
+   "comentarioSha256": "081759b8974c50cfb30c96cfb7c3cb77e4d1e2b41a0cda82daef3d8aed4c31f3"
+  }
  },
  "pediatria-1028": {
   "conceito": "**Reconstruir a articulação vem antes de fixar as colunas à diáfise.** Na fratura em T, os côndilos estão separados entre si e do segmento proximal. Primeiro, eles são reunidos para formar um bloco articular congruente; assim, a lesão é convertida numa fratura supracondiliana de duas partes. Depois, esse bloco é alinhado e fixado às colunas. Fixar uma coluna com a articulação ainda mal reduzida pode impedir a correção do desnível articular.\n\nHá fios provisórios durante a redução. Na reconstrução definitiva, o capítulo destaca um **parafuso transverso de compressão entre os côndilos**, pelo centro do eixo de rotação, em geral de lateral para medial. Um fio transverso provisório impede a rotação enquanto se fura e comprime. Só então se consolida a fixação das colunas com placas. As fossas do olécrano e do coronoide devem ficar livres de fragmentos para não bloquear o movimento.\n\n**Por que esta questão foi criada.** A sequência articular antes das colunas é o princípio central da reconstrução e evita fixar uma redução intra-articular inadequada.",

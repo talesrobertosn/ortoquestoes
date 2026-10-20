@@ -1,0 +1,562 @@
+{
+  "pediatria-0738": {
+    "questaoSha256": "6b4f7726126acd2c970ea5321025f65899fcb970cb80b1078d0750e191fb524f",
+    "comentarioAnteriorSha256": "8817fe4b86ce21c5b554c73acc285219507795db47a3b05feba80db5109a422b",
+    "comentario": {
+      "conceito": "**Linhas e ângulos têm referências diferentes e só são interpretáveis em incidências adequadas.** No AP, Baumann é formado pelo eixo do úmero e pela fise do côndilo lateral. O metáfiso-diafisário usa o eixo umeral e a linha dos pontos mais largos da metáfise. O **úmero-ulnar** relaciona os eixos longitudinais do úmero e da ulna e é a expressão mais precisa do ângulo de carregamento.\n\nNo perfil, a linha da cortical anterior do úmero deve cruzar o terço médio do capítulo. Há uma exceção importante: nos menores de 4 anos, a passagem pelo terço anterior pode ser normal em parte das crianças. Se a linha passa à frente do núcleo, é o segmento distal que se angulou para trás. Não há gabarito oficial registrado; a resposta bibliográfica é C, com a ressalva etária da alternativa D.",
+      "correta": "**C, pela bibliografia.** O ângulo úmero-ulnar expressa radiograficamente a relação entre braço e antebraço porque é construído com os eixos dos dois ossos. O capítulo o aponta como o mais preciso para o verdadeiro carregamento.",
+      "incorretas": {
+        "A": "**A segunda linha de Baumann é a fise lateral, não a superfície articular.** Essa distinção é decisiva na criança, em que parte da articulação é cartilagem invisível na radiografia. A opção muda a construção do ângulo e não reproduz a definição adotada.",
+        "B": "**A placa fisária do côndilo lateral pertence a Baumann.** O metáfiso-diafisário usa a linha dos pontos de maior largura da metáfise. As duas medidas compartilham o eixo do úmero, mas não a referência distal.",
+        "D": "**Como regra geral, a linha deve cruzar o terço médio, não o anterior.** A passagem anterior pode ser normal em parte dos menores de 4 anos, portanto a frase tem uma interpretação válida nessa faixa específica. Sem delimitar essa exceção, não representa o padrão geral solicitado; C é a afirmação sustentada sem essa restrição."
+      },
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Linhas e ângulos da radiografia."
+      ],
+      "conferido": false,
+      "provavel": "C",
+      "alerta": "Não há gabarito oficial registrado. A bibliografia favorece C. A alternativa D não é uma regra geral, mas pode descrever uma variante normal em parte das crianças com menos de 4 anos; não interpretar todo cruzamento anterior como fratura nessa idade."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "Linhas e ângulos da radiografia"
+        ],
+        "blocos": [
+          "linhas-e-angulos-da-radiografia-3676b995",
+          "linhas-e-angulos-da-radiografia-4f46cd3b",
+          "linhas-e-angulos-da-radiografia-e1c833db",
+          "linhas-e-angulos-da-radiografia-8cbf1fde",
+          "linhas-e-angulos-da-radiografia-31fa609b",
+          "linhas-e-angulos-da-radiografia-f0727290",
+          "linhas-e-angulos-da-radiografia-de8dc999",
+          "linhas-e-angulos-da-radiografia-7cbbcae9",
+          "linhas-e-angulos-da-radiografia-fd82cc21",
+          "linhas-e-angulos-da-radiografia-b86846bc",
+          "linhas-e-angulos-da-radiografia-f6d6e1e9",
+          "linhas-e-angulos-da-radiografia-a8d7b42a",
+          "linhas-e-angulos-da-radiografia-1aa3e6c6",
+          "linhas-e-angulos-da-radiografia-9df8ac29",
+          "linhas-e-angulos-da-radiografia-568bffbc",
+          "linhas-e-angulos-da-radiografia-aaf24f22",
+          "linhas-e-angulos-da-radiografia-67b73396",
+          "linhas-e-angulos-da-radiografia-e70a341c",
+          "linhas-e-angulos-da-radiografia-875d3977",
+          "linhas-e-angulos-da-radiografia-a652b775",
+          "linhas-e-angulos-da-radiografia-09f90a66",
+          "linhas-e-angulos-da-radiografia-b665eac5",
+          "linhas-e-angulos-da-radiografia-d294bff7",
+          "linhas-e-angulos-da-radiografia-22e1822a",
+          "linhas-e-angulos-da-radiografia-adbebc39",
+          "linhas-e-angulos-da-radiografia-8a71aa7e",
+          "linhas-e-angulos-da-radiografia-35e5f6e9"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+      }
+    ]
+  },
+  "pediatria-0984": {
+    "questaoSha256": "2236bf4e6296846831dfb1f2fa634086e48088f8b1e59fe93130c9e5d0c67fc7",
+    "comentarioAnteriorSha256": "d20987eb4465ea279394f03ad4f758a72cf4301cbe05968bae64053e857625d4",
+    "comentario": {
+      "conceito": "**O capítulo inaugura a sequência e a cabeça do rádio vem a seguir.** Na tabela do resumo, a ordem é capítulo, cabeça do rádio, epicôndilo medial, olécrano, tróclea e epicôndilo lateral. As meninas geralmente apresentam os núcleos antes dos meninos, com exceção do capítulo, que aparece em torno de 1 ano em ambos.\n\nA cabeça do rádio e o epicôndilo medial surgem em idades próximas. A tabela apresenta 5 anos para ambos nas meninas e 6 e 7,5 anos, respectivamente, nos meninos. Por isso, a sequência é um guia de desenvolvimento e não exige uma distância fixa entre todos os aparecimentos. O resumo também destaca que olécrano e tróclea têm ordem e idades que variam entre séries; isso não modifica o primeiro par cobrado aqui.\n\n**Por que esta questão foi criada.** A ordem dos primeiros centros permite interpretar o cotovelo ainda cartilaginoso, respeitando a proximidade e a variação das idades de aparecimento.",
+      "correta": "**C: cabeça do rádio.** Ela ocupa a segunda posição na sequência apresentada, depois do capítulo e antes do epicôndilo medial. A proximidade cronológica dos dois centros seguintes ao capítulo não altera a ordem indicada pela tabela.",
+      "incorretas": {
+        "A": "**A tróclea pertence ao grupo tardio, em torno de 9 a 10 anos.** Entre o capítulo e ela já aparecem cabeça do rádio e epicôndilo medial, além do olécrano na tabela adotada. Ser parte da superfície articular não implica ossificar imediatamente depois do capítulo.",
+        "B": "**O olécrano aparece depois da cabeça do rádio e do epicôndilo medial.** Suas idades variam entre séries e entre sexos, mas ele não é o segundo núcleo da sequência. A questão pede ordem, e não uma idade isolada possível.",
+        "D": "**O epicôndilo medial aparece próximo da cabeça do rádio, porém ocupa a posição seguinte a ela.** Sua fusão à metáfise é muito tardia, o que é outra sequência. Para o aparecimento logo após o capítulo, a referência é a cabeça radial."
+      },
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "Os centros de ossificação"
+        ],
+        "blocos": [
+          "os-centros-de-ossificacao-4ca3d3d8",
+          "os-centros-de-ossificacao-c5dc87aa",
+          "os-centros-de-ossificacao-6ba9367e",
+          "os-centros-de-ossificacao-4700c9c1",
+          "os-centros-de-ossificacao-907a48a5",
+          "os-centros-de-ossificacao-28bbb1d9",
+          "os-centros-de-ossificacao-3b934ed5",
+          "os-centros-de-ossificacao-b7e37565",
+          "os-centros-de-ossificacao-7c16325b",
+          "os-centros-de-ossificacao-4645b9cb",
+          "os-centros-de-ossificacao-72057f73",
+          "os-centros-de-ossificacao-e0d10148",
+          "os-centros-de-ossificacao-dc5297fc",
+          "os-centros-de-ossificacao-917077a5",
+          "os-centros-de-ossificacao-e90d1e9b",
+          "os-centros-de-ossificacao-a722505d",
+          "os-centros-de-ossificacao-afcdc396",
+          "os-centros-de-ossificacao-dc6c33c7",
+          "os-centros-de-ossificacao-76c80b66",
+          "os-centros-de-ossificacao-aebf51f5",
+          "os-centros-de-ossificacao-00113b71",
+          "os-centros-de-ossificacao-87c6852a",
+          "os-centros-de-ossificacao-79e17682"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      }
+    ]
+  },
+  "pediatria-0990": {
+    "questaoSha256": "3be6400fc901c76ac79b31d63bf10f561deca18194af6938e87293ec867c8625",
+    "comentarioAnteriorSha256": "71dec396bfeb6eeea3d3e6f7da1129722f5969af2056c4cea1c3fc311004ad64",
+    "comentario": {
+      "conceito": "**Os coxins são deslocados pelo conteúdo da articulação.** O posterior fica dentro da fossa do olécrano, que é profunda. Num perfil com cotovelo fletido a 90 graus, permanece oculto. O anterior fica na fossa coronóidea, mais rasa, e uma pequena faixa triangular pode ser vista normalmente à frente do úmero distal.\n\nQuando o derrame distende a cápsula íntegra, o posterior sai da fossa e aparece, enquanto o anterior se eleva. Isso é um sinal indireto, não um diagnóstico do tipo de fratura: pode acompanhar fratura oculta, luxação reduzida e infecção. A posição do exame importa, pois na extensão o olécrano empurra o coxim posterior para fora da fossa mesmo sem esse mecanismo de derrame.\n\n**Por que esta questão foi criada.** A anatomia das fossas explica a diferença entre coxim anterior normalmente visível e posterior deslocado pelo derrame.",
+      "correta": "**A: posterior, pela profundidade da fossa do olécrano.** Com 90 graus de flexão, o coxim fica recolhido na fossa e não aparece no perfil normal. Sua visualização nessa posição sugere deslocamento, frequentemente relacionado ao derrame.",
+      "incorretas": {
+        "B": "**Identifica o coxim correto, mas inverte a profundidade da fossa.** A fossa olecraniana é profunda, permitindo esconder o coxim posterior. Uma fossa rasa não explica o seu desaparecimento na radiografia normal.",
+        "C": "**O coxim anterior pode ser normalmente visível e a fossa coronóidea é rasa.** A alternativa erra o coxim e a anatomia. No anterior, a anormalidade é sua elevação pelo derrame, não simplesmente existir uma faixa visível.",
+        "D": "**A fossa coronóidea é rasa, mas isso favorece visualizar o coxim anterior.** Parte dele se projeta à frente da margem óssea. O coxim normalmente oculto no perfil a 90 graus é o posterior, alojado na fossa profunda."
+      },
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção O sinal do coxim gorduroso."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "O sinal do coxim gorduroso"
+        ],
+        "blocos": [
+          "o-sinal-do-coxim-gorduroso-dd0398cb",
+          "o-sinal-do-coxim-gorduroso-8040da34",
+          "o-sinal-do-coxim-gorduroso-200db2d0",
+          "o-sinal-do-coxim-gorduroso-c78fc6f4",
+          "o-sinal-do-coxim-gorduroso-0544c1f8",
+          "o-sinal-do-coxim-gorduroso-b7bb16ad",
+          "o-sinal-do-coxim-gorduroso-8a541421",
+          "o-sinal-do-coxim-gorduroso-f48bdfda",
+          "o-sinal-do-coxim-gorduroso-0fdec553",
+          "o-sinal-do-coxim-gorduroso-f267b75d",
+          "o-sinal-do-coxim-gorduroso-83cd049d",
+          "o-sinal-do-coxim-gorduroso-13d152db",
+          "o-sinal-do-coxim-gorduroso-bf083803",
+          "o-sinal-do-coxim-gorduroso-3a01c1cc",
+          "o-sinal-do-coxim-gorduroso-306d1211",
+          "o-sinal-do-coxim-gorduroso-a0b4b82d",
+          "o-sinal-do-coxim-gorduroso-ad2f6620"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "d349c2170783692ba22b8445e480899c24d14b0b5913768cd5ad4dd5f012d6ef"
+      }
+    ]
+  },
+  "pediatria-0991": {
+    "questaoSha256": "617ebedb8ef3d90a10a73b577062c03d6299d2c6cabd4095f922bbec1736e505",
+    "comentarioAnteriorSha256": "e4ca9ed931a87da1004e779eded43fa6dd04979a043f7ffad047914227c7dbd4",
+    "comentario": {
+      "conceito": "**O sinal do coxim depende de a cápsula conseguir conter o derrame.** Com a cápsula íntegra, o líquido distende a articulação, eleva o coxim anterior e faz o posterior sair da fossa do olécrano. Na luxação que se reduz espontaneamente, a cápsula pode estar rompida: o líquido não fica contido da mesma forma e o sinal pode faltar apesar de uma lesão relevante.\n\nAssim, ausência de coxim deslocado não exclui luxação prévia nem fratura associada. Há outras limitações: derrames pequenos podem deslocar só o anterior; extensão do cotovelo e sangramento subperiosteal de fratura extra-articular podem produzir aparência positiva sem o mecanismo habitual. A leitura precisa combinar posição, integridade capsular e contexto clínico.\n\n**Por que esta questão foi criada.** A questão ensina por que um sinal indireto negativo não exclui uma lesão quando o mecanismo que o produz foi interrompido.",
+      "correta": "**C: cápsula rompida.** É o mecanismo destacado para a luxação reduzida espontaneamente. Sem contenção, não se produz necessariamente a distensão que deslocaria a gordura. O sinal negativo não torna a lesão benigna.",
+      "incorretas": {
+        "A": "**Derrame pequeno pode produzir alteração discreta, especialmente só do coxim anterior.** Isso explica uma limitação de sensibilidade, mas não é o mecanismo específico descrito para a luxação reduzida. Nessa situação, a ruptura capsular pode impedir a retenção do derrame.",
+        "B": "**A flexão a 90 graus é a posição de referência para o perfil e para julgar o coxim posterior.** Não explica o falso-negativo da luxação reduzida. Na extensão, ao contrário, o olécrano pode empurrar o coxim e gerar um falso-positivo.",
+        "D": "**O sangramento subperiosteal pode levantar a parte proximal do coxim posterior em fratura extra-articular.** Portanto, está relacionado a uma aparência positiva sem derrame articular, não à ausência do sinal após a ruptura capsular da luxação."
+      },
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção O sinal do coxim gorduroso."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "O sinal do coxim gorduroso"
+        ],
+        "blocos": [
+          "o-sinal-do-coxim-gorduroso-dd0398cb",
+          "o-sinal-do-coxim-gorduroso-8040da34",
+          "o-sinal-do-coxim-gorduroso-200db2d0",
+          "o-sinal-do-coxim-gorduroso-c78fc6f4",
+          "o-sinal-do-coxim-gorduroso-0544c1f8",
+          "o-sinal-do-coxim-gorduroso-b7bb16ad",
+          "o-sinal-do-coxim-gorduroso-8a541421",
+          "o-sinal-do-coxim-gorduroso-f48bdfda",
+          "o-sinal-do-coxim-gorduroso-0fdec553",
+          "o-sinal-do-coxim-gorduroso-f267b75d",
+          "o-sinal-do-coxim-gorduroso-83cd049d",
+          "o-sinal-do-coxim-gorduroso-13d152db",
+          "o-sinal-do-coxim-gorduroso-bf083803",
+          "o-sinal-do-coxim-gorduroso-3a01c1cc",
+          "o-sinal-do-coxim-gorduroso-306d1211",
+          "o-sinal-do-coxim-gorduroso-a0b4b82d",
+          "o-sinal-do-coxim-gorduroso-ad2f6620"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "d349c2170783692ba22b8445e480899c24d14b0b5913768cd5ad4dd5f012d6ef"
+      }
+    ]
+  },
+  "pediatria-0992": {
+    "questaoSha256": "db52d2bc83ec4a9d9c82d64a8efe9db76a0ca6e003f957d38cccbbe909e855a8",
+    "comentarioAnteriorSha256": "6c34d36e580959699a96a4c195349c54a0244579078121d2dfe98e4d7d4d1345",
+    "comentario": {
+      "conceito": "**No lactente, a epífise distal do úmero pode estar quase toda invisível por ser cartilaginosa.** Uma separação transfisária desloca o conjunto distal, e a radiografia mostra rádio e ulna desviados em relação à metáfise umeral. Nos menores de 2 anos, o desvio posteromedial desse conjunto deve levantar a suspeita de **descolamento transfisário**, em vez de ser interpretado automaticamente como luxação.\n\nA **ultrassonografia ou a ressonância** podem demonstrar a epífise cartilaginosa e confirmar a lesão. O diagnóstico tem consequência além da redução: o capítulo alerta para a associação com trauma não acidental e para a necessidade de avaliar a história e o contexto de proteção da criança. Não se deve atribuir maus-tratos apenas pela imagem, mas tampouco ignorar essa possibilidade.\n\n**Por que esta questão foi criada.** O deslocamento conjunto do antebraço no lactente direciona a investigação para uma lesão fisária oculta pela cartilagem.",
+      "correta": "**C: descolamento transfisário e ultrassonografia.** A idade e o deslocamento conjunto de rádio e ulna em relação à metáfise apontam para a separação da epífise distal. O ultrassom avalia a cartilagem que a radiografia não mostra; a RM também é indicada pelo resumo.",
+      "incorretas": {
+        "A": "**O exame é útil, mas a hipótese principal está errada.** No lactente com esse padrão de deslocamento, a lesão da fise deve ser lembrada antes de chamar a imagem de luxação. Na luxação verdadeira, a cabeça do rádio perde sua relação com o capítulo; na separação fisária, é o bloco distal que se desloca.",
+        "B": "**A alternativa associa a hipótese menos adequada ao exame que não é a escolha destacada para essa dúvida.** A epífise cartilaginosa exige ultrassom ou RM. A tomografia pode detalhar osso, mas não substitui a avaliação da cartilagem na suspeita transfisária do lactente.",
+        "D": "**A hipótese de descolamento está correta, mas o exame preferido na combinação é ultrassonografia.** O resumo também oferece a RM para demonstrar a epífise cartilaginosa. A TC tem destaque no planejamento ósseo de outras lesões, como a fratura em T do adolescente."
+      },
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção As lesões que a radiografia esconde."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "As lesões que a radiografia esconde"
+        ],
+        "blocos": [
+          "as-lesoes-que-a-radiografia-esconde-7e866d45",
+          "as-lesoes-que-a-radiografia-esconde-218c010c",
+          "as-lesoes-que-a-radiografia-esconde-1920433c",
+          "as-lesoes-que-a-radiografia-esconde-74fb220d",
+          "as-lesoes-que-a-radiografia-esconde-0a04df77",
+          "as-lesoes-que-a-radiografia-esconde-a01f2923",
+          "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+          "as-lesoes-que-a-radiografia-esconde-1542b255"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "afac64e119d43028186b44bed45430b34d373ad51a454f8bc8985e3c6453c82c"
+      }
+    ]
+  },
+  "pediatria-0993": {
+    "questaoSha256": "4e5cf28b8190f53dd0631f62e3b6e4b985ce6ea82735fb38a499e5bbcea7c7b7",
+    "comentarioAnteriorSha256": "c113a8a4dafcbb68d36cbfa8a87c5d517d4f8a9c2a81b6596d374bc48d6ddf43",
+    "comentario": {
+      "conceito": "**O côndilo lateral infantil depende de uma pequena porta posterior de entrada vascular.** A maior parte de sua superfície é articular ou fica dentro da cápsula. Os vasos entram pela área ao mesmo tempo não articular e extracapsular da face posterior, lateralmente à origem da cápsula e perto da origem do **ancôneo**. Atravessam a cartilagem não ossificada até o núcleo.\n\nEsses vasos se comunicam dentro do núcleo, mas não estabelecem comunicação com a metáfise nesse estágio; funcionam como vasos terminais. A consequência cirúrgica é preservar as partes moles posteriores do fragmento: dissecção extensa nessa região pode interromper seu suprimento e causar osteonecrose. Não se deve imaginar que a rede arterial externa rica do cotovelo garanta fontes alternativas suficientes dentro do núcleo imaturo.\n\n**Por que esta questão foi criada.** A localização dos vasos fundamenta a preservação das partes moles posteriores na cirurgia do côndilo lateral.",
+      "correta": "**B: face posterior, junto à origem do ancôneo.** É a região não articular e extracapsular por onde os vasos alcançam o núcleo do côndilo lateral. A posição explica o risco vascular da dissecção posterolateral extensa.",
+      "incorretas": {
+        "A": "**A entrada principal descrita não é anterior junto ao braquial.** O suprimento do núcleo depende da pequena área posterior preservada de cartilagem articular e de cápsula. Uma rede anterior do cotovelo não equivale a uma porta anterior para esse núcleo.",
+        "C": "**A proximidade de estruturas laterais não substitui a localização posterior específica.** A opção desloca a entrada para a inserção do colateral lateral; o resumo a situa na face posterior, perto do ancôneo, por onde os vasos atravessam a cartilagem até o centro de ossificação.",
+        "D": "**A crista medial se relaciona ao suprimento da tróclea, não à entrada do côndilo lateral perguntada.** O resumo descreve uma fonte medial para a porção troclear. Usar essa região para o côndilo lateral confunde territórios vasculares distintos."
+      },
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção A irrigação do úmero distal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "A irrigação do úmero distal"
+        ],
+        "blocos": [
+          "a-irrigacao-do-umero-distal-1352c1b3",
+          "a-irrigacao-do-umero-distal-130360a3",
+          "a-irrigacao-do-umero-distal-202717ee",
+          "a-irrigacao-do-umero-distal-17f9d1d8",
+          "a-irrigacao-do-umero-distal-a8056aad",
+          "a-irrigacao-do-umero-distal-ace611db",
+          "a-irrigacao-do-umero-distal-9607f0e9",
+          "a-irrigacao-do-umero-distal-869597bd",
+          "a-irrigacao-do-umero-distal-c494d1ed",
+          "a-irrigacao-do-umero-distal-ee409116",
+          "a-irrigacao-do-umero-distal-cba1e0a2",
+          "a-irrigacao-do-umero-distal-59ab2b7b"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "ad5dccf535d05ea169874ba6bdca60b11546c297ea87ddb911a945df81e0dd2c"
+      }
+    ]
+  },
+  "pediatria-0994": {
+    "questaoSha256": "a0a1a25b1c131c1504241d1f724857c4d4319986a296c63626ba7b5404d51a14",
+    "comentarioAnteriorSha256": "70a85b38028d743b4237e8a7e405edd5503050921303fcea41368a157de9cfe6",
+    "comentario": {
+      "conceito": "**Uma estrutura óssea na topografia da tróclea precisa ser compatível com a idade.** A tróclea costuma ossificar por volta de 9 a 10 anos e pode ter múltiplos centros normais. Aos 6 anos, um núcleo nessa posição depois de luxação não deve ser aceito automaticamente como tróclea normal, sobretudo quando o epicôndilo medial desapareceu de seu lugar.\n\nA combinação sugere **epicôndilo medial encarcerado na articulação**: o centro é deslocado e passa a ocupar uma posição que pode imitar a tróclea. O raciocínio integra idade, localização e inventário dos núcleos esperados. Um fragmento não é identificado só por onde apareceu; procurar de qual lugar ele saiu evita deixar uma lesão associada passar despercebida após reduzir a luxação.\n\n**Por que esta questão foi criada.** A questão aplica a sequência de ossificação à busca de um epicôndilo medial encarcerado após luxação.",
+      "correta": "**D: epicôndilo medial encarcerado.** Ele está ausente do local esperado e há um núcleo intra-articular na posição troclear depois da luxação. A idade é precoce para a tróclea normalmente ossificada, tornando coerente a migração do centro medial.",
+      "incorretas": {
+        "A": "**Aos 6 anos, é cedo para atribuir o achado à tróclea normal na sequência apresentada.** Além disso, a ausência do epicôndilo medial exige explicação. A associação dos dois sinais é mais informativa que chamar o núcleo isoladamente de uma variante.",
+        "B": "**Um fragmento osteocondral do capítulo não explica diretamente o desaparecimento do centro medial.** Lesões osteocondrais podem acompanhar luxações, mas a combinação específica de núcleo na posição da tróclea e epicôndilo medial ausente corresponde ao encarceramento desse epicôndilo.",
+        "C": "**O epicôndilo lateral é um centro tardio, o último a aparecer.** A estrutura que falta no enunciado é a medial, e é ela que deve ser procurada dentro da articulação. Trocar por lateral perde a relação entre o local vazio e o núcleo deslocado."
+      },
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção Os centros de ossificação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "Os centros de ossificação"
+        ],
+        "blocos": [
+          "os-centros-de-ossificacao-4ca3d3d8",
+          "os-centros-de-ossificacao-c5dc87aa",
+          "os-centros-de-ossificacao-6ba9367e",
+          "os-centros-de-ossificacao-4700c9c1",
+          "os-centros-de-ossificacao-907a48a5",
+          "os-centros-de-ossificacao-28bbb1d9",
+          "os-centros-de-ossificacao-3b934ed5",
+          "os-centros-de-ossificacao-b7e37565",
+          "os-centros-de-ossificacao-7c16325b",
+          "os-centros-de-ossificacao-4645b9cb",
+          "os-centros-de-ossificacao-72057f73",
+          "os-centros-de-ossificacao-e0d10148",
+          "os-centros-de-ossificacao-dc5297fc",
+          "os-centros-de-ossificacao-917077a5",
+          "os-centros-de-ossificacao-e90d1e9b",
+          "os-centros-de-ossificacao-a722505d",
+          "os-centros-de-ossificacao-afcdc396",
+          "os-centros-de-ossificacao-dc6c33c7",
+          "os-centros-de-ossificacao-76c80b66",
+          "os-centros-de-ossificacao-aebf51f5",
+          "os-centros-de-ossificacao-00113b71",
+          "os-centros-de-ossificacao-87c6852a",
+          "os-centros-de-ossificacao-79e17682"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      }
+    ]
+  },
+  "pediatria-0525": {
+    "questaoSha256": "b8c482dce7df333b485a143b02caa03831855f1462a067ce60fe658fbfdff8f5",
+    "comentarioAnteriorSha256": "95f8db25bcd5ba307f957a4bb48e5ba405620d804498417f563a64e9ca060033",
+    "comentario": {
+      "conceito": "**O cotovelo do lactente pode parecer luxado quando a lesão atravessa a fise.** Aos 12 meses, a epífise distal do úmero ainda é predominantemente cartilaginosa. Na separação transfisária, rádio, ulna e bloco epifisário podem deslocar-se juntos em relação à metáfise, enquanto a radiografia mostra pouco da epífise.\n\nNas incidências apresentadas, há perda do alinhamento do antebraço com a metáfise distal do úmero; o pequeno núcleo distal não permite avaliar toda a superfície cartilaginosa. Em conjunto com idade, edema e pseudoparalisia, o achado favorece **fratura fisária distal do úmero**. Ultrassonografia ou RM ajudam a demonstrar a epífise. A falta de história clara exige avaliação cuidadosa de possível trauma não acidental, sem concluir sua causa apenas pela imagem. Ausência de febre isoladamente também não exclui infecção.",
+      "correta": "**D: fratura fisária do úmero distal.** A idade e o desalinhamento radiográfico são compatíveis com separação do bloco epifisário ainda cartilaginoso. O movimento aparente de rádio e ulna em relação ao úmero pode simular luxação, razão para confirmar a relação da epífise por ultrassom ou RM quando necessário.",
+      "incorretas": {
+        "A": "**Pronação dolorosa não explica este conjunto de edema importante e desalinhamento radiográfico.** O resumo descreve radiografia normal e ausência de edema relevante nesse diagnóstico. A criança não deve ser encaminhada simplesmente a uma manobra de pronação dolorosa diante desses achados.",
+        "B": "**A luxação é uma aparência enganosa no lactente.** Nessa idade, a fise pode ceder antes da articulação. A separação transfisária desloca o conjunto distal e preserva a relação entre antebraço e epífise cartilaginosa; na luxação verdadeira, a relação radiocapitelar se perde.",
+        "C": "**Artrite séptica pode causar dor, edema e pseudoparalisia, e a falta de febre não a exclui sozinha.** Entretanto, ela não explica o deslocamento do antebraço em relação à metáfise como uma separação fisária. A alteração estrutural da imagem, junto da idade, é o dado que favorece a alternativa D."
+      },
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seção As lesões que a radiografia esconde."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "As lesões que a radiografia esconde"
+        ],
+        "blocos": [
+          "as-lesoes-que-a-radiografia-esconde-7e866d45",
+          "as-lesoes-que-a-radiografia-esconde-218c010c",
+          "as-lesoes-que-a-radiografia-esconde-1920433c",
+          "as-lesoes-que-a-radiografia-esconde-74fb220d",
+          "as-lesoes-que-a-radiografia-esconde-0a04df77",
+          "as-lesoes-que-a-radiografia-esconde-a01f2923",
+          "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+          "as-lesoes-que-a-radiografia-esconde-1542b255"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "afac64e119d43028186b44bed45430b34d373ad51a454f8bc8985e3c6453c82c"
+      }
+    ],
+    "imagensConferidas": [
+      "pediatria/pediatria-0525-1.jpeg"
+    ]
+  },
+  "pediatria-1027": {
+    "questaoSha256": "a5a75f4f8e20b6019eb9422601e3be51c6069ad43ff8506d4c090a5e36a33a7c",
+    "comentarioAnteriorSha256": "e43893e47d96d83f789e931d8c9e2f8c553dc9ba49edb51927135e18c67297b4",
+    "comentario": {
+      "conceito": "**Bryan-Morrey expõe o úmero distal pela reflexão do mecanismo extensor.** Tríceps, fáscia e periósteo são elevados em camada única para lateral; na criança, a elevação é subperiosteal. Ao final, o mecanismo extensor precisa ser reinserido com suturas transósseas ou âncoras. O capítulo chama atenção para a junção medial do tríceps com fáscia e periósteo e para o risco de criar uma botoeira sobre a apófise.\n\nNa preferência dos autores, a via é usada nas fraturas C2 do adolescente e é **contraindicada na fratura exposta**. A escolha também depende da visualização necessária: divisão do tríceps costuma bastar na C1, enquanto a osteotomia do olécrano é reservada principalmente à C3 cominuta. O nervo ulnar deve ser identificado e protegido em qualquer acesso posterior, com seu estado documentado antes da operação.\n\n**Por que esta questão foi criada.** A pergunta diferencia a contraindicação explicitada no capítulo dos fatores que apenas mudam o planejamento da exposição.",
+      "correta": "**A: fratura exposta.** É a contraindicação expressa no resumo para Bryan-Morrey. Trata-se de uma via que eleva e depois reinsere o mecanismo extensor; sua indicação não deve ser generalizada para todo úmero distal apenas por permitir exposição articular. O resumo não fornece uma explicação vascular detalhada dessa contraindicação.",
+      "incorretas": {
+        "B": "**A fise aberta não é apresentada como contraindicação geral.** O próprio capítulo descreve a aplicação pediátrica da via, com elevação subperiosteal. A maturidade e a anatomia interferem no planejamento, mas não equivalem à contraindicação expressa para a fratura exposta.",
+        "C": "**A cominuição muda a necessidade de exposição, mas não é a contraindicação enunciada para essa via.** Os autores preferem Bryan-Morrey na C2 e reservam osteotomia principalmente à C3 cominuta. Se a cominuição exigir mais visão, a via pode mudar; isso é diferente de proibir Bryan-Morrey diante de qualquer fragmentação articular.",
+        "D": "**Déficit ulnar prévio exige documentação e proteção do nervo, não corresponde à contraindicação expressa.** O resumo orienta identificá-lo, mobilizá-lo com cuidado e avaliar estabilidade ou conflito com a placa. Não fornece base para transformar toda lesão prévia do ulnar numa proibição dessa via."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 14: T-Condylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura em T (intercondiliana) do úmero distal na criança, Biblioteca OrtoQuestões, seções Redução aberta: indicações e vias de acesso; Complicações."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-14-fratura-em-t",
+        "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Redução aberta: indicações e vias de acesso",
+          "Complicações"
+        ],
+        "blocos": [
+          "reducao-aberta-indicacoes-e-vias-de-acesso-0f53d6a4",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-07475cf9",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-5d3e8114",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-7033395e",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-af4f660d",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-1cad8364",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-a88fa001",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-44870ff3",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-a91c16b5",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-d11791d6",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-9b2a699f",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-7e2cc347",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-1152d24c",
+          "reducao-aberta-indicacoes-e-vias-de-acesso-01372126",
+          "complicacoes-7ab5b751",
+          "complicacoes-91fbc481",
+          "complicacoes-cb2c0548",
+          "complicacoes-23119045",
+          "complicacoes-d2ac5d62",
+          "complicacoes-90956356",
+          "complicacoes-02e95725",
+          "complicacoes-8be1602d",
+          "complicacoes-93fc7d43",
+          "complicacoes-2896840e",
+          "complicacoes-a5c3fd88"
+        ],
+        "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+        "trechosSha256": "6198896d35ef30aa959c86c9a59c31ae08abff0c1bc860b7a4bfbb6cdf3d634b"
+      }
+    ]
+  },
+  "pediatria-1022": {
+    "questaoSha256": "f5ddf56896ebcb1a982255fea29bb1aeaa7db8eab07540329bd71f8fd8291ad5",
+    "comentarioAnteriorSha256": "3092de4423a9ae5d3c1e963491904e860d2064ee5984c0f032b23c496b5306f7",
+    "comentario": {
+      "conceito": "**A fratura em T divide o bloco articular entre os côndilos.** O traço sobe desde a tróclea e se associa à separação supracondiliana. Por isso, o achado que a caracteriza é o **traço vertical até o ápice da tróclea**, e não apenas um sinal indireto de lesão do cotovelo. Na criança pequena, a cartilagem pode ocultar parte do traço, exigindo RM ou artrografia para esclarecer a articulação.\n\nO fragmento metafisário de Thurston-Holland pode acompanhar fraturas condilares e separações fisárias. Ele também pode coexistir com uma fratura em T, como no caso descrito no resumo; portanto, não define nem exclui sozinho esse padrão. O coxim posterior deslocado indica alteração da cápsula ou derrame em contextos diversos. A relação radiocapitelar avalia rádio e capítulo, mas a distinção entre os padrões umerais aqui depende do trajeto da fratura.\n\n**Por que esta questão foi criada.** O diagnóstico exige separar o traço que define a fratura de sinais indiretos e de fragmentos que podem coexistir com outros padrões.",
+      "correta": "**B: traço vertical até o ápice da tróclea.** Ele demonstra o componente intercondiliano que divide o bloco distal. É o sinal direto que separa a fratura em T de uma supracondiliana sem extensão articular ou de uma lesão isolada de um côndilo.",
+      "incorretas": {
+        "A": "**O coxim posterior visível é um sinal indireto, não a geometria de uma fratura em T.** Com o cotovelo a 90 graus, o derrame pode deslocá-lo da fossa olecraniana; fratura oculta, luxação reduzida e infecção podem produzir esse achado. Ele não identifica qual traço atravessa o úmero.",
+        "C": "**Desvio radiocapitelar descreve a relação da cabeça do rádio com o capítulo.** Não demonstra por si só a divisão intercondiliana da tróclea. A questão exige identificar um padrão de fratura do úmero distal, definido pelo traço vertical, e não apenas uma alteração do alinhamento articular.",
+        "D": "**Thurston-Holland é um fragmento metafisário e não o sinal definidor da fratura em T.** O capítulo o usa no diferencial com fraturas condilares e separação fisária, mas mostra que ele pode coexistir com T. O componente decisivo continua sendo o traço que alcança a tróclea."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 14: T-Condylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura em T (intercondiliana) do úmero distal na criança, Biblioteca OrtoQuestões, seções O que é e quem tem a fratura em T; Imagem e diagnóstico diferencial.",
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12: Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seções O sinal do coxim gorduroso; As lesões que a radiografia esconde."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-14-fratura-em-t",
+        "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+        "secoes": [
+          "O que é e quem tem a fratura em T",
+          "Imagem e diagnóstico diferencial"
+        ],
+        "blocos": [
+          "o-que-e-e-quem-tem-a-fratura-em-t-72e8f462",
+          "o-que-e-e-quem-tem-a-fratura-em-t-2ea333a9",
+          "o-que-e-e-quem-tem-a-fratura-em-t-9e374787",
+          "o-que-e-e-quem-tem-a-fratura-em-t-906a221d",
+          "o-que-e-e-quem-tem-a-fratura-em-t-9040db5b",
+          "o-que-e-e-quem-tem-a-fratura-em-t-4fdd4680",
+          "imagem-e-diagnostico-diferencial-bedf49c5",
+          "imagem-e-diagnostico-diferencial-87d164df",
+          "imagem-e-diagnostico-diferencial-f69ecdcb",
+          "imagem-e-diagnostico-diferencial-a512cdee",
+          "imagem-e-diagnostico-diferencial-649c7a83",
+          "imagem-e-diagnostico-diferencial-fc614288",
+          "imagem-e-diagnostico-diferencial-8cdca2d2",
+          "imagem-e-diagnostico-diferencial-17e23690",
+          "imagem-e-diagnostico-diferencial-e628d27f",
+          "imagem-e-diagnostico-diferencial-ed5223b9",
+          "imagem-e-diagnostico-diferencial-79fbbdd9",
+          "imagem-e-diagnostico-diferencial-991d4306",
+          "imagem-e-diagnostico-diferencial-900ae362",
+          "imagem-e-diagnostico-diferencial-62dbe5e6",
+          "imagem-e-diagnostico-diferencial-1f5d326e",
+          "imagem-e-diagnostico-diferencial-3fedcd4f"
+        ],
+        "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+        "trechosSha256": "0e613e12bd917b0a000a574fb5e2e3e7fb41a01788d1d4dc29e38b336a9d8b99"
+      },
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "As lesões que a radiografia esconde",
+          "O sinal do coxim gorduroso"
+        ],
+        "blocos": [
+          "as-lesoes-que-a-radiografia-esconde-7e866d45",
+          "as-lesoes-que-a-radiografia-esconde-218c010c",
+          "as-lesoes-que-a-radiografia-esconde-1920433c",
+          "as-lesoes-que-a-radiografia-esconde-74fb220d",
+          "as-lesoes-que-a-radiografia-esconde-0a04df77",
+          "as-lesoes-que-a-radiografia-esconde-a01f2923",
+          "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+          "as-lesoes-que-a-radiografia-esconde-1542b255",
+          "o-sinal-do-coxim-gorduroso-dd0398cb",
+          "o-sinal-do-coxim-gorduroso-8040da34",
+          "o-sinal-do-coxim-gorduroso-200db2d0",
+          "o-sinal-do-coxim-gorduroso-c78fc6f4",
+          "o-sinal-do-coxim-gorduroso-0544c1f8",
+          "o-sinal-do-coxim-gorduroso-b7bb16ad",
+          "o-sinal-do-coxim-gorduroso-8a541421",
+          "o-sinal-do-coxim-gorduroso-f48bdfda",
+          "o-sinal-do-coxim-gorduroso-0fdec553",
+          "o-sinal-do-coxim-gorduroso-f267b75d",
+          "o-sinal-do-coxim-gorduroso-83cd049d",
+          "o-sinal-do-coxim-gorduroso-13d152db",
+          "o-sinal-do-coxim-gorduroso-bf083803",
+          "o-sinal-do-coxim-gorduroso-3a01c1cc",
+          "o-sinal-do-coxim-gorduroso-306d1211",
+          "o-sinal-do-coxim-gorduroso-a0b4b82d",
+          "o-sinal-do-coxim-gorduroso-ad2f6620"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "c738cfc56f118d5464d0eba8e5bf69e3254e9732d66a3961ff420a828458bb69"
+      }
+    ]
+  }
+}

@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1930,
+  "pendente": 1911,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 8,
-  "pendente-inspecao-imagem": 187,
-  "revisada": 111
+  "pendente-inspecao-imagem": 186,
+  "revisada": 131
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -246,50 +246,53 @@
    "titulo": "Avaliação do cotovelo da criança traumatizada",
    "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
    "estados": {
-    "pendente": 26,
-    "pendente-inspecao-imagem": 1
+    "pendente": 9,
+    "revisada": 18
    }
   },
   "rockwoodcriancas9-13-supracondiliana": {
    "titulo": "Fratura supracondiliana do úmero na criança",
    "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
    "estados": {
-    "pendente": 44,
+    "pendente": 42,
     "pendente-inspecao-imagem": 1,
-    "revisada": 10
+    "revisada": 12
    }
   },
   "rockwoodcriancas9-14-fratura-em-t": {
    "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
    "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
    "estados": {
-    "pendente": 8,
+    "pendente": 6,
     "pendente-anulada": 1,
-    "revisada": 10
+    "revisada": 12
    }
   },
   "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial": {
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
    "estados": {
-    "pendente": 96,
-    "pendente-inspecao-imagem": 9
+    "pendente": 89,
+    "pendente-inspecao-imagem": 8,
+    "revisada": 8
    }
   },
   "rockwoodcriancas9-16-condilo-lateral": {
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
    "estados": {
-    "pendente": 79,
-    "pendente-inspecao-imagem": 8
+    "pendente": 72,
+    "pendente-inspecao-imagem": 7,
+    "revisada": 8
    }
   },
   "rockwoodcriancas9-17-fise-distal-umero": {
    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
    "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
    "estados": {
-    "pendente": 35,
-    "pendente-inspecao-imagem": 5
+    "pendente": 30,
+    "pendente-inspecao-imagem": 4,
+    "revisada": 6
    }
   },
   "wilkins9-08-radio-ulna-distal-crianca": {
@@ -22504,7 +22507,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -22527,7 +22530,52 @@
     "rockwoodcriancas9-12-avaliacao-cotovelo",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "68d84669af0bd21ef8473231b69d834722b7a2cb95450a3e373b8098acb65bbe"
+   "questaoSha256": "68d84669af0bd21ef8473231b69d834722b7a2cb95450a3e373b8098acb65bbe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "68d84669af0bd21ef8473231b69d834722b7a2cb95450a3e373b8098acb65bbe",
+    "comentarioSha256": "6f44f3f53520a1d1bf7475ffb5d03ea2ecef68b7c9d364daf98f81c014909018"
+   }
   },
   "pediatria-0383": {
    "tema": "pediatria",
@@ -22719,8 +22767,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -22758,7 +22806,37 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "b8c482dce7df333b485a143b02caa03831855f1462a067ce60fe658fbfdff8f5"
+   "questaoSha256": "b8c482dce7df333b485a143b02caa03831855f1462a067ce60fe658fbfdff8f5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "As lesões que a radiografia esconde"
+      ],
+      "blocos": [
+       "as-lesoes-que-a-radiografia-esconde-7e866d45",
+       "as-lesoes-que-a-radiografia-esconde-218c010c",
+       "as-lesoes-que-a-radiografia-esconde-1920433c",
+       "as-lesoes-que-a-radiografia-esconde-74fb220d",
+       "as-lesoes-que-a-radiografia-esconde-0a04df77",
+       "as-lesoes-que-a-radiografia-esconde-a01f2923",
+       "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+       "as-lesoes-que-a-radiografia-esconde-1542b255"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "afac64e119d43028186b44bed45430b34d373ad51a454f8bc8985e3c6453c82c"
+     }
+    ],
+    "questaoSha256": "b8c482dce7df333b485a143b02caa03831855f1462a067ce60fe658fbfdff8f5",
+    "comentarioSha256": "42fb883ed1906b87cf08bacf91093e7aef2504b686bc2bc2d10d2d6ef1b448b3"
+   }
   },
   "pediatria-0527": {
    "tema": "pediatria",
@@ -23779,7 +23857,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -23811,7 +23889,52 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "2021bb7758f9f1c70874ba94c6444b84bbbe36b15f11f256074eb0763b305e0b"
+   "questaoSha256": "2021bb7758f9f1c70874ba94c6444b84bbbe36b15f11f256074eb0763b305e0b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "2021bb7758f9f1c70874ba94c6444b84bbbe36b15f11f256074eb0763b305e0b",
+    "comentarioSha256": "2a23141732c659ac2ba5b91cd40e4ec4e9905e422726e23d1ad41c6ce36a0b15"
+   }
   },
   "pediatria-0649": {
    "tema": "pediatria",
@@ -24069,7 +24192,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24101,7 +24224,52 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "0c74ccd30c13c341b08b01714d03f6a4f9690151e9e7b1a0c248dfc70026d241"
+   "questaoSha256": "0c74ccd30c13c341b08b01714d03f6a4f9690151e9e7b1a0c248dfc70026d241",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "0c74ccd30c13c341b08b01714d03f6a4f9690151e9e7b1a0c248dfc70026d241",
+    "comentarioSha256": "211aa30ff720994463e74b892a90c07ec0b6b1c5bf96704e82a959edcbfdc49c"
+   }
   },
   "pediatria-0671": {
    "tema": "pediatria",
@@ -24161,7 +24329,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24193,7 +24361,52 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "fe995add0c66ebdd53178cfcff2157a89b8c92c4c33c42f208e692d6d64494fd"
+   "questaoSha256": "fe995add0c66ebdd53178cfcff2157a89b8c92c4c33c42f208e692d6d64494fd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "fe995add0c66ebdd53178cfcff2157a89b8c92c4c33c42f208e692d6d64494fd",
+    "comentarioSha256": "8b0ec14aee8241b2f79d5f4b3412d43d7ed64d6c9fcdfccf06e3f9fc1eae0341"
+   }
   },
   "pediatria-0685": {
    "tema": "pediatria",
@@ -24756,7 +24969,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24780,7 +24993,56 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "6b4f7726126acd2c970ea5321025f65899fcb970cb80b1078d0750e191fb524f"
+   "questaoSha256": "6b4f7726126acd2c970ea5321025f65899fcb970cb80b1078d0750e191fb524f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Linhas e ângulos da radiografia"
+      ],
+      "blocos": [
+       "linhas-e-angulos-da-radiografia-3676b995",
+       "linhas-e-angulos-da-radiografia-4f46cd3b",
+       "linhas-e-angulos-da-radiografia-e1c833db",
+       "linhas-e-angulos-da-radiografia-8cbf1fde",
+       "linhas-e-angulos-da-radiografia-31fa609b",
+       "linhas-e-angulos-da-radiografia-f0727290",
+       "linhas-e-angulos-da-radiografia-de8dc999",
+       "linhas-e-angulos-da-radiografia-7cbbcae9",
+       "linhas-e-angulos-da-radiografia-fd82cc21",
+       "linhas-e-angulos-da-radiografia-b86846bc",
+       "linhas-e-angulos-da-radiografia-f6d6e1e9",
+       "linhas-e-angulos-da-radiografia-a8d7b42a",
+       "linhas-e-angulos-da-radiografia-1aa3e6c6",
+       "linhas-e-angulos-da-radiografia-9df8ac29",
+       "linhas-e-angulos-da-radiografia-568bffbc",
+       "linhas-e-angulos-da-radiografia-aaf24f22",
+       "linhas-e-angulos-da-radiografia-67b73396",
+       "linhas-e-angulos-da-radiografia-e70a341c",
+       "linhas-e-angulos-da-radiografia-875d3977",
+       "linhas-e-angulos-da-radiografia-a652b775",
+       "linhas-e-angulos-da-radiografia-09f90a66",
+       "linhas-e-angulos-da-radiografia-b665eac5",
+       "linhas-e-angulos-da-radiografia-d294bff7",
+       "linhas-e-angulos-da-radiografia-22e1822a",
+       "linhas-e-angulos-da-radiografia-adbebc39",
+       "linhas-e-angulos-da-radiografia-8a71aa7e",
+       "linhas-e-angulos-da-radiografia-35e5f6e9"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+     }
+    ],
+    "questaoSha256": "6b4f7726126acd2c970ea5321025f65899fcb970cb80b1078d0750e191fb524f",
+    "comentarioSha256": "149413ef7c64471fe06775327f4e67cde3bf305919fbadcf183fda5318105c5e"
+   }
   },
   "pediatria-0742": {
    "tema": "pediatria",
@@ -25388,7 +25650,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25420,7 +25682,52 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "14c67fcfbb04d17765add924d5dd442ac9b699dddee892977755576ff69968b3"
+   "questaoSha256": "14c67fcfbb04d17765add924d5dd442ac9b699dddee892977755576ff69968b3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "14c67fcfbb04d17765add924d5dd442ac9b699dddee892977755576ff69968b3",
+    "comentarioSha256": "b3d386f7d65fa46bf9a05296f289e2f1827c60725ada4849048acab3cb6a058b"
+   }
   },
   "pediatria-0841": {
    "tema": "pediatria",
@@ -26947,7 +27254,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26962,7 +27269,52 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-12-avaliacao-cotovelo"
    ],
-   "questaoSha256": "2236bf4e6296846831dfb1f2fa634086e48088f8b1e59fe93130c9e5d0c67fc7"
+   "questaoSha256": "2236bf4e6296846831dfb1f2fa634086e48088f8b1e59fe93130c9e5d0c67fc7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "2236bf4e6296846831dfb1f2fa634086e48088f8b1e59fe93130c9e5d0c67fc7",
+    "comentarioSha256": "220a44802d8948aaf24220c2f88478dbeeebaac3abfff9797884c30ea471b48b"
+   }
   },
   "pediatria-0985": {
    "tema": "pediatria",
@@ -26972,7 +27324,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26987,7 +27339,52 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-12-avaliacao-cotovelo"
    ],
-   "questaoSha256": "5cebe8306744d3fcb1115fddcdcad1726d1c550df90d96a75ce8ccd738b2fbfb"
+   "questaoSha256": "5cebe8306744d3fcb1115fddcdcad1726d1c550df90d96a75ce8ccd738b2fbfb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "5cebe8306744d3fcb1115fddcdcad1726d1c550df90d96a75ce8ccd738b2fbfb",
+    "comentarioSha256": "fa23420d9a456d6d441c519865abbeebbd84143d126dd033a7300962b36295d4"
+   }
   },
   "pediatria-0986": {
    "tema": "pediatria",
@@ -26997,7 +27394,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27012,7 +27409,52 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-12-avaliacao-cotovelo"
    ],
-   "questaoSha256": "d6f1d239fa7fdfa18d26e95c405339cef88e9335cabf2f07de416d69a00111ee"
+   "questaoSha256": "d6f1d239fa7fdfa18d26e95c405339cef88e9335cabf2f07de416d69a00111ee",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "d6f1d239fa7fdfa18d26e95c405339cef88e9335cabf2f07de416d69a00111ee",
+    "comentarioSha256": "90a97cee78150503d70c52c4c94a47480e931ea47ec3d94ef2b25fd8bf89ef78"
+   }
   },
   "pediatria-0987": {
    "tema": "pediatria",
@@ -27021,7 +27463,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27036,7 +27478,56 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-12-avaliacao-cotovelo"
    ],
-   "questaoSha256": "9719ad7737f816a225626cc2a61afaf706ec387c08f3ac55e718ff2620b52f33"
+   "questaoSha256": "9719ad7737f816a225626cc2a61afaf706ec387c08f3ac55e718ff2620b52f33",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Linhas e ângulos da radiografia"
+      ],
+      "blocos": [
+       "linhas-e-angulos-da-radiografia-3676b995",
+       "linhas-e-angulos-da-radiografia-4f46cd3b",
+       "linhas-e-angulos-da-radiografia-e1c833db",
+       "linhas-e-angulos-da-radiografia-8cbf1fde",
+       "linhas-e-angulos-da-radiografia-31fa609b",
+       "linhas-e-angulos-da-radiografia-f0727290",
+       "linhas-e-angulos-da-radiografia-de8dc999",
+       "linhas-e-angulos-da-radiografia-7cbbcae9",
+       "linhas-e-angulos-da-radiografia-fd82cc21",
+       "linhas-e-angulos-da-radiografia-b86846bc",
+       "linhas-e-angulos-da-radiografia-f6d6e1e9",
+       "linhas-e-angulos-da-radiografia-a8d7b42a",
+       "linhas-e-angulos-da-radiografia-1aa3e6c6",
+       "linhas-e-angulos-da-radiografia-9df8ac29",
+       "linhas-e-angulos-da-radiografia-568bffbc",
+       "linhas-e-angulos-da-radiografia-aaf24f22",
+       "linhas-e-angulos-da-radiografia-67b73396",
+       "linhas-e-angulos-da-radiografia-e70a341c",
+       "linhas-e-angulos-da-radiografia-875d3977",
+       "linhas-e-angulos-da-radiografia-a652b775",
+       "linhas-e-angulos-da-radiografia-09f90a66",
+       "linhas-e-angulos-da-radiografia-b665eac5",
+       "linhas-e-angulos-da-radiografia-d294bff7",
+       "linhas-e-angulos-da-radiografia-22e1822a",
+       "linhas-e-angulos-da-radiografia-adbebc39",
+       "linhas-e-angulos-da-radiografia-8a71aa7e",
+       "linhas-e-angulos-da-radiografia-35e5f6e9"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+     }
+    ],
+    "questaoSha256": "9719ad7737f816a225626cc2a61afaf706ec387c08f3ac55e718ff2620b52f33",
+    "comentarioSha256": "e9415b6ca11a41f979dcdb9a551f1aabd1865c4fb19e062ecb2722eda01f25bd"
+   }
   },
   "pediatria-0988": {
    "tema": "pediatria",
@@ -27045,7 +27536,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27060,7 +27551,56 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-12-avaliacao-cotovelo"
    ],
-   "questaoSha256": "d97b65df9bd70b2a95a0d4ad41c5ba7727fb0d01aa85acb612e295ef769a5f74"
+   "questaoSha256": "d97b65df9bd70b2a95a0d4ad41c5ba7727fb0d01aa85acb612e295ef769a5f74",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Linhas e ângulos da radiografia"
+      ],
+      "blocos": [
+       "linhas-e-angulos-da-radiografia-3676b995",
+       "linhas-e-angulos-da-radiografia-4f46cd3b",
+       "linhas-e-angulos-da-radiografia-e1c833db",
+       "linhas-e-angulos-da-radiografia-8cbf1fde",
+       "linhas-e-angulos-da-radiografia-31fa609b",
+       "linhas-e-angulos-da-radiografia-f0727290",
+       "linhas-e-angulos-da-radiografia-de8dc999",
+       "linhas-e-angulos-da-radiografia-7cbbcae9",
+       "linhas-e-angulos-da-radiografia-fd82cc21",
+       "linhas-e-angulos-da-radiografia-b86846bc",
+       "linhas-e-angulos-da-radiografia-f6d6e1e9",
+       "linhas-e-angulos-da-radiografia-a8d7b42a",
+       "linhas-e-angulos-da-radiografia-1aa3e6c6",
+       "linhas-e-angulos-da-radiografia-9df8ac29",
+       "linhas-e-angulos-da-radiografia-568bffbc",
+       "linhas-e-angulos-da-radiografia-aaf24f22",
+       "linhas-e-angulos-da-radiografia-67b73396",
+       "linhas-e-angulos-da-radiografia-e70a341c",
+       "linhas-e-angulos-da-radiografia-875d3977",
+       "linhas-e-angulos-da-radiografia-a652b775",
+       "linhas-e-angulos-da-radiografia-09f90a66",
+       "linhas-e-angulos-da-radiografia-b665eac5",
+       "linhas-e-angulos-da-radiografia-d294bff7",
+       "linhas-e-angulos-da-radiografia-22e1822a",
+       "linhas-e-angulos-da-radiografia-adbebc39",
+       "linhas-e-angulos-da-radiografia-8a71aa7e",
+       "linhas-e-angulos-da-radiografia-35e5f6e9"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+     }
+    ],
+    "questaoSha256": "d97b65df9bd70b2a95a0d4ad41c5ba7727fb0d01aa85acb612e295ef769a5f74",
+    "comentarioSha256": "93aae1836c60f9f65015cc1fe8477c7711d4289bc0e82dc030fb38ce25a8cbad"
+   }
   },
   "pediatria-0989": {
    "tema": "pediatria",
@@ -27069,7 +27609,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27084,7 +27624,56 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-12-avaliacao-cotovelo"
    ],
-   "questaoSha256": "c4326fc8287f12acc960fe1d298a0d75859295d1a0fd7895edc740bc30d32762"
+   "questaoSha256": "c4326fc8287f12acc960fe1d298a0d75859295d1a0fd7895edc740bc30d32762",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Linhas e ângulos da radiografia"
+      ],
+      "blocos": [
+       "linhas-e-angulos-da-radiografia-3676b995",
+       "linhas-e-angulos-da-radiografia-4f46cd3b",
+       "linhas-e-angulos-da-radiografia-e1c833db",
+       "linhas-e-angulos-da-radiografia-8cbf1fde",
+       "linhas-e-angulos-da-radiografia-31fa609b",
+       "linhas-e-angulos-da-radiografia-f0727290",
+       "linhas-e-angulos-da-radiografia-de8dc999",
+       "linhas-e-angulos-da-radiografia-7cbbcae9",
+       "linhas-e-angulos-da-radiografia-fd82cc21",
+       "linhas-e-angulos-da-radiografia-b86846bc",
+       "linhas-e-angulos-da-radiografia-f6d6e1e9",
+       "linhas-e-angulos-da-radiografia-a8d7b42a",
+       "linhas-e-angulos-da-radiografia-1aa3e6c6",
+       "linhas-e-angulos-da-radiografia-9df8ac29",
+       "linhas-e-angulos-da-radiografia-568bffbc",
+       "linhas-e-angulos-da-radiografia-aaf24f22",
+       "linhas-e-angulos-da-radiografia-67b73396",
+       "linhas-e-angulos-da-radiografia-e70a341c",
+       "linhas-e-angulos-da-radiografia-875d3977",
+       "linhas-e-angulos-da-radiografia-a652b775",
+       "linhas-e-angulos-da-radiografia-09f90a66",
+       "linhas-e-angulos-da-radiografia-b665eac5",
+       "linhas-e-angulos-da-radiografia-d294bff7",
+       "linhas-e-angulos-da-radiografia-22e1822a",
+       "linhas-e-angulos-da-radiografia-adbebc39",
+       "linhas-e-angulos-da-radiografia-8a71aa7e",
+       "linhas-e-angulos-da-radiografia-35e5f6e9"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+     }
+    ],
+    "questaoSha256": "c4326fc8287f12acc960fe1d298a0d75859295d1a0fd7895edc740bc30d32762",
+    "comentarioSha256": "5f3e4fb3b35ff60e899b7468996c59ef1e9a75fab4ddc284ee4090b7d26cdc1c"
+   }
   },
   "pediatria-0990": {
    "tema": "pediatria",
@@ -27093,7 +27682,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27108,7 +27697,46 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-12-avaliacao-cotovelo"
    ],
-   "questaoSha256": "3be6400fc901c76ac79b31d63bf10f561deca18194af6938e87293ec867c8625"
+   "questaoSha256": "3be6400fc901c76ac79b31d63bf10f561deca18194af6938e87293ec867c8625",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "O sinal do coxim gorduroso"
+      ],
+      "blocos": [
+       "o-sinal-do-coxim-gorduroso-dd0398cb",
+       "o-sinal-do-coxim-gorduroso-8040da34",
+       "o-sinal-do-coxim-gorduroso-200db2d0",
+       "o-sinal-do-coxim-gorduroso-c78fc6f4",
+       "o-sinal-do-coxim-gorduroso-0544c1f8",
+       "o-sinal-do-coxim-gorduroso-b7bb16ad",
+       "o-sinal-do-coxim-gorduroso-8a541421",
+       "o-sinal-do-coxim-gorduroso-f48bdfda",
+       "o-sinal-do-coxim-gorduroso-0fdec553",
+       "o-sinal-do-coxim-gorduroso-f267b75d",
+       "o-sinal-do-coxim-gorduroso-83cd049d",
+       "o-sinal-do-coxim-gorduroso-13d152db",
+       "o-sinal-do-coxim-gorduroso-bf083803",
+       "o-sinal-do-coxim-gorduroso-3a01c1cc",
+       "o-sinal-do-coxim-gorduroso-306d1211",
+       "o-sinal-do-coxim-gorduroso-a0b4b82d",
+       "o-sinal-do-coxim-gorduroso-ad2f6620"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "d349c2170783692ba22b8445e480899c24d14b0b5913768cd5ad4dd5f012d6ef"
+     }
+    ],
+    "questaoSha256": "3be6400fc901c76ac79b31d63bf10f561deca18194af6938e87293ec867c8625",
+    "comentarioSha256": "793d942bf8cce77529c6edd2febacfb0a6adc33bf7a83b150ff591dd03c8e9fc"
+   }
   },
   "pediatria-0991": {
    "tema": "pediatria",
@@ -27117,7 +27745,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27140,7 +27768,46 @@
     "rockwoodcriancas9-12-avaliacao-cotovelo",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "617ebedb8ef3d90a10a73b577062c03d6299d2c6cabd4095f922bbec1736e505"
+   "questaoSha256": "617ebedb8ef3d90a10a73b577062c03d6299d2c6cabd4095f922bbec1736e505",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "O sinal do coxim gorduroso"
+      ],
+      "blocos": [
+       "o-sinal-do-coxim-gorduroso-dd0398cb",
+       "o-sinal-do-coxim-gorduroso-8040da34",
+       "o-sinal-do-coxim-gorduroso-200db2d0",
+       "o-sinal-do-coxim-gorduroso-c78fc6f4",
+       "o-sinal-do-coxim-gorduroso-0544c1f8",
+       "o-sinal-do-coxim-gorduroso-b7bb16ad",
+       "o-sinal-do-coxim-gorduroso-8a541421",
+       "o-sinal-do-coxim-gorduroso-f48bdfda",
+       "o-sinal-do-coxim-gorduroso-0fdec553",
+       "o-sinal-do-coxim-gorduroso-f267b75d",
+       "o-sinal-do-coxim-gorduroso-83cd049d",
+       "o-sinal-do-coxim-gorduroso-13d152db",
+       "o-sinal-do-coxim-gorduroso-bf083803",
+       "o-sinal-do-coxim-gorduroso-3a01c1cc",
+       "o-sinal-do-coxim-gorduroso-306d1211",
+       "o-sinal-do-coxim-gorduroso-a0b4b82d",
+       "o-sinal-do-coxim-gorduroso-ad2f6620"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "d349c2170783692ba22b8445e480899c24d14b0b5913768cd5ad4dd5f012d6ef"
+     }
+    ],
+    "questaoSha256": "617ebedb8ef3d90a10a73b577062c03d6299d2c6cabd4095f922bbec1736e505",
+    "comentarioSha256": "a4f9f020bdb1fdafd77c3185e7d0ad19866a6c171f8c419d7be13df913b3da89"
+   }
   },
   "pediatria-0992": {
    "tema": "pediatria",
@@ -27150,7 +27817,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27173,7 +27840,37 @@
     "rockwoodcriancas9-12-avaliacao-cotovelo",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "db52d2bc83ec4a9d9c82d64a8efe9db76a0ca6e003f957d38cccbbe909e855a8"
+   "questaoSha256": "db52d2bc83ec4a9d9c82d64a8efe9db76a0ca6e003f957d38cccbbe909e855a8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "As lesões que a radiografia esconde"
+      ],
+      "blocos": [
+       "as-lesoes-que-a-radiografia-esconde-7e866d45",
+       "as-lesoes-que-a-radiografia-esconde-218c010c",
+       "as-lesoes-que-a-radiografia-esconde-1920433c",
+       "as-lesoes-que-a-radiografia-esconde-74fb220d",
+       "as-lesoes-que-a-radiografia-esconde-0a04df77",
+       "as-lesoes-que-a-radiografia-esconde-a01f2923",
+       "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+       "as-lesoes-que-a-radiografia-esconde-1542b255"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "afac64e119d43028186b44bed45430b34d373ad51a454f8bc8985e3c6453c82c"
+     }
+    ],
+    "questaoSha256": "db52d2bc83ec4a9d9c82d64a8efe9db76a0ca6e003f957d38cccbbe909e855a8",
+    "comentarioSha256": "840ed487374d09325342227137b53f2dd3d9a98dcf5ad21e970f6cff02a9eb4a"
+   }
   },
   "pediatria-0993": {
    "tema": "pediatria",
@@ -27182,7 +27879,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27205,7 +27902,41 @@
     "rockwoodcriancas9-12-avaliacao-cotovelo",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "4e5cf28b8190f53dd0631f62e3b6e4b985ce6ea82735fb38a499e5bbcea7c7b7"
+   "questaoSha256": "4e5cf28b8190f53dd0631f62e3b6e4b985ce6ea82735fb38a499e5bbcea7c7b7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "A irrigação do úmero distal"
+      ],
+      "blocos": [
+       "a-irrigacao-do-umero-distal-1352c1b3",
+       "a-irrigacao-do-umero-distal-130360a3",
+       "a-irrigacao-do-umero-distal-202717ee",
+       "a-irrigacao-do-umero-distal-17f9d1d8",
+       "a-irrigacao-do-umero-distal-a8056aad",
+       "a-irrigacao-do-umero-distal-ace611db",
+       "a-irrigacao-do-umero-distal-9607f0e9",
+       "a-irrigacao-do-umero-distal-869597bd",
+       "a-irrigacao-do-umero-distal-c494d1ed",
+       "a-irrigacao-do-umero-distal-ee409116",
+       "a-irrigacao-do-umero-distal-cba1e0a2",
+       "a-irrigacao-do-umero-distal-59ab2b7b"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "ad5dccf535d05ea169874ba6bdca60b11546c297ea87ddb911a945df81e0dd2c"
+     }
+    ],
+    "questaoSha256": "4e5cf28b8190f53dd0631f62e3b6e4b985ce6ea82735fb38a499e5bbcea7c7b7",
+    "comentarioSha256": "d67616e4486ed2ee1b74d7bfc7c0a970d58140ef42d993e959444a01b1fd28e0"
+   }
   },
   "pediatria-0994": {
    "tema": "pediatria",
@@ -27214,7 +27945,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27237,7 +27968,52 @@
     "rockwoodcriancas9-12-avaliacao-cotovelo",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "a0a1a25b1c131c1504241d1f724857c4d4319986a296c63626ba7b5404d51a14"
+   "questaoSha256": "a0a1a25b1c131c1504241d1f724857c4d4319986a296c63626ba7b5404d51a14",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "Os centros de ossificação"
+      ],
+      "blocos": [
+       "os-centros-de-ossificacao-4ca3d3d8",
+       "os-centros-de-ossificacao-c5dc87aa",
+       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-4700c9c1",
+       "os-centros-de-ossificacao-907a48a5",
+       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-3b934ed5",
+       "os-centros-de-ossificacao-b7e37565",
+       "os-centros-de-ossificacao-7c16325b",
+       "os-centros-de-ossificacao-4645b9cb",
+       "os-centros-de-ossificacao-72057f73",
+       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-dc5297fc",
+       "os-centros-de-ossificacao-917077a5",
+       "os-centros-de-ossificacao-e90d1e9b",
+       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-afcdc396",
+       "os-centros-de-ossificacao-dc6c33c7",
+       "os-centros-de-ossificacao-76c80b66",
+       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-00113b71",
+       "os-centros-de-ossificacao-87c6852a",
+       "os-centros-de-ossificacao-79e17682"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+     }
+    ],
+    "questaoSha256": "a0a1a25b1c131c1504241d1f724857c4d4319986a296c63626ba7b5404d51a14",
+    "comentarioSha256": "1ff7a9b5c89f609c1e38c1f6d9805cf9b5beae8387d0fea8601ea547896b17ca"
+   }
   },
   "pediatria-0995": {
    "tema": "pediatria",
@@ -28042,7 +28818,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28058,7 +28834,92 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "f5ddf56896ebcb1a982255fea29bb1aeaa7db8eab07540329bd71f8fd8291ad5"
+   "questaoSha256": "f5ddf56896ebcb1a982255fea29bb1aeaa7db8eab07540329bd71f8fd8291ad5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "O que é e quem tem a fratura em T",
+       "Imagem e diagnóstico diferencial"
+      ],
+      "blocos": [
+       "o-que-e-e-quem-tem-a-fratura-em-t-72e8f462",
+       "o-que-e-e-quem-tem-a-fratura-em-t-2ea333a9",
+       "o-que-e-e-quem-tem-a-fratura-em-t-9e374787",
+       "o-que-e-e-quem-tem-a-fratura-em-t-906a221d",
+       "o-que-e-e-quem-tem-a-fratura-em-t-9040db5b",
+       "o-que-e-e-quem-tem-a-fratura-em-t-4fdd4680",
+       "imagem-e-diagnostico-diferencial-bedf49c5",
+       "imagem-e-diagnostico-diferencial-87d164df",
+       "imagem-e-diagnostico-diferencial-f69ecdcb",
+       "imagem-e-diagnostico-diferencial-a512cdee",
+       "imagem-e-diagnostico-diferencial-649c7a83",
+       "imagem-e-diagnostico-diferencial-fc614288",
+       "imagem-e-diagnostico-diferencial-8cdca2d2",
+       "imagem-e-diagnostico-diferencial-17e23690",
+       "imagem-e-diagnostico-diferencial-e628d27f",
+       "imagem-e-diagnostico-diferencial-ed5223b9",
+       "imagem-e-diagnostico-diferencial-79fbbdd9",
+       "imagem-e-diagnostico-diferencial-991d4306",
+       "imagem-e-diagnostico-diferencial-900ae362",
+       "imagem-e-diagnostico-diferencial-62dbe5e6",
+       "imagem-e-diagnostico-diferencial-1f5d326e",
+       "imagem-e-diagnostico-diferencial-3fedcd4f"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "0e613e12bd917b0a000a574fb5e2e3e7fb41a01788d1d4dc29e38b336a9d8b99"
+     },
+     {
+      "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+      "titulo": "Avaliação do cotovelo da criança traumatizada",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "secoes": [
+       "As lesões que a radiografia esconde",
+       "O sinal do coxim gorduroso"
+      ],
+      "blocos": [
+       "as-lesoes-que-a-radiografia-esconde-7e866d45",
+       "as-lesoes-que-a-radiografia-esconde-218c010c",
+       "as-lesoes-que-a-radiografia-esconde-1920433c",
+       "as-lesoes-que-a-radiografia-esconde-74fb220d",
+       "as-lesoes-que-a-radiografia-esconde-0a04df77",
+       "as-lesoes-que-a-radiografia-esconde-a01f2923",
+       "as-lesoes-que-a-radiografia-esconde-6ff422b5",
+       "as-lesoes-que-a-radiografia-esconde-1542b255",
+       "o-sinal-do-coxim-gorduroso-dd0398cb",
+       "o-sinal-do-coxim-gorduroso-8040da34",
+       "o-sinal-do-coxim-gorduroso-200db2d0",
+       "o-sinal-do-coxim-gorduroso-c78fc6f4",
+       "o-sinal-do-coxim-gorduroso-0544c1f8",
+       "o-sinal-do-coxim-gorduroso-b7bb16ad",
+       "o-sinal-do-coxim-gorduroso-8a541421",
+       "o-sinal-do-coxim-gorduroso-f48bdfda",
+       "o-sinal-do-coxim-gorduroso-0fdec553",
+       "o-sinal-do-coxim-gorduroso-f267b75d",
+       "o-sinal-do-coxim-gorduroso-83cd049d",
+       "o-sinal-do-coxim-gorduroso-13d152db",
+       "o-sinal-do-coxim-gorduroso-bf083803",
+       "o-sinal-do-coxim-gorduroso-3a01c1cc",
+       "o-sinal-do-coxim-gorduroso-306d1211",
+       "o-sinal-do-coxim-gorduroso-a0b4b82d",
+       "o-sinal-do-coxim-gorduroso-ad2f6620"
+      ],
+      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "trechosSha256": "c738cfc56f118d5464d0eba8e5bf69e3254e9732d66a3961ff420a828458bb69"
+     }
+    ],
+    "questaoSha256": "f5ddf56896ebcb1a982255fea29bb1aeaa7db8eab07540329bd71f8fd8291ad5",
+    "comentarioSha256": "b6e2b9af0b87bfb56adf3ab668c2e018bf6f0e8cca65b663d4fab6bb74ce1e04"
+   }
   },
   "pediatria-1023": {
    "tema": "pediatria",
@@ -28339,7 +29200,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28355,7 +29216,55 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "a5a75f4f8e20b6019eb9422601e3be51c6069ad43ff8506d4c090a5e36a33a7c"
+   "questaoSha256": "a5a75f4f8e20b6019eb9422601e3be51c6069ad43ff8506d4c090a5e36a33a7c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Redução aberta: indicações e vias de acesso",
+       "Complicações"
+      ],
+      "blocos": [
+       "reducao-aberta-indicacoes-e-vias-de-acesso-0f53d6a4",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-07475cf9",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-5d3e8114",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-7033395e",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-af4f660d",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-1cad8364",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-a88fa001",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-44870ff3",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-a91c16b5",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-d11791d6",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-9b2a699f",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-7e2cc347",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-1152d24c",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-01372126",
+       "complicacoes-7ab5b751",
+       "complicacoes-91fbc481",
+       "complicacoes-cb2c0548",
+       "complicacoes-23119045",
+       "complicacoes-d2ac5d62",
+       "complicacoes-90956356",
+       "complicacoes-02e95725",
+       "complicacoes-8be1602d",
+       "complicacoes-93fc7d43",
+       "complicacoes-2896840e",
+       "complicacoes-a5c3fd88"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "6198896d35ef30aa959c86c9a59c31ae08abff0c1bc860b7a4bfbb6cdf3d634b"
+     }
+    ],
+    "questaoSha256": "a5a75f4f8e20b6019eb9422601e3be51c6069ad43ff8506d4c090a5e36a33a7c",
+    "comentarioSha256": "081759b8974c50cfb30c96cfb7c3cb77e4d1e2b41a0cda82daef3d8aed4c31f3"
+   }
   },
   "pediatria-1028": {
    "tema": "pediatria",
