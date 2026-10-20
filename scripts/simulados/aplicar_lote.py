@@ -16,7 +16,8 @@ Cada lote é um módulo Python em <pasta> com:
                    conceito='''...''', correta='''**X: ...** ...''', inc={"A": "...", ...},
                    img=("arquivo_sem_ext", "figura 32-11", (x0, y0, x1, y1)),  # img e caixa opcionais
                    num=17,                       # opcional: número da questão na prova espelhada
-                   refs=["Green's ..., cap. 3, p. 107"])]  # opcional: referências desta questão (somam ao REF)
+                   refs=["Green's ..., cap. 3, p. 107"],  # opcional: referências desta questão (somam ao REF)
+                   id="mao-1932")]               # opcional: revisa essa questão já publicada no lugar (mesmo id)
 
 A figura é lida de <pasta>/img/<arquivo>.png; a caixa recorta antes de salvar (para não entregar
 a resposta). --conferir só valida e mostra o resumo, sem gravar nada. Depois de aplicar, rode
@@ -107,6 +108,9 @@ for m, q in QS:
     if q.get("img") and not (PASTA / "img" / f"{q['img'][0]}.png").exists():
         erros.append(f"{rot}: figura {q['img'][0]}.png não encontrada")
 
+repetidos = [i for i, n in Counter(q["id"] for _, q in QS if q.get("id")).items() if n > 1]
+if repetidos:
+    erros.append(f"ids de revisão repetidos no lote: {', '.join(repetidos)}")
 gabs = Counter(q["gab"] for _, q in QS)
 print(f"{len(QS)} questões | gabarito {dict(sorted(gabs.items()))} | "
       f"comentário mediana {statistics.median(tamanhos):.0f} (mín {min(tamanhos)}, máx {max(tamanhos)}) | "
@@ -125,15 +129,22 @@ cp = RAIZ / f"public/acervo/comentarios/{a.tema}.json"
 T, C = json.load(open(tp)), json.load(open(cp))
 n = max(int(q["id"].rsplit("-", 1)[1]) for q in T["questoes"])
 existentes = {q["enunciado"] for q in T["questoes"]}
+pos = {q["id"]: i for i, q in enumerate(T["questoes"])}
 (RAIZ / f"public/imagens/{a.tema}").mkdir(parents=True, exist_ok=True)
 primeiro = None
 for m, q in QS:
+    if q.get("id"):
+        qid = q["id"]
+        if qid not in pos:
+            sys.exit(f"id a revisar não existe: {qid}")
+        existentes.discard(T["questoes"][pos[qid]]["enunciado"])
     if q["enun"] in existentes:
         sys.exit("duplicada: " + q["enun"][:60])
-    n += 1
-    qid = f"{a.tema}-{n:04d}"
+    if not q.get("id"):
+        n += 1
+        qid = f"{a.tema}-{n:04d}"
     primeiro = primeiro or qid
-    imagens = []
+    imagens = T["questoes"][pos[qid]].get("imagens", []) if q.get("id") else []  # revisão sem img= mantém a figura
     if q.get("img"):
         arquivo, figura, *caixa = q["img"]
         im = Image.open(PASTA / "img" / f"{arquivo}.png").convert("RGB")
@@ -144,7 +155,7 @@ for m, q in QS:
         imagens = [{"arquivo": f"{a.tema}/{qid}-1.jpeg",
                     "legenda": f"Fonte: {livro}, capítulo {getattr(m, 'CAP', '')}, {figura}.",
                     "largura": im.width, "altura": im.height}]
-    T["questoes"].append({
+    nova = ({
         "id": qid, "tema": tema["nome"], "subtemas": q["sub"], "prova": getattr(m, "PROVA", None), "simulado": True,
         **({"area": m.AREA} if getattr(m, "AREA", None) else {}),
         **({"areasAdicionais": q["areasAdicionais"]} if q.get("areasAdicionais") else {}),
@@ -153,6 +164,10 @@ for m, q in QS:
         "gabarito": q["gab"], "comentario": None, "comentariosComunidade": [], "referencias": [],
         "anulada": False, "figuraPendente": False, "revisado": False, "subtemasPendentes": False,
         "origem": {"arquivo": m.ARQ, "pagina": q["pag"], "numeroOriginal": q.get("num")}})
+    if q.get("id"):
+        T["questoes"][pos[qid]] = nova
+    else:
+        T["questoes"].append(nova)
     C[qid] = {"conceito": q["conceito"], "correta": q["correta"], "incorretas": dict(sorted(q["inc"].items())),
               "referencias": [r for r in [getattr(m, "REF", None), *q.get("refs", [])] if r], "geradoEm": a.data, "conferido": False}
 json.dump(T, open(tp, "w"), ensure_ascii=False, indent=2)
