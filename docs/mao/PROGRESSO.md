@@ -94,7 +94,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    acervo (lista em `.oq/simao2026-lista.txt`). Só o comentário muda; enunciado, alternativas, gabarito e id ficam.
    Aplicar: `aplicar_lote.py ~/OrtoQuestoes-Biblioteca/lotes/simao-2026 mao revisao_NN` (os 8 de cotovelo,
    ombro-cotovelo-0645 a 0652, num arquivo à parte com o tema ombro-cotovelo).
-   Feito: revisões 01 a 06 (mao-1719 a mao-1748). Próximo: revisão 07 (mao-1749 a mao-1753).
+   Feito: revisões 01 a 07 (mao-1719 a mao-1753). Próximo: revisão 08 (mao-1754 a mao-1758).
 7. SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
 
 **Como foi feito até aqui (repetir igual):**
