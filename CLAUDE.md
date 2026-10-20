@@ -44,3 +44,10 @@ Foco maior em imagens (Tales, 19/10/2026): prefira **objetos pixel animados** (c
 Regra do Tales (19/10/2026): a tela começa **sempre limpa**, só com o essencial. O resto (mapa, Pomodoro, placar, atalhos, dicas) fica como **opção visível** para a pessoa adicionar, como o botão "Personalizar" da sessão; nunca ligado de entrada.
 
 Em 19/10/2026, Tales aprovou para o arsenal a **Conversa do grupo R+** (feed, 6 slides: print de conversa dos residentes no plantão, com enquete, zoom e prévia de link do Cronograma). Veja [o guia](marketing/instagram/estilos/CONVERSA-DO-GRUPO.md).
+
+## Desenvolvimento e publicações
+
+Seguir a seção **Eficiência de desenvolvimento e GitHub Actions** do
+[AGENTS.md](AGENTS.md), fonte única das regras de agrupamento de alterações,
+commits, pushes, validação e respeito ao trabalho concorrente. Os detalhes dos
+workflows estão em [docs/OPERACAO-ACTIONS.md](docs/OPERACAO-ACTIONS.md).

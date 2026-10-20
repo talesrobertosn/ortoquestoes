@@ -130,3 +130,34 @@ histórico pessoal, entrada sem Torre e cronograma próprio está em [docs/flash
 
 Antes de mexer no cronograma (`#/cronograma`), leia [docs/cronograma/PLANO.md](docs/cronograma/PLANO.md):
 princípios de apresentação ("onde você está, hoje, amanhã, esta semana, depois"), protótipo, etapas com checklist.
+
+## Eficiência de desenvolvimento e GitHub Actions (Tales, 20/10/2026)
+
+Regra compartilhada por Codex, Claude Code e demais agentes: produzir mais trabalho
+útil por ciclo de publicação, preservando qualidade, testes, integrações e o site.
+Agrupar mudanças relacionadas em entregas funcionais; usar commits locais
+intermediários e enviá-los juntos. Evitar push a cada ajuste pequeno. Em sessões
+intensas, buscar intervalos aproximados de 30–60 minutos entre pushes quando
+compatível com o trabalho, sem espera artificial, prazo rígido ou atraso de uma
+entrega concluída ou do fim da sessão. Correções críticas, colaboração, testes
+remotos necessários e publicações urgentes justificam push imediato.
+
+Lotes editoriais de dez questões continuam sendo unidades de revisão e evidência;
+não exigem um push, PR ou deploy por lote. Acumular lotes relacionados já validados
+em uma entrega quando houver capacidade, sem reduzir a profundidade dos comentários.
+Antes de enviar, conferir branches, PRs e commits remotos para preservar trabalho
+concorrente. Não usar force push, commits/pushes vazios nem mudanças irrelevantes
+para provocar CI. Aguardar checks do head efetivo e conferir a publicação real.
+
+Os dois workflows e os critérios conservadores de impacto estão documentados em
+[docs/OPERACAO-ACTIONS.md](docs/OPERACAO-ACTIONS.md). Não usar `[skip ci]` para
+contornar validações. Novas entradas do aplicativo ou dos testes devem continuar
+exigindo CI; ao mudar filtros, verificar dependências e testar mudanças mistas,
+exclusões, renomes e falhas de comparação. Esta seção é a fonte única dessas
+orientações; CLAUDE.md deve apontar para ela, sem manter regras paralelas.
+
+Em 20/10/2026, Tales aprovou como referência de profundidade o comentário de
+[pediatria-1036](https://ortoquestoes.com.br/#/questao/pediatria-1036), registrado em
+[023-exemplo-aprofundado-mao-sem-pulso.json](docs/comentarios-resumos/lotes/023-exemplo-aprofundado-mao-sem-pulso.json).
+Seguir a aula com mecanismo, comparação dos cenários, raciocínio próprio para cada
+alternativa, controvérsias explícitas e fonte conferida; extensão sozinha não basta.
