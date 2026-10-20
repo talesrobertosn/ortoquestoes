@@ -18,6 +18,7 @@ import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis } from '../conta/supabase'
 import { calcularPorta, linkDaPorta, SECOES_ABERTAS } from '../biblioteca/porta'
 import { PortaLeitura } from '../biblioteca/PortaLeitura'
+import { usarSemCopia } from '../biblioteca/semCopia'
 import '../estilos/paginas/Resumos.css'
 
 const QuestaoDireta = lazy(() => import('./QuestaoDireta').then((m) => ({ default: m.QuestaoDireta })))
@@ -134,6 +135,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
   const rolagem = useRef<HTMLDivElement>(null)
   const pagina = useRef<HTMLElement>(null)
+  usarSemCopia(pagina)
   const paginado = pref.modo === 'paginado'
   const [paginas, definirPaginasEstado] = useState({ atual: 0, total: 1, passo: 0 })
   // Ref junto com o estado: os callbacks de rolagem leem a página atual sem ficar com valor antigo.
@@ -334,10 +336,6 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     limparSelecao()
     if (comNota) definirAberta({ id: m.id, x, y, embaixo })
   }
-  async function copiar(texto: string) {
-    try { await navigator.clipboard.writeText(`“${texto}” — ${capitulo.titulo} (resumo OrtoQuestões a partir de ${capitulo.livro}, ${capitulo.edicao})`); definirAviso({ texto: 'Trecho copiado com a referência.' }) }
-    catch { definirAviso({ texto: 'Não foi possível copiar neste navegador.' }) }
-  }
   const questoesDaSecao = (secao: string | null) => {
     const s = capitulo.secoes.find((x) => x.id === secao)
     return s?.blocos.find((b): b is Extract<Bloco, { tipo: 'questoes' }> => b.tipo === 'questoes') ?? null
@@ -526,11 +524,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
       {!paginado && !porta.fechado && progresso > 1 && progresso < 99 && <p className="lr-restante numerico" aria-hidden="true">{Math.round(progresso)}% · ~{minutosRestantes} min restantes</p>}
       {foco && <button type="button" className="lr-sair-foco" onClick={() => definirFoco(false)}>Sair da concentração</button>}
 
-      {selecao && <MenuSelecao selecao={selecao} reassociando={!!reassociar} temQuestoes={!!questoesDaSecao(selecao.secao)} aoCor={(c) => destacar(c)} aoNota={() => destacar('amarelo', true)} aoCopiar={() => { copiar(selecao.texto); limparSelecao() }}
-        aoQuestoes={() => { const q = questoesDaSecao(selecao.secao); limparSelecao(); if (q) { irPara(q.id, 0, true) } }} aoCancelarReassociar={() => { definirReassociar(null); limparSelecao() }} />}
+      {selecao && <MenuSelecao selecao={selecao} reassociando={!!reassociar} temQuestoes={!!questoesDaSecao(selecao.secao)} aoCor={(c) => destacar(c)} aoNota={() => destacar('amarelo', true)}        aoQuestoes={() => { const q = questoesDaSecao(selecao.secao); limparSelecao(); if (q) { irPara(q.id, 0, true) } }} aoCancelarReassociar={() => { definirReassociar(null); limparSelecao() }} />}
       {aberto && aberta && <CartaoMarca marca={aberto} pos={aberta} aoFechar={() => definirAberta(null)} aoCor={(c) => bib.editarMarca(aberto.id, { cor: c })} aoNota={(nota) => bib.editarMarca(aberto.id, { nota })}
-        aoFavorita={() => bib.editarMarca(aberto.id, { favorita: !aberto.favorita })} aoCopiar={() => copiar(aberto.ancora.trechos.map((t) => t.exato).join('\n'))}
-        aoResolverConflito={(notas, nota) => bib.editarMarca(aberto.id, { notasDeOutroAparelho: notas, ...(nota !== undefined ? { nota } : {}) })}
+        aoFavorita={() => bib.editarMarca(aberto.id, { favorita: !aberto.favorita })}        aoResolverConflito={(notas, nota) => bib.editarMarca(aberto.id, { notasDeOutroAparelho: notas, ...(nota !== undefined ? { nota } : {}) })}
         aoApagar={() => { const idM = aberto.id; bib.apagarMarca(idM); definirAberta(null); definirAviso({ texto: 'Destaque removido.', desfazer: () => bib.restaurarMarca(idM) }) }} />}
 
       {painel && <aside className={`lr-painel lr-painel--${painel}`} aria-label={painel === 'indice' ? 'Índice' : painel === 'notas' ? 'Marcações e notas' : painel === 'busca' ? 'Buscar' : 'Aparência'}>
@@ -678,7 +674,7 @@ function posicionar(x: number, y: number, embaixo: boolean): CSSProperties {
   return { left: esquerda, top: y, transform: `translate(-50%, ${embaixo ? '12px' : 'calc(-100% - 12px)'})` }
 }
 
-function MenuSelecao({ selecao, reassociando, temQuestoes, aoCor, aoNota, aoCopiar, aoQuestoes, aoCancelarReassociar }: { selecao: Selecao; reassociando: boolean; temQuestoes: boolean; aoCor: (c: CorMarca) => void; aoNota: () => void; aoCopiar: () => void; aoQuestoes: () => void; aoCancelarReassociar: () => void }) {
+function MenuSelecao({ selecao, reassociando, temQuestoes, aoCor, aoNota, aoQuestoes, aoCancelarReassociar }: { selecao: Selecao; reassociando: boolean; temQuestoes: boolean; aoCor: (c: CorMarca) => void; aoNota: () => void; aoQuestoes: () => void; aoCancelarReassociar: () => void }) {
   // Evita perder a seleção ao tocar no menu.
   const segurar = (e: React.PointerEvent | React.MouseEvent) => e.preventDefault()
   if (reassociando) return <div className="lr-menu" style={posicionar(selecao.x, selecao.y, selecao.embaixo)} onPointerDown={segurar} onMouseDown={segurar} role="toolbar" aria-label="Reassociar marcação">
@@ -689,14 +685,13 @@ function MenuSelecao({ selecao, reassociando, temQuestoes, aoCor, aoNota, aoCopi
     <div className="lr-menu" style={posicionar(selecao.x, selecao.y, selecao.embaixo)} onPointerDown={segurar} onMouseDown={segurar} role="toolbar" aria-label="Trecho selecionado">
       <span className="lr-menu__cores">{CORES.map((c) => <button key={c} type="button" className={`lr-cor lr-cor--${c}`} onClick={() => aoCor(c)} aria-label={`Destacar em ${NOME_COR[c].toLowerCase()}`} title={NOME_COR[c]} />)}</span>
       <button type="button" className="lr-menu__acao" onClick={aoNota}><Icone nome="lapis" tamanho={15} /> Nota</button>
-      <button type="button" className="lr-menu__acao" onClick={aoCopiar}><Icone nome="copiar" tamanho={15} /> Copiar</button>
       {temQuestoes && <button type="button" className="lr-menu__acao" onClick={aoQuestoes}><Icone nome="alvo" tamanho={15} /> Questões</button>}
     </div>
   )
 }
 
-function CartaoMarca({ marca, pos, aoFechar, aoCor, aoNota, aoFavorita, aoCopiar, aoApagar, aoResolverConflito }: {
-  marca: Marca; pos: { x: number; y: number; embaixo: boolean }; aoFechar: () => void; aoCor: (c: CorMarca) => void; aoNota: (n: string) => void; aoFavorita: () => void; aoCopiar: () => void; aoApagar: () => void
+function CartaoMarca({ marca, pos, aoFechar, aoCor, aoNota, aoFavorita, aoApagar, aoResolverConflito }: {
+  marca: Marca; pos: { x: number; y: number; embaixo: boolean }; aoFechar: () => void; aoCor: (c: CorMarca) => void; aoNota: (n: string) => void; aoFavorita: () => void; aoApagar: () => void
   aoResolverConflito: (restantes: string[], nota?: string) => void
 }) {
   const [nota, definirNota] = useState(marca.nota)
@@ -722,7 +717,6 @@ function CartaoMarca({ marca, pos, aoFechar, aoCor, aoNota, aoFavorita, aoCopiar
       </div>}
       <div className="lr-cartao__acoes">
         <button type="button" onClick={aoFavorita} aria-pressed={!!marca.favorita}><Icone nome="estrela" tamanho={15} /> {marca.favorita ? 'Favorito' : 'Favoritar'}</button>
-        <button type="button" onClick={aoCopiar}><Icone nome="copiar" tamanho={15} /> Copiar</button>
         <button type="button" className="lr-cartao__apagar" onClick={aoApagar}><Icone nome="lixeira" tamanho={15} /> Remover</button>
       </div>
     </div>
