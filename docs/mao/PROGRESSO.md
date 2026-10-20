@@ -42,6 +42,12 @@ Comentar no padrão, com o Green, depois das provas da SBCM e do SIMÃO (texto o
 
 Faltam: SIMÃO 2025 e as provas da SBCM de 2021 e 2025 (se existirem). O SIMÃO 2026 já está publicado.
 
+**SIMÃO 2026: refazer os comentários (pedido do Tales, 20/10/2026).** As 100 questões (mao-1719 a mao-1810;
+ombro-cotovelo-0645 a 0652) estão publicadas, mas com comentário no padrão antigo (mediana de cerca de 3.000
+caracteres em conceito e correta). Refazer no padrão atual: aula do Green com capítulo e página, tom de professor,
+citação literal só onde ajuda e "Por que esta questão foi criada." com o número da questão. Entra logo depois de
+terminar o SIMÃO 2023 (lotes 15 a 20), antes do SBCM 2024. Enunciado, alternativas, gabarito e id ficam como estão.
+
 ## Edição do livro principal
 
 Preencher na fase 0 com o que está na folha de rosto do arquivo do Green: título, edição, autores, tradução.
