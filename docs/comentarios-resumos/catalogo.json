@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1863,
+  "pendente": 1852,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 20,
+  "pendente-fonte": 21,
   "pendente-inspecao-imagem": 182,
-  "revisada": 171
+  "revisada": 181
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -255,9 +255,10 @@
    "titulo": "Fratura supracondiliana do úmero na criança",
    "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
    "estados": {
-    "pendente": 40,
+    "pendente": 29,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 1,
-    "revisada": 14
+    "revisada": 24
    }
   },
   "rockwoodcriancas9-14-fratura-em-t": {
@@ -293,10 +294,10 @@
    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
    "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
    "estados": {
-    "pendente": 10,
+    "pendente": 8,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2,
-    "revisada": 27
+    "revisada": 29
    }
   },
   "wilkins9-08-radio-ulna-distal-crianca": {
@@ -304,7 +305,8 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 79,
+    "pendente": 78,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2
    }
   },
@@ -313,7 +315,8 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 74,
+    "pendente": 73,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2
    }
   }
@@ -22949,7 +22952,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -22972,7 +22975,41 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "7426581c09c4646b4b3f5e162ff257b24a12174d6ff4b005606787a69d0f8361"
+   "questaoSha256": "7426581c09c4646b4b3f5e162ff257b24a12174d6ff4b005606787a69d0f8361",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Cúbito varo"
+      ],
+      "blocos": [
+       "cubito-varo-02a36370",
+       "cubito-varo-1a120757",
+       "cubito-varo-9bc337d3",
+       "cubito-varo-7d2226a9",
+       "cubito-varo-7ec96b6d",
+       "cubito-varo-fd2a5e7e",
+       "cubito-varo-5f1b1eb1",
+       "cubito-varo-5b7c0897",
+       "cubito-varo-01df2fd8",
+       "cubito-varo-c47dcdd8",
+       "cubito-varo-afa22f7d",
+       "cubito-varo-89dd8dce"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
+     }
+    ],
+    "questaoSha256": "7426581c09c4646b4b3f5e162ff257b24a12174d6ff4b005606787a69d0f8361",
+    "comentarioSha256": "f1ac073beee6389a9663aabb6d3ac6e2eaa06e30a9a4dade511b29ef27e25f61"
+   }
   },
   "pediatria-0539": {
    "tema": "pediatria",
@@ -23335,7 +23372,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -23350,7 +23387,45 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "3291018b687a9b6d7bceb2bdd5ff4aa8c7e4ba92211f17795480374a4f15c3bc"
+   "questaoSha256": "3291018b687a9b6d7bceb2bdd5ff4aa8c7e4ba92211f17795480374a4f15c3bc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Redução fechada: técnica, periósteo e rotação"
+      ],
+      "blocos": [
+       "reducao-fechada-tecnica-periosteo-e-rotacao-a4c3a4fd",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-43f75607",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f4436304",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-79feecaf",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-4d860e8c",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-49f3da74",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-d4136367",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f0bbe362",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-77776755",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-a9673dd6",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-b1951499",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-b55d02ec",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-fca4eee7",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-6f036543",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "7310d74b47cbdd9b3bd47348c34e3b9aa9cde7e05e6b484e697e188f1fd50553"
+     }
+    ],
+    "questaoSha256": "3291018b687a9b6d7bceb2bdd5ff4aa8c7e4ba92211f17795480374a4f15c3bc",
+    "comentarioSha256": "fa66c55736dd3cae3b530b532287e0b5c124cb20730b43095f6a33f365cf463b"
+   }
   },
   "pediatria-0594": {
    "tema": "pediatria",
@@ -23436,7 +23511,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -23451,7 +23526,40 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "d3af28861ec77510ba169ea45dc6f73a306ced0feb8d1646a6e9a9187010ba7f"
+   "questaoSha256": "d3af28861ec77510ba169ea45dc6f73a306ced0feb8d1646a6e9a9187010ba7f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Mecanismo, direção do desvio e estruturas em risco"
+      ],
+      "blocos": [
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+     }
+    ],
+    "questaoSha256": "d3af28861ec77510ba169ea45dc6f73a306ced0feb8d1646a6e9a9187010ba7f",
+    "comentarioSha256": "56ad83cb98fe538e5b4daa13dd6650de6d9e3127ff6f6164cc1db97508039db2"
+   }
   },
   "pediatria-0604": {
    "tema": "pediatria",
@@ -23916,7 +24024,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -23931,7 +24039,67 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "bf493962cadad639c508fbb4e67e5e882dbdf25c359e1908db619e1b1acaf50f"
+   "questaoSha256": "bf493962cadad639c508fbb4e67e5e882dbdf25c359e1908db619e1b1acaf50f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Mecanismo, direção do desvio e estruturas em risco"
+      ],
+      "blocos": [
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+     },
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Lesões nervosas: frequência, exame e conduta"
+      ],
+      "blocos": [
+       "lesoes-nervosas-frequencia-exame-e-conduta-0aa48273",
+       "lesoes-nervosas-frequencia-exame-e-conduta-c85b81bf",
+       "lesoes-nervosas-frequencia-exame-e-conduta-0728a0e6",
+       "lesoes-nervosas-frequencia-exame-e-conduta-b0eb7804",
+       "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31",
+       "lesoes-nervosas-frequencia-exame-e-conduta-de5f0f94",
+       "lesoes-nervosas-frequencia-exame-e-conduta-84cd80ba",
+       "lesoes-nervosas-frequencia-exame-e-conduta-f30679b8",
+       "lesoes-nervosas-frequencia-exame-e-conduta-8e857a72",
+       "lesoes-nervosas-frequencia-exame-e-conduta-a911dd5c",
+       "lesoes-nervosas-frequencia-exame-e-conduta-26fca161",
+       "lesoes-nervosas-frequencia-exame-e-conduta-c053f0be",
+       "lesoes-nervosas-frequencia-exame-e-conduta-7fcb874d"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "a5799bfc95a6e2d9f14e9d2cd6bf2028186ab8d5afe0cf14ff2036401ac91768"
+     }
+    ],
+    "questaoSha256": "bf493962cadad639c508fbb4e67e5e882dbdf25c359e1908db619e1b1acaf50f",
+    "comentarioSha256": "e8009dda506ca019a93fa51c34fcfb856928e1594afc865b9f1ed773edc88c89"
+   }
   },
   "pediatria-0640": {
    "tema": "pediatria",
@@ -24114,7 +24282,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24137,7 +24305,62 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "17c1e2ac643401942a5ae3bc9e3dc3cd737033a7aad53edb2e14081abcbf4155"
+   "questaoSha256": "17c1e2ac643401942a5ae3bc9e3dc3cd737033a7aad53edb2e14081abcbf4155",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Cúbito varo"
+      ],
+      "blocos": [
+       "cubito-varo-02a36370",
+       "cubito-varo-1a120757",
+       "cubito-varo-9bc337d3",
+       "cubito-varo-7d2226a9",
+       "cubito-varo-7ec96b6d",
+       "cubito-varo-fd2a5e7e",
+       "cubito-varo-5f1b1eb1",
+       "cubito-varo-5b7c0897",
+       "cubito-varo-01df2fd8",
+       "cubito-varo-c47dcdd8",
+       "cubito-varo-afa22f7d",
+       "cubito-varo-89dd8dce"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
+     },
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Outras complicações"
+      ],
+      "blocos": [
+       "outras-complicacoes-ef2464f3",
+       "outras-complicacoes-3ccc4178",
+       "outras-complicacoes-a16b364b",
+       "outras-complicacoes-7df18448",
+       "outras-complicacoes-b1017a46",
+       "outras-complicacoes-0f62bca9",
+       "outras-complicacoes-484f2e26"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "c39b8fba6f4bbbb6c381998db40db94c07f732577d62deaa019e5ab1dd9ff97c"
+     }
+    ],
+    "questaoSha256": "17c1e2ac643401942a5ae3bc9e3dc3cd737033a7aad53edb2e14081abcbf4155",
+    "comentarioSha256": "4bc0a11b2c9dcc17ce1a05a614587ed5689a9927601fa0714c7f067d37206e6b"
+   }
   },
   "pediatria-0655": {
    "tema": "pediatria",
@@ -24725,7 +24948,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24740,7 +24963,40 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "6005b5d190c9248d1bfc2afb2bd5944248cd5504ad3552479c618000894f2578"
+   "questaoSha256": "6005b5d190c9248d1bfc2afb2bd5944248cd5504ad3552479c618000894f2578",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Mecanismo, direção do desvio e estruturas em risco"
+      ],
+      "blocos": [
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+     }
+    ],
+    "questaoSha256": "6005b5d190c9248d1bfc2afb2bd5944248cd5504ad3552479c618000894f2578",
+    "comentarioSha256": "930eb6fb56228658c68ae222eed7218b3c217d3702429559f3b7a31e8d00e106"
+   }
   },
   "pediatria-0692": {
    "tema": "pediatria",
@@ -25454,7 +25710,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25469,7 +25725,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "f2988ca47c19ad38e22722a0ed604a65e0464fb0bd29b71ea50085570c359bc0"
+   "questaoSha256": "f2988ca47c19ad38e22722a0ed604a65e0464fb0bd29b71ea50085570c359bc0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "O que remodela"
+      ],
+      "blocos": [
+       "o-que-remodela-acc7c25f",
+       "o-que-remodela-10858a70"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "982d327235260ca0dfc85e3b3dd9f55a31b3467646224687a5906d8d8835d09b"
+     }
+    ],
+    "questaoSha256": "f2988ca47c19ad38e22722a0ed604a65e0464fb0bd29b71ea50085570c359bc0",
+    "comentarioSha256": "79cc6e4e398ff6d4664fc2d3d8bb5062f0c765304e6cd3e00d5b7db9264d414c"
+   }
   },
   "pediatria-0722": {
    "tema": "pediatria",
@@ -25479,8 +25759,8 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo 13 lido integralmente: pronação para desvio posteromedial (A) e supinação para posterolateral (D) são ambas condutas sustentadas, conforme a dobradiça periosteal preservada. O enunciado não restringe a direção e não há chave oficial. Não atribuir provavel única. Falta a versão primária da questão ou esclarecimento do contexto que exclua uma das alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -25496,7 +25776,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "aec8d331ec6cceb078ce9b7fca82ced91f74fab5616e9e05cd85138e6cc9f1db"
+   "questaoSha256": "aec8d331ec6cceb078ce9b7fca82ced91f74fab5616e9e05cd85138e6cc9f1db",
+   "pendencia": "Resumo 13 lido integralmente: pronação para desvio posteromedial (A) e supinação para posterolateral (D) são ambas condutas sustentadas, conforme a dobradiça periosteal preservada. O enunciado não restringe a direção e não há chave oficial. Não atribuir provavel única. Falta a versão primária da questão ou esclarecimento do contexto que exclua uma das alternativas."
   },
   "pediatria-0723": {
    "tema": "pediatria",
@@ -25848,7 +26129,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25863,7 +26144,60 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "ff3ee578a7346576a8a002bd6768220ee80b6663ae12efec3acb5db9bdf358b2"
+   "questaoSha256": "ff3ee578a7346576a8a002bd6768220ee80b6663ae12efec3acb5db9bdf358b2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Fratura supracondiliana em flexão"
+      ],
+      "blocos": [
+       "fratura-supracondiliana-em-flexao-a21a51b5",
+       "fratura-supracondiliana-em-flexao-9a522012",
+       "fratura-supracondiliana-em-flexao-2ad80c88",
+       "fratura-supracondiliana-em-flexao-d6eeef9c",
+       "fratura-supracondiliana-em-flexao-034a15ed",
+       "fratura-supracondiliana-em-flexao-d4613b25"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "f7d1388787a15bee0bdb27993732fea7ad386e9ca56b8638df271b0b5127b15e"
+     },
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Mecanismo, direção do desvio e estruturas em risco"
+      ],
+      "blocos": [
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+       "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+     }
+    ],
+    "questaoSha256": "ff3ee578a7346576a8a002bd6768220ee80b6663ae12efec3acb5db9bdf358b2",
+    "comentarioSha256": "03564255f3020ed5e722f339beed0ad93a85dcde2b70932398538e14b0f7714c"
+   }
   },
   "pediatria-0754": {
    "tema": "pediatria",
@@ -26575,7 +26909,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26590,7 +26924,41 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "a6242dca4cf326ab9ea673961fa803a601d0bf06b377e82fa3bb7d8181c54d9e"
+   "questaoSha256": "a6242dca4cf326ab9ea673961fa803a601d0bf06b377e82fa3bb7d8181c54d9e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Cúbito varo"
+      ],
+      "blocos": [
+       "cubito-varo-02a36370",
+       "cubito-varo-1a120757",
+       "cubito-varo-9bc337d3",
+       "cubito-varo-7d2226a9",
+       "cubito-varo-7ec96b6d",
+       "cubito-varo-fd2a5e7e",
+       "cubito-varo-5f1b1eb1",
+       "cubito-varo-5b7c0897",
+       "cubito-varo-01df2fd8",
+       "cubito-varo-c47dcdd8",
+       "cubito-varo-afa22f7d",
+       "cubito-varo-89dd8dce"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
+     }
+    ],
+    "questaoSha256": "a6242dca4cf326ab9ea673961fa803a601d0bf06b377e82fa3bb7d8181c54d9e",
+    "comentarioSha256": "89d588bdfa8a8d28af56b587599e1373477a0e141f5f72dc5cb0a574feaf421b"
+   }
   },
   "pediatria-0844": {
    "tema": "pediatria",
@@ -26853,7 +27221,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26868,7 +27236,45 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "05d9fe0b6e50d93edfce90d40c84646d451f887cc3723ca4630508175bdbd1b6"
+   "questaoSha256": "05d9fe0b6e50d93edfce90d40c84646d451f887cc3723ca4630508175bdbd1b6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Redução fechada: técnica, periósteo e rotação"
+      ],
+      "blocos": [
+       "reducao-fechada-tecnica-periosteo-e-rotacao-a4c3a4fd",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-43f75607",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f4436304",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-79feecaf",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-4d860e8c",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-49f3da74",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-d4136367",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f0bbe362",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-77776755",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-a9673dd6",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-b1951499",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-b55d02ec",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-fca4eee7",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-6f036543",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
+       "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "7310d74b47cbdd9b3bd47348c34e3b9aa9cde7e05e6b484e697e188f1fd50553"
+     }
+    ],
+    "questaoSha256": "05d9fe0b6e50d93edfce90d40c84646d451f887cc3723ca4630508175bdbd1b6",
+    "comentarioSha256": "7b301ce6b312bb557649fe72e888b8c8a25ce37d10a673feaad50720dbbfed00"
+   }
   },
   "pediatria-0917": {
    "tema": "pediatria",
