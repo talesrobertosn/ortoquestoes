@@ -214,11 +214,11 @@ O motivo de mandar o Green e os resumos é **o comentário passar autoridade**. 
    "No Green (8ª ed., cap. 55, p. 2063), os autores são diretos: ..."; "É o que o capítulo de fraturas
    de metacarpo chama de ...". Pelo menos duas citações com capítulo e página por questão (no conceito e na
    alternativa correta), e a página também nas alternativas erradas quando o motivo do erro vem do livro.
-3. **Uma ou duas citações literais curtas por questão**, entre aspas, de no máximo duas frases. Como a tradução
-   que temos é automática, quando o trecho em português ficar estranho, citar **o original em inglês** e dar o
-   sentido em português logo depois: "No original: \"Usually a near-full correction is obtained with
-   preoperative extensor lags of up to 35 degrees\" (Green, cap. 5, p. 201), ou seja, ...". Nada de copiar
-   parágrafos inteiros.
+3. **Citação literal com flexibilidade** (ajuste do Tales, 20/10/2026: "quando precisar citar muito cite muito; quando não
+   fizer sentido não cite"). Citar bastante quando a resposta depende da letra exata do livro (classificação, número, frase
+   que a banca copiou, divergência com a banca); não citar quando a frase não acrescenta nada ao que a página já sustenta.
+   Nada de parágrafo-padrão de citação em toda questão. Como a tradução é automática, quando o trecho em português ficar
+   estranho, citar **o original em inglês** e dar o sentido em português logo depois. Nada de copiar parágrafos inteiros.
 4. **Se o capítulo ou a página não forem achados**, citar o que houver (o resumo, outro livro local, a correção
    da prova como "segundo a correção da banca") e dizer isso com honestidade. Nunca inventar página.
 5. **Tom humano**: explicar como um professor conversando com o residente ("repare que", "o raciocínio é",
