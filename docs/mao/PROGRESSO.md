@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 44 | 2 | mao-1932 a mao-1975 | A 11, B 11, C 11, D 11 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 48 | 2 | mao-1932 a mao-1979 | A 12, B 12, C 12, D 12 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -55,6 +55,9 @@ Essa é a linha do `REF` dos lotes.
 - Outros livros locais: Pediatric Hand and Upper Limb Surgery (inglês), Congenital Deformities of the Hand and
   Upper Limb (Wang e Yao, Springer 2018, inglês), Pardini (Cirurgia da Mão; Traumatismo da Mão), estes dois
   ainda escaneados, sem texto.
+- Atenção ao número dos arquivos: "4- T. extensor" é o cap. 5; "23- Rigidez do cotovelo" é o cap. 24; "24- Tendinites
+  e lesões tendineas do cotovelo" é o cap. 25; "25- Artroscopia do cotovelo" é o cap. 26; "26-Neuropatias
+  compressivas" é o cap. 28. Os demais batem com o número do capítulo. Cite sempre o número do cabeçalho da página.
 - Computador do Tales (Windows): os JSON de `provas-separadas.zip` não chegaram a esta máquina; as provas
   foram separadas com `questoes` a partir dos PDFs (mesma numeração), e as respostas vêm de [dicas/](dicas/).
 
@@ -116,7 +119,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 40 | Luxação congênita da cabeça do rádio: lado e direção mais comuns | fato | cap. 38 | mao / Outras malformações congênitas | 16 | | a fazer |
 | 41 | IFP: causa mais comum da contratura em extensão | fato | cap. 10, p. 388, 389, 395, 403, 404 (a "causa mais comum" está no resumo do cap. 10) | mao / Deformidades dos dedos | 02 | mao-1939 | publicada |
 | 42 | Nervo cutâneo lateral do antebraço: origem e onde emerge | anatomia | cap. 30, p. 1151; cap. 28, p. 1113 | mao / Anatomia da mão e punho | 09 | mao-1974 | publicada |
-| 43 | Paralisia obstétrica: achado e o que ele significa | par | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 10 | | a fazer |
+| 43 | Paralisia obstétrica: achado e o que ele significa | par | cap. 40, p. 1561 a 1563 | mao / Plexo braquial e paralisia obstétrica | 10 | mao-1979 | publicada |
 | 44 | GARCIA-ELIAS: estágio da lesão parcial reparável com ângulo normal | classificação | cap. 13, p. 512 a 514 | mao / Instabilidade do carpo | 05 | mao-1951 | publicada |
 | 45 | Paralisia cerebral: punho em flexão e indicações | afirmativas | cap. 32 | mao / Transferências tendinosas e paralisias | 13 | | a fazer |
 | 46 | Retalho lateral do braço: artéria | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
@@ -124,7 +127,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 48 | MONTEGGIA posterior: padrão mais comum | classificação | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
 | 49 | Úmero distal: vias de acesso | afirmativas | cap. 18 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | | a fazer |
 | 50 | Artrodese total do punho: indicações e complicações | afirmativas | cap. 12, p. 453, 460 a 465 | mao / Artrose do punho e artroscopia | 07 | mao-1962 | publicada |
-| 51 | Lesão nervosa: regeneração, ENMG, SUNDERLAND, TINEL | afirmativas | cap. 30 | mao / Lesões de nervos periféricos | 10 | | a fazer |
+| 51 | Lesão nervosa: regeneração, ENMG, SUNDERLAND, TINEL | afirmativas | cap. 30, p. 1152, 1153, 1157 | mao / Lesões de nervos periféricos | 10 | mao-1977 | publicada |
 | 52 | Camptodactilia na artrogripose | afirmativas | cap. 39 | mao / Outras malformações congênitas | 17 | | a fazer |
 | 53 | Paralisia radial: vantagem do flexor superficial sobre o FUC para os dedos | transferência | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
 | 54 | Tetraplegia: quando operar o membro superior | número | cap. 33 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
@@ -133,7 +136,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 57 | Vascularização lateral do braço (braquial profunda e colaterais) | afirmativas | cap. 45 | mao / Microcirurgia e retalhos livres | 19 | | a fazer |
 | 58 | Instabilidade carpal não dissociativa | afirmativas | cap. 13, p. 537 a 539 | mao / Instabilidade do carpo | 05 | mao-1952 | publicada |
 | 59 | VOCHE e MERLE: abdução do mínimo na paralisia ulnar | epônimo | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
-| 60 | Desfiladeiro torácico: compressão distal associada mais comum | fato | cap. 29 | mao / Neuropatia ulnar e outras compressões | 10 | | a fazer |
+| 60 | Desfiladeiro torácico: compressão distal associada mais comum | fato | cap. 29, p. 1132, 1133 | mao / Neuropatia ulnar e outras compressões | 10 | mao-1976 | publicada |
 | 61 | EATON e LITTLER: estágio pela descrição | classificação | cap. 11, p. 423, 424 | mao / Rizartrose e artrose da mão | 07 | mao-1964 | publicada |
 | 62 | Polidactilia central: ordem de frequência dos dedos | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
 | 63 | Sinostose radioulnar proximal | afirmativas | cap. 38 | mao / Outras malformações congênitas | 16 | | a fazer |
@@ -166,7 +169,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 90 | LICHTMAN atualizada: em que se baseia | classificação | cap. 16, p. 729 a 733 | mao / Doença de Kienböck | 04 | mao-1950 | publicada |
 | 91 | Clinodactilia: deformidade que entra na classificação | classificação | cap. 36 | mao / Deformidades dos dedos | 15 | | a fazer |
 | 92 | SDCR: como se faz o diagnóstico | fato | cap. 53 | mao / Síndrome da dor complexa regional | 17 | | a fazer |
-| 93 | Nervo sural no tornozelo: relação com o tendão calcâneo | anatomia | cap. 30 | mao / Lesões de nervos periféricos | 10 | | a fazer |
+| 93 | Nervo sural no tornozelo: relação com o tendão calcâneo | anatomia | cap. 30, p. 1166 a 1168 | mao / Lesões de nervos periféricos | 10 | mao-1978 | publicada |
 | 94 | Banda de constrição | afirmativas | cap. 36 | mao / Outras malformações congênitas | 15 | | a fazer |
 | 95 | Paralisia radial: primeiro músculo do antebraço a voltar | fato | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
 | 96 | Tenossinovite do polegar comunicando com o mínimo: espaço | anatomia | cap. 2 | mao / Infecções da mão | 13 | | a fazer |
