@@ -91,7 +91,7 @@ alternativas da prova (passando no `copia`), acrescenta a citação literal do G
 | 10 | 60, 51, 93, 43 | mao-1976 a 1979 | revisada |
 | 11 | 53, 59, 72, 83, 95 | mao-1980 a 1984 | revisada |
 | 12 | 31, 80, 54, 99, 14 | mao-1985 a 1989 | revisada |
-| 13 | 45, 13, 36, 96, 70 | mao-1990 a 1994 | a fazer |
+| 13 | 45, 13, 36, 96, 70 | mao-1990 a 1994 | revisada |
 
 Depois das revisões: lotes 14 a 20 do SIMÃO 2023 já no padrão novo (redação próxima, citação literal).
 
