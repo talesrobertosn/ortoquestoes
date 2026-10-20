@@ -1,4 +1,5 @@
-import { Fragment, useDeferredValue, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { Fragment, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { usarSemCopia } from '../biblioteca/semCopia'
 import { recurso } from '../config'
 import { usarPremium } from '../conta/premium'
 import { ROTULO_NIVEL } from '../dados/incidencia'
@@ -66,6 +67,8 @@ function comNegrito(texto: string, termos: string[] = []): ReactNode {
  */
 export function Resumao() {
   const { premium } = usarPremium()
+  const texto = useRef<HTMLDivElement>(null)
+  usarSemCopia(texto)
   const [dados, definirDados] = useState<DadosResumao | null>(null)
   const [erro, definirErro] = useState(false)
   const [tentativa, definirTentativa] = useState(0)
@@ -235,7 +238,7 @@ export function Resumao() {
   }
 
   return (
-    <div className={`empilha-2 rz rz--fonte-${FONTES[iFonte]}`}>
+    <div ref={texto} className={`empilha-2 rz rz--fonte-${FONTES[iFonte]}`}>
       <section className="rz-heroi">
         <span className="rz-heroi__icone" aria-hidden="true"><IconePixel nome="revisao" tamanho={56} /></span>
         <div>
