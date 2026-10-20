@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 24 | 1 | mao-1932 a mao-1955 | A 6, B 6, C 6, D 6 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 29 | 1 | mao-1932 a mao-1960 | A 7, B 7, C 8, D 7 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -93,7 +93,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 17 | Flexor na zona 1: quando cabe a reinserção ou sutura primária (coto distal) | número | cap. 6, p. 216, 219 | mao / Lesões dos tendões flexores | 03 | mao-1942 | publicada |
 | 18 | Escafoide: ordem de frequência por região | fato | cap. 16, p. 677 a 680 | mao / Fraturas do escafoide e do carpo | 04 | mao-1946 | publicada |
 | 19 | Pseudobotoeira: estruturas contraídas na flexão da IFP | mecanismo | cap. 5, p. 198 a 201; cap. 10, p. 388, 389 | mao / Lesões ligamentares dos dedos | 02 | mao-1937 | publicada |
-| 20 | Rádio distal consolidado: de onde vêm as queixas residuais | fato | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
+| 20 | Rádio distal consolidado: de onde vêm as queixas residuais | fato | cap. 15, p. 604, 608, 646 | mao / Fratura do rádio distal | 06 | mao-1956 | publicada |
 | 21 | Botoeira crônica: estágio com contratura fixa e da banda lateral | classificação | cap. 5 (arquivo "4- T. extensor"), p. 199 a 202 | mao / Lesões dos tendões extensores | 02 | mao-1938 | publicada |
 | 22 | Escafoide: fator que aumenta a pseudoartrose | fato | cap. 16, p. 678 a 682 | mao / Fraturas do escafoide e do carpo | 04 | mao-1947 | publicada |
 | 23 | Polidactilia central: dedo mais acometido | fato | cap. 36 | mao / Sindactilia e polidactilia | 14 | | a fazer |
@@ -103,7 +103,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 27 | Mão torta ulnar: associação mais comum | fato | cap. 38 | mao / Deficiências longitudinais e mão torta | 16 | | a fazer |
 | 28 | Carcinoma espinocelular: lesão precursora | fato | cap. 58 | mao / Tumores da mão | 17 | | a fazer |
 | 29 | Tríade terrível: acesso para o coronoide | técnica | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 | | a fazer |
-| 30 | FERNANDEZ (rádio distal): mecanismo e fratura correspondente | classificação | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
+| 30 | FERNANDEZ (rádio distal): mecanismo e fratura correspondente | classificação | cap. 15, p. 607, 608 | mao / Fratura do rádio distal | 06 | mao-1957 | publicada |
 | 31 | Plexo braquial: sinal de lesão pós-ganglionar | raciocínio | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 12 | | a fazer |
 | 32 | Mão em espelho (dimelia ulnar): características | afirmativas | cap. 38 | mao / Outras malformações congênitas | 16 | | a fazer |
 | 33 | Macrodactilia: diagnóstico, associação e tratamento | afirmativas | cap. 36 | mao / Outras malformações congênitas | 14 | | a fazer |
@@ -154,12 +154,12 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 78 | Tenotomia de FOWLER: estrutura que precisa estar íntegra | epônimo | cap. 5, p. 195 a 198 | mao / Lesões dos tendões extensores | 02 | mao-1940 | publicada (o original tinha duas respostas: o tendão terminal também precisa estar em continuidade; reescrita pergunta o que evita a botoeira) |
 | 79 | Adulto: fraturas mais associadas à síndrome compartimental do membro superior | fato | cap. 51 | mao / Outros temas da mão | 17 | | a fazer |
 | 80 | Plexo braquial: quando fazer o eletrodiagnóstico | número | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 12 | | a fazer |
-| 81 | Artroscopia: o que se vê pelo portal 3-4 | anatomia | cap. 17 | mao / Artrose do punho e artroscopia | 06 | | a fazer |
+| 81 | Artroscopia: o que se vê pelo portal 3-4 | anatomia | cap. 17, p. 765 | mao / Artrose do punho e artroscopia | 06 | mao-1960 | publicada (pelo 3-4 veem-se vários ligamentos; reescrita pela primeira estrutura vista, o Testut) |
 | 82 | Dissociação SL aguda (ANDERSSON): padrão mais comum | classificação | cap. 13, p. 492, 514 | mao / Instabilidade do carpo | 05 | mao-1954 | publicada |
 | 83 | BURKHALTER: transferência precoce na paralisia radial | epônimo | cap. 31 | mao / Transferências tendinosas e paralisias | 11 | | a fazer |
-| 84 | ARUD crônica após consolidação viciosa | afirmativas | cap. 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 | | a fazer |
+| 84 | ARUD crônica após consolidação viciosa | afirmativas | cap. 14, p. 577, 578 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-1959 | publicada (divergência: a correção marca a discrepância do antebraço; o Green sustenta literalmente o desvio coronal, que ficou como resposta) |
 | 85 | DCSS: de qual ligamento se origina | anatomia | cap. 13, p. 491 a 493, 512 a 514 | mao / Instabilidade do carpo | 05 | mao-1955 | publicada |
-| 86 | Ângulo da gota de lágrima: o que representa e o ligamento inserido | par | cap. 15 | mao / Fratura do rádio distal | 06 | | a fazer |
+| 86 | Ângulo da gota de lágrima: o que representa e o ligamento inserido | par | cap. 15, p. 604; cap. 13, p. 491 | mao / Fratura do rádio distal | 06 | mao-1958 | publicada |
 | 87 | Reabilitação do flexor: início do fortalecimento isolado | número | cap. 6, p. 225 a 227 | mao / Lesões dos tendões flexores | 03 | mao-1943 | publicada |
 | 88 | Biomecânica da fratura do escafoide e do perilunar | afirmativas | cap. 16, p. 678 | mao / Fraturas do escafoide e do carpo | 04 | mao-1949 | publicada |
 | 89 | Falange proximal: desvios aceitáveis no tratamento conservador | número | cap. 7 (p. 299 e 304 não trazem os graus) | mao / Fraturas dos metacarpos e falanges | 01 | | pendente: sem fonte (11 e 21 graus não estão no Green nem nos outros livros locais; o original troca coronal por perfil) |
