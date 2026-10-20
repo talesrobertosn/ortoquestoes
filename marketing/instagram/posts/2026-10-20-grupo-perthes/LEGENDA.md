@@ -13,7 +13,7 @@ Os três vão **sem figurinha** (stories nunca levam figurinha de link).
 
 ## Conferência
 
-- `pediatria-0287` (TARO 2024). Enunciado e alternativas iguais ao acervo (a enquete repete as quatro alternativas com as letras); gabarito A, Legg-Calvé-Perthes.
-- Pistas e distratores do comentário do acervo: ressonância com a epífise femoral direita de sinal alterado e achatada, unilateral, criança de 8 anos; displasia epifisária múltipla é bilateral e simétrica; epifisiólise é do adolescente; osteomielite tem febre e acomete a metáfise. A falta de febre na conversa é ilustrativa (o enunciado não fala de febre).
+- `pediatria-0287` (TARO 2024). Enunciado e alternativas iguais ao acervo (a enquete repete as quatro alternativas com as letras, no texto exato do acervo); a conversa não acrescenta dado clínico que o enunciado não tem; gabarito A, Legg-Calvé-Perthes.
+- Pistas e distratores do comentário do acervo: ressonância com a epífise femoral direita de sinal alterado e achatada, unilateral, criança de 8 anos; displasia epifisária múltipla é bilateral e simétrica; epifisiólise é do adolescente; osteomielite tem febre e acomete a metáfise.
 - Imagem real da questão (Herring, Tachdjian's Pediatric Orthopaedics), sem marcação nova.
 - Conversa e nomes fictícios (Lucas R1, Bia R2, Rafa R3), com "Conversa ilustrativa · nomes fictícios" na faixa; sem nome nem logotipo de aplicativo; sem emoji e sem preço.
