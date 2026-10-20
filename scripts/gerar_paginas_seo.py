@@ -284,6 +284,8 @@ def origem_da_questao(questao: dict) -> str:
     """Prova e ano; nos simulados, deixa claro que é no padrão da prova."""
     origem = " ".join(filter(None, [questao.get("prova"), str(questao.get("ano") or "")])).strip()
     if questao.get("simulado"):
+        if questao.get("prova") and questao.get("ano"):
+            return f"OrtoQuestões Simulados, inspirada {'na prova da' if questao['prova'] == 'SBCM' else 'no'} {origem}"
         return f"OrtoQuestões Simulados, padrão {origem}" if origem else "OrtoQuestões Simulados"
     return origem
 

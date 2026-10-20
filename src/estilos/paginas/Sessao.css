@@ -696,3 +696,37 @@ html.oq-sessao .sx-barra { top: var(--oq-cabecalho, 56px); }
   .barra-sessao .sx-ajustes { min-width: 38px; padding-inline: 0.55rem; justify-content: center; }
   .sx-ajustes__rotulo { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 }
+
+/* Dica de troca de questão (19/10/2026): aviso esmaecido no meio da tela, só ao criar a sessão.
+   Computador: as setas do teclado. Celular: arrastar para o lado. Some em 5 s ou ao tocar. */
+.sx-dica-popup {
+  position: fixed; left: 50%; top: 50%; z-index: var(--z-flutuante, 40);
+  display: grid; justify-items: center; gap: 0.7rem; width: max-content; max-width: min(22rem, calc(100vw - 3rem));
+  padding: 1.25rem 1.6rem 1.15rem; border: 0; border-radius: 22px; cursor: pointer;
+  background: rgba(18, 26, 24, 0.72); color: #fff; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  font: 650 1rem/1.35 var(--fonte-texto); text-align: center;
+  transform: translate(-50%, -50%);
+  animation: sx-dica-popup 5s ease both;
+}
+.sx-dica-popup:focus-visible { outline: 2px solid var(--px-ouro, #f4cf7c); outline-offset: 3px; }
+.sx-dica-popup__teclas { display: inline-flex; gap: 0.5rem; }
+.sx-dica-popup__teclas kbd {
+  display: inline-grid; place-items: center; min-width: 2.6rem; height: 2.6rem; padding: 0; border: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom-width: 3px; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: #fff; font: 700 1.25rem var(--fonte-texto);
+}
+.sx-dica-popup__gesto { display: inline-flex; align-items: center; gap: 0.6rem; opacity: 0.95; }
+.sx-dica-popup__dedo { width: 1.9rem; height: 1.9rem; border-radius: 999px; background: rgba(255, 255, 255, 0.85); box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.18); }
+.sx-dica-popup__texto { max-width: 16rem; }
+@keyframes sx-dica-popup {
+  0% { opacity: 0; transform: translate(-50%, calc(-50% + 8px)); }
+  8%, 88% { opacity: 1; transform: translate(-50%, -50%); }
+  100% { opacity: 0; transform: translate(-50%, -50%); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .sx-dica-popup__dedo { animation: sx-dica-dedo 1.4s ease-in-out 0.4s 3; }
+  .sx-dica-popup__teclas kbd:last-child { animation: sx-dica-tecla 1.4s ease-in-out 0.4s 3; }
+}
+@keyframes sx-dica-dedo { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-14px); } 65% { transform: translateX(14px); } }
+@keyframes sx-dica-tecla { 0%, 100% { transform: none; } 40% { transform: translateY(2px); border-bottom-width: 1px; } }
+@media (prefers-reduced-motion: reduce) { .sx-dica-popup { animation: none; } }

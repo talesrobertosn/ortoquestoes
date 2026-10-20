@@ -3335,3 +3335,348 @@ comentário de cerca de 4,45 mil caracteres, cada comentário fechado com "Por q
   deformidade plástica, refratura, haste e sinostose. A gêmea do galho verde de ápice dorsal foi trocada
   pelo toro ao reler o registro, porque `pediatria-0960` já cobria o mesmo fato na diáfise. Lição: os dois
   resumos usam a mesma linha `subtemas:`, e as questões reais do galho verde ficam citadas nos dois.
+
+## Avaliação do cotovelo da criança (Rockwood and Wilkins 9ª ed., cap. 12, 19/10/2026)
+
+**Recorte.** Questões de ossificação do cotovelo, linhas e ângulos radiográficos, sinal do coxim gorduroso,
+irrigação do úmero distal e diagnóstico do cotovelo da criança, em Ortopedia pediátrica (subtemas "Ombro e
+cotovelo da criança", "Ossificação e crescimento" e as de cotovelo em "Côndilo lateral, epicôndilo medial e
+rádio proximal na criança") e nos outros temas. Tratamento das supracondilianas, luxação, côndilo lateral e
+fise distal ficaram com os capítulos 13 a 17.
+
+**O que a banca cobra.**
+- **Centros de ossificação** é o bloco carimbado: último a se fundir = epicôndilo medial (TARO 2008 `0839`,
+  TARO 2013 `0682`, TARO 2019 `0648`, quase o mesmo texto); primeiro a aparecer = capítulo (TECOC/SBCOC sem
+  ano `0378`); núcleos presentes aos sete anos (TARO 2012 `0668`: epicôndilo medial, cabeça do rádio e
+  capítulo); SAUVEGRAIN no cotovelo, mais confiável no adolescente (TEOT 2025 `0332`, fora do capítulo).
+- **Linhas e ângulos:** TARO 2007 `0738` (sem gabarito; a bibliografia sustenta C, úmero-ulnar = carregamento;
+  as falsas trocam a linha do BAUMANN pela superfície articular, a do metáfiso-diafisário pela fise e põem a
+  linha umeral anterior na porção anterior do capítulo); TEPOP 2024 `0956` (linha umeral anterior e BAUMANN
+  para avaliar a supracondiliana); incidência radiocapitelar (TEPOP 2024 `0941`, fora do capítulo).
+- **Diagnóstico no lactente:** TARO 2025 `0525` (12 meses, sem história de trauma, fratura fisária do úmero
+  distal contra pronação dolorosa, luxação e artrite séptica).
+- **Irrigação:** dissecção posterolateral e osteonecrose no côndilo lateral (TARO 2020 `0719`, sem gabarito);
+  deformidade da osteonecrose da tróclea (TEOT 2022 `trauma-0191`).
+- **Alinhamento e tipo de fratura:** TARO 2026 `0521`, gabarito "ângulo de carregamento mais valgo" para o
+  côndilo lateral. **Divergência:** o capítulo 12 da 9ª ed. diz o contrário (alinhamento em varo associa-se mais
+  à fratura do côndilo lateral; valgo, à do colo do rádio). Vai como `alerta:` no resumo.
+
+**Forma.** Enunciado curto que termina em palavra ("é o", "são"); alternativas de uma a três palavras (nome do
+centro) ou trios de centros; nenhuma figura nas de ossificação; caso clínico só no TARO 2025, com imagem.
+Gabarito oficial concentrado em D nas de fusão (o epicôndilo medial quase sempre como última opção).
+
+**Lacunas com cara de prova.** Coxim posterior invisível por a fossa do olécrano ser profunda; falso-negativo
+na luxação reduzida (cápsula rota) e falso-positivo em extensão ou sangramento subperiosteal; coxim anterior
+mais sensível (valor preditivo negativo de 98%); SKAGGS 76% de fraturas ocultas; linha umeral anterior no terço
+anterior normal abaixo de 4 anos (HERMAN); BAUMANN alterado por inclinação do tubo acima de 20 graus; ângulo
+diáfise-côndilo de 40 graus; LHCA de 51 graus; TRASH em menores de 10 anos; teste de extensão (APPELBOAM,
+4% contra 43%); meninas ossificam cerca de 2 anos antes, exceto o capítulo; epicôndilo medial encarcerado
+confundido com a tróclea (figura 12-5); radiografia comparativa sem ganho (KISSOON); tomografia multidetector
+sem sedação.
+
+**Aproveitamento do capítulo 12** (Evaluation of the Injured Pediatric Elbow; Waters): `pediatria-0984` a
+`pediatria-0995`, 12 questões, sem figura, um caso clínico curto, gabarito A3/B3/C3/D3, mediana do comentário
+de 3,9 mil caracteres, todos com "Por que esta questão foi criada".
+- **Gêmeas:** segundo centro a aparecer (TECOC sem ano e TARO 2012); bloco epifisário comum sem o epicôndilo
+  medial (TARO 2008, 2013 e 2019); linha umeral anterior no terço médio e angulação posterior (TARO 2007, TEPOP
+  2024); definição do BAUMANN e úmero-ulnar como o mais preciso (TARO 2007); descolamento transfisário no
+  lactente com ultrassonografia (TARO 2025); entrada posterior dos vasos do côndilo lateral (TARO 2020).
+- **Lacunas:** diferença entre os sexos; coxim posterior; coxim ausente na luxação reduzida; epicôndilo medial
+  encarcerado em criança de 6 anos; teste de extensão.
+- **Fronteira:** a medida do desvio do epicôndilo medial (2 e 5 mm, oblíqua interna de EDMONDS) ficou para o
+  capítulo 15; o alinhamento em varo ou valgo e o tipo de fratura não virou simulado por divergir do TARO 2026.
+
+## Fratura em T (intercondiliana) do úmero distal na criança (engenharia reversa em 19/10/2026; Rockwood and Wilkins cap. 14)
+
+**Recorte.** Busca por "em T", "em Y", "intercondil", "bicondil", "supraintercondil", "transcondil",
+"TONIOLO", "THURSTON-HOLLAND", vias posteriores do cotovelo (tríceps, olécrano, BRYAN-MORREY,
+paratricipital) e "úmero distal" com criança ou adolescente, em todos os temas e nos comentários.
+
+**Frequência.** **Nenhuma questão oficial** sobre a fratura em T do úmero distal no esqueleto imaturo
+no acervo (os "em T" achados são do acetábulo, do planalto e de outros ossos). O tema não cai de forma
+direta; os fatos do capítulo que a banca já cobrou vêm por outras portas:
+- via de BRYAN-MORREY no úmero distal do adulto (TEOT 2021, `trauma-0211`, artroplastia total);
+- neuropatia ulnar como complicação neurológica mais comum da cirurgia do úmero distal (TEOT/TARO sem
+  ano, `trauma-0267`); ulnar na supracondiliana do adulto em flexão (TARO 2010, `trauma-0878`);
+  transposição do ulnar (TARO 2022, `trauma-1064`, sem gabarito oficial);
+- fragmento de THURSTON-HOLLAND = Salter-Harris II (CET-PR `pediatria-0909`, ENARE R4 2023
+  `pediatria-0921`), que no capítulo é o sinal das fraturas condilares e do descolamento fisário, não
+  da fratura em T;
+- AO do úmero distal (TARO 2008, `trauma-1132`, sem gabarito oficial); osteonecrose da tróclea tipo B
+  (TEOT 2022, `trauma-0191`), listada pelo capítulo entre as complicações;
+- desvio do fragmento na supracondiliana em extensão (TARO 2015, `pediatria-0600`), base da gêmea de
+  mecanismo.
+
+**Como o examinador pensa (projetado das questões vizinhas do cotovelo).** Pares cruzados de mecanismo
+com posição do fragmento, nervo com complicação, via com tipo de fratura; epônimos em caixa alta
+(GARTLAND, BRYAN-MORREY, THURSTON-HOLLAND); distrator tirado da supracondiliana em extensão, da
+fratura do côndilo lateral e do adulto.
+
+**Lacunas com cara de prova (do capítulo).** Média de 12,8 anos e lado não dominante 2,5 vezes;
+flexão como mecanismo mais comum, fragmentos anteriores; traço vertical até o ápice da tróclea como
+chave do diagnóstico; TC no adolescente e RM na criança pequena; TONIOLO e WILKINS (I mínimo, II
+desviada sem cominuição metafisária, III com cominuição); AO C1 e C2 no adolescente (C3 rara); divisão
+do tríceps para C1, BRYAN-MORREY para C2, osteotomia para C3; BRYAN-MORREY contraindicada na exposta;
+articulação primeiro com parafuso transverso no eixo de rotação; placas de reconstrução pélvica a 90
+graus; algoritmo aos 8 anos; não cirúrgico abaixo de 8 anos com periósteo íntegro (contraindicação
+relativa acima de 2 mm), gesso por pelo menos 3 semanas com radiografia semanal; redução aberta com
+desvio articular acima de 2 mm ou mais de dois fragmentos, eletiva em até 72 horas; rigidez esperada
+(contratura em extensão de cerca de 10 graus), 16% de lesão neurológica pré-operatória, sobretudo
+ulnar; parada do crescimento rara.
+
+**Destino.** Tema Ortopedia pediátrica, subtemas "Fraturas supracondilianas do úmero" e "Outras
+fraturas na criança" (o acervo não tem subtema próprio para a fratura em T). Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 14** (T-Condylar Fractures of the Distal Humerus; Vuillermin e Waters):
+`pediatria-1020` a `pediatria-1031`, 12 questões, sem figura e sem caso clínico, gabarito A3/B3/C3/D3,
+mediana do comentário de 4.340 caracteres, cada uma com "Por que esta questão foi criada".
+- **Gêmeas por projeção:** mecanismo e posição dos fragmentos (TARO 2015 e TARO 2010); THURSTON-HOLLAND
+  pelo lado do diagnóstico diferencial (CET-PR, ENARE R4 2023); BRYAN-MORREY pela escala de vias e pela
+  contraindicação (espelho do TEOT 2021); ulnar e rigidez (TEOT/TARO sem ano, TARO 2010); AO no
+  adolescente (TARO 2008).
+- **Lacunas:** idade e lado; TC × RM; TONIOLO e WILKINS; articulação antes das colunas; algoritmo aos 8
+  anos; placas de reconstrução a 90 graus.
+- **Fronteira:** capítulos 12, 13 e 15 a 17 foram feitos em paralelo (avaliação geral, supracondiliana,
+  luxação e epicôndilo medial, côndilo lateral, fise distal e côndilo medial). O coxim gorduroso e o
+  THURSTON-HOLLAND do descolamento ficaram com eles; aqui só entram como diferencial da fratura em T.
+  Lição: quando o tema não tem nenhuma questão oficial, o motivo de cada simulado vem da projeção do
+  fato carimbado do cotovelo vizinho ou de um número que o capítulo destaca, e isso vai escrito no
+  "Por que esta questão foi criada".
+
+## Fratura supracondiliana do úmero na criança (engenharia reversa em 19/10/2026; Rockwood and Wilkins cap. 13)
+
+**Recorte.** `mapear_banca.py --regex 'supracond|gartland|baumann|c[úu]bito varo' --subtema 'Fraturas supracondilianas do úmero' --tema pediatria`
+deu 20 oficiais de TEOT e TARO (2007 a 2026, cerca de 1 por ano, 3 em 2021). Lidos também, por busca
+de termos em todos os temas: TEPOP 2024 (`pediatria-0956`), SBOT-SP sem ano (`pediatria-0931` pucker,
+`0932` sem pulso com mediano), o caso R4 Coluna SES-DF 2022 de certo ou errado guardado em trauma
+(`trauma-1217` a `1222`), TARO 2020 `trauma-0012` (agitação na síndrome compartimental da criança) e
+TEOT 2022 `trauma-0191` (osteonecrose da tróclea). Nenhum simulado anterior do assunto.
+
+**Fatos carimbados (com prova e ano):**
+- **Nervo pela direção do desvio:** posteromedial lesa o radial (TARO 2014 `pediatria-0691`);
+  interósseo anterior na extensão com desvio posterolateral (TARO 2019 `0639`); desvio mais comum
+  posterior e medial (TARO 2015 `0600`); flexão lesa o ulnar (TARO 2008 `0751`, sem gabarito; adulto no
+  TARO 2010 `trauma-0878`).
+- **Periósteo e rotação na redução:** TARO 2010 `0722` (sem gabarito), TARO 2021 `0592` (lateral roto e
+  pronação no posteromedial), TEOT 2025 `0914` (flexão e pronação).
+- **Cúbito varo:** causa é consolidação viciosa (TARO 2011 `0652`; TARO 2025 `0532`, "desvio medial e
+  rotação"); deformidade combinada varo, extensão e rotação interna (TEOT 2021 `0843`); remodela só a
+  hiperextensão (TARO 2020 `0720`, sem gabarito).
+- **Vascular e compartimento:** primeira medida sem pulso é redução fechada e fixação (TARO 2007 `0731`
+  e TARO 2009 `0772`, sem gabarito); VOLKMANN mais comum com gesso em flexão (TARO 2012 `0666`);
+  compartimental mais frequente na extensão com lesão do mediano (TEOT 2021 `0850`); agitação (TARO
+  2020 `trauma-0012`); cotovelo flutuante GARTLAND III fechada, segundo SONI (TARO 2012 `0658`, autor
+  ausente no capítulo).
+- **Imagem:** linha umeral anterior e BAUMANN (TEPOP 2024 `0956`).
+
+**Tendência.** As provas antigas (2007 a 2012) perguntavam conduta vascular e VOLKMANN; desde 2014 a banca
+gira em nervo por desvio, periósteo e rotação e cúbito varo (três vezes). Classificação de GARTLAND
+aparece só como cenário (tipo III), nunca o tipo IV. Fios cruzados e laterais nunca caíram.
+
+**Forma.** "Na fratura supracondiliana do úmero (na criança)..."; enunciado de cerca de 108 caracteres,
+termina em palavra, alternativa de 22, sem imagem e sem caso clínico no TEOT e TARO; pares 2 por 2 em 6
+de 20 (extensão ou flexão com desvio; lado roto com rotação; varo ou valgo com flexão ou extensão e
+rotação). Gabarito concentrado em D (6 de 12 com resposta).
+
+**Como o examinador pensa.** "O mais comum", "a principal causa", "a primeira medida". Distratores do
+próprio tema: o nervo do desvio oposto, a rotação do desvio oposto, crescimento assimétrico e necrose
+no lugar da consolidação viciosa, arteriografia e exploração no lugar da redução.
+
+**Divergências e lacunas.**
+- TARO 2025 `pediatria-0532`: gabarito "consolidação viciosa por desvio medial e rotação da epífise". O
+  capítulo dá a consolidação viciosa como causa e diz que rotação e hiperextensão contribuem, mas que
+  o varo é o fator mais importante (o que favoreceria a alternativa C). Alerta no resumo; gabarito
+  preservado.
+- TARO 2026 `pediatria-0521` (ângulo de carregamento mais valgo favorece o côndilo lateral): fato do
+  capítulo 16, não do 13; o 13 só diz que o cúbito varo aumenta o risco de fratura do côndilo lateral.
+- TARO 2012 `0658` (SONI) e o cotovelo flutuante: o capítulo cita só Ring (6 de 10 com síndrome
+  compartimental) e Muchow (sem aumento do risco em 1.288).
+- Sem gabarito no acervo e sustentadas pelo capítulo: `0720` hiperextensão, `0722` pronação no
+  posteromedial, `0731` e `0772` redução e fixação, `0751` ulnar, `0932` exploração precoce (Mangat).
+- Lacunas com cara de prova (cobertas no lote): fio medial depois dos laterais com o cotovelo estendido
+  (4% contra 15%; 61% abaixo de 5 anos); três fios no tipo III e 13 mm ou um terço da largura; GARTLAND
+  IV; cominuição medial (De Boeck, 57%); acesso posterior e necrose da tróclea; gesso a 45 a 70 graus.
+
+**Destino.** Tema Ortopedia pediátrica, subtema "Fraturas supracondilianas do úmero" (a de
+remodelação também em "Ossificação e crescimento"). Entram no filtro TEOT/TARO.
+
+**Aproveitamento do capítulo 13** (Supracondylar Fractures of the Distal Humerus; Skaggs e Flynn;
+Rockwood and Wilkins' Fractures in Children, 9ª ed.): `pediatria-1032` a `pediatria-1045`, 14 questões
+sem figura e sem caso clínico, gabarito A3/B3/C4/D4, mediana do comentário de 4.288 caracteres, cada
+uma fechada com "Por que esta questão foi criada".
+- **Gêmeas:** posterolateral com mediano e artéria (espelho do TARO 2014 e 2019); periósteo íntegro e
+  supinação no posterolateral (espelho do TARO 2010, 2021 e TEOT 2025); BAUMANN e linha umeral anterior
+  no cúbito varo (TARO 2011, 2025, TEOT 2021, TEPOP 2024); hiperextensão e 20% (TARO 2020); mão rosada sem
+  pulso após a redução, 48 horas (TARO 2007, 2009, SES-DF 2022); mediano e artéria presa (SBOT-SP, TEOT
+  2021); três As (TARO 2020); gesso a 45 a 70 graus (TARO 2012, SES-DF 2022); fratura em flexão (TARO 2008).
+- **Lacunas:** fio medial; três fios e 13 mm; GARTLAND IV; acesso posterior; cominuição medial.
+- **Fronteira:** os capítulos 12 (avaliação e ossificação), 14 (fratura em T), 15 (luxação e epicôndilo
+  medial), 16 (côndilo lateral) e 17 (descolamento epifisário) foram feitos em paralelo; as linhas
+  radiográficas em si ficaram no 12, e aqui só aparecem aplicadas à supracondiliana.
+
+## Descolamento epifisário total do úmero distal, côndilo medial, epicôndilo lateral e osteonecrose da tróclea (Rockwood and Wilkins' Fractures in Children, 9ª ed., cap. 17, Glotzbecker)
+
+**Recorte.** Busca nos temas pediatria, ombro-cotovelo e trauma por descolamento ou separação epifisária
+do úmero distal, transfisária, lactente e pseudoparalisia, côndilo medial, epicôndilo lateral, tróclea,
+rabo de peixe, artrografia e ultrassonografia do cotovelo, mais a leitura dos subtemas "Maus-tratos",
+"Ombro e cotovelo da criança", "Luxações na criança" e "Côndilo lateral, epicôndilo medial e rádio
+proximal na criança". Não há subtema próprio para estas lesões no acervo.
+
+**O que a banca cobra (poucas questões, mas recentes).**
+- **Descolamento fisário do lactente:** TARO 2025 (`pediatria-0525`), caso de 12 meses com
+  pseudoparalisia, responsável que não sabe do trauma, radiografia; distratores pronação dolorosa,
+  luxação e artrite séptica.
+- **Osteonecrose da tróclea:** TEOT 2022 (`trauma-0191`), tipo B como sequela do côndilo medial ou do
+  descolamento fisário. Osteonecrose da tróclea e rabo de peixe também aparecem como distratores das
+  complicações do côndilo lateral e da supracondiliana (TEOT 2022 `pediatria-0699`, TEOT 2023 `0710`,
+  TARO 2025 `0532`, TARO 2011 `0652`, TARO 2009 `0768`).
+- **Fatos vizinhos usados nas gêmeas em espelho:** MILCH I do côndilo lateral = SALTER-HARRIS IV (TARO
+  2018 `0629`); evitar dissecção posterior no côndilo lateral (TARO 2011 `0655`; TARO 2020 `0719`, sem
+  gabarito); valgo como sequela da pseudartrose lateral (TARO 2006 `0832`, sem gabarito); músculo preso
+  ao fragmento lateral (TARO 2017 `0610`); epicôndilo medial com a luxação (TEOT 2021 `0846`, TARO 2022
+  `0572`, CET-PR `0906`); pronação na redução do posteromedial (TARO 2021 `0592`, TEOT 2025 `0914`).
+- **Maus-tratos:** fraturas de alta especificidade (TARO 2025 `0383`, TARO 2015 `0066`, TEPOP 2024
+  `0362`, TARO 2009 `0160`).
+- Nunca caíram: côndilo medial como lesão própria, KILFOYLE, DELEE, epicôndilo lateral como fratura.
+
+**Forma.** Frase incompleta curta ("Na fratura...", "No descolamento..."), pares 2 por 2 (direção com
+relação radiocapitelar, tipo fisário com deformidade), caso clínico só no lactente (TARO 2025).
+
+**Divergência.** TEOT 2023 (`pediatria-0710`, gabarito pseudartrose para a neuropatia ulnar tardia):
+o capítulo 17 também descreve neuropatia ulnar tardia em crianças com osteonecrose da tróclea; a
+alternativa B tem apoio no livro, embora a pseudartrose do côndilo lateral seja a causa clássica.
+
+**Aproveitamento do capítulo 17:** `pediatria-1008` a `pediatria-1019`, 12 questões, sem figura e sem
+caso clínico, gabarito A3/B3/C3/D3, mediana do comentário perto de 4,4 mil caracteres, todas com "Por que
+esta questão foi criada".
+- **Gêmeas:** rotação do fragmento medial pelos flexores (espelho do TARO 2017), maus-tratos e
+  inventário esquelético (TARO 2025), pronação e dois fios laterais (TARO 2021, TEOT 2025), cúbito varo e
+  superfície larga (TARO 2011 e 2025), coxim gorduroso contra epicôndilo medial (TEOT 2021, TARO 2022),
+  SALTER-HARRIS IV e varo na pseudartrose medial (TARO 2018 e 2006), dissecção posterior e nervo ulnar
+  (TARO 2011), tipo A da osteonecrose (TEOT 2022), lesão neurovascular rara por desvio posteromedial
+  (TARO 2014, 2019, TEOT 2021).
+- **Lacunas:** DELEE grupo C; diagnóstico tardio após 5 a 6 dias (tala e osteotomia depois);
+  epicôndilo lateral só operado se encarcerado.
+- **Fronteira com os capítulos feitos em paralelo:** o cap. 12 (`pediatria-0992`) já pergunta desvio
+  posteromedial e ultrassonografia, e o cap. 16 (`pediatria-1002`) a relação capítulo e rádio contra o
+  côndilo lateral; por isso os ids `1008` e `1011` tiveram o conteúdo trocado antes da publicação (rotação
+  do côndilo medial e lesão neurovascular rara). Lição: em capítulos vizinhos aplicados juntos, rodar
+  o registro de novo antes de aplicar e trocar o próprio conteúdo quando surgir gêmea.
+
+## Luxação do cotovelo, epicôndilo medial e pronação dolorosa na criança (engenharia reversa em 19/10/2026; Rockwood and Wilkins cap. 15)
+
+**Recorte.** Rockwood and Wilkins' Fractures in Children, 9ª ed., cap. 15 (Dislocations of the Elbow and Medial
+Epicondylar Humerus Fractures; Stans e Milbrandt), PDF enviado pelo Tales em 19/10/2026 (pp. 1 a 40). Questões oficiais
+de "Côndilo lateral, epicôndilo medial e rádio proximal na criança", "Luxações na criança" e "Ombro e cotovelo da
+criança" sobre luxação do cotovelo, epicôndilo medial, pronação dolorosa e luxação da cabeça do rádio, mais as de
+cotovelo do adulto que o capítulo cobre (sequência de O'DRISCOLL, PARVIN, pulso ausente). Fronteiras: avaliação geral e
+ossificação (cap. 12), supracondiliana (13), fratura em T (14), côndilo lateral (16), fise distal, côndilo medial e
+epicôndilo lateral (17); colo do rádio e MONTEGGIA não são deste capítulo (MONTEGGIA é o cap. 11).
+
+**Frequência.** O tema cai quase todo ano no TARO e no TEOT desde 2006, em dois blocos: luxação do cotovelo da criança
+(fratura associada, nervo, complicação) e pronação dolorosa; a luxação congênita da cabeça do rádio cai à parte (direção
+posterior, bilateralidade), mas o capítulo só a menciona como diferencial.
+
+**Fatos carimbados.**
+- **Fratura associada à luxação = epicôndilo medial:** TARO 2022 (`pediatria-0572`), TEOT 2021 com imagem (`0846`),
+  CET-PR (`0906`).
+- **Nervos:** ulnar o mais lesado (TARO 2021 `0586`); radial raro e regride (TARO 2023 `0547`).
+- **Complicação tardia = perda do arco de movimento** (TEPOP 2024 `0957`).
+- **Encarceramento do epicôndilo = cirurgia** (TEPOP 2024 `0943`); TARO 2006 `0817` (manobra como causa, sem gabarito).
+- **Último núcleo a fundir = epicôndilo medial** (TARO 2019 `0648`, TARO 2013 `0682`, TARO 2008 `0839`); núcleos aos 7
+  anos (TARO 2012 `0668`).
+- **Pronação dolorosa:** ligamento anular (TARO 2011 `0649`), deslocamento proximal (TARO 2008 `0754`, sem gabarito),
+  1 a 2 anos na recorrente (TARO 2014 `0690`), 6 a 8 anos (TARO 2006 `0812`, falso pelo livro), pronação e extensão
+  (CET-PR `0908`), cotovelo e antebraço no exame (TEOT 2025 `0911`), diferencial com descolamento fisário em imagem
+  (TARO 2025 `0525`).
+- **Adulto que o capítulo sustenta:** última estrutura na sequência de O'DRISCOLL (TARO 2012 `ombro-cotovelo-0332`,
+  TARO 2007 `0473`), PARVIN (sem ano `trauma-0959`), pulso ausente não contraindica a redução (TARO 2006
+  `ombro-cotovelo-0508`).
+
+**Forma.** Enunciado curto (mediana de 100 caracteres), alternativa de 20, "Na luxação...", "Na pronação...",
+"O último...", quase sem par 2 por 2; gabarito do recorte puxado para C e D.
+
+**Divergências (para `alerta:` do resumo).**
+- `pediatria-0911` (TEOT 2025, "discreta flexão e pronação"): o capítulo descreve o membro junto ao corpo com o
+  antebraço pronado e, nos passos-chave, o cotovelo "mantido em extensão"; a flexão discreta não está no texto.
+- `trauma-0959` (sem ano, PARVIN em decúbito ventral e flexão): o capítulo diz que a tração pode ser feita em supino ou
+  em prono e desenha a de PARVIN em supino (figura 15-20); a flexão está de acordo.
+- Fora do capítulo: direção e tamanho da cabeça na luxação congênita do rádio (TARO 2012, 2016, 2017, 2019, 2024, TEOT
+  2022), reconstrução do anular na luxação aguda da cabeça (TARO 2006), pronação limitada na luxação inveterada (TARO
+  2009), PANNER no cotovelo da liga infantil (TARO 2022).
+
+**Lacunas com cara de prova.** Associação com luxação (cerca de 50%) e pico de 11 a 12 anos; indicação absoluta e
+relativas; ROBERTS (valgo, supinação, extensão do punho e dedos; 24 h; cerca de 40%); parafuso unicortical e nervo
+radial; mediano, tipos de FOURRIER e sinal de MATEV; pusher até 9 anos e PARVIN a partir de 10; hiperextensão proibida
+(LOOMIS, cinco vezes); imobilização acima de 2 semanas e perda de extensão (MURPHY); pulso ausente: reduzir e reavaliar;
+pronação dolorosa: 2 a 3 anos, meninas, esquerdo, borda estreita e arredondada em pronação, hiperpronação primeiro
+(98% contra 86%), ultrassom (3 mm de diferença); luxação divergente e translocação radioulnar; congênita: cabeça em
+cúpula e radiografia contralateral idêntica.
+
+**Aproveitamento do capítulo 15:** `pediatria-1046` a `pediatria-1056`, 11 questões, sem figura, um caso curto
+(pulso ausente), gabarito A3/B2/C3/D3, mediana do comentário de cerca de 4,8 mil caracteres, cada um fechado com "Por
+que esta questão foi criada". Lição: os agentes dos caps. 12 e 17 fizeram em paralelo o epicôndilo encarcerado
+confundido com a tróclea (`pediatria-0994`), o coxim ausente na luxação reduzida (`0991`) e o côndilo medial contra o
+epicôndilo (`1015`); as versões deste capítulo sobre esses pontos foram trocadas antes de aplicar (pulso ausente e
+técnica por idade), para não criar gêmeas internas.
+
+## Fratura do côndilo lateral e do capítulo na criança (Rockwood and Wilkins, 9ª ed., cap. 16)
+
+Mapeado em 19/10/2026 a partir do capítulo 16 (Lateral Condylar and Capitellar Fractures of the Distal Humerus;
+Kelly e Sawyer), PDFs enviados pelo Tales em 19/10/2026 (`7d1ff148-222-76-130.pdf`, pp. 41 a 55, e
+`21a99eda-222-131-162.pdf`, pp. 1 a 8; livro pp. 957 a 1000).
+
+**Recorte.** Busca por côndilo lateral, condilar, capítulo/capitelo, MILCH, JAKOB, WEISS, SONG, FLYNN, HAHN-STEINTHAL,
+KOCHER-LORENZ, rabo de peixe, esporão, ulnar tardio e oblíqua interna em todos os temas, mais a leitura do subtema
+"Côndilo lateral, epicôndilo medial e rádio proximal na criança" (que mistura rádio proximal, MONTEGGIA, pronação
+dolorosa e luxação, fora deste capítulo). Ficaram as questões do côndilo lateral (TARO 2006 a 2026, TEOT 2022 e 2023,
+TEPOP 2024, SBOT-SP) e as do capítulo do úmero (TARO 2007, 2008, 2012 e 2026, no tema Trauma).
+
+**Fatos carimbados.**
+- **Fragmento:** extensor radial longo do carpo preso ao fragmento (TARO 2017 `pediatria-0610`); mecanismo pull-off
+  contra push-off (SBOT-SP `0933`, sem gabarito).
+- **Classificação:** MILCH I = SALTER-HARRIS IV (TARO 2018 `0629`); JAKOB III na imagem (TEOT 2022 `0697`); SONG 4
+  (TEPOP 2024 `0942`).
+- **Tratamento e técnica:** redução aberta no JAKOB III (TEOT 2022 `0698`); evitar dissecção posterior (TARO 2011
+  `0655`); dissecção posterolateral e osteonecrose (TARO 2020 `0719`, sem gabarito); fratura de 3 semanas desviada
+  vai para redução aberta (TARO 2006 `0816`, sem gabarito).
+- **Complicações:** esporão lateral na imagem (TEOT 2022 `0699`); deformidade mais frequente na consolidação viciosa
+  (TARO 2009 `0768`, sem gabarito); pseudartrose ligada ao ulnar tardio (TEOT 2023 `0710`); cúbito valgo progressivo
+  como sequela da pseudartrose (TARO 2006 `0832`, sem gabarito); retardo de consolidação pelo líquido sinovial (TARO
+  2007 `0734`, sem gabarito); FLYNN e o grande fragmento metafisário (TARO 2013 `0671`).
+- **Epidemiologia:** obesidade ou ângulo de carregamento contra supracondiliana (TARO 2026 `0521`); diagnóstico pela
+  imagem na menina de 6 anos (TEOT 2022 `0696`).
+- **Capítulo do úmero:** complicação mais frequente, necrose (TARO 2012 `trauma-0812`; TARO 2007 `trauma-1122`, sem
+  gabarito); AO (TARO 2008 `trauma-1132`); BRYAN-MORREY com HAHN-STEINTHAL e KOCHER-LORENZ (TARO 2026 `trauma-0987`).
+
+**Forma.** Enunciado curto ("Na fratura do côndilo lateral na criança, ..."), alternativa de uma a quatro palavras,
+números em ordem crescente; série de quatro questões sobre a mesma imagem no TEOT 2022 (diagnóstico, JAKOB,
+tratamento, complicação). Pouco par 2 por 2. Epônimos em caixa alta (MILCH, SALTER-HARRIS, JAKOB, FLYNN, SONG).
+
+**Divergências (para `alerta:` do resumo).**
+- `pediatria-0521` (TARO 2026, gabarito "ângulo de carregamento mais valgo"): o capítulo cita obesidade e ângulo de
+  carregamento **varo** maior; pelo livro, a resposta seria a obesidade (também entre as alternativas). O comentário
+  atual da questão defende o valgo e poderia ganhar um `alerta`.
+- `pediatria-0768` (TARO 2009, sem gabarito): o capítulo dá o varo como o mais frequente na fratura consolidada (até
+  40%), mas cita o valgo como resultado da má consolidação na seção específica.
+- Fora do capítulo: tipos A e B da necrose da tróclea (TEOT 2022 `trauma-0191`, capítulo 17), AO do capítulo (TARO
+  2008) e BRYAN-MORREY III (TARO 2026), que são do úmero distal do adulto.
+
+**Lacunas com cara de prova.** Oblíqua interna (desvio diferente do AP em 75%); WEISS (2 mm e dobradiça; II sempre
+abaixo de 4 mm, III com três vezes mais complicações); FINNBOGASON A, B e C; 40% sem desvio e 60% com pelo menos 2 mm;
+redução fechada em extensão, supinação e varo; percutânea contra aberta (13% contra 26% de complicações); fios fora da
+pele contra enterrados (protrusão até 40%); parafuso canulado; 20% do crescimento na fise distal; esporão em 75%;
+varo até 40%; dois tipos de rabo de peixe; pseudartrose com 12 semanas; ulnar tardio motor antes do sensitivo e
+transposição anterior subcutânea; FLYNN com desvio menor que 1 cm; TIEN com valgo de 20 graus; capítulo com 31% de
+lesão do rádio proximal e classificação de MURTHY.
+
+**Aproveitamento do capítulo 16:** `pediatria-0996` a `pediatria-1007`, 12 questões, sem figura e sem caso clínico,
+gabarito A3/B3/C3/D3, mediana do comentário de cerca de 4,2 mil caracteres, cada um fechado com "Por que esta questão
+foi criada". Gêmeas: extensores radiais no fragmento (TARO 2017), SONG estágio 2 (TEPOP 2024), fator associado ao
+côndilo lateral pelo livro (TARO 2026, com a divergência explicada), cúbito varo (TARO 2009), ulnar tardio (TEOT 2023 e
+TARO 2006), FLYNN pelo 1 cm (TARO 2013), HAHN-STEINTHAL (TARO 2026 e a necrose do TARO 2007 e 2012). Lacunas: WEISS,
+oblíqua interna, posição de redução fechada, deformação plástica da cortical lateral, fios enterrados.
+Lição: o agente do cap. 12 aplicou em paralelo os vasos do côndilo lateral (`pediatria-0993`) e o desvio posteromedial
+do descolamento fisário (`0992`); as versões deste capítulo sobre esses pontos (`0997` e `1002`) foram trocadas depois de
+aplicadas, no próprio id, pela deformação plástica da cortical lateral e pelos fios enterrados contra expostos.
+Destino: tema Ortopedia pediátrica, subtema "Côndilo lateral, epicôndilo medial e rádio proximal na criança".

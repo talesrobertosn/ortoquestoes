@@ -17,6 +17,7 @@ Este arquivo guarda o que aprendemos. Atualize a cada lote novo.
 |---|---|
 | `prova` | `"SIMÃO"` (aparece no topo da questão, ao lado de "OrtoQuestões Simulados") |
 | `simulado` | `true` |
+| `ano` | ano da prova espelhada (`ANO = 2024` no lote, desde 19/10/2026: aparece "Inspirada no SIMÃO 2024"); o SIMÃO 2026 recebeu `ano: 2026` em 20/10/2026 |
 | `area` | `"cirurgia-mao"`: entra no treino de Cirurgia da mão, não no de TEOT/TARO |
 | tema | `mao` na maioria; `ombro-cotovelo` para cotovelo (Mason, Monteggia, instabilidade, colateral medial) |
 | `origem.arquivo` | `SIMAO-2026-Questoes.docx`; `origem.pagina` = número da questão no SIMÃO |

@@ -9,6 +9,9 @@ __pycache__/
 # repositório aberto é decisão do responsável, não padrão do projeto.
 pdfs/*.pdf
 fixtures/*.pdf
+# Biblioteca local de livros, resumos enviados e provas originais (docs/mao/PROTOCOLO.md).
+/biblioteca-local/
+.oq/
 
 # Artefatos de compilação nunca voltam para a raiz do repositório: o site
 # construído colide com o index.html de código-fonte e quebra o build.

@@ -8,8 +8,9 @@
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const RAIZ = new URL('../../', import.meta.url).pathname
+const RAIZ = fileURLToPath(new URL('../../', import.meta.url))
 const ORIGEM = join(RAIZ, 'conteudo/biblioteca')
 const DESTINO = join(RAIZ, 'public/biblioteca')
 const conferir = process.argv.includes('--conferir')
@@ -131,7 +132,8 @@ function analisar(texto, arquivo) {
 
 const arquivos = (await readdir(ORIGEM)).filter((a) => a.endsWith('.md') && !a.startsWith('_')).sort()
 const capitulos = []
-for (const a of arquivos) capitulos.push(analisar(await readFile(join(ORIGEM, a), 'utf8'), a))
+// CRLF vira LF: no Windows o Git entrega os .md com CRLF, e o id de cada bloco não pode depender disso.
+for (const a of arquivos) capitulos.push(analisar((await readFile(join(ORIGEM, a), 'utf8')).replace(/\r\n/g, '\n'), a))
 const ids = capitulos.map((c) => c.capitulo.id)
 if (new Set(ids).size !== ids.length) erros.push('ids de capítulo repetidos')
 const gratis = capitulos.filter((c) => c.capitulo.acesso === 'gratis').length

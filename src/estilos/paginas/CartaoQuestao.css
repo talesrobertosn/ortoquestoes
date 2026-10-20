@@ -947,3 +947,17 @@
 .qz-ordem__botao { margin-left: auto; padding: 0.15rem 0.55rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie); color: var(--texto-2); font: inherit; cursor: pointer; transition: border-color var(--duracao-rapida) var(--curva), color var(--duracao-rapida) var(--curva); }
 .qz-ordem__botao:hover, .qz-ordem__botao:focus-visible { border-color: var(--verdete); color: var(--texto); }
 .qz-ordem-legenda { margin: 0.25rem 0 0.75rem; font-size: var(--meta); line-height: 1.45; color: var(--texto-2); }
+
+/* Largura cheia (19/10/2026, pedido do Tales): enunciado, alternativas, resposta e comentário
+   ocupam toda a largura do cartão, sem a coluna estreita que deixava o lado direito vazio. */
+.questao-impressa.qz-cartao .questao__enunciado,
+.pagina--foco .questao-impressa.qz-cartao .questao__enunciado,
+.qz-cartao .alternativas,
+.qz-cartao .alt-turma-resumo,
+.questao-impressa.qz-cartao .acao-responder,
+.qz-cartao .qz-resultado,
+.qz-cartao .resultado--neutro:not(.qz-resultado),
+.qz-cartao .qz-volta,
+.questao-impressa.qz-cartao .comentario,
+.qz-cartao .qz-extras.qz-faixa,
+.qz-cartao .qz-proxima { max-width: none; }

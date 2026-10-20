@@ -147,6 +147,7 @@ function CartaoQuestaoExibida({
   ordemExibida?: string | null
   avisoOrdem?: { embaralhada: boolean; alternar: () => void } | null
 }) {
+  const inspiracao = inspiracaoDe(questao)
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
   // inteiro a cada render (a cada segundo no simulado, por causa do cronômetro).
@@ -400,7 +401,7 @@ function CartaoQuestaoExibida({
         <div className="qz-topo">
           <div className="qz-topo__info">
             {numero && total ? <h1 className="qz-numero">Questão {numero}<small> de {total}</small></h1> : <h1 className="qz-numero">Questão</h1>}
-            {!modoProva && (questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {!modoProva && (questao.prova || questao.ano) && <span className="qz-origem">{inspiracao ?? [questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.simulado && <span className="qz-origem qz-origem--simulado" title={questao.prova && DESCRICAO_PROVA[questao.prova] ? `${ROTULO_SIMULADOS} no padrão do ${questao.prova}: ${DESCRICAO_PROVA[questao.prova]}` : undefined}>{ROTULO_SIMULADOS}</span>}
             {questao.gabaritoBibliografia && <span className="qz-origem" title="A banca não divulgou o gabarito desta prova. A resposta foi definida pelo Orto Questões a partir da bibliografia.">Gabarito não oficial</span>}
             {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}
@@ -462,7 +463,7 @@ function CartaoQuestaoExibida({
 
         {(etiquetasVisiveis || (!modoProva && (questao.prova || questao.ano))) && (
           <div className={'qz-etiquetas' + (etiquetasVisiveis ? '' : ' qz-etiquetas--so-origem')}>
-            {!modoProva && (questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {!modoProva && (questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{inspiracao ?? [questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.simulado && <span className="qz-chip qz-chip--origem qz-chip--simulado">{ROTULO_SIMULADOS}</span>}
             {etiquetasVisiveis && <>
               <span className="qz-chip qz-chip--tema">{questao.tema}</span>
@@ -473,7 +474,9 @@ function CartaoQuestaoExibida({
         )}
 
         {questao.simulado && questao.prova && DESCRICAO_PROVA[questao.prova] && (
-          <p className="meta qz-descricao-prova">{ROTULO_SIMULADOS} no padrão do <strong>{questao.prova}</strong>, o {DESCRICAO_PROVA[questao.prova]}.</p>
+          <p className="meta qz-descricao-prova">{inspiracao
+            ? <>{ROTULO_SIMULADOS} <strong>{inspiracao.charAt(0).toLowerCase() + inspiracao.slice(1)}</strong> ({DESCRICAO_PROVA[questao.prova]}): mesma pergunta e mesmo ano, reescrita pelo site.</>
+            : <>{ROTULO_SIMULADOS} no padrão do <strong>{questao.prova}</strong>, o {DESCRICAO_PROVA[questao.prova]}.</>}</p>
         )}
 
         <div className="questao__enunciado"><TextoEmLinha texto={questao.enunciado} /></div>
@@ -769,6 +772,11 @@ function CartaoQuestaoExibida({
  * montada com `new Date(ano, mês, dia)` de propósito: `new Date('2026-09-09')`
  * seria lida como UTC e, em fuso negativo, mostraria o dia anterior.
  */
+/** Simulado que espelha uma prova de um ano (SIMÃO, SBCM): o selo diz de qual prova e ano ele foi inspirado. */
+function inspiracaoDe(questao: Questao): string | null {
+  return questao.simulado && questao.prova && questao.ano ? `Inspirada ${questao.prova === 'SBCM' ? 'na prova da' : 'no'} ${questao.prova} ${questao.ano}` : null
+}
+
 function formatarData(iso?: string | null) {
   if (!iso) return null
   const partes = iso.split('-').map(Number)

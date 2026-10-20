@@ -23,6 +23,7 @@ const ESTILOS = {
   // Só stories (engenharia reversa dos Simulados): use "criar planta <slug>".
   planta: { nome: 'Planta de engenharia', slides: 0, story: 's1-engenharia, s2-questao e s3-resposta', figurinha: 'nenhuma (só a imagem)', soStories: true },
   // Só stories: não entra no sorteio do feed; use "criar cinema <slug>".
+  'conversa-de-grupo': { nome: 'Conversa do grupo R+', slides: 6, story: 's1-cartaz do estilo cinema ou o post compartilhado', figurinha: 'nenhuma (só a imagem)' },
   cinema: { nome: 'Cartaz de cinema', slides: 0, story: 's1-cartaz e s2-creditos', figurinha: 'nenhuma (só a imagem)', proprio: true, soStories: true },
 }
 const arquivoHistorico = join(pasta, 'historico.json')

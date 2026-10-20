@@ -15,6 +15,10 @@ Ligar o resumo a todas as questões do tema (convite "Leia o resumo" no fim de c
 Consultar o acervo atual, usar os scripts de aplicação/validação, preservar o
 gabarito e salvar em branches e PRs revisáveis conforme o pedido.
 
+**Provas de Cirurgia da Mão (SIMÃO e título da SBCM) com os livros locais (Green):** siga [docs/mao/PROTOCOLO.md](docs/mao/PROTOCOLO.md)
+e o andamento em [docs/mao/PROGRESSO.md](docs/mao/PROGRESSO.md). Comando para colar na outra conta:
+[docs/prompts/claude-mao-provas.md](docs/prompts/claude-mao-provas.md). Livros, resumos enviados e provas originais nunca vão para o git. Só SBCM e SIMÃO viram OrtoQuestões Simulados; as outras bancas (ABC, Unesp etc.) entram com o nome real, conferindo antes se já estão no site.
+
 ## Arsenal de marketing aprovado
 Para posts, leia [docs/marketing/orientacoes.md](docs/marketing/orientacoes.md). Tales aprovou em 11/10/2026 os modelos **Cofre de duas chaves** (feed) e **Mecânica fina / Relojoaria anatômica** (stories, versão final de mão). Veja [o guia de reutilização](marketing/instagram/estilos/COFRE-E-MECANICA-FINA.md): quando escolher cada um, roteiro, acabamento, HTMLs executáveis e revisão. São opções criativas do arsenal; adapte à questão, sem repetir mecanicamente ou substituir os outros estilos.
 
@@ -38,3 +42,5 @@ Em 19/10/2026, Tales aprovou a **Caderneta de topografia** (feed) e o **Bingo da
 Foco maior em imagens (Tales, 19/10/2026): prefira **objetos pixel animados** (como o livro da Biblioteca embaixo da questão, que flutua, entreabre e abre ao clicar) a caixas só de texto. Regras e referência em [docs/design/OBJETOS-ANIMADOS.md](docs/design/OBJETOS-ANIMADOS.md).
 
 Regra do Tales (19/10/2026): a tela começa **sempre limpa**, só com o essencial. O resto (mapa, Pomodoro, placar, atalhos, dicas) fica como **opção visível** para a pessoa adicionar, como o botão "Personalizar" da sessão; nunca ligado de entrada.
+
+Em 19/10/2026, Tales aprovou para o arsenal a **Conversa do grupo R+** (feed, 6 slides: print de conversa dos residentes no plantão, com enquete, zoom e prévia de link do Cronograma). Veja [o guia](marketing/instagram/estilos/CONVERSA-DO-GRUPO.md).
