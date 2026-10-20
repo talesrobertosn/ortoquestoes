@@ -68,3 +68,7 @@ Para registrar uma pendência, escrever `pendencia` no item correspondente de `c
 ## Quando o Tales enviar o capítulo do livro
 
 Tratar como uma nova fase de fonte primária. Conferir edição e página impressa, aprofundar pontos não cobertos pelo resumo e resolver pendências. Não apagar a proveniência anterior: registrar a passagem de resumo para livro e manter o histórico em lote/commit. Novos resumos entram automaticamente no inventário na próxima atualização. O trabalho só está integralmente concluído quando não houver candidatos sem tratamento; pendências devem permanecer identificadas e não podem ser chamadas de comentários concluídos.
+
+## Continuidade automática (20/10/2026)
+
+Depois do pedido explícito de continuar sem depender de novas mensagens, foi ativada uma tarefa de retomada por hora (maior frequência da ferramenta). Cada execução deve consultar o remoto e os PRs abertos antes de selecionar IDs, executar a revisão e a publicação, e continuar de um checkpoint durável. Não é apenas um lembrete. Não encerrar depois de um lote se houver capacidade de seguir; não confundir revisão incompleta com conclusão integral. Enquanto houver só pendências reais de fonte, verificar material novo sem commits nem notificações repetitivas. O estado efetivo e as eventuais falhas de cada execução precisam ser conferidos; a existência da tarefa não substitui o catálogo nem comprova publicação.

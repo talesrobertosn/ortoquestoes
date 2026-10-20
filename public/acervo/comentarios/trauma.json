@@ -137,15 +137,67 @@
   "conferido": false
  },
  "trauma-0014": {
+  "conceito": "**Na Bennett, a diáfise e a maior parte da base subluxam; o fragmento volar-ulnar fica preso ao trapézio.** A fratura divide a superfície articular da base do primeiro metacarpo. O ligamento oblíquo anterior mantém o pequeno fragmento volar-ulnar ligado ao trapézio, enquanto o componente maior perde esse apoio e se desloca.\n\nO **abdutor longo do polegar**, inserido na base do metacarpo, é a principal força deformante e puxa o componente maior para proximal. O **adutor do polegar** contribui para adução e supinação. O desvio resultante da base unida à diáfise é **radial, dorsal e proximal**. A posição do fragmento retido, volar e ulnar, não descreve a direção da subluxação do componente maior.\n\nBennett é uma fratura articular parcial: parte da superfície continua ligada à diáfise. A Rolando, no padrão clássico em Y ou T, é uma fratura articular completa e cominutiva. Reconhecer qual parte da base está sendo descrita evita decorar direções sem entender o mecanismo.\n\nO Rockwood & Green, 10ª edição, capítulo 45, apresenta essas forças. **Leia “Fratura de Bennett: quem fica e quem foge”**, na seção da base do polegar do resumo da Biblioteca.",
+  "correta": "O gabarito D associa o componente maior dirigido para **dorsal e radial**, com encurtamento e **supinação**. O resumo explica migração proximal pelo abdutor longo e supinação com adução pelo adutor. A redação usa “ápice” de modo pouco preciso; é mais seguro entender aqui a direção do componente móvel, distinguindo-a do fragmento volar-ulnar retido. Assim se preserva a resposta sem confundir vértice e deslocamento.",
   "incorretas": {
-   "A": "O desvio é dorsal, e a diáfise roda em supinação.",
-   "B": "A supinação está certa, mas o desvio do ápice é dorsal, não volar.",
-   "C": "O desvio dorsal-radial está certo, mas o eixo roda em supinação."
+   "A": "A alternativa combina direção volar com pronação, enquanto o componente móvel da Bennett subluxa para dorsal e radial e fica supinado. A pronação é usada para corrigir a rotação, não para descrevê-la. A posição volar-ulnar pertence ao fragmento pequeno retido. Misturar redução, vértice e fragmento deslocado produz essa combinação incorreta.",
+   "B": "A supinação e o encurtamento pertencem à deformidade, mas a expressão volar-radial não corresponde à direção de subluxação do componente maior descrita no resumo. Ele migra proximalmente, dorsalmente e radialmente. A pequena parte volar-ulnar continua presa pelo ligamento. A alternativa acerta a rotação e troca o referencial espacial.",
+   "C": "As direções dorsal e radial do componente móvel estão corretas, mas sua rotação é de **supinação**, não pronação. A pronação desfaz o desvio durante a redução. É preciso distinguir a postura patológica da manobra usada para corrigi-la. Uma descrição espacial parcialmente correta não compensa a inversão rotacional."
   },
-  "conceito": "A **fratura de Bennett** é a fratura-luxação **intra-articular** da base do **primeiro metacarpo**, em duas partes.\n\n**O fragmento pequeno**: a ponta **volar-ulnar** da base fica no lugar, presa ao trapézio pelo **ligamento oblíquo anterior** (o ligamento \"bico\").\n\n**O que desvia é a diáfise**, puxada por três forças:\n\n**abdutor longo do polegar**: inserido na base, puxa a diáfise para **dorsal e radial** e a **encurta**;\n\n**adutor do polegar**: aduz a cabeça e roda o eixo em **supinação**;\n\n**extensor longo do polegar**: contribui para o encurtamento.\n\n**As fraturas da base do 1º metacarpo**: **Bennett** (intra-articular em duas partes), **Rolando** (intra-articular cominutiva, em Y ou T) e as **extra-articulares** (transversas ou oblíquas).\n\n**O tratamento**: redução com **tração, pronação e abdução**, pressionando a base; fixação com **fios percutâneos** (do 1º metacarpo ao trapézio ou ao 2º metacarpo) ou **parafuso**, se o fragmento for grande. O objetivo é a superfície articular congruente, para evitar a artrose trapeziometacarpal.\n\n**Na prova**: na fratura de Bennett, a diáfise desvia para **dorsal-radial**, com **encurtamento** e **supinação**.",
-  "correta": "O abdutor longo puxa a diáfise para dorsal-radial e a encurta, e o adutor do polegar a supina.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Base do polegar: Bennett, Rolando e a luxação da CMC."
+  ],
+  "conferido": false,
+  "alerta": "A redação mistura “ápice” com direção do componente deslocado. O resumo descreve subluxação proximal, radial e dorsal da base unida à diáfise, com adução e supinação; o fragmento pequeno volar-ulnar permanece preso ao trapézio.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Base do polegar: Bennett, Rolando e a luxação da CMC"
+     ],
+     "blocos": [
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c0e1dd7f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-9dff678e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-18bfbb63",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a309063a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d9b8c24e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-31cb80a3",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a0896335",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-289196fe",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-b955564c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-bac0dc61",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-16d5ffd7",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d5577f5a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-99fb6c68",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-fcc3fb2d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-248199b1",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-178dc2ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c012e68f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
+    }
+   ],
+   "questaoSha256": "b715d85ef198d35ac98ce7539a55af4c144a975f4536e8b98be3358c6f4e1d03",
+   "comentarioSha256": "1513f4a64793987cc4d2c4c2ad5ddef4db387b8102e3399490e5fa412f841f4b"
+  }
  },
  "trauma-0015": {
   "incorretas": {
@@ -472,15 +524,67 @@
   "conferido": false
  },
  "trauma-0042": {
+  "conceito": "**O sentido do ápice na falange média depende da posição do traço em relação ao flexor superficial.** O flexor superficial insere-se nas bordas laterais do terço médio da falange média. A banda central do extensor se insere na base dorsal; o tendão terminal atua distalmente. Ao fraturar o osso, essas inserções passam a tracionar fragmentos diferentes.\n\nSe o traço é **distal à inserção do superficial**, esse tendão permanece ligado ao fragmento proximal e o flete, enquanto o aparelho extensor distal estende o outro fragmento. A angulação resultante tem **ápice volar**. Se o traço é proximal à inserção do superficial, o tendão fica ligado ao fragmento distal e o flete, enquanto a banda central estende o proximal: o ápice se torna **dorsal**.\n\n“Ápice” indica para onde aponta o vértice da deformidade, não simplesmente o lado para onde um fragmento se move. A comparação entre os dois padrões evita aplicar uma regra única para toda fratura da falange média. O flexor profundo não substitui o superficial nesse raciocínio, pois sua inserção óssea é na falange distal.\n\n**Leia “Falange média: tudo depende do flexor superficial”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca.",
+  "correta": "Na base da falange média, proximalmente à inserção do superficial, o **flexor superficial flete o fragmento distal** e a **banda central estende o proximal**. Esse par produz a angulação de ápice dorsal descrita no resumo. O nome de cada estrutura precisa acompanhar sua inserção: o superficial vai à falange média e a banda central à base dorsal dela. A alternativa D reúne as forças apropriadas.",
   "incorretas": {
-   "A": "O flexor profundo age na falange distal, e o interósseo, na proximal.",
-   "B": "O flexor superficial está certo, mas o interósseo dorsal age na falange proximal.",
-   "C": "A banda central está certa, mas o flexor profundo se insere na falange distal."
+   "A": "O flexor profundo se insere na falange distal, e o interósseo dorsal não tem a inserção no corpo da falange média que explicaria esse par deformante. A opção troca tanto o flexor quanto o componente extensor proximal relevante. O mecanismo pedido depende do superficial no fragmento distal e da banda central no proximal.",
+   "B": "O superficial é o flexor correto, mas o interósseo dorsal não substitui a **banda central**, inserida na base dorsal da falange média. Uma parte verdadeira não torna o par correto. É a ação oposta dessas inserções, de cada lado do traço, que produz o ápice dorsal. A alternativa reconhece o flexor e erra a força extensora.",
+   "C": "A banda central está correta, mas o flexor profundo insere-se na falange distal. O músculo com inserção na falange média e que flete o fragmento distal deste traço é o **superficial**. A alternativa mistura um componente extensor adequado com o flexor do nível errado. A diferença é anatômica, e não apenas de nomenclatura."
   },
-  "conceito": "Na fratura da **falange média**, a angulação depende de **onde** fica o traço em relação à inserção do **flexor superficial dos dedos**, que se insere ao longo da **face volar** da falange média, numa área extensa.\n\n**As inserções que importam**:\n\n**banda central do extensor**: na **base dorsal** da falange média;\n\n**flexor superficial**: na face volar da falange média, em boa parte do seu comprimento;\n\n**flexor profundo**: na base da falange distal.\n\n**Fratura da base da falange média** (proximal à maior parte do superficial): a **banda central** puxa o fragmento proximal em **extensão**, e o **flexor superficial** flete o fragmento distal. Resultado: ápice **dorsal**.\n\n**Fratura do colo** (distal à inserção do superficial): o superficial flete o fragmento proximal, e o ápice fica **volar**.\n\n**Na falange proximal**, a regra é outra: os **interósseos** fletem o fragmento proximal, e o ápice é **volar**.\n\n**Na prova**: na base da falange média, o ápice dorsal vem do **flexor superficial** e da **banda central**.",
-  "correta": "A banda central estende o fragmento proximal, e o flexor superficial flete o distal, formando o ápice dorsal.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Desvios das falanges e a falange proximal"
+     ],
+     "blocos": [
+      "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+      "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+      "desvios-das-falanges-e-a-falange-proximal-b6035935",
+      "desvios-das-falanges-e-a-falange-proximal-9109692a",
+      "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+      "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+      "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+      "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+      "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+      "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+      "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+      "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+      "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+      "desvios-das-falanges-e-a-falange-proximal-1db07921",
+      "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+      "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+      "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+      "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+      "desvios-das-falanges-e-a-falange-proximal-617152de",
+      "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+      "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+      "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+      "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+      "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+      "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+      "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+      "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+    }
+   ],
+   "questaoSha256": "39f2d55b753ea51d29f2fae1f08d1159888105cef6445ce1ca8e556ef7b81c2d",
+   "comentarioSha256": "fc99ae8e799bada59d59eca2f12b5dc8f055e3360c76b515abbd0e767a794e55"
+  }
  },
  "trauma-0043": {
   "conceito": "**A fratura subtrocantérica.** É a fratura do fêmur entre o **trocanter menor** e cerca de **5 cm abaixo** dele. Ocorre em dois grupos: jovens com **trauma de alta energia** e idosos com osso frágil. Também é o local típico das **fraturas atípicas** associadas ao uso prolongado de **bisfosfonatos**.\n\n**Por que é difícil.** A região subtrocantérica recebe **forças muito altas** de compressão na cortical medial e de tração na lateral. A cortical é grossa e a consolidação é lenta. E os **músculos** deslocam os fragmentos de forma intensa e previsível.\n\n**Os desvios.**\n\n| Fragmento | Músculos | Desvio |\n|---|---|---|\n| **Proximal** | **Iliopsoas** (no trocanter menor); **glúteos médio e mínimo** (no trocanter maior); **rotadores externos curtos** | **Flexão, abdução e rotação lateral** (externa) |\n| Distal | **Adutores**; músculos que cruzam o foco | **Adução**, encurtamento e desvio medial |\n\nQuando o trocanter menor fica no fragmento **distal**, o iliopsoas deixa de fletir o proximal e passa a puxar o distal. Mas, na maioria das fraturas, o fragmento proximal fica muito **fletido**, abduzido e rodado externamente.\n\n**As consequências para a cirurgia.**\n- A redução **fechada** costuma ser difícil, porque o fragmento proximal \"foge\" em flexão. Muitas vezes é preciso **reduzir abertamente** ou com instrumentos (pinças, joysticks, cerclagens) antes de passar a haste.\n- Se a haste for passada com o fragmento proximal ainda **fletido e em varo**, a fratura consolida em **varo** e em flexão, com encurtamento dos abdutores e risco de **pseudoartrose**.\n- O implante preferido é a **haste cefalomedular** (intramedular), que fica perto do eixo mecânico e suporta melhor as forças que uma placa lateral.\n\n**As fraturas atípicas.** São transversas ou oblíquas curtas, com um **bico** medial e espessamento cortical lateral, depois de trauma mínimo, em pacientes usando bisfosfonatos. Podem ter sintomas prodrômicos (dor na coxa) e ser **bilaterais**. O tratamento é a haste intramedular, a suspensão do bisfosfonato e a investigação do outro lado.",
@@ -1108,26 +1212,143 @@
   "conferido": false
  },
  "trauma-0090": {
+  "conceito": "**A Bennett associa migração proximal da base a adução e supinação do metacarpo.** É uma fratura intra-articular parcial da base do primeiro metacarpo. O pequeno fragmento volar-ulnar permanece ligado ao trapézio pelo ligamento oblíquo anterior, enquanto a diáfise e o componente articular maior ficam sujeitos às forças musculares deformantes.\n\nO **abdutor longo do polegar**, inserido na base, é a principal força de migração proximal. O **adutor do polegar** leva a diáfise para **adução e supinação**. O resultado espacial também é descrito como subluxação proximal, radial e dorsal da base. Não há contradição entre a direção de translação da base e a postura de adução da diáfise: são componentes diferentes da deformidade.\n\nA pergunta solicita o par de movimentos da diáfise, não o nome do músculo nem a localização do fragmento retido. A pronação é o sentido de correção da supinação, não o desvio que se deve atribuir à fratura. Separar translação, angulação e rotação ajuda a interpretar descrições que parecem conflitantes.\n\n**Leia “Fratura de Bennett: quem fica e quem foge”**, na seção da base do polegar do resumo do Rockwood & Green, 10ª edição, capítulo 45.\n\n**Distinguir as duas forças.** Quando se pergunta pela supinação, o músculo decisivo é o adutor. Quando se pergunta pela principal força deformante com migração proximal, destaca-se o abdutor longo. Os nomes “abdutor” e “adutor” não descrevem sozinhos todos os vetores da fratura.",
+  "correta": "O **adutor do polegar** contribui para adução e supinação do componente maior ligado à diáfise. O fragmento volar-ulnar continua preso ao trapézio pelo ligamento oblíquo anterior, de modo que o restante do metacarpo sofre a deformidade. O abdutor longo é relevante para migração proximal, mas a questão pede especificamente a supinação. Separar esses componentes explica por que A é a resposta.",
   "incorretas": {
-   "B": "O oponente do polegar prona o metacarpo, o contrário do desvio.",
-   "C": "O abdutor curto não é a força deformante clássica do Bennett.",
-   "D": "O extensor curto se insere na falange proximal e não supina o metacarpo."
+   "B": "O oponente não é o músculo ao qual o resumo atribui a supinação do componente deslocado na Bennett. A questão se refere a um osso fraturado, com o fragmento volar-ulnar retido, e não ao movimento global de oposição de um polegar íntegro. O adutor atua sobre o componente maior e explica a deformidade solicitada.",
+   "C": "A alternativa troca o músculo adutor pelo abdutor curto. O resumo distingue os tenares apresentados como distratores da ação deformante atribuída ao adutor. A supinação pedida se refere à diáfise desviada na Bennett, não a uma descrição genérica dos movimentos dos músculos do polegar. Não basta reconhecer que o músculo fica na região tenar.",
+   "D": "O extensor curto não é a força que o resumo identifica como responsável pela supinação da diáfise na Bennett. O fato de um tendão atuar no polegar não permite atribuir a ele qualquer componente da deformidade. O arranjo descrito associa migração proximal ao abdutor longo e adução com supinação ao adutor. A alternativa troca essa relação específica."
   },
-  "conceito": "Na **fratura-luxação de Bennett**, a base do primeiro metacarpo quebra, e a **diáfise** (o segmento distal) é puxada por músculos que se inserem nela:\n\n**abdutor longo do polegar**: inserido na base, puxa a diáfise para **dorsal e radial** e a **encurta**;\n\n**adutor do polegar**: inserido na base da falange proximal, **aduz** a cabeça do metacarpo e **roda o eixo em supinação**;\n\n**extensor longo do polegar**: contribui para o encurtamento.\n\n**O fragmento pequeno** (volar-ulnar) fica no lugar, preso ao trapézio pelo **ligamento oblíquo anterior**.\n\n**A redução**: **tração**, **pronação** e **abdução** do polegar, com pressão sobre a base, desfazendo cada uma das forças.\n\n**A fixação**: **fios percutâneos** (do 1º metacarpo ao trapézio ou ao 2º metacarpo) ou **parafuso**, se o fragmento for grande.\n\n**Os outros músculos**: o **oponente** prona o metacarpo; o **abdutor curto** não é a força deformante clássica; o **extensor curto** se insere na falange proximal e estende a metacarpofalângica.\n\n**Na prova**: a supinação do segmento distal no Bennett vem do **adutor do polegar**.",
-  "correta": "O adutor do polegar aduz a cabeça do metacarpo e roda o eixo em supinação, somando-se ao abdutor longo.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Base do polegar: Bennett, Rolando e a luxação da CMC."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Base do polegar: Bennett, Rolando e a luxação da CMC"
+     ],
+     "blocos": [
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c0e1dd7f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-9dff678e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-18bfbb63",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a309063a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d9b8c24e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-31cb80a3",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a0896335",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-289196fe",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-b955564c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-bac0dc61",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-16d5ffd7",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d5577f5a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-99fb6c68",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-fcc3fb2d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-248199b1",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-178dc2ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c012e68f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
+    }
+   ],
+   "questaoSha256": "a5c7f084b86c69c4f376b4c7561f5eaa4e5e53b9c36d15c45ef4227147b9f05b",
+   "comentarioSha256": "5c9e79f305e5a86614fe587ed77589efe3340fb00e9d1a638bf75ae53209bc79"
+  }
  },
  "trauma-0091": {
+  "conceito": "**A posição intrínseca plus mantém as MCF em 70° a 90° de flexão.** As articulações metacarpofalângicas (MCF) unem os metacarpos às falanges proximais. Seus colaterais se originam dorsalmente na cabeça metacarpal, cuja forma faz com que fiquem mais tensionados em flexão. Essa relação anatômica explica a posição de proteção durante a imobilização.\n\nSe a MCF permanece estendida por longo período, o sistema colateral pode encurtar e dificultar a flexão depois da retirada da tala. Em 70° a 90°, o ligamento é mantido alongado. Nas interfalângicas a proteção usual é diferente: extensão para reduzir o risco de contratura da placa volar. Não se deve escolher um mesmo ângulo para todas as articulações do dedo.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, associa essa posição a punho em cerca de 30° de extensão e imobilização apenas das articulações necessárias. O objetivo não é manter a mão fechada indefinidamente: é proteger o tecido lesionado e permitir mobilização assim que a estabilidade da fratura autoriza.\n\n**Leia “Tratamento sem cirurgia”**, na seção dos metacarpos do resumo “Fraturas e luxações da mão”, para relacionar posição e prevenção de rigidez.",
+  "correta": "O intervalo de **70° a 90° de flexão das MCF** mantém os ligamentos colaterais tensionados. Isso reduz o risco de que a imobilização os deixe encurtados e cause contratura em extensão. A posição é parte da intrínseca plus e não significa manter também as interfalângicas fletidas. A pergunta trata especificamente das MCF.",
   "incorretas": {
-   "A": "Em 30°, os colaterais ficam frouxos e encurtam, e a articulação trava em extensão.",
-   "B": "Em 45°, a flexão ainda é insuficiente para esticar os colaterais.",
-   "C": "Em 60°, a flexão fica abaixo do ideal de 70 a 90°."
+   "A": "Trinta graus são inferiores à faixa de 70° a 90° descrita para as MCF na posição intrínseca plus. Uma pequena flexão não mantém o sistema colateral na posição de alongamento pretendida. O valor de cerca de 30° aparece na extensão do **punho**, que é uma articulação diferente. Não se devem transferir os ângulos entre as partes da montagem.",
+   "B": "Quarenta e cinco graus ainda não correspondem à faixa de proteção descrita. A finalidade é tensionar os colaterais da MCF e evitar contratura em extensão durante a imobilização. Não basta deixar a articulação a meio caminho entre flexão e extensão. Entre os valores oferecidos, 90° é o que pertence ao intervalo indicado.",
+   "C": "Sessenta graus se aproximam, mas permanecem abaixo do intervalo de 70° a 90° especificado no resumo. A resposta da questão é um dos ângulos pertencentes a essa faixa, 90°. A escolha não depende de um limiar universal de lesão em 60°: depende da posição de proteção convencional que a banca pediu."
   },
-  "conceito": "A **posição funcional** da mão (posição **intrínseca plus**, de James) é a que evita a rigidez quando a mão precisa ficar imobilizada:\n\n**punho** em leve extensão (20 a 30°);\n\n**metacarpofalângicas** em flexão de **70 a 90°**;\n\n**interfalângicas** em **extensão** completa;\n\n**polegar** em abdução.\n\n**Por que as metacarpofalângicas em flexão**: a cabeça do metacarpo é **excêntrica** (funciona como um came). Os **ligamentos colaterais** ficam **frouxos em extensão** e **tensos em flexão**. Imobilizada em extensão, a articulação deixa os colaterais encurtarem, e ela trava em extensão. Em flexão de 90°, os colaterais ficam esticados no comprimento máximo.\n\n**Por que as interfalângicas em extensão**: o risco nelas é o contrário. A **placa volar** encurta se a articulação ficar fletida, levando à **contratura em flexão**. Em extensão, a placa volar fica esticada.\n\n**Na prova**: na posição funcional, as metacarpofalângicas ficam em flexão de **90°**.",
-  "correta": "Em 90° de flexão, os colaterais das metacarpofalângicas ficam esticados e não encurtam durante a imobilização.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "5dac2932bd0d1aacff90e41dedf1b4f821fa089e1f0d26b2b53e20c445862d7f",
+   "comentarioSha256": "915aad206e2c880cb36bc687c860977abd68cef3908b705304ffdc9c1727d5ee"
+  }
  },
  "trauma-0092": {
   "incorretas": {
@@ -1475,15 +1696,67 @@
   "conferido": false
  },
  "trauma-0119": {
+  "conceito": "**O sentido do ápice na falange média depende da posição do traço em relação ao flexor superficial.** O flexor superficial insere-se nas bordas laterais do terço médio da falange média. A banda central do extensor se insere na base dorsal; o tendão terminal atua distalmente. Ao fraturar o osso, essas inserções passam a tracionar fragmentos diferentes.\n\nSe o traço é **distal à inserção do superficial**, esse tendão permanece ligado ao fragmento proximal e o flete, enquanto o aparelho extensor distal estende o outro fragmento. A angulação resultante tem **ápice volar**. Se o traço é proximal à inserção do superficial, o tendão fica ligado ao fragmento distal e o flete, enquanto a banda central estende o proximal: o ápice se torna **dorsal**.\n\n“Ápice” indica para onde aponta o vértice da deformidade, não simplesmente o lado para onde um fragmento se move. A comparação entre os dois padrões evita aplicar uma regra única para toda fratura da falange média. O flexor profundo não substitui o superficial nesse raciocínio, pois sua inserção óssea é na falange distal.\n\n**Leia “Falange média: tudo depende do flexor superficial”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca.",
+  "correta": "No traço do colo da falange média, distal à inserção do superficial, o **flexor superficial** flete o fragmento proximal. A ação extensora distal completa a deformidade de ápice volar. A localização do traço é decisiva: se ele fosse proximal à inserção, a mesma força flexora passaria a agir no fragmento distal e o ápice seria dorsal. A alternativa D corresponde ao mecanismo solicitado.",
   "incorretas": {
-   "A": "O lumbrical age na falange proximal, pelo aparelho extensor.",
-   "B": "O interósseo dorsal age na falange proximal.",
-   "C": "O interósseo palmar também age na falange proximal."
+   "A": "O lumbrical é um intrínseco da mão, mas não é a inserção no corpo da falange média que determina a inversão de ápice conforme o nível do traço. O resumo usa a inserção do **flexor superficial** para explicar esse padrão. A opção troca o mecanismo específico da falange média por um nome de musculatura intrínseca.",
+   "B": "O interósseo dorsal participa de outras forças da mão, incluindo o padrão da falange proximal, mas não tem a inserção óssea na falange média que o resumo usa aqui. No colo, o superficial permanece com o fragmento proximal e o flete. Aplicar automaticamente a explicação da falange proximal à média ignora essa mudança de inserção.",
+   "C": "O interósseo palmar também não substitui o superficial como a inserção na falange média que organiza o sentido da deformidade. A pergunta fornece o nível distal do traço e o ápice volar, combinação explicada pela flexão do fragmento proximal pelo superficial. A opção usa outro intrínseco sem reproduzir esse arranjo mecânico."
   },
-  "conceito": "Na fratura da **falange média**, o sentido da angulação depende de onde o traço fica em relação ao **flexor superficial dos dedos**, que se insere ao longo da **face volar** da falange média.\n\n**As inserções**:\n\n**banda central do extensor**: base dorsal da falange média;\n\n**flexor superficial**: face volar da falange média, numa área extensa;\n\n**flexor profundo**: base da falange distal.\n\n**Fratura do colo** (distal à inserção do superficial): o **flexor superficial** **flete o fragmento proximal**, e o distal fica estendido. Resultado: ápice **volar**.\n\n**Fratura da base** (proximal à inserção do superficial): a banda central estende o proximal, e o superficial flete o distal. Resultado: ápice **dorsal**.\n\n**Os intrínsecos** (lumbricais e interósseos) agem sobretudo na **falange proximal**: na fratura dela, fletem o fragmento proximal e geram ápice volar.\n\n**Na prova**: no colo da falange média, o ápice volar vem do **flexor superficial dos dedos**.",
-  "correta": "No colo, o flexor superficial flete o fragmento proximal, e a fratura angula com ápice volar.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Desvios das falanges e a falange proximal"
+     ],
+     "blocos": [
+      "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+      "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+      "desvios-das-falanges-e-a-falange-proximal-b6035935",
+      "desvios-das-falanges-e-a-falange-proximal-9109692a",
+      "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+      "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+      "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+      "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+      "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+      "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+      "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+      "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+      "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+      "desvios-das-falanges-e-a-falange-proximal-1db07921",
+      "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+      "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+      "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+      "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+      "desvios-das-falanges-e-a-falange-proximal-617152de",
+      "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+      "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+      "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+      "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+      "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+      "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+      "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+      "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+    }
+   ],
+   "questaoSha256": "defd7ba6e93f085610734c6f223c874c6cf6d5d50d673ef86f59fcaae3c6ddd7",
+   "comentarioSha256": "2e8a1c6690dc52ca216d6b1d8f2e764fb89c00c9184a0f7cdb4f726fe5488370"
+  }
  },
  "trauma-0120": {
   "incorretas": {
@@ -1497,19 +1770,66 @@
   "conferido": false
  },
  "trauma-0121": {
-  "conceito": "**A fratura de Bennett.** É a **fratura-luxação intra-articular da base do primeiro metacarpo**. Um pequeno fragmento **volar e ulnar** da base permanece preso ao trapézio pelo **ligamento oblíquo anterior** (o ligamento em bico), enquanto o restante do metacarpo, sem essa contenção, se desloca. Isso a distingue da **fratura de Rolando**, intra-articular e cominutiva (em Y ou T).\n\n**As forças que deslocam o metacarpo.** Três músculos atuam sobre o fragmento grande:\n\n| Músculo | Inserção | Efeito |\n|---|---|---|\n| **Abdutor longo do polegar** | Base do 1º metacarpo (dorsal e radial) | Puxa a base para **proximal, dorsal e radial**: encurtamento e subluxação |\n| **Adutor do polegar** | Falange proximal (lado ulnar) | **Aduz** a cabeça e **supina** o metacarpo |\n| Extensor longo do polegar | Falange distal | Contribui para o encurtamento |\n\nAs forças são **divergentes**: o abdutor longo puxa a base para fora, e o adutor puxa a cabeça para dentro, girando o metacarpo em supinação e adução. O resultado é a subluxação da base para **dorsal e radial**, com o polegar fechado na palma.\n\n**Por que é instável.** As forças musculares continuam agindo após a redução, e o gesso sozinho raramente segura a redução.\n\n**Tratamento.** Redução por **tração, abdução, extensão e pronação** do metacarpo com pressão sobre a base, seguida de **fixação**: fios de Kirschner percutâneos do metacarpo ao trapézio ou ao segundo metacarpo (técnica de Wagner ou de Iselin), ou parafuso no fragmento quando grande. O objetivo é degrau articular menor que 1 a 2 mm, para evitar artrose trapeziometacarpal.",
-  "correta": "**Correta: A (adutor do polegar).** Na fratura de Bennett, o **adutor do polegar**, inserido na falange proximal, aduz a cabeça e **supina** o primeiro metacarpo, enquanto o abdutor longo puxa a base para proximal e radial.",
+  "conceito": "**A Bennett associa migração proximal da base a adução e supinação do metacarpo.** É uma fratura intra-articular parcial da base do primeiro metacarpo. O pequeno fragmento volar-ulnar permanece ligado ao trapézio pelo ligamento oblíquo anterior, enquanto a diáfise e o componente articular maior ficam sujeitos às forças musculares deformantes.\n\nO **abdutor longo do polegar**, inserido na base, é a principal força de migração proximal. O **adutor do polegar** leva a diáfise para **adução e supinação**. O resultado espacial também é descrito como subluxação proximal, radial e dorsal da base. Não há contradição entre a direção de translação da base e a postura de adução da diáfise: são componentes diferentes da deformidade.\n\nA pergunta solicita o par de movimentos da diáfise, não o nome do músculo nem a localização do fragmento retido. A pronação é o sentido de correção da supinação, não o desvio que se deve atribuir à fratura. Separar translação, angulação e rotação ajuda a interpretar descrições que parecem conflitantes.\n\n**Leia “Fratura de Bennett: quem fica e quem foge”**, na seção da base do polegar do resumo do Rockwood & Green, 10ª edição, capítulo 45.\n\n**Distinguir as duas forças.** Quando se pergunta pela supinação, o músculo decisivo é o adutor. Quando se pergunta pela principal força deformante com migração proximal, destaca-se o abdutor longo. Os nomes “abdutor” e “adutor” não descrevem sozinhos todos os vetores da fratura.",
+  "correta": "O **adutor do polegar** contribui para adução e supinação do componente maior ligado à diáfise. O fragmento volar-ulnar continua preso ao trapézio pelo ligamento oblíquo anterior, de modo que o restante do metacarpo sofre a deformidade. O abdutor longo é relevante para migração proximal, mas a questão pede especificamente a supinação. Separar esses componentes explica por que A é a resposta.",
   "incorretas": {
-   "B": "O **oponente do polegar** prona e flete o metacarpo; não é o responsável pela supinação na fratura de Bennett.",
-   "C": "O **abdutor longo do polegar** puxa a base para proximal, dorsal e radial, causando encurtamento e subluxação, mas não a supinação.",
-   "D": "O **extensor curto do polegar** insere-se na falange proximal e estende a metacarpofalângica; não é força deformante principal."
+   "B": "O oponente não é o músculo ao qual o resumo atribui a supinação do componente deslocado na Bennett. A questão se refere a um osso fraturado, com o fragmento volar-ulnar retido, e não ao movimento global de oposição de um polegar íntegro. O adutor atua sobre o componente maior e explica a deformidade solicitada.",
+   "C": "O abdutor longo participa de forma importante da deformidade, principalmente puxando a base para proximal e produzindo encurtamento. A pergunta, porém, isola o componente de supinação, atribuído no resumo ao adutor. Participar do desvio não significa produzir todos os seus componentes. É preciso identificar qual vetor está sendo solicitado.",
+   "D": "O extensor curto não é a força que o resumo identifica como responsável pela supinação da diáfise na Bennett. O fato de um tendão atuar no polegar não permite atribuir a ele qualquer componente da deformidade. O arranjo descrito associa migração proximal ao abdutor longo e adução com supinação ao adutor. A alternativa troca essa relação específica."
   },
   "referencias": [
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
-   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da mão"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Base do polegar: Bennett, Rolando e a luxação da CMC."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Base do polegar: Bennett, Rolando e a luxação da CMC"
+     ],
+     "blocos": [
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c0e1dd7f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-9dff678e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-18bfbb63",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a309063a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d9b8c24e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-31cb80a3",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a0896335",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-289196fe",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-b955564c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-bac0dc61",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-16d5ffd7",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d5577f5a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-99fb6c68",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-fcc3fb2d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-248199b1",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-178dc2ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c012e68f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
+    }
+   ],
+   "questaoSha256": "82e68373240b81afbfa6d0805fc7da92959f9de36e36495774ae3b1ab0cb9621",
+   "comentarioSha256": "ff6ee7538658a4270bd5091312a4b7cce2f0a68e1ba9d7d6f73a8a17ecc0508c"
+  }
  },
  "trauma-0122": {
   "incorretas": {
@@ -2072,15 +2392,66 @@
   "conferido": false
  },
  "trauma-0168": {
+  "conceito": "**A borda volar da base da falange média é o contraforte contra subluxação dorsal da IFP.** Quanto maior a perda desse apoio, maior a possibilidade de a base escorregar e deixar de deslizar congruentemente sobre a cabeça proximal. O tamanho do fragmento precisa ser avaliado junto ao arco em que a redução se mantém.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, divide as lesões em estáveis com menos de 30%, tênues entre 30% e 50% que mantêm redução com menos de 30° de flexão, e instáveis acima de 50% ou com necessidade de mais de 30° de flexão. O algoritmo e figuras também chamam atenção para risco crescente acima de **40%**. Esses cortes não são todos definições da mesma variável.\n\nO texto relaciona fragmentos maiores à perda do colateral e da placa volar, enquanto 40% aparece como limiar de alerta para instabilidade. O sinal do V no perfil e a avaliação dinâmica mostram perda de congruência. Não se deve usar um percentual isolado para ignorar que uma articulação já subluxa ou só se mantém muito fletida.\n\n**Leia “Estabilidade pelo tamanho do fragmento volar”**, na seção da fratura-luxação da IFP do resumo da Biblioteca.",
+  "correta": "A banca escolheu **fratura cominutiva**, por exclusão das outras opções, mas cominuição sozinha não é uma indicação de tratamento conservador. O resumo considera congruência, porcentagem de superfície e arco de estabilidade; no pilão cominutivo e articular completo, o resultado sem estabilização é desfavorável. Assim, B deve ser entendida como o gabarito desta questão incompleta, sem autorizar tratar toda base cominuída apenas com tala.",
   "incorretas": {
-   "A": "A subluxação dorsal mostra instabilidade e indica cirurgia.",
-   "C": "A fratura articular completa é instável.",
-   "D": "O acometimento maior que 40% deixa a articulação instável e é cirúrgico."
+   "A": "Subluxação dorsal demonstra perda de congruência e do apoio volar. Não se pode considerá-la uma situação estável apenas por ser reduzível em determinada posição. O tratamento precisa recuperar e manter relação articular no arco permitido. A alternativa não oferece as condições de estabilidade que justificariam movimento protegido sem estabilização adicional.",
+   "C": "Uma fratura articular completa pode envolver toda a base e, no padrão de pilão, apresentar depressão e cominuição. O resumo descreve mau resultado sem estabilização nesses padrões e preferência por tração dinâmica conforme a geometria. A alternativa não demonstra uma articulação congruente e estável para tratamento não operatório. O nome “completa” muda a extensão do dano articular.",
+   "D": "Acima de cerca de 40% a 50% aumenta o risco de perda do contraforte e instabilidade. O percentual deve ser associado à avaliação dinâmica, e não usado para presumir estabilidade. A opção foi escolhida entre as indicações de maior preocupação cirúrgica no material da banca. Ela não caracteriza por si um padrão seguro para tratamento conservador."
   },
-  "conceito": "A **articulação interfalângica proximal** é a que **mais enrijece** na mão. Na fratura da **base da falange média**, o objetivo é ter uma articulação **congruente** que permita **movimento precoce**.\n\n**Quando o tratamento é cirúrgico**: fratura **instável**:\n\n**fragmento volar** com mais de **40%** da superfície articular: a placa volar fica presa ao fragmento, e a falange média escorrega para trás;\n\n**subluxação dorsal** da falange média;\n\n**fratura articular completa** (pilão da base), instável.\n\n**Quando não operar**: na fratura **cominutiva**, a reconstrução aberta de muitos fragmentos pequenos costuma **falhar** e enrijecer a articulação. O melhor é a **tração dinâmica** (fixador externo dinâmico, de Suzuki ou similar), que alinha os fragmentos pela **ligamentotaxia** e deixa a articulação mexer desde cedo.\n\n**Os fragmentos pequenos** (menos de 30%) com articulação congruente: **bloqueio de extensão** com tala e movimento precoce.\n\n**Na prova**: o tratamento não cirúrgico da base da falange média está indicado na **fratura cominutiva**.",
-  "correta": "Na fratura cominutiva, a tração dinâmica alinha os fragmentos e permite mexer cedo; a reconstrução aberta costuma falhar.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Fratura-luxação da IFP e base da falange média."
+  ],
+  "conferido": false,
+  "alerta": "Gabarito B, por exclusão. O resumo não usa cominuição isolada como indicação conservadora: depende de congruência e estabilidade; o pilão articular completo cominutivo vai mal sem estabilização. A pergunta não fornece dados suficientes para transformar B em uma recomendação clínica geral.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Fratura-luxação da IFP e base da falange média"
+     ],
+     "blocos": [
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+    }
+   ],
+   "questaoSha256": "7370e833b8d9877f6dd24e708521ed660ad77fe1957e8433114ba6a20a1c29b4",
+   "comentarioSha256": "3f6e449172d87d5d6fd8000a8452d6c3a1b0bb256cee7498e1514b18de704de9"
+  }
  },
  "trauma-0169": {
   "incorretas": {
@@ -2183,15 +2554,66 @@
   "conferido": false
  },
  "trauma-0178": {
+  "conceito": "**Bennett: o fragmento volar-ulnar fica; o restante do metacarpo se desloca.** A fratura de Bennett compromete a base do primeiro metacarpo, na articulação carpometacarpal (CMC) do polegar, entre o metacarpo e o trapézio. É uma fratura intra-articular parcial: parte da superfície articular se separa da diáfise, enquanto outra parte continua unida a ela.\n\nO pequeno fragmento **volar e ulnar** permanece ligado ao trapézio pelo **ligamento oblíquo anterior**, também chamado de oblíquo palmar ou ligamento em bico (*beak ligament*). Volar indica o lado da palma; ulnar, o lado voltado para a ulna. É a inserção ligamentar nesse fragmento que explica sua permanência na posição anatômica. Essa é a relação descrita no **Rockwood & Green, 10ª edição, capítulo 45**, e explicada no resumo da Biblioteca em “Fratura de Bennett: quem fica e quem foge”.\n\n### Por que o restante do osso subluxa\n\nO fragmento maior, que inclui a diáfise e a maior parte da superfície articular, perde a contenção proporcionada pela continuidade óssea. O **abdutor longo do polegar**, inserido na base do metacarpo, é a principal força deformante e o traciona para proximal. O **adutor do polegar** contribui para a adução e a supinação. O resultado é uma subluxação para **proximal, radial e dorsal**, com a diáfise aduzida e supinada.\n\nO fragmento pequeno retido e o componente maior que subluxa têm comportamentos diferentes. A ligação do oblíquo anterior ao trapézio explica por que parte da superfície permanece em posição enquanto a diáfise se desloca.\n\n### Bennett e Rolando\n\nNa **Bennett**, a fratura é articular parcial, com o fragmento volar-ulnar retido pelo ligamento. Na **Rolando**, o padrão clássico é articular completo, com traço em Y ou T e cominuição: a superfície articular fica separada da diáfise. A distinção ajuda a entender por que o pequeno fragmento estável é tão característico da Bennett.\n\n**Para consolidar o tema, leia o resumo “Fraturas e luxações da mão”**, na seção “Base do polegar: Bennett, Rolando e a luxação da CMC”. O botão **“Ler o trecho que explica”**, ao fim da questão, abre o trecho correspondente na Biblioteca.",
+  "correta": "O **ligamento oblíquo anterior**, também chamado de oblíquo palmar ou ligamento em bico, mantém o pequeno fragmento volar-ulnar ligado ao trapézio. A diáfise e a maior parte da superfície articular se deslocam sob tração muscular, enquanto esse fragmento permanece retido. É a localização da inserção ligamentar que explica a diferença entre os componentes da fratura.",
   "incorretas": {
-   "A": "O dorsorradial é o principal estabilizador contra a luxação dorsal, não o que segura o fragmento.",
-   "B": "O intermetacarpal liga a base do primeiro à do segundo metacarpo.",
-   "D": "O oblíquo posterior é dorsal e não segura o fragmento volar."
+   "A": "O dorsorradial é um dos estabilizadores primários da CMC do polegar, mas fica do lado oposto ao fragmento volar-ulnar retido na Bennett. A pergunta não pede qualquer estabilizador da articulação; pede aquele que mantém esse fragmento específico junto ao trapézio. Esse papel é atribuído ao oblíquo anterior.",
+   "B": "O intermetacarpal participa da estabilidade da base do polegar, mas não é o ligamento que o resumo associa ao fragmento volar-ulnar retido. Uma estrutura estabilizadora da região não necessariamente se insere no fragmento pedido. O vínculo com o trapézio é explicado pelo oblíquo anterior, também denominado palmar.",
+   "D": "O oblíquo posterior integra o conjunto de estabilizadores primários da CMC, mas a inserção que retém o fragmento de Bennett é a do **oblíquo anterior**. Trocar anterior por posterior muda o lado da relação anatômica. O fragmento volar-ulnar e a inserção palmar devem ser entendidos como um mesmo conjunto."
   },
-  "conceito": "Na **fratura de Bennett**, a base do primeiro metacarpo se parte em dois: um fragmento **pequeno**, **volar-ulnar**, e o restante do metacarpo.\n\n**Por que o fragmento pequeno fica no lugar**: ele está preso ao **trapézio** pelo **ligamento oblíquo anterior** (o ligamento \"bico\", ou beak ligament), que vai do trapézio ao bico volar da base do metacarpo.\n\n**O resto do metacarpo** é puxado para **dorsal, radial** e **proximal** pelo **abdutor longo do polegar**, e o **adutor** o supina e aduz.\n\n**Os ligamentos da trapeziometacarpal**:\n\n**oblíquo anterior** (volar): segura o fragmento de Bennett;\n\n**dorsorradial**: o principal estabilizador contra a **luxação dorsal**;\n\n**oblíquo posterior**: dorsal;\n\n**intermetacarpal**: liga a base do 1º à do 2º metacarpo.\n\n**O tratamento**: redução com tração, pronação e abdução; fixação com fios percutâneos ou parafuso.\n\n**Na prova**: o fragmento menor da fratura de Bennett é mantido pelo ligamento **oblíquo anterior**.",
-  "correta": "O ligamento oblíquo anterior prende o bico volar da base do metacarpo ao trapézio, e o fragmento fica no lugar.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Base do polegar: Bennett, Rolando e a luxação da CMC."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Base do polegar: Bennett, Rolando e a luxação da CMC"
+     ],
+     "blocos": [
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c0e1dd7f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-9dff678e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-18bfbb63",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a309063a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d9b8c24e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-31cb80a3",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a0896335",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-289196fe",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-b955564c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-bac0dc61",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-16d5ffd7",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d5577f5a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-99fb6c68",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-fcc3fb2d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-248199b1",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-178dc2ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c012e68f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
+    }
+   ],
+   "questaoSha256": "198542dfb3f4abf8a87b1e2893a25f4ab9e0fe31bc7fdd778ac96450c576e1cb",
+   "comentarioSha256": "1013d629507875740771882f33be0b29382cd2d63a6f989ac35e1f7328f7c6dc"
+  }
  },
  "trauma-0179": {
   "conceito": "**A imagem.** Mostra o **primeiro metacarpo** com uma fratura na base. O pequeno fragmento **volar-ulnar** fica no lugar, preso ao trapézio, enquanto a diáfise do metacarpo é puxada para **proximal** (seta para baixo, pelo tendão do abdutor longo do polegar) e roda, puxada em **adução** pelo adutor do polegar (seta no colo). Esse é o desenho da **fratura de Bennett**.\n\n**A fratura de Bennett.** É uma **fratura-luxação intra-articular** da base do primeiro metacarpo, com um fragmento **volar-ulnar** de tamanho variável. O mecanismo é uma **carga axial** sobre o polegar parcialmente fletido (soco, queda).\n\n**Por que o pequeno fragmento fica no lugar.** Ele está preso ao **ligamento oblíquo anterior** (o ligamento \"bico\", beak ligament), que o mantém junto ao trapézio.\n\n**Por que a diáfise desvia.** Os músculos inseridos na diáfise ficam sem oposição:\n\n| Músculo | Inserção | Desvio da diáfise |\n|---|---|---|\n| **Abdutor longo do polegar** | **Base do primeiro metacarpo** (lado radial e dorsal) | Desvio **proximal**, **radial** e **dorsal** (subluxação) |\n| **Adutor do polegar** | Falange proximal do polegar | **Adução** e **supinação** da diáfise, fechando o primeiro espaço |\n| Extensores do polegar | Falanges | Contribuem para o encurtamento |\n\nO resultado é a **subluxação** da articulação **trapeziometacarpal**: a base do metacarpo escapa para dorsal e radial, e a cabeça vai para a palma.\n\n**A fratura de Rolando, para comparar.** É a fratura **cominutiva** (em T, em Y ou multifragmentada) da base do primeiro metacarpo, com prognóstico pior.\n\n**O tratamento da fratura de Bennett.** Como a força do abdutor longo tende a reluxar a articulação, a fratura é **instável** e geralmente cirúrgica.\n- **Redução fechada**: tração longitudinal, **pronação** e abdução do metacarpo, com pressão sobre a base.\n- **Fixação percutânea** com fios de Kirschner (do metacarpo ao trapézio ou ao segundo metacarpo), ou **redução aberta** com parafusos quando o fragmento é grande ou a redução não é anatômica.\n- Restaurar a congruência articular (degrau menor que 1 a 2 mm) reduz o risco de **artrose** trapeziometacarpal.",
@@ -3115,15 +3537,81 @@
   "conferido": false
  },
  "trauma-0273": {
+  "conceito": "**A pseudogarra traduz desequilíbrio funcional provocado pela angulação do metacarpo.** Quando a fratura consolida com ápice dorsal, a cabeça fica desviada para volar. Para estender o dedo, ocorre hiperextensão compensatória da metacarpofalângica (MCF) e flexão da interfalângica proximal (IFP). A postura lembra uma garra, mas o mecanismo aqui nasce do alinhamento ósseo, sem exigir uma paralisia nervosa.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, considera pseudogarra uma indicação de correção cirúrgica. A escolha não depende apenas de um ângulo isolado: rotação, encurtamento, função e capacidade de manter alinhamento também importam. No colo do quinto, os autores toleram até cerca de 50° se não houver outros critérios, graças à mobilidade da sua CMC.\n\nA manobra de Jahss pode ajudar a reduzir a cabeça usando a falange proximal como alavanca, com MCF e IFP fletidas. Essa posição temporária de redução não deve ser mantida automaticamente na imobilização prolongada. A proteção intrínseca plus deixa as MCF fletidas e as interfalângicas em extensão, para reduzir risco de contratura.\n\n**Leia “Pseudogarra”**, na seção dos metacarpos do resumo da Biblioteca, relacionando direção da cabeça, compensação articular e indicação de tratamento.",
+  "correta": "A cabeça, ou fragmento distal do metacarpo, fica **volar**, com hiperextensão compensatória da **MCF** e flexão da **IFP**. O ápice da angulação é dorsal, no lado oposto ao deslocamento da cabeça. A alternativa A reúne os três elementos do padrão. Especificar o fragmento e o vértice evita inverter volar e dorsal.",
   "incorretas": {
-   "B": "A cabeça do metacarpo cai para volar, e a metacarpofalângica estende, não flete.",
-   "C": "O desvio volar está certo, mas a metacarpofalângica fica em extensão.",
-   "D": "A cabeça do metacarpo desvia para volar, não para dorsal."
+   "B": "A opção inverte o desvio da cabeça e a compensação articular: a cabeça cai para volar, a MCF hiperestende e a IFP flete. Flexão de MCF com extensão de IFP não é a postura de pseudogarra descrita. Não basta citar uma combinação de articulações para reconhecer o mecanismo; a relação entre angulação óssea e compensação precisa ser preservada.",
+   "C": "O desvio volar da cabeça e a flexão da IFP estão corretos, mas a MCF faz **hiperextensão**, e não flexão. É essa tentativa compensatória de estender o dedo que produz a postura de garra. A alternativa acerta dois componentes e troca o elo mecânico central. O conjunto precisa ser julgado, sem aceitar partes verdadeiras isoladas.",
+   "D": "A postura de MCF em extensão com IFP fletida está correta, mas a cabeça não se desloca dorsalmente: ela fica **volar**, com ápice dorsal no foco. A alternativa confunde direção do vértice com direção do fragmento distal. As duas descrições são opostas dentro de uma mesma angulação e não devem ser usadas como sinônimos."
   },
-  "conceito": "A **fratura do colo do metacarpo** (a mais típica é a \"fratura do boxeador\", no 5º dedo) angula com **ápice dorsal**: a **cabeça** do metacarpo cai para **volar**, puxada pelos **interósseos**.\n\n**A pseudogarra**: com a cabeça do metacarpo afundada para a palma, o dedo tenta compensar:\n\n**a metacarpofalângica** fica em **hiperextensão**;\n\n**a interfalângica proximal** fica em **flexão**.\n\nO dedo parece uma **garra**, mas sem lesão do nervo ulnar: por isso, \"**pseudo**garra\".\n\n**O teste**: com a metacarpofalângica bloqueada em flexão, o paciente consegue estender a interfalângica? Se a pseudogarra persistir ou houver **desvio rotacional** (dedos cruzando ao fechar a mão), a redução ou a fixação estão indicadas.\n\n**Os limites aceitáveis de angulação**: crescem do indicador para o mínimo, porque as metacarpocarpais ulnares são mais móveis: cerca de 10 a 15° no 2º e no 3º, 30 a 40° no 4º e 50 a 70° no 5º. A **rotação** não é tolerada.\n\n**Na prova**: a pseudogarra tem desvio **volar** do fragmento distal, **extensão da metacarpofalângica** e **flexão da interfalângica proximal**.",
-  "correta": "A cabeça do metacarpo cai para volar, a metacarpofalângica hiperestende para compensar e a interfalângica proximal flete.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "9dbfd8b6a9901aaf168f2660bd5dbaaad2689eb2f5a230cfc8e5442ac6f514a2",
+   "comentarioSha256": "d95b4ab23c021a8576ac5cb5fbc8f552d8c15daa74db48c2441554360412af81"
+  }
  },
  "trauma-0274": {
   "incorretas": {
@@ -3164,15 +3652,61 @@
   "conferido": false
  },
  "trauma-0277": {
+  "conceito": "**Na luxação dorsal complexa da MCF do indicador, o bloqueio principal é a placa volar interposta.** A hiperextensão rompe a placa volar em sua região proximal, junto ao colo do metacarpo. Na forma simples, a falange ainda conserva contato com o dorso da cabeça e a redução pode ser obtida sem cirurgia. Na complexa, a cabeça atravessa os tecidos volares e a placa fica entre ela e a falange.\n\nKaplan descreveu um laço de estruturas que apertam o colo: lumbrical de um lado, flexor do outro, ligamento natatório distal e transverso superficial proximal. Essas estruturas participam da deformidade, mas o obstáculo intra-articular característico é a **placa volar**. Um sesamoide visível no espaço articular reforça a suspeita de interposição.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, alerta para evitar tração e hiperextensão na redução, que podem converter um padrão simples em complexo. Quando a redução aberta é necessária, a via dorsal permite abordar a placa com menor exposição dos feixes digitais; a via volar exige atenção a esses feixes e pode incluir liberação da A1.\n\n**Leia “Luxação metacarpofalângica: simples, complexa e o laço de Kaplan”**, no resumo da Biblioteca, para distinguir os componentes do laço da estrutura interposta.",
+  "correta": "A pressão deve ser **volar sobre a base da falange proximal**, mantendo contato com a cabeça enquanto se flete a MCF. Evitam-se tração longitudinal e hiperextensão, que podem deslocar a placa volar e converter uma luxação simples em complexa. O punho fletido ajuda a relaxar os flexores. A alternativa B especifica o ponto de aplicação e o vetor recomendados.",
   "incorretas": {
-   "A": "**Local errado.** A força é aplicada na falange proximal, e não na cabeça do metacarpo.",
-   "C": "**Tração é contraindicada.** A tração longitudinal puxa a placa volar para dentro da articulação e pode tornar a luxação irredutível.",
-   "D": "**Hiperextensão é contraindicada.** Hiperestender a falange também favorece a interposição da placa volar."
+   "A": "Pressionar dorsalmente a cabeça não reproduz a manobra descrita. O ponto de aplicação é a **base da falange proximal**, empurrada para volar enquanto se recupera a relação com a cabeça. Definir apenas “força dorsal” perde a distinção entre o osso sobre o qual se atua e o sentido da correção. A alternativa troca ambos os referenciais.",
+   "C": "A direção volar lembra a redução correta, mas acrescentar tração longitudinal cria o risco que a manobra procura evitar. A tração pode puxar a placa volar para trás da cabeça e favorecer a interposição. Assim, uma parte adequada do vetor não torna a combinação segura ou correspondente à técnica. O resumo recomenda pressão volar **sem tração**.",
+   "D": "A hiperextensão pode deslocar a placa volar e transformar um padrão simples em complexo. A redução descrita combina pressão volar na base com flexão controlada, não com hiperextensão. A alternativa acrescenta justamente o movimento que deve ser evitado. O objetivo é reduzir sem criar um bloqueio de partes moles."
   },
-  "conceito": "**A luxação dorsal da metacarpofalângica.** A falange proximal sai para **dorso** da cabeça do metacarpo, geralmente por **hiperextensão**, sobretudo no **indicador** e no polegar. A **placa volar** tem inserção firme na base da falange e frouxa no colo do metacarpo; na hiperextensão ela se solta proximalmente e acompanha a falange.\n\n**Simples e complexa.** Na luxação **simples** (subluxação), a falange fica em hiperextensão de 60 a 90 graus, apoiada na cabeça, com a placa volar ainda não interposta; é redutível. Na **complexa** (de **Kaplan**), a placa volar fica **presa dentro** da articulação, entre a base da falange e a cabeça do metacarpo, e a cabeça faz uma \"casa de botão\": no indicador, fica presa entre o **lumbrical** (radial) e os **tendões flexores** (ulnar), com o ligamento natatório e o transverso superficial por cima. O dedo fica quase **paralelo** ao metacarpo, e a pele da palma forma uma **ruga** ou covinha. A radiografia pode mostrar o **sesamoide** dentro da articulação, sinal patognomônico.\n\n**A manobra certa.** Com o **punho fletido** (relaxando os flexores), empurra-se a **base da falange proximal** em direção **volar e distal**, deslizando-a sobre a cabeça do metacarpo, como se a \"empurrasse\" de volta. **Não** se deve fazer **tração longitudinal** nem **hiperextensão**: elas puxam a placa volar para dentro da articulação e transformam a luxação simples em **complexa**, irredutível.\n\n**Quando operar.** A luxação complexa geralmente precisa de **redução aberta**, por via dorsal (abrindo a placa volar longitudinalmente, mais segura para os nervos) ou volar (com risco ao nervo digital radial do indicador, que fica esticado logo sob a pele). Depois, mobilização precoce com bloqueio de extensão.\n\n**Na prova:** reduzir a luxação dorsal da MF empurrando a **base da falange** em direção **volar**, com punho fletido; **nunca tracionar nem hiperestender**.",
-  "correta": "**Volar da base da falange proximal.** Empurrar a base da falange volar e distalmente sobre a cabeça do metacarpo, com o punho fletido, reduz a luxação sem arrastar a placa volar para dentro da articulação.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+     ],
+     "blocos": [
+      "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f0b3c62d",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--5e47b491",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--ffe4052c",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--19bc2a68",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--3b06c67f",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c4eb7ed3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--18d69bf3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--6c2d666f",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--d98425d3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
+    }
+   ],
+   "questaoSha256": "000fa2636d34f2deb488e83975993511032688cbf4103344ee458163d8363cb5",
+   "comentarioSha256": "43f04862f243df63cc06ffac2d6746ddce0d6e5374c85c492f6af5e514ebe1f9"
+  }
  },
  "trauma-0278": {
   "incorretas": {
@@ -3754,18 +4288,82 @@
   "conferido": false
  },
  "trauma-0328": {
+  "conceito": "**A posição do punho no gesso de Burkhalter é o dado específico pedido pela banca.** O gabarito oficial escolhe 40° de extensão. Esse número deve ser separado da descrição geral da posição intrínseca plus encontrada no resumo do Rockwood & Green, 10ª edição, capítulo 45: punho em cerca de 30° de extensão, metacarpofalângicas (MCF) em 70° a 90° de flexão e interfalângicas em extensão.\n\nA finalidade da posição de proteção é evitar que a imobilização provoque uma contratura difícil de recuperar. Na MCF, os ligamentos colaterais ficam tensionados em flexão. Imobilizá-la estendida por longo período favorece encurtamento desses ligamentos e limitação posterior da flexão. Nas interfalângicas, manter extensão ajuda a prevenir contratura da placa volar.\n\n**Não transformar os 40° do gabarito em uma citação direta do Rockwood.** O resumo registra expressamente que o capítulo não nomeia o gesso de Burkhalter e utiliza 30° para a posição geral de imobilização. Assim, ele permite explicar os princípios e sinalizar a diferença, mas não confirmar no livro o valor particular exigido pela questão.\n\nLeia o trecho **“Tratamento sem cirurgia”**, na seção dos metacarpos do resumo “Fraturas e luxações da mão”. Ele reúne a posição de proteção e a observação sobre a resposta desta banca.",
+  "correta": "O gabarito B combina **40° de dorsiflexão do punho** com **70° a 90° de flexão das MCF**. O segundo componente concorda com a proteção dos colaterais descrita na posição intrínseca plus. A ressalva é a fonte do punho: o resumo do Rockwood descreve cerca de 30° e informa que não nomeia Burkhalter. Os 40° são preservados como a resposta específica da banca, sem atribuí-los diretamente ao livro.",
   "incorretas": {
-   "A": "O punho está certo, mas 30 a 50° de flexão das metacarpofalângicas é pouco para esticar os colaterais.",
-   "C": "70° de dorsiflexão do punho é excessivo, e a flexão das metacarpofalângicas é insuficiente.",
-   "D": "A flexão das metacarpofalângicas está certa, mas 70° de dorsiflexão do punho é excessivo."
+   "A": "Os 40° do punho coincidem com o valor cobrado pela banca, mas 30° a 50° de flexão das MCF não correspondem à faixa de proteção de 70° a 90°. Os colaterais precisam ser mantidos tensionados em flexão para reduzir encurtamento durante a imobilização. A alternativa acerta uma parte da montagem e deixa insuficiente a outra.",
+   "C": "A opção altera os dois componentes: oferece 70° para o punho e apenas 30° a 50° para as MCF. O gabarito usa 40° e 70° a 90°, respectivamente. A posição geral do resumo, por sua vez, usa cerca de 30° no punho, e não 70°. Não se devem trocar os ângulos entre articulações para formar uma montagem diferente.",
+   "D": "As MCF a 70° a 90° estão corretas, mas 70° de extensão do punho não são o valor da banca nem o descrito para a posição geral no resumo. A pergunta solicita uma combinação completa. Reconhecer a flexão das MCF não dispensa conferir a posição do punho e distinguir a fonte de cada número."
   },
-  "conceito": "A **imobilização intrínseca plus** de **Burkhalter** permite tratar fraturas dos **metacarpos** sem cirurgia, mantendo os dedos em movimento.\n\n**A posição**:\n\n**punho** em cerca de **40°** de dorsiflexão (extensão);\n\n**metacarpofalângicas** em **70 a 90°** de flexão;\n\n**interfalângicas** livres, com o paciente **mexendo** os dedos ativamente.\n\n**Por que funciona**:\n\ncom as metacarpofalângicas fletidas, os **ligamentos colaterais** ficam esticados e não encurtam, evitando a rigidez em extensão;\n\na flexão das metacarpofalângicas **relaxa os intrínsecos** e tensiona o **aparelho extensor** sobre o dorso, que funciona como uma **banda de tensão** e ajuda a corrigir o ápice dorsal da fratura;\n\no movimento ativo dos dedos **mantém** a redução e evita aderências dos tendões.\n\n**As indicações**: fraturas estáveis da diáfise e do colo dos metacarpos, sem desvio rotacional.\n\n**Na prova**: na imobilização de Burkhalter, o punho fica em **40°** de dorsiflexão e as metacarpofalângicas em **70 a 90°** de flexão.",
-  "correta": "Punho a 40° de extensão e metacarpofalângicas a 70 a 90° esticam os colaterais e fazem o extensor estabilizar a fratura.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 9"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "alerta": "O gabarito B usa 40° de extensão do punho no gesso de Burkhalter. O resumo do Rockwood descreve cerca de 30° para a posição intrínseca plus e não nomeia Burkhalter. A faixa de 70° a 90° de flexão das MCF é concordante; a diferença do punho permanece explícita.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "4c22544bd3e3e7df02fef0622dfec7e6503b074b165d334833bb5d5bae6fd6d5",
+   "comentarioSha256": "6471a5b15989729c205a2ea32b575d90609c4f19343066030e28e264142287b2"
+  }
  },
  "trauma-0329": {
   "incorretas": {
@@ -3897,15 +4495,67 @@
   "conferido": false
  },
  "trauma-0341": {
+  "conceito": "**A falange proximal fraturada se deforma pelo desequilíbrio entre os interósseos e o aparelho extensor.** Os interósseos fletem o fragmento proximal, enquanto o aparelho extensor tende a estender o distal. O resultado é uma angulação de **ápice volar**, com o componente distal dirigido dorsalmente. Saber de qual referência se está falando evita chamar duas descrições do mesmo padrão de contraditórias.\n\nO tendão flexor superficial insere-se na falange **média**, e não é a inserção que explica a flexão do fragmento proximal nesta fratura. O extensor participa do equilíbrio e da extensão do componente distal, mas não deve substituir os interósseos como principal causa da flexão proximal. O mecanismo muda quando se passa da falange proximal para a média.\n\nEssa deformidade também ajuda a compreender a pseudogarra. A perda de alinhamento pode alterar a relação entre extensão da MCF e movimento da IFP. Rotação e cruzamento dos dedos precisam ser examinados, porque um alinhamento aparentemente satisfatório em uma projeção não garante função normal. Na proteção inicial, flexionar a MCF faz o aparelho extensor atuar como uma banda de tensão no traço transverso.\n\n**Leia “Falange proximal: os interósseos”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na seção “Desvios das falanges e a falange proximal”.",
+  "correta": "O gabarito C descreve o **desvio dorsal do componente distal**, relacionado à ação dos interósseos sobre o proximal e do extensor sobre o distal. Pela convenção do vértice, o mesmo padrão tem **ápice volar**. O resumo registra expressamente essas duas formas de descrever a deformidade. Assim, é possível preservar o gabarito sem ensinar que o ápice deva ser dorsal.",
   "incorretas": {
-   "A": "**Músculo errado.** O flexor superficial se insere na falange média e não é o responsável pela deformidade da falange proximal.",
-   "B": "**Direção e músculo errados.** O fragmento distal vai para dorsal, e o superficial não atua na falange proximal.",
-   "D": "**Direção errada.** Os interósseos são os responsáveis, mas fletem o proximal, levando o distal para dorsal."
+   "A": "O flexor superficial insere-se na falange **média**. Nela, a posição do traço em relação à inserção muda o sentido do ápice; isso é um mecanismo diferente da flexão do fragmento proximal da falange proximal pelos interósseos. A alternativa transfere a força deformante de um nível anatômico para outro. Reconhecer que ambos são flexores não torna suas inserções equivalentes.",
+   "B": "O flexor superficial insere-se na falange **média**. Nela, a posição do traço em relação à inserção muda o sentido do ápice; isso é um mecanismo diferente da flexão do fragmento proximal da falange proximal pelos interósseos. A alternativa transfere a força deformante de um nível anatômico para outro. Reconhecer que ambos são flexores não torna suas inserções equivalentes. O adjetivo “volar” pode lembrar o vértice correto, mas não corrige a atribuição ao tendão errado.",
+   "D": "A opção reconhece os interósseos, mas inverte a direção do desvio quando se usa o componente distal como referência adotada pelo gabarito. O vértice é volar e o distal é dirigido dorsalmente. Sem especificar a referência, as palavras “volar” e “dorsal” geram confusão. Na leitura desta questão, C corresponde ao desvio distal e ao músculo correto."
   },
-  "conceito": "**Os desvios previsíveis da mão.** Nas fraturas de falanges e metacarpos, os tendões que se prendem de cada lado do traço determinam o desvio. Saber quem puxa o quê permite prever a deformidade antes da radiografia.\n\n**A falange proximal.** Sobre o fragmento **proximal**, os **interósseos** (e os lumbricais pelo aparelho extensor), que se inserem na base da falange proximal, **fletem** esse fragmento. Sobre o fragmento **distal**, a **banda central** do extensor, que se insere na base da falange média, **estende** a parte distal. O resultado é uma angulação de **ápice volar**, com o fragmento distal desviado **dorsalmente**. Essa deformidade encurta relativamente o aparelho extensor e pode gerar **pseudogarra** (hiperextensão da MF e flexão da IFP) se consolidar assim.\n\n**Os outros ossos.** **Falange média**: depende do nível em relação à inserção do **flexor superficial**; distal a ela, ápice volar; proximal a ela, ápice dorsal. **Metacarpo**: os **interósseos** fletem a cabeça, com ápice **dorsal**; é o padrão da fratura do colo do quinto metacarpo (fratura do boxeador), que aceita angulações maiores nos dedos ulnares (até cerca de 40 a 50 graus no quinto) do que nos radiais (10 a 15 graus no segundo e terceiro).\n\n**Como reduzir e manter.** Fletir a **MF** a 70 a 90 graus tensiona a banda central e o aparelho extensor sobre a falange, corrigindo o ápice volar e mantendo a redução (posição intrínseca-plus). Fraturas estáveis após a redução vão para imobilização em posição de segurança por 3 a 4 semanas; as instáveis, **oblíquas longas**, **espirais** ou com **desvio rotacional** (dedos cruzando na flexão, a \"tesoura\"), para fixação com fios, parafusos ou placa.\n\n**Na prova:** falange proximal = ápice **volar**, fragmento distal **dorsal**, por ação dos **interósseos** no proximal e da banda central no distal.",
-  "correta": "**Dorsal, pela ação dos interósseos.** Os interósseos fletem o fragmento proximal, e a banda central estende o distal, deixando o fragmento distal desviado para dorsal, com ápice volar.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Desvios das falanges e a falange proximal"
+     ],
+     "blocos": [
+      "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+      "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+      "desvios-das-falanges-e-a-falange-proximal-b6035935",
+      "desvios-das-falanges-e-a-falange-proximal-9109692a",
+      "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+      "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+      "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+      "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+      "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+      "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+      "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+      "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+      "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+      "desvios-das-falanges-e-a-falange-proximal-1db07921",
+      "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+      "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+      "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+      "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+      "desvios-das-falanges-e-a-falange-proximal-617152de",
+      "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+      "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+      "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+      "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+      "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+      "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+      "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+      "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+    }
+   ],
+   "questaoSha256": "b10bea29fa7670a9a1bdfcea99b60a2c70e16b06397b65078e06c3a78aaa6856",
+   "comentarioSha256": "0af58c71276773e0f0df83cdc1d4164651147d52f2dd28fedf4a19406597f81d"
+  }
  },
  "trauma-0342": {
   "incorretas": {
@@ -4260,18 +4910,65 @@
   "conferido": false
  },
  "trauma-0438": {
+  "conceito": "**A hemi-hamato reconstrói o contraforte volar que falta na base da falange média.** Na fratura-luxação dorsal da IFP, a borda volar impede que a base escorregue para dorsal. Se essa borda está cominuída e irrecuperável, apenas juntar fragmentos inviáveis não restaura a estabilidade. É necessário reconstruir uma superfície de apoio.\n\nO enxerto osteocondral vem da **porção distal do hamato**, entre as articulações com o quarto e o quinto metacarpos. A crista e as facetas dessa região oferecem forma aproveitável para reconstruir a base da falange média. Não é apenas um preenchimento de osso: o enxerto traz osso e cartilagem para uma interface articular.\n\nA artroplastia da placa volar é outra estratégia, com tecido de partes moles, e não deve ser confundida com o enxerto osteocondral. O resumo descreve hemi-hamato principalmente em padrões cominutivos, inclusive tardios, e destaca que tamanho e ajuste do enxerto importam. O objetivo é uma IFP estável, congruente e capaz de deslizar durante movimento protegido.\n\n**Leia “Quando a borda volar não tem conserto”**, na seção da fratura-luxação da IFP do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+  "correta": "O enxerto vem do **hamato distal**, na região relacionada à quarta e à quinta CMC. Sua configuração permite reconstruir o lábio volar da base da falange média e recuperar o contraforte contra subluxação dorsal. A resposta não depende de escolher qualquer osso do carpo, mas a superfície específica usada na técnica. O enxerto é osteocondral, diferindo de uma simples enxertia de preenchimento.",
   "incorretas": {
-   "B": "O capitato não é a fonte do enxerto osteocondral usado nessa técnica.",
-   "C": "O escafoide não é usado como fonte de enxerto para a interfalângica.",
-   "D": "O semilunar não é usado como fonte de enxerto para a interfalângica."
+   "B": "O capitato não é o doador definido para a hemi-hamato. A adequação do enxerto depende da forma da superfície distal do hamato, aproveitada para reconstruir o contraforte da falange média. Escolher outro osso do carpo apenas por proximidade não preserva essa relação. A pergunta exige a técnica específica, e não um enxerto ósseo genérico.",
+   "C": "O escafoide é outro osso do carpo, mas não fornece a superfície descrita para esta reconstrução. A fratura da IFP está na base da falange média; o hamato distal é usado como doador pela configuração osteocondral adequada. A alternativa troca o sítio doador sem explicar como recuperaria o contraforte volar. Não corresponde à hemi-hamato do resumo.",
+   "D": "O semilunar não é o sítio doador usado na hemi-hamato. O procedimento reconstrói a base volar da falange média com a superfície distal do hamato. A articulação receptora, o tamanho do defeito e o formato do enxerto são as relações que justificam a escolha. Apenas nomear um osso do carpo não satisfaz esse requisito anatômico."
   },
-  "conceito": "A **fratura-luxação dorsal da interfalângica proximal** acontece quando a base **volar** da falange média quebra e a falange média **escorrega para dorsal**. Se o fragmento volar é grande ou cominuto (mais de 40 a 50% da superfície), a articulação fica **instável**.\n\n**O problema com a perda óssea**: quando a base volar está cominuta ou afundada, não há fragmento para fixar. O \"lábio\" volar, que funciona como um batente contra a luxação dorsal, foi perdido.\n\n**A técnica do enxerto do hamato** (hemi-hamato): retira-se um fragmento **osteocondral** da **superfície distal do hamato** (a articulação com a base do 4º e do 5º metacarpos). Esse fragmento tem uma curvatura em **arco** muito parecida com a da base volar da falange média, inclusive a crista central.\n\n**Como é feito**: por via volar (em \"espingarda\", abrindo a articulação como um livro), o defeito é preparado, e o enxerto é encaixado e fixado com **parafusos** pequenos, recriando o **batente volar** e a congruência.\n\n**As alternativas**: artroplastia de placa volar (sem osso), fixador dinâmico e bloqueio de extensão nos casos menos graves.\n\n**Na prova**: a técnica com perda óssea usa fragmento osteoarticular do **hamato**.",
-  "correta": "O hamato distal tem uma curvatura parecida com a base volar da falange média, e o enxerto recria o batente volar.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 67"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Fratura-luxação da IFP e base da falange média."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Fratura-luxação da IFP e base da falange média"
+     ],
+     "blocos": [
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+    }
+   ],
+   "questaoSha256": "e553b1bb3b89d924f50ce837dfffe449d6ed4a80ca89f84e0507e5291e49d994",
+   "comentarioSha256": "68724d31b73bd2356a40533a2c59b952ee8f3c15c238100ccb71aee0afddbaf2"
+  }
  },
  "trauma-0439": {
   "incorretas": {
@@ -4907,15 +5604,66 @@
   "conferido": false
  },
  "trauma-0553": {
+  "conceito": "**A borda volar da base da falange média é o contraforte contra subluxação dorsal da IFP.** Quanto maior a perda desse apoio, maior a possibilidade de a base escorregar e deixar de deslizar congruentemente sobre a cabeça proximal. O tamanho do fragmento precisa ser avaliado junto ao arco em que a redução se mantém.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, divide as lesões em estáveis com menos de 30%, tênues entre 30% e 50% que mantêm redução com menos de 30° de flexão, e instáveis acima de 50% ou com necessidade de mais de 30° de flexão. O algoritmo e figuras também chamam atenção para risco crescente acima de **40%**. Esses cortes não são todos definições da mesma variável.\n\nO texto relaciona fragmentos maiores à perda do colateral e da placa volar, enquanto 40% aparece como limiar de alerta para instabilidade. O sinal do V no perfil e a avaliação dinâmica mostram perda de congruência. Não se deve usar um percentual isolado para ignorar que uma articulação já subluxa ou só se mantém muito fletida.\n\n**Leia “Estabilidade pelo tamanho do fragmento volar”**, na seção da fratura-luxação da IFP do resumo da Biblioteca.",
+  "correta": "O gabarito B corresponde ao limiar de **40%** usado em figuras e algoritmo do resumo para risco crescente de instabilidade. A leitura deve ser complementada pelo arco em que a redução se mantém. Há ainda uma imprecisão anatômica no enunciado: o fragmento volar discutido nessa fratura-luxação é da **base da falange média**, que articula com a cabeça da proximal. O número não deve ser usado para apagar essa distinção.",
   "incorretas": {
-   "A": "**Ainda estável.** Com cerca de 20%, os colaterais seguem presos à falange média e a articulação é estável.",
-   "C": "**Já francamente instável.** Com 60%, a instabilidade é evidente, mas o limite em que ela começa é menor.",
-   "D": "**Muito além do limite.** Com 80% a articulação é grosseiramente instável; o limiar é bem menor."
+   "A": "Vinte por cento está abaixo da faixa de risco escolhida pela banca e se situa entre os fragmentos menores, frequentemente estáveis quando a avaliação confirma congruência. Isso não significa que toda lesão de 20% seja automaticamente normal. A questão pede o limiar de alerta de 40%, e não qualquer porcentagem de acometimento.",
+   "C": "Sessenta por cento representa comprometimento ainda maior e é compatível com instabilidade, mas não é o **limiar a partir do qual** o risco é destacado pelo algoritmo citado. Escolher apenas um número maior não responde à pergunta sobre o ponto inicial de alerta. A diferença entre limiar e situação já avançada é o detalhe decisivo.",
+   "D": "Oitenta por cento corresponde a uma perda articular muito mais extensa que a fronteira de 40% usada pela banca. Pode integrar um padrão grave, mas não define o menor valor pedido. O tratamento não deve esperar chegar a esse tamanho para reconhecer subluxação ou necessidade de flexão excessiva. A avaliação dinâmica também continua necessária."
   },
-  "conceito": "**A estabilidade da interfalângica proximal.** A IFP é uma dobradiça muito congruente. Contra a subluxação **dorsal** da falange média, ela depende de um batente ósseo: a **borda volar** da base da falange média, onde se prende a **placa volar**, e dos **ligamentos colaterais** acessórios. Nas fraturas-luxações **dorsais** por hiperextensão, o traço arranca justamente esse fragmento volar.\n\n**Quanto pode faltar.** A resposta clássica é um gradiente. Com fragmento envolvendo **menos de cerca de 30%** da superfície articular, a lesão é **estável**: boa parte dos colaterais segue presa à falange média. Entre **30 e 50%**, a estabilidade é **tênue** e depende da posição: estável em flexão, subluxa em extensão. Acima de **cerca de 40 a 50%**, os colaterais ficam presos ao fragmento, e a falange média **subluxa dorsalmente** mesmo em flexão: é **instável**. A banca usou **40%** como o limite a partir do qual a articulação se torna instável.\n\n**Como tratar cada faixa.** **Estável**: órtese de **bloqueio da extensão** e mobilização ativa precoce. **Tênue**: bloqueio da extensão na angulação em que a articulação se mantém reduzida, liberando progressivamente. **Instável**: redução e **fixação** do fragmento (parafusos, cerclagem), **fixador dinâmico** (tração de Suzuki), **artroplastia da placa volar** ou reconstrução da base com **enxerto de hamato** (hemi-hamato), quando o fragmento é cominuído.\n\n**O sinal que importa na radiografia.** No **perfil verdadeiro** da IFP, as superfícies articulares devem ser concêntricas. O **sinal do V** (a abertura em V entre a cabeça da falange proximal e a base da média, no dorso) indica subluxação residual, que não pode ser aceita.\n\n**Na prova:** fratura-luxação dorsal da IFP: fragmento volar **abaixo de 30%** estável; **30 a 50%** tênue; para a banca, **a partir de 40%** instável.",
-  "correta": "**40%.** A partir de cerca de 40% da superfície articular volar comprometida, a falange média perde o batente e subluxa dorsalmente, tornando a articulação instável.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Fratura-luxação da IFP e base da falange média."
+  ],
+  "conferido": false,
+  "alerta": "O gabarito é B, 40%, como limiar de risco do algoritmo descrito. O fragmento volar relevante é da base da falange média; o enunciado o localiza de forma imprecisa na superfície distal da falange proximal. Estabilidade também depende da congruência e da flexão necessária para manter redução.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Fratura-luxação da IFP e base da falange média"
+     ],
+     "blocos": [
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-07898c70",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-9f18a9ab",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c3b6c9a6",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-656e21ea",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-1da24380",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c240dfbe",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-39174a8b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-882378d3",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-51bc74ee",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-a82428ae",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c490d554",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-786b030a",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-6fcd5e6b",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-c0e0a712",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
+      "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+    }
+   ],
+   "questaoSha256": "349b43a153c2f7e502ae09b85a09df86955119549c68ead814535b09edb55bcd",
+   "comentarioSha256": "c7e6061e47f33bfa6bd50513856031f58d1c6d668bb8152f4d5e6d1c04468cc9"
+  }
  },
  "trauma-0554": {
   "incorretas": {
@@ -5680,15 +6428,82 @@
   "conferido": false
  },
  "trauma-0697": {
+  "conceito": "**Consolidação viciosa é união do metacarpo em alinhamento inadequado.** Pode haver rotação, angulação ou encurtamento residual. O resumo do Rockwood & Green, 10ª edição, capítulo 45, a destaca como a complicação mais comum das fraturas metacarpais em geral. No traço transverso, angulação e rotação preocupam; no espiral, rotação e encurtamento.\n\nO problema funcional depende do desvio. O cruzamento dos dedos altera a preensão e não é compensado por uma radiografia aparentemente aceitável. Angulação de ápice dorsal pode causar pseudogarra e déficit de extensão. A avaliação clínica, comparando com a outra mão, é indispensável para relacionar imagem e função.\n\nO resumo descreve osteotomia transversa para rotação e cunhas para angulação, conforme necessidade de preservar comprimento. Também distingue pseudartrose, que é rara e pode se associar a perda óssea ou distração, de aderência tendínea, mais relacionada a abordagens abertas. Esses problemas não são sinônimos e não têm necessariamente a mesma frequência em todos os subgrupos operatórios.\n\n**Leia “Complicações dos metacarpos”**, na seção dos metacarpos do resumo da Biblioteca.",
+  "correta": "A alternativa C é **consolidação viciosa**, alinhada ao destaque do resumo para os metacarpos em geral. O osso pode consolidar e ainda deixar rotação ou angulação que prejudiquem a preensão e o equilíbrio extensor. A pergunta delimita tratamento cirúrgico; a fonte consultada não fornece uma estratificação numérica de cada técnica. Por isso a resposta é preservada sem inventar uma taxa pós-operatória específica.",
   "incorretas": {
-   "A": "**Pouco frequente.** A infecção ocorre sobretudo com fios percutâneos, mas não é a principal complicação.",
-   "B": "**Rara.** A boa vascularização e o efeito de tala tornam a pseudartrose incomum.",
-   "D": "**Real, mas menos frequente.** A aderência dos extensores ocorre com placas dorsais, mas a consolidação viciosa é mais importante."
+   "A": "Infecção pode ocorrer, incluindo infecção de pino ou em lesões expostas, mas o resumo não a coloca como a complicação geral predominante dos metacarpos. O risco muda conforme partes moles e tratamento. Uma complicação potencialmente grave não deve ser escolhida apenas por essa gravidade. O destaque da fonte e o gabarito são consolidação viciosa.",
+   "B": "Pseudartrose é falha de união, diferente de consolidação com deformidade. O resumo a descreve como rara nos metacarpos, associada a fatores como perda óssea ou distração do foco. Portanto, ela não substitui a complicação mais comum apontada. É essencial distinguir qualidade do alinhamento de ocorrência da consolidação.",
+   "D": "Aderência tendínea é uma complicação relevante das abordagens abertas e pode limitar movimento. Isso explica cuidados com periósteo e partes moles e a importância de terapia. Contudo, o resumo destaca consolidação viciosa no conjunto das fraturas metacarpais, e o gabarito escolhe C. Sem dados estratificados por técnica, não se deve criar um ranking específico diferente para todo procedimento aberto."
   },
-  "conceito": "**Os metacarpos consolidam bem.** A vascularização é boa, os metacarpos **vizinhos** e os ligamentos intermetacarpais funcionam como **tala** natural, e a pseudartrose é **rara**. O desafio não é consolidar, mas consolidar **na posição certa**. Por isso a **consolidação viciosa** é a principal complicação, tanto no tratamento conservador quanto no cirúrgico.\n\n**As três deformidades.** **Rotacional**: a mais grave, sem tolerância. Poucos graus de rotação no metacarpo produzem **cruzamento dos dedos** na flexão (a \"tesoura\"), com grande prejuízo funcional. Avalia-se pedindo ao paciente para **fletir os dedos** juntos: todos devem apontar para o **tubérculo do escafoide**, e as unhas devem estar alinhadas. **Angular**: com ápice **dorsal**, pelos interósseos. A tolerância aumenta do lado **radial** para o **ulnar**, pela maior mobilidade das carpometacarpais ulnares: no **colo**, aceita-se até cerca de 10 a 15 graus no segundo e terceiro e até 40 a 50 graus no quinto (a fratura do boxeador); na **diáfise**, menos. **Encurtamento**: até cerca de 5 mm é bem tolerado; mais que isso causa **perda da proeminência** da cabeça e **pseudogarra** (lag extensor).\n\n**Quando operar.** Deformidade **rotacional**, angulação além do tolerado, encurtamento importante, fraturas **múltiplas**, fraturas **expostas**, e fraturas articulares com desvio. Técnicas: **fios de Kirschner** (percutâneos, intramedulares ou transversos), **parafusos** interfragmentários nas oblíquas longas, **placas** e **parafusos intramedulares** sem cabeça, que permitem mobilização precoce.\n\n**As outras complicações.** **Aderência** dos extensores sobre a placa, **rigidez** da MF (imobilizar em flexão, a posição de segurança), infecção (com fios) e dor pelo material.\n\n**Na prova:** a principal complicação das fraturas do metacarpo é a **consolidação viciosa**, sobretudo a **rotacional** (dedos cruzando); a pseudartrose é rara.",
-  "correta": "**Consolidação viciosa.** Os metacarpos consolidam com facilidade, e a complicação que mais pesa é consolidar desalinhado, especialmente em rotação.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+  ],
+  "conferido": false,
+  "alerta": "O gabarito é C. O resumo chama consolidação viciosa de complicação mais comum dos metacarpos em geral e destaca aderências nas cirurgias abertas; não fornece frequências comparativas separadas para cada técnica operatória.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "0f70e1431c3f4d79dd27f768060bd74190085088240a447bc426b2c7b787e375",
+   "comentarioSha256": "1dc3e9123d3b0f3925f884265adb1aee3a4ada005ba688e1e0e7039bf63b10f1"
+  }
  },
  "trauma-0698": {
   "conceito": "**A fratura do escafoide.** É a fratura **mais comum do carpo**, em adultos jovens, geralmente do sexo masculino. O mecanismo é a **queda sobre a mão espalmada**, com o punho em **hiperextensão** e **desvio radial**. O escafoide fica entre o rádio e o capitato, e a força se concentra na sua **cintura**.\n\n**As lesões associadas.** Na mesma queda, a força que quebra o escafoide pode lesar estruturas vizinhas:\n\n| Lesão associada | Comentário |\n|---|---|\n| **Fratura do rádio distal**, em especial do **processo estiloide** (fratura do chofer) | A associação **mais descrita** na literatura; mecanismo comum de hiperextensão com desvio radial |\n| **Luxação perilunar** (transescafoperilunar) | A forma mais comum das luxações perilunares é a que passa pelo escafoide |\n| Lesão do **ligamento escafossemilunar** | Pode coexistir, sobretudo nas fraturas do polo proximal |\n| Fratura da **cabeça do rádio** | Por transmissão da carga ao longo do antebraço |\n| Fratura do capitato | Síndrome escafocapitato |\n\n**Sempre examine o punho e o cotovelo.** Na queda sobre a mão estendida, a carga sobe pelo antebraço. Por isso, uma fratura do escafoide pode acompanhar lesões do **rádio distal** e, mais raramente, da **cabeça do rádio** e do cotovelo.\n\n**Sobre esta questão.** O gabarito registrado é a fratura do **rádio proximal**. A literatura, porém, descreve como associação mais frequente a fratura do **rádio distal**, especialmente do processo estiloide. Este acervo traz a mesma resposta em outras duas questões (trauma-0275 e trauma-0908), o que pode refletir a convenção da fonte usada pela banca.\n\n**O diagnóstico e o tratamento da fratura do escafoide.**\n- Dor na **tabaqueira anatômica** e no tubérculo do escafoide; radiografias incluindo a **incidência do escafoide** (PA em desvio ulnar).\n- Com radiografia normal e suspeita clínica: imobilizar e repetir em 10 a 14 dias, ou fazer **ressonância** ou tomografia.\n- **Sem desvio, na cintura**: gesso ou **fixação percutânea** com parafuso (retorno mais rápido).\n- **Polo proximal** ou **com desvio** (mais de 1 mm): **fixação**.\n- As complicações: **pseudoartrose** e **necrose** do polo proximal, pela irrigação retrógrada.",
@@ -6939,16 +7754,67 @@
   "conferido": false
  },
  "trauma-0820": {
+  "conceito": "**A Bennett associa migração proximal da base a adução e supinação do metacarpo.** É uma fratura intra-articular parcial da base do primeiro metacarpo. O pequeno fragmento volar-ulnar permanece ligado ao trapézio pelo ligamento oblíquo anterior, enquanto a diáfise e o componente articular maior ficam sujeitos às forças musculares deformantes.\n\nO **abdutor longo do polegar**, inserido na base, é a principal força de migração proximal. O **adutor do polegar** leva a diáfise para **adução e supinação**. O resultado espacial também é descrito como subluxação proximal, radial e dorsal da base. Não há contradição entre a direção de translação da base e a postura de adução da diáfise: são componentes diferentes da deformidade.\n\nA pergunta solicita o par de movimentos da diáfise, não o nome do músculo nem a localização do fragmento retido. A pronação é o sentido de correção da supinação, não o desvio que se deve atribuir à fratura. Separar translação, angulação e rotação ajuda a interpretar descrições que parecem conflitantes.\n\n**Leia “Fratura de Bennett: quem fica e quem foge”**, na seção da base do polegar do resumo do Rockwood & Green, 10ª edição, capítulo 45.\n\n**Distinguir as duas forças.** Quando se pergunta pela supinação, o músculo decisivo é o adutor. Quando se pergunta pela principal força deformante com migração proximal, destaca-se o abdutor longo. Os nomes “abdutor” e “adutor” não descrevem sozinhos todos os vetores da fratura.",
+  "correta": "O **abdutor longo do polegar** é a principal força deformante descrita na Bennett, tracionando o componente unido à diáfise para proximal. A descrição da cabeça acompanha o desvio do metacarpo, embora o traço esteja na base. O adutor também participa, sobretudo de adução e supinação, mas não substitui o abdutor longo como força principal de migração proximal. A alternativa C corresponde ao gabarito.",
   "incorretas": {
-   "A": "O adutor do polegar é o que leva a cabeça em adução na leitura mais difundida, mas a banca não aceitou.",
-   "B": "O abdutor curto do polegar não é a força deformante clássica do Bennett.",
-   "D": "O extensor longo contribui para o encurtamento, mas não é a força principal."
+   "A": "O adutor participa da deformidade, contribuindo para adução e supinação. A pergunta elege a força deformante principal, que o resumo atribui ao abdutor longo inserido na base. Portanto, a opção não descreve um músculo irrelevante; ela troca o componente específico cobrado. Uma mesma fratura pode ter mais de um vetor muscular sem que todos respondam à mesma pergunta.",
+   "B": "O abdutor curto é apresentado no resumo como um distrator tenar. A tração proximal característica vem do **abdutor longo**, inserido na base do metacarpo. Os nomes semelhantes não autorizam substituir um pelo outro. É necessário relacionar a inserção e a força ao componente ósseo que se desloca.",
+   "D": "O extensor longo não é a principal força deformante identificada no resumo para a Bennett. A base fraturada sofre tração proximal do abdutor longo e adução com supinação pelo adutor. A opção usa outro tendão do polegar sem reproduzir essa relação. O movimento global de extensão não explica por si o desvio da base nesta fratura."
   },
-  "conceito": "Na **fratura de Bennett**, o fragmento pequeno **volar-ulnar** fica preso ao trapézio pelo **ligamento oblíquo anterior**, e o resto do metacarpo é puxado por músculos:\n\n**abdutor longo do polegar**: inserido na **base** do metacarpo; puxa a diáfise para **dorsal e radial** e a **encurta**;\n\n**adutor do polegar**: inserido na base da falange proximal; **aduz** e **supina** a cabeça do metacarpo;\n\n**extensor longo do polegar**: contribui para o encurtamento.\n\n**A leitura mais difundida**: o abdutor longo é responsável pelo **desvio da base** e pelo encurtamento; o **adutor** é o que leva a **cabeça** em adução. Outras questões deste acervo seguem essa leitura.\n\n**O gabarito**: a banca atribuiu a deformidade da cabeça do metacarpo ao **abdutor longo do polegar**, entendendo a deformidade do metacarpo como um todo (o encurtamento e o desvio que ele causa).\n\n**A redução**: tração, pronação e abdução, com pressão na base; fixação com fios percutâneos ou parafuso.\n\n**Na prova**: a banca indicou o **abdutor longo do polegar**.",
-  "correta": "A banca considerou o abdutor longo do polegar, que desvia e encurta o metacarpo, como responsável pela deformidade.",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Base do polegar: Bennett, Rolando e a luxação da CMC."
+  ],
+  "conferido": false,
   "alerta": "O gabarito atribui a deformidade da CABEÇA do primeiro metacarpo ao abdutor longo do polegar. A descrição mais difundida separa as duas forças de outro modo: o abdutor longo, inserido na BASE, produz o encurtamento e o desvio dorsorradial, enquanto o ADUTOR do polegar (que está entre as alternativas) é o que traciona a CABEÇA em adução e supinação. As outras questões deste mesmo acervo sobre a Bennett (trauma-0090 e trauma-0121) adotam a segunda leitura. O item merece conferência.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Base do polegar: Bennett, Rolando e a luxação da CMC"
+     ],
+     "blocos": [
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c0e1dd7f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-9dff678e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-18bfbb63",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a309063a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d9b8c24e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-31cb80a3",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a0896335",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-289196fe",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-b955564c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-bac0dc61",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-16d5ffd7",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d5577f5a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-99fb6c68",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-fcc3fb2d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-248199b1",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-178dc2ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c012e68f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
+    }
+   ],
+   "questaoSha256": "32a06d24e91bf5f8651dc3df2b47b61b744ede6ceb526ec7cf02485fd6cb2935",
+   "comentarioSha256": "e9a024dd6e52d4a9e57bbb28e2dfd3c2b417e35e2ffe7461cd6b3aa72df12784"
+  }
  },
  "trauma-0821": {
   "incorretas": {
@@ -11959,18 +12825,81 @@
   "conferido": false
  },
  "trauma-1230": {
-  "conceito": "**A fratura mais comum da mão.** O Rockwood (capítulo 10, Metacarpal Fractures) mostra que a **fratura do colo do quinto metacarpo (OTA A3.1, fratura do boxeador)** foi a fratura de metacarpo mais comum no ano estudado, com 23,4% de todas, e **96,3% foram tratadas sem cirurgia**. A Figura 10-44 mostra um caso tratado com manipulação, tala volar e mobilização em 3 semanas.\n\n**Por que se opera pouco a mão hoje.** Apenas 6,7% das fraturas de metacarpo de adultos foram operadas no ano estudado, apesar de parafusos, miniplacas e minifixadores. O capítulo atribui isso à legislação de segurança no trabalho: mãos esmagadas ficaram raras, e as fraturas hoje são de baixa energia, muitas por golpe direto. A cirurgia aumenta do lado ulnar para o radial: 4,6% no quinto, 3,7% no quarto, 6,3% no terceiro, 14,9% no segundo e 24,4% no metacarpo do polegar.\n\n**A técnica de Jahss.** Usada quando a fratura está angulada, rodada ou encurtada:\n\n- **flexionar a metacarpofalângica a 90 graus**;\n- usar a **falange proximal para empurrar a cabeça do metacarpo em sentido dorsal**, controlando também a rotação.\n\nA lógica é mecânica: na fratura do colo, a cabeça do metacarpo desvia para volar (o ápice da angulação é dorsal). Com a metacarpofalângica em 90 graus, os ligamentos colaterais ficam tensos e a falange proximal funciona como uma alavanca rígida apoiada na cabeça, permitindo empurrá-la de volta para dorsal.\n\n**Depois da redução.**\n\n- **Fratura estável e isolada:** esparadrapagem com o dedo vizinho (buddy strapping) e mobilização.\n- **Fratura mal reduzida ou instável:** gesso ou tala do tipo **Burkhalter ou James** por **3 semanas**, depois fisioterapia.\n- **Base do metacarpo do polegar ou fratura-luxação:** gesso de Bruner por 4 a 6 semanas.\n\n**Lembrete das posições.** Burkhalter e James mantêm o punho em 40 graus de dorsiflexão e as metacarpofalângicas em 70 a 90 graus de flexão; no James, as interfalângicas ficam em extensão. A banca cobra essas posições com frequência.\n\n> **Na prova:** técnica de Jahss na fratura do boxeador: metacarpofalângica a 90 graus e a falange proximal empurra a cabeça do metacarpo para dorsal, controlando a rotação; depois, Burkhalter ou James por 3 semanas se instável.",
-  "correta": "**D: 90 graus, e a falange proximal empurra a cabeça do metacarpo em sentido dorsal.** O Rockwood (capítulo 10, Metacarpal Fractures) descreve a redução fechada pela técnica de Jahss: flexionar a metacarpofalângica a 90 graus e usar a falange proximal para empurrar a cabeça do metacarpo dorsalmente e controlar a rotação. É usada quando a fratura do colo está angulada, rodada ou encurtada, seguida de imobilização tipo Burkhalter ou James por 3 semanas se a fratura for instável.",
+  "conceito": "**A manobra de Jahss usa a falange proximal como alavanca para elevar a cabeça metacarpal desviada para volar.** Na fratura do colo do metacarpo, a angulação típica tem ápice dorsal. Para reduzi-la, é necessário levar a cabeça distal no sentido dorsal, desfazendo o afundamento volar.\n\nA MCF e a IFP são fletidas. Com a **MCF em flexão**, os ligamentos colaterais ficam tensionados e acoplam a falange proximal à cabeça do metacarpo. A pressão transmitida pela falange proximal consegue, então, mobilizar a cabeça no sentido dorsal. A técnica depende da articulação proximal posicionada e do sentido correto da força, não apenas de dobrar a ponta do dedo.\n\nA posição temporária de redução não deve ser confundida com a posição de imobilização prolongada. O resumo do Rockwood & Green, 10ª edição, capítulo 45, descreve proteção em intrínseca plus, com MCF fletidas e interfalângicas em extensão, para reduzir o risco de rigidez. Depois da redução, é necessário avaliar se o alinhamento se mantém e se há rotação.\n\n**Leia “Manobra de Jahss”**, na seção dos metacarpos do resumo da Biblioteca, para ligar a tensão dos colaterais à alavanca da falange proximal.",
+  "correta": "Fletem-se a **MCF e a IFP a 90°**, transmitindo força pela falange proximal no **sentido dorsal**. A MCF fletida tensiona os colaterais, permitindo que a falange controle a cabeça do metacarpo e a eleve. O resumo sustenta a flexão dessas articulações e o sentido dorsal da força; a redação da prova especifica os 90°. A combinação corrige a cabeça caída para volar.",
   "incorretas": {
-   "A": "**A direção está certa, o ângulo não.** Com a metacarpofalângica a apenas 45 graus, a falange proximal não fica alinhada como alavanca sob a cabeça do metacarpo, e os colaterais não estão tensos para transmitir a força. A técnica descrita pede 90 graus de flexão.",
-   "B": "**Erra o ângulo e a direção.** Na fratura do colo do metacarpo, a cabeça está desviada para volar; empurrá-la para volar agravaria a angulação. A técnica de Jahss usa 90 graus de flexão da metacarpofalângica e força dorsal pela falange proximal.",
-   "C": "**O ângulo está certo, a direção não.** A flexão de 90 graus é a correta, mas a falange proximal deve empurrar a cabeça do metacarpo para dorsal, corrigindo a angulação de ápice dorsal da fratura do boxeador. Empurrar para volar aumentaria a deformidade."
+   "A": "O sentido dorsal do empurrão está correto, mas a posição convencional cobrada pela banca é MCF a **90°**, não a 45°. A flexão tensiona os colaterais e permite que a falange proximal mobilize a cabeça do metacarpo. A opção acerta o vetor e troca o posicionamento descrito para a manobra.",
+   "B": "A alternativa troca os dois componentes: o ângulo cobrado é 90° e o empurrão deve levar a cabeça para **dorsal**. A cabeça fraturada está deslocada para volar, com ápice dorsal, e precisa ser elevada. Empurrá-la para volar não corrige essa deformidade. A falange proximal é a alavanca que transmite a força oposta.",
+   "C": "A MCF a 90° corresponde à posição cobrada, mas o sentido da força está invertido. A falange proximal deve elevar a cabeça **para dorsal**, desfazendo o desvio volar. A posição correta da articulação não compensa um vetor de redução contrário. É necessário reconhecer o fragmento que se quer mobilizar."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 10 (Principles of Nonoperative Management of Fractures; Ollivere e Duckworth)"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "d0c49101263c41fd57bddd94e900ca58a1247c08bb17ff619cba1323cc50d627",
+   "comentarioSha256": "d714a323180afde18697b5cf0b275dc08a1ba137f28f1b00f97158550270f223"
+  }
  },
  "trauma-1231": {
   "conceito": "**Uma fratura que continua em debate.** O Rockwood (capítulo 10, Calcaneal Fractures) reconhece que muitos cirurgiões acreditam que redução e fixação interna dão os melhores resultados nas fraturas intra-articulares desviadas (OTA tipo C). Mas a cirurgia pode ser difícil, e a lesão da articulação subtalar causada pelo próprio trauma muitas vezes impede boa função subtalar, por melhor que seja a redução. Isso leva a dor e rigidez, e, como muitas dessas fraturas ocorrem em trabalhadores braçais, o resultado final pode não ser bom. Por outro lado, o tratamento conservador também não dá bons resultados nas fraturas intra-articulares desviadas.\n\n**O que dizem os estudos citados.**\n\n- Um estudo do Reino Unido não encontrou vantagem na cirurgia e relatou mais complicações nos operados.\n- As metanálises são contraditórias: Luo sugeriu que o tratamento conservador poderia reduzir o risco de artrodese subtalar tardia; Zhang e Meena apontaram melhor uso de calçado, marcha e retorno ao trabalho com a cirurgia bem feita.\n- No idoso, Su e Cao (60 pacientes) encontraram melhor função e menos dor com cirurgia e recomendaram fixação se não houver contraindicação.\n- Epidemiologia que surpreende: 35,4% das fraturas do calcâneo ocorreram por queda da própria altura ou de pequena altura, com média de 52,6 anos, e 50% das fraturas do calcâneo em pacientes de 65 anos ou mais foram operadas.\n\n**As fraturas com indicação clara de tratamento conservador** (Figura 10-49): fratura intra-articular sem desvio, fratura do processo anterior sem desvio e fratura do sustentáculo.\n\n**O protocolo dos autores.** Se o tratamento conservador for usado:\n\n- **evitar o gesso**;\n- **iniciar fisioterapia imediatamente**, sem carga;\n- na fase inicial, os autores internam o paciente para **bombas de compressão plantar** (A-V Impulse) e **elevação**;\n- uma órtese de proteção ou bota pode ajudar;\n- **sem carga por 6 semanas**, e então carga progressiva e fisioterapia.\n\nA lógica é preservar o movimento do tornozelo e da subtalar desde o início, porque a rigidez subtalar é o grande problema funcional dessas fraturas, e controlar o edema.\n\n**Uma nota sobre a tabela.** As Tabelas 10-7 e 10-9 do capítulo listam, para o calcâneo, gesso ou órtese de perna por 6 semanas como diretriz geral. O texto específico, porém, traz a prática dos autores: evitar o gesso, fisioterapia imediata sem carga, órtese ou bota opcionais. Para a prova, vale a recomendação explícita do texto.\n\n> **Na prova:** calcâneo tratado sem cirurgia: sem gesso, fisioterapia imediata sem carga, elevação e compressão plantar, bota ou órtese opcional, carga após 6 semanas.",
