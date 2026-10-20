@@ -112,15 +112,52 @@
   "conferido": false
  },
  "trauma-0012": {
+  "conceito": "**Na criança, a evolução do comportamento pode denunciar a síndrome compartimental antes dos sinais clássicos.** O capítulo destaca ansiedade, **agitação** e aumento da necessidade de analgésico, os três As. Dor progressiva e resistência ao movimento passivo dos dedos também importam, mas a criança pode ter dificuldade de localizar e expressar o sintoma.\n\nPulso pode permanecer presente, e parestesia ou paralisia não devem ser aguardadas para investigar. Lesão mediana pode ainda mascarar a dor do compartimento volar. A agitação não é diagnóstica isoladamente: sua relevância está no contexto e na piora em relação ao comportamento esperado, exigindo reavaliação do membro e das imobilizações.",
+  "correta": "**B: agitação.** Entre as alternativas, integra o conjunto precoce destacado para crianças. Deve ser relacionada à ansiedade, demanda analgésica crescente e avaliação clínica, sem atribuir todo desconforto à rotina pós-trauma.",
   "incorretas": {
-   "A": "A dor é central no adulto, mas a criança não consegue descrevê-la de forma confiável.",
-   "C": "A criança raramente descreve parestesia, e ela já é um sinal mais tardio.",
-   "D": "A ausência de pulso é um sinal tardio."
+   "A": "**Dor é importante, especialmente quando cresce ou surge ao movimento passivo.** A pergunta enfatiza o sinal pediátrico de maior destaque, em que comportamento e consumo analgésico podem ser mais informativos. Escolher B não significa ignorar dor.",
+   "C": "**Parestesia faz parte dos sinais clássicos, mas pode ser difícil de avaliar e aparecer tarde.** Esperar alteração sensitiva para suspeitar perde a oportunidade de reconhecer a evolução inicial por comportamento e dor.",
+   "D": "**Ausência de pulso não é requisito e não é o melhor sinal precoce.** A pressão compartimental pode prejudicar a musculatura com pulso radial preservado. Ela também pode coexistir com lesão arterial da fratura, problema relacionado, porém distinto."
   },
-  "conceito": "Na **síndrome compartimental da criança**, o exame clássico do adulto falha: a criança **não descreve** a dor desproporcional, não colabora com o estiramento passivo e às vezes não fala.\n\n**Os três \"A\"**: os sinais mais confiáveis na criança são\n\n**ansiedade**;\n\n**agitação**;\n\n**aumento da necessidade de analgésicos**.\n\nUma criança que fica cada vez mais **agitada** e pede mais remédio para dor precisa ser reavaliada **na hora**.\n\n**As causas típicas**: fratura **supracondiliana** do úmero, fraturas do **antebraço** e da **tíbia**, gesso apertado e infiltração de soro.\n\n**A conduta**: abrir o gesso e o algodão **até a pele**; se não melhorar, medir a pressão do compartimento ou indicar a **fasciotomia**.\n\n**Os sinais tardios**: parestesia, paralisia e **ausência de pulso**. Esperar por eles significa perder o músculo.\n\n**Na prova**: na criança, o sinal mais relevante da síndrome compartimental é a **agitação**, parte dos três \"A\".",
-  "correta": "A criança não relata a dor de forma confiável; a agitação, junto com ansiedade e mais analgésico, é o alerta precoce.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Síndrome compartimental."
+  ],
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Síndrome compartimental"
+     ],
+     "blocos": [
+      "sindrome-compartimental-9b6de2bd",
+      "sindrome-compartimental-b1ba06cc",
+      "sindrome-compartimental-dae17124",
+      "sindrome-compartimental-4a487435",
+      "sindrome-compartimental-6878dc8a",
+      "sindrome-compartimental-9b2517ff",
+      "sindrome-compartimental-11861475",
+      "sindrome-compartimental-dd5b1e68",
+      "sindrome-compartimental-52880eb5",
+      "sindrome-compartimental-744d234f",
+      "sindrome-compartimental-156d424b",
+      "sindrome-compartimental-c2479823"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "ef4cb581ced80e15a4fe95146db8711e8831dd210e5806dbb7a7b33534d35799"
+    }
+   ],
+   "questaoSha256": "9c4d5e649dbf01c33820ee370989eee45d7d8f1671301face66e291cd7afb0bf",
+   "comentarioSha256": "2afd3add29460d763f70283d6b4072d7d0060fe717cd80ef7e40219f41a69587"
+  }
  },
  "trauma-0013": {
   "incorretas": {
@@ -13006,17 +13043,72 @@
   }
  },
  "trauma-1221": {
-  "conceito": "**Lesões nervosas na fratura supracondiliana do úmero.** Ocorrem em cerca de 10% a 20% das fraturas desviadas. A grande maioria é **neuropraxia** (bloqueio da condução sem ruptura do nervo), por estiramento ou contusão pelo fragmento.\n\n**Nervos mais lesados.**\n- **Nervo interósseo anterior** (ramo do mediano): o mais frequente nas fraturas em extensão com desvio posterolateral. Perda da flexão da interfalângica do polegar e da distal do indicador, sem alteração sensitiva (teste do sinal de OK).\n- **Nervo radial**: desvio posteromedial.\n- **Nervo ulnar**: fraturas em flexão e, sobretudo, **lesão iatrogênica** por fio medial.\n\n**Conduta.**\n- Lesão nervosa presente **antes** da redução, com fratura fechada: **observação**. A recuperação espontânea ocorre na maioria dos casos em 2 a 6 meses.\n- Se não houver sinais de recuperação em cerca de 3 a 6 meses, eletroneuromiografia e eventual exploração.\n- Exploração imediata em situações específicas: fratura exposta, necessidade de exploração vascular (aproveita-se para ver o nervo), suspeita de nervo encarcerado no foco quando a redução não é obtida.\n\n**Lesão iatrogênica do ulnar.** Pode ocorrer com o fio medial, sobretudo com o cotovelo em flexão (o nervo se anterioriza). Se surgir após a fixação, remove-se o fio medial e reposiciona-se a fixação.\n\n> Lesão nervosa na supracondiliana: quase sempre neuropraxia; observar, sem exploração imediata.",
-  "correta": "**A: Certo.** As lesões nervosas associadas às fraturas supracondilianas são, em sua grande maioria, neuropraxias, com recuperação espontânea em alguns meses. Por isso, não há indicação de exploração cirúrgica imediata em fratura fechada com lesão nervosa presente desde o trauma. A exploração fica para casos sem recuperação após 3 a 6 meses ou situações específicas, como fratura exposta e exploração vascular.",
+  "conceito": "**A maioria das lesões nervosas associadas à supracondiliana fechada é neuropraxia e pode ser observada.** O capítulo relata recuperação ao longo de meses e reserva investigação ou exploração para falta de evolução esperada, especialmente após 3 a 6 meses. Não há indicação de abrir um nervo rotineiramente só porque existe déficit desde o trauma.\n\nHá exceções: fratura irredutível com déficit pode ter nervo preso; ausência de pulso com lesão mediana sugere comprometimento do feixe e recomenda exploração precoce. Uma lesão nova após fio também exige avaliação própria. O item é aceito como regra geral da neuropraxia, sem virar uma proibição absoluta de explorar. No caso-base, não há déficit nervoso descrito; o pulso ausente continua exigindo tratamento vascular adequado independentemente da regra neurológica.",
+  "correta": "**A: certo como princípio geral.** Não se indica exploração imediata rotineira de toda lesão nervosa, pois a recuperação espontânea é frequente. A decisão deve mudar se houver sinais de aprisionamento, comprometimento vascular associado ou evolução inadequada.",
   "incorretas": {
-   "B": "**Marcar errado seria tratar a lesão nervosa como urgência cirúrgica.** A exploração precoce não melhora os resultados na neuropraxia e aumenta os riscos. A exceção importante é a lesão do ulnar que aparece após a colocação do fio medial, que exige retirada do fio."
+   "B": "**Marcar errado implicaria exigir exploração imediata pela simples presença de déficit, o que o capítulo não recomenda.** As exceções não anulam a regra de observação das neuropraxias. O correto é reconhecer ambas, evitando tanto operar todo déficit quanto ignorar um nervo preso."
   },
+  "conferido": false,
   "referencias": [
-   "Babal JC, Mehlman CT, Klein G. Nerve injuries associated with pediatric supracondylar humeral fractures: a meta-analysis. J Pediatr Orthop. 2010;30(3):253-263.",
-   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Fraturas do cotovelo."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Lesões nervosas: frequência, exame e conduta; A mão sem pulso."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "alerta": "Gabarito A preservado como regra geral, sem caráter absoluto. Fratura irredutível com déficit e ausência de pulso associada à lesão mediana são exceções que podem exigir exploração precoce. A conduta vascular do caso-base deve ser avaliada separadamente.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-13-supracondiliana",
+     "titulo": "Fratura supracondiliana do úmero na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Lesões nervosas: frequência, exame e conduta",
+      "A mão sem pulso"
+     ],
+     "blocos": [
+      "lesoes-nervosas-frequencia-exame-e-conduta-0aa48273",
+      "lesoes-nervosas-frequencia-exame-e-conduta-c85b81bf",
+      "lesoes-nervosas-frequencia-exame-e-conduta-0728a0e6",
+      "lesoes-nervosas-frequencia-exame-e-conduta-b0eb7804",
+      "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31",
+      "lesoes-nervosas-frequencia-exame-e-conduta-de5f0f94",
+      "lesoes-nervosas-frequencia-exame-e-conduta-84cd80ba",
+      "lesoes-nervosas-frequencia-exame-e-conduta-f30679b8",
+      "lesoes-nervosas-frequencia-exame-e-conduta-8e857a72",
+      "lesoes-nervosas-frequencia-exame-e-conduta-a911dd5c",
+      "lesoes-nervosas-frequencia-exame-e-conduta-26fca161",
+      "lesoes-nervosas-frequencia-exame-e-conduta-c053f0be",
+      "lesoes-nervosas-frequencia-exame-e-conduta-7fcb874d",
+      "a-mao-sem-pulso-046891d4",
+      "a-mao-sem-pulso-49b55356",
+      "a-mao-sem-pulso-5556fd04",
+      "a-mao-sem-pulso-c734e9ee",
+      "a-mao-sem-pulso-12045389",
+      "a-mao-sem-pulso-5801482c",
+      "a-mao-sem-pulso-561dffc7",
+      "a-mao-sem-pulso-f4f3b89d",
+      "a-mao-sem-pulso-b65d5756",
+      "a-mao-sem-pulso-6b94a0c6",
+      "a-mao-sem-pulso-24574aaa",
+      "a-mao-sem-pulso-9ba2822a",
+      "a-mao-sem-pulso-9c6d88bd",
+      "a-mao-sem-pulso-a6c4af84",
+      "a-mao-sem-pulso-be54c437",
+      "a-mao-sem-pulso-3cbb0905",
+      "a-mao-sem-pulso-47fe0b6b",
+      "a-mao-sem-pulso-4ec07ae0",
+      "a-mao-sem-pulso-e9a4fa79"
+     ],
+     "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+     "trechosSha256": "b22e5313b807f3c2869dd04ae5d07aa13e542634e3efadcbb53f7d54c32fa768"
+    }
+   ],
+   "questaoSha256": "a0a03516576e77c2a5267b66dba501ad155bd106ddcb24133ec6d4e35bb37203",
+   "comentarioSha256": "717d1e2dce096e250569beac51c356a2b02c99dd9adc91f495d378c30d2060b1"
+  }
  },
  "trauma-1222": {
   "conceito": "**O padrão posteromedial em extensão ameaça o radial.** O distal vai para medial e a ponta proximal se projeta lateralmente, oposta ao deslocamento. É essa espícula, não o lado para onde o distal foi, que orienta o risco nervoso característico. No posterolateral, ficam em risco o mediano e a braquial.\n\nO ulnar é o nervo mais associado à fratura em flexão e também corre risco iatrogênico na passagem de fio medial, especialmente com hiperflexão. São contextos diferentes. A investigação deve testar todos os nervos, mas conhecer a associação típica impede aceitar uma troca anatômica como regra.",
