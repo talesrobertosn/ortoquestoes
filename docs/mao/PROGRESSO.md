@@ -103,8 +103,8 @@ padrão novo. Próximo trabalho, nesta ordem:
   página impressa é a da marca `===== ... p. N` imediatamente acima da linha. O texto tem duas colunas
   misturadas: ler com `cut -c1-95` (coluna esquerda) e `cut -c90-` (direita).
 - Ciclo: `copia` → `aplicar_lote --conferir` → aplicar → `gerar_indice` → `validar_acervo` →
-  `progresso.py` → commit e push (só `public/acervo` e `docs/mao`). A cada 2 a 4 lotes: `npx tsc -b`,
-  `PYTHONUTF8=1 npm test`, PR de `claude/relaxed-franklin-0snpiu` para `claude/pdfs-questoes-tp64dr` e merge.
+  `progresso.py` → commit local (só `public/acervo` e `docs/mao`). A cada 2 a 4 lotes: `npx tsc -b`,
+  `PYTHONUTF8=1 npm test`, um push, PR de `claude/relaxed-franklin-0snpiu` para `claude/pdfs-questoes-tp64dr` e merge.
 - O gabarito acumulado do SIMÃO 2023 está na linha do Resumo; equilibrar a letra certa em cada lote.
 - Feedback do Tales em 20/10/2026: questões bem próximas do original (mesma pergunta, mesmas
   alternativas, outras palavras); citação do Green flexível (muita quando a resposta depende da letra do

@@ -53,9 +53,9 @@ COMO ESCREVER (o que o Tales aprovou e pediu):
 CICLO DE CADA LOTE DE 5 (Windows: use PYTHONUTF8=1):
   copia -> aplicar_lote --conferir -> aplicar_lote -> gerar_indice -> validar_acervo ->
   python -I ~/OrtoQuestoes-Biblioteca/.oq/progresso.py ... -> git add public/acervo docs/mao ->
-  commit "SIMÃO 2023: questões ... (ids)" terminando com a linha Co-Authored-By ->
-  timeout 180 git push -q origin HEAD.
-  A cada 2 a 4 lotes: npx tsc -b e PYTHONUTF8=1 npm test, PR para claude/pdfs-questoes-tp64dr e merge.
+  commit local "SIMÃO 2023: questões ... (ids)" terminando com a linha Co-Authored-By (sem push).
+  A cada 2 a 4 lotes: npx tsc -b e PYTHONUTF8=1 npm test, timeout 180 git push -q origin HEAD,
+  PR para claude/pdfs-questoes-tp64dr e merge (pushes agrupados poupam o GitHub Actions; ver AGENTS.md).
 
 NUNCA: livro, resumo ou prova original no git; fato que você não leu; divulgar quantidades totais do
 acervo; refazer o que está "publicada" sem motivo.
@@ -102,9 +102,9 @@ PASSO 3. PARA CADA LOTE DE 5 (PROTOCOLO, seções 4 a 8):
      citações "(Green, cap. N, p. X)" no texto, "Por que esta questão foi criada." e "Na prova:".
      Qualidade vem antes de economia: pode gastar no comentário.
   d) copia  ->  aplicar_lote --conferir  ->  aplicar_lote  ->  gerar_indice  ->  validar_acervo
-  e) Atualize o PROGRESSO (ids, situação "publicada", pendências) e faça commit e push:
+  e) Atualize o PROGRESSO (ids, situação "publicada", pendências) e faça commit local (push só no passo f):
      git add public/acervo docs/mao/PROGRESSO.md ; mensagem "SIMÃO 2024: questões X a Y (ids)".
-  f) A cada 2 a 4 lotes: npx tsc -b && npm test, e publique (PR para claude/pdfs-questoes-tp64dr e merge).
+  f) A cada 2 a 4 lotes: npx tsc -b && npm test, um push e publique (PR para claude/pdfs-questoes-tp64dr e merge).
   g) Diga em uma linha o que publicou e siga para o próximo lote sem esperar resposta.
 
 NUNCA:
@@ -161,7 +161,7 @@ REGRAS NOVAS (valem para todo lote daqui em diante):
 4. Siga nesta ordem: SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021. Depois os
    comentários do ENARE Cirurgia da Mão 2022, 2023 e 2025 (texto oficial, sem reescrever).
 5. Lotes de 5. A cada lote: copia, aplicar_lote --conferir, aplicar, gerar_indice, validar_acervo,
-   PROGRESSO atualizado, commit e push (git add só de public/acervo e docs/mao). A cada 2 a 4 lotes,
-   tsc e npm test, e publique pelo PR para claude/pdfs-questoes-tp64dr como vem fazendo.
+   PROGRESSO atualizado, commit local (git add só de public/acervo e docs/mao). A cada 2 a 4 lotes,
+   tsc e npm test, um push, e publique pelo PR para claude/pdfs-questoes-tp64dr como vem fazendo.
 6. Salve sempre antes de parar. Se o limite acabar, o próximo "continue" retoma pelo PROGRESSO.
 ```

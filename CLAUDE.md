@@ -15,6 +15,10 @@ Ligar o resumo a todas as questões do tema (convite "Leia o resumo" no fim de c
 Consultar o acervo atual, usar os scripts de aplicação/validação, preservar o
 gabarito e salvar em branches e PRs revisáveis conforme o pedido.
 
+**Commits e pushes (20/10/2026):** commits locais à vontade, mas pushes e PRs agrupados (um pacote pronto a cada
+30 a 60 minutos, ou a cada 2 a 4 lotes), para poupar os minutos do GitHub Actions; regras completas em
+[AGENTS.md](AGENTS.md#commits-pushes-e-github-actions-diretriz-do-tales-20102026).
+
 **Provas de Cirurgia da Mão (SIMÃO e título da SBCM) com os livros locais (Green):** siga [docs/mao/PROTOCOLO.md](docs/mao/PROTOCOLO.md)
 e o andamento em [docs/mao/PROGRESSO.md](docs/mao/PROGRESSO.md). Comando para colar na outra conta:
 [docs/prompts/claude-mao-provas.md](docs/prompts/claude-mao-provas.md). Livros, resumos enviados e provas originais nunca vão para o git. Só SBCM e SIMÃO viram OrtoQuestões Simulados; as outras bancas (ABC, Unesp etc.) entram com o nome real, conferindo antes se já estão no site.

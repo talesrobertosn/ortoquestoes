@@ -7,7 +7,7 @@ da biblioteca. Para instalar numa biblioteca nova:
 ```bash
 B=~/OrtoQuestoes-Biblioteca
 mkdir -p $B/.oq $B/lotes/simao-2023
-cp docs/mao/ferramentas/{exportar.py,ver_prova.py,progresso.py,revisar.sh} $B/.oq/
+cp docs/mao/ferramentas/{exportar.py,ver_prova.py,progresso.py,revisar.sh,revisar2026.sh} $B/.oq/
 cp docs/mao/ferramentas/_revisar.py $B/lotes/simao-2023/
 ```
 
@@ -16,7 +16,8 @@ cp docs/mao/ferramentas/_revisar.py $B/lotes/simao-2023/
 | `exportar.py` | `.oq/` | Gera `.oq/texto/*.txt` (um arquivo por capítulo ou resumo, com as marcas `===== ... p. N | folha F =====`) a partir de `.oq/paginas.jsonl`. Rodar depois do `indexar`. É o jeito rápido de achar a página impressa com `grep`. |
 | `ver_prova.py` | `.oq/` | `python -I .oq/ver_prova.py simao-2023` imprime as questões originais da prova (de `.oq/provas/<slug>.json`). |
 | `progresso.py` | `.oq/` | Atualiza as linhas do lote no `docs/mao/PROGRESSO.md` e a linha da prova no Resumo: `python -I .oq/progresso.py "SIMÃO 2023" 18 "15|mao-2015|cap. 59, p. X|" ... --gab "A 22, B 22, C 22, D 21"`. |
-| `revisar.sh` | `.oq/` | Aplica uma revisão de questões já publicadas (`revisao_NN.py`): copia, aplicar_lote, gerar_indice, validar_acervo, commit e push com tempo limite. |
+| `revisar.sh` | `.oq/` | Aplica uma revisão de questões já publicadas (`revisao_NN.py`): copia, aplicar_lote, gerar_indice, validar_acervo e commit local (o push é agrupado a cada 2 a 4 revisões; ver AGENTS.md). |
+| `revisar2026.sh` | `.oq/` | O mesmo para as revisões de comentário do SIMÃO 2026: `bash .oq/revisar2026.sh NN AAAA BBBB` aplica `lotes/simao-2026/revisao_NN.py` (mao-AAAA a mao-BBBB), atualiza a linha "Feito" da Retomada e faz o commit local. |
 | `_comentario_simao2026.py` | `lotes/simao-2026/_comentario.py` | Base das revisões de comentário do SIMÃO 2026: pega enunciado, alternativas e gabarito do acervo e troca só o comentário. |
 | `_revisar.py` | `lotes/simao-2023/` | Base das `revisao_NN.py`: carrega o `lote_NN.py` publicado, troca enunciado e alternativas, acrescenta a citação e reescreve o "Por que esta questão foi criada.". Acha os ids publicados pelo número da questão. |
 

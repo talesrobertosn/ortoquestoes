@@ -7,6 +7,21 @@ on:
     # branches de trabalho chegam ao site por pull request (não publicam
     # sozinhas, o que só gerava falhas e e-mails de erro).
     branches: [main, master, "claude/pdfs-questoes-tp64dr"]
+    # Só dispara quando muda algo que entra no site ou nos testes (diretriz de 20/10/2026:
+    # economizar minutos do Actions). docs/, marketing/, protótipos, relatórios, pdfs e os .md
+    # da raiz não entram no build; as duas exceções de docs/ são lidas pelos testes
+    # (fixtures/testar_paywall.py e scripts/comentarios-resumos/catalogo.py).
+    paths:
+      - "**"
+      - "!docs/**"
+      - "!marketing/**"
+      - "!prototipos/**"
+      - "!relatorios/**"
+      - "!pdfs/**"
+      - "!.claude/**"
+      - "!*.md"
+      - "docs/ativacao-e-rollback-assinaturas.md"
+      - "docs/comentarios-resumos/**"
   workflow_dispatch:
 
 permissions:
@@ -14,13 +29,20 @@ permissions:
   pages: write
   id-token: write
 
+# Um push novo cancela a publicação anterior ainda em andamento: o site sempre fica com a
+# versão mais recente, e uma execução antiga nunca sobrescreve uma nova.
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
+  # Construir e publicar no mesmo job (antes eram dois): cada job cobra pelo menos um minuto
+  # e repete a fila; o deploy precisa só do artefato que este job acabou de gerar.
   construir:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacao.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -74,13 +96,5 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-
-  publicar:
-    needs: construir
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.publicacao.outputs.page_url }}
-    steps:
       - id: publicacao
         uses: actions/deploy-pages@v4

@@ -71,6 +71,29 @@ modelos; nunca imagem gerada por IA).
 Para os estilos aprovados, prefira o kit [marketing/kit/README.md](marketing/kit/README.md): fila pronta e um comando por post
 (roteiro curto para o Codex em [docs/prompts/codex-post-rapido.md](docs/prompts/codex-post-rapido.md)).
 
+## Commits, pushes e GitHub Actions (diretriz do Tales, 20/10/2026)
+
+O repositório é privado e os minutos do GitHub Actions estavam acabando: cada push num branch com PR aberto
+roda o "Verificar Pull Request" (cerca de 3 min) e cada merge no branch de publicação roda a publicação (cerca de
+3 min). Vale para Claude Code, Codex e qualquer outro agente; a produtividade não diminui, só as execuções redundantes.
+
+- Trabalhar normalmente, com **commits locais** a cada passo lógico (um lote, uma correção), mas **agrupar os
+  pushes**: um push quando um conjunto funcional estiver pronto, em geral a cada 30 a 60 minutos de trabalho
+  intenso (no caso das provas e comentários, a cada 2 a 4 lotes, junto com o PR). Não é limite rígido: não
+  esperar artificialmente quando a entrega terminou ou a sessão vai acabar.
+- Push imediato continua valendo para correção crítica no site, colaboração com outro agente, teste remoto ou
+  publicação urgente pedida pelo Tales.
+- PR para o branch de publicação só com o pacote pronto (testes locais passando), e merge logo depois: evita
+  verificações repetidas no mesmo PR. Não abrir PR para cada commit.
+- Nunca: force push, commit ou push vazio, reescrever o histórico de branches de outros agentes, mexer em PR
+  alheio em andamento.
+- Antes do push, `git pull` do próprio branch e do branch de publicação; conflito em `public/acervo/indice.json`
+  ou `busca.json` se resolve rodando de novo `python scripts/gerar_indice.py`.
+- Os workflows (`.github/workflows/`) já ignoram mudanças que não entram no site (`docs/`, exceto
+  `docs/ativacao-e-rollback-assinaturas.md` e `docs/comentarios-resumos/`, `marketing/`, `prototipos/`,
+  `relatorios/`, `pdfs/`, `.claude/` e os `.md` da raiz). Se um teste ou script do build passar a ler um arquivo
+  dessas pastas, acrescente o caminho à lista de exceções nos dois workflows.
+
 ## Flashcards (Torneio de Flashcards, desde 12/10/2026)
 
 Projeto de vários dias, feito com Claude e com ChatGPT. Antes de mexer em qualquer coisa de
