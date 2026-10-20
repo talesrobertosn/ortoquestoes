@@ -1,0 +1,620 @@
+{
+ "mao-0611": {
+  "questaoSha256": "3c24168f32342de65b7d5f79b35bd47ae64308483833c3127e2cb23a14e9ac38",
+  "comentarioAnteriorSha256": "773f9e85905785c871a6b5317cf94cfe0d1220cb452f7f875d448df40796ce74",
+  "comentario": {
+   "conceito": "**A rigidez é a complicação predominante das fraturas das falanges, sobretudo após cirurgia.** A falange proximal e a média ficam intimamente relacionadas aos tendões e às cápsulas articulares. Trauma de partes moles, fratura articular, cicatriz cirúrgica e imobilização prolongada podem reduzir o deslizamento dos tendões e contrair a articulação. O resultado prático é perda de movimento, frequentemente percebida como limitação da flexão.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, explica que aderência do extensor pode bloquear flexão ativa e passiva e comprometer extensão ativa. Fixar o osso sem permitir mobilização adequada não resolve toda a função do dedo: a estabilidade precisa servir à recuperação do movimento. Por isso o capítulo enfatiza fixação estável, preservação de partes moles e terapia da mão.\n\nConsolidação viciosa, encurtamento, rotação e pseudartrose também podem prejudicar o resultado, mas são problemas diferentes. Rotação provoca cruzamento dos dedos e exige atenção mesmo quando o osso parece pouco angulado. A pergunta não pede a complicação que mais exige correção óssea; pede a mais frequente depois da cirurgia.\n\n**Leia “Consolidação viciosa e rigidez”**, na seção das falanges do resumo “Fraturas e luxações da mão”, para relacionar adesão tendínea, contratura e prevenção.",
+   "correta": "A limitação de flexão representa a **rigidez** descrita como o evento adverso mais comum. Ela pode decorrer de aderência do aparelho extensor, contratura capsular e imobilização excessiva, além do próprio dano articular. A alternativa traduz a complicação em uma consequência funcional que o paciente percebe. O controle da fratura deve permitir reabilitação sem perder redução, porque consolidação óssea isoladamente não garante mobilidade.",
+   "incorretas": {
+    "B": "Pseudartrose é falha de consolidação, uma complicação óssea diferente da restrição por aderências e contraturas. Ela pode acontecer, mas o resumo destaca a rigidez como o evento adverso mais frequente nas falanges. Não se deve escolher a falha de união apenas por ser uma complicação potencialmente grave. Frequência e gravidade são critérios distintos.",
+    "C": "O encurtamento pode alterar o equilíbrio mecânico do dedo e integrar uma consolidação viciosa. Em alguns casos, um espigão volar no recesso retrocondilar contribui para bloqueio da flexão. Ainda assim, o problema mais frequente solicitado é a rigidez, que pode ocorrer mesmo sem encurtamento relevante. A opção restringe a resposta a uma alteração óssea específica.",
+    "D": "Rotação é uma deformidade importante, porque pode fazer o dedo cruzar o vizinho durante a preensão. Deve ser identificada e corrigida quando necessário, mas isso não a torna a complicação pós-operatória mais frequente. O capítulo destaca aderências e contraturas como causas comuns de perda de movimento. A pergunta sobre frequência não se confunde com a regra de não tolerar cruzamento dos dedos."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false,
+   "provavel": "A"
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-0621": {
+  "questaoSha256": "a6c005c77fd7fd1efa02725f9302fedea619ddd572b1c8f4d808c5d0d0d2eebb",
+  "comentarioAnteriorSha256": "ada84c3e2d8d5cca29a927c59e1b949fb7af62837e3b043d8f8e7eb9089018c6",
+  "comentario": {
+   "conceito": "**A artrose dolorosa após fratura-luxação da CMC do quinto metacarpo pode exigir artrodese como salvamento.** A carpometacarpal (CMC) do mínimo participa da adaptação da mão à preensão. Uma fratura-luxação pode deixar incongruência e degrau articular; o desgaste pós-traumático resultante provoca dor, sobretudo ao segurar objetos com força.\n\nNa fase aguda, o objetivo é reduzir e estabilizar a articulação. Quando já existe artrose estabelecida, reduzir uma fratura ou soltar um tendão não remove o conflito entre superfícies degeneradas. A **artrodese** elimina o movimento da articulação doente e busca proporcionar uma base estável e menos dolorosa. A indicação de salvamento depende dos sintomas e da avaliação clínica, não apenas da presença radiográfica de artrose.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, apresenta também a técnica de **Dubert** para o quinto metacarpo: ressecar sua base e fundir a metáfise ao quarto metacarpo. É importante não confundir essa reconstrução com ressecção isolada da base. A fusão intermetacarpal é parte decisiva da técnica descrita.\n\n**Leia “Carpometacarpais dos dedos e o reverse Bennett”** no resumo da Biblioteca para diferenciar tratamento da fratura aguda e salvamento da artrose.",
+   "correta": "A **artrodese carpometacarpal** é a opção de salvamento apresentada para a articulação com artrose sintomática após fratura-luxação. Ao abolir o movimento doloroso nessa interface, cria-se uma base estável para o metacarpo. O resumo a descreve como uma possibilidade com pouco prejuízo funcional nos dedos. A resposta diz respeito à artrose estabelecida, não à conduta inicial de qualquer fratura da base.",
+   "incorretas": {
+    "A": "O extensor ulnar do carpo participa da deformidade da fratura-luxação da base do quinto, porque se insere no dorso da base metacarpal. Contudo, o problema perguntado agora é a artrose da superfície articular. A tenotomia não corrige a incongruência nem elimina a articulação degenerada. A alternativa trata uma força deformante como se fosse a causa única da dor artrósica tardia.",
+    "B": "O hâmulo é uma projeção do hamato, mas sua ressecção não corresponde à artrodese da CMC nem à técnica de Dubert descritas para esse salvamento. A articulação doente está entre a base metacarpal e o carpo. Retirar o hâmulo não reconstrói nem funde essa interface. A proximidade anatômica do hamato não torna qualquer ressecção desse osso adequada à artrose da CMC.",
+    "C": "A ressecção da base do quinto lembra uma etapa da técnica de Dubert, mas está incompleta. No procedimento descrito no resumo, a base é ressecada **e a metáfise do quinto é fundida ao quarto metacarpo**. Retirar a base isoladamente não equivale a essa reconstrução estabilizadora. Entre as opções, a artrodese CMC é o salvamento completo e diretamente indicado."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Carpometacarpais dos dedos e o reverse Bennett."
+   ],
+   "conferido": false,
+   "provavel": "D"
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Carpometacarpais dos dedos e o reverse Bennett"
+    ],
+    "blocos": [
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-17167a6f",
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-2e0ae54e",
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-c7b09e80",
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-84fb3543",
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-e0e14c5e"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "418e10a921a49a0a313a1de55bdf99fac07367e32543d9a8ac15f3f0a83c9054"
+   }
+  ]
+ },
+ "mao-0666": {
+  "questaoSha256": "a2ff0b12ad619581a2f04c197d1177c31665465af7bf0b8a4887b08c7b20c2bf",
+  "comentarioAnteriorSha256": "eb455a4f85e0128d4c4a02ea9fb6e1e6583927d12e34391314a0fa817c7b83d3",
+  "comentario": {
+   "conceito": "**Weiss e Hastings classificam o traço das fraturas unicondilares da falange proximal.** O sistema descreve a orientação e a localização do fragmento articular: tipo I, oblíquo volar; tipo II, sagital longo; tipo III, coronal dorsal; tipo IV, coronal volar. A letra ou o número não expressam simplesmente um grau crescente de gravidade.\n\nO plano sagital divide os lados radial e ulnar; um traço sagital longo produz um fragmento condilar longitudinal. O plano coronal separa porções dorsal e volar, exigindo acrescentar qual delas está fraturada. Por isso os tipos III e IV usam o mesmo plano, mas diferem entre fragmento dorsal e volar.\n\nNas fraturas condilares, a superfície articular e a irrigação do fragmento importam para a conduta. O resumo orienta preservar a inserção do colateral no côndilo, porque ela leva irrigação, e obter estabilidade que permita movimento. Uma fratura sem desvio também exige acompanhamento, pois deslocamento secundário pode comprometer a congruência.\n\n**Leia “Classificação e anatomia da cabeça”**, na seção “Desvios das falanges e a falange proximal” do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+   "correta": "O tipo III corresponde à fratura **coronal dorsal**. O plano coronal e a localização dorsal precisam aparecer juntos para distingui-la do tipo IV, coronal volar. A opção D reúne exatamente esses dois elementos. O sistema é morfológico, de modo que trocar o plano ou o lado do fragmento muda o tipo.",
+   "incorretas": {
+    "A": "O traço oblíquo volar é o **tipo I**, e não o III. “Volar” indica a porção palmar; “oblíquo” descreve uma orientação diferente do corte coronal. A classificação não permite trocar esses descritores por semelhança de localização. Para o tipo III, a combinação exigida é coronal e dorsal.",
+    "B": "Coronal volar é o **tipo IV**. O plano coronal coincide com o tipo III, mas o fragmento fica do lado oposto: volar em vez de dorsal. A distinção dorsal/volar é exatamente o que separa os dois últimos tipos. A alternativa acerta o plano e troca a localização.",
+    "C": "O traço sagital longitudinal, ou sagital longo, corresponde ao **tipo II**. Ele não é o corte coronal dorsal do tipo III. A orientação do traço explica a morfologia do fragmento condilar, e não deve ser substituída por uma ideia genérica de fratura articular. O erro é trocar o plano sagital pelo coronal."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-1166": {
+  "questaoSha256": "f9b80ae529600d4ff36143ee5aa2a6ba1b714fa608b3889e3c40f99957d973b1",
+  "comentarioAnteriorSha256": "a89aa6518c9c1cd9a55e6622eda8d3b9f44a6c21847ffa8b7528991dfbfd155c",
+  "comentario": {
+   "conceito": "**Weiss e Hastings classificam o traço das fraturas unicondilares da falange proximal.** O sistema descreve a orientação e a localização do fragmento articular: tipo I, oblíquo volar; tipo II, sagital longo; tipo III, coronal dorsal; tipo IV, coronal volar. A letra ou o número não expressam simplesmente um grau crescente de gravidade.\n\nO plano sagital divide os lados radial e ulnar; um traço sagital longo produz um fragmento condilar longitudinal. O plano coronal separa porções dorsal e volar, exigindo acrescentar qual delas está fraturada. Por isso os tipos III e IV usam o mesmo plano, mas diferem entre fragmento dorsal e volar.\n\nNas fraturas condilares, a superfície articular e a irrigação do fragmento importam para a conduta. O resumo orienta preservar a inserção do colateral no côndilo, porque ela leva irrigação, e obter estabilidade que permita movimento. Uma fratura sem desvio também exige acompanhamento, pois deslocamento secundário pode comprometer a congruência.\n\n**Leia “Classificação e anatomia da cabeça”**, na seção “Desvios das falanges e a falange proximal” do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+   "correta": "O traço **sagital longo** define o **tipo II** de Weiss e Hastings. O dado decisivo é a orientação longitudinal no plano sagital, e não um fragmento coronal dorsal ou volar. Essa associação diferencia o tipo II dos outros três padrões descritos. Portanto, a alternativa B corresponde à descrição fornecida.",
+   "incorretas": {
+    "A": "O tipo I corresponde a traço **oblíquo volar**. A pergunta fornece um traço sagital longo, que define outro padrão. O fato de ambos serem fraturas unicondilares não torna suas orientações equivalentes. É preciso usar a morfologia específica, e não apenas a presença de um côndilo fraturado.",
+    "C": "O tipo III é **coronal dorsal**, não sagital longo. Além de mudar o plano, a classificação acrescenta a localização dorsal do fragmento. Nenhum desses dois elementos corresponde ao que foi descrito no enunciado. A resposta correta é II, sem transformar o número em uma escala de gravidade.",
+    "D": "O tipo IV é **coronal volar**. Ele compartilha o plano coronal com o tipo III, mas fica no lado palmar. O caso não descreve esse padrão: informa uma linha longa no plano sagital. Trocar apenas o número sem reconstruir a orientação anatômica leva a essa confusão."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-0674": {
+  "questaoSha256": "df739b6c7063e929568e408db45351510aa917720b5e6241342ec71bd09866dc",
+  "comentarioAnteriorSha256": "e74979ca436ed9ee11cb6f4eea364e087feea0b79d99ead126c5c54fbd634f1b",
+  "comentario": {
+   "conceito": "**Na fratura articular da cabeça do metacarpo, preservar movimento é uma preocupação central.** A cabeça forma a superfície da metacarpofalângica (MCF). A lesão articular, o trauma de partes moles, a cicatriz da abordagem e a imobilização podem limitar sua mobilidade, resultando em rigidez.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, descreve fixação com parafusos sem cabeça nos fragmentos articulares reconstruíveis e início de movimento em arco curto quando a estabilidade permite. A MCF é protegida em mais de 70° de flexão para reduzir contratura em extensão. A intenção é manter a congruência sem sacrificar desnecessariamente a recuperação de movimento.\n\nHá uma distinção importante de fonte: o gabarito desta prova chama rigidez de complicação mais comum da **cabeça**. O capítulo consultado não apresenta uma comparação numérica específica de todas as complicações dessa região, embora seu protocolo enfatize prevenir rigidez. Já nos metacarpos considerados de forma mais ampla, o resumo chama consolidação viciosa de a mais comum. Não são populações nem afirmações idênticas.\n\n**Leia “Cabeça do metacarpo”**, na seção dos metacarpos do resumo da Biblioteca, para entender por que fixação estável e movimento precoce são objetivos complementares.",
+   "correta": "A alternativa A é o gabarito oficial e corresponde à principal preocupação funcional enfatizada pelo resumo: **rigidez da MCF**. O trauma articular e as aderências podem restringir o movimento mesmo quando o osso consolida. A prevenção exige estabilidade e mobilização apropriada, sem imobilização excessiva. O ranking específico de “mais comum” para a cabeça permanece atribuído à banca, pois o capítulo não o quantifica separadamente.",
+   "incorretas": {
+    "B": "Consolidação viciosa significa consolidação em alinhamento inadequado, por rotação ou angulação, por exemplo. Ela é destacada no resumo como complicação comum dos metacarpos em geral. A questão delimita a fratura articular da **cabeça**, cuja resposta oficial é rigidez. Transferir a afirmação geral para esse segmento específico ignora a mudança do grupo de lesões analisado.",
+    "C": "A artrose pode decorrer de dano cartilaginoso e incongruência residual de uma fratura articular. Isso justifica buscar uma superfície congruente, mas não demonstra que a artrose precoce seja a complicação mais frequente do segmento. A restrição de movimento pode surgir por cicatriz e contratura antes de se discutir desgaste articular. A banca escolheu rigidez, e o resumo não fornece ranking que sustente substituir essa resposta.",
+    "D": "Perda de redução é a mudança do alinhamento depois do tratamento e depende da estabilidade obtida e do seguimento. Pode ocorrer, mas o objetivo da fixação estável é justamente permitir movimento sem essa perda. Mesmo com redução mantida, a MCF pode ficar rígida. Portanto, essa falha mecânica não substitui a complicação funcional escolhida pela banca."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+   ],
+   "conferido": false,
+   "alerta": "O gabarito é A, rigidez. O capítulo enfatiza preveni-la na cabeça do metacarpo, mas não ranqueia suas complicações com frequências próprias. A afirmação de consolidação viciosa como mais comum se refere aos metacarpos de forma geral, sem confirmar um ranking específico para a cabeça."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+    ],
+    "blocos": [
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+   }
+  ]
+ },
+ "mao-0743": {
+  "questaoSha256": "5876f618a152c361cc478916e2f26671903623a9b4ac4ccfde57fcc534cf1f17",
+  "comentarioAnteriorSha256": "adfe91f0219a111db4ac47d23cbabc488ede5391c5b2a6c49fd6b40fc6b38dac",
+  "comentario": {
+   "conceito": "**A posição intrínseca plus mantém as MCF em 70° a 90° de flexão.** As articulações metacarpofalângicas (MCF) unem os metacarpos às falanges proximais. Seus colaterais se originam dorsalmente na cabeça metacarpal, cuja forma faz com que fiquem mais tensionados em flexão. Essa relação anatômica explica a posição de proteção durante a imobilização.\n\nSe a MCF permanece estendida por longo período, o sistema colateral pode encurtar e dificultar a flexão depois da retirada da tala. Em 70° a 90°, o ligamento é mantido alongado. Nas interfalângicas a proteção usual é diferente: extensão para reduzir o risco de contratura da placa volar. Não se deve escolher um mesmo ângulo para todas as articulações do dedo.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, associa essa posição a punho em cerca de 30° de extensão e imobilização apenas das articulações necessárias. O objetivo não é manter a mão fechada indefinidamente: é proteger o tecido lesionado e permitir mobilização assim que a estabilidade da fratura autoriza.\n\n**Leia “Tratamento sem cirurgia”**, na seção dos metacarpos do resumo “Fraturas e luxações da mão”, para relacionar posição e prevenção de rigidez.",
+   "correta": "O intervalo de **70° a 90° de flexão das MCF** mantém os ligamentos colaterais tensionados. Isso reduz o risco de que a imobilização os deixe encurtados e cause contratura em extensão. A posição é parte da intrínseca plus e não significa manter também as interfalângicas fletidas. A pergunta trata especificamente das MCF.",
+   "incorretas": {
+    "A": "Dez a vinte graus de flexão deixam a MCF próxima da extensão, fora do intervalo de proteção descrito. O objetivo não é apenas produzir alguma flexão, mas manter os colaterais adequadamente tensionados durante a imobilização. Essa pequena flexão não corresponde aos 70° a 90° solicitados. O erro é subestimar quanto a MCF deve ser fletida.",
+    "B": "Trinta a quarenta graus ainda são inferiores ao intervalo recomendado para as MCF na posição intrínseca plus. Números dessa ordem podem aparecer em outros contextos, como a posição de exame do colateral do polegar, mas não substituem a posição geral de proteção das MCF dos dedos. A indicação anatômica e o objetivo do posicionamento precisam ser mantidos.",
+    "D": "A extensão completa deixa os colaterais da MCF relativamente frouxos. Mantida por longo período, favorece encurtamento e limitação da flexão quando a mão volta a se mover. A extensão é a posição protetora usual das interfalângicas, não das MCF nesse contexto. A alternativa transfere a posição de uma articulação para outra.",
+    "E": "A hiperextensão não tensiona os colaterais da MCF da forma pretendida pela posição de proteção. Também não corresponde a um pequeno ajuste dos 70° a 90°: é um posicionamento no sentido oposto. A órtese deve evitar rigidez sem manter a articulação em uma posição que favoreça encurtamento ligamentar. Portanto, não é o ângulo solicitado."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+    ],
+    "blocos": [
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+   }
+  ]
+ },
+ "mao-0773": {
+  "questaoSha256": "549aefe1b0fff2138335e4b4089c3c907a6e76554e64d88e5291e802320f0058",
+  "comentarioAnteriorSha256": "177d14f26d2022cfc25644017dc6d72684547a1d90a9e75e0fd192beed3015cb",
+  "comentario": {
+   "conceito": "**Na fratura de Seymour, tecido do leito ungueal pode ficar interposto no foco da lesão fisária da falange distal.** A criança apresenta uma fratura na região proximal da falange distal com lesão do leito e deslocamento da base da unha em relação à prega. Essa comunicação torna a lesão exposta, mesmo quando o ferimento parece pequeno.\n\nA matriz germinativa é tecido ungueal responsável pela formação da unha, e não a placa ungueal dura já formada. O tecido lacerado entra no foco e bloqueia a redução. As forças do extensor terminal e do flexor profundo também contribuem para a instabilidade dos fragmentos, mas não são a estrutura interposta típica cobrada.\n\nNo resumo do Rockwood & Green, 10ª edição, capítulo 45, o tratamento descrito inclui retirar o tecido interposto, reduzir, estabilizar quando necessário, reparar o leito e recolocar a unha sob a prega. O objetivo é tratar a exposição e permitir alinhamento e cicatrização, em vez de simplesmente acomodar a deformidade numa tala.\n\n**Leia “Fratura epifisária (Seymour)”**, na seção da falange distal do resumo da Biblioteca, e compare com martelo ósseo e avulsão do flexor profundo.",
+   "correta": "A **matriz germinativa**, como parte do tecido ungueal lacerado, é a estrutura apontada pelo gabarito. Sua interposição impede que os fragmentos encostem e mantenham alinhamento adequado. Por isso a lesão exige reconhecer o foco exposto e retirar o tecido aprisionado, reparando o leito. A alternativa não deve ser confundida com a placa ungueal dura, que pode ser recolocada depois como proteção.",
+   "incorretas": {
+    "A": "A placa volar é uma estrutura estabilizadora palmar da articulação, importante contra hiperextensão. Ela não é o tecido ungueal que invade o foco da fratura fisária de Seymour. A interposição de placa volar aparece em outros padrões de luxação dos dedos. A alternativa transporta um bloqueio articular para uma lesão do complexo ungueal e da fise.",
+    "B": "O tendão extensor terminal se relaciona à base dorsal da falange distal e sua força contribui para a deformidade dos fragmentos. No entanto, contribuir para o desvio não significa estar interposto no foco. O bloqueio típico descrito é o tecido do leito ungueal lacerado. A alternativa confunde força deformante com tecido que impede a redução.",
+    "C": "O flexor profundo traciona o fragmento distal e participa da instabilidade. Sua avulsão da base volar define Jersey finger, uma lesão diferente. Na Seymour, o tecido interposto está ligado à lesão ungueal, e não a um tendão flexor deslocado para o foco. Saber onde o profundo se insere ajuda a não trocar esses mecanismos.",
+    "E": "A placa ungueal é a unha dura, distinta da matriz germinativa e do leito. No protocolo descrito, a unha pode ser recolocada sob a prega depois da redução e do reparo do tecido ungueal. Isso não significa que ela seja a estrutura lacerada classicamente interposta no foco. A pergunta exige distinguir a lâmina formada do tecido que a produz."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Falange distal: tufo, martelo ósseo, jersey e Seymour."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+    ],
+    "blocos": [
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-af3c83a1",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-08f8e80f",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-faab259b",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c7d0db01",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-4c61f2a6",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-79ba0847",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-3e5d74e8",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-1765b8af",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bd6a7476",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e4a7b598",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-755a9365",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-0119fbbe",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-8d417b8f",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-04567e40",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bdf35482",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-ebce09c0",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e184064e",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-5f078a51",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-313c1159",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-a6f82b13",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+   }
+  ]
+ },
+ "mao-0881": {
+  "questaoSha256": "9380838f5c01ad779bdc39f33fcff3903398dbf3035b445c762fe6818f46313a",
+  "comentarioAnteriorSha256": "be46bd15cee666f7ebd2e97d4dbf0bca75de4a14961772b495975d576a1a6803",
+  "comentario": {
+   "conceito": "**Stener é a interposição da aponeurose do adutor no trajeto de cicatrização do LCU rompido.** O ligamento colateral ulnar (LCU) da metacarpofalângica do polegar resiste ao desvio radial durante pinça e preensão. Na ruptura completa, mais comumente distal, o coto pode deslocar-se superficialmente à aponeurose do adutor, que normalmente cobre o ligamento.\n\nA aponeurose passa a separar o ligamento de sua inserção na base da falange proximal. Essa barreira impede a cicatrização por simples imobilização. Portanto, Stener não é sinônimo de dor no lado ulnar nem de qualquer entorse: é uma relação anatômica específica após ruptura completa.\n\nO exame em 30° a 40° de flexão da MCF testa o colateral próprio e avalia o ponto final, enquanto imagem pode ajudar a procurar a interposição. A ausência de ponto final firme sugere ruptura completa, mas não identifica sozinha a aponeurose interposta. Separar esses dois diagnósticos ajuda a entender o planejamento do tratamento.\n\n**Leia “O que é a lesão de Stener”**, na seção do LCU do polegar do resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca.",
+   "correta": "A estrutura é a **aponeurose do adutor do polegar**. O coto ligamentar fica superficial a ela, e a aponeurose bloqueia o retorno à inserção distal. Esse obstáculo explica por que a lesão de Stener não se resolve apenas aproximando o polegar com uma tala. A opção identifica o tecido que diferencia essa lesão de uma ruptura completa sem interposição.",
+   "incorretas": {
+    "A": "O lumbrical participa de outros mecanismos de aprisionamento na mão, como o laço da luxação complexa da MCF do indicador. Não é a estrutura que se interpõe ao LCU do polegar na Stener. A pergunta está no lado ulnar da MCF do polegar, onde a relação decisiva é com a aponeurose do adutor. A alternativa mistura padrões de lesões diferentes.",
+    "B": "O primeiro interósseo dorsal é um músculo da mão, mas não é a aponeurose que cobre o LCU e separa seu coto do osso nessa lesão. A definição de Stener depende da interposição do adutor. A proximidade regional de um músculo não o torna parte do bloqueio característico. É a relação entre ligamento, aponeurose e base da falange que define o epônimo.",
+    "D": "A aponeurose do abdutor se relaciona ao lado radial do polegar. A Stener clássica envolve o lado ulnar, o LCU e a aponeurose do **adutor**. A diferença de uma letra no nome do músculo representa uma mudança anatômica importante. Não se deve aplicar a definição do lado ulnar a qualquer lesão do colateral radial."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Polegar: ligamento colateral ulnar e lesão de Stener."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Polegar: ligamento colateral ulnar e lesão de Stener"
+    ],
+    "blocos": [
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+   }
+  ]
+ },
+ "mao-0910": {
+  "questaoSha256": "77fb7c527a5dfb1070268e823e9026a1b7252c779bec6037714941f17b5ce176",
+  "comentarioAnteriorSha256": "a506a9c418f35ea61c1757a8bf90679574620a12f8b55a106879ba5d8bed34b9",
+  "comentario": {
+   "conceito": "**Rolando é a fratura articular completa da base do primeiro metacarpo com padrão clássico em Y ou T.** É mais cominutiva e, no padrão completo, a superfície articular fica separada da diáfise. Bennett, por sua vez, é articular parcial: o fragmento volar-ulnar mantém ligação ao trapézio pelo ligamento oblíquo anterior, enquanto a parte maior da base continua unida à diáfise e subluxa.\n\nNa Bennett, o abdutor longo puxa o componente maior para proximal e o adutor contribui para adução e supinação. Portanto, o fragmento medial pequeno é o relativamente retido, e não o componente que mais se desloca. A descrição anatômica permite julgar as alternativas sem confundir o nome do músculo abdutor com uma suposta abdução da diáfise.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, enfatiza redução concêntrica da CMC. Fora os padrões sem desvio e sem subluxação, o tratamento das fraturas da base costuma ser cirúrgico, com fios, parafusos ou outra montagem conforme tamanho e cominuição. A presença de desvio na pergunta impede recomendar uma estratégia conservadora genérica para todos os padrões.\n\n**Leia “Base do polegar: Bennett, Rolando e a luxação da CMC”**, no resumo da Biblioteca, comparando quem permanece preso, quem subluxa e a extensão articular do traço.",
+   "correta": "A configuração em **Y** é uma forma clássica da Rolando; a configuração em T também é descrita. O ponto principal é uma fratura intra-articular cominutiva e completa da base do primeiro metacarpo. A alternativa não afirma que todo padrão tenha obrigatoriamente o mesmo desenho, apenas reconhece a configuração característica. Ela é a única compatível com as relações descritas entre as opções.",
+   "incorretas": {
+    "B": "Na Bennett, a diáfise fica em **adução**, associada a supinação, e não em abdução. O abdutor longo participa sobretudo da migração proximal da base, enquanto o adutor explica a postura da diáfise. O nome de um músculo não deve ser usado como descrição automática de todo o desvio resultante. A opção troca um componente fundamental da deformidade.",
+    "C": "Tração pode participar da redução ou de montagens de ligamentotaxia em padrões selecionados, mas isso não autoriza recomendar tratamento conservador genérico com tração elástica para fraturas deslocadas da base. O resumo busca redução concêntrica e descreve estabilização cirúrgica na maioria das desviadas. A escolha depende de fragmentos e estabilidade. A alternativa amplia uma estratégia possível de redução para uma indicação universal de tratamento.",
+    "D": "O fragmento medial, ou volar-ulnar, é o que permanece preso ao trapézio pelo ligamento oblíquo anterior. O componente maior da base, ligado à diáfise, é que subluxa sob tração muscular. Portanto, a alternativa inverte o elemento retido e o móvel. Essa distinção explica a anatomia típica da Bennett e a dificuldade de manter a redução."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Base do polegar: Bennett, Rolando e a luxação da CMC."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Base do polegar: Bennett, Rolando e a luxação da CMC"
+    ],
+    "blocos": [
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c0e1dd7f",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-9dff678e",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-18bfbb63",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a309063a",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d9b8c24e",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-31cb80a3",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a0896335",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-289196fe",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-b955564c",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-bac0dc61",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-16d5ffd7",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d5577f5a",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-99fb6c68",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-fcc3fb2d",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-248199b1",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-178dc2ea",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c012e68f",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
+   }
+  ]
+ },
+ "mao-1103": {
+  "questaoSha256": "158360b8a9789f32c314e4c4369f66ca9726ac1652d217a1ad44c4bb41c00b30",
+  "comentarioAnteriorSha256": "dbee85a7413c99edaef30a9a8036f1978065e94891646571475e1c0148b3f55b",
+  "comentario": {
+   "conceito": "**A manobra de Jahss usa a falange proximal como alavanca para elevar a cabeça metacarpal desviada para volar.** Na fratura do colo do metacarpo, a angulação típica tem ápice dorsal. Para reduzi-la, é necessário levar a cabeça distal no sentido dorsal, desfazendo o afundamento volar.\n\nA MCF e a IFP são fletidas. Com a **MCF em flexão**, os ligamentos colaterais ficam tensionados e acoplam a falange proximal à cabeça do metacarpo. A pressão transmitida pela falange proximal consegue, então, mobilizar a cabeça no sentido dorsal. A técnica depende da articulação proximal posicionada e do sentido correto da força, não apenas de dobrar a ponta do dedo.\n\nA posição temporária de redução não deve ser confundida com a posição de imobilização prolongada. O resumo do Rockwood & Green, 10ª edição, capítulo 45, descreve proteção em intrínseca plus, com MCF fletidas e interfalângicas em extensão, para reduzir o risco de rigidez. Depois da redução, é necessário avaliar se o alinhamento se mantém e se há rotação.\n\n**Leia “Manobra de Jahss”**, na seção dos metacarpos do resumo da Biblioteca, para ligar a tensão dos colaterais à alavanca da falange proximal.",
+   "correta": "Fletem-se a **MCF e a IFP a 90°**, transmitindo força pela falange proximal no **sentido dorsal**. A MCF fletida tensiona os colaterais, permitindo que a falange controle a cabeça do metacarpo e a eleve. O resumo sustenta a flexão dessas articulações e o sentido dorsal da força; a redação da prova especifica os 90°. A combinação corrige a cabeça caída para volar.",
+   "incorretas": {
+    "B": "Fletir IFD e IFP sem posicionar a MCF não cria o mesmo acoplamento entre falange proximal e cabeça metacarpal. Além disso, o sentido proposto é volar, enquanto a cabeça precisa ser elevada para dorsal. A opção troca a articulação que tensiona os colaterais e a direção da redução. Dobrar duas articulações distais não reproduz a alavanca de Jahss.",
+    "C": "Com as articulações interfalângicas estendidas, a disposição descrita não utiliza a falange proximal fletida como alavanca da técnica. A pressão dorsal diretamente na MCF também não corresponde ao empurrão transmitido pela falange para elevar a cabeça. A pergunta exige a combinação de flexão e força dorsal sobre o fragmento distal. A alternativa omite justamente essa montagem.",
+    "D": "A MCF permanece em extensão, deixando de fornecer o tensionamento colateral necessário à alavanca da falange proximal. A flexão isolada da IFD não corrige esse problema. A compressão volar descrita ainda se opõe à elevação dorsal desejada da cabeça. Portanto, tanto o posicionamento quanto o vetor da força diferem da manobra solicitada."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+    ],
+    "blocos": [
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+   }
+  ]
+ }
+}
