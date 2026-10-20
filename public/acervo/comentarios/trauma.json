@@ -2735,15 +2735,59 @@
   "conferido": false
  },
  "trauma-0191": {
+  "conceito": "**A osteonecrose da tróclea pode produzir um defeito central ou uma perda mais extensa.** Os vasos medial e lateral da crista medial não se anastomosam entre si. A perda do território lateral produz o tipo A, chamado rabo de peixe, no ápice da tróclea; o comprometimento dos dois territórios leva ao tipo B, mais extenso.\n\nO capítulo associa o **tipo B ao côndilo medial e ao descolamento fisário total do úmero distal**. A necrose compromete toda a região troclear medial, podendo alcançar a metáfise e produzir **cúbito varo progressivo**, limitação de movimento e artrose precoce. O tipo A é relacionado à supracondiliana muito distal e ao côndilo lateral e costuma ter menos deformidade angular. A sequela pode tornar-se sintomática 4 a 8 anos depois, não necessariamente na fase aguda da fratura.",
+  "correta": "**D: côndilo medial ou descolamento fisário do úmero distal.** São as duas origens destacadas para o tipo B. A associação se relaciona à lesão vascular mais extensa, que compromete as fontes medial e lateral e pode causar varo progressivo com o crescimento.",
   "incorretas": {
-   "A": "A fratura do côndilo lateral gera o tipo A, em rabo de peixe.",
-   "B": "O côndilo lateral e a supracondiliana geram o tipo A.",
-   "C": "A supracondiliana gera o tipo A, em rabo de peixe."
+   "A": "**O côndilo medial é compatível com B, mas o lateral é a associação clássica do tipo A nesta classificação.** A alternativa mistura uma origem de cada padrão. Para B, o par solicitado é côndilo medial e descolamento fisário total.",
+   "B": "**Côndilo lateral e supracondiliana distal formam o par do tipo A.** Essas lesões se associam ao defeito central em rabo de peixe. A pergunta trata do tipo B, com necrose mais extensa e maior risco de deformidade angular progressiva.",
+   "C": "**O descolamento fisário está correto, mas a supracondiliana distal pertence ao par descrito para A.** A opção mistura os grupos. A outra origem do tipo B é a fratura do côndilo medial."
   },
-  "conceito": "A **tróclea** do úmero é irrigada por **ramos terminais**, sem anastomoses, que entram pela face **medial** e pela **lateral**. Lesões do úmero distal na criança podem interromper esse fluxo e causar **osteonecrose da tróclea**.\n\n**Os dois tipos de deformidade**:\n\n**tipo A, rabo de peixe**: necrose só da parte **lateral** da tróclea, onde fica o ramo lateral; cria um defeito central em V (rabo de peixe); vem das fraturas **supracondilianas** ou do **côndilo lateral**; costuma dar pouca deformidade angular;\n\n**tipo B**: necrose de **toda a porção medial**: toda a tróclea medial e às vezes a metáfise; vem das fraturas do **côndilo medial** ou do **descolamento fisário** do úmero distal; leva a **cúbito varo progressivo**, **instabilidade** e **artrose precoce**.\n\n**Por que o tipo B é mais grave**: perde-se a irrigação medial inteira, e o crescimento medial para enquanto o lateral continua, inclinando o cotovelo em varo.\n\n**Na prova**: a deformidade tipo B é sequela das fraturas do **côndilo medial** ou do **descolamento fisário** do úmero distal.",
-  "correta": "A fratura do côndilo medial e o descolamento fisário interrompem a irrigação de toda a tróclea medial: tipo B.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 17: Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures. Conteúdo consultado no resumo Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo, Biblioteca OrtoQuestões, seções Osteonecrose da tróclea."
+  ],
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+     "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+     "secoes": [
+      "Osteonecrose da tróclea"
+     ],
+     "blocos": [
+      "osteonecrose-da-troclea-7449514b",
+      "osteonecrose-da-troclea-4ee68ef7",
+      "osteonecrose-da-troclea-065f757d",
+      "osteonecrose-da-troclea-448c5ee3",
+      "osteonecrose-da-troclea-cef90e2c",
+      "osteonecrose-da-troclea-48064f9a",
+      "osteonecrose-da-troclea-c179bb5a",
+      "osteonecrose-da-troclea-21e2ec7a",
+      "osteonecrose-da-troclea-f32973a1",
+      "osteonecrose-da-troclea-e4f1fbfa",
+      "osteonecrose-da-troclea-579ac27d",
+      "osteonecrose-da-troclea-8289f8d0",
+      "osteonecrose-da-troclea-5407da7f",
+      "osteonecrose-da-troclea-d21b3dd2",
+      "osteonecrose-da-troclea-e84be102",
+      "osteonecrose-da-troclea-1606edb0",
+      "osteonecrose-da-troclea-090fda80",
+      "osteonecrose-da-troclea-5374fa5e",
+      "osteonecrose-da-troclea-aa096872"
+     ],
+     "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+     "trechosSha256": "b4f258cc86184b5ba438dcc86098f142f7ef428d1dd50e695c73176fca357e6b"
+    }
+   ],
+   "questaoSha256": "6e3def2b5d5f8269b628c74d669070629a4c57921aae8911c3d3d21663bc59c1",
+   "comentarioSha256": "16692269031740d795299e24ac706b74dc0615eb2ae20eb2b526bedf2cd33c73"
+  }
  },
  "trauma-0192": {
   "incorretas": {
