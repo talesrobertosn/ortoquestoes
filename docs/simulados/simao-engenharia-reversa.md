@@ -282,3 +282,42 @@ Cada nota de frente tem a lista. Os principais:
    assunto (epônimo, classificação, número ou caso).
 3. Use os distratores da família certa (epônimos vizinhos, números vizinhos, inversões).
 4. Lote com `PROVA = "SIMÃO"` e `AREA = "cirurgia-mao"`; `--conferir`; aplicar; validar.
+
+## SIMÃO 2023, prova espelhada (fechada em 20/10/2026)
+
+97 das 100 questões viraram OrtoQuestões Simulados com o selo "Inspirada no SIMÃO 2023" (mao-1932 a mao-2022;
+cotovelo em ombro-cotovelo-0658 a 0663). Ficaram sem fonte a 37 (osteoblastoma no punho: a correção cita o livro
+da SBCM de lesões não traumáticas), a 38 (sinal de Egawa, só listado no resumo) e a 89 (graus aceitáveis na falange
+proximal). Gabarito final: A 25, B 24, C 24, D 24.
+
+### Padrões desta prova
+- **Frase do Green virando questão**: muitas alternativas corretas são quase transcrições (zona segura de 110 graus
+  centrada 10 graus anterior; queixas residuais "emanam da coluna ulnar"; sequência reversa de Mayfield "permitindo
+  luxação perilunar dorsal"). Ler a frase inteira resolve a questão e mostra os distratores.
+- **Tabelas como questão**: Cooney (clinodactilia complexa = sindactilia; 45 graus separa a "complicada"), Kellam
+  (Apert = braquidactilia com sindactilia), Hotchkiss, Jupiter (Monteggia posterior tipo B, metafisária), Tabela 35.2
+  da embriologia (ZPA = sonic hedgehog; "fator de transcrição, Lmx-1" é a linha da via Wnt), Tabela 38.5 e 38.6.
+- **Questão repetida na prova**: a ordem da polidactilia central caiu duas vezes (23 e 62); a segunda virou outro
+  dado do mesmo parágrafo (70% a 90% com sindactilia).
+- **Itens confirmados no Green** da lista "a conferir": Cooney com corte de 45 graus (cap. 36, Tabela 36.7,
+  p. 1433); polidactilia central mais comum no anular, depois médio e indicador (cap. 36, p. 1387).
+
+### Divergências com a correção (explicadas no comentário de cada questão)
+- 9 (colo do metacarpo): a correção deu como certa "encurtamento acima de 1 cm associa-se a pseudogarra"; o
+  Green só diz que até 1 cm, sem pseudogarra, costuma ser tolerado. A alternativa correta passou a ser a frase do livro.
+- 15 (cisto sinovial): a correção marcou "mucina"; o Green diz que a mucina tem altas concentrações de ácido
+  hialurônico. A mucina foi para o enunciado.
+- 16 (Hotchkiss II): a alternativa da correção dizia "cominutiva"; o tipo II é desviado e sem cominuição grave.
+- 71 (perilunar dorsal): a resposta da banca (radioescafolunar e escafolunar dorsal) é a do padrão reverso
+  (cap. 13, p. 500); o enunciado passou a nomear o padrão.
+- 81 (portal 3-4): a banca juntou "Testut ou escafolunar"; são estruturas distintas, e a alternativa ficou
+  "TESTUT (radioescafolunar)".
+- 84 (ARUD crônica): duas afirmativas eram defensáveis; ficou a do desvio coronal, literal no Green.
+- 40 e 73: a direção (anterior) da luxação congênita da cabeça do rádio e a sequência clássica do reimplante vêm
+  dos resumos; o Green não elege uma direção e descreve outra sequência no seu centro.
+
+### Lições para as próximas provas
+- O Tales quer a questão bem próxima da original; mudar o ângulo só quando o original tiver defeito ou repetir.
+- Citação literal do Green com flexibilidade: muita quando a resposta é a letra do livro, nenhuma quando não acrescenta.
+- Conferir cada página na marca "===== ... p. N" acima da linha; três erros de página foram pegos assim (Tinel
+  p. 1157; SDRC p. 2013 e 2027; escafoide p. 679).

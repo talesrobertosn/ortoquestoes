@@ -1,19 +1,19 @@
 {
   "versao": 1,
-  "geradoEm": "2026-10-20T19:02:34-03:00",
-  "total": 7242,
+  "geradoEm": "2026-10-20T19:17:37-03:00",
+  "total": 7256,
   "temas": [
     {
       "slug": "mao",
       "nome": "Mão e punho",
       "arquivo": "temas/mao.json",
-      "total": 1858
+      "total": 1866
     },
     {
       "slug": "ombro-cotovelo",
       "nome": "Ombro e cotovelo",
       "arquivo": "temas/ombro-cotovelo.json",
-      "total": 539
+      "total": 545
     },
     {
       "slug": "quadril",
@@ -30980,6 +30980,146 @@
       "ar": "mao"
     },
     {
+      "id": "mao-2015",
+      "t": 0,
+      "s": [
+        27
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2016",
+      "t": 0,
+      "s": [
+        33
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2017",
+      "t": 0,
+      "s": [
+        29
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2018",
+      "t": 0,
+      "s": [
+        17,
+        38
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2019",
+      "t": 0,
+      "s": [
+        38,
+        11
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2020",
+      "t": 0,
+      "s": [
+        38,
+        3
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2021",
+      "t": 0,
+      "s": [
+        38,
+        11
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2022",
+      "t": 0,
+      "s": [
+        38
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
       "id": "ombro-cotovelo-0001",
       "t": 1,
       "s": [
@@ -39838,6 +39978,111 @@
       "c": 0,
       "cia": 0,
       "cc": 0,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0658",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0659",
+      "t": 1,
+      "s": [
+        66,
+        55
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0660",
+      "t": 1,
+      "s": [
+        48,
+        66
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0661",
+      "t": 1,
+      "s": [
+        48,
+        62
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0662",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0663",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
       "ar": "mao"
     },
     {
