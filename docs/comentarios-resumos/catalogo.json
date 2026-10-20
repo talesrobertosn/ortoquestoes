@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 2011,
+  "pendente": 2001,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 1,
   "pendente-inspecao-imagem": 193,
-  "revisada": 31
+  "revisada": 41
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -98,12 +98,12 @@
    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
    "estados": {
     "duplicada": 4,
-    "pendente": 152,
+    "pendente": 142,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 23,
-    "revisada": 31
+    "revisada": 41
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -9783,7 +9783,7 @@
    ],
    "prova": "IAUPE",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -9798,7 +9798,55 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "c330e054f9b17896cc67fe9325dcbbe5c41d361b0b0aa03eef4f0ec6a265ef94"
+   "questaoSha256": "c330e054f9b17896cc67fe9325dcbbe5c41d361b0b0aa03eef4f0ec6a265ef94",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Base do polegar: Bennett, Rolando e a luxação da CMC"
+      ],
+      "blocos": [
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c0e1dd7f",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-9dff678e",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-18bfbb63",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a309063a",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d9b8c24e",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-31cb80a3",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a0896335",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-289196fe",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-b955564c",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-bac0dc61",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-16d5ffd7",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d5577f5a",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-99fb6c68",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-fcc3fb2d",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-248199b1",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-178dc2ea",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c012e68f",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
+     }
+    ],
+    "questaoSha256": "c330e054f9b17896cc67fe9325dcbbe5c41d361b0b0aa03eef4f0ec6a265ef94",
+    "comentarioSha256": "da7028f7c743b74b53b0b1a888657defa3bc461cd0574c5f506e89ff992596a9"
+   }
   },
   "mao-0742": {
    "tema": "mao",
@@ -10549,7 +10597,7 @@
    ],
    "prova": "UFG",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -10564,7 +10612,50 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b4fdc926f3e14fa3edc9be206265df5306c3d0ea85e47cd26ac91733e8860765"
+   "questaoSha256": "b4fdc926f3e14fa3edc9be206265df5306c3d0ea85e47cd26ac91733e8860765",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+      ],
+      "blocos": [
+       "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f0b3c62d",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--5e47b491",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--ffe4052c",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--19bc2a68",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--3b06c67f",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c4eb7ed3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--18d69bf3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--6c2d666f",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--d98425d3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
+     }
+    ],
+    "questaoSha256": "b4fdc926f3e14fa3edc9be206265df5306c3d0ea85e47cd26ac91733e8860765",
+    "comentarioSha256": "0aadd048c4bb2843de6a4857ab1c69de740955aba43d54958eb9b5e47b28fe09"
+   }
   },
   "mao-0897": {
    "tema": "mao",
@@ -10752,7 +10843,7 @@
    ],
    "prova": "UFG",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -10767,7 +10858,51 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "344d7d111f64b7325f300d1981c30c61534e4f55966fd01317787835e9be333a"
+   "questaoSha256": "344d7d111f64b7325f300d1981c30c61534e4f55966fd01317787835e9be333a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Polegar: ligamento colateral ulnar e lesão de Stener"
+      ],
+      "blocos": [
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+     }
+    ],
+    "questaoSha256": "344d7d111f64b7325f300d1981c30c61534e4f55966fd01317787835e9be333a",
+    "comentarioSha256": "6298901e55e64080466c38f2ae18766cd5e5c4f7c870d8f3ea54045e4b52ff31"
+   }
   },
   "mao-0913": {
    "tema": "mao",
@@ -10776,7 +10911,7 @@
    ],
    "prova": "UFG",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -10791,7 +10926,70 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "787b0093cae371ed993d22dfb9e0f69cc7ba6bf9ba2852e4d1a74ba86ef88040"
+   "questaoSha256": "787b0093cae371ed993d22dfb9e0f69cc7ba6bf9ba2852e4d1a74ba86ef88040",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+     }
+    ],
+    "questaoSha256": "787b0093cae371ed993d22dfb9e0f69cc7ba6bf9ba2852e4d1a74ba86ef88040",
+    "comentarioSha256": "8cd7e84bb951cf67c05adb11aa1f939bfe372f63e4cef370876b5d2cec5a19f2"
+   }
   },
   "mao-0917": {
    "tema": "mao",
@@ -11136,7 +11334,7 @@
    ],
    "prova": "UFG",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11151,7 +11349,50 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "9cd9767465a129cc8fb90d88ef05661bf2d29914d24a86ad4f071013af1951db"
+   "questaoSha256": "9cd9767465a129cc8fb90d88ef05661bf2d29914d24a86ad4f071013af1951db",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+      ],
+      "blocos": [
+       "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f0b3c62d",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--5e47b491",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--ffe4052c",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--19bc2a68",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--3b06c67f",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c4eb7ed3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--18d69bf3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--6c2d666f",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--d98425d3",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
+     }
+    ],
+    "questaoSha256": "9cd9767465a129cc8fb90d88ef05661bf2d29914d24a86ad4f071013af1951db",
+    "comentarioSha256": "a0a2b6763a0f5d82b396b372ef726b412158912e5c8b369999df48b5afeb7f71"
+   }
   },
   "mao-0998": {
    "tema": "mao",
@@ -11332,7 +11573,7 @@
    ],
    "prova": "UFG",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11347,7 +11588,51 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "09699c4fe5f7b7da9ee87308d1d55aa938587a459876209e38a31517368b7c4c"
+   "questaoSha256": "09699c4fe5f7b7da9ee87308d1d55aa938587a459876209e38a31517368b7c4c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Polegar: ligamento colateral ulnar e lesão de Stener"
+      ],
+      "blocos": [
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+     }
+    ],
+    "questaoSha256": "09699c4fe5f7b7da9ee87308d1d55aa938587a459876209e38a31517368b7c4c",
+    "comentarioSha256": "335d4e775c0d58722a3c76b8ba9af0cee1c0d9d739c0d5951cf077412aaf473f"
+   }
   },
   "mao-1030": {
    "tema": "mao",
@@ -11820,7 +12105,7 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11835,7 +12120,70 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "12fd982e99d271aa0ce54d4e99b7e542c0c5a2f9e8f96c36f3c4db82c7fad089"
+   "questaoSha256": "12fd982e99d271aa0ce54d4e99b7e542c0c5a2f9e8f96c36f3c4db82c7fad089",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+     }
+    ],
+    "questaoSha256": "12fd982e99d271aa0ce54d4e99b7e542c0c5a2f9e8f96c36f3c4db82c7fad089",
+    "comentarioSha256": "d4d10e6dc0d02929003b70c0022ae3d396f3b1fbb27c0e08b29a401deeaefa4e"
+   }
   },
   "mao-1069": {
    "tema": "mao",
@@ -12401,7 +12749,7 @@
    ],
    "prova": "PUC-SP",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12416,7 +12764,51 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "15ea05ea6b2df62d7dcbb8fd22d6a15caa766ed874bd35127f054fc501d0d355"
+   "questaoSha256": "15ea05ea6b2df62d7dcbb8fd22d6a15caa766ed874bd35127f054fc501d0d355",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Polegar: ligamento colateral ulnar e lesão de Stener"
+      ],
+      "blocos": [
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+     }
+    ],
+    "questaoSha256": "15ea05ea6b2df62d7dcbb8fd22d6a15caa766ed874bd35127f054fc501d0d355",
+    "comentarioSha256": "465baca0ad93697caa7fb95947f349e0e625dd653a38fad82059933824727607"
+   }
   },
   "mao-1143": {
    "tema": "mao",
@@ -13420,7 +13812,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -13435,7 +13827,70 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "21391a442cd9b38fea6310a10860ff272ce011b6a35ba70d2bd3f7ea62d3dcaf"
+   "questaoSha256": "21391a442cd9b38fea6310a10860ff272ce011b6a35ba70d2bd3f7ea62d3dcaf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+     }
+    ],
+    "questaoSha256": "21391a442cd9b38fea6310a10860ff272ce011b6a35ba70d2bd3f7ea62d3dcaf",
+    "comentarioSha256": "e7a3f8278ef85e29e89c1829f66a86d8d33942857e5749905f4df24955372076"
+   }
   },
   "mao-1496": {
    "tema": "mao",
@@ -13444,7 +13899,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -13459,7 +13914,70 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "7cd299f3483d4caa7d8e79eba8ceeeee896f648a38b3669338781b77ffbb9e03"
+   "questaoSha256": "7cd299f3483d4caa7d8e79eba8ceeeee896f648a38b3669338781b77ffbb9e03",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+      ],
+      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+     }
+    ],
+    "questaoSha256": "7cd299f3483d4caa7d8e79eba8ceeeee896f648a38b3669338781b77ffbb9e03",
+    "comentarioSha256": "173d6b1e6c653f72c4800ad3b0de0484ab89e41a145dd60aae2df993a51fdc7d"
+   }
   },
   "mao-1498": {
    "tema": "mao",

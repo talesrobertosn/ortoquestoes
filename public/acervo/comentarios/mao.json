@@ -8990,20 +8990,67 @@
   "conferido": false
  },
  "mao-0741": {
-  "conceito": "**As fraturas da base do primeiro metacarpo se dividem em intra e extra-articulares.**\n\n| Fratura | Descrição | Tratamento habitual |\n|---|---|---|\n| **Bennett** | Intra-articular em **dois fragmentos**: o fragmento volar-ulnar fica no lugar (preso pelo ligamento oblíquo anterior), e a diáfise sobe e se desloca dorsal e radialmente pela tração do **abdutor longo do polegar** e aduz pelo adutor | Redução (tração, pronação, abdução) e fixação, percutânea ou aberta |\n| **Rolando** | **Intra-articular cominutiva** (classicamente em Y ou T, três fragmentos ou mais) | Fixação aberta se os fragmentos permitem; fixação externa ou tração se muito cominutiva |\n| Epibasal | Extra-articular, transversa ou oblíqua | Muitas vezes conservador; tolera angulação de até cerca de 30 graus pela mobilidade da carpometacarpal |\n\nRolando descreveu em 1910 a fratura em Y; o nome passou a ser usado para qualquer fratura cominutiva intra-articular da base do 1º metacarpo. O prognóstico é pior que o da Bennett, com mais artrose da trapeziometacarpal.",
-  "correta": "**Fratura cominutiva intra-articular da base do 1º metacarpo.** É o que define a fratura de Rolando, classicamente em Y ou T.",
+  "conceito": "**Rolando é a fratura intra-articular cominutiva da base do primeiro metacarpo.** O padrão clássico tem traço em Y ou T e é articular completo: a superfície articular fica separada da diáfise. A perda de um bloco articular simples dificulta a reconstrução e diferencia a Rolando da fratura de Bennett.\n\nNa **Bennett**, a fratura é articular parcial. O pequeno fragmento volar-ulnar conserva a ligação ao trapézio pelo ligamento oblíquo anterior; a parte maior da base, unida à diáfise, subluxa para proximal, radial e dorsal. Na Rolando, a definição exige reconhecer a cominuição intra-articular, e não apenas chamar qualquer lesão da base de fratura-luxação.\n\nAs duas envolvem a CMC do polegar, mas a geometria do traço muda a escolha da estabilização. O resumo descreve fios e ligamentotaxia para auxiliar redução, placas quando há fragmentos reconstruíveis e fixador em ponte na cominuição grave. O objetivo é recuperar uma relação concêntrica com o trapézio, sem presumir que toda fratura da base tenha o mesmo padrão.\n\n**Leia “Fratura de Rolando”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na seção da base do polegar da Biblioteca.",
+  "correta": "A alternativa B reúne localização, comprometimento articular e **cominuição**, os elementos que definem a Rolando. O desenho clássico em Y ou T separa a superfície articular da diáfise. Isso é mais específico que simplesmente dizer fratura-luxação da base. A palavra “intra-articular” também a distingue de uma fratura diafisária ou de uma luxação ligamentar pura.",
   "incorretas": {
-   "A": "Fratura-luxação da base do 1º metacarpo em dois fragmentos descreve a fratura de Bennett.",
-   "C": "A fratura extra-articular da base é a epibasal; a de diáfise é outra entidade.",
-   "D": "Fratura da falange proximal com rotação não tem relação com a fratura de Rolando.",
-   "E": "Luxação pura da carpometacarpal do polegar é outra lesão, sem fratura."
+   "A": "“Fratura-luxação da base” é uma descrição ampla que pode sugerir Bennett, mas não identifica a cominuição articular completa da Rolando. A pergunta solicita a característica principal, e a opção B é a que a fornece. Sem descrever o padrão dos fragmentos, a alternativa não distingue as duas lesões. Portanto, é menos específica que a definição exigida.",
+   "C": "Uma fratura extra-articular da diáfise não alcança a superfície da base que articula com o trapézio. Rolando compromete justamente essa superfície e tem cominuição. A alternativa troca tanto a região do osso quanto a relação com a articulação. Não é uma variação de orientação do mesmo traço.",
+   "D": "A falange proximal é outro osso, distal à metacarpofalângica. Rolando fica na base do primeiro metacarpo, junto à CMC do polegar. Rotação de uma fratura falangeana pode comprometer função, mas não define esse epônimo. A alternativa desloca a lesão para outro nível anatômico.",
+   "E": "Luxação simples da CMC é perda da relação articular sem a fratura cominutiva que caracteriza Rolando. O resumo aborda a luxação ligamentar pura como uma entidade distinta, que também pode ser instável após redução. O comprometimento ósseo intra-articular é essencial à resposta. Logo, não basta mencionar a mesma articulação."
   },
   "referencias": [
-   "Rolando S. Fracture de la base du premier métacarpien: et principalement sur une variété non encore décrite. Presse Med. 1910;33:303.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de fraturas dos metacarpos."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Base do polegar: Bennett, Rolando e a luxação da CMC."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Base do polegar: Bennett, Rolando e a luxação da CMC"
+     ],
+     "blocos": [
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c0e1dd7f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-9dff678e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-18bfbb63",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a309063a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d9b8c24e",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-31cb80a3",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-a0896335",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-289196fe",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-b955564c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-bac0dc61",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-16d5ffd7",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-d5577f5a",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-99fb6c68",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-fcc3fb2d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-248199b1",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-178dc2ea",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-c012e68f",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
+    }
+   ],
+   "questaoSha256": "c330e054f9b17896cc67fe9325dcbbe5c41d361b0b0aa03eef4f0ec6a265ef94",
+   "comentarioSha256": "da7028f7c743b74b53b0b1a888657defa3bc461cd0574c5f506e89ff992596a9"
+  }
  },
  "mao-0742": {
   "conceito": "**A doença de Preiser é a necrose avascular idiopática do escafoide, sem fratura prévia.** É rara, e a irrigação retrógrada do escafoide (ramos dorsais da artéria radial entrando pelo dorso distal) explica a vulnerabilidade do polo proximal.\n\n**Classificação de Herbert e Lanzetta (pela radiografia e RM):**\n\n| Estágio | Achados |\n|---|---|\n| I | Radiografia normal, alteração na RM |\n| II | Aumento de densidade do polo proximal |\n| III | Fragmentação do polo proximal |\n| IV | Colapso com artrose |\n\nA classificação de Kalainov pela RM distingue o tipo 1 (necrose de todo o escafoide, pior prognóstico) do tipo 2 (necrose parcial, geralmente do polo proximal).\n\n**Para não confundir as necroses do punho e da mão:**\n- Preiser: escafoide;\n- Kienböck: semilunar;\n- Dieterich: cabeça dos metacarpos;\n- Thiemann: epífises das falanges.",
@@ -11489,21 +11536,61 @@
   "conferido": false
  },
  "mao-0896": {
-  "conceito": "**Luxação simples ou complexa?** As luxações dorsais da metacarpofalângica (MF) ocorrem por hiperextensão. Na **luxação simples** (subluxação), a falange proximal fica apoiada sobre o dorso da cabeça do metacarpo em hiperextensão de 60 a 90 graus, mas a placa volar continua à frente da cabeça; a redução fechada costuma funcionar. Na **luxação complexa**, descrita por Kaplan em 1957 para o indicador, a placa volar se rompe na sua inserção proximal, mais fraca, desloca-se dorsalmente junto com a falange e fica presa entre a base da falange e a cabeça do metacarpo. É uma luxação irredutível por manobra fechada.\n\n**Por que o indicador?** O indicador é o dedo mais exposto a hiperextensão em quedas com a mão espalmada, e a anatomia em volta da cabeça do segundo metacarpo forma um verdadeiro laço. A cabeça do metacarpo é empurrada para a palma e fica presa como um botão numa casa de botão.\n\n| Posição em relação à cabeça do metacarpo | Estrutura |\n|---|---|\n| Radial | Lumbrical |\n| Ulnar | Tendões flexores (superficial e profundo) |\n| Proximal | Ligamento transverso superficial do metacarpo (fibras da fáscia palmar) |\n| Distal | Ligamento natatório |\n| Dorsal (entre a cabeça e a falange) | Placa volar interposta |\n\nNo polegar, as estruturas equivalentes são os sesamoides com a placa volar e o flexor longo do polegar, e no dedo mínimo, os flexores e o abdutor do quinto dedo.\n\n**Como reconhecer?** A MF fica em discreta hiperextensão, com o dedo quase alinhado e desviado em direção ulnar. Na palma, sobre a cabeça do metacarpo, aparece uma covinha na pele, pois a fáscia é tracionada. Na radiografia, o espaço articular está alargado e, quando há um sesamoide incluído na placa, ele aparece dentro da articulação, sinal muito sugestivo de interposição.\n\n**Erros que pioram.** Tentar reduzir com tração longitudinal ou hiperextensão forçada pode converter uma luxação simples em complexa, porque arrasta a placa volar para dentro da articulação. A manobra correta para a forma simples é flexionar o punho para relaxar os flexores e empurrar a base da falange para distal e volar, deslizando-a sobre a cabeça do metacarpo.\n\n**Tratamento da forma complexa.** Redução aberta. Na via volar (Kaplan), a placa e o laço são abordados diretamente, mas o nervo digital radial do indicador fica tenso e superficial sobre a cabeça do metacarpo, logo abaixo da pele, e pode ser cortado na incisão. Na via dorsal (Becton), divide-se a placa volar longitudinalmente para permitir a redução; é mais segura para os nervos e permite tratar fraturas osteocondrais da cabeça. Depois, mobilização precoce com bloqueio de extensão.\n\n> A estrutura que bloqueia a redução é a placa volar interposta. Lumbrical e flexores formam o laço que prende a cabeça do metacarpo, mas o bloqueio direto é a placa.",
-  "correta": "**B: a placa volar.** Na luxação complexa da MF do indicador, a placa volar se desinsere do colo do metacarpo, a parte mais fraca da sua fixação, e é arrastada dorsalmente com a falange proximal, ficando interposta entre a base da falange e a cabeça do metacarpo. Ela funciona como um calço que impede o retorno à posição normal. Mesmo que o laço formado pelo lumbrical e pelos flexores fosse aliviado, a placa permaneceria no caminho, por isso a redução fechada falha e a cirurgia aberta é indicada. Um sesamoide dentro da articulação na radiografia é um sinal que reforça o diagnóstico.",
+  "conceito": "**Na luxação dorsal complexa da MCF do indicador, o bloqueio principal é a placa volar interposta.** A hiperextensão rompe a placa volar em sua região proximal, junto ao colo do metacarpo. Na forma simples, a falange ainda conserva contato com o dorso da cabeça e a redução pode ser obtida sem cirurgia. Na complexa, a cabeça atravessa os tecidos volares e a placa fica entre ela e a falange.\n\nKaplan descreveu um laço de estruturas que apertam o colo: lumbrical de um lado, flexor do outro, ligamento natatório distal e transverso superficial proximal. Essas estruturas participam da deformidade, mas o obstáculo intra-articular característico é a **placa volar**. Um sesamoide visível no espaço articular reforça a suspeita de interposição.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, alerta para evitar tração e hiperextensão na redução, que podem converter um padrão simples em complexo. Quando a redução aberta é necessária, a via dorsal permite abordar a placa com menor exposição dos feixes digitais; a via volar exige atenção a esses feixes e pode incluir liberação da A1.\n\n**Leia “Luxação metacarpofalângica: simples, complexa e o laço de Kaplan”**, no resumo da Biblioteca, para distinguir os componentes do laço da estrutura interposta.",
+  "correta": "A placa volar ocupa o espaço entre a cabeça do metacarpo e a falange proximal e impede que as superfícies retomem a relação normal. Ela é, portanto, o principal bloqueio mecânico da luxação complexa. As outras estruturas listadas ajudam a formar o laço que aperta o colo, mas isso não as torna o obstáculo intra-articular principal. A letra B é a resposta pela bibliografia.",
   "incorretas": {
-   "A": "**O flexor profundo participa do laço, mas não é a estrutura interposta.** Ele, junto com o flexor superficial, fica do lado ulnar da cabeça do metacarpo e a aperta contra o lumbrical, do lado radial, dificultando a redução fechada. Contudo, ele não fica entre as superfícies articulares. Na luxação complexa do polegar, o flexor longo do polegar pode ter papel de bloqueio mais direto, o que pode confundir quem generaliza para todos os dedos.",
-   "C": "**O lumbrical também forma o laço, do lado radial, mas não se interpõe na articulação.** O primeiro lumbrical corre radial à cabeça do segundo metacarpo e, junto com os flexores do lado ulnar, prende o colo do metacarpo. Seccionar ou afastar o lumbrical pode ajudar na redução aberta, mas a estrutura que bloqueia diretamente o encaixe articular é a placa volar.",
-   "D": "**O ligamento natatório limita o laço distalmente, mas está fora da articulação.** Ele é formado por fibras transversais da fáscia palmar nas comissuras e fica distal à cabeça do metacarpo, completando o anel com o ligamento transverso superficial, mais proximal. É relevante na anatomia da doença de Dupuytren e participa do aprisionamento, mas não se coloca entre as superfícies articulares."
+   "A": "O tendão flexor fica de um dos lados da cabeça e integra o laço que contribui para aprisioná-la. Entretanto, no padrão clássico da MCF do indicador, quem se interpõe entre as superfícies é a placa volar. O flexor pode ser relaxado por ajustes de posição ou liberação apropriada, mas isso não muda a definição do obstáculo principal. A opção descreve um participante, não o elemento decisivo solicitado.",
+   "C": "O lumbrical forma um dos lados do laço de partes moles em torno do colo metacarpal. Ele participa da anatomia da luxação complexa, mas não é a principal estrutura interposta na articulação. A resposta exige distinguir a contenção externa do colo do bloqueio entre cabeça e falange. No resumo, esse bloqueio é a placa volar.",
+   "D": "O ligamento natatório forma o limite distal do laço descrito por Kaplan. Ele participa do aprisionamento de partes moles em torno do colo, mas não é a estrutura interposta entre a cabeça e a falange. A placa volar é o principal bloqueio intra-articular desse padrão. A alternativa confunde um componente do laço com o obstáculo que deve ser liberado para reduzir."
   },
   "referencias": [
-   "Kaplan EB. Dorsal dislocation of the metacarpophalangeal joint of the index finger. J Bone Joint Surg Am. 1957;39-A(5):1081-1086.",
-   "Becton JL, Christian JD Jr, Goodwin HN, Jackson JG 3rd. A simplified technique for treating the complex dislocation of the index metacarpophalangeal joint. J Bone Joint Surg Am. 1975;57(5):698-700.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de luxações e lesões ligamentares dos dedos.",
-   "Rockwood and Green's Fractures in Adults. 9ª ed. Wolters Kluwer; 2019. Luxações metacarpofalângicas."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+     ],
+     "blocos": [
+      "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f0b3c62d",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--5e47b491",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--ffe4052c",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--19bc2a68",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--3b06c67f",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c4eb7ed3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--18d69bf3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--6c2d666f",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--d98425d3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
+    }
+   ],
+   "questaoSha256": "b4fdc926f3e14fa3edc9be206265df5306c3d0ea85e47cd26ac91733e8860765",
+   "comentarioSha256": "0aadd048c4bb2843de6a4857ab1c69de740955aba43d54958eb9b5e47b28fe09"
+  }
  },
  "mao-0897": {
   "conceito": "**O que é a doença de Preiser?** É a osteonecrose do escafoide sem fratura prévia, descrita por Georg Preiser em 1910, no mesmo ano em que Kienböck descreveu a necrose do semilunar. É rara. A causa é desconhecida, mas o terreno é conhecido: o escafoide recebe a maior parte do sangue por ramos da artéria radial que entram pela crista dorsal, na cintura e no polo distal, e o fluxo para o polo proximal é retrógrado, de distal para proximal. Esse polo, quase todo coberto de cartilagem, depende de vasos intraósseos e fica vulnerável. Alguns pacientes têm fatores associados a osteonecrose, como corticoide, quimioterapia, álcool, lúpus ou microtraumas repetidos, mas muitos casos são idiopáticos.\n\n**Como se apresenta?** Dor no punho radial e dorsal, sem trauma relevante, com redução de movimento e de força. No início, a radiografia é normal e a ressonância mostra edema ou ausência de sinal de medula viável. Com a progressão, o polo proximal se torna denso, depois fragmenta, o escafoide perde a forma e o carpo colapsa, levando a artrose em padrão semelhante ao do colapso por pseudartrose do escafoide.\n\n**Classificação radiográfica de Herbert e Lanzetta (1994).** Acompanha essa progressão e orienta o tratamento.\n\n| Estágio | Achado | Interpretação |\n|---|---|---|\n| I | Radiografia normal; cintilografia ou ressonância alteradas | Fase precoce, osso ainda com forma normal |\n| II | Aumento de densidade do polo proximal (esclerose) | Necrose estabelecida, sem deformidade |\n| III | Fragmentação do polo proximal, com ou sem fratura patológica; alteração do formato | O escafoide perde a integridade estrutural |\n| IV | Colapso do carpo e artrose | Doença degenerativa estabelecida |\n\nA ressonância também é classificada, por Kalainov: tipo 1, necrose de todo o escafoide, com pior prognóstico; tipo 2, necrose parcial, geralmente do polo proximal, com melhor evolução.\n\n**Tratamento conforme o estágio.** Nas fases iniciais, imobilização, retirada de fatores de risco e, se não houver melhora, perfuração ou descompressão e enxerto ósseo vascularizado (do rádio distal, como o 1,2 ICSRA, ou livre do côndilo femoral medial). Com fragmentação, o enxerto ainda pode ser tentado se a cartilagem estiver boa; caso contrário, opções de salvamento como excisão do escafoide com artrodese dos quatro cantos ou carpectomia proximal. Na artrose, as cirurgias de salvamento são a regra.\n\n> “Alteração do formato” e “fragmentado” são as palavras do estágio III. Esclerose isolada é II; colapso do carpo com artrose é IV.",
@@ -11795,36 +11882,139 @@
   "conferido": false
  },
  "mao-0912": {
-  "conceito": "**Por que o ligamento colateral ulnar (LCU) do polegar é tão importante?** Na pinça entre o polegar e o indicador, a força empurra o polegar em direção radial. Quem resiste a esse desvio na metacarpofalângica (MF) é o LCU. Sem ele, a pinça fica fraca e dolorosa, e com o tempo a MF desenvolve artrose. A lesão aguda é chamada **polegar do esquiador**; a forma crônica, por estresse repetido, foi descrita como **polegar do guarda-caça** (gamekeeper's thumb).\n\n**Anatomia.** O LCU tem dois componentes: o próprio, mais dorsal, tenso em flexão, e o acessório, mais volar, tenso em extensão. Ele nasce na cabeça do metacarpo e se insere na base da falange proximal, onde costuma romper. Superficialmente a ele passa a **aponeurose do adutor do polegar**, que se insere no aparelho extensor.\n\n**A lesão de Stener.** Quando o ligamento se rompe na inserção distal, o coto pode se deslocar proximalmente e ficar por fora da borda da aponeurose do adutor. A aponeurose passa a ficar entre o ligamento e a falange, e ele nunca mais se encosta no lugar certo. A lesão ocorre em uma parcela grande das rupturas completas e não cicatriza com imobilização. Às vezes se palpa um nódulo no lado ulnar da cabeça do metacarpo, que é o coto do ligamento.\n\n**Como avaliar.** Testa-se o estresse radial da MF em extensão completa (avalia o ligamento acessório e a placa volar) e em 30 graus de flexão (avalia o ligamento próprio). Ruptura completa é sugerida por abertura acima de 30 a 35 graus ou mais de 15 graus a mais que o lado oposto, especialmente sem ponto final firme. Antes do teste, uma radiografia exclui fratura. Ultrassom ou ressonância podem mostrar o deslocamento do coto.\n\n**Tratamento.**\n\n| Situação | Conduta habitual |\n|---|---|\n| Lesão parcial | Imobilização em órtese por cerca de 4 a 6 semanas |\n| Lesão completa | Reparo cirúrgico com âncora ou ponto transósseo, pela alta chance de Stener |\n| Fratura avulsão sem desvio | Imobilização |\n| Fratura avulsão desviada ou rodada | Fixação do fragmento |\n| Lesão crônica sem artrose | Reconstrução com enxerto de tendão |\n| Lesão crônica com artrose | Artrodese da MF |\n\nAlguns serviços tratam a ruptura completa sem Stener confirmada por imagem com imobilização, mas a conduta tradicional cobrada em prova é a cirurgia.\n\n> Ruptura completa do LCU: opere, porque a aponeurose do adutor frequentemente se interpõe e o exame nem sempre a detecta.",
-  "correta": "**A: as lesões completas, mesmo sem interposição da aponeurose, têm indicação de cirurgia.** A lesão de Stener ocorre em uma grande proporção das rupturas completas e não é confiavelmente detectada pelo exame físico. Além disso, mesmo sem interposição, o ligamento completamente rompido pode cicatrizar alongado e deixar instabilidade na pinça. Por isso a indicação clássica é reparar todas as lesões completas, geralmente com âncora na base da falange proximal. Há serviços que, com ultrassom ou ressonância excluindo Stener, testam tratamento conservador, mas a resposta tradicional, e a esperada pela banca, é cirúrgica.",
+  "conceito": "**Ruptura completa do LCU e lesão de Stener são conceitos relacionados, mas diferentes.** Na ruptura completa, a MCF do polegar perde a contenção ulnar e pode não apresentar ponto final firme ao estresse radial. Stener acrescenta uma barreira: o coto rompido fica superficial à aponeurose do adutor, que o separa da inserção óssea.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, descreve cirurgia como conduta usual para a ruptura completa, pelo risco de interposição e falha de cicatrização. Se for considerada uma opção conservadora, é necessário excluir Stener por avaliação complementar adequada. Portanto, não demonstrar interposição não torna toda ruptura completa uma lesão de tratamento obrigatoriamente conservador.\n\nO local mais frequente de ruptura é distal, na base da falange proximal. Pequenas avulsões ósseas podem ter má evolução mesmo com pouco desvio porque o fragmento pode rodar. Entretanto, **tamanho e desvio do fragmento não comprovam Stener**: a definição exige a aponeurose interposta.\n\n**Leia “Tratamento” e “O que é a lesão de Stener”**, na seção do LCU do polegar do resumo da Biblioteca.",
+  "correta": "As rupturas completas usualmente têm indicação de reparo, mesmo quando não há interposição aponeurótica demonstrada. A instabilidade e a ausência de ponto final firme também importam. Isso é diferente de afirmar que toda ruptura completa é Stener. O resumo admite considerar tratamento conservador em situações selecionadas, desde que a interposição seja excluída; a opção A expressa a recomendação predominante cobrada pela banca.",
   "incorretas": {
-   "B": "**Oito semanas de imobilização é mais que o habitual.** Quando se opta por tratamento conservador, como nas lesões parciais, a imobilização com órtese do polegar dura cerca de 4 a 6 semanas, seguida de proteção durante atividades de risco. Imobilizar por tempo excessivo aumenta a rigidez da MF e não melhora a cicatrização. Além disso, nas lesões totais, o tratamento padrão não é conservador.",
-   "C": "**O ligamento costuma se romper na inserção distal, na base da falange proximal, e não na cabeça do metacarpo.** É justamente por romper distalmente que o coto pode ser levado proximalmente e ficar fora da aponeurose do adutor, formando a lesão de Stener. Rupturas proximais, na origem do metacarpo, e no meio do ligamento existem, mas são menos frequentes.",
-   "D": "**Um pequeno fragmento com desvio menor que 2 mm não indica lesão de Stener.** Quando há avulsão óssea, o fragmento mostra onde está o ligamento: se continua junto à base da falange, com desvio mínimo, o ligamento está no lugar e geralmente se trata com imobilização. Suspeita-se de Stener quando o fragmento está bem deslocado, rodado ou posicionado proximalmente, junto à cabeça do metacarpo. A alternativa inverte o significado radiográfico."
+   "B": "A opção transforma oito semanas de imobilização em uma regra para rupturas completas, sem discutir a estabilidade e a presença de Stener. O resumo prioriza cirurgia nas completas e descreve quatro semanas de tala para graus I e II, que não equivalem a uma ruptura total. Prolongar imobilização não remove uma aponeurose interposta. Tempo de tala não substitui a definição anatômica da lesão.",
+   "C": "A avulsão mais comum é na **falange proximal**, distalmente, e não na cabeça do metacarpo. Lesões na origem metacarpal podem ocorrer, mas a pergunta apresenta uma afirmação de frequência. O local predominante é importante para compreender o deslocamento do coto em relação à aponeurose do adutor. A alternativa troca uma possibilidade pelo padrão mais comum.",
+   "D": "Uma pequena avulsão com menos de 2 mm de desvio não demonstra que a aponeurose esteja interposta. O resumo cita avulsões pouco desviadas que evoluíram mal com gesso, mas isso não as transforma automaticamente em Stener. É possível existir rotação do fragmento e instabilidade sem o bloqueio aponeurótico clássico. A alternativa confunde indicação de atenção ou reparo com um diagnóstico anatômico específico."
   },
   "referencias": [
-   "Stener B. Displacement of the ruptured ulnar collateral ligament of the metacarpo-phalangeal joint of the thumb: a clinical and anatomical study. J Bone Joint Surg Br. 1962;44(4):869-879.",
-   "Campbell CS. Gamekeeper's thumb. J Bone Joint Surg Br. 1955;37-B(1):148-149.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de lesões ligamentares do polegar."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Polegar: ligamento colateral ulnar e lesão de Stener."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Polegar: ligamento colateral ulnar e lesão de Stener"
+     ],
+     "blocos": [
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+    }
+   ],
+   "questaoSha256": "344d7d111f64b7325f300d1981c30c61534e4f55966fd01317787835e9be333a",
+   "comentarioSha256": "6298901e55e64080466c38f2ae18766cd5e5c4f7c870d8f3ea54045e4b52ff31"
+  }
  },
  "mao-0913": {
-  "conceito": "**O que importa numa fratura de metacarpo?** Três desvios podem ocorrer: encurtamento, angulação e rotação. Cada um é tolerado de forma diferente.\n- **Rotação:** é o desvio menos tolerado. Como os dedos convergem para o escafoide ao fletir, uma rotação pequena no metacarpo se amplia na ponta do dedo: cerca de 5 graus de rotação podem causar sobreposição de aproximadamente 1,5 cm. O exame clínico com os dedos fletidos, observando a cascata e o alinhamento das unhas, é a melhor forma de detectá-la.\n- **Angulação:** os metacarpos do indicador e do médio têm pouca mobilidade na carpometacarpal, por isso toleram pouca angulação no colo. O anular e o mínimo têm mais mobilidade e toleram mais.\n- **Encurtamento:** cada 2 mm de encurtamento produz alguns graus de perda de extensão (extensor lag), mas o encurtamento de alguns milímetros costuma ser bem tolerado.\n\n**Angulação aceitável no colo do metacarpo (valores de referência, variáveis entre autores).**\n\n| Metacarpo | Angulação aceitável |\n|---|---|\n| Indicador e médio | Cerca de 10 a 15 graus |\n| Anular | Cerca de 30 a 40 graus |\n| Mínimo | Cerca de 40 a 70 graus |\n\nNas fraturas da diáfise, os limites são menores, porque a angulação na diáfise compromete mais o equilíbrio dos tendões e a aparência.\n\n**Escolha do implante segundo o traço.**\n\n| Traço | Fixação mais indicada |\n|---|---|\n| Transverso ou oblíquo curto | Placa (em compressão) ou fio ou parafuso intramedular |\n| Oblíquo longo ou espiral | Parafusos interfragmentários isolados, se o traço tiver pelo menos duas vezes o diâmetro do osso |\n| Cominutivo ou com perda óssea | Placa em ponte ou fixador externo |\n\nO parafuso interfragmentário (técnica de compressão) só funciona quando o traço é longo, porque precisa de ao menos dois parafusos separados, com espaço entre eles e longe das pontas. Num traço curto ou transverso, não há área para isso, e a estabilidade vem da placa, que neutraliza as forças, ou de um implante intramedular.\n\n> Rotação é o desvio mais importante. Traço curto: placa ou intramedular. Traço longo (duas vezes o diâmetro): parafusos interfragmentários.",
-  "correta": "**A: a fixação com placas ou fios intramedulares deve ser feita nas fraturas oblíquas curtas ou transversas.** Nesses traços, a área de contato entre os fragmentos é pequena e não permite colocar parafusos interfragmentários de forma eficaz. A estabilidade precisa vir de um implante que funcione como tutor: a placa dorsal, que pode comprimir o traço transverso, ou um fio ou parafuso intramedular, que alinha os fragmentos e permite mobilização precoce com mínima agressão aos tendões extensores. A escolha entre eles depende do local da fratura, da cominuição e do perfil do paciente.",
+  "conceito": "**A geometria do traço e a rotação ajudam a escolher o tratamento da fratura metacarpal.** Traços oblíquos longos ou espirais oferecem área para parafusos interfragmentários. Nos transversos e oblíquos curtos, falta extensão longitudinal para esse tipo de fixação isolada, e placas ou dispositivos intramedulares são opções conforme estabilidade e condições locais.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, exige comprimento do traço maior que duas vezes o diâmetro do osso para parafusos de tração isolados, com preferência dos autores por mais de três vezes nos metacarpos. Um terço do diâmetro é o oposto dessa exigência e não oferece a superfície necessária para a montagem.\n\nA **rotação** deve ser pesquisada ao fechar a mão: cruzamento dos dedos compromete a preensão e não é compensado pela mobilidade da CMC. Angulação tem tolerâncias diferentes por raio; o colo do quinto aceita mais desvio que os metacarpos centrais. O resumo descreve até cerca de 50° no colo do mínimo, não um teto universal de 20°.\n\n**Leia “Quando operar e com quê” e “Por que cada dedo tolera um desvio”**, na seção dos metacarpos do resumo da Biblioteca.",
+  "correta": "Placas e fixações intramedulares são possibilidades para traços **transversos ou oblíquos curtos** que precisam de estabilização. Esses padrões não oferecem o traço longo necessário ao parafuso interfragmentário isolado. A afirmação deve ser entendida como escolha de montagem quando há indicação cirúrgica, e não como obrigação de operar toda fratura desse formato. Ela é a única que respeita os princípios descritos entre as opções.",
   "incorretas": {
-   "B": "**O traço oblíquo longo deve ter pelo menos duas vezes o diâmetro do osso, e não um terço.** Para usar parafusos interfragmentários isolados, é preciso espaço para pelo menos dois parafusos, bem afastados entre si e das pontas do traço, para que a compressão estabilize a fratura. Um traço de um terço do diâmetro seria praticamente transverso, sem espaço para isso. A proporção da alternativa está invertida.",
-   "C": "**O desvio mais importante é a rotação, não a angulação.** A rotação é pouco tolerada porque se amplia nos dedos durante a flexão, causando sobreposição e prejuízo funcional que não melhora com remodelação. A angulação, sobretudo no colo do quarto e do quinto metacarpos, é bem tolerada até certos limites, graças à mobilidade da carpometacarpal. Por isso, na avaliação, deve-se sempre pedir ao paciente que feche a mão e observar a convergência dos dedos.",
-   "D": "**No colo do quinto metacarpo, aceitam-se angulações bem maiores que 20 graus.** A carpometacarpal do quinto dedo tem grande mobilidade e compensa a angulação. Os valores de referência variam entre autores, mas a maioria aceita algo em torno de 40 a 70 graus, desde que não haja desvio rotacional nem perda de extensão importante. Um limite de 20 graus seria adequado ao indicador e ao médio, não ao quinto metacarpo."
+   "B": "O traço precisa ser longo, com comprimento maior que **duas vezes** o diâmetro do osso segundo a regra geral descrita. Um terço é uma extensão pequena demais para distribuir os parafusos e manter compressão e estabilidade entre os fragmentos. A alternativa inverte a relação de grandeza exigida. Comprimento de traço não é o mesmo que comprimento do parafuso.",
+   "C": "Angulação importa, mas a rotação tem tolerância muito menor e pode fazer um dedo cruzar o vizinho na preensão. O grau aceitável de angulação varia com o metacarpo e com o nível do traço, enquanto o cruzamento exige correção. Por isso não se pode eleger o desvio angular como fator isoladamente mais importante. A análise precisa incluir alinhamento rotacional, encurtamento e função.",
+   "D": "O colo do quinto metacarpo tolera angulação considerável por causa da mobilidade compensatória da sua CMC. O resumo descreve até cerca de 50°, na ausência de outros critérios, e alerta para cirurgia excessiva nesse padrão. Exigir menos de 20° reduziria muito essa tolerância e não corresponde à fonte consultada. Os limites dos metacarpos centrais não devem ser transferidos ao mínimo."
   },
   "referencias": [
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de fraturas dos metacarpos e falanges.",
-   "Rockwood and Green's Fractures in Adults. 9ª ed. Wolters Kluwer; 2019. Fraturas da mão.",
-   "AO Surgery Reference. Metacarpals: shaft fractures. https://surgeryreference.aofoundation.org/"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "787b0093cae371ed993d22dfb9e0f69cc7ba6bf9ba2852e4d1a74ba86ef88040",
+   "comentarioSha256": "8cd7e84bb951cf67c05adb11aa1f939bfe372f63e4cef370876b5d2cec5a19f2"
+  }
  },
  "mao-0914": {
   "conceito": "**O que define o resultado após uma lesão de nervo?** Depois de seccionado, o axônio distal sofre degeneração walleriana, e o coto proximal precisa regenerar cerca de 1 mm por dia até o alvo. Durante esse tempo, o músculo desnervado atrofia e suas placas motoras se degeneram, e os receptores sensitivos perdem função. Além disso, os axônios precisam ser guiados até os tubos certos, e o cérebro precisa reinterpretar os sinais, porque as conexões não voltam exatamente como antes. O resultado depende, portanto, de fatores biológicos, da lesão e da técnica.\n\n**Fatores prognósticos.**\n\n| Fator | Melhor prognóstico | Pior prognóstico |\n|---|---|---|\n| Idade | Crianças e adultos jovens | Idosos |\n| Nível | Distal, perto do alvo | Proximal, longe do alvo |\n| Mecanismo | Corte limpo | Esmagamento, avulsão, explosão |\n| Tempo até o reparo | Imediato ou precoce | Tardio |\n| Tensão | Sem tensão | Sob tensão |\n| Tipo de nervo | Puramente motor ou sensitivo | Misto |\n| Lesões associadas | Isolada | Com lesão vascular, óssea, de partes moles |\n\n**Por que a idade é o fator mais influente?** Crianças têm maior capacidade de regeneração axonal e, principalmente, maior plasticidade cerebral: o córtex sensitivo e motor reorganiza os mapas e se adapta às conexões novas, mesmo que os axônios tenham seguido para destinos errados. Em adultos, essa capacidade cai, e em idosos o resultado sensitivo e motor costuma ser pobre. Meta-análises de reparo do mediano e do ulnar mostram que a idade é um dos preditores mais fortes de recuperação, junto com o nível da lesão e o atraso até o reparo.\n\n**Raciocínio na prova.** Várias alternativas citam fatores verdadeiros, mas de direção positiva, como lesão distal ou cortante. A pergunta pede o fator com maior influência; ela não pede um fator de pior prognóstico. A idade é o que mais pesa, tanto para melhor quanto para pior.\n\n> Em lesão de nervo periférico, a idade é o fator prognóstico mais influente. Distal e cortante favorecem, mas pesam menos.",
@@ -13100,20 +13290,61 @@
   "conferido": false
  },
  "mao-0996": {
-  "conceito": "**Luxação simples e luxação complexa da metacarpofalângica.** As luxações dorsais da metacarpofalângica (MF) acontecem por hiperextensão. Na **luxação simples**, a falange proximal fica apoiada sobre o dorso da cabeça do metacarpo, em hiperextensão acentuada, mas a placa volar ainda não entrou na articulação; a redução fechada funciona. Na **luxação complexa**, descrita por Kaplan para o indicador, a placa volar se desprende da sua inserção proximal no colo do metacarpo e fica presa entre a base da falange e a cabeça do metacarpo, impedindo a redução fechada.\n\n**O laço ao redor da cabeça do metacarpo.** No indicador, a cabeça do metacarpo escapa para a palma e fica presa entre o lumbrical (do lado radial) e os tendões flexores (do lado ulnar), com o ligamento natatório distal e o ligamento transverso superficial proximal. Esse laço aperta o colo do metacarpo quando se aplica tração. Mas o bloqueio direto à redução é a **placa volar interposta**.\n\n**Sinais de luxação complexa.** Dedo em leve hiperextensão, quase alinhado; covinha na pele da palma sobre a cabeça do metacarpo; e, na radiografia, um sesamoide dentro da articulação ou um espaço articular alargado.\n\n**Cuidado na redução fechada.** Tração e hiperextensão podem transformar uma luxação simples em complexa, empurrando a placa para dentro da articulação. A manobra correta é flexionar o punho, para relaxar os flexores, e empurrar a base da falange para distal e volar, deslizando-a sobre a cabeça.\n\n**Redução aberta.** Via dorsal (Becton), dividindo a placa volar longitudinalmente, mais segura para os nervos e útil quando há fratura osteocondral; ou via volar (Kaplan), que expõe diretamente o laço, mas com risco ao nervo digital radial, que fica superficial e tenso sobre a cabeça do metacarpo.\n\n> Luxação complexa da MF: a placa volar interposta impede a redução fechada.",
-  "correta": "**D: placa volar.** Na luxação complexa da metacarpofalângica, a placa volar se desinsere do colo do metacarpo e é arrastada dorsalmente com a falange, ficando presa entre a base da falange e a cabeça do metacarpo. Ela funciona como um calço e impede a redução fechada. Por isso essas luxações são tratadas com redução aberta, por via dorsal ou volar, retirando a placa da articulação. Um sesamoide intra-articular na radiografia é um sinal forte dessa interposição.",
+  "conceito": "**Na luxação dorsal complexa da MCF do indicador, o bloqueio principal é a placa volar interposta.** A hiperextensão rompe a placa volar em sua região proximal, junto ao colo do metacarpo. Na forma simples, a falange ainda conserva contato com o dorso da cabeça e a redução pode ser obtida sem cirurgia. Na complexa, a cabeça atravessa os tecidos volares e a placa fica entre ela e a falange.\n\nKaplan descreveu um laço de estruturas que apertam o colo: lumbrical de um lado, flexor do outro, ligamento natatório distal e transverso superficial proximal. Essas estruturas participam da deformidade, mas o obstáculo intra-articular característico é a **placa volar**. Um sesamoide visível no espaço articular reforça a suspeita de interposição.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, alerta para evitar tração e hiperextensão na redução, que podem converter um padrão simples em complexo. Quando a redução aberta é necessária, a via dorsal permite abordar a placa com menor exposição dos feixes digitais; a via volar exige atenção a esses feixes e pode incluir liberação da A1.\n\n**Leia “Luxação metacarpofalângica: simples, complexa e o laço de Kaplan”**, no resumo da Biblioteca, para distinguir os componentes do laço da estrutura interposta.",
+  "correta": "A placa volar ocupa o espaço entre a cabeça do metacarpo e a falange proximal e impede que as superfícies retomem a relação normal. Ela é, portanto, o principal bloqueio mecânico da luxação complexa. As outras estruturas listadas ajudam a formar o laço que aperta o colo, mas isso não as torna o obstáculo intra-articular principal. A letra D é a resposta pela bibliografia.",
   "incorretas": {
-   "A": "**Os ligamentos colaterais não bloqueiam a redução da luxação complexa.** Eles se rompem parcialmente ou se distendem, mas não se interpõem entre as superfícies articulares. Podem estar lesados e precisar de reparo em casos de instabilidade lateral, mas não são a causa da irredutibilidade.",
-   "B": "**A cápsula articular se rompe, mas não é a estrutura interposta.** A placa volar, que é um espessamento da cápsula palmar, é a parte que entra na articulação. A alternativa é genérica, e a banca espera a estrutura específica.",
-   "C": "**O flexor profundo participa do laço que aperta o colo do metacarpo, mas não fica entre as superfícies articulares.** No indicador, os flexores ficam do lado ulnar da cabeça do metacarpo e, com o lumbrical do lado radial, formam um laço. Flexionar o punho para relaxá-los ajuda a manobra, mas a placa volar continua sendo o bloqueio."
+   "A": "Os colaterais integram a estabilidade da MCF e podem ser lesionados no trauma, mas o bloqueio clássico da luxação dorsal complexa é a placa volar interposta. O nome “complexa” se relaciona à anatomia que dificulta a redução, não à obrigatoriedade de reparar cada ligamento. Entre as opções, é preciso identificar o tecido situado entre as superfícies articulares.",
+   "B": "A cápsula participa dos limites articulares, mas a estrutura especificamente descrita como obstáculo nesse padrão é a placa volar. Citar a cápsula de modo genérico não identifica o bloqueio anatômico que caracteriza a luxação complexa. O resumo localiza a placa entre a cabeça metacarpal e a base da falange. Essa relação é o que impede a redução normal.",
+   "C": "O tendão flexor fica de um dos lados da cabeça e integra o laço que contribui para aprisioná-la. Entretanto, no padrão clássico da MCF do indicador, quem se interpõe entre as superfícies é a placa volar. O flexor pode ser relaxado por ajustes de posição ou liberação apropriada, mas isso não muda a definição do obstáculo principal. A opção descreve um participante, não o elemento decisivo solicitado."
   },
   "referencias": [
-   "Kaplan EB. Dorsal dislocation of the metacarpophalangeal joint of the index finger. J Bone Joint Surg Am. 1957;39-A(5):1081-1086.",
-   "Becton JL, Christian JD Jr, Goodwin HN, Jackson JG 3rd. A simplified technique for treating the complex dislocation of the index metacarpophalangeal joint. J Bone Joint Surg Am. 1975;57(5):698-700.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de luxações e lesões ligamentares dos dedos."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+     ],
+     "blocos": [
+      "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f0b3c62d",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--5e47b491",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--ffe4052c",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--19bc2a68",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--3b06c67f",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c4eb7ed3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--18d69bf3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--6c2d666f",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--d98425d3",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
+    }
+   ],
+   "questaoSha256": "9cd9767465a129cc8fb90d88ef05661bf2d29914d24a86ad4f071013af1951db",
+   "comentarioSha256": "a0a2b6763a0f5d82b396b372ef726b412158912e5c8b369999df48b5afeb7f71"
+  }
  },
  "mao-0997": {
   "conceito": "**O adutor do polegar.** É o maior músculo intrínseco do polegar. Tem duas cabeças: a oblíqua, que nasce do capitato e das bases do segundo e terceiro metacarpos, e a transversa, que nasce da diáfise do terceiro metacarpo. As duas se unem e se inserem na base da falange proximal do polegar, no lado ulnar, por meio do sesamoide ulnar, e enviam uma expansão ao aparelho extensor, a **aponeurose do adutor**. Ele traz o polegar em direção ao segundo metacarpo e é fundamental para a força da pinça lateral e da pinça polpa a polpa.\n\n**A inervação.** O adutor do polegar é inervado pelo **ramo motor profundo do nervo ulnar**, que atravessa a palma de ulnar para radial, inervando os hipotenares, os interósseos, os dois lumbricais ulnares, o adutor do polegar, a cabeça profunda do flexor curto e, por fim, o primeiro interósseo dorsal.\n\n**A musculatura do polegar e seus nervos.**\n\n| Músculo | Nervo |\n|---|---|\n| Abdutor curto do polegar | Mediano (ramo recorrente) |\n| Oponente do polegar | Mediano (ramo recorrente) |\n| Flexor curto, cabeça superficial | Mediano |\n| Flexor curto, cabeça profunda | Ulnar |\n| Adutor do polegar | Ulnar (ramo profundo) |\n| Flexor longo do polegar | Interósseo anterior (mediano) |\n| Extensores e abdutor longo | Interósseo posterior (radial) |\n\n**Sinais clínicos da paralisia do adutor.**\n- **Sinal de Froment:** ao segurar uma folha de papel entre o polegar e o indicador, o paciente flete a interfalângica do polegar, usando o flexor longo (mediano) para compensar o adutor paralisado.\n- **Sinal de Jeanne:** hiperextensão da metacarpofalângica do polegar durante a pinça.\n\nA perda do adutor reduz muito a força da pinça. Nas transferências tendíneas para paralisia ulnar, uma das metas é restaurar a adução, por exemplo com o flexor superficial do anular ou o extensor radial curto do carpo prolongado com enxerto.\n\n> Adutor do polegar: ramo profundo do ulnar. Sua falta causa o sinal de Froment.",
@@ -13611,20 +13842,62 @@
   "conferido": false
  },
  "mao-1029": {
-  "conceito": "**Os dois componentes do ligamento colateral ulnar do polegar.** Na metacarpofalângica (MF) do polegar, o lado ulnar é estabilizado por duas partes do ligamento colateral ulnar (LCU):\n- **LCU próprio:** mais dorsal, vai da cabeça do metacarpo à base da falange proximal; fica tenso com a MF em **flexão**.\n- **LCU acessório:** mais palmar, insere-se na placa volar; fica tenso com a MF em **extensão**.\n\nJunto com a placa volar e a aponeurose do adutor, formam o sistema que resiste ao desvio radial na pinça.\n\n**Como testar.** Aplica-se força em direção radial (estresse em valgo) na falange proximal, com o metacarpo estabilizado, comparando com o outro lado, preferencialmente com anestesia local se a dor impedir o exame.\n\n| Posição | O que avalia | Interpretação |\n|---|---|---|\n| MF a 30 graus de flexão | LCU próprio (a placa volar fica frouxa) | Abertura acima de cerca de 30 a 35 graus, ou mais de 15 graus a mais que o outro lado, sem ponto final firme: ruptura completa |\n| MF em extensão | LCU acessório e placa volar | Instabilidade também em extensão sugere lesão combinada, mais grave |\n\nO teste em flexão é o que isola o LCU próprio. Se ele está frouxo, a ruptura é completa e, pela alta chance de lesão de Stener (o ligamento fica preso fora da aponeurose do adutor), indica-se cirurgia. Antes do teste, faz-se radiografia para excluir fratura avulsão desviada, que mudaria a conduta. Ultrassom ou ressonância ajudam quando o exame é duvidoso.\n\n**Tratamento.** Lesões parciais: órtese por 4 a 6 semanas. Lesões completas: reparo com âncora na base da falange proximal. Lesões crônicas: reconstrução com enxerto tendíneo ou, com artrose, artrodese da MF.\n\n> Para indicar cirurgia no LCU do polegar, o teste-chave é o estresse radial com a MF a 30 graus de flexão.",
-  "correta": "**B: teste de estresse radial com 30 graus de flexão.** Com a metacarpofalângica fletida a cerca de 30 graus, a placa volar e o ligamento acessório ficam frouxos, e o teste avalia isoladamente o ligamento colateral ulnar próprio. Abertura acima de 30 a 35 graus, ou mais de 15 graus a mais que o lado normal, sem ponto final firme, indica ruptura completa. Como essas rupturas frequentemente têm o coto preso fora da aponeurose do adutor (lesão de Stener), a indicação é cirúrgica.",
+  "conceito": "**O estresse radial com a MCF em flexão investiga a integridade do colateral ulnar próprio.** Esse componente fica tenso em flexão; o colateral acessório e a placa volar contribuem mais para a estabilidade em extensão. Por isso a MCF deve estar em cerca de 30° a 40° de flexão para uma avaliação que não seja mascarada por esses outros estabilizadores.\n\nO teste compara com o polegar oposto e avalia abertura e **ponto final**. Rupturas parciais conservam ponto final firme; nas completas, ele pode estar ausente. O resumo do Rockwood & Green, 10ª edição, capítulo 45, considera significativa uma diferença de 15° e informa que os autores operam diante de ausência de ponto final firme com desvio maior que 20°.\n\nUm teste “positivo” não é qualquer dor à manobra: ela pode existir em lesão leve sem instabilidade. Também não prova sozinho uma Stener, que depende de aponeurose do adutor interposta. O resultado precisa ser interpretado com a comparação contralateral e a gravidade da frouxidão.\n\n**Leia “Exame e graus”**, na seção do LCU do polegar do resumo da Biblioteca, para relacionar posição de teste e indicação de reparo.",
+  "correta": "O estresse radial com a MCF em cerca de **30° de flexão** coloca o colateral próprio sob tensão. A frouxidão excessiva e a ausência de ponto final firme favorecem ruptura completa e sustentam discutir cirurgia. O ângulo do exame é apenas parte da decisão: dor isolada não equivale a indicação operatória. A opção B corresponde à posição apropriada do teste descrito.",
   "incorretas": {
-   "A": "**O estresse radial em extensão avalia o ligamento acessório e a placa volar.** Com a MF estendida, essas estruturas estão tensas e podem segurar a articulação mesmo com o LCU próprio rompido, dando um falso exame estável. Instabilidade em extensão indica lesão combinada, mas o teste que isola o LCU próprio e define a ruptura completa é feito em flexão.",
-   "C": "**O teste em hiperextensão avalia a placa volar, não o LCU.** É usado nas lesões por hiperextensão da MF do polegar. Não diferencia lesões parciais e completas do ligamento colateral ulnar.",
-   "D": "**O teste da pinça é inespecífico.** A pinça fraca e dolorosa é uma consequência da lesão do LCU, mas também aparece em outras condições, como artrose e lesões do nervo ulnar. Não define a indicação cirúrgica."
+   "A": "O exame em extensão pode fornecer informações complementares, mas também recebe estabilização da placa volar e do colateral acessório. Isso pode mascarar uma ruptura do colateral próprio. A questão procura o teste enfatizado para a indicação de reparo desse componente. A flexão a cerca de 30° é a posição que melhor o isola no resumo.",
+   "C": "Um teste em extensão voltado à placa volar avalia uma função e um estabilizador diferentes do colateral ulnar próprio em flexão. Não substitui a investigação da frouxidão ao desvio radial. A decisão de operar uma ruptura completa do LCU depende de sua estabilidade e do ponto final, não apenas da placa volar. A alternativa muda o alvo anatômico.",
+   "D": "A pinça depende da estabilidade do polegar e pode estar dolorosa ou enfraquecida após a lesão. Entretanto, esse achado funcional não isola o colateral próprio nem mede a frouxidão radial da MCF. Outras causas de dor também podem prejudicar a pinça. O estresse específico em flexão fornece a informação ligamentar procurada, interpretada junto ao restante da avaliação."
   },
   "referencias": [
-   "Heyman P, Gelberman RH, Duncan K, Hipp JA. Injuries of the ulnar collateral ligament of the thumb metacarpophalangeal joint: biomechanical and prospective clinical studies on the usefulness of valgus stress testing. Clin Orthop Relat Res. 1993;(292):165-171.",
-   "Stener B. Displacement of the ruptured ulnar collateral ligament of the metacarpo-phalangeal joint of the thumb. J Bone Joint Surg Br. 1962;44(4):869-879.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de lesões ligamentares do polegar."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Polegar: ligamento colateral ulnar e lesão de Stener."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Polegar: ligamento colateral ulnar e lesão de Stener"
+     ],
+     "blocos": [
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+    }
+   ],
+   "questaoSha256": "09699c4fe5f7b7da9ee87308d1d55aa938587a459876209e38a31517368b7c4c",
+   "comentarioSha256": "335d4e775c0d58722a3c76b8ba9af0cee1c0d9d739c0d5951cf077412aaf473f"
+  }
  },
  "mao-1030": {
   "conceito": "**Luxação simples ou complexa da metacarpofalângica.** As luxações dorsais da metacarpofalângica (MF) ocorrem por hiperextensão. Na **simples**, a falange proximal fica sobre o dorso da cabeça do metacarpo em hiperextensão acentuada, mas a placa volar não entrou na articulação, e a redução fechada funciona. Na **complexa**, descrita por Kaplan, a placa volar se rompe na sua inserção proximal e fica presa entre a base da falange e a cabeça do metacarpo, impedindo a redução fechada.\n\n**Onde é mais comum.** No **indicador**, seguido do polegar e do dedo mínimo. No indicador, a cabeça do metacarpo fica presa num laço formado pelo lumbrical (lado radial), pelos flexores (lado ulnar), pelo ligamento natatório (distal) e pelo ligamento transverso superficial (proximal).\n\n**Sinais de luxação complexa.**\n- Dedo em leve hiperextensão, quase alinhado, e não em hiperextensão acentuada.\n- Covinha na pele da palma sobre a cabeça do metacarpo.\n- Na radiografia, **sesamoide dentro do espaço articular**, porque os sesamoides fazem parte da placa volar, e espaço articular alargado.\n\n**Como reduzir.**\n\n| Situação | Manobra |\n|---|---|\n| Luxação simples | Flexão do punho e pressão na base da falange para distal e volar, deslizando sobre a cabeça |\n| Erro a evitar | Tração longitudinal e hiperextensão, que podem levar a placa para dentro da articulação e tornar a luxação complexa |\n| Luxação complexa | Redução aberta, por via dorsal (dividindo a placa) ou volar (cuidado com o nervo digital) |\n\nApós a redução, a articulação costuma ser estável, e não é necessário reparar ligamentos. Faz-se mobilização precoce com bloqueio da extensão.\n\n> Sesamoide dentro da MF na radiografia: luxação complexa, com placa volar interposta.",
@@ -14205,18 +14478,81 @@
   "conferido": false
  },
  "mao-1068": {
-  "conceito": "**As fraturas da cabeça do metacarpo são difíceis de ver nas incidências comuns**, porque a superfície articular fica sobreposta às falanges e aos metacarpos vizinhos. A incidência de **Brewerton** foi criada para mostrar o contorno da cabeça e a região colateral.\n\n### Técnica de Brewerton\n\n- **dorso dos dedos apoiado no chassi**, com as **MF fletidas a cerca de 65 graus** (as falanges planas no filme);\n- raio inclinado **15 graus de ulnar para radial**;\n- mostra as cabeças dos metacarpos e as **avulsões dos ligamentos colaterais** (por exemplo, a fratura do colateral radial da MF).\n\n### Outras incidências especiais da mão e punho que caem em prova\n\n| Incidência | Para que serve |\n|---|---|\n| **Robert** | Trapeziometacarpal em AP verdadeiro (rizartrose) |\n| Bett | Perfil verdadeiro da trapeziometacarpal |\n| Oblíqua a 30 graus em pronação | 4ª e 5ª carpometacarpais (fratura-luxação) |\n| Oblíqua a 30 graus em supinação | Pisiforme e pisopiramidal |\n| Túnel do carpo | Hâmulo do hamato, pisiforme, trapézio |\n| Escafoide (PA com desvio ulnar) | Escafoide no seu comprimento |\n| Punho cerrado (clenched fist) | Intervalo escafossemilunar dinâmico |\n| Perfil a 10 a 15 graus (lateral inclinado) | Superfície articular do rádio distal sem sobreposição da estiloide |\n\nNa cabeça do metacarpo, a tomografia é cada vez mais usada, mas a Brewerton continua sendo a resposta de prova.",
-  "correta": "**MF fletida a 65 graus e raio inclinado 15 graus de ulnar para radial.** É a técnica da incidência de Brewerton para as cabeças dos metacarpos.",
+  "conceito": "**Brewerton coloca a cabeça metacarpal em uma projeção que ajuda a revelar pequenos fragmentos articulares.** A rotina radiográfica da mão usa frente, perfil e oblíqua, mas a cabeça do metacarpo pode exigir uma incidência dirigida. O dorso dos dedos fica apoiado no chassi, com as MCF fletidas em cerca de 65°.\n\nO raio central é angulado em **15° de ulnar para radial**. A combinação entre flexão da MCF e obliquidade do feixe permite ver o contorno articular e o recesso do colateral, ajudando a detectar pequenas fraturas e avulsões. Inverter o sentido do raio ou usar apenas pequena flexão não reproduz a técnica descrita.\n\nÉ útil separar três elementos: qual segmento apoia, quanto a MCF flete e para onde o feixe inclina. A angulação de 15° pertence ao raio, não à flexão da MCF. A incidência de Roberts, mencionada no mesmo resumo, se destina à CMC do polegar e não deve ser usada como sinônimo de Brewerton.\n\n**Leia “Imagem: a incidência de Brewerton”**, na seção dos metacarpos do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+  "correta": "A técnica reúne **MCF em cerca de 65° de flexão** e **raio a 15° de ulnar para radial**. Os dedos apoiados dorsalmente posicionam a cabeça e o recesso articular para a projeção desejada. A opção A mantém a diferença entre ângulo da articulação e ângulo do feixe. Trocar esses valores muda a incidência, mesmo que ambos apareçam em alguma descrição radiográfica da mão.",
   "incorretas": {
-   "B": "Os ângulos não correspondem à incidência de Brewerton: a MF deve estar fletida a cerca de 65 graus, com o raio a 15 graus.",
-   "C": "Inverte os valores: na Brewerton, é a MF que fica a 65 graus de flexão, e o raio a 15 graus.",
-   "D": "A flexão da MF de 45 graus não é a descrita por Brewerton (65 graus)."
+   "B": "A flexão de 15° é pequena em relação aos cerca de 65° exigidos, e o raio a 45° não é a angulação de 15° descrita. A opção preserva o sentido ulnar-radial, mas erra os dois ângulos. Identificar apenas a direção do feixe não basta para montar a incidência. O objetivo anatômico depende da combinação completa.",
+   "C": "A alternativa troca o valor maior para o feixe e deixa apenas 15° na MCF. O resumo coloca cerca de **65° na articulação** e **15° no raio**. O sentido ulnar-radial está correto, mas a inversão das grandezas não reproduz Brewerton. Essa é a confusão entre os dois elementos angulares da técnica.",
+   "D": "O raio a 15° de ulnar para radial está correto, mas a MCF deve estar em cerca de 65°, e não 45°. Essa posição articular ajuda a projetar o contorno da cabeça e o recesso do colateral. Uma parte correta da montagem não substitui o posicionamento do dedo. A alternativa erra apenas o ângulo de flexão, que continua sendo decisivo."
   },
   "referencias": [
-   "Lane CS. Detecting occult fractures of the metacarpal head: the Brewerton view. J Hand Surg Am. 1977;2(2):131-3."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "12fd982e99d271aa0ce54d4e99b7e542c0c5a2f9e8f96c36f3c4db82c7fad089",
+   "comentarioSha256": "d4d10e6dc0d02929003b70c0022ae3d396f3b1fbb27c0e08b29a401deeaefa4e"
+  }
  },
  "mao-1069": {
   "conceito": "**A interfalângica proximal é uma articulação em dobradiça, e suas lesões ligamentares seguem padrões previsíveis.** Os estabilizadores são os ligamentos colaterais (próprio e acessório) e a placa volar, que formam juntos uma caixa de três lados.\n\n### Onde cada estrutura costuma romper\n\n- **ligamentos colaterais:** rompem tipicamente na **origem proximal** (na cabeça da falange proximal), com o colateral radial mais acometido;\n- **placa volar:** rompe na **inserção distal**, na base da falange média, muitas vezes com um pequeno fragmento ósseo (avulsão), enquanto a porção proximal (fina, com os ligamentos de contenção, os checkrein) é mais elástica.\n\n### Luxações da IFP\n\n| Tipo | Mecanismo | Lesão | Tratamento |\n|---|---|---|---|\n| **Dorsal** (a mais comum) | Hiperextensão com carga axial | Placa volar (avulsão distal) e parte dos colaterais | Redução, bloqueio de extensão por 2 a 3 semanas ou mobilização precoce com buddy taping |\n| Volar | Rotação e força volar | **Banda central** (risco de botoeira) | Órtese em extensão da IFP por 6 semanas |\n| Lateral | Desvio lateral | Colateral e parte da placa | Buddy taping |\n\nA classificação de **Eaton** gradua as lesões dorsais: tipo I (hiperextensão, avulsão da placa, sem luxação), II (luxação dorsal completa) e III (fratura-luxação; estável se menos de 40% da base volar fraturada, instável se mais).\n\n### Fratura-luxação dorsal\n\nA estabilidade depende do tamanho do fragmento volar: até cerca de 30% a 40%, geralmente estável em flexão (bloqueio de extensão); acima de 40%, instável, exigindo fixação, fixador dinâmico, placa volar ou **hemi-hamato** (enxerto osteocondral do hamato).\n\n**Complicação mais comum:** rigidez e contratura em flexão (pseudo-botoeira), por isso a mobilização precoce é tão importante.",
@@ -15407,19 +15743,62 @@
   "conferido": false
  },
  "mao-1138": {
-  "conceito": "**A lesão de Stener é a interposição da aponeurose do adutor entre o ligamento colateral ulnar rompido e a sua inserção na falange proximal do polegar.** O exame da MF em valgo, em duas posições, é o que separa a lesão parcial da completa.\n\n### Anatomia dos estabilizadores da MF do polegar\n\n| Estrutura | Tensa em |\n|---|---|\n| **Colateral próprio** | **Flexão** (cerca de 30 graus) |\n| Colateral acessório | Extensão |\n| **Placa volar** | **Extensão** |\n\nPor isso:\n- testando **em flexão**, isola-se o **colateral próprio**: abertura grande em flexão indica ruptura dele;\n- testando **em extensão total**, a **placa volar** e o colateral acessório ficam tensos e dão **estabilidade lateral** considerável, podendo **mascarar** a ruptura do colateral próprio;\n- abertura também em extensão indica lesão mais extensa (colateral + acessório + placa volar).\n\n### Critérios\n\n- abertura maior que 30 a 35 graus, ou mais de 15 graus de diferença em relação ao lado oposto;\n- **ausência de ponto final firme**;\n- bloqueio anestésico para examinar sem dor.\n\n### Por que o Stener importa\n\nCom o coto do ligamento por cima da aponeurose do adutor, ele não cicatriza no lugar: lesões completas com Stener vão para **reparo cirúrgico**. Ultrassom e ressonância mostram o coto deslocado (às vezes palpável como um nódulo).",
-  "correta": "**O exame em flexão é mais relevante, porque em extensão total a placa volar dá considerável estabilidade lateral.** Em flexão, isola-se o colateral próprio; em extensão, a placa volar pode mascarar a lesão.",
+  "conceito": "**A extensão da MCF pode esconder a instabilidade do colateral ulnar próprio.** O sistema colateral do polegar inclui um componente próprio, tenso em flexão, e um acessório, relacionado à placa volar, que contribui para a estabilidade em extensão. Esses componentes não ficam com a mesma tensão em todas as posições.\n\nO teste em 30° a 40° de flexão dirige a avaliação ao colateral próprio. Já em extensão, placa volar e acessório podem manter estabilidade lateral aparente apesar da ruptura. Essa é a relação anatômica que explica por que a flexão é relevante, e não uma preferência arbitrária de posicionamento.\n\nA lesão de Stener exige ainda interposição da aponeurose do adutor entre o coto rompido e o osso. O teste clínico investiga gravidade da ruptura e ponto final, mas não demonstra sozinho essa interposição. Ultrassom e ressonância podem complementar a investigação conforme a suspeita.\n\n**Leia “Anatomia que explica o exame”**, na seção do LCU do polegar do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+  "correta": "A flexão é mais relevante para investigar a ruptura completa do colateral próprio porque em extensão a placa volar e o acessório podem fornecer **estabilidade lateral residual**. A alternativa A acerta o posicionamento e o motivo. O resultado deve ser comparado ao outro polegar, com atenção ao ponto final. Não é a flexão por si só que confirma uma aponeurose interposta.",
   "incorretas": {
-   "B": "O exame em flexão é o mais relevante, e a placa volar em extensão confere **estabilidade**, não instabilidade.",
-   "C": "Acerta que o exame em flexão é mais relevante, mas erra o motivo: em extensão a placa volar dá estabilidade, não instabilidade.",
-   "D": "Acerta o efeito da placa volar, mas erra ao dizer que o exame em flexão é menos relevante."
+   "B": "A opção erra as duas relações: a flexão é importante para testar o próprio e a placa volar contribui para estabilidade, não para instabilidade lateral em extensão. Ao trocar o efeito protetor por um efeito desestabilizador, perde-se a explicação anatômica. A manobra deve revelar a insuficiência do ligamento, e não presumir que a placa volar a produz.",
+   "C": "A primeira parte está correta: o exame em flexão tem relevância para o colateral próprio. O motivo apresentado, porém, está invertido: em extensão a placa volar pode conferir **estabilidade**, mascarando frouxidão. Não é uma fonte de instabilidade lateral descrita nesse contexto. Uma conclusão correta não torna verdadeira uma explicação anatômica errada.",
+   "D": "A estabilidade que a placa volar pode fornecer em extensão está corretamente reconhecida. Isso, entretanto, torna o teste em flexão **mais**, e não menos, relevante para isolar o colateral próprio. A alternativa usa uma premissa correta para chegar à orientação oposta. A flexão reduz a interferência da estabilidade residual no exame do ligamento rompido."
   },
   "referencias": [
-   "Stener B. Displacement of the ruptured ulnar collateral ligament of the metacarpo-phalangeal joint of the thumb. J Bone Joint Surg Br. 1962;44-B:869-79.",
-   "Heyman P et al. Injuries of the ulnar collateral ligament of the thumb metacarpophalangeal joint. Clin Orthop Relat Res. 1993;(292):165-71."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Polegar: ligamento colateral ulnar e lesão de Stener."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Polegar: ligamento colateral ulnar e lesão de Stener"
+     ],
+     "blocos": [
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+    }
+   ],
+   "questaoSha256": "15ea05ea6b2df62d7dcbb8fd22d6a15caa766ed874bd35127f054fc501d0d355",
+   "comentarioSha256": "465baca0ad93697caa7fb95947f349e0e625dd653a38fad82059933824727607"
+  }
  },
  "mao-1139": {
   "conceito": "**A deformidade em pescoço de cisne é a hiperextensão da IFP com flexão da IFD.** Na artrite reumatoide, Nalebuff a classificou pela mobilidade da IFP, porque é ela que define o tratamento.\n\n### Classificação de Nalebuff (pescoço de cisne reumatoide)\n\n| Tipo | IFP | Tratamento |\n|---|---|---|\n| I | **Flexível** em todas as posições da MF | Órteses (anel de prata em oito), artrodese da IFD, dermodese, tenodese do superficial, reconstrução do retinacular oblíquo |\n| II | Flexão da IFP **limitada em certas posições da MF** (por **contratura dos intrínsecos**) | Liberação dos intrínsecos + procedimentos do tipo I |\n| **III** | **Rígida, sem destruição articular** (articulação preservada na radiografia) | Manipulação, mobilização das bandas laterais, liberação de pele, tenólise |\n| IV | **Rígida, com destruição articular** | Artrodese (indicador e médio) ou artroplastia (anular e mínimo) |\n\n### Mecanismos do pescoço de cisne\n\n- **origem na IFD:** martelo crônico; o extensor se concentra na IFP e a hiperestende;\n- **origem na IFP:** frouxidão da placa volar (sinovite, trauma), ruptura do superficial;\n- **origem na MF:** sinovite com subluxação volar da MF e contratura dos intrínsecos, que tracionam as bandas laterais dorsalmente;\n- **origem no punho:** colapso do carpo em AR altera o equilíbrio.\n\nA classificação de Nalebuff também existe para o polegar reumatoide (tipos I a VI, com o boutonnière do polegar sendo o tipo I, o mais comum).",
@@ -20456,16 +20835,81 @@
   "conferido": false
  },
  "mao-1492": {
-  "conceito": "**Brewerton é uma incidência dirigida às cabeças metacarpais.** O paciente posiciona as falanges contra a mesa e mantém flexão metacarpofalângica, enquanto o feixe é inclinado cerca de 15° de ulnar para radial. A projeção ajuda a reduzir sobreposição e mostrar alterações da cabeça.\n\nÉ diferente da PA rotineira e da incidência dirigida ao intervalo escafolunar. Apoio, posição e direção do feixe precisam ser mantidos conforme a técnica; trocar apenas um componente altera a imagem.\n\nFratura articular da cabeça pode exigir outras incidências ou tomografia conforme o padrão. Uma projeção especial melhora a informação, mas não exclui lesão se mal posicionada nem descreve toda a extensão por si só.\n\nA resposta é **falange na mesa e ulnar para radial**. Distinguir a estrutura apoiada da estrutura examinada evita escolher metacarpo só porque a lesão está nele.",
-  "correta": "Falange apoiada e inclinação de 15° de ulnar para radial correspondem à técnica. A combinação mostra a cabeça metacarpal sob uma projeção específica. A qualidade de posicionamento continua necessária.",
+  "conceito": "**Brewerton coloca a cabeça metacarpal em uma projeção que ajuda a revelar pequenos fragmentos articulares.** A rotina radiográfica da mão usa frente, perfil e oblíqua, mas a cabeça do metacarpo pode exigir uma incidência dirigida. O dorso dos dedos fica apoiado no chassi, com as MCF fletidas em cerca de 65°.\n\nO raio central é angulado em **15° de ulnar para radial**. A combinação entre flexão da MCF e obliquidade do feixe permite ver o contorno articular e o recesso do colateral, ajudando a detectar pequenas fraturas e avulsões. Inverter o sentido do raio ou usar apenas pequena flexão não reproduz a técnica descrita.\n\nÉ útil separar três elementos: qual segmento apoia, quanto a MCF flete e para onde o feixe inclina. A angulação de 15° pertence ao raio, não à flexão da MCF. A incidência de Roberts, mencionada no mesmo resumo, se destina à CMC do polegar e não deve ser usada como sinônimo de Brewerton.\n\n**Leia “Imagem: a incidência de Brewerton”**, na seção dos metacarpos do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+  "correta": "Apoiam-se as **falanges pelo dorso**, e o raio é dirigido em **15° de ulnar para radial**. A MCF fica fletida em cerca de 65°, completando o posicionamento descrito no resumo. A opção D acerta tanto o segmento de apoio quanto a direção do feixe. Esses elementos permitem avaliar a cabeça metacarpal de forma dirigida.",
   "incorretas": {
-   "A": "O exame é da cabeça metacarpal, mas o apoio descrito na técnica é das falanges, não do metacarpo. A direção também está invertida. Local de interesse e local de contato com a mesa são diferentes.",
-   "B": "O sentido ulnar para radial está correto, porém o apoio foi colocado no metacarpo. A posição de flexão e apoio falângico é parte da projeção. Um componente correto não basta para reproduzir Brewerton.",
-   "C": "O apoio falângico está correto, mas o feixe deve ir de ulnar para radial. A direção não é intercambiável. Padronização ajuda a comparar e interpretar o perfil das cabeças."
+   "A": "A alternativa troca o apoio das falanges pelo metacarpo e inverte o sentido do feixe. Brewerton usa o dorso dos dedos apoiado, com MCF fletida, e raio de ulnar para radial. Não é apenas uma imagem da mão apoiada sem posicionamento dos dedos. Os dois componentes descritos estão incompatíveis com a técnica consultada.",
+   "B": "A direção de ulnar para radial a 15° está correta, mas o apoio deve ser das falanges pelo dorso, e não simplesmente do metacarpo. O posicionamento dos dedos com MCF fletida é parte da montagem que expõe a cabeça. Escolher pela angulação correta do raio sem conferir o apoio deixa a técnica incompleta.",
+   "C": "O apoio da falange está correto, mas o feixe foi invertido: deve ir de **ulnar para radial**. A direção é um dos elementos mais repetidos na descrição de Brewerton e não equivale ao sentido contrário. A alternativa mantém a anatomia do apoio e erra a orientação do raio. Para montar a incidência, ambos precisam coincidir."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-10T20:28:53+00:00",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "21391a442cd9b38fea6310a10860ff272ce011b6a35ba70d2bd3f7ea62d3dcaf",
+   "comentarioSha256": "e7a3f8278ef85e29e89c1829f66a86d8d33942857e5749905f4df24955372076"
+  }
  },
  "mao-1493": {
   "conceito": "**Policização transforma o indicador em uma unidade com função de polegar.** O dedo é reposicionado com seus tecidos, tendões e pedículo, e as articulações passam a exercer tarefas diferentes. A metacarpofalângica do indicador ocupa a posição funcional da nova articulação basal do polegar.\n\nNa configuração clássica da questão, essa articulação é posicionada em hiperextensão. A orientação ajuda a adaptar a geometria do dedo à base do novo polegar. Isso não é uma ordem para fundir indiscriminadamente toda articulação nem para deixar o novo polegar sem movimento.\n\nA reconstrução reorganiza também motores, rotação, comprimento e abertura da primeira comissura. Um indicador simplesmente colocado perto do primeiro raio não oferece oposição automaticamente; direção dos tendões e relação articular são essenciais.\n\nA indicação após perda de reimplante considera a mão remanescente, qualidade do indicador, circulação e alternativas. O caso pede a mudança de função de uma articulação, não uma técnica completa aplicável a toda amputação.",
@@ -20510,18 +20954,82 @@
   "conferido": false
  },
  "mao-1496": {
-  "conceito": "**Parafusos interfragmentários exigem uma linha de fratura longa o bastante para permitir fixação estável sem dividir fragmentos.** Em uma fratura espiral ou oblíqua longa, a referência clássica é comprimento de pelo menos duas vezes o diâmetro do osso.\n\nO princípio do lag produz compressão entre fragmentos, mas depende de trajetória, compra óssea e distância adequada das bordas. Uma fratura curta pode não oferecer espaço para parafusos suficientes ou pode lascar durante a inserção.\n\nA relação de comprimento ajuda a escolher a estratégia, sem substituir avaliação de rotação, cominuição, qualidade óssea e estabilidade. A técnica precisa permitir reabilitação segura, e não apenas mostrar parafusos numa radiografia.\n\nQuando o padrão não é adequado, placa, fios ou outras formas de fixação podem ser consideradas. Forçar uma técnica compressiva numa geometria desfavorável pode criar instabilidade em vez de resolvê-la.",
-  "correta": "Duas vezes o diâmetro é o mínimo clássico pedido. A relação favorece uso de parafusos interfragmentários em padrões longos. Outros fatores, como cominuição e rotação, ainda podem mudar a escolha.",
+  "conceito": "**O traço espiral precisa ser longo o bastante para receber parafusos interfragmentários separados.** Os parafusos de tração comprimem os fragmentos, mas a montagem também deve controlar encurtamento e rotação. Um traço curto oferece pouco espaço para distribuir implantes e manter essa estabilidade.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, apresenta a regra geral de traço maior que **duas vezes o diâmetro do osso**, com preferência dos autores por mais de três vezes nos metacarpos. O número compara o comprimento da fratura ao diâmetro do osso; não é uma orientação para escolher parafuso com duas vezes o diâmetro.\n\nA pergunta cobra o **mínimo convencional**, que a banca expressa como duas vezes. Três vezes é uma preferência mais restritiva dos autores e não deve ser usada para negar o gabarito sem explicar a diferença. Fraturas transversas e oblíquas curtas exigem outra estratégia ou neutralização adicional, pois não oferecem a mesma geometria.\n\n**Leia “Quando operar e com quê”**, na seção dos metacarpos do resumo da Biblioteca, para separar regra mínima e preferência da técnica.",
+  "correta": "O gabarito usa **duas vezes o diâmetro do osso** como mínimo para o traço. O resumo apresenta essa regra geral e explica que os autores preferem mais de três vezes no metacarpo. Assim, a opção B corresponde ao limiar convencional cobrado. A diferença de preferência deve ficar explícita, sem trocar a resposta oficial nem atribuir ao livro um critério único que ele não usa.",
   "incorretas": {
-   "A": "Um diâmetro é uma linha curta para a referência clássica, podendo não permitir espaço e compra adequados. A compressão não depende apenas de inserir um parafuso. O padrão precisa sustentar a montagem.",
-   "C": "Três diâmetros pode oferecer uma linha longa, mas não é o mínimo da referência. Uma dimensão maior possível não deve ser confundida com requisito obrigatório. É preciso distinguir elegibilidade de preferência.",
-   "D": "Quatro diâmetros não é o mínimo clássico. Impor esse limite excluiria fraturas que podem ser adequadas pela geometria e pelo osso. A técnica deve ser escolhida por condições reais de estabilidade."
+   "A": "Um comprimento igual ao diâmetro é curto em relação à regra apresentada. Ele não oferece a extensão longitudinal prevista para distribuir parafusos de tração isolados e controlar adequadamente os fragmentos. A questão não pergunta pelo diâmetro do implante. O erro é reduzir o comprimento do traço abaixo do mínimo convencional.",
+   "C": "Três vezes o diâmetro se aproxima da preferência mais restritiva dos autores para o metacarpo, mas a pergunta cobra o **mínimo convencional** adotado pela banca. O resumo distingue a regra geral de duas vezes e a preferência por mais de três. A opção não é um número anatomicamente absurdo; é um critério diferente do solicitado. Essa distinção evita apresentar a alternativa como universalmente inadequada.",
+   "D": "Quatro vezes o diâmetro descreve um traço ainda mais longo, que pode oferecer espaço para a montagem, mas não é o mínimo convencional da pergunta. Um requisito suficiente não se torna automaticamente o requisito mínimo. O resumo não exige quatro vezes para todo metacarpo. A alternativa aumenta desnecessariamente o limiar cobrado."
   },
   "referencias": [
-   "The Treatment of Closed Finger and Metacarpal Fractures. https://pubmed.ncbi.nlm.nih.gov/37963039/"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
   ],
-  "geradoEm": "2026-10-10T20:30:49+00:00",
-  "conferido": false
+  "conferido": false,
+  "alerta": "O gabarito B usa o mínimo convencional de duas vezes o diâmetro. O resumo informa que os autores preferem traços com mais de três vezes nos metacarpos; regra geral e preferência operatória não são a mesma afirmação.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+     "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+    }
+   ],
+   "questaoSha256": "7cd299f3483d4caa7d8e79eba8ceeeee896f648a38b3669338781b77ffbb9e03",
+   "comentarioSha256": "173d6b1e6c653f72c4800ad3b0de0484ab89e41a145dd60aae2df993a51fdc7d"
+  }
  },
  "mao-1497": {
   "conceito": "**O movimento de arremesso de dardo percorre um plano oblíquo da extensão radial para a flexão ulnar.** Ele integra tarefas funcionais e não é flexão-extensão pura nem desvio lateral isolado. O extensor radial longo do carpo participa do componente de extensão e desvio radial.\n\nFlexor ulnar do carpo participa do componente oposto de flexão ulnar. Extensor ulnar e flexor radial têm vetores diferentes dessa dupla principal. O nome “radial” ou “ulnar” precisa ser combinado com a ação flexora ou extensora.\n\nO plano pode limitar movimento de determinados ossos da fileira proximal em certas condições, mas não significa que eles nunca se movam ou que toda lesão escafolunar tolere exercício irrestrito. Reabilitação depende de estabilidade e reparos.\n\nBraquiorradial atua no cotovelo, não cruza o punho. Essa relação de inserção exclui sua participação como motor direto do movimento radiocárpico.",
