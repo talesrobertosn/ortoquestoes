@@ -87,8 +87,8 @@ padrão novo. Próximo trabalho, nesta ordem:
 3. (feito) Lote 20, ombro-cotovelo: 16, 65, 29, 69, 48, 49 publicadas (ombro-cotovelo-0658 a 0663).
 4. (conferido) 89, 38 e 37 seguem "pendente: sem fonte": os resumos só repetem a questão (89) ou listam o
    teste de Egawa sem descrevê-lo (38).
-5. Fim do SIMÃO 2023: seção 9 do PROTOCOLO (equilíbrio do gabarito, lições na engenharia reversa,
-   relatório curto).
+5. (feito) Fim do SIMÃO 2023: gabarito A 25, B 24, C 24, D 24; lições e divergências no fim de
+   docs/simulados/simao-engenharia-reversa.md.
 6. **SIMÃO 2026: refazer os comentários** (ver o parágrafo acima, na fila).
 7. SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
 
