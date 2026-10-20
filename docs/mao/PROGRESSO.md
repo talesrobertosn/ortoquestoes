@@ -75,6 +75,37 @@ Copiar para cada prova nova (ex.: `## SIMÃO 2024`):
 |---|---|---|---|---|---|---|---|
 | 1 | | | | | | | a fazer |
 
+## Retomada (atualizado em 20/10/2026, fim da sessão da conta 1)
+
+**Ponto exato:** SIMÃO 2023 com 83 publicadas (mao-1932 a mao-2014); as 63 primeiras já revisadas no
+padrão novo. Próximo trabalho, nesta ordem:
+
+1. SIMÃO 2023, lote 18: questões 15, 37, 56, 55, 73 (cap. 59, 44 e 42). A 37 (osteoblastoma) a correção
+   diz que não está no Green: conferir o cap. 59 e, se não houver, usar o resumo e dizer isso.
+2. Lote 19: 46, 57, 64, 68 (cap. 45, retalhos).
+3. Lote 20, tema **ombro-cotovelo** (aplicar com `aplicar_lote.py ... ombro-cotovelo lote_20`): 16, 65, 29,
+   69, 48, 49 (cap. 18, 19, 20 e 22).
+4. Pendentes sem fonte: 89 (graus aceitáveis na falange proximal) e 38 (sinal da excursão lateral do
+   médio). Procurar de novo nos resumos; se não houver, ficam como "pendente: sem fonte".
+5. Fim do SIMÃO 2023: seção 9 do PROTOCOLO (equilíbrio do gabarito, lições na engenharia reversa,
+   relatório curto).
+6. **SIMÃO 2026: refazer os comentários** (ver o parágrafo acima, na fila).
+7. SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
+
+**Como foi feito até aqui (repetir igual):**
+- Lote novo em `~/OrtoQuestoes-Biblioteca/lotes/simao-2023/lote_NN.py` (modelo: `lote_14.py` a `lote_17.py`).
+- Fontes: `grep` em `~/OrtoQuestoes-Biblioteca/.oq/texto/livros__<capítulo>.txt` e `resumos__*.txt`; a
+  página impressa é a da marca `===== ... p. N` imediatamente acima da linha. O texto tem duas colunas
+  misturadas: ler com `cut -c1-95` (coluna esquerda) e `cut -c90-` (direita).
+- Ciclo: `copia` → `aplicar_lote --conferir` → aplicar → `gerar_indice` → `validar_acervo` →
+  `progresso.py` → commit e push (só `public/acervo` e `docs/mao`). A cada 2 a 4 lotes: `npx tsc -b`,
+  `PYTHONUTF8=1 npm test`, PR de `claude/relaxed-franklin-0snpiu` para `claude/pdfs-questoes-tp64dr` e merge.
+- O gabarito acumulado do SIMÃO 2023 está na linha do Resumo; equilibrar a letra certa em cada lote.
+- Feedback do Tales em 20/10/2026: questões bem próximas do original (mesma pergunta, mesmas
+  alternativas, outras palavras); citação do Green flexível (muita quando a resposta depende da letra do
+  livro, nenhuma quando não acrescenta); páginas sempre conferidas; tom de professor.
+- Ferramentas arquivadas em [ferramentas/](ferramentas/README.md).
+
 ## Revisão das questões já publicadas (pedido do Tales, 20/10/2026)
 
 "Deixar as questões mais parecidas com as originais, todas elas": cada lote publicado ganha um
