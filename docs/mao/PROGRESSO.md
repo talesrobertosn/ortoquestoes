@@ -88,7 +88,7 @@ alternativas da prova (passando no `copia`), acrescenta a citação literal do G
 | 07 | 5, 50, 6, 61, 66 | mao-1961 a 1965 | revisada |
 | 08 | 8, 12, 34, 100, 35 | mao-1966 a 1970 | revisada (34 volta à pergunta da prova) |
 | 09 | 4, 26, 39, 42, 67 | mao-1971 a 1975 | revisada |
-| 10 | 60, 51, 93, 43 | mao-1976 a 1979 | a fazer |
+| 10 | 60, 51, 93, 43 | mao-1976 a 1979 | revisada |
 | 11 | 53, 59, 72, 83, 95 | mao-1980 a 1984 | a fazer |
 | 12 | 31, 80, 54, 99, 14 | mao-1985 a 1989 | a fazer |
 | 13 | 45, 13, 36, 96, 70 | mao-1990 a 1994 | a fazer |
