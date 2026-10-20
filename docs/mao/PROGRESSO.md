@@ -11,7 +11,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 |---|---|---|---|---|---|---|
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 34 | 1 | mao-1932 a mao-1965 | A 9, B 9, C 8, D 8 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 39 | 1 | mao-1932 a mao-1970 | A 10, B 10, C 10, D 9 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
@@ -81,11 +81,11 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 5 | Artrose radiolunar isolada: causa mais comum | fato | cap. 12, p. 454, 457, 458 | mao / Artrose do punho e artroscopia | 07 | mao-1961 | publicada |
 | 6 | Rizartrose avançada: postura do polegar (adução e MCF) | fato | cap. 11, p. 422, 423 | mao / Rizartrose e artrose da mão | 07 | mao-1963 | publicada |
 | 7 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 a 263 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1934 | publicada |
-| 8 | Mão reumatoide: ressecção da ulna distal (indicação, extensão, sinovectomia, ERC) | afirmativas | cap. 55 | mao / Mão reumatoide | 08 | | a fazer |
+| 8 | Mão reumatoide: ressecção da ulna distal (indicação, extensão, sinovectomia, ERC) | afirmativas | cap. 55, p. 2063 a 2065 | mao / Mão reumatoide | 08 | mao-1966 | publicada |
 | 9 | Colo do metacarpo: indicações cirúrgicas (pseudogarra, rotação, dedos radiais, encurtamento) | afirmativas | cap. 7, p. 263, 268 | mao / Fraturas dos metacarpos e falanges | 01 | mao-1935 | publicada |
 | 10 | Braquidactilia na síndrome de APERT: com o que se associa | classificação | cap. 36 | mao / Outras malformações congênitas | 14 | | a fazer |
 | 11 | Medida da pressão compartimental: contraindicação | fato | cap. 51 | mao / Outros temas da mão | 17 | | a fazer |
-| 12 | Túnel do carpo leve na artrite reumatoide sem tenossinovite: conduta | conduta | cap. 55 | mao / Síndrome do túnel do carpo | 08 | | a fazer |
+| 12 | Túnel do carpo leve na artrite reumatoide sem tenossinovite: conduta | conduta | cap. 55, p. 2050 (Tabela 55.4) | mao / Síndrome do túnel do carpo | 08 | mao-1967 | publicada |
 | 13 | Infecção crônica: unhas azuladas e baqueteamento | sinal | cap. 3 | mao / Infecções da mão | 13 | | a fazer |
 | 14 | MACS na paralisia cerebral: nível pela descrição | classificação | cap. 32 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
 | 15 | Cisto sinovial: componente predominante do conteúdo | fato | cap. 59 | mao / Cistos sinoviais e gangliões | 18 | | a fazer |
@@ -107,8 +107,8 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 31 | Plexo braquial: sinal de lesão pós-ganglionar | raciocínio | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 12 | | a fazer |
 | 32 | Mão em espelho (dimelia ulnar): características | afirmativas | cap. 38 | mao / Outras malformações congênitas | 16 | | a fazer |
 | 33 | Macrodactilia: diagnóstico, associação e tratamento | afirmativas | cap. 36 | mao / Outras malformações congênitas | 14 | | a fazer |
-| 34 | Pseudogota: local mais comum do depósito de pirofosfato | fato | cap. 55 | mao / Mão reumatoide | 08 | | a fazer |
-| 35 | Dupuytren: grupo de fatores de risco | lista | cap. 4 (Dupuytren) | mao / Doença de Dupuytren | 08 | | a fazer |
+| 34 | Pseudogota: local mais comum do depósito de pirofosfato | fato | cap. 56, p. 2115; cap. 55, p. 2043 | mao / Mão reumatoide | 08 | mao-1968 | publicada |
+| 35 | Dupuytren: grupo de fatores de risco | lista | cap. 4, p. 148, 149 | mao / Doença de Dupuytren | 08 | mao-1970 | publicada |
 | 36 | Tenossinovite flexora (PANG): fator de mau prognóstico | fato | cap. 2 | mao / Infecções da mão | 13 | | a fazer |
 | 37 | Osteoblastoma no punho: osso e exame de escolha (correção: não está no Green) | par | cap. 59 (conferir fonte) | mao / Tumores da mão | 18 | | a fazer |
 | 38 | Túnel cubital: sinal da excursão lateral do dedo médio | epônimo | cap. 26 | mao / Neuropatia ulnar e outras compressões | 09 | | a fazer |
@@ -173,7 +173,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 97 | Martelo: deformidade secundária | fato | cap. 5, p. 190, 196, 198 | mao / Lesões dos tendões extensores | 02 | mao-1941 | publicada |
 | 98 | Nervo mediano: folheto embrionário de origem | embriologia | cap. 35 | mao / Outras malformações congênitas | 15 | | a fazer |
 | 99 | Classificação internacional da mão tetraplégica: grupo 4 | classificação | cap. 33 | mao / Transferências tendinosas e paralisias | 12 | | a fazer |
-| 100 | Mão reumatoide: VAUGHAN-JACKSON, MANNERFELT, IFD, capitato | afirmativas | cap. 55 | mao / Mão reumatoide | 08 | | a fazer |
+| 100 | Mão reumatoide: VAUGHAN-JACKSON, MANNERFELT, IFD, capitato | afirmativas | cap. 55, p. 2044, 2050, 2052, 2057, 2061 | mao / Mão reumatoide | 08 | mao-1969 | publicada |
 
 Lotes: 01 (1, 2, 7, 9, 74; a 89 ficou sem fonte) · 02 (19, 21, 41, 78, 97) · 03 (17, 87, 25, 24) · 04 (18, 22, 77, 88, 90) ·
 05 (44, 58, 71, 82, 85) · 06 (20, 30, 86, 84, 81) · 07 (5, 50, 6, 61, 66) · 08 (8, 12, 34, 100, 35) ·
