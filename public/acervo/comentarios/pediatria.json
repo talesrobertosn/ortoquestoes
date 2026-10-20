@@ -9150,19 +9150,60 @@
   "conferido": false
  },
  "pediatria-0671": {
-  "conceito": "**A fratura do côndilo lateral do úmero.** É a segunda fratura mais comum do cotovelo da criança (pico entre 5 e 10 anos). O traço atravessa a metáfise, a fise e entra na **articulação**: é uma fratura **intra-articular**, Salter-Harris IV (Milch II, a mais comum) ou II. O fragmento é puxado pelos **extensores** do antebraço e fica banhado em **líquido sinovial**, o que dificulta a consolidação.\n\n**A classificação pelo desvio (Jakob, Weiss).**\n| Desvio | Conduta |\n|---|---|\n| **Menor que 2 mm** | Gesso, com radiografias semanais (pode desviar) |\n| **2 a 4 mm**, com articulação congruente | Redução fechada e fios percutâneos (artrografia ajuda) |\n| **Maior que 4 mm** ou articulação incongruente | **Redução aberta** e fixação |\n\n**As complicações.** **Pseudartrose** (sobretudo nas tratadas sem cirurgia que desviam), **retardo de consolidação**, **cúbito valgo** progressivo, **paralisia tardia do nervo ulnar** (anos depois, pelo estiramento no valgo), necrose avascular (por dissecção posterior excessiva, que lesa os vasos do fragmento), esporão lateral e cúbito varo.\n\n**A pseudartrose: os critérios de Flynn.** Fixar uma pseudartrose antiga do côndilo lateral é arriscado (necrose, rigidez). Flynn propôs fixá-la (com enxerto e parafuso, sem dissecar a face posterior) quando:\n- há um **grande fragmento metafisário** (superfície óssea para consolidar e fixar);\n- o desvio é **menor que 1 cm**;\n- a **fise** ainda está aberta.\n\n**Quando não fixar.** Fragmento pequeno, desvio acima de 1 cm ou pseudartrose muito antiga: trata-se as consequências, com **osteotomia** varizante do úmero distal para o valgo e **transposição anterior do nervo ulnar** se houver neuropatia.",
-  "correta": "**Correta: B (grande fragmento metafisário).** Segundo Flynn, a pseudartrose do côndilo lateral pode ser fixada (com enxerto) quando há fragmento metafisário grande, desvio menor que 1 cm e fise aberta.",
+  "conceito": "**A fixação de uma pseudartrose condilar lateral precisa preservar a viabilidade do fragmento.** Os critérios de Flynn incluem **grande componente metafisário, fise aberta e viável e desvio menor que 1 cm** da superfície articular. Mobilizar extensamente um fragmento antigo pode provocar osteonecrose e perda de movimento; a seleção tenta evitar que uma busca de alinhamento perfeito cause uma nova lesão.\n\nNos casos selecionados, a técnica descrita busca união metafisária com compressão e enxerto extra-articular, evitando dissecção posterior e intra-articular. Deformidade estética e neuropatia ulnar tardia são problemas relacionados, mas podem exigir osteotomia e transposição em vez de uma reconstrução articular extensa. Assim, uma indicação para tratar o nervo não é automaticamente um critério de Flynn para fixar o fragmento.",
+  "correta": "**B: grande fragmento metafisário.** É um dos três critérios, junto de pouca migração relativa e fise ainda viável. O enunciado pergunta por uma característica que favoreça a fixação, não por qualquer sequela que mereça tratamento.",
   "incorretas": {
-   "A": "O degrau articular umerorradial não faz parte dos critérios de Flynn.",
-   "C": "Cúbito valgo com paralisia ulnar indica osteotomia e transposição do ulnar, não fixação da pseudartrose.",
-   "D": "A diástase acima de 1 cm é contraindicação à fixação."
+   "A": "**Degrau articular isolado não é o critério de Flynn apresentado.** A incongruência pode existir na pseudartrose, mas tentar corrigi-la a qualquer custo exige dissecção arriscada. A seleção leva em conta o fragmento metafisário, a fise e o desvio menor que 1 cm.",
+   "C": "**Valgo com paralisia ulnar pode indicar tratar a deformidade e o nervo.** O capítulo considera transposição e eventual osteotomia nesse cenário. Isso não substitui os requisitos específicos para fixar a pseudartrose.",
+   "D": "**Mais de 1 cm é o oposto do limite.** Flynn usa desvio menor que 1 cm. Quanto mais migrado o fragmento, maior pode ser a agressão necessária para mobilizá-lo e maior a preocupação com a vascularização."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children. 6th., p. 604 (referência indicada na prova TARO 2013, questão 15)",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas do côndilo lateral do úmero."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Retardo de consolidação, pseudartrose e o nervo ulnar."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Retardo de consolidação, pseudartrose e o nervo ulnar"
+     ],
+     "blocos": [
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "c968ed4e9be150db48fcd86bc988773e6064472dc113e6581815bf29cf60b209"
+    }
+   ],
+   "questaoSha256": "0f55a89f5212008fa6180d27b1d2e3df5fecc3c1e7e423a247cc17de80942544",
+   "comentarioSha256": "564deebc62845d8a39df9e94d3003bc73ddfa2f0066311508371552b638af01e"
+  }
  },
  "pediatria-0672": {
   "conceito": "**A epifisiólise proximal do fêmur (EPF) e a mecânica.** A EPF ocorre quando a **força de cisalhamento** sobre a fise proximal do fêmur supera a **resistência** da fise. Os fatores se dividem em dois grupos:\n\n| Grupo | Fatores |\n|---|---|\n| **Mecânicos** (aumentam o cisalhamento) | **Obesidade**, **retroversão femoral** (diminuição da anteversão), fise mais **vertical** (inclinação aumentada), colo em varo relativo, acetábulo profundo |\n| **Biológicos** (enfraquecem a fise) | Estirão do crescimento, hormônios (hipotireoidismo, deficiência de GH, hipogonadismo), insuficiência renal, radioterapia |\n\n**A retroversão.** O colo femoral normal tem anteversão de cerca de 10° a 15° no adolescente. Na EPF, o colo costuma ter **menos anteversão** (ou retroversão). Com isso, durante a marcha e a corrida, a força sobre a fise passa a ser mais de **cisalhamento** posterior, e a epífise tende a escorregar para **trás**. A obesidade agrava a retroversão e aumenta a carga.\n\n**A inclinação da fise e o ângulo cervicodiafisário.** Na adolescência, a fise proximal do fêmur fica naturalmente mais **oblíqua** (vertical). Nos pacientes com EPF, essa obliquidade é ainda **maior**, e o ângulo cervicodiafisário é relativamente **menor**: quanto mais vertical a fise, mais a força do peso corporal se transforma em cisalhamento, em vez de compressão.\n\n**A fise no estirão.** Durante o pico de crescimento, a **zona hipertrófica** da fise fica mais alta e mais fraca, e o pericôndrio (anel de Ranvier) afina. O deslizamento ocorre justamente pela zona hipertrófica.\n\n**A consequência clínica.** O conhecimento da mecânica explica:\n- por que a EPF é tão associada à **obesidade** (dois terços dos pacientes estão acima do percentil 95 de peso);\n- por que o lado contralateral está em risco (até 20% a 40% de bilateralidade);\n- por que a fixação in situ estabiliza a fise e acelera o seu fechamento, interrompendo o processo.\n\n**As endocrinopatias associadas.** Devem ser pensadas na EPF em criança **atípica**: **menor de 10 anos**, **magra**, abaixo do percentil 10 de altura, ou com acometimento **bilateral** precoce.\n| Doença | Mecanismo |\n|---|---|\n| **Hipotireoidismo** | Fise alargada e fraca, crescimento lento e prolongado; a mais comum |\n| **Deficiência de GH** (e o tratamento com GH) | A reposição acelera o crescimento sobre uma fise imatura |\n| Hipogonadismo, panhipopituitarismo | Fise aberta por mais tempo |\n| Osteodistrofia renal | Hiperparatireoidismo secundário com fise alargada |\n\nO **hipotireoidismo** e a **deficiência de GH** (sobretudo durante a reposição) são as associações clássicas. Nessas crianças, o risco de **bilateralidade** é alto, e a fixação profilática do lado contralateral é recomendada.",
@@ -9564,64 +9605,307 @@
   "conferido": false
  },
  "pediatria-0696": {
-  "conceito": "**As imagens.** A foto mostra o cotovelo de uma menina de 6 anos com **edema** importante e uma **equimose na face lateral**, sinal de lesão do lado lateral (onde a fáscia e o periósteo se romperam). A radiografia em AP mostra um **fragmento ósseo metafisário lateral** separado da metáfise do úmero distal, com o fragmento desviado lateralmente: é a **fratura do côndilo lateral**.\n\n**A fratura do côndilo lateral do úmero.** É a **segunda fratura mais comum do cotovelo infantil**, depois da supracondiliana, com pico entre **4 e 10 anos**. O mecanismo é queda com a mão estendida e o cotovelo em varo, com a cabeça do rádio empurrando o capítulo, ou avulsão pelos extensores.\n\n**Por que é traiçoeira na radiografia.** Nessa idade, a maior parte do côndilo lateral é **cartilagem** e não aparece na radiografia. O que se vê é apenas um **fragmento metafisário lateral**, pequeno, que pode parecer uma lesão sem importância. Mas o traço começa na **metáfise lateral**, **atravessa a fise** e **entra na articulação** (geralmente um Salter-Harris IV): é uma fratura **intra-articular e fisária**. A incidência **oblíqua interna** do cotovelo mostra melhor o desvio.\n\n**As forças que desviam o fragmento.** O fragmento leva a origem dos **extensores do punho e dos dedos** (epicôndilo lateral), que o puxam para fora e o rodam. Além disso, o **líquido sinovial** banha o traço e atrapalha a consolidação.\n\n**A classificação de Jakob (desvio).**\n\n| Estágio | Descrição | Conduta |\n|---|---|---|\n| I | Traço incompleto, desvio menor que 2 mm | Gesso, com radiografias semanais |\n| II | Desviado (2 a 4 mm), sem rotação | Fixação percutânea ou aberta |\n| III | **Desviado e rodado**, fora da articulação | **Redução aberta e fixação** |\n\n**As complicações.** Esporão lateral (a mais comum, estética), pseudartrose, cúbito valgo progressivo com neuropatia ulnar tardia, necrose avascular (por dissecção posterior), deformidade em rabo de peixe e cúbito varo.",
-  "correta": "**Correta: C (do côndilo lateral).** Numa criança de 6 anos com edema e equimose lateral no cotovelo, o fragmento metafisário lateral desviado na radiografia indica fratura do côndilo lateral, intra-articular e fisária.",
+  "conceito": "**A fratura do côndilo lateral pode parecer pequena porque seu componente cartilaginoso não aparece.** A lasca metafisária se une à epífise e à superfície articular, compondo um fragmento maior que a parte ossificada. Dor e edema laterais são as pistas clínicas, frequentemente com menos deformidade que uma supracondiliana.\n\nA fotografia mostra edema e equimose na região do cotovelo; a radiografia mostra um fragmento lateral separado, que inclui uma porção metafisária junto do núcleo condilar. Esse conjunto favorece **fratura do côndilo lateral**, não uma lesão restrita à superfície do capítulo. O resumo recomenda oblíqua interna para medir o afastamento e avaliar a estabilidade, pois AP e perfil podem subestimá-los. O diagnóstico deve resultar da imagem e da anatomia, sem depender apenas da frequência aos 6 anos.",
+  "correta": "**C: côndilo lateral.** O fragmento lateral com componente metafisário e epifisário é compatível com a fratura condilar, em conjunto com os sinais locais. Como parte dele ainda é cartilagem, sua extensão não se resume à pequena porção óssea visível.",
   "incorretas": {
-   "A": "A fratura isolada da **tróclea** é muito rara na criança, e a tróclea nem está ossificada aos 6 anos.",
-   "B": "A fratura do **capítulo** por cisalhamento é típica de adolescentes e adultos; aos 6 anos, a lesão lateral que leva fragmento metafisário é a do côndilo lateral.",
-   "D": "O **epicôndilo lateral** só ossifica por volta dos 10 a 12 anos; sua avulsão isolada é rara."
+   "A": "**Uma fratura isolada da tróclea não representa o fragmento lateral metafisário-epifisário mostrado.** O traço condilar pode alcançar a cartilagem troclear, mas isso não transforma toda a lesão numa fratura restrita à tróclea. A unidade deslocada é o côndilo lateral.",
+   "B": "**A fratura pura do capítulo se restringe à superfície articular verdadeira e é mais típica do adolescente mais velho.** A imagem mostra componente metafisário associado, a pista que favorece o côndilo. Capítulo e côndilo não são sinônimos neste diagnóstico.",
+   "D": "**O epicôndilo lateral é uma apófise extra-articular e sua fratura isolada é rara.** Aos 6 anos, em geral ainda não tem núcleo visível. O fragmento metafisário-condilar da imagem não deve ser chamado de simples avulsão dessa apófise."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
-   "Jakob R, Fowles JV, Rang M, Kassab MT. Observations concerning fractures of the lateral humeral condyle in children. J Bone Joint Surg Br. 1975;57(4):430-436."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Diagnóstico: o exame e a oblíqua interna.",
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, seções O fragmento: anatomia, mecanismo e desvio; Fratura do capítulo no adolescente.",
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 17. Conteúdo consultado no resumo das fraturas raras do cotovelo, seção Fratura do epicôndilo lateral."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Diagnóstico: o exame e a oblíqua interna"
+     ],
+     "blocos": [
+      "diagnostico-o-exame-e-a-obliqua-interna-e288400a",
+      "diagnostico-o-exame-e-a-obliqua-interna-1f7aadf3",
+      "diagnostico-o-exame-e-a-obliqua-interna-9af46fcb",
+      "diagnostico-o-exame-e-a-obliqua-interna-ae0b9893",
+      "diagnostico-o-exame-e-a-obliqua-interna-b918d823",
+      "diagnostico-o-exame-e-a-obliqua-interna-8803c6fb",
+      "diagnostico-o-exame-e-a-obliqua-interna-0b6f8bf1",
+      "diagnostico-o-exame-e-a-obliqua-interna-9ff32e0b",
+      "diagnostico-o-exame-e-a-obliqua-interna-a4ec161c",
+      "diagnostico-o-exame-e-a-obliqua-interna-a7182721",
+      "diagnostico-o-exame-e-a-obliqua-interna-05b3e295",
+      "diagnostico-o-exame-e-a-obliqua-interna-7f92e443",
+      "diagnostico-o-exame-e-a-obliqua-interna-538ab2b6"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "5990ebd4b6c5a1ad38a5be19ab84527bcb7e044ec51eb54b0d17a3ff0825a8f3"
+    },
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "O fragmento: anatomia, mecanismo e desvio"
+     ],
+     "blocos": [
+      "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
+      "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
+      "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
+      "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
+      "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
+      "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
+      "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
+      "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
+      "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
+      "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
+      "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
+      "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
+      "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "1b1d107b12f6dcae8d769c4c961c2c95d6196b195b81b0775964b753b17e53b2"
+    },
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Fratura do capítulo no adolescente"
+     ],
+     "blocos": [
+      "fratura-do-capitulo-no-adolescente-2b6677d0",
+      "fratura-do-capitulo-no-adolescente-daf48ee9",
+      "fratura-do-capitulo-no-adolescente-ccbd432c",
+      "fratura-do-capitulo-no-adolescente-16b52e75",
+      "fratura-do-capitulo-no-adolescente-4ccdc058",
+      "fratura-do-capitulo-no-adolescente-7e55e8a8",
+      "fratura-do-capitulo-no-adolescente-d9c5f125",
+      "fratura-do-capitulo-no-adolescente-3148b36a",
+      "fratura-do-capitulo-no-adolescente-3bda4c9f",
+      "fratura-do-capitulo-no-adolescente-193d0317",
+      "fratura-do-capitulo-no-adolescente-fb89ac0c",
+      "fratura-do-capitulo-no-adolescente-d50ee436",
+      "fratura-do-capitulo-no-adolescente-3b00209d",
+      "fratura-do-capitulo-no-adolescente-707b3ae8"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "e664f17fce03240b0c94e0d0556363525fd98d0591e5f37c2aef1c2c695e9053"
+    },
+    {
+     "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+     "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+     "secoes": [
+      "Fratura do epicôndilo lateral"
+     ],
+     "blocos": [
+      "fratura-do-epicondilo-lateral-fa97a6c8",
+      "fratura-do-epicondilo-lateral-723b58d6",
+      "fratura-do-epicondilo-lateral-a9ccf232",
+      "fratura-do-epicondilo-lateral-f0d82e2c",
+      "fratura-do-epicondilo-lateral-3816efa4",
+      "fratura-do-epicondilo-lateral-1bce3944",
+      "fratura-do-epicondilo-lateral-326b0147",
+      "fratura-do-epicondilo-lateral-4d2e8ee9",
+      "fratura-do-epicondilo-lateral-3148b36a",
+      "fratura-do-epicondilo-lateral-c3e8f59d",
+      "fratura-do-epicondilo-lateral-13b6bf7f"
+     ],
+     "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+     "trechosSha256": "7f00a34314c1725d52e23a2135ed9740ab4cfeb8c2a0f123c164be3d106529ea"
+    }
+   ],
+   "questaoSha256": "1095d73fe498cf51e41cb2e73a774ddaec6c12d8fe3bdf014ecdb590aa446750",
+   "comentarioSha256": "938f0bb3e5e9e5e29ebd74b297b25ddf4c9cad64c04b0fe100f79e606804dab8"
+  }
  },
  "pediatria-0697": {
-  "conceito": "**A imagem.** Radiografia do cotovelo de uma criança de 6 anos mostrando o fragmento do **côndilo lateral** do úmero totalmente separado da metáfise, **desviado lateralmente e rodado**, fora da sua posição articular: a superfície de fratura do fragmento não está mais voltada para o úmero, e o fragmento perdeu a relação com a articulação.\n\n**A fratura do côndilo lateral.** É a segunda fratura mais comum do cotovelo infantil, entre 4 e 10 anos. É **fisária e intra-articular**: o traço começa na metáfise lateral, atravessa a fise e entra na articulação. O fragmento é tracionado pelos **extensores** que se originam no epicôndilo lateral, o que favorece o desvio.\n\n**A classificação de Jakob (com base no desvio).**\n\n| Estágio | Descrição | Conduta |\n|---|---|---|\n| I | Traço **incompleto**, a dobradiça de cartilagem articular está íntegra; desvio mínimo (menos de 2 mm), estável | Gesso, com radiografias semanais |\n| II | Traço **completo** até a articulação, fragmento **desviado** mas sem rotação | Fixação (geralmente fechada ou aberta com fios) |\n| **III** | Fragmento **completamente desviado e rodado**, fora da articulação | **Redução aberta e fixação** |\n\n**Por que o estágio III exige cirurgia aberta.** O fragmento rodado não pode ser reduzido por manipulação; a superfície articular precisa ser restaurada sob visão direta. A abordagem é **lateral**, e a dissecção deve evitar a face **posterior** do fragmento, por onde chega a irrigação, para não causar **necrose avascular** do côndilo.\n\n**Complicações.** Pseudartrose (o líquido sinovial banha o traço e a tração dos extensores afasta o fragmento), **cúbito valgo progressivo**, neuropatia ulnar tardia, deformidade em \"rabo de peixe\", crescimento excessivo lateral (esporão) e necrose.",
-  "correta": "**Correta: C (III).** O fragmento do côndilo lateral está completamente desviado e **rodado**, fora da articulação, o que caracteriza o estágio III de Jakob e indica redução aberta e fixação.",
+  "conceito": "**Jakob descreve a progressão da perda de estabilidade na fratura condilar lateral.** No estágio I, a superfície articular permanece íntegra e o desvio é mínimo. No II, o traço atravessa a superfície articular, permitindo afastamento. No **III**, o fragmento fica completamente desviado e rodado, com possibilidade de translação do rádio e da ulna.\n\nA radiografia apresentada mostra separação importante do fragmento lateral e mudança de sua orientação em relação à metáfise. A rotação e o desvio grosseiro sustentam o estágio III. A parte cartilaginosa não é toda visível, mas o deslocamento do componente ossificado já afasta o padrão de uma simples dobradiça preservada. Jakob tem três estágios; não se deve importar um IV de outras classificações.",
+  "correta": "**C: estágio III.** O fragmento está destacado e rodado, não apenas discretamente afastado. São os elementos que caracterizam a perda completa da relação habitual descrita por Jakob III.",
   "incorretas": {
-   "A": "O **estágio I** tem traço incompleto, com a cartilagem articular íntegra e desvio mínimo, sem separação do fragmento.",
-   "B": "No **estágio II**, o fragmento está desviado, mas **sem rotação**, mantendo a superfície articular orientada para a articulação.",
-   "D": "A classificação de Jakob tem apenas **três estágios**; não existe estágio IV."
+   "A": "**O estágio I preserva a superfície articular e tem desvio mínimo.** A separação e a rotação vistas não combinam com essa dobradiça estável. O tamanho real do fragmento cartilaginoso pode ser subestimado, mas o deslocamento ósseo já é suficiente para excluir I.",
+   "B": "**O estágio II tem ruptura articular e pode apresentar desvio, porém não expressa o fragmento completamente desviado e rodado desta imagem.** A rotação é o elemento que leva ao III. Não se deve classificar apenas pela existência de um traço articular.",
+   "D": "**Jakob não tem estágio IV na classificação apresentada.** São I, II e III. O fato de outras classificações do côndilo lateral terem mais categorias não cria uma quarta etapa de Jakob."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
-   "Jakob R, Fowles JV, Rang M, Kassab MT. Observations concerning fractures of the lateral humeral condyle in children. J Bone Joint Surg Br. 1975;57(4):430-436."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Classificações."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Classificações"
+     ],
+     "blocos": [
+      "classificacoes-4e13cd16",
+      "classificacoes-fe6e317c",
+      "classificacoes-48565c30",
+      "classificacoes-58985ad8",
+      "classificacoes-582acfa1",
+      "classificacoes-c2db79fd",
+      "classificacoes-34411dcc",
+      "classificacoes-c1dc58fe",
+      "classificacoes-99d551a0",
+      "classificacoes-209218c3",
+      "classificacoes-17c8676a",
+      "classificacoes-c060b71e",
+      "classificacoes-d949e30d",
+      "classificacoes-68cb5ce6",
+      "classificacoes-40b6f2df",
+      "classificacoes-651d222a",
+      "classificacoes-ae54b70d",
+      "classificacoes-275160d7",
+      "classificacoes-41fd5951",
+      "classificacoes-573b431b",
+      "classificacoes-9726b032"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "09f6a4eb812c702429ece8e27ea2a2fd54a296f8e69709062d2b7984a9f120ea"
+    }
+   ],
+   "questaoSha256": "e27dafff3d43ce3bba164d07558de2875dab3a7f6ff4e9927c735beb8ab77a0c",
+   "comentarioSha256": "164998fb352907daaedcdebd9260a92c0121cb35042a0f5a31a44f5e2c6dee64"
+  }
  },
  "pediatria-0698": {
-  "conceito": "**A imagem.** Radiografia em AP do cotovelo de uma menina de 6 anos mostrando o fragmento do **côndilo lateral** totalmente separado da metáfise, **desviado lateralmente e rodado**: a superfície fraturada do fragmento não está mais voltada para o úmero. É um estágio **III de Jakob**.\n\n**A fratura do côndilo lateral do úmero.** É a **segunda fratura mais comum do cotovelo infantil**, depois da supracondiliana, com pico entre **4 e 10 anos**. O mecanismo é queda com a mão estendida e o cotovelo em varo, com a cabeça do rádio empurrando o capítulo, ou avulsão pelos extensores.\n\n**Por que é traiçoeira na radiografia.** Nessa idade, a maior parte do côndilo lateral é **cartilagem** e não aparece na radiografia. O que se vê é apenas um **fragmento metafisário lateral**, pequeno, que pode parecer uma lesão sem importância. Mas o traço começa na **metáfise lateral**, **atravessa a fise** e **entra na articulação** (geralmente um Salter-Harris IV): é uma fratura **intra-articular e fisária**. A incidência **oblíqua interna** do cotovelo mostra melhor o desvio.\n\n**As forças que desviam o fragmento.** O fragmento leva a origem dos **extensores do punho e dos dedos** (epicôndilo lateral), que o puxam para fora e o rodam. Além disso, o **líquido sinovial** banha o traço e atrapalha a consolidação.\n\n**A classificação de Jakob (desvio).**\n\n| Estágio | Descrição | Conduta |\n|---|---|---|\n| I | Traço incompleto, desvio menor que 2 mm | Gesso, com radiografias semanais |\n| II | Desviado (2 a 4 mm), sem rotação | Fixação percutânea ou aberta |\n| III | **Desviado e rodado**, fora da articulação | **Redução aberta e fixação** |\n\n**As complicações.** Esporão lateral (a mais comum, estética), pseudartrose, cúbito valgo progressivo com neuropatia ulnar tardia, necrose avascular (por dissecção posterior), deformidade em rabo de peixe e cúbito varo.\n\n**Por que redução aberta neste caso.** Com o fragmento **rodado** e desviado bem mais que 2 mm, a superfície articular e a fise estão incongruentes, e a manipulação fechada não consegue desfazer a rotação. A redução **aberta**, por via lateral, permite restaurar a superfície articular sob visão direta e fixar com **fios de Kirschner** (ou parafuso no fragmento metafisário em crianças maiores). A dissecção deve evitar a face **posterior** do fragmento, por onde chega a irrigação, para não causar necrose.",
-  "correta": "**Correta: D (redução cruenta e fixação).** Na fratura do côndilo lateral desviada e rodada (estágio III de Jakob), a redução fechada não restaura a superfície articular; indica-se redução aberta, por via lateral, e fixação.",
+  "conceito": "**Uma fratura completamente desviada e rodada exige restaurar a superfície articular e manter sua estabilidade.** A radiografia mostra um fragmento lateral separado e rodado, padrão de Jakob III. O algoritmo do capítulo indica **redução aberta e fixação** para esse grupo quando a reconstrução não pode ser garantida de forma menos invasiva.\n\nA cirurgia deve mostrar a superfície articular, preservando as partes moles posteriores que conduzem a irrigação. O gesso isolado é reservado aos padrões de mínimo desvio e estabilidade; uma redução fechada sem fixação é difícil de manter. Há séries de redução percutânea em fraturas III, mas o capítulo destaca sua dificuldade e reprodução limitada. Portanto, a escolha da banca por redução aberta não significa que toda tentativa fechada seja impossível em mãos experientes.",
+  "correta": "**D: redução cruenta e fixação.** O desvio e a rotação importantes tornam necessário obter congruência articular e estabilizar o fragmento. A redução aberta é a conduta do algoritmo para o padrão mostrado, sem dispensar a preservação vascular posterior.",
   "incorretas": {
-   "A": "A **imobilização** isolada só é aceitável no desvio menor que 2 mm, com controle radiográfico semanal; com o fragmento rodado, levaria à pseudartrose.",
-   "B": "A **redução incruenta com gesso** não mantém a redução, porque os extensores voltam a desviar o fragmento, e não corrige a rotação.",
-   "C": "A **fixação percutânea** é uma opção para desvios moderados com a superfície articular congruente; com o fragmento rodado, a redução fechada não é possível."
+   "A": "**Imobilização isolada não corrige o fragmento completamente desviado e rodado.** O tratamento conservador depende de pequeno desvio e estabilidade comprovada, condições diferentes da figura. Aceitar esse alinhamento aumenta o risco de falha de união e deformidade.",
+   "B": "**Reduzir e apenas engessar não oferece manutenção confiável nas fraturas desviadas.** O capítulo não recomenda redução fechada sem fixação nesse contexto. Ainda que uma manobra melhore a imagem, é preciso estabilizar a articulação reconstruída.",
+   "C": "**Redução fechada com fixação percutânea é possível em casos selecionados, inclusive há séries de Jakob III.** Porém, é tecnicamente difícil e não substitui a preferência do algoritmo para fragmento grosseiramente desviado e rodado. D é a resposta oficial e o tratamento mais indicado no cenário apresentado."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
-   "Jakob R, Fowles JV, Rang M, Kassab MT. Observations concerning fractures of the lateral humeral condyle in children. J Bone Joint Surg Br. 1975;57(4):430-436."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Tratamento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Tratamento"
+     ],
+     "blocos": [
+      "tratamento-9a3e9a18",
+      "tratamento-bb0643c9",
+      "tratamento-1fe20239",
+      "tratamento-a3c92c02",
+      "tratamento-da22f007",
+      "tratamento-f26f6977",
+      "tratamento-035135f8",
+      "tratamento-5d4c3bac",
+      "tratamento-0bfbf3c6",
+      "tratamento-82438e1a",
+      "tratamento-b73e4e3a",
+      "tratamento-28400503",
+      "tratamento-c78f9b2a",
+      "tratamento-068bd5f7",
+      "tratamento-428e16a7",
+      "tratamento-10d375db",
+      "tratamento-b2e5c022",
+      "tratamento-89c54e56",
+      "tratamento-577a247e",
+      "tratamento-4bca4308",
+      "tratamento-dba1a6be",
+      "tratamento-0ba8da1d",
+      "tratamento-90748fd8",
+      "tratamento-bda172ef",
+      "tratamento-f18060b9",
+      "tratamento-45123ff1"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "e3d8e114aca9288a296249a0d4f41970f6446fcdd32f57325e35000c3058aa5c"
+    }
+   ],
+   "questaoSha256": "7aef0d37d64beaee56c887e77168afb018db8d5d593cc18fd9fc40580d41f638",
+   "comentarioSha256": "bd39b3d0660b327a5bf8d4b45bbd7651fbb38fad0e200c945bea4fa3ba1b75e7"
+  }
  },
  "pediatria-0699": {
-  "conceito": "**As imagens.** A foto mostra uma menina com os braços estendidos e supinados: o **cotovelo esquerdo** tem uma **proeminência lateral** que dá a aparência de **varo** (pseudovaro), em comparação com o lado direito. A radiografia em AP do cotovelo mostra uma **saliência óssea na margem lateral** da metáfise distal do úmero, no local do côndilo lateral: um **esporão lateral**.\n\n**O esporão lateral após fratura do côndilo lateral.** É a complicação **mais frequente** da fratura do côndilo lateral do úmero na criança. Aparece tanto após o tratamento **conservador** quanto após a **cirurgia**. A causa provável é a **elevação do periósteo** lateral pela fratura e pela dissecção, que forma osso novo além do contorno normal, ou um pequeno degrau entre o fragmento e a metáfise.\n\n**Por que parece varo.** O esporão aumenta o volume do lado lateral do cotovelo e cria a impressão de **cúbito varo**, mas o **eixo ósseo está preservado**: na radiografia, o ângulo de Baumann e o ângulo de carregamento são normais. É uma deformidade **estética**, sem repercussão funcional. Os pais devem ser avisados de que pode surgir.\n\n**As complicações da fratura do côndilo lateral.**\n\n| Complicação | Comentário |\n|---|---|\n| **Esporão lateral** (pseudovaro) | A **mais comum**; estética, sem tratamento |\n| Cúbito varo verdadeiro | Por estímulo de crescimento lateral ou consolidação viciosa |\n| Pseudartrose | Pelo líquido sinovial e a tração dos extensores |\n| Cúbito valgo progressivo | Após pseudartrose; pode levar a neuropatia ulnar tardia |\n| Necrose avascular | Por dissecção posterior excessiva |\n| Deformidade em **rabo de peixe** | Defeito central na tróclea por lesão da irrigação |\n| Parada de crescimento | Rara, pela fratura atravessar a fise |\n\n**Conduta.** O esporão lateral não precisa de tratamento. Tende a remodelar parcialmente com o crescimento.",
-  "correta": "**Correta: B (o esporão lateral).** A proeminência lateral que dá aspecto de varo ao cotovelo, com saliência óssea na margem lateral da metáfise e eixo preservado, é o esporão lateral, a complicação mais comum da fratura do côndilo lateral.",
+  "conceito": "**Esporão lateral é formação óssea proeminente após fratura do côndilo lateral.** Pode ocorrer com tratamento cirúrgico ou conservador e é descrito em cerca de 75% de algumas séries. A proeminência pode criar aparência de varo mesmo sem mudar o ângulo de carregamento, chamada pseudovaro. A incidência alta não significa comprometimento funcional inevitável; em geral a importância é pequena e a aparência pode melhorar.\n\nNa fotografia há assimetria do contorno do cotovelo; na radiografia, o achado dominante é a proeminência óssea lateral após consolidação. Isso corresponde ao **esporão**, não a um defeito central da tróclea. O capítulo descreve contorno mais liso após tratamento conservador e mais irregular após cirurgia, relacionado à reação periosteal. A imagem permite reconhecer a proeminência, sem precisar atribuir um método de tratamento não informado no enunciado.",
+  "correta": "**B: esporão lateral.** A imagem mostra formação óssea excedente na região lateral, o padrão de proeminência descrito após a consolidação. É diferente da perda óssea central que forma rabo de peixe e da necrose do núcleo.",
   "incorretas": {
-   "A": "A **osteonecrose** do côndilo lateral causa irregularidade e fragmentação do côndilo, e não uma proeminência óssea lateral com eixo preservado.",
-   "C": "O **fechamento fisário** levaria a deformidade angular progressiva, com alteração dos ângulos radiográficos, o que não se vê.",
-   "D": "A deformidade em **rabo de peixe** é um defeito **central** na tróclea, não uma saliência lateral."
+   "A": "**Osteonecrose é perda de vitalidade do fragmento e pode causar reabsorção, deformidade e reossificação.** Não é o diagnóstico que melhor explica a proeminência óssea lateral dominante da figura. Não se deve nomear toda alteração pós-fratura como necrose.",
+   "C": "**Fechamento fisário diz respeito à união precoce da fise e suas consequências no crescimento.** A simples proeminência lateral mostrada é o esporão. A imagem não deve ser usada para inferir uma parada de crescimento como causa obrigatória desse contorno.",
+   "D": "**Rabo de peixe é uma falha central entre o capítulo e a tróclea.** O aspecto é de defeito articular, não de osso excedente lateral. Localizar a alteração separa duas complicações possíveis da mesma fratura."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Complicações da fratura consolidada."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Complicações da fratura consolidada"
+     ],
+     "blocos": [
+      "complicacoes-da-fratura-consolidada-9447140f",
+      "complicacoes-da-fratura-consolidada-36e7d648",
+      "complicacoes-da-fratura-consolidada-365c31e8",
+      "complicacoes-da-fratura-consolidada-7aae0679",
+      "complicacoes-da-fratura-consolidada-23882487",
+      "complicacoes-da-fratura-consolidada-92150513",
+      "complicacoes-da-fratura-consolidada-2f72d567",
+      "complicacoes-da-fratura-consolidada-aef3ff0b",
+      "complicacoes-da-fratura-consolidada-f8be5067",
+      "complicacoes-da-fratura-consolidada-65fce0cd",
+      "complicacoes-da-fratura-consolidada-9df48203",
+      "complicacoes-da-fratura-consolidada-61ac4d48",
+      "complicacoes-da-fratura-consolidada-b1484741",
+      "complicacoes-da-fratura-consolidada-34cf5643",
+      "complicacoes-da-fratura-consolidada-50f3608e",
+      "complicacoes-da-fratura-consolidada-5eb2af87",
+      "complicacoes-da-fratura-consolidada-85f7cd9c"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "df70416996cc4982a52ba67e3fb8cdca373749cb912272374a5fe209e940eb13"
+    }
+   ],
+   "questaoSha256": "7a05281dde657de7484b7d6390e6c6ed61509f14469b9b5e1bae83ada1601bf3",
+   "comentarioSha256": "741dfeaeb3e473dfb560edcc9abc7cf1176d090df534f4b5626acbc62817c8de"
+  }
  },
  "pediatria-0700": {
   "conceito": "**A fratura da espinha tibial (eminência intercondilar).** É a avulsão óssea da inserção do **ligamento cruzado anterior** (LCA) na tíbia. Na criança de **8 a 14 anos**, a epífise ainda é parcialmente cartilaginosa e **mais fraca** que o ligamento: em vez de romper, o LCA arranca o seu ponto de inserção. É o **equivalente pediátrico** da ruptura do LCA.\n\n**O mecanismo.** Classicamente, a **queda de bicicleta**, e hoje sobretudo os esportes. O mecanismo mais comum é a **hiperextensão** do joelho combinada com **rotação** (em geral rotação lateral ou valgo e rotação), o mesmo que rompe o LCA no adulto. O trauma direto sobre o fêmur distal com o joelho fletido também é descrito.\n\n**A classificação de Meyers e McKeever (modificada por Zaricznyj).**\n| Tipo | Descrição |\n|---|---|\n| **I** | Sem desvio ou desvio mínimo da margem anterior |\n| **II** | Elevação da parte **anterior**, com a dobradiça posterior intacta (aspecto em \"bico de pato\") |\n| **III** | Fragmento **completamente** separado (IIIA só a espinha; IIIB toda a eminência; às vezes rodado) |\n| IV | Fragmento **cominutivo** |\n\n**O tratamento.**\n- **Tipo I** (e II que reduz em extensão): **gesso** com o joelho em extensão ou leve flexão (10° a 20°) por 4 a 6 semanas.\n- **Tipos II que não reduzem, III e IV**: **redução** e **fixação** artroscópica ou aberta, com suturas pela epífise ou parafusos epifisários (sem cruzar a fise).\n- O **corno anterior do menisco** (sobretudo o medial) ou o ligamento intermeniscal pode ficar **interposto** sob o fragmento, impedindo a redução fechada.\n\n**As complicações.** **Artrofibrose** e perda da extensão (a mais comum), frouxidão residual do LCA (o ligamento se alonga antes de arrancar o osso), bloqueio da extensão por consolidação viciosa do fragmento elevado e, raramente, distúrbio de crescimento.\n\n**Por que a perda da extensão é o maior prejuízo.** A **artrofibrose** (cicatrização excessiva com rigidez) e a **consolidação viciosa** do fragmento elevado, que bate no intercôndilo, levam à **perda da extensão** completa. Mesmo poucos graus de déficit de extensão alteram a marcha, sobrecarregam o quadríceps e a patelofemoral e são difíceis de recuperar. A **frouxidão** residual do LCA é frequente na medida (gaveta e Lachman aumentados), mas, na maioria, causa **pouca instabilidade funcional**. Por isso, a mobilização precoce e a redução anatômica do fragmento são essenciais.",
@@ -10339,20 +10623,61 @@
   "conferido": false
  },
  "pediatria-0734": {
-  "conceito": "**Retardo de consolidação na fratura do côndilo lateral do úmero.** A fratura do côndilo lateral é uma das fraturas pediátricas com maior risco de **pseudartrose**, o que contrasta com a regra geral de que fraturas na criança consolidam rápido. Três fatores explicam essa tendência.\n\n**1. Líquido sinovial no foco.** O traço é **intra-articular**: o foco é banhado por **líquido sinovial**, que contém fibrinolisinas e dilui o hematoma, **inibindo a formação de fibrina** e do coágulo que inicia a consolidação. Por isso, mesmo fraturas pouco desviadas podem consolidar devagar. Jakob e colaboradores mostraram, em séries clínicas, a tendência dessas fraturas a desviar e a não consolidar quando tratadas sem fixação.\n\n**2. Tração muscular.** O fragmento recebe a origem dos **músculos extensores** do antebraço (extensor radial longo e curto do carpo, extensor comum) e do braquiorradial, que o puxam e rodam, afastando os fragmentos e deixando o foco instável.\n\n**3. Vascularização precária** do fragmento, que depende de vasos posteriores e pode ser prejudicada pelo trauma ou pela cirurgia.\n\n**Implicações.**\n\n| Situação | Conduta |\n|---|---|\n| Desvio menor que 2 mm, traço estável | Gesso com controle radiográfico semanal |\n| Desvio maior que 2 mm ou instabilidade | Redução aberta (ou fechada) e fixação com fios |\n| Consolidação lenta | Prolongar a imobilização; considerar fixação |\n| Pseudartrose estabelecida | Fixação com enxerto, se a anatomia permitir |\n\n**Consequências da pseudartrose.** Cúbito valgo progressivo e paralisia ulnar tardia.\n\n> Côndilo lateral consolida devagar: líquido sinovial inibe o coágulo, e os extensores tracionam o fragmento.",
-  "correta": "**D: tem relação com a presença do líquido sinovial que inibe a formação de fibrina (resposta pela bibliografia).** O traço intra-articular expõe o foco ao líquido sinovial, que dilui o hematoma e inibe a formação do coágulo de fibrina, retardando a consolidação.",
+  "conceito": "**O retardo de consolidação envolve biologia e movimento no foco.** O capítulo cita três fatores combinados: circulação pobre da porção metafisária, líquido sinovial que banha a fratura e inibe fibrina e calo, e tração constante dos extensores presos ao fragmento. É mais comum após tratamento não cirúrgico.\n\nRetardo não é sinônimo imediato de pseudartrose. Se há estabilidade, melhora da dor e do movimento e posição mantida nas radiografias, a união pode ocorrer com imobilização mais longa. Na dúvida sobre a articulação, RM ou artrografia ajudam. Não existe gabarito oficial registrado nesta questão; a alternativa D é a resposta bibliográfica sustentada pelo resumo.",
+  "correta": "**D, pela bibliografia.** O líquido sinovial no foco dificulta a formação de fibrina e de calo, um dos mecanismos descritos. A explicação se soma à vascularização limitada e às forças musculares; não precisa ser tomada como causa única.",
   "incorretas": {
-   "A": "**Tração dos flexores** está errado: o fragmento do côndilo lateral recebe a origem dos **extensores**, que são os que o tracionam.",
-   "B": "**Mais frequente nos casos operados** é falso: a fixação estabiliza e aproxima os fragmentos, reduzindo o retardo; a pseudartrose é mais comum nas fraturas desviadas tratadas sem fixação.",
-   "C": "**Interposição da cápsula** não é a causa habitual; o mecanismo principal é o líquido sinovial associado à instabilidade pela tração muscular."
+   "A": "**O grupo muscular está trocado.** São os extensores que permanecem ligados ao fragmento lateral e exercem tração, não os flexores. A contribuição mecânica existe, mas a alternativa atribui a força às estruturas erradas.",
+   "B": "**A frequência é invertida em relação ao capítulo.** O retardo é descrito como mais comum no tratamento não cirúrgico. Isso não torna impossível um retardo após operação, mas impede ensinar a maior frequência cirúrgica como regra da fonte.",
+   "C": "**Interposição capsular não é apresentada como explicação habitual do retardo.** O resumo destaca líquido sinovial, circulação metafisária e tração extensora. Interposição e dificuldade de redução são conceitos diferentes de uma fratura bem posicionada que demora a unir."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. Fraturas em Criança, 6ª ed., p. 601.",
-   "Jakob R, Fowles JV, Rang M, Kassab MT. Observations concerning fractures of the lateral humeral condyle in children. J Bone Joint Surg Br. 1975;57(4):430-436."
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Retardo de consolidação, pseudartrose e o nervo ulnar."
   ],
   "provavel": "D",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Retardo de consolidação, pseudartrose e o nervo ulnar"
+     ],
+     "blocos": [
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "c968ed4e9be150db48fcd86bc988773e6064472dc113e6581815bf29cf60b209"
+    }
+   ],
+   "questaoSha256": "9e425d3b9f3dfc8d8fc33b9deb01809ef87df1c53304ec979eb09017e053b6d8",
+   "comentarioSha256": "e60b7557e20824b23165df83cd3932060eedce885b8f33cd589532af19ef4ba9"
+  }
  },
  "pediatria-0735": {
   "conceito": "**Fratura da espinha tibial na criança.** É a avulsão da **eminência intercondilar** (inserção tibial do LCA), típica de crianças de 8 a 14 anos em quedas de bicicleta ou esportes. Na criança, a epífise ainda incompletamente ossificada é mais fraca que o ligamento, por isso o osso arranca antes de o LCA romper (equivalente infantil da lesão do LCA).\n\n**Classificação de Meyers e McKeever (com a modificação de Zaricznyj).**\n\n| Tipo | Descrição | Tratamento usual |\n|---|---|---|\n| I | Sem desvio ou desvio mínimo | Imobilização em extensão ou leve flexão |\n| II | Elevação da porção anterior (dobradiça posterior) | Tentativa de redução fechada em extensão; fixação se não reduzir |\n| III | Fragmento completamente desviado | Redução e fixação (artroscópica ou aberta) |\n| IV | Desviado e cominuto (Zaricznyj) | Redução e fixação |\n\n**Por que a consolidação viciosa limita a extensão.** O fragmento elevado consolida **saliente** no intercôndilo e, na extensão, **colide com o teto do intercôndilo** (o fêmur), funcionando como um bloqueio ósseo, semelhante à lesão em ciclope. O resultado é **perda da extensão** completa, que prejudica a marcha e sobrecarrega a femoropatelar.\n\n**Obstáculos à redução.** O **corno anterior do menisco medial** ou o ligamento intermeniscal pode se interpor sob o fragmento, impedindo a redução fechada e exigindo artroscopia.\n\n**Outras sequelas.** **Frouxidão anterior residual** é comum (o LCA sofre deformação plástica antes de avulsionar), mas geralmente com pouca instabilidade funcional. Artrofibrose ocorre, sobretudo com imobilização prolongada e cirurgias tardias.\n\n> Espinha tibial consolidada elevada: bloqueio da extensão.",
@@ -11642,18 +11967,65 @@
   "conferido": false
  },
  "pediatria-0816": {
-  "conceito": "**A fratura do côndilo lateral do úmero.** É fisária e **intra-articular** (geralmente Salter-Harris IV), na faixa de 4 a 10 anos. O fragmento é tracionado pelos músculos **extensores** que se originam no epicôndilo lateral, o que favorece o desvio progressivo, e o traço é banhado pelo **líquido sinovial**, que atrapalha a consolidação.\n\n**A conduta habitual pelo desvio.**\n\n| Desvio | Conduta |\n|---|---|\n| Menos de 2 mm, traço incompleto | Gesso, com radiografias semanais (o desvio pode aumentar) |\n| 2 a 4 mm, com a superfície articular congruente | Redução e **fixação percutânea** com fios (com artrografia) |\n| Mais de 4 mm ou rodado | **Redução aberta e fixação** |\n\n**A fratura com três semanas.** Uma fratura **desviada** que chega com cerca de **3 semanas** já tem calo inicial e tecido fibroso, e a redução fechada não é mais possível. Se nada for feito, o risco é de:\n- **pseudartrose**;\n- **cúbito valgo progressivo** e neuropatia ulnar tardia;\n- consolidação viciosa com incongruência articular e perda de movimento.\n\nPor isso, a fratura desviada com algumas semanas de evolução ainda é tratada com **redução aberta e fixação**.\n\n**Cuidados na fratura tardia.**\n- A dissecção deve ser **mínima** e evitar a face **posterior** do fragmento, por onde chega a irrigação, para não causar **necrose avascular** do côndilo.\n- Quanto mais tardia (além de 6 a 12 semanas), maior o risco de necrose e rigidez, e alguns autores passam a aceitar a consolidação viciosa e tratar a deformidade depois. Em fraturas com poucas semanas, porém, a redução aberta com fixação é a regra.\n- Em pseudartroses estabelecidas com o fragmento em boa posição, faz-se fixação com enxerto ósseo.",
-  "correta": "**Resposta provável: Certo.** A fratura desviada do côndilo lateral com três semanas de evolução não pode mais ser reduzida de forma fechada e, se deixada, evolui para pseudartrose e cúbito valgo. A **redução aberta e fixação**, com dissecção cuidadosa para preservar a irrigação posterior, continua indicada.",
+  "conceito": "**Fratura condilar lateral vista tarde não é automaticamente uma pseudartrose antiga.** O capítulo separa apresentação com 2 a 12 semanas de pseudartrose estabelecida, em geral de 3 meses a anos. Na fratura desviada com cerca de 3 semanas, recomenda **redução aberta e fixação cuidadosas**, por via lateral, para evitar persistência de desvio e falha de união.\n\nA redução tardia exige maior atenção à irrigação: mobilizar o fragmento pode causar osteonecrose e perda de movimento. Por isso, pode-se aceitar redução imperfeita em vez de desinserir suas partes moles posteriores. Não se deve importar a regra de não manipular uma epífise transfisária presa para toda fratura condilar tardia: são lesões e situações diferentes. Sem gabarito oficial registrado, a resposta é sustentada pelo resumo.",
+  "correta": "**A, certo, pela bibliografia.** Três semanas de evolução com desvio ainda se enquadram na apresentação tardia em que o capítulo recomenda redução aberta e fixação cuidadosa. A indicação inclui a condição de preservar o suprimento, não perseguir uma redução anatômica com dissecção destrutiva.",
   "incorretas": {
-   "B": "**Errado** aceitaria deixar desviada uma fratura intra-articular e fisária com alto risco de pseudartrose e deformidade progressiva. A redução aberta com poucas semanas ainda é a conduta padrão."
+   "B": "**Apenas rejeitar a cirurgia não corresponde à orientação do capítulo.** Deixar a fratura desviada pode resultar em pseudartrose ou consolidação viciosa dolorosa. O risco da operação tardia modifica a técnica e o grau de agressão aceitável, mas não elimina sua indicação nesse contexto."
   },
+  "conferido": false,
   "referencias": [
-   "Tachdjian MO. Pediatric orthopaedics. Philadelphia: Saunders. 2ª edição, vol. 4, p. 3111.",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Tratamento."
   ],
   "provavel": "A",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Tratamento"
+     ],
+     "blocos": [
+      "tratamento-9a3e9a18",
+      "tratamento-bb0643c9",
+      "tratamento-1fe20239",
+      "tratamento-a3c92c02",
+      "tratamento-da22f007",
+      "tratamento-f26f6977",
+      "tratamento-035135f8",
+      "tratamento-5d4c3bac",
+      "tratamento-0bfbf3c6",
+      "tratamento-82438e1a",
+      "tratamento-b73e4e3a",
+      "tratamento-28400503",
+      "tratamento-c78f9b2a",
+      "tratamento-068bd5f7",
+      "tratamento-428e16a7",
+      "tratamento-10d375db",
+      "tratamento-b2e5c022",
+      "tratamento-89c54e56",
+      "tratamento-577a247e",
+      "tratamento-4bca4308",
+      "tratamento-dba1a6be",
+      "tratamento-0ba8da1d",
+      "tratamento-90748fd8",
+      "tratamento-bda172ef",
+      "tratamento-f18060b9",
+      "tratamento-45123ff1"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "e3d8e114aca9288a296249a0d4f41970f6446fcdd32f57325e35000c3058aa5c"
+    }
+   ],
+   "questaoSha256": "8bb5d69c954e191ba215563c0d31dd9fd70d385f3e6ff0f5d031b0de53ea4088",
+   "comentarioSha256": "4efeb8ec42f9a65247b621dbab0230cc954652f2acbdab3d3b8e4b27caa44595"
+  }
  },
  "pediatria-0817": {
   "conceito": "**O epicôndilo medial e a luxação do cotovelo.** O epicôndilo medial é uma apófise que recebe a origem dos **flexores-pronadores** e do **ligamento colateral medial**. Ele ossifica por volta dos 5 a 7 anos e é o último centro do cotovelo a se fundir (14 a 17 anos). Na criança e no adolescente, a apófise é o ponto fraco do lado medial: numa **luxação do cotovelo**, em vez de romper o ligamento, o valgo e a tração muscular **avulsionam o epicôndilo**. Cerca de metade das fraturas do epicôndilo medial se associa a luxação.\n\n**Como o fragmento entra na articulação.** Durante a luxação, a articulação se abre do lado medial. O fragmento, preso aos flexores e ao colateral, pode ser **puxado para dentro** do espaço articular entre a tróclea e o olécrano. Isso acontece:\n- no momento do trauma, ou\n- durante a **redução** da luxação, quando a articulação se fecha em valgo com o fragmento ainda livre no espaço medial.\n\nPor isso, a interposição é frequentemente **descoberta após a redução** e atribuída a ela; o fragmento pode, porém, já estar preso antes.\n\n**Como reconhecer.**\n- O epicôndilo **não aparece no seu lugar** na radiografia em AP.\n- Um fragmento ósseo projetado **na altura da articulação**, entre a tróclea e o olécrano.\n- **Espaço articular alargado** ou incongruente, e bloqueio de movimento.\n- Em crianças pequenas, não confundir o epicôndilo interposto com o centro de ossificação da tróclea; lembrar a ordem CRITOE (capítulo, rádio, epicôndilo interno, tróclea, olécrano, epicôndilo externo): se a tróclea é visível, o epicôndilo medial também deve ser.\n\n**Tratamento.** O fragmento encarcerado é **indicação absoluta de cirurgia**: tentativa de extração por manobra (valgo com supinação e extensão do punho e dedos, a manobra de Roberts) e, na maioria dos casos, redução aberta e fixação com parafuso. Examinar sempre o **nervo ulnar**, que passa logo atrás.",
@@ -11918,18 +12290,59 @@
   "conferido": false
  },
  "pediatria-0832": {
-  "conceito": "**A fratura do côndilo lateral do úmero.** É a segunda fratura mais comum do cotovelo infantil, depois da supracondiliana, entre 4 e 10 anos. É uma fratura **fisária e intra-articular** (Salter-Harris IV na maioria, pela classificação de Milch tipo II), e o fragmento é tracionado pelos músculos extensores que se originam no epicôndilo lateral. Por isso desvia com facilidade e tende à pseudartrose quando não é fixado.\n\n**Por que evolui para pseudartrose.**\n- O traço é banhado por **líquido sinovial**, que dilui o hematoma e inibe a consolidação.\n- A tração constante dos extensores afasta o fragmento.\n- Fraturas desviadas tratadas apenas com gesso, ou desvios não percebidos, são a causa mais comum.\n\n**A sequela clássica: cúbito valgo progressivo.** Com o fragmento lateral solto e sem crescer normalmente, a **coluna lateral** do úmero distal fica curta, enquanto a medial continua crescendo. O cotovelo se angula progressivamente em **valgo** à medida que a criança cresce.\n\n**A consequência tardia: paralisia ulnar tardia.** O valgo crônico estira e atrita o **nervo ulnar** no túnel cubital. Anos ou décadas depois, surge a **neuropatia ulnar tardia** (tardy ulnar palsy), com parestesias e fraqueza intrínseca. O tratamento é a transposição anterior do nervo.\n\n**Comparação com a fratura supracondiliana.** A sequela típica da supracondiliana mal reduzida é o **cúbito varo** (deformidade em coronha de espingarda), não progressivo, por consolidação viciosa. Já a do côndilo lateral é o **valgo progressivo**, por alteração do crescimento e pseudartrose.\n\n**Prevenção.** Desvio acima de 2 mm indica fixação (percutânea ou aberta). Pseudartroses estabelecidas com fragmento bem posicionado podem ser fixadas com enxerto; deformidades graves são corrigidas por osteotomia.",
-  "correta": "**Resposta provável: Certo.** A pseudartrose do côndilo lateral deixa a coluna lateral sem crescimento adequado, e o cotovelo evolui com **cúbito valgo progressivo**, a sequela mais comum, que pode levar à neuropatia ulnar tardia.",
+  "conceito": "**O comportamento da pseudartrose condilar lateral é diferente do da fratura consolidada.** Quando o fragmento permanece móvel e migra para proximal e lateral, pode produzir **cúbito valgo progressivo**, com deslocamento lateral de rádio e ulna. O capítulo o descreve como a sequela mais comum da pseudartrose desviada. O valgo também pode contribuir para neuropatia ulnar tardia.\n\nNa fratura que consolidou, o padrão angular mais frequente é varo; misturar esse grupo com pseudartrose inverte a resposta. Pseudartroses com pouco desvio podem ser pouco sintomáticas e nem sempre apresentam angulação importante. Portanto, a frase da questão deve ser entendida como a tendência clássica da pseudartrose com migração, não como um desfecho obrigatório de todo fragmento que não uniu. Sem chave oficial registrada, a resposta é bibliográfica.",
+  "correta": "**A, certo, pela bibliografia.** A afirmação corresponde ao padrão clássico da pseudartrose condilar lateral desviada: migração do fragmento e valgo progressivo. A ressalva é que casos pouco desviados podem não apresentar deformidade angular importante.",
   "incorretas": {
-   "B": "**Errado** confundiria com a fratura supracondiliana, cuja sequela típica é o cúbito varo. Na pseudartrose do côndilo lateral, o valgo progressivo é a deformidade clássica."
+   "B": "**Marcar errado apagaria a associação central descrita pelo capítulo.** O varo é mais frequente no grupo de fraturas consolidadas; na pseudartrose com migração, predomina a tendência ao valgo progressivo. A existência de casos pouco sintomáticos não invalida essa tendência."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5th Edition, p. 637.",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Retardo de consolidação, pseudartrose e o nervo ulnar."
   ],
   "provavel": "A",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Retardo de consolidação, pseudartrose e o nervo ulnar"
+     ],
+     "blocos": [
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "c968ed4e9be150db48fcd86bc988773e6064472dc113e6581815bf29cf60b209"
+    }
+   ],
+   "questaoSha256": "002b1a2d27b5cb786a5f442e09c94afd4068a76140afc854d96f9c682a7b83cc",
+   "comentarioSha256": "ede11a1b25292f7557568421811d1f257d8f4c3f03a809742b28c646944acaeb"
+  }
  },
  "pediatria-0833": {
   "conceito": "**O que significa SCIWORA.** É a sigla em inglês para *spinal cord injury without radiographic abnormality*, lesão medular sem anormalidade radiográfica. A criança apresenta déficit neurológico após trauma, mas as radiografias e a tomografia não mostram fratura nem desalinhamento. A ressonância pode revelar edema, hemorragia, lesão ligamentar ou discal, ou pode ser normal.\n\n**Por que ocorre na criança.** A coluna infantil é muito **mais elástica** que a medula:\n- **frouxidão ligamentar** maior;\n- **facetas mais horizontais**, que permitem deslizamento;\n- corpos vertebrais em cunha e cartilaginosos;\n- cabeça proporcionalmente grande e musculatura cervical fraca.\n\nEstudos clássicos em cadáveres de recém-nascidos mostram que a coluna pode se alongar cerca de **5 cm** sem romper, enquanto a medula só tolera alguns **milímetros**. No trauma, a coluna se deforma momentaneamente além do que a medula suporta e depois volta à posição normal. A medula é lesada por estiramento, compressão ou isquemia, mas o esqueleto não deixa marcas.\n\n**Características clínicas.**\n- Mais comum abaixo de **8 anos**, na coluna **cervical**, e com lesões mais graves nos menores.\n- Até cerca de metade dos pacientes tem **déficit tardio**: sintomas transitórios (parestesias, fraqueza) logo após o trauma, um intervalo livre e piora horas ou dias depois.\n\n**Conduta.**\n- **Ressonância** em toda criança com déficit neurológico após trauma, mesmo com radiografia e TC normais.\n- Imobilização (colar cervical ou órtese) por cerca de 12 semanas e restrição de atividades, para evitar nova lesão.\n- O prognóstico depende da gravidade inicial e do achado na ressonância: medula normal tem melhor evolução.",
@@ -13594,19 +14007,61 @@
   "alerta": "Gabarito oficial C. A nomenclatura caudal da alternativa diverge das descrições publicadas com angulação cranial de 45°. Preservar a letra da banca sem ensinar que as duas direções são equivalentes."
  },
  "pediatria-0942": {
-  "conceito": "Song organiza as fraturas do côndilo lateral pela estabilidade e pela configuração do traço, e não apenas pelo tamanho do desvio. A cartilagem articular da criança pode formar uma dobradiça ainda não visível no raio X; sua integridade distingue uma fratura que se mantém de outra que perde redução. A oblíqua interna é importante porque pode mostrar um afastamento subestimado no AP.\n\n| Tipo | Padrão relevante |\n|---|---|\n| 1 | Traço estável, restrito à metáfise, com pequeno desvio |\n| 2 | Pequeno desvio, estabilidade potencialmente incerta |\n| 3 | Pequeno desvio, mas padrão intra-articular instável |\n| 4 | Desvio maior que 2 mm, sem rotação do fragmento |\n| 5 | Desvio maior que 2 mm, com rotação |\n\nO caso descreve exatamente o tipo 4. Instabilidade pede controle do fragmento e congruência articular; em casos selecionados, é possível reduzir e fixar de forma fechada. Isso não significa que a ausência de rotação torne a fratura estável. Desvio tardio, pseudartrose e deformidade podem resultar de uma lesão inicialmente subestimada.",
-  "correta": "O tipo 4 é deslocado acima de 2 mm e não rodado. Essa combinação distingue-o do 5 e explica a necessidade de redução e estabilização. Algumas fraturas podem ser tratadas com redução fechada e fixação percutânea, mas o resultado deve ser confirmado pela congruência, não apenas pela letra do tipo.",
+  "conceito": "**Song separa quantidade de desvio, padrão do afastamento e rotação.** Os estágios 1 a 3 têm até 2 mm, variando de estável a instável. O **4 apresenta mais de 2 mm sem rotação**; o 5 apresenta mais de 2 mm com rotação. Nos dois últimos, a instabilidade já está estabelecida.\n\nA palavra instável sozinha não resolve, porque também se aplica ao estágio 3, cujo afastamento medial é tão largo quanto o lateral mesmo com pequeno desvio. No enunciado, o valor maior que 2 mm afasta 1 a 3; a ausência de rotação distingue 4 de 5. Assim, a classificação deve ser reconstruída pelos atributos, em vez de escolher qualquer número associado à instabilidade.",
+  "correta": "**C: estágio 4.** Ele reúne exatamente grandeza maior que 2 mm, instabilidade e ausência de rotação. Se houvesse rotação, o mesmo grupo de desvio passaria para 5.",
   "incorretas": {
-   "A": "O tipo 2 tem desvio pequeno e estabilidade potencialmente duvidosa. A questão já informa afastamento superior a 2 mm, que a coloca além desse grupo. Dobradiça cartilaginosa e incidência oblíqua ajudam a avaliar estabilidade, mas não tornam esse traço deslocado um tipo 2.",
-   "B": "O tipo 3 é instável, portanto essa palavra isolada pode atrair a escolha. Entretanto, seu padrão tem pequeno desvio, enquanto a descrição informa mais de 2 mm. A classificação combina estabilidade e deslocamento; acertar apenas o primeiro eixo não identifica o tipo.",
-   "D": "O tipo 5 exige rotação do fragmento, explicitamente ausente no enunciado. A rotação modifica a dificuldade de redução e frequentemente conduz à abordagem aberta. Todo tipo 5 é um padrão avançado, mas nem toda fratura com grande desvio e instabilidade é tipo 5."
+   "A": "**O estágio 2 tem até 2 mm e estabilidade indeterminada.** O traço alcança a cartilagem epifisária, mas não corresponde ao padrão claramente instável e acima de 2 mm descrito na pergunta.",
+   "B": "**O estágio 3 é instável, porém tem até 2 mm.** Seu critério inclui afastamento medial semelhante ao lateral. A opção acerta a possibilidade de instabilidade, mas erra a faixa de desvio.",
+   "D": "**O estágio 5 exige rotação do fragmento.** Compartilha com 4 o desvio acima de 2 mm e a instabilidade, mas acrescenta o atributo que o enunciado nega. A ausência de rotação é o dado decisivo."
   },
+  "conferido": false,
   "referencias": [
-   "The Song Classification Is Reliable and Guides Prognosis and Treatment for Pediatric Lateral Condyle Fractures: An Independent Validation Study With Treatment Algorithm. https://pubmed.ncbi.nlm.nih.gov/31415016/",
-   "POSNA. Lateral Condyle Fractures. https://posna.org/physician-education/study-guide/lateral-condyle-fractures"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Classificações."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Classificações"
+     ],
+     "blocos": [
+      "classificacoes-4e13cd16",
+      "classificacoes-fe6e317c",
+      "classificacoes-48565c30",
+      "classificacoes-58985ad8",
+      "classificacoes-582acfa1",
+      "classificacoes-c2db79fd",
+      "classificacoes-34411dcc",
+      "classificacoes-c1dc58fe",
+      "classificacoes-99d551a0",
+      "classificacoes-209218c3",
+      "classificacoes-17c8676a",
+      "classificacoes-c060b71e",
+      "classificacoes-d949e30d",
+      "classificacoes-68cb5ce6",
+      "classificacoes-40b6f2df",
+      "classificacoes-651d222a",
+      "classificacoes-ae54b70d",
+      "classificacoes-275160d7",
+      "classificacoes-41fd5951",
+      "classificacoes-573b431b",
+      "classificacoes-9726b032"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "09f6a4eb812c702429ece8e27ea2a2fd54a296f8e69709062d2b7984a9f120ea"
+    }
+   ],
+   "questaoSha256": "8469abff63edf35f4a23ebd044da13c40b3e79ca018a355aef2fa11c15bbb8de",
+   "comentarioSha256": "e8bc41657af43d49637e0518c2104f42c4c7de1d38b9dedfbc5710a7d4b07393"
+  }
  },
  "pediatria-0943": {
   "conceito": "O epicôndilo medial dá origem ao grupo flexor-pronador e participa da inserção do complexo colateral medial. Uma avulsão desloca essas inserções; a relação com estabilidade, nervo ulnar e demanda esportiva deve ser considerada. Em luxações do cotovelo, o fragmento pode entrar na articulação e ficar encarcerado após a redução. Nessa situação, ele impede congruência e pode aprisionar tecidos ou comprometer o nervo.\n\nEncarceramento intra-articular é uma indicação consolidada de retirada do fragmento da articulação e tratamento da fratura, habitualmente por redução aberta e fixação. O debate é maior nas fraturas deslocadas, mas sem encarceramento, exposição ou comprometimento neurovascular. Os limites radiográficos variam e uma união fibrosa pode ser funcionalmente satisfatória. Portanto, pseudartrose radiográfica não é sinônimo de dor intensa ou incapacidade.\n\nExcisar o fragmento não é uma solução neutra: pode exigir reparo das inserções estabilizadoras. A avaliação procura um cotovelo congruente e estável, com função neurológica documentada, evitando decidir apenas pelo número de milímetros em uma incidência.",
@@ -15454,18 +15909,54 @@
   }
  },
  "pediatria-1007": {
-  "conceito": "**O que é a fratura do capítulo.** Envolve só a **superfície articular verdadeira** do côndilo lateral, às vezes incluindo a crista lateral da tróclea, e o fragmento vem em geral da parte **anterior** da superfície articular distal. É rara na criança e mais provável no **adolescente mais velho**. Diferente da fratura do côndilo lateral, não leva a metáfise nem a fise. Existem também as fraturas em \"manga\" (\"sleeve\") anteriores do côndilo lateral, descritas a partir de 8 anos, que levam boa parte da superfície articular anterior junto com porções não articulares do epicôndilo e da metáfise; tecnicamente não são fraturas puras do capítulo.\n\n**Mecanismo e lesões associadas.** O mecanismo mais aceito é o **cisalhamento da superfície articular anterior pela cabeça do rádio**. Cúbito em **hiperextensão** ou em **valgo** predispõe. Por isso, é esperado encontrar fratura da cabeça ou do colo do rádio: lesões do rádio proximal foram relatadas em **31%**. A luxação do cotovelo é causa clara, sobretudo das fraturas de cisalhamento posterolateral.\n\n**As classificações.**\n\n| Tipo | Conteúdo | Observação |\n|---|---|---|\n| **HAHN-STEINTHAL** | grande porção de **osso esponjoso** do côndilo lateral, muitas vezes com a crista lateral da tróclea | o **mais comum** |\n| **KOCHER-LORENZ** | fratura **articular quase pura**, pouco ou nenhum osso subcondral | rara na criança; pode ser cartilagem de uma osteocondrite dissecante |\n| MURTHY | I: cisalhamento anterior (IA sem desvio, IB com desvio); II: cisalhamento posterolateral, com luxação; III: cisalhamento condral agudo | guia o tratamento |\n\n**Diagnóstico.** Pouco edema; o fragmento **bloqueia a flexão**. No perfil, um fragmento grande aparece na frente e acima do úmero distal, às vezes com os sulcos radiocapitelar e troclear visíveis no próprio fragmento (figura 16-29); no AP ele some, sobreposto à metáfise. Fragmentos pequenos pedem oblíquas, e o diagnóstico costuma ser confirmado por tomografia ou ressonância (artrografia ou ressonância na criança menor).\n\n**Tratamento e complicação.** Sem desvio: imobilização. Fragmento grande e agudo: **redução aberta e fixação**, preferindo dois parafusos canulados pequenos de posterior para anterior por via lateral (de anterior para posterior, sem cabeça, se houver pouco osso). Fragmento antigo, cominuído ou com pouco osso: **excisão**, microfratura e mobilização precoce. A complicação principal é a **osteonecrose**, que só ocorre quando o fragmento é mantido; artrose pode ocorrer nos dois casos.\n\n> **Na prova:** **HAHN-STEINTHAL é o mais comum e tem osso**; KOCHER-LORENZ é quase só cartilagem. A complicação principal é a **osteonecrose do fragmento mantido**.\n\n> **Por que esta questão foi criada.** No TARO 2007 e no TARO 2012 caiu a complicação da fratura do capítulo (osteonecrose), e no TARO 2026 a classificação de BRYAN e MORREY, que traz os nomes HAHN-STEINTHAL e KOCHER-LORENZ como tipos. Esta questão cobra esses dois tipos como o capítulo pediátrico os descreve, em par 2 por 2 de nome e composição.",
-  "correta": "**D: HAHN-STEINTHAL; grande porção de osso esponjoso.** O capítulo descreve dois padrões: o mais comum é o de HAHN-STEINTHAL, cujo fragmento costuma conter uma porção bem grande de osso esponjoso do côndilo lateral e, muitas vezes, a crista lateral da tróclea. Por ter osso, é o fragmento que se consegue reinserir com parafusos e o que aparece bem no perfil. Na fratura grande e aguda, os autores preferem dois parafusos canulados pequenos, de posterior para anterior, por via lateral.",
+  "conceito": "**A fratura do capítulo envolve a superfície articular verdadeira e é rara na criança pequena.** Torna-se mais provável no adolescente mais velho, em geral por cisalhamento pela cabeça do rádio. O perfil pode mostrar o fragmento anterior; no AP, a sobreposição pode escondê-lo.\n\n**Hahn-Steinthal**, o tipo mais comum descrito, contém uma porção grande de osso esponjoso, às vezes junto da crista lateral da tróclea. **Kocher-Lorenz** é quase só superfície articular, com pouco ou nenhum osso subcondral, e é raro na criança. A quantidade de osso importa para a fixação: um fragmento grande pode aceitar parafusos; um fragmento predominantemente condral exige outra estratégia. A decisão também depende de desvio, tempo de evolução e possibilidade de reconstrução.\n\n**Por que esta questão foi criada.** A composição do fragmento explica tanto a distinção entre os epônimos quanto as possibilidades de reinserção.",
+  "correta": "**D: Hahn-Steinthal e grande porção de osso esponjoso.** A alternativa acerta frequência e composição. O estoque ósseo ajuda a compreender por que um fragmento grande agudo pode ser reinserido com parafusos no adolescente.",
   "incorretas": {
-   "A": "**A composição está certa para KOCHER-LORENZ, mas ele não é o mais comum.** O tipo de KOCHER-LORENZ é uma fratura mais articular, com pouco ou nenhum osso subcondral, e pode representar um pedaço de cartilagem de uma osteocondrite dissecante subjacente. O capítulo diz que esse tipo é raro na criança. A alternativa acerta a descrição e erra a frequência.",
-   "B": "**Errada nos dois termos.** KOCHER-LORENZ não é o mais comum e não tem grande porção de osso esponjoso; essa é a descrição do HAHN-STEINTHAL. A alternativa troca os nomes das duas fraturas, que é a confusão mais frequente entre os epônimos do capítulo.",
-   "C": "**O nome está certo, a composição não.** HAHN-STEINTHAL é de fato o tipo mais comum, mas o seu fragmento contém bastante osso esponjoso, e não cartilagem quase pura. A fratura quase só cartilaginosa é a de KOCHER-LORENZ. A distinção tem consequência: fragmento com osso pode ser fixado com parafusos; fragmento com pouco osso para prender a rosca, antigo ou cominuído, tende a ser excisado, com microfratura do leito."
+   "A": "**A composição de Kocher-Lorenz está correta, mas ele não é o mais comum.** Trata-se de fragmento articular quase puro, com pouca base óssea. O tipo predominante descrito é Hahn-Steinthal.",
+   "B": "**Atribui a Kocher-Lorenz a composição de Hahn-Steinthal.** Kocher-Lorenz tem pouco ou nenhum osso subcondral, não uma grande porção esponjosa. Além disso, não é o tipo mais frequente na referência.",
+   "C": "**Hahn-Steinthal é o mais comum, porém não é cartilagem quase pura.** Sua característica é a porção óssea esponjosa importante. A alternativa troca o nome correto com a composição do outro padrão."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª ed., capítulo 16 (Lateral Condylar and Capitellar Fractures of the Distal Humerus; Kelly e Sawyer)"
+   "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Fratura do capítulo no adolescente."
   ],
-  "geradoEm": "2026-10-19",
-  "conferido": false
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Fratura do capítulo no adolescente"
+     ],
+     "blocos": [
+      "fratura-do-capitulo-no-adolescente-2b6677d0",
+      "fratura-do-capitulo-no-adolescente-daf48ee9",
+      "fratura-do-capitulo-no-adolescente-ccbd432c",
+      "fratura-do-capitulo-no-adolescente-16b52e75",
+      "fratura-do-capitulo-no-adolescente-4ccdc058",
+      "fratura-do-capitulo-no-adolescente-7e55e8a8",
+      "fratura-do-capitulo-no-adolescente-d9c5f125",
+      "fratura-do-capitulo-no-adolescente-3148b36a",
+      "fratura-do-capitulo-no-adolescente-3bda4c9f",
+      "fratura-do-capitulo-no-adolescente-193d0317",
+      "fratura-do-capitulo-no-adolescente-fb89ac0c",
+      "fratura-do-capitulo-no-adolescente-d50ee436",
+      "fratura-do-capitulo-no-adolescente-3b00209d",
+      "fratura-do-capitulo-no-adolescente-707b3ae8"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "e664f17fce03240b0c94e0d0556363525fd98d0591e5f37c2aef1c2c695e9053"
+    }
+   ],
+   "questaoSha256": "beb75a7047fe0c40c7396c804b6069ddc92ed3450c852db1f2a028e2156a2118",
+   "comentarioSha256": "64b87a3c4ed875599dcb19666a216232ce99706140290e75ea37c8bd2cbd06aa"
+  }
  },
  "pediatria-1008": {
   "conceito": "**O fragmento do côndilo medial leva consigo o epicôndilo e a origem dos flexores.** A tração desses músculos roda o fragmento solto: a **superfície de fratura passa a olhar para anterior e medial**, enquanto a superfície articular olha para posterior e lateral. É essencial distinguir essas duas superfícies para não inverter a direção. A extensão do cotovelo acentua a rotação descrita.\n\nA anatomia também orienta a redução. Flexionar cotovelo e punho e pronar o antebraço diminui a tensão dos flexores. Suas inserções devem ser preservadas, pois as partes moles ajudam a nutrir o fragmento. No lado lateral, os extensores são importantes; transferir esse grupo para o côndilo medial troca os mecanismos entre lesões em espelho.\n\n**Por que esta questão foi criada.** A rotação do fragmento relaciona inserção muscular, direção de desvio e posição que relaxa as partes moles durante a redução.",
