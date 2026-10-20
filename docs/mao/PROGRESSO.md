@@ -95,6 +95,11 @@ padrão novo. Próximo trabalho, nesta ordem:
    Aplicar: `aplicar_lote.py ~/OrtoQuestoes-Biblioteca/lotes/simao-2026 mao revisao_NN` (os 8 de cotovelo,
    ombro-cotovelo-0645 a 0652, num arquivo à parte com o tema ombro-cotovelo).
    Feito: revisões 01 a 13 (mao-1719 a mao-1783). Próximo: revisão 14 (mao-1784 a mao-1788).
+   Atalho: `bash ~/OrtoQuestoes-Biblioteca/.oq/revisar2026.sh NN AAAA BBBB` aplica, valida, atualiza a linha
+   acima e faz commit local (cópia em docs/mao/ferramentas/). Push e PR a cada 2 a 4 revisões (AGENTS.md,
+   "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
+   (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
+   alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
 7. SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
 
 **Como foi feito até aqui (repetir igual):**
