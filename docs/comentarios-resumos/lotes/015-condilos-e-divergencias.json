@@ -1,0 +1,654 @@
+{
+  "pediatria-1008": {
+    "questaoSha256": "a08dc93fad933ff24dad45d364bc1a55e3513bad267ad1e03c88a18617535433",
+    "comentarioAnteriorSha256": "ecc195b6d537c8d2090b63ee6f12afabb380174d0133c7ee9164bd7166e4b0bc",
+    "comentario": {
+      "conceito": "**O fragmento do côndilo medial leva consigo o epicôndilo e a origem dos flexores.** A tração desses músculos roda o fragmento solto: a **superfície de fratura passa a olhar para anterior e medial**, enquanto a superfície articular olha para posterior e lateral. É essencial distinguir essas duas superfícies para não inverter a direção. A extensão do cotovelo acentua a rotação descrita.\n\nA anatomia também orienta a redução. Flexionar cotovelo e punho e pronar o antebraço diminui a tensão dos flexores. Suas inserções devem ser preservadas, pois as partes moles ajudam a nutrir o fragmento. No lado lateral, os extensores são importantes; transferir esse grupo para o côndilo medial troca os mecanismos entre lesões em espelho.\n\n**Por que esta questão foi criada.** A rotação do fragmento relaciona inserção muscular, direção de desvio e posição que relaxa as partes moles durante a redução.",
+      "correta": "**D: flexores e superfície de fratura anteromedial.** Os músculos presos ao epicôndilo medial rodam o fragmento e determinam essa orientação. A superfície articular aponta no sentido oposto, para posterolateral; a pergunta especifica a superfície da fratura.",
+      "incorretas": {
+        "A": "**Erra o grupo muscular e a direção.** No côndilo medial, o motor são os flexores, não os extensores associados ao lado lateral. A superfície de fratura roda para anteromedial, não anterolateral.",
+        "B": "**A direção anteromedial está correta, mas quem produz a rotação são os flexores.** O fragmento leva o epicôndilo medial com sua origem muscular. Escolher extensores mistura a lesão medial com a mecânica da fratura lateral.",
+        "C": "**Os flexores estão corretos, mas a direção lateral está invertida.** A superfície de fratura olha para anterior e medial; quem olha para posterior e lateral é a superfície articular. A identificação da superfície evita memorizar apenas parte do vetor."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures. Conteúdo consultado no resumo Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo, Biblioteca OrtoQuestões, seções Fratura do côndilo medial."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+        "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+        "secoes": [
+          "Fratura do côndilo medial"
+        ],
+        "blocos": [
+          "fratura-do-condilo-medial-26aed577",
+          "fratura-do-condilo-medial-97e495f8",
+          "fratura-do-condilo-medial-f094448d",
+          "fratura-do-condilo-medial-bb9240e3",
+          "fratura-do-condilo-medial-aececaae",
+          "fratura-do-condilo-medial-b9127181",
+          "fratura-do-condilo-medial-71c05757",
+          "fratura-do-condilo-medial-138a2e7f",
+          "fratura-do-condilo-medial-12e22a02",
+          "fratura-do-condilo-medial-a3777695",
+          "fratura-do-condilo-medial-ea87e909",
+          "fratura-do-condilo-medial-ff36cff3",
+          "fratura-do-condilo-medial-2b767636",
+          "fratura-do-condilo-medial-8240b0b1",
+          "fratura-do-condilo-medial-352fb1d3",
+          "fratura-do-condilo-medial-5752e73a",
+          "fratura-do-condilo-medial-869ae839",
+          "fratura-do-condilo-medial-111c3714",
+          "fratura-do-condilo-medial-0a7ec8d9",
+          "fratura-do-condilo-medial-2cd19de2",
+          "fratura-do-condilo-medial-0bbe3295",
+          "fratura-do-condilo-medial-0ce13163",
+          "fratura-do-condilo-medial-d06c4075",
+          "fratura-do-condilo-medial-e0378cf6",
+          "fratura-do-condilo-medial-a43e8291",
+          "fratura-do-condilo-medial-9616d6d3",
+          "fratura-do-condilo-medial-3148b36a",
+          "fratura-do-condilo-medial-d323a5de",
+          "fratura-do-condilo-medial-b4d52bd3",
+          "fratura-do-condilo-medial-a70ee5da",
+          "fratura-do-condilo-medial-fca9f900",
+          "fratura-do-condilo-medial-7324f8a1",
+          "fratura-do-condilo-medial-e440006c",
+          "fratura-do-condilo-medial-284c8825",
+          "fratura-do-condilo-medial-d686e75f",
+          "fratura-do-condilo-medial-d1a39f42"
+        ],
+        "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+        "trechosSha256": "044cb4cca39dabf4abd0906dbc5b789207cd511e6233804e1688c1c0ed24358e"
+      }
+    ]
+  },
+  "pediatria-1009": {
+    "questaoSha256": "0ae32726cab1713f19ccd6a519f795163af489f4c5d4a62765fa91d49db6d360",
+    "comentarioAnteriorSha256": "a09a85015b9ecfa1bcb901b95a92ace671cf7ca98a8ad43e88fb4800ecb15571",
+    "comentario": {
+      "conceito": "**Delee usa a maturação do núcleo do capítulo para classificar o descolamento epifisário total.** O grupo A ocorre até aproximadamente 12 meses, antes de aparecer o núcleo, em geral com padrão Salter-Harris I. O B vai de 12 meses a 3 anos, com ossificação definida e possível pequena lasca metafisária. O **C corresponde a 3 a 7 anos, com grande fragmento metafisário**, mais frequentemente lateral, em padrão Salter-Harris II.\n\nA idade é uma referência do grau de ossificação, não substitui a análise do traço. No grupo C, o fragmento pode também ser medial ou posterior. O contorno metafisário e a relação preservada do rádio com o capítulo ajudam a distinguir a separação fisária de uma supracondiliana baixa ou de fratura isolada do côndilo lateral.\n\n**Por que esta questão foi criada.** A classificação combina idade, presença do núcleo e tamanho do fragmento metafisário para reconhecer uma lesão que pode ser confundida com outras fraturas distais.",
+      "correta": "**C: 3 a 7 anos e grande fragmento metafisário, em geral lateral.** É o grupo C de Delee. O núcleo do capítulo já está ossificado e o componente metafisário maior caracteriza a fase mais madura da classificação.",
+      "incorretas": {
+        "A": "**Descreve o grupo A.** Antes de 12 meses, o núcleo ainda não apareceu e o traço geralmente se comporta como Salter-Harris I. A ausência do núcleo dificulta o diagnóstico, mas não caracteriza o grupo C.",
+        "B": "**Descreve o grupo B.** Entre 12 meses e 3 anos, o capítulo já aparece e pode haver pequena lasca metafisária. O C é mais tardio e tem grande fragmento metafisário; tamanho do componente e maturação precisam ser considerados juntos.",
+        "D": "**Não descreve um grupo de Delee para o descolamento total.** O traço da separação fisária é extra-articular; a alternativa fala em atravessar a tróclea e entrar na articulação. Além disso, a faixa de 8 a 12 anos não é a indicada para C."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures. Conteúdo consultado no resumo Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo, Biblioteca OrtoQuestões, seções Descolamento epifisário total do úmero distal: quem tem e como reconhecer."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+        "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+        "secoes": [
+          "Descolamento epifisário total do úmero distal: quem tem e como reconhecer"
+        ],
+        "blocos": [
+          "descolamento-epifisario-total-do-umero-distal-qu-d22afc63",
+          "descolamento-epifisario-total-do-umero-distal-qu-e902b402",
+          "descolamento-epifisario-total-do-umero-distal-qu-7e1f3892",
+          "descolamento-epifisario-total-do-umero-distal-qu-322a3acd",
+          "descolamento-epifisario-total-do-umero-distal-qu-ec1ee667",
+          "descolamento-epifisario-total-do-umero-distal-qu-9ca53ab2",
+          "descolamento-epifisario-total-do-umero-distal-qu-998b543f",
+          "descolamento-epifisario-total-do-umero-distal-qu-e9c4b844",
+          "descolamento-epifisario-total-do-umero-distal-qu-10644d50",
+          "descolamento-epifisario-total-do-umero-distal-qu-5dc58f4b",
+          "descolamento-epifisario-total-do-umero-distal-qu-bb9240e3",
+          "descolamento-epifisario-total-do-umero-distal-qu-859c9054",
+          "descolamento-epifisario-total-do-umero-distal-qu-b3a03041",
+          "descolamento-epifisario-total-do-umero-distal-qu-42648094",
+          "descolamento-epifisario-total-do-umero-distal-qu-2be9d010",
+          "descolamento-epifisario-total-do-umero-distal-qu-d1b84719",
+          "descolamento-epifisario-total-do-umero-distal-qu-13b5efb3",
+          "descolamento-epifisario-total-do-umero-distal-qu-ce127d92",
+          "descolamento-epifisario-total-do-umero-distal-qu-955c88b3",
+          "descolamento-epifisario-total-do-umero-distal-qu-b55ca15c",
+          "descolamento-epifisario-total-do-umero-distal-qu-783ae770",
+          "descolamento-epifisario-total-do-umero-distal-qu-73f57b32",
+          "descolamento-epifisario-total-do-umero-distal-qu-1ab6bebd",
+          "descolamento-epifisario-total-do-umero-distal-qu-9dd1c460",
+          "descolamento-epifisario-total-do-umero-distal-qu-62bc130e",
+          "descolamento-epifisario-total-do-umero-distal-qu-cc4500c1",
+          "descolamento-epifisario-total-do-umero-distal-qu-f048c1aa",
+          "descolamento-epifisario-total-do-umero-distal-qu-5a9674bf",
+          "descolamento-epifisario-total-do-umero-distal-qu-5cd3c48c",
+          "descolamento-epifisario-total-do-umero-distal-qu-436a28b1",
+          "descolamento-epifisario-total-do-umero-distal-qu-0e104b21",
+          "descolamento-epifisario-total-do-umero-distal-qu-823d9a75",
+          "descolamento-epifisario-total-do-umero-distal-qu-5d72fa91"
+        ],
+        "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+        "trechosSha256": "062bc3289716a9a75251a439c4f64101669d23389fa423e300842a9dbee90355"
+      }
+    ]
+  },
+  "pediatria-1019": {
+    "questaoSha256": "215a3e42dd6fabc4ce9023c0022a67c1a0b3486155262795f29acb027d890eb5",
+    "comentarioAnteriorSha256": "484bd5a4ac0a94e6a3c50ed67131aa49194ddbecaed418e078639bdd282daa96",
+    "comentario": {
+      "conceito": "**A apófise do epicôndilo lateral não é a mesma estrutura que o côndilo lateral articular.** Ela ossifica na segunda década e pode formar um núcleo irregular ou alongado que imita fragmento. Edema local e desvio em relação à borda osteocondral ajudam a distinguir lesão verdadeira de maturação normal.\n\nNa fratura aguda do epicôndilo lateral, o capítulo recomenda imobilização para conforto, **exceto quando o fragmento está encarcerado na articulação**. Pseudartrose radiográfica isolada geralmente não altera a função. Há outra situação, crônica e sintomática: pseudartrose osteocondral da coluna lateral que representa instabilidade ligamentar posterolateral, podendo exigir reparo. Essa exceção não transforma toda linha persistente ou irregularidade do núcleo numa indicação cirúrgica aguda.\n\n**Por que esta questão foi criada.** A distinção entre apófise e superfície articular evita transportar critérios do côndilo lateral para a fratura rara do epicôndilo.",
+      "correta": "**B: encarceramento intra-articular.** O fragmento preso entre as superfícies articulares é a indicação aguda expressa no resumo. A decisão é diferente de aplicar automaticamente um limite de desvio em milímetros usado nas fraturas articulares dos côndilos.",
+      "incorretas": {
+        "A": "**O corte de 2 mm não é a indicação aguda definida para essa apófise.** Ele aparece no manejo das fraturas intra-articulares dos côndilos. Para o epicôndilo lateral, o capítulo destaca o encarceramento, e não esse número isolado.",
+        "C": "**Pseudartrose radiográfica isolada geralmente não compromete a função.** Deve ser diferenciada da instabilidade lateral crônica sintomática, que pode exigir reparo. A simples persistência de um fragmento não corresponde à indicação aguda perguntada.",
+        "D": "**O núcleo lateral pode ser fragmentado e irregular durante a ossificação normal.** Isso não prova fratura e menos ainda necessidade de cirurgia. Edema e posição auxiliam o diagnóstico; encarceramento é o critério cirúrgico agudo descrito."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures. Conteúdo consultado no resumo Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo, Biblioteca OrtoQuestões, seções Fratura do epicôndilo lateral."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+        "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+        "secoes": [
+          "Fratura do epicôndilo lateral"
+        ],
+        "blocos": [
+          "fratura-do-epicondilo-lateral-fa97a6c8",
+          "fratura-do-epicondilo-lateral-723b58d6",
+          "fratura-do-epicondilo-lateral-a9ccf232",
+          "fratura-do-epicondilo-lateral-f0d82e2c",
+          "fratura-do-epicondilo-lateral-3816efa4",
+          "fratura-do-epicondilo-lateral-1bce3944",
+          "fratura-do-epicondilo-lateral-326b0147",
+          "fratura-do-epicondilo-lateral-4d2e8ee9",
+          "fratura-do-epicondilo-lateral-3148b36a",
+          "fratura-do-epicondilo-lateral-c3e8f59d",
+          "fratura-do-epicondilo-lateral-13b6bf7f"
+        ],
+        "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+        "trechosSha256": "7f00a34314c1725d52e23a2135ed9740ab4cfeb8c2a0f123c164be3d106529ea"
+      }
+    ]
+  },
+  "pediatria-0655": {
+    "questaoSha256": "9b23b3d44bfe38a47e132102bfa4123c285d8edceb95eabb3fab401dfdbc8434",
+    "comentarioAnteriorSha256": "446c1e39868aef0a5e3b9dbf2ad50cb3e27de0d00f6c9b8e8adf49b4647b0b2d",
+    "comentario": {
+      "conceito": "**A irrigação do fragmento condilar lateral entra por uma pequena área posterior não articular.** Grande parte da superfície é coberta por cartilagem ou está dentro da cápsula. Desinserir as partes moles posteriores corta a porta de entrada vascular e pode causar osteonecrose. Por isso, a redução aberta deve preservar essa região.\n\nA via lateral permite expor a articulação mantendo a dissecção anterior. A qualidade da redução deve ser julgada na superfície articular, sobretudo na tróclea, porque a cortical lateral pode apresentar deformação plástica. Expor mais osso não significa reduzir melhor: é preciso obter visão suficiente sem desvascularizar o fragmento. Essa regra continua importante nos casos tardios, quando a mobilização exige ainda mais cuidado.",
+      "correta": "**D: posterior.** É a face que contém as inserções vasculares essenciais do fragmento. Sua preservação procura evitar osteonecrose, enquanto a dissecção anterior permite avaliar a redução articular.",
+      "incorretas": {
+        "A": "**A orientação não é evitar toda dissecção distal independentemente do tecido.** A regra anatômica é preservar a pequena área posterior por onde o sangue entra. O acesso deve permitir visualizar a articulação, respeitando essa fonte vascular.",
+        "B": "**A proteção principal perguntada não se define apenas pelo lado medial.** O capítulo localiza a entrada vascular do fragmento na área posterior não articular. A redução pode exigir observar a tróclea, mas sem desinserir os tecidos posteriores.",
+        "C": "**A dissecção anterior é justamente a estratégia descrita para expor a articulação poupando a irrigação posterior.** Não significa liberação indiscriminada: é uma escolha do plano que oferece visão da redução sem cortar a porta vascular posterior."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Tratamento."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-16-condilo-lateral",
+        "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+        "secoes": [
+          "Tratamento"
+        ],
+        "blocos": [
+          "tratamento-9a3e9a18",
+          "tratamento-bb0643c9",
+          "tratamento-1fe20239",
+          "tratamento-a3c92c02",
+          "tratamento-da22f007",
+          "tratamento-f26f6977",
+          "tratamento-035135f8",
+          "tratamento-5d4c3bac",
+          "tratamento-0bfbf3c6",
+          "tratamento-82438e1a",
+          "tratamento-b73e4e3a",
+          "tratamento-28400503",
+          "tratamento-c78f9b2a",
+          "tratamento-068bd5f7",
+          "tratamento-428e16a7",
+          "tratamento-10d375db",
+          "tratamento-b2e5c022",
+          "tratamento-89c54e56",
+          "tratamento-577a247e",
+          "tratamento-4bca4308",
+          "tratamento-dba1a6be",
+          "tratamento-0ba8da1d",
+          "tratamento-90748fd8",
+          "tratamento-bda172ef",
+          "tratamento-f18060b9",
+          "tratamento-45123ff1"
+        ],
+        "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+        "trechosSha256": "e3d8e114aca9288a296249a0d4f41970f6446fcdd32f57325e35000c3058aa5c"
+      }
+    ]
+  },
+  "pediatria-0719": {
+    "questaoSha256": "b17305b687eeec4dce905ab2471e22c50de88e35a9ac73b94d518091608f68de",
+    "comentarioAnteriorSha256": "a8000f1698269d058573a8fcaa7464d1b6f826f61e2731adf7b26eca5c5c8ff1",
+    "comentario": {
+      "conceito": "**A consequência direta de lesar as partes moles posteriores é vascular.** Os vasos que nutrem a epífise do côndilo lateral entram por uma pequena área posterior não articular. A dissecção posterolateral extensa pode interrompê-los e levar a **osteonecrose**. O risco existe na fratura recente e aumenta quando mobilizar um fragmento tardio exige dissecção maior.\n\nÉ preciso separar complicações de mecanismos diferentes. Varo pode acompanhar a fratura consolidada; valgo progressivo é típico da pseudartrose com migração do fragmento; ausência de união é pseudartrose. A necrose metafisária pode também prejudicar a consolidação, mas o efeito específico da agressão posterior destacado pelo capítulo é a perda da vitalidade óssea. Sem gabarito oficial registrado, a resposta é bibliográfica.",
+      "correta": "**C, pela bibliografia: osteonecrose.** A dissecção posterior destrói a via de entrada dos vasos do fragmento. Essa relação anatômica sustenta a resposta sem exigir um número de incidência ou promover a letra a gabarito oficial.",
+      "incorretas": {
+        "A": "**Cúbito varo é uma deformidade de alinhamento, não o nome da perda de suprimento.** O capítulo o relaciona à redução e ao crescimento após a fratura consolidada. A agressão vascular direta da dissecção posterior corresponde à osteonecrose.",
+        "B": "**Valgo progressivo se relaciona sobretudo à pseudartrose desviada e à migração proximal e lateral do fragmento.** Não é a consequência vascular imediata que a pergunta busca. A perda de irrigação pela dissecção posterior é descrita como osteonecrose.",
+        "D": "**Pseudartrose significa falha da união e pode coexistir com necrose da porção metafisária.** Portanto, não se deve afirmar que a vascularização nunca afete a consolidação. Ainda assim, o mecanismo especificamente destacado para a dissecção posterolateral extensa é osteonecrose, a melhor resposta da fonte."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Tratamento; Complicações da fratura consolidada; Osteonecrose; Retardo de consolidação, pseudartrose e o nervo ulnar."
+      ],
+      "provavel": "C"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-16-condilo-lateral",
+        "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+        "secoes": [
+          "Tratamento",
+          "Complicações da fratura consolidada",
+          "Osteonecrose",
+          "Retardo de consolidação, pseudartrose e o nervo ulnar"
+        ],
+        "blocos": [
+          "tratamento-9a3e9a18",
+          "tratamento-bb0643c9",
+          "tratamento-1fe20239",
+          "tratamento-a3c92c02",
+          "tratamento-da22f007",
+          "tratamento-f26f6977",
+          "tratamento-035135f8",
+          "tratamento-5d4c3bac",
+          "tratamento-0bfbf3c6",
+          "tratamento-82438e1a",
+          "tratamento-b73e4e3a",
+          "tratamento-28400503",
+          "tratamento-c78f9b2a",
+          "tratamento-068bd5f7",
+          "tratamento-428e16a7",
+          "tratamento-10d375db",
+          "tratamento-b2e5c022",
+          "tratamento-89c54e56",
+          "tratamento-577a247e",
+          "tratamento-4bca4308",
+          "tratamento-dba1a6be",
+          "tratamento-0ba8da1d",
+          "tratamento-90748fd8",
+          "tratamento-bda172ef",
+          "tratamento-f18060b9",
+          "tratamento-45123ff1",
+          "complicacoes-da-fratura-consolidada-9447140f",
+          "complicacoes-da-fratura-consolidada-36e7d648",
+          "complicacoes-da-fratura-consolidada-365c31e8",
+          "complicacoes-da-fratura-consolidada-7aae0679",
+          "complicacoes-da-fratura-consolidada-23882487",
+          "complicacoes-da-fratura-consolidada-92150513",
+          "complicacoes-da-fratura-consolidada-2f72d567",
+          "complicacoes-da-fratura-consolidada-aef3ff0b",
+          "complicacoes-da-fratura-consolidada-f8be5067",
+          "complicacoes-da-fratura-consolidada-65fce0cd",
+          "complicacoes-da-fratura-consolidada-9df48203",
+          "complicacoes-da-fratura-consolidada-61ac4d48",
+          "complicacoes-da-fratura-consolidada-b1484741",
+          "complicacoes-da-fratura-consolidada-34cf5643",
+          "complicacoes-da-fratura-consolidada-50f3608e",
+          "complicacoes-da-fratura-consolidada-5eb2af87",
+          "complicacoes-da-fratura-consolidada-85f7cd9c",
+          "osteonecrose-0d063d12",
+          "osteonecrose-a69a308c",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+        ],
+        "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+        "trechosSha256": "b8e90fab7a66909a4f21b5e19674c43da45ff99e5332e49294d29f7aa17877b9"
+      }
+    ]
+  },
+  "pediatria-0521": {
+    "questaoSha256": "190fbe16e03e0405388f7a595c2786370e20fcadf5b39cc295df34c0dfaa6d8d",
+    "comentarioAnteriorSha256": "5186db30de3ea38d3ec6d8dad2863cf9519e6a32c7ed90d72194048d757cc56c",
+    "comentario": {
+      "conceito": "**O fator de risco precisa ser relacionado à fratura comparada e à fonte usada.** O resumo do capítulo 16 cita **obesidade e maior carregamento em varo** como indicadores de fratura do côndilo lateral em vez de supracondiliana. No mecanismo de avulsão, uma força em varo com cotovelo estendido pode arrancar o fragmento lateral, coerente com a tensão das estruturas que nele permanecem inseridas.\n\nHá divergência relevante: o gabarito oficial desta questão é **D, maior valgo**, enquanto a fonte secundária consultada sustenta **A, obesidade**, e descreve varo. A letra da banca permanece preservada. A aula não deve inverter a direção descrita no livro para justificar D. A idade típica do côndilo lateral é cerca de 6 anos; abaixo de 2 a 3 anos, a separação de toda a fise distal ganha importância e não deve ser confundida com essa fratura.",
+      "correta": "**D é a resposta oficial, mas diverge da referência consultada.** A alternativa afirma maior valgo; o capítulo 16 resumido descreve maior varo como indicador e também cita obesidade. Preserve a informação sobre o gabarito da prova sem transformar valgo na associação ensinada por essa edição.",
+      "incorretas": {
+        "A": "**A obesidade tem apoio explícito na fonte, embora não tenha sido a letra oficial.** O capítulo a lista como indicador de maior probabilidade de côndilo lateral em relação à supracondiliana. Essa opção é o motivo pelo qual a divergência não pode ser tratada apenas como uma troca irrelevante de palavras.",
+        "B": "**Hipotireoidismo não é o fator comparativo apresentado no resumo.** A fonte não desenvolve essa associação nem fornece um mecanismo para preferir côndilo lateral a supracondiliana por esse diagnóstico. Os indicadores explicitamente citados são obesidade e varo; não se deve inventar uma relação hormonal para defender a opção.",
+        "C": "**Idade menor, isoladamente, não é o indicador comparativo descrito.** O côndilo lateral tem média em torno de 6 anos, e nas crianças muito pequenas é necessário lembrar o descolamento de toda a fise. A fonte não autoriza substituir os fatores citados por uma regra genérica de idade mais precoce."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Quem quebra o quê no úmero distal; O fragmento: anatomia, mecanismo e desvio."
+      ],
+      "alerta": "O gabarito registrado da banca é D (ângulo de carregamento mais valgo), e o mantivemos. O Rockwood and Wilkins (9ª edição) diz o contrário: no capítulo 12, o alinhamento em varo associa-se mais à fratura do côndilo lateral e o valgo à do colo do rádio; no capítulo 16, a obesidade e o carregamento em varo aparecem como indicadores de côndilo lateral em vez de supracondiliana. Por esse livro, a resposta seria a obesidade (A). Na prova, marque a letra da banca, sabendo que a referência descreve a associação inversa."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-16-condilo-lateral",
+        "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+        "secoes": [
+          "Quem quebra o quê no úmero distal",
+          "O fragmento: anatomia, mecanismo e desvio"
+        ],
+        "blocos": [
+          "quem-quebra-o-que-no-umero-distal-eef5fa83",
+          "quem-quebra-o-que-no-umero-distal-3b51dc86",
+          "quem-quebra-o-que-no-umero-distal-1b53f009",
+          "quem-quebra-o-que-no-umero-distal-941b6b37",
+          "quem-quebra-o-que-no-umero-distal-d9b0756e",
+          "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
+          "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
+          "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
+          "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
+          "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
+          "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
+          "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
+          "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
+          "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
+          "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
+          "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
+          "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
+          "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929"
+        ],
+        "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+        "trechosSha256": "4648d927e59b198c612ab5840fd9de5ab3356798512284b0f7b2bbe9e5f8abb1"
+      }
+    ]
+  },
+  "pediatria-1001": {
+    "questaoSha256": "802e3514a7b147bca76dc24ad2746686aa5d892eac5cd0250ff2896101b00b1c",
+    "comentarioAnteriorSha256": "dbeb653456f26228ab60becd387b4f367599b8e3943632af29017bbd1f8d74d4",
+    "comentario": {
+      "conceito": "**A fratura do côndilo lateral tem média etária em torno de 6 anos e não deve ser confundida com o descolamento de toda a fise.** Este último é mais característico do recém-nascido e do lactente até cerca de 2 a 3 anos. Para comparar côndilo lateral com supracondiliana, o capítulo destaca **obesidade e maior carregamento em varo** como indicadores a favor do côndilo lateral.\n\nA informação é uma associação apresentada pela fonte, não significa que toda criança obesa sofra esse tipo ou que uma criança magra não possa tê-lo. Também há conflito entre o livro e o gabarito de uma prova real citada no resumo: o TARO 2026 escolheu maior valgo. Este simulado segue a afirmação do capítulo; a distinção precisa permanecer clara para o aluno não aprender duas direções como se fossem a mesma.\n\n**Por que esta questão foi criada.** Foi criada para cobrar um fator comparativo explicitado no capítulo, distinguindo a associação bibliográfica da divergência no gabarito do TARO 2026.",
+      "correta": "**A: obesidade.** É um dos indicadores explicitamente citados para maior probabilidade de côndilo lateral em vez de supracondiliana. A referência também menciona varo, mas essa opção não aparece entre as alternativas.",
+      "incorretas": {
+        "B": "**Abaixo dos 3 anos, o padrão destacado é o descolamento de toda a fise distal.** Essa idade não é apresentada como o fator comparativo a favor do côndilo lateral, cuja média é em torno de 6 anos. A opção mistura duas lesões do úmero distal com perfis diferentes.",
+        "C": "**A faixa de 8 a 12 anos é a descrita no resumo para o côndilo medial.** Ela não substitui os indicadores comparativos do côndilo lateral. A fratura pode ocorrer fora da média, mas isso não transforma essa faixa no fator pedido.",
+        "D": "**Maior valgo diverge da direção apresentada no capítulo.** A fonte descreve maior varo, além de obesidade. O TARO 2026 usou valgo como gabarito numa questão real, conflito que precisa ser registrado sem alterar o conteúdo bibliográfico deste simulado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Quem quebra o quê no úmero distal."
+      ],
+      "alerta": "Este simulado segue o capítulo 16 da 9ª edição, que cita obesidade e carregamento em varo. A questão real do TARO 2026 (pediatria-0521) manteve como gabarito oficial maior valgo; a divergência não foi apagada nem usada para mudar a chave oficial."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-16-condilo-lateral",
+        "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+        "secoes": [
+          "Quem quebra o quê no úmero distal"
+        ],
+        "blocos": [
+          "quem-quebra-o-que-no-umero-distal-eef5fa83",
+          "quem-quebra-o-que-no-umero-distal-3b51dc86",
+          "quem-quebra-o-que-no-umero-distal-1b53f009",
+          "quem-quebra-o-que-no-umero-distal-941b6b37",
+          "quem-quebra-o-que-no-umero-distal-d9b0756e"
+        ],
+        "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+        "trechosSha256": "536c0155ad4aced623af5e1071fb85fd992712ed025cf7e866c68c4488985913"
+      }
+    ]
+  },
+  "pediatria-0610": {
+    "questaoSha256": "0c35bfb87a7d7ec25bf9e6db19253a37a9e97afe3b7d6013d38942067f0e5ebf",
+    "comentarioAnteriorSha256": "32a78906bba5e970a2baa880e7e77fec83814582b8938fa5f74d366219030889",
+    "comentario": {
+      "conceito": "**A lasca metafisária visível não representa todo o fragmento condilar lateral.** O traço começa na metáfise posterolateral, acompanha a fise e entra na articulação, levando grande componente cartilaginoso. O rasgo de partes moles fica entre a origem do extensor radial longo do carpo e a do braquiorradial.\n\nOs **extensores radial longo e radial curto do carpo**, junto dos colaterais laterais, permanecem no fragmento distal. A tração desses músculos participa de seu deslocamento e rotação e contribui para a dificuldade de consolidação. A flexão do punho estira os extensores presos e pode aumentar a dor. O braquiorradial fica acima do rasgo, no úmero proximal. A questão cobra qual músculo corresponde à ligação descrita, e não apenas qual tem função extensora.",
+      "correta": "**D: extensor radial longo do carpo.** Sua origem permanece ligada ao fragmento distal, assim como a do radial curto. Essa continuidade explica parte das forças que deslocam o fragmento após a fratura.",
+      "incorretas": {
+        "A": "**O braquiorradial fica no segmento proximal.** O rasgo ocorre entre sua origem e a do extensor radial longo, que vai com o fragmento distal. A posição em relação a esse intervalo, e não apenas estar na face lateral do cotovelo, decide a resposta.",
+        "B": "**Extensor ulnar do carpo não é o músculo identificado na ligação específica descrita.** O resumo destaca os dois extensores radiais como mantidos no fragmento e atuantes no desvio. Trocar radial por ulnar por ambos estenderem o punho perde a referência anatômica do traço.",
+        "C": "**Ser extensor dos dedos não equivale a ser o extensor radial que delimita o rasgo.** A descrição aponta o radial longo no fragmento e o braquiorradial proximalmente. O extensor comum dos dedos não é o músculo que a fonte identifica para responder a esta relação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções O fragmento: anatomia, mecanismo e desvio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-16-condilo-lateral",
+        "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+        "secoes": [
+          "O fragmento: anatomia, mecanismo e desvio"
+        ],
+        "blocos": [
+          "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
+          "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
+          "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
+          "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
+          "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
+          "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
+          "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
+          "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
+          "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
+          "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
+          "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
+          "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
+          "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929"
+        ],
+        "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+        "trechosSha256": "1b1d107b12f6dcae8d769c4c961c2c95d6196b195b81b0775964b753b17e53b2"
+      }
+    ]
+  },
+  "pediatria-0629": {
+    "questaoSha256": "e8d351e4621555a9602b2df1bb0590d8207a09030396f8104679f8e895d00fc4",
+    "comentarioAnteriorSha256": "f0d208c6e803c4b7896f1ed035291a49097c8344ac7fc8bae8e79f5f32f27715",
+    "comentario": {
+      "conceito": "**Milch descreve o trajeto do traço, enquanto Salter-Harris relaciona a fratura à fise.** No côndilo lateral, **Milch I atravessa o núcleo de ossificação do capítulo** e corresponde ao **Salter-Harris IV verdadeiro** descrito pelo capítulo. Há componente metafisário e extensão pela fise até a epífise e a articulação.\n\nMilch II passa ao redor do núcleo, entrando na cartilagem troclear, e é o padrão mais comum. O texto reconhece terminologia discutível e características de II e IV em algumas fraturas condilares, porque parte do trajeto está na cartilagem ainda não ossificada. Essa discussão não muda a correspondência específica perguntada: Milch I, pelo núcleo, é IV. As classificações por desvio e estabilidade são mais úteis para escolher o tratamento que Milch isoladamente.",
+      "correta": "**D: tipo IV.** O traço de Milch I cruza o núcleo do capítulo e tem componente metafisário associado, representando a correspondência com Salter-Harris IV adotada pelo resumo. É essa trajetória específica que a pergunta cobra.",
+      "incorretas": {
+        "A": "**O tipo I proposto não representa a combinação metafisária e articular de Milch I.** A fratura descrita não se limita à região fisária: atravessa o núcleo do capítulo e envolve a articulação. A fonte a enquadra como IV verdadeiro.",
+        "B": "**Tipo II é a associação frequentemente atribuída ao Milch II, que contorna o núcleo, e não ao Milch I.** A discussão do capítulo sobre características de II e IV não deve apagar a passagem de Milch I pelo centro de ossificação.",
+        "C": "**Tipo III não é a equivalência apresentada para Milch I.** A presença do componente metafisário junto da extensão pelo núcleo até a articulação é o dado que leva ao IV. A questão não pede apenas saber que a lesão é intra-articular, mas reconhecer todo o percurso."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções O fragmento: anatomia, mecanismo e desvio; Classificações."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-16-condilo-lateral",
+        "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+        "secoes": [
+          "O fragmento: anatomia, mecanismo e desvio",
+          "Classificações"
+        ],
+        "blocos": [
+          "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
+          "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
+          "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
+          "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
+          "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
+          "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
+          "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
+          "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
+          "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
+          "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
+          "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
+          "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
+          "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929",
+          "classificacoes-4e13cd16",
+          "classificacoes-fe6e317c",
+          "classificacoes-48565c30",
+          "classificacoes-58985ad8",
+          "classificacoes-582acfa1",
+          "classificacoes-c2db79fd",
+          "classificacoes-34411dcc",
+          "classificacoes-c1dc58fe",
+          "classificacoes-99d551a0",
+          "classificacoes-209218c3",
+          "classificacoes-17c8676a",
+          "classificacoes-c060b71e",
+          "classificacoes-d949e30d",
+          "classificacoes-68cb5ce6",
+          "classificacoes-40b6f2df",
+          "classificacoes-651d222a",
+          "classificacoes-ae54b70d",
+          "classificacoes-275160d7",
+          "classificacoes-41fd5951",
+          "classificacoes-573b431b",
+          "classificacoes-9726b032"
+        ],
+        "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+        "trechosSha256": "251f2da02f07d643bacca07b3c0fbdb3453d12a4b08a11069020c8f44c14fee5"
+      }
+    ]
+  },
+  "pediatria-0710": {
+    "questaoSha256": "7413b5bb40a8fbf57d9839df5e17be372c9479966d2670b7b4d8b4f4d2067e54",
+    "comentarioAnteriorSha256": "7a7b72396a915ae761570564fa44695bb24cd02ee412a077b66e2b8d79e6e7d5",
+    "comentario": {
+      "conceito": "**A neuropatia ulnar tardia é classicamente relacionada ao valgo progressivo da pseudartrose condilar lateral.** Quando o fragmento não une e migra para proximal e lateral, rádio e ulna acompanham a mudança de alinhamento. O valgo modifica o trajeto e aumenta a solicitação do ulnar. O déficit surge gradualmente, podendo aparecer anos ou décadas após a fratura; o capítulo descreve perda motora antes das alterações sensitivas.\n\nEsporão lateral é outra sequela: uma proeminência metafisária comum após a fratura consolidada, capaz de produzir pseudovaro sem mudar o carregamento real. Rabo de peixe é um defeito articular central. Essas alterações não devem ser confundidas com a migração da pseudartrose. Há, contudo, ressalva: o resumo do capítulo 17 também descreve neuropatia ulnar tardia em crianças com osteonecrose troclear. A associação clássica sustenta A, sem autorizar dizer que B nunca ocorra.",
+      "correta": "**A: pseudartrose, a resposta oficial.** A falha de união com migração do fragmento produz valgo progressivo e altera a mecânica do ulnar. Essa sequência explica a apresentação tardia, diferente de uma lesão nervosa aguda durante o trauma ou a cirurgia.",
+      "incorretas": {
+        "B": "**Osteonecrose troclear não deve ser excluída como associação possível.** O capítulo 17 relata neuropatia ulnar tardia após essa sequela, por alterações do alinhamento e do trajeto do nervo. Portanto, há apoio bibliográfico para uma interpretação dessa opção; a chave oficial privilegia a relação clássica com pseudartrose e valgo.",
+        "C": "**O esporão lateral é uma proeminência de osso, geralmente de pouca importância funcional.** Pode simular varo sem mudar o ângulo real. Não corresponde à sequência de pseudartrose, migração e valgo progressivo que explica a resposta oficial para o ulnar tardio.",
+        "D": "**Rabo de peixe descreve um defeito central da articulação, não a falha de união do fragmento condilar.** Pode produzir dor, bloqueio e perda de movimento. Alterações trocleares podem também participar de neuropatia, mas a associação clássica solicitada e mantida na chave é a pseudartrose."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Complicações da fratura consolidada; Retardo de consolidação, pseudartrose e o nervo ulnar.",
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 17. Conteúdo consultado no resumo Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo, Biblioteca OrtoQuestões, seção Osteonecrose da tróclea."
+      ],
+      "alerta": "Gabarito oficial A preservado. O capítulo 16 fundamenta a pseudartrose com valgo progressivo como associação clássica. O capítulo 17 também relata neuropatia ulnar tardia após osteonecrose da tróclea; a alternativa B tem apoio bibliográfico e não deve ser ensinada como impossível."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-16-condilo-lateral",
+        "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+        "secoes": [
+          "Complicações da fratura consolidada",
+          "Retardo de consolidação, pseudartrose e o nervo ulnar"
+        ],
+        "blocos": [
+          "complicacoes-da-fratura-consolidada-9447140f",
+          "complicacoes-da-fratura-consolidada-36e7d648",
+          "complicacoes-da-fratura-consolidada-365c31e8",
+          "complicacoes-da-fratura-consolidada-7aae0679",
+          "complicacoes-da-fratura-consolidada-23882487",
+          "complicacoes-da-fratura-consolidada-92150513",
+          "complicacoes-da-fratura-consolidada-2f72d567",
+          "complicacoes-da-fratura-consolidada-aef3ff0b",
+          "complicacoes-da-fratura-consolidada-f8be5067",
+          "complicacoes-da-fratura-consolidada-65fce0cd",
+          "complicacoes-da-fratura-consolidada-9df48203",
+          "complicacoes-da-fratura-consolidada-61ac4d48",
+          "complicacoes-da-fratura-consolidada-b1484741",
+          "complicacoes-da-fratura-consolidada-34cf5643",
+          "complicacoes-da-fratura-consolidada-50f3608e",
+          "complicacoes-da-fratura-consolidada-5eb2af87",
+          "complicacoes-da-fratura-consolidada-85f7cd9c",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
+          "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
+        ],
+        "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+        "trechosSha256": "b02c0f1a4917932b8e67fd0a031e586101f4b2e4cd1454abdea2d8a1adafd35d"
+      },
+      {
+        "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+        "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+        "secoes": [
+          "Osteonecrose da tróclea"
+        ],
+        "blocos": [
+          "osteonecrose-da-troclea-7449514b",
+          "osteonecrose-da-troclea-4ee68ef7",
+          "osteonecrose-da-troclea-065f757d",
+          "osteonecrose-da-troclea-448c5ee3",
+          "osteonecrose-da-troclea-cef90e2c",
+          "osteonecrose-da-troclea-48064f9a",
+          "osteonecrose-da-troclea-c179bb5a",
+          "osteonecrose-da-troclea-21e2ec7a",
+          "osteonecrose-da-troclea-f32973a1",
+          "osteonecrose-da-troclea-e4f1fbfa",
+          "osteonecrose-da-troclea-579ac27d",
+          "osteonecrose-da-troclea-8289f8d0",
+          "osteonecrose-da-troclea-5407da7f",
+          "osteonecrose-da-troclea-d21b3dd2",
+          "osteonecrose-da-troclea-e84be102",
+          "osteonecrose-da-troclea-1606edb0",
+          "osteonecrose-da-troclea-090fda80",
+          "osteonecrose-da-troclea-5374fa5e",
+          "osteonecrose-da-troclea-aa096872"
+        ],
+        "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+        "trechosSha256": "b4f258cc86184b5ba438dcc86098f142f7ef428d1dd50e695c73176fca357e6b"
+      }
+    ]
+  }
+}

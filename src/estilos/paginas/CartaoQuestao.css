@@ -953,3 +953,14 @@
 .questao-impressa.qz-cartao .comentario,
 .qz-cartao .qz-extras.qz-faixa,
 .qz-cartao .qz-proxima { max-width: none; }
+
+/* Fonte efetivamente consultada, após revisão individual com o resumo. */
+.cm-fonte {
+  margin: 1rem 0; padding: 0.8rem 1rem;
+  border-left: 3px solid var(--verdete); border-radius: var(--raio-controle);
+  background: color-mix(in srgb, var(--verdete) 5%, transparent);
+  font-size: 0.86rem; line-height: 1.6;
+}
+.cm-fonte > strong { color: var(--verdete); }
+.cm-fonte p { margin: 0.3rem 0 0; }
+.cm-fonte a { text-underline-offset: 0.15em; }

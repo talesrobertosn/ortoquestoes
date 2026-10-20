@@ -23,6 +23,7 @@ import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
 import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
 import { usarTempoVisivel } from '../util/tempoVisivel'
 import { EstudarAssunto } from '../biblioteca/EstudarAssunto'
+import { FonteComentario } from './FonteComentario'
 import { semEco } from './ecoAlternativa'
 import { permutarQuestao } from '../dados/provaNacional'
 import '../estilos/paginas/CartaoQuestao.css'
@@ -586,7 +587,7 @@ function CartaoQuestaoExibida({
             )}
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} />
-            <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} />
+            <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} baseResumo={comentarioIA?.baseResumo} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
@@ -862,6 +863,8 @@ function ComentarioDaIA({
 
       {comentario && (
         <>
+          <FonteComentario base={comentario.baseResumo} />
+
           {comentario.alerta && (
             <p className="aviso-ia aviso-ia--gabarito">
               <strong>Atenção ao gabarito desta questão.</strong> {comentario.alerta}
