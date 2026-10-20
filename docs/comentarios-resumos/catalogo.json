@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1940,
+  "pendente": 1930,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 8,
   "pendente-inspecao-imagem": 187,
-  "revisada": 101
+  "revisada": 111
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -254,16 +254,18 @@
    "titulo": "Fratura supracondiliana do úmero na criança",
    "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
    "estados": {
-    "pendente": 54,
-    "pendente-inspecao-imagem": 1
+    "pendente": 44,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 10
    }
   },
   "rockwoodcriancas9-14-fratura-em-t": {
    "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
    "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
    "estados": {
-    "pendente": 18,
-    "pendente-anulada": 1
+    "pendente": 8,
+    "pendente-anulada": 1,
+    "revisada": 10
    }
   },
   "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial": {
@@ -27912,7 +27914,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27928,7 +27930,42 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "f0da52ccc894aed684d77b8593a72e4df3d220fa9e1d9812632fe3955f8d2c3e"
+   "questaoSha256": "f0da52ccc894aed684d77b8593a72e4df3d220fa9e1d9812632fe3955f8d2c3e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "O que é e quem tem a fratura em T",
+       "Mecanismo e padrão de desvio"
+      ],
+      "blocos": [
+       "o-que-e-e-quem-tem-a-fratura-em-t-72e8f462",
+       "o-que-e-e-quem-tem-a-fratura-em-t-2ea333a9",
+       "o-que-e-e-quem-tem-a-fratura-em-t-9e374787",
+       "o-que-e-e-quem-tem-a-fratura-em-t-906a221d",
+       "o-que-e-e-quem-tem-a-fratura-em-t-9040db5b",
+       "o-que-e-e-quem-tem-a-fratura-em-t-4fdd4680",
+       "mecanismo-e-padrao-de-desvio-e125113b",
+       "mecanismo-e-padrao-de-desvio-e0f741a5",
+       "mecanismo-e-padrao-de-desvio-28cbbe85",
+       "mecanismo-e-padrao-de-desvio-1428149e",
+       "mecanismo-e-padrao-de-desvio-59fe4e25",
+       "mecanismo-e-padrao-de-desvio-cb04cd1c"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "0f68a9dca456bf3de30c3055ec2ce04d0c2dfa3d6776138a2d88ce680cd8f2e8"
+     }
+    ],
+    "questaoSha256": "f0da52ccc894aed684d77b8593a72e4df3d220fa9e1d9812632fe3955f8d2c3e",
+    "comentarioSha256": "3d1609a5ffb4519517e18e5b727de434f6b689cda0c2f4d80b72376a8c02556d"
+   }
   },
   "pediatria-1021": {
    "tema": "pediatria",
@@ -27938,7 +27975,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27954,7 +27991,48 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "651b064269e838c1c7445e7580ae58223a6c600b7c3d2b429a97600d76e0560e"
+   "questaoSha256": "651b064269e838c1c7445e7580ae58223a6c600b7c3d2b429a97600d76e0560e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "O que é e quem tem a fratura em T",
+       "Princípios e algoritmo do tratamento"
+      ],
+      "blocos": [
+       "o-que-e-e-quem-tem-a-fratura-em-t-72e8f462",
+       "o-que-e-e-quem-tem-a-fratura-em-t-2ea333a9",
+       "o-que-e-e-quem-tem-a-fratura-em-t-9e374787",
+       "o-que-e-e-quem-tem-a-fratura-em-t-906a221d",
+       "o-que-e-e-quem-tem-a-fratura-em-t-9040db5b",
+       "o-que-e-e-quem-tem-a-fratura-em-t-4fdd4680",
+       "principios-e-algoritmo-do-tratamento-36fbc4c8",
+       "principios-e-algoritmo-do-tratamento-bbdf7bd1",
+       "principios-e-algoritmo-do-tratamento-450650df",
+       "principios-e-algoritmo-do-tratamento-44befe9c",
+       "principios-e-algoritmo-do-tratamento-70263f1e",
+       "principios-e-algoritmo-do-tratamento-e5b30f8a",
+       "principios-e-algoritmo-do-tratamento-81c62867",
+       "principios-e-algoritmo-do-tratamento-27cd8529",
+       "principios-e-algoritmo-do-tratamento-98e23bbe",
+       "principios-e-algoritmo-do-tratamento-141ddacc",
+       "principios-e-algoritmo-do-tratamento-d83d773e",
+       "principios-e-algoritmo-do-tratamento-7b0cc47a"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "242453dc349bdf2fa8ef36626f454213b7560f70e022033f2a40adbfdc2bf16c"
+     }
+    ],
+    "questaoSha256": "651b064269e838c1c7445e7580ae58223a6c600b7c3d2b429a97600d76e0560e",
+    "comentarioSha256": "5666b2d21bfc99dc235a38f8cdefd9c77f59627af10f89767a4a93bb3d45ab2b"
+   }
   },
   "pediatria-1022": {
    "tema": "pediatria",
@@ -27990,7 +28068,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28006,7 +28084,62 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "79c350c8c98b7e0d1dd8174613de9686fa6a13be03c9d280666e0394a7378a24"
+   "questaoSha256": "79c350c8c98b7e0d1dd8174613de9686fa6a13be03c9d280666e0394a7378a24",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Imagem e diagnóstico diferencial",
+       "Classificação"
+      ],
+      "blocos": [
+       "imagem-e-diagnostico-diferencial-bedf49c5",
+       "imagem-e-diagnostico-diferencial-87d164df",
+       "imagem-e-diagnostico-diferencial-f69ecdcb",
+       "imagem-e-diagnostico-diferencial-a512cdee",
+       "imagem-e-diagnostico-diferencial-649c7a83",
+       "imagem-e-diagnostico-diferencial-fc614288",
+       "imagem-e-diagnostico-diferencial-8cdca2d2",
+       "imagem-e-diagnostico-diferencial-17e23690",
+       "imagem-e-diagnostico-diferencial-e628d27f",
+       "imagem-e-diagnostico-diferencial-ed5223b9",
+       "imagem-e-diagnostico-diferencial-79fbbdd9",
+       "imagem-e-diagnostico-diferencial-991d4306",
+       "imagem-e-diagnostico-diferencial-900ae362",
+       "imagem-e-diagnostico-diferencial-62dbe5e6",
+       "imagem-e-diagnostico-diferencial-1f5d326e",
+       "imagem-e-diagnostico-diferencial-3fedcd4f",
+       "classificacao-ee9e187c",
+       "classificacao-d1f1e096",
+       "classificacao-8d8af6c7",
+       "classificacao-be98c828",
+       "classificacao-c83f7c5b",
+       "classificacao-d3561a25",
+       "classificacao-c20a4c64",
+       "classificacao-9284653f",
+       "classificacao-3e50254b",
+       "classificacao-7657e6f6",
+       "classificacao-6c5d7d8c",
+       "classificacao-1398defb",
+       "classificacao-cbedc948",
+       "classificacao-e5aeafbf",
+       "classificacao-f74de710",
+       "classificacao-23ef9722"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "5657e5ceb5e30e7b302611b7d1f5e4ddd968c0bfe850837ce6801eacad0851ad"
+     }
+    ],
+    "questaoSha256": "79c350c8c98b7e0d1dd8174613de9686fa6a13be03c9d280666e0394a7378a24",
+    "comentarioSha256": "d467ed3eea91841a14634d3bd2f7e2abe0653957d45e81883f46ada0d89cc329"
+   }
   },
   "pediatria-1024": {
    "tema": "pediatria",
@@ -28016,7 +28149,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28032,7 +28165,45 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "67f1172dd4486fe5e1d1a6372b48bf456573ae3b630e805ac7fd118d970b1400"
+   "questaoSha256": "67f1172dd4486fe5e1d1a6372b48bf456573ae3b630e805ac7fd118d970b1400",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Classificação"
+      ],
+      "blocos": [
+       "classificacao-ee9e187c",
+       "classificacao-d1f1e096",
+       "classificacao-8d8af6c7",
+       "classificacao-be98c828",
+       "classificacao-c83f7c5b",
+       "classificacao-d3561a25",
+       "classificacao-c20a4c64",
+       "classificacao-9284653f",
+       "classificacao-3e50254b",
+       "classificacao-7657e6f6",
+       "classificacao-6c5d7d8c",
+       "classificacao-1398defb",
+       "classificacao-cbedc948",
+       "classificacao-e5aeafbf",
+       "classificacao-f74de710",
+       "classificacao-23ef9722"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "5bf19fb37ec9a53879648a30b38b728ae8a581ac2f31aaa367204e5cf05fde5a"
+     }
+    ],
+    "questaoSha256": "67f1172dd4486fe5e1d1a6372b48bf456573ae3b630e805ac7fd118d970b1400",
+    "comentarioSha256": "7196357a08b1b8cefc52da071c3a5f8993ddddb650a161bb0b6d209709769fba"
+   }
   },
   "pediatria-1025": {
    "tema": "pediatria",
@@ -28042,7 +28213,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28058,7 +28229,45 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "ac2572e205fd32e10b6837c28c5fef027c8d2a85e3e0f0a41415c3427972acdb"
+   "questaoSha256": "ac2572e205fd32e10b6837c28c5fef027c8d2a85e3e0f0a41415c3427972acdb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Classificação"
+      ],
+      "blocos": [
+       "classificacao-ee9e187c",
+       "classificacao-d1f1e096",
+       "classificacao-8d8af6c7",
+       "classificacao-be98c828",
+       "classificacao-c83f7c5b",
+       "classificacao-d3561a25",
+       "classificacao-c20a4c64",
+       "classificacao-9284653f",
+       "classificacao-3e50254b",
+       "classificacao-7657e6f6",
+       "classificacao-6c5d7d8c",
+       "classificacao-1398defb",
+       "classificacao-cbedc948",
+       "classificacao-e5aeafbf",
+       "classificacao-f74de710",
+       "classificacao-23ef9722"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "5bf19fb37ec9a53879648a30b38b728ae8a581ac2f31aaa367204e5cf05fde5a"
+     }
+    ],
+    "questaoSha256": "ac2572e205fd32e10b6837c28c5fef027c8d2a85e3e0f0a41415c3427972acdb",
+    "comentarioSha256": "269d62be31511e33ccc6ef0eb1cdff330a7fb18a3484f88c152f17896053690d"
+   }
   },
   "pediatria-1026": {
    "tema": "pediatria",
@@ -28068,7 +28277,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28084,7 +28293,43 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "0a7c561ed5d06a0df061cf79c5200200d71602a9b1e45de37fdd3a89aa7ea470"
+   "questaoSha256": "0a7c561ed5d06a0df061cf79c5200200d71602a9b1e45de37fdd3a89aa7ea470",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Redução aberta: indicações e vias de acesso"
+      ],
+      "blocos": [
+       "reducao-aberta-indicacoes-e-vias-de-acesso-0f53d6a4",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-07475cf9",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-5d3e8114",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-7033395e",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-af4f660d",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-1cad8364",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-a88fa001",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-44870ff3",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-a91c16b5",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-d11791d6",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-9b2a699f",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-7e2cc347",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-1152d24c",
+       "reducao-aberta-indicacoes-e-vias-de-acesso-01372126"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "756ca90b5a4cbd30e29c88a5b0a3a3bbe2e6b076cf17be76684dcb709ca67ec4"
+     }
+    ],
+    "questaoSha256": "0a7c561ed5d06a0df061cf79c5200200d71602a9b1e45de37fdd3a89aa7ea470",
+    "comentarioSha256": "d5b75f3f628637a94397358f320d6683e1678a6ba63be8fd2edde1623f1d043e"
+   }
   },
   "pediatria-1027": {
    "tema": "pediatria",
@@ -28120,7 +28365,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28136,7 +28381,53 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "16d1cc818b57204f1a23939c142e63a97bb9077abb55bd99f4d3bd6ddf405de1"
+   "questaoSha256": "16d1cc818b57204f1a23939c142e63a97bb9077abb55bd99f4d3bd6ddf405de1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Técnica: articulação primeiro, colunas depois"
+      ],
+      "blocos": [
+       "tecnica-articulacao-primeiro-colunas-depois-bebea640",
+       "tecnica-articulacao-primeiro-colunas-depois-46dfe24d",
+       "tecnica-articulacao-primeiro-colunas-depois-3c0698e7",
+       "tecnica-articulacao-primeiro-colunas-depois-d4b01333",
+       "tecnica-articulacao-primeiro-colunas-depois-b8e890d8",
+       "tecnica-articulacao-primeiro-colunas-depois-b8e7c093",
+       "tecnica-articulacao-primeiro-colunas-depois-1df2bd14",
+       "tecnica-articulacao-primeiro-colunas-depois-219264b4",
+       "tecnica-articulacao-primeiro-colunas-depois-f6dfc8e8",
+       "tecnica-articulacao-primeiro-colunas-depois-95b6b9b5",
+       "tecnica-articulacao-primeiro-colunas-depois-262a3251",
+       "tecnica-articulacao-primeiro-colunas-depois-6567a53a",
+       "tecnica-articulacao-primeiro-colunas-depois-6d26c70b",
+       "tecnica-articulacao-primeiro-colunas-depois-f55b06d9",
+       "tecnica-articulacao-primeiro-colunas-depois-c1da9369",
+       "tecnica-articulacao-primeiro-colunas-depois-8c9bd1ac",
+       "tecnica-articulacao-primeiro-colunas-depois-4ba90b36",
+       "tecnica-articulacao-primeiro-colunas-depois-45ef17d2",
+       "tecnica-articulacao-primeiro-colunas-depois-43ea0869",
+       "tecnica-articulacao-primeiro-colunas-depois-dc3c3255",
+       "tecnica-articulacao-primeiro-colunas-depois-352d14ad",
+       "tecnica-articulacao-primeiro-colunas-depois-fb3e64ce",
+       "tecnica-articulacao-primeiro-colunas-depois-e83faa45",
+       "tecnica-articulacao-primeiro-colunas-depois-f5d12168"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "31a02a9eed55a86f69151cbd1342b181f494609515f62635b9dff922280f322c"
+     }
+    ],
+    "questaoSha256": "16d1cc818b57204f1a23939c142e63a97bb9077abb55bd99f4d3bd6ddf405de1",
+    "comentarioSha256": "27f7ad09e095a29d817ecaa9205631f7b63ad9c2574b03b7bab2a35e63e1e132"
+   }
   },
   "pediatria-1029": {
    "tema": "pediatria",
@@ -28146,7 +28437,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28162,7 +28453,64 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "77ea0c4dfef6be98d106f365120b4e2cfaf8751e485e3b99c98b3c005b1ebcaf"
+   "questaoSha256": "77ea0c4dfef6be98d106f365120b4e2cfaf8751e485e3b99c98b3c005b1ebcaf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Princípios e algoritmo do tratamento",
+       "Tratamento não cirúrgico e percutâneo"
+      ],
+      "blocos": [
+       "principios-e-algoritmo-do-tratamento-36fbc4c8",
+       "principios-e-algoritmo-do-tratamento-bbdf7bd1",
+       "principios-e-algoritmo-do-tratamento-450650df",
+       "principios-e-algoritmo-do-tratamento-44befe9c",
+       "principios-e-algoritmo-do-tratamento-70263f1e",
+       "principios-e-algoritmo-do-tratamento-e5b30f8a",
+       "principios-e-algoritmo-do-tratamento-81c62867",
+       "principios-e-algoritmo-do-tratamento-27cd8529",
+       "principios-e-algoritmo-do-tratamento-98e23bbe",
+       "principios-e-algoritmo-do-tratamento-141ddacc",
+       "principios-e-algoritmo-do-tratamento-d83d773e",
+       "principios-e-algoritmo-do-tratamento-7b0cc47a",
+       "tratamento-nao-cirurgico-e-percutaneo-a1e2b23f",
+       "tratamento-nao-cirurgico-e-percutaneo-efa9cc00",
+       "tratamento-nao-cirurgico-e-percutaneo-e6835c13",
+       "tratamento-nao-cirurgico-e-percutaneo-18ddd136",
+       "tratamento-nao-cirurgico-e-percutaneo-decb3b9a",
+       "tratamento-nao-cirurgico-e-percutaneo-1e17f56a",
+       "tratamento-nao-cirurgico-e-percutaneo-70dee2c2",
+       "tratamento-nao-cirurgico-e-percutaneo-3cd96750",
+       "tratamento-nao-cirurgico-e-percutaneo-24dc3795",
+       "tratamento-nao-cirurgico-e-percutaneo-4e1c0a02",
+       "tratamento-nao-cirurgico-e-percutaneo-0fb8cee7",
+       "tratamento-nao-cirurgico-e-percutaneo-57c210d4",
+       "tratamento-nao-cirurgico-e-percutaneo-e552102f",
+       "tratamento-nao-cirurgico-e-percutaneo-7458269c",
+       "tratamento-nao-cirurgico-e-percutaneo-a28b3854",
+       "tratamento-nao-cirurgico-e-percutaneo-a627c868",
+       "tratamento-nao-cirurgico-e-percutaneo-51142abf",
+       "tratamento-nao-cirurgico-e-percutaneo-c4a0a27a",
+       "tratamento-nao-cirurgico-e-percutaneo-ee8776f5",
+       "tratamento-nao-cirurgico-e-percutaneo-1388859c",
+       "tratamento-nao-cirurgico-e-percutaneo-d72c7d31",
+       "tratamento-nao-cirurgico-e-percutaneo-84d274f6"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "58c81992505aed923c233e0ee31763eda575dffce6196997d4861fbde486601c"
+     }
+    ],
+    "questaoSha256": "77ea0c4dfef6be98d106f365120b4e2cfaf8751e485e3b99c98b3c005b1ebcaf",
+    "comentarioSha256": "48b22326f46d4c80e424ed75fdaec297b13974dc9cb43916a6af0382bd31d11f"
+   }
   },
   "pediatria-1030": {
    "tema": "pediatria",
@@ -28172,7 +28520,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28188,7 +28536,59 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "4ad3b548f02bde59e20a80f8ad3465e76982589c16b15e2a45bc5394252c15cf"
+   "questaoSha256": "4ad3b548f02bde59e20a80f8ad3465e76982589c16b15e2a45bc5394252c15cf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Anatomia aplicada",
+       "Pós-operatório e resultados",
+       "Complicações"
+      ],
+      "blocos": [
+       "anatomia-aplicada-ebe2a427",
+       "anatomia-aplicada-32af470b",
+       "anatomia-aplicada-73d37af9",
+       "anatomia-aplicada-28563b59",
+       "anatomia-aplicada-3b10f9d0",
+       "anatomia-aplicada-152901f5",
+       "anatomia-aplicada-db66eed1",
+       "anatomia-aplicada-02ffb154",
+       "pos-operatorio-e-resultados-9ec461ce",
+       "pos-operatorio-e-resultados-c8a19801",
+       "pos-operatorio-e-resultados-507fcb2c",
+       "pos-operatorio-e-resultados-2cf48c73",
+       "pos-operatorio-e-resultados-1da691dc",
+       "pos-operatorio-e-resultados-d4bae21c",
+       "pos-operatorio-e-resultados-42de981e",
+       "pos-operatorio-e-resultados-5cdddcf9",
+       "pos-operatorio-e-resultados-6f347353",
+       "complicacoes-7ab5b751",
+       "complicacoes-91fbc481",
+       "complicacoes-cb2c0548",
+       "complicacoes-23119045",
+       "complicacoes-d2ac5d62",
+       "complicacoes-90956356",
+       "complicacoes-02e95725",
+       "complicacoes-8be1602d",
+       "complicacoes-93fc7d43",
+       "complicacoes-2896840e",
+       "complicacoes-a5c3fd88"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "1fc814aa0d5f185e5efa80fdbf4a87e5c829cf51b202fbdb68f4f25b65a81a50"
+     }
+    ],
+    "questaoSha256": "4ad3b548f02bde59e20a80f8ad3465e76982589c16b15e2a45bc5394252c15cf",
+    "comentarioSha256": "cf9b6209a1c5e46665bb0042faeb88496fb3e0d628c1bb9226e6639b0a609948"
+   }
   },
   "pediatria-1031": {
    "tema": "pediatria",
@@ -28198,7 +28598,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28214,7 +28614,65 @@
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "6a613b613861ad701497a5170789d359a454064283dcb53601d0246597659626"
+   "questaoSha256": "6a613b613861ad701497a5170789d359a454064283dcb53601d0246597659626",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Técnica: articulação primeiro, colunas depois",
+       "Complicações"
+      ],
+      "blocos": [
+       "tecnica-articulacao-primeiro-colunas-depois-bebea640",
+       "tecnica-articulacao-primeiro-colunas-depois-46dfe24d",
+       "tecnica-articulacao-primeiro-colunas-depois-3c0698e7",
+       "tecnica-articulacao-primeiro-colunas-depois-d4b01333",
+       "tecnica-articulacao-primeiro-colunas-depois-b8e890d8",
+       "tecnica-articulacao-primeiro-colunas-depois-b8e7c093",
+       "tecnica-articulacao-primeiro-colunas-depois-1df2bd14",
+       "tecnica-articulacao-primeiro-colunas-depois-219264b4",
+       "tecnica-articulacao-primeiro-colunas-depois-f6dfc8e8",
+       "tecnica-articulacao-primeiro-colunas-depois-95b6b9b5",
+       "tecnica-articulacao-primeiro-colunas-depois-262a3251",
+       "tecnica-articulacao-primeiro-colunas-depois-6567a53a",
+       "tecnica-articulacao-primeiro-colunas-depois-6d26c70b",
+       "tecnica-articulacao-primeiro-colunas-depois-f55b06d9",
+       "tecnica-articulacao-primeiro-colunas-depois-c1da9369",
+       "tecnica-articulacao-primeiro-colunas-depois-8c9bd1ac",
+       "tecnica-articulacao-primeiro-colunas-depois-4ba90b36",
+       "tecnica-articulacao-primeiro-colunas-depois-45ef17d2",
+       "tecnica-articulacao-primeiro-colunas-depois-43ea0869",
+       "tecnica-articulacao-primeiro-colunas-depois-dc3c3255",
+       "tecnica-articulacao-primeiro-colunas-depois-352d14ad",
+       "tecnica-articulacao-primeiro-colunas-depois-fb3e64ce",
+       "tecnica-articulacao-primeiro-colunas-depois-e83faa45",
+       "tecnica-articulacao-primeiro-colunas-depois-f5d12168",
+       "complicacoes-7ab5b751",
+       "complicacoes-91fbc481",
+       "complicacoes-cb2c0548",
+       "complicacoes-23119045",
+       "complicacoes-d2ac5d62",
+       "complicacoes-90956356",
+       "complicacoes-02e95725",
+       "complicacoes-8be1602d",
+       "complicacoes-93fc7d43",
+       "complicacoes-2896840e",
+       "complicacoes-a5c3fd88"
+      ],
+      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "trechosSha256": "0b308dfd6234e1fb1f568bc32643755d4b2e2e4bbca400248bf5e3355faa9b56"
+     }
+    ],
+    "questaoSha256": "6a613b613861ad701497a5170789d359a454064283dcb53601d0246597659626",
+    "comentarioSha256": "a0f7615218484fca6ac40942b51061306d0ccf375097bfca010af5010a862ea2"
+   }
   },
   "pediatria-1032": {
    "tema": "pediatria",
