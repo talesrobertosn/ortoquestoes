@@ -15,10 +15,6 @@ Ligar o resumo a todas as questões do tema (convite "Leia o resumo" no fim de c
 Consultar o acervo atual, usar os scripts de aplicação/validação, preservar o
 gabarito e salvar em branches e PRs revisáveis conforme o pedido.
 
-**Commits e pushes (20/10/2026):** commits locais à vontade, mas pushes e PRs agrupados (um pacote pronto a cada
-30 a 60 minutos, ou a cada 2 a 4 lotes), para poupar os minutos do GitHub Actions; regras completas em
-[AGENTS.md](AGENTS.md#commits-pushes-e-github-actions-diretriz-do-tales-20102026).
-
 **Provas de Cirurgia da Mão (SIMÃO e título da SBCM) com os livros locais (Green):** siga [docs/mao/PROTOCOLO.md](docs/mao/PROTOCOLO.md)
 e o andamento em [docs/mao/PROGRESSO.md](docs/mao/PROGRESSO.md). Comando para colar na outra conta:
 [docs/prompts/claude-mao-provas.md](docs/prompts/claude-mao-provas.md). Livros, resumos enviados e provas originais nunca vão para o git. Só SBCM e SIMÃO viram OrtoQuestões Simulados; as outras bancas (ABC, Unesp etc.) entram com o nome real, conferindo antes se já estão no site.
@@ -48,3 +44,10 @@ Foco maior em imagens (Tales, 19/10/2026): prefira **objetos pixel animados** (c
 Regra do Tales (19/10/2026): a tela começa **sempre limpa**, só com o essencial. O resto (mapa, Pomodoro, placar, atalhos, dicas) fica como **opção visível** para a pessoa adicionar, como o botão "Personalizar" da sessão; nunca ligado de entrada.
 
 Em 19/10/2026, Tales aprovou para o arsenal a **Conversa do grupo R+** (feed, 6 slides: print de conversa dos residentes no plantão, com enquete, zoom e prévia de link do Cronograma). Veja [o guia](marketing/instagram/estilos/CONVERSA-DO-GRUPO.md).
+
+## Desenvolvimento e publicações
+
+Seguir a seção **Eficiência de desenvolvimento e GitHub Actions** do
+[AGENTS.md](AGENTS.md), fonte única das regras de agrupamento de alterações,
+commits, pushes, validação e respeito ao trabalho concorrente. Os detalhes dos
+workflows estão em [docs/OPERACAO-ACTIONS.md](docs/OPERACAO-ACTIONS.md).

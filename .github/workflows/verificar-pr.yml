@@ -2,26 +2,10 @@ name: Verificar Pull Request
 
 on:
   pull_request:
-    # Só dispara quando muda algo que entra no site ou nos testes (diretriz de 20/10/2026:
-    # economizar minutos do Actions). docs/, marketing/, protótipos, relatórios, pdfs e os .md
-    # da raiz não entram no build; as duas exceções de docs/ são lidas pelos testes
-    # (fixtures/testar_paywall.py e scripts/comentarios-resumos/catalogo.py).
-    paths:
-      - "**"
-      - "!docs/**"
-      - "!marketing/**"
-      - "!prototipos/**"
-      - "!relatorios/**"
-      - "!pdfs/**"
-      - "!.claude/**"
-      - "!*.md"
-      - "docs/ativacao-e-rollback-assinaturas.md"
-      - "docs/comentarios-resumos/**"
 
 permissions:
   contents: read
 
-# Um push novo no mesmo PR cancela a verificação antiga, que já não vale para o código atual.
 concurrency:
   group: verificar-pr-${{ github.event.pull_request.number }}
   cancel-in-progress: true
@@ -31,13 +15,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Identificar impacto
+        id: impacto
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          executar=$(python3 scripts/ci/impacto.py "$BASE" HEAD)
+          echo "executar=$executar" >> "$GITHUB_OUTPUT"
+      # O job continua existindo para não deixar checks obrigatórios pendentes
+      # em PRs documentais. Entradas desconhecidas exigem a suíte completa.
       - uses: actions/setup-node@v4
+        if: steps.impacto.outputs.executar == 'true'
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run typecheck
+        if: steps.impacto.outputs.executar == 'true'
       - run: npm test
+        if: steps.impacto.outputs.executar == 'true'
       - run: npm run validar
+        if: steps.impacto.outputs.executar == 'true'
+      # build já executa tsc -b com o mesmo tsconfig; evita um segundo typecheck.
       - run: npm run build
+        if: steps.impacto.outputs.executar == 'true'
       - run: git diff --check
+      - name: Resumir execução
+        env:
+          EXECUTAR: ${{ steps.impacto.outputs.executar }}
+        run: |
+          echo "Suíte e build necessários: $EXECUTAR (documentação pura dispensa Node)." >> "$GITHUB_STEP_SUMMARY"
