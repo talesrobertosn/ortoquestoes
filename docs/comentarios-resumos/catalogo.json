@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1911,
+  "pendente": 1901,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 8,
   "pendente-inspecao-imagem": 186,
-  "revisada": 131
+  "revisada": 141
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -70,8 +70,9 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 141,
-    "pendente-inspecao-imagem": 17
+    "pendente": 140,
+    "pendente-inspecao-imagem": 17,
+    "revisada": 1
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -246,53 +247,53 @@
    "titulo": "Avaliação do cotovelo da criança traumatizada",
    "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
    "estados": {
-    "pendente": 9,
-    "revisada": 18
+    "pendente": 7,
+    "revisada": 20
    }
   },
   "rockwoodcriancas9-13-supracondiliana": {
    "titulo": "Fratura supracondiliana do úmero na criança",
    "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
    "estados": {
-    "pendente": 42,
+    "pendente": 41,
     "pendente-inspecao-imagem": 1,
-    "revisada": 12
+    "revisada": 13
    }
   },
   "rockwoodcriancas9-14-fratura-em-t": {
    "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
    "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
    "estados": {
-    "pendente": 6,
+    "pendente": 5,
     "pendente-anulada": 1,
-    "revisada": 12
+    "revisada": 13
    }
   },
   "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial": {
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
    "estados": {
-    "pendente": 89,
+    "pendente": 85,
     "pendente-inspecao-imagem": 8,
-    "revisada": 8
+    "revisada": 12
    }
   },
   "rockwoodcriancas9-16-condilo-lateral": {
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
    "estados": {
-    "pendente": 72,
+    "pendente": 67,
     "pendente-inspecao-imagem": 7,
-    "revisada": 8
+    "revisada": 13
    }
   },
   "rockwoodcriancas9-17-fise-distal-umero": {
    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
    "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
    "estados": {
-    "pendente": 30,
+    "pendente": 20,
     "pendente-inspecao-imagem": 4,
-    "revisada": 6
+    "revisada": 16
    }
   },
   "wilkins9-08-radio-ulna-distal-crianca": {
@@ -28408,7 +28409,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28431,7 +28432,67 @@
     "rockwoodcriancas9-12-avaliacao-cotovelo",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "151054a9e95bea14c601046d3e295b59b25920d0cf0387f80dde91416ae8f158"
+   "questaoSha256": "151054a9e95bea14c601046d3e295b59b25920d0cf0387f80dde91416ae8f158",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Descolamento epifisário total do úmero distal: quem tem e como reconhecer",
+       "Descolamento do úmero distal e maus-tratos"
+      ],
+      "blocos": [
+       "descolamento-epifisario-total-do-umero-distal-qu-d22afc63",
+       "descolamento-epifisario-total-do-umero-distal-qu-e902b402",
+       "descolamento-epifisario-total-do-umero-distal-qu-7e1f3892",
+       "descolamento-epifisario-total-do-umero-distal-qu-322a3acd",
+       "descolamento-epifisario-total-do-umero-distal-qu-ec1ee667",
+       "descolamento-epifisario-total-do-umero-distal-qu-9ca53ab2",
+       "descolamento-epifisario-total-do-umero-distal-qu-998b543f",
+       "descolamento-epifisario-total-do-umero-distal-qu-e9c4b844",
+       "descolamento-epifisario-total-do-umero-distal-qu-10644d50",
+       "descolamento-epifisario-total-do-umero-distal-qu-5dc58f4b",
+       "descolamento-epifisario-total-do-umero-distal-qu-bb9240e3",
+       "descolamento-epifisario-total-do-umero-distal-qu-859c9054",
+       "descolamento-epifisario-total-do-umero-distal-qu-b3a03041",
+       "descolamento-epifisario-total-do-umero-distal-qu-42648094",
+       "descolamento-epifisario-total-do-umero-distal-qu-2be9d010",
+       "descolamento-epifisario-total-do-umero-distal-qu-d1b84719",
+       "descolamento-epifisario-total-do-umero-distal-qu-13b5efb3",
+       "descolamento-epifisario-total-do-umero-distal-qu-ce127d92",
+       "descolamento-epifisario-total-do-umero-distal-qu-955c88b3",
+       "descolamento-epifisario-total-do-umero-distal-qu-b55ca15c",
+       "descolamento-epifisario-total-do-umero-distal-qu-783ae770",
+       "descolamento-epifisario-total-do-umero-distal-qu-73f57b32",
+       "descolamento-epifisario-total-do-umero-distal-qu-1ab6bebd",
+       "descolamento-epifisario-total-do-umero-distal-qu-9dd1c460",
+       "descolamento-epifisario-total-do-umero-distal-qu-62bc130e",
+       "descolamento-epifisario-total-do-umero-distal-qu-cc4500c1",
+       "descolamento-epifisario-total-do-umero-distal-qu-f048c1aa",
+       "descolamento-epifisario-total-do-umero-distal-qu-5a9674bf",
+       "descolamento-epifisario-total-do-umero-distal-qu-5cd3c48c",
+       "descolamento-epifisario-total-do-umero-distal-qu-436a28b1",
+       "descolamento-epifisario-total-do-umero-distal-qu-0e104b21",
+       "descolamento-epifisario-total-do-umero-distal-qu-823d9a75",
+       "descolamento-epifisario-total-do-umero-distal-qu-5d72fa91",
+       "descolamento-do-umero-distal-e-maus-tratos-9eedbd35",
+       "descolamento-do-umero-distal-e-maus-tratos-93a00088",
+       "descolamento-do-umero-distal-e-maus-tratos-ed743cf1",
+       "descolamento-do-umero-distal-e-maus-tratos-f5056d2c"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "6ac54ffbe0abed05ea0b90c94e4ce33dacde58e4aaa666aeecd4eedd043d83ae"
+     }
+    ],
+    "questaoSha256": "151054a9e95bea14c601046d3e295b59b25920d0cf0387f80dde91416ae8f158",
+    "comentarioSha256": "409785e912e9b86c6976693b6566a32c4d5839d94deb9578a0c3773b65ee6431"
+   }
   },
   "pediatria-1011": {
    "tema": "pediatria",
@@ -28441,7 +28502,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28456,7 +28517,70 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "8319a82d69065bcf2287eb551fc759277a270cef5513397acc76da04550b19b3"
+   "questaoSha256": "8319a82d69065bcf2287eb551fc759277a270cef5513397acc76da04550b19b3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Descolamento epifisário total do úmero distal: quem tem e como reconhecer",
+       "Complicações do descolamento: o cúbito varo"
+      ],
+      "blocos": [
+       "descolamento-epifisario-total-do-umero-distal-qu-d22afc63",
+       "descolamento-epifisario-total-do-umero-distal-qu-e902b402",
+       "descolamento-epifisario-total-do-umero-distal-qu-7e1f3892",
+       "descolamento-epifisario-total-do-umero-distal-qu-322a3acd",
+       "descolamento-epifisario-total-do-umero-distal-qu-ec1ee667",
+       "descolamento-epifisario-total-do-umero-distal-qu-9ca53ab2",
+       "descolamento-epifisario-total-do-umero-distal-qu-998b543f",
+       "descolamento-epifisario-total-do-umero-distal-qu-e9c4b844",
+       "descolamento-epifisario-total-do-umero-distal-qu-10644d50",
+       "descolamento-epifisario-total-do-umero-distal-qu-5dc58f4b",
+       "descolamento-epifisario-total-do-umero-distal-qu-bb9240e3",
+       "descolamento-epifisario-total-do-umero-distal-qu-859c9054",
+       "descolamento-epifisario-total-do-umero-distal-qu-b3a03041",
+       "descolamento-epifisario-total-do-umero-distal-qu-42648094",
+       "descolamento-epifisario-total-do-umero-distal-qu-2be9d010",
+       "descolamento-epifisario-total-do-umero-distal-qu-d1b84719",
+       "descolamento-epifisario-total-do-umero-distal-qu-13b5efb3",
+       "descolamento-epifisario-total-do-umero-distal-qu-ce127d92",
+       "descolamento-epifisario-total-do-umero-distal-qu-955c88b3",
+       "descolamento-epifisario-total-do-umero-distal-qu-b55ca15c",
+       "descolamento-epifisario-total-do-umero-distal-qu-783ae770",
+       "descolamento-epifisario-total-do-umero-distal-qu-73f57b32",
+       "descolamento-epifisario-total-do-umero-distal-qu-1ab6bebd",
+       "descolamento-epifisario-total-do-umero-distal-qu-9dd1c460",
+       "descolamento-epifisario-total-do-umero-distal-qu-62bc130e",
+       "descolamento-epifisario-total-do-umero-distal-qu-cc4500c1",
+       "descolamento-epifisario-total-do-umero-distal-qu-f048c1aa",
+       "descolamento-epifisario-total-do-umero-distal-qu-5a9674bf",
+       "descolamento-epifisario-total-do-umero-distal-qu-5cd3c48c",
+       "descolamento-epifisario-total-do-umero-distal-qu-436a28b1",
+       "descolamento-epifisario-total-do-umero-distal-qu-0e104b21",
+       "descolamento-epifisario-total-do-umero-distal-qu-823d9a75",
+       "descolamento-epifisario-total-do-umero-distal-qu-5d72fa91",
+       "complicacoes-do-descolamento-o-cubito-varo-b37d8b70",
+       "complicacoes-do-descolamento-o-cubito-varo-a54ba805",
+       "complicacoes-do-descolamento-o-cubito-varo-034f37a7",
+       "complicacoes-do-descolamento-o-cubito-varo-fbc418db",
+       "complicacoes-do-descolamento-o-cubito-varo-97c5eecd",
+       "complicacoes-do-descolamento-o-cubito-varo-ebfdc886",
+       "complicacoes-do-descolamento-o-cubito-varo-24878d43"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "b911c898c824904ce61827099c748bacfc6fe685594f21e3dfce9d9096c84910"
+     }
+    ],
+    "questaoSha256": "8319a82d69065bcf2287eb551fc759277a270cef5513397acc76da04550b19b3",
+    "comentarioSha256": "3a6650e45c7883e4998c2e861f764b0e933ae25a5e78c85fde57c41462532188"
+   }
   },
   "pediatria-1012": {
    "tema": "pediatria",
@@ -28466,7 +28590,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28481,7 +28605,42 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "a07b54cdb99a6b5412a09af619fefa6bed9fd2e28e940a8023f938e2f0814eb6"
+   "questaoSha256": "a07b54cdb99a6b5412a09af619fefa6bed9fd2e28e940a8023f938e2f0814eb6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Tratamento do descolamento epifisário total"
+      ],
+      "blocos": [
+       "tratamento-do-descolamento-epifisario-total-5d69c93f",
+       "tratamento-do-descolamento-epifisario-total-79a48957",
+       "tratamento-do-descolamento-epifisario-total-f0001f02",
+       "tratamento-do-descolamento-epifisario-total-a32f3a6b",
+       "tratamento-do-descolamento-epifisario-total-0a192e1a",
+       "tratamento-do-descolamento-epifisario-total-eaa30ae4",
+       "tratamento-do-descolamento-epifisario-total-caac1b11",
+       "tratamento-do-descolamento-epifisario-total-a4c05a6b",
+       "tratamento-do-descolamento-epifisario-total-2690ae7c",
+       "tratamento-do-descolamento-epifisario-total-cae528b0",
+       "tratamento-do-descolamento-epifisario-total-cc51efa5",
+       "tratamento-do-descolamento-epifisario-total-565a55ae",
+       "tratamento-do-descolamento-epifisario-total-0b54aceb"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "51aa0d9746c8d2a66b6c49f841a2195da7f369081067edfe1867288009b679bd"
+     }
+    ],
+    "questaoSha256": "a07b54cdb99a6b5412a09af619fefa6bed9fd2e28e940a8023f938e2f0814eb6",
+    "comentarioSha256": "a6c26513a6aedb04fb648ec846cf75751479353cb88290d1a3c5aa800ae627ef"
+   }
   },
   "pediatria-1013": {
    "tema": "pediatria",
@@ -28491,7 +28650,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28506,7 +28665,42 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "f1f97e9b4e1ef9b30924f3131909e005cbd0b3f5bee452c00f30da2840578172"
+   "questaoSha256": "f1f97e9b4e1ef9b30924f3131909e005cbd0b3f5bee452c00f30da2840578172",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Tratamento do descolamento epifisário total"
+      ],
+      "blocos": [
+       "tratamento-do-descolamento-epifisario-total-5d69c93f",
+       "tratamento-do-descolamento-epifisario-total-79a48957",
+       "tratamento-do-descolamento-epifisario-total-f0001f02",
+       "tratamento-do-descolamento-epifisario-total-a32f3a6b",
+       "tratamento-do-descolamento-epifisario-total-0a192e1a",
+       "tratamento-do-descolamento-epifisario-total-eaa30ae4",
+       "tratamento-do-descolamento-epifisario-total-caac1b11",
+       "tratamento-do-descolamento-epifisario-total-a4c05a6b",
+       "tratamento-do-descolamento-epifisario-total-2690ae7c",
+       "tratamento-do-descolamento-epifisario-total-cae528b0",
+       "tratamento-do-descolamento-epifisario-total-cc51efa5",
+       "tratamento-do-descolamento-epifisario-total-565a55ae",
+       "tratamento-do-descolamento-epifisario-total-0b54aceb"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "51aa0d9746c8d2a66b6c49f841a2195da7f369081067edfe1867288009b679bd"
+     }
+    ],
+    "questaoSha256": "f1f97e9b4e1ef9b30924f3131909e005cbd0b3f5bee452c00f30da2840578172",
+    "comentarioSha256": "92b21c700c7d55ce20e97a71b63a0e5863f591735659b55395e29109e2496c28"
+   }
   },
   "pediatria-1014": {
    "tema": "pediatria",
@@ -28516,7 +28710,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28531,7 +28725,70 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "6c028548a5231461da1b1138edf810b5cbc7cd8d80e3b82380b1e94aa8aefc14"
+   "questaoSha256": "6c028548a5231461da1b1138edf810b5cbc7cd8d80e3b82380b1e94aa8aefc14",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Descolamento epifisário total do úmero distal: quem tem e como reconhecer",
+       "Complicações do descolamento: o cúbito varo"
+      ],
+      "blocos": [
+       "descolamento-epifisario-total-do-umero-distal-qu-d22afc63",
+       "descolamento-epifisario-total-do-umero-distal-qu-e902b402",
+       "descolamento-epifisario-total-do-umero-distal-qu-7e1f3892",
+       "descolamento-epifisario-total-do-umero-distal-qu-322a3acd",
+       "descolamento-epifisario-total-do-umero-distal-qu-ec1ee667",
+       "descolamento-epifisario-total-do-umero-distal-qu-9ca53ab2",
+       "descolamento-epifisario-total-do-umero-distal-qu-998b543f",
+       "descolamento-epifisario-total-do-umero-distal-qu-e9c4b844",
+       "descolamento-epifisario-total-do-umero-distal-qu-10644d50",
+       "descolamento-epifisario-total-do-umero-distal-qu-5dc58f4b",
+       "descolamento-epifisario-total-do-umero-distal-qu-bb9240e3",
+       "descolamento-epifisario-total-do-umero-distal-qu-859c9054",
+       "descolamento-epifisario-total-do-umero-distal-qu-b3a03041",
+       "descolamento-epifisario-total-do-umero-distal-qu-42648094",
+       "descolamento-epifisario-total-do-umero-distal-qu-2be9d010",
+       "descolamento-epifisario-total-do-umero-distal-qu-d1b84719",
+       "descolamento-epifisario-total-do-umero-distal-qu-13b5efb3",
+       "descolamento-epifisario-total-do-umero-distal-qu-ce127d92",
+       "descolamento-epifisario-total-do-umero-distal-qu-955c88b3",
+       "descolamento-epifisario-total-do-umero-distal-qu-b55ca15c",
+       "descolamento-epifisario-total-do-umero-distal-qu-783ae770",
+       "descolamento-epifisario-total-do-umero-distal-qu-73f57b32",
+       "descolamento-epifisario-total-do-umero-distal-qu-1ab6bebd",
+       "descolamento-epifisario-total-do-umero-distal-qu-9dd1c460",
+       "descolamento-epifisario-total-do-umero-distal-qu-62bc130e",
+       "descolamento-epifisario-total-do-umero-distal-qu-cc4500c1",
+       "descolamento-epifisario-total-do-umero-distal-qu-f048c1aa",
+       "descolamento-epifisario-total-do-umero-distal-qu-5a9674bf",
+       "descolamento-epifisario-total-do-umero-distal-qu-5cd3c48c",
+       "descolamento-epifisario-total-do-umero-distal-qu-436a28b1",
+       "descolamento-epifisario-total-do-umero-distal-qu-0e104b21",
+       "descolamento-epifisario-total-do-umero-distal-qu-823d9a75",
+       "descolamento-epifisario-total-do-umero-distal-qu-5d72fa91",
+       "complicacoes-do-descolamento-o-cubito-varo-b37d8b70",
+       "complicacoes-do-descolamento-o-cubito-varo-a54ba805",
+       "complicacoes-do-descolamento-o-cubito-varo-034f37a7",
+       "complicacoes-do-descolamento-o-cubito-varo-fbc418db",
+       "complicacoes-do-descolamento-o-cubito-varo-97c5eecd",
+       "complicacoes-do-descolamento-o-cubito-varo-ebfdc886",
+       "complicacoes-do-descolamento-o-cubito-varo-24878d43"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "b911c898c824904ce61827099c748bacfc6fe685594f21e3dfce9d9096c84910"
+     }
+    ],
+    "questaoSha256": "6c028548a5231461da1b1138edf810b5cbc7cd8d80e3b82380b1e94aa8aefc14",
+    "comentarioSha256": "315bddea94ec3778d4688ba35e1bd3444f0fd26d23faed7723c5b00247cc65cf"
+   }
   },
   "pediatria-1015": {
    "tema": "pediatria",
@@ -28541,7 +28798,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28565,7 +28822,65 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "218b57f699165385413433c81f4fff0fd2dd1931900948515adf3a8a05db2f56"
+   "questaoSha256": "218b57f699165385413433c81f4fff0fd2dd1931900948515adf3a8a05db2f56",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Fratura do côndilo medial"
+      ],
+      "blocos": [
+       "fratura-do-condilo-medial-26aed577",
+       "fratura-do-condilo-medial-97e495f8",
+       "fratura-do-condilo-medial-f094448d",
+       "fratura-do-condilo-medial-bb9240e3",
+       "fratura-do-condilo-medial-aececaae",
+       "fratura-do-condilo-medial-b9127181",
+       "fratura-do-condilo-medial-71c05757",
+       "fratura-do-condilo-medial-138a2e7f",
+       "fratura-do-condilo-medial-12e22a02",
+       "fratura-do-condilo-medial-a3777695",
+       "fratura-do-condilo-medial-ea87e909",
+       "fratura-do-condilo-medial-ff36cff3",
+       "fratura-do-condilo-medial-2b767636",
+       "fratura-do-condilo-medial-8240b0b1",
+       "fratura-do-condilo-medial-352fb1d3",
+       "fratura-do-condilo-medial-5752e73a",
+       "fratura-do-condilo-medial-869ae839",
+       "fratura-do-condilo-medial-111c3714",
+       "fratura-do-condilo-medial-0a7ec8d9",
+       "fratura-do-condilo-medial-2cd19de2",
+       "fratura-do-condilo-medial-0bbe3295",
+       "fratura-do-condilo-medial-0ce13163",
+       "fratura-do-condilo-medial-d06c4075",
+       "fratura-do-condilo-medial-e0378cf6",
+       "fratura-do-condilo-medial-a43e8291",
+       "fratura-do-condilo-medial-9616d6d3",
+       "fratura-do-condilo-medial-3148b36a",
+       "fratura-do-condilo-medial-d323a5de",
+       "fratura-do-condilo-medial-b4d52bd3",
+       "fratura-do-condilo-medial-a70ee5da",
+       "fratura-do-condilo-medial-fca9f900",
+       "fratura-do-condilo-medial-7324f8a1",
+       "fratura-do-condilo-medial-e440006c",
+       "fratura-do-condilo-medial-284c8825",
+       "fratura-do-condilo-medial-d686e75f",
+       "fratura-do-condilo-medial-d1a39f42"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "044cb4cca39dabf4abd0906dbc5b789207cd511e6233804e1688c1c0ed24358e"
+     }
+    ],
+    "questaoSha256": "218b57f699165385413433c81f4fff0fd2dd1931900948515adf3a8a05db2f56",
+    "comentarioSha256": "41e35c3935338eae0e24f4c80305bed92571631b1c7d29a215cce4b41fafc322"
+   }
   },
   "pediatria-1016": {
    "tema": "pediatria",
@@ -28576,7 +28891,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28593,7 +28908,65 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "6ceae6e7e7c45701d56c50d311ec64e6d56088cf444b60c24c988d5c2c5f9ab0"
+   "questaoSha256": "6ceae6e7e7c45701d56c50d311ec64e6d56088cf444b60c24c988d5c2c5f9ab0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Fratura do côndilo medial"
+      ],
+      "blocos": [
+       "fratura-do-condilo-medial-26aed577",
+       "fratura-do-condilo-medial-97e495f8",
+       "fratura-do-condilo-medial-f094448d",
+       "fratura-do-condilo-medial-bb9240e3",
+       "fratura-do-condilo-medial-aececaae",
+       "fratura-do-condilo-medial-b9127181",
+       "fratura-do-condilo-medial-71c05757",
+       "fratura-do-condilo-medial-138a2e7f",
+       "fratura-do-condilo-medial-12e22a02",
+       "fratura-do-condilo-medial-a3777695",
+       "fratura-do-condilo-medial-ea87e909",
+       "fratura-do-condilo-medial-ff36cff3",
+       "fratura-do-condilo-medial-2b767636",
+       "fratura-do-condilo-medial-8240b0b1",
+       "fratura-do-condilo-medial-352fb1d3",
+       "fratura-do-condilo-medial-5752e73a",
+       "fratura-do-condilo-medial-869ae839",
+       "fratura-do-condilo-medial-111c3714",
+       "fratura-do-condilo-medial-0a7ec8d9",
+       "fratura-do-condilo-medial-2cd19de2",
+       "fratura-do-condilo-medial-0bbe3295",
+       "fratura-do-condilo-medial-0ce13163",
+       "fratura-do-condilo-medial-d06c4075",
+       "fratura-do-condilo-medial-e0378cf6",
+       "fratura-do-condilo-medial-a43e8291",
+       "fratura-do-condilo-medial-9616d6d3",
+       "fratura-do-condilo-medial-3148b36a",
+       "fratura-do-condilo-medial-d323a5de",
+       "fratura-do-condilo-medial-b4d52bd3",
+       "fratura-do-condilo-medial-a70ee5da",
+       "fratura-do-condilo-medial-fca9f900",
+       "fratura-do-condilo-medial-7324f8a1",
+       "fratura-do-condilo-medial-e440006c",
+       "fratura-do-condilo-medial-284c8825",
+       "fratura-do-condilo-medial-d686e75f",
+       "fratura-do-condilo-medial-d1a39f42"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "044cb4cca39dabf4abd0906dbc5b789207cd511e6233804e1688c1c0ed24358e"
+     }
+    ],
+    "questaoSha256": "6ceae6e7e7c45701d56c50d311ec64e6d56088cf444b60c24c988d5c2c5f9ab0",
+    "comentarioSha256": "e3e9b5312263d1a304778d1ffa080df6437c569f2d2a3005097dcf2eb5b9d506"
+   }
   },
   "pediatria-1017": {
    "tema": "pediatria",
@@ -28603,7 +28976,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28620,7 +28993,65 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "1f8aed0432140cd7c2f4b0907c5df7a2f195376ff4394b55e1f1aefe44945cfb"
+   "questaoSha256": "1f8aed0432140cd7c2f4b0907c5df7a2f195376ff4394b55e1f1aefe44945cfb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Fratura do côndilo medial"
+      ],
+      "blocos": [
+       "fratura-do-condilo-medial-26aed577",
+       "fratura-do-condilo-medial-97e495f8",
+       "fratura-do-condilo-medial-f094448d",
+       "fratura-do-condilo-medial-bb9240e3",
+       "fratura-do-condilo-medial-aececaae",
+       "fratura-do-condilo-medial-b9127181",
+       "fratura-do-condilo-medial-71c05757",
+       "fratura-do-condilo-medial-138a2e7f",
+       "fratura-do-condilo-medial-12e22a02",
+       "fratura-do-condilo-medial-a3777695",
+       "fratura-do-condilo-medial-ea87e909",
+       "fratura-do-condilo-medial-ff36cff3",
+       "fratura-do-condilo-medial-2b767636",
+       "fratura-do-condilo-medial-8240b0b1",
+       "fratura-do-condilo-medial-352fb1d3",
+       "fratura-do-condilo-medial-5752e73a",
+       "fratura-do-condilo-medial-869ae839",
+       "fratura-do-condilo-medial-111c3714",
+       "fratura-do-condilo-medial-0a7ec8d9",
+       "fratura-do-condilo-medial-2cd19de2",
+       "fratura-do-condilo-medial-0bbe3295",
+       "fratura-do-condilo-medial-0ce13163",
+       "fratura-do-condilo-medial-d06c4075",
+       "fratura-do-condilo-medial-e0378cf6",
+       "fratura-do-condilo-medial-a43e8291",
+       "fratura-do-condilo-medial-9616d6d3",
+       "fratura-do-condilo-medial-3148b36a",
+       "fratura-do-condilo-medial-d323a5de",
+       "fratura-do-condilo-medial-b4d52bd3",
+       "fratura-do-condilo-medial-a70ee5da",
+       "fratura-do-condilo-medial-fca9f900",
+       "fratura-do-condilo-medial-7324f8a1",
+       "fratura-do-condilo-medial-e440006c",
+       "fratura-do-condilo-medial-284c8825",
+       "fratura-do-condilo-medial-d686e75f",
+       "fratura-do-condilo-medial-d1a39f42"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "044cb4cca39dabf4abd0906dbc5b789207cd511e6233804e1688c1c0ed24358e"
+     }
+    ],
+    "questaoSha256": "1f8aed0432140cd7c2f4b0907c5df7a2f195376ff4394b55e1f1aefe44945cfb",
+    "comentarioSha256": "4b4c5c65152b53ee6e0f85156d034e29233c30f009f7f0ba92a935eb41b0e5a5"
+   }
   },
   "pediatria-1018": {
    "tema": "pediatria",
@@ -28630,7 +29061,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28654,7 +29085,48 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "8a2d08128faf1f838143a25adeebe6bb845009c811618d57b5e00916ad4f60f7"
+   "questaoSha256": "8a2d08128faf1f838143a25adeebe6bb845009c811618d57b5e00916ad4f60f7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Osteonecrose da tróclea"
+      ],
+      "blocos": [
+       "osteonecrose-da-troclea-7449514b",
+       "osteonecrose-da-troclea-4ee68ef7",
+       "osteonecrose-da-troclea-065f757d",
+       "osteonecrose-da-troclea-448c5ee3",
+       "osteonecrose-da-troclea-cef90e2c",
+       "osteonecrose-da-troclea-48064f9a",
+       "osteonecrose-da-troclea-c179bb5a",
+       "osteonecrose-da-troclea-21e2ec7a",
+       "osteonecrose-da-troclea-f32973a1",
+       "osteonecrose-da-troclea-e4f1fbfa",
+       "osteonecrose-da-troclea-579ac27d",
+       "osteonecrose-da-troclea-8289f8d0",
+       "osteonecrose-da-troclea-5407da7f",
+       "osteonecrose-da-troclea-d21b3dd2",
+       "osteonecrose-da-troclea-e84be102",
+       "osteonecrose-da-troclea-1606edb0",
+       "osteonecrose-da-troclea-090fda80",
+       "osteonecrose-da-troclea-5374fa5e",
+       "osteonecrose-da-troclea-aa096872"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "b4f258cc86184b5ba438dcc86098f142f7ef428d1dd50e695c73176fca357e6b"
+     }
+    ],
+    "questaoSha256": "8a2d08128faf1f838143a25adeebe6bb845009c811618d57b5e00916ad4f60f7",
+    "comentarioSha256": "27622cd2ddf66613bc35f34698d0add6944a1f85e014ca562bc5a332df8103ba"
+   }
   },
   "pediatria-1019": {
    "tema": "pediatria",
@@ -35652,7 +36124,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -35700,7 +36172,48 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "6e3def2b5d5f8269b628c74d669070629a4c57921aae8911c3d3d21663bc59c1"
+   "questaoSha256": "6e3def2b5d5f8269b628c74d669070629a4c57921aae8911c3d3d21663bc59c1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+      "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+      "secoes": [
+       "Osteonecrose da tróclea"
+      ],
+      "blocos": [
+       "osteonecrose-da-troclea-7449514b",
+       "osteonecrose-da-troclea-4ee68ef7",
+       "osteonecrose-da-troclea-065f757d",
+       "osteonecrose-da-troclea-448c5ee3",
+       "osteonecrose-da-troclea-cef90e2c",
+       "osteonecrose-da-troclea-48064f9a",
+       "osteonecrose-da-troclea-c179bb5a",
+       "osteonecrose-da-troclea-21e2ec7a",
+       "osteonecrose-da-troclea-f32973a1",
+       "osteonecrose-da-troclea-e4f1fbfa",
+       "osteonecrose-da-troclea-579ac27d",
+       "osteonecrose-da-troclea-8289f8d0",
+       "osteonecrose-da-troclea-5407da7f",
+       "osteonecrose-da-troclea-d21b3dd2",
+       "osteonecrose-da-troclea-e84be102",
+       "osteonecrose-da-troclea-1606edb0",
+       "osteonecrose-da-troclea-090fda80",
+       "osteonecrose-da-troclea-5374fa5e",
+       "osteonecrose-da-troclea-aa096872"
+      ],
+      "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+      "trechosSha256": "b4f258cc86184b5ba438dcc86098f142f7ef428d1dd50e695c73176fca357e6b"
+     }
+    ],
+    "questaoSha256": "6e3def2b5d5f8269b628c74d669070629a4c57921aae8911c3d3d21663bc59c1",
+    "comentarioSha256": "16692269031740d795299e24ac706b74dc0615eb2ae20eb2b526bedf2cd33c73"
+   }
   },
   "trauma-0192": {
    "tema": "trauma",
