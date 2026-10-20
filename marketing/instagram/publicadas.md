@@ -32,3 +32,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | mao-1802 | Polegar do esquiador, LCU da MCF: estresse a 30° sem ponto final firme (Simulados, padrão SIMÃO) | posts/2026-10-20-pista-de-esqui-polegar (feed e stories) |
 | trauma-0570 | Patela bipartida como diferencial da fratura da patela (TEOT 2024) | posts/2026-10-19-checagem-patela (feed) |
 | pediatria-0387 | Arqueamento posteromedial da tíbia e pé calcâneo valgo (TARO 2025) | posts/2026-10-19-checagem-patela (stories) |
+| pediatria-0287 | Legg-Calvé-Perthes na ressonância, menina de 8 anos (TARO 2024) | posts/2026-10-20-grupo-perthes (stories) |
