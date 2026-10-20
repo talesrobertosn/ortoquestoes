@@ -3,11 +3,11 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1996,
+  "pendente": 1990,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 1,
-  "pendente-inspecao-imagem": 188,
+  "pendente-fonte": 8,
+  "pendente-inspecao-imagem": 187,
   "revisada": 51
  },
  "resumos": {
@@ -98,11 +98,11 @@
    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
    "estados": {
     "duplicada": 4,
-    "pendente": 137,
+    "pendente": 131,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 1,
-    "pendente-inspecao-imagem": 18,
+    "pendente-fonte": 8,
+    "pendente-inspecao-imagem": 17,
     "revisada": 51
    }
   },
@@ -7685,8 +7685,8 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo sustenta reparo das avulsões do LCU e uso de âncoras, mas declara não discutir ressecção do fragmento de 10%. Conferir capítulo ou outra fonte enviada antes de sustentar essa escolha específica do gabarito E.",
    "temComentario": true,
    "citacoes": [
     {
@@ -7700,7 +7700,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "f3942bcdfb987a28747f4e173423d1da83a742e26d0af36ad3eab6b193fd04ad"
+   "questaoSha256": "f3942bcdfb987a28747f4e173423d1da83a742e26d0af36ad3eab6b193fd04ad",
+   "pendencia": "O resumo sustenta reparo das avulsões do LCU e uso de âncoras, mas declara não discutir ressecção do fragmento de 10%. Conferir capítulo ou outra fonte enviada antes de sustentar essa escolha específica do gabarito E."
   },
   "mao-0234": {
    "tema": "mao",
@@ -11667,8 +11668,8 @@
    ],
    "prova": "UFG",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo lista dorsorradial, oblíquo anterior profundo, oblíquo posterior e intermetacarpal como primários, mas não compara quais estudos estabeleceram o dorsorradial como principal limitador da luxação. Não apresentar esse ranking como demonstrado pelo resumo sem conferir a fonte específica.",
    "temComentario": true,
    "citacoes": [
     {
@@ -11682,7 +11683,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "25e3ea2ab721e5864eb89f025f445bb86c5970787020783059846a78ef231a3c"
+   "questaoSha256": "25e3ea2ab721e5864eb89f025f445bb86c5970787020783059846a78ef231a3c",
+   "pendencia": "O resumo lista dorsorradial, oblíquo anterior profundo, oblíquo posterior e intermetacarpal como primários, mas não compara quais estudos estabeleceram o dorsorradial como principal limitador da luxação. Não apresentar esse ranking como demonstrado pelo resumo sem conferir a fonte específica."
   },
   "mao-1033": {
    "tema": "mao",
@@ -12056,8 +12058,8 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão exige a classificação de Doyle, ausente no resumo do capítulo 45, que divide o martelo ósseo por subluxação e lesão epifisária. O gabarito D (IV B) precisa de tabela de Doyle conferida; não reconstruir a classificação a partir do comentário antigo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -12071,7 +12073,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "06f77225334027fd8c29bd18ae692536aba2ac5207d3f77c2ea43313116a6cbf"
+   "questaoSha256": "06f77225334027fd8c29bd18ae692536aba2ac5207d3f77c2ea43313116a6cbf",
+   "pendencia": "A questão exige a classificação de Doyle, ausente no resumo do capítulo 45, que divide o martelo ósseo por subluxação e lesão epifisária. O gabarito D (IV B) precisa de tabela de Doyle conferida; não reconstruir a classificação a partir do comentário antigo."
   },
   "mao-1067": {
    "tema": "mao",
@@ -12080,8 +12083,8 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo descreve retração do flexor profundo até IFP ou palma, mas não apresenta a classificação de Leddy e Packer nem seus tipos. Conferir a classificação para associar tipo II à alternativa C e explicar os demais tipos sem inventá-los.",
    "temComentario": true,
    "citacoes": [
     {
@@ -12095,7 +12098,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "ec2d598e84461041f902dfffe5857a3eee5062446db99573bd222aa57372d355"
+   "questaoSha256": "ec2d598e84461041f902dfffe5857a3eee5062446db99573bd222aa57372d355",
+   "pendencia": "O resumo descreve retração do flexor profundo até IFP ou palma, mas não apresenta a classificação de Leddy e Packer nem seus tipos. Conferir a classificação para associar tipo II à alternativa C e explicar os demais tipos sem inventá-los."
   },
   "mao-1068": {
    "tema": "mao",
@@ -12332,8 +12336,8 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo traz o critério em flexão e explicitamente não informa o número para extensão. Não basta para confirmar o par de diferenças contralaterais 30 graus em extensão/15 graus em flexão do gabarito C. Aguardar fonte que detalhe os dois testes.",
    "temComentario": true,
    "citacoes": [
     {
@@ -12347,7 +12351,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "471a579c8098f65ee6fa2cb56ed1599044864159a3338b343368023c5a9251c4"
+   "questaoSha256": "471a579c8098f65ee6fa2cb56ed1599044864159a3338b343368023c5a9251c4",
+   "pendencia": "O resumo traz o critério em flexão e explicitamente não informa o número para extensão. Não basta para confirmar o par de diferenças contralaterais 30 graus em extensão/15 graus em flexão do gabarito C. Aguardar fonte que detalhe os dois testes."
   },
   "mao-1089": {
    "tema": "mao",
@@ -13556,8 +13561,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "A pergunta atribui ao Green 8ª edição a direção dos parafusos na bissetriz. O resumo do Rockwood informa apenas acompanhar a espiral em direções diferentes, sem trazer a regra da bissetriz. Conferir o Green e abrir a figura antes de revisar.",
    "temComentario": true,
    "citacoes": [
     {
@@ -13571,7 +13576,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "0ac5fe8ba59c2caf7e40fb6c73de538109126ec1a12b1b2d456c8f144fb94abb"
+   "questaoSha256": "0ac5fe8ba59c2caf7e40fb6c73de538109126ec1a12b1b2d456c8f144fb94abb",
+   "pendencia": "A pergunta atribui ao Green 8ª edição a direção dos parafusos na bissetriz. O resumo do Rockwood informa apenas acompanhar a espiral em direções diferentes, sem trazer a regra da bissetriz. Conferir o Green e abrir a figura antes de revisar."
   },
   "mao-1393": {
    "tema": "mao",
@@ -14314,8 +14320,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A pergunta é sobre colo de metacarpos centrais e o gabarito usa 10 a 15 graus. O resumo fornece 10 graus para diáfise do segundo e terceiro, mas não número específico para o colo; não transferir automaticamente limite diafisário ao colo. Conferir a fonte do valor do enunciado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -14329,7 +14335,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "324feb994d17e10f8b44cfc0c092788e0d5d3d23f086b9385273440ea7d7cbcf"
+   "questaoSha256": "324feb994d17e10f8b44cfc0c092788e0d5d3d23f086b9385273440ea7d7cbcf",
+   "pendencia": "A pergunta é sobre colo de metacarpos centrais e o gabarito usa 10 a 15 graus. O resumo fornece 10 graus para diáfise do segundo e terceiro, mas não número específico para o colo; não transferir automaticamente limite diafisário ao colo. Conferir a fonte do valor do enunciado."
   },
   "mao-1542": {
    "tema": "mao",
