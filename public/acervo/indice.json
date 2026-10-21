@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-10-21T05:22:47-03:00",
-  "total": 7339,
+  "geradoEm": "2026-10-21T05:26:11-03:00",
+  "total": 7345,
   "temas": [
     {
       "slug": "mao",
@@ -13,7 +13,7 @@
       "slug": "ombro-cotovelo",
       "nome": "Ombro e cotovelo",
       "arquivo": "temas/ombro-cotovelo.json",
-      "total": 545
+      "total": 551
     },
     {
       "slug": "quadril",
@@ -41512,6 +41512,110 @@
       ],
       "p": 17,
       "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0664",
+      "t": 1,
+      "s": [
+        52
+      ],
+      "p": 19,
+      "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0665",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 19,
+      "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0666",
+      "t": 1,
+      "s": [
+        60
+      ],
+      "p": 19,
+      "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0667",
+      "t": 1,
+      "s": [
+        58,
+        66
+      ],
+      "p": 19,
+      "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0668",
+      "t": 1,
+      "s": [
+        54
+      ],
+      "p": 19,
+      "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0669",
+      "t": 1,
+      "s": [
+        48,
+        55
+      ],
+      "p": 19,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,

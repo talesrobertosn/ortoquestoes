@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 83 | 11 | mao-2023 a mao-2105 | A 20, B 21, C 21, D 21 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 20, ombro-cotovelo** (lotes 01 a 19 publicados: mao-2023 a mao-2105; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte). Dica: quando o texto
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, fase 0** (separar a prova em `.oq/provas/sbcm-2022.json`, classificar e dividir em lotes, como na seção SBCM 2024). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -284,7 +284,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 5 | Instabilidade carpal não dissociativa: característica | afirmativas | cap. 13, p. 501 e 537 | mao / Instabilidade do carpo | 04 | mao-2036 | publicada |
 | 6 | Reconstrução da ARUD: autor e ligamentos | epônimo, figura | cap. 14, p. 579 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2039 | publicada |
 | 7 | SLADE e GEISSLER: tipo com união fibrosa e traço mínimo | classificação | cap. 16, p. 696 | mao / Fraturas do escafoide e do carpo | 06 | mao-2045 | publicada |
-| 8 | Acesso medial over-the-top na capsulotomia: vantagem | técnica | cap. 24 (arquivo 23), p. 1013 | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
+| 8 | Acesso medial over-the-top na capsulotomia: vantagem | técnica | cap. 24, p. 1013 | ombro-cotovelo / Rigidez do cotovelo | 20 | ombro-cotovelo-0664 | publicada |
 | 9 | Radial no cotovelo: cinco sítios de compressão | lista | cap. 28, p. 1116 | mao / Neuropatia ulnar e outras compressões | 10 | mao-2066 | publicada |
 | 10 | Paralisia radial alta: transferência sempre presente | transferência | cap. 31, p. 1228 a 1230 | mao / Transferências tendinosas e paralisias | 11 | mao-2069 | publicada |
 | 11 | Plexo: nervo que sai direto da raiz | anatomia | cap. 34, p. 1304 | mao / Plexo braquial e paralisia obstétrica | 13 | mao-2079 | publicada |
@@ -323,8 +323,8 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 44 | Tuberculose no membro superior: o que raramente envolve | fato | cap. 3, p. 106 | mao / Infecções da mão | 09 | mao-2059 | publicada |
 | 45 | WEISS-HASTINGS: tipo coronal dorsal | classificação | cap. 7, p. 284 e 285 | mao / Fraturas dos metacarpos e falanges | 02 | mao-2028 | publicada |
 | 46 | GARCIA-ELIAS: propriocepção nas lesões escafossemilunares | classificação | cap. 13, p. 513 e 514 | mao / Instabilidade do carpo | 04 | mao-2037 | publicada |
-| 47 | Olécrano, MAYO: fratura com subluxação | classificação | cap. 20, p. 939 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
-| 48 | Ossificação heterotópica, HASTINGS e GRAHAM: perda parcial da pronossupinação | classificação | cap. 21, p. 967 | ombro-cotovelo / Ossificação heterotópica | 20 |  | a fazer |
+| 47 | Olécrano, MAYO: fratura com subluxação | classificação | cap. 20, p. 939 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | ombro-cotovelo-0665 | publicada |
+| 48 | Ossificação heterotópica, HASTINGS e GRAHAM: perda parcial da pronossupinação | classificação | cap. 21, p. 967 | ombro-cotovelo / Ossificação heterotópica | 20 | ombro-cotovelo-0666 | publicada |
 | 49 | Mediano com intrínsecos paralisados: postura do polegar | fato | cap. 31, p. 1192 | mao / Transferências tendinosas e paralisias | 11 | mao-2071 | publicada |
 | 50 | Paralisia obstétrica: segunda lesão mais comum | fato | cap. 40, p. 1562 e 1563 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2083 | publicada |
 | 51 | ASIA: grau pela função motora preservada | classificação | cap. 33, p. 1267 (Tabela 33.1) | mao / Transferências tendinosas e paralisias | 13 | mao-2077 | publicada |
@@ -362,8 +362,8 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 83 | Procedimento da imagem na ARUD | epônimo, figura | cap. 14, p. 586 e 587 | mao / Fibrocartilagem triangular e punho ulnar | 05 | mao-2040 | publicada |
 | 84 | Fratura-luxação radiocárpica: tipo de FERNANDEZ | classificação | cap. 15, p. 607 e 610 | mao / Fratura do rádio distal | 05 | mao-2043 | publicada |
 | 85 | Carpo sem o escafoide: osso mais fraturado | fato | cap. 16, p. 712 | mao / Fraturas do escafoide e do carpo | 06 | mao-2048 | publicada |
-| 86 | Incidência radiocapitelar: posição e inclinação | imagem | cap. 19 (página a achar) | ombro-cotovelo / Imagem do ombro e cotovelo | 20 |  | a fazer |
-| 87 | Epicondilite medial: origens mais acometidas | fato | cap. 25 (arquivo 24), p. 1026 | ombro-cotovelo / Epicondilite lateral e medial | 20 |  | a fazer |
+| 86 | Incidência radiocapitelar: posição e inclinação | imagem | cap. 19, p. 899 | ombro-cotovelo / Imagem do ombro e cotovelo | 20 | ombro-cotovelo-0667 | publicada |
+| 87 | Epicondilite medial: origens mais acometidas | fato | cap. 25, p. 1026 | ombro-cotovelo / Epicondilite lateral e medial | 20 | ombro-cotovelo-0668 | publicada |
 | 88 | Desfiladeiro torácico: compressão associada mais comum | fato | cap. 29, p. 1132 e 1133 | mao / Neuropatia ulnar e outras compressões | 11 | mao-2068 | publicada |
 | 89 | LITTLER para a garra ulnar: tendão | epônimo | cap. 31, p. 1214 | mao / Transferências tendinosas e paralisias | 12 | mao-2073 | publicada |
 | 90 | Grácil para o bíceps: nervo motor | anatomia | cap. 34, p. 1335 | mao / Plexo braquial e paralisia obstétrica | 13 | mao-2081 | publicada |
@@ -375,7 +375,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 96 | Lápis na xícara: qual artrite | imagem | cap. 55, p. 2040 e 2041 | mao / Mão reumatoide | 07 | mao-2053 | publicada |
 | 97 | Queimadura: grau em que aparecem bolhas | fato | cap. 57, p. 2122 e 2123 | mao / Queimaduras | 08 | mao-2055 | publicada |
 | 98 | Aneurisma na mão: artéria mais acometida | fato | cap. 60, p. 2240 e 2251 | mao / Outros temas da mão | 08 | mao-2056 | publicada |
-| 99 | Instabilidade rotatória posterolateral: estrutura principal | anatomia | cap. 22, p. 977 | ombro-cotovelo / Instabilidade do cotovelo | 20 |  | a fazer |
+| 99 | Instabilidade rotatória posterolateral: estrutura principal | anatomia | cap. 22, p. 977 | ombro-cotovelo / Instabilidade do cotovelo | 20 | ombro-cotovelo-0669 | publicada |
 | 100 | Incidência de BREWERTON: o que mostra | imagem | cap. 7, p. 261 | mao / Lesões ligamentares dos dedos | 02 | mao-2029 | publicada |
 
 Lotes: 01 (1, 69, 78, 80, 2) · 02 (43, 45, 100, 3, 16) · 03 (33, 66, 70, 71, 4) · 04 (5, 46, 82, 27, 6) · 05 (83, 34, 73, 84, 18) · 06 (7, 67, 68, 85, 30) · 07 (19, 35, 64, 65, 96) · 08 (23, 21, 97, 98, 59) · 09 (32, 44, 81, 24, 22) · 10 (95, 55, 74, 9, 42) · 11 (28, 88, 10, 36, 49) · 12 (62, 89, 17, 37, 39) · 13 (51, 60, 11, 31, 90) · 14 (14, 50, 61, 38, 79) · 15 (12, 13, 53, 72, 92) · 16 (20, 29, 52, 54, 76) · 17 (91, 93, 15, 40, 57) · 18 (56, 75, 94, 58, 41) · 19 (63, 77, 25, 26) · 20 (8, 47, 48, 86, 87, 99).
