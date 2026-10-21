@@ -130,6 +130,22 @@ section::before { content: ''; position: absolute; inset: 0; pointer-events: non
   color: var(--vinho2); font: 800 38px Jakarta; letter-spacing: -.01em; box-shadow: 0 14px 30px rgba(0,0,0,.4); }
 .chamada span { display: block; margin-top: 16px; font: 600 26px Inter; color: rgba(251,244,228,.85); }
 .chamada span u { text-decoration: none; color: var(--ouro); font-weight: 800; }
+
+/* ---------- Feed (1080 x 1350): o catálogo numa imagem só ---------- */
+section.feed { height: 1350px; }
+.feed .moldura { inset: 28px; }
+.feed .casa { top: 70px; font-size: 22px; } .feed .casa small { font-size: 17px; margin-top: 8px; }
+.feed .titulo3 { top: 158px; }
+.feed .titulo3 small { font-size: 19px; }
+.feed .titulo3 h1 { font-size: 64px; margin-top: 10px; }
+.feed .titulo3 p { margin-top: 12px; font-size: 26px; }
+.feed .duas { top: 452px; left: 70px; right: 70px; gap: 22px; }
+.feed .lote { padding: 26px 26px 24px; } .feed .lote h3 { font-size: 46px; } .feed .lote h4 { font-size: 23px; } .feed .lote p { font-size: 20px; margin-top: 8px; }
+.feed .extras { top: 728px; left: 70px; right: 70px; padding: 24px 28px; }
+.feed .extras h3 { font-size: 27px; } .feed .chips { margin-top: 16px; gap: 10px; } .feed .chips span { font-size: 23px; padding: 8px 16px; }
+.feed .vantagens { top: 960px; left: 70px; right: 70px; gap: 10px; } .feed .vantagens p { font-size: 25px; }
+.feed .chamada { top: 1068px; } .feed .chamada b { padding: 18px 40px; font-size: 34px; } .feed .chamada span { margin-top: 12px; font-size: 23px; }
+.feed .marca { bottom: 62px; font-size: 28px; } .feed .marca svg { width: 40px; height: 40px; }
 </style></head><body>
 
 <!-- ===================== Story 1: o lote ===================== -->
@@ -192,6 +208,31 @@ section::before { content: ''; position: absolute; inset: 0; pointer-events: non
   <div class="moldura"></div>
   <div class="casa">Catálogo da casa<small>Cirurgia da Mão</small></div>
   <div class="contador">3/3</div>
+  <div class="titulo3">
+    <small>Para entrar e para o título</small>
+    <h1>Cirurgia da Mão<br>no <em style="white-space:nowrap">Orto Questões</em></h1>
+    <p>Quem vai prestar a seleção para a residência e quem vai fazer o título treinam no mesmo lugar.</p>
+  </div>
+  <div class="duas">
+    <div class="lote"><div class="num">Lote do título</div><h3>SBCM</h3><h4>Título da Sociedade Brasileira de Cirurgia da Mão</h4><p>OrtoQuestões Simulados no padrão da prova.</p></div>
+    <div class="lote"><div class="num">Lote da seleção</div><h3>SIMÃO</h3><h4>A seleção para entrar na residência de Cirurgia da Mão</h4><p>OrtoQuestões Simulados no padrão da prova.</p></div>
+  </div>
+  <div class="extras">
+    <h3>E as provas de seleção para a residência, <em>com o nome real de cada uma</em>:</h3>
+    <div class="chips"><span>USP-SP</span><span>UFG</span><span>PUC-SP</span><span>ENARE</span><span>INTO</span><span>FMRP-USP</span><span>IAUPE</span><span>Einstein</span><span>UERJ</span></div>
+  </div>
+  <div class="vantagens">
+    <p><i data-certo></i>Comentário de cada alternativa, com o livro e a página</p>
+    <p><i data-certo></i>Treino por tema, revisão dos erros e cronograma até a prova</p>
+  </div>
+  <div class="chamada"><b>Treine grátis</b><span><u>ortoquestoes.com.br</u> · o caminho está no perfil</span></div>
+  <div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div>
+</section>
+
+<!-- ===================== Feed: Cirurgia da Mão numa imagem ===================== -->
+<section id="feed-1" class="feed">
+  <div class="moldura"></div>
+  <div class="casa">Catálogo da casa<small>Cirurgia da Mão</small></div>
   <div class="titulo3">
     <small>Para entrar e para o título</small>
     <h1>Cirurgia da Mão<br>no <em style="white-space:nowrap">Orto Questões</em></h1>

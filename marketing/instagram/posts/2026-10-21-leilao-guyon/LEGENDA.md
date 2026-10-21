@@ -27,3 +27,20 @@ Sem figurinha (nem enquete, nem link). Se quiser, o story 1 pode ir com a pergun
 - [x] Sem emoji, sem IA, sem preço, sem desenho de anatomia (as zonas vão em texto), site escrito
   na imagem e "o caminho está no perfil".
 - [x] O que importa entre 250 px e 1580 px de altura.
+
+## Feed (pedido do Tales, 21/10/2026): uma imagem só
+
+`png/feed-1.png` (1080 × 1350): o catálogo do story 3 em uma única imagem para o feed, com SBCM,
+SIMÃO, as provas de seleção com o nome real, o que o site tem e "Treine grátis".
+
+Legenda:
+
+> Cirurgia da Mão tem lugar próprio no Orto Questões.
+>
+> Para o título da SBCM e para a seleção do SIMÃO, OrtoQuestões Simulados no padrão de cada prova. Para as seleções de residência, as provas com o nome real: USP-SP, UFG, PUC-SP, ENARE, INTO, FMRP-USP, IAUPE, Einstein e UERJ.
+>
+> Cada alternativa comentada com o livro e a página, treino por tema, revisão dos erros e cronograma até a prova. Quem vai entrar e quem vai fazer o título treinam no mesmo lugar.
+>
+> Treine grátis: o caminho está no perfil.
+>
+> #cirurgiadamao #maoemicrocirurgia #residenciamedica #ortopedia #sbcm
