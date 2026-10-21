@@ -25190,20 +25190,23 @@
       "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
       "secoes": [
        "Tratamento cirúrgico: quando e como",
-       "Tratamento conservador: toro, galho verde, completa e gesso"
+       "Tratamento conservador: toro, galho verde, completa e gesso",
+       "Exame, nervos e imagem"
       ],
       "blocos": [
        "tratamento-cirurgico-quando-e-como-92091ec3",
        "tratamento-cirurgico-quando-e-como-bf30a4c4",
        "tratamento-cirurgico-quando-e-como-12c9f9ef",
-       "tratamento-conservador-toro-galho-verde-completa-32670de8"
+       "tratamento-conservador-toro-galho-verde-completa-32670de8",
+       "exame-nervos-e-imagem-b2b11252",
+       "exame-nervos-e-imagem-168b8922"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "83a65e4826809ca2ab69776f6ecb4b2af798f32dcbb5885ad41ec33b2630dce8"
+      "trechosSha256": "f7c75745f4cdf457961954f53c1979f7d65eaed62fa026a1187c646ef9634667"
      }
     ],
     "questaoSha256": "e15df129170d9d9aa3e59ff8328fd6661e20f147d44e88a47d78d4f801e34885",
-    "comentarioSha256": "2c5bb0525286b8f516a4971aac39a61d2ee5b66d1c2c1f16ac993d32efe5e123"
+    "comentarioSha256": "7c4482364b4efe89e7ec9048d9c587160c34e96cf84cfbc4b2c76110ebb920d3"
    }
   },
   "pediatria-0606": {
@@ -30341,14 +30344,15 @@
        "toro-galho-verde-completa-e-baioneta-o-periosteo-11988e3b",
        "toro-galho-verde-completa-e-baioneta-o-periosteo-16baa888",
        "toro-galho-verde-completa-e-baioneta-o-periosteo-2a8ed6c2",
-       "tratamento-conservador-toro-galho-verde-completa-984d73aa"
+       "tratamento-conservador-toro-galho-verde-completa-984d73aa",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-2ce3912b"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "8077de18262442985945e431bbe02e055bccbf71fcb9ea900e1cd193feeaf2e0"
+      "trechosSha256": "93db11ecdc8749238cf2c3fcba6427c86fec216c3ae2fb4549282387ffe80883"
      }
     ],
     "questaoSha256": "366348f49c560938414082c7ae2260dc7e631554abe322964b1c843385b3e382",
-    "comentarioSha256": "5e5c0e3f1e280489122ae5552b20320cebe7f5b606770beb2fa9635e69f79116"
+    "comentarioSha256": "06c781ec74963f99049da7bfe2cbd3b27da5e963010392403fa739bbcfa2f82d"
    }
   },
   "pediatria-0952": {
@@ -31255,20 +31259,24 @@
       "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
       "secoes": [
        "Toro, galho verde, completa e baioneta: o periósteo decide",
-       "O mecanismo e a regra da rotação"
+       "O mecanismo e a regra da rotação",
+       "Perda de redução e consolidação viciosa",
+       "Tratamento cirúrgico: quando e como"
       ],
       "blocos": [
        "toro-galho-verde-completa-e-baioneta-o-periosteo-2ce3912b",
        "toro-galho-verde-completa-e-baioneta-o-periosteo-c8bb6a6f",
        "toro-galho-verde-completa-e-baioneta-o-periosteo-11988e3b",
-       "o-mecanismo-e-a-regra-da-rotacao-07a94c6a"
+       "o-mecanismo-e-a-regra-da-rotacao-07a94c6a",
+       "perda-de-reducao-e-consolidacao-viciosa-17110572",
+       "tratamento-cirurgico-quando-e-como-bf30a4c4"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "585c4efd3192a44278ae512afd038bb85cc477af6cf5fc3419df7774ef765cd2"
+      "trechosSha256": "cc2ebcc94035b6f3a037749868780a1d22578f52ecbe544d54e736fbf838df10"
      }
     ],
     "questaoSha256": "a314c58e395d7ea235a808e91de13db3383afde48636f58947a80b608a8ab278",
-    "comentarioSha256": "a8645466ea2e8c5d0f8a9caf30e8e39a2876e6a0f69abef1fdf076a5d0a3b5a7"
+    "comentarioSha256": "b1045fad88db069e66d9cdfd1e59c96a78217aab649b0e6393178da8d58360c8"
    }
   },
   "pediatria-0974": {
@@ -31313,14 +31321,16 @@
       "blocos": [
        "tratamento-conservador-toro-galho-verde-completa-984d73aa",
        "toro-galho-verde-completa-e-baioneta-o-periosteo-2a8ed6c2",
-       "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812"
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-2ce3912b",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-c8bb6a6f"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "472b45ca4aba33137fb284a2dce6552fd6f65f407d5aeb7c109a69ea28af8a79"
+      "trechosSha256": "ca6c591e717f723f8240b987a513cd7626692e49c5ec11b3a40834a79243f349"
      }
     ],
     "questaoSha256": "33318d49dda7ac372aa963e5882fc8e8acb64c04503b773d948c284cd566f837",
-    "comentarioSha256": "7622f33527202e83ec5943004e86470f38d81a7adceba2dc2c6c75791a8f3ee6"
+    "comentarioSha256": "f47ed83a87389f35b5b4cc6e4d43ee0fdeef28da0870c885e76a83a1c6145463"
    }
   },
   "pediatria-0975": {
@@ -31412,19 +31422,22 @@
       "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
       "secoes": [
        "Tratamento conservador: toro, galho verde, completa e gesso",
-       "Perda de redução e consolidação viciosa"
+       "Perda de redução e consolidação viciosa",
+       "Tratamento cirúrgico: quando e como"
       ],
       "blocos": [
        "tratamento-conservador-toro-galho-verde-completa-47647c4c",
        "tratamento-conservador-toro-galho-verde-completa-0b5fde65",
-       "perda-de-reducao-e-consolidacao-viciosa-90affede"
+       "perda-de-reducao-e-consolidacao-viciosa-90affede",
+       "perda-de-reducao-e-consolidacao-viciosa-51bcce85",
+       "tratamento-cirurgico-quando-e-como-92091ec3"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "17ed071aadd488f45655e1555000d1d3e411cea6c934524366d97364a0941521"
+      "trechosSha256": "827877006b43fbfac913f9853174bd39461ce07305634778cac6b72f7eef3258"
      }
     ],
     "questaoSha256": "39010e6704783053c00ad1e91af49c3ed0e80ee49532a7e5f7ef2a1ec30f1910",
-    "comentarioSha256": "5c0c7ba35434d0811f2949983f0f9de571ba9d276331fb86e6164c54b9a04d5c"
+    "comentarioSha256": "01c4b6a73323ac4309aa9c8f48bdca6709a67c391f2996a0f137e54889e772d2"
    }
   },
   "pediatria-0977": {
@@ -31471,14 +31484,15 @@
        "remodelacao-e-o-que-se-aceita-d257722a",
        "remodelacao-e-o-que-se-aceita-7f295cc7",
        "remodelacao-e-o-que-se-aceita-707ea452",
-       "tratamento-cirurgico-quando-e-como-12c9f9ef"
+       "tratamento-cirurgico-quando-e-como-12c9f9ef",
+       "remodelacao-e-o-que-se-aceita-f319a7d0"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "7529af5398e8d8af38ec07bf8dcf1fb6693ca5dcb3c75883201703d3c9e2feaf"
+      "trechosSha256": "e83532d859319a58cd9c6c5745c474783b4861ea0cdb9cd6411acf408ba96334"
      }
     ],
     "questaoSha256": "868cb605a5856b737322b18ec6dac34133386673e4fe8146bf45e15b1c321171",
-    "comentarioSha256": "94483bdff62b74786f2ee7242eec15c06520eae72faf0ea016f42d6db6f85837"
+    "comentarioSha256": "021d4fff468594c16fd9cc4c7f99af836d6d67b40e77f1d5b3fab11b5b4f50fa"
    }
   },
   "pediatria-0978": {
@@ -31524,14 +31538,15 @@
       "blocos": [
        "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812",
        "perda-de-reducao-e-consolidacao-viciosa-406e8a1a",
-       "remodelacao-e-o-que-se-aceita-96930aef"
+       "remodelacao-e-o-que-se-aceita-96930aef",
+       "remodelacao-e-o-que-se-aceita-91d8ddd3"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "b3dd419b622815e1a3ee1dcff93d63d6aceef8016d49a2474f6de2714b6fce7e"
+      "trechosSha256": "83a5db7b224783b2ee2fbc8d4f55b783f87eccf27c2ae0bb9097d4b1c7392738"
      }
     ],
     "questaoSha256": "014c7e255d275fe996d77a40b4d9bcc5bca2972446580b742c49ed9ab0c32e24",
-    "comentarioSha256": "372e0fb7da3a180fa930f4d6cdc5969fd24c990fe2d89c76d0f8a01a41ac81ce"
+    "comentarioSha256": "4cd213f6a731c7377dabc50e2612a9bb88f973059bf97ebd0f3a4accf14d88b3"
    }
   },
   "pediatria-0979": {
@@ -31584,7 +31599,7 @@
      }
     ],
     "questaoSha256": "6865890de39aa0fec7a4921c0ef52d6b73c354d4c18d867b28464c1fd2f2b67e",
-    "comentarioSha256": "dfd1478559581cb4e9eb5e614fc3972806925001816e6ce0dcad273184bb5b7d"
+    "comentarioSha256": "6b4e47d218bcfd5d1ed2205e5f5bcef4a77d600195ccc843410c38f1d1102251"
    }
   },
   "pediatria-0980": {
@@ -31622,19 +31637,22 @@
       "edicao": "9ª edição (2020)",
       "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
       "secoes": [
-       "O Galeazzi da criança"
+       "O Galeazzi da criança",
+       "Fise: a redução tardia e a parada do crescimento"
       ],
       "blocos": [
        "o-galeazzi-da-crianca-0f8de8b6",
        "o-galeazzi-da-crianca-e451cffa",
-       "o-galeazzi-da-crianca-9385ee8d"
+       "o-galeazzi-da-crianca-9385ee8d",
+       "o-galeazzi-da-crianca-c6b60932",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-85174728"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "26761e249c355e04292d73219d563f0082b1c10ad1cccef6d7390a2321001a31"
+      "trechosSha256": "9b25517be83f864e7f3ab1a0668354109b50a073981e0032de49af21a43d0155"
      }
     ],
     "questaoSha256": "5470c5d28e49df2e4881017c8f8349633207ff6ee97d34c666f036a64af655bc",
-    "comentarioSha256": "b1c91dd7ff8b74da699339b3612ed43f044e6c530af57ba86d83be467be1366d"
+    "comentarioSha256": "7c432ad2cd2a94095b4c284ca6183a6c1356a6424e516b7bde499f8b91cdff14"
    }
   },
   "pediatria-0981": {
@@ -31680,20 +31698,22 @@
       "edicao": "9ª edição (2020)",
       "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
       "secoes": [
-       "Tratamento cirúrgico: quando e como"
+       "Tratamento cirúrgico: quando e como",
+       "Exame, nervos e imagem"
       ],
       "blocos": [
        "tratamento-cirurgico-quando-e-como-92091ec3",
        "tratamento-cirurgico-quando-e-como-bf30a4c4",
        "tratamento-cirurgico-quando-e-como-d9e0edcd",
-       "tratamento-cirurgico-quando-e-como-f282f618"
+       "tratamento-cirurgico-quando-e-como-f282f618",
+       "exame-nervos-e-imagem-168b8922"
       ],
       "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
-      "trechosSha256": "3fb731ce4c93cb9bb88d89f5b108bd5eec2839b86747e5012a687f78677a1948"
+      "trechosSha256": "a8df4e9b48eae133f07d798f992e0590ebacedb454e7c83440ea6677e4ba6a1d"
      }
     ],
     "questaoSha256": "2e7ffe3de0c550b693a7553957a1efa231838f9bc2050ef1a522fc08c12de32d",
-    "comentarioSha256": "5429c78a73f1a9252894ed203040f7cc0fbb6a442b33d108461c8182a8621bb4"
+    "comentarioSha256": "f10259c757552f90b5ab520c88ff7505fcfbd08a7eda595e2ea18709576a305d"
    }
   },
   "pediatria-0982": {
