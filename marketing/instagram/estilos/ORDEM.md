@@ -25,9 +25,9 @@ Ordem atual:
 | 4. GPS do nervo | 4. Planta de engenharia |
 | 5. Caderneta de topografia | 5. Exame de DNA |
 | 6. Museu | 6. Bingo da prova |
-| 7. VAR da questão | 7. Radar premium |
-| 8. Laboratório de patologia | 8. Cupom fiscal (versão questão primeiro) |
-| 9. Jogo de cartas | |
+| 7. VAR da questão | 7. Leilão (usado em 21/10/2026; ainda sem modelo aprovado) |
+| 8. Laboratório de patologia | 8. Radar premium |
+| 9. Jogo de cartas | 9. Cupom fiscal (versão questão primeiro) |
 | 10. Embarque | |
 | 11. Ache os 3 erros | |
 | 12. Linhas do metrô | |
