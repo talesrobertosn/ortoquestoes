@@ -1013,18 +1013,46 @@
   "conferido": false
  },
  "trauma-0062": {
+  "conceito": "**O fragmento distal desce, desloca-se para anterior e medial e roda para anterior.** A clavícula sustenta a escápula afastada do tórax; quando essa ligação se interrompe, o segmento lateral acompanha a cintura escapular e o braço. A deformidade resulta da combinação entre gravidade e forças musculares, não de um deslocamento aleatório de dois pedaços de osso.\n\nO esternocleidomastóideo puxa o fragmento medial para cima. Já o peso do braço e o deltoide contribuem para a descida do distal; o peitoral maior o traciona medialmente. O conjunto distal fica encurtado e anteriorizado, com protração da escápula e aspecto de ombro caído. Assim, “medial sobe” e “lateral desce” são informações complementares, que não devem ser trocadas.\n\n| Componente | Desvio explicado pelo resumo |\n|---|---|\n| Fragmento medial | Superior, pela ação do esternocleidomastóideo |\n| Fragmento distal | Inferior, anterior e medial; rotação anterior |\n| Escápula/ombro | Acompanha o distal, com protração e queda |\n\nEssa deformidade ajuda a entender sintomas posteriores de consolidação viciosa, mas não transforma toda alteração de comprimento em indicação automática de cirurgia. A decisão considera pele, lesões associadas, grau de desvio, demanda e riscos. Na avaliação aguda, pele empalidecida sobre a ponta medial merece atenção especial: ameaça cutânea pode exigir intervenção antes de a fratura se tornar exposta.\n\n**Leia “A deformidade típica”, na Biblioteca.** Atribua a cada força seu fragmento antes de julgar a direção das alternativas.",
+  "correta": "**A: anterior, inferior e medial, com rotação anterior.** É o mapa do fragmento distal apresentado. A associação à escápula explica por que o ombro fica curto, baixo e protraído, em vez de apenas haver uma saliência localizada sobre a clavícula.",
   "incorretas": {
-   "B": "O fragmento distal vai para a frente e para dentro, não para trás e para fora.",
-   "C": "Quem sobe é o fragmento medial, puxado pelo esternocleidomastóideo.",
-   "D": "O desvio posterior e superior descreve o fragmento medial."
+   "B": "**A descida está correta, mas posterior/lateral e rotação posterior invertem o restante.** O braço pesa para baixo; peitoral e posição da cintura puxam o conjunto para medial e anterior. Uma direção correta não torna o par de translação e rotação compatível com o padrão descrito.",
+   "C": "**A anteriorização pertence ao padrão, mas elevação, lateralização e rotação posterior não.** O fragmento que sobe pelo esternocleidomastóideo é o medial. O distal acompanha o peso do braço e não deve receber, por confusão de nomes, a força do segmento oposto.",
+   "D": "**Medialização e rotação anterior são verdadeiras, porém a translação superior/posterior não.** O desvio do distal inclui inferior e anterior. Julgar separadamente os eixos evita aceitar a combinação apenas porque duas palavras correspondem ao que foi memorizado."
   },
-  "conceito": "Na fratura do **terço médio da clavícula**, os fragmentos se separam em direções opostas:\n\n**fragmento medial**: o **esternocleidomastóideo** o puxa para **cima** e para trás;\n\n**fragmento distal** (lateral): o **peso do membro** o puxa para **baixo**; o **peitoral maior** e o latíssimo do dorso o levam para **medial** e para a frente. O resultado é uma translação **anterior, inferior e medial**, com **rotação anterior**.\n\n**O que se vê**: o ombro **cai** e vai para a frente; a clavícula **encurta**.\n\n**As indicações relativas de cirurgia**:\n\n**encurtamento** maior que 1,5 a 2 cm;\n\n**desvio** maior que 100% (sem contato entre os fragmentos);\n\n**cominução** com fragmento em Z;\n\n**pele em risco**, ombro flutuante, politrauma.\n\n**As opções**: placa **superior** ou **anteroinferior**, ou haste intramedular.\n\n**Robinson** classifica a clavícula em três regiões: tipo 1 medial, tipo 2 diafisária (a mais comum) e tipo 3 lateral.\n\n**Na prova**: o fragmento distal sofre translação **anterior, inferior e medial**, com **rotação anterior**.",
-  "correta": "O peso do membro e o peitoral levam o fragmento distal para baixo, para dentro e para a frente, com rotação anterior.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 33"
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Mecanismo e deformidade: para onde vai cada fragmento; Consolidação viciosa e escápula alada."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Mecanismo e deformidade: para onde vai cada fragmento",
+      "Consolidação viciosa e escápula alada"
+     ],
+     "blocos": [
+      "mecanismo-e-deformidade-para-onde-vai-cada-fragm-e5c9da0e",
+      "mecanismo-e-deformidade-para-onde-vai-cada-fragm-bcfb6dd9",
+      "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
+      "mecanismo-e-deformidade-para-onde-vai-cada-fragm-05e0589a",
+      "consolidacao-viciosa-e-escapula-alada-4ff46e30"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "3090740cd407f2eba741f8801ba76f494e13cdda95626b4e1503a58cc9b9e927"
+    }
+   ],
+   "questaoSha256": "8557cbe69ae5920c4896c24ab47f002ad145d92cff6459e228e009477ac4cbfb",
+   "comentarioSha256": "5ad835fc5589ad6939e8770440e79e4ec3619e856d5ab48def2ca845526b6e5c"
+  }
  },
  "trauma-0063": {
   "conceito": "**Os estabilizadores da articulação acromioclavicular.** A clavícula se mantém presa à escápula por dois sistemas:\n- os **ligamentos acromioclaviculares**, especialmente o superior e o posterior, que controlam a estabilidade **horizontal** (anteroposterior);\n- os **ligamentos coracoclaviculares**, o **conoide** (medial) e o **trapezoide** (lateral), que controlam a estabilidade **vertical** e impedem a clavícula de subir.\n\n**O espaço coracoclavicular.** Na radiografia em AP (ou na incidência de Zanca, com o feixe inclinado 10 a 15° em sentido cefálico), mede-se a distância entre a **borda superior do processo coracoide** e a **borda inferior da clavícula**. O valor normal é de **11 a 13 mm**. Como há variação individual, a comparação com o **lado oposto** é essencial: diferença de mais de 4 a 5 mm, ou aumento de 25% ou mais, sugere lesão dos ligamentos coracoclaviculares.\n\n**A classificação de Rockwood usa esse aumento.**\n\n| Tipo | Lesão | Espaço coracoclavicular |\n|---|---|---|\n| I | Entorse dos ligamentos AC | Normal |\n| II | Ruptura AC, CC íntegros | Normal ou levemente aumentado |\n| III | Ruptura AC e CC | **Aumento de 25 a 100%** |\n| IV | Clavícula posterior, através do trapézio | Variável (ver no perfil axilar) |\n| V | Ruptura grave com lesão da fáscia deltotrapezial | **Aumento de 100 a 300%** |\n| VI | Clavícula inferior, sob o coracoide | Diminuído |\n\n**Conduta resumida.** Tipos I e II: tratamento não cirúrgico. Tipo III: controverso, com tendência a conservador e cirurgia para casos selecionados (trabalhadores braçais, atletas de arremesso, falha do conservador). Tipos IV, V e VI: cirúrgicos.",
@@ -1362,18 +1390,46 @@
   "conferido": false
  },
  "trauma-0085": {
-  "conceito": "**Por que os fragmentos se separam.** A clavícula é a única ligação óssea entre o membro superior e o tronco. Quando sua diáfise fratura (geralmente no **terço médio**, a parte mais fina e onde a curvatura muda de direção), cada fragmento passa a ser puxado pelas forças que atuam sobre ele, sem oposição.\n\n**O fragmento medial.** Fica preso ao esterno pela articulação esternoclavicular e recebe o **esternocleidomastóideo**, que o puxa para **cima** (e um pouco para trás).\n\n**O fragmento lateral.** Fica preso à escápula pelos ligamentos acromioclaviculares e coracoclaviculares, e por isso acompanha o membro superior:\n- o **peso do braço** o puxa para **baixo**: **translação inferior**;\n- o **peitoral maior** e o **grande dorsal**, que puxam o úmero para medial e para a frente, aproximam o ombro da linha média: **encurtamento** e desvio medial;\n- a escápula roda e leva o fragmento junto, numa **rotação anterior** (o ombro cai e vai para a frente).\n\n**O aspecto clínico.** O ombro fica **caído, anteriorizado e medializado**; o fragmento medial faz saliência sob a pele, que pode até ficar ameaçada. O paciente segura o braço junto ao corpo.\n\n**Por que isso importa.**\n- O **encurtamento** maior que 1,5 a 2 cm e o desvio completo (sem contato entre fragmentos) aumentam o risco de **pseudartrose** e de queixas funcionais, e são indicações relativas de fixação.\n- A redução fechada não se mantém, porque as forças musculares e o peso do braço voltam a desviar os fragmentos assim que o paciente se mexe. Por isso o tratamento é tipoia (não cirúrgico) ou fixação com placa ou haste.",
-  "correta": "**Correta: C (translação inferior e rotação anterior).** O peso do membro superior puxa o fragmento lateral para baixo, e a ação do peitoral maior e a rotação da escápula levam-no para a frente, em rotação anterior.",
+  "conceito": "**O fragmento lateral sofre translação inferior e rotação anterior.** A fratura remove a continuidade da clavícula que funciona como esteio da cintura escapular. O segmento lateral continua relacionado à escápula e ao braço, que pesam para baixo; o medial sofre tração superior do esternocleidomastóideo.\n\nTranslação e rotação são movimentos diferentes. O distal não apenas cai: ele também vai para frente e para medial, com encurtamento e protração da escápula. Por isso, recuperar só um comprimento medido na radiografia não descreve toda a correção de uma deformidade tridimensional.\n\nClinicamente, o ombro pode ficar baixo e a ponta inferior da escápula discretamente saliente. Na consolidação viciosa sintomática, o mau posicionamento pode contribuir para fraqueza, fadiga e dor periescapular. A presença radiográfica de deformidade, isoladamente, não exige cirurgia; é preciso relacioná-la aos sintomas e à função.\n\n**Leia “Mecanismo e deformidade” e o trecho de consolidação viciosa, na Biblioteca.** Diferencie o movimento do fragmento lateral do medial e a imagem do resultado funcional.",
+  "correta": "**C: translação inferior e rotação anterior.** A gravidade contribui para a descida do conjunto lateral, enquanto a orientação escapular explica sua rotação para frente. Não é o fragmento lateral que sobe pela tração do esternocleidomastóideo.",
   "incorretas": {
-   "A": "A **translação inferior** está certa, mas a rotação é **anterior**, porque o ombro cai e vai para a frente.",
-   "B": "Quem sobe é o fragmento **medial**, puxado pelo esternocleidomastóideo; o lateral desce.",
-   "D": "A **translação superior** é do fragmento medial; o lateral é puxado para baixo pelo peso do braço."
+   "A": "**Acerta a queda e inverte a rotação.** O resumo descreve rotação anterior com protração escapular, não posterior. A posição final do ombro oferece uma maneira clínica de conferir esse segundo componente.",
+   "B": "**Troca tanto translação como rotação.** Superior é o sentido do segmento medial tracionado pelo esternocleidomastóideo; posterior também contraria a orientação anterior do distal. A alternativa aplica ao fragmento errado uma parte das forças da fratura.",
+   "D": "**Mantém a rotação anterior e erra a translação superior.** O fragmento distal acompanha o braço para baixo. Separar os dois movimentos é o que permite reconhecer uma alternativa com metade verdadeira."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da clavícula"
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Mecanismo e deformidade: para onde vai cada fragmento; Consolidação viciosa e escápula alada."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Mecanismo e deformidade: para onde vai cada fragmento",
+      "Consolidação viciosa e escápula alada"
+     ],
+     "blocos": [
+      "mecanismo-e-deformidade-para-onde-vai-cada-fragm-e5c9da0e",
+      "mecanismo-e-deformidade-para-onde-vai-cada-fragm-bcfb6dd9",
+      "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
+      "consolidacao-viciosa-e-escapula-alada-71be14be",
+      "consolidacao-viciosa-e-escapula-alada-4ff46e30"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "93a2c779b29eaf7f0009b39d6330e9fa23027864baf85564bc3afbff21633fd3"
+    }
+   ],
+   "questaoSha256": "013b836ba7cae667eddd7c6a373cb9e7d2f22d19054a280d70fc37ea535d5cb3",
+   "comentarioSha256": "fa6c4eff81483ba4bd79387ceb88e2484795344407cd2522b054d13dc9854a8e"
+  }
  },
  "trauma-0086": {
   "conceito": "A **sinostose radioulnar** pós-traumática é a ponte óssea que se forma entre o rádio e a ulna e abole a pronossupinação, a complicação mais temida das fraturas do antebraço, porque nenhuma reabilitação a resolve e a ressecção cirúrgica tem taxa alta de recidiva.\n\nA sua incidência global é baixa, em torno de 2% a 6%, mas concentra-se de forma muito clara em um perfil, e os fatores de risco são cumulativos: fratura dos dois ossos no mesmo nível, localização no **terço proximal**, trauma de alta energia, fratura exposta, traumatismo craniencefálico associado, retardo cirúrgico, enxerto ósseo colocado próximo à membrana interóssea e, sobretudo, a **incisão única** para abordar os dois ossos.\n\nA explicação anatômica é direta. No terço proximal o rádio e a ulna estão mais próximos um do outro, o espaço interósseo é mais estreito e a musculatura que os separa é mais fina; além disso, é ali que fica o supinador, cuja desinserção expõe a superfície óssea. Uma incisão única obriga a dissecar através do **espaço interósseo** para alcançar os dois ossos, viola a membrana interóssea, cria um hematoma **contínuo** entre eles e semeia detritos ósseos e periósteo no caminho, todos os ingredientes da ponte.\n\nA prevenção é técnica e simples de enunciar:\n- **Duas** incisões separadas, uma para cada osso, com o máximo de músculo interposto entre elas\n- Não abrir a membrana interóssea\n- Lavar abundantemente os detritos ósseos ao final\n- Evitar colocar enxerto no espaço interósseo\n- Mobilizar precocemente\n\nNos pacientes de alto risco (sobretudo os com trauma craniencefálico) cogita-se profilaxia com indometacina ou radioterapia, à semelhança do que se faz para a ossificação heterotópica do quadril. Quando a sinostose já está formada, a ressecção só deve ser feita com a ponte madura, e é seguida de mobilização imediata e de alguma medida de interposição ou profilaxia.",
@@ -2245,19 +2301,45 @@
   "conferido": false
  },
  "trauma-0132": {
-  "conceito": "**A classificação de Robinson (Edimburgo).** Divide a clavícula em três regiões e, em cada uma, considera o **desvio** e o envolvimento **articular** ou a **cominuição**.\n- **Tipo 1**: terço **medial**.\n- **Tipo 2**: **diáfise** (o mais comum, cerca de 70 a 80%).\n- **Tipo 3**: terço **lateral**.\n\n**O terço lateral (tipo 3).**\n\n| Robinson | Desvio | Articulação |\n|---|---|---|\n| 3A1 | **Sem desvio** | Extra-articular |\n| **3A2** | **Sem desvio** | **Intra-articular** (acromioclavicular) |\n| 3B1 | Desviada | Extra-articular |\n| 3B2 | Desviada | Intra-articular |\n\n**A correspondência com Neer e Craig.** As classificações de **Neer** (modificada por **Craig**) para a clavícula distal se baseiam na relação do traço com os **ligamentos coracoclaviculares** e com a **articulação acromioclavicular**:\n- **Tipo I**: traço **lateral** aos ligamentos coracoclaviculares, com os ligamentos íntegros; estável.\n- **Tipo II**: traço que deixa o fragmento medial **sem a fixação** dos ligamentos coracoclaviculares; **instável**, alta taxa de pseudartrose.\n- **Tipo III**: traço que **entra na articulação acromioclavicular**, com ligamentos íntegros; pode evoluir para **artrose acromioclavicular**.\n- Craig acrescentou outros tipos (IV, fratura fisária com tubo periosteal na criança; V, cominutiva).\n\n**A fratura 3A2.** Lateral, **sem desvio** e **intra-articular** na acromioclavicular: corresponde ao **tipo III de Neer**.\n\n**Conduta.** O tipo III geralmente é tratado sem cirurgia, com tipoia; a artrose acromioclavicular dolorosa que pode surgir depois é tratada com ressecção da clavícula distal.",
-  "correta": "**Correta: C (III de Neer).** A fratura 3A2 de Robinson é do terço lateral, **sem desvio** e **intra-articular** na acromioclavicular, o que corresponde ao **tipo III de Neer**.",
+  "conceito": "**Robinson 3A2 é uma fratura distal sem desvio e intra-articular, correspondente ao Neer III.** A leitura do código precisa seguir a classificação nomeada. Em Robinson, 1 é medial, 2 é terço médio e 3 é distal; na tradição de Allman, a ordem é outra.\n\nDentro do segmento distal, o grupo A mantém alinhamento cortical. O subtipo 3A1 é extra-articular; o 3A2 alcança a articulação acromioclavicular. O grupo B é desviado, com 3B1 extra-articular e 3B2 intra-articular. Essa organização permite compreender o código sem transportar o número isolado de um sistema para outro.\n\nNa classificação de Neer, o tipo I é estável, com coracoclaviculares íntegros; o II é o padrão instável em que o fragmento medial perde sua contenção ligamentar; o III tem extensão articular. Assim, “tipo III” não significa luxação acromioclavicular: o diagnóstico continua sendo fratura, agora envolvendo a superfície da articulação.\n\n**Leia a tabela de correspondência de Robinson, na Biblioteca.** Primeiro decodifique região, desvio e extensão articular; só depois faça a equivalência entre nomes.",
+  "correta": "**C: Neer III.** O componente decisivo é a extensão para a articulação acromioclavicular, combinada ao alinhamento preservado de 3A2. O Neer I corresponde ao 3A1, que não é articular.",
   "incorretas": {
-   "A": "O **tipo I de Neer** é extra-articular, lateral aos ligamentos coracoclaviculares, equivalente ao **3A1** sem desvio.",
-   "B": "O **tipo II** (Neer/Craig) é a fratura com fragmento medial **desviado**, sem a fixação dos ligamentos coracoclaviculares, mais próxima do grupo **3B**.",
-   "D": "O **tipo IV de Craig** é a fratura fisária da criança, com o osso saindo do tubo periosteal, o que não corresponde ao 3A2."
+   "A": "**Neer I corresponde ao distal estável extra-articular, 3A1.** A alternativa preserva a estabilidade, mas elimina a extensão articular que distingue 3A2. Não basta reconhecer que ambos podem ter pouco desvio.",
+   "B": "**Craig II se relaciona, na tabela, ao distal desviado extra-articular de Robinson 3B1.** A opção troca simultaneamente o grupo de alinhamento e a relação com a articulação. O código 3A2 não pode ser convertido olhando apenas o número 2 final.",
+   "D": "**Craig IV também aparece na correspondência com 3B1.** É diferente do 3A2 sem desvio e intra-articular. A classificação precisa ser comparada como um conjunto de critérios, não por semelhança de algarismos."
   },
   "referencias": [
-   "Robinson CM. Fractures of the clavicle in the adult. Epidemiology and classification. J Bone Joint Surg Br. 1998;80(3):476-484.",
-   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da clavícula"
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Classificações: Allman, Neer, Craig, Robinson e AO."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Classificações: Allman, Neer, Craig, Robinson e AO"
+     ],
+     "blocos": [
+      "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3",
+      "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
+      "classificacoes-allman-neer-craig-robinson-e-ao-efd6c6e8",
+      "classificacoes-allman-neer-craig-robinson-e-ao-6ba1d129",
+      "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "d68bf79449b4da86b2c29c7a52656d4d36997c1d2331fef464614a55291bf22f"
+    }
+   ],
+   "questaoSha256": "4d737cf40d1289e797242e4d201f7d1220c91ad12cd569e51c8c0655023ee230",
+   "comentarioSha256": "f382bbec375ea996e0b0acbde51982bb1868daecec6876a4d7121f8f9fb3a8f5"
+  }
  },
  "trauma-0133": {
   "conceito": "### Linhas do AP da bacia\n| Linha | Estrutura |\n|---|---|\n| iliopectínea | coluna anterior |\n| ilioisquiática | coluna posterior |\n| lágrima de Köhler | ramo lateral: fossa acetabular; ramo medial: **superfície quadrilátera** |\n| teto | domo de carga |\n| rebordo anterior e posterior | paredes |\n\n### A relação lágrima–ilioisquiática\n- No quadril normal, a lágrima e a linha ilioisquiática correm lado a lado, quase sobrepostas.\n- Quando se **separam**, uma delas se deslocou.\n- A dissociação indica que a ==superfície quadrilátera== migrou medialmente: marca da fratura dessa parede (e da protrusão central).\n\n### Assinatura de outras fraturas\n- **Parede posterior:** fragmento sobre a cabeça, melhor no oblíquo obturador (Judet).\n- **Transversa:** interrompe as linhas iliopectínea e ilioisquiática no mesmo nível; transtectal, justatectal ou infratectal conforme cruza o teto.\n- **Dupla coluna:** sinal do esporão no oblíquo obturador.\n\n> **Na prova:** lágrima dissociada da linha ilioisquiática = fratura da ==superfície quadrilátera==.",
@@ -2596,15 +2678,42 @@
   "conferido": false
  },
  "trauma-0156": {
+  "conceito": "**O ombro flutuante clássico combina fratura da clavícula com fratura do colo da escápula do mesmo lado.** O conjunto interrompe a sustentação que relaciona a cintura escapular ao tronco. A alternativa A usa o termo amplo “escápula”; o detalhe anatômico a aprender é o colo, na definição clássica do resumo.\n\nA dupla lesão pode deixar a glenoide mal posicionada, mas não significa que todo caso exija duas fixações. Quando se escolhe operar, os autores propõem restaurar primeiro a clavícula e refazer a imagem. A redução anatômica desse esteio pode reduzir indiretamente e estabilizar a glenoide; se a posição ainda for inadequada, considera-se fixar também o colo.\n\n| Etapa do raciocínio | Finalidade |\n|---|---|\n| Reconhecer clavícula e colo escapular associados | Identificar a dupla lesão clássica |\n| Fixar a clavícula primeiro, quando indicado | Restabelecer a sustentação e avaliar redução indireta |\n| Reavaliar a glenoide | Decidir se a segunda fixação é necessária |\n\nA construção clavicular precisa suportar maior demanda nesse cenário, e houve falhas de fixação isolada descritas. Portanto, nem “sempre fixar as duas” nem “a clavícula sempre basta” é uma regra segura. Exame, desvio e resultado da primeira correção orientam a sequência.\n\n**Leia “Ombro flutuante”, na Biblioteca.** Relacione definição anatômica e estratégia de tratamento, sem confundir participação de um ligamento no complexo com a associação clássica de fraturas.",
+  "correta": "**A: fratura da escápula, especificamente do colo na definição clássica.** Essa associação com a clavícula interrompe a sustentação do complexo suspensório. A resposta não implica que toda fratura escapular em qualquer localização produza o mesmo padrão.",
   "incorretas": {
-   "B": "A fratura do úmero proximal não faz parte do anel suspensório.",
-   "C": "A ruptura coracoclavicular combina com a clavícula distal, não define o ombro flutuante clássico.",
-   "D": "A ruptura acromioclavicular é um equivalente ligamentar, não a definição clássica."
+   "B": "**A fratura do úmero proximal pode coexistir no trauma, mas não forma a definição clássica apresentada.** O úmero não substitui o colo escapular no par clavícula/escápula que sustenta a glenoide. A gravidade de uma lesão associada não a torna equivalente à associação nomeada.",
+   "C": "**Os coracoclaviculares participam da sustentação, porém sua ruptura isolada não é o segundo componente da definição clássica desta pergunta.** O resumo pede a associação de clavícula e colo escapular. Uma lesão ligamentar pode modificar estabilidade, mas precisa ser distinguida dessa dupla fratura.",
+   "D": "**Lesão acromioclavicular também pode afetar o complexo, mas não substitui a fratura do colo na definição solicitada.** A palavra “flutuante” não é usada aqui como rótulo para qualquer lesão dupla possível. A anatomia específica do par é decisiva."
   },
-  "conceito": "O **ombro flutuante** é a fratura da **diáfise da clavícula** associada à fratura da **escápula**, classicamente do **colo** da escápula.\n\n**Por que flutua**: o **complexo suspensório superior** do ombro é um anel sustentado pela **clavícula**, na frente, e pelo **corpo da escápula**, atrás. Com as duas fraturas, o segmento da **glenoide** fica **solto** do tronco: o ombro \"flutua\".\n\n**A tendência do desvio**: sem o apoio da clavícula, o peso do braço e os músculos puxam a glenoide para **baixo** e para **medial**.\n\n**O equivalente ligamentar**: a fratura do colo da escápula com ruptura dos ligamentos **coracoclaviculares** e **acromioclaviculares** também deixa a glenoide solta, mas não é a definição clássica.\n\n**O tratamento**: com pouco desvio, conservador. Com medialização da glenoide maior que 1 a 2 cm ou angulação importante, fixar a **clavícula**, o que muitas vezes já alinha a escápula, e fixar a escápula se o desvio persistir.\n\n**Na prova**: o ombro flutuante é a fratura da diáfise da clavícula com **fratura da escápula**.",
-  "correta": "A fratura da clavícula com a do colo da escápula deixa a glenoide solta do tronco: o ombro flutuante.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Ombro flutuante, costelas e terço medial."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Ombro flutuante, costelas e terço medial"
+     ],
+     "blocos": [
+      "ombro-flutuante-costelas-e-terco-medial-b753c523",
+      "ombro-flutuante-costelas-e-terco-medial-68b9dd2b"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "f5f26692f2a47a8dd51cd407d04ae7810e871e55bb54ea7d5750a53264ce26c3"
+    }
+   ],
+   "questaoSha256": "4651540ee3087b95ca899c9cd9821559194ec124aa0b77b171eda647d7630eea",
+   "comentarioSha256": "086746ee2caa283d9d1bb3276ce81dec4bc700cbaf7642c1e7ab4b32929a32df"
+  }
  },
  "trauma-0157": {
   "conceito": "**A instabilidade longitudinal muda o significado da fratura da cabeça radial.** A cabeça é um apoio proximal do rádio. Quando membrana interóssea e radioulnar distal também estão comprometidas, como em Essex-Lopresti, o rádio pode migrar proximalmente. Retirar a cabeça sem repor sua função tira uma contenção justamente quando as demais falharam.\n\nMason III descreve cominuição de toda a cabeça. Na lesão cominutiva **irreparável**, o resumo favorece prótese, especialmente pela alta frequência de lesões associadas. Porém, a classificação III isoladamente não prova que qualquer reconstrução seja impossível. Jovem, bom osso e poucos fragmentos podem favorecer fixação se for possível obter redução anatômica e estabilidade.\n\nO gabarito B corresponde à escolha de **artroplastia com implante** para o padrão cominutivo e longitudinalmente instável apresentado. Essa escolha preserva um apoio que a ressecção eliminaria. A decisão técnica ainda deve considerar a reconstruibilidade, e o tratamento não se encerra na prótese: as lesões distais e da membrana também precisam de avaliação e estabilização apropriadas.\n\nNa operação, uma fixação precária não é uma solução intermediária satisfatória. O resumo orienta ter prótese disponível ao planejar reconstrução, porque a cominuição pode ser maior que a imagem sugere; se não há redução anatômica com fixação estável, a cabeça é substituída.\n\n**Na Biblioteca, leia “Com cirurgia: retirar, fixar ou trocar” e “Lesão de Essex-Lopresti”.** Juntas, as seções mostram por que a escolha depende tanto da possibilidade de reconstruir como da função da cabeça no antebraço instável.",
@@ -4054,15 +4163,44 @@
   "conferido": false
  },
  "trauma-0259": {
+  "conceito": "**Nas fraturas desviadas do terço médio do adulto, a fixação com placa reduz a pseudartrose global e a sintomática.** O resultado mais consistente dos ensaios é a melhora da consolidação. Isso não equivale a demonstrar que todo paciente termina com função melhor se for operado.\n\nO resumo descreve ensaios com diferenças importantes de pseudartrose: no Clavicle Trial, 11% com tipoia contra 1% com placa em nove meses; no estudo de Woltz, 23% contra 2%. São resultados de estudos distintos, com seguimento e populações próprios, e não números a fundir numa taxa universal. Eles sustentam a direção do efeito.\n\n**Global e sintomática respondem a perguntas diferentes.** A primeira conta todas as falhas de consolidação; a segunda considera aquelas que causam sintomas clinicamente relevantes. Uma pseudartrose radiográfica pouco sintomática não tem o mesmo impacto de dor e incapacidade que levam à reconstrução. A cirurgia reduz os dois desfechos, mas pode trazer saliência do material, complicações e nova operação para retirada.\n\nQuando se analisam apenas as fraturas que consolidaram, o tratamento conservador pode ter função tão boa quanto a cirurgia. A vantagem precoce da placa tende a ser maior que a diferença final, e os ganhos dos escores frequentemente ficam abaixo do mínimo clinicamente importante. Isso explica a decisão compartilhada: diminuir o risco de não união pode valer mais para alguns pacientes do que os riscos e o custo de operar, mas não cria obrigação universal.\n\n**Leia “O que os ensaios mostraram”, na Biblioteca.** Diferencie consolidação, sintoma, função e reintervenção antes de resumir o tratamento como melhor ou pior.",
+  "correta": "**D: menor taxa global e menor taxa sintomática de pseudartrose.** É a comparação sustentada para o grupo de fraturas desviadas estudado. A resposta não afirma ausência de complicações cirúrgicas nem vantagem funcional final garantida para cada indivíduo.\n\nA decisão precisa equilibrar o risco de não consolidar com os efeitos adversos e a demanda do paciente.",
   "incorretas": {
-   "A": "A cirurgia reduz a taxa global de pseudartrose, e não a aumenta.",
-   "B": "A cirurgia não aumenta a taxa global; ela reduz os dois desfechos.",
-   "C": "A redução global está certa, mas a pseudartrose sintomática também diminui."
+   "A": "**Inverte os dois desfechos de consolidação.** A placa não mostrou maior pseudartrose global e sintomática nos ensaios resumidos; mostrou redução. Reconhecer complicações da cirurgia não permite atribuir a ela o sentido oposto do efeito sobre união.",
+   "B": "**A redução da pseudartrose sintomática está no sentido correto, mas a taxa global não aumenta.** A alternativa tenta separar os dois resultados como se operar apenas mudasse o perfil dos sintomas. O benefício apresentado também envolve o número total de não uniões.",
+   "C": "**Acerta a redução global e erra ao afirmar aumento da sintomática.** Não é correto concluir que as pseudartroses restantes depois da placa sejam, em número, mais frequentes e sintomáticas que no conservador. O resumo sustenta diminuição de ambas, mantendo a discussão separada das complicações do implante."
   },
-  "conceito": "O tratamento das fraturas do **terço médio da clavícula** mudou quando os números antigos foram revistos.\n\n**O paradigma antigo** (Neer e Rowe, anos 1960): quase todas consolidavam com tipoia, com pseudartrose abaixo de 1%.\n\n**Os dados novos**: nas fraturas com **desvio completo** (sem contato entre os fragmentos) e **encurtamento** maior que 15 a 20 mm, a **pseudartrose** chega a 15% ou mais, e a consolidação viciosa sintomática (ombro caído e encurtado, fadiga, fraqueza) é comum.\n\n**Os ensaios randomizados** (como o da Canadian Orthopaedic Trauma Society), comparando placa e tratamento conservador nas fraturas desviadas:\n\n**menor taxa global** de pseudartrose com a cirurgia;\n\n**menor taxa** de pseudartrose **sintomática**;\n\nconsolidação mais rápida, melhor função no primeiro ano e retorno precoce ao trabalho e ao esporte.\n\n**O custo da cirurgia**: complicações **locais**: irritação pela placa (a queixa mais comum), dormência pela lesão dos nervos supraclaviculares, retirada do material e, raramente, infecção.\n\n**A indicação seletiva**: encurtamento maior que 15 a 20 mm, desvio completo, cominução em Z, exposição, pele em risco, ombro flutuante e alta demanda.\n\n**Na prova**: a cirurgia tem **menor taxa global** e **menor taxa sintomática** de pseudartrose.",
-  "correta": "A placa reduz a pseudartrose global e a sintomática nas fraturas desviadas, com consolidação e retorno mais rápidos.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Pseudartrose, fatores de risco e operar ou não."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Pseudartrose, fatores de risco e operar ou não"
+     ],
+     "blocos": [
+      "pseudartrose-fatores-de-risco-e-operar-ou-nao-06adb43b",
+      "pseudartrose-fatores-de-risco-e-operar-ou-nao-a45cab68",
+      "pseudartrose-fatores-de-risco-e-operar-ou-nao-3d70f3c6",
+      "pseudartrose-fatores-de-risco-e-operar-ou-nao-fa1836c0"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "e19b88fdab61ecea453021d7bd593b74fd239a0f9cb0ce8253409290824ab5a0"
+    }
+   ],
+   "questaoSha256": "0a0f45989fc3cba013caa87911bf59d1cfc1fcd5ebd7124064f2249a6f43ef33",
+   "comentarioSha256": "284ff61ce0945b1a30b3f4bc3be08d679ff4f451bc43904c20aa7a553efe57eb"
+  }
  },
  "trauma-0260": {
   "incorretas": {
@@ -4109,15 +4247,43 @@
   "conferido": false
  },
  "trauma-0264": {
+  "conceito": "**Robinson e Craig usam números diferentes para o terço médio.** Allman e Craig o colocam no grupo I; Robinson o chama de tipo 2. A divergência é de sistema de classificação, não de localização anatômica da mesma fratura.\n\nAllman distribui os grupos pela frequência: médio I, distal II e medial III. É uma forma prática de comunicar o segmento, mas informa pouco sobre desvio, cominuição e encurtamento. Robinson organiza medial 1, médio 2 e distal 3 e acrescenta características com valor prognóstico, como alinhamento e extensão articular.\n\nNo terço médio de Robinson, 2A mantém alinhamento, e 2B é desviado. O subtipo simples ou com uma borboleta é 2B1; o segmentar ou cominuto é 2B2. Isso mostra por que a classificação pode orientar uma descrição mais útil que apenas “grupo I”, embora o nome antigo continue muito usado.\n\n**Leia “Allman” e “Robinson”, na Biblioteca.** Ao receber apenas um número, confira primeiro qual sistema foi citado; o mesmo algarismo pode apontar para outra região.",
+  "correta": "**D: há numeração divergente entre Robinson e Craig.** O terço médio é Robinson 2 e Craig I. A resposta exige reconhecer que os números não são intercambiáveis entre as classificações.",
   "incorretas": {
-   "A": "Em Craig, o terço médio é o grupo I; o grupo II é o terço distal.",
-   "B": "Em Allman, o terço médio é o grupo I; o grupo III é o terço medial.",
-   "C": "Em Robinson, o terço médio é o tipo 2; o tipo 1 é o quinto medial."
+   "A": "**Craig II não é o grupo do terço médio.** A tradição apresentada no resumo coloca esse segmento no grupo I. A alternativa pode parecer plausível se o leitor trouxer o número 2 de Robinson para outro sistema.",
+   "B": "**Allman III é o terço proximal ou medial.** O médio é I, seguindo a ordem de frequência. A posição anatômica central não determina que receba um número intermediário nessa classificação.",
+   "C": "**Robinson 1 é medial.** O terço médio recebe 2. A classificação mudou justamente a ordem que o leitor pode ter aprendido em Allman/Craig, razão para sempre nomear o sistema junto do código."
   },
-  "conceito": "A **clavícula** tem três classificações em uso, e elas **numeram** o mesmo segmento de formas diferentes:\n\n**Allman**: grupo I, **terço médio** (o mais frequente, cerca de 80%); grupo II, terço distal; grupo III, terço medial;\n\n**Craig**: mantém a numeração de Allman e detalha os grupos: o grupo II recebe os tipos de **Neer** (I a V) para o terço distal; o grupo III é subdividido. O **terço médio** continua sendo o **grupo I**;\n\n**Robinson**: divide o osso em **quintos**: tipo **1**, quinto medial; tipo **2**, os **três quintos médios**; tipo **3**, quinto lateral. Acrescenta **A** (sem desvio) e **B** (desviada) e um número final para a morfologia.\n\n**A divergência**: o terço médio é o **grupo I** em Allman e Craig, mas o **tipo 2** em Robinson. Por isso, ao citar um número, é preciso dizer qual classificação se usa.\n\n**O valor de Robinson**: os subgrupos predizem a **pseudartrose**: as **2B** (terço médio desviadas), sobretudo as **2B2** (cominutas ou segmentares), têm o maior risco e as que mais se beneficiam da placa.\n\n**Na prova**: o terço médio da clavícula recebe **numeração divergente** em Robinson e Craig.",
-  "correta": "O terço médio é o grupo I em Craig e Allman, mas o tipo 2 em Robinson: numeração divergente.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Classificações: Allman, Neer, Craig, Robinson e AO."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Classificações: Allman, Neer, Craig, Robinson e AO"
+     ],
+     "blocos": [
+      "classificacoes-allman-neer-craig-robinson-e-ao-5b9c0c66",
+      "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
+      "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "ae1b0e9b77923a22b0aa995b4adf3bd9d285b0dbaa4cb66a4050d2380bd856ef"
+    }
+   ],
+   "questaoSha256": "a2e589422fc50d6e5795858cb3b1b6238a00024df7ccd3ec44171e0fd6faffa3",
+   "comentarioSha256": "302064c56f6c2a08e3e6c1c479b851acaca39be7a12ebb03cdc382f63624852c"
+  }
  },
  "trauma-0265": {
   "incorretas": {
@@ -5925,15 +6091,45 @@
   "conferido": false
  },
  "trauma-0446": {
+  "conceito": "**A placa-gancho é a técnica de maior índice de complicações destacada para o terço lateral.** O gancho passa sob o acrômio e pode produzir irritação, impacto e osteólise subacromial. Retiradas são frequentes, inclusive planejadas para evitar problemas locais; retirada de rotina e complicação não devem ser contadas como se fossem sempre o mesmo evento.\n\nO fragmento distal é pequeno, esponjoso e pode estar cominuído. A dificuldade é obter pega suficiente contra as forças que fazem o segmento medial subir e o lateral descer com a escápula. A preferência dos autores é placa bloqueada distal, acrescentando botão com sutura no coracoide quando a fixação lateral for insuficiente, em vez de reforçar todos os casos automaticamente.\n\nNo gancho, o túnel deve ficar na região posterior do espaço subacromial, porque a anterior é mais estreita e expõe o manguito a impacto. O resumo informa retirada em 60% a 83% das séries, por irritação, impacto ou planejamento, e metanálise com menos complicações/reoperações para placa bloqueada que para gancho. Esses números justificam cautela, sem transformar o implante em técnica proibida em qualquer cenário.\n\n**Consolidar não é o único desfecho.** Várias técnicas atingem união elevada; função, irritação do implante, necessidade de nova operação e risco ao coracoide também entram na escolha. Botão pode fraturar o coracoide e, por isso, não é um reforço livre de risco.\n\n**Leia “Cirurgia: placa, gancho ou fixação coracoclavicular”, na Biblioteca.** Compare os resultados e as complicações próprias de cada método, além da taxa de consolidação.",
+  "correta": "**A: placa-gancho.** É o método apontado como mais problemático no resumo, sobretudo por irritação, impacto, osteólise e necessidade de retirada. A alta união não elimina esses desfechos, razão pela qual os autores desaconselham o uso rotineiro das versões discutidas.",
   "incorretas": {
-   "B": "A fixação intramedular é pouco usada no terço lateral e não lidera as complicações.",
-   "C": "A estabilização coracoclavicular com âncora tem poucas complicações.",
-   "D": "A banda de tensão pode ter migração dos fios, mas complica menos que a placa gancho."
+   "B": "**A fixação intramedular tem limitações, mas não é o método que o resumo destaca com maior complicação nessa comparação distal.** Não deve ser escolhida por uma impressão geral de migração ou quebra de pinos. A pergunta é sobre a hierarquia específica apresentada para esse segmento, em que o gancho sobressai.",
+   "C": "**A fixação coracoclavicular pode ter complicações próprias, porém a fonte descreve menos revisões para esse grupo de técnicas que para placa/gancho em comparações citadas.** Isso não torna toda âncora ou botão equivalente nem sem risco; apenas impede escolher o método como o mais complicado por sua proximidade do coracoide.",
+   "D": "**Banda de tensão e fios pertencem a técnicas que foram amplamente substituídas, mas isso não prova que liderem a taxa de complicações pedida.** Obsolescência relativa e maior complicação numa comparação específica são afirmações diferentes. O implante destacado como problemático no capítulo é a placa-gancho."
   },
-  "conceito": "As fraturas instáveis do **terço lateral da clavícula** (Neer II) têm várias opções de fixação, e cada uma tem um perfil de complicações:\n\n**placa gancho**: o gancho entra **sob o acrômio** e segura a clavícula para baixo. É eficaz para a consolidação, mas tem o **maior índice de complicações**: **dor** e **impacto subacromial**, **erosão** e até fratura do acrômio, **lesão do manguito**, rigidez, e precisa ser **retirada** em quase todos os casos;\n\n**placa distal bloqueada** (pré-moldada): menos complicações, quando o fragmento distal tem tamanho para os parafusos;\n\n**estabilização coracoclavicular** (âncora no coracoide, botões de sutura): poucas complicações e não exige retirada de rotina;\n\n**banda de tensão com fios de Kirschner**: funciona, mas os fios podem **migrar** e irritar; menos usada hoje;\n\n**fixação intramedular**: pouco usada no terço lateral.\n\n**A tendência atual**: preferir a placa distal bloqueada ou a fixação coracoclavicular (ou as duas juntas), deixando a placa gancho para casos selecionados, com retirada programada.\n\n**Na prova**: a técnica com maior índice de complicação no terço lateral é a **placa gancho**.",
-  "correta": "O gancho sob o acrômio causa dor, impacto, erosão e lesão do manguito, e quase sempre precisa ser retirado.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Terço lateral (distal)."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Terço lateral (distal)"
+     ],
+     "blocos": [
+      "terco-lateral-distal-be04fd16",
+      "terco-lateral-distal-5462932b",
+      "terco-lateral-distal-6bc29624",
+      "terco-lateral-distal-807eaf40",
+      "terco-lateral-distal-978927a9"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "de64ace939824f8deae8d93b3081c6982bbbaedc32c720976915830ad562dbf1"
+    }
+   ],
+   "questaoSha256": "1378652547f43cb02e39e9140099e5431669ca6b26118005e283465ebd5a8428",
+   "comentarioSha256": "214663f990260c2cf98fb3b1325223526c339e965a14bd97f2764e9731176f26"
+  }
  },
  "trauma-0447": {
   "incorretas": {
@@ -6831,18 +7027,44 @@
   "conferido": false
  },
  "trauma-0569": {
+  "conceito": "**A compressão crônica do plexo no desfiladeiro torácico é a forma mais comum de lesão neurovascular após fratura desviada da clavícula descrita pelo capítulo.** A clavícula forma o teto desse espaço; consolidação viciosa e calo inferior podem reduzir a passagem disponível e produzir sintomas tardios.\n\nA apresentação pode incluir parestesias em C8 e T1, fraqueza progressiva da mão e piora com trabalho acima da cabeça. Obstrução venosa também pode causar edema e coloração arroxeada. O mecanismo é diferente de um estiramento agudo do plexo durante trauma violento: o paciente pode ter função inicial preservada e desenvolver sintomas com a consolidação em posição desfavorável.\n\n| Situação | Mecanismo destacado |\n|---|---|\n| Dissociação escapulotorácica | Tração aguda de alta energia, rara e grave |\n| Consolidação viciosa sintomática | Redução crônica do espaço do desfiladeiro |\n| Complicação por parafuso | Possível lesão vascular iatrogênica, descrita em relatos |\n\nO tratamento precisa abordar a causa estrutural. Quando a posição tridimensional da clavícula estreita o espaço, retirar apenas um calo aparente ou a primeira costela não corrige necessariamente o problema. O resumo destaca osteotomia corretiva para restaurar dimensões, enquanto desbridamento do calo e realinhamento podem ser necessários conforme o mecanismo. Não é toda parestesia pós-fratura que confirma esse diagnóstico; evolução e exame devem estabelecer a relação.\n\n**Leia “Lesões tardias: o desfiladeiro torácico”, na Biblioteca.** Relacione tempo de aparecimento, anatomia e sintomas antes de escolher a complicação apenas por sua gravidade.",
+  "correta": "**D: compressão crônica do plexo braquial.** É a forma predominante descrita pelo capítulo, relacionada à consolidação viciosa e à invasão do desfiladeiro. A natureza tardia distingue esse quadro das lesões de tração no trauma inicial.",
   "incorretas": {
-   "A": "O aneurisma da artéria subclávia é raro.",
-   "B": "O estiramento agudo do plexo vem de alta energia e é raro.",
-   "C": "A trombose da veia subclávia ocorre, mas é menos comum que a compressão do plexo."
+   "A": "**Aneurisma ou pseudoaneurisma subclávio é uma complicação possível, porém descrita em relatos e não como a mais comum.** O resumo menciona relação iatrogênica com parafusos, sobretudo em reconstrução de pseudartrose. Ser potencialmente catastrófico não o torna o evento predominante.",
+   "B": "**Estiramento agudo do plexo pertence ao cenário de tração intensa, como a dissociação escapulotorácica.** Exige investigação imediata e pode ameaçar gravemente a função, mas a frequência descrita após fratura é maior para a invasão crônica do desfiladeiro.",
+   "C": "**A veia pode sofrer obstrução quando o espaço subclavicular é reduzido, mas trombose subaguda não é o desfecho mais comum nomeado pela fonte.** A alternativa troca um mecanismo e tempo específicos pelo quadro crônico predominante. Edema e sinais venosos precisam ser avaliados sem usar essa comparação de frequência para minimizá-los."
   },
-  "conceito": "A **clavícula** cobre o **feixe neurovascular** do membro superior (plexo braquial, artéria e veia subclávias) no espaço entre ela e a primeira costela, o **desfiladeiro costoclavicular**.\n\n**A complicação neurovascular mais comum**: a **compressão crônica do plexo braquial**. Ela aparece semanas ou meses depois, causada por:\n\n**calo hipertrófico** ou exuberante;\n\n**consolidação viciosa** com encurtamento e desvio do fragmento para baixo;\n\n**pseudartrose** com fragmentos móveis.\n\n**O quadro**: parestesias no braço e na mão (sobretudo no território do **ulnar**, pelo tronco inferior), fraqueza e dor, que pioram com o braço elevado: um quadro de **síndrome do desfiladeiro torácico** secundária.\n\n**As complicações vasculares**: a compressão ou **trombose da veia subclávia** e, raramente, lesões da **artéria** (aneurisma, pseudoaneurisma) também ocorrem, mas são menos comuns.\n\n**As lesões agudas**: o estiramento agudo do plexo ou a lesão vascular aguda vêm de trauma de alta energia e são raras.\n\n**O tratamento**: ressecção do calo, correção da consolidação viciosa ou fixação da pseudartrose, descomprimindo o espaço.\n\n**Na prova**: a complicação neurovascular mais comum após a fratura da clavícula é a **compressão crônica do plexo braquial**.",
-  "correta": "O calo, a consolidação viciosa ou a pseudartrose estreitam o desfiladeiro e comprimem o plexo de forma crônica.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 33"
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Lesões neurovasculares e dissociação escapulotorácica."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Lesões neurovasculares e dissociação escapulotorácica"
+     ],
+     "blocos": [
+      "lesoes-neurovasculares-e-dissociacao-escapulotor-d65fb30d",
+      "lesoes-neurovasculares-e-dissociacao-escapulotor-51cbb6a9",
+      "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59",
+      "lesoes-neurovasculares-e-dissociacao-escapulotor-1176f57b"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "d407609bda9ed9c7c530e0f0619b40e77f244b2b74cf82e7f88cbdf54827f31c"
+    }
+   ],
+   "questaoSha256": "501eb3321515c9873e445ca1bc83b563e1ad7076c4163ed7d33d00be29898735",
+   "comentarioSha256": "b1fc5d15fd1eca7103ce209c3d875395d101388339ce9fbbfda5c078194db7a8"
+  }
  },
  "trauma-0570": {
   "incorretas": {
@@ -12274,18 +12496,43 @@
   "conferido": false
  },
  "trauma-1063": {
+  "conceito": "**A haste intramedular sem bloqueio é mais adequada aos traços simples, transversos ou oblíquos curtos.** O padrão da fratura determina quais forças o implante precisa controlar. Uma incisão menor não compensa falta de estabilidade de comprimento e rotação.\n\nAs hastes lisas/elásticas percorrem o canal, mas não bloqueiam os segmentos como uma construção que controle todos esses eixos. Em cominuição ou perda de continuidade intermediária, o conjunto pode encurtar ou rodar; migração e quebra são problemas descritos. Pinos mais estáveis ainda podem deixar rotação, e o desempenho não deve ser generalizado como se todos os implantes intramedulares fossem iguais.\n\nAs hastes bloqueadas mais recentes toleram padrões diferentes e podem dispensar retirada de rotina. Essa ressalva não muda a resposta clássica da comparação proposta: o resumo reserva a haste habitual aos padrões simples e favorece placa nos segmentares, multifragmentares ou oblíquos longos. O canal também precisa ser adequado.\n\nDurante a técnica, não se deve distrair o foco ao tentar avançar um implante reto num osso em S. Se isso ocorre, o resumo descreve recuar ou usar um pino mais curto. Esse detalhe liga indicação e execução: a fixação deve manter o alinhamento, e não criar uma separação que dificulte a união.\n\n**Leia “Haste intramedular”, na Biblioteca.** Compare estabilidade exigida pelo traço e estabilidade que o implante realmente oferece.",
+  "correta": "**D: traço transverso ou oblíquo curto.** São padrões simples em que o método descrito pode funcionar melhor. A resposta pressupõe técnica e canal adequados e não implica que qualquer haste seja suficiente para toda fratura desses grupos.",
   "incorretas": {
-   "A": "**Fratura segmentar tem dois focos.** Controlar simultaneamente comprimento e rotação costuma favorecer fixação com placa.",
-   "B": "**A cominuição reduz o apoio cortical.** Quando não há contato suficiente entre fragmentos principais, a haste isolada controla pior o encurtamento.",
-   "C": "**O oblíquo longo pode deslizar.** A placa permite compressão e controle rotacional mais previsíveis nesse desenho de fratura."
+   "A": "**A fratura segmentar cria um segmento intermediário e maior exigência de controle.** A haste não bloqueada pode perder comprimento e rotação nesse cenário. O resumo favorece placa, em vez de escolher a menor incisão como critério principal.",
+   "B": "**A multifragmentar perde a referência cortical que ajuda a manter comprimento e alinhamento.** A falta de bloqueio torna a estabilidade mais problemática; o capítulo também descreve recuperação mais lenta com haste em fraturas cominutas. A indicação não deve ser extrapolada do traço simples.",
+   "C": "**A obliquidade longa aumenta a preocupação com manutenção do comprimento e da rotação.** Não corresponde ao oblíquo curto incluído entre os padrões preferidos. A alternativa usa a mesma palavra “oblíquo”, mas muda uma característica mecânica importante."
   },
-  "conceito": "**O que a haste controla bem.** A fixação intramedular da diáfise clavicular funciona melhor quando há dois fragmentos principais, comprimento restabelecido e contato cortical suficiente para limitar rotação e encurtamento. Por isso, o traço transverso ou oblíquo curto é a indicação morfológica mais favorável entre as alternativas. A escolha do implante também considera desvio, canal medular e experiência cirúrgica.\n\n**Quando a placa oferece vantagem.** Um traço oblíquo longo tende a deslizar; fraturas segmentares e multifragmentares têm menor apoio para resistir ao encurtamento. Nesses padrões, a placa permite controlar melhor comprimento, rotação e fragmentos. Isso não significa que a haste seja impossível em qualquer fratura com fragmento adicional, e sim que ela deixa de ser a opção mais bem indicada na comparação proposta.",
-  "correta": "**D: traço transverso ou oblíquo curto.** O contato entre os fragmentos favorece a estabilidade necessária à fixação intramedular.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 33"
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Placa e haste no terço médio."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Placa e haste no terço médio"
+     ],
+     "blocos": [
+      "placa-e-haste-no-terco-medio-09e2065d",
+      "placa-e-haste-no-terco-medio-dd4f9b33",
+      "placa-e-haste-no-terco-medio-16941c79"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "1ff553e3265b74124b8617f1d3b0983e28d2f9ee543f67c4154d2a2717b17654"
+    }
+   ],
+   "questaoSha256": "78bb139a71a4d911f6bb2ab69f3d1468ece5f55cff8a138bbe5e335f480e71c3",
+   "comentarioSha256": "c1645d1c83c91851b7826b2d540ef5fbdd05dfc8e5da03c74bd84f9b15750c8b"
+  }
  },
  "trauma-1065": {
   "incorretas": {
