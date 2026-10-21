@@ -1,0 +1,406 @@
+{
+  "trauma-0099": {
+    "questaoSha256": "06a33972403a4f1a40faff094f6678382b35f2f3647e2a8d5c08caaccba1237a",
+    "comentarioAnteriorSha256": "754a78818a000b9d4e4dd8ac696327ba1fe18021d2656a49b37d03b21623051b",
+    "comentario": {
+      "conceito": "**Na coxa, o compartimento anterior é o mais frequentemente acometido e merece atenção após fratura diafisária do fêmur.** Ele contém quadríceps, sartório e nervo femoral. A dor à flexão passiva do joelho estira o grupo anterior; fraqueza da extensão e alteração sensitiva no território descrito podem complementar a avaliação.\n\nA coxa tem três compartimentos: anterior, posterior e adutor, ou medial. “Lateral” é o nome de uma via de acesso, não um quarto compartimento anatômico. Uma incisão lateral pode abrir anterior e posterior, demonstrando por que posição da incisão e nome do espaço não são sinônimos.\n\nO predomínio anterior não torna posterior e adutor imunes. O resumo documenta casos posteriores e descreve o adutor como raro. É necessário avaliar o conjunto conforme clínica e pressão, sem limitar a vigilância a uma lista de frequência. O cateter de rotina também é indicado no anterior, unindo a distribuição de risco à monitorização.\n\n**Leia “Coxa” e “Onde colocar o cateter”, na Biblioteca.** Relacione localização muscular, estiramento e função antes de escolher pelo nome de uma incisão.",
+      "correta": "**C: anterior.** É o compartimento mais acometido da coxa no resumo e o local preferido para o cateter. O grupo quadríceps explica a dor ao estiramento em flexão e a possível fraqueza extensora.\n\nA fratura femoral deve levar à vigilância apropriada, sem esperar déficit motor para suspeitar da síndrome.",
+      "incorretas": {
+        "A": "**Lateral é acesso, não compartimento separado da coxa nessa divisão.** A incisão lateral pode permitir liberar anterior e posterior. Confundir o caminho cirúrgico com o espaço acometido cria uma quarta região que a classificação não contém.",
+        "B": "**Medial corresponde ao compartimento adutor e existe, mas é raramente acometido.** Seu nervo é o obturatório e seu grupo muscular são os adutores. A alternativa nomeia uma região real, porém não a de maior frequência descrita.",
+        "D": "**Posterior contém isquiotibiais e nervo isquiático.** Pode desenvolver síndrome e se relaciona à dor à extensão passiva do joelho e fraqueza de flexão. Esses achados são diferentes dos anteriores e não o colocam como o mais frequentemente envolvido."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia; Medida da pressão e o delta P."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia",
+          "Medida da pressão e o delta P"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-eb26943e",
+          "fasciotomia-f734935c",
+          "medida-da-pressao-e-o-delta-p-6e9747e1"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "4b6f8952f28cd0b65b2e05252bf6b1fa6e47070a69134fb2ad54e03ef744918e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0164": {
+    "questaoSha256": "8a5515be6553be5c5fcd0fc683d7762ed2b10061d500289dece1598045d23fd5",
+    "comentarioAnteriorSha256": "d30c904f6c543b9baeb61f1c87a2e71cccfc5cc316668a8743e97d0a75e6a954",
+    "comentario": {
+      "conceito": "**O perfil predisponente é masculino e jovem.** O capítulo descreve homens cerca de dez vezes mais frequentes que mulheres e juventude como o fator de risco mais importante. Muito músculo em um compartimento de tamanho limitado deixa menos espaço para inchaço, ajudando a explicar a vulnerabilidade.\n\nEntre as opções, “menor que 55 anos” representa o grupo mais jovem. O resumo fornece exemplos de risco particularmente alto abaixo de 35 anos na fratura diafisária da tíbia; ele não estabelece 55 como uma fronteira biológica rígida nem torna todas as pessoas abaixo dela equivalentes.\n\nOs mais velhos e as mulheres também podem ter síndrome. Casos sem fratura, por exemplo, se associam a maior idade, comorbidades e anticoagulação. Essa exceção não troca a resposta do perfil predominante, mas impede usar a alternativa escolhida para descartar pacientes fora dele.\n\n**Na Biblioteca, leia “Quem tem síndrome compartimental” e a exceção dos casos sem fratura.** A epidemiologia deve orientar vigilância, sem substituir avaliação da perfusão, exame e monitorização quando indicados.",
+      "correta": "**D: masculino e menor que 55 anos.** É o par que corresponde ao predomínio masculino e à juventude descritos. O limite de 55 é a forma de agrupar as alternativas, não um ponto a partir do qual o risco desaparece.\n\nA intensidade do trauma, o padrão da lesão e a confiabilidade do exame continuam importantes.",
+      "incorretas": {
+        "A": "**Troca o predomínio masculino e a tendência de maior risco nos jovens.** Mulheres mais velhas podem ter síndrome, mas não são a combinação que responde à predisposição geral discutida. A existência de exceções clínicas não inverte a distribuição populacional.",
+        "B": "**A faixa mais jovem está no sentido correto, mas o sexo predominante foi trocado.** O capítulo descreve forte predomínio masculino. O achado é de risco, sem autorizar reduzir a investigação em uma mulher com lesão e sintomas compatíveis.",
+        "C": "**Mantém o sexo masculino e desloca o maior risco para o grupo mais velho.** O resumo destaca a juventude e a menor margem para edema. O paciente idoso continua podendo apresentar síndrome, especialmente em cenários específicos, mas isso não o torna o perfil principal desta comparação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Quem tem síndrome compartimental."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Quem tem síndrome compartimental"
+        ],
+        "blocos": [
+          "quem-tem-sindrome-compartimental-5ca80c99",
+          "quem-tem-sindrome-compartimental-2d563b4e",
+          "quem-tem-sindrome-compartimental-9294b2f4"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "197fa843a0084768b3eeeb07b77fbe5ad7025914cd5b128c725474e2ad8d6a44"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0229": {
+    "questaoSha256": "92ba81bfb4ae3fb952eaa923a8ba678732b9cc91e368377e017948056183c4d4",
+    "comentarioAnteriorSha256": "78e249aa2165086ad6a8f4bd31ab85420f2d832eaa5d21cf6b67db5b8062a8a2",
+    "comentario": {
+      "conceito": "**Após fratura diafisária tibial, o anterior é o compartimento mais frequentemente acometido.** Ele contém tibial anterior, extensores longos dos dedos e do hálux, fibular terceiro, nervo fibular profundo e vasos tibiais anteriores. Seu território sensitivo característico é o primeiro espaço interdigital, e a fraqueza afeta extensão do tornozelo e dos dedos.\n\nA dor ao estiramento desse grupo ocorre em flexão plantar. O resumo também relaciona sua vulnerabilidade ao predomínio de fibras tipo I, oxidativas, mais dependentes de oxigênio. Essas relações ajudam a compreender o exame, mas não exigem que todos os sinais estejam presentes para suspeitar da síndrome.\n\nO anterior é o local habitual do cateter na perna por ser mais acometido e acessível. Se a clínica sugerir posterior profundo não explicado pela medida anterior, ele também deve ser investigado. Uma localização mais comum não elimina avaliação dos demais espaços nem autoriza fasciotomia incompleta.\n\n**Leia “Perna” e “Onde colocar o cateter”, na Biblioteca.** Compare território nervoso, função muscular e monitorização para transformar a resposta em um mapa clínico útil.",
+      "correta": "**B: anterior.** A frequência de acometimento e a acessibilidade justificam sua escolha habitual para monitorização. Os extensores e o nervo fibular profundo explicam os achados associados.\n\nA hipótese de síndrome não pode depender de aparecer dormência ou paresia, que têm limitações diagnósticas importantes.",
+      "incorretas": {
+        "A": "**Lateral é um dos quatro compartimentos e pode acompanhar o anterior, mas não é a resposta de maior frequência nesta pergunta.** Contém fibulares e nervo fibular superficial, com alteração de eversão e sensibilidade dorsal. A proximidade funcional e de pressão não torna seus territórios idênticos.",
+        "C": "**Posterior profundo contém flexores longos, tibial posterior e nervo tibial.** Sensibilidade plantar e fraqueza de flexão/inversão orientam para ele. É um espaço importante, inclusive na avaliação dirigida, mas a referência de maior frequência e cateter de rotina é anterior.",
+        "D": "**Posterior superficial contém gastrocnêmio, sóleo e nervo sural.** Seu padrão inclui dor à dorsiflexão, fraqueza de flexão plantar e alteração dorsolateral. A alternativa não corresponde ao grupo anterior destacado como mais frequentemente acometido."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; Por que a pressão mata o músculo; Os compartimentos de cada região."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "Por que a pressão mata o músculo",
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-13e06142",
+          "por-que-a-pressao-mata-o-musculo-1a07d757",
+          "os-compartimentos-de-cada-regiao-222f4f26"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "fd3e2bd71bf4ee40c0ad479ff37b7218d85a8d8be0d1d34cb18a450356649166"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0306": {
+    "questaoSha256": "9d48ce7441e24f3f43561f1cf6c3ed326f34f54349a2767d3cd02305b21df4cb",
+    "comentarioAnteriorSha256": "8a05f21d0f3aa14516ff9c4a95af038d8acf16456fc4138a5cd4f71b63140b3e",
+    "comentario": {
+      "conceito": "**Entre as opções, a diáfise do úmero é a associação menos frequente na tabela apresentada pelo resumo.** Ela participa de cerca de **0,6% dos casos** de síndrome, em comparação com rádio distal 9,8%, fraturas do pé 1,8% e diáfise femoral 3%. Esses valores descrevem a distribuição das lesões entre os casos, não a chance de cada fratura individual desenvolver a complicação.\n\nEsse denominador muda a interpretação. Um tipo de fratura muito comum pode responder por uma parcela relevante dos casos e ainda ter incidência individual baixa. O capítulo exemplifica isso com o rádio distal, em que somente cerca de 0,25% das fraturas cursam com síndrome.\n\nAssociação menos frequente não significa risco zero. O braço tem compartimentos anterior e posterior, com sinais próprios, e pode exigir descompressão conforme o quadro. A tabela orienta suspeita e comparação epidemiológica; ela não substitui o exame de uma extremidade dolorosa ou tensa.\n\n**Na Biblioteca, leia a tabela de lesões em “Quem tem síndrome compartimental”.** Pergunte sempre se o número descreve casos de síndrome ou pacientes com aquela fratura, evitando usar uma frequência para responder à outra.",
+      "correta": "**D: diáfise do úmero.** É a menor participação entre os quatro grupos oferecidos, cerca de 0,6% na distribuição citada. A escolha é comparativa dentro das alternativas.\n\nNenhum número dessa tabela autoriza descartar síndrome no braço quando a clínica e o mecanismo geram suspeita.",
+      "incorretas": {
+        "A": "**Rádio distal participa mais dos casos que a diáfise umeral na tabela.** Seu valor de 9,8% entre os casos não deve ser confundido com a incidência individual de 0,25% das fraturas distais. Essa diferença de denominadores pode fazer uma alternativa parecer menor pelo número errado.",
+        "B": "**Fraturas do pé têm participação de 1,8%, maior que os 0,6% da diáfise umeral.** O diagnóstico clínico no pé também é difícil, e sua menor frequência global não significa que possa ser ignorado. A opção não é a menor entre as apresentadas.",
+        "C": "**Diáfise femoral aparece com cerca de 3% dos casos e pode produzir síndrome da coxa.** É menos representada que a tíbia, mas ainda supera a associação umeral desta comparação. Confundir “menos que a tíbia” com “menos entre estas quatro” troca a pergunta epidemiológica."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Quem tem síndrome compartimental; Os compartimentos de cada região."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Quem tem síndrome compartimental",
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "quem-tem-sindrome-compartimental-b7787f07",
+          "quem-tem-sindrome-compartimental-4b3a771a",
+          "os-compartimentos-de-cada-regiao-8c215981"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "296db560d9f37ccb2a6105a593ac3a7662fd35d1d03f831e0103960bbb3fce58"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0419": {
+    "questaoSha256": "602ecb42b28b7e9d5ee9f2a57f9eb8897b6ba0b23678a65fc848e3fb382c1c40",
+    "comentarioAnteriorSha256": "27c98a3f396f162ae639ce0825e6ed63de971043562a84f6797cb0cc0f89def0",
+    "comentario": {
+      "conceito": "**A coxa tem três compartimentos: anterior, medial ou adutor, e posterior.** A fáscia lata e os septos organizam esses espaços. A anatomia precisa ser separada da posição das incisões usadas para alcançá-los.\n\n| Compartimento | Conteúdo e função relevantes |\n|---|---|\n| Anterior | Quadríceps, sartório e nervo femoral; extensão do joelho |\n| Medial/adutor | Adutores e nervo obturatório |\n| Posterior | Isquiotibiais e nervo isquiático; flexão do joelho |\n\nUma incisão lateral pode liberar anterior e posterior; isso não cria um compartimento lateral. Se necessário, uma via medial alcança os adutores. Já a divisão em posteriores superficial e profundo pertence à perna, que tem quatro compartimentos, e não deve ser transportada para a coxa.\n\n**Leia “Coxa” e “Coxa, pé e braço” da fasciotomia, na Biblioteca.** Associe cada espaço ao grupo muscular e ao acesso, sem confundir mapa anatômico e estratégia de descompressão.",
+      "correta": "**B: anterior, medial e posterior.** Medial é a outra forma de nomear o compartimento adutor. São três espaços na descrição usada pelo capítulo.\n\nA via lateral é um caminho de acesso a mais de um deles, sem constituir um quarto compartimento.",
+      "incorretas": {
+        "A": "**Inclui anterior e medial corretamente, mas substitui posterior por lateral.** A lateralidade descreve a incisão que pode abrir anterior/posterior. O posterior existe como compartimento próprio, contendo isquiotibiais e nervo isquiático.",
+        "C": "**Divide o anterior em superficial/profundo e acrescenta lateral, configuração que a fonte não usa para a coxa.** O mapa é de três compartimentos, com um anterior e um posterior. Criar subdivisões sem essa correspondência dificulta localizar músculos e planejar a liberação.",
+        "D": "**Traz a divisão posterior superficial/profunda da perna para a coxa.** A coxa tem um posterior que contém os isquiotibiais; a perna divide os grupos posteriores em dois espaços. A semelhança de nomes não torna os dois mapas anatômicos iguais."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-eb26943e",
+          "os-compartimentos-de-cada-regiao-9ef07de3",
+          "fasciotomia-f734935c"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "d3f6dec0b02ea6962b6c84d0f81e3cf140d3e5688c995b21cbf0b91bfd2ed979"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0420": {
+    "questaoSha256": "30e3c46b79150027c2e01e428f5d143824222670995927e4161085fe3961d6bd",
+    "comentarioAnteriorSha256": "cc7c2173a6a1d1ea1bb1e426785687711c7ec8779b99b28835c5eb6514975ee3",
+    "comentario": {
+      "conceito": "**Os compartimentos posteriores superficial e profundo da perna são liberados pelo acesso posteromedial na técnica de dupla incisão.** A pele é aberta cerca de 1 a 2 cm atrás da borda medial tibial, com ponte cutânea suficiente e cuidado com safenos e feixe tibial posterior.\n\nPrimeiro se abre o superficial e, afastando-o, alcança-se o profundo. A segunda liberação precisa ser confirmada, porque uma abertura superficial satisfatória não prova que a pressão profunda foi resolvida. O resumo favorece abrir os quatro compartimentos quando há indicação, avaliando a musculatura e desbridando o que não é viável.\n\nA via anterolateral, próxima da fíbula, responde pelos compartimentos anterior e lateral. Uma técnica de incisão única sem fibulectomia pode alcançar o profundo atrás da fíbula, mas isso é uma estratégia diferente, não motivo para trocar o acesso posteromedial da técnica mais usada pelo nome de outra via.\n\n**Na Biblioteca, leia “Perna: dupla incisão, quatro compartimentos”.** Localize a incisão em relação à borda tibial e acompanhe como ela passa do superficial ao profundo.",
+      "correta": "**D: posteromedial.** É o acesso que libera os dois posteriores na técnica de dupla incisão descrita. O profundo pode exigir exposição adicional, sem presumir liberação apenas por ter aberto o superficial.\n\nA identificação de estruturas em risco acompanha a descompressão completa.",
+      "incorretas": {
+        "A": "**Anterolateral libera anterior e lateral.** É a incisão próxima ao septo junto da fíbula, com atenção ao fibular superficial. Trocar por ela deixa sem resposta o acesso aos dois posteriores solicitado.",
+        "B": "**A incisão da fonte fica posterior à borda medial tibial, não anterior.** A posição permite abordar os planos posteriores e respeitar a ponte cutânea e os perfurantes. “Medial” sozinho é insuficiente se o lado da borda foi invertido.",
+        "C": "**Posterolateral não é o acesso padrão pedido na dupla incisão.** O resumo menciona abrir o profundo junto à borda posterolateral da fíbula em uma técnica de incisão única, mas não confunde essa alternativa técnica com a via posteromedial que alcança superficial e profundo na operação usual."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "fasciotomia-f108fecb",
+          "fasciotomia-8b2413f2",
+          "fasciotomia-236fb661",
+          "fasciotomia-767d74b9",
+          "fasciotomia-8bb6fb73",
+          "fasciotomia-7e6b6436"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "1a7557290cc4c1922eb9f86816b796fca2b0b14e4b505969b024ec5ae45faa7e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0482": {
+    "questaoSha256": "4d0cb161ad288d0fd8d4a997b99ecec4b08e7f8ed3afe610cc997af93e22ef9d",
+    "comentarioAnteriorSha256": "a0430401509b68d8b737fab3856e4cf8fc5c3f4a4813859fd923c82d461a87ea",
+    "comentario": {
+      "conceito": "**O compartimento tenar contém abdutor curto, flexor curto e oponente do polegar.** Entre as alternativas, o **abdutor curto do polegar** é o integrante correto. O adutor atua no mesmo dedo, mas tem compartimento próprio e não pode ser incluído no tenar apenas por essa proximidade funcional.\n\nA mão possui dez compartimentos na descrição consultada: tenar, hipotenar, adutor e sete interósseos. Conhecer o conteúdo evita confundir o conjunto de músculos intrínsecos da mão com um único espaço fascial. A pergunta não pede todos os músculos que participam do movimento dos dedos, mas um grupo anatômico específico.\n\nOs flexores profundos, por sua vez, pertencem ao plano profundo do antebraço, embora seus tendões transmitam movimento aos dedos. A localização do ventre muscular e o trajeto tendíneo não devem ser tratados como se todo tecido que move a mão estivesse dentro da região tenar.\n\n**Leia “Braço, antebraço e mão”, na Biblioteca, identificando o adutor separado do tenar.** Essa distinção explica a alternativa mais parecida e ajuda a planejar a avaliação dos espaços na síndrome da mão.",
+      "correta": "**B: abdutor curto do polegar.** É um dos três músculos tenares nomeados no resumo. O conjunto inclui também flexor curto e oponente, sem o adutor.\n\nA resposta depende do compartimento, não apenas de o músculo atuar no polegar ou estar relacionado à mão.",
+      "incorretas": {
+        "A": "**Lumbricais não compõem a lista do compartimento tenar apresentada pela fonte.** O tenar reúne os três músculos específicos do polegar citados. Confundir o conjunto de músculos da mão com esse espaço delimitado inclui estruturas sem respeitar a divisão fascial.",
+        "C": "**Os flexores profundos dos dedos estão no plano profundo volar do antebraço.** Sua participação no movimento digital não coloca os ventres no tenar. A alternativa confunde ação transmitida à mão com localização do grupo muscular.",
+        "D": "**O adutor do polegar tem compartimento próprio.** A função no mesmo dedo cria uma semelhança útil como distrator, mas não altera o fato anatômico. Na avaliação dos dez espaços, adutor e tenar entram como unidades distintas.",
+        "E": "**Os interósseos dorsais constituem quatro compartimentos próprios.** Eles precisam ser lembrados na avaliação da mão, porém não integram o tenar. A contagem total depende justamente de não fundi-los com o grupo do polegar."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região.",
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: O antebraço como articulação: arco radial, forças e rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-231bd2af"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
+      },
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "O antebraço como articulação: arco radial, forças e rotação"
+        ],
+        "blocos": [
+          "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "f5455e517fad6a7e91a497a6bbb6f4dcd9580f56d9c5dab6024680d3a3d8ca4f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0767": {
+    "questaoSha256": "8a6b4836b1973ff745248b5a518b605ed4ba7cf19a76bf3ed12d51796c7cfdb5",
+    "comentarioAnteriorSha256": "20fffbf8c22b7ba4cb7f0470e954ca76dd8456c754cc130c515a343fcfbc7130",
+    "comentario": {
+      "conceito": "**A síndrome compartimental da coxa envolve mais frequentemente o anterior.** O capítulo relaciona esse espaço ao quadríceps, sartório e nervo femoral. A localização ajuda a compreender dor à flexão passiva do joelho, fraqueza de extensão e alteração sensitiva associada ao nervo.\n\nO posterior contém isquiotibiais e nervo isquiático, enquanto o medial contém adutores e nervo obturatório. São regiões possíveis de doença, mas o adutor é raro e os casos posteriores não substituem o predomínio anterior da fonte. Frequência orienta onde suspeitar e monitorizar primeiro, sem excluir os demais.\n\nO acesso lateral pode descomprimir anterior e posterior e, quando necessário, uma incisão medial alcança adutores. Por isso, o nome do acesso não deve ser confundido com um “compartimento lateral” da coxa. O resumo também recomenda o cateter no anterior.\n\n**Na Biblioteca, leia “Coxa”, comparando o exame funcional de cada espaço com a tabela de monitorização.** A resposta ganha significado quando a anatomia explica o que se procura e o que se descomprime.",
+      "correta": "**C: anterior.** É o mais acometido segundo o resumo e o local recomendado para monitorização habitual. O conteúdo muscular e nervoso organiza o exame.\n\nEsse predomínio não autoriza desconsiderar sintomas que indiquem posterior ou adutor.",
+      "incorretas": {
+        "A": "**Lateral não é um compartimento separado da coxa nessa classificação.** É a via que pode abrir anterior e posterior. A alternativa confunde o lugar da incisão com o espaço anatômico de maior risco.",
+        "B": "**Medial, ou adutor, é um espaço real e de acometimento raro na fonte.** Inclui adutores e nervo obturatório. Não corresponde à frequência predominante solicitada, embora possa exigir avaliação e liberação se estiver sob pressão.",
+        "D": "**Posterior também existe e pode ter síndrome, com isquiotibiais e nervo isquiático.** Seu padrão inclui dor ao estiramento em extensão do joelho e fraqueza de flexão. A possibilidade clínica não o torna o mais comum na comparação apresentada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia; Medida da pressão e o delta P."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia",
+          "Medida da pressão e o delta P"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-eb26943e",
+          "fasciotomia-f734935c",
+          "medida-da-pressao-e-o-delta-p-6e9747e1"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "4b6f8952f28cd0b65b2e05252bf6b1fa6e47070a69134fb2ad54e03ef744918e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0983": {
+    "questaoSha256": "1a71531d7310853c3d477ebbfc4d62006d8fa4030585e4cd5b8bc7e6335d4c5b",
+    "comentarioAnteriorSha256": "b39a2add5ad34c03a475c6e878e7e2d622691788e193f0442ccb10604db69c2e",
+    "comentario": {
+      "conceito": "**O paciente inconsciente não fornece um exame doloroso confiável, e a fratura segmentar com esmagamento exige vigilância objetiva.** O anterior é o compartimento mais frequentemente acometido da perna e o local habitual do cateter. Por isso, o par é **anterior e anterior**.\n\nO resumo destaca que a pressão pode subir antes dos sinais clínicos. Em risco elevado e consciência rebaixada, monitorizar continuamente permite acompanhar a tendência e o delta P, documentando a pressão arterial. Pulso presente não garante perfusão muscular e não substitui essa vigilância.\n\nO anterior e o lateral podem variar juntos, e estudos citados mostram que elevação posterior pode aparecer na leitura anterior. Se houver suspeita de um profundo não explicado pela medida, ele também deve ser avaliado. A ponta é colocada a até 5 cm do foco para captar o pico, com atenção à técnica; não se deve medir um local distante e presumir que represente todo o segmento.\n\n**Leia “Onde colocar o cateter” e “Clínica ou monitorização?”, na Biblioteca.** O Glasgow 3 é decisivo para entender por que não se pode depender de dor relatada ou de esperar parestesia.",
+      "correta": "**A: anterior e anterior.** O primeiro termo identifica o padrão mais comum e o segundo o espaço de monitorização recomendado. A escolha se ajusta à impossibilidade de obter um exame clínico confiável no caso.\n\nA interpretação acompanha tendência, pressão arterial e eventuais sinais de outro compartimento, sem transformar um único sensor em garantia absoluta.",
+      "incorretas": {
+        "B": "**Acerta o mais acometido, mas desloca o cateter de rotina para posterior.** O resumo indica anterior, reservando investigação profunda dirigida quando o quadro a sugerir. O enunciado não oferece uma localização posterior específica para substituir a recomendação habitual.",
+        "C": "**O cateter anterior está correto, mas o lateral foi colocado como o mais comum.** A proximidade e a variação conjunta de pressão não apagam a predominância anterior descrita. O par precisa manter tanto o risco anatômico quanto a recomendação de medida.",
+        "D": "**Troca a predominância para lateral e a medida habitual para posterior.** Nenhuma das duas partes reproduz o algoritmo apresentado. A possibilidade de outros espaços estarem envolvidos exige avaliação, mas não redefine a combinação inicial da fonte."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; Quem tem síndrome compartimental."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "Quem tem síndrome compartimental"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-13e06142",
+          "quem-tem-sindrome-compartimental-c9e21614",
+          "medida-da-pressao-e-o-delta-p-491de05b",
+          "medida-da-pressao-e-o-delta-p-44efd7f7",
+          "medida-da-pressao-e-o-delta-p-6e9747e1"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "b4d5c5d7f13430fb4bcd3d88d989d093e818f470ca38538b650403b5eb3277cd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0120": {
+    "questaoSha256": "800c8efb239c1bdcc47f27f165d053fc2a59b47267fba8217270cefd342aeaff",
+    "comentarioAnteriorSha256": "93eccff838c06da491e5861da2f68e30f9b2d490b78207918b44206d4afc0a06",
+    "comentario": {
+      "conceito": "**A seta aponta o ramo nervoso profundo exposto na região do supinador no acesso de Thompson: o interósseo posterior.** A imagem deve ser relacionada ao campo: há dissecção posterolateral proximal, e o nervo acompanha a região muscular que envolve o rádio. Ela não mostra um trajeto sensitivo superficial isolado junto da pele.\n\nO resumo descreve Thompson entre extensor radial curto e extensor dos dedos no proximal. Para expor cabeça e colo, recomenda abrir cuidadosamente a fáscia do supinador e identificar o interósseo posterior; uma faixa de gordura costuma acompanhá-lo. O nervo é uma estrutura crítica de proteção nesse plano, não apenas um nome a reconhecer na figura.\n\nO ramo superficial do radial acompanha o braquiorradial na descrição da via anterior. Já o interósseo posterior é o ramo motor que a fonte destaca nas paralisias da cirurgia do rádio proximal. Essa diferença entre ramo sensitivo e motor ajuda a evitar trocar o nervo apenas porque ambos se originam do território radial.\n\n**Leia “Rádio por trás: Thompson” e “O nervo da cirurgia”, na Biblioteca.** Acompanhe intervalo, supinador e ramo motor, usando a posição da seta e o plano da exposição como evidência conjunta.",
+      "correta": "**C: interósseo posterior.** A estrutura assinalada corresponde ao nervo profundo relacionado ao supinador no campo de Thompson descrito. Sua identificação e proteção são necessárias quando a exposição alcança cabeça e colo radiais.\n\nO diagnóstico na figura vem do plano e do trajeto mostrados, não de presumir qual nervo costuma ser cobrado.",
+      "incorretas": {
+        "A": "**Mediano é relacionado aos grupos motores volares, não ao ramo profundo do supinador nesta exposição posterolateral.** A fonte descreve a anatomia anterior e o interósseo posterior no campo de Thompson. Escolher mediano ignora o plano cirúrgico e a relação representada pela seta.",
+        "B": "**O ramo sensitivo radial é superficial e acompanha o braquiorradial na via anterior descrita.** Ele não deve ser confundido com o ramo motor profundo identificado no supinador. O parentesco no sistema radial não torna os dois trajetos intercambiáveis.",
+        "D": "**A alternativa nomeia um nervo cutâneo, enquanto a seta e o contexto de Thompson correspondem ao ramo motor profundo descrito no supinador.** A distinção relevante é plano e função, sem atribuir ao desenho um trajeto superficial que ele não mostra. A fonte identifica o interósseo posterior como a estrutura crítica nessa etapa da exposição."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Vias de acesso e o nervo interósseo posterior; O antebraço como articulação: arco radial, forças e rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Vias de acesso e o nervo interósseo posterior",
+          "O antebraço como articulação: arco radial, forças e rotação"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-c37f4bf4",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-cf047815",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
+          "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "16fbc2fa646ba91dbd325305f028ae19995cd638cff62cb69fdf888632274fac"
+      }
+    ],
+    "imagensConferidas": [
+      "ombro-cotovelo/ombro-cotovelo-0120-1.jpeg"
+    ]
+  }
+}

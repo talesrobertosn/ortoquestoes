@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1671,
+  "pendente": 1662,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 36,
-  "pendente-inspecao-imagem": 174,
-  "revisada": 376
+  "pendente-inspecao-imagem": 173,
+  "revisada": 386
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -16,10 +16,10 @@
    "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
    "estados": {
     "duplicada": 3,
-    "pendente": 42,
+    "pendente": 33,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 1,
-    "revisada": 23
+    "revisada": 32
    }
   },
   "rockwood10-24-fraturas-estresse": {
@@ -62,11 +62,11 @@
    "sha256": "59068fa4e61599e2066ed1522110736f83d1ce8153546e725441a1f07fb26f39",
    "estados": {
     "duplicada": 2,
-    "pendente": 36,
+    "pendente": 35,
     "pendente-anulada": 1,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 6,
-    "revisada": 6
+    "revisada": 7
    }
   },
   "rockwood10-40-cotovelo-cabeca-radio": {
@@ -87,8 +87,8 @@
     "duplicada": 8,
     "pendente": 16,
     "pendente-fonte": 9,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 68
+    "pendente-inspecao-imagem": 2,
+    "revisada": 69
    }
   },
   "rockwood10-44-carpo": {
@@ -173,9 +173,9 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 68,
+    "pendente": 66,
     "pendente-inspecao-imagem": 1,
-    "revisada": 1
+    "revisada": 3
    }
   },
   "rockwood10-58-femur-distal": {
@@ -219,11 +219,11 @@
    "sha256": "6a66c25cc6629c013a8f816accbb6b082a1c5a6e3eda207524377c8b31f9911c",
    "estados": {
     "duplicada": 5,
-    "pendente": 124,
+    "pendente": 115,
     "pendente-anulada": 2,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2,
-    "revisada": 21
+    "revisada": 30
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -19493,8 +19493,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -19508,7 +19508,35 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "800c8efb239c1bdcc47f27f165d053fc2a59b47267fba8217270cefd342aeaff"
+   "questaoSha256": "800c8efb239c1bdcc47f27f165d053fc2a59b47267fba8217270cefd342aeaff",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Vias de acesso e o nervo interósseo posterior",
+       "O antebraço como articulação: arco radial, forças e rotação"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-c37f4bf4",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-cf047815",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
+       "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "16fbc2fa646ba91dbd325305f028ae19995cd638cff62cb69fdf888632274fac"
+     }
+    ],
+    "questaoSha256": "800c8efb239c1bdcc47f27f165d053fc2a59b47267fba8217270cefd342aeaff",
+    "comentarioSha256": "e334052f3385f8320f7874e7f9468b4cea9d987d21ee23265ba79da1a3f1f6d7"
+   }
   },
   "ombro-cotovelo-0121": {
    "tema": "ombro-cotovelo",
@@ -39507,7 +39535,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39531,7 +39559,34 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "06a33972403a4f1a40faff094f6678382b35f2f3647e2a8d5c08caaccba1237a"
+   "questaoSha256": "06a33972403a4f1a40faff094f6678382b35f2f3647e2a8d5c08caaccba1237a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Fasciotomia",
+       "Medida da pressão e o delta P"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-eb26943e",
+       "fasciotomia-f734935c",
+       "medida-da-pressao-e-o-delta-p-6e9747e1"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "4b6f8952f28cd0b65b2e05252bf6b1fa6e47070a69134fb2ad54e03ef744918e"
+     }
+    ],
+    "questaoSha256": "06a33972403a4f1a40faff094f6678382b35f2f3647e2a8d5c08caaccba1237a",
+    "comentarioSha256": "6eb6221bacc7cf16c10a7aeed1702af659db47c28181e84e84660d7d64a9701d"
+   }
   },
   "trauma-0100": {
    "tema": "trauma",
@@ -41080,7 +41135,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41103,7 +41158,32 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "8a5515be6553be5c5fcd0fc683d7762ed2b10061d500289dece1598045d23fd5"
+   "questaoSha256": "8a5515be6553be5c5fcd0fc683d7762ed2b10061d500289dece1598045d23fd5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Quem tem síndrome compartimental"
+      ],
+      "blocos": [
+       "quem-tem-sindrome-compartimental-5ca80c99",
+       "quem-tem-sindrome-compartimental-2d563b4e",
+       "quem-tem-sindrome-compartimental-9294b2f4"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "197fa843a0084768b3eeeb07b77fbe5ad7025914cd5b128c725474e2ad8d6a44"
+     }
+    ],
+    "questaoSha256": "8a5515be6553be5c5fcd0fc683d7762ed2b10061d500289dece1598045d23fd5",
+    "comentarioSha256": "b4ecb42925c874d93ba5572cc37568dcd941eada6e9f329c1ccc46da38241bd5"
+   }
   },
   "trauma-0165": {
    "tema": "trauma",
@@ -42514,7 +42594,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42537,7 +42617,34 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "92ba81bfb4ae3fb952eaa923a8ba678732b9cc91e368377e017948056183c4d4"
+   "questaoSha256": "92ba81bfb4ae3fb952eaa923a8ba678732b9cc91e368377e017948056183c4d4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "Por que a pressão mata o músculo",
+       "Os compartimentos de cada região"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-13e06142",
+       "por-que-a-pressao-mata-o-musculo-1a07d757",
+       "os-compartimentos-de-cada-regiao-222f4f26"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "fd3e2bd71bf4ee40c0ad479ff37b7218d85a8d8be0d1d34cb18a450356649166"
+     }
+    ],
+    "questaoSha256": "92ba81bfb4ae3fb952eaa923a8ba678732b9cc91e368377e017948056183c4d4",
+    "comentarioSha256": "b9eae80250af98a1475b309b676f6976ecb99a0caf66ffcdd83b1bbb8d29d00f"
+   }
   },
   "trauma-0231": {
    "tema": "trauma",
@@ -44051,7 +44158,7 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44083,7 +44190,33 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "9d48ce7441e24f3f43561f1cf6c3ed326f34f54349a2767d3cd02305b21df4cb"
+   "questaoSha256": "9d48ce7441e24f3f43561f1cf6c3ed326f34f54349a2767d3cd02305b21df4cb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Quem tem síndrome compartimental",
+       "Os compartimentos de cada região"
+      ],
+      "blocos": [
+       "quem-tem-sindrome-compartimental-b7787f07",
+       "quem-tem-sindrome-compartimental-4b3a771a",
+       "os-compartimentos-de-cada-regiao-8c215981"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "296db560d9f37ccb2a6105a593ac3a7662fd35d1d03f831e0103960bbb3fce58"
+     }
+    ],
+    "questaoSha256": "9d48ce7441e24f3f43561f1cf6c3ed326f34f54349a2767d3cd02305b21df4cb",
+    "comentarioSha256": "20c3942403faf4c3e105eeafab8041a77fc44804cb0cb5793c0a380d2c7cfb99"
+   }
   },
   "trauma-0307": {
    "tema": "trauma",
@@ -45069,7 +45202,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45085,7 +45218,33 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "602ecb42b28b7e9d5ee9f2a57f9eb8897b6ba0b23678a65fc848e3fb382c1c40"
+   "questaoSha256": "602ecb42b28b7e9d5ee9f2a57f9eb8897b6ba0b23678a65fc848e3fb382c1c40",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-eb26943e",
+       "os-compartimentos-de-cada-regiao-9ef07de3",
+       "fasciotomia-f734935c"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "d3f6dec0b02ea6962b6c84d0f81e3cf140d3e5688c995b21cbf0b91bfd2ed979"
+     }
+    ],
+    "questaoSha256": "602ecb42b28b7e9d5ee9f2a57f9eb8897b6ba0b23678a65fc848e3fb382c1c40",
+    "comentarioSha256": "658dfb085659ca91aca4472fed8587e22362196a023fe6e04b21ebb10e45d50e"
+   }
   },
   "trauma-0420": {
    "tema": "trauma",
@@ -45094,7 +45253,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45117,7 +45276,35 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "30e3c46b79150027c2e01e428f5d143824222670995927e4161085fe3961d6bd"
+   "questaoSha256": "30e3c46b79150027c2e01e428f5d143824222670995927e4161085fe3961d6bd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "fasciotomia-f108fecb",
+       "fasciotomia-8b2413f2",
+       "fasciotomia-236fb661",
+       "fasciotomia-767d74b9",
+       "fasciotomia-8bb6fb73",
+       "fasciotomia-7e6b6436"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "1a7557290cc4c1922eb9f86816b796fca2b0b14e4b505969b024ec5ae45faa7e"
+     }
+    ],
+    "questaoSha256": "30e3c46b79150027c2e01e428f5d143824222670995927e4161085fe3961d6bd",
+    "comentarioSha256": "1f827afdb14254ddef4e1962db76e0c58f8b90b5296f0b515bef711bae533d06"
+   }
   },
   "trauma-0422": {
    "tema": "trauma",
@@ -45974,7 +46161,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45990,7 +46177,45 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "4d0cb161ad288d0fd8d4a997b99ecec4b08e7f8ed3afe610cc997af93e22ef9d"
+   "questaoSha256": "4d0cb161ad288d0fd8d4a997b99ecec4b08e7f8ed3afe610cc997af93e22ef9d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-231bd2af"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
+     },
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "O antebraço como articulação: arco radial, forças e rotação"
+      ],
+      "blocos": [
+       "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "f5455e517fad6a7e91a497a6bbb6f4dcd9580f56d9c5dab6024680d3a3d8ca4f"
+     }
+    ],
+    "questaoSha256": "4d0cb161ad288d0fd8d4a997b99ecec4b08e7f8ed3afe610cc997af93e22ef9d",
+    "comentarioSha256": "657a421f3519336b2b3643e97d374329abf02dafdfe163c6376cd1982cb9c6bf"
+   }
   },
   "trauma-0483": {
    "tema": "trauma",
@@ -49209,7 +49434,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49225,7 +49450,34 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "8a6b4836b1973ff745248b5a518b605ed4ba7cf19a76bf3ed12d51796c7cfdb5"
+   "questaoSha256": "8a6b4836b1973ff745248b5a518b605ed4ba7cf19a76bf3ed12d51796c7cfdb5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Fasciotomia",
+       "Medida da pressão e o delta P"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-eb26943e",
+       "fasciotomia-f734935c",
+       "medida-da-pressao-e-o-delta-p-6e9747e1"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "4b6f8952f28cd0b65b2e05252bf6b1fa6e47070a69134fb2ad54e03ef744918e"
+     }
+    ],
+    "questaoSha256": "8a6b4836b1973ff745248b5a518b605ed4ba7cf19a76bf3ed12d51796c7cfdb5",
+    "comentarioSha256": "d172c6acc7112f7257e2602080331cc0970fd464a1a28465812d7663f5ecb3e6"
+   }
   },
   "trauma-0768": {
    "tema": "trauma",
@@ -53365,7 +53617,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53388,7 +53640,35 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "1a71531d7310853c3d477ebbfc4d62006d8fa4030585e4cd5b8bc7e6335d4c5b"
+   "questaoSha256": "1a71531d7310853c3d477ebbfc4d62006d8fa4030585e4cd5b8bc7e6335d4c5b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "Quem tem síndrome compartimental"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-13e06142",
+       "quem-tem-sindrome-compartimental-c9e21614",
+       "medida-da-pressao-e-o-delta-p-491de05b",
+       "medida-da-pressao-e-o-delta-p-44efd7f7",
+       "medida-da-pressao-e-o-delta-p-6e9747e1"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "b4d5c5d7f13430fb4bcd3d88d989d093e818f470ca38538b650403b5eb3277cd"
+     }
+    ],
+    "questaoSha256": "1a71531d7310853c3d477ebbfc4d62006d8fa4030585e4cd5b8bc7e6335d4c5b",
+    "comentarioSha256": "25825e4aec14889a304e6ab8b3c0de05995e0c74470a8547a3179111b6773dbc"
+   }
   },
   "trauma-0984": {
    "tema": "trauma",
