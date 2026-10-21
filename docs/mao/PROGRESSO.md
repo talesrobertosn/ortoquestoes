@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 13 | 2 | mao-2023 a mao-2035 | A 3, B 4, C 3, D 3 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 17 | 3 | mao-2023 a mao-2039 | A 4, B 4, C 4, D 5 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 04** (lotes 01 a 03 publicados: mao-2023 a mao-2035; pendentes 2 e 71, figura). Dica: quando o texto
+7. **Próximo: SBCM 2024, lote 05** (lotes 01 a 04 publicados: mao-2023 a mao-2039; pendentes 2 e 71, figura, e 27, sem fonte). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -281,8 +281,8 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 2 | Técnica de tenorrafia (autor e zonas indicadas) | epônimo, figura | cap. 6, p. 239 | mao / Lesões dos tendões flexores | 01 |  | pendente: figura e zonas sem fonte no Green |
 | 3 | Luxação MF dorsal complexa do polegar: estrutura interposta | fato | cap. 8, p. 358 | mao / Lesões ligamentares dos dedos | 02 | mao-2030 | publicada |
 | 4 | Artrose mediocárpica no SNAC/SLAC: tratamento de escolha | conduta | cap. 12, p. 446 e 449 | mao / Artrose do punho e artroscopia | 03 | mao-2035 | publicada |
-| 5 | Instabilidade carpal não dissociativa: característica | afirmativas | cap. 13, p. 537 | mao / Instabilidade do carpo | 04 |  | a fazer |
-| 6 | Reconstrução da ARUD: autor e ligamentos | epônimo, figura | cap. 14, p. 579 e 580 | mao / Fibrocartilagem triangular e punho ulnar | 04 |  | a fazer |
+| 5 | Instabilidade carpal não dissociativa: característica | afirmativas | cap. 13, p. 501 e 537 | mao / Instabilidade do carpo | 04 | mao-2036 | publicada |
+| 6 | Reconstrução da ARUD: autor e ligamentos | epônimo, figura | cap. 14, p. 579 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2039 | publicada |
 | 7 | SLADE e GEISSLER: tipo com união fibrosa e traço mínimo | classificação | cap. 16, p. 696 | mao / Fraturas do escafoide e do carpo | 06 |  | a fazer |
 | 8 | Acesso medial over-the-top na capsulotomia: vantagem | técnica | cap. 24 (arquivo 23), p. 1013 | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
 | 9 | Radial no cotovelo: cinco sítios de compressão | lista | cap. 28, p. 1116 | mao / Neuropatia ulnar e outras compressões | 10 |  | a fazer |
@@ -303,7 +303,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 24 | Bloqueio interescalênico | afirmativas | cap. 1 (página a achar) | mao / Anestesia em cirurgia da mão | 09 |  | a fazer |
 | 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
 | 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
-| 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist (fora da biblioteca) | mao / Instabilidade do carpo | 04 |  | a fazer |
+| 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist | mao / Instabilidade do carpo | 04 |  | pendente: sem fonte (valores do ângulo SL não estão no Green) |
 | 28 | Teste de BERGER | epônimo | correção cita The Wrist; procurar no cap. 28 | mao / Exame físico da mão e punho | 11 |  | a fazer |
 | 29 | Melhor indicação da transferência de dedo do pé | indicação | cap. 36 e 47, p. 1403 e 1404 | mao / Outras malformações congênitas | 16 |  | a fazer |
 | 30 | Kienböck na criança: conduta (algoritmo de Lichtman) | conduta | cap. 16, p. 733 e 737 | mao / Doença de Kienböck | 06 |  | a fazer |
@@ -322,7 +322,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 43 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 | mao / Fraturas dos metacarpos e falanges | 02 | mao-2027 | publicada |
 | 44 | Tuberculose no membro superior: o que raramente envolve | fato | cap. 3, p. 106 | mao / Infecções da mão | 09 |  | a fazer |
 | 45 | WEISS-HASTINGS: tipo coronal dorsal | classificação | cap. 7, p. 284 e 285 | mao / Fraturas dos metacarpos e falanges | 02 | mao-2028 | publicada |
-| 46 | GARCIA-ELIAS: propriocepção nas lesões escafossemilunares | classificação | cap. 13, p. 514 | mao / Instabilidade do carpo | 04 |  | a fazer |
+| 46 | GARCIA-ELIAS: propriocepção nas lesões escafossemilunares | classificação | cap. 13, p. 513 e 514 | mao / Instabilidade do carpo | 04 | mao-2037 | publicada |
 | 47 | Olécrano, MAYO: fratura com subluxação | classificação | cap. 20, p. 939 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 48 | Ossificação heterotópica, HASTINGS e GRAHAM: perda parcial da pronossupinação | classificação | cap. 21, p. 967 | ombro-cotovelo / Ossificação heterotópica | 20 |  | a fazer |
 | 49 | Mediano com intrínsecos paralisados: postura do polegar | fato | cap. 31, p. 1192 | mao / Transferências tendinosas e paralisias | 11 |  | a fazer |
@@ -358,7 +358,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 79 | Embriologia: camadas da figura | anatomia, figura | cap. 35, p. 1364 | mao / Outras malformações congênitas | 14 |  | a fazer |
 | 80 | PANEVA-HOLEVICH: tendão inserido na falange distal | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 01 | mao-2026 | publicada |
 | 81 | Marsupialização: onde se faz | técnica | cap. 2, p. 25 | mao / Infecções da mão | 09 |  | a fazer |
-| 82 | Paralisia cerebral: tipo de instabilidade cárpica | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 04 |  | a fazer |
+| 82 | Paralisia cerebral: tipo de instabilidade cárpica | classificação | cap. 13, p. 501 e 502 | mao / Instabilidade do carpo | 04 | mao-2038 | publicada |
 | 83 | Procedimento da imagem na ARUD | epônimo, figura | cap. 14, p. 587 | mao / Fibrocartilagem triangular e punho ulnar | 05 |  | a fazer |
 | 84 | Fratura-luxação radiocárpica: tipo de FERNANDEZ | classificação | cap. 15, p. 608 | mao / Fratura do rádio distal | 05 |  | a fazer |
 | 85 | Carpo sem o escafoide: osso mais fraturado | fato | cap. 16, p. 712 | mao / Fraturas do escafoide e do carpo | 06 |  | a fazer |
