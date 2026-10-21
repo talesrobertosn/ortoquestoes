@@ -265,7 +265,7 @@ a{color:var(--marca)}img{max-width:100%}
 .topo nav a{white-space:nowrap;text-decoration:none;color:var(--texto2);padding:.35rem .65rem;border-radius:999px}
 .topo nav a[aria-current]{background:var(--veu);color:var(--marca);font-weight:700}
 .topo nav a.app{background:var(--marca);color:#fff;font-weight:700}
-@media (max-width:44rem){.topo nav{margin-left:0;width:100%}}
+@media (max-width:44rem){.topo nav{margin-left:0;width:100%}}@media (min-width:44.01rem){.topo nav{flex-wrap:wrap;justify-content:flex-end;overflow:visible}}
 .heroi{background:radial-gradient(120% 140% at 100% 0%,#1c7d73 0%,#14655e 38%,#0b3a35 100%);color:#fff}
 .heroi .env{padding-block:2.6rem 2.8rem}
 .selo{display:inline-block;margin:0 0 .9rem;padding:.25rem .7rem;border-radius:999px;background:rgba(244,207,124,.16);color:var(--ouro);font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
@@ -324,7 +324,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:.3rem 1rem;margin-bottom:.8rem}
 """.replace("\n", "")
 
 
-def cabeca(pasta: str, titulo: str, descricao: str, dados_estruturados: list[dict]) -> str:
+def cabeca(pasta: str, titulo: str, descricao: str, dados_estruturados: list[dict], estilo: str = "", classe: str = "") -> str:
     url = f"{SITE}{pasta}/"
     ld = "\n".join(
         '<script type="application/ld+json">' + json.dumps(bloco, ensure_ascii=False) + "</script>"
@@ -359,10 +359,10 @@ def cabeca(pasta: str, titulo: str, descricao: str, dados_estruturados: list[dic
 <link rel="icon" href="../favicon.svg?v=3" type="image/svg+xml">
 <link rel="icon" href="../favicon-32.png?v=3" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png?v=3" sizes="180x180">
-<style>{ESTILO}</style>
+<style>{ESTILO}{estilo}</style>
 {ld}
 </head>
-<body>
+<body{f' class="{classe}"' if classe else ""}>
 <header class="topo"><div class="env">
   <a class="marca" href="../"><img src="../marca/simbolo.svg" alt="" width="30" height="30"><span><b>Orto</b> Questões</span></a>
   <nav aria-label="Páginas do Orto Questões">{menu}<a class="app" href="../#/">Abrir o site</a></nav>
@@ -1115,6 +1115,152 @@ def eh_mao(q: dict) -> bool:
     return q.get("area") == "cirurgia-mao" or "cirurgia-mao" in (q.get("areasAdicionais") or [])
 
 
+# Página de cirurgia da mão: identidade própria (vinho e ouro, como os posts da mão), em HTML e CSS puros.
+# A questão do topo é respondida sem JavaScript (rádios e :checked); o movimento é só CSS e some com
+# prefers-reduced-motion.
+ESTILO_MAO = """
+body.mao{--chao:#f3f1ef;--campo:#e9e4e0;--tinta:#1c1114;--tinta2:#4a3a3e;--vinho:#5c1828;--vinho2:#3a0d18;--ouro:#ecc46a;
+--ouro2:#8a5f12;--certo:#1f6b4a;background:var(--chao);color:var(--tinta)}
+@media (prefers-color-scheme:dark){body.mao{--chao:#130b0d;--campo:#211518;--tinta:#f4ece6;--tinta2:#cbbcb6;--ouro2:#ecc46a;--certo:#7fd3a6}}
+.mao .topo{background:var(--chao);border:0}.mao .topo nav a[aria-current]{background:var(--vinho);color:#fff}
+.mao .topo nav a.app{background:var(--ouro);color:#2b1d05}.mao a{color:var(--vinho)}
+@media (prefers-color-scheme:dark){.mao a{color:var(--ouro)}}
+.mao-heroi{background:var(--vinho2);color:#fff}
+.mao-heroi__grade{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 clamp(2rem,5vw,5rem);align-items:start;padding-block:clamp(2rem,5vw,4.5rem) clamp(2.5rem,6vw,5.5rem)}.mao-heroi__topo{grid-column:1/-1}
+.mao-heroi .migalhas{color:#e6cfd3}.mao-heroi .migalhas a{color:#fff}
+.mao-heroi h1{font-size:clamp(2.6rem,7vw,6.6rem);line-height:.98;letter-spacing:-.04em;margin:0 0 1.5rem;font-weight:800}
+.mao .mao-lide{font-size:clamp(1.12rem,1.6vw,1.3rem);line-height:1.5;max-width:34em;margin:0 0 2rem;color:#fff}
+.mao-acoes{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.6rem}
+.mao-botao{display:inline-block;padding:1rem 1.6rem;border-radius:999px;background:var(--ouro);color:#2b1d05!important;font-weight:800;text-decoration:none;font-size:1.06rem;transition:transform .18s,background-color .18s}
+.mao-botao:hover{transform:translateY(-2px);background:#f5d27f}.mao-botao:active{transform:translateY(0) scale(.98)}
+.mao-link{color:#fff!important;font-weight:700;text-underline-offset:4px}
+.mao-link:hover{color:var(--ouro)!important}
+.mao-fatos{display:flex;flex-wrap:wrap;gap:.6rem 2rem;margin:2.4rem 0 0;padding:0;list-style:none;font-size:1rem}.mao .mao-fatos li{color:#f1dfe2}
+.mao-fatos b{color:var(--ouro)}
+.mao-quiz{background:#fbfaf9;color:#1c1114;border-radius:22px;padding:clamp(1.2rem,2.6vw,2rem)}
+.mao-quiz fieldset{border:0;margin:0;padding:0;min-width:0}
+.mao-quiz__origem{margin:0 0 .6rem;font-size:.95rem;color:#5b464b}
+.mao-quiz legend{font-size:clamp(1.2rem,1.9vw,1.5rem);font-weight:800;line-height:1.3;letter-spacing:-.01em;margin:0 0 1rem;padding:0}
+.mao-quiz input{position:absolute;opacity:0;pointer-events:none}
+.mao-quiz__alts{display:grid;gap:.55rem}
+.mao-quiz__alts label{display:flex;gap:.8rem;align-items:center;padding:.8rem 1rem;border-radius:14px;background:#eeeae7;cursor:pointer;font-size:1.05rem;transition:background-color .15s,transform .15s}
+.mao-quiz__alts label:hover{background:#e4dedb;transform:translateX(3px)}
+.mao-quiz__alts label b{flex:none;display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:#fff;color:var(--vinho);font-weight:800}
+.mao-quiz__resp{display:none;margin-top:1rem;padding:1rem 1.1rem;border-radius:14px;background:#f1eeec;font-size:.98rem;line-height:1.55;animation:mao-surge .35s ease both}
+.mao-quiz__resp p{margin:0 0 .6rem}.mao-quiz__resp p:last-child{margin:0}
+.mao-quiz__resp .mao-quiz__veredito{font-weight:800;font-size:1.05rem}
+.mao-quiz__dica{margin:.9rem 0 0;font-size:.95rem;color:#5b464b}
+""" + "".join(
+    f".mao-quiz #mq-{l}:checked~.mao-quiz__alts label[for=mq-{l}]{{background:{'#dcefe3' if l == 'D' else '#f3d9dd'};}}"
+    f".mao-quiz #mq-{l}:checked~.mao-quiz__resp--{l}{{display:block}}"
+    f".mao-quiz #mq-{l}:checked~.mao-quiz__dica{{display:none}}"
+    f".mao-quiz #mq-{l}:focus-visible~.mao-quiz__alts label[for=mq-{l}]{{outline:3px solid #8a5f12;outline-offset:2px}}"
+    for l in "ABCD"
+) + ".mao-quiz input:checked~.mao-quiz__alts label[for=mq-D] b{background:#1f6b4a;color:#fff}" + """
+.mao-corpo>section{padding-block:clamp(4.5rem,10vw,9rem) 0}
+.mao h2{font-size:clamp(1.9rem,3.8vw,3.1rem);line-height:1.02;letter-spacing:-.035em;margin:0 0 1.2rem;font-weight:800;max-width:16em}
+.mao h3{font-size:1.35rem;letter-spacing:-.01em;margin:0 0 .6rem}
+.mao-corpo p,.mao-corpo li{color:var(--tinta);max-width:64ch}
+.mao-sub{font-size:1.12rem;max-width:42em;color:var(--tinta)}
+.mao-quem__grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.5rem,4vw,3.5rem);margin-top:2.4rem}
+.mao-quem__grade h3{font-size:clamp(1.5rem,2.4vw,2rem);color:var(--vinho)}
+@media (prefers-color-scheme:dark){.mao-quem__grade h3{color:var(--ouro)}}
+.mao-quem__grade p{font-size:1.06rem}
+.mao-titulo__grade{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2.2rem}
+.mao-campo{display:flex;flex-direction:column;gap:.7rem;min-height:21rem;padding:clamp(1.6rem,3vw,2.6rem);border-radius:24px;text-decoration:none;transition:transform .2s}
+.mao-campo:hover{transform:translateY(-4px)}
+.mao-campo--vinho{background:var(--vinho);color:#fff!important}.mao-campo--ouro{background:var(--ouro);color:#2b1d05!important}
+.mao-campo__nome{font-size:clamp(3.4rem,8vw,6.6rem);font-weight:800;letter-spacing:-.05em;line-height:.9}
+.mao-campo__texto{font-size:1.2rem;font-weight:600;max-width:20em}
+.mao-campo__pe{margin-top:auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem 1rem;font-size:1rem}.mao-campo__ir{font-weight:800}
+.mao-provas__cabeca{margin-bottom:1.6rem}
+.mao-tabela{width:100%;border-collapse:separate;border-spacing:0 .45rem;font-size:1.02rem}
+.mao-tabela thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.mao-tabela tr{background:var(--campo)}
+.mao-tabela th,.mao-tabela td{border:0;padding:.95rem 1rem;text-align:left;vertical-align:middle}
+.mao-tabela tbody th{font-size:clamp(1.15rem,1.8vw,1.45rem);font-weight:800;letter-spacing:-.01em;border-radius:14px 0 0 14px;text-transform:none;color:inherit}
+.mao-tabela tbody th a{text-decoration:none}.mao-tabela tbody th a:hover{text-decoration:underline}
+.mao-tabela td:last-child{border-radius:0 14px 14px 0;text-align:right;font-weight:700}
+.mao-tabela td{color:var(--tinta);white-space:nowrap}
+.so-leitor{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.mao-tela{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.mao figure{margin:0}.mao figure img{display:block;width:100%;height:auto;border-radius:18px;background:var(--campo)}
+.mao figcaption{margin-top:.7rem;font-size:.95rem;color:var(--tinta2)}
+.mao-lista{margin:0;padding-left:1.1rem;font-size:1.08rem}.mao-lista li{margin-bottom:.7rem}
+.mao-assuntos{margin-top:clamp(4.5rem,10vw,9rem);padding:clamp(3rem,7vw,6rem) clamp(1.2rem,5vw,4.5rem)!important;background:var(--vinho2);border-radius:28px;color:#fff}
+.mao-assuntos h2,.mao-assuntos .mao-sub{color:#fff}
+.mao-rank{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 3rem;margin:2.4rem 0 0;padding:0;list-style:none;counter-reset:r}
+.mao-rank li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.35rem 1rem;color:#fff;font-size:1.1rem}
+.mao-rank__n{color:var(--ouro);font-weight:800;font-variant-numeric:tabular-nums}
+.mao-rank__barra{grid-column:1/-1;height:.6rem;border-radius:999px;background:rgba(255,255,255,.12);overflow:hidden}
+.mao-rank__barra i{display:block;height:100%;border-radius:inherit;background:var(--ouro);transform-origin:left}
+.mao-estudo{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.mao-estudo__texto>p{font-size:1.1rem;max-width:38em}
+.mao-passos{margin:1.6rem 0 0;padding-left:1.4rem;font-size:1.08rem}.mao-passos li{margin-bottom:.8rem;padding-left:.3rem}
+.mao-passos li::marker{color:var(--vinho);font-weight:800}
+.mao-estudo__fig{max-width:25rem;width:100%;justify-self:center}
+.mao-frase{font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.35;letter-spacing:-.015em;font-weight:700;max-width:30em}
+.mao-curso__grade{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);margin-top:1.4rem}
+.mao-curso__grade p{font-size:1.08rem}
+.mao-faq__lista{display:grid;gap:.6rem;margin-top:1.6rem}
+.mao-faq details{background:var(--campo);border:0;border-radius:16px;padding:1.1rem 1.3rem}
+.mao-faq summary{cursor:pointer;font-weight:800;font-size:1.12rem}
+.mao-faq details p{margin:.7rem 0 0;font-size:1.04rem;color:var(--tinta)}
+.mao-fim{margin-top:clamp(4.5rem,10vw,9rem);background:var(--vinho);color:#fff;padding-block:clamp(3.5rem,8vw,7rem)}
+.mao .mao-fim__nome{font-size:clamp(2.4rem,7vw,6rem);font-weight:800;letter-spacing:-.045em;line-height:.95;margin:0 0 1.4rem;color:#fff!important;max-width:12em}
+.mao-fim__texto{font-size:1.15rem;max-width:38em;color:#fff!important;margin-bottom:2rem}
+.mao .relacionados a{border:0;background:var(--campo)}.mao .relacionados a b{color:var(--vinho)}
+@media (prefers-color-scheme:dark){.mao .relacionados a b{color:var(--ouro)}.mao-passos li::marker{color:var(--ouro)}}
+.mao footer{border:0;background:var(--campo)}.mao main section.chamada{display:none}
+@media (max-width:60rem){.mao-heroi__grade,.mao-tela,.mao-estudo{grid-template-columns:1fr}
+.mao-quem__grade{grid-template-columns:1fr}.mao-rank{grid-template-columns:1fr}.mao-curso__grade{grid-template-columns:1fr}}
+@media (max-width:40rem){.mao-titulo__grade{grid-template-columns:1fr}.mao-campo{min-height:15rem}
+.mao-tabela td:nth-child(3){display:none}.mao-tabela th,.mao-tabela td{padding:.8rem .7rem}.mao-tabela td{font-size:.95rem}.mao-tabela .q{display:none}}
+@keyframes mao-surge{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes mao-barra{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:no-preference){
+.mao-heroi h1{animation:mao-surge .7s cubic-bezier(.2,.7,.2,1) both}
+.mao-lide{animation:mao-surge .7s .08s cubic-bezier(.2,.7,.2,1) both}
+.mao-acoes{animation:mao-surge .7s .16s cubic-bezier(.2,.7,.2,1) both}
+.mao-fatos{animation:mao-surge .7s .24s cubic-bezier(.2,.7,.2,1) both}
+.mao-quiz{animation:mao-surge .8s .3s cubic-bezier(.2,.7,.2,1) both}
+.mao-rank__barra i{animation:mao-barra 1.1s .2s cubic-bezier(.2,.7,.2,1) both}}
+"""
+
+
+def _md_negrito(texto: str) -> str:
+    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", esc(texto))
+
+
+def quiz_html(d: dict) -> str:
+    """A questão mao-1971 (OrtoQuestões Simulado no padrão do SIMÃO) respondida na própria página, sem
+    JavaScript: cada alternativa abre o comentário dela, com o livro e a página. Sem a questão ou o
+    comentário no acervo, o bloco some."""
+    q = next((x for x in d["simulados"] if x["id"] == "mao-1971"), None)
+    com = (ler_json(DIR_ACERVO / "comentarios" / "mao.json", {}) or {}).get("mao-1971")
+    if not q or not isinstance(com, dict) or not com.get("correta"):
+        return ""
+    gab = q.get("gabarito")
+    entradas = "".join(f'<input type="radio" name="mq" id="mq-{a["letra"]}" value="{a["letra"]}">' for a in q["alternativas"])
+    alts = "".join(f'<label for="mq-{a["letra"]}"><b>{a["letra"]}</b><span>{esc(a["texto"])}</span></label>' for a in q["alternativas"])
+    resp = []
+    for a in q["alternativas"]:
+        l = a["letra"]
+        if l == gab:
+            texto, veredito = com["correta"], f"Certo: {l}."
+        else:
+            texto, veredito = (com.get("incorretas") or {}).get(l, ""), f"Não é a {l}. A resposta é {gab}."
+        resp.append(f'<div class="mao-quiz__resp mao-quiz__resp--{l}" role="status"><p class="mao-quiz__veredito">{esc(veredito)}</p>'
+                    f'<p>{_md_negrito(texto)}</p><p><a href="{link_treino("SIMÃO", area="mao")}">Treinar mais questões no padrão do SIMÃO →</a></p></div>')
+    return f"""<div class="mao-quiz" data-ui>
+<p class="mao-quiz__origem">OrtoQuestões Simulado no padrão do SIMÃO</p>
+<fieldset><legend>{esc(q["enunciado"])}</legend>{entradas}
+<div class="mao-quiz__alts">{alts}</div>
+{"".join(resp)}
+<p class="mao-quiz__dica">Toque numa alternativa para ver o comentário.</p>
+</fieldset></div>"""
+
+
 def pagina_cirurgia_mao(d: dict) -> tuple[str, dict]:
     """Para quem procura no Google "banco de questões de cirurgia da mão", "curso
     preparatório para a prova de cirurgia da mão", "questões do título da SBCM",
@@ -1182,74 +1328,107 @@ def pagina_cirurgia_mao(d: dict) -> tuple[str, dict]:
                          ["Cirurgia da mão", "Microcirurgia", "Punho", "Nervos periféricos", "Tendões da mão"]))
     ld.append(ld_faq(faq))
 
-    corpo = [cabeca(pasta, titulo, descricao, ld)]
-    corpo.append(heroi(
-        "Cirurgia da mão · título SBCM, SIMÃO e residência",
-        "Questões de cirurgia da mão para a <em>prova de título da SBCM, o SIMÃO e a residência</em>",
-        "Banco de questões de cirurgia da mão para quem vai prestar o título da SBCM e para quem vai prestar a seleção para a "
-        "residência. Provas reais de seleção com o nome de cada banca, OrtoQuestões Simulados no padrão do título e do SIMÃO e "
-        "comentário de cada alternativa, apoiado na bibliografia de referência.",
-        "Cirurgia da mão",
-        [("Treinar cirurgia da mão", treino, "principal"), ("Criar conta grátis", CRIAR_CONTA, "claro")],
-        ["Categoria própria, separada da ortopedia", "Comentário de todas as alternativas", "Treino por prova, ano e assunto"],
-    ))
-    corpo.append("""<section><h2>Para quem é</h2><div class="cartoes">
-<div class="cartao"><h3>Residentes de cirurgia da mão</h3><p>Preparação para a prova de título de especialista da SBCM e para o SIMÃO, com questões no padrão das duas provas.</p></div>
-<div class="cartao"><h3>Quem vai entrar na residência</h3><p>Ortopedistas e cirurgiões que vão prestar a seleção para a residência em cirurgia da mão, com as provas anteriores de cada serviço.</p></div>
-<div class="cartao"><h3>Cirurgiões da mão</h3><p>Revisão por assunto, em blocos curtos, com o comentário de cada alternativa e a referência da bibliografia.</p></div>
+    corpo = [cabeca(pasta, titulo, descricao, ld, estilo=ESTILO_MAO, classe="mao")]
+    corpo.append(f"""<div class="mao-heroi"><div class="env mao-heroi__grade">
+<div class="mao-heroi__topo">
+<nav class="migalhas" aria-label="Você está em"><a href="../">Orto Questões</a> › Cirurgia da mão</nav>
+<h1>Questões de cirurgia da mão</h1></div>
+<div class="mao-heroi__texto">
+<p class="mao-lide">Para a prova de título da SBCM, o SIMÃO e as provas de residência em cirurgia da mão. Cada alternativa
+comentada pela bibliografia, com o livro e a página.</p>
+<div class="mao-acoes"><a class="mao-botao" href="{treino}">Treinar cirurgia da mão</a><a class="mao-link" href="{CRIAR_CONTA}">Criar conta grátis</a></div>
+<ul class="mao-fatos"><li><b>{len(provas)}</b> provas de seleção para a residência</li><li><b>SBCM e SIMÃO</b> no padrão do título</li><li><b>Grátis</b> para começar, sem cartão</li></ul>
+</div>
+{quiz_html(d)}
+</div></div>
+<main class="env mao-corpo">""")
+    corpo.append("""<section class="mao-quem"><h2>Feito para três momentos da carreira</h2>
+<div class="mao-quem__grade">
+<div><h3>Vai fazer o título</h3><p>Residentes de cirurgia da mão que se preparam para a prova de título de especialista da SBCM e para o SIMÃO, com questões no padrão das duas provas.</p></div>
+<div><h3>Vai entrar na residência</h3><p>Ortopedistas e cirurgiões que vão prestar a seleção para a residência em cirurgia da mão, com as provas anteriores de cada serviço, com o nome real da banca.</p></div>
+<div><h3>Já opera mão</h3><p>Cirurgiões da mão que querem revisar por assunto, em blocos curtos, com o comentário de cada alternativa e a referência do livro.</p></div>
 </div></section>""")
-    sim_linhas = "".join(
-        f'<div class="cartao"><h3><a href="{link_treino(p, area="mao")}">{esc(rot)}</a></h3><p>{esc(txt)}'
-        f'{f" {num(n_sim[p])} questões no padrão da prova." if n_sim[p] else ""}</p></div>'
-        for p, rot, txt in (
-            ("SBCM", "Prova de título da SBCM", "OrtoQuestões Simulados no padrão da prova de título de especialista da Sociedade Brasileira de Cirurgia da Mão."),
-            ("SIMÃO", "SIMÃO", "OrtoQuestões Simulados no padrão do SIMÃO, o simulado do exame de título de especialista em cirurgia da mão."),
-        )
-    )
-    corpo.append(f"""<section><h2>Título da SBCM e SIMÃO</h2>
-<p class="sub">Questões autorais, elaboradas a partir da bibliografia de referência da especialidade, para treinar o formato e os assuntos
-das duas provas. Não são as provas oficiais e não têm vínculo com a SBCM.</p>
-<div class="cartoes">{sim_linhas}</div></section>""")
+    sim = {p: n_sim[p] for p in ("SBCM", "SIMÃO")}
+    corpo.append(f"""<section class="mao-titulo"><h2>O título: SBCM e SIMÃO</h2>
+<p class="mao-sub">Questões autorais, escritas a partir da bibliografia de referência, para treinar o formato e os assuntos das duas provas.
+Não são as provas oficiais e não têm vínculo com a SBCM.</p>
+<div class="mao-titulo__grade">
+<a class="mao-campo mao-campo--vinho" href="{link_treino("SBCM", area="mao")}"><span class="mao-campo__nome">SBCM</span>
+<span class="mao-campo__texto">Prova de título de especialista da Sociedade Brasileira de Cirurgia da Mão.</span>
+<span class="mao-campo__pe"><span>{num(sim["SBCM"])} questões no padrão da prova</span><span class="mao-campo__ir">Treinar SBCM →</span></span></a>
+<a class="mao-campo mao-campo--ouro" href="{link_treino("SIMÃO", area="mao")}"><span class="mao-campo__nome">SIMÃO</span>
+<span class="mao-campo__texto">O simulado do exame de título de especialista em cirurgia da mão.</span>
+<span class="mao-campo__pe"><span>{num(sim["SIMÃO"])} questões no padrão da prova</span><span class="mao-campo__ir">Treinar SIMÃO →</span></span></a>
+</div></section>""")
     linhas = []
     for prova in provas:
         anos = por_prova[prova]
         com_ano = sorted(a for a in anos if a)
         linhas.append(
-            f'<tr><td><a href="{link_treino(prova, area="mao")}">{esc(NOMES_MAO.get(prova, prova))}</a></td>'
-            f'<td>{esc(faixa(com_ano))}</td><td class="num">{len(com_ano) or "–"}</td><td class="num">{num(sum(anos.values()))}</td></tr>'
+            f'<tr><th scope="row"><a href="{link_treino(prova, area="mao")}">{esc(NOMES_MAO.get(prova, prova))}</a></th>'
+            f'<td>{esc(faixa(com_ano))}</td><td class="num">{len(com_ano) or "–"} {"edição" if len(com_ano) == 1 else "edições"}</td>'
+            f'<td class="num">{num(sum(anos.values()))}<span class="q"> questões</span></td></tr>'
         )
-    corpo.append(f"""<section><h2>Provas de seleção para a residência em cirurgia da mão</h2>
-<p class="sub">Provas reais, transcritas dos cadernos, com o nome da banca, o ano e o gabarito oficial. Clique numa prova para treinar
-só com ela; no site dá para filtrar também por ano e por assunto.</p>
-<div class="tabela"><table><caption>Provas de cirurgia da mão no acervo</caption>
-<thead><tr><th>Prova</th><th>Anos</th><th>Edições</th><th>Questões</th></tr></thead><tbody>{"".join(linhas)}</tbody></table></div></section>""")
+    corpo.append(f"""<section class="mao-provas"><div class="mao-provas__cabeca"><h2>Provas de residência em cirurgia da mão</h2>
+<p class="mao-sub">Provas reais, transcritas dos cadernos, com o nome da banca, o ano e o gabarito oficial. Toque numa prova para treinar
+só com ela; no site dá para filtrar também por ano e por assunto.</p></div>
+<table class="mao-tabela"><caption class="so-leitor">Provas de seleção para a residência em cirurgia da mão no acervo</caption>
+<thead><tr><th scope="col">Prova</th><th scope="col">Anos</th><th scope="col">Edições</th><th scope="col">Questões</th></tr></thead>
+<tbody>{"".join(linhas)}</tbody></table></section>""")
+    corpo.append("""<section class="mao-tela"><figure class="mao-tela__fig">
+<img src="../imagens/seo/mao-questao-computador.jpg" width="1560" height="1170" loading="lazy"
+alt="Questão de cirurgia da mão no Orto Questões: compressão do nervo ulnar na zona III do canal de Guyon, com as quatro alternativas">
+<figcaption>Uma questão no padrão do SIMÃO, como aparece no site.</figcaption></figure>
+<div class="mao-tela__texto"><h2>Como é treinar no site</h2>
+<ul class="mao-lista">
+<li><strong>Escolha a categoria Cirurgia da mão</strong> e filtre por prova, ano ou assunto.</li>
+<li><strong>Responda e marque a confiança:</strong> certeza, dúvida ou chute.</li>
+<li><strong>Leia o comentário de cada alternativa,</strong> inclusive da correta, com o livro e a página.</li>
+<li><strong>O que errou volta sozinho</strong> na revisão espaçada, em outro dia.</li>
+<li><strong>Veja o desempenho por assunto</strong> e o que a turma marcou em cada alternativa.</li>
+</ul></div></section>""")
     if subtemas:
-        corpo.append(f"""<section><h2>Os assuntos que mais caem em cirurgia da mão</h2>
-<p class="sub">Contagem dos assuntos nas questões de cirurgia da mão do acervo (provas de seleção e OrtoQuestões Simulados), sem anuladas.
-Use para decidir a ordem de estudo.</p>
-{barras([(n, c, "") for n, c in subtemas.most_common(15)])}</section>""")
-    corpo.append("""<section><h2>Onde estudar para a prova de cirurgia da mão</h2>
+        top = subtemas.most_common(12)
+        maximo = top[0][1] or 1
+        itens = "".join(
+            f'<li><span class="mao-rank__nome">{esc(n)}</span><span class="mao-rank__n">{num(c)}</span>'
+            f'<span class="mao-rank__barra" aria-hidden="true"><i style="width:{max(4, round(c * 100 / maximo))}%"></i></span></li>'
+            for n, c in top
+        )
+        corpo.append(f"""<section class="mao-assuntos"><div class="env-interno"><h2>Os assuntos que mais caem</h2>
+<p class="mao-sub">Questões de cirurgia da mão do acervo por assunto, somando as provas de seleção e os OrtoQuestões Simulados, sem as
+anuladas. Comece por cima.</p>
+<ol class="mao-rank">{itens}</ol></div></section>""")
+    corpo.append("""<section class="mao-estudo"><div class="mao-estudo__texto"><h2>Onde estudar para a prova</h2>
 <p>A base de qualquer preparação é a bibliografia indicada no edital da SBCM do ano, com os grandes tratados de cirurgia da mão e
-microcirurgia. O que separa ler de acertar é treinar a decisão de prova: classificação, indicação, técnica e complicação, no formato
-das questões. Por isso o roteiro abaixo junta leitura, questões e revisão.</p>
-<div class="cartoes">
-<div class="cartao"><span class="n">1</span><h3>Escolha o assunto</h3><p>Comece pelos que mais caem: anatomia, fraturas dos metacarpos e falanges, tendões, nervos, retalhos e microcirurgia.</p></div>
-<div class="cartao"><span class="n">2</span><h3>Leia o capítulo</h3><p>Na bibliografia de referência. Os comentários do site indicam o livro e, quando possível, a página.</p></div>
-<div class="cartao"><span class="n">3</span><h3>Questões do mesmo assunto</h3><p>Filtre por assunto, responda e leia o comentário de todas as alternativas, inclusive a correta.</p></div>
-<div class="cartao"><span class="n">4</span><h3>Revise os erros</h3><p>O que você errou ou acertou com dúvida volta na revisão espaçada, em outro dia.</p></div>
-<div class="cartao"><span class="n">5</span><h3>Prova no tempo</h3><p>A cada poucas semanas, uma prova inteira de seleção ou um simulado no padrão do título.</p></div>
+microcirurgia. O que separa ler de acertar é treinar a decisão de prova: classificação, indicação, técnica e complicação, no formato das
+questões.</p>
+<ol class="mao-passos">
+<li><strong>Escolha o assunto.</strong> Comece pelos que mais caem: anatomia, fraturas dos metacarpos e falanges, tendões, nervos, retalhos e microcirurgia.</li>
+<li><strong>Leia o capítulo</strong> na bibliografia de referência.</li>
+<li><strong>Responda questões do mesmo assunto</strong> e leia o comentário de todas as alternativas.</li>
+<li><strong>Revise os erros</strong> em outro dia, na revisão espaçada.</li>
+<li><strong>Faça uma prova no tempo</strong> a cada poucas semanas: uma seleção inteira ou um simulado no padrão do título.</li>
+</ol></div>
+<figure class="mao-estudo__fig"><img src="../imagens/seo/mao-questao-celular.jpg" width="780" height="1688" loading="lazy"
+alt="A mesma questão de cirurgia da mão no celular, com a alternativa D marcada e o botão Responder D"></figure></section>""")
+    corpo.append("""<section class="mao-curso"><h2>Curso preparatório ou banco de questões?</h2>
+<p class="mao-frase">Quem procura um curso preparatório para a prova de cirurgia da mão precisa de três coisas: organizar a teoria,
+treinar no formato da prova e não esquecer o que já estudou.</p>
+<div class="mao-curso__grade">
+<p>Aulas ajudam na primeira. Questões comentadas e revisão resolvem as outras duas. O Orto Questões não tem videoaulas: é a parte das
+questões, com cronograma até a prova, desempenho por assunto e revisão dos erros.</p>
+<p>Funciona sozinho, com a bibliografia, ou junto de um curso. As datas, os pré-requisitos e a bibliografia de cada prova estão no
+edital da SBCM e de cada serviço: confira sempre a versão do ano.</p>
 </div></section>""")
-    corpo.append("""<section><h2>Curso preparatório ou banco de questões?</h2>
-<p>Quem procura um curso preparatório para a prova de cirurgia da mão costuma precisar de três coisas: organizar a teoria, treinar no
-formato da prova e não esquecer o que já estudou. Aulas ajudam na primeira; questões comentadas e revisão resolvem as outras duas.
-O Orto Questões não tem videoaulas: é a parte das questões, com cronograma até a prova, desempenho por assunto e revisão dos erros.
-Funciona sozinho, com a bibliografia, ou junto de um curso.</p>
-<div class="aviso"><p>As datas, os pré-requisitos e a bibliografia de cada prova estão no edital da SBCM e de cada serviço. Confira sempre a
-versão do ano.</p></div></section>""")
-    corpo.append(faq_html(faq))
-    corpo.append(chamada("Teste com uma prova de cirurgia da mão",
-                         "Crie a conta grátis, escolha a categoria Cirurgia da mão e responda uma prova de seleção ou um simulado no "
-                         "padrão do título. Em uma sessão você vê quais assuntos pedem mais atenção."))
+    itens_faq = "".join(f"<details><summary>{esc(p)}</summary><p>{esc(r)}</p></details>" for p, r in faq)
+    corpo.append(f'<section class="mao-faq" id="perguntas"><h2>Perguntas frequentes</h2><div class="mao-faq__lista">{itens_faq}</div></section>')
+    corpo.append(f"""</main><section class="mao-fim"><div class="env">
+<h2 class="mao-fim__nome">Cirurgia da mão no Orto Questões</h2>
+<p class="mao-fim__texto">Crie a conta grátis, escolha a categoria Cirurgia da mão e responda uma prova de seleção ou um simulado no padrão
+do título. Em uma sessão você vê quais assuntos pedem mais atenção.</p>
+<div class="mao-acoes"><a class="mao-botao" href="{CRIAR_CONTA}">Criar conta grátis</a><a class="mao-link" href="{treino}">Ver as questões</a></div>
+</div></section><main class="env">""")
     corpo.append(relacionados(pasta))
     corpo.append(rodape())
     return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": faq}
