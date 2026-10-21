@@ -17,7 +17,9 @@ import { build } from 'vite'
 const KB = 1024
 const ORCAMENTO = {
   /** index-*.js (código do site que roda em toda página) */
-  entradaJs: 56 * KB,
+  // 56 → 57 KB em 21/10/2026: o crachá do perfil no topo do site decide em toda página se aparece
+  // (src/conta/passosPerfil.ts, ~0,5 KB); o componente e o CSS dele seguem sob demanda.
+  entradaJs: 57 * KB,
   /** index-*.css (estilos globais, bloqueiam a pintura) */
   entradaCss: 34 * KB,
   /** entrada + react + supabase + CSS global */

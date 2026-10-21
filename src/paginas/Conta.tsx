@@ -34,6 +34,7 @@ import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { APELIDO_MAXIMO, usarPerfilRanking } from '../conta/perfilRanking'
 import { ANOS, SITUACOES, lerLocais, lerProvas, type ProvaInteresse } from '../conta/perfilEstudo'
+import { CrachaPixel } from '../componentes/CrachaPixel'
 import { CampoServico, SERVICO_VARIOS } from '../componentes/CampoServico'
 import { CamposEtapa } from '../componentes/CamposEtapa'
 import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
@@ -598,7 +599,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     </div>
   }
   const nomeCompleto = `${nome.trim()} ${sobrenome.trim()}`.trim()
-  const iniciais = ((nome.trim().charAt(0) + sobrenome.trim().charAt(0)) || sessao.user.email?.charAt(0) || '?').toUpperCase()
   const emblema = metricas ? conquistaAtual(metricas.respondidas) : null
   const etapa = rotuloEtapa(perfil.situacao, perfil.ano_residencia)
   const assinante = premium && motivo === 'assinatura'
@@ -637,21 +637,25 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   return <article className="conta-pagina ct">
     <section className="ct-heroi" aria-labelledby="ct-nome">
       <div className="ct-heroi__perfil">
-        <span className={'ct-avatar' + (assinante ? ' ct-avatar--assinante' : '')} aria-hidden="true">
-          {iniciais}
-          {assinante && <span className="ct-avatar__coroa"><Icone nome="coroa" tamanho={13} /></span>}
-        </span>
+        {/* O crachá da pessoa (21/10/2026, pedido do Tales): o mesmo do "Complete seu perfil", com o
+            que já está salvo; um toque abre o perfil para mudar ou completar. */}
+        <a className="ct-cracha" href={linkSecao('perfil')} aria-label="Seu crachá: abrir o perfil">
+          <CrachaPixel assinante={assinante} dados={{
+            situacao: String(perfil.situacao ?? ''), ano: String(perfil.ano_residencia ?? ''), provas: lerProvas(perfil.provas_interesse),
+            servico: String(perfil.servico ?? ''), nome: String(perfil.nome ?? ''), sobrenome: String(perfil.sobrenome ?? ''), uf: String(perfil.uf ?? ''),
+          }} />
+        </a>
         <div className="ct-heroi__nome">
           <p className="ct-heroi__rotulo">Minha conta</p>
           <h1 id="ct-nome">{nomeCompleto || 'Sua conta'}</h1>
           <p className="ct-heroi__email">{sessao.user.email}</p>
+          <ul className="ct-selos" aria-label="Resumo da conta">
+            <li><a className={'ct-selo' + (assinante ? ' ct-selo--ouro' : '')} href={linkSecao('assinatura')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={13} />{selo}</a></li>
+            {etapa && <li><a className="ct-selo" href={linkSecao('perfil')}><Icone nome="usuario" tamanho={13} />{etapa}</a></li>}
+            <li><a className="ct-selo ct-selo--sync" href={linkSecao('aparelhos')}><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /><span aria-live="polite">{textoSync}</span></a></li>
+          </ul>
         </div>
       </div>
-      <ul className="ct-selos" aria-label="Resumo da conta">
-        <li><a className={'ct-selo' + (assinante ? ' ct-selo--ouro' : '')} href={linkSecao('assinatura')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={13} />{selo}</a></li>
-        {etapa && <li><a className="ct-selo" href={linkSecao('perfil')}><Icone nome="usuario" tamanho={13} />{etapa}</a></li>}
-        <li><a className="ct-selo ct-selo--sync" href={linkSecao('aparelhos')}><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /><span aria-live="polite">{textoSync}</span></a></li>
-      </ul>
       <div className="ct-heroi__acoes">
         <button className={'botao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar'}</button>
         {administrador && <a className="botao" href={href('/admin')}><Icone nome="grafico" tamanho={16} /> Painel do admin</a>}

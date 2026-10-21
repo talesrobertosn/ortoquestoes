@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { ANOS, PROVAS, SITUACOES, provasSugeridas, type ProvaInteresse } from '../conta/perfilEstudo'
+import { ANOS, PROVAS, SITUACOES, provasSugeridas, rotuloBotaoProva, type ProvaInteresse } from '../conta/perfilEstudo'
 import { Icone } from './Icone'
 
 interface Props {
@@ -63,7 +63,7 @@ export function CamposEtapa({ situacao, ano, provas, aoMudarSituacao, aoMudarAno
             return (
               <button key={valor} type="button" className="campos-etapa__prova" aria-pressed={marcada} onClick={() => alternar(valor)}>
                 <span className="campos-etapa__marca" aria-hidden="true">{marcada && <Icone nome="certo" tamanho={13} />}</span>
-                <span><strong>{rotulo}</strong><small>{explicacao}</small></span>
+                <span><strong>{rotuloBotaoProva(valor, rotulo)}</strong><small>{explicacao}</small></span>
               </button>
             )
           })}

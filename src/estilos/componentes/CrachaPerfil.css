@@ -1,0 +1,59 @@
+/* Pedido "Complete seu perfil" (21/10/2026, pedido do Tales: "uma box bonita no topo, do nosso jeito,
+   que estimule a pessoa a preencher os dados"). O crachá em si está em Cracha.css; aqui ficam a caixa,
+   o palco em que ele fica pendurado e as perguntas. Carregado só quando o pedido aparece. */
+.cracha-perfil {
+  --cr-palco: color-mix(in srgb, var(--verdete) 8%, var(--superficie-2, #f3f4f1));
+  display: grid; grid-template-columns: 14.5rem minmax(0, 1fr); grid-template-areas: "palco cabeca" "palco pergunta";
+  column-gap: 1.5rem; row-gap: .9rem; align-items: start;
+  margin: 0 0 1.5rem; padding: .75rem 1.5rem .75rem .75rem;
+  border: 1px solid color-mix(in srgb, var(--verdete) 35%, var(--traco)); border-radius: var(--raio-cartao, 16px);
+  background: linear-gradient(120deg, var(--superficie) 55%, var(--verdete-veu));
+  box-shadow: var(--sombra-media, 0 6px 20px rgba(0, 0, 0, .06)); color: var(--texto);
+}
+:root[data-tema="escuro"] .cracha-perfil { --cr-palco: color-mix(in srgb, var(--verdete) 14%, var(--superficie-2, #1f2726)); }
+
+/* ---------- Palco: o canto em que o crachá fica pendurado ---------- */
+.cracha-perfil__palco {
+  grid-area: palco; display: grid; justify-content: center; align-content: start; align-self: stretch; min-height: 20.5rem; overflow: hidden;
+  border-radius: 10px; background: var(--cr-palco); cursor: pointer; -webkit-tap-highlight-color: transparent;
+  background-image: radial-gradient(color-mix(in srgb, var(--verdete) 20%, transparent) 1px, transparent 1.4px);
+  background-size: 18px 18px; background-position: 9px 9px;
+}
+.cracha-perfil__palco .cracha { --u: 4.4px; }
+/* Pronto: o crachá brilha em ouro. */
+.cracha-perfil--pronto .cracha__cartao { box-shadow: 0 0 0 2px var(--cr-tinta), 0 0 0 calc(var(--u) * 1.4) var(--cr-ouro), calc(var(--u) * 1.5) calc(var(--u) * 1.5) 0 calc(var(--u) * 1.4) rgba(107, 74, 12, .3); }
+
+/* ---------- O texto ao lado ---------- */
+.cracha-perfil__cabeca { grid-area: cabeca; display: grid; gap: .35rem; padding-top: .5rem; }
+.cracha-perfil__selo { font-family: var(--fonte-pixel); font-size: var(--meta); font-weight: 700; color: var(--verdete); text-transform: uppercase; letter-spacing: .06em; }
+.cracha-perfil__trilha { display: flex; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.cracha-perfil__trilha li { width: 26px; height: 7px; background: var(--traco-forte, #cfd8d6); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .08); }
+.cracha-perfil__trilha li.feito { background: var(--verdete); }
+.cracha-perfil__trilha li.agora { background: #c99a3b; animation: cracha-pisca 1.4s steps(2, jump-none) infinite; }
+.cracha-perfil__cabeca h2 { margin: .2rem 0 0; font-size: 1.35rem; line-height: 1.2; }
+.cracha-perfil__cabeca p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); max-width: 60ch; }
+.cracha-perfil__opcional { margin-left: .5rem; padding: .1rem .5rem; border-radius: 999px; background: var(--superficie-2); color: var(--texto-2); font-size: var(--meta); font-weight: 600; vertical-align: middle; }
+.cracha-perfil__pergunta { grid-area: pergunta; display: grid; gap: .9rem; min-width: 0; padding-bottom: .5rem; }
+.cracha-perfil__duplo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+.cracha-perfil__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.cracha-perfil__depois { margin-left: auto; padding: .4rem .2rem; border: 0; background: none; color: var(--texto-2); font: inherit; font-size: var(--corpo-menor); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.cracha-perfil__depois:hover { color: var(--texto); }
+
+/* ---------- Celular: o crachá menor ao lado do título, a pergunta embaixo ---------- */
+@media (max-width: 640px) {
+  .cracha-perfil__palco .cracha { --u: 2.4px; }
+  .cracha-perfil {
+    grid-template-columns: 6.6rem minmax(0, 1fr); grid-template-areas: "palco cabeca" "pergunta pergunta";
+    column-gap: .85rem; padding: .6rem .85rem .85rem .6rem;
+  }
+  .cracha-perfil__palco { min-height: 12rem; }
+  .cracha-perfil__cabeca { padding-top: .2rem; }
+  .cracha-perfil__cabeca h2 { font-size: 1.12rem; }
+  .cracha-perfil__trilha li { width: 16px; }
+  .cracha-perfil__duplo { grid-template-columns: 1fr; }
+  .cracha-perfil__depois { margin-left: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cracha-perfil__trilha li.agora { animation: none !important; }
+}
