@@ -29745,5 +29745,80 @@
   ],
   "geradoEm": "2026-10-21",
   "conferido": false
+ },
+ "mao-2077": {
+  "conceito": "**Para que serve a escala.** A classificação ASIA é a mais usada pelos cirurgiões que não são de mão para descrever a lesão medular (Green, cap. 33, p. 1266); o cirurgião de mão agrupa os pacientes pela classificação internacional da tetraplegia, baseada no número de músculos funcionais abaixo do cotovelo (p. 1268). A ASIA também tem valor prognóstico: pacientes ASIA A raramente convertem para B e menos ainda para C ou D, enquanto até 40% dos ASIA B chegam a C ou D, e 60% a 80% dos ASIA C se convertem espontaneamente para D (p. 1266).\n\n**Os graus.** A lógica é ir do completo ao normal, separando primeiro se há sensibilidade, depois se há motricidade, depois quanta motricidade.\n\n| Grau (Green, cap. 33, Tabela 33.1, p. 1267) | Tipo | Definição |\n|---|---|---|\n| A | Completo | Nenhuma função sensitiva ou motora preservada em S4-S5 |\n| B | Incompleto | Sensibilidade, mas não motricidade, preservada abaixo do nível, incluindo S4-S5 |\n| C | Incompleto | Motricidade preservada abaixo do nível; a maioria dos músculos-chave com grau menor que 3 |\n| D | Incompleto | Motricidade preservada abaixo do nível; a maioria dos músculos-chave com grau maior ou igual a 3 |\n| E | Normal | Sensibilidade e motricidade normais |\n\n**O caso.** Há motricidade abaixo do nível, então não é A nem B. A maioria dos músculos-chave está abaixo de 3, ou seja, não vence a gravidade: é ASIA C. Se a maioria tivesse grau 3 ou mais, seria D.\n\n**Por que esta questão foi criada.** Inspirada na questão 51 da SBCM 2024, que cobrou o grau ASIA pela força preservada abaixo do nível.\n\n> **Na prova:** ASIA: A nada; B só sensibilidade; C motor com maioria < 3; D motor com maioria ≥ 3; E normal.",
+  "correta": "**B: ASIA C.** Na Tabela 33.1 do Green, o grau C é a lesão incompleta com motricidade preservada abaixo do nível e a maioria dos músculos-chave com grau menor que 3 (cap. 33, p. 1267).",
+  "incorretas": {
+   "A": "**Exige força maior.** No grau D, a maioria dos músculos-chave abaixo do nível tem grau maior ou igual a 3 (Green, cap. 33, p. 1267).",
+   "C": "**Não há nada no A.** O grau A é a lesão completa, sem função sensitiva nem motora em S4-S5 (Green, cap. 33, p. 1267).",
+   "D": "**No B não há motricidade.** O grau B preserva só a sensibilidade abaixo do nível (Green, cap. 33, p. 1267)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 33 (Tetraplegia), p. 1266 a 1268 (Tabela 33.1)"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
+ },
+ "mao-2078": {
+  "conceito": "**A escada também vale na tetraplegia.** O Green escreve: \"O manejo do punho e da mão na tetraplegia segue os conceitos de 'hierarquia da função da mão' ou 'escada de reconstrução'. O movimento fundamental primário é a extensão do punho, que produz tenodese para preensão quando os dedos flexionam na palma da mão e tenodese para pinça lateral quando o polegar aduz contra o dedo indicador\" (cap. 33, p. 1268). A extensão do punho também põe os flexores dos dedos na melhor posição da curva de comprimento e tensão; o segundo movimento mais essencial é a pinça lateral, usada na maior parte das atividades diárias (p. 1268).\n\n**Na hora de distribuir os doadores.** \"Os músculos disponíveis são priorizados primeiro para a extensão do punho, depois para a pinça, depois para a preensão e, finalmente, para as funções de liberação\" (Green, cap. 33, p. 1272). E há uma condição prévia: a mão precisa de mobilidade passiva e de tenodese; se o polegar repousa totalmente supinado e não pinça com a extensão do punho, as transferências para pinça serão ineficazes sem estabilizar o esqueleto, por exemplo com fusão carpometacarpal (p. 1268).\n\n| Ordem (Green, cap. 33, p. 1268 e 1272) | Função |\n|---|---|\n| 1 | Extensão do punho |\n| 2 | Pinça lateral |\n| 3 | Preensão (flexão dos dedos) |\n| 4 | Liberação (abertura) |\n\n**Por que esta questão foi criada.** Inspirada na questão 60 da SBCM 2024, que cobrou a função principal a ser obtida no punho e na mão do tetraplégico.\n\n> **Na prova:** tetraplegia: 1º EXTENSÃO DO PUNHO (dá a tenodese), 2º pinça lateral, 3º preensão, 4º liberação.",
+  "correta": "**A: extensão do punho.** O Green chama a extensão do punho de movimento fundamental primário e prioriza os doadores primeiro para ela (cap. 33, p. 1268 e 1272).",
+  "incorretas": {
+   "B": "**É a segunda.** A pinça lateral é o segundo movimento mais essencial, depois da extensão do punho (Green, cap. 33, p. 1268).",
+   "C": "**É a terceira.** A preensão vem depois da extensão do punho e da pinça (Green, cap. 33, p. 1272).",
+   "D": "**Fora da escada da mão.** A hierarquia do punho e da mão começa pela extensão do punho; a supinação do antebraço não aparece entre os degraus (Green, cap. 33, p. 1268 e 1272)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 33 (Tetraplegia), p. 1268 e 1272"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
+ },
+ "mao-2079": {
+  "conceito": "**Ler o plexo de dentro para fora.** As raízes de C5 a T1 formam troncos, os troncos se dividem, as divisões formam fascículos e os fascículos dão os ramos terminais. Saber de que nível sai cada ramo ajuda a localizar a lesão.\n\n**Ramos das raízes.** O Green lista, no nível proximal, uma contribuição de C5 para o nervo frênico, o nervo escapular dorsal (C5) e o nervo torácico longo, \"com contribuições de C5, C6 e C7\" (cap. 34, p. 1304).\n\n**Ramos do tronco e das divisões.** \"Os únicos ramos do tronco são o nervo supraescapular e o nervo para o músculo subclávio, ambos do tronco superior\" (Green, cap. 34, p. 1304). O peitoral lateral surge no nível das divisões, no plexo retroclavicular (p. 1304).\n\n| Nível (Green, cap. 34, p. 1304) | Ramos |\n|---|---|\n| Raízes | Frênico (contribuição de C5), escapular dorsal (C5), torácico longo (C5 a C7) |\n| Tronco superior | Supraescapular, nervo do subclávio |\n| Divisões | Peitoral lateral |\n\n**Por que importa.** A perda do romboide (escapular dorsal, de C5) e do serrátil anterior (torácico longo, de C5 a C7) é um indicador importante de lesão proximal ou pré-ganglionar, porque esses nervos saem antes dos troncos (Green, cap. 34, p. 1308).\n\n**Por que esta questão foi criada.** Inspirada na questão 11 da SBCM 2024, que cobrou o nervo que se origina diretamente da raiz cervical.\n\n> **Na prova:** das raízes: escapular dorsal (C5), TORÁCICO LONGO (C5 a C7), contribuição ao frênico. Do tronco superior: supraescapular e subclávio. Das divisões: peitoral lateral.",
+  "correta": "**C: nervo torácico longo.** O Green o coloca entre os ramos do nível proximal, formado por contribuições de C5, C6 e C7 (cap. 34, p. 1304).",
+  "incorretas": {
+   "A": "**Vem do tronco.** O supraescapular é um dos dois únicos ramos do tronco, do tronco superior (Green, cap. 34, p. 1304).",
+   "B": "**Vem da divisão.** O peitoral lateral surge no nível da divisão, no plexo retroclavicular (Green, cap. 34, p. 1304).",
+   "D": "**Também do tronco.** O nervo do subclávio sai do tronco superior, junto do supraescapular (Green, cap. 34, p. 1304)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 34 (Lesão traumática do plexo braquial), p. 1304 e 1308"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
+ },
+ "mao-2080": {
+  "conceito": "**A ideia.** Na lesão do tronco superior (em geral C5-C6 isoladas), o tríceps, de C7, costuma estar forte. Um de seus ramos motores pode então ser desviado para o nervo axilar e devolver o deltoide. O Green diz que essa transferência \"tem sido amplamente aceita\" e é usada para pacientes com forte função do tríceps, geralmente C5-C6 isoladas (cap. 34, p. 1328).\n\n**A técnica.** Incisão posterior no braço, do acrômio ao meio do braço; o deltoide é afastado e o nervo axilar é achado no espaço quadrilátero, com a ajuda do ramo sensitivo rastreado de volta (Green, cap. 34, p. 1328 e 1329). Abre-se o intervalo entre as cabeças longa e lateral do tríceps e expõem-se os ramos do radial: \"Normalmente, selecionamos o ramo motor da cabeça longa do tríceps, conforme descrito originalmente por LEECHAVENGVONGS e colegas\" (p. 1329). Nos pontos técnicos: coaptação direta, sem enxerto, à divisão anterior do nervo axilar (p. 1328), como mostram as Figs. 34.28 e 34.29 (p. 1329 e 1330).\n\n**Todo o axilar ou só a divisão anterior?** O Green conta que o axilar propriamente dito é ocasionalmente reinervado por um ou mais ramos do tríceps; \"mais comumente, realizamos a reinervação apenas da divisão anterior\"; a justificativa teórica para atingir todo o nervo seria reinervar também o redondo menor, rotador externo importante (cap. 34, p. 1329). Por isso a questão original, que dava como certo neurotizar todo o axilar, foi reescrita com o alvo que o Green descreve como habitual.\n\n| Ponto (Green, cap. 34, p. 1328 a 1330) | O que o Green diz |\n|---|---|\n| Indicação | Tríceps forte, em geral C5-C6; idealmente lesão com menos de 6 a 9 meses |\n| Contraindicação | Tríceps com força BMRC menor que 4 |\n| Doador habitual | Ramo da cabeça longa do tríceps |\n| Receptor habitual | Divisão anterior do axilar, coaptação direta |\n| Recuperação | Reinervação no EMG aos 6 meses; contração do deltoide perceptível por volta dos 6 meses |\n\n**Por que esta questão foi criada.** Inspirada na questão 31 da SBCM 2024, que cobrou o procedimento de LEECHAVENGVONGS. O gabarito original afirmava neurotizar todo o axilar, que o Green apresenta como justificativa teórica, não como rotina; a questão foi reescrita com a técnica habitual.\n\n> **Na prova:** LEECHAVENGVONGS: ramo da CABEÇA LONGA do tríceps → DIVISÃO ANTERIOR do axilar, direto, sem enxerto. Tríceps ≥ 4. Deltoide aos 6 meses.",
+  "correta": "**A: o ramo da cabeça longa do tríceps é coaptado diretamente à divisão anterior do axilar.** É a escolha habitual do Green, como descrita originalmente por LEECHAVENGVONGS, com reparo direto sem enxerto (cap. 34, p. 1328 e 1329).",
+  "incorretas": {
+   "B": "**Força insuficiente.** Pacientes com fraqueza do tríceps no pré-operatório, BMRC menor que 4, não são candidatos (Green, cap. 34, p. 1330).",
+   "C": "**Cedo demais.** A reinervação documentada no EMG ocorre aos 6 meses, e a contração do deltoide costuma ser perceptível aos 6 meses (Green, cap. 34, p. 1328 e 1330).",
+   "D": "**Não precisa de enxerto.** A mobilização suficiente permite coaptação direta do ramo do tríceps à divisão anterior do axilar, sem enxerto (Green, cap. 34, p. 1328)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 34 (Lesão traumática do plexo braquial), p. 1328 a 1330 (Figs. 34.28 e 34.29)"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
+ },
+ "mao-2081": {
+  "conceito": "**Por que o grácil.** É o músculo de funcionamento livre mais usado: músculo em fita, não peniforme, com excelente comprimento de fibra, mas área de secção transversa bem menor que a do bíceps; casa pouco com a força e bem com a excursão, e mesmo assim costuma flexionar o cotovelo contra a gravidade (Green, cap. 34, p. 1334). A posição proximal do pedículo neurovascular permite reinervação rápida a partir do acessório espinhal ou dos intercostais, e o comprimento facilita levá-lo ao antebraço para mover punho e mão (p. 1334).\n\n**O pedículo.** \"Um ramo do nervo obturador entra no músculo obliquamente imediatamente cefálico ao pedículo vascular maior, em um ponto de 6 a 12 cm de sua origem\" (Green, cap. 34, p. 1335). Já a artéria dominante vem de um ramo da femoral profunda, a 8 a 12 cm da origem, com cerca de 4 a 6 cm de comprimento, e é dissecada entre o adutor magno, atrás, e o adutor longo, à frente (p. 1335). O retalho combinado grácil e adutor longo usa um pedículo vascular comum e dois ramos independentes do obturador (p. 1334).\n\n| Estrutura do grácil (Green, cap. 34, p. 1335) | Origem |\n|---|---|\n| Nervo motor | Ramo do nervo obturador, a 6 a 12 cm da origem |\n| Artéria dominante | Ramo da femoral profunda, a 8 a 12 cm da origem |\n\n**A pegadinha.** O femoral aparece na irrigação (artéria femoral profunda), não na inervação. É fácil confundir.\n\n**Por que esta questão foi criada.** Inspirada na questão 90 da SBCM 2024, que cobrou o nervo motor do grácil.\n\n> **Na prova:** grácil livre: nervo = OBTURATÓRIO; artéria = ramo da FEMORAL PROFUNDA, entre adutor longo e adutor magno.",
+  "correta": "**B: obturatório.** O Green descreve um ramo do nervo obturador entrando no grácil logo acima do pedículo vascular, a 6 a 12 cm da origem (cap. 34, p. 1335).",
+  "incorretas": {
+   "A": "**Confunde artéria com nervo.** Do sistema femoral vem a artéria dominante, ramo da femoral profunda; o nervo é do obturador (Green, cap. 34, p. 1335).",
+   "C": "**Não inerva o grácil.** O Green descreve a inervação do grácil por um ramo do obturador (cap. 34, p. 1335).",
+   "D": "**Não é o nervo motor.** O Green descreve o nervo motor do grácil como ramo do obturador (cap. 34, p. 1335)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 34 (Lesão traumática do plexo braquial), p. 1334 e 1335"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
  }
 }
