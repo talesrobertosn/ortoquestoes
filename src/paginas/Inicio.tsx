@@ -30,7 +30,6 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
-import { CompletarPerfil } from '../componentes/CompletarPerfil'
 import { contasDisponiveis } from '../conta/supabase'
 import { EXIGIR_CONTA_PARA_QUESTOES } from '../config'
 import { planoRevisao } from '../estado/planoRevisao'
@@ -550,8 +549,8 @@ export function Inicio() {
           <VitrineAssinante />
         </div>
 
-        {/* Depois do estudo do dia, não antes: os pedidos (perfil, novidade) não podem empurrar a ação principal para baixo. */}
-        <CompletarPerfil />
+        {/* Depois do estudo do dia, não antes: a novidade não pode empurrar a ação principal para baixo.
+            O crachá do perfil fica no topo do site, uma vez por entrada (App.tsx). */}
         {cronogramaNoPainel && <NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} />}
         {!calculo && !cronograma.carregando && respondidasTotal < 30 && <AteAProva total={indice!.total} conta={Boolean(conta)} />}
 

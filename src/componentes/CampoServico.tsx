@@ -1,11 +1,11 @@
 import { useEffect, useState, type ReactNode } from 'react'
-import { LOCAIS_MAXIMO, LOCAL_TAMANHO, trabalhaComoEspecialista } from '../conta/perfilEstudo'
+import { LOCAIS_MAXIMO, LOCAL_TAMANHO, SERVICO_VARIOS, trabalhaComoEspecialista } from '../conta/perfilEstudo'
 import { SERVICOS_CONHECIDOS } from './admin/servicosConhecidos'
 import { Icone } from './Icone'
 import '../estilos/componentes/PerfilRapido.css'
 
 /** O que gravamos quando a pessoa atende em vários lugares, sem um serviço principal. */
-export const SERVICO_VARIOS = 'Vários serviços'
+export { SERVICO_VARIOS }
 
 /** Rótulo e exemplo do campo conforme a etapa: estudante tem faculdade; quem já é ortopedista pode ter vários lugares. */
 function textos(situacao: string) {

@@ -11,12 +11,14 @@
  *   ao fim da residência, que dá o título de especialista.
  * - Prova para cirurgia da mão: seleção feita depois da ortopedia para começar a
  *   residência em cirurgia da mão.
- * - R4 e fellowship: seleções para a subespecialização (ENARE e provas próprias).
+ * - Título de cirurgia da mão (SBCM) e título de quadril (SBQ): provas das sociedades.
+ * - R4 de coluna, R4 e fellowship: seleções para a subespecialização (ENARE e provas próprias).
+ * O Tales chama o TEOT também de TEPOT: é a mesma prova (21/10/2026).
  */
 
 export type Situacao = 'residente' | 'r4' | 'mao' | 'ortopedista' | 'estudante' | 'outro'
 export type AnoResidencia = 'r1' | 'r2' | 'r3'
-export type ProvaInteresse = 'taro' | 'teot' | 'mao' | 'r4' | 'atualizacao'
+export type ProvaInteresse = 'taro' | 'teot' | 'mao' | 'titulo_mao' | 'coluna' | 'sbq' | 'r4' | 'atualizacao'
 
 export const SITUACOES: Array<[Situacao, string]> = [
   ['residente', 'Residente de ortopedia (R1 a R3)'],
@@ -30,11 +32,17 @@ export const ANOS: Array<[AnoResidencia, string]> = [['r1', 'R1'], ['r2', 'R2'],
 
 export const PROVAS: Array<[ProvaInteresse, string, string]> = [
   ['taro', 'TARO', 'avaliação anual dos residentes, do R1 ao R3'],
-  ['teot', 'TEOT', 'título de especialista, ao fim da residência'],
-  ['mao', 'Prova para cirurgia da mão', 'seleção para a residência em mão'],
-  ['r4', 'R4 ou fellowship', 'seleção para subespecialidade'],
+  ['teot', 'TEOT', 'título de especialista, ao fim da residência (o mesmo que TEPOT)'],
+  ['mao', 'Entrada na cirurgia da mão', 'seleção para a residência em mão'],
+  ['titulo_mao', 'Título de cirurgia da mão', 'prova da Sociedade Brasileira de Cirurgia da Mão'],
+  ['coluna', 'R4 de coluna', 'seleção para a residência em coluna'],
+  ['sbq', 'Título de quadril (SBQ)', 'prova da Sociedade Brasileira de Quadril'],
+  ['r4', 'Outro R4 ou fellowship', 'seleção para outra subespecialidade'],
   ['atualizacao', 'Atualização', 'estudo sem prova marcada'],
 ]
+
+/** Rótulo do botão de prova no perfil: o TEOT aparece junto do nome que o Tales também usa. */
+export const rotuloBotaoProva = (p: string, rotulo = rotuloProva(p)) => (p === 'teot' ? 'TEOT / TEPOT' : rotulo)
 
 /** Rótulo curto da etapa, para listas e tabelas ("R2", "R4 / fellowship"…). */
 export function rotuloEtapa(situacao?: string | null, ano?: string | null): string {
@@ -47,8 +55,8 @@ export const rotuloProva = (p: string) => PROVAS.find(([v]) => v === p)?.[1] ?? 
 /** Provas sugeridas para a etapa: a pessoa pode desmarcar e marcar outras. */
 export function provasSugeridas(situacao: string, ano: string): ProvaInteresse[] {
   if (situacao === 'residente') return ano === 'r3' ? ['teot', 'taro'] : ['taro']
-  if (situacao === 'r4') return ['teot', 'r4']
-  if (situacao === 'mao') return ['mao']
+  if (situacao === 'r4') return ['teot']
+  if (situacao === 'mao') return ['titulo_mao']
   if (situacao === 'ortopedista') return ['atualizacao']
   if (situacao === 'estudante') return ['taro']
   return []
@@ -78,7 +86,7 @@ export const ETAPAS_RAPIDAS: Array<{ id: string; rotulo: string; situacao: Situa
   { id: 'r1', rotulo: 'R1', situacao: 'residente', ano: 'r1' },
   { id: 'r2', rotulo: 'R2', situacao: 'residente', ano: 'r2' },
   { id: 'r3', rotulo: 'R3', situacao: 'residente', ano: 'r3' },
-  { id: 'r4', rotulo: 'R4 / fellow', situacao: 'r4', ano: '' },
+  { id: 'r4', rotulo: 'R4 ou fellow', situacao: 'r4', ano: '' },
   { id: 'mao', rotulo: 'Residente de cirurgia da mão', situacao: 'mao', ano: '' },
   { id: 'ortopedista', rotulo: 'Ortopedista', situacao: 'ortopedista', ano: '' },
   { id: 'outro', rotulo: 'Outro', situacao: 'outro', ano: '' },
@@ -114,3 +122,7 @@ export function lerLocais(valor: unknown, principal = ''): string[] {
 
 /** Para quem a pergunta é "onde trabalha" (e não "onde faz residência" ou "faculdade"). */
 export const trabalhaComoEspecialista = (situacao: string) => situacao === 'ortopedista' || situacao === 'outro'
+
+
+// Os passos do crachá ficam num arquivo leve, porque o App os consulta em toda página.
+export * from './passosPerfil'
