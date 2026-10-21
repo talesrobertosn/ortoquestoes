@@ -43,9 +43,10 @@ if ids:
     faixa = "; ".join(f"{min(v, key=num_id)} a {max(v, key=num_id)}" for v in por.values())
 m = re.search(rf"^\| {re.escape(prova)} \|.*$", txt, re.M)
 if m:
-    c = m.group(0).split(" | ")
+    c = [x.strip() for x in m.group(0).strip().strip("|").split("|")]
+    c += [""] * (7 - len(c))
     c[3] = str(len(ids)); c[4] = str(pend); c[5] = faixa
-    if gab: c[6] = gab + " |"
-    txt = txt[:m.start()] + " | ".join(c) + txt[m.end():]
+    if gab: c[6] = gab
+    txt = txt[:m.start()] + "| " + " | ".join(c) + " |" + txt[m.end():]
 arq.write_text(txt, encoding="utf8", newline="\n")
 print(f"{prova}: {len(ids)} publicadas, {pend} pendentes; {faixa}")
