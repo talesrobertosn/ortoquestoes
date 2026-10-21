@@ -138,7 +138,7 @@ function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Perio
     lugares={linhas.slice(0, 3).map((linha) => ({
       posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
       total: linha.total.toLocaleString('pt-BR'), rotuloTotal: periodo === 'semana' ? 'na semana' : 'questões',
-      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>,
+      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={40} /><Fogueira dias={linha.sequencia ?? 0} tamanho={22} /><Movimento linha={linha} /></span>,
     }))} />
 }
 
@@ -399,7 +399,7 @@ export function Ranking() {
               <span className="rq-linha__avatar" aria-hidden="true">{iniciais(linha.apelido)}</span>
               <span className="rq-linha__quem">
                 <span className="rq-linha__nome"><span className="rq-linha__apelido">{linha.apelido}</span>{linha.eh_voce && <span className="rq-voce">você</span>}<SeloServico servico={linha.servico} /></span>
-                <span className="rq-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} />{linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={13} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</span>
+                <span className="rq-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={30} /><Fogueira dias={linha.sequencia ?? 0} tamanho={18} />{linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={13} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</span>
               </span>
               <span className="rq-linha__placar">
                 <b className="numerico">{linha.total.toLocaleString('pt-BR')}</b>
