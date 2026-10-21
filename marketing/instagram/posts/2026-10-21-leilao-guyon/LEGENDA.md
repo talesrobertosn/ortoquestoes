@@ -37,7 +37,7 @@ Legenda:
 
 > Cirurgia da Mão tem lugar próprio no Orto Questões.
 >
-> Para o título da SBCM e para a seleção do SIMÃO, OrtoQuestões Simulados no padrão de cada prova. Para as seleções de residência, as provas com o nome real: USP-SP, UFG, PUC-SP, ENARE, INTO, FMRP-USP, IAUPE, Einstein e UERJ.
+> Para o título, OrtoQuestões Simulados no padrão da prova da SBCM e do SIMÃO, o simulado do exame de título. Para as seleções de residência, as provas com o nome real: USP-SP, UFG, PUC-SP, ENARE, INTO, FMRP-USP, IAUPE, Einstein e UERJ.
 >
 > Cada alternativa comentada com o livro e a página, treino por tema, revisão dos erros e cronograma até a prova. Quem vai entrar e quem vai fazer o título treinam no mesmo lugar.
 >

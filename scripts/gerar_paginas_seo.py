@@ -230,6 +230,7 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
     <a href="{raiz}questoes/">Assuntos</a>
     <a href="{raiz}teot/">TEOT</a>
     <a href="{raiz}curso-preparatorio-teot/">Curso preparatório</a>
+    <a href="{raiz}cirurgia-da-mao/">Cirurgia da mão</a>
     <a href="{raiz}guias/">Guias de estudo</a>
     <a href="{raiz}#/treinar">Treinar</a>
     <a href="{raiz}sobre/">Sobre</a>
@@ -258,6 +259,7 @@ def rodape(raiz: str = "../") -> str:
     · <a href="{raiz}curso-ortopedia-r1/">Estudo no R1</a>
     · <a href="{raiz}flashcards-ortopedia/">Flashcards</a>
     · <a href="{raiz}curso-preparatorio-teot/">Curso preparatório para o TEOT</a>
+    · <a href="{raiz}cirurgia-da-mao/">Questões de cirurgia da mão (SBCM, SIMÃO e residência)</a>
     · <a href="{raiz}guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a>
     · <a href="{raiz}sobre/">Sobre o Orto Questões</a>
     · <a href="https://www.instagram.com/ortoquestoes/">@ortoquestoes</a>
