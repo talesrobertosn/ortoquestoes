@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, fase 0** (separar a prova em `.oq/provas/sbcm-2022.json`, classificar e dividir em lotes, como na seção SBCM 2024). Dica: quando o texto
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 01** (fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -379,3 +379,117 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 100 | Incidência de BREWERTON: o que mostra | imagem | cap. 7, p. 261 | mao / Lesões ligamentares dos dedos | 02 | mao-2029 | publicada |
 
 Lotes: 01 (1, 69, 78, 80, 2) · 02 (43, 45, 100, 3, 16) · 03 (33, 66, 70, 71, 4) · 04 (5, 46, 82, 27, 6) · 05 (83, 34, 73, 84, 18) · 06 (7, 67, 68, 85, 30) · 07 (19, 35, 64, 65, 96) · 08 (23, 21, 97, 98, 59) · 09 (32, 44, 81, 24, 22) · 10 (95, 55, 74, 9, 42) · 11 (28, 88, 10, 36, 49) · 12 (62, 89, 17, 37, 39) · 13 (51, 60, 11, 31, 90) · 14 (14, 50, 61, 38, 79) · 15 (12, 13, 53, 72, 92) · 16 (20, 29, 52, 54, 76) · 17 (91, 93, 15, 40, 57) · 18 (56, 75, 94, 58, 41) · 19 (63, 77, 25, 26) · 20 (8, 47, 48, 86, 87, 99).
+
+## SBCM 2022
+
+Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em `.oq/provas/sbcm-2022.json`; a 5, a 26 e a
+82 têm só três alternativas no original, e a 82 repete a mesma alternativa em A e B). Resposta da folha de gabarito em
+[dicas/sbcm-2022.md](dicas/sbcm-2022.md), sem página: achar a seção pelo capítulo e citar a página impressa lida.
+"figura": a original depende de imagem; reescrever descrevendo o achado ou deixar pendente. Cotovelo no tema
+`ombro-cotovelo` (lote 20). Repetidas na prova (1 e 33, STRUTHERS; 53 e 91, BLAUTH; 71 e 82, retalho inguinal):
+ângulos diferentes.
+
+| Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
+|---|---|---|---|---|---|---|---|
+| 1 | Ligamento de STRUTHERS: músculo de inserção anômala | anatomia | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 2 | FERNANDEZ (rádio distal): tipo com suspeita de lesão escafossemilunar | classificação | cap. 15 | mao / Fratura do rádio distal | 06 |  | a fazer |
+| 3 | Banda sagital, lesão fechada: banda e dedos mais acometidos | fato | cap. 5 | mao / Lesões dos tendões extensores | 02 |  | a fazer |
+| 4 | LICHTMAN: grau IV do teste de instabilidade mediocárpica | classificação | cap. 13 | mao / Instabilidade do carpo | 05 |  | a fazer |
+| 5 | Luxação isolada do escafoide tipo II: articulação desalinhada | classificação | cap. 16 (3 alternativas no original) | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 6 | Desfiladeiro torácico: valor do potencial evocado somatossensitivo | fato | cap. 29 | mao / Neuropatia ulnar e outras compressões | 09 |  | a fazer |
+| 7 | O que mimetiza a paralisia ulnar | fato | cap. 28 | mao / Lesões de nervos periféricos | 09 |  | a fazer |
+| 8 | Pronação do antebraço na paralisia cerebral: evolução | fato | cap. 32 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
+| 9 | Plexo: romboide e serrátil paralisados indicam | fato | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 10 | KELIKIAN/KELLAM: braquidactilia na ELLIS-VAN CREVELD | classificação | cap. 36 | mao / Outras malformações congênitas | 12 |  | a fazer |
+| 11 | CLEARY e OMER tipo IV (sinostose radioulnar): cabeça do rádio | classificação | cap. 38 | mao / Outras malformações congênitas | 13 |  | a fazer |
+| 12 | Retalho escapular ou paraescapular e sua artéria | anatomia, figura | cap. 45 | mao / Microcirurgia e retalhos livres | 15 |  | a fazer |
+| 13 | Osteocondroma na mão: localização típica | fato | cap. 59 | mao / Tumores da mão | 18 |  | a fazer |
+| 14 | MAFFUCCI: risco aumentado | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 15 | Pioderma gangrenoso: tratamento | conduta | cap. 2 ou 3 | mao / Infecções da mão | 01 |  | a fazer |
+| 16 | PANEVA-HOLEVICH: tendão do enxerto | epônimo | cap. 6 | mao / Lesões dos tendões flexores | 02 |  | a fazer |
+| 17 | Enxerto ósseo da foto: área doadora | figura | cap. 8 (hemi-hamato) | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
+| 18 | Osteoartrite inflamatória dos dedos: mais sintomática e mais acometida | fato | cap. 11 | mao / Rizartrose e artrose da mão | 04 |  | a fazer |
+| 19 | Técnica da figura: qual instabilidade trata | figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | a fazer |
+| 20 | Luxação dorsal da ARUD: posição do punho | fato | cap. 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
+| 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 e 46 | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 22 | Colateral medial do cotovelo: porção mais resistente | anatomia | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 |  | a fazer |
+| 23 | FROMENT, EGAWA e DUCHENNE sem déficit sensitivo: zona do canal de GUYON | fato | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 24 | Classificação internacional da tetraplegia, grupo 4: músculos disponíveis | classificação | cap. 33 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
+| 25 | Polidactilia central: dedo mais duplicado | fato | cap. 36 | mao / Sindactilia e polidactilia | 12 |  | a fazer |
+| 26 | Mão torta ulnar: anomalia associada | fato | cap. 38 (3 alternativas no original) | mao / Deficiências longitudinais e mão torta | 13 |  | a fazer |
+| 27 | WATERS: tipo pela tomografia do ombro | classificação, figura | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 28 | Enxerto de pele: o que restaura a sensibilidade | fato | cap. 44 | mao / Cicatrização e enxertos de pele | 15 |  | a fazer |
+| 29 | Retalho microcirúrgico cutâneo: exemplo | classificação | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
+| 30 | SDRC tipo 2: em que situação | fato | cap. 53 | mao / Síndrome da dor complexa regional | 17 |  | a fazer |
+| 31 | Tendinite calcária na mão e punho: tendão mais comum | fato | cap. 56 | mao / Dedo em gatilho e outras tenossinovites | 17 |  | a fazer |
+| 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 33 | Ligamento de STRUTHERS: nervo comprimido | fato | cap. 28 (mesmo ligamento da 1, outro ângulo) | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 34 | Ligamentos do aparelho extensor da figura | anatomia, figura | cap. 5 | mao / Lesões dos tendões extensores | 02 |  | a fazer |
+| 35 | Melanoma que surge junto a um nevo | fato | cap. 58 | mao / Tumores da mão | 03 |  | a fazer |
+| 36 | Síndrome do interósseo anterior: o que enfraquece | fato | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 37 | Flexor longo do polegar: reparo tardio com bom resultado até | número | cap. 6 | mao / Lesões dos tendões flexores | 02 |  | a fazer |
+| 38 | Rigidez da MF instável após liberação: tempo dos fios | número | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
+| 39 | LEECHAVENGVONGS: ramo doador e alvo | técnica | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 40 | Paralisia alta do mediano: objetivo das transferências | fato | cap. 31 | mao / Transferências tendinosas e paralisias | 09 |  | a fazer |
+| 41 | Ligamentos ulnocárpicos palmares: quantos e em que plano | anatomia | cap. 13 ou 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
+| 42 | CAMITZ: melhor indicação | indicação | cap. 31 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
+| 43 | NALEBUFF: polegar reumatoide da radiografia | classificação, figura | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
+| 44 | Ângulo da lágrima (teardrop) na radiografia | número, figura | cap. 15 | mao / Fratura do rádio distal | 06 |  | a fazer |
+| 45 | Ligamentos do punho da figura | anatomia, figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | a fazer |
+| 46 | Contratura em flexão da IFP: o que liberar | técnica | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
+| 47 | Contratura em extensão da IFP: o que liberar | técnica | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
+| 48 | TSUGE, Volkmann moderada: melhor tratamento | conduta | cap. 51 | mao / Outros temas da mão | 17 |  | a fazer |
+| 49 | Plexo total: contraindicação da artrodese glenoumeral | conduta | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
+| 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
+| 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
+| 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | a fazer |
+| 55 | Dupuytren: recorrência que começa em 6 a 12 semanas | classificação | cap. 4 | mao / Doença de Dupuytren | 01 |  | a fazer |
+| 56 | Flexor superficial dos dedos: anatomia | afirmativas | cap. 6 | mao / Lesões dos tendões flexores | 02 |  | a fazer |
+| 57 | Avulsão do colateral ulnar do polegar: quando ressecar e reinserir | número | cap. 8 | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
+| 58 | Artrodese dos quatro cantos: estágios de SLAC e SNAC | conduta | cap. 12 | mao / Artrose do punho e artroscopia | 05 |  | a fazer |
+| 59 | Instabilidade cárpica não dissociativa: causa | fato | cap. 13 | mao / Instabilidade do carpo | 05 |  | a fazer |
+| 60 | Luxação isolada da ARUD reduzida: posição estável | fato | cap. 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
+| 61 | SLADE e GEISSLER: cistos de 1 a 5 mm | classificação | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 62 | Fratura cominutiva do capítulo: tipo | classificação | cap. 18 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
+| 63 | Over-the-top medial: intervalo para a cápsula | técnica | cap. 24 (arquivo 23) | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
+| 64 | Síndrome do interósseo posterior: intervalo do acesso anterior | técnica | cap. 28 | mao / Neuropatia ulnar e outras compressões | 09 |  | a fazer |
+| 65 | Portal 6-U: uso principal | técnica | cap. 17 | mao / Artrose do punho e artroscopia | 08 |  | a fazer |
+| 66 | Acesso ao plexo: relações anatômicas | anatomia | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 67 | Deficiência transversal: exemplo | classificação | cap. 36 | mao / Outras malformações congênitas | 12 |  | a fazer |
+| 68 | MADELUNG: afirmativas | afirmativas | cap. 38 | mao / Deficiências longitudinais e mão torta | 14 |  | a fazer |
+| 69 | MALLET: grau pelo exame do ombro | classificação | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 70 | Zetaplastia: ganho de comprimento pelo ângulo | número | cap. 44 (ângulo faltando no original) | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
+| 71 | Retalho inguinal: a circunflexa ilíaca superficial | afirmativas | cap. 44 e 45 | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
+| 72 | Gluconato de cálcio subdérmico: qual queimadura química | conduta | cap. 57 | mao / Queimaduras | 18 |  | a fazer |
+| 73 | Bloqueio interescalênico: nervo que mais falha | fato | cap. 1 | mao / Anestesia em cirurgia da mão | 01 |  | a fazer |
+| 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16 | mao / Doença de Kienböck | 07 |  | a fazer |
+| 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
+| 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 9 e 58 | mao / Tumores da mão | 03 |  | a fazer |
+| 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8 e 10 | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
+| 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38 e 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 79 | Prótese da cabeça do rádio: tamanho pelo diâmetro | técnica | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
+| 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25 (arquivo 24) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
+| 81 | Macrodactilia: forma mais comum | fato | cap. 36 | mao / Outras malformações congênitas | 12 |  | a fazer |
+| 82 | Retalho inguinal: artéria e onde emerge | anatomia | cap. 44 e 45 (3 alternativas, A e B iguais; repete a 71: outro ângulo) | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
+| 83 | Enxerto vascularizado do côndilo femoral medial: área da figura | figura | cap. 46 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
+| 84 | Carpo fraturado em atletas de raquete, golfe e beisebol | fato | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 85 | Desfiladeiro torácico: local mais comum de compressão | fato | cap. 29 | mao / Neuropatia ulnar e outras compressões | 09 |  | a fazer |
+| 86 | Dedo mínimo abduzido na paralisia ulnar: transferência | transferência | cap. 31 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
+| 87 | Fratura de SEYMOUR: o que se interpõe | fato | cap. 41 | mao / Fraturas dos metacarpos e falanges | 14 |  | a fazer |
+| 88 | Síndrome compartimental neonatal: achados | fato | cap. 51 | mao / Outros temas da mão | 17 |  | a fazer |
+| 89 | Toxina botulínica: mecanismo | fato | cap. 32 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
+| 90 | Embriologia: blastemas e tensão de oxigênio | fato | cap. 35 | mao / Outras malformações congênitas | 12 |  | a fazer |
+| 91 | BLAUTH: tipos com indicação de policização | classificação | cap. 37 (Blauth repete a 53: outro ângulo) | mao / Outras malformações congênitas | 13 |  | a fazer |
+| 92 | Reimplante de dedos: melhores indicações | indicação | cap. 42 | mao / Amputações e reimplantes | 14 |  | a fazer |
+| 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
+| 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 | mao / Retalhos e cobertura cutânea | 16 |  | a fazer |
+| 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
+| 96 | ENNEKING: estágio IIA | classificação | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
+| 98 | Paroníquia: mecanismo e agente | fato | cap. 2 | mao / Infecções da mão | 01 |  | a fazer |
+| 99 | SECRETAN: causa | fato | cap. 54 | mao / Outros temas da mão | 17 |  | a fazer |
+| 100 | Capsulotomia volar da IFP: marco dos ligamentos checkrein | anatomia | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
+
+Lotes: 01 (73, 15, 98, 54, 55) · 02 (3, 34, 16, 37, 56) · 03 (57, 77, 17, 76, 35) · 04 (38, 46, 47, 100, 18) · 05 (58, 4, 19, 45, 59) · 06 (41, 20, 60, 2, 44) · 07 (5, 61, 74, 84, 21) · 08 (65, 1, 33, 23, 36) · 09 (64, 7, 6, 85, 40) · 10 (42, 86, 8, 89, 24) · 11 (9, 39, 49, 50, 66) · 12 (90, 10, 25, 67, 81) · 13 (53, 75, 91, 11, 26) · 14 (68, 27, 69, 87, 92) · 15 (28, 70, 71, 82, 12) · 16 (29, 93, 97, 83, 94) · 17 (48, 88, 30, 99, 31) · 18 (43, 52, 95, 72, 13) · 19 (14, 32, 78, 96) · 20 (22, 51, 62, 63, 79, 80).
