@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 8 | 2 | mao-2106 a mao-2113 | A 2, B 2, C 2, D 2 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 13 | 2 | mao-2106 a mao-2118 | A 4, B 3, C 3, D 3 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 03** (lotes 01 e 02 publicados: mao-2106 a mao-2113; pendentes 34 e 54, figura. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 04** (lotes 01 a 03 publicados: mao-2106 a mao-2118; pendentes 34 e 54, figura. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -407,7 +407,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 14 | MAFFUCCI: risco aumentado | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
 | 15 | Pioderma gangrenoso: tratamento | conduta | cap. 3, p. 86 | mao / Infecções da mão | 01 | mao-2107 | publicada |
 | 16 | PANEVA-HOLEVICH: tendão do enxerto | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 02 | mao-2111 | publicada |
-| 17 | Enxerto ósseo da foto: área doadora | figura | cap. 8 (hemi-hamato) | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
+| 17 | Enxerto ósseo da foto: área doadora | figura | cap. 8, p. 338 | mao / Lesões ligamentares dos dedos | 03 | mao-2116 | publicada (caso da foto descrito) |
 | 18 | Osteoartrite inflamatória dos dedos: mais sintomática e mais acometida | fato | cap. 11 | mao / Rizartrose e artrose da mão | 04 |  | a fazer |
 | 19 | Técnica da figura: qual instabilidade trata | figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | a fazer |
 | 20 | Luxação dorsal da ARUD: posição do punho | fato | cap. 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
@@ -425,7 +425,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
 | 33 | Ligamento de STRUTHERS: nervo comprimido | fato | cap. 28 (mesmo ligamento da 1, outro ângulo) | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
 | 34 | Ligamentos do aparelho extensor da figura | anatomia, figura | cap. 5 | mao / Lesões dos tendões extensores | 02 |  | pendente: figura com letras |
-| 35 | Melanoma que surge junto a um nevo | fato | cap. 58 | mao / Tumores da mão | 03 |  | a fazer |
+| 35 | Melanoma que surge junto a um nevo | fato | cap. 58, p. 2171 | mao / Tumores da mão | 03 | mao-2118 | publicada |
 | 36 | Síndrome do interósseo anterior: o que enfraquece | fato | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
 | 37 | Flexor longo do polegar: reparo tardio com bom resultado até | número | cap. 6, p. 245 | mao / Lesões dos tendões flexores | 02 | mao-2112 | publicada |
 | 38 | Rigidez da MF instável após liberação: tempo dos fios | número | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
@@ -447,7 +447,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | pendente: figura com letras |
 | 55 | Dupuytren: recorrência que começa em 6 a 12 semanas | classificação | cap. 4, p. 156 | mao / Doença de Dupuytren | 01 | mao-2109 | publicada (ângulo: definição do Green, sem o 6 a 12 semanas) |
 | 56 | Flexor superficial dos dedos: anatomia | afirmativas | cap. 6, p. 214 | mao / Lesões dos tendões flexores | 02 | mao-2113 | publicada |
-| 57 | Avulsão do colateral ulnar do polegar: quando ressecar e reinserir | número | cap. 8 | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
+| 57 | Avulsão do colateral ulnar do polegar: quando ressecar e reinserir | número | cap. 8, p. 352 | mao / Lesões ligamentares dos dedos | 03 | mao-2114 | publicada |
 | 58 | Artrodese dos quatro cantos: estágios de SLAC e SNAC | conduta | cap. 12 | mao / Artrose do punho e artroscopia | 05 |  | a fazer |
 | 59 | Instabilidade cárpica não dissociativa: causa | fato | cap. 13 | mao / Instabilidade do carpo | 05 |  | a fazer |
 | 60 | Luxação isolada da ARUD reduzida: posição estável | fato | cap. 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
@@ -466,8 +466,8 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 73 | Bloqueio interescalênico: nervo que mais falha | fato | cap. 1, p. 5 e 8 | mao / Anestesia em cirurgia da mão | 01 | mao-2106 | publicada |
 | 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16 | mao / Doença de Kienböck | 07 |  | a fazer |
 | 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
-| 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 9 e 58 | mao / Tumores da mão | 03 |  | a fazer |
-| 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8 e 10 | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
+| 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 58, p. 2162 | mao / Tumores da mão | 03 | mao-2117 | publicada |
+| 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326 e 345 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (ângulo: MF sem checkrein fortes; o Green não afirma isso da IFD) |
 | 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38 e 59 | mao / Tumores da mão | 19 |  | a fazer |
 | 79 | Prótese da cabeça do rádio: tamanho pelo diâmetro | técnica | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25 (arquivo 24) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
