@@ -1,5 +1,5 @@
 import { corDaArea } from '../dados/coresAreas'
-import type { ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
 import type { CalculoPlano, PlanoSalvo } from '../dados/planoEstudo'
 import { incluiSimulados, MINUTOS_POR_QUESTAO } from '../dados/planoEstudo'
 import type { Constancia, Elogio, Esquecido, Risco } from '../dados/hubCronograma'
@@ -222,8 +222,15 @@ export function MapaRisco({ riscos, cegos, aoTreinar }: { riscos: Risco[]; cegos
 
 // ─── OrtoQuestões Simulados ────────────────────────────────────────────────
 
-export function CartaoSimulados({ plano, feitas, total, acerto, aoIncluir }: { plano: PlanoSalvo; feitas: number; total: number; acerto: number | null; aoIncluir: () => void }) {
+export function CartaoSimulados({ plano, feitas, total, acerto, aoTrocar }: { plano: PlanoSalvo; feitas: number; total: number; acerto: number | null; aoTrocar: (incluir: boolean) => Promise<void> }) {
   const incluidos = incluiSimulados(plano)
+  const [salvando, definirSalvando] = useState(false)
+  const [erro, definirErro] = useState('')
+  async function trocar(incluir: boolean) {
+    if (salvando) return
+    definirSalvando(true); definirErro('')
+    try { await aoTrocar(incluir) } catch { definirErro('Não foi possível salvar agora. Tente de novo.') } finally { definirSalvando(false) }
+  }
   const pct = total ? Math.round((feitas / total) * 100) : 0
   return (
     <section className="pe-simulados" aria-labelledby="pe-sim-titulo">
@@ -239,7 +246,12 @@ export function CartaoSimulados({ plano, feitas, total, acerto, aoIncluir }: { p
         </div>
       </div>
       <div className="pe-simulados__acoes">
-        {incluidos ? <p className="pe-simulados__ok"><Icone nome="certo" tamanho={15} /> Já entram no seu cronograma: de 2 a 6 por sessão.</p> : <button type="button" className="botao botao--principal" onClick={aoIncluir}>Incluir no cronograma</button>}
+        {/* Colocar ou tirar quando quiser, sem recomeçar o cronograma (pedido do Tales, 21/10/2026). */}
+        {incluidos
+          ? <><p className="pe-simulados__ok"><Icone nome="certo" tamanho={15} /> No seu cronograma: de 2 a 10 por dia.</p>
+            <button type="button" className="botao botao--fantasma" disabled={salvando} onClick={() => void trocar(false)}>{salvando ? 'Salvando…' : 'Tirar do cronograma'}</button></>
+          : <button type="button" className="botao botao--principal" disabled={salvando} onClick={() => void trocar(true)}>{salvando ? 'Salvando…' : 'Incluir no cronograma'}</button>}
+        {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
         <a className="botao" href={href('/treinar?simulados=1')}>Treinar só simulados</a>
       </div>
     </section>

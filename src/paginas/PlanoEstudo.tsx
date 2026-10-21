@@ -2,7 +2,7 @@ import { DATA_TEOT } from '../dados/calendarioProvas'
 import { useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
-import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
+import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, trocarSimulados, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { usarPremium } from '../conta/premium'
 import { usarConta } from '../conta/ContextoConta'
@@ -408,7 +408,12 @@ export function PlanoEstudo() {
         if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, subtemas, embaralhar: false, limite: ordem.length }, ordem))) return
         navegar('/sessao')
       },
-      aoIncluirSimulados: () => (ficticio ? convidar('outro') : definirEditando(true)),
+      aoTrocarSimulados: async (incluir: boolean) => {
+        if (ficticio) { convidar('outro'); return }
+        const salvo = await trocarSimulados(plano, incluir)
+        if (salvo) definirPlano(salvo)
+        marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-simulados')
+      },
       aoMini: comecarMini,
       aoMarcar: marcarFeito,
       feitosDia: ficticio ? { data: chaveHoje() } : { data: chaveHoje(), ...(marcasHoje.flashcards ? { flashcards: true } : {}), ...(marcasHoje.mini ? { mini: true } : {}) },
@@ -537,7 +542,7 @@ export interface HubDados {
   aoDiagnostico: () => void
   aoReativar: (slug: string) => void
   aoTreinarFoco: (area: AreaIncidencia, foco: Foco) => void
-  aoIncluirSimulados: () => void
+  aoTrocarSimulados: (incluir: boolean) => Promise<void>
   aoMini: () => void
   aoMarcar: (chave: 'flashcards' | 'mini') => void
   feitosDia: FeitosDoDia
@@ -722,7 +727,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
           <Recolhido titulo="Constância: os últimos 14 dias" icone="fogo"><CartaoConstancia constancia={hub.constancia} elogio={hub.elogio} /></Recolhido>
           <Recolhido titulo="Desempenho e prontidão por área" icone="grafico"><Prontidao areas={hub.prontidao} /><CartaoDesempenho areas={hub.desempenho} media={hub.media} /></Recolhido>
           <Recolhido titulo="Mapa de risco" icone="alvo"><MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} /></Recolhido>
-          <Recolhido titulo="OrtoQuestões Simulados" icone="estrela"><CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoIncluir={hub.aoIncluirSimulados} /></Recolhido>
+          <Recolhido titulo="OrtoQuestões Simulados" icone="estrela"><CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoTrocar={hub.aoTrocarSimulados} /></Recolhido>
           {!calculo.provaPassou && <Recolhido titulo="Até a prova, semana a semana" icone="rota"><Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} /></Recolhido>}
           {!ficticio && <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} /></Recolhido>}
           {/* Recolhido sempre: o tour de 3 partes já explica a página na primeira visita. */}
@@ -967,7 +972,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
           <div className="tr-pilulas">{areas.map((a) => <button key={a.slug} type="button" className="tr-pilula" aria-pressed={dominadas.includes(a.slug)} onClick={() => definirDominadas(dominadas.includes(a.slug) ? dominadas.filter((x) => x !== a.slug) : [...dominadas, a.slug])}>{a.nome}</button>)}</div>
           <h3 className="pe-form__sub">Incluir os OrtoQuestões Simulados?</h3>
           <div className="pe-intensidades" role="radiogroup" aria-label="OrtoQuestões Simulados">
-            <button type="button" role="radio" aria-checked={simulados} className="pe-intensidade" onClick={() => definirSimulados(true)}><strong>Oficiais e Simulados</strong><span>Recomendado: de 2 a 6 por sessão, no padrão da prova.</span></button>
+            <button type="button" role="radio" aria-checked={simulados} className="pe-intensidade" onClick={() => definirSimulados(true)}><strong>Oficiais e Simulados</strong><span>Recomendado: de 2 a 10 por dia, no padrão da prova.</span></button>
             <button type="button" role="radio" aria-checked={!simulados} className="pe-intensidade" onClick={() => definirSimulados(false)}><strong>Só questões oficiais</strong><span>Os simulados seguem no treino livre.</span></button>
           </div>
           <details className="pe-form__mais"><summary>O que são os OrtoQuestões Simulados?</summary><p className="texto-2">Questões autorais do site, feitas por <strong>engenharia reversa das provas originais</strong>: o mesmo estilo, o mesmo tipo de cobrança e o mesmo nível, escritas a partir da bibliografia de referência e comentadas com a citação do livro. Não contam para os temas que mais caem, que usam só as provas oficiais.</p></details>

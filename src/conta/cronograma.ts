@@ -130,13 +130,18 @@ export function mostrarNovidadeSimulados(plano: PlanoSalvo | null | undefined, v
   return !!plano && !vistoNaConta && incluiSimulados(plano) && Date.parse(plano.criado_em) < ETAPA_SIMULADOS_EM && !avisoSimuladosVisto()
 }
 
-/** Tira os simulados do plano sem recomeçar: ele foi montado quando os simulados ainda não entravam. */
-export async function ficarSoComOficiais(copia: PlanoSalvo): Promise<PlanoSalvo | null> {
+/**
+ * Coloca ou tira os OrtoQuestões Simulados do plano sem recomeçar (pedido do Tales, 21/10/2026:
+ * a pessoa escolhe uma vez e pode colocar ou tirar quando quiser). Relê o plano antes.
+ */
+export async function trocarSimulados(copia: PlanoSalvo, incluir: boolean): Promise<PlanoSalvo | null> {
   const plano = (await obterPlano()) ?? copia
-  const salvo = await salvarPlano({ p_data_prova: plano.data_prova, p_intensidade: plano.intensidade, p_folgas: plano.folgas, p_prova: plano.prova, p_base: plano.base_respondidas, p_recomecar: false }, false, plano.opcoes ?? undefined, { avisar: false })
+  const salvo = await salvarPlano({ p_data_prova: plano.data_prova, p_intensidade: plano.intensidade, p_folgas: plano.folgas, p_prova: plano.prova, p_base: plano.base_respondidas, p_recomecar: false }, incluir, plano.opcoes ?? undefined, { avisar: false })
   marcarAvisoSimulados()
   return salvo
 }
+/** Tira os simulados do plano sem recomeçar: ele foi montado quando os simulados ainda não entravam. */
+export const ficarSoComOficiais = (copia: PlanoSalvo) => trocarSimulados(copia, false)
 
 /**
  * Muda só as opções (semana difícil, adiantamento), sem recomeçar a contagem.
