@@ -45,6 +45,12 @@ Regra do Tales (19/10/2026): a tela começa **sempre limpa**, só com o essencia
 
 Em 19/10/2026, Tales aprovou para o arsenal a **Conversa do grupo R+** (feed, 6 slides: print de conversa dos residentes no plantão, com enquete, zoom e prévia de link do Cronograma). Veja [o guia](marketing/instagram/estilos/CONVERSA-DO-GRUPO.md).
 
+## Tom dos e-mails
+Regra do Tales (21/10/2026), para os e-mails automáticos do site, as respostas de suporte e qualquer outra mensagem
+escrita em nome dele: **extremamente gentil, fofo e formal**, como em "Como fazer amigos e influenciar pessoas". O
+cliente tem razão 24 horas por dia, mesmo quando não tem: agradecer primeiro, reconhecer o incômodo, pedir desculpas
+pelo transtorno, explicar com calma o que foi feito e se colocar à disposição. Nunca culpar a pessoa nem soar seco.
+
 ## Desenvolvimento e publicações
 
 Seguir a seção **Eficiência de desenvolvimento e GitHub Actions** do
