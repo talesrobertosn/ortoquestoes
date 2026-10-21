@@ -13,9 +13,21 @@ export function avisoVistoNaConta(meta: Record<string, unknown> | undefined | nu
   return Array.isArray(lista) && lista.map(String).includes(aviso)
 }
 
+// Os "já vi" desta visita, gravados juntos e em fila: duas telas marcando ao mesmo tempo (o aviso dos
+// simulados e o tour, que abrem juntos no cronograma) não podem apagar uma a marcação da outra, porque
+// cada gravação troca a lista inteira.
+const marcados = new Set<string>()
+let fila: Promise<unknown> = Promise.resolve()
+
 /** Grava na conta (sem esperar: se falhar, o "já vi" do aparelho continua valendo). */
 export function marcarAvisoNaConta(meta: Record<string, unknown> | undefined | null, aviso: AvisoUnico) {
-  if (!supabase || avisoVistoNaConta(meta, aviso)) return
-  const atuais = Array.isArray(meta?.avisos_vistos) ? (meta!.avisos_vistos as unknown[]).map(String) : []
-  void supabase.auth.updateUser({ data: { avisos_vistos: [...new Set([...atuais, aviso])] } }).catch(() => undefined)
+  if (!supabase || avisoVistoNaConta(meta, aviso) || marcados.has(aviso)) return
+  marcados.add(aviso)
+  const cliente = supabase
+  fila = fila.then(async () => {
+    // A lista mais recente da conta, somada a tudo o que esta visita já marcou.
+    const { data } = await cliente.auth.getUser()
+    const atuais = Array.isArray(data.user?.user_metadata?.avisos_vistos) ? (data.user!.user_metadata.avisos_vistos as unknown[]).map(String) : []
+    await cliente.auth.updateUser({ data: { avisos_vistos: [...new Set([...atuais, ...marcados])] } })
+  }).catch(() => undefined)
 }
