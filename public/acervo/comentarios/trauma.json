@@ -14,15 +14,43 @@
   "conferido": false
  },
  "trauma-0002": {
+  "conceito": "**Zona de segurança é o setor não articular disponível para a placa.** A cabeça do rádio articula com o capítulo pelo prato côncavo e com a ulna por parte de sua circunferência. O implante deve ocupar o setor que não participa desse contato, para não criar conflito e bloquear a pronossupinação.\n\nNa referência do resumo, o setor é encontrado com o **antebraço em rotação neutra**, na face **lateral** da cabeça, cerca de dez graus anterior à linha média lateral. A posição neutra torna a referência reprodutível; se o antebraço gira, a posição da superfície radial em relação ao examinador também muda.\n\nO gabarito usa a expressão “punho em neutro”. É importante não interpretá-la como simples ausência de flexão ou extensão do punho: o parâmetro anatômico do resumo é a **rotação do antebraço**. É possível manter o punho sem flexão e ainda pronar ou supinar, mudando a referência da cabeça radial.\n\nOutra fonte de confusão é a pronação do acesso lateral, usada para proteção do interósseo posterior. Essa é uma medida de segurança nervosa; não muda a posição neutra descrita para marcar o setor não articular da placa.\n\n**Na Biblioteca, leia “Anatomia: a zona segura” e compare as referências de Smith e Hotchkiss com a recomendação de posição neutra.** A leitura ajuda a separar segurança do implante, posição do antebraço e proteção nervosa durante o acesso.",
+  "correta": "**A: superfície lateral, com a referência neutra.** É o setor que corresponde à descrição consultada. O gabarito oficial é mantido, com a precisão de que a fonte orienta rotação neutra do antebraço, não apenas posicionamento do punho em flexão e extensão.\n\nA função da zona é manter a placa afastada do contato articular durante a rotação. Uma referência anatômica correta deve ser acompanhada da posição em que foi definida.",
   "incorretas": {
-   "B": "A face medial articula com a incisura radial da ulna.",
-   "C": "Com o antebraço supinado, a zona segura gira e deixa de ficar na lateral.",
-   "D": "A face medial é articular e a supinação desloca a referência."
+   "B": "**A referência neutra foi mantida, mas a face foi trocada para medial.** Essa parte da cabeça se relaciona à incisura radial da ulna e não corresponde ao setor lateral não articular descrito para a placa. Colocar material na área de contato pode criar conflito ao girar o antebraço. O erro é de endereço anatômico, não de nome de classificação.",
+   "C": "**A face lateral está correta, mas o antebraço supinado muda a referência.** A fonte define a localização com rotação neutra. Não se deve transportar a mesma marca sobre uma cabeça girada sem reconsiderar o setor. A opção acerta o lado geral e erra a posição que torna a identificação reprodutível.",
+   "D": "**A opção troca tanto a face quanto a rotação descritas.** A referência é lateral em neutro, e não medial em supinação. O fato de a cabeça radial girar é justamente o motivo para respeitar os dois parâmetros juntos: lado e posição do antebraço definem a relação da placa com a superfície que precisa articular."
   },
-  "conceito": "A cabeça do rádio gira dentro da **incisura radial da ulna**, e quase toda a sua circunferência é **articular**. Uma placa colocada no lugar errado bate na ulna e **bloqueia a pronação e a supinação**.\n\n**A zona de segurança** (descrita por Smith e Hotchkiss): um arco de cerca de **90 a 110°** da cabeça que **nunca articula** com a ulna, em nenhuma posição de rotação.\n\n**Como encontrar**: com o **antebraço em rotação neutra** (punho neutro), a zona segura fica voltada para a **lateral**. Ela está entre as linhas projetadas a partir do **estiloide radial** e do **tubérculo de Lister**.\n\n**Por que a posição importa**: a zona gira junto com o rádio. Em supinação ou pronação, ela deixa de estar na lateral, e a referência se perde.\n\n**Os acessos**: **Kocher** (entre ancôneo e extensor ulnar do carpo) ou **Kaplan** (entre extensor radial curto do carpo e extensor comum dos dedos). **Pronar** o antebraço afasta o **nervo interósseo posterior** do campo.\n\n**A classificação de Mason**: I sem desvio (mobilização precoce); II com desvio de mais de 2 mm (fixar se houver bloqueio); III cominutiva (fixação ou prótese); IV com luxação do cotovelo.\n\n**Na prova**: a zona segura de Smith fica na superfície **lateral** da cabeça do rádio, com o **punho em neutro**.",
-  "correta": "Com o punho em neutro, a zona que nunca articula com a ulna fica voltada para a lateral, e a placa ali não bloqueia a rotação.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+  ],
+  "alerta": "Gabarito A preservado. A expressão “punho em neutro” da opção deve ser entendida no contexto da rotação neutra do antebraço, que é a referência explicitamente descrita no resumo. Neutralidade apenas em flexão/extensão do punho não define essa rotação.",
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-9e1dbc64",
+      "fratura-da-cabeca-do-radio-109bc9e4"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "12f3049aabd3ca8e7aed420e8d9ccc6c44dbf2ec79c0bb85c95f307a1dde77ee"
+    }
+   ],
+   "questaoSha256": "2e6b6c350253065d10e89f6b30a3d3c20cb0860ccb1ea57e9080d822bd503a7b",
+   "comentarioSha256": "8cf29878e0f5ed0577356cb500e9f1c7f5cb54ecf19b771eb450469bbd17dc6b"
+  }
  },
  "trauma-0005": {
   "incorretas": {
@@ -2093,15 +2121,47 @@
   "conferido": false
  },
  "trauma-0141": {
+  "conceito": "**Uma fratura marginal desviada não é automaticamente uma articulação bloqueada.** Na classificação de Mason, o tipo II descreve a fratura marginal com desvio. O número informa o padrão, mas não determina sozinho que toda fratura deva ser operada. Na lesão isolada, o resumo destaca o **bloqueio mecânico da pronossupinação** como indicação absoluta.\n\nA primeira tarefa do exame é separar **dor** de **obstáculo físico**. Hemartrose e dor podem limitar a tentativa de girar o antebraço sem que um fragmento impeça o movimento. Se a dor não permite julgar a rotação, o capítulo admite aspirar e anestesiar ou reavaliar depois, conforme o contexto. Não se deve chamar toda recusa dolorosa de bloqueio mecânico.\n\nA regra antiga baseada apenas em mais de 2 mm de desvio e mais de 30% da superfície não foi confirmada pelo estudo randomizado resumido. Isso não prova que o tamanho nunca importe; significa que o número isolado não substitui movimento, estabilidade e lesões associadas. Uma fratura com cotovelo instável, corpo livre retido ou outra indicação relevante já não é o mesmo cenário de Mason II isolada.\n\nA alternativa A usa a expressão ampla “restrição da rotação”. Para corresponder ao conceito da fonte, ela deve ser entendida como **restrição mecânica**, e não apenas dor no exame inicial. **Leia “Exame: dor ou bloqueio?” e “Sem cirurgia”, no resumo da Biblioteca.** A ligação entre essas duas seções é o que permite indicar cirurgia pelo problema funcional real, em vez de por um número descontextualizado.",
+  "correta": "**A: restrição da rotação, interpretada como bloqueio mecânico.** Um fragmento que impede a pronossupinação mantém uma barreira física ao movimento; é isso que sustenta a indicação absoluta na fratura isolada descrita pela fonte.\n\nSe o paciente apenas evita girar por dor, a conclusão cirúrgica ainda não está estabelecida. É preciso obter um exame confiável e considerar o conjunto de lesões. A resposta da prova não deve ser convertida em “qualquer dor ao rodar exige operação”.",
   "incorretas": {
-   "B": "O degrau de 2 mm é indicação relativa.",
-   "C": "O envolvimento de 20% da cabeça não é indicação absoluta.",
-   "D": "O desvio de 3 mm é indicação relativa; sem bloqueio, o conservador vai bem."
+   "B": "**Degrau de 2 mm é uma medida, não uma indicação absoluta isolada.** O resumo discute a insuficiência dos limiares antigos de desvio como decisão automática. Um degrau precisa ser interpretado com o arco de rotação, a estabilidade e o padrão associado. Sem bloqueio ou outra condição relevante, esse número sozinho não responde ao critério solicitado.",
+   "C": "**A porcentagem de 20% não demonstra que exista impedimento mecânico.** O tamanho da superfície envolvida descreve a extensão da lesão, mas não mostra, por si, se o fragmento está bloqueando a rotação. Mesmo a regra antiga com outro percentual não foi confirmada como obrigação universal de operar. A pergunta exige uma consequência funcional específica.",
+   "D": "**Um afastamento de 3 mm também não substitui o exame da pronossupinação.** Desvio pode participar da escolha e do planejamento, mas o valor isolado não comprova bloqueio mecânico nem define uma indicação absoluta para toda Mason II isolada. A alternativa mantém a lógica de decidir só pela radiografia, que o resumo relativiza."
   },
-  "conceito": "Na **fratura isolada da cabeça do rádio Mason II** (fratura parcial com desvio), a decisão de operar depende sobretudo de um ponto: se há **bloqueio mecânico** da rotação.\n\n**A indicação absoluta**: **restrição da rotação do antebraço** (pronação ou supinação) por um fragmento que trava a articulação.\n\n**Como confirmar**: a dor e a hemartrose podem simular o bloqueio. **Aspirar** a hemartrose e infiltrar **anestésico** no cotovelo; se a rotação continuar travada, o bloqueio é mecânico.\n\n**As indicações relativas**:\n\n**fragmento grande** (mais de 25 a 33% da cabeça) com desvio maior que 2 mm;\n\n**degrau articular**;\n\n**instabilidade** associada do cotovelo ou do antebraço.\n\n**O que os estudos mostram**: **sem bloqueio**, o tratamento **conservador** com mobilização precoce vai bem mesmo com desvios de 2 a 5 mm.\n\n**Mason resumido**: I sem desvio; II parcial com desvio; III cominutiva; IV com luxação do cotovelo.\n\n**Na prova**: a indicação absoluta de cirurgia no Mason II é a **restrição da rotação do antebraço**.",
-  "correta": "O bloqueio mecânico da rotação, confirmado após anestesia intra-articular, é a indicação absoluta de cirurgia.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+  ],
+  "alerta": "O gabarito A foi preservado. “Restrição da rotação” deve ser lida como bloqueio mecânico, que é a indicação absoluta descrita para Mason II isolada; dor e hemartrose também podem limitar o exame sem estabelecer esse bloqueio.",
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-ffb10ce8",
+      "fratura-da-cabeca-do-radio-da237d59",
+      "fratura-da-cabeca-do-radio-d9bc4253",
+      "fratura-da-cabeca-do-radio-77543d87",
+      "fratura-da-cabeca-do-radio-74811875",
+      "fratura-da-cabeca-do-radio-23601215"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "cc7ebeed3030e8c0968be534646eda673d27667ee950c8f42eb8ae8fd51f6345"
+    }
+   ],
+   "questaoSha256": "96bc324b7b147343f4dd709df45671c079613de3f0d304cf9ee92046ddab57c1",
+   "comentarioSha256": "d275b7f8c516d6dea31f41d8dbc28c2f1dd092911c6bc3930015b298c4016b8e"
+  }
  },
  "trauma-0142": {
   "incorretas": {
@@ -2285,15 +2345,48 @@
   "conferido": false
  },
  "trauma-0157": {
+  "conceito": "**A instabilidade longitudinal muda o significado da fratura da cabeça radial.** A cabeça é um apoio proximal do rádio. Quando membrana interóssea e radioulnar distal também estão comprometidas, como em Essex-Lopresti, o rádio pode migrar proximalmente. Retirar a cabeça sem repor sua função tira uma contenção justamente quando as demais falharam.\n\nMason III descreve cominuição de toda a cabeça. Na lesão cominutiva **irreparável**, o resumo favorece prótese, especialmente pela alta frequência de lesões associadas. Porém, a classificação III isoladamente não prova que qualquer reconstrução seja impossível. Jovem, bom osso e poucos fragmentos podem favorecer fixação se for possível obter redução anatômica e estabilidade.\n\nO gabarito B corresponde à escolha de **artroplastia com implante** para o padrão cominutivo e longitudinalmente instável apresentado. Essa escolha preserva um apoio que a ressecção eliminaria. A decisão técnica ainda deve considerar a reconstruibilidade, e o tratamento não se encerra na prótese: as lesões distais e da membrana também precisam de avaliação e estabilização apropriadas.\n\nNa operação, uma fixação precária não é uma solução intermediária satisfatória. O resumo orienta ter prótese disponível ao planejar reconstrução, porque a cominuição pode ser maior que a imagem sugere; se não há redução anatômica com fixação estável, a cabeça é substituída.\n\n**Na Biblioteca, leia “Com cirurgia: retirar, fixar ou trocar” e “Lesão de Essex-Lopresti”.** Juntas, as seções mostram por que a escolha depende tanto da possibilidade de reconstruir como da função da cabeça no antebraço instável.",
+  "correta": "**B: artroplastia com implante, conforme o gabarito oficial.** A prótese substitui a função da cabeça em uma fratura cominutiva cuja reconstrução estável não é obtida. Isso é especialmente relevante quando existe instabilidade longitudinal, porque a ressecção isolada facilita a migração do rádio.\n\nA interpretação não deve virar uma regra de que toda Mason III exige prótese independentemente da reconstruibilidade. O resumo admite fixação em padrões selecionados e favorece substituição quando a cominuição é irreparável. A indicação depende de recuperar apoio estável, e não apenas de escolher o número da classificação.",
   "incorretas": {
-   "A": "A ressecção deixa o rádio migrar para cima.",
-   "C": "Parafusos não fixam uma cabeça cominuta e irreconstruível.",
-   "D": "A placa falha na cominução grave da cabeça do rádio."
+   "A": "**Ressecção isolada remove o apoio proximal e pode piorar a instabilidade longitudinal.** O rádio já pode ter perdido as contenções da membrana e da articulação distal. Retirar a cabeça sem reconstrução não repõe sua função, mesmo que elimine os fragmentos do cotovelo. Por isso, a presença dessa instabilidade contraindica a simples retirada sem substituição.",
+   "C": "**Parafusos podem ser uma opção se houver reconstrução anatômica estável, mas não resolvem qualquer cominuição.** O resumo favorece fixação em jovens com bom osso e até três fragmentos; para colo sem cominuição, descreve parafusos cruzados. Esses critérios não podem ser presumidos em toda Mason III. O gabarito privilegia a prótese para o padrão cominutivo e instável, preservando a ressalva de que reconstruibilidade deve ser avaliada.",
+   "D": "**Uma placa bloqueada não torna automaticamente reconstruível uma cabeça fragmentada.** O que importa é obter redução anatômica e fixação estável sem comprometer a função; se isso não é possível, a fonte recomenda substituição. Placa e parafusos podem ter indicação em padrões adequados, mas o rótulo do implante não corrige cominuição irreparável nem repõe sozinho as contenções longitudinais do antebraço."
   },
-  "conceito": "A **cabeça do rádio** tem dois papéis: estabilizador **secundário ao valgo** do cotovelo e, junto com a **membrana interóssea**, estabilizador **longitudinal** do antebraço. Ela é o \"poste\" que impede o rádio de subir.\n\n**O cenário da questão**: fratura **Mason 3** (cominutiva, impossível de reconstruir) com **instabilidade longitudinal** do antebraço (lesão de Essex-Lopresti: membrana interóssea e radioulnar distal lesadas).\n\n**O tratamento**: **artroplastia com implante** (prótese da cabeça do rádio). A prótese restaura o poste lateral, e o rádio não migra. Estabilizar a **radioulnar distal**, se necessário.\n\n**O que é contraindicado**: a **ressecção** da cabeça do rádio. Sem a cabeça e sem a membrana, o rádio **sobe**, com dor no punho e impacto ulnocarpal.\n\n**A fixação**: parafusos ou placa **falham** na cominução grave; fixar só vale quando a cabeça pode ser reconstruída de forma estável.\n\n**Na prova**: na Mason 3 com instabilidade longitudinal, indica-se a **artroplastia com implante**.",
-  "correta": "A prótese da cabeça do rádio restaura o suporte longitudinal que a cominução e a membrana rota perderam.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+  ],
+  "alerta": "Gabarito B preservado. O resumo favorece prótese para cabeça cominutiva irreparável e contraindica ressecção isolada na instabilidade longitudinal. Mason III não demonstra, sozinho, irreparabilidade: uma reconstrução anatômica estável pode ser considerada em padrões selecionados.",
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-fe207e21",
+      "fratura-da-cabeca-do-radio-ea450acb",
+      "fratura-da-cabeca-do-radio-0d86df08",
+      "fratura-da-cabeca-do-radio-510692ed",
+      "fratura-da-cabeca-do-radio-d982c972",
+      "fratura-da-cabeca-do-radio-8dbbe2b9",
+      "fratura-da-cabeca-do-radio-a6880686"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "c5a797cc4f088f7f77c2397079dc655e78c53668667342f12a5335673b465564"
+    }
+   ],
+   "questaoSha256": "505a351934bd346ed47d00daf64e46ecdb665da5fc4d3bc44816c2c8214dd3f3",
+   "comentarioSha256": "60f334ebea24682ce740c8c344ea0e6d4847384af9c2748c242b68818136aa7f"
+  }
  },
  "trauma-0158": {
   "incorretas": {
@@ -3227,18 +3320,45 @@
   "conferido": false
  },
  "trauma-0227": {
+  "conceito": "**Rigidez descreve perda de movimento, mas não identifica sua causa.** Depois da fratura da cabeça do rádio, o resumo aponta a **contratura capsular** como causa mais frequente. A cápsula perde a capacidade de acompanhar o arco normal e passa a limitar o movimento, mesmo quando não existe uma grande barreira óssea visível.\n\nHá também causas mecânicas: fragmentos retidos, material saliente e ossificação heterotópica podem bloquear ou dificultar o movimento. Todas são possibilidades relevantes, mas sua existência não as torna mais frequentes que a contratura. A pergunta compara causas de uma sequela, não pede uma complicação que seja impossível.\n\nÉ útil distinguir esse problema da decisão inicial de uma Mason II. No trauma agudo, investiga-se se a rotação está limitada apenas por dor ou por fragmento interposto. Na recuperação, uma limitação persistente pode resultar de contratura, ainda que o impedimento inicial não fosse ósseo. O momento e o mecanismo da restrição mudam a investigação.\n\nO tratamento busca recuperar movimento sem piorar uma articulação instável. O resumo cita alongamento orientado e órteses estáticas progressivas para a rigidez estabelecida; se não forem suficientes, pode ser necessária liberação aberta ou artroscópica. Isso não equivale a recomendar alongamento forçado indiscriminado na fase aguda.\n\n**Leia “Complicações” da fratura da cabeça radial, na Biblioteca, e compare com “Exame: dor ou bloqueio?”.** As duas seções ajudam a separar dor, barreira física e contratura, evitando dar a mesma explicação a toda perda de arco.",
+  "correta": "**A: contratura capsular.** É a causa mais comum listada no resumo. O diagnóstico envolve reconhecer limitação de partes moles, e não presumir um fragmento apenas porque a lesão original foi uma fratura.\n\nAs outras causas precisam ser investigadas conforme o padrão do bloqueio e os achados de imagem. A resposta epidemiológica não dispensa procurar uma causa mecânica tratável em um paciente específico.",
   "incorretas": {
-   "B": "O bloqueio por fragmentos ósseos é menos comum.",
-   "C": "A ossificação heterotópica é menos frequente que a contratura capsular.",
-   "D": "O material de síntese saliente é causa ocasional."
+   "B": "**Fragmentação ou fragmento retido pode gerar barreira física, mas não é a causa mais frequente descrita para a rigidez.** A correlação entre fragmento e limitação deve ser demonstrada; não basta encontrar irregularidade radiográfica para explicar todo o arco perdido. Um bloqueio mecânico verdadeiro pode mudar a conduta, enquanto a pergunta sobre a causa mais comum favorece a contratura capsular.",
+   "C": "**Ossificação heterotópica pode limitar o movimento, porém não ocupa o primeiro lugar nessa comparação.** É formação óssea em partes moles e pode produzir uma barreira distinta da cápsula contraída. O capítulo a inclui entre as complicações possíveis, mas identifica a contratura como causa mais frequente de rigidez após a fratura da cabeça radial.",
+   "D": "**Material proeminente pode causar conflito e perda de movimento, mas depende de ter havido fixação e de sua relação com as superfícies.** Não explica, por si, a rigidez de todas as fraturas, inclusive as tratadas sem implante. A fonte o apresenta como causa mecânica possível, menos frequente que a contratura capsular."
   },
-  "conceito": "O **cotovelo** é a articulação que mais facilmente **enrijece** depois de um trauma. Três motivos:\n\n**alta congruência** das superfícies articulares;\n\n**cápsula** que **fibrosa rapidamente** e se retrai;\n\n**músculo braquial** encostado na cápsula anterior, que favorece a ossificação heterotópica.\n\n**A causa mais comum de rigidez após a fratura da cabeça do rádio**: a **contratura capsular**. A cápsula anterior encurta, sobretudo com a imobilização, e o cotovelo perde a **extensão**.\n\n**As outras causas**, menos frequentes: bloqueio por **fragmentos** ou consolidação viciosa, **ossificação heterotópica** e **material** de síntese saliente.\n\n**A prevenção**: **mobilização precoce**, em menos de 2 semanas.\n\n**O tratamento**: **órteses** progressivas (estáticas ou dinâmicas); se o arco ficar abaixo do funcional após cerca de 6 meses, **liberação capsular** aberta ou artroscópica.\n\n**O arco funcional (Morrey)**: de **30 a 130°** de flexão e extensão e **50°** de pronação e de supinação.\n\n**Na prova**: a causa mais comum de rigidez após a fratura da cabeça do rádio é a **contratura capsular**.",
-  "correta": "A cápsula do cotovelo fibrosa e retrai cedo, sobretudo com imobilização, e é a principal causa da rigidez.",
+  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 39"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-37bad88e",
+      "fratura-da-cabeca-do-radio-d9bc4253",
+      "fratura-da-cabeca-do-radio-ffb10ce8",
+      "fratura-da-cabeca-do-radio-77543d87",
+      "fratura-da-cabeca-do-radio-9e1dbc64"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "8326c4085378b5ca61162f5588d81f82156c9d6559a1cf78bc0e1f5169755fad"
+    }
+   ],
+   "questaoSha256": "bb305926f129226ebd783816404b3543f7d5aab7686667826734c5a0a9df4c93",
+   "comentarioSha256": "5cb3bcb92dc87e824ed95acd98f7e56b4cc94e5d299f2a2d2e296ea29aa77dc1"
+  }
  },
  "trauma-0228": {
   "conceito": "**As fraturas do idoso andam juntas.** As fraturas transtrocantéricas e as do colo do fêmur no idoso são fraturas por **fragilidade**, resultado da **osteoporose** somada a uma **queda** da própria altura. O mesmo paciente, na mesma queda, pode sofrer mais de uma fratura.\n\n**A associação mais comum: o rádio distal do mesmo lado.** Quando o idoso cai de lado, ele tenta se proteger **apoiando a mão** no chão. O resultado pode ser a fratura do **rádio distal ipsilateral** junto com a fratura do quadril. Essa é a associação de fraturas **mais frequente** com a fratura transtrocantérica.\n\n**Por que isso importa.**\n- Sempre **examinar o punho e o ombro** do idoso com fratura do quadril. As fraturas do membro superior podem passar despercebidas pela dor do quadril.\n- O tratamento da fratura do punho influencia a **reabilitação**: o idoso precisa dos braços para usar o **andador** ou as muletas depois da cirurgia do quadril. Por isso, muitas vezes se prefere **fixar** a fratura do rádio, permitindo a carga precoce no membro superior.\n- A fratura do quadril e a do punho são **marcadores de osteoporose**: o paciente deve ser **investigado e tratado** (vitamina D, cálcio, bisfosfonatos), além de receber medidas para **prevenir quedas**.\n\n**A cascata de fraturas por fragilidade.** A fratura do **rádio distal** costuma ser a **primeira** fratura por fragilidade, por volta dos 50 a 60 anos. Depois vêm as **vertebrais** e, mais tarde, a do **quadril**. Uma fratura por fragilidade prévia **dobra** o risco de uma nova fratura. Por isso, a fratura do punho é uma oportunidade de prevenir a fratura do quadril (os serviços de **ligação de fraturas**, fracture liaison services).\n\n**Os outros diagnósticos das alternativas.** As fraturas do **acetábulo** e do tornozelo associadas ocorrem sobretudo nos traumas de **alta energia** dos jovens. A fratura do úmero proximal é uma fratura por fragilidade comum, mas, associada à do quadril, aparece no lado **ipsilateral** (o lado da queda), e não no contralateral.",
@@ -3595,15 +3715,44 @@
   "conferido": false
  },
  "trauma-0271": {
+  "conceito": "**Essex-Lopresti é uma lesão do sistema longitudinal do antebraço.** A combinação completa inclui fratura da **cabeça do rádio**, ruptura da **membrana interóssea** e lesão da **radioulnar distal**. O problema não fica restrito ao cotovelo: a perda das contenções permite migração proximal do rádio e repercussão no punho.\n\nIsso explica por que toda fratura da cabeça radial precisa de exame do punho e da radioulnar distal. Dor nessa região é uma pista de instabilidade longitudinal; o paciente pode concentrar a queixa no cotovelo e a lesão distal passar despercebida. O diagnóstico tardio é mais difícil de reconstruir e pode ter resultado insatisfatório.\n\nA cabeça radial é parte da contenção que ainda pode ser reconstruída. Na fase aguda, o resumo orienta fixá-la ou substituí-la, com estabilização temporária da radioulnar distal e consideração das demais lesões. Ressecção isolada piora o problema ao retirar o apoio proximal de um rádio já sem suas contenções longitudinais.\n\nA alternativa C descreve cabeça radial e membrana interóssea, mas não menciona a radioulnar distal. É a combinação que identifica o gabarito entre as opções; deve ser completada mentalmente com a lesão distal da definição. **Na Biblioteca, leia “Lesão de Essex-Lopresti” e procure a relação entre cotovelo e punho.** O objetivo é reconhecer o antebraço como uma unidade funcional, não apenas decorar uma dupla de lesões.",
+  "correta": "**C: cabeça do rádio com lesão da membrana interóssea.** É o par compatível com Essex-Lopresti entre as opções. A definição completa do resumo também inclui instabilidade da radioulnar distal, que não deve ser esquecida por estar ausente da redação da alternativa.\n\nEssa extensão distal muda o exame e o tratamento. É necessário procurar dor e instabilidade no punho e preservar ou reconstruir o apoio da cabeça radial; tratar apenas a fratura visível no cotovelo pode deixar a instabilidade longitudinal sem diagnóstico.",
   "incorretas": {
-   "A": "A fratura do rádio com luxação da radioulnar distal é a lesão de Galeazzi.",
-   "B": "A fratura da ulna com luxação anterior da cabeça do rádio é a Monteggia Bado I.",
-   "D": "A fratura da ulna com luxação posterolateral da cabeça do rádio é a Monteggia Bado II."
+   "A": "**Fratura do rádio associada à luxação radioulnar distal remete ao padrão de Galeazzi, não à definição de Essex-Lopresti.** Nesta última, a fratura está na cabeça radial e a membrana interóssea faz parte da falha longitudinal. A presença de uma lesão distal não torna iguais todos os epônimos: o nível da fratura e as contenções rompidas precisam ser identificados.",
+   "B": "**Fratura da ulna com luxação da cabeça radial é o padrão de Monteggia.** A relação proximal é alterada em associação à fratura ulnar, e restaurar a anatomia da ulna é fundamental para manter a cabeça reduzida. Essex-Lopresti parte de uma fratura da própria cabeça do rádio com falha longitudinal pela membrana e pela articulação distal.",
+   "D": "**A opção continua combinando fratura ulnar e luxação proximal da cabeça radial.** Mudar a direção da luxação não transforma esse padrão em Essex-Lopresti. A lesão perguntada exige reconhecer a cabeça radial fraturada, e não apenas deslocada, e a falha da membrana interóssea com comprometimento distal. A distinção é entre mecanismos de instabilidade do antebraço."
   },
-  "conceito": "A **lesão de Essex-Lopresti** rompe o \"anel\" do antebraço em dois pontos e deixa o rádio **migrar para cima**:\n\n**fratura da cabeça do rádio** (ou do colo);\n\n**ruptura da membrana interóssea**;\n\n**lesão da articulação radioulnar distal**.\n\n**O resultado**: o rádio encurta em relação à ulna, a **variância ulnar fica positiva**, e aparece dor no **punho** e no antebraço.\n\n**Como não perder**: em toda fratura da cabeça do rádio, **palpar o punho** e o antebraço. Comparar a variância ulnar com o lado oposto. Ultrassom ou RM mostram a membrana.\n\n**O tratamento**: **nunca ressecar** a cabeça do rádio sem repor; fixar ou usar **prótese**; estabilizar a radioulnar distal.\n\n**As lesões que se confundem**:\n\n**Galeazzi**: fratura da diáfise do **rádio** com luxação da **radioulnar distal**;\n\n**Monteggia**: fratura da **ulna** com luxação da **cabeça do rádio** (anterior no Bado I, posterolateral no Bado II).\n\n**Na prova**: na lesão de Essex-Lopresti, ocorre fratura da **cabeça do rádio** com lesão da **membrana interóssea**.",
-  "correta": "A fratura da cabeça do rádio com a membrana interóssea rota (e a radioulnar distal lesada) deixa o rádio subir.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-8dbbe2b9",
+      "fratura-da-cabeca-do-radio-a6880686",
+      "fratura-da-cabeca-do-radio-510692ed",
+      "fratura-da-cabeca-do-radio-e729e04e"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "8725a40996e0d5b829ebfda85293fb3467cfb7cda7380bbbe6fddac165d4c209"
+    }
+   ],
+   "questaoSha256": "2d81d0944a292479cf3549c271453d40ca123ad0a6e98dbfee2b98b6b1401aa1",
+   "comentarioSha256": "0bbcbe176637097413eb2141ff4c546f1ab70f264634847e66538f3991710fbc"
+  }
  },
  "trauma-0272": {
   "incorretas": {
@@ -5472,15 +5621,42 @@
   "conferido": false
  },
  "trauma-0534": {
+  "conceito": "**A placa precisa ficar fora da porção que gira contra a ulna.** A cabeça do rádio tem uma superfície côncava que articula com o capítulo e uma borda que articula com a incisura radial da ulna. Cerca de um terço da circunferência é não articular; esse setor oferece uma zona para o implante sem bloquear a rotação por conflito articular.\n\nO resumo localiza a placa com o **antebraço em rotação neutra**, cerca de **10 graus anterior à linha média lateral**. A posição do antebraço faz parte da referência: uma direção descrita com o rádio neutro não pode ser transportada sem ajuste para um rádio totalmente pronado ou supinado.\n\nÉ útil separar dois sentidos de segurança. Para **marcar a zona da placa**, a referência é neutro. Para **proteger o interósseo posterior durante o acesso lateral**, o capítulo recomenda pronação, além de evitar afastador anterior ao colo e dissecção distal sem visualizar o nervo. São tarefas diferentes da cirurgia, com razões anatômicas distintas.\n\nA localização da zona pode ser conferida também pelas referências de Smith e Hotchkiss e pelos marcos de Caputo, estiloide radial e tubérculo de Lister. O objetivo continua ser o mesmo: não colocar material saliente na parte articular que precisa deslizar durante a pronossupinação.\n\n**Leia “Anatomia: a zona segura” na Biblioteca e compare com “Detalhes da via e da fixação”.** Isso evita responder “pronação” a toda pergunta que mencione segurança na cirurgia da cabeça radial.",
+  "correta": "**D: antebraço neutro e placa 10 graus anterior à linha média lateral.** A combinação reproduz a referência do resumo. A palavra lateral qualifica a linha média anatômica usada; não se trata de escolher qualquer ponto dez graus à frente de uma linha indefinida.\n\nA posição é para localizar o setor não articular do implante. A pronação usada para afastar o nervo no acesso não substitui essa referência de marcação.",
   "incorretas": {
-   "A": "**Referência errada.** Com o antebraço supinado, a linha média lateral muda de lugar, e a placa pode cair na área articular.",
-   "B": "**Referência e lado errados.** Pronado e com a placa posterior, o implante tende a invadir a parte que gira contra a ulna.",
-   "C": "**Lado errado.** O antebraço está em neutro, mas a placa deve ficar ligeiramente anterior, e não posterior, à linha média."
+   "A": "**O deslocamento anterior foi mantido, mas a rotação de referência mudou.** A zona descrita é marcada em neutro, não em supinação. Como o rádio gira, trocar a posição do antebraço sem recalcular o setor pode mudar o local do implante. Acertar os dez graus não corrige uma referência rotacional diferente.",
+   "B": "**A opção mistura pronação da proteção nervosa com localização posterior da placa.** O resumo usa neutro e dez graus anteriores à linha média lateral para a zona não articular. Pronar tem utilidade no acesso para proteger o interósseo posterior, mas não é a resposta a este passo de posicionamento do material.",
+   "C": "**O antebraço está na rotação correta, mas o lado do deslocamento foi invertido.** A placa é localizada anteriormente, não posteriormente, à linha média lateral na referência descrita. O setor é limitado e tem relação com a superfície articular; por isso, frente e trás não são detalhes intercambiáveis."
   },
-  "conceito": "**O rádio proximal gira contra a ulna.** Durante a pronossupinação, a **cabeça do rádio** e parte do **colo** entram em contato com a **incisura radial da ulna** e com o ligamento anular. Uma placa colocada nessa área **bloqueia a rotação**. Por isso existe uma **zona segura**: a parte da circunferência que **nunca** se articula com a ulna, em todo o arco de movimento.\n\n**Como achar a zona segura na cirurgia.** Smith e Hotchkiss a definiram entre duas linhas: uma alinhada com o **estiloide radial** e outra com o **tubérculo de Lister**, com o antebraço em **neutro**, um arco de cerca de **90 a 110 graus** na face **lateral**. Uma forma prática, descrita por Caputo e outros, é colocar o antebraço em **posição neutra** e posicionar a placa **ligeiramente anterior à linha média** lateral (cerca de **10 graus** anterior), onde a margem não articular fica voltada para o cirurgião. Com o antebraço em supinação ou pronação durante a colocação, o ponto de referência muda e a placa pode ir parar na área articular.\n\n**O nervo interósseo posterior.** Cruza o colo do rádio dentro do **supinador**. Na via **lateral**, manter o antebraço em **pronação** durante a dissecção afasta o nervo, e não se deve estender a exposição mais de cerca de **4 cm** abaixo da cabeça, nem colocar afastadores ao redor do colo. A placa no colo fica muito perto do nervo, e ele deve ser lembrado ao passar parafusos e afastar partes moles.\n\n**Quando fixar e quando substituir.** Fraturas de **Mason II** com bloqueio ou desvio: fixação com parafusos ou placa na zona segura. Mason **III** com mais de três fragmentos: **prótese** da cabeça do rádio, com melhores resultados que fixações precárias. Sempre avaliar a **estabilidade** do cotovelo e do antebraço (Essex-Lopresti).\n\n**Na prova:** para colocar a placa na zona segura do rádio proximal: antebraço em **neutro** e placa cerca de **10 graus anterior** à linha média lateral.",
-  "correta": "**Antebraço neutro, placa 10 graus anterior à linha média.** Nessa posição a margem não articular da cabeça e do colo fica voltada para o cirurgião, e a placa não entra em contato com a incisura radial durante a rotação.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-9e1dbc64",
+      "fratura-da-cabeca-do-radio-109bc9e4"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "12f3049aabd3ca8e7aed420e8d9ccc6c44dbf2ec79c0bb85c95f307a1dde77ee"
+    }
+   ],
+   "questaoSha256": "40110dbf1f2641dd5b53cf880fcc92a19050b8b11556c9e2fa3ee51de26bdc3b",
+   "comentarioSha256": "8d53415b004905c3c4676c474ea6666583f909e3664d6bd7ccf9a2074a998788"
+  }
  },
  "trauma-0535": {
   "incorretas": {
@@ -6443,15 +6619,47 @@
   "conferido": false
  },
  "trauma-0691": {
+  "conceito": "**O tipo I de Broberg e Morrey reúne características de baixo desvio e pequena extensão articular.** Na descrição do resumo, é uma fratura sem desvio ou com desvio menor que 2 mm e menos de 30% da superfície. Em um quadro estável, sem bloqueio e sem outra lesão que imponha cirurgia, é o padrão que sustenta o tratamento conservador pedido.\n\nO tratamento não significa semanas de imobilidade. A fonte usa tala por dois ou três dias para conforto, seguida de movimento ativo e tipoia entre os exercícios. O objetivo é recuperar o arco sem acrescentar rigidez ao problema traumático.\n\nAs outras opções oferecem critérios isolados que não descrevem esse conjunto. Oito milímetros de desvio é um limite muito maior que o tipo I; menos de 40% da superfície não informa se há um fragmento bloqueando; medial íntegro não exclui falha lateral, corpo livre ou bloqueio mecânico. Uma informação favorável não garante que todo o cotovelo esteja apto ao tratamento sem cirurgia.\n\nO resumo também relativiza os limiares antigos como indicação automática de operar uma Mason II. Assim, a lógica não é “ultrapassou qualquer número, operar”, mas reconhecer o padrão, examinar o movimento e verificar as contenções associadas.\n\n**Na Biblioteca, leia a classificação de Broberg-Morrey e o início de “Sem cirurgia”.** A comparação ajuda a juntar radiografia e função, em vez de escolher conduta por um único valor ou por um ligamento isolado.",
+  "correta": "**D: tipo I de Broberg e Morrey.** É a categoria que reúne a ausência de desvio ou o desvio mínimo e a pequena superfície comprometida descritos. Esse padrão, quando não há bloqueio ou lesão associada relevante, costuma permitir tratamento conservador com movimento precoce.\n\nO nome classificatório deve acompanhar um exame coerente. Se houver instabilidade, fragmento interposto ou outra indicação cirúrgica, o paciente precisa ser reavaliado apesar de uma descrição inicial favorável.",
   "incorretas": {
-   "A": "**Desvio grande.** Oito milímetros de desvio ultrapassam muito o limite de 2 mm.",
-   "B": "**Limite errado.** O critério da classificação é 30% da superfície articular, e o desvio também precisa ser considerado.",
-   "C": "**Não basta.** A integridade do colateral medial não define, sozinha, o tratamento conservador; o desvio e o bloqueio mecânico são decisivos."
+   "A": "**“Menor que 8 mm” é amplo demais para identificar o padrão conservador descrito.** A faixa inclui desvios muito superiores aos do tipo I e não informa se existe bloqueio mecânico. Além de trocar a referência de 2 mm por 8, a opção tenta decidir a conduta apenas por uma medida. O exame da rotação e as lesões associadas continuam necessários.",
+   "B": "**Menos de 40% da superfície não é o critério do tipo I e não garante movimento livre.** A classificação apresentada usa menos de 30%, e o tratamento depende também do desvio, da rotação e da estabilidade. Um fragmento menor que 40% ainda pode estar interposto; portanto, a porcentagem isolada não basta para a conclusão.",
+   "C": "**Medial íntegro é um achado favorável, mas não exclui outros motivos para operar.** A contenção lateral pode estar lesada, um fragmento pode impedir rotação e outras lesões podem acompanhar a fratura. O colateral medial não é a única estrutura que estabiliza o cotovelo. A alternativa toma uma parte da avaliação como se comprovasse a adequação de todo o tratamento conservador."
   },
-  "conceito": "**Das classificações de Mason a Broberg e Morrey.** **Mason** (1954) dividiu as fraturas da cabeça do rádio em **tipo I** (sem desvio), **tipo II** (desviada, fragmento único) e **tipo III** (cominutiva); **Johnston** acrescentou o **tipo IV**, associada a **luxação** do cotovelo. Faltava dizer quanto é \"com desvio\". **Broberg e Morrey** deram números: **tipo I**, desvio **menor que 2 mm**; **tipo II**, desvio de **2 mm ou mais** envolvendo **30% ou mais** da superfície articular; **tipo III**, **cominutiva**; **tipo IV**, com **luxação**.\n\n**O tratamento conservador.** O **tipo I** de Broberg e Morrey é tratado **sem cirurgia**: tipoia por poucos dias e **mobilização precoce**, com bom prognóstico. A **aspiração** da hemartrose com injeção de anestésico alivia a dor e permite testar se há **bloqueio mecânico** à rotação, o dado que mais pesa na decisão. Fraturas do tipo II **sem bloqueio** também podem ir bem com tratamento conservador, conforme estudos recentes.\n\n**Quando operar.** **Bloqueio mecânico** à pronossupinação, desvio significativo com fragmento grande, fraturas **cominutivas** (tipo III) e fraturas associadas a **instabilidade** (tipo IV, tríade terrível, Essex-Lopresti). Opções: **fixação** com parafusos ou placa (na zona segura) para até três fragmentos; **prótese** para cominuições maiores; **ressecção** apenas em pacientes de baixa demanda sem instabilidade.\n\n**Os distratores.** Um desvio de 8 mm é grande e indica cirurgia. O limite de envolvimento articular é **30%**, e não 40%. A ausência de lesão do colateral ulnar não basta para indicar tratamento conservador.\n\n**Na prova:** Broberg e Morrey **tipo I** (desvio **menor que 2 mm**) = **tratamento conservador** com mobilização precoce; teste o **bloqueio** após aspiração.",
-  "correta": "**Tipo I de Broberg e Morrey.** Com desvio menor que 2 mm, a fratura é tratada sem cirurgia, com mobilização precoce e bom prognóstico.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio; Quem segura o cotovelo."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio",
+      "Quem segura o cotovelo"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-ac256d11",
+      "fratura-da-cabeca-do-radio-77543d87",
+      "fratura-da-cabeca-do-radio-1d0282a3",
+      "fratura-da-cabeca-do-radio-74811875",
+      "quem-segura-o-cotovelo-834827b5",
+      "quem-segura-o-cotovelo-e5d8f9c3"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "15d93fd9d5591a9e0b1c1c6e6ef2b664a67a5489209eff9a638936f4f5a2dfba"
+    }
+   ],
+   "questaoSha256": "cac65d7666dffb1c3f16e4fd834689372e0bbf19edd475a9a25fe913196f9c05",
+   "comentarioSha256": "03b62dd71e2531d9b28dd8d98fafff502787f751ebc8f91737e5189770f0fe7a"
+  }
  },
  "trauma-0692": {
   "incorretas": {
@@ -7824,15 +8032,44 @@
   "conferido": false
  },
  "trauma-0819": {
+  "conceito": "**Dor no punho pode fazer parte de uma fratura da cabeça radial.** Na lesão de Essex-Lopresti, a cabeça do rádio fratura e as contenções longitudinais do antebraço falham pela membrana interóssea e pela radioulnar distal. A combinação conecta uma lesão proximal a uma instabilidade distal; por isso, examinar apenas o cotovelo pode deixar o diagnóstico incompleto.\n\nA cabeça radial ajuda a limitar a migração proximal do rádio. Quando também há falha da membrana e da articulação distal, retirar esse apoio sem reconstrução agrava a instabilidade. O resumo recomenda testar o sistema longitudinal e examinar o punho em toda fratura da cabeça, com atenção à radioulnar distal.\n\nA definição deve ser separada de outras fraturas-luxações. Galeazzi combina fratura do rádio com lesão radioulnar distal; Monteggia combina fratura ulnar e luxação da cabeça radial. Na Essex-Lopresti, a fratura proximal é da **cabeça do rádio** e a membrana interóssea é uma parte essencial do mecanismo.\n\nNo tratamento agudo, a cabeça é fixada ou substituída, e a radioulnar distal pode ser estabilizada temporariamente. A reconstrução tardia é mais difícil, o que dá importância à pista clínica no exame inicial.\n\n**Leia “Lesão de Essex-Lopresti” na Biblioteca e compare a definição com os distratores de Galeazzi e Monteggia.** Localizar a fratura em cada padrão é uma forma mais segura de lembrar qual articulação perdeu sua relação.",
+  "correta": "**C: cabeça do rádio.** É a fratura proximal que integra a instabilidade longitudinal de Essex-Lopresti. A alternativa deve ser lida com o restante da definição: membrana interóssea e radioulnar distal lesionadas.\n\nA pista distal do enunciado não muda a localização da fratura. Ela alerta para procurar uma lesão que liga o cotovelo ao punho e que não pode ser tratada como uma fratura isolada da cabeça.",
   "incorretas": {
-   "A": "**Outra lesão.** A fratura da diáfise da ulna com luxação da cabeça do rádio é a Monteggia.",
-   "B": "**Outra lesão.** A fratura da diáfise do rádio com lesão da radioulnar distal é a Galeazzi.",
-   "D": "**Outra lesão.** A fratura do estiloide radial é uma fratura por cisalhamento do rádio distal, sem o mecanismo longitudinal da Essex-Lopresti."
+   "A": "**Fratura da diáfise ulnar não é o componente ósseo da definição.** Fratura da ulna com luxação da cabeça radial lembra Monteggia, em que a restauração do alinhamento ulnar é decisiva para a redução proximal. No padrão de Essex-Lopresti, a cabeça está fraturada e o problema longitudinal inclui a membrana interóssea e a articulação distal.",
+   "B": "**Fratura diafisária do rádio com instabilidade radioulnar distal remete a Galeazzi.** A articulação distal pode aparecer nos dois padrões, mas a localização da fratura distingue as lesões. Essex-Lopresti envolve a cabeça radial e a membrana interóssea; reduzir tudo a “fratura do rádio com problema no punho” perde a diferença que determina a investigação.",
+   "D": "**A estiloide é uma região distal do rádio e não substitui a cabeça na definição.** A lesão perguntada depende da perda de contenção proximal associada à falha longitudinal do antebraço. Uma fratura distal pode exigir avaliação própria, mas sua presença não demonstra o conjunto de Essex-Lopresti descrito no resumo."
   },
-  "conceito": "**O antebraço é uma unidade.** O **rádio** e a **ulna** funcionam acoplados, e a estabilidade **longitudinal** do antebraço depende de três elos: a **cabeça do rádio** (batente proximal contra o capítulo), a **membrana interóssea** (sobretudo a **banda central**, oblíqua, do rádio proximal à ulna distal, responsável por grande parte da estabilidade longitudinal) e a **articulação radioulnar distal** com o complexo da fibrocartilagem triangular.\n\n**A lesão de Essex-Lopresti.** É a falha dos **três elos** ao mesmo tempo: **fratura da cabeça do rádio**, **ruptura da membrana interóssea** e **lesão da radioulnar distal**. Com os três rompidos, o **rádio migra proximalmente**, a ulna fica relativamente longa no punho (**variância ulnar positiva**), com dor ulnar no punho e impacto ulnocarpal, e a cabeça do rádio (ou o que resta dela) bate no capítulo.\n\n**Como não perder.** Em toda fratura da **cabeça do rádio**, especialmente cominutiva, **palpar o punho** e a radioulnar distal, e pedir **radiografias bilaterais do punho** para comparar a variância ulnar. Um aumento maior que cerca de 2 mm sugere a lesão. O **teste de tração do rádio** (radius pull test) no intraoperatório (migração acima de 3 mm) e o **ultrassom** ou a **ressonância** da membrana interóssea ajudam.\n\n**O tratamento.** Na fase **aguda**, **nunca ressecar** a cabeça do rádio sem substituí-la: **fixar** ou colocar **prótese**, restaurando o batente. Reduzir e estabilizar a **radioulnar distal** (fixação com fios em supinação ou reparo da fibrocartilagem). Nos casos **crônicos**, a reconstrução é muito difícil (reconstrução da membrana interóssea, encurtamento da ulna, prótese do rádio), com resultados modestos.\n\n**Na prova:** **Essex-Lopresti** = fratura da **cabeça do rádio** + ruptura da **membrana interóssea** + lesão da **radioulnar distal**; não ressecar a cabeça do rádio.",
-  "correta": "**Cabeça do rádio.** A Essex-Lopresti combina a fratura da cabeça do rádio com a ruptura da membrana interóssea e a instabilidade da radioulnar distal, permitindo a migração proximal do rádio.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-8dbbe2b9",
+      "fratura-da-cabeca-do-radio-a6880686",
+      "fratura-da-cabeca-do-radio-510692ed",
+      "fratura-da-cabeca-do-radio-e729e04e"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "8725a40996e0d5b829ebfda85293fb3467cfb7cda7380bbbe6fddac165d4c209"
+    }
+   ],
+   "questaoSha256": "18d138853a21915f7f447c891736fbe0fd151de7ea4c03eb1a6b410004319f29",
+   "comentarioSha256": "5241fd68484016ca59b7428866eac1304156aa426384fbdf36fa9f16ff00f78d"
+  }
  },
  "trauma-0820": {
   "conceito": "**A Bennett associa migração proximal da base a adução e supinação do metacarpo.** É uma fratura intra-articular parcial da base do primeiro metacarpo. O pequeno fragmento volar-ulnar permanece ligado ao trapézio pelo ligamento oblíquo anterior, enquanto a diáfise e o componente articular maior ficam sujeitos às forças musculares deformantes.\n\nO **abdutor longo do polegar**, inserido na base, é a principal força de migração proximal. O **adutor do polegar** leva a diáfise para **adução e supinação**. O resultado espacial também é descrito como subluxação proximal, radial e dorsal da base. Não há contradição entre a direção de translação da base e a postura de adução da diáfise: são componentes diferentes da deformidade.\n\nA pergunta solicita o par de movimentos da diáfise, não o nome do músculo nem a localização do fragmento retido. A pronação é o sentido de correção da supinação, não o desvio que se deve atribuir à fratura. Separar translação, angulação e rotação ajuda a interpretar descrições que parecem conflitantes.\n\n**Leia “Fratura de Bennett: quem fica e quem foge”**, na seção da base do polegar do resumo do Rockwood & Green, 10ª edição, capítulo 45.\n\n**Distinguir as duas forças.** Quando se pergunta pela supinação, o músculo decisivo é o adutor. Quando se pergunta pela principal força deformante com migração proximal, destaca-se o abdutor longo. Os nomes “abdutor” e “adutor” não descrevem sozinhos todos os vetores da fratura.",
@@ -8052,15 +8289,48 @@
   "conferido": false
  },
  "trauma-0855": {
+  "conceito": "**Bloqueio por fragmento interposto é diferente de desvio medido na imagem.** Na Mason II, a fratura é marginal e desviada. Um fragmento pode manter rotação aceitável ou funcionar como uma barreira física à pronossupinação. A segunda situação é a indicação absoluta destacada pelo resumo para a fratura isolada.\n\nO exame deve excluir limitação apenas por dor. Hemartrose, inchaço e dor podem impedir que o paciente colabore; a fonte admite aspiração com anestesia ou reavaliação quando necessário para julgar a rotação. A presença de fragmento na radiografia, sem correlação com o impedimento, não demonstra automaticamente que ele seja a causa do bloqueio.\n\nLimiares como 2 mm e 30% aparecem na classificação modificada e em critérios antigos de tratamento. O resumo, porém, enfatiza que não constituem, sozinhos, obrigação de fixar toda fratura. O estudo randomizado citado não demonstrou superioridade da fixação sobre movimento precoce nas fraturas parciais desviadas isoladas estudadas.\n\nHá um limite para a expressão “única indicação”: **instabilidade ou lesão associada muda o cenário**. Uma fratura-luxação pode precisar de cirurgia para restaurar o conjunto; isso não permite concluir que toda instabilidade radioulnar proximal, qualquer que seja sua causa, define automaticamente a mesma osteossíntese. O tipo de procedimento depende de reconstruibilidade e lesões associadas.\n\n**Na Biblioteca, leia “Sem cirurgia” e “Com cirurgia: retirar, fixar ou trocar”.** A primeira seção define o papel do bloqueio na lesão isolada; a segunda mostra por que cirurgia e osteossíntese não são sinônimos em todos os padrões.",
+  "correta": "**D: bloqueio da pronossupinação por interposição de fragmento.** A alternativa descreve expressamente o obstáculo mecânico que o exame precisa identificar. Não se limita a dor, medida de desvio ou porcentagem de superfície.\n\nA indicação exige resolver a barreira ao movimento. Na escolha do procedimento, ainda se avaliam tamanho, possibilidade de reconstrução e lesões associadas; o princípio não é operar uma classificação no papel, e sim restaurar função e estabilidade.",
   "incorretas": {
-   "A": "O desvio maior que 2 mm é indicação relativa.",
-   "B": "O envolvimento maior que 30% da cabeça é indicação relativa.",
-   "C": "A instabilidade associada é indicação relativa, não absoluta."
+   "A": "**Mais de 2 mm descreve desvio, mas não prova bloqueio.** O limiar pertence a regras antigas e a descrições classificatórias; isoladamente não confirma que o paciente vá se beneficiar de osteossíntese. É preciso verificar se a rotação está mecanicamente impedida e se existe instabilidade ou outra lesão que mude a conduta.",
+   "B": "**Mais de 30% indica extensão articular, não uma barreira física obrigatória.** Um fragmento grande pode importar para a reconstrução, mas o número sozinho não equivale à indicação absoluta descrita para a Mason II isolada. A alternativa troca um critério funcional demonstrável por um corte radiográfico que o resumo não aceita como regra universal.",
+   "C": "**Instabilidade associada é clinicamente importante, mas sai da discussão de uma fratura isolada.** Ela exige avaliar o conjunto estabilizador e pode justificar tratamento cirúrgico. Não determina, por si só, que a solução de todo caso seja a mesma osteossíntese interna. A alternativa não deve ser traduzida como “instabilidade pode ser ignorada”; o gabarito procura o bloqueio mecânico diretamente causado pelo fragmento."
   },
-  "conceito": "Na **fratura da cabeça do rádio Mason II** (parcial com desvio), os estudos mostram que o tratamento **conservador** com mobilização precoce funciona bem mesmo com desvios de 2 a 5 mm, **desde que não haja bloqueio**.\n\n**A única indicação absoluta de fixação**: o **bloqueio mecânico da pronação e da supinação** por um fragmento **interposto** na articulação.\n\n**Como confirmar o bloqueio**: **aspirar** a hemartrose e infiltrar **anestésico** no cotovelo. Se, sem dor, a rotação continuar travada, o bloqueio é mecânico.\n\n**As indicações relativas**:\n\n**desvio** maior que 2 mm;\n\n**fragmento** grande (mais de 25 a 33% da cabeça);\n\n**instabilidade** associada do cotovelo ou do antebraço.\n\n**Por que são relativas**: sem bloqueio, os pacientes tratados sem cirurgia têm resultados semelhantes aos operados nesses cenários.\n\n**Na prova**: a única indicação absoluta de osteossíntese no Mason II é o **bloqueio da pronossupinação** por fragmento interposto.",
-  "correta": "O fragmento interposto que trava a rotação, confirmado após anestesia, é a única indicação absoluta.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+  ],
+  "alerta": "A regra de indicação absoluta por bloqueio mecânico é apresentada no resumo para Mason II isolada. Instabilidade associada muda a avaliação e pode exigir cirurgia; a alternativa C não deve ser ensinada como uma condição sem importância clínica.",
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-ffb10ce8",
+      "fratura-da-cabeca-do-radio-d9bc4253",
+      "fratura-da-cabeca-do-radio-ac256d11",
+      "fratura-da-cabeca-do-radio-74811875",
+      "fratura-da-cabeca-do-radio-23601215",
+      "fratura-da-cabeca-do-radio-0d86df08",
+      "fratura-da-cabeca-do-radio-fe207e21"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "68e95f9d2b3a0fb35c31ea4827b42457a518a0b6a798673a1d5aa20b34b60e2d"
+    }
+   ],
+   "questaoSha256": "25c0e22f0aed27ccb682fbf367bb2ff41b9a9afadf9873030e6fc73c3360483b",
+   "comentarioSha256": "5c3489f490fe5d84f7549eeb6793ead266ca3daf8ece9b36bd10c3ef12715f35"
+  }
  },
  "trauma-0856": {
   "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia de fraturas do planalto tibial.",
