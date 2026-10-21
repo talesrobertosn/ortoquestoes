@@ -212,7 +212,7 @@ O capítulo é crítico: o TLICS é ótimo para ensinar o peso relativo de cada 
 
 !questoes central=trauma-0193,trauma-0797,coluna-0305,trauma-0900 relacionadas=trauma-0174 treino=coluna-0537,coluna-0538,coluna-0539
 conceito: O TLICS soma morfologia, complexo ligamentar posterior e estado neurológico; a distração é a morfologia de maior pontuação (4), e a soma de 5 ou mais indica cirurgia.
-como: O TEOT 2022 pediu o nome da classificação com escore que considera o "mecanismo" da lesão, a neurologia e o complexo ligamentar posterior (o capítulo fala em morfologia, não em mecanismo, mas só o TLICS soma esses três domínios). O TARO 2013 e o TARO 2025 pediram o item de maior pontuação, com cauda equina, translação e lesão do complexo posterior (todos 3) como distratores. Outra prova TEOT/TARO deu compressão (1) com complexo indeterminado (2) e lesão medular completa (2), total 5, e conduta cirúrgica. O TEOT 2022 perguntou quantos pontos tem "a fratura" sem descrevê-la no enunciado registrado; o gabarito de 2 pontos corresponde à explosão.
+como: O TEOT 2022 pediu o nome da classificação com escore que considera o "mecanismo" da lesão, a neurologia e o complexo ligamentar posterior (o capítulo fala em morfologia, não em mecanismo, mas só o TLICS soma esses três domínios). O TARO 2013 e o TARO 2025 pediram o item de maior pontuação, com cauda equina, translação e lesão do complexo posterior (todos 3) como distratores. Outra prova de Ortopedia deu compressão (1) com complexo indeterminado (2) e lesão medular completa (2), total 5, e conduta cirúrgica. O TEOT 2022 perguntou quantos pontos tem "a fratura" sem descrevê-la no enunciado registrado; o gabarito de 2 pontos corresponde à explosão.
 armadilha: Translação/rotação ou lesão do complexo ligamentar posterior como "maior pontuação": valem 3; a distração vale 4.
 armadilha: Cinco pontos com tratamento não cirúrgico: o corte cirúrgico é 5 ou mais; a zona de dúvida é só o 4.
 armadilha: AO, Denis e Böhler como "classificação com escore que orienta o tratamento": nenhuma delas soma pontos neurológicos e ligamentares.
@@ -279,7 +279,7 @@ O ponto que mais confunde: **a invasão do canal sem déficit não se associa a 
 
 !questoes central=trauma-0287 relacionadas=trauma-0547 treino=coluna-0534,coluna-0549
 conceito: Perda de altura acima de 50% e cifose de 30 graus ou mais são critérios (relativos) de cirurgia na fratura toracolombar; a retropulsão para dentro do canal, sem déficit, não é.
-como: A prova TEOT/TARO combinou números de perda de altura, cifose e retropulsão, alguns com sinal trocado (retropulsão abaixo de 30%) ou com unidade errada (cifose em porcentagem); a alternativa certa trazia altura acima de 50% e cifose acima de 30. A SBOT-SP perguntou a partir de quantos graus de cifose, numa fratura por compressão, se suspeita de lesão ligamentar (gabarito: 25 graus); o capítulo usa os mesmos 25 graus, junto com mais de 50% de perda de altura, como limite para acompanhar de perto a A1.
+como: A prova Ortopedia combinou números de perda de altura, cifose e retropulsão, alguns com sinal trocado (retropulsão abaixo de 30%) ou com unidade errada (cifose em porcentagem); a alternativa certa trazia altura acima de 50% e cifose acima de 30. A SBOT-SP perguntou a partir de quantos graus de cifose, numa fratura por compressão, se suspeita de lesão ligamentar (gabarito: 25 graus); o capítulo usa os mesmos 25 graus, junto com mais de 50% de perda de altura, como limite para acompanhar de perto a A1.
 armadilha: "Retropulsão acima de 30%": a ocupação do canal sem déficit não é critério cirúrgico.
 armadilha: "Duas colunas de Denis e TLICS 3": TLICS 3 é tratamento não cirúrgico.
 !fim
@@ -368,7 +368,7 @@ Na prática dos autores, a cimentação é indicação **relativa**, para dor in
 
 !questoes relacionadas=trauma-0290 treino=coluna-0555
 conceito: A cimentação serve para aliviar a dor; a recuperação de altura do corpo é argumento só da cifoplastia, e de forma limitada.
-como: A prova TEOT/TARO pediu o objetivo da vertebroplastia além de diminuir a dor; o gabarito foi prevenir novo colapso do corpo vertebral, contra corrigir deformidade, prevenir deformidade e restaurar a altura.
+como: A prova Ortopedia pediu o objetivo da vertebroplastia além de diminuir a dor; o gabarito foi prevenir novo colapso do corpo vertebral, contra corrigir deformidade, prevenir deformidade e restaurar a altura.
 armadilha: "Restaurar a altura do corpo vertebral": é a proposta do balão da cifoplastia, não da vertebroplastia.
 alerta: O capítulo não atribui à vertebroplastia o objetivo de prevenir novo colapso; ele fala em alívio da dor, lembra que a vertebroplastia não recupera altura e mostra que a refratura pode ocorrer em torno do cimento no mesmo nível. Guarde o gabarito da prova como a ideia de que o cimento estabiliza o corpo já fraturado.
 !fim
@@ -458,7 +458,7 @@ No exame secundário, o paciente é **rolado em bloco** (uma pessoa segura a cer
 
 !questoes relacionadas=trauma-0343
 conceito: A fratura toracolombar tem distribuição de idade bimodal e lesões associadas na grande maioria dos pacientes (79% nas torácicas, 71% nas lombares), não em 20%.
-como: A prova TEOT/TARO deu quatro afirmações epidemiológicas; o gabarito foi que, na presença de déficit, a maioria é completa.
+como: A prova Ortopedia deu quatro afirmações epidemiológicas; o gabarito foi que, na presença de déficit, a maioria é completa.
 armadilha: "Pico trimodal": o capítulo descreve distribuição bimodal.
 armadilha: "20% de lesões não vertebrais associadas": o banco citado mostra 79% e 71%.
 alerta: O capítulo não afirma que a maioria dos déficits da fratura toracolombar é completa (diz isso só das lesões medulares por arma de fogo); ele dá 27% de déficit no total. O capítulo sustenta a exclusão das alternativas sobre o pico e as lesões associadas, mas não a afirmação do gabarito.
@@ -531,7 +531,7 @@ O **riluzol** (bloqueador de canal de sódio aprovado para ELA) está em estudo,
 
 !questoes relacionadas=coluna-0076 treino=coluna-0512
 conceito: A metilprednisolona em dose alta não é protocolo obrigatório da lesão medular; as diretrizes atuais a aceitam só como opção, em infusão de 24 horas iniciada em até 8 horas, e ela não é recomendada no ferimento por arma de fogo.
-como: A prova TEOT/TARO sobre síndromes medulares pôs como distrator que o corticoide em dose alta faz parte do protocolo inicial; o gabarito foi outra alternativa (a paresia maior nos membros superiores na síndrome medular central, assunto que este capítulo não trata).
+como: A prova Ortopedia sobre síndromes medulares pôs como distrator que o corticoide em dose alta faz parte do protocolo inicial; o gabarito foi outra alternativa (a paresia maior nos membros superiores na síndrome medular central, assunto que este capítulo não trata).
 armadilha: "Corticoide em alta dose faz parte do protocolo": é opção controversa, não protocolo.
 !fim
 

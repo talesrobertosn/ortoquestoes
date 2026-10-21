@@ -238,7 +238,7 @@ A diferença que mais impressiona é a da pressão na chegada: **3% de mortalida
 
 !questoes central=trauma-0284,trauma-0699 relacionadas=trauma-0803,trauma-1182 treino=trauma-1490
 conceito: A lesão associada mais comum à fratura do anel é a do tórax (63%); a CAP mata duas a três vezes mais que a CL, e a CAP III é a que mais leva ao choque.
-como: A prova TEOT/TARO sem ano e o CET-PR perguntaram a lesão associada mais comum, com fêmur, ossos longos, alça intestinal, bexiga e coluna lombar como distratores. O TARO 2025 pediu as mortalidades da CAP III e da CL III. O TARO 2006 pediu para julgar se a osteossíntese dos ossos longos e da pelve está indicada no TCE grave com pressão intracraniana estável entre 30 e 40 mmHg.
+como: A prova Ortopedia sem ano e o CET-PR perguntaram a lesão associada mais comum, com fêmur, ossos longos, alça intestinal, bexiga e coluna lombar como distratores. O TARO 2025 pediu as mortalidades da CAP III e da CL III. O TARO 2006 pediu para julgar se a osteossíntese dos ossos longos e da pelve está indicada no TCE grave com pressão intracraniana estável entre 30 e 40 mmHg.
 armadilha: Bexiga ou uretra: são importantes e típicas da fratura anterior, mas aparecem em 6% a 15%, bem menos que o tórax.
 armadilha: Ossos longos: 50%, a segunda, não a primeira.
 alerta: As questões do TARO 2025 (trauma-0803) e do TARO 2006 (trauma-1182) estão sem gabarito oficial no acervo. O capítulo não dá a mortalidade isolada da CL III: diz que a mortalidade da CAP é duas a três vezes a da CL e que a CAP III em instabilidade hemodinâmica morre em 37%, o que afasta a alternativa em que a CL III mataria mais que a CAP III; o capítulo não sustenta um par exato. A pressão intracraniana no politrauma não é tratada no capítulo.

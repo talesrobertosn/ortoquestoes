@@ -42,7 +42,7 @@ try {
   assert.equal(out.destaqueInicio, true)
   assert.equal(out.total, 50)
   assert.equal(out.duracao, 120)
-  assert.deepEqual([...out.config.provas].sort(), ['TARO', 'TEOT', 'TEOT/TARO'])
+  assert.deepEqual([...out.config.provas].sort(), ['Ortopedia', 'TARO', 'TEOT'])
   assert.equal(out.config.pesoRecentes, 2)
   assert.equal(out.config.anosRecentes, 5)
   assert.equal(out.config.nivelAltoPct, 60)
@@ -130,7 +130,9 @@ try {
   const banco = m.configParaBanco(conf, 2)
   assert.deepEqual(banco, { provas: ['TEOT'], peso_recentes: 3, anos_recentes: 4, nivel_alto_pct: 70, cotas: { Joelho: 10 }, variante: 2 })
   assert.deepEqual(m.lerConfig(banco), { config: conf, variante: 2 })
-  assert.deepEqual(m.lerConfig({}).config, { provas: ['TEOT', 'TARO', 'TEOT/TARO'], pesoRecentes: 2, anosRecentes: 5, nivelAltoPct: 60, cotas: null })
+  assert.deepEqual(m.lerConfig({}).config, { provas: ['TEOT', 'TARO', 'Ortopedia'], pesoRecentes: 2, anosRecentes: 5, nivelAltoPct: 60, cotas: null })
+  // Configuração gravada com o nome antigo "TEOT/TARO" passa a valer como "Ortopedia" (21/10/2026).
+  assert.deepEqual(m.lerConfig({ provas: ['TEOT', 'TEOT/TARO', 'Ortopedia'] }).config.provas, ['TEOT', 'Ortopedia'])
   assert.equal(m.sementeDe('2026-10', 0), '2026-10', 'sem variante, a semente é a do script')
   assert.equal(m.sementeDe('2026-10', 3), '2026-10~3')
 

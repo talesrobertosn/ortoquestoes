@@ -65,7 +65,7 @@ A **anterior estendida** de ASSAL junta a anterior com o ramo distal da anterome
 
 !questoes central=pe-tornozelo-0086,trauma-0954 treino=trauma-1702
 conceito: A via anteromedial começa logo lateral à crista da tíbia e desce medial ao tibial anterior; na versão modificada, sem contornar o maléolo, mostra bem o centro do plafond, mas a via que mostra o plafond inteiro é a anterior direta.
-como: Uma prova TEOT/TARO sem ano perguntou qual via mostra a maior área da tíbia distal entre anterolateral, anteromedial, posteromedial e posterolateral (anteromedial). Outra, sem ano, cruzou o início medial ou lateral à crista com o destino no quarto raio ou na base do navicular (lateral à crista e base do navicular).
+como: Uma prova de Ortopedia sem ano perguntou qual via mostra a maior área da tíbia distal entre anterolateral, anteromedial, posteromedial e posterolateral (anteromedial). Outra, sem ano, cruzou o início medial ou lateral à crista com o destino no quarto raio ou na base do navicular (lateral à crista e base do navicular).
 armadilha: Iniciar medial à crista: a incisão fica sobre a face subcutânea e dói; o capítulo põe o início logo lateral à crista.
 armadilha: Seguir para o quarto raio: é a direção da via anterolateral (bases do terceiro e quarto metatarsais).
 alerta: Na questão da maior área, o capítulo dá à anterior direta a visão do plafond inteiro, mas ela não está entre as alternativas; entre as quatro oferecidas, a anteromedial (sobretudo a modificada) é a que mostra o centro e o lado medial. O destino na base do navicular não está escrito no capítulo para a anteromedial (a anterior direta termina na talonavicular), mas é coerente com o trajeto medial ao tibial anterior.
@@ -77,7 +77,7 @@ A incisão começa cerca de **5 cm acima** da articulação, um pouco **medial a
 
 !questoes central=pe-tornozelo-0113 treino=trauma-1702
 conceito: Na via anterolateral, a porção distal da incisão aponta para as bases do terceiro e quarto metatarsais.
-como: Uma prova TEOT/TARO sem ano perguntou com qual raio a porção distal da incisão deve estar alinhada, entre segundo, terceiro, quarto e quinto (quarto).
+como: Uma prova de Ortopedia sem ano perguntou com qual raio a porção distal da incisão deve estar alinhada, entre segundo, terceiro, quarto e quinto (quarto).
 armadilha: Terceiro raio: o capítulo cita as bases do terceiro e do quarto metatarsais juntos; a banca ficou com o quarto, mais lateral, que é o que mantém a incisão sobre o CHAPUT.
 !fim
 
@@ -327,7 +327,7 @@ No plano coronal, há três padrões: falha axial com fíbula íntegra; varo com
 
 !questoes central=trauma-0911 treino=trauma-1701
 conceito: A fixação da fíbula segura a coluna lateral contra o valgo, mas a de traço simples não impede o colapso em varo, que depende do suporte medial; o varo é também o padrão da pseudartrose mais comum.
-como: Uma prova TEOT/TARO sem ano perguntou em qual plano a fixação da fíbula de traço simples não evita o colapso nas fraturas distais da tíbia e da fíbula (varo, contra valgo, recurvato e rotacional).
+como: Uma prova de Ortopedia sem ano perguntou em qual plano a fixação da fíbula de traço simples não evita o colapso nas fraturas distais da tíbia e da fíbula (varo, contra valgo, recurvato e rotacional).
 armadilha: Valgo: é justamente o colapso que a fíbula fixada impede, porque ela é o contraforte lateral.
 !fim
 

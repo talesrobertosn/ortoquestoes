@@ -241,7 +241,7 @@ Tomografia sagital de uma fratura distal da diáfise da tíbia com traço corona
 
 !questoes central=trauma-0904 treino=trauma-1710
 conceito: Na fratura espiral do terço distal, a lesão articular associada mais frequente é o cisalhamento coronal do maléolo posterior, que pede tomografia e fixação antes da haste.
-como: Uma prova TEOT/TARO sem ano perguntou a fratura articular mais detectada pela tomografia nas fraturas do quarto distal (cisalhamento coronal do maléolo posterior, contra o maléolo medial transverso ou vertical e o posterior fragmentado).
+como: Uma prova de Ortopedia sem ano perguntou a fratura articular mais detectada pela tomografia nas fraturas do quarto distal (cisalhamento coronal do maléolo posterior, contra o maléolo medial transverso ou vertical e o posterior fragmentado).
 armadilha: Fragmentado do maléolo posterior: o padrão dominante é o oblíquo simples (HARAGUCHI I), não o cominuto.
 !fim
 
@@ -289,7 +289,7 @@ A classificação AO **prevê o risco de síndrome compartimental**, mas é **m�
 
 !questoes central=trauma-0224,trauma-0305
 conceito: Na AO 42, o grupo diz o padrão (A2 oblíqua de 30 graus ou mais, B2 cunha de flexão) e o subgrupo diz a fíbula (.1 íntegra, .2 em nível diferente, .3 no mesmo nível).
-como: O TARO 2022 pediu a oblíqua de mais de 30 graus com fíbula intacta (42A2.1, contra A1.1, A1.2 e A2.2); uma prova TEOT/TARO sem ano pediu o que é a 42-B2.1 (cunha com fíbula intacta).
+como: O TARO 2022 pediu a oblíqua de mais de 30 graus com fíbula intacta (42A2.1, contra A1.1, A1.2 e A2.2); uma prova de Ortopedia sem ano pediu o que é a 42-B2.1 (cunha com fíbula intacta).
 armadilha: 42A2.2: o subgrupo .2 já tem a fíbula fraturada em outro nível.
 armadilha: Espiral com fíbula intacta: é a A1.1; a B2.1 é cunha.
 !fim

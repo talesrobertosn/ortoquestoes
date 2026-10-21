@@ -17,7 +17,7 @@ export const DURACAO_MENSAL_MIN = 120
 export type TipoEdicao = 'mensal' | 'vespera'
 
 /** As únicas provas que entram no Simulado Nacional (nome em indice.provas). */
-export const PROVAS_NACIONAL: ReadonlySet<string> = new Set(['TEOT', 'TARO', 'TEOT/TARO'])
+export const PROVAS_NACIONAL: ReadonlySet<string> = new Set(['TEOT', 'TARO', 'Ortopedia'])
 
 /** O que o painel pode ajustar no sorteio. Os padrões são os do contrato. */
 export interface ConfigSorteio {
@@ -53,7 +53,7 @@ export interface CandidataNacional {
 const LETRAS = 'ABCDEFGHIJ'
 
 /**
- * Questões do acervo que podem entrar: oficiais do TEOT, TARO e TEOT/TARO,
+ * Questões do acervo que podem entrar: oficiais do TEOT, do TARO e de Ortopedia (origem não confirmada, antes "TEOT/TARO"),
  * sem anuladas, cópias (dup) e autorais (sim), com gabarito A–E dentro das
  * alternativas da questão. O índice não traz gabarito nem alternativas: quem
  * chama carrega os arquivos dos temas e responde por `gabaritoDe` e `nAltDe`,

@@ -408,10 +408,10 @@ def extra_teot_por_ano(d: dict) -> str:
             partes.append('<ul class="lista-questoes">' + "".join(
                 f'<li><a href="../questoes/{q["tema_slug"]}/{_esc(q["id"])}.html"><strong>{_esc(q["tema_nome"])}</strong>: '
                 f'{_esc(_resumir(q["enunciado"], 120))}</a></li>' for q in exemplos) + "</ul>")
-    sem_ano = sum(d["por_prova"].get("TEOT/TARO", {}).values())
+    sem_ano = sum(d["por_prova"].get("Ortopedia", {}).values())
     if sem_ano:
-        partes.append(f'<p>Há ainda {_num(sem_ano)} questões de TEOT/TARO sem edição identificada no caderno de origem. '
-                      f'<a href="{_treino("TEOT/TARO")}">Treinar essas questões</a>.</p>')
+        partes.append(f'<p>Há ainda {_num(sem_ano)} questões de ortopedia sem edição identificada no caderno de origem. '
+                      f'<a href="{_treino("Ortopedia")}">Treinar essas questões</a>.</p>')
     return "\n".join(partes)
 
 
