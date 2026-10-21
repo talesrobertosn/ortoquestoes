@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 81 | 9 | mao-2023 a mao-2103 | A 20, B 21, C 20, D 20 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 83 | 11 | mao-2023 a mao-2105 | A 20, B 21, C 21, D 21 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 19** (lotes 01 a 18 publicados: mao-2023 a mao-2103; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 27 e 28, sem fonte). Dica: quando o texto
+7. **Próximo: SBCM 2024, lote 20, ombro-cotovelo** (lotes 01 a 19 publicados: mao-2023 a mao-2105; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -301,10 +301,10 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 22 | Síndrome compartimental neonatal | afirmativas | cap. 51, p. 1967 | mao / Outros temas da mão | 09 | mao-2062 | publicada |
 | 23 | Artropatia pela imagem | diagnóstico, figura | cap. 55, p. 2040 e 2041 | mao / Mão reumatoide | 08 |  | pendente: figura (diagnóstico pela imagem) |
 | 24 | Bloqueio interescalênico | afirmativas | cap. 1, p. 2 e 5 | mao / Anestesia em cirurgia da mão | 09 | mao-2061 | publicada |
-| 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
-| 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
+| 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | pendente: sem fonte (pregas palmares não descritas no Green) |
+| 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | pendente: sem fonte (linha cardinal de KAPLAN não está no Green) |
 | 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist | mao / Instabilidade do carpo | 04 |  | pendente: sem fonte (valores do ângulo SL não estão no Green) |
-| 28 | Teste de BERGER | epônimo | correção cita The Wrist | mao / Exame físico da mão e punho | 11 |  | pendente: sem fonte (teste de BERGER não está no Green nem no Pardini) |
+| 28 | Teste de BERGER | epônimo | correção cita The Wrist | mao / Exame físico da mão e punho | 11 |  | pendente: sem fonte (teste de BERGER não está no Green; os PDFs do Pardini são imagem, sem texto pesquisável) |
 | 29 | Melhor indicação da transferência de dedo do pé | indicação | cap. 36, p. 1404 e 1423 | mao / Outras malformações congênitas | 16 | mao-2091 | publicada |
 | 30 | Kienböck na criança: conduta (algoritmo de Lichtman) | conduta | cap. 16, p. 733 | mao / Doença de Kienböck | 06 | mao-2049 | publicada |
 | 31 | Procedimento de LEECHAVENGVONGS | afirmativas | cap. 34, p. 1328 a 1330 | mao / Plexo braquial e paralisia obstétrica | 13 | mao-2080 | publicada (ângulo: divisão anterior do axilar, rotina no Green) |
@@ -339,7 +339,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 60 | Tetraplegia: função do punho e mão a obter | fato | cap. 33, p. 1268 e 1272 | mao / Transferências tendinosas e paralisias | 13 | mao-2078 | publicada |
 | 61 | Paralisia obstétrica: sinal de avulsão | sinal | cap. 40, p. 1563 (Tabela 40.1) | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2084 | publicada |
 | 62 | Oponentoplastia de BURKHALTER: tendão | epônimo | cap. 31, p. 1196 e 1209 | mao / Transferências tendinosas e paralisias | 12 | mao-2072 | publicada |
-| 63 | Retalhos venosos | afirmativas | cap. 45, p. 1748 | mao / Microcirurgia e retalhos livres | 19 |  | a fazer |
+| 63 | Retalhos venosos | afirmativas | cap. 45, p. 1748 e 1749 | mao / Microcirurgia e retalhos livres | 19 | mao-2104 | publicada |
 | 64 | Cisto volar: localização habitual | anatomia | cap. 59, p. 2201 | mao / Cistos sinoviais e gangliões | 07 | mao-2051 | publicada |
 | 65 | Dedo em gatilho: nervo digital em maior risco | anatomia | cap. 56, p. 2109 | mao / Dedo em gatilho e outras tenossinovites | 07 | mao-2052 | publicada |
 | 66 | CMC do polegar: estabilizador primário | anatomia | cap. 11, p. 423 | mao / Rizartrose e artrose da mão | 03 | mao-2033 | publicada |
@@ -353,7 +353,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 74 | Amputação no eponíquio: zonas de TAMAI e ALLEN | classificação | cap. 49, p. 1908 | mao / Amputações e reimplantes | 10 | mao-2065 | publicada |
 | 75 | Tensor da fáscia lata: tipo de suprimento muscular | classificação | cap. 44, p. 1731 e 1732 | mao / Retalhos e cobertura cutânea | 18 | mao-2100 | publicada |
 | 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36 | mao / Deformidades dos dedos | 16 |  | pendente: depende da imagem |
-| 77 | Retalho da imagem para a ponta do polegar | epônimo, figura | cap. 48, p. 1853 | mao / Retalhos e cobertura cutânea | 19 |  | a fazer |
+| 77 | Retalho da imagem para a ponta do polegar | epônimo, figura | cap. 48, p. 1850 e 1853 (Fig. 48.6) | mao / Retalhos e cobertura cutânea | 19 | mao-2105 | publicada (caso da figura descrito) |
 | 78 | CURTIS estágio II: estrutura seccionada | classificação | cap. 5, p. 201 e 202 | mao / Lesões dos tendões extensores | 01 | mao-2025 | publicada |
 | 79 | Embriologia: camadas da figura | anatomia, figura | cap. 35, p. 1364 (Fig. 35.1) | mao / Outras malformações congênitas | 14 |  | pendente: figura com letras; conceito já em mao-2004 |
 | 80 | PANEVA-HOLEVICH: tendão inserido na falange distal | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 01 | mao-2026 | publicada |
