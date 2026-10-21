@@ -295,7 +295,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 16 | Rigidez articular: resultados conforme a causa | afirmativas | cap. 10, p. 392 | mao / Deformidades dos dedos | 02 | mao-2031 | publicada |
 | 17 | Paralisia cerebral: segunda prioridade na hierarquia | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 |  | a fazer |
 | 18 | Rádio distal na criança: fator de perda de redução | fato | cap. 41, p. 1625 | mao / Fratura do rádio distal | 05 | mao-2044 | publicada |
-| 19 | Enxerto vascularizado para Kienböck: artéria | anatomia, figura | cap. 16, p. 739 a 742 | mao / Doença de Kienböck | 07 |  | pendente: figura (o Green aceita várias artérias para o enxerto do Kienböck) |
+| 19 | Enxerto vascularizado para Kienböck: artéria | anatomia, figura | cap. 16, seção de enxertos vascularizados no Kienböck | mao / Doença de Kienböck | 07 |  | pendente: figura (o Green aceita várias artérias para o enxerto do Kienböck) |
 | 20 | Polegar hipoplásico: tendão preferido na oponentoplastia | transferência | cap. 37 (correção cita livro da SBCM) | mao / Outras malformações congênitas | 16 |  | a fazer |
 | 21 | Carcinoma basocelular: formas | afirmativas | cap. 58, p. 2167 | mao / Tumores da mão | 08 |  | a fazer |
 | 22 | Síndrome compartimental neonatal | afirmativas | cap. 51, p. 1967 | mao / Outros temas da mão | 09 |  | a fazer |
