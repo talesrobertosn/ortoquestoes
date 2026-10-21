@@ -14,6 +14,7 @@ import { AdminRelatorioMensal } from '../componentes/admin/AdminRelatorioMensal'
 import { AdminEmails } from '../componentes/admin/AdminEmails'
 import { AdminCartas } from '../componentes/admin/AdminCartas'
 import { AdminTodasCartas } from '../componentes/admin/AdminTodasCartas'
+import { GuiaEmails } from '../componentes/admin/GuiaEmails'
 import { AdminSimulados } from '../componentes/admin/AdminSimulados'
 import { SECOES, abaPadrao, definicaoDe, lerUrl, secaoDe, urlAntiga, urlDe, type Aba, type EstadoUrl, type Secao } from '../componentes/admin/secoes'
 import { AdminUsuarios, estaOnline, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
@@ -99,8 +100,8 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   // Sem a RPC leve (parte 22 ainda não colada), o número de contas sai da própria lista.
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
-    // Agora, Pessoas › Usuários, Crescimento e Cartas mostram a lista; Assinaturas, Pagamentos e Avisos usam para abrir a ficha.
-    ativo: ['agora', 'usuarios', 'crescimento', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos'].includes(aba) || semContadores,
+    // Agora, Pessoas › Usuários, Crescimento e Enviar e-mails (cartas) mostram a lista; Assinaturas, Pagamentos e Avisos usam para abrir a ficha.
+    ativo: ['agora', 'usuarios', 'crescimento', 'lembretes', 'assinaturas', 'cobrancas', 'pagamentos'].includes(aba) || semContadores,
     // "Ao vivo" em Agora e em Pessoas › Usuários, com a aba do navegador visível.
     atualizarCada: aba === 'usuarios' || aba === 'agora' ? 15_000 : undefined,
     prazoMs: 20_000,
@@ -268,8 +269,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
           {aba === 'opinioes' && <AdminOpinioesFlashcards />}
           {aba === 'simulados' && <AdminSimulados />}
 
-          {aba === 'lembretes' && <><AdminLembretes /><AdminRelatorioMensal /><AdminEmails /></>}
-          {aba === 'cartas' && <AdminCartas usuarios={usuarios} />}
+          {aba === 'lembretes' && <><GuiaEmails /><AdminLembretes /><AdminCartas usuarios={usuarios} /><AdminRelatorioMensal /><AdminEmails /></>}
           {aba === 'todas' && <AdminTodasCartas />}
 
           {aba === 'ajustes' && <AdminConfiguracoes />}
