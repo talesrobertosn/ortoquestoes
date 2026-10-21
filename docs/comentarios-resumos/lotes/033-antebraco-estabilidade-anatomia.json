@@ -1,0 +1,392 @@
+{
+  "trauma-1440": {
+    "questaoSha256": "17f564eb58282b286c36d039e154b762a87a78907872c925e9f87ce8857da070",
+    "comentarioAnteriorSha256": "75fcb50a944ef92598bde107cf4eb6ce7f3560331fd44cd235587fe26112a529",
+    "comentario": {
+      "conceito": "**A radiografia mostra fratura desviada da diáfise do rádio, com a ulna sem traço evidente nesta incidência.** Esse achado exige pesquisar a **radioulnar distal**, porque uma fratura aparentemente de um osso pode integrar uma Galeazzi. A imagem não mostra, por si só, o resultado de um teste de estabilidade do punho.\n\nGaleazzi associa fratura diafisária radial e lesão da articulação distal. Por isso, a avaliação acompanha o antebraço até o punho e o cotovelo, em vez de se encerrar no foco mais evidente. Sinais como alargamento distal, fratura da base do estiloide e alteração de variância ulnar orientam a suspeita.\n\nO resumo contrapõe critérios radiográficos históricos ao **exame intraoperatório depois da fixação anatômica do rádio**. Distância de 7,5 cm e encurtamento de 5 mm foram considerados pouco confiáveis para decidir isoladamente. Não se deve medir um número na imagem e dispensar a avaliação dinâmica da articulação reconstruída.\n\nDepois da placa, testa-se translação anteroposterior em neutro, pronação e supinação e compara-se com o outro lado. Isso informa se a articulação reduziu e ficou estável, orientando a necessidade de proteção ou tratamento adicional. **Leia “Quem tem a radioulnar distal lesada” e “Tratamento”, na Biblioteca.** Compare suspeita na radiografia com confirmação da estabilidade; são etapas diferentes.\n\n**Por que esta questão foi criada.** Exige reconhecer a associação distal a partir de uma fratura radial e distinguir sinais de suspeita do teste recomendado; os números aparecem no TARO 2022.",
+      "correta": "**B: instabilidade distal; teste após fixar o rádio.** É a associação que deve ser procurada na fratura radial apresentada e o método recomendado para decidir sobre sua estabilidade. O exame é feito depois de restabelecer a geometria óssea que influencia a articulação.\n\nA escolha não afirma que a radiografia já prova luxação distal nem que todas as fraturas semelhantes terão instabilidade persistente.",
+      "incorretas": {
+        "A": "**Monteggia é a associação clássica de fratura ulnar com luxação da cabeça radial.** Na imagem, o foco evidente é radial, e a pesquisa específica solicitada é da articulação distal. Radiografar o cotovelo continua fazendo parte da avaliação completa, mas esse par não responde à lesão associada central da vinheta.",
+        "C": "**A articulação está correta, mas a medida isolada não confirma sua estabilidade.** O encurtamento pode levantar suspeita; o resumo alerta para a baixa confiabilidade dos critérios numéricos sozinhos. O teste após reconstruir o rádio evita tratar ou dispensar tratamento apenas por um marcador estático.",
+        "D": "**A membrana pode participar da lesão, mas a ressonância prévia não substitui o teste distal recomendado.** O objetivo do caso é reconhecer a possível Galeazzi e determinar estabilidade após a fixação. Mudar o foco para uma estrutura intermediária deixa a decisão sobre a radioulnar distal sem resposta."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Galeazzi: o rádio quebrado e a radioulnar distal."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Galeazzi: o rádio quebrado e a radioulnar distal"
+        ],
+        "blocos": [
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-8647a4cc",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-2294e393",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "78f89a76364dbc5236c0ad130b7c8975a389fd0d75917a5dd26f98605335b893"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1440-1.jpeg"
+    ]
+  },
+  "trauma-1444": {
+    "questaoSha256": "d8fecb3621386590b59e040c24650119a99b53767eef8eab2997825333d6c431",
+    "comentarioAnteriorSha256": "43f18f24ab651718d4fceb9829e59808c5822069d1be65538e4dc5507019259c",
+    "comentario": {
+      "conceito": "**Base do estiloide e alteração de variância maior que 5 mm são sinais de suspeita, não um teste definitivo de estabilidade.** Na fratura diafisária do rádio, esses achados devem levar à pesquisa da radioulnar distal. Também são descritos alargamento na incidência PA e luxação ulnar no perfil.\n\nA localização da fratura do estiloide importa: o resumo destaca a **base**, relacionada à inserção dos estabilizadores distais, e não a ponta. A variância exige comparação com o outro punho, porque a anatomia varia entre pessoas. Não se deve interpretar qualquer ulna relativamente longa como prova de lesão traumática.\n\nA medida histórica de 5 mm orienta a suspeita de perda da relação de comprimento. O próprio capítulo alerta que critérios de encurtamento e distância do foco são pouco confiáveis quando usados isoladamente. Depois da redução e fixação radial, a estabilidade precisa ser examinada em diferentes rotações.\n\n**Na Biblioteca, leia a lista de sinais radiográficos e o contraponto dos estudos posteriores em “Quem tem a radioulnar distal lesada”.** A prova pede reconhecer o sinal descrito; a prática exige saber o que ele permite e o que ainda precisa ser testado.\n\n**Por que esta questão foi criada.** Compara base e ponta do estiloide e os valores de 2 e 5 mm, distratores recorrentes nas questões de Galeazzi reunidas pelo resumo.",
+      "correta": "**D: base; maior que 5 mm.** São o local e a referência numérica apresentados para levantar a suspeita. O valor deve ser interpretado em conjunto com a comparação contralateral e os demais achados.\n\nA resposta não significa que 2 mm excluam toda lesão nem que ultrapassar 5 mm dispense o teste intraoperatório.",
+      "incorretas": {
+        "A": "**Troca tanto o local quanto a referência numérica.** O sinal destacado é fratura da base, e a mudança de variância descrita é maior que 5 mm. Não se deve converter esse erro em regra de que uma lesão menor nunca importa: a questão pede os marcadores específicos da fonte.",
+        "B": "**Mantém o número, mas muda a base para o ápice.** A ponta não representa o sinal de inserção estabilizadora destacado no resumo. Uma medida correta não compensa a troca da localização anatômica.",
+        "C": "**Acerta a base, porém usa 2 mm em vez da referência de 5 mm.** O valor apresentado pela alternativa não é o critério histórico cobrado. Em qualquer caso, a medida deve orientar pesquisa e não substituir a avaliação da articulação após reconstruir o rádio."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Galeazzi: o rádio quebrado e a radioulnar distal."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Galeazzi: o rádio quebrado e a radioulnar distal"
+        ],
+        "blocos": [
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-2294e393",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-87e1d509",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-34a2d734",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "609ee0b83cb7963337fbb81d0592739dbb989498097728d9fb40bb8589409793"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1445": {
+    "questaoSha256": "76a4e3212cb2dc41299824d7fb206f35ba1b6c9ed5b59c2e84f5a477e39cbd37",
+    "comentarioAnteriorSha256": "6376d08ad2e205c7429484b24bdab3b3b32e91d33c9f3914e26abf6a8a1d2ced",
+    "comentario": {
+      "conceito": "**A rotação dos fragmentos depende dos músculos que continuam ligados a cada um.** Quando o traço está entre a inserção do supinador e a do pronador redondo, o fragmento proximal fica sob ação dos supinadores, **bíceps e supinador**, e tende à **supinação**. O distal fica sob ação pronadora e tende à **pronação**.\n\nÉ o nível descrito com maior deformidade rotacional. O pronador redondo está do lado distal do traço e não consegue contrabalançar a supinação proximal. Quando a fratura ocorre abaixo dele, parte dessa força passa a agir no fragmento proximal, diminuindo a diferença de rotação entre os segmentos.\n\nEsse raciocínio importa na redução: corrigir apenas o eixo aparente sem reconhecer a rotação pode comprometer a pronossupinação. O resumo trata o antebraço como articulação, em que comprimento, arco radial e relações proximais e distais precisam ser restaurados em conjunto.\n\n**Leia “As forças que giram o rádio”, na Biblioteca, desenhando o traço em relação às inserções.** Depois coloque cada músculo no fragmento correspondente. É uma forma de deduzir a posição sem transformar todas as fraturas radiais no mesmo padrão de deformidade.\n\n**Por que esta questão foi criada.** Explora o nível de maior deformidade rotacional cobrado no TARO 2026 e a identificação dos músculos do fragmento proximal cobrada pelo SBOT-SP.",
+      "correta": "**C: proximal em supinação; distal em pronação.** O traço separa os supinadores proximais dos pronadores que atuam distalmente. A divergência de ação explica a grande deformidade rotacional desse nível.\n\nSe a posição do traço mudar em relação ao pronador redondo, a distribuição das forças também muda.",
+      "incorretas": {
+        "A": "**Inverte a ação nos dois fragmentos.** No nível dado, os supinadores ficam com o proximal; não há base para atribuir-lhe a pronação dominante. O distal, ligado aos pronadores, também não é o segmento que fica supinado nessa descrição.",
+        "B": "**A pronação distal está correta, mas foi estendida indevidamente ao proximal.** O resumo descreve predomínio de bíceps e supinador acima do traço. Tratar os dois segmentos como se recebessem a mesma força apaga o efeito do nível de fratura.",
+        "D": "**A supinação proximal está correta, mas o distal foi colocado na mesma rotação.** A ação pronadora fica distal ao traço e produz o padrão oposto nesse segmento. A alternativa perde justamente a divergência que torna esse nível tão deformante."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: O antebraço como articulação: arco radial, forças e rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "O antebraço como articulação: arco radial, forças e rotação"
+        ],
+        "blocos": [
+          "o-antebraco-como-articulacao-arco-radial-forcas--318b7cd1",
+          "o-antebraco-como-articulacao-arco-radial-forcas--35d61e34",
+          "o-antebraco-como-articulacao-arco-radial-forcas--bec67379",
+          "o-antebraco-como-articulacao-arco-radial-forcas--0614ee82"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "12233869e41f40fdc4d136b9028ce97dcaa6e25608846fd7f08d73b802c95a6a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1446": {
+    "questaoSha256": "7a1deaa135ed863751adacf3dde7943082ffda277a27efb67123373133e4d04f",
+    "comentarioAnteriorSha256": "e839e8742b6ab3935fcf157d078f4814ddcaa4dccba30058757bcf7b2e4d12e2",
+    "comentario": {
+      "conceito": "**A incidência da tuberosidade bicipital procura inferir a rotação do fragmento proximal do rádio.** Na técnica descrita, o **cotovelo fica fletido a 90°**, os epicôndilos equidistantes do chassi e o tubo inclinado **20° para posterior**. O perfil da tuberosidade é comparado com uma referência para estimar pronação ou supinação.\n\nA finalidade explica por que não basta escolher uma radiografia comum do antebraço. O AP geral usa cotovelo estendido e antebraço supinado, enquanto esta incidência dedica a posição e a angulação do feixe a uma referência anatômica de rotação. As duas técnicas não são equivalentes só porque incluem o mesmo osso.\n\nO resumo ressalva que o método perdeu utilidade com o predomínio do tratamento cirúrgico. Isso não apaga a descrição técnica cobrada, mas impede apresentá-lo como exame indispensável em toda fratura atual. Na sala, outras referências anatômicas e imagens ajudam a conferir a rotação da redução.\n\n**Leia “Imagem e rotação”, na Biblioteca, comparando a incidência específica com o AP do antebraço.** A pergunta exige lembrar duas variáveis do mesmo método, sem combinar metade de cada técnica.\n\n**Por que esta questão foi criada.** Reformula a combinação cotovelo/feixe cobrada no TARO 2021, incluindo o limite de utilidade atual informado no resumo.",
+      "correta": "**B: flexão de 90°; feixe 20° para posterior.** O par reproduz a incidência específica da tuberosidade bicipital. Manter a posição dos epicôndilos faz parte da padronização da comparação do perfil.\n\nA resposta descreve a técnica histórica; não significa que ela tenha a mesma utilidade de antes na rotina cirúrgica.",
+      "incorretas": {
+        "A": "**Combina extensão com feixe perpendicular, sem reproduzir a técnica específica.** A extensão aproxima a posição do AP geral, mas a incidência da tuberosidade exige flexão de 90° e inclinação posterior. A finalidade de avaliar rotação depende de uma aquisição padronizada.",
+        "C": "**Acerta o cotovelo, mas elimina a inclinação do tubo.** O resumo especifica 20° para posterior; o feixe perpendicular não é a mesma descrição. Em perguntas técnicas de dois termos, reconhecer a posição corporal é apenas metade da resposta.",
+        "D": "**Mantém o ângulo do feixe e troca a posição do cotovelo.** O método da tuberosidade é feito com 90° de flexão, não extensão. A alternativa mistura uma parte correta da técnica com a posição de outra incidência."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: O antebraço como articulação: arco radial, forças e rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "O antebraço como articulação: arco radial, forças e rotação"
+        ],
+        "blocos": [
+          "o-antebraco-como-articulacao-arco-radial-forcas--38b21112",
+          "o-antebraco-como-articulacao-arco-radial-forcas--1fddf15b",
+          "o-antebraco-como-articulacao-arco-radial-forcas--e602b577"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "b6752c260d5adb70bbe2cd1164e30ddf4a73b161bfb4b8367daeedf87082b68a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1447": {
+    "questaoSha256": "efcad3a3e9328dc8ac02ad3ebaa79990cec27f36b1e46aa308fb641a9009db2e",
+    "comentarioAnteriorSha256": "647c7a38bca0953d6edb8616382780e239ba5b6cf188d26f2ffce720a824213c",
+    "comentario": {
+      "conceito": "**A fratura diafisária do antebraço do adulto predomina em homens jovens, entre 15 e 40 anos.** O resumo descreve idade média de 24 a 37 anos nas séries e predomínio masculino. O osso geralmente bom nessa população ajuda a entender por que trânsito, queda de altura e esporte com energia elevada aparecem como mecanismos importantes.\n\nNão se deve transferir automaticamente para a diáfise o perfil de fragilidade frequentemente lembrado para o rádio distal. Localização e mecanismo mudam a população observada. O capítulo informa que mulheres também sofrem a lesão, com pico feminino mais tardio, mas isso não as torna o grupo de predominância geral.\n\nO perfil epidemiológico orienta a avaliação de lesões associadas. O resumo destaca frequência de politrauma e de outras lesões no mesmo membro, reforçando a necessidade de examinar cotovelo e punho além do foco. Predominância não é exclusividade: uma pessoa fora do grupo continua exigindo a mesma investigação adequada.\n\n**Na Biblioteca, leia “Quem se machuca, como e o que vem junto”.** Relacione população, energia e procura de lesões associadas. Essa conexão torna o dado de prova clinicamente útil, sem converter idade e sexo em critérios diagnósticos.\n\n**Por que esta questão foi criada.** Treina o perfil da fratura diafisária cobrado no SBOT-SP, diferenciando-o do perfil de outras localizações do rádio.",
+      "correta": "**A: homens; 15 a 40 anos.** É a combinação de maior incidência descrita para a diáfise no adulto. O contexto é distinto da lembrança habitual de fratura distal por fragilidade.\n\nO dado é populacional e não exclui lesões em mulheres ou em outras faixas etárias.",
+      "incorretas": {
+        "B": "**Mantém o predomínio masculino, mas desloca o pico para acima de 60 anos.** O resumo situa a maior incidência nos homens jovens. A faixa mais velha pode ter fraturas, mas não é a predominância perguntada.",
+        "C": "**Mantém a faixa jovem e troca o sexo predominante.** As séries descritas têm mais homens, em contexto frequente de alta energia. A presença de mulheres jovens entre os casos não muda a resposta sobre predominância.",
+        "D": "**Troca os dois componentes do perfil principal.** O pico feminino é mais tardio, mas essa informação não transforma mulheres acima de 60 anos no grupo que domina as fraturas diafisárias adultas. É necessário manter a localização da fratura junto do dado epidemiológico."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Quem se machuca, como e o que vem junto."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Quem se machuca, como e o que vem junto"
+        ],
+        "blocos": [
+          "quem-se-machuca-como-e-o-que-vem-junto-f1d2ee6f",
+          "quem-se-machuca-como-e-o-que-vem-junto-b20f609d",
+          "quem-se-machuca-como-e-o-que-vem-junto-1c80acff"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "1276997924a2b530d51aaaec5ee75c8de1bb9a6cf3dddf85da4e3c7cb7dba0e8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1448": {
+    "questaoSha256": "f2bbd753ebce22623786fe9ccaad9196e996e338e3a8aadbe1b85fc8c0ba87f1",
+    "comentarioAnteriorSha256": "220651cb3b86a651d475709b9c3cb6df973a0cb4fdb421bae7a192fc2fe8748d",
+    "comentario": {
+      "conceito": "**Dor desproporcional à extensão passiva dos dedos é o achado clínico mais sensível destacado para a síndrome compartimental do antebraço.** O aumento da pressão dentro dos espaços fasciais ameaça os tecidos, e o quadro exige reconhecimento e liberação de urgência. Não se deve esperar um conjunto de sinais avançados para agir.\n\nO resumo recomenda, **em geral, liberar os quatro compartimentos**: volar superficial, volar profundo, dorsal e coxim móvel. A via volar inclui abertura do lacerto, da fáscia profunda e, rotineiramente, do túnel do carpo. A liberação dorsal permite abordar dorsal e coxim móvel quando necessário.\n\nA expressão “em geral” importa. O texto observa que muitas vezes a liberação volar já descomprime o antebraço, mas orienta abrir também os demais havendo dúvida. Isso não equivale a recomendar de saída a liberação de apenas um compartimento diante de uma síndrome estabelecida. O objetivo é descompressão adequada do conjunto, conforme a avaliação.\n\nSe o exame é inconclusivo ou o paciente não responde, o capítulo discute medição de pressão e a diferença para a diastólica. Essa ajuda não deve ser confundida com esperar ausência de pulso para reconhecer o problema. **Leia a seção de síndrome compartimental na Biblioteca e compare a regra geral com a ressalva sobre a via volar.**\n\n**Por que esta questão foi criada.** Combina sinal e extensão da liberação, discutidos nas questões do TARO 2024, explicitando a ressalva do capítulo sem apagar a regra geral.",
+      "correta": "**B: dor à extensão passiva; quatro compartimentos.** A opção reúne o teste clínico mais sensível destacado e a recomendação geral de liberação. O tratamento é urgente depois do diagnóstico.\n\nA ressalva de que a liberação volar pode bastar em alguns casos não torna correto limitar previamente a descompressão a um único compartimento.",
+      "incorretas": {
+        "A": "**Parestesia pode chamar atenção, mas não é o achado classificado como mais sensível nesta fonte.** Além disso, a proposta de liberar só o volar superficial deixa de fora o profundo, o dorsal e o coxim móvel. A alternativa erra tanto o sinal solicitado quanto a extensão geral da descompressão.",
+        "C": "**Ausência do pulso radial não é o teste sensível indicado para reconhecer precocemente o quadro.** A recomendação geral tampouco se resume a um compartimento “volar” indiferenciado e ao dorsal: o resumo enumera quatro espaços. Esperar o sinal vascular proposto pode atrasar a atenção ao quadro doloroso.",
+        "D": "**Acerta o sinal doloroso e restringe indevidamente a liberação ao volar profundo.** Esse espaço precisa ser considerado, mas não representa todos os compartimentos ameaçados. A avaliação da suficiência da descompressão não permite presumir, antes da exploração, que os demais podem ser ignorados."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Síndrome compartimental do antebraço."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Síndrome compartimental do antebraço"
+        ],
+        "blocos": [
+          "sindrome-compartimental-do-antebraco-b4aee409",
+          "sindrome-compartimental-do-antebraco-408a137e",
+          "sindrome-compartimental-do-antebraco-d130faa9",
+          "sindrome-compartimental-do-antebraco-e7ea6f10",
+          "sindrome-compartimental-do-antebraco-9723cec1"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "31983ef3b38192ef1ed9b18047a0b81b8a90e52aa447becd7f112b9f1732b221"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1449": {
+    "questaoSha256": "86c16e4c61770dc9044feaf0ad66d8574e871aac10728c779268b8817c119092",
+    "comentarioAnteriorSha256": "13f4bed4094cca3f8be5a6c3e540fd7f8e9ae20f603b29e93c1be8fea66b162b",
+    "comentario": {
+      "conceito": "**O coxim móvel é um compartimento próprio, formado por braquiorradial e extensores radiais longo e curto do carpo.** O nome mobile wad não deve ser usado como sinônimo de todos os músculos posteriores. A classificação em quatro compartimentos separa esse grupo do dorsal e dos dois volares.\n\n| Compartimento | Exemplos e composição relevante |\n|---|---|\n| Coxim móvel | Braquiorradial, extensor radial longo e extensor radial curto do carpo |\n| Dorsal | Inclui supinador, extensor dos dedos, extensor ulnar e músculos do polegar |\n| Volar superficial | Inclui pronador redondo, flexor radial e flexor ulnar do carpo |\n| Volar profundo | Flexor longo do polegar, flexor profundo dos dedos e pronador quadrado |\n\nA separação tem aplicação na síndrome compartimental: o resumo enumera o coxim móvel entre os quatro espaços que, em geral, precisam de liberação. Conhecer apenas a função de extensão do punho não basta para decidir a qual compartimento cada músculo pertence.\n\n**Leia “Músculos e compartimentos” e depois a descrição da incisão dorsal para descompressão, na Biblioteca.** A anatomia do grupo passa a ter uma finalidade clínica, além de fornecer uma lista para a prova.\n\n**Por que esta questão foi criada.** Treina a composição do compartimento que pode ser esquecido na descompressão do antebraço, relacionando anatomia e indicação de liberação.",
+      "correta": "**C: braquiorradial e extensores radiais longo e curto.** Esses três compõem o coxim móvel na divisão apresentada. Não é necessário acrescentar extensor dos dedos ou músculos do polegar para completar o grupo.\n\nO fato de vários músculos terem função extensora não os coloca automaticamente no mesmo espaço fascial.",
+      "incorretas": {
+        "A": "**Inclui um integrante do coxim móvel, o extensor radial curto, e mistura dois do dorsal.** Extensor dos dedos e extensor ulnar do carpo aparecem no compartimento dorsal. A alternativa mantém uma função extensora comum, mas perde a divisão anatômica pedida.",
+        "B": "**Reúne músculos do plano volar superficial.** Pronador redondo, flexor radial e flexor ulnar não formam o coxim móvel. A classificação solicitada é por compartimento, e o grupo pertence ao lado volar na tabela do capítulo.",
+        "D": "**Reúne elementos do compartimento dorsal.** Supinador e músculos do polegar listados não substituem braquiorradial e os dois extensores radiais. A proximidade na região posterolateral não elimina a separação dos espaços."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: O antebraço como articulação: arco radial, forças e rotação; Síndrome compartimental do antebraço."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "O antebraço como articulação: arco radial, forças e rotação",
+          "Síndrome compartimental do antebraço"
+        ],
+        "blocos": [
+          "o-antebraco-como-articulacao-arco-radial-forcas--72528da9",
+          "sindrome-compartimental-do-antebraco-408a137e",
+          "sindrome-compartimental-do-antebraco-e7ea6f10"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "737e9a01e2a9daa8e001b532b2dcb3ea3e0659bc6ac1bcc206a1f8ba82b35b95"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1450": {
+    "questaoSha256": "e0ff8eba50b8b8b50acd73b4452e9a9272561bde18fd6f06574919f50a81fd99",
+    "comentarioAnteriorSha256": "49280c1d4239d7915ff7cd833333207a49763d696190c9663637bbfbeb4e9568",
+    "comentario": {
+      "conceito": "**Thompson muda o par muscular ao longo da exposição, mantendo o extensor radial curto como referência.** No proximal, o intervalo é entre ele e o **extensor dos dedos**; no distal, entre ele e o **extensor longo do polegar**. Inverter a ordem dos parceiros produz uma descrição incorreta, mesmo citando os músculos certos.\n\nA via posterolateral prolonga distalmente o intervalo de Kaplan. A incisão vai do epicôndilo lateral ao tubérculo de Lister e dá acesso ao rádio, especialmente no terço médio. O intervalo é mais fácil de encontrar de distal para proximal, usando a emergência dos músculos do polegar como referência.\n\nNo proximal, o supinador envolve o rádio e contém o interósseo posterior, exigindo proteção conforme o trecho a expor. O resumo ressalva que o plano não é internervoso: a inervação dos músculos do intervalo pertence ao ramo profundo do radial e ao interósseo posterior. Assim, a existência de um intervalo entre músculos não garante, sozinha, um plano sem risco nervoso.\n\n**Na Biblioteca, leia “Rádio por trás: Thompson”.** Acompanhe o trajeto de distal para proximal e identifique onde muda o parceiro do extensor radial curto, antes de decorar uma lista de músculos.\n\n**Por que esta questão foi criada.** Expande o intervalo proximal cobrado em TEOT/TARO e a relação com Kaplan cobrada no TARO 2026, exigindo orientação ao longo de toda a via.",
+      "correta": "**A: extensor dos dedos no proximal; extensor longo do polegar no distal.** É a sequência descrita, sempre em relação ao extensor radial curto do carpo. O sentido proximal/distal é parte indispensável da resposta.\n\nEssa descrição anatômica deve ser acompanhada da atenção ao interósseo posterior no supinador.",
+      "incorretas": {
+        "B": "**Os músculos são os parceiros corretos, mas as posições foram invertidas.** O extensor longo do polegar integra a descrição distal; o dos dedos, a proximal. A alternativa explora a memorização dos nomes sem orientação espacial.",
+        "C": "**Acerta o parceiro distal e troca o proximal pelo extensor radial longo.** O intervalo proximal solicitado passa entre o radial curto e o dos dedos. A semelhança dos nomes dos extensores radiais não os torna intercambiáveis na via.",
+        "D": "**Coloca o braquiorradial no proximal e o extensor dos dedos no distal.** O braquiorradial participa da descrição anterior de Henry; em Thompson, o par proximal é radial curto com dos dedos. O parceiro distal continua sendo o extensor longo do polegar."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Vias de acesso e o nervo interósseo posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Vias de acesso e o nervo interósseo posterior"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-c37f4bf4",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "f4703056de425319cd2511884b568d06f09dcb2a2b08d9a0e71525a2ed75928e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1451": {
+    "questaoSha256": "49183e22bcac9d3c329faa44cc3b026820609702abd52894886db1fff6f03c73",
+    "comentarioAnteriorSha256": "cefea893f1d8b7fd473d26a3c62f385e72350b19a74c8c152f7733659e9b710f",
+    "comentario": {
+      "conceito": "**Na exposição proximal de Henry, a supinação máxima leva o interósseo posterior para trás durante a liberação do supinador.** O nervo está relacionado ao músculo que recobre o rádio proximal; a rotação é uma medida de proteção na dissecção profunda descrita, não uma posição escolhida apenas para facilitar a pele.\n\nA via anterior tem intervalos superficiais internervosos, mas isso não elimina os riscos profundos. A artéria radial e seus ramos, o ramo superficial do radial e o interósseo posterior exigem atenção. O resumo recomenda abrir a bursa bicipital lateralmente e não colocar afastador em volta do colo do rádio.\n\nAs rotações mudam conforme o nível: no terço médio, prona-se para liberar pronador redondo e flexor superficial; no distal, o pronador quadrado é solto com antebraço supinado. Aplicar ao proximal a posição de outro trecho é uma forma comum de trocar uma regra tecnicamente correta de contexto.\n\n**Leia “Rádio pela frente: Henry”, na Biblioteca, separando dissecção superficial e profunda.** Compare proximal, médio e distal e associe cada rotação à estrutura que precisa ser exposta ou protegida. O enunciado delimita proximal e supinador.\n\n**Por que esta questão foi criada.** Treina a proteção do nervo na dissecção proximal e evita confundir a rotação de Henry com posições de outros níveis ou acessos.",
+      "correta": "**B: supinação máxima, deslocando o interósseo posterior para posterior.** É a proteção indicada para a liberação proximal do supinador na via de Henry. A rotação não dispensa dissecção cuidadosa nem autoriza afastador ao redor do colo.\n\nA resposta é específica desse trecho da exposição, sem virar regra única para todo o rádio.",
+      "incorretas": {
+        "A": "**A proteção do interósseo posterior foi atribuída à rotação oposta.** O resumo descreve supinação máxima para a liberação proximal. Pronação aparece no terço médio para outra finalidade; transportá-la ao supinador proximal troca o contexto anatômico.",
+        "C": "**Rotação neutra e relaxamento da artéria não são a orientação descrita para esta etapa.** A pergunta trata da desinserção do supinador e da proteção do interósseo posterior. A artéria radial merece cuidado no acesso, mas isso não sustenta substituir a manobra especificada.",
+        "D": "**Pronação e ramo superficial do radial não explicam a etapa profunda pedida.** O ramo sensitivo acompanha o braquiorradial para lateral, enquanto o problema no supinador é o interósseo posterior. A alternativa troca simultaneamente a rotação e a estrutura cuja proteção justifica a manobra."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Vias de acesso e o nervo interósseo posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Vias de acesso e o nervo interósseo posterior"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-a6bcc01c",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-70016f08"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "22d865362f8f0ce21ddc0b0fe2e64efe5a89b356bcbaabe9be5bba7666be0567"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1452": {
+    "questaoSha256": "7146dff3f94dce3d434c886d90495de44843af3bfeb6a62e7271df993fcf28be",
+    "comentarioAnteriorSha256": "8ca6a4c985571de659af98b966b49b074ca31851caf258704b8af5c15830d856",
+    "comentario": {
+      "conceito": "**A imagem mostra fratura ulnar diafisária discreta, com o rádio sem traço evidente nesta incidência.** Os valores de desvio de **20%** e angulação de **5°** são dados do enunciado; não foram medidos de novo a partir de uma fotografia. A localização é no terço médio, fora da região proximal de maior risco.\n\nO resumo admite tratamento sem cirurgia para a fratura isolada e estável dos dois terços distais da ulna, com **desvio menor que 50% e angulação menor que 10°**. O caso está dentro desses limites. Ainda é necessário examinar as relações radioulnar proximal e distal, porque uma fratura de um osso só pode esconder lesão articular.\n\nA preferência é imobilização **abaixo do cotovelo**, com gesso curto ou órtese funcional. Isso protege o foco sem impor a mesma rigidez do cotovelo de uma imobilização longa. A faixa elástica isolada, por outro lado, controlou pior a dor e o desvio nas comparações discutidas.\n\nO tratamento depende de seguimento e manutenção da estabilidade; a indicação conservadora não significa abandonar a reavaliação. **Na Biblioteca, leia “Quem trata sem cirurgia: a fratura isolada da ulna”.** Compare os números do caso com todos os critérios, incluindo o local, e não apenas com o fato de ser uma fratura de um osso.\n\n**Por que esta questão foi criada.** Aplica os limites conservadores cobrados pelo SBOT-SP a uma imagem e exige distinguir gesso curto, gesso longo e faixa elástica.",
+      "correta": "**C: imobilização abaixo do cotovelo.** A fratura do terço médio é isolada e apresenta desvio e angulação dentro dos limites descritos. Gesso curto ou órtese funcional protegem o foco sem imobilizar desnecessariamente o cotovelo.\n\nA escolha pressupõe avaliação das articulações e acompanhamento da redução.",
+      "incorretas": {
+        "A": "**Placa pode ser necessária na ulna instável ou fora dos critérios conservadores, mas esse não é o caso descrito.** Os valores são pequenos e a fratura está no terço médio. Operar apenas porque o paciente é adulto ignora a exceção da ulna isolada estável, expressamente reconhecida no capítulo.",
+        "B": "**Imobilização longa acrescenta restrição ao cotovelo sem ser a preferência descrita.** O resumo favorece a proteção abaixo do cotovelo e relata rigidez com gesso longo nas comparações. O tempo de oito semanas não corrige a escolha de uma extensão de imobilização inadequada ao padrão estável.",
+        "D": "**Faixa elástica e movimento livre oferecem proteção insuficiente como preferência da fonte.** A comparação discutida mostrou pior controle de dor e maior desvio com faixa. “Sem cirurgia” não é sinônimo de ausência de imobilização ou de seguimento."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Quem trata sem cirurgia: a fratura isolada da ulna; A placa: técnica que a prova cobra."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Quem trata sem cirurgia: a fratura isolada da ulna",
+          "A placa: técnica que a prova cobra"
+        ],
+        "blocos": [
+          "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-1239920b",
+          "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-678e3db2",
+          "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-74bced0d",
+          "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-f31c62bb",
+          "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-242e743a",
+          "a-placa-tecnica-que-a-prova-cobra-b28ae921",
+          "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-2fa5f304"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "72cb0952a8a79e325acc81893896e688f68f6c698874e64edd1ca0a00f9b4c1f"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1452-1.jpeg"
+    ]
+  }
+}
