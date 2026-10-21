@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 13 | 2 | mao-2106 a mao-2118 | A 4, B 3, C 3, D 3 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 17 | 3 | mao-2106 a mao-2122 | A 4, B 4, C 4, D 5 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 04** (lotes 01 a 03 publicados: mao-2106 a mao-2118; pendentes 34 e 54, figura. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 05** (lotes 01 a 04 publicados: mao-2106 a mao-2122; pendentes 34 e 54, figura, e 38, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -408,7 +408,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 15 | Pioderma gangrenoso: tratamento | conduta | cap. 3, p. 86 | mao / Infecções da mão | 01 | mao-2107 | publicada |
 | 16 | PANEVA-HOLEVICH: tendão do enxerto | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 02 | mao-2111 | publicada |
 | 17 | Enxerto ósseo da foto: área doadora | figura | cap. 8, p. 338 | mao / Lesões ligamentares dos dedos | 03 | mao-2116 | publicada (caso da foto descrito) |
-| 18 | Osteoartrite inflamatória dos dedos: mais sintomática e mais acometida | fato | cap. 11 | mao / Rizartrose e artrose da mão | 04 |  | a fazer |
+| 18 | Osteoartrite inflamatória dos dedos: mais sintomática e mais acometida | fato | cap. 11, p. 409 | mao / Rizartrose e artrose da mão | 04 | mao-2122 | publicada |
 | 19 | Técnica da figura: qual instabilidade trata | figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | a fazer |
 | 20 | Luxação dorsal da ARUD: posição do punho | fato | cap. 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
 | 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 e 46 | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
@@ -428,7 +428,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 35 | Melanoma que surge junto a um nevo | fato | cap. 58, p. 2171 | mao / Tumores da mão | 03 | mao-2118 | publicada |
 | 36 | Síndrome do interósseo anterior: o que enfraquece | fato | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
 | 37 | Flexor longo do polegar: reparo tardio com bom resultado até | número | cap. 6, p. 245 | mao / Lesões dos tendões flexores | 02 | mao-2112 | publicada |
-| 38 | Rigidez da MF instável após liberação: tempo dos fios | número | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
+| 38 | Rigidez da MF instável após liberação: tempo dos fios | número | cap. 10, p. 399 | mao / Deformidades dos dedos | 04 |  | pendente: sem fonte (frase dos 5 a 7 dias cortada na tradução) |
 | 39 | LEECHAVENGVONGS: ramo doador e alvo | técnica | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
 | 40 | Paralisia alta do mediano: objetivo das transferências | fato | cap. 31 | mao / Transferências tendinosas e paralisias | 09 |  | a fazer |
 | 41 | Ligamentos ulnocárpicos palmares: quantos e em que plano | anatomia | cap. 13 ou 14 | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
@@ -436,8 +436,8 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 43 | NALEBUFF: polegar reumatoide da radiografia | classificação, figura | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
 | 44 | Ângulo da lágrima (teardrop) na radiografia | número, figura | cap. 15 | mao / Fratura do rádio distal | 06 |  | a fazer |
 | 45 | Ligamentos do punho da figura | anatomia, figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | a fazer |
-| 46 | Contratura em flexão da IFP: o que liberar | técnica | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
-| 47 | Contratura em extensão da IFP: o que liberar | técnica | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
+| 46 | Contratura em flexão da IFP: o que liberar | técnica | cap. 10, p. 400 | mao / Deformidades dos dedos | 04 | mao-2119 | publicada |
+| 47 | Contratura em extensão da IFP: o que liberar | técnica | cap. 10, p. 403 | mao / Deformidades dos dedos | 04 | mao-2120 | publicada |
 | 48 | TSUGE, Volkmann moderada: melhor tratamento | conduta | cap. 51 | mao / Outros temas da mão | 17 |  | a fazer |
 | 49 | Plexo total: contraindicação da artrodese glenoumeral | conduta | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
 | 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
@@ -490,6 +490,6 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
 | 98 | Paroníquia: mecanismo e agente | fato | cap. 2, p. 20 | mao / Infecções da mão | 01 | mao-2108 | publicada |
 | 99 | SECRETAN: causa | fato | cap. 54 | mao / Outros temas da mão | 17 |  | a fazer |
-| 100 | Capsulotomia volar da IFP: marco dos ligamentos checkrein | anatomia | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
+| 100 | Capsulotomia volar da IFP: marco dos ligamentos checkrein | anatomia | cap. 10, p. 387 e 400 | mao / Deformidades dos dedos | 04 | mao-2121 | publicada |
 
 Lotes: 01 (73, 15, 98, 54, 55) · 02 (3, 34, 16, 37, 56) · 03 (57, 77, 17, 76, 35) · 04 (38, 46, 47, 100, 18) · 05 (58, 4, 19, 45, 59) · 06 (41, 20, 60, 2, 44) · 07 (5, 61, 74, 84, 21) · 08 (65, 1, 33, 23, 36) · 09 (64, 7, 6, 85, 40) · 10 (42, 86, 8, 89, 24) · 11 (9, 39, 49, 50, 66) · 12 (90, 10, 25, 67, 81) · 13 (53, 75, 91, 11, 26) · 14 (68, 27, 69, 87, 92) · 15 (28, 70, 71, 82, 12) · 16 (29, 93, 97, 83, 94) · 17 (48, 88, 30, 99, 31) · 18 (43, 52, 95, 72, 13) · 19 (14, 32, 78, 96) · 20 (22, 51, 62, 63, 79, 80).
