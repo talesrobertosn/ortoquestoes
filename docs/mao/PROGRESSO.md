@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 59 | 6 | mao-2023 a mao-2081 | A 15, B 15, C 15, D 14 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 63 | 7 | mao-2023 a mao-2085 | A 16, B 16, C 16, D 15 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 14** (lotes 01 a 13 publicados: mao-2023 a mao-2081; pendentes 2, 19, 23 e 71, figura, e 27 e 28, sem fonte). Dica: quando o texto
+7. **Próximo: SBCM 2024, lote 15** (lotes 01 a 14 publicados: mao-2023 a mao-2085; pendentes 2, 19, 23, 71 e 79, figura, e 27 e 28, sem fonte). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -290,7 +290,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 11 | Plexo: nervo que sai direto da raiz | anatomia | cap. 34, p. 1304 | mao / Plexo braquial e paralisia obstétrica | 13 | mao-2079 | publicada |
 | 12 | Exemplo de deficiência longitudinal | classificação | cap. 35 a 38 (correção cita livro da SBCM) | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
 | 13 | MADELUNG: causa associada | fato | cap. 38, p. 1505 | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
-| 14 | Sinal de PUTTI na paralisia obstétrica | sinal | cap. 40, p. 1578 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 14 | Sinal de PUTTI na paralisia obstétrica | sinal | cap. 40, p. 1578 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2082 | publicada |
 | 15 | Retalho bipediculado do polegar | epônimo | cap. 44, p. 1719 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
 | 16 | Rigidez articular: resultados conforme a causa | afirmativas | cap. 10, p. 392 | mao / Deformidades dos dedos | 02 | mao-2031 | publicada |
 | 17 | Paralisia cerebral: segunda prioridade na hierarquia | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 | mao-2074 | publicada |
@@ -314,7 +314,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 35 | Cisto: pseudorrecidiva após ressecção artroscópica | conduta | cap. 17, p. 773 e 774 | mao / Cistos sinoviais e gangliões | 07 | mao-2050 | publicada |
 | 36 | Lesão crônica do radial: transferências de nervo | transferência | cap. 31, p. 1238 | mao / Lesões de nervos periféricos | 11 | mao-2070 | publicada |
 | 37 | Espasticidade: deformidade comum | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 | mao-2075 | publicada |
-| 38 | Malformações do membro: semanas de gestação | número | cap. 35, p. 1363 | mao / Outras malformações congênitas | 14 |  | a fazer |
+| 38 | Malformações do membro: semanas de gestação | número | cap. 35, p. 1363 | mao / Outras malformações congênitas | 14 | mao-2085 | publicada |
 | 39 | Uma mão para comer e outra para limpar: qual doença | princípio | cap. 39, p. 1534 | mao / Outras malformações congênitas | 12 | mao-2076 | publicada |
 | 40 | Retalho de KITE: artéria | anatomia | cap. 44, p. 1716 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
 | 41 | Anterolateral da coxa: ramo da circunflexa femoral lateral | anatomia | cap. 45, p. 1767 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
@@ -326,7 +326,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 47 | Olécrano, MAYO: fratura com subluxação | classificação | cap. 20, p. 939 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 48 | Ossificação heterotópica, HASTINGS e GRAHAM: perda parcial da pronossupinação | classificação | cap. 21, p. 967 | ombro-cotovelo / Ossificação heterotópica | 20 |  | a fazer |
 | 49 | Mediano com intrínsecos paralisados: postura do polegar | fato | cap. 31, p. 1192 | mao / Transferências tendinosas e paralisias | 11 | mao-2071 | publicada |
-| 50 | Paralisia obstétrica: segunda lesão mais comum | fato | cap. 40, p. 1563 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 50 | Paralisia obstétrica: segunda lesão mais comum | fato | cap. 40, p. 1562 e 1563 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2083 | publicada |
 | 51 | ASIA: grau pela função motora preservada | classificação | cap. 33, p. 1267 (Tabela 33.1) | mao / Transferências tendinosas e paralisias | 13 | mao-2077 | publicada |
 | 52 | APERT: tipo em que se resseca um dedo | classificação | cap. 36, p. 1384 | mao / Sindactilia e polidactilia | 16 |  | a fazer |
 | 53 | BAYNE modificada, tipo 3: rádio distal | classificação | cap. 38, p. 1495 | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
@@ -337,7 +337,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 58 | Retalho radial do antebraço: perfurantes e dimensões | anatomia, número | cap. 45, p. 1759 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
 | 59 | Tuberculose óssea na criança: local mais comum | fato | cap. 3, p. 119 | mao / Infecções da mão | 08 | mao-2057 | publicada |
 | 60 | Tetraplegia: função do punho e mão a obter | fato | cap. 33, p. 1268 e 1272 | mao / Transferências tendinosas e paralisias | 13 | mao-2078 | publicada |
-| 61 | Paralisia obstétrica: sinal de avulsão | sinal | cap. 40, p. 1563 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 61 | Paralisia obstétrica: sinal de avulsão | sinal | cap. 40, p. 1563 (Tabela 40.1) | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2084 | publicada |
 | 62 | Oponentoplastia de BURKHALTER: tendão | epônimo | cap. 31, p. 1196 e 1209 | mao / Transferências tendinosas e paralisias | 12 | mao-2072 | publicada |
 | 63 | Retalhos venosos | afirmativas | cap. 45, p. 1748 | mao / Microcirurgia e retalhos livres | 19 |  | a fazer |
 | 64 | Cisto volar: localização habitual | anatomia | cap. 59, p. 2201 | mao / Cistos sinoviais e gangliões | 07 | mao-2051 | publicada |
@@ -355,7 +355,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36, p. 1436 | mao / Deformidades dos dedos | 16 |  | a fazer |
 | 77 | Retalho da imagem para a ponta do polegar | epônimo, figura | cap. 48, p. 1853 | mao / Retalhos e cobertura cutânea | 19 |  | a fazer |
 | 78 | CURTIS estágio II: estrutura seccionada | classificação | cap. 5, p. 201 e 202 | mao / Lesões dos tendões extensores | 01 | mao-2025 | publicada |
-| 79 | Embriologia: camadas da figura | anatomia, figura | cap. 35, p. 1364 | mao / Outras malformações congênitas | 14 |  | a fazer |
+| 79 | Embriologia: camadas da figura | anatomia, figura | cap. 35, p. 1364 (Fig. 35.1) | mao / Outras malformações congênitas | 14 |  | pendente: figura com letras; conceito já em mao-2004 |
 | 80 | PANEVA-HOLEVICH: tendão inserido na falange distal | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 01 | mao-2026 | publicada |
 | 81 | Marsupialização: onde se faz | técnica | cap. 2, p. 25 | mao / Infecções da mão | 09 | mao-2060 | publicada |
 | 82 | Paralisia cerebral: tipo de instabilidade cárpica | classificação | cap. 13, p. 501 e 502 | mao / Instabilidade do carpo | 04 | mao-2038 | publicada |
