@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 4 | 1 | mao-2023 a mao-2026 | A 1, B 1, C 1, D 1 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 9 | 1 | mao-2023 a mao-2031 | A 2, B 3, C 2, D 2 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 02** (lote 01 publicado: 1, 69, 78, 80 = mao-2023 a 2026; a 2 pendente). Dica: quando o texto
+7. **Próximo: SBCM 2024, lote 03** (lotes 01 e 02 publicados: mao-2023 a mao-2031; a 2 pendente). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -279,7 +279,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 |---|---|---|---|---|---|---|---|
 | 1 | Dupuytren: comorbidades mais associadas | lista | cap. 4, p. 148 e 149 | mao / Doença de Dupuytren | 01 | mao-2023 | publicada |
 | 2 | Técnica de tenorrafia (autor e zonas indicadas) | epônimo, figura | cap. 6, p. 239 | mao / Lesões dos tendões flexores | 01 |  | pendente: figura e zonas sem fonte no Green |
-| 3 | Luxação MF dorsal complexa do polegar: estrutura interposta | fato | cap. 8, p. 358 | mao / Lesões ligamentares dos dedos | 02 |  | a fazer |
+| 3 | Luxação MF dorsal complexa do polegar: estrutura interposta | fato | cap. 8, p. 358 | mao / Lesões ligamentares dos dedos | 02 | mao-2030 | publicada |
 | 4 | Artrose mediocárpica no SNAC/SLAC: tratamento de escolha | conduta | cap. 12 e 16 (correção cita livro da SBCM) | mao / Artrose do punho e artroscopia | 03 |  | a fazer |
 | 5 | Instabilidade carpal não dissociativa: característica | afirmativas | cap. 13, p. 537 | mao / Instabilidade do carpo | 04 |  | a fazer |
 | 6 | Reconstrução da ARUD: autor e ligamentos | epônimo, figura | cap. 14, p. 579 e 580 | mao / Fibrocartilagem triangular e punho ulnar | 04 |  | a fazer |
@@ -292,7 +292,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 13 | MADELUNG: causa associada | fato | cap. 38, p. 1505 | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
 | 14 | Sinal de PUTTI na paralisia obstétrica | sinal | cap. 40, p. 1578 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
 | 15 | Retalho bipediculado do polegar | epônimo | cap. 44, p. 1719 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
-| 16 | Rigidez articular: resultados conforme a causa | afirmativas | cap. 10, p. 392 | mao / Deformidades dos dedos | 02 |  | a fazer |
+| 16 | Rigidez articular: resultados conforme a causa | afirmativas | cap. 10, p. 392 | mao / Deformidades dos dedos | 02 | mao-2031 | publicada |
 | 17 | Paralisia cerebral: segunda prioridade na hierarquia | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 |  | a fazer |
 | 18 | Rádio distal na criança: fator de perda de redução | fato | cap. 41, p. 1625 | mao / Fratura do rádio distal | 05 |  | a fazer |
 | 19 | Enxerto vascularizado para Kienböck: artéria | anatomia, figura | cap. 46 (página a achar) | mao / Doença de Kienböck | 07 |  | a fazer |
@@ -319,9 +319,9 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 40 | Retalho de KITE: artéria | anatomia | cap. 44, p. 1716 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
 | 41 | Anterolateral da coxa: ramo da circunflexa femoral lateral | anatomia | cap. 45, p. 1767 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
 | 42 | Nervo ulnar no braço: relações | anatomia | cap. 28, p. 1105 | mao / Neuropatia ulnar e outras compressões | 10 |  | a fazer |
-| 43 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 | mao / Fraturas dos metacarpos e falanges | 02 |  | a fazer |
+| 43 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 | mao / Fraturas dos metacarpos e falanges | 02 | mao-2027 | publicada |
 | 44 | Tuberculose no membro superior: o que raramente envolve | fato | cap. 3, p. 106 | mao / Infecções da mão | 09 |  | a fazer |
-| 45 | WEISS-HASTINGS: tipo coronal dorsal | classificação | cap. 7, p. 285 | mao / Fraturas dos metacarpos e falanges | 02 |  | a fazer |
+| 45 | WEISS-HASTINGS: tipo coronal dorsal | classificação | cap. 7, p. 284 e 285 | mao / Fraturas dos metacarpos e falanges | 02 | mao-2028 | publicada |
 | 46 | GARCIA-ELIAS: propriocepção nas lesões escafossemilunares | classificação | cap. 13, p. 514 | mao / Instabilidade do carpo | 04 |  | a fazer |
 | 47 | Olécrano, MAYO: fratura com subluxação | classificação | cap. 20, p. 939 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 48 | Ossificação heterotópica, HASTINGS e GRAHAM: perda parcial da pronossupinação | classificação | cap. 21, p. 967 | ombro-cotovelo / Ossificação heterotópica | 20 |  | a fazer |
@@ -376,6 +376,6 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 97 | Queimadura: grau em que aparecem bolhas | fato | cap. 57, p. 2122 | mao / Queimaduras | 08 |  | a fazer |
 | 98 | Aneurisma na mão: artéria mais acometida | fato | cap. 60, p. 2251 | mao / Outros temas da mão | 08 |  | a fazer |
 | 99 | Instabilidade rotatória posterolateral: estrutura principal | anatomia | cap. 22, p. 977 | ombro-cotovelo / Instabilidade do cotovelo | 20 |  | a fazer |
-| 100 | Incidência de BREWERTON: o que mostra | imagem | cap. 7, p. 261 | mao / Lesões ligamentares dos dedos | 02 |  | a fazer |
+| 100 | Incidência de BREWERTON: o que mostra | imagem | cap. 7, p. 261 | mao / Lesões ligamentares dos dedos | 02 | mao-2029 | publicada |
 
 Lotes: 01 (1, 69, 78, 80, 2) · 02 (43, 45, 100, 3, 16) · 03 (33, 66, 70, 71, 4) · 04 (5, 46, 82, 27, 6) · 05 (83, 34, 73, 84, 18) · 06 (7, 67, 68, 85, 30) · 07 (19, 35, 64, 65, 96) · 08 (23, 21, 97, 98, 59) · 09 (32, 44, 81, 24, 22) · 10 (95, 55, 74, 9, 42) · 11 (28, 88, 10, 36, 49) · 12 (62, 89, 17, 37, 39) · 13 (51, 60, 11, 31, 90) · 14 (14, 50, 61, 38, 79) · 15 (12, 13, 53, 72, 92) · 16 (20, 29, 52, 54, 76) · 17 (91, 93, 15, 40, 57) · 18 (56, 75, 94, 58, 41) · 19 (63, 77, 25, 26) · 20 (8, 47, 48, 86, 87, 99).
