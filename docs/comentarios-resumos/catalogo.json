@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1662,
+  "pendente": 1612,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 36,
+  "pendente-fonte": 46,
   "pendente-inspecao-imagem": 173,
-  "revisada": 386
+  "revisada": 426
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -16,10 +16,10 @@
    "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
    "estados": {
     "duplicada": 3,
-    "pendente": 33,
-    "pendente-fonte": 1,
+    "pendente": 5,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 1,
-    "revisada": 32
+    "revisada": 50
    }
   },
   "rockwood10-24-fraturas-estresse": {
@@ -74,10 +74,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 79,
+    "pendente": 77,
     "pendente-fonte": 3,
     "pendente-inspecao-imagem": 15,
-    "revisada": 70
+    "revisada": 72
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -85,10 +85,10 @@
    "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
    "estados": {
     "duplicada": 8,
-    "pendente": 16,
+    "pendente": 15,
     "pendente-fonte": 9,
     "pendente-inspecao-imagem": 2,
-    "revisada": 69
+    "revisada": 70
    }
   },
   "rockwood10-44-carpo": {
@@ -173,9 +173,9 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 66,
+    "pendente": 65,
     "pendente-inspecao-imagem": 1,
-    "revisada": 3
+    "revisada": 4
    }
   },
   "rockwood10-58-femur-distal": {
@@ -219,11 +219,11 @@
    "sha256": "6a66c25cc6629c013a8f816accbb6b082a1c5a6e3eda207524377c8b31f9911c",
    "estados": {
     "duplicada": 5,
-    "pendente": 115,
+    "pendente": 88,
     "pendente-anulada": 2,
-    "pendente-fonte": 1,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 2,
-    "revisada": 30
+    "revisada": 47
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -316,9 +316,10 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 78,
+    "pendente": 59,
     "pendente-fonte": 1,
-    "pendente-inspecao-imagem": 2
+    "pendente-inspecao-imagem": 2,
+    "revisada": 19
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -326,10 +327,10 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 72,
+    "pendente": 52,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2,
-    "revisada": 1
+    "revisada": 21
    }
   }
  },
@@ -20984,7 +20985,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -20999,7 +21000,32 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "961c9d9d25350e3064cebab4da20248c6cb1d74729c374fcb20229e875080a4e"
+   "questaoSha256": "961c9d9d25350e3064cebab4da20248c6cb1d74729c374fcb20229e875080a4e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-8dbbe2b9",
+       "fratura-da-cabeca-do-radio-702c1386",
+       "fratura-da-cabeca-do-radio-510692ed"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "861c0ab66a361f9a15d16b147d06a8dea48361368901fc55ddacf5489459242d"
+     }
+    ],
+    "questaoSha256": "961c9d9d25350e3064cebab4da20248c6cb1d74729c374fcb20229e875080a4e",
+    "comentarioSha256": "ac3cfa630b7838203735aed8df22f1613b7731db2cb1e358500a0249cd60ec2c"
+   }
   },
   "ombro-cotovelo-0476": {
    "tema": "ombro-cotovelo",
@@ -24117,7 +24143,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24140,7 +24166,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "6a54fd88f70c83284e213ff6fc7c2338ef6388499b1c3d014b8bce43cf782f5e"
+   "questaoSha256": "6a54fd88f70c83284e213ff6fc7c2338ef6388499b1c3d014b8bce43cf782f5e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Galho verde: a angulação é uma rotação"
+      ],
+      "blocos": [
+       "galho-verde-a-angulacao-e-uma-rotacao-a74b12a2",
+       "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+       "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "8d6a7a1abee4f6626a6f5b6cde7a2524b659c355dc4c4042f45867d4c488d04b"
+     }
+    ],
+    "questaoSha256": "6a54fd88f70c83284e213ff6fc7c2338ef6388499b1c3d014b8bce43cf782f5e",
+    "comentarioSha256": "8d73bd1067b93a8c18d083699ef69a4feb33ade19d463cc88d49c281f9387379"
+   }
   },
   "pediatria-0525": {
    "tema": "pediatria",
@@ -24383,7 +24434,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24398,7 +24449,35 @@
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental"
    ],
-   "questaoSha256": "cba228dcadcb49b8b6fe722933ff22c1a99554133d8ff396b009113143191e76"
+   "questaoSha256": "cba228dcadcb49b8b6fe722933ff22c1a99554133d8ff396b009113143191e76",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "A fratura associada",
+       "Por que a pressão mata o músculo",
+       "Diagnóstico clínico: por que os sinais chegam tarde"
+      ],
+      "blocos": [
+       "a-fratura-associada-33d78d60",
+       "a-fratura-associada-17768b9c",
+       "por-que-a-pressao-mata-o-musculo-7d5655e4",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "fd4df6b3341ce5b1e72195f095a7bdc07f63c25657e78d02589ebbe8191bfc0c"
+     }
+    ],
+    "questaoSha256": "cba228dcadcb49b8b6fe722933ff22c1a99554133d8ff396b009113143191e76",
+    "comentarioSha256": "3412f848d4120f4d13ece3aae49cd59a9d95358cd314325aa0470e0404d590ca"
+   }
   },
   "pediatria-0547": {
    "tema": "pediatria",
@@ -24920,7 +24999,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24936,7 +25015,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "ac0055d55a3c7b35e6e8321ddf42e7716ccaf3438b8e3e568af355b39e93aaca"
+   "questaoSha256": "ac0055d55a3c7b35e6e8321ddf42e7716ccaf3438b8e3e568af355b39e93aaca",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "O exame: rotação, nervos e lesões associadas",
+       "Galho verde: a angulação é uma rotação",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "o-exame-rotacao-nervos-e-lesoes-associadas-c6eb105f",
+       "galho-verde-a-angulacao-e-uma-rotacao-66f45baa",
+       "anatomia-aplicada-a8f39d08"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "079fdd005eb36e9d15aec3bbd2485d0814ae16af7f064c7f2469c256734cb5e3"
+     }
+    ],
+    "questaoSha256": "ac0055d55a3c7b35e6e8321ddf42e7716ccaf3438b8e3e568af355b39e93aaca",
+    "comentarioSha256": "88bd64215b506e988f5afc74ac61f7e02e790c631f68ebad9188651cf6fbeb0b"
+   }
   },
   "pediatria-0600": {
    "tema": "pediatria",
@@ -25028,7 +25134,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25044,7 +25150,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "0aa487d57acb471a4cef75dff52eba094dc67d167ee1d45f0b25db843730a8d8"
+   "questaoSha256": "0aa487d57acb471a4cef75dff52eba094dc67d167ee1d45f0b25db843730a8d8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Deformidade plástica: o osso que encurva"
+      ],
+      "blocos": [
+       "deformidade-plastica-o-osso-que-encurva-9cede9b5",
+       "deformidade-plastica-o-osso-que-encurva-9cb06823",
+       "deformidade-plastica-o-osso-que-encurva-ad9170a0",
+       "deformidade-plastica-o-osso-que-encurva-eb524111"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "77a1c1625c06072edcd9d5bfd5dc6c620ba402ae305a656e18423c7fb34a2bad"
+     }
+    ],
+    "questaoSha256": "0aa487d57acb471a4cef75dff52eba094dc67d167ee1d45f0b25db843730a8d8",
+    "comentarioSha256": "afa78ced92fdff59ce0c2b2bc88372cdb301a8e8bad5212a67d5a9205c642088"
+   }
   },
   "pediatria-0609": {
    "tema": "pediatria",
@@ -25451,7 +25583,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25467,7 +25599,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "41ba8174186231201186cb4cb8b558b9e431189a0fe047d6eddc8f8f4acea7bc"
+   "questaoSha256": "41ba8174186231201186cb4cb8b558b9e431189a0fe047d6eddc8f8f4acea7bc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Refratura: o antebraço é o campeão"
+      ],
+      "blocos": [
+       "refratura-o-antebraco-e-o-campeao-5cf304b8",
+       "refratura-o-antebraco-e-o-campeao-acb681d5",
+       "refratura-o-antebraco-e-o-campeao-915ee7ad",
+       "refratura-o-antebraco-e-o-campeao-140eec0f"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "24697bd2a7f040a416ffebd74dda0d3cd08e852fbc1f06e6889894ced031cd36"
+     }
+    ],
+    "questaoSha256": "41ba8174186231201186cb4cb8b558b9e431189a0fe047d6eddc8f8f4acea7bc",
+    "comentarioSha256": "3e8dc753ea0f1fdcfb0cc20bca6c6f8f08351f76bb359513ec47744a1e8d89f4"
+   }
   },
   "pediatria-0636": {
    "tema": "pediatria",
@@ -26354,7 +26512,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26369,7 +26527,34 @@
    "resumosCandidatos": [
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "b787c563058d8d89908888ee26536ad0690d7aa6a330562f2a3fa170e00ed91b"
+   "questaoSha256": "b787c563058d8d89908888ee26536ad0690d7aa6a330562f2a3fa170e00ed91b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Deformidade plástica: o osso que encurva"
+      ],
+      "blocos": [
+       "deformidade-plastica-o-osso-que-encurva-605a3501",
+       "deformidade-plastica-o-osso-que-encurva-db19d238",
+       "deformidade-plastica-o-osso-que-encurva-9cb06823",
+       "deformidade-plastica-o-osso-que-encurva-ad9170a0",
+       "deformidade-plastica-o-osso-que-encurva-a934ae7c"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "4c6781b7061fa5bd977a89f42c61a3816534afb5ea6b13820dc8be199cec1067"
+     }
+    ],
+    "questaoSha256": "b787c563058d8d89908888ee26536ad0690d7aa6a330562f2a3fa170e00ed91b",
+    "comentarioSha256": "e2e20ff7867fe95ddd787059343dbbd46e2011b11017b81989519a5fa7c2b983"
+   }
   },
   "pediatria-0682": {
    "tema": "pediatria",
@@ -26655,7 +26840,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26671,7 +26856,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "bac3a6b564a627104118e59f968c3b954b376c522ff35eff51bc5c0bccc400d7"
+   "questaoSha256": "bac3a6b564a627104118e59f968c3b954b376c522ff35eff51bc5c0bccc400d7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Deformidade plástica: o osso que encurva"
+      ],
+      "blocos": [
+       "deformidade-plastica-o-osso-que-encurva-9cede9b5",
+       "deformidade-plastica-o-osso-que-encurva-3bed8b5b",
+       "deformidade-plastica-o-osso-que-encurva-605a3501"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "d88a491b037b6bb29b7962c084491dae3d63a5d2ab4fa46d25c84e2cd25f669a"
+     }
+    ],
+    "questaoSha256": "bac3a6b564a627104118e59f968c3b954b376c522ff35eff51bc5c0bccc400d7",
+    "comentarioSha256": "0e924e69ab0ad31d5a4616052b2de67d8afc55ff31fa6baa02564b1d537f1f6a"
+   }
   },
   "pediatria-0696": {
    "tema": "pediatria",
@@ -27436,7 +27646,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27459,7 +27669,31 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "ba8285d0ea913c485327129ad18c355b9343628503d6c90fae2c794d34ed9d8c"
+   "questaoSha256": "ba8285d0ea913c485327129ad18c355b9343628503d6c90fae2c794d34ed9d8c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Galho verde: a angulação é uma rotação"
+      ],
+      "blocos": [
+       "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+       "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "205def72cf674a97ebefa554143e53aa5e8f184799ba92c9ebadf70a19184660"
+     }
+    ],
+    "questaoSha256": "ba8285d0ea913c485327129ad18c355b9343628503d6c90fae2c794d34ed9d8c",
+    "comentarioSha256": "d259beb6cca650dcc4140675f3937403458da4bb2d522117bfa4a4a7afcda7c7"
+   }
   },
   "pediatria-0724": {
    "tema": "pediatria",
@@ -28469,7 +28703,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28492,7 +28726,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "226c19261fef0ee15d7ceb3b8c18292724baeb95de78f1701bd41bf0a29c046c"
+   "questaoSha256": "226c19261fef0ee15d7ceb3b8c18292724baeb95de78f1701bd41bf0a29c046c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Limites de angulação e remodelação"
+      ],
+      "blocos": [
+       "limites-de-angulacao-e-remodelacao-cd21842f",
+       "limites-de-angulacao-e-remodelacao-3e24e593",
+       "limites-de-angulacao-e-remodelacao-e2498a75"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "d726820cb539a54f7b0d0a29bc384abd1434fa895ed20de12112fe237f96083a"
+     }
+    ],
+    "questaoSha256": "226c19261fef0ee15d7ceb3b8c18292724baeb95de78f1701bd41bf0a29c046c",
+    "comentarioSha256": "c0dbf5fe4bd80fecdafe951f0ae2b623d267499df3ff2bc778c15ba783af6bdb"
+   }
   },
   "pediatria-0831": {
    "tema": "pediatria",
@@ -29293,7 +29552,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29309,7 +29568,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "81a4bfc3f58d29b4704ed7dec162c839530e025d5a6fceee2eada1da3b2332d2"
+   "questaoSha256": "81a4bfc3f58d29b4704ed7dec162c839530e025d5a6fceee2eada1da3b2332d2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Refratura: o antebraço é o campeão"
+      ],
+      "blocos": [
+       "refratura-o-antebraco-e-o-campeao-acb681d5",
+       "refratura-o-antebraco-e-o-campeao-915ee7ad",
+       "refratura-o-antebraco-e-o-campeao-140eec0f"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "aff6d9f9cb9b90a9e4735de7ba666e7e698e1859f68a6f39b7e65e00c6c4a150"
+     }
+    ],
+    "questaoSha256": "81a4bfc3f58d29b4704ed7dec162c839530e025d5a6fceee2eada1da3b2332d2",
+    "comentarioSha256": "89cfd05e6af31ae9bf809e7abb0dcb5c8ece13da44d074a7b5d8188f08bd2b36"
+   }
   },
   "pediatria-0921": {
    "tema": "pediatria",
@@ -30028,7 +30312,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30044,7 +30328,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "a37a43fe6087b806de6ad27983a40fd6a24eb06ef9254360710aa1f5e1c45bc8"
+   "questaoSha256": "a37a43fe6087b806de6ad27983a40fd6a24eb06ef9254360710aa1f5e1c45bc8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Galho verde: a angulação é uma rotação"
+      ],
+      "blocos": [
+       "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+       "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc",
+       "galho-verde-a-angulacao-e-uma-rotacao-46f20ad0"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "2519c79230967a0da5fa7dea6bd1e5b507e4781db40f5dc7621f7c46ab405e24"
+     }
+    ],
+    "questaoSha256": "a37a43fe6087b806de6ad27983a40fd6a24eb06ef9254360710aa1f5e1c45bc8",
+    "comentarioSha256": "65937696698a38de2c99f4b3747387dd327ee0cf261df2e57a60a0230c5e3da4"
+   }
   },
   "pediatria-0961": {
    "tema": "pediatria",
@@ -30053,7 +30362,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30069,7 +30378,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "6fc67cdf6d09fce0964b572f94fac5462f21ad5675e0ae1fa292d46081e7f3e7"
+   "questaoSha256": "6fc67cdf6d09fce0964b572f94fac5462f21ad5675e0ae1fa292d46081e7f3e7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "O exame: rotação, nervos e lesões associadas"
+      ],
+      "blocos": [
+       "o-exame-rotacao-nervos-e-lesoes-associadas-f257c585",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-84d5b7b1",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-aca507f4",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-3388e1b8",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-48408c84"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "7de0f1864fc962ee8c189c9e5c39dcd1893ebf15ea9024104049fc54e99827c5"
+     }
+    ],
+    "questaoSha256": "6fc67cdf6d09fce0964b572f94fac5462f21ad5675e0ae1fa292d46081e7f3e7",
+    "comentarioSha256": "8d073b6efec0f7aa43c913d3ff325b89436b9a90195be17eaafca014bac49a3b"
+   }
   },
   "pediatria-0962": {
    "tema": "pediatria",
@@ -30078,7 +30414,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30094,7 +30430,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "6823f366889bd253dc47a0fef8660d77805faafbb982737b5663191652c0c039"
+   "questaoSha256": "6823f366889bd253dc47a0fef8660d77805faafbb982737b5663191652c0c039",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Deformidade plástica: o osso que encurva"
+      ],
+      "blocos": [
+       "deformidade-plastica-o-osso-que-encurva-605a3501",
+       "deformidade-plastica-o-osso-que-encurva-db19d238",
+       "deformidade-plastica-o-osso-que-encurva-ad9170a0",
+       "deformidade-plastica-o-osso-que-encurva-a934ae7c"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "7e60b516b809f6814f44bd7ac2b04ec3e795cec638e754b9c707dec92f00bfe7"
+     }
+    ],
+    "questaoSha256": "6823f366889bd253dc47a0fef8660d77805faafbb982737b5663191652c0c039",
+    "comentarioSha256": "cea344bdb90257001569617a040320502bc260bc74fd6bafd8bd8ab03decdf2b"
+   }
   },
   "pediatria-0963": {
    "tema": "pediatria",
@@ -30103,7 +30465,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30119,7 +30481,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "1f962c3520f8e0583bc53806d08f00459ff3c44dc68fe678bfc90283477e0553"
+   "questaoSha256": "1f962c3520f8e0583bc53806d08f00459ff3c44dc68fe678bfc90283477e0553",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Deformidade plástica: o osso que encurva"
+      ],
+      "blocos": [
+       "deformidade-plastica-o-osso-que-encurva-eb524111",
+       "deformidade-plastica-o-osso-que-encurva-9cede9b5",
+       "deformidade-plastica-o-osso-que-encurva-9cb06823"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "647f80ffa86781682a34c09c862b53aedfafd6630df3b8fd0a9d6d096db41944"
+     }
+    ],
+    "questaoSha256": "1f962c3520f8e0583bc53806d08f00459ff3c44dc68fe678bfc90283477e0553",
+    "comentarioSha256": "176de17b75ef15d2576812d8ae6ec25d5d027f755a4c55ce152789e97ca325a1"
+   }
   },
   "pediatria-0964": {
    "tema": "pediatria",
@@ -30128,7 +30515,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30144,7 +30531,35 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "5be3f5dbecc6967c493f83faab632615ef263bc10d06257b87a43a0c7d973103"
+   "questaoSha256": "5be3f5dbecc6967c493f83faab632615ef263bc10d06257b87a43a0c7d973103",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida",
+       "O exame: rotação, nervos e lesões associadas",
+       "Deformidade plástica: o osso que encurva"
+      ],
+      "blocos": [
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-c0d1d07e",
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-eb4381de",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-6f7d54a3",
+       "deformidade-plastica-o-osso-que-encurva-a934ae7c"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "da8d3d2bb8716339d2a381bd86226b9b034659d02806cdc2b3044debf452356d"
+     }
+    ],
+    "questaoSha256": "5be3f5dbecc6967c493f83faab632615ef263bc10d06257b87a43a0c7d973103",
+    "comentarioSha256": "01ee0dead6e08b4cde1b4f1a55016287973c00e3f45b1293dd8224da0bceb5c1"
+   }
   },
   "pediatria-0965": {
    "tema": "pediatria",
@@ -30178,7 +30593,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30194,7 +30609,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "07609681ca18b3c9182c61c13e381207ce1380c20b132d9ff4efbba0fd1a4b0a"
+   "questaoSha256": "07609681ca18b3c9182c61c13e381207ce1380c20b132d9ff4efbba0fd1a4b0a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Refratura: o antebraço é o campeão"
+      ],
+      "blocos": [
+       "refratura-o-antebraco-e-o-campeao-5cf304b8",
+       "refratura-o-antebraco-e-o-campeao-acb681d5",
+       "refratura-o-antebraco-e-o-campeao-915ee7ad",
+       "refratura-o-antebraco-e-o-campeao-140eec0f"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "24697bd2a7f040a416ffebd74dda0d3cd08e852fbc1f06e6889894ced031cd36"
+     }
+    ],
+    "questaoSha256": "07609681ca18b3c9182c61c13e381207ce1380c20b132d9ff4efbba0fd1a4b0a",
+    "comentarioSha256": "e61d3c3ec106c31ac9d1769c73261fcca1574ea703887782496e9750d1221f61"
+   }
   },
   "pediatria-0967": {
    "tema": "pediatria",
@@ -30203,7 +30644,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30219,7 +30660,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "2c59611768a3ffb3dbb0cbccecf6a2c0dd74425a1eb1ae768a4b3ff8396167de"
+   "questaoSha256": "2c59611768a3ffb3dbb0cbccecf6a2c0dd74425a1eb1ae768a4b3ff8396167de",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Limites de angulação e remodelação"
+      ],
+      "blocos": [
+       "limites-de-angulacao-e-remodelacao-e2498a75",
+       "limites-de-angulacao-e-remodelacao-cd21842f",
+       "limites-de-angulacao-e-remodelacao-efbf901a"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "d809f98d7e66e338acaba0a1aa56304761896e23a320225cc73b129b9a964843"
+     }
+    ],
+    "questaoSha256": "2c59611768a3ffb3dbb0cbccecf6a2c0dd74425a1eb1ae768a4b3ff8396167de",
+    "comentarioSha256": "0786a1f54b564aa84e50fbc792fa42947aab5e1712bc6920e7f98311415acb99"
+   }
   },
   "pediatria-0968": {
    "tema": "pediatria",
@@ -30228,7 +30694,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30244,7 +30710,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "79e3366f58627c82f906cfa35b7d77d8d40a1b92d5c1244dfa0876cc1b97f978"
+   "questaoSha256": "79e3366f58627c82f906cfa35b7d77d8d40a1b92d5c1244dfa0876cc1b97f978",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Tratamento cirúrgico: indicações e escolha do implante"
+      ],
+      "blocos": [
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-564a0b9d",
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-0ed72011",
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-b1766383",
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-20bbe6da",
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-e7e85f41"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "8dfa8666415fdf91bd961904928ad6abae1755d2863f288e51e445cdd5c1f89f"
+     }
+    ],
+    "questaoSha256": "79e3366f58627c82f906cfa35b7d77d8d40a1b92d5c1244dfa0876cc1b97f978",
+    "comentarioSha256": "fcb23a5dfe96b00ba1f983da05b3769632dcd554071d5ee85aaad3789ddbd14d"
+   }
   },
   "pediatria-0969": {
    "tema": "pediatria",
@@ -30253,7 +30746,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30269,7 +30762,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "ec020abaec2129fa7668967c4a37fb48d79887854951de6f8eeb083f72cfec5f"
+   "questaoSha256": "ec020abaec2129fa7668967c4a37fb48d79887854951de6f8eeb083f72cfec5f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Tratamento cirúrgico: indicações e escolha do implante",
+       "Complicações"
+      ],
+      "blocos": [
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-ab0ddab0",
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-5b3152bc",
+       "complicacoes-719f1387"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "fed7f927fa2ff6e926cd543d40585a17f97506f07fae31127a5009bfffe100e4"
+     }
+    ],
+    "questaoSha256": "ec020abaec2129fa7668967c4a37fb48d79887854951de6f8eeb083f72cfec5f",
+    "comentarioSha256": "b6623904980b0f2de3e6d976e40d935ea6f2310fef58334b3e62193eae02d46c"
+   }
   },
   "pediatria-0970": {
    "tema": "pediatria",
@@ -30278,7 +30797,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30294,7 +30813,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "1e6f11e1b3cf9a5f751cd5bfb164214f0f2ffa856afe233233de9b1d2ddd04ef"
+   "questaoSha256": "1e6f11e1b3cf9a5f751cd5bfb164214f0f2ffa856afe233233de9b1d2ddd04ef",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-09a0c468",
+       "complicacoes-12025b94",
+       "complicacoes-5233b60e",
+       "complicacoes-a922449d"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "5f20356f8edc39ac159d586a377d5175438823c5c6a403ee82911ae1e45c722f"
+     }
+    ],
+    "questaoSha256": "1e6f11e1b3cf9a5f751cd5bfb164214f0f2ffa856afe233233de9b1d2ddd04ef",
+    "comentarioSha256": "0d00d26b1bcd2ba2a8e9f7453a1b2b6c8e57578ebd5ba922e8c9036eefafb4ba"
+   }
   },
   "pediatria-0971": {
    "tema": "pediatria",
@@ -30303,7 +30848,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30319,7 +30864,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "2cb7d50ce3c2267da0d308ed2aae03c4e9f6df442a3d236ef2696d76b23355de"
+   "questaoSha256": "2cb7d50ce3c2267da0d308ed2aae03c4e9f6df442a3d236ef2696d76b23355de",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Complicações",
+       "Tratamento cirúrgico: indicações e escolha do implante"
+      ],
+      "blocos": [
+       "complicacoes-20f74861",
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-523f2667"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "ef9535c050728b348948828258f60a6eb501c4058f9321a17da4eb2272b905dd"
+     }
+    ],
+    "questaoSha256": "2cb7d50ce3c2267da0d308ed2aae03c4e9f6df442a3d236ef2696d76b23355de",
+    "comentarioSha256": "67ace20e4cabe6766914b8fa551fe3980864ee2249a8ff63f10bec52b336ac56"
+   }
   },
   "pediatria-0972": {
    "tema": "pediatria",
@@ -38239,7 +38809,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -38255,7 +38825,36 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "e4b575959ae3dcd831f0dc105f69140db00c93a5f345c4143406890b9cee64cd"
+   "questaoSha256": "e4b575959ae3dcd831f0dc105f69140db00c93a5f345c4143406890b9cee64cd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Definições e história",
+       "Por que a pressão mata o músculo",
+       "Quem tem síndrome compartimental"
+      ],
+      "blocos": [
+       "definicoes-e-historia-e351a339",
+       "definicoes-e-historia-8ac89184",
+       "definicoes-e-historia-7d1d8abb",
+       "por-que-a-pressao-mata-o-musculo-7d5655e4",
+       "quem-tem-sindrome-compartimental-c9e21614"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "22e692e38e858d1c0f76827ef88f136643dc73ec3d5048e12e5e7c821d45932c"
+     }
+    ],
+    "questaoSha256": "e4b575959ae3dcd831f0dc105f69140db00c93a5f345c4143406890b9cee64cd",
+    "comentarioSha256": "bc3db733947be0e1d89ffa9f10fefb6f351fddf85cb922797edd522b8ddaea25"
+   }
   },
   "trauma-0047": {
    "tema": "trauma",
@@ -40813,15 +41412,16 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 define síndrome de esforço, mas não demonstra associação entre hérnia fascial e síndrome crônica, nem compara pé cavo, tíbia vara e encurtamento do tríceps. A menção a reparo de hérnia muscular como causa aguda não comprova a alternativa C sobre presença de hérnia na forma crônica. Falta capítulo específico de síndrome de esforço.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "27a59c844c358e45152d3231bd394596258895ea08249091734b951940869185"
+   "questaoSha256": "27a59c844c358e45152d3231bd394596258895ea08249091734b951940869185",
+   "pendencia": "O resumo 17 define síndrome de esforço, mas não demonstra associação entre hérnia fascial e síndrome crônica, nem compara pé cavo, tíbia vara e encurtamento do tríceps. A menção a reparo de hérnia muscular como causa aguda não comprova a alternativa C sobre presença de hérnia na forma crônica. Falta capítulo específico de síndrome de esforço."
   },
   "trauma-0152": {
    "tema": "trauma",
@@ -41030,8 +41630,8 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 informa variabilidade dos limiares/tempos de alteração nervosa e cita Matsen para mecanismos de perfusão, mas não fornece 30 minutos ou uma comparação com 10, 60 e 90 minutos. Falta a passagem de Matsen que sustenta o tempo específico da letra oficial B; comentário antigo não supre a fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41046,7 +41646,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "cfe8edc887fa650fab9a52363cc409d8bae49dbd5f62a3c03e6c836d00f1c635"
+   "questaoSha256": "cfe8edc887fa650fab9a52363cc409d8bae49dbd5f62a3c03e6c836d00f1c635",
+   "pendencia": "O resumo 17 informa variabilidade dos limiares/tempos de alteração nervosa e cita Matsen para mecanismos de perfusão, mas não fornece 30 minutos ou uma comparação com 10, 60 e 90 minutos. Falta a passagem de Matsen que sustenta o tempo específico da letra oficial B; comentário antigo não supre a fonte."
   },
   "trauma-0161": {
    "tema": "trauma",
@@ -45466,7 +46067,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45482,7 +46083,31 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "1f9ab83b9a2d6b2733058d9e1f7eddb9bc7343898d19a372411fa54149bd20ce"
+   "questaoSha256": "1f9ab83b9a2d6b2733058d9e1f7eddb9bc7343898d19a372411fa54149bd20ce",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-8dbbe2b9",
+       "fratura-da-cabeca-do-radio-77543d87"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "1cf9479336adec710cc0723438745259c731f231e8027b1329ba7bb0f4dcc2bf"
+     }
+    ],
+    "questaoSha256": "1f9ab83b9a2d6b2733058d9e1f7eddb9bc7343898d19a372411fa54149bd20ce",
+    "comentarioSha256": "de6edeff23aebb1559aedde6f5f8ed911a04a50d78a5620e322b47729070e035"
+   }
   },
   "trauma-0432": {
    "tema": "trauma",
@@ -45491,8 +46116,8 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 define a forma crônica de esforço e explicitamente não desenvolve seus compartimentos mais frequentes. A frequência da síndrome AGUDA e a correlação de pressões anterior/lateral não provam a ordenação na CRÔNICA. Falta fonte específica que compare os quatro compartimentos nessa forma, para analisar A a D.",
    "temComentario": true,
    "citacoes": [
     {
@@ -45507,7 +46132,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "afb8291ce7f98f58d31c6c2a474554761ca587f10ecfd310d4610fe7f7565a03"
+   "questaoSha256": "afb8291ce7f98f58d31c6c2a474554761ca587f10ecfd310d4610fe7f7565a03",
+   "pendencia": "O resumo 17 define a forma crônica de esforço e explicitamente não desenvolve seus compartimentos mais frequentes. A frequência da síndrome AGUDA e a correlação de pressões anterior/lateral não provam a ordenação na CRÔNICA. Falta fonte específica que compare os quatro compartimentos nessa forma, para analisar A a D."
   },
   "trauma-0433": {
    "tema": "trauma",
@@ -45516,15 +46142,16 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 associa alta energia a risco na coxa e enumera causas de síndrome, mas não compara trauma fechado, isquemia arterial, torniquete e projétil como causa MAIS FREQUENTE da coxa. Falta série ou seção com essa distribuição etiológica, sem inferir frequência de uma lista de causas. A letra oficial A foi preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "96c1a91e2a58598f0670263ab2c8b18512b1db298c5844d7cd782c36b1f9563d"
+   "questaoSha256": "96c1a91e2a58598f0670263ab2c8b18512b1db298c5844d7cd782c36b1f9563d",
+   "pendencia": "O resumo 17 associa alta energia a risco na coxa e enumera causas de síndrome, mas não compara trauma fechado, isquemia arterial, torniquete e projétil como causa MAIS FREQUENTE da coxa. Falta série ou seção com essa distribuição etiológica, sem inferir frequência de uma lista de causas. A letra oficial A foi preservada."
   },
   "trauma-0434": {
    "tema": "trauma",
@@ -45533,7 +46160,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45549,7 +46176,39 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "e682a957da421789abc66cb399d3bd0f411fe991ecc9688924e1d28a4f5fedad"
+   "questaoSha256": "e682a957da421789abc66cb399d3bd0f411fe991ecc9688924e1d28a4f5fedad",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Complicações, atraso e paciente encontrado caído",
+       "Por que a pressão mata o músculo",
+       "Definições e história",
+       "O tratamento preferido dos autores",
+       "Medida da pressão e o delta P"
+      ],
+      "blocos": [
+       "complicacoes-atraso-e-paciente-encontrado-caido-70a47584",
+       "por-que-a-pressao-mata-o-musculo-1a07d757",
+       "por-que-a-pressao-mata-o-musculo-0bba6145",
+       "definicoes-e-historia-0e7c3cc4",
+       "o-tratamento-preferido-dos-autores-930f2a36",
+       "medida-da-pressao-e-o-delta-p-1312eae8"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "205c4327fbffde2683b4f196f12ce6ad0601430efb718e1fd2e5c54ffdc37abc"
+     }
+    ],
+    "questaoSha256": "e682a957da421789abc66cb399d3bd0f411fe991ecc9688924e1d28a4f5fedad",
+    "comentarioSha256": "530783ffe3ebe82728ac3a42f6ddafc22185bf061203e58c350762171658a00f"
+   }
   },
   "trauma-0435": {
    "tema": "trauma",
@@ -48985,8 +49644,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 sustenta sexo masculino e destaca risco no planalto tibial, mas não compara terço proximal versus distal dentro de fraturas DIAFISÁRIAS da tíbia. Planalto não prova a afirmação diafisária decisiva de D. Falta fonte que compare a localização do traço na diáfise mantendo esse denominador; B e D não podem ser diferenciadas apenas pelo sexo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49008,7 +49667,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "446f28b3f59c36f498e064d16baf103ff34a8041dce16fe7cb56847044e704fa"
+   "questaoSha256": "446f28b3f59c36f498e064d16baf103ff34a8041dce16fe7cb56847044e704fa",
+   "pendencia": "O resumo 17 sustenta sexo masculino e destaca risco no planalto tibial, mas não compara terço proximal versus distal dentro de fraturas DIAFISÁRIAS da tíbia. Planalto não prova a afirmação diafisária decisiva de D. Falta fonte que compare a localização do traço na diáfise mantendo esse denominador; B e D não podem ser diferenciadas apenas pelo sexo."
   },
   "trauma-0747": {
    "tema": "trauma",
@@ -50483,7 +51143,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50499,7 +51159,34 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "c8e20c38b41e1a04f1e3ecabf1374e604399c6bf6a04b4792288c90f928531b9"
+   "questaoSha256": "c8e20c38b41e1a04f1e3ecabf1374e604399c6bf6a04b4792288c90f928531b9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-d654f7b7",
+       "medida-da-pressao-e-o-delta-p-1312eae8",
+       "medida-da-pressao-e-o-delta-p-f94386d5",
+       "o-tratamento-preferido-dos-autores-930f2a36"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "b76927ab5fef5e18601522fc425b6fbbfef668773e7ada01b6319e93054b7439"
+     }
+    ],
+    "questaoSha256": "c8e20c38b41e1a04f1e3ecabf1374e604399c6bf6a04b4792288c90f928531b9",
+    "comentarioSha256": "7397b9c8ad73005c3418f1e74e572ad8d7e51c9a13464f6dab4f50b8b2a2f14a"
+   }
   },
   "trauma-0819": {
    "tema": "trauma",
@@ -51370,7 +52057,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51393,7 +52080,35 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "9d8a096ca3245ba317b649a7aab8c2c8e9eb3967717fe0e68fd9a3c050479004"
+   "questaoSha256": "9d8a096ca3245ba317b649a7aab8c2c8e9eb3967717fe0e68fd9a3c050479004",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "Os compartimentos de cada região",
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-13e06142",
+       "os-compartimentos-de-cada-regiao-222f4f26",
+       "fasciotomia-f108fecb",
+       "os-compartimentos-de-cada-regiao-991d4b36"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "f46edddde74d79f2ed2fd04381440a82d89a4c752be64422b696288d0d337f03"
+     }
+    ],
+    "questaoSha256": "9d8a096ca3245ba317b649a7aab8c2c8e9eb3967717fe0e68fd9a3c050479004",
+    "comentarioSha256": "ad9841f1cba01569301fa6794d33bf01edf9199a7266205e7df868d21e1a88b6"
+   }
   },
   "trauma-0873": {
    "tema": "trauma",
@@ -52394,7 +53109,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52410,7 +53125,34 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "e641478446710544f9ccb0ea65480133715374d07c9cd09688bb472b68eeb02a"
+   "questaoSha256": "e641478446710544f9ccb0ea65480133715374d07c9cd09688bb472b68eeb02a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Medida da pressão e o delta P",
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-eb26943e",
+       "medida-da-pressao-e-o-delta-p-6e9747e1",
+       "fasciotomia-f734935c"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "452d42b099bf4bb3d3eda20f4fc600d3c4a7d759bb59a835d641c573920818d8"
+     }
+    ],
+    "questaoSha256": "e641478446710544f9ccb0ea65480133715374d07c9cd09688bb472b68eeb02a",
+    "comentarioSha256": "ec0f5f3870d68a88280181926e7513846dad5c2ca8a5668a52a0a317ff2c97aa"
+   }
   },
   "trauma-0917": {
    "tema": "trauma",
@@ -52419,7 +53161,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52435,7 +53177,37 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "45229f7d4fa3dbc0eb4b908f5edd15943909ddda7c5071f173583fe0389376ae"
+   "questaoSha256": "45229f7d4fa3dbc0eb4b908f5edd15943909ddda7c5071f173583fe0389376ae",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Diagnóstico clínico: por que os sinais chegam tarde",
+       "Medida da pressão e o delta P",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-9a9336aa",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-5792d377",
+       "medida-da-pressao-e-o-delta-p-491de05b",
+       "o-tratamento-preferido-dos-autores-930f2a36"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "a5fea62210550a016114b5d33b99bde97effd389d333ec092ab7ac450bdce71a"
+     }
+    ],
+    "questaoSha256": "45229f7d4fa3dbc0eb4b908f5edd15943909ddda7c5071f173583fe0389376ae",
+    "comentarioSha256": "bc4c28848982d0b7bbcbdddfe9a66dacf2a11904079d6ccdf199b52b2ff97ba7"
+   }
   },
   "trauma-0918": {
    "tema": "trauma",
@@ -53984,7 +54756,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54000,7 +54772,32 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "e7b26e310b21e8ed41c0139c7809f228525b2e6425d58301dbbaa0040d8a2b61"
+   "questaoSha256": "e7b26e310b21e8ed41c0139c7809f228525b2e6425d58301dbbaa0040d8a2b61",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Fasciotomia",
+       "Os compartimentos de cada região"
+      ],
+      "blocos": [
+       "fasciotomia-029870c3",
+       "os-compartimentos-de-cada-regiao-110fac19"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "97ab96c39f455f31014466c6142b291c50227b82bb65ccea712f416cb867fe95"
+     }
+    ],
+    "questaoSha256": "e7b26e310b21e8ed41c0139c7809f228525b2e6425d58301dbbaa0040d8a2b61",
+    "comentarioSha256": "9ebe4849d283a4b3f0182497958a71973d2de25984df5e1fc25337c77426d409"
+   }
   },
   "trauma-1000": {
    "tema": "trauma",
@@ -54176,15 +54973,16 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 só define a síndrome crônica de esforço; não apresenta frequência de recidiva, infecção, hematoma e neuropraxias depois da cirurgia em atleta adolescente. Falta fonte de resultados do tratamento cirúrgico da SCCE para sustentar a predominância de C e analisar A, B, D e E.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "0b66080bd511aa4b8892cf162243c9ae093d057d603f8ad9cba55837f25ce339"
+   "questaoSha256": "0b66080bd511aa4b8892cf162243c9ae093d057d603f8ad9cba55837f25ce339",
+   "pendencia": "O resumo 17 só define a síndrome crônica de esforço; não apresenta frequência de recidiva, infecção, hematoma e neuropraxias depois da cirurgia em atleta adolescente. Falta fonte de resultados do tratamento cirúrgico da SCCE para sustentar a predominância de C e analisar A, B, D e E."
   },
   "trauma-1009": {
    "tema": "trauma",
@@ -54209,7 +55007,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54225,7 +55023,35 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "b24e8afcc3da089add6acd03a72f93507801fbfa2a9a91841a2538abf90dde6d"
+   "questaoSha256": "b24e8afcc3da089add6acd03a72f93507801fbfa2a9a91841a2538abf90dde6d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-6e9747e1",
+       "medida-da-pressao-e-o-delta-p-b4d85376",
+       "medida-da-pressao-e-o-delta-p-13e06142",
+       "medida-da-pressao-e-o-delta-p-d654f7b7",
+       "o-tratamento-preferido-dos-autores-930f2a36"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "943067e6aa377888d440a8a924aef78d94c1e302a9ff9e4bd3e121ac5936ff08"
+     }
+    ],
+    "questaoSha256": "b24e8afcc3da089add6acd03a72f93507801fbfa2a9a91841a2538abf90dde6d",
+    "comentarioSha256": "f69568e7f3b5e9d7ddb4f46082c7321cc42059e15bc65af46ad1e84778bc23a4"
+   }
   },
   "trauma-1011": {
    "tema": "trauma",
@@ -56964,7 +57790,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56987,7 +57813,33 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "fbdc041442cf6bc12363fe5347ebb2f7efd1edd83f2c4f90e9794e52e41a008f"
+   "questaoSha256": "78ca65c65fe5262e0cc6adb0e69a7b57d7839bb513bdd0ed8c29440b3ebe88d7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Diagnóstico clínico: por que os sinais chegam tarde"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-222f4f26",
+       "os-compartimentos-de-cada-regiao-e0295081",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "aa458baf78f148e5e10f778c322bd063d04c4276c9659f51e369f59e72fdf1e5"
+     }
+    ],
+    "questaoSha256": "78ca65c65fe5262e0cc6adb0e69a7b57d7839bb513bdd0ed8c29440b3ebe88d7",
+    "comentarioSha256": "3f6e8646fcb8c592c52b608f97966420d4e9b9d4b9373fdb299c2986ff637d72"
+   }
   },
   "trauma-1144": {
    "tema": "trauma",
@@ -57143,8 +57995,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 relata maior risco nas fechadas em Edimburgo e associação de exposição/cominuição no banco americano, sem ranking consistente por Gustilo I/II/III versus fechada. O dado bibliográfico antigo D não é oficial e o próprio comentário o considera não sustentado. Falta comparação estratificada por grau e população; não eleger A ou D por intuição nem aplicar selo de revisão.",
    "temComentario": true,
    "citacoes": [
     {
@@ -57166,7 +58018,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "7b8d7d44636ae1c8c8745d01fd99d8a386cab67dd905a6cf809f96b5a3939f0e"
+   "questaoSha256": "7b8d7d44636ae1c8c8745d01fd99d8a386cab67dd905a6cf809f96b5a3939f0e",
+   "pendencia": "O resumo 17 relata maior risco nas fechadas em Edimburgo e associação de exposição/cominuição no banco americano, sem ranking consistente por Gustilo I/II/III versus fechada. O dado bibliográfico antigo D não é oficial e o próprio comentário o considera não sustentado. Falta comparação estratificada por grau e população; não eleger A ou D por intuição nem aplicar selo de revisão."
   },
   "trauma-1154": {
    "tema": "trauma",
@@ -57425,7 +58278,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57448,7 +58301,32 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "83acfee19e5a22fe15fe8ae52dae5bf4c0e8d85de4fe60a5367bb14d715de9e6"
+   "questaoSha256": "83acfee19e5a22fe15fe8ae52dae5bf4c0e8d85de4fe60a5367bb14d715de9e6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Diagnóstico clínico: por que os sinais chegam tarde"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-222f4f26",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "a8fd24efa5e348219760602a51e549b5cb9cb6648b258b8c0912ba34f61620f5"
+     }
+    ],
+    "questaoSha256": "83acfee19e5a22fe15fe8ae52dae5bf4c0e8d85de4fe60a5367bb14d715de9e6",
+    "comentarioSha256": "2cab0304eec13f6961533df6b2e4a6e4c10844dff85e33c958db752e08f34254"
+   }
   },
   "trauma-1170": {
    "tema": "trauma",
@@ -57876,7 +58754,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57892,7 +58770,34 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "d84b9274de32f4a610db73b6a4c5950bb6fd62054b95043e71cf1da2df9a559e"
+   "questaoSha256": "d84b9274de32f4a610db73b6a4c5950bb6fd62054b95043e71cf1da2df9a559e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-d654f7b7",
+       "medida-da-pressao-e-o-delta-p-1312eae8",
+       "medida-da-pressao-e-o-delta-p-f94386d5",
+       "o-tratamento-preferido-dos-autores-930f2a36"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "b76927ab5fef5e18601522fc425b6fbbfef668773e7ada01b6319e93054b7439"
+     }
+    ],
+    "questaoSha256": "d84b9274de32f4a610db73b6a4c5950bb6fd62054b95043e71cf1da2df9a559e",
+    "comentarioSha256": "6f4fd50461313dfe259cc7d68c1bdcef7d23c44f465b00668149d78244016ce2"
+   }
   },
   "trauma-1200": {
    "tema": "trauma",
@@ -67892,7 +68797,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -67908,7 +68813,35 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "75bda1d3d943dbb0162f4be060efaa2a2f3cff1324fc89f4d208981a3b3ac215"
+   "questaoSha256": "75bda1d3d943dbb0162f4be060efaa2a2f3cff1324fc89f4d208981a3b3ac215",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Diagnóstico clínico: por que os sinais chegam tarde",
+       "Medida da pressão e o delta P"
+      ],
+      "blocos": [
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-9a9336aa",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-a181af0b",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-bd9cdd1d",
+       "medida-da-pressao-e-o-delta-p-491de05b"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "e9ba264075c6f911bf6832e26cfa9ced1768713d688f60669de6ffad9d9ba5b2"
+     }
+    ],
+    "questaoSha256": "75bda1d3d943dbb0162f4be060efaa2a2f3cff1324fc89f4d208981a3b3ac215",
+    "comentarioSha256": "4fc1948077c06bc4dfa1b1329837a94bbba3f8167663e8f715068d0204a28ce9"
+   }
   },
   "trauma-1604": {
    "tema": "trauma",
@@ -67917,7 +68850,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -67940,7 +68873,33 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "edeb6020e28584c97d3d29204bcc346a3091c6dffb84c084eaf1231ba0316268"
+   "questaoSha256": "edeb6020e28584c97d3d29204bcc346a3091c6dffb84c084eaf1231ba0316268",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "fasciotomia-7a3f42f7",
+       "fasciotomia-52846e90",
+       "fasciotomia-f1a3c7bb",
+       "fasciotomia-0f8a1c3f"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "c13d58c1cac3517a720e9ba078da69a3c4f8cb10f93bc1bc62d13f1256e07ef3"
+     }
+    ],
+    "questaoSha256": "edeb6020e28584c97d3d29204bcc346a3091c6dffb84c084eaf1231ba0316268",
+    "comentarioSha256": "37340cd7829bda8aa438fada9a6336df093f30dc94c22ebaf39c9fd994a4ab12"
+   }
   },
   "trauma-1605": {
    "tema": "trauma",
@@ -67950,7 +68909,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -67973,7 +68932,32 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "293258678f7db0f3f8a44bbcd8e8cb28a6c51c058df356c7d183aa85171ed751"
+   "questaoSha256": "293258678f7db0f3f8a44bbcd8e8cb28a6c51c058df356c7d183aa85171ed751",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "A fratura associada"
+      ],
+      "blocos": [
+       "a-fratura-associada-6507c0fa",
+       "a-fratura-associada-e6fce012",
+       "a-fratura-associada-33d78d60"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "dc80638e82be29dfafb0f6d0d3046ca9ee1934a320ee29644b525966e479a10e"
+     }
+    ],
+    "questaoSha256": "293258678f7db0f3f8a44bbcd8e8cb28a6c51c058df356c7d183aa85171ed751",
+    "comentarioSha256": "a8976a6ff891b90318d0cdd078bca67498c9c928acd2435bd4a9a725d13d5e6e"
+   }
   },
   "trauma-1606": {
    "tema": "trauma",
@@ -67982,7 +68966,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -67998,7 +68982,38 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "2533f153b80a16128d2bb54bf8a3af7476436d05416a53c7aafb3ae95119ae6d"
+   "questaoSha256": "2533f153b80a16128d2bb54bf8a3af7476436d05416a53c7aafb3ae95119ae6d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Complicações, atraso e paciente encontrado caído",
+       "Por que a pressão mata o músculo",
+       "Medida da pressão e o delta P",
+       "O tratamento preferido dos autores",
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "complicacoes-atraso-e-paciente-encontrado-caido-70a47584",
+       "por-que-a-pressao-mata-o-musculo-1a07d757",
+       "medida-da-pressao-e-o-delta-p-1312eae8",
+       "o-tratamento-preferido-dos-autores-930f2a36",
+       "fasciotomia-7a3f42f7"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "a20c40fd4644afba0627751d8d796e6479209d2dacd97ce3f1a15583bb9aa498"
+     }
+    ],
+    "questaoSha256": "2533f153b80a16128d2bb54bf8a3af7476436d05416a53c7aafb3ae95119ae6d",
+    "comentarioSha256": "4ac381a973f91e59146fb576b041070cf723a365c86338aadced3f753f754d02"
+   }
   },
   "trauma-1607": {
    "tema": "trauma",
@@ -69381,7 +70396,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69398,7 +70413,34 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "a2adbd3cde9069ecb89444d042e4caa6f0826f980ad06ea9d0a5995456d0b455"
+   "questaoSha256": "a2adbd3cde9069ecb89444d042e4caa6f0826f980ad06ea9d0a5995456d0b455",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Fasciotomia",
+       "Os compartimentos de cada região"
+      ],
+      "blocos": [
+       "fasciotomia-f734935c",
+       "os-compartimentos-de-cada-regiao-eb26943e",
+       "fasciotomia-4de1412f",
+       "fasciotomia-7a3f42f7"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "d959f5a60e3eb990ef01e71543a26ca9a3313ff6777433734d4da8d8b4f094b4"
+     }
+    ],
+    "questaoSha256": "a2adbd3cde9069ecb89444d042e4caa6f0826f980ad06ea9d0a5995456d0b455",
+    "comentarioSha256": "7c80e8a864febc9389481a6b624dcc073d5c446332dc7990a75d6ef389c5fb6b"
+   }
   },
   "trauma-1664": {
    "tema": "trauma",
@@ -70804,8 +71846,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 confirma juventude/sexo masculino e descreve baixa energia em parte dos casos, mas não demonstra traço longo + lesão esportiva de baixa energia como fatores INDEPENDENTES nem os compara a transverso curto/alta energia. Falta modelo ou estudo com esses preditores ajustados, indispensável para sustentar C versus D.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70820,7 +71862,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "091ec02d9b83e14bcae55b708e1fd8a7821d2321c8686906e95561381971c0af"
+   "questaoSha256": "091ec02d9b83e14bcae55b708e1fd8a7821d2321c8686906e95561381971c0af",
+   "pendencia": "O resumo 17 confirma juventude/sexo masculino e descreve baixa energia em parte dos casos, mas não demonstra traço longo + lesão esportiva de baixa energia como fatores INDEPENDENTES nem os compara a transverso curto/alta energia. Falta modelo ou estudo com esses preditores ajustados, indispensável para sustentar C versus D."
   },
   "trauma-1715": {
    "tema": "trauma",
@@ -70974,15 +72017,16 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 lista dez compartimentos musculares da mão, mas não define o espaço CENTRAL PALMAR com lumbricais e tendões flexores superficial/profundo. Não se pode usar a lista de dez músculos/compartimentos para provar o conteúdo desse espaço fascial. Falta fonte anatômica do central palmar que permita julgar todos os conjuntos A a E.",
    "temComentario": false,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "258a54df973cd1288565cb975f8166d97df161915a5b7cc501169b308bd6a882"
+   "questaoSha256": "258a54df973cd1288565cb975f8166d97df161915a5b7cc501169b308bd6a882",
+   "pendencia": "O resumo 17 lista dez compartimentos musculares da mão, mas não define o espaço CENTRAL PALMAR com lumbricais e tendões flexores superficial/profundo. Não se pode usar a lista de dez músculos/compartimentos para provar o conteúdo desse espaço fascial. Falta fonte anatômica do central palmar que permita julgar todos os conjuntos A a E."
   },
   "trauma-1724": {
    "tema": "trauma",
@@ -71007,15 +72051,16 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 17 identifica grupos volar/dorsal/coxim móvel e o pronador quadrado, mas as opções repetem a estrutura não padronizada “flexor longo do carpo”. Não equivale automaticamente a flexor longo do polegar ou a flexores radial/ulnar do carpo. Falta confirmação do texto original ou fonte que esclareça a estrutura pretendida para comentar C sem renomear silenciosamente as opções.",
    "temComentario": false,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "5bc0c194b9c903cf44782f3935cc6bf063b5f3faa77c37b662ae97ed6b57134c"
+   "questaoSha256": "5bc0c194b9c903cf44782f3935cc6bf063b5f3faa77c37b662ae97ed6b57134c",
+   "pendencia": "O resumo 17 identifica grupos volar/dorsal/coxim móvel e o pronador quadrado, mas as opções repetem a estrutura não padronizada “flexor longo do carpo”. Não equivale automaticamente a flexor longo do polegar ou a flexores radial/ulnar do carpo. Falta confirmação do texto original ou fonte que esclareça a estrutura pretendida para comentar C sem renomear silenciosamente as opções."
   },
   "trauma-1727": {
    "tema": "trauma",
@@ -71120,15 +72165,38 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
-   "temComentario": false,
+   "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "add7381365d20e1879b7e3852d52d12470173e05f77a3e6f7e0b350aff7e8022"
+   "questaoSha256": "add7381365d20e1879b7e3852d52d12470173e05f77a3e6f7e0b350aff7e8022",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-231bd2af"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
+     }
+    ],
+    "questaoSha256": "add7381365d20e1879b7e3852d52d12470173e05f77a3e6f7e0b350aff7e8022",
+    "comentarioSha256": "33ba369aaf521f2ae3096500ec3b6230dd6c6170edea4cc40e06e30b8ac52a0a"
+   }
   },
   "trauma-1735": {
    "tema": "trauma",

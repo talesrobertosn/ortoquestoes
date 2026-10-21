@@ -5227,21 +5227,45 @@
   "conferido": false
  },
  "ombro-cotovelo-0474": {
+  "conceito": "**Essex-Lopresti associa fratura da cabeça do rádio, ruptura da membrana interóssea e lesão da articulação radioulnar distal.** É uma instabilidade longitudinal: quando falham a referência proximal e as contenções ao longo do antebraço, o rádio pode migrar proximalmente.\n\nA cabeça radial fraturada pode dominar os sintomas, mas o exame deve alcançar o punho. Dor na radioulnar distal é uma pista para a associação e precisa ser procurada em toda fratura da cabeça. A reconstrução tardia costuma ser mais difícil, tornando importante reconhecer a lesão completa desde o início.\n\nO colateral medial é relevante para estabilidade do cotovelo e pode participar de outras combinações de lesões. Porém, ele não substitui nenhum dos três elementos que definem Essex-Lopresti. A pergunta é de definição de uma associação específica, não uma lista de todas as estruturas que poderiam sofrer no mesmo trauma.\n\n**Leia “Lesão de Essex-Lopresti”, na Biblioteca.** Desenhe a tríade de proximal para distal e observe qual parte cada alternativa troca ou omite.",
+  "correta": "**B, resposta bibliográfica: cabeça do rádio, membrana interóssea e radioulnar distal.** A combinação explica por que uma fratura aparentemente localizada no cotovelo pode causar dor no punho e instabilidade ao longo de todo o antebraço.\n\nNão há gabarito oficial disponível; a letra deriva da definição apresentada no resumo.",
   "incorretas": {
-   "A": "**Falta a radioulnar distal.** A lesão do colateral medial do cotovelo não substitui esse componente da tríade.",
-   "C": "**Falta a membrana interóssea.** Sua ruptura é central para a instabilidade longitudinal.",
-   "D": "**Falta a fratura da cabeça radial.** Sem ela, a associação descrita não é a lesão clássica de Essex-Lopresti."
+   "A": "**Inclui cabeça e membrana, mas troca a radioulnar distal pelo colateral medial.** Uma lesão ligamentar no cotovelo pode aumentar instabilidade, porém não representa o componente distal que define a tríade. O punho não pode desaparecer da definição.",
+   "C": "**Inclui cabeça e articulação distal, mas omite a membrana interóssea.** A membrana é parte da contenção longitudinal entre rádio e ulna, e sua ruptura integra a associação. Acrescentar colateral medial não supre essa omissão.",
+   "D": "**Inclui membrana e radioulnar distal, mas retira a fratura da cabeça do rádio.** A referência proximal é fundamental para a definição e para compreender a migração radial. O colateral medial não substitui a cabeça radial nessa tríade."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
+  "conferido": false,
   "referencias": [
-   "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-forearm/radius-complete-articular/radial-head-excision",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC4157731/"
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
   ],
-  "conceito": "**Essex-Lopresti é uma lesão longitudinal do antebraço, não apenas do cotovelo.** A tríade reúne fratura da cabeça do rádio, ruptura da membrana interóssea e lesão da articulação radioulnar distal. Ao perder esses três estabilizadores, o rádio pode migrar proximalmente. Por isso, toda fratura da cabeça radial com dor no punho ou no antebraço pede avaliação da radioulnar distal; ressecar a cabeça radial sem reconhecer a tríade pode agravar a instabilidade.",
-  "correta": "**B, cabeça radial, membrana interóssea e radioulnar distal (resposta provável).** Esses são os três componentes da lesão de Essex-Lopresti.",
+  "alerta": "Não há gabarito oficial disponível. A resposta B é bibliográfica, conforme a definição de Essex-Lopresti no resumo consultado.",
   "provavel": "B",
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-8dbbe2b9",
+      "fratura-da-cabeca-do-radio-702c1386",
+      "fratura-da-cabeca-do-radio-510692ed"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "861c0ab66a361f9a15d16b147d06a8dea48361368901fc55ddacf5489459242d"
+    }
+   ],
+   "questaoSha256": "961c9d9d25350e3064cebab4da20248c6cb1d74729c374fcb20229e875080a4e",
+   "comentarioSha256": "ac3cfa630b7838203735aed8df22f1613b7731db2cb1e358500a0249cd60ec2c"
+  }
  },
  "ombro-cotovelo-0475": {
   "incorretas": {
