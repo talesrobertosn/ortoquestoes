@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1715,
+  "pendente": 1719,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 27,
+  "pendente-fonte": 28,
   "pendente-inspecao-imagem": 174,
-  "revisada": 326
+  "revisada": 336
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -72,10 +72,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 82,
+    "pendente": 84,
     "pendente-fonte": 2,
     "pendente-inspecao-imagem": 15,
-    "revisada": 65
+    "revisada": 66
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -83,9 +83,10 @@
    "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
    "estados": {
     "duplicada": 8,
-    "pendente": 59,
+    "pendente": 48,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 3,
-    "revisada": 34
+    "revisada": 44
    }
   },
   "rockwood10-44-carpo": {
@@ -93,7 +94,7 @@
    "sha256": "e5228c83b181d7017eeb82213d340371a8930bad71d097c80de23aa8f70f0d8a",
    "estados": {
     "duplicada": 2,
-    "pendente": 165,
+    "pendente": 173,
     "pendente-figura-ausente": 1,
     "pendente-inspecao-imagem": 13
    }
@@ -103,7 +104,7 @@
    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
    "estados": {
     "duplicada": 4,
-    "pendente": 71,
+    "pendente": 75,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 18,
@@ -18334,6 +18335,203 @@
    ],
    "questaoSha256": "5fd206da44c519e0a019254675a7c2c5a62e146d39cad1a316e0a79307d6820e"
   },
+  "mao-2027": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "dcf4df088189cab678c973829df47af3717942194dda1eabc211285ee027acf8"
+  },
+  "mao-2028": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "a0417b43f17949cbdc5d3b11ae0ad5e62436a14b0e87ba74279028b798c4b210"
+  },
+  "mao-2029": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos",
+    "Imagem da mão e punho"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "6ceb61246ab20e4723272db74737e6083f1bb9e82983309de5489fe13f1b06bf"
+  },
+  "mao-2030": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "a96beb10f00839c5336ed90b8be5a43e75ea287e0c1055912b6d38acb70251a0"
+  },
+  "mao-2035": {
+   "tema": "mao",
+   "subtemas": [
+    "Artrose do punho e artroscopia",
+    "Instabilidade do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "e1c90a74af482919a3a9160e01a58e1d88a932477e59c9af08856919c701e7f1"
+  },
+  "mao-2036": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "7f1f0ec4ac506998ec4ee6cb7d07d74b74aa7b3fffb099fb75cc0da2bd505d37"
+  },
+  "mao-2037": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Artrose do punho e artroscopia"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "21a95e65f2f34d4e958fff03bb118e030f1f5caf0aa357b674386fb178fd1de8"
+  },
+  "mao-2038": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Transferências tendinosas e paralisias"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "56d4f77bd648ec7fa288ed634a945fa62343141c500ef5fc8d0222db5c79bca1"
+  },
+  "mao-2045": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "8dfbcbf23732435516155ac9e6c2f26c99db2ba1d2b97c9896b05cd8a5ba887b"
+  },
+  "mao-2046": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo",
+    "Imagem da mão e punho"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "55a77f20c7ef16ee66c74bcbfddd3b95ce6f851a9b385f1cef96f963a67ae946"
+  },
+  "mao-2047": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "5613a445db4d3204dd62343a1720b23d8d756d1fd414139b3d9e34681833ef1d"
+  },
+  "mao-2048": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "3139a0cb3d9310cb1602305210bcda4f93274f8adc33d6bc8c06b34adec83ff2"
+  },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
    "subtemas": [
@@ -21995,6 +22193,56 @@
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
    "questaoSha256": "be342830903a478827c71ab7e47c75fd3eed1975be3d077c7fff64a1aef2850f"
+  },
+  "ombro-cotovelo-0665": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "aeb51eedf2d68757247059d204a67349befb6ce050686cf84b2d8311d0db809f"
+  },
+  "ombro-cotovelo-0667": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Imagem do ombro e cotovelo",
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "6d44090c144241bc910d793dd6f4daeaacc51ba9ff0d422ad448226ea95f706b"
+  },
+  "ombro-cotovelo-0669": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Instabilidade do cotovelo",
+    "Anatomia do cotovelo"
+   ],
+   "prova": "SBCM",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "792f5418efeb5c75d7b756215171641bd54a0d8274a3e99ee3389115b955fb84"
   },
   "osteometabolicas-0013": {
    "tema": "osteometabolicas",
@@ -36792,7 +37040,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36807,7 +37055,33 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "cc348fae2ba2b27ce4becccbb3112e6299cededbc008403f00661da753d85e1e"
+   "questaoSha256": "cc348fae2ba2b27ce4becccbb3112e6299cededbc008403f00661da753d85e1e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Vias de acesso e o nervo interósseo posterior"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-442d9fa8",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-a6bcc01c"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "203eaa2caab2a748824015eaf973c9e8e698c5912827962d09c8ed99914c49bf"
+     }
+    ],
+    "questaoSha256": "cc348fae2ba2b27ce4becccbb3112e6299cededbc008403f00661da753d85e1e",
+    "comentarioSha256": "7c2bd2a9e3a34ee8bdc02802fb7b490b65acb7013720e4586df1e6f211e27a49"
+   }
   },
   "trauma-0014": {
    "tema": "trauma",
@@ -37249,7 +37523,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -37264,7 +37538,36 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "c3520646b851cb0d54186db9e4be0b259b5977c837cadc904aa188ce717c1e74"
+   "questaoSha256": "c3520646b851cb0d54186db9e4be0b259b5977c837cadc904aa188ce717c1e74",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Vias de acesso e o nervo interósseo posterior",
+       "A haste intramedular",
+       "O antebraço como articulação: arco radial, forças e rotação"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-cf047815",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-655215a8",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+       "a-haste-intramedular-7fc14a46",
+       "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "2f89e3ccbd861494f5414027c457c89be831b1e78bc1c31f37d046762a7e3d0a"
+     }
+    ],
+    "questaoSha256": "c3520646b851cb0d54186db9e4be0b259b5977c837cadc904aa188ce717c1e74",
+    "comentarioSha256": "2e03659830d3190d696a8fa203b2bf5c1528dc5a1fb73c4c316e02ac8648e52b"
+   }
   },
   "trauma-0034": {
    "tema": "trauma",
@@ -37868,8 +38171,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta a distinção entre haste na fratura segmentar isolada da ulna (alternativa A) e segmentar de rádio e ulna (gabarito oficial C). O resumo do capítulo 42 lista genericamente fratura segmentar entre indicações e ainda relata haste ulnar com placa radial, sem restringir a indicação a ambos os ossos. Não permite excluir A nem comparar os padrões chamados complexos irregulares em B/D. Conferir fonte enviada que defina essa restrição ou documente a ambiguidade antes de desenvolver as quatro opções; comentário antigo não é fonte e permanece sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37883,7 +38186,8 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "468590e63c4b58a13a0c33b188b29f691cf5fdf3ed65be705c3862e901c0de9e"
+   "questaoSha256": "468590e63c4b58a13a0c33b188b29f691cf5fdf3ed65be705c3862e901c0de9e",
+   "pendencia": "Falta a distinção entre haste na fratura segmentar isolada da ulna (alternativa A) e segmentar de rádio e ulna (gabarito oficial C). O resumo do capítulo 42 lista genericamente fratura segmentar entre indicações e ainda relata haste ulnar com placa radial, sem restringir a indicação a ambos os ossos. Não permite excluir A nem comparar os padrões chamados complexos irregulares em B/D. Conferir fonte enviada que defina essa restrição ou documente a ambiguidade antes de desenvolver as quatro opções; comentário antigo não é fonte e permanece sem baseResumo."
   },
   "trauma-0061": {
    "tema": "trauma",
@@ -37980,7 +38284,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -37995,7 +38299,32 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "b297a42e7aaffa092271b73a40670664690f6650027df315a1cf7f59b41e7701"
+   "questaoSha256": "b297a42e7aaffa092271b73a40670664690f6650027df315a1cf7f59b41e7701",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "O antebraço como articulação: arco radial, forças e rotação"
+      ],
+      "blocos": [
+       "o-antebraco-como-articulacao-arco-radial-forcas--38b21112",
+       "o-antebraco-como-articulacao-arco-radial-forcas--1fddf15b",
+       "o-antebraco-como-articulacao-arco-radial-forcas--e602b577"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "b6752c260d5adb70bbe2cd1164e30ddf4a73b161bfb4b8367daeedf87082b68a"
+     }
+    ],
+    "questaoSha256": "b297a42e7aaffa092271b73a40670664690f6650027df315a1cf7f59b41e7701",
+    "comentarioSha256": "990166869ff2eb9ff295fd5f488ec737862df055c148af070a84420b24c05b59"
+   }
   },
   "trauma-0067": {
    "tema": "trauma",
@@ -38453,7 +38782,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -38476,7 +38805,35 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "8fd354cae5f47f5a4f5677f2b319bdf168562968bc176bf505d8d5e1f4343415"
+   "questaoSha256": "8fd354cae5f47f5a4f5677f2b319bdf168562968bc176bf505d8d5e1f4343415",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-f45fe045",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1d30a523",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-3e0e8f99",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-7adfdbaf",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d7239afd"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "6fab76007b37d16a5faaf98476d0ecb444bedd790993cec2a2f2bb5bc444edf2"
+     }
+    ],
+    "questaoSha256": "8fd354cae5f47f5a4f5677f2b319bdf168562968bc176bf505d8d5e1f4343415",
+    "comentarioSha256": "850874281cad433d941d89135bcca2a9b8d6bea7b425f0f2469c8c027688b7e2"
+   }
   },
   "trauma-0090": {
    "tema": "trauma",
@@ -39482,7 +39839,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39497,7 +39854,34 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "8f7b3f3b027e2b7cf6d3ebbc2f90880f6b089bed16f12fd6351348c5388eed68"
+   "questaoSha256": "8f7b3f3b027e2b7cf6d3ebbc2f90880f6b089bed16f12fd6351348c5388eed68",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-9e56eed7",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "2bf37ff88fba663d6a3ecfa6a81b2483cb4eff01194866c671143c53781ca576"
+     }
+    ],
+    "questaoSha256": "8f7b3f3b027e2b7cf6d3ebbc2f90880f6b089bed16f12fd6351348c5388eed68",
+    "comentarioSha256": "74d36373533b23fcb6035a83a324f41648b993833db24c9ebea5ebd082890bfb"
+   }
   },
   "trauma-0129": {
    "tema": "trauma",
@@ -40144,7 +40528,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40159,7 +40543,33 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "ac5c4b840bbf1149ded1be715732045d77880227fda90f6eb157ef164f86da2d"
+   "questaoSha256": "ac5c4b840bbf1149ded1be715732045d77880227fda90f6eb157ef164f86da2d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e5c273b0"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "8b7ebb46e9d5d6d7a5063548b05c840c0501a2c267b7535ec1a00bee6082eba1"
+     }
+    ],
+    "questaoSha256": "ac5c4b840bbf1149ded1be715732045d77880227fda90f6eb157ef164f86da2d",
+    "comentarioSha256": "41675dc797fc02605f71c93b1be6f7f6d43ff7ac59517afadb28385607dabc4e"
+   }
   },
   "trauma-0160": {
    "tema": "trauma",
@@ -41714,7 +42124,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41729,7 +42139,35 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "468f1abf52a7de977bded85a4d9c0ac5a45d9cc4ebd476d502c6f809c3edc13d"
+   "questaoSha256": "468f1abf52a7de977bded85a4d9c0ac5a45d9cc4ebd476d502c6f809c3edc13d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-66eeabbb",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-61ce0ed6",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-2294e393",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "78b0290ae8f3694bf6d0679038d52e988dc2e5f68c6def973dee1bec92894e26"
+     }
+    ],
+    "questaoSha256": "468f1abf52a7de977bded85a4d9c0ac5a45d9cc4ebd476d502c6f809c3edc13d",
+    "comentarioSha256": "6c407d0a7221f530ff5c407dc77df57d7d2af4a299c2b2d2541ef80d8c4619c2"
+   }
   },
   "trauma-0232": {
    "tema": "trauma",
@@ -45577,7 +46015,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45592,7 +46030,35 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "f76d1285fc7fc824d9a4a0198f21fb82e5db6bf6122402994cc3fd5cfa171efe"
+   "questaoSha256": "f76d1285fc7fc824d9a4a0198f21fb82e5db6bf6122402994cc3fd5cfa171efe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Quem trata sem cirurgia: a fratura isolada da ulna"
+      ],
+      "blocos": [
+       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-678e3db2",
+       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-74bced0d",
+       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-f31c62bb",
+       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-24b816c3",
+       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-1239920b",
+       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-2fa5f304"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "dc5761f08dc691265683f96e10e060a9d35da33c53d9c751b3043e3279e91459"
+     }
+    ],
+    "questaoSha256": "f76d1285fc7fc824d9a4a0198f21fb82e5db6bf6122402994cc3fd5cfa171efe",
+    "comentarioSha256": "2808749153d895ebf7f5886e4790ab77cf5c75a38a21966cd69df1a990a0a4ac"
+   }
   },
   "trauma-0552": {
    "tema": "trauma",
@@ -46055,7 +46521,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46070,7 +46536,32 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "51b2fcc9b7ca699938e19bfafcf469119439e1a9187e49309632bf9d9627aab2"
+   "questaoSha256": "51b2fcc9b7ca699938e19bfafcf469119439e1a9187e49309632bf9d9627aab2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Quem se machuca, como e o que vem junto"
+      ],
+      "blocos": [
+       "quem-se-machuca-como-e-o-que-vem-junto-f1d2ee6f",
+       "quem-se-machuca-como-e-o-que-vem-junto-b20f609d",
+       "quem-se-machuca-como-e-o-que-vem-junto-1c80acff"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "1276997924a2b530d51aaaec5ee75c8de1bb9a6cf3dddf85da4e3c7cb7dba0e8"
+     }
+    ],
+    "questaoSha256": "51b2fcc9b7ca699938e19bfafcf469119439e1a9187e49309632bf9d9627aab2",
+    "comentarioSha256": "6af0e7c494f76305a7b757bddd0075449b095c7ca2f0959d73934c0f957dfc25"
+   }
   },
   "trauma-0574": {
    "tema": "trauma",
@@ -50482,7 +50973,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50497,7 +50988,32 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "a87916270a92cb12337002b218ceb1384e2cfc14b4ee3375b6bab353358ef374"
+   "questaoSha256": "a87916270a92cb12337002b218ceb1384e2cfc14b4ee3375b6bab353358ef374",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-2d4f323e",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-abcc0cb7"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "eb43ffda5227e6de83f423f2790ceab616e4ad516fb07909ce103e63aba01f50"
+     }
+    ],
+    "questaoSha256": "a87916270a92cb12337002b218ceb1384e2cfc14b4ee3375b6bab353358ef374",
+    "comentarioSha256": "bdcf65c879bc476c59bfa3c0e26ffd56d3a4aa209eb33bd0baf46a6b71882524"
+   }
   },
   "trauma-0894": {
    "tema": "trauma",
