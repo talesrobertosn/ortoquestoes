@@ -60,7 +60,7 @@ if (SN && SN !== 'ausente') {
   const { readFileSync } = await import('node:fs')
   const indice = JSON.parse(readFileSync(new URL('../public/acervo/indice.json', import.meta.url), 'utf8'))
   const cotas = { 'Trauma adulto': 10, 'Ortopedia pediátrica': 9, 'Mão e punho': 6, 'Ombro e cotovelo': 5, 'Tumores': 4, 'Pé e tornozelo': 4, 'Coluna': 3, 'Joelho': 3, 'Conceitos básicos': 3, 'Quadril': 2, 'Osteometabólicas': 1 }
-  const provas = new Set(['TEOT', 'TARO', 'TEOT/TARO'])
+  const provas = new Set(['TEOT', 'TARO', 'Ortopedia'])
   const itens = []
   for (const tema of indice.temas) {
     const n = cotas[tema.nome] ?? 0
@@ -102,7 +102,7 @@ const snAusente = () => [404, { code: 'PGRST202', message: 'Could not find the f
 const snRpcs = {
   sn_obter: (u) => SN === 'ausente' ? snAusente() : [200, {
     edicao: '2026-10', tipo: 'mensal', titulo: 'Simulado Nacional · Outubro de 2026', descricao: null, destaque_inicio: true, aberto_a_todos: true,
-    config: { provas: ['TEOT', 'TARO', 'TEOT/TARO'] }, abre_em: SN_ABRE, fecha_em: SN_FECHA, duracao_min: 120, total: snEdicao.length, por_area: snPorArea(),
+    config: { provas: ['TEOT', 'TARO', 'Ortopedia'] }, abre_em: SN_ABRE, fecha_em: SN_FECHA, duracao_min: 120, total: snEdicao.length, por_area: snPorArea(),
     participantes: ['aberto', 'andamento', 'entregue', 'encerrado'].includes(SN) ? 214 : null, inscritos: 1240,
     minha_inscricao: u && SN !== 'antes' ? '2026-10-19T14:00:00Z' : null, tambem_no_ar: [], minha: u ? snMinha() : null,
     anteriores: u && (SN === 'entregue' || SN === 'encerrado') ? [{ edicao: '2026-10-antiga', titulo: 'Outubro de 2026 (versão anterior)', tipo: 'mensal', minha: { acertos: 31, total: 50, no_tempo: true } }] : [],
@@ -163,7 +163,7 @@ function snExemplo() {
   if (snEdicoes) return snEdicoes
   const { readFileSync } = require_('node:fs')
   const indice = JSON.parse(readFileSync(new URL('../public/acervo/indice.json', import.meta.url), 'utf8'))
-  const oficiais = new Set(['TEOT', 'TARO', 'TEOT/TARO'].map((p) => indice.provas.indexOf(p)))
+  const oficiais = new Set(['TEOT', 'TARO', 'Ortopedia'].map((p) => indice.provas.indexOf(p)))
   const porTema = new Map()
   for (const t of indice.temas) {
     const dados = JSON.parse(readFileSync(new URL(`../public/acervo/${t.arquivo}`, import.meta.url), 'utf8'))

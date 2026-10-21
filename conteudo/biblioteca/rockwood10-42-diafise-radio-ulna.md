@@ -179,7 +179,7 @@ Quando a radioulnar distal não reduz depois da placa, **a causa habitual é o r
 
 !questoes central=trauma-0909,mao-1094 treino=trauma-1443
 conceito: Na Galeazzi com radioulnar distal irredutível depois do rádio anatômico, a estrutura classicamente interposta é o extensor ulnar do carpo.
-como: TEOT/TARO e PUC-SP 2020 perguntaram a estrutura interposta, com pronador quadrado, flexores e partes da fibrocartilagem como distratores.
+como: Ortopedia e PUC-SP 2020 perguntaram a estrutura interposta, com pronador quadrado, flexores e partes da fibrocartilagem como distratores.
 armadilha: Pronador quadrado: é força deformante do rádio, não a estrutura interposta.
 !fim
 
@@ -229,7 +229,7 @@ Via posterior de Thompson: incisão do epicôndilo lateral ao tubérculo de List
 
 !questoes central=trauma-0990,ombro-cotovelo-0363,ombro-cotovelo-0120 treino=trauma-1450
 conceito: A via de Thompson prolonga o intervalo de Kaplan, passa entre o extensor radial curto do carpo e o extensor comum dos dedos no proximal e tem o interósseo posterior como estrutura crítica dentro do supinador.
-como: O TARO 2026 pediu de que via ela é o prolongamento (Kaplan, contra Boyd, Kocher e Hotchkiss); o TEOT/TARO, o plano proximal; o TEOT 2023 mostrou a dissecção e apontou o nervo.
+como: O TARO 2026 pediu de que via ela é o prolongamento (Kaplan, contra Boyd, Kocher e Hotchkiss); a prova de Ortopedia, o plano proximal; o TEOT 2023 mostrou a dissecção e apontou o nervo.
 armadilha: Extensor radial longo do carpo: fica lateral e cobre a origem do curto; o intervalo é com o curto.
 armadilha: Extensor longo do polegar: é o par do intervalo distal, não do proximal.
 !fim

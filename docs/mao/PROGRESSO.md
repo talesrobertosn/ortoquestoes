@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 0 | 0 | | |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 4 | 1 | mao-2106 a mao-2109 | A 1, B 1, C 1, D 1 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 01** (fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 02** (lote 01 publicado: mao-2106 a mao-2109; pendente 54, figura. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -405,7 +405,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 12 | Retalho escapular ou paraescapular e sua artéria | anatomia, figura | cap. 45 | mao / Microcirurgia e retalhos livres | 15 |  | a fazer |
 | 13 | Osteocondroma na mão: localização típica | fato | cap. 59 | mao / Tumores da mão | 18 |  | a fazer |
 | 14 | MAFFUCCI: risco aumentado | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
-| 15 | Pioderma gangrenoso: tratamento | conduta | cap. 2 ou 3 | mao / Infecções da mão | 01 |  | a fazer |
+| 15 | Pioderma gangrenoso: tratamento | conduta | cap. 3, p. 86 | mao / Infecções da mão | 01 | mao-2107 | publicada |
 | 16 | PANEVA-HOLEVICH: tendão do enxerto | epônimo | cap. 6 | mao / Lesões dos tendões flexores | 02 |  | a fazer |
 | 17 | Enxerto ósseo da foto: área doadora | figura | cap. 8 (hemi-hamato) | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
 | 18 | Osteoartrite inflamatória dos dedos: mais sintomática e mais acometida | fato | cap. 11 | mao / Rizartrose e artrose da mão | 04 |  | a fazer |
@@ -444,8 +444,8 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
 | 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
-| 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | a fazer |
-| 55 | Dupuytren: recorrência que começa em 6 a 12 semanas | classificação | cap. 4 | mao / Doença de Dupuytren | 01 |  | a fazer |
+| 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | pendente: figura com letras |
+| 55 | Dupuytren: recorrência que começa em 6 a 12 semanas | classificação | cap. 4, p. 156 | mao / Doença de Dupuytren | 01 | mao-2109 | publicada (ângulo: definição do Green, sem o 6 a 12 semanas) |
 | 56 | Flexor superficial dos dedos: anatomia | afirmativas | cap. 6 | mao / Lesões dos tendões flexores | 02 |  | a fazer |
 | 57 | Avulsão do colateral ulnar do polegar: quando ressecar e reinserir | número | cap. 8 | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
 | 58 | Artrodese dos quatro cantos: estágios de SLAC e SNAC | conduta | cap. 12 | mao / Artrose do punho e artroscopia | 05 |  | a fazer |
@@ -463,7 +463,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 70 | Zetaplastia: ganho de comprimento pelo ângulo | número | cap. 44 (ângulo faltando no original) | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
 | 71 | Retalho inguinal: a circunflexa ilíaca superficial | afirmativas | cap. 44 e 45 | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
 | 72 | Gluconato de cálcio subdérmico: qual queimadura química | conduta | cap. 57 | mao / Queimaduras | 18 |  | a fazer |
-| 73 | Bloqueio interescalênico: nervo que mais falha | fato | cap. 1 | mao / Anestesia em cirurgia da mão | 01 |  | a fazer |
+| 73 | Bloqueio interescalênico: nervo que mais falha | fato | cap. 1, p. 5 e 8 | mao / Anestesia em cirurgia da mão | 01 | mao-2106 | publicada |
 | 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16 | mao / Doença de Kienböck | 07 |  | a fazer |
 | 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
 | 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 9 e 58 | mao / Tumores da mão | 03 |  | a fazer |
@@ -488,7 +488,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
 | 96 | ENNEKING: estágio IIA | classificação | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
 | 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
-| 98 | Paroníquia: mecanismo e agente | fato | cap. 2 | mao / Infecções da mão | 01 |  | a fazer |
+| 98 | Paroníquia: mecanismo e agente | fato | cap. 2, p. 20 | mao / Infecções da mão | 01 | mao-2108 | publicada |
 | 99 | SECRETAN: causa | fato | cap. 54 | mao / Outros temas da mão | 17 |  | a fazer |
 | 100 | Capsulotomia volar da IFP: marco dos ligamentos checkrein | anatomia | cap. 10 | mao / Deformidades dos dedos | 04 |  | a fazer |
 

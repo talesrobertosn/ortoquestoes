@@ -107,7 +107,7 @@ CRIAR_CONTA = "../#/conta?modo=criar&amp;voltar=%2Ftreinar"
 
 # Grupos de provas, na ordem de exibição. Prova que não estiver aqui cai em "Outras provas".
 GRUPOS = [
-    ("Ortopedia e traumatologia: título e residência", "base", ["TEOT", "TARO", "TEOT/TARO", "SBOT-SP", "CET-PR"]),
+    ("Ortopedia e traumatologia: título e residência", "base", ["TEOT", "TARO", "Ortopedia", "SBOT-SP", "CET-PR"]),
     ("Títulos de subespecialidade", "base", ["TECOC/SBCOC Ombro e Cotovelo", "TEPOP"]),
     ("Seleções de R4", None, ["ENARE R4 Ortopedia", "R4 Coluna SES-DF", "R4 Coluna Joinville"]),
     ("Cirurgia da mão (outra especialidade, com categoria própria)", "mao",
@@ -116,7 +116,7 @@ GRUPOS = [
 NOMES_PROVA = {
     "TEOT": "TEOT (SBOT): Título de Especialista em Ortopedia e Traumatologia",
     "TARO": "TARO (SBOT): avaliação anual dos residentes",
-    "TEOT/TARO": "TEOT/TARO: questões sem edição identificada",
+    "Ortopedia": "Ortopedia: questões sem edição identificada",
     "TECOC/SBCOC Ombro e Cotovelo": "TECOC (SBCOC): título em cirurgia do ombro e cotovelo",
     "TEPOP": "TEPOP (SBOP): título em ortopedia pediátrica",
     "ENARE R4 Ortopedia": "ENARE: R4 de ortopedia",
@@ -173,7 +173,7 @@ def carregar_dados() -> dict:
     edicoes = {(q["prova"], q["ano"]) for q in oficiais if q.get("prova") and q.get("ano")}
 
     # Assuntos que mais aparecem no TEOT e no TARO, por tema.
-    tt = Counter(q["tema_nome"] for q in oficiais if q.get("prova") in ("TEOT", "TARO", "TEOT/TARO"))
+    tt = Counter(q["tema_nome"] for q in oficiais if q.get("prova") in ("TEOT", "TARO", "Ortopedia"))
 
     # Exemplos de questão com página própria (gerada por gerar_paginas_seo.py).
     exemplos = []
@@ -214,8 +214,8 @@ def carregar_dados() -> dict:
         "anos": anos,
         "edicoes": len(edicoes),
         "provas": sorted(por_prova),
-        # "TEOT/TARO" reúne questões sem edição identificada: não é outra prova.
-        "n_provas": len([p for p in por_prova if p != "TEOT/TARO"]),
+        # "Ortopedia" (antes "TEOT/TARO") reúne questões sem edição identificada: não é outra prova.
+        "n_provas": len([p for p in por_prova if p != "Ortopedia"]),
         "tt": tt,
         "exemplos": exemplos,
         "temas_paginas": temas_paginas,
@@ -649,7 +649,7 @@ def pagina_teot(d: dict) -> tuple[str, dict]:
          "O TARO é a avaliação anual da SBOT aplicada aos residentes durante a residência; o TEOT é o exame do título de especialista. "
          "Os dois cobram a ortopedia e traumatologia geral, por isso as provas anteriores do TARO também servem de treino de conteúdo para o TEOT."),
         ("Quantas provas anteriores do TEOT há no Orto Questões?",
-         f"Hoje, {len(anos_teot)} edições identificadas por ano ({faixa(anos_teot)}), além de questões de TEOT/TARO sem edição identificada "
+         f"Hoje, {len(anos_teot)} edições identificadas por ano ({faixa(anos_teot)}), além de questões de ortopedia sem edição identificada "
          f"e de {len(anos_taro)} edições do TARO ({faixa(anos_taro)}). Os números são atualizados a cada publicação do site."),
         ("O Orto Questões é um curso para o TEOT?",
          "Não é um curso de videoaulas. É um banco de questões comentadas com cronograma de estudo, revisão espaçada e simulados. Pode ser "
@@ -683,7 +683,7 @@ mudam de uma edição para outra e são definidos pela SBOT. Esta página não s
     corpo.append(f"""<section><h2>Provas anteriores do TEOT no acervo</h2>
 <p class="sub">Toque num ano para treinar só aquela prova. No modo prova, o treino tem tempo marcado, como no dia.</p>
 <ul class="anos">{teot_tabela}</ul>
-<p style="margin-top:1rem">Também há questões de TEOT/TARO sem edição identificada e as provas do TARO de {esc(faixa(anos_taro))}.
+<p style="margin-top:1rem">Também há questões de ortopedia sem edição identificada e as provas do TARO de {esc(faixa(anos_taro))}.
 <a href="../questoes-teot-taro/">Veja todas as provas do TEOT e do TARO, ano a ano</a>.</p></section>""")
     inc = d["incidencia"]
     if inc.get("areas"):
@@ -763,7 +763,7 @@ def pagina_provas(d: dict) -> tuple[str, dict]:
     ))
     lista_teot = "".join(f'<li><a href="{link_treino("TEOT", [a])}">{a}<small>{num(teot[a])} questões</small></a></li>' for a in anos_teot)
     lista_taro = "".join(f'<li><a href="{link_treino("TARO", [a])}">{a}<small>{num(taro[a])} questões</small></a></li>' for a in anos_taro)
-    sem_ano = sum(d["por_prova"].get("TEOT/TARO", Counter()).values())
+    sem_ano = sum(d["por_prova"].get("Ortopedia", Counter()).values())
     corpo.append(f"""<section><h2>TEOT, prova teórica</h2>
 <p class="sub">Título de Especialista em Ortopedia e Traumatologia (SBOT). Toque no ano para treinar só aquela prova.</p>
 <ul class="anos">{lista_teot}</ul></section>
@@ -771,7 +771,7 @@ def pagina_provas(d: dict) -> tuple[str, dict]:
 <p class="sub">Avaliação anual da SBOT para os residentes. Os cadernos são divulgados pela
 <a href="https://sbot.org.br/comissoes/sobre-a-sbot-comissao-ensino-treinamento/taro/" rel="noopener">Comissão de Ensino e Treinamento da SBOT</a>.</p>
 <ul class="anos">{lista_taro}</ul>
-{f'<p style="margin-top:1rem">Há ainda <strong>{num(sem_ano)}</strong> questões de TEOT/TARO sem edição identificada. <a href="{link_treino("TEOT/TARO")}">Treinar essas questões</a>.</p>' if sem_ano else ''}
+{f'<p style="margin-top:1rem">Há ainda <strong>{num(sem_ano)}</strong> questões de ortopedia sem edição identificada. <a href="{link_treino("Ortopedia")}">Treinar essas questões</a>.</p>' if sem_ano else ''}
 </section>""")
     tt = d["tt"].most_common()
     if tt:

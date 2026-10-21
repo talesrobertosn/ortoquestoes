@@ -30,10 +30,10 @@ import { confirmar, pedirTexto } from '../componentes/Confirmar'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import '../estilos/paginas/Treinar.css'
 
-// TEOT e TARO vêm primeiro, cada um na sua pílula. "TEOT/TARO" fica para as
-// questões cuja prova de origem ainda não foi confirmada com o PDF oficial.
+// TEOT e TARO vêm primeiro, cada um na sua pílula. "Ortopedia" (antes "TEOT/TARO", troca pedida
+// pelo Tales em 21/10/2026) fica para as questões cuja prova de origem não foi confirmada.
 // CET-PR: prova da Comissão de Ensino e Treinamento da Regional Paraná.
-const ORDEM_PROVAS = ['TEOT', 'TARO', 'TEOT/TARO', 'CET-PR']
+const ORDEM_PROVAS = ['TEOT', 'TARO', 'Ortopedia', 'CET-PR']
 
 // Ortopedia é o padrão do site; cirurgia da mão só entra quando a pessoa escolhe.
 const DESCRICAO_AREA: Record<Area, string> = {
@@ -590,7 +590,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                       if (!marcado && provasDoFoco && !grupo.provas.some((p) => provasDoFoco.has(p))) return null
                       return (
                         <button key={grupo.rotulo} type="button" className="tr-pilula" aria-pressed={marcado}
-                          title={grupo.rotulo === 'TEOT/TARO' ? 'TEOT ou TARO: questões com a prova de origem ainda a confirmar' : grupo.rotulo === 'SIMÃO' ? 'OrtoQuestões Simulados no padrão do SIMÃO, o simulado do exame de título de especialista em cirurgia da mão' : undefined}
+                          title={grupo.rotulo === 'Ortopedia' ? 'Questões de ortopedia com a prova de origem não confirmada' : grupo.rotulo === 'SIMÃO' ? 'OrtoQuestões Simulados no padrão do SIMÃO, o simulado do exame de título de especialista em cirurgia da mão' : undefined}
                           onClick={() => atualizar({ provas: marcado ? filtros.provas.filter((x) => !grupo.provas.includes(x)) : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))] })}>
                           {grupo.rotulo}
                           <span className="numerico">{quantidade}</span>

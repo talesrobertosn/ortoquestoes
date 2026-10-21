@@ -48,14 +48,14 @@ A lógica é mecânica. A maioria das fraturas é lateral, por valgo com carga a
 
 !questoes central=trauma-0416,trauma-0076,trauma-0052,trauma-0313 relacionadas=trauma-1192 treino=trauma-1669
 conceito: A lesão de partes moles mais frequente na fratura do planalto é a do menisco lateral (91% na série de GARDNER), seguida do LCA (77%).
-como: A banca repete a mesma pergunta quase com o mesmo texto: TARO 2018 (menisco, contra LCM, LCA e LCP), TARO 2021 e TARO 2023 (menisco lateral contra menisco medial, LCM, LCP e canto posterolateral) e uma prova TEOT/TARO sem ano (menisco lateral contra menisco medial, LCA e LCM). O TARO 2009 perguntou o mesmo e está sem gabarito no acervo; o capítulo sustenta a alternativa dos meniscos.
+como: A banca repete a mesma pergunta quase com o mesmo texto: TARO 2018 (menisco, contra LCM, LCA e LCP), TARO 2021 e TARO 2023 (menisco lateral contra menisco medial, LCM, LCP e canto posterolateral) e uma prova de Ortopedia sem ano (menisco lateral contra menisco medial, LCA e LCM). O TARO 2009 perguntou o mesmo e está sem gabarito no acervo; o capítulo sustenta a alternativa dos meniscos.
 armadilha: Menisco medial: é o mais lesado na lesão meniscal isolada do esporte, mas na fratura o menisco do lado do impacto é o lateral.
 armadilha: Canto posterolateral: frequente (68%), mas atrás do menisco lateral e do LCA.
 !fim
 
 !questoes central=trauma-0960 treino=trauma-1669
 conceito: Entre os ligamentos, o LCA é o mais lesado na ressonância (77%), à frente do canto posterolateral (68%).
-como: Uma prova TEOT/TARO sem ano perguntou só o ligamento, com canto posterolateral, LCP, LCA e LCM como opções.
+como: Uma prova de Ortopedia sem ano perguntou só o ligamento, com canto posterolateral, LCP, LCA e LCM como opções.
 armadilha: LCM: aparece como o mais lesado numa série antiga de radiografias sob estresse (DELAMARTER), mas não na ressonância, e é tratado sem cirurgia.
 !fim
 
@@ -149,7 +149,7 @@ armadilha: Tipo I: a separação lateral de baixa energia tem risco neurovascula
 
 !questoes central=trauma-0296,trauma-1014 treino=trauma-1672
 conceito: Depressão pura do planalto lateral é SCHATZKER III; separação com afundamento é o tipo II, o mais comum.
-como: Uma prova TEOT/TARO sem ano pediu o tipo da depressão central pura lateral (3); o ENARE R4 2024 deu um caso de atropelamento com separação e afundamento lateral (II).
+como: Uma prova de Ortopedia sem ano pediu o tipo da depressão central pura lateral (3); o ENARE R4 2024 deu um caso de atropelamento com separação e afundamento lateral (II).
 armadilha: Tipo III para a separação com afundamento: o III não tem separação.
 !fim
 
@@ -438,7 +438,7 @@ armadilha: Cabeça medial do gastrocnêmio e sóleo: é o plano da via posterola
 
 !questoes central=trauma-0148,trauma-1195 relacionadas=trauma-0910 treino=trauma-1674
 conceito: Na via posterolateral, a entrada fica entre a cabeça lateral do gastrocnêmio e o bíceps (com o nervo fibular sob o bíceps), o plano profundo entre o gastrocnêmio e o sóleo, e a abertura da membrana interóssea marca a artéria tibial anterior.
-como: O TARO 2015 pediu os músculos do intervalo posterolateral (gastrocnêmio lateral e bíceps femoral, contra tensor da fáscia lata e fibular longo); o ENARE R4 2025 repetiu num caso de SCHATZKER IV com fragmento posterolateral. Uma prova TEOT/TARO sem ano perguntou o que a via de LOBENHOFFER para o quadrante posterolateral envolve (osteotomia da cabeça da fíbula).
+como: O TARO 2015 pediu os músculos do intervalo posterolateral (gastrocnêmio lateral e bíceps femoral, contra tensor da fáscia lata e fibular longo); o ENARE R4 2025 repetiu num caso de SCHATZKER IV com fragmento posterolateral. Uma prova de Ortopedia sem ano perguntou o que a via de LOBENHOFFER para o quadrante posterolateral envolve (osteotomia da cabeça da fíbula).
 armadilha: Gastrocnêmio lateral e poplíteo, ou poplíteo e nervo fibular: o poplíteo é o plano profundo a respeitar, não o limite da janela.
 alerta: Na questão sem ano de LOBENHOFFER (trauma-0910), o gabarito é a osteotomia da cabeça da fíbula, que corresponde à via posterolateral transfibular que o capítulo cita com o artigo de LOBENHOFFER de 2011. Mas o texto do capítulo 62 chama de "abordagem de LOBENHOFFER" uma via posteromedial, no plano medial à cabeça medial do gastrocnêmio, sem soltá-la. O epônimo cobre as duas vias; leia o enunciado (quadrante posterolateral) para saber qual a banca quer.
 !fim

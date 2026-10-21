@@ -19,7 +19,7 @@ try {
   // ---- Constantes do contrato
   assert.equal(m.QUESTOES_MENSAL, 50)
   assert.equal(m.DURACAO_MENSAL_MIN, 120)
-  assert.deepEqual([...m.PROVAS_NACIONAL].sort(), ['TARO', 'TEOT', 'TEOT/TARO'])
+  assert.deepEqual([...m.PROVAS_NACIONAL].sort(), ['Ortopedia', 'TARO', 'TEOT'])
 
   // ---- Acervo sintético: 4 áreas de tamanhos diferentes, níveis e anos variados
   const AREAS = [['Trauma adulto', 'trauma', 120], ['Joelho', 'joelho', 60], ['Coluna', 'coluna', 30], ['Osteometabólicas', 'osteo', 8]]
@@ -142,11 +142,11 @@ try {
   assert.equal(m.trocarItem(poucas, soOsteo, soOsteo[0].ordem, '2026-10'), null)
   assert.equal(m.trocarItem(sintetico, ed, 999, '2026-10'), null)
 
-  // ---- Candidatas do índice: só TEOT/TARO oficiais, sem an/dup/sim, com gabarito A–E
+  // ---- Candidatas do índice: só TEOT, TARO e Ortopedia oficiais, sem an/dup/sim, com gabarito A–E
   const indiceFalso = {
     versao: 1, geradoEm: null, total: 7, subtemas: ['Fratura do escafoide'], anos: [2024],
     temas: [{ slug: 'mao', nome: 'Mão e punho', arquivo: 'temas/mao.json', total: 7 }],
-    provas: ['TEOT', 'CET-PR', 'TARO', 'TEOT/TARO'],
+    provas: ['TEOT', 'CET-PR', 'TARO', 'Ortopedia'],
     questoes: [
       { id: 'q1', t: 0, s: [0], p: 0, a: 2024, d: null, img: 0, an: 0, c: 0, cia: 0, cc: 0 },
       { id: 'q2', t: 0, s: [0], p: 1, a: 2024, d: null, img: 0, an: 0, c: 0, cia: 0, cc: 0 },
@@ -170,7 +170,7 @@ try {
   assert.equal(cands[0].prova, 'TEOT')
 
   // ---- Configuração do sorteio (addendum do contrato)
-  assert.deepEqual(m.CONFIG_PADRAO, { provas: ['TEOT', 'TARO', 'TEOT/TARO'], pesoRecentes: 2, anosRecentes: 5, nivelAltoPct: 60, cotas: null })
+  assert.deepEqual(m.CONFIG_PADRAO, { provas: ['TEOT', 'TARO', 'Ortopedia'], pesoRecentes: 2, anosRecentes: 5, nivelAltoPct: 60, cotas: null })
   // Peso 1 para recentes: o peso vira a contagem simples.
   assert.equal(m.cotasPorArea(sintetico, 50, { anoAtual: 2026, pesoRecentes: 1 }).find((c) => c.areaSlug === 'joelho').peso, 60)
   // Janela de 1 ano: só 2026 pesa 2.

@@ -61,8 +61,10 @@ function partes(segundos: number) {
  * art que esvazia ao longo das 24 h da janela e o tempo em dígitos de jogo.
  * `janelaMs`, `rodape` e `minutos` servem a outras contagens (o ranking, que atualiza de 10 em 10 minutos).
  */
-export function RelogioPixel({ liberaEm, rotulo = 'Grátis de novo em', compacto = false, janelaMs = JANELA_GRATIS_MS, rodape, minutos = false }: {
+export function RelogioPixel({ liberaEm, rotulo = 'Grátis de novo em', compacto = false, janelaMs = JANELA_GRATIS_MS, rodape, minutos = false, legivel = false }: {
   liberaEm: string; rotulo?: string; compacto?: boolean; janelaMs?: number; rodape?: string; minutos?: boolean
+  /** Números e textos em fonte comum (a pixel confundia os dígitos; pedido do Tales, 21/10/2026). */
+  legivel?: boolean
 }) {
   const fim = Date.parse(liberaEm)
   const [agora, definirAgora] = useState(Date.now())
@@ -76,7 +78,7 @@ export function RelogioPixel({ liberaEm, rotulo = 'Grátis de novo em', compacto
   const quando = new Date(fim).toLocaleString('pt-BR', { weekday: 'short', hour: '2-digit', minute: '2-digit' }).replace('.', '')
   const falado = minutos ? `${Number(m)} minutos e ${Number(s)} segundos` : `${Number(h)} horas e ${Number(m)} minutos`
   return (
-    <div className={'relogio-pixel' + (compacto ? ' relogio-pixel--compacto' : '')} role="timer" aria-label={`${rotulo} ${falado}`}>
+    <div className={'relogio-pixel' + (compacto ? ' relogio-pixel--compacto' : '') + (legivel ? ' relogio-pixel--legivel' : '')} role="timer" aria-label={`${rotulo} ${falado}`}>
       <Ampulheta fracao={(fim - agora) / janelaMs} escala={compacto ? 3 : 4} />
       <div className="relogio-pixel__texto" aria-hidden="true">
         <span className="relogio-pixel__rotulo">{rotulo}</span>

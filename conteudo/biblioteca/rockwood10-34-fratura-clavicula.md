@@ -74,7 +74,7 @@ O ponto que confunde, e que a prova adora, é que Robinson **muda a numeração*
 
 !questoes central=trauma-0264,trauma-0132,trauma-0735,trauma-0773 treino=trauma-1355
 conceito: Robinson numera o medial como 1, o terço médio como 2 e o distal como 3, ao contrário de Allman e Craig; no distal, 3A2 corresponde ao Neer III e 3B2 ao Craig V.
-como: Uma prova TEOT/TARO sem ano pediu que se reconhecesse a numeração divergente entre Robinson e Craig para o terço médio; o TARO 2015 pediu a correspondência do 3A2 (Neer III); o SBOT-SP, a do Craig V (3B2); o TECOC mostrou a radiografia de uma fratura distal desviada extra-articular para classificar como 3B1.
+como: Uma prova de Ortopedia sem ano pediu que se reconhecesse a numeração divergente entre Robinson e Craig para o terço médio; o TARO 2015 pediu a correspondência do 3A2 (Neer III); o SBOT-SP, a do Craig V (3B2); o TECOC mostrou a radiografia de uma fratura distal desviada extra-articular para classificar como 3B1.
 armadilha: Terço médio como Allman III ou Robinson I: o III de Allman e o 1 de Robinson são o terço medial.
 armadilha: 3A2 como Neer I: o 3A2 é intra-articular; o Neer I (3A1) é extra-articular com ligamentos íntegros.
 !fim
@@ -219,7 +219,7 @@ A conclusão do capítulo é precisa: a placa **reduz de forma inequívoca a pse
 
 !questoes central=trauma-0259 treino=trauma-1225,trauma-1359
 conceito: Na fratura desviada do terço médio, a fixação com placa diminui a pseudartrose, inclusive a sintomática, sem melhora clinicamente relevante da função final.
-como: Uma prova TEOT/TARO sem ano montou as quatro combinações de taxa global e taxa sintomática de pseudartrose; a certa era menor nas duas.
+como: Uma prova de Ortopedia sem ano montou as quatro combinações de taxa global e taxa sintomática de pseudartrose; a certa era menor nas duas.
 armadilha: Menor taxa global com maior taxa sintomática: as pseudartroses que sobram depois do conservador são justamente as sintomáticas, e a placa reduz as duas.
 !fim
 
@@ -306,7 +306,7 @@ O exame vascular e neurológico é obrigatório, sobretudo na alta energia e ant
 
 !questoes central=ombro-cotovelo-0372,trauma-0702 treino=trauma-1351
 conceito: Na dissociação escapulotorácica, a cintura escapular falha em tensão, e a fratura da clavícula aparece desviada e afastada, e não com os fragmentos sobrepostos.
-como: Uma prova TEOT/TARO sem ano pediu a fratura associada ao desvio lateral da escápula (clavícula); o CET-PR pediu o achado radiográfico (fratura desviada da clavícula), com radiografia normal e luxação acromioclavicular de baixo grau como distratores.
+como: Uma prova de Ortopedia sem ano pediu a fratura associada ao desvio lateral da escápula (clavícula); o CET-PR pediu o achado radiográfico (fratura desviada da clavícula), com radiografia normal e luxação acromioclavicular de baixo grau como distratores.
 armadilha: Fratura complexa do úmero proximal: não é o elo que se rompe para a escápula se afastar do tórax.
 !fim
 

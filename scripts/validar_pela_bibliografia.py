@@ -67,7 +67,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--prova", required=True)
     parser.add_argument("--anos", type=int, nargs="*", default=[])
-    parser.add_argument("--sem-ano", action="store_true", help="inclui as questões sem ano (ex.: TEOT/TARO)")
+    parser.add_argument("--sem-ano", action="store_true", help="inclui as questões sem ano (ex.: Ortopedia, origem não confirmada)")
     parser.add_argument("--seco", action="store_true", help="só mostra o que mudaria")
     args = parser.parse_args()
 

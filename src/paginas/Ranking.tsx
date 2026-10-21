@@ -215,7 +215,7 @@ function RelogioRanking({ aoAtualizar }: { aoAtualizar: () => void }) {
     const recarga = window.setTimeout(aoAtualizar, 30_000)
     return () => window.clearTimeout(recarga)
   }, [viradas, aoAtualizar])
-  return <RelogioPixel liberaEm={new Date(alvo).toISOString()} rotulo="Próxima atualização" rodape="O ranking atualiza a cada 10 minutos" janelaMs={DEZ_MIN} minutos compacto />
+  return <RelogioPixel liberaEm={new Date(alvo).toISOString()} rotulo="Próxima atualização" rodape="O ranking atualiza a cada 10 minutos" janelaMs={DEZ_MIN} minutos compacto legivel />
 }
 
 export function Ranking() {

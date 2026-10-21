@@ -357,7 +357,7 @@ def ordem_de_producao(questoes: dict, niveis: dict[str, int]) -> list[str]:
     def chave(qid):
         q = questoes[qid]
         nivel = max([niveis.get(s, 1) for s in q.get("subtemas") or []] or [1])
-        oficial = q.get("prova") in ("TEOT", "TARO", "TEOT/TARO")
+        oficial = q.get("prova") in ("TEOT", "TARO", "Ortopedia")
         return (-nivel, not oficial, not q.get("imagens"), q["_area"], qid)
     return sorted(questoes, key=chave)
 
