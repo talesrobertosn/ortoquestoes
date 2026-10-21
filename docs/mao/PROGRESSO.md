@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 0 | 0 | | |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 4 | 1 | mao-2023 a mao-2026 | A 1, B 1, C 1, D 1 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,9 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 01** (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
+7. **Próximo: SBCM 2024, lote 02** (lote 01 publicado: 1, 69, 78, 80 = mao-2023 a 2026; a 2 pendente). Dica: quando o texto
+   em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho. O `progresso.py` quebra na
+   linha do Resumo do SBCM 2024: atualizar à mão (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
    `PROVA = "SBCM"`, `ANO = 2024`, copia com o slug `sbcm-2024`). Depois SBCM 2022,
    SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
@@ -275,8 +277,8 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
-| 1 | Dupuytren: comorbidades mais associadas | lista | cap. 4, p. 149 | mao / Doença de Dupuytren | 01 |  | a fazer |
-| 2 | Técnica de tenorrafia (autor e zonas indicadas) | epônimo, figura | cap. 6, p. 239 | mao / Lesões dos tendões flexores | 01 |  | a fazer |
+| 1 | Dupuytren: comorbidades mais associadas | lista | cap. 4, p. 148 e 149 | mao / Doença de Dupuytren | 01 | mao-2023 | publicada |
+| 2 | Técnica de tenorrafia (autor e zonas indicadas) | epônimo, figura | cap. 6, p. 239 | mao / Lesões dos tendões flexores | 01 |  | pendente: figura e zonas sem fonte no Green |
 | 3 | Luxação MF dorsal complexa do polegar: estrutura interposta | fato | cap. 8, p. 358 | mao / Lesões ligamentares dos dedos | 02 |  | a fazer |
 | 4 | Artrose mediocárpica no SNAC/SLAC: tratamento de escolha | conduta | cap. 12 e 16 (correção cita livro da SBCM) | mao / Artrose do punho e artroscopia | 03 |  | a fazer |
 | 5 | Instabilidade carpal não dissociativa: característica | afirmativas | cap. 13, p. 537 | mao / Instabilidade do carpo | 04 |  | a fazer |
@@ -343,7 +345,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 66 | CMC do polegar: estabilizador primário | anatomia | cap. 11, p. 423 | mao / Rizartrose e artrose da mão | 03 |  | a fazer |
 | 67 | Escafoide: porcentagem invisível na radiografia inicial | número | cap. 16, p. 682 | mao / Fraturas do escafoide e do carpo | 06 |  | a fazer |
 | 68 | Escafoide: comprimento do parafuso | número | cap. 16, p. 686 | mao / Fraturas do escafoide e do carpo | 06 |  | a fazer |
-| 69 | Dupuytren: estruturas da figura | anatomia, figura | cap. 4, p. 157 | mao / Doença de Dupuytren | 01 |  | a fazer |
+| 69 | Dupuytren: estruturas da figura | anatomia, figura | cap. 4, p. 156 | mao / Doença de Dupuytren | 01 | mao-2024 | publicada |
 | 70 | Rizartrose: estágio de EATON pela imagem | classificação, figura | cap. 11, p. 423 | mao / Rizartrose e artrose da mão | 03 |  | a fazer |
 | 71 | CMC do polegar: ligamentos da figura | anatomia, figura | cap. 11, p. 425 | mao / Rizartrose e artrose da mão | 03 |  | a fazer |
 | 72 | Radiografia: diagnóstico | diagnóstico, figura | cap. 38 (correção aponta p. 151) | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
@@ -352,9 +354,9 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 75 | Tensor da fáscia lata: tipo de suprimento muscular | classificação | cap. 44, p. 1731 | mao / Retalhos e cobertura cutânea | 18 |  | a fazer |
 | 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36, p. 1436 | mao / Deformidades dos dedos | 16 |  | a fazer |
 | 77 | Retalho da imagem para a ponta do polegar | epônimo, figura | cap. 48, p. 1853 | mao / Retalhos e cobertura cutânea | 19 |  | a fazer |
-| 78 | CURTIS estágio II: estrutura seccionada | classificação | cap. 5, p. 202 | mao / Lesões dos tendões extensores | 01 |  | a fazer |
+| 78 | CURTIS estágio II: estrutura seccionada | classificação | cap. 5, p. 201 e 202 | mao / Lesões dos tendões extensores | 01 | mao-2025 | publicada |
 | 79 | Embriologia: camadas da figura | anatomia, figura | cap. 35, p. 1364 | mao / Outras malformações congênitas | 14 |  | a fazer |
-| 80 | PANEVA-HOLEVICH: tendão inserido na falange distal | epônimo | cap. 6, p. 241 | mao / Lesões dos tendões flexores | 01 |  | a fazer |
+| 80 | PANEVA-HOLEVICH: tendão inserido na falange distal | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 01 | mao-2026 | publicada |
 | 81 | Marsupialização: onde se faz | técnica | cap. 2, p. 25 | mao / Infecções da mão | 09 |  | a fazer |
 | 82 | Paralisia cerebral: tipo de instabilidade cárpica | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 04 |  | a fazer |
 | 83 | Procedimento da imagem na ARUD | epônimo, figura | cap. 14, p. 587 | mao / Fibrocartilagem triangular e punho ulnar | 05 |  | a fazer |
